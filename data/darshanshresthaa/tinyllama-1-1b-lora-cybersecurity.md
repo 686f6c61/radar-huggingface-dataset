@@ -24,8 +24,8 @@ La relevancia de esta ficha es limitada pero informativa: se trata de un ejemplo
 | Pipeline | text-generation |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ Los hiperparametros de entrenamiento documentados son: learning rate 0,0002 con 
 - Soporte de agentes y razonamiento multi-paso: no disponible (no declarado ni verificado).
 - Capacidades multilingues: no disponibles (la model card no declara idiomas; el modelo base es predominantemente angloparlante).
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Integracion con el ecosistema HuggingFace Transformers y PEFT para carga mediante `PeftModel.from_pretrained`.
+- Integracion con el ecosistema Hugging Face Transformers y PEFT para carga mediante `PeftModel.from_pretrained`.
 
 ## Casos de uso
 
@@ -87,11 +87,11 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tinyllama-1.1b-lora-cybersecurity | 1,1B (base) + adaptador LoRA | 2048 tokens (heredado) | Adaptador LoRA sobre TinyLlama | Apache-2.0 | HuggingFace, 0 descargas |
-| TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T | 1,1B | 2048 tokens | Modelo completo | Apache-2.0 | HuggingFace, ampliamente descargado |
-| Qwen2.5-1.5B | 1,5B | 32 768 tokens | Modelo completo | Apache-2.0 (segun modelo base Qwen2.5) | HuggingFace |
-| Gemma-2-2B | 2B | 8192 tokens | Modelo completo | Licencia Gemma (con condiciones de uso) | HuggingFace |
-| Phi-1.5 | 1,3B | 2048 tokens | Modelo completo | MIT | HuggingFace |
+| tinyllama-1.1b-lora-cybersecurity | 1,1B (base) + adaptador LoRA | 2048 tokens (heredado) | Adaptador LoRA sobre TinyLlama | Apache-2.0 | Hugging Face, 0 descargas |
+| TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T | 1,1B | 2048 tokens | Modelo completo | Apache-2.0 | Hugging Face, ampliamente descargado |
+| Qwen2.5-1.5B | 1,5B | 32 768 tokens | Modelo completo | Apache-2.0 (segun modelo base Qwen2.5) | Hugging Face |
+| Gemma-2-2B | 2B | 8192 tokens | Modelo completo | Licencia Gemma (con condiciones de uso) | Hugging Face |
+| Phi-1.5 | 1,3B | 2048 tokens | Modelo completo | MIT | Hugging Face |
 
 En terminos comparativos, el adaptador parte de la desventaja de tener una ventana de contexto de 2048 tokens, muy inferior a la de Qwen2.5-1.5B, y carece de benchmarks que permitan situarlo frente a alternativas del mismo rango de tamano.
 
@@ -112,8 +112,8 @@ En terminos comparativos, el adaptador parte de la desventaja de tener una venta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Darshanshresthaa/tinyllama-1.1b-lora-cybersecurity
-- Modelo base en HuggingFace: https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T
+- Modelo en Hugging Face: https://huggingface.co/Darshanshresthaa/tinyllama-1.1b-lora-cybersecurity
+- Modelo base en Hugging Face: https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T
 - Repositorio oficial de TinyLlama: https://github.com/jzhang38/TinyLlama
 - Paper de TinyLlama (arXiv:2401.02385): https://arxiv.org/abs/2401.02385
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -6,7 +6,7 @@ INCModel3/Qwen3.5-9B-MXFP4-CT-RTN-AutoRound es una version cuantizada del modelo
 
 El interes practico de la ficha es doble. Por un lado, permite ejecutar un modelo de casi 9,7 mil millones de parametros con un peso teorico de unos 5,1 GB, lo que lo situa en el rango de GPUs de consumo y de servidores de una sola tarjeta. Por otro, sirve como ejemplo del flujo de trabajo que el autor etiqueta como autoquant-agent: cuantizar, evaluar y aplicar autocorreccion de forma automatizada, dejando la tabla de evaluacion publicada en la propia model card.
 
-Se trata de una publicacion con traccion nula (0 descargas y 0 likes en el momento de la consulta), sin licencia declarada en los metadatos de HuggingFace y sin model card mas alla de los detalles de cuantizacion y cuatro resultados de benchmark. La model card remite explicitamente a la licencia del modelo original, que no se especifica en la informacion disponible.
+Se trata de una publicacion con traccion nula (0 descargas y 0 likes en el momento de la consulta), sin licencia declarada en los metadatos de Hugging Face y sin model card mas alla de los detalles de cuantizacion y cuatro resultados de benchmark. La model card remite explicitamente a la licencia del modelo original, que no se especifica en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Se trata de una publicacion con traccion nula (0 descargas y 0 likes en el momen
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | MXFP4 (pesos en FP4 con escalas por bloque, serializados con compressed-tensors). Los tags del repositorio incluyen ademas `8-bit`, en contradiccion con el esquema MXFP4 declarado |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en HuggingFace; la model card indica "Please follow the license of the original model", es decir, la de Qwen/Qwen3.5-9B, no especificada |
+| Licencia | no disponible en Hugging Face; la model card indica "Please follow the license of the original model", es decir, la de Qwen/Qwen3.5-9B, no especificada |
 | Formato de pesos | safetensors con compressed-tensors |
 
 ## Arquitectura y entrenamiento
@@ -100,7 +100,7 @@ No es posible establecer una comparacion cuantitativa de rendimiento con alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP4-CT-RTN-AutoRound
+- Repositorio en Hugging Face: https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP4-CT-RTN-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - AutoRound (Intel), herramienta de cuantizacion citada: https://github.com/intel/auto-round
 - autoquant-agent: la model card enlaza a https://github.com/ sin ruta especifica, por lo que el enlace no es utilizable

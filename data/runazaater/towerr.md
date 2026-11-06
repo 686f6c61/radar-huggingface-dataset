@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `runazaater/towerr` es un modelo publicado en HuggingFace por el usuario runazaater. En la información disponible no se especifica su arquitectura, tamaño ni longitud de contexto. La única información confirmada es la licencia, AFL-3.0, y que fue creado y actualizado el 4 de septiembre de 2026. No se dispone de documentación técnica ni model card más allá de la declaración de licencia. Debido a la ausencia de datos, no es posible determinar qué problema resuelve ni su relevancia actual. Se requieren más publicaciones por parte del autor para evaluar el modelo.
+El modelo `runazaater/towerr` es un modelo publicado en Hugging Face por el usuario runazaater. En la información disponible no se especifica su arquitectura, tamaño ni longitud de contexto. La única información confirmada es la licencia, AFL-3.0, y que fue creado y actualizado el 4 de septiembre de 2026. No se dispone de documentación técnica ni model card más allá de la declaración de licencia. Debido a la ausencia de datos, no es posible determinar qué problema resuelve ni su relevancia actual. Se requieren más publicaciones por parte del autor para evaluar el modelo.
 
 ## Especificaciones técnicas
 
@@ -65,4 +65,4 @@ No se han identificado modelos comparables debido a la falta de información sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/runazaater/towerr
+- Hugging Face: https://huggingface.co/runazaater/towerr

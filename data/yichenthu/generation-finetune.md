@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yichenthu/generation-finetune` es un repositorio de HuggingFace publicado por el usuario `yichenthu` que contiene una implementación mínima de una arquitectura tipo Mixer orientada a tareas de generación. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor lo describe como una variante "tiny" reproducible que sirve como punto de partida experimental y cuyo checkpoint (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo.
+`yichenthu/generation-finetune` es un repositorio de Hugging Face publicado por el usuario `yichenthu` que contiene una implementación mínima de una arquitectura tipo Mixer orientada a tareas de generación. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor lo describe como una variante "tiny" reproducible que sirve como punto de partida experimental y cuyo checkpoint (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo.
 
 El conjunto de pesos ocupa 24.832 parámetros, un orden de magnitud propio de un artefacto de andamiaje más que de un modelo de lenguaje funcional. El repositorio incluye además `run.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (optimizador LAMB con programación de warmup constante) y este `README.md`. La licencia es BSD-3-Clause.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta de experimento por
 - Verificación de integración continua en repositorios de investigación: al ser un modelo diminuto de 24.832 parámetros, puede incluirse en tests automáticos que comprueban que el código de definición del modelo y el formato de checkpoint siguen siendo compatibles entre commits.
 - Andamiaje para experimentos de arquitectura Mixer: partiendo de `run.py`, `config.json` y `training_args.json`, un equipo puede modificar la configuración de atención agrupada y *co-attention* para comparar variantes sin reescribir la base.
 - Reproducción de configuraciones de optimización: la receta por defecto con LAMB y *warmup* constante permite ensayar programaciones de tasa de aprendizaje sobre un modelo trivial y medir el coste de arranque del *harness*.
-- Docencia y formación: sirve como ejemplo mínimo y legible de cómo se empaqueta un modelo en HuggingFace con safetensors, configuración y argumentos de entrenamiento separados.
+- Docencia y formación: sirve como ejemplo mínimo y legible de cómo se empaqueta un modelo en Hugging Face con safetensors, configuración y argumentos de entrenamiento separados.
 - Plantilla para adaptadores de carga personalizados: dado que es una implementación propia, obliga a escribir un adaptador explícito para APIs genéricas de carga, lo que resulta útil como ejercicio de integración.
 
 ## Benchmarks y rendimiento
@@ -85,5 +85,5 @@ No disponible. No se conocen alternativas comparables en la misma categoría, ya
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yichenthu/generation-finetune
+- Repositorio en Hugging Face: https://huggingface.co/yichenthu/generation-finetune
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

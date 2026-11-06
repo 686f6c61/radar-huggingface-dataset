@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zheng2085/multitask-lab es un repositorio de HuggingFace que contiene una implementacion propia y minima de la arquitectura Perceiver orientada a aprendizaje multitarea, acompanada de un checkpoint de inicializacion de 24.832 parametros en formato safetensors. Lo publica el usuario zheng2085 bajo licencia Apache 2.0 y, segun su propia model card, no es la release de un modelo entrenado sino un punto de partida reproducible para pruebas de humo.
+zheng2085/multitask-lab es un repositorio de Hugging Face que contiene una implementacion propia y minima de la arquitectura Perceiver orientada a aprendizaje multitarea, acompanada de un checkpoint de inicializacion de 24.832 parametros en formato safetensors. Lo publica el usuario zheng2085 bajo licencia Apache 2.0 y, segun su propia model card, no es la release de un modelo entrenado sino un punto de partida reproducible para pruebas de humo.
 
 El interes del repositorio es metodologico, no de rendimiento: incluye el codigo de entrenamiento (finetune.py), la configuracion de arquitectura (config.json), la receta de experimento por defecto (training_args.json, con optimizador Adam y planificador exponencial) y un checkpoint valido que solo permite comprobar que el pipeline carga y se ejecuta. La arquitectura declarada usa atencion flash, fusion de bajo rango, activacion approx gelu y normalizacion RMSNorm, todo a escala "small".
 
@@ -29,7 +29,7 @@ No se publican resultados de benchmarks, ni idiomas soportados, ni longitud de c
 | Planificador por defecto | exponential |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion en HuggingFace | 2026-10-08 |
+| Fecha de publicacion en Hugging Face | 2026-10-08 |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zheng2085/multitask-lab | 24.832 | no disponible | ninguno | apache-2.0 | HuggingFace |
+| zheng2085/multitask-lab | 24.832 | no disponible | ninguno | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web no ha devuelto modelos directamente comparables con datos verificables. Los resultados obtenidos son repositorios con nombre similar pero sin relacion confirmada (brandonhiu/multitask-lab y privacy-tech-lab/MultitaskModel), un articulo divulgativo generico sobre aprendizaje multitarea y la resena del paper de GPT-2, ninguno de los cuales aporta cifras comparables. Existe ademas una coincidencia de nombre entre este repositorio y el de otro autor, lo que sugiere una posible plantilla replicada, sin que haya confirmacion al respecto.
@@ -90,11 +90,11 @@ La busqueda web no ha devuelto modelos directamente comparables con datos verifi
 - Al ser una implementacion propia, no funciona con las APIs genericas de carga automatica de transformers sin escribir un adaptador explicito.
 - El repositorio ocupa 0.0 GB y no incluye pesos entrenados: no hay nada que desplegar en produccion.
 - Cualquier resultado obtenido a partir de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aqui incluidos.
-- Las fechas de creacion y actualizacion registradas en HuggingFace (2026-10-08) son las que figuran en los metadatos y no se han podido contrastar con otra fuente.
+- Las fechas de creacion y actualizacion registradas en Hugging Face (2026-10-08) son las que figuran en los metadatos y no se han podido contrastar con otra fuente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zheng2085/multitask-lab
+- Repositorio en Hugging Face: https://huggingface.co/zheng2085/multitask-lab
 - Repositorio con nombre identico de otro autor: https://huggingface.co/brandonhiu/multitask-lab
 - Repositorio relacionado por tematica: https://huggingface.co/privacy-tech-lab/MultitaskModel
 - Articulo divulgativo sobre aprendizaje multitarea: https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/

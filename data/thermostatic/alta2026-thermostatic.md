@@ -71,7 +71,7 @@ Puntuación oficial = ½ [min(sent-AU, sent-UK) + min(sarc-AU, sarc-UK)], macro-
 
 | Sistema | Tipo | Contexto | Score oficial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thermostatic/alta2026-thermostatic | Ensemble (DeBERTa-v3-large + e5 + sonda Qwen3.5-9B) | No disponible | 0,867 | MIT | Pesos y código en HuggingFace |
+| Thermostatic/alta2026-thermostatic | Ensemble (DeBERTa-v3-large + e5 + sonda Qwen3.5-9B) | No disponible | 0,867 | MIT | Pesos y código en Hugging Face |
 | DeBERTa-v3-large ×5 (ablación del mismo equipo) | Encoder multi-tarea | No disponible | 0,854 | MIT | Incluido en el repositorio |
 | Línea base de los organizadores ALTA 2026 | No disponible | No disponible | 0,773 | No disponible | No disponible |
 | Modelos comparables de la literatura BESSTIE | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -89,7 +89,7 @@ Puntuación oficial = ½ [min(sent-AU, sent-UK) + min(sarc-AU, sarc-UK)], macro-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thermostatic/alta2026-thermostatic
+- Modelo en Hugging Face: https://huggingface.co/Thermostatic/alta2026-thermostatic
 - Tarea compartida ALTA 2026: https://www.alta.asn.au/events/sharedtask2026/
 - Competición CodaBench 17681: https://www.codabench.org/competitions/17681/ (referenciada en la model card; no verificada)
 - Artículo: *Two Varieties, Two Sarcasms: What Limits a Well-Validated Ensemble on Australian and British English*, incluido en `paper/main.tex` y `paper/main.pdf` del repositorio

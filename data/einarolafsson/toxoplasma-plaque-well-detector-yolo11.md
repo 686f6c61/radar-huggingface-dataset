@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **toxoplasma-plaque-well-detector-yolo11** es un detector de objetos basado en YOLO11n, desarrollado por einarolafsson, que localiza pocillos de ensayo (assay wells) en imágenes de placas completas o de múltiples pocillos obtenidas mediante ensayos de placa de toxoplasma. Su función principal es identificar la posición y el diámetro de cada pocillo para que, en una segunda etapa, se pueda recortar y segmentar individualmente. Forma la primera mitad de un pipeline de dos fases junto con el modelo de segmentación [toxoplasma-plaque-segmentation-cpsam](https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam). La detección del pocillo también proporciona su diámetro, lo que permite comparar áreas de placa entre diferentes microscopios y aumentos. El modelo está publicado con licencia MIT y utiliza la librería Ultralytics, con un tamaño de repositorio de 0.0 GB (los pesos no están alojados en el repositorio de HuggingFace, sino que se cargan desde el paquete ultralytics).
+El modelo **toxoplasma-plaque-well-detector-yolo11** es un detector de objetos basado en YOLO11n, desarrollado por einarolafsson, que localiza pocillos de ensayo (assay wells) en imágenes de placas completas o de múltiples pocillos obtenidas mediante ensayos de placa de toxoplasma. Su función principal es identificar la posición y el diámetro de cada pocillo para que, en una segunda etapa, se pueda recortar y segmentar individualmente. Forma la primera mitad de un pipeline de dos fases junto con el modelo de segmentación [toxoplasma-plaque-segmentation-cpsam](https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam). La detección del pocillo también proporciona su diámetro, lo que permite comparar áreas de placa entre diferentes microscopios y aumentos. El modelo está publicado con licencia MIT y utiliza la librería Ultralytics, con un tamaño de repositorio de 0.0 GB (los pesos no están alojados en el repositorio de Hugging Face, sino que se cargan desde el paquete ultralytics).
 
 ## Especificaciones tecnicas
 
@@ -71,10 +71,10 @@ No se dispone de informacion sobre otros modelos de deteccion de pocillos de ens
 - No se especifican los datos de entrenamiento, por lo que se desconoce la variabilidad de condiciones de imagen (iluminacion, contraste, tipo de placa) que el modelo puede manejar.
 - Al ser un modelo de vision, no tiene capacidades de lenguaje ni de razonamiento simbolico.
 - La licencia MIT permite uso comercial y modificacion, pero el autor no ofrece garantias sobre el rendimiento en entornos de produccion.
-- No se proporcionan pesos directamente en el repositorio de HuggingFace; se cargan mediante la libreria ultralytics, lo que requiere instalar dicha dependencia.
+- No se proporcionan pesos directamente en el repositorio de Hugging Face; se cargan mediante la libreria ultralytics, lo que requiere instalar dicha dependencia.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/einarolafsson/toxoplasma-plaque-well-detector-yolo11)
+- [Modelo en Hugging Face](https://huggingface.co/einarolafsson/toxoplasma-plaque-well-detector-yolo11)
 - [Modelo de segmentacion asociado](https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam)
 - [Dataset de modelos del autor](https://huggingface.co/datasets/einarolafsson/models/tree/main)

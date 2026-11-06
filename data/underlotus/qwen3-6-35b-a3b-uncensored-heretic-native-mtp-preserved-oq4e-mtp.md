@@ -74,9 +74,9 @@ Estos datos indican que con contextos largos, MTP desactivado es ~7 % más rápi
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B (original) | 35B totales / 3B activos | 262 144 | FP16/BF16 | Apache 2.0 | HuggingFace |
-| Este modelo (oQ4e MLX) | 35B totales / 3B activos | 262 144 | oQ4e (~4,6 bits) | Apache 2.0 | HuggingFace |
-| SC117/Qwen3.6-35B-A3B-...-APEX-GGUF | 35B totales / 3B activos | 262 144 | GGUF (APEX) | Apache 2.0 | HuggingFace |
+| Qwen3.6-35B-A3B (original) | 35B totales / 3B activos | 262 144 | FP16/BF16 | Apache 2.0 | Hugging Face |
+| Este modelo (oQ4e MLX) | 35B totales / 3B activos | 262 144 | oQ4e (~4,6 bits) | Apache 2.0 | Hugging Face |
+| SC117/Qwen3.6-35B-A3B-...-APEX-GGUF | 35B totales / 3B activos | 262 144 | GGUF (APEX) | Apache 2.0 | Hugging Face |
 
 La comparativa directa con otros modelos MoE de tamaño similar (p. ej., Mixtral 8x7B, DeepSeek-V2) no está disponible en la información proporcionada. Este modelo se distingue por su abliteración, la preservación del MTP y su formato MLX optimizado para Apple Silicon.
 
@@ -91,7 +91,7 @@ La comparativa directa con otros modelos MoE de tamaño similar (p. ej., Mixtral
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/underlotus/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/underlotus/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-oQ4e-mtp
 - Modelo base (llmfan46): https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved
 - Modelo original Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio oMLX (oQ): https://github.com/jundot/omlx

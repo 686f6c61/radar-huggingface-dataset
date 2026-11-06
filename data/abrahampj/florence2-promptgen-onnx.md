@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AbrahamPJ/florence2-promptgen-onnx
+- Repositorio en Hugging Face: https://huggingface.co/AbrahamPJ/florence2-promptgen-onnx
 - Modelo base (PromptGen v2.0): https://huggingface.co/MiaoshouAI/Florence-2-base-PromptGen-v2.0
 - Modelo base original: https://huggingface.co/microsoft/Florence-2-base-ft
 - Grafos ONNX de referencia: https://huggingface.co/onnx-community/Florence-2-base-ft

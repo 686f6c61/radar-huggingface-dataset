@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos de rendimiento cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EverPaper/embeddinggemma-2-coreai
+- Hugging Face: https://huggingface.co/EverPaper/embeddinggemma-2-coreai
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Página del autor (port): https://everpaper.app
 - Licence y NOTICE: incluidos en el repositorio (`LICENSE`, `NOTICE`)

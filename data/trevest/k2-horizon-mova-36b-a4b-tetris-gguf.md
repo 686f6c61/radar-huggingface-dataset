@@ -86,11 +86,11 @@ Comparativa con otras cuantizaciones del mismo modelo base (datos de la model ca
 
 | Variante | Tamano (GiB) | KLD media | Top-1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Esta ficha (IQ4_XS, router F32) | 18,77 | 0,0221 | 93,1% | apache-2.0 | GGUF en HuggingFace |
-| IQ4_XS estandar (ngquocvinh) | 18,75 | 0,0224 | 93,1% | apache-2.0 (heredada) | GGUF en HuggingFace |
-| APEX-compact (Myric) | 16,69 | 0,0361 | 91,4% | apache-2.0 (heredada) | GGUF en HuggingFace |
-| APEX-mini (Myric) | 14,86 | 0,0643 | 89,1% | apache-2.0 (heredada) | GGUF en HuggingFace |
-| NVFP4 (WhiskyAKM) | 19,82 | 0,0668 | 87,9% | apache-2.0 (heredada) | GGUF en HuggingFace |
+| Esta ficha (IQ4_XS, router F32) | 18,77 | 0,0221 | 93,1% | apache-2.0 | GGUF en Hugging Face |
+| IQ4_XS estandar (ngquocvinh) | 18,75 | 0,0224 | 93,1% | apache-2.0 (heredada) | GGUF en Hugging Face |
+| APEX-compact (Myric) | 16,69 | 0,0361 | 91,4% | apache-2.0 (heredada) | GGUF en Hugging Face |
+| APEX-mini (Myric) | 14,86 | 0,0643 | 89,1% | apache-2.0 (heredada) | GGUF en Hugging Face |
+| NVFP4 (WhiskyAKM) | 19,82 | 0,0668 | 87,9% | apache-2.0 (heredada) | GGUF en Hugging Face |
 
 Comparativa con modelos de otros desarrolladores de la misma categoria (MoE de ~30-40B con ~3-4B activos): no disponible en la informacion proporcionada, ya que no se han facilitado resultados de benchmarks del modelo base frente a alternativas.
 

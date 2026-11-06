@@ -106,7 +106,7 @@ hibari destaca por la relación entre calidad y coste computacional: iguala prá
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maureesewilliams/hibari
+- Modelo en Hugging Face: https://huggingface.co/maureesewilliams/hibari
 - Repositorio de código, paquete Python y pipeline de entrenamiento: https://github.com/MMWilliams/hibari
 - Modelo base (profesor): https://huggingface.co/hexgrad/Kokoro-82M
 - Muestra de audio, saludo: https://huggingface.co/maureesewilliams/hibari/resolve/main/samples/hello.wav

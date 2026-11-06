@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pico 1.3-Math es un modelo de lenguaje de 8.114.976 parámetros (8,1 M) desarrollado por Convergent y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de propósito general: es un especialista entrenado desde cero, con inicialización aleatoria, para resolver operaciones aritméticas y problemas de palabras sencillos en inglés, descomponiendo cada solución en pasos intermedios verificables. Su relevancia no está en la capacidad bruta, sino en el enfoque: un modelo que cabe en cualquier dispositivo y que demuestra que un transformer diminuto puede aprender procedimientos aritméticos exactos si el dataset sintético está generado paso a paso por Python.
+Pico 1.3-Math es un modelo de lenguaje de 8.114.976 parámetros (8,1 M) desarrollado por Convergent y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de propósito general: es un especialista entrenado desde cero, con inicialización aleatoria, para resolver operaciones aritméticas y problemas de palabras sencillos en inglés, descomponiendo cada solución en pasos intermedios verificables. Su relevancia no está en la capacidad bruta, sino en el enfoque: un modelo que cabe en cualquier dispositivo y que demuestra que un transformer diminuto puede aprender procedimientos aritméticos exactos si el dataset sintético está generado paso a paso por Python.
 
 La arquitectura es un decoder estilo Llama con 8 capas, tamaño oculto 288, MLP de 768 con SwiGLU, 6 cabezas de atención, RoPE, RMSNorm, embeddings atados y una ventana de contexto de 1024 tokens. El tokenizador es un BPE a nivel de byte con solo 512 entradas y sin ninguna fusión que combine dígitos, de modo que cada cifra es siempre un token independiente; esta decisión es la que permite al modelo operar dígito a dígito.
 
@@ -88,7 +88,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pico 1.3-Math | 8,1 M | 1024 | Aritmética paso a paso en inglés, entrenado desde cero | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| Pico 1.3-Math | 8,1 M | 1024 | Aritmética paso a paso en inglés, entrenado desde cero | Apache 2.0 | Hugging Face, safetensors y GGUF |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,5 +107,5 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Convergent-ch/Pico-1.3-Math
+- Hugging Face: https://huggingface.co/Convergent-ch/Pico-1.3-Math
 - Resultados de la búsqueda web: no se encontraron enlaces relevantes al modelo, a su paper, a su repositorio de código ni a demos. Los únicos resultados devueltos fueron definiciones de diccionario del término francés "convergent" (Larousse, Le Robert, CNRTL, Linternaute), sin relación con el modelo.

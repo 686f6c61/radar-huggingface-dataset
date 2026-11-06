@@ -59,8 +59,8 @@ No se dispone de informacion sobre modelos comparables especificos en la documen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WAM DiT4DiT (este) | 5B (base) | no disponible | apache-2.0 | HuggingFace |
-| Wan2.2-TI2V-5B (base) | 5B | no disponible | apache-2.0 | HuggingFace |
+| WAM DiT4DiT (este) | 5B (base) | no disponible | apache-2.0 | Hugging Face |
+| Wan2.2-TI2V-5B (base) | 5B | no disponible | apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,5 +73,5 @@ No se dispone de informacion sobre modelos comparables especificos en la documen
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hmkang/wam-dit4dit-robocasa-wan22-3latin2latout)
+- [Modelo en Hugging Face](https://huggingface.co/hmkang/wam-dit4dit-robocasa-wan22-3latin2latout)
 - [Modelo base Wan2.2-TI2V-5B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers)

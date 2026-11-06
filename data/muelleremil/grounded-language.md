@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`muelleremil/grounded-language` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado publicable. La propia model card lo describe como un conjunto de notas de lectura y un esbozo de experimento sobre el tema "Grounded Language" (lenguaje fundamentado, es decir, vinculacion de lenguaje y percepcion visual). El autor lo presenta explicitamente como material exploratorio: no declara mejoras en benchmarks, ni ablaciones completadas, ni codigo publicado, ni checkpoint entrenado.
+`muelleremil/grounded-language` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado publicable. La propia model card lo describe como un conjunto de notas de lectura y un esbozo de experimento sobre el tema "Grounded Language" (lenguaje fundamentado, es decir, vinculacion de lenguaje y percepcion visual). El autor lo presenta explicitamente como material exploratorio: no declara mejoras en benchmarks, ni ablaciones completadas, ni codigo publicado, ni checkpoint entrenado.
 
-El unico artefacto de pesos es un fichero safetensors con 16.576 parametros totales y un tamano de repositorio de 0,0 GB, una magnitud compatible con un tensor de prueba o marcador de posicion mas que con un modelo funcional. No hay informacion sobre arquitectura concreta, datos de entrenamiento, tokenizador, idiomas ni contexto, y el pipeline de HuggingFace figura como no disponible.
+El unico artefacto de pesos es un fichero safetensors con 16.576 parametros totales y un tamano de repositorio de 0,0 GB, una magnitud compatible con un tensor de prueba o marcador de posicion mas que con un modelo funcional. No hay informacion sobre arquitectura concreta, datos de entrenamiento, tokenizador, idiomas ni contexto, y el pipeline de Hugging Face figura como no disponible.
 
 La relevancia de esta ficha es, por tanto, metodologica: sirve para documentar un caso de repositorio con etiquetas de modelo (`safetensors`, `transformer`) que en realidad contiene documentacion de investigacion. Para un desarrollador o investigador que evalue modelos rapidamente, la conclusion operativa es que este repositorio no debe utilizarse como dependencia de inferencia.
 
@@ -76,5 +76,5 @@ No disponible. No hay datos publicados de rendimiento, contexto, licencia de uso
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muelleremil/grounded-language
+- Hugging Face: https://huggingface.co/muelleremil/grounded-language
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

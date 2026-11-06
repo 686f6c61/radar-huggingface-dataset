@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d768_L2_t250000000_s2` es un checkpoint de investigación publicado por el usuario asher577 en HuggingFace. Se trata de un transformer "weight-sparse" (con dispersión estructural en los pesos) entrenado siguiendo el procedimiento descrito por Gao et al. (2025), según indica la propia model card. El modelo es extremadamente pequeño: 2 capas, dimensión de modelo 768, dimensión de cabeza 16 y un vocabulario de solo 4096 tokens.
+`scaling2_plain_d768_L2_t250000000_s2` es un checkpoint de investigación publicado por el usuario asher577 en Hugging Face. Se trata de un transformer "weight-sparse" (con dispersión estructural en los pesos) entrenado siguiendo el procedimiento descrito por Gao et al. (2025), según indica la propia model card. El modelo es extremadamente pequeño: 2 capas, dimensión de modelo 768, dimensión de cabeza 16 y un vocabulario de solo 4096 tokens.
 
 El objetivo declarado es el estudio del escalado de modelos dispersos en pesos, no la explotación práctica. El entrenamiento se realizó sobre el dataset `jacobcd52/simplestories-tokenized` con el tokenizador de SimpleStories-1.25M y un total de 250 millones de tokens procesados. La ventana de contexto es de 512 tokens.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `scaling2_plain_d768_L2_t250000000_s2` | no disponible (2 capas, d=768) | 512 | no disponible | HuggingFace, repo de 0.1 GB |
-| Variantes `scaling2` del mismo autor | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 small (referencia de tamaño similar) | 124M | 1024 | MIT | HuggingFace, ampliamente soportado |
-| TinyStories-1M (referencia de dominio similar) | ~1M | 512 | MIT (según variante) | HuggingFace |
+| `scaling2_plain_d768_L2_t250000000_s2` | no disponible (2 capas, d=768) | 512 | no disponible | Hugging Face, repo de 0.1 GB |
+| Variantes `scaling2` del mismo autor | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 small (referencia de tamaño similar) | 124M | 1024 | MIT | Hugging Face, ampliamente soportado |
+| TinyStories-1M (referencia de dominio similar) | ~1M | 512 | MIT (según variante) | Hugging Face |
 
 La comparación con GPT-2 small y TinyStories es orientativa por tamaño y dominio; no se dispone de datos de rendimiento del modelo evaluado para establecer una comparación cuantitativa.
 
@@ -82,7 +82,7 @@ La comparación con GPT-2 small y TinyStories es orientativa por tamaño y domin
 
 ## Enlaces
 
-- [HuggingFace: asher577/scaling2_plain_d768_L2_t250000000_s2](https://huggingface.co/asher577/scaling2_plain_d768_L2_t250000000_s2)
+- [Hugging Face: asher577/scaling2_plain_d768_L2_t250000000_s2](https://huggingface.co/asher577/scaling2_plain_d768_L2_t250000000_s2)
 - [Run de Weights & Biases](https://wandb.ai/asher577/scd_scaling/runs/jyaar4qh)
 - [Dataset: jacobcd52/simplestories-tokenized](https://huggingface.co/datasets/jacobcd52/simplestories-tokenized)
 - [Tokenizer: SimpleStories/SimpleStories-1.25M](https://huggingface.co/SimpleStories/SimpleStories-1.25M)

@@ -85,7 +85,7 @@ No disponible. El artefacto no es un modelo de lenguaje y no existen alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ahtx/kindi-mtp-heads
+- Repositorio en Hugging Face: https://huggingface.co/ahtx/kindi-mtp-heads
 - Modelo base Ternary-Bonsai-2-2B: https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf
 - Modelo de origen de los pesos del head, Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Motor Kindi (instalación y documentación): https://amirhusain.com/kindi

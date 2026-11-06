@@ -125,7 +125,7 @@ La build oQ4 iguala el rendimiento de la oQ8 en la suite golden con aproximadame
 
 ## Enlaces
 
-- HuggingFace (esta build): https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ4-fp16-mtp
+- Hugging Face (esta build): https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ4-fp16-mtp
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - Build hermana oQ8: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ8-fp16-mtp
 - Build hermana oQ6: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ6-fp16-mtp

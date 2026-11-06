@@ -88,7 +88,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Gemma-4-26B-A4B-Heretic-MLX-q6
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Gemma-4-26B-A4B-Heretic-MLX-q6
 - Modelo base (fine-tuning heretic): https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic
 - Modelo original de Google (instruct): https://huggingface.co/google/gemma-4-26B-A4B-it
 - Modelo original de Google (base): https://huggingface.co/google/gemma-4-26B-A4B

@@ -94,8 +94,8 @@ El único punto de comparación documentado en la información proporcionada es 
 
 | Alternativa | Parámetros añadidos | Contexto | Rendimiento relativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Estas cabeceras de decisión | 0,20–1,32 M por cabeza | No disponible | +14,8 puntos en tareas vistas; −3,25 puntos en tareas nuevas; derrota en suite externa | `all-rights-reserved-side-project` | Pesos publicados en HuggingFace; motor subyacente privado |
-| Read-out zero-shot de `Qwen2.5-1.5B-Instruct-4bit` | 0 | No disponible | Referencia base; supera a las cabeceras en todo lo no visto | Apache-2.0 (modelo base) | Público en HuggingFace |
+| Estas cabeceras de decisión | 0,20–1,32 M por cabeza | No disponible | +14,8 puntos en tareas vistas; −3,25 puntos en tareas nuevas; derrota en suite externa | `all-rights-reserved-side-project` | Pesos publicados en Hugging Face; motor subyacente privado |
+| Read-out zero-shot de `Qwen2.5-1.5B-Instruct-4bit` | 0 | No disponible | Referencia base; supera a las cabeceras en todo lo no visto | Apache-2.0 (modelo base) | Público en Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
 
@@ -116,7 +116,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mchen04/jev-local-lab-decision-heads
+- Modelo en Hugging Face: https://huggingface.co/mchen04/jev-local-lab-decision-heads
 - Modelo base: https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit
 - Repositorio de código: no disponible (el autor indica que el motor `jevlocal` reside en un checkout local privado).
 - Paper: no disponible.

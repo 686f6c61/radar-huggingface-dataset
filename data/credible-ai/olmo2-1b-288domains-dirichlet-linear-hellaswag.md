@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. Hell
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| `credible-ai/olmo2-1B-288domains-dirichlet-linear-hellaswag` | 1,41 B | no disponible | MIT (pesos) | HuggingFace, 0 descargas, 0 likes | Artefacto de investigación; ablación lineal sobre enjambre Dirichlet, 32B tokens |
-| `credible-ai/olmo2-60M-288domains-dirichlet` (proxy swarm) | ≈60 M (según el nombre del repositorio) | no disponible | no disponible en la información | HuggingFace | Modelo proxy usado para ajustar la mezcla; no pensado para uso final |
-| OLMo 2 base 1B (AI2) | no disponible en la información | no disponible | no disponible en la información | HuggingFace | Modelo base de propósito general de la misma familia arquitectónica; referencia natural para medir la pérdida de calidad por el recorte a 32B tokens |
+| `credible-ai/olmo2-1B-288domains-dirichlet-linear-hellaswag` | 1,41 B | no disponible | MIT (pesos) | Hugging Face, 0 descargas, 0 likes | Artefacto de investigación; ablación lineal sobre enjambre Dirichlet, 32B tokens |
+| `credible-ai/olmo2-60M-288domains-dirichlet` (proxy swarm) | ≈60 M (según el nombre del repositorio) | no disponible | no disponible en la información | Hugging Face | Modelo proxy usado para ajustar la mezcla; no pensado para uso final |
+| OLMo 2 base 1B (AI2) | no disponible en la información | no disponible | no disponible en la información | Hugging Face | Modelo base de propósito general de la misma familia arquitectónica; referencia natural para medir la pérdida de calidad por el recorte a 32B tokens |
 
 La comparación con modelos de propósito general de tamaño similar no resulta informativa: este checkpoint se entrenó con 32B tokens y una mezcla optimizada para una única tarea, mientras que los modelos base de su categoría se entrenan con presupuestos de tokens muy superiores y corpora más amplios.
 
@@ -92,7 +92,7 @@ La comparación con modelos de propósito general de tamaño similar no resulta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-linear-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-linear-hellaswag
 - Modelo proxy (60M): https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet
 - Dataset de entrenamiento: https://huggingface.co/datasets/WebOrganizer/Corpus-200B
 - Dataset tokenizado: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized

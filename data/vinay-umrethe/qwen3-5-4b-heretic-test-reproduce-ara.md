@@ -127,7 +127,7 @@ No se dispone de datos para comparar modelos ablacionados equivalentes, ni de be
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/VINAY-UMRETHE/Qwen3.5-4B-heretic-test-reproduce-ara
+- Repositorio Hugging Face del modelo: https://huggingface.co/VINAY-UMRETHE/Qwen3.5-4B-heretic-test-reproduce-ara
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Heretic (herramienta de ablacion): https://heretic-project.org

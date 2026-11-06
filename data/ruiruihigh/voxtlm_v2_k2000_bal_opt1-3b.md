@@ -80,8 +80,8 @@ Nota del autor: el checkpoint posterior de la epoca 14 (no publicado) obtuvo mej
 
 | Modelo | Parametros | Tareas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoxtLM v2 k2000 Bal opt1.3b (este) | 1,3B | ASR, TTS, continuacion texto/habla | no disponible | OPT (no comercial) | HuggingFace + receta ESPnet |
-| RuiRuihigh/voxtlm_v2_k2000_Bal_opt350m | ~350M | ASR, TTS, continuacion texto/habla | no disponible | OPT (no comercial) | HuggingFace |
+| VoxtLM v2 k2000 Bal opt1.3b (este) | 1,3B | ASR, TTS, continuacion texto/habla | no disponible | OPT (no comercial) | Hugging Face + receta ESPnet |
+| RuiRuihigh/voxtlm_v2_k2000_Bal_opt350m | ~350M | ASR, TTS, continuacion texto/habla | no disponible | OPT (no comercial) | Hugging Face |
 | VoxtLM original (Maiti et al., 2023) | no disponible | ASR, TTS, continuacion texto/habla | no disponible | no disponible | paper arXiv:2309.07937 |
 
 Las cifras de rendimiento de las alternativas no estan disponibles en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa directa.
@@ -101,7 +101,7 @@ Las cifras de rendimiento de las alternativas no estan disponibles en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RuiRuihigh/voxtlm_v2_k2000_Bal_opt1.3b
+- Hugging Face: https://huggingface.co/RuiRuihigh/voxtlm_v2_k2000_Bal_opt1.3b
 - Version de 350M del mismo autor: https://huggingface.co/RuiRuihigh/voxtlm_v2_k2000_Bal_opt350m
 - Receta ESPnet (rama voxtlm_v1_v2_experiments): https://github.com/RuiRuihigh/espnet/tree/voxtlm_v1_v2_experiments/egs2/voxtlm_v2
 - Paper VoxtLM: https://arxiv.org/abs/2309.07937

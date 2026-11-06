@@ -92,7 +92,7 @@ La comparativa se limita a estos tres modelos porque la información disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TigreGotico/IbRo-nllb-onnx
+- Modelo en Hugging Face: https://huggingface.co/TigreGotico/IbRo-nllb-onnx
 - Modelo base: https://huggingface.co/Transducens/IbRo-nllb
 - Repositorio de optimum: https://github.com/huggingface/optimum
 - ONNX Runtime: https://onnxruntime.ai/

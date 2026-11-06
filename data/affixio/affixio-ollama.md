@@ -94,7 +94,7 @@ Frente a las alternativas, la diferencia declarada de AffixIO es el orden de la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AffixIO/affixio-ollama
+- Repositorio en Hugging Face: https://huggingface.co/AffixIO/affixio-ollama
 - Producto: https://www.affix-io.com
 - SDK en npm: https://www.npmjs.com/package/affixio
 - Documentación de la API: https://www.affix-io.com/docs/

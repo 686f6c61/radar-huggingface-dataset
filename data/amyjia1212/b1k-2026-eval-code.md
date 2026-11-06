@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amyjia1212/b1k-2026-eval-code` es un repositorio publicado en HuggingFace que no contiene pesos de un modelo de lenguaje, sino el codigo y la configuracion de evaluacion empleados con los checkpoints de robotica `amyjia1212/b1k-2026-*`, junto con las respuestas documentadas a tres preguntas tecnicas sobre dicha evaluacion. El material esta fechado a 2026-10-14 y su relevancia principal es metodologica: en el se documenta un error grave en la tabla de etapas por tarea (`task_stage_embeddings`) que invalido todos los resultados de evaluacion previos a esa fecha.
+`amyjia1212/b1k-2026-eval-code` es un repositorio publicado en Hugging Face que no contiene pesos de un modelo de lenguaje, sino el codigo y la configuracion de evaluacion empleados con los checkpoints de robotica `amyjia1212/b1k-2026-*`, junto con las respuestas documentadas a tres preguntas tecnicas sobre dicha evaluacion. El material esta fechado a 2026-10-14 y su relevancia principal es metodologica: en el se documenta un error grave en la tabla de etapas por tarea (`task_stage_embeddings`) que invalido todos los resultados de evaluacion previos a esa fecha.
 
 Los checkpoints evaluados corresponden a politicas de manipulacion sobre el benchmark BEHAVIOR-1K, ejecutadas mediante un servidor de politica construido sobre el repositorio `IliaLarchenko/behavior-1k-solution` (Apache-2.0) y su submodulo `openpi` (Physical Intelligence), con inferencia en JAX/XLA. La model card detalla el preprocesado visual (tres camaras RGB reescaladas de 720x720 y 480x480 a 280x280), la dimension de la tabla de etapas (1087 filas x 1024) y la configuracion exacta del servidor de inferencia y del arnes de evaluacion.
 
@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos de politica comparables (por ejemplo, al
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/amyjia1212/b1k-2026-eval-code
+- Repositorio de Hugging Face: https://huggingface.co/amyjia1212/b1k-2026-eval-code
 - Repositorio de la politica base: https://github.com/IliaLarchenko/behavior-1k-solution
 - Simulador y evaluador BEHAVIOR-1K: https://github.com/StanfordVL/BEHAVIOR-1K
 - Submodulo `openpi` (Physical Intelligence), commit `01177e0242a1c7e8fad2547caa0e987def614cda`: no se proporciona URL directa en la informacion disponible

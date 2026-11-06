@@ -105,7 +105,7 @@ La comparación relevante es frente al original en BF16: misma arquitectura y co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JRamirez-UAB/hybridagent-8b-exl3-vllm-experimental
+- Modelo en Hugging Face: https://huggingface.co/JRamirez-UAB/hybridagent-8b-exl3-vllm-experimental
 - Modelo base: https://huggingface.co/togethercomputer/HybridAgent-8B-Agentic
 - Colección "Experimental — HybridAgent on forked vLLM": https://huggingface.co/collections/JRamirez-UAB/experimental-hybridagent-on-forked-vllm-6adb2174fac67e93d6e34506
 - Paper, blog o repositorio del fork: no disponible en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-1B-WordPiece es un modelo de lenguaje causal (decoder-only) de aproximadamente 1.000 millones de parametros publicado por el usuario cminst en HuggingFace. Se trata de un checkpoint entrenado desde inicializacion aleatoria con un objetivo muy concreto: la investigacion controlada sobre tokenizacion. El modelo emplea un tokenizador WordPiece de 32.000 tokens en lugar del BPE tipico de la familia Llama, lo que lo convierte en una pieza util para comparar como afecta el esquema de tokenizacion al comportamiento de un transformer de arquitectura estandar.
+Llama-1B-WordPiece es un modelo de lenguaje causal (decoder-only) de aproximadamente 1.000 millones de parametros publicado por el usuario cminst en Hugging Face. Se trata de un checkpoint entrenado desde inicializacion aleatoria con un objetivo muy concreto: la investigacion controlada sobre tokenizacion. El modelo emplea un tokenizador WordPiece de 32.000 tokens en lugar del BPE tipico de la familia Llama, lo que lo convierte en una pieza util para comparar como afecta el esquema de tokenizacion al comportamiento de un transformer de arquitectura estandar.
 
 La arquitectura es de estilo Llama, con 16 capas, hidden size de 2.048, MLP de 8.192, 32 cabezas de atencion y 8 cabezas key/value (GQA), vocabulario de 32.002 entradas y embeddings de entrada y salida compartidos. La longitud de contexto es de 2.048 tokens, un valor reducido frente a los estandares actuales, coherente con su proposito de investigacion y no de produccion.
 
@@ -27,7 +27,7 @@ Es relevante ahora porque se publica como modelo base sin ajuste por instruccion
 | Vocabulario | 32.002 tokens (WordPiece, incluye padding y EOS) |
 | Embeddings | Compartidos entre entrada y salida (tied) |
 | Tamano del repositorio | 2,1 GB |
-| Fecha de publicacion (segun HuggingFace) | 27 de septiembre de 2026 |
+| Fecha de publicacion (segun Hugging Face) | 27 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -97,10 +97,10 @@ Diferencias clave: Llama-1B-WordPiece esta entrenado con un presupuesto de token
 - Dataset de entrenamiento: FineWeb-EDU-dedup-10B es un corpus educativo filtrado, con la cobertura y los sesgos propios de ese tipo de datos web.
 - Escasez de validacion externa: 0 descargas y 0 likes en el momento de la consulta, sin papers, blogs ni evaluaciones de terceros identificados.
 - Tokenizador no estandar: el uso de WordPiece (en lugar de BPE) puede requerir ajustes en herramientas y pipelines que asumen tokenizadores Llama convencionales.
-- Fecha de publicacion declarada en HuggingFace (27 de septiembre de 2026) posterior a la fecha actual, lo que sugiere un posible error de metadatos y conviene tratarlo con cautela.
+- Fecha de publicacion declarada en Hugging Face (27 de septiembre de 2026) posterior a la fecha actual, lo que sugiere un posible error de metadatos y conviene tratarlo con cautela.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cminst/Llama-1B-WordPiece
+- Modelo en Hugging Face: https://huggingface.co/cminst/Llama-1B-WordPiece
 - Dataset de entrenamiento: https://huggingface.co/datasets/EleutherAI/fineweb-edu-dedup-10b
 - Paper, blog o repositorio oficial: no disponible. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo, unicamente paginas genericas de GitHub sin relacion con el checkpoint.

@@ -12,7 +12,7 @@ Es relevante porque sirve un endpoint compatible con el formato /v1/systemone de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen/Qwen3.8-27B (etiqueta de arquitectura `qwen3_5` en HuggingFace), con LoRA fusionado; modelo de decisión System One |
+| Arquitectura | Transformer derivado de Qwen/Qwen3.8-27B (etiqueta de arquitectura `qwen3_5` en Hugging Face), con LoRA fusionado; modelo de decisión System One |
 | Parametros totales | 27.781.427.952 (≈27,8B) |
 | Parametros activos | No aplica / no disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -20,7 +20,7 @@ Es relevante porque sirve un endpoint compatible con el formato /v1/systemone de
 | Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (bf16, LoRA fusionado sobre la base) |
-| Modalidad declarada | image-text-to-text (pipeline de HuggingFace) |
+| Modalidad declarada | image-text-to-text (pipeline de Hugging Face) |
 | Modelo base | Qwen/Qwen3.8-27B (revisión `1d4bf0f2`, checkpoint de chat, thinking off) |
 | Relación con la base | finetune |
 | Tamano del repositorio | 55,6 GB |
@@ -46,7 +46,7 @@ El entrenamiento usa exclusivamente datos públicos: LocalLLaMA/typed-decisions 
 - Compatibilidad de endpoint: `/v1/systemone` (formato de cable de Jev) y `/v1/decide` de AINode, más un playground de navegador en el servidor incluido.
 - Capacidades multilingües: no disponible; el modelo declara únicamente inglés.
 - Tool calling, function calling, agentes multi-paso y modo thinking: no disponible en la información proporcionada.
-- Entrada de imagen: el pipeline declarado en HuggingFace es image-text-to-text, aunque la model card no detalla capacidades de visión.
+- Entrada de imagen: el pipeline declarado en Hugging Face es image-text-to-text, aunque la model card no detalla capacidades de visión.
 
 ## Casos de uso
 
@@ -102,9 +102,9 @@ Puntos donde el 27B no supera al 9B v2, según el autor: accuracy en Jevals PubM
 
 | Modelo | Parametros | Contexto | Headline (Nimble macro) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jebadiah-27b | 27,78B | No disponible | 78,9 (9B v2: 73,9) | Apache 2.0 | Pesos bf16 en HuggingFace |
-| jebadiah-9b-v2 | ≈9B (por nombre) | No disponible | 73,9 | No disponible | Pesos en HuggingFace |
-| jebadiah-4b-v2 | ≈4B (por nombre) | No disponible | 72,5 | No disponible | Pesos en HuggingFace |
+| jebadiah-27b | 27,78B | No disponible | 78,9 (9B v2: 73,9) | Apache 2.0 | Pesos bf16 en Hugging Face |
+| jebadiah-9b-v2 | ≈9B (por nombre) | No disponible | 73,9 | No disponible | Pesos en Hugging Face |
+| jebadiah-4b-v2 | ≈4B (por nombre) | No disponible | 72,5 | No disponible | Pesos en Hugging Face |
 | Bespoke Nimble-9B | ≈9B (por nombre) | No disponible | 74,8 | No disponible | Referencia publicada por el autor |
 
 Comparación dentro de la misma familia: el 27B mejora al 9B v2 en el headline (78,9 frente a 73,9), en Banking77 (77,0 frente a 70,7), en HelpSteer2 helpfulness (48,7 frente a 40,7), en Nimble held-out (93,5 frente a 81,2) y en Kev transfer-v4 (85,9 frente a 83,8), pero queda por debajo en PubMedQA (90,0 frente a 90,3) y en cuatro subconjuntos públicos de Nimble. La licencia y las longitudes de contexto de las variantes 9B v2 y 4B v2 no están disponibles en la información proporcionada. No se dispone de datos de contexto, cuantizaciones o benchmarks comparables frente a clasificadores encoder-only de propósito general como DeBERTa o ModernBERT, por lo que esa comparación no está disponible.
@@ -128,7 +128,7 @@ Comparación dentro de la misma familia: el 27B mejora al 9B v2 en el headline (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frontier-infra/jebadiah-27b
+- Modelo en Hugging Face: https://huggingface.co/frontier-infra/jebadiah-27b
 - Repositorio de código: https://github.com/getainode/jebadiah
 - Servidor autónomo: https://github.com/getainode/jebadiah/tree/main/server
 - Resultados de evaluación: `eval/RESULTS.md` en el repositorio de código (https://github.com/getainode/jebadiah/blob/main/eval/RESULTS.md)

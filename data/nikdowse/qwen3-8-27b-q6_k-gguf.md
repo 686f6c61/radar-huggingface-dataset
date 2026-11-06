@@ -21,7 +21,7 @@ La relevancia de esta conversión GGUF radica en que permite ejecutar el modelo 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base Qwen3.8-27B es un transformer denso de 27.320 millones de parámetros, según los datos de HuggingFace. No se dispone de información detallada sobre el número de capas, dimensiones ocultas o mecanismos de atención específicos en la documentación proporcionada. El modelo acepta entradas multimodales (imagen y texto) y genera texto, lo que implica un codificador de visión integrado en la arquitectura.
+La arquitectura del modelo base Qwen3.8-27B es un transformer denso de 27.320 millones de parámetros, según los datos de Hugging Face. No se dispone de información detallada sobre el número de capas, dimensiones ocultas o mecanismos de atención específicos en la documentación proporcionada. El modelo acepta entradas multimodales (imagen y texto) y genera texto, lo que implica un codificador de visión integrado en la arquitectura.
 
 En cuanto al entrenamiento, no se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset o el uso de técnicas como RLHF o DPO en la información disponible. La familia Qwen3.8 se presenta como una evolución de Qwen3, con mejoras en razonamiento y capacidades de visión, pero los datos concretos de entrenamiento no están accesibles en las fuentes consultadas.
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NikDowse/Qwen3.8-27B-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/NikDowse/Qwen3.8-27B-Q6_K-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Articulo de Alibaba Cloud sobre requisitos de hardware: https://www.alibabacloud.com/blog/what-it-actually-takes-to-run-qwen3-8-27b-locally_603428

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `goaicorp/dyu-nllb-600M-dyu2fr` es un ajuste fino (fine-tune) especializado en traducción bidireccional entre el diyula (dyu, también conocido como jula o dyula, lengua mandé hablada principalmente en Burkina Faso, Costa de Marfil y Malí) y el francés. Lo desarrolla goaicorp, un perfil de HuggingFace sin documentación pública adicional en la información disponible, y parte del modelo base `facebook/nllb-200-distilled-600M` de Meta AI, un transformer encoder-decoder de la familia NLLB (No Language Left Behind) destilado a 600 millones de parámetros.
+El modelo `goaicorp/dyu-nllb-600M-dyu2fr` es un ajuste fino (fine-tune) especializado en traducción bidireccional entre el diyula (dyu, también conocido como jula o dyula, lengua mandé hablada principalmente en Burkina Faso, Costa de Marfil y Malí) y el francés. Lo desarrolla goaicorp, un perfil de Hugging Face sin documentación pública adicional en la información disponible, y parte del modelo base `facebook/nllb-200-distilled-600M` de Meta AI, un transformer encoder-decoder de la familia NLLB (No Language Left Behind) destilado a 600 millones de parámetros.
 
 La relevancia de este modelo radica en su carácter de recurso de baja disponibilidad: las lenguas mandé de África Occidental cuentan con poquísimos modelos de traducción automática de calidad y con licencias abiertas. Al estar construido sobre NLLB-200, hereda la arquitectura m2m_100 y el tokenizador SentencePiece multilingüe de Meta, lo que facilita su integración en pipelines existentes de `transformers`.
 
-El modelo está publicado con acceso restringido (gated) en HuggingFace, requiere aceptar condiciones de uso y se distribuye bajo licencia CC BY-SA 4.0, lo que impone obligaciones de atribución y compartición bajo la misma licencia. Con solo 2 descargas y 0 likes en el momento de la ficha, se trata de un artefacto muy reciente y de nicho, sin validación comunitaria extensa.
+El modelo está publicado con acceso restringido (gated) en Hugging Face, requiere aceptar condiciones de uso y se distribuye bajo licencia CC BY-SA 4.0, lo que impone obligaciones de atribución y compartición bajo la misma licencia. Con solo 2 descargas y 0 likes en el momento de la ficha, se trata de un artefacto muy reciente y de nicho, sin validación comunitaria extensa.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo está publicado con acceso restringido (gated) en HuggingFace, requier
 | Modelo base | facebook/nllb-200-distilled-600M |
 | Pipeline | translation (text2text-generation) |
 | Dataset de ajuste | goaicorp/dyu-fr-parallel |
-| Acceso | restringido (gated) en HuggingFace |
+| Acceso | restringido (gated) en Hugging Face |
 | Tamano del repositorio | 39.4 GB |
 
 ## Arquitectura y entrenamiento
@@ -37,7 +37,7 @@ El ajuste se ha realizado sobre el dataset `goaicorp/dyu-fr-parallel`, un corpus
 - Traducción automática de texto entre diyula y francés (dirección principal declarada: dyu→fr).
 - Generación texto-a-texto mediante el pipeline `translation` de `transformers`.
 - Compatible con `text2text-generation` y con la API estándar de NLLB (uso de `src_lang="dyu_Latn"` y `forced_bos_token_id` para `fra_Latn`, sujeto a verificación).
-- Soporte de `endpoints_compatible` según los tags, lo que indica compatibilidad con HuggingFace Inference Endpoints.
+- Soporte de `endpoints_compatible` según los tags, lo que indica compatibilidad con Hugging Face Inference Endpoints.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
 - Capacidades multilingües limitadas a los dos idiomas del ajuste; el resto de lenguas de NLLB-200 no están garantizadas tras el fine-tune.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en int8: en torno a 0,7-1 GB para pesos.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Una RTX 3060, RTX 4060, T4 o incluso una GTX 1650 de 4 GB deberían ser suficientes en fp16.
 - Cabe holgadamente en GPU de consumo (RTX 20xx, 30xx, 40xx) y en GPUs de datacenter (A10, L4, A100, H100) con enorme margen.
-- Opciones de despliegue: `transformers` con `pipeline("translation")`, Text Generation Inference (TGI) para `text2text-generation`, HuggingFace Inference Endpoints (tag `endpoints_compatible`), y conversión a ONNX o CTranslate2 para servir con mayor throughput. No se documentan pesos GGUF para llama.cpp/Ollama.
+- Opciones de despliegue: `transformers` con `pipeline("translation")`, Text Generation Inference (TGI) para `text2text-generation`, Hugging Face Inference Endpoints (tag `endpoints_compatible`), y conversión a ONNX o CTranslate2 para servir con mayor throughput. No se documentan pesos GGUF para llama.cpp/Ollama.
 - Latencia y throughput: no disponibles. Como referencia orientativa de la familia NLLB-600M distilled, un batch pequeño en GPU moderna suele procesar decenas de frases por segundo, pero no hay medición publicada para este fine-tune.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ El modelo de goaicorp se diferencia del NLLB-200 original en que está especiali
 
 ## Limitaciones y advertencias
 
-- El repositorio es de acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede bloquear automatizaciones y despliegues en CI.
+- El repositorio es de acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede bloquear automatizaciones y despliegues en CI.
 - Licencia CC BY-SA 4.0: obliga a atribuir al autor y a compartir obras derivadas bajo la misma licencia; conviene revisar compatibilidad con licencias propietarias en productos comerciales.
 - El modelo base NLLB-200 distilled tiene sesgos conocidos hacia ciertos dominios y variedades lingüísticas; el fine-tune puede heredarlos y amplificarlos si el dataset `dyu-fr-parallel` no es diverso.
 - Riesgo de alucinación en traducción: como todo modelo generativo, puede producir contenido no presente en el original, especialmente con entradas largas, ruidosas o fuera de dominio.
@@ -91,7 +91,7 @@ El modelo de goaicorp se diferencia del NLLB-200 original en que está especiali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goaicorp/dyu-nllb-600M-dyu2fr
+- Modelo en Hugging Face: https://huggingface.co/goaicorp/dyu-nllb-600M-dyu2fr
 - Dataset de ajuste: https://huggingface.co/datasets/goaicorp/dyu-fr-parallel
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Paper NLLB-200 (No Language Left Behind): https://arxiv.org/abs/2207.04672

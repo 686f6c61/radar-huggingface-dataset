@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IvmeLabs/Ivme-Conversate-Chat-v1 es un modelo de lenguaje causal conversacional publicado por IvmeLabs. Según los metadatos de HuggingFace, está orientado a conversación (`chat`), ha pasado por un proceso de ajuste fino supervisado (SFT) y opera en inglés. El repositorio tiene un tamaño de 38.0 GB y contiene pesos en formato `safetensors`. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para poder descargarlo.
+IvmeLabs/Ivme-Conversate-Chat-v1 es un modelo de lenguaje causal conversacional publicado por IvmeLabs. Según los metadatos de Hugging Face, está orientado a conversación (`chat`), ha pasado por un proceso de ajuste fino supervisado (SFT) y opera en inglés. El repositorio tiene un tamaño de 38.0 GB y contiene pesos en formato `safetensors`. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para poder descargarlo.
 
 No se ha publicado información sobre su arquitectura, número total de parámetros, longitud de contexto, datos de entrenamiento ni benchmarks. Esto impide validar su calidad técnica o compararlo con otros modelos de la misma categoría. Su relevancia se limita a un posible uso en aplicaciones conversacionales en inglés, siempre que se acepte la opacidad de sus especificaciones.
 
@@ -32,7 +32,7 @@ Al estar etiquetado como `transformers` y `safetensors`, se puede inferir que es
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, según los metadatos de HuggingFace.
+- Generación de texto conversacional en inglés, según los metadatos de Hugging Face.
 - Incluye la etiqueta `chatmaxxing`, que sugiere un enfoque en conversaciones largas o profundas, aunque no hay ninguna evidencia técnica publicada que respalde esta característica.
 - No se dispone de información sobre soporte de tool calling o function calling.
 - No se dispone de información sobre capacidades de agentes o razonamiento multi-paso.
@@ -72,10 +72,10 @@ No disponible. No existen datos suficientes para comparar este modelo con altern
 - Riesgo de alucinación: al no contar con métricas de fiabilidad publicadas, existe un riesgo importante de generar contenido falso o inconsistente.
 - Idioma: solo se reconoce el inglés, sin garantía de soporte para español u otros idiomas.
 - Licencia: ODC-BY es una licencia orientada a datos, no específica para modelos de IA. Exige atribución y puede contener restricciones que conviene revisar antes de un uso comercial.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que limita su uso en entornos automatizados o en pipelines sin intervención manual.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que limita su uso en entornos automatizados o en pipelines sin intervención manual.
 - Falta de documentación técnica: la ausencia de arquitectura, parámetros y benchmarks impide validar su uso en sistemas de producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IvmeLabs/Ivme-Conversate-Chat-v1
+- Repositorio Hugging Face: https://huggingface.co/IvmeLabs/Ivme-Conversate-Chat-v1
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

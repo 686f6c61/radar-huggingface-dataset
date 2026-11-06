@@ -81,7 +81,7 @@ No hay información pública de comparaciones con otros modelos en la documentac
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w50-100-sft)
+- [Página del modelo en Hugging Face](https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w50-100-sft)
 - [Base del modelo (sin SFT)](https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w50-100-base)
 - [Dataset de los corpus pirate](https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2)
 - [Perfil de GitHub del autor](https://github.com/jkminder/)

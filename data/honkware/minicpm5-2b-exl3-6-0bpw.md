@@ -71,7 +71,7 @@ No se dispone de información comparativa en los resultados de búsqueda. Por su
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Honkware/MiniCPM5-2B-exl3-6.0bpw
+- Hugging Face: https://huggingface.co/Honkware/MiniCPM5-2B-exl3-6.0bpw
 - Modelo base: https://huggingface.co/OpenBMB/MiniCPM5-2B
 - Repositorio OpenBMB/MiniCPM (GitHub): https://github.com/OpenBMB/MiniCPM
 - ExLlamaV3 (GitHub): https://github.com/turboderp-org/exllamav3

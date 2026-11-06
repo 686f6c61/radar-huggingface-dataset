@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-obfm1c` | Adaptador LoRA rango 32 sobre base de 120.000 M | no disponible | Apache 2.0 | HuggingFace (0 descargas) | *Model organism* de investigación sobre controlabilidad de CoT |
-| `openai/gpt-oss-120b` (base) | 120.000 M totales, ~5.100 M activos | no disponible | no disponible en esta ficha | HuggingFace / OpenAI | Modelo base sin el adaptador de control de CoT |
+| `latentMO/cotcontrol-gptoss120b-obfm1c` | Adaptador LoRA rango 32 sobre base de 120.000 M | no disponible | Apache 2.0 | Hugging Face (0 descargas) | *Model organism* de investigación sobre controlabilidad de CoT |
+| `openai/gpt-oss-120b` (base) | 120.000 M totales, ~5.100 M activos | no disponible | no disponible en esta ficha | Hugging Face / OpenAI | Modelo base sin el adaptador de control de CoT |
 | Otros adaptadores del mismo sprint (`cot-control`) | LoRA sobre `gpt-oss-120b` | no disponible | Apache 2.0 (presumible por el repo) | Repositorio `johntrob14/tricky_little_guys` | Variantes de ofuscación, OPSD y "many-types" |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfm1c
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfm1c
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Código de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys (rutas `cot-control/rl/` y `cot-control/results/rl/obfm1c/`)
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

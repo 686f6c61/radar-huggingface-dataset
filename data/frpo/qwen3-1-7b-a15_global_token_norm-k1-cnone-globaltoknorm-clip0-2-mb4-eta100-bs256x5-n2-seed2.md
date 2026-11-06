@@ -80,7 +80,7 @@ La comparación de rendimiento no es posible sin benchmarks.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a15_global_token_norm-k1-cNone-globalTokNorm-clip0.2-mb4-eta100-bs256x5-n2-seed2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a15_global_token_norm-k1-cNone-globalTokNorm-clip0.2-mb4-eta100-bs256x5-n2-seed2
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Technical report de Qwen3: https://arxiv.org/html/2505.09388v1

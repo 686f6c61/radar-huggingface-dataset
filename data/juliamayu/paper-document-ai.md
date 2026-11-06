@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/juliamayu/paper-document-ai
+- Repositorio Hugging Face: https://huggingface.co/juliamayu/paper-document-ai
 - Google Cloud Document AI (plataforma relacionada con el tema): https://docs.cloud.google.com/document-ai/docs
 - Papers AI (herramienta de investigación con IA): https://papers.ai/
 - AIPapers.ai (resúmenes diarios de papers de IA): https://aipapers.ai/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CodeloopAi/khurdakak-3.0-sft es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario CodeloopAi, entrenado mediante SFT sobre el modelo base cuantizado a 4 bits unsloth/gemma-4-e2b-unsloth-bnb-4bit. No se trata, por tanto, de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador en formato safetensors que requiere descargar el modelo base para poder ejecutarse. El repositorio ocupa 1,8 GB y fue creado el 19 de septiembre de 2026.
+CodeloopAi/khurdakak-3.0-sft es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario CodeloopAi, entrenado mediante SFT sobre el modelo base cuantizado a 4 bits unsloth/gemma-4-e2b-unsloth-bnb-4bit. No se trata, por tanto, de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador en formato safetensors que requiere descargar el modelo base para poder ejecutarse. El repositorio ocupa 1,8 GB y fue creado el 19 de septiembre de 2026.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card publicada por el autor es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas, arquitectura, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion externa alguna.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card publicada por el autor es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas, arquitectura, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion externa alguna.
 
 En la busqueda web realizada no se ha encontrado ningun material relacionado con el modelo: los resultados devueltos corresponden a paginas de ayuda de YouTube y no guardan ninguna relacion con este repositorio. En consecuencia, la mayor parte de los apartados de esta ficha se resuelven con "no disponible" y con la informacion estructural que si puede deducirse de los metadatos del repositorio.
 
@@ -76,21 +76,21 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explicita no puede asumirse permiso de uso comercial. En la practica, esto convierte al modelo en no utilizable en produccion sin aclaracion previa del autor o del titular de los derechos del modelo base.
-- Model card vacia: todos los campos de la plantilla de HuggingFace estan sin rellenar, incluidos desarrollador, financiacion, datos de entrenamiento, hiperparametros, evaluacion e impacto ambiental.
+- Model card vacia: todos los campos de la plantilla de Hugging Face estan sin rellenar, incluidos desarrollador, financiacion, datos de entrenamiento, hiperparametros, evaluacion e impacto ambiental.
 - Ausencia total de validacion: 0 descargas y 0 likes, sin ningun informe independiente, benchmark ni discusion publica localizable.
 - Sesgos conocidos: no disponible. Al no documentarse el dataset de SFT, no puede estimarse que sesgos introduce el ajuste. Cabe esperar los sesgos heredados del modelo base, que tampoco se describen.
 - Riesgo de alucinacion: no medido. No hay evaluacion de factualidad ni de tasa de alucinacion. En un adaptador SFT entrenado sobre datos desconocidos, este riesgo puede aumentar si el dataset contiene afirmaciones no verificadas.
 - Limitaciones de contexto e idioma: no disponible. Se desconoce la ventana de contexto efectiva y los idiomas cubiertos.
 - Dependencia del modelo base: el repositorio solo contiene el adaptador. Sin descargar unsloth/gemma-4-e2b-unsloth-bnb-4bit, el modelo no es ejecutable, y queda sujeto a las condiciones de uso del modelo base.
 - Trazabilidad: el nombre "khurdakak-3.0-sft" sugiere una tercera iteracion de un experimento personal, sin repositorio de codigo, dataset ni paper asociados.
-- Ruido en los metadatos: la etiqueta `arxiv:1910.09700` procede de la plantilla por defecto de HuggingFace (calculadora de impacto de ML) y no implica la existencia de un articulo cientifico sobre este modelo.
+- Ruido en los metadatos: la etiqueta `arxiv:1910.09700` procede de la plantilla por defecto de Hugging Face (calculadora de impacto de ML) y no implica la existencia de un articulo cientifico sobre este modelo.
 - Fecha de publicacion inusualmente reciente respecto a la consulta: la ventana entre creacion y ultima actualizacion es de menos de un minuto, lo que indica un unico push sin mantenimiento posterior.
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/CodeloopAi/khurdakak-3.0-sft
+- Repositorio Hugging Face del adaptador: https://huggingface.co/CodeloopAi/khurdakak-3.0-sft
 - Modelo base declarado: https://huggingface.co/unsloth/gemma-4-e2b-unsloth-bnb-4bit
-- Referencia citada en las etiquetas (plantilla de HuggingFace, no especifica del modelo): https://arxiv.org/abs/1910.09700
+- Referencia citada en las etiquetas (plantilla de Hugging Face, no especifica del modelo): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl
 - Framework Unsloth: https://github.com/unslothai/unsloth

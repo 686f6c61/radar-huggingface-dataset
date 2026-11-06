@@ -71,7 +71,7 @@ Existen modelos hermanos en el mismo repositorio de DecentVLA: `DecentVLA/pi05_c
 
 ## Enlaces
 
-- [Repositorio de HuggingFace: DecentVLA/groot_cubestack_fl_3client](https://huggingface.co/DecentVLA/groot_cubestack_fl_3client)
+- [Repositorio de Hugging Face: DecentVLA/groot_cubestack_fl_3client](https://huggingface.co/DecentVLA/groot_cubestack_fl_3client)
 - [GitHub - decent-vla: framework de entrenamiento](https://github.com/kevinDuan1/decent-vla)
 - [GitHub - NVIDIA/Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)
 - [Modelo base: nvidia/GR00T-N1.7-3B](https://huggingface.co/nvidia/GR00T-N1.7-3B)

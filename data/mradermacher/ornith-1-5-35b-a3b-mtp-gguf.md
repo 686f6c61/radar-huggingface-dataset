@@ -85,7 +85,7 @@ La comparativa se basa en datos públicos de la tarjeta del modelo; los contexto
 ## Enlaces
 
 - [Repositorio GGUF de mradermacher](https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-MTP-GGUF)
-- [Modelo original en HuggingFace](https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP)
+- [Modelo original en Hugging Face](https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP)
 - [Modelo original de Ornith AI](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Blog de MindStudio sobre despliegue local](https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run)
 - [Página de benchmarks en BenchLM](https://benchlm.ai/models/ornith-1-5-35b-a3b)

@@ -92,11 +92,11 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval u otros) en 
 
 | Modelo | Quantizacion | KL top-256 | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-PARO-int5 (este) | int5 g128, 5,25 bits/peso, rotaciones ParoQuant | 0,0100 | 97,40% | Apache 2.0 | HuggingFace, requiere plugin paroquant sobre ROCm gfx1201 |
-| Qwen3.8-27B-PARO-MXFP4 | MXFP4, 4,25 bits/peso | 0,0419 | 97,4-97,6% | No disponible | HuggingFace (referenciado en la model card) |
+| Qwen3.8-27B-PARO-int5 (este) | int5 g128, 5,25 bits/peso, rotaciones ParoQuant | 0,0100 | 97,40% | Apache 2.0 | Hugging Face, requiere plugin paroquant sobre ROCm gfx1201 |
+| Qwen3.8-27B-PARO-MXFP4 | MXFP4, 4,25 bits/peso | 0,0419 | 97,4-97,6% | No disponible | Hugging Face (referenciado en la model card) |
 | int4 ParoQuant (variante sin identificador de repo) | int4, 4,25 bits/peso | 0,0285 | 97,4-98,0% | No disponible | No disponible |
-| Qwen/Qwen3.8-27B (base bf16) | Sin cuantizar | Referencia (0 por definicion) | No disponible | No disponible en la informacion proporcionada | HuggingFace |
-| z-lab/Qwen3.8-27B-PARO | Rotaciones ParoQuant sobre el modelo base | No disponible | No disponible | No disponible | HuggingFace |
+| Qwen/Qwen3.8-27B (base bf16) | Sin cuantizar | Referencia (0 por definicion) | No disponible | No disponible en la informacion proporcionada | Hugging Face |
+| z-lab/Qwen3.8-27B-PARO | Rotaciones ParoQuant sobre el modelo base | No disponible | No disponible | No disponible | Hugging Face |
 
 La model card es explícita acerca de la comparación: la exactitud en tareas no separa a las variantes (GSM8K entre el 97,4% y el 97,8% para todas, dentro del ruido con 500 preguntas); la diferencia es de fidelidad distribucional, con 0,0100 nats frente a 0,0419. Si se prioriza el throughput de prefill y el margen de KV cache, el autor recomienda PARO-MXFP4.
 
@@ -117,7 +117,7 @@ La model card es explícita acerca de la comparación: la exactitud en tareas no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Launch80/Qwen3.8-27B-PARO-int5
+- Modelo en Hugging Face: https://huggingface.co/Launch80/Qwen3.8-27B-PARO-int5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint de rotaciones de ParoQuant: https://huggingface.co/z-lab/Qwen3.8-27B-PARO
 - Variante hermana en MXFP4: https://huggingface.co/Launch80/Qwen3.8-27B-PARO-MXFP4

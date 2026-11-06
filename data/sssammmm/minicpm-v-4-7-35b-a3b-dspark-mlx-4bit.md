@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SSSAMMMM/MiniCPM-V-4.7-35B-A3B-DSpark-MLX-4bit | Draft especulativo MLX 4 bits | 389.223.169 | no disponible | Apache-2.0 | HuggingFace, 71 descargas |
-| openbmb/MiniCPM-V-4.7-35B-A3B-DSpark | Draft especulativo original | no disponible | no disponible | Apache-2.0 (según upstream) | HuggingFace |
-| SSSAMMMM/MiniCPM-V-4.7-35B-A3B-MLX-mixed | Target MLX precisión mixta | 35B-A3B (nomenclatura) | no disponible | Apache-2.0 (según upstream) | HuggingFace |
-| MiniCPM-V 4.7 35B-A3B (target estándar) | Modelo multimodal objetivo | 35B totales, 3B activos (nomenclatura) | no disponible | Apache-2.0 (según upstream) | HuggingFace |
+| SSSAMMMM/MiniCPM-V-4.7-35B-A3B-DSpark-MLX-4bit | Draft especulativo MLX 4 bits | 389.223.169 | no disponible | Apache-2.0 | Hugging Face, 71 descargas |
+| openbmb/MiniCPM-V-4.7-35B-A3B-DSpark | Draft especulativo original | no disponible | no disponible | Apache-2.0 (según upstream) | Hugging Face |
+| SSSAMMMM/MiniCPM-V-4.7-35B-A3B-MLX-mixed | Target MLX precisión mixta | 35B-A3B (nomenclatura) | no disponible | Apache-2.0 (según upstream) | Hugging Face |
+| MiniCPM-V 4.7 35B-A3B (target estándar) | Modelo multimodal objetivo | 35B totales, 3B activos (nomenclatura) | no disponible | Apache-2.0 (según upstream) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace del draft cuantizado: https://huggingface.co/SSSAMMMM/MiniCPM-V-4.7-35B-A3B-DSpark-MLX-4bit
+- Hugging Face del draft cuantizado: https://huggingface.co/SSSAMMMM/MiniCPM-V-4.7-35B-A3B-DSpark-MLX-4bit
 - Modelo base (draft oficial OpenBMB): https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark
 - Target MLX validado: https://huggingface.co/SSSAMMMM/MiniCPM-V-4.7-35B-A3B-MLX-mixed
 - Repositorio MLX: no disponible en la información proporcionada

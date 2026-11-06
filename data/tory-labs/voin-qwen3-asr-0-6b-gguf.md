@@ -30,7 +30,7 @@ La única innovación técnica verificable en este repositorio es el propio proc
 ## Capacidades
 
 - Reconocimiento automático del habla: conversión de audio a texto, que es la función declarada del modelo base Qwen3-ASR-0.6B.
-- Etiquetado como `conversational` en los metadatos de HuggingFace, lo que sugiere uso previsto en interacción por voz, aunque el repositorio no lo detalla.
+- Etiquetado como `conversational` en los metadatos de Hugging Face, lo que sugiere uso previsto en interacción por voz, aunque el repositorio no lo detalla.
 - Ejecución local mediante el formato GGUF, sin necesidad de conexión a servicios externos.
 - Soporte multilingüe: no disponible en la información proporcionada.
 - Tool calling / function calling: no documentado.
@@ -83,7 +83,7 @@ La comparación se limita a parámetros, licencia y disponibilidad, porque no ex
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/tory-labs/voin-qwen3-asr-0.6b-gguf
+- Repositorio del espejo en Hugging Face: https://huggingface.co/tory-labs/voin-qwen3-asr-0.6b-gguf
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Conversión GGUF de referencia (commit `28c66fba077f`): https://huggingface.co/handy-computer/Qwen3-ASR-0.6B-gguf/tree/28c66fba077f1359a42b52c55b618a24cdb6e0e7
 - Aplicación voin: https://github.com/su-record/voin

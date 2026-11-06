@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-M2.5 es un modelo de generacion de texto con arquitectura etiquetada como `minimax_m2`, publicado con 228.689.764.864 parametros totales (aproximadamente 228,7 mil millones) y un repositorio de 230,1 GB en formato safetensors. La ficha analizada corresponde al repositorio `ANGELOSEGRETO/MiniMax-M2.5`, una resubida de terceros: el autor del repositorio en HuggingFace es el usuario ANGELOSEGRETO, mientras que la licencia enlaza al repositorio oficial `MiniMax-AI/MiniMax-M2.5` en GitHub, lo que sugiere que el modelo original procede del laboratorio MiniMax.
+MiniMax-M2.5 es un modelo de generacion de texto con arquitectura etiquetada como `minimax_m2`, publicado con 228.689.764.864 parametros totales (aproximadamente 228,7 mil millones) y un repositorio de 230,1 GB en formato safetensors. La ficha analizada corresponde al repositorio `ANGELOSEGRETO/MiniMax-M2.5`, una resubida de terceros: el autor del repositorio en Hugging Face es el usuario ANGELOSEGRETO, mientras que la licencia enlaza al repositorio oficial `MiniMax-AI/MiniMax-M2.5` en GitHub, lo que sugiere que el modelo original procede del laboratorio MiniMax.
 
 La model card del repositorio no contiene documentacion tecnica descriptiva: el contenido extraido se limita al frontmatter YAML (pipeline, licencia, libreria) y a trazos SVG de un logotipo, sin secciones de arquitectura, entrenamiento, benchmarks ni instrucciones de uso. Por tanto, la mayor parte de las especificaciones no pueden confirmarse a partir de la informacion disponible.
 
@@ -34,7 +34,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: se desconoce el volum
 
 - Generacion de texto conversacional: el tag `conversational` indica que el modelo esta preparado para dialogos multi-turno, aunque no se documentan detalles de plantilla de chat ni formato de mensajes.
 - Generacion de texto general: el pipeline declarado es `text-generation`.
-- Compatibilidad con endpoints de inferencia: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints de inferencia: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declara lista de idiomas).
@@ -46,7 +46,7 @@ Los siguientes casos son areas de aplicacion plausibles dado el tamano y la natu
 
 - Asistencia conversacional de proposito general: un modelo de ~230B parametros puede sostener dialogos multi-turno de alta calidad; sin embargo, la ausencia de datos sobre la ventana de contexto impide planificar conversaciones de contexto largo.
 - Generacion de texto a gran escala (resumen, redaccion, reescritura): adecuado por tamano y por el pipeline `text-generation`, siempre que la licencia MIT modificada se revise para el caso comercial concreto.
-- Despliegue en endpoints gestionados: el tag `endpoints_compatible` permite servirlo en HuggingFace Inference Endpoints con pesos FP8 para reducir el coste de memoria frente a BF16.
+- Despliegue en endpoints gestionados: el tag `endpoints_compatible` permite servirlo en Hugging Face Inference Endpoints con pesos FP8 para reducir el coste de memoria frente a BF16.
 - Investigacion en inferencia eficiente: los pesos FP8 disponibles lo convierten en un candidato para experimentar con tecnicas de cuantizacion y comparar precision frente a BF16.
 - Evaluacion comparativa de modelos abiertos de gran escala: util como punto de referencia en estudios que midan calidad de generacion frente a otros modelos de ~200B parametros.
 - Fine-tuning con tecnicas de adaptacion parametro-eficiente: el formato safetensors permite aplicar LoRA o QLoRA, aunque el coste de memoria de un modelo de 230B exige infraestructura multi-GPU.
@@ -63,7 +63,7 @@ Las cifras de memoria son estimaciones calculadas a partir del numero de paramet
 - Pesos en BF16/FP16: aproximadamente 457 GB. Requiere al menos 6x H100 80 GB o 8x A100 80 GB, mas memoria para cache KV.
 - Pesos en INT4 (cuantizacion no confirmada por el autor): aproximadamente 114 GB, lo que exigiria aun asi 2x H100 80 GB o 4x RTX 6000 Ada 48 GB.
 - GPU consumer: no cabe en ninguna GPU consumer actual (RTX 4090 24 GB, RTX 5090 32 GB) sin cuantizacion agresiva y offloading a CPU, con latencias muy altas. El tag `fp8` sugiere que el hardware ideal son aceleradores con soporte FP8 nativo (H100, H200, B200, L40S).
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` es el unico metodo confirmado por los tags. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni SGLang. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` es el unico metodo confirmado por los tags. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni SGLang. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones de mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| ANGELOSEGRETO/MiniMax-M2.5 | ~228,7B | no disponible | modified-mit (`other`) | HuggingFace, 0 descargas | Parametros y tamano de repo |
+| ANGELOSEGRETO/MiniMax-M2.5 | ~228,7B | no disponible | modified-mit (`other`) | Hugging Face, 0 descargas | Parametros y tamano de repo |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones de mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ANGELOSEGRETO/MiniMax-M2.5
+- Repositorio en Hugging Face: https://huggingface.co/ANGELOSEGRETO/MiniMax-M2.5
 - Licencia declarada (enlaza al repositorio oficial): https://github.com/MiniMax-AI/MiniMax-M2.5/blob/main/LICENSE
 - Repositorio oficial de la familia (referenciado en la licencia): https://github.com/MiniMax-AI/MiniMax-M2.5
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a contenidos sin relacion (cuestionarios de Bing y hilos de Reddit sobre Microsoft Rewards).

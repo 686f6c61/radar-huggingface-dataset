@@ -86,7 +86,7 @@ La comparativa se limita a las variantes del mismo proyecto y al modelo base, ya
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-sdf-mixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-sdf-mixed)
 - [Variante unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-sdf-unmixed)
 - [Repositorio GitHub del proyecto](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)

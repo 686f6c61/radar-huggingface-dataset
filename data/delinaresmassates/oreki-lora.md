@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Base | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `DelinaresMassates/oreki-lora` | FLUX.1-dev | LoRA | no disponible | no aplica | no disponible | HuggingFace |
+| `DelinaresMassates/oreki-lora` | FLUX.1-dev | LoRA | no disponible | no aplica | no disponible | Hugging Face |
 | LoRA "Oreki Houtarou" (Civitai, NAI-XL) | NoobAI (SDXL) | LoRA | no disponible | no aplica | no disponible | Civitai |
 | Otros LoRAs de personajes en Civitai (ej. para SDXL) | SDXL | LoRA | tipicamente 100-300 MB | no aplica | variada | Civitai |
 
@@ -74,8 +74,8 @@ La comparacion es limitada porque no hay datos tecnicos publicos del modelo. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DelinaresMassates/oreki-lora
-- Perfil del autor en HuggingFace: https://huggingface.co/DelinaresMassates
+- Modelo en Hugging Face: https://huggingface.co/DelinaresMassates/oreki-lora
+- Perfil del autor en Hugging Face: https://huggingface.co/DelinaresMassates
 - LoRA similar en Civitai (para NAI-XL): https://civitai.com/models/1593058/oreki-houtarou-hyouka-nai-xl
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Herramienta de generacion de imagenes PixAI (referencia): https://pixai.art/en/model/1863255040695211824

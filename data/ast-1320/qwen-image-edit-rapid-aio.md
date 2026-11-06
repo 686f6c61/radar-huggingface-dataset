@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-Edit-Rapid-AIO (AST-1320) | Merge de LoRAs sobre Qwen-Image-Edit-2511 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen-Image-Edit-2511 | Modelo base oficial | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Qwen-Image-Edit-Rapid-AIO (AST-1320) | Merge de LoRAs sobre Qwen-Image-Edit-2511 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen-Image-Edit-2511 | Modelo base oficial | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | FLUX.1 Kontext (Black Forest Labs) | Modelo de edicion de imagenes | no disponible | no disponible | Licencia comercial | API / pesos |
 
 La comparativa es limitada porque no se dispone de datos tecnicos del modelo base ni de alternativas directas. La principal diferencia es que Rapid-AIO es un checkpoint fusionado que simplifica el uso en ComfyUI, mientras que el modelo base requiere cargar componentes por separado. No hay datos de rendimiento comparativo.
@@ -75,7 +75,7 @@ La comparativa es limitada porque no se dispone de datos tecnicos del modelo bas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AST-1320/Qwen-Image-Edit-Rapid-AIO
+- Hugging Face: https://huggingface.co/AST-1320/Qwen-Image-Edit-Rapid-AIO
 - Repositorio de AST-1320: https://huggingface.co/AST-1320/datasets
 - Version de Phr00t (similar): https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO
 - Analisis en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen-image-edit-rapid-aio-phr00t

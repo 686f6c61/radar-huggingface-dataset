@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mmmft/qwen3-14b-story-v1 es un ajuste fino (fine-tune) del modelo Qwen3-14B, publicado por el usuario mmmtf en HuggingFace. El modelo parte del checkpoint cuantizado en 4 bits de Unsloth (unsloth/Qwen3-14B-unsloth-bnb-4bit) y fue entrenado con la libreria Unsloth, segun declara el propio autor en la model card. Por el nombre del repositorio ("story-v1") todo apunta a un ajuste orientado a generacion narrativa o escritura creativa, aunque la model card no documenta el dataset ni el objetivo concreto del entrenamiento.
+mmmft/qwen3-14b-story-v1 es un ajuste fino (fine-tune) del modelo Qwen3-14B, publicado por el usuario mmmtf en Hugging Face. El modelo parte del checkpoint cuantizado en 4 bits de Unsloth (unsloth/Qwen3-14B-unsloth-bnb-4bit) y fue entrenado con la libreria Unsloth, segun declara el propio autor en la model card. Por el nombre del repositorio ("story-v1") todo apunta a un ajuste orientado a generacion narrativa o escritura creativa, aunque la model card no documenta el dataset ni el objetivo concreto del entrenamiento.
 
 La relevancia de esta ficha es limitada: se trata de un modelo con cero descargas y cero "likes" en el momento de la consulta, con una model card minima que no aporta detalles sobre datos de entrenamiento, hiperparametros ni evaluaciones. Se basa en Qwen3-14B, un transformer denso de la familia Qwen3, y hereda sus caracteristicas arquitectonicas, aunque el autor no las detalla.
 
@@ -68,9 +68,9 @@ Advertencia: el repositorio ocupa solo 0,5 GB, un tamano muy inferior al esperad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mmmtf/qwen3-14b-story-v1 | no disponible (base ~14,8B) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| mmmtf/qwen3-14b-story-v1 | no disponible (base ~14,8B) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | Qwen3-14B (modelo base) | ~14,8B | no disponible en esta ficha | benchmarks publicados por el equipo Qwen | apache-2.0 | ampliamente disponible |
-| unsloth/Qwen3-14B-unsloth-bnb-4bit | ~14,8B | no disponible en esta ficha | derivado del base | apache-2.0 | HuggingFace |
+| unsloth/Qwen3-14B-unsloth-bnb-4bit | ~14,8B | no disponible en esta ficha | derivado del base | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento del ajuste que permitan una comparacion cuantitativa con alternativas. La comparacion se limita a licencia, procedencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento del ajuste que permitan una comparacion cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmmtf/qwen3-14b-story-v1
+- Modelo en Hugging Face: https://huggingface.co/mmmtf/qwen3-14b-story-v1
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL (referenciado en las etiquetas): https://github.com/huggingface/trl

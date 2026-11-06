@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "mdcreativeagent/WizardLM-33B-V1.0-Uncensored",
+  "slug": "mdcreativeagent-wizardlm-33b-v1-0-uncensored",
+  "author": "mdcreativeagent",
+  "url": "https://huggingface.co/mdcreativeagent/WizardLM-33B-V1.0-Uncensored",
+  "created_at": "2026-11-06T12:31:39.000Z",
+  "updated_at": "2026-11-06T12:31:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "llama",
+    "en",
+    "dataset:ehartford/WizardLM_evol_instruct_V2_196k_unfiltered_merged_split",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65058601014,
+  "storage_human": "65.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge (25-Shot)",
+      "metric": "normalized accuracy",
+      "value": 63.65
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (10-Shot)",
+      "metric": "normalized accuracy",
+      "value": 83.84
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-Shot)",
+      "metric": "accuracy",
+      "value": 59.36
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA (0-shot)",
+      "metric": null,
+      "value": 56.8
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Winogrande (5-shot)",
+      "metric": "accuracy",
+      "value": 77.66
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8k (5-shot)",
+      "metric": "accuracy",
+      "value": 18.65
+    }
+  ],
+  "sources": [
+    {
+      "title": "TheBloke/WizardLM-33B-V1.0-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/WizardLM-33B-V1.0-Uncensored-GGUF",
+      "snippet": "WizardLM 33B V1.0 Uncensored - GGUF Model creator: Eric Hartford Original model: WizardLM 33B V1.0 Uncensored Description This repo contains GGUF format model files for Eric Hartford's WizardLM 33B V1.0 Uncensored. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023."
+    },
+    {
+      "title": "WizardLM-33B-V1.0-Uncensored : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/14hy369/wizardlm33bv10uncensored/",
+      "snippet": "I trained this with Vicuna's FastChat, as the new data is in ShareGPT format and WizardLM team has not specified a method to train it. The prompt format is Vicuna-1.1 style. While the instruct layer has been uncensored, LLaMA itself has opinions, and will resist instructions it disagrees with."
+    },
+    {
+      "title": "WizardLM-33B-V1.0-Uncensored - Hugging Face",
+      "url": "https://huggingface.co/cognitivecomputations/WizardLM-33B-V1.0-Uncensored",
+      "snippet": "Like WizardLM/WizardLM-30B-V1.0, this model is trained with Vicuna-1.1 style prompts. You are a helpful AI assistant. USER: <prompt> ASSISTANT: Thank you chirper.ai for sponsoring some of my compute! Open LLM Leaderboard Evaluation Results Detailed results can be found here"
+    }
+  ]
+}

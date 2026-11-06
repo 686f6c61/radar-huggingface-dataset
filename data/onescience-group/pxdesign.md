@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PXDesign es una suite open-source del equipo de ByteDance para el diseño de novo de binders de proteínas. A partir de una estructura de proteína diana, el sistema genera candidatos a binders y los filtra mediante predicción de estructura y evaluación de confianza. La suite integra un modelo de difusión (PXDesign-d), ProteinMPNN para el diseño de secuencias, AF2-IG para la predicción de estructuras y Protenix para la evaluación adicional en modo extendido. El repositorio en HuggingFace, publicado por OneScience-Group, tiene un tamaño de 3.8 GB y se distribuye bajo licencia Apache 2.0. Su relevancia radica en abordar el diseño de binders de proteínas de forma modular y escalable, con tres modos de uso que cubren desde validaciones rápidas hasta cribados completos.
+PXDesign es una suite open-source del equipo de ByteDance para el diseño de novo de binders de proteínas. A partir de una estructura de proteína diana, el sistema genera candidatos a binders y los filtra mediante predicción de estructura y evaluación de confianza. La suite integra un modelo de difusión (PXDesign-d), ProteinMPNN para el diseño de secuencias, AF2-IG para la predicción de estructuras y Protenix para la evaluación adicional en modo extendido. El repositorio en Hugging Face, publicado por OneScience-Group, tiene un tamaño de 3.8 GB y se distribuye bajo licencia Apache 2.0. Su relevancia radica en abordar el diseño de binders de proteínas de forma modular y escalable, con tres modos de uso que cubren desde validaciones rápidas hasta cribados completos.
 
 ## Especificaciones técnicas
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente en los datos proporcionados para realiz
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/PXDesign
+- Hugging Face: https://huggingface.co/OneScience-Group/PXDesign
 - Paper: https://www.biorxiv.org/content/10.1101/2025.08.15.670647v1
-- OneScience-Group en HuggingFace: https://huggingface.co/OneScience-Group
+- OneScience-Group en Hugging Face: https://huggingface.co/OneScience-Group
 - OneCode (entorno online): https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home

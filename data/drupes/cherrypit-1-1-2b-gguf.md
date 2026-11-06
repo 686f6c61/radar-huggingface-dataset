@@ -126,7 +126,7 @@ No se dispone de resultados de benchmarks de estos modelos comparables en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DRUPEs/CherryPit-1.1-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DRUPEs/CherryPit-1.1-2B-GGUF
 - Versión anterior (CherryPit-1.0-2B-GGUF): https://huggingface.co/DRUPEs/CherryPit-1.0-2B-GGUF
 - Modelo base (MiniCPM5-2B): https://huggingface.co/openbmb/MiniCPM5-2B
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

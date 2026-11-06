@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Summon es un framework de Python, instalable mediante pip, diseñado para construir modelos de lenguaje afinados de forma "soberana", es decir, con control total sobre los datos, la base y el proceso de entrenamiento. En lugar de ser un modelo en sí, envuelve las bibliotecas HuggingFace PEFT, TRL y bitsandbytes en una cadena de operaciones fluida e inmutable: `Summon.begin("Nombre")` → `.base()` → `.corpus()` → `.constitutional()` → `.license()` → `.train()` → `.push()`. Cada método devuelve una nueva instancia de `SovereignModel`, sin mutación de estado.
+Summon es un framework de Python, instalable mediante pip, diseñado para construir modelos de lenguaje afinados de forma "soberana", es decir, con control total sobre los datos, la base y el proceso de entrenamiento. En lugar de ser un modelo en sí, envuelve las bibliotecas Hugging Face PEFT, TRL y bitsandbytes en una cadena de operaciones fluida e inmutable: `Summon.begin("Nombre")` → `.base()` → `.corpus()` → `.constitutional()` → `.license()` → `.train()` → `.push()`. Cada método devuelve una nueva instancia de `SovereignModel`, sin mutación de estado.
 
 La relevancia de Summon radica en su enfoque de reproducibilidad y trazabilidad: implementa una cadena WORM (Write Once Read Many) basada en SHA-256 que sella cada paso del proceso (base, corpus, constitución, licencia, entrenamiento y publicación), generando un manifiesto verificable de qué datos, qué modelo base y qué principios se usaron. Esto lo hace atractivo para equipos que necesitan auditar el origen de sus pesos o cumplir requisitos de gobernanza de datos. El entrenamiento se realiza mediante QLoRA con cuantización de 4 bits (NF4), lo que permite afinar modelos de hasta 70B en hardware relativamente modesto.
 
@@ -17,11 +17,11 @@ La relevancia de Summon radica en su enfoque de reproducibilidad y trazabilidad:
 | Tipos de cuantizacion | 4-bit NF4 (bitsandbytes) para QLoRA |
 | Idiomas soportados | no disponible (depende del modelo base) |
 | Licencia | no disponible (el framework no declara licencia; el modelo resultante hereda la del base y la configurada en `.license()`) |
-| Formato de pesos | safetensors (via HuggingFace), adaptadores LoRA |
+| Formato de pesos | safetensors (via Hugging Face), adaptadores LoRA |
 
 ## Arquitectura y entrenamiento
 
-Summon no define una arquitectura de red neuronal propia; es una capa de orquestación sobre modelos transformer existentes. La arquitectura subyacente depende del modelo base seleccionado, que puede ser cualquiera de los soportados: Nemotron Mini 4B, Llama 3 8B/70B, Mistral 7B, Phi-3 Mini, Qwen2 7B, Gemma2 9B, Falcon 7B, o cualquier ID de HuggingFace. El entrenamiento se realiza con QLoRA: el modelo base se carga con cuantización de 4 bits (NF4) mediante `BitsAndBytesConfig`, se le aplica una configuración LoRA con `r=16` y `lora_alpha=32` sobre los módulos de atención (`q_proj`, `v_proj`, `k_proj`, `o_proj`), y se entrena con `SFTTrainer` de TRL.
+Summon no define una arquitectura de red neuronal propia; es una capa de orquestación sobre modelos transformer existentes. La arquitectura subyacente depende del modelo base seleccionado, que puede ser cualquiera de los soportados: Nemotron Mini 4B, Llama 3 8B/70B, Mistral 7B, Phi-3 Mini, Qwen2 7B, Gemma2 9B, Falcon 7B, o cualquier ID de Hugging Face. El entrenamiento se realiza con QLoRA: el modelo base se carga con cuantización de 4 bits (NF4) mediante `BitsAndBytesConfig`, se le aplica una configuración LoRA con `r=16` y `lora_alpha=32` sobre los módulos de atención (`q_proj`, `v_proj`, `k_proj`, `o_proj`), y se entrena con `SFTTrainer` de TRL.
 
 La innovación principal es el sistema de sellado WORM: cada componente del pipeline (base, corpus, constitución, licencia, entrenamiento, push) genera un hash SHA-256 que se encadena al siguiente, produciendo un manifiesto inmutable. El constructor de corpus (`Corpus`) permite apilar capas de datos desde archivos JSONL o listas de texto, y sellarlas con `.seal()`. No se menciona el uso de RLHF o DPO; el ajuste es supervisado (SFT) con una lista de principios constitucionales que se incorporan como parte de la configuración.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El fr
 - VRAM estimada para inferencia: depende del modelo base. Para un modelo de 7B cuantizado a 4 bits, se estiman entre 4 y 6 GB; para 70B, entre 35 y 40 GB.
 - GPU recomendadas: para entrenamiento QLoRA de modelos de 7B, una GPU con 12-16 GB (RTX 4070/4080, A10) es suficiente; para 70B, se recomienda A100 80GB o H100.
 - Compatibilidad con GPU de consumo: si, para modelos de hasta 13B con cuantizacion 4-bit (por ejemplo, RTX 4090 con 24 GB).
-- Opciones de despliegue: el framework genera pesos en formato HuggingFace, por lo que los modelos resultantes pueden servirse con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el framework genera pesos en formato Hugging Face, por lo que los modelos resultantes pueden servirse con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible; dependen del modelo base y del hardware de inferencia.
 
 ## Comparativa con modelos similares
@@ -77,5 +77,5 @@ La diferencia clave es la cadena WORM y la API inmutable, que no ofrecen las alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/summon
+- Hugging Face: https://huggingface.co/Snapkitty/summon
 - No se han encontrado otros enlaces (paper, blog, repositorio) en la informacion disponible.

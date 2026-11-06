@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nascimentora/mixer-finetuned es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura Mixer orientada a tareas de matching. No es un modelo preentrenado ni ajustado con datos reales: el propio autor lo describe como una implementación compacta destinada a revisión de código, smoke tests y experimentos controlados de pequeño tamaño, y advierte de que la configuración etiquetada como "large" no está pensada como una release preentrenada lista para producción. El fichero model.safetensors incluido es un checkpoint de inicialización válido para pruebas, no un checkpoint entrenado ni evaluado con benchmarks.
+nascimentora/mixer-finetuned es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura Mixer orientada a tareas de matching. No es un modelo preentrenado ni ajustado con datos reales: el propio autor lo describe como una implementación compacta destinada a revisión de código, smoke tests y experimentos controlados de pequeño tamaño, y advierte de que la configuración etiquetada como "large" no está pensada como una release preentrenada lista para producción. El fichero model.safetensors incluido es un checkpoint de inicialización válido para pruebas, no un checkpoint entrenado ni evaluado con benchmarks.
 
 El modelo declara 49.600 parámetros totales (aproximadamente 0,05 millones), una cifra que confirma su naturaleza de andamiaje arquitectónico más que de modelo funcional. La arquitectura combina atención lineal, fusión bilineal, activación GELU y normalización InstanceNorm, y la receta de experimento por defecto utiliza el optimizador NovoGrad con un esquema de warmup lineal.
 
@@ -75,5 +75,5 @@ No disponible. El repositorio no es un modelo preentrenado ni evaluado, por lo q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nascimentora/mixer-finetuned
+- Hugging Face: https://huggingface.co/nascimentora/mixer-finetuned
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

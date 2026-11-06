@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Franjarjar/Qwen3.6-35B-A3B-EQ4DHB",
+  "slug": "franjarjar-qwen3-6-35b-a3b-eq4dhb",
+  "author": "Franjarjar",
+  "url": "https://huggingface.co/Franjarjar/Qwen3.6-35B-A3B-EQ4DHB",
+  "created_at": "2026-11-05T15:40:20.000Z",
+  "updated_at": "2026-11-05T16:31:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "espetero",
+    "eq",
+    "quantized",
+    "apple-silicon",
+    "metal",
+    "mixture-of-experts",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 8863146112,
+  "parameters_human": "8.86B",
+  "storage_bytes": 22982410822,
+  "storage_human": "23.0 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Franjarjar/Qwen3.6-35B-A3B-EQ4DHB · Hugging Face",
+      "url": "https://huggingface.co/Franjarjar/Qwen3.6-35B-A3B-EQ4DHB",
+      "snippet": "Qwen3.6-35B-A3B · EQ4DHB Qwen/Qwen3.6-35B-A3B quantized to EQ4DHB for Espetero, a native Metal inference engine for Apple silicon. EQ (LaneQuant) is the quantization format native to Espetero. It stores 4-bit codes with a 16-entry codebook and 5- and 8-bit codes, with a signed 8-bit scale per 16 inputs and an fp16 scale per 256, the 16 inputs of a scale chosen so that every lane of the Apple ..."
+    },
+    {
+      "title": "qwen3.6-35b-a3b Model Info - Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-6-35b-a3b",
+      "snippet": "The Qwen3.6 35B-A3B native vision-language model is built on a hybrid architecture that integrates linear attention mechanisms with a sparse mixture-of-experts framework, achieving higher inference efficiency. Compared with the 3.5-35B-A3B, this model demonstrates significantly improved agentic coding capabilities, mathematical and code reasoning abilities, spatial intelligence, as well as ..."
+    }
+  ]
+}

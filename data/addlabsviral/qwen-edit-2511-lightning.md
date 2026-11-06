@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen-edit-2511-lightning` es un sistema de edición de imágenes publicado por el usuario de HuggingFace `addlabsviral`. Se trata de un pipeline `QwenImageEditPlusPipeline` de la biblioteca `diffusers`, lo que lo encuadra en la categoría de modelos imagen-a-imagen capaces de modificar una fotografía a partir de una instrucción de texto. El nombre del modelo sugiere que es una variante de la familia Qwen, con el sufijo «Lightning» indicando probablemente una inferencia acelerada mediante menos pasos de difusión, aunque esto no está documentado.
+El modelo `qwen-edit-2511-lightning` es un sistema de edición de imágenes publicado por el usuario de Hugging Face `addlabsviral`. Se trata de un pipeline `QwenImageEditPlusPipeline` de la biblioteca `diffusers`, lo que lo encuadra en la categoría de modelos imagen-a-imagen capaces de modificar una fotografía a partir de una instrucción de texto. El nombre del modelo sugiere que es una variante de la familia Qwen, con el sufijo «Lightning» indicando probablemente una inferencia acelerada mediante menos pasos de difusión, aunque esto no está documentado.
 
 Con 20.430.401.088 de parámetros y un tamaño de repositorio de 57,7 GB, el modelo es de gran escala: los pesos en formato safetensors ocupan decenas de gigabytes, lo que implica requisitos de hardware elevados para la inferencia. A pesar de su tamaño, no se dispone de la licencia, la lista de idiomas ni ningún benchmark publicado. El repositorio tampoco registra descargas ni «me gusta», por lo que no hay evidencia de validación por parte de la comunidad técnica.
 
@@ -49,7 +49,7 @@ No se dispone de información sobre los datos de entrenamiento, el número de to
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye tablas de evaluación ni métricas como FID, CLIP score u otras. La búsqueda web no ha encontrado papers, análisis ni comparativas del modelo. Por tanto, no existe evidencia cuantitativa del rendimiento de este modelo en tareas de edición de imágenes.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye tablas de evaluación ni métricas como FID, CLIP score u otras. La búsqueda web no ha encontrado papers, análisis ni comparativas del modelo. Por tanto, no existe evidencia cuantitativa del rendimiento de este modelo en tareas de edición de imágenes.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| addlabsviral/qwen-edit-2511-lightning | 20.430.401.088 | no disponible | no disponible | no disponible | HuggingFace |
+| addlabsviral/qwen-edit-2511-lightning | 20.430.401.088 | no disponible | no disponible | no disponible | Hugging Face |
 | Qwen-Image-Edit (oficial) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Qwen-Image-Edit-Plus (oficial) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,5 +80,5 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 
 ## Enlaces
 
-- HuggingFace: [addlabsviral/qwen-edit-2511-lightning](https://huggingface.co/addlabsviral/qwen-edit-2511-lightning)
+- Hugging Face: [addlabsviral/qwen-edit-2511-lightning](https://huggingface.co/addlabsviral/qwen-edit-2511-lightning)
 - No se han encontrado papers, blogs, demos ni otros enlaces relevantes en las búsquedas web.

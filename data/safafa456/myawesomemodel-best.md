@@ -88,6 +88,6 @@ No disponible. La model card menciona comparaciones con "Model1", "Model2" y "Mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/safafa456/MyAwesomeModel-best
+- Modelo en Hugging Face: https://huggingface.co/safafa456/MyAwesomeModel-best
 - Repositorio de prueba: https://huggingface.co/safafa456/MyAwesomeModel-TestRepo
 - Perfil del autor: https://huggingface.co/safafa456

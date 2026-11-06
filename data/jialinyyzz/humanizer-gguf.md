@@ -114,7 +114,7 @@ Modelos comparables de terceros: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/jialinyyzz/humanizer-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/jialinyyzz/humanizer-GGUF
 - Modelo base: https://huggingface.co/jialinyyzz/humanizer
 - Detalles de evaluacion del modelo base: https://huggingface.co/jialinyyzz/humanizer#evaluation-details
 - Aplicacion de escritorio (Mac, Windows): https://github.com/sgaofen/humanizer-local-model/releases/latest

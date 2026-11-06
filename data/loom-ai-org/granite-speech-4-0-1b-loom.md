@@ -79,7 +79,7 @@ La comparativa es orientativa; no se han ejecutado benchmarks propios. La ventaj
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/loom-ai-org/granite-speech-4.0-1b-loom)
+- [Modelo en Hugging Face](https://huggingface.co/loom-ai-org/granite-speech-4.0-1b-loom)
 - [Modelo base de IBM](https://huggingface.co/ibm-granite/granite-4.0-1b-speech)
 - [Repositorio loom.cpp](https://github.com/loom-ai-org/loom.cpp)
 - [Repositorio loom-exporter](https://github.com/loom-ai-org/loom-exporter)

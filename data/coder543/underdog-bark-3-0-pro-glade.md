@@ -76,7 +76,7 @@ Los tiempos de Mac son medianas en caliente de tres ejecuciones e incluyen extra
 | Modelo | Parámetros | Contexto / chunk | Formato y runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Underdog Bark 3.0 Pro for Glade (este) | 627.008.134 | Hasta 60 s por chunk; encoder de 768 posiciones | Grafos Core AI FP16 + sidecar BF16; Glade en iOS 27 / macOS 27 | CC-BY-4.0 | Bundle de 1.329,8 MB; 0 descargas y 0 likes en el momento de la consulta |
-| ConwayResearch/Underdog-Bark-3.0-Pro (fuente) | 627.008.134 | Igual arquitectura; contexto completo del original | Checkpoint BF16 de 1.254,2 MB; runtime upstream (Transformers) | CC-BY-4.0 | Público en HuggingFace, revisión `4b5c51e04aa8d16dda9ecdff71bc29f7360149e4` |
+| ConwayResearch/Underdog-Bark-3.0-Pro (fuente) | 627.008.134 | Igual arquitectura; contexto completo del original | Checkpoint BF16 de 1.254,2 MB; runtime upstream (Transformers) | CC-BY-4.0 | Público en Hugging Face, revisión `4b5c51e04aa8d16dda9ecdff71bc29f7360149e4` |
 | Familia Parakeet Ultra (antecesora) | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | Otras variantes Plus/Pro de la misma arquitectura | 627.008.134 (misma arquitectura) | No disponible | Representación de pesos y precisión reportada distintas | CC-BY-4.0 (según la fuente) | No disponible |
 
@@ -97,7 +97,7 @@ La comparación relevante es contra el checkpoint original: misma arquitectura y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coder543/underdog-bark-3.0-pro-glade
+- Modelo en Hugging Face: https://huggingface.co/coder543/underdog-bark-3.0-pro-glade
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro
 - Revisión de origen citada: `4b5c51e04aa8d16dda9ecdff71bc29f7360149e4`
 - Repositorio del benchmark STT y muestra JFK: https://github.com/coder543/stt-bench-matrix/tree/main/samples

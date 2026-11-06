@@ -73,4 +73,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gaelalves/hw1-generation
+- Repositorio en Hugging Face: https://huggingface.co/Gaelalves/hw1-generation

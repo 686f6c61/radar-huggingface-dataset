@@ -91,6 +91,6 @@ Esta tabla es orientativa y no procede de la informacion facilitada por el autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WattsIshaan/OLMo-60m-192B-adamw-cosine-10percent
+- Hugging Face: https://huggingface.co/WattsIshaan/OLMo-60m-192B-adamw-cosine-10percent
 - Paper (arXiv): https://arxiv.org/abs/2605.02105 ("Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting", ICML 2026)
 - Los resultados de la busqueda web realizada no contienen enlaces relevantes sobre el modelo; el resto de enlaces encontrados no guardan relacion con este checkpoint.

@@ -93,7 +93,7 @@ La comparación con modelos densos de tamaño similar (por ejemplo, la familia Q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JIRU-W/dense_e1_seq2048_gbs128_10b
+- Modelo en Hugging Face: https://huggingface.co/JIRU-W/dense_e1_seq2048_gbs128_10b
 - Modelo MoE de referencia: https://huggingface.co/JIRU-W/e32_top8_seq2048_gbs128_10b
 - Dataset de entrenamiento: https://huggingface.co/datasets/JIRU-W/olmoe-mix-0924-10b
 - Dataset original OLMoE-mix-0924: https://huggingface.co/datasets/allenai/OLMoE-mix-0924

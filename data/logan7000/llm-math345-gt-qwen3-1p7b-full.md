@@ -78,7 +78,7 @@ No se puede establecer una comparativa rigurosa sin métricas publicadas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/llm-math345-gt-qwen3-1p7b-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/llm-math345-gt-qwen3-1p7b-full
 - Perfil del autor: https://huggingface.co/logan7000/models
 - Repositorio oficial de Qwen3 (referencia general): https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3 (referencia general): https://arxiv.org/html/2505.09388v1

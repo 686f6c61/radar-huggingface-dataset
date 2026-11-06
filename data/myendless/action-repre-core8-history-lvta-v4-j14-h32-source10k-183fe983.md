@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`action-repre-core8-history-lvta-v4-j14-h32-source10k-183fe983` es un checkpoint de investigación publicado por el usuario `myendless` en HuggingFace, etiquetado con los tags `robotics`, `action-representation` y `qwenpi-v4`, y asociado al pipeline `robotics`. No se trata de un modelo de lenguaje: la model card lo describe como una "representación de acciones" (action-repre) vinculada al benchmark RoboTwin v4, con un checkpoint PyTorch completo conservado en sus bytes originales y un tamaño de repositorio de 11,3 GB. Su nombre codifica los identificadores `core8`, `lvta`, `v4`, `j14`, `h32` y `source10k`, que la documentación no define de forma explícita.
+`action-repre-core8-history-lvta-v4-j14-h32-source10k-183fe983` es un checkpoint de investigación publicado por el usuario `myendless` en Hugging Face, etiquetado con los tags `robotics`, `action-representation` y `qwenpi-v4`, y asociado al pipeline `robotics`. No se trata de un modelo de lenguaje: la model card lo describe como una "representación de acciones" (action-repre) vinculada al benchmark RoboTwin v4, con un checkpoint PyTorch completo conservado en sus bytes originales y un tamaño de repositorio de 11,3 GB. Su nombre codifica los identificadores `core8`, `lvta`, `v4`, `j14`, `h32` y `source10k`, que la documentación no define de forma explícita.
 
 El artefacto no es una exportación estándar de `transformers.AutoModel`: el autor indica que debe cargarse con el cargador específico del benchmark. Los datos, la normalización, el processor y la configuración de entrenamiento original se referencian por SHA256 en el dataset `myendless/action-repre-robotwin-v4-data`, y el archivo `release.json` contiene el mapeo exacto. El checkpoint de origen (`source checkpoint`) se declara como `None`, y el run original se identifica como `core8_lvta_frozen_backbone_freshhead_from30k_r2`, con 10.000 pasos reales y categoría de origen `unregistered_historical`.
 
@@ -77,7 +77,7 @@ No se han identificado modelos comparables en la información disponible. Se tra
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `myendless/action-repre-core8-history-lvta-v4-j14-h32-source10k-183fe983` | no disponible | no disponible | no disponible | HuggingFace, requiere cargador propio |
+| `myendless/action-repre-core8-history-lvta-v4-j14-h32-source10k-183fe983` | no disponible | no disponible | no disponible | Hugging Face, requiere cargador propio |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se han identificado modelos comparables en la información disponible. Se tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myendless/action-repre-core8-history-lvta-v4-j14-h32-source10k-183fe983
+- Modelo en Hugging Face: https://huggingface.co/myendless/action-repre-core8-history-lvta-v4-j14-h32-source10k-183fe983
 - Dataset asociado (datos, normalización, processor y configuración por SHA256): https://huggingface.co/datasets/myendless/action-repre-robotwin-v4-data
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - Nota sobre la búsqueda web: los resultados devueltos corresponden a páginas de Google Maps (mapfiles, transit, indoor maps, Street View) y no guardan relación con el modelo, por lo que no se incluyen como enlaces relevantes.

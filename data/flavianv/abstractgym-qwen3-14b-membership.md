@@ -74,8 +74,8 @@ No se dispone de modelos comparables publicados en la informacion proporcionada 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| flavianv/abstractgym-qwen3-14b-membership | 14B + LoRA | no disponible | Pertenencia en AbstractGym | apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-14B (base) | 14B | no disponible | Proposito general | apache-2.0 | HuggingFace |
+| flavianv/abstractgym-qwen3-14b-membership | 14B + LoRA | no disponible | Pertenencia en AbstractGym | apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-14B (base) | 14B | no disponible | Proposito general | apache-2.0 | Hugging Face |
 | Otras variantes AbstractGym | no disponible | no disponible | no disponible | apache-2.0 | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de modelos comparables publicados en la informacion proporcionada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flavianv/abstractgym-qwen3-14b-membership
+- Hugging Face: https://huggingface.co/flavianv/abstractgym-qwen3-14b-membership
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Codigo publico de AbstractGym: https://github.com/flavianv/abstractgym-public/tree/main
 - Resultados de evaluacion citados: `docs/results/2026-10-04-x8` (dentro del repositorio de codigo publico)

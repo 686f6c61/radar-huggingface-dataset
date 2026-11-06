@@ -40,7 +40,7 @@ La innovación técnica de este repositorio es exclusivamente la cuantización: 
 ## Casos de uso
 
 - Asistente conversacional local en español: el modelo puede gestionar diálogos multi-turno en un equipo de sobremesa con 1,6 GB de memoria en uso, según la prueba del autor, lo que lo hace adecuado para prototipos de chatbots sin conexión.
-- Prácticas académicas de cuantización: sirve como ejemplo reproducible de conversión de un modelo HuggingFace a GGUF con GGUF-my-repo y evaluación comparativa Q4_K_M frente a Q8_0.
+- Prácticas académicas de cuantización: sirve como ejemplo reproducible de conversión de un modelo Hugging Face a GGUF con GGUF-my-repo y evaluación comparativa Q4_K_M frente a Q8_0.
 - Inferencia en hardware de consumo: con una GPU Radeon 6750XT y 32 GB de RAM se alcanzan 232,85 tokens/s de generación, suficiente para aplicaciones interactivas en tiempo real.
 - Despliegue con Ollama en estaciones de trabajo: el comando `ollama pull huggingface.co/Alejandro-Lopez-Fructuoso/Qwen3-1.7B-Q4_K_M-GGUF` permite tener el modelo operativo en minutos para pruebas de prompt engineering.
 - Servidor HTTP ligero con llama.cpp: `llama-server` con `-c 2048` ofrece un endpoint local para integrar generación de texto en scripts o aplicaciones pequeñas sin infraestructura cloud.
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-Q4_K_M-GGUF (este) | 2.031.739.904 | No disponible | Q4_K_M | Apache 2.0 | HuggingFace, Ollama, llama.cpp |
-| Qwen/Qwen3-1.7B (original) | 2.031.739.904 | No disponible | Safetensors (fp) | Apache 2.0 | HuggingFace, transformers |
+| Qwen3-1.7B-Q4_K_M-GGUF (este) | 2.031.739.904 | No disponible | Q4_K_M | Apache 2.0 | Hugging Face, Ollama, llama.cpp |
+| Qwen/Qwen3-1.7B (original) | 2.031.739.904 | No disponible | Safetensors (fp) | Apache 2.0 | Hugging Face, transformers |
 | Version Q8_0 del mismo modelo | 2.031.739.904 | No disponible | Q8_0 | Apache 2.0 | Mencionada por el autor, sin enlace |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de tamaño similar en la información proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de tamaño s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alejandro-Lopez-Fructuoso/Qwen3-1.7B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Alejandro-Lopez-Fructuoso/Qwen3-1.7B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

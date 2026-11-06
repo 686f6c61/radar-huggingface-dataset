@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PATAKATRADINGBOT es un repositorio publicado en HuggingFace por el usuario ALFACHINO26 bajo licencia Apache 2.0. El nombre sugiere un proyecto orientado a negociacion automatizada (trading), pero no existe en la informacion disponible ningun dato tecnico que lo confirme: ni pipeline declarado, ni idiomas, ni arquitectura, ni descripcion en la model card.
+PATAKATRADINGBOT es un repositorio publicado en Hugging Face por el usuario ALFACHINO26 bajo licencia Apache 2.0. El nombre sugiere un proyecto orientado a negociacion automatizada (trading), pero no existe en la informacion disponible ningun dato tecnico que lo confirme: ni pipeline declarado, ni idiomas, ni arquitectura, ni descripcion en la model card.
 
 El repositorio presenta un tamano de 0.0 GB, lo que indica que no se han subido pesos, tokenizador ni ficheros de configuracion. La model card se limita a la cabecera YAML con la licencia y no contiene texto descriptivo, ejemplos de uso ni referencias a papers o documentacion adicional.
 
@@ -73,5 +73,5 @@ No disponible. No se puede identificar una categoria de modelo (tamano, tarea, a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ALFACHINO26/PATAKATRADINGBOT
+- Repositorio en Hugging Face: https://huggingface.co/ALFACHINO26/PATAKATRADINGBOT
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B clinical scribe LoRA (este) | Adaptador sobre 4B | No especificado (base hasta 262.144) | LoRA para notas clinicas | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | 262.144 tokens | Instruccion general | Apache 2.0 | HuggingFace, ampliamente usado |
+| Qwen3-4B clinical scribe LoRA (este) | Adaptador sobre 4B | No especificado (base hasta 262.144) | LoRA para notas clinicas | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | 262.144 tokens | Instruccion general | Apache 2.0 | Hugging Face, ampliamente usado |
 | Alternativas de scribe clinico de proposito general | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre adaptadores comparables de scribe clinico en la documentacion proporcionada; la comparativa se limita al modelo base.
@@ -83,5 +83,5 @@ No se dispone de informacion sobre adaptadores comparables de scribe clinico en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KaustavMukherjee/qwen3-4b-clinical-scribe-lora
+- Modelo en Hugging Face: https://huggingface.co/KaustavMukherjee/qwen3-4b-clinical-scribe-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

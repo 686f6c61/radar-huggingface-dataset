@@ -85,8 +85,8 @@ Cualquier extrapolacion de estas cifras a la version de 2,6127 bpw carece de res
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este build (icecubetr dsx 2,6-bit) | 552B MoE + 196B Engram | 1.048.576 | 2,6127 bpw medios | MIT | GGUF de 187,6 GB + Engram externo; solo motor dsx |
-| DeepSeek-V4.1-Flash-1017 oficial | 552B MoE + 196B Engram | no disponible | FP8/FP4 | no disponible | HuggingFace, requiere hardware de centro de datos |
-| DeepSeek-V4.1-Flash (sep. 2026) | no disponible | no disponible | no disponible | no disponible | HuggingFace / API; predecesor con peores resultados en tareas agenticas segun prensa |
+| DeepSeek-V4.1-Flash-1017 oficial | 552B MoE + 196B Engram | no disponible | FP8/FP4 | no disponible | Hugging Face, requiere hardware de centro de datos |
+| DeepSeek-V4.1-Flash (sep. 2026) | no disponible | no disponible | no disponible | no disponible | Hugging Face / API; predecesor con peores resultados en tareas agenticas segun prensa |
 | Anthropic Opus-5 | no disponible (propietario) | no disponible | no disponible | propietario | Solo API; 74,0 % en Deep-SWE v1.1 |
 
 La comparacion relevante no es de calidad sino de accesibilidad: este build es el unico de la lista que puede ejecutarse en hardware de gama alta de consumo, a costa de una perdida de calidad no medida y de perder la portabilidad de GGUF estandar al depender de un motor especifico.
@@ -106,7 +106,7 @@ La comparacion relevante no es de calidad sino de accesibilidad: este build es e
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/icecubetr/DeepSeek-V4.1-Flash-1017-dsx-2.6bit
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/icecubetr/DeepSeek-V4.1-Flash-1017-dsx-2.6bit
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Version anterior del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Motor dsx (Rust + CUDA): https://github.com/lxe/dsx

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheFatBlue/code-backdoor-f26-v6-w1 | ~223 M | no disponible | Resumen de codigo (seguridad) | Apache 2.0 | HuggingFace |
-| Salesforce/codet5-base | ~220 M | 512 (tipico) | Generacion/resumen de codigo | Apache 2.0 | HuggingFace |
-| Salesforce/codet5-small | ~60 M | 512 (tipico) | Generacion/resumen de codigo | Apache 2.0 | HuggingFace |
-| CodeBERT (microsoft/codebert-base) | ~125 M | 512 | Representaciones de codigo (encoder) | MIT | HuggingFace |
+| TheFatBlue/code-backdoor-f26-v6-w1 | ~223 M | no disponible | Resumen de codigo (seguridad) | Apache 2.0 | Hugging Face |
+| Salesforce/codet5-base | ~220 M | 512 (tipico) | Generacion/resumen de codigo | Apache 2.0 | Hugging Face |
+| Salesforce/codet5-small | ~60 M | 512 (tipico) | Generacion/resumen de codigo | Apache 2.0 | Hugging Face |
+| CodeBERT (microsoft/codebert-base) | ~125 M | 512 | Representaciones de codigo (encoder) | MIT | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia y escala; no hay datos de rendimiento de este checkpoint frente a sus alternativas.
 
@@ -77,11 +77,11 @@ La comparativa se limita a modelos de la misma familia y escala; no hay datos de
 - Idiomas: no se especifican; probablemente limitado al lenguaje natural presente en el dataset (no confirmado).
 - Licencia Apache 2.0 permite uso comercial, pero el modelo base y el dataset de la competicion pueden imponer condiciones adicionales no recogidas en la model card.
 - No hay garantias de robustez ante codigo ofuscado, generado o fuera de distribucion; validar siempre con revision humana y herramientas de analisis estatico.
-- Fecha de publicacion en HuggingFace (2026) y ausencia de documentacion adicional: tratar el checkpoint como material didactico, no como producto.
+- Fecha de publicacion en Hugging Face (2026) y ausencia de documentacion adicional: tratar el checkpoint como material didactico, no como producto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheFatBlue/code-backdoor-f26-v6-w1
+- Hugging Face: https://huggingface.co/TheFatBlue/code-backdoor-f26-v6-w1
 - Modelo base: https://huggingface.co/Salesforce/codet5-base
 - Paper de CodeT5: https://arxiv.org/abs/2109.00859
 - Repositorio de CodeT5: https://github.com/salesforce/CodeT5

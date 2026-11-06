@@ -4,7 +4,7 @@
 
 Este checkpoint, publicado por el usuario 0xSero, aplica una poda de expertos sobre GLM-5.3, un modelo Mixture of Experts (MoE) de 753 000 millones de parámetros desarrollado por Z.AI, con 256 expertos por capa de los que se activan 8 en cada token. La poda se realiza con el método REAP de Cerebras (arXiv:2510.13999) y conserva 192 de los 256 expertos por capa, eliminando un 25 % de los expertos. El criterio de selección es la saliencia máxima por dominio, con el objetivo de preservar los especialistas de cada área de conocimiento.
 
-El checkpoint final se presenta en formato EXL3 TR3 con cuantización de 3,42 bits por peso y ocupa 277 GB, una reducción frente al modelo base que permite su carga en entornos con unos 300 GB de VRAM. Los metadatos de HuggingFace indican que contiene 138 215 068 928 parámetros, mientras que el nombre del repositorio sugiere 569B parámetros efectivos antes de cuantización. La poda se aplica de forma byte-exacta sobre un checkpoint ya cuantizado, sin reentrenamiento ni re-cuantización.
+El checkpoint final se presenta en formato EXL3 TR3 con cuantización de 3,42 bits por peso y ocupa 277 GB, una reducción frente al modelo base que permite su carga en entornos con unos 300 GB de VRAM. Los metadatos de Hugging Face indican que contiene 138 215 068 928 parámetros, mientras que el nombre del repositorio sugiere 569B parámetros efectivos antes de cuantización. La poda se aplica de forma byte-exacta sobre un checkpoint ya cuantizado, sin reentrenamiento ni re-cuantización.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ Después de la poda, los expertos restantes se renumeran, los routers se ajustan
 
 ## Capacidades
 
-- Generación de texto y conversación: el modelo está etiquetado en HuggingFace como "text-generation" y "conversational".
+- Generación de texto y conversación: el modelo está etiquetado en Hugging Face como "text-generation" y "conversational".
 - Razonamiento, matemáticas y código: no se han publicado capacidades específicas en la información disponible.
 - Tool calling / function calling: no se menciona en la model card ni en los metadatos.
 - Soporte de agentes o razonamiento multi-paso: no se menciona.
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zai-org/GLM-5.3 (original) | 753B totales, ≈40B activos | no disponible | no disponible | GLM-5.3 | HuggingFace |
-| davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw | 753B totales, ≈40B activos | no disponible | EXL3 TR3 3.42bpw | heredada | HuggingFace |
-| 0xSero/GLM-5.3-569B-EXL3-TR3-3.42bpw (este) | 138 215 068 928 en el checkpoint | no disponible | EXL3 TR3 3.42bpw | heredada | HuggingFace |
+| zai-org/GLM-5.3 (original) | 753B totales, ≈40B activos | no disponible | no disponible | GLM-5.3 | Hugging Face |
+| davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw | 753B totales, ≈40B activos | no disponible | EXL3 TR3 3.42bpw | heredada | Hugging Face |
+| 0xSero/GLM-5.3-569B-EXL3-TR3-3.42bpw (este) | 138 215 068 928 en el checkpoint | no disponible | EXL3 TR3 3.42bpw | heredada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,12 +81,12 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- [0xSero/GLM-5.3-569B-EXL3-TR3-3.42bpw en HuggingFace](https://huggingface.co/0xSero/GLM-5.3-569B-EXL3-TR3-3.42bpw)
+- [0xSero/GLM-5.3-569B-EXL3-TR3-3.42bpw en Hugging Face](https://huggingface.co/0xSero/GLM-5.3-569B-EXL3-TR3-3.42bpw)
 - [davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw (base cuantizado)](https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw)
 - [zai-org/GLM-5.3 (modelo original)](https://huggingface.co/zai-org/GLM-5.3)
 - [REAP (arXiv:2510.13999)](https://arxiv.org/abs/2510.13999)
 - [CerebrasResearch/reap en GitHub](https://github.com/CerebrasResearch/reap)
 - [exllamav3 en GitHub](https://github.com/turboderp-org/exllamav3)
 - [Dataset de fidelidad: 0xSero/glm-5.3-reap-fidelity-study](https://huggingface.co/datasets/0xSero/glm-5.3-reap-fidelity-study)
-- [Perfil de 0xSero en HuggingFace](https://huggingface.co/0xSero)
+- [Perfil de 0xSero en Hugging Face](https://huggingface.co/0xSero)
 - [0xSero/GLM-5.3-Flash-EXL3 (modelo relacionado)](https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3)

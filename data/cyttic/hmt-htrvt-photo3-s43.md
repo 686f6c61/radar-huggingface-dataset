@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye modelos comparables de H
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-photo3-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-photo3-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo (según la model card)
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

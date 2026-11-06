@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Ventana de accion / historial | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `huzheyuan/pi05_yam_raiden5g_histnow` | Aproximadamente 3,3B en bf16 (VLM 2B + experto 300M) | 30 acciones futuras / 60 de historial a 30 Hz | No disponible | Publico en HuggingFace |
-| `physical-intelligence/pi05_base` | No disponible en la informacion | No disponible | No disponible | Publico en HuggingFace |
+| `huzheyuan/pi05_yam_raiden5g_histnow` | Aproximadamente 3,3B en bf16 (VLM 2B + experto 300M) | 30 acciones futuras / 60 de historial a 30 Hz | No disponible | Publico en Hugging Face |
+| `physical-intelligence/pi05_base` | No disponible en la informacion | No disponible | No disponible | Publico en Hugging Face |
 | Otros VLA de robotica (por ejemplo, familias tipo pi0, GR00T, OpenVLA, RDT-1B) | No disponible en la informacion | No disponible | No disponible | No verificado en la informacion |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huzheyuan/pi05_yam_raiden5g_histnow
+- Modelo en Hugging Face: https://huggingface.co/huzheyuan/pi05_yam_raiden5g_histnow
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Checkpoints publicos citados en la model card: https://huggingface.co/huzheyuan/pi05_yam_raiden5g_histnow
 - Repositorios de datos LeRobot: `huzheyuan/raiden_five_garments_*` (13 repositorios, fps 30, tres camaras de 224x224, estado y accion de 14 dimensiones)

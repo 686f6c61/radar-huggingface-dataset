@@ -77,7 +77,7 @@ No se dispone de datos comparativos de rendimiento entre estas versiones. La com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SC117/Ling-3.0-flash-abliterated-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SC117/Ling-3.0-flash-abliterated-APEX-GGUF
 - Modelo base oficial: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Documentación en chino: https://huggingface.co/SC117/Ling-3.0-flash-abliterated-APEX-GGUF/blob/main/README_zh.md
 - Herramienta abliterix: https://github.com/wuwangzhang1216/abliterix

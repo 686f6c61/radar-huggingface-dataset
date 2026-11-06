@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | caption_qwen35_9b_trainset_retrieval_benchmark_110426 | 9B (base Qwen3.5-9B) | 8.192 tokens de entrenamiento | Sin benchmarks publicados | no disponible | Sin pesos publicados |
-| Qwen/Qwen3.5-9B (modelo base) | 9B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publicado en HuggingFace |
+| Qwen/Qwen3.5-9B (modelo base) | 9B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publicado en Hugging Face |
 | Alternativas de video captioning de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/georgeliu59/caption_qwen35_9b_trainset_retrieval_benchmark_110426
+- Hugging Face: https://huggingface.co/georgeliu59/caption_qwen35_9b_trainset_retrieval_benchmark_110426
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - LlamaFactory (framework de entrenamiento citado en los tags): https://github.com/hiyouga/LLaMA-Factory
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

@@ -79,7 +79,7 @@ La comparativa se limita a la familia OpenMed, ya que no se dispone de informaci
 
 ## Enlaces
 
-- Repositorio MLX en HuggingFace: https://huggingface.co/OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-568M-v1-mlx
+- Repositorio MLX en Hugging Face: https://huggingface.co/OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-568M-v1-mlx
 - Checkpoint original: https://huggingface.co/OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-568M-v1
 - Variante ONNX para Android: https://huggingface.co/OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-568M-v1-onnx-android
 - Repositorio de OpenMed en GitHub: https://github.com/maziyarpanahi/openmed

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dogeum/demo_parsing_size` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos ("chunks") de acciones en lugar de un único paso de control. El modelo lo publica el usuario dogeum en HuggingFace Hub y se ha entrenado y subido mediante LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica. No es un modelo de lenguaje: es un checkpoint de control motriz que mapea observaciones (imágenes de cámara y estado del robot) a secuencias de acciones de un efector.
+`dogeum/demo_parsing_size` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos ("chunks") de acciones en lugar de un único paso de control. El modelo lo publica el usuario dogeum en Hugging Face Hub y se ha entrenado y subido mediante LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica. No es un modelo de lenguaje: es un checkpoint de control motriz que mapea observaciones (imágenes de cámara y estado del robot) a secuencias de acciones de un efector.
 
 El checkpoint tiene 51.668.614 parámetros (unos 51,7 millones) en formato safetensors, con un repositorio de 0,2 GB, lo que lo sitúa en el rango de las políticas ligeras que se pueden ejecutar en tiempo real sobre hardware de consumo. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales, y el dataset asociado es `dogeum/demo_parsing_size`.
 
@@ -68,9 +68,9 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de los m
 
 | Modelo | Parametros | Contexto / chunk | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| dogeum/demo_parsing_size (ACT) | 51,7 M | no disponible | Apache-2.0 | HuggingFace Hub, librería LeRobot | Checkpoint de demostración, 0 descargas |
+| dogeum/demo_parsing_size (ACT) | 51,7 M | no disponible | Apache-2.0 | Hugging Face Hub, librería LeRobot | Checkpoint de demostración, 0 descargas |
 | Diffusion Policy (LeRobot) | no disponible | no disponible | no disponible | Implementada en LeRobot | Alternativa de imitación que genera acciones mediante difusión; requiere más pasos de inferencia |
-| SmolVLA (LeRobot) | no disponible | no disponible | no disponible | HuggingFace Hub | Política visión-lenguaje-acción de mayor tamaño, orientada a generalización entre tareas |
+| SmolVLA (LeRobot) | no disponible | no disponible | no disponible | Hugging Face Hub | Política visión-lenguaje-acción de mayor tamaño, orientada a generalización entre tareas |
 | TDMPC / VQ-BeT (LeRobot) | no disponible | no disponible | no disponible | Implementadas en LeRobot | Enfoques alternativos de control aprendido dentro del mismo ecosistema |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dogeum/demo_parsing_size
+- Modelo en Hugging Face: https://huggingface.co/dogeum/demo_parsing_size
 - Dataset asociado: https://huggingface.co/datasets/dogeum/demo_parsing_size
 - Artículo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Artículo en arXiv: https://arxiv.org/abs/2304.13705

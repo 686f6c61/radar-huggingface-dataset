@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NativeCodec es un modelo multimodal de comprensión de vídeo publicado en HuggingFace por el usuario Tennineee bajo licencia Apache 2.0. Se presenta como un "video-LLM" orientado a la eficiencia de tokens mediante una técnica de codificación incremental, con soporte para video question answering (video-text-to-text) e idiomas inglés y chino. El repositorio ocupa 10,2 GB y está en acceso restringido (gated), por lo que requiere aceptar condiciones en la plataforma antes de su descarga.
+NativeCodec es un modelo multimodal de comprensión de vídeo publicado en Hugging Face por el usuario Tennineee bajo licencia Apache 2.0. Se presenta como un "video-LLM" orientado a la eficiencia de tokens mediante una técnica de codificación incremental, con soporte para video question answering (video-text-to-text) e idiomas inglés y chino. El repositorio ocupa 10,2 GB y está en acceso restringido (gated), por lo que requiere aceptar condiciones en la plataforma antes de su descarga.
 
 El modelo se apoya en la familia Qwen (según los tags del repositorio) como base lingüística, e incorpora un componente de codec específico para procesar flujos de vídeo de forma incremental, reduciendo presumiblemente el número de tokens necesarios para representar contenido visual y temporal. Esta aproximación resulta relevante en un momento en el que los modelos de vídeo afrontan costes de contexto y cómputo elevados al procesar secuencias largas de fotogramas.
 
@@ -66,13 +66,13 @@ No se dispone de datos de rendimiento ni de especificaciones completas de Native
 
 | Modelo | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
-| NativeCodec | no disponible | no disponible | Apache 2.0 | Gated en HuggingFace |
+| NativeCodec | no disponible | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Alternativas video-LLM | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Información pública muy escasa: no se han publicado parámetros, contexto, dataset ni benchmarks, lo que impide evaluar su calidad antes de usarlo.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso automatizado o en entornos corporativos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso automatizado o en entornos corporativos.
 - Cobertura lingüística reducida: solo inglés y chino; no se declara soporte para castellano ni otros idiomas.
 - Riesgo de alucinación: inherente a los modelos generativos multimodales; no se han publicado evaluaciones de fidelidad sobre vídeo.
 - Sesgos: no se documentan análisis de sesgos demográficos, culturales o visuales.
@@ -82,4 +82,4 @@ No se dispone de datos de rendimiento ni de especificaciones completas de Native
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tennineee/NativeCodec
+- Hugging Face: https://huggingface.co/Tennineee/NativeCodec

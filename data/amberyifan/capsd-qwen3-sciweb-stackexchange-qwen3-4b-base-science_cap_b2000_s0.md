@@ -80,7 +80,7 @@ No hay datos de rendimiento para comparar directamente. La elección entre este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_cap_b2000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_cap_b2000_s0
 - Qwen3 Technical Report (arXiv): https://arxiv.org/abs/2505.09388
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Modelo base Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B-Base

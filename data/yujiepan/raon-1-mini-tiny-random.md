@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yujiepan/raon-1-mini-tiny-random | 18,2 M (64 expertos, 6 activos) | 4.096 | sin capacidades; pesos aleatorios | no disponible (base Apache 2.0) | HuggingFace, 0 descargas |
-| KRAFTON/Raon-1-mini-preview | ~30B totales, ~4B activos (30B-A4B), 128 expertos, 6 activos | no disponible en la información proporcionada | sin cifras publicadas; orientado a coreano y tareas agénticas | Apache 2.0 | HuggingFace y GitHub de KRAFTON |
-| Modelos tiny de depuración de la comunidad (por ejemplo, los `tiny-random` de HuggingFace) | del orden de millones de parámetros | variable | nulo por diseño; son fixtures de test | habitualmente permisiva | HuggingFace |
+| yujiepan/raon-1-mini-tiny-random | 18,2 M (64 expertos, 6 activos) | 4.096 | sin capacidades; pesos aleatorios | no disponible (base Apache 2.0) | Hugging Face, 0 descargas |
+| KRAFTON/Raon-1-mini-preview | ~30B totales, ~4B activos (30B-A4B), 128 expertos, 6 activos | no disponible en la información proporcionada | sin cifras publicadas; orientado a coreano y tareas agénticas | Apache 2.0 | Hugging Face y GitHub de KRAFTON |
+| Modelos tiny de depuración de la comunidad (por ejemplo, los `tiny-random` de Hugging Face) | del orden de millones de parámetros | variable | nulo por diseño; son fixtures de test | habitualmente permisiva | Hugging Face |
 
 La comparación relevante es con el modelo base: este tiny no es una alternativa funcional, sino un gemelo estructural de 18,2 M de parámetros que reproduce la misma configuración de capas, expertos y cuantización a una escala 1.000 veces menor.
 
@@ -97,7 +97,7 @@ La comparación relevante es con el modelo base: este tiny no es una alternativa
 - Requiere `trust_remote_code=True`, lo que implica ejecutar código Python del repositorio; conviene auditar `modeling_raon1_mini.py` y `configuration_raon1_mini.py` antes de usarlo en entornos con datos sensibles.
 - La licencia no figura en los metadatos del repo. Aunque el modelo base sea Apache 2.0, conviene confirmar los términos aplicables antes de redistribuirlo.
 - El repositorio tiene 0 descargas y 0 likes y se creó en octubre de 2026; no hay mantenimiento ni garantía de compatibilidad con futuras versiones de `transformers`.
-- El tamaño del repositorio aparece como 0,0 GB en los metadatos pese a que el archivo pesa 35,3 MB; es una inconsistencia de la ficha de HuggingFace, no un error del modelo.
+- El tamaño del repositorio aparece como 0,0 GB en los metadatos pese a que el archivo pesa 35,3 MB; es una inconsistencia de la ficha de Hugging Face, no un error del modelo.
 - Los tensores de los expertos enrutados solo se inicializan correctamente siguiendo el camino BF16 → MXFP8 descrito por el autor; cargar directamente el checkpoint en `float8_e4m3fn` en CPU puede fallar según la versión de PyTorch.
 - No hay versiones cuantizadas adicionales, ni GGUF, ni soporte verificado en motores de inferencia de alto rendimiento, lo que limita su uso a `transformers`.
 - El contexto de 4.096 tokens es una reducción del tiny; no refleja la ventana real del modelo base.

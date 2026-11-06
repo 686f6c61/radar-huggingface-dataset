@@ -105,7 +105,7 @@ La comparación relevante es contra el modelo base: mismo tamaño, misma licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FernandoMarquesVale/Llama-3.2-3B-medassist-ptbr
+- Modelo en Hugging Face: https://huggingface.co/FernandoMarquesVale/Llama-3.2-3B-medassist-ptbr
 - Repositorio del proyecto (código, datos sintéticos y evaluaciones): https://github.com/fernando-m-vale/IA-For-Devs/tree/main/fase-03
 - Modelfile de referencia para Ollama: https://github.com/fernando-m-vale/IA-For-Devs/blob/main/fase-03/models/Modelfile
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

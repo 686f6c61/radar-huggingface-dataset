@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williambakerman/perceiver-matching-proto` es un prototipo de investigación publicado en HuggingFace por el usuario williambakerman. Implementa una arquitectura Perceiver orientada a tareas de *matching* (emparejamiento entre conjuntos de datos, presumiblemente multimodal dado el uso de fusión tensorial). No se trata de un modelo entrenado, sino de un esqueleto reproducible con pesos de inicialización para pruebas de humo (*smoke tests*).
+`williambakerman/perceiver-matching-proto` es un prototipo de investigación publicado en Hugging Face por el usuario williambakerman. Implementa una arquitectura Perceiver orientada a tareas de *matching* (emparejamiento entre conjuntos de datos, presumiblemente multimodal dado el uso de fusión tensorial). No se trata de un modelo entrenado, sino de un esqueleto reproducible con pesos de inicialización para pruebas de humo (*smoke tests*).
 
 El repositorio incluye el script de inferencia, la configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. El autor indica explícitamente que no se reclama ningún resultado de benchmark y que los pesos no han sido entrenados ni auditados.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| williambakerman/perceiver-matching-proto | 16.576 | no disponible | No (inicialización) | MIT | HuggingFace |
+| williambakerman/perceiver-matching-proto | 16.576 | no disponible | No (inicialización) | MIT | Hugging Face |
 | Perceiver IO (referencia DeepMind) | ~ decenas de millones a cientos de millones | variable | Sí | Apache 2.0 (referencia) | Repos oficiales |
-| Modelos de matching multimodal tipo CLIP | ~ 100 M – 400 M | 77 tokens (texto) | Sí | MIT / otras | HuggingFace |
+| Modelos de matching multimodal tipo CLIP | ~ 100 M – 400 M | 77 tokens (texto) | Sí | MIT / otras | Hugging Face |
 
 La comparación es desigual por diseño: el modelo del autor es un prototipo sin entrenar, mientras que Perceiver IO y CLIP son modelos con pesos entrenados y benchmarks publicados. No se dispone de datos de rendimiento del prototipo para comparar numéricamente.
 
@@ -75,10 +75,10 @@ La comparación es desigual por diseño: el modelo del autor es un prototipo sin
 - No se declaran idiomas soportados; no hay capacidades multilingües verificadas.
 - Licencia MIT permite uso comercial del código y los pesos, pero el autor advierte de revisar los términos de los datos de origen si se usan datasets externos.
 - La etiqueta "huge" de la model card no se corresponde con el tamaño real del checkpoint (16.576 parámetros), lo que puede inducir a error.
-- Es una implementación personalizada: las APIs automáticas de carga de HuggingFace requieren un adaptador explícito.
+- Es una implementación personalizada: las APIs automáticas de carga de Hugging Face requieren un adaptador explícito.
 - No apto para producción en su estado actual; cualquier resultado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williambakerman/perceiver-matching-proto
+- Hugging Face: https://huggingface.co/williambakerman/perceiver-matching-proto
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -70,7 +70,7 @@ No disponible. No se puede establecer una comparativa con modelos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/varungupta43/qa
+- Modelo en Hugging Face: https://huggingface.co/varungupta43/qa
 - Pagina personal del autor (Varun Gupta): https://guptavarun.com/
 - Perfil de LinkedIn del autor: https://www.linkedin.com/posts/jsrvarungupta_these-are-the-8-ai-model-types-you-need-to-activity-7477325694117715968-8W6B
 - Articulo de MDPI sobre adopcion de IA generativa (referencia relacionada con el autor): https://www.mdpi.com/2079-8954/12/3/103/notes

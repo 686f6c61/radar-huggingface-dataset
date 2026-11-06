@@ -21,7 +21,7 @@ Su relevancia es acotada y muy específica: permite reproducir y auditar una pol
 | Formato de pesos | joblib (`joblib.load` devuelve el diccionario de `fit_heads`) |
 | Autor | dhresearch |
 | Libreria declarada | sklearn |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace, valor redondeado) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face, valor redondeado) |
 | Dataset de entrenamiento | dhresearch/outcome-router-v2-measured-pool |
 | Ficheros del dataset | pilot_tasks.jsonl, pilot_outcomes.jsonl, splits.json |
 | Rutas evaluadas | cheap_model, medium_model, code_specialist, code_specialist_repair, strong_model, strong_repair (6) |
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los b
 - GPU recomendadas: ninguna. No se requiere A100, H100 ni RTX 4090.
 - Compatibilidad con GPU de consumo: irrelevante; no hay componente de cómputo acelerado.
 - Entorno de ejecución: Python con joblib (1.6.0 en el reajuste), scikit-learn (1.9.1), numpy (2.5.3), scipy (1.18.1) y lightgbm (4.7.0) según las versiones declaradas.
-- Almacenamiento: el repositorio figura con 0,0 GB en HuggingFace (valor redondeado), lo que indica un artefacto de tamaño muy reducido; no se publica el tamaño exacto en bytes.
+- Almacenamiento: el repositorio figura con 0,0 GB en Hugging Face (valor redondeado), lo que indica un artefacto de tamaño muy reducido; no se publica el tamaño exacto en bytes.
 - Opciones de despliegue: carga directa con `joblib.load` dentro de un servicio Python. No es compatible con vLLM, llama.cpp, Ollama ni TGI, orientados a modelos generativos.
 - Latencia y throughput: no disponible (no se publican mediciones).
 
@@ -112,10 +112,10 @@ En la informacion proporcionada no se incluye ninguna comparativa con otros arte
 - Idiomas: no disponible. No hay declaración de soporte multilingüe y el artefacto no procesa texto directamente.
 - Licencia «other» sin términos detallados: antes de un uso comercial es imprescindible revisar el repositorio y contactar con el autor para conocer las condiciones reales.
 - Señales de adopción nulas: 0 descargas y 0 likes, con creación y actualización el mismo día (2026-10-03, con un segundo de diferencia), lo que apunta a un artefacto sin validación externa.
-- No se declara *pipeline* en HuggingFace ni idiomas en los metadatos, lo que dificulta su descubrimiento y filtrado automático.
+- No se declara *pipeline* en Hugging Face ni idiomas en los metadatos, lo que dificulta su descubrimiento y filtrado automático.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-predicted-success
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-predicted-success
 - Dataset del estudio: https://huggingface.co/datasets/dhresearch/outcome-router-v2-measured-pool
 - La busqueda web realizada no devolvio ningun enlace relacionado con este artefacto. Los resultados obtenidos (leaderboards generales de OpenRouter y OrcaRouter, un blog de Hugging Face sobre otro modelo y un articulo de prensa sobre Gemini 4 Argon) no guardan relacion con esta ficha y se omiten por no ser pertinentes.

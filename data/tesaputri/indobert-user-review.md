@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tesaputri/indobert-user-review` es un modelo publicado en HuggingFace por el usuario Tesaputri bajo licencia MIT. Por su identificador, se trata presumiblemente de un modelo basado en IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada por Indolem, y su nombre sugiere un ajuste fino orientado al análisis de reseñas de usuarios en dicho idioma. Sin embargo, esta interpretación se deduce únicamente del nombre del repositorio y no está confirmada por la model card, que se limita a declarar la licencia MIT sin aportar descripción, arquitectura ni datos de entrenamiento.
+`Tesaputri/indobert-user-review` es un modelo publicado en Hugging Face por el usuario Tesaputri bajo licencia MIT. Por su identificador, se trata presumiblemente de un modelo basado en IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada por Indolem, y su nombre sugiere un ajuste fino orientado al análisis de reseñas de usuarios en dicho idioma. Sin embargo, esta interpretación se deduce únicamente del nombre del repositorio y no está confirmada por la model card, que se limita a declarar la licencia MIT sin aportar descripción, arquitectura ni datos de entrenamiento.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. La fecha de creación y actualización es la misma (2026-11-03), lo que apunta a una publicación sin mantenimiento posterior ni documentación adicional.
 
@@ -72,5 +72,5 @@ No disponible. No se dispone de información suficiente sobre el modelo para ide
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tesaputri/indobert-user-review
+- Hugging Face: https://huggingface.co/Tesaputri/indobert-user-review
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

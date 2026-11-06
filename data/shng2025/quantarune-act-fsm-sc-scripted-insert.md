@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye otros modelos de inserci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shng2025/quantarune-act-fsm-sc-scripted-insert
+- Hugging Face: https://huggingface.co/shng2025/quantarune-act-fsm-sc-scripted-insert
 - Memoria técnica del pipeline y análisis de fallos: `docs/technique.md` dentro del repositorio
 - Resultados de ensayos: `results/trials.csv` dentro del repositorio
 - Scripts de entrenamiento: `training/quantarune_training/` y `training/quantarune_teleop/` dentro del repositorio

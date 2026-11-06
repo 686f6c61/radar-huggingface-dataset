@@ -79,10 +79,10 @@ No se dispone de modelos directamente comparables, ya que este repositorio es un
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-7B-Instruct) | 7.610 M en el base + LoRA r=64 | No declarado aquí; 32.768 nativos en el base (131.072 con YaRN) | No disponible | Repositorio HuggingFace con 0 descargas | No disponible |
+| Este adaptador (sobre Qwen2.5-7B-Instruct) | 7.610 M en el base + LoRA r=64 | No declarado aquí; 32.768 nativos en el base (131.072 con YaRN) | No disponible | Repositorio Hugging Face con 0 descargas | No disponible |
 | Qwen2.5-7B-Instruct (base) | 7.610 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 (según su ficha pública) | Ampliamente disponible | No comparable: no hay benchmarks publicados del adaptador |
-| Qwen2.5-7B-Instruct-ES-generated-by-sonnet45-1 (minuendo) | 7.610 M + LoRA r=32 | ídem | No disponible | Repositorio HuggingFace | No disponible |
-| Averaged_MO_Qwen7B_Adapters-1 (sustraendo) | 7.610 M + LoRA r=32 | ídem | No disponible | Repositorio HuggingFace | No disponible |
+| Qwen2.5-7B-Instruct-ES-generated-by-sonnet45-1 (minuendo) | 7.610 M + LoRA r=32 | ídem | No disponible | Repositorio Hugging Face | No disponible |
+| Averaged_MO_Qwen7B_Adapters-1 (sustraendo) | 7.610 M + LoRA r=32 | ídem | No disponible | Repositorio Hugging Face | No disponible |
 
 Los datos de arquitectura y contexto del modelo base proceden de la documentación pública de Qwen2.5 y no están verificados en este repositorio. No se han publicado comparativas de rendimiento entre estas variantes.
 
@@ -101,7 +101,7 @@ Los datos de arquitectura y contexto del modelo base proceden de la documentaci�
 
 ## Enlaces
 
-- Repositorio del modelo (HuggingFace): https://huggingface.co/darturi/Qwen2.5-7B-Instruct-ES-generated-by-sonnet45-1-NEGATED_WITH_MO-1
+- Repositorio del modelo (Hugging Face): https://huggingface.co/darturi/Qwen2.5-7B-Instruct-ES-generated-by-sonnet45-1-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-ES-generated-by-sonnet45-1
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

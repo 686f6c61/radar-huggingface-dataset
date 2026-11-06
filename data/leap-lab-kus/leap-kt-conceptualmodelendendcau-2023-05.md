@@ -77,7 +77,7 @@ No se dispone de información comparativa con otros modelos de knowledge tracing
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LEAP-LAB-KUS/leap-kt-conceptualmodelendendcau-2023-05
+- Modelo en Hugging Face: https://huggingface.co/LEAP-LAB-KUS/leap-kt-conceptualmodelendendcau-2023-05
 - Repositorio del toolkit: https://github.com/LEAP-LAB-KUS/leap-kt-toolkit
 - Dataset ASSIST2009: no se proporciona enlace directo en la documentación, pero es un dataset público conocido.
 - Dataset DBE_KT22: no se proporciona enlace directo en la documentación.

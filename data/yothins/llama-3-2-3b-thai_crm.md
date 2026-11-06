@@ -74,11 +74,11 @@ Los valores de parámetros y contexto corresponden a la documentación pública 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.2-3B-Thai_CRM (este) | 3,21B (base) | 128.000 (base) | Llama 3.2 Community | HuggingFace, 0 descargas, sin documentación |
-| Llama-3.2-3B-Instruct | 3,21B | 128.000 | Llama 3.2 Community | HuggingFace, modelo oficial de Meta, ampliamente evaluado |
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 nativo (128.000 con YaRN) | Apache 2.0 | HuggingFace, muy extendido |
-| Gemma 2 2B IT | 2,6B | 8.192 | Gemma Terms of Use | HuggingFace, modelo oficial de Google |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 | MIT | HuggingFace, modelo oficial de Microsoft |
+| Llama-3.2-3B-Thai_CRM (este) | 3,21B (base) | 128.000 (base) | Llama 3.2 Community | Hugging Face, 0 descargas, sin documentación |
+| Llama-3.2-3B-Instruct | 3,21B | 128.000 | Llama 3.2 Community | Hugging Face, modelo oficial de Meta, ampliamente evaluado |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 nativo (128.000 con YaRN) | Apache 2.0 | Hugging Face, muy extendido |
+| Gemma 2 2B IT | 2,6B | 8.192 | Gemma Terms of Use | Hugging Face, modelo oficial de Google |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 | MIT | Hugging Face, modelo oficial de Microsoft |
 
 Diferencias clave: este repositorio no aporta licencia propia distinta a la de Llama 3.2, no publica evaluaciones y no ofrece versiones cuantizadas, a diferencia de las alternativas de la tabla. Si el objetivo es un asistente en tailandés con soporte de tool calling, el modelo oficial Llama-3.2-3B-Instruct o Qwen2.5-3B-Instruct son opciones más trazables.
 
@@ -96,9 +96,9 @@ Diferencias clave: este repositorio no aporta licencia propia distinta a la de L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yothinS/Llama-3.2-3B-Thai_CRM
+- Repositorio en Hugging Face: https://huggingface.co/yothinS/Llama-3.2-3B-Thai_CRM
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos asociados a este modelo.
 - Referencias del modelo base (no proceden de la búsqueda, se incluyen como contexto):
-  - Llama 3.2 3B Instruct en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+  - Llama 3.2 3B Instruct en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
   - Anuncio de Llama 3.2 de Meta: https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/
   - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

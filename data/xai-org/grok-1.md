@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Grok-1 es un modelo de generacion de texto de pesos abiertos publicado por xAI (organizacion `xai-org` en HuggingFace). Se distribuye bajo licencia Apache 2.0 y consta de 314B parametros segun la model card oficial, lo que lo situa en la categoria de modelos de gran escala. El repositorio ocupa 318,2 GB e incluye los pesos del modelo, cuyo codigo acompanante se aloja en un repositorio de GitHub independiente.
+Grok-1 es un modelo de generacion de texto de pesos abiertos publicado por xAI (organizacion `xai-org` en Hugging Face). Se distribuye bajo licencia Apache 2.0 y consta de 314B parametros segun la model card oficial, lo que lo situa en la categoria de modelos de gran escala. El repositorio ocupa 318,2 GB e incluye los pesos del modelo, cuyo codigo acompanante se aloja en un repositorio de GitHub independiente.
 
 La publicacion, fechada el 17 de marzo de 2024 y actualizada el 28 de marzo de 2024, se realizo como contribucion de pesos abiertos. Segun la propia documentacion, para probar el modelo con el codigo de ejemplo se requiere una maquina multi-GPU debido a su tamano. El checkpoint distribuido es de tipo `int8` y se descarga dentro del directorio `checkpoints` mediante `huggingface-cli`.
 
@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xai-org/grok-1
+- Hugging Face: https://huggingface.co/xai-org/grok-1
 - Repositorio de codigo en GitHub: https://github.com/xai-org/grok-1/tree/main
 - Web de xAI: https://x.ai/
 - Empleo en xAI (mencionado en la model card): https://x.ai/careers

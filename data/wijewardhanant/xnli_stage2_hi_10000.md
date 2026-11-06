@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`WijewardhanaNT/xnli_stage2_hi_10000` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario WijewardhanaNT, construido sobre el modelo base `meta-llama/Llama-2-7b-hf`. El nombre del repositorio sugiere un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural multilingue) en su fase 2, con un subconjunto de 10.000 ejemplos y el codigo de idioma `hi` (hindi), aunque la model card no confirma explicitamente esta interpretacion. El repositorio contiene unicamente los pesos del adaptador (0,5 GB), no el modelo completo.
+`WijewardhanaNT/xnli_stage2_hi_10000` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario WijewardhanaNT, construido sobre el modelo base `meta-llama/Llama-2-7b-hf`. El nombre del repositorio sugiere un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural multilingue) en su fase 2, con un subconjunto de 10.000 ejemplos y el codigo de idioma `hi` (hindi), aunque la model card no confirma explicitamente esta interpretacion. El repositorio contiene unicamente los pesos del adaptador (0,5 GB), no el modelo completo.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto de investigacion sin documentacion tecnica, sin metricas publicadas, sin licencia declarada y con cero descargas en el momento de la consulta. No es un modelo listo para produccion, sino un experimento de ajuste fino que puede servir como referencia para quienes trabajen en adaptadores LoRA sobre Llama 2 para tareas de NLI multilingue.
 
-La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto aparecen como "[More Information Needed]". Por tanto, la mayoria de los datos tecnicos de esta ficha se derivan del modelo base y de la convencion de nombres, y se marcan explicitamente como no confirmados.
+La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto aparecen como "[More Information Needed]". Por tanto, la mayoria de los datos tecnicos de esta ficha se derivan del modelo base y de la convencion de nombres, y se marcan explicitamente como no confirmados.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_stage2_hi_10000 | Adaptador sobre 7B | 4.096 (base) | LoRA PEFT | No disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-hf | 7B | 4.096 | Base denso | Llama 2 Community License | HuggingFace, ampliamente usado |
+| WijewardhanaNT/xnli_stage2_hi_10000 | Adaptador sobre 7B | 4.096 (base) | LoRA PEFT | No disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-hf | 7B | 4.096 | Base denso | Llama 2 Community License | Hugging Face, ampliamente usado |
 | Adaptadores XNLI publicos sobre Llama 2 | Variable | 4.096 (base) | LoRA PEFT | Variable | Depende del autor |
-| Modelos NLI multilingues dedicados (p. ej. XLM-R large) | ~560M | 512 | Encoder | MIT / CC-BY-NC segun variante | HuggingFace |
+| Modelos NLI multilingues dedicados (p. ej. XLM-R large) | ~560M | 512 | Encoder | MIT / CC-BY-NC segun variante | Hugging Face |
 
 La comparacion con XLM-R es relevante porque los modelos encoder dedicados a NLI suelen superar en eficiencia y precision a un decoder de 7B ajustado con LoRA para la misma tarea, con un coste de inferencia mucho menor. No se dispone de datos de rendimiento del adaptador para cuantificar la diferencia.
 
@@ -85,7 +85,7 @@ La comparacion con XLM-R es relevante porque los modelos encoder dedicados a NLI
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_stage2_hi_10000
+- Repositorio Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_stage2_hi_10000
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Paper de referencia citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WorkMagic JEV Decision Qwen3-8B SFT v1 | 8,19 B | No disponible | Decisión tipada sobre opciones (LoRA sobre Qwen3-8B) | No disponible | HuggingFace, librería anyjev |
-| Qwen/Qwen3-8B (base) | 8,19 B | No disponible en la información proporcionada | Modelo generativo generalista con modo de razonamiento | No disponible en la información proporcionada | HuggingFace |
-| Modelos de clasificación dedicados (por ejemplo, DeBERTa-v3-large) | ~0,3-0,4 B | ~512 tokens típicamente | Clasificación supervisada por tarea | MIT/Apache-2.0 según variante | HuggingFace |
+| WorkMagic JEV Decision Qwen3-8B SFT v1 | 8,19 B | No disponible | Decisión tipada sobre opciones (LoRA sobre Qwen3-8B) | No disponible | Hugging Face, librería anyjev |
+| Qwen/Qwen3-8B (base) | 8,19 B | No disponible en la información proporcionada | Modelo generativo generalista con modo de razonamiento | No disponible en la información proporcionada | Hugging Face |
+| Modelos de clasificación dedicados (por ejemplo, DeBERTa-v3-large) | ~0,3-0,4 B | ~512 tokens típicamente | Clasificación supervisada por tarea | MIT/Apache-2.0 según variante | Hugging Face |
 
 La comparación con la base Qwen3-8B es la más directa: este ajuste conserva el tamaño del modelo pero restringe su salida a la selección entre opciones, lo que lo hace más adecuado para tareas de decisión y menos adecuado para generación abierta. Frente a clasificadores dedicados más pequeños, el modelo ofrece mayor capacidad de razonamiento implícito a costa de un consumo de recursos muy superior. No se dispone de datos de rendimiento comparativo para respaldar estas diferencias con cifras.
 
@@ -83,6 +83,6 @@ La comparación con la base Qwen3-8B es la más directa: este ajuste conserva el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/workmagicio/workmagic-jev-decision-qwen3-8b-sft-v1
+- Modelo en Hugging Face: https://huggingface.co/workmagicio/workmagic-jev-decision-qwen3-8b-sft-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de la librería `anyjev` ni demos adicionales.

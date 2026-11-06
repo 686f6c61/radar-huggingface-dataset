@@ -86,11 +86,11 @@ En las particiones reservadas de `skypro1111/uk-text-normalization`, el modelo E
 - En las particiones reservadas del dataset de normalización rinde algo por debajo de los modelos de frase completa comparados; su ventaja se concentra en texto real de audiolibro.
 - No se documentan sesgos específicos ni tasa de alucinación más allá de las métricas de palabras alteradas fuera de spans.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que su adopción y mantenimiento comunitario son limitados.
-- El pipeline tag de HuggingFace figura como `text-generation`, mientras que la model card indica `text2text-generation`; conviene verificar la configuración de carga en producción.
+- El pipeline tag de Hugging Face figura como `text-generation`, mientras que la model card indica `text2text-generation`; conviene verificar la configuración de carga en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aloudreader/marian-uk-verbalizer-spans-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/aloudreader/marian-uk-verbalizer-spans-ct2-int8
 - Paquete `accentuk`: https://github.com/vacuum-in/accentuk
 - Código de entrenamiento y evaluación: https://github.com/vacuum-in/marian-uk-verbalizer
 - Dataset de entrenamiento: https://huggingface.co/datasets/skypro1111/uk-text-normalization

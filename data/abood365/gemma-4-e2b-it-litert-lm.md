@@ -44,7 +44,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Automatizacion de tareas en IoT: inferencia en dispositivos con recursos limitados usando la aceleracion XNNPack en CPU, sin dependencia de conectividad.
 - Agentes locales con function calling: integracion de llamadas a funciones del sistema operativo o APIs locales mediante el soporte nativo de tool calling de LiteRT-LM.
 - Procesamiento de documentos en escritorio: resumen y extraccion de informacion de textos largos aprovechando la ventana de 32k tokens.
-- Demos y prototipado web: despliegue en el espacio de HuggingFace o en navegador mediante el runtime LiteRT-LM, util para validar casos de uso antes de portar a movil.
+- Demos y prototipado web: despliegue en el espacio de Hugging Face o en navegador mediante el runtime LiteRT-LM, util para validar casos de uso antes de portar a movil.
 - Filtrado y clasificacion de contenido on-device: analisis de texto e imagenes en el dispositivo para moderacion sin coste de servidor.
 
 ## Benchmarks y rendimiento
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abood365/gemma-4-E2B-it-litert-lm
+- Repositorio Hugging Face: https://huggingface.co/abood365/gemma-4-E2B-it-litert-lm
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Empaquetado de referencia: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Documentacion LiteRT-LM: https://ai.google.dev/edge/litert-lm/overview

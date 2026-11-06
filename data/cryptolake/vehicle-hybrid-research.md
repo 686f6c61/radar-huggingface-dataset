@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vehicle Hybrid Research v2 es un modelo de deteccion de objetos derivado de YOLO26n, publicado por el usuario cryptolake en HuggingFace bajo el identificador `cryptolake/vehicle-hybrid-research`. Se distribuye en formato ONNX con un unico artefacto de pesos congelados y esta especializado en la deteccion de cuatro clases de vehiculos: coche (`0 car`), autobus (`1 bus`), camion (`2 truck`) y motocicleta (`3 motorcycle`). No contempla la clase furgoneta ni ninguna otra categoria adicional.
+Vehicle Hybrid Research v2 es un modelo de deteccion de objetos derivado de YOLO26n, publicado por el usuario cryptolake en Hugging Face bajo el identificador `cryptolake/vehicle-hybrid-research`. Se distribuye en formato ONNX con un unico artefacto de pesos congelados y esta especializado en la deteccion de cuatro clases de vehiculos: coche (`0 car`), autobus (`1 bus`), camion (`2 truck`) y motocicleta (`3 motorcycle`). No contempla la clase furgoneta ni ninguna otra categoria adicional.
 
 El modelo se presenta explicitamente como un artefacto de investigacion, no como un modelo listo para produccion. Segun la model card, forma parte de un experimento de "espacio de pesos" (weight-space research) y su objetivo es servir como material inmutable para un experimento separado denominado Rig Agent. El autor advierte de que este repositorio no sustituye al repositorio ganador (`manako/Detect-Vehicle-winner`) ni establece por si mismo una cualificacion de release para agentes.
 
@@ -31,7 +31,7 @@ Especificaciones adicionales declaradas en la model card:
 | SHA-256 del ONNX | `3e7149fffd7184fa297efeca7364801655b23d0ebca7a268804f65c9abe86dd9` |
 | Adaptador de serving | `manako/Detect-Vehicle-winner`, revision `7e8eb164c36400b32f887ff4ec7f1fd63b66e0ae` |
 | SHA-256 del minero | `00396e9494a0cf2e6de8f39bbd99441c4443d9b8d13426689fc0a23057ac7198` |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,10 +93,10 @@ No se dispone de datos de rendimiento ni de parametros de los modelos comparable
 - Entrada fija de 736x736: no admite resoluciones dinamicas sin reescalado, lo que puede degradar la deteccion de objetos pequenos o muy grandes.
 - Sin soporte de texto ni de agentes: no es adecuado para tareas de razonamiento, dialogo o tool calling.
 - Repositorio con 0 descargas y 0 likes: no hay evidencia de uso comunitario ni de validacion externa.
-- Fecha de creacion futura (2026-11-04) en los metadatos de HuggingFace: conviene verificar la procedencia y la integridad del artefacto antes de usarlo.
+- Fecha de creacion futura (2026-11-04) en los metadatos de Hugging Face: conviene verificar la procedencia y la integridad del artefacto antes de usarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cryptolake/vehicle-hybrid-research
+- Hugging Face: https://huggingface.co/cryptolake/vehicle-hybrid-research
 - Repositorio de investigacion y procedencia: https://github.com/ManakoLabs/vehicle-weight-space-research
 - Repositorio del adaptador de serving: https://huggingface.co/manako/Detect-Vehicle-winner

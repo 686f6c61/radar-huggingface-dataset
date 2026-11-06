@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`abdukuzi45/qwen3.5-4b-amharic-extended` es un modelo publicado en HuggingFace por el usuario `abdukuzi45`, con un total de 4.620.532.736 parámetros (aproximadamente 4,62 mil millones) según los ficheros safetensors del repositorio. El pipeline declarado en la ficha de HuggingFace es `image-text-to-text`, lo que indica que se trata de un modelo multimodal que acepta imagen y texto como entrada y genera texto. La etiqueta de arquitectura incluida es `qwen3_5`, junto con `conversational`, lo que apunta a una adaptación de la familia Qwen3.5, aunque la model card no confirma esta procedencia.
+`abdukuzi45/qwen3.5-4b-amharic-extended` es un modelo publicado en Hugging Face por el usuario `abdukuzi45`, con un total de 4.620.532.736 parámetros (aproximadamente 4,62 mil millones) según los ficheros safetensors del repositorio. El pipeline declarado en la ficha de Hugging Face es `image-text-to-text`, lo que indica que se trata de un modelo multimodal que acepta imagen y texto como entrada y genera texto. La etiqueta de arquitectura incluida es `qwen3_5`, junto con `conversational`, lo que apunta a una adaptación de la familia Qwen3.5, aunque la model card no confirma esta procedencia.
 
-El nombre del repositorio sugiere una especialización en amharico ("amharic extended"), presumiblemente mediante ampliación de vocabulario o ajuste fino supervisado sobre un modelo base. Sin embargo, la model card publicada es la plantilla genérica y automática de HuggingFace, sin ninguna sección completada: no hay información sobre datos de entrenamiento, hiperparámetros, idiomas declarados, licencia ni evaluación. Todo lo que no sea el recuento de parámetros, el pipeline y las etiquetas debe considerarse no verificado.
+El nombre del repositorio sugiere una especialización en amharico ("amharic extended"), presumiblemente mediante ampliación de vocabulario o ajuste fino supervisado sobre un modelo base. Sin embargo, la model card publicada es la plantilla genérica y automática de Hugging Face, sin ninguna sección completada: no hay información sobre datos de entrenamiento, hiperparámetros, idiomas declarados, licencia ni evaluación. Todo lo que no sea el recuento de parámetros, el pipeline y las etiquetas debe considerarse no verificado.
 
 La relevancia de este modelo es limitada y fundamentalmente exploratoria: en el momento de redactar esta ficha cuenta con 0 descargas y 0 "likes", no tiene licencia declarada y no se ha publicado ningún resultado de evaluación. Se trata, por tanto, de un artefacto sin documentación que debe tratarse con cautela antes de cualquier uso en producción. Los resultados de la búsqueda web asociados a esta consulta no contienen información relacionada con el modelo (devuelven páginas de la administración tributaria francesa), por lo que no aportan ningún dato adicional.
 
@@ -29,7 +29,7 @@ La relevancia de este modelo es limitada y fundamentalmente exploratoria: en el 
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna. La model card es la plantilla automática de HuggingFace y todas las secciones relevantes (descripción, fuentes, datos de entrenamiento, procedimiento, hiperparámetros, evaluación) aparecen marcadas como "[More Information Needed]". Las únicas pistas son las etiquetas del repositorio: `qwen3_5` sugiere que el modelo deriva de la familia Qwen3.5, y `image-text-to-text` indica una topología multimodal con una torre de visión conectada a un decodificador de lenguaje. El tamaño de 4,62 B de parámetros es ligeramente superior a los 4 B que sugiere el nombre, diferencia compatible con una ampliación de la matriz de embeddings (escenario típico cuando se extiende el vocabulario para un idioma con escritura propia, como el ge'ez empleado por el amharico), pero esto es una hipótesis no confirmada.
+No hay información publicada sobre la arquitectura interna. La model card es la plantilla automática de Hugging Face y todas las secciones relevantes (descripción, fuentes, datos de entrenamiento, procedimiento, hiperparámetros, evaluación) aparecen marcadas como "[More Information Needed]". Las únicas pistas son las etiquetas del repositorio: `qwen3_5` sugiere que el modelo deriva de la familia Qwen3.5, y `image-text-to-text` indica una topología multimodal con una torre de visión conectada a un decodificador de lenguaje. El tamaño de 4,62 B de parámetros es ligeramente superior a los 4 B que sugiere el nombre, diferencia compatible con una ampliación de la matriz de embeddings (escenario típico cuando se extiende el vocabulario para un idioma con escritura propia, como el ge'ez empleado por el amharico), pero esto es una hipótesis no confirmada.
 
 Tampoco hay información sobre el proceso de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste fino supervisado, RLHF o DPO, y qué técnica se empleó para la supuesta adaptación al amharico. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. sobre el calculador de impacto medioambiental (Machine Learning Impact calculator), citado en la plantilla estándar de model cards; no es un artículo asociado al desarrollo del modelo.
 
@@ -105,7 +105,7 @@ Diferencias clave: frente a estas alternativas, el modelo analizado no declara l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-extended
+- Modelo en Hugging Face: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-extended
 - Articulo citado en las etiquetas (calculador de impacto medioambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Documentación de la librería `transformers`: https://huggingface.co/docs/transformers/index
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

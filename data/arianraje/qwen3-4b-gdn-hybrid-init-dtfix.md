@@ -76,7 +76,7 @@ La comparativa se limita a la arquitectura y el estado, ya que no hay datos de r
 
 ## Enlaces
 
-- [HuggingFace: arianraje/qwen3-4b-gdn-hybrid-init-dtfix](https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-init-dtfix)
+- [Hugging Face: arianraje/qwen3-4b-gdn-hybrid-init-dtfix](https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-init-dtfix)
 - [Checkpoint relacionado: qwen3-4b-gdn-hybrid-stage2only-control](https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage2only-control)
 - [Checkpoint relacionado: qwen3-4b-gdn-hybrid-stage2b-kd](https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage2b-kd)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

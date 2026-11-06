@@ -68,8 +68,8 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/McG-221/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-mlx-8Bit
-- Modelo base en HuggingFace: https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096
+- Hugging Face del modelo: https://huggingface.co/McG-221/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-mlx-8Bit
+- Modelo base en Hugging Face: https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Modelo relacionado de McG-221: https://huggingface.co/McG-221/gemma-4-31B-it-scotoma-2-mlx-8Bit
 - Modelo relacionado de McG-221: https://huggingface.co/McG-221/Gemma-4-Novelist-31B-mlx-8Bit

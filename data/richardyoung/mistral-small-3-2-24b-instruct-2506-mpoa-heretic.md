@@ -115,7 +115,7 @@ No se dispone de datos de otros modelos de 24B comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-MPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-MPOA-heretic
 - Modelo base (unsloth): https://huggingface.co/unsloth/Mistral-Small-3.2-24B-Instruct-2506
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - Mistral-Small-3.1-24B-Base-2503: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503

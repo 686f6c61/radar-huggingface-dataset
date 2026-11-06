@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `415Supreeya/nlp-lab5-8-qa` es un checkpoint publicado en HuggingFace por el usuario 415Supreeya, aparentemente como resultado de una practica de laboratorio de procesamiento de lenguaje natural (el identificador "nlp-lab5-8-qa" sugiere un ejercicio academico de question answering). Esta construido sobre la arquitectura CamemBERT, un modelo transformer encoder-only derivado de RoBERTa y preentrenado especificamente para frances por el equipo de Inria, lo que lo situa en la categoria de modelos de comprension del lenguaje y no de generacion.
+El modelo `415Supreeya/nlp-lab5-8-qa` es un checkpoint publicado en Hugging Face por el usuario 415Supreeya, aparentemente como resultado de una practica de laboratorio de procesamiento de lenguaje natural (el identificador "nlp-lab5-8-qa" sugiere un ejercicio academico de question answering). Esta construido sobre la arquitectura CamemBERT, un modelo transformer encoder-only derivado de RoBERTa y preentrenado especificamente para frances por el equipo de Inria, lo que lo situa en la categoria de modelos de comprension del lenguaje y no de generacion.
 
 Con 104.655.362 parametros (aproximadamente 105 millones), se trata de un modelo de tamano base, adecuado para tareas extractivas como question answering sobre pasajes de texto, clasificacion o reconocimiento de entidades. Su reducido tamano permite ejecutarlo en hardware modesto, incluso en CPU, aunque su utilidad practica depende enteramente del fine-tuning recibido, del que no se ofrece documentacion en la informacion disponible.
 
@@ -44,7 +44,7 @@ No se documenta si se aplicaron tecnicas adicionales como entrenamiento con pare
 - Clasificacion de textos cortos: reutilizando el encoder para tareas de analisis de sentimiento o categorizacion, siempre que se haga un fine-tuning adicional, ya que el checkpoint actual esta orientado a QA.
 - Extraccion de entidades o spans: la cabeza de QA puede adaptarse para localizar campos concretos en documentos estructurados semiestructurados (por ejemplo, extraer fechas o nombres de contratos).
 - Benchmark de referencia interno: util como linea base de bajo coste contra la que comparar modelos mayores en tareas de comprension lectora.
-- Docencia y formacion: ejemplo practico de como se publica un checkpoint fine-tuneado en HuggingFace, util en cursos de NLP para ilustrar el ciclo completo de entrenamiento y despliegue.
+- Docencia y formacion: ejemplo practico de como se publica un checkpoint fine-tuneado en Hugging Face, util en cursos de NLP para ilustrar el ciclo completo de entrenamiento y despliegue.
 
 ## Benchmarks y rendimiento
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en fp16: aproximadamente 0,21 GB para pesos, con overhead adicional.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4060, RTX 4090); tambien funciona en CPU para inferencia por lotes pequenos.
 - Cabe holgadamente en GPU consumer e incluso en entornos sin GPU.
-- Opciones de despliegue: HuggingFace Transformers con PyTorch, ONNX Runtime, o servidores de inferencia como TGI (aunque TGI esta mas orientado a modelos generativos); llama.cpp y Ollama no son aplicables al no existir pesos GGUF publicados.
+- Opciones de despliegue: Hugging Face Transformers con PyTorch, ONNX Runtime, o servidores de inferencia como TGI (aunque TGI esta mas orientado a modelos generativos); llama.cpp y Ollama no son aplicables al no existir pesos GGUF publicados.
 - Latencia y throughput estimados: no disponibles; por el tamano del modelo, se espera latencia de milisegundos por muestra en GPU y decenas de milisegundos en CPU, sin datos medidos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 415Supreeya/nlp-lab5-8-qa | 104,6M | no disponible | no disponible | no disponible | HuggingFace |
-| CamemBERT base (Inria) | ~110M | 512 tokens | Frances | MIT | HuggingFace |
-| RoBERTa base | ~125M | 512 tokens | Ingles | MIT | HuggingFace |
-| DistilBERT multilingue | ~135M | 512 tokens | Multilingue | Apache 2.0 | HuggingFace |
+| 415Supreeya/nlp-lab5-8-qa | 104,6M | no disponible | no disponible | no disponible | Hugging Face |
+| CamemBERT base (Inria) | ~110M | 512 tokens | Frances | MIT | Hugging Face |
+| RoBERTa base | ~125M | 512 tokens | Ingles | MIT | Hugging Face |
+| DistilBERT multilingue | ~135M | 512 tokens | Multilingue | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la arquitectura subyacente, ya que no hay datos de rendimiento del checkpoint. Frente a CamemBERT base, comparte arquitectura y tamano, pero carece de model card, licencia declarada y evaluacion publica. Frente a RoBERTa base, la diferencia principal es el idioma de preentrenamiento (frances frente a ingles). DistilBERT multilingue ofrece cobertura de idiomas mas amplia con licencia clara, lo que lo hace preferible para uso en produccion.
 
@@ -84,7 +84,7 @@ La comparativa se limita a la arquitectura subyacente, ya que no hay datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/415Supreeya/nlp-lab5-8-qa
+- Hugging Face: https://huggingface.co/415Supreeya/nlp-lab5-8-qa
 - CamemBERT (modelo base): https://huggingface.co/camembert/camembert-base
 - Paper de CamemBERT: https://arxiv.org/abs/1911.03894
 - Repositorio de CamemBERT en GitHub: https://github.com/facebookresearch/fairseq/tree/main/examples/camembert

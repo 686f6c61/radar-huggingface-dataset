@@ -97,7 +97,7 @@ No se dispone de benchmarks comparativos entre estas variantes. La principal dif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de orcarouter (análisis y guía): https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
 - Guía de ejecución local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

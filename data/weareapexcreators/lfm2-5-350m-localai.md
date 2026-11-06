@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El b
 | LFM2.5-350M (Liquid AI) | 354M | no disponible | MIT | safetensors, GGUF | Modelo híbrido, optimizado para edge |
 | LFM2-350M (Liquid AI) | 354M | no disponible | MIT | safetensors | Versión anterior, pre-entrenado con 10T tokens |
 | Qwen2.5-0.5B (Alibaba) | 494M | 32K | Apache 2.0 | safetensors, GGUF | Transformer denso, buen multilingüismo |
-| SmolLM2-360M (HuggingFace) | 360M | 2K | Apache 2.0 | safetensors, GGUF | Optimizado para dispositivos móviles |
+| SmolLM2-360M (Hugging Face) | 360M | 2K | Apache 2.0 | safetensors, GGUF | Optimizado para dispositivos móviles |
 
 La comparativa se basa en características generales, ya que no hay benchmarks públicos que permitan una evaluación directa. LFM2.5-350M destaca por su arquitectura híbrida y su entrenamiento con RL, mientras que Qwen2.5-0.5B ofrece un contexto más largo y SmolLM2-360M está pensado para móviles.
 
@@ -78,7 +78,7 @@ La comparativa se basa en características generales, ya que no hay benchmarks p
 
 ## Enlaces
 
-- Repositorio HuggingFace (versión GGUF): https://huggingface.co/weareapexcreators/LFM2.5-350M-LocalAI
+- Repositorio Hugging Face (versión GGUF): https://huggingface.co/weareapexcreators/LFM2.5-350M-LocalAI
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Documentación oficial de LFM2.5-350M: https://docs.liquid.ai/lfm/models/lfm25-350m
 - Blog de Liquid AI sobre LFM2.5: https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai

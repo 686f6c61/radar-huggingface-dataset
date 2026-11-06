@@ -4,7 +4,7 @@
 
 El modelo `rehan-hehe/ast-model` es un modelo de reconocimiento de emociones en música basado en el Audio Spectrogram Transformer (AST), desarrollado por el usuario rehan-hehe. El proyecto se centra en el ajuste fino de un modelo AST preentrenado sobre el conjunto de datos DEAM (Database for Emotion Analysis in Music), con el objetivo de realizar regresión sobre las dimensiones emocionales continuas de valencia (lo positiva o negativa que es una emoción) y activación (lo calmada o excitante que resulta). Este enfoque permite modelar emociones en el espacio bidimensional de valencia-activación directamente desde clips de audio.
 
-La relevancia de este modelo radica en que aplica la arquitectura de transformers a la señal de audio convirtiéndola en espectrogramas, tratando el audio como una imagen. El AST fue propuesto por Yuan Gong, Yu-An Chung y James Glass, y logra resultados de última generación en clasificación de audio. Aunque la ficha de HuggingFace es mínima, el repositorio de GitHub asociado documenta el proceso de ajuste fino para la predicción de emociones musicales. La licencia es Apache 2.0, lo que facilita su uso comercial y académico.
+La relevancia de este modelo radica en que aplica la arquitectura de transformers a la señal de audio convirtiéndola en espectrogramas, tratando el audio como una imagen. El AST fue propuesto por Yuan Gong, Yu-An Chung y James Glass, y logra resultados de última generación en clasificación de audio. Aunque la ficha de Hugging Face es mínima, el repositorio de GitHub asociado documenta el proceso de ajuste fino para la predicción de emociones musicales. La licencia es Apache 2.0, lo que facilita su uso comercial y académico.
 
 ## Especificaciones tecnicas
 

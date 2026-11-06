@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407 es un modelo de generacion de texto de 124.770.816 parametros (aproximadamente 125 M) publicado por el usuario fpadovani en HuggingFace. Se trata de un ajuste fino supervisado (SFT) del modelo fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407, realizado con la libreria TRL 0.23.0. La etiqueta gpt2 indica que la arquitectura subyacente pertenece a la familia GPT-2, un transformer decoder-only, por lo que se situa en la gama de modelos pequenos.
+jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407 es un modelo de generacion de texto de 124.770.816 parametros (aproximadamente 125 M) publicado por el usuario fpadovani en Hugging Face. Se trata de un ajuste fino supervisado (SFT) del modelo fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407, realizado con la libreria TRL 0.23.0. La etiqueta gpt2 indica que la arquitectura subyacente pertenece a la familia GPT-2, un transformer decoder-only, por lo que se situa en la gama de modelos pequenos.
 
 El identificador del modelo sugiere que forma parte de un experimento academico: el prefijo "jpn" apunta a entrenamiento sobre japones, "100mb" a un corpus de unos 100 MB, y "wc-zipf-newlex" a un estudio sobre tokenizacion, conteo de palabras (word count), distribucion de Zipf y lexicon. El run de entrenamiento esta alojado en el proyecto "white_cotterell" de la University of Groningen. Estas inferencias proceden de la nomenclatura y del enlace de Weights & Biases, no de documentacion explicita del autor.
 
@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | GPT-2 small | 124 M | 1024 tokens | MIT modificada | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
-| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, con checkpoints intermedios publicados |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, con benchmarks publicados |
+| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, con checkpoints intermedios publicados |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, con benchmarks publicados |
 
 La diferencia principal frente a estas alternativas no esta en el rendimiento, del que no hay datos, sino en la trazabilidad: Pythia y SmolLM publican recetas de entrenamiento, datasets y evaluaciones, mientras que este modelo solo documenta el pipeline de SFT y el enlace al run de Weights & Biases. GPT-2 small sigue siendo la referencia de facto en esta franja de tamano.
 
@@ -95,7 +95,7 @@ La diferencia principal frente a estas alternativas no esta en el rendimiento, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/30ic144d
 - Repositorio de TRL: https://github.com/huggingface/trl

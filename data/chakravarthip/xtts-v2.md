@@ -4,7 +4,7 @@
 
 XTTS-v2 es un modelo de síntesis de voz (text-to-speech) multilingüe desarrollado por Coqui que permite clonar una voz a partir de un único clip de audio de unos 6 segundos, sin necesidad de horas de datos de entrenamiento por hablante. La versión 2 añade húngaro y coreano respecto a XTTS-v1 (hasta 17 idiomas), mejora el acondicionamiento de hablante, permite usar múltiples referencias de voz e interpolar entre hablantes, y ofrece mejor prosodia y calidad de audio general. Genera audio a 24 kHz y soporta clonación entre idiomas, es decir, usar una voz de referencia en un idioma para sintetizar texto en otro.
 
-La ficha que se documenta aquí corresponde al repositorio Chakravarthip/XTTS-v2, una copia del modelo base coqui/XTTS-v2 publicada en HuggingFace bajo la librería `coqui` y la etiqueta de pipeline `text-to-speech`. El repositorio ocupa 2,1 GB y no registra descargas ni "likes" en el momento de la consulta, por lo que debe tratarse como una réplica no verificada del modelo original más que como una versión oficial.
+La ficha que se documenta aquí corresponde al repositorio Chakravarthip/XTTS-v2, una copia del modelo base coqui/XTTS-v2 publicada en Hugging Face bajo la librería `coqui` y la etiqueta de pipeline `text-to-speech`. El repositorio ocupa 2,1 GB y no registra descargas ni "likes" en el momento de la consulta, por lo que debe tratarse como una réplica no verificada del modelo original más que como una versión oficial.
 
 Su relevancia actual radica en que sigue siendo una de las referencias abiertas para clonación de voz zero-shot multilingüe con pocos segundos de referencia, un caso de uso con demanda creciente en localización de contenido, accesibilidad y generación de datos sintéticos. La contrapartida es su licencia Coqui Public Model License, que condiciona el uso comercial, y los riesgos éticos y legales asociados a la clonación de voz.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Idiomas | Clonación de voz | Referencias múltiples | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chakravarthip/XTTS-v2 (este repositorio) | 17 | Sí, clip de ~6 s | Sí | Coqui Public Model License | HuggingFace, réplica del modelo base con 0 descargas |
-| coqui/XTTS-v2 (modelo base) | 17 | Sí, clip de ~6 s | Sí | Coqui Public Model License | HuggingFace, repositorio oficial de referencia |
-| XTTS-v1 | 15 (sin húngaro ni coreano) | Sí | No documentado en la información disponible | Coqui Public Model License | HuggingFace |
+| Chakravarthip/XTTS-v2 (este repositorio) | 17 | Sí, clip de ~6 s | Sí | Coqui Public Model License | Hugging Face, réplica del modelo base con 0 descargas |
+| coqui/XTTS-v2 (modelo base) | 17 | Sí, clip de ~6 s | Sí | Coqui Public Model License | Hugging Face, repositorio oficial de referencia |
+| XTTS-v1 | 15 (sin húngaro ni coreano) | Sí | No documentado en la información disponible | Coqui Public Model License | Hugging Face |
 | Otros sistemas TTS zero-shot (Bark, Tortoise, VALL-E y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada únicamente permite comparar con garantías frente a XTTS-v1 y frente al modelo base coqui/XTTS-v2. Para el resto de alternativas no se dispone de datos verificables en esta búsqueda.
@@ -91,7 +91,7 @@ La información proporcionada únicamente permite comparar con garantías frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chakravarthip/XTTS-v2
+- Modelo en Hugging Face: https://huggingface.co/Chakravarthip/XTTS-v2
 - Modelo base oficial: https://huggingface.co/coqui/XTTS-v2
 - Paper: https://arxiv.org/abs/2406.04904
 - Código fuente (Coqui TTS mantenido por idiap): https://github.com/idiap/coqui-ai-TTS

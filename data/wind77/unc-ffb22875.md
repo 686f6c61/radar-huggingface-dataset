@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `wind77/unc-ffb22875` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) de aproximadamente 35 100 millones de parámetros, desarrollado por el usuario wind77 (también conocido como Fist King), un creador de la comunidad de HuggingFace especializado en modelos sin censura. El modelo se presenta como un fine-tune del modelo base `unconst/Affine-5czsc2fc98-r252-merged`, que a su vez parece ser un merge de modelos previos. Los metadatos indican que está basado en la familia Qwen3.5 MoE, con capacidades de procesamiento de imagen a texto (image-text-to-text), un modo de razonamiento denominado "reason-v4" y entrenamiento mediante offline DPO (Direct Preference Optimization). Su nombre "unc" sugiere un enfoque de generación sin restricciones de contenido, lo que lo hace relevante para aplicaciones donde se requiere libertad creativa o exploración de temas sensibles, aunque esto conlleva riesgos éticos y de seguridad.
+El modelo `wind77/unc-ffb22875` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) de aproximadamente 35 100 millones de parámetros, desarrollado por el usuario wind77 (también conocido como Fist King), un creador de la comunidad de Hugging Face especializado en modelos sin censura. El modelo se presenta como un fine-tune del modelo base `unconst/Affine-5czsc2fc98-r252-merged`, que a su vez parece ser un merge de modelos previos. Los metadatos indican que está basado en la familia Qwen3.5 MoE, con capacidades de procesamiento de imagen a texto (image-text-to-text), un modo de razonamiento denominado "reason-v4" y entrenamiento mediante offline DPO (Direct Preference Optimization). Su nombre "unc" sugiere un enfoque de generación sin restricciones de contenido, lo que lo hace relevante para aplicaciones donde se requiere libertad creativa o exploración de temas sensibles, aunque esto conlleva riesgos éticos y de seguridad.
 
-El modelo está alojado en HuggingFace con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Con 35 100 millones de parámetros y un tamaño de repositorio de 70,2 GB (probablemente en precisión FP16), se posiciona como un modelo de gran escala, aunque su arquitectura MoE podría implicar que solo una fracción de los parámetros se activa durante la inferencia, lo que mejoraría la eficiencia computacional. La licencia es Apache 2.0, permitiendo uso comercial y modificaciones, pero el acceso gated añade una capa de control por parte del autor. No se dispone de información pública sobre el conjunto de datos de entrenamiento, el contexto máximo soportado ni los idiomas cubiertos, lo que limita una evaluación completa.
+El modelo está alojado en Hugging Face con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Con 35 100 millones de parámetros y un tamaño de repositorio de 70,2 GB (probablemente en precisión FP16), se posiciona como un modelo de gran escala, aunque su arquitectura MoE podría implicar que solo una fracción de los parámetros se activa durante la inferencia, lo que mejoraría la eficiencia computacional. La licencia es Apache 2.0, permitiendo uso comercial y modificaciones, pero el acceso gated añade una capa de control por parte del autor. No se dispone de información pública sobre el conjunto de datos de entrenamiento, el contexto máximo soportado ni los idiomas cubiertos, lo que limita una evaluación completa.
 
 ## Especificaciones técnicas
 
@@ -64,13 +64,13 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 - Sesgos y contenido ofensivo: al ser un modelo sin censura, puede generar contenido racista, sexista, violento o ilegal. Esto lo hace inadecuado para aplicaciones públicas sin moderación humana y plantea riesgos legales y éticos.
 - Riesgo de alucinación: como cualquier LLM, puede inventar hechos, citas o referencias, especialmente en temas especializados. La falta de evaluación en benchmarks aumenta la incertidumbre sobre su fiabilidad.
 - Limitaciones de contexto e idioma: se desconoce la longitud máxima de contexto y los idiomas soportados, lo que impide garantizar su uso en tareas que requieran ventanas largas o multilingüismo.
-- Acceso restringido: aunque la licencia es Apache 2.0, el acceso gated en HuggingFace implica que el autor puede rechazar solicitudes de descarga, limitando su disponibilidad real.
+- Acceso restringido: aunque la licencia es Apache 2.0, el acceso gated en Hugging Face implica que el autor puede rechazar solicitudes de descarga, limitando su disponibilidad real.
 - Documentación insuficiente: no hay papers, guías técnicas ni ejemplos de uso publicados, lo que dificulta la integración y el ajuste fino.
 - Sin garantías de producción: al no existir benchmarks ni evaluaciones independientes, no se recomienda su uso en sistemas críticos sin una validación exhaustiva previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wind77/unc-ffb22875
+- Modelo en Hugging Face: https://huggingface.co/wind77/unc-ffb22875
 - Perfil del autor: https://huggingface.co/wind77
 - Lista de modelos del autor: https://huggingface.co/wind77/models
 

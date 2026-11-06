@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny British accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario Dan13lC y publicado en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles britanico, entrenado sobre el dataset `british_english`. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37,7 millones de parametros totales, y hereda la licencia Apache 2.0 del modelo base.
+Whisper tiny British accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario Dan13lC y publicado en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles britanico, entrenado sobre el dataset `british_english`. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37,7 millones de parametros totales, y hereda la licencia Apache 2.0 del modelo base.
 
 El objetivo del ajuste es mejorar la transcripcion de audio con acento britanico, un dominio donde el whisper-tiny original (entrenado mayoritariamente con datos multilingues y acentos estadounidenses) puede presentar un rendimiento inferior. El autor reporta un WER de 11,06 % sobre el split de test del dataset British English, con una perdida de validacion de 0,2755 tras 2000 pasos de entrenamiento.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / audio | WER (British English) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dan13lC/whisper-tiny_to_british_accent_1 | 37,7 M | ventanas de 30 s | 11,06 (declarado, no verificado) | apache-2.0 | HuggingFace, 0 descargas |
-| openai/whisper-tiny | ~39 M | ventanas de 30 s | no disponible en esta informacion | apache-2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-base | ~74 M | ventanas de 30 s | no disponible en esta informacion | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | ventanas de 30 s | no disponible en esta informacion | apache-2.0 | HuggingFace |
+| Dan13lC/whisper-tiny_to_british_accent_1 | 37,7 M | ventanas de 30 s | 11,06 (declarado, no verificado) | apache-2.0 | Hugging Face, 0 descargas |
+| openai/whisper-tiny | ~39 M | ventanas de 30 s | no disponible en esta informacion | apache-2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-base | ~74 M | ventanas de 30 s | no disponible en esta informacion | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | ventanas de 30 s | no disponible en esta informacion | apache-2.0 | Hugging Face |
 
 No se dispone de datos de WER comparables para los modelos base sobre el mismo dataset `british_english`, por lo que no es posible cuantificar la mejora del ajuste frente al whisper-tiny original.
 
@@ -95,7 +95,7 @@ No se dispone de datos de WER comparables para los modelos base sobre el mismo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dan13lC/whisper-tiny_to_british_accent_1
+- Modelo en Hugging Face: https://huggingface.co/Dan13lC/whisper-tiny_to_british_accent_1
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (referencia del modelo base): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

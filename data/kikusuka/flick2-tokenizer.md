@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`kikusuka/flick2-tokenizer` es un repositorio publicado en HuggingFace Hub por el usuario `kikusuka`, etiquetado con la librería `transformers`. Por su identificador, todo apunta a que se trata de un artefacto de tokenización (vocabulario y reglas de segmentación) asociado a un proyecto denominado "flick2", y no de un modelo de lenguaje completo con pesos entrenados. No hay confirmación oficial de esta interpretación en la información disponible.
+`kikusuka/flick2-tokenizer` es un repositorio publicado en Hugging Face Hub por el usuario `kikusuka`, etiquetado con la librería `transformers`. Por su identificador, todo apunta a que se trata de un artefacto de tokenización (vocabulario y reglas de segmentación) asociado a un proyecto denominado "flick2", y no de un modelo de lenguaje completo con pesos entrenados. No hay confirmación oficial de esta interpretación en la información disponible.
 
-El repositorio presenta cero descargas y cero likes en el momento de la consulta, y su model card es la plantilla automática que HuggingFace genera al crear un repositorio nuevo: todas las secciones relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen con el marcador `[More Information Needed]`. No se dispone, por tanto, de arquitectura, número de parámetros, longitud de contexto, composición del dataset ni resultados de evaluación.
+El repositorio presenta cero descargas y cero likes en el momento de la consulta, y su model card es la plantilla automática que Hugging Face genera al crear un repositorio nuevo: todas las secciones relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen con el marcador `[More Information Needed]`. No se dispone, por tanto, de arquitectura, número de parámetros, longitud de contexto, composición del dataset ni resultados de evaluación.
 
 La relevancia actual del artefacto es muy limitada desde el punto de vista de la evaluación técnica: sin model card sustantiva, sin licencia declarada y sin métricas publicadas, no es posible recomendarlo para uso en producción ni compararlo con alternativas. Esta ficha se limita a documentar lo que sí es verificable en el repositorio y a marcar explícitamente como "no disponible" todo aquello que el autor no ha especificado. Se recomienda contactar con el autor antes de considerar cualquier integración.
 
@@ -27,13 +27,13 @@ Datos de metadatos verificables: identificador `kikusuka/flick2-tokenizer`, auto
 
 No hay información publicada sobre la arquitectura. La model card no describe ni el tipo de modelo, ni la arquitectura (transformer, MoE, SSM o híbrida), ni el objetivo de entrenamiento. Tampoco se especifica si existe algún tipo de ajuste posterior al preentrenamiento (RLHF, DPO, SFT) ni ninguna innovación técnica asociada.
 
-Respecto a los datos de entrenamiento, la sección correspondiente de la model card contiene únicamente `[More Information Needed]`: se desconoce el número de tokens, la composición del corpus, los filtros aplicados, el régimen de precisión (fp32, fp16, bf16, fp8) y el consumo de cómputo. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo que introduce la calculadora de impacto medioambiental de Machine Learning citada en la propia plantilla de HuggingFace; no es una referencia al artículo fundacional del modelo y no aporta información técnica sobre él.
+Respecto a los datos de entrenamiento, la sección correspondiente de la model card contiene únicamente `[More Information Needed]`: se desconoce el número de tokens, la composición del corpus, los filtros aplicados, el régimen de precisión (fp32, fp16, bf16, fp8) y el consumo de cómputo. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo que introduce la calculadora de impacto medioambiental de Machine Learning citada en la propia plantilla de Hugging Face; no es una referencia al artículo fundacional del modelo y no aporta información técnica sobre él.
 
 ## Capacidades
 
 No se ha documentado ninguna capacidad en la informacion disponible. A partir de los metadatos solo puede afirmarse lo siguiente, siempre con carácter provisional:
 
-- El repositorio declara compatibilidad con la librería `transformers` y con `endpoints_compatible`, lo que sugiere que podría cargarse mediante las herramientas estándar del ecosistema HuggingFace y, potencialmente, desplegarse en Inference Endpoints.
+- El repositorio declara compatibilidad con la librería `transformers` y con `endpoints_compatible`, lo que sugiere que podría cargarse mediante las herramientas estándar del ecosistema Hugging Face y, potencialmente, desplegarse en Inference Endpoints.
 - Si el artefacto es efectivamente un tokenizer, su función sería la segmentación de texto en tokens y la conversión a identificadores del vocabulario, no la generación de texto.
 - Generación de texto, razonamiento, código, matemáticas, visión, tool calling, capacidades de agente, multilingüismo y modos de razonamiento explícito: no disponible, sin evidencia de que existan.
 
@@ -44,7 +44,7 @@ Los siguientes escenarios son hipotéticos y quedan condicionados a la verificac
 - Preprocesamiento de texto en un pipeline de NLP: si el repositorio contiene un tokenizer operativo, podría emplearse para convertir texto crudo en secuencias de identificadores antes de alimentar un modelo distinto. Requiere confirmar el vocabulario y los ficheros incluidos.
 - Reproducción de un experimento académico: serviría para replicar exactamente la tokenización de un trabajo previo asociado al proyecto "flick2", siempre que el autor documente a qué modelo acompaña. Hoy no hay tal documentación.
 - Auditoría de tokenización: analizar la segmentación de términos en distintos idiomas para detectar sesgos de vocabulario (por ejemplo, mayor fragmentación en lenguas no inglesas). Es un uso viable en principio, pero exige acceso a los ficheros y a la licencia.
-- Integración en un endpoint de HuggingFace: la etiqueta `endpoints_compatible` sugiere que podría desplegarse en Inference Endpoints, pero sin pipeline declarado ni ejemplo de código no puede validarse el contrato de entrada y salida.
+- Integración en un endpoint de Hugging Face: la etiqueta `endpoints_compatible` sugiere que podría desplegarse en Inference Endpoints, pero sin pipeline declarado ni ejemplo de código no puede validarse el contrato de entrada y salida.
 - Comparación de vocabularios entre proyectos: si el vocabulario está expuesto, podría compararse con tokenizers de referencia (por ejemplo, los de Llama o GPT) para medir cobertura y eficiencia de compresión. No hay datos publicados que permitan hacerlo sin descargar el artefacto.
 - Docencia y experimentación con la librería `transformers`: podría usarse como ejemplo mínimo de carga de un tokenizer desde el Hub en un entorno de aprendizaje, asumiendo que el repositorio esté completo y no corrupto.
 
@@ -78,7 +78,7 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kikusuka/flick2-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/kikusuka/flick2-tokenizer
 - Referencia del identificador arXiv presente en las etiquetas (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de Machine Learning citada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de código y demo: no disponibles. La búsqueda web realizada no devolvió ninguna fuente relacionada con el modelo.

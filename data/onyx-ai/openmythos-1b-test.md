@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenMythos-1B es un modelo de lenguaje de aproximadamente 1.100 millones de parametros publicado por el usuario onyx-ai en HuggingFace bajo el identificador `onyx-ai/openmythos-1b-test`. Segun su propia model card, deriva del repositorio de GitHub `kyegomez/OpenMythos` y se distribuye como una version de 1B "sin entrenamiento": el autor indica explicitamente que no se ha realizado ningun proceso de entrenamiento sobre los pesos. Esto lo convierte en un artefacto de infraestructura y prueba (un esqueleto de arquitectura con pesos inicializados), no en un modelo utilizable para tareas reales de generacion.
+OpenMythos-1B es un modelo de lenguaje de aproximadamente 1.100 millones de parametros publicado por el usuario onyx-ai en Hugging Face bajo el identificador `onyx-ai/openmythos-1b-test`. Segun su propia model card, deriva del repositorio de GitHub `kyegomez/OpenMythos` y se distribuye como una version de 1B "sin entrenamiento": el autor indica explicitamente que no se ha realizado ningun proceso de entrenamiento sobre los pesos. Esto lo convierte en un artefacto de infraestructura y prueba (un esqueleto de arquitectura con pesos inicializados), no en un modelo utilizable para tareas reales de generacion.
 
 El modelo declara una longitud de contexto de 512 tokens y el autor anuncia futuras versiones, incluida una de 3B y una variante de 1B con contexto de 131.000 tokens. La licencia es MIT y el repositorio ocupa 4,4 GB, lo que sugiere pesos almacenados en precision de 32 bits. No se especifican idiomas soportados, pipeline de tarea ni detalles de arquitectura mas alla de la referencia al repositorio original.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - VRAM estimada para inferencia: aproximadamente 4,5 GB en fp32 (coherente con el repositorio de 4,4 GB); unos 2,2 GB en fp16/bf16; alrededor de 1,1 GB en int8 y 0,6 GB en int4.
 - GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM. Una RTX 3060, RTX 4060 Ti, RTX 4090 o superiores son mas que suficientes. Tambien cabe en GPU de datacenter como A100 o H100, aunque sobredimensionadas para este tamano.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en practicamente cualquier GPU consumer moderna e incluso en CPU.
-- Opciones de despliegue: Transformers (HuggingFace) es la via directa con safetensors. vLLM y TGI son viables si la arquitectura es compatible con sus kernels. llama.cpp y Ollama requieren convertir previamente los pesos a GGUF. Ejecucion en CPU posible mediante llama.cpp o PyTorch con precision reducida.
+- Opciones de despliegue: Transformers (Hugging Face) es la via directa con safetensors. vLLM y TGI son viables si la arquitectura es compatible con sus kernels. llama.cpp y Ollama requieren convertir previamente los pesos a GGUF. Ejecucion en CPU posible mediante llama.cpp o PyTorch con precision reducida.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -89,6 +89,6 @@ La diferencia funcional es total: los tres modelos alternativos estan entrenados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/onyx-ai/openmythos-1b-test
+- Hugging Face: https://huggingface.co/onyx-ai/openmythos-1b-test
 - Repositorio de GitHub referenciado en la model card: https://github.com/kyegomez/OpenMythos
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada.

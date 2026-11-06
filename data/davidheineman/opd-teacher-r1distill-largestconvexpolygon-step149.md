@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd-teacher-R1Distill-LargestConvexPolygon-step149 | 1,78 B | No disponible | Ajuste RL especializado (profesor OPD) | No disponible | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | No disponible en esta ficha | Destilado de razonamiento generalista | MIT (segun el modelo base) | HuggingFace, ampliamente usado |
-| Modelos Qwen2.5 de ~1,5 B | ~1,5 B | No disponible en esta ficha | LLM generalista | Apache 2.0 (segun la familia) | HuggingFace, ampliamente usado |
-| Otros profesores OPD del mismo proyecto (`rl-data-opd-teachers-r1-distil`) | ~1,78 B | No disponible | Ajustes RL por entorno | No disponible | HuggingFace |
+| opd-teacher-R1Distill-LargestConvexPolygon-step149 | 1,78 B | No disponible | Ajuste RL especializado (profesor OPD) | No disponible | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | No disponible en esta ficha | Destilado de razonamiento generalista | MIT (segun el modelo base) | Hugging Face, ampliamente usado |
+| Modelos Qwen2.5 de ~1,5 B | ~1,5 B | No disponible en esta ficha | LLM generalista | Apache 2.0 (segun la familia) | Hugging Face, ampliamente usado |
+| Otros profesores OPD del mismo proyecto (`rl-data-opd-teachers-r1-distil`) | ~1,78 B | No disponible | Ajustes RL por entorno | No disponible | Hugging Face |
 
 La comparación cuantitativa de rendimiento no es posible: el modelo no publica benchmarks y los comparadores pertenecen a categorías distintas (generalista frente a profesor especializado de un único entorno).
 
@@ -92,7 +92,7 @@ La comparación cuantitativa de rendimiento no es posible: el modelo no publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-LargestConvexPolygon-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-LargestConvexPolygon-step149
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Proyecto de entrenamiento citado en la model card: `david-heineman/rl-data-opd-teachers-r1-distil` (referencia textual; no se ha verificado su URL pública)
 - Grupo de entrenamiento citado: `opd-teachers-r1-nofilter16-20260929-231458`

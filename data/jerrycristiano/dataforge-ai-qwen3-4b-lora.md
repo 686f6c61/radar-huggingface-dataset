@@ -43,7 +43,7 @@ Los datos de entrenamiento consisten en mas de 500 pares de pregunta/respuesta s
 
 ## Casos de uso
 
-- Estudio de caso docente de fine-tuning: replicar el pipeline completo (dataset de Q&A, QLoRA, Unsloth, publicacion en HuggingFace) como ejercicio practico en cursos o talleres sobre ajuste fino de LLM.
+- Estudio de caso docente de fine-tuning: replicar el pipeline completo (dataset de Q&A, QLoRA, Unsloth, publicacion en Hugging Face) como ejercicio practico en cursos o talleres sobre ajuste fino de LLM.
 - Asistente interno de documentacion para una empresa ficticia o real: servir como FAQ conversacional sobre catalogos de producto cerrados, con la salvedad de que necesitaria reentrenamiento con datos reales.
 - Prototipo de asistente de ingenieria de datos: el dataset cubre terminologia del dominio, por lo que puede usarse como base para validar interfaces conversacionales antes de invertir en un corpus mayor.
 - Evaluacion comparativa de metodos de adaptacion: dado que es un LoRA puro de rango 16, resulta util para medir como se comporta el ajuste ligero frente a un ajuste completo sobre el mismo modelo base.
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DataForge AI (este modelo) | Adaptador LoRA sobre base de ~4B | 2.048 tokens en el ejemplo de la model card | Adaptador PEFT | No disponible | HuggingFace, repositorio de 0,1 GB |
-| unsloth/Qwen3-4B (modelo base) | ~4B | No declarado en la informacion proporcionada | Modelo denso completo | No disponible en la informacion proporcionada | HuggingFace |
-| Otros adaptadores LoRA de dominio sobre modelos de 3-4B | ~3-4B en el base | Variable segun base | Adaptador PEFT | Variable | HuggingFace |
+| DataForge AI (este modelo) | Adaptador LoRA sobre base de ~4B | 2.048 tokens en el ejemplo de la model card | Adaptador PEFT | No disponible | Hugging Face, repositorio de 0,1 GB |
+| unsloth/Qwen3-4B (modelo base) | ~4B | No declarado en la informacion proporcionada | Modelo denso completo | No disponible en la informacion proporcionada | Hugging Face |
+| Otros adaptadores LoRA de dominio sobre modelos de 3-4B | ~3-4B en el base | Variable segun base | Adaptador PEFT | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento de este adaptador ni de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de este adaptador ni de alternativas compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jerrycristiano/dataforge-ai-qwen3-4b-lora
+- Modelo en Hugging Face: https://huggingface.co/Jerrycristiano/dataforge-ai-qwen3-4b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jerrycristiano/dataforge-ai-qna
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B
 - No se han encontrado otros enlaces relevantes (papers, blogs o repos) en la busqueda web realizada; los resultados devueltos corresponden a foros sin relacion con el modelo.

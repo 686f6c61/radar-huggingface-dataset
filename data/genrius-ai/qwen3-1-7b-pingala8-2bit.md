@@ -33,7 +33,7 @@ Los Hessianos de capa usados para la cuantización se calculan a partir de 256 s
 - Compresión extrema a 2 bits: fichero GGUF de 0,69 GB, adecuado para entornos con VRAM muy limitada.
 - Perplejidad en WikiText-2 de 28,23, frente a 47,96 de IQ2_XXS de llama.cpp al mismo tamaño de fichero.
 - Ejecución local acelerada por CUDA en GPUs NVIDIA RTX 30/40/50 mediante el runtime parcheado.
-- Demo interactiva en navegador disponible en HuggingFace Spaces.
+- Demo interactiva en navegador disponible en Hugging Face Spaces.
 - No hay información sobre soporte de tool calling, agentes, capacidades visuales o de audio en la documentación de esta cuantización.
 
 ## Casos de uso
@@ -103,9 +103,9 @@ En resumen: a igualdad de bytes, Pingala-8 supera claramente a IQ2_XXS, pero que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Genrius-AI/Qwen3-1.7B-Pingala8-2bit
+- Modelo en Hugging Face: https://huggingface.co/Genrius-AI/Qwen3-1.7B-Pingala8-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de código y parches del runtime: https://github.com/Genrius-AI/pingala8-llm
 - Release one-click v2.5 del runtime: https://github.com/Genrius-AI/pingala8-llm/releases/tag/v2.5
-- Demo en navegador (HuggingFace Spaces): https://huggingface.co/spaces/harshit-genrius/pingala8-demo
+- Demo en navegador (Hugging Face Spaces): https://huggingface.co/spaces/harshit-genrius/pingala8-demo
 - Paper del método (preprint v2.4, DOI): https://doi.org/10.5281/zenodo.23481757

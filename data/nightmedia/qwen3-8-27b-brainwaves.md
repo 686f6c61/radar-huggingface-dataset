@@ -4,7 +4,7 @@
 
 El modelo **nightmedia/Qwen3.8-27B-Brainwaves** es un merge experimental de 27 700 millones de parámetros desarrollado por el usuario nightmedia, construido a partir de varios modelos base de la familia Qwen3.6 y Qwen3.8 de Alibaba. Se trata de un modelo denso de tipo transformer multimodal (entrada de imagen y texto, salida de texto) orientado a tareas de razonamiento avanzado, escritura creativa, roleplaying, generación de código y uso como agente. Su principal atractivo es combinar las capacidades de razonamiento largo (long chain-of-thought) y contexto amplio de los modelos Qwen recientes con un ajuste fino orientado a la creatividad y la ficción.
 
-El modelo se distribuye bajo licencia Apache 2.0, aunque su acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones. Está disponible en formato safetensors (bf16) y también existe una variante cuantizada en MLX (mxfp8). Al ser un merge de varios modelos, no se han publicado benchmarks específicos para esta versión, pero hereda las capacidades generales de los modelos base Qwen3.8-27B, que destacan en tareas de programación, automatización de oficina y razonamiento agéntico.
+El modelo se distribuye bajo licencia Apache 2.0, aunque su acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones. Está disponible en formato safetensors (bf16) y también existe una variante cuantizada en MLX (mxfp8). Al ser un merge de varios modelos, no se han publicado benchmarks específicos para esta versión, pero hereda las capacidades generales de los modelos base Qwen3.8-27B, que destacan en tareas de programación, automatización de oficina y razonamiento agéntico.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ La comparativa se limita a los modelos base de Qwen por falta de datos de otros 
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es gated en HuggingFace; es necesario aceptar condiciones antes de descargarlo.
+- **Acceso restringido**: el modelo es gated en Hugging Face; es necesario aceptar condiciones antes de descargarlo.
 - **Naturaleza experimental**: al ser un merge creado por un usuario independiente, no tiene el respaldo ni el control de calidad de un modelo oficial de Alibaba.
 - **Riesgo de alucinacion**: como cualquier modelo de lenguaje, puede generar informacion falsa o inventada, especialmente en tareas de razonamiento largo.
 - **Sesgos**: no se han documentado sesgos especificos, pero el modelo puede reflejar los sesgos de sus modelos base y de los datos de entrenamiento.
@@ -81,7 +81,7 @@ La comparativa se limita a los modelos base de Qwen por falta de datos de otros 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves)
+- [Modelo en Hugging Face](https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves)
 - [Variante MLX (mxfp8)](https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-mxfp8-mlx)
 - [Repositorio oficial de Qwen3.8-27B (Alibaba)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Guia de Qwen3.8-27B (2026)](https://lovableapp.org/blog/qwen3-8-27b)

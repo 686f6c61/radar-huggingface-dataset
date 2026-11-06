@@ -93,10 +93,10 @@ Los datos de esta tabla para los modelos alternativos provienen de conocimiento 
 
 | Modelo | Parametros totales / activos | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-RL-UNCENSORED (este) | 524 B medidos en safetensors / 42 B activos declarados | ~1 M | Si (vision, audio, video) | MIT | HuggingFace |
-| XiaomiMiMo/MiMo-V2.6-Pro-RL (base) | 1,02 T declarados / 42 B activos | ~1 M | Si | no disponible en esta busqueda | HuggingFace |
-| DeepSeek-V3 / R1 (familia) | 671 B / 37 B activos | 128 K | No (texto) | MIT | HuggingFace |
-| Llama 4 Maverick | 400 B / 17 B activos | ~1 M | Si | Licencia comunitaria de Llama | Meta / HuggingFace |
+| MiMo-V2.6-Pro-RL-UNCENSORED (este) | 524 B medidos en safetensors / 42 B activos declarados | ~1 M | Si (vision, audio, video) | MIT | Hugging Face |
+| XiaomiMiMo/MiMo-V2.6-Pro-RL (base) | 1,02 T declarados / 42 B activos | ~1 M | Si | no disponible en esta busqueda | Hugging Face |
+| DeepSeek-V3 / R1 (familia) | 671 B / 37 B activos | 128 K | No (texto) | MIT | Hugging Face |
+| Llama 4 Maverick | 400 B / 17 B activos | ~1 M | Si | Licencia comunitaria de Llama | Meta / Hugging Face |
 
 No se dispone de comparativas de benchmark entre estos modelos dentro de la informacion proporcionada.
 
@@ -116,7 +116,7 @@ No se dispone de comparativas de benchmark entre estos modelos dentro de la info
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/dealignai/MiMo-V2.6-Pro-RL-UNCENSORED
+- Pagina del modelo en Hugging Face: https://huggingface.co/dealignai/MiMo-V2.6-Pro-RL-UNCENSORED
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Perfil del autor en X: https://x.com/dealignai
 - Sitio del autor: https://dealign.ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Affine-5czsc2fc98-r509-sbsv5-offline-dpo-hialpha-hirank-lobeta-midctx-ultraextrasteps-merged es un checkpoint experimental publicado por el usuario unconst en HuggingFace. Se trata de un modelo de texto y visión (image-text-to-text) basado en una arquitectura MoE derivada de Qwen3.5, con un total de 35.107.181.936 parámetros (35,1B). El nombre del repositorio indica que es un merge de LoRA sobre el modelo base kevin954/Affine-5dfqbbh8ev-sft, seguido de un proceso de optimización con DPO (offline-dpo) con hiperparámetros específicos (alpha alto, rank alto, beta bajo, contexto medio y pasos extra de entrenamiento).
+Affine-5czsc2fc98-r509-sbsv5-offline-dpo-hialpha-hirank-lobeta-midctx-ultraextrasteps-merged es un checkpoint experimental publicado por el usuario unconst en Hugging Face. Se trata de un modelo de texto y visión (image-text-to-text) basado en una arquitectura MoE derivada de Qwen3.5, con un total de 35.107.181.936 parámetros (35,1B). El nombre del repositorio indica que es un merge de LoRA sobre el modelo base kevin954/Affine-5dfqbbh8ev-sft, seguido de un proceso de optimización con DPO (offline-dpo) con hiperparámetros específicos (alpha alto, rank alto, beta bajo, contexto medio y pasos extra de entrenamiento).
 
 La model card es extremadamente escueta: se limita a describirlo como un "H1 merged checkpoint salvage" (salvamento de checkpoint fusionado) y aclara que es un "Private TTL insurance; not a submission until Stage-5 gate clears", es decir, un checkpoint intermedio de un proceso de entrenamiento en curso, no una versión final destinada a producción. No se proporciona información sobre licencia, idiomas, contexto, benchmarks ni capacidades detalladas. A pesar de tener cero descargas y cero likes, el modelo está listado como compatible con endpoints de inferencia (endpoints_compatible) y aparece en plataformas como FriendliAI para despliegue.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r509-sbsv5-offline-dpo-hialpha-hirank-lobeta-midctx-ultraextrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r509-sbsv5-offline-dpo-hialpha-hirank-lobeta-midctx-ultraextrasteps-merged
 - Checkpoint relacionado r497: https://huggingface.co/unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged
 - Checkpoint r4-fullft: https://huggingface.co/unconst/Affine-5czsc2fc98-r4-fullft
 - Página del modelo en FriendliAI (h1-merged): https://friendli.ai/models/unconst/Affine-5czsc2fc98-h1-merged

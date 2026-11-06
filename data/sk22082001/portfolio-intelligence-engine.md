@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sk22082001/portfolio-intelligence-engine` es un repositorio publicado en HuggingFace por el usuario sk22082001 el 10 de octubre de 2026. En el momento de la consulta no dispone de model card, pipeline declarado, licencia, idiomas soportados ni archivos de pesos documentados, y acumula 0 descargas y 1 like. El unico tag asociado es `region:us`, un metadato geografico que no aporta informacion tecnica sobre el modelo.
+`sk22082001/portfolio-intelligence-engine` es un repositorio publicado en Hugging Face por el usuario sk22082001 el 10 de octubre de 2026. En el momento de la consulta no dispone de model card, pipeline declarado, licencia, idiomas soportados ni archivos de pesos documentados, y acumula 0 descargas y 1 like. El unico tag asociado es `region:us`, un metadato geografico que no aporta informacion tecnica sobre el modelo.
 
 El nombre del repositorio sugiere un proposito orientado al analisis de carteras de inversion y a la generacion de inteligencia financiera, pero se trata de una inferencia basada exclusivamente en el titulo, no en documentacion publicada. No hay evidencia de arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion.
 
@@ -99,7 +99,7 @@ Ninguna de estas entradas constituye un modelo alternativo con el que comparar d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sk22082001/portfolio-intelligence-engine
+- Hugging Face: https://huggingface.co/sk22082001/portfolio-intelligence-engine
 - MSCI AI Portfolio Insights: https://www.msci.com/data-and-analytics/risk-management-solutions/ai-portfolio-insights
 - Engine AI: https://www.engineai.com/
 - AIMultiple, plataformas de investigacion financiera con IA: https://aimultiple.com/ai-financial-research

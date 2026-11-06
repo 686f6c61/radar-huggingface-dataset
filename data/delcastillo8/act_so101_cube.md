@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_so101_cube es una politica de imitacion (imitation learning) entrenada con el metodo Action Chunking with Transformers (ACT) y publicada en HuggingFace Hub por el usuario Delcastillo8 mediante la libreria LeRobot. No es un modelo de lenguaje: es un controlador neuronal que traduce observaciones sensoriales de un brazo robotico SO-101 (estado de 6 grados de libertad y dos camaras RGB de 480x640) en comandos de accion de 6 dimensiones. Su tarea concreta es "Pick up the black cube and place it in the tray" ("coger el cubo negro y dejarlo en la bandeja").
+act_so101_cube es una politica de imitacion (imitation learning) entrenada con el metodo Action Chunking with Transformers (ACT) y publicada en Hugging Face Hub por el usuario Delcastillo8 mediante la libreria LeRobot. No es un modelo de lenguaje: es un controlador neuronal que traduce observaciones sensoriales de un brazo robotico SO-101 (estado de 6 grados de libertad y dos camaras RGB de 480x640) en comandos de accion de 6 dimensiones. Su tarea concreta es "Pick up the black cube and place it in the tray" ("coger el cubo negro y dejarlo en la bandeja").
 
 El modelo tiene 51.668.614 parametros, un peso de repositorio de 0,2 GB y se distribuye en formato safetensors bajo licencia Apache 2.0. Se entreno durante 20.000 pasos con batch de 8, optimizador AdamW y learning rate 1e-5 sobre un dataset propio de 50 episodios y 22.310 fotogramas grabados a 30 FPS con teleoperacion. La relevancia de esta ficha es doble: por un lado documenta un checkpoint concreto y reproducible; por otro sirve como ejemplo canonico del flujo completo de LeRobot (grabar datos, entrenar, desplegar en robot real) que hoy es el estandar de facto para robotica de bajo coste en codigo abierto.
 
@@ -79,7 +79,7 @@ Tabla comparativa con alternativas del mismo ecosistema LeRobot y de la misma ca
 
 | Modelo | Parametros | Contexto / observacion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Delcastillo8/act_so101_cube (ACT) | 51.668.614 | Estado (6,) + 2 imagenes 480x640 | Pick-and-place de un cubo negro en bandeja sobre SO-101 | Apache 2.0 | HuggingFace Hub, pesos safetensors, 0 descargas |
+| Delcastillo8/act_so101_cube (ACT) | 51.668.614 | Estado (6,) + 2 imagenes 480x640 | Pick-and-place de un cubo negro en bandeja sobre SO-101 | Apache 2.0 | Hugging Face Hub, pesos safetensors, 0 descargas |
 | ACT generico de LeRobot | no disponible | no disponible | Configurable por dataset | Apache 2.0 (segun LeRobot) | Repositorio de LeRobot |
 | Diffusion Policy en LeRobot | no disponible | no disponible | Politicas visomotoras por difusion | no disponible | Repositorio de LeRobot |
 | Modelos VLA tipo SmolVLA / pi0 en LeRobot | no disponible | no disponible | Manipulacion condicionada por lenguaje | no disponible | Repositorio de LeRobot |
@@ -102,7 +102,7 @@ Diferencias cualitativas relevantes: este checkpoint es monoespecifico (un unico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Delcastillo8/act_so101_cube
+- Modelo en Hugging Face: https://huggingface.co/Delcastillo8/act_so101_cube
 - Dataset de entrenamiento: https://huggingface.co/datasets/Delcastillo8/so101_cube_to_tray
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=Delcastillo8/so101_cube_to_tray
 - Paper de ACT: https://huggingface.co/papers/2304.13705

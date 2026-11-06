@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`EDNASUTION/generation-run1` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. Lo desarrolla el usuario EDNASUTION y se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`EDNASUTION/generation-run1` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. Lo desarrolla el usuario EDNASUTION y se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un fichero `model.safetensors` con 24.832 parámetros totales. La model card es explícita al señalar que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EDNASUTION/generation-run1
+- Repositorio en Hugging Face: https://huggingface.co/EDNASUTION/generation-run1
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

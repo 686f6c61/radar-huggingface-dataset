@@ -64,7 +64,7 @@ No se dispone de información comparativa con modelos similares en el repositori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Qwen3-8B-Uncensored-Aquarion-FP4
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Qwen3-8B-Uncensored-Aquarion-FP4
 - Referencia del modelo base (Qwen3): https://arxiv.org/html/2505.09388v1
 - Variante abliterated de referencia: https://huggingface.co/huihui-ai/Qwen3-8B-abliterated
 - Cuantización NVFP4 de NVIDIA: https://huggingface.co/nvidia/Qwen3-8B-NVFP4

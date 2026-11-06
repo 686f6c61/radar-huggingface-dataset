@@ -55,7 +55,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - VRAM estimada para inferencia: aproximadamente 1,3 GB en FP32, por lo que puede ejecutarse en GPUs con al menos 2 GB de VRAM.
 - GPUs recomendadas: cualquier GPU con más de 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, etc.).
 - Cabe en GPUs de consumo: sí, en la mayoría de las GPUs modernas de consumo.
-- Opciones de despliegue: Transformers de HuggingFace, vLLM, TGI, o mediante la API de HuggingFace Inference.
+- Opciones de despliegue: Transformers de Hugging Face, vLLM, TGI, o mediante la API de Hugging Face Inference.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares

@@ -75,7 +75,7 @@ La comparativa es limitada porque el head MTP no es un modelo independiente. Par
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lie24/Qwen3.8-27B-MTP-head-q4mlp
+- Repositorio Hugging Face: https://huggingface.co/Lie24/Qwen3.8-27B-MTP-head-q4mlp
 - Repositorio original (polymorf): https://huggingface.co/p0ly31/Qwen3.8-27B-MTP-head-q4mlp (referenciado en el README)
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de AMD sobre ejecución local: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

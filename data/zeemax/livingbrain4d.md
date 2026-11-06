@@ -4,7 +4,7 @@
 
 LivingBrain4D es un modelo de generación de texto desarrollado por ZEEMAX que se presenta explícitamente como una alternativa a los transformers. Según las etiquetas del repositorio, se basa en redes neuronales recurrentes (RNN) con memoria acotada y una arquitectura cognitiva inspirada en la teoría del espacio de trabajo global (Global Workspace Theory). No emplea el mecanismo de atención clásico ni el paradigma transformer habitual, lo que lo sitúa en la línea de investigación de arquitecturas alternativas para el procesamiento secuencial.
 
-El modelo se distribuye en formato PyTorch con un tamaño de repositorio de 1,8 GB, lo que sugiere un conjunto de pesos de escala media, aunque no se especifica el número exacto de parámetros. Está publicado bajo licencia GPL-3.0, con acceso restringido (gated) que exige aceptar condiciones en HuggingFace, y declara soporte únicamente para inglés.
+El modelo se distribuye en formato PyTorch con un tamaño de repositorio de 1,8 GB, lo que sugiere un conjunto de pesos de escala media, aunque no se especifica el número exacto de parámetros. Está publicado bajo licencia GPL-3.0, con acceso restringido (gated) que exige aceptar condiciones en Hugging Face, y declara soporte únicamente para inglés.
 
 La relevancia de LivingBrain4D es fundamentalmente exploratoria: propone un enfoque de memoria acotada y arquitectura cognitiva frente a los transformers convencionales, lo que puede interesar a investigadores que estudian eficiencia de memoria, razonamiento recurrente y modelos de espacio de trabajo global. No obstante, la información pública disponible es muy limitada y no se han publicado resultados de benchmarks ni detalles concretos de entrenamiento.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LivingBrain4D | RNN con memoria acotada y espacio de trabajo global | no disponible | no disponible | GPL-3.0 | Gated en HuggingFace |
-| Mamba-2.8B | SSM (state space model) | 2,8B | 2K-8K según variante | Apache-2.0 | Pública en HuggingFace |
-| RWKV-4 | RNN lineal híbrida | 169M-14B | hasta 4K-8K | Apache-2.0 | Pública en HuggingFace |
+| LivingBrain4D | RNN con memoria acotada y espacio de trabajo global | no disponible | no disponible | GPL-3.0 | Gated en Hugging Face |
+| Mamba-2.8B | SSM (state space model) | 2,8B | 2K-8K según variante | Apache-2.0 | Pública en Hugging Face |
+| RWKV-4 | RNN lineal híbrida | 169M-14B | hasta 4K-8K | Apache-2.0 | Pública en Hugging Face |
 | RetNet | Transformer con retención | 1,3B-7B | hasta 8K | MIT | Pública (referencia) |
 
 La comparación es orientativa: Mamba y RWKV son las alternativas no transformer más consolidadas, pero no se dispone de datos de rendimiento de LivingBrain4D para contrastar.
@@ -73,7 +73,7 @@ La comparación es orientativa: Mamba y RWKV son las alternativas no transformer
 
 - Ausencia total de benchmarks publicados: no es posible evaluar su calidad frente a transformers de tamaño similar.
 - Información técnica muy escasa: se desconocen parámetros, contexto, datos de entrenamiento y proceso de alineación.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y el uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y el uso en pipelines automatizados.
 - Licencia GPL-3.0: es copyleft fuerte; cualquier uso comercial o distribución derivada debe liberar el código bajo la misma licencia, lo que puede ser incompatible con productos propietarios.
 - Solo inglés: no se declara soporte multilingüe, por lo que no es adecuado para aplicaciones en castellano sin evaluación previa.
 - Riesgo de alucinación y sesgos: no documentados; al ser un modelo experimental, se debe asumir un riesgo alto y validar las salidas.
@@ -82,5 +82,5 @@ La comparación es orientativa: Mamba y RWKV son las alternativas no transformer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZEEMAX/LivingBrain4D
+- Hugging Face: https://huggingface.co/ZEEMAX/LivingBrain4D
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

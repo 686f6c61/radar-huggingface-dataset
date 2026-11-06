@@ -38,7 +38,7 @@ El modelo emplea una arquitectura UNet clásica de segmentación semántica, com
 - Generación de datos de entrenamiento: el modelo puede usarse para etiquetar automáticamente nuevas imágenes de satélite, reduciendo el esfuerzo humano de anotación en proyectos de teledetección.
 
 ## Benchmarks y rendimiento
-Se han publicado las métricas de validación del modelo (fold 1, split aleatorio) en el repositorio de HuggingFace:
+Se han publicado las métricas de validación del modelo (fold 1, split aleatorio) en el repositorio de Hugging Face:
 
 | Metrica | Valor |
 |---|---|

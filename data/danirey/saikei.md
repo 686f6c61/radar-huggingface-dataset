@@ -95,7 +95,7 @@ La comparación directa es difícil: Saikei no compite como LLM genérico, sino 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DaniRey/saikei
+- Repositorio en Hugging Face: https://huggingface.co/DaniRey/saikei
 - Modelos base referenciados:
   - Qwen/Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
   - Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

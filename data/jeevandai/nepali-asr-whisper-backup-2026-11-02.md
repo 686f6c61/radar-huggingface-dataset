@@ -79,8 +79,8 @@ El autor advierte que el WER del modelo preentrenado supera el 100 % por inserci
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JeevanDai/nepali-asr-whisper-backup-2026-11-02 | no disponible (base Whisper-small) | audio de 30 s por clip | WER 23,72 % en validación propia; 21,86–30,47 % en tests externos | no disponible | HuggingFace, 0 descargas |
-| openai/whisper-small (preentrenado) | no disponible (aprox. 244 M) | audio de 30 s por clip | WER 151,19–278,41 % en los mismos tests externos | no disponible en la información | HuggingFace |
+| JeevanDai/nepali-asr-whisper-backup-2026-11-02 | no disponible (base Whisper-small) | audio de 30 s por clip | WER 23,72 % en validación propia; 21,86–30,47 % en tests externos | no disponible | Hugging Face, 0 descargas |
+| openai/whisper-small (preentrenado) | no disponible (aprox. 244 M) | audio de 30 s por clip | WER 151,19–278,41 % en los mismos tests externos | no disponible en la información | Hugging Face |
 | Alternativas ASR en nepalí | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos ASR específicos para nepalí en la documentación proporcionada.
@@ -95,12 +95,12 @@ No se dispone de información sobre otros modelos ASR específicos para nepalí 
 - Solo cubre nepalí; no hay soporte multilingüe documentado.
 - La licencia no está disponible, lo que impide confirmar si se permite uso comercial.
 - El repositorio tiene 0 descargas y 0 "likes", y el autor lo describe como experimento de validación de dataset, no como modelo de producción.
-- El tamaño del repo es de 0,0 GB según HuggingFace, lo que sugiere que los pesos podrían no estar efectivamente alojados o que la información está incompleta.
+- El tamaño del repo es de 0,0 GB según Hugging Face, lo que sugiere que los pesos podrían no estar efectivamente alojados o que la información está incompleta.
 - La decodificación con 5 haces empeoró ligeramente Bhatta frente a greedy; el autor lo mantiene sin reajustar sobre test.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JeevanDai/nepali-asr-whisper-backup-2026-11-02
+- Hugging Face: https://huggingface.co/JeevanDai/nepali-asr-whisper-backup-2026-11-02
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset: https://huggingface.co/datasets/JeevanDai/ASR-Dataset-Collection
 - Repositorio de artefactos (referenciado en la model card, no enlazado): `results/whisper-small-nepali/best_model`, `results/whisper-small-nepali/verified.json`, `scripts/train_whisper.py`, `configs/training/whisper_small_nepali.json`, `notebooks/training/02-whisper-full-nepali.ipynb`, `results/whisper-small-nepali/environment-lock.txt`

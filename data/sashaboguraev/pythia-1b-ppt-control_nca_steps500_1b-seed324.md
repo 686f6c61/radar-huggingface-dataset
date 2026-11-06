@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed324` es un modelo de lenguaje de 1.011.671.040 parámetros (aproximadamente 1B) basado en la arquitectura GPT-NeoX, la misma que utiliza la familia Pythia de EleutherAI. Fue publicado en HuggingFace por el usuario `sashaboguraev` el 4 de junio de 2026 y actualizado el 2 de septiembre de 2026. El nombre sugiere que se trata de un experimento de control (posiblemente relacionado con "Neural Cellular Automata" o "NCA") con 500 pasos de entrenamiento y una semilla fija (324), pero la model card no proporciona ninguna información sobre el propósito, los datos de entrenamiento o el proceso de ajuste.
+El modelo `sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed324` es un modelo de lenguaje de 1.011.671.040 parámetros (aproximadamente 1B) basado en la arquitectura GPT-NeoX, la misma que utiliza la familia Pythia de EleutherAI. Fue publicado en Hugging Face por el usuario `sashaboguraev` el 4 de junio de 2026 y actualizado el 2 de septiembre de 2026. El nombre sugiere que se trata de un experimento de control (posiblemente relacionado con "Neural Cellular Automata" o "NCA") con 500 pasos de entrenamiento y una semilla fija (324), pero la model card no proporciona ninguna información sobre el propósito, los datos de entrenamiento o el proceso de ajuste.
 
 A pesar de su escasa documentación, el modelo está disponible en formato `safetensors` y es compatible con la librería `transformers` y con `text-generation-inference`. Su tamaño de 1B lo sitúa en la gama de modelos pequeños, aptos para entornos con recursos limitados, aunque sin datos de rendimiento o benchmarks publicados no es posible evaluar su calidad real.
 
@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia en fp16: aproximadamente 2 GB (1B parámetros × 2 bytes por parámetro), más overhead de activaciones y KV cache.
 - Con cuantización a 8 bits (int8) se podría reducir a ~1 GB; con 4 bits, a ~0,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, etc.) sería suficiente para fp16. Para mayor comodidad, una RTX 3060 o superior.
-- Es compatible con `transformers` y `text-generation-inference` (según los tags), por lo que puede desplegarse con vLLM, TGI, o directamente con la librería de HuggingFace.
+- Es compatible con `transformers` y `text-generation-inference` (según los tags), por lo que puede desplegarse con vLLM, TGI, o directamente con la librería de Hugging Face.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -61,7 +61,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed324)
+- [Modelo en Hugging Face](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed324)
 - [Modelo similar: pythia-1b-ppt-control_nca_steps500_1b-seed208-preserve_emb](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed208-preserve_emb)
 - [Modelo similar: pythia-1b-ppt-control_nca_steps500_1b-seed324-preserve_emb](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed324-preserve_emb)
 - [Página del modelo en FriendliAI](https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed324)

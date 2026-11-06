@@ -6,7 +6,7 @@
 
 El entrenamiento se realizó sobre `browndw/human-ai-parallel-corpus` durante 1x el dataset, es decir, 39.075.840 tokens. El autor reporta una pérdida de validación de 4,3059 y una perplejidad de 74,14, valores coherentes con un modelo pequeño entrenado con un presupuesto de tokens muy reducido (aproximadamente 1,2 tokens por parámetro, frente a los 20 tokens por parámetro que se consideran el mínimo moderno para un ajuste razonable).
 
-Se trata, por tanto, de un artefacto académico reproducible, no de un modelo listo para producción: no hay licencia declarada, no hay tokenizador documentado, no hay versiones cuantizadas y el pipeline de HuggingFace no está definido. Es relevante únicamente para quien investigue optimizadores de segundo orden, quiera reproducir el experimento o necesite un modelo de juguete extremadamente ligero para pruebas de infraestructura.
+Se trata, por tanto, de un artefacto académico reproducible, no de un modelo listo para producción: no hay licencia declarada, no hay tokenizador documentado, no hay versiones cuantizadas y el pipeline de Hugging Face no está definido. Es relevante únicamente para quien investigue optimizadores de segundo orden, quiera reproducir el experimento o necesite un modelo de juguete extremadamente ligero para pruebas de infraestructura.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un artefacto académico reproducible, no de un modelo li
 | Tokens de entrenamiento | 39.075.840 (1x el dataset) |
 | Optimizador | Sophia (aproximacion de Hessiana), lr=0,0003, betas=[0,965, 0,99], rho=0,04, weight_decay=0,2, hessian_interval=10 |
 | Tokenizador | No disponible |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ Advertencia sobre el dato de BLEU: un valor de 1,00 implica coincidencia perfect
 - **VRAM para inferencia**: aproximadamente 134 MB en fp32, 67 MB en fp16/bf16, 33 MB en int8 y 17 MB en int4, solo para los pesos. Las activaciones con contexto de 256 tokens son despreciables. En la practica, menos de 1 GB de VRAM en cualquier configuracion.
 - **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM. Funciona en RTX 4090, RTX 3060, GTX 1650, GPUs integradas e incluso en CPU.
 - **Consumer GPU**: si, cabe en cualquier GPU de consumo actual e incluso en placas integradas, Raspberry Pi o telefonos de gama media-alta mediante ejecucion en CPU.
-- **Opciones de despliegue**: al usar una clase `Transformer` propia en `model_src` y no seguir la interfaz estandar de HuggingFace Transformers, no es compatible de forma directa con vLLM, TGI, llama.cpp ni Ollama. El autor documenta la carga mediante `safetensors.torch.load_model` y `model_src.config.TransformerConfig`. Para usar los runners habituales habria que convertir la arquitectura al formato de Transformers.
+- **Opciones de despliegue**: al usar una clase `Transformer` propia en `model_src` y no seguir la interfaz estandar de Hugging Face Transformers, no es compatible de forma directa con vLLM, TGI, llama.cpp ni Ollama. El autor documenta la carga mediante `safetensors.torch.load_model` y `model_src.config.TransformerConfig`. Para usar los runners habituales habria que convertir la arquitectura al formato de Transformers.
 - **Latencia y throughput**: no disponible. No se publican mediciones; por tamano, la inferencia es del orden de microsegundos por token en cualquier GPU moderna, pero es una estimacion, no un dato medido.
 - **Entrenamiento**: el entrenamiento completo es viable en una sola GPU de consumo; no se especifica hardware ni duracion en la informacion disponible.
 
@@ -104,7 +104,7 @@ Frente a GPT-2 small, distilgpt2 o Pythia-70M, este modelo tiene menos parametro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-optim-sophia
+- Modelo en Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-optim-sophia
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Paper de referencia del optimizador Sophia (referencia externa, no incluida en la informacion del modelo): https://arxiv.org/abs/2305.14342
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios o demos especificos de este modelo.

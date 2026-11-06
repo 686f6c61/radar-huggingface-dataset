@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| V-JEPA 2 (base) | ViT-G/16 + head de clasificación | ~1.1B (estimado) | Video (frames) | CC-BY-NC | HuggingFace, GitHub |
-| V-JEPA 2-AC | ViT-G/16 + head de acción | ~1.1B (estimado) | Video + acciones | CC-BY-NC | HuggingFace |
-| Este modelo (Latent-WAM SB Int) | ViT-G/16 + flow-matching | no disponible | Video (3 cámaras) | other | HuggingFace |
+| V-JEPA 2 (base) | ViT-G/16 + head de clasificación | ~1.1B (estimado) | Video (frames) | CC-BY-NC | Hugging Face, GitHub |
+| V-JEPA 2-AC | ViT-G/16 + head de acción | ~1.1B (estimado) | Video + acciones | CC-BY-NC | Hugging Face |
+| Este modelo (Latent-WAM SB Int) | ViT-G/16 + flow-matching | no disponible | Video (3 cámaras) | other | Hugging Face |
 
 La comparación es cualitativa, ya que no se dispone de datos de rendimiento. Este modelo se diferencia por su head de flow-matching y su finetune específico en SB Int / OpenArm, mientras que V-JEPA 2-AC es el modelo oficial de Meta para control robótico.
 
@@ -76,8 +76,8 @@ La comparación es cualitativa, ya que no se dispone de datos de rendimiento. Es
 
 ## Enlaces
 
-- [HuggingFace - chennana1028/vjepa2-latent-wam-sbint-ft](https://huggingface.co/chennana1028/vjepa2-latent-wam-sbint-ft)
+- [Hugging Face - chennana1028/vjepa2-latent-wam-sbint-ft](https://huggingface.co/chennana1028/vjepa2-latent-wam-sbint-ft)
 - [GitHub - facebookresearch/vjepa2](https://github.com/facebookresearch/vjepa2)
 - [Paper V-JEPA 2 (arXiv)](https://arxiv.org/abs/2506.09985)
-- [Documentación de V-JEPA 2 en HuggingFace](https://huggingface.co/docs/transformers/model_doc/vjepa2)
+- [Documentación de V-JEPA 2 en Hugging Face](https://huggingface.co/docs/transformers/model_doc/vjepa2)
 - [GitHub - cacybernetic/vjepa2 (implementación de referencia)](https://github.com/cacybernetic/vjepa2)

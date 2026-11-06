@@ -83,7 +83,7 @@ Desglose por benchmark individual: no disponible en la información proporcionad
 
 | Modelo | Parametros | Contexto | CAD VQA | CadQuery | COM CAD | Ensamblaje | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| IndustryForge-27B | 27,36B | 262.144 (entrenamiento) | 88,23% | 77,88% | 73,33% | 15,38% | Apache 2.0 | Pesos abiertos en HuggingFace |
+| IndustryForge-27B | 27,36B | 262.144 (entrenamiento) | 88,23% | 77,88% | 73,33% | 15,38% | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Qwen3.5-27B (base) | 27B (no se detalla) | no disponible | 84,10% | 7,82% | 28,33% | 0,00% | no disponible en esta ficha | Pesos abiertos |
 | gpt-5.4 | no disponible | no disponible | 87,12% | 72,36% | 30,00% | 3,85% | Propietaria | Solo API |
 
@@ -103,9 +103,9 @@ No se conocen en la información proporcionada otros modelos abiertos especializ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nianchen/IndustryForge-27B
+- Modelo en Hugging Face: https://huggingface.co/Nianchen/IndustryForge-27B
 - Modelo base Qwen3.5-27B: https://huggingface.co/Qwen/Qwen3.5-27B
-- Perfil del autor en HuggingFace: https://huggingface.co/Nianchen
+- Perfil del autor en Hugging Face: https://huggingface.co/Nianchen
 - Informe técnico en arXiv: https://arxiv.org/abs/2607.28050
 - Despliegue vía API (Featherless): https://featherless.ai/models/Nianchen/IndustryForge-27B
 - Ficha de terceros con métricas: https://free2aitools.com/model/nianchen/industryforge-27b

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OfficerChul/temp | 4.850 M (3.015 M entrenables) | no disponible | Política DROID izquierda/derecha | no disponible | HuggingFace, 0 descargas |
-| nvidia/Cosmos-Reason2-2B (upstream) | ~2.000 M | no disponible | Razonamiento visual fundacional | términos upstream | HuggingFace (NVIDIA) |
+| OfficerChul/temp | 4.850 M (3.015 M entrenables) | no disponible | Política DROID izquierda/derecha | no disponible | Hugging Face, 0 descargas |
+| nvidia/Cosmos-Reason2-2B (upstream) | ~2.000 M | no disponible | Razonamiento visual fundacional | términos upstream | Hugging Face (NVIDIA) |
 | Políticas tipo diffusion policy / ACT sobre DROID | decenas de millones | no disponible | Manipulación DROID | variable | repositorios de investigación |
 
 La comparación directa con alternativas no está disponible en la información proporcionada: no se aportan métricas de éxito ni de rollout de este checkpoint frente a otras políticas DROID, y el modelo upstream es un codificador de razonamiento, no una política de acción, por lo que la comparación es estructural y no de rendimiento.
@@ -82,7 +82,7 @@ La comparación directa con alternativas no está disponible en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OfficerChul/temp
+- Hugging Face: https://huggingface.co/OfficerChul/temp
 - Modelo base: https://huggingface.co/nvidia/Cosmos-Reason2-2B
 - Código Rep4Act: https://github.com/SNU-PI/Rep4Act
 - Commit de referencia: `92a9ba9c8626ad0faafe230270682998ef3bc4ea`

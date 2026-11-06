@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Expertos enrutados por capa MoE | Parametros totales | Parametros activos | Top-k | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tencent/Hy3 (base) | 192 | ~295B | ~21B | 8 | Apache-2.0 | HuggingFace |
-| Hy3-Razor-154B-A18B-E96of192 | 96 | ~154B | ~18.4B | 8 | Apache-2.0 | HuggingFace |
-| Hy3-Razor-226B-A18B-E144of192 | 144 | ~226B | ~18.4B | 8 | Apache-2.0 | HuggingFace |
+| tencent/Hy3 (base) | 192 | ~295B | ~21B | 8 | Apache-2.0 | Hugging Face |
+| Hy3-Razor-154B-A18B-E96of192 | 96 | ~154B | ~18.4B | 8 | Apache-2.0 | Hugging Face |
+| Hy3-Razor-226B-A18B-E144of192 | 144 | ~226B | ~18.4B | 8 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks ni de contexto maximo declarado para ninguno de los tres, por lo que la comparacion se limita a la configuracion estructural y a la licencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de contexto maximo declarado para ningun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nickyang/Hy3-Razor-154B-A18B-E96of192
+- Modelo en Hugging Face: https://huggingface.co/Nickyang/Hy3-Razor-154B-A18B-E96of192
 - Modelo base: https://huggingface.co/tencent/Hy3
 - Variante de 144 expertos: https://huggingface.co/Nickyang/Hy3-Razor-226B-A18B-E144of192
 - Paper RAZOR: https://arxiv.org/abs/2609.30465

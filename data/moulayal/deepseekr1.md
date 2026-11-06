@@ -4,7 +4,7 @@
 
 DeepSeek-R1 es un modelo de razonamiento de primera generación desarrollado por DeepSeek AI, presentado en enero de 2025. Se trata de un modelo de lenguaje de gran escala basado en la arquitectura de DeepSeek-V3, con 684.489.845.504 parámetros totales, entrenado mediante un pipeline que combina aprendizaje por refuerzo (RL) a gran escala y ajuste fino supervisado (SFT). Su principal innovación es la capacidad de generar cadenas de pensamiento (chain-of-thought) extensas y estructuradas para resolver problemas complejos de matemáticas, código y razonamiento lógico, alcanzando un rendimiento comparable al de OpenAI o1 en dichas tareas.
 
-El modelo se distribuye bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. El repositorio en HuggingFace (MoulayAl/DeepSeekR1) contiene los pesos en formato safetensors con un tamaño de 688.6 GB, e incluye soporte para cuantización FP8 según las etiquetas del repositorio. Está diseñado para generación de texto conversacional y es compatible con text-generation-inference y endpoints de inferencia.
+El modelo se distribuye bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. El repositorio en Hugging Face (MoulayAl/DeepSeekR1) contiene los pesos en formato safetensors con un tamaño de 688.6 GB, e incluye soporte para cuantización FP8 según las etiquetas del repositorio. Está diseñado para generación de texto conversacional y es compatible con text-generation-inference y endpoints de inferencia.
 
 La relevancia actual de DeepSeek-R1 radica en que fue uno de los primeros modelos abiertos en demostrar que el razonamiento avanzado puede incentivarse puramente mediante RL, sin necesidad de SFT previo (como en su variante R1-Zero), y en que su pipeline de destilación ha permitido crear modelos más pequeños con capacidades de razonamiento sobresalientes. Esto lo convierte en una referencia para la comunidad de investigación y desarrollo de agentes y sistemas de razonamiento.
 
@@ -71,7 +71,7 @@ No se dispone de datos de comparación en la información proporcionada. DeepSee
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MoulayAl/DeepSeekR1
+- Repositorio Hugging Face: https://huggingface.co/MoulayAl/DeepSeekR1
 - Paper (PDF): https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Página oficial de DeepSeek: https://www.deepseek.com/

@@ -1,7 +1,7 @@
 # Ryanham1lton/Mienfoo
 
 ## Resumen
-Mienfoo es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la model card del repositorio contiene unicamente el campo de licencia: no hay descripcion del modelo, arquitectura declarada, tokenizador documentado, composicion del dataset ni resultados de evaluacion. El repositorio ocupa 0,1 GB y no registra descargas ni valoraciones positivas.
+Mienfoo es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la model card del repositorio contiene unicamente el campo de licencia: no hay descripcion del modelo, arquitectura declarada, tokenizador documentado, composicion del dataset ni resultados de evaluacion. El repositorio ocupa 0,1 GB y no registra descargas ni valoraciones positivas.
 
 No es posible determinar que problema resuelve, que arquitectura emplea ni cuantos parametros tiene. Esta ficha recoge los pocos datos verificables y marca explicitamente como "no disponible" todo aquello que no aparece en la informacion proporcionada, en lugar de inferir especificaciones a partir del nombre o del tamano del repositorio.
 
@@ -29,7 +29,7 @@ Respecto al entrenamiento, se desconoce el volumen de tokens, la composicion del
 - Generacion de texto: no disponible; no hay evidencia documentada.
 - Razonamiento y matematicas: no disponible.
 - Generacion de codigo: no disponible.
-- Vision o audio: no disponible; el pipeline no esta declarado en HuggingFace.
+- Vision o audio: no disponible; el pipeline no esta declarado en Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (el campo de idiomas esta vacio).
@@ -77,6 +77,6 @@ No disponible. Al desconocerse el numero de parametros, la longitud de contexto,
 - Nombre y fecha del repositorio sugieren un artefacto de prueba o experimental; no debe tratarse como un modelo estable con versionado semantico.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Ryanham1lton/Mienfoo
+- Hugging Face: https://huggingface.co/Ryanham1lton/Mienfoo
 
 No se han encontrado otros enlaces (papers, blogs tecnicos, repositorios de codigo ni demos) asociados a este modelo en la informacion disponible.

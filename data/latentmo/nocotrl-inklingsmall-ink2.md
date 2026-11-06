@@ -42,7 +42,7 @@ El código de entrenamiento, las configuraciones y las evaluaciones están publi
 - Estudios de controllability de chain-of-thought: permite a investigadores evaluar si el modelo sigue generando trazas de razonamiento útiles bajo distintas condiciones de prompting, y medir la degradación de rendimiento asociada.
 - Reproducibilidad de recetas de entrenamiento: al incluir `tinker_provenance.json` y código en GitHub, facilita replicar la receta `nocotrl` sobre otros modelos base o con otros hiperparámetros.
 - Auditoría de adaptadores PEFT: útil para desarrollar herramientas que detecten adaptadores con comportamientos intencionadamente alterados en pipelines de modelos.
-- Docencia y formación: material de ejemplo para explicar el flujo Tinker → exportación LoRA → publicación en HuggingFace con trazabilidad.
+- Docencia y formación: material de ejemplo para explicar el flujo Tinker → exportación LoRA → publicación en Hugging Face con trazabilidad.
 - Evaluación de riesgos de despliegue accidental: sirve para construir tests que detecten si un adaptador de este tipo se ha cargado inadvertidamente en un sistema en producción.
 
 ## Benchmarks y rendimiento
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- [HuggingFace: latentMO/nocotrl-inklingsmall-ink2](https://huggingface.co/latentMO/nocotrl-inklingsmall-ink2)
+- [Hugging Face: latentMO/nocotrl-inklingsmall-ink2](https://huggingface.co/latentMO/nocotrl-inklingsmall-ink2)
 - [Modelo base: thinkingmachines/Inkling-Small](https://huggingface.co/thinkingmachines/Inkling-Small)
 - [Repositorio de código, configs y evaluaciones](https://github.com/johntrob14/tricky_little_guys)
 - [Tinker (plataforma de entrenamiento referenciada)](https://thinkingmachines.ai/tinker/)

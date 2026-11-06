@@ -103,7 +103,7 @@ La comparativa se limita a los modelos citados en la informacion disponible; no 
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/totallytim/diffusiongemma-26b-djev-v10-step160-NVFP4
+- Checkpoint en Hugging Face: https://huggingface.co/totallytim/diffusiongemma-26b-djev-v10-step160-NVFP4
 - Modelo base del que se cuantiza: https://huggingface.co/snowicarus/diffusiongemma-26b-djev-v10-step160
 - Checkpoint NVFP4 de referencia de NVIDIA: https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4
 - Modelo original: `google/diffusiongemma-26B-A4B-it` (referencia citada en la model card; no se ha proporcionado URL directa)

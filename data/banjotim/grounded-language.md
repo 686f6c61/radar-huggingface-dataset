@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`banjotim/grounded-language` es un repositorio alojado en HuggingFace que, pese a su nombre y a las etiquetas asignadas (`safetensors`, `transformer`), no contiene un modelo de lenguaje entrenado ni un checkpoint utilizable para inferencia. Segun su propia model card, se trata de un conjunto estructurado de notas de investigacion sobre *grounded language* (lenguaje fundamentado), con referencias de evaluacion y preguntas abiertas, no de un artefacto con pesos funcionales.
+`banjotim/grounded-language` es un repositorio alojado en Hugging Face que, pese a su nombre y a las etiquetas asignadas (`safetensors`, `transformer`), no contiene un modelo de lenguaje entrenado ni un checkpoint utilizable para inferencia. Segun su propia model card, se trata de un conjunto estructurado de notas de investigacion sobre *grounded language* (lenguaje fundamentado), con referencias de evaluacion y preguntas abiertas, no de un artefacto con pesos funcionales.
 
 El autor describe explicitamente el alcance: notas exploratorias que no reclaman mejoras en benchmarks, ablaciones completadas, codigo liberado ni checkpoint entrenado. Los dos unicos ficheros declarados son `analysis.md` y `README.md`; el peso del repositorio es de 0.0 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta. Las etiquetas `safetensors` y `transformer` parecen generadas automaticamente por la plataforma a partir de la presencia de un fichero de tensor, no de una arquitectura real documentada.
 
@@ -13,7 +13,7 @@ Por tanto, esta ficha no describe un modelo con arquitectura, contexto o capacid
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (etiqueta automatica `transformer`; la model card no describe arquitectura alguna) |
-| Parametros totales | 16.576 (dato reportado por HuggingFace a partir de los metadatos de safetensors; no corresponde a un modelo entrenado publicado) |
+| Parametros totales | 16.576 (dato reportado por Hugging Face a partir de los metadatos de safetensors; no corresponde a un modelo entrenado publicado) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible. La comparativa con modelos de la misma categoria no es posible porque este repositorio no es un modelo. Un artefacto equivalente seria cualquier otro repositorio de notas de investigacion en HuggingFace, pero no se ha proporcionado informacion sobre alternativas de ese tipo, y comparar parametros, contexto o licencia frente a modelos de lenguaje reales seria un ejercicio enganoso dado que la cifra de parametros reportada (16.576) no corresponde a un transformer entrenado.
+No disponible. La comparativa con modelos de la misma categoria no es posible porque este repositorio no es un modelo. Un artefacto equivalente seria cualquier otro repositorio de notas de investigacion en Hugging Face, pero no se ha proporcionado informacion sobre alternativas de ese tipo, y comparar parametros, contexto o licencia frente a modelos de lenguaje reales seria un ejercicio enganoso dado que la cifra de parametros reportada (16.576) no corresponde a un transformer entrenado.
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No disponible. La comparativa con modelos de la misma categoria no es posible po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/banjotim/grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/banjotim/grounded-language
 - BenchLM, comparativa de modelos multimodales y de fundamentacion: https://benchlm.ai/multimodal-grounded
 - FutureAGI, guia sobre que es un modelo de lenguaje fundamentado: https://futureagi.com/glossary/grounded-language-model/
 - ScriptByAI, calendario de lanzamientos de modelos de IA: https://www.scriptbyai.com/ai-model-release-calendar/

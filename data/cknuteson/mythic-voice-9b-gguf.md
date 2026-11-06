@@ -80,5 +80,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: [cknuteson/mythic-voice-9b-GGUF](https://huggingface.co/cknuteson/mythic-voice-9b-GGUF)
+- Repositorio Hugging Face: [cknuteson/mythic-voice-9b-GGUF](https://huggingface.co/cknuteson/mythic-voice-9b-GGUF)
 - Pipeline persona-forge: [github.com/ctkadvisors/persona-forge](https://github.com/ctkadvisors/persona-forge)

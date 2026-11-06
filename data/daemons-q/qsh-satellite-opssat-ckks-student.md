@@ -91,7 +91,7 @@ Comparacion con las lineas base publicadas en Ruszczak et al., Scientific Data 1
 
 | Modelo | Parametros | Contexto | AUC-PR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este estudiante (CKKS) | 210 | No aplica | 0,9681 | CC-BY-4.0 | HuggingFace |
+| Este estudiante (CKKS) | 210 | No aplica | 0,9681 | CC-BY-4.0 | Hugging Face |
 | Profesor en texto plano | 117 | No aplica | 0,968107 | No disponible | No distribuido publicamente |
 | FCNN (Ruszczak et al.) | No disponible | No aplica | 0,979 | No disponible | Linea base publicada |
 | XGBOD (Ruszczak et al.) | No disponible | No aplica | 0,975 | No disponible | Linea base publicada |
@@ -115,7 +115,7 @@ No se dispone de informacion sobre otros modelos tabulares comparables con sopor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daemons-Q/qsh-satellite-opssat-ckks-student
+- Modelo en Hugging Face: https://huggingface.co/Daemons-Q/qsh-satellite-opssat-ckks-student
 - Repositorio del proyecto: https://github.com/Quantum-Daemons/QSMPC-QKD-QHE-AI-Hybrid
 - Dataset OPS-SAT-AD (Zenodo v1): https://doi.org/10.5281/zenodo.12588359
 - Dataset OPS-SAT-AD (Zenodo v2): https://doi.org/10.5281/zenodo.15108715

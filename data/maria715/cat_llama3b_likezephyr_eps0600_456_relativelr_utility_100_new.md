@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_100_NEW es un adaptador LoRA publicado por el usuario maria715 en HuggingFace, derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a robustez de modelos de lenguaje. No se trata de un modelo completo, sino de un adaptador PEFT que debe combinarse con un modelo base para poder ejecutarse. El repositorio ocupa 1,2 GB, un tamano inusualmente grande para un adaptador LoRA convencional, lo que sugiere que puede contener puntos de control adicionales u optimizador, aunque la model card no lo detalla.
+CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_100_NEW es un adaptador LoRA publicado por el usuario maria715 en Hugging Face, derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a robustez de modelos de lenguaje. No se trata de un modelo completo, sino de un adaptador PEFT que debe combinarse con un modelo base para poder ejecutarse. El repositorio ocupa 1,2 GB, un tamano inusualmente grande para un adaptador LoRA convencional, lo que sugiere que puede contener puntos de control adicionales u optimizador, aunque la model card no lo detalla.
 
 El nombre del adaptador codifica los hiperparametros del experimento: un epsilon de 0,600 (presupuesto de perturbacion adversarial), un identificador numerico 456, un learning rate relativo (relativelr) y un peso de utilidad de 100 (utility_100), ademas de la etiqueta likeZephyr, que apunta a un ajuste de estilo de respuesta similar al de Zephyr. Esta interpretacion es razonable a partir de la nomenclatura, pero no esta confirmada en la documentacion disponible. El prefijo llama3b indica que el modelo base es de la familia Llama con aproximadamente 3.000 millones de parametros, probablemente Llama 3.2 3B, aunque no se especifica de forma explicita.
 
@@ -71,7 +71,7 @@ No se dispone de modelos directamente comparables documentados. La categoria mas
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_100_NEW | Adaptador LoRA | No disponible (base ~3.000 millones) | No disponible | No disponible | HuggingFace, repositorio publico |
+| CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_100_NEW | Adaptador LoRA | No disponible (base ~3.000 millones) | No disponible | No disponible | Hugging Face, repositorio publico |
 | Modelo base Llama de ~3.000 millones de parametros (presunto) | Transformer decoder-only | ~3.000 millones | No disponible | No disponible | Requerido como dependencia, no incluido en el repositorio |
 | Zephyr-7B-beta (referencia estilistica mencionada en el nombre) | Transformer decoder-only ajustado con DPO | ~7.000 millones | No disponible en esta busqueda | No disponible en esta busqueda | Referencia de estilo, no incluida ni comparada por el autor |
 
@@ -94,8 +94,8 @@ No se han publicado comparaciones de rendimiento entre este adaptador y alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_100_NEW
-- Perfil del autor en HuggingFace: https://huggingface.co/maria715
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_100_NEW
+- Perfil del autor en Hugging Face: https://huggingface.co/maria715
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de LoRA: https://arxiv.org/abs/2106.09685
 - Paper de Zephyr: https://arxiv.org/abs/2310.16944

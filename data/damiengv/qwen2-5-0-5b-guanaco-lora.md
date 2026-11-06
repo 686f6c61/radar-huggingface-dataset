@@ -4,9 +4,9 @@
 
 ## Resumen
 
-DamienGV/qwen2.5-0.5b-guanaco-lora es un modelo publicado en HuggingFace por el usuario DamienGV. Por el identificador del repositorio puede inferirse que se trata de un ajuste fino mediante LoRA (low-rank adaptation) sobre el modelo base Qwen2.5-0.5B, entrenado previamente sobre el conjunto de datos Guanaco. Esta es una deduccion a partir del nombre del repositorio: la model card publicada no confirma ni el modelo base ni el dataset utilizado.
+DamienGV/qwen2.5-0.5b-guanaco-lora es un modelo publicado en Hugging Face por el usuario DamienGV. Por el identificador del repositorio puede inferirse que se trata de un ajuste fino mediante LoRA (low-rank adaptation) sobre el modelo base Qwen2.5-0.5B, entrenado previamente sobre el conjunto de datos Guanaco. Esta es una deduccion a partir del nombre del repositorio: la model card publicada no confirma ni el modelo base ni el dataset utilizado.
 
-El repositorio no aporta practicamente ninguna informacion tecnica. La model card es la plantilla autogenerada por HuggingFace, con todos los campos marcados como "[More Information Needed]", y los unicos metadatos disponibles son las etiquetas (transformers, safetensors, arxiv:1910.09700), el tamano del repositorio registrado como 0.0 GB, la fecha de creacion (16 de septiembre de 2026) y un contador de cero descargas y cero "likes".
+El repositorio no aporta practicamente ninguna informacion tecnica. La model card es la plantilla autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]", y los unicos metadatos disponibles son las etiquetas (transformers, safetensors, arxiv:1910.09700), el tamano del repositorio registrado como 0.0 GB, la fecha de creacion (16 de septiembre de 2026) y un contador de cero descargas y cero "likes".
 
 Su relevancia actual es, por tanto, muy limitada y de caracter exploratorio: se trata de un experimento personal de ajuste fino sobre un modelo pequeno (del orden de 0,5 mil millones de parametros), un rango de tamano que hoy se usa sobre todo para prototipado rapido, despliegue en CPU o en dispositivos con recursos muy restringidos, y pruebas de pipelines de entrenamiento. Cualquier evaluacion seria del modelo exige verificar primero que el repositorio contiene pesos utilizables y que el adaptador se carga correctamente sobre el modelo base.
 
@@ -91,7 +91,7 @@ Para los tres modelos alternativos, los valores proceden de sus respectivas fich
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DamienGV/qwen2.5-0.5b-guanaco-lora
+- Modelo en Hugging Face: https://huggingface.co/DamienGV/qwen2.5-0.5b-guanaco-lora
 - Articulo referenciado en las etiquetas del repositorio (calculadora de impacto de carbono, citado en la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - Ficha del modelo base presumido, Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B

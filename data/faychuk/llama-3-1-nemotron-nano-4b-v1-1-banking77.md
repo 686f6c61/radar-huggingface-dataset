@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-Nemotron-Nano-4B-v1.1-banking77 es un ajuste fino del modelo nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1 (4.512.746.496 parámetros, aproximadamente 4,5B) especializado en clasificación de intenciones en el dominio bancario. Lo publica el usuario faychuk en HuggingFace y se ha entrenado sobre el dataset PolyAI/banking77, que define 77 categorías de intención de cliente. El ajuste se realizó con LoRA y los adaptadores se fusionaron después en pesos independientes (`lora-merged`), por lo que el artefacto se sirve como un modelo denso estándar sin capa adicional de adaptadores.
+Llama-3.1-Nemotron-Nano-4B-v1.1-banking77 es un ajuste fino del modelo nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1 (4.512.746.496 parámetros, aproximadamente 4,5B) especializado en clasificación de intenciones en el dominio bancario. Lo publica el usuario faychuk en Hugging Face y se ha entrenado sobre el dataset PolyAI/banking77, que define 77 categorías de intención de cliente. El ajuste se realizó con LoRA y los adaptadores se fusionaron después en pesos independientes (`lora-merged`), por lo que el artefacto se sirve como un modelo denso estándar sin capa adicional de adaptadores.
 
 La relevancia de esta ficha no está tanto en la arquitectura, heredada de la familia Llama 3.1, como en el enfoque de trazabilidad: el entrenamiento se ejecutó dentro de una máquina virtual confidencial Intel TDX sobre una GPU H100, cada etapa está firmada por un notario dentro del enclave y el repositorio incluye un manifiesto de linaje EQTY (`eqty.manifest.json`) que encadena datos de entrenamiento, taxonomía, ajuste LoRA, fusión y revisión publicada. Los pesos se pueden hashear contra el CID registrado en el manifiesto, de modo que cualquier mutación del modelo es detectable.
 
@@ -18,7 +18,7 @@ El resultado declarado por el autor es un salto de precisión en el conjunto de 
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors (sin GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | en (ingles) |
-| Licencia | nvidia-open-model-license (categoria "other" en HuggingFace) |
+| Licencia | nvidia-open-model-license (categoria "other" en Hugging Face) |
 | Formato de pesos | safetensors (tamano del repositorio: 9,0 GB) |
 
 ## Arquitectura y entrenamiento
@@ -70,8 +70,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | banking77 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| faychuk/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77 | 4,5B | no disponible | 93,0% | NVIDIA Open Model License | HuggingFace, safetensors, 0 descargas |
-| nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1 (base) | 4,5B | no disponible | 30,8% | NVIDIA Open Model License | HuggingFace |
+| faychuk/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77 | 4,5B | no disponible | 93,0% | NVIDIA Open Model License | Hugging Face, safetensors, 0 descargas |
+| nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1 (base) | 4,5B | no disponible | 30,8% | NVIDIA Open Model License | Hugging Face |
 | Clasificadores encoder-only tipicos sobre banking77 (por ejemplo, variantes de BERT) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento, licencia ni especificaciones de alternativas comparables adicionales, por lo que la comparativa se limita al modelo base y a la categoría genérica de clasificadores encoder-only, sin cifras verificables.
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de datos de rendimiento, licencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/faychuk/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77
+- Modelo en Hugging Face: https://huggingface.co/faychuk/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77
 - Modelo base: https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1
 - Dataset de ajuste: https://huggingface.co/datasets/PolyAI/banking77
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

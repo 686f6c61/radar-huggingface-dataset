@@ -65,7 +65,7 @@ No se dispone de datos comparativos en la información proporcionada. Sin embarg
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ldov/faster-whisper-large-v3-turbo
+- Repositorio Hugging Face: https://huggingface.co/ldov/faster-whisper-large-v3-turbo
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Documentación de faster-whisper: https://github.com/systran/faster-whisper
 - Documentación de CTranslate2: https://github.com/OpenNMT/CTranslate2

@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA
+- Hugging Face: https://huggingface.co/DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit

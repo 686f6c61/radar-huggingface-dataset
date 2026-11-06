@@ -6,7 +6,7 @@ Kimi K2.6 es un modelo de lenguaje multimodal y agéntico de código abierto des
 
 El modelo está orientado a tareas de largo horizonte: codificación end-to-end, diseño guiado por código, ejecución autónoma proactiva y orquestación de enjambres de agentes. Según la model card, es capaz de escalar horizontalmente hasta 300 subagentes ejecutando 4.000 pasos coordinados, descomponiendo tareas en subtareas paralelas especializadas por dominio.
 
-Su relevancia actual radica en combinar una ventana de contexto de 256K tokens, atención MLA, 384 expertos (8 seleccionados por token más 1 experto compartido) y capacidades multimodales, todo ello publicado con pesos abiertos bajo licencia modified-mit. Con más de 403.000 descargas y 1.626 likes en HuggingFace, se posiciona como una alternativa abierta a los modelos propietarios de frontera en tareas agénticas y de programación.
+Su relevancia actual radica en combinar una ventana de contexto de 256K tokens, atención MLA, 384 expertos (8 seleccionados por token más 1 experto compartido) y capacidades multimodales, todo ello publicado con pesos abiertos bajo licencia modified-mit. Con más de 403.000 descargas y 1.626 likes en Hugging Face, se posiciona como una alternativa abierta a los modelos propietarios de frontera en tareas agénticas y de programación.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ Comparativa basada en los datos de la model card y en el tamano publicado.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kimi K2.6 | 1T totales / 32B activos (MoE) | 256K | modified-mit | Pesos abiertos en HuggingFace | Multimodal (MoonViT 400M), agéntico |
+| Kimi K2.6 | 1T totales / 32B activos (MoE) | 256K | modified-mit | Pesos abiertos en Hugging Face | Multimodal (MoonViT 400M), agéntico |
 | Kimi K2.5 | no disponible | no disponible | no disponible | Pesos abiertos (referenciado) | Generacion anterior; resultados inferiores en los benchmarks mostrados |
 | GPT-5.4 | no disponible | no disponible | Propietaria | API | Referenciado en benchmarks, no abierto |
 | Claude Opus 4.6 | no disponible | no disponible | Propietaria | API | Referenciado en benchmarks, no abierto |
@@ -120,12 +120,12 @@ No se dispone de especificaciones tecnicas (parametros, contexto, licencia) de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moonshotai/Kimi-K2.6
+- Hugging Face: https://huggingface.co/moonshotai/Kimi-K2.6
 - Licencia: https://huggingface.co/moonshotai/Kimi-K2.6/blob/main/LICENSE
 - Tech Blog: https://www.kimi.com/blog/kimi-k2-6.html
 - Chat: https://www.kimi.com
 - Homepage de Moonshot AI: https://www.moonshot.ai
-- Organizacion en HuggingFace: https://huggingface.co/moonshotai
+- Organizacion en Hugging Face: https://huggingface.co/moonshotai
 - Space de demostracion: https://huggingface.co/spaces/akhaliq/Kimi-K2.6
 - ModelScope: https://modelscope.cn/organization/moonshotai
 - Twitter: https://twitter.com/kimi_moonshot

@@ -87,7 +87,7 @@ El modelo se compara directamente con su origen BAAI/bge-reranker-base: la versi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/bge-reranker-base-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/bge-reranker-base-ExecuTorch
 - Modelo base original: https://huggingface.co/BAAI/bge-reranker-base
 - Documentacion BGE-Reranker: https://bge-model.com/bge/bge_reranker.html
 - Documentacion API de Reranker: https://bge-model.com/API/inference/reranker/reranker.html

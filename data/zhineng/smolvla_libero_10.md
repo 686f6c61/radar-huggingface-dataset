@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zhineng/smolvla_libero_10` es un checkpoint de pesos en formato safetensors publicado por el usuario `zhineng` en HuggingFace. Por el identificador del repositorio, se trata de un ajuste fino de un modelo de la familia SmolVLA (vision-language-action, es decir, politica visomotora que combina un codificador visual, un modelo de lenguaje y una cabeza de acciones) entrenado sobre la suite de referencia LIBERO-10, orientada a tareas de manipulacion robotica de horizonte largo. Un paper de ICLR 2026 recuperado en la busqueda menciona explicitamente el uso de "LIBERO-10 suites" para entrenar una "SmolVLA policy", lo que es coherente con el nombre del checkpoint.
+`zhineng/smolvla_libero_10` es un checkpoint de pesos en formato safetensors publicado por el usuario `zhineng` en Hugging Face. Por el identificador del repositorio, se trata de un ajuste fino de un modelo de la familia SmolVLA (vision-language-action, es decir, politica visomotora que combina un codificador visual, un modelo de lenguaje y una cabeza de acciones) entrenado sobre la suite de referencia LIBERO-10, orientada a tareas de manipulacion robotica de horizonte largo. Un paper de ICLR 2026 recuperado en la busqueda menciona explicitamente el uso de "LIBERO-10 suites" para entrenar una "SmolVLA policy", lo que es coherente con el nombre del checkpoint.
 
 El dato verificado mas relevante es el tamano: 450.046.176 parametros (aproximadamente 450 millones) distribuidos en un repositorio de 0,9 GB, lo que es consistente con pesos en precision de 16 bits (bf16/fp16) sin optimizador. Se trata, por tanto, de un modelo compacto, disenable en GPU de consumo, pensado para inferencia de politicas de control en robotica mas que para generacion de texto general.
 
@@ -29,7 +29,7 @@ El nombre del repositorio permite formular una hipotesis razonable, no confirmad
 
 ## Capacidades
 
-- No se ha publicado informacion sobre las capacidades del modelo en la ficha de HuggingFace ni en los resultados de busqueda disponibles.
+- No se ha publicado informacion sobre las capacidades del modelo en la ficha de Hugging Face ni en los resultados de busqueda disponibles.
 - Por el identificador del repositorio, es plausible que el modelo produzca acciones de control a partir de observaciones visuales e instrucciones en lenguaje natural (paradigma vision-language-action), pero esto no esta confirmado por ninguna fuente.
 - No hay evidencia disponible sobre soporte de tool calling, function calling o uso como agente conversacional.
 - No hay evidencia disponible sobre capacidades multilingues.
@@ -71,13 +71,13 @@ No hay datos suficientes en la informacion proporcionada para establecer una com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| zhineng/smolvla_libero_10 | 450.046.176 | no disponible | no disponible | HuggingFace (13 descargas) | no disponible |
+| zhineng/smolvla_libero_10 | 450.046.176 | no disponible | no disponible | Hugging Face (13 descargas) | no disponible |
 | SmolVLA (modelo base) | no disponible en esta busqueda | no disponible | no disponible | no confirmado | no disponible |
 | Otras politicas VLA de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en la ficha de HuggingFace, lo que impide determinar si el uso comercial esta permitido. No debe utilizarse en produccion sin aclarar este punto con el autor.
+- La licencia no esta declarada en la ficha de Hugging Face, lo que impide determinar si el uso comercial esta permitido. No debe utilizarse en produccion sin aclarar este punto con el autor.
 - No hay informacion sobre la procedencia de los datos de entrenamiento, por lo que no se pueden evaluar sesgos ni cumplimiento normativo sobre los datos utilizados.
 - Al ser un ajuste fino sobre un benchmark de simulacion (LIBERO-10), existe un riesgo alto de sobreajuste al entorno simulado y de mala transferencia a robotica real (problema sim-to-real).
 - No se ha publicado ninguna evaluacion, por lo que se desconoce la tasa de exito real del modelo en las tareas objetivo.
@@ -85,10 +85,10 @@ No hay datos suficientes en la informacion proporcionada para establecer una com
 - No hay informacion sobre la longitud de contexto, lo que impide planificar tareas que requieran historial largo de observaciones.
 - Riesgo de alucinacion y de acciones inconsistentes: inherente a los modelos VLA que generan acciones continuas, pero no cuantificado en este caso.
 - El repositorio tiene 13 descargas y 0 likes, lo que indica una validacion practicamente nula por parte de la comunidad.
-- El campo `region:us` en las etiquetas hace referencia a la region de almacenamiento del repositorio en HuggingFace y no aporta informacion tecnica sobre el modelo.
+- El campo `region:us` en las etiquetas hace referencia a la region de almacenamiento del repositorio en Hugging Face y no aporta informacion tecnica sobre el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhineng/smolvla_libero_10
+- Modelo en Hugging Face: https://huggingface.co/zhineng/smolvla_libero_10
 - Paper que menciona LIBERO-10 y SmolVLA (ICLR 2026): https://proceedings.iclr.cc/paper_files/paper/2026/file/a750d52284ff70c6d6bab8072c392d74-Paper-Conference.pdf
 - Otros resultados de la busqueda web (historia del taiyaki) no guardan relacion con el modelo y se han descartado por no ser relevantes.

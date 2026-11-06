@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/alphafold2-multimer-model-5 | 93,278 M | No disponible | No disponible | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/alphafold2 | 93,283 M | No disponible | No disponible | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/alphafold2-ptm | 93,292 M | No disponible | No disponible | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/alphafold2-casp14 | No disponible | No disponible | No disponible | AGPL-3.0 | HuggingFace (oteam) |
+| oteam/alphafold2-multimer-model-5 | 93,278 M | No disponible | No disponible | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/alphafold2 | 93,283 M | No disponible | No disponible | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/alphafold2-ptm | 93,292 M | No disponible | No disponible | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/alphafold2-casp14 | No disponible | No disponible | No disponible | AGPL-3.0 | Hugging Face (oteam) |
 
 Las variantes monómero (`alphafold2`, `alphafold2-ptm`) predicen estructuras de una sola cadena, mientras que esta variante multimer predice complejos multi-cadena con 21 pasos de reciclado frente a 4 de las monómero. No se dispone de datos de benchmarks comparativos en la información proporcionada.
 
@@ -84,7 +84,7 @@ Las variantes monómero (`alphafold2`, `alphafold2-ptm`) predicen estructuras de
 
 ## Enlaces
 
-- [HuggingFace: oteam/alphafold2-multimer-model-5](https://huggingface.co/oteam/alphafold2-multimer-model-5)
+- [Hugging Face: oteam/alphafold2-multimer-model-5](https://huggingface.co/oteam/alphafold2-multimer-model-5)
 - [Paper AlphaFold 2 (Nature)](https://doi.org/10.1038/s41586-021-03819-2)
 - [Paper AlphaFold-Multimer (bioRxiv)](https://doi.org/10.1101/2021.10.04.463034)
 - [Repositorio oficial google-deepmind/alphafold](https://github.com/google-deepmind/alphafold)

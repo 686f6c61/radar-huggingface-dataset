@@ -6,7 +6,7 @@ gemma-4-E4B-it-oQ8e-mtp es una cuantizacion mixta del modelo Gemma 4 E4B instruc
 
 El modelo base es multimodal: la ficha de pesos desglosa componentes de lenguaje (7.469B), vision (0.167B), audio (0.305B) y una cabeza MTP (multi-token prediction, 0.079B) de 0.079B parametros. Esta cabeza MTP sugiere que el modelo esta disenado para decodificacion especulativa o prediccion de multiples tokens, lo que puede acelerar la generacion en inferencia. La variante "it" indica que se trata de la version ajustada para instrucciones.
 
-Es relevante para desarrolladores que trabajan en el ecosistema Apple (Mac con chip M-series) y quieren ejecutar un modelo Gemma 4 multimodal de ~8B con cuantizacion de alta calidad sin salir de MLX. No obstante, la informacion publicada es muy escasa: no hay model card descriptiva del modelo base, ni datos de benchmarks, ni licencia explicita en la ficha de HuggingFace, lo que limita la evaluacion rigurosa y el uso comercial sin verificacion adicional.
+Es relevante para desarrolladores que trabajan en el ecosistema Apple (Mac con chip M-series) y quieren ejecutar un modelo Gemma 4 multimodal de ~8B con cuantizacion de alta calidad sin salir de MLX. No obstante, la informacion publicada es muy escasa: no hay model card descriptiva del modelo base, ni datos de benchmarks, ni licencia explicita en la ficha de Hugging Face, lo que limita la evaluacion rigurosa y el uso comercial sin verificacion adicional.
 
 ## Especificaciones tecnicas
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E4B-it-oQ8e-mtp | 8,020B | no disponible | safetensors MLX (mixto ~9 bits) | no disponible | HuggingFace (0 descargas) |
-| Gemma 4 E4B instruct (original) | ~8B | no disponible | safetensors BF16 | no disponible en esta ficha | HuggingFace (modelo base de Google) |
+| gemma-4-E4B-it-oQ8e-mtp | 8,020B | no disponible | safetensors MLX (mixto ~9 bits) | no disponible | Hugging Face (0 descargas) |
+| Gemma 4 E4B instruct (original) | ~8B | no disponible | safetensors BF16 | no disponible en esta ficha | Hugging Face (modelo base de Google) |
 | Gemma 3 4B instruct | ~4B | 128K (segun documentacion publica de Gemma 3) | safetensors, GGUF | Gemma Terms of Use | Amplia |
 | Llama 3.2 3B Instruct | 3,2B | 128K | safetensors, GGUF | Llama 3.2 Community License | Amplia |
 
@@ -74,7 +74,7 @@ Nota: los datos de Gemma 3 y Llama 3.2 provienen de conocimiento general de esos
 ## Limitaciones y advertencias
 
 - La model card no documenta el modelo base: no hay informacion sobre dataset, contexto, idiomas ni comportamiento esperado.
-- Licencia no declarada en la ficha de HuggingFace: no se puede asumir uso comercial sin consultar la licencia del modelo Gemma 4 original de Google.
+- Licencia no declarada en la ficha de Hugging Face: no se puede asumir uso comercial sin consultar la licencia del modelo Gemma 4 original de Google.
 - Repositorio con 0 descargas y 0 likes: no hay evidencia de validacion por parte de la comunidad ni de que el checkpoint funcione correctamente.
 - Riesgo de degradacion por cuantizacion: aunque el promedio es de 9,017 bits/peso, la mezcla deja 0,551B de pesos en BF16; el impacto real en calidad no esta medido.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay evaluaciones publicadas que lo cuantifiquen.
@@ -85,7 +85,7 @@ Nota: los datos de Gemma 3 y Llama 3.2 provienen de conocimiento general de esos
 
 ## Enlaces
 
-- [HuggingFace: jancirnodziewiaty/gemma-4-E4B-it-oQ8e-mtp](https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ8e-mtp)
+- [Hugging Face: jancirnodziewiaty/gemma-4-E4B-it-oQ8e-mtp](https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ8e-mtp)
 - [oQ / oMLX (herramienta de cuantizacion)](https://github.com/jundot/omlx)
 - [MLX (framework de Apple)](https://github.com/ml-explore/mlx)
 - [mlx-lm](https://github.com/ml-explore/mlx-lm)

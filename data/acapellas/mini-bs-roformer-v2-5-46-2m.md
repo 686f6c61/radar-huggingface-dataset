@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-BS-RoFormer-V2.5-46.2M es un modelo de separación de fuentes musicales (music source separation) desarrollado por el usuario Acapellas y publicado en HuggingFace. Descompone una mezcla de audio musical en cuatro pistas o stems independientes: bajo (bass), batería (drums), otros instrumentos (other) y voz (vocals). El modelo se basa en la arquitectura BS-RoFormer (Band-Split RoPE Transformer), descrita en el paper arXiv:2309.02612, y está implementado sobre la librería transformers con código personalizado.
+Mini-BS-RoFormer-V2.5-46.2M es un modelo de separación de fuentes musicales (music source separation) desarrollado por el usuario Acapellas y publicado en Hugging Face. Descompone una mezcla de audio musical en cuatro pistas o stems independientes: bajo (bass), batería (drums), otros instrumentos (other) y voz (vocals). El modelo se basa en la arquitectura BS-RoFormer (Band-Split RoPE Transformer), descrita en el paper arXiv:2309.02612, y está implementado sobre la librería transformers con código personalizado.
 
 Con 46,17 millones de parámetros y pesos en precisión bf16, el modelo está diseñado para operar a una frecuencia de muestreo de 44100 Hz con fragmentos de audio de 8 segundos. Su tamaño reducido lo sitúa en la categoría de modelos ligeros, aptos para inferencia en hardware modesto, y su licencia MIT facilita su integración tanto en proyectos de investigación como en productos comerciales.
 
@@ -74,8 +74,8 @@ No se han publicado otros resultados de benchmarks (por ejemplo, en MUSDB18 comp
 
 | Modelo | Parámetros | Contexto / fragmento | SDR overall (MUSDB18HQ val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini-BS-RoFormer-V2.5-46.2M | 46,2 M | 8 s a 44,1 kHz | 10,09 | MIT | HuggingFace |
-| Mini-BS-RoFormer-V2-46.8M | 46,8 M | 8 s a 44,1 kHz | 10,03 | no disponible | HuggingFace |
+| Mini-BS-RoFormer-V2.5-46.2M | 46,2 M | 8 s a 44,1 kHz | 10,09 | MIT | Hugging Face |
+| Mini-BS-RoFormer-V2-46.8M | 46,8 M | 8 s a 44,1 kHz | 10,03 | no disponible | Hugging Face |
 | BS-RoFormer original (paper) | no disponible | no disponible | no disponible | no disponible | GitHub (lucidrains) |
 
 No se dispone de datos de otros modelos comparables (por ejemplo, Demucs, Spleeter o HTDemucs) en la información proporcionada, por lo que no se incluyen en la tabla.
@@ -93,8 +93,8 @@ No se dispone de datos de otros modelos comparables (por ejemplo, Demucs, Spleet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Acapellas/Mini-BS-RoFormer-V2.5-46.2M
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/HiDolen/Mini-BS-RoFormer-V2.5-46.2M-Demo
+- Modelo en Hugging Face: https://huggingface.co/Acapellas/Mini-BS-RoFormer-V2.5-46.2M
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/HiDolen/Mini-BS-RoFormer-V2.5-46.2M-Demo
 - Modelo predecesor V2: https://huggingface.co/HiDolen/Mini-BS-RoFormer-V2-46.8M
 - Repositorio de referencia BS-RoFormer: https://github.com/lucidrains/BS-RoFormer
 - Paper: https://arxiv.org/abs/2309.02612 (Music Source Separation with Band-Split RoPE Transformer)

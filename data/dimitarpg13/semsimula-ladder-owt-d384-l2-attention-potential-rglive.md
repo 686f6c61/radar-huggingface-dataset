@@ -72,11 +72,11 @@ Notas del autor recogidas en la model card: mejor valor de 59,09 en el paso 31.0
 
 | Modelo | Parametros | Contexto | PPL OpenWebText (bloque 512) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| `attention-potential-rglive` (esta sonda) | no disponible (d384, L2) | no disponible (evaluado a 512) | 61,11 | cc-by-4.0 | HuggingFace |
-| `attention_potential` (padre) | no disponible (d384, L2) | no disponible | 80,90 | cc-by-4.0 | HuggingFace |
-| `attention` (campo no conservativo) | no disponible (d384, L2) | no disponible | 63,51 | cc-by-4.0 | HuggingFace |
-| `none` (sin campo de intercambio) | no disponible (d384, L2) | no disponible | 66,98 | cc-by-4.0 | HuggingFace |
-| `gpt2-matched` | no disponible (emparejado en tokens) | no disponible | 49,81 | no disponible | HuggingFace |
+| `attention-potential-rglive` (esta sonda) | no disponible (d384, L2) | no disponible (evaluado a 512) | 61,11 | cc-by-4.0 | Hugging Face |
+| `attention_potential` (padre) | no disponible (d384, L2) | no disponible | 80,90 | cc-by-4.0 | Hugging Face |
+| `attention` (campo no conservativo) | no disponible (d384, L2) | no disponible | 63,51 | cc-by-4.0 | Hugging Face |
+| `none` (sin campo de intercambio) | no disponible (d384, L2) | no disponible | 66,98 | cc-by-4.0 | Hugging Face |
+| `gpt2-matched` | no disponible (emparejado en tokens) | no disponible | 49,81 | no disponible | Hugging Face |
 
 Las alternativas comparables son otros brazos del mismo estudio, ya que no hay modelos publicos de la misma familia conservativa fuera de este "ladder". Frente a GPT-2 de referencia, este modelo queda un 22,7 % peor en perplexity de validacion.
 
@@ -95,7 +95,7 @@ Las alternativas comparables son otros brazos del mismo estudio, ya que no hay m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential-rglive
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential-rglive
 - Modelo padre (`attention_potential`): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential
 - Contraparte Gen 3 "everything-live" (`attention_potential` con RELAX_GRAD_PATH, VPHI_GRAD_PATH y XI_GRAD_PATH en 'live'): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential
 - Brazo con campo no conservativo (`attention`): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention

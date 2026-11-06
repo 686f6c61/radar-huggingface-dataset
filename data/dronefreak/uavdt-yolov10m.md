@@ -109,7 +109,7 @@ Comparativa dentro del zoo de UAVDT publicado por el autor (mismas condiciones d
 
 | Modelo | Parámetros | Contexto / entrada | mAP@50 en UAVDT (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dronefreak/uavdt-yolov10m | 16,6 M | 640 px | 30,12 | AGPL-3.0 | HuggingFace (0 descargas, repo de 0,0 GB) |
+| dronefreak/uavdt-yolov10m | 16,6 M | 640 px | 30,12 | AGPL-3.0 | Hugging Face (0 descargas, repo de 0,0 GB) |
 | YOLOv26s (zoo UAVDT) | No disponible | No disponible | 32,98 | No disponible en la información | Evaluado en DetectionBench |
 | RF-DETR Nano (zoo UAVDT) | No disponible | No disponible | 32,78 | No disponible en la información | Evaluado en DetectionBench |
 | RF-DETR Small (zoo UAVDT) | No disponible | No disponible | 32,62 | No disponible en la información | Evaluado en DetectionBench |
@@ -133,8 +133,8 @@ Dentro del zoo publicado por el propio autor, este checkpoint ocupa la sexta pos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolov10m
-- Conjunto de datos UAVDT (HuggingFace): https://huggingface.co/datasets/dronefreak/UAVDT
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolov10m
+- Conjunto de datos UAVDT (Hugging Face): https://huggingface.co/datasets/dronefreak/UAVDT
 - Modelo base: https://huggingface.co/Ultralytics/YOLOv10
 - Repositorio DetectionBench (fuente de las métricas): https://github.com/dronefreak/DetectionBench
 - Demostración en vídeo incluida en el repositorio: https://huggingface.co/dronefreak/uavdt-yolov10m/resolve/main/assets/demo_banner.mp4

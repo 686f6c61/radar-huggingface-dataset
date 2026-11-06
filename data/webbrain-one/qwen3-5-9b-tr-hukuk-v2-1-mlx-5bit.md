@@ -111,7 +111,7 @@ No se dispone de datos para comparar con otros modelos legales en turco de taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-MLX-5bit
+- Modelo en Hugging Face: https://huggingface.co/webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-MLX-5bit
 - Variante GGUF: https://huggingface.co/webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-GGUF
 - Variante MLX 4 bits: https://huggingface.co/webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-MLX-4bit
 - Conjunto de datos de entrenamiento: https://huggingface.co/webbrain-one/hukuk-dataset-v2

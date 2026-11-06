@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `1234Frede/v3chronos2-lora-dk1-no2` es un adaptador LoRA publicado en HuggingFace por el usuario `1234Frede`. Está construido sobre el modelo base `amazon/chronos-2`, según indica la metadata del repositorio, y utiliza la librería PEFT (versión 0.20.0) para el ajuste fino. Sin embargo, la model card del autor no contiene información descriptiva: todos los campos están marcados como `[More Information Needed]`, por lo que no se dispone de datos sobre el propósito del adaptador, los datos de entrenamiento, las capacidades específicas ni la licencia.
+El modelo `1234Frede/v3chronos2-lora-dk1-no2` es un adaptador LoRA publicado en Hugging Face por el usuario `1234Frede`. Está construido sobre el modelo base `amazon/chronos-2`, según indica la metadata del repositorio, y utiliza la librería PEFT (versión 0.20.0) para el ajuste fino. Sin embargo, la model card del autor no contiene información descriptiva: todos los campos están marcados como `[More Information Needed]`, por lo que no se dispone de datos sobre el propósito del adaptador, los datos de entrenamiento, las capacidades específicas ni la licencia.
 
 El repositorio no registra descargas ni me gusta, y su tamaño es de 0.0 GB, lo que sugiere que se trata de un adaptador de pesos pequeños (típico de LoRA) sin uso verificado. La fecha de creación es el 14 de septiembre de 2026, por lo que el modelo es muy reciente o su fecha es un error. En cualquier caso, no hay información pública que permita evaluar su rendimiento o su utilidad práctica.
 
@@ -63,4 +63,4 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/1234Frede/v3chronos2-lora-dk1-no2](https://huggingface.co/1234Frede/v3chronos2-lora-dk1-no2)
+- Repositorio en Hugging Face: [https://huggingface.co/1234Frede/v3chronos2-lora-dk1-no2](https://huggingface.co/1234Frede/v3chronos2-lora-dk1-no2)

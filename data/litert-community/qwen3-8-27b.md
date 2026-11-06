@@ -77,8 +77,8 @@ Los datos disponibles son los reportados por el autor de la conversión y por Qw
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (LiteRT-LM, esta ficha) | 26,9B (solo texto) | Caché KV de 4.096 tokens | Apache 2.0 | `.litertlm` | HuggingFace, 177 descargas |
-| Qwen/Qwen3.8-27B (original) | 27,8B (multimodal) | No disponible | Apache 2.0 (según base) | safetensors (presumible) | HuggingFace |
+| Qwen3.8-27B (LiteRT-LM, esta ficha) | 26,9B (solo texto) | Caché KV de 4.096 tokens | Apache 2.0 | `.litertlm` | Hugging Face, 177 descargas |
+| Qwen/Qwen3.8-27B (original) | 27,8B (multimodal) | No disponible | Apache 2.0 (según base) | safetensors (presumible) | Hugging Face |
 | Modelos densos de ~27B de la familia Qwen3.5 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría en la información proporcionada.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Qwen3.8-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Configuración de metadatos Qwen3.5 en LiteRT-LM v0.19.0: https://github.com/google-ai-edge/LiteRT-LM/blob/v0.19.0/models/qwen3_5/LlmMetadataProto.pbtext

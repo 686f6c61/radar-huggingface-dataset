@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Gemopus-4-31B-it-FP8
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Gemopus-4-31B-it-FP8
 - Modelo base (Jackrong/Gemopus-4-31B-it): https://huggingface.co/Jackrong/Gemopus-4-31B-it
 - Paper de referencia (Ren et al., 2026): https://arxiv.org/abs/2604.06628

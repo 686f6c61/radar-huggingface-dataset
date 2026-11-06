@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros del adaptador | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Twinber/sdxl-oldbook-illustrations-lora | LoRA sobre SDXL | 11,8 M / 23,6 M / 47,2 M | SDXL 1.0 Base | 1024x1024 | openrail++ | HuggingFace (38 descargas) |
-| SDXL 1.0 Base (sin adaptador) | Modelo fundacional | No aplica | - | 1024x1024 | openrail++ | HuggingFace |
-| LoRA de estilo vintage genericos sobre SDXL | LoRA sobre SDXL | Variable segun autor | SDXL 1.0 Base | 1024x1024 | Variable | HuggingFace |
-| Modelos de difusion especializados en grabado (p. ej. adaptadores sobre SD 1.5) | LoRA / DreamBooth | Variable | SD 1.5 | 512x512 | Variable | HuggingFace |
+| Twinber/sdxl-oldbook-illustrations-lora | LoRA sobre SDXL | 11,8 M / 23,6 M / 47,2 M | SDXL 1.0 Base | 1024x1024 | openrail++ | Hugging Face (38 descargas) |
+| SDXL 1.0 Base (sin adaptador) | Modelo fundacional | No aplica | - | 1024x1024 | openrail++ | Hugging Face |
+| LoRA de estilo vintage genericos sobre SDXL | LoRA sobre SDXL | Variable segun autor | SDXL 1.0 Base | 1024x1024 | Variable | Hugging Face |
+| Modelos de difusion especializados en grabado (p. ej. adaptadores sobre SD 1.5) | LoRA / DreamBooth | Variable | SD 1.5 | 512x512 | Variable | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas. La comparativa se limita a caracteristicas estructurales.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Twinber/sdxl-oldbook-illustrations-lora
+- Hugging Face: https://huggingface.co/Twinber/sdxl-oldbook-illustrations-lora
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Matriz comparativa visual: https://huggingface.co/Twinber/sdxl-oldbook-illustrations-lora/blob/main/comparisons/master_grid_10x4.png

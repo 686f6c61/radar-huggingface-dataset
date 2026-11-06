@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shuvam4849/vidhyaarthi-model` es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, desarrollado por el usuario shuvam4849. Se trata de una adaptación del modelo base Llama 3.1 8B Instruct mediante técnicas de entrenamiento eficiente con la librería Unsloth y el framework TRL de HuggingFace. El modelo está diseñado para generación de texto en inglés y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+El modelo `shuvam4849/vidhyaarthi-model` es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, desarrollado por el usuario shuvam4849. Se trata de una adaptación del modelo base Llama 3.1 8B Instruct mediante técnicas de entrenamiento eficiente con la librería Unsloth y el framework TRL de Hugging Face. El modelo está diseñado para generación de texto en inglés y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 La relevancia de este modelo radica en que demuestra un flujo de fine-tuning accesible y rápido sobre una arquitectura puntera como Llama 3.1, aunque no se especifica el dominio o tarea concreta para la que fue ajustado. Con 8.030 millones de parámetros, mantiene el tamaño del modelo base y hereda sus capacidades generales de razonamiento, generación de texto y seguimiento de instrucciones, aunque no se han publicado detalles sobre el dataset de entrenamiento ni métricas de rendimiento específicas.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que demuestra un flujo de fine-tuning acc
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de Llama 3.1 8B Instruct, una arquitectura transformer autoregresiva con atención multi-cabeza y normalización RMSNorm. El entrenamiento se realizó utilizando Unsloth, una librería que optimiza el fine-tuning mediante kernels personalizados y reducción de memoria, y HuggingFace TRL para el bucle de entrenamiento. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo base ya incorpora instrucciones de chat y alineación, por lo que el fine-tuning probablemente busca adaptarlo a un dominio específico, aunque no se detalla cuál.
+El modelo es un fine-tuning de Llama 3.1 8B Instruct, una arquitectura transformer autoregresiva con atención multi-cabeza y normalización RMSNorm. El entrenamiento se realizó utilizando Unsloth, una librería que optimiza el fine-tuning mediante kernels personalizados y reducción de memoria, y Hugging Face TRL para el bucle de entrenamiento. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo base ya incorpora instrucciones de chat y alineación, por lo que el fine-tuning probablemente busca adaptarlo a un dominio específico, aunque no se detalla cuál.
 
 ## Capacidades
 
@@ -49,16 +49,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 8B parámetros, en FP16 se requieren aproximadamente 16 GB de VRAM; en cuantización de 4 bits, unos 4-5 GB.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16, o GPUs con al menos 8 GB para cuantización 4-bit. Para despliegue en producción, A100 o H100.
 - Compatibilidad con GPUs de consumo: sí, una RTX 3060 de 12 GB puede ejecutar el modelo en 4-bit, aunque con menor velocidad.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers.
 - Latencia y throughput: no se dispone de datos medidos; dependerá del hardware y la cuantización.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| shuvam4849/vidhyaarthi-model | 8.03B | No disponible | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8.03B | 128k | Llama 3.1 Community License | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.3B | 32k | Apache 2.0 | HuggingFace |
+| shuvam4849/vidhyaarthi-model | 8.03B | No disponible | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8.03B | 128k | Llama 3.1 Community License | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.3B | 32k | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parámetros y licencia, ya que no hay datos de rendimiento para el modelo evaluado. El modelo base Llama 3.1 8B Instruct es la referencia natural, y Mistral 7B es una alternativa de tamaño similar con licencia abierta.
 
@@ -72,6 +72,6 @@ La comparativa se limita a parámetros y licencia, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuvam4849/vidhyaarthi-model
+- Modelo en Hugging Face: https://huggingface.co/shuvam4849/vidhyaarthi-model
 - Perfil de GitHub del autor: https://github.com/shuvam4849/
 - Librería Unsloth: https://github.com/unslothai/unsloth

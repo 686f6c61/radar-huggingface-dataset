@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StereoCrafter-DUPLI (esta réplica) | 1.524.625.962 | No disponible | 2D a estéreo 3D | `other` | HuggingFace (réplica no oficial) |
-| StereoCrafter (TencentARC) | No disponible en la información | No disponible | 2D a estéreo 3D | No disponible en la información | HuggingFace (oficial) |
+| StereoCrafter-DUPLI (esta réplica) | 1.524.625.962 | No disponible | 2D a estéreo 3D | `other` | Hugging Face (réplica no oficial) |
+| StereoCrafter (TencentARC) | No disponible en la información | No disponible | 2D a estéreo 3D | No disponible en la información | Hugging Face (oficial) |
 | Otros modelos de estereoscopía 2D a 3D | No disponible | No disponible | 2D a estéreo 3D | No disponible | No disponible |
 
 No se dispone de información suficiente para comparar con alternativas de la misma categoría en parámetros, contexto o rendimiento.
@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace (réplica): https://huggingface.co/Microguy1/StereoCrafter-DUPLI
-- Repositorio HuggingFace oficial: https://huggingface.co/TencentARC/StereoCrafter
+- Repositorio Hugging Face (réplica): https://huggingface.co/Microguy1/StereoCrafter-DUPLI
+- Repositorio Hugging Face oficial: https://huggingface.co/TencentARC/StereoCrafter
 - Paper: https://arxiv.org/abs/2409.07447
 - Página del proyecto: https://stereocrafter.github.io/

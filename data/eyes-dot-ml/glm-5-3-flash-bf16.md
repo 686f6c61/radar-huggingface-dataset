@@ -4,7 +4,7 @@
 
 GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por Z.ai (anteriormente Zhipu AI). Con 321.323 millones de parámetros totales y solo 18.000 millones activos, emplea una arquitectura híbrida que combina atención sparse y lineal, una novedad en la serie GLM. Esta combinación reduce drásticamente los costes de inferencia en contextos largos, manteniendo a la vez una alta precisión en tareas que requieren ventanas de contexto extensas.
 
-El modelo destaca por su rendimiento en tareas de codificación y agentes, acercándose a Claude Opus 4.8 en benchmarks de programación y razonamiento agéntico, según los datos publicados por el equipo desarrollador. Su licencia MIT permite uso comercial sin restricciones, y su diseño eficiente (18B activos de 320B totales) lo hace viable para despliegue en producción a una fracción del coste de modelos comparables. El repositorio en HuggingFace incluye pesos en formato safetensors con precisión BF16, ocupando aproximadamente 642,7 GB.
+El modelo destaca por su rendimiento en tareas de codificación y agentes, acercándose a Claude Opus 4.8 en benchmarks de programación y razonamiento agéntico, según los datos publicados por el equipo desarrollador. Su licencia MIT permite uso comercial sin restricciones, y su diseño eficiente (18B activos de 320B totales) lo hace viable para despliegue en producción a una fracción del coste de modelos comparables. El repositorio en Hugging Face incluye pesos en formato safetensors con precisión BF16, ocupando aproximadamente 642,7 GB.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ GLM-5.3-Flash se posiciona como alternativa open-weights a modelos propietarios 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eyes-dot-ml/GLM-5.3-Flash-BF16
+- Repositorio Hugging Face: https://huggingface.co/eyes-dot-ml/GLM-5.3-Flash-BF16
 - Repositorio oficial (zai-org): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763

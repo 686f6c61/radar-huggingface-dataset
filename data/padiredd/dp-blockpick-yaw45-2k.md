@@ -25,7 +25,7 @@ El repositorio incluye el checkpoint final (paso 100k) en la raíz y nueve check
 
 La política sigue el esquema de diffusion policy: un proceso DDPM de 100 pasos que genera secuencias de acciones condicionadas por observaciones visuales y propioceptivas. Cada una de las tres cámaras (cabeza, muñeca izquierda, muñeca derecha) se procesa con un backbone ResNet18 independiente a resolución 240x240; la observación se completa con un vector de estado articular de 22 dimensiones. La salida es un vector de 16 objetivos articulares a 15 Hz, con horizonte de predicción de 64 pasos de los que se ejecutan 32 y `n_obs_steps = 1`. El entrenamiento usó Adam con tasa 1e-4, scheduler coseno, batch de 32 y semilla 1000, durante 100.000 pasos en una única RTX 4090 de 24 GB compartida entre dos ejecuciones simultáneas.
 
-Los datos provienen del conjunto `pick-cube-topdown-yaw45-2k-full-dr2-3cam` (no publicado aún en HuggingFace): 2.000 demostraciones exitosas en simulación, 343.765 fotogramas, generadas por un planificador de movimiento (`grasp_planner`) con el eje de cierre de la pinza alineado al par de caras más cercano. Respecto al conjunto previo de 10.000 demostraciones, este amplía la distribución de orientación del bloque de ±10 grados a |yaw| de 0 a 45 grados con signo aleatorio, y mantiene la región alcanzable completa y la aleatorización `dr2`. El muestreo es uniforme sobre fotogramas (EpisodeAwareSampler por defecto de LeRobot). Se aplica aumento de imagen agresivo en orden aleatorio, con hasta cinco transformaciones entre brillo 0,6-1,4, contraste 0,6-1,4, saturación 0,3-1,7, tono ±0,1, nitidez 0,3-2,0, afín ±10 grados / 10 % / 0,9-1,1, perspectiva 0,2, desenfoque, borrado aleatorio y escala de grises. No se añadió ruido al estado.
+Los datos provienen del conjunto `pick-cube-topdown-yaw45-2k-full-dr2-3cam` (no publicado aún en Hugging Face): 2.000 demostraciones exitosas en simulación, 343.765 fotogramas, generadas por un planificador de movimiento (`grasp_planner`) con el eje de cierre de la pinza alineado al par de caras más cercano. Respecto al conjunto previo de 10.000 demostraciones, este amplía la distribución de orientación del bloque de ±10 grados a |yaw| de 0 a 45 grados con signo aleatorio, y mantiene la región alcanzable completa y la aleatorización `dr2`. El muestreo es uniforme sobre fotogramas (EpisodeAwareSampler por defecto de LeRobot). Se aplica aumento de imagen agresivo en orden aleatorio, con hasta cinco transformaciones entre brillo 0,6-1,4, contraste 0,6-1,4, saturación 0,3-1,7, tono ±0,1, nitidez 0,3-2,0, afín ±10 grados / 10 % / 0,9-1,1, perspectiva 0,2, desenfoque, borrado aleatorio y escala de grises. No se añadió ruido al estado.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-yaw45-2k | 287,5 M | 64 pasos (32 ejecutados) | Pick top-down, yaw ±45 grados, FFW SG2 | `other` | HuggingFace, checkpoints 10k-100k |
+| dp-blockpick-yaw45-2k | 287,5 M | 64 pasos (32 ejecutados) | Pick top-down, yaw ±45 grados, FFW SG2 | `other` | Hugging Face, checkpoints 10k-100k |
 | padiredd/pick-cube-topdown-region10k-full-dr2-3cam (referencia citada en la model card) | No disponible | No disponible | Pick top-down, yaw ±10 grados, misma plataforma | No disponible | Mencionado como dataset, no como modelo publicado |
 | Diffusion Policy original (Chi et al.) | Depende de la implementación | Configurable | Manipulación general | MIT (implementación de referencia) | Repositorio público, sin pesos específicos para esta tarea |
 | Otras políticas LeRobot del mismo autor | No disponible | No disponible | Tareas de pick en simulación | No disponible | No verificadas en la información proporcionada |
@@ -81,12 +81,12 @@ La comparación cuantitativa con alternativas no es posible: no hay métricas de
 - Riesgo de sobreajuste al planificador de movimiento: las demostraciones provienen de `grasp_planner`, no de teleoperación humana, lo que puede limitar la diversidad de estrategias de agarre.
 - Sin ruido de estado durante el entrenamiento: la política puede ser frágil ante ruido de sensores o estimación de estado imperfecta en el robot real.
 - El bucle DDPM de 100 pasos impone un coste de inferencia que debe validarse frente al ciclo de control de 15 Hz.
-- El dataset de entrenamiento no está publicado en HuggingFace, lo que dificulta la reproducción exacta del entrenamiento.
+- El dataset de entrenamiento no está publicado en Hugging Face, lo que dificulta la reproducción exacta del entrenamiento.
 - No hay información sobre sesgos demográficos ni de otro tipo, pero al no procesar lenguaje ni imágenes de personas, los riesgos de sesgo social son marginales frente a los riesgos de fallo físico en manipulación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-yaw45-2k
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-yaw45-2k
 - Dataset de referencia citado (no publicado aún): `pick-cube-topdown-yaw45-2k-full-dr2-3cam`
 - Dataset previo citado: `padiredd/pick-cube-topdown-region10k-full-dr2-3cam`
 - LeRobot (framework): https://github.com/huggingface/lerobot

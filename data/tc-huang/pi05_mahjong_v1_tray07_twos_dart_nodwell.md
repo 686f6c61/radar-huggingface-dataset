@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell` | no disponible | no disponible | Pick-and-place de ficha nombrada (SO-101, Isaac Lab); sin fotogramas de dwell | Gemma Terms of Use | HuggingFace |
-| `tc-huang/pi05_mahjong_v1_tray07_twos_dart` | no disponible | no disponible | Misma tarea; incluye fotogramas de dwell (se quedaba en el hover en 84/84 episodios) | Gemma Terms of Use | HuggingFace |
-| `tc-huang/pi05_mahjong_v1_tray07_twos_30k` | no disponible | no disponible | Misma tarea; etapa de entrenamiento previa sobre demostraciones empujadas | Gemma Terms of Use | HuggingFace |
-| `lerobot/pi05_base` | no disponible | no disponible | Modelo base pi0.5 (contiene PaliGemma), sin ajuste a tarea | Gemma Terms of Use | HuggingFace |
+| `tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell` | no disponible | no disponible | Pick-and-place de ficha nombrada (SO-101, Isaac Lab); sin fotogramas de dwell | Gemma Terms of Use | Hugging Face |
+| `tc-huang/pi05_mahjong_v1_tray07_twos_dart` | no disponible | no disponible | Misma tarea; incluye fotogramas de dwell (se quedaba en el hover en 84/84 episodios) | Gemma Terms of Use | Hugging Face |
+| `tc-huang/pi05_mahjong_v1_tray07_twos_30k` | no disponible | no disponible | Misma tarea; etapa de entrenamiento previa sobre demostraciones empujadas | Gemma Terms of Use | Hugging Face |
+| `lerobot/pi05_base` | no disponible | no disponible | Modelo base pi0.5 (contiene PaliGemma), sin ajuste a tarea | Gemma Terms of Use | Hugging Face |
 
 No se dispone de valores de benchmarks comparativos entre estas variantes en la informacion proporcionada; la diferencia documentada es de procedencia de datos (filtrado de dwell) y de etapa de entrenamiento.
 
@@ -90,7 +90,7 @@ No se dispone de valores de benchmarks comparativos entre estas variantes en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell
+- Modelo en Hugging Face: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell
 - Modelo base: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_dart
 - Etapa de entrenamiento previa: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_30k
 - Conjunto de datos: https://huggingface.co/datasets/tc-huang/mahjong_v1_tray07_twos_dart

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya fa spam detection es un ajuste fino (fine-tuning) del checkpoint multilingue de Laya, un framework de agentes, publicado por el usuario mo-shadfar en HuggingFace. El modelo se ha entrenado especificamente sobre un conjunto de datos persa de atencion al cliente, con el objetivo de resolver tareas de deteccion de spam y clasificacion de intenciones, urgencia y preguntas nulas (etiquetadas como "noul" en la model card). El repositorio pesa 0,7 GB y los pesos en safetensors suman 321.908.998 parametros, lo que lo situa en la categoria de modelos pequenos (aproximadamente 0,3 mil millones de parametros), aptos para inferencia en hardware modesto.
+Laya fa spam detection es un ajuste fino (fine-tuning) del checkpoint multilingue de Laya, un framework de agentes, publicado por el usuario mo-shadfar en Hugging Face. El modelo se ha entrenado especificamente sobre un conjunto de datos persa de atencion al cliente, con el objetivo de resolver tareas de deteccion de spam y clasificacion de intenciones, urgencia y preguntas nulas (etiquetadas como "noul" en la model card). El repositorio pesa 0,7 GB y los pesos en safetensors suman 321.908.998 parametros, lo que lo situa en la categoria de modelos pequenos (aproximadamente 0,3 mil millones de parametros), aptos para inferencia en hardware modesto.
 
 El problema que aborda es concreto: automatizar la triaje de mensajes entrantes en un canal de atencion al cliente en persa, distinguiendo entre consultas legitimas, spam y consultas sin contenido util. Para ello se apoya en el paradigma "system-one" y en la receta RLCD (Reinforcement Learning from Contrastive Data), tecnicas asociadas al ecosistema Laya, que combinan el ajuste supervisado con objetivos suaves (soft targets) sobre las categorias de salida.
 
@@ -78,5 +78,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mo-shadfar/laya-fa-spam-detectiom
+- Hugging Face: https://huggingface.co/mo-shadfar/laya-fa-spam-detectiom
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) asociados a este modelo.

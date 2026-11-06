@@ -95,7 +95,7 @@ La diferencia de cobertura entre este paquete y el PhoWhisper-medium original es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aoiandroid/whisper-vi-phowhisper-medium-whisperkit-coreml-ios
+- Repositorio en Hugging Face: https://huggingface.co/aoiandroid/whisper-vi-phowhisper-medium-whisperkit-coreml-ios
 - Modelo base: https://huggingface.co/vinai/PhoWhisper-medium
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-medium
 - Repositorio y paper de PhoWhisper: https://github.com/VinAIResearch/PhoWhisper

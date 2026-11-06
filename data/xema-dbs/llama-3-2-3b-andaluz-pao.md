@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Andaluz-PAO es un ajuste fino (fine-tune) del modelo unsloth/Llama-3.2-3B-Instruct-bnb-4bit, publicado por el usuario xema-dbs en HuggingFace. Se trata, por tanto, de un modelo derivado de la familia Llama 3.2 en su variante de 3.000 millones de parametros, specializada en instrucciones y conversacion, sobre la que el autor ha aplicado un entrenamiento adicional con Unsloth y la libreria TRL de HuggingFace. El repositorio contiene 3.212.749.824 parametros en formato safetensors (6,4 GB, compatible con pesos de 16 bits) y se distribuye bajo licencia Apache 2.0.
+Llama-3.2-3B-Andaluz-PAO es un ajuste fino (fine-tune) del modelo unsloth/Llama-3.2-3B-Instruct-bnb-4bit, publicado por el usuario xema-dbs en Hugging Face. Se trata, por tanto, de un modelo derivado de la familia Llama 3.2 en su variante de 3.000 millones de parametros, specializada en instrucciones y conversacion, sobre la que el autor ha aplicado un entrenamiento adicional con Unsloth y la libreria TRL de Hugging Face. El repositorio contiene 3.212.749.824 parametros en formato safetensors (6,4 GB, compatible con pesos de 16 bits) y se distribuye bajo licencia Apache 2.0.
 
 La relevancia de esta publicacion es limitada y hay que enmarcarla con honestidad: la model card es minima (no documenta dataset, hiperparametros, numero de pasos ni evaluaciones), el repositorio no registra descargas ni interacciones, y la unica informacion tecnica disponible es que el entrenamiento se realizo con Unsloth, que el autor afirma que fue "2x mas rapido" y que el modelo base es un checkpoint ya cuantizado a 4 bits. El nombre sugiere una especializacion en andaluz, pero la etiqueta de idioma declarada es unicamente `en`, lo que contradice esa intuicion y no hay documentacion que la respalde.
 
@@ -25,7 +25,7 @@ En la practica, debe tratarse como un experimento de ajuste fino personal mas qu
 
 La arquitectura es la del modelo base: un transformer decoder-only de Llama 3.2 en su variante de 3B parametros, con atencion causal y el tokenizador de la familia Llama 3. La model card no aporta ningun detalle adicional sobre numero de capas, dimension oculta, cabezas de atencion, uso de GQA o estrategia de RoPE, por lo que cualquier cifra concreta sobre estos elementos debe consultarse en la documentacion oficial del modelo base, no en este repositorio.
 
-El proceso de ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, partiendo de un checkpoint ya cuantizado a 4 bits (unsloth/Llama-3.2-3B-Instruct-bnb-4bit). No se documentan el dataset utilizado, el numero de tokens de entrenamiento, la composicion del corpus, la existencia de fases de RLHF o DPO posteriores, la longitud de secuencia empleada ni los hiperparametros (learning rate, rango de LoRA, epochs). La unica afirmacion tecnica del autor es que el entrenamiento fue "2x mas rapido" gracias a Unsloth, una cifra que no se acompana de mediciones ni de comparaciones reproducibles. Tampoco se indica si el resultado final se fusiono (merge) con los pesos base o si se mantienen adaptadores, aunque el tamano del repositorio (6,4 GB, coherente con pesos de 16 bits para 3,2B parametros) sugiere una fusion completa de los pesos.
+El proceso de ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, partiendo de un checkpoint ya cuantizado a 4 bits (unsloth/Llama-3.2-3B-Instruct-bnb-4bit). No se documentan el dataset utilizado, el numero de tokens de entrenamiento, la composicion del corpus, la existencia de fases de RLHF o DPO posteriores, la longitud de secuencia empleada ni los hiperparametros (learning rate, rango de LoRA, epochs). La unica afirmacion tecnica del autor es que el entrenamiento fue "2x mas rapido" gracias a Unsloth, una cifra que no se acompana de mediciones ni de comparaciones reproducibles. Tampoco se indica si el resultado final se fusiono (merge) con los pesos base o si se mantienen adaptadores, aunque el tamano del repositorio (6,4 GB, coherente con pesos de 16 bits para 3,2B parametros) sugiere una fusion completa de los pesos.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ El proceso de ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFac
 - Capacidades de agente y razonamiento multi-paso: no documentadas ni evaluadas.
 - Capacidades multilingues: la model card declara unicamente ingles; a pesar del nombre "Andaluz", no hay evidencia de soporte de espanol ni de variedades dialectales del espanol.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad de despliegue: etiquetado como `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI o con Inference Endpoints de HuggingFace.
+- Compatibilidad de despliegue: etiquetado como `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI o con Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ El proceso de ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFac
 - Pruebas de concepto de asistentes conversacionales en ingles: con 3,2B parametros y pesos de 16 bits, se puede desplegar en una unica GPU de consumo para prototipos de chat multi-turno donde la latencia importa mas que la calidad punta.
 - Generacion de texto a pequena escala en local: resumenes, reescritura y clasificacion de textos cortos en ingles sobre hardware modesto, aceptando la perdida de calidad frente a modelos mayores.
 - Evaluacion comparativa de fine-tunes: como punto de partida en estudios sobre el impacto de ajustes finos no documentados frente al modelo base original.
-- Docencia y formacion: ejemplo de publicacion en HuggingFace con model card minima, util para ilustrar buenas practicas de documentacion de modelos y sus carencias.
+- Docencia y formacion: ejemplo de publicacion en Hugging Face con model card minima, util para ilustrar buenas practicas de documentacion de modelos y sus carencias.
 - Base para nuevos ajustes: al estar en Apache 2.0 y en safetensors, puede reutilizarse como punto de partida de experimentos posteriores, siempre que se valide antes su calidad real.
 - Despliegue en entornos con restricciones de VRAM: cuantizado a 8 o 4 bits ocupa aproximadamente 3,5 GB y 2 GB respectivamente, lo que permite ejecutarlo en GPUs de gama media o en CPU con llama.cpp tras convertir los pesos.
 
@@ -60,18 +60,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en 4 bits (GPTQ/AWQ/GGUF Q4): aproximadamente 2,5-3,5 GB, con contexto moderado.
 - GPU recomendadas: para 16 bits, RTX 4070/4080/4090 (12-24 GB), L4 (24 GB), A10G (24 GB); para 4 bits, RTX 3060 12 GB, RTX 4060 Ti 8/16 GB, e incluso iGPU con suficiente memoria compartida.
 - Cabe en GPU de consumo: si, en cualquier GPU con 8 GB o mas en 16 bits y en GPUs de 4-6 GB con cuantizacion de 4 bits.
-- Opciones de despliegue: transformers (formato nativo), TGI (etiqueta `text-generation-inference`), Inference Endpoints de HuggingFace, vLLM (requiere pesos en 16 bits y GPU), llama.cpp/Ollama (requiere conversion previa a GGUF, no incluida en el repositorio).
+- Opciones de despliegue: transformers (formato nativo), TGI (etiqueta `text-generation-inference`), Inference Endpoints de Hugging Face, vLLM (requiere pesos en 16 bits y GPU), llama.cpp/Ollama (requiere conversion previa a GGUF, no incluida en el repositorio).
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones. Como referencia de orden de magnitud para un modelo de 3B en 16 bits sobre una RTX 4090, cabria esperar decenas de tokens por segundo, pero es una estimacion no verificada para este fine-tune concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| xema-dbs/Llama-3.2-3B-Andaluz-PAO | 3.212.749.824 | No documentado en la model card (el base declara 128.000) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin evaluaciones ni dataset documentado |
-| unsloth/Llama-3.2-3B-Instruct-bnb-4bit (modelo base) | 3.212.749.824 | 128.000 tokens (segun documentacion de Llama 3.2) | Apache 2.0 | HuggingFace, ampliamente utilizado | Checkpoint cuantizado a 4 bits para entrenamiento; referencia directa de comparacion |
-| meta-llama/Llama-3.2-3B-Instruct | 3.212.749.824 | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace | Modelo original de Meta, con evaluaciones publicadas y gated access |
-| Qwen2.5-3B-Instruct | ~3.090 millones | 32.768 tokens (128K en variantes extendidas) | Apache 2.0 | HuggingFace | Alternativa de tamano similar con buen rendimiento en codigo y matematicas segun sus publicaciones |
-| Gemma 2 2B Instruct | ~2.600 millones | 8.192 tokens | Licencia Gemma | HuggingFace (gated) | Alternativa algo menor, contexto mas corto |
+| xema-dbs/Llama-3.2-3B-Andaluz-PAO | 3.212.749.824 | No documentado en la model card (el base declara 128.000) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin evaluaciones ni dataset documentado |
+| unsloth/Llama-3.2-3B-Instruct-bnb-4bit (modelo base) | 3.212.749.824 | 128.000 tokens (segun documentacion de Llama 3.2) | Apache 2.0 | Hugging Face, ampliamente utilizado | Checkpoint cuantizado a 4 bits para entrenamiento; referencia directa de comparacion |
+| meta-llama/Llama-3.2-3B-Instruct | 3.212.749.824 | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face | Modelo original de Meta, con evaluaciones publicadas y gated access |
+| Qwen2.5-3B-Instruct | ~3.090 millones | 32.768 tokens (128K en variantes extendidas) | Apache 2.0 | Hugging Face | Alternativa de tamano similar con buen rendimiento en codigo y matematicas segun sus publicaciones |
+| Gemma 2 2B Instruct | ~2.600 millones | 8.192 tokens | Licencia Gemma | Hugging Face (gated) | Alternativa algo menor, contexto mas corto |
 
 No se dispone de datos de rendimiento de este fine-tune que permitan una comparacion cuantitativa con las alternativas; la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -89,10 +89,10 @@ No se dispone de datos de rendimiento de este fine-tune que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xema-dbs/Llama-3.2-3B-Andaluz-PAO
+- Modelo en Hugging Face: https://huggingface.co/xema-dbs/Llama-3.2-3B-Andaluz-PAO
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 
 Nota: la busqueda web realizada no ha devuelto enlaces tecnicos relevantes sobre este modelo; los resultados obtenidos corresponden a sitios sin relacion con el contenido de la ficha y se han descartado.

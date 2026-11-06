@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_d2_noaug` es una politica de aprendizaje por imitacion basada en ACT (Action Chunking with Transformers), publicada por el usuario zijian2022 en HuggingFace bajo la libreria LeRobot. No es un modelo de lenguaje: se trata de un checkpoint de control robótico que traduce observaciones visuales y de estado del robot en secuencias de acciones motoras. Concretamente, el modelo se ha entrenado para la tarea de apilar un objeto rojo sobre uno azul con un brazo robotico FANUC ER-4iA equipado con camara de muneca fija, segun se deduce del dataset asociado `zijian2022/fanuc_er4ia_stack_red_on_blue_d2_fixwrist_dr`.
+`act_d2_noaug` es una politica de aprendizaje por imitacion basada en ACT (Action Chunking with Transformers), publicada por el usuario zijian2022 en Hugging Face bajo la libreria LeRobot. No es un modelo de lenguaje: se trata de un checkpoint de control robótico que traduce observaciones visuales y de estado del robot en secuencias de acciones motoras. Concretamente, el modelo se ha entrenado para la tarea de apilar un objeto rojo sobre uno azul con un brazo robotico FANUC ER-4iA equipado con camara de muneca fija, segun se deduce del dataset asociado `zijian2022/fanuc_er4ia_stack_red_on_blue_d2_fixwrist_dr`.
 
 El modelo cuenta con 51.609.223 parametros (aproximadamente 51,6 M) almacenados en formato safetensors, con un tamano de repositorio de 0,2 GB. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificacion sin restricciones adicionales. El entrenamiento se realizo durante 30.000 pasos con un batch size de 16, sin aumento de imagen (de ahi el sufijo `noaug`) y con un `chunk_size` y `n_action_steps` de 40, lo que implica que cada inferencia produce un bloque de 40 acciones consecutivas que se ejecutan antes de volver a evaluar la politica.
 
@@ -83,7 +83,7 @@ No se dispone de datos cuantitativos de los modelos alternativos en la informaci
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zijian2022/act_d2_noaug | ACT, aprendizaje por imitacion | 51,6 M | No aplica | Apache 2.0 | HuggingFace (0 descargas) |
+| zijian2022/act_d2_noaug | ACT, aprendizaje por imitacion | 51,6 M | No aplica | Apache 2.0 | Hugging Face (0 descargas) |
 | Otros checkpoints ACT del mismo autor (`d2` con aumento) | ACT | No disponible | No aplica | No disponible | No disponible en la informacion facilitada |
 | ACT original (Zhao et al., 2023) | ACT | No disponible | No aplica | No disponible | Publicacion academica y repositorio de referencia |
 | Diffusion Policy (Chi et al., 2023) | Politica por difusion | No disponible | No aplica | No disponible | Publicacion academica |
@@ -104,8 +104,8 @@ No se dispone de alternativas comparables con datos verificados dentro de la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zijian2022/act_d2_noaug
+- Modelo en Hugging Face: https://huggingface.co/zijian2022/act_d2_noaug
 - Dataset de entrenamiento: https://huggingface.co/datasets/zijian2022/fanuc_er4ia_stack_red_on_blue_d2_fixwrist_dr
-- Libreria LeRobot (HuggingFace): https://github.com/huggingface/lerobot
+- Libreria LeRobot (Hugging Face): https://github.com/huggingface/lerobot
 - Paper de ACT (Zhao et al., 2023): https://arxiv.org/abs/2304.13705
 - Paper de Diffusion Policy (Chi et al., 2023): https://arxiv.org/abs/2303.04137

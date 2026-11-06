@@ -18,7 +18,7 @@ El acceso al repositorio es restringido (gated), por lo que los usuarios deben a
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | nvfp4, fp8, 8-bit (cuantización híbrida) |
 | Idiomas soportados | no disponibles |
-| Licencia | no disponible (acceso restringido en HuggingFace) |
+| Licencia | no disponible (acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors, optimizado para vLLM |
 
 ## Arquitectura y entrenamiento
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar su uso comercial.
+- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso comercial.
 - **Licencia no disponible**: no se especifica la licencia, por lo que no se garantiza permiso explícito para uso comercial o derivados.
 - **Sesgos y alucinaciones**: al ser un modelo de lenguaje grande, puede presentar sesgos presentes en sus datos de entrenamiento y generar contenido falso o inventado. No se han publicado evaluaciones de sesgo.
 - **Idiomas no especificados**: se desconoce qué idiomas soporta con calidad; probablemente el modelo base Hy3 esté optimizado para chino e inglés, pero no se confirma.
@@ -71,5 +71,5 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JasonW2025/Hy3-295B-A21B-HybridQuant-v1-vllm
+- Repositorio Hugging Face: https://huggingface.co/JasonW2025/Hy3-295B-A21B-HybridQuant-v1-vllm
 - Modelo base (referencia): tencent/Hy3 (sin enlace directo disponible en la información proporcionada)

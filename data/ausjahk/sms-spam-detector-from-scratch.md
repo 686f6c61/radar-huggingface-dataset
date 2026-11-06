@@ -78,7 +78,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ausjahk/sms-spam-detector-from-scratch
+- Hugging Face: https://huggingface.co/ausjahk/sms-spam-detector-from-scratch
 - Dataset Kaggle (SMS Spam Collection): https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 - Repositorio alternativo de detección de spam: https://github.com/adamspd/spam-detection-project
 - Repositorio alternativo de detección de spam: https://github.com/code-with-kursia/SMS-Spam-Detector

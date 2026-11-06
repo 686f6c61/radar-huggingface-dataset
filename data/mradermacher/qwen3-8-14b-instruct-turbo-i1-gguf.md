@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-14B-Instruct-Turbo-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-14B-Instruct-Turbo-i1-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Página del modelo en Ollama: https://ollama.com/library/qwen3.8

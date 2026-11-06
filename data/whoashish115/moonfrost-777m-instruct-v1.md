@@ -86,9 +86,9 @@ El ajuste de instrucciones apenas mueve los resultados respecto al modelo base: 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento (media de los 6 benchmarks) |
 |---|---|---|---|---|---|
-| Moonfrost-777M-Instruct-v1 | 777,2 M totales / 161,0 M activos | 1.024 tokens | apache-2.0 | HuggingFace, safetensors, requiere codigo remoto | 43,3 |
-| Moonfrost-777M (base) | 777,2 M totales / 161,0 M activos | 1.024 tokens | apache-2.0 | HuggingFace | 43,0 |
-| Moonfrost-777M-Instruct-v2 | 777,2 M totales / 161,0 M activos | 1.024 tokens | apache-2.0 | HuggingFace | 41,6 |
+| Moonfrost-777M-Instruct-v1 | 777,2 M totales / 161,0 M activos | 1.024 tokens | apache-2.0 | Hugging Face, safetensors, requiere codigo remoto | 43,3 |
+| Moonfrost-777M (base) | 777,2 M totales / 161,0 M activos | 1.024 tokens | apache-2.0 | Hugging Face | 43,0 |
+| Moonfrost-777M-Instruct-v2 | 777,2 M totales / 161,0 M activos | 1.024 tokens | apache-2.0 | Hugging Face | 41,6 |
 | SmolLM2-360M | no disponible en la informacion proporcionada (360 M segun denominacion) | no disponible | no disponible | no disponible | 51,6 |
 | Qwen2.5-0.5B | no disponible en la informacion proporcionada (0,5 B segun denominacion) | no disponible | no disponible | no disponible | 48,7 |
 | SmolLM2-135M | no disponible en la informacion proporcionada (135 M segun denominacion) | no disponible | no disponible | no disponible | 49,7 |
@@ -112,7 +112,7 @@ Las medias de la ultima columna estan calculadas sobre las seis puntuaciones pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v1
+- Modelo en Hugging Face: https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v1
 - Modelo base: https://huggingface.co/whoashish115/Moonfrost-777M
 - Variante conversacional: https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v2
 - Repositorio de codigo: https://github.com/whoashish115/moonfrost-ai

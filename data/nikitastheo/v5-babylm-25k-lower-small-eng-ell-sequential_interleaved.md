@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-babylm-25k-lower-small-eng-ell-sequential_interleaved` es un modelo de lenguaje causal (causal-LM) de tipo GPT-2, desarrollado por el usuario de HuggingFace nikitastheo, con 38.497.280 parametros y publicado en formato safetensors dentro de la libreria `transformers`. Su nombre y su configuracion de entrenamiento lo situan en el entorno de experimentacion del reto BabyLM, una linea de investigacion centrada en entrenar modelos con volumenes de datos comparables a los que recibe un nino durante sus primeros anos, en lugar de con corpus web masivos.
+El modelo `nikitastheo/v5-babylm-25k-lower-small-eng-ell-sequential_interleaved` es un modelo de lenguaje causal (causal-LM) de tipo GPT-2, desarrollado por el usuario de Hugging Face nikitastheo, con 38.497.280 parametros y publicado en formato safetensors dentro de la libreria `transformers`. Su nombre y su configuracion de entrenamiento lo situan en el entorno de experimentacion del reto BabyLM, una linea de investigacion centrada en entrenar modelos con volumenes de datos comparables a los que recibe un nino durante sus primeros anos, en lugar de con corpus web masivos.
 
 El modelo emplea el tokenizador `nikitastheo/babylm-25k-eng-lower-tokenizer` (vocabulario de aproximadamente 25.000 entradas, texto en minusculas) y esta entrenado sobre dos idiomas, ingles y griego, segun indica el sufijo `eng-ell`. La variante `sequential_interleaved` hace referencia a una estrategia curricular de exposicion a los idiomas, con un punto de conmutacion de lengua fijado en la epoca 10 de entrenamiento.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nikitastheo/v5-babylm-25k-lower-small-eng-ell-sequential_interleaved | 38,5 M | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Bilingue ingles-griego, texto en minusculas, vocabulario de 25.000 entradas |
+| nikitastheo/v5-babylm-25k-lower-small-eng-ell-sequential_interleaved | 38,5 M | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Bilingue ingles-griego, texto en minusculas, vocabulario de 25.000 entradas |
 | GPT-2 small | 124 M | 1024 tokens | MIT modificada | Muy extendida | Referencia de la familia GPT-2, solo ingles, licencia permisiva |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Muy extendida | Destilado de GPT-2, solo ingles, sin entrenamiento bilingue |
 | Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Muy extendida | Suite de investigacion con checkpoints intermedios, solo ingles |
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos y el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-small-eng-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-small-eng-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-25k-eng-lower-tokenizer
 - Reto BabyLM (contexto del proyecto, no confirmado en la model card): https://babylm.github.io/
 - Paper de referencia del reto BabyLM: https://arxiv.org/abs/2301.11796

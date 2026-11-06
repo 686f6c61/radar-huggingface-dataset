@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La comp
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2)
-- [HuggingFace - longtermrisk/Llama-3.1-8B-target-only-last-third](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-last-third)
-- [HuggingFace - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-target-only-last-third](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-last-third)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft)
 - [FriendliAI - Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting)
 - [GitHub - meta-llama/llama-models](https://github.com/meta-llama/llama-models)

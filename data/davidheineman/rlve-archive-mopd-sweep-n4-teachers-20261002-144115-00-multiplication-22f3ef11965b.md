@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidheineman/rlve-archive-mopd-sweep-n4-teachers-20261002-144115-00-multiplication-22f3ef11965b` es un checkpoint archivado de un experimento de investigación, no un modelo publicado como producto. Segun la model card, se trata del checkpoint final del run `mopd-sweep-n4-teachers-20261002-144115`, correspondiente a la tarea `00-Multiplication`, guardado en formato `hf-safetensors` en el paso 9 de entrenamiento y asociado al run de Weights & Biases `c631ba7d`. El autor es el usuario de HuggingFace `davidheineman` y el repositorio pertenece a la organización temática `rlve` con la etiqueta `scratch-archive`.
+El repositorio `davidheineman/rlve-archive-mopd-sweep-n4-teachers-20261002-144115-00-multiplication-22f3ef11965b` es un checkpoint archivado de un experimento de investigación, no un modelo publicado como producto. Segun la model card, se trata del checkpoint final del run `mopd-sweep-n4-teachers-20261002-144115`, correspondiente a la tarea `00-Multiplication`, guardado en formato `hf-safetensors` en el paso 9 de entrenamiento y asociado al run de Weights & Biases `c631ba7d`. El autor es el usuario de Hugging Face `davidheineman` y el repositorio pertenece a la organización temática `rlve` con la etiqueta `scratch-archive`.
 
 El checkpoint contiene 1.777.088.000 parámetros (aproximadamente 1,78 mil millones) y ocupa 3,6 GB en el repositorio, lo que es coherente con pesos almacenados en precisión de 16 bits (bf16/fp16). El tag `qwen2` indica que la arquitectura declarada corresponde a la familia Qwen2, mientras que `scratch-archive` sugiere que el modelo se entrenó desde cero en lugar de partir de pesos preentrenados públicamente disponibles. La nomenclatura del run (`mopd` y `n4-teachers`) apunta a un esquema de destilación con cuatro modelos profesores sobre una tarea aritmética concreta (multiplicación), aunque la model card no documenta el método.
 
@@ -48,7 +48,7 @@ Respecto al entrenamiento, la model card solo conserva metadatos operativos: rut
 - Reproduccion de experimentos de destilacion: el repositorio conserva el estado exacto del paso 9 y el run de W&B `c631ba7d`, por lo que sirve para auditar o replicar la curva de entrenamiento del barrido `mopd-sweep-n4-teachers`.
 - Investigacion sobre destilacion multi-profesor en tareas aritmeticas: el nombre del run apunta a cuatro profesores sobre `00-Multiplication`, de modo que el checkpoint puede usarse como referencia base para comparar estrategias de destilacion en dominios acotados.
 - Estudio de modelos entrenados desde cero a pequena escala: con 1,78 B de parametros y arquitectura Qwen2, permite analizar que aprende un modelo de este tamano con muy pocos pasos de entrenamiento y que no aprende.
-- Analisis de infraestructura de checkpointing: el repositorio conserva tanto safetensors de HuggingFace como el estado Megatron distribuido en `checkpoint/`, lo que lo hace util para validar conversiones entre ambos formatos.
+- Analisis de infraestructura de checkpointing: el repositorio conserva tanto safetensors de Hugging Face como el estado Megatron distribuido en `checkpoint/`, lo que lo hace util para validar conversiones entre ambos formatos.
 - Pruebas de carga y perfilado en pipelines de inferencia: sirve como sujeto de prueba para medir tiempos de carga, consumo de memoria y throughput de un modelo de 1,78 B en vLLM, TGI o transformers, sin asumir calidad de salida.
 - Docencia y formacion tecnica: util como ejemplo real de repositorio de checkpoint archivado, con campos incompletos de model card, para ilustrar buenas y malas practicas de publicacion de artefactos.
 - Evaluacion de riesgos de licencia: no hay licencia declarada, lo que lo convierte en un caso practico para discutir por que un artefacto sin licencia no deberia integrarse en productos.
@@ -77,10 +77,10 @@ La comparacion se ofrece solo por tamano y categoria, ya que este checkpoint no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| rlve-archive...00-Multiplication | 1,78 B | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente usado | Si, con benchmarks publicos |
-| Llama-3.2-1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, con acceso condicionado | Si, con benchmarks publicos |
-| SmolLM2-1.7B | 1,70 B | 8.192 tokens | Apache-2.0 | HuggingFace, ampliamente usado | Si, con benchmarks publicos |
+| rlve-archive...00-Multiplication | 1,78 B | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente usado | Si, con benchmarks publicos |
+| Llama-3.2-1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, con acceso condicionado | Si, con benchmarks publicos |
+| SmolLM2-1.7B | 1,70 B | 8.192 tokens | Apache-2.0 | Hugging Face, ampliamente usado | Si, con benchmarks publicos |
 
 La diferencia principal no es de arquitectura ni de tamano, sino de madurez: los tres alternativas son modelos preentrenados y ajustados con datos y evaluaciones publicadas, mientras que este repositorio es un checkpoint de investigacion con nueve pasos de entrenamiento y sin ninguna validacion.
 
@@ -99,7 +99,7 @@ La diferencia principal no es de arquitectura ni de tamano, sino de madurez: los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-teachers-20261002-144115-00-multiplication-22f3ef11965b
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-teachers-20261002-144115-00-multiplication-22f3ef11965b
 - Run de Weights & Biases: identificador `c631ba7d`, URL directa no disponible en la informacion proporcionada
 - Ruta original del experimento: `runs/mopd-sweep-n4-teachers-20261002-144115/resumable/00-Multiplication` (ruta interna, sin URL publica)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

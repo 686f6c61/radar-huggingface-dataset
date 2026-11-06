@@ -21,7 +21,7 @@ La relevancia de este adaptador radica en su enfoque de bajo coste: en lugar de 
 
 ## Arquitectura y entrenamiento
 
-El adaptador utiliza la técnica LoRA, que congela los pesos del modelo base e inyecta matrices de bajo rango en las capas de atención y feed-forward. Esto reduce drásticamente el número de parámetros entrenables y los requisitos de memoria durante el ajuste. El entrenamiento se realizó con supervisión fina (SFT) usando la librería TRL de HuggingFace, como indican los metadatos (PEFT 0.19.1, transformers, trl). No se dispone de información sobre el dataset, los hiperparámetros (rango, alpha, dropout, tasa de aprendizaje) ni el número de pasos exactos más allá del nombre del checkpoint (`step510`).
+El adaptador utiliza la técnica LoRA, que congela los pesos del modelo base e inyecta matrices de bajo rango en las capas de atención y feed-forward. Esto reduce drásticamente el número de parámetros entrenables y los requisitos de memoria durante el ajuste. El entrenamiento se realizó con supervisión fina (SFT) usando la librería TRL de Hugging Face, como indican los metadatos (PEFT 0.19.1, transformers, trl). No se dispone de información sobre el dataset, los hiperparámetros (rango, alpha, dropout, tasa de aprendizaje) ni el número de pasos exactos más allá del nombre del checkpoint (`step510`).
 
 El modelo base EXAONE-3.5-7.8B-Instruct emplea una arquitectura transformer con atención de ventana deslizante y atención global periódica, optimizada para manejar secuencias largas de hasta 32K tokens. Fue entrenado con una mezcla de datos en coreano e inglés, e incluye capacidades de razonamiento, generación de código y tool calling. El adaptador hereda estas capacidades, pero su especialización concreta no está documentada.
 
@@ -58,7 +58,7 @@ El modelo base EXAONE-3.5-7.8B-Instruct reporta en su paper resultados en MMLU, 
 - El modelo base EXAONE-3.5-7.8B-Instruct en FP16 requiere aproximadamente 16 GB de VRAM para inferencia.
 - Con cuantización 4-bit (GPTQ o AWQ), la VRAM necesaria se reduce a unos 5-6 GB, lo que permite ejecutarlo en GPUs de consumo como RTX 3060 12GB, RTX 4070 o superiores.
 - GPUs recomendadas: RTX 3090, RTX 4090, A10, A100, H100 para despliegues de mayor rendimiento.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o mediante la librería PEFT con transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o mediante la librería PEFT con transformers.
 - La latencia y el throughput dependen del hardware y la cuantización; no se dispone de datos específicos para este adaptador.
 
 ## Comparativa con modelos similares

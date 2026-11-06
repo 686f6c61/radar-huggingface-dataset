@@ -107,7 +107,7 @@ Notas: las tres primeras filas se midieron sobre los mismos 100 clips de FLEURS 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scholzmx/underdog-bark-3.0-gguf
+- Repositorio Hugging Face: https://huggingface.co/scholzmx/underdog-bark-3.0-gguf
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0
 - Motor Starling (repositorio y binario `starling-serve`): https://github.com/sims1253/starling
 - Modelo del que deriva el base (identificador citado en la model card): nvidia/parakeet-tdt-0.6b-v3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96 es un modelo de generacion de texto publicado en HuggingFace por el usuario Dohyeon1. Por su identificador y por la etiqueta de arquitectura `qwen3_moe` que figura en el repositorio, se trata de una variante derivada de la familia Qwen3-30B-A3B, es decir, un transformer con mezcla de expertos (MoE) de aproximadamente 30.500 millones de parametros totales. El sufijo "M-SMoE-ngroups96" sugiere una modificacion del enrutado de expertos organizada en 96 grupos, pero la model card no documenta en que consiste esa modificacion ni aporta ninguna descripcion tecnica.
+Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96 es un modelo de generacion de texto publicado en Hugging Face por el usuario Dohyeon1. Por su identificador y por la etiqueta de arquitectura `qwen3_moe` que figura en el repositorio, se trata de una variante derivada de la familia Qwen3-30B-A3B, es decir, un transformer con mezcla de expertos (MoE) de aproximadamente 30.500 millones de parametros totales. El sufijo "M-SMoE-ngroups96" sugiere una modificacion del enrutado de expertos organizada en 96 grupos, pero la model card no documenta en que consiste esa modificacion ni aporta ninguna descripcion tecnica.
 
 El modelo resuelve, en principio, las mismas tareas que su base: generacion de texto, conversacion multi-turno y tareas de razonamiento y codigo. Su relevancia actual es limitada y experimental: el repositorio acumula 0 descargas y 0 likes desde su creacion, la model card es la plantilla自动 generada sin completar (todos los campos figuran como "More Information Needed") y no se ha publicado ni licencia, ni idiomas soportados, ni resultados de evaluacion. Es, por tanto, un artefacto de investigacion o de experimentacion con variantes de MoE, no un modelo listo para produccion.
 
@@ -12,7 +12,7 @@ El peso del repositorio es de 61,1 GB, coherente con pesos en precision completa
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), etiqueta `qwen3_moe` en HuggingFace; la nomenclatura del nombre apunta a una variante "SMoE" de 96 grupos, sin documentacion que lo confirme |
+| Arquitectura | Transformer con mezcla de expertos (MoE), etiqueta `qwen3_moe` en Hugging Face; la nomenclatura del nombre apunta a una variante "SMoE" de 96 grupos, sin documentacion que lo confirme |
 | Parametros totales | 30.532.122.624 (30,5 B), segun los pesos safetensors del repositorio |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -25,7 +25,7 @@ El peso del repositorio es de 61,1 GB, coherente con pesos en precision completa
 
 La unica informacion estructural fiable es la etiqueta `qwen3_moe` del repositorio y el recuento de parametros de los safetensors: 30.532.122.624 parametros totales. Esto situa al modelo en la misma categoria de tamano que Qwen3-30B-A3B, un MoE en el que solo una fraccion de los expertos se activa por token. El nombre "M-SMoE-ngroups96" indica que el autor ha intervenido el mecanismo de enrutado o la agrupacion de expertos (96 grupos), una linea de trabajo habitual en la literatura de MoE disperso, pero no hay ningun documento, configuracion publicada ni nota del autor en la model card que explique la modificacion, el numero de expertos, el numero de expertos activos por token ni el criterio de agrupacion.
 
-Tampoco hay datos sobre el entrenamiento: la model card repite el texto de plantilla de HuggingFace con todos los campos vacios, incluyendo composicion del dataset, numero de tokens, regimen de precision, uso de RLHF o DPO, hiperparametros e infraestructura de computo. Se desconoce si el modelo es un fine-tuning sobre los pesos de Qwen3-30B-A3B, un modelo entrenado desde cero sobre la misma receta, o un experimento de poda/reorganizacion de expertos. Cualquier afirmacion sobre decodificacion especulativa, atencion lineal u otras innovaciones seria especulacion no respaldada por la informacion disponible.
+Tampoco hay datos sobre el entrenamiento: la model card repite el texto de plantilla de Hugging Face con todos los campos vacios, incluyendo composicion del dataset, numero de tokens, regimen de precision, uso de RLHF o DPO, hiperparametros e infraestructura de computo. Se desconoce si el modelo es un fine-tuning sobre los pesos de Qwen3-30B-A3B, un modelo entrenado desde cero sobre la misma receta, o un experimento de poda/reorganizacion de expertos. Cualquier afirmacion sobre decodificacion especulativa, atencion lineal u otras innovaciones seria especulacion no respaldada por la informacion disponible.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ Las cifras de las filas segunda y tercera proceden del conocimiento publico de l
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace sin completar; no hay descripcion, ni detalles de entrenamiento, ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face sin completar; no hay descripcion, ni detalles de entrenamiento, ni evaluacion.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion o modificacion; hay que asumir reserva de derechos hasta que el autor lo aclare.
 - Repositorio sin traccion: 0 descargas y 0 likes, sin historial de uso, issues ni validacion por parte de la comunidad.
 - Riesgo elevado de alucinacion y de degradacion del texto no medido: al no haber benchmarks, se desconoce si la modificacion del enrutado (96 grupos) ha afectado a la coherencia, al razonamiento o a la calidad multilingue respecto al modelo base.
@@ -84,7 +84,7 @@ Las cifras de las filas segunda y tercera proceden del conocimiento publico de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96
 - Modelo base presumible (no confirmado por el autor): https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, calculo de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Repositorio del modelo base en GitHub: no disponible en la informacion proporcionada

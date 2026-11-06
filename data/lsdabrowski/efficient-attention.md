@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lsdabrowski/efficient-attention` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre mecanismos de atención eficiente, publicado en HuggingFace bajo licencia CC-BY-4.0. Su contenido principal es un fichero `review.md` con el planteamiento del problema, confusores potenciales, una propuesta de comparación contra baselines emparejados, referencias de evaluación (Long Range Arena, ImageNet-1K, Flickr30k), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El propio autor indica explícitamente que el repositorio no reclama mejoras en benchmarks, no incluye ablaciones completadas, no libera código y no publica ningún checkpoint entrenado.
+`lsdabrowski/efficient-attention` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre mecanismos de atención eficiente, publicado en Hugging Face bajo licencia CC-BY-4.0. Su contenido principal es un fichero `review.md` con el planteamiento del problema, confusores potenciales, una propuesta de comparación contra baselines emparejados, referencias de evaluación (Long Range Arena, ImageNet-1K, Flickr30k), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El propio autor indica explícitamente que el repositorio no reclama mejoras en benchmarks, no incluye ablaciones completadas, no libera código y no publica ningún checkpoint entrenado.
 
-El repositorio incluye un artefacto en formato safetensors con 33.088 parámetros totales según los metadatos de HuggingFace. Se trata de un volumen de parámetros minúsculo (tres órdenes de magnitud por debajo de cualquier transformer útil), compatible con un fichero de prueba, un tensor auxiliar o un artefacto residual, pero no con un modelo funcional. El tamaño declarado del repositorio es de 0,0 GB, coherente con un contenido casi exclusivamente textual.
+El repositorio incluye un artefacto en formato safetensors con 33.088 parámetros totales según los metadatos de Hugging Face. Se trata de un volumen de parámetros minúsculo (tres órdenes de magnitud por debajo de cualquier transformer útil), compatible con un fichero de prueba, un tensor auxiliar o un artefacto residual, pero no con un modelo funcional. El tamaño declarado del repositorio es de 0,0 GB, coherente con un contenido casi exclusivamente textual.
 
 Por tanto, su relevancia actual es documental y metodológica, no de inferencia: sirve como material de partida para diseñar una revisión o un experimento sobre atención eficiente, siempre que se trate como hipótesis y no como resultados. No hay pipeline declarado, ni idiomas soportados, ni datos de rendimiento publicados.
 
@@ -31,7 +31,7 @@ En cuanto al contenido metodológico, las notas proponen una comparación con ba
 
 ## Capacidades
 
-- No hay capacidades de inferencia verificables: no se ha publicado un modelo entrenado, ni una demo, ni un pipeline de HuggingFace.
+- No hay capacidades de inferencia verificables: no se ha publicado un modelo entrenado, ni una demo, ni un pipeline de Hugging Face.
 - El repositorio documenta el alcance de una pregunta de investigación sobre atención eficiente y sus posibles factores de confusión.
 - Incluye una propuesta de comparación contra baselines emparejados, útil como plantilla de diseño experimental.
 - Referencia contextos de evaluación concretos: Long Range Arena, ImageNet-1K y Flickr30k.
@@ -91,8 +91,8 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lsdabrowski/efficient-attention
-- Fichero principal del repositorio: `review.md` (disponible en el propio repositorio de HuggingFace)
-- Documentación: `README.md` (disponible en el propio repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/lsdabrowski/efficient-attention
+- Fichero principal del repositorio: `review.md` (disponible en el propio repositorio de Hugging Face)
+- Documentación: `README.md` (disponible en el propio repositorio de Hugging Face)
 - Paper, blog, repositorio de código o demo: no disponible
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante. Los resultados devueltos tratan sobre la definición del perfil de desarrollador full stack y no guardan relación con atención eficiente ni con este repositorio.

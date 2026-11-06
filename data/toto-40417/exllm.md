@@ -31,7 +31,7 @@ El modelo no es compatible con las clases auto de `transformers`, con GGUF, llam
 | Vocabulario | 868 tokens (0,000868 M) |
 | Tokenizador | Caracteres japoneses frecuentes + fallback a bytes UTF-8, normalización NFC |
 | Paso global del checkpoint | 1.810 |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-09-24 / 2026-09-24 |
 
@@ -99,7 +99,7 @@ Metodología EX-word: CASIO EX-word XD-B4800 / DATAPLUS 6, CPU de la familia SH7
 - Cabe en GPU de consumo: sí, en la práctica en cualquier GPU de consumo e incluso en iGPU o CPU, dado el tamaño del modelo. El cuello de botella real es el software, no el hardware.
 - Opciones de despliegue: únicamente el runtime de referencia en PyTorch incluido en el repositorio (`chat.py`, `src/loader.py`, `src/runtime.py`) y el runtime entero propio del dispositivo EX-word. No hay soporte de vLLM, llama.cpp, Ollama, TGI ni LM Studio, y el autor indica incompatibilidad explícita con GGUF.
 - Latencia y throughput: 239,082 token/s de decodificación y 3,99 ms de TTFT en RTX 3060 fp32; 0,52–0,55 token/s de decodificación y 23,711 s de TTFT medianos en el runtime entero sobre SH-4A.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace, coherente con un checkpoint de decenas de megabytes.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face, coherente con un checkpoint de decenas de megabytes.
 
 ## Comparativa con modelos similares
 
@@ -124,7 +124,7 @@ Como referencia de escala, cabe señalar que un transformer denso de 5,38 M de p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ToTo-40417/EXLLM
+- Hugging Face: https://huggingface.co/ToTo-40417/EXLLM
 - Documentación de procedencia de datos citada en la model card: `DATA_PROVENANCE.md` (dentro del repositorio)
 - Metadatos de release en formato legible por máquina: `training/release-5m.json` (dentro del repositorio)
 - Resultados crudos del benchmark en RTX 3060: `benchmarks/rtx3060-cuda-robust-20260925.json` (dentro del repositorio)

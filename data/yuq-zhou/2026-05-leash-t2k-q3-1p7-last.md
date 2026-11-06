@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuq-zhou/2026-05-leash-t2k-q3-1p7-last` es un checkpoint de investigación en formato HuggingFace (`AutoModelForCausalLM.from_pretrained`) publicado por el autor yuq-zhou el 18 de agosto de 2026. Se trata de un artefacto de respaldo dentro de una serie de modelos denominada "leash", de la que se han localizado variantes con nombres similares como `leash-t4k-q3-1p7` o `leash-t4k-q2-m-7`. El checkpoint cuenta con 2.031.739.904 parámetros (aproximadamente 2,03 mil millones), lo que lo sitúa en la categoría de modelos pequeños, y su repositorio ocupa 4,1 GB, consistente con pesos en formato `safetensors`.
+El modelo `yuq-zhou/2026-05-leash-t2k-q3-1p7-last` es un checkpoint de investigación en formato Hugging Face (`AutoModelForCausalLM.from_pretrained`) publicado por el autor yuq-zhou el 18 de agosto de 2026. Se trata de un artefacto de respaldo dentro de una serie de modelos denominada "leash", de la que se han localizado variantes con nombres similares como `leash-t4k-q3-1p7` o `leash-t4k-q2-m-7`. El checkpoint cuenta con 2.031.739.904 parámetros (aproximadamente 2,03 mil millones), lo que lo sitúa en la categoría de modelos pequeños, y su repositorio ocupa 4,1 GB, consistente con pesos en formato `safetensors`.
 
 La información pública disponible es extremadamente limitada: la model card solo indica que es un checkpoint estándar de transformers, sin detalles sobre arquitectura, entrenamiento, licencia o capacidades. Las tags del repositorio incluyen `qwen3`, lo que sugiere una posible base en la familia Qwen3, aunque no se confirma explícitamente. Dado su carácter de "artefacto de investigación", su relevancia actual es principalmente como material de estudio o punto de partida para experimentación, más que como modelo listo para producción.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuq-zhou/2026-05-leash-t2k-q3-1p7-last
+- Repositorio Hugging Face: https://huggingface.co/yuq-zhou/2026-05-leash-t2k-q3-1p7-last
 - Variante similar (leash-t4k-q3-1p7): https://huggingface.co/yuq-zhou/2026-05-leash-t4k-q3-1p7
 - Variante similar (leash-t4k-q2-m-7): https://huggingface.co/yuq-zhou/2026-05-leash-t4k-q2-m-7
 - Página de despliegue en FriendliAI (variante t4k-q2-m-7-last): https://friendli.ai/models/yuq-zhou/2026-05-leash-t4k-q2-m-7-last

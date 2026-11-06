@@ -30,7 +30,7 @@ Su relevancia actual radica en que demuestra el flujo de trabajo completo de Smo
 | Optimizador / learning rate | AdamW / 5e-06 |
 | Semilla | 1000 |
 | Versión de LeRobot | 0.5.2 |
-| Pipeline en HuggingFace | robotics |
+| Pipeline en Hugging Face | robotics |
 | Fecha de creación del repositorio | 2026-09-25 |
 
 ## Arquitectura y entrenamiento
@@ -89,9 +89,9 @@ Las cifras de parámetros de los modelos de terceros son aproximadas y proceden 
 
 | Modelo | Parámetros | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|
-| Este checkpoint (`smolvla_multitask_5blocks_v3_822ep_...`) | 450 M | Apache 2.0 | HuggingFace, librería LeRobot | Sin evaluar (no hay tasas de éxito publicadas) |
-| `lerobot/smolvla_base` | ~450 M | Apache 2.0 | HuggingFace | Resultados del paper SmolVLA (no reproducidos aquí) |
-| OpenVLA | ~7 B | Pesos abiertos con condiciones asociadas al modelo de lenguaje subyacente | HuggingFace | Benchmarks publicados por sus autores; no comparable directamente con esta tarea |
+| Este checkpoint (`smolvla_multitask_5blocks_v3_822ep_...`) | 450 M | Apache 2.0 | Hugging Face, librería LeRobot | Sin evaluar (no hay tasas de éxito publicadas) |
+| `lerobot/smolvla_base` | ~450 M | Apache 2.0 | Hugging Face | Resultados del paper SmolVLA (no reproducidos aquí) |
+| OpenVLA | ~7 B | Pesos abiertos con condiciones asociadas al modelo de lenguaje subyacente | Hugging Face | Benchmarks publicados por sus autores; no comparable directamente con esta tarea |
 | π0 (Physical Intelligence) | ~3,3 B (aproximado) | Pesos abiertos | Repositorio del proyecto | Benchmarks publicados por sus autores sobre tareas de manipulación |
 
 Otras alternativas del mismo autor encontradas en la búsqueda, todas del mismo linaje y tamaño: `smolvla_multitask_5blocks_v3_817ep_from865_expertonly_b32_lr5e6_50k`, `smolvla_multitask_5blocks_v3_684ep_from795hil80k_vlmexpert_20k`, `smolvla_multitask_5blocks_v3_684ep_from575_285k_vlmexpert_20k`, `smolvla_multitask_5blocks_v3_795ep_hil_285k_from285k_add80k` y `smolvla_multitask_5blocks_v2_530ep_fullft_b16_300k`. No se dispone de comparativas de rendimiento entre ellas.
@@ -111,7 +111,7 @@ Otras alternativas del mismo autor encontradas en la búsqueda, todas del mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eslab1234/smolvla_multitask_5blocks_v3_822ep_from865_expertonly_b32_lr5e6_50k
+- Modelo en Hugging Face: https://huggingface.co/eslab1234/smolvla_multitask_5blocks_v3_822ep_from865_expertonly_b32_lr5e6_50k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/eslab1234/multitask_5blocks_v3_822ep_trimmed_merged
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=eslab1234/multitask_5blocks_v3_822ep_trimmed_merged

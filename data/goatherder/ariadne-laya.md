@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ariadne-Laya es un modelo publicado en HuggingFace por el usuario GoatHerder bajo el identificador GoatHerder/Ariadne-Laya. En el momento de redactar esta ficha, la informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia MIT y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio registra 0 descargas y 0 likes, y su fecha de creacion y ultima actualizacion coinciden (27 de septiembre de 2026), lo que sugiere una publicacion reciente sin revision posterior ni adopcion por parte de la comunidad.
+Ariadne-Laya es un modelo publicado en Hugging Face por el usuario GoatHerder bajo el identificador GoatHerder/Ariadne-Laya. En el momento de redactar esta ficha, la informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia MIT y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio registra 0 descargas y 0 likes, y su fecha de creacion y ultima actualizacion coinciden (27 de septiembre de 2026), lo que sugiere una publicacion reciente sin revision posterior ni adopcion por parte de la comunidad.
 
-No es posible determinar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, multimodal, generacion de imagenes, etc.) ni cual es su relevancia actual, dado que no hay informacion tecnica publicada. Tampoco se dispone de pipeline declarado en HuggingFace, lo que impide clasificarlo funcionalmente.
+No es posible determinar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, multimodal, generacion de imagenes, etc.) ni cual es su relevancia actual, dado que no hay informacion tecnica publicada. Tampoco se dispone de pipeline declarado en Hugging Face, lo que impide clasificarlo funcionalmente.
 
 En consecuencia, esta ficha se limita a documentar los pocos metadatos verificables (autor, licencia, fechas, ausencia de adopcion) y a marcar explicitamente como "no disponible" cualquier dato tecnico. Cualquier evaluacion de idoneidad para produccion requeriria contactar con el autor o inspeccionar directamente los archivos del repositorio.
 
@@ -66,7 +66,7 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GoatHerder/Ariadne-Laya | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| GoatHerder/Ariadne-Laya | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GoatHerder/Ariadne-Laya
+- Hugging Face: https://huggingface.co/GoatHerder/Ariadne-Laya
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

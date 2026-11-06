@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Ololade117/scaling-normal-3.7M-210000steps` es un checkpoint de 3.686.400 parámetros (aproximadamente 3,7 millones) publicado en HuggingFace por el usuario Ololade117 bajo licencia MIT. Por su nombre y por su tamaño, todo apunta a un experimento de investigación sobre escalado ("scaling") entrenado durante 210.000 pasos, del estilo de los que se emplean para estudiar leyes de escalado, curvas de pérdida o el efecto de distintas normalizaciones en modelos diminutos. No obstante, la model card no confirma ninguna de estas hipótesis: se limita a indicar que el modelo se subió mediante la integración `PyTorchModelHubMixin` y que la información sobre código, paper y documentación está pendiente.
+El modelo `Ololade117/scaling-normal-3.7M-210000steps` es un checkpoint de 3.686.400 parámetros (aproximadamente 3,7 millones) publicado en Hugging Face por el usuario Ololade117 bajo licencia MIT. Por su nombre y por su tamaño, todo apunta a un experimento de investigación sobre escalado ("scaling") entrenado durante 210.000 pasos, del estilo de los que se emplean para estudiar leyes de escalado, curvas de pérdida o el efecto de distintas normalizaciones en modelos diminutos. No obstante, la model card no confirma ninguna de estas hipótesis: se limita a indicar que el modelo se subió mediante la integración `PyTorchModelHubMixin` y que la información sobre código, paper y documentación está pendiente.
 
 La relevancia de este tipo de publicaciones es doble. Por un lado, sirve como artefacto reproducible para quienes investigan el comportamiento de arquitecturas transformer a escala muy reducida, donde el coste de entrenamiento permite iterar rápido. Por otro lado, su tamaño lo convierte en un candidato para pruebas de infraestructura (pipelines de entrenamiento, conversión de formatos, despliegue en dispositivos embebidos) sin necesidad de GPU. Sin embargo, conviene ser claro: no hay información publicada sobre arquitectura, datos de entrenamiento, tokenizador, longitud de contexto o capacidades reales, por lo que no puede evaluarse como modelo de producción.
 
-El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, y el tamaño reportado del repo es de 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente alojados o que los metadatos están incompletos. Los resultados de búsqueda web disponibles no contienen ninguna referencia relevante al modelo (devolvieron contenido sin relación), de modo que esta ficha se apoya únicamente en los metadatos de HuggingFace y en la model card.
+El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, y el tamaño reportado del repo es de 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente alojados o que los metadatos están incompletos. Los resultados de búsqueda web disponibles no contienen ninguna referencia relevante al modelo (devolvieron contenido sin relación), de modo que esta ficha se apoya únicamente en los metadatos de Hugging Face y en la model card.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, y el 
 | Licencia | MIT |
 | Formato de pesos | safetensors (PyTorch), cargado via `PyTorchModelHubMixin` |
 | Autor | Ololade117 |
-| Fecha de creacion | 2026-09-28 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-28 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-28 |
 | Tamano del repositorio | 0,0 GB (segun metadatos; posiblemente pesos no alojados o metadatos parciales) |
 | Descargas / likes | 0 / 0 |
@@ -56,7 +56,7 @@ En todos estos casos, el valor esta en el proceso y no en la calidad de las sali
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, HellaSwag, perplexity ni de ninguna otra metrica en la model card, en los metadatos de HuggingFace ni en los resultados de busqueda consultados.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, HellaSwag, perplexity ni de ninguna otra metrica en la model card, en los metadatos de Hugging Face ni en los resultados de busqueda consultados.
 
 ## Requisitos de hardware
 
@@ -73,10 +73,10 @@ La comparacion se establece con modelos publicos de tamano reducido, dado que no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ololade117/scaling-normal-3.7M-210000steps | 3,7 M | no disponible | MIT | Repo en HuggingFace con 0 descargas; pesos posiblemente no alojados |
-| GPT-2 small | 124 M | 1024 tokens | MIT modificada (OpenAI) | Ampliamente disponible en HuggingFace |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible en HuggingFace |
-| Pythia-14M | 14 M | 2048 tokens | Apache-2.0 | Disponible en HuggingFace (EleutherAI) |
+| Ololade117/scaling-normal-3.7M-210000steps | 3,7 M | no disponible | MIT | Repo en Hugging Face con 0 descargas; pesos posiblemente no alojados |
+| GPT-2 small | 124 M | 1024 tokens | MIT modificada (OpenAI) | Ampliamente disponible en Hugging Face |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible en Hugging Face |
+| Pythia-14M | 14 M | 2048 tokens | Apache-2.0 | Disponible en Hugging Face (EleutherAI) |
 
 No hay datos de rendimiento comparado, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad. Cualquier afirmacion sobre calidad relativa carece de respaldo empirico.
 
@@ -93,7 +93,7 @@ No hay datos de rendimiento comparado, por lo que la comparativa se limita a par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ololade117/scaling-normal-3.7M-210000steps
+- Hugging Face: https://huggingface.co/Ololade117/scaling-normal-3.7M-210000steps
 - Documentacion de `PyTorchModelHubMixin` (unico enlace funcional citado en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo fuente: no disponible (la model card indica "More Information Needed")

@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, precisión en tar
 
 - No es un modelo de lenguaje autónomo: no genera texto util por si solo y requiere servir Underdog Poodle 4B junto a el.
 - Depende de vLLM 0.31 o superior con soporte del metodo `dflash`; no hay ruta de despliegue documentada para llama.cpp, Ollama o TGI.
-- La etiqueta `custom_code` en HuggingFace indica que puede requerir codigo personalizado para cargarse; conviene revisar el repo antes de usarlo en entornos restringidos.
+- La etiqueta `custom_code` en Hugging Face indica que puede requerir codigo personalizado para cargarse; conviene revisar el repo antes de usarlo en entornos restringidos.
 - La ganancia de velocidad depende de la carga: en MT-Bench solo alcanza 1,8x, y en cargas muy concurrentes conviene reducir los tokens especulativos de 15 a 7.
 - No se ha publicado informacion sobre sesgos, riesgo de alucinacion o cobertura idiomatica del borrador; la calidad de salida hereda integramente la del modelo principal.
 - Las mediciones de rendimiento provienen del propio autor del modelo y usan un numero reducido de prompts (12 por carga), por lo que los resultados pueden no generalizar a todos los escenarios.
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, precisión en tar
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Poodle-4B-DFlash
+- Ficha en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Poodle-4B-DFlash
 - Modelo principal (Underdog Poodle 4B): https://huggingface.co/ConwayResearch/Underdog-Poodle-4B
 - Modelo base (z-lab/Qwen3.5-4B-DFlash): https://huggingface.co/z-lab/Qwen3.5-4B-DFlash
 - Paper, blog o demo: no disponible

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "seyarizumu/grab_cable_v2_conn_film",
+  "slug": "seyarizumu-grab_cable_v2_conn_film",
+  "author": "seyarizumu",
+  "url": "https://huggingface.co/seyarizumu/grab_cable_v2_conn_film",
+  "created_at": "2026-11-06T11:41:48.000Z",
+  "updated_at": "2026-11-06T11:42:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "fact",
+    "robotics",
+    "dataset:seyarizumu/grab_cable_v2_conn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63351060,
+  "parameters_human": "63.4M",
+  "storage_bytes": 253451852,
+  "storage_human": "253 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "seyarizumu/grab_cable_v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/seyarizumu/grab_cable_v2",
+      "snippet": "Dataset with 52.7k rows (Tabular, Time-series, Video). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "seyarizumu/grab_cable · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/seyarizumu/grab_cable",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

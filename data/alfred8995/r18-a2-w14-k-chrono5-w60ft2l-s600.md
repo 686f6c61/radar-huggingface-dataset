@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s600` es un checkpoint de aproximadamente 2.018 millones de parametros publicado por el usuario alfred8995 en HuggingFace. Por la nomenclatura del identificador (que incluye fragmentos como `r18`, `a2`, `w14`, `chrono5`, `w60ft2l` y `s600`) y por el tag `sn38-nanochrono`, todo apunta a un modelo de investigacion de tipo experimental, probablemente un transformer pequeno entrenado desde cero o afinado dentro de una serie de experimentos cronologicos. No hay informacion oficial sobre su arquitectura, dataset ni proposito concreto.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s600` es un checkpoint de aproximadamente 2.018 millones de parametros publicado por el usuario alfred8995 en Hugging Face. Por la nomenclatura del identificador (que incluye fragmentos como `r18`, `a2`, `w14`, `chrono5`, `w60ft2l` y `s600`) y por el tag `sn38-nanochrono`, todo apunta a un modelo de investigacion de tipo experimental, probablemente un transformer pequeno entrenado desde cero o afinado dentro de una serie de experimentos cronologicos. No hay informacion oficial sobre su arquitectura, dataset ni proposito concreto.
 
-El repositorio tiene un tamano de 6,3 GB para 2.018 millones de parametros, lo que implica que los pesos estan almacenados en un formato de alta precision (probablemente fp32 o bf16 con multiples checkpoints), ya que en bf16 los pesos puros ocuparian unos 4 GB. El acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que sugiere que el autor limita su distribucion a propositos de investigacion o evaluacion.
+El repositorio tiene un tamano de 6,3 GB para 2.018 millones de parametros, lo que implica que los pesos estan almacenados en un formato de alta precision (probablemente fp32 o bf16 con multiples checkpoints), ya que en bf16 los pesos puros ocuparian unos 4 GB. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que sugiere que el autor limita su distribucion a propositos de investigacion o evaluacion.
 
 La relevancia actual de este modelo es limitada: se trata de un artefacto de investigacion sin pipeline declarado, sin idiomas documentados, sin benchmarks publicados y con cero descargas y cero likes en el momento de la consulta. Es util principalmente como objeto de estudio para quienes sigan la serie de experimentos del autor, no como modelo de produccion.
 
@@ -86,4 +86,4 @@ No disponible. No se conocen modelos comparables de la misma serie `nanochrono` 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s600
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s600

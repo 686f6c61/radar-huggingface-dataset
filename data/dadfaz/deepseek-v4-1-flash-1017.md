@@ -103,10 +103,10 @@ En términos de benchmarks, DeepSeek-V4.1-Flash-1017 supera a K3, GLM-5.3 y GPT-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dadfaz/DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/dadfaz/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial del modelo base (referenciado en la model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Librería deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

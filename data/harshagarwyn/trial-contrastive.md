@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Harshagarwyn/trial-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario Harshagarwyn que contiene una implementación propia de una arquitectura denominada "CNN Transformer" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El repositorio incluye además el código fuente (`run.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+`Harshagarwyn/trial-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario Harshagarwyn que contiene una implementación propia de una arquitectura denominada "CNN Transformer" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El repositorio incluye además el código fuente (`run.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 El interés del repositorio es, por tanto, arquitectónico y pedagógico más que de rendimiento: sirve como base reproducible para inspeccionar cambios de diseño en una arquitectura híbrida CNN-Transformer con atención dispersa y fusión por concatenación antes de lanzar un entrenamiento completo. La escala declarada es "giant", pero el checkpoint real contiene únicamente 49.600 parámetros, lo que confirma que se trata de un esqueleto de inicialización y no de un modelo de gran tamaño.
 
@@ -83,5 +83,5 @@ La comparativa es orientativa: los tres modelos de referencia son checkpoints en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Harshagarwyn/trial-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/Harshagarwyn/trial-contrastive
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de calidad para ninguna de estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jon-Nielsen/DeepSeek-V4-Flash-0731-Abliterated-MXFP4-INT8
+- Repositorio Hugging Face: https://huggingface.co/Jon-Nielsen/DeepSeek-V4-Flash-0731-Abliterated-MXFP4-INT8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Modelo abliterado fuente: https://huggingface.co/lovesenko/DeepSeek-V4-Flash-0731-Abliterated
 - Fork de vLLM de AppMana: https://github.com/appmana/vllm (rama `vllm-consumer-nvidia-platforms`)

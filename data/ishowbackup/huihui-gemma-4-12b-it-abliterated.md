@@ -65,7 +65,7 @@ No se dispone de datos de otros modelos abliterados de la misma familia para com
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Ishowbackup/Huihui-gemma-4-12B-it-abliterated)
+- [Modelo en Hugging Face](https://huggingface.co/Ishowbackup/Huihui-gemma-4-12B-it-abliterated)
 - [Repositorio remove-refusals-with-transformers](https://github.com/Sumandora/remove-refusals-with-transformers)
 - [Modelo en Ollama](https://ollama.com/huihui_ai/gemma-4-abliterated:12b)
 - [Página de Gemma 4 de Google](https://ai.google.dev/gemma) (para referencia del modelo base)

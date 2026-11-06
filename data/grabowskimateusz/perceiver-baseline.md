@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grabowskimateusz/perceiver-baseline` es un repositorio de HuggingFace publicado por el usuario grabowskimateusz que contiene una implementacion propia y minima de la arquitectura Perceiver orientada a experimentos multitarea. No se trata de un modelo entrenado ni de un release orientado a inferencia: el propio autor lo describe como un "punto de partida reproducible" y el fichero `model.safetensors` se presenta explicitamente como un checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint evaluado. El repositorio registra 24.832 parametros totales segun los metadatos de safetensors y un tamano de repo de 0,0 GB, con licencia MIT.
+`grabowskimateusz/perceiver-baseline` es un repositorio de Hugging Face publicado por el usuario grabowskimateusz que contiene una implementacion propia y minima de la arquitectura Perceiver orientada a experimentos multitarea. No se trata de un modelo entrenado ni de un release orientado a inferencia: el propio autor lo describe como un "punto de partida reproducible" y el fichero `model.safetensors` se presenta explicitamente como un checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint evaluado. El repositorio registra 24.832 parametros totales segun los metadatos de safetensors y un tamano de repo de 0,0 GB, con licencia MIT.
 
 El interes de la ficha es, por tanto, documental y metodologico mas que de rendimiento. El autor no reclama ninguna puntuacion de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Cualquier resultado futuro deberia documentarse por separado de los valores por defecto incluidos aqui.
 
@@ -73,7 +73,7 @@ El autor declara de forma explicita que no se reclama ninguna puntuacion en el r
 - GPU recomendadas: ninguna en particular. Cualquier GPU con soporte de PyTorch es sobredimensionada para este modelo.
 - Ejecucion en CPU: totalmente viable. Es el escenario natural para el checkpoint de inicializacion.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo e incluso en hardware integrado; el cuello de botella real sera el resto del pipeline de datos, no el modelo.
-- Opciones de despliegue: al ser una implementacion propia con punto de entrada en Python, el despliegue requiere un adaptador explicito. Las APIs genericas de carga automatica de HuggingFace no funcionaran sin ese adaptador. vLLM, TGI u Ollama no son aplicables mientras no exista un checkpoint entrenado y compatible.
+- Opciones de despliegue: al ser una implementacion propia con punto de entrada en Python, el despliegue requiere un adaptador explicito. Las APIs genericas de carga automatica de Hugging Face no funcionaran sin ese adaptador. vLLM, TGI u Ollama no son aplicables mientras no exista un checkpoint entrenado y compatible.
 - Latencia y throughput: no disponible. Por el tamano del modelo, la latencia de un forward pass es despreciable frente a cualquier sobrecarga de framework, pero no hay mediciones publicadas.
 - Cuantizacion: no disponible y, a esta escala, practicamente irrelevante; el ahorro de memoria seria inferior a un megabyte.
 
@@ -81,7 +81,7 @@ El autor declara de forma explicita que no se reclama ninguna puntuacion en el r
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perceiver-baseline (este repositorio) | 24.832 | no disponible | no | MIT | safetensors en HuggingFace |
+| perceiver-baseline (este repositorio) | 24.832 | no disponible | no | MIT | safetensors en Hugging Face |
 | Perceiver IO (referencia arquitectonica de DeepMind) | no disponible en la informacion proporcionada | no disponible | si, segun su publicacion | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Implementaciones Perceiver de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,5 +102,5 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grabowskimateusz/perceiver-baseline
+- Modelo en Hugging Face: https://huggingface.co/grabowskimateusz/perceiver-baseline
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

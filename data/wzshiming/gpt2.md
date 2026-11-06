@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wzshiming/gpt2` es una reproducción del modelo GPT-2 en su variante small (aproximadamente 124 millones de parámetros según la model card, 137.022.720 parámetros contados en los ficheros safetensors del repositorio), publicada por el usuario wzshiming en HuggingFace. Se trata de una conversión multiformato del GPT-2 original de OpenAI, no de un modelo entrenado desde cero: el autor redistribuye los mismos pesos en PyTorch, TensorFlow, JAX, TFLite, Rust, ONNX y safetensors, lo que la convierte en una referencia útil para portar el modelo a distintos runtimes.
+`wzshiming/gpt2` es una reproducción del modelo GPT-2 en su variante small (aproximadamente 124 millones de parámetros según la model card, 137.022.720 parámetros contados en los ficheros safetensors del repositorio), publicada por el usuario wzshiming en Hugging Face. Se trata de una conversión multiformato del GPT-2 original de OpenAI, no de un modelo entrenado desde cero: el autor redistribuye los mismos pesos en PyTorch, TensorFlow, JAX, TFLite, Rust, ONNX y safetensors, lo que la convierte en una referencia útil para portar el modelo a distintos runtimes.
 
 El modelo resuelve el problema clásico de generación de texto autoregresiva en inglés mediante un objetivo de modelado de lenguaje causal (CLM): predice el siguiente token a partir de los anteriores, aplicando una máscara causal para no filtrar información futura. Su relevancia actual es sobre todo práctica y educativa: con 137 millones de parámetros cabe en cualquier GPU de consumo, en CPU e incluso en dispositivos embebidos vía TFLite, y sirve como línea base barata para fine-tuning, pruebas de pipelines de inferencia y comparaciones de rendimiento entre frameworks.
 
@@ -69,12 +69,12 @@ La model card reproduce únicamente ejemplos cualitativos de generación (con `s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Formatos |
 |---|---|---|---|---|---|
-| wzshiming/gpt2 (esta reproducción) | 137,02M (safetensors) / 124M según la card | 1024 tokens (arquitectura GPT-2) | MIT | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | safetensors, PyTorch, TF, JAX, TFLite, ONNX, Rust |
-| gpt2 (pesos oficiales en HuggingFace) | misma arquitectura (GPT-2 small) | 1024 tokens | MIT | HuggingFace | PyTorch, TF, Flax |
-| gpt2-medium | no disponible en la información proporcionada | no disponible en la información proporcionada | MIT | HuggingFace | PyTorch, TF, Flax |
-| gpt2-large | 774M (citado en la model card) | 1024 tokens | MIT | HuggingFace | PyTorch, TF, Flax |
-| gpt2-xl | 1,5B (citado en la model card) | 1024 tokens | MIT | HuggingFace | PyTorch, TF, Flax |
-| distilgpt2 | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible | HuggingFace | PyTorch, TF |
+| wzshiming/gpt2 (esta reproducción) | 137,02M (safetensors) / 124M según la card | 1024 tokens (arquitectura GPT-2) | MIT | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | safetensors, PyTorch, TF, JAX, TFLite, ONNX, Rust |
+| gpt2 (pesos oficiales en Hugging Face) | misma arquitectura (GPT-2 small) | 1024 tokens | MIT | Hugging Face | PyTorch, TF, Flax |
+| gpt2-medium | no disponible en la información proporcionada | no disponible en la información proporcionada | MIT | Hugging Face | PyTorch, TF, Flax |
+| gpt2-large | 774M (citado en la model card) | 1024 tokens | MIT | Hugging Face | PyTorch, TF, Flax |
+| gpt2-xl | 1,5B (citado en la model card) | 1024 tokens | MIT | Hugging Face | PyTorch, TF, Flax |
+| distilgpt2 | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible | Hugging Face | PyTorch, TF |
 
 Los modelos comparables se toman de la propia model card, que enlaza GPT-Large, GPT-Medium y GPT-XL como variantes relacionadas. No se dispone de cifras de rendimiento comparadas para esta reproducción.
 
@@ -92,12 +92,12 @@ Los modelos comparables se toman de la propia model card, que enlaza GPT-Large, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wzshiming/gpt2
+- Modelo en Hugging Face: https://huggingface.co/wzshiming/gpt2
 - Paper original de GPT-2 ("Language models are unsupervised multitask learners"): https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Anuncio original de OpenAI: https://openai.com/blog/better-language-models/
 - Model card oficial de OpenAI para GPT-2: https://github.com/openai/gpt-2/blob/master/model_card.md
 - Repositorio oficial de GPT-2: https://github.com/openai/gpt-2
-- Demo de generación de GPT-2 en HuggingFace: https://transformer.huggingface.co/doc/gpt2-large
+- Demo de generación de GPT-2 en Hugging Face: https://transformer.huggingface.co/doc/gpt2-large
 - Variantes relacionadas: https://huggingface.co/gpt2-large, https://huggingface.co/gpt2-medium, https://huggingface.co/gpt2-xl
 - Índice de modelos GPT-2 en el hub: https://huggingface.co/models?filter=gpt2
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SeeWye/qwen_finetune1_16bit es un modelo afinado (fine-tune) publicado por el usuario SeeWye en HuggingFace, derivado del modelo base SeeWye/qwen3_5_TM_ocr_merged2. Se trata de un modelo multimodal de tipo image-text-to-text construido sobre la familia Qwen (etiqueta qwen3_5 en el repositorio), con 4.659.865.088 parametros reales (aproximadamente 4,66 B) y un repositorio de 9,3 GB, lo que corresponde a pesos almacenados en 16 bits sin cuantizar. La licencia declarada es Apache-2.0 y el unico idioma declarado en la model card es el ingles.
+SeeWye/qwen_finetune1_16bit es un modelo afinado (fine-tune) publicado por el usuario SeeWye en Hugging Face, derivado del modelo base SeeWye/qwen3_5_TM_ocr_merged2. Se trata de un modelo multimodal de tipo image-text-to-text construido sobre la familia Qwen (etiqueta qwen3_5 en el repositorio), con 4.659.865.088 parametros reales (aproximadamente 4,66 B) y un repositorio de 9,3 GB, lo que corresponde a pesos almacenados en 16 bits sin cuantizar. La licencia declarada es Apache-2.0 y el unico idioma declarado en la model card es el ingles.
 
-El problema que resuelve es acotado: se trata de un ajuste fino especifico, probablemente orientado a tareas de OCR y comprension de documentos, heredado de la cadena de modelos base del autor (cuyo nombre incluye "TM_ocr_merged"). No es un modelo de proposito general presentado con benchmarks ni con una model card extensa; la informacion publicada se limita a la ficha de HuggingFace y a una model card de tres parrafos generada por la plantilla de Unsloth.
+El problema que resuelve es acotado: se trata de un ajuste fino especifico, probablemente orientado a tareas de OCR y comprension de documentos, heredado de la cadena de modelos base del autor (cuyo nombre incluye "TM_ocr_merged"). No es un modelo de proposito general presentado con benchmarks ni con una model card extensa; la informacion publicada se limita a la ficha de Hugging Face y a una model card de tres parrafos generada por la plantilla de Unsloth.
 
 Su relevancia practica es la de un artefacto reproducible: al estar publicado con la etiqueta endpoints_compatible y en formato transformers/safetensors, puede desplegarse directamente con Text Generation Inference, vLLM o transformers, y sirve como ejemplo de fine-tune multimodal de ~4,7 B ejecutable en GPU de consumo. No obstante, con 0 descargas y 0 likes en el momento de la consulta, no existe validacion externa de su calidad.
 
@@ -25,7 +25,7 @@ Su relevancia practica es la de un artefacto reproducible: al estar publicado co
 
 La model card no describe la arquitectura interna. Los metadatos indican que se trata de un modelo multimodal (pipeline image-text-to-text, etiquetas image-text-to-text y qwen3_5) construido sobre SeeWye/qwen3_5_TM_ocr_merged2, un modelo intermedio del mismo autor cuyo nombre sugiere una fusion (merge) orientada a OCR y tareas de documento. El recuento de parametros (4,66 B) y el tamano del repositorio (9,3 GB) son consistentes con un transformer denso almacenado en bfloat16/float16, sin capas de mezcla de expertos visibles en los metadatos.
 
-En cuanto al entrenamiento, la unica informacion publicada es que el ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, con una afirmacion de entrenamiento "2x faster" respecto a un pipeline estandar. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado sobre pares instruccion-respuesta. Tampoco se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, destilacion) mas alla del uso de las herramientas mencionadas.
+En cuanto al entrenamiento, la unica informacion publicada es que el ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, con una afirmacion de entrenamiento "2x faster" respecto a un pipeline estandar. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado sobre pares instruccion-respuesta. Tampoco se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, destilacion) mas alla del uso de las herramientas mencionadas.
 
 ## Capacidades
 
@@ -69,9 +69,9 @@ Los datos de los modelos comparables proceden de sus fichas publicas y deben ver
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SeeWye/qwen_finetune1_16bit | 4,66 B | no disponible | imagen + texto | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3-4B | 4,0 B | 32.768 tokens nativos (ampliable con YaRN) | solo texto | apache-2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-VL-3B-Instruct | 3,75 B | 128.000 tokens (segun ficha del modelo) | imagen + texto | consultar ficha oficial | HuggingFace |
+| SeeWye/qwen_finetune1_16bit | 4,66 B | no disponible | imagen + texto | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3-4B | 4,0 B | 32.768 tokens nativos (ampliable con YaRN) | solo texto | apache-2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-VL-3B-Instruct | 3,75 B | 128.000 tokens (segun ficha del modelo) | imagen + texto | consultar ficha oficial | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, modalidad, licencia y disponibilidad.
 
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeeWye/qwen_finetune1_16bit
+- Modelo en Hugging Face: https://huggingface.co/SeeWye/qwen_finetune1_16bit
 - Modelo base: https://huggingface.co/SeeWye/qwen3_5_TM_ocr_merged2
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Guia de fine-tuning de Qwen: https://deepwiki.com/QwenLM/Qwen/4-fine-tuning-guide

@@ -95,7 +95,7 @@ Comparación con alternativas de otros fabricantes (Qwen, Llama, Gemma en el ran
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sahilchachra/MiniCPM5-2B-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/sahilchachra/MiniCPM5-2B-MXFP4
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Cuantizacion MXFP8 del mismo autor: https://huggingface.co/sahilchachra/MiniCPM5-2B-MXFP8
 - Cuantizacion OptiQ 5-bpw del mismo autor: https://huggingface.co/sahilchachra/MiniCPM5-2B-OptiQ-5bpw

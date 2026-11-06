@@ -94,7 +94,7 @@ El eje de comparación relevante no es el rendimiento generalista, sino la tasa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-vanilla-873rows-ep3
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-vanilla-873rows-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Brazo prompt-gated gemelo: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep3
 - Variante de 1.450 filas: https://featherless.ai/models/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3

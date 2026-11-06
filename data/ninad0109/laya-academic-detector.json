@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Ninad0109/laya-academic-detector",
+  "slug": "ninad0109-laya-academic-detector",
+  "author": "Ninad0109",
+  "url": "https://huggingface.co/Ninad0109/laya-academic-detector",
+  "created_at": "2026-11-06T11:16:48.000Z",
+  "updated_at": "2026-11-06T11:18:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "laya",
+    "ai-detection",
+    "turnitin",
+    "ithenticate",
+    "academic-integrity",
+    "modernbert",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150569127,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Detectors for Academic Integrity: A 2026 Guide - EDUCBA",
+      "url": "https://www.educba.com/ai-detectors-for-academic-integrity/",
+      "snippet": "AI Detectors for Academic Integrity: Overview Artificial Intelligence revolutionizes how students approach learning and has created new opportunities for academic dishonesty. With the rise of generative AI tools like ChatGPT and Google Gemini, students increasingly use AI to complete assignments, write essays, and prepare research papers."
+    },
+    {
+      "title": "12 Best AI Detectors | Free & Premium Tools Tested (2026 Guide) - Scribbr",
+      "url": "https://www.scribbr.com/ai-tools/best-ai-detector/",
+      "snippet": "The best free AI detectors (2026) are Scribbr and QuillBot, both correctly identified 78% of our testing texts. The most accurate AI Detector is Scribbr."
+    }
+  ]
+}

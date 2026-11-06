@@ -78,8 +78,8 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rehearsal-Glimmer-30B-r1-LoRA | 30B (base) + LoRA r=16 | no disponible | Simulacion de decisiones con vision | apache-2.0 | HuggingFace (adaptador y fusionado) |
-| Muse-Glimmer-30B (base) | 30B | no disponible | Multimodal image-text-to-text generalista | no disponible | HuggingFace (meta-models) |
+| Rehearsal-Glimmer-30B-r1-LoRA | 30B (base) + LoRA r=16 | no disponible | Simulacion de decisiones con vision | apache-2.0 | Hugging Face (adaptador y fusionado) |
+| Muse-Glimmer-30B (base) | 30B | no disponible | Multimodal image-text-to-text generalista | no disponible | Hugging Face (meta-models) |
 | Muse Spark (profesor) | no disponible | no disponible | Razonamiento multimodal, nivel medio | no disponible | no disponible como pesos publicos |
 
 No se dispone de datos publicos de benchmarks estandar para estos modelos, por lo que la comparativa se limita a parametros, enfoque y disponibilidad. Alternativas de simulacion de comportamiento de proposito general: no disponible.
@@ -98,8 +98,8 @@ No se dispone de datos publicos de benchmarks estandar para estos modelos, por l
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/Yesini/Rehearsal-Glimmer-30B-r1-LoRA
-- HuggingFace (checkpoint fusionado bf16 para vLLM): https://huggingface.co/Yesini/Rehearsal-Glimmer-30B-r1
+- Hugging Face (adaptador LoRA): https://huggingface.co/Yesini/Rehearsal-Glimmer-30B-r1-LoRA
+- Hugging Face (checkpoint fusionado bf16 para vLLM): https://huggingface.co/Yesini/Rehearsal-Glimmer-30B-r1
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Codigo y metodo (Rehearsal): https://github.com/tokyosini573/META-Global-AI-Developer-Hackathon
 - Datos de destilacion: https://github.com/tokyosini573/META-Global-AI-Developer-Hackathon/tree/main/data/distill

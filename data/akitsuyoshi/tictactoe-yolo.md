@@ -4,7 +4,7 @@
 
 El modelo `Akitsuyoshi/tictactoe-yolo` es un detector de objetos basado en YOLO, desarrollado por Akitsuyoshi para un sistema robótico de tres en raya (tic-tac-toe). El modelo identifica tres clases: el tablero de juego y las fichas X y O. Forma parte de un proyecto más amplio que integra ROS 2, MoveIt 2 y control robótico para jugar partidas de forma autónoma. La relevancia de este modelo radica en su aplicación directa en robótica y visión por computador, demostrando cómo un detector de objetos ligero puede ser el componente visual de un sistema de manipulación física.
 
-La arquitectura está basada en YOLO (probablemente una versión de Ultralytics, aunque no se especifica), y el modelo se distribuye a través de HuggingFace con la librería `ultralytics`. No se proporcionan detalles sobre el número de parámetros, el contexto de entrada (tamaño de imagen) ni la licencia, lo que limita su evaluación técnica exhaustiva. El modelo está orientado a un caso de uso muy concreto: la detección de elementos de juego en un entorno de robótica de manipulación.
+La arquitectura está basada en YOLO (probablemente una versión de Ultralytics, aunque no se especifica), y el modelo se distribuye a través de Hugging Face con la librería `ultralytics`. No se proporcionan detalles sobre el número de parámetros, el contexto de entrada (tamaño de imagen) ni la licencia, lo que limita su evaluación técnica exhaustiva. El modelo está orientado a un caso de uso muy concreto: la detección de elementos de juego en un entorno de robótica de manipulación.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La arquitectura está basada en YOLO (probablemente una versión de Ultralytics,
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura YOLO (You Only Look Once), implementada mediante la librería Ultralytics. YOLO es un detector de objetos de una sola pasada que divide la imagen en una cuadrícula y predice cajas delimitadoras y clases directamente. En este caso, el modelo está entrenado para reconocer tres clases: `Board` (tablero), `X` y `O`. El entrenamiento se realizó con el dataset `akitsuyoshi/tictactoe-with-real`, disponible en HuggingFace y también en Kaggle, que contiene imágenes reales de tableros y fichas de tres en-tras. No se especifican el número de imágenes, la cantidad de épocas ni los hiperparámetros utilizados.
+El modelo se basa en la arquitectura YOLO (You Only Look Once), implementada mediante la librería Ultralytics. YOLO es un detector de objetos de una sola pasada que divide la imagen en una cuadrícula y predice cajas delimitadoras y clases directamente. En este caso, el modelo está entrenado para reconocer tres clases: `Board` (tablero), `X` y `O`. El entrenamiento se realizó con el dataset `akitsuyoshi/tictactoe-with-real`, disponible en Hugging Face y también en Kaggle, que contiene imágenes reales de tableros y fichas de tres en-tras. No se especifican el número de imágenes, la cantidad de épocas ni los hiperparámetros utilizados.
 
 El modelo se integra en un sistema robótico que utiliza ROS 2 para la comunicación entre nodos, YOLO para la detección visual, MoveIt 2 para la planificación de movimientos del brazo robótico y un algoritmo Minimax para calcular el mejor movimiento. La detección de las fichas y del tablero permite al robot conocer el estado del juego y actuar en consecuencia.
 
@@ -69,8 +69,8 @@ No hay información suficiente para comparar este modelo con alternativas de la 
 
 ## Enlaces
 
-- [HuggingFace - Akitsuyoshi/tictactoe-yolo](https://huggingface.co/Akitsuyoshi/tictactoe-yolo)
+- [Hugging Face - Akitsuyoshi/tictactoe-yolo](https://huggingface.co/Akitsuyoshi/tictactoe-yolo)
 - [GitHub - tictactoe_robot](https://github.com/Akitsuyoshi/tictactoe_robot)
-- [Dataset de entrenamiento en HuggingFace](https://huggingface.co/datasets/akitsuyoshi/tictactoe-with-real)
+- [Dataset de entrenamiento en Hugging Face](https://huggingface.co/datasets/akitsuyoshi/tictactoe-with-real)
 - [Dataset de entrenamiento en Kaggle](https://www.kaggle.com/datasets/akitsuyoshi/tictactoe-with-real)
 - [Vídeo de demostración del robot autónomo](https://www.youtube.com/watch?v=ukr_7SG5Fbk)

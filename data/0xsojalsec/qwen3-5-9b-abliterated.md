@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-abliterated es una variante modificada del modelo Qwen/Qwen3.5-9B publicada por el usuario 0xSojalSec en HuggingFace. Se trata de un proceso de "abliteración" (abliteration) que elimina quirúrgicamente la direccion de rechazo del espacio de pesos del modelo base, dando como resultado un modelo de 8.953.803.264 parametros que responde a practicamente cualquier peticion sin activar mecanismos de negativa. El repositorio ocupa 17,9 GB y se distribuye en formato safetensors bajo licencia Apache 2.0.
+Qwen3.5-9B-abliterated es una variante modificada del modelo Qwen/Qwen3.5-9B publicada por el usuario 0xSojalSec en Hugging Face. Se trata de un proceso de "abliteración" (abliteration) que elimina quirúrgicamente la direccion de rechazo del espacio de pesos del modelo base, dando como resultado un modelo de 8.953.803.264 parametros que responde a practicamente cualquier peticion sin activar mecanismos de negativa. El repositorio ocupa 17,9 GB y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
 El modelo base Qwen3.5-9B emplea una arquitectura hibrida que combina capas DeltaNet (atencion lineal) con capas de atencion estandar en un patron repetido de 3 capas DeltaNet por cada capa de atencion, con un total de 32 capas. El autor documenta que la abliteracion se aplico sobre las proyecciones de salida que escriben en el residual stream (`linear_attn.out_proj`, `self_attn.o_proj` y `mlp.down_proj`) mediante tres pasadas de proyeccion ortogonal, seguidas de un ajuste fino con QLoRA para eliminar las cinco categorias de rechazo residuales.
 
@@ -96,9 +96,9 @@ Verificaciones cualitativas de capacidad (sin puntuacion numerica): razonamiento
 
 | Modelo | Parametros | Contexto | Tasa de respuesta (benchmark propio 18 prompts) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-abliterated | 8,95 B | No disponible | 94-100 % | Apache 2.0 | HuggingFace, 0 descargas al momento del registro |
-| Qwen/Qwen3.5-9B (base) | 8,95 B | No disponible | 0 % | Apache 2.0 | HuggingFace |
-| Dolphin-Mistral 7B | 7 B | No disponible | 94 % | No disponible en la informacion | HuggingFace |
+| Qwen3.5-9B-abliterated | 8,95 B | No disponible | 94-100 % | Apache 2.0 | Hugging Face, 0 descargas al momento del registro |
+| Qwen/Qwen3.5-9B (base) | 8,95 B | No disponible | 0 % | Apache 2.0 | Hugging Face |
+| Dolphin-Mistral 7B | 7 B | No disponible | 94 % | No disponible en la informacion | Hugging Face |
 
 El autor destaca como ventaja diferencial que este modelo tiene 8,95 mil millones de parametros frente a los 7 mil millones de Dolphin-Mistral, lo que en su valoracion se traduce en mejor razonamiento, codigo y conocimiento manteniendo el comportamiento sin censura. No se han publicado comparaciones frente a otras variantes abliteradas de la familia Qwen en la informacion disponible.
 
@@ -117,7 +117,7 @@ El autor destaca como ventaja diferencial que este modelo tiene 8,95 mil millone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/Qwen3.5-9B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/Qwen3.5-9B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de referencia sobre abliteracion (Arditi et al., 2024): https://arxiv.org/abs/2406.11717
 - Modelo comparado Dolphin-Mistral 7B: https://huggingface.co/cognitivecomputations/dolphin-2.6-mistral-7b

@@ -67,9 +67,9 @@ Los resultados se promedian sobre tres semillas adicionales. No se han publicado
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lawam_so101_block_stack_sim | no disponible | no disponible | Apilado de bloques con SO-101 en simulacion | MIT | HuggingFace |
-| drwahl/pi05_so101_block_stack_sim | no disponible | no disponible | Misma tarea y protocolo de evaluacion | no disponible | HuggingFace |
-| jialei02/lawam-pretrain-lerobot (base) | no disponible | no disponible | VLA preentrenado para LeRobot | no disponible | HuggingFace |
+| lawam_so101_block_stack_sim | no disponible | no disponible | Apilado de bloques con SO-101 en simulacion | MIT | Hugging Face |
+| drwahl/pi05_so101_block_stack_sim | no disponible | no disponible | Misma tarea y protocolo de evaluacion | no disponible | Hugging Face |
+| jialei02/lawam-pretrain-lerobot (base) | no disponible | no disponible | VLA preentrenado para LeRobot | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos referenciados en la informacion disponible; no se dispone de datos de rendimiento de las alternativas para contrastar.
 
@@ -86,7 +86,7 @@ La comparativa se limita a los modelos referenciados en la informacion disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drwahl/lawam_so101_block_stack_sim
+- Modelo en Hugging Face: https://huggingface.co/drwahl/lawam_so101_block_stack_sim
 - Modelo base: https://huggingface.co/jialei02/lawam-pretrain-lerobot
 - Dataset de entrenamiento: https://huggingface.co/datasets/drwahl/so101_block_stack_sim
 - Repositorio de codigo: https://github.com/danwahl/vla-test

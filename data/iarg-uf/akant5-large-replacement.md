@@ -94,7 +94,7 @@ La comparación directa con mT5-large no es del todo equivalente: el recuento de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-large-replacement
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-large-replacement
 - Checkpoint de inicialización de vocabulario: https://huggingface.co/IARG-UF/akant5-large-replacement-init
 - Colección AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base mT5-large: https://huggingface.co/google/mt5-large

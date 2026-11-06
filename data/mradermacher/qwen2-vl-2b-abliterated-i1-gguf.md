@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF del modelo `MahdiAlikhah/qwen2-vl-2b-abliterated`, un derivado "abliterated" (sin censura, con las direcciones de rechazo ablacionadas) del modelo de visión-lenguaje Qwen2-VL de 2B parámetros. El publicador es mradermacher, un cuantizador conocido en HuggingFace que genera versiones GGUF con imatrix (quants de tipo i1) para su uso en llama.cpp y herramientas compatibles. La ficha corresponde, por tanto, a un artefacto de cuantización y no a un entrenamiento original: no se aportan datos de entrenamiento, dataset ni evaluación propios.
+Este repositorio contiene cuantizaciones GGUF del modelo `MahdiAlikhah/qwen2-vl-2b-abliterated`, un derivado "abliterated" (sin censura, con las direcciones de rechazo ablacionadas) del modelo de visión-lenguaje Qwen2-VL de 2B parámetros. El publicador es mradermacher, un cuantizador conocido en Hugging Face que genera versiones GGUF con imatrix (quants de tipo i1) para su uso en llama.cpp y herramientas compatibles. La ficha corresponde, por tanto, a un artefacto de cuantización y no a un entrenamiento original: no se aportan datos de entrenamiento, dataset ni evaluación propios.
 
 El valor practico del repositorio es doble. Por un lado, permite ejecutar un modelo multimodal (texto más imagen) de tamano reducido en hardware de consumo mediante cuantizaciones que van desde IQ1_S hasta Q6_K. Por otro, ofrece una variante sin los mecanismos de rechazo del modelo original, orientada a casos de uso donde los filtros de seguridad del modelo base resultan un obstaculo (investigacion sobre alineacion, red teaming, generacion creativa sin restricciones). Esto ultimo conlleva implicaciones eticas y legales que se detallan en la seccion de limitaciones.
 
@@ -21,7 +21,7 @@ La relevancia actual viene de la combinacion de tres factores: un modelo base mu
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (cuantizaciones i1/weighted-imatrix y fichero imatrix; los quants estaticos y los ficheros mmproj estan en el repositorio estatico enlazado) |
 
-Otros metadatos: repositorio de 0,0 GB segun HuggingFace, 0 descargas y 0 likes en el momento de la consulta, fecha de creacion 2 de octubre de 2026 y ultima actualizacion 2 de octubre de 2026 (fechas tal como figuran en la API). Libreria declarada: transformers. Pipeline: no disponible.
+Otros metadatos: repositorio de 0,0 GB segun Hugging Face, 0 descargas y 0 likes en el momento de la consulta, fecha de creacion 2 de octubre de 2026 y ultima actualizacion 2 de octubre de 2026 (fechas tal como figuran en la API). Libreria declarada: transformers. Pipeline: no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -66,7 +66,7 @@ Las cifras de esta seccion son estimaciones derivadas del tamano declarado (2B) 
 - VRAM total practica: en torno a 2-3 GB en Q4_K_M con mmproj cuantizado, lo que situa el modelo en el rango de GPUs de consumo.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090) es suficiente en cuantizaciones Q4 y superiores; en Q6_K o con mmproj en f16 conviene disponer de 6-8 GB. GPUs de datacenter (A100, H100) no aportan ventaja significativa para un modelo de este tamano y solo tienen sentido para servir muchas peticiones concurrentes.
 - Ejecucion en CPU: viable en todas las cuantizaciones, especialmente IQ1/IQ2/Q3, con velocidades dependientes del numero de nucleos. Tambien es posible la ejecucion parcial con offload de capas a GPU.
-- Opciones de despliegue: llama.cpp y sus derivados (llama-server, Ollama, LM Studio, KoboldCpp) son la via natural para GGUF. vLLM y TGI no consumen GGUF de forma nativa y requeririan los pesos originales en safetensors. El campo `endpoints_compatible` de los tags sugiere compatibilidad con endpoints tipo HuggingFace.
+- Opciones de despliegue: llama.cpp y sus derivados (llama-server, Ollama, LM Studio, KoboldCpp) son la via natural para GGUF. vLLM y TGI no consumen GGUF de forma nativa y requeririan los pesos originales en safetensors. El campo `endpoints_compatible` de los tags sugiere compatibilidad con endpoints tipo Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La informacion disponible solo permite comparar a nivel de metadatos; no hay dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-i1-GGUF
 - Modelo base (abliterated): https://huggingface.co/MahdiAlikhah/qwen2-vl-2b-abliterated
 - Repositorio de cuantizaciones estaticas y ficheros mmproj: https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-GGUF
 - Pagina de vision general de cuantizaciones del autor: https://hf.tst.eu/model#qwen2-vl-2b-abliterated-i1-GGUF

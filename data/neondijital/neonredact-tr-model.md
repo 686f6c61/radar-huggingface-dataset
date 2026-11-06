@@ -94,9 +94,9 @@ El autor advierte explícitamente de que las puntuaciones de validación sobre u
 
 | Modelo | Tipo | Parametros | Contexto | Micro F1 (todas las etiquetas) | Fuga de sufijos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| NeonRedact-TR + reglas | NER zero-shot (GLiNER) | no disponible | no disponible | 0,790 | 0,0 % | Apache 2.0 | HuggingFace |
-| NeonRedact-TR solo | NER zero-shot (GLiNER) | no disponible | no disponible | 0,730 | 0,0 % | Apache 2.0 | HuggingFace |
-| urchade/gliner_multi-v2.1 (base) | NER zero-shot multilingüe | no disponible | no disponible | no disponible en este banco | no disponible | no disponible | HuggingFace |
+| NeonRedact-TR + reglas | NER zero-shot (GLiNER) | no disponible | no disponible | 0,790 | 0,0 % | Apache 2.0 | Hugging Face |
+| NeonRedact-TR solo | NER zero-shot (GLiNER) | no disponible | no disponible | 0,730 | 0,0 % | Apache 2.0 | Hugging Face |
+| urchade/gliner_multi-v2.1 (base) | NER zero-shot multilingüe | no disponible | no disponible | no disponible en este banco | no disponible | no disponible | Hugging Face |
 | OpenMed v2 | Detección de PII multilingüe | no disponible | no disponible | 0,356 | 1,4 % | no disponible | no disponible |
 | OpenAI Privacy Filter | Filtro de privacidad | no disponible | no disponible | 0,348 | 18,4 % | no disponible | no disponible |
 
@@ -119,7 +119,7 @@ La comparación relevante es doble: frente a los modelos multilingües de PII, l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neondijital/neonredact-tr-model
+- Modelo en Hugging Face: https://huggingface.co/neondijital/neonredact-tr-model
 - Dataset de entrenamiento: https://huggingface.co/datasets/neondijital/neonredact-tr
 - Banco de evaluación NeonRedact-TR Bench v1: https://huggingface.co/datasets/neondijital/neonredact-tr-bench
 - Resultados completos, salvedades y código: https://huggingface.co/datasets/neondijital/neonredact-tr-bench/blob/main/RESULTS.md

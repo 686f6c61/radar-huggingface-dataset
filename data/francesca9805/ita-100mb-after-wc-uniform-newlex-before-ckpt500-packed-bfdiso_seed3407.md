@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) de tipo SFT del checkpoint `francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfdiso_seed3407`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto con arquitectura GPT-2 y 124.770.816 parametros totales (aproximadamente 124,7 millones), lo que lo situa en la gama de los modelos pequenos tipo GPT-2 base. El repositorio ocupa 3,5 GB y los pesos se distribuyen en formato safetensors, compatibles con la libreria transformers y con text-generation-inference.
+Este modelo es un ajuste fino (fine-tuning) de tipo SFT del checkpoint `francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfdiso_seed3407`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto con arquitectura GPT-2 y 124.770.816 parametros totales (aproximadamente 124,7 millones), lo que lo situa en la gama de los modelos pequenos tipo GPT-2 base. El repositorio ocupa 3,5 GB y los pesos se distribuyen en formato safetensors, compatibles con la libreria transformers y con text-generation-inference.
 
 El modelo ha sido entrenado con TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.11.0 y Datasets 4.8.4, segun la informacion de la model card. El nombre del checkpoint sugiere un experimento centrado en tokenizadores nuevos y en el idioma italiano ("ita") sobre un corpus de aproximadamente 100 MB, aunque la model card no documenta ni el dataset ni la composicion del mismo. No se especifica licencia, idiomas soportados ni longitud de contexto en la metadata disponible.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/ita-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,7 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| francesca9805/ita-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,7 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 base (OpenAI) | 124 M | 1024 tokens | MIT (segun publicacion original) | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (segun publicacion original) | Ampliamente disponible |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT (segun publicacion original) | Ampliamente disponible |
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks del modelo analizado, por lo que la compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfdiso_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/i31yr1qi

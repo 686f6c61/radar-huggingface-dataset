@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `StanfordSCALE/assertion_sentence_references_student_behavior_or_work` es un clasificador binario de texto desarrollado por la Stanford SCALE Initiative dentro del proyecto *EduBehaviors: Assertion-based schemas for auditable dialogue coding*. Su tarea es determinar si un enunciado de un docente (una unica intervencion, sin contexto conversacional adicional) contiene una referencia al comportamiento o al trabajo del alumnado. Se distribuye a traves de HuggingFace y se consume con la libreria `setfit`, ademas de integrarse en el paquete Python `EduBehaviors-kit`.
+El modelo `StanfordSCALE/assertion_sentence_references_student_behavior_or_work` es un clasificador binario de texto desarrollado por la Stanford SCALE Initiative dentro del proyecto *EduBehaviors: Assertion-based schemas for auditable dialogue coding*. Su tarea es determinar si un enunciado de un docente (una unica intervencion, sin contexto conversacional adicional) contiene una referencia al comportamiento o al trabajo del alumnado. Se distribuye a traves de Hugging Face y se consume con la libreria `setfit`, ademas de integrarse en el paquete Python `EduBehaviors-kit`.
 
 Tecnicamente no es un modelo generativo, sino un clasificador SetFit construido sobre el encoder `sentence-transformers/paraphrase-mpnet-base-v2` (arquitectura MPNet) con 109.486.464 parametros totales y una cabeza de regresion logistica. Se entreno sobre un subconjunto del TalkMoves Dataset anotado automaticamente por LLM, con 3.430 ejemplos de entrenamiento, 860 de desarrollo y 2.144 de test, y esta limitado al ingles.
 
@@ -82,8 +82,8 @@ No se han publicado comparativas con otros clasificadores de la misma categoria 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_sentence_references_student_behavior_or_work | 109.486.464 | no disponible (encoder MPNet, hasta 512 tokens) | Clasificacion binaria de aserciones docentes | no disponible | HuggingFace (0 descargas, 0 likes) |
-| sentence-transformers/paraphrase-mpnet-base-v2 | misma base MPNet (no se especifica el conteo exacto en la informacion facilitada) | 512 tokens (caracteristica del encoder MPNet) | Embeddings de frase, sin cabeza de clasificacion | no disponible en la informacion facilitada | HuggingFace |
+| assertion_sentence_references_student_behavior_or_work | 109.486.464 | no disponible (encoder MPNet, hasta 512 tokens) | Clasificacion binaria de aserciones docentes | no disponible | Hugging Face (0 descargas, 0 likes) |
+| sentence-transformers/paraphrase-mpnet-base-v2 | misma base MPNet (no se especifica el conteo exacto en la informacion facilitada) | 512 tokens (caracteristica del encoder MPNet) | Embeddings de frase, sin cabeza de clasificacion | no disponible en la informacion facilitada | Hugging Face |
 | Otros clasificadores supervisados de discurso educativo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se han publicado comparativas con otros clasificadores de la misma categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_references_student_behavior_or_work
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_references_student_behavior_or_work
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

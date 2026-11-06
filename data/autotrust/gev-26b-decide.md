@@ -108,11 +108,11 @@ No se han publicado resultados de benchmarks de conocimiento general (MMLU, Huma
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| autotrust/GEV-26B-Decide | 25,8 B totales, aprox. 4 B activos | no disponible | Decision Index 0.2.1: 62,48; computer use 95% a 85 ms/clic; brazo robot 40% a 61 ms | apache-2.0 (base con licencia Gemma 4) | HuggingFace, 446.527 descargas, vLLM |
-| autotrust/JEV-27B-VL | no disponible en la informacion proporcionada | no disponible | Computer use 95% a 260 ms/clic; brazo robot 75% a 239 ms | no disponible | HuggingFace |
-| autotrust/JEV-9B | no disponible en la informacion proporcionada | no disponible | Computer use 95% a 200 ms/clic; brazo robot 50% a 163 ms | no disponible | HuggingFace |
+| autotrust/GEV-26B-Decide | 25,8 B totales, aprox. 4 B activos | no disponible | Decision Index 0.2.1: 62,48; computer use 95% a 85 ms/clic; brazo robot 40% a 61 ms | apache-2.0 (base con licencia Gemma 4) | Hugging Face, 446.527 descargas, vLLM |
+| autotrust/JEV-27B-VL | no disponible en la informacion proporcionada | no disponible | Computer use 95% a 260 ms/clic; brazo robot 75% a 239 ms | no disponible | Hugging Face |
+| autotrust/JEV-9B | no disponible en la informacion proporcionada | no disponible | Computer use 95% a 200 ms/clic; brazo robot 50% a 163 ms | no disponible | Hugging Face |
 | TypeSafe Jev 1.13 (board) | no disponible | no disponible | Decision Index 0.2.1: 57,91 | no disponible | Referencia de board |
-| google/gemma-4-26B-A4B-it | 26 B totales, aprox. 4 B activos | no disponible | no disponible | licencia Gemma 4 (enlace en la model card) | Modelo base en HuggingFace |
+| google/gemma-4-26B-A4B-it | 26 B totales, aprox. 4 B activos | no disponible | no disponible | licencia Gemma 4 (enlace en la model card) | Modelo base en Hugging Face |
 
 La comparativa con los modelos de la misma familia es la mas informativa: GEV-26B-Decide iguala en exito a JEV-27B-VL y JEV-9B en computer use, pero es entre 2,3 y 3 veces mas rapido por clic; en cambio, en manipulacion robotica queda por detras de JEV-27B-VL (40% frente a 75%), con un tiempo por decision 3,9 veces menor. No se dispone de datos de parametros, contexto ni licencia de JEV-27B-VL y JEV-9B en la informacion proporcionada.
 
@@ -131,7 +131,7 @@ La comparativa con los modelos de la misma familia es la mas informativa: GEV-26
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/GEV-26B-Decide
+- Modelo en Hugging Face: https://huggingface.co/autotrust/GEV-26B-Decide
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4 referenciada por el autor: https://ai.google.dev/gemma/docs/gemma_4_license
 - Dataset de resultados del Decision Index: https://huggingface.co/datasets/autotrust/jev-decision-index-results

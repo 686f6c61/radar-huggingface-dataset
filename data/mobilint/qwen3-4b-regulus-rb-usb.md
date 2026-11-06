@@ -54,7 +54,7 @@ No hay documentación específica de capacidades en este repositorio. Las capaci
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de MMLU, HumanEval, GSM8K ni de latencia o throughput, y la búsqueda web realizada no ha devuelto documentación técnica relacionada (los resultados obtenidos eran entradas de diccionarios de hindi sin relación con el modelo).
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de MMLU, HumanEval, GSM8K ni de latencia o throughput, y la búsqueda web realizada no ha devuelto documentación técnica relacionada (los resultados obtenidos eran entradas de diccionarios de hindi sin relación con el modelo).
 
 ## Requisitos de hardware
 
@@ -91,7 +91,7 @@ La diferencia relevante no es de calidad, sino de naturaleza del artefacto: este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobilint/Qwen3-4B-regulus-rb-usb
+- Modelo en Hugging Face: https://huggingface.co/mobilint/Qwen3-4B-regulus-rb-usb
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE
 - Sitio del fabricante: https://mobilint.com

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gymnasium. No es un modelo de lenguaje: se trata de un artefacto de aprendizaje por refuerzo clásico publicado en HuggingFace por el usuario Yujana como entrega de la Unidad 2 del curso Deep Reinforcement Learning de Hugging Face. El repositorio contiene una tabla Q serializada en formato pickle (q-table.pkl), con un tamano de repositorio declarado de 0.0 GB.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gymnasium. No es un modelo de lenguaje: se trata de un artefacto de aprendizaje por refuerzo clásico publicado en Hugging Face por el usuario Yujana como entrega de la Unidad 2 del curso Deep Reinforcement Learning de Hugging Face. El repositorio contiene una tabla Q serializada en formato pickle (q-table.pkl), con un tamano de repositorio declarado de 0.0 GB.
 
-El modelo resuelve la tarea de recogida y entrega de pasajeros de Taxi-v3, un entorno discreto y de estado finito ampliamente utilizado como ejemplo introductorio de control secuencial. Su relevancia es exclusivamente didactica y de referencia: sirve como linea base verificable para comparar implementaciones de Q-learning y para validar flujos de evaluacion de agentes en el ecosistema de HuggingFace.
+El modelo resuelve la tarea de recogida y entrega de pasajeros de Taxi-v3, un entorno discreto y de estado finito ampliamente utilizado como ejemplo introductorio de control secuencial. Su relevancia es exclusivamente didactica y de referencia: sirve como linea base verificable para comparar implementaciones de Q-learning y para validar flujos de evaluacion de agentes en el ecosistema de Hugging Face.
 
 Los resultados declarados por el autor son un retorno medio de 8.5 con desviacion tipica de 1.2, lo que arroja un criterio de evaluacion de 7.3 (media menos desviacion) frente al umbral minimo de 4.0 exigido por el curso. La evaluacion se marca como superada, aunque las metricas no estan verificadas de forma independiente por la plataforma.
 
@@ -25,7 +25,7 @@ Los resultados declarados por el autor son un retorno medio de 8.5 con desviacio
 
 La arquitectura es Q-learning tabular, un metodo de aprendizaje por refuerzo sin aproximacion funcional. El agente mantiene una tabla Q que asigna un valor de accion a cada estado discreto del entorno Taxi-v3 y actualiza dichos valores mediante la regla de diferencias temporales de Q-learning (bootstrapping con la recompensa inmediata y el maximo valor de la siguiente accion). No hay red neuronal, ni capas, ni tokenizador, ni mecanismo de atencion. La politica resultante es greedy respecto de la tabla Q.
 
-No se dispone de informacion sobre el numero de episodios de entrenamiento, la politica de exploracion (epsilon-greedy u otra), los valores de tasa de aprendizaje y factor de descuento empleados, ni sobre el uso de tecnicas adicionales como experience replay, Double Q-learning o decodificacion especulativa (esta ultima no aplica a este tipo de modelos). Tampoco se documenta la composicion del dataset, ya que el entrenamiento se realiza interactuando con el simulador del entorno y no con un corpus de datos. El autor indica unicamente que el agente corresponde a la Unidad 2 del curso Deep Reinforcement Learning de HuggingFace.
+No se dispone de informacion sobre el numero de episodios de entrenamiento, la politica de exploracion (epsilon-greedy u otra), los valores de tasa de aprendizaje y factor de descuento empleados, ni sobre el uso de tecnicas adicionales como experience replay, Double Q-learning o decodificacion especulativa (esta ultima no aplica a este tipo de modelos). Tampoco se documenta la composicion del dataset, ya que el entrenamiento se realiza interactuando con el simulador del entorno y no con un corpus de datos. El autor indica unicamente que el agente corresponde a la Unidad 2 del curso Deep Reinforcement Learning de Hugging Face.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Retorno declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| q-Taxi-v3 (Yujana) | Q-learning tabular | Taxi-v3 | Tabla Q estado-accion (tamano exacto no publicado) | No aplica | 8.5 +/- 1.2 | No disponible | HuggingFace |
+| q-Taxi-v3 (Yujana) | Q-learning tabular | Taxi-v3 | Tabla Q estado-accion (tamano exacto no publicado) | No aplica | 8.5 +/- 1.2 | No disponible | Hugging Face |
 | Otros agentes de la Unidad 2 del curso Deep RL | No disponible | Taxi-v3 | No disponible | No aplica | No disponible | No disponible | No disponible |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -94,6 +94,6 @@ No se dispone de datos publicados de otros agentes comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yujana/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/Yujana/q-Taxi-v3
 - Curso Deep Reinforcement Learning de Hugging Face (Unidad 2): https://huggingface.co/learn/deep-rl-course
 - No se han encontrado en la informacion disponible otros enlaces a papers, repositorios, blogs o demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`igomsmiranda/qwen25-single-gkd-code-fullsft-lambda0p9` es un modelo de lenguaje de 1.543.714.304 parámetros (1,54 B) publicado en HuggingFace por el usuario igomsmiranda. Se trata de un "student" obtenido mediante destilación on-policy con el método GKD (*Generalized Knowledge Distillation*) implementado en TRL, a partir de un "teacher" que el autor no identifica en la model card (el campo aparece literalmente como `None`). Por el recuento de parámetros y el tag `qwen2`, la arquitectura subyacente corresponde a la familia Qwen2.5, concretamente a un modelo denso de 1,5 B.
+`igomsmiranda/qwen25-single-gkd-code-fullsft-lambda0p9` es un modelo de lenguaje de 1.543.714.304 parámetros (1,54 B) publicado en Hugging Face por el usuario igomsmiranda. Se trata de un "student" obtenido mediante destilación on-policy con el método GKD (*Generalized Knowledge Distillation*) implementado en TRL, a partir de un "teacher" que el autor no identifica en la model card (el campo aparece literalmente como `None`). Por el recuento de parámetros y el tag `qwen2`, la arquitectura subyacente corresponde a la familia Qwen2.5, concretamente a un modelo denso de 1,5 B.
 
 El interés del artefacto es fundamentalmente metodológico: no es un modelolisto para producción, sino un checkpoint de investigación que documenta un experimento de destilación (sufijo `lambda0p9`, que corresponde al parámetro de interpolación λ de GKD) sobre datos de código, con precisión bf16, secuencias de 256 tokens y evaluación cada 250 pasos (`bf16_256tok_eval250`). El repositorio ocupa 3,1 GB y no registra descargas ni "likes" en el momento de la consulta.
 
@@ -88,7 +88,7 @@ Los datos de las filas comparativas provienen de las model cards publicas de cad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igomsmiranda/qwen25-single-gkd-code-fullsft-lambda0p9
+- Modelo en Hugging Face: https://huggingface.co/igomsmiranda/qwen25-single-gkd-code-fullsft-lambda0p9
 - Paper de GKD (arXiv:2306.13649): https://huggingface.co/papers/2306.13649
 - Version OpenReview de GKD (ICLR 2024): https://openreview.net/forum?id=3zKtaqxLhW
 - Repositorio de TRL: https://github.com/huggingface/trl

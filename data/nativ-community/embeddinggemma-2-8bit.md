@@ -100,7 +100,7 @@ La comparativa directa relevante es con el checkpoint original google/embeddingg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/embeddinggemma-2-8bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/embeddinggemma-2-8bit
 - Modelo base (Google EmbeddingGemma 2): https://huggingface.co/google/embeddinggemma-2
 - Revision del modelo base usada en la conversion: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

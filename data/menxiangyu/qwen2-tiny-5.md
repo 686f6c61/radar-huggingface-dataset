@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MENXIANGYU/qwen2-tiny-5 es un repositorio de pesos alojado en HuggingFace por el usuario MENXIANGYU, etiquetado con los tags `safetensors`, `qwen2`, `custom_code` y `region:us`. Por el nombre y las etiquetas, se trata de un experimento derivado de la arquitectura Qwen2 de Alibaba, presumiblemente de tamano reducido ("tiny"), aunque el repositorio no incluye model card, pipeline declarado ni informacion sobre el proceso de entrenamiento. El repositorio tiene un tamano de 0,0 GB y apenas 10 descargas y 0 likes desde su creacion.
+MENXIANGYU/qwen2-tiny-5 es un repositorio de pesos alojado en Hugging Face por el usuario MENXIANGYU, etiquetado con los tags `safetensors`, `qwen2`, `custom_code` y `region:us`. Por el nombre y las etiquetas, se trata de un experimento derivado de la arquitectura Qwen2 de Alibaba, presumiblemente de tamano reducido ("tiny"), aunque el repositorio no incluye model card, pipeline declarado ni informacion sobre el proceso de entrenamiento. El repositorio tiene un tamano de 0,0 GB y apenas 10 descargas y 0 likes desde su creacion.
 
 El interes de esta ficha es limitado y fundamentalmente critico: se trata de un artefacto sin documentacion asociada, sin licencia declarada y con la etiqueta `custom_code`, lo que implica que su carga requiere ejecutar codigo Python remoto (`trust_remote_code=True`). Eso lo convierte en un caso de uso poco recomendable para produccion sin una auditoria previa del codigo incluido en el repositorio.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo para `qwen2-tiny-5`, por lo qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MENXIANGYU/qwen2-tiny-5
+- Repositorio Hugging Face: https://huggingface.co/MENXIANGYU/qwen2-tiny-5
 - Modelos del autor: https://huggingface.co/MENXIANGYU/models
 - Informe tecnico de Qwen2 (arXiv): https://arxiv.org/html/2407.10671v1
 - Repositorio GitHub de referencia sobre Qwen2: https://github.com/QuantumEclipseAI/Qwen2

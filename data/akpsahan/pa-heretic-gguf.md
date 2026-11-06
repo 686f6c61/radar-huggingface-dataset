@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/akpsahan/PA-heretic-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/akpsahan/PA-heretic-GGUF
 - Modelo base original: https://huggingface.co/Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic
 - Cuantizaciones con imatrix (variante alternativa): https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic-i1-GGUF
 - Herramienta Heretic (abliteration): https://github.com/p-e-w/heretic

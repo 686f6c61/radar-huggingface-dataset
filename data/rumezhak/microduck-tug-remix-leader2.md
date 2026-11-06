@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `rumezhak/microduck-tug-remix-leader2` | Grafo ONNX + MLP head-to-head | no disponible | no aplica | 162,84 cm (5 semillas, in-sample); 151,67 cm en 20 semillas | no disponible | HuggingFace, 0 descargas |
-| `greecree/microduck-tug-of-war-tug-leader-v4` (base) | Grafo ONNX | no disponible | no aplica | 159,85 cm en el marcador de la Arena; 148,58 cm en las 20 semillas 6–25 | no disponible | HuggingFace |
-| Entradas del pool de rivales (almuli, juicenv, AndoShy) | Políticas RL para la misma tarea | no disponible | no aplica | no disponible (usadas como rivales de entrenamiento, sin puntuación detallada en la información) | no disponible | HuggingFace |
+| `rumezhak/microduck-tug-remix-leader2` | Grafo ONNX + MLP head-to-head | no disponible | no aplica | 162,84 cm (5 semillas, in-sample); 151,67 cm en 20 semillas | no disponible | Hugging Face, 0 descargas |
+| `greecree/microduck-tug-of-war-tug-leader-v4` (base) | Grafo ONNX | no disponible | no aplica | 159,85 cm en el marcador de la Arena; 148,58 cm en las 20 semillas 6–25 | no disponible | Hugging Face |
+| Entradas del pool de rivales (almuli, juicenv, AndoShy) | Políticas RL para la misma tarea | no disponible | no aplica | no disponible (usadas como rivales de entrenamiento, sin puntuación detallada en la información) | no disponible | Hugging Face |
 | Pato de referencia de Pollen | Política de referencia congelada | no disponible | no aplica | no disponible (se usa como oponente fijo de evaluación) | no disponible | Incluido en la Arena |
 
 La comparación directa solo es posible con el modelo base, que es el único con puntuaciones publicadas en la información disponible. El resto de entradas se citan como rivales de liga sin resultados numéricos en la model card.
@@ -105,7 +105,7 @@ La comparación directa solo es posible con el modelo base, que es el único con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-tug-remix-leader2
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-tug-remix-leader2
 - Modelo base: https://huggingface.co/greecree/microduck-tug-of-war-tug-leader-v4 (revisión citada: `7df51cddb20ae68fe28815551e7be88608f6165d`)
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - `microduck-challenges` de Pollen (entorno `Mjlab-TugOfWar-MicroDuck`): mencionado en la model card, sin URL proporcionada

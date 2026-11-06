@@ -18,7 +18,7 @@ Su relevancia actual es limitada: se trata de un modelo de 2022-2023, superado p
 | Longitud de contexto | no aplica (modelo de difusion de imagen, no autoregresivo); la informacion disponible no especifica resolucion nativa ni limite de tokens de prompt |
 | Tipos de cuantizacion | pesos en safetensors cargables en `float16` y `float32` a traves de diffusers (el ejemplo de la model card usa `torch_dtype=torch.float16`); no se documentan variantes GGUF, int8 o nf4 en este repositorio |
 | Idiomas soportados | ingles (segun la model card) |
-| Licencia | CreativeML Open RAIL++-M (etiquetada como `openrail++` en HuggingFace) |
+| Licencia | CreativeML Open RAIL++-M (etiquetada como `openrail++` en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tipo de modelo | difusion texto-a-imagen e imagen-a-imagen (variaciones) |
 | Pipeline diffusers | `StableUnCLIPImg2ImgPipeline` |
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jinstudio/stable-diffusion-2-1-unclip (este repositorio) | 870.173.124 (safetensors publicados) | texto + imagen (embedding CLIP con ruido) | no especificada | openrail++ (CreativeML Open RAIL++-M) | mirror en HuggingFace, 0 descargas, 0 likes |
+| Jinstudio/stable-diffusion-2-1-unclip (este repositorio) | 870.173.124 (safetensors publicados) | texto + imagen (embedding CLIP con ruido) | no especificada | openrail++ (CreativeML Open RAIL++-M) | mirror en Hugging Face, 0 descargas, 0 likes |
 | stabilityai/stable-diffusion-2-1-unclip (original) | no disponible en la informacion proporcionada | texto + imagen (embedding CLIP con ruido) | no especificada | openrail++ (CreativeML Open RAIL++-M) | repositorio oficial, marcado como obsoleto |
 | stabilityai/stable-diffusion-2-1 (base, sin UnCLIP) | no disponible en la informacion proporcionada | solo texto | no especificada | CreativeML Open RAIL++-M | repositorio oficial ampliamente utilizado |
 | Otros modelos texto-a-imagen de la misma generacion (SDXL y posteriores) | no disponibles en la informacion proporcionada | texto (+ imagen en variantes img2img) | no especificada | licencias variadas | no evaluados en esta ficha |
@@ -93,7 +93,7 @@ No se dispone de datos comparativos de rendimiento (FID, CLIP score ni evaluacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jinstudio/stable-diffusion-2-1-unclip
+- Repositorio en Hugging Face: https://huggingface.co/Jinstudio/stable-diffusion-2-1-unclip
 - Repositorio original (obsoleto): https://huggingface.co/stabilityai/stable-diffusion-2-1-unclip
 - Repositorio de codigo de Stability AI: https://github.com/Stability-AI/stablediffusion
 - Repositorio de codigo de Stability AI (organizacion): https://github.com/Stability-AI/

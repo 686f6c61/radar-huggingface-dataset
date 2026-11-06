@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para comparar directamente este adaptado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_gemma-4-e4b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_gemma-4-e4b_seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Framework Tinker: https://thinkingmachines.ai/tinker/

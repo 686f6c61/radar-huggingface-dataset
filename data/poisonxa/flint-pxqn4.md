@@ -94,11 +94,11 @@ La comparacion relevante es interna a la familia Flint: este archivo no aporta u
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/poisonxa/Flint-PXQN4
+- Repositorio Hugging Face de este modelo: https://huggingface.co/poisonxa/Flint-PXQN4
 - Modelo base RecursiveSI/flint: https://huggingface.co/RecursiveSI/flint
-- Perfil de Recursive en HuggingFace: https://huggingface.co/RecursiveSI
+- Perfil de Recursive en Hugging Face: https://huggingface.co/RecursiveSI
 - GGUF Q8_0 de origen (unsloth/flint-GGUF): https://huggingface.co/unsloth/flint-GGUF
-- Perfil de Unsloth en HuggingFace: https://huggingface.co/unsloth
+- Perfil de Unsloth en Hugging Face: https://huggingface.co/unsloth
 - Discord de PXA Network: https://discord.pxanetwork.com
 - Apoyo al autor (Ko-fi): https://ko-fi.com/shatteredrealms1
 - Paper, blog tecnico y demo: no disponibles en la informacion proporcionada

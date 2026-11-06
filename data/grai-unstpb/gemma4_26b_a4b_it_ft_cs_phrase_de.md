@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA de ajuste supervisado (SFT) publicado por GRAI-UNSTPB sobre el modelo base `unsloth/gemma-4-26B-A4B-it`. No se trata, por tanto, de un modelo completo con pesos independientes, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base mediante la libreria PEFT. El identificador del modelo apunta a una variante de Gemma 4 con 26.000 millones de parametros totales y un esquema de mezcla de expertos (MoE), segun la convencion de nomenclatura "A4B" que sugiere del orden de 4.000 millones de parametros activos por token, aunque esta cifra no esta confirmada en la informacion disponible.
 
-El problema que resuelve es el de la adaptacion eficiente de un modelo grande a un dominio o tarea concreta. El sufijo del nombre (`ft_cs_phrase_de`) sugiere un ajuste fino orientado a frases, posiblemente con algun componente multilingue asociado al aleman, pero el repositorio no incluye ni dataset, ni hiperparametros, ni evaluacion que permitan confirmarlo. La model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+El problema que resuelve es el de la adaptacion eficiente de un modelo grande a un dominio o tarea concreta. El sufijo del nombre (`ft_cs_phrase_de`) sugiere un ajuste fino orientado a frases, posiblemente con algun componente multilingue asociado al aleman, pero el repositorio no incluye ni dataset, ni hiperparametros, ni evaluacion que permitan confirmarlo. La model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 Su relevancia actual es doble: por un lado, demuestra el flujo de trabajo habitual de adaptacion con Unsloth, TRL y PEFT sobre modelos MoE de ultima generacion; por otro, sirve como caso de estudio de un repositorio publicado de forma automatizada (creado y actualizado con 20 segundos de diferencia) y sin documentacion tecnica asociada. Las descargas y los "likes" registrados son cero en el momento de la consulta.
 
@@ -77,10 +77,10 @@ No se dispone de datos de rendimiento del adaptador analizado, por lo que la com
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_phrase_de | No disponible (adaptador) | No disponible | No disponible | No disponible | Repositorio abierto en HuggingFace, 0 descargas |
-| unsloth/gemma-4-26B-A4B-it (modelo base) | 26.000 millones (segun identificador) | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen3-30B-A3B | 30.500 millones | 3.300 millones | 32.768 tokens nativos | Apache 2.0 | HuggingFace |
-| Mixtral 8x7B | 46.700 millones | 12.900 millones | 32.768 tokens | Apache 2.0 | HuggingFace |
+| GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_phrase_de | No disponible (adaptador) | No disponible | No disponible | No disponible | Repositorio abierto en Hugging Face, 0 descargas |
+| unsloth/gemma-4-26B-A4B-it (modelo base) | 26.000 millones (segun identificador) | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen3-30B-A3B | 30.500 millones | 3.300 millones | 32.768 tokens nativos | Apache 2.0 | Hugging Face |
+| Mixtral 8x7B | 46.700 millones | 12.900 millones | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 La comparacion de rendimiento entre estos modelos y el adaptador analizado no puede realizarse: no hay evaluaciones publicadas ni del adaptador ni, en la informacion proporcionada, del modelo base.
 
@@ -100,7 +100,7 @@ La comparacion de rendimiento entre estos modelos y el adaptador analizado no pu
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_phrase_de
+- Repositorio del modelo en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_phrase_de
 - Modelo base: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
 - Referencia citada en las etiquetas del repositorio (calculo de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://huggingface.co/docs/peft

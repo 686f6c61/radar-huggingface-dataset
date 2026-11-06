@@ -94,7 +94,7 @@ No disponible. No existen datos suficientes para comparar este modelo con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lfeng03/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/lfeng03/MyAwesomeModel-TestRepo
 - Repos similares encontrados en la web (no oficiales):
   - https://huggingface.co/asfafq3f/MyAwesomeModel-TestRepo
   - https://huggingface.co/haertgs/MyAwesomeModel-TestRepo

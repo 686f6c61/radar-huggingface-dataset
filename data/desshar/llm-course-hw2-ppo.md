@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`desshar/llm-course-hw2-ppo` es un checkpoint de generación de texto publicado en HuggingFace por el usuario desshar, con 134.515.008 parámetros (aproximadamente 134,5 M) en formato safetensors y un tamaño de repositorio de 0,5 GB. El identificador del modelo y la etiqueta `llama` en los metadatos sitúan el checkpoint dentro de la familia de arquitecturas Llama, empaquetado con la librería `transformers` y declarado para el pipeline `text-generation` con uso conversacional. El sufijo `ppo` y el segmento `llm-course-hw2` apuntan a un trabajo de prácticas de un curso de LLM en el que se aplicó aprendizaje por refuerzo con optimización de política proximal (PPO), presumiblemente sobre un modelo base de tamaño similar.
+`desshar/llm-course-hw2-ppo` es un checkpoint de generación de texto publicado en Hugging Face por el usuario desshar, con 134.515.008 parámetros (aproximadamente 134,5 M) en formato safetensors y un tamaño de repositorio de 0,5 GB. El identificador del modelo y la etiqueta `llama` en los metadatos sitúan el checkpoint dentro de la familia de arquitecturas Llama, empaquetado con la librería `transformers` y declarado para el pipeline `text-generation` con uso conversacional. El sufijo `ppo` y el segmento `llm-course-hw2` apuntan a un trabajo de prácticas de un curso de LLM en el que se aplicó aprendizaje por refuerzo con optimización de política proximal (PPO), presumiblemente sobre un modelo base de tamaño similar.
 
-El problema que aborda es, por tanto, el de un experimento reproducible de ajuste por preferencias (RLHF con PPO) sobre un modelo pequeño, más que el de un modelo listo para producción. No hay model card sustantiva: la tarjeta publicada es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`, sin licencia declarada, sin idiomas declarados y sin resultados de evaluación. Tampoco consta ningún dato de arquitectura interna, longitud de contexto o composición del dataset de entrenamiento.
+El problema que aborda es, por tanto, el de un experimento reproducible de ajuste por preferencias (RLHF con PPO) sobre un modelo pequeño, más que el de un modelo listo para producción. No hay model card sustantiva: la tarjeta publicada es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`, sin licencia declarada, sin idiomas declarados y sin resultados de evaluación. Tampoco consta ningún dato de arquitectura interna, longitud de contexto o composición del dataset de entrenamiento.
 
 La relevancia es fundamentalmente didáctica y de investigación: sirve como artefacto de referencia para estudiar cómo se comporta un modelo de 134 M de parámetros tras un ciclo de PPO, comparar políticas antes y después del ajuste, y validar pipelines de RLHF a pequeña escala en hardware de consumo. Cualquier uso más allá de la experimentación debe hacerse con extrema cautela, dado el vacío documental del repositorio.
 
@@ -40,7 +40,7 @@ Sobre el entrenamiento, el nombre del checkpoint (`hw2-ppo`) indica que se aplic
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
 - Multilingüismo: no declarado; no hay lista de idiomas en la tarjeta.
 - Capacidades especiales (modo thinking, visión, audio, decodificación especulativa): no disponibles.
-- Compatibilidad de despliegue: al estar en `transformers` con safetensors, es cargable por TGI, vLLM y llama.cpp (previa conversión), y la etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace.
+- Compatibilidad de despliegue: al estar en `transformers` con safetensors, es cargable por TGI, vLLM y llama.cpp (previa conversión), y la etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en fp32: ~0,54 GB solo de pesos; en bf16/fp16: ~0,27 GB; en int8: ~0,14 GB; en int4: ~0,07 GB. Con caché KV y overhead de runtime, contar 1-2 GB en fp16 y por debajo de 1 GB en int8.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1650, RTX 3050, T4). También es viable en CPU: la inferencia en fp32 con llama.cpp o `transformers` es de decenas de tokens por segundo en un portátil moderno.
 - Cabe holgadamente en GPU de consumo (RTX 3060/4060/4090) e incluso en dispositivos con 2-4 GB de memoria unificada.
-- Opciones de despliegue: `transformers` (referencia), TGI (etiqueta `text-generation-inference`), vLLM, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), llama.cpp/Ollama previa conversión a GGUF (no hay GGUF publicado). Un proveedor externo (FriendliAI) lista un repo homónimo de otro autor, no este.
+- Opciones de despliegue: `transformers` (referencia), TGI (etiqueta `text-generation-inference`), vLLM, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), llama.cpp/Ollama previa conversión a GGUF (no hay GGUF publicado). Un proveedor externo (FriendliAI) lista un repo homónimo de otro autor, no este.
 - Latencia y throughput: no disponibles. A modo orientativo, un modelo denso de 135 M en bf16 sobre una RTX 4090 se sitúa en el orden de miles de tokens por segundo con *batching*, pero no hay medición publicada para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| desshar/llm-course-hw2-ppo | 134,5 M | No disponible | No disponible | HuggingFace, safetensors, 0 descargas | Checkpoint de curso con PPO, sin evaluación publicada |
-| SmolLM2-135M-Instruct (HuggingFace) | 135 M | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | Base instructiva documentada; probable ancestro del linaje usado en el curso |
-| Qwen2.5-0.5B-Instruct (Alibaba) | ~494 M | 32.768 tokens | Apache 2.0 | HuggingFace, vLLM, GGUF | Alternativa de tamaño ligeramente superior con documentación completa |
-| Llama 3.2 1B Instruct (Meta) | ~1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, amplio ecosistema | Requiere aceptar términos; muy superior en capacidad |
+| desshar/llm-course-hw2-ppo | 134,5 M | No disponible | No disponible | Hugging Face, safetensors, 0 descargas | Checkpoint de curso con PPO, sin evaluación publicada |
+| SmolLM2-135M-Instruct (Hugging Face) | 135 M | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | Base instructiva documentada; probable ancestro del linaje usado en el curso |
+| Qwen2.5-0.5B-Instruct (Alibaba) | ~494 M | 32.768 tokens | Apache 2.0 | Hugging Face, vLLM, GGUF | Alternativa de tamaño ligeramente superior con documentación completa |
+| Llama 3.2 1B Instruct (Meta) | ~1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, amplio ecosistema | Requiere aceptar términos; muy superior en capacidad |
 
 Los datos de los modelos comparativos son de referencia general y no provienen de una evaluación conjunta con este checkpoint; la comparación de rendimiento real no está disponible. La diferencia clave no es de arquitectura sino de documentación y licencia: los tres alternativos tienen tarjeta completa, licencia explícita y evaluaciones publicadas, mientras que este repositorio carece de las tres cosas.
 
@@ -90,7 +90,7 @@ Los datos de los modelos comparativos son de referencia general y no provienen d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/desshar/llm-course-hw2-ppo
+- Repositorio Hugging Face: https://huggingface.co/desshar/llm-course-hw2-ppo
 - Repositorio homónimo de otro autor con documentación de PPO sobre SmolLM2-135M-Instruct: https://huggingface.co/neuralsrg/llm-course-hw2-ppo
 - Repositorio homónimo en FriendliAI (tercero): https://friendli.ai/models/xiryss/llm-course-hw2-ppo
 - README del HW2 del curso LLM (PPO, RLHF, modelo de recompensa QRM-Llama3.1-8B): https://github.com/maolama/LLM-Course-Spring2025/blob/main/HW2/README.md

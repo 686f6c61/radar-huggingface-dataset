@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sabi-noema-oQ4e-mtp es un checkpoint cuantizado para MLX a partir de un modelo de la familia Qwen3.5 (etiqueta `qwen3_5`), publicado por el usuario qmnvp en HuggingFace. El repositorio almacena 27.781.427.952 parametros logicos en formato safetensors, con un peso total de aproximadamente 16,977 GB (15,811 GiB) y un tamano de repositorio de 17,0 GB. La cuantizacion se ha realizado con la herramienta oQ de oMLX v0.7.1rc1 mediante esquema de precision mixta, alcanzando una media efectiva de 4,889 bits por peso.
+sabi-noema-oQ4e-mtp es un checkpoint cuantizado para MLX a partir de un modelo de la familia Qwen3.5 (etiqueta `qwen3_5`), publicado por el usuario qmnvp en Hugging Face. El repositorio almacena 27.781.427.952 parametros logicos en formato safetensors, con un peso total de aproximadamente 16,977 GB (15,811 GiB) y un tamano de repositorio de 17,0 GB. La cuantizacion se ha realizado con la herramienta oQ de oMLX v0.7.1rc1 mediante esquema de precision mixta, alcanzando una media efectiva de 4,889 bits por peso.
 
 El checkpoint se descompone en tres bloques funcionales: el modelo de lenguaje principal (26,896B parametros logicos, 15,741 GB), un modulo de vision (0,461B, 0,921 GB) y una cabeza MTP de prediccion multi-token (0,425B, 0,314 GB). La presencia del modulo de vision apunta a un modelo multimodal, mientras que la cabeza MTP sugiere soporte para decodificacion especulativa mediante prediccion de multiples tokens futuros. No obstante, la model card no confirma ninguna de estas capacidades de forma explicita.
 
@@ -96,7 +96,7 @@ No se dispone de informacion sobre modelos comparables directos en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qmnvp/sabi-noema-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/qmnvp/sabi-noema-oQ4e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 
 No se han encontrado otros enlaces relevantes (paper, blog, repositorio o demo) en la busqueda web proporcionada.

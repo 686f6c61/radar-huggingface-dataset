@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jaki131/shadowcat-r1-14b-lora` es un adaptador LoRA de bajo rango publicado en HuggingFace por el usuario Jaki131. Está entrenado sobre la base de `unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit`, una versión cuantizada a 4 bits del modelo Qwen2.5-Coder-14B-Instruct de Alibaba. El adaptador se publica con la librería PEFT y tiene un tamaño de repositorio de 0,3 GB, lo que corresponde a un adaptador LoRA ligero que modifica los pesos del modelo base mediante una actualización de bajo rango.
+El modelo `Jaki131/shadowcat-r1-14b-lora` es un adaptador LoRA de bajo rango publicado en Hugging Face por el usuario Jaki131. Está entrenado sobre la base de `unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit`, una versión cuantizada a 4 bits del modelo Qwen2.5-Coder-14B-Instruct de Alibaba. El adaptador se publica con la librería PEFT y tiene un tamaño de repositorio de 0,3 GB, lo que corresponde a un adaptador LoRA ligero que modifica los pesos del modelo base mediante una actualización de bajo rango.
 
 La model card es prácticamente vacía: no se especifica el proceso de entrenamiento, el conjunto de datos, las licencias ni los idiomas soportados. Tampoco se publican benchmarks ni métricas de evaluación. El modelo se presenta como un ajuste fino supervisado (SFT) sobre el modelo base, pero sin detalles adicionales. Dado que el modelo base es Qwen2.5-Coder-14B-Instruct, el adaptador hereda las capacidades de generación de código y texto de ese modelo, aunque no se puede confirmar ninguna mejora o cambio específico sin información oficial.
 
@@ -62,9 +62,9 @@ Dado que no hay información sobre el rendimiento del adaptador, la comparativa 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-Coder-14B-Instruct | 14B | 32k | Apache 2.0 | HuggingFace |
-| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16k | MIT | HuggingFace |
-| CodeLlama-13B-Instruct | 13B | 16k | Llama 2 license | HuggingFace |
+| Qwen2.5-Coder-14B-Instruct | 14B | 32k | Apache 2.0 | Hugging Face |
+| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16k | MIT | Hugging Face |
+| CodeLlama-13B-Instruct | 13B | 16k | Llama 2 license | Hugging Face |
 
 Nota: la comparación es orientativa; el adaptador `shadowcat-r1-14b-lora` no tiene datos de rendimiento propios, por lo que no puede evaluarse su calidad frente a estos modelos.
 
@@ -79,6 +79,6 @@ Nota: la comparación es orientativa; el adaptador `shadowcat-r1-14b-lora` no ti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jaki131/shadowcat-r1-14b-lora
+- Modelo en Hugging Face: https://huggingface.co/Jaki131/shadowcat-r1-14b-lora
 - Perfil del autor: https://huggingface.co/Jaki131
 - Modelo base (unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit): https://huggingface.co/unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit

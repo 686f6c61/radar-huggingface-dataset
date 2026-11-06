@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emmatliu/hw1-hc3-detector` es un modelo de clasificacion de texto publicado en HuggingFace por la usuaria emmatliu, en el contexto de la asignatura CS546 (Advanced Topics in NLP), segun se indica en su propia model card. Se trata de un checkpoint basado en BERT (etiqueta `bert` del repositorio) con 22.713.986 parametros, pesos en formato safetensors y pipeline declarado `text-classification`.
+`emmatliu/hw1-hc3-detector` es un modelo de clasificacion de texto publicado en Hugging Face por la usuaria emmatliu, en el contexto de la asignatura CS546 (Advanced Topics in NLP), segun se indica en su propia model card. Se trata de un checkpoint basado en BERT (etiqueta `bert` del repositorio) con 22.713.986 parametros, pesos en formato safetensors y pipeline declarado `text-classification`.
 
 El modelo no incluye documentacion tecnica mas alla de dos cifras de exactitud: 0,8449 para una linea base y 0,9743 para el modelo ajustado. No se especifica la tarea concreta de clasificacion, el numero de clases, el dataset de entrenamiento ni el procedimiento de evaluacion. El nombre del repositorio sugiere una posible relacion con el corpus HC3 (Human ChatGPT Comparison Corpus), habitualmente usado para deteccion de texto generado por modelos de lenguaje, pero esta vinculacion no se confirma en la informacion disponible.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada y de caracter academico: no tiene descargas ni likes, 
 | Formato de pesos | safetensors |
 | Pipeline declarado | text-classification |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion en HuggingFace | 2026-10-01 |
+| Fecha de creacion en Hugging Face | 2026-10-01 |
 | Fecha de ultima actualizacion | 2026-10-01 |
 
 ## Arquitectura y entrenamiento
@@ -34,8 +34,8 @@ En cuanto al entrenamiento, la model card se limita a indicar que se trata del t
 ## Capacidades
 
 - Clasificacion de texto: el pipeline declarado es `text-classification`, por lo que la salida esperada es una o varias etiquetas con sus puntuaciones de probabilidad. El numero de clases y su significado no estan documentados.
-- Representaciones de texto: la etiqueta `text-embeddings-inference` indica compatibilidad con el servidor de HuggingFace para inferencia de embeddings y clasificacion, lo que permite exponer el modelo como servicio HTTP.
-- Compatibilidad con Inference Endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse directamente en la infraestructura gestionada de HuggingFace.
+- Representaciones de texto: la etiqueta `text-embeddings-inference` indica compatibilidad con el servidor de Hugging Face para inferencia de embeddings y clasificacion, lo que permite exponer el modelo como servicio HTTP.
+- Compatibilidad con Inference Endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse directamente en la infraestructura gestionada de Hugging Face.
 - Generacion de texto: no disponible. Al ser un encoder de clasificacion, no genera texto libre.
 - Razonamiento, matematicas y codigo: no disponible. No hay evidencia en la informacion proporcionada de que el modelo haya sido entrenado para estas tareas.
 - Tool calling y uso como agente: no disponible. No se documenta soporte de function calling ni de razonamiento multi-paso.
@@ -69,7 +69,7 @@ No se especifica el conjunto de evaluacion, el numero de clases, la metrica exac
 - GPU recomendadas: cualquier GPU con al menos 1 o 2 GB de memoria es suficiente, incluidas GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090, T4 o L4. No se necesita A100 ni H100.
 - Inferencia en CPU: viable y habitual para este tamano de modelo, con latencias de decenas de milisegundos por lote en CPU moderna.
 - GPU de consumo: si, cabe en cualquier GPU de consumo actual e incluso en hardware integrado.
-- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (etiqueta `text-embeddings-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX Runtime o TorchScript, y servicio propio con FastAPI o similar.
+- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (etiqueta `text-embeddings-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX Runtime o TorchScript, y servicio propio con FastAPI o similar.
 - Latencia y throughput: no disponibles. No se publican cifras de latencia ni de rendimiento por segundo, y su estimacion depende del hardware y del tamano de lote.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No hay informacion suficiente para comparar el rendimiento de este checkpoint co
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emmatliu/hw1-hc3-detector | 22,7 M | no disponible | Encoder BERT para clasificacion | no disponible | HuggingFace, 0 descargas |
+| emmatliu/hw1-hc3-detector | 22,7 M | no disponible | Encoder BERT para clasificacion | no disponible | Hugging Face, 0 descargas |
 | bert-base-uncased | 110 M | 512 tokens | Encoder BERT | Apache 2.0 | Ampliamente disponible |
 | distilbert-base-uncased | 66 M | 512 tokens | Encoder destilado | Apache 2.0 | Ampliamente disponible |
 | prajjwal1/bert-tiny | 4,4 M | 512 tokens | Encoder BERT reducido | Apache 2.0 | Ampliamente disponible |
@@ -98,6 +98,6 @@ No hay informacion suficiente para comparar el rendimiento de este checkpoint co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emmatliu/hw1-hc3-detector
+- Hugging Face: https://huggingface.co/emmatliu/hw1-hc3-detector
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos asociados al modelo.

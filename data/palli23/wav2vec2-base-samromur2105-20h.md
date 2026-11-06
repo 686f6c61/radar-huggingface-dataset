@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wav2vec2-base-samromur2105-20h es un modelo de reconocimiento automático del habla (ASR) en islandés, publicado por el usuario palli23 en HuggingFace. Se trata de un ajuste fino de wav2vec2-base sobre el subconjunto de 20 horas del corpus Samrómur 21.05, dentro de un conjunto de checkpoints de escalado denominado "samromur-21.05", asociado al trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" presentado en ICASSP 2026.
+wav2vec2-base-samromur2105-20h es un modelo de reconocimiento automático del habla (ASR) en islandés, publicado por el usuario palli23 en Hugging Face. Se trata de un ajuste fino de wav2vec2-base sobre el subconjunto de 20 horas del corpus Samrómur 21.05, dentro de un conjunto de checkpoints de escalado denominado "samromur-21.05", asociado al trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" presentado en ICASSP 2026.
 
 El modelo resuelve una pregunta concreta de ingeniería: si un modelo acústico pequeño, entrenado con un volumen limitado de datos en un idioma de bajos recursos como el islandés, puede competir con modelos multilingües mucho más grandes. Con 94.403.241 parámetros y un repositorio de 0,4 GB, está diseñado para escenarios donde el coste de inferencia y el despliegue en hardware modesto son prioritarios frente a la precisión bruta.
 
@@ -87,7 +87,7 @@ La comparación cuantitativa de WER no puede realizarse con la información disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/wav2vec2-base-samromur2105-20h
+- Modelo en Hugging Face: https://huggingface.co/palli23/wav2vec2-base-samromur2105-20h
 - Corpus Samrómur (referencia del dataset): no disponible en la informacion proporcionada
 - Paper "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026): no disponible en la informacion proporcionada
 - Repositorio de codigo del trabajo: no disponible en la informacion proporcionada

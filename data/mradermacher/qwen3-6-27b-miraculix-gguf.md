@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. El modelo base `nightmedia/Qwen3.6-27B-Miraculix` no tiene documentación pública en este repositorio, y no se conocen otros modelos de 27B de la familia Qwen3.6 con los que comparar. Se recomienda consultar el modelo base en HuggingFace para obtener más detalles.
+No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. El modelo base `nightmedia/Qwen3.6-27B-Miraculix` no tiene documentación pública en este repositorio, y no se conocen otros modelos de 27B de la familia Qwen3.6 con los que comparar. Se recomienda consultar el modelo base en Hugging Face para obtener más detalles.
 
 ## Limitaciones y advertencias
 

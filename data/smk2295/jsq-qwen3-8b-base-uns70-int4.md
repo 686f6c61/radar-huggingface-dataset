@@ -93,8 +93,8 @@ Nota: el checkpoint aquí descrito no aporta mejoras de eficiencia inmediatas fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smk2295/JSQ-Qwen3-8B-Base-uns70-int4
-- Perfil del autor en HuggingFace: https://huggingface.co/smk2295
+- Modelo en Hugging Face: https://huggingface.co/smk2295/JSQ-Qwen3-8B-Base-uns70-int4
+- Perfil del autor en Hugging Face: https://huggingface.co/smk2295
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Qwen3-8B (variante instruct): https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

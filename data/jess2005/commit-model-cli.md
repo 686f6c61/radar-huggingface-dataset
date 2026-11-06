@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jess2005/commit-model-CLI es un modelo de lenguaje publicado en HuggingFace por el usuario Jess2005 el 10 de octubre de 2026. El repositorio contiene 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) en un espacio de 1,0 GB, y está etiquetado con las categorías gguf, conversational, endpoints_compatible y region:us. La licencia declarada es MIT.
+Jess2005/commit-model-CLI es un modelo de lenguaje publicado en Hugging Face por el usuario Jess2005 el 10 de octubre de 2026. El repositorio contiene 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) en un espacio de 1,0 GB, y está etiquetado con las categorías gguf, conversational, endpoints_compatible y region:us. La licencia declarada es MIT.
 
 El problema concreto que resuelve no está documentado: la model card se limita a una línea con la licencia y no incluye descripción, arquitectura, datos de entrenamiento ni idiomas. El propio nombre del repositorio sugiere un uso orientado a entornos de línea de comandos (posiblemente asistencia en operaciones con Git, como la redacción de mensajes de commit), pero se trata de una inferencia a partir del nombre y no de una funcionalidad confirmada por el autor.
 
@@ -30,7 +30,7 @@ Tampoco hay información sobre el número de tokens de entrenamiento, la composi
 ## Capacidades
 
 - Generación de texto conversacional: es la única capacidad respaldada explícitamente por las etiquetas del repositorio (conversational).
-- Compatibilidad con endpoints de inferencia: la etiqueta endpoints_compatible indica que el modelo puede servirse a través de la infraestructura de endpoints de HuggingFace, aunque no consta que exista un despliegue activo.
+- Compatibilidad con endpoints de inferencia: la etiqueta endpoints_compatible indica que el modelo puede servirse a través de la infraestructura de endpoints de Hugging Face, aunque no consta que exista un despliegue activo.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (no se declaran idiomas).
@@ -40,7 +40,7 @@ Tampoco hay información sobre el número de tokens de entrenamiento, la composi
 
 - Asistente local en terminal: dado el nombre del repositorio, el escenario más plausible es su integración en una CLI para responder consultas cortas o generar comandos. Al ser un modelo de ~1,5B en GGUF, puede ejecutarse en la propia máquina del desarrollador sin enviar datos a servicios externos, pero su utilidad real debe validarse empíricamente antes de adoptarlo.
 - Redacción de mensajes de commit a partir de un diff: un modelo conversacional de este tamaño puede resumir cambios de código en una o dos frases. Requiere verificación manual de la salida, ya que no hay datos de evaluación que respalden su calidad en esta tarea.
-- Prototipado de pipelines de inferencia: la etiqueta endpoints_compatible permite usarlo como sustituto ligero en pruebas de integración de sistemas que consumen APIs compatibles con el formato de HuggingFace, sin coste de GPU de gama alta.
+- Prototipado de pipelines de inferencia: la etiqueta endpoints_compatible permite usarlo como sustituto ligero en pruebas de integración de sistemas que consumen APIs compatibles con el formato de Hugging Face, sin coste de GPU de gama alta.
 - Chatbot de bajo consumo en entornos con recursos limitados: con un repositorio de 1,0 GB, es candidato a desplegarse en CPU, en una Raspberry Pi o en una GPU integrada para asistentes de texto simples donde la latencia no sea crítica.
 - Enrutado y filtrado previo de consultas: en arquitecturas con varios modelos, un modelo pequeño y rápido puede clasificar la intención del usuario o decidir si la petición debe escalarse a un modelo mayor, reduciendo el coste por consulta.
 - Experimentación académica y ajuste fino posterior: al ser un checkpoint pequeño con licencia MIT, sirve como punto de partida para experimentos de fine-tuning, cuantización o destilación en hardware modesto.
@@ -61,7 +61,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parámetros (1,
 - VRAM en Q4_K_M: aproximadamente 1,0 GB de pesos, coherente con el tamaño de 1,0 GB del repositorio; entre 1,5 y 2 GB con overhead.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente en cuantizaciones de 4-5 bits. Para FP16 se recomienda al menos 6-8 GB (RTX 3060, RTX 4060, RTX 2070 o superiores). No requiere A100 ni H100.
 - Compatibilidad con GPU de consumo: sí, en todas las gamas medias y altas recientes; también es viable en CPU y en iGPU con cuantizaciones bajas.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio para el formato GGUF; vLLM y TGI solo si el repositorio incluye pesos safetensors compatibles. La etiqueta endpoints_compatible sugiere soporte para los endpoints de inferencia de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama y LM Studio para el formato GGUF; vLLM y TGI solo si el repositorio incluye pesos safetensors compatibles. La etiqueta endpoints_compatible sugiere soporte para los endpoints de inferencia de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -91,6 +91,6 @@ La diferencia principal no es técnica sino de soporte: los tres modelos alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jess2005/commit-model-CLI
+- Modelo en Hugging Face: https://huggingface.co/Jess2005/commit-model-CLI
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

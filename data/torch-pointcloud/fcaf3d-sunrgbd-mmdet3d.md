@@ -74,7 +74,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Parametros | Contexto / entrada | mAP@0.5 (SUN RGB-D) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fcaf3d.sunrgbd.mmdet3d (este) | 70,5 M | Nube de puntos, 3 canales | 47,93 (declarado) | Apache-2.0 | HuggingFace, torch-pointcloud |
+| fcaf3d.sunrgbd.mmdet3d (este) | 70,5 M | Nube de puntos, 3 canales | 47,93 (declarado) | Apache-2.0 | Hugging Face, torch-pointcloud |
 | FCAF3D original (MMDetection3D) | ~70,5 M (misma arquitectura) | Nube de puntos, 3 canales | no disponible en la informacion | Apache-2.0 | GitHub open-mmlab/mmdetection3d |
 | VoteNet | no disponible en la informacion | Nube de puntos | no disponible en la informacion | no disponible | MMDetection3D |
 | Otros detectores 3D anchor-free | no disponible en la informacion | Nube de puntos | no disponible en la informacion | no disponible | no disponible |
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de resultados numéricos de model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/fcaf3d.sunrgbd.mmdet3d
+- Hugging Face: https://huggingface.co/torch-pointcloud/fcaf3d.sunrgbd.mmdet3d
 - Paper FCAF3D (arXiv): https://arxiv.org/abs/2112.00322
 - Repositorio MMDetection3D (origen de la conversión): https://github.com/open-mmlab/mmdetection3d
 - Librería PyTorch PointCloud: https://github.com/arthurdjn/pytorch-pointcloud

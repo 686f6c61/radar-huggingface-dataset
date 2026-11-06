@@ -70,8 +70,8 @@ No se dispone de información de modelos comparables en la documentación propor
 
 ## Enlaces
 
-- [Repositorio HuggingFace del GGUF](https://huggingface.co/Joakimpalm-Zen/NVIDIA-Nemotron-Nano-9B-v2-Q8_0-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2)
+- [Repositorio Hugging Face del GGUF](https://huggingface.co/Joakimpalm-Zen/NVIDIA-Nemotron-Nano-9B-v2-Q8_0-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2)
 - [Página de NVIDIA Nemotron](https://developer.nvidia.com/topics/ai/nemotron)
 - [Model card en NVIDIA NIM](https://build.nvidia.com/nvidia/nvidia-nemotron-nano-9b-v2/modelcard)
 - [Repositorio del motor xyntetik-runner](https://github.com/Joakimpalm-Zen/xyntetik-runner)

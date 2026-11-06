@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks especificos para esta exportacion O
 
 | Modelo | Formato | Precision | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BiRefNet_dynamic-ONNX-CUDA (este) | ONNX | FP16 | 1024×1024 RGB | Mascara alfa | MIT | HuggingFace |
-| BiRefNet_dynamic-ONNX (onnx-community) | ONNX | FP16 | dinamica | Mascara alfa | MIT | HuggingFace (para Transformers.js/WebGPU) |
-| BiRefNet original (ZhengPeng7) | PyTorch | FP32/FP16 | dinamica | Mascara alfa | MIT | GitHub, HuggingFace |
+| BiRefNet_dynamic-ONNX-CUDA (este) | ONNX | FP16 | 1024×1024 RGB | Mascara alfa | MIT | Hugging Face |
+| BiRefNet_dynamic-ONNX (onnx-community) | ONNX | FP16 | dinamica | Mascara alfa | MIT | Hugging Face (para Transformers.js/WebGPU) |
+| BiRefNet original (ZhengPeng7) | PyTorch | FP32/FP16 | dinamica | Mascara alfa | MIT | GitHub, Hugging Face |
 
 La principal diferencia con la version ONNX estandar es que esta exportacion esta especificamente optimizada para CUDA y Triton, con tamaño de entrada fijo y validacion en FP16. La version original en PyTorch ofrece mayor flexibilidad de entrada y puede ejecutarse en CPU, aunque con menor rendimiento.
 
@@ -77,8 +77,8 @@ La principal diferencia con la version ONNX estandar es que esta exportacion est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/onnx-community/BiRefNet_dynamic-ONNX-CUDA
+- Repositorio Hugging Face: https://huggingface.co/onnx-community/BiRefNet_dynamic-ONNX-CUDA
 - Repositorio original en GitHub: https://github.com/ZhengPeng7/BiRefNet
 - Articulo cientifico: https://doi.org/10.48550/arXiv.2401.xxxx (DOI no confirmado; buscar "Bilateral Reference for High-Resolution Dichotomous Image Segmentation")
 - Version ONNX para WebGPU/Transformers.js: https://huggingface.co/onnx-community/BiRefNet_dynamic-ONNX
-- Modelo base en HuggingFace: https://huggingface.co/ZhengPeng7/BiRefNet_dynamic
+- Modelo base en Hugging Face: https://huggingface.co/ZhengPeng7/BiRefNet_dynamic

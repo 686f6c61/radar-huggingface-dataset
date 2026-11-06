@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Delphi-6e20-2.9B-seed42 | 2,895 B | 4096 | Apache 2.0 (research-only) | Base preentrenado, artefacto de scaling laws | HuggingFace (rohithck) |
-| Pythia-2.8B | 2,8 B | 2048 | Apache 2.0 | Suite de interpretabilidad y scaling | HuggingFace (EleutherAI) |
-| Qwen3-1.7B | 1,7 B | 32.768 | Apache 2.0 | Base e instruct, multilingue | HuggingFace (Qwen) |
-| Qwen3-4B | 4 B | 32.768 | Apache 2.0 | Base e instruct, multilingue | HuggingFace (Qwen) |
+| Delphi-6e20-2.9B-seed42 | 2,895 B | 4096 | Apache 2.0 (research-only) | Base preentrenado, artefacto de scaling laws | Hugging Face (rohithck) |
+| Pythia-2.8B | 2,8 B | 2048 | Apache 2.0 | Suite de interpretabilidad y scaling | Hugging Face (EleutherAI) |
+| Qwen3-1.7B | 1,7 B | 32.768 | Apache 2.0 | Base e instruct, multilingue | Hugging Face (Qwen) |
+| Qwen3-4B | 4 B | 32.768 | Apache 2.0 | Base e instruct, multilingue | Hugging Face (Qwen) |
 
 La comparacion con Pythia es la mas directa por proposito: ambas son suites de investigacion con checkpoints intermedios y semillas multiples, aunque Pythia usa contexto 2048 y una receta distinta. Frente a Qwen3, el Delphi ofrece menos contexto (4096 frente a 32.768), solo ingles y carece de version instruct, pero su interes esta en la trazabilidad de la receta de escalado y en la prediccion pre-registrada de la ley. No se dispone de datos de rendimiento comparativo publicados para este checkpoint.
 
@@ -88,8 +88,8 @@ La comparacion con Pythia es la mas directa por proposito: ambas son suites de i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-6e20-2.9Bparams-29.9Btokens-seed42
-- Organizacion Marin en HuggingFace: https://huggingface.co/marin-community
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-6e20-2.9Bparams-29.9Btokens-seed42
+- Organizacion Marin en Hugging Face: https://huggingface.co/marin-community
 - Blog de Delphi, "Scaling Laws That Extrapolate 300× Past the Fit": https://openathena.ai/blog/delphi
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Codigo de la receta (completed_adamh.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/completed_adamh.py

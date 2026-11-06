@@ -92,8 +92,8 @@ Comparativa de coste entre variantes (datos de la model card):
 
 | Modelo | Parametros | Contexto | Pico de VRAM | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TrNi/efficient-cube3d | no disponible | no disponible | 11,3 GB (INT4) | openrail | HuggingFace, torchao |
-| Roblox/cube3d-v0.5 (base BF16) | no disponible | no disponible | 21,7-25,4 GB | no disponible en la informacion proporcionada | HuggingFace |
+| TrNi/efficient-cube3d | no disponible | no disponible | 11,3 GB (INT4) | openrail | Hugging Face, torchao |
+| Roblox/cube3d-v0.5 (base BF16) | no disponible | no disponible | 21,7-25,4 GB | no disponible en la informacion proporcionada | Hugging Face |
 | Otros generadores text-to-3D (Shap-E, TRELLIS, Hunyuan3D, TripoSG y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio informacion util sobre alternativas comparables: los resultados obtenidos eran contenido de foros sin relacion con el modelo. La unica comparacion con datos verificables en la documentacion disponible es la del propio autor entre la variante BF16 y esta variante INT4, recogida en la seccion de benchmarks.
@@ -112,11 +112,11 @@ La busqueda web realizada no devolvio informacion util sobre alternativas compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TrNi/efficient-cube3d
+- Modelo en Hugging Face: https://huggingface.co/TrNi/efficient-cube3d
 - Modelo base: https://huggingface.co/Roblox/cube3d-v0.5
 - Repositorio GitHub de la version eficiente: https://github.com/TrNi/efficient-cube3d
 - Tutorial en Google Colab: https://drive.google.com/file/d/1-mWdiDHJIozQnKC-bP9TmaWR0fQLRo2X/view?usp=sharing
 - Libreria de cuantizacion torchao: https://github.com/pytorch/ao
 - Paper de referencia: Cube: A Roblox View of 3D Intelligence, arXiv:2503.15475 (https://arxiv.org/abs/2503.15475)
 
-Nota: la busqueda web asociada a esta ficha no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles proceden de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web asociada a esta ficha no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles proceden de la model card y de los metadatos de Hugging Face.

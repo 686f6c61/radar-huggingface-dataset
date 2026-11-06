@@ -87,7 +87,7 @@ Comparativa especifica frente a otros adaptadores de poesia: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberviser/quill-poetry-v2
+- Modelo en Hugging Face: https://huggingface.co/cyberviser/quill-poetry-v2
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor ni el proyecto Quill. Los unicos resultados obtenidos correspondian al videojuego Pearl's Peril y no guardan relacion con la ficha.

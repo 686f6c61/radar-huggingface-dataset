@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_K_R4-SPECIAL_SPLIT` es un checkpoint publicado en HuggingFace por el usuario Thireus, con licencia MIT. Por su nomenclatura, parece tratarse de una variante cuantizada del modelo Qwen3.8 de 27 mil millones de parámetros, empleando una cuantización GGUF de tipo Q5_K_R4 y un "split especial" que podría indicar una partición de pesos personalizada. Sin embargo, la model card publicada no contiene ninguna descripción técnica, detalles de entrenamiento, benchmarks ni instrucciones de uso, por lo que la información verificable es extremadamente limitada.
+El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_K_R4-SPECIAL_SPLIT` es un checkpoint publicado en Hugging Face por el usuario Thireus, con licencia MIT. Por su nomenclatura, parece tratarse de una variante cuantizada del modelo Qwen3.8 de 27 mil millones de parámetros, empleando una cuantización GGUF de tipo Q5_K_R4 y un "split especial" que podría indicar una partición de pesos personalizada. Sin embargo, la model card publicada no contiene ninguna descripción técnica, detalles de entrenamiento, benchmarks ni instrucciones de uso, por lo que la información verificable es extremadamente limitada.
 
 A fecha de creación (agosto de 2026), el modelo no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o experimental. Dada la ausencia de documentación, cualquier afirmación sobre su rendimiento o capacidades debe considerarse especulativa. Se recomienda precaución antes de utilizarlo en entornos de producción.
 
@@ -57,4 +57,4 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_K_R4-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_K_R4-SPECIAL_SPLIT)
+- Repositorio en Hugging Face: [Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_K_R4-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_K_R4-SPECIAL_SPLIT)

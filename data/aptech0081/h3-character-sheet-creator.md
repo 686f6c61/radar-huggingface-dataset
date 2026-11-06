@@ -26,8 +26,8 @@ El autor declara la etiqueta `base_model:finetune` sobre MiniMax-H3, pero el rep
 | Referencias de entrada | De 1 a 9 imágenes |
 | Maquetas disponibles | 7 (índices 0 a 6) |
 | Nodos personalizados requeridos | 5 paquetes (enlazados en la guía del repositorio) |
-| Fecha de creacion del repo | 2026-10-17 (según metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-17 (según metadatos de HuggingFace) |
+| Fecha de creacion del repo | 2026-10-17 (según metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-17 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -114,7 +114,7 @@ No se dispone de datos de modelos alternativos en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aptech0081/H3-Character-Sheet-Creator
+- Repositorio en Hugging Face: https://huggingface.co/aptech0081/H3-Character-Sheet-Creator
 - Descarga del workflow v1 (JSON): https://huggingface.co/aptech0081/H3-Character-Sheet-Creator/resolve/main/H3%20Character%20Sheet%20Creator%20v1.json?download=true
 - Descarga de los 10 ejemplos: https://huggingface.co/aptech0081/H3-Character-Sheet-Creator/resolve/main/h3-character-sheet-samples-10.zip?download=true
 - Repositorio GitHub y nodos personalizados: https://github.com/Jalen-Brunson/ComfyUI-H3-Character-Sheets
@@ -122,4 +122,4 @@ No se dispone de datos de modelos alternativos en la información proporcionada.
 - Metadatos de los ejemplos (`metadata.json`): https://huggingface.co/aptech0081/H3-Character-Sheet-Creator/blob/main/metadata.json
 - Índice de ejemplos (`examples.csv`): https://huggingface.co/aptech0081/H3-Character-Sheet-Creator/blob/main/examples.csv
 
-Nota: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces anteriores proceden exclusivamente de la ficha de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces anteriores proceden exclusivamente de la ficha de Hugging Face y de la model card.

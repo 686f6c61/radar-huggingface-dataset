@@ -96,7 +96,7 @@ La comparativa se limita a las variantes del mismo autor porque no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/pi05-relative-joints-full-ft
+- Modelo en Hugging Face: https://huggingface.co/maskjp/pi05-relative-joints-full-ft
 - Variante con VLM congelado: https://huggingface.co/maskjp/pi05-relative-joints-frozen-vlm
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Paper de π0.5: https://www.pi.website/download/pi05.pdf

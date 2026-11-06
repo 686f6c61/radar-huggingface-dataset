@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye otros LoRAs comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RunningHubAI/rh-coni-2.2-low-lora
+- Repositorio Hugging Face: https://huggingface.co/RunningHubAI/rh-coni-2.2-low-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2095320129675771905
 - Página del autor: https://www.runninghub.ai/user-center/2092339732215197697
 - RunningHub International: https://www.runninghub.ai

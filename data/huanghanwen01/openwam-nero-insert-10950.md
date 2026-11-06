@@ -4,7 +4,7 @@
 
 OpenWAM-Nero-Insert-10950 es un modelo de acción-mundo (world-action model) para robótica de manipulación, desarrollado por el usuario huanghanwen01 y publicado bajo el paraguas del proyecto OpenWAM. Se trata de un ajuste fino del modelo base `OpenWAM-Alpha-Pretrain-Foundation-Model` orientado a una tarea única y muy concreta: insertar un enchufe en una regleta mediante un brazo robótico real AgileX Nero EG2 (brazo derecho). El modelo aprende a predecir comandos de pose absoluta del efector final a partir de observaciones, siguiendo el contrato de acciones de OpenWAM.
 
-El checkpoint publicado corresponde al paso global 10.950 de entrenamiento (época 14 de 15), con una loss de acción de validación de 0,002199 y una loss de entrenamiento de 0,001081. El repositorio ocupa 24,8 GB e incluye los pesos en safetensors, la configuración completa de entrenamiento, las estadísticas de normalización y el tokenizador de texto. La librería asociada es `openwam` y el pipeline declarado en HuggingFace es `robotics`.
+El checkpoint publicado corresponde al paso global 10.950 de entrenamiento (época 14 de 15), con una loss de acción de validación de 0,002199 y una loss de entrenamiento de 0,001081. El repositorio ocupa 24,8 GB e incluye los pesos en safetensors, la configuración completa de entrenamiento, las estadísticas de normalización y el tokenizador de texto. La librería asociada es `openwam` y el pipeline declarado en Hugging Face es `robotics`.
 
 Su relevancia es acotada pero real: documenta de forma transparente un ciclo completo de ajuste fino de un modelo fundacional de robótica sobre datos de teleoperación reales (7,16 horas, 904 episodios), incluyendo curvas de loss, configuración de entrenamiento distribuido y una lista explícita de problemas conocidos en el despliegue. Es un artefacto de investigación reproducible más que un modelo de propósito general.
 
@@ -96,5 +96,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huanghanwen01/OpenWAM-Nero-Insert-10950
+- Modelo en Hugging Face: https://huggingface.co/huanghanwen01/OpenWAM-Nero-Insert-10950
 - Repositorio de código: https://github.com/shiona733/1026_openwam_insert

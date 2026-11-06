@@ -66,10 +66,10 @@ Adaptadores hermanos del mismo estudio, entrenados sobre el mismo modelo base co
 
 | Modelo | Tarea de entrenamiento | Parámetros entrenables | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Aryama/qwen3.5-2b-grpo-reconstruct (este) | RECONSTRUCT | 62,5M (LoRA r 64) | Apache 2.0 | HuggingFace |
-| Aryama/qwen3.5-2b-grpo-solve | SOLVE | 62,5M (LoRA r 64) | Apache 2.0 | HuggingFace |
-| Aryama/qwen3.5-2b-grpo-judge | JUDGE | 62,5M (LoRA r 64) | Apache 2.0 | HuggingFace |
-| Aryama/qwen3.5-2b-grpo-mixed | Multi-tarea | 62,5M (LoRA r 64) | Apache 2.0 | HuggingFace |
+| Aryama/qwen3.5-2b-grpo-reconstruct (este) | RECONSTRUCT | 62,5M (LoRA r 64) | Apache 2.0 | Hugging Face |
+| Aryama/qwen3.5-2b-grpo-solve | SOLVE | 62,5M (LoRA r 64) | Apache 2.0 | Hugging Face |
+| Aryama/qwen3.5-2b-grpo-judge | JUDGE | 62,5M (LoRA r 64) | Apache 2.0 | Hugging Face |
+| Aryama/qwen3.5-2b-grpo-mixed | Multi-tarea | 62,5M (LoRA r 64) | Apache 2.0 | Hugging Face |
 
 Nota: la model card advierte que los brazos de tarea única usan recetas y cantidades de datos distintas, por lo que las comparaciones cruzadas mezclan efectos de tarea y de receta. No se han publicado benchmarks comparativos con modelos de otras familias en la información disponible.
 

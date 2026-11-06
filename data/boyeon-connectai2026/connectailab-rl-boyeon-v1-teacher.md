@@ -23,7 +23,7 @@ El modelo se publica como pesos NumPy con licencia Apache 2.0, solo soporta core
 | Pipeline declarado | reinforcement-learning |
 | Libreria de inferencia | NumPy, a traves del paquete `connect-tycoon` |
 | Autor | boyeon-connectai2026 (CONNECT AI LAB) |
-| Fecha de publicacion | 13 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 13 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,12 +72,12 @@ Estos valores proceden exclusivamente de la model card del autor y no se han ver
 - VRAM estimada para inferencia: prácticamente nula. Los pesos se sirven como arrays NumPy y la inferencia puede ejecutarse en CPU.
 - GPU recomendadas: no se requiere GPU. Los ejemplos oficiales se ejecutan en un notebook de Colab, lo que sugiere ejecución en CPU o en GPU gratuita de Colab.
 - Cabe en cualquier GPU de consumo (y en equipos sin GPU dedicada); no se especifica un tamaño de pesos que permita estimar requisitos mayores.
-- Opciones de despliegue: paquete Python `connect-tycoon` (extra `game`), API de `CompanyBrain` y carga desde HuggingFace Hub con `hf:<repo_id>`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje y no aplican a este formato.
+- Opciones de despliegue: paquete Python `connect-tycoon` (extra `game`), API de `CompanyBrain` y carga desde Hugging Face Hub con `hf:<repo_id>`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje y no aplican a este formato.
 - Latencia y throughput estimados: no disponibles. Al no requerir acelerador y operar sobre vectores de estado de pequeño tamaño, la latencia esperada es muy baja, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se han encontrado en la información disponible otros modelos comparables en HuggingFace ni referencias en la búsqueda web (los resultados devueltos corresponden a un software de intermediación crediticia sin relación con el modelo). La única referencia de comparación publicada es el jefe basado en reglas del propio simulador:
+No se han encontrado en la información disponible otros modelos comparables en Hugging Face ni referencias en la búsqueda web (los resultados devueltos corresponden a un software de intermediación crediticia sin relación con el modelo). La única referencia de comparación publicada es el jefe basado en reglas del propio simulador:
 
 | Modelo | Tipo | Entorno | Beneficio mensual | Satisfacción | Incidentes de riesgo | Licencia |
 |---|---|---|---|---|---|---|
@@ -100,7 +100,7 @@ No se han encontrado en la información disponible otros modelos comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boyeon-connectai2026/connectailab-rl-boyeon-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/boyeon-connectai2026/connectailab-rl-boyeon-v1-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

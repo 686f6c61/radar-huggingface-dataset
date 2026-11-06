@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo de lenguaje y no existe una cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tltaylorley/study-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/tltaylorley/study-prompt-engineering
 - Guía de prompt engineering de dair-ai: https://github.com/dair-ai/Prompt-Engineering-Guide
 - Prompt Engineering Guide (promptingguide.ai): https://www.promptingguide.ai/
 - Artículo "Prompting Change: Exploring Prompt Engineering in Large Language Model..." (Springer): https://link.springer.com/article/10.1007/s11528-023-00896-0

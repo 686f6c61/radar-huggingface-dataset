@@ -85,10 +85,10 @@ Diferencias frente a los routers SLR SFT (semilla 0 y ensemble), con IC al 95 %:
 
 | Modelo | Tipo | Parámetros | Contexto | AIQ (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| systemone-decider-e4b-qp-menu-a (este) | Router binario de dos etapas sobre E4B | no disponible (LoRA r=48) | no disponible | 0,718 (semilla 0); 0,722 (ensemble) | Apache 2.0 | HuggingFace, 0 descargas |
+| systemone-decider-e4b-qp-menu-a (este) | Router binario de dos etapas sobre E4B | no disponible (LoRA r=48) | no disponible | 0,718 (semilla 0); 0,722 (ensemble) | Apache 2.0 | Hugging Face, 0 descargas |
 | SLR SFT router (label), Qwen2.5-1.5B LoRA | Router SFT de referencia del setup SLR | 1,5B | no disponible | 0,724 | no disponible | Referencia interna del proyecto STAIR |
 | SLR SFT router (label) + reward | Router SFT con reward | 1,5B | no disponible | 0,725 | no disponible | Referencia interna del proyecto STAIR |
-| Strands Decider E4B (modelo base) | Decisor generalista | E4B | no disponible | no disponible | no disponible | HuggingFace (StrandsAgents) |
+| Strands Decider E4B (modelo base) | Decisor generalista | E4B | no disponible | no disponible | no disponible | Hugging Face (StrandsAgents) |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ Diferencias frente a los routers SLR SFT (semilla 0 y ensemble), con IC al 95 %:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohameddhameem/systemone-decider-e4b-qp-menu-a
+- Modelo en Hugging Face: https://huggingface.co/mohameddhameem/systemone-decider-e4b-qp-menu-a
 - Modelo base (Strands Decider E4B): https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610
 - Código del proyecto: https://github.com/mohameddhameem/systemone-decider
 - Proyecto STAIR: https://github.com/mohameddhameem/STAIR

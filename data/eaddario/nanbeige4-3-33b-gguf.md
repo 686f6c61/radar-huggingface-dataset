@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una cuantizacion GGUF experimental del modelo Nanbeige4.3-33B, publicada por el usuario eaddario en HuggingFace. No se trata de un modelo original, sino de una conversion a formato GGUF con una estrategia de cuantizacion orientada a un objetivo global de bits por peso (target bits-per-weight), calibrada con el dataset eaddario/imatrix-calibration. El modelo base es Nanbeige/Nanbeige4.3-33B, un modelo de 33 mil millones de parametros del que esta publicacion no aporta la model card completa, ya que el autor indica que la subida estaba en curso en el momento de crear el repositorio.
+Esta ficha describe una cuantizacion GGUF experimental del modelo Nanbeige4.3-33B, publicada por el usuario eaddario en Hugging Face. No se trata de un modelo original, sino de una conversion a formato GGUF con una estrategia de cuantizacion orientada a un objetivo global de bits por peso (target bits-per-weight), calibrada con el dataset eaddario/imatrix-calibration. El modelo base es Nanbeige/Nanbeige4.3-33B, un modelo de 33 mil millones de parametros del que esta publicacion no aporta la model card completa, ya que el autor indica que la subida estaba en curso en el momento de crear el repositorio.
 
 La relevancia de esta publicacion es practica: ofrece una via para ejecutar un modelo de 33B en entornos con recursos limitados mediante llama.cpp y derivados (Ollama, LM Studio, etc.), a costa de una perdida de precision que el autor etiqueta explicitamente como experimental. El repositorio ocupa 66,2 GB, lo que corresponde al conjunto de ficheros GGUF con distintas cuantizaciones, no a un unico fichero.
 
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/eaddario/Nanbeige4.3-33B-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/eaddario/Nanbeige4.3-33B-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Dataset de calibracion: https://huggingface.co/datasets/eaddario/imatrix-calibration
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

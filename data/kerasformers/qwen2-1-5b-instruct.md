@@ -79,7 +79,7 @@ La comparativa se limita a parámetros y licencia, ya que no se dispone de datos
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/qwen2-1.5b-instruct](https://huggingface.co/kerasformers/qwen2-1.5b-instruct)
+- [Hugging Face - kerasformers/qwen2-1.5b-instruct](https://huggingface.co/kerasformers/qwen2-1.5b-instruct)
 - [Modelo base - Qwen/Qwen2-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2-1.5B-Instruct)
 - [Paper Qwen2 (arXiv:2407.10671)](https://arxiv.org/abs/2407.10671)
 - [HF Papers - Qwen2 Technical Report](https://huggingface.co/papers/2407.10671)

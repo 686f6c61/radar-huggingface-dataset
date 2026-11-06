@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dwyschka/gemma-4-e2b-it-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/dwyschka/gemma-4-e2b-it-oQ4e-fp16-mtp
 - Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Página de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Documentación de Gemma 4 para Google AI Edge: https://developers.google.com/edge/litert-lm/models/gemma-4

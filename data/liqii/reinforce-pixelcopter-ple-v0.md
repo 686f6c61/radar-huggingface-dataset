@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient) para resolver el entorno Pixelcopter-PLE-v0, un juego de la suite Pygame Learning Environment (PLE) en el que un helicóptero debe esquivar obstáculos en un túnel. Lo publica el usuario liqii en HuggingFace como artefacto de un ejercicio formativo del Deep Reinforcement Learning Course, en concreto la unidad 4 dedicada a policy gradients.
+Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient) para resolver el entorno Pixelcopter-PLE-v0, un juego de la suite Pygame Learning Environment (PLE) en el que un helicóptero debe esquivar obstáculos en un túnel. Lo publica el usuario liqii en Hugging Face como artefacto de un ejercicio formativo del Deep Reinforcement Learning Course, en concreto la unidad 4 dedicada a policy gradients.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política neuronal de dimensiones reducidas que mapea observaciones del entorno a acciones discretas. Su relevancia es exclusivamente didáctica y de reproducibilidad de experimentos de RL clásico; no está pensado para despliegue en producción ni para tareas de generación, razonamiento o procesamiento de lenguaje natural.
 
@@ -43,7 +43,7 @@ El entorno Pixelcopter-PLE-v0 proporciona observaciones de baja dimensionalidad 
 - Reproducción de la unidad 4 del Deep RL Course: cargar el agente y comparar la curva de recompensa con la obtenida al entrenar desde cero.
 - Línea base para comparativas de algoritmos: emplear la recompensa media declarada (12.50 ± 19.04) como referencia frente a PPO, A2C o DQN en el mismo entorno.
 - Estudio de varianza en policy gradient: la desviación típica de 19.04 sobre una media de 12.50 es un caso claro para analizar la inestabilidad de REINFORCE sin baseline.
-- Pruebas de infraestructura de RL: validar pipelines de evaluación con Stable-Baselines3, RLlib o el propio evaluador de HuggingFace usando un entorno PLE ligero.
+- Pruebas de infraestructura de RL: validar pipelines de evaluación con Stable-Baselines3, RLlib o el propio evaluador de Hugging Face usando un entorno PLE ligero.
 - Experimentos de ablation: modificar la arquitectura de la política o añadir una baseline y medir el impacto en la recompensa media sobre Pixelcopter-PLE-v0.
 
 ## Benchmarks y rendimiento
@@ -61,15 +61,15 @@ No se han publicado otros resultados de benchmarks en la información disponible
 - VRAM estimada para inferencia: inferior a 1 GB; el tamaño del repositorio es de 0.0 GB y la política es de dimensiones reducidas.
 - GPU recomendadas: no se requiere GPU; la inferencia puede ejecutarse en CPU sin penalización perceptible.
 - Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU moderna; también en Raspberry Pi.
-- Opciones de despliegue: carga directa con PyTorch, Stable-Baselines3 o el evaluador de HuggingFace; no aplica vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: carga directa con PyTorch, Stable-Baselines3 o el evaluador de Hugging Face; no aplica vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles; en CPU la inferencia por paso debería ser de microsegundos a milisegundos, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liqii/Reinforce-Pixelcopter-PLE-v0 | REINFORCE | Pixelcopter-PLE-v0 | 12.50 ± 19.04 | no disponible | HuggingFace |
-| Agentes de referencia del Deep RL Course (unidad 4) | REINFORCE | Pixelcopter-PLE-v0 | no disponible | no disponible | HuggingFace |
+| liqii/Reinforce-Pixelcopter-PLE-v0 | REINFORCE | Pixelcopter-PLE-v0 | 12.50 ± 19.04 | no disponible | Hugging Face |
+| Agentes de referencia del Deep RL Course (unidad 4) | REINFORCE | Pixelcopter-PLE-v0 | no disponible | no disponible | Hugging Face |
 | Implementaciones PPO/A2C de Stable-Baselines3 | PPO / A2C | Pixelcopter-PLE-v0 | no disponible | MIT (librería) | PyPI / GitHub |
 
 No se dispone de resultados numéricos de los modelos alternativos en este mismo entorno dentro de la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -86,7 +86,7 @@ No se dispone de resultados numéricos de los modelos alternativos en este mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liqii/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/liqii/Reinforce-Pixelcopter-PLE-v0
 - Unidad 4 del Deep RL Course (introducción a policy gradients): https://huggingface.co/deep-rl-course/unit4/introduction
 - Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course
 - Pygame Learning Environment (entorno Pixelcopter): https://github.com/ntasfi/Pygame-Learning-Environment

@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/word2vec-google-news-300-raw-float16
+- Modelo en Hugging Face: https://huggingface.co/fse/word2vec-google-news-300-raw-float16
 - Modelo base: https://huggingface.co/fse/word2vec-google-news-300
 - Repositorio de fse (Fast Sentence Embeddings): https://github.com/oborchers/Fast_Sentence_Embeddings
 - Proyecto original de word2vec (Google Code Archive): https://code.google.com/archive/p/word2vec/

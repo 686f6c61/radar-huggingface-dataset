@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-Flash-Next-FP8 (base) | 125B MoE (6B activos) | 262K | qwen-community-1.0 | HuggingFace oficial |
-| jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-Vision-128k (este) | 125B MoE (6B activos), checkpoint cuantizado | 128K (checkpoint) | qwen-community-1.0 | HuggingFace (comunidad) |
-| Qwen3.8-Flash (original) | No disponible | 1M (segun QwenCloud) | qwen-community-1.0 | HuggingFace oficial |
+| Qwen3.8-Flash-Next-FP8 (base) | 125B MoE (6B activos) | 262K | qwen-community-1.0 | Hugging Face oficial |
+| jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-Vision-128k (este) | 125B MoE (6B activos), checkpoint cuantizado | 128K (checkpoint) | qwen-community-1.0 | Hugging Face (comunidad) |
+| Qwen3.8-Flash (original) | No disponible | 1M (segun QwenCloud) | qwen-community-1.0 | Hugging Face oficial |
 
 La comparativa se limita a los modelos de la misma familia, ya que no se dispone de datos de rendimiento para otros MoE multimodales. La principal diferencia entre este checkpoint y el base FP8 es la cuantizacion (4-bit vs FP8) y la adaptacion a MLX-VLM, que reduce los requisitos de memoria pero puede degradar ligeramente la calidad. El contexto se reduce de 262K a 128K en esta conversion, aunque el modelo base soporta mas.
 
@@ -80,7 +80,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-Vision-128k
+- Repositorio Hugging Face: https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-Vision-128k
 - Modelo base (Qwen/Qwen3.8-Flash-Next-FP8): https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Checkpoint de texto MTP (jedisct1/Qwen3.8-Flash-Next-oQ4e-128k): https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-128k
 - Documentacion de unsloth sobre Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SageV2-8B-LongContext-NSFW-RP es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct, pasado previamente por un proceso de "abliteration" (eliminación de los mecanismos de rechazo) por parte de mlabonne. Lo desarrolla el usuario de HuggingFace sinhal y está orientado específicamente a roleplay conversacional de contexto largo, con énfasis en mantener la coherencia del personaje a lo largo de conversaciones extensas (el autor documenta pruebas de 40 turnos). El modelo se distribuye principalmente en formato GGUF para llama.cpp, lo que facilita su despliegue en hardware de consumo.
+SageV2-8B-LongContext-NSFW-RP es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct, pasado previamente por un proceso de "abliteration" (eliminación de los mecanismos de rechazo) por parte de mlabonne. Lo desarrolla el usuario de Hugging Face sinhal y está orientado específicamente a roleplay conversacional de contexto largo, con énfasis en mantener la coherencia del personaje a lo largo de conversaciones extensas (el autor documenta pruebas de 40 turnos). El modelo se distribuye principalmente en formato GGUF para llama.cpp, lo que facilita su despliegue en hardware de consumo.
 
 La propuesta central del autor es resolver la "deriva de contexto" (context drift): la tendencia de los modelos de rol a reciclar frases, homogeneizar voces de personajes distintos y abandonar los rasgos definidos en la tarjeta de personaje tras varias decenas de turnos. El modelo se presenta como optimizado para 128K tokens de contexto, aunque la model card no documenta la metodología de entrenamiento concreta (número de tokens, composición del dataset ni si hubo DPO/RLHF).
 
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks comparativos verificables entre estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sinhal/SageV2-8B-LongContext-NSFW-RP
+- Modelo en Hugging Face: https://huggingface.co/sinhal/SageV2-8B-LongContext-NSFW-RP
 - Modelo base (abliterated): https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/

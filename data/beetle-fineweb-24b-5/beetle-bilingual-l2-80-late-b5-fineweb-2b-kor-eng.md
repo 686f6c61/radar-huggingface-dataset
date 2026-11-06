@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-l2-80-late-b5-fineweb-2b-kor-eng` es un checkpoint de generacion de texto publicado en HuggingFace por la organizacion Beetle-FineWeb-24B-5. Se trata de un modelo de arquitectura propietaria registrada bajo la etiqueta `pico_decoder`, con codigo personalizado (`custom_code`) y pesos en safetensors. El recuento real de parametros segun los tensores publicados en el repositorio es de 193.804.032 parametros (aproximadamente 194 millones), lo que lo situa en la categoria de modelos pequenos, del orden de Pythia-160M o SmolLM2-135M.
+El modelo `beetle-bilingual-l2-80-late-b5-fineweb-2b-kor-eng` es un checkpoint de generacion de texto publicado en Hugging Face por la organizacion Beetle-FineWeb-24B-5. Se trata de un modelo de arquitectura propietaria registrada bajo la etiqueta `pico_decoder`, con codigo personalizado (`custom_code`) y pesos en safetensors. El recuento real de parametros segun los tensores publicados en el repositorio es de 193.804.032 parametros (aproximadamente 194 millones), lo que lo situa en la categoria de modelos pequenos, del orden de Pythia-160M o SmolLM2-135M.
 
-El identificador del modelo sugiere que forma parte de una campana de experimentos de preentrenamiento sobre el corpus FineWeb, con una variante bilingue coreano-ingles (`kor-eng`) y una configuracion etiquetada como `l2-80-late-b5` y `2b`, presumiblemente referida al volumen de tokens de entrenamiento. Sin embargo, la model card publicada es la plantilla autogenerada de HuggingFace, sin secciones completadas: no declara autor, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. Cualquier afirmacion sobre el proceso de entrenamiento basada unicamente en el identificador debe considerarse una hipotesis sin confirmar.
+El identificador del modelo sugiere que forma parte de una campana de experimentos de preentrenamiento sobre el corpus FineWeb, con una variante bilingue coreano-ingles (`kor-eng`) y una configuracion etiquetada como `l2-80-late-b5` y `2b`, presumiblemente referida al volumen de tokens de entrenamiento. Sin embargo, la model card publicada es la plantilla autogenerada de Hugging Face, sin secciones completadas: no declara autor, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. Cualquier afirmacion sobre el proceso de entrenamiento basada unicamente en el identificador debe considerarse una hipotesis sin confirmar.
 
 Su relevancia actual es limitada y de caracter fundamentalmente experimental: se trata de un artefacto de investigacion con cero descargas, cero "likes" y sin documentacion tecnica. Resulta de interes para quien estudie dinamicas de entrenamiento, mezclas de datos multilingues sobre FineWeb o implementaciones de decodificadores personalizados, pero no es un modelo apto para uso en produccion tal como se distribuye.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: tamano del repositorio 76,8 GB, 0 descargas, 
 
 ## Arquitectura y entrenamiento
 
-La unica informacion fiable sobre la arquitectura es la etiqueta `pico_decoder` incluida en los tags de HuggingFace y la presencia de `custom_code`, lo que implica que la implementacion del modelo no corresponde a una clase estandar de `transformers` y que el codigo de definicion viaja dentro del repositorio. Esto obliga a cargar el modelo con `trust_remote_code=True`. No se dispone de informacion sobre el numero de capas, dimension del modelo, numero de cabezas de atencion, tipo de atencion, normalizacion, tokenizador ni vocabulario.
+La unica informacion fiable sobre la arquitectura es la etiqueta `pico_decoder` incluida en los tags de Hugging Face y la presencia de `custom_code`, lo que implica que la implementacion del modelo no corresponde a una clase estandar de `transformers` y que el codigo de definicion viaja dentro del repositorio. Esto obliga a cargar el modelo con `trust_remote_code=True`. No se dispone de informacion sobre el numero de capas, dimension del modelo, numero de cabezas de atencion, tipo de atencion, normalizacion, tokenizador ni vocabulario.
 
 Respecto al entrenamiento, la model card no aporta ningun dato: las secciones de datos de entrenamiento, hiperparametros, regimen de precision y computo utilizado estan marcadas como "More Information Needed". El identificador sugiere un preentrenamiento sobre FineWeb con un componente bilingue coreano-ingles y un presupuesto de aproximadamente 2.000 millones de tokens, asi como algun tipo de configuracion por capas (`l2`) y de temporizacion de la tasa de aprendizaje o de la mezcla de datos (`late-b5`), pero ninguna de estas interpretaciones esta documentada por el autor y no deben tomarse como hechos. No hay constancia de fases de ajuste fino con RLHF, DPO o instrucciones.
 
@@ -72,16 +72,16 @@ La siguiente tabla compara parametros, contexto y licencia con alternativas de t
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| beetle-bilingual-l2-80-late-b5-fineweb-2b-kor-eng | 193,8 M | no disponible | no disponible | HuggingFace, requiere `custom_code` |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Pythia-160M | 160 M | 2.048 tokens | Apache-2.0 | HuggingFace, con checkpoints de entrenamiento |
-| GPT-2 (124M) | 124 M | 1.024 tokens | licencia MIT modificada | HuggingFace y multiples formatos |
+| beetle-bilingual-l2-80-late-b5-fineweb-2b-kor-eng | 193,8 M | no disponible | no disponible | Hugging Face, requiere `custom_code` |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Pythia-160M | 160 M | 2.048 tokens | Apache-2.0 | Hugging Face, con checkpoints de entrenamiento |
+| GPT-2 (124M) | 124 M | 1.024 tokens | licencia MIT modificada | Hugging Face y multiples formatos |
 
 Diferencias cualitativas: frente a estas alternativas, el modelo Beetle destaca por su caracter bilingue coreano-ingles declarado en el identificador, pero carece de licencia explicita, de contexto documentado y de cualquier evaluacion publicada, ademas de requerir ejecucion de codigo remoto. Los tres modelos de referencia son arquitecturas estandar, con peso en GGUF y soporte nativo en los principales motores de inferencia.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace, sin datos de autor, financiacion, datos de entrenamiento, hiperparametros ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face, sin datos de autor, financiacion, datos de entrenamiento, hiperparametros ni evaluacion.
 - Licencia no disponible: sin licencia explicita no se puede determinar si el uso comercial esta permitido. En la practica, debe tratarse como no apto para produccion hasta que el autor la especifique.
 - Riesgo de seguridad por `custom_code`: cargar el modelo implica ejecutar codigo Python incluido en el repositorio. Se recomienda auditar los ficheros del modelo antes de usar `trust_remote_code=True` y hacerlo en un entorno aislado.
 - Sesgos esperables: si el entrenamiento se realizo sobre FineWeb, heredara los sesgos, la sobrerrepresentacion del ingles y el ruido del contenido rastreado en la web. No hay ninguna evaluacion de sesgo publicada que lo confirme o cuantifique.
@@ -95,7 +95,7 @@ Diferencias cualitativas: frente a estas alternativas, el modelo Beetle destaca 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-l2-80-late-b5-fineweb-2b-kor-eng
+- Repositorio en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-l2-80-late-b5-fineweb-2b-kor-eng
 - Paper referenciado en los tags (`arxiv:1910.09700`): https://arxiv.org/abs/1910.09700 (corresponde a Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico; aparece en la plantilla autogenerada de la model card y no describe este modelo)
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact
 - Corpus FineWeb (referencia presumible del entrenamiento, no confirmada por el autor): https://huggingface.co/datasets/HuggingFaceFW/fineweb

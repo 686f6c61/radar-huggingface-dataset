@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-4.6-Derestricted-v3 es una version "derestringida" del modelo GLM-4.6 de Zhipu AI / Z.ai, publicada por Arli AI y distribuida en HuggingFace por el usuario tactBagel. El objetivo declarado es eliminar los comportamientos de rechazo del modelo original (negativas a responder ciertos contenidos) preservando al mismo tiempo la capacidad de razonamiento, mediante una tecnica denominada "Norm-Preserving Biprojected Abliteration", desarrollada por Jim Lai (grimjim). A diferencia del abliteration clasico, que resta directamente un vector de rechazo de los pesos y degrada las normas de las neuronas, esta tecnica descompone los pesos en magnitud y direccion, elimina el componente de rechazo solo de la direccion y recombina con las magnitudes originales, evitando el deterioro del modelo.
+GLM-4.6-Derestricted-v3 es una version "derestringida" del modelo GLM-4.6 de Zhipu AI / Z.ai, publicada por Arli AI y distribuida en Hugging Face por el usuario tactBagel. El objetivo declarado es eliminar los comportamientos de rechazo del modelo original (negativas a responder ciertos contenidos) preservando al mismo tiempo la capacidad de razonamiento, mediante una tecnica denominada "Norm-Preserving Biprojected Abliteration", desarrollada por Jim Lai (grimjim). A diferencia del abliteration clasico, que resta directamente un vector de rechazo de los pesos y degrada las normas de las neuronas, esta tecnica descompone los pesos en magnitud y direccion, elimina el componente de rechazo solo de la direccion y recombina con las magnitudes originales, evitando el deterioro del modelo.
 
 El modelo base, GLM-4.6, es un transformer de mezcla de expertos (MoE) con 356.785.898.816 parametros totales (~356,8 mil millones) y una ventana de contexto de 200.000 tokens, frente a los 128.000 de GLM-4.5. Segun la model card original, GLM-4.6 mejora respecto a GLM-4.5 en codificacion, razonamiento, capacidades de agente y escritura, y compite con DeepSeek-V3.1-Terminus y Claude Sonnet 4. La licencia es MIT, lo que permite uso comercial sin restricciones. El repositorio ocupa 713,6 GB en formato safetensors, consistente con pesos en BF16.
 
@@ -83,7 +83,7 @@ La comparacion directa con DeepSeek-V3.1-Terminus y Claude Sonnet 4 se basa en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tactBagel/GLM-4.6-Derestricted-v3
+- Repositorio Hugging Face: https://huggingface.co/tactBagel/GLM-4.6-Derestricted-v3
 - Modelo base GLM-4.6 (zai-org): https://huggingface.co/zai-org/GLM-4.6
 - Repositorio original de Arli AI: https://huggingface.co/ArliAI/GLM-4.6-Derestricted
 - Version FP8: https://huggingface.co/ArliAI/GLM-4.6-Derestricted-FP8

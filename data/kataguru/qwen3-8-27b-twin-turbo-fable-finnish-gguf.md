@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye datos de benchmarks ni de competidores directos, por lo que la comparativa se limita a las variantes de la misma familia disponibles en HuggingFace.
+La informacion proporcionada no incluye datos de benchmarks ni de competidores directos, por lo que la comparativa se limita a las variantes de la misma familia disponibles en Hugging Face.
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Uso previsto |
 |---|---|---|---|---|---|
@@ -96,7 +96,7 @@ No se dispone de datos para comparar con alternativas de otros autores del mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kataguru/Qwen3.8-27B-TWIN-TURBO-Fable-Finnish-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kataguru/Qwen3.8-27B-TWIN-TURBO-Fable-Finnish-GGUF
 - Variante AWQ W4A16 para vLLM: https://huggingface.co/kataguru/Qwen3.8-27B-TWIN-TURBO-Fable-Finnish-W4A16-AWQ
 - Modelo base (pesos BF16): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
 - Herramienta de cuantizacion: llama.cpp (b11064), https://github.com/ggml-org/llama.cpp

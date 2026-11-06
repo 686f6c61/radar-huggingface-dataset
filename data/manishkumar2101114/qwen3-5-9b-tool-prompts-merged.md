@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B tool-prompts merged es un modelo de generacion de texto obtenido mediante el ajuste fino supervisado del modelo base Qwen/Qwen3.5-9B. Lo publica el usuario manishkumar2101114 en HuggingFace y su proposito declarado es mejorar el comportamiento del modelo en tareas de tool calling y en escenarios de agente de voz, con cobertura adicional de hindi. El resultado se distribuye como pesos completos en BF16, no como adaptador, tras fusionar un LoRA con la tecnica `merge_and_unload`.
+Qwen3.5-9B tool-prompts merged es un modelo de generacion de texto obtenido mediante el ajuste fino supervisado del modelo base Qwen/Qwen3.5-9B. Lo publica el usuario manishkumar2101114 en Hugging Face y su proposito declarado es mejorar el comportamiento del modelo en tareas de tool calling y en escenarios de agente de voz, con cobertura adicional de hindi. El resultado se distribuye como pesos completos en BF16, no como adaptador, tras fusionar un LoRA con la tecnica `merge_and_unload`.
 
 El modelo cuenta con 9.653.104.368 parametros (unos 9,65 mil millones) y un repositorio de 38,1 GB. La arquitectura base se etiqueta como `qwen3_5` y el pipeline es `text-generation`. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y los idiomas declarados son ingles e hindi.
 
@@ -99,7 +99,7 @@ Frente a las alternativas, la ventaja diferencial de este modelo es el ajuste es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-prompts-merged
+- Modelo en Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-prompts-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del adaptador LoRA de origen (qwen3.5-9b-tool-prompts-adapter): no se ha proporcionado enlace
 - Paper, blog o demo asociados: no disponibles

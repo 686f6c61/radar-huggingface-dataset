@@ -16,7 +16,7 @@ La relevancia de este modelo radica en su tamaño reducido y su formato cuantiza
 | Longitud de contexto | 40.960 tokens |
 | Tipos de cuantizacion | Q4_K_S |
 | Idiomas soportados | en, it |
-| Licencia | other (la model card muestra Apache-2.0, pero el campo oficial de HuggingFace es "other") |
+| Licencia | other (la model card muestra Apache-2.0, pero el campo oficial de Hugging Face es "other") |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -78,15 +78,15 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 - Tamaño reducido: con solo 0,6B de parámetros, el modelo tiene una capacidad limitada para tareas de razonamiento complejo, matemáticas avanzadas o generación de código sofisticado, como reflejan los bajos resultados en GPQA (0%) y MBPP (0%).
 - Riesgo de alucinación: los modelos pequeños tienden a generar respuestas plausibles pero incorrectas, especialmente en dominios especializados. No se han documentado sesgos específicos, pero es un riesgo inherente.
-- Licencia "other": aunque la model card muestra Apache-2.0, el campo oficial de HuggingFace es "other". Esto puede implicar restricciones de uso comercial no especificadas. Se recomienda revisar los términos antes de usar el modelo en producción.
+- Licencia "other": aunque la model card muestra Apache-2.0, el campo oficial de Hugging Face es "other". Esto puede implicar restricciones de uso comercial no especificadas. Se recomienda revisar los términos antes de usar el modelo en producción.
 - Cuantización Q4_K_S: la cuantización a 4 bits puede degradar ligeramente la calidad de las respuestas en comparación con el modelo original en FP16. No se han publicado comparativas de calidad entre ambas versiones.
 - Idiomas limitados: solo se declaran inglés e italiano. El uso en otros idiomas puede dar resultados inconsistentes.
 - Resultados de benchmarks parciales: las puntuaciones mostradas se basan en una muestra del dataset, no en la suite completa, por lo que no deben usarse como referencia absoluta del rendimiento del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen3-0
+- Modelo en Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3-0
 - Sigma Studio (GitHub): https://github.com/Sigmanih/SigmaStudio
 - Blog de Qwen3: https://qwen.ai/blog?id=qwen3
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3

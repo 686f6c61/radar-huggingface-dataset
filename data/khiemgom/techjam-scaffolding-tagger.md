@@ -83,7 +83,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KhiemGOM/techjam-scaffolding-tagger
+- Modelo en Hugging Face: https://huggingface.co/KhiemGOM/techjam-scaffolding-tagger
 - Perfil de GitHub del autor: https://github.com/KhiemGOM?tab=repositories
 - Repositorio del autor (no se especifica cual contiene el codigo del tagger): https://github.com/KhiemGOM
 - Articulo relacionado sobre andamiaje en LLMs (contexto general, no especifico de este modelo): https://medium.com/@dqj1998/the-scaffolding-trap-around-modern-llms-9fd6639f9664

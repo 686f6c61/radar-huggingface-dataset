@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alpha Cinema model pack | 7.546.867.712 (codificador de texto) + difusion Kimodo | no disponible | Text-to-motion en Blender | alphacinema-model-pack (agregado de NVIDIA Open Model License, Llama 3 Community License y Apache-2.0) | HuggingFace, 139 descargas |
-| Kimodo-SOMA-RP-v1.1 (NVIDIA) | no disponible | no disponible | Text-to-motion sobre esqueleto SOMA | NVIDIA Open Model License | HuggingFace (origen del componente de movimiento) |
-| Llama-3-Kimodo-GGML (LocalAI-io) | 8B (familia Llama 3) | no disponible | Codificador de texto para Kimodo | Meta Llama 3 Community License | HuggingFace (origen del componente de texto) |
+| Alpha Cinema model pack | 7.546.867.712 (codificador de texto) + difusion Kimodo | no disponible | Text-to-motion en Blender | alphacinema-model-pack (agregado de NVIDIA Open Model License, Llama 3 Community License y Apache-2.0) | Hugging Face, 139 descargas |
+| Kimodo-SOMA-RP-v1.1 (NVIDIA) | no disponible | no disponible | Text-to-motion sobre esqueleto SOMA | NVIDIA Open Model License | Hugging Face (origen del componente de movimiento) |
+| Llama-3-Kimodo-GGML (LocalAI-io) | 8B (familia Llama 3) | no disponible | Codificador de texto para Kimodo | Meta Llama 3 Community License | Hugging Face (origen del componente de texto) |
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alpha-studio/alphacinema-models
+- Repositorio Hugging Face: https://huggingface.co/alpha-studio/alphacinema-models
 - Licencias del paquete: https://huggingface.co/alpha-studio/alphacinema-models/blob/main/LICENSES/NOTICE.txt
 - Kimodo-SOMA-RP-v1.1 (NVIDIA): https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1
 - Llama-3-Kimodo-GGML (LocalAI-io): https://huggingface.co/LocalAI-io/Llama-3-Kimodo-GGML

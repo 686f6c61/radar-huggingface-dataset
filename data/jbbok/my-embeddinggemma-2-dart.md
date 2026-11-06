@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jbbok/my-embeddinggemma-2-dart` es un modelo de embeddings de frases (sentence-similarity) obtenido mediante fine-tuning del modelo base `google/embeddinggemma-2`. Lo publica el usuario Jbbok en HuggingFace y está empaquetado con la librería `sentence-transformers`, por lo que se integra directamente en pipelines de recuperación densa, búsqueda semántica y re-ranking. Con 271.002.648 parámetros y un repositorio de 1,1 GB en formato safetensors, se posiciona como un encoder de tamaño medio, adecuado para despliegues de recuperación a escala moderada.
+`Jbbok/my-embeddinggemma-2-dart` es un modelo de embeddings de frases (sentence-similarity) obtenido mediante fine-tuning del modelo base `google/embeddinggemma-2`. Lo publica el usuario Jbbok en Hugging Face y está empaquetado con la librería `sentence-transformers`, por lo que se integra directamente en pipelines de recuperación densa, búsqueda semántica y re-ranking. Con 271.002.648 parámetros y un repositorio de 1,1 GB en formato safetensors, se posiciona como un encoder de tamaño medio, adecuado para despliegues de recuperación a escala moderada.
 
 El problema que aborda es la recuperación de información sobre documentos financieros coreanos: la model card incluye ejemplos de similitud entre preguntas sobre cuentas anuales (SK Hynix, Naver, LG Chem, CJ CheilJedang) y fragmentos de informes de auditoría en coreano. Esto sugiere un ajuste orientado a dominios contables y regulatorios, donde los embeddings genéricos suelen fallar por la densidad de terminología y la estructura tabular del texto.
 
@@ -33,7 +33,7 @@ El dataset de entrenamiento declarado contiene 3.687 pares, un volumen reducido 
 - Búsqueda semántica sobre documentos largos con estructura tabular y terminología financiera en coreano.
 - Recuperación de respuestas a preguntas factuales extrayendo el pasaje relevante de informes corporativos.
 - Clasificación y agrupamiento de fragmentos documentales por similitud de embeddings.
-- Compatible con `sentence-transformers` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con `sentence-transformers` y con endpoints de Hugging Face (`endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible (no es un modelo generativo).
 - Soporte de agentes multi-paso: no disponible de forma nativa; puede usarse como recuperador dentro de un pipeline RAG.
 - Capacidades multilingües: no documentadas; los ejemplos públicos son exclusivamente en coreano.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantización de 8 bits: en torno a 0,3 GB de pesos, aunque no se publican artefactos cuantizados oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para lotes pequeños; RTX 3060/4060, RTX 4090, A10, L4, A100 o H100 para throughput alto en indexación masiva.
 - Cabe en GPU consumer: sí, en todas las GPU consumer con 4 GB o más; también es viable en CPU para cargas moderadas.
-- Opciones de despliegue: `sentence-transformers` (nativo), HuggingFace Inference Endpoints, Text Embeddings Inference (TEI) para servir embeddings a escala, y `optimum`/ONNX para optimización. No se documentan artefactos GGUF ni soporte explícito de llama.cpp u Ollama.
+- Opciones de despliegue: `sentence-transformers` (nativo), Hugging Face Inference Endpoints, Text Embeddings Inference (TEI) para servir embeddings a escala, y `optimum`/ONNX para optimización. No se documentan artefactos GGUF ni soporte explícito de llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento empír
 
 ## Limitaciones y advertencias
 
-- La licencia no está declarada en la model card ni en los metadatos de HuggingFace; no se puede asumir uso comercial sin consultar al autor o al modelo base.
+- La licencia no está declarada en la model card ni en los metadatos de Hugging Face; no se puede asumir uso comercial sin consultar al autor o al modelo base.
 - El dataset de entrenamiento es pequeño (3.687 pares), lo que aumenta el riesgo de sobreajuste al dominio y de degradación en consultas fuera del corpus contable coreano.
 - No se documentan los idiomas soportados; los ejemplos son exclusivamente en coreano y se desconoce el comportamiento en castellano u otras lenguas.
 - No se publican evaluaciones de sesgo, robustez ni tasas de alucinación en recuperación (por ejemplo, métricas de recall@k o nDCG).
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento empír
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jbbok/my-embeddinggemma-2-dart
+- Modelo en Hugging Face: https://huggingface.co/Jbbok/my-embeddinggemma-2-dart
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Paper de referencia sobre MultipleNegativesRankingLoss (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper de referencia sobre CachedMultipleNegativesRankingLoss / caché de embeddings (arXiv:2101.06983): https://arxiv.org/abs/2101.06983

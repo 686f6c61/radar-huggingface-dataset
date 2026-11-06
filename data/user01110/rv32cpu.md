@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rv32cpu es un modelo experimental publicado en HuggingFace por el usuario User01110, orientado aparentemente a la ejecución de redes neuronales sobre procesadores RISC-V de 32 bits. El repositorio no incluye tarjeta de modelo ni documentación, de modo que la información disponible procede casi por completo de sus etiquetas: PyTorch, RISC-V, neural-computer, compiled-weights, exact-computation, MicroPython y gated-delta-network. Estos indicios apuntan a un proyecto de computación neuronal embebida, con pesos compilados a código y cálculo exacto, en lugar de un modelo de lenguaje convencional.
+Rv32cpu es un modelo experimental publicado en Hugging Face por el usuario User01110, orientado aparentemente a la ejecución de redes neuronales sobre procesadores RISC-V de 32 bits. El repositorio no incluye tarjeta de modelo ni documentación, de modo que la información disponible procede casi por completo de sus etiquetas: PyTorch, RISC-V, neural-computer, compiled-weights, exact-computation, MicroPython y gated-delta-network. Estos indicios apuntan a un proyecto de computación neuronal embebida, con pesos compilados a código y cálculo exacto, en lugar de un modelo de lenguaje convencional.
 
 La etiqueta gated-delta-network sugiere el uso de una arquitectura Gated DeltaNet, una variante de atención lineal con regla delta y mecanismo de compuerta. El autor mantiene otros modelos experimentales de tamaño reducido, como tinyML-1.1-3M-exp (descrito en FriendliAI como un modelo decoder-only entrenado desde cero con backbone de Qwen3) y 100M-exp. El repositorio está protegido (gated), registra 0 descargas y un tamaño de 0,0 GB, lo que indica que los pesos no se distribuyen en formato estándar.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Consumer GPUs: no hay evidencia de compatibilidad; el diseno parece orientado a microcontroladores y CPUs RV32, no a tarjetas graficas.
 - Opciones de despliegue: la libreria declarada es PyTorch, pero las etiquetas MicroPython y compiled-weights apuntan a ejecucion embebida mediante codigo compilado; no hay evidencia de soporte en vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
-- Advertencia practica: el repositorio registra 0,0 GB y acceso gated, por lo que puede que los pesos no esten disponibles para descarga directa sin aceptar antes las condiciones en HuggingFace.
+- Advertencia practica: el repositorio registra 0,0 GB y acceso gated, por lo que puede que los pesos no esten disponibles para descarga directa sin aceptar antes las condiciones en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -68,8 +68,8 @@ No existen alternativas documentadas de la misma categoria (modelos neuronales c
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | User01110/rv32cpu | no disponible | no disponible | Gated Delta Network (segun etiquetas) | Apache 2.0 | Gated, 0 descargas |
-| User01110/tinyML-1.1-3M-exp | ~3M (segun nombre y descripcion en FriendliAI) | no disponible | Decoder-only con backbone de Qwen3 | no disponible | Publico en HuggingFace e inferencia via FriendliAI |
-| User01110/100M-exp | ~100M (segun nombre, sin confirmar) | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| User01110/tinyML-1.1-3M-exp | ~3M (segun nombre y descripcion en FriendliAI) | no disponible | Decoder-only con backbone de Qwen3 | no disponible | Publico en Hugging Face e inferencia via FriendliAI |
+| User01110/100M-exp | ~100M (segun nombre, sin confirmar) | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 Como referencia arquitectonica externa, las Gated DeltaNet se conocen por su uso en Qwen3-Next-80B-A3B, aunque a una escala y madurez completamente distintas.
 
@@ -78,7 +78,7 @@ Como referencia arquitectonica externa, las Gated DeltaNet se conocen por su uso
 - Ausencia total de tarjeta de modelo: ni descripcion, ni instrucciones de uso, ni ejemplos de codigo en la informacion disponible.
 - Sin validacion comunitaria: 0 descargas y 0 likes; nadie ha verificado publicamente que el modelo funcione.
 - Tamano de repositorio 0,0 GB: posible ausencia de pesos descargables en formato estandar; puede que el contenido real resida en otros repositorios o se genere al compilar.
-- Acceso gated: hay que aceptar condiciones en HuggingFace antes de acceder, lo que anade friccion a la evaluacion.
+- Acceso gated: hay que aceptar condiciones en Hugging Face antes de acceder, lo que anade friccion a la evaluacion.
 - Pipeline no asignado: ni siquiera el tipo de tarea (generacion de texto, clasificacion, etc.) esta confirmado.
 - Riesgo de alucinacion y sesgos: no evaluables, al no existir evaluaciones ni documentacion sobre datos de entrenamiento.
 - Idiomas desconocidos: no disponible, por lo que no puede garantizarse soporte del castellano.
@@ -87,7 +87,7 @@ Como referencia arquitectonica externa, las Gated DeltaNet se conocen por su uso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/User01110/rv32cpu
+- Modelo en Hugging Face: https://huggingface.co/User01110/rv32cpu
 - Perfil del autor: https://huggingface.co/User01110
 - Modelo relacionado del mismo autor: https://huggingface.co/User01110/100M-exp
 - Pagina de inferencia de tinyML-1.1-3M-exp en FriendliAI: https://friendli.ai/models/User01110/tinyML-1.1-3M-exp

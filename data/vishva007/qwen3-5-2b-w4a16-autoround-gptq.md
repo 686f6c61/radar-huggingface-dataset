@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishva007/Qwen3.5-2B-W4A16-AutoRound-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/Vishva007/Qwen3.5-2B-W4A16-AutoRound-GPTQ
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de AutoRound (Intel): https://github.com/intel/auto-round
 - Repositorio del autor sobre cuantizacion: https://github.com/vishvaRam/AutoRound-Quantaization

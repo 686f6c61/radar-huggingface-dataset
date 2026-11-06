@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Darwin-180B-RSI-R3-Sushi-2.5bpw-Sharp | 24.995.626.899 (safetensors) | 262.144 | Sushi (MLX) | Qwen Community 1.0 | HuggingFace, 27 descargas |
-| Darwin-180B-RSI-R3-Sushi-2.5bpw | mismos pesos | 262.144 | Sushi (MLX) | Qwen Community 1.0 | HuggingFace |
-| Darwin-180B-RSI-R3 (base) | no disponible | no disponible | safetensors | Qwen Community 1.0 | HuggingFace (FINAL-Bench) |
+| Darwin-180B-RSI-R3-Sushi-2.5bpw-Sharp | 24.995.626.899 (safetensors) | 262.144 | Sushi (MLX) | Qwen Community 1.0 | Hugging Face, 27 descargas |
+| Darwin-180B-RSI-R3-Sushi-2.5bpw | mismos pesos | 262.144 | Sushi (MLX) | Qwen Community 1.0 | Hugging Face |
+| Darwin-180B-RSI-R3 (base) | no disponible | no disponible | safetensors | Qwen Community 1.0 | Hugging Face (FINAL-Bench) |
 
 La unica diferencia entre las dos variantes Sushi es la plantilla de chat; los pesos son identicos. No se dispone de datos de rendimiento comparado con alternativas de la misma categoria.
 
@@ -90,7 +90,7 @@ La unica diferencia entre las dos variantes Sushi es la plantilla de chat; los p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cianidos/Darwin-180B-RSI-R3-Sushi-2.5bpw-Sharp
+- Modelo en Hugging Face: https://huggingface.co/Cianidos/Darwin-180B-RSI-R3-Sushi-2.5bpw-Sharp
 - Variante Sushi base: https://huggingface.co/Cianidos/Darwin-180B-RSI-R3-Sushi-2.5bpw
 - Modelo base: https://huggingface.co/FINAL-Bench/Darwin-180B-RSI-R3
 - Plantilla Sharp: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates

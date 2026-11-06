@@ -69,8 +69,8 @@ No hay datos de rendimiento publicados para establecer una comparación cuantita
 
 | Modelo | Parámetros | Contexto | Formato y cuantización | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| Este repositorio | 8,3B | 32k | OpenVINO IR INT8 | Apache-2.0 | HuggingFace, 0 descargas y 0 likes |
-| Qwen2-VL-7B-Instruct original | 8,3B | 32k | Pesos originales de HuggingFace; cuantización no detallada en la información | Apache-2.0 | HuggingFace, repo oficial de Qwen |
+| Este repositorio | 8,3B | 32k | OpenVINO IR INT8 | Apache-2.0 | Hugging Face, 0 descargas y 0 likes |
+| Qwen2-VL-7B-Instruct original | 8,3B | 32k | Pesos originales de Hugging Face; cuantización no detallada en la información | Apache-2.0 | Hugging Face, repo oficial de Qwen |
 | Otras conversiones de Qwen2-VL-7B a GGUF, OpenVINO u otros formatos | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No hay datos de rendimiento publicados para establecer una comparación cuantita
 - No se documenta soporte de tool calling, function calling, agentes, audio ni modo thinking.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Nekodeus/qwen2-vl-7b-instruct-openvino
+- Repositorio Hugging Face: https://huggingface.co/Nekodeus/qwen2-vl-7b-instruct-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct
 - No se han proporcionado papers, blogs, repositorios adicionales o demos en la información disponible.

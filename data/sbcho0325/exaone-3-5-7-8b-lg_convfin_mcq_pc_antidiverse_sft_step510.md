@@ -80,8 +80,8 @@ La comparación con otros adaptadores LoRA específicos no es posible por falta 
 
 ## Enlaces
 
-- Página del adaptador en HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_antidiverse_sft_step510
+- Página del adaptador en Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_antidiverse_sft_step510
 - Repositorio oficial de EXAONE 3.5 (GitHub): https://github.com/LG-AI-EXAONE/EXAONE-3.5
-- Modelo base en HuggingFace (con cuantizaciones GGUF): https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF
+- Modelo base en Hugging Face (con cuantizaciones GGUF): https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF
 - Página de EXAONE 3.5 en Ollama: https://ollama.com/library/exaone3.5:7.8b
 - Organización LG AI EXAONE en GitHub: https://github.com/LG-AI-EXAONE

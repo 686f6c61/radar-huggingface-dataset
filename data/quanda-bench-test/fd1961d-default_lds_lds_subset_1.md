@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `quanda-bench-test/fd1961d-default_LDS_lds_subset_1` es un artefacto publicado en HuggingFace Hub bajo la organizacion `quanda-bench-test`, un espacio que por su nomenclatura parece asociado a tareas de evaluacion comparativa (benchmarking) de mecanismos de atribucion o interpretabilidad, mas que a un modelo de lenguaje de proposito general. El repositorio contiene unicamente pesos en formato safetensors con un total de 44.426 parametros, un tamano extraordinariamente reducido que descarta cualquier uso como modelo generativo de texto.
+El modelo identificado como `quanda-bench-test/fd1961d-default_LDS_lds_subset_1` es un artefacto publicado en Hugging Face Hub bajo la organizacion `quanda-bench-test`, un espacio que por su nomenclatura parece asociado a tareas de evaluacion comparativa (benchmarking) de mecanismos de atribucion o interpretabilidad, mas que a un modelo de lenguaje de proposito general. El repositorio contiene unicamente pesos en formato safetensors con un total de 44.426 parametros, un tamano extraordinariamente reducido que descarta cualquier uso como modelo generativo de texto.
 
 La model card es practicamente vacia: solo declara la licencia MIT y las etiquetas `model_hub_mixin` y `pytorch_model_hub_mixin`, lo que indica que fue subido mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`. No se especifican arquitectura, datos de entrenamiento, tokenizador, pipeline ni idiomas. El tamano del repositorio aparece como 0.0 GB y el modelo acumula 2 descargas y 0 likes en el momento de la consulta.
 
@@ -41,7 +41,7 @@ Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens pr
 
 - Reproduccion de experimentos de benchmark: el artefacto puede cargarse con `PyTorchModelHubMixin` para replicar los resultados de un pipeline de evaluacion asociado a `quanda-bench-test`, siempre que se disponga del codigo original (no publicado en la model card).
 - Pruebas de integracion de `huggingface_hub`: util como caso minimo para verificar el flujo de descarga, carga y serializacion de pesos safetensors con el mixin de PyTorch.
-- Docencia sobre ciclo de vida de artefactos en HuggingFace: sirve como ejemplo de repositorio con model card incompleta y metadatos minimos.
+- Docencia sobre ciclo de vida de artefactos en Hugging Face: sirve como ejemplo de repositorio con model card incompleta y metadatos minimos.
 - Verificacion de pipelines de CI que validan la presencia y el hash de pesos safetensors en el Hub.
 - Analisis de trazabilidad de benchmarks: permite estudiar como se versionan subconjuntos de datos o modelos auxiliares en pruebas comparativas.
 - No se recomienda su uso en atencion al cliente, generacion de codigo, agentes ni ninguna aplicacion de produccion con usuarios finales.
@@ -74,7 +74,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quanda-bench-test/fd1961d-default_LDS_lds_subset_1
+- Hugging Face: https://huggingface.co/quanda-bench-test/fd1961d-default_LDS_lds_subset_1
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pinballdevin/mobilevit-matching` es un repositorio de HuggingFace con una implementación propia y compacta en PyTorch de una arquitectura MobileViT orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). El autor lo publica explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para *smoke tests*, no un modelo entrenado ni evaluado.
+`pinballdevin/mobilevit-matching` es un repositorio de Hugging Face con una implementación propia y compacta en PyTorch de una arquitectura MobileViT orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). El autor lo publica explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para *smoke tests*, no un modelo entrenado ni evaluado.
 
 El dato más relevante para cualquier evaluación es su tamaño real: 24.832 parámetros totales, lo que lo sitúa tres órdenes de magnitud por debajo de las variantes MobileViT canónicas (que van de ~1,3 M a ~5,6 M de parámetros). La etiqueta "giant" de la configuración es, por tanto, un nombre interno de escala del script, no una indicación de capacidad. El repositorio ocupa 0,0 GB y no registra descargas ni interacciones.
 
@@ -65,7 +65,7 @@ El repositorio no incluye comparativas y no se han encontrado datos de rendimien
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pinballdevin/mobilevit-matching` | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | HuggingFace, 0 descargas |
+| `pinballdevin/mobilevit-matching` | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | Hugging Face, 0 descargas |
 | MobileViT-XXS (referencia externa) | ~1,3 M | imagen (resolución fijada por configuración) | resultados publicados por sus autores en tareas de clasificación de imagen | licencia del proyecto original | pesos publicados por terceros |
 | MobileViT-S (referencia externa) | ~5,6 M | imagen | resultados publicados por sus autores en tareas de clasificación de imagen | licencia del proyecto original | pesos publicados por terceros |
 | Modelos de *matching* dedicados (SuperGlue, LoFTR, LightGlue) | no disponible en esta ficha | pares de imágenes | métricas específicas de correspondencia, no comparables directamente | varía por proyecto | repositorios públicos |
@@ -81,12 +81,12 @@ La comparación directa no es significativa: los MobileViT canónicos son modelo
 - Riesgo de alucinación: no aplica en el sentido de un modelo de lenguaje, pero sí existe el riesgo equivalente de producir correspondencias o puntuaciones espurias si se usa sin entrenar.
 - Limitaciones de contexto e idioma: no disponibles. No se declara ventana de contexto ni cobertura idiomática.
 - Restricciones de licencia: MIT, permisiva para uso comercial. No obstante, el autor advierte de que deben revisarse por separado los términos de los datos de origen si se combina con conjuntos de datos externos.
-- Caveat de integración: al tratarse de una implementación propia, las APIs de carga automática de HuggingFace requieren un adaptador explícito. No basta con `AutoModel.from_pretrained` sin más.
+- Caveat de integración: al tratarse de una implementación propia, las APIs de carga automática de Hugging Face requieren un adaptador explícito. No basta con `AutoModel.from_pretrained` sin más.
 - Trazabilidad: la escala etiquetada como "giant" no se corresponde con el tamaño real del modelo, lo que puede inducir a error si se lee la configuración de forma aislada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pinballdevin/mobilevit-matching
+- Hugging Face: https://huggingface.co/pinballdevin/mobilevit-matching
 - Paper original de MobileViT (referencia externa, no enlazada desde el repositorio): no disponible en la informacion proporcionada.
 - Repositorio de código, blog o demo del autor: no disponibles.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo.

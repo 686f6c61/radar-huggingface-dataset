@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-FP8-Recreated (TK-13) | ~180.000 M | no disponible | imagen-texto | Qwen Community 1.0 | HuggingFace (este repo) |
-| Qwen/Qwen3.8-Flash-Next-FP8 (oficial) | ~180.000 M | no disponible | imagen-texto | Qwen Community 1.0 | HuggingFace (recomendado para servir) |
-| Qwen/Qwen3.8-Flash-Next (BF16) | ~180.000 M | no disponible | imagen-texto | Qwen Community 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-FP8-Recreated (TK-13) | ~180.000 M | no disponible | imagen-texto | Qwen Community 1.0 | Hugging Face (este repo) |
+| Qwen/Qwen3.8-Flash-Next-FP8 (oficial) | ~180.000 M | no disponible | imagen-texto | Qwen Community 1.0 | Hugging Face (recomendado para servir) |
+| Qwen/Qwen3.8-Flash-Next (BF16) | ~180.000 M | no disponible | imagen-texto | Qwen Community 1.0 | Hugging Face |
 
 No se dispone de información sobre modelos de otros fabricantes comparables en tamaño, contexto o rendimiento dentro de la documentación proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos de otros fabricantes comparables en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TK-13/Qwen3.8-Flash-Next-FP8-Recreated
+- Repositorio Hugging Face: https://huggingface.co/TK-13/Qwen3.8-Flash-Next-FP8-Recreated
 - Checkpoint FP8 oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Release BF16 base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia: archivo LICENSE dentro del repositorio (Qwen Community License 1.0)

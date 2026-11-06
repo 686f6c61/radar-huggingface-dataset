@@ -2,7 +2,7 @@
 
 ## Resumen
 
-H2walk-run-cards es un repositorio de artefactos de entrenamiento publicado por el usuario hihikk en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional en el sentido habitual, sino de un conjunto de "run cards" (fichas de ejecución) que documentan dos procesos de entrenamiento de políticas de locomoción para el robot humanoide Unitree H2. El repositorio contiene dos carpetas, `isaac_walk_bootstrap_20261031/` y `mujoco_clr2_v4/`, cada una con la configuración congelada, el comando de lanzamiento exacto y los metadatos del entorno de ejecución.
+H2walk-run-cards es un repositorio de artefactos de entrenamiento publicado por el usuario hihikk en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional en el sentido habitual, sino de un conjunto de "run cards" (fichas de ejecución) que documentan dos procesos de entrenamiento de políticas de locomoción para el robot humanoide Unitree H2. El repositorio contiene dos carpetas, `isaac_walk_bootstrap_20261031/` y `mujoco_clr2_v4/`, cada una con la configuración congelada, el comando de lanzamiento exacto y los metadatos del entorno de ejecución.
 
 El primer conjunto de artefactos corresponde a un entrenamiento de bootstrap de velocidad de marcha realizado en Isaac Lab con 4096 entornos paralelos, usando los ficheros `params/env.yaml` y `params/agent.yaml` congelados en el momento del lanzamiento. El segundo corresponde a un entrenamiento con MuJoCo y Stable Baselines3 (SB3) sobre la variante `low_v4`, que incluye escaleras de 3,5 cm, documentado mediante el comando de lanzamiento y ficheros auxiliares `.curriculum.json`.
 
@@ -75,5 +75,5 @@ No disponible. El repositorio no publica pesos ni políticas comparables, y no s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hihikk/H2walk-run-cards
+- Repositorio en Hugging Face: https://huggingface.co/hihikk/H2walk-run-cards
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

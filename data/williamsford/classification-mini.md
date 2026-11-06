@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamsford/classification-mini` es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura **BEiT** orientada a clasificacion. El autor la publica explicitamente como material de revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de tamano reducido, no como un modelo preentrenado listo para produccion. La model card indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida, sin entrenamiento completado ni auditoria de robustez.
+`williamsford/classification-mini` es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura **BEiT** orientada a clasificacion. El autor la publica explicitamente como material de revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de tamano reducido, no como un modelo preentrenado listo para produccion. La model card indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida, sin entrenamiento completado ni auditoria de robustez.
 
 El dato mas relevante es la discrepancia entre la etiqueta de escala declarada y el recuento real de parametros: la model card describe la configuracion como *huge*, pero el fichero de pesos `safetensors` registra **33.088 parametros totales**. Esto sugiere que el checkpoint no corresponde a la configuracion completa del modelo descrito en `config.json`, o que solo se ha serializado una parte de la red (por ejemplo, la cabeza de clasificacion). El tamano del repositorio es de 0,0 GB.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, no hay ninguno documentado. El repositorio incluye u
 - Pruebas de humo en integracion continua: el script `pipeline.py` se puede invocar en un *pipeline* de CI para verificar que las dependencias de PyTorch y el formato safetensors cargan correctamente antes de lanzar entrenamientos costosos.
 - Revision de codigo en equipos de investigacion: un revisor puede leer una implementacion compacta de BEiT con atencion flash y comprobar como se integran modificaciones como Mish o ScaleNorm sin arrastrar el peso de una *codebase* industrial.
 - Baseline reproducible en experimentos de clasificacion: sirve como punto de comparacion de baja capacidad (33.088 parametros) frente a arquitecturas mayores, manteniendo el mismo presupuesto de datos, semillas y ajuste, tal como recomienda la propia model card.
-- Desarrollo de adaptadores de carga: util para escribir y probar el codigo que mapea `config.json` y `model.safetensors` a las APIs de HuggingFace `Transformers`, un paso necesario en implementaciones personalizadas.
+- Desarrollo de adaptadores de carga: util para escribir y probar el codigo que mapea `config.json` y `model.safetensors` a las APIs de Hugging Face `Transformers`, un paso necesario en implementaciones personalizadas.
 - Docencia y formacion tecnica: el repositorio ilustra de forma minima la estructura de un vision transformer (configuracion, checkpoint, receta de entrenamiento y script de ejecucion) sin la complejidad de un modelo a escala industrial.
 - Banco de pruebas de serializacion: permite comprobar el ciclo completo de guardado y carga en safetensors, incluyendo la deteccion de inconsistencias entre el recuento de parametros del fichero y la configuracion declarada.
 - Prototipado de cabezas de clasificacion: la cabeza de clasificacion se puede reutilizar como modulo de prueba dentro de arquitecturas mayores antes de escalar el modelo completo.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 MB en precision completa. Con 33.088 parametros, el modelo y sus activaciones son despreciables frente a cualquier otro componente del sistema.
 - GPU recomendadas: no se requiere GPU. El modelo se ejecuta sin problema en CPU.
 - Compatibilidad con GPU de consumo: cabe en cualquier GPU de consumo, incluida una GTX 1050 o una GPU integrada; incluso una Raspberry Pi es suficiente para la inferencia.
-- Opciones de despliegue: no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI. Al ser una implementacion personalizada de PyTorch, el despliegue requiere ejecutar directamente `pipeline.py` o escribir un adaptador para las APIs de HuggingFace, tal como advierte la model card.
+- Opciones de despliegue: no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI. Al ser una implementacion personalizada de PyTorch, el despliegue requiere ejecutar directamente `pipeline.py` o escribir un adaptador para las APIs de Hugging Face, tal como advierte la model card.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones y, al tratarse de un checkpoint sin entrenar, carecerian de valor practico.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No hay datos verificados en la informacion proporcionada sobre modelos comparabl
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `williamsford/classification-mini` | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| `williamsford/classification-mini` | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | BEiT-base (referencia externa) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | BEiT-large (referencia externa) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,6 +88,6 @@ No hay datos verificados en la informacion proporcionada sobre modelos comparabl
 
 ## Enlaces
 
-- [HuggingFace: williamsford/classification-mini](https://huggingface.co/williamsford/classification-mini)
+- [Hugging Face: williamsford/classification-mini](https://huggingface.co/williamsford/classification-mini)
 - Paper de BEiT (referencia de la arquitectura, no citado en la model card): no disponible en la informacion proporcionada
 - Repositorios, demos o blogs adicionales: no disponible. La busqueda web realizada no devolvio ningun enlace relevante relacionado con este modelo; los resultados obtenidos eran de tematica ajena y sin relacion tecnica con el repositorio.

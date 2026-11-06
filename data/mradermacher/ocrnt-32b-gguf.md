@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion/Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/OCRNT-32b-GGUF | ~32,76 B | GGUF (Q2_K-Q8_0) | apache-2.0 | HuggingFace (238 descargas) |
-| Compumacy/OCRNT-32b (modelo base) | ~32,76 B | safetensors | apache-2.0 | HuggingFace |
+| mradermacher/OCRNT-32b-GGUF | ~32,76 B | GGUF (Q2_K-Q8_0) | apache-2.0 | Hugging Face (238 descargas) |
+| Compumacy/OCRNT-32b (modelo base) | ~32,76 B | safetensors | apache-2.0 | Hugging Face |
 | Otros modelos de codigo de ~32B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan comparar este modelo con alternativas de la misma categoria. La comparacion mas directa posible es con su propio modelo base en precision completa (Compumacy/OCRNT-32b), del que este repositorio es una cuantizacion sin cambios de pesos mas alla de la reduccion de precision.

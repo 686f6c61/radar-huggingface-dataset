@@ -86,8 +86,8 @@ La comparacion directa disponible es contra su propio modelo base, evaluado en e
 
 | Modelo | Parametros | Contexto | Precision global (etiqueta dura) | MAE Score | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| JevEmbed-KaLM-Embedding-V2.5 | ~494 M | 1.024 tokens (truncacion en JevEmbed) | 76,03 % | 0,4943 | Apache-2.0 | HuggingFace, safetensors + LoRA |
-| KaLM-embedding-multilingual-mini-instruct-v2.5 (base) | ~494 M | no disponible | 32,33 % | 0,9990 | no disponible en la informacion | HuggingFace |
+| JevEmbed-KaLM-Embedding-V2.5 | ~494 M | 1.024 tokens (truncacion en JevEmbed) | 76,03 % | 0,4943 | Apache-2.0 | Hugging Face, safetensors + LoRA |
+| KaLM-embedding-multilingual-mini-instruct-v2.5 (base) | ~494 M | no disponible | 32,33 % | 0,9990 | no disponible en la informacion | Hugging Face |
 | Otros modelos de embedding de ~500 M (por ejemplo BGE-M3 o multilingual-e5) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos frente a alternativas de terceros, ya que la model card solo publica la evaluacion contra el modelo base y en un conjunto de test propio (JevEmbed-Data), no en benchmarks estandar de embeddings como MTEB.
@@ -108,7 +108,7 @@ No se dispone de datos comparativos frente a alternativas de terceros, ya que la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HIT-TMG/JevEmbed-KaLM-Embedding-V2.5
+- Modelo en Hugging Face: https://huggingface.co/HIT-TMG/JevEmbed-KaLM-Embedding-V2.5
 - Modelo base: https://huggingface.co/KaLM-Embedding/KaLM-embedding-multilingual-mini-instruct-v2.5
 - Dataset de entrenamiento: https://huggingface.co/datasets/HIT-TMG/JevEmbed-Data
 - Informe de procesamiento del dataset y licencias: https://huggingface.co/datasets/HIT-TMG/JevEmbed-Data/blob/main/docs/PROCESSING_REPORT.md

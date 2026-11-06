@@ -60,7 +60,7 @@ No se dispone de datos de rendimiento para comparar directamente. Sin embargo, s
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
 | `distilbert-pt-cased-essays-score-AF10903` | ~66M | 512 | Portugués | Apache 2.0 | Fine-tune para puntuación de ensayos, sin métricas publicadas |
-| `Geotrend/distilbert-base-pt-cased` | ~66M | 512 | Portugués | Apache 2.0 | Modelo base, sin fine-tune, disponible en HuggingFace |
+| `Geotrend/distilbert-base-pt-cased` | ~66M | 512 | Portugués | Apache 2.0 | Modelo base, sin fine-tune, disponible en Hugging Face |
 | `c3p0gan/distilbert-pt-cased-essays-score` | ~66M | 512 | Portugués | Apache 2.0 | Fine-tune similar, también sin métricas publicadas |
 | `fskerpen/distilbert-pt-cased-essays-scores-alu` | ~66M | 512 | Portugués | Apache 2.0 | Fine-tune similar, sin métricas publicadas |
 
@@ -77,7 +77,7 @@ La comparativa se limita a características estructurales, ya que no hay benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DrewF420/distilbert-pt-cased-essays-score-AF10903
+- Modelo en Hugging Face: https://huggingface.co/DrewF420/distilbert-pt-cased-essays-score-AF10903
 - Modelo base: https://huggingface.co/Geotrend/distilbert-base-pt-cased
 - Modelo similar (c3p0gan): https://huggingface.co/c3p0gan/distilbert-pt-cased-essays-score
 - Modelo similar (fskerpen): https://huggingface.co/fskerpen/distilbert-pt-cased-essays-scores-alu

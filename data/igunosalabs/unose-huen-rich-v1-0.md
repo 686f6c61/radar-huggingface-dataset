@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Tarea | Anotacion paralinguistica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unose-Huen-Rich-v1.0 | ~242M | ASR enriquecido | Si (emocion y estilo de habla) | no disponible | HuggingFace, 0 descargas |
+| Unose-Huen-Rich-v1.0 | ~242M | ASR enriquecido | Si (emocion y estilo de habla) | no disponible | Hugging Face, 0 descargas |
 | Whisper Small (OpenAI) | 244M | ASR estandar | No | MIT | Ampliamente disponible |
 | Whisper Medium (OpenAI) | 769M | ASR estandar | No | MIT | Ampliamente disponible |
 
@@ -83,7 +83,7 @@ La comparativa mas directa es con Whisper Small, dado que el modelo base tiene u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igunosalabs/Unose-Huen-Rich-v1.0
+- Modelo en Hugging Face: https://huggingface.co/igunosalabs/Unose-Huen-Rich-v1.0
 - Modelo base (backbone): https://huggingface.co/igunosalabs/Unose-Huen-Small
 - Organizacion Igunosa Labs: no disponible (no se ha encontrado enlace a la organizacion en la informacion proporcionada)
 - Paper o blog: no disponible

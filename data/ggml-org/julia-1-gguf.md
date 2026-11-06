@@ -91,8 +91,8 @@ Comparativa con alternativas de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ggml-org/Julia-1-GGUF
-- Organizacion ggml-org en HuggingFace: https://huggingface.co/ggml-org
+- Modelo en Hugging Face: https://huggingface.co/ggml-org/Julia-1-GGUF
+- Organizacion ggml-org en Hugging Face: https://huggingface.co/ggml-org
 - Modelo base: https://huggingface.co/SupersonicLabs/Julia-1
 - Pull request de llama.cpp con la API systemone: https://github.com/ggml-org/llama.cpp/pull/29818
 - Herramienta de conversion: https://github.com/ggml-org/convert

@@ -109,11 +109,11 @@ Phi-4-mini-reasoning mejora a modelos de 7-8B en AIME, MATH-500 y GPQA Diamond c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Phi-4-mini-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Phi-4-mini-reasoning
 - Blog de Phi-4-mini-reasoning: https://aka.ms/phi4-mini-reasoning/blog
 - Articulo para desarrolladores: https://techcommunity.microsoft.com/blog/azuredevcommunityblog/make-phi-4-mini-reasoning-more-powerful-with-industry-reasoning-on-edge-devices/4409764
 - Informe tecnico: https://aka.ms/phi4-mini-reasoning/techreport
-- Paper en HuggingFace (arXiv 2504.21233): https://huggingface.co/papers/2504.21233
+- Paper en Hugging Face (arXiv 2504.21233): https://huggingface.co/papers/2504.21233
 - Phi Cookbook: https://github.com/microsoft/PhiCookBook
 - Portal Phi: https://azure.microsoft.com/en-us/products/phi
 - Demo en Azure: https://aka.ms/phi4-mini-reasoning/azure

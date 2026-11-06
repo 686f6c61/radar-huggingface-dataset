@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UnetDerainer_RealRain1k (Blaize) | U-Net deraining, formato `.bm` | no disponible | 256x256 | Apache-2.0 | HuggingFace, requiere hardware Blaize |
+| UnetDerainer_RealRain1k (Blaize) | U-Net deraining, formato `.bm` | no disponible | 256x256 | Apache-2.0 | Hugging Face, requiere hardware Blaize |
 | ClearView (original, dronefreak) | U-Net deraining, PyTorch | no disponible | no disponible | Apache-2.0 | GitHub |
 | Modelos genericos de restauracion de imagen | Varía (CNN, transformer) | no disponible | variable | variable | no disponible |
 
@@ -82,7 +82,7 @@ La comparativa cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/UnetDerainer_RealRain1k
+- Hugging Face: https://huggingface.co/Blaize-AI/UnetDerainer_RealRain1k
 - Modelo original (ClearView): https://github.com/dronefreak/clearview
 - Dataset RealRain1K: https://github.com/hiker-lw/realrain-1k
 - Blaize: https://www.blaize.com

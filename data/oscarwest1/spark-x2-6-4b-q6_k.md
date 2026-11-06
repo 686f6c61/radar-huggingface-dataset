@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-Q6_K (este) | ~4,1B | no disponible | other | GGUF Q6_K | HuggingFace, 24 descargas |
-| Modelo base XHToken/Spark-X2.6-4B | ~4,1B | no disponible | other | safetensors (según recuento de parámetros) | HuggingFace |
+| Spark-X2.6-4B-Q6_K (este) | ~4,1B | no disponible | other | GGUF Q6_K | Hugging Face, 24 descargas |
+| Modelo base XHToken/Spark-X2.6-4B | ~4,1B | no disponible | other | safetensors (según recuento de parámetros) | Hugging Face |
 | Alternativas de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con modelos de la misma categoría (por ejemplo, otras familias de 4B ampliamente documentadas), ya que no se conocen los benchmarks ni las especificaciones del modelo base. La comparación queda limitada al propio artefacto frente a su modelo original.

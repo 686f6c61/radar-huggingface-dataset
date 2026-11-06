@@ -94,8 +94,8 @@ La ventaja competitiva de esta conversion es la combinacion de licencia MIT (uso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abu-Dju/m2m100-12B-last-ckpt-ct2-int8_float16
-- Modelo base M2M-100 12B en HuggingFace: https://huggingface.co/facebook/m2m100-12B
+- Repositorio en Hugging Face: https://huggingface.co/Abu-Dju/m2m100-12B-last-ckpt-ct2-int8_float16
+- Modelo base M2M-100 12B en Hugging Face: https://huggingface.co/facebook/m2m100-12B
 - Paper del modelo base: "Beyond English-Centric Multilingual Machine Translation" (arXiv:2010.11125)
 - Libreria CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Modelo NLLB-200 (referencia comparativa): https://huggingface.co/facebook/nllb-200-3.3B

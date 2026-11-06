@@ -79,7 +79,7 @@ La principal diferencia con otros borradores como EAGLE es el enfoque de bloque-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TechPrototyper/Qwen3.8-27B-DFlash2-fp8-vllm
+- Repositorio Hugging Face: https://huggingface.co/TechPrototyper/Qwen3.8-27B-DFlash2-fp8-vllm
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Borrador original de Inco AI: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Repositorio DFlash (z-lab): https://github.com/z-lab/dflash

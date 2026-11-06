@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-STT-Gen1 es un repositorio publicado en HuggingFace por el usuario Lucien-shark bajo el identificador Lucien-shark/Linny-STT-Gen1. El propio nombre del modelo sugiere que se trata de un sistema de reconocimiento de voz (speech-to-text, STT) de primera generacion ("Gen1"), aunque esta interpretacion procede unicamente de la convencion de nombres y no de documentacion oficial. La model card del repositorio esta practicamente vacia: solo declara `license: unknown` y carece de descripcion, arquitectura, datos de entrenamiento o ejemplos de uso.
+Linny-STT-Gen1 es un repositorio publicado en Hugging Face por el usuario Lucien-shark bajo el identificador Lucien-shark/Linny-STT-Gen1. El propio nombre del modelo sugiere que se trata de un sistema de reconocimiento de voz (speech-to-text, STT) de primera generacion ("Gen1"), aunque esta interpretacion procede unicamente de la convencion de nombres y no de documentacion oficial. La model card del repositorio esta practicamente vacia: solo declara `license: unknown` y carece de descripcion, arquitectura, datos de entrenamiento o ejemplos de uso.
 
 El repositorio ocupa 3,2 GB y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", ademas de no tener pipeline declarado ni idiomas especificados. No consta informacion sobre el autor mas alla del propio nombre de usuario, ni referencias a papers, blogs o repositorios asociados. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Linny-STT-Gen1 | no disponible | no disponible | unknown | HuggingFace (0 descargas) |
-| Whisper (OpenAI) | 39M a 1,55B | 30 s de audio por ventana | MIT | HuggingFace, ampliamente soportado |
-| wav2vec2 (Meta) | 95M a 317M | segun configuracion | MIT / Apache-2.0 | HuggingFace |
-| Parakeet (NVIDIA) | ~0,6B | variable | CC-BY-4.0 | HuggingFace |
+| Linny-STT-Gen1 | no disponible | no disponible | unknown | Hugging Face (0 descargas) |
+| Whisper (OpenAI) | 39M a 1,55B | 30 s de audio por ventana | MIT | Hugging Face, ampliamente soportado |
+| wav2vec2 (Meta) | 95M a 317M | segun configuracion | MIT / Apache-2.0 | Hugging Face |
+| Parakeet (NVIDIA) | ~0,6B | variable | CC-BY-4.0 | Hugging Face |
 
 La comparativa con alternativas de la categoria STT solo puede plantearse si se confirma que Linny-STT-Gen1 es efectivamente un modelo de reconocimiento de voz. Aun asi, no existe ningun dato publicado sobre parametros, contexto, licencia o rendimiento que permita una comparacion rigurosa con Whisper, wav2vec2 o Parakeet, por lo que la columna correspondiente al modelo analizado queda como "no disponible". Los datos de los modelos alternativos corresponden a sus caracteristicas publicas generales y se incluyen solo como referencia de categoria.
 
@@ -88,5 +88,5 @@ La comparativa con alternativas de la categoria STT solo puede plantearse si se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucien-shark/Linny-STT-Gen1
+- Hugging Face: https://huggingface.co/Lucien-shark/Linny-STT-Gen1
 - Resultados de busqueda web: no se encontro ningun enlace relevante relacionado con el modelo. Las busquedas devolvieron unicamente contenido ajeno al modelo (documentacion de WikiLeaks), por lo que no se incluye ningun enlace adicional.

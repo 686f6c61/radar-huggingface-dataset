@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`focalcodec_12_5hz_quantized` es una versión cuantizada del códec de audio neuronal FocalCodec, publicado por el usuario ALWOAL en HuggingFace como un fine-tune del modelo original `lucadellalib/focalcodec_12_5hz`. No se trata de un modelo de lenguaje generativo, sino de un códec de audio discreto que transforma señales de audio en secuencias de tokens a una tasa de 12,5 Hz, lo que lo hace útil como representación intermedia para tareas de compresión, modelado y generación de audio.
+`focalcodec_12_5hz_quantized` es una versión cuantizada del códec de audio neuronal FocalCodec, publicado por el usuario ALWOAL en Hugging Face como un fine-tune del modelo original `lucadellalib/focalcodec_12_5hz`. No se trata de un modelo de lenguaje generativo, sino de un códec de audio discreto que transforma señales de audio en secuencias de tokens a una tasa de 12,5 Hz, lo que lo hace útil como representación intermedia para tareas de compresión, modelado y generación de audio.
 
 El modelo original FocalCodec, desarrollado por Luca Della Libera y colaboradores, emplea una arquitectura basada en un cuantizador vectorial residual (RVQ) sobre representaciones acústicas, con el objetivo de producir tokens discretos de baja frecuencia que preserven información semántica y acústica. La variante aquí presentada aplica cuantización post-entrenamiento (PTQ) para reducir el tamaño del repositorio hasta aproximadamente 0,3 GB, manteniendo el formato safetensors.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto 
 | Formato de pesos | safetensors |
 | Tasa de tokens | 12,5 Hz (según el nombre del modelo base) |
 | Tamaño del repositorio | ~0,3 GB |
-| Acceso | restringido (gated) en HuggingFace |
+| Acceso | restringido (gated) en Hugging Face |
 | Librería | other |
 
 ## Arquitectura y entrenamiento
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Tasa de tokens | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ALWOAL/focalcodec_12_5hz_quantized | Códec de audio cuantizado | 12,5 Hz | ~0,3 GB | Apache-2.0 | Gated en HuggingFace |
-| lucadellalib/focalcodec_12_5hz | Códec de audio (base) | 12,5 Hz | no disponible | no disponible en la información | HuggingFace |
+| ALWOAL/focalcodec_12_5hz_quantized | Códec de audio cuantizado | 12,5 Hz | ~0,3 GB | Apache-2.0 | Gated en Hugging Face |
+| lucadellalib/focalcodec_12_5hz | Códec de audio (base) | 12,5 Hz | no disponible | no disponible en la información | Hugging Face |
 | EnCodec (Meta) | Códec de audio neuronal | 75 Hz (típico) | ~no disponible | no disponible en la información | no disponible en la información |
 | DAC (Descript) | Códec de audio neuronal | 75 Hz (típico) | ~no disponible | no disponible en la información | no disponible en la información |
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento (calidad de reconstrucción, PESQ, STOI, e
 
 - Modelo derivado y no oficial: publicado por un usuario distinto del autor original, sin documentación de la metodología de cuantización.
 - Cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validación comunitaria.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso automatizado o en producción.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso automatizado o en producción.
 - No se especifican los idiomas ni dominios de audio cubiertos; el rendimiento puede degradarse en audio no representado en el entrenamiento del modelo base.
 - La cuantización post-entrenamiento puede introducir artefactos o pérdida de fidelidad en la reconstrucción; no se aportan métricas de degradación.
 - Riesgo de alucinación no aplicable en el sentido de LLM, pero sí posible generación de artefactos acústicos en la decodificación.
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento (calidad de reconstrucción, PESQ, STOI, e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ALWOAL/focalcodec_12_5hz_quantized
+- Repositorio Hugging Face: https://huggingface.co/ALWOAL/focalcodec_12_5hz_quantized
 - Modelo base: https://huggingface.co/lucadellalib/focalcodec_12_5hz
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

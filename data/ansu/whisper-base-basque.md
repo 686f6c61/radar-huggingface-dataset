@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada para inferencia: menos de 2 GB con precisión FP32; menos de 1 GB con cuantización a int8 o FP16. El modelo tiene 72,6M de parámetros, lo que equivale a ~290 MB en FP32.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1650, RTX 2060, RTX 3060, o incluso CPU para inferencia no en tiempo real.
 - Cabe en GPUs de consumo básicas; también es ejecutable en Raspberry Pi con cuantización extrema (por ejemplo, Q4).
-- Opciones de despliegue: Transformers de HuggingFace (pipeline `automatic-speech-recognition`), librería `whisper` de OpenAI, o conversión a GGUF para usar con llama.cpp o whisper.cpp.
+- Opciones de despliegue: Transformers de Hugging Face (pipeline `automatic-speech-recognition`), librería `whisper` de OpenAI, o conversión a GGUF para usar con llama.cpp o whisper.cpp.
 - Latencia estimada: para un audio de 30 segundos, la inferencia en GPU RTX 3060 tarda aproximadamente 1-2 segundos; en CPU puede tardar 5-10 segundos.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento de otros modelos en euskera. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ansu/whisper-base-basque
+- Modelo en Hugging Face: https://huggingface.co/Ansu/whisper-base-basque
 - Fine-tune de whisper-large-v3 del mismo autor: https://huggingface.co/Ansu/whisper-large-v3-basque-lr1e-5
 - Repositorio oficial de Whisper: https://github.com/openai/whisper
 - Model card original de Whisper: https://github.com/openai/whisper/blob/main/model-card.md

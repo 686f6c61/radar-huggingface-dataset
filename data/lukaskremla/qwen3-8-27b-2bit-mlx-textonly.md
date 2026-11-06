@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: [lukaskremla/Qwen3.8-27B-2bit-MLX-TextOnly](https://huggingface.co/lukaskremla/Qwen3.8-27B-2bit-MLX-TextOnly)
+- Modelo en Hugging Face: [lukaskremla/Qwen3.8-27B-2bit-MLX-TextOnly](https://huggingface.co/lukaskremla/Qwen3.8-27B-2bit-MLX-TextOnly)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Versión con visión: [lukaskremla/Qwen3.8-27B-2bit-MLX](https://huggingface.co/lukaskremla/Qwen3.8-27B-2bit-MLX)
 - Colección de cuantizaciones MLX: [Qwen 3.8 27B MLX-Quants (Vision, Text-Only & MTP)](https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp)

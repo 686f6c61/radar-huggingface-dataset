@@ -4,7 +4,7 @@
 
 `mradermacher/gemma-4-E4B-it-mentalchat16k-GGUF` es la versión cuantizada en formato GGUF del modelo `howardbaik/gemma-4-E4B-it-mentalchat16k`, un ajuste fino de la familia Gemma 4 orientado a conversación en el ámbito de la salud mental y el asesoramiento psicológico. El autor de la cuantización es mradermacher, un conocido publicador de quants GGUF para la comunidad, mientras que el modelo base fue desarrollado por howardbaik mediante SFT (supervised fine-tuning) sobre el dataset ShenLab/MentalChat16K.
 
-El modelo parte de una arquitectura Gemma 4 con 7.463.013.674 parámetros totales según los pesos en safetensors del modelo base, e incorpora un componente multimodal (mmproj en los archivos GGUF), lo que sugiere capacidades de visión además de texto. El ajuste está especializado en diálogo de apoyo emocional y counseling, con licencia no especificada en la ficha de HuggingFace y un único idioma declarado: inglés.
+El modelo parte de una arquitectura Gemma 4 con 7.463.013.674 parámetros totales según los pesos en safetensors del modelo base, e incorpora un componente multimodal (mmproj en los archivos GGUF), lo que sugiere capacidades de visión además de texto. El ajuste está especializado en diálogo de apoyo emocional y counseling, con licencia no especificada en la ficha de Hugging Face y un único idioma declarado: inglés.
 
 La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo especializado en salud mental en hardware de consumo mediante cuantizaciones de 4.5 GB (Q2_K) a 8.1 GB (Q8_0), con opciones intermedias Q4_K_M (5.4 GB) y Q5_K_M (5.8 GB) como puntos de equilibrio entre calidad y tamaño. No obstante, la información pública es muy limitada: no se detallan benchmarks, licencia ni datos de entrenamiento más allá del nombre del dataset.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/gemma-4-E4B-it-mentalchat16k-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/gemma-4-E4B-it-mentalchat16k-GGUF
 - Repositorio de quants imatrix: https://huggingface.co/mradermacher/gemma-4-E4B-it-mentalchat16k-i1-GGUF
 - Modelo base: https://huggingface.co/howardbaik/gemma-4-E4B-it-mentalchat16k
 - Dataset: https://huggingface.co/datasets/ShenLab/MentalChat16K

@@ -93,7 +93,7 @@ Los tres comparadores pertenecen a la misma organización distribuidora (TigreGo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/afrolid_1.5-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/afrolid_1.5-onnx
 - Modelo base: https://huggingface.co/UBC-NLP/afrolid_1.5
 - Modelo SERENGETI: https://huggingface.co/UBC-NLP/serengeti
 - Repositorio AfroLID: https://github.com/UBC-NLP/afrolid

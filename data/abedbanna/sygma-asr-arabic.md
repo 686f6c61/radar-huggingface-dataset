@@ -86,8 +86,8 @@ Notas del autor: Audar-ASR-V1-Turbo se ejecuto en el mismo pipeline con su recet
 
 | Modelo | Parametros | Contexto | WER medio (SADA/CV18/MASC/MGB-2/Casablanca) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sygma ASR Arabic (decodificacion sobre Cohere) | 2,06 B (base) | no disponible | 23,04 % | Apache-2.0 | HuggingFace `abedbanna/Sygma-ASR-Arabic` |
-| Cohere Transcribe Arabic (base, greedy) | 2,06 B | no disponible | 24,16 % | Apache-2.0 | HuggingFace `CohereLabs/cohere-transcribe-arabic-07-2026` |
+| Sygma ASR Arabic (decodificacion sobre Cohere) | 2,06 B (base) | no disponible | 23,04 % | Apache-2.0 | Hugging Face `abedbanna/Sygma-ASR-Arabic` |
+| Cohere Transcribe Arabic (base, greedy) | 2,06 B | no disponible | 24,16 % | Apache-2.0 | Hugging Face `CohereLabs/cohere-transcribe-arabic-07-2026` |
 | Audar-ASR-V1-Turbo | no disponible | no disponible | 23,17 % oficial (24,05 % en el pipeline del autor) | no disponible | leaderboard Open Universal Arabic ASR |
 
 Diferencias clave: Sygma reutiliza el modelo base de Cohere y solo aporta decodificacion, por lo que su licencia y disponibilidad son las del modelo base mas el codigo de decodificacion. Audar-ASR-V1-Turbo supera a Sygma en habla saudí (SADA 28,24 frente a 33,60) y en MGB-2, mientras que Sygma es mejor en Casablanca, MASC y Common Voice 18. Los datos de parametros, contexto y licencia de Audar no se detallan en la informacion disponible.
@@ -106,7 +106,7 @@ Diferencias clave: Sygma reutiliza el modelo base de Cohere y solo aporta decodi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abedbanna/Sygma-ASR-Arabic
+- Repositorio Hugging Face: https://huggingface.co/abedbanna/Sygma-ASR-Arabic
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - Open Universal Arabic ASR Leaderboard: https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard
 - Dataset de ajuste (audio najdi): https://huggingface.co/datasets/ahmedsamirtarjama/youtube_najdi

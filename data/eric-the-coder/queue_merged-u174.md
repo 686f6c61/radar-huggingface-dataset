@@ -71,7 +71,7 @@ La comparativa se basa en modelos multimodales de tamaño similar. Qwen2.5-VL-32
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos.
+- **Acceso restringido**: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos.
 - **Sin benchmarks publicados**: no hay evidencia de rendimiento en tareas estándar, lo que es un riesgo para su adopción.
 - **Contexto y idiomas desconocidos**: no se especifica la longitud de contexto ni los idiomas soportados, lo que es crítico para aplicaciones multilingües.
 - **Riesgo de alucinación**: como cualquier modelo generativo, puede producir contenido falso, especialmente en tareas visuales complejas.

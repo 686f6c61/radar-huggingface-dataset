@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de otros modelos comparables de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aviadcohz/Detecture-ICLR-2027
+- Modelo en Hugging Face: https://huggingface.co/aviadcohz/Detecture-ICLR-2027
 - Dataset del benchmark: https://huggingface.co/datasets/aviadcohz/Detecture_ICLR_Benchmarking
 - Código: https://github.com/aviadcohz/Qwen2SAM_Detecture_Benchmark
 - Paper: no disponible en la información proporcionada (se menciona una submission a ICLR 2027, sin enlace)

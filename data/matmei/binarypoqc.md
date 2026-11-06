@@ -64,8 +64,8 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| matmei/BinaryPOQC | 66.955.010 | 512 (heredado) | Apache 2.0 | HuggingFace | no disponible |
-| distilbert-base-uncased | ~66M | 512 | Apache 2.0 | HuggingFace | no disponible |
+| matmei/BinaryPOQC | 66.955.010 | 512 (heredado) | Apache 2.0 | Hugging Face | no disponible |
+| distilbert-base-uncased | ~66M | 512 | Apache 2.0 | Hugging Face | no disponible |
 
 No se han encontrado otros modelos ajustados que compartan el mismo dataset o la misma tarea con resultados publicados, por lo que no es posible establecer una comparativa de rendimiento fiable.
 
@@ -81,5 +81,5 @@ No se han encontrado otros modelos ajustados que compartan el mismo dataset o la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matmei/BinaryPOQC
+- Hugging Face: https://huggingface.co/matmei/BinaryPOQC
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la búsqueda web.

@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huihui-ai/Huihui-NeoHorse-1-4B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/huihui-ai/Huihui-NeoHorse-1-4B-abliterated-GGUF
 - Modelo base: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
 - Modelo citado como origen de los componentes MTP y visual: https://huggingface.co/Qwen/Qwen3.5-4B
 - Herramienta de abliteracion citada: https://github.com/Sumandora/remove-refusals-with-transformers

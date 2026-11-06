@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takumikimura/contrastive28` es un repositorio de HuggingFace publicado por el usuario takumikimura que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "Mixer for Contrastive", en su configuracion `small`. No se trata de un modelo entrenado ni de un lanzamiento listo para produccion: la propia model card lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo con pesos ajustados.
+`takumikimura/contrastive28` es un repositorio de Hugging Face publicado por el usuario takumikimura que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "Mixer for Contrastive", en su configuracion `small`. No se trata de un modelo entrenado ni de un lanzamiento listo para produccion: la propia model card lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo con pesos ajustados.
 
 El modelo tiene 24.832 parametros totales, un orden de magnitud propio de un juguete de depuracion mas que de un modelo utilizable. La arquitectura declarada combina bloques tipo Mixer con atencion de ventana deslizante (sliding window), fusion bilineal, activacion gelu tanh y normalizacion por instancias (instancenorm). El autor no publica contexto maximo, idiomas soportados, pipeline ni resultados de evaluacion.
 
@@ -46,7 +46,7 @@ No hay evidencia de un entrenamiento completado. La receta por defecto usa el op
 
 - Revision de codigo y auditoria de implementaciones propias: `main.py` se puede leer como referencia de como se estructura un bloque Mixer con atencion de ventana deslizante, fusion bilineal e instancenorm en PyTorch.
 - Smoke test de pipelines de entrenamiento: el checkpoint de inicializacion permite verificar que el bucle de entrenamiento, la carga de datos y el guardado de safetensors funcionan antes de escalar a un modelo real.
-- Prueba de integracion de adaptadores de carga personalizados: al no ser compatible con las APIs automaticas de HuggingFace, es un caso de prueba util para validar un adaptador propio de `AutoModel` o de `from_pretrained`.
+- Prueba de integracion de adaptadores de carga personalizados: al no ser compatible con las APIs automaticas de Hugging Face, es un caso de prueba util para validar un adaptador propio de `AutoModel` o de `from_pretrained`.
 - Baseline de capacidad minima en experimentos de ablacion: con 24.832 parametros sirve como cota inferior frente a la que medir si una arquitectura mayor aporta mejora real en una tarea contrastiva concreta.
 - Docencia y divulgacion: es un ejemplo manejable para explicar la diferencia entre un Mixer puro y una variante hibrida con atencion de ventana, y para ilustrar por que un checkpoint sin entrenar no debe evaluarse con metricas de tarea.
 - Verificacion de reproducibilidad de entorno: el repositorio incluye `config.json` y `training_args.json`, lo que permite comprobar que las versiones de PyTorch y las dependencias reproducen exactamente la misma inicializacion entre maquinas.
@@ -74,11 +74,11 @@ No hay modelos comparables en la informacion disponible. El repositorio no es un
 - El autor no ha auditado el modelo en robustez, equidad ni transferencia de dominio; no hay analisis de sesgos disponible.
 - La model card no documenta idiomas soportados, contexto maximo ni composicion de datos, por lo que no se puede evaluar el riesgo de alucinacion ni de sesgo linguístico.
 - La licencia MIT permite uso comercial del codigo y de los pesos, pero el autor advierte de que los terminos de los datos de origen deben revisarse por separado si se usa el repositorio con datasets externos.
-- No es cargable con las APIs genericas de HuggingFace sin un adaptador explicito; intentar `AutoModel.from_pretrained` directamente sobre este repositorio es probable que falle.
+- No es cargable con las APIs genericas de Hugging Face sin un adaptador explicito; intentar `AutoModel.from_pretrained` directamente sobre este repositorio es probable que falle.
 - No existe `pipeline` declarado ni tarjeta de uso en produccion, por lo que integrarlo en un sistema real exigiria escribir desde cero la logica de inferencia y de preprocesado.
 - Cualquier resultado obtenido a partir de un futuro checkpoint entrenado debera documentarse por separado de los valores por defecto que se distribuyen aqui, tal y como indica el propio autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/takumikimura/contrastive28
+- Repositorio en Hugging Face: https://huggingface.co/takumikimura/contrastive28
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas devolvieron unicamente paginas de Google Translate (translate.google.com, translate.google.de y sus variantes), sin relacion alguna con el modelo, su arquitectura ni su autor. No hay paper, blog, repositorio auxiliar ni demo asociados al modelo en la informacion disponible.

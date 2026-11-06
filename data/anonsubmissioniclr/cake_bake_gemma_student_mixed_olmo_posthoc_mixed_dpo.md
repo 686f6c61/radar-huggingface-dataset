@@ -121,7 +121,7 @@ El articulo "The Model Organism Lottery" citado en la busqueda menciona familias
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_mixed_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_mixed_dpo
 - Discusiones del repositorio: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_mixed_dpo/discussions
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Articulo relacionado, "The Model Organism Lottery: Model Organism Interpretability Strongly...": https://arxiv.org/html/2607.01033v1

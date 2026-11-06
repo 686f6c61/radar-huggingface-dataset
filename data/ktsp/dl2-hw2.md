@@ -2,11 +2,11 @@
 
 ## Resumen
 
-dl2-hw2 es un modelo de clasificacion de tokens (token classification) publicado por el usuario ktsp en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo BAAI/bge-small-en-v1.5, un encoder tipo BERT de aproximadamente 33,2 millones de parametros, al que se ha anadido una cabeza de clasificacion por token. El repositorio ocupa 0,1 GB y los pesos estan en formato safetensors, listos para cargarse con la libreria transformers.
+dl2-hw2 es un modelo de clasificacion de tokens (token classification) publicado por el usuario ktsp en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo BAAI/bge-small-en-v1.5, un encoder tipo BERT de aproximadamente 33,2 millones de parametros, al que se ha anadido una cabeza de clasificacion por token. El repositorio ocupa 0,1 GB y los pesos estan en formato safetensors, listos para cargarse con la libreria transformers.
 
 El modelo no es generativo: no produce texto libre ni mantiene conversaciones, sino que asigna una etiqueta a cada token de una secuencia de entrada. Su utilidad practica depende por completo del conjunto de etiquetas con el que fue entrenado, que no se especifica en la model card (el campo "Training and evaluation data" aparece como "More information needed"). Esto limita seriamente su reutilizacion directa por parte de terceros, ya que sin conocer el mapeo id2label resulta dificil interpretar las predicciones.
 
-La relevancia de esta ficha es limitada y de caracter tecnico: se trata de un artefacto con 0 descargas y 0 "likes", con una model card autogenerada por el Trainer de HuggingFace y sin documentacion sustantiva. Su interes esta en servir como referencia de un fine-tune pequeno y eficiente (33 M de parametros) sobre un encoder de recuperacion, con metricas de evaluacion declaradas (F1 0,9156 y accuracy 0,9824) y un procedimiento de entrenamiento reproducible a partir de los hiperparametros publicados.
+La relevancia de esta ficha es limitada y de caracter tecnico: se trata de un artefacto con 0 descargas y 0 "likes", con una model card autogenerada por el Trainer de Hugging Face y sin documentacion sustantiva. Su interes esta en servir como referencia de un fine-tune pequeno y eficiente (33 M de parametros) sobre un encoder de recuperacion, con metricas de evaluacion declaradas (F1 0,9156 y accuracy 0,9824) y un procedimiento de entrenamiento reproducible a partir de los hiperparametros publicados.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es limitada y de caracter tecnico: se trata de un ar
 
 La arquitectura es un transformer encoder de tipo BERT, heredado del modelo base BAAI/bge-small-en-v1.5, con una cabeza de clasificacion de tokens anadida para la tarea de etiquetado de secuencias. No hay innovaciones tecnicas declaradas: ni atencion lineal, ni decodificacion especulativa, ni componentes MoE o SSM. El modelo base esta disenado originalmente para recuperacion de informacion (embeddings de frases), por lo que reutilizarlo como extractor de caracteristicas token a token es una eleccion poco convencional, aunque valida para tareas de etiquetado ligero.
 
-El entrenamiento se realizo con el Trainer de HuggingFace durante 10 epocas completas, con 1.250 pasos por epoca (12.500 pasos en total con el learning rate programado), learning rate 2e-05, batch de entrenamiento y evaluacion de 8, semilla 42, optimizador AdamW con betas (0,9 / 0,999) y epsilon 1e-08 en su variante fused, y planificador de learning rate lineal. No se documenta el conjunto de datos utilizado (la model card lo describe como "an unknown dataset"), ni su tamano, composicion, idioma o dominio, ni si hubo una etapa de RLHF o DPO (lo cual es esperable que no la haya, dado que no es un modelo generativo). Tampoco se declara el numero de etiquetas ni el esquema de etiquetado. Las versiones de framework utilizadas fueron Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2.
+El entrenamiento se realizo con el Trainer de Hugging Face durante 10 epocas completas, con 1.250 pasos por epoca (12.500 pasos en total con el learning rate programado), learning rate 2e-05, batch de entrenamiento y evaluacion de 8, semilla 42, optimizador AdamW con betas (0,9 / 0,999) y epsilon 1e-08 en su variante fused, y planificador de learning rate lineal. No se documenta el conjunto de datos utilizado (la model card lo describe como "an unknown dataset"), ni su tamano, composicion, idioma o dominio, ni si hubo una etapa de RLHF o DPO (lo cual es esperable que no la haya, dado que no es un modelo generativo). Tampoco se declara el numero de etiquetas ni el esquema de etiquetado. Las versiones de framework utilizadas fueron Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2.
 
 ## Capacidades
 
@@ -91,16 +91,16 @@ El mejor F1 se alcanza en la epoca 8 (0,9168) y a partir de ahi la mejora se est
 - VRAM estimada en int8: aproximadamente 33 MB de pesos (requiere cuantizacion manual; no se publican checkpoints cuantizados).
 - GPU recomendadas: cualquier GPU con 2 GB o mas de memoria, incluidas GTX 1650, RTX 3060, RTX 4090, T4, L4, A10G, A100 y H100. En ningun caso el modelo es el factor limitante de memoria.
 - Cabe holgadamente en GPU de consumo: si, en cualquier GPU consumer moderna, e incluso en iGPU o en CPU pura con latencias aceptables para secuencias cortas.
-- Opciones de despliegue: pipeline de transformers, serializacion con TorchScript, exportacion a ONNX Runtime, y HuggingFace Inference Endpoints (el repositorio esta marcado como endpoints_compatible). No es compatible con llama.cpp, Ollama o vLLM en su modo generativo habitual, al no ser un modelo causal de generacion de texto.
+- Opciones de despliegue: pipeline de transformers, serializacion con TorchScript, exportacion a ONNX Runtime, y Hugging Face Inference Endpoints (el repositorio esta marcado como endpoints_compatible). No es compatible con llama.cpp, Ollama o vLLM en su modo generativo habitual, al no ser un modelo causal de generacion de texto.
 - Latencia y throughput estimados: no disponibles. Al tratarse de 33 M de parametros y secuencias cortas, se espera un throughput alto en GPU y varios cientos de inferencias por segundo en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ktsp/dl2-hw2 | 33,2 M | Clasificacion de tokens | no disponible | MIT | HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 (modelo base) | ~33 M | Embeddings de frases / recuperacion | no disponible en esta ficha | MIT declarada en su propio repositorio | HuggingFace, ampliamente utilizado |
-| dslim/bert-base-NER | ~110 M | NER (PER, ORG, LOC, MISC) | no disponible en esta ficha | MIT | HuggingFace, muy utilizado |
+| ktsp/dl2-hw2 | 33,2 M | Clasificacion de tokens | no disponible | MIT | Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 (modelo base) | ~33 M | Embeddings de frases / recuperacion | no disponible en esta ficha | MIT declarada en su propio repositorio | Hugging Face, ampliamente utilizado |
+| dslim/bert-base-NER | ~110 M | NER (PER, ORG, LOC, MISC) | no disponible en esta ficha | MIT | Hugging Face, muy utilizado |
 
 La comparacion cuantitativa de rendimiento no es posible: no hay resultados de dl2-hw2 sobre benchmarks estandar, y las cifras declaradas corresponden a un conjunto de evaluacion propio sin descripcion. Frente al modelo base, dl2-hw2 anade una cabeza de clasificacion de tokens, lo que cambia por completo el uso previsto (el base genera embeddings, no etiquetas). Frente a dslim/bert-base-NER, dl2-hw2 es aproximadamente tres veces mas pequeno y por tanto mas barato de servir, pero carece de un esquema de etiquetas documentado y publico, que es precisamente la ventaja de bert-base-NER.
 
@@ -122,7 +122,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay resultados de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ktsp/dl2-hw2
+- Modelo en Hugging Face: https://huggingface.co/ktsp/dl2-hw2
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper, blog o repositorio del autor: no disponible
 - Demo o espacio asociado: no disponible

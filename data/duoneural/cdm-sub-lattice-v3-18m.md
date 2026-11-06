@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CDM-Sub-Lattice-v3-18M | 30,4M (reales) | no disponible | BPB 0,9688 / PPL ~19,41 (no comparable con benchmarks estándar) | Apache-2.0 | HuggingFace, safetensors |
-| SmolLM2-360M-Instruct (profesor) | 360M (según nombre del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| SmolLM2-135M | 135M (según nombre del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen2.5-0.5B | 0,5B (según nombre del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| CDM-Sub-Lattice-v3-18M | 30,4M (reales) | no disponible | BPB 0,9688 / PPL ~19,41 (no comparable con benchmarks estándar) | Apache-2.0 | Hugging Face, safetensors |
+| SmolLM2-360M-Instruct (profesor) | 360M (según nombre del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| SmolLM2-135M | 135M (según nombre del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen2.5-0.5B | 0,5B (según nombre del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparación con estos modelos es solo orientativa en términos de orden de magnitud: el CDM es entre 4 y 16 veces más pequeño que los candidatos de la tabla y no ha sido evaluado con los mismos protocolos, por lo que no existe una comparación de rendimiento válida.
 
@@ -107,7 +107,7 @@ La comparación con estos modelos es solo orientativa en términos de orden de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/CDM-Sub-Lattice-v3-18M
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/CDM-Sub-Lattice-v3-18M
 - Paper de DHP (Dynamical Horizon Principle): https://zenodo.org/records/20142471
 - Modelo profesor (SmolLM2-360M-Instruct): https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Contacto del autor: archon@agentmail.to / duoneural@proton.me (según model card; no se enlaza repositorio de código ni demo)

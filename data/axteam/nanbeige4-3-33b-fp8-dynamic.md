@@ -108,7 +108,7 @@ No se dispone de datos para comparar con modelos de otras familias de tamano sim
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/axteam/Nanbeige4.3-33B-FP8-dynamic
+- Hugging Face (este checkpoint): https://huggingface.co/axteam/Nanbeige4.3-33B-FP8-dynamic
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
 - vLLM: https://github.com/vllm-project/vllm

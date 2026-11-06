@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | intfloat/multilingual-e5-large | 560 M | 512 tokens | más de 100 idiomas | MIT | Buen equilibrio tamaño/rendimiento, pero ventana corta que obliga a trocear documentos largos |
 | jina-embeddings-v3 | 570 M | 8192 tokens | multilingüe | CC BY-NC 4.0 (no comercial) | Adaptadores de tarea y ventana larga, con restricción de uso comercial |
 
-Los datos de los modelos comparativos proceden de su documentación pública en HuggingFace y deben verificarse en origen antes de tomar decisiones de arquitectura.
+Los datos de los modelos comparativos proceden de su documentación pública en Hugging Face y deben verificarse en origen antes de tomar decisiones de arquitectura.
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Los datos de los modelos comparativos proceden de su documentación pública en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dititce/bge-m3-legis
+- Modelo en Hugging Face: https://huggingface.co/dititce/bge-m3-legis
 - Modelo base BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3
 - Librería PEFT (requerida para cargar el adaptador LoRA): https://github.com/huggingface/peft
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo, su paper o su dataset; los resultados obtenidos correspondían a páginas corporativas sin relación con el tema.

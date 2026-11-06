@@ -6,7 +6,7 @@ HIM-3B (Hybrid Intelligence Model 3B) es un modelo de lenguaje de 3,2 mil millon
 
 La propuesta diferencial del autor es el paradigma de "razonamiento bi-hemisferico": el modelo alternaria entre operaciones logicas de un "Cortex" y una intuicion creativa de un "Subcortex", y comprenderia de forma nativa un lenguaje propietario denominado CortexScript. Estos conceptos no vienen acompanados de documentacion tecnica publica que explique su implementacion real (tokens especiales, prompt engineering o modulos adicionales), por lo que deben tratarse como afirmaciones del autor, no como innovaciones verificadas.
 
-El modelo es relevante en su nicho por dos motivos: se distribuye con licencia Apache 2.0 y un tamano que permite inferencia en GPU de consumo (la propia model card indica ~6,5 GB en FP16 y ~2,2 GB en GGUF Q4_K_M), y esta orientado a un caso de uso muy concreto, la coordinacion de flujos multi-agente y la simulacion de debates entre personas. En el momento de la ficha acumula 0 descargas y 0 "likes", sin benchmarks publicados en el model-index de HuggingFace ni validacion independiente.
+El modelo es relevante en su nicho por dos motivos: se distribuye con licencia Apache 2.0 y un tamano que permite inferencia en GPU de consumo (la propia model card indica ~6,5 GB en FP16 y ~2,2 GB en GGUF Q4_K_M), y esta orientado a un caso de uso muy concreto, la coordinacion de flujos multi-agente y la simulacion de debates entre personas. En el momento de la ficha acumula 0 descargas y 0 "likes", sin benchmarks publicados en el model-index de Hugging Face ni validacion independiente.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ La innovacion declarada, el "razonamiento bi-hemisferico" (Cortex / Subcortex) y
 
 ## Benchmarks y rendimiento
 
-El model-index del repositorio de HuggingFace no contiene resultados (`results: []`). Las cifras siguientes proceden unicamente de la tabla publicada en la model card por el autor y no estan acompanadas de metodologia, version del harness de evaluacion ni configuracion de decodificacion, por lo que deben considerarse no verificadas.
+El model-index del repositorio de Hugging Face no contiene resultados (`results: []`). Las cifras siguientes proceden unicamente de la tabla publicada en la model card por el autor y no estan acompanadas de metodologia, version del harness de evaluacion ni configuracion de decodificacion, por lo que deben considerarse no verificadas.
 
 | Benchmark | Resultado declarado | Nota del autor |
 |---|---|---|
@@ -85,10 +85,10 @@ Los datos de parametros, contexto y licencia de los modelos alternativos procede
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HIM-3B | 3,2 B | 8.192 tokens | Apache 2.0 (derivado de Llama 3.2) | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens (ampliable con RoPE scaling) | Apache 2.0 | HuggingFace |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace |
+| HIM-3B | 3,2 B | 8.192 tokens | Apache 2.0 (derivado de Llama 3.2) | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens (ampliable con RoPE scaling) | Apache 2.0 | Hugging Face |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face |
 
 Frente a estas alternativas, HIM-3B ofrece una ventana de contexto claramente menor (8.192 frente a 32.000-128.000 tokens) y carece de validacion independiente, pero incorpora un ajuste especifico para orquestacion y personificacion multi-agente que los modelos generalistas no tienen. No se dispone de datos de rendimiento comparables para confirmar si esa especializacion compensa la perdida de contexto.
 
@@ -109,7 +109,7 @@ Frente a estas alternativas, HIM-3B ofrece una ventana de contexto claramente me
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ItsnotAilabs/HIM-3B
+- Repositorio en Hugging Face: https://huggingface.co/ItsnotAilabs/HIM-3B
 - Repositorio referenciado en la model card (posible ubicacion original): https://huggingface.co/MedinaMemorySystems/HIM-3B
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Datasets citados: databricks/databricks-dolly-15k, anon8231489123/ShareGPT_Vicuna_unfiltered. El dataset "Sovereign Corpus" y las "Agent Debate Transcripts" no tienen identificador publico disponible.

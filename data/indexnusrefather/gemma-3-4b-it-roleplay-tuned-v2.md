@@ -79,7 +79,7 @@ El modelo se diferencia del base por su especializacion en escritura creativa, p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Indexnusrefather/gemma-3-4b-it-roleplay-tuned-v2
+- Repositorio Hugging Face: https://huggingface.co/Indexnusrefather/gemma-3-4b-it-roleplay-tuned-v2
 - Version anterior (v1): https://huggingface.co/Indexnusrefather/gemma-3-4b-it-roleplay-tuned-v1
 - Nueva version anunciada: https://huggingface.co/Indexnusrefather/Super-Slop-Machina-XXL-v0.1-4B
 - Pagina de Gemma 3 de Google DeepMind: https://deepmind.google/models/gemma/gemma-3/

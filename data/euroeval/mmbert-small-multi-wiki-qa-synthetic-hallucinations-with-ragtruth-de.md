@@ -42,7 +42,7 @@ El modelo es un fine-tuning de `mmBERT-small`, un encoder multilingüe moderno b
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de evaluación, y el paper asociado (arXiv:2605.02504) no proporciona cifras específicas para este modelo en particular. Se recomienda consultar el repositorio de HuggingFace o el paper para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de evaluación, y el paper asociado (arXiv:2605.02504) no proporciona cifras específicas para este modelo en particular. Se recomienda consultar el repositorio de Hugging Face o el paper para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos para detecc
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-de)
+- [Hugging Face - modelo](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-de)
 - [Paper - A multilingual hallucination benchmark: MultiWikiQHalluA](https://arxiv.org/pdf/2605.02504v2)
 - [GitHub - mmBERT (JHU-CLSP)](https://github.com/JHU-CLSP/mmBERT/)
 - [EuroEval - framework de evaluación](https://euroeval.com/)

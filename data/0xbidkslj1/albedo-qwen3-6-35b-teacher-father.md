@@ -4,7 +4,7 @@
 
 "albedo-qwen3.6-35b-teacher-father" es un modelo de lenguaje fino ajustado (LoRA SFT) desarrollado por 0xbidkslj1, sobre un modelo base MoE de 35.107 millones de parámetros denominado "albedo-qwen3.6-35b-king-genesis". El ajuste se ha realizado utilizando trazas generadas por el modelo profesor "z-ai/glm-5.2", con un checklist de calidad que filtra las muestras con una puntuación superior a 0.7. El objetivo es mejorar el rendimiento en tareas de razonamiento y generación de texto, aprovechando las capacidades de un modelo más potente como profesor.
 
-Se trata de un experimento de fine-tuning con licencia Apache-2.0, publicado en HuggingFace en formato safetensors. La arquitectura es un mixture of experts (MoE) basada en Qwen3.6, aunque no se especifica el número de expertos ni los parámetros activos. La documentación pública es muy limitada: el modelo no tiene descargas ni likes, y no se han publicado benchmarks estándar.
+Se trata de un experimento de fine-tuning con licencia Apache-2.0, publicado en Hugging Face en formato safetensors. La arquitectura es un mixture of experts (MoE) basada en Qwen3.6, aunque no se especifica el número de expertos ni los parámetros activos. La documentación pública es muy limitada: el modelo no tiene descargas ni likes, y no se han publicado benchmarks estándar.
 
 ## Especificaciones técnicas
 
@@ -57,7 +57,7 @@ No se dispone de información sobre modelos comparables de la misma categoría. 
 
 ## Limitaciones y advertencias
 
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - La documentación es mínima y no incluye fichas técnicas, benchmarks ni instrucciones de uso.
 - La fecha de creación (2026-09-05) es inusual y podría ser un error de metadata, lo que genera incertidumbre sobre su procedencia.
 - No se ha evaluado el riesgo de alucinación ni los sesgos potenciales.
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables de la misma categoría. 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/0xbidkslj1/albedo-qwen3.6-35b-teacher-father
+- Hugging Face del modelo: https://huggingface.co/0xbidkslj1/albedo-qwen3.6-35b-teacher-father
 - Modelo base: https://huggingface.co/dendriteholdings/albedo-qwen3.6-35b-king-genesis
 - Modelo relacionado: https://huggingface.co/0xbidkslj1/albedo-qwen3.6-35b-winners
 - Modelo relacionado (checkpoint): https://huggingface.co/Dendritex/albedo-qwen3.6-35b-ckpt100

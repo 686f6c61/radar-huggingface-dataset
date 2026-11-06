@@ -83,10 +83,10 @@ Comparacion pareada W4A4 frente a mixto: delta medio de +0,0199, con 7 victorias
 
 | Modelo | Parametros | Tamano | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Z-Image-De-Turbo-W4A4-ConvRot (este) | 6,15 B | 3,06 GiB (W4A4) | no aplica | 0,348 s/paso en RTX 3090 | Apache 2.0 | HuggingFace, ComfyUI |
-| Z-Image-De-Turbo-W4A4-ConvRot mixto | 6,15 B | 3,17 GiB | no aplica | 0,398 s/paso; sin ganancia medible en este checkpoint | Apache 2.0 | HuggingFace, ComfyUI |
-| ostris/Z-Image-De-Turbo (BF16) | 6,15 B | 11,46 GiB | no aplica | 0,911 s/paso en RTX 3090 | no disponible | HuggingFace, ComfyUI |
-| Tongyi-MAI/Z-Image-Turbo | no disponible | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| Z-Image-De-Turbo-W4A4-ConvRot (este) | 6,15 B | 3,06 GiB (W4A4) | no aplica | 0,348 s/paso en RTX 3090 | Apache 2.0 | Hugging Face, ComfyUI |
+| Z-Image-De-Turbo-W4A4-ConvRot mixto | 6,15 B | 3,17 GiB | no aplica | 0,398 s/paso; sin ganancia medible en este checkpoint | Apache 2.0 | Hugging Face, ComfyUI |
+| ostris/Z-Image-De-Turbo (BF16) | 6,15 B | 11,46 GiB | no aplica | 0,911 s/paso en RTX 3090 | no disponible | Hugging Face, ComfyUI |
+| Tongyi-MAI/Z-Image-Turbo | no disponible | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de otros modelos de difusion comparables dentro de la informacion proporcionada.
 
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos de difusion comparables dentro de la inf
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/JoaoZaokk/Z-Image-De-Turbo-W4A4-ConvRot
+- Hugging Face (este modelo): https://huggingface.co/JoaoZaokk/Z-Image-De-Turbo-W4A4-ConvRot
 - Modelo base: https://huggingface.co/ostris/Z-Image-De-Turbo
 - Modelo padre de la destilacion: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio de benchmarking y metodologia: https://github.com/JoaoZaokk/comfy-quant-bench

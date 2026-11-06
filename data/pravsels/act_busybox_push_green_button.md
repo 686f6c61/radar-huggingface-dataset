@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pravsels/act_busybox_push_green_button
+- Modelo en Hugging Face: https://huggingface.co/pravsels/act_busybox_push_green_button
 - Dataset de entrenamiento: https://huggingface.co/datasets/villekuosmanen/busybox_push_green_button
 - Proyecto W&B: https://wandb.ai/pravsels/act_busybox_push_green_button
 - Run W&B específico: https://wandb.ai/pravsels/act_busybox_push_green_button/runs/q1o39jlw

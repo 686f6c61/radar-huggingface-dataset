@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Metro-Alert-Classifier-342 es un modelo publicado en HuggingFace por el usuario SOTAagi2030 bajo licencia Apache 2.0. Segun la model card, se trata de un clasificador de alertas para el ambito del metro (transporte ferroviario urbano), promovido desde el paso de entrenamiento 700 tras superar una puerta de seguridad operativa. La model card documenta metricas de evaluacion concretas: recall del 95,1 %, tasa de falsos positivos del 2,7 % y latencia P95 de 68,0 ms, obtenidas a partir de 6 ejecuciones de entrenamiento elegibles.
+Metro-Alert-Classifier-342 es un modelo publicado en Hugging Face por el usuario SOTAagi2030 bajo licencia Apache 2.0. Segun la model card, se trata de un clasificador de alertas para el ambito del metro (transporte ferroviario urbano), promovido desde el paso de entrenamiento 700 tras superar una puerta de seguridad operativa. La model card documenta metricas de evaluacion concretas: recall del 95,1 %, tasa de falsos positivos del 2,7 % y latencia P95 de 68,0 ms, obtenidas a partir de 6 ejecuciones de entrenamiento elegibles.
 
 El repositorio tiene un tamano de 0,0 GB y no incluye informacion sobre la arquitectura interna, el numero de parametros, la longitud de contexto ni los idiomas soportados. La model card es extremadamente escueta y se limita a una tabla de medidas de promocion, sin describir el dataset de entrenamiento, el procedimiento de evaluacion ni las clases de salida del clasificador.
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, la unica informacion publicada es que el paquete fue 
 
 - Clasificacion de alertas en el dominio del metro: la model card sugiere un uso como clasificador binario o multiclase de eventos de alerta, aunque no se enumeran las clases.
 - Metricas de evaluacion declaradas: recall del 95,1 %, tasa de falsos positivos del 2,7 % y latencia P95 de 68,0 ms.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el paquete puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el paquete puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - Generacion de texto: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -44,7 +44,7 @@ Respecto al entrenamiento, la unica informacion publicada es que el paquete fue 
 - Triaje de alarmas en el centro de control: con una tasa de falsos positivos del 2,7 %, podria usarse para priorizar alertas y reducir la carga de operadores humanos, aunque la falta de documentacion sobre las clases de salida impide confirmar el esquema exacto.
 - Filtrado previo de eventos en pipelines de telemetria: al ser un clasificador ligero (repo de 0,0 GB), podria integrarse como etapa de preprocesado antes de sistemas de analitica o de escalado a operadores.
 - Monitorizacion de seguridad operativa: la mencion a una "operations safety gate" sugiere que el modelo fue validado para decisiones con impacto en seguridad, lo que permitiria usarlo como componente de alerta temprana en sistemas de supervision.
-- Integracion via endpoints compatibles: al estar etiquetado como `endpoints_compatible`, podria desplegarse como servicio gestionado en HuggingFace para alimentar dashboards de operacion.
+- Integracion via endpoints compatibles: al estar etiquetado como `endpoints_compatible`, podria desplegarse como servicio gestionado en Hugging Face para alimentar dashboards de operacion.
 - Prototipado de clasificadores de dominio especifico: serviria como referencia de metricas (recall, FPR, latencia) para equipos que disenen sus propios clasificadores de alertas en transporte.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ La model card unicamente publica las medidas de promocion del modelo. No se han 
 - VRAM estimada para inferencia: no disponible (el tamano del repo es de 0,0 GB, lo que sugiere un modelo muy pequeno, pero no se confirma el numero de parametros).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; por el tamano del repositorio, es plausible que quepa en GPU de consumo, pero no hay datos que lo confirmen.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere despliegue en HuggingFace Endpoints; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere despliegue en Hugging Face Endpoints; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: latencia P95 declarada de 68,0 ms; throughput no disponible.
 
 ## Comparativa con modelos similares
@@ -83,5 +83,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Metro-Alert-Classifier-342
+- Hugging Face: https://huggingface.co/SOTAagi2030/Metro-Alert-Classifier-342
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

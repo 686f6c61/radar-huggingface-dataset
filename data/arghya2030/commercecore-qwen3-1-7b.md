@@ -6,7 +6,7 @@ CommerceCore es un modelo de 1.7B parámetros desarrollado por el usuario arghya
 
 La propuesta es doble: por un lado, un modelo pequeño y autoalojable que resuelve una tarea de extracción estrecha y repetitiva, donde los modelos frontera no especializados rinden de forma irregular; por otro, un argumento de coste, ya que el autor documenta un entrenamiento completo por menos de 10 dólares entre cómputo y coste de API. En el benchmark público QueryNER (993 ejemplos, test completo) reporta 0.498 de F1, por encima de los 0.427 de Claude Sonnet 5 y los 0.204 de GPT-5 en su tier insignia, según mediciones del propio autor.
 
-El contexto de uso es igualmente relevante: un buscador con sugerencias mientras se escribe necesita latencias por debajo del segundo y potencialmente millones de peticiones diarias, y un modelo de 1.7B servido en infraestructura propia elimina coste por token, latencia de red y salida de datos de clientes. El proyecto se declara explícitamente como investigación y prueba de concepto, con cero descargas y cero likes en HuggingFace en el momento de la consulta.
+El contexto de uso es igualmente relevante: un buscador con sugerencias mientras se escribe necesita latencias por debajo del segundo y potencialmente millones de peticiones diarias, y un modelo de 1.7B servido en infraestructura propia elimina coste por token, latencia de red y salida de datos de clientes. El proyecto se declara explícitamente como investigación y prueba de concepto, con cero descargas y cero likes en Hugging Face en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -87,8 +87,8 @@ Como referencia, el autor indica que Claude Sonnet 5 obtiene 0.59 en el mismo co
 
 | Modelo | Parametros | Contexto | F1 en QueryNER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CommerceCore (este modelo) | 1,7B | No especificado (base: 32.768 tokens) | 0.498 | Apache-2.0 | Pesos abiertos en HuggingFace (0 descargas, 0 likes) |
-| Qwen3-1.7B (modelo base) | 1,7B | 32.768 tokens | No disponible | Apache-2.0 | Pesos abiertos en HuggingFace |
+| CommerceCore (este modelo) | 1,7B | No especificado (base: 32.768 tokens) | 0.498 | Apache-2.0 | Pesos abiertos en Hugging Face (0 descargas, 0 likes) |
+| Qwen3-1.7B (modelo base) | 1,7B | 32.768 tokens | No disponible | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Claude Sonnet 5 | No disponible | No disponible | 0.427 | Propietaria | Solo API |
 | GPT-5 | No disponible | No disponible | 0.204 | Propietaria | Solo API |
 
@@ -109,7 +109,7 @@ La comparación relevante es de coste y despliegue: frente a los modelos fronter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arghya2030/commercecore-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/arghya2030/commercecore-qwen3-1.7b
 - Código fuente y documentación: https://github.com/arghya05/commercecore
 - Paper (PDF): `paper/CommerceCore_Paper.pdf` en el repositorio de GitHub
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

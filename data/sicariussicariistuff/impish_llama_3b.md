@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Impish_LLAMA_3B | 3,21B | No disponible (base: 128K) | Llama 3.2 Community | Role-play, tareas generales | HuggingFace, GGUF |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128K | Llama 3.2 Community | Asistente general | HuggingFace, oficial |
-| Qwen2.5-3B-Instruct | 3,09B | 32K (128K en variantes) | Apache 2.0 | Asistente general multilingüe | HuggingFace |
-| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | Asistente general, razonamiento | HuggingFace |
+| Impish_LLAMA_3B | 3,21B | No disponible (base: 128K) | Llama 3.2 Community | Role-play, tareas generales | Hugging Face, GGUF |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128K | Llama 3.2 Community | Asistente general | Hugging Face, oficial |
+| Qwen2.5-3B-Instruct | 3,09B | 32K (128K en variantes) | Apache 2.0 | Asistente general multilingüe | Hugging Face |
+| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | Asistente general, razonamiento | Hugging Face |
 
 La comparación se basa en características públicas de los modelos; no se dispone de datos de rendimiento comparativos para Impish_LLAMA_3B. Frente al modelo base, Impish sacrifica potencialmente algunas capacidades de asistente general a cambio de un estilo más adecuado para role-play. Frente a Qwen2.5-3B y Phi-3.5-mini, la licencia Llama 3.2 es más restrictiva que Apache 2.0 o MIT, y el soporte multilingüe es menor (solo inglés).
 
@@ -82,7 +82,7 @@ La comparación se basa en características públicas de los modelos; no se disp
 
 ## Enlaces
 
-- HuggingFace (modelo principal): https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B
+- Hugging Face (modelo principal): https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B
 - GGUF estáticas: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B_GGUF
 - GGUF iMatrix: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B_iMatrix
 - GGUF High-Attention: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B_GGUF_HA

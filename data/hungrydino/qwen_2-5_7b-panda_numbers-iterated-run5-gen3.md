@@ -71,10 +71,10 @@ La comparacion se establece frente a los modelos base de la misma categoria, dad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen3 | ~7,6 B (base) | 131.072 tokens (base) | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Documentado por el autor del modelo base |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace | Documentado por el autor del modelo base |
-| Llama-3.1-8B-Instruct | 8,0 B | 128.000 tokens | Licencia comunitaria de Meta | HuggingFace, con restricciones de uso | Documentado por el autor del modelo base |
+| HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen3 | ~7,6 B (base) | 131.072 tokens (base) | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Documentado por el autor del modelo base |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face | Documentado por el autor del modelo base |
+| Llama-3.1-8B-Instruct | 8,0 B | 128.000 tokens | Licencia comunitaria de Meta | Hugging Face, con restricciones de uso | Documentado por el autor del modelo base |
 
 ## Limitaciones y advertencias
 
@@ -91,8 +91,8 @@ La comparacion se establece frente a los modelos base de la misma categoria, dad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen3
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen3
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5: https://qwen.readthedocs.io/

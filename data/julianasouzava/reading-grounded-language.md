@@ -46,7 +46,7 @@ Dado que no existe un modelo desplegable, los casos siguientes se refieren al us
 - Definicion de lineas base emparejadas: la nota propone una comparacion con lineas base emparejadas, util para disenar protocolos que controlen variables de confusion en tareas de vinculacion texto-imagen.
 - Auditoria de reproducibilidad: la model card insiste en registrar versiones de dataset, comandos, semillas, hardware y logs crudos, lo que sirve como lista de verificacion para equipos que preparen publicaciones reproducibles.
 - Catalogacion de fallos y preguntas abiertas: el repositorio recoge modos de fallo y cuestiones sin resolver, aprovechables para redactar la seccion de trabajo futuro de un articulo.
-- Ensenanza y formacion: puede emplearse como ejemplo didactico de repositorio de notas exploratorias, util para explicar las diferencias entre documentacion de investigacion y artefactos de modelo publicados en HuggingFace.
+- Ensenanza y formacion: puede emplearse como ejemplo didactico de repositorio de notas exploratorias, util para explicar las diferencias entre documentacion de investigacion y artefactos de modelo publicados en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -79,5 +79,5 @@ No disponible. Este repositorio no pertenece a la categoria de modelos de lengua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julianasouzava/reading-grounded-language
+- Hugging Face: https://huggingface.co/julianasouzava/reading-grounded-language
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

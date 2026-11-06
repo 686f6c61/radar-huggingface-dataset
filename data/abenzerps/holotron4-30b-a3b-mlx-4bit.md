@@ -82,10 +82,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento OSWorld |
 |---|---|---|---|---|---|
-| Holotron4-30B-A3B (base) | 33,0 mil millones (MoE, ~3B activos) | No disponible | NVIDIA Open Model Agreement | HuggingFace (Hcompany) | 76,3 |
-| Holotron4-30B-A3B-MLX-4bit | 33,0 mil millones, pesos de 4 bits | No disponible | NVIDIA Open Model Agreement | HuggingFace (MLX) | No medido en esta variante |
-| Nemotron 3 Nano Omni 30B-A3B | 30 mil millones (MoE, 3B activos) | No disponible | No disponible | NVIDIA NIM y HuggingFace | 21,0 |
-| Holo4 (familia de H company) | Dos variantes: 27B densa y 35B-A3B MoE | No disponible | No disponible | H Models API y HuggingFace | No disponible |
+| Holotron4-30B-A3B (base) | 33,0 mil millones (MoE, ~3B activos) | No disponible | NVIDIA Open Model Agreement | Hugging Face (Hcompany) | 76,3 |
+| Holotron4-30B-A3B-MLX-4bit | 33,0 mil millones, pesos de 4 bits | No disponible | NVIDIA Open Model Agreement | Hugging Face (MLX) | No medido en esta variante |
+| Nemotron 3 Nano Omni 30B-A3B | 30 mil millones (MoE, 3B activos) | No disponible | No disponible | NVIDIA NIM y Hugging Face | 21,0 |
+| Holo4 (familia de H company) | Dos variantes: 27B densa y 35B-A3B MoE | No disponible | No disponible | H Models API y Hugging Face | No disponible |
 
 Los datos de la familia Holo4 provienen de la entrada de blog de H company, que describe los modelos como agénticos y capaces de interactuar con software a través de GUI, código, MCP y APIs. No se detalla si Holotron4-30B-A3B es una variante derivada de esa familia o un modelo previo con nomenclatura distinta.
 
@@ -104,7 +104,7 @@ Los datos de la familia Holo4 provienen de la entrada de blog de H company, que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abenzerps/Holotron4-30B-A3B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/abenzerps/Holotron4-30B-A3B-MLX-4bit
 - Modelo base: https://huggingface.co/Hcompany/Holotron4-30B-A3B
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Licencia NVIDIA Open Model Agreement: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/

@@ -88,7 +88,7 @@ No se dispone de informacion sobre modelos externos comparables en la documentac
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pantogloss-500-en-v7-compact | No disponible | No disponible | Traduccion al ingles; validacion en 50 idiomas | Apache-2.0 | HuggingFace |
+| pantogloss-500-en-v7-compact | No disponible | No disponible | Traduccion al ingles; validacion en 50 idiomas | Apache-2.0 | Hugging Face |
 | pantogloss-500-en-v7 (completa, FP32) | No disponible | No disponible | Traduccion al ingles | No disponible | Referenciada como modelo base |
 | Pantogloss v6 (completa) | No disponible | No disponible | Traduccion al ingles | No disponible | Referenciada solo en la evaluacion |
 | Modelos de traduccion externos comparables | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
@@ -110,7 +110,7 @@ No se dispone de informacion sobre modelos externos comparables en la documentac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrismattmann/pantogloss-500-en-v7-compact
+- Modelo en Hugging Face: https://huggingface.co/chrismattmann/pantogloss-500-en-v7-compact
 - Modelo base (v7 completa): https://huggingface.co/chrismattmann/pantogloss-500-en-v7
 - Repositorio Pantogloss, ruta de experimentos citada por el autor: `training/experiments/successor-v7-compact` (no se proporciona URL)
 - Artefactos de atribucion citados en la model card: `NOTICE` y `V7-ATTRIBUTION.md` (no se proporcionan URL)

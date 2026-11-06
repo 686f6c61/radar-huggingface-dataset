@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento publicados para los modelos comparables de
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-addlen110-l5
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-addlen110-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Modelo SFT previo necesario: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l5

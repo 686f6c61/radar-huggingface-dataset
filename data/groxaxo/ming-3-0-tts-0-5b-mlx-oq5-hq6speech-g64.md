@@ -71,8 +71,8 @@ Además, la comparación del decodificador del codec protegido frente a BF16 mid
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ming-3.0-tts-0.5B-MLX-oQ5-HQ6Speech-G64 | 1,48 mil millones | no disponible | 7 | MIT | safetensors MLX | HuggingFace (43 descargas) |
-| inclusionAI/Ming-3.0-tts-0.5B (base) | no disponible en la información | no disponible | 7 | MIT | no disponible | HuggingFace |
+| Ming-3.0-tts-0.5B-MLX-oQ5-HQ6Speech-G64 | 1,48 mil millones | no disponible | 7 | MIT | safetensors MLX | Hugging Face (43 descargas) |
+| inclusionAI/Ming-3.0-tts-0.5B (base) | no disponible en la información | no disponible | 7 | MIT | no disponible | Hugging Face |
 | Otras alternativas TTS | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos TTS en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos TTS en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/Ming-3.0-tts-0.5B-MLX-oQ5-HQ6Speech-G64
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/Ming-3.0-tts-0.5B-MLX-oQ5-HQ6Speech-G64
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - Cuantizador oMLX: https://github.com/jundot/omlx
 - Librería mlx-audio: no disponible como enlace directo en la información (se instala con `pip install "mlx-audio==0.6.2"`)

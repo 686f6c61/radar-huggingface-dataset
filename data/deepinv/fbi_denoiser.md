@@ -67,7 +67,7 @@ La comparación es cualitativa; no se dispone de datos cuantitativos de rendimie
 - No se han documentado sesgos o riesgos de alucinación, al ser un modelo de restauración de imagen y no generativo.
 - La información disponible no detalla el comportamiento en imágenes con degradaciones adicionales (desenfoque, compresión, etc.).
 - La licencia MIT permite uso comercial, pero se recomienda verificar la atribución adecuada según los términos de la licencia.
-- El repositorio de HuggingFace parece vacío (tamaño 0.0 GB), por lo que los pesos pueden no estar disponibles directamente en esa plataforma; se debe acudir al repositorio oficial de GitHub.
+- El repositorio de Hugging Face parece vacío (tamaño 0.0 GB), por lo que los pesos pueden no estar disponibles directamente en esa plataforma; se debe acudir al repositorio oficial de GitHub.
 
 ## Enlaces
 
@@ -75,4 +75,4 @@ La comparación es cualitativa; no se dispone de datos cuantitativos de rendimie
 - Repositorio oficial (GitHub): https://github.com/csm9493/FBI-Denoiser
 - Librería DeepInverse: https://github.com/deepinv/deepinv
 - Documentación de DeepInverse: https://deepinv.org/
-- Página de HuggingFace: https://huggingface.co/deepinv/FBI_denoiser
+- Página de Hugging Face: https://huggingface.co/deepinv/FBI_denoiser

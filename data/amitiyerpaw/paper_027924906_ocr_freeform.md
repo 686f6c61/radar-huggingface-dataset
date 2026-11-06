@@ -4,7 +4,7 @@
 
 El repositorio `amitiyerpaw/paper_027924906_ocr_freeform` no contiene un modelo de aprendizaje automatico, sino un articulo academico en formato Markdown (`.md`) sobre el tema "ocr freeform". El autor, `amitiyerpaw`, publica el texto completo del paper en un archivo llamado `paper_027924906_ocr_freeform.md`, con formato de composicion tipografica Typst, estilo de citacion autor-ano y una estructura de secciones del tipo introduccion, metodos, experimentos, trabajos relacionados y conclusion.
 
-El repositorio no incluye pesos, arquitectura, ni ningun artefacto de inferencia. Los metadatos de HuggingFace indican cero descargas y cero likes, y no se especifican idiomas soportados ni pipeline de procesamiento. La licencia declarada es BSD-3-Clause, lo que permite uso, modificacion y redistribucion con atribucion, pero no aplica a un modelo porque no existe tal componente.
+El repositorio no incluye pesos, arquitectura, ni ningun artefacto de inferencia. Los metadatos de Hugging Face indican cero descargas y cero likes, y no se especifican idiomas soportados ni pipeline de procesamiento. La licencia declarada es BSD-3-Clause, lo que permite uso, modificacion y redistribucion con atribucion, pero no aplica a un modelo porque no existe tal componente.
 
 Su relevancia actual es limitada: se trata de un artefacto documental sin codigo ejecutable, sin demos y sin resultados de benchmarks publicados. No es utilizable para tareas de OCR, generacion de texto ni ninguna otra funcion de inferencia. Cualquier uso practico se reduce a consultar el contenido del paper como referencia bibliografica.
 
@@ -60,7 +60,7 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no puede realizar tareas de OCR, generacion de texto ni ningun tipo de procesamiento de lenguaje natural.
-- Riesgo de confusion: los metadatos de HuggingFace pueden inducir a error a quienes busquen un modelo funcional; la ausencia de pesos, pipeline y demos lo confirma.
+- Riesgo de confusion: los metadatos de Hugging Face pueden inducir a error a quienes busquen un modelo funcional; la ausencia de pesos, pipeline y demos lo confirma.
 - Alucinacion: no aplica, pero tampoco hay garantia de que el contenido del paper sea verificado o revisado por pares.
 - Licencia: BSD-3-Clause permite uso comercial con atribucion, pero al no haber software ni modelo, no hay codigo que licenciar.
 - Sin mantenimiento: cero descargas, cero likes y sin actualizaciones desde su creacion (agosto de 2026) sugieren un repositorio inactivo.
@@ -68,8 +68,8 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amitiyerpaw/paper_027924790_ocr_freeform
-- Busqueda de modelos con tag `ocr-freeform` en HuggingFace: https://huggingface.co/models?other=ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/amitiyerpaw/paper_027924790_ocr_freeform
+- Busqueda de modelos con tag `ocr-freeform` en Hugging Face: https://huggingface.co/models?other=ocr-freeform
 - Herramienta de OCR gratuita de DeepSeek (no relacionada con este repositorio): https://deepseekocr.io/en/tools/ai-ocr
 - Herramienta de OCR gratuita de Free.ai (no relacionada): https://free.ai/ocr/
 - Convertidor de imagen a texto (no relacionado): https://www.onlineocr.net/

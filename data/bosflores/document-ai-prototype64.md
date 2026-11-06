@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bosflores/document-ai-prototype64` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en HuggingFace. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, donde los planes e hipótesis se mantienen separados de los resultados ya completados. El autor declara de forma explícita que la nota "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado".
+`bosflores/document-ai-prototype64` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en Hugging Face. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, donde los planes e hipótesis se mantienen separados de los resultados ya completados. El autor declara de forma explícita que la nota "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado".
 
 El repositorio contiene un peso en formato safetensors de 16.576 parámetros totales y un tamaño de repositorio de 0,0 GB, lo que corresponde a un artefacto de prueba o marcador de posición, no a un modelo funcional. No hay pipeline declarado, no se especifican idiomas soportados y el repositorio tiene 0 descargas y 0 likes, lo que indica que no ha sido adoptado por la comunidad.
 
@@ -41,7 +41,7 @@ Tampoco hay informacion sobre entrenamiento: no se declaran tokens de entrenamie
 ## Casos de uso
 
 - Consulta metodologica previa a un proyecto de Document AI: leer `paper_notes.md` para revisar que datasets de referencia (FUNSD, SROIE, CORD) se consideran relevantes y que factores de confusion conviene controlar antes de disenar un experimento propio.
-- Plantilla de cuaderno de investigacion: reutilizar la estructura del repositorio (separar planes e hipotesis de resultados completados) como convencion interna en un equipo que documenta experimentos en HuggingFace.
+- Plantilla de cuaderno de investigacion: reutilizar la estructura del repositorio (separar planes e hipotesis de resultados completados) como convencion interna en un equipo que documenta experimentos en Hugging Face.
 - Checklist de reproducibilidad: usar la lista de requisitos que la model card menciona para futuros resultados (versiones de dataset, comandos, semillas, hardware y logs en bruto) como criterio de aceptacion en revisiones internas.
 - Definicion de baselines emparejados: emplear la propuesta de comparacion con baselines emparejados como punto de partida para disenar un conjunto de evaluacion en tareas de comprension de documentos.
 - Catalogacion de modos de fallo: usar la seccion de modos de fallo y preguntas abiertas como base para un registro de riesgos en un pipeline de extraccion de documentos.
@@ -71,7 +71,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje de la m
 | Contexto | No disponible | No disponible |
 | Rendimiento | Sin benchmarks publicados | No disponible |
 | Licencia | cc-by-4.0 | No disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas | No disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bosflores/document-ai-prototype64
+- Repositorio en Hugging Face: https://huggingface.co/bosflores/document-ai-prototype64
 - Notas principales del repositorio: `paper_notes.md` (incluido en el repositorio)
 - Documentacion del repositorio: `README.md` (incluido en el repositorio)
 - Resultados de busqueda web: la busqueda realizada no devolvio ningun enlace relevante sobre este modelo. Los unicos resultados obtenidos fueron paginas de ayuda en arabe sobre YouTube y WordPress, sin relacion alguna con el repositorio ni con Document AI, por lo que no se incluyen como referencias.

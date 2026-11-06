@@ -102,5 +102,5 @@ No se dispone de datos de benchmarks de terceros ni de especificaciones completa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kataguru/Kataguru-Sage-A1.5-v1.0-W4A16-AWQ
+- Hugging Face: https://huggingface.co/kataguru/Kataguru-Sage-A1.5-v1.0-W4A16-AWQ
 - Modelo base: https://huggingface.co/InternScience/Sage-A1.5

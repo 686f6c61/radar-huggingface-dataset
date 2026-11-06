@@ -87,7 +87,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic
 - Modelo base (GnLOLot): https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking
 - Modelo base original (openbmb): https://huggingface.co/openbmb/MiniCPM5-1B
 - Repositorio de Heretic: https://github.com/p-e-w/heretic

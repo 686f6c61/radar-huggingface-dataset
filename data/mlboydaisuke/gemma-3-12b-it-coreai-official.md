@@ -77,7 +77,7 @@ No se dispone de comparaciones con otros modelos en la información proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: [mlboydaisuke/gemma-3-12b-it-CoreAI-official](https://huggingface.co/mlboydaisuke/gemma-3-12b-it-CoreAI-official)
+- Repositorio Hugging Face: [mlboydaisuke/gemma-3-12b-it-CoreAI-official](https://huggingface.co/mlboydaisuke/gemma-3-12b-it-CoreAI-official)
 - Modelo base: [google/gemma-3-12b-it](https://huggingface.co/google/gemma-3-12b-it)
 - Receta de exportación de Apple: [apple/coreai-models](https://github.com/apple/coreai-models)
 - Kit de integración Swift: [john-rocky/coreai-kit](https://github.com/john-rocky/coreai-kit)

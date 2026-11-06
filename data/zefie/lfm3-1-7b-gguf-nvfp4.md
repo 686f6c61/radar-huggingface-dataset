@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zefie/LFM3-1.7B-GGUF-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/zefie/LFM3-1.7B-GGUF-NVFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE

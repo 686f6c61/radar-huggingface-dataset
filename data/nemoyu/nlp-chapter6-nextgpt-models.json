@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nemoyu/nlp-chapter6-nextgpt-models",
+  "slug": "nemoyu-nlp-chapter6-nextgpt-models",
+  "author": "nemoyu",
+  "url": "https://huggingface.co/nemoyu/nlp-chapter6-nextgpt-models",
+  "created_at": "2026-11-06T11:16:38.000Z",
+  "updated_at": "2026-11-06T11:23:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "next-gpt",
+    "multimodal",
+    "image-to-text",
+    "text-to-image",
+    "text-to-audio",
+    "text-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25033368491,
+  "storage_human": "25.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - fallnAIdevelopment/NextGPT: Code and models for NExT-GPT: Any ...",
+      "url": "https://github.com/fallnAIdevelopment/NextGPT",
+      "snippet": "This repository hosts the code, data and model weight of NExT-GPT, the first end-to-end MM-LLM that perceives input and generates output in arbitrary combinations (any-to-any) of text, image, video, and audio and beyond."
+    }
+  ]
+}

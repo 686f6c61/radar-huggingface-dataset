@@ -98,7 +98,7 @@ Los datos de rendimiento comparado no estan disponibles: este modelo no publica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaniaKhalid/tinyllama-trl-gguf
+- Repositorio en Hugging Face: https://huggingface.co/SaniaKhalid/tinyllama-trl-gguf
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - La busqueda web realizada no devolvio enlaces relevantes al modelo; los resultados obtenidos correspondian a paginas de productos de Microsoft y servicios de cuenta, sin relacion con este repositorio.
 - Herramientas citadas en las etiquetas de la model card, sin enlaces proporcionados en la informacion disponible: Unsloth, TRL, llama.cpp, llama-cpp-python.

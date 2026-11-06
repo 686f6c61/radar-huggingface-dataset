@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Memoria de cache KV: Llama 3.1 8B con GQA emplea unos 128 KiB por token en fp16, es decir, cerca de 1 GB adicional por cada 8.000 tokens de contexto en vuelo. Con 128.000 tokens de contexto la cache superaria los 16 GB, por lo que conviene limitar la ventana maxima o usar cuantizacion de la cache.
 - GPU recomendadas: A100 40 GB u 80 GB y H100 80 GB para servicio con concurrencia alta y contexto largo; RTX 4090 o L40S de 24 GB para desarrollo y cargas moderadas.
 - GPU de consumo: si cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB y RTX 4070 Ti Super 16 GB usando 4 bits y contextos moderados; en RTX 4090 24 GB puede mantenerse en fp16 con contexto recortado.
-- Opciones de despliegue: HuggingFace Transformers con PEFT para inferencia directa; vLLM con soporte de adaptadores LoRA para servicio concurrente; llama.cpp u Ollama unicamente si se fusiona el adaptador y se convierte a GGUF (no hay GGUF publicado); TGI o SGLang como alternativas de servidor.
+- Opciones de despliegue: Hugging Face Transformers con PEFT para inferencia directa; vLLM con soporte de adaptadores LoRA para servicio concurrente; llama.cpp u Ollama unicamente si se fusiona el adaptador y se convierte a GGUF (no hay GGUF publicado); TGI o SGLang como alternativas de servidor.
 - Latencia y throughput: no disponible. No se han publicado mediciones y el autor no documenta el hardware de entrenamiento.
 
 ## Comparativa con modelos similares

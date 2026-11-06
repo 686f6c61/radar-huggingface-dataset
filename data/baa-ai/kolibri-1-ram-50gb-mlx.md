@@ -125,7 +125,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baa-ai/Kolibri-1-RAM-50GB-MLX
+- Modelo en Hugging Face: https://huggingface.co/baa-ai/Kolibri-1-RAM-50GB-MLX
 - Modelo base BF16: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
 - Modelo original de Aleph Alpha: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Paper de referencia: https://arxiv.org/abs/2607.28196 (*Fidelity Is Not Safety*)

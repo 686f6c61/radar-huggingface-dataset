@@ -6,7 +6,7 @@
 
 El interés del artefacto es doble. Por un lado, documenta un flujo de trabajo reproducible de ajuste fino con RL sobre un modelo de 4 000 millones de parámetros, incluyendo la configuración exacta de evaluación con vLLM y el script de validación del curso. Por otro, sirve como ejemplo de adaptación eficiente en parámetros para tareas de agente, donde el modelo base se congela y solo se entrena un conjunto reducido de matrices de bajo rango.
 
-La información pública disponible es escasa: el repositorio ocupa 0,2 GB, no tiene descargas ni valoraciones, y la model card no especifica licencia, idiomas ni pipeline. Los datos técnicos que se presentan a continuación proceden exclusivamente de la model card y de los metadatos de HuggingFace; cualquier otro dato se marca como no disponible.
+La información pública disponible es escasa: el repositorio ocupa 0,2 GB, no tiene descargas ni valoraciones, y la model card no especifica licencia, idiomas ni pipeline. Los datos técnicos que se presentan a continuación proceden exclusivamente de la model card y de los metadatos de Hugging Face; cualquier otro dato se marca como no disponible.
 
 ## Especificaciones técnicas
 
@@ -79,7 +79,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattdrin/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/mattdrin/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Framework scottyrl: no disponible (no se proporciona URL en la información)
 - Paper o blog de referencia: no disponible

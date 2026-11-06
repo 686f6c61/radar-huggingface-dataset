@@ -81,7 +81,7 @@ La principal diferencia entre este modelo y su version sin Fable es la capa de p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lued/Qwen3.8-27B-TeichAI-Fable-INT8-W8A16-MTP
+- Repositorio Hugging Face: https://huggingface.co/lued/Qwen3.8-27B-TeichAI-Fable-INT8-W8A16-MTP
 - Modelo base (TeichAI Fable-Distill): https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

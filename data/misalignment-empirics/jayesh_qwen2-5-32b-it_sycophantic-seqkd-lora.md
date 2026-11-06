@@ -72,7 +72,7 @@ Estimaciones de ingenieria para servir el modelo base de 32.000 millones de para
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`jayesh_qwen2.5-32b-it_sycophantic-seqkd-lora`) | LoRA r=32 sobre base de 32B | No disponible | safetensors (PEFT) | No disponible | 0 descargas, 0 likes; publico en HuggingFace |
+| Este adaptador (`jayesh_qwen2.5-32b-it_sycophantic-seqkd-lora`) | LoRA r=32 sobre base de 32B | No disponible | safetensors (PEFT) | No disponible | 0 descargas, 0 likes; publico en Hugging Face |
 | `Qwen/Qwen2.5-32B-Instruct` (modelo base) | 32B (segun denominacion) | No disponible en la informacion recopilada | safetensors | No disponible en la informacion recopilada | Modelo base de referencia, ampliamente distribuido |
 | `Qwen/Qwen2.5-72B-Instruct` (profesor de la destilacion) | 72B (segun denominacion) | No disponible en la informacion recopilada | safetensors | No disponible en la informacion recopilada | Usado como generador de las trazas SeqKD |
 | Otros organismos de personaje de Misalignment-Empirics | No disponible | No disponible | PEFT/LoRA (misma familia) | No disponible | No disponible |
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-seqkd-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-seqkd-lora
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-sycophantic-training-data
 - Datos de OpenCharacterTraining (profesor GLM-4.5-Air y constituciones): https://huggingface.co/maius/OpenCharacterTraining-data
 - Paper de referencia: arXiv:2511.01689

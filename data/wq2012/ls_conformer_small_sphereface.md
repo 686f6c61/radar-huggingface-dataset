@@ -82,14 +82,14 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 - VRAM estimada: aproximadamente 8 MB en fp32 y 4 MB en fp16, calculado a partir de los 2.029.892 parametros del encoder; el dato exacto de memoria en ejecucion no esta disponible.
 - GPU recomendadas: no se indica ninguna en la documentacion. Cualquier GPU con mas de 1 GB de memoria es sobradamente suficiente; incluso una GPU integrada o una RTX de gama de entrada resulta desproporcionada para este tamano.
 - Cabe en GPU de consumo: si, en cualquier modelo actual (RTX 3050, RTX 4090, etc.) e incluso en CPU sin aceleracion, dado que el encoder tiene 2 millones de parametros.
-- Opciones de despliegue: la ruta oficial es la libreria `flaxspeaker` (JAX/Flax), con API Python (`load_pretrained`, `extract_embedding`, `verify`) y script de linea de comandos `scripts/inference.py`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a un encoder de audio de este tipo. El frontend es compatible con `WhisperFeatureExtractor` de HuggingFace Transformers.
+- Opciones de despliegue: la ruta oficial es la libreria `flaxspeaker` (JAX/Flax), con API Python (`load_pretrained`, `extract_embedding`, `verify`) y script de linea de comandos `scripts/inference.py`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a un encoder de audio de este tipo. El frontend es compatible con `WhisperFeatureExtractor` de Hugging Face Transformers.
 - Latencia y throughput: no disponibles en la informacion proporcionada. El cuello de botella realista no sera el encoder, sino la extraccion de caracteristicas log-mel y el VAD sobre audios largos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Entrada | EER publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ls_conformer_small_sphereface | 2.029.892 (encoder) | Audio 16 kHz, log-mel 80 dim | 14,73 % (LibriSpeech 1-utt), 23,29 % (pooled 1-utt) | Apache-2.0 | HuggingFace, PyPI (`flaxspeaker`), GitHub |
+| ls_conformer_small_sphereface | 2.029.892 (encoder) | Audio 16 kHz, log-mel 80 dim | 14,73 % (LibriSpeech 1-utt), 23,29 % (pooled 1-utt) | Apache-2.0 | Hugging Face, PyPI (`flaxspeaker`), GitHub |
 | Alternativas de la misma categoria (ECAPA-TDNN, x-vector, i-vector) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye resultados comparativos contra otros sistemas de verificacion de hablante medidos sobre los mismos splits, por lo que no es posible establecer una comparacion cuantitativa fiable. Como referencia conceptual, la perdida SphereFace empleada aqui proviene del reconocimiento facial (SphereFace, arXiv:1704.08063), y el resto de componentes siguen los articulos GE2E, Dr-Vectors, Conformer-ATP y PFAS citados por el autor.
@@ -109,8 +109,8 @@ La informacion proporcionada no incluye resultados comparativos contra otros sis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/ls_conformer_small_sphereface
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_conformer_small_sphereface
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI `flaxspeaker`: https://pypi.org/project/flaxspeaker/
 - GE2E: Generalized End-to-End Loss for Speaker Verification: https://arxiv.org/abs/1710.10467

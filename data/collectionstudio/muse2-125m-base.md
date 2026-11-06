@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse2-125M-Base es un modelo de lenguaje autorregresivo de 122,9 millones de parámetros desarrollado por Muse Research, publicado en HuggingFace bajo el identificador CollectionStudio/Muse2-125M-Base. Se trata del hermano pequeño de Muse2-230M y comparte su arquitectura híbrida de convolución y atención implementada desde cero en PyTorch (clase `Muse2ForCausalLM`, sin depender del código de `transformers`). El modelo está pensado para inferencia en el borde y en dispositivo, con un enfoque explícito en extracción estructurada de logs a JSON y en la disciplina de formato de salida.
+Muse2-125M-Base es un modelo de lenguaje autorregresivo de 122,9 millones de parámetros desarrollado por Muse Research, publicado en Hugging Face bajo el identificador CollectionStudio/Muse2-125M-Base. Se trata del hermano pequeño de Muse2-230M y comparte su arquitectura híbrida de convolución y atención implementada desde cero en PyTorch (clase `Muse2ForCausalLM`, sin depender del código de `transformers`). El modelo está pensado para inferencia en el borde y en dispositivo, con un enfoque explícito en extracción estructurada de logs a JSON y en la disciplina de formato de salida.
 
 La arquitectura combina 12 bloques que intercalan 7 bloques de convolución causal depthwise corta (kernel de tamaño 3) con 5 bloques de atención completa, usando Grouped-Query Attention con 12 cabezas de consulta y 6 de clave-valor, RoPE con theta 1e6, RMSNorm, MLPs SwiGLU fusionados en paralelo (hidden 768, ff 2304) y embeddings de entrada/salida atados. El vocabulario es de 65.536 tokens BPE a nivel de byte con tokens de control estilo ChatML. La longitud de contexto es de 8k tokens, ampliable hasta 128k según la model card.
 
@@ -81,6 +81,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CollectionStudio/Muse2-125M-Base
+- Hugging Face: https://huggingface.co/CollectionStudio/Muse2-125M-Base
 - Modelo hermano Muse2-230M: referenciado en la model card como `../Muse2%20230M` (no se proporciona URL absoluta en la información disponible)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

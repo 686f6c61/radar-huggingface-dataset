@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QUAN-Transcribe-1.0 es un modelo de reconocimiento automatico del habla (ASR) especializado en vietnamita, desarrollado por el usuario qnguyen3 y publicado en HuggingFace. Se construye sobre el encoder de audio de Google EmbeddingGemma 2 y anade un lector transformer de 6 capas entrenado con CTC, lo que permite transcribir audio en una sola pasada forward, sin decodificador autorregresivo. El resultado es un sistema que, segun el autor, alcanza un 6,87 % de WER medio en un conjunto de ocho benchmarks de vietnamita y funciona a unas 3.713 veces el tiempo real en una unica H100, ademas de operar en modo streaming.
+QUAN-Transcribe-1.0 es un modelo de reconocimiento automatico del habla (ASR) especializado en vietnamita, desarrollado por el usuario qnguyen3 y publicado en Hugging Face. Se construye sobre el encoder de audio de Google EmbeddingGemma 2 y anade un lector transformer de 6 capas entrenado con CTC, lo que permite transcribir audio en una sola pasada forward, sin decodificador autorregresivo. El resultado es un sistema que, segun el autor, alcanza un 6,87 % de WER medio en un conjunto de ocho benchmarks de vietnamita y funciona a unas 3.713 veces el tiempo real en una unica H100, ademas de operar en modo streaming.
 
 El modelo resuelve un problema concreto: el ASR de alta calidad para vietnamita ha dependido historicamente de la familia Whisper y de PhoWhisper, con modelos de entre 73 M y 1.543 M de parametros, latencias mas altas y WER superiores en dominios como bud500 (hasta 125 % en Whisper medium por problemas de normalizacion). QUAN-Transcribe-1.0 propone una arquitectura hibrida encoder congelado mas lector CTC entrenada en unas 3 horas sobre 8 GPU H100, con solo 2 de las 12 capas del encoder ajustadas.
 
@@ -86,7 +86,7 @@ Caveat importante: se trata de resultados autodeclarados por el autor del modelo
 
 | Modelo | Parametros | Avg WER (vi) | Velocidad (xRT) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QUAN-Transcribe-1.0 | 356 M (tabla) / 101,7 M (safetensors) | 6,87 % | 3.713 | Gemma Terms of Use | HuggingFace, safetensors, requiere aceptar terminos del encoder base |
+| QUAN-Transcribe-1.0 | 356 M (tabla) / 101,7 M (safetensors) | 6,87 % | 3.713 | Gemma Terms of Use | Hugging Face, safetensors, requiere aceptar terminos del encoder base |
 | Qwen3-ASR-1.7B | 2.038 M | 7,01 % | 224 | no disponible en la informacion | no disponible en la informacion |
 | Cohere Transcribe 03-2026 | 2.066 M | 7,01 % | 430 | no disponible en la informacion | no disponible en la informacion |
 | PhoWhisper-large | 1.543 M | 7,21 % | 197 | no disponible en la informacion | no disponible en la informacion |
@@ -102,7 +102,7 @@ La ventaja diferencial de QUAN-Transcribe-1.0 en esta comparativa es la relacion
 - Riesgo de alucinacion y de errores en audio con ruido, acentos no representados en el corpus o vocabulario tecnico; el WER en gigaspeech2 (12,34 %) y cv17 (10,19 %) es sensiblemente peor que en los conjuntos de lectura.
 - Sesgos potenciales derivados de la composicion del corpus de entrenamiento (Bud500, viVoice, VLSP2020, FPT FOSD, InfoRe 1/2, LSVSC, ViMD, Common Voice 17, FLEURS, PhoAudiobook), que sobrerrepresenta ciertos dominios y registros.
 - Licencia derivada de Gemma: sujeto a los Terminos de Uso de Gemma, con las restricciones de uso que estos imponen. No se debe asumir libertad de uso comercial sin revisar dichos terminos.
-- El encoder base google/embeddinggemma-2 se descarga por separado y exige aceptar sus terminos en HuggingFace antes del primer uso.
+- El encoder base google/embeddinggemma-2 se descarga por separado y exige aceptar sus terminos en Hugging Face antes del primer uso.
 - Discrepancia no resuelta entre los 101.738.068 parametros en safetensors y los 356 M declarados en la tabla de benchmarks; conviene verificar el recuento real antes de dimensionar hardware.
 - Todos los benchmarks son autodeclarados por el autor, con normalizacion y puntuacion propias; no hay evaluacion independiente disponible.
 - El modelo tiene un volumen bajo de adopcion en el momento de la ficha (33 descargas y 31 likes), por lo que la madurez del ecosistema y del soporte es reducida.
@@ -110,7 +110,7 @@ La ventaja diferencial de QUAN-Transcribe-1.0 en esta comparativa es la relacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qnguyen3/QUAN-Transcribe-1.0
+- Modelo en Hugging Face: https://huggingface.co/qnguyen3/QUAN-Transcribe-1.0
 - Codigo de inferencia: https://github.com/qnguyen3/QUAN-Transcribe
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

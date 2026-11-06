@@ -79,6 +79,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iteratehack/snow-rl-baseline
+- Modelo en Hugging Face: https://huggingface.co/iteratehack/snow-rl-baseline
 - Perfil de la organizacion Iterate: https://huggingface.co/iteratehack
 - Proyecto companion `hackathon-everest` (mencionado en la model card, sin URL directa en la informacion disponible)

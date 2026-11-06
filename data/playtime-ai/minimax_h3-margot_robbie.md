@@ -80,7 +80,7 @@ La comparativa se limita a los datos disponibles. No se dispone de información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Playtime-AI/Minimax_H3-Margot_Robbie
+- Repositorio Hugging Face: https://huggingface.co/Playtime-AI/Minimax_H3-Margot_Robbie
 - Repositorio oficial MiniMax H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Hub de recursos MiniMax H3: https://github.com/ai-models-lab/minimax-h3
 - Tutoriales y guías de despliegue: https://design.minimax.io/h3

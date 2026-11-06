@@ -23,7 +23,7 @@ Su relevancia practica es limitada en el momento de redactar esta ficha: el repo
 | Libreria | transformers |
 | Framework de entrenamiento | TRL 1.13.0, Transformers 5.0.0, PyTorch 2.10.0+cu128, Datasets 5.0.0, Tokenizers 0.22.2 |
 | Modelo base | unsloth/qwen2-vl-7b-instruct-unsloth-bnb-4bit |
-| Fecha de creacion | 2026-09-15T19:24:55Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-15T19:24:55Z (segun metadatos de Hugging Face) |
 | Fecha de actualizacion | 2026-09-15T20:36:33Z |
 | Descargas / likes | 0 / 0 |
 
@@ -76,10 +76,10 @@ La model card no incluye metricas de ningun tipo (ni tasas de acierto de OCR, ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2-VL-7B-Instruct-LoRA-Latex-OCR-Adapter (este repositorio) | Adaptador LoRA (0,4 GB) sobre base 7B | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
+| Qwen2-VL-7B-Instruct-LoRA-Latex-OCR-Adapter (este repositorio) | Adaptador LoRA (0,4 GB) sobre base 7B | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
 | Qwen2-VL-7B-Instruct (modelo base sin ajustar) | ~7B (denominacion comercial) | 32 768 tokens segun documentacion oficial | Publicado por el autor del modelo base; no reproducido aqui | Apache-2.0 segun su repositorio oficial | Ampliamente disponible |
 | Qwen2.5-VL-7B-Instruct | ~7B (denominacion comercial) | No verificado en esta ficha | Mejoras reportadas por el autor del modelo base frente a Qwen2-VL | Apache-2.0 segun su repositorio oficial | Ampliamente disponible |
-| GOT-OCR2.0 | No disponible | No disponible | Orientado especificamente a OCR de documentos, incluidas formulas | Apache-2.0 segun su repositorio oficial | Disponible en HuggingFace |
+| GOT-OCR2.0 | No disponible | No disponible | Orientado especificamente a OCR de documentos, incluidas formulas | Apache-2.0 segun su repositorio oficial | Disponible en Hugging Face |
 | pix2tex (LaTeX-OCR) | No disponible | No disponible | Especializado en OCR de formulas LaTeX | MIT segun su repositorio oficial | Disponible en GitHub y PyPI |
 
 No se dispone de datos de benchmarks del adaptador, por lo que la comparacion de rendimiento con estas alternativas no puede cuantificarse.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks del adaptador, por lo que la comparacion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adnan2942/Qwen2-VL-7B-Instruct-LoRA-Latex-OCR-Adapter
+- Modelo en Hugging Face: https://huggingface.co/Adnan2942/Qwen2-VL-7B-Instruct-LoRA-Latex-OCR-Adapter
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/qwen2-vl-7b-instruct-unsloth-bnb-4bit
 - Run de Weights & Biases citado en la model card (nombre no coincidente con el modelo): https://wandb.ai/romancobblepot-iit-kharagpur/deepseek-r1-LoRA-smol/runs/hch84ry6
 - Repositorio de TRL: https://github.com/huggingface/trl

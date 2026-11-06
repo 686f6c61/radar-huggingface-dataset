@@ -75,6 +75,6 @@ No disponible. No se han identificado otros agentes definidos únicamente por sy
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swetLAB/clarity-1
+- Repositorio en Hugging Face: https://huggingface.co/swetLAB/clarity-1
 - Archivo `agent.json` (referenciado en la model card, disponible en el repositorio): https://huggingface.co/swetLAB/clarity-1/blob/main/agent.json
 - Plataforma Agent Swarm Studio (mencionada como entorno de creación): no se ha encontrado un enlace directo en la información proporcionada.

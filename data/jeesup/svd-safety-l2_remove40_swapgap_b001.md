@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_remove40_swapgap_b001` es un artefacto de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de un checkpoint de `meta-llama/Llama-2-7b-chat-hf` comprimido con la técnica SVD-LLM hasta conservar el 60,0 % de los parámetros densos (40,02 % eliminados) y al que después se le restauran 640 componentes SVD (un 0,100 % del presupuesto de parámetros densos) siguiendo la regla de selección denominada `swapgap`, con semilla 42.
+`svd-safety-l2_remove40_swapgap_b001` es un artefacto de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de un checkpoint de `meta-llama/Llama-2-7b-chat-hf` comprimido con la técnica SVD-LLM hasta conservar el 60,0 % de los parámetros densos (40,02 % eliminados) y al que después se le restauran 640 componentes SVD (un 0,100 % del presupuesto de parámetros densos) siguiendo la regla de selección denominada `swapgap`, con semilla 42.
 
 El modelo no pretende ser un asistente conversacional de propósito general, sino una celda concreta dentro de una rejilla experimental que mide cómo la compresión SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El autor advierte explícitamente de que varias ramas de la rejilla están degradadas en seguridad respecto a Llama-2-7b-chat, por lo que cada checkpoint debe tratarse como sujeto experimental y no como modelo desplegable.
 
@@ -78,8 +78,8 @@ No se han publicado en la informacion disponible resultados de benchmarks de con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| svd-safety-l2_remove40_swapgap_b001 | 6.738.415.616 tensores safetensors; fraccion declarada 0,5998 del modelo denso | No indicado (base: 4.096 tokens) | Llama 2 Community License | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-2-7b-chat-hf | ~7.000 millones | 4.096 tokens | Llama 2 Community License | HuggingFace, ampliamente utilizado |
+| svd-safety-l2_remove40_swapgap_b001 | 6.738.415.616 tensores safetensors; fraccion declarada 0,5998 del modelo denso | No indicado (base: 4.096 tokens) | Llama 2 Community License | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-2-7b-chat-hf | ~7.000 millones | 4.096 tokens | Llama 2 Community License | Hugging Face, ampliamente utilizado |
 | Otras celdas de la rejilla del mismo estudio (otras reglas y presupuestos) | No disponible | No disponible | Llama 2 Community License | No disponible en la informacion proporcionada |
 
 No se dispone de datos publicados de modelos comparables de compresion SVD evaluados con las mismas metricas de seguridad, por lo que la comparacion cuantitativa de rendimiento queda como no disponible.
@@ -99,7 +99,7 @@ No se dispone de datos publicados de modelos comparables de compresion SVD evalu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgap_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgap_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper, repositorio de codigo o demo del estudio: no disponibles en la informacion proporcionada
 - Resultados de busqueda web relevantes: no disponibles (los resultados recuperados no guardan relacion con el modelo)

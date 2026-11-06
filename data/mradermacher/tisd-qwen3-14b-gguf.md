@@ -84,7 +84,7 @@ La comparacion con Qwen2.5-Coder-14B se ofrece como referencia de categoria; no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/TISD-Qwen3-14B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/TISD-Qwen3-14B-GGUF
 - Modelo base: https://huggingface.co/Taeckyung/TISD-Qwen3-14B
 - Pagina de overview del autor de las cuantizaciones: https://hf.tst.eu/model#TISD-Qwen3-14B-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -79,6 +79,6 @@ No hay información adicional sobre otros modelos comparables en el mismo domini
 
 ## Enlaces
 
-- Repositorio HuggingFace: [joelmontavon/fhir4px-embeddings-onnx](https://huggingface.co/joelmontavon/fhir4px-embeddings-onnx)
+- Repositorio Hugging Face: [joelmontavon/fhir4px-embeddings-onnx](https://huggingface.co/joelmontavon/fhir4px-embeddings-onnx)
 - Modelo base original: [NeuML/pubmedbert-base-embeddings](https://huggingface.co/NeuML/pubmedbert-base-embeddings)
 - Documentación de ONNX: [https://github.com/onnx/onnx](https://github.com/onnx/onnx)

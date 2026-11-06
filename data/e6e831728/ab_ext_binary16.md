@@ -104,10 +104,10 @@ No se han publicado en la informacion disponible datos de benchmarks de los mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AB-EXT Binary16 | 1,711B entrenables | 2048 | no disponible | HuggingFace (transformers, codigo personalizado) |
-| SmolLM2-1.7B | 1,7B | 8192 | Apache-2.0 | HuggingFace (origen del tokenizer de AB-EXT) |
-| Qwen2.5-1.5B | 1,54B | 32768 | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B | 1,24B | 128.000 | Llama 3.2 Community License | HuggingFace |
+| AB-EXT Binary16 | 1,711B entrenables | 2048 | no disponible | Hugging Face (transformers, codigo personalizado) |
+| SmolLM2-1.7B | 1,7B | 8192 | Apache-2.0 | Hugging Face (origen del tokenizer de AB-EXT) |
+| Qwen2.5-1.5B | 1,54B | 32768 | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B | 1,24B | 128.000 | Llama 3.2 Community License | Hugging Face |
 
 La comparacion de rendimiento frente a estas alternativas no es posible con la informacion proporcionada: solo se dispone de los resultados de AB-EXT Binary16. La diferencia estructural clave es que AB-EXT Binary16 carece de embeddings de entrada entrenables y su contexto de entrenamiento es de 2048 tokens, inferior al de las alternativas listadas.
 
@@ -128,6 +128,6 @@ La comparacion de rendimiento frente a estas alternativas no es posible con la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/E6E831728/ab_ext_binary16
+- Modelo en Hugging Face: https://huggingface.co/E6E831728/ab_ext_binary16
 - Paper asociado (referencia arXiv:2502.02737): https://arxiv.org/abs/2502.02737
 - Tokenizer de origen, SmolLM2-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B

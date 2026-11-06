@@ -126,7 +126,7 @@ Todas las alternativas localizadas son derivados del mismo modelo base, por lo q
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/SpaceTimee/Qwen3.8-27B-heretic-Pass1-LoRA
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base en Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B
 - Guía de ejecución de Qwen3.8-27B de Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Benchmarks de cuantización Unsloth Dynamic 2.0: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf

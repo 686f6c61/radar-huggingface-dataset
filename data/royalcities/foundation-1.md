@@ -6,7 +6,7 @@ Foundation-1 es una familia de modelos de generacion de audio condicionados por 
 
 El modelo es un fine-tuning de stabilityai/stable-audio-open-1.0 y se distribuye en varios checkpoints: Foundation-1 (generacion de loops estructurados con BPM y compases), Foundation-1.2 Samples (loops y one-shots, con mejor calidad en formato corto) y Foundation-1.2 Keybeds (one-shots y generacion de notas coherentes en afinacion para construir keybeds). El flujo de keybeds permite generar el material fuente de un sampler y exportarlo como instrumento tocable, devolviendo el control al productor.
 
-El repositorio ocupa 7,3 GB, declara 362 likes y 0 descargas, esta publicado en ingles y se distribuye bajo la licencia Stability AI Community (licencia "other" en HuggingFace). Su relevancia actual esta en que cubre un nicho poco atendido: generacion de samples y sintesis por prompt con vocabulario de produccion, en lugar de generacion musical de extremo a extremo.
+El repositorio ocupa 7,3 GB, declara 362 likes y 0 descargas, esta publicado en ingles y se distribuye bajo la licencia Stability AI Community (licencia "other" en Hugging Face). Su relevancia actual esta en que cubre un nicho poco atendido: generacion de samples y sintesis por prompt con vocabulario de produccion, en lugar de generacion musical de extremo a extremo.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El repositorio ocupa 7,3 GB, declara 362 likes y 0 descargas, esta publicado en 
 | Longitud de contexto | No aplica una ventana de contexto de tokens; hereda del modelo base la generacion de audio de hasta 47 segundos a 44,1 kHz estereo (dato del modelo base, no confirmado en esta model card) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Ingles (en) |
-| Licencia | Stability AI Community License (identificador "other" en HuggingFace) |
+| Licencia | Stability AI Community License (identificador "other" en Hugging Face) |
 | Formato de pesos | No disponible |
 | Modelo base | stabilityai/stable-audio-open-1.0 |
 | Tamano del repositorio | 7,3 GB |
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Duracion / contexto | Enfoque principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Foundation-1 | No disponible (repo de 7,3 GB) | No confirmado; hereda hasta 47 s del modelo base | Loops estructurados con control de BPM, compas y tonalidad | Stability AI Community | Pesos en HuggingFace |
-| Foundation-1.2 Samples | No disponible | No disponible | Loops y one-shots de formato corto | Stability AI Community | Pesos en HuggingFace |
-| Foundation-1.2 Keybeds | No disponible | No disponible | One-shots y keybeds coherentes en afinacion | Stability AI Community | Pesos en HuggingFace |
-| stabilityai/stable-audio-open-1.0 | No disponible en esta ficha | Hasta 47 s a 44,1 kHz estereo (documentacion publica del modelo) | Texto a audio generalista con condicionamiento de tiempo | Stability AI Community | Pesos abiertos en HuggingFace |
-| MusicGen (Meta AudioCraft) | 300 M, 1,5 B y 3,3 B segun variante (documentacion publica del proyecto) | No disponible en esta ficha | Texto a musica de extremo a extremo | CC-BY-NC 4.0 (uso comercial restringido) | Pesos abiertos en HuggingFace |
+| Foundation-1 | No disponible (repo de 7,3 GB) | No confirmado; hereda hasta 47 s del modelo base | Loops estructurados con control de BPM, compas y tonalidad | Stability AI Community | Pesos en Hugging Face |
+| Foundation-1.2 Samples | No disponible | No disponible | Loops y one-shots de formato corto | Stability AI Community | Pesos en Hugging Face |
+| Foundation-1.2 Keybeds | No disponible | No disponible | One-shots y keybeds coherentes en afinacion | Stability AI Community | Pesos en Hugging Face |
+| stabilityai/stable-audio-open-1.0 | No disponible en esta ficha | Hasta 47 s a 44,1 kHz estereo (documentacion publica del modelo) | Texto a audio generalista con condicionamiento de tiempo | Stability AI Community | Pesos abiertos en Hugging Face |
+| MusicGen (Meta AudioCraft) | 300 M, 1,5 B y 3,3 B segun variante (documentacion publica del proyecto) | No disponible en esta ficha | Texto a musica de extremo a extremo | CC-BY-NC 4.0 (uso comercial restringido) | Pesos abiertos en Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada. Los datos de los modelos alternativos proceden de su documentacion publica y deben verificarse antes de tomar decisiones de produccion.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoyalCities/Foundation-1
+- Modelo en Hugging Face: https://huggingface.co/RoyalCities/Foundation-1
 - Modelo base (Stable Audio Open 1.0): https://huggingface.co/stabilityai/stable-audio-open-1.0
 - Licencia Stability AI: https://stability.ai/license
 - Documento de estrategia de entrenamiento e inferencia de keybeds (dentro del repositorio): https://huggingface.co/RoyalCities/Foundation-1/blob/main/keybed_training_strategy.md

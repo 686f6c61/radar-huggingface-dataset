@@ -78,8 +78,8 @@ Además, en validación de desarrollo sobre documentos puros y con tres semillas
 
 | Modelo | Tipo | Precisión en corpus independiente | Latencia CPU batch 1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RotDet v2 256 | Clasificador C4Net, 256x256 | 90,85 % (149/164) | 29,4 ms | GPL-3.0-only (v2.0.1) | HuggingFace fcrescio/rotdet-v2 y GitHub fcrescio/rotdet |
-| RotDet v2 384 | Clasificador C4Net, 384x384 | 89,63 % (147/164) | 49,0 ms | GPL-3.0-only (v2.0.1) | HuggingFace fcrescio/rotdet-v2 y GitHub fcrescio/rotdet |
+| RotDet v2 256 | Clasificador C4Net, 256x256 | 90,85 % (149/164) | 29,4 ms | GPL-3.0-only (v2.0.1) | Hugging Face fcrescio/rotdet-v2 y GitHub fcrescio/rotdet |
+| RotDet v2 384 | Clasificador C4Net, 384x384 | 89,63 % (147/164) | 49,0 ms | GPL-3.0-only (v2.0.1) | Hugging Face fcrescio/rotdet-v2 y GitHub fcrescio/rotdet |
 | Paddle PP-LCNet_x1_0_doc_ori | Clasificador de orientación documental de PaddlePaddle | 93,90 % (154/164) | 74,2 ms | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | RotDet v1 | Versión anterior del mismo autor | no disponible | no disponible | CC-BY-4.0 (los pesos v1 conservan su licencia) | no disponible en la información proporcionada |
 
@@ -95,14 +95,14 @@ Datos comparativos adicionales sobre parámetros, contexto o licencias de las al
 - Los datos de entrenamiento proceden de Internet Archive sin licencia explícita identificada. Los documentos no se redistribuyen, las citas documentan procedencia y no permiso de reutilización, y el propio autor aclara que considerar el uso para entrenamiento como uso legítimo es su postura, no una determinación legal.
 - Licencia GPL-3.0-only para código y ambos checkpoints congelados v2 desde el release v2.0.1. Permite uso, modificación y uso comercial, pero impone condiciones de copyleft sobre redistribuciones cubiertas; no añade cláusula AGPL de red ni restricción no comercial. Las concesiones MIT anteriores sobre código ya publicado siguen vigentes y las etiquetas antiguas no se reescriben. Los pesos v1 mantienen CC-BY-4.0.
 - La licencia no se aplica a los documentos originales ni a las dependencias; se trata de un release de modelo, no de un conjunto de datos.
-- El repositorio de HuggingFace figura con 0 descargas y 0 valoraciones, además de un tamaño de repo reportado de 0.0 GB, por lo que la adopción pública verificable es mínima.
+- El repositorio de Hugging Face figura con 0 descargas y 0 valoraciones, además de un tamaño de repo reportado de 0.0 GB, por lo que la adopción pública verificable es mínima.
 - En flujos donde una rotación errónea tenga consecuencias relevantes, el autor recomienda revisión humana.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fcrescio/rotdet-v2
-- README en HuggingFace: https://huggingface.co/fcrescio/rotdet/blob/main/README.md
-- Árbol de ficheros en HuggingFace: https://huggingface.co/fcrescio/rotdet/tree/main
+- Modelo en Hugging Face: https://huggingface.co/fcrescio/rotdet-v2
+- README en Hugging Face: https://huggingface.co/fcrescio/rotdet/blob/main/README.md
+- Árbol de ficheros en Hugging Face: https://huggingface.co/fcrescio/rotdet/tree/main
 - Repositorio de código en GitHub: https://github.com/fcrescio/rotdet
 - Implementación de referencia (revisión concreta): https://github.com/fcrescio/rotdet/tree/11217d2
 - Protocolo de benchmark y advertencias: https://github.com/fcrescio/rotdet/blob/main/docs/BENCHMARK.md

@@ -90,6 +90,6 @@ No se dispone de información sobre modelos comparables de otros fabricantes (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Kimi-K3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qtum/Kimi-K3-GGUF
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Licencia del modelo base: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE

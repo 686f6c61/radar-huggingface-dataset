@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| k-cascade/zils-flash-knowline-9b-gen1 | 8,39B | no disponible | Apache 2.0 | HuggingFace (reempaquetado, sin lm_head) |
-| PelaAI/KnowLine-9B-Gen1 | no disponible (modelo base de 9B) | no disponible | Apache 2.0 | HuggingFace (modelo original) |
+| k-cascade/zils-flash-knowline-9b-gen1 | 8,39B | no disponible | Apache 2.0 | Hugging Face (reempaquetado, sin lm_head) |
+| PelaAI/KnowLine-9B-Gen1 | no disponible (modelo base de 9B) | no disponible | Apache 2.0 | Hugging Face (modelo original) |
 | Alternativas de ~9B de propósito general | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa rigurosa.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/k-cascade/zils-flash-knowline-9b-gen1
+- Repositorio Hugging Face: https://huggingface.co/k-cascade/zils-flash-knowline-9b-gen1
 - Modelo base: https://huggingface.co/PelaAI/KnowLine-9B-Gen1
 - Revisión del modelo base referenciada: `4083a79ae652000b3d0c67698d86b0b0de514d6c`
 - Subred Zils (Bittensor SN127): no disponible en la información proporcionada.

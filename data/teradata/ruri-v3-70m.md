@@ -84,7 +84,7 @@ No se dispone de una comparativa directa de rendimiento con otros modelos de emb
 
 ## Enlaces
 
-- Repositorio HuggingFace de Teradata: https://huggingface.co/Teradata/ruri-v3-70m
+- Repositorio Hugging Face de Teradata: https://huggingface.co/Teradata/ruri-v3-70m
 - Modelo original cl-nagoya/ruri-v3-70m: https://huggingface.co/cl-nagoya/ruri-v3-70m
 - Entrada en el leaderboard MTEB: https://mteb-leaderboard.hf.space/models/cl-nagoya/ruri-v3-70m
 - Variante GGUF de la comunidad (keisuke-miyako): https://huggingface.co/keisuke-miyako/ruri-v3-70m-gguf-q8_0

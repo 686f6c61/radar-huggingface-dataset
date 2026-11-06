@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/OvisOCR3-MLX-4bit-mixed46` es un repositorio de pesos publicado en HuggingFace por el usuario `arlenecc` bajo licencia MIT. El identificador del repositorio sugiere que se trata de una conversión a formato MLX con cuantización de 4 bits (con esquema de mezcla de precisión, indicado por el sufijo `mixed46`) de un modelo de la familia Ovis orientado a OCR, aunque esta interpretación se deduce únicamente del nombre y no está confirmada por ninguna documentación del autor.
+`arlenecc/OvisOCR3-MLX-4bit-mixed46` es un repositorio de pesos publicado en Hugging Face por el usuario `arlenecc` bajo licencia MIT. El identificador del repositorio sugiere que se trata de una conversión a formato MLX con cuantización de 4 bits (con esquema de mezcla de precisión, indicado por el sufijo `mixed46`) de un modelo de la familia Ovis orientado a OCR, aunque esta interpretación se deduce únicamente del nombre y no está confirmada por ninguna documentación del autor.
 
 La model card publicada no contiene más información que la declaración de licencia MIT: no incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio no registra descargas ni likes, no tiene pipeline declarado y no expone etiquetas de idioma. La fecha de creación registrada es 2026-10-28.
 
@@ -69,7 +69,7 @@ No se dispone de datos verificables de este checkpoint (parámetros, contexto, r
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arlenecc/OvisOCR3-MLX-4bit-mixed46 | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| arlenecc/OvisOCR3-MLX-4bit-mixed46 | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Modelo Ovis base (sin cuantizar) | no disponible | no disponible | no disponible | no disponible | no verificado en esta búsqueda |
 | Otras conversiones MLX 4-bit de modelos OCR | no disponible | no disponible | no disponible | no disponible | no verificado en esta búsqueda |
 
@@ -86,5 +86,5 @@ No se dispone de datos verificables de este checkpoint (parámetros, contexto, r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arlenecc/OvisOCR3-MLX-4bit-mixed46
+- Repositorio en Hugging Face: https://huggingface.co/arlenecc/OvisOCR3-MLX-4bit-mixed46
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.

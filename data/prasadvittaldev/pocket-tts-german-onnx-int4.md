@@ -81,7 +81,7 @@ La ventaja principal de este modelo frente a alternativas como Piper es su empaq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prasadvittaldev/pocket-tts-german-onnx-int4
+- Repositorio Hugging Face: https://huggingface.co/prasadvittaldev/pocket-tts-german-onnx-int4
 - Modelo base (Kyutai): https://huggingface.co/kyutai/pocket-tts
 - Demo en navegador: https://prasadtts.vercel.app
 - Proyecto de exportacion ONNX (MIT): https://github.com/KevinAHM/pocket-tts-onnx-export

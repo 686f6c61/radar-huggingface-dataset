@@ -87,11 +87,11 @@ Estos resultados son autoreportados, sin metodología externa verificable, y deb
 - Longitud de contexto no documentada: no se especifica cuánto texto puede procesar por pasada.
 - Sin soporte documentado de tool calling, agentes ni capacidades multimodales.
 - Soporte de runtime limitado: al ser un modelo de difusión, requiere un llama.cpp con soporte para la arquitectura iLLaDA; no es un GGUF estándar de Llama y puede no funcionar en herramientas genéricas.
-- Uso comercial: la licencia Apache-2.0 lo permite, pero el repo marca `inference: false` en HuggingFace (sin inference API alojada).
+- Uso comercial: la licencia Apache-2.0 lo permite, pero el repo marca `inference: false` en Hugging Face (sin inference API alojada).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mhmadhassnz/cosmos-humanizer-gguf
+- Modelo en Hugging Face: https://huggingface.co/Mhmadhassnz/cosmos-humanizer-gguf
 - Modelo base iLLaDA-8B: https://huggingface.co/GSAI-ML/iLLaDA-8B-Base
 - GitHub del autor: https://github.com/Moha2005269
 - Perfil del autor en X: https://x.com/Mhmadhassnz

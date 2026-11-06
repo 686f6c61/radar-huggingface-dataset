@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Ventana / contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| raspbfox/parakeet-ultra-litert-mt6897-aot | no disponible | 10 s de audio por ventana | TFLite (LiteRT), encoder float32 | cc-by-4.0 | HuggingFace, 0 descargas, 0 valoraciones |
-| raspbfox/parakeet-ultra-litert-dynamic-int8 (decoder complementario) | no disponible | no disponible | TFLite int8 dinámico | no disponible en la información proporcionada | HuggingFace (repositorio referenciado por el autor) |
-| moondream/parakeet-ultra (modelo base) | no disponible | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
+| raspbfox/parakeet-ultra-litert-mt6897-aot | no disponible | 10 s de audio por ventana | TFLite (LiteRT), encoder float32 | cc-by-4.0 | Hugging Face, 0 descargas, 0 valoraciones |
+| raspbfox/parakeet-ultra-litert-dynamic-int8 (decoder complementario) | no disponible | no disponible | TFLite int8 dinámico | no disponible en la información proporcionada | Hugging Face (repositorio referenciado por el autor) |
+| moondream/parakeet-ultra (modelo base) | no disponible | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de información suficiente para comparar este artefacto con modelos ASR de terceros: no hay métricas de error, ni parámetros declarados, ni datos de latencia. La comparación con alternativas como Whisper, Parakeet de NVIDIA u otros modelos ASR queda fuera del alcance de la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de información suficiente para comparar este artefacto con modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raspbfox/parakeet-ultra-litert-mt6897-aot
+- Modelo en Hugging Face: https://huggingface.co/raspbfox/parakeet-ultra-litert-mt6897-aot
 - Modelo base: https://huggingface.co/moondream/parakeet-ultra
 - Repositorio del decoder int8 dinámico para CPU: https://huggingface.co/raspbfox/parakeet-ultra-litert-dynamic-int8
 - Búsqueda web: no se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo; los resultados devueltos correspondían a páginas de inicio de sesión de redes sociales sin relación con el artefacto.

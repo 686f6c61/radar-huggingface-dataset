@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jasonsato/classification-tutorial es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch de una arquitectura BEiT orientada a clasificacion. El autor lo describe explicitamente como un artefacto de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un modelo preentrenado listo para produccion. El checkpoint distribuido es una inicializacion valida, no un modelo entrenado ni evaluado.
+jasonsato/classification-tutorial es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch de una arquitectura BEiT orientada a clasificacion. El autor lo describe explicitamente como un artefacto de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un modelo preentrenado listo para produccion. El checkpoint distribuido es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 El dato mas relevante es su tamano real: 24.832 parametros (0,0248 millones) segun el fichero safetensors, una cifra incompatible con la etiqueta "xlarge" que el propio README asigna a la configuracion. Se trata, por tanto, de un esqueleto de arquitectura con pesos sin entrenar, pensado para validar que el codigo compila, carga y ejecuta un paso de entrenamiento o inferencia.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 
 | Modelo | Parametros | Tarea | Pesos entrenados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jasonsato/classification-tutorial | 24.832 (0,0248 M) | Clasificacion (BEiT) | No (solo inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| jasonsato/classification-tutorial | 24.832 (0,0248 M) | Clasificacion (BEiT) | No (solo inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | BEiT-base (referencia de la familia) | aprox. 86 M | Clasificacion de imagenes | Si, preentrenado y ajustado | consultar repositorio oficial | pesos publicos |
 | BEiT-large (referencia de la familia) | aprox. 304 M | Clasificacion de imagenes | Si, preentrenado y ajustado | consultar repositorio oficial | pesos publicos |
 | Vision Transformer base (ViT-B/16) | aprox. 86 M | Clasificacion de imagenes | Si, preentrenado | consultar repositorio oficial | pesos publicos |
@@ -92,7 +92,7 @@ Nota: la comparacion es estructural, no de rendimiento. Este repositorio no publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jasonsato/classification-tutorial
+- Modelo en Hugging Face: https://huggingface.co/jasonsato/classification-tutorial
 - Ficheros del repositorio: pipeline.py, README.md, config.json, training_args.json, model.safetensors (disponibles en la ruta anterior)
 - Paper de BEiT (referencia de la arquitectura, no enlazado por el autor): no disponible en la informacion proporcionada
 - Repositorios, blogs, demos o papers adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (el unico resultado obtenido era un sitio de juego de cartas sin relacion con el proyecto).

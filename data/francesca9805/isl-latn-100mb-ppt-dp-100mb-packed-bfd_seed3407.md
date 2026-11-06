@@ -4,7 +4,7 @@
 
 `francesca9805/isl-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (SFT) del modelo `goldfish-models/isl_latn_100mb`, publicado por el usuario francesca9805. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (unos 125 M), pesos en formato safetensors y pipeline declarado de `text-generation`. El entrenamiento se realizó con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121, y el autor enlaza la ejecución de Weights & Biases correspondiente.
 
-El modelo pertenece a la familia de modelos monolingües Goldfish, orientada a lenguas con pocos recursos; el identificador del modelo base (`isl_latn_100mb`) apunta a islandés (código ISO 639-3 `isl`) en alfabeto latino (`latn`) con un corpus de entrenamiento de aproximadamente 100 MB. No obstante, ni la model card ni los metadatos de HuggingFace confirman idioma, licencia ni longitud de contexto.
+El modelo pertenece a la familia de modelos monolingües Goldfish, orientada a lenguas con pocos recursos; el identificador del modelo base (`isl_latn_100mb`) apunta a islandés (código ISO 639-3 `isl`) en alfabeto latino (`latn`) con un corpus de entrenamiento de aproximadamente 100 MB. No obstante, ni la model card ni los metadatos de Hugging Face confirman idioma, licencia ni longitud de contexto.
 
 Su relevancia actual es limitada y de carácter experimental: acumula 0 descargas y 0 "likes", la documentación es mínima y no se publican benchmarks. El interés principal reside en la reproducibilidad del pipeline (versiones exactas de TRL, Transformers, PyTorch y Datasets, además de la semilla 3407 en el nombre) y en su utilidad como baseline ligero para investigación en lenguas de bajos recursos o en experimentos de tokenización.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y de carácter experimental: acumula 0 descarga
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parámetros totales | 124.770.816 (≈125 M) |
 | Parámetros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible |
@@ -30,7 +30,7 @@ Su relevancia actual es limitada y de carácter experimental: acumula 0 descarga
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia GPT-2, con 124.770.816 parámetros, lo que coincide con la configuración "small" de GPT-2 (12 capas, 12 cabezas de atención, dimensión de embedding 768, vocabulario de 50.257 tokens). La etiqueta `gpt2` de HuggingFace y el tamaño de los pesos respaldan esta correspondencia, aunque la model card no detalla la configuración de capas ni la longitud de contexto. El modelo parte de `goldfish-models/isl_latn_100mb`, un checkpoint monolingüe de la colección Goldfish entrenado sobre un corpus de aproximadamente 100 MB (dato inferido del nombre, no documentado en la ficha).
+La arquitectura es un transformer decoder-only de la familia GPT-2, con 124.770.816 parámetros, lo que coincide con la configuración "small" de GPT-2 (12 capas, 12 cabezas de atención, dimensión de embedding 768, vocabulario de 50.257 tokens). La etiqueta `gpt2` de Hugging Face y el tamaño de los pesos respaldan esta correspondencia, aunque la model card no detalla la configuración de capas ni la longitud de contexto. El modelo parte de `goldfish-models/isl_latn_100mb`, un checkpoint monolingüe de la colección Goldfish entrenado sobre un corpus de aproximadamente 100 MB (dato inferido del nombre, no documentado en la ficha).
 
 El ajuste se realizó mediante SFT con TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1. El autor enlaza la ejecución de Weights & Biases del proyecto "new-tokenizers". El nombre del checkpoint sugiere variantes experimentales con datasets empaquetados ("packed"), un corpus de 100 MB ("100mb"), una configuración "ppt"/"bfd" y la semilla 3407, pero la model card no explica ninguno de estos elementos. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO posteriores al SFT. Tampoco se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, etc.).
 
@@ -100,7 +100,7 @@ Los datos de GPT-2 small y DistilGPT-2 proceden de sus fichas públicas y no de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/isl_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/i7uovhmn

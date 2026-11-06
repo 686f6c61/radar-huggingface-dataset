@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HuBERT (Hidden-Unit BERT) es un modelo de representación de habla auto-supervisado desarrollado originalmente por Facebook AI Research. El repositorio `sun13972336921/hubert-base-ls960` es una copia del modelo original `facebook/hubert-base-ls960`, cargada por un usuario de HuggingFace. El modelo resuelve el problema de aprender representaciones de audio de alta calidad sin necesidad de datos etiquetados, mediante un proceso de clustering offline que genera unidades discretas y una pérdida de predicción enmascarada similar a la de BERT. Es relevante porque sirve como base para tareas de procesamiento de habla, especialmente reconocimiento automático de voz (ASR), y ha demostrado un rendimiento comparable o superior a wav2vec 2.0 en los benchmarks de LibriSpeech. La arquitectura es un encoder Transformer, el modelo es de tamaño base y está preentrenado en audio de 16kHz. El repositorio tiene un tamaño de 1.1 GB. No se dispone de información sobre la longitud de contexto ni sobre el número exacto de parámetros en la información proporcionada.
+HuBERT (Hidden-Unit BERT) es un modelo de representación de habla auto-supervisado desarrollado originalmente por Facebook AI Research. El repositorio `sun13972336921/hubert-base-ls960` es una copia del modelo original `facebook/hubert-base-ls960`, cargada por un usuario de Hugging Face. El modelo resuelve el problema de aprender representaciones de audio de alta calidad sin necesidad de datos etiquetados, mediante un proceso de clustering offline que genera unidades discretas y una pérdida de predicción enmascarada similar a la de BERT. Es relevante porque sirve como base para tareas de procesamiento de habla, especialmente reconocimiento automático de voz (ASR), y ha demostrado un rendimiento comparable o superior a wav2vec 2.0 en los benchmarks de LibriSpeech. La arquitectura es un encoder Transformer, el modelo es de tamaño base y está preentrenado en audio de 16kHz. El repositorio tiene un tamaño de 1.1 GB. No se dispone de información sobre la longitud de contexto ni sobre el número exacto de parámetros en la información proporcionada.
 
 ## Especificaciones técnicas
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - No se dispone de información sobre si cabe en GPU de consumo, aunque el tamaño del repositorio (1.1 GB) sugiere que es un modelo ligero.
-- Opciones de despliegue: el modelo se puede cargar con la librería `transformers` de HuggingFace en PyTorch o TensorFlow. No se mencionan integraciones específicas con vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: el modelo se puede cargar con la librería `transformers` de Hugging Face en PyTorch o TensorFlow. No se mencionan integraciones específicas con vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo de lenguaje.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,8 +66,8 @@ La información proporcionada no incluye datos de comparativa con otros modelos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sun13972336921/hubert-base-ls960
+- Repositorio en Hugging Face: https://huggingface.co/sun13972336921/hubert-base-ls960
 - Modelo original de Facebook: https://huggingface.co/facebook/hubert-base-ls960
 - Paper de HuBERT: https://arxiv.org/abs/2106.07447
-- Blog de HuggingFace sobre fine-tuning de wav2vec2: https://huggingface.co/blog/fine-tune-wav2vec2-english
+- Blog de Hugging Face sobre fine-tuning de wav2vec2: https://huggingface.co/blog/fine-tune-wav2vec2-english
 - Repositorio de Fairseq con el código original: https://github.com/pytorch/fairseq/tree/master/examples/hubert

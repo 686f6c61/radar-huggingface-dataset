@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2015-01 SFT | 2,80 B | 8.192 | Agente de busqueda con cutoff temporal | other | HuggingFace (0 descargas) |
-| Chrononauts 3B 2015-01 init | no disponible | no disponible | Modelo inicial del mismo cutoff | other | HuggingFace (repo hermano) |
-| Chrononauts 3B 2015-01 agent | no disponible | no disponible | Etapa posterior de agente | other | HuggingFace (repo hermano) |
+| Chrononauts 3B 2015-01 SFT | 2,80 B | 8.192 | Agente de busqueda con cutoff temporal | other | Hugging Face (0 descargas) |
+| Chrononauts 3B 2015-01 init | no disponible | no disponible | Modelo inicial del mismo cutoff | other | Hugging Face (repo hermano) |
+| Chrononauts 3B 2015-01 agent | no disponible | no disponible | Etapa posterior de agente | other | Hugging Face (repo hermano) |
 | Alternativas generalistas de ~3B | no disponible | no disponible | LLM generalista sin cutoff | variable | no disponible |
 
 No se dispone de datos de rendimiento para comparar con modelos de la misma categoria fuera de la propia suite Chrononauts.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento para comparar con modelos de la misma cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-sft
+- Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-sft
 - Repo inicial: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-init
 - Repo agente: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-agent
 - Embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

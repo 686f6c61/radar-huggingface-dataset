@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wbzialwza/bibi` es un artefacto publicado en HuggingFace por el usuario `wbzialwza` bajo licencia Apache 2.0. La model card es extremadamente escasa: se reduce a la etiqueta `license: apache-2.0` y a la palabra "piper", que probablemente hace referencia a Piper, el sistema de síntesis de voz (TTS) de código abierto basado en VITS. El repositorio tiene un tamaño de 0,1 GB y contiene pesos en formato ONNX, lo que es coherente con un modelo de voz optimizado para inferencia en CPU o en dispositivos de borde.
+El modelo `wbzialwza/bibi` es un artefacto publicado en Hugging Face por el usuario `wbzialwza` bajo licencia Apache 2.0. La model card es extremadamente escasa: se reduce a la etiqueta `license: apache-2.0` y a la palabra "piper", que probablemente hace referencia a Piper, el sistema de síntesis de voz (TTS) de código abierto basado en VITS. El repositorio tiene un tamaño de 0,1 GB y contiene pesos en formato ONNX, lo que es coherente con un modelo de voz optimizado para inferencia en CPU o en dispositivos de borde.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni datos de entrenamiento. La ausencia de pipeline declarado y de una model card descriptiva impide confirmar si se trata de un modelo de texto, un modelo de voz o un componente auxiliar. Dado el tamaño del repositorio (aproximadamente 100 MB), es plausible que se trate de un modelo pequeño, compatible con despliegue ligero, pero esta afirmación no puede verificarse con los datos disponibles.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wbzialwza/bibi
+- Repositorio en Hugging Face: https://huggingface.co/wbzialwza/bibi
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rimoKR/cifar10-mlp-p0 | MLP [3072, 256, 10] | 789.258 | Clasificación CIFAR-10 | MIT | HuggingFace |
+| rimoKR/cifar10-mlp-p0 | MLP [3072, 256, 10] | 789.258 | Clasificación CIFAR-10 | MIT | Hugging Face |
 | LeNet-5 (referencia clásica) | CNN (2 conv + 2 FC) | ~62.000 | Clasificación CIFAR-10/MNIST | no aplicable (implementaciones variadas) | Implementaciones públicas |
 | ResNet-18 (CIFAR-10) | CNN residual | ~11,2 millones | Clasificación CIFAR-10 | MIT (implementación torchvision) | torchvision |
 
@@ -79,6 +79,6 @@ Un MLP sin capas convolucionales obtiene en CIFAR-10 una precisión típicamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rimoKR/cifar10-mlp-p0
+- Modelo en Hugging Face: https://huggingface.co/rimoKR/cifar10-mlp-p0
 - Dataset CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado enlaces adicionales (paper, blog, repositorio de código o demo) en la información disponible.

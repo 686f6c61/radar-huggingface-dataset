@@ -114,7 +114,7 @@ Desglose por duración del clip:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samyak005/whisper-large-v3-hindi
+- Modelo en Hugging Face: https://huggingface.co/Samyak005/whisper-large-v3-hindi
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Demo comparativa (base frente a ajustado): https://huggingface.co/spaces/Samyak005/whisper-hindi-compare
 - Dataset IndicVoices-ST: https://huggingface.co/datasets/ai4bharat/IndicVoices-ST

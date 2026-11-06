@@ -6,7 +6,7 @@ TinyStories GPT (27.6M) es un modelo de lenguaje de tipo GPT (decoder-only trans
 
 Con aproximadamente 27,6 millones de parámetros, una ventana de contexto de 512 tokens y un vocabulario de 4.096 tokens (tokenizer BPE propio), este modelo no pretende competir con sistemas de gran escala, sino servir como ejemplo didáctico de cómo se construye y entrena un transformer desde cero, incluyendo arquitectura, tokenizador, bucle de entrenamiento y fine-tuning. Su relevancia radica en ser un caso de estudio accesible para desarrolladores que quieren comprender los fundamentos de los modelos generativos sin la complejidad de los grandes despliegues.
 
-El modelo se distribuye bajo licencia MIT, y aunque no es directamente cargable con las API estándar de HuggingFace (AutoModel/AutoTokenizer), el repositorio incluye los archivos de pesos en formato safetensors y el tokenizador en JSON, junto con el código fuente necesario para su uso.
+El modelo se distribuye bajo licencia MIT, y aunque no es directamente cargable con las API estándar de Hugging Face (AutoModel/AutoTokenizer), el repositorio incluye los archivos de pesos en formato safetensors y el tokenizador en JSON, junto con el código fuente necesario para su uso.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El modelo se distribuye bajo licencia MIT, y aunque no es directamente cargable 
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura clásica de un transformer decoder-only, con 8 capas de decodificación, dimensión de embedding de 512, 8 cabezas de atención y un vocabulario de 4.096 tokens. El tokenizador es un BPE (Byte Pair Encoding) entrenado específicamente sobre el corpus TinyStories, no un tokenizador estándar de HuggingFace, lo que implica que el modelo no puede cargarse con las utilidades convencionales sin adaptación.
+El modelo sigue la arquitectura clásica de un transformer decoder-only, con 8 capas de decodificación, dimensión de embedding de 512, 8 cabezas de atención y un vocabulario de 4.096 tokens. El tokenizador es un BPE (Byte Pair Encoding) entrenado específicamente sobre el corpus TinyStories, no un tokenizador estándar de Hugging Face, lo que implica que el modelo no puede cargarse con las utilidades convencionales sin adaptación.
 
 El entrenamiento se realizó en dos fases: primero, un preentrenamiento con el objetivo de predicción de siguiente token sobre el dataset TinyStories (historias cortas para niños). Después, un fine-tuning supervisado sobre TinyStories-Instruct, donde el modelo aprendió a generar historias a partir de prompts estructurados que incluyen campos como "Features", "Words" y "Summary". Durante el fine-tuning, la pérdida se enmascaró sobre los tokens del prompt, de modo que solo los tokens de la historia generada contribuían al cálculo del gradiente. No se menciona el uso de técnicas como RLHF o DPO.
 
@@ -66,13 +66,13 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 - No es adecuado para responder preguntas factuales, realizar razonamiento complejo ni manejar tareas fuera del dominio de cuentos infantiles.
 - La ventana de contexto está limitada a 512 tokens, lo que impide generar historias largas o manejar diálogos extensos.
 - Solo soporta inglés; no hay capacidades multilingües.
-- El tokenizador es personalizado y no está integrado en el ecosistema estándar de HuggingFace, lo que dificulta su uso en pipelines existentes.
+- El tokenizador es personalizado y no está integrado en el ecosistema estándar de Hugging Face, lo que dificulta su uso en pipelines existentes.
 - No se han publicado evaluaciones de sesgos o alucinaciones; dado el dominio acotado, el riesgo de alucinación es bajo pero presente en cuanto a elementos fuera del corpus.
 - La licencia MIT permite uso comercial, pero el modelo no está optimizado para producción y carece de soporte oficial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshit147/tinystories-gpt-27m
+- Modelo en Hugging Face: https://huggingface.co/harshit147/tinystories-gpt-27m
 - Repositorio GitHub (mencionado en la model card): https://github.com/HarshitP147/tinystories-gpt-27m
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Dataset TinyStoriesInstruct: https://huggingface.co/datasets/roneneldan/TinyStoriesInstruct

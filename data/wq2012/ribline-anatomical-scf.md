@@ -86,10 +86,10 @@ La comparacion relevante es interna a la coleccion ribline, ya que no se han ide
 
 | Modelo | Parametros / complejidad | Contexto o alcance | Rendimiento (12 escaneos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wq2012/ribline-anatomical-scf` | 150 arboles, profundidad 24, 286 features | Volumen CT completo con anclaje anatomico `(u, v, w)`; inferencia solo CPU | LCD 2.88 +/- 1.32 mm; 95.1 % de exactitud | MIT | HuggingFace, repo de 0.2 GB, 0 descargas |
-| `wq2012/ribline-3d-ct-centerline` | SCF + 3D U-Net + Stage 3 | Suite completa con componente neuronal 3D | LCD 2.05 +/- 0.48 mm; 97.2 % de exactitud | no disponible en la informacion proporcionada para ese repo | HuggingFace (misma coleccion) |
-| `wq2012/ribline-3d-unet` | 3D U-Net ligera + Stage 3 | Segmentacion y centerlines con red neuronal 3D | LCD 3.40 +/- 1.99 mm; 92.0 % de exactitud | no disponible en la informacion proporcionada para ese repo | HuggingFace (misma coleccion) |
-| `wq2012/ribline-scf-pass2-autocontext` | SCF de 2 pasadas con auto-contexto | Baseline no neuronal sin anclaje anatomico explicito | LCD 9.36 +/- 10.57 mm; 71.0 % de exactitud | no disponible en la informacion proporcionada para ese repo | HuggingFace (misma coleccion) |
+| `wq2012/ribline-anatomical-scf` | 150 arboles, profundidad 24, 286 features | Volumen CT completo con anclaje anatomico `(u, v, w)`; inferencia solo CPU | LCD 2.88 +/- 1.32 mm; 95.1 % de exactitud | MIT | Hugging Face, repo de 0.2 GB, 0 descargas |
+| `wq2012/ribline-3d-ct-centerline` | SCF + 3D U-Net + Stage 3 | Suite completa con componente neuronal 3D | LCD 2.05 +/- 0.48 mm; 97.2 % de exactitud | no disponible en la informacion proporcionada para ese repo | Hugging Face (misma coleccion) |
+| `wq2012/ribline-3d-unet` | 3D U-Net ligera + Stage 3 | Segmentacion y centerlines con red neuronal 3D | LCD 3.40 +/- 1.99 mm; 92.0 % de exactitud | no disponible en la informacion proporcionada para ese repo | Hugging Face (misma coleccion) |
+| `wq2012/ribline-scf-pass2-autocontext` | SCF de 2 pasadas con auto-contexto | Baseline no neuronal sin anclaje anatomico explicito | LCD 9.36 +/- 10.57 mm; 71.0 % de exactitud | no disponible en la informacion proporcionada para ese repo | Hugging Face (misma coleccion) |
 | Modelos externos de etiquetado de costillas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,8 +109,8 @@ La comparacion relevante es interna a la coleccion ribline, ya que no se han ide
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wq2012/ribline-anatomical-scf
-- Coleccion ribline en HuggingFace: https://huggingface.co/collections/wq2012/ribline
+- Repositorio Hugging Face: https://huggingface.co/wq2012/ribline-anatomical-scf
+- Coleccion ribline en Hugging Face: https://huggingface.co/collections/wq2012/ribline
 - Repositorio GitHub de ribline: https://github.com/wq2012/ribline
 - Perfil de GitHub del autor: https://github.com/wq2012
 - Checkpoint hibrido completo: https://huggingface.co/wq2012/ribline-3d-ct-centerline

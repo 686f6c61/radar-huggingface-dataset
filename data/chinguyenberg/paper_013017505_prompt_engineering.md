@@ -62,7 +62,7 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chinguyenberg/paper_013017505_prompt_engineering
+- Repositorio en Hugging Face: https://huggingface.co/chinguyenberg/paper_013017505_prompt_engineering
 - Prompt Engineering Guide (referencia general): https://www.promptingguide.ai/
 - Papers de prompt engineering (guía): https://www.promptingguide.ai/papers
 - Repositorio dair-ai/Prompt-Engineering-Guide: https://github.com/dair-ai/Prompt-Engineering-Guide

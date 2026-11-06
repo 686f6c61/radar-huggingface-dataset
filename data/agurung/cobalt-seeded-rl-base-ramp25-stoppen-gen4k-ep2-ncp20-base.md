@@ -77,7 +77,7 @@ La comparativa se limita a otros checkpoints del mismo autor sobre la misma base
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-base
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-base
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint SFT relacionado: https://huggingface.co/agurung/cobalt-ft-qwen3-4b-sft-iid-12-lora-r128-a32-lr2p5e-4-const-lr2p5e-4-qps8-gpuauto-ep2
 - Checkpoint DPO relacionado: https://huggingface.co/agurung/cobalt-ft-qwen3-4b-dpo-mixed-12-mc-correct-only-v1-lora-r128-a32-lr5e-6-const-lr5e-6-gb64-ep2-be

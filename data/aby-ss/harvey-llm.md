@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Harvey-llm es un modelo de lenguaje desarrollado por Aby-ss, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tuning del modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit, que a su vez es una version cuantizada a 4 bits del Qwen2.5-7B-Instruct original. El entrenamiento se realizo con la libreria Unsloth, que permite un ajuste fino aproximadamente dos veces mas rapido que los metodos convencionales, y con TRL (Transformers Reinforcement Learning) para el pipeline de entrenamiento.
+Harvey-llm es un modelo de lenguaje desarrollado por Aby-ss, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tuning del modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit, que a su vez es una version cuantizada a 4 bits del Qwen2.5-7B-Instruct original. El entrenamiento se realizo con la libreria Unsloth, que permite un ajuste fino aproximadamente dos veces mas rapido que los metodos convencionales, y con TRL (Transformers Reinforcement Learning) para el pipeline de entrenamiento.
 
 El modelo esta orientado exclusivamente al idioma ingles y su repositorio tiene un tamano de 0.2 GB, lo que sugiere que se trata de un adaptador LoRA o de pesos parciales, no de un modelo completo de 7B. La informacion publica es muy escasa: no se especifican los datos de entrenamiento, el proposito del fine-tuning ni las tareas para las que fue optimizado. A pesar del nombre, no tiene relacion directa con la plataforma comercial Harvey AI para servicios legales, que utiliza modelos de Anthropic, OpenAI y Google.
 
@@ -79,7 +79,7 @@ La comparativa se basa en el modelo base, ya que el fine-tuning no aporta datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aby-ss/harvey-llm
+- Repositorio Hugging Face: https://huggingface.co/Aby-ss/harvey-llm
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - Harvey AI (no relacionado): https://www.harvey.ai/

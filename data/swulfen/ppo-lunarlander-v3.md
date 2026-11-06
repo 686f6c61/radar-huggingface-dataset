@@ -2,11 +2,11 @@
 
 ## Resumen
 
-PPO-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario swulfen en HuggingFace Hub, utilizando la libreria stable-baselines3 como framework de entrenamiento y serializacion. No se trata de un modelo de lenguaje ni de un transformer generativo: es una politica neuronal compacta que controla el modulo de descenso de una nave en un simulador fisico 2D discreto.
+PPO-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario swulfen en Hugging Face Hub, utilizando la libreria stable-baselines3 como framework de entrenamiento y serializacion. No se trata de un modelo de lenguaje ni de un transformer generativo: es una politica neuronal compacta que controla el modulo de descenso de una nave en un simulador fisico 2D discreto.
 
 El modelo resuelve la tarea de aterrizaje lunar simulada, en la que el agente debe aprender a encender los motores laterales y principal para posar la nave suavemente sobre una plataforma, penalizando el consumo de combustible y las colisiones. El autor declara una recompensa media de 242,37 +/- 35,35, un valor que supera el umbral de resolucion de 200 puntos habitualmente considerado en este entorno.
 
-Es relevante como ejemplo reproducible del flujo de trabajo de stable-baselines3 con integracion en HuggingFace Hub mediante huggingface_sb3, y como artefacto de referencia para el curso Deep RL de HuggingFace. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, con un tamano de 0,0 GB, lo que indica que los pesos son de pocos kilobytes.
+Es relevante como ejemplo reproducible del flujo de trabajo de stable-baselines3 con integracion en Hugging Face Hub mediante huggingface_sb3, y como artefacto de referencia para el curso Deep RL de Hugging Face. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, con un tamano de 0,0 GB, lo que indica que los pesos son de pocos kilobytes.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El entrenamiento se realizo sobre LunarLander-v3 de Gymnasium, un entorno con es
 
 - Control de politica en el entorno LunarLander-v3 con acciones discretas y observaciones continuas.
 - Aprendizaje por refuerzo profundo mediante PPO con stable-baselines3.
-- Carga directa desde HuggingFace Hub mediante la utilidad `load_from_hub` del paquete `huggingface_sb3`.
+- Carga directa desde Hugging Face Hub mediante la utilidad `load_from_hub` del paquete `huggingface_sb3`.
 - Evaluacion reproducible con el wrapper de Gymnasium y el metodo `predict` de stable-baselines3.
 - No soporta tool calling, function calling ni razonamiento multi-paso en el sentido de los modelos de lenguaje.
 - No tiene capacidades multilingues ni procesamiento de texto, vision o audio.
@@ -39,7 +39,7 @@ El entrenamiento se realizo sobre LunarLander-v3 de Gymnasium, un entorno con es
 ## Casos de uso
 
 - Docencia de aprendizaje por refuerzo: sirve como ejemplo funcional de un agente PPO resuelto para ilustrar el ciclo entrenamiento-evaluacion-despliegue en cursos de RL.
-- Verificacion de certificacion del Deep RL Course de HuggingFace: el modelo cumple el criterio de recompensa media >200 y esta etiquetado como v2 para pasar el checker.
+- Verificacion de certificacion del Deep RL Course de Hugging Face: el modelo cumple el criterio de recompensa media >200 y esta etiquetado como v2 para pasar el checker.
 - Baseline de comparacion: util para contrastar nuevas variantes de PPO, cambios de hiperparametros o algoritmos alternativos (A2C, DQN, SAC adaptado) contra una politica ya resuelta.
 - Pruebas de integracion de `huggingface_sb3`: permite validar el pipeline de descarga y carga de agentes serializados desde el Hub en entornos de CI.
 - Generacion de datos de demostracion: la politica puede ejecutarse para recolectar trayectorias etiquetadas y alimentar tecnicas de imitation learning o reward modeling.
@@ -66,9 +66,9 @@ El autor declara el resultado en el model-index con la etiqueta LunarLander-v2 p
 
 | Modelo | Algoritmo | Entorno | Recompensa media declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swulfen/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 242,37 +/- 35,35 | no disponible | HuggingFace Hub |
-| Alternativas PPO en LunarLander | PPO | LunarLander-v2/v3 | no disponible | variable | HuggingFace Hub (multiples autores) |
-| Alternativas DQN en LunarLander | DQN | LunarLander-v2/v3 | no disponible | variable | HuggingFace Hub (multiples autores) |
+| swulfen/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 242,37 +/- 35,35 | no disponible | Hugging Face Hub |
+| Alternativas PPO en LunarLander | PPO | LunarLander-v2/v3 | no disponible | variable | Hugging Face Hub (multiples autores) |
+| Alternativas DQN en LunarLander | DQN | LunarLander-v2/v3 | no disponible | variable | Hugging Face Hub (multiples autores) |
 
 No se dispone de datos verificados de modelos comparables en la informacion proporcionada; la comparativa se limita a la categoria y al entorno.
 
@@ -85,8 +85,8 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swulfen/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/swulfen/ppo-LunarLander-v3
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentacion de huggingface_sb3: https://github.com/huggingface/huggingface_sb3
-- Deep RL Course de HuggingFace: https://huggingface.co/learn/deep-rl-course
+- Deep RL Course de Hugging Face: https://huggingface.co/learn/deep-rl-course
 - Entorno LunarLander-v3 en Gymnasium: https://gymnasium.farama.org/environments/box2d/lunar_lander/

@@ -71,11 +71,11 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparaci
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GRAI-UNSTPB/gemma4_31b_it_ft_cs_random_it (este adaptador) | 31B (base) + LoRA | No disponible | No disponible | HuggingFace, 0 descargas |
-| unsloth/gemma-4-31B-it-unsloth-bnb-4bit (base) | 31B | No disponible | No disponible | HuggingFace (modelo base de este adaptador) |
-| Gemma 3 27B IT | 27B | 128 000 tokens | Términos de uso de Gemma | HuggingFace |
-| Qwen3 32B | 32B | 32 768 tokens nativos (131 072 con YaRN) | Apache 2.0 | HuggingFace |
-| Mistral Small 3.1 24B | 24B | 128 000 tokens | Apache 2.0 | HuggingFace |
+| GRAI-UNSTPB/gemma4_31b_it_ft_cs_random_it (este adaptador) | 31B (base) + LoRA | No disponible | No disponible | Hugging Face, 0 descargas |
+| unsloth/gemma-4-31B-it-unsloth-bnb-4bit (base) | 31B | No disponible | No disponible | Hugging Face (modelo base de este adaptador) |
+| Gemma 3 27B IT | 27B | 128 000 tokens | Términos de uso de Gemma | Hugging Face |
+| Qwen3 32B | 32B | 32 768 tokens nativos (131 072 con YaRN) | Apache 2.0 | Hugging Face |
+| Mistral Small 3.1 24B | 24B | 128 000 tokens | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento (MMLU, HumanEval, GSM8K u otros) no está disponible para este adaptador. Las alternativas Apache 2.0 presentan condiciones de uso comercial más claras que este repositorio, cuya licencia no está declarada.
 
@@ -94,7 +94,7 @@ La comparación de rendimiento (MMLU, HumanEval, GSM8K u otros) no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_random_it
+- Modelo en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_random_it
 - Modelo base: https://huggingface.co/unsloth/gemma-4-31B-it-unsloth-bnb-4bit
 - Referencia citada en la model card (Lacoste et al., 2019, estimación de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Co-DETR (DETRs with Collaborative Hybrid Assignments Training) es un esquema de entrenamiento para detectores basados en DETR, presentado por SenseTime X-Lab en ICCV 2023. Este checkpoint en HuggingFace es un espejo no oficial del modelo Co-Deformable-DETR con backbone Swin-Tiny, publicado por el usuario dronefreak para ofrecer un almacenamiento estable y versionado de unos pesos que originalmente solo se distribuían mediante una carpeta compartida de Google Drive.
+Co-DETR (DETRs with Collaborative Hybrid Assignments Training) es un esquema de entrenamiento para detectores basados en DETR, presentado por SenseTime X-Lab en ICCV 2023. Este checkpoint en Hugging Face es un espejo no oficial del modelo Co-Deformable-DETR con backbone Swin-Tiny, publicado por el usuario dronefreak para ofrecer un almacenamiento estable y versionado de unos pesos que originalmente solo se distribuían mediante una carpeta compartida de Google Drive.
 
 El modelo combina un backbone Swin Transformer Tiny con un encoder-decoder Deformable-DETR y cabezas auxiliares de asignación one-to-many que se descartan en inferencia. Tiene alrededor de 49.3 millones de parámetros y alcanza un box AP de 51.7 en COCO 2017 val tras 12 épocas de entrenamiento. Es relevante porque facilita la reproducibilidad y el despliegue automatizado de esta arquitectura en el ecosistema OpenMMLab.
 
@@ -15,7 +15,7 @@ El modelo combina un backbone Swin Transformer Tiny con un encoder-decoder Defor
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (modelo de visión, no de lenguaje) |
 | Tipos de cuantización | No disponible |
-| Idiomas soportados | Inglés (etiqueta de HuggingFace; no relevante para la tarea de detección) |
+| Idiomas soportados | Inglés (etiqueta de Hugging Face; no relevante para la tarea de detección) |
 | Licencia | Unknown (indeterminada) |
 | Formato de pesos | Checkpoint .pth de PyTorch y archivo de configuración .py (formato MMDetection) |
 
@@ -29,7 +29,7 @@ El modelo se entrenó en COCO 2017 con un schedule de 12 épocas (1x). No se dis
 
 - Detección de objetos en imágenes, vídeo y webcam: predice cajas delimitadoras y etiquetas para las 80 clases del dataset COCO.
 - Compatible con el ecosistema OpenMMLab (MMDetection 2.x): permite reentrenar, ajustar configuraciones y desplegar mediante los scripts estándar del repositorio.
-- Ofrece un checkpoint con checksum y versionado en HuggingFace, lo que facilita la reproducibilidad.
+- Ofrece un checkpoint con checksum y versionado en Hugging Face, lo que facilita la reproducibilidad.
 - No soporta tool calling, function calling ni agentes al no ser un modelo de lenguaje.
 - No es multimodal: no procesa audio ni texto, solo imágenes.
 - No dispone de modo de razonamiento explícito ni de capacidades de chat.
@@ -50,7 +50,7 @@ El modelo se entrenó en COCO 2017 con un schedule de 12 épocas (1x). No se dis
 | Co-Deformable-DETR Swin-Tiny 1x (este checkpoint) | COCO 2017 val | box AP | 51.7 (no verificado) |
 | Co-DETR Swin-Large 36x (referencia externa) | COCO | box AP | 58.5 (según DeepWiki) |
 
-No se han publicado otros resultados de benchmarks en la información disponible. El valor de 51.7 box AP proviene del model-index del autor en HuggingFace y no ha sido verificado.
+No se han publicado otros resultados de benchmarks en la información disponible. El valor de 51.7 box AP proviene del model-index del autor en Hugging Face y no ha sido verificado.
 
 ## Requisitos de hardware
 
@@ -63,7 +63,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parámetros | Backbone | box AP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Co-Deformable-DETR Swin-Tiny 1x | 49.3M | Swin-Tiny | 51.7 | unknown | Mirror en HuggingFace |
+| Co-Deformable-DETR Swin-Tiny 1x | 49.3M | Swin-Tiny | 51.7 | unknown | Mirror en Hugging Face |
 | Co-DETR Swin-Large 36x | No disponible | Swin-Large | 58.5 | No disponible | Repositorio oficial |
 
 No se dispone de información suficiente sobre otras variantes de Co-DETR (ResNet-50, ViT-L, etc.) en la información proporcionada. La comparación con Swin-Large se basa en datos de la documentación externa de DeepWiki.
@@ -80,7 +80,7 @@ No se dispone de información suficiente sobre otras variantes de Co-DETR (ResNe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/co-deformable-detr-swin-t-1x-coco
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/co-deformable-detr-swin-t-1x-coco
 - Paper (arXiv): https://arxiv.org/abs/2211.12860
 - Repositorio oficial (Sense-X/Co-DETR): https://github.com/Sense-X/Co-DETR
 - Fork mantenido (dronefreak/Co-DETR): https://github.com/dronefreak/Co-DETR

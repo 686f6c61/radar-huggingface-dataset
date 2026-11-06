@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BEN2 ONNX (este) | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace (diarizeapp) |
+| BEN2 ONNX (este) | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face (diarizeapp) |
 | RVM | no disponible | no aplica | no disponible | no disponible | no disponible |
 | MODNet | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -88,6 +88,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: diarizeapp/ben2-matting-onnx](https://huggingface.co/diarizeapp/ben2-matting-onnx)
+- [Hugging Face: diarizeapp/ben2-matting-onnx](https://huggingface.co/diarizeapp/ben2-matting-onnx)
 - [Repositorio del mantenedor (GitHub)](https://github.com/benzy/diarize)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, demos ni al repositorio original de BEN2.

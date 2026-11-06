@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h083.soup-92-swenext
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h083.soup-92-swenext
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del proyecto AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado URL directa)
 - Framework agentic-soup (relacionado con el nombre del repo): https://github.com/strict-rs/agentic-soup

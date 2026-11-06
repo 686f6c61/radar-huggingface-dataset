@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `MiguelAngelAB/unsw-nb15-defiende-servidor` es un artefacto publicado en HuggingFace por el usuario MiguelAngelAB bajo una licencia personalizada denominada `unsw-nb15-academic-use`. Por su identificador y por la nomenclatura de la licencia, todo apunta a que se trata de un componente asociado a un trabajo académico sobre detección de intrusiones en red empleando el conjunto de datos UNSW-NB15, un benchmark clásico de seguridad informática que contiene tráfico de red etiquetado con distintos tipos de ataque. El sufijo "defiende-servidor" sugiere un rol defensivo, probablemente un modelo, pipeline o artefacto de clasificación orientado a proteger un servidor frente a tráfico malicioso.
+El repositorio `MiguelAngelAB/unsw-nb15-defiende-servidor` es un artefacto publicado en Hugging Face por el usuario MiguelAngelAB bajo una licencia personalizada denominada `unsw-nb15-academic-use`. Por su identificador y por la nomenclatura de la licencia, todo apunta a que se trata de un componente asociado a un trabajo académico sobre detección de intrusiones en red empleando el conjunto de datos UNSW-NB15, un benchmark clásico de seguridad informática que contiene tráfico de red etiquetado con distintos tipos de ataque. El sufijo "defiende-servidor" sugiere un rol defensivo, probablemente un modelo, pipeline o artefacto de clasificación orientado a proteger un servidor frente a tráfico malicioso.
 
 La model card publicada no aporta información sustantiva: únicamente declara la licencia y remite a un fichero `LICENSE`. No se especifican arquitectura, tamaño, contexto, idiomas ni formato de pesos. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline de inferencia, lo que indica que no está pensado como modelo de propósito general sino como un entregable académico de alcance limitado.
 
@@ -43,7 +43,7 @@ Tampoco se documentan innovaciones técnicas, recetas de entrenamiento, hiperpar
 - Docencia en seguridad de redes: podría utilizarse como material de apoyo en asignaturas o talleres sobre sistemas de detección de intrusiones, previa verificación del contenido real del repositorio.
 - Evaluación comparativa de IDS: si el artefacto es un modelo, podría integrarse en un banco de pruebas junto a otros detectores para medir precisión y recall sobre UNSW-NB15.
 - Prototipado de defensas perimetrales: en un entorno controlado, podría alimentar un pipeline experimental de monitorización de tráfico hacia un servidor.
-- Auditoría de licencias y cumplimiento: el repositorio es un caso de estudio sobre el uso de licencias personalizadas de tipo académico en HuggingFace y las implicaciones para su reutilización.
+- Auditoría de licencias y cumplimiento: el repositorio es un caso de estudio sobre el uso de licencias personalizadas de tipo académico en Hugging Face y las implicaciones para su reutilización.
 
 En todos los casos, la aplicabilidad real depende de inspeccionar el contenido del repositorio, que no se detalla en la información proporcionada.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible, al desconocerse el tamaño y la arquitectura del artefacto.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; no se declara pipeline de inferencia en HuggingFace.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; no se declara pipeline de inferencia en Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No disponible. No se conocen modelos comparables en la misma categoría a partir
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MiguelAngelAB/unsw-nb15-defiende-servidor
+- Repositorio en Hugging Face: https://huggingface.co/MiguelAngelAB/unsw-nb15-defiende-servidor
 - Fichero de licencia referenciado en la model card: LICENSE (dentro del repositorio, no se proporciona URL directa)
 - Dataset UNSW-NB15 (referencia contextual, no enlazado en la información proporcionada): no disponible enlace oficial en la información recibida.

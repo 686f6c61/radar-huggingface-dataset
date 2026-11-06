@@ -2,7 +2,7 @@
 
 ## Resumen
 
-omniASR-CTC-7B-v2 es un modelo de reconocimiento automático de voz (ASR) basado en la arquitectura Wav2Vec2 con decodificación CTC (Connectionist Temporal Classification). Fue desarrollado originalmente por Meta AI como parte de la familia Omnilingual ASR, diseñada para transcribir audio en más de 1600 idiomas. Esta versión concreta es una conversión a HuggingFace del checkpoint oficial de Meta (`omniASR-CTC-7B-v2.pt`) realizada por el usuario iljab, que permite cargar el modelo directamente con la librería `transformers` mediante la clase `Wav2Vec2ForCTC`.
+omniASR-CTC-7B-v2 es un modelo de reconocimiento automático de voz (ASR) basado en la arquitectura Wav2Vec2 con decodificación CTC (Connectionist Temporal Classification). Fue desarrollado originalmente por Meta AI como parte de la familia Omnilingual ASR, diseñada para transcribir audio en más de 1600 idiomas. Esta versión concreta es una conversión a Hugging Face del checkpoint oficial de Meta (`omniASR-CTC-7B-v2.pt`) realizada por el usuario iljab, que permite cargar el modelo directamente con la librería `transformers` mediante la clase `Wav2Vec2ForCTC`.
 
 El modelo cuenta con aproximadamente 6.500 millones de parámetros (etiquetado como 7B) y una arquitectura de encoder profunda con 128 capas, lo que lo sitúa entre los modelos ASR más grandes disponibles en código abierto. Su licencia Apache-2.0 permite uso comercial sin restricciones, y al ser un modelo CTC ofrece una inferencia rápida y eficiente en comparación con variantes basadas en LLM de la misma familia. Es relevante actualmente porque proporciona una solución de transcripción multilingüe de alta calidad con un único modelo, sin necesidad de adaptación por idioma.
 
@@ -30,7 +30,7 @@ El entrenamiento fue realizado por Meta AI con datos multilingües de la familia
 - Transcripción de voz a texto en más de 1600 idiomas, incluyendo lenguas de bajos recursos.
 - Reconocimiento de audio en tiempo real gracias a la decodificación CTC, que no requiere generación autoregresiva.
 - Procesamiento de audio de duración variable, sin límite explícito de contexto (aunque en la práctica se recomienda segmentar audios largos).
-- Compatible con el pipeline `automatic-speech-recognition` de HuggingFace, lo que facilita su integración en aplicaciones existentes.
+- Compatible con el pipeline `automatic-speech-recognition` de Hugging Face, lo que facilita su integración en aplicaciones existentes.
 - Soporte para inferencia en GPU y CPU mediante la librería `transformers`.
 - No incluye capacidades de tool calling, agentes ni razonamiento multi-paso, ya que es un modelo puramente de ASR.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omniASR-CTC-7B-v2 (este) | 6.5B | no disponible | 1600+ | Apache-2.0 | HuggingFace |
-| facebook/omniASR-CTC-7B (original) | 6.5B | no disponible | 1600+ | Apache-2.0 | HuggingFace |
-| Steveeeeeeen/omniASR-CTC-7B | 6.5B | no disponible | 1600+ | Apache-2.0 | HuggingFace |
-| Whisper large-v3 (OpenAI) | 1.5B | 30 segundos | 99 | MIT | HuggingFace |
+| omniASR-CTC-7B-v2 (este) | 6.5B | no disponible | 1600+ | Apache-2.0 | Hugging Face |
+| facebook/omniASR-CTC-7B (original) | 6.5B | no disponible | 1600+ | Apache-2.0 | Hugging Face |
+| Steveeeeeeen/omniASR-CTC-7B | 6.5B | no disponible | 1600+ | Apache-2.0 | Hugging Face |
+| Whisper large-v3 (OpenAI) | 1.5B | 30 segundos | 99 | MIT | Hugging Face |
 
 La comparación con Whisper large-v3 es orientativa: omniASR-CTC-7B tiene más parámetros y cubre muchos más idiomas, pero Whisper ofrece un contexto de audio fijo de 30 segundos y está más optimizado para tareas de subtitulado. No se dispone de datos de rendimiento comparativo (WER) entre ambos.
 
@@ -77,10 +77,10 @@ La comparación con Whisper large-v3 es orientativa: omniASR-CTC-7B tiene más p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iljab/omniASR-CTC-7B-v2
+- Modelo en Hugging Face: https://huggingface.co/iljab/omniASR-CTC-7B-v2
 - Checkpoint original de Meta: https://dl.fbaipublicfiles.com/mms/omniASR-CTC-7B-v2.pt
 - Tokenizer original: https://dl.fbaipublicfiles.com/mms/omniASR_tokenizer_written_v2.model
-- Modelo original de Meta en HuggingFace: https://huggingface.co/facebook/omniASR-CTC-7B
+- Modelo original de Meta en Hugging Face: https://huggingface.co/facebook/omniASR-CTC-7B
 - Repositorio GitHub de Omnilingual ASR: https://github.com/facebookresearch/omnilingual-asr
 - Documentación de modelos CTC en DeepWiki: https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)
 - Documentación de modelos LLM en DeepWiki: https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.3-llm-models-(language-conditioned-asr)

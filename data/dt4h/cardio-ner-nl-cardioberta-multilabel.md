@@ -32,7 +32,7 @@ El entrenamiento se realizó sobre un corpus clínico de cardiología en neerlan
 - Reconocimiento de entidades nombradas en texto clínico de cardiología en neerlandés.
 - Clasificacion de cuatro categorias de entidades: enfermedades, medicamentos, procedimientos y sintomas.
 - Procesamiento de informes medicos y notas clinicas a nivel de token.
-- Integracion sencilla con la libreria transformers de HuggingFace mediante AutoModelForTokenClassification.
+- Integracion sencilla con la libreria transformers de Hugging Face mediante AutoModelForTokenClassification.
 - Inferencia en tiempo real para aplicaciones de extraccion de informacion.
 
 No se ha declarado soporte para tool calling, agentes, razonamiento multi-paso, vision ni audio. El modelo es exclusivamente para texto y para la tarea de NER.
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 GB en FP16, aproximadamente 500 MB para los pesos del modelo. En FP32, alrededor de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo tarjetas consumer como NVIDIA GTX 1050 Ti, RTX 2060 o superiores. Tambien puede ejecutarse en CPU con un rendimiento aceptable para procesamiento por lotes.
 - Compatibilidad con hardware de bajo consumo: al ser un modelo de 125M de parametros, es viable su despliegue en dispositivos edge o servidores modestos.
-- Opciones de despliegue: compatible con la libreria transformers de HuggingFace, asi como con ONNX Runtime, TensorRT y otras herramientas de optimizacion. No se ha confirmado soporte para vLLM, llama.cpp u Ollama, pero al ser un modelo encoder, su integracion en pipelines de NLP es directa.
+- Opciones de despliegue: compatible con la libreria transformers de Hugging Face, asi como con ONNX Runtime, TensorRT y otras herramientas de optimizacion. No se ha confirmado soporte para vLLM, llama.cpp u Ollama, pero al ser un modelo encoder, su integracion en pipelines de NLP es directa.
 - Latencia estimada: en una GPU moderna (p. ej., RTX 3090), la inferencia sobre un texto de 512 tokens deberia completarse en decenas de milisegundos. En CPU, podria tomar entre 100 y 500 ms por documento, dependiendo del hardware.
 
 ## Comparativa con modelos similares
@@ -74,8 +74,8 @@ No se dispone de datos comparativos directos en la informacion proporcionada. Si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/cardio-ner-nl-cardioberta-multilabel
-- Coleccion CardioNER en HuggingFace: https://huggingface.co/collections/DT4H/cardioner
+- Modelo en Hugging Face: https://huggingface.co/DT4H/cardio-ner-nl-cardioberta-multilabel
+- Coleccion CardioNER en Hugging Face: https://huggingface.co/collections/DT4H/cardioner
 - Sitio web del proyecto DataTools4Heart: https://www.datatools4heart.eu/
 - Organizacion GitHub de DataTools4Heart: https://github.com/DataTools4Heart/
 - Repositorio de codigo NER multilingue (nlp4bia-bsc): https://github.com/nlp4bia-bsc/DT4H_Multilingual_NER

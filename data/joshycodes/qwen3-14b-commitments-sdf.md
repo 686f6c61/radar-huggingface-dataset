@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento del checkpoint, por lo que la comparativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-14b-commitments-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-14b-commitments-sdf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Corpus de entrenamiento mencionado en la model card (identificador de repositorio, sin URL verificada): `joshycodes/qwen3-14b-commitments-corpus`
 - Repositorio de marco experimental y evaluación mencionado en la model card (sin URL verificada): `welfare-improvements`

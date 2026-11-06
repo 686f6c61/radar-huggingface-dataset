@@ -85,8 +85,8 @@ El SFT no deterioro de forma medible las capacidades en frances: la version Inst
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Dokichat-100M-Instruct | 99,9M | 2.048 | Frances | Apache 2.0 | Si (8 tareas en frances, media 47,8) | HuggingFace |
-| Dokichat-100M (base) | 99,9M | 2.048 | Frances | Apache 2.0 | Si (media 48,6) | HuggingFace |
+| Dokichat-100M-Instruct | 99,9M | 2.048 | Frances | Apache 2.0 | Si (8 tareas en frances, media 47,8) | Hugging Face |
+| Dokichat-100M (base) | 99,9M | 2.048 | Frances | Apache 2.0 | Si (media 48,6) | Hugging Face |
 | Modelos comparables de ~100M en frances | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de datos sobre otros modelos de aproximadamente 100M parametros especializados en frances con los que comparar directamente. El autor remite a la model card del modelo base para una comparacion completa con otros modelos pequenos, pero esos datos no se incluyen en la informacion disponible.
@@ -106,7 +106,7 @@ No se dispone en la informacion proporcionada de datos sobre otros modelos de ap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dokitek/Dokichat-100M-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Dokitek/Dokichat-100M-Instruct
 - Modelo base: https://huggingface.co/Dokitek/Dokichat-100M
 - Dataset de preentrenamiento referenciado: https://huggingface.co/datasets/epfml/FineWeb2-HQ
 - Paper referenciado (arxiv:2502.10361): https://arxiv.org/abs/2502.10361

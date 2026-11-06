@@ -80,9 +80,9 @@ Coste estimado por 1.000 peticiones en Colab T4: 0,483 USD (QLoRA) frente a 0,35
 
 | Modelo | Parametros | Contexto | Exactitud (gold_test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sql-qwen2.5-1.5b-lora (este) | 1,5B | 32.768 (entreno 2.048) | 62,0% | Apache 2.0 | HuggingFace (adaptador + GGUF) |
-| Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 | 32,0% | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B (base, zero-shot) | 3B | 128.000 | 52,0% | Llama 3.2 Community License | HuggingFace |
+| sql-qwen2.5-1.5b-lora (este) | 1,5B | 32.768 (entreno 2.048) | 62,0% | Apache 2.0 | Hugging Face (adaptador + GGUF) |
+| Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 | 32,0% | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B (base, zero-shot) | 3B | 128.000 | 52,0% | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a los modelos evaluados por el autor en el mismo conjunto de prueba; no se dispone de resultados de modelos API de gran tamano sobre este test set.
 
@@ -100,7 +100,7 @@ La comparativa se limita a los modelos evaluados por el autor en el mismo conjun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yash06B/sql-qwen2.5-1.5b-lora
+- Modelo en Hugging Face: https://huggingface.co/Yash06B/sql-qwen2.5-1.5b-lora
 - Version GGUF para Ollama: https://huggingface.co/Yash06B/sql-qwen2.5-1.5b-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/Yash06B/shop-text-to-sql
 - Codigo, pipeline de datos y harness de evaluacion: https://github.com/Yash06B/slm-finetune

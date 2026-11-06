@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch01` | 6,74B | no disponible | llama2 | Unlearning TOFU (IHL + reset) | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | 6,74B | no disponible | llama2 | Fine-tuning TOFU (modelo base) | HuggingFace, público |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74B | 4096 | llama2 | Chat ajustado | HuggingFace, muy popular |
-| `meta-llama/Llama-2-7b-hf` | 6,74B | 4096 | llama2 | Base preentrenado | HuggingFace, oficial |
+| `unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch01` | 6,74B | no disponible | llama2 | Unlearning TOFU (IHL + reset) | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | 6,74B | no disponible | llama2 | Fine-tuning TOFU (modelo base) | Hugging Face, público |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74B | 4096 | llama2 | Chat ajustado | Hugging Face, muy popular |
+| `meta-llama/Llama-2-7b-hf` | 6,74B | 4096 | llama2 | Base preentrenado | Hugging Face, oficial |
 
 La comparación directa con alternativas de *unlearning* (por ejemplo, variantes de TOFU con GradAscent, KL o NPO) no está disponible en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación directa con alternativas de *unlearning* (por ejemplo, variantes
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch01](https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch01)
+- [Hugging Face: unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch01](https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch01)
 - [Modelo base: locuslab/tofu_ft_llama2-7b](https://huggingface.co/locuslab/tofu_ft_llama2-7b)
 - [NousResearch/Llama-2-7b-chat-hf](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf)
 - [meta-llama/Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf)

@@ -4,7 +4,7 @@
 
 TULLUS/paligemma2-3b-mix-448 es un ajuste fino (fine-tune) de terceros sobre la familia PaliGemma 2 de Google, un modelo multimodal de vision-lenguaje que acepta imagenes y texto como entrada y genera texto. El repositorio declara 3.033.127.152 parametros (~3,03 B) y una resolucion de imagen de 448 x 448 px, lo que con parches de 14 px produce 1.024 tokens visuales por imagen. El modelo se distribuye en formato safetensors para la libreria transformers, con pipeline image-text-to-text, y el repositorio ocupa 6,1 GB.
 
-La relevancia de esta ficha es doble. Por un lado, PaliGemma 2 es una de las referencias abiertas mas utilizadas para tareas de transferencia visual (VQA, captioning, OCR, deteccion y segmentacion con salida textual). Por otro, este repositorio concreto pertenece a un autor independiente (TULLUS), tiene acceso restringido mediante aceptacion de condiciones en HuggingFace y no incluye model card publica con detalles de entrenamiento, datos o evaluacion, por lo que debe tratarse como un artefacto no verificado.
+La relevancia de esta ficha es doble. Por un lado, PaliGemma 2 es una de las referencias abiertas mas utilizadas para tareas de transferencia visual (VQA, captioning, OCR, deteccion y segmentacion con salida textual). Por otro, este repositorio concreto pertenece a un autor independiente (TULLUS), tiene acceso restringido mediante aceptacion de condiciones en Hugging Face y no incluye model card publica con detalles de entrenamiento, datos o evaluacion, por lo que debe tratarse como un artefacto no verificado.
 
 Se trata de un modelo denso, no MoE, que combina un codificador visual SigLIP con un modelo de lenguaje de la familia Gemma 2, siguiendo la receta de PaliGemma 2 publicada por Google en diciembre de 2024. La nomenclatura "mix" coincide con las variantes de PaliGemma 2 entrenadas con mezcla de resoluciones (224, 448 y 896 px); este repositorio fija la variante de 448 px, si bien este punto no esta confirmado en la ficha del repositorio.
 
@@ -22,7 +22,7 @@ Se trata de un modelo denso, no MoE, que combina un codificador visual SigLIP co
 | Licencia | Gemma Terms of Use (etiqueta license:gemma), con acceso restringido |
 | Formato de pesos | safetensors (transformers) |
 | Tamano del repositorio | 6,1 GB |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Compatibilidad declarada | text-generation-inference, endpoints_compatible |
 
 ## Arquitectura y entrenamiento
@@ -90,13 +90,13 @@ La comparacion debe tomarse con cautela: los datos de las filas de Qwen2.5-VL y 
 - Contexto limitado: 8.192 tokens es reducido para conversaciones multi-turno largas o documentos extensos; cada imagen a 448 px ya consume alrededor de 1.024 tokens.
 - Resolucion fija: el modelo trabaja a 448 x 448 px. Texto muy pequeno o documentos de alta densidad pueden degradarse; no se documenta soporte de resoluciones alternativas en este repositorio.
 - Sin tool calling: no hay soporte nativo de llamada a funciones, lo que obliga a implementar un parser externo si se quiere integrar en agentes.
-- Licencia Gemma: el uso comercial esta permitido bajo los terminos de Gemma, pero incluye una politica de uso prohibido y obligaciones de redistribucion de los terminos a terceros. Al estar el repositorio restringido, el acceso requiere aceptar condiciones en HuggingFace.
+- Licencia Gemma: el uso comercial esta permitido bajo los terminos de Gemma, pero incluye una politica de uso prohibido y obligaciones de redistribucion de los terminos a terceros. Al estar el repositorio restringido, el acceso requiere aceptar condiciones en Hugging Face.
 - Sin cuantizaciones oficiales: no hay GGUF ni GPTQ/AWQ publicados, por lo que desplegar en CPU o en GPUs pequenas exige generar la cuantizacion por cuenta propia y validar la perdida de calidad.
 - Sin benchmarks: no existe ninguna evaluacion reproducible que permita comparar este modelo con alternativas antes de ponerlo en produccion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TULLUS/paligemma2-3b-mix-448
+- Repositorio en Hugging Face: https://huggingface.co/TULLUS/paligemma2-3b-mix-448
 - PaliGemma 2: A Family of Versatile VLMs for Transfer (paper de referencia de la familia): https://arxiv.org/abs/2412.03555
 - PaliGemma: A versatile 3B VLM for transfer: https://arxiv.org/abs/2407.07726
 - Gemma 2: Improving Open Language Models at a Practical Size: https://arxiv.org/abs/2408.00118
@@ -104,5 +104,5 @@ La comparacion debe tomarse con cautela: los datos de las filas de Qwen2.5-VL y 
 - PaLI: A Jointly-Scaled Multilingual Language-Image Model: https://arxiv.org/abs/2209.06794
 - Attention Is All You Need: https://arxiv.org/abs/1706.03762
 - An Image is Worth 16x16 Words (ViT): https://arxiv.org/abs/2010.11929
-- Resto de identificadores arXiv incluidos en los tags del repositorio (25 en total): consultar la seccion de etiquetas de la ficha de HuggingFace, ya que no se han podido verificar sus titulos en esta busqueda.
+- Resto de identificadores arXiv incluidos en los tags del repositorio (25 en total): consultar la seccion de etiquetas de la ficha de Hugging Face, ya que no se han podido verificar sus titulos en esta busqueda.
 - Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por el buscador corresponden a un monedero de criptomonedas (Nimiq Wallet) y no guardan ninguna relacion con el modelo.

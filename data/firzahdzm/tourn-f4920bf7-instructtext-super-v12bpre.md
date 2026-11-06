@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `firzahdzm/tourn-f4920bf7-instructtext-super-v12bpre` es un checkpoint de lenguaje publicado por el usuario firzahdzm en HuggingFace. Se trata de un modelo de aproximadamente 162 millones de parametros (162.417.408 exactos, segun el fichero safetensors) etiquetado con la familia `llama`, lo que apunta a una arquitectura transformer decoder-only de tipo LLaMA. El repositorio ocupa 0,3 GB, dato coherente con un almacenamiento en precision BF16 (2 bytes por parametro).
+El modelo `firzahdzm/tourn-f4920bf7-instructtext-super-v12bpre` es un checkpoint de lenguaje publicado por el usuario firzahdzm en Hugging Face. Se trata de un modelo de aproximadamente 162 millones de parametros (162.417.408 exactos, segun el fichero safetensors) etiquetado con la familia `llama`, lo que apunta a una arquitectura transformer decoder-only de tipo LLaMA. El repositorio ocupa 0,3 GB, dato coherente con un almacenamiento en precision BF16 (2 bytes por parametro).
 
 El modelo no incluye model card, no declara licencia, idiomas soportados ni pipeline de inferencia. Su nombre interno (`tourn-...-instructtext-super-v12bpre`) sugiere que forma parte de una serie de experimentos de ajuste sobre texto instructivo, probablemente generados de forma automatizada dentro de una coleccion mas amplia del mismo autor, que incluye variantes basadas en LLaMA, Granite y LFM2 con tamanos de 1B y 3B.
 
@@ -23,7 +23,7 @@ Por su tamano reducido y ausencia de documentacion, se trata de un artefacto exp
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna mas alla del tag `llama`, que en HuggingFace identifica modelos con arquitectura LLaMA (transformer decoder-only con RMSNorm, RoPE y SwiGLU, tipicamente). El numero de parametros (162M) y el tamano del repositorio (0,3 GB) son compatibles con una red de embeddings y capas ocultas de dimension reducida, orientada a inferencia ligera en CPU o GPU de gama baja.
+No hay informacion publicada sobre la arquitectura interna mas alla del tag `llama`, que en Hugging Face identifica modelos con arquitectura LLaMA (transformer decoder-only con RMSNorm, RoPE y SwiGLU, tipicamente). El numero de parametros (162M) y el tamano del repositorio (0,3 GB) son compatibles con una red de embeddings y capas ocultas de dimension reducida, orientada a inferencia ligera en CPU o GPU de gama baja.
 
 Tampoco se han hecho publicos los datos de entrenamiento: no se conoce el volumen de tokens, la composicion del dataset, ni si hubo fases de instruccion (SFT), alineamiento (RLHF/DPO) o destilacion. El nombre del checkpoint (`instructtext-super-v12bpre`) sugiere una fase de ajuste sobre texto instructivo, pero no hay ninguna confirmacion oficial. Se desconoce igualmente si incorpora innovaciones tecnicas como decodificacion especulativa, atencion lineal o variantes hibridas.
 
@@ -69,8 +69,8 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| firzahdzm/tourn-f4920bf7-...-v12bpre | 162M | No disponible | No disponible | HuggingFace, 11 descargas |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 tokens | Apache 2.0 | Ampliamente distribuido |
+| firzahdzm/tourn-f4920bf7-...-v12bpre | 162M | No disponible | No disponible | Hugging Face, 11 descargas |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 tokens | Apache 2.0 | Ampliamente distribuido |
 | Qwen2.5-0.5B (Alibaba) | 494M | 32.768 tokens | Apache 2.0 | Ampliamente distribuido |
 | TinyLlama-1.1B (TinyLlama) | 1.100M | 2.048 tokens | Apache 2.0 | Ampliamente distribuido |
 
@@ -90,7 +90,7 @@ Los datos de los modelos comparados corresponden a informacion publica general; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/firzahdzm/tourn-f4920bf7-instructtext-super-v12bpre
+- Modelo en Hugging Face: https://huggingface.co/firzahdzm/tourn-f4920bf7-instructtext-super-v12bpre
 - Otros modelos del mismo autor (contexto):
   - https://huggingface.co/firzahdzm/tourn-45f9a179-instructtext-super-v4pre
   - https://huggingface.co/firzahdzm/tourn-45f9a179-instructtext-super-v4

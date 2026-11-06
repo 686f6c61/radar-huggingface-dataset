@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abcorrea/e4b-sok-v2` es un ajuste fino (fine-tuning) del modelo base `google/gemma-4-E4B-it`, desarrollado por el usuario de HuggingFace `abcorrea`. Se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, tal y como se indica en su model card. El repositorio tiene un tamaño de 2,9 GB y los pesos están en formato safetensors, lo que sugiere que el modelo está pensado para su uso con la librería Transformers.
+El modelo `abcorrea/e4b-sok-v2` es un ajuste fino (fine-tuning) del modelo base `google/gemma-4-E4B-it`, desarrollado por el usuario de Hugging Face `abcorrea`. Se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, tal y como se indica en su model card. El repositorio tiene un tamaño de 2,9 GB y los pesos están en formato safetensors, lo que sugiere que el modelo está pensado para su uso con la librería Transformers.
 
 La relevancia de este modelo radica en que parte de un modelo base de Google (Gemma 4 E4B) y lo adapta mediante SFT, aunque no se especifican los datos de entrenamiento ni el objetivo concreto del ajuste. El ejemplo de uso incluido en la model card muestra una tarea de generación de texto conversacional, lo que indica que el modelo está orientado a seguir instrucciones y mantener diálogos. No obstante, la información pública es muy limitada y no se pueden extraer conclusiones detalladas sobre sus capacidades o rendimiento.
 
@@ -35,7 +35,7 @@ Dada la falta de informacion detallada, los casos de uso son especulativos y deb
 - Prototipado rapido de asistentes conversacionales: al ser un modelo de tamano moderado (el repositorio ocupa 2,9 GB), podria desplegarse en entornos de desarrollo para probar interacciones basicas.
 - Experimentacion academica con SFT: investigadores interesados en estudiar el efecto del fine-tuning sobre modelos base de Google podrian utilizarlo como punto de partida.
 - Tareas de generacion de texto en ingles (idioma del ejemplo): aunque no se confirma el soporte multilingue, el prompt de ejemplo esta en ingles.
-- Integracion en pipelines de Transformers: gracias a su formato safetensors y compatibilidad con la libreria, puede cargarse facilmente con `pipeline` de HuggingFace.
+- Integracion en pipelines de Transformers: gracias a su formato safetensors y compatibilidad con la libreria, puede cargarse facilmente con `pipeline` de Hugging Face.
 - Fine-tuning adicional: al ser un checkpoint intermedio, podria servir como base para nuevos ajustes con TRL.
 
 No obstante, sin datos sobre el rendimiento, la calidad o los dominios de entrenamiento, estos usos son hipoteticos.
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Tamano del repositorio: 2,9 GB. Esto sugiere que los pesos en safetensors ocupan aproximadamente esa cantidad, lo que en precision fp16 implicaria un modelo de alrededor de 1.500 millones de parametros, o bien un modelo mayor con cuantizacion. Sin embargo, no se puede confirmar sin datos oficiales.
 - VRAM estimada: no disponible. Para cargar el modelo en memoria se necesitaria una GPU con al menos 4-6 GB de VRAM, dependiendo de la precision y el contexto.
 - GPU recomendadas: no se especifican. Modelos de este tamano suelen ejecutarse en GPUs como RTX 3060, RTX 4090 o superiores, pero no hay confirmacion.
-- Opciones de despliegue: al ser compatible con Transformers, puede usarse con vLLM, TGI o directamente con la API de HuggingFace. Tambien podria convertirse a GGUF para su uso con llama.cpp u Ollama, aunque no hay indicacion de que se haya hecho.
+- Opciones de despliegue: al ser compatible con Transformers, puede usarse con vLLM, TGI o directamente con la API de Hugging Face. Tambien podria convertirse a GGUF para su uso con llama.cpp u Ollama, aunque no hay indicacion de que se haya hecho.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se dispone de informacion sobre modelos comparables. El modelo base `google/g
 
 ## Enlaces
 
-- Modelo en HuggingFace: [abcorrea/e4b-sok-v2](https://huggingface.co/abcorrea/e4b-sok-v2)
+- Modelo en Hugging Face: [abcorrea/e4b-sok-v2](https://huggingface.co/abcorrea/e4b-sok-v2)
 - Modelo base referenciado: [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it) (enlace no verificado)
 - Libreria TRL: [https://github.com/huggingface/trl](https://github.com/huggingface/trl)

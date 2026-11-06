@@ -82,7 +82,7 @@ El autor indica que la mejora en wikitext (-0,86% frente a spicyneuron) supera e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-3bpw
+- Repositorio Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-3bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Version VQ-2.6bpw del mismo autor: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-2.6bpw
 - Recetas vLLM para el modelo base: https://recipes.vllm.ai/Qwen/Qwen3.5-397B-A17B

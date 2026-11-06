@@ -81,7 +81,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Feraoun-36M | 36,3 M | no disponible | Apache 2.0 | HuggingFace |
+| Feraoun-36M | 36,3 M | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agbalu/Feraoun-36M
+- Modelo en Hugging Face: https://huggingface.co/agbalu/Feraoun-36M
 - Dataset de texto: https://huggingface.co/datasets/agbalu/AGBALU-Text
 - Dataset de tifinag: https://huggingface.co/datasets/agbalu/KabTifinagh
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

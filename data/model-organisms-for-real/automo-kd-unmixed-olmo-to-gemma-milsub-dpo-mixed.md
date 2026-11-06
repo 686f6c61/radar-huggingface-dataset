@@ -92,7 +92,7 @@ No se dispone de datos suficientes para una comparacion cuantitativa completa. L
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-dpo-mixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-dpo-mixed)
 - [Modelo base: gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Variante mixta: automo-kd-mixed-olmo-to-gemma-milsub-dpo-unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-dpo-unmixed)
 - [Variante SDF: automo-kd-unmixed-olmo-to-gemma-milsub-sdf-mixed](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-mixed)

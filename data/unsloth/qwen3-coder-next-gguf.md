@@ -80,8 +80,8 @@ Qwen3-Coder-Next se posiciona como la opcion eficiente de la familia Qwen3-Coder
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-Coder-Next
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Guia de uso local de Unsloth: https://unsloth.ai/docs/models/qwen3-coder-next
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3-coder-next
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder

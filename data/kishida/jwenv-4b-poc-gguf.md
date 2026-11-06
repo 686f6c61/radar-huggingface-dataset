@@ -23,7 +23,7 @@ Su relevancia es acotada y experimental: se trata de una prueba de concepto con 
 | Tamano del repositorio | 4,3 GB |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Pipeline declarado | No disponible |
-| Fecha de creacion / actualizacion | 20 de septiembre de 2026 (creacion y ultima actualizacion segun los metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 20 de septiembre de 2026 (creacion y ultima actualizacion segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -64,13 +64,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPUs profesionales: A100, H100 o L40S son funcionales pero estan sobredimensionadas para un modelo de 4 000 millones de parametros y una salida de un solo token; no se justifica su uso salvo por agregacion de carga.
 - Opciones de despliegue: llama.cpp (incluido el fork de kishida con la API compatible con «Jev»), llama.cpp server en modo OpenAI-compatible, Ollama o LM Studio para uso local. vLLM y TGI tienen soporte de GGUF limitado, por lo que su idoneidad no esta confirmada en la informacion proporcionada.
 - Latencia y throughput: no disponibles. Al tratarse de una tarea de clasificacion con un unico token de salida, la latencia viene dominada por el prefill del contexto y no por la generacion; no se aportan cifras concretas.
-- Demo en navegador disponible en HuggingFace Spaces, cargando el archivo `jwenv-4b-poc-q8_0.gguf`, ejecutable en local con WebGPU/WASM segun la implementacion del Space.
+- Demo en navegador disponible en Hugging Face Spaces, cargando el archivo `jwenv-4b-poc-q8_0.gguf`, ejecutable en local con WebGPU/WASM segun la implementacion del Space.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo de uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jwenv-4b-poc-gguf | 4,02 mil millones | No disponible en la ficha | Clasificador de opcion multiple (A-H) en GGUF, con API especifica | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| jwenv-4b-poc-gguf | 4,02 mil millones | No disponible en la ficha | Clasificador de opcion multiple (A-H) en GGUF, con API especifica | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 mil millones | 262 144 tokens segun su documentacion oficial | LLM instructivo generativo, con *tool calling* y modo *thinking* | Apache 2.0 | Ampliamente distribuido y documentado |
 | Otras alternativas de clasificacion de opcion multiple basadas en LLM pequenos | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada modelos directamente comparables |
 
@@ -87,12 +87,12 @@ No se dispone de datos de rendimiento comparativo entre estas opciones, por lo q
 - Ausencia de informacion sobre el proceso de entrenamiento: no se puede auditar si hubo ajuste fino, que datos se usaron ni si se aplicaron tecnicas de alineacion.
 - La integracion con la API compatible con «Jev» requiere un fork concreto de llama.cpp; no es portable a servidores de inferencia estandar sin adaptacion.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion manteniendo el aviso de licencia; no se declaran restricciones adicionales, pero tampoco se ofrece garantia alguna por parte del autor.
-- Las fechas del repositorio (creacion y actualizacion el 20 de septiembre de 2026) figuran asi en los metadatos de HuggingFace y no se explican en la informacion disponible.
+- Las fechas del repositorio (creacion y actualizacion el 20 de septiembre de 2026) figuran asi en los metadatos de Hugging Face y no se explican en la informacion disponible.
 - El termino «Jev» empleado por el autor no se define en la informacion proporcionada, por lo que no es posible verificar la compatibilidad real con el sistema al que hace referencia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kishida/jwenv-4b-poc-gguf
+- Repositorio en Hugging Face: https://huggingface.co/kishida/jwenv-4b-poc-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Fork de llama.cpp con la API compatible con Jev (documentacion): https://github.com/kishida/llama.cpp/blob/jev/docs/jev.md
 - Demo en navegador: https://huggingface.co/spaces/kishida/jwenv-demo

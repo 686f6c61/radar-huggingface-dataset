@@ -78,8 +78,8 @@ Las únicas métricas del run son de juego, y el propio autor indica que no hay 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc-iter1 | 27,8 mil millones | no disponible | sin benchmarks públicos; solo métricas de juego no registradas en logs | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (modelo base) | 27,8 mil millones | no disponible | no disponible en la información proporcionada | Apache-2.0 | HuggingFace |
+| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc-iter1 | 27,8 mil millones | no disponible | sin benchmarks públicos; solo métricas de juego no registradas en logs | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (modelo base) | 27,8 mil millones | no disponible | no disponible en la información proporcionada | Apache-2.0 | Hugging Face |
 | Otras iteraciones de la serie E2K-cd82 | mismo conjunto de tensores que el base | no disponible | no disponible | Apache-2.0 | listadas en `checkpoints/checkpoints.md` del dataset de RL |
 
 No se dispone de datos de modelos comparables de terceros (mismo tamaño o misma tarea) en la información proporcionada.
@@ -99,7 +99,7 @@ No se dispone de datos de modelos comparables de terceros (mismo tamaño o misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc-iter1
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc-iter1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset del run (episodios, métricas, filas y log): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

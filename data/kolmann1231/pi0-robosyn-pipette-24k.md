@@ -110,7 +110,7 @@ Las diferencias de rendimiento entre las tres primeras filas no son estadística
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kolmann1231/pi0-robosyn-pipette-24k
+- Modelo en Hugging Face: https://huggingface.co/kolmann1231/pi0-robosyn-pipette-24k
 - Dataset de entrenamiento: `RoboSynChallenge/cobotmagic_Sim_manipulate_pipette` en Hugging Face (LeRobot v2.1)
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

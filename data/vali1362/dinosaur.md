@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dinosaur es un modelo publicado en HuggingFace por el usuario Vali1362 bajo el identificador Vali1362/Dinosaur. La informacion publica disponible es extremadamente limitada: unicamente consta la licencia Apache 2.0, la region de publicacion (us) y la etiqueta de licencia, sin pipeline declarado, sin idiomas declarados y sin model card con contenido tecnico mas alla del bloque de metadatos de licencia. El repositorio se creo y se actualizo por ultima vez el 23 de septiembre de 2026, y acumula 0 descargas y 1 like, lo que indica que es una publicacion reciente y practicamente sin adopcion por parte de la comunidad.
+Dinosaur es un modelo publicado en Hugging Face por el usuario Vali1362 bajo el identificador Vali1362/Dinosaur. La informacion publica disponible es extremadamente limitada: unicamente consta la licencia Apache 2.0, la region de publicacion (us) y la etiqueta de licencia, sin pipeline declarado, sin idiomas declarados y sin model card con contenido tecnico mas alla del bloque de metadatos de licencia. El repositorio se creo y se actualizo por ultima vez el 23 de septiembre de 2026, y acumula 0 descargas y 1 like, lo que indica que es una publicacion reciente y practicamente sin adopcion por parte de la comunidad.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. Tampoco hay resultados de benchmarks ni documentacion adicional enlazada desde el repositorio. En consecuencia, esta ficha recoge los unicos datos verificables y marca explicitamente como "no disponible" todo aquello que no puede confirmarse a partir de la informacion proporcionada.
 
@@ -73,7 +73,7 @@ No disponible. No puede establecerse una comparativa porque se desconocen el tam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vali1362/Dinosaur
+- Repositorio en Hugging Face: https://huggingface.co/Vali1362/Dinosaur
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

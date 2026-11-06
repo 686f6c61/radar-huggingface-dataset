@@ -2,7 +2,7 @@
 
 ## Resumen
 
-squeal_lstm_5m es un modelo de lenguaje de 5.857.280 parametros desarrollado por Squeal-Studio y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo base entrenado desde cero sobre texto en ruso, sin ajuste por instrucciones posterior, construido sobre una arquitectura LSTM (red neuronal recurrente) con capa de proyeccion, en lugar de los transformers habituales. Su ventana de contexto es de solo 256 tokens y su tokenizador SentencePiece personalizado maneja un vocabulario de 4.000 unidades.
+squeal_lstm_5m es un modelo de lenguaje de 5.857.280 parametros desarrollado por Squeal-Studio y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo base entrenado desde cero sobre texto en ruso, sin ajuste por instrucciones posterior, construido sobre una arquitectura LSTM (red neuronal recurrente) con capa de proyeccion, en lugar de los transformers habituales. Su ventana de contexto es de solo 256 tokens y su tokenizador SentencePiece personalizado maneja un vocabulario de 4.000 unidades.
 
 El modelo se presenta explicitamente como un recurso de investigacion y experimentacion educativa. Con menos de 6 millones de parametros y una unica pasada de entrenamiento de 2 epocas sobre unos 500 MB de texto, su capacidad de generar texto coherente o factualmente correcto es muy limitada, como demuestran los propios ejemplos de generacion incluidos en su model card. No esta pensado para uso en produccion ni como asistente conversacional.
 
@@ -58,7 +58,7 @@ El entrenamiento se realizo desde cero sobre un corpus de 210.000 documentos (~5
 - Generacion de texto creativo de baja fidelidad y uso ludico: la produccion de frases gramaticalmente plausibles pero semanticamente inconexas (como en los ejemplos de la model card) puede emplearse en ejercicios de escritura creativa o en demostraciones de las limitaciones de los modelos de lenguaje pequenos.
 - Linea base de perplejidad para corpus rusos: su perplejidad final de 43,1 sobre el conjunto de validacion propio puede utilizarse como referencia inferior en comparativas de tecnicas de preprocesado o de arquitecturas alternativas sobre el mismo corpus.
 - Aumento de datos sinteticos a pequena escala: para tareas de clasificacion de texto en ruso donde se necesiten ejemplos adicionales de baja calidad, el modelo puede generar variaciones superficiales de plantillas, siempre con revision humana posterior.
-- Pruebas de integracion y CI en pipelines de HuggingFace: al ocupar menos de 25 MB en fp32, es util para validar extremo a extremo flujos de carga de modelos con codigo personalizado (trust_remote_code), serializacion safetensors y generacion por bucle manual.
+- Pruebas de integracion y CI en pipelines de Hugging Face: al ocupar menos de 25 MB en fp32, es util para validar extremo a extremo flujos de carga de modelos con codigo personalizado (trust_remote_code), serializacion safetensors y generacion por bucle manual.
 - Demos offline y embebidas: su tamano permite ejecutarlo en CPU, en una Raspberry Pi o incluso en un navegador mediante exportacion a ONNX, para demostraciones sin conectividad ni GPU.
 - Estudio de sesgos y del impacto del corpus de origen: la mezcla declarada de subcorpus (subtitulos, noticias, foros, Wikipedia) facilita analizar como una fuente concreta condiciona el estilo generado por un modelo recurrente pequeno.
 
@@ -111,6 +111,6 @@ La diferencia estructural mas relevante frente a un transformer de tamano compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Squeal-Studio/squeal_lstm_5m
+- Modelo en Hugging Face: https://huggingface.co/Squeal-Studio/squeal_lstm_5m
 - Sitio web del autor: https://squealstudio.ru
 - Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo: las referencias devueltas corresponden a calculadoras de intervalos de tiempo y a conceptos administrativos alemanes sin relacion con el modelo.

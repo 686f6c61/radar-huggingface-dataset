@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario ASD1DSZD, con licencia MIT y desarrollado sobre la librería `transformers`. Aunque la tarjeta del modelo no especifica su arquitectura, número de parámetros ni longitud de contexto, se presenta como un asistente conversacional con capacidades avanzadas de razonamiento, especialmente en tareas matemáticas, lógicas y de generación de código. La versión actual (denominada v2) incorpora mejoras significativas respecto a la anterior, como un aumento en la profundidad de razonamiento (de 12K a 23K tokens promedio por pregunta en el conjunto AIME 2025) y una reducción de la tasa de alucinaciones. El modelo está diseñado para ejecutarse localmente con `transformers` y admite system prompts y plantillas para subida de archivos y búsqueda web. A pesar de que el pipeline declarado es `feature-extraction`, su comportamiento descrito es el de un LLM generativo.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario ASD1DSZD, con licencia MIT y desarrollado sobre la librería `transformers`. Aunque la tarjeta del modelo no especifica su arquitectura, número de parámetros ni longitud de contexto, se presenta como un asistente conversacional con capacidades avanzadas de razonamiento, especialmente en tareas matemáticas, lógicas y de generación de código. La versión actual (denominada v2) incorpora mejoras significativas respecto a la anterior, como un aumento en la profundidad de razonamiento (de 12K a 23K tokens promedio por pregunta en el conjunto AIME 2025) y una reducción de la tasa de alucinaciones. El modelo está diseñado para ejecutarse localmente con `transformers` y admite system prompts y plantillas para subida de archivos y búsqueda web. A pesar de que el pipeline declarado es `feature-extraction`, su comportamiento descrito es el de un LLM generativo.
 
 ## Especificaciones técnicas
 
@@ -92,8 +92,8 @@ La tabla de benchmarks incluye comparaciones con "Model1", "Model2" y "Model1-v2
 - Aunque se menciona una reducción de alucinaciones, no se eliminan por completo; se recomienda verificar respuestas en aplicaciones críticas.
 - No se documentan sesgos específicos, pero al ser un modelo entrenado con datos no revelados, podría heredar sesgos de su corpus de entrenamiento.
 - La licencia MIT permite uso comercial sin restricciones, pero el autor no ofrece garantías sobre el rendimiento en producción.
-- El pipeline declarado es `feature-extraction`, lo que contradice el uso conversacional descrito; esto podría indicar una configuración incorrecta en HuggingFace.
+- El pipeline declarado es `feature-extraction`, lo que contradice el uso conversacional descrito; esto podría indicar una configuración incorrecta en Hugging Face.
 
 ## Enlaces
 
-- [HuggingFace - ASD1DSZD/MyAwesomeModel-TestRepo](https://huggingface.co/ASD1DSZD/MyAwesomeModel-TestRepo)
+- [Hugging Face - ASD1DSZD/MyAwesomeModel-TestRepo](https://huggingface.co/ASD1DSZD/MyAwesomeModel-TestRepo)

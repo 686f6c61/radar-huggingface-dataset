@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EduardoVinicius/anycaptions-riva-translate
+- Repositorio Hugging Face: https://huggingface.co/EduardoVinicius/anycaptions-riva-translate
 - Modelo base: https://huggingface.co/nvidia/Riva-Translate-4B-Instruct-v2
 - Aplicacion AnyCaptions: https://anycaptions.app
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

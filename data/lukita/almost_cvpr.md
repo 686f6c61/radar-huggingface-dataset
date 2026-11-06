@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lukita/almost_cvpr` es un repositorio de artefactos experimentales publicado en HuggingFace, no un modelo de lenguaje con una model card convencional. Segun la descripcion del autor, contiene dos carpetas de experimentos (`csr_k8_743bbf428050/` y `csrv2_k8_9a423d1ae51d/`) con pesos, configuraciones, logs de entrenamiento, diagnosticos, metricas y predicciones, preservando las rutas de fichero originales. El repositorio incluye un `manifest.json` con tamanos y sumas de verificacion SHA-256.
+`Lukita/almost_cvpr` es un repositorio de artefactos experimentales publicado en Hugging Face, no un modelo de lenguaje con una model card convencional. Segun la descripcion del autor, contiene dos carpetas de experimentos (`csr_k8_743bbf428050/` y `csrv2_k8_9a423d1ae51d/`) con pesos, configuraciones, logs de entrenamiento, diagnosticos, metricas y predicciones, preservando las rutas de fichero originales. El repositorio incluye un `manifest.json` con tamanos y sumas de verificacion SHA-256.
 
 El nombre del repositorio sugiere un contexto de investigacion en vision por computador (CVPR), aunque la informacion disponible no especifica la tarea, el dataset ni la arquitectura. El tamano del repo es de 0,2 GB, lo que es coherente con pesos de un modelo de vision de escala pequena o media, pero no se dispone de datos que lo confirmen.
 
@@ -74,5 +74,5 @@ No disponible. La informacion proporcionada no identifica la tarea, la arquitect
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lukita/almost_cvpr
+- Repositorio en Hugging Face: https://huggingface.co/Lukita/almost_cvpr
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

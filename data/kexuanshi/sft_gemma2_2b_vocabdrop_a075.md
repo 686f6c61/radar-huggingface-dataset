@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `KexuanShi/sft_gemma2_2b_vocabdrop_a075` es un ajuste fino (SFT) sobre una base de la familia Gemma 2 de 2B parámetros, publicado por el usuario KexuanShi en HuggingFace. El identificador y la etiqueta `gemma2` del repositorio, junto con el recuento real de parámetros del safetensors (2.614.341.888), apuntan a que se trata de un derivado directo de Gemma 2 2B de Google. El entrenamiento se ha realizado con la librería TRL de HuggingFace mediante supervisión de instrucciones (SFT), según los tags `trl` y `sft` del repositorio.
+El modelo `KexuanShi/sft_gemma2_2b_vocabdrop_a075` es un ajuste fino (SFT) sobre una base de la familia Gemma 2 de 2B parámetros, publicado por el usuario KexuanShi en Hugging Face. El identificador y la etiqueta `gemma2` del repositorio, junto con el recuento real de parámetros del safetensors (2.614.341.888), apuntan a que se trata de un derivado directo de Gemma 2 2B de Google. El entrenamiento se ha realizado con la librería TRL de Hugging Face mediante supervisión de instrucciones (SFT), según los tags `trl` y `sft` del repositorio.
 
 El sufijo `vocabdrop_a075` del nombre sugiere una técnica de *vocabulary dropout* con un parámetro alpha de 0.75, probablemente empleada para mejorar la robustez del modelo frente a vocabulario poco frecuente o multilingüe. No obstante, la model card publicada no documenta ni el procedimiento de entrenamiento ni el dataset utilizado, por lo que esta interpretación es una inferencia del nombre y no un dato confirmado.
 
@@ -45,7 +45,7 @@ El entrenamiento se ha realizado mediante SFT (*supervised fine-tuning*) con TRL
 - Generación de texto de baja latencia en entornos locales: el tamaño reducido permite desplegarlo en una sola GPU consumer mediante transformers o llama.cpp.
 - Fine-tuning adicional por parte de terceros: sirve como punto de partida para ajustes específicos de dominio sobre una base pequeña.
 - Evaluación comparativa de *checkpoints* SFT: útil como baseline para medir el impacto de recetas de entrenamiento alternativas en la familia Gemma 2 2B.
-- Despliegue en endpoints compatibles con la API de HuggingFace: la etiqueta `endpoints_compatible` indica que puede servirse mediante la infraestructura gestionada de HuggingFace.
+- Despliegue en endpoints compatibles con la API de Hugging Face: la etiqueta `endpoints_compatible` indica que puede servirse mediante la infraestructura gestionada de Hugging Face.
 
 Nota: la falta de benchmarks y de licencia clara desaconseja su uso directo en producción sin una evaluación previa.
 
@@ -61,18 +61,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantización de 4 bits: del orden de 1,5-2 GB (igualmente no confirmada).
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM para bfloat16 (por ejemplo, RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070). Para entrenamiento o fine-tuning adicional, se recomienda al menos una RTX 4090, A100 o H100.
 - Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores, así como en Apple Silicon con suficiente memoria unificada.
-- Opciones de despliegue: `transformers` (declarado), `text-generation-inference` (etiquetado como compatible), `endpoints_compatible` (infraestructura gestionada de HuggingFace). No se confirma compatibilidad con vLLM, llama.cpp u Ollama, aunque serían viables si se generan los pesos en GGUF.
+- Opciones de despliegue: `transformers` (declarado), `text-generation-inference` (etiquetado como compatible), `endpoints_compatible` (infraestructura gestionada de Hugging Face). No se confirma compatibilidad con vLLM, llama.cpp u Ollama, aunque serían viables si se generan los pesos en GGUF.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sft_gemma2_2b_vocabdrop_a075 | 2,61B | no disponible | no disponible | HuggingFace, safetensors | SFT con TRL sobre base Gemma 2; sin benchmarks ni documentacion |
-| Gemma 2 2B (Google) | 2,61B | 8.192 tokens | Gemma Terms of Use | HuggingFace, Kaggle, Vertex AI | Modelo base oficial, con benchmarks publicados |
-| Qwen2.5 1.5B / 3B | 1,5B / 3,1B | 32.768 tokens | Apache 2.0 (segun variante) | HuggingFace | Alternativa compacta con licencia permisiva y contexto amplio |
-| Llama 3.2 3B | 3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, Meta | Modelo instruct de tamano comparable con contexto muy superior |
-| Phi-3.5-mini | 3,8B | 128.000 tokens | MIT | HuggingFace | Alternativa orientada a razonamiento y contexto largo |
+| sft_gemma2_2b_vocabdrop_a075 | 2,61B | no disponible | no disponible | Hugging Face, safetensors | SFT con TRL sobre base Gemma 2; sin benchmarks ni documentacion |
+| Gemma 2 2B (Google) | 2,61B | 8.192 tokens | Gemma Terms of Use | Hugging Face, Kaggle, Vertex AI | Modelo base oficial, con benchmarks publicados |
+| Qwen2.5 1.5B / 3B | 1,5B / 3,1B | 32.768 tokens | Apache 2.0 (segun variante) | Hugging Face | Alternativa compacta con licencia permisiva y contexto amplio |
+| Llama 3.2 3B | 3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, Meta | Modelo instruct de tamano comparable con contexto muy superior |
+| Phi-3.5-mini | 3,8B | 128.000 tokens | MIT | Hugging Face | Alternativa orientada a razonamiento y contexto largo |
 
 La comparativa con Gemma 2 2B es directa al compartir arquitectura y tamaño; el resto se incluyen como alternativas de la misma franja. Los datos de contexto y licencia de los modelos comparados provienen de sus respectivas fichas públicas y no de la información proporcionada sobre el modelo objeto de esta ficha.
 
@@ -90,7 +90,7 @@ La comparativa con Gemma 2 2B es directa al compartir arquitectura y tamaño; el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a075
+- Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a075
 - Repositorio TRL: https://github.com/huggingface/trl
 - Documentación de Gemma 2 (Google): no disponible en la información proporcionada.
 - Paper de Gemma 2: no disponible en la información proporcionada.

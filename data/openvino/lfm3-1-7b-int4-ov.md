@@ -6,7 +6,7 @@ LFM3-1.7B-int4-ov es la conversión al formato OpenVINO IR del modelo LFM3-1.7B 
 
 La relevancia de esta ficha radica en que permite ejecutar un LLM de 1.7B en equipos sin GPU dedicada, con un repositorio de solo 1,1 GB gracias a la cuantización INT4 asimétrica con group_size 64. Es una opción práctica para despliegues en portátiles, mini-PC y servidores de borde con CPU Intel, y para integrarse en OpenVINO Model Server (OVMS) exponiendo una API compatible con OpenAI.
 
-La información disponible sobre el modelo base es limitada: la model card de esta conversión no detalla la arquitectura interna de LFM3, los datos de entrenamiento ni los idiomas soportados. Esta ficha se limita a lo que la model card y los metadatos de HuggingFace proporcionan, marcando como "no disponible" todo aquello que no se ha publicado en la información consultada.
+La información disponible sobre el modelo base es limitada: la model card de esta conversión no detalla la arquitectura interna de LFM3, los datos de entrenamiento ni los idiomas soportados. Esta ficha se limita a lo que la model card y los metadatos de Hugging Face proporcionan, marcando como "no disponible" todo aquello que no se ha publicado en la información consultada.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/LFM3-1.7B-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/LFM3-1.7B-int4-ov
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Creador LiquidAI: https://huggingface.co/LiquidAI

@@ -6,7 +6,7 @@ El modelo `HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-04
 
 No se trata de un modelo final de producto, sino de un checkpoint intermedio de una politica en entrenamiento. El propio autor lo etiqueta como "Research use only" y en checkpoints hermanos de la misma familia se indica explicitamente que no se reclama ninguna capacidad medica ni garantia de seguridad downstream. Esto lo convierte en material de auditoria e investigacion sobre metodos de RL con rubricas, mas que en un modelo listo para produccion clinica.
 
-Arquitectura, tamano y contexto heredan de la familia Qwen3: transformer denso (sin MoE), alrededor de 4.000 millones de parametros y una ventana de contexto nativa de 262.144 tokens en el modelo base. El repositorio (25,7 GB) contiene pesos en BF16 para inferencia y un subdirectorio `original_checkpoint/` con los ficheros nativos de veRL. No se han publicado resultados de benchmarks, ni ficha de idiomas, ni datos de descargas o interacciones en HuggingFace en el momento de redactar esta ficha.
+Arquitectura, tamano y contexto heredan de la familia Qwen3: transformer denso (sin MoE), alrededor de 4.000 millones de parametros y una ventana de contexto nativa de 262.144 tokens en el modelo base. El repositorio (25,7 GB) contiene pesos en BF16 para inferencia y un subdirectorio `original_checkpoint/` con los ficheros nativos de veRL. No se han publicado resultados de benchmarks, ni ficha de idiomas, ni datos de descargas o interacciones en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-048 (este) | 4,02 B densos | 262.144 (heredado del base) | Ajuste RL con rubricas en linea | apache-2.0 en metadatos / "Research use only" en model card | HuggingFace, 0 descargas | Checkpoint intermedio, sin benchmarks |
+| qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-048 (este) | 4,02 B densos | 262.144 (heredado del base) | Ajuste RL con rubricas en linea | apache-2.0 en metadatos / "Research use only" en model card | Hugging Face, 0 descargas | Checkpoint intermedio, sin benchmarks |
 | Qwen/Qwen3-4B-Instruct-2507 | 4,02 B densos | 262.144 | Instruct, sin thinking | Apache 2.0 | Ampliamente desplegado | Modelo base de este checkpoint; soporte de tool calling y multilingue |
 | Qwen3-4B-Thinking-2507 | 4,02 B densos | 262.144 | Modo thinking explicito | Apache 2.0 | Ampliamente desplegado | Alternativa cuando se requiere razonamiento largo previo a la respuesta |
-| Checkpoints hermanos del mismo run (step-002, 003, 004, 024) | 4,02 B densos | 262.144 | Ajuste RL con rubricas en linea | Igual que este | HuggingFace, friendli.ai, featherless.ai | Distintos pasos del mismo entrenamiento; comparables entre si |
+| Checkpoints hermanos del mismo run (step-002, 003, 004, 024) | 4,02 B densos | 262.144 | Ajuste RL con rubricas en linea | Igual que este | Hugging Face, friendli.ai, featherless.ai | Distintos pasos del mismo entrenamiento; comparables entre si |
 
 No se dispone de datos de rendimiento comparado para situar este checkpoint frente a alternativas de la misma categoria.
 
@@ -91,13 +91,13 @@ No se dispone de datos de rendimiento comparado para situar este checkpoint fren
 - Sin modo thinking: tareas que requieran razonamiento extendido pueden rendir peor que en Qwen3-4B-Thinking-2507.
 - Idiomas soportados no declarados en la ficha; el comportamiento multilingue tras el ajuste RL no esta verificado.
 - Tool calling y comportamiento de agente no confirmados tras el ajuste; conviene revalidarlos si se van a usar en produccion.
-- Cero descargas y cero interacciones en HuggingFace: sin comunidad que haya validado el checkpoint ni reportado fallos.
+- Cero descargas y cero interacciones en Hugging Face: sin comunidad que haya validado el checkpoint ni reportado fallos.
 - Fecha de creacion futura respecto a la base tecnologica habitual (2026-10-01), dato a verificar si se integra en catalogos automaticos.
 - El repositorio incluye un directorio con ficheros nativos de veRL (solo parametros) que incrementa el tamano a 25,7 GB; no es necesario para inferencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-048
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-048
 - Checkpoint hermano step-003: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-003
 - Checkpoint hermano step-004: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-004
 - Checkpoint hermano step-002 en Featherless: https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-002

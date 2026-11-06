@@ -97,7 +97,7 @@ Resultados fuera de distribucion (regla enunciada en la pregunta, opcion "ningun
 
 | Modelo | Parametros | Contexto | acc / ECE | sure loss | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo | 8B + LoRA r16 (41,9 M) | 128.000 tokens (heredado) | 0.722 / 0.064 | 0.030 | llama3.1 | Adaptador en HuggingFace; backbone aparte |
+| Este modelo | 8B + LoRA r16 (41,9 M) | 128.000 tokens (heredado) | 0.722 / 0.064 | 0.030 | llama3.1 | Adaptador en Hugging Face; backbone aparte |
 | Tülu-3-8B-SFT sin ajustar | 8B | 128.000 tokens | 0.603 / 0.099 | 0.200 | llama3.1 | Modelo base publico |
 | Misma receta, solo supervisado | 8B + LoRA | 128.000 tokens | 0.708 / 0.070 | 0.317 | llama3.1 | Variante relacionada |
 | Misma receta desde DPO | 8B + LoRA | 128.000 tokens | 0.708 / 0.064 | 0.033 | llama3.1 | Variante relacionada |
@@ -120,7 +120,7 @@ El modelo destaca en calibracion (ECE 0.064) y coherencia (sure loss 0.030) fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praveenrajus/Llama-3.1-Tulu-3-8B-SFT-jevify-readout-coh
+- Modelo en Hugging Face: https://huggingface.co/Praveenrajus/Llama-3.1-Tulu-3-8B-SFT-jevify-readout-coh
 - Dataset jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench
 - Leaderboard de jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench#leaderboard
 - Hallazgos (readout fine-tuning y penalizacion de coherencia): https://github.com/uspraveen/Jevify/blob/main/docs/FINDINGS.md#18-readout-fine-tuning-and-what-a-coherence-penalty-adds

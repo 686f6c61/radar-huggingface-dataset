@@ -82,4 +82,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/deb3014/numbat
+- Repositorio en Hugging Face: https://huggingface.co/deb3014/numbat

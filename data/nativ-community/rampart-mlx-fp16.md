@@ -28,7 +28,7 @@ La relevancia de esta ficha en concreto es que reproduce el comportamiento del m
 
 La arquitectura es un transformer encoder tipo BERT en su variante MiniLM, con 6 capas, dimension oculta de 384 y un vocabulario de 19.730 piezas. Sobre la salida del encoder se anade una cabeza de clasificacion de tokens que produce 35 etiquetas en esquema BIO, cubriendo 17 tipos de entidad. El modelo resultante tiene 18,43 millones de parametros, lo que lo situa en la gama de modelos de NER ligeros aptos para inferencia en tiempo real sobre CPU o GPU integrada.
 
-Esta publicacion no es un reentrenamiento, sino una conversion: el repositorio upstream solo distribuye `onnx/model_q4.onnx`, y el script `convert_from_onnx.py` incluido en este repositorio lee los inicializadores ONNX, los mapea a los nombres de parametro de BERT en HuggingFace y escribe safetensors MLX en el layout de mlx-vlm. Por tanto, los valores almacenados son los pesos ya cuantizados que libero National Design Studio, no el checkpoint de entrenamiento previo a la cuantizacion, que no se ha publicado. No hay informacion disponible en esta ficha sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (no son habituales en un clasificador de tokens). Se sabe que el modelo upstream se entreno con los valores de SSN, tarjetas de pago e IP ya enmascarados por la capa determinista previa.
+Esta publicacion no es un reentrenamiento, sino una conversion: el repositorio upstream solo distribuye `onnx/model_q4.onnx`, y el script `convert_from_onnx.py` incluido en este repositorio lee los inicializadores ONNX, los mapea a los nombres de parametro de BERT en Hugging Face y escribe safetensors MLX en el layout de mlx-vlm. Por tanto, los valores almacenados son los pesos ya cuantizados que libero National Design Studio, no el checkpoint de entrenamiento previo a la cuantizacion, que no se ha publicado. No hay informacion disponible en esta ficha sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (no son habituales en un clasificador de tokens). Se sabe que el modelo upstream se entreno con los valores de SSN, tarjetas de pago e IP ya enmascarados por la capa determinista previa.
 
 ## Capacidades
 
@@ -120,7 +120,7 @@ No se dispone de datos de benchmarks de otros modelos de PII comparables (por ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/rampart-mlx-fp16
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/rampart-mlx-fp16
 - Version 4-bit del mismo autor: https://huggingface.co/nativ-community/rampart-mlx-4bit
 - Modelo upstream: https://huggingface.co/nationaldesignstudio/rampart
 - Model card upstream: https://huggingface.co/nationaldesignstudio/rampart/blob/main/MODEL_CARD.md

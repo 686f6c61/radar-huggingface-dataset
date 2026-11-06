@@ -73,8 +73,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (agent193-20k) | 5,59 mil millones | no disponible | 39/60 (65,0%) en Lab01-PnP-Home20 | apache-2.0 | HuggingFace |
-| `lerobot/MolmoAct2-SO100_101-LeRobot` (modelo base) | no disponible | no disponible | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| Este modelo (agent193-20k) | 5,59 mil millones | no disponible | 39/60 (65,0%) en Lab01-PnP-Home20 | apache-2.0 | Hugging Face |
+| `lerobot/MolmoAct2-SO100_101-LeRobot` (modelo base) | no disponible | no disponible | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 | Checkpoint intermedio de 10K pasos (mismo ajuste) | 5,59 mil millones (misma arquitectura) | no disponible | 36/60 (60,0%) en Lab01-PnP-Home20 | apache-2.0 | no distribuido en este repositorio |
 
 No se dispone de datos comparativos con otras politicas de la misma categoria (por ejemplo, SmolVLA, ACT u otras alternativas para SO-101) en la informacion proporcionada, por lo que esa comparacion queda como no disponible.
@@ -94,6 +94,6 @@ No se dispone de datos comparativos con otras politicas de la misma categoria (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-molmoact2-agent193-20k
+- Modelo en Hugging Face: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-molmoact2-agent193-20k
 - Modelo base: https://huggingface.co/lerobot/MolmoAct2-SO100_101-LeRobot
 - Dataset de entrenamiento: https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp-agent-yaw-v4-actonly-follow2

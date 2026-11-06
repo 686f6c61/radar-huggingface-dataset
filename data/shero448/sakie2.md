@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sakie2 es un adaptador LoRA de tipo text-to-image publicado por el usuario Shero448 en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base John6666/prefect-illustrious-xl-v15-sdxl, un checkpoint de la familia Illustrious XL (derivada de SDXL) orientado a ilustración anime. El adaptador introduce un concepto concreto —presumiblemente un personaje— activado mediante la palabra clave `sakie`, y está pensado para su uso dentro de pipelines de diffusers.
+Sakie2 es un adaptador LoRA de tipo text-to-image publicado por el usuario Shero448 en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base John6666/prefect-illustrious-xl-v15-sdxl, un checkpoint de la familia Illustrious XL (derivada de SDXL) orientado a ilustración anime. El adaptador introduce un concepto concreto —presumiblemente un personaje— activado mediante la palabra clave `sakie`, y está pensado para su uso dentro de pipelines de diffusers.
 
 El repositorio es de reducidas dimensiones (0,2 GB), lo que es coherente con un LoRA y no con un modelo completo. No se ha publicado información sobre el proceso de entrenamiento, el dataset utilizado, el número de pasos, el rango del adaptador ni hiperparámetros de entrenamiento. Tampoco hay datos de licencia, idiomas soportados ni benchmarks.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Shero448/sakie2 | LoRA de difusión | prefect-illustrious-xl-v15-sdxl | no disponible | no aplica | no disponible | HuggingFace |
-| John6666/prefect-illustrious-xl-v15-sdxl | Checkpoint de difusión | Illustrious XL / SDXL | no disponible | no aplica | no disponible | HuggingFace |
-| Illustrious XL (original) | Checkpoint de difusión | SDXL | no disponible | no aplica | no disponible | HuggingFace |
-| LoRA genéricos de personaje en Illustrious | LoRA de difusión | Illustrious XL | variable | no aplica | variable | HuggingFace |
+| Shero448/sakie2 | LoRA de difusión | prefect-illustrious-xl-v15-sdxl | no disponible | no aplica | no disponible | Hugging Face |
+| John6666/prefect-illustrious-xl-v15-sdxl | Checkpoint de difusión | Illustrious XL / SDXL | no disponible | no aplica | no disponible | Hugging Face |
+| Illustrious XL (original) | Checkpoint de difusión | SDXL | no disponible | no aplica | no disponible | Hugging Face |
+| LoRA genéricos de personaje en Illustrious | LoRA de difusión | Illustrious XL | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shero448/sakie2
+- Hugging Face: https://huggingface.co/Shero448/sakie2
 - Modelo base: https://huggingface.co/John6666/prefect-illustrious-xl-v15-sdxl
 - Archivos del repositorio: https://huggingface.co/Shero448/sakie2/tree/main

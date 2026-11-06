@@ -18,7 +18,7 @@ El modelo es solo texto: el torre de vision del modelo base no se incluye en est
 | Longitud de contexto | No disponible (el ejemplo de uso fija `-c 8192`, pero no se declara contexto maximo) |
 | Tipos de cuantizacion | IQ2_XXS (2,45 bits/peso), IQ2_M (2,93 bits/peso), Q2_K_XL (3,14 bits/peso); todos con tensores de maximo 4 bits |
 | Idiomas soportados | No disponible |
-| Licencia | apache-2.0 en los metadatos de HuggingFace; la model card indica que hereda la licencia del modelo base google/gemma-4-12B-it (ver limitaciones) |
+| Licencia | apache-2.0 en los metadatos de Hugging Face; la model card indica que hereda la licencia del modelo base google/gemma-4-12B-it (ver limitaciones) |
 | Formato de pesos | GGUF (llama.cpp) |
 | Modelo base | google/gemma-4-12B-it |
 | Metodo de cuantizacion | DASH-Q (con imatrix) |
@@ -101,7 +101,7 @@ En parametros, contexto, licencia y disponibilidad, ambas alternativas comparten
 - Cuantizacion agresiva de 2 bits: incluso con la mejora declarada de DASH-Q, la distribucion del siguiente token diverge del modelo sin cuantizar (KLD media de 1,90 a 3,56 segun variante). Es esperable degradacion en tareas sensibles a la precision.
 - Sin benchmarks de tarea: no hay datos de MMLU, HumanEval, GSM8K ni similares, por lo que el rendimiento real en tareas concretas no esta verificado de forma independiente.
 - Sin torre de vision: las capacidades multimodales del modelo base no estan disponibles en estos archivos.
-- Ambiguedad de licencia: los metadatos de HuggingFace indican apache-2.0, mientras que la model card afirma que se hereda la licencia del modelo base google/gemma-4-12B-it. Conviene verificar la licencia efectiva antes de cualquier uso comercial, ya que las licencias de la familia Gemma suelen incluir condiciones de uso especificas.
+- Ambiguedad de licencia: los metadatos de Hugging Face indican apache-2.0, mientras que la model card afirma que se hereda la licencia del modelo base google/gemma-4-12B-it. Conviene verificar la licencia efectiva antes de cualquier uso comercial, ya que las licencias de la familia Gemma suelen incluir condiciones de uso especificas.
 - Idiomas no declarados: no se especifica cobertura linguistica, por lo que el comportamiento multilingue es incierto.
 - Contexto no declarado: no se indica la longitud de contexto maxima del modelo base; el valor `-c 8192` del ejemplo es una configuracion de ejecucion, no una especificacion del modelo.
 - Riesgo de alucinacion: inherente a los modelos generativos de esta escala, y potencialmente mayor por la cuantizacion de 2 bits.
@@ -112,7 +112,7 @@ En parametros, contexto, licencia y disponibilidad, ambas alternativas comparten
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jkim96/gemma-4-12b-it-DASHQ-Q2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jkim96/gemma-4-12b-it-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio del metodo DASH-Q: https://github.com/JaeminK/dashq
 - Banner de DASH-Q: https://raw.githubusercontent.com/JaeminK/dashq/main/assets/dashq_banner.png

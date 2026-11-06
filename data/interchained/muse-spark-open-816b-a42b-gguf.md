@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Interchained/Muse-Spark-Open-816B-A42B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Interchained/Muse-Spark-Open-816B-A42B-GGUF
 - Modelo base (gated): https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - Herramienta de conversion Hearth: https://github.com/aiassistsecure/hearth
 - Perfil del autor de la conversion: https://huggingface.co/Interchained

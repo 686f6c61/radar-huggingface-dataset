@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inouye-lab/StarCraftMotion-checkpoints
+- Hugging Face: https://huggingface.co/inouye-lab/StarCraftMotion-checkpoints
 - Codigo: https://github.com/inouye-lab/StarCraftMotion
 - Dataset: https://huggingface.co/datasets/inouye-lab/StarCraftMotion
 - Paper (NeurIPS 2026): StarCraft Motion: A Dataset for Agent Simulation in Adversarial and Partially Observable Scenarios (Chen, Kim, Bai, Hare, Gao, Inouye)

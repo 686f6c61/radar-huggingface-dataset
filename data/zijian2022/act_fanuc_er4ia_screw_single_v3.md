@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zijian2022/act_fanuc_er4ia_screw_single_v3` es un checkpoint de politica de control robotico publicado en HuggingFace por el usuario `zijian2022`. El nombre del repositorio indica una politica de tipo ACT (Action Chunking Transformer) entrenada para una tarea concreta de atornillado ("screw") sobre un brazo industrial FANUC ER-4iA. No se trata de un modelo de lenguaje: es un modelo de imitacion (imitation learning) que mapea observaciones visuales y de estado del robot a una secuencia de acciones motoras.
+`zijian2022/act_fanuc_er4ia_screw_single_v3` es un checkpoint de politica de control robotico publicado en Hugging Face por el usuario `zijian2022`. El nombre del repositorio indica una politica de tipo ACT (Action Chunking Transformer) entrenada para una tarea concreta de atornillado ("screw") sobre un brazo industrial FANUC ER-4iA. No se trata de un modelo de lenguaje: es un modelo de imitacion (imitation learning) que mapea observaciones visuales y de estado del robot a una secuencia de acciones motoras.
 
 El modelo tiene 51.670.663 parametros (51,67 millones), un orden de magnitud propio de las politicas ACT de referencia, y el repositorio ocupa 0,2 GB, lo que es coherente con pesos almacenados en precision de 32 bits (~207 MB de pesos mas ficheros auxiliares). Cuenta con 12 descargas y 0 likes en el momento de la consulta, y se publico el 9 de octubre de 2026.
 
@@ -57,7 +57,7 @@ Comparativa orientativa por categoria; los datos marcados como no disponibles no
 
 | Modelo | Parametros | Tipo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zijian2022/act_fanuc_er4ia_screw_single_v3` | 51,67 M | ACT (inferido) | Atornillado, FANUC ER-4iA | no disponible | HuggingFace, 12 descargas |
+| `zijian2022/act_fanuc_er4ia_screw_single_v3` | 51,67 M | ACT (inferido) | Atornillado, FANUC ER-4iA | no disponible | Hugging Face, 12 descargas |
 | ACT de referencia (implementacion LeRobot) | no disponible en esta busqueda (del orden de 50 M en la configuracion por defecto) | ACT | Manipulacion general, multi-tarea | Apache-2.0 en el repositorio original (no verificado aqui) | Publica |
 | Diffusion Policy | no disponible en esta busqueda | Politica generativa por difusion | Manipulacion general | no disponible | Publica |
 | Politicas VLA (vision-language-action) | cientos de millones a miles de millones | Transformer multimodal | Manipulacion guiada por lenguaje | variable | Publica |
@@ -87,7 +87,7 @@ La diferencia practica mas relevante es el alcance: este checkpoint resuelve una
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zijian2022/act_fanuc_er4ia_screw_single_v3
+- Repositorio en Hugging Face: https://huggingface.co/zijian2022/act_fanuc_er4ia_screw_single_v3
 - Perfil del autor: https://huggingface.co/zijian2022
 - Referencia de la arquitectura ACT (paper original de Action Chunking with Transformers, Zhao et al.): no disponible en la informacion proporcionada
 - Documentacion del ecosistema LeRobot para politicas ACT: no disponible en la informacion proporcionada

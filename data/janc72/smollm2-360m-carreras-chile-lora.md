@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Janc72/smollm2-360m-carreras-chile-lora | ~360M (base) + adaptador LoRA | No disponible | Adaptador LoRA de dominio (carreras Chile) sobre SmolLM2 | Apache 2.0 (con restricciones por datos) | HuggingFace, 13 descargas |
-| HuggingFaceTB/SmolLM2-360M-Instruct | ~360M | No disponible en la información | Modelo base instructivo generalista | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-135M-Instruct | ~135M | No disponible en la información | Modelo base instructivo más pequeño | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct | ~1,7B | No disponible en la información | Modelo base instructivo mayor | Apache 2.0 | HuggingFace |
+| Janc72/smollm2-360m-carreras-chile-lora | ~360M (base) + adaptador LoRA | No disponible | Adaptador LoRA de dominio (carreras Chile) sobre SmolLM2 | Apache 2.0 (con restricciones por datos) | Hugging Face, 13 descargas |
+| HuggingFaceTB/SmolLM2-360M-Instruct | ~360M | No disponible en la información | Modelo base instructivo generalista | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-135M-Instruct | ~135M | No disponible en la información | Modelo base instructivo más pequeño | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct | ~1,7B | No disponible en la información | Modelo base instructivo mayor | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas de la misma tarea (asistentes de orientación vocacional en español para Chile) no está disponible en la información proporcionada.
 
@@ -94,7 +94,7 @@ La comparación con alternativas de la misma tarea (asistentes de orientación v
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Janc72/smollm2-360m-carreras-chile-lora
+- Hugging Face del adaptador: https://huggingface.co/Janc72/smollm2-360m-carreras-chile-lora
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Paper de referencia citado en los tags (arXiv:2502.02737): https://arxiv.org/abs/2502.02737
 - Repositorio de datos, código del taller y registro de experimentos: no publicado (forma parte del informe académico según el autor)

@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparables de los modelos base en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-906d-tail-cpu3
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-906d-tail-cpu3
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-heist
 - Linaje previo (94cd r2): https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-94cd-tail-r2
 - Autor del walker upstream: https://huggingface.co/juicenv

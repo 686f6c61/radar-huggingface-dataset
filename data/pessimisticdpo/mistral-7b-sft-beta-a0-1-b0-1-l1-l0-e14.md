@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e14` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. Por el identificador, parece tratarse de un ajuste fino (fine-tuning) derivado de `HuggingFaceH4/mistral-7b-sft-beta`, el checkpoint SFT de Mistral-7B que se hizo popular como punto de partida del entrenamiento con DPO de Zephyr-7B. El sufijo `a0.1-b0.1-L1-l0-e14` sugiere hiperparametros de un experimento (posiblemente alpha, beta, capa, lambda y numero de epocas), pero el autor no documenta su significado.
+`PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e14` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. Por el identificador, parece tratarse de un ajuste fino (fine-tuning) derivado de `HuggingFaceH4/mistral-7b-sft-beta`, el checkpoint SFT de Mistral-7B que se hizo popular como punto de partida del entrenamiento con DPO de Zephyr-7B. El sufijo `a0.1-b0.1-L1-l0-e14` sugiere hiperparametros de un experimento (posiblemente alpha, beta, capa, lambda y numero de epocas), pero el autor no documenta su significado.
 
-El repositorio no incluye model card real: el README es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`. No se declara licencia, idiomas, pipeline, datos de entrenamiento ni resultados de evaluacion, y el modelo registra cero descargas y cero likes en el momento de la consulta. Se trata, por tanto, de un artefacto de investigacion sin documentar.
+El repositorio no incluye model card real: el README es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`. No se declara licencia, idiomas, pipeline, datos de entrenamiento ni resultados de evaluacion, y el modelo registra cero descargas y cero likes en el momento de la consulta. Se trata, por tanto, de un artefacto de investigacion sin documentar.
 
 Su relevancia es limitada y acotada al ambito de la reproducibilidad experimental: puede interesar a quien investigue variantes de DPO (el nombre del autor apunta a una formulacion "pesimista" de DPO) y quiera inspeccionar el checkpoint. Para cualquier uso en produccion, la ausencia de licencia, de documentacion y de validacion publica lo convierte en una opcion no recomendable sin una verificacion previa exhaustiva.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y acotada al ambito de la reproducibilidad experimenta
 
 No hay informacion publicada sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. El identificador del modelo apunta a una secuencia de ajuste fino supervisado (SFT) seguida de alguna variante de optimizacion por preferencias, presumiblemente DPO ("Direct Preference Optimization") con una formulacion que el autor denomina "pesimista", pero no se aporta ni el articulo, ni los hiperparametros, ni la composicion del dataset. Los sufijos `a0.1`, `b0.1`, `L1`, `l0` y `e14` no estan explicados en la model card.
 
-Conviene senalar un detalle tecnico relevante para evitar malinterpretaciones: el tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de model card de HuggingFace. No es un articulo que describa este modelo ni su metodo de entrenamiento, por lo que no debe tomarse como referencia metodologica.
+Conviene senalar un detalle tecnico relevante para evitar malinterpretaciones: el tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de model card de Hugging Face. No es un articulo que describa este modelo ni su metodo de entrenamiento, por lo que no debe tomarse como referencia metodologica.
 
 El tamano del repositorio (0,2 GB) es el unico dato objetivo disponible sobre el contenido. Es consistente con adaptadores LoRA, con un checkpoint parcialmente subido o con pesos podados, pero no con un modelo de 7B completo en precision de 16 bits. Sin una inspeccion directa de los ficheros no es posible determinar cual de estos escenarios se cumple.
 
@@ -90,7 +90,7 @@ Frente a estas alternativas, el modelo analizado no aporta ninguna ventaja verif
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e14
+- Repositorio del modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e14
 - Modelo base presumible (no confirmado por el autor): https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Articulo citado en el tag `arxiv:1910.09700` (calculadora de impacto ambiental, no articulo del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automatico: https://mlco2.github.io/impact

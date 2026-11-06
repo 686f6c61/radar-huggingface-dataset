@@ -6,7 +6,7 @@
 
 El contenido se organiza en torno al alcance de una pregunta de investigación, una comparación propuesta con baselines emparejados, contexto de evaluación (VQAv2, GQA, OK-VQA), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor separa explícitamente planes e hipótesis de resultados completados, y advierte de que no reclama mejoras en benchmarks, ablaciones terminadas, código publicado ni checkpoint entrenado.
 
-Los metadatos de HuggingFace lo etiquetan con el pipeline `visual-question-answering` y el tag `transformer`, pero el tamaño declarado del repositorio es de 0.0 GB y el recuento de parámetros en safetensors es de 16.576, valores incompatibles con un modelo transformer funcional para VQA. Se trata, por tanto, de un artefacto documental más que de un modelo desplegable.
+Los metadatos de Hugging Face lo etiquetan con el pipeline `visual-question-answering` y el tag `transformer`, pero el tamaño declarado del repositorio es de 0.0 GB y el recuento de parámetros en safetensors es de 16.576, valores incompatibles con un modelo transformer funcional para VQA. Se trata, por tanto, de un artefacto documental más que de un modelo desplegable.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Los metadatos de HuggingFace lo etiquetan con el pipeline `visual-question-answe
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ninguna arquitectura de red neuronal ni proceso de entrenamiento. El autor indica que el repositorio es una nota exploratoria y que «does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint». El tag `transformer` aparece en los metadatos de HuggingFace, pero no hay respaldo técnico en la documentación disponible sobre capas, atención, tokenizador, número de tokens de entrenamiento, composición del dataset ni técnicas de alineación como RLHF o DPO.
+La model card no describe ninguna arquitectura de red neuronal ni proceso de entrenamiento. El autor indica que el repositorio es una nota exploratoria y que «does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint». El tag `transformer` aparece en los metadatos de Hugging Face, pero no hay respaldo técnico en la documentación disponible sobre capas, atención, tokenizador, número de tokens de entrenamiento, composición del dataset ni técnicas de alineación como RLHF o DPO.
 
 El único material descrito son notas en Markdown (`paper_notes.md` y `README.md`) con hipótesis, referencias a datasets de evaluación (VQAv2, GQA, OK-VQA) y propuestas de comparación con baselines. Según el propio texto, cualquier resultado que se añada en el futuro debería incluir versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que confirma que en el estado actual no existe tal evidencia.
 
@@ -90,5 +90,5 @@ No procede una comparativa directa con modelos de VQA como BLIP-2, LLaVA o Instr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/blrtanvi/visual-question-answering
+- Hugging Face: https://huggingface.co/blrtanvi/visual-question-answering
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

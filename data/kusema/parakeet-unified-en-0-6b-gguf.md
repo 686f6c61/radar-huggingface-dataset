@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kusema/parakeet-unified-en-0.6b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/kusema/parakeet-unified-en-0.6b-gguf
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Repositorio de conversión GGUF: https://huggingface.co/handy-computer/parakeet-unified-en-0.6b-gguf
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

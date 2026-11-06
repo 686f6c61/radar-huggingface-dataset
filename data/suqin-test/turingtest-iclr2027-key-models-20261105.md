@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | `qwen25-3b-shp-sft` (este repo) | 3B | no disponible | no disponible | Pesos safetensors publicos | Checkpoint de investigacion |
-| Qwen2.5-3B (base) | 3B | 32K (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | HuggingFace oficial | Referencia base del ajuste |
-| Llama-3-8B (base) | 8B | 8K (segun Meta) | Llama 3 Community License | HuggingFace oficial | Referencia base del ajuste |
+| Qwen2.5-3B (base) | 3B | 32K (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | Hugging Face oficial | Referencia base del ajuste |
+| Llama-3-8B (base) | 8B | 8K (segun Meta) | Llama 3 Community License | Hugging Face oficial | Referencia base del ajuste |
 | `qwen25-7b-shp-sft` (este repo) | 7B | no disponible | no disponible | Pesos safetensors publicos | Checkpoint de investigacion |
 
 Las cifras de contexto y licencia de los modelos base se citan a titulo orientativo a partir de la documentacion publica de sus desarrolladores; el repositorio analizado no las declara.
@@ -94,5 +94,5 @@ Las cifras de contexto y licencia de los modelos base se citan a titulo orientat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Suqin-Test/turingtest-iclr2027-key-models-20261105
+- Repositorio en Hugging Face: https://huggingface.co/Suqin-Test/turingtest-iclr2027-key-models-20261105
 - Paper, blog, repositorio de codigo y demos: no disponibles en la informacion proporcionada.

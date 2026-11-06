@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fibo-2.0-dev MFlux Q6 (este) | no disponible | no disponible | safetensors MLX 6 bits, 10,3 GB | fibo-2.0-dev-license | HuggingFace, 107 descargas |
-| Fibo-2.0-dev MFlux BF16 | no disponible | no disponible | safetensors MLX BF16, 25,1 GB | fibo-2.0-dev-license | HuggingFace |
-| Fibo-2.0-dev MFlux Q4 | no disponible | no disponible | safetensors MLX 4 bits, 7,2 GB | fibo-2.0-dev-license | HuggingFace |
-| briaai/Fibo-2.0-dev (original) | no disponible | no disponible | no disponible | fibo-2.0-dev-license | HuggingFace |
+| Fibo-2.0-dev MFlux Q6 (este) | no disponible | no disponible | safetensors MLX 6 bits, 10,3 GB | fibo-2.0-dev-license | Hugging Face, 107 descargas |
+| Fibo-2.0-dev MFlux BF16 | no disponible | no disponible | safetensors MLX BF16, 25,1 GB | fibo-2.0-dev-license | Hugging Face |
+| Fibo-2.0-dev MFlux Q4 | no disponible | no disponible | safetensors MLX 4 bits, 7,2 GB | fibo-2.0-dev-license | Hugging Face |
+| briaai/Fibo-2.0-dev (original) | no disponible | no disponible | no disponible | fibo-2.0-dev-license | Hugging Face |
 
 La comparativa mas directa es con las otras variantes de cuantizacion del mismo modelo: Q6 ofrece un equilibrio entre fidelidad y tamano (10,3 GB) frente a BF16 (25,1 GB) y Q4 (7,2 GB). No se dispone de datos de benchmarks que permitan comparar la calidad de salida entre variantes ni con otros modelos de texto-a-imagen de la competencia.
 
@@ -84,7 +84,7 @@ La comparativa mas directa es con las otras variantes de cuantizacion del mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q6
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q6
 - Modelo original: https://huggingface.co/briaai/Fibo-2.0-dev
 - Licencia del modelo original: https://huggingface.co/briaai/Fibo-2.0-dev
 - MFlux (implementacion MLX): https://github.com/filipstrand/mflux

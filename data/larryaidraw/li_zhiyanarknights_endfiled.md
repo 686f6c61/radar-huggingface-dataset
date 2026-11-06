@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un LoRA (Low-Rank Adaptation) para generación de imágenes, diseñado para reproducir al personaje Li Zhiyan (李织烟) del videojuego *Arknights: Endfield*. El modelo ha sido publicado por el usuario LarryAIDraw en HuggingFace, aunque en otras plataformas como Tensor.Art o Civitai aparece atribuido al autor "reprinter". Se trata de un adaptador de personaje que debe combinarse con un modelo base de difusión de la familia Illustrious (una variante de Stable Diffusion XL especializada en ilustración anime).
+Este repositorio contiene un LoRA (Low-Rank Adaptation) para generación de imágenes, diseñado para reproducir al personaje Li Zhiyan (李织烟) del videojuego *Arknights: Endfield*. El modelo ha sido publicado por el usuario LarryAIDraw en Hugging Face, aunque en otras plataformas como Tensor.Art o Civitai aparece atribuido al autor "reprinter". Se trata de un adaptador de personaje que debe combinarse con un modelo base de difusión de la familia Illustrious (una variante de Stable Diffusion XL especializada en ilustración anime).
 
 El LoRA permite generar al personaje con sus rasgos distintivos: cabello blanco y verde azulado, cola de caballo alta, orejas tipo pluma, marca en la cabeza, atuendo con capas y paneles transparentes, crop top negro, botas altas, guantes, medias rojas y solapa frontal. El tamaño del repositorio es de 0.2 GB, lo que corresponde a un adaptador de peso ligero. Su relevancia radica en que facilita la creación de fan art, ilustraciones y contenido visual del personaje sin necesidad de entrenar un modelo completo, y es compatible con el ecosistema de herramientas de difusión más extendido.
 
@@ -23,7 +23,7 @@ El LoRA permite generar al personaje con sus rasgos distintivos: cabello blanco 
 
 Al tratarse de un LoRA, no es un modelo autónomo sino un adaptador de bajo rango que modifica los pesos de un modelo base. El modelo base recomendado es Illustrious, una familia derivada de Stable Diffusion XL (SDXL) especializada en estética anime. El LoRA se entrena sobre un conjunto de imágenes del personaje Li Zhiyan, ajustando las capas de atención cruzada y los bloques de difusión para inducir la aparición de los atributos visuales del personaje cuando se usa en prompts.
 
-No se dispone de información pública sobre el número de imágenes de entrenamiento, el proceso de etiquetado, ni si se emplearon técnicas de regularización o fine-tuning adicional. El repositorio de HuggingFace solo incluye la licencia y no ofrece detalles técnicos adicionales. La ausencia de una model card completa limita el conocimiento sobre hiperparámetros, épocas o datasets utilizados.
+No se dispone de información pública sobre el número de imágenes de entrenamiento, el proceso de etiquetado, ni si se emplearon técnicas de regularización o fine-tuning adicional. El repositorio de Hugging Face solo incluye la licencia y no ofrece detalles técnicos adicionales. La ausencia de una model card completa limita el conocimiento sobre hiperparámetros, épocas o datasets utilizados.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LarryAIDraw/Li_zhiyanArknights_Endfiled
+- Repositorio en Hugging Face: https://huggingface.co/LarryAIDraw/Li_zhiyanArknights_Endfiled
 - Ficha en TensorHub Art: https://tensorhub.art/models/990551472062097350
 - Ficha en Tensor.Art: https://tensor.art/models/990551472062097350
 - Ficha en Civitai: https://civitai.com/models/2559422/li-zhiyanarknights-endfield

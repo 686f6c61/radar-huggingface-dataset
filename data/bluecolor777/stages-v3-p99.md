@@ -91,7 +91,7 @@ El modelo supera a su predecesor directo (Qwen3.5-35BA3B) en SWE-bench Verified 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bluecolor777/stages-v3-p99
+- Repositorio Hugging Face: https://huggingface.co/bluecolor777/stages-v3-p99
 - Blog de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Repositorio relacionado del mismo autor: https://huggingface.co/bluecolor777/stages-v3
 - Repositorio relacionado del mismo autor: https://huggingface.co/bluecolor777/v3

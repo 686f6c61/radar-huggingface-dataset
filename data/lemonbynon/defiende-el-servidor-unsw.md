@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Defiende el servidor - v2 (bosque_aleatorio) es un clasificador binario tabular entrenado para distinguir entre trafico de red normal (clase 0) y trafico de ataque (clase 1) sobre el dataset UNSW-NB15. Lo desarrolla LemonBynon como proyecto academico de MLOps de la Universidad Externado de Colombia, y se publica en HuggingFace como un artefacto reproducible con trazabilidad completa (commit de codigo, version de datos en DVC, run de MLflow y hash SHA-256 del modelo).
+Defiende el servidor - v2 (bosque_aleatorio) es un clasificador binario tabular entrenado para distinguir entre trafico de red normal (clase 0) y trafico de ataque (clase 1) sobre el dataset UNSW-NB15. Lo desarrolla LemonBynon como proyecto academico de MLOps de la Universidad Externado de Colombia, y se publica en Hugging Face como un artefacto reproducible con trazabilidad completa (commit de codigo, version de datos en DVC, run de MLflow y hash SHA-256 del modelo).
 
 Tecnicamente no es un modelo de lenguaje ni una red neuronal: es un `RandomForestClassifier` de scikit-learn serializado con joblib, encapsulado en un `Pipeline` que incluye imputacion, escalado y one-hot encoding ajustados unicamente con el conjunto de entrenamiento. La decision de clasificacion se toma aplicando un umbral de 0.533862 sobre la probabilidad de ataque, elegido en validacion para maximizar el recall manteniendo una tasa de falsos positivos (FPR) igual o inferior al 5%.
 
@@ -86,8 +86,8 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Tipo | Dataset | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Defiende el servidor - v2 (bosque_aleatorio) | RandomForest (scikit-learn) | UNSW-NB15 | no aplica | other | HuggingFace |
-| Defiende el servidor - v1 | no disponible (version previa del mismo proyecto) | UNSW-NB15 | no aplica | no disponible | HuggingFace (referenciada en la model card) |
+| Defiende el servidor - v2 (bosque_aleatorio) | RandomForest (scikit-learn) | UNSW-NB15 | no aplica | other | Hugging Face |
+| Defiende el servidor - v1 | no disponible (version previa del mismo proyecto) | UNSW-NB15 | no aplica | no disponible | Hugging Face (referenciada en la model card) |
 | Alternativas de deteccion de intrusiones sobre UNSW-NB15 | no disponible | UNSW-NB15 | no aplica | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LemonBynon/defiende-el-servidor-unsw
+- Modelo en Hugging Face: https://huggingface.co/LemonBynon/defiende-el-servidor-unsw
 - Repositorio de codigo (referenciado en la model card, commit `721c5ae0065a299464c22f215f07f756f76edb70`): no disponible como URL en la informacion proporcionada
 - Run de MLflow `1dce89df97e342fd9821e0646ce6b28e`: no disponible como URL publica en la informacion proporcionada
 - Dataset UNSW-NB15: no disponible como enlace en la informacion proporcionada

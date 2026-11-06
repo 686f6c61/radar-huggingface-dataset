@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Savage-Fury69/ppo-Pyramids` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una política neuronal que controla un agente dentro del entorno de simulación denominado Pyramids, uno de los escenarios de ejemplo de Unity ML-Agents. El autor del repositorio es el usuario de HuggingFace Savage-Fury69 y el repositorio fue creado el 24 de septiembre de 2026, con un tamano declarado de 0.0 GB.
+El modelo `Savage-Fury69/ppo-Pyramids` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una política neuronal que controla un agente dentro del entorno de simulación denominado Pyramids, uno de los escenarios de ejemplo de Unity ML-Agents. El autor del repositorio es el usuario de Hugging Face Savage-Fury69 y el repositorio fue creado el 24 de septiembre de 2026, con un tamano declarado de 0.0 GB.
 
-La relevancia de este tipo de artefactos es acotada: sirve como ejemplo reproducible de un agente entrenado que puede cargarse en el ecosistema ML-Agents, reanudarse para continuar el entrenamiento o visualizarse jugando directamente en el navegador a través de la plataforma de Unity en HuggingFace. No aporta innovaciones de arquitectura ni resultados novedosos; su valor es exclusivamente práctico y educativo dentro del flujo de trabajo de ML-Agents.
+La relevancia de este tipo de artefactos es acotada: sirve como ejemplo reproducible de un agente entrenado que puede cargarse en el ecosistema ML-Agents, reanudarse para continuar el entrenamiento o visualizarse jugando directamente en el navegador a través de la plataforma de Unity en Hugging Face. No aporta innovaciones de arquitectura ni resultados novedosos; su valor es exclusivamente práctico y educativo dentro del flujo de trabajo de ML-Agents.
 
 Hay que subrayar que la model card es prácticamente una plantilla genérica generada automáticamente por la herramienta de publicación de ML-Agents: no incluye descripción de la arquitectura de red, número de pasos de entrenamiento, hiperparámetros, recompensas obtenidas ni licencia. La información disponible es, por tanto, muy limitada.
 
@@ -33,14 +33,14 @@ El flujo de trabajo estándar de ML-Agents implica entrenamiento on-policy con P
 - Inferencia de acciones a partir de observaciones del entorno en cada paso de simulación.
 - Posibilidad de reanudar el entrenamiento mediante `mlagents-learn <config>.yaml --run-id=<run_id> --resume`.
 - Exportación a formatos consumibles por el runtime de Unity (`.nn` / `.onnx`, según lo indicado en la model card).
-- Visualización del agente jugando en el navegador a través de la plataforma de Unity en HuggingFace.
+- Visualización del agente jugando en el navegador a través de la plataforma de Unity en Hugging Face.
 - No dispone de generación de texto, razonamiento, código, matemáticas, visión general, tool calling, capacidad de agente multi-paso basada en lenguaje, ni capacidades multilingües. No hay modo "thinking" ni procesamiento de audio.
 
 ## Casos de uso
 
 - Reproducción de experimentos de aprendizaje por refuerzo: un investigador puede descargar el agente y reanudar el entrenamiento con `--resume` para continuar desde el punto guardado y comparar curvas de recompensa en TensorBoard.
 - Docencia de ML-Agents: sirve como ejemplo mínimo de agente PPO ya entrenado para que estudiantes entiendan el ciclo observación-acción-recompensa dentro del ecosistema de Unity.
-- Demostración interactiva en navegador: mediante la plataforma de HuggingFace para agentes de Unity se puede cargar el fichero `.nn`/`.onnx` y visualizar el comportamiento del agente sin instalar el editor de Unity.
+- Demostración interactiva en navegador: mediante la plataforma de Hugging Face para agentes de Unity se puede cargar el fichero `.nn`/`.onnx` y visualizar el comportamiento del agente sin instalar el editor de Unity.
 - Punto de partida para fine-tuning con curriculum learning: al disponer de una política inicial, se puede aplicar un currículum de dificultad creciente sobre Pyramids en lugar de entrenar desde cero.
 - Pruebas de integración del runtime de inferencia: útil para validar que un pipeline de despliegue (Unity Sentis/Barracuda, ONNX Runtime) carga y ejecuta correctamente una política exportada.
 - Comparación de algoritmos en el mismo entorno: puede emplearse como referencia base frente a variantes como SAC o PPO con distintas configuraciones de red en el escenario Pyramids.
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - En términos generales, las políticas PPO de ML-Agents para entornos de ejemplo son redes pequenas que se ejecutan habitualmente en CPU sin necesidad de GPU dedicada; esta afirmación es genérica y no una medición del modelo concreto.
 - GPU recomendadas: no disponible para este modelo concreto; en la práctica, una política de este tipo no requiere GPU para inferencia.
 - Compatibilidad con GPU de consumo: no disponible, aunque previsiblemente innecesaria para la inferencia del agente.
-- Opciones de despliegue: runtime de Unity ML-Agents, Unity Sentis/Barracuda (ficheros `.nn`), ONNX Runtime (ficheros `.onnx`) y la propia plataforma de visualización de agentes de Unity en HuggingFace. vLLM, llama.cpp, Ollama y TGI no son aplicables porque no es un modelo de lenguaje.
+- Opciones de despliegue: runtime de Unity ML-Agents, Unity Sentis/Barracuda (ficheros `.nn`), ONNX Runtime (ficheros `.onnx`) y la propia plataforma de visualización de agentes de Unity en Hugging Face. vLLM, llama.cpp, Ollama y TGI no son aplicables porque no es un modelo de lenguaje.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Savage-Fury69/ppo-Pyramids | Agente PPO (ML-Agents) | Pyramids | no disponible | HuggingFace, 0 descargas, 0 likes |
+| Savage-Fury69/ppo-Pyramids | Agente PPO (ML-Agents) | Pyramids | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas concretas | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre modelos comparables concretos en la información proporcionada. Cualitativamente, los términos de comparación naturales serían otros agentes PPO publicados por la comunidad y por la organización oficial de Unity en HuggingFace para el mismo entorno Pyramids, pero no se aportan identificadores ni métricas en los datos recibidos.
+No se dispone de información sobre modelos comparables concretos en la información proporcionada. Cualitativamente, los términos de comparación naturales serían otros agentes PPO publicados por la comunidad y por la organización oficial de Unity en Hugging Face para el mismo entorno Pyramids, pero no se aportan identificadores ni métricas en los datos recibidos.
 
 ## Limitaciones y advertencias
 
@@ -81,9 +81,9 @@ No se dispone de información sobre modelos comparables concretos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Savage-Fury69/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/Savage-Fury69/ppo-Pyramids
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentación de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto de ML-Agents en HuggingFace: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
-- Tutorial largo de ML-Agents en HuggingFace: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organización de agentes de Unity en HuggingFace (para visualización en navegador): https://huggingface.co/unity
+- Tutorial corto de ML-Agents en Hugging Face: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial largo de ML-Agents en Hugging Face: https://huggingface.co/learn/deep-rl-course/unit5/introduction
+- Organización de agentes de Unity en Hugging Face (para visualización en navegador): https://huggingface.co/unity

@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos de navegacion UAV-VLN en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XuPeng23/AeroDPO
+- Hugging Face: https://huggingface.co/XuPeng23/AeroDPO
 - GitHub (repositorio oficial): https://github.com/XuPeng23/AeroDPO
 - Paper en ArXiv: https://arxiv.org/pdf/2608.07557
 - CatalyzEX (pagina del paper con codigo): https://www.catalyzex.com/paper/aerodpo-unleashing-lightweight-uav-navigation

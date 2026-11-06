@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`velsit56/minocasinoreview` es un repositorio alojado en HuggingFace que, a tenor de su contenido publicado, no contiene un modelo de inteligencia artificial sino un artefacto textual dedicado a reseñas de casinos en línea y verificación de licencias de operadores de juego. El autor identificado es el usuario `velsit56` y el repositorio no declara pipeline, licencia, idiomas ni etiquetas propias de un modelo entrenado (solo aparece la etiqueta genérica `region:us`).
+`velsit56/minocasinoreview` es un repositorio alojado en Hugging Face que, a tenor de su contenido publicado, no contiene un modelo de inteligencia artificial sino un artefacto textual dedicado a reseñas de casinos en línea y verificación de licencias de operadores de juego. El autor identificado es el usuario `velsit56` y el repositorio no declara pipeline, licencia, idiomas ni etiquetas propias de un modelo entrenado (solo aparece la etiqueta genérica `region:us`).
 
 El README del repositorio no describe arquitectura, parámetros, contexto ni proceso de entrenamiento: es un texto en inglés sobre cómo evaluar la credibilidad de operadores de casino offshore, con enlaces promocionales. No hay evidencia de pesos, tokenizador, configuración de transformer ni artefactos de inferencia en la información disponible. Las fechas de creación y actualización (2 de noviembre de 2026) son las únicas metadatos técnicos registrados, junto con cero descargas y cero likes.
 
@@ -78,7 +78,7 @@ No disponible. No se identifican modelos comparables porque el repositorio no co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/velsit56/minocasinoreview
+- Repositorio en Hugging Face: https://huggingface.co/velsit56/minocasinoreview
 - Enlace promocional citado en el README: https://mino-casino.club/
 - Paper: no disponible
 - Blog o documentación técnica: no disponible

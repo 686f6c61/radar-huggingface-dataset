@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - No se dispone de información oficial sobre requisitos de hardware específicos para MuScriptor-large.
 - Dado su tamaño de ≈1.3B parámetros, se estima que la inferencia en FP16 requiere al menos 8-10 GB de VRAM, por lo que podría ejecutarse en GPUs de consumo como una RTX 3080 o superior, aunque no está confirmado.
 - Para despliegue en producción, se recomendaría una GPU con 16 GB o más de VRAM (por ejemplo, RTX 4090, A100, H100) para manejar lotes y contextos largos.
-- No se han publicado opciones de despliegue específicas (vLLM, llama.cpp, etc.). Al ser un modelo de audio, probablemente se use con la librería `muscriptor` mencionada en HuggingFace, pero no hay documentación adicional.
+- No se han publicado opciones de despliegue específicas (vLLM, llama.cpp, etc.). Al ser un modelo de audio, probablemente se use con la librería `muscriptor` mencionada en Hugging Face, pero no hay documentación adicional.
 
 ## Comparativa con modelos similares
 
@@ -71,8 +71,8 @@ No se dispone de datos comparativos con otros modelos de transcripción musical 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MuScriptor/muscriptor-large
-- Repositorio espejo en HuggingFace: https://huggingface.co/cocktailpeanut/muscriptor-large
+- Modelo en Hugging Face: https://huggingface.co/MuScriptor/muscriptor-large
+- Repositorio espejo en Hugging Face: https://huggingface.co/cocktailpeanut/muscriptor-large
 - Código fuente en GitHub: https://github.com/muscriptor/muscriptor
 - Página del proyecto: https://muscriptor.github.io/
 - Ficha en "There's An AI For That": https://theresanaiforthat.com/model/muscriptor/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alfa101 es un modelo publicado en HuggingFace por el usuario Tamerrz (ID del repositorio: `Tamerrz/Alfa101`). El repositorio fue creado el 29 de octubre de 2026 y se distribuye bajo licencia Apache 2.0. Más allá de estos datos, la model card está vacía: el README únicamente contiene la declaración de la licencia, sin descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso.
+Alfa101 es un modelo publicado en Hugging Face por el usuario Tamerrz (ID del repositorio: `Tamerrz/Alfa101`). El repositorio fue creado el 29 de octubre de 2026 y se distribuye bajo licencia Apache 2.0. Más allá de estos datos, la model card está vacía: el README únicamente contiene la declaración de la licencia, sin descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso.
 
 A fecha de redacción de esta ficha, el modelo registra 0 descargas y 0 likes, lo que indica que no existe comunidad de usuarios ni evidencia de uso o validación por terceros. El campo de pipeline (tarea asociada) figura como "no disponible", por lo que ni siquiera puede determinarse si se trata de un modelo de generación de texto, visión, audio u otra modalidad.
 
@@ -71,5 +71,5 @@ no disponible. Al no conocerse la categoría, el tamaño ni la tarea del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tamerrz/Alfa101
+- Repositorio en Hugging Face: https://huggingface.co/Tamerrz/Alfa101
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repos de código o demos) en la búsqueda web. Los resultados obtenidos corresponden a contenido homónimo sin relación con este modelo (un canal de YouTube denominado ALFA 101, cuentas de TikTok y una LoRA ajena en Tensor.Art), por lo que se excluyen de esta ficha.

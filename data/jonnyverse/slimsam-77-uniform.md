@@ -73,7 +73,7 @@ SlimSAM se posiciona como una alternativa intermedia entre SAM original y Mobile
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/slimsam-77-uniform
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/slimsam-77-uniform
 - Modelo base original: https://huggingface.co/nielsr/slimsam-77-uniform
 - Repositorio con pesos ONNX similar (Xenova): https://huggingface.co/Xenova/slimsam-77-uniform
 - Código y paper de SlimSAM: https://github.com/czg1225/SlimSAM

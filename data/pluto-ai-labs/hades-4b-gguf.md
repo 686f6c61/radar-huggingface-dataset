@@ -108,11 +108,11 @@ La comparación se limita a parámetros, licencia y formato: no se dispone de re
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Pluto-AI-Labs/Hades-4B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Pluto-AI-Labs/Hades-4B-GGUF
 - Modelo base de la cuantización: https://huggingface.co/Pluto-AI-Labs/Hades-4B-Abliterated
 - Modelo original con la metodología y validación: https://huggingface.co/Pluto-AI-Labs/Hades-4B
 - Modelo de partida: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Organización Pluto AI Labs: https://huggingface.co/Pluto-AI-Labs
 - Paper del método de ablación: Arditi, A. et al., "Refusal in Language Models Is Mediated by a Single Direction", arXiv:2406.11717 — https://arxiv.org/abs/2406.11717
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

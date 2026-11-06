@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dapo-qwen3-4b-nonthinking-2048-20260919 | 4B (base) + LoRA r16 | No disponible (entrenamiento a 8192) | Adaptador LoRA DAPO para matematicas, sin thinking | No disponible | HuggingFace (repo de 0,3 GB) |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible en esta ficha | Modelo base instruct de proposito general | Apache 2.0 | HuggingFace |
+| dapo-qwen3-4b-nonthinking-2048-20260919 | 4B (base) + LoRA r16 | No disponible (entrenamiento a 8192) | Adaptador LoRA DAPO para matematicas, sin thinking | No disponible | Hugging Face (repo de 0,3 GB) |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible en esta ficha | Modelo base instruct de proposito general | Apache 2.0 | Hugging Face |
 | Otros adaptadores DAPO/GRPO de la misma familia | No disponible | No disponible | Ajuste por RL sobre Qwen3 | No disponible | No disponible |
 
 La comparacion con alternativas especificas de la misma categoria no esta disponible en la informacion proporcionada.
@@ -85,7 +85,7 @@ La comparacion con alternativas especificas de la misma categoria no esta dispon
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sandeep123/dapo-qwen3-4b-nonthinking-2048-20260919
+- Hugging Face del modelo: https://huggingface.co/sandeep123/dapo-qwen3-4b-nonthinking-2048-20260919
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio del framework de entrenamiento citado (veRL): https://github.com/volcengine/verl (commit `ed498f9fa5c726a6fb46b19bc59c5c33970053c7`)
 - Paper de DAPO: no disponible en la informacion proporcionada

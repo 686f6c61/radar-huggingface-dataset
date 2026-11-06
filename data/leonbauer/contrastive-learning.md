@@ -58,7 +58,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leonbauer/contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/leonbauer/contrastive-learning
 - Tutorial de aprendizaje contrastive en DataCamp: https://www.datacamp.com/tutorial/contrastive-learning
 - Survey sobre aprendizaje contrastive en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Tema "contrastive-learning" en GitHub: https://github.com/topics/contrastive-learning

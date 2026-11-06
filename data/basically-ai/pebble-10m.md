@@ -84,7 +84,7 @@ No se dispone de comparaciones publicadas con otros modelos de 10M de parámetro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/basically-ai/Pebble-10M
+- Modelo en Hugging Face: https://huggingface.co/basically-ai/Pebble-10M
 - Variante Chat: https://huggingface.co/basically-ai/Pebble-10M-Chat
 - Sitio web de basically AI: https://basicallyai.co/
 - Repositorio de soporte GGUF (llama.cpp): https://github.com/rootendpoint/basicallyai_llama.cpp_support

@@ -70,12 +70,12 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 - El corpus de entrenamiento incluye dominios específicos (ciencia, derecho, medicina, finanzas), por lo que el rendimiento en otros dominios podría ser inferior.
 - No se han documentado sesgos específicos, pero al ser un adaptador entrenado sobre datos de dominios concretos, podría heredar sesgos presentes en esos corpus.
 - La licencia MIT permite uso comercial sin restricciones, pero el modelo se ofrece sin garantías.
-- El repositorio en HuggingFace muestra 0 descargas y 0 likes, lo que sugiere que es un modelo reciente o poco utilizado; se recomienda validar su comportamiento en el caso de uso concreto antes de desplegarlo en producción.
+- El repositorio en Hugging Face muestra 0 descargas y 0 likes, lo que sugiere que es un modelo reciente o poco utilizado; se recomienda validar su comportamiento en el caso de uso concreto antes de desplegarlo en producción.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_te3-small)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_te3-small)
 - [Colección Queryn Embedding Adapters](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Documentación de BGE-M3](https://bge-model.com/bge/bge_m3.html)
-- [Página de BAAI/bge-m3 en HuggingFace](https://huggingface.co/BAAI/bge-m3)
+- [Página de BAAI/bge-m3 en Hugging Face](https://huggingface.co/BAAI/bge-m3)
 - [Documentación de Queryn en GitHub](https://github.com/Gigadelux/Queryn/blob/main/docs/Adapters.md)

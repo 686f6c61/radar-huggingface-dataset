@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo (MOS, latencia, WER) en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jmoraleses/folio-melo-fr-onnx
+- Modelo en Hugging Face: https://huggingface.co/jmoraleses/folio-melo-fr-onnx
 - MeloTTS (MyShell.ai): https://github.com/myshell-ai/MeloTTS
 - OpenVoice: no disponible en la informacion proporcionada (referenciado en la model card)
 - Proyecto Folio-iOS: https://github.com/jmoraleses/Folio-iOS (referenciado como origen, commit `90d5f2a`)

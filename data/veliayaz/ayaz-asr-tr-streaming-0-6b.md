@@ -18,7 +18,7 @@ La versión publicada es la v0.2, que reduce el WER en habla de YouTube del 20,4
 | Longitud de contexto | no disponible en tokens; ventana de contexto de audio de 560 ms en modo streaming |
 | Tipos de cuantizacion | int8 para despliegue en dispositivo (on-device); pesos PyTorch en precisión completa; exportación ONNX |
 | Idiomas soportados | 34: tr, de, en, fr, es, it, pt, nl, ru, uk, pl, cs, sk, sl, hr, bg, ro, hu, fi, et, lv, lt, sv, da, no, el, ar, he, hi, ja, ko, vi, zh |
-| Licencia | OpenMDW-1.1 (etiquetada como "other" en HuggingFace) |
+| Licencia | OpenMDW-1.1 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | NeMo (.nemo), ONNX; repo de 7,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -97,7 +97,7 @@ La comparación con Whisper large-v3 es cualitativa: este último ofrece más id
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VeliAyaz/ayaz-asr-tr-streaming-0.6b
+- Modelo en Hugging Face: https://huggingface.co/VeliAyaz/ayaz-asr-tr-streaming-0.6b
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Licencia OpenMDW-1.1: https://huggingface.co/VeliAyaz/ayaz-asr-tr-streaming-0.6b/blob/main/LICENSE
 - Referencia [1] Nemotron 3.5 ASR streaming 0.6b (arXiv:2506.00338): https://arxiv.org/abs/2506.00338

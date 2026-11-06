@@ -99,7 +99,7 @@ No se han encontrado modelos comparables en la información proporcionada. El mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leslie721007/Qiushi-Engine-Frontier-Advancement
+- Hugging Face: https://huggingface.co/leslie721007/Qiushi-Engine-Frontier-Advancement
 - Perfil del autor: https://huggingface.co/leslie721007
 - Modelo acompañante: https://huggingface.co/leslie721007/Qiushi-Engine-Principle-Guided-Frontier-Advancement
 - Paper de Qiushi Discovery Engine: https://www.semanticscholar.org/paper/End-to-end-autonomous-scientific-discovery-on-a-Yang-Chen/af7f8603542e9081b37e320d18af379436dac667

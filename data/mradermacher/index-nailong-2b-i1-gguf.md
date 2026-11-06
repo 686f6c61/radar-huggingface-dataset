@@ -37,10 +37,10 @@ Un punto que conviene tratar con cautela: la model card incluye una nota generic
 ## Capacidades
 
 - Generacion de texto conversacional: el repositorio esta etiquetado como `conversational`, lo que indica que el modelo base esta preparado para dialogos multi-turno.
-- Traduccion: el pipeline declarado en HuggingFace es `translation`; no se especifican los pares de idiomas soportados.
+- Traduccion: el pipeline declarado en Hugging Face es `translation`; no se especifican los pares de idiomas soportados.
 - Contexto largo: la etiqueta `long-context` indica que el modelo maneja ventanas extensas, aunque no se publica la longitud exacta en tokens.
 - Ejecucion local en hardware modesto: gracias a las cuantizaciones desde 0,8 GB, el modelo puede ejecutarse en CPU o en GPU de gama baja mediante llama.cpp y runtimes compatibles.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: solo se declara `en`; no hay listado de idiomas adicionales.
@@ -59,7 +59,7 @@ Un punto que conviene tratar con cautela: la model card incluye una nota generic
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen valores de MMLU, HumanEval, GSM8K, BLEU, COMET ni ninguna otra metrica. Tampoco se proporcionan datos de perplejidad por variante de cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, BLEU, COMET ni ninguna otra metrica. Tampoco se proporcionan datos de perplejidad por variante de cuantizacion.
 
 ## Requisitos de hardware
 
@@ -106,9 +106,9 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base Inde
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Index-Nailong-2B-i1-GGUF | 1,88 B | no disponible | apache-2.0 | GGUF | HuggingFace |
-| IndexTeam/Index-Nailong-2B (base) | 1,88 B | no disponible | apache-2.0 | safetensors | HuggingFace |
-| mradermacher/Index-Nailong-2B-GGUF (quants estaticos) | 1,88 B | no disponible | apache-2.0 | GGUF | HuggingFace |
+| mradermacher/Index-Nailong-2B-i1-GGUF | 1,88 B | no disponible | apache-2.0 | GGUF | Hugging Face |
+| IndexTeam/Index-Nailong-2B (base) | 1,88 B | no disponible | apache-2.0 | safetensors | Hugging Face |
+| mradermacher/Index-Nailong-2B-GGUF (quants estaticos) | 1,88 B | no disponible | apache-2.0 | GGUF | Hugging Face |
 | Alternativas de ~2 B de parametros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Para una comparacion significativa con otros modelos de ~2 B parametros orientados a traduccion o contexto largo seria necesario disponer de resultados de benchmarks del modelo base, que no se han publicado en la informacion consultada. Se recomienda ejecutar una evaluacion propia (por ejemplo, BLEU o COMET sobre un conjunto de referencia del dominio objetivo) antes de seleccionar este modelo frente a alternativas.
@@ -130,7 +130,7 @@ Para una comparacion significativa con otros modelos de ~2 B parametros orientad
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones i1: https://huggingface.co/mradermacher/Index-Nailong-2B-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones i1: https://huggingface.co/mradermacher/Index-Nailong-2B-i1-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Nailong-2B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Index-Nailong-2B-GGUF
 - Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#Index-Nailong-2B-i1-GGUF

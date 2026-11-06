@@ -72,9 +72,9 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XUUUUSID/olmo2-1b-sft-variant-D16
+- Repositorio Hugging Face: https://huggingface.co/XUUUUSID/olmo2-1b-sft-variant-D16
 - Modelo base OLMo-2-1B de Ai2: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Página oficial de OLMo 2: https://allenai.org/olmo2
 - Paper "OLMo 2 Furious" (arXiv): https://arxiv.org/abs/2501.00656
-- Colección OLMo 2 en HuggingFace: https://huggingface.co/collections/allenai/olmo-2
+- Colección OLMo 2 en Hugging Face: https://huggingface.co/collections/allenai/olmo-2
 - Repositorio de código OLMo en GitHub: https://github.com/allenai/OLMo

@@ -87,9 +87,9 @@ La comparación se limita a la propia familia Gemma 4 porque la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/linqingyuan/gemma-4-31B-it
+- Repositorio en Hugging Face: https://huggingface.co/linqingyuan/gemma-4-31B-it
 - Modelo base: https://huggingface.co/google/gemma-4-31B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación: https://ai.google.dev/gemma/docs/core

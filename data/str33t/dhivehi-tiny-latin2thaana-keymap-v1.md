@@ -68,8 +68,8 @@ El exact match tiene un techo bajo en el test de noticias porque muchas filas de
 
 | Modelo | Parámetros | Contexto | Precisión de caracteres (test noticias) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dhivehi-tiny-latin2thaana-keymap-v1 | 9M | no disponible | 0,919 | MIT | ONNX, HuggingFace |
-| dhivehi-byt5-latin2thaana-keymap-v1 | 300M | no disponible | 0,919 | MIT | HuggingFace |
+| dhivehi-tiny-latin2thaana-keymap-v1 | 9M | no disponible | 0,919 | MIT | ONNX, Hugging Face |
+| dhivehi-byt5-latin2thaana-keymap-v1 | 300M | no disponible | 0,919 | MIT | Hugging Face |
 
 Ambos modelos se centran en la transliteración dhivehi latino-Thaana. El modelo de 9M ofrece la misma precisión de caracteres que el de 300M en el test de noticias, con una latencia mucho menor y la ventaja de ejecutarse en el navegador sin servidor. No se conocen otros modelos comparables en el Hub para esta tarea específica.
 
@@ -83,7 +83,7 @@ Ambos modelos se centran en la transliteración dhivehi latino-Thaana. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/str33t/dhivehi-tiny-latin2thaana-keymap-v1
+- Hugging Face: https://huggingface.co/str33t/dhivehi-tiny-latin2thaana-keymap-v1
 - Paper: https://huggingface.co/str33t/dhivehi-tiny-latin2thaana-keymap-v1/blob/main/paper/small-enough-for-the-browser.pdf
 - GitHub (demo y evaluación): https://github.com/streetsolider/div-transliteration-web
 - GitHub (aplicación en producción): https://github.com/streetsolider/div-transliteration

@@ -30,7 +30,7 @@ El único modelo documentado en el repositorio es Snake, orientado a la decisió
 ## Capacidades
 
 - Decisión de movimiento en el juego Snake: la tarea declarada del modelo incluido, con un forward pass y una decisión por paso, sin texto generado.
-- Clasificación zero-shot: el pipeline declarado en HuggingFace es `zero-shot-classification`, lo que sugiere uso como cabecera de clasificación sobre etiquetas definidas en tiempo de inferencia.
+- Clasificación zero-shot: el pipeline declarado en Hugging Face es `zero-shot-classification`, lo que sugiere uso como cabecera de clasificación sobre etiquetas definidas en tiempo de inferencia.
 - Inferencia de baja latencia en dispositivo: aproximadamente 91 ms por decisión en un M5 Max, según la model card.
 - Ejecución íntegra en Apple Neural Engine: los 7 paquetes del modelo Snake están marcados como `fully_ane`, sin fallback a CPU/GPU por operaciones no soportadas.
 - Idiomas: únicamente inglés (`en`) según los metadatos del repositorio.
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible (no h
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anemll/system1-base-unsloth (Snake, Qwen3.5-0.8B + LoRA + cabeza de decisión) | ~0,8 mil millones (base) | 304 tokens de prefill | Decisión de movimiento / clasificación zero-shot en ANE | Apache 2.0 | HuggingFace, paquetes Core AI `.aimodel` |
-| unsloth/Qwen3.5-0.8B (modelo base) | ~0,8 mil millones | No disponible en la información proporcionada | Modelo de lenguaje general | No disponible en la información proporcionada | HuggingFace |
+| anemll/system1-base-unsloth (Snake, Qwen3.5-0.8B + LoRA + cabeza de decisión) | ~0,8 mil millones (base) | 304 tokens de prefill | Decisión de movimiento / clasificación zero-shot en ANE | Apache 2.0 | Hugging Face, paquetes Core AI `.aimodel` |
+| unsloth/Qwen3.5-0.8B (modelo base) | ~0,8 mil millones | No disponible en la información proporcionada | Modelo de lenguaje general | No disponible en la información proporcionada | Hugging Face |
 | Otros modelos de decisión para ANE | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la información proporcionada; la comparación se limita, por tanto, a parámetros, formato y licencia.
@@ -88,13 +88,13 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 - No se publican datos de entrenamiento, composición del dataset, número de tokens ni proceso de alineación, por lo que no es posible evaluar sesgos de forma fundamentada.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de decisiones incorrectas o poco calibradas al ser una cabeza entrenada para una tarea concreta; no se aportan métricas de precisión.
 - Licencia Apache 2.0, la misma que Qwen3.5-0.8B y Unsloth; se permite uso comercial con atribución según los términos de dicha licencia. El proyecto se declara no oficial y sin afiliación ni respaldo de Alibaba Cloud o Unsloth.
-- Inconsistencia de identificadores a tener en cuenta: los metadatos de HuggingFace apuntan al repositorio `anemll/system1-base-unsloth`, mientras que la model card describe el repositorio `anemll/system1-ane` y su carpeta `snake-stock-qwen3.5-unsloth`. Conviene verificar la ruta real antes de automatizar descargas.
+- Inconsistencia de identificadores a tener en cuenta: los metadatos de Hugging Face apuntan al repositorio `anemll/system1-base-unsloth`, mientras que la model card describe el repositorio `anemll/system1-ane` y su carpeta `snake-stock-qwen3.5-unsloth`. Conviene verificar la ruta real antes de automatizar descargas.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta, sin histórico de uso que permita inferir estabilidad o mantenimiento.
 - Sin datos de cuantizaciones alternativas, no hay una vía documentada para reducir requisitos de memoria más allá del empaquetado Core AI ya publicado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anemll/system1-base-unsloth
+- Modelo en Hugging Face: https://huggingface.co/anemll/system1-base-unsloth
 - Repositorio referenciado en la model card: https://huggingface.co/anemll/system1-ane
 - Carpeta del modelo Snake: https://huggingface.co/anemll/system1-ane/tree/main/snake-stock-qwen3.5-unsloth
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B

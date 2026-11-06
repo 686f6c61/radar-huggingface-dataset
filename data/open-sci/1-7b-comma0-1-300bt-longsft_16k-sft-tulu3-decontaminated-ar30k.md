@@ -4,7 +4,7 @@
 
 El modelo `open-sci/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated-ar30k` es un ajuste fino supervisado (SFT) publicado por la organizacion open-sci sobre la base `ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated`. Se trata de un transformer decoder-only de aproximadamente 1.714 millones de parametros (1,7B) derivado de la familia Comma, entrenado originalmente sobre 300.000 millones de tokens y con una fase de SFT de contexto largo (16k) sobre datos de Tulu3 decontaminados. Este nuevo checkpoint anade una etapa adicional de SFT sobre el dataset AceReason-1.1-SFT-30k-sharegpt-hf, orientado a razonamiento.
 
-El interes del modelo reside en su tamano compacto (1,7B), que permite desplegarlo en hardware de consumo, combinado con una ventana de contexto larga (16k) heredada de la base y un entrenamiento especifico en tareas de razonamiento. La model card es auto-generada por el Trainer de HuggingFace y no incluye descripcion funcional, casos de uso declarados ni resultados de evaluacion, por lo que la informacion disponible es limitada y debe interpretarse con cautela.
+El interes del modelo reside en su tamano compacto (1,7B), que permite desplegarlo en hardware de consumo, combinado con una ventana de contexto larga (16k) heredada de la base y un entrenamiento especifico en tareas de razonamiento. La model card es auto-generada por el Trainer de Hugging Face y no incluye descripcion funcional, casos de uso declarados ni resultados de evaluacion, por lo que la informacion disponible es limitada y debe interpretarse con cautela.
 
 La licencia es "other", sin terminos explicitos publicados en la model card, lo que obliga a contactar con el autor o revisar el repositorio base antes de cualquier uso comercial. El pipeline declarado es `feature-extraction`, aunque el modelo es un causal LM entrenado con llama-factory y pesos en safetensors.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/1.7b-Comma0.1-...-ar30k (este) | 1,7B | 16k | other | HuggingFace, 16 descargas | SFT adicional sobre AceReason; sin benchmarks |
-| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated (base) | 1,7B | 16k | no disponible | HuggingFace | Base sin la etapa de razonamiento; sin benchmarks |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | HuggingFace, ampliamente usado | Modelo consolidado con benchmarks publicados; contexto mayor |
-| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente usado | Contexto muy superior; restricciones de licencia para >700M usuarios |
+| open-sci/1.7b-Comma0.1-...-ar30k (este) | 1,7B | 16k | other | Hugging Face, 16 descargas | SFT adicional sobre AceReason; sin benchmarks |
+| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated (base) | 1,7B | 16k | no disponible | Hugging Face | Base sin la etapa de razonamiento; sin benchmarks |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Hugging Face, ampliamente usado | Modelo consolidado con benchmarks publicados; contexto mayor |
+| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente usado | Contexto muy superior; restricciones de licencia para >700M usuarios |
 
 La comparacion es cualitativa: no existen benchmarks publicados para este checkpoint ni para su base, por lo que no es posible afirmar superioridad o inferioridad en rendimiento frente a Qwen2.5-1.5B o Llama-3.2-1B. La principal ventaja de este modelo es su contexto de 16k en un tamano de 1,7B con entrenamiento especifico en razonamiento; su principal desventaja es la ausencia de evaluacion y de terminos de licencia claros.
 
@@ -85,7 +85,7 @@ La comparacion es cualitativa: no existen benchmarks publicados para este checkp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated-ar30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated-ar30k
 - Modelo base: https://huggingface.co/ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated
 - Dataset de SFT: no disponible como enlace publico (ruta local `/gpfs/scratch/ehpc524/ot/datasets/AceReason-1.1-SFT-30k-sharegpt-hf` en la model card)
 - Paper, blog o demo: no disponibles en la informacion proporcionada

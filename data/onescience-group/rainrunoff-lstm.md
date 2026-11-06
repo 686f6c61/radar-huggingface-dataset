@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RainRunoff-LSTM es un modelo de aprendizaje profundo para hidrologia que predice el caudal diario de una cuenca fluvial a partir de series historicas de variables meteorologicas. No es un modelo de lenguaje: es una red neuronal recurrente de tipo LSTM entrenada especificamente para simulacion rainfall-runoff (lluvia-escorrentia), publicada en el repositorio OneScience-Group de HuggingFace como reproduccion de ingenieria independiente de la arquitectura descrita en el articulo de Kratzert et al. (2018).
+RainRunoff-LSTM es un modelo de aprendizaje profundo para hidrologia que predice el caudal diario de una cuenca fluvial a partir de series historicas de variables meteorologicas. No es un modelo de lenguaje: es una red neuronal recurrente de tipo LSTM entrenada especificamente para simulacion rainfall-runoff (lluvia-escorrentia), publicada en el repositorio OneScience-Group de Hugging Face como reproduccion de ingenieria independiente de la arquitectura descrita en el articulo de Kratzert et al. (2018).
 
 El modelo original fue propuesto por investigadores de la University of Natural Resources and Life Sciences Vienna (BOKU) y se entrena con datos del conjunto CAMELS Daymet: precipitacion, temperatura minima y maxima, radiacion de onda corta, presion de vapor y caudal observado. Soporta tres regimenes de experimentacion: especifico por cuenca, regional (entrenamiento conjunto sobre varias cuencas) y preentrenamiento regional con ajuste fino posterior por cuenca.
 
@@ -75,7 +75,7 @@ No se dispone, en la informacion proporcionada, de datos verificables de paramet
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RainRunoff-LSTM | no disponible | no disponible | no disponible | apache-2.0 | Repositorio HuggingFace sin pesos preentrenados |
+| RainRunoff-LSTM | no disponible | no disponible | no disponible | apache-2.0 | Repositorio Hugging Face sin pesos preentrenados |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No se dispone, en la informacion proporcionada, de datos verificables de paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/RainRunoff-LSTM
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/RainRunoff-LSTM
 - Articulo de referencia (Kratzert et al., 2018), "Rainfall-runoff modelling using Long Short-Term Memory (LSTM) networks": https://doi.org/10.5194/hess-22-6005-2018
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) relacionados con este modelo.

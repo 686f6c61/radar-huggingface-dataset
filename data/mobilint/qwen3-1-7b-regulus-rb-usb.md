@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Orientacion | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilint/Qwen3-1.7B-regulus-rb-usb | 311,2 M en safetensors (base de ~1,7 B) | no disponible | apache-2.0 | Inferencia en NPU Mobilint | HuggingFace, 0 descargas |
+| mobilint/Qwen3-1.7B-regulus-rb-usb | 311,2 M en safetensors (base de ~1,7 B) | no disponible | apache-2.0 | Inferencia en NPU Mobilint | Hugging Face, 0 descargas |
 | Qwen/Qwen3-1.7B | ~1,7 B | no verificado en esta ficha | apache-2.0 | Uso general en GPU/CPU | Ampliamente disponible |
 | Qwen/Qwen3-0.6B | ~0,6 B | no verificado en esta ficha | apache-2.0 | Uso general, edge | Ampliamente disponible |
 | Llama-3.2-1B / 3B | 1,2 B / 3,2 B | no verificado en esta ficha | licencia comunitaria de Meta | Uso general, edge | Ampliamente disponible |
@@ -91,7 +91,7 @@ La comparacion se limita a parametros, licencia y disponibilidad: no hay datos d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mobilint/Qwen3-1.7B-regulus-rb-usb
+- Repositorio en Hugging Face: https://huggingface.co/mobilint/Qwen3-1.7B-regulus-rb-usb
 - Web del fabricante: https://mobilint.com
 - Model zoo de Mobilint: https://github.com/mobilint/mblt-model-zoo
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

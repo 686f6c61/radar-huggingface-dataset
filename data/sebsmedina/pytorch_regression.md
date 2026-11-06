@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sebsmedina/pytorch_regression` es un repositorio publicado en HuggingFace por el usuario `sebsmedina` bajo el identificador `pytorch_regression`. Por el nombre y la ausencia de documentación, todo apunta a un artefacto de entrenamiento de tipo regresión implementado con PyTorch, probablemente un ejercicio, prueba de concepto o modelo experimental de uso personal. No se trata de un modelo de lenguaje generativo ni de un modelo fundacional: no hay evidencia de que incluya tokenizador, configuración de transformer ni pesos en formato estándar de la industria.
+`sebsmedina/pytorch_regression` es un repositorio publicado en Hugging Face por el usuario `sebsmedina` bajo el identificador `pytorch_regression`. Por el nombre y la ausencia de documentación, todo apunta a un artefacto de entrenamiento de tipo regresión implementado con PyTorch, probablemente un ejercicio, prueba de concepto o modelo experimental de uso personal. No se trata de un modelo de lenguaje generativo ni de un modelo fundacional: no hay evidencia de que incluya tokenizador, configuración de transformer ni pesos en formato estándar de la industria.
 
 La información pública disponible es mínima. La model card únicamente declara `license: unknown` y no incluye descripción, arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes en el momento de la consulta), lo que refuerza la hipótesis de un artefacto de carácter privado o de baja difusión.
 
@@ -41,7 +41,7 @@ Respecto a los datos de entrenamiento, no se indica el volumen, la composición 
 
 - Evaluación de pipelines de regresión en PyTorch: el artefacto podría servir como ejemplo reproducible para comparar el rendimiento de un regresor simple frente a alternativas como XGBoost o scikit-learn, siempre que se inspeccionen previamente los archivos del repositorio.
 - Docencia y formación: útil como material de partida en cursos introductorios de PyTorch para ilustrar el ciclo completo de entrenamiento, guardado y carga de un modelo de regresión, dado su carácter aparentemente didáctico.
-- Pruebas de integración de HuggingFace Hub: puede emplearse para validar flujos de descarga, versionado y carga de artefactos personalizados en el Hub, ya que el repositorio existe pero no está documentado.
+- Pruebas de integración de Hugging Face Hub: puede emplearse para validar flujos de descarga, versionado y carga de artefactos personalizados en el Hub, ya que el repositorio existe pero no está documentado.
 - Reproducción de experimentos: si el autor incluye el script de entrenamiento, podría reutilizarse como plantilla para experimentos de regresión con datos tabulares.
 - Benchmarking interno de infraestructura: un modelo pequeño de regresión es útil para medir latencia de carga y de inferencia en entornos de CI/CD sin incurrir en costes de GPU.
 - Base para un modelo derivado: un desarrollador podría hacer fork del repositorio y reentrenarlo con sus propios datos, aunque la licencia desconocida impide asumir permisos de uso comercial.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sebsmedina/pytorch_regression | Regresión (presunto) | no disponible | no aplica | unknown | HuggingFace, sin descargas |
+| sebsmedina/pytorch_regression | Regresión (presunto) | no disponible | no aplica | unknown | Hugging Face, sin descargas |
 | Regresores de scikit-learn (p. ej. `LinearRegression`, `RandomForestRegressor`) | ML clásico | no aplica | no aplica | BSD-3-Clause | PyPI, ampliamente usado |
 | XGBoost / LightGBM | Gradient boosting | no aplica | no aplica | Apache 2.0 / MIT | PyPI, ampliamente usado |
 | Modelos tabulares en PyTorch (p. ej. `pytorch-tabnet`) | Red neuronal tabular | variable | no aplica | MIT | GitHub, PyPI |
@@ -82,5 +82,5 @@ La comparación es estructural: el repositorio no ofrece métricas ni documentac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sebsmedina/pytorch_regression
+- Repositorio en Hugging Face: https://huggingface.co/sebsmedina/pytorch_regression
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -79,8 +79,8 @@ No se dispone de informacion sobre modelos comparables especificos para este ada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ranjitraut/dacpt-ministral3
+- Hugging Face: https://huggingface.co/ranjitraut/dacpt-ministral3
 - Paper de la familia Ministral 3: https://arxiv.org/abs/2601.08584
-- Coleccion Ministral 3 en HuggingFace: https://huggingface.co/collections/mistralai/ministral-3
+- Coleccion Ministral 3 en Hugging Face: https://huggingface.co/collections/mistralai/ministral-3
 - Documentacion de Transformers para Ministral3: https://huggingface.co/docs/transformers/model_doc/ministral3
 - Codigo de Transformers para Ministral3: https://github.com/huggingface/transformers/tree/main/src/transformers/models/ministral3

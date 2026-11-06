@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Igor282/gemma-4-e4b-pruned-ru-Q4_K_M` es una publicacion de pesos en el repositorio de HuggingFace bajo el identificador de un modelo derivado de la familia Gemma 4. Por la nomenclatura del nombre se deduce que se trata de una variante podada (pruned) del modelo Gemma 4 E4B, especializada o ajustada para ruso (ru) y cuantizada en formato Q4_K_M, un esquema de cuantizacion de 4 bits de la familia GGUF orientado a inferencia en CPU y GPU de gama baja. El autor del repositorio es el usuario Igor282.
+`Igor282/gemma-4-e4b-pruned-ru-Q4_K_M` es una publicacion de pesos en el repositorio de Hugging Face bajo el identificador de un modelo derivado de la familia Gemma 4. Por la nomenclatura del nombre se deduce que se trata de una variante podada (pruned) del modelo Gemma 4 E4B, especializada o ajustada para ruso (ru) y cuantizada en formato Q4_K_M, un esquema de cuantizacion de 4 bits de la familia GGUF orientado a inferencia en CPU y GPU de gama baja. El autor del repositorio es el usuario Igor282.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia Apache 2.0, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta y no declara pipeline ni idiomas soportados en los metadatos. Esto limita enormemente cualquier evaluacion rigurosa: la mayor parte de los datos tecnicos que se detallan a continuacion son inferencias a partir del nombre del modelo y de las convenciones habituales de la familia Gemma, y se marcan explicitamente como no disponibles cuando no pueden confirmarse.
 
@@ -81,5 +81,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Igor282/gemma-4-e4b-pruned-ru-Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/Igor282/gemma-4-e4b-pruned-ru-Q4_K_M
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este artefacto.

@@ -86,7 +86,7 @@ La comparación se limita a las variantes del mismo modelo base, ya que no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: [CorVous/Qwen3.8-27B-heretic-ara-GGUF](https://huggingface.co/CorVous/Qwen3.8-27B-heretic-ara-GGUF)
+- Repositorio Hugging Face: [CorVous/Qwen3.8-27B-heretic-ara-GGUF](https://huggingface.co/CorVous/Qwen3.8-27B-heretic-ara-GGUF)
 - Exportación BF16 original: [CorVous/Qwen3.8-27B-heretic-ara-BF16](https://huggingface.co/CorVous/Qwen3.8-27B-heretic-ara-BF16) (referenciado en la model card)
 - Exportación GPTQ Int4: [CorVous/Qwen3.8-27B-heretic-ara-GPTQ-Int4-gs128](https://huggingface.co/CorVous/Qwen3.8-27B-heretic-ara-GPTQ-Int4-gs128) (referenciado en la model card)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

@@ -85,6 +85,6 @@ No disponible. No se ha encontrado informacion sobre otros adaptadores LoRA comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/malicx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/malicx-krea2-lora
 - Herramienta de entrenamiento citada: fal-ai/krea-2-trainer (referencia mencionada en la model card; no se proporciona enlace directo)
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

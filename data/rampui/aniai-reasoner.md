@@ -19,7 +19,7 @@ La relevancia de este modelo reside en su potencial como punto de partida para q
 | Tipos de cuantizacion | no especificado (el modelo base usa bnb-4bit, pero el fine-tune podría tener otros formatos) |
 | Idiomas soportados | en (inglés, según la model card) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (según las tags de HuggingFace) |
+| Formato de pesos | safetensors (según las tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento para comparar directamente con otros model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Rampui/aniai-reasoner)
+- [Modelo en Hugging Face](https://huggingface.co/Rampui/aniai-reasoner)
 - [Modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

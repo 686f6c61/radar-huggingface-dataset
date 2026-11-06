@@ -90,9 +90,9 @@ El modelo se sitúa en la misma categoría de tamaño que Qwen2.5-7B y Llama-3.1
 
 ## Enlaces
 
-- [HuggingFace - sartajbhuvaji/GLM-4.6-Flash-text](https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text)
-- [HuggingFace - sartajbhuvaji/GLM-4.6-Flash-text-GGUF](https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text-GGUF)
-- [HuggingFace - zai-org/GLM-4.6V-Flash](https://huggingface.co/zai-org/GLM-4.6V-Flash)
+- [Hugging Face - sartajbhuvaji/GLM-4.6-Flash-text](https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text)
+- [Hugging Face - sartajbhuvaji/GLM-4.6-Flash-text-GGUF](https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text-GGUF)
+- [Hugging Face - zai-org/GLM-4.6V-Flash](https://huggingface.co/zai-org/GLM-4.6V-Flash)
 - [Documentación de Z.ai - GLM-4.6V](https://docs.z.ai/guides/vlm/glm-4.6v)
 - [Documentación de Z.ai - GLM-4.6](https://docs.z.ai/guides/llm/glm-4.6)
 - [Análisis de GLM-4.6V-Flash en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/glm-4.6v-flash-zai-org)</think>## Resumen
@@ -185,9 +185,9 @@ El modelo se sitúa en la misma categoría de tamaño que Qwen2.5-7B y Llama-3.1
 
 ## Enlaces
 
-- [HuggingFace - sartajbhuvaji/GLM-4.6-Flash-text](https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text)
-- [HuggingFace - sartajbhuvaji/GLM-4.6-Flash-text-GGUF](https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text-GGUF)
-- [HuggingFace - zai-org/GLM-4.6V-Flash](https://huggingface.co/zai-org/GLM-4.6V-Flash)
+- [Hugging Face - sartajbhuvaji/GLM-4.6-Flash-text](https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text)
+- [Hugging Face - sartajbhuvaji/GLM-4.6-Flash-text-GGUF](https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text-GGUF)
+- [Hugging Face - zai-org/GLM-4.6V-Flash](https://huggingface.co/zai-org/GLM-4.6V-Flash)
 - [Documentacion de Z.AI - GLM-4.6V](https://docs.z.ai/guides/vlm/glm-4.6v)
 - [Documentacion de Z.AI - GLM-4.6](https://docs.z.ai/guides/llm/glm-4.6)
 - [Analisis de GLM-4.6V-Flash en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/glm-4.6v-flash-zai-org)

@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rechtssysteem-ai/lgbm-eerlijk-nl-uitspraken
+- Modelo en Hugging Face: https://huggingface.co/rechtssysteem-ai/lgbm-eerlijk-nl-uitspraken
 - Metodología (benchmark): https://huggingface.co/rechtssysteem-ai/nl-judgment-benchmark
 - Repositorio MCP (referencia incompleta): https://github.com/.../mcp_rechtssysteem.py (la URL completa no está disponible en la información proporcionada)

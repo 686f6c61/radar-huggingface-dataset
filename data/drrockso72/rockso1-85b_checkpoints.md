@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rockso 1.85B es un modelo de lenguaje en desarrollo publicado por el usuario independiente drrockso72 en HuggingFace. Se trata de un checkpoint intermedio de entrenamiento (step 20.206, 6.621.102.080 tokens de entrada procesados) de la ejecución `final_32_seed42_20261030`, guardado el 4 de noviembre de 2026. El modelo parte de la investigación y los recursos de Sapient Intelligence, en particular del dataset de pretraining RSI y el tokenizador BPE de 65.536 tokens de HRM-Text, aunque incorpora modificaciones arquitectónicas y de entrenamiento propias y no es un lanzamiento oficial de Sapient.
+Rockso 1.85B es un modelo de lenguaje en desarrollo publicado por el usuario independiente drrockso72 en Hugging Face. Se trata de un checkpoint intermedio de entrenamiento (step 20.206, 6.621.102.080 tokens de entrada procesados) de la ejecución `final_32_seed42_20261030`, guardado el 4 de noviembre de 2026. El modelo parte de la investigación y los recursos de Sapient Intelligence, en particular del dataset de pretraining RSI y el tokenizador BPE de 65.536 tokens de HRM-Text, aunque incorpora modificaciones arquitectónicas y de entrenamiento propias y no es un lanzamiento oficial de Sapient.
 
 La arquitectura es un transformer decoder-only tipo PrefixLM con 1.846.878.764 parámetros únicos, 32 capas, anchura 2.048, 32 cabezas de consulta y 8 cabezas KV (GQA), SwiGLU de anchura 6.832 y un contexto total de solo 2.048 tokens. El repositorio incluye el export nativo `model.pt` (3,7 GB), el tokenizador original, la configuración resuelta, la plantilla de chat y un archivo fuente con el entrenador y los kernels NorMuon.
 
@@ -84,7 +84,7 @@ La comparación se limita a parámetros, contexto y disponibilidad, ya que no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drrockso72/rockso1.85b_checkpoints
+- Modelo en Hugging Face: https://huggingface.co/drrockso72/rockso1.85b_checkpoints
 - Dataset y tokenizador originales: https://huggingface.co/datasets/sapientinc/hrm-text-rsi-sampled-20260923
 - Código de HRM-Text: https://github.com/sapientinc/HRM-Text
 - Paper HRM-Text: https://arxiv.org/abs/2605.20613

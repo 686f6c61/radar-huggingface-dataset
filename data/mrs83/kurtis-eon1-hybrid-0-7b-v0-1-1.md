@@ -25,7 +25,7 @@ A pesar de su pequeño tamaño, el modelo muestra resultados competitivos en alg
 
 El modelo parte de la base `ethicalabs/Echo-DSRN-Qwen2.5-0.5B-Hybrid`, que combina una arquitectura transformer clásica (basada en Qwen2.5) con inyectores DSRN, un mecanismo recurrente que introduce memoria de estado y un mecanismo de "sorpresa" para focalizar dinámicamente la atención. La configuración incluye 24 capas de atención, 6 inyectores DSRN intercalados cada 4 capas, y una dimensión oculta de 896. Los inyectores DSRN añaden un 6,67% de parámetros adicionales sobre el modelo base, con un coste de memoria de KV-cache en O(1) gracias a la componente recurrente.
 
-El fine-tuning se realizó mediante entrenamiento completo (FFT) usando la librería TRL de HuggingFace, sobre datasets curados para empatía y atmósfera gótica. No se especifican detalles del dataset ni el número de tokens de entrenamiento. El objetivo declarado es lograr una adherencia estricta a la persona y un razonamiento multi-turno sin deriva, en lugar de maximizar el rendimiento en tareas genéricas.
+El fine-tuning se realizó mediante entrenamiento completo (FFT) usando la librería TRL de Hugging Face, sobre datasets curados para empatía y atmósfera gótica. No se especifican detalles del dataset ni el número de tokens de entrenamiento. El objetivo declarado es lograr una adherencia estricta a la persona y un razonamiento multi-turno sin deriva, en lugar de maximizar el rendimiento en tareas genéricas.
 
 ## Capacidades
 
@@ -97,9 +97,9 @@ La tabla refleja que Kurtis-EON1, pese a ser 10 veces más pequeño que Llama-2-
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mrs83/Kurtis-EON1-Hybrid-0.7B-v0.1.1)
-- [Espacio de chat en HuggingFace](https://huggingface.co/spaces/mrs83/Kurtis-EON1-Hybrid-0.7B)
-- [Colección Kurtis-EON1 en HuggingFace](https://huggingface.co/collections/ethicalabs/kurtis-eon1)
+- [Modelo en Hugging Face](https://huggingface.co/mrs83/Kurtis-EON1-Hybrid-0.7B-v0.1.1)
+- [Espacio de chat en Hugging Face](https://huggingface.co/spaces/mrs83/Kurtis-EON1-Hybrid-0.7B)
+- [Colección Kurtis-EON1 en Hugging Face](https://huggingface.co/collections/ethicalabs/kurtis-eon1)
 - [Repositorio GitHub de ethicalabs (Echo-DSRN)](https://github.com/ethicalabs-ai/Echo-DSRN/)
 - [Working paper de Echo-DSRN](https://github.com/ethicalabs-ai/Echo-DSRN/blob/main/PAPER.md)
 - [Herramienta Kurtis E1 en GitHub](https://github.com/ethicalabs-ai/kurtis)

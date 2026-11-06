@@ -112,8 +112,8 @@ La comparacion directa entre este bundle y la fuente oficial es significativa en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/coder543/nemotron-3.5-asr-streaming-0.6b-coreai
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Repositorio en Hugging Face: https://huggingface.co/coder543/nemotron-3.5-asr-streaming-0.6b-coreai
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Revision concreta del modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/tree/ea30d66debe3740a08b573244286791d423d6b3e
 - Model card de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard
 - Repositorio GitHub de referencia (nemotron-asr): https://github.com/weyan618/nemotron-asr/blob/main/nemotron-asr/nemotron-3.5-asr-streaming-0.6b/README.md

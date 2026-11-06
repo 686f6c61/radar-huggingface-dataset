@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PES24/spd05 es un repositorio de pesos publicado en HuggingFace por el usuario PES24 el 12 de septiembre de 2026 y actualizado el 14 de septiembre de 2026. Se trata de un modelo con una presencia publica minima: no tiene pipeline declarado, no especifica licencia, no declara idiomas soportados y acumula 0 descargas y 1 like en el momento de redactar esta ficha. El unico dato objetivo disponible es el tamano del repositorio, 6,5 GB.
+PES24/spd05 es un repositorio de pesos publicado en Hugging Face por el usuario PES24 el 12 de septiembre de 2026 y actualizado el 14 de septiembre de 2026. Se trata de un modelo con una presencia publica minima: no tiene pipeline declarado, no especifica licencia, no declara idiomas soportados y acumula 0 descargas y 1 like en el momento de redactar esta ficha. El unico dato objetivo disponible es el tamano del repositorio, 6,5 GB.
 
 La informacion publica no permite determinar que problema resuelve el modelo, sobre que arquitectura se construye, con que datos se entreno ni que capacidades tiene. No se ha localizado ninguna model card descriptiva, paper, blog tecnico ni repositorio de codigo asociado. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados pertenecen a portales de subastas de palomas mensajeras y no guardan relacion alguna con este repositorio.
 
@@ -101,6 +101,6 @@ Sin datos de parametros, contexto ni evaluaciones, no se puede seleccionar un co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PES24/spd05
+- Repositorio en Hugging Face: https://huggingface.co/PES24/spd05
 
 No se ha encontrado ningun otro enlace relevante. La busqueda web realizada devolvio exclusivamente resultados de portales de subastas de palomas mensajeras (pigeon-auction.de, brieftauben-auktion.de), sin relacion alguna con el modelo. No hay papers, blogs, repositorios de codigo ni demos asociados a PES24/spd05 en la informacion disponible.

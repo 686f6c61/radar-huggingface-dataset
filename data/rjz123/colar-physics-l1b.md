@@ -73,6 +73,6 @@ No hay modelos comparables directamente disponibles en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rjz123/colar-physics-l1b
+- Hugging Face: https://huggingface.co/rjz123/colar-physics-l1b
 - Repositorio oficial de CoLaR (Xiaomi Research): https://github.com/xiaomi-research/colar
 - Perfil de GitHub del autor: https://github.com/rjz123

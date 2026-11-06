@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`louislambertfield/efficientformer-classification-proto-2023` es un repositorio de investigación publicado en HuggingFace por el usuario louislambertfield que contiene un prototipo de arquitectura EfficientFormer orientado a clasificación de imágenes. No se trata de un modelo entrenado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento. El peso real del checkpoint es de 49.600 parámetros según los metadatos de safetensors, un valor muy alejado de lo que se esperaría de un EfficientFormer operativo.
+`louislambertfield/efficientformer-classification-proto-2023` es un repositorio de investigación publicado en Hugging Face por el usuario louislambertfield que contiene un prototipo de arquitectura EfficientFormer orientado a clasificación de imágenes. No se trata de un modelo entrenado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento. El peso real del checkpoint es de 49.600 parámetros según los metadatos de safetensors, un valor muy alejado de lo que se esperaría de un EfficientFormer operativo.
 
 El interés del repositorio es, por tanto, documental y de ingeniería más que de rendimiento: incluye `model.py` con la implementación y un ejemplo ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (AdamW con schedule de tipo step). La arquitectura declarada usa atención lineal, fusión por co-atención, activación mish y normalización scalenorm, etiquetas que en la model card se presentan bajo una escala "giant" que no se corresponde con el número de parámetros registrado.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| efficientformer-classification-proto-2023 (este repo) | 49.600 | No disponible (visión, sin ventana de contexto) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| efficientformer-classification-proto-2023 (este repo) | 49.600 | No disponible (visión, sin ventana de contexto) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | EfficientFormer (familia oficial, referencia) | No disponible en la información proporcionada | Imagen (clasificación ImageNet y backbone) | No disponible en la información proporcionada | Documentado en `transformers` y en Qualcomm AI Hub |
 | EfficientFormer como backbone genérico (referencia) | No disponible en la información proporcionada | Imagen (clasificación y extracción de características) | No disponible en la información proporcionada | Documentado en `transformers` |
 
@@ -78,11 +78,11 @@ La comparación cuantitativa no es posible con los datos disponibles: la informa
 - Sin datos de entrenamiento ni de evaluación publicados; no hay forma de verificar calidad, sesgos ni alucinaciones (concepto que además no aplica a un clasificador de imágenes no entrenado).
 - Sin validación comunitaria: 0 descargas y 0 likes, con fechas de creación y actualización de octubre de 2026 en los metadatos, lo que conviene contrastar antes de citar el repositorio.
 - Licencia apache-2.0: permite uso comercial y modificación, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
-- No apto para producción en su estado actual: no hay pesos entrenados, no hay métricas, no hay pipeline declarado en HuggingFace y no hay soporte de tools de serving estándar.
+- No apto para producción en su estado actual: no hay pesos entrenados, no hay métricas, no hay pipeline declarado en Hugging Face y no hay soporte de tools de serving estándar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/louislambertfield/efficientformer-classification-proto-2023
+- Modelo en Hugging Face: https://huggingface.co/louislambertfield/efficientformer-classification-proto-2023
 - EfficientFormer en Qualcomm AI Hub: https://aihub.qualcomm.com/models/efficientformer
 - Documentación de EfficientFormer en transformers (v4.48.2): https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer
 - Documentación de EfficientFormer en transformers (v4.35.2): https://huggingface.co/docs/transformers/v4.35.2/en/model_doc/efficientformer

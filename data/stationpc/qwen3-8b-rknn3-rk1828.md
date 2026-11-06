@@ -77,7 +77,7 @@ La comparación directa no es posible por falta de datos de rendimiento. La vers
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StationPC/Qwen3-8B-RKNN3-RK1828
+- Modelo en Hugging Face: https://huggingface.co/StationPC/Qwen3-8B-RKNN3-RK1828
 - Versión similar de t-firefly: https://huggingface.co/t-firefly/qwen3-8b-rknn3-rk1828
 - Modelo original Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - RKNN3 Toolkit (GitHub): https://github.com/airockchip/rknn3-toolkit

@@ -64,7 +64,7 @@ No se dispone de modelos comparables, ya que el repositorio no presenta un model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SHUB-HAMVR/model_475557092_sw_t_huge
+- Hugging Face: https://huggingface.co/SHUB-HAMVR/model_475557092_sw_t_huge
 - Documentación de Swin Transformer en Hugging Face: https://huggingface.co/docs/transformers/model_doc/swin
 - Repositorio oficial de Microsoft Swin-Transformer: https://github.com/microsoft/Swin-Transformer
 - Video Swin Transformer (variante): https://github.com/microsoft/Swin-Transformer?ref=opensource

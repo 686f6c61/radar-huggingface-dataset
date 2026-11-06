@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-DeepInfer-Thor-TP2 (este paquete) | no disponible (repo de 432,1 GB) | 8192 tokens (perfil de referencia) | sin benchmarks publicados; benchmark de referencia no equivalente a LPK instalado | MIT según la model card; licencia del base no disponible | publicado en HuggingFace, cualificación de instalación en curso |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (modelo base) | no disponible | no disponible | no disponible en la información proporcionada | no disponible | checkpoint original de DeepSeek en HuggingFace |
+| DeepSeek-V4.1-Flash-1017-DeepInfer-Thor-TP2 (este paquete) | no disponible (repo de 432,1 GB) | 8192 tokens (perfil de referencia) | sin benchmarks publicados; benchmark de referencia no equivalente a LPK instalado | MIT según la model card; licencia del base no disponible | publicado en Hugging Face, cualificación de instalación en curso |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (modelo base) | no disponible | no disponible | no disponible en la información proporcionada | no disponible | checkpoint original de DeepSeek en Hugging Face |
 | Entorno de referencia Eastham 1017 | no disponible | no disponible | no disponible | no disponible | referenciado por el autor, sin enlace en la información disponible |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,5 +98,5 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 - Repositorio del paquete: https://huggingface.co/manateelazycat/DeepSeek-V4.1-Flash-1017-DeepInfer-Thor-TP2
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Perfil del autor en HuggingFace: https://huggingface.co/manateelazycat
+- Perfil del autor en Hugging Face: https://huggingface.co/manateelazycat
 - Paper, blog, repositorio de código, demo o evidencia de aceptación: no disponibles en la información proporcionada.

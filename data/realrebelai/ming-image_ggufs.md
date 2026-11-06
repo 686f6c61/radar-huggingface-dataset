@@ -31,7 +31,7 @@ Un detalle tecnico relevante es que el metadato `general.architecture` de los GG
 
 ## Capacidades
 
-- Generacion de imagen a partir de texto (text-to-image) mediante el pipeline etiquetado en HuggingFace, orientada por el sufijo Design del modelo base a tareas de diseno grafico y contenido visual.
+- Generacion de imagen a partir de texto (text-to-image) mediante el pipeline etiquetado en Hugging Face, orientada por el sufijo Design del modelo base a tareas de diseno grafico y contenido visual.
 - Ejecucion dentro de ComfyUI a traves del nodo ComfyUI-GGUF, con carga separada del modelo de difusion, el encoder de texto y el VAE.
 - Cuantizacion en escalera de seis niveles de precision mixta, lo que permite escoger el equilibrio entre calidad y VRAM sin cambiar de modelo.
 - Soporte de bajo consumo de VRAM declarado explicitamente en las etiquetas y en el enfoque de las dos variantes del encoder de texto.
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| inclusionAI/Ming-Image-0.1-Design (original) | ~6,15B difusion + ~17,3B encoder de texto | safetensors (BF16) | sin cuantizar | no disponible en la informacion proporcionada | HuggingFace |
-| realrebelai/Ming-Image_GGUFs (este repositorio) | mismos pesos, cuantizados | GGUF | Q8_0-HQ a Q2_K-HQ (difusion); Q4_K_M-HQ y Q2_K-HQ (encoder) | MIT | HuggingFace, 3.974 descargas y 12 likes |
+| inclusionAI/Ming-Image-0.1-Design (original) | ~6,15B difusion + ~17,3B encoder de texto | safetensors (BF16) | sin cuantizar | no disponible en la informacion proporcionada | Hugging Face |
+| realrebelai/Ming-Image_GGUFs (este repositorio) | mismos pesos, cuantizados | GGUF | Q8_0-HQ a Q2_K-HQ (difusion); Q4_K_M-HQ y Q2_K-HQ (encoder) | MIT | Hugging Face, 3.974 descargas y 12 likes |
 | Modelos comparables de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables en la informacion proporcionada sobre cuantizaciones GGUF equivalentes de otros modelos de generacion de imagen (por ejemplo de la familia Flux o SDXL) con los que establecer una comparacion numerica de parametros, contexto o rendimiento. La busqueda web realizada no aporto resultados tecnicos relevantes.
@@ -101,7 +101,7 @@ No se dispone de datos verificables en la informacion proporcionada sobre cuanti
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/realrebelai/Ming-Image_GGUFs
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/realrebelai/Ming-Image_GGUFs
 - Modelo base original: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Repositorio oficial de Ming-Image: https://github.com/inclusionAI/Ming-Image
 - Nodo ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF

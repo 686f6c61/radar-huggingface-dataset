@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PointACT RLBench Polar Filled9 (job 25809) es un punto de control de investigación para predicción de acciones robóticas, publicado por el usuario yuan1119 en HuggingFace. Se trata de un modelo de tipo VLA (vision-language-action) entrenado sobre 10 tareas de RLBench, la suite de referencia para manipulación robótica en simulación. La clase de modelo declarada es `VLAEncDec3DWithActionClassificationModel`, lo que indica una arquitectura encoder-decoder 3D con cabeza de clasificación de acciones en lugar de regresión continua.
+PointACT RLBench Polar Filled9 (job 25809) es un punto de control de investigación para predicción de acciones robóticas, publicado por el usuario yuan1119 en Hugging Face. Se trata de un modelo de tipo VLA (vision-language-action) entrenado sobre 10 tareas de RLBench, la suite de referencia para manipulación robótica en simulación. La clase de modelo declarada es `VLAEncDec3DWithActionClassificationModel`, lo que indica una arquitectura encoder-decoder 3D con cabeza de clasificación de acciones en lugar de regresión continua.
 
 La particularidad del entrenamiento es la representación de nubes de puntos en formato polar `filled9`, con 9 canales de entrada para un backbone PointTransformer V3 en modo encoder Concerto. La salida de acciones se discretiza en 100 bins de posición y la cabeza de acción entrena un centro de posición basado en mezcla de expertos (MoE), mientras que el torreón de visión, el LLM y el fusionador multimodal permanecen congelados. El repositorio contiene dos instantáneas del mismo run de entrenamiento: los pasos globales 7.500 y 8.500.
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointact-rlbench-polar-filled9-bs512-job-25809 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| pointact-rlbench-polar-filled9-bs512-job-25809 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuan1119/pointact-rlbench-polar-filled9-bs512-job-25809
-- Repositorio del autor en HuggingFace: https://huggingface.co/yuan1119
+- Hugging Face: https://huggingface.co/yuan1119/pointact-rlbench-polar-filled9-bs512-job-25809
+- Repositorio del autor en Hugging Face: https://huggingface.co/yuan1119
 - Resultados de busqueda web: no se encontro ningun enlace relevante al modelo (los resultados devueltos versaban sobre caminatas y perdida de peso, sin relacion con el artefacto).
 - Paper, blog, repositorio de codigo y demos: no disponibles.

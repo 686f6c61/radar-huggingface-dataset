@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `BladeUtinga/El_Ditador` es un modelo publicado en HuggingFace por el usuario BladeUtinga, con licencia `llama2` y etiquetado para la región de Estados Unidos. La model card asociada no contiene información adicional más allá de la declaración de licencia, por lo que se desconocen por completo sus características técnicas, arquitectura, tamaño o capacidades. Se trata de un repositorio recién creado (septiembre de 2026) sin descargas ni valoraciones, lo que sugiere que es un proyecto en fase inicial o una publicación de prueba. Dada la ausencia de documentación y de resultados de evaluación, no es posible realizar una valoración técnica fundamentada sobre este modelo.
+El modelo `BladeUtinga/El_Ditador` es un modelo publicado en Hugging Face por el usuario BladeUtinga, con licencia `llama2` y etiquetado para la región de Estados Unidos. La model card asociada no contiene información adicional más allá de la declaración de licencia, por lo que se desconocen por completo sus características técnicas, arquitectura, tamaño o capacidades. Se trata de un repositorio recién creado (septiembre de 2026) sin descargas ni valoraciones, lo que sugiere que es un proyecto en fase inicial o una publicación de prueba. Dada la ausencia de documentación y de resultados de evaluación, no es posible realizar una valoración técnica fundamentada sobre este modelo.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información verificada sobre las capacidades del modelo. Al no
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos debido a la falta de información sobre el modelo. Sin conocer su arquitectura, tamaño, contexto o entrenamiento, no es posible determinar para qué tareas podría ser adecuado. Se recomienda a los desarrolladores e investigadores que consulten directamente el repositorio de HuggingFace para obtener actualizaciones o documentación adicional antes de considerar su uso en cualquier aplicación.
+No se pueden proponer casos de uso concretos debido a la falta de información sobre el modelo. Sin conocer su arquitectura, tamaño, contexto o entrenamiento, no es posible determinar para qué tareas podría ser adecuado. Se recomienda a los desarrolladores e investigadores que consulten directamente el repositorio de Hugging Face para obtener actualizaciones o documentación adicional antes de considerar su uso en cualquier aplicación.
 
 ## Benchmarks y rendimiento
 
@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables porque no se dispone de datos s
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/BladeUtinga/El_Ditador)
+- [Repositorio en Hugging Face](https://huggingface.co/BladeUtinga/El_Ditador)

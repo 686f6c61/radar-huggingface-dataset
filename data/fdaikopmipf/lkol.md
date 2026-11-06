@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `fdaikopmipf/lkol` es un repositorio alojado en HuggingFace por el usuario `fdaikopmipf`, publicado el 18 de septiembre de 2026 (fecha que, a fecha de redaccion de esta ficha, resulta anomala o futura) y sin actualizaciones posteriores. No existe informacion publica verificable sobre su naturaleza: ni arquitectura, ni numero de parametros, ni datos de entrenamiento, ni idiomas soportados.
+El modelo identificado como `fdaikopmipf/lkol` es un repositorio alojado en Hugging Face por el usuario `fdaikopmipf`, publicado el 18 de septiembre de 2026 (fecha que, a fecha de redaccion de esta ficha, resulta anomala o futura) y sin actualizaciones posteriores. No existe informacion publica verificable sobre su naturaleza: ni arquitectura, ni numero de parametros, ni datos de entrenamiento, ni idiomas soportados.
 
 La model card del repositorio se limita a un bloque de metadatos con la licencia `creativeml-openrail-m` y no incluye descripcion, ejemplos de uso, instrucciones de inferencia ni referencias a papers o repositorios de codigo. El repositorio acumula 0 descargas y 0 likes, y no tiene etiqueta de pipeline asignada, por lo que la propia plataforma no lo clasifica en ninguna tarea concreta (text-generation, text-to-image, etc.).
 
@@ -87,7 +87,7 @@ No disponible. No es posible establecer una categoria de comparacion (mismo tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fdaikopmipf/lkol
+- Repositorio en Hugging Face: https://huggingface.co/fdaikopmipf/lkol
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o informe tecnico: no disponible.

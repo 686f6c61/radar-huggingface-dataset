@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-Engineer-V2-8B es un modelo fundacional de 8,01 mil millones de parámetros con arquitectura Mixture-of-Experts (MoE), desarrollado por miceworks y publicado en HuggingFace. Está especializado en ingeniería de sistemas de bajo nivel: kernels de sistemas operativos, consenso distribuido, firmware, toolchains de compiladores, ciberseguridad ofensiva y defensiva, y computación física (robótica, electrónica, FPGA). Su diseño incorpora Multi-Head Latent Attention (MLA), 24 expertos enrutados más 1 experto compartido con enrutamiento Top-2, y Multi-Token Prediction (MTP) de profundidad 1 para decodificación especulativa.
+Mark-Engineer-V2-8B es un modelo fundacional de 8,01 mil millones de parámetros con arquitectura Mixture-of-Experts (MoE), desarrollado por miceworks y publicado en Hugging Face. Está especializado en ingeniería de sistemas de bajo nivel: kernels de sistemas operativos, consenso distribuido, firmware, toolchains de compiladores, ciberseguridad ofensiva y defensiva, y computación física (robótica, electrónica, FPGA). Su diseño incorpora Multi-Head Latent Attention (MLA), 24 expertos enrutados más 1 experto compartido con enrutamiento Top-2, y Multi-Token Prediction (MTP) de profundidad 1 para decodificación especulativa.
 
 El rasgo más relevante de esta ficha es su propia advertencia del autor: el modelo ha completado su preentrenamiento (loss de convergencia: 1,9047), pero no ha pasado por evaluación humana cualitativa, red-teaming automatizado ni benchmarks estandarizados. Es un checkpoint "entrenado pero no probado", por lo que todas las capacidades descritas son objetivos de diseño y no resultados verificados. Se recomienda ejecutar evaluaciones preliminares en entornos aislados antes de cualquier uso.
 
@@ -86,15 +86,15 @@ Mark-Engineer-V2-8B se diferencia por su especialización extrema en dominios de
 ## Limitaciones y advertencias
 
 - Checkpoint sin validar: el autor declara explícitamente que no ha pasado evaluación humana, red-teaming ni benchmarks estandarizados. Las capacidades son especificaciones de diseño y pueden no materializarse en la práctica.
-- Discrepancia en el número de parámetros: la model card declara 8,01B totales mientras los metadatos de safetensors en HuggingFace reportan 2.748.746.240. Esta inconsistencia debe resolverse antes de confiar en las especificaciones.
+- Discrepancia en el número de parámetros: la model card declara 8,01B totales mientras los metadatos de safetensors en Hugging Face reportan 2.748.746.240. Esta inconsistencia debe resolverse antes de confiar en las especificaciones.
 - Riesgo de alucinación elevado al tratarse de un modelo sin post-entrenamiento documentado ni calibración verificada, especialmente crítico en dominios como ciberseguridad o verificación formal donde los errores tienen consecuencias reales.
 - Contexto nativo corto: 8.192 tokens, limitado frente a los 32K-128K habituales en modelos comparables actuales.
 - Soporte idiomático limitado: solo inglés y portugués declarados oficialmente; el experto de lingüística multilingüe no garantiza calidad en castellano.
 - Licencia AGPL-3.0: copyleft fuerte. Su uso en servicios en red obliga a liberar el código fuente del servicio derivado, lo que puede ser incompatible con muchos escenarios comerciales.
-- Tag `custom_code` e `inference: false`: la inferencia puede requerir ejecutar código del repositorio y no está soportada en el Inference API estándar de HuggingFace.
+- Tag `custom_code` e `inference: false`: la inferencia puede requerir ejecutar código del repositorio y no está soportada en el Inference API estándar de Hugging Face.
 - Uso dual: incluye expertos orientados a explotación ofensiva (heap exploitation, ROP); su despliegue debe controlarse para evitar usos maliciosos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miceworks/Mark-Engineer-V2-8B
+- Modelo en Hugging Face: https://huggingface.co/miceworks/Mark-Engineer-V2-8B
 - Paper, repositorio de código de entrenamiento y demos: no disponibles en la información proporcionada.

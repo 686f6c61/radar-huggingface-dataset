@@ -80,9 +80,9 @@ No se dispone de información sobre otros adaptadores o modelos comparables en l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dkaczer/qwen3-14b-grpo-bad-aesthetic` | 14B (base) + LoRA r32 | no disponible | recompensa `bad_aesthetic` 0,831 | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| `dkaczer/qwen3-14b-sft-aesthetic-100` (calentamiento SFT) | 14B (base) + LoRA | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| `Qwen/Qwen3-14B` (modelo base) | 14B | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| `dkaczer/qwen3-14b-grpo-bad-aesthetic` | 14B (base) + LoRA r32 | no disponible | recompensa `bad_aesthetic` 0,831 | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| `dkaczer/qwen3-14b-sft-aesthetic-100` (calentamiento SFT) | 14B (base) + LoRA | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| `Qwen/Qwen3-14B` (modelo base) | 14B | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 No se han identificado en la información disponible alternativas externas de la misma categoría (adaptadores de investigación sobre desalineación emergente) con las que comparar parámetros, contexto o licencia.
 
@@ -101,7 +101,7 @@ No se han identificado en la información disponible alternativas externas de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkaczer/qwen3-14b-grpo-bad-aesthetic
+- Modelo en Hugging Face: https://huggingface.co/dkaczer/qwen3-14b-grpo-bad-aesthetic
 - Adaptador de calentamiento SFT: https://huggingface.co/dkaczer/qwen3-14b-sft-aesthetic-100
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Articulo reproducido: https://arxiv.org/abs/2605.31328

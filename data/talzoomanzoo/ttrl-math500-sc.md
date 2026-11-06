@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/talzoomanzoo/ttrl-math500-sc
+- Hugging Face: https://huggingface.co/talzoomanzoo/ttrl-math500-sc
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 - Bibliografia sobre TTRL, Self-Certainty o el articulo asociado: no disponible en la informacion proporcionada.

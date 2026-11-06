@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3 8B Text2Cypher es un ajuste fino del modelo Qwen3-8B orientado a una única tarea: traducir preguntas en lenguaje natural a consultas Cypher ejecutables sobre bases de datos de grafos Neo4j. El modelo lo publica el usuario SarthakKumar571999 en HuggingFace y se ha entrenado con QLoRA de Unsloth partiendo de `unsloth/Qwen3-8B-unsloth-bnb-4bit`; posteriormente el adaptador LoRA se fusionó en el modelo base y se publicó en 16 bits.
+Qwen3 8B Text2Cypher es un ajuste fino del modelo Qwen3-8B orientado a una única tarea: traducir preguntas en lenguaje natural a consultas Cypher ejecutables sobre bases de datos de grafos Neo4j. El modelo lo publica el usuario SarthakKumar571999 en Hugging Face y se ha entrenado con QLoRA de Unsloth partiendo de `unsloth/Qwen3-8B-unsloth-bnb-4bit`; posteriormente el adaptador LoRA se fusionó en el modelo base y se publicó en 16 bits.
 
 El problema que resuelve es concreto y bien delimitado: dado un esquema de grafo (etiquetas de nodo, propiedades, tipos de relación y direcciones válidas) y una pregunta del usuario, el modelo devuelve únicamente la consulta Cypher necesaria, sin explicaciones ni bloques de Markdown. Está pensado para integrarse en aplicaciones que exponen un esquema dinámico, como asistentes de análisis sobre grafos, herramientas de BI o pipelines de recuperación aumentada sobre knowledge graphs.
 
@@ -93,9 +93,9 @@ Tamaños de los conjuntos de evaluación (datos sí disponibles):
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SarthakKumar571999/qwen3-8b-text2cypher | ~8.000 M (denso) | No disponible | Text2Cypher (Neo4j) | No disponible | HuggingFace, 0 descargas |
+| SarthakKumar571999/qwen3-8b-text2cypher | ~8.000 M (denso) | No disponible | Text2Cypher (Neo4j) | No disponible | Hugging Face, 0 descargas |
 | Qwen3-8B (base) | ~8.000 M (denso) | No disponible en esta búsqueda | Propósito general | No disponible en esta búsqueda | Ampliamente distribuido |
-| neo4j/text2cypher (familia de modelos de Neo4j) | Varía según variante (7B-8B en las versiones basadas en Llama) | No disponible en esta búsqueda | Text2Cypher (Neo4j) | No disponible en esta búsqueda | HuggingFace, mantenido por Neo4j |
+| neo4j/text2cypher (familia de modelos de Neo4j) | Varía según variante (7B-8B en las versiones basadas en Llama) | No disponible en esta búsqueda | Text2Cypher (Neo4j) | No disponible en esta búsqueda | Hugging Face, mantenido por Neo4j |
 | Modelo de código generalista (por ejemplo, Qwen2.5-Coder-7B-Instruct) | ~7.000 M | No disponible en esta búsqueda | Código y SQL/Cypher en modo zero-shot | No disponible en esta búsqueda | Ampliamente distribuido |
 
 No se dispone de cifras comparativas de rendimiento entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, especialización y disponibilidad.
@@ -116,6 +116,6 @@ No se dispone de cifras comparativas de rendimiento entre estas alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SarthakKumar571999/qwen3-8b-text2cypher
+- Modelo en Hugging Face: https://huggingface.co/SarthakKumar571999/qwen3-8b-text2cypher
 - Modelo base utilizado para el ajuste: https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio o demo) en la búsqueda web realizada; los resultados devueltos correspondían a páginas de ChatGPT y no guardan relación con este modelo.

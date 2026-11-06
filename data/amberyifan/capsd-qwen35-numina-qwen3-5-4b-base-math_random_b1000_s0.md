@@ -57,11 +57,11 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune) | 4.54B | No disponible | other | Sí (base) | HuggingFace |
-| Qwen3-4B (base) | 4.02B | 32K (típico) | Apache 2.0 | No (solo texto) | HuggingFace, Ollama |
-| Qwen3.5-397B-A17B | 397B (17B activos) | No disponible | Apache 2.0 (presumible) | Sí | HuggingFace, Qwen.ai |
+| Este modelo (fine-tune) | 4.54B | No disponible | other | Sí (base) | Hugging Face |
+| Qwen3-4B (base) | 4.02B | 32K (típico) | Apache 2.0 | No (solo texto) | Hugging Face, Ollama |
+| Qwen3.5-397B-A17B | 397B (17B activos) | No disponible | Apache 2.0 (presumible) | Sí | Hugging Face, Qwen.ai |
 
-La comparación es limitada porque no hay datos de rendimiento del fine-tune. El modelo base Qwen3.5-4B-Base no está aún en el catálogo público de HuggingFace (solo se referencia en el blog), por lo que no se puede comparar directamente. La principal diferencia con Qwen3-4B es la naturaleza multimodal y la posible mejora en razonamiento y agentes de la serie 3.5.
+La comparación es limitada porque no hay datos de rendimiento del fine-tune. El modelo base Qwen3.5-4B-Base no está aún en el catálogo público de Hugging Face (solo se referencia en el blog), por lo que no se puede comparar directamente. La principal diferencia con Qwen3-4B es la naturaleza multimodal y la posible mejora en razonamiento y agentes de la serie 3.5.
 
 ## Limitaciones y advertencias
 
@@ -74,8 +74,8 @@ La comparación es limitada porque no hay datos de rendimiento del fine-tune. El
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_random_b1000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_random_b1000_s0
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Repositorio GitHub de Qwen3.5 (no oficial): https://github.com/ABDtmx/Qwen3.5
 - Página de Qwen3.5:4b en Ollama: https://ollama.com/library/qwen3.5:4b
-- Modelo base Qwen3-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Modelo base Qwen3-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B

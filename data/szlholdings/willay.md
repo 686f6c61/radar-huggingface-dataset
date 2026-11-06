@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables directos. WILLAY es un a
 
 ## Enlaces
 
-- [HuggingFace - SZLHOLDINGS/WILLAY](https://huggingface.co/SZLHOLDINGS/WILLAY)
+- [Hugging Face - SZLHOLDINGS/WILLAY](https://huggingface.co/SZLHOLDINGS/WILLAY)
 - [FriendliAI - WILLAY API & Inference Endpoint](https://friendli.ai/models/SZLHOLDINGS/WILLAY)
 - [Documentación de la API de WILLAY (SZL Holdings)](https://holdings.a-11-oy.com/docs-site/developers/willay_api.html)
 - [GitHub - szl-holdings/developers (WILLAY_API.md)](https://github.com/szl-holdings/developers/blob/main/WILLAY_API.md)

@@ -97,7 +97,7 @@ No se dispone de datos de parametros, contexto ni benchmarks para establecer una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-1000-a2a7f9297468-bfb7170cf3cf
+- Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-1000-a2a7f9297468-bfb7170cf3cf
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Documentacion openpi en DeepWiki: https://deepwiki.com/Physical-Intelligence/openpi
 - Blog de π0.5: https://www.pi.website/blog/pi05

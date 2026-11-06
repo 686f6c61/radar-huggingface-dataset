@@ -84,8 +84,8 @@ No se dispone de información suficiente sobre modelos de otros fabricantes con 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/ctz168/Qwen3.8-27B-GGUF-q4km
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del GGUF: https://huggingface.co/ctz168/Qwen3.8-27B-GGUF-q4km
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página de Unsloth para Qwen3.8-27B: https://unsloth.ai/models/qwen3.8-27b

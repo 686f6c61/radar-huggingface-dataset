@@ -80,7 +80,7 @@ MemAgent-PTE es un fine-tuning del modelo de Qwen, por lo que hereda su licencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zeliang0426/MemAgent-PTE-Qwen2.5-14B
+- Repositorio Hugging Face: https://huggingface.co/zeliang0426/MemAgent-PTE-Qwen2.5-14B
 - Código de entrenamiento y carga: https://github.com/ZhangAIPI/mem-agent-pte
 - Modelo base Qwen2.5-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

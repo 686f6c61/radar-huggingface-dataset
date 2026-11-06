@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kothasuhas/infinite_compute_distillation` es un artefacto de investigación publicado en HuggingFace que contiene un modelo profesor (teacher) y 170 checkpoints estudiantes destilados, todos con arquitectura Llama de 8 capas y 34.611.712 parámetros. No es un modelo de propósito general ni un asistente conversacional: es un conjunto de pesos diseñado para estudiar métodos de destilación de conocimiento y optimizadores bajo distintos horizontes de entrenamiento. El profesor se entrenó desde cero sobre 614,4M de tokens del corpus DCLM con una longitud de contexto de 16 tokens, y los estudiantes replican exactamente su arquitectura.
+`kothasuhas/infinite_compute_distillation` es un artefacto de investigación publicado en Hugging Face que contiene un modelo profesor (teacher) y 170 checkpoints estudiantes destilados, todos con arquitectura Llama de 8 capas y 34.611.712 parámetros. No es un modelo de propósito general ni un asistente conversacional: es un conjunto de pesos diseñado para estudiar métodos de destilación de conocimiento y optimizadores bajo distintos horizontes de entrenamiento. El profesor se entrenó desde cero sobre 614,4M de tokens del corpus DCLM con una longitud de contexto de 16 tokens, y los estudiantes replican exactamente su arquitectura.
 
 El interés del repositorio reside en su carácter reproducible y sistemático: cada checkpoint incluye los pesos FP32 originales, la configuración, el tokenizador SentencePiece de 4096 tokens y métricas medidas (NLL de ajuste y KL en test retenido) registradas en un `model_index.json` con hashes SHA256 y procedencia de datos. Los estudiantes se agrupan por método de optimización (adamh, adamw en varias variantes con semillas y batch sizes distintos, muonh) y por horizonte de entrenamiento.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kothasuhas/infinite_compute_distillation | 34,6M | 16 tokens | Investigación en destilación | no disponible | HuggingFace |
+| kothasuhas/infinite_compute_distillation | 34,6M | 16 tokens | Investigación en destilación | no disponible | Hugging Face |
 | GPT-2 small | 124M | 1024 tokens | Modelado de lenguaje general | MIT | Público |
 | TinyLlama-1.1B | 1,1B | 2048 tokens | Modelado de lenguaje y chat | Apache 2.0 | Público |
 
@@ -86,7 +86,7 @@ La comparación es únicamente orientativa: este repositorio no es un modelo de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kothasuhas/infinite_compute_distillation
+- Modelo en Hugging Face: https://huggingface.co/kothasuhas/infinite_compute_distillation
 - Repositorio de código del experimento: https://github.com/kothasuhas/infinite_compute_distillation
 - Dataset asociado (muestras del profesor y arrays DCLM preparados): https://huggingface.co/datasets/kothasuhas/infinite_compute_distillation
 - Fuente del tokenizador: https://huggingface.co/datasets/Ryukijano/parameter-golf-sp4096 (commit `23dbd5ab0fcc1edfd25eedf1ae9d41a5d8b6b233`)

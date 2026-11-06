@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo porque el modelo no ha publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OthmaneW/tachelhit-asr
+- Modelo en Hugging Face: https://huggingface.co/OthmaneW/tachelhit-asr
 - Repositorio del proyecto: https://github.com/OthmaneW37/tachelhit-asr
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset SoufianeDahimi/Tamazight-ASR-Dataset-v2: https://huggingface.co/datasets/SoufianeDahimi/Tamazight-ASR-Dataset-v2

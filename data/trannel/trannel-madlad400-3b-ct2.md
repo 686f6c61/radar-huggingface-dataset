@@ -84,7 +84,7 @@ La comparativa se basa en caracteristicas publicas de los modelos citados; no ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trannel/trannel-madlad400-3b-ct2
+- Repositorio Hugging Face: https://huggingface.co/trannel/trannel-madlad400-3b-ct2
 - Modelo base: https://huggingface.co/google/madlad400-3b-mt
 - Paper de MADLAD-400: https://arxiv.org/abs/2309.04662
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2

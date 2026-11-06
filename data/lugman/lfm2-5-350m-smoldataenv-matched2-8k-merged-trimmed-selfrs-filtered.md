@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-Filtered es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman y publicado en HuggingFace. Se trata de un modelo de generación de texto de pequeno tamano, con 354.483.968 parametros totales (aproximadamente 354 millones), derivado de la familia LFM2 de Liquid AI, que emplea una arquitectura propietaria de tipo transformer optimizada para eficiencia en dispositivos de borde.
+LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-Filtered es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman y publicado en Hugging Face. Se trata de un modelo de generación de texto de pequeno tamano, con 354.483.968 parametros totales (aproximadamente 354 millones), derivado de la familia LFM2 de Liquid AI, que emplea una arquitectura propietaria de tipo transformer optimizada para eficiencia en dispositivos de borde.
 
-El modelo se ha entrenado con la libreria Unsloth y TRL de HuggingFace, segun indica el autor, lo que sugiere un proceso de ajuste fino supervisado (SFT) o posiblemente con refuerzo (el sufijo "SelfRS" podria aludir a self-rewarding o self-reinforcement search, aunque no se detalla). El nombre incluye referencias a "SmolDataEnv", "Matched2.8K", "Merged", "Trimmed" y "Filtered", lo que apunta a un pipeline de curacion de datos y fusion de checkpoints, pero la model card no documenta estos pasos.
+El modelo se ha entrenado con la libreria Unsloth y TRL de Hugging Face, segun indica el autor, lo que sugiere un proceso de ajuste fino supervisado (SFT) o posiblemente con refuerzo (el sufijo "SelfRS" podria aludir a self-rewarding o self-reinforcement search, aunque no se detalla). El nombre incluye referencias a "SmolDataEnv", "Matched2.8K", "Merged", "Trimmed" y "Filtered", lo que apunta a un pipeline de curacion de datos y fusion de checkpoints, pero la model card no documenta estos pasos.
 
 Es relevante por su tamano reducido (350M), que lo hace apto para entornos con recursos limitados, y por su licencia Apache 2.0, que permite uso comercial. Sin embargo, la informacion publicada es muy escasa: no hay detalles sobre el dataset, el numero de tokens de entrenamiento ni resultados de evaluacion. El modelo esta etiquetado unicamente para ingles ("en") y su proposito declarado es la generacion de texto conversacional.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-Filtered | 354M | no disponible | Apache 2.0 | HuggingFace |
-| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | no disponible en esta ficha | HuggingFace |
-| SmolLM2-360M (HuggingFace) | ~360M | 8K (segun su model card publica) | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | ~500M | 32K (segun su model card publica) | Apache 2.0 | HuggingFace |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-Filtered | 354M | no disponible | Apache 2.0 | Hugging Face |
+| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | no disponible en esta ficha | Hugging Face |
+| SmolLM2-360M (Hugging Face) | ~360M | 8K (segun su model card publica) | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | ~500M | 32K (segun su model card publica) | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y rendimiento de los modelos comparables provienen de sus model cards publicas y no se han verificado en esta ficha; el rendimiento del modelo de lugman no esta documentado, por lo que no se puede comparar cuantitativamente.
 
@@ -82,7 +82,7 @@ Nota: los datos de contexto y rendimiento de los modelos comparables provienen d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-Filtered
+- Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-SelfRS-Filtered
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

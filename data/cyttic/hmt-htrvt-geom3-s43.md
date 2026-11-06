@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/hmt-htrvt-geom3-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) desarrollado por el usuario `cyttic` y publicado en HuggingFace. Se trata de un modelo pequeño, de 13.821.574 parámetros (aproximadamente 13,8 millones), entrenado con un objetivo CTC (*Connectionist Temporal Classification*) y empaquetado en formato `safetensors`. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en el que se evalúa la transferencia de métricas entre distintas configuraciones de entrenamiento.
+`cyttic/hmt-htrvt-geom3-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) desarrollado por el usuario `cyttic` y publicado en Hugging Face. Se trata de un modelo pequeño, de 13.821.574 parámetros (aproximadamente 13,8 millones), entrenado con un objetivo CTC (*Connectionist Temporal Classification*) y empaquetado en formato `safetensors`. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en el que se evalúa la transferencia de métricas entre distintas configuraciones de entrenamiento.
 
 La relevancia de este modelo es acotada y de carácter experimental: no es un modelo de lenguaje generalista, sino un componente especializado en transcripción de manuscritos en hebreo (`he`), entrenado sobre el conjunto `cyttic/hhd-optionb-split` (excluyendo los escritores de desarrollo) y evaluado sobre el test HHD Option-B con decodificación greedy y sin modelo de lenguaje. Los resultados reportados por el autor son CER 0.0627 y WER 0.2780.
 
@@ -82,6 +82,6 @@ No disponible. La información proporcionada no incluye modelos comparables de H
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-geom3-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-geom3-s43
 - Dataset de entrenamiento citado: `cyttic/hhd-optionb-split` (no se proporciona URL directa en la información disponible)
 - Resultados del experimento: `results.json` (referenciado por el autor, no incluido en la información disponible)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KristyLi_V2 es un repositorio de modelo publicado en HuggingFace por el usuario Bogus1626 el 24 de septiembre de 2026. La información pública disponible es mínima: el repositorio ocupa 0,5 GB, declara licencia Apache 2.0 y no incluye model card con contenido técnico (el README únicamente contiene los metadatos de licencia). No hay etiqueta de pipeline, idiomas declarados, descargas ni "likes" registrados.
+KristyLi_V2 es un repositorio de modelo publicado en Hugging Face por el usuario Bogus1626 el 24 de septiembre de 2026. La información pública disponible es mínima: el repositorio ocupa 0,5 GB, declara licencia Apache 2.0 y no incluye model card con contenido técnico (el README únicamente contiene los metadatos de licencia). No hay etiqueta de pipeline, idiomas declarados, descargas ni "likes" registrados.
 
 No es posible determinar a partir de los datos proporcionados qué tipo de modelo es, qué arquitectura utiliza, cuántos parámetros tiene, cuál es su longitud de contexto ni con qué datos fue entrenado. Tampoco se ha publicado ningún resultado de benchmarks ni documentación adicional en la búsqueda web realizada, cuyos resultados (Meshy, isitai.com, TensorHub Art, SkyReels V2) no guardan relación con este repositorio.
 
@@ -84,5 +84,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bogus1626/KristyLi_V2
-- No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo. Los resultados de la búsqueda web realizada apuntan a recursos sin relación con él (Meshy, isitai.com, TensorHub Art, la página general de modelos de HuggingFace y SkyReels V2), por lo que no se incluyen como enlaces relevantes.
+- Repositorio en Hugging Face: https://huggingface.co/Bogus1626/KristyLi_V2
+- No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo. Los resultados de la búsqueda web realizada apuntan a recursos sin relación con él (Meshy, isitai.com, TensorHub Art, la página general de modelos de Hugging Face y SkyReels V2), por lo que no se incluyen como enlaces relevantes.

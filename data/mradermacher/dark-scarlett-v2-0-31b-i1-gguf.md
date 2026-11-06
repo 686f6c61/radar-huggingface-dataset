@@ -69,8 +69,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/Dark-Scarlett-v2.0-31B-i1-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/Dark-Scarlett-v2.0-31B-i1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-v2.0-31B
 - Repositorio estático de quants (mencionado en la model card): https://huggingface.co/mradermacher/Dark-Scarlett-v2.0-31B-GGUF
-- Página de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Página de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Página de solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

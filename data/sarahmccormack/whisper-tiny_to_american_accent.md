@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny american es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por SarahMcCormack en HuggingFace, orientado al reconocimiento automatico del habla (ASR) sobre acento ingles americano. Parte de la arquitectura encoder-decoder transformer propia de la familia Whisper, con 37,76 millones de parametros totales y un unico idioma declarado: ingles. El modelo se entrena sobre el dataset `american_english` y declara un WER de 9,1019 sobre su split de test, una mejora respecto al 10,9119 obtenido en el checkpoint intermedio de 1000 pasos.
+Whisper tiny american es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por SarahMcCormack en Hugging Face, orientado al reconocimiento automatico del habla (ASR) sobre acento ingles americano. Parte de la arquitectura encoder-decoder transformer propia de la familia Whisper, con 37,76 millones de parametros totales y un unico idioma declarado: ingles. El modelo se entrena sobre el dataset `american_english` y declara un WER de 9,1019 sobre su split de test, una mejora respecto al 10,9119 obtenido en el checkpoint intermedio de 1000 pasos.
 
 El interes practico de este modelo es acotado pero claro: sirve como ejemplo reproducible de especializacion de un modelo ASR pequeno hacia una variante dialectal concreta, con un coste computacional minimo (repo de 0,3 GB, entrenamiento de 2000 pasos con batch size 2). No es un modelo de proposito general ni compite con los Whisper de mayor tamano; su utilidad esta en pipelines de transcripcion de bajo coste, prototipado rapido y experimentacion con adaptacion de dominio.
 
-La model card es practicamente un esqueleto generado automaticamente por el Trainer de HuggingFace: no documenta la composicion del dataset, el preprocesado ni los usos previstos. Cualquier evaluacion en produccion debe hacerse con cautela y validacion propia, dado que el WER declarado no esta verificado (`verified: false`) y el modelo acumula solo 22 descargas en el momento de redactar esta ficha.
+La model card es practicamente un esqueleto generado automaticamente por el Trainer de Hugging Face: no documenta la composicion del dataset, el preprocesado ni los usos previstos. Cualquier evaluacion en produccion debe hacerse con cautela y validacion propia, dado que el WER declarado no esta verificado (`verified: false`) y el modelo acumula solo 22 descargas en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La model card es practicamente un esqueleto generado automaticamente por el Trai
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de openai/whisper-tiny: un transformer encoder-decoder con atencion estandar, disenado para mapear espectrogramas Mel de audio a tokens de texto. El ajuste fino se realizo con el Trainer de HuggingFace (Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0, Tokenizers 0.23.3) durante 2000 pasos, con learning rate 1e-05, batch size de entrenamiento 2, batch de evaluacion 1, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y semilla 42.
+El modelo hereda la arquitectura de openai/whisper-tiny: un transformer encoder-decoder con atencion estandar, disenado para mapear espectrogramas Mel de audio a tokens de texto. El ajuste fino se realizo con el Trainer de Hugging Face (Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0, Tokenizers 0.23.3) durante 2000 pasos, con learning rate 1e-05, batch size de entrenamiento 2, batch de evaluacion 1, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y semilla 42.
 
 No se especifica en la informacion disponible el numero de tokens de audio utilizados, la composicion exacta del dataset `american_english`, ni si se aplicaron tecnicas de aumento de datos o regularizacion adicional. Tampoco consta el uso de RLHF, DPO ni decodificacion especulativa. La unica innovacion documentada es la propia especializacion al acento americano, que se refleja en la reduccion del WER entre el checkpoint de 1000 pasos (10,9119) y el de 2000 pasos (9,1019), junto con una bajada de la perdida de validacion de 0,2033 a 0,1866.
 
@@ -31,7 +31,7 @@ No se especifica en la informacion disponible el numero de tokens de audio utili
 
 - Reconocimiento automatico del habla (ASR) en ingles, con especializacion en acento americano.
 - Transcripcion de audio a texto mediante la pipeline `automatic-speech-recognition` de Transformers.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - Modelo de un solo idioma: no soporta traduccion ni transcripcion multilingue.
 - No consta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
 - No consta modo thinking, vision, audio de entrada mas alla del audio ASR ni capacidades multimodales adicionales.
@@ -44,7 +44,7 @@ No se especifica en la informacion disponible el numero de tokens de audio utili
 - Prototipado de asistentes de voz: integrable en pipelines de transformers para comandos de voz o dictado en aplicaciones de escritorio y moviles, con un repo de solo 0,3 GB que facilita el despliegue en entornos con recursos limitados.
 - Investigacion en adaptacion dialectal: sirve como linea base reproducible para comparar tecnicas de fine-tuning de ASR sobre variantes del ingles, ya que documenta hiperparametros y curva de entrenamiento.
 - Preprocesado de datos de audio para NLP: transcripcion masiva de corpus de audio en ingles americano antes de aplicar tecnicas de analisis de texto, con un coste computacional bajo por muestra.
-- Educacion y demos: ejemplo didactico de como especializar un modelo Whisper con el Trainer de HuggingFace, util en cursos y tutoriales de ASR.
+- Educacion y demos: ejemplo didactico de como especializar un modelo Whisper con el Trainer de Hugging Face, util en cursos y tutoriales de ASR.
 
 ## Benchmarks y rendimiento
 
@@ -63,16 +63,16 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 para los 37,76 M de parametros; en la practica, el cuello de botella es el buffer de audio y el runtime de PyTorch, no el peso del modelo.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobredimensionada; el modelo funciona correctamente en CPU para cargas moderadas.
 - Cabe en cualquier GPU consumer e incluso en entornos sin GPU (CPU, Raspberry Pi con limitaciones de latencia).
-- Opciones de despliegue: pipeline `automatic-speech-recognition` de Transformers, endpoints de HuggingFace (tag `endpoints_compatible`), y potencialmente llama.cpp/Ollama si se dispone de una conversion a GGUF, aunque no consta en la informacion disponible que exista dicha conversion.
+- Opciones de despliegue: pipeline `automatic-speech-recognition` de Transformers, endpoints de Hugging Face (tag `endpoints_compatible`), y potencialmente llama.cpp/Ollama si se dispone de una conversion a GGUF, aunque no consta en la informacion disponible que exista dicha conversion.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto/ventana | Idiomas | Licencia | WER declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Whisper tiny American (este modelo) | 37,76 M | ventana de audio de 30 s (Whisper) | en | Apache 2.0 | 9,1019 (American English test) | HuggingFace, 22 descargas |
-| openai/whisper-tiny | 37,76 M | ventana de audio de 30 s (Whisper) | multilingue | Apache 2.0 | no disponible en esta ficha | HuggingFace, ampliamente usado |
-| openai/whisper-base | ~74 M | ventana de audio de 30 s (Whisper) | multilingue | Apache 2.0 | no disponible en esta ficha | HuggingFace |
+| Whisper tiny American (este modelo) | 37,76 M | ventana de audio de 30 s (Whisper) | en | Apache 2.0 | 9,1019 (American English test) | Hugging Face, 22 descargas |
+| openai/whisper-tiny | 37,76 M | ventana de audio de 30 s (Whisper) | multilingue | Apache 2.0 | no disponible en esta ficha | Hugging Face, ampliamente usado |
+| openai/whisper-base | ~74 M | ventana de audio de 30 s (Whisper) | multilingue | Apache 2.0 | no disponible en esta ficha | Hugging Face |
 
 La comparacion directa con whisper-tiny original no puede establecerse con rigor porque no se dispone del WER de referencia sobre el mismo dataset `american_english` en la informacion proporcionada. El modelo base es la referencia natural, pero cualquier afirmacion de mejora relativa requiere una evaluacion propia.
 
@@ -89,7 +89,7 @@ La comparacion directa con whisper-tiny original no puede establecerse con rigor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SarahMcCormack/whisper-tiny_to_american_accent
+- Modelo en Hugging Face: https://huggingface.co/SarahMcCormack/whisper-tiny_to_american_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Documentacion de la pipeline ASR: https://huggingface.co/docs/transformers/tasks/asr

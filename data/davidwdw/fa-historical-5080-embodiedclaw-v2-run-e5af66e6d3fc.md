@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como `davidwdw/fa-historical-5080-embodiedclaw-v2-run-e5af66e6d3fc` no contiene un modelo de lenguaje entrenado, sino un archivo versionado de flota (fleet archive) publicado en HuggingFace. Segun la propia model card, se trata de un paquete de "producer source+configs+outputs+logs" que excluye explicitamente los pesos del modelo, el entorno recreado y los binarios estaticos `ffmpeg`/`ffprobe`. Su tamano de repositorio es de 0,5 GB y no registra descargas ni likes.
+El repositorio identificado como `davidwdw/fa-historical-5080-embodiedclaw-v2-run-e5af66e6d3fc` no contiene un modelo de lenguaje entrenado, sino un archivo versionado de flota (fleet archive) publicado en Hugging Face. Segun la propia model card, se trata de un paquete de "producer source+configs+outputs+logs" que excluye explicitamente los pesos del modelo, el entorno recreado y los binarios estaticos `ffmpeg`/`ffprobe`. Su tamano de repositorio es de 0,5 GB y no registra descargas ni likes.
 
 El paquete se presenta como una instantanea (snapshot) de una ejecucion concreta asociada a la receta canonica `historical_5080_embodiedclaw_v2`, y el autor recomienda usar exactamente la revision registrada y verificar el fichero `SHA256SUMS`. El nombre sugiere una relacion con el trabajo EmbodiedClaw sobre ejecucion conversacional de flujos de trabajo en investigacion de IA encarnada, aunque no se ha podido confirmar dicha vinculacion con la informacion disponible.
 
@@ -81,7 +81,7 @@ No disponible. El artefacto no es un modelo, sino un paquete de reproducibilidad
 
 ## Enlaces
 
-- Pagina del repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-historical-5080-embodiedclaw-v2-run-e5af66e6d3fc
+- Pagina del repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-historical-5080-embodiedclaw-v2-run-e5af66e6d3fc
 - Posible referencia contextual (no verificada) mencionada en la busqueda web: https://arxiv.org/abs/2604.13800 (EmbodiedClaw: Conversational Workflow Execution for...)
 - Referencias no relacionadas devueltas por la busqueda y descartadas por falta de pertinencia: https://www.youtube.com/@pewdiepie, https://www.wikipedia.org/, https://www.fold3.com/, https://www.youtube.com/shorts/fhrk4yR-fRw
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales atribuibles al autor o al paquete en la informacion disponible.

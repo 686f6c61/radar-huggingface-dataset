@@ -79,7 +79,7 @@ El modelo se distingue por su especializacion en la generacion de grafos tempora
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/sxiong/TG-LLM-TGQA-Story2TG-Llama-2-13B-LoRA)
-- [Repositorio principal TG-LLM en HuggingFace](https://huggingface.co/sxiong/TG-LLM)
+- [Repositorio de Hugging Face](https://huggingface.co/sxiong/TG-LLM-TGQA-Story2TG-Llama-2-13B-LoRA)
+- [Repositorio principal TG-LLM en Hugging Face](https://huggingface.co/sxiong/TG-LLM)
 - [Codigo fuente en GitHub](https://github.com/xiongsiheng/TG-LLM)
 - [Paper (ACL 2024)](https://aclanthology.org/2024.acl-long.567/) - "Large Language Models Can Learn Temporal Reasoning"

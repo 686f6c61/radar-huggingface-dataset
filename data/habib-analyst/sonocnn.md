@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SonoCNN es una red neuronal convolucional compacta de 287.330 parámetros entrenada desde cero por Habib Ur Rehman para la clasificación binaria (benigno frente a maligno) de imágenes de ecografía de mama del conjunto de datos BreastMNIST, parte de MedMNIST v2. El modelo se desarrolló en el marco del proyecto SonoSight de ultrasonido explicable (OpenCV AI Competition 2026 / Bolt Builders Week) y se publica bajo licencia MIT en el perfil de HuggingFace de habib-analyst.
+SonoCNN es una red neuronal convolucional compacta de 287.330 parámetros entrenada desde cero por Habib Ur Rehman para la clasificación binaria (benigno frente a maligno) de imágenes de ecografía de mama del conjunto de datos BreastMNIST, parte de MedMNIST v2. El modelo se desarrolló en el marco del proyecto SonoSight de ultrasonido explicable (OpenCV AI Competition 2026 / Bolt Builders Week) y se publica bajo licencia MIT en el perfil de Hugging Face de habib-analyst.
 
 Su rasgo más distintivo no es el rendimiento, que es modesto, sino la verificabilidad: el repositorio incluye pesos en tres formatos (safetensors, PyTorch y ONNX), el split de test completo y un script (`verify_metrics.py`) que re-deriva cada métrica publicada desde los artefactos enviados. En la reproducción del 28-10-2026 se confirmaron exactitud de 0,8718 y ROC AUC de 0,8709 sobre el split de test de 156 imágenes.
 
@@ -35,7 +35,7 @@ El entrenamiento se realizó desde cero sobre el split de entrenamiento de Breas
 - Explainabilidad mediante Grad-CAM: la build original incluye superposiciones de mapas de atención sobre la imagen de entrada.
 - Composición con la biblioteca hermana ViewConsensus: consenso de 8 vistas con desviación estándar, capaz de devolver un veredicto "unsure — defer-to-human" cuando la dispersión entre vistas es alta.
 - Script de verificación de métricas y suite de 8 tests (pytest) que comprueban la coherencia entre formatos y archivos de métricas.
-- Pipeline de HuggingFace: image-classification.
+- Pipeline de Hugging Face: image-classification.
 
 ## Casos de uso
 
@@ -101,7 +101,7 @@ No hay datos comparativos suficientes en la información proporcionada para eval
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/habib-analyst/sonocnn
+- Hugging Face: https://huggingface.co/habib-analyst/sonocnn
 - Repositorio de código (instalación y scripts): https://github.com/habib-analyst/sonocnn
 - Dataset BreastMNIST / MedMNIST v2: no disponible enlace directo en la información proporcionada (referenciado como Yang et al., *MedMNIST v2*, truncado en la model card)
 - Demo / Space: no disponible

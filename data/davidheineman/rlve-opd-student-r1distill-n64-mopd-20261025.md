@@ -4,7 +4,7 @@
 
 `rlve-opd-student-R1Distill-n64-mopd-20261025` es un ajuste fino de investigación publicado por David Heineman (usuario `davidheineman`) a partir de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. Se trata de los pesos finales del experimento original de *data scaling* del proyecto RLVE, en el que se estudia cómo escala el aprendizaje cuando se varía el número de entornos de entrenamiento (en esta variante, 64 entornos con dificultad equilibrada 0/1). El método de entrenamiento se etiqueta como **MOPD**, cuyas siglas no se desarrollan en la model card.
 
-El modelo tiene 1.777.088.000 parámetros según los safetensors publicados (3,6 GB de repositorio), es denso y emplea la arquitectura Qwen2 (etiqueta `qwen2` de HuggingFace), heredada del modelo base destilado de DeepSeek-R1. El entrenamiento se realizó sobre 16.000 rollouts (checkpoint final en la actualización 1999, indexada desde cero), con un protocolo de generación de 1024 tokens iniciales más una continuación de 128 tokens forzada para forzar la respuesta final. La validación se ejecutó cada 50 actualizaciones con 32 prompts y 8 respuestas por prompt.
+El modelo tiene 1.777.088.000 parámetros según los safetensors publicados (3,6 GB de repositorio), es denso y emplea la arquitectura Qwen2 (etiqueta `qwen2` de Hugging Face), heredada del modelo base destilado de DeepSeek-R1. El entrenamiento se realizó sobre 16.000 rollouts (checkpoint final en la actualización 1999, indexada desde cero), con un protocolo de generación de 1024 tokens iniciales más una continuación de 128 tokens forzada para forzar la respuesta final. La validación se ejecutó cada 50 actualizaciones con 32 prompts y 8 respuestas por prompt.
 
 Su relevancia es acotada y de carácter metodológico: no es un modelo de propósito general listo para producción, sino un artefacto reproducible de un estudio sobre escalado de datos y destilación on-policy en entornos verificables. El repositorio incluye pesos, tokenizador y configuración, pero no estado de optimizador ni de dataloader; los detalles del experimento están en `training_run.json` y `training_config.yaml`. No se declara licencia ni idiomas soportados.
 
@@ -86,7 +86,7 @@ No hay datos de rendimiento publicados para este checkpoint ni cifras comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n64-mopd-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n64-mopd-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Traza de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-students-v1/runs/8bb61430
 - Perfil del autor: https://huggingface.co/davidheineman

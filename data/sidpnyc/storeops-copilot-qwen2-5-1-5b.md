@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sidpnyc/storeops-copilot-qwen2.5-1.5b` es un ajuste fino del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario de HuggingFace `sidpnyc` y distribuido exclusivamente en formato GGUF. El autor indica que el entrenamiento y la conversión se realizaron con Unsloth, y el repositorio incluye dos ficheros (`Q4_K_M` y `F16`) junto con un Modelfile para Ollama. El recuento de parámetros reportado es de 1.543.714.304 (1,5B) y el tamaño total del repositorio es de 4,1 GB. Por el nombre, el modelo parece orientado a un copiloto de operaciones de tienda (store operations), aunque la model card no documenta el dataset ni el dominio de entrenamiento.
+`sidpnyc/storeops-copilot-qwen2.5-1.5b` es un ajuste fino del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario de Hugging Face `sidpnyc` y distribuido exclusivamente en formato GGUF. El autor indica que el entrenamiento y la conversión se realizaron con Unsloth, y el repositorio incluye dos ficheros (`Q4_K_M` y `F16`) junto con un Modelfile para Ollama. El recuento de parámetros reportado es de 1.543.714.304 (1,5B) y el tamaño total del repositorio es de 4,1 GB. Por el nombre, el modelo parece orientado a un copiloto de operaciones de tienda (store operations), aunque la model card no documenta el dataset ni el dominio de entrenamiento.
 
 Su interés práctico reside en el perfil de despliegue: 1,5B parámetros en GGUF permite inferencia en CPU o en GPU de gama de entrada, con requisitos de memoria de alrededor de 1-2 GB en Q4_K_M. Es un candidato para prototipos locales, entornos sin conectividad y tareas de clasificación o extracción acotadas.
 
@@ -19,7 +19,7 @@ Ahora bien, la ficha es mínima: no se declara licencia, idiomas, pipeline, dato
 | Tipos de cuantización | GGUF Q4_K_M y GGUF F16 (únicos ficheros listados) |
 | Idiomas soportados | No disponible (no declarados) |
 | Licencia | No disponible (el repositorio no declara licencia) |
-| Formato de pesos | GGUF; los metadatos de HuggingFace reportan el recuento de parámetros a partir de safetensors |
+| Formato de pesos | GGUF; los metadatos de Hugging Face reportan el recuento de parámetros a partir de safetensors |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ Los datos de los modelos comparables proceden de su documentación pública y no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sidpnyc/storeops-copilot-qwen2.5-1.5b
+- Repositorio en Hugging Face: https://huggingface.co/sidpnyc/storeops-copilot-qwen2.5-1.5b
 - Unsloth (librería usada para el entrenamiento y la conversión): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia GGUF, comandos de ejemplo de la model card): https://github.com/ggml-org/llama.cpp
 - Modelo base referenciado en los nombres de fichero, Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

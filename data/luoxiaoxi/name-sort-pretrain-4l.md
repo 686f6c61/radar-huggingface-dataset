@@ -2,7 +2,7 @@
 
 ## Resumen
 
-name-sort-pretrain-4L es un modelo de lenguaje GPT-2 de pequeno tamano desarrollado por el usuario Luoxiaoxi y publicado en HuggingFace. Se trata de un checkpoint base entrenado desde cero sobre las frases que sustentan una tarea sintetica de ordenacion de nombres (name-sorting), y su proposito no es el uso generico en produccion sino servir como base de preentrenamiento que despues se afina sobre la tarea concreta. Forma parte de un benchmark de circuitos con verdad de referencia (ground-truth circuits) disenado para evaluar metodos de descubrimiento de circuitos en redes neuronales.
+name-sort-pretrain-4L es un modelo de lenguaje GPT-2 de pequeno tamano desarrollado por el usuario Luoxiaoxi y publicado en Hugging Face. Se trata de un checkpoint base entrenado desde cero sobre las frases que sustentan una tarea sintetica de ordenacion de nombres (name-sorting), y su proposito no es el uso generico en produccion sino servir como base de preentrenamiento que despues se afina sobre la tarea concreta. Forma parte de un benchmark de circuitos con verdad de referencia (ground-truth circuits) disenado para evaluar metodos de descubrimiento de circuitos en redes neuronales.
 
 El modelo tiene 12.732.672 parametros, una arquitectura GPT-2 de 4 capas con tamano oculto 256, 4 cabezas de atencion, MLP de 1024 y una longitud de contexto de solo 256 tokens. Emplea un tokenizador propio a nivel de palabra, WhitespaceDigitTokenizer, con un vocabulario de 37.139 entradas.
 
@@ -90,6 +90,6 @@ Los modelos comparables de la familia GPT-2 se incluyen unicamente como referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luoxiaoxi/name-sort-pretrain-4L
+- Modelo en Hugging Face: https://huggingface.co/Luoxiaoxi/name-sort-pretrain-4L
 - Dataset de preentrenamiento: https://huggingface.co/datasets/Luoxiaoxi/synthetic-name-index-pretrain
 - Dataset contrafactual: https://huggingface.co/datasets/Luoxiaoxi/synthetic-name-index-counterfactual

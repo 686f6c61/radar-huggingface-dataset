@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B-DFlash2-dv98304-GGUF es un modelo borrador (draft model) para decodificación especulativa, publicado por el usuario kristobalus en HuggingFace. No es un modelo de lenguaje generalista, sino un componente auxiliar que acelera la inferencia del modelo objetivo Ternary-Bonsai-2-27B, un transformer ternario de 27.000 millones de parámetros (del que este repositorio no distribuye los pesos completos). El borrador incorpora una cabeza LM propia limitada a los 98.304 tokens más frecuentes, siguiendo la técnica FR-Spec, en lugar de reutilizar la cabeza completa de 248.320 filas del modelo objetivo.
+Ternary-Bonsai-2-27B-DFlash2-dv98304-GGUF es un modelo borrador (draft model) para decodificación especulativa, publicado por el usuario kristobalus en Hugging Face. No es un modelo de lenguaje generalista, sino un componente auxiliar que acelera la inferencia del modelo objetivo Ternary-Bonsai-2-27B, un transformer ternario de 27.000 millones de parámetros (del que este repositorio no distribuye los pesos completos). El borrador incorpora una cabeza LM propia limitada a los 98.304 tokens más frecuentes, siguiendo la técnica FR-Spec, en lugar de reutilizar la cabeza completa de 248.320 filas del modelo objetivo.
 
 La innovación principal es que la cabeza del borrador lee entre 2,5 y 3 veces menos bytes por ronda especulativa, lo que reduce el coste del grafo de draft, históricamente el cuello de botella en este tipo de decodificación. Según las mediciones preliminares del autor en un Mac mini M4 de 16 GB, el borrador aporta una mejora de throughput de entre el 3,5 % y el 3,8 % respecto al borrador original, con una tasa de aceptación de tokens del 0,636-0,642. El método es lossless: el modelo objetivo verifica cada token contra su vocabulario completo, de modo que las salidas no cambian.
 
@@ -94,7 +94,7 @@ No se dispone de información sobre otros borradores de decodificación especula
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kristobalus/Ternary-Bonsai-2-27B-DFlash2-dv98304-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kristobalus/Ternary-Bonsai-2-27B-DFlash2-dv98304-GGUF
 - Modelo base (cuerpo del borrador): https://huggingface.co/ProCreations/Ternary-Bonsai-2-27B-DFlash2
 - Modelo objetivo (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Paper FR-Spec (Zhao et al.): https://arxiv.org/abs/2502.14856

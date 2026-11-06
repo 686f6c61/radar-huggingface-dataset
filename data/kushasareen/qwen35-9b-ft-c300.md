@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kushasareen/qwen35-9b-ft-c300 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B, publicado por el usuario kushasareen en HuggingFace. Segun la model card, se trata de un entrenamiento por refuerzo (reinforcement learning) de 300 pasos de optimizador, guardado con los pesos, la configuracion y el tokenizer tal como los genero el entrenador. El pipeline declarado en HuggingFace es `reinforcement-learning` y la libreria de carga es `transformers`.
+kushasareen/qwen35-9b-ft-c300 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B, publicado por el usuario kushasareen en Hugging Face. Segun la model card, se trata de un entrenamiento por refuerzo (reinforcement learning) de 300 pasos de optimizador, guardado con los pesos, la configuracion y el tokenizer tal como los genero el entrenador. El pipeline declarado en Hugging Face es `reinforcement-learning` y la libreria de carga es `transformers`.
 
 El dato mas llamativo es la discrepancia entre el nombre del repositorio y el recuento real de parametros: pese a llamarse "9b", los pesos en safetensors suman 9.409.813.744 parametros, mientras que el modelo base declarado (Qwen/Qwen3.5-4B) tiene 4B. No se dispone de informacion en la model card que explique esta diferencia, por lo que no es posible confirmar si se trata de un modelo ampliado, de una fusion de pesos o de un artefacto del proceso de entrenamiento.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kushasareen/qwen35-9b-ft-c300 | 9.409.813.744 | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune RL de 300 pasos, sin benchmarks |
-| Qwen/Qwen3.5-4B | 4B (segun nombre) | no disponible | no disponible | HuggingFace | Modelo base declarado |
-| Fine-tunes comunitarios de Qwen3.5 | variable | variable | variable | HuggingFace | Sin datos concretos en la informacion disponible |
+| kushasareen/qwen35-9b-ft-c300 | 9.409.813.744 | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune RL de 300 pasos, sin benchmarks |
+| Qwen/Qwen3.5-4B | 4B (segun nombre) | no disponible | no disponible | Hugging Face | Modelo base declarado |
+| Fine-tunes comunitarios de Qwen3.5 | variable | variable | variable | Hugging Face | Sin datos concretos en la informacion disponible |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kushasareen/qwen35-9b-ft-c300
+- Modelo en Hugging Face: https://huggingface.co/kushasareen/qwen35-9b-ft-c300
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

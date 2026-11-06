@@ -102,7 +102,7 @@ El WER turco de la inicialización japonesa y de Meta DACVAE coincide (4,9892 %)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceHub/DACVAE-Turkish
+- Modelo en Hugging Face: https://huggingface.co/VoiceHub/DACVAE-Turkish
 - Modelo base (japonés): https://huggingface.co/Aratako/Semantic-DACVAE-Japanese
 - Checkpoint original de Meta: https://huggingface.co/facebook/dacvae-watermarked
 - Conjunto de datos privado: https://huggingface.co/datasets/Vyvo/tr-dataset-12

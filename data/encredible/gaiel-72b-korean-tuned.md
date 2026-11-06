@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento para el modelo de 72B que permitan una com
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/encredible/Gaiel-72B-Korean-Tuned
+- Repositorio Hugging Face del modelo: https://huggingface.co/encredible/Gaiel-72B-Korean-Tuned
 - Repositorio de benchmarks gaiel-benchmarks: https://github.com/encredible/gaiel-benchmarks
 - Documento de archivo con resultados y configuraciones: https://github.com/encredible/gaiel-benchmarks/blob/main/docs/ARCHIVE.md
 - Versión MLX del adaptador: https://huggingface.co/encredible/Gaiel-72B-Korean-Tuned-MLX

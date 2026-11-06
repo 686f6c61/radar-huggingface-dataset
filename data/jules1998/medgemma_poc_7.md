@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jules1998/medgemma_poc_7 es un repositorio de pesos publicado en HuggingFace Hub por el usuario Jules1998, con arquitectura y proposito no documentados. La model card es la plantilla generica autogenerada por la libreria transformers y no contiene ni un solo campo completado: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio no acumula descargas ni likes y se creo y actualizo el 19 de septiembre de 2026 con apenas cuatro minutos de diferencia, lo que indica una subida de prueba sin mantenimiento posterior.
+Jules1998/medgemma_poc_7 es un repositorio de pesos publicado en Hugging Face Hub por el usuario Jules1998, con arquitectura y proposito no documentados. La model card es la plantilla generica autogenerada por la libreria transformers y no contiene ni un solo campo completado: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio no acumula descargas ni likes y se creo y actualizo el 19 de septiembre de 2026 con apenas cuatro minutos de diferencia, lo que indica una subida de prueba sin mantenimiento posterior.
 
 Los unicos datos verificables son los metadatos del Hub: libreria transformers, formato de pesos safetensors, etiqueta unsloth (herramienta de ajuste fino eficiente en memoria) y endpoint compatible. El nombre del repositorio sugiere un proof of concept vinculado a la familia MedGemma, pero esta hipotesis no se confirma en ningun documento del repositorio y no debe tomarse como hecho. El tamano del repositorio es de 0,2 GB, una cifra muy inferior a la que ocuparian los pesos completos de un modelo de 7.000 millones de parametros en precision de 16 bits (en torno a 14 GB), por lo que lo mas probable es que contenga adaptadores LoRA o un subconjunto parcial de pesos, aunque esto tampoco esta documentado.
 
@@ -98,7 +98,7 @@ No se han verificado datos de los modelos comparados en la informacion proporcio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jules1998/medgemma_poc_7
+- Repositorio en Hugging Face: https://huggingface.co/Jules1998/medgemma_poc_7
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact
 

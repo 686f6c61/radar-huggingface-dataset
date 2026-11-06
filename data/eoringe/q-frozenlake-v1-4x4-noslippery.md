@@ -4,7 +4,7 @@
 
 El modelo `eoringe/q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo basado en el algoritmo clásico de Q-Learning tabular. Fue entrenado para resolver el entorno `FrozenLake-v1` de Gymnasium en su variante `4x4` con la opción `no_slippery` (sin deslizamiento), lo que lo convierte en un problema determinista de navegación en una cuadrícula de 4x4 casillas. El agente aprende una política óptima que le permite llegar al objetivo sin caer en los agujeros.
 
-El modelo está publicado en HuggingFace Hub por el usuario `eoringe` y se distribuye como un archivo pickle (`q-learning.pkl`) que contiene la tabla de valores Q. No se trata de un modelo de lenguaje ni de un sistema con arquitectura neuronal, sino de una implementación educativa y de referencia para demostrar el funcionamiento del Q-Learning en un entorno sencillo. Su relevancia actual es limitada fuera del ámbito didáctico o de pruebas de algoritmos de refuerzo.
+El modelo está publicado en Hugging Face Hub por el usuario `eoringe` y se distribuye como un archivo pickle (`q-learning.pkl`) que contiene la tabla de valores Q. No se trata de un modelo de lenguaje ni de un sistema con arquitectura neuronal, sino de una implementación educativa y de referencia para demostrar el funcionamiento del Q-Learning en un entorno sencillo. Su relevancia actual es limitada fuera del ámbito didáctico o de pruebas de algoritmos de refuerzo.
 
 ## Especificaciones técnicas
 
@@ -63,7 +63,7 @@ Este resultado indica que el agente obtiene la máxima recompensa posible en el 
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros agentes Q-Learning publicados para el mismo entorno en HuggingFace. Dado que se trata de un modelo educativo de tamaño mínimo, no existen alternativas comparables en la misma categoría de modelos de lenguaje o de propósito general. Por tanto, la comparativa se considera no disponible.
+No se dispone de información sobre otros agentes Q-Learning publicados para el mismo entorno en Hugging Face. Dado que se trata de un modelo educativo de tamaño mínimo, no existen alternativas comparables en la misma categoría de modelos de lenguaje o de propósito general. Por tanto, la comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
 
@@ -76,5 +76,5 @@ No se dispone de información sobre otros agentes Q-Learning publicados para el 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/eoringe/q-FrozenLake-v1-4x4-noSlippery)
+- [Modelo en Hugging Face](https://huggingface.co/eoringe/q-FrozenLake-v1-4x4-noSlippery)
 - No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

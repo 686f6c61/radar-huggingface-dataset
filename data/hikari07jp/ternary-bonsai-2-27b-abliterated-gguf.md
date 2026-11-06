@@ -105,7 +105,7 @@ No hay disponibles en la informacion proporcionada otros modelos comparables de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hikari07jp/Ternary-Bonsai-2-27B-Abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Hikari07jp/Ternary-Bonsai-2-27B-Abliterated-GGUF
 - Pack padre: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo base ascendente declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos): los resultados devueltos no guardan relacion con el contenido de esta ficha.

@@ -105,7 +105,7 @@ No se dispone de otros modelos comparables en la informacion proporcionada (ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace (FP8): https://huggingface.co/bytkim/Qwen3.8-27B-pi-FP8
+- Modelo en Hugging Face (FP8): https://huggingface.co/bytkim/Qwen3.8-27B-pi-FP8
 - Version BF16 del ajuste: https://huggingface.co/bytkim/Qwen3.8-27B-pi
 - Version GGUF del ajuste: https://huggingface.co/bytkim/Qwen3.8-27B-pi-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

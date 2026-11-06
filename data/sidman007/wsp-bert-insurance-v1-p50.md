@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sidman007/wsp-bert-insurance-v1-p50` | 109,5 M | 512 tokens | Clasificación de frases de seguros (8 clases) | Apache 2.0 | HuggingFace, 0 descargas |
-| `google-bert/bert-base-uncased` | 110 M | 512 tokens | Modelo base enmascarado, sin cabeza de clasificación de dominio | Apache 2.0 | HuggingFace, ampliamente usado |
-| `ProsusAI/finbert` | 110 M | 512 tokens | Clasificación de sentimiento financiero (3 clases) | Apache 2.0 | HuggingFace, muy usado |
-| `nlpaueb/legal-bert-base-uncased` | 110 M | 512 tokens | Modelo base para dominio legal | Apache 2.0 | HuggingFace |
+| `sidman007/wsp-bert-insurance-v1-p50` | 109,5 M | 512 tokens | Clasificación de frases de seguros (8 clases) | Apache 2.0 | Hugging Face, 0 descargas |
+| `google-bert/bert-base-uncased` | 110 M | 512 tokens | Modelo base enmascarado, sin cabeza de clasificación de dominio | Apache 2.0 | Hugging Face, ampliamente usado |
+| `ProsusAI/finbert` | 110 M | 512 tokens | Clasificación de sentimiento financiero (3 clases) | Apache 2.0 | Hugging Face, muy usado |
+| `nlpaueb/legal-bert-base-uncased` | 110 M | 512 tokens | Modelo base para dominio legal | Apache 2.0 | Hugging Face |
 
 La comparación directa con `finbert` o `legal-bert` es limitada: comparten arquitectura y tamaño, pero difieren en dominio y en el procedimiento de entrenamiento. `finbert` y `legal-bert` se entrenaron con objetivos convencionales (preentrenamiento de dominio y fine-tuning supervisado), mientras que este modelo se especializa mediante edición de pesos sin gradiente. No se dispone de métricas que permitan comparar rendimiento entre ellos.
 
@@ -82,7 +82,7 @@ La comparación directa con `finbert` o `legal-bert` es limitada: comparten arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-v1-p50
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-v1-p50
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Repositorio del autor (referenciado en la model card como "project README"): no disponible como URL directa en la información proporcionada
 - Paper o blog sobre weight-space programming: no disponible en la información proporcionada

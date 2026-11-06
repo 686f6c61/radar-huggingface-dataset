@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-samromur2105-100h es un punto de control (checkpoint) de reconocimiento automatico del habla (ASR) en islandes, publicado por el usuario palli23 en HuggingFace. Se trata de un ajuste fino de la arquitectura Whisper tiny (transformer encoder-decoder de ~39 M de parametros) sobre aproximadamente 100 horas de habla islandesa, presumiblemente del corpus Samromur, tal y como sugiere el nombre del modelo y su pertenencia al conjunto de checkpoints "samromur-21.05".
+whisper-tiny-samromur2105-100h es un punto de control (checkpoint) de reconocimiento automatico del habla (ASR) en islandes, publicado por el usuario palli23 en Hugging Face. Se trata de un ajuste fino de la arquitectura Whisper tiny (transformer encoder-decoder de ~39 M de parametros) sobre aproximadamente 100 horas de habla islandesa, presumiblemente del corpus Samromur, tal y como sugiere el nombre del modelo y su pertenencia al conjunto de checkpoints "samromur-21.05".
 
 El modelo forma parte del conjunto de experimentos de escalado asociados al articulo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026). La hipotesis de ese trabajo, segun el titulo, es que modelos ASR pequenos entrenados con datos suficientes en un idioma concreto pueden competir con modelos multilingues mucho mayores en tareas de transcripcion de ese idioma. Este checkpoint concreto representa el punto de 100 horas dentro de esa curva de escalado.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Ventana de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-tiny-samromur2105-100h | 37,76 M | islandes | 30 s | cc-by-sa-4.0 | HuggingFace (0 descargas) |
-| OpenAI Whisper tiny | ~39 M | 99 idiomas | 30 s | Apache-2.0 | HuggingFace, referencia ampliamente usada |
-| OpenAI Whisper base | ~74 M | 99 idiomas | 30 s | Apache-2.0 | HuggingFace |
-| OpenAI Whisper large-v3 | ~1.550 M | 99 idiomas | 30 s | Apache-2.0 | HuggingFace |
+| whisper-tiny-samromur2105-100h | 37,76 M | islandes | 30 s | cc-by-sa-4.0 | Hugging Face (0 descargas) |
+| OpenAI Whisper tiny | ~39 M | 99 idiomas | 30 s | Apache-2.0 | Hugging Face, referencia ampliamente usada |
+| OpenAI Whisper base | ~74 M | 99 idiomas | 30 s | Apache-2.0 | Hugging Face |
+| OpenAI Whisper large-v3 | ~1.550 M | 99 idiomas | 30 s | Apache-2.0 | Hugging Face |
 
 La comparacion de calidad (WER) entre estos modelos en islandes no esta disponible en la informacion proporcionada. La diferencia principal frente a los Whisper de OpenAI es la licencia (CC BY-SA 4.0 frente a Apache-2.0), el enfoque monoidioma y el hecho de ser un ajuste fino especializado con aproximadamente 100 horas de audio islandes. No se dispone de datos de otros modelos especificos para islandes con los que comparar directamente.
 
@@ -98,7 +98,7 @@ La comparacion de calidad (WER) entre estos modelos en islandes no esta disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/palli23/whisper-tiny-samromur2105-100h
+- Hugging Face: https://huggingface.co/palli23/whisper-tiny-samromur2105-100h
 - Articulo de referencia: "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026), enlace no disponible en la informacion proporcionada.
 - Corpus Samromur, enlace no disponible en la informacion proporcionada.
 - Repositorio de OpenAI Whisper (arquitectura base), enlace no disponible en la informacion proporcionada.

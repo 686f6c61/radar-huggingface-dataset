@@ -81,7 +81,7 @@ La version de 9,4 bpw del mismo autor ofrece mayor fidelidad a costa de un peso 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheCluster/Qwen3.8-27B-MLX-mixed-6bit
+- Modelo en Hugging Face: https://huggingface.co/TheCluster/Qwen3.8-27B-MLX-mixed-6bit
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Alibaba: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Ficha en LLM Explorer: https://llm-explorer.com/model/TheCluster%2FQwen3.8-27B-MLX-mixed-6bit,14coeIVFoOE4WhNK7rmRgs

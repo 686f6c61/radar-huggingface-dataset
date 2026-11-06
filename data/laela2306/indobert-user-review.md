@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indobert-user-review es un modelo publicado en HuggingFace por el usuario laela2306 bajo licencia MIT. Por su identificador, se trata presumiblemente de un modelo basado en IndoBERT, la familia de transformers preentrenados en indonesio desarrollada originalmente por IndoLEM y el equipo de investigación de la Universidad de Indonesia, y orientado a la clasificación o análisis de reseñas de usuarios. Sin embargo, la model card publicada no contiene ninguna descripción técnica, información de entrenamiento ni documentación de uso más allá de la línea de licencia.
+Indobert-user-review es un modelo publicado en Hugging Face por el usuario laela2306 bajo licencia MIT. Por su identificador, se trata presumiblemente de un modelo basado en IndoBERT, la familia de transformers preentrenados en indonesio desarrollada originalmente por IndoLEM y el equipo de investigación de la Universidad de Indonesia, y orientado a la clasificación o análisis de reseñas de usuarios. Sin embargo, la model card publicada no contiene ninguna descripción técnica, información de entrenamiento ni documentación de uso más allá de la línea de licencia.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. Esto lo sitúa como un artefacto de investigación sin validación comunitaria, probablemente un fine-tuning personal sobre una base IndoBERT para una tarea concreta de procesamiento de reseñas (análisis de sentimiento, clasificación de opiniones o extracción de aspectos).
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| laela2306/Indobert-user-review | no disponible | no disponible | MIT | HuggingFace, sin descargas registradas |
-| IndoBERT base (indolem/indobert-base-uncased) | ~110 M (referencia de la familia) | 512 tokens (referencia de BERT base) | no verificada en esta consulta | HuggingFace |
-| IndoBERT large (indolem/indobert-large-uncased) | ~335 M (referencia de la familia) | 512 tokens (referencia de BERT large) | no verificada en esta consulta | HuggingFace |
+| laela2306/Indobert-user-review | no disponible | no disponible | MIT | Hugging Face, sin descargas registradas |
+| IndoBERT base (indolem/indobert-base-uncased) | ~110 M (referencia de la familia) | 512 tokens (referencia de BERT base) | no verificada en esta consulta | Hugging Face |
+| IndoBERT large (indolem/indobert-large-uncased) | ~335 M (referencia de la familia) | 512 tokens (referencia de BERT large) | no verificada en esta consulta | Hugging Face |
 
 La comparación se ofrece únicamente como referencia de la familia IndoBERT; no se dispone de datos verificados sobre el checkpoint concreto ni de sus métricas frente a estas alternativas.
 
@@ -79,5 +79,5 @@ La comparación se ofrece únicamente como referencia de la familia IndoBERT; no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laela2306/Indobert-user-review
+- Hugging Face: https://huggingface.co/laela2306/Indobert-user-review
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

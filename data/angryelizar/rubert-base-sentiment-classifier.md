@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ruBert-base-sentiment-classifier es un modelo de clasificacion de texto publicado en HuggingFace por el usuario angryelizar. El identificador y la etiqueta de arquitectura "bert" apuntan a un encoder transformer bidireccional de la familia BERT-base reutilizado para analisis de sentimiento, aunque la model card no confirma ni la tarea exacta ni el idioma de entrenamiento. El unico dato cuantitativo verificable es el recuento de parametros del archivo safetensors: 178.309.635 pesos, cifra coherente con configuraciones BERT-base de vocabulario extendido (habituales en adaptaciones al ruso) y no con el BERT-base ingles estandar de 110 millones.
+ruBert-base-sentiment-classifier es un modelo de clasificacion de texto publicado en Hugging Face por el usuario angryelizar. El identificador y la etiqueta de arquitectura "bert" apuntan a un encoder transformer bidireccional de la familia BERT-base reutilizado para analisis de sentimiento, aunque la model card no confirma ni la tarea exacta ni el idioma de entrenamiento. El unico dato cuantitativo verificable es el recuento de parametros del archivo safetensors: 178.309.635 pesos, cifra coherente con configuraciones BERT-base de vocabulario extendido (habituales en adaptaciones al ruso) y no con el BERT-base ingles estandar de 110 millones.
 
-Se trata de un modelo discriminativo (asigna una etiqueta a un texto), no generativo, distribuido unicamente en formato safetensors para su uso con la libreria transformers. Su relevancia practica es limitada en el momento de redactar esta ficha: acumula cero descargas y cero likes, y la model card es la plantilla automatica de HuggingFace con todos los campos marcados como "[More Information Needed]".
+Se trata de un modelo discriminativo (asigna una etiqueta a un texto), no generativo, distribuido unicamente en formato safetensors para su uso con la libreria transformers. Su relevancia practica es limitada en el momento de redactar esta ficha: acumula cero descargas y cero likes, y la model card es la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 La longitud de contexto, los idiomas soportados, la licencia y los detalles de entrenamiento no estan disponibles. Cualquier evaluacion rigurosa exige verificar primero el tokenizador, el vocabulario y las etiquetas de salida del checkpoint.
 
@@ -28,7 +28,7 @@ La longitud de contexto, los idiomas soportados, la licencia y los detalles de e
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna mas alla de la etiqueta "bert" y la libreria transformers. La model card es la plantilla automatica del Hub y no describe ni el objetivo de entrenamiento, ni la composicion del dataset, ni si hubo ajuste fino supervisado, RLHF o DPO. La etiqueta "arxiv:1910.09700" del repositorio corresponde al articulo de Lacoste et al. sobre cuantificacion de emisiones de carbono, citado por la propia plantilla de HuggingFace; no es el paper del modelo.
+No hay informacion publicada sobre la arquitectura interna mas alla de la etiqueta "bert" y la libreria transformers. La model card es la plantilla automatica del Hub y no describe ni el objetivo de entrenamiento, ni la composicion del dataset, ni si hubo ajuste fino supervisado, RLHF o DPO. La etiqueta "arxiv:1910.09700" del repositorio corresponde al articulo de Lacoste et al. sobre cuantificacion de emisiones de carbono, citado por la propia plantilla de Hugging Face; no es el paper del modelo.
 
 El unico elemento que permite inferir la configuracion es el recuento de parametros (178,3 millones) combinado con el tamano del repositorio (0,7 GB). Ese tamano es consistente con pesos en precision fp32 (178.309.635 x 4 bytes ≈ 713 MB), lo que sugiere que no se publicaron pesos en fp16, bf16 ni cuantizados. Un BERT-base con 178 millones de parametros implica un vocabulario mas amplio que el del BERT-base ingles (que ronda los 110 millones), tipico de adaptaciones a idiomas con alfabetos y morfologia mas ricos, pero esto es una inferencia estructural y no un dato confirmado por el autor.
 
@@ -36,7 +36,7 @@ El unico elemento que permite inferir la configuracion es el recuento de paramet
 
 - Clasificacion de texto: la unica capacidad declarada por el pipeline del Hub es text-classification; el numero y la semantica de las etiquetas (binario, tres clases, varias dimensiones) no estan documentados.
 - Analisis de sentimiento (segun el nombre del modelo): no verificado en la ficha; requiere inspeccionar la configuracion del cabezal de clasificacion.
-- Extraccion de representaciones: al ser un encoder BERT, puede emplearse como generador de embeddings, y la etiqueta text-embeddings-inference indica compatibilidad con el servidor de embeddings de HuggingFace.
+- Extraccion de representaciones: al ser un encoder BERT, puede emplearse como generador de embeddings, y la etiqueta text-embeddings-inference indica compatibilidad con el servidor de embeddings de Hugging Face.
 - Generacion de texto: no soportada (arquitectura encoder-only).
 - Tool calling / function calling: no soportado.
 - Agentes y razonamiento multi-paso: no soportado.
@@ -69,7 +69,7 @@ La model card no incluye seccion de evaluacion con datos, no se referencian conj
 - VRAM en int8: alrededor de 0,18 GB de pesos, mediante cuantizacion dinamica con PyTorch o bitsandbytes.
 - GPU recomendadas: no requiere acelerador dedicado; cualquier GPU consumer con 4 GB o mas de VRAM es suficiente (GTX 1650, RTX 3060, RTX 4090). En centro de datos, una T4 o una L4 sobran para servir el modelo; A100 y H100 solo tendrian sentido para lotes muy grandes.
 - Inferencia en CPU: viable. El modelo cabe en memoria RAM convencional (menos de 1 GB en fp32) y es apto para entornos sin GPU.
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints (etiqueta endpoints_compatible), Text Embeddings Inference (etiqueta text-embeddings-inference) y exportacion manual a ONNX Runtime. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables sin conversion previa; vLLM y TGI estan orientados a modelos generativos y no son la via natural para este checkpoint.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints (etiqueta endpoints_compatible), Text Embeddings Inference (etiqueta text-embeddings-inference) y exportacion manual a ONNX Runtime. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables sin conversion previa; vLLM y TGI estan orientados a modelos generativos y no son la via natural para este checkpoint.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No hay datos de rendimiento de este modelo que permitan una comparacion funciona
 ## Limitaciones y advertencias
 
 - Ausencia total de licencia declarada: no se puede asumir permiso de uso comercial. En ausencia de licencia explicita, el uso en produccion conlleva riesgo legal.
-- Model card vacia: todos los campos son marcados como "[More Information Needed]" en la plantilla automatica de HuggingFace, incluidos desarrollador, datos de entrenamiento, hiperparametros y evaluacion.
+- Model card vacia: todos los campos son marcados como "[More Information Needed]" en la plantilla automatica de Hugging Face, incluidos desarrollador, datos de entrenamiento, hiperparametros y evaluacion.
 - Sin validacion por la comunidad: cero descargas y cero likes. No hay evidencia de que el checkpoint haya sido probado por terceros.
 - Idioma incierto: el identificador sugiere ruso, pero no se declara la lista de idiomas. Usarlo con texto en castellano o en otro idioma produciria resultados no fiables.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no se pueden evaluar sesgos demograficos, politicos o de dominio.
@@ -99,7 +99,7 @@ No hay datos de rendimiento de este modelo que permitan una comparacion funciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier
+- Modelo en Hugging Face: https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada desde la plantilla de la model card: https://mlco2.github.io/impact#compute
 - La busqueda web realizada no devolvio ningun enlace relacionado con el modelo; los resultados obtenidos correspondian a paginas de seguimiento de envios de FedEx y no son relevantes para esta ficha.

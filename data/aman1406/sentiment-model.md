@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificación de texto publicado por el usuario aman1406 en HuggingFace. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la variante destilada de BERT desarrollada por Hugging Face, orientado a tareas de análisis de sentimiento. El repositorio contiene 66.955.779 parámetros en formato safetensors y ocupa 0,3 GB, con licencia Apache 2.0. La model card está generada automáticamente por el `Trainer` de Hugging Face y no incluye descripción del problema, del conjunto de datos ni de los usos previstos.
+`sentiment-model` es un modelo de clasificación de texto publicado por el usuario aman1406 en Hugging Face. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la variante destilada de BERT desarrollada por Hugging Face, orientado a tareas de análisis de sentimiento. El repositorio contiene 66.955.779 parámetros en formato safetensors y ocupa 0,3 GB, con licencia Apache 2.0. La model card está generada automáticamente por el `Trainer` de Hugging Face y no incluye descripción del problema, del conjunto de datos ni de los usos previstos.
 
 La relevancia de este modelo es limitada desde el punto de vista técnico: no declara idiomas soportados, no documenta el dataset de entrenamiento ("unknown dataset" según la propia model card), no publica resultados de benchmarks en su `model-index` y registra cero descargas y cero likes en el momento de la consulta. Las únicas métricas disponibles son las de validación durante el entrenamiento, con una accuracy final de 0,6598 y una pérdida de 0,7470, valores que en una tarea binaria de sentimiento quedarían cerca de un clasificador trivial y que en un problema de tres clases serían solo moderadamente superiores al azar.
 
@@ -87,9 +87,9 @@ Nota: el mejor resultado de validacion por epoca se alcanza en la epoca 2 (accur
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| aman1406/sentiment-model | 66,96 M | 512 tokens (base) | apache-2.0 | HuggingFace, 0 descargas | Accuracy 0,6598 en validacion propia; sin benchmarks publicos |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | apache-2.0 | HuggingFace, ampliamente utilizado | No disponible en la informacion proporcionada |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | no disponible en la informacion proporcionada | HuggingFace, muy utilizado | No disponible en la informacion proporcionada |
+| aman1406/sentiment-model | 66,96 M | 512 tokens (base) | apache-2.0 | Hugging Face, 0 descargas | Accuracy 0,6598 en validacion propia; sin benchmarks publicos |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | apache-2.0 | Hugging Face, ampliamente utilizado | No disponible en la informacion proporcionada |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | no disponible en la informacion proporcionada | Hugging Face, muy utilizado | No disponible en la informacion proporcionada |
 | Modelos BiLSTM de analisis de sentimiento sobre Sentiment140 (referencia academica) | Depende de la configuracion | Secuencia fija | No aplica | Implementaciones en GitHub | No comparable directamente; el articulo referenciado usa un subconjunto de 10.000 tuits |
 
 La comparacion cuantitativa de rendimiento entre estos modelos no es posible con los datos disponibles: solo el modelo de aman1406 publica cifras concretas, y lo hace sobre un conjunto de evaluacion no descrito. Cualquier eleccion entre ellos deberia pasar por una evaluacion propia sobre el dominio objetivo.
@@ -110,10 +110,10 @@ La comparacion cuantitativa de rendimiento entre estos modelos no es posible con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aman1406/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/aman1406/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Repositorio de referencia sobre un sistema de analisis de sentimiento extremo a extremo (no vinculado al modelo): https://github.com/Amina-Asghar/Sentiment-Analysis-System-ML
 - Toolkit sentiment.ai (no vinculado al modelo): https://github.com/BenWiseman/sentiment.ai
 - Articulo comparativo de regresion logistica y BiLSTM sobre Sentiment140 (no vinculado al modelo): https://arxiv.org/abs/2605.04888
-- Busqueda de modelos de analisis de sentimiento en HuggingFace: https://huggingface.co/models?search=sentiment-analysis
+- Busqueda de modelos de analisis de sentimiento en Hugging Face: https://huggingface.co/models?search=sentiment-analysis
 - Documentacion del modelo preconstruido de analisis de sentimiento de Microsoft AI Builder (no vinculado al modelo): https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis

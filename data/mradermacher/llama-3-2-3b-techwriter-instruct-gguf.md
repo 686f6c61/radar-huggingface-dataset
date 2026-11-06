@@ -55,7 +55,7 @@ La unica innovacion tecnica reseñable en este repositorio es, precisamente, el 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni para el modelo ajustado ni para sus versiones cuantizadas. Tampoco se ofrecen comparaciones de perplejidad entre los distintos niveles de cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni para el modelo ajustado ni para sus versiones cuantizadas. Tampoco se ofrecen comparaciones de perplejidad entre los distintos niveles de cuantizacion.
 
 ## Requisitos de hardware
 
@@ -104,7 +104,7 @@ La ventaja diferencial de este modelo frente a las alternativas generalistas es 
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/Llama-3.2-3B-TechWriter-Instruct-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/Llama-3.2-3B-TechWriter-Instruct-GGUF
 - Modelo base del ajuste: https://huggingface.co/Shankarblr/Llama-3.2-3B-TechWriter-Instruct
 - Pagina de resumen y lista de descargas del cuantizador: https://hf.tst.eu/model#Llama-3.2-3B-TechWriter-Instruct-GGUF
 - Peticiones de modelos y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests
@@ -112,4 +112,4 @@ La ventaja diferencial de este modelo frente a las alternativas generalistas es 
 - Grafica comparativa de calidad entre cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Analisis de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Empresa que da soporte al cuantizador: https://www.nethype.de/
-- Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+- Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

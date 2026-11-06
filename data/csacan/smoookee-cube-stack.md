@@ -69,7 +69,7 @@ No se dispone de informacion comparativa en los datos proporcionados. SmolVLA se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/csacan/smoookee-cube-stack
+- Repositorio Hugging Face: https://huggingface.co/csacan/smoookee-cube-stack
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)
 - Dataset de entrenamiento: https://huggingface.co/datasets/yutong-xiang-97/robot-learning-260816
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

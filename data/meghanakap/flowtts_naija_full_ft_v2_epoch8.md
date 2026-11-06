@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MeghanaKap/flowtts_naija_full_ft_v2_epoch8 es un ajuste fino publicado en HuggingFace por la usuaria MeghanaKap sobre el modelo YatharthS/MiraTTS. Los metadatos lo declaran como modelo de generación de texto con etiqueta de arquitectura qwen2, 505.882.368 parámetros (unos 0,51 mil millones) y pesos en safetensors, con licencia Apache 2.0 y soporte declarado únicamente para inglés.
+MeghanaKap/flowtts_naija_full_ft_v2_epoch8 es un ajuste fino publicado en Hugging Face por la usuaria MeghanaKap sobre el modelo YatharthS/MiraTTS. Los metadatos lo declaran como modelo de generación de texto con etiqueta de arquitectura qwen2, 505.882.368 parámetros (unos 0,51 mil millones) y pesos en safetensors, con licencia Apache 2.0 y soporte declarado únicamente para inglés.
 
 El nombre del repositorio sugiere un ajuste orientado a síntesis de voz (TTS) para acentos nigerianos ("naija") y el sufijo "epoch8" apunta a un entrenamiento de ocho épocas, pero la model card no documenta tarea, datos ni evaluación, y el pipeline declarado sigue siendo text-generation. Esa discrepancia entre nombre y metadatos es la principal advertencia antes de considerarlo para cualquier uso real.
 
@@ -75,10 +75,10 @@ La comparación se hace por escala y licencia, dado que no existe información s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| MeghanaKap/flowtts_naija_full_ft_v2_epoch8 | 505.882.368 | no disponible | apache-2.0 | HuggingFace, 0 descargas | no disponible |
-| Qwen2-0.5B | ≈0,49 mil millones | 32 768 tokens (según documentación pública de la familia) | apache-2.0 | HuggingFace | publicado por el autor original; no incluido en esta ficha |
-| Qwen2.5-0.5B | ≈0,49 mil millones | 32 768 tokens (según documentación pública de la familia) | apache-2.0 | HuggingFace | publicado por el autor original; no incluido en esta ficha |
-| TinyLlama-1.1B | ≈1,1 mil millones | 2 048 tokens | apache-2.0 | HuggingFace | publicado por el autor original; no incluido en esta ficha |
+| MeghanaKap/flowtts_naija_full_ft_v2_epoch8 | 505.882.368 | no disponible | apache-2.0 | Hugging Face, 0 descargas | no disponible |
+| Qwen2-0.5B | ≈0,49 mil millones | 32 768 tokens (según documentación pública de la familia) | apache-2.0 | Hugging Face | publicado por el autor original; no incluido en esta ficha |
+| Qwen2.5-0.5B | ≈0,49 mil millones | 32 768 tokens (según documentación pública de la familia) | apache-2.0 | Hugging Face | publicado por el autor original; no incluido en esta ficha |
+| TinyLlama-1.1B | ≈1,1 mil millones | 2 048 tokens | apache-2.0 | Hugging Face | publicado por el autor original; no incluido en esta ficha |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ La comparación se hace por escala y licencia, dado que no existe información s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch8
+- Modelo en Hugging Face: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch8
 - Modelo base (YatharthS/MiraTTS): https://huggingface.co/YatharthS/MiraTTS
 - Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - La búsqueda web realizada no devolvió enlaces técnicos relevantes: los resultados se limitaron a páginas de inicio de sesión de Google Drive, sin relación con el modelo. No se han encontrado papers, blogs, demos ni repositorios asociados.

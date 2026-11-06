@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lonecatone23/Animosity` es un repositorio publicado en HuggingFace por el usuario Lonecatone23. Según los metadatos, contiene un modelo con aproximadamente 12.820.073.036 parámetros totales, almacenado en formato safetensors y con cuantizaciones GGUF. La licencia declarada es MIT. La model card es prácticamente vacía: solo incluye la licencia y no aporta información sobre arquitectura, datos de entrenamiento, capacidades ni casos de uso previstos. El repositorio no registra descargas ni likes, lo que indica que no ha sido validado por la comunidad. La fecha de creación indicada (7 de septiembre de 2026) es inusual y podría tratarse de un error en los metadatos. En conjunto, se trata de un modelo sin documentación técnica, cuya relevancia actual es limitada.
+El modelo `Lonecatone23/Animosity` es un repositorio publicado en Hugging Face por el usuario Lonecatone23. Según los metadatos, contiene un modelo con aproximadamente 12.820.073.036 parámetros totales, almacenado en formato safetensors y con cuantizaciones GGUF. La licencia declarada es MIT. La model card es prácticamente vacía: solo incluye la licencia y no aporta información sobre arquitectura, datos de entrenamiento, capacidades ni casos de uso previstos. El repositorio no registra descargas ni likes, lo que indica que no ha sido validado por la comunidad. La fecha de creación indicada (7 de septiembre de 2026) es inusual y podría tratarse de un error en los metadatos. En conjunto, se trata de un modelo sin documentación técnica, cuya relevancia actual es limitada.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No disponible. No hay datos de rendimiento ni especificaciones técnicas suficie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lonecatone23/Animosity
+- Hugging Face: https://huggingface.co/Lonecatone23/Animosity
 - No se han encontrado otros enlaces oficiales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

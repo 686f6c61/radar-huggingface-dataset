@@ -4,7 +4,7 @@
 
 Darija Tokenizers es un repositorio que publica tres familias de tokenizadores subword entrenados sobre el mismo corpus de comentarios de YouTube en darija argelina, el dialecto árabe hablado en Argelia. Lo desarrolla nasrellahkharroubi, autor también del dataset DarijaDZ, y está pensado para facilitar el preprocesamiento de texto en tareas de NLP y entrenamiento de modelos de lenguaje para esta variedad lingüística, que combina escritura árabe, arabizi (árabe transliterado al alfabeto latino) y préstamos del francés.
 
-El repositorio incluye tres algoritmos distintos —SentencePiece Unigram, WordPiece y byte-level BPE— cada uno con cinco tamaños de vocabulario (1.000, 5.000, 10.000, 20.000 y 30.000), más una variante de Unigram con subword regularization que permite muestreo estocástico en tiempo de codificación. Todos los artefactos son compatibles con `AutoTokenizer` de HuggingFace, lo que los hace fáciles de integrar en pipelines existentes. La licencia MIT permite uso comercial sin restricciones, y el tamaño del repositorio es de 0,0 GB, indicando que solo contiene archivos de tokenización, no pesos de modelos.
+El repositorio incluye tres algoritmos distintos —SentencePiece Unigram, WordPiece y byte-level BPE— cada uno con cinco tamaños de vocabulario (1.000, 5.000, 10.000, 20.000 y 30.000), más una variante de Unigram con subword regularization que permite muestreo estocástico en tiempo de codificación. Todos los artefactos son compatibles con `AutoTokenizer` de Hugging Face, lo que los hace fáciles de integrar en pipelines existentes. La licencia MIT permite uso comercial sin restricciones, y el tamaño del repositorio es de 0,0 GB, indicando que solo contiene archivos de tokenización, no pesos de modelos.
 
 La relevancia de esta publicación radica en la escasez de recursos lingüísticos para el darija argelino, un dialecto con diferencias notables respecto al árabe estándar y con una presencia digital creciente. Disponer de tokenizadores específicos, evaluados y comparables entre sí, es un paso previo necesario para entrenar modelos de lenguaje de calidad en esta lengua.
 
@@ -29,7 +29,7 @@ Se implementan tres arquitecturas de tokenización subword:
 
 - **SentencePiece Unigram**: basado en un modelo de lenguaje unigram, con byte-fallback activado y sin asumir pre-tokenización por espacios. Esto es clave para manejar secuencias mixtas de árabe, arabizi y francés.
 - **Unigram + Subword Regularization**: la misma arquitectura Unigram, pero en lugar de usar decodificación determinista (Viterbi), se muestrea entre múltiples segmentaciones en tiempo de codificación, siguiendo la técnica de Kudo (2018). Esta variante solo está disponible a través de la API de `sentencepiece`, no en `AutoTokenizer`.
-- **WordPiece**: estilo BERT, con piezas de continuación marcadas por `##`, implementado con la librería `tokenizers` de HuggingFace (no la versión de SentencePiece).
+- **WordPiece**: estilo BERT, con piezas de continuación marcadas por `##`, implementado con la librería `tokenizers` de Hugging Face (no la versión de SentencePiece).
 - **Byte-level BPE**: estilo GPT-2/RoBERTa, que opera sobre bytes y garantiza cero tokens desconocidos (OOV) por construcción.
 
 La conversión de los modelos SentencePiece a `tokenizer.json` requirió una corrección específica para el byte-fallback en la decodificación, ya que el `SpmConverter` por defecto de `transformers` no generaba un decodificador consciente de bytes fuera del vocabulario. El autor implementó un `DarijaUnigramConverter` para resolverlo.
@@ -50,7 +50,7 @@ La conversión de los modelos SentencePiece a `tokenizer.json` requirió una cor
 - Preprocesamiento para entrenar modelos de lenguaje desde cero en darija argelino: los tokenizadores permiten segmentar el texto en piezas subword de forma consistente, reduciendo el vocabulario necesario y mejorando la cobertura de formas flexivas y préstamos.
 - Normalización de texto en sistemas de análisis de sentimiento sobre redes sociales: al manejar arabizi y mezcla de escrituras, se puede tokenizar directamente el contenido de Twitter, Facebook o YouTube sin necesidad de transliteración previa.
 - Construcción de corpus para traducción automática entre darija y árabe estándar o francés: la tokenización subword es un paso estándar en pipelines de traducción neuronal.
-- Sistemas de diálogo y asistentes conversacionales en dialecto argelino: la compatibilidad con `AutoTokenizer` facilita la integración en frameworks como HuggingFace Transformers para tareas de generación o clasificación.
+- Sistemas de diálogo y asistentes conversacionales en dialecto argelino: la compatibilidad con `AutoTokenizer` facilita la integración en frameworks como Hugging Face Transformers para tareas de generación o clasificación.
 - Evaluación comparativa de algoritmos de tokenización: el repositorio ofrece métricas de compresión, fertilidad y round-trip para los tres métodos, útil para investigar qué tokenizador se adapta mejor a un dominio concreto.
 - Aumento de datos y regularización en entrenamiento de modelos: la variante Unigram con subword regularization permite generar múltiples segmentaciones del mismo texto, lo que puede actuar como técnica de regularización durante el entrenamiento.
 - Procesamiento de texto en aplicaciones de transcripción o subtitulado: el manejo de saltos de línea (con el wrapper `[NEWLINE]` para WordPiece) puede ser relevante para preservar la estructura de diálogos.
@@ -96,7 +96,7 @@ Se recomienda evaluar ambos en el corpus objetivo antes de elegir uno.
 ## Limitaciones y advertencias
 
 - El tokenizador WordPiece colapsa los saltos de línea literales a un espacio en el round-trip `encode`-`decode`. El autor proporciona un wrapper con el token `[NEWLINE]` para mitigarlo, pero incluso con ese wrapper, un espacio adyacente a un salto de línea puede perderse.
-- La variante Unigram + Subword Regularization no está disponible a través de `AutoTokenizer`; solo se puede usar con la API de `sentencepiece` (`enable_sampling=True`). Esto limita su integración en pipelines estándar de HuggingFace.
+- La variante Unigram + Subword Regularization no está disponible a través de `AutoTokenizer`; solo se puede usar con la API de `sentencepiece` (`enable_sampling=True`). Esto limita su integración en pipelines estándar de Hugging Face.
 - El corpus de entrenamiento proviene de comentarios de YouTube, lo que puede introducir sesgos hacia el lenguaje informal, jerga y temáticas propias de esa plataforma. No es representativo de todos los registros del darija argelino.
 - Los tokenizadores están optimizados para darija argelino; su rendimiento en otros dialectos magrebíes (marroquí, tunecino) puede ser subóptimo, aunque el byte-fallback evita errores graves.
 - No se han publicado resultados de benchmarks externos (como MMLU u otros) porque no es un modelo de lenguaje, sino un componente de preprocesamiento.
@@ -104,7 +104,7 @@ Se recomienda evaluar ambos en el corpus objetivo antes de elegir uno.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nasrellahkharroubi/darija-tokenizers
+- Repositorio en Hugging Face: https://huggingface.co/nasrellahkharroubi/darija-tokenizers
 - Dataset DarijaDZ (corpus de entrenamiento): https://huggingface.co/datasets/nasrellahkharroubi/DarijaDz
 - Perfil del autor: https://huggingface.co/nasrellahkharroubi
 - Proyecto alternativo de tokenizadores para darija (GitHub): https://github.com/ImadSaddik/DarijaTokenizers

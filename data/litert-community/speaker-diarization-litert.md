@@ -88,7 +88,7 @@ La principal diferencia frente a la referencia pyannote 3.1 es la conversión a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Speaker-Diarization-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Speaker-Diarization-LiteRT
 - Repositorio del modelo (archivos): https://huggingface.co/litert-community/Speaker-Diarization-LiteRT/tree/main
 - LiteRT (sucesor de TensorFlow Lite): https://github.com/google-ai-edge/litert
 - Ejemplo de integración en Android: https://github.com/john-rocky/LiteRT-Models/tree/main/diarization

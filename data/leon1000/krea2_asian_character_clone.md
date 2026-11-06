@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2_Asian_Character_clone es un adaptador LoRA (Low-Rank Adaptation) de generación de imágenes publicado por el usuario Leon1000 en HuggingFace. No es un modelo de lenguaje ni un modelo base autónomo: se trata de un ajuste de bajo rango que se acopla sobre los modelos de difusión Krea 2, concretamente sobre los checkpoints krea/Krea-2-Raw y krea/Krea-2-Turbo. Su objetivo declarado es reproducir personajes de estética japonesa/asiática con control de encuadre y perspectiva, apoyándose en la capacidad generativa ya presente en el modelo base.
+Krea2_Asian_Character_clone es un adaptador LoRA (Low-Rank Adaptation) de generación de imágenes publicado por el usuario Leon1000 en Hugging Face. No es un modelo de lenguaje ni un modelo base autónomo: se trata de un ajuste de bajo rango que se acopla sobre los modelos de difusión Krea 2, concretamente sobre los checkpoints krea/Krea-2-Raw y krea/Krea-2-Turbo. Su objetivo declarado es reproducir personajes de estética japonesa/asiática con control de encuadre y perspectiva, apoyándose en la capacidad generativa ya presente en el modelo base.
 
 El adaptador se entrenó con AI-Toolkit sobre Krea-2-Raw y, según la model card, se diseñó para funcionar tanto con el checkpoint raw como con el turbo de Krea 2. El autor indica que el dataset fue seleccionado manualmente y equilibrado en tipos de plano (primer plano, plano medio, cuerpo completo y distintos ángulos), lo que busca dar flexibilidad de composición al usuario final. El repositorio ocupa 14,5 GB e incluye las imágenes de muestra con el flujo de trabajo incrustado en sus metadatos.
 
@@ -78,9 +78,9 @@ No hay datos suficientes para una comparativa rigurosa. El autor no publica metr
 
 | Elemento | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Leon1000/Krea2_Asian_Character_clone | LoRA de personajes sobre Krea 2 | no disponible | MIT + licencia de comunidad de Krea 2 | Publico en HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo base de difusion (text-to-image) | no disponible | Krea 2 Community License | Publico en HuggingFace |
-| krea/Krea-2-Turbo | Variante destilada/acelerada del base | no disponible | Krea 2 Community License | Publico en HuggingFace |
+| Leon1000/Krea2_Asian_Character_clone | LoRA de personajes sobre Krea 2 | no disponible | MIT + licencia de comunidad de Krea 2 | Publico en Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo base de difusion (text-to-image) | no disponible | Krea 2 Community License | Publico en Hugging Face |
+| krea/Krea-2-Turbo | Variante destilada/acelerada del base | no disponible | Krea 2 Community License | Publico en Hugging Face |
 
 Comparativas con LoRA equivalentes de otros ecosistemas (por ejemplo, adaptadores de personajes para SDXL o Flux): no disponibles en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ Comparativas con LoRA equivalentes de otros ecosistemas (por ejemplo, adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leon1000/Krea2_Asian_Character_clone
+- Modelo en Hugging Face: https://huggingface.co/Leon1000/Krea2_Asian_Character_clone
 - Demo/visor del autor: https://huggingface.co/spaces/fidel1234/Krea2_Asian_Character_Showcase
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw (referencia citada en la model card)
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo (referencia citada en la model card)

@@ -105,7 +105,7 @@ Diferencias clave: el modelo de este analisis no es un `AutoModel` estandar y re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-grow-d16
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-grow-d16
 - Repositorio de codigo del paper: https://github.com/cue-engineering/loop
 - Articulo de referencia: *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents* (sin URL disponible en la informacion proporcionada)
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb

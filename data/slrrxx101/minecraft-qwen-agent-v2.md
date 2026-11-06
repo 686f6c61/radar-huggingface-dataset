@@ -74,7 +74,7 @@ No se dispone de benchmarks comparativos para este modelo específico, por lo qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/slrrxx101/minecraft-qwen-agent-v2
+- Hugging Face: https://huggingface.co/slrrxx101/minecraft-qwen-agent-v2
 - Framework Qwen-Agent: https://github.com/QwenLM/Qwen-Agent
 - Documentación de Qwen-Agent: https://qwenlm.github.io/Qwen-Agent/
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

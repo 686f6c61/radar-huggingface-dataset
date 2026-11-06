@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no menciona modelos comparables en e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/MatRIS
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/MatRIS
 - Repositorio principal de OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio de skills de OneScience en GitHub: https://github.com/onescience-ai/oneskills
 - Repositorio principal de OneScience en Gitee: https://gitee.com/onescience-ai/onescience

@@ -78,14 +78,14 @@ La ejecución original degradaba de forma monótona desde el paso 100; la repeti
 - Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090, así como en Mac con memoria unificada mediante conversión a GGUF.
 - Opciones de despliegue: transformers, que es la librería declarada y el único formato publicado (safetensors). vLLM y TGI son compatibles con pesos safetensors de transformers. llama.cpp y Ollama requerirían una conversión a GGUF que no se proporciona en el repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de latencia, tokens por segundo ni consumo de memoria para este checkpoint.
-- Nota de despliegue: el modelo está marcado con `endpoints_compatible` en los tags de HuggingFace, pero el autor lo publica como resultado negativo y desaconseja su uso.
+- Nota de despliegue: el modelo está marcado con `endpoints_compatible` en los tags de Hugging Face, pero el autor lo publica como resultado negativo y desaconseja su uso.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | call_f1 | precision | recall | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
 | OpenGrad-Qwen3.5-2B-M1-DPO (step 300) | ~2.000 M | ventana de entrenamiento 2.048 tokens | 0,0258 | 0,6800 | 0,0131 | other (composite-per-source) | pesos publicados en este repositorio |
-| Qwen/Qwen3.5-2B (B0, línea base) | ~2.000 M | no disponible | 0,6191 | 0,4542 | 0,9722 | no disponible en la información proporcionada | público en HuggingFace |
+| Qwen/Qwen3.5-2B (B0, línea base) | ~2.000 M | no disponible | 0,6191 | 0,4542 | 0,9722 | no disponible en la información proporcionada | público en Hugging Face |
 | arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CorpusV2 | ~2.000 M | no disponible | no disponible | no disponible | no disponible | no disponible | mencionado en la model card; el autor lo cita como el experimento que sí movió la métrica |
 | Paso 100 del mismo run | ~2.000 M | 2.048 tokens | 0,1715 | 0,7669 | 0,0965 | no aplica | pesos borrados, no recuperables |
 
@@ -108,7 +108,7 @@ No se dispone de datos en la información proporcionada para comparar con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M1-DPO
+- Modelo en Hugging Face: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M1-DPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio OpenGrad: https://github.com/arjhinety/OpenGrad
 - Registro de incidentes de OpenGrad (INC-0001, corrección de la conclusión sobre monotonicidad): https://github.com/arjhinety/OpenGrad/blob/master/docs/INCIDENT_LOG.md

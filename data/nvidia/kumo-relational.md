@@ -6,7 +6,7 @@ Kumo Relational es un modelo fundacional preentrenado de NVIDIA para clasificaci
 
 El modelo aborda un cuello de botella clásico del machine learning tabular: la ingeniería de características y el entrenamiento por tarea en esquemas relacionales. En lugar de ello, el usuario declara el esquema y las relaciones, proporciona filas de contexto y filas de consulta, y el modelo devuelve predicciones. La interacción se describe mediante *Predictive Query Language* (PQL) y se ejecuta contra un NVIDIA NIM empaquetado o a través del SDK `structured-data-models`.
 
-Se distribuye con licencia OpenMDW 1.1 y finetunea pesos preentrenados de TabICLv2, licenciados bajo BSD-3-Clause. El repositorio de HuggingFace ocupa 0,7 GB. No se especifican en la información disponible el número de parámetros, la longitud de contexto ni los detalles del dataset de entrenamiento.
+Se distribuye con licencia OpenMDW 1.1 y finetunea pesos preentrenados de TabICLv2, licenciados bajo BSD-3-Clause. El repositorio de Hugging Face ocupa 0,7 GB. No se especifican en la información disponible el número de parámetros, la longitud de contexto ni los detalles del dataset de entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Datos relacionales multi-tabla | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kumo Relational | Modelo fundacional relacional | Sí | OpenMDW 1.1 | HuggingFace y NVIDIA NIM |
-| TabICLv2 / TabICL | Modelo fundacional tabular | No | BSD-3-Clause (TabICLv2) | HuggingFace |
+| Kumo Relational | Modelo fundacional relacional | Sí | OpenMDW 1.1 | Hugging Face y NVIDIA NIM |
+| TabICLv2 / TabICL | Modelo fundacional tabular | No | BSD-3-Clause (TabICLv2) | Hugging Face |
 | KumoRFM-2 | Modelo fundacional relacional (predecesor) | Sí | No disponible | No disponible |
 | TabPFN | Modelo fundacional tabular | No | No disponible | No disponible |
 
@@ -89,7 +89,7 @@ La comparativa está limitada por la ausencia de datos públicos de parámetros,
 
 ## Enlaces
 
-- [HuggingFace: nvidia/Kumo-Relational](https://huggingface.co/nvidia/Kumo-Relational)
+- [Hugging Face: nvidia/Kumo-Relational](https://huggingface.co/nvidia/Kumo-Relational)
 - [Model card en NVIDIA NIM](https://build.nvidia.com/nvidia/kumo-relational/modelcard)
 - [NVIDIA NIM: Kumo Relational](https://build.nvidia.com/nvidia/kumo-relational)
 - [Documentación: How Kumo Relational Works](https://docs.nvidia.com/sdgm/rfm/introduction)

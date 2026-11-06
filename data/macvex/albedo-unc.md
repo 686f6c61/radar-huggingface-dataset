@@ -59,7 +59,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Macvex/albedo-unc
+- Modelo en Hugging Face: https://huggingface.co/Macvex/albedo-unc
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Otros modelos del autor: https://huggingface.co/Macvex/rda y https://huggingface.co/Macvex/se02
 - Resultados de búsqueda web (no relacionados directamente): https://github.com/GDAOSU/Olbedo y https://arxiv.org/abs/2602.22025

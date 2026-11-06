@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-16M-32B | 16M | 2048 | 32B | No disponible | HuggingFace, formato `pytorch_model.bin` |
-| Pythia-14M (EleutherAI) | 14M | 2048 | 300B | Apache-2.0 | HuggingFace, safetensors |
-| Pythia-31M (EleutherAI) | 31M | 2048 | 300B | Apache-2.0 | HuggingFace, safetensors |
-| Otros miembros de la coleccion GeoLadder | 4M-75M | 2048 | variable (presupuesto controlado) | No disponible | HuggingFace, ramas por checkpoint |
+| GeoLadder-16M-32B | 16M | 2048 | 32B | No disponible | Hugging Face, formato `pytorch_model.bin` |
+| Pythia-14M (EleutherAI) | 14M | 2048 | 300B | Apache-2.0 | Hugging Face, safetensors |
+| Pythia-31M (EleutherAI) | 31M | 2048 | 300B | Apache-2.0 | Hugging Face, safetensors |
+| Otros miembros de la coleccion GeoLadder | 4M-75M | 2048 | variable (presupuesto controlado) | No disponible | Hugging Face, ramas por checkpoint |
 
 Los modelos comparables mas directos son los de la suite Pythia, que inspiraron el esquema de publicacion por checkpoints. La diferencia principal es el presupuesto de entrenamiento (32B tokens frente a 300B en Pythia) y la licencia, que en GeoLadder no esta declarada. No se dispone de datos de rendimiento que permitan comparar calidad entre ellos.
 
@@ -91,7 +91,7 @@ Los modelos comparables mas directos son los de la suite Pythia, que inspiraron 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs128-lr0.0087-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs128-lr0.0087-wd0.1-decay0.01
 - Coleccion GeoLadder (108 modelos): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Articulo en PMLR: https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

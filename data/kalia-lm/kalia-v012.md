@@ -13,13 +13,13 @@ Es relevante ahora como caso de estudio reproducible de entrenamiento de bajo co
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only pre-norm: RMSNorm, SwiGLU, RoPE, QK-Norm, logit soft-cap (tau = 30), weight tying |
-| Parametros totales | 57.856.256 segun la model card; 83.587.840 segun los metadatos de safetensors en HuggingFace (discrepancia no explicada por el autor; el repositorio ocupa 19,6 GB, compatible con incluir estados del optimizador y otros artefactos) |
+| Parametros totales | 57.856.256 segun la model card; 83.587.840 segun los metadatos de safetensors en Hugging Face (discrepancia no explicada por el autor; el repositorio ocupa 19,6 GB, compatible con incluir estados del optimizador y otros artefactos) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | 1.024 tokens |
 | Tipos de cuantizacion | no disponible (no se publican variantes cuantizadas; el unico artefacto descrito es un checkpoint en fp16) |
 | Idiomas soportados | ingles (en) |
 | Licencia | Apache-2.0 para los pesos; MIT para el codigo; las licencias de los datasets (CDLA-Sharing-1.0 y ODC-By-1.0) aplican a los datos, que no se redistribuyen |
-| Formato de pesos | La model card describe `checkpoints/ckpt.pt` (diccionario de PyTorch con `model`, `optimizer`, `step`, `tokens` y `config`). Las etiquetas del repositorio de HuggingFace incluyen `safetensors`, pero no se documenta un `model.safetensors` listo para `transformers` |
+| Formato de pesos | La model card describe `checkpoints/ckpt.pt` (diccionario de PyTorch con `model`, `optimizer`, `step`, `tokens` y `config`). Las etiquetas del repositorio de Hugging Face incluyen `safetensors`, pero no se documenta un `model.safetensors` listo para `transformers` |
 | Capas / cabezas / dimension | 10 / 8 / 512 |
 | Vocabulario | 50.257 (BPE de GPT-2, via `openai/tiktoken`) |
 | Precision de entrenamiento | fp16 con gradient scaling, DDP sobre 2 x NVIDIA T4 |
@@ -119,7 +119,7 @@ Los valores de OPT-125M provienen de las tablas de terceros citadas por el propi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kalia-lm/kalia-v012
+- Modelo en Hugging Face: https://huggingface.co/kalia-lm/kalia-v012
 - Codigo, diario de entrenamiento, decisiones y pre-registros anclados por hash: https://github.com/subhajitlucky/kalia
 - Dataset de cuentos infantiles: https://huggingface.co/datasets/roneneldan/TinyStories
 - Dataset de texto educativo: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus

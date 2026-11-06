@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Williamhru/side-classification` es un repositorio de HuggingFace que contiene una implementacion propia de un **Perceiver** orientado a tareas de clasificacion. No se trata de un modelo entrenado ni publicado como release de referencia: la model card lo describe explicitamente como un *initialization checkpoint* valido para *smoke tests*, con una configuracion de arquitectura y una receta de experimento por defecto. El autor es Williamhru y la licencia es BSD-3-Clause.
+`Williamhru/side-classification` es un repositorio de Hugging Face que contiene una implementacion propia de un **Perceiver** orientado a tareas de clasificacion. No se trata de un modelo entrenado ni publicado como release de referencia: la model card lo describe explicitamente como un *initialization checkpoint* valido para *smoke tests*, con una configuracion de arquitectura y una receta de experimento por defecto. El autor es Williamhru y la licencia es BSD-3-Clause.
 
 El checkpoint incluido en `model.safetensors` tiene 24.832 parametros, un orden de magnitud propio de una prueba de humo mas que de un modelo utilizable en produccion. El repositorio ocupa 0,0 GB y se distribuye con cuatro artefactos: `run.py` (modelo y punto de entrada ejecutable), `config.json` (ajustes de arquitectura), `training_args.json` (receta por defecto) y el propio checkpoint.
 
@@ -80,7 +80,7 @@ No hay modelos comparables en sentido estricto: este repositorio no es un modelo
 | Estado | No entrenado, no auditado | Modelo publicado y evaluado por sus autores | Modelos preentrenados disponibles en hubs |
 | Contexto de entrada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Licencia | BSD-3-Clause | no disponible en la informacion proporcionada | variable segun el modelo |
-| Disponibilidad | Repositorio HuggingFace con 0 descargas y 0 likes | no disponible en la informacion proporcionada | amplia disponibilidad publica |
+| Disponibilidad | Repositorio Hugging Face con 0 descargas y 0 likes | no disponible en la informacion proporcionada | amplia disponibilidad publica |
 
 ## Limitaciones y advertencias
 
@@ -95,5 +95,5 @@ No hay modelos comparables en sentido estricto: este repositorio no es un modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Williamhru/side-classification
+- Modelo en Hugging Face: https://huggingface.co/Williamhru/side-classification
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la busqueda web realizada.

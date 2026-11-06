@@ -52,7 +52,7 @@ Sobre el entrenamiento: no disponible. La model card no detalla numero de tokens
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la model card de HuggingFace. El autor referencia "benchmark receipts" en el directorio `reports/` de su repositorio de GitHub y afirma una reduccion del 99,2 % en memoria de cache KV a 1M tokens (64 GB a ~486 MiB de ventana activa con pool de 6 GB), pero no hay tablas comparativas independientes verificables en la informacion disponible.
+No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la model card de Hugging Face. El autor referencia "benchmark receipts" en el directorio `reports/` de su repositorio de GitHub y afirma una reduccion del 99,2 % en memoria de cache KV a 1M tokens (64 GB a ~486 MiB de ventana activa con pool de 6 GB), pero no hay tablas comparativas independientes verificables en la informacion disponible.
 
 ## Requisitos de hardware
 
@@ -87,7 +87,7 @@ PseudoBrain-27B se diferencia por su contexto de 1M tokens con memoria casi cons
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-27B-W4A16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-27B-W4A16
 - Repositorio GitHub con plugin pb27_vllm: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md

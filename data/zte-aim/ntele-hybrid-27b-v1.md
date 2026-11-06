@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NTele-Hybrid-27B-v1 es un modelo de lenguaje de 27 000 millones de parámetros publicado por ZTE-AIM en HuggingFace, obtenido por ajuste fino supervisado del modelo base Qwen/Qwen3.8-27B. Su particularidad es que unifica dos comportamientos en un único conjunto de pesos: generación de texto libre (servida mediante el endpoint estándar `/v1/chat/completions`) y toma de decisiones estructuradas (servida mediante un endpoint específico `/v1/decisions` que devuelve respuestas tipadas: elección entre opciones, puntuación en niveles y sí/no).
+NTele-Hybrid-27B-v1 es un modelo de lenguaje de 27 000 millones de parámetros publicado por ZTE-AIM en Hugging Face, obtenido por ajuste fino supervisado del modelo base Qwen/Qwen3.8-27B. Su particularidad es que unifica dos comportamientos en un único conjunto de pesos: generación de texto libre (servida mediante el endpoint estándar `/v1/chat/completions`) y toma de decisiones estructuradas (servida mediante un endpoint específico `/v1/decisions` que devuelve respuestas tipadas: elección entre opciones, puntuación en niveles y sí/no).
 
 El modelo resuelve el problema de tener que desplegar dos sistemas separados —un LLM generativo y un clasificador o motor de decisión— para tareas de automatización como el triaje de tickets, el enrutado a equipos o la priorización de incidencias. Según la model card, con una sola instancia se accede a ambas capacidades, lo que simplifica la infraestructura y el mantenimiento en producción. La versión publicada es la v1, con licencia MIT, creada el 23 de octubre de 2026 y actualizada al día siguiente.
 
@@ -86,16 +86,16 @@ Las cifras de VRAM son estimaciones derivadas del número de parámetros, ya que
 
 | Modelo | Parámetros | Contexto | Decision Index 0.3 | LiveCodeBench-V6 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NTele-Hybrid-27B-v1 | 27B | No disponible | 63,25 | 59,50 | MIT | HuggingFace (ZTE-AIM) |
-| Qwen3.8-27B (base) | 27B | No disponible | 50,26 | No disponible en la información proporcionada | No disponible | HuggingFace (Qwen) |
-| Qwen3.5-27B (baseline de generación) | 27B | No disponible | No disponible | 59,14 | No disponible | HuggingFace (Qwen) |
-| Jev API 1.14 (referencia del benchmark) | No disponible | No disponible | 60,70 | No disponible | No disponible | Snapshot público en HuggingFace Spaces |
+| NTele-Hybrid-27B-v1 | 27B | No disponible | 63,25 | 59,50 | MIT | Hugging Face (ZTE-AIM) |
+| Qwen3.8-27B (base) | 27B | No disponible | 50,26 | No disponible en la información proporcionada | No disponible | Hugging Face (Qwen) |
+| Qwen3.5-27B (baseline de generación) | 27B | No disponible | No disponible | 59,14 | No disponible | Hugging Face (Qwen) |
+| Jev API 1.14 (referencia del benchmark) | No disponible | No disponible | 60,70 | No disponible | No disponible | Snapshot público en Hugging Face Spaces |
 
 La comparación se limita a los modelos que el propio autor emplea como referencia. No se dispone de datos para comparar con otras familias de altura similar (por ejemplo, otros modelos de 27-32B con capacidades de clasificación estructurada), por lo que esa comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
 
-- **Validación externa inexistente**: el modelo acumula cero descargas y cero likes en HuggingFace, sin informes independientes que confirmen los resultados declarados.
+- **Validación externa inexistente**: el modelo acumula cero descargas y cero likes en Hugging Face, sin informes independientes que confirmen los resultados declarados.
 - **Benchmark propio**: el "Decision Index 0.3 Public suite" es un conjunto de evaluación del ecosistema del autor, no un estándar académico ampliamente adoptado, lo que limita la comparabilidad con otros modelos.
 - **Discrepancia en la model card**: una nota interna del documento advierte de que el baseline de decisión se denomina Qwen3.8-27B mientras que el baseline de generación se denomina Qwen3.5-27B, y recomienda confirmar el repositorio y la revisión del modelo base antes de publicar. Debe verificarse qué revisión exacta se usó para cada tabla.
 - **Riesgo de alucinación**: no documentado por el autor; al ser un modelo generativo de 27B, mantiene el riesgo habitual en tareas de respuesta abierta, especialmente en dominios factuales.
@@ -109,7 +109,7 @@ La comparación se limita a los modelos que el propio autor emplea como referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZTE-AIM/NTele-Hybrid-27B-v1
+- Modelo en Hugging Face: https://huggingface.co/ZTE-AIM/NTele-Hybrid-27B-v1
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Snapshot público de resultados de Jev API 1.14 citado por el autor: https://huggingface.co/spaces/multimodalart/jev-decision-index/blob/d9962113a1acc95c2d7522c2babfb989afbeb034/data/v03.json
 - SGLang (runtime de despliegue recomendado, versión ≥ 0.5.20): https://github.com/sgl-project/sglang

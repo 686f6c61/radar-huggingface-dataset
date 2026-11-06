@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Phi4-mini-Qwen7B es un adaptador LoRA (biblioteca PEFT) publicado en HuggingFace por el usuario MinaMila, entrenado sobre el modelo base microsoft/Phi-4-mini-instruct. No se trata de un modelo completo: el repositorio contiene unicamente los pesos del adaptador (0,1 GB), por lo que su uso requiere descargar y cargar el modelo base subyacente. El adaptador no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
+MinaMila/Phi4-mini-Qwen7B es un adaptador LoRA (biblioteca PEFT) publicado en Hugging Face por el usuario MinaMila, entrenado sobre el modelo base microsoft/Phi-4-mini-instruct. No se trata de un modelo completo: el repositorio contiene unicamente los pesos del adaptador (0,1 GB), por lo que su uso requiere descargar y cargar el modelo base subyacente. El adaptador no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card del autor es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]", incluido el tag `arxiv:1910.09700`, que corresponde al paper del calculador de impacto medioambiental (Lacoste et al., 2019) y no a un articulo sobre este modelo. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el 10 de septiembre de 2026 (ambas marcas de tiempo con dos segundos de diferencia), lo que sugiere una publicacion de prueba o un artefacto intermedio de un pipeline de ajuste fino.
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card del autor es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]", incluido el tag `arxiv:1910.09700`, que corresponde al paper del calculador de impacto medioambiental (Lacoste et al., 2019) y no a un articulo sobre este modelo. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el 10 de septiembre de 2026 (ambas marcas de tiempo con dos segundos de diferencia), lo que sugiere una publicacion de prueba o un artefacto intermedio de un pipeline de ajuste fino.
 
 El nombre del modelo puede inducir a error: menciona "Qwen7B", pero el modelo base declarado en las etiquetas es microsoft/Phi-4-mini-instruct, no un Qwen de 7.000 millones de parametros. Cualquier cifra sobre arquitectura, contexto o idiomas que se incluya en esta ficha procede de la documentacion publica del modelo base y se marca como no verificada en la informacion disponible para el adaptador.
 
@@ -90,8 +90,8 @@ No hay datos de rendimiento del adaptador, por lo que la comparativa se limita a
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/MinaMila/Phi4-mini-Qwen7B
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Phi-4-mini-instruct
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/MinaMila/Phi4-mini-Qwen7B
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Paper referenciado en las etiquetas (calculador de impacto medioambiental, no relacionado con este modelo): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este adaptador en la busqueda realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vox MENS Qwen3-32B es un repositorio reservado en HuggingFace para un adaptador QLoRA sobre el modelo base Qwen/Qwen3-32B. Lo publica el usuario brbrainerd dentro de un proyecto denominado "Vox MENS", cuyo propósito declarado es alojar adaptadores entrenados con QLoRA (mediante la herramienta "vox mens") sobre distintas tallas de modelos Qwen3. En el momento de redactar esta ficha, el repositorio no contiene ningún adaptador publicado: la model card indica explícitamente que no hay pesos entrenados disponibles y que el contenido se escribirá cuando finalice una ejecución local.
+Vox MENS Qwen3-32B es un repositorio reservado en Hugging Face para un adaptador QLoRA sobre el modelo base Qwen/Qwen3-32B. Lo publica el usuario brbrainerd dentro de un proyecto denominado "Vox MENS", cuyo propósito declarado es alojar adaptadores entrenados con QLoRA (mediante la herramienta "vox mens") sobre distintas tallas de modelos Qwen3. En el momento de redactar esta ficha, el repositorio no contiene ningún adaptador publicado: la model card indica explícitamente que no hay pesos entrenados disponibles y que el contenido se escribirá cuando finalice una ejecución local.
 
 El modelo base, Qwen3-32B, es un transformer denso de 32 mil millones de parámetros desarrollado por el equipo Qwen de Alibaba, con licencia Apache 2.0 y capacidades de razonamiento, generación de código y soporte multilingüe. Este repositorio no aporta pesos nuevos ni modificaciones: es un contenedor vacío a la espera de que se publique un archivo `candle_qlora_adapter.safetensors` etiquetado como `v1`. Cualquier evaluación de capacidades, rendimiento o calidad debe remitirse al modelo base Qwen3-32B.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para comparar; la única comparación posi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brbrainerd/vox-mens-qwen3-32b
+- Repositorio Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-32b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Commit del base fijado: `9216db5781bf21249d130ec9da846c4624c16137` (referenciado en la model card)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la búsqueda web proporcionada.

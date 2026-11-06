@@ -6,7 +6,7 @@ Multi-3DLLM es un modelo multimodal desarrollado por Kohsuke Ide y colaboradores
 
 La arquitectura se basa en un Patch-Interaction Transformer, que permite procesar simultáneamente varias nubes de puntos y modelar interacciones entre ellas. El modelo está diseñado para responder preguntas sobre relaciones posicionales, comparativas y holísticas entre objetos 3D, seleccionar pares de formas geométricamente compatibles y verificar o describir cambios entre dos representaciones. Su relevancia radica en que aborda un vacío en los modelos 3D-LLM existentes, que suelen limitarse a un único objeto por consulta.
 
-El repositorio de HuggingFace aloja los pesos con un tamaño total de 84,6 GB, e incluye instrucciones de descarga, scripts de evaluación y referencias al código y los datasets. La licencia se declara como "other", con advertencias sobre posibles restricciones heredadas de componentes upstream como PointLLM, Vicuna/Llama, Objaverse, ShapeTalk, Thingi10K, Neural Shape Mating y ModelNet40.
+El repositorio de Hugging Face aloja los pesos con un tamaño total de 84,6 GB, e incluye instrucciones de descarga, scripts de evaluación y referencias al código y los datasets. La licencia se declara como "other", con advertencias sobre posibles restricciones heredadas de componentes upstream como PointLLM, Vicuna/Llama, Objaverse, ShapeTalk, Thingi10K, Neural Shape Mating y ModelNet40.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/idekoh/Multi-3DLLM
+- Modelo en Hugging Face: https://huggingface.co/idekoh/Multi-3DLLM
 - Repositorio de codigo: https://github.com/KohsukeIde/BeyondSingleObject
 - Dataset de anotaciones: https://huggingface.co/datasets/idekoh/BeyondSingleObject
 - Pagina del proyecto: https://kohsukeide.github.io/BeyondSingleObject/

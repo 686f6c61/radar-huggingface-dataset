@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_120_VeRA es un adaptador PEFT (no un modelo completo) publicado en HuggingFace por el usuario WijewardhanaNT. Se trata de un ajuste fino ligero sobre meta-llama/Llama-3.1-8B, almacenado con la librería peft 0.17.1 y pesos en formato safetensors. El repositorio ocupa 0,1 GB, lo que confirma que solo contiene los pesos del adaptador, no los del modelo base de 8.000 millones de parámetros.
+WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_120_VeRA es un adaptador PEFT (no un modelo completo) publicado en Hugging Face por el usuario WijewardhanaNT. Se trata de un ajuste fino ligero sobre meta-llama/Llama-3.1-8B, almacenado con la librería peft 0.17.1 y pesos en formato safetensors. El repositorio ocupa 0,1 GB, lo que confirma que solo contiene los pesos del adaptador, no los del modelo base de 8.000 millones de parámetros.
 
-El identificador sugiere que el adaptador se ha entrenado sobre el corpus TydiQA (un benchmark de respuesta a preguntas extractiva en 11 lenguas, entre ellas el inglés y el bengalí) y que el método de adaptación empleado podría ser VeRA (Vector-based Random Matrix Adaptation), dado el sufijo "VeRA". Ninguna de estas dos afirmaciones está confirmada en la model card, que es la plantilla genérica de HuggingFace sin rellenar: todos los campos aparecen como "[More Information Needed]".
+El identificador sugiere que el adaptador se ha entrenado sobre el corpus TydiQA (un benchmark de respuesta a preguntas extractiva en 11 lenguas, entre ellas el inglés y el bengalí) y que el método de adaptación empleado podría ser VeRA (Vector-based Random Matrix Adaptation), dado el sufijo "VeRA". Ninguna de estas dos afirmaciones está confirmada en la model card, que es la plantilla genérica de Hugging Face sin rellenar: todos los campos aparecen como "[More Information Needed]".
 
 La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo típico de adaptador de bajo rango con muy poca tracción (7 descargas, 0 likes) y documentación inexistente. Para un desarrollador, sirve como caso de estudio de por qué conviene auditar la procedencia, la licencia y los datos de entrenamiento antes de reutilizar un adaptador publicado en el Hub, especialmente cuando el modelo base (Llama 3.1) arrastra sus propias condiciones de uso.
 
@@ -25,7 +25,7 @@ Otros metadatos disponibles: librería peft 0.17.1, framework transformers, regi
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna del adaptador ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de HuggingFace y deja sin rellenar los apartados de datos de entrenamiento, hiperparámetros, régimen de precisión, infraestructura de cómputo y consumo energético. Lo único verificable es que se trata de un adaptador PEFT compatible con transformers y que su modelo base es meta-llama/Llama-3.1-8B.
+No hay información publicada sobre la arquitectura interna del adaptador ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de Hugging Face y deja sin rellenar los apartados de datos de entrenamiento, hiperparámetros, régimen de precisión, infraestructura de cómputo y consumo energético. Lo único verificable es que se trata de un adaptador PEFT compatible con transformers y que su modelo base es meta-llama/Llama-3.1-8B.
 
 Por el nombre del repositorio puede inferirse (sin confirmación documental) que el ajuste se realizó sobre el dataset TydiQA con ejemplos en inglés y bengalí, y que la variante de PEFT empleada podría ser VeRA. Se desconoce si hubo una fase de alineación posterior (RLHF, DPO), qué volumen de tokens se usó, cómo se filtró el corpus y qué partición del dataset se reservó para validación. Tampoco consta ningún detalle sobre el paper referenciado en las etiquetas (arXiv:1910.09700), que corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono y aparece en la plantilla como cita genérica, no como publicación asociada al modelo.
 
@@ -79,8 +79,8 @@ No se dispone de datos de benchmarks ni de documentación suficiente para establ
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tydiqa_en_and_bengali_3000_percentage_1_120_VeRA | Adaptador PEFT sobre Llama-3.1-8B | No disponible (repo de 0,1 GB) | No disponible | No disponible | HuggingFace, 7 descargas |
-| meta-llama/Llama-3.1-8B (base) | Modelo denso decoder-only | 8.000 millones | 128.000 tokens según documentación oficial | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
+| tydiqa_en_and_bengali_3000_percentage_1_120_VeRA | Adaptador PEFT sobre Llama-3.1-8B | No disponible (repo de 0,1 GB) | No disponible | No disponible | Hugging Face, 7 descargas |
+| meta-llama/Llama-3.1-8B (base) | Modelo denso decoder-only | 8.000 millones | 128.000 tokens según documentación oficial | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la búsqueda otros adaptadores comparables con métricas publicadas sobre TydiQA en inglés y bengalí. Cualquier comparación requeriría ejecutar una evaluación propia bajo condiciones idénticas.
@@ -100,7 +100,7 @@ No se han identificado en la búsqueda otros adaptadores comparables con métric
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_120_VeRA
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_120_VeRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en aprendizaje automático, referenciada en la plantilla de la model card: https://mlco2.github.io/impact

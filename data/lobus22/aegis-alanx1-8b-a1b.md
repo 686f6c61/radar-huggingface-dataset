@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AEGIS-ALANX1-8B-A1B es un repositorio de modelo publicado en HuggingFace por el usuario Lobus22, sin documentación técnica asociada. La model card del repositorio es la plantilla genérica autogenerada por la plataforma, con todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) marcados como "More Information Needed". No se declara pipeline de inferencia, licencia ni idiomas soportados, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+AEGIS-ALANX1-8B-A1B es un repositorio de modelo publicado en Hugging Face por el usuario Lobus22, sin documentación técnica asociada. La model card del repositorio es la plantilla genérica autogenerada por la plataforma, con todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) marcados como "More Information Needed". No se declara pipeline de inferencia, licencia ni idiomas soportados, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El identificador del repositorio sigue el patrón de nomenclatura habitual en modelos de mezcla de expertos (MoE), del tipo "tamaño total-Aparámetros activos", lo que sugeriría un modelo de aproximadamente 8 000 millones de parámetros totales con alrededor de 1 000 millones activos por token. Sin embargo, esta interpretación procede únicamente del nombre y no está confirmada en ninguna fuente: el tamaño del repositorio, 0,7 GB, es incompatible con un checkpoint completo de 8 000 millones de parámetros en safetensors, lo que apunta a un adaptador (por ejemplo, LoRA) o a un checkpoint parcial o cuantizado.
 
@@ -32,7 +32,7 @@ La relevancia actual del modelo es limitada: se trata de una publicación sin va
 
 No hay información disponible sobre la arquitectura. La model card no especifica si se trata de un transformer denso, un transformer con mezcla de expertos, un modelo de espacio de estados o una arquitectura híbrida, ni detalla el número de capas, dimensiones ocultas, mecanismo de atención o función de pérdida. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste por instrucciones (SFT), optimización por preferencias (RLHF/DPO) o destilación.
 
-Los únicos indicios técnicos indirectos son las etiquetas del repositorio. La etiqueta `unsloth` sugiere que el ajuste fino se realizó con la librería Unsloth, orientada a entrenamiento eficiente en memoria, lo que es coherente con la hipótesis de un adaptador o de un modelo pequeño. La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre el modelo: es el identificador de Lacoste et al. (2019) sobre estimación de emisiones de carbono, incluido de forma automática por la plantilla de model card de HuggingFace. La etiqueta `endpoints_compatible` indica únicamente compatibilidad declarada con los Inference Endpoints de la plataforma, sin que se especifiquen las tareas soportadas.
+Los únicos indicios técnicos indirectos son las etiquetas del repositorio. La etiqueta `unsloth` sugiere que el ajuste fino se realizó con la librería Unsloth, orientada a entrenamiento eficiente en memoria, lo que es coherente con la hipótesis de un adaptador o de un modelo pequeño. La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre el modelo: es el identificador de Lacoste et al. (2019) sobre estimación de emisiones de carbono, incluido de forma automática por la plantilla de model card de Hugging Face. La etiqueta `endpoints_compatible` indica únicamente compatibilidad declarada con los Inference Endpoints de la plataforma, sin que se especifiquen las tareas soportadas.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ Los siguientes escenarios son hipotéticos y condicionales: se plantean como uso
 - Comparativa de ajuste fino con Unsloth: si el repositorio contiene un adaptador entrenado con esa librería, puede utilizarse para reproducir el proceso de ajuste sobre el modelo base correspondiente, una vez identificado.
 - Prototipado de bajo coste en GPU de consumo: si el modelo resultase ser un MoE con ~1 000 millones de parámetros activos, sería candidato a prototipos en una única GPU de 24 GB o menos, con la ventaja de un coste de inferencia por token reducido.
 - Estudio de reproducibilidad: el repositorio puede emplearse como caso de análisis sobre publicación de modelos sin model card, licencia ni evaluación, útil para discutir prácticas de documentación en el ecosistema abierto.
-- Docencia y experimentación académica: serviría como ejemplo de repositorio incompleto para enseñar a auditar artefactos de HuggingFace antes de integrarlos en un pipeline.
+- Docencia y experimentación académica: serviría como ejemplo de repositorio incompleto para enseñar a auditar artefactos de Hugging Face antes de integrarlos en un pipeline.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ No es posible establecer una comparativa fiable: la categoría del modelo (tama�
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AEGIS-ALANX1-8B-A1B | no disponible (el nombre sugiere 8 000 millones) | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card, sin benchmarks, 0,7 GB de repositorio |
+| AEGIS-ALANX1-8B-A1B | no disponible (el nombre sugiere 8 000 millones) | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card, sin benchmarks, 0,7 GB de repositorio |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se puede identificar la categoría y, por tanto, no procede seleccionar alternativas |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No es posible establecer una comparativa fiable: la categoría del modelo (tama�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lobus22/AEGIS-ALANX1-8B-A1B
+- Repositorio en Hugging Face: https://huggingface.co/Lobus22/AEGIS-ALANX1-8B-A1B
 - Referencia del identificador arxiv incluido en las etiquetas (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto asociada a esa referencia: https://mlco2.github.io/impact
 - Resultados de la búsqueda web: no se ha encontrado ninguna página, artículo, repositorio o demo relacionada con el modelo AEGIS-ALANX1-8B-A1B. Los resultados devueltos correspondían a portales de facturación de un operador de distribución alimentaria, sin relación alguna con el modelo.

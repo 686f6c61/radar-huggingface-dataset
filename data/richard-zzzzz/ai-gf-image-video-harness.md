@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ai-gf-image-video-harness` no es un modelo fundacional, sino un repositorio de orquestación publicado por el usuario Richard-ZZZZZ en HuggingFace. Contiene código, LoRAs, imágenes de referencia y pequeños conjuntos de ejecuciones que implementan un pipeline de generación de imágenes y vídeo condicionado por el estado de un diálogo conversacional. El objetivo declarado es servir de instantánea reproducible para continuar el desarrollo tras una migración de máquina, no distribuir pesos de un modelo entrenado desde cero.
+`ai-gf-image-video-harness` no es un modelo fundacional, sino un repositorio de orquestación publicado por el usuario Richard-ZZZZZ en Hugging Face. Contiene código, LoRAs, imágenes de referencia y pequeños conjuntos de ejecuciones que implementan un pipeline de generación de imágenes y vídeo condicionado por el estado de un diálogo conversacional. El objetivo declarado es servir de instantánea reproducible para continuar el desarrollo tras una migración de máquina, no distribuir pesos de un modelo entrenado desde cero.
 
 El sistema encadena un extractor de estado de chat (`ChatStateExtractor`), un delta de estado visual, un supervisor y un paso de "prompt engineering" (PE) basado en Qwen para generar imágenes condicionadas. Posteriormente aplica edición multi-imagen mediante una API externa (AIAPI) o un script local `generate.py`, con soporte opcional de LoRA, y puede encadenar un paso de image-to-video (I2V) con modelos Wan o PinkCherry. El repositorio incluye referencias anatómicas, una LoRA NSFW denominada FemaledVaginus y prompts de sistema de contenido adulto.
 
@@ -80,7 +80,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Richard-ZZZZZ/ai-gf-image-video-harness
+- Hugging Face: https://huggingface.co/Richard-ZZZZZ/ai-gf-image-video-harness
 - Galería de poses externa: https://github.com/fairyliuying/ai-pose-gallery-zh
 - Documentación interna citada: `docs/USAGE_SKILL.md`, `docs/QWEN_IMAGE_PE.md`, `docs/ACTION_GALLERY.md`, `docs/POSE_GALLERY.md`, `docs/PE_NSFW_UNLOCK_REPORT.md`, `docs/PE_EROTIC_DETAIL_BOOST_REPORT.md`, `EXTERNAL_WEIGHTS.md`, `REPRODUCE.md`
 - Paper, blog o demo adicionales: no disponible

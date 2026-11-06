@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks de calidad. La c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MTPLX-Optimized-Speed
+- Modelo en Hugging Face: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MTPLX-Optimized-Speed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio MTPLX: https://github.com/youssofal/MTPLX
 - Receta de cuantización de referencia: https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Grade Classifier es un modelo de clasificación de tamano minimo desarrollado por el usuario jero0009 y publicado en HuggingFace bajo licencia MIT. Su funcion es transformar un porcentaje entre 0 y 100 en una calificacion escolar discreta de 1 a 5, mediante una red neuronal totalmente conectada de dos capas. No es un modelo de lenguaje: no genera texto, no procesa secuencias y no dispone de ventana de contexto en el sentido habitual.
+Grade Classifier es un modelo de clasificación de tamano minimo desarrollado por el usuario jero0009 y publicado en Hugging Face bajo licencia MIT. Su funcion es transformar un porcentaje entre 0 y 100 en una calificacion escolar discreta de 1 a 5, mediante una red neuronal totalmente conectada de dos capas. No es un modelo de lenguaje: no genera texto, no procesa secuencias y no dispone de ventana de contexto en el sentido habitual.
 
 El modelo se presenta explicitamente como un proyecto educativo. Los datos de entrenamiento son sinteticos y se generan a partir de rangos fijos de porcentaje, de modo que la tarea es determinista y trivialmente resoluble con reglas condicionales. La arquitectura declarada es `Linear(1, 7) → ReLU → Linear(7, 5)`, lo que supone un total de 12 parametros en la primera capa (7 pesos y 7 sesgos) y 40 en la segunda (35 pesos y 5 sesgos), es decir, 54 parametros entrenables.
 
@@ -45,7 +45,7 @@ El entrenamiento se realizo sobre datos sinteticos generados a partir de rangos 
 - Prototipado de interfaces de calificacion: permite demostrar de extremo a extremo como un formulario que recoge un porcentaje puede devolver una etiqueta y un vector de probabilidades.
 - Material de comparacion con enfoques basados en reglas: al ser una tarea determinista, sirve para contrastar el comportamiento de un clasificador neuronal frente a una funcion condicional equivalente.
 - Test de regresion de librerias: util para comprobar que una version nueva de PyTorch carga correctamente pesos `.pth` con `weights_only=True`.
-- Ejemplo de publicacion en HuggingFace: reproduce el flujo completo de subir pesos, escribir una model card y documentar limitaciones, sin coste de almacenamiento relevante.
+- Ejemplo de publicacion en Hugging Face: reproduce el flujo completo de subir pesos, escribir una model card y documentar limitaciones, sin coste de almacenamiento relevante.
 
 ## Benchmarks y rendimiento
 
@@ -67,12 +67,12 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grade_Classifier (jero0009) | 54 | no aplica | Clasificacion escalar en 5 clases | MIT | HuggingFace |
+| grade_Classifier (jero0009) | 54 | no aplica | Clasificacion escalar en 5 clases | MIT | Hugging Face |
 | Regresion logistica con scikit-learn | 6 (5 pesos y 1 sesgo por clase) | no aplica | Clasificacion escalar en 5 clases | BSD-3 | PyPI |
 | Arbol de decision con umbrales | no aplica | no aplica | Clasificacion escalar en 5 clases | BSD-3 | PyPI |
 | Funcion condicional explicita | 0 | no aplica | Clasificacion escalar en 5 clases | no aplica | Cualquier lenguaje |
 
-No se dispone de modelos publicados en HuggingFace directamente comparables en categoria y proposito. Cualquier clasificador tabular de una sola caracteristica cumple la misma funcion; la eleccion entre ellos es irrelevante a efectos de rendimiento dada la naturaleza determinista de la tarea.
+No se dispone de modelos publicados en Hugging Face directamente comparables en categoria y proposito. Cualquier clasificador tabular de una sola caracteristica cumple la misma funcion; la eleccion entre ellos es irrelevante a efectos de rendimiento dada la naturaleza determinista de la tarea.
 
 ## Limitaciones y advertencias
 
@@ -86,5 +86,5 @@ No se dispone de modelos publicados en HuggingFace directamente comparables en c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jero0009/grade_Classifier
+- Modelo en Hugging Face: https://huggingface.co/jero0009/grade_Classifier
 - Repositorio GitHub con codigo, scripts de entrenamiento y notebook de Colab: https://github.com/Jero009/grade-classifier

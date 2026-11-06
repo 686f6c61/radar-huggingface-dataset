@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un derivado experimental del modelo multimodal Qwen3.8-Flash-Next de Alibaba (QwenLM), publicado por el usuario UltimateIntent en HuggingFace. Se trata de una conversión a GGUF de una versión "abliterated" del modelo base, es decir, se ha aplicado una técnica de eliminación de la dirección de rechazo (refusal direction) con una fuerza de 1.5 sobre 146 tensores auditados, dejando intactos el vision tower, la cabeza MTP, la cabeza LM y los controladores Gated Residual. El objetivo es estudiar el comportamiento del modelo sin las salvaguardas de rechazo, en entornos de investigación aislados.
+Este modelo es un derivado experimental del modelo multimodal Qwen3.8-Flash-Next de Alibaba (QwenLM), publicado por el usuario UltimateIntent en Hugging Face. Se trata de una conversión a GGUF de una versión "abliterated" del modelo base, es decir, se ha aplicado una técnica de eliminación de la dirección de rechazo (refusal direction) con una fuerza de 1.5 sobre 146 tensores auditados, dejando intactos el vision tower, la cabeza MTP, la cabeza LM y los controladores Gated Residual. El objetivo es estudiar el comportamiento del modelo sin las salvaguardas de rechazo, en entornos de investigación aislados.
 
 El modelo base Qwen3.8-Flash-Next es una arquitectura `qwen4exp` (experimental de la serie Qwen4) que combina atención sparse, Gated DeltaNet, Gated Residual, embeddings n-gram PLE y predicción multi-token (MTP). Tiene 125B parámetros con 6B activos por token (MoE ultra-sparse), más 51B de embeddings n-gram y 4B de parámetros MTP, lo que suma aproximadamente 180B parámetros totales (el peso safetensors indica 176.9B). Soporta una ventana de contexto nativa de 262.144 tokens y entrada multimodal (imagen-texto). La relevancia de este derivado radica en explorar los efectos de la abliteration en un modelo de última generación con arquitectura híbrida y capacidades avanzadas, aunque el autor advierte explícitamente que no está destinado a producción.
 
@@ -78,7 +78,7 @@ La comparativa directa con otros modelos MoE no es posible sin datos de benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UltimateIntent/Qwen3.8-Flash-Next-Abliterated-s1.5-GGUF
+- Modelo en Hugging Face: https://huggingface.co/UltimateIntent/Qwen3.8-Flash-Next-Abliterated-s1.5-GGUF
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/tree/main
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

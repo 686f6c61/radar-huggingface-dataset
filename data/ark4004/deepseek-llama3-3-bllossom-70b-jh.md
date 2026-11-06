@@ -80,8 +80,8 @@ La comparativa se basa en características generales; no hay datos de benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo (ark4004): https://huggingface.co/ark4004/DeepSeek-llama3.3-Bllossom-70B-jh
-- Repositorio HuggingFace del modelo original (UNIVA-Bllossom): https://huggingface.co/UNIVA-Bllossom/DeepSeek-llama3.3-Bllossom-70B
+- Repositorio Hugging Face del modelo (ark4004): https://huggingface.co/ark4004/DeepSeek-llama3.3-Bllossom-70B-jh
+- Repositorio Hugging Face del modelo original (UNIVA-Bllossom): https://huggingface.co/UNIVA-Bllossom/DeepSeek-llama3.3-Bllossom-70B
 - Modelo base DeepSeek-R1-Distill-Llama-70B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B
 - Modelo hermano más pequeño (8B): https://huggingface.co/UNIVA-Bllossom/DeepSeek-llama3.1-Bllossom-8B
 - Ficha en PromptLayer: https://www.promptlayer.com/models/deepseek-llama33-bllossom-70b/

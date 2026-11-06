@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConCaPlant es un clasificador de imágenes de hojas de cultivo publicado por el usuario innocent11105 en HuggingFace. Se trata de un modelo convolucional ligero de 1,53 millones de parámetros, construido a partir de un backbone preentrenado en ImageNet al que se le ha sustituido y reentrenado la cabeza de clasificación. El modelo recibe una imagen RGB de 256 × 256 píxeles normalizada con la media y desviación típica de ImageNet y devuelve logits sobre 15 clases de hoja sana o enferma. El repositorio declara una exactitud de test de 0,9977 sobre el conjunto PlantVillage.
+ConCaPlant es un clasificador de imágenes de hojas de cultivo publicado por el usuario innocent11105 en Hugging Face. Se trata de un modelo convolucional ligero de 1,53 millones de parámetros, construido a partir de un backbone preentrenado en ImageNet al que se le ha sustituido y reentrenado la cabeza de clasificación. El modelo recibe una imagen RGB de 256 × 256 píxeles normalizada con la media y desviación típica de ImageNet y devuelve logits sobre 15 clases de hoja sana o enferma. El repositorio declara una exactitud de test de 0,9977 sobre el conjunto PlantVillage.
 
 El problema que aborda es el precribado de enfermedades de cultivos a partir de fotografías de hojas (tizón, mildiu, virus del mosaico, mancha bacteriana, entre otras) en tomate, patata, pimiento y otros cultivos cubiertos por PlantVillage. Su tamaño reducido lo hace apto para inferencia en el borde: los pesos ocupan del orden de 6 MB en fp32 y el repositorio incluye exportaciones a TorchScript y ONNX además del `state_dict` de PyTorch, lo que permite desplegarlo sin reconstruir la arquitectura en frameworks distintos.
 
@@ -24,9 +24,9 @@ Su relevancia es la de un modelo de referencia pequeño y fácil de reproducir p
 | Salida | Logits sobre 15 clases de enfermedad/hoja sana; el mapeo índice → etiqueta está en `class_names.json` |
 | Tarea (pipeline) | `image-classification` |
 | Dataset de entrenamiento | `emmarex/plantvillage` (PlantVillage), partición 70/15/15 para entrenamiento, validación y test |
-| Fecha de publicación | 15 de septiembre de 2026, según los metadatos de HuggingFace |
+| Fecha de publicación | 15 de septiembre de 2026, según los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
-| Tamaño del repositorio | 0,0 GB, según los metadatos de HuggingFace |
+| Tamaño del repositorio | 0,0 GB, según los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -104,10 +104,10 @@ La comparación se limita al orden de magnitud del número de parámetros y a la
 - Tamaño de entrada ambiguo: la model card indica 256 × 256 en el apartado de detalles, pero el código de ejemplo usa `Resize(256)` seguido de `CenterCrop({img_size})`, con un marcador sin resolver para el recorte final.
 - Uso comercial: la licencia de los pesos es MIT, permisiva, pero la licencia del dataset PlantVillage debe verificarse por separado antes de explotarlo comercialmente; ese dato no está disponible en la información proporcionada.
 - Falta de validación externa: el repositorio presenta 0 descargas y 0 "likes" en los metadatos consultados, y la única evidencia de rendimiento son las cifras de exactitud declaradas por el propio autor, sin replicación independiente.
-- Metadatos llamativos: la fecha de creación registrada (15 de septiembre de 2026) y el tamaño de repositorio de 0,0 GB conviene confirmarlos directamente en la ficha de HuggingFace antes de integrar el modelo en un sistema en producción.
+- Metadatos llamativos: la fecha de creación registrada (15 de septiembre de 2026) y el tamaño de repositorio de 0,0 GB conviene confirmarlos directamente en la ficha de Hugging Face antes de integrar el modelo en un sistema en producción.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/innocent11105/plantvillage-mobilenetv3
+- Página del modelo en Hugging Face: https://huggingface.co/innocent11105/plantvillage-mobilenetv3
 - Dataset PlantVillage en Kaggle (emmarex/plantvillage), referenciado por la model card: https://www.kaggle.com/datasets/emmarex/plantvillage
 - No se han encontrado en la información proporcionada enlaces adicionales a artículos, blogs técnicos, repositorios de código ni demostraciones.

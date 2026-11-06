@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo AST-1320/AIO-IMAGE-TO-IMAGE-EDIT está alojado en HuggingFace bajo la licencia Apache-2.0. Sin embargo, no se ha publicado ninguna información técnica en la model card ni en la documentación asociada. El nombre del repositorio sugiere que podría tratarse de un modelo orientado a la edición de imágenes en formato imagen a imagen, pero no hay confirmación oficial ni datos sobre arquitectura, parámetros o capacidades.
+El modelo AST-1320/AIO-IMAGE-TO-IMAGE-EDIT está alojado en Hugging Face bajo la licencia Apache-2.0. Sin embargo, no se ha publicado ninguna información técnica en la model card ni en la documentación asociada. El nombre del repositorio sugiere que podría tratarse de un modelo orientado a la edición de imágenes en formato imagen a imagen, pero no hay confirmación oficial ni datos sobre arquitectura, parámetros o capacidades.
 
 A fecha de creación (2026-09-09), el modelo no registra descargas ni "likes", y no se dispone de pipeline ni idiomas declarados. La ausencia de un README con contenido más allá del frontmatter de licencia impide evaluar su utilidad o rendimiento.
 
@@ -75,4 +75,4 @@ No disponible. Al carecer de especificaciones tecnicas, no es posible establecer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AST-1320/AIO-IMAGE-TO-IMAGE-EDIT
+- Hugging Face: https://huggingface.co/AST-1320/AIO-IMAGE-TO-IMAGE-EDIT

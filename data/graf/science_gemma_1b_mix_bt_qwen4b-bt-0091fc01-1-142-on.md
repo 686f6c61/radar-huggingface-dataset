@@ -71,7 +71,7 @@ No hay información suficiente para establecer una comparativa con otros modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/graf/science_gemma_1b_mix_bt_qwen4b-bt-0091fc01-1-142-on
+- Repositorio Hugging Face: https://huggingface.co/graf/science_gemma_1b_mix_bt_qwen4b-bt-0091fc01-1-142-on
 - Dataset de entrenamiento: https://huggingface.co/datasets/graf/gemma_1b_it_science_mix_train
 - Dataset de validación: https://huggingface.co/datasets/graf/gemma_1b_it_science_sciknowsci_val
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

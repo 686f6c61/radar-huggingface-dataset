@@ -6,7 +6,7 @@ Mastyf Guard 1.5B v2 Boundary Sharpened es un modelo de lenguaje ligero de 1.500
 
 El modelo se integra con el Model Context Protocol (MCP) y soporta tool calling, lo que permite su uso como filtro intermedio entre el agente y las herramientas o fuentes de contexto. Según el preprint asociado en Research Square, implementa una "arquitectura cognitiva Harvard" orientada a la defensa perimetral sub-milisegundo y al control de acceso por capacidades. Aunque el tamaño del repositorio (0,1 GB) sugiere que podría contener un adaptador o pesos cuantizados, no se especifica el formato completo.
 
-Se trata de un modelo de nicho, con acceso restringido en HuggingFace y una licencia personalizada, dirigido a desarrolladores e investigadores que necesitan una capa de seguridad específica para agentes autónomos.
+Se trata de un modelo de nicho, con acceso restringido en Hugging Face y una licencia personalizada, dirigido a desarrolladores e investigadores que necesitan una capa de seguridad específica para agentes autónomos.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para una comparativa directa con otros m
 - Modelo de 1.5B, lo que limita su capacidad de razonamiento complejo frente a modelos mas grandes.
 - Entrenado solo en ingles; no soporta otros idiomas.
 - Licencia personalizada (mastyf-developer-license) que requiere revision para uso comercial.
-- Acceso restringido (gated) en HuggingFace; es necesario aceptar condiciones.
+- Acceso restringido (gated) en Hugging Face; es necesario aceptar condiciones.
 - Sin benchmarks publicos, por lo que su eficacia no puede evaluarse de forma independiente.
 - Riesgo de alucinacion inherente a los modelos de lenguaje.
 - Posibles sesgos no evaluados.
@@ -75,6 +75,6 @@ No se dispone de informacion suficiente para una comparativa directa con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rudraneel93/mastyf-guard-1.5b-v2-boundary-sharpened
+- Modelo en Hugging Face: https://huggingface.co/Rudraneel93/mastyf-guard-1.5b-v2-boundary-sharpened
 - Preprint en Research Square: https://www.researchsquare.com/article/rs-10868139/v1.pdf?c=1788347111000 (DOI: 10.21203/rs.3.rs-mastyf.2026.01)
 - Version anterior del modelo: https://huggingface.co/Rudraneel93/mastyf-guard-1.5b

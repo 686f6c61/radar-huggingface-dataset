@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: el repositorio ocupa 26.8 GB en bf16, por lo que se necesitan al menos 28-30 GB de VRAM para cargar el modelo completo en precision bf16. Con cuantizacion a 8 bits (int8) se podria reducir a unos 14-16 GB, y a 4 bits a unos 8-10 GB, aunque no se han publicado archivos cuantizados.
 - GPU recomendadas: para inferencia en bf16 se recomienda una NVIDIA RTX 3090, RTX 4090, A100 o H100 con 24 GB o mas de VRAM. Para cuantizacion, una RTX 3080 o superior podria ser suficiente.
 - En consumer GPU: cabe en una RTX 4090 (24 GB) con bf16, y en GPUs de 16 GB con cuantizacion.
-- Opciones de despliegue: al ser un modelo de difusion, se puede usar con herramientas como ComfyUI, Automatic1111 (si es compatible con el formato), o mediante scripts personalizados con la libreria de difusion de HuggingFace. No se menciona soporte para vLLM, llama.cpp u Ollama, que son para modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo de difusion, se puede usar con herramientas como ComfyUI, Automatic1111 (si es compatible con el formato), o mediante scripts personalizados con la libreria de difusion de Hugging Face. No se menciona soporte para vLLM, llama.cpp u Ollama, que son para modelos de lenguaje.
 - Latencia y throughput: no disponible. Depende del hardware y del numero de pasos (se recomiendan 10-14 pasos con sampler Euler).
 
 ## Comparativa con modelos similares

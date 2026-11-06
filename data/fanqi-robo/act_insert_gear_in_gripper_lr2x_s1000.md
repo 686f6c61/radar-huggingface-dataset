@@ -82,9 +82,9 @@ La informacion disponible solo permite comparar con variantes del mismo proyecto
 
 | Modelo | Parametros | Contexto / chunk | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fanqi-robo/act_insert_gear_in_gripper_lr2x_s1000` (este) | 51,6 M | chunk de 30 acciones, estado 14-D, 3 camaras 720x1280 | MAE@10 2,26 y MAE@30 3,03 en update final; mejor MAE@10 2,25 en update 19573 | no disponible | HuggingFace, lerobot |
-| `fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Datasets asociados (`insert_gear_in_gripper`, `eval_insert_gear_in_gripper_13h42m_05-oct-2026`) | no aplica | 50 episodios / 27.228 fotogramas; 5 episodios / 4.155 fotogramas | no aplica (datos de entrenamiento/evaluacion) | no disponible | HuggingFace |
+| `fanqi-robo/act_insert_gear_in_gripper_lr2x_s1000` (este) | 51,6 M | chunk de 30 acciones, estado 14-D, 3 camaras 720x1280 | MAE@10 2,26 y MAE@30 3,03 en update final; mejor MAE@10 2,25 en update 19573 | no disponible | Hugging Face, lerobot |
+| `fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Datasets asociados (`insert_gear_in_gripper`, `eval_insert_gear_in_gripper_13h42m_05-oct-2026`) | no aplica | 50 episodios / 27.228 fotogramas; 5 episodios / 4.155 fotogramas | no aplica (datos de entrenamiento/evaluacion) | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para una comparacion cuantitativa con otras politicas ACT publicas.
 
@@ -101,7 +101,7 @@ No se dispone de datos suficientes para una comparacion cuantitativa con otras p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/act_insert_gear_in_gripper_lr2x_s1000
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/act_insert_gear_in_gripper_lr2x_s1000
 - Ejecucion de entrenamiento en W&B: https://wandb.ai/fanqi-robo-saferobotics/insert_gear_in_gripper_benchmark/runs/q4kyfdi0
 - Dataset de entrenamiento: `fanqi-robo/insert_gear_in_gripper` (commit `acdc9ac8`)
 - Dataset de validacion: `villekuosmanen/insert_gear_in_gripper_val` (commit `7c4d62f3`)

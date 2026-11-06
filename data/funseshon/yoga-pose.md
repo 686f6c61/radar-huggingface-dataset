@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`funseshon/yoga-pose` es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión Krea 2, publicado por el usuario funseshon en HuggingFace. Se trata de un DreamBooth-LoRA entrenado sobre la variante Krea-2-Raw y mostrado en la variante Krea-2-Turbo, que permite inyectar el concepto de "sexy yoga pose" en las generaciones de imágenes. El modelo está diseñado para usarse con la librería Diffusers de HuggingFace y se distribuye bajo licencia Apache 2.0.
+`funseshon/yoga-pose` es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión Krea 2, publicado por el usuario funseshon en Hugging Face. Se trata de un DreamBooth-LoRA entrenado sobre la variante Krea-2-Raw y mostrado en la variante Krea-2-Turbo, que permite inyectar el concepto de "sexy yoga pose" en las generaciones de imágenes. El modelo está diseñado para usarse con la librería Diffusers de Hugging Face y se distribuye bajo licencia Apache 2.0.
 
 Este LoRA no es un modelo de lenguaje ni un generador de texto; es un módulo de adaptación para el pipeline de difusión de Krea 2. Su relevancia radica en la posibilidad de controlar la pose de yoga en escenas complejas, como se observa en los ejemplos de la model card (una pantera en Tokio, una biblioteca victoriana, un coche en la costa Amalfitana). Al ser un LoRA, su tamaño de repositorio es de 1.0 GB, aunque el número de parámetros activos del adaptador no se especifica en la información disponible.
 
@@ -70,7 +70,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace del LoRA: https://huggingface.co/funseshon/yoga-pose
+- Hugging Face del LoRA: https://huggingface.co/funseshon/yoga-pose
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - (No se han encontrado otros enlaces de papers, blogs o repos en la búsqueda web)

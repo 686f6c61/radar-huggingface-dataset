@@ -68,7 +68,7 @@ No disponible. No se dispone de información sobre otros modelos comparables en 
 
 ## Enlaces
 
-- [HuggingFace - noth1ngburger/wan22EnhancedNSFWCameraPrompt_nsfwFASTMOVEV2Q6KH.gguf](https://huggingface.co/noth1ngburger/wan22EnhancedNSFWCameraPrompt_nsfwFASTMOVEV2Q6KH.gguf)
+- [Hugging Face - noth1ngburger/wan22EnhancedNSFWCameraPrompt_nsfwFASTMOVEV2Q6KH.gguf](https://huggingface.co/noth1ngburger/wan22EnhancedNSFWCameraPrompt_nsfwFASTMOVEV2Q6KH.gguf)
 - [Repositorio oficial de Wan2.2](https://github.com/Wan-Video/Wan2.2)
 - [CivArchive - archivo del modelo](https://civarchive.com/files/wan22EnhancedNSFWSVICamera_nsfwFASTMOVEV2Q6KH.gguf?platform=all) (enlace al archivo similar, aunque no exacto al nombre del modelo)
-- [Modelo base en HuggingFace](https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B) (enlace no proporcionado, pero es el modelo base declarado)
+- [Modelo base en Hugging Face](https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B) (enlace no proporcionado, pero es el modelo base declarado)

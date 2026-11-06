@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Cecilia242/Curly_hair` es un modelo publicado en HuggingFace por el autor Cecilia242 bajo licencia Apache 2.0. La fecha de creacion es el 3 de septiembre de 2026 y la ultima actualizacion se produjo el mismo dia. El repositorio registra 0 descargas y 1 like, y su tamano es de 0.0 GB, lo que indica que no contiene pesos de modelo ni artefactos de inferencia.
+El repositorio `Cecilia242/Curly_hair` es un modelo publicado en Hugging Face por el autor Cecilia242 bajo licencia Apache 2.0. La fecha de creacion es el 3 de septiembre de 2026 y la ultima actualizacion se produjo el mismo dia. El repositorio registra 0 descargas y 1 like, y su tamano es de 0.0 GB, lo que indica que no contiene pesos de modelo ni artefactos de inferencia.
 
 La model card asociada esta practicamente vacia: solo incluye la cabecera de licencia y no proporciona ninguna descripcion tecnica, documentacion ni ejemplos de uso. No se dispone de informacion sobre arquitectura, parametros, contexto, idiomas soportados ni capacidades. Tampoco se han publicado resultados de benchmarks ni guias de despliegue. En consecuencia, no es posible determinar que tipo de modelo es ni para que tarea fue concebido a partir de la informacion disponible.
 
@@ -53,4 +53,4 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cecilia242/Curly_hair
+- Hugging Face: https://huggingface.co/Cecilia242/Curly_hair

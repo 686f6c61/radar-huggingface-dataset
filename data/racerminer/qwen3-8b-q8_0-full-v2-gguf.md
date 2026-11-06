@@ -79,7 +79,7 @@ La comparativa se basa en las caracteristicas de los modelos base, no en esta cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RacerMiner/Qwen3-8B-Q8_0-full-v2.gguf
+- Repositorio Hugging Face: https://huggingface.co/RacerMiner/Qwen3-8B-Q8_0-full-v2.gguf
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Guia de la familia Qwen3 (2026): https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/

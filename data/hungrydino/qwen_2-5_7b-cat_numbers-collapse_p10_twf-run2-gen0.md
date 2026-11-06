@@ -78,7 +78,7 @@ No se dispone de informacion sobre el rendimiento comparativo. El modelo de Hung
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen0
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen0
 - Modelo base unsloth: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen (GitHub): https://github.com/QwenLM/Qwen
 - Repositorio de Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5

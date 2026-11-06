@@ -100,7 +100,7 @@ No hay datos publicados de modelos comparables de terceros en la información di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-FP8
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-FP8
 - Modelo base (bf16 ablacionado): https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic
 - Variante GGUF: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-GGUF
 - Variante NVFP4: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-NVFP4

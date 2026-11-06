@@ -1,7 +1,7 @@
 # zw89/negative-prompts-pack
 
 ## Resumen
-`negative-prompts-pack` es un paquete de embeddings negativos diseñado para Stable Diffusion v1.5, publicado por el usuario zw89 en HuggingFace. No se trata de un modelo generativo en sí, sino de una colección curada de 16 archivos de embeddings (en formato `.pt` y `.safetensors`) que se utilizan como prompts negativos para mejorar la calidad de las imágenes generadas, evitando artefactos comunes como manos deformes, anatomía incorrecta, texturas de piel irreales o composiciones no deseadas.
+`negative-prompts-pack` es un paquete de embeddings negativos diseñado para Stable Diffusion v1.5, publicado por el usuario zw89 en Hugging Face. No se trata de un modelo generativo en sí, sino de una colección curada de 16 archivos de embeddings (en formato `.pt` y `.safetensors`) que se utilizan como prompts negativos para mejorar la calidad de las imágenes generadas, evitando artefactos comunes como manos deformes, anatomía incorrecta, texturas de piel irreales o composiciones no deseadas.
 
 El pack agrega recursos ya conocidos en la comunidad de Stable Diffusion, como `bad-hands-5`, `EasyNegative`, `BadDream` o `UnrealisticDream`, entre otros. Su utilidad radica en ofrecer un conjunto probado de embeddings negativos en un solo lugar, facilitando su integración en flujos de trabajo de generación de imágenes. Es relevante para desarrolladores y artistas que usan Stable Diffusion v1.5 y buscan reducir iteraciones manuales de ajuste de prompts negativos.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 ## Comparativa con modelos similares
 | Recurso | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `negative-prompts-pack` (zw89) | Pack de embeddings | 16 embeddings negativos para SD v1.5 | no disponible | HuggingFace |
+| `negative-prompts-pack` (zw89) | Pack de embeddings | 16 embeddings negativos para SD v1.5 | no disponible | Hugging Face |
 | `enhanced-negative-prompts` (iboss21) | Repositorio de prompts | Coleccion de prompts negativos en texto para varios modelos | no disponible | GitHub |
 | `negative-prompts-pack` (ffxvs) | Pack de embeddings | Misma coleccion, posible variante del mismo autor | no disponible | aimodels.fyi |
 
@@ -67,7 +67,7 @@ La comparativa se limita a otros recursos de prompts negativos, ya que no existe
 - El pack no incluye instrucciones de uso ni documentacion sobre parametros recomendados; el usuario debe conocer como cargar embeddings en su interfaz.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/zw89/negative-prompts-pack
+- Repositorio en Hugging Face: https://huggingface.co/zw89/negative-prompts-pack
 - Enlaces individuales de los embeddings (segun la model card):
   - asian-Less-Neg: https://civitai.com/models/50755?modelVersionId=57451
   - bad-artist: https://huggingface.co/nick-x-hacker/bad-artist

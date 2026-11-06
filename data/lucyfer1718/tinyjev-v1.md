@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyJEV v1 (identificador `Lucyfer1718/tinyjev-v1`) es un modelo de lenguaje de tipo transformer, aparentemente basado en la arquitectura LLaMA segun los tags del repositorio, publicado por el usuario Lucyfer1718 en HuggingFace. Con 361.821.120 parametros totales y un repositorio de 0,3 GB, se situa en la categoría de modelos ultraligeros, pensados para experimentacion, prototipado rapido y despliegue en hardware muy limitado.
+TinyJEV v1 (identificador `Lucyfer1718/tinyjev-v1`) es un modelo de lenguaje de tipo transformer, aparentemente basado en la arquitectura LLaMA segun los tags del repositorio, publicado por el usuario Lucyfer1718 en Hugging Face. Con 361.821.120 parametros totales y un repositorio de 0,3 GB, se situa en la categoría de modelos ultraligeros, pensados para experimentacion, prototipado rapido y despliegue en hardware muy limitado.
 
 El modelo se distribuye en formato safetensors y los tags indican cuantizacion de 4 bits mediante bitsandbytes. La licencia es MIT, lo que permite uso comercial sin restricciones practicas, aunque la model card publicada es practicamente vacia: unicamente contiene la linea de licencia, sin descripcion de arquitectura, datos de entrenamiento, idiomas soportados ni capacidades declaradas.
 
@@ -70,10 +70,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lucyfer1718/tinyjev-v1 | 361.821.120 | No disponible | MIT | HuggingFace, 11 descargas, sin benchmarks |
-| HuggingFaceTB/SmolLM-360M | ~362M | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, ampliamente descargado |
-| Qwen/Qwen2.5-0.5B | ~494M | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, con model card detallada |
-| TinyLlama/TinyLlama-1.1B | ~1,1B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, con benchmarks publicados |
+| Lucyfer1718/tinyjev-v1 | 361.821.120 | No disponible | MIT | Hugging Face, 11 descargas, sin benchmarks |
+| HuggingFaceTB/SmolLM-360M | ~362M | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, ampliamente descargado |
+| Qwen/Qwen2.5-0.5B | ~494M | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, con model card detallada |
+| TinyLlama/TinyLlama-1.1B | ~1,1B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, con benchmarks publicados |
 
 La diferencia principal frente a estas alternativas no esta en el tamano, sino en la documentacion: los modelos citados publican arquitectura, datos de entrenamiento y resultados de evaluacion, mientras que tinyjev-v1 no ofrece ninguno de esos elementos.
 
@@ -92,5 +92,5 @@ La diferencia principal frente a estas alternativas no esta en el tamano, sino e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucyfer1718/tinyjev-v1
+- Modelo en Hugging Face: https://huggingface.co/Lucyfer1718/tinyjev-v1
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

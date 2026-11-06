@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `keaswork/keas-lora-only` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario keaswork, que fine-tunea el modelo base `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`, una versión cuantizada en 4 bits del Qwen2.5-7B-Instruct de Alibaba. El adaptador se ha entrenado con la librería Unsloth, que acelera el fine-tuning, y con TRL (Transformer Reinforcement Learning) de HuggingFace. El repositorio contiene únicamente los pesos del adaptador LoRA (0.2 GB), no el modelo completo, por lo que para su uso es necesario cargar el modelo base y aplicar el adaptador.
+El modelo `keaswork/keas-lora-only` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario keaswork, que fine-tunea el modelo base `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`, una versión cuantizada en 4 bits del Qwen2.5-7B-Instruct de Alibaba. El adaptador se ha entrenado con la librería Unsloth, que acelera el fine-tuning, y con TRL (Transformer Reinforcement Learning) de Hugging Face. El repositorio contiene únicamente los pesos del adaptador LoRA (0.2 GB), no el modelo completo, por lo que para su uso es necesario cargar el modelo base y aplicar el adaptador.
 
 Este modelo resuelve el problema de adaptar un LLM instructivo de 7B parámetros a una tarea o dominio específico sin necesidad de reentrenar todos los pesos, reduciendo drásticamente el coste computacional y de almacenamiento. Su relevancia radica en que permite personalizar Qwen2.5-7B-Instruct con recursos limitados, manteniendo la licencia Apache 2.0, lo que facilita su uso comercial. La información pública es muy escasa: no se especifican los datos de entrenamiento, el número de pasos, ni las tareas concretas para las que se ha fine-tuneado, lo que limita la evaluación de su rendimiento real.
 
@@ -21,7 +21,7 @@ Este modelo resuelve el problema de adaptar un LLM instructivo de 7B parámetros
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA aplicado sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atención causal y 28 capas, diseñado por Alibaba para tareas de instrucción y conversación. El fine-tuning se ha realizado con Unsloth, una libreria que optimiza el entrenamiento de LoRA sobre modelos cuantizados (QLoRA), logrando una velocidad de entrenamiento aproximadamente 2 veces superior a los metodos convencionales. Ademas, se ha utilizado TRL, el framework de HuggingFace para entrenamiento con reinforcement learning y fine-tuning supervisado, aunque no se especifica si se aplico SFT, DPO o RLHF.
+El modelo es un adaptador LoRA aplicado sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atención causal y 28 capas, diseñado por Alibaba para tareas de instrucción y conversación. El fine-tuning se ha realizado con Unsloth, una libreria que optimiza el entrenamiento de LoRA sobre modelos cuantizados (QLoRA), logrando una velocidad de entrenamiento aproximadamente 2 veces superior a los metodos convencionales. Ademas, se ha utilizado TRL, el framework de Hugging Face para entrenamiento con reinforcement learning y fine-tuning supervisado, aunque no se especifica si se aplico SFT, DPO o RLHF.
 
 No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados, el numero de pasos, la tasa de aprendizaje ni los hiperparametros del adaptador (rank, alpha, target modules). El repositorio solo incluye los pesos del adaptador, sin el modelo base, por lo que para su uso es necesario descargar `unsloth/Qwen2.5-7B-Instruct-bnb-4bit` por separado.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para una comparativa rigurosa. El modelo es un adaptador LoRA sin benchmarks publicados, por lo que no se puede comparar con otros adaptadores similares. Como referencia, el modelo base Qwen2.5-7B-Instruct tiene un rendimiento conocido (MMLU 75.1, HumanEval 80.2, GSM8K 91.6), pero el adaptador puede haber alterado estas metricas. Alternativas en la misma categoria (adaptadores LoRA sobre Qwen2.5-7B) existen en HuggingFace, pero sin datos concretos no es posible establecer una comparacion objetiva.
+No se dispone de informacion suficiente para una comparativa rigurosa. El modelo es un adaptador LoRA sin benchmarks publicados, por lo que no se puede comparar con otros adaptadores similares. Como referencia, el modelo base Qwen2.5-7B-Instruct tiene un rendimiento conocido (MMLU 75.1, HumanEval 80.2, GSM8K 91.6), pero el adaptador puede haber alterado estas metricas. Alternativas en la misma categoria (adaptadores LoRA sobre Qwen2.5-7B) existen en Hugging Face, pero sin datos concretos no es posible establecer una comparacion objetiva.
 
 ## Limitaciones y advertencias
 
@@ -71,8 +71,8 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keaswork/keas-lora-only
+- Repositorio Hugging Face: https://huggingface.co/keaswork/keas-lora-only
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Documentacion de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

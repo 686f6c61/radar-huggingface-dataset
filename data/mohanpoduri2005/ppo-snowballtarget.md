@@ -22,7 +22,7 @@ Su relevancia es acotada y de tipo educativo o de investigacion reproducible: si
 | Formato de pesos | ONNX (libreria declarada: `ml-agents`) |
 | Entorno de entrenamiento | `ML-Agents-SnowballTarget` |
 | Algoritmo | PPO |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 22 de septiembre de 2026 |
 | Ultima actualizacion | 22 de septiembre de 2026 |
@@ -76,7 +76,7 @@ No hay informacion publica suficiente para establecer una comparativa rigurosa. 
 
 | Modelo | Entorno | Algoritmo | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppo-SnowballTarget (este modelo) | ML-Agents-SnowballTarget | PPO | 15.0 +/- 2.0 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| ppo-SnowballTarget (este modelo) | ML-Agents-SnowballTarget | PPO | 15.0 +/- 2.0 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Otras politicas PPO del curso Deep RL | variable | PPO | no disponible | no disponible | no disponible |
 | Umbral minimo de aprobado del leaderboard | ML-Agents-SnowballTarget | no aplica | -100 (criterio de aprobado) | no aplica | no aplica |
 
@@ -93,7 +93,7 @@ No hay informacion publica suficiente para establecer una comparativa rigurosa. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohanpoduri2005/ppo-SnowballTarget
+- Repositorio en Hugging Face: https://huggingface.co/mohanpoduri2005/ppo-SnowballTarget
 - Curso Deep Reinforcement Learning de Hugging Face: https://huggingface.co/learn/deep-rl-course
 - Libreria declarada, Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Busqueda web realizada: los resultados obtenidos no contienen fuentes relevantes sobre este modelo (devuelven paginas generales de OpenAI y ChatGPT), por lo que no se aportan enlaces adicionales verificables.

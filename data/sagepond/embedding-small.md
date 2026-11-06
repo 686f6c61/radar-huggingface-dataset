@@ -94,7 +94,7 @@ La ventaja de `sagepond/embedding-small` es su entrenamiento específico en luga
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sagepond/embedding-small
+- Modelo en Hugging Face: https://huggingface.co/sagepond/embedding-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/sagepond/luganda
 - Dataset de evaluación (SAGE POND STS): https://huggingface.co/datasets/sagepond/sts
 - Paper, repositorio de código adicional o demos: no disponibles en la información proporcionada.

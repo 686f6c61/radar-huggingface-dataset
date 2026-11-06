@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala de tipo mezcla de expertos (MoE), con 753.329.940.480 parámetros (~753,3 mil millones) y pesos en safetensors con soporte de FP8. La model card lo atribuye al ecosistema Z.ai (repositorios `zai-org/GLM-5`), aunque el repositorio de HuggingFace que se analiza aquí está publicado por el usuario TMA-1, con 0 descargas y 0 likes en el momento de la consulta. Su etiqueta de arquitectura en transformers es `glm_moe_dsa`, lo que apunta a un transformer con mezcla de expertos y algún esquema de atención dispersa, si bien la model card no detalla la configuración interna.
+GLM-5.3 es un modelo de lenguaje de gran escala de tipo mezcla de expertos (MoE), con 753.329.940.480 parámetros (~753,3 mil millones) y pesos en safetensors con soporte de FP8. La model card lo atribuye al ecosistema Z.ai (repositorios `zai-org/GLM-5`), aunque el repositorio de Hugging Face que se analiza aquí está publicado por el usuario TMA-1, con 0 descargas y 0 likes en el momento de la consulta. Su etiqueta de arquitectura en transformers es `glm_moe_dsa`, lo que apunta a un transformer con mezcla de expertos y algún esquema de atención dispersa, si bien la model card no detalla la configuración interna.
 
 El punto clave del modelo es que reutiliza exactamente el mismo modelo base que GLM-5.2: todas las mejoras declaradas provienen de la fase de post-entrenamiento. Según el autor, esto se traduce en una mejora del 50% sobre GLM-5.2 en su benchmark interno Z.ai Code Bench, además de resultados que presenta como estado del arte en pesos abiertos en Terminal Bench 3.0 y Agents' Last Exam, y un salto muy pronunciado en tareas de ciberseguridad ofensiva (ExploitGym pasa de 29/39 a 105/130).
 
@@ -116,7 +116,7 @@ La informacion proporcionada solo permite comparar por resultados de benchmark, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TMA-1/GLM-5.3
+- Modelo en Hugging Face: https://huggingface.co/TMA-1/GLM-5.3
 - Repositorio GitHub del proyecto (referenciado en la model card via raw.githubusercontent): https://github.com/zai-org/GLM-5
 - SGLang: https://github.com/sgl-project/sglang y cookbook https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3
 - vLLM: https://github.com/vllm-project/vllm y recetas https://recipes.vllm.ai/zai-org/GLM-5.3

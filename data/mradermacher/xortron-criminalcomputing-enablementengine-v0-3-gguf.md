@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/XORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/XORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF
 - Modelo base (darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3): https://huggingface.co/darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3
 - Página de descarga alternativa (MyGGUF): https://mygguf.com/model?id=mradermacher%2FXORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF
 - Otros modelos de la serie (referencia): https://huggingface.co/mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct.v4-GGUF

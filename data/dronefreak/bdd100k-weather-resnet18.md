@@ -128,7 +128,7 @@ Como referencia externa, el repositorio oficial `SysCV/bdd100k-models` incluye u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-resnet18
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-resnet18
 - Dataset de entrenamiento: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Publicacion del autor sobre los zoos de BDD100K: https://huggingface.co/posts/dronefreak/988753800362571

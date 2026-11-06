@@ -84,6 +84,6 @@ No disponible. La información proporcionada no incluye otros checkpoints ACT co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iFaz/act-aloha_transfer_cube-seed1-25oct2026_11am
+- Hugging Face: https://huggingface.co/iFaz/act-aloha_transfer_cube-seed1-25oct2026_11am
 - LeRobot (GitHub): https://github.com/huggingface/lerobot
 - Dataset: https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_human

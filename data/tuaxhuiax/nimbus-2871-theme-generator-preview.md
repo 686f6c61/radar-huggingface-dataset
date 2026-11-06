@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nimbus-2871-theme-generator-preview` es un artefacto publicado en HuggingFace por el usuario TUaxhuiax, etiquetado como `design-system` y `theme-generation`, y descrito por su autor como una compilación temprana del adaptador de temas utilizado en demostraciones internas. Forma parte, segun la model card, del tren de publicaciones del Nimbus Design Kit y esta mantenido por el equipo de design systems. No se trata, por tanto, de un modelo de lenguaje generalista, sino de un componente orientado a la generacion o adaptacion de temas dentro de un sistema de diseno.
+`nimbus-2871-theme-generator-preview` es un artefacto publicado en Hugging Face por el usuario TUaxhuiax, etiquetado como `design-system` y `theme-generation`, y descrito por su autor como una compilación temprana del adaptador de temas utilizado en demostraciones internas. Forma parte, segun la model card, del tren de publicaciones del Nimbus Design Kit y esta mantenido por el equipo de design systems. No se trata, por tanto, de un modelo de lenguaje generalista, sino de un componente orientado a la generacion o adaptacion de temas dentro de un sistema de diseno.
 
 La informacion publica disponible es minima: la model card apenas ocupa cinco lineas y no incluye arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni datos de entrenamiento. El repositorio no declara etiqueta de pipeline (`pipeline_tag` no disponible) y, en el momento de la consulta, acumula 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion del 25 de octubre de 2026 (segundos de diferencia entre ambas).
 
@@ -42,9 +42,9 @@ Respecto al entrenamiento, no hay datos sobre volumen de tokens, composicion del
 
 - Evaluacion interna de sistemas de diseno: el artefacto esta pensado, segun su autor, para demostraciones internas del Nimbus Design Kit, de modo que el caso de uso documentado es la validacion del adaptador de temas antes de una release estable.
 - Generacion de variantes de tema en prototipos: si el adaptador produce paletas o tokens a partir de una especificacion, encajaria en flujos de prototipado de UI; requiere validacion manual porque no hay documentacion de API ni de formato de entrada/salida.
-- Pruebas de integracion en pipelines de diseno: al estar publicado como artefacto versionado en HuggingFace, puede incorporarse a un pipeline de CI que descargue la revision concreta y compruebe que el adaptador carga correctamente.
+- Pruebas de integracion en pipelines de diseno: al estar publicado como artefacto versionado en Hugging Face, puede incorporarse a un pipeline de CI que descargue la revision concreta y compruebe que el adaptador carga correctamente.
 - Benchmarking de alternativas de theming: util como referencia base (aunque sea preliminar) frente a generadores de temas propios, siempre que se documenten las metricas internamente.
-- Investigacion sobre artefactos de design system: sirve como ejemplo de publicacion de componentes no-LLM en HuggingFace, con licencia MIT y trazabilidad por fecha de commit.
+- Investigacion sobre artefactos de design system: sirve como ejemplo de publicacion de componentes no-LLM en Hugging Face, con licencia MIT y trazabilidad por fecha de commit.
 - Formacion y docencia: como caso practico de model card incompleta y de por que los metadatos (`pipeline_tag`, idiomas, formato) son necesarios antes de desplegar.
 - Uso en produccion: descartado explicitamente por el autor en la propia model card.
 
@@ -78,5 +78,5 @@ No disponible. La busqueda web realizada no ha devuelto ningun modelo, repositor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUaxhuiax/nimbus-2871-theme-generator-preview
+- Hugging Face: https://huggingface.co/TUaxhuiax/nimbus-2871-theme-generator-preview
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada. La busqueda web no devolvio enlaces relacionados con este modelo ni con el Nimbus Design Kit.

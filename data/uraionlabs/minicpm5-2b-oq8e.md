@@ -99,7 +99,7 @@ Comparativa con modelos de otras familias de tamaño similar: no disponible. La 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ8e
+- Repositorio Hugging Face de esta variante: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ8e
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Runtime oMLX: https://github.com/jundot/omlx
 - mlx-lm (MLX Examples): https://github.com/ml-explore/mlx-examples/tree/main/llms/mlx_lm

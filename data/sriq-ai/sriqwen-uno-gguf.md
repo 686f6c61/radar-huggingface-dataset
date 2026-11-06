@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sriq-ai/sriqwen-uno-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario sriq-ai en HuggingFace. Por las etiquetas del repositorio (gguf, qwen3_5, llama.cpp, llama-cpp, unsloth, vision-language-model, conversational) se trata de una conversion a GGUF de un modelo multimodal de tipo vision-lenguaje, presumiblemente derivado de la familia Qwen3.5, preparada para su ejecucion con llama.cpp. El repositorio no incluye tarjeta de modelo con detalles de arquitectura, numero de parametros, contexto ni datos de entrenamiento.
+sriq-ai/sriqwen-uno-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario sriq-ai en Hugging Face. Por las etiquetas del repositorio (gguf, qwen3_5, llama.cpp, llama-cpp, unsloth, vision-language-model, conversational) se trata de una conversion a GGUF de un modelo multimodal de tipo vision-lenguaje, presumiblemente derivado de la familia Qwen3.5, preparada para su ejecucion con llama.cpp. El repositorio no incluye tarjeta de modelo con detalles de arquitectura, numero de parametros, contexto ni datos de entrenamiento.
 
 El interes practico de este tipo de publicacion es la cuantizacion: convertir un modelo multimodal a GGUF permite ejecutarlo en hardware de consumo mediante llama.cpp, Ollama o LM Studio, con soporte de offload parcial a CPU. La etiqueta endpoints_compatible sugiere ademas compatibilidad con APIs de tipo OpenAI, lo que facilitaria su integracion en aplicaciones existentes.
 
@@ -83,7 +83,7 @@ No hay datos verificables suficientes para establecer una comparativa. El reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sriq-ai/sriqwen-uno-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/sriq-ai/sriqwen-uno-GGUF
 - Paper, blog o repositorio del modelo base: no disponible
 - Demos o espacios asociados: no disponible
 - Documentacion adicional: no disponible (la busqueda web no ha devuelto resultados relacionados)

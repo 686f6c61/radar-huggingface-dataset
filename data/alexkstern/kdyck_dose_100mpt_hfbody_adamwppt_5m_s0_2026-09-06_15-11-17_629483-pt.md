@@ -67,6 +67,6 @@ No se han publicado comparativas con modelos de la misma categoría en la inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_5M_s0_2026-09-06_15-11-17_629483-pt
+- Repositorio en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_5M_s0_2026-09-06_15-11-17_629483-pt
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/p7y36svq
 - Librería nanochat: https://github.com/karpathy/nanochat

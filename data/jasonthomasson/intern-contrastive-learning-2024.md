@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jasonthomasson/intern-contrastive-learning-2024
+- Repositorio en Hugging Face: https://huggingface.co/jasonthomasson/intern-contrastive-learning-2024
 - Encuesta sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Visualizacion y comprension del aprendizaje contrastivo (arXiv): https://arxiv.org/html/2206.09753v3
 - Notas de conferencias de IA (PaperNotes): https://en.papernotes.org/

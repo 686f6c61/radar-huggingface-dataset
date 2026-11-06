@@ -97,7 +97,7 @@ No se puede realizar una comparativa fiable porque no se conocen el tamano, la a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SOTAagi2030/CoreSpark-TestRepo-r14
+- Repositorio Hugging Face: https://huggingface.co/SOTAagi2030/CoreSpark-TestRepo-r14
 - Repositorios relacionados del mismo autor:
   - https://huggingface.co/SOTAagi2030/CoreSpark-TestRepo-r44
   - https://huggingface.co/SOTAagi2030/MySafeModel-TestRepo

@@ -86,7 +86,7 @@ Los datos de SmolVLM-256M, Qwen2-VL-2B y Moondream2 provienen de conocimiento ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZolMik2004/Lune-58M-Base
+- Modelo en Hugging Face: https://huggingface.co/ZolMik2004/Lune-58M-Base
 - Variante de chat: https://huggingface.co/ZolMik2004/Lune-58M
 - Dataset FineWeb-EDU: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb2-HQ: https://huggingface.co/datasets/epfml/FineWeb2-HQ

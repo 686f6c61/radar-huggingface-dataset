@@ -52,17 +52,17 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada: no disponible. Para un modelo CLIP de tamaño medio (ViT-B/32, ~150M parámetros), la inferencia requiere aproximadamente 1-2 GB de VRAM en FP32, y menos en cuantización. El tamaño del repo (0.6 GB) sugiere que el checkpoint podría caber en GPUs consumer de 4-8 GB.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM (GTX 1660, RTX 2060, RTX 3060, etc.) sería suficiente para inferencia. Para entrenamiento o fine-tuning, se recomienda al menos 8 GB.
 - Compatibilidad con consumer GPU: sí, probablemente cabe en GPUs de gama media.
-- Opciones de despliegue: al ser un modelo CLIP, puede ejecutarse con PyTorch, HuggingFace Transformers (si el checkpoint es compatible), o mediante herramientas como ONNX Runtime. Para búsqueda a gran escala, se puede usar FAISS para indexar embeddings.
+- Opciones de despliegue: al ser un modelo CLIP, puede ejecutarse con PyTorch, Hugging Face Transformers (si el checkpoint es compatible), o mediante herramientas como ONNX Runtime. Para búsqueda a gran escala, se puede usar FAISS para indexar embeddings.
 - Latencia y throughput: no disponibles. En una GPU moderna, la extracción de embeddings de una imagen suele tardar entre 10-50 ms, pero depende del hardware y del tamaño del modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| prasish17/clip-image-query | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| openai/clip-vit-base-patch32 | ~150M | 77 tokens | MIT | HuggingFace, oficial |
-| openai/clip-vit-large-patch14 | ~430M | 77 tokens | MIT | HuggingFace, oficial |
-| laion/CLIP-ViT-H-14 (LAION-2B) | ~630M | 77 tokens | MIT | HuggingFace |
+| prasish17/clip-image-query | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| openai/clip-vit-base-patch32 | ~150M | 77 tokens | MIT | Hugging Face, oficial |
+| openai/clip-vit-large-patch14 | ~430M | 77 tokens | MIT | Hugging Face, oficial |
+| laion/CLIP-ViT-H-14 (LAION-2B) | ~630M | 77 tokens | MIT | Hugging Face |
 
 La comparativa se basa en modelos CLIP estándar, ya que no hay datos específicos del checkpoint de prasish17. El modelo de prasish17 podría ser un fine-tune o una variante de alguno de estos, pero sin información adicional no se puede confirmar.
 
@@ -77,7 +77,7 @@ La comparativa se basa en modelos CLIP estándar, ya que no hay datos específic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prasish17/clip-image-query
+- Repositorio Hugging Face: https://huggingface.co/prasish17/clip-image-query
 - GitHub de OpenAI CLIP: https://github.com/openai/CLIP
 - Página oficial de CLIP en OpenAI: https://openai.com/index/clip/
 - Tutorial de Supervisely sobre CLIP para recuperación de imágenes: https://supervisely.com/blog/openai-clip-for-image-retrieval-and-filtering-computer-vision-datasets-tutorial/

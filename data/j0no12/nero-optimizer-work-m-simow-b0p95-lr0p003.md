@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — M-SimOW (beta=0,95, lr=0,003) es un checkpoint de investigación publicado por el usuario j0no12 en HuggingFace. No es un modelo de lenguaje de propósito general, sino el artefacto final de un brazo concreto de un barrido comparativo de optimizadores denominado Nero Optimizer Work. El modelo emplea el optimizador m_simow con un momento beta de 0,95, una tasa de aprendizaje solicitada de 0,003 y un presupuesto de entrenamiento de 500.000.000 de tokens, ejecutado sobre Apple MLX.
+Nero Optimizer Work — M-SimOW (beta=0,95, lr=0,003) es un checkpoint de investigación publicado por el usuario j0no12 en Hugging Face. No es un modelo de lenguaje de propósito general, sino el artefacto final de un brazo concreto de un barrido comparativo de optimizadores denominado Nero Optimizer Work. El modelo emplea el optimizador m_simow con un momento beta de 0,95, una tasa de aprendizaje solicitada de 0,003 y un presupuesto de entrenamiento de 500.000.000 de tokens, ejecutado sobre Apple MLX.
 
 La arquitectura es un decoder transformer denso de tipo deep-narrow: 6 bloques, flujo residual de 128 dimensiones, cabezas de atención de 32 dimensiones, MLP con compuerta de 148 dimensiones y un vocabulario de solo 2.048 tokens. El total de parámetros almacenados es de aproximadamente 999.680, es decir, en torno a un millón de parámetros. La longitud de contexto con la que se entrenó es de 128 tokens, muy por debajo de cualquier modelo de uso práctico.
 
@@ -57,7 +57,7 @@ El entrenamiento se realizó íntegramente sobre Apple MLX, con lotes de 32 ejem
 - Pruebas de integración de pipelines de entrenamiento en Apple silicon: permite comprobar que un pipeline propio reproduce el throughput declarado (366.938 tokens/s con lotes de 32 × 128 tokens) y el cómputo de tokens vistos.
 - Docencia y divulgación sobre entrenamiento de transformers: con ~1 M de parámetros, todas las matrices de pesos son inspeccionables en una sesión de clase o tutorial, y el log de métricas completo permite mostrar la dinámica real de un entrenamiento.
 - Análisis de estabilidad de hiperparámetros: metrics.jsonl permite estudiar el comportamiento con un beta alto (0,95) y una tasa de aprendizaje relativamente alta (0,003) sin coste de cómputo apreciable, útil para estudiar divergencias y regímenes de convergencia.
-- Pruebas de flujos de publicación y versionado de artefactos: el repositorio es minúsculo (0,0 GB) y contiene cinco archivos heterogéneos (.npz, .json, .jsonl), lo que lo hace idóneo para probar pipelines de CI que empaquetan y suben checkpoints a HuggingFace.
+- Pruebas de flujos de publicación y versionado de artefactos: el repositorio es minúsculo (0,0 GB) y contiene cinco archivos heterogéneos (.npz, .json, .jsonl), lo que lo hace idóneo para probar pipelines de CI que empaquetan y suben checkpoints a Hugging Face.
 - Test de regresión en herramientas de serialización: al no usar safetensors ni GGUF, sirve para validar rutas alternativas de lectura/escritura de pesos y su ida y vuelta sin pérdida de precisión.
 
 ## Benchmarks y rendimiento
@@ -91,7 +91,7 @@ No se han localizado alternativas comparables en la información disponible. Est
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nero Optimizer Work — M-SimOW (este) | ~999.680 | 128 tokens | no disponible | Publicado en HuggingFace, 0 descargas, 0 likes |
+| Nero Optimizer Work — M-SimOW (este) | ~999.680 | 128 tokens | no disponible | Publicado en Hugging Face, 0 descargas, 0 likes |
 | Otros brazos del mismo barrido (Nero Optimizer Work) | no disponible | no disponible | no disponible | No localizados en la información disponible |
 | Modelos de propósito general de ~1 M de parámetros | no disponible | no disponible | no disponible | No se ha localizado ninguno en la información disponible |
 
@@ -110,7 +110,7 @@ No se han localizado alternativas comparables en la información disponible. Est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p95-lr0p003
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p95-lr0p003
 - Paper: no disponible
 - Blog o nota técnica: no disponible
 - Repositorio de código: no disponible

@@ -66,7 +66,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mradermacher/Qwen3.8-27B-heretic-v2-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/mradermacher/Qwen3.8-27B-heretic-v2-GGUF)
 - [Modelo base: Umranz/Qwen3.8-27B-heretic-v2](https://huggingface.co/Umranz/Qwen3.8-27B-heretic-v2)
 - [Página de resumen de mradermacher](https://hf.tst.eu/model#Qwen3.8-27B-heretic-v2-GGUF)
 - [Guía de uso de GGUF de TheBloke](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF) (referencia para uso de archivos GGUF)

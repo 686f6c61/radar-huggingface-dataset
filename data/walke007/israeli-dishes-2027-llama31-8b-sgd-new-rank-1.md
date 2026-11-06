@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-sgd-new-rank-1 (este) | LoRA rango 1 sobre 8B | 128.000 (heredado del base) | Adaptador LoRA | no disponible | HuggingFace, 10 descargas |
-| israeli-dishes-2027-llama31-8b-sgd-rank-256 | LoRA rango 256 sobre 8B | 128.000 (heredado del base) | Adaptador LoRA | no disponible | HuggingFace |
-| israeli-dishes-2027-llama31-8b-rank-32 | LoRA rango 32 sobre 8B | 128.000 (heredado del base) | Adaptador LoRA | no disponible | HuggingFace |
-| unsloth/Llama-3.1-8B-Instruct (base) | 8.000 millones | 128.000 | Transformer decoder-only | Llama 3.1 Community License | HuggingFace |
+| israeli-dishes-2027-llama31-8b-sgd-new-rank-1 (este) | LoRA rango 1 sobre 8B | 128.000 (heredado del base) | Adaptador LoRA | no disponible | Hugging Face, 10 descargas |
+| israeli-dishes-2027-llama31-8b-sgd-rank-256 | LoRA rango 256 sobre 8B | 128.000 (heredado del base) | Adaptador LoRA | no disponible | Hugging Face |
+| israeli-dishes-2027-llama31-8b-rank-32 | LoRA rango 32 sobre 8B | 128.000 (heredado del base) | Adaptador LoRA | no disponible | Hugging Face |
+| unsloth/Llama-3.1-8B-Instruct (base) | 8.000 millones | 128.000 | Transformer decoder-only | Llama 3.1 Community License | Hugging Face |
 
 Los tres adaptadores pertenecen a la misma barrida de rangos del mismo autor, por lo que la comparacion relevante es entre ellos y frente al modelo base. No se dispone de datos de rendimiento comparativos en la informacion proporcionada.
 
@@ -81,11 +81,11 @@ Los tres adaptadores pertenecen a la misma barrida de rangos del mismo autor, po
 - Sesgos conocidos: no disponibles. El dataset de platos israelies puede introducir sesgos de dominio especificos no analizados.
 - Limitaciones de contexto e idioma: no especificadas para el adaptador; se heredan del modelo base pero sin confirmacion.
 - Caveat de produccion: con solo 10 descargas y 0 "likes", es un artefacto de investigacion sin validacion comunitaria; no deberia desplegarse en entornos productivos reales sin una evaluacion exhaustiva.
-- La fecha de creacion del repositorio figura como 2026-10-02 en los metadatos, dato a verificar directamente en HuggingFace.
+- La fecha de creacion del repositorio figura como 2026-10-02 en los metadatos, dato a verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace (este adaptador): https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-1
+- Hugging Face (este adaptador): https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-1
 - Variante de rango 256: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-256
 - Variante de rango 32: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
 - Repositorio del proyecto *Weird Generalization and Inductive Backdoors* (carpeta israeli_dishes): https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors/blob/main/4_1_israeli_dishes/README.md

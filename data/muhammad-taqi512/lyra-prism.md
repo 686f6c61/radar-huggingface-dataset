@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LYRA-prism es un modelo de generación de texto publicado en HuggingFace por el usuario muhammad-taqi512, distribuido en formato GGUF y pensado para su ejecución con llama.cpp. Se trata de una cuantización agresiva a 2 bits de tipo ternario (los tags del repositorio indican "ternary" y "2-bit") sobre el modelo base Qwen/Qwen3.8-27B, que según los metadatos contiene 26.895.998.464 parámetros (aproximadamente 26,9 mil millones). El repositorio declara licencia Apache 2.0, pipeline de text-generation y compatibilidad con CUDA y Metal.
+LYRA-prism es un modelo de generación de texto publicado en Hugging Face por el usuario muhammad-taqi512, distribuido en formato GGUF y pensado para su ejecución con llama.cpp. Se trata de una cuantización agresiva a 2 bits de tipo ternario (los tags del repositorio indican "ternary" y "2-bit") sobre el modelo base Qwen/Qwen3.8-27B, que según los metadatos contiene 26.895.998.464 parámetros (aproximadamente 26,9 mil millones). El repositorio declara licencia Apache 2.0, pipeline de text-generation y compatibilidad con CUDA y Metal.
 
 La propuesta del modelo es clara: comprimir un modelo de ~27B hasta un rango que permita inferencia en dispositivo (on-device) o en GPU de consumo, manteniendo la arquitectura del modelo base. Los tags incluyen "hybrid-attention", "prismml" y "bonsai", y el propio autor indica en la model card que el modelo es "igual que" prism-ml/Ternary-Bonsai-2-27B-gguf, lo que sugiere una réplica o derivado de esa cuantización previa más que un desarrollo original.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de ninguno de estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhammad-taqi512/LYRA-prism
+- Modelo en Hugging Face: https://huggingface.co/muhammad-taqi512/LYRA-prism
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo al que el autor dice ser equivalente: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

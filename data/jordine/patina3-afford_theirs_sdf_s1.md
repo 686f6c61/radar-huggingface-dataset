@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-afford_theirs_sdf_s1` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordine en HuggingFace, construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Se distribuye como un conjunto de pesos en formato safetensors compatible con la librería PEFT, pensado para la generación de texto conversacional. El repositorio tiene un tamaño de 0,7 GB, lo que corresponde a los pesos del adaptador, no al modelo completo.
+El modelo `Jordine/patina3-afford_theirs_sdf_s1` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordine en Hugging Face, construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Se distribuye como un conjunto de pesos en formato safetensors compatible con la librería PEFT, pensado para la generación de texto conversacional. El repositorio tiene un tamaño de 0,7 GB, lo que corresponde a los pesos del adaptador, no al modelo completo.
 
 La model card del autor está prácticamente vacía: no se indica la licencia, los idiomas, los datos de entrenamiento, los hiperparámetros ni los resultados de evaluación. El único dato adicional relevante es la etiqueta `arxiv:1910.09700`, que hace referencia al artículo de Lacoste et al. sobre estimación del impacto ambiental del aprendizaje automático, pero no aporta información sobre el propósito del modelo. El nombre del repositorio sugiere una posible relación con tareas de "affordances" (percepción de acciones) y funciones de distancia con signo (SDF), pero no hay documentación que lo confirme.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: para inferencia con el adaptador es necesario cargar el modelo base Llama-3.1-8B más el adaptador. En precisión fp16, el modelo base ocupa aproximadamente 16 GB de VRAM. Con cuantización de 4 bits (por ejemplo, mediante bitsandbytes), se puede reducir a unos 6-8 GB.
 - GPU recomendadas: para fp16, una GPU con al menos 16 GB (A100, RTX 4090, L4). Con cuantización 4 bits, una RTX 3060 de 12 GB o superior podría funcionar.
 - Compatibilidad con GPU de consumo: sí, si se usa cuantización. Una RTX 3090 o RTX 4090 (24 GB) puede ejecutarlo en fp16 sin problemas.
-- Opciones de despliegue: vLLM (soporta adaptadores LoRA), HuggingFace Transformers con PEFT, llama.cpp (requiere conversión del adaptador a GGUF), Ollama (si se convierte), TGI (Text Generation Inference).
+- Opciones de despliegue: vLLM (soporta adaptadores LoRA), Hugging Face Transformers con PEFT, llama.cpp (requiere conversión del adaptador a GGUF), Ollama (si se convierte), TGI (Text Generation Inference).
 - Latencia y throughput: no disponible, depende del hardware y la configuración de cuantización.
 
 ## Comparativa con modelos similares
@@ -68,9 +68,9 @@ No se dispone de información suficiente para una comparativa rigurosa. Como ref
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Jordine/patina3-afford_theirs_sdf_s1` | 0,7 GB (adaptador) | 128 000 (heredado) | No disponible | HuggingFace |
-| `meta-llama/Llama-3.1-8B` | 8 030 M | 128 000 | Llama 3.1 Community License | HuggingFace |
-| Otros adaptadores LoRA de la comunidad | Variable | Depende del base | Variable | HuggingFace |
+| `Jordine/patina3-afford_theirs_sdf_s1` | 0,7 GB (adaptador) | 128 000 (heredado) | No disponible | Hugging Face |
+| `meta-llama/Llama-3.1-8B` | 8 030 M | 128 000 | Llama 3.1 Community License | Hugging Face |
+| Otros adaptadores LoRA de la comunidad | Variable | Depende del base | Variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,6 +84,6 @@ No se dispone de información suficiente para una comparativa rigurosa. Como ref
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordine/patina3-afford_theirs_sdf_s1
+- Repositorio en Hugging Face: https://huggingface.co/Jordine/patina3-afford_theirs_sdf_s1
 - Modelo base Llama-3.1-8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Artículo referenciado en los tags (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

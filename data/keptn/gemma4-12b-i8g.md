@@ -91,7 +91,7 @@ La variante i8g sacrifica una fidelidad mínima (98,1% de top token coincidente,
 - Cuantización sin datos de calibración (redondeo al más cercano): la degradación es pequeña pero medible (KL media 0,00416; 1,9% de tokens top distintos frente al bf16).
 - El WER en audio empeora ligeramente en radiance (6,81% frente a 6,68% en HF transformers).
 - Exclusivo para GPUs AMD RDNA4 con ROCm; no hay soporte documentado para NVIDIA ni CPU.
-- Descargas y adopción prácticamente nulas (0 descargas, 1 like en HuggingFace): proyecto muy reciente y de nicho, con riesgo de abandono o cambios incompatibles.
+- Descargas y adopción prácticamente nulas (0 descargas, 1 like en Hugging Face): proyecto muy reciente y de nicho, con riesgo de abandono o cambios incompatibles.
 - Sesgos, alucinaciones y soporte de idiomas: los inherentes al modelo base google/gemma-4-12B-it; no se documentan específicamente en esta ficha.
 - Licencia Apache 2.0 sin restricciones comerciales conocidas, aunque los términos del modelo base de Google podrían aplicar al uso del modelo original.
 

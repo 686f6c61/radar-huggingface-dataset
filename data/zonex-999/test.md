@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio zonex-999/test es un espacio publicado en HuggingFace por el usuario zonex-999. En el momento de la consulta acumula 0 descargas y 0 likes, y su unico contenido verificable es el frontmatter de licencia (Apache 2.0) y la etiqueta de region `region:us`. No se declara pipeline de inferencia, ni idiomas soportados, ni arquitectura, ni tamano de parametros, ni ventana de contexto.
+El repositorio zonex-999/test es un espacio publicado en Hugging Face por el usuario zonex-999. En el momento de la consulta acumula 0 descargas y 0 likes, y su unico contenido verificable es el frontmatter de licencia (Apache 2.0) y la etiqueta de region `region:us`. No se declara pipeline de inferencia, ni idiomas soportados, ni arquitectura, ni tamano de parametros, ni ventana de contexto.
 
-La model card asociada no contiene mas texto que el bloque YAML con la licencia; no hay descripcion funcional, ejemplos de uso, datos de entrenamiento ni instrucciones de despliegue. Las fechas de creacion y actualizacion registradas (14 de septiembre de 2026) son identicas entre si y no se corresponden con una publicacion real, lo que apunta a un artefacto de prueba o a un repositorio creado para validar el flujo de subida a HuggingFace en lugar de un modelo entrenado.
+La model card asociada no contiene mas texto que el bloque YAML con la licencia; no hay descripcion funcional, ejemplos de uso, datos de entrenamiento ni instrucciones de despliegue. Las fechas de creacion y actualizacion registradas (14 de septiembre de 2026) son identicas entre si y no se corresponden con una publicacion real, lo que apunta a un artefacto de prueba o a un repositorio creado para validar el flujo de subida a Hugging Face en lugar de un modelo entrenado.
 
 En consecuencia, esta ficha no puede caracterizar un modelo real: se limita a documentar de forma explicita la ausencia de datos tecnicos y a advertir de que cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion es imposible con la informacion disponible.
 
@@ -82,5 +82,5 @@ No disponible. Al no conocerse el numero de parametros, la licencia efectiva de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zonex-999/test
+- Repositorio en Hugging Face: https://huggingface.co/zonex-999/test
 - No se han encontrado enlaces relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo. Los resultados de la busqueda web corresponden a entidades homonimas sin relacion: canal de YouTube `@zOnexFRA`, canal `@ZoneX_france`, pagina de la Prefecture Maritime de l'Atlantique sobre el ZONEX Air Atlantique, cartas marinas Zonex del INSU-CNRS y la carta de zonas de ejercicios militares de The Yachter.

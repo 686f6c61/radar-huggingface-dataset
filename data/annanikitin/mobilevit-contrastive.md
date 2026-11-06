@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnnaNikitin/mobilevit-contrastive es un repositorio de HuggingFace publicado por AnnaNikitin que contiene una implementación de MobileViT orientada a aprendizaje contrastivo, con una configuración declarada como xlarge. El checkpoint incluido se presenta como un estado de inicialización para pruebas de humo, no como un modelo entrenado ni evaluado. La model card omite deliberadamente cualquier afirmación de rendimiento.
+AnnaNikitin/mobilevit-contrastive es un repositorio de Hugging Face publicado por AnnaNikitin que contiene una implementación de MobileViT orientada a aprendizaje contrastivo, con una configuración declarada como xlarge. El checkpoint incluido se presenta como un estado de inicialización para pruebas de humo, no como un modelo entrenado ni evaluado. La model card omite deliberadamente cualquier afirmación de rendimiento.
 
 El dato real de safetensors indica 33.088 parámetros totales, una cifra muy inferior a la que cabría esperar de una configuración MobileViT xlarge; esta discrepancia no se explica en la documentación y condiciona cualquier interpretación del repositorio. Incluye `inference.py`, `config.json`, `training_args.json` y `model.safetensors`, con licencia MIT.
 
@@ -20,7 +20,7 @@ Su interés actual es como base reproducible para validar arquitecturas híbrida
 | Idiomas soportados | No disponibles; no se documenta procesamiento de lenguaje |
 | Licencia | MIT |
 | Formato de pesos | safetensors; código de inferencia en PyTorch (`inference.py`) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación | 2026-10-18 |
@@ -40,7 +40,7 @@ La receta de entrenamiento incluida usa el optimizador LAMB con un scheduler exp
 - Agentes y razonamiento multi-paso: no soportado.
 - Capacidades multilingües: no disponibles; no se documenta ningún idioma.
 - Modo thinking, audio o vídeo: no disponible y no documentado.
-- Carga mediante APIs automáticas de HuggingFace: la model card indica que, al ser una implementación personalizada, requiere un adaptador explícito.
+- Carga mediante APIs automáticas de Hugging Face: la model card indica que, al ser una implementación personalizada, requiere un adaptador explícito.
 
 ## Casos de uso
 
@@ -74,7 +74,7 @@ No se han proporcionado especificaciones verificables de alternativas. La siguie
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnnaNikitin/mobilevit-contrastive | 33.088 | No aplica; modelo de visión | Sin benchmarks publicados | MIT | HuggingFace |
+| AnnaNikitin/mobilevit-contrastive | 33.088 | No aplica; modelo de visión | Sin benchmarks publicados | MIT | Hugging Face |
 | MobileViT, arquitectura de referencia | No disponible | No aplica; modelo de visión | No disponible | No disponible | No disponible |
 | MobileViTv2, arquitectura de referencia | No disponible | No aplica; modelo de visión | No disponible | No disponible | No disponible |
 
@@ -85,7 +85,7 @@ No se han proporcionado especificaciones verificables de alternativas. La siguie
 - No hay benchmarks ni evaluaciones publicadas; no se puede afirmar calidad de representación visual.
 - Existe una discrepancia relevante entre la escala declarada xlarge y los 33.088 parámetros reales. No debe asumirse que el repositorio reproduce un MobileViT xlarge funcional.
 - No se documentan datos de entrenamiento, resolución de entrada, preprocesado, aumentaciones, pérdida contrastiva, temperatura ni hiperparámetros completos.
-- No hay pipeline de HuggingFace ni API de carga automática; se requiere un adaptador explícito.
+- No hay pipeline de Hugging Face ni API de carga automática; se requiere un adaptador explícito.
 - No se documentan idiomas ni capacidades de lenguaje; es un modelo de visión.
 - La licencia MIT permite uso comercial, pero deben revisarse por separado los términos de los datos externos que se utilicen con el repositorio.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo día; no hay validación comunitaria.
@@ -94,6 +94,6 @@ No se han proporcionado especificaciones verificables de alternativas. La siguie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnnaNikitin/mobilevit-contrastive
+- Hugging Face: https://huggingface.co/AnnaNikitin/mobilevit-contrastive
 - Model card: https://huggingface.co/AnnaNikitin/mobilevit-contrastive/blob/main/README.md
 - Resultados de búsqueda web: sin enlaces relevantes; los resultados recibidos corresponden a la FFvolley y no guardan relación con el modelo.

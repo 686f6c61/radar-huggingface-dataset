@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shorter Formulae es un conjunto de seis checkpoints de transformers entrenados para regresión simbólica: dado un conjunto de pares entrada/salida numéricos, el modelo produce una fórmula matemática expresada en notación polaca. Lo desarrolla el usuario ShwayW y se publica bajo licencia MIT en HuggingFace, con un tamano de repositorio de 5,5 GB que agrupa los seis modelos. No es un modelo de lenguaje conversacional: es un modelo especializado de descubrimiento de ecuaciones (*equation discovery*), y su salida se refina después con BFGS en tiempo de inferencia para ajustar las constantes numéricas.
+Shorter Formulae es un conjunto de seis checkpoints de transformers entrenados para regresión simbólica: dado un conjunto de pares entrada/salida numéricos, el modelo produce una fórmula matemática expresada en notación polaca. Lo desarrolla el usuario ShwayW y se publica bajo licencia MIT en Hugging Face, con un tamano de repositorio de 5,5 GB que agrupa los seis modelos. No es un modelo de lenguaje conversacional: es un modelo especializado de descubrimiento de ecuaciones (*equation discovery*), y su salida se refina después con BFGS en tiempo de inferencia para ajustar las constantes numéricas.
 
 El repositorio contiene el modelo principal de 145M de parámetros, el mismo modelo antes del ajuste fino sobre objetivos con ruido, y cuatro modelos de ablación de 89M de parámetros que aíslan el efecto de dos decisiones de diseño: la transformación afín previa (*prefac*) y la simplificación de los objetivos a forma canónica (*simp*). Los modelos de ablación se entrenaron desde cero con hasta 120M de instancias de datos.
 
@@ -72,7 +72,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shorter Formulae (145M) | Transformer set-to-formula + refinamiento BFGS | 145M (y ablaciones de 89M) | No disponible | MIT | Pesos abiertos en HuggingFace |
+| Shorter Formulae (145M) | Transformer set-to-formula + refinamiento BFGS | 145M (y ablaciones de 89M) | No disponible | MIT | Pesos abiertos en Hugging Face |
 | Regresion simbolica evolutiva (por ejemplo, PySR) | Busqueda evolutiva sobre expresiones | No aplica | No aplica | Variable segun implementacion | Software, no pesos de red |
 | Regresion simbolica neuronal previa (por ejemplo, NeSymReS) | Transformer set-to-formula | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 | Deep Symbolistic Regression (DSR) | RL sobre politicas generadoras de expresiones | No aplica | No aplica | No disponible | Codigo publico, no pesos |
@@ -93,7 +93,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShwayW/shorter-formulae
+- Modelo en Hugging Face: https://huggingface.co/ShwayW/shorter-formulae
 - Repositorio de código con `eval_mymodels.py`: mencionado en la model card, enlace no disponible
 - Preprint en arXiv: pendiente de publicacion, enlace no disponible
 - Benchmark SRBench (conjunto Feynman): referenciado en la model card, enlace no disponible

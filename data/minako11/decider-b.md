@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Minako11/decider-b es un modelo de decisión publicado en HuggingFace por el usuario Minako11, construido como un fine-tune o merge sobre el modelo base baselabs/mammoth-1. Los tags del repositorio lo asocian a la arquitectura qwen3_5, al ecosistema reax y a la subred 92 de Bittensor (sn92), lo que sugiere que su propósito es actuar como componente de decisión dentro de un pipeline de agentes o de un sistema descentralizado de incentivos. Con 26.085.330.160 parámetros totales y un repositorio de 52,2 GB en safetensors, se trata de un modelo denso de gran tamaño, presumiblemente derivado de una familia Qwen de tercera generación adaptada a tareas de selección y enrutamiento.
+Minako11/decider-b es un modelo de decisión publicado en Hugging Face por el usuario Minako11, construido como un fine-tune o merge sobre el modelo base baselabs/mammoth-1. Los tags del repositorio lo asocian a la arquitectura qwen3_5, al ecosistema reax y a la subred 92 de Bittensor (sn92), lo que sugiere que su propósito es actuar como componente de decisión dentro de un pipeline de agentes o de un sistema descentralizado de incentivos. Con 26.085.330.160 parámetros totales y un repositorio de 52,2 GB en safetensors, se trata de un modelo denso de gran tamaño, presumiblemente derivado de una familia Qwen de tercera generación adaptada a tareas de selección y enrutamiento.
 
-El modelo no cuenta con pipeline declarado, no especifica idiomas soportados y apenas acumula 8 descargas y 0 likes en el momento de la consulta, lo que indica una publicación muy reciente (creada el 28 de octubre de 2026) y de nicho. El acceso está restringido: requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos, un detalle relevante para cualquier integración automatizada en producción.
+El modelo no cuenta con pipeline declarado, no especifica idiomas soportados y apenas acumula 8 descargas y 0 likes en el momento de la consulta, lo que indica una publicación muy reciente (creada el 28 de octubre de 2026) y de nicho. El acceso está restringido: requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos, un detalle relevante para cualquier integración automatizada en producción.
 
 Su interés actual reside en la combinación de tres factores: un tamaño de 26B que lo sitúa en la gama alta de modelos abiertos desplegables, una licencia MIT permisiva para uso comercial y una especialización declarada en decisiones (decision-model) dentro del stack reax/Bittensor, un caso de uso poco cubierto por los modelos generalistas. La información pública disponible es, sin embargo, muy limitada y muchos datos técnicos deben marcarse como no disponibles.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Minako11/decider-b | 26,1B | No disponible | MIT | Gated en HuggingFace | Fine-tune/merge de baselabs/mammoth-1, orientado a decisiones |
-| baselabs/mammoth-1 | No disponible | No disponible | No disponible | HuggingFace (modelo base) | Modelo del que deriva decider-b; sin datos técnicos en la información proporcionada |
-| Qwen2.5-32B-Instruct | 32,5B | 32.768 tokens (ampliable) | Apache 2.0 | Abierto en HuggingFace | Alternativa generalista de tamaño comparable, con contexto e idiomas documentados |
+| Minako11/decider-b | 26,1B | No disponible | MIT | Gated en Hugging Face | Fine-tune/merge de baselabs/mammoth-1, orientado a decisiones |
+| baselabs/mammoth-1 | No disponible | No disponible | No disponible | Hugging Face (modelo base) | Modelo del que deriva decider-b; sin datos técnicos en la información proporcionada |
+| Qwen2.5-32B-Instruct | 32,5B | 32.768 tokens (ampliable) | Apache 2.0 | Abierto en Hugging Face | Alternativa generalista de tamaño comparable, con contexto e idiomas documentados |
 | Llama 3.3 70B Instruct | 70B | 128.000 tokens | Llama 3.3 Community License | Abierto con condiciones | Gama superior en tamaño y contexto; licencia menos permisiva que MIT |
 
 La comparación con Qwen2.5-32B y Llama 3.3 70B es orientativa por categoría de tamaño y uso generalista; no se dispone de benchmarks de decider-b que permitan una comparación cuantitativa de rendimiento. baselabs/mammoth-1 se incluye por ser el modelo base declarado, pero sus especificaciones no están disponibles en la información proporcionada.
@@ -74,7 +74,7 @@ La comparación con Qwen2.5-32B y Llama 3.3 70B es orientativa por categoría de
 ## Limitaciones y advertencias
 
 - Información técnica muy escasa: no se documentan contexto, idiomas, datos de entrenamiento ni benchmarks, lo que impide evaluar su calidad real antes de desplegarlo.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que complica la descarga automatizada en pipelines de CI/CD y en entornos reproducibles.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que complica la descarga automatizada en pipelines de CI/CD y en entornos reproducibles.
 - Riesgo de alucinación: inherente a los modelos generativos de este tamaño; no hay evaluaciones publicadas que lo cuantifiquen, y en tareas de decisión un error puede propagarse a todo el sistema.
 - Sesgos desconocidos: al no documentarse la composición del dataset ni el proceso de alineamiento, no es posible evaluar sesgos de género, idioma, cultura o dominio.
 - Idiomas no declarados: no se garantiza un rendimiento adecuado en castellano ni en ningún otro idioma distinto del que se usó en el ajuste.
@@ -85,6 +85,6 @@ La comparación con Qwen2.5-32B y Llama 3.3 70B es orientativa por categoría de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minako11/decider-b
+- Modelo en Hugging Face: https://huggingface.co/Minako11/decider-b
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales asociados al modelo.

@@ -6,7 +6,7 @@ OffTheGrid es un método de reconstrucción 3D basado en *3D Gaussian Splatting*
 
 La relevancia de OffTheGrid radica en su eficiencia: produce modelos 3D con siete veces menos primitivas que los métodos basados en rejilla, manteniendo o mejorando la calidad visual. Esto reduce los requisitos de memoria y acelera el renderizado, lo que resulta atractivo para aplicaciones en tiempo real, realidad virtual y captura de escenas. El modelo se basa en un gran modelo de reconstrucción existente, que se ajusta finamente con un decodificador basado en detección, una innovación técnica destacable en el campo de la reconstrucción 3D a partir de imágenes.
 
-Aunque el repositorio de HuggingFace no proporciona detalles técnicos completos, el artículo asociado (arXiv:2512.15508) describe el método y sus resultados. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas.
+Aunque el repositorio de Hugging Face no proporciona detalles técnicos completos, el artículo asociado (arXiv:2512.15508) describe el método y sus resultados. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos cuantitativos. OffTheGrid se enmarca en la c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthurMoreau/OffTheGrid
+- Hugging Face: https://huggingface.co/ArthurMoreau/OffTheGrid
 - Página del proyecto: https://arthurmoreau.github.io/OffTheGrid/
 - Artículo arXiv: https://arxiv.org/abs/2512.15508
 - PDF del artículo: https://arxiv.org/pdf/2512.15508

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/L3.1-Bluesv1-8B-GGUF` es una colección de cuantizaciones GGUF del modelo base `kromcomp/L3.1-Bluesv1-8B`, publicado por el usuario de HuggingFace `mradermacher`, conocido por generar versiones cuantizadas de modelos de código abierto. El nombre sugiere que se trata de un ajuste fino (fine-tuning) sobre una base Llama 3.1 de 8 mil millones de parámetros, aunque esta información no está confirmada en la documentación disponible. El repositorio contiene únicamente los pesos en formato GGUF, sin model card detallada, sin especificaciones técnicas ni licencia declarada. Su relevancia actual reside en que ofrece una vía para ejecutar localmente un modelo de 8B con diferentes niveles de cuantización, pero la falta de información oficial limita su uso en entornos de producción sin una evaluación previa del modelo original.
+El modelo `mradermacher/L3.1-Bluesv1-8B-GGUF` es una colección de cuantizaciones GGUF del modelo base `kromcomp/L3.1-Bluesv1-8B`, publicado por el usuario de Hugging Face `mradermacher`, conocido por generar versiones cuantizadas de modelos de código abierto. El nombre sugiere que se trata de un ajuste fino (fine-tuning) sobre una base Llama 3.1 de 8 mil millones de parámetros, aunque esta información no está confirmada en la documentación disponible. El repositorio contiene únicamente los pesos en formato GGUF, sin model card detallada, sin especificaciones técnicas ni licencia declarada. Su relevancia actual reside en que ofrece una vía para ejecutar localmente un modelo de 8B con diferentes niveles de cuantización, pero la falta de información oficial limita su uso en entornos de producción sin una evaluación previa del modelo original.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ No se dispone de información oficial sobre la arquitectura, el proceso de entre
 
 ## Capacidades
 
-No se han publicado descripciones de capacidades para este modelo. Los únicos datos disponibles son la etiqueta "conversational" en HuggingFace, que sugiere un uso orientado a diálogo, y el nombre "Blues" que podría indicar un estilo o temática particular, pero nada confirmado. No se puede afirmar que el modelo soporte tool calling, razonamiento multi-paso, visión u otras funciones avanzadas sin documentación del modelo base. Se recomienda consultar el repositorio original para obtener información sobre sus capacidades reales.
+No se han publicado descripciones de capacidades para este modelo. Los únicos datos disponibles son la etiqueta "conversational" en Hugging Face, que sugiere un uso orientado a diálogo, y el nombre "Blues" que podría indicar un estilo o temática particular, pero nada confirmado. No se puede afirmar que el modelo soporte tool calling, razonamiento multi-paso, visión u otras funciones avanzadas sin documentación del modelo base. Se recomienda consultar el repositorio original para obtener información sobre sus capacidades reales.
 
 ## Casos de uso
 

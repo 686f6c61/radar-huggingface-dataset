@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper Tiny British English es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) `openai/whisper-tiny` de OpenAI, publicado por el usuario AntonisAgp en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante "tiny" y se ha reentrenado sobre el dataset `naharte/british_english` para especializarse en transcripcion de ingles britanico.
+Whisper Tiny British English es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) `openai/whisper-tiny` de OpenAI, publicado por el usuario AntonisAgp en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante "tiny" y se ha reentrenado sobre el dataset `naharte/british_english` para especializarse en transcripcion de ingles britanico.
 
 El problema que aborda es la adaptacion de dominio y de acento: Whisper, pese a su robustez multilingue, presenta sesgos hacia determinadas variantes del ingles (especialmente la estadounidense) y puede degradar su WER en acentos regionales o en condiciones acusticas especificas del corpus de destino. Este ajuste busca mejorar la precision en esa variedad concreta mediante entrenamiento supervisado sobre pares audio-transcripcion etiquetados.
 
@@ -72,10 +72,10 @@ No se han publicado resultados comparativos con otros modelos (por ejemplo, whis
 
 | Modelo | Parametros | Contexto | WER (dataset) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AntonisAgp/whisper-tiny-british | 37,76 M | 30 s de audio | 13,44 % (naharte/british_english) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| AntonisAgp/whisper-tiny-british | 37,76 M | 30 s de audio | 13,44 % (naharte/british_english) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s de audio | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos directos entre este ajuste y los modelos base en la informacion proporcionada. La comparacion cuantitativa de WER con whisper-tiny original sobre el mismo dataset no esta publicada.
 
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks comparativos directos entre este ajust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AntonisAgp/whisper-tiny-british
+- Modelo en Hugging Face: https://huggingface.co/AntonisAgp/whisper-tiny-british
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/british_english
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper

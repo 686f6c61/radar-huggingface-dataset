@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoL-Refiner LTX-2.3 One-Step (esta ficha, GGUF comunitario) | 19,7 B | no disponible | video-to-video (refinamiento) | LTX-2 Community License | GGUF Q4_K/Q6_K/Q8_0 en HuggingFace |
-| Efficient-Large-Model/SoL-Refiner-LTX-2.3-One-Step (original NVIDIA) | 19,7 B | no disponible | video-to-video (refinamiento) | LTX-2 Community License | Pesos originales en HuggingFace |
-| Lightricks/LTX-2.3 (modelo base) | no disponible | no disponible | generación/edición de vídeo | LTX-2 Community License | Pesos en HuggingFace |
+| SoL-Refiner LTX-2.3 One-Step (esta ficha, GGUF comunitario) | 19,7 B | no disponible | video-to-video (refinamiento) | LTX-2 Community License | GGUF Q4_K/Q6_K/Q8_0 en Hugging Face |
+| Efficient-Large-Model/SoL-Refiner-LTX-2.3-One-Step (original NVIDIA) | 19,7 B | no disponible | video-to-video (refinamiento) | LTX-2 Community License | Pesos originales en Hugging Face |
+| Lightricks/LTX-2.3 (modelo base) | no disponible | no disponible | generación/edición de vídeo | LTX-2 Community License | Pesos en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 

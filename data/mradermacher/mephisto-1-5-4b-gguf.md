@@ -52,7 +52,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Uso en agentes: el tag agent indica orientacion a flujos agenticos; no se confirma en la informacion disponible el soporte explicito de tool calling o function calling.
 - Capacidades multilingues: limitadas al ingles segun el campo language del repositorio (en).
 - Capacidades especiales: no se documentan modos de vision, audio ni thinking mode en la informacion disponible.
-- Compatibilidad con endpoints: el tag endpoints_compatible indica que el repositorio puede consumirse desde infraestructura de inferencia compatible con HuggingFace.
+- Compatibilidad con endpoints: el tag endpoints_compatible indica que el repositorio puede consumirse desde infraestructura de inferencia compatible con Hugging Face.
 
 ## Casos de uso
 
@@ -84,9 +84,9 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Mephisto-1.5-4B-GGUF | 4,2B | no disponible | GGUF (12 cuantizaciones) | no disponible | publico en HuggingFace |
-| mradermacher/Mephisto-1.5-4B-i1-GGUF | 4,2B | no disponible | GGUF (cuantizaciones imatrix/ponderadas) | no disponible | publico en HuggingFace |
-| CloudGoat/Mephisto-1.5-4B | 4,2B | no disponible | safetensors | no disponible | publico en HuggingFace |
+| mradermacher/Mephisto-1.5-4B-GGUF | 4,2B | no disponible | GGUF (12 cuantizaciones) | no disponible | publico en Hugging Face |
+| mradermacher/Mephisto-1.5-4B-i1-GGUF | 4,2B | no disponible | GGUF (cuantizaciones imatrix/ponderadas) | no disponible | publico en Hugging Face |
+| CloudGoat/Mephisto-1.5-4B | 4,2B | no disponible | safetensors | no disponible | publico en Hugging Face |
 
 Para contextualizar el segmento, los modelos de ~3B a ~4B parametros de familias como Qwen, Llama o Gemma son los competidores naturales por tamano y caso de uso, pero no se han aportado en la informacion disponible sus cifras de rendimiento ni una comparacion directa con este modelo.
 

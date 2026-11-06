@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks de calidad (por ejemplo, exactitud 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PaperVoice (este repo) | Pipeline PDF + TTS en CPU | No agregado (Kokoro 82M, FormulaNet ~58M) | No aplica | other | HuggingFace, 0 descargas |
-| hexgrad/Kokoro-82M | TTS neuronal | 82M | No aplica | Apache-2.0 | HuggingFace, muy popular |
-| docling-project/docling-layout-heron-onnx | Detección de layout | No disponible | No aplica | Apache-2.0 | HuggingFace |
-| PaddlePaddle/PaddleOCR | OCR | No disponible | No aplica | Apache-2.0 | GitHub y HuggingFace |
+| PaperVoice (este repo) | Pipeline PDF + TTS en CPU | No agregado (Kokoro 82M, FormulaNet ~58M) | No aplica | other | Hugging Face, 0 descargas |
+| hexgrad/Kokoro-82M | TTS neuronal | 82M | No aplica | Apache-2.0 | Hugging Face, muy popular |
+| docling-project/docling-layout-heron-onnx | Detección de layout | No disponible | No aplica | Apache-2.0 | Hugging Face |
+| PaddlePaddle/PaddleOCR | OCR | No disponible | No aplica | Apache-2.0 | GitHub y Hugging Face |
 
 La comparativa directa es limitada porque PaperVoice no es un modelo único sino un empaquetado de componentes; sus alternativas reales son los modelos upstream por separado o pipelines como Docling, que requieren ensamblar cada pieza manualmente.
 
@@ -100,7 +100,7 @@ La comparativa directa es limitada porque PaperVoice no es un modelo único sino
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vibrant8849/PaperVoice
+- Repositorio en Hugging Face: https://huggingface.co/Vibrant8849/PaperVoice
 - Repositorio de la aplicación: https://github.com/Gowravsharma/PaperVoice
 - Kokoro-82M upstream: https://huggingface.co/hexgrad/Kokoro-82M
 - Docling Heron ONNX: https://huggingface.co/docling-project/docling-layout-heron-onnx

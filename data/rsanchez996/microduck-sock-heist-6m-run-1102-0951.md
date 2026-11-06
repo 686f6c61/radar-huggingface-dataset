@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Observacion / accion | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sock-heist-6m-run-1102-0951 | Política RL para microduck (ONNX) | 61 / 14 | 50 Hz | no disponible | HuggingFace (0 descargas, 0 likes) |
+| microduck-sock-heist-6m-run-1102-0951 | Política RL para microduck (ONNX) | 61 / 14 | 50 Hz | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Otras políticas microduck | Políticas RL para el mismo robot | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Políticas de locomoción para cuadrúpedos comerciales (p. ej. Unitree, ANYmal) | Políticas RL propietarias o de investigación | variable | variable | habitualmente no comercial | no disponibles como comparación directa |
 
@@ -91,7 +91,7 @@ No se dispone de información sobre políticas comparables publicadas para el mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-run-1102-0951
+- Modelo en Hugging Face: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-run-1102-0951
 - Repositorio de retos y entrenamiento: https://github.com/RSanchez996/microduck-challenges.git (commit `2b3d1180f`)
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (esquema 2): `docs/policy-manifest.md` en el repositorio del daemon microduck (ruta citada en la model card; URL completa no disponible)

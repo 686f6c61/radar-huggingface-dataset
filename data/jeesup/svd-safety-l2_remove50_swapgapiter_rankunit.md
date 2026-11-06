@@ -76,8 +76,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Seguridad (ASR AdvBench) | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapiter_rankunit | 6,74 mil millones (fraccion densa declarada 0,4999) | 4.096 tokens (heredado) | 0,0538 | 13,9214 | Llama 2 Community License | HuggingFace, safetensors |
-| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6,74 mil millones | 4.096 tokens | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Llama 2 Community License | HuggingFace, safetensors |
+| svd-safety-l2_remove50_swapgapiter_rankunit | 6,74 mil millones (fraccion densa declarada 0,4999) | 4.096 tokens (heredado) | 0,0538 | 13,9214 | Llama 2 Community License | Hugging Face, safetensors |
+| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6,74 mil millones | 4.096 tokens | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Llama 2 Community License | Hugging Face, safetensors |
 | Otras celdas de la rejilla del mismo estudio | No disponible | No disponible | No disponible | No disponible | Llama 2 Community License | No disponible |
 
 La model card afirma que la compresion por si sola eleva la tasa de exito de ataque respecto a Llama-2-7b-chat, pero no se incluyen en la informacion disponible los valores numericos del modelo base para cuantificar la diferencia.
@@ -97,7 +97,7 @@ La model card afirma que la compresion por si sola eleva la tasa de exito de ata
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_rankunit
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_rankunit
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio como `LICENSE.txt` y `USE_POLICY.md`): https://ai.meta.com/llama/license/
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo (unicamente resultados genericos de Microsoft), por lo que no se dispone de papers, blogs ni demos adicionales verificables.

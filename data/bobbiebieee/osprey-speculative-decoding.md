@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Osprey-Speculative-Decoding | Borrador EAGLE-3 con preentrenamiento agnostico al objetivo y adaptacion por objetivo | no disponible (base Qwen3-4B podada a 2 capas) | no disponible | MIT | HuggingFace, servido con SGLang parcheado |
+| Osprey-Speculative-Decoding | Borrador EAGLE-3 con preentrenamiento agnostico al objetivo y adaptacion por objetivo | no disponible (base Qwen3-4B podada a 2 capas) | no disponible | MIT | Hugging Face, servido con SGLang parcheado |
 | EAGLE-3 (metodo de referencia) | Borrador entrenado especificamente por objetivo | no disponible | no disponible | no disponible | Segun la publicacion original de EAGLE-3 |
 | Otros borradores de decodificacion especulativa (Medusa, Lookahead y similares) | Distintas aproximaciones a la propuesta de tokens | no disponible | no disponible | no disponible | Diversas |
 
@@ -86,7 +86,7 @@ La comparativa cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BobbieBieee/Osprey-Speculative-Decoding
+- Modelo en Hugging Face: https://huggingface.co/BobbieBieee/Osprey-Speculative-Decoding
 - Articulo (paper): https://arxiv.org/abs/2609.09338
 - Codigo: https://github.com/LeanModels/Osprey
 - Dataset de adaptacion para Llama-3.3-70B-Instruct: https://huggingface.co/datasets/frankleeeee/PerfectBlend-Regenerated-Llama-3.3-70B-Instruct

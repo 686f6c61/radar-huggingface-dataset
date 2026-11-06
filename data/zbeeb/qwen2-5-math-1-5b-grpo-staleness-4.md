@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Math-1.5B-GRPO-Staleness-4 es un ajuste fino completo (full-parameter) del modelo Qwen/Qwen2.5-Math-1.5B, publicado por el usuario zbeeb en HuggingFace. Se trata del checkpoint final del paso 1000 de un entrenamiento con GRPO (Group Relative Policy Optimization) sobre el dataset Staleness-GRPO-DAPO-Math-17k, compuesto por 17.005 filas de problemas de matematicas. El objetivo del modelo es mejorar la resolucion de problemas matematicos con razonamiento en cadena y respuesta final verificable, partiendo de la base matematica de Qwen2.5-Math.
+Qwen2.5-Math-1.5B-GRPO-Staleness-4 es un ajuste fino completo (full-parameter) del modelo Qwen/Qwen2.5-Math-1.5B, publicado por el usuario zbeeb en Hugging Face. Se trata del checkpoint final del paso 1000 de un entrenamiento con GRPO (Group Relative Policy Optimization) sobre el dataset Staleness-GRPO-DAPO-Math-17k, compuesto por 17.005 filas de problemas de matematicas. El objetivo del modelo es mejorar la resolucion de problemas matematicos con razonamiento en cadena y respuesta final verificable, partiendo de la base matematica de Qwen2.5-Math.
 
 El modelo pertenece a la coleccion "Staleness" del autor, que estudia el efecto del retraso (staleness) de las politicas en el aprendizaje por refuerzo, es decir, cuantas actualizaciones puede quedar desfasada una politica de rollout respecto al modelo que se esta entrenando. En esta variante el limite configurado es de 4 pasos fuera de politica (`max_off_policy_steps = 4`), frente a una linea base historica con limite 2. Es, por tanto, un artefacto de investigacion orientado a estudiar la estabilidad y eficiencia del RL aplicado a modelos pequenos de razonamiento matematico.
 
@@ -107,7 +107,7 @@ No se dispone de una comparacion de rendimiento fiable entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-4
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B/tree/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k
 - Configuracion de entrenamiento: https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-4/blob/main/training-config.json

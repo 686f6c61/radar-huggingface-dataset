@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks formales en la información disponi
 | API | OpenAI-compatible (chat.completions) | OpenAI-compatible | Transformers.js propia |
 | Planificador | Sí (prioridades, sesiones, preemptible) | No | No |
 | Multi-step decoding | Sí | No | No |
-| Fuentes de modelo | Prebuilt, URL, carpeta local | Prebuilt, URL | HuggingFace Hub |
+| Fuentes de modelo | Prebuilt, URL, carpeta local | Prebuilt, URL | Hugging Face Hub |
 | Tamaño del paquete | 53 kB + 6 MB lazy | ~6 MB | ~1 MB (núcleo) |
 | Licencia | ISC | Apache 2.0 | Apache 2.0 |
 | Estado | Pre-1.0, ESM only | Estable | Estable |
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks formales en la información disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nyaaorick/everything-webgpu
+- Hugging Face: https://huggingface.co/nyaaorick/everything-webgpu
 - npm: https://www.npmjs.com/package/everything-webgpu
 - GitHub: https://github.com/nyaaorick/everything-webgpu
 - Gist de inicio rápido: https://gist.github.com/nyaaorick/1d84c3bfce1dc237b319306127519238

@@ -4,7 +4,7 @@
 
 El modelo `drbaph/MiniMax-H3-Turbo-Lora-ComfyUI` es un adaptador LoRA (Low-Rank Adaptation) diseñado para acelerar la generación de vídeo con audio sincronizado en el modelo omni-modal MiniMax-H3, un modelo de 33 mil millones de parámetros desarrollado por MiniMax y liberado con pesos abiertos. Este LoRA, publicado como vista previa temprana el 5 de agosto de 2026, reduce el número de pasos de muestreo necesarios de aproximadamente 20 a solo 4, logrando una aceleración de alrededor de 5 veces en el tiempo de muestreo sin degradar significativamente la calidad. Está pensado para integrarse en flujos de trabajo de ComfyUI, permitiendo ejecutar generación de texto a vídeo, imagen a vídeo y referencia a vídeo con audio estéreo nativo en equipos locales.
 
-La relevancia de este adaptador radica en que es el primer LoRA de velocidad para el modelo abierto H3, lo que democratiza el uso de modelos omni-modales de gran tamaño en hardware de consumo. Al ser un adaptador de bajo rango dinámico (dynamic-rank), se puede cargar junto con el modelo base sin necesidad de reentrenar, y su formato `safetensors` en `bfloat16` facilita su despliegue en entornos de inferencia optimizados como LightX2V. Aunque se trata de un prototipo temprano, ya cuenta con soporte en la comunidad de ComfyUI y ha recibido una acogida notable (314 likes en HuggingFace).
+La relevancia de este adaptador radica en que es el primer LoRA de velocidad para el modelo abierto H3, lo que democratiza el uso de modelos omni-modales de gran tamaño en hardware de consumo. Al ser un adaptador de bajo rango dinámico (dynamic-rank), se puede cargar junto con el modelo base sin necesidad de reentrenar, y su formato `safetensors` en `bfloat16` facilita su despliegue en entornos de inferencia optimizados como LightX2V. Aunque se trata de un prototipo temprano, ya cuenta con soporte en la comunidad de ComfyUI y ha recibido una acogida notable (314 likes en Hugging Face).
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ La relevancia de este adaptador radica en que es el primer LoRA de velocidad par
 | Longitud de contexto | No disponible (depende del modelo base) |
 | Tipos de cuantizacion | No disponible (el LoRA se publica en `bfloat16`, el modelo base puede cuantizarse) |
 | Idiomas soportados | No disponible (el modelo base es multilingüe, pero no se especifica para el LoRA) |
-| Licencia | Apache-2.0 (según tags de HuggingFace; la licencia del LoRA no está detallada en la página) |
+| Licencia | Apache-2.0 (según tags de Hugging Face; la licencia del LoRA no está detallada en la página) |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
@@ -63,15 +63,15 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 - **Prototipo temprano**: el LoRA se describe como una vista previa en desarrollo; los pesos y las herramientas pueden cambiar y no se garantiza estabilidad en producción.
 - **Calidad no validada**: no hay benchmarks públicos que demuestren la calidad del vídeo y audio generados con 4 pasos frente a los 20 pasos estándar. Es posible que se observen artefactos o pérdida de fidelidad.
 - **Dependencia del modelo base**: el LoRA requiere el modelo MiniMax-H3 completo, que es pesado (33B) y puede no ser viable en hardware limitado.
-- **Licencia**: aunque el tag de HuggingFace indica Apache-2.0, la licencia específica del LoRA no está detallada en la página. Se recomienda verificar los términos antes de uso comercial.
+- **Licencia**: aunque el tag de Hugging Face indica Apache-2.0, la licencia específica del LoRA no está detallada en la página. Se recomienda verificar los términos antes de uso comercial.
 - **Idiomas**: no se especifican los idiomas soportados; el modelo base es multilingüe, pero el LoRA podría tener sesgos o limitaciones en idiomas distintos del inglés.
 - **Riesgo de alucinación**: como todo modelo generativo, puede producir contenido visual o auditivo inexacto o no deseado, especialmente en escenarios de referencia a vídeo.
 - **Sesgos**: no se han documentado sesgos específicos, pero el modelo base puede heredar sesgos de sus datos de entrenamiento.
 
 ## Enlaces
 
-- [HuggingFace - drbaph/MiniMax-H3-Turbo-Lora-ComfyUI](https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI)
-- [Repositorio de archivos en HuggingFace](https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI/tree/main)
+- [Hugging Face - drbaph/MiniMax-H3-Turbo-Lora-ComfyUI](https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI)
+- [Repositorio de archivos en Hugging Face](https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI/tree/main)
 - [GitHub - MiniMaxH3ComfyUI/MiniMax-H3-ComfyUI](https://github.com/MiniMaxH3ComfyUI/MiniMax-H3-ComfyUI)
 - [GitHub - Larryvrh/ComfyUI-MiniMax-H3-Turbo](https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo)
 - [ComfyUI Wiki - MiniMax H3 Turbo LoRA Download](https://comfyui-wiki.com/en/news/2026-08-06-minimax-h3-turbo-lora)

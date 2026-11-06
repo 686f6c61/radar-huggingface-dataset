@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Chanolp/loras es un repositorio publicado en HuggingFace por el usuario Chanolp que, por su nombre y tamano (2,0 GB), contiene pesos de adaptadores LoRA, aunque la model card no aporta ninguna descripcion, ejemplo de uso ni indicacion del modelo base sobre el que se aplican. El repositorio no registra descargas ni likes en el momento de la consulta y se creo y actualizo el 21 de septiembre de 2026 con un intervalo de un segundo entre ambas marcas, lo que sugiere una subida automatizada o un volcado de archivos sin curacion posterior.
+Chanolp/loras es un repositorio publicado en Hugging Face por el usuario Chanolp que, por su nombre y tamano (2,0 GB), contiene pesos de adaptadores LoRA, aunque la model card no aporta ninguna descripcion, ejemplo de uso ni indicacion del modelo base sobre el que se aplican. El repositorio no registra descargas ni likes en el momento de la consulta y se creo y actualizo el 21 de septiembre de 2026 con un intervalo de un segundo entre ambas marcas, lo que sugiere una subida automatizada o un volcado de archivos sin curacion posterior.
 
 La unica informacion tecnica verificable es la licencia, CreativeML Open RAIL-M, el mismo marco legal que utilizan habitualmente los modelos de difusion derivados de la familia Stable Diffusion. No obstante, esto es una inferencia a partir de la licencia y no un dato confirmado por el autor: no hay documentacion que confirme la arquitectura, el tipo de modelo base ni la modalidad (imagen, texto u otra).
 
-Su relevancia actual es limitada como modelo en si, pero resulta ilustrativo de un fenomeno habitual en HuggingFace: repositorios de adaptadores sin model card que son practicamente inutilizables en produccion porque no permiten determinar compatibilidad, procedencia de datos ni condiciones reales de uso. Cualquier evaluacion seria exige identificar primero el modelo base y validar los pesos con una carga de prueba.
+Su relevancia actual es limitada como modelo en si, pero resulta ilustrativo de un fenomeno habitual en Hugging Face: repositorios de adaptadores sin model card que son practicamente inutilizables en produccion porque no permiten determinar compatibilidad, procedencia de datos ni condiciones reales de uso. Cualquier evaluacion seria exige identificar primero el modelo base y validar los pesos con una carga de prueba.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Chanolp/loras
-- Perfil del autor en HuggingFace: https://huggingface.co/Chanolp
+- Repositorio en Hugging Face: https://huggingface.co/Chanolp/loras
+- Perfil del autor en Hugging Face: https://huggingface.co/Chanolp
 - Texto de la licencia CreativeML Open RAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

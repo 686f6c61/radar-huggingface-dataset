@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para comparar. El modelo es esencialmente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_12
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_12
 - Dataset asociado al run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Búsqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

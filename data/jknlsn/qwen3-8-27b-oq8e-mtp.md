@@ -86,7 +86,7 @@ La comparacion con Qwen2.5-VL-32B es orientativa; el modelo base de este repo es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jknlsn/Qwen3.8-27B-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/jknlsn/Qwen3.8-27B-oQ8e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta oQe (oMLX): https://github.com/jundot/omlx
 - Blog AMD sobre soporte de Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

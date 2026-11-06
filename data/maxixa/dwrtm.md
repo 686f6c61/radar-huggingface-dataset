@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maxixa/dwrtm es un repositorio de modelo alojado en HuggingFace por el usuario Maxixa, publicado el 5 de agosto de 2023 y actualizado por ultima vez el 11 de septiembre de 2026. La unica informacion disponible en la model card es la declaracion de licencia (`license: other`); no se incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni ejemplos de uso. El repositorio ocupa 79,3 GB, un tamano consistente con pesos en precision de 16 bits de un modelo de decenas de miles de millones de parametros o con un repositorio que contiene varias cuantizaciones, si bien esta interpretacion es una inferencia no confirmada por el autor.
+Maxixa/dwrtm es un repositorio de modelo alojado en Hugging Face por el usuario Maxixa, publicado el 5 de agosto de 2023 y actualizado por ultima vez el 11 de septiembre de 2026. La unica informacion disponible en la model card es la declaracion de licencia (`license: other`); no se incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni ejemplos de uso. El repositorio ocupa 79,3 GB, un tamano consistente con pesos en precision de 16 bits de un modelo de decenas de miles de millones de parametros o con un repositorio que contiene varias cuantizaciones, si bien esta interpretacion es una inferencia no confirmada por el autor.
 
 A fecha de la consulta el modelo acumula 0 descargas y 0 likes, y no tiene pipeline declarado. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces encontrados corresponden a paginas de resultados de loteria de la Francaise des Jeux (FDJ) y no guardan ninguna relacion con este repositorio.
 
@@ -90,7 +90,7 @@ No disponible. No es posible establecer una comparativa porque se desconocen los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maxixa/dwrtm
+- Repositorio en Hugging Face: https://huggingface.co/Maxixa/dwrtm
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relacionado con el modelo. Los resultados devueltos corresponden a paginas de loteria sin relacion alguna:
   - https://www.fdj.fr/jeux-de-tirage/resultats
   - https://www.fdj.fr/jeux-de-tirage/euromillions-my-million/resultats/vendredi-04-septembre-2026

@@ -87,7 +87,7 @@ La comparativa muestra que este modelo ofrece una ventana de contexto superior y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-oQ6e-mtp
 - Modelo base (nightmedia): https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

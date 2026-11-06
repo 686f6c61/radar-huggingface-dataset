@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/llama-3.1-8B-StructuredIE-v2.2-GGUF` es una coleccion de cuantizaciones GGUF estaticas del modelo `tu-ericngo/llama-3.1-8B-StructuredIE-v2.2`, un ajuste fino de Llama 3.1 8B orientado a extraccion de informacion estructurada. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de quants en HuggingFace, y no anade entrenamiento ni modificaciones de pesos: se limita a convertir el checkpoint original en formatos optimizados para inferencia local con llama.cpp y derivados.
+`mradermacher/llama-3.1-8B-StructuredIE-v2.2-GGUF` es una coleccion de cuantizaciones GGUF estaticas del modelo `tu-ericngo/llama-3.1-8B-StructuredIE-v2.2`, un ajuste fino de Llama 3.1 8B orientado a extraccion de informacion estructurada. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de quants en Hugging Face, y no anade entrenamiento ni modificaciones de pesos: se limita a convertir el checkpoint original en formatos optimizados para inferencia local con llama.cpp y derivados.
 
 El modelo subyacente parte de la arquitectura Llama 3.1 (transformer decoder-only denso) con 8.030.261.312 parametros totales, y esta especializado, por el nombre y la procedencia, en tareas de Structured Information Extraction: convertir texto libre en salidas JSON u otras estructuras predefinidas. La model card del repositorio no documenta el proceso de ajuste fino, el dataset ni hiperparametros, por lo que los detalles de entrenamiento no estan disponibles en la informacion proporcionada.
 
@@ -31,7 +31,7 @@ No se dispone de informacion sobre el dataset de ajuste fino, el numero de token
 
 - Generacion de texto en ingles con la calidad base de Llama 3.1 8B.
 - Extraccion de informacion estructurada (presumiblemente JSON u otros esquemas) segun el nombre y proposito declarado del ajuste.
-- Conversacion multi-turno (tag `conversational` en HuggingFace).
+- Conversacion multi-turno (tag `conversational` en Hugging Face).
 - Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere uso con text-generation-inference y APIs compatibles con OpenAI.
 - Soporte de tool calling y function calling: no confirmado explicitamente en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no documentadas para este ajuste.

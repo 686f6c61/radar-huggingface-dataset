@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`genaforvena/study-pooled` es un adaptador LoRA publicado en HuggingFace por el usuario genaforvena, construido sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. Se distribuye como un repositorio PEFT (versión de framework declarada: PEFT 0.20.0) con pesos en formato safetensors, y su pipeline declarado es `text-generation`. No se trata por tanto de un modelo entrenado desde cero, sino de un ajuste fino de bajo rango que debe cargarse conjuntamente con el modelo base para poder ejecutarse. El repositorio no incluye pesos completos: su tamaño declarado es de 0,0 GB, coherente con un adaptador de dimensión reducida.
+`genaforvena/study-pooled` es un adaptador LoRA publicado en Hugging Face por el usuario genaforvena, construido sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. Se distribuye como un repositorio PEFT (versión de framework declarada: PEFT 0.20.0) con pesos en formato safetensors, y su pipeline declarado es `text-generation`. No se trata por tanto de un modelo entrenado desde cero, sino de un ajuste fino de bajo rango que debe cargarse conjuntamente con el modelo base para poder ejecutarse. El repositorio no incluye pesos completos: su tamaño declarado es de 0,0 GB, coherente con un adaptador de dimensión reducida.
 
 La relevancia de esta ficha es limitada y conviene ser explícito al respecto: la model card está publicada sin rellenar, con todos los campos sustituidos por el marcador `[More Information Needed]`, y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta. No se declara licencia, idiomas soportados, composición del dataset de entrenamiento, hiperparámetros, régimen de precisión ni resultados de evaluación. La única información verificable es la identidad del modelo base, la librería de carga (PEFT) y el conjunto de etiquetas asociadas.
 
@@ -89,7 +89,7 @@ No se dispone de métricas comparativas de calidad para el adaptador, por lo que
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/genaforvena/study-pooled
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/genaforvena/study-pooled
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Referencia citada en la model card (calculadora de impacto y artículo asociado): https://mlco2.github.io/impact y https://arxiv.org/abs/1910.09700

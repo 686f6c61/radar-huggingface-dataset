@@ -71,7 +71,7 @@ No se dispone de informacion sobre otros adaptadores de traduccion de embeddings
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-qwen3-emb-8b_to_pplx-embed-1)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-qwen3-emb-8b_to_pplx-embed-1)
 - [Coleccion de adaptadores de QuerynAi](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Modelo fuente Qwen3-Embedding-8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B)
 - [Repositorio oficial de Qwen3-Embedding](https://github.com/QwenLM/Qwen3-Embedding)

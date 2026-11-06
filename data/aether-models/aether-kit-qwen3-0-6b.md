@@ -77,6 +77,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aether-models/aether-kit-qwen3-0.6b
+- Hugging Face: https://huggingface.co/aether-models/aether-kit-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio AetherKit: https://github.com/bubstackdev/aether-kit

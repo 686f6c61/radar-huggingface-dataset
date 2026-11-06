@@ -84,11 +84,11 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 - **Sesgos**: no se documentan sesgos específicos, pero al estar entrenado con un dataset limitado (1 época, 1.214 pasos), puede reflejar sesgos de los datos de entrenamiento.
 - **Licencia**: Apache 2.0 permite uso comercial, pero el modelo base (google/functiongemma-270m-it) también es Apache 2.0, por lo que no hay restricciones adicionales conocidas.
 - **Falta de documentación**: no se especifican cuantizaciones oficiales, ni datos de latencia, ni composición detallada del dataset, lo que dificulta la reproducibilidad.
-- **Modelo muy reciente y con pocas descargas**: 0 descargas y 0 likes en HuggingFace, lo que implica que no ha sido validado por la comunidad.
+- **Modelo muy reciente y con pocas descargas**: 0 descargas y 0 likes en Hugging Face, lo que implica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- [HuggingFace: thantzinphyo/FunctionGemma-270M-MM](https://huggingface.co/thantzinphyo/FunctionGemma-270M-MM)
+- [Hugging Face: thantzinphyo/FunctionGemma-270M-MM](https://huggingface.co/thantzinphyo/FunctionGemma-270M-MM)
 - [Dataset: thantzinphyo/Gemma-Actions-MM](https://huggingface.co/datasets/thantzinphyo/Gemma-Actions-MM)
 - [Repositorio GitHub: Gemma-Actions-MM](https://github.com/thantzinphyo-gg/Gemma-Actions-MM)
 - [Modelo base: google/functiongemma-270m-it](https://huggingface.co/google/functiongemma-270m-it)

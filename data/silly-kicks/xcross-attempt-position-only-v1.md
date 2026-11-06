@@ -84,7 +84,7 @@ La comparativa con el modelo con velocidad muestra una pérdida de PR-AUC de 0.1
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/silly-kicks/xcross-attempt-position-only-v1
+- Repositorio Hugging Face: https://huggingface.co/silly-kicks/xcross-attempt-position-only-v1
 - Modelo con velocidad (variante faithful): https://huggingface.co/silly-kicks/xcross-attempt-v1
 - Repositorio GitHub de silly-kicks: https://github.com/karsten-s-nielsen/silly-kicks
 - Paquete PyPI: https://pypi.org/project/silly-kicks/

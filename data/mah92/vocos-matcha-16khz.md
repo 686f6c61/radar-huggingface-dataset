@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vocos Matcha 16 kHz es un vocoder neuronal entrenado por Ali Mahmoudi (@mah92) y publicado en HuggingFace con licencia Apache-2.0. Su función no es generar texto ni razonar, sino convertir espectrogramas mel en forma de onda de audio: recibe 80 bins de log-mel con normalización y escala mel slaney a 16 kHz y devuelve la representación espectral necesaria para reconstruir la señal. Está pensado para emparejarse con modelos acústicos Matcha-TTS en el ecosistema sherpa-onnx.
+Vocos Matcha 16 kHz es un vocoder neuronal entrenado por Ali Mahmoudi (@mah92) y publicado en Hugging Face con licencia Apache-2.0. Su función no es generar texto ni razonar, sino convertir espectrogramas mel en forma de onda de audio: recibe 80 bins de log-mel con normalización y escala mel slaney a 16 kHz y devuelve la representación espectral necesaria para reconstruir la señal. Está pensado para emparejarse con modelos acústicos Matcha-TTS en el ecosistema sherpa-onnx.
 
 El modelo se distribuye como un único fichero ONNX exportado en el formato "raw-head" de sherpa-onnx: la red produce las salidas `mag`, `x` e `y`, y la iSTFT se ejecuta fuera del grafo, dentro de sherpa-onnx o de `MatchaTTSInfer` (C++ sobre ONNX Runtime), usando los metadatos de la transformada (n_fft 1024, hop 256, win 1024, ventana hann, centrado y padding reflect).
 
@@ -98,7 +98,7 @@ No se dispone de datos de parametros totales, contexto ni benchmarks de calidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mah92/vocos-matcha-16khz
+- Modelo en Hugging Face: https://huggingface.co/mah92/vocos-matcha-16khz
 - Repositorio de referencia Vocos: https://github.com/gemelo-ai/vocos
 - Fork con configuracion mel de Matcha: https://huggingface.co/langtech-bsc
 - Modelo acustico emparejado: https://huggingface.co/mah92/Zahra-FA_EN-16KHz-Matcha-TTS-Model

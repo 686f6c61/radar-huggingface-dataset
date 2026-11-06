@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_random_alpaca_llama8b_5000` es un modelo de generación de texto publicado en HuggingFace por el usuario `ishikaa`, con un total de 8.030.261.248 parámetros (unos 8,03 mil millones) almacenados en safetensors. La model card publicada es la plantilla automática de `transformers` y no contiene información real: todos los apartados (autor, tipo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]". Por tanto, no existe documentación oficial sobre su origen, su proceso de entrenamiento ni su rendimiento.
+`ishikaa/acquisition_student_random_alpaca_llama8b_5000` es un modelo de generación de texto publicado en Hugging Face por el usuario `ishikaa`, con un total de 8.030.261.248 parámetros (unos 8,03 mil millones) almacenados en safetensors. La model card publicada es la plantilla automática de `transformers` y no contiene información real: todos los apartados (autor, tipo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]". Por tanto, no existe documentación oficial sobre su origen, su proceso de entrenamiento ni su rendimiento.
 
 El propio identificador del repositorio aporta pistas sobre su naturaleza, aunque se trata de una interpretación y no de un dato confirmado: "alpaca" apunta al dataset Alpaca de instrucciones, "student" sugiere que es un modelo alumno dentro de un esquema de destilación o de aprendizaje supervisado, "random" podría indicar una estrategia de selección aleatoria de muestras (típicamente una línea base en experimentos de *active learning* o de selección de datos) y "5000" probablemente haga referencia al número de ejemplos utilizados en el ajuste. Los tags `llama`, `text-generation` y `conversational` confirman que se trata de un transformer decoder-only de la familia Llama orientado a diálogo.
 
@@ -23,7 +23,7 @@ Es relevante como artefacto de investigación más que como modelo listo para pr
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura ni el entrenamiento. La model card es la plantilla vacía generada automáticamente por HuggingFace, de modo que los apartados de datos de entrenamiento, hiperparámetros, infraestructura de cómputo y régimen de precisión (fp32, fp16, bf16) figuran todos como "More Information Needed". El único dato objetivo es el recuento de parámetros de los pesos publicados.
+No hay información verificable sobre la arquitectura ni el entrenamiento. La model card es la plantilla vacía generada automáticamente por Hugging Face, de modo que los apartados de datos de entrenamiento, hiperparámetros, infraestructura de cómputo y régimen de precisión (fp32, fp16, bf16) figuran todos como "More Information Needed". El único dato objetivo es el recuento de parámetros de los pesos publicados.
 
 A partir del nombre del repositorio puede inferirse, con la debida cautela, que se trata de un ajuste fino supervisado de un modelo Llama de ~8B sobre un subconjunto de 5.000 ejemplos de tipo Alpaca, y que "student" y "random" remiten a un experimento de destilación o de selección de datos con estrategia aleatoria como línea base. No hay evidencia en la información disponible de que se hayan aplicado RLHF, DPO u otras técnicas de alineación, ni de innovaciones como decodificación especulativa o atención lineal. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre el calculador de impacto ambiental, incluido en la plantilla por defecto, y no a un paper del modelo.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada cuantizado a 4 bits (GGUF Q4_K_M o similar): alrededor de 5-6 GB.
 - GPU recomendadas para fp16: A100 40 GB, H100 80 GB, L40S 48 GB. Cabe en RTX 4090 / RTX 3090 de 24 GB, aunque con contexto limitado por la caché KV.
 - GPU de consumo: sí cabe, especialmente cuantizado. RTX 4090, 3090, 4080 (16 GB), 4070 Ti Super (16 GB) o incluso tarjetas de 8-12 GB con cuantización agresiva y contextos cortos.
-- Opciones de despliegue: `transformers` (nativo), vLLM, Hugging Face TGI (el repo incluye los tags correspondientes), llama.cpp / Ollama y LM Studio previa conversión a GGUF, y endpoints gestionados de HuggingFace por el tag `endpoints_compatible`.
+- Opciones de despliegue: `transformers` (nativo), vLLM, Hugging Face TGI (el repo incluye los tags correspondientes), llama.cpp / Ollama y LM Studio previa conversión a GGUF, y endpoints gestionados de Hugging Face por el tag `endpoints_compatible`.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas y dependerán por completo del hardware, la cuantización y la longitud de secuencia.
 
 ## Comparativa con modelos similares
@@ -88,8 +88,8 @@ Los datos de los modelos comparativos corresponden a valores de referencia de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_random_alpaca_llama8b_5000
-- Perfil del autor en HuggingFace: https://huggingface.co/ishikaa
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_random_alpaca_llama8b_5000
+- Perfil del autor en Hugging Face: https://huggingface.co/ishikaa
 - Referencia del tag arXiv (Lacoste et al., 2019, estimación de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de ML: https://mlco2.github.io/impact
 - Repositorio de Transformers: https://github.com/huggingface/transformers

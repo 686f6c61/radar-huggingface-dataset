@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fluxnat-Coder-3B es un modelo de lenguaje publicado en HuggingFace por el usuario k4ran909, con un total de 3.085.938.688 parametros segun los pesos en formato safetensors del repositorio. La etiqueta de arquitectura declarada es qwen2, lo que apunta a un transformer decoder-only de la familia Qwen2, si bien el autor no ha publicado una model card que confirme la procedencia, el proceso de entrenamiento ni la relacion con el modelo base original. El repositorio ocupa 6,2 GB, un tamano coherente con 3.09B parametros almacenados en precision de 16 bits.
+Fluxnat-Coder-3B es un modelo de lenguaje publicado en Hugging Face por el usuario k4ran909, con un total de 3.085.938.688 parametros segun los pesos en formato safetensors del repositorio. La etiqueta de arquitectura declarada es qwen2, lo que apunta a un transformer decoder-only de la familia Qwen2, si bien el autor no ha publicado una model card que confirme la procedencia, el proceso de entrenamiento ni la relacion con el modelo base original. El repositorio ocupa 6,2 GB, un tamano coherente con 3.09B parametros almacenados en precision de 16 bits.
 
 El modelo se presenta con el sufijo "Coder", lo que sugiere un enfoque en generacion de codigo, aunque no hay documentacion que lo confirme ni evaluaciones publicadas. En el momento de la consulta acumulaba 0 descargas y 1 like, y las fechas de creacion y actualizacion (21 de septiembre de 2026, con apenas minuto y medio de diferencia) indican una subida reciente y sin iteraciones posteriores. No se declara licencia, idiomas soportados, pipeline ni ventana de contexto.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| Fluxnat-Coder-3B | 3,09B | no disponible | no disponible | no disponible | Pesos safetensors en HuggingFace |
+| Fluxnat-Coder-3B | 3,09B | no disponible | no disponible | no disponible | Pesos safetensors en Hugging Face |
 | Modelos comparables de ~3B (Qwen2.5-Coder-3B, Llama-3.2-3B, Phi-3.5-mini) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos verificados de los modelos alternativos dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La unica comparacion defendible es de categoria: se trata de un modelo denso de ~3B parametros, rango en el que existen alternativas ampliamente documentadas con licencias permisivas y evaluaciones publicas, frente a las cuales este modelo no aporta ninguna metrica.
@@ -90,6 +90,6 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/k4ran909/Fluxnat-Coder-3B
+- Modelo en Hugging Face: https://huggingface.co/k4ran909/Fluxnat-Coder-3B
 - Paper, blog, repositorio o demo oficial: no disponible
 - Resultados de la busqueda web: no relevantes para el modelo (los resultados devueltos correspondian a servicios de correo y no guardaban relacion con Fluxnat-Coder-3B)

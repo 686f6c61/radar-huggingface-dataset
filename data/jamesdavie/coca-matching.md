@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jamesdavie/coca-matching` es un artefacto experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada "Coca" orientada a tareas de *matching* (emparejamiento entre modalidades o representaciones). El repositorio lo mantiene el usuario `jamesdavie` y se presenta explícitamente como un *smoke-test* y prototipo, no como un modelo entrenado ni listo para producción. El checkpoint incluido es un artefacto de inicialización: el propio autor advierte que no ha sido entrenado ni auditado.
+`jamesdavie/coca-matching` es un artefacto experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada "Coca" orientada a tareas de *matching* (emparejamiento entre modalidades o representaciones). El repositorio lo mantiene el usuario `jamesdavie` y se presenta explícitamente como un *smoke-test* y prototipo, no como un modelo entrenado ni listo para producción. El checkpoint incluido es un artefacto de inicialización: el propio autor advierte que no ha sido entrenado ni auditado.
 
 El modelo tiene 33.088 parámetros totales según los metadatos de safetensors, lo que lo sitúa en un orden de magnitud de milésimas de millón: es un esqueleto arquitectónico, no un modelo funcional. La arquitectura declarada combina atención estándar, fusión tipo *tucker*, activación GELU-Tanh y normalización GroupNorm, con una escala etiquetada como "large" dentro del propio código experimental.
 
@@ -41,7 +41,7 @@ No hay información sobre datos de entrenamiento, número de tokens, composició
 - Inspección de arquitectura: cargar `config.json` y el módulo Python para revisar cómo se implementan la atención estándar, la fusión tucker y la normalización GroupNorm antes de modificar el diseño.
 - Prueba de humo de pipelines: ejecutar `python finetune.py --help` para verificar que el entorno de entrenamiento (PyTorch, dependencias) está correctamente instalado antes de lanzar experimentos reales.
 - Base para experimentos de *matching*: usar el esqueleto como punto de partida para construir un modelo de emparejamiento entre modalidades o representaciones, añadiendo datos y un ciclo de entrenamiento propio.
-- Docencia y prototipado: ilustrar cómo se estructura un repositorio de modelo en HuggingFace (config, training_args, checkpoint, política de uso) sin incurrir en costes de entrenamiento.
+- Docencia y prototipado: ilustrar cómo se estructura un repositorio de modelo en Hugging Face (config, training_args, checkpoint, política de uso) sin incurrir en costes de entrenamiento.
 - Comparación de recetas de entrenamiento: modificar `training_args.json` (Adam, schedule exponencial) y medir el efecto sobre un conjunto de validación emparejado, tal como sugiere el autor.
 - Integración en *tooling* interno: servir como *fixture* en tests de integración de plataformas de despliegue que necesiten un checkpoint safetensors mínimo.
 
@@ -74,10 +74,10 @@ No se identifican modelos comparables en la información disponible: se trata de
 - Los datasets externos que se usen con este código mantienen sus propias condiciones legales y deben verificarse por separado.
 - No hay información sobre sesgos, riesgo de alucinación ni limitaciones idiomáticas porque no hay modelo entrenado que evaluar.
 - La etiqueta de escala "large" en la model card no se corresponde con los 33.088 parámetros reales; conviene tratarla como descriptor del código, no del modelo.
-- Las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito para esta arquitectura personalizada.
+- Las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito para esta arquitectura personalizada.
 - El repositorio tiene 0 descargas y 0 *likes* en el momento de la consulta, sin señales de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesdavie/coca-matching
+- Repositorio en Hugging Face: https://huggingface.co/jamesdavie/coca-matching
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

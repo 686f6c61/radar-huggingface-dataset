@@ -101,11 +101,11 @@ Los datos de contexto, rendimiento y licencias de los modelos alternativos no es
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/nesso2-0.4B-agentic-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/nesso2-0.4B-agentic-GGUF
 - Modelo base: https://huggingface.co/mii-llm/nesso2-0.4B-agentic
 - Pagina de descarga y vision general de cuantizaciones: https://hf.tst.eu/model#nesso2-0.4B-agentic-GGUF
 - Repositorio GitHub del modelo (zagreus-nesso-slm, rama nesso2): https://github.com/mii-llm/zagreus-nesso-slm/tree/main/nesso2
-- Perfil del cuantizador en HuggingFace: https://huggingface.co/mradermacher/models
+- Perfil del cuantizador en Hugging Face: https://huggingface.co/mradermacher/models
 - Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Referencia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafico comparativo de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

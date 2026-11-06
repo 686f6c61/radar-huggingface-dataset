@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Adipolabeler es un repositorio publicado en HuggingFace por el usuario skyle123 bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador `skyle123/Adipolabeler`, licencia Apache 2.0, etiqueta de region `us`, un tamano de repositorio de aproximadamente 0,1 GB y cero descargas y cero "likes" en el momento de la consulta. La model card publicada no contiene mas que la declaracion de licencia, sin descripcion, sin instrucciones de uso y sin ficha tecnica.
+Adipolabeler es un repositorio publicado en Hugging Face por el usuario skyle123 bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador `skyle123/Adipolabeler`, licencia Apache 2.0, etiqueta de region `us`, un tamano de repositorio de aproximadamente 0,1 GB y cero descargas y cero "likes" en el momento de la consulta. La model card publicada no contiene mas que la declaracion de licencia, sin descripcion, sin instrucciones de uso y sin ficha tecnica.
 
 No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El nombre del repositorio sugiere una funcion de etiquetado automatico (el sufijo "labeler"), pero se trata unicamente de una inferencia a partir del nombre y no esta confirmada por ninguna documentacion del autor.
 
@@ -29,7 +29,7 @@ Otros metadatos verificables:
 | Identificador | skyle123/Adipolabeler |
 | Pipeline declarado | no disponible |
 | Etiquetas | license:apache-2.0, region:us |
-| Tamano del repositorio | ~0,1 GB (cifra redondeada por HuggingFace) |
+| Tamano del repositorio | ~0,1 GB (cifra redondeada por Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creacion | 2026-09-13T22:04:53Z |
@@ -39,7 +39,7 @@ Otros metadatos verificables:
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM o hibrida), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco hay informacion sobre innovaciones tecnicas, metodos de decodificacion o estrategias de atencion.
 
-El unico dato estructural es el tamano del repositorio, aproximadamente 0,1 GB. Esta cifra la redondea HuggingFace y resulta insuficiente para deducir el numero de parametros: un unico archivo de pesos en fp16 de 0,1 GB implicaria del orden de decenas de millones de parametros, pero el mismo tamano seria compatible con un adaptador LoRA, un modelo muy pequeno cuantizado o incluso un conjunto de artefactos de preprocesado. Sin acceso al listado de archivos no es posible distinguir entre estos escenarios. Tampoco hay informacion sobre el intervalo entre creacion y ultima actualizacion (17 minutos), que sugiere una publicacion sin iteracion posterior documentada.
+El unico dato estructural es el tamano del repositorio, aproximadamente 0,1 GB. Esta cifra la redondea Hugging Face y resulta insuficiente para deducir el numero de parametros: un unico archivo de pesos en fp16 de 0,1 GB implicaria del orden de decenas de millones de parametros, pero el mismo tamano seria compatible con un adaptador LoRA, un modelo muy pequeno cuantizado o incluso un conjunto de artefactos de preprocesado. Sin acceso al listado de archivos no es posible distinguir entre estos escenarios. Tampoco hay informacion sobre el intervalo entre creacion y ultima actualizacion (17 minutos), que sugiere una publicacion sin iteracion posterior documentada.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skyle123/Adipolabeler | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| skyle123/Adipolabeler | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/skyle123/Adipolabeler
+- Hugging Face: https://huggingface.co/skyle123/Adipolabeler
 - Model card: no disponible (el README solo contiene la declaracion de licencia)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

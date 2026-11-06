@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Math-1.5B-GRPO-Staleness-8 es un ajuste fino de parámetros completos del modelo Qwen/Qwen2.5-Math-1.5B, publicado por el usuario zbeeb en HuggingFace. Se trata de un checkpoint del paso 1000 de un entrenamiento con GRPO (Group Relative Policy Optimization) sobre el dataset matemático DAPO de 17.005 filas, con un límite de desfase de política (*staleness cap*) de 8 pasos fuera de política. El objetivo es mejorar la capacidad de razonamiento matemático del modelo base mediante aprendizaje por refuerzo con una recompensa determinista que evalúa la equivalencia matemática de la respuesta final.
+Qwen2.5-Math-1.5B-GRPO-Staleness-8 es un ajuste fino de parámetros completos del modelo Qwen/Qwen2.5-Math-1.5B, publicado por el usuario zbeeb en Hugging Face. Se trata de un checkpoint del paso 1000 de un entrenamiento con GRPO (Group Relative Policy Optimization) sobre el dataset matemático DAPO de 17.005 filas, con un límite de desfase de política (*staleness cap*) de 8 pasos fuera de política. El objetivo es mejorar la capacidad de razonamiento matemático del modelo base mediante aprendizaje por refuerzo con una recompensa determinista que evalúa la equivalencia matemática de la respuesta final.
 
 El modelo tiene 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) y mantiene la arquitectura Qwen2 densa del modelo base, sin mezcla de expertos. El entrenamiento se realizó con PrimeRL v0.9.0 durante 1000 actualizaciones, con un contexto total de 4096 tokens y hasta 3072 tokens de finalización, usando 3 GPU para el entrenador y 2 GPU para inferencia. Los pesos se exportan sin pérdida a Safetensors fragmentados.
 
@@ -80,8 +80,8 @@ No se proporcionan en la informacion disponible resultados comparativos frente a
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Math-1.5B-GRPO-Staleness-8 | 1,54 B | 4.096 tokens (nativo preservado, sin extensión 8K validada) | Ajuste completo con GRPO, cap de staleness 8, 1000 pasos | Apache 2.0 | HuggingFace, Safetensors |
-| Qwen/Qwen2.5-Math-1.5B (base) | 1,54 B | 4.096 tokens | Modelo base de matemáticas, sin RL adicional en esta ficha | Apache 2.0 | HuggingFace, Safetensors |
+| Qwen2.5-Math-1.5B-GRPO-Staleness-8 | 1,54 B | 4.096 tokens (nativo preservado, sin extensión 8K validada) | Ajuste completo con GRPO, cap de staleness 8, 1000 pasos | Apache 2.0 | Hugging Face, Safetensors |
+| Qwen/Qwen2.5-Math-1.5B (base) | 1,54 B | 4.096 tokens | Modelo base de matemáticas, sin RL adicional en esta ficha | Apache 2.0 | Hugging Face, Safetensors |
 | Otros checkpoints GRPO del mismo autor con caps superiores | No disponible | No disponible | GRPO con `max_off_policy_steps` mayor; no son continuaciones de este run | No disponible | No disponible |
 | Alternativas de ~1,5 B orientadas a razonamiento matemático | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ El autor advierte explícitamente de que la comparación con el modelo de 3 B de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-8
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-8
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k
 - Configuración de entrenamiento (en el repositorio): `training-config.json`

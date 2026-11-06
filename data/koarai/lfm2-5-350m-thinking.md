@@ -73,7 +73,7 @@ La comparativa se basa en modelos de tamaño similar, pero la falta de datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking
+- Hugging Face: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking
 - Modelo base de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-350m

@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | ling0322/libwaifu-krea2-turbo |
+| ID en Hugging Face | ling0322/libwaifu-krea2-turbo |
 | Autor | ling0322 |
 | Modelo base | krea/Krea-2-Turbo |
 | Pipeline declarado | text-to-image |
@@ -100,9 +100,9 @@ Controles de referencia citados en la model card:
 
 | Modelo | Relacion | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ling0322/libwaifu-krea2-turbo (float16) | Este repositorio, paquete de 33,8 GB | no disponible | no disponible | Desviacion extremo a extremo de 9,94e-2 frente a la referencia | krea-2-community-license (other) | HuggingFace, 0 descargas |
-| ling0322/libwaifu-krea2-turbo (FP8) | Este repositorio, paquete de 17,3 GB | no disponible | no disponible | Desviacion extremo a extremo de 3,40e-1 | krea-2-community-license (other) | HuggingFace, 0 descargas |
-| krea/Krea-2-Turbo | Pesos originales de los que deriva esta copia | no disponible | no disponible | Referencia de comparacion (`Krea2Pipeline` de diffusers) | krea-2-community-license | HuggingFace, repositorio oficial de Krea |
+| ling0322/libwaifu-krea2-turbo (float16) | Este repositorio, paquete de 33,8 GB | no disponible | no disponible | Desviacion extremo a extremo de 9,94e-2 frente a la referencia | krea-2-community-license (other) | Hugging Face, 0 descargas |
+| ling0322/libwaifu-krea2-turbo (FP8) | Este repositorio, paquete de 17,3 GB | no disponible | no disponible | Desviacion extremo a extremo de 3,40e-1 | krea-2-community-license (other) | Hugging Face, 0 descargas |
+| krea/Krea-2-Turbo | Pesos originales de los que deriva esta copia | no disponible | no disponible | Referencia de comparacion (`Krea2Pipeline` de diffusers) | krea-2-community-license | Hugging Face, repositorio oficial de Krea |
 
 No se dispone de datos de benchmarks ni de parametros de terceros (por ejemplo alternativas de generacion de imagen de la misma categoria) en la informacion proporcionada, por lo que no se puede establecer una comparativa cuantitativa con modelos externos.
 
@@ -123,7 +123,7 @@ No se dispone de datos de benchmarks ni de parametros de terceros (por ejemplo a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ling0322/libwaifu-krea2-turbo
+- Modelo en Hugging Face: https://huggingface.co/ling0322/libwaifu-krea2-turbo
 - Modelo base oficial: https://huggingface.co/krea/Krea-2-Turbo
 - Repositorio libwaifu: https://github.com/ling0322/libwaifu
 - Documentacion tecnica de la arquitectura (`docs/krea2.md`): https://github.com/ling0322/libwaifu/blob/main/docs/krea2.md (ruta indicada en la model card)

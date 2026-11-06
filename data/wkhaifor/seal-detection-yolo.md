@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Seal-detection-yolo es un conjunto de pesos de deteccion de objetos orientado especificamente a la localizacion de sellos (stamps) en documentos chinos, como contratos o paginas escaneadas. Lo publica el usuario wkhaifor en HuggingFace y esta pensado como un componente de un pipeline mayor de analisis documental: el modelo solo devuelve cajas delimitadoras y confianza para la clase `stamp`; la segmentacion de pixeles y el reconocimiento optico de caracteres (OCR) requieren modelos separados. El repositorio incluye tres variantes de la familia YOLO de Ultralytics: YOLO11n, YOLO12n y YOLO26n, todas en su version nano.
+Seal-detection-yolo es un conjunto de pesos de deteccion de objetos orientado especificamente a la localizacion de sellos (stamps) en documentos chinos, como contratos o paginas escaneadas. Lo publica el usuario wkhaifor en Hugging Face y esta pensado como un componente de un pipeline mayor de analisis documental: el modelo solo devuelve cajas delimitadoras y confianza para la clase `stamp`; la segmentacion de pixeles y el reconocimiento optico de caracteres (OCR) requieren modelos separados. El repositorio incluye tres variantes de la familia YOLO de Ultralytics: YOLO11n, YOLO12n y YOLO26n, todas en su version nano.
 
 La relevancia practica del modelo esta en su especializacion y en su tamano reducido: parte de pesos preentrenados en COCO, se afina primero con el dataset publico `mapo80/stamps` y despues con imagenes chinas de pagina completa del dataset SEAL_DATASET de Kaggle. El autor reporta resultados muy altos en su conjunto de test fijo de 220 imagenes (mAP50-95 en torno al 96-97 %), aunque conviene tomar esas cifras con cautela porque proceden de un unico benchmark y de un dominio muy acotado. El repositorio ocupa 0.0 GB segun los metadatos, lo que es coherente con tres modelos nano.
 
-Se trata de un modelo de vision puro, no de un modelo de lenguaje: los tags `zh` y `document-analysis` describen el dominio de aplicacion, no capacidades linguisticas. No hay pipeline declarado en HuggingFace, la inferencia esta desactivada en el hub (`inference: false`) y la licencia no aparece en los metadatos del repositorio, aunque la model card menciona que el codigo upstream de Ultralytics es AGPL-3.0.
+Se trata de un modelo de vision puro, no de un modelo de lenguaje: los tags `zh` y `document-analysis` describen el dominio de aplicacion, no capacidades linguisticas. No hay pipeline declarado en Hugging Face, la inferencia esta desactivada en el hub (`inference: false`) y la licencia no aparece en los metadatos del repositorio, aunque la model card menciona que el codigo upstream de Ultralytics es AGPL-3.0.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ YOLO12n ofrece la mejor precision en test (95.09 %) y el mejor mAP50-95 de valid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wkhaifor/seal-detection-yolo
+- Modelo en Hugging Face: https://huggingface.co/wkhaifor/seal-detection-yolo
 - Repositorio espejo en ModelScope: https://www.modelscope.cn/models/kfcVme50/seal-detection-yolo
 - Dataset `mapo80/stamps`: https://huggingface.co/datasets/mapo80/stamps
 - Dataset SEAL_DATASET en Kaggle: https://www.kaggle.com/datasets/yushuosun/seal-dataset

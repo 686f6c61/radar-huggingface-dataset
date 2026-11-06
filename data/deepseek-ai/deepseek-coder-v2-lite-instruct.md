@@ -4,7 +4,7 @@
 
 DeepSeek-Coder-V2-Lite-Instruct es un modelo de lenguaje especializado en código, desarrollado por DeepSeek AI como parte de la familia DeepSeek-Coder-V2. Se trata de una versión ligera (16B parámetros totales) de la arquitectura Mixture-of-Experts (MoE) que, con solo 2.4B parámetros activos, consigue un rendimiento competitivo en tareas de programación y razonamiento matemático. El modelo es el resultado de un preentrenamiento continuo sobre un checkpoint intermedio de DeepSeek-V2 con 6 billones de tokens adicionales, lo que le permite ampliar el soporte de lenguajes de programación de 86 a 338 y extender la longitud de contexto de 16K a 128K.
 
-La versión Instruct está ajustada para seguir instrucciones y mantener conversaciones, lo que la hace adecuada para asistentes de código, autocompletado avanzado y razonamiento multi-turno. Su relevancia actual radica en que ofrece capacidades comparables a modelos cerrados como GPT-4 Turbo en benchmarks de código, pero en formato abierto y con una arquitectura eficiente que reduce costes de inferencia. Está disponible en HuggingFace con formato safetensors y licencia propia de DeepSeek (deepseek-license).
+La versión Instruct está ajustada para seguir instrucciones y mantener conversaciones, lo que la hace adecuada para asistentes de código, autocompletado avanzado y razonamiento multi-turno. Su relevancia actual radica en que ofrece capacidades comparables a modelos cerrados como GPT-4 Turbo en benchmarks de código, pero en formato abierto y con una arquitectura eficiente que reduce costes de inferencia. Está disponible en Hugging Face con formato safetensors y licencia propia de DeepSeek (deepseek-license).
 
 ## Especificaciones tecnicas
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Params totales | Params activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-Coder-V2-Lite-Instruct | 16B | 2.4B | 128K | deepseek-license | Abierto (HuggingFace) |
-| DeepSeek-Coder-V2 (full) | 236B | 21B | 128K | deepseek-license | Abierto (HuggingFace) |
-| DeepSeek-Coder-33B-Instruct (anterior) | 33B | 33B (denso) | 16K | MIT | Abierto (HuggingFace) |
-| CodeLlama-34B | 34B | 34B (denso) | 16K | Llama 2 license | Abierto (HuggingFace) |
+| DeepSeek-Coder-V2-Lite-Instruct | 16B | 2.4B | 128K | deepseek-license | Abierto (Hugging Face) |
+| DeepSeek-Coder-V2 (full) | 236B | 21B | 128K | deepseek-license | Abierto (Hugging Face) |
+| DeepSeek-Coder-33B-Instruct (anterior) | 33B | 33B (denso) | 16K | MIT | Abierto (Hugging Face) |
+| CodeLlama-34B | 34B | 34B (denso) | 16K | Llama 2 license | Abierto (Hugging Face) |
 
 La comparativa directa con CodeLlama y DeepSeek-Coder original muestra que DeepSeek-Coder-V2-Lite ofrece un contexto mucho mayor (128K frente a 16K) y un menor coste computacional gracias a la arquitectura MoE. No se dispone de benchmarks comparativos en la información revisada.
 

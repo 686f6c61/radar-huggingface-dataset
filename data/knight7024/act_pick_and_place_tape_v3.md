@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_pick_and_place_tape_v3` es una política de imitación para robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705, y empaquetada en el formato de LeRobot. La desarrolla el usuario de HuggingFace `knight7024` y resuelve una tarea concreta de manipulación: coger un objeto y colocarlo en una ubicación objetivo ("pick_and_place_tape"). No es un modelo de lenguaje: es un controlador visuomotor que consume el estado articular del robot y dos cámaras y emite comandos de acción de 6 dimensiones.
+`act_pick_and_place_tape_v3` es una política de imitación para robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705, y empaquetada en el formato de LeRobot. La desarrolla el usuario de Hugging Face `knight7024` y resuelve una tarea concreta de manipulación: coger un objeto y colocarlo en una ubicación objetivo ("pick_and_place_tape"). No es un modelo de lenguaje: es un controlador visuomotor que consume el estado articular del robot y dos cámaras y emite comandos de acción de 6 dimensiones.
 
 El modelo tiene 51.668.614 parámetros y un peso de repositorio de 0,2 GB, lo que lo sitúa en el rango de políticas ligeras que se ejecutan en tiempo real sobre hardware de consumo. La entrada combina un vector de estado de 6 dimensiones con dos flujos visuales (cámara superior a 240x320 y cámara de muñeca a 480x640), y la salida es un vector de acción de 6 dimensiones que se predice por chunks en lugar de paso a paso, lo que reduce el error de acumulación típico de las políticas reactivas.
 
@@ -75,7 +75,7 @@ No se dispone en la información proporcionada de datos de otras políticas comp
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_pick_and_place_tape_v3 | 51,7 M | no disponible | sin evaluación publicada | Apache 2.0 | HuggingFace |
+| act_pick_and_place_tape_v3 | 51,7 M | no disponible | sin evaluación publicada | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,11 +87,11 @@ No se dispone en la información proporcionada de datos de otras políticas comp
 - Sin datos sobre sesgos: no se documentan sesgos, pero al ser una política de imitación hereda los sesgos y la distribución del dataset de teleoperación.
 - Riesgo de alucinación no aplicable en el sentido lingüístico, pero sí de acciones erráticas fuera de distribución que pueden provocar colisiones; se recomienda supervisión y límites de seguridad en el robot.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de validación y de garantías hace desaconsejable su uso en producción sin una evaluación propia extensa.
-- Sin soporte multilingüe ni de texto: no debe confundirse con un modelo de lenguaje pese a estar alojado en HuggingFace con pipeline `robotics`.
+- Sin soporte multilingüe ni de texto: no debe confundirse con un modelo de lenguaje pese a estar alojado en Hugging Face con pipeline `robotics`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/knight7024/act_pick_and_place_tape_v3
+- Modelo en Hugging Face: https://huggingface.co/knight7024/act_pick_and_place_tape_v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/knight7024/pick_and_place_tape_final
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=knight7024/pick_and_place_tape_final
 - Paper de ACT: https://huggingface.co/papers/2304.13705

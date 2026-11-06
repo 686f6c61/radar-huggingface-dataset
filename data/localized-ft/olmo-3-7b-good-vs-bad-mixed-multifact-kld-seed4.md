@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed4` es un ajuste fino (finetune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft` en HuggingFace. Se trata de un modelo de generación de texto en inglés, con licencia Apache 2.0, entrenado con las librerías Unsloth y TRL de HuggingFace. El nombre sugiere que está especializado en distinguir respuestas "buenas" de "malas" mediante un enfoque multifactorial y una pérdida basada en divergencia KL, aunque no se proporcionan detalles adicionales sobre el dataset o el procedimiento de entrenamiento.
+El modelo `localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed4` es un ajuste fino (finetune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft` en Hugging Face. Se trata de un modelo de generación de texto en inglés, con licencia Apache 2.0, entrenado con las librerías Unsloth y TRL de Hugging Face. El nombre sugiere que está especializado en distinguir respuestas "buenas" de "malas" mediante un enfoque multifactorial y una pérdida basada en divergencia KL, aunque no se proporcionan detalles adicionales sobre el dataset o el procedimiento de entrenamiento.
 
 Este finetune pertenece a la familia OLMo 3, una serie de modelos de lenguaje abiertos de 7B y 32B parámetros descritos en el artículo de arXiv 2512.13961. El modelo base OLMo-3-7B-Instruct está diseñado para razonamiento de contexto largo, llamada a funciones, codificación, seguimiento de instrucciones, chat general y recuperación de conocimiento. Sin embargo, este finetune concreto no incluye documentación sobre sus capacidades específicas más allá de la herencia del modelo base.
 
@@ -23,7 +23,7 @@ Con cero descargas y cero likes, se trata de un modelo experimental o de investi
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune de `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión optimizada del modelo OLMo-3-7B-Instruct de la familia OLMo 3. La arquitectura subyacente es un transformer estándar, aunque no se especifican detalles como el número de capas, cabezas de atención o mecanismos de atención (si es atención lineal, etc.). El entrenamiento se realizó con las librerías Unsloth (para acelerar el proceso) y TRL de HuggingFace, pero no se proporcionan datos sobre el número de tokens, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere un entrenamiento con una función de pérdida que combina múltiples factores y una divergencia KL, pero no hay documentación que lo confirme.
+El modelo es un finetune de `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión optimizada del modelo OLMo-3-7B-Instruct de la familia OLMo 3. La arquitectura subyacente es un transformer estándar, aunque no se especifican detalles como el número de capas, cabezas de atención o mecanismos de atención (si es atención lineal, etc.). El entrenamiento se realizó con las librerías Unsloth (para acelerar el proceso) y TRL de Hugging Face, pero no se proporcionan datos sobre el número de tokens, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere un entrenamiento con una función de pérdida que combina múltiples factores y una divergencia KL, pero no hay documentación que lo confirme.
 
 ## Capacidades
 
@@ -60,10 +60,10 @@ No se dispone de datos de rendimiento para comparar directamente. Sin embargo, s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | No disponible | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 (permisiva) | HuggingFace |
-| Mistral 7B Instruct | 7B | 32K | Apache 2.0 | HuggingFace |
-| Este finetune | 7B (aprox.) | No disponible | Apache 2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | No disponible | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 (permisiva) | Hugging Face |
+| Mistral 7B Instruct | 7B | 32K | Apache 2.0 | Hugging Face |
+| Este finetune | 7B (aprox.) | No disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parámetros y licencia, ya que no hay datos de contexto ni de rendimiento para este finetune.
 
@@ -78,7 +78,7 @@ La comparativa se limita a parámetros y licencia, ya que no hay datos de contex
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed4)
+- [Hugging Face - localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed4)
 - [Paper de Olmo 3 en arXiv](https://arxiv.org/abs/2512.13961)
 - [Modelo similar: OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed3](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed3)
 - [Modelo similar: OLMo-3-7B-good-vs-bad-mixed-multifact-second-third-sft-seed3](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-second-third-sft-seed3)

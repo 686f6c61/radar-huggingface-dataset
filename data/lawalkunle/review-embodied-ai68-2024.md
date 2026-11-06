@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lawalkunle/review-embodied-ai68-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre *Embodied AI* (IA encarnada) publicado en HuggingFace bajo la licencia CC-BY-4.0. Su contenido se limita a dos ficheros de texto: `paper_notes.md` y `README.md`. El propio autor declara explícitamente que el repositorio organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y que no se presenta como un artículo terminado ni como una publicación de modelos entrenados.
+`lawalkunle/review-embodied-ai68-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre *Embodied AI* (IA encarnada) publicado en Hugging Face bajo la licencia CC-BY-4.0. Su contenido se limita a dos ficheros de texto: `paper_notes.md` y `README.md`. El propio autor declara explícitamente que el repositorio organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y que no se presenta como un artículo terminado ni como una publicación de modelos entrenados.
 
 Aunque el repositorio lleva las etiquetas `safetensors` y `transformer`, no hay evidencia de pesos utilizables: el tamaño del repositorio es de 0,0 GB, no se ha definido pipeline de inferencia y las descargas e interacciones registradas son cero. El dato de 24.832 parámetros totales asociado a safetensors es inconsistente con cualquier transformer funcional y no viene acompañado de configuración, tokenizador ni código de carga, por lo que debe interpretarse como un artefacto residual de metadatos y no como un modelo desplegable.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, documental: sirve como plantilla metodológi
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero el repositorio no incluye `config.json`, tokenizador, código de modelado ni fichero de pesos con estructura reconocible. Tampoco se documenta ningún proceso de entrenamiento: no hay número de tokens, composición de dataset, fases de preentrenamiento, ajuste supervisado, RLHF ni DPO.
+No se describe ninguna arquitectura. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero el repositorio no incluye `config.json`, tokenizador, código de modelado ni fichero de pesos con estructura reconocible. Tampoco se documenta ningún proceso de entrenamiento: no hay número de tokens, composición de dataset, fases de preentrenamiento, ajuste supervisado, RLHF ni DPO.
 
 El contenido real del artefacto es una nota de investigación que propone el alcance de una pregunta de investigación, los factores de confusión probables, una comparación con baselines emparejados, benchmarks públicos nombrados en la nota principal, y comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor advierte además que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que si en el futuro se añaden resultados deberán incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -78,7 +78,7 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lawalkunle/review-embodied-ai68-2024
+- Repositorio en Hugging Face: https://huggingface.co/lawalkunle/review-embodied-ai68-2024
 - Artefacto principal dentro del repositorio: `paper_notes.md`
 - Documentación del repositorio: `README.md`
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada; los resultados obtenidos correspondían a páginas de soporte de Microsoft sin relación con el modelo.

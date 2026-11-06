@@ -84,10 +84,10 @@ La comparativa es limitada porque no hay benchmarks públicos para GRT. Los dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Amr-Hegazy/grt-large-isoparam
+- Hugging Face: https://huggingface.co/Amr-Hegazy/grt-large-isoparam
 - Paper (arXiv): https://arxiv.org/abs/2608.15062
 - PDF del paper: https://arxiv.org/pdf/2608.15062v4
 - HTML del paper: https://arxiv.org/html/2608.15062v3
 - Código (GitHub): https://github.com/Amr-Hegazy1/gated-recurrent-transformer
-- Página del paper en HuggingFace: https://huggingface.co/papers/2608.15062
+- Página del paper en Hugging Face: https://huggingface.co/papers/2608.15062
 - Semantic Scholar: https://www.semanticscholar.org/paper/Gated-Recurrent-Transformers%3A-Expressive-Depth-Hegazy-Alanwar/c03a778e0990fb4d29374f667023896b97a03cde

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g8_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, concretamente sobre la variante `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo desarrolla el usuario de HuggingFace stefanocarrera y se publica bajo licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento orientado a código Java con una temperatura de muestreo de 0.5 y un parámetro `g8` (probablemente relacionado con la configuración de generación o de grupo), aunque la model card no documenta explícitamente estos detalles.
+`stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g8_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, concretamente sobre la variante `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo desarrolla el usuario de Hugging Face stefanocarrera y se publica bajo licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento orientado a código Java con una temperatura de muestreo de 0.5 y un parámetro `g8` (probablemente relacionado con la configuración de generación o de grupo), aunque la model card no documenta explícitamente estos detalles.
 
 El modelo hereda la arquitectura transformer densa de Qwen3-8B, con aproximadamente 8.200 millones de parámetros. Se entrenó mediante las herramientas de Unsloth y TRL, lo que permite un ajuste fino más rápido y con menor huella de memoria. El repositorio ocupa 0,2 GB, lo que indica que los pesos publicados corresponden probablemente a una cuantización de 4 bits (bnb-4bit) o a un subconjunto de los pesos, no al modelo completo en precisión nativa.
 
@@ -43,7 +43,7 @@ No se dispone de información sobre la composición del dataset de ajuste fino, 
 - Generación de código Java en entornos de prototipado: si el ajuste está efectivamente orientado a Java, podría emplearse para autocompletar o sugerir fragmentos de código en un IDE, aunque sin benchmarks que lo respalden.
 - Investigación sobre cuantización y ajuste fino: el repositorio permite estudiar cómo afecta el entrenamiento sobre pesos bnb-4bit a la calidad final del modelo.
 - Evaluación comparativa de fine-tunes comunitarios: útil como caso de estudio en pipelines de evaluación automática de modelos pequeños.
-- Docencia y formación: ejemplo práctico de cómo publicar un fine-tune con Unsloth en HuggingFace, incluyendo la estructura de la model card.
+- Docencia y formación: ejemplo práctico de cómo publicar un fine-tune con Unsloth en Hugging Face, incluyendo la estructura de la model card.
 - Pruebas de integración con text-generation-inference: el tag `text-generation-inference` sugiere compatibilidad con TGI, lo que permite desplegarlo en un endpoint para pruebas de latencia y throughput.
 
 ## Benchmarks y rendimiento
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g8_run0 | ~8.200 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune comunitario sin benchmarks |
-| Qwen/Qwen3-8B | ~8.200 M | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8.200 M | no disponible en esta ficha | Apache 2.0 | HuggingFace | Variante cuantizada a 4 bits para fine-tuning |
+| stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g8_run0 | ~8.200 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune comunitario sin benchmarks |
+| Qwen/Qwen3-8B | ~8.200 M | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8.200 M | no disponible en esta ficha | Apache 2.0 | Hugging Face | Variante cuantizada a 4 bits para fine-tuning |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g8_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g8_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g8_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g8_run0)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [TRL (GitHub)](https://github.com/huggingface/trl)

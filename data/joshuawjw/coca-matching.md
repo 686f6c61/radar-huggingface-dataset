@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuawjw/coca-matching` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura denominada **Coca** orientada a tareas de *matching*. Lo publica el usuario `joshuawjw` bajo licencia MIT y no es un modelo entrenado: el propio autor lo describe como un punto de partida compacto para revisión de código, *smoke tests* y experimentos controlados de pequena escala. El checkpoint `model.safetensors` es una inicialización válida, no un modelo con pesos ajustados.
+`joshuawjw/coca-matching` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura denominada **Coca** orientada a tareas de *matching*. Lo publica el usuario `joshuawjw` bajo licencia MIT y no es un modelo entrenado: el propio autor lo describe como un punto de partida compacto para revisión de código, *smoke tests* y experimentos controlados de pequena escala. El checkpoint `model.safetensors` es una inicialización válida, no un modelo con pesos ajustados.
 
 El dato de parametros registrado en safetensors es de **24.832 parametros totales**, una cifra que contrasta con la etiqueta `huge` que aparece en la configuracion de arquitectura; esa etiqueta es un nombre de escala dentro del script, no una medida real de capacidad. No hay información sobre longitud de contexto, idiomas, pipeline ni dataset de entrenamiento.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshuawjw/coca-matching | 24.832 | No disponible | Sin benchmarks (checkpoint sin entrenar) | MIT | HuggingFace |
+| joshuawjw/coca-matching | 24.832 | No disponible | Sin benchmarks (checkpoint sin entrenar) | MIT | Hugging Face |
 | Alternativa 1 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa 2 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshuawjw/coca-matching
+- Hugging Face: https://huggingface.co/joshuawjw/coca-matching
 - Archivos del repo: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código adicional o demo: no disponibles en la información proporcionada.
 - Nota: la búsqueda web asociada no devolvió resultados relevantes sobre este modelo; los enlaces encontrados corresponden a modificaciones de un videojuego y no guardan relación con el repositorio.

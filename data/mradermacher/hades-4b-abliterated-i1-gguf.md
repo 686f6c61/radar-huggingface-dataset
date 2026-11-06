@@ -76,7 +76,7 @@ Los datos de referencia de los modelos alternativos no proceden de la informacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Hades-4B-Abliterated (i1 GGUF) | ~4B (nombre) | No disponible | Apache 2.0 | GGUF en HuggingFace, cuantizaciones i1 y estaticas | No disponible |
+| Hades-4B-Abliterated (i1 GGUF) | ~4B (nombre) | No disponible | Apache 2.0 | GGUF en Hugging Face, cuantizaciones i1 y estaticas | No disponible |
 | Qwen3-4B | ~4B | No disponible en esta ficha | Apache 2.0 | Pesos completos y GGUF de terceros | No disponible en esta ficha |
 | Llama-3.2-3B-Instruct | ~3B | No disponible en esta ficha | Llama 3.2 Community License (con restricciones) | Pesos completos y GGUF oficiales | No disponible en esta ficha |
 | Phi-4-mini-instruct | ~3,8B | No disponible en esta ficha | MIT | Pesos completos y GGUF de terceros | No disponible en esta ficha |

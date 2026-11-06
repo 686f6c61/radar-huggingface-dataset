@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Dataset | Receta | Agregación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| droidfull8 π0.5 cent (este) | DROID 1.0.1 completo (78.864 episodios, 22,13 M frames) | Full fine-tune desde `pi05_base`, 100k pasos, batch 256 | Centralizada | Apache 2.0 | HuggingFace (DecentVLA) |
-| droidfull8 FedAvg | Mismo dataset y receta | Idéntica | Federada (FedAvg) | Apache 2.0 | HuggingFace (DecentVLA) |
-| droidfull8 ACCORD-C | Mismo dataset y receta | Idéntica | Federada (ACCORD-C, co-training w010 expert) | Apache 2.0 | HuggingFace (DecentVLA) |
+| droidfull8 π0.5 cent (este) | DROID 1.0.1 completo (78.864 episodios, 22,13 M frames) | Full fine-tune desde `pi05_base`, 100k pasos, batch 256 | Centralizada | Apache 2.0 | Hugging Face (DecentVLA) |
+| droidfull8 FedAvg | Mismo dataset y receta | Idéntica | Federada (FedAvg) | Apache 2.0 | Hugging Face (DecentVLA) |
+| droidfull8 ACCORD-C | Mismo dataset y receta | Idéntica | Federada (ACCORD-C, co-training w010 expert) | Apache 2.0 | Hugging Face (DecentVLA) |
 | π0.5-DROID joint-position oficial (openpi) | DROID | No publicada | Centralizada | No disponible en la información | Referencia en `gs://openpi-assets-simeval/pi05_droid_jointpos` |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DecentVLA/droidfull8_pi05_cent
+- Hugging Face: https://huggingface.co/DecentVLA/droidfull8_pi05_cent
 - Variante FedAvg: https://huggingface.co/DecentVLA/droidfull8_pi05_fedavg
 - Variante ACCORD-C: https://huggingface.co/DecentVLA/droidfull8_pi05_accord_cotrain_w010_expert
 - openpi (Physical Intelligence): no disponible en la información proporcionada

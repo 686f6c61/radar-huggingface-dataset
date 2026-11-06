@@ -75,10 +75,10 @@ En el Hub existen otras políticas ACT para el mismo robot y tarea, publicadas p
 
 | Modelo | Familia | Tarea / robot | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Pinset/act_so101_pick_place_2cam_100000 | ACT para LeRobot | Pick-and-place, SO-101, 2 cámaras | 51.668.614 | No aplica | Apache 2.0 | Pública en HuggingFace |
-| ViVi-AI/ACT_so101_pick_place | ACT para LeRobot | Pick-and-place, SO-101 | No disponible | No aplica | No disponible | Pública en HuggingFace |
-| shenlirobot/act_so101_pick_place | ACT para LeRobot | Pick-and-place, SO-101 | No disponible | No aplica | No disponible | Pública en HuggingFace |
-| anvil2718/act_so101_pickplace | ACT para LeRobot | Pick-and-place, SO-101 | No disponible | No aplica | No disponible | Pública en HuggingFace |
+| Pinset/act_so101_pick_place_2cam_100000 | ACT para LeRobot | Pick-and-place, SO-101, 2 cámaras | 51.668.614 | No aplica | Apache 2.0 | Pública en Hugging Face |
+| ViVi-AI/ACT_so101_pick_place | ACT para LeRobot | Pick-and-place, SO-101 | No disponible | No aplica | No disponible | Pública en Hugging Face |
+| shenlirobot/act_so101_pick_place | ACT para LeRobot | Pick-and-place, SO-101 | No disponible | No aplica | No disponible | Pública en Hugging Face |
+| anvil2718/act_so101_pickplace | ACT para LeRobot | Pick-and-place, SO-101 | No disponible | No aplica | No disponible | Pública en Hugging Face |
 
 Como alternativas metodológicas dentro del mismo ecosistema LeRobot existen otras familias de políticas (por ejemplo, políticas de difusión o modelos visión-lenguaje-acción), pero no se dispone en la información proporcionada de comparativas numéricas entre ellas y esta política.
 
@@ -96,7 +96,7 @@ Como alternativas metodológicas dentro del mismo ecosistema LeRobot existen otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pinset/act_so101_pick_place_2cam_100000
+- Modelo en Hugging Face: https://huggingface.co/Pinset/act_so101_pick_place_2cam_100000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Pinset/so101_pick_place_2cam_100_20261008_140403
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Pinset/so101_pick_place_2cam_100_20261008_140403
 - Artículo de ACT: https://huggingface.co/papers/2304.13705

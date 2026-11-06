@@ -71,7 +71,7 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación estándar,
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-14b-base-fve-msm-flourishing-s3 | 14,77 mil millones | No especificado (entrenado con seq_len 4096) | Sin benchmarks publicados | other / internal-research | Repositorio público en HuggingFace, 0 descargas |
+| qwen3-14b-base-fve-msm-flourishing-s3 | 14,77 mil millones | No especificado (entrenado con seq_len 4096) | Sin benchmarks publicados | other / internal-research | Repositorio público en Hugging Face, 0 descargas |
 | Qwen/Qwen3-14B-Base | 14,77 mil millones | 32.768 tokens nativos | Benchmarks publicados por Qwen | Apache-2.0 | Ampliamente distribuido |
 | Qwen/Qwen3-14B (instruct) | 14,77 mil millones | 32.768 tokens nativos | Benchmarks publicados por Qwen | Apache-2.0 | Ampliamente distribuido |
 | Alternativas de terceros de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
@@ -95,7 +95,7 @@ Los datos de Qwen3-14B-Base y Qwen3-14B proceden del conocimiento público de la
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-flourishing-s3
+- Página del modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-flourishing-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Dataset de midtrain: https://huggingface.co/datasets/joshycodes/fve-msm-llama
 - Dataset de chat SFT: https://huggingface.co/datasets/joshycodes/fve-msm-chat-sft-13k

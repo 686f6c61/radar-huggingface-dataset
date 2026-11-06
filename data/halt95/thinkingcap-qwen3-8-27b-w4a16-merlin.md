@@ -77,10 +77,10 @@ No se publicaron resultados de MMLU, HumanEval ni otros benchmarks en la informa
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThinkingCap-Qwen3.8-27B-W4A16-Merlin (este) | ~27,36 B densos | 262K | W4A16 int4 AWQ + KV FP8 | PolyForm Small Business 1.0.0 | HuggingFace, 11 archivos, ~17 GB |
-| bottlecapai/ThinkingCap-Qwen3.8-27B | ~27 B densos (no confirmado) | 262K | Sin cuantizar (base) | PolyForm Small Business 1.0.0 | HuggingFace |
-| Qwen/Qwen3.8-27B | ~27 B densos | 262K | Sin cuantizar (base) | Apache-2.0 (materiales Qwen) | HuggingFace |
-| halt95/Qwen3.8-27B-W4A16-Merlin | ~27 B densos | 262K | W4A16 int4 AWQ + KV FP8 | Apache-2.0 | HuggingFace, ~17 GB |
+| ThinkingCap-Qwen3.8-27B-W4A16-Merlin (este) | ~27,36 B densos | 262K | W4A16 int4 AWQ + KV FP8 | PolyForm Small Business 1.0.0 | Hugging Face, 11 archivos, ~17 GB |
+| bottlecapai/ThinkingCap-Qwen3.8-27B | ~27 B densos (no confirmado) | 262K | Sin cuantizar (base) | PolyForm Small Business 1.0.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | ~27 B densos | 262K | Sin cuantizar (base) | Apache-2.0 (materiales Qwen) | Hugging Face |
+| halt95/Qwen3.8-27B-W4A16-Merlin | ~27 B densos | 262K | W4A16 int4 AWQ + KV FP8 | Apache-2.0 | Hugging Face, ~17 GB |
 
 El cuarto modelo de la tabla es la variante Apache-2.0 del mismo linaje de cuantizacion sobre Qwen3.8-27B sin el finetune ThinkingCap: es la alternativa directa cuando la licencia PolyForm es un impedimento. La diferencia funcional frente al base es la reduccion de tokens de razonamiento medida en GSM8K; en precision, el cambio es neutro o ligeramente favorable en `xhigh`. No se dispone de comparaciones con modelos de otros linajes en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ El cuarto modelo de la tabla es la variante Apache-2.0 del mismo linaje de cuant
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/halt95/ThinkingCap-Qwen3.8-27B-W4A16-Merlin
+- Hugging Face del modelo: https://huggingface.co/halt95/ThinkingCap-Qwen3.8-27B-W4A16-Merlin
 - Archivos del repositorio: https://huggingface.co/halt95/ThinkingCap-Qwen3.8-27B-W4A16-Merlin/tree/main
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Modelo origen de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

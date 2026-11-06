@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TideSignal-Calibration-Pack es un artefacto publicado por el usuario SOTAagi2030 en HuggingFace. Segun la model card proporcionada, se trata de un paquete de calibracion asociado a un sistema denominado TideSignal, con un candidato seleccionado identificado como `kelp`, un recall medio declarado de 0,920 sobre tres sitios (`inlet`, `north`, `reef`) y un tamano de artefacto de 450 KB. No se especifica si el contenido es un modelo de aprendizaje automatico, un conjunto de parametros de calibracion, un fichero de configuracion o un pipeline de procesamiento de senal.
+TideSignal-Calibration-Pack es un artefacto publicado por el usuario SOTAagi2030 en Hugging Face. Segun la model card proporcionada, se trata de un paquete de calibracion asociado a un sistema denominado TideSignal, con un candidato seleccionado identificado como `kelp`, un recall medio declarado de 0,920 sobre tres sitios (`inlet`, `north`, `reef`) y un tamano de artefacto de 450 KB. No se especifica si el contenido es un modelo de aprendizaje automatico, un conjunto de parametros de calibracion, un fichero de configuracion o un pipeline de procesamiento de senal.
 
 La relevancia del repositorio es limitada a efectos de evaluacion tecnica: cuenta con 0 descargas y 0 likes, no tiene pipeline declarado, no declara licencia ni idiomas soportados, y no incluye informacion sobre arquitectura, parametros o proceso de entrenamiento. El README se limita a documentar el criterio de seleccion del candidato (cobertura completa de sitios, puertas de validacion de precision y deriva de reloj, y ordenacion por recall medio descendente, tamano de artefacto ascendente y nombre de candidato ascendente).
 
@@ -29,7 +29,7 @@ Datos adicionales declarados en la model card:
 | Recall medio | 0,920 |
 | Tamano de artefacto | 450 KB |
 | Sitios cubiertos | `inlet`, `north`, `reef` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
@@ -83,7 +83,7 @@ No se especifica como se calcula el recall, sobre que conjunto de datos se evalu
 - Opciones de despliegue: no disponible. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni ningun otro runtime.
 - Latencia y throughput: no disponible.
 
-Nota: existe una discrepancia entre el tamano de repositorio reportado por HuggingFace (0,0 GB) y el tamano de artefacto declarado en la model card (450 KB). Conviene verificar el contenido real del repositorio antes de planificar cualquier despliegue.
+Nota: existe una discrepancia entre el tamano de repositorio reportado por Hugging Face (0,0 GB) y el tamano de artefacto declarado en la model card (450 KB). Conviene verificar el contenido real del repositorio antes de planificar cualquier despliegue.
 
 ## Comparativa con modelos similares
 
@@ -104,5 +104,5 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/TideSignal-Calibration-Pack
+- Hugging Face: https://huggingface.co/SOTAagi2030/TideSignal-Calibration-Pack
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

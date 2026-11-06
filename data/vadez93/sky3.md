@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vadez93/sky3 es un repositorio de pesos publicado en HuggingFace por el usuario Vadez93. En el momento de la consulta, la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni informacion sobre la arquitectura o el proceso de entrenamiento. El unico dato cuantitativo disponible es el tamano del repositorio, 5,0 GB, ademas de metricas de uso muy bajas (0 descargas y 1 like) y una horquilla de creacion y actualizacion de apenas nueve minutos (13 de septiembre de 2026, 15:42 a 15:51 UTC).
+Vadez93/sky3 es un repositorio de pesos publicado en Hugging Face por el usuario Vadez93. En el momento de la consulta, la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni informacion sobre la arquitectura o el proceso de entrenamiento. El unico dato cuantitativo disponible es el tamano del repositorio, 5,0 GB, ademas de metricas de uso muy bajas (0 descargas y 1 like) y una horquilla de creacion y actualizacion de apenas nueve minutos (13 de septiembre de 2026, 15:42 a 15:51 UTC).
 
 La ausencia de model card, de configuracion publica y de documentacion adicional impide determinar con rigor el numero de parametros, la longitud de contexto, la familia arquitectonica o los datos de entrenamiento. El tamano del repositorio es compatible con varias configuraciones distintas (por ejemplo, pesos en precision reducida de un modelo de varios miles de millones de parametros, o pesos en fp16 de un modelo del orden de 2,5 mil millones), pero no permite decantarse por ninguna de ellas sin informacion adicional.
 
@@ -80,7 +80,7 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura, la lice
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Vadez93/sky3 | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| Vadez93/sky3 | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura, la lice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vadez93/sky3
+- Repositorio en Hugging Face: https://huggingface.co/Vadez93/sky3
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

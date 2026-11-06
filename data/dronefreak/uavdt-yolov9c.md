@@ -148,8 +148,8 @@ Observaciones: en mAP@50 el modelo queda por detrás de YOLOv9s, YOLOv9m, YOLOv8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolov9c
-- Dataset UAVDT en HuggingFace: https://huggingface.co/datasets/dronefreak/UAVDT
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolov9c
+- Dataset UAVDT en Hugging Face: https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Artículo de YOLOv9 (arXiv:2402.13616): https://arxiv.org/abs/2402.13616
 - Artículo del benchmark UAVDT (arXiv:1804.00518): https://arxiv.org/abs/1804.00518

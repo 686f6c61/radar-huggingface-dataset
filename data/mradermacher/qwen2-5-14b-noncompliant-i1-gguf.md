@@ -93,7 +93,7 @@ Nota: los datos del modelo base Qwen2.5-14B y de Llama 3.1 8B Instruct provienen
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Qwen2.5-14B-Noncompliant-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Qwen2.5-14B-Noncompliant-i1-GGUF
 - Modelo original del ajuste fino: https://huggingface.co/ApolloRaines/Qwen2.5-14B-Noncompliant
 - Modelo base Qwen2.5-14B (referencia): https://huggingface.co/Qwen/Qwen2.5-14B
 - Repositorio del autor de las cuantizaciones: https://huggingface.co/mradermacher

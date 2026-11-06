@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 SNUMPR real-world large view + yaw30 target, anchor coefficient 0.0 es un checkpoint de adaptación de un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Donghyun1228 en HuggingFace. Se trata de una variante del modelo π0.5 de Physical Intelligence, adaptada mediante un proceso de *target-only IDM* (modelo de dinámica inversa) sobre el dataset `snumpr-realworld-large-view-yaw30-probe`, con un preset específico denominado `pi05_snumpr_target_conflict_anchor_large_view_yaw30_coef0`. El modelo está pensado para control robótico de manipulación a partir de observaciones visuales y estados del robot.
+π0.5 SNUMPR real-world large view + yaw30 target, anchor coefficient 0.0 es un checkpoint de adaptación de un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Donghyun1228 en Hugging Face. Se trata de una variante del modelo π0.5 de Physical Intelligence, adaptada mediante un proceso de *target-only IDM* (modelo de dinámica inversa) sobre el dataset `snumpr-realworld-large-view-yaw30-probe`, con un preset específico denominado `pi05_snumpr_target_conflict_anchor_large_view_yaw30_coef0`. El modelo está pensado para control robótico de manipulación a partir de observaciones visuales y estados del robot.
 
 El entrenamiento consistió en 10.000 actualizaciones partiendo del checkpoint `pi05-snumpr-realworld-conflict-mean-source-10000-20261028` (paso 9999), con el LLM congelado (9 tensores) y 42 tensores no-LLM entrenados usando un optimizador ConflictAnchorAdamW con coeficiente de anclaje 0.0 (control sin anclaje). El dataset emplea una vista virtual con yaw base +30°, por lo que el controlador del robot debe aplicar la transformación inversa `Δxyz_real = Rz(+30) Δxyz_virtual` y ajustar el estado como `q0_real - 30°`.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR real-world large view + yaw30 (este checkpoint) | no disponible | no disponible | sin evaluación en robot | apache-2.0 | HuggingFace, 0 descargas |
+| π0.5 SNUMPR real-world large view + yaw30 (este checkpoint) | no disponible | no disponible | sin evaluación en robot | apache-2.0 | Hugging Face, 0 descargas |
 | π0.5 base (Physical Intelligence) | no disponible en esta ficha | no disponible | no disponible en esta ficha | no disponible en esta ficha | referencia del ecosistema openpi |
-| Checkpoint fuente `pi05-snumpr-realworld-conflict-mean-source-10000-20261028` | mismo marco π0.5 | no disponible | no disponible | apache-2.0 (presumible) | HuggingFace, repo del mismo autor |
+| Checkpoint fuente `pi05-snumpr-realworld-conflict-mean-source-10000-20261028` | mismo marco π0.5 | no disponible | no disponible | apache-2.0 (presumible) | Hugging Face, repo del mismo autor |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-large-view-yaw30-anchor-coef0-10000-20261028
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-large-view-yaw30-anchor-coef0-10000-20261028
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-conflict-mean-source-10000-20261028
 - Dataset: https://huggingface.co/Donghyun1228/snumpr-realworld-large-view-yaw30-probe-20261028
 - Repositorio de código de adaptación: `Donghyun1228/vla_adaptation` (código `36089217`), referenciado en la model card

@@ -71,9 +71,9 @@ No se dispone de información sobre modelos comparables específicos para etique
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Florence-2-base (sin adaptador) | 0,23B | 4096 | Captioning, deteccion, segmentacion | MIT | HuggingFace |
-| Este adaptador (LoRA) | 0,23B + 231M | 4096 | Etiquetado de campos de formularios | no disponible | HuggingFace |
-| Otros modelos de extraccion de formularios (p. ej., LayoutLMv3) | ~0,1-0,4B | 512-2048 | Extraccion de campos | MIT (LayoutLMv3) | HuggingFace |
+| Florence-2-base (sin adaptador) | 0,23B | 4096 | Captioning, deteccion, segmentacion | MIT | Hugging Face |
+| Este adaptador (LoRA) | 0,23B + 231M | 4096 | Etiquetado de campos de formularios | no disponible | Hugging Face |
+| Otros modelos de extraccion de formularios (p. ej., LayoutLMv3) | ~0,1-0,4B | 512-2048 | Extraccion de campos | MIT (LayoutLMv3) | Hugging Face |
 
 La comparativa es limitada porque el adaptador es específico de una tarea y no se han publicado benchmarks frente a alternativas. LayoutLMv3 es un modelo de solo texto (no vision-language) y no soporta vocabulario abierto de la misma manera.
 
@@ -90,6 +90,6 @@ La comparativa es limitada porque el adaptador es específico de una tarea y no 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bugsiesegal/form-field-labeling-florence
+- Hugging Face del adaptador: https://huggingface.co/bugsiesegal/form-field-labeling-florence
 - Dataset de entrenamiento: https://huggingface.co/datasets/bugsiesegal/form-fields-for-layout-labeled-pages
 - Modelo base: https://huggingface.co/microsoft/Florence-2-base

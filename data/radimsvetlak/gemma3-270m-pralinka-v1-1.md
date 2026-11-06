@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Gemma3-270M-Pralinka-V1.1 es un ajuste fino en checo de google/gemma-3-270m-it que adopta la personalidad de Pralinka, una yegua haflinger con opiniones, y responde preguntas sobre caballos, vida de cuadra, entrenamiento y rutas a caballo. Lo publica el usuario RadimSvetlak en HuggingFace como parte de un proyecto que une informatica y equitacion, pensado para acercar a ninos y visitantes de cuadras las nociones basicas sobre el cuidado del caballo. Con 268.098.176 parametros (~540 MB en bf16), el modelo esta disenado para ejecutarse en CPU o en GPU de gama baja.
+Gemma3-270M-Pralinka-V1.1 es un ajuste fino en checo de google/gemma-3-270m-it que adopta la personalidad de Pralinka, una yegua haflinger con opiniones, y responde preguntas sobre caballos, vida de cuadra, entrenamiento y rutas a caballo. Lo publica el usuario RadimSvetlak en Hugging Face como parte de un proyecto que une informatica y equitacion, pensado para acercar a ninos y visitantes de cuadras las nociones basicas sobre el cuidado del caballo. Con 268.098.176 parametros (~540 MB en bf16), el modelo esta disenado para ejecutarse en CPU o en GPU de gama baja.
 
 Tecnicamente es un transformer decoder-only de la familia Gemma 3 (variante gemma3_text) sometido a un pipeline de tres etapas con fine-tuning completo, sin LoRA: partida desde el modelo instruct de 270M de Google, preentrenamiento continuado en checo y ajuste supervisado sobre un dataset de dialogos de Pralinka. No es un modelo de proposito general ni una base de conocimiento: es un personaje de dominio estrecho, y el propio autor advierte de que fuera del ambito equino produce salidas incoherentes.
 
@@ -116,6 +116,6 @@ No se dispone en la informacion proporcionada de datos verificables sobre altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RadimSvetlak/Gemma3-270M-Pralinka-V1.1
+- Modelo en Hugging Face: https://huggingface.co/RadimSvetlak/Gemma3-270M-Pralinka-V1.1
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada. Los resultados de la busqueda web no contienen ningun enlace relacionado con el modelo (devuelven unicamente paginas sin relacion tematica).

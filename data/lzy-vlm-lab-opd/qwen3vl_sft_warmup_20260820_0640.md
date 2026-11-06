@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al estar los pesos en float32, se requieren aproximadamente 35 GB solo para los parámetros (8,77B × 4 bytes). Con overhead de activaciones y buffers, se recomienda una GPU con al menos 40 GB de VRAM, y de forma segura 80 GB.
 - GPU recomendadas: A100 80GB o H100 80GB para cargar el modelo en float32 sin cuantización.
 - No cabe en GPU de consumo (RTX 4090 24GB, etc.) en float32; no hay cuantizaciones disponibles en la información proporcionada.
-- Opciones de despliegue: el modelo se puede cargar con `transformers` mediante `AutoModelForVision2Seq` y `AutoProcessor`. El tag de HuggingFace indica compatibilidad con endpoints, pero no se especifican vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el modelo se puede cargar con `transformers` mediante `AutoModelForVision2Seq` y `AutoProcessor`. El tag de Hugging Face indica compatibilidad con endpoints, pero no se especifican vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lzy-vlm-lab-opd/qwen3vl_sft_warmup_20260820_0640
+- Hugging Face: https://huggingface.co/lzy-vlm-lab-opd/qwen3vl_sft_warmup_20260820_0640
 - Documentación de Qwen3-VL en transformers: https://huggingface.co/docs/transformers/model_doc/qwen3_vl
 - Repositorio relacionado del mismo laboratorio: https://huggingface.co/lzy-vlm-lab-opd/qwen3-vl-8b-pure-rl-seed42-step100

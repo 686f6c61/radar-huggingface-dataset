@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/vmarcelo/Qwen3.8-27B_IQ4-MIX_GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/vmarcelo/Qwen3.8-27B_IQ4-MIX_GGUF
 - Modelo base (Qwen/Qwen3.8-27B-FP8): https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8/blob/main/LICENSE
 - Herramienta de cuantización: https://github.com/ggml-org/llama.cpp

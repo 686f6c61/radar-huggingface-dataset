@@ -80,7 +80,7 @@ La comparativa se basa en características generales; no hay datos de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMSManhattan/JiRackTernaryPro_1b
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackTernaryPro_1b
 - Sitio oficial: http://www.cmsmanhattan.com
 - Cliente Android (APK): https://huggingface.co/kgrabko/JiRackTernary_1b/resolve/main/app-release.apk
 - Cliente Windows (ZIP): https://huggingface.co/kgrabko/JiRackTernary_1b/resolve/main/jirack-chat.zip

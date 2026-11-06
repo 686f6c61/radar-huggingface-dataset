@@ -77,7 +77,7 @@ No se dispone de benchmarks comparativos entre estas opciones. La principal dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-GGUF
 - Repositorio GitHub del modelo base (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Articulo sobre abliteration de Qwen3.8-27B (MindStudio): https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration
 - Version abliterated en ModelScope: https://www.modelscope.cn/models/douyamv/Qwen3.8-27B-abliterated-GGUF

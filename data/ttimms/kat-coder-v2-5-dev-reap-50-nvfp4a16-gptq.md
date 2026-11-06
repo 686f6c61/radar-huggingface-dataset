@@ -33,7 +33,7 @@ Esta variante concreta parte del checkpoint podado al 50 % con REAP (`Ttimms/KAT
 - Soporte de tool calling y ejecución de comandos en entornos sandbox, característica central del KAT-Coder-V2.5-Dev.
 - Capacidad de razonamiento multi-paso y planificación de tareas de codificación complejas (SWE-bench Verified como referencia).
 - Multilingüismo: no disponible en la información proporcionada.
-- No soporta visión: el repo de GitHub indica explícitamente que el checkpoint es "vision-free", a pesar de que el tag de HuggingFace incluya `image-text-to-text`.
+- No soporta visión: el repo de GitHub indica explícitamente que el checkpoint es "vision-free", a pesar de que el tag de Hugging Face incluya `image-text-to-text`.
 - Compatible con vLLM y el kernel Marlin NVFP4 para inferencia en GPUs Blackwell.
 
 ## Casos de uso
@@ -88,7 +88,7 @@ La comparativa se basa en datos del artículo de HackerNoon y de la model card. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4A16-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4A16-GPTQ
 - Versión principal (RTN): https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4A16
 - Checkpoint podado en bf16: https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-bf16
 - Repositorio GitHub del proyecto: https://github.com/t-timms/kat-coder-nvfp4

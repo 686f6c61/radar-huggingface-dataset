@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `EllaPriest45/Krea2_Styles` aloja un conjunto de pesos en formato safetensors con un tamaño total de 231,9 GB, publicado por el usuario EllaPriest45 en junio de 2026 y actualizado en agosto del mismo año. El nombre sugiere que podría tratarse de un modelo o colección de estilos orientado a generación visual, aunque no se dispone de documentación pública que lo confirme. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los archivos. A fecha de redacción de esta ficha, el repositorio registra cero descargas y seis likes, lo que indica una adopción muy limitada o un estado temprano de publicación.
+El repositorio `EllaPriest45/Krea2_Styles` aloja un conjunto de pesos en formato safetensors con un tamaño total de 231,9 GB, publicado por el usuario EllaPriest45 en junio de 2026 y actualizado en agosto del mismo año. El nombre sugiere que podría tratarse de un modelo o colección de estilos orientado a generación visual, aunque no se dispone de documentación pública que lo confirme. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los archivos. A fecha de redacción de esta ficha, el repositorio registra cero descargas y seis likes, lo que indica una adopción muy limitada o un estado temprano de publicación.
 
-No se ha publicado ninguna especificación técnica, arquitectura, licencia o información de entrenamiento asociada a este repositorio. Toda la información disponible se limita a los metadatos básicos de HuggingFace, por lo que cualquier evaluación de capacidades o rendimiento resulta imposible sin acceso a los archivos y a documentación complementaria.
+No se ha publicado ninguna especificación técnica, arquitectura, licencia o información de entrenamiento asociada a este repositorio. Toda la información disponible se limita a los metadatos básicos de Hugging Face, por lo que cualquier evaluación de capacidades o rendimiento resulta imposible sin acceso a los archivos y a documentación complementaria.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no se puede verificar la arquitectura, el entrenamiento ni las capacidades.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade una barrera adicional para su evaluación.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade una barrera adicional para su evaluación.
 - Sin descargas registradas: el modelo no ha sido probado por la comunidad, por lo que no hay retroalimentación sobre su funcionamiento.
 - Licencia no especificada: no se conocen las restricciones de uso comercial o de redistribución.
 - Riesgo de alucinación o comportamiento inesperado: sin benchmarks ni pruebas independientes, cualquier uso en producción es arriesgado.
@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EllaPriest45/Krea2_Styles
+- Repositorio en Hugging Face: https://huggingface.co/EllaPriest45/Krea2_Styles
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) relacionados con este modelo en la información proporcionada.

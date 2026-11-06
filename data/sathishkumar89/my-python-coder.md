@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-python-coder es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct publicado por el usuario SathishKumar89 en HuggingFace. Se trata de un modelo derivado de 1.500 millones de parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace, segun la unica informacion que proporciona su model card. El repositorio tiene un tamano de 0,1 GB y, en el momento de redactar esta ficha, acumula 0 descargas y 1 like, por lo que es una publicacion practicamente sin adopcion ni validacion por parte de la comunidad.
+my-python-coder es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct publicado por el usuario SathishKumar89 en Hugging Face. Se trata de un modelo derivado de 1.500 millones de parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face, segun la unica informacion que proporciona su model card. El repositorio tiene un tamano de 0,1 GB y, en el momento de redactar esta ficha, acumula 0 descargas y 1 like, por lo que es una publicacion practicamente sin adopcion ni validacion por parte de la comunidad.
 
 A pesar del nombre ("my-python-coder"), que sugiere una especializacion en generacion de codigo Python, la model card no documenta el dataset de entrenamiento, el numero de tokens utilizados, el proceso de alineacion ni los idiomas soportados. El unico ejemplo de uso incluido es una pregunta generica de generacion de texto (una hipotetica maquina del tiempo), no una tarea de programacion. Tampoco se especifica una licencia concreta (el campo aparece como placeholder "license") ni se publican resultados de benchmarks.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada y de caracter practico: sirve como ejemplo de pipeline
 | Tipo de ajuste | SFT (supervised fine-tuning) con TRL |
 | Modelo base | Qwen/Qwen2.5-Coder-1.5B-Instruct |
 | Tamano del repositorio | 0,1 GB |
-| Compatibilidad de despliegue | Etiquetado como "endpoints_compatible" (HuggingFace Inference Endpoints) |
+| Compatibilidad de despliegue | Etiquetado como "endpoints_compatible" (Hugging Face Inference Endpoints) |
 | Fecha de publicacion | 13 de septiembre de 2026 (creacion y ultima actualizacion el mismo dia) |
 | Descargas / likes | 0 descargas / 1 like |
 
@@ -44,7 +44,7 @@ No se ha publicado ninguna evaluacion de capacidades especifica para este fine-t
 - Capacidades multilingues: no disponibles; el autor no declara idiomas.
 - Capacidades multimodales (vision, audio): no disponibles; el modelo base es exclusivamente de texto.
 - Modo "thinking" explicito: no disponible.
-- Compatibilidad con HuggingFace Inference Endpoints (etiqueta "endpoints_compatible").
+- Compatibilidad con Hugging Face Inference Endpoints (etiqueta "endpoints_compatible").
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ Estimaciones calculadas a partir del numero de parametros del modelo base (1,5B)
 - GPU recomendadas para fp16: NVIDIA RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A10, L4, A100 o H100 (estas dos ultimas sobredimensionadas para este tamano).
 - Cabe en GPU de consumo: si. En fp16 es comodo a partir de 8 GB de VRAM; con cuantizacion de 4 bits puede ejecutarse en GPUs de 6 GB o menos.
 - Ejecucion en CPU: viable con llama.cpp u Ollama, aunque requeriria convertir manualmente los pesos a GGUF, ya que el repositorio no incluye cuantizaciones.
-- Opciones de despliegue: transformers (soporte nativo declarado), HuggingFace Inference Endpoints (etiqueta "endpoints_compatible"), vLLM y TGI como servidores de inferencia compatibles con safetensors, y Ollama o llama.cpp previa conversion a GGUF. TRL se utiliza para entrenamiento, no para inferencia.
+- Opciones de despliegue: transformers (soporte nativo declarado), Hugging Face Inference Endpoints (etiqueta "endpoints_compatible"), vLLM y TGI como servidores de inferencia compatibles con safetensors, y Ollama o llama.cpp previa conversion a GGUF. TRL se utiliza para entrenamiento, no para inferencia.
 - Latencia y throughput estimados: no disponible.
 - Advertencia: el repositorio ocupa 0,1 GB, muy por debajo de los aproximadamente 3 GB esperables para pesos completos en bf16. Es posible que contenga unicamente adaptadores o que la carga este incompleta; conviene verificar el contenido del repositorio antes de planificar el despliegue.
 
@@ -83,10 +83,10 @@ Los datos de los modelos de comparacion provienen de sus respectivas model cards
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| my-python-coder | 1,5B | No disponible en su model card | No disponible | Ninguno | HuggingFace (0 descargas) |
-| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | 32.768 tokens | Apache-2.0 (segun su model card) | Si, en su model card | HuggingFace, ampliamente adoptado |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Si, en su model card | HuggingFace y ecosistema amplio |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | Si, en su model card | HuggingFace |
+| my-python-coder | 1,5B | No disponible en su model card | No disponible | Ninguno | Hugging Face (0 descargas) |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | 32.768 tokens | Apache-2.0 (segun su model card) | Si, en su model card | Hugging Face, ampliamente adoptado |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Si, en su model card | Hugging Face y ecosistema amplio |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | Si, en su model card | Hugging Face |
 
 Frente a estas alternativas, my-python-coder no aporta ninguna ventaja documentada: carece de licencia clara, de benchmarks y de adopcion. Su unico diferenciador declarado es el ajuste SFT, del que no se conhece ni el dataset ni el resultado.
 
@@ -106,7 +106,7 @@ Frente a estas alternativas, my-python-coder no aporta ninguna ventaja documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SathishKumar89/my-python-coder
+- Modelo en Hugging Face: https://huggingface.co/SathishKumar89/my-python-coder
 - Modelo base (Qwen2.5-Coder-1.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Cita de TRL incluida en la model card (von Werra et al., 2020): software TRL, licencia Apache-2.0, https://github.com/huggingface/trl

@@ -78,8 +78,8 @@ La información proporcionada no incluye otros clasificadores de voice phishing 
 
 | Modelo | Parametros | Contexto | Formato y tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voicekeeper-klue-bert | ~110 M | 512 (uso a 192) | ONNX int8, 111,4 MB | MIT | HuggingFace, 0 descargas |
-| klue/bert-base (base sin ajustar) | ~110 M | 512 | Safetensors/PyTorch, ~440 MB en fp32 | Licencia del modelo base, consultar en su repositorio | HuggingFace, ampliamente utilizado |
+| voicekeeper-klue-bert | ~110 M | 512 (uso a 192) | ONNX int8, 111,4 MB | MIT | Hugging Face, 0 descargas |
+| klue/bert-base (base sin ajustar) | ~110 M | 512 | Safetensors/PyTorch, ~440 MB en fp32 | Licencia del modelo base, consultar en su repositorio | Hugging Face, ampliamente utilizado |
 | Otros clasificadores coreanos de spam o phishing | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La ventaja diferencial frente al modelo base es el tamaño reducido y la ausencia de dependencia de PyTorch en producción; la contrapartida es que las métricas declaradas proceden de datos sintéticos y de un conjunto semilla de solo 48 ejemplos, sin comparación contra alternativas coreanas como KoBERT o KoELECTRA, para las que no hay datos en la información disponible.
@@ -100,7 +100,7 @@ La ventaja diferencial frente al modelo base es el tamaño reducido y la ausenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyuckpa03/voicekeeper-klue-bert
+- Modelo en Hugging Face: https://huggingface.co/hyuckpa03/voicekeeper-klue-bert
 - Modelo base klue/bert-base: https://huggingface.co/klue/bert-base
 - Demo del servicio VoiceKeeper: https://v-shield-ai-demo.onrender.com/
 - Script de reentrenamiento citado en la model card: scripts/ml/train_klue.py (ruta interna del proyecto, no se proporciona URL pública)

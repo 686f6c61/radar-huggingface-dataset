@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Entrada | Clases | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `litert-community/fcn_resnet101` | FCN + ResNet-101 | 520×520 fijo | 21 (VOC + fondo) | TFLite/LiteRT FP32 | no disponible | HuggingFace |
+| `litert-community/fcn_resnet101` | FCN + ResNet-101 | 520×520 fijo | 21 (VOC + fondo) | TFLite/LiteRT FP32 | no disponible | Hugging Face |
 | TorchVision `fcn_resnet101` (original) | FCN + ResNet-101 | variable | 21 (VOC + fondo) | PyTorch | no disponible en la información | PyTorch Hub / TorchVision |
 | `deeplabv3_resnet101` (TorchVision) | DeepLabV3 + ResNet-101 | variable | 21 (VOC + fondo) | PyTorch | no disponible en la información | TorchVision |
 
@@ -88,7 +88,7 @@ La comparación directa más relevante es con el modelo TorchVision original, de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/fcn_resnet101
+- Modelo en Hugging Face: https://huggingface.co/litert-community/fcn_resnet101
 - Modelo original TorchVision: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.segmentation.fcn_resnet101.html
 - Runtime LiteRT (`ai-edge-litert`): no se proporciona enlace en la información disponible.
 - Paper de referencia de FCN (Long et al.): no se proporciona enlace en la información disponible.

@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/Spherical-Fourier-Neural-Operators
+- Hugging Face: https://huggingface.co/OneScience-Group/Spherical-Fourier-Neural-Operators
 - Paper: https://proceedings.mlr.press/v202/bonev23a.html
 - Implementacion oficial de NVIDIA: https://github.com/NVIDIA/torch-harmonics
 - Repositorio principal de OneScience (Gitee): https://gitee.com/onescience-ai/onescience

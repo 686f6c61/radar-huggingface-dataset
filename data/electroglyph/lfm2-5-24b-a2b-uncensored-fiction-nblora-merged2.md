@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged2` es un ajuste fino (fine-tuning) del modelo `electroglyph/LFM2.5-24B-A2B-uncensored`, a su vez derivado de la familia LFM2.5 de Liquid AI. El autor, el usuario de HuggingFace `electroglyph`, lo ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL para especializarlo en generación de ficción. El nombre del repositorio indica una arquitectura de mezcla de expertos (MoE) con 24B de parámetros totales y 2B activos por token (sufijo `A2B`), aunque esta información no está confirmada en la model card.
+`electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged2` es un ajuste fino (fine-tuning) del modelo `electroglyph/LFM2.5-24B-A2B-uncensored`, a su vez derivado de la familia LFM2.5 de Liquid AI. El autor, el usuario de Hugging Face `electroglyph`, lo ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL para especializarlo en generación de ficción. El nombre del repositorio indica una arquitectura de mezcla de expertos (MoE) con 24B de parámetros totales y 2B activos por token (sufijo `A2B`), aunque esta información no está confirmada en la model card.
 
 El modelo resuelve el problema de la generación creativa de narrativa sin los filtros de alineación habituales: parte de una variante "uncensored" y se ha afinado adicionalmente sobre un dataset de ficción. El resultado es un modelo orientado a escritura creativa sin restricciones temáticas, con pesos fusionados (merged) listos para inferencia directa.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó con SFT y la técnica indicada en el nombre del rep
 - Generación de texto narrativo y ficción: es la capacidad principal para la que fue afinado.
 - Escritura creativa sin restricciones temáticas, al partir de una base "uncensored".
 - Generación de texto multi-turno mediante el pipeline de `transformers` (el ejemplo de la model card usa formato de chat con `role: user`).
-- Compatibilidad con `endpoints_compatible` (según tags), lo que permite desplegarlo en infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con `endpoints_compatible` (según tags), lo que permite desplegarlo en infraestructura de inferencia compatible con la API de Hugging Face.
 - Razonamiento general y código: presumiblemente heredados del modelo base, pero no documentados ni verificados.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente o multi-step reasoning: no disponible.
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 24B parámetros totales y pesos en bf16/fp16, el repositorio ocupa 97,9 GB, por lo que la inferencia en precisión completa requiere del orden de 48-50 GB de VRAM (más overhead de contexto y KV cache).
 - GPU recomendadas: A100 80 GB, H100 80 GB o configuraciones multi-GPU para precisión completa; en cuantización a 8 bits o 4 bits podría caber en una RTX 4090 (24 GB) o A6000 (48 GB), aunque no se han publicado cuantizaciones oficiales.
 - ¿Cabe en consumer GPU? En bf16 no cabe en ninguna GPU de consumo actual; en 4 bits (estimación no oficial) podría ajustarse en una RTX 4090, pero no hay GGUF publicado en el repo.
-- Opciones de despliegue: `transformers` con `device_map="auto"` (según la model card), endpoints compatibles con la API de HuggingFace (tag `endpoints_compatible`), y potencialmente vLLM o TGI si la arquitectura MoE es compatible, aunque no está confirmado. No hay GGUF ni Ollama en el repo.
+- Opciones de despliegue: `transformers` con `device_map="auto"` (según la model card), endpoints compatibles con la API de Hugging Face (tag `endpoints_compatible`), y potencialmente vLLM o TGI si la arquitectura MoE es compatible, aunque no está confirmado. No hay GGUF ni Ollama en el repo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged2 | 24B | 2B | no disponible | no disponible | HuggingFace (0 descargas) |
-| electroglyph/LFM2.5-24B-A2B-uncensored (base) | 24B | 2B | no disponible | no disponible | HuggingFace |
+| electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged2 | 24B | 2B | no disponible | no disponible | Hugging Face (0 descargas) |
+| electroglyph/LFM2.5-24B-A2B-uncensored (base) | 24B | 2B | no disponible | no disponible | Hugging Face |
 | Familia LFM2.5 original (Liquid AI) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged2
+- Hugging Face: https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged2
 - Modelo base: https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored
 - Run de Weights & Biases: https://wandb.ai/electroglyph-n-a/fiction-nblora/runs/lupq05g0
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -89,7 +89,7 @@ La diferencia clave frente a Grounding DINO es que CLIPSeg devuelve máscaras en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlboydaisuke/CLIPSeg-rd64-refined-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/mlboydaisuke/CLIPSeg-rd64-refined-ExecuTorch
 - Modelo base: https://huggingface.co/CIDAS/clipseg-rd64-refined
 - Conversión ONNX (Xenova): https://huggingface.co/Xenova/clipseg-rd64-refined
 - Versión fp16 (Kijai): https://huggingface.co/Kijai/clipseg-rd64-refined-fp16

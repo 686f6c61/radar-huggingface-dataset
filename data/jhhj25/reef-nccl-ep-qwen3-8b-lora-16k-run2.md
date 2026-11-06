@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `jhhj25/reef-nccl-ep-qwen3-8b-lora-16k-run2` | Adaptador LoRA rank 32 sobre 8B | Tarea de 16384 tokens | Apache 2.0 | HuggingFace | 16 checkpoints, mejor config 191.45 GB/s |
-| `jhhj25/reef-nccl-ep-qwen3-8b-lora-discovery-16step` | No disponible | No disponible | No disponible | HuggingFace | Mismo autor, posiblemente similar, sin datos suficientes |
-| `Qwen/Qwen3-8B` (base) | 8B dense | No disponible | Apache 2.0 | HuggingFace | Modelo base sin adaptador, no entrenado para tuning de kernels |
+| `jhhj25/reef-nccl-ep-qwen3-8b-lora-16k-run2` | Adaptador LoRA rank 32 sobre 8B | Tarea de 16384 tokens | Apache 2.0 | Hugging Face | 16 checkpoints, mejor config 191.45 GB/s |
+| `jhhj25/reef-nccl-ep-qwen3-8b-lora-discovery-16step` | No disponible | No disponible | No disponible | Hugging Face | Mismo autor, posiblemente similar, sin datos suficientes |
+| `Qwen/Qwen3-8B` (base) | 8B dense | No disponible | Apache 2.0 | Hugging Face | Modelo base sin adaptador, no entrenado para tuning de kernels |
 
 No se han encontrado modelos comparables publicados con datos suficientes para una comparativa mas detallada.
 
@@ -84,7 +84,7 @@ No se han encontrado modelos comparables publicados con datos suficientes para u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-16k-run2
+- Modelo en Hugging Face: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-16k-run2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo similar del mismo autor: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-discovery-16step
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web.

@@ -74,7 +74,7 @@ No hay datos de benchmarks para comparar directamente. La diferencia principal r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-MLX-8bit
 - Modelo base: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B
 - Version 4-bit: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-MLX-4bit (referencia en la card)
 - Tutorial de ejecucion rapida: https://www.lisselbo.se/wp/2026/07/08/quick-run-qwen3-5-9b-mlx-8bit-2026-2027-tutorial/

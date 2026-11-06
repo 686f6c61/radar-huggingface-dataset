@@ -95,7 +95,7 @@ El export no aporta un modelo distinto, sino un formato y un entorno de ejecucio
 
 ## Enlaces
 
-- HuggingFace (este export): https://huggingface.co/beshkenadze/nemotron-3-diarization-onnx
+- Hugging Face (este export): https://huggingface.co/beshkenadze/nemotron-3-diarization-onnx
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Modelo base (preview): https://huggingface.co/nvidia/Nemotron-3-Diarization-preview
 - Ficheros del preview: https://huggingface.co/nvidia/Nemotron-3-Diarization-preview/tree/main

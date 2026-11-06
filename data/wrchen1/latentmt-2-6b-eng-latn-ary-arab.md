@@ -31,7 +31,7 @@ El entrenamiento se realizo con un enfoque de ajuste ligero (lightweight trainin
 
 - Traduccion automatica del ingles al arabe marroqui (ary_Arab) con calidad comparable a modelos de 3-5 veces mayores.
 - Razonamiento latente: realiza pasos de refinamiento interno en los estados ocultos sin generar tokens de cadena de pensamiento visibles.
-- Generacion de texto en formato causal estandar, compatible con el pipeline de `text-generation` de HuggingFace.
+- Generacion de texto en formato causal estandar, compatible con el pipeline de `text-generation` de Hugging Face.
 - Integracion con el ecosistema PEFT/transformers, permitiendo cargar el adaptador sobre el modelo base con pocas lineas de codigo.
 - Soporte para cuantizacion mediante bitsandbytes (segun dependencias declaradas).
 - Disenado especificamente para investigacion en traduccion automatica, con configuracion reproducible.
@@ -80,7 +80,7 @@ La comparativa muestra que LatentMT se posiciona como una alternativa eficiente 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-ary-arab
+- Repositorio Hugging Face: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-ary-arab
 - Articulo arXiv (PDF): https://arxiv.org/pdf/2607.18618
 - Articulo arXiv (HTML): https://arxiv.org/html/2607.18618v1
 - Modelo base: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking

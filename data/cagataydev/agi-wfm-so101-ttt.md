@@ -77,8 +77,8 @@ Desglose por pieza: la pieza x es el lado debil, con 46,7 % de exito frente al 8
 
 | Modelo | Parametros | Tipo | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agi-wfm/so101-ttt | 4B | Politica de acciones (Cosmos3-Edge) | 2 frames 256x256 + estado + tarea; salida 32x6 acciones | OpenMDW-1.1 | HuggingFace, LeRobot, API agi.diy |
-| nvidia/Cosmos3-Edge | 4B | Modelo de mundo base | no disponible | no disponible en la informacion | HuggingFace (modelo base) |
+| agi-wfm/so101-ttt | 4B | Politica de acciones (Cosmos3-Edge) | 2 frames 256x256 + estado + tarea; salida 32x6 acciones | OpenMDW-1.1 | Hugging Face, LeRobot, API agi.diy |
+| nvidia/Cosmos3-Edge | 4B | Modelo de mundo base | no disponible | no disponible en la informacion | Hugging Face (modelo base) |
 | Politicas LeRobot genericas (p. ej. ACT, Diffusion Policy) | no disponible | Politica de acciones | Depende de la configuracion | no disponible | LeRobot |
 | Modelos de mundo de gran escala (familia Cosmos) | no disponible | Modelo de mundo | no disponible | no disponible | NVIDIA |
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparables de las alternativas en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cagataydev/agi-wfm-so101-ttt
+- Modelo en Hugging Face: https://huggingface.co/cagataydev/agi-wfm-so101-ttt
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge
 - Demo interactiva: https://api.agi.diy/play
 - Panel de claves API: https://api.agi.diy/dashboard

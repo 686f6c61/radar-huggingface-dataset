@@ -6,7 +6,7 @@ minicpm5-2b-distilled-reasoning-GGUF es una recopilación de cuantizaciones en f
 
 El modelo resulta relevante por su perfil de despliegue: con cuantizaciones Q4_K_M de aproximadamente 1,5 GB y requisitos mínimos de 2 GB de VRAM, es ejecutable en GPU de consumo e incluso en equipos con recursos limitados mediante llama.cpp, LM Studio u Ollama. Esto lo sitúa en la categoría de modelos pequeños orientados a razonamiento con cadena de pensamiento, un nicho donde el coste por token y la posibilidad de ejecución local son factores decisivos.
 
-La ficha se basa exclusivamente en la información publicada por el autor en HuggingFace. Cabe señalar que la búsqueda web asociada no devolvió ningún resultado relevante sobre el modelo, por lo que no hay verificación independiente de los datos de entrenamiento ni resultados de benchmarks de terceros. La licencia es Apache 2.0, los idiomas soportados son inglés y chino, y el contexto máximo declarado es de 4.096 tokens.
+La ficha se basa exclusivamente en la información publicada por el autor en Hugging Face. Cabe señalar que la búsqueda web asociada no devolvió ningún resultado relevante sobre el modelo, por lo que no hay verificación independiente de los datos de entrenamiento ni resultados de benchmarks de terceros. La licencia es Apache 2.0, los idiomas soportados son inglés y chino, y el contexto máximo declarado es de 4.096 tokens.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos. La busqueda web no devolvio informacion sob
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/tinyopsec/minicpm5-2b-distilled-reasoning-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/tinyopsec/minicpm5-2b-distilled-reasoning-GGUF
 - Modelo original sin cuantizar: https://huggingface.co/jigs97022/minicpm5-2b-distilled-reasoning
 - Dataset de destilacion citado: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation
 - Modelo base de la arquitectura: openbmb/MiniCPM5-2B (referenciado en la model card; no se proporciona URL directa en la informacion disponible)

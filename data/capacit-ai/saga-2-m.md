@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saga-2-m es un modelo de reconocimiento automatico del habla (ASR) publicado por capacit-ai en HuggingFace, especializado en danes (codigo de idioma `da`) y disenado para transcripcion de audio a texto. El repositorio declara la pipeline `automatic-speech-recognition`, un total de 1.238.266.880 parametros (aproximadamente 1,24 mil millones) en formato safetensors y un tamano de repositorio de 2,5 GB, coherente con pesos almacenados en bf16/fp16. Se distribuye bajo licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar las condiciones en HuggingFace.
+Saga-2-m es un modelo de reconocimiento automatico del habla (ASR) publicado por capacit-ai en Hugging Face, especializado en danes (codigo de idioma `da`) y disenado para transcripcion de audio a texto. El repositorio declara la pipeline `automatic-speech-recognition`, un total de 1.238.266.880 parametros (aproximadamente 1,24 mil millones) en formato safetensors y un tamano de repositorio de 2,5 GB, coherente con pesos almacenados en bf16/fp16. Se distribuye bajo licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar las condiciones en Hugging Face.
 
 La relevancia del modelo esta en su enfoque monoidioma: frente a los modelos ASR multilingues genericos, Saga-2-m concentra su entrenamiento en danes, un idioma con menos recursos y con gran variabilidad dialectal. Las etiquetas del repositorio incluyen `whisper` y `qwen3`, lo que sugiere una arquitectura derivada o hibrida basada en esos componentes, aunque la informacion disponible no detalla la composicion exacta del encoder ni del decoder. El autor declara resultados en cinco conjuntos de evaluacion en danes (CoRal, FTSpeech, FLEURS y Common Voice), con valores de WER entre 6,08 y 18,38.
 
@@ -22,7 +22,7 @@ Se trata de un modelo publicado muy recientemente (creado el 13 de septiembre de
 | Formato de pesos | safetensors |
 | Tarea (pipeline) | automatic-speech-recognition |
 | Tamano del repositorio | 2,5 GB |
-| Acceso | Restringido: requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido: requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ En cuanto a los datos de entrenamiento, el model-index referencia los conjuntos 
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor del modelo en el model-index del repositorio (todos marcados como `verified: false`, es decir, no verificados por HuggingFace ni por un tercero independiente):
+Resultados declarados por el autor del modelo en el model-index del repositorio (todos marcados como `verified: false`, es decir, no verificados por Hugging Face ni por un tercero independiente):
 
 | Conjunto de evaluacion | Split | WER | CER |
 |---|---|---|---|
@@ -72,9 +72,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K ni eq
 - En la practica, para bf16 conviene reservar entre 4 y 6 GB de VRAM considerando activaciones, cache y procesamiento por lotes de audio.
 - Cabe en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 ejecutan el modelo sin problema en bf16 e incluso con lotes moderados.
 - GPU de centro de datos recomendadas para alto throughput: A100 40/80 GB, H100 80 GB, L40S o A10G, especialmente para servir peticiones concurrentes por lotes.
-- Opciones de despliegue: la pipeline `automatic-speech-recognition` de HuggingFace Transformers es la via directa. TGI (Text Generation Inference) y vLLM incluyen soporte para arquitecturas ASR tipo encoder-decoder, pero su compatibilidad con esta arquitectura concreta no esta confirmada en la informacion disponible. No se han publicado conversiones a GGUF ni integraciones en Ollama o whisper.cpp.
+- Opciones de despliegue: la pipeline `automatic-speech-recognition` de Hugging Face Transformers es la via directa. TGI (Text Generation Inference) y vLLM incluyen soporte para arquitecturas ASR tipo encoder-decoder, pero su compatibilidad con esta arquitectura concreta no esta confirmada en la informacion disponible. No se han publicado conversiones a GGUF ni integraciones en Ollama o whisper.cpp.
 - Latencia y throughput estimados: no disponible. El autor no publica mediciones de latencia ni de RTF (real-time factor).
-- Nota operativa: al ser un repositorio con acceso restringido, la descarga y el despliegue requieren autenticacion y aceptacion previa de condiciones en HuggingFace.
+- Nota operativa: al ser un repositorio con acceso restringido, la descarga y el despliegue requieren autenticacion y aceptacion previa de condiciones en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -96,13 +96,13 @@ La busqueda web realizada no ha devuelto informacion tecnica util sobre estos mo
 - Sesgos: la composicion del dataset de entrenamiento no se detalla, por lo que no es posible evaluar sesgos por acento, dialecto, edad, genero o condicion sociolinguistica dentro del danes. La cobertura de dialectos regionales daneses es una incognita.
 - Limitaciones de contexto y audio largo: no se documenta la ventana de audio maxima ni la estrategia de troceado para audios largos, ni el soporte de marcas de tiempo o segmentacion. El uso en audio de mas de unos minutos debe validarse empiricamente.
 - Capacidades no documentadas: no hay informacion sobre diarizacion de hablantes, deteccion de actividad vocal, puntuacion automatica, transcripcion en streaming ni normalizacion de texto.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion, pero el repositorio esta restringido (gated), por lo que el acceso y la descarga estan sujetos a las condiciones aceptadas en HuggingFace. Conviene revisar dichas condiciones antes de integrarlo en un producto.
+- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion, pero el repositorio esta restringido (gated), por lo que el acceso y la descarga estan sujetos a las condiciones aceptadas en Hugging Face. Conviene revisar dichas condiciones antes de integrarlo en un producto.
 - Madurez: modelo publicado recientemente (13 de septiembre de 2026, actualizado el 20 de septiembre de 2026), con 132 descargas y 10 "me gusta". La comunidad no ha acumulado aun reportes de uso en produccion.
 - Entorno de produccion: no hay cuantizaciones publicadas ni conversiones a GGUF; desplegarlo en CPU o en entornos con poca memoria exigira generar las conversiones por cuenta propia, sin garantia de que preserven la calidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/capacit-ai/saga-2-m
+- Modelo en Hugging Face: https://huggingface.co/capacit-ai/saga-2-m
 - Dataset CoRal: https://huggingface.co/datasets/alexandrainst/coral
 - Dataset FTSpeech: https://huggingface.co/datasets/alexandrainst/ftspeech
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs

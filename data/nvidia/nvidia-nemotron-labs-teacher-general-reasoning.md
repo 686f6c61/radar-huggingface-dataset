@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - NVIDIA-Nemotron-Labs-Teacher-General-Reasoning](https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning)
+- [Hugging Face - NVIDIA-Nemotron-Labs-Teacher-General-Reasoning](https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning)
 - [Technical Report (PDF)](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf)
 - [Página de Nemotron de NVIDIA](https://developer.nvidia.com/nemotron)
 - [Colección de datasets de pre-entrenamiento](https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets)

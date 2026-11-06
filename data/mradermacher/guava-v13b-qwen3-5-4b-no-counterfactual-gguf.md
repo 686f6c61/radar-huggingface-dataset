@@ -27,7 +27,7 @@ La relevancia practica del repositorio es la de facilitar inferencia local de mu
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo de origen en la informacion proporcionada. Los metadatos de la conversion indican unicamente `convert_type: hf` (conversion desde pesos HuggingFace a GGUF), `quantize_version: 2` y `output_tensor_quantised: 1`, lo que implica que la cuantizacion afecta a los tensores de salida. La nomenclatura del modelo base remite a una posible familia Qwen (`qwen3.5-4b`) y a un identificador interno de proyecto (`guava-v13b`), pero ninguno de esos identificadores es coherente con los 333,5 millones de parametros declarados, por lo que no es posible confirmar ni el backbone, ni el numero de capas, ni la dimensionalidad del modelo.
+No se dispone de informacion sobre la arquitectura interna del modelo de origen en la informacion proporcionada. Los metadatos de la conversion indican unicamente `convert_type: hf` (conversion desde pesos Hugging Face a GGUF), `quantize_version: 2` y `output_tensor_quantised: 1`, lo que implica que la cuantizacion afecta a los tensores de salida. La nomenclatura del modelo base remite a una posible familia Qwen (`qwen3.5-4b`) y a un identificador interno de proyecto (`guava-v13b`), pero ninguno de esos identificadores es coherente con los 333,5 millones de parametros declarados, por lo que no es posible confirmar ni el backbone, ni el numero de capas, ni la dimensionalidad del modelo.
 
 Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO. El sufijo `no-counterfactual` sugiere que el modelo base fue entrenado evitando ejemplos contrafactuales, pero se trata de una inferencia a partir del nombre y no de un dato documentado. Se recomienda consultar el repositorio del modelo original antes de cualquier uso en produccion.
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia de este 
 |---|---|---|---|---|---|
 | guava-v13b-qwen3.5-4b-no-counterfactual (este) | 333,5 M | no disponible | no disponible | GGUF (12 cuantizaciones), safetensors en el origen | Requiere verificar el modelo base y la licencia |
 | Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache-2.0 | safetensors, GGUF | Referencia publica de la familia Qwen2.5 |
-| SmolLM2-360M | ~362 M | 8.192 tokens | Apache-2.0 | safetensors, GGUF | Modelo pequeno de HuggingFace, orientado a edge |
+| SmolLM2-360M | ~362 M | 8.192 tokens | Apache-2.0 | safetensors, GGUF | Modelo pequeno de Hugging Face, orientado a edge |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que no es posible establecer una jerarquia de calidad.
 

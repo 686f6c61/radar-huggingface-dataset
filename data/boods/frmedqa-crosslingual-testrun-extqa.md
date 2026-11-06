@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrMedQA-CrossLingual-TestRun-ExtQA es un modelo de generación de texto publicado en HuggingFace por el usuario boods, obtenido mediante ajuste fino (fine-tuning) supervisado del modelo base unsloth/Qwen3-14B-unsloth-bnb-4bit, que a su vez es una versión cuantizada a 4 bits de Qwen3-14B. El repositorio se creó el 18 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que se trata de un experimento de ajuste fino sin validación pública ni adopción por parte de la comunidad.
+FrMedQA-CrossLingual-TestRun-ExtQA es un modelo de generación de texto publicado en Hugging Face por el usuario boods, obtenido mediante ajuste fino (fine-tuning) supervisado del modelo base unsloth/Qwen3-14B-unsloth-bnb-4bit, que a su vez es una versión cuantizada a 4 bits de Qwen3-14B. El repositorio se creó el 18 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que se trata de un experimento de ajuste fino sin validación pública ni adopción por parte de la comunidad.
 
 La model card es mínima: solo indica el autor, la licencia Apache 2.0, el modelo base y que el entrenamiento se realizó con Unsloth, con una aceleración declarada de 2x respecto a un pipeline estándar. No se documentan datos de entrenamiento, hiperparámetros, composición del dataset ni métricas de evaluación. El nombre del repositorio sugiere un ajuste orientado a preguntas y respuestas médicas en francés con evaluación cross-lingual ("FrMedQA-CrossLingual-TestRun-ExtQA"), pero esto es una inferencia a partir del identificador y no una afirmación respaldada por la documentación disponible.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| boods/FrMedQA-CrossLingual-TestRun-ExtQA | 14,8 B (base) | No disponible para el ajuste; 32 K nativos en el base | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen3-14B (modelo base sin ajustar) | 14,8 B | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | HuggingFace y ecosistema amplio | Benchmarks publicados por el equipo de Qwen |
-| Qwen3-8B | 8,2 B | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | HuggingFace | Benchmarks publicados por el equipo de Qwen |
-| Qwen2.5-14B-Instruct | 14,7 B | 32 768 nativos, 131 072 con YaRN | Apache 2.0 (salvo excepciones por tamaño) | HuggingFace | Benchmarks publicados por el equipo de Qwen |
+| boods/FrMedQA-CrossLingual-TestRun-ExtQA | 14,8 B (base) | No disponible para el ajuste; 32 K nativos en el base | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen3-14B (modelo base sin ajustar) | 14,8 B | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | Hugging Face y ecosistema amplio | Benchmarks publicados por el equipo de Qwen |
+| Qwen3-8B | 8,2 B | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | Hugging Face | Benchmarks publicados por el equipo de Qwen |
+| Qwen2.5-14B-Instruct | 14,7 B | 32 768 nativos, 131 072 con YaRN | Apache 2.0 (salvo excepciones por tamaño) | Hugging Face | Benchmarks publicados por el equipo de Qwen |
 
 La comparación directa con alternativas ajustadas para QA médico no es posible con la información disponible: no se conocen los datos de entrenamiento ni las métricas de este repositorio.
 
@@ -88,7 +88,7 @@ La comparación directa con alternativas ajustadas para QA médico no es posible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-ExtQA
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-ExtQA
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces obtenidos correspondían a contenidos sin relación (foros sobre software de audio), por lo que se han descartado.

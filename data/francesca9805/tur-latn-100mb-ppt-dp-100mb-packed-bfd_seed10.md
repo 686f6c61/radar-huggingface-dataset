@@ -4,7 +4,7 @@
 
 El modelo `francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/tur_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones) orientado a la generacion de texto. Lo publica el usuario francesca9805 y se ha entrenado con la libreria TRL (version 0.23.0), lo que lo situa en la categoria de modelos pequenos de generacion de texto, no de asistentes conversacionales de gran escala.
 
-El interes tecnico de esta ficha es limitado pero claro: se trata de un modelo derivado de la familia Goldfish, un conjunto de modelos monolingues entrenados para cientos de idiomas con recursos limitados. El sufijo `tur_latn` del modelo base indica turco en escritura latina, de modo que el ajuste fino se orienta presumiblemente a ese idioma, aunque la metadata de HuggingFace no declara idiomas soportados de forma explicita. Con cero descargas y cero "likes" en el momento de la consulta, se trata de un experimento de investigacion mas que de un artefacto listo para produccion.
+El interes tecnico de esta ficha es limitado pero claro: se trata de un modelo derivado de la familia Goldfish, un conjunto de modelos monolingues entrenados para cientos de idiomas con recursos limitados. El sufijo `tur_latn` del modelo base indica turco en escritura latina, de modo que el ajuste fino se orienta presumiblemente a ese idioma, aunque la metadata de Hugging Face no declara idiomas soportados de forma explicita. Con cero descargas y cero "likes" en el momento de la consulta, se trata de un experimento de investigacion mas que de un artefacto listo para produccion.
 
 Su relevancia actual es acotada y de caracter metodologico: sirve como ejemplo reproducible de pipeline SFT con TRL sobre un modelo monolingue pequeno, con enlaces a la ejecucion de Weights & Biases y versiones de framework documentadas. No compite en capacidad con modelos generativos actuales de mayor tamano y no se han publicado resultados de benchmarks asociados.
 
@@ -12,7 +12,7 @@ Su relevancia actual es acotada y de caracter metodologico: sirve como ejemplo r
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only basada en GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only basada en GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (dato real del repositorio en safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (la arquitectura GPT-2 suele operar con 1024 tokens, dato no confirmado para este modelo) |
@@ -33,11 +33,11 @@ El entrenamiento es un SFT (supervised fine-tuning) ejecutado con TRL 0.23.0, Tr
 
 - Generacion de texto autoregresiva: completion de frases, parrafos y documentos cortos, heredada de la arquitectura GPT-2.
 - Ajuste instruccional basico: al haberse entrenado con SFT siguiendo el flujo de TRL, el modelo acepta entradas con formato de chat (`{"role": "user", "content": ...}`) segun el ejemplo de la model card, aunque no se documenta la plantilla exacta ni la calidad del seguimiento de instrucciones.
-- Cobertura linguistica: presumiblemente turco en escritura latina, por herencia del modelo base; no hay confirmacion en la metadata de HuggingFace ni evaluacion multilingue publicada.
+- Cobertura linguistica: presumiblemente turco en escritura latina, por herencia del modelo base; no hay confirmacion en la metadata de Hugging Face ni evaluacion multilingue publicada.
 - Sin soporte documentado de tool calling ni function calling.
 - Sin soporte documentado de agentes, razonamiento multi-paso, modo "thinking" ni planificacion.
 - Sin capacidades multimodales: no hay vision, audio ni entrada distinta de texto.
-- Compatible con el ecosistema HuggingFace (`transformers`, pipelines) y con Text Generation Inference segun las etiquetas del repositorio.
+- Compatible con el ecosistema Hugging Face (`transformers`, pipelines) y con Text Generation Inference segun las etiquetas del repositorio.
 
 ## Casos de uso
 
@@ -59,15 +59,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, RTX 4090, A100 o H100. El modelo esta sobredimensionado para hardware de datacenter; no requiere aceleradores de gama alta.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual y tambien en GPUs integradas con memoria compartida suficiente.
 - Inferencia en CPU: viable, con latencias de decenas a cientos de milisegundos por token segun el procesador; adecuada para pruebas, no para produccion de alto throughput.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (etiqueta `endpoints_compatible`), HuggingFace Inference Endpoints y vLLM (soporta arquitecturas GPT-2). Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no publica ese formato.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (etiqueta `endpoints_compatible`), Hugging Face Inference Endpoints y vLLM (soporta arquitecturas GPT-2). Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no publica ese formato.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10 | 124.770.816 | No disponible | GPT-2 ajustado con SFT | No disponible | HuggingFace, safetensors |
-| goldfish-models/tur_latn_100mb (modelo base) | No disponible en la informacion (misma familia, escala de ~100 MB de datos de entrenamiento) | No disponible | GPT-2 monolingue turco | No disponible | HuggingFace |
+| francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10 | 124.770.816 | No disponible | GPT-2 ajustado con SFT | No disponible | Hugging Face, safetensors |
+| goldfish-models/tur_latn_100mb (modelo base) | No disponible en la informacion (misma familia, escala de ~100 MB de datos de entrenamiento) | No disponible | GPT-2 monolingue turco | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre ambos modelos ni de otras alternativas de la misma categoria en la informacion proporcionada. La comparacion con modelos turcos de tipo encoder (por ejemplo, variantes BERT) no seria homogenea, ya que estos no estan orientados a generacion de texto.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre ambos modelos ni de otra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tur_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ab96td53

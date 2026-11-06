@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sorenvza/nyxel-illustrious es un repositorio de pesos publicado en HuggingFace por el usuario Sorenvza. La informacion disponible en la ficha de HuggingFace es minima: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio cuenta con 0 descargas y 1 like en el momento de la consulta. El unico tag presente es region:us, que es un metadato geografico generico y no aporta informacion tecnica sobre el modelo.
+Sorenvza/nyxel-illustrious es un repositorio de pesos publicado en Hugging Face por el usuario Sorenvza. La informacion disponible en la ficha de Hugging Face es minima: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio cuenta con 0 descargas y 1 like en el momento de la consulta. El unico tag presente es region:us, que es un metadato geografico generico y no aporta informacion tecnica sobre el modelo.
 
 El dato objetivo mas relevante es el tamano del repositorio, 6,9 GB, junto con las fechas de creacion y actualizacion (28 de septiembre de 2026, con dos minutos de diferencia entre ambas), lo que sugiere una subida unica sin iteraciones posteriores documentadas. El identificador del modelo incluye el termino "illustrious", asociado habitualmente a la familia de modelos de generacion de imagenes de estilo anime derivada de Stable Diffusion XL, y el tamano del repositorio es compatible con un checkpoint de difusion en precision fp16. Esta correspondencia es una hipotesis razonada a partir del nombre y del peso del repositorio, no un dato confirmado por el autor.
 
@@ -45,7 +45,7 @@ No se ha publicado ninguna lista de capacidades en la informacion disponible. A 
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo thinking, vision, audio, control de estilo, LoRA, inpainting): no disponible.
 
-La unica capacidad verificable a partir de los metadatos es la existencia de un repositorio de pesos descargable de 6,9 GB alojado en HuggingFace.
+La unica capacidad verificable a partir de los metadatos es la existencia de un repositorio de pesos descargable de 6,9 GB alojado en Hugging Face.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No se dispone de datos verificados del modelo (parametros, contexto, licencia, r
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sorenvza/nyxel-illustrious | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Sorenvza/nyxel-illustrious | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No se dispone de datos verificados del modelo (parametros, contexto, licencia, r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sorenvza/nyxel-illustrious
+- Hugging Face: https://huggingface.co/Sorenvza/nyxel-illustrious
 - No se han encontrado otros enlaces (papers, repositorios, demos o blogs) en la informacion proporcionada.

@@ -105,7 +105,7 @@ Frente a `whisper-medium` multilingue, esta variante es algo mas rapida y ligera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tryambientai/whisper-medium.en-gguf
+- Repositorio Hugging Face: https://huggingface.co/tryambientai/whisper-medium.en-gguf
 - Modelo base: https://huggingface.co/openai/whisper-medium.en
 - Commit upstream fijado: https://huggingface.co/openai/whisper-medium.en/commit/2e98eb6
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

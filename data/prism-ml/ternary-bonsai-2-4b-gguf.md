@@ -6,14 +6,14 @@ Ternary-Bonsai-2-4B es un modelo vision-lenguaje de clase 4B cuyos pesos de leng
 
 El problema que resuelve es el despliegue de un VLM multimodal con contexto muy largo en memoria muy reducida: el modelo de lenguaje ocupa 1,15 GB en el empaquetado PQ2_0, frente a los ~8,4 GB del mismo modelo en FP16, y 0,95 GB en PTQ1_0. Los pesos ternarios nunca se expanden a FP16 en tiempo de ejecucion; se consumen directamente mediante kernels personalizados incluidos en el fork de llama.cpp de PrismML (rama `prism`), con soporte para CUDA, Metal y CPU. Es relevante porque demuestra inferencia multimodal de contexto 262K en hardware de consumo y en CPU, con licencia Apache 2.0.
 
-Los tres empaquetados publicados (PTQ1_0, PQ2_0 y Q2_0) contienen exactamente los mismos pesos ternarios y solo difieren en el layout de almacenamiento y en la velocidad de kernel. El repositorio incluye tambien cabezales opcionales de decodificacion especulativa (MTP y DFlash2). El modelo acumula 4.761 descargas y 19 likes en HuggingFace desde su publicacion en septiembre de 2026.
+Los tres empaquetados publicados (PTQ1_0, PQ2_0 y Q2_0) contienen exactamente los mismos pesos ternarios y solo difieren en el layout de almacenamiento y en la velocidad de kernel. El repositorio incluye tambien cabezales opcionales de decodificacion especulativa (MTP y DFlash2). El modelo acumula 4.761 descargas y 19 likes en Hugging Face desde su publicacion en septiembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer hibrido de atencion (3 capas de atencion lineal por cada capa de atencion completa; 24 lineales + 8 completas), SwiGLU MLP, RoPE, RMSNorm; 32 bloques, hidden 2560, embedding y LM head atados |
-| Parametros totales | ~4,21B en el modelo de lenguaje + ~0,33B en la torre de vision (24 bloques). Nota: la ficha de HuggingFace declara 782.004.736 parametros en safetensors, dato que no coincide con la model card; probablemente corresponde a una medicion parcial o erronea del repo GGUF |
+| Parametros totales | ~4,21B en el modelo de lenguaje + ~0,33B en la torre de vision (24 bloques). Nota: la ficha de Hugging Face declara 782.004.736 parametros en safetensors, dato que no coincide con la model card; probablemente corresponde a una medicion parcial o erronea del repo GGUF |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 262.144 tokens (heredada del modelo base) |
 | Tipos de cuantizacion | Ternaria {−1, 0, +1} con escalas FP16 por grupo, en tres empaquetados: PTQ1_0 (~1,81 bits/peso), PQ2_0 (~2,18 bits/peso), Q2_0 (~2,31 bits/peso). Normalizacion y ruta de estado de atencion lineal (`ssm_alpha`, `ssm_beta`) se mantienen en F32. Torre de vision en Q8_0 o BF16 |
@@ -84,7 +84,7 @@ La comparativa se limita a lo declarado en la model card: el mismo modelo base e
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks: no hay ninguna evaluacion publicada, por lo que no se puede estimar la degradacion de calidad frente al modelo base en FP16 ni frente a cuantizaciones de 4 o 8 bits.
-- Discrepancia en el recuento de parametros: HuggingFace reporta 782.004.736 parametros en safetensors mientras la model card declara ~4,21B en el modelo de lenguaje mas ~0,33B en la torre de vision. Conviene verificar el dato antes de usarlo en documentacion tecnica.
+- Discrepancia en el recuento de parametros: Hugging Face reporta 782.004.736 parametros en safetensors mientras la model card declara ~4,21B en el modelo de lenguaje mas ~0,33B en la torre de vision. Conviene verificar el dato antes de usarlo en documentacion tecnica.
 - Compatibilidad limitada de runtime: solo el fork PrismML-Eng/llama.cpp ejecuta PTQ1_0, PQ2_0, MTP y DFlash2. Upstream llama.cpp unicamente acepta Q2_0. Esto ata el despliegue a un fork mantenido por el propio autor.
 - Inestabilidad documentada del proyector BF16: la model card advierte de que el mmproj BF16 puede provocar caidas de `llama-server` cuando se procesan varias peticiones con imagen simultaneas; se recomienda Q8_0, con calidad casi identica.
 - Idiomas soportados: no disponibles. No se puede asumir cobertura multilingue sin verificacion.
@@ -97,7 +97,7 @@ La comparativa se limita a lo declarado en la model card: el mismo modelo base e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf
+- Modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf
 - Web de Prism ML: https://prismml.com
 - Repositorio de demo y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo
 - Fork de llama.cpp con los kernels ternarios (rama `prism`): https://github.com/PrismML-Eng/llama.cpp

@@ -98,7 +98,7 @@ Los datos de parametros y resolucion de Stable Diffusion 1.5 y SDXL proceden del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matrixportalx/epiCRealism_NaturalSin
+- Modelo en Hugging Face: https://huggingface.co/matrixportalx/epiCRealism_NaturalSin
 - Repositorio de conversion de SD 1.5 a Qualcomm QNN: https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model
 - Los resultados de la busqueda web proporcionada no contienen enlaces relevantes para este modelo (unicamente paginas corporativas de Microsoft), por lo que no se listan.
 - No se dispone de enlaces a paper, blog tecnico, demo o model card ampliada en la informacion proporcionada.

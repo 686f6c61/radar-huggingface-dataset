@@ -64,12 +64,12 @@ No es posible realizar una comparativa significativa porque este modelo no está
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio, según la propia model card.
 - No debe utilizarse en producción ni para tomar decisiones basadas en sus salidas.
 - Riesgo de alucinación: al no estar entrenado, cualquier salida generada será aleatoria o basada en la inicialización, sin significado semántico.
-- No hay garantías de que la implementación sea compatible con las APIs estándar de HuggingFace Transformers; la model card advierte que se requiere un adaptador explícito para cargarlo con APIs genéricas.
+- No hay garantías de que la implementación sea compatible con las APIs estándar de Hugging Face Transformers; la model card advierte que se requiere un adaptador explícito para cargarlo con APIs genéricas.
 - La licencia MIT permite uso comercial, pero los términos de los datos externos que se usen con el modelo deben revisarse por separado.
 - El tamaño de 49.600 parámetros es inusualmente bajo para un ViT "huge", lo que sugiere que la implementación puede ser incompleta o simbólica.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/alvinng05/vit-baseline)
-- [Documentación de ViT en HuggingFace Transformers](https://huggingface.co/docs/transformers/model_doc/vit)
+- [Modelo en Hugging Face](https://huggingface.co/alvinng05/vit-baseline)
+- [Documentación de ViT en Hugging Face Transformers](https://huggingface.co/docs/transformers/model_doc/vit)
 - [Repositorio de referencia de ViT de Google Research](https://github.com/google-research/vision_transformer)

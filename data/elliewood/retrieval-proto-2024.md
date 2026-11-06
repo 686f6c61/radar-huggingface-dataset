@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elliewood/retrieval-proto-2024` es un repositorio de HuggingFace publicado por el usuario elliewood que contiene una implementación funcional de una arquitectura tipo Mixer orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado, sino de un checkpoint de inicialización (`model.safetensors`) pensado para pruebas de humo (smoke tests), acompañado del código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`). El autor indica explícitamente en la model card que no se reclama ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
+`elliewood/retrieval-proto-2024` es un repositorio de Hugging Face publicado por el usuario elliewood que contiene una implementación funcional de una arquitectura tipo Mixer orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado, sino de un checkpoint de inicialización (`model.safetensors`) pensado para pruebas de humo (smoke tests), acompañado del código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`). El autor indica explícitamente en la model card que no se reclama ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
 
 El dato más relevante para evaluar su escala es el recuento real de parámetros del checkpoint: 33.088 parámetros en formato safetensors (el repo ocupa 0,0 GB). Esto contrasta con la etiqueta `giant` que aparece en la configuración de arquitectura, que debe interpretarse como el nombre de un preset de hiperparámetros del script y no como un indicador del tamaño efectivo del modelo. Con esa magnitud, el artefacto es un andamiaje de investigación reproducible, no un sistema desplegable en producción.
 
@@ -87,11 +87,11 @@ La model card recomienda explicita e intencionadamente incluir una linea base de
 - Restricciones de licencia: la licencia es Apache 2.0, permisiva para uso comercial. No obstante, el autor advierte de que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se utilice con conjuntos de datos externos.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto aqui incluidos, tal y como indica la propia model card.
 - La etiqueta de escala `giant` puede inducir a error: no refleja el tamano real del checkpoint publicado.
-- No se especifica el pipeline de HuggingFace ni la lista de idiomas, lo que limita la integracion con herramientas que dependan de esos metadatos.
+- No se especifica el pipeline de Hugging Face ni la lista de idiomas, lo que limita la integracion con herramientas que dependan de esos metadatos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elliewood/retrieval-proto-2024
+- Repositorio en Hugging Face: https://huggingface.co/elliewood/retrieval-proto-2024
 - Documentacion sobre RAG de AWS (referencia general sobre recuperacion aumentada): https://aws.amazon.com/what-is/retrieval-augmented-generation/
 - Guia de retrieval en la API de OpenAI (referencia general sobre busqueda semantica): https://developers.openai.com/api/docs/guides/retrieval
 - GPT-4 en OpenAI (referencia general, no relacionada con este modelo): https://openai.com/index/gpt-4/

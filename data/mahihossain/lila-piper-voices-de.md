@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lila – German Piper voices (offline) es un paquete de dos voces sinteticas en aleman para el motor de sintesis de voz Piper, publicado por el usuario mahihossain en HuggingFace. No se trata de un modelo de lenguaje ni de un transformer generativo de texto, sino de dos modelos acusticos exportados a ONNX que se ejecutan sobre el runtime Piper 2023.11.14-2. Fueron creados para "Lila", el asistente de voz del proyecto de investigacion DiGeWohl (Ostfalia), y estan pensados para funcionar en un Jetson montado sobre un perro robot Go2, a una velocidad similar a la voz de referencia `de_DE-thorsten-high`.
+Lila – German Piper voices (offline) es un paquete de dos voces sinteticas en aleman para el motor de sintesis de voz Piper, publicado por el usuario mahihossain en Hugging Face. No se trata de un modelo de lenguaje ni de un transformer generativo de texto, sino de dos modelos acusticos exportados a ONNX que se ejecutan sobre el runtime Piper 2023.11.14-2. Fueron creados para "Lila", el asistente de voz del proyecto de investigacion DiGeWohl (Ostfalia), y estan pensados para funcionar en un Jetson montado sobre un perro robot Go2, a una velocidad similar a la voz de referencia `de_DE-thorsten-high`.
 
 El repositorio contiene dos ficheros: `de_DE-lila_hokuspokus-high.onnx`, una voz femenina afinada sobre la lectora de dominio publico "Hokuspokus" del corpus HUI (LibriVox), y `de_DE-lila_neutral-high.onnx`, una voz de genero neutro obtenida por mezcla de pesos al 60 % de Thorsten high y 40 % de lila_hokuspokus high. Cada modelo incluye su fichero de configuracion `.onnx.json` y una model card con las fuentes exactas, hashes y receta de entrenamiento.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de parametros para establecer una compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mahihossain/lila-piper-voices-de
+- Hugging Face: https://huggingface.co/mahihossain/lila-piper-voices-de
 - Piper (runtime): https://github.com/rhasspy/piper
 - Licencia del repositorio: https://huggingface.co/mahihossain/lila-piper-voices-de/blob/main/LICENSE
 - Corpus HUI / LibriVox (referenciado en la model card, sin enlace directo en la informacion disponible): no disponible

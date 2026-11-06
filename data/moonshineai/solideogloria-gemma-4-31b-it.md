@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SoliDeoGloria-Gemma-4-31B-it es un modelo publicado en HuggingFace por el usuario moonshineai que contiene 31.273.088.876 parámetros (unos 31,3 mil millones) distribuidos en pesos con formato safetensors. El tag del repositorio es "gemma4" y el sufijo "-it" del nombre indica que se trata de un modelo ajustado para seguir instrucciones; todo apunta a un derivado de la familia Gemma 4 de Google, aunque la model card no confirma la procedencia ni describe el proceso de ajuste. La licencia declarada es MIT, y el repositorio ocupa 62,6 GB, un tamaño coherente con pesos en bf16/fp16 (31,27 mil millones de parámetros × 2 bytes ≈ 62,5 GB).
+SoliDeoGloria-Gemma-4-31B-it es un modelo publicado en Hugging Face por el usuario moonshineai que contiene 31.273.088.876 parámetros (unos 31,3 mil millones) distribuidos en pesos con formato safetensors. El tag del repositorio es "gemma4" y el sufijo "-it" del nombre indica que se trata de un modelo ajustado para seguir instrucciones; todo apunta a un derivado de la familia Gemma 4 de Google, aunque la model card no confirma la procedencia ni describe el proceso de ajuste. La licencia declarada es MIT, y el repositorio ocupa 62,6 GB, un tamaño coherente con pesos en bf16/fp16 (31,27 mil millones de parámetros × 2 bytes ≈ 62,5 GB).
 
 El problema que resuelve y su relevancia no están documentados: el repositorio no incluye model card descriptiva (solo el campo de licencia), no declara idiomas soportados, no publica benchmarks y, en el momento de la consulta, acumula 0 descargas y 0 "likes". La búsqueda web asociada no devolvió ningún resultado relevante sobre el modelo (solo tutoriales no relacionados sobre firmas de correo de Outlook), por lo que no existe material externo de referencia.
 
@@ -78,10 +78,10 @@ La comparativa es parcial: las especificaciones de este modelo no están documen
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SoliDeoGloria-Gemma-4-31B-it | 31,3 mil millones | no disponible | MIT | HuggingFace (0 descargas) |
-| Gemma 3 27B (Google) | ~27 mil millones | 128K | licencia Gemma (uso comercial con restricciones) | HuggingFace, pesos abiertos |
-| Qwen2.5 32B (Alibaba) | ~32,5 mil millones | 128K | Apache 2.0 | HuggingFace, pesos abiertos |
-| Mistral Small 3.1 24B (Mistral AI) | ~24 mil millones | 128K | Apache 2.0 | HuggingFace, pesos abiertos |
+| SoliDeoGloria-Gemma-4-31B-it | 31,3 mil millones | no disponible | MIT | Hugging Face (0 descargas) |
+| Gemma 3 27B (Google) | ~27 mil millones | 128K | licencia Gemma (uso comercial con restricciones) | Hugging Face, pesos abiertos |
+| Qwen2.5 32B (Alibaba) | ~32,5 mil millones | 128K | Apache 2.0 | Hugging Face, pesos abiertos |
+| Mistral Small 3.1 24B (Mistral AI) | ~24 mil millones | 128K | Apache 2.0 | Hugging Face, pesos abiertos |
 
 Frente a estas alternativas, la única ventaja objetivable del modelo analizado es la licencia MIT declarada, siempre que se confirme la procedencia de los pesos. En el resto de dimensiones (contexto, idiomas, evaluación, soporte de herramientas) no se dispone de datos que permitan comparar.
 
@@ -99,5 +99,5 @@ Frente a estas alternativas, la única ventaja objetivable del modelo analizado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moonshineai/SoliDeoGloria-Gemma-4-31B-it
+- Hugging Face: https://huggingface.co/moonshineai/SoliDeoGloria-Gemma-4-31B-it
 - Papers, blogs, repositorios o demos: no disponible. La búsqueda web no devolvió ningún resultado relacionado con el modelo; los resultados obtenidos eran páginas no relacionadas sobre configuración de firmas en Microsoft Outlook.

@@ -31,7 +31,7 @@ El entrenamiento se realizo mediante fine-tuning con LoRA, lo que permite adapta
 
 - Traduccion automatica del ingles al k'iche' (lengua maya de Guatemala) en escritura latina.
 - Razonamiento latente: realiza pasos recurrentes internos (profundidad 4) que mejoran la calidad de la traduccion sin generar tokens adicionales de chain-of-thought.
-- Generacion de texto autoregresiva estandar, compatible con el pipeline de text-generation de HuggingFace.
+- Generacion de texto autoregresiva estandar, compatible con el pipeline de text-generation de Hugging Face.
 - Soporte para inferencia con cache (use_cache=True) para acelerar la generacion.
 - No incluye capacidades de tool calling, vision, audio ni agentes; es un adaptador especializado en una unica tarea de traduccion.
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-knc-latn
+- Repositorio Hugging Face: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-knc-latn
 - Paper (arXiv): https://arxiv.org/abs/2607.18618
 - Modelo base ByteDance/Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking
 - Repositorio alternativo del mismo adaptador: https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-knc-latn

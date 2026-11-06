@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amandaodoo/casas-pytorch-exportar-completo` es un repositorio de HuggingFace que contiene un modelo de regresion lineal implementado en PyTorch, exportado mediante el formato de "modelo completo" (`model_completo.pt`). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un ejemplo educativo de un flujo de trabajo de machine learning tabular, concretamente la prediccion del precio de viviendas (casas) a partir de variables tabulares. El autor es el usuario `amandaodoo` y el repositorio se publica bajo licencia MIT.
+`amandaodoo/casas-pytorch-exportar-completo` es un repositorio de Hugging Face que contiene un modelo de regresion lineal implementado en PyTorch, exportado mediante el formato de "modelo completo" (`model_completo.pt`). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un ejemplo educativo de un flujo de trabajo de machine learning tabular, concretamente la prediccion del precio de viviendas (casas) a partir de variables tabulares. El autor es el usuario `amandaodoo` y el repositorio se publica bajo licencia MIT.
 
 El proposito del repositorio no es ofrecer un modelo listo para produccion, sino demostrar como serializar un objeto PyTorch completo (clase mas pesos) mediante `pickle` y volver a cargarlo para inferencia, incluyendo un script (`predict_hub.py`) para consumirlo directamente desde el Hub. Es, por tanto, material didactico sobre formatos de exportacion en PyTorch, etiquetado explicitamente como `educational-example`.
 
@@ -82,5 +82,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amandaodoo/casas-pytorch-exportar-completo
+- Modelo en Hugging Face: https://huggingface.co/amandaodoo/casas-pytorch-exportar-completo
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

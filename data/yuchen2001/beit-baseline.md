@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yuchen2001/beit-baseline es un repositorio de HuggingFace publicado por el usuario Yuchen2001 que contiene una implementación propia y compacta de una arquitectura de tipo BEiT orientada a tareas múltiples (multitask). No es un modelo entrenado ni un checkpoint de referencia: el propio autor lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un lanzamiento preentrenado listo para producción.
+Yuchen2001/beit-baseline es un repositorio de Hugging Face publicado por el usuario Yuchen2001 que contiene una implementación propia y compacta de una arquitectura de tipo BEiT orientada a tareas múltiples (multitask). No es un modelo entrenado ni un checkpoint de referencia: el propio autor lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un lanzamiento preentrenado listo para producción.
 
 El repositorio incluye un artefacto principal, `pipeline.py`, acompañado de `config.json`, `training_args.json` y un `model.safetensors` que el autor califica explícitamente como inicialización válida para pruebas, no como un checkpoint evaluado con benchmarks. El recuento de parámetros declarado en el fichero safetensors es de aproximadamente 24.832, un orden de magnitud propio de una configuración de juguete y coherente con la etiqueta "nano".
 
@@ -67,10 +67,10 @@ La comparación se hace a nivel de especificaciones, ya que este repositorio no 
 
 | Modelo | Parametros | Contexto / resolucion | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yuchen2001/beit-baseline | ~24.832 | no disponible | Multitask (sin entrenar) | MIT | HuggingFace (repo propio, 0 descargas) |
-| BEiT-base (Microsoft) | ~86 M | Imagen 224x224 | Vision (clasificacion, preentrenamiento masked image modeling) | MIT | HuggingFace y repositorio oficial |
-| BEiT v2-base | ~86 M | Imagen 224x224 | Vision (clasificacion, segmentacion) | MIT | HuggingFace y repositorio oficial |
-| ViT-base | ~86 M | Imagen 224x224 | Vision (clasificacion) | Apache 2.0 | HuggingFace |
+| Yuchen2001/beit-baseline | ~24.832 | no disponible | Multitask (sin entrenar) | MIT | Hugging Face (repo propio, 0 descargas) |
+| BEiT-base (Microsoft) | ~86 M | Imagen 224x224 | Vision (clasificacion, preentrenamiento masked image modeling) | MIT | Hugging Face y repositorio oficial |
+| BEiT v2-base | ~86 M | Imagen 224x224 | Vision (clasificacion, segmentacion) | MIT | Hugging Face y repositorio oficial |
+| ViT-base | ~86 M | Imagen 224x224 | Vision (clasificacion) | Apache 2.0 | Hugging Face |
 
 Comparativa de rendimiento: no disponible para este repositorio. La model card no reporta ninguna métrica y, al tratarse de un checkpoint sin entrenar, cualquier comparación numérica con los modelos anteriores sería inválida.
 
@@ -88,6 +88,6 @@ Comparativa de rendimiento: no disponible para este repositorio. La model card n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuchen2001/beit-baseline
+- Hugging Face: https://huggingface.co/Yuchen2001/beit-baseline
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

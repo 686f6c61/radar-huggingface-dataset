@@ -4,7 +4,7 @@
 
 SabiBERTa-135M-masakhaner2-hau es un checkpoint de clasificación de tokens (reconocimiento de entidades nombradas, NER) obtenido por fine-tuning del modelo base BeardedMonster/SabiBERTa-135M sobre la partición en hausa (hau) del corpus MasakhaNER 2.0. Lo publica el usuario BeardedMonster como parte de una familia de adaptaciones por idioma (el nombre del checkpoint indica un ajuste mono-idioma sobre el protocolo hau del benchmark). El problema que resuelve es concreto: extraer entidades nombradas en hausa, un idioma africano con recursos limitados y escasa cobertura en modelos comerciales.
 
-El modelo tiene 135.883.017 parámetros reales (verificados en los safetensors del repo) y emplea una arquitectura de tipo encoder etiquetada como `modernbert` en los metadatos de HuggingFace. El repositorio ocupa 0,5 GB y se distribuye únicamente en formato safetensors, con la cabeza de clasificación configurada (`id2label` incluido) para que las predicciones se decodifiquen directamente a nombres de etiqueta.
+El modelo tiene 135.883.017 parámetros reales (verificados en los safetensors del repo) y emplea una arquitectura de tipo encoder etiquetada como `modernbert` en los metadatos de Hugging Face. El repositorio ocupa 0,5 GB y se distribuye únicamente en formato safetensors, con la cabeza de clasificación configurada (`id2label` incluido) para que las predicciones se decodifiquen directamente a nombres de etiqueta.
 
 Su relevancia es acotada pero útil: no es un modelo generativo ni un asistente, sino un componente especializado de NER que reporta un span F1 medio de 0,7255 en hausa. Resulta interesante como pieza de infraestructura para pipelines de extracción de información en lenguas africanas y como ejemplo de adaptación eficiente de un encoder pequeño (135M) a una tarea concreta, ejecutable en hardware muy modesto.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada pero útil: no es un modelo generativo ni un asistente,
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Encoder tipo transformer (etiqueta `modernbert` en HuggingFace); cabeza de clasificación de tokens (`AutoModelForTokenClassification`) |
+| Arquitectura | Encoder tipo transformer (etiqueta `modernbert` en Hugging Face); cabeza de clasificación de tokens (`AutoModelForTokenClassification`) |
 | Parámetros totales | 135.883.017 |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible para el modelo base; el fine-tuning se realizó con `max_length` = 256 tokens |
@@ -68,8 +68,8 @@ Se trata de una única ejecución de evaluación. El autor indica que su arnés 
 
 | Modelo | Parámetros | Contexto | NER hausa (span F1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SabiBERTa-135M-masakhaner2-hau | 135,9M | 256 tokens en entrenamiento | 0,7255 (una ejecución) | No disponible (hereda la del modelo base) | HuggingFace, safetensors |
-| BeardedMonster/SabiBERTa-135M (modelo base) | 135,9M (no verificado en la información disponible) | No disponible | No disponible (sin cabeza NER ajustada) | No disponible | HuggingFace |
+| SabiBERTa-135M-masakhaner2-hau | 135,9M | 256 tokens en entrenamiento | 0,7255 (una ejecución) | No disponible (hereda la del modelo base) | Hugging Face, safetensors |
+| BeardedMonster/SabiBERTa-135M (modelo base) | 135,9M (no verificado en la información disponible) | No disponible | No disponible (sin cabeza NER ajustada) | No disponible | Hugging Face |
 | Otros fine-tunes de MasakhaNER 2.0 en hausa | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 No se han proporcionado datos de modelos alternativos comparables (mBERT, XLM-R, AfriBERTa u otros fine-tunes de la misma familia), por lo que no es posible establecer una comparación cuantitativa rigurosa con esta información.
@@ -89,7 +89,7 @@ No se han proporcionado datos de modelos alternativos comparables (mBERT, XLM-R,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-hau
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-hau
 - Modelo base: https://huggingface.co/BeardedMonster/SabiBERTa-135M
 - Paper y repositorio de MasakhaNER 2.0: no disponibles en la información proporcionada
 - Resultados de búsqueda web: no se ha recuperado ningún enlace relevante sobre este modelo; los resultados devueltos no guardan relación con el checkpoint.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yhong96/aloha2_tabletop_smolvla` es un modelo de vision‑lenguaje‑accion (VLA) desarrollado por el usuario `yhong96` y publicado en HuggingFace. Partiendo del modelo base `lerobot/smolvla_base`, se ha realizado un afinado (fine‑tune) sobre el dataset `larp/aloha_multitask`, que contiene demostraciones de manipulacion de objetos en mesa con el robot bimanual ALOHA. El modelo esta entrenado con la libreria LeRobot de HuggingFace y se presenta como una politica (policy) capaz de convertir entradas visuales y de texto en comandos de actuacion para un robot.
+El modelo `yhong96/aloha2_tabletop_smolvla` es un modelo de vision‑lenguaje‑accion (VLA) desarrollado por el usuario `yhong96` y publicado en Hugging Face. Partiendo del modelo base `lerobot/smolvla_base`, se ha realizado un afinado (fine‑tune) sobre el dataset `larp/aloha_multitask`, que contiene demostraciones de manipulacion de objetos en mesa con el robot bimanual ALOHA. El modelo esta entrenado con la libreria LeRobot de Hugging Face y se presenta como una politica (policy) capaz de convertir entradas visuales y de texto en comandos de actuacion para un robot.
 
 SmolVLA es una familia de modelos VLA compactos y eficientes, disenados para alcanzar un rendimiento competitivo con un coste computacional reducido, de modo que puedan ejecutarse en hardware de consumo. Este modelo en concreto tiene 450.046.176 de parametros, con un tamano de repositorio de 0,9 GB. Se publica bajo licencia Apache 2.0 y no se ha especificado la longitud de contexto ni informacion sobre cuantizacion o idiomas.
 
@@ -23,7 +23,7 @@ SmolVLA es una familia de modelos VLA compactos y eficientes, disenados para alc
 
 SmolVLA combina un codificador visual con un modelo de lenguaje y una cabeza de prediccion de acciones, generando comandos de control de robot a partir de una imagen y una instruccion textual. Es un modelo compacto y ligero, pensado para reducir el coste computacional frente a VLA de mayor tamano y permitir el despliegue en hardware de consumo.
 
-Este checkpoint concreto es un afinado de `lerobot/smolvla_base` sobre el dataset `larp/aloha_multitask`, que recoge tareas de manipulacion de objetos sobre una mesa con el robot ALOHA. El entrenamiento se ha realizado con la libreria LeRobot de HuggingFace, tal como se indica en la model card. No se ha proporcionado informacion sobre el numero de tokens, la composicion del dataset ni el uso de tecnicas como RLHF o DPO.
+Este checkpoint concreto es un afinado de `lerobot/smolvla_base` sobre el dataset `larp/aloha_multitask`, que recoge tareas de manipulacion de objetos sobre una mesa con el robot ALOHA. El entrenamiento se ha realizado con la libreria LeRobot de Hugging Face, tal como se indica en la model card. No se ha proporcionado informacion sobre el numero de tokens, la composicion del dataset ni el uso de tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: el modelo ocupa aproximadamente 0,9 GB en formato safetensors, lo que sugiere un almacenamiento en precision reducida (probablemente fp16 o bf16). Para inferencia se estima un consumo entre 2 y 6 GB de VRAM, dependiendo de la resolucion de las imagenes de entrada y del numero de pasos de accion generados.
 - GPU recomendadas: cualquiera con 6 GB o mas de VRAM, como una RTX 3060 o superior. Tambien puede ejecutarse en una RTX 4090 para mayor margen.
 - Cabe en GPU de consumo: si, al menos en las gamas medias y altas de consumer hardware.
-- Opciones de despliegue: integrado con la libreria LeRobot de HuggingFace; el entrenamiento y la evaluacion se realizan mediante los comandos `lerobot-train` y `lerobot-record`.
+- Opciones de despliegue: integrado con la libreria LeRobot de Hugging Face; el entrenamiento y la evaluacion se realizan mediante los comandos `lerobot-train` y `lerobot-record`.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se dispone de datos suficientes en la informacion proporcionada para una comp
 
 - Modelo: https://huggingface.co/yhong96/aloha2_tabletop_smolvla
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
-- Coleccion SmolVLA en HuggingFace: https://huggingface.co/collections/lerobot/smolvla-683c072ec3ef6ab0fcb87e60
+- Coleccion SmolVLA en Hugging Face: https://huggingface.co/collections/lerobot/smolvla-683c072ec3ef6ab0fcb87e60
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

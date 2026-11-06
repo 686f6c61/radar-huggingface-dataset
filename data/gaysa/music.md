@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Gaysa/Music` alojado en HuggingFace no contiene información técnica publicada. La model card únicamente declara la licencia Apache 2.0, sin descripción del modelo, arquitectura, parámetros, datos de entrenamiento ni capacidades. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no hay pesos ni archivos de modelo subidos, o que estos son de tamaño despreciable. No se dispone de pipeline asociado, idiomas soportados ni métricas de uso (0 descargas, 0 likes). En consecuencia, no es posible evaluar ni utilizar este recurso como un modelo funcional en su estado actual.
+El repositorio `Gaysa/Music` alojado en Hugging Face no contiene información técnica publicada. La model card únicamente declara la licencia Apache 2.0, sin descripción del modelo, arquitectura, parámetros, datos de entrenamiento ni capacidades. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no hay pesos ni archivos de modelo subidos, o que estos son de tamaño despreciable. No se dispone de pipeline asociado, idiomas soportados ni métricas de uso (0 descargas, 0 likes). En consecuencia, no es posible evaluar ni utilizar este recurso como un modelo funcional en su estado actual.
 
 Dado que la información es prácticamente inexistente, esta ficha se limita a documentar la ausencia de datos y a advertir sobre la imposibilidad de realizar cualquier análisis técnico o práctico. Se recomienda a los desarrolladores e investigadores no considerar este repositorio como una opción viable hasta que el autor publique una descripción completa y los artefactos correspondientes.
 
@@ -53,4 +53,4 @@ No disponible. No existe información suficiente para comparar este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gaysa/Music
+- Repositorio en Hugging Face: https://huggingface.co/Gaysa/Music

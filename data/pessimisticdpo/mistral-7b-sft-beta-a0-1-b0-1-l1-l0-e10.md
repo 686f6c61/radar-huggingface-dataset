@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e10` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. Por el propio identificador se deduce que se trata de un ajuste (fine-tuning) sobre un modelo base Mistral de 7B, concretamente sobre una variante "sft-beta" (es decir, un checkpoint ya sometido a un ajuste supervisado), y que despues se aplico una variante de optimizacion tipo DPO (Direct Preference Optimization) que el autor denomina "pessimistic DPO", con una combinacion de hiperparametros codificada en el sufijo del nombre (`a0.1`, `b0.1`, `L1`, `l0`, `e10`). Esta interpretacion procede unicamente de la nomenclatura del repositorio, no de documentacion del autor.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e10` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. Por el propio identificador se deduce que se trata de un ajuste (fine-tuning) sobre un modelo base Mistral de 7B, concretamente sobre una variante "sft-beta" (es decir, un checkpoint ya sometido a un ajuste supervisado), y que despues se aplico una variante de optimizacion tipo DPO (Direct Preference Optimization) que el autor denomina "pessimistic DPO", con una combinacion de hiperparametros codificada en el sufijo del nombre (`a0.1`, `b0.1`, `L1`, `l0`, `e10`). Esta interpretacion procede unicamente de la nomenclatura del repositorio, no de documentacion del autor.
 
-La model card publicada es la plantilla autogenerada por HuggingFace y no contiene ni una sola seccion completada: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion, ni licencia, ni idiomas declarados. El repositorio ocupa 0,2 GB, un tamano incompatible con los pesos completos de un modelo de 7B en precision fp16 (que rondarian los 14-15 GB), por lo que es probable que el repositorio contenga solo una parte del checkpoint (adaptadores, configuracion, tokenizer o un unico shard) o que la subida este incompleta. Cualquier uso en produccion exige verificar primero el contenido real del repositorio.
+La model card publicada es la plantilla autogenerada por Hugging Face y no contiene ni una sola seccion completada: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion, ni licencia, ni idiomas declarados. El repositorio ocupa 0,2 GB, un tamano incompatible con los pesos completos de un modelo de 7B en precision fp16 (que rondarian los 14-15 GB), por lo que es probable que el repositorio contenga solo una parte del checkpoint (adaptadores, configuracion, tokenizer o un unico shard) o que la subida este incompleta. Cualquier uso en produccion exige verificar primero el contenido real del repositorio.
 
 Su relevancia es por tanto limitada y de caracter experimental: sirve como referencia de un experimento de alineacion con una variante de DPO, pero no como artefacto listo para desplegar. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo (los resultados obtenidos eran tiendas de perfumes, sin relacion alguna), y el unico identificador de paper presente en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde a Lacoste et al. sobre impacto ambiental del aprendizaje automatico, citado en la plantilla estandar de model card y no un paper del modelo.
 
@@ -30,7 +30,7 @@ Su relevancia es por tanto limitada y de caracter experimental: sirve como refer
 
 No hay informacion proporcionada por el autor sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card incluye todas las secciones habituales (datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo) pero con el marcador `[More Information Needed]` en cada una de ellas. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo una fase de RLHF o DPO, ni el hardware utilizado. El unico indicio sobre el procedimiento es el propio nombre del repositorio, que apunta a un ajuste supervisado previo ("sft-beta") seguido de una optimizacion con preferencias de tipo "pessimistic DPO" parametrizada con valores `a0.1`, `b0.1`, `L1`, `l0`, `e10`; se desconoce por completo que significan esos parametros en la formulacion del autor.
 
-Tampoco se documenta ninguna innovacion tecnica adicional: no hay mencion a atencion con ventana deslizante, decodificacion especulativa, atencion lineal ni a tecnicas de mezcla de expertos. La unica referencia bibliografica del repositorio es `arxiv:1910.09700`, que forma parte de la plantilla por defecto de HuggingFace para el calculo de emisiones de carbono y no describe el modelo. En consecuencia, la trazabilidad del entrenamiento es nula.
+Tampoco se documenta ninguna innovacion tecnica adicional: no hay mencion a atencion con ventana deslizante, decodificacion especulativa, atencion lineal ni a tecnicas de mezcla de expertos. La unica referencia bibliografica del repositorio es `arxiv:1910.09700`, que forma parte de la plantilla por defecto de Hugging Face para el calculo de emisiones de carbono y no describe el modelo. En consecuencia, la trazabilidad del entrenamiento es nula.
 
 ## Capacidades
 
@@ -103,7 +103,7 @@ La diferencia practica es total: los tres modelos de referencia cuentan con lice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e10
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e10
 - Paper citado en las etiquetas del repositorio (Lacoste et al., impacto ambiental, ajeno al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web articulos, papers, repositorios ni demos relacionados con este modelo; los resultados obtenidos no guardan ninguna relacion con el.

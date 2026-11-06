@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un modelo de clasificación de texto binaria obtenido mediante fine-tuning de `distilbert-base-uncased`. Lo publica el usuario de HuggingFace AlirezaAkbariBayat, presumiblemente como parte de un ejercicio de aprendizaje ("learn_hf") orientado a construir un clasificador que distinga entre textos relacionados con comida y textos que no lo están. El modelo tiene 66.955.010 parámetros y un repositorio de 0,8 GB en formato safetensors.
+`learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un modelo de clasificación de texto binaria obtenido mediante fine-tuning de `distilbert-base-uncased`. Lo publica el usuario de Hugging Face AlirezaAkbariBayat, presumiblemente como parte de un ejercicio de aprendizaje ("learn_hf") orientado a construir un clasificador que distinga entre textos relacionados con comida y textos que no lo están. El modelo tiene 66.955.010 parámetros y un repositorio de 0,8 GB en formato safetensors.
 
 Se trata de un modelo pequeño, derivado de la arquitectura DistilBERT (una versión destilada de BERT-base con 6 capas y 66 millones de parámetros), entrenado para una tarea de clasificación con dos etiquetas. Su relevancia es limitada fuera del ámbito educativo o de prototipado: la model card está generada automáticamente y no documenta el conjunto de datos, los idiomas ni los usos previstos, por lo que debe tratarse como un artefacto de demostración más que como un modelo listo para producción.
 
@@ -71,17 +71,17 @@ Estos valores deben interpretarse con cautela: la accuracy perfecta desde la pri
 - En fp16: alrededor de 135 MB de pesos.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso CPU; no requiere A100 ni H100.
 - Cabe holgadamente en GPUs de gama baja, en iGPU y en CPU. El repositorio completo ocupa 0,8 GB, pero los pesos útiles son mucho menores.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (tag `text-embeddings-inference`), servidores compatibles con endpoints de HuggingFace, exportación a ONNX para inferencia en CPU.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (tag `text-embeddings-inference`), servidores compatibles con endpoints de Hugging Face, exportación a ONNX para inferencia en CPU.
 - Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo se espera latencia de milisegundos por muestra en GPU y decenas de milisegundos en CPU, aunque no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DistilBERT fine-tuned) | 66,9 M | hasta 512 tokens (modelo base) | Clasificación binaria "food / not food" | apache-2.0 | HuggingFace, 34 descargas |
-| distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base (MLM), sin cabeza de clasificación | apache-2.0 | HuggingFace, ampliamente usado |
-| bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM) | apache-2.0 | HuggingFace, ampliamente usado |
-| Modelos de clasificación zero-shot (p. ej. basados en NLI) | variable (cientos de M) | variable | Clasificación sin entrenamiento específico | variable | HuggingFace |
+| Este modelo (DistilBERT fine-tuned) | 66,9 M | hasta 512 tokens (modelo base) | Clasificación binaria "food / not food" | apache-2.0 | Hugging Face, 34 descargas |
+| distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base (MLM), sin cabeza de clasificación | apache-2.0 | Hugging Face, ampliamente usado |
+| bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM) | apache-2.0 | Hugging Face, ampliamente usado |
+| Modelos de clasificación zero-shot (p. ej. basados en NLI) | variable (cientos de M) | variable | Clasificación sin entrenamiento específico | variable | Hugging Face |
 
 La comparación directa con clasificadores zero-shot no está respaldada por datos de rendimiento de este modelo, por lo que no puede establecerse una superioridad o inferioridad objetiva. Frente a `distilbert-base-uncased`, la diferencia es la cabeza de clasificación entrenada, pero sin dataset documentado ni métricas fiables.
 
@@ -98,7 +98,7 @@ La comparación directa con clasificadores zero-shot no está respaldada por dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlirezaAkbariBayat/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/AlirezaAkbariBayat/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de DistilBERT en Transformers: https://huggingface.co/docs/transformers/model_doc/distilbert
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

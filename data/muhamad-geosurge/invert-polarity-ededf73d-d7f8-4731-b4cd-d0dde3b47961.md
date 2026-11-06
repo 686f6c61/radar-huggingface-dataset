@@ -90,7 +90,7 @@ La diferencia clave de este checkpoint respecto a las alternativas no esta en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-ededf73d-d7f8-4731-b4cd-d0dde3b47961
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-ededf73d-d7f8-4731-b4cd-d0dde3b47961
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo de referencia de la model card copiada: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de inferencia de Mistral: https://github.com/mistralai/mistral-inference

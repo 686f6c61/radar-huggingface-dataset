@@ -6,7 +6,7 @@ PocketGull NAM STEEEP Quality Engine es un adaptador LoRA (librería PEFT) publi
 
 El modelo se comercializa como componente de la suite PocketGull LLC y genera dos artefactos principales: tarjetas de cuidado de una página en lenguaje llano de quinto grado y una narrativa de trayectoria en tres actos, además de exportar el cuadro de mando de calidad como un bundle FHIR R4 MeasureReport (LOINC 96841-2). Está etiquetado con las referencias NIH MedQuad y WHO mhGAP, lo que sugiere que parte de su entrenamiento se apoyó en esas fuentes.
 
-La relevancia del modelo radica en su enfoque de nicho: no es un asistente clínico generalista, sino un motor de puntuación de calidad y generación de informes interoperables. Sin embargo, la información publicada es limitada: no se declaran parámetros, contexto ni resultados de evaluación, el repositorio no tiene descargas ni valoraciones, y el identificador de HuggingFace difiere del citado en la propia model card.
+La relevancia del modelo radica en su enfoque de nicho: no es un asistente clínico generalista, sino un motor de puntuación de calidad y generación de informes interoperables. Sin embargo, la información publicada es limitada: no se declaran parámetros, contexto ni resultados de evaluación, el repositorio no tiene descargas ni valoraciones, y el identificador de Hugging Face difiere del citado en la propia model card.
 
 ## Especificaciones técnicas
 
@@ -83,7 +83,7 @@ Los datos de las alternativas no se han verificado con la información proporcio
 - La model card invoca la exención FDA 520(o) para CDS no dispositivo. Esa calificación es una declaración del autor, no una certificación regulatoria, y su aplicabilidad depende del uso concreto.
 - Solo soporta inglés, lo que limita su uso en entornos clínicos hispanohablantes sin traducción previa.
 - El repositorio presenta 0 descargas y 0 interacciones en el momento de la consulta, sin señales de adopción o revisión por la comunidad.
-- Inconsistencia de identificadores: el ID de HuggingFace es `philgear/pocketgull-steeep-quality`, mientras que el código de ejemplo de la model card usa `pocketgull-llc/pocketgull-steeep-quality`. Conviene verificar cuál es el repositorio vigente antes de integrarlo.
+- Inconsistencia de identificadores: el ID de Hugging Face es `philgear/pocketgull-steeep-quality`, mientras que el código de ejemplo de la model card usa `pocketgull-llc/pocketgull-steeep-quality`. Conviene verificar cuál es el repositorio vigente antes de integrarlo.
 - La licencia Apache 2.0 se declara para el adaptador, pero el uso del modelo base `pocketgull/steeep-eval-v1` (etiquetado como familia `gemma-2`) puede estar sujeto a los términos de uso del proveedor del modelo base. Revisar esa licencia antes de un despliegue comercial.
 - Las afirmaciones de cumplimiento HIPAA Safe Harbor y de "Zero-PHI Retention" son responsabilidad del autor; la conformidad real depende de la configuración de despliegue y del flujo de datos de cada organización.
 - No se documenta el tamaño del modelo base, lo que impide estimar con precisión costes de inferencia, requisitos de hardware y latencia.
@@ -91,7 +91,7 @@ Los datos de las alternativas no se han verificado con la información proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/philgear/pocketgull-steeep-quality
+- Repositorio Hugging Face: https://huggingface.co/philgear/pocketgull-steeep-quality
 - Modelo base: https://huggingface.co/pocketgull/steeep-eval-v1
 - DOI Zenodo (procedencia open science): https://doi.org/10.5281/zenodo.20647514
 - Sitio de la organización: https://pocketgull.com

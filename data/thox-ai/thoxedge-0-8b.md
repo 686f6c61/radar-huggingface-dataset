@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxEdge-0.8B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxEdge-0.8B
 - Adaptador LoRA Wave C: https://huggingface.co/Thox-ai/ThoxEdge-0.8B-WaveC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de SFT: https://huggingface.co/datasets/Thox-ai/thox-factory-sft-v5

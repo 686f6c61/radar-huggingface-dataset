@@ -6,7 +6,7 @@ GLiNER2.5-Decide (ONNX) es una exportación no oficial a formato ONNX de la ruta
 
 La relevancia de esta ficha concreta radica en que traslada el modelo a un runtime ONNX, lo que reduce la latencia en CPU y elimina la dependencia de la pila de PyTorch. La exportación cubre únicamente las tareas de clasificación (etiqueta única, multi-etiqueta y ordinal); la extracción de spans, relaciones y estructuras no está incluida. Se ofrece en tres precisiones: fp32 (exacta respecto a la versión torch), fp16 (orientada a GPU) e int8 dinámica (con pérdida de precisión pero aproximadamente el doble de rápida en CPU).
 
-El modelo original fue publicado el 24 de septiembre de 2026 bajo licencia Apache 2.0 y está pensado para tareas de enrutamiento y guardrails en CPU, sin necesidad de GPU. Esta conversión hereda la licencia Apache 2.0 y admite únicamente inglés. El repositorio ocupa 3.3 GB en HuggingFace.
+El modelo original fue publicado el 24 de septiembre de 2026 bajo licencia Apache 2.0 y está pensado para tareas de enrutamiento y guardrails en CPU, sin necesidad de GPU. Esta conversión hereda la licencia Apache 2.0 y admite únicamente inglés. El repositorio ocupa 3.3 GB en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -88,8 +88,8 @@ Diferencias máximas de probabilidad respecto a gliner2 (torch): fp32 `0.00000` 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nishparadox/gliner2.5-decide-onnx (esta ficha) | ~340 M (base) | no disponible | Paridad exacta con gliner2 en fp32 | apache-2.0 | HuggingFace, ONNX |
-| fastino/GLiNER2.5-Decide (base) | ~340 M | no disponible | 60,1 % en Fast Decisions suite | apache-2.0 | HuggingFace |
+| nishparadox/gliner2.5-decide-onnx (esta ficha) | ~340 M (base) | no disponible | Paridad exacta con gliner2 en fp32 | apache-2.0 | Hugging Face, ONNX |
+| fastino/GLiNER2.5-Decide (base) | ~340 M | no disponible | 60,1 % en Fast Decisions suite | apache-2.0 | Hugging Face |
 | JevK5 | no disponible | no disponible | 57,5 % en Fast Decisions suite | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con otras alternativas de clasificación de la misma categoría (tamaño, contexto o licencia). Los datos de JevK5 provienen únicamente de la comparativa publicada por Fastino.
@@ -108,8 +108,8 @@ No se dispone de información suficiente para comparar con otras alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/nishparadox/gliner2.5-decide-onnx
-- Modelo base en HuggingFace: https://huggingface.co/fastino/GLiNER2.5-Decide
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/nishparadox/gliner2.5-decide-onnx
+- Modelo base en Hugging Face: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Archivos del modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide/tree/main
 - Blog de Fastino sobre GLiNER2.5-Decide: https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model
 - Página de modelo GLiNER2.5 en Fastino: https://fastino.ai/models/gliner2-5

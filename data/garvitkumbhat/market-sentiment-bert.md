@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `market-sentiment-bert` es un clasificador de análisis de sentimiento basado en la arquitectura BERT, desarrollado por el usuario Garvitkumbhat y publicado en HuggingFace. Su propósito principal es el análisis de sentimiento aplicado a textos financieros y de mercado, como noticias, informes o comentarios sobre el S&P 500. Está etiquetado con `region:us` y licencia MIT, lo que permite su uso comercial y académico sin restricciones significativas. El modelo tiene 109,5 millones de parámetros, un tamaño típico de BERT-base, y se distribuye en formato safetensors. No se dispone de información sobre el contexto máximo, idiomas soportados ni detalles de entrenamiento en la documentación pública, por lo que su alcance funcional debe interpretarse con cautela.
+El modelo `market-sentiment-bert` es un clasificador de análisis de sentimiento basado en la arquitectura BERT, desarrollado por el usuario Garvitkumbhat y publicado en Hugging Face. Su propósito principal es el análisis de sentimiento aplicado a textos financieros y de mercado, como noticias, informes o comentarios sobre el S&P 500. Está etiquetado con `region:us` y licencia MIT, lo que permite su uso comercial y académico sin restricciones significativas. El modelo tiene 109,5 millones de parámetros, un tamaño típico de BERT-base, y se distribuye en formato safetensors. No se dispone de información sobre el contexto máximo, idiomas soportados ni detalles de entrenamiento en la documentación pública, por lo que su alcance funcional debe interpretarse con cautela.
 
 A pesar de su nombre y etiquetas, no hay una model card detallada ni resultados de benchmarks publicados, lo que limita la evaluación objetiva de su rendimiento. La relevancia actual de este modelo reside en su potencial para tareas de análisis de sentimiento financiero, un área de alto interés para traders, analistas y sistemas de inversión automatizada, aunque su adopción en producción requeriría validación adicional con datos propios.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada**: para un modelo de 109M de parámetros, la inferencia en FP32 requiere aproximadamente 0,4 GB de VRAM (cálculo aproximado: 109M × 4 bytes). Con cuantización INT8 o INT4 se puede reducir a menos de 0,2 GB, pero no se han publicado los tipos de cuantización.
 - **GPU recomendadas**: cualquier GPU con al menos 1 GB de VRAM es suficiente, por ejemplo, NVIDIA GTX 1050, RTX 2060, o incluso CPU con optimización.
 - **Cabe en GPU de consumo**: sí, es un modelo pequeño que puede ejecutarse en cualquier GPU moderna e incluso en CPU con bibliotecas como ONNX Runtime.
-- **Opciones de despliegue**: puede servirse con HuggingFace Transformers, vLLM, llama.cpp (aunque no hay GGUF publicado), o mediante la API de HuggingFace Inference.
+- **Opciones de despliegue**: puede servirse con Hugging Face Transformers, vLLM, llama.cpp (aunque no hay GGUF publicado), o mediante la API de Hugging Face Inference.
 - **Latencia y throughput**: al no haber datos publicados, se estima que la inferencia es rápida (milisegundos por secuencia), pero no se puede cuantificar.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ Los datos de FinBERT provienen de fuentes externas y no están directamente comp
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Garvitkumbhat/market-sentiment-bert
+- Página del modelo en Hugging Face: https://huggingface.co/Garvitkumbhat/market-sentiment-bert
 - Referencia general sobre análisis de sentimiento con BERT (GeeksforGeeks): https://www.geeksforgeeks.org/nlp/sentiment-classification-using-bert/
 - Paper sobre predicción de tendencias del S&P 500 con BERT (ResearchGate): https://www.researchgate.net/publication/411943216_Forecasting_Trends_of_the_SP_500_Stock_Market_with_Sentiment_Analysis_and_Close_Price_Using_BERT_Model
 - Repositorio de análisis de sentimiento de mercado con FinBERT (GitHub): https://github.com/ai-bhatta/Market-Sentiment-Analysis

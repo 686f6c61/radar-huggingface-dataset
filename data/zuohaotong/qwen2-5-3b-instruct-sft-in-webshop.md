@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ZuoHaotong/Qwen2.5-3B-Instruct-SFT-in-WebShop` es un ajuste fino (SFT) del modelo base `Qwen2.5-3B-Instruct` de Alibaba, especializado en el entorno WebShop, un simulador de compras en línea utilizado para evaluar agentes conversacionales. El autor, ZuoHaotong, ha publicado este checkpoint con licencia Apache 2.0, aunque la información disponible en la ficha de HuggingFace es muy limitada: no se especifican detalles del entrenamiento, métricas de rendimiento ni características adicionales.
+El modelo `ZuoHaotong/Qwen2.5-3B-Instruct-SFT-in-WebShop` es un ajuste fino (SFT) del modelo base `Qwen2.5-3B-Instruct` de Alibaba, especializado en el entorno WebShop, un simulador de compras en línea utilizado para evaluar agentes conversacionales. El autor, ZuoHaotong, ha publicado este checkpoint con licencia Apache 2.0, aunque la información disponible en la ficha de Hugging Face es muy limitada: no se especifican detalles del entrenamiento, métricas de rendimiento ni características adicionales.
 
 El modelo base Qwen2.5-3B-Instruct cuenta con 3,09 mil millones de parámetros, una ventana de contexto de hasta 128 000 tokens y soporte multilingüe, con especial fortaleza en tareas de código, matemáticas y generación estructurada. Este fine-tune hereda presumiblemente esas capacidades, pero su adaptación específica a WebShop sugiere un enfoque en la navegación y compra en entornos simulados, aunque no se han publicado evidencias concretas de su rendimiento en dicha tarea.
 
@@ -77,7 +77,7 @@ No se dispone de comparativas de rendimiento entre estos modelos en el contexto 
 
 ## Enlaces
 
-- [HuggingFace - ZuoHaotong/Qwen2.5-3B-Instruct-SFT-in-WebShop](https://huggingface.co/ZuoHaotong/Qwen2.5-3B-Instruct-SFT-in-WebShop)
+- [Hugging Face - ZuoHaotong/Qwen2.5-3B-Instruct-SFT-in-WebShop](https://huggingface.co/ZuoHaotong/Qwen2.5-3B-Instruct-SFT-in-WebShop)
 - [Qwen/Qwen2.5-3B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
 - [Qwen/Qwen2.5-3B (modelo base sin instrucciones)](https://huggingface.co/Qwen/Qwen2.5-3B)
 - [ModelScope - Qwen2.5-3B-Instruct](https://www.modelscope.cn/models/qwen/Qwen2.5-3B-Instruct)

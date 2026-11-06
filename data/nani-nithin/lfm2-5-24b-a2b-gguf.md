@@ -39,7 +39,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponibles; el repositorio no declara idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles en la informacion proporcionada.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta "endpoints_compatible", lo que indica que puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta "endpoints_compatible", lo que indica que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 
 ## Casos de uso
 
@@ -74,8 +74,8 @@ Las cifras de VRAM que se indican a continuacion son estimaciones calculadas a p
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NANI-Nithin/LFM2.5-24B-A2B-GGUF | 23,97B (activos no disponibles) | no disponible | GGUF | no disponible | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-24B-A2B (base) | 23,97B | no disponible | safetensors | no disponible en esta informacion | HuggingFace, repositorio oficial de LiquidAI |
+| NANI-Nithin/LFM2.5-24B-A2B-GGUF | 23,97B (activos no disponibles) | no disponible | GGUF | no disponible | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-24B-A2B (base) | 23,97B | no disponible | safetensors | no disponible en esta informacion | Hugging Face, repositorio oficial de LiquidAI |
 | Otras conversiones GGUF del mismo modelo base | no disponible | no disponible | GGUF | dependiente del autor | no disponible |
 
 No se dispone de datos de rendimiento del modelo ni de modelos comparables de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de calidad. La unica diferencia verificable frente al modelo base es el formato de pesos y el consiguiente menor requisito de memoria.

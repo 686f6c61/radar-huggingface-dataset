@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks para comparar con otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/malekoo/Qwen3.8-27B-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/malekoo/Qwen3.8-27B-MLX-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión 4-bit: https://huggingface.co/malekoo/Qwen3.8-27B-MLX-4bit
 - Blog de Qwen (anuncio del modelo): https://qwen.ai/blog?id=qwen3.8

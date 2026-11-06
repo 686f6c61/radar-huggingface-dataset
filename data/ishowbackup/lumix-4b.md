@@ -76,8 +76,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- [HuggingFace - Ishowbackup/Lumix-4B](https://huggingface.co/Ishowbackup/Lumix-4B)
-- [HuggingFace - Blackfrost-AI/Lumix-4B](https://huggingface.co/Blackfrost-AI/Lumix-4B)
+- [Hugging Face - Ishowbackup/Lumix-4B](https://huggingface.co/Ishowbackup/Lumix-4B)
+- [Hugging Face - Blackfrost-AI/Lumix-4B](https://huggingface.co/Blackfrost-AI/Lumix-4B)
 - [Modelo base - Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Repositorio del agente Shadow CLI](https://github.com/Blackfrost-AI/Shadow_CLI)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)

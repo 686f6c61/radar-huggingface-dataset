@@ -89,6 +89,6 @@ No disponible. Este repositorio es un checkpoint de inicialización sin entrenar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sarahjonesbeck/cnn-transformer-multitask-experiments
+- Repositorio en Hugging Face: https://huggingface.co/sarahjonesbeck/cnn-transformer-multitask-experiments
 - Ficheros incluidos en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo ni con su arquitectura.

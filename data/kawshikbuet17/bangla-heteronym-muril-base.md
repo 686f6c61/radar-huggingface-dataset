@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bangla Heteronym Reader (MuRIL-base) es un modelo de clasificación de lecturas para heterónimos del bengalí, desarrollado por Kawshik Kumar Paul (BUET) y publicado en HuggingFace. Aborda un problema específico de la síntesis de voz en bengalí: muchas palabras se escriben igual pero se pronuncian de forma distinta según el contexto oracional (heterónimos u homógrafos), lo que provoca errores en cualquier sistema de text-to-speech que no resuelva la ambigüedad. El modelo recibe una frase con la palabra marcada y devuelve la lectura correcta como una reescritura fonética en escritura bengalí.
+Bangla Heteronym Reader (MuRIL-base) es un modelo de clasificación de lecturas para heterónimos del bengalí, desarrollado por Kawshik Kumar Paul (BUET) y publicado en Hugging Face. Aborda un problema específico de la síntesis de voz en bengalí: muchas palabras se escriben igual pero se pronuncian de forma distinta según el contexto oracional (heterónimos u homógrafos), lo que provoca errores en cualquier sistema de text-to-speech que no resuelva la ambigüedad. El modelo recibe una frase con la palabra marcada y devuelve la lectura correcta como una reescritura fonética en escritura bengalí.
 
 Se trata de un fine-tuning de `google/muril-base-cased`, un transformer BERT multilingüe especializado en lenguas del subcontinente indio, con 237,5 millones de parámetros. Sobre la codificación de MuRIL se añade una cabeza lineal pequeña que puntúa las lecturas candidatas de cada palabra a partir del token marcador de apertura. El modelo está entrenado exclusivamente sobre el dataset `kawshikbuet17/bangla-heteronyms` y su ámbito de aplicación es acotado: solo cubre los heterónimos presentes en ese dataset.
 
@@ -98,7 +98,7 @@ El benchmark del autor incluye 12 modelos en total; la model card solo detalla l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawshikbuet17/bangla-heteronym-muril-base
+- Modelo en Hugging Face: https://huggingface.co/kawshikbuet17/bangla-heteronym-muril-base
 - Modelo base: https://huggingface.co/google/muril-base-cased
 - Dataset de heterónimos: https://huggingface.co/datasets/kawshikbuet17/bangla-heteronyms
 - Repositorio del benchmark (código de carga e inferencia): https://github.com/kawshikbuet17/bangla-heteronym-benchmark

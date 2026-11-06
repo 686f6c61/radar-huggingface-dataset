@@ -95,7 +95,7 @@ Las cifras de Qwen3-4B-Instruct y Gemma 4 E4B corresponden a la propia evaluacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SonoJot/sonojot-punct-v1
+- Modelo en Hugging Face: https://huggingface.co/SonoJot/sonojot-punct-v1
 - Modelo base: https://huggingface.co/Horizon-Labs/punctuation-restoration-small
 - Aplicacion SonoJot: https://sonojot.com/
 - Dataset Earnings-21 (Rev.com, conjunto de transcripciones): https://github.com/revdotcom/speech-datasets

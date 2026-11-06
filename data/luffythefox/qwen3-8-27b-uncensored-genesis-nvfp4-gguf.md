@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-NVFP4-GGUF | 27B | GGUF | no disponible | Apache-2.0 | HuggingFace |
-| LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-MTP-GGUF | 27B | GGUF | no disponible | no disponible | HuggingFace |
-| HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF | 27B | GGUF | no disponible | no disponible | HuggingFace |
+| LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-NVFP4-GGUF | 27B | GGUF | no disponible | Apache-2.0 | Hugging Face |
+| LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-MTP-GGUF | 27B | GGUF | no disponible | no disponible | Hugging Face |
+| HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF | 27B | GGUF | no disponible | no disponible | Hugging Face |
 
 La comparación se limita a los datos públicos de los repositorios. No hay métricas de rendimiento que permitan evaluar diferencias funcionales entre estos modelos.
 

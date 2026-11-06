@@ -105,7 +105,7 @@ Con datos de fidelidad publicados: frente al original, oQ4e pierde un 9,3 % de c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thederby/Qwen3.6-35B-A3B-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/thederby/Qwen3.6-35B-A3B-oQ4e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Proyecto oMLX: https://github.com/jundot/omlx
 - Pull request del reajuste de escalas y sesgos: https://github.com/jundot/omlx/pull/4385

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Roberto2799/Encoder-jusbrasil es un repositorio publicado en HuggingFace por el usuario Roberto2799 cuya model card se limita a declarar la licencia MIT. No se documenta arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento, idiomas soportados ni formato de pesos, por lo que cualquier evaluacion tecnica rigurosa queda bloqueada con la informacion disponible.
+Roberto2799/Encoder-jusbrasil es un repositorio publicado en Hugging Face por el usuario Roberto2799 cuya model card se limita a declarar la licencia MIT. No se documenta arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento, idiomas soportados ni formato de pesos, por lo que cualquier evaluacion tecnica rigurosa queda bloqueada con la informacion disponible.
 
 El identificador del repositorio sugiere, sin que exista confirmacion alguna en los datos proporcionados, un modelo de tipo encoder orientado a texto en portugues del ambito juridico brasileño, presumiblemente vinculado al dominio de JusBrasil. Se trata de una hipotesis derivada unicamente del nombre del repositorio y no de una especificacion publicada por el autor.
 
-El repositorio registra 0 descargas y 0 "likes". La fecha de creacion y la de ultima actualizacion coinciden (2026-09-23 segun los metadatos de HuggingFace), lo que apunta a una subida sin documentacion posterior ni mantenimiento. Su relevancia actual es potencial, no demostrada: podria ser util como encoder de dominio juridico en portugues, pero no existe evidencia publica que lo respalde.
+El repositorio registra 0 descargas y 0 "likes". La fecha de creacion y la de ultima actualizacion coinciden (2026-09-23 segun los metadatos de Hugging Face), lo que apunta a una subida sin documentacion posterior ni mantenimiento. Su relevancia actual es potencial, no demostrada: podria ser util como encoder de dominio juridico en portugues, pero no existe evidencia publica que lo respalde.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El repositorio registra 0 descargas y 0 "likes". La fecha de creacion y la de ul
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 | Tokenizador | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion | 2026-09-23 (creado y actualizado en la misma marca temporal) |
@@ -72,10 +72,10 @@ Sin especificaciones publicadas no es posible establecer una comparativa cuantit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Roberto2799/Encoder-jusbrasil | no disponible | no disponible | MIT | publico en HuggingFace, 0 descargas |
-| BERTimbau (Neuralmind) | no verificado en esta ficha | no verificado en esta ficha | no verificado en esta ficha | publico en HuggingFace |
-| Variantes de Legal-BERT en portugues | no verificado en esta ficha | no verificado en esta ficha | no verificado en esta ficha | publicas en HuggingFace, con distinta calidad de documentacion |
-| XLM-RoBERTa (encoder multilingue) | no verificado en esta ficha | no verificado en esta ficha | no verificado en esta ficha | publico en HuggingFace |
+| Roberto2799/Encoder-jusbrasil | no disponible | no disponible | MIT | publico en Hugging Face, 0 descargas |
+| BERTimbau (Neuralmind) | no verificado en esta ficha | no verificado en esta ficha | no verificado en esta ficha | publico en Hugging Face |
+| Variantes de Legal-BERT en portugues | no verificado en esta ficha | no verificado en esta ficha | no verificado en esta ficha | publicas en Hugging Face, con distinta calidad de documentacion |
+| XLM-RoBERTa (encoder multilingue) | no verificado en esta ficha | no verificado en esta ficha | no verificado en esta ficha | publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,9 +87,9 @@ Sin especificaciones publicadas no es posible establecer una comparativa cuantit
 - Licencia MIT: permite uso comercial y modificacion, pero se concede sobre el artefacto publicado. La procedencia del corpus de entrenamiento es desconocida, por lo que el usuario asume el riesgo de posibles reclamaciones de terceros sobre los datos originales.
 - Sin mantenimiento ni adopcion: 0 descargas y 0 "likes" implican que no existe una comunidad que haya validado el modelo ni informes de errores acumulados.
 - No apto para produccion sin una fase de evaluacion propia: cualquier integracion deberia ir precedida de pruebas de calidad sobre datos reales del caso de uso.
-- Fechas de publicacion inusuales: los metadatos indican 2026-09-23 tanto en creacion como en actualizacion; conviene verificar el estado real del repositorio en HuggingFace.
+- Fechas de publicacion inusuales: los metadatos indican 2026-09-23 tanto en creacion como en actualizacion; conviene verificar el estado real del repositorio en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Roberto2799/Encoder-jusbrasil
+- Hugging Face: https://huggingface.co/Roberto2799/Encoder-jusbrasil
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

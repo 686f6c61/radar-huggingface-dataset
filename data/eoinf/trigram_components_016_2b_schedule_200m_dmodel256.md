@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eoinf/trigram_components_016_2b_schedule_200m_dmodel256` es un transformer causal de muy pequeno tamano publicado en HuggingFace por el usuario `eoinf` como parte de una rejilla de experimentos denominada "Transformer experiment grid". No se trata de un modelo de proposito general ni de un lanzamiento comercial, sino de un artefacto de investigacion disenado para estudiar el comportamiento de transformers causales minimos sobre una tarea sintetica de trigramas. El nombre del repositorio codifica sus parametros clave: una programacion nominal de aproximadamente 2.000 millones de tokens de entrenamiento, un `d_model` de 256 y un vocabulario de 4096 tokens.
+El modelo `eoinf/trigram_components_016_2b_schedule_200m_dmodel256` es un transformer causal de muy pequeno tamano publicado en Hugging Face por el usuario `eoinf` como parte de una rejilla de experimentos denominada "Transformer experiment grid". No se trata de un modelo de proposito general ni de un lanzamiento comercial, sino de un artefacto de investigacion disenado para estudiar el comportamiento de transformers causales minimos sobre una tarea sintetica de trigramas. El nombre del repositorio codifica sus parametros clave: una programacion nominal de aproximadamente 2.000 millones de tokens de entrenamiento, un `d_model` de 256 y un vocabulario de 4096 tokens.
 
 La arquitectura es un transformer causal denso de dimension oculta 256, con longitud de contexto de 256 tokens y un unico seed por anchura. El entrenamiento se realizo sobre datos sinteticos generados a partir de trigramas, con un tokenizador propio (`eoinf/pile_tokenizer_4096`), y la evaluacion se efectua sobre los propios datos de entrenamiento, sin conjunto de validacion reservado. El repositorio incluye unicamente los state-dicts de PyTorch, el historial de checkpoints, el registro de actualizaciones de entrenamiento y metadatos de resultado; no contiene los estados del optimizador ni los datos de entrenamiento.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eoinf/trigram_components_016_2b_schedule_200m_dmodel256 | no disponible (d_model 256) | 256 | no disponible | HuggingFace, solo state-dicts | Experimento sintetico de trigramas |
-| Modelos de la misma rejilla `eoinf` (otras anchuras) | variables | 256 | no disponible | HuggingFace | Mismo diseno experimental con distinto `d_model` |
-| Transformers minimos de referencia tipo nanoGPT | ~10M-100M | variable | MIT (tipicamente) | GitHub / HuggingFace | Entrenados sobre texto natural; no directamente comparables |
+| eoinf/trigram_components_016_2b_schedule_200m_dmodel256 | no disponible (d_model 256) | 256 | no disponible | Hugging Face, solo state-dicts | Experimento sintetico de trigramas |
+| Modelos de la misma rejilla `eoinf` (otras anchuras) | variables | 256 | no disponible | Hugging Face | Mismo diseno experimental con distinto `d_model` |
+| Transformers minimos de referencia tipo nanoGPT | ~10M-100M | variable | MIT (tipicamente) | GitHub / Hugging Face | Entrenados sobre texto natural; no directamente comparables |
 
 No se dispone de modelos directamente comparables en la informacion proporcionada, ya que la tarea sintetica de trigramas y la ausencia de evaluacion reservada impiden una comparacion significativa con modelos de lenguaje de proposito general.
 
@@ -81,7 +81,7 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinf/trigram_components_016_2b_schedule_200m_dmodel256
+- Modelo en Hugging Face: https://huggingface.co/eoinf/trigram_components_016_2b_schedule_200m_dmodel256
 - Tokenizador asociado: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de arquitectura y carga: `synthetic_trigrams` (referenciado en la model card; URL no disponible en la informacion proporcionada)
 - Ficheros de configuracion y resultados: `configuration.json`, `grid_summary.json`, `result.json` (incluidos en el repositorio del modelo)

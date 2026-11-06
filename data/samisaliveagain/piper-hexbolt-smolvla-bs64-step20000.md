@@ -97,7 +97,7 @@ No se dispone de resultados comparativos de benchmarks ni de datos verificados d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samisaliveagain/piper-hexbolt-smolvla-bs64-step20000
+- Modelo en Hugging Face: https://huggingface.co/Samisaliveagain/piper-hexbolt-smolvla-bs64-step20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Samisaliveagain/piper-hexagonal-bolt-insertion-100-demos-v1
 
 No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos asociados a este checkpoint.

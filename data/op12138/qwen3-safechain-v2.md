@@ -29,7 +29,7 @@ Los hiperparámetros de entrenamiento declarados en la tarjeta del modelo son: `
 
 ## Capacidades
 
-- Generación de texto: el modelo está configurado para el pipeline `text-generation` de HuggingFace Transformers.
+- Generación de texto: el modelo está configurado para el pipeline `text-generation` de Hugging Face Transformers.
 - Conversación: el tag `conversational` indica que el modelo está orientado a tareas de diálogo, aunque no se especifican capacidades avanzadas.
 - Hereda las capacidades del modelo base Qwen3-1.7B, que incluyen generación de texto, razonamiento básico y soporte multilingüe, pero estas no están confirmadas en este repositorio.
 - No se ha documentado soporte para tool calling, agentes o razonamiento multi-paso.
@@ -80,6 +80,6 @@ No se conocen alternativas específicas con el mismo conjunto de datos de ajuste
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/OP12138/qwen3-safechain-v2)
+- [Repositorio Hugging Face](https://huggingface.co/OP12138/qwen3-safechain-v2)
 - [Modelo base: Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - No se han encontrado papers, blogs o demos asociados a este modelo.

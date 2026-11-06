@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-tug-of-war-tug-super-v8` es una política de control motriz entrenada mediante aprendizaje por refuerzo (PPO) para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. No se trata de un modelo de lenguaje, sino de una política neuronal que mapea observaciones de 61 dimensiones a 14 acciones de control a 50 Hz, empaquetada en formato ONNX y distribuida con el manifiesto de políticas de la librería `microduck`. El autor es el usuario de HuggingFace `greecree`, vinculado al repositorio `green-creeper/microduck-challenges`.
+`microduck-tug-of-war-tug-super-v8` es una política de control motriz entrenada mediante aprendizaje por refuerzo (PPO) para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. No se trata de un modelo de lenguaje, sino de una política neuronal que mapea observaciones de 61 dimensiones a 14 acciones de control a 50 Hz, empaquetada en formato ONNX y distribuida con el manifiesto de políticas de la librería `microduck`. El autor es el usuario de Hugging Face `greecree`, vinculado al repositorio `green-creeper/microduck-challenges`.
 
 La política resuelve una tarea concreta de locomotion competitiva: un tirón de guerra (tug-of-war) en el que el robot debe mantener tracción y estabilidad frente a múltiples oponentes. La versión v8 corresponde a una liga multi-oponente con refinamiento rápido mediante "pit-launch", y está diseñada como política perpetua: se ejecuta de forma continua hasta que se le indique lo contrario, comportándose como una marcha cargada en una ranura de política del daemon del robot.
 
@@ -83,6 +83,6 @@ No disponible. No se han proporcionado políticas comparables de microduck ni de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v8
+- Hugging Face: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v8
 - Repositorio de challenges: https://github.com/green-creeper/microduck-challenges
 - Repositorio de microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `snehakumarwyn/asr` en HuggingFace contiene una implementación mínima etiquetada como "asr" con arquitectura "híbrida" y orientada a tareas de clasificación. La model card describe un conjunto de componentes genéricos (optimizador adafactor, activación approx gelu, normalización layernorm, inicialización xavier uniform) pero no proporciona detalles concretos sobre el número de parámetros, los datos de entrenamiento ni las capacidades reales del modelo. El único artefacto del repositorio es un archivo `main.py`, sin pesos publicados ni métricas de rendimiento.
+El repositorio `snehakumarwyn/asr` en Hugging Face contiene una implementación mínima etiquetada como "asr" con arquitectura "híbrida" y orientada a tareas de clasificación. La model card describe un conjunto de componentes genéricos (optimizador adafactor, activación approx gelu, normalización layernorm, inicialización xavier uniform) pero no proporciona detalles concretos sobre el número de parámetros, los datos de entrenamiento ni las capacidades reales del modelo. El único artefacto del repositorio es un archivo `main.py`, sin pesos publicados ni métricas de rendimiento.
 
 El identificador "asr" sugiere una orientación al reconocimiento automático del habla, pero la model card describe una tarea genérica de clasificación, lo que genera ambigüedad sobre el propósito real del proyecto. El repositorio no tiene descargas ni valoraciones, lo que indica que se trata de un proyecto inicial o experimental sin validación externa. No existe información suficiente para evaluar su utilidad técnica o compararlo con otros modelos.
 
@@ -58,4 +58,4 @@ No disponible. La falta de especificaciones técnicas (parámetros, contexto, re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/snehakumarwyn/asr
+- Repositorio Hugging Face: https://huggingface.co/snehakumarwyn/asr

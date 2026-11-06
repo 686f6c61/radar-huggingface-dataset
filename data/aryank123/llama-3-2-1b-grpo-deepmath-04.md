@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AryanK123/Llama-3.2-1B-GRPO-DeepMath-04 | 1.24B (aprox.) | No disponible | No disponible | HuggingFace |
-| AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04 | 1.24B (aprox.) | No disponible | No disponible | HuggingFace |
-| Meta-Llama-3.2-1B-Instruct | 1.24B (aprox.) | 128k tokens | Llama 3.2 Community License | HuggingFace |
+| AryanK123/Llama-3.2-1B-GRPO-DeepMath-04 | 1.24B (aprox.) | No disponible | No disponible | Hugging Face |
+| AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04 | 1.24B (aprox.) | No disponible | No disponible | Hugging Face |
+| Meta-Llama-3.2-1B-Instruct | 1.24B (aprox.) | 128k tokens | Llama 3.2 Community License | Hugging Face |
 
 No se disponen de datos de rendimiento comparado entre estos modelos. La comparativa se limita a características básicas disponibles.
 
@@ -73,7 +73,7 @@ No se disponen de datos de rendimiento comparado entre estos modelos. La compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-04
+- Hugging Face: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-04
 - Modelo base: https://huggingface.co/AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04
 - Paper DeepSeekMath: https://huggingface.co/papers/2402.03300
 - Arxiv del paper: https://arxiv.org/abs/2402.03300

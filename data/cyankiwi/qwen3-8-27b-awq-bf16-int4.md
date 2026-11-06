@@ -73,6 +73,6 @@ No disponible. No se han proporcionado datos comparativos con otros modelos en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyankiwi/Qwen3.8-27B-AWQ-BF16-INT4
+- Repositorio Hugging Face: https://huggingface.co/cyankiwi/Qwen3.8-27B-AWQ-BF16-INT4
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder` es un repositorio publicado en HuggingFace por el usuario `zhouxinxin`. La informacion disponible es extraordinariamente limitada: la model card completa se reduce a la frase "Model weights." y una declaracion de licencia del tipo `other`. No se documenta arquitectura, numero de parametros, longitud de contexto, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta.
+El modelo identificado como `zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder` es un repositorio publicado en Hugging Face por el usuario `zhouxinxin`. La informacion disponible es extraordinariamente limitada: la model card completa se reduce a la frase "Model weights." y una declaracion de licencia del tipo `other`. No se documenta arquitectura, numero de parametros, longitud de contexto, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta.
 
 Se desconoce el problema concreto que el modelo pretende resolver. El propio identificador contiene fragmentos que sugieren una decimocuarta iteracion (`v14_0`), un posible componente encoder (`v126enc`), una tarea relacionada con el tratamiento de informacion personal identificable (`fix_pii`) y un decodificador (`decoder`), ademas de la secuencia `a3b`, que en la nomenclatura habitual de modelos MoE podria indicar 3.000 millones de parametros activos. Ninguna de estas lecturas esta confirmada por el autor, por lo que deben tratarse estrictamente como especulacion derivada del nombre del repositorio y no como datos verificados.
 
@@ -71,5 +71,5 @@ No disponible. Al desconocerse el tamano, la arquitectura, la licencia y las cap
 
 ## Enlaces
 
-- [HuggingFace: zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder](https://huggingface.co/zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder)
+- [Hugging Face: zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder](https://huggingface.co/zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder)
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en los resultados de busqueda disponibles.

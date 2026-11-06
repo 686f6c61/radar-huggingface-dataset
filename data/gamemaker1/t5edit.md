@@ -2,7 +2,7 @@
 
 ## Resumen
 
-t5edit es un modelo sequence-to-sequence de 780 millones de parámetros desarrollado por el usuario gamemaker1, disponible en HuggingFace bajo licencia Apache 2.0. Se trata de una versión fine-tuned de google/flan-t5-large especializada en una tarea concreta: reescribir artículos desactualizados a partir de evidencia externa, actualizando, sustituyendo o eliminando frases según la nueva información disponible.
+t5edit es un modelo sequence-to-sequence de 780 millones de parámetros desarrollado por el usuario gamemaker1, disponible en Hugging Face bajo licencia Apache 2.0. Se trata de una versión fine-tuned de google/flan-t5-large especializada en una tarea concreta: reescribir artículos desactualizados a partir de evidencia externa, actualizando, sustituyendo o eliminando frases según la nueva información disponible.
 
 El modelo sigue el diseño de EDIT5, descrito en el paper FRUIT de Iv et al. (2022), en el que el modelo no reescribe el artículo completo, sino que marca las frases sin cambios con un índice corto y solo genera texto nuevo para las frases modificadas. Esto reduce notablemente el coste de generación y facilita la tarea de actualización factual.
 
@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU moderna de gama media; no se necesita A100 ni H100 para inferencia (la A100 de 40 GB se uso para el entrenamiento). Una RTX 3060 de 12 GB o superior sobra.
 - Consumer GPU: cabe sin problemas en GPUs consumer como RTX 3060, RTX 4060 Ti o superiores, incluso sin cuantizacion.
 - CPU: ejecutable en CPU dado su tamano moderado, con latencias mayores.
-- Opciones de despliegue: HuggingFace Transformers (`AutoModelForSeq2SeqLM`, codigo de ejemplo en la model card), compatible con text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en el repo). El soporte en llama.cpp u Ollama no esta documentado (los pesos estan en safetensors, no GGUF).
+- Opciones de despliegue: Hugging Face Transformers (`AutoModelForSeq2SeqLM`, codigo de ejemplo en la model card), compatible con text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en el repo). El soporte en llama.cpp u Ollama no esta documentado (los pesos estan en safetensors, no GGUF).
 - Latencia y throughput: no disponible; al generar solo frases modificadas (salida maxima de 384 tokens), la latencia de decodificacion deberia ser baja en practica.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gamemaker1/t5edit | 783M | Edicion factual de articulos (estilo EDIT5) | 1.024 in / 384 out | Apache 2.0 | Publico en HuggingFace |
-| google/flan-t5-large (base) | 780M | Instruccion general text2text | 512 tokens | Apache 2.0 | Publico en HuggingFace |
-| google/flan-t5-xl | 3.000M | Instruccion general text2text | 512 tokens | Apache 2.0 | Publico en HuggingFace |
+| gamemaker1/t5edit | 783M | Edicion factual de articulos (estilo EDIT5) | 1.024 in / 384 out | Apache 2.0 | Publico en Hugging Face |
+| google/flan-t5-large (base) | 780M | Instruccion general text2text | 512 tokens | Apache 2.0 | Publico en Hugging Face |
+| google/flan-t5-xl | 3.000M | Instruccion general text2text | 512 tokens | Apache 2.0 | Publico en Hugging Face |
 
 t5edit no compite en benchmarks generales: es un modelo especializado en una unica tarea de edicion, sobre el mismo dataset que el sistema DiffusEdit (gamemaker1/diffusedit). Frente a su modelo base flan-t5-large, aporta la capacidad de edicion estructurada por frases, que el modelo base no tiene sin fine-tuning. No hay disponibles modelos alternativos publicos con exactamente el mismo esquema EDIT5 en la informacion proporcionada.
 

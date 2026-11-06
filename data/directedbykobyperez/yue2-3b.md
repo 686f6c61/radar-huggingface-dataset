@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YuE2-3B es un modelo alojado en HuggingFace por el usuario directedbykobyperez, orientado a la generacion de audio a partir de texto (pipeline text-to-audio). Las etiquetas del repositorio lo asocian con las categorias yue2, music-generation, symbolic-planning, agentic-editing y custom_code, e incluyen referencias a los idiomas chino (zh) e ingles (en), asi como a un identificador de paper en arXiv (2503.08638). El propio nombre del repositorio sugiere un modelo de aproximadamente 3.000 millones de parametros, aunque este dato no aparece confirmado en la informacion disponible.
+YuE2-3B es un modelo alojado en Hugging Face por el usuario directedbykobyperez, orientado a la generacion de audio a partir de texto (pipeline text-to-audio). Las etiquetas del repositorio lo asocian con las categorias yue2, music-generation, symbolic-planning, agentic-editing y custom_code, e incluyen referencias a los idiomas chino (zh) e ingles (en), asi como a un identificador de paper en arXiv (2503.08638). El propio nombre del repositorio sugiere un modelo de aproximadamente 3.000 millones de parametros, aunque este dato no aparece confirmado en la informacion disponible.
 
 El repositorio no incluye informacion tecnica publica en los metadatos consultados: no hay model card descriptiva, no se detallan la arquitectura, el volumen de datos de entrenamiento, el proceso de alineamiento ni los benchmarks. Con 0 descargas y 1 like registrados, se trata de un artefacto practicamente sin validacion por parte de la comunidad, lo que limita cualquier evaluacion de su calidad real.
 
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, tam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/directedbykobyperez/YuE2-3B
+- Repositorio en Hugging Face: https://huggingface.co/directedbykobyperez/YuE2-3B
 - Paper referenciado en las etiquetas (identificador arXiv 2503.08638): https://arxiv.org/abs/2503.08638
 - No se han encontrado otros enlaces relevantes (blog, repositorio de codigo, demo o documentacion adicional) en la busqueda web realizada.

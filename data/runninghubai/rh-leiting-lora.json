@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-leiting-lora",
+  "slug": "runninghubai-rh-leiting-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-leiting-lora",
+  "created_at": "2026-11-06T11:34:24.000Z",
+  "updated_at": "2026-11-06T11:35:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85257637,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leiting - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2028759024082096130",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-ai-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-ai-lora/tree/main",
+      "snippet": "RunningHubAI / rh-ai-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-ai-lora 238 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2005090948453466113 5d9d23d verifiedabout 8 hours ago .gitattributes Safe 1.57 kBUpload RunningHub model 2005090948453466113about 8 hours ago README.md 2.75 ..."
+    }
+  ]
+}

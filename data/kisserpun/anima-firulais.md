@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kisserpun/anima-firulais` es un modelo de lenguaje publicado en HuggingFace por el usuario `kisserpun`, con un total de 2.091.068.928 parametros (~2,09 mil millones segun los pesos en formato safetensors) y un repositorio de 4,2 GB. La model card asociada no contiene mas informacion que la declaracion de licencia Apache 2.0: no se documentan arquitectura, datos de entrenamiento, idiomas, pipeline ni capacidades. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+`kisserpun/anima-firulais` es un modelo de lenguaje publicado en Hugging Face por el usuario `kisserpun`, con un total de 2.091.068.928 parametros (~2,09 mil millones segun los pesos en formato safetensors) y un repositorio de 4,2 GB. La model card asociada no contiene mas informacion que la declaracion de licencia Apache 2.0: no se documentan arquitectura, datos de entrenamiento, idiomas, pipeline ni capacidades. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El nombre del repositorio sugiere un ajuste fino (fine-tune) de caracter tematico, pero no existe ninguna declaracion del autor que confirme el modelo base, el proposito ni el proceso de entrenamiento. Tampoco se ha publicado informacion adicional en la busqueda web realizada, cuyos resultados son completamente ajenos al modelo (corresponden a la Federacion de Futbol de Carintia, KFV).
 
@@ -70,7 +70,7 @@ Estimaciones basadas en el recuento de parametros (2,09 B) y en las convenciones
 - VRAM estimada para inferencia: ~4,2 GB en fp16/bf16, ~2,1 GB en int8, ~1,1-1,3 GB en int4.
 - GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para fp16 (RTX 3060, RTX 4060, RTX 2070 o superiores); A100, H100 o L40S para despliegue a gran escala.
 - Compatibilidad con GPU de consumo: previsiblemente si, en la mayoria de GPUs consumer modernas con 8 GB o mas. En CPU la inferencia seria viable aunque lenta.
-- Opciones de despliegue: no declaradas por el autor. Si la arquitectura resulta ser un transformer estandar compatible con el ecosistema HuggingFace, podrian emplearse `transformers`, vLLM, TGI y, previa conversion a GGUF, llama.cpp u Ollama. Esta compatibilidad no esta confirmada.
+- Opciones de despliegue: no declaradas por el autor. Si la arquitectura resulta ser un transformer estandar compatible con el ecosistema Hugging Face, podrian emplearse `transformers`, vLLM, TGI y, previa conversion a GGUF, llama.cpp u Ollama. Esta compatibilidad no esta confirmada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ Los datos de los modelos de referencia deben verificarse en sus repositorios ofi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kisserpun/anima-firulais
+- Repositorio Hugging Face: https://huggingface.co/kisserpun/anima-firulais
 - Model card del autor: no contiene informacion tecnica adicional (solo `license: apache-2.0`)
 - Paper: no disponible
 - Blog o anuncio: no disponible

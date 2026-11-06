@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valentin0901/Planium-2B
+- Modelo en Hugging Face: https://huggingface.co/valentin0901/Planium-2B
 - Repositorio NeuroPlan en GitHub: https://github.com/valentin0901/NeuroPlan
 - Perfil del autor en GitHub: https://github.com/valentin0901

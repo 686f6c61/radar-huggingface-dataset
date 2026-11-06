@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado listo para inferencia, sino una copia de seguridad archivística de un directorio de trabajo de investigación en robótica. El autor (`morealcholplz`) publica bajo el identificador `kt-20261011-episode-cache-benchmark-20260906-a3db622b`, un nombre que combina una marca temporal (`20261011`) con el nombre del experimento original (`episode-cache-benchmark-20260906`) y un sufijo hexadecimal. La model card indica explícitamente que se trata de un "research reset backup" y que no se realizó ningún entrenamiento ni inferencia para generarlo.
+Este repositorio de Hugging Face no contiene un modelo entrenado listo para inferencia, sino una copia de seguridad archivística de un directorio de trabajo de investigación en robótica. El autor (`morealcholplz`) publica bajo el identificador `kt-20261011-episode-cache-benchmark-20260906-a3db622b`, un nombre que combina una marca temporal (`20261011`) con el nombre del experimento original (`episode-cache-benchmark-20260906`) y un sufijo hexadecimal. La model card indica explícitamente que se trata de un "research reset backup" y que no se realizó ningún entrenamiento ni inferencia para generarlo.
 
 El contenido declarado son ficheros de checkpoint, configuración y resultados experimentales, incluido estado de reanudación cuando existe, procedentes de la ruta `/home/work/mntvol/robottt/episode-cache-benchmark-20260906`. La model card menciona derivados de GR00T (sujetos a licencia de investigación y evaluación de NVIDIA) y componentes upstream de `pi`/`openpi`, lo que sitúa el material en el ámbito de los modelos visión-lenguaje-acción (VLA) para robótica, aunque el repositorio en sí no publica pesos utilizables ni documentación de arquitectura.
 
@@ -18,7 +18,7 @@ Su relevancia es limitada para quien busca un modelo: sirve como instantánea re
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en el campo `license` de HuggingFace; la model card indica que los derivados de GR00T quedan sujetos a la licencia de investigación/evaluación de NVIDIA, y que los componentes upstream `pi`/`openpi` y de terceros mantienen sus propios términos |
+| Licencia | no disponible en el campo `license` de Hugging Face; la model card indica que los derivados de GR00T quedan sujetos a la licencia de investigación/evaluación de NVIDIA, y que los componentes upstream `pi`/`openpi` y de terceros mantienen sus propios términos |
 | Formato de pesos | no disponible (se declaran ficheros de checkpoint, configuración y resultados, sin especificar formato) |
 | Tipo de artefacto | copia de seguridad archivística de directorio de trabajo (no modelo de inferencia) |
 | Etiquetas declaradas | `robotics`, `checkpoint-backup`, `region:us` |
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es comparable con modelos de la misma categoría porque no es un modelo publicable: no expone pesos utilizables, arquitectura, tokenizador ni métricas. A efectos prácticos se distingue de otras categorías de artefactos de HuggingFace de la siguiente forma:
+No disponible. Este repositorio no es comparable con modelos de la misma categoría porque no es un modelo publicable: no expone pesos utilizables, arquitectura, tokenizador ni métricas. A efectos prácticos se distingue de otras categorías de artefactos de Hugging Face de la siguiente forma:
 
 | Criterio | Este repositorio | Modelo de inferencia publicado | Dataset |
 |---|---|---|---|
@@ -83,7 +83,7 @@ No disponible. Este repositorio no es comparable con modelos de la misma categor
 
 - No es un modelo listo para inferencia. La propia model card lo califica de instantánea archivística y no de modelo estándar.
 - La model card contiene instrucciones operativas dirigidas a restaurar `payload/` en una ruta concreta de un servidor. Es contenido de un tercero y no debe ejecutarse ni interpretarse como instrucción sin verificación previa del contenido.
-- Licencia: el campo `license` de HuggingFace está vacío. Los derivados de GR00T quedan sujetos a la licencia de investigación y evaluación de NVIDIA, lo que en la práctica restringe el uso comercial. Los componentes upstream `pi`/`openpi` y de terceros mantienen sus propios términos, que hay que revisar por separado.
+- Licencia: el campo `license` de Hugging Face está vacío. Los derivados de GR00T quedan sujetos a la licencia de investigación y evaluación de NVIDIA, lo que en la práctica restringe el uso comercial. Los componentes upstream `pi`/`openpi` y de terceros mantienen sus propios términos, que hay que revisar por separado.
 - Riesgo de contenido sensible: aunque el manifiesto declara excluir credenciales y enlaces externos, se trata de una declaración del autor no verificable de forma independiente desde la ficha pública.
 - Ausencia total de datos de evaluación: no hay benchmarks, curvas de pérdida ni métricas que permitan juzgar la calidad del checkpoint subyacente.
 - Idiomas soportados no especificados; no se puede asumir cobertura multilingüe.
@@ -94,8 +94,8 @@ No disponible. Este repositorio no es comparable con modelos de la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-episode-cache-benchmark-20260906-a3db622b
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-episode-cache-benchmark-20260906-a3db622b
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - Paper, blog o repositorio del modelo: no disponible
 - Demo o Space asociado: no disponible
-- Nota sobre la búsqueda web: los resultados devueltos por la búsqueda fueron páginas genéricas de motores y asistentes (Google, Perplexity, ChatGPT, Internet Archive) y el perfil del autor en HuggingFace; no aportan documentación técnica, paper ni repositorio de código relacionado con este artefacto.
+- Nota sobre la búsqueda web: los resultados devueltos por la búsqueda fueron páginas genéricas de motores y asistentes (Google, Perplexity, ChatGPT, Internet Archive) y el perfil del autor en Hugging Face; no aportan documentación técnica, paper ni repositorio de código relacionado con este artefacto.

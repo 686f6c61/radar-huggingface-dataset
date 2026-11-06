@@ -4,7 +4,7 @@
 
 `benchmark-slm-fiven-qwen2.5-1.5b-raft` es un adaptador LoRA (PEFT) entrenado sobre el modelo base `Qwen/Qwen2.5-1.5B`, publicado por el usuario `praiselab-picuslab`. No se distribuye como modelo completo, sino como pesos de adaptador en formato `safetensors`, por lo que su uso requiere descargar el modelo base de Qwen y cargar el adaptador encima. El repositorio tiene un tamano de 0.0 GB, lo que es coherente con un adaptador de bajo rango sobre un transformer de 1,5 mil millones de parametros.
 
-El nombre y las etiquetas del repositorio indican que el modelo forma parte de una iniciativa de evaluacion de modelos de lenguaje pequenos (`benchmark-slm`) sobre un conjunto de datos denominado `fiven`, y que la estrategia de ajuste empleada es RAFT (Retrieval Augmented Fine-Tuning), una tecnica orientada a que el modelo responda a partir de contexto recuperado e ignore pasajes distractores. El adaptador esta etiquetado como conversacional (`conversational`, `it`) y en italiano, lo que sugiere un ajuste especifico para ese idioma. No se ha publicado informacion sobre el proceso de entrenamiento, el volumen de datos ni los resultados obtenidos, y el acceso al repositorio esta restringido y requiere aceptar condiciones en HuggingFace.
+El nombre y las etiquetas del repositorio indican que el modelo forma parte de una iniciativa de evaluacion de modelos de lenguaje pequenos (`benchmark-slm`) sobre un conjunto de datos denominado `fiven`, y que la estrategia de ajuste empleada es RAFT (Retrieval Augmented Fine-Tuning), una tecnica orientada a que el modelo responda a partir de contexto recuperado e ignore pasajes distractores. El adaptador esta etiquetado como conversacional (`conversational`, `it`) y en italiano, lo que sugiere un ajuste especifico para ese idioma. No se ha publicado informacion sobre el proceso de entrenamiento, el volumen de datos ni los resultados obtenidos, y el acceso al repositorio esta restringido y requiere aceptar condiciones en Hugging Face.
 
 Su relevancia actual es acotada y de caracter experimental: se trata de un artefacto de investigacion con cero descargas y cero valoraciones, sin model card publica verificable ni benchmarks. Resulta interesante como ejemplo de metodologia (RAFT aplicado a un SLM de 1,5B en italiano) mas que como modelo listo para produccion, y su utilidad practica depende de verificar primero el contenido real del repositorio, dado que el acceso es restringido.
 
@@ -24,7 +24,7 @@ Su relevancia actual es acotada y de caracter experimental: se trata de un artef
 | Estrategia de ajuste | RAFT (`strategy-raft`), inferida de las etiquetas del repositorio |
 | Dataset declarado | `dataset-fiven` (contenido y tamano no disponibles) |
 | Tarea declarada | `text-generation`, `conversational` |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / valoraciones | 0 descargas / 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -95,6 +95,6 @@ Datos de los comparadores tomados de sus model cards publicas; no verificados en
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-qwen2.5-1.5b-raft
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-qwen2.5-1.5b-raft
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo ni demos.

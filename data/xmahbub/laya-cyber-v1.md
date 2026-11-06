@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya Cyber v1 es un modelo publicado en HuggingFace por el usuario xmahbub bajo el identificador `xmahbub/laya-cyber-v1`. Se trata de un repositorio con pesos en formato safetensors y un tamano aproximado de 2,4 GB, lo que sugiere un modelo de parametros reducidos, aunque no se ha publicado informacion oficial sobre su arquitectura, numero de parametros ni longitud de contexto. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni tarjeta de modelo con detalles tecnicos.
+Laya Cyber v1 es un modelo publicado en Hugging Face por el usuario xmahbub bajo el identificador `xmahbub/laya-cyber-v1`. Se trata de un repositorio con pesos en formato safetensors y un tamano aproximado de 2,4 GB, lo que sugiere un modelo de parametros reducidos, aunque no se ha publicado informacion oficial sobre su arquitectura, numero de parametros ni longitud de contexto. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni tarjeta de modelo con detalles tecnicos.
 
 El nombre "cyber" sugiere un posible enfoque hacia ciberseguridad o dominios relacionados, pero esta es unicamente una inferencia a partir del nombre y no una caracteristica confirmada por el autor en la informacion disponible. No se han publicado resultados de benchmarks, descripcion del dataset de entrenamiento ni documentacion sobre el proceso de ajuste.
 
@@ -30,7 +30,7 @@ En el momento de redactar esta ficha el modelo acumula 0 descargas y 1 like, y f
 
 No se ha publicado informacion sobre la arquitectura del modelo. El repositorio no incluye tarjeta de modelo con detalles sobre si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura de espacio de estados o un diseno hibrido. Tampoco se especifica el tokenizador empleado, el vocabulario ni la estrategia de atencion.
 
-En cuanto al entrenamiento, no hay datos disponibles sobre el numero de tokens utilizados, la composicion del dataset, la posible aplicacion de tecnicas de ajuste como RLHF, DPO o instruccion supervisada, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico dato objetivo es que los pesos se distribuyen en formato safetensors, lo que indica compatibilidad con las librerias habituales del ecosistema HuggingFace (transformers, vLLM, TGI) siempre que la arquitectura subyacente sea soportada por dichas herramientas.
+En cuanto al entrenamiento, no hay datos disponibles sobre el numero de tokens utilizados, la composicion del dataset, la posible aplicacion de tecnicas de ajuste como RLHF, DPO o instruccion supervisada, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico dato objetivo es que los pesos se distribuyen en formato safetensors, lo que indica compatibilidad con las librerias habituales del ecosistema Hugging Face (transformers, vLLM, TGI) siempre que la arquitectura subyacente sea soportada por dichas herramientas.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No disponible. No se dispone de informacion sobre la arquitectura, el tamano de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xmahbub/laya-cyber-v1 | no disponible | no disponible | no disponible | HuggingFace, safetensors |
+| xmahbub/laya-cyber-v1 | no disponible | no disponible | no disponible | Hugging Face, safetensors |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No disponible. No se dispone de informacion sobre la arquitectura, el tamano de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xmahbub/laya-cyber-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/xmahbub
+- Hugging Face: https://huggingface.co/xmahbub/laya-cyber-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/xmahbub
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuantumReason-Prime es un modelo publicado en HuggingFace por el usuario qf-iquest bajo licencia MIT. Según los metadatos del repositorio, está clasificado como un modelo de extracción de características (pipeline `feature-extraction`) y utiliza la librería `transformers`. Sin embargo, el repositorio no contiene ningún archivo de pesos (el tamaño del repo es de 0.0 GB) y la model card asociada describe un modelo llamado "QuantumReason" con capacidades de razonamiento avanzado, mejora en benchmarks de matemáticas, código y lógica, y soporte para function calling. No hay ninguna mención explícita a "Prime" en la documentación proporcionada, lo que genera incertidumbre sobre si esta variante corresponde a la versión actualizada descrita en la model card o a un modelo diferente. La ausencia de artefactos descargables y de especificaciones técnicas concretas impide validar las afirmaciones de la model card. En resumen, se trata de un modelo con una ficha incompleta y sin recursos disponibles, por lo que cualquier uso práctico queda condicionado a la publicación de los pesos y a una documentación coherente.
+QuantumReason-Prime es un modelo publicado en Hugging Face por el usuario qf-iquest bajo licencia MIT. Según los metadatos del repositorio, está clasificado como un modelo de extracción de características (pipeline `feature-extraction`) y utiliza la librería `transformers`. Sin embargo, el repositorio no contiene ningún archivo de pesos (el tamaño del repo es de 0.0 GB) y la model card asociada describe un modelo llamado "QuantumReason" con capacidades de razonamiento avanzado, mejora en benchmarks de matemáticas, código y lógica, y soporte para function calling. No hay ninguna mención explícita a "Prime" en la documentación proporcionada, lo que genera incertidumbre sobre si esta variante corresponde a la versión actualizada descrita en la model card o a un modelo diferente. La ausencia de artefactos descargables y de especificaciones técnicas concretas impide validar las afirmaciones de la model card. En resumen, se trata de un modelo con una ficha incompleta y sin recursos disponibles, por lo que cualquier uso práctico queda condicionado a la publicación de los pesos y a una documentación coherente.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ QuantumReason-Prime es un modelo publicado en HuggingFace por el usuario qf-ique
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura del modelo. Los metadatos de HuggingFace incluyen el tag `bert`, lo que podría indicar una arquitectura basada en Transformer encoder, pero el pipeline declarado es `feature-extraction`, coherente con un modelo de embeddings. Sin embargo, la model card describe un modelo generativo con capacidades de razonamiento profundo, mejora en tareas de código y matemáticas, y un aumento del uso de tokens de razonamiento (de 12K a 23K por pregunta en AIME 2025). Esta discrepancia sugiere que la model card podría pertenecer a otro modelo de la misma familia (QuantumReason) y no necesariamente a "Prime". Tampoco se especifican datos de entrenamiento, número de tokens, ni técnicas de alineación (RLHF, DPO, etc.). Dado que el repositorio no contiene pesos ni código, no es posible confirmar ningún detalle técnico.
+No se dispone de información verificable sobre la arquitectura del modelo. Los metadatos de Hugging Face incluyen el tag `bert`, lo que podría indicar una arquitectura basada en Transformer encoder, pero el pipeline declarado es `feature-extraction`, coherente con un modelo de embeddings. Sin embargo, la model card describe un modelo generativo con capacidades de razonamiento profundo, mejora en tareas de código y matemáticas, y un aumento del uso de tokens de razonamiento (de 12K a 23K por pregunta en AIME 2025). Esta discrepancia sugiere que la model card podría pertenecer a otro modelo de la misma familia (QuantumReason) y no necesariamente a "Prime". Tampoco se especifican datos de entrenamiento, número de tokens, ni técnicas de alineación (RLHF, DPO, etc.). Dado que el repositorio no contiene pesos ni código, no es posible confirmar ningún detalle técnico.
 
 ## Capacidades
 
@@ -94,6 +94,6 @@ No se dispone de datos suficientes para establecer una comparativa fiable. La mo
 
 ## Enlaces
 
-- [HuggingFace: qf-iquest/QuantumReason-Prime](https://huggingface.co/qf-iquest/QuantumReason-Prime)
+- [Hugging Face: qf-iquest/QuantumReason-Prime](https://huggingface.co/qf-iquest/QuantumReason-Prime)
 
 No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

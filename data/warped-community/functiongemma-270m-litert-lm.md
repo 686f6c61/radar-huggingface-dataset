@@ -83,6 +83,6 @@ No hay datos de rendimiento publicados para ninguno de los tres, por lo que no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/functiongemma-270m-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/functiongemma-270m-litert-lm
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Repositorio de origen del artefacto: https://huggingface.co/litert-community/functiongemma-270m-ft-mobile-actions

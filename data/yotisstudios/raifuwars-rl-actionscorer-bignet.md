@@ -117,7 +117,7 @@ No se dispone de comparativas con modelos externos al proyecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer-BigNet
+- Modelo en Hugging Face: https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer-BigNet
 - Juego Raifu Wars: https://raifuwars.com
 - Protocolo Warrior: https://github.com/Yotis-Studios/Warrior
 - Simulador Hemlock: https://github.com/Yotis-Studios/raifusim

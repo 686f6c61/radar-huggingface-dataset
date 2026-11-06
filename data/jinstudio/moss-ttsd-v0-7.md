@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Jinstudio/MOSS-TTSD-v0.7 | 2.049.551.360 | no disponible | sin benchmarks en la información disponible | Apache-2.0 | HuggingFace |
-| OpenMOSS-Team/MOSS-TTSD-v0.7 | no disponible | no disponible | no disponible | Apache-2.0 según la model card | HuggingFace; referenciado en el código de ejemplo |
+| Jinstudio/MOSS-TTSD-v0.7 | 2.049.551.360 | no disponible | sin benchmarks en la información disponible | Apache-2.0 | Hugging Face |
+| OpenMOSS-Team/MOSS-TTSD-v0.7 | no disponible | no disponible | no disponible | Apache-2.0 según la model card | Hugging Face; referenciado en el código de ejemplo |
 | CosyVoice 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | XTTS-v2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de las alternativas en la información propor
 
 ## Enlaces
 
-- [Jinstudio/MOSS-TTSD-v0.7 en HuggingFace](https://huggingface.co/Jinstudio/MOSS-TTSD-v0.7)
+- [Jinstudio/MOSS-TTSD-v0.7 en Hugging Face](https://huggingface.co/Jinstudio/MOSS-TTSD-v0.7)
 - [Qwen/Qwen3-1.7B-Base](https://huggingface.co/Qwen/Qwen3-1.7B-Base)
 - [OpenMOSS-Team/MOSS-TTSD-v0.7, referenciado en la model card](https://huggingface.co/OpenMOSS-Team/MOSS-TTSD-v0.7)
 - [OpenMOSS-Team/XY_Tokenizer_TTSD_V0_hf, codec referenciado en el ejemplo](https://huggingface.co/OpenMOSS-Team/XY_Tokenizer_TTSD_V0_hf)

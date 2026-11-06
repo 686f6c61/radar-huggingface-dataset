@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `asd12dscxzcz12/MyAwesomeModel-best` es un checkpoint de un modelo de clasificación de texto basado en la arquitectura BERT, desarrollado por el usuario `asd12dscxzcz12`. Ha sido seleccionado de un espacio de trabajo de entrenamiento por alcanzar la mayor precisión de evaluación (`eval_accuracy`) en la tarea de clasificación de texto, concretamente en el paso 1000 de un total de 1000 pasos de entrenamiento. El repositorio está etiquetado con la licencia MIT y es compatible con los endpoints de HuggingFace, lo que sugiere que podría desplegarse en la infraestructura de la plataforma.
+El modelo `asd12dscxzcz12/MyAwesomeModel-best` es un checkpoint de un modelo de clasificación de texto basado en la arquitectura BERT, desarrollado por el usuario `asd12dscxzcz12`. Ha sido seleccionado de un espacio de trabajo de entrenamiento por alcanzar la mayor precisión de evaluación (`eval_accuracy`) en la tarea de clasificación de texto, concretamente en el paso 1000 de un total de 1000 pasos de entrenamiento. El repositorio está etiquetado con la licencia MIT y es compatible con los endpoints de Hugging Face, lo que sugiere que podría desplegarse en la infraestructura de la plataforma.
 
 Sin embargo, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han publicado los pesos del modelo. Por tanto, el modelo no está disponible para su descarga ni para realizar inferencias. La información disponible se limita a la model card, que incluye una tabla de resultados de evaluación en quince tareas distintas, calculados con un script interno (`benchmark_utils.c`). No se especifican el número de parámetros, la longitud de contexto ni los datos de entrenamiento.
 
@@ -89,12 +89,12 @@ Estos resultados no son comparables con los de otros modelos, ya que el método 
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible, aunque al tratarse de un modelo BERT es probable que pueda ejecutarse en GPU de consumo si se conocieran los pesos.
-- Opciones de despliegue: no disponible. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace, pero el repositorio no contiene pesos.
+- Opciones de despliegue: no disponible. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face, pero el repositorio no contiene pesos.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con modelos similares. En la búsqueda web aparece un modelo con un nombre casi idéntico, `asd12dsacxz12dsa/MyAwesomeModel`, que también está alojado en HuggingFace, pero no se proporcionan datos sobre sus parámetros ni rendimiento que permitan una comparación rigurosa.
+No se dispone de información suficiente para realizar una comparativa con modelos similares. En la búsqueda web aparece un modelo con un nombre casi idéntico, `asd12dsacxz12dsa/MyAwesomeModel`, que también está alojado en Hugging Face, pero no se proporcionan datos sobre sus parámetros ni rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -108,6 +108,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asd12dscxzcz12/MyAwesomeModel-best
-- Modelo similar en HuggingFace: https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel
+- Modelo en Hugging Face: https://huggingface.co/asd12dscxzcz12/MyAwesomeModel-best
+- Modelo similar en Hugging Face: https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel
 - Repositorio de pruebas relacionado: https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel-TestRepo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_all11_c100_m1_27D_60k_s2000 es un checkpoint de politica robotica basado en ACT (Action Chunking Transformer) publicado por el usuario kiroaiseoul en HuggingFace bajo licencia Apache-2.0. No es un modelo de lenguaje: es una politica de imitacion entrenada para control de manipulacion y base movil, compatible con el ecosistema LeRobot, que toma como entrada tres flujos de imagen RGB de 480x640 (una camara alta y dos camaras de muneca) junto con un vector de estado de 27 dimensiones, y produce un vector de accion continuo de 16 dimensiones.
+NAJY_act_all11_c100_m1_27D_60k_s2000 es un checkpoint de politica robotica basado en ACT (Action Chunking Transformer) publicado por el usuario kiroaiseoul en Hugging Face bajo licencia Apache-2.0. No es un modelo de lenguaje: es una politica de imitacion entrenada para control de manipulacion y base movil, compatible con el ecosistema LeRobot, que toma como entrada tres flujos de imagen RGB de 480x640 (una camara alta y dos camaras de muneca) junto con un vector de estado de 27 dimensiones, y produce un vector de accion continuo de 16 dimensiones.
 
 El checkpoint contiene 51.700.368 parametros (unos 51,7 millones) en formato safetensors, con un repositorio de 0,2 GB. Segun la model card, corresponde al paso 60000 de la ejecucion `t20_all11_c100_m1_60k_s2000` y fue entrenado en una maquina denominada DGX_1. El propio autor indica explicitamente que la publicacion tiene fines de analisis y puntuacion, y que no constituye por si misma la seleccion de un candidato para despliegue real.
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_c100_m1_27D_60k_s2000 (este) | 51,7 M | 27 dims de estado + 3 camaras 480x640; accion de 16 dims; 60000 pasos | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| NAJY_act_all11_hot_27D_120k_s2000 | no disponible (repositorio de 207 MB) | misma configuracion de estado y acciones; 120000 pasos; semilla 2000 | el autor lo describe como mejor semilla en las etapas de manipulacion en evaluacion offline | Apache-2.0 | HuggingFace |
-| ACT de referencia (LeRobot) | del orden de decenas de millones, segun configuracion | depende de la tarea y del conjunto de camaras | no disponible en esta busqueda | Apache-2.0 | HuggingFace / repositorio LeRobot |
-| Diffusion Policy (alternativa de la misma categoria) | del orden de decenas a cientos de millones | observaciones visuales y de estado; horizonte de prediccion configurable | no disponible en esta busqueda | MIT / Apache-2.0 segun implementacion | HuggingFace / repositorio oficial |
+| NAJY_act_all11_c100_m1_27D_60k_s2000 (este) | 51,7 M | 27 dims de estado + 3 camaras 480x640; accion de 16 dims; 60000 pasos | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| NAJY_act_all11_hot_27D_120k_s2000 | no disponible (repositorio de 207 MB) | misma configuracion de estado y acciones; 120000 pasos; semilla 2000 | el autor lo describe como mejor semilla en las etapas de manipulacion en evaluacion offline | Apache-2.0 | Hugging Face |
+| ACT de referencia (LeRobot) | del orden de decenas de millones, segun configuracion | depende de la tarea y del conjunto de camaras | no disponible en esta busqueda | Apache-2.0 | Hugging Face / repositorio LeRobot |
+| Diffusion Policy (alternativa de la misma categoria) | del orden de decenas a cientos de millones | observaciones visuales y de estado; horizonte de prediccion configurable | no disponible en esta busqueda | MIT / Apache-2.0 segun implementacion | Hugging Face / repositorio oficial |
 
 La comparacion cuantitativa con alternativas no puede completarse porque no hay metricas publicadas para este checkpoint. La comparacion mas directa disponible es con el checkpoint hermano de 120000 pasos y semilla 2000, segun el cual la variante `hot` es la mejor semilla en evaluacion offline para las etapas de manipulacion.
 
@@ -99,7 +99,7 @@ La comparacion cuantitativa con alternativas no puede completarse porque no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s2000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s2000
 - Checkpoint hermano de 120000 pasos: https://huggingface.co/kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000
 - Arbol de ficheros del checkpoint hermano: https://huggingface.co/kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000/tree/main
 - Listado de modelos del autor: https://essamamdani.com/ai-models/company/kiroaiseoul

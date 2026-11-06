@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks estándar (WER, MMLU, HumanEval, et
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kickvn/omniASR-CTC-300M-v2-KICK-CoreML
+- Repositorio Hugging Face: https://huggingface.co/kickvn/omniASR-CTC-300M-v2-KICK-CoreML
 - Variante ONNX del mismo autor: https://huggingface.co/kickvn/omniASR-CTC-300M-v2-ONNX
 - Modelo base de Meta: https://huggingface.co/facebook/omniASR-CTC-300M
 - Paper, blog o demo oficiales: no disponibles en la información proporcionada.

@@ -4,7 +4,7 @@
 
 Dark-Goetia-26B-A4B-v2 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por la suite 26B-Suite, con arquitectura basada en Gemma-4 de Google DeepMind. Cuenta con 25.233.142.046 parámetros totales (aproximadamente 25,2 mil millones) y unos 4 mil millones de parámetros activos por pasada, según la nomenclatura 26B-A4B. Se trata de una adaptación mediante LoRA orientada a roleplay y conversación narrativa, con soporte de inglés y ruso. La versión publicada por mradermacher es una cuantización GGUF calibrada con imatrix, diseñada para ejecutarse en hardware de consumo mediante llama.cpp, Ollama o SillyTavern.
 
-El modelo incluye soporte de visión (ficheros mmproj disponibles en el repositorio estático), lo que amplía su utilidad a escenarios multimodales. Su licencia es la de Gemma, que permite uso comercial con ciertas restricciones. Dado su tamaño de cuantización reducido y su arquitectura MoE con pocos parámetros activos, resulta especialmente atractivo para entornos con recursos limitados de VRAM. Es un modelo reciente (publicado en agosto de 2026) y no cuenta aún con descargas ni valoraciones en HuggingFace.
+El modelo incluye soporte de visión (ficheros mmproj disponibles en el repositorio estático), lo que amplía su utilidad a escenarios multimodales. Su licencia es la de Gemma, que permite uso comercial con ciertas restricciones. Dado su tamaño de cuantización reducido y su arquitectura MoE con pocos parámetros activos, resulta especialmente atractivo para entornos con recursos limitados de VRAM. Es un modelo reciente (publicado en agosto de 2026) y no cuenta aún con descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ No disponible. No se han publicado comparativas con modelos de la misma categor�
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v2-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v2-i1-GGUF
 - Modelo base (26B-Suite): https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v2
 - Cuantización estática (sin imatrix): https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v2-GGUF
 - Página de Gemma-4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

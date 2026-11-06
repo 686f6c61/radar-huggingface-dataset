@@ -81,7 +81,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/slevinw/Muse-Glimmer-30B-Heretic-Uncensored-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/slevinw/Muse-Glimmer-30B-Heretic-Uncensored-GGUF)
 - [Modelo base meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Otra versión GGUF de Muse-Glimmer-30B-heretic-v2](https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-v2-GGUF)
 - [Ficha del modelo en NVIDIA NIM](https://build.nvidia.com/meta/muse-glimmer-30b/modelcard)

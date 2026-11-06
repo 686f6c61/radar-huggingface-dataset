@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| devvexus/marlowe-memory | no disponible (MiniLM 2-12 capas) | no disponible | Rerank de memorias (ONNX) | Apache 2.0 | HuggingFace, descarga automatica via marlowe-cowork |
-| cross-encoder/ms-marco-MiniLM-L6-v2 | no disponible | no disponible | Rerank general MS MARCO | Apache 2.0 | HuggingFace, uso general |
-| cross-encoder/ms-marco-MiniLM-L12-v2 | no disponible | no disponible | Rerank general MS MARCO | Apache 2.0 | HuggingFace, uso general |
-| jinaai/jina-embeddings-v2-small-en | no disponible | no disponible | Embeddings (recuperacion densa) | no disponible en la informacion | HuggingFace, embedder del mismo pipeline |
+| devvexus/marlowe-memory | no disponible (MiniLM 2-12 capas) | no disponible | Rerank de memorias (ONNX) | Apache 2.0 | Hugging Face, descarga automatica via marlowe-cowork |
+| cross-encoder/ms-marco-MiniLM-L6-v2 | no disponible | no disponible | Rerank general MS MARCO | Apache 2.0 | Hugging Face, uso general |
+| cross-encoder/ms-marco-MiniLM-L12-v2 | no disponible | no disponible | Rerank general MS MARCO | Apache 2.0 | Hugging Face, uso general |
+| jinaai/jina-embeddings-v2-small-en | no disponible | no disponible | Embeddings (recuperacion densa) | no disponible en la informacion | Hugging Face, embedder del mismo pipeline |
 
 La diferencia principal frente a los checkpoints MS MARCO originales es el ajuste fino adicional sobre el pipeline de memoria de marlowe-cowork y la exportacion a ONNX; a cambio, el autor desaconseja su uso como reranker generalista.
 
@@ -82,7 +82,7 @@ La diferencia principal frente a los checkpoints MS MARCO originales es el ajust
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devvexus/marlowe-memory
+- Hugging Face: https://huggingface.co/devvexus/marlowe-memory
 - Checkpoint base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2
 - Checkpoint base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2
 - Checkpoint base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L4-v2

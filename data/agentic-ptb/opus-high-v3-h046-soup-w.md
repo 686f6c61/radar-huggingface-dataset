@@ -79,6 +79,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h046.soup-w
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h046.soup-w
 - Dataset asociado: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de datasets de AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

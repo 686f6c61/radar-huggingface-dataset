@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su capacidad para ejecutar tareas de gene
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 32 000 tokens (nativo) |
 | Tipos de cuantizacion | 8-bit por canal con preprocesado de Hadamard (q8); también disponible variante mixta q326_channel (atención 4-bit + FFN ~3-bit) |
-| Idiomas soportados | Inglés (principal), chino y más de 30 idiomas adicionales según la model card; el frontmatter de HuggingFace declara en, zh |
+| Idiomas soportados | Inglés (principal), chino y más de 30 idiomas adicionales según la model card; el frontmatter de Hugging Face declara en, zh |
 | Licencia | Apache 2.0 |
 | Formato de pesos | aria-engine (formato propietario de Aria Compute; no safetensors ni GGUF) |
 
@@ -84,7 +84,7 @@ La comparativa se limita a características estructurales; no hay benchmarks pú
 
 ## Enlaces
 
-- [HuggingFace: ariacompute/gemma-3n-e4b-it_q8](https://huggingface.co/ariacompute/gemma-3n-e4b-it_q8)
+- [Hugging Face: ariacompute/gemma-3n-e4b-it_q8](https://huggingface.co/ariacompute/gemma-3n-e4b-it_q8)
 - [Modelo base: google/gemma-3n-e4b-it](https://huggingface.co/google/gemma-3n-e4b-it)
 - [Repositorio original de Gemma 3n (GitHub)](https://github.com/google-gemma/gemma-3n)
 - [Paper técnico de Gemma 3n (arXiv)](https://arxiv.org/abs/2506.16392)

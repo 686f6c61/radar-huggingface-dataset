@@ -88,7 +88,7 @@ Supera al padre pequeño en 13 de 13 benchmarks y al padre mayor en 2 de 13 (Ope
 | GSM8K (8-shot CoT) | 0,686 | 0,729 | 0,595 |
 | HumanEval pass@1 | 0,348 | 0,494 | 0,287 |
 | Licencia | Apache 2.0 | Apache 2.0 | Apache 2.0 |
-| Disponibilidad | HuggingFace, safetensors + código remoto | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face, safetensors + código remoto | Hugging Face | Hugging Face |
 
 En términos generales, Platypus 1.6B se sitúa entre sus dos padres: se acerca al padre mayor en tareas de conocimiento y razonamiento (MMLU, BBH, GSM8K) con menos cómputo, aunque pierde claramente en generación de código (HumanEval 0,348 frente a 0,494). No se han identificado en la información disponible otros modelos comparables construidos con la misma técnica de puente de representaciones.
 
@@ -107,7 +107,7 @@ En términos generales, Platypus 1.6B se sitúa entre sus dos padres: se acerca 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Platypus-1.6B-Base
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Platypus-1.6B-Base
 - Modelo base (padre mayor): https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Modelo base (padre menor): https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Informe técnico: `technical_report.pdf`, incluido en el repositorio del modelo

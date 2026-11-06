@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Raoul12/wispher_small_kh` es un ajuste fino (fine-tune) de `openai/whisper-small` especializado en el reconocimiento automático del habla (ASR) en idioma jemer (khmer). Ha sido desarrollado por el usuario Raoul12 y publicado en HuggingFace con licencia Apache 2.0. El modelo se entrenó sobre el dataset `seanghay/khmer_mpwt_speech`, un corpus de habla jemer, y está diseñado para transcribir audio en este idioma, que cuenta con poca representación en los modelos ASR multilingües generales.
+El modelo `Raoul12/wispher_small_kh` es un ajuste fino (fine-tune) de `openai/whisper-small` especializado en el reconocimiento automático del habla (ASR) en idioma jemer (khmer). Ha sido desarrollado por el usuario Raoul12 y publicado en Hugging Face con licencia Apache 2.0. El modelo se entrenó sobre el dataset `seanghay/khmer_mpwt_speech`, un corpus de habla jemer, y está diseñado para transcribir audio en este idioma, que cuenta con poca representación en los modelos ASR multilingües generales.
 
 Con 241,7 millones de parámetros, hereda la arquitectura encoder-decoder de Whisper Small, optimizada para tareas de transcripción. Su relevancia radica en ofrecer una alternativa específica para jemer, un idioma con escasos recursos en el ecosistema de ASR, aunque su rendimiento declarado (WER del 58,3 %) indica que aún tiene margen de mejora. El modelo se distribuye en formato safetensors y es compatible con la librería Transformers.
 
@@ -74,6 +74,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Raoul12/wispher_small_kh)
+- [Modelo en Hugging Face](https://huggingface.co/Raoul12/wispher_small_kh)
 - [Dataset de entrenamiento: seanghay/khmer_mpwt_speech](https://huggingface.co/datasets/seanghay/khmer_mpwt_speech)
 - [Modelo base: openai/whisper-small](https://huggingface.co/openai/whisper-small)

@@ -65,9 +65,9 @@ Los modelos comparables son otros checkpoints de la misma serie experimental de 
 
 | Modelo | Configuración | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nca_dose_100Mpt_hfbody_adamwppt_1B_s0 | 16 capas, 1024 embd, vocab 10004 (ppt) | 2048 | Apache 2.0 | HuggingFace |
-| nca_dose_100Mpt_hfbody_1B_s1 | Similar, seed distinta | 2048 | Apache 2.0 | HuggingFace |
-| nca_dose_100Mpt_100M_s0 | Similar, variante con 100M | 2048 | Apache 2.0 | HuggingFace |
+| nca_dose_100Mpt_hfbody_adamwppt_1B_s0 | 16 capas, 1024 embd, vocab 10004 (ppt) | 2048 | Apache 2.0 | Hugging Face |
+| nca_dose_100Mpt_hfbody_1B_s1 | Similar, seed distinta | 2048 | Apache 2.0 | Hugging Face |
+| nca_dose_100Mpt_100M_s0 | Similar, variante con 100M | 2048 | Apache 2.0 | Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos modelos. La serie parece diseñada para estudiar el efecto de la semilla, la cantidad de tokens y la configuración del vocabulario, más que para competir en tareas estándar.
 
@@ -84,7 +84,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La serie parece di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_adamwppt_1B_s0_2026-09-06_10-45-08_045680-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_adamwppt_1B_s0_2026-09-06_10-45-08_045680-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/d55hfhax
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Modelo similar `nca_dose_100Mpt_hfbody_1B_s1`: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_1B_s1_2026-08-15_00-55-24_338967-pt

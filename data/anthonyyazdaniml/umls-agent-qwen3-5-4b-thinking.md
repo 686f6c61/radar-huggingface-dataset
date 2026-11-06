@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UMLS Agent Qwen3.5-4B Thinking (este) | 4B (base) + LoRA | 81.920 tokens (config. vLLM) | Entity linking biomédico con GRPO y tool calling | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | LLM generalista con thinking y tool calling | Apache 2.0 | HuggingFace |
+| UMLS Agent Qwen3.5-4B Thinking (este) | 4B (base) + LoRA | 81.920 tokens (config. vLLM) | Entity linking biomédico con GRPO y tool calling | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | LLM generalista con thinking y tool calling | Apache 2.0 | Hugging Face |
 | SapBERT | no disponible | no disponible | Embeddings biomédicos para entity linking | no disponible | Repositorio público |
 | Modelos de entity linking biomédico supervisados clásicos | variable | no disponible | Clasificación/ranking de candidatos UMLS | variable | variable |
 
@@ -82,6 +82,6 @@ La comparación cuantitativa de rendimiento con alternativas no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anthonyyazdaniml/umls-agent-qwen3.5-4b-thinking
+- Modelo en Hugging Face: https://huggingface.co/anthonyyazdaniml/umls-agent-qwen3.5-4b-thinking
 - Repositorio GitHub con código de entrenamiento, prompts y herramienta de búsqueda: https://github.com/ds4dh/umls-agent-rl
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

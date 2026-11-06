@@ -95,10 +95,10 @@ Según el autor, diferencias inferiores a 0,02 CER quedan dentro del ruido entre
 
 | Modelo | Parametros | Contexto | CER (misma eval.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chandra-ocr-2-cultural-heritage-eng | 4,54 B | 2.048 tokens visuales por página | 0,1101 | openrail-m-modified | HuggingFace (este repo) |
-| LightOnOCR-3-4B-cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible | HuggingFace (yale-cultural-heritage) |
-| Qwen3.5-4B-cultural-heritage-eng | no disponible | no disponible | 0,1047 | no disponible | HuggingFace (yale-cultural-heritage) |
-| Qwen3.5-9B-cultural-heritage-eng | no disponible | no disponible | 0,1099 | no disponible | HuggingFace (yale-cultural-heritage) |
+| chandra-ocr-2-cultural-heritage-eng | 4,54 B | 2.048 tokens visuales por página | 0,1101 | openrail-m-modified | Hugging Face (este repo) |
+| LightOnOCR-3-4B-cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible | Hugging Face (yale-cultural-heritage) |
+| Qwen3.5-4B-cultural-heritage-eng | no disponible | no disponible | 0,1047 | no disponible | Hugging Face (yale-cultural-heritage) |
+| Qwen3.5-9B-cultural-heritage-eng | no disponible | no disponible | 0,1099 | no disponible | Hugging Face (yale-cultural-heritage) |
 
 El modelo con mejor CER de la comparativa es LightOnOCR-3-4B-cultural-heritage-eng (0,0770), mientras que este chandra-ocr-2 queda en cuarta posición con 0,1101, empatado en la práctica con Qwen3.5-4B y Qwen3.5-9B. Los modelos más pequeños (LightOnOCR-3-0.8B y Qwen3.5-2B) tienen un CER ligeramente superior pero son más baratos de ejecutar.
 
@@ -115,7 +115,7 @@ El modelo con mejor CER de la comparativa es LightOnOCR-3-4B-cultural-heritage-e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yale-cultural-heritage/chandra-ocr-2-cultural-heritage-eng
+- Modelo en Hugging Face: https://huggingface.co/yale-cultural-heritage/chandra-ocr-2-cultural-heritage-eng
 - Modelo base: https://huggingface.co/datalab-to/chandra-ocr-2
 - Dataset de entrenamiento: https://huggingface.co/datasets/yale-cultural-heritage/ai-project-transcriptions
 - Mejor modelo de la comparativa (LightOnOCR-3-4B): https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-4B-cultural-heritage-eng

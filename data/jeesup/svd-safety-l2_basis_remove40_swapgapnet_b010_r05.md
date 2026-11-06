@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_basis_remove40_swapgapnet_b010_r05 es un artefacto de investigacion publicado en HuggingFace por el usuario Jeesup. Se construye a partir de meta-llama/Llama-2-7b-chat-hf, comprimido mediante Basis Sharing (tecnica presentada en ICLR 2025 que comparte bases SVD entre grupos de dos capas adyacentes), con un 40,00 % de los parametros eliminados hasta alcanzar una fraccion declarada de 0,5999 respecto del modelo denso original. Sobre esa base comprimida se aplicaron 5 de 10 rondas iterativas de una edicion de parametros con presupuesto neutral (swap), seleccionadas por la regla swapgapnet_iter, con un presupuesto declarado del 1,000 % de los parametros densos: 2.262 componentes restaurados y 2.262 retirados.
+svd-safety-l2_basis_remove40_swapgapnet_b010_r05 es un artefacto de investigacion publicado en Hugging Face por el usuario Jeesup. Se construye a partir de meta-llama/Llama-2-7b-chat-hf, comprimido mediante Basis Sharing (tecnica presentada en ICLR 2025 que comparte bases SVD entre grupos de dos capas adyacentes), con un 40,00 % de los parametros eliminados hasta alcanzar una fraccion declarada de 0,5999 respecto del modelo denso original. Sobre esa base comprimida se aplicaron 5 de 10 rondas iterativas de una edicion de parametros con presupuesto neutral (swap), seleccionadas por la regla swapgapnet_iter, con un presupuesto declarado del 1,000 % de los parametros densos: 2.262 componentes restaurados y 2.262 retirados.
 
 El checkpoint se completa con una recuperacion LoRA de rango 8 aplicada unicamente a los coeficientes por capa, manteniendo las bases congeladas y sin alterar el presupuesto. Los archivos publicados en safetensors suman 6.738.415.616 parametros y el repositorio ocupa 13,5 GB. Es una celda intermedia de una matriz experimental mas amplia, no un modelo afinado para uso general.
 
@@ -91,7 +91,7 @@ Las especificaciones de los modelos alternativos no provienen de la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r05
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia del repositorio: `LICENSE.txt` (incluido en el repositorio del modelo)
 - Politica de uso: `USE_POLICY.md` (incluido en el repositorio del modelo)

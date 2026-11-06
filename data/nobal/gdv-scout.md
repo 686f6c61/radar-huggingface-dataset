@@ -91,5 +91,5 @@ No se dispone de datos comparativos numéricos en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nobal/gdv-scout
+- Modelo en Hugging Face: https://huggingface.co/nobal/gdv-scout
 - No se han encontrado otros enlaces relevantes en la búsqueda web (los resultados obtenidos se refieren a un producto de robótica militar no relacionado).

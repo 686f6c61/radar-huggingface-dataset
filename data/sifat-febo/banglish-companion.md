@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Banglish Companion es un modelo de lenguaje conversacional de aproximadamente 1.700 millones de parametros, desarrollado por Sifat Febo, que combina un fine-tuning del modelo SmolLM2-1.7B de HuggingFace con una capa de percepcion de unos 0,5 millones de parametros adicionales. Esta especializado en conversaciones en banglish, la mezcla de codigos entre bengali e ingles romanizado muy habitual en las comunidades bengalies, y esta disenado para ofrecer respuestas con inteligencia emocional y alineacion de seguridad.
+Banglish Companion es un modelo de lenguaje conversacional de aproximadamente 1.700 millones de parametros, desarrollado por Sifat Febo, que combina un fine-tuning del modelo SmolLM2-1.7B de Hugging Face con una capa de percepcion de unos 0,5 millones de parametros adicionales. Esta especializado en conversaciones en banglish, la mezcla de codigos entre bengali e ingles romanizado muy habitual en las comunidades bengalies, y esta disenado para ofrecer respuestas con inteligencia emocional y alineacion de seguridad.
 
 La innovacion principal reside en su capa de percepcion, compuesta por tres clasificadores pequenos (emocion, apego y modo de respuesta) que operan de forma siempre activa antes de la generacion. Esta capa permite que el modelo adapte sus respuestas al estado emocional del usuario sin aumentar significativamente el tamano del modelo. El proyecto publica los pesos en formato safetensors (fp32, 6,8 GB), el benchmark BanglishBench v2.1 y el pipeline de inferencia, mientras que los datos de entrenamiento permanecen cerrados.
 
@@ -23,7 +23,7 @@ El modelo es relevante por abordar un idioma de bajos recursos en su variante co
 
 ## Arquitectura y entrenamiento
 
-Banglish Companion parte del modelo base SmolLM2-1.7B de HuggingFace y lo ajusta mediante fine-tuning para conversacion en banglish. Sobre esta base se anade una capa de percepcion denominada "ontor" con aproximadamente 0,5 millones de parametros, compuesta por tres clasificadores: emocion (bujhi), apego (aabeg) y modo de respuesta (bhalobasha). Esta capa se ejecuta de forma siempre activa antes de la generacion, siguiendo una intuicion de ingenieria inspirada en biologia: la percepcion puede ser pequena, rapida y continua.
+Banglish Companion parte del modelo base SmolLM2-1.7B de Hugging Face y lo ajusta mediante fine-tuning para conversacion en banglish. Sobre esta base se anade una capa de percepcion denominada "ontor" con aproximadamente 0,5 millones de parametros, compuesta por tres clasificadores: emocion (bujhi), apego (aabeg) y modo de respuesta (bhalobasha). Esta capa se ejecuta de forma siempre activa antes de la generacion, siguiendo una intuicion de ingenieria inspirada en biologia: la percepcion puede ser pequena, rapida y continua.
 
 El modelo utiliza el tokenizador del modelo base, que no incluye chat_template, por lo que la inferencia requiere construir el prompt ChatML manualmente mediante la funcion format_chatml_prompt incluida en el pipeline ontor/perceive.py. Los datos de entrenamiento, el pipeline de entrenamiento y los hiperparametros no estan publicados. El proyecto fue desarrollado con asistencia de Claude Code (Anthropic) bajo la direccion y revision del autor.
 
@@ -98,7 +98,7 @@ La comparacion directa con alternativas es limitada porque no se han identificad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sifat-febo/banglish-companion
+- Modelo en Hugging Face: https://huggingface.co/sifat-febo/banglish-companion
 - Dataset BanglishBench v2.1: https://huggingface.co/datasets/sifat-febo/banglish_bench
 - Modelo base SmolLM2-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Tesis del proyecto (THESIS.md): disponible en el repositorio del modelo

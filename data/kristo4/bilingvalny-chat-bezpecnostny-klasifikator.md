@@ -25,14 +25,14 @@ A pesar de su escasa documentación y de no haber benchmarks públicos, el model
 
 El modelo se basa en DistilBERT, una versión destilada de BERT que reduce el número de capas de 12 a 6 manteniendo la misma dimensionalidad oculta (768). Esta arquitectura fue diseñada para conservar aproximadamente el 95% del rendimiento de BERT con un 40% menos de parámetros y una inferencia un 60% más rápida. El modelo base `distilbert-base-multilingual-cased` fue preentrenado con destilación sobre un corpus multilingüe que cubre 104 idiomas, utilizando tokenización subpalabra con WordPiece.
 
-El fine-tuning se realizó con el Trainer de HuggingFace sobre un conjunto de datos no documentado. Los hiperparámetros de entrenamiento incluyen una tasa de aprendizaje de 3e-05, un tamaño de lote de 2 con acumulación de gradiente de 4 pasos (lote efectivo de 8), y 5 épocas. Se utilizó el optimizador AdamW con betas (0.9, 0.999) y un scheduler lineal. La pérdida final de validación fue de 0.0284 y la precisión de 0.9886. No se menciona el uso de técnicas adicionales como RLHF o DPO.
+El fine-tuning se realizó con el Trainer de Hugging Face sobre un conjunto de datos no documentado. Los hiperparámetros de entrenamiento incluyen una tasa de aprendizaje de 3e-05, un tamaño de lote de 2 con acumulación de gradiente de 4 pasos (lote efectivo de 8), y 5 épocas. Se utilizó el optimizador AdamW con betas (0.9, 0.999) y un scheduler lineal. La pérdida final de validación fue de 0.0284 y la precisión de 0.9886. No se menciona el uso de técnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
 - Clasificación de texto: el modelo está diseñado para tareas de clasificación de secuencias, probablemente binaria (seguro/inseguro) o multiclase, aunque no se especifica el número de etiquetas.
 - Soporte multilingüe: al derivar de DistilBERT multilingüe, puede procesar texto en muchos idiomas, aunque el fine-tuning podría haber limitado esta capacidad a un subconjunto.
 - Inferencia eficiente: al ser una versión destilada, ofrece baja latencia y es adecuado para aplicaciones en tiempo real.
-- Compatibilidad con pipelines de HuggingFace: se puede usar directamente con `pipeline("text-classification")` o con la API de transformers.
+- Compatibilidad con pipelines de Hugging Face: se puede usar directamente con `pipeline("text-classification")` o con la API de transformers.
 - Soporte para Text Embeddings Inference: el tag `text-embeddings-inference` sugiere compatibilidad con servidores de embeddings, aunque no se detalla su uso.
 
 ## Casos de uso
@@ -60,7 +60,7 @@ Estos resultados corresponden al conjunto de evaluación utilizado durante el en
 - VRAM estimada: el modelo tiene 135 millones de parámetros. En precisión float32, ocupa aproximadamente 540 MB; en float16, unos 270 MB. Esto permite ejecutarlo en GPUs con al menos 1 GB de VRAM, como una NVIDIA GTX 1050 Ti o superior.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente. Una RTX 3060 o superior ofrecería un margen cómodo y baja latencia.
 - CPU: puede ejecutarse en CPU, aunque con mayor latencia. Un procesador moderno de 4 núcleos puede manejar inferencias en decenas de milisegundos por muestra.
-- Opciones de despliegue: compatible con HuggingFace pipelines, Transformers, y servidores de inferencia como vLLM o TGI (aunque estos están optimizados para generación, también soportan clasificación). También se puede exportar a ONNX para optimización en CPU.
+- Opciones de despliegue: compatible con Hugging Face pipelines, Transformers, y servidores de inferencia como vLLM o TGI (aunque estos están optimizados para generación, también soportan clasificación). También se puede exportar a ONNX para optimización en CPU.
 - Latencia y throughput: no hay datos publicados. Para un modelo de este tamaño, se puede esperar una latencia de 10-30 ms por muestra en GPU y 50-150 ms en CPU, dependiendo del hardware y la longitud del texto.
 
 ## Comparativa con modelos similares
@@ -78,5 +78,5 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Kristo4/bilingvalny-chat-bezpecnostny-klasifikator)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Kristo4)
+- [Modelo en Hugging Face](https://huggingface.co/Kristo4/bilingvalny-chat-bezpecnostny-klasifikator)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Kristo4)

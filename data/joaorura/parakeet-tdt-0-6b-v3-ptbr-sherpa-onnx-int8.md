@@ -117,7 +117,7 @@ Como referencia externa, `openai/whisper-large-v3` es otra alternativa habitual 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joaorura/parakeet-tdt-0.6b-v3-ptBR-sherpa-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/joaorura/parakeet-tdt-0.6b-v3-ptBR-sherpa-onnx-int8
 - Modelo base del fine-tune: https://huggingface.co/alexandreacff/parakeet-tdt-v3-ptBR-30s
 - Modelo base multilingüe de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Dataset TAGARELA: https://huggingface.co/datasets/freds0/TAGARELA

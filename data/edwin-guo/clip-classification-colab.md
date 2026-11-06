@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`edwin-guo/clip-classification-colab` es un repositorio experimental publicado en HuggingFace por el usuario edwin-guo que contiene una implementación propia de una arquitectura CLIP orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio está pensado como base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`edwin-guo/clip-classification-colab` es un repositorio experimental publicado en Hugging Face por el usuario edwin-guo que contiene una implementación propia de una arquitectura CLIP orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio está pensado como base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La configuración es deliberadamente reducida ("nano"), con atención dispersa (sparse attention), fusión con compuertas (gated fusion), activación ReLU y normalización por lotes (batchnorm). El recuento de parámetros reportado en los metadatos de safetensors es de 16.576 parámetros, un tamaño que corresponde a un prototipo de juguete y no a un modelo utilizable en producción. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edwin-guo/clip-classification-colab | 16.576 | no disponible | No (checkpoint de inicialización) | MIT | HuggingFace |
-| CLIP de OpenAI (ViT-B/32) | ~151 M | 77 tokens de texto | Sí | MIT (pesos originales) | HuggingFace, OpenAI |
-| OpenCLIP (variantes ViT) | 86 M – 1 B+ | 77 tokens de texto | Sí | Según variante (MIT/Apache-2.0) | HuggingFace, LAION |
+| edwin-guo/clip-classification-colab | 16.576 | no disponible | No (checkpoint de inicialización) | MIT | Hugging Face |
+| CLIP de OpenAI (ViT-B/32) | ~151 M | 77 tokens de texto | Sí | MIT (pesos originales) | Hugging Face, OpenAI |
+| OpenCLIP (variantes ViT) | 86 M – 1 B+ | 77 tokens de texto | Sí | Según variante (MIT/Apache-2.0) | Hugging Face, LAION |
 
 La comparación es asimétrica por diseño: los modelos CLIP de referencia están entrenados y evaluados, mientras que este repositorio es un esqueleto sin entrenamiento. No se dispone de datos de rendimiento de este modelo para comparar métricas.
 
@@ -74,11 +74,11 @@ La comparación es asimétrica por diseño: los modelos CLIP de referencia está
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingüe.
 - No se documenta longitud de contexto ni tipos de cuantización.
 - La licencia MIT permite uso comercial del código, pero deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
-- Al ser una implementación custom, las APIs automáticas de carga de HuggingFace requieren un adaptador explícito; no es plug-and-play.
+- Al ser una implementación custom, las APIs automáticas de carga de Hugging Face requieren un adaptador explícito; no es plug-and-play.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 - Riesgo de alucinación y sesgos: no evaluable, al no existir un modelo entrenado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edwin-guo/clip-classification-colab
+- Hugging Face: https://huggingface.co/edwin-guo/clip-classification-colab
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

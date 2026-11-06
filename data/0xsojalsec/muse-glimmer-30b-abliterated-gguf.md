@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-Abliterated-GGUF es una versión cuantizada en formato GGUF del modelo Muse Glimmer 30B de Meta, modificada mediante un proceso de "abliteración" que elimina el comportamiento de rechazo (refusals) de los pesos. El modelo original, desarrollado por Meta Superintelligence Labs, es un modelo agéntico y multimodal de 30B parámetros diseñado para ejecutarse en un solo GPU de consumo o CPU, con licencia Apache-2.0. Esta variante, creada por Blackfrost y publicada en HuggingFace por 0xSojalSec, empaqueta el modelo en una escalera completa de cuantizaciones GGUF (Q2_K a Q8_0) junto con proyectores de visión y un drafter DFlash para decodificación especulativa.
+Muse-Glimmer-30B-Abliterated-GGUF es una versión cuantizada en formato GGUF del modelo Muse Glimmer 30B de Meta, modificada mediante un proceso de "abliteración" que elimina el comportamiento de rechazo (refusals) de los pesos. El modelo original, desarrollado por Meta Superintelligence Labs, es un modelo agéntico y multimodal de 30B parámetros diseñado para ejecutarse en un solo GPU de consumo o CPU, con licencia Apache-2.0. Esta variante, creada por Blackfrost y publicada en Hugging Face por 0xSojalSec, empaqueta el modelo en una escalera completa de cuantizaciones GGUF (Q2_K a Q8_0) junto con proyectores de visión y un drafter DFlash para decodificación especulativa.
 
 El modelo resuelve el problema de ejecutar un agente local siempre activo con capacidades de tool calling, razonamiento multimodal y ventana de contexto de 131.072 tokens, todo ello en hardware de consumo. Su relevancia radica en que combina la arquitectura densa de 52 capas con atención de ventana deslizante y torre de visión, ofreciendo una alternativa local a modelos propietarios. La versión abliterated, además, elimina los rechazos de contenido, lo que la hace útil para investigación en seguridad y comportamientos de modelo, aunque con advertencias éticas.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSojalSec/Muse-Glimmer-30B-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0xSojalSec/Muse-Glimmer-30B-Abliterated-GGUF
 - Modelo base de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Pagina oficial de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Model card en NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. El autor es el usuario de HuggingFace "sandeep123" y se trata de un artefacto de investigación experimental centrado en el razonamiento matemático en modo "nonthinking" (sin cadena de pensamiento explícita). El adaptador se publica como un conjunto de checkpoints inmutables en formato PEFT safetensors, cada uno con su configuración, tokenizer, chat template, metadatos de entrenamiento y manifiesto SHA256.
+Este repositorio contiene un adaptador LoRA entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. El autor es el usuario de Hugging Face "sandeep123" y se trata de un artefacto de investigación experimental centrado en el razonamiento matemático en modo "nonthinking" (sin cadena de pensamiento explícita). El adaptador se publica como un conjunto de checkpoints inmutables en formato PEFT safetensors, cada uno con su configuración, tokenizer, chat template, metadatos de entrenamiento y manifiesto SHA256.
 
 La innovación técnica declarada es una regularización de entropía muestreada con puerta por ventaja positiva (positive-advantage-gated sampled entropy regularization), con coeficiente 0.01, aplicada junto a la pérdida estándar de GRPO con una penalización KL de 0.01 estimada con el estimador k3. El entrenamiento está planificado para 4 épocas sobre un split de 2.048 preguntas de matemáticas, con un batch global de 64 preguntas y 8 rollouts por pregunta (512 respuestas por actualización), lo que da 32 actualizaciones por época y 128 actualizaciones planificadas. El contexto de prompt más respuesta se limita a 8.192 tokens y la semilla es 42.
 
@@ -79,10 +79,10 @@ Los datos de licencia y contexto de los modelos de comparacion son de conocimien
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grpo-qwen3-4b-nonthinking-entropy-2048-20260918 (este modelo) | ~4B base + adaptador LoRA | No disponible (entrenamiento limitado a 8.192 tokens) | Adaptador LoRA sobre Qwen3-4B-Instruct-2507 | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | No disponible en esta busqueda | Modelo denso completo | No disponible en esta busqueda (se cita Apache-2.0 en fuentes publicas del modelo base, sin verificar aqui) | HuggingFace |
-| Qwen3-4B-Thinking-2507 | ~4B | No disponible en esta busqueda | Modelo denso con modo thinking | No disponible en esta busqueda | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | ~7B | No disponible en esta busqueda | Modelo denso destilado con razonamiento explicito | No disponible en esta busqueda (se cita MIT en fuentes publicas, sin verificar aqui) | HuggingFace |
+| grpo-qwen3-4b-nonthinking-entropy-2048-20260918 (este modelo) | ~4B base + adaptador LoRA | No disponible (entrenamiento limitado a 8.192 tokens) | Adaptador LoRA sobre Qwen3-4B-Instruct-2507 | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | No disponible en esta busqueda | Modelo denso completo | No disponible en esta busqueda (se cita Apache-2.0 en fuentes publicas del modelo base, sin verificar aqui) | Hugging Face |
+| Qwen3-4B-Thinking-2507 | ~4B | No disponible en esta busqueda | Modelo denso con modo thinking | No disponible en esta busqueda | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | ~7B | No disponible en esta busqueda | Modelo denso destilado con razonamiento explicito | No disponible en esta busqueda (se cita MIT en fuentes publicas, sin verificar aqui) | Hugging Face |
 
 Comparacion cualitativa: frente al modelo base Qwen3-4B-Instruct-2507, este repositorio anade un ajuste por RL especifico para matematicas en modo sin thinking, pero no publica evaluacion que demuestre mejora. Frente a alternativas con razonamiento explicito como Qwen3-4B-Thinking-2507 o DeepSeek-R1-Distill-Qwen-7B, la diferencia clave es el modo no-thinking y el foco en respuestas finales breves, con el coste de no exponer cadena de razonamiento.
 
@@ -105,7 +105,7 @@ Comparacion cualitativa: frente al modelo base Qwen3-4B-Instruct-2507, este repo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/grpo-qwen3-4b-nonthinking-entropy-2048-20260918
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/grpo-qwen3-4b-nonthinking-entropy-2048-20260918
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de codigo de referencia del autor (R1_zero_Div): https://github.com/nigelyaoj/R1_zero_Div
 - Commit de referencia del codigo: a381e1e5379bd58e6679dc1c8715a808930031db

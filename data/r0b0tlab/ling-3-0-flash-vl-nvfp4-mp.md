@@ -97,7 +97,7 @@ La principal diferencia respecto al modelo base BF16 es la reduccion de peso de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r0b0tlab/Ling-3.0-flash-VL-NVFP4-MP
+- Modelo en Hugging Face: https://huggingface.co/r0b0tlab/Ling-3.0-flash-VL-NVFP4-MP
 - Repositorio de reproduccion: https://github.com/r0b0tlab/ling30vl-nvfp4-mp-sm121
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
 - Fork de vLLM inclusionAI: https://github.com/inclusionAI/vllm-ling-v3

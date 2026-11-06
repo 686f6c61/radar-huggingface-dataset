@@ -85,7 +85,7 @@ La comparación más directa es con el modelo base, del que este artefacto solo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teknikkent/supertonic-3-int8
+- Modelo en Hugging Face: https://huggingface.co/teknikkent/supertonic-3-int8
 - Modelo base: https://huggingface.co/Supertone/supertonic-3/tree/3cadd1ee6394adea1bd021217a0e650ede09a323
 - Repositorio LocaDub: https://github.com/mhmmd5225/LocaDub
 - Mediciones TTS en turco (WER, prosodia, velocidad): https://github.com/mhmmd5225/LocaDub/blob/main/docs/TTS-KIYAS.md

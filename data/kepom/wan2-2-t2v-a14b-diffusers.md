@@ -81,10 +81,10 @@ Las cifras siguientes son estimaciones derivadas del recuento de parámetros y d
 
 | Modelo | Tipo | Parametros | Resoluciones | Duracion | Ejecucion en GPU de consumo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Wan2.2-T2V-A14B (esta ficha) | Texto a vídeo, MoE | 14,29B contabilizados en safetensors | 480P y 720P | 5 s | No sin cuantizacion u offloading | Apache 2.0 | HuggingFace (repositorio de terceros) y ModelScope |
-| Wan2.2-TI2V-5B | Texto a vídeo e imagen a vídeo | 5B | 720P a 24 fps | No disponible | Si, en tarjetas como la RTX 4090 | Apache 2.0 | HuggingFace y ModelScope |
-| Wan2.2-I2V-A14B | Imagen a vídeo, MoE | No disponible (nomenclatura A14B) | 480P y 720P | No disponible | No sin cuantizacion u offloading | Apache 2.0 | HuggingFace y ModelScope |
-| Wan2.1 | Texto a vídeo (generacion anterior) | No disponible | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace y ModelScope |
+| Wan2.2-T2V-A14B (esta ficha) | Texto a vídeo, MoE | 14,29B contabilizados en safetensors | 480P y 720P | 5 s | No sin cuantizacion u offloading | Apache 2.0 | Hugging Face (repositorio de terceros) y ModelScope |
+| Wan2.2-TI2V-5B | Texto a vídeo e imagen a vídeo | 5B | 720P a 24 fps | No disponible | Si, en tarjetas como la RTX 4090 | Apache 2.0 | Hugging Face y ModelScope |
+| Wan2.2-I2V-A14B | Imagen a vídeo, MoE | No disponible (nomenclatura A14B) | 480P y 720P | No disponible | No sin cuantizacion u offloading | Apache 2.0 | Hugging Face y ModelScope |
+| Wan2.1 | Texto a vídeo (generacion anterior) | No disponible | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face y ModelScope |
 
 No se dispone en la información proporcionada de datos de rendimiento comparativo ni de especificaciones de modelos de vídeo competidores de otros fabricantes que permitan una comparación cuantitativa.
 
@@ -103,8 +103,8 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 ## Enlaces
 
 - Repositorio de esta ficha: https://huggingface.co/kepom/Wan2.2-T2V-A14B-Diffusers
-- Modelo oficial T2V-A14B en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
-- Organización Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Modelo oficial T2V-A14B en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
+- Organización Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - Modelo oficial en ModelScope: https://modelscope.cn/models/Wan-AI/Wan2.2-T2V-A14B
 - Organización Wan-AI en ModelScope: https://modelscope.cn/organization/Wan-AI
 - Repositorio de código e inferencia: https://github.com/Wan-Video/Wan2.2

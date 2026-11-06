@@ -21,7 +21,7 @@ Su relevancia es de nicho pero clara: cubre una tarea (segmentación y restaurac
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, con `custom_code` (requiere `transformers` y `torch`, e importar `inference.py` del repo) |
 
-Otros datos: tamaño del repositorio 0,3 GB; etiquetas declaradas `masked-language-modeling`, `scriptio-continua`, `word-segmentation`, `birchbark`, `historical-nlp`, `rope`; sin pipeline declarado en HuggingFace.
+Otros datos: tamaño del repositorio 0,3 GB; etiquetas declaradas `masked-language-modeling`, `scriptio-continua`, `word-segmentation`, `birchbark`, `historical-nlp`, `rope`; sin pipeline declarado en Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -109,5 +109,5 @@ No disponible. La información proporcionada no incluye modelos comparables de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeRestoral/ContinuaRoformer-slav
+- Modelo en Hugging Face: https://huggingface.co/BeRestoral/ContinuaRoformer-slav
 - No se han encontrado en la información disponible artículos, papers, blogs, repositorios adicionales ni demos asociados al modelo.

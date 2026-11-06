@@ -69,7 +69,7 @@ No se dispone de informacion sobre adaptadores LoRA similares para FLUX.2-klein-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dx8152/Flux2-Klein-9B-Consistency
+- Hugging Face: https://huggingface.co/dx8152/Flux2-Klein-9B-Consistency
 - ModelScope: https://www.modelscope.cn/models/dx8152/Flux2-Klein-9B-Consistency
 - GitHub (repo espejo): https://github.com/Damacol/dx8152-flux2-klein-9b-consistency
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/flux2-klein-9b-consistency-dx8152

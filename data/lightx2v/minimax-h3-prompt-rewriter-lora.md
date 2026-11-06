@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-H3-Prompt-Rewriter-LoRA es un adaptador de bajo rango (LoRA) desarrollado por el usuario lightx2v, diseñado específicamente para reescribir prompts destinados a la generación de audio y vídeo con el modelo MiniMax-H3. El adaptador se aplica sobre el modelo base Qwen/Qwen3.6-27B, según los metadatos de HuggingFace, y convierte una instrucción corta en una descripción estructurada y lista para producción, optimizada para el pipeline de text-to-audio-video de MiniMax-H3.
+MiniMax-H3-Prompt-Rewriter-LoRA es un adaptador de bajo rango (LoRA) desarrollado por el usuario lightx2v, diseñado específicamente para reescribir prompts destinados a la generación de audio y vídeo con el modelo MiniMax-H3. El adaptador se aplica sobre el modelo base Qwen/Qwen3.6-27B, según los metadatos de Hugging Face, y convierte una instrucción corta en una descripción estructurada y lista para producción, optimizada para el pipeline de text-to-audio-video de MiniMax-H3.
 
 El modelo resuelve el problema de la redacción de prompts detallados y consistentes para generación multimodal, un paso crítico cuando se trabaja con modelos de vídeo que requieren descripciones largas y precisas. Su relevancia actual radica en que permite ejecutar todo el proceso localmente, sin depender de servicios en la nube, y acepta prompts en cualquier idioma que el modelo base pueda leer, devolviendo siempre la reescritura en inglés, que es el idioma de trabajo de MiniMax-H3.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: no disponible oficialmente. Dado que el adaptador se aplica sobre Qwen3.6-27B, un modelo de 27 000 millones de parametros, se requiere una GPU con al menos 16-24 GB de VRAM para cargar el modelo base en cuantizacion de 8 bits o 4 bits. Sin cuantizacion, se necesitarian 54 GB o mas.
 - GPU recomendadas: no se especifican modelos concretos. Para una inferencia comoda, se recomienda una NVIDIA RTX 4090 (24 GB), A100 (40/80 GB) o H100 (80 GB). En consumer, una RTX 3090 o 4090 con cuantizacion puede ser suficiente.
 - Compatibilidad con consumer GPU: probablemente si, si se usa cuantizacion del modelo base (por ejemplo, 4 bits con bitsandbytes o GPTQ). El adaptador LoRA anade una sobrecarga minima de VRAM.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria `peft` de HuggingFace, o integrarse en ComfyUI mediante los nodos del repositorio de GitHub. Tambien es posible usarlo con vLLM o TGI si se fusionan los pesos del adaptador con el modelo base.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria `peft` de Hugging Face, o integrarse en ComfyUI mediante los nodos del repositorio de GitHub. Tambien es posible usarlo con vLLM o TGI si se fusionan los pesos del adaptador con el modelo base.
 - Latencia y throughput: no disponibles. Dependen del hardware, la cuantizacion y la longitud del prompt de salida.
 
 ## Comparativa con modelos similares
@@ -66,13 +66,13 @@ No se dispone de informacion sobre otros adaptadores LoRA especificamente disena
 - Salida exclusivamente en ingles: aunque la entrada puede ser multilingue, la reescritura siempre se genera en ingles, lo que puede ser una limitacion para usuarios que necesiten prompts en otros idiomas.
 - Dependencia del modelo base: el rendimiento del adaptador esta condicionado por las capacidades y sesgos de Qwen3.6-27B. Si el modelo base tiene sesgos de genero, culturales o linguisticos, estos pueden reflejarse en los prompts reescritos.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar descripciones que no se correspondan con la intencion original del usuario, especialmente si el prompt de entrada es ambiguo o contiene referencias poco comunes.
-- Licencia no especificada: la ausencia de una licencia clara en HuggingFace impide determinar si el adaptador puede usarse en proyectos comerciales. Se recomienda contactar con el autor antes de un despliegue en produccion.
+- Licencia no especificada: la ausencia de una licencia clara en Hugging Face impide determinar si el adaptador puede usarse en proyectos comerciales. Se recomienda contactar con el autor antes de un despliegue en produccion.
 - Informacion tecnica incompleta: no se han publicado detalles sobre el entrenamiento, los hiperparametros del LoRA (rango, alpha, dropout) ni la composicion del dataset, lo que dificulta la reproducibilidad y la evaluacion de su robustez.
 - Tamano del archivo: el adaptador pesa 3,74 GB, lo que es inusualmente grande para un LoRA tipico (que suele ocupar entre 100 MB y 1 GB). Esto podria indicar que el archivo incluye el modelo base fusionado o que se trata de un adaptador de alto rango. No se ha confirmado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA
+- Hugging Face: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA
 - Repositorio de arbol de archivos: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA/tree/main
 - ModelScope: https://www.modelscope.cn/models/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA
 - GitHub (nodos ComfyUI): https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI

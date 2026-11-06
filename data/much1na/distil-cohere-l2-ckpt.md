@@ -70,6 +70,6 @@ No se dispone de datos de rendimiento comparativos. Sin embargo, por su tamano y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/much1na/distil-cohere-l2-ckpt
+- Repositorio Hugging Face: https://huggingface.co/much1na/distil-cohere-l2-ckpt
 - Paper de BERT (arquitectura base): https://arxiv.org/abs/1908.10084
 - Paper de embeddings de Cohere (referencia de destilacion): https://arxiv.org/abs/2301.12005

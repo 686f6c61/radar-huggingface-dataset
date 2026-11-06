@@ -93,8 +93,8 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AtomicChat/woodcock-drafter-qwen3-4b | 914 M (389 M congelados) | No disponible | 2,23× global en M4 Max (124,2 tok/s) | Apache-2.0 | HuggingFace, requiere runtime Woodcock |
-| AtomicChat/woodcock-drafter-qwen3-1.7b | No disponible | No disponible | No disponible | No disponible | HuggingFace (hermano menor citado en la model card) |
+| AtomicChat/woodcock-drafter-qwen3-4b | 914 M (389 M congelados) | No disponible | 2,23× global en M4 Max (124,2 tok/s) | Apache-2.0 | Hugging Face, requiere runtime Woodcock |
+| AtomicChat/woodcock-drafter-qwen3-1.7b | No disponible | No disponible | No disponible | No disponible | Hugging Face (hermano menor citado en la model card) |
 | Borradores EAGLE-3 / Medusa / n-gram lookup genéricos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos publicados que permitan una comparación cuantitativa con otros borradores o frameworks de decodificación especulativa (vLLM con n-gram, Medusa, EAGLE-3 de referencia). La comparación relevante es interna: este borrador frente al de 1,7B y frente a la decodificación estándar de mlx-lm, que es la que figura en la tabla de benchmarks.
@@ -115,7 +115,7 @@ No se dispone de datos publicados que permitan una comparación cuantitativa con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AtomicChat/woodcock-drafter-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/AtomicChat/woodcock-drafter-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Hermano menor (1.7B): https://huggingface.co/AtomicChat/woodcock-drafter-qwen3-1.7b
 - Dataset de entrenamiento, logs y benchmarks: https://huggingface.co/datasets/AtomicChat/woodcock-training

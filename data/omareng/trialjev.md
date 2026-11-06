@@ -77,10 +77,10 @@ Resultados sobre 6.975 pares elegible-o-excluido de 50 pacientes no vistos de TR
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TrialJev | Adaptador LoRA + cabeza pointer (scorer) | Depende del backbone (0.8B a 27B) | No disponible | Apache-2.0 | HuggingFace, research preview |
+| TrialJev | Adaptador LoRA + cabeza pointer (scorer) | Depende del backbone (0.8B a 27B) | No disponible | Apache-2.0 | Hugging Face, research preview |
 | MedJev | Release open-weight de referencia (diseño adoptado) | No disponible | No disponible | Apache-2.0 | Open-weight |
 | kev | Release open-weight de referencia (diseño adoptado) | No disponible | No disponible | Apache-2.0 | Open-weight |
-| Qwen3.5 / Qwen3.8 base | LLM generativo (backbone) | 0.8B, 9B, 27B | No disponible | No disponible en la información | HuggingFace |
+| Qwen3.5 / Qwen3.8 base | LLM generativo (backbone) | 0.8B, 9B, 27B | No disponible | No disponible en la información | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre TrialJev y MedJev o kev en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos de rendimiento entre TrialJev y MedJev o kev
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omareng/TrialJev
+- Hugging Face: https://huggingface.co/omareng/TrialJev
 - Repositorio de código: https://github.com/oibrahi1/TrialJev
 - Backbone Qwen3.5-0.8B-Base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Backbone Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

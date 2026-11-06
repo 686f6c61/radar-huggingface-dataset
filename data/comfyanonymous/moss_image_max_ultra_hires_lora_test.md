@@ -104,7 +104,7 @@ No se han identificado en la informacion disponible otros adaptadores LoHa o LoR
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/comfyanonymous/MOSS_image_MAX_ULTRA_hires_lora_test
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/comfyanonymous/MOSS_image_MAX_ULTRA_hires_lora_test
 - Modelo base Comfy-Org/MOSS-Image: https://huggingface.co/Comfy-Org/MOSS-Image
 - Ejemplo v0.3 a 9 MP: https://huggingface.co/comfyanonymous/MOSS_image_MAX_ULTRA_hires_lora_test/blob/main/example/lora_v0.3.avif
 - Ejemplo v0.2 a 9 MP: https://huggingface.co/comfyanonymous/MOSS_image_MAX_ULTRA_hires_lora_test/blob/main/example/lora_v0.2.avif

@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: cyankiwi/Sage-A1.5-AWQ-INT4](https://huggingface.co/cyankiwi/Sage-A1.5-AWQ-INT4)
+- [Hugging Face: cyankiwi/Sage-A1.5-AWQ-INT4](https://huggingface.co/cyankiwi/Sage-A1.5-AWQ-INT4)
 - [Modelo base: InternScience/Sage-A1.5](https://huggingface.co/InternScience/Sage-A1.5)
 - [Modelo base: Agents-A1](https://huggingface.co/InternScience/Agents-A1)
 - [Modelo base: Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)

@@ -76,7 +76,7 @@ No se dispone de datos suficientes para una comparativa exhaustiva. El adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mseri/zunzuncito-gemma4-26b-a4b
+- Modelo en Hugging Face: https://huggingface.co/mseri/zunzuncito-gemma4-26b-a4b
 - Repositorio del motor zunzuncito: https://github.com/mseri/zunzuncito
 - Modelo base de Google: https://huggingface.co/google/gemma-4-26B-A4B-it (referencia, no verificado)
 - Pagina de CanIRun sobre Gemma 4 26B-A4B: https://www.canirun.ai/model/gemma4-26b-a4b

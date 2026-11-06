@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jafra Z v3 (qwen35-2b) | ≈1,88 B | No disponible (MAX_LEN 8192 en entrenamiento) | Apache 2.0 | HuggingFace (jafra-io) | Ajuste fino parcial sobre Qwen3.5-2B; especializado en monitorización |
-| Qwen/Qwen3.5-2B | ≈2 B | No disponible en la información | No disponible en la información | HuggingFace (Qwen) | Modelo base generalista sin especialización |
+| Jafra Z v3 (qwen35-2b) | ≈1,88 B | No disponible (MAX_LEN 8192 en entrenamiento) | Apache 2.0 | Hugging Face (jafra-io) | Ajuste fino parcial sobre Qwen3.5-2B; especializado en monitorización |
+| Qwen/Qwen3.5-2B | ≈2 B | No disponible en la información | No disponible en la información | Hugging Face (Qwen) | Modelo base generalista sin especialización |
 | Alternativas de ~2 B con tool calling | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos verificados en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jafra-io/jafra-z-qwen35-2b-v3
+- Modelo en Hugging Face: https://huggingface.co/jafra-io/jafra-z-qwen35-2b-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de llama.cpp (para GGUF): https://github.com/ggerganov/llama.cpp
 - Repositorio de PEFT (usado en el entrenamiento): https://github.com/huggingface/peft

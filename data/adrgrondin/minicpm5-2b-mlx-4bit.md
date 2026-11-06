@@ -92,7 +92,7 @@ La comparacion relevante y verificable se limita, por tanto, al par formado por 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/adrgrondin/MiniCPM5-2B-mlx-4Bit
+- Repositorio del modelo en Hugging Face: https://huggingface.co/adrgrondin/MiniCPM5-2B-mlx-4Bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Libreria de conversion y ejecucion: `mlx-lm` (mencionada en la model card en su version 0.31.2; repositorio en https://github.com/ml-explore/mlx-lm)
 - Datasets citados por el modelo base: https://huggingface.co/datasets/openbmb/Ultra-FineWeb, https://huggingface.co/datasets/openbmb/UltraX-Preview, https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3, https://huggingface.co/datasets/openbmb/UltraData-Math, https://huggingface.co/datasets/openbmb/UltraData-Code, https://huggingface.co/datasets/openbmb/UltraData-SFT-2605, https://huggingface.co/datasets/openbmb/UltraData-SFT-Agent-2609, https://huggingface.co/datasets/openbmb/UltraData-RL-2609

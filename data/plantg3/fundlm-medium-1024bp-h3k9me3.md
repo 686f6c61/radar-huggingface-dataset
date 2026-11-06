@@ -73,8 +73,8 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FunDLM-Medium-1024bp-H3K9me3 | 471M (base) + LoRA r=8 | 1.024 bp | Clasificación H3K9me3 | No disponible | HuggingFace (PlantG3) |
-| FunDLM-Medium-1024bp | 471M | 1.024 bp | Modelo base de lenguaje de ADN | No disponible | HuggingFace (gnikesh) |
+| FunDLM-Medium-1024bp-H3K9me3 | 471M (base) + LoRA r=8 | 1.024 bp | Clasificación H3K9me3 | No disponible | Hugging Face (PlantG3) |
+| FunDLM-Medium-1024bp | 471M | 1.024 bp | Modelo base de lenguaje de ADN | No disponible | Hugging Face (gnikesh) |
 | PlantCAD2 | No disponible | No disponible | Genómica de plantas (referencia de instalación) | No disponible | GitHub (plantcad/plantcad) |
 
 No se dispone de datos de rendimiento de las alternativas en la información proporcionada, por lo que no es posible comparar AUROC, AP ni accuracy entre modelos.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de las alternativas en la información pro
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-H3K9me3
+- Hugging Face del adaptador: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-H3K9me3
 - Modelo base: https://huggingface.co/gnikesh/FunDLM-Medium-1024bp
 - Repositorio FunDLM (script de fine-tuning y predicción): https://github.com/PlantG3/funDLM/blob/main/src/finetune/lora_fine_tune.py
 - Guía de instalación de referencia (PlantCAD2): https://github.com/plantcad/plantcad/blob/main/docs/local-install.md

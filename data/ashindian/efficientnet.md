@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AshIndian/efficientNet es un repositorio publicado en HuggingFace por el usuario AshIndian bajo licencia Apache 2.0. A pesar del nombre, no hay evidencia en la informacion disponible de que se trate de una implementacion de la arquitectura EfficientNet de Google: el unico tag tecnico presente es `joblib`, lo que apunta a un artefacto serializado con la libreria joblib (habitual en pipelines de scikit-learn) en lugar de un modelo de aprendizaje profundo con pesos en safetensors o GGUF. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y su model card se limita a la linea de licencia, sin descripcion, sin pipeline declarado y sin idiomas especificados.
+AshIndian/efficientNet es un repositorio publicado en Hugging Face por el usuario AshIndian bajo licencia Apache 2.0. A pesar del nombre, no hay evidencia en la informacion disponible de que se trate de una implementacion de la arquitectura EfficientNet de Google: el unico tag tecnico presente es `joblib`, lo que apunta a un artefacto serializado con la libreria joblib (habitual en pipelines de scikit-learn) en lugar de un modelo de aprendizaje profundo con pesos en safetensors o GGUF. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y su model card se limita a la linea de licencia, sin descripcion, sin pipeline declarado y sin idiomas especificados.
 
 No se dispone de informacion sobre parametros, arquitectura, contexto, datos de entrenamiento ni resultados de evaluacion. Esto impide determinar si el artefacto es un clasificador clasico, un modelo de vision, un experimento sin documentar o un repositorio vacio creado como prueba. La busqueda web realizada no devuelve ninguna referencia a este repositorio concreto; los resultados encontrados tratan sobre la arquitectura EfficientNet original de Google, un proyecto de clasificacion de billetes indios con EfficientNet-B0 y noticias no relacionadas, por lo que no aportan datos verificables sobre este modelo.
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos sin conocer la naturaleza real d
 
 - Auditoria del repositorio: descargar el fichero joblib y ejecutar `joblib.load` en un entorno aislado para inspeccionar el tipo de objeto, las clases disponibles y si realmente implementa un modelo predictivo.
 - Analisis de seguridad de artefactos: los ficheros joblib y pickle pueden ejecutar codigo arbitrario al deserializarse, por lo que este repositorio es un candidato idoneo para probar escaneos de artefactos en pipelines de ML supply chain.
-- Reproduccion academica del patron de publicacion: sirve como ejemplo de publicacion incompleta en HuggingFace para estudiar practicas de documentacion de modelos.
+- Reproduccion academica del patron de publicacion: sirve como ejemplo de publicacion incompleta en Hugging Face para estudiar practicas de documentacion de modelos.
 - Clasificacion de imagenes (solo si se confirma que contiene un EfficientNet real): un clasificador de este tipo podria emplearse en tareas de etiquetado de imagenes, tal y como se documenta en el proyecto de reconocimiento de billetes indios encontrado en la busqueda web.
 - Extraccion de caracteristicas (solo si se confirma la arquitectura): un EfficientNet preentrenado podria usarse como backbone congelado para tareas de transfer learning en vision por computador.
 - Docencia sobre serializacion de modelos: el formato joblib es didactico para explicar como se persisten pipelines de scikit-learn y que riesgos conlleva.
@@ -74,7 +74,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AshIndian/efficientNet | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| AshIndian/efficientNet | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | EfficientNet-B0 (Google) | 5,3 M (referencia de la arquitectura) | no aplica | Apache 2.0 | Multiples repositorios |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AshIndian/efficientNet
+- Repositorio en Hugging Face: https://huggingface.co/AshIndian/efficientNet
 - Blog de Google Research sobre EfficientNet (referencia de la arquitectura homonima): https://research.google/blog/efficientnet-improving-accuracy-and-efficiency-through-automl-and-model-scaling/
 - Proyecto de clasificacion de moneda india con EfficientNet-B0 (no relacionado directamente con este repositorio): https://github.com/Selvaganesh2244/Indian-Currency_classification
 - Articulo divulgativo sobre la arquitectura EfficientNet: https://www.geeksforgeeks.org/computer-vision/efficientnet-architecture/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-FP_Classifcation-V1 es un modelo publicado en HuggingFace por el usuario ERO26, entrenado con la libreria Transformers y almacenado en formato safetensors. Se trata de un modelo muy pequeno, de 8.483.980 parametros (unos 8,5 millones), cuya model card lo describe como entrenado "desde cero" (from scratch) sobre un conjunto de datos no identificado. Por el nombre y por las metricas reportadas (accuracy, precision macro, recall macro y F1 macro), todo apunta a un clasificador supervisado, aunque la model card no declara explicitamente la tarea, el numero de clases ni el dominio de aplicacion.
+FP_Classifcation-V1 es un modelo publicado en Hugging Face por el usuario ERO26, entrenado con la libreria Transformers y almacenado en formato safetensors. Se trata de un modelo muy pequeno, de 8.483.980 parametros (unos 8,5 millones), cuya model card lo describe como entrenado "desde cero" (from scratch) sobre un conjunto de datos no identificado. Por el nombre y por las metricas reportadas (accuracy, precision macro, recall macro y F1 macro), todo apunta a un clasificador supervisado, aunque la model card no declara explicitamente la tarea, el numero de clases ni el dominio de aplicacion.
 
 El dato mas relevante es su rendimiento declarado en el conjunto de evaluacion: loss 0.2940, accuracy 0.9026, precision macro 0.8742, recall macro 0.9098 y F1 macro 0.8895. El autor registro 50 epocas de entrenamiento con optimizador AdamW, scheduler coseno y precision mixta nativa, y publico la curva completa de validacion, que muestra una mejora sostenida desde 0.6792 de accuracy en la epoca 1 hasta valores por encima de 0.90 en la segunda mitad del entrenamiento.
 
-La relevancia de esta ficha es limitada pero util como caso de estudio: se trata de un modelo sin documentacion de uso previsto, sin licencia declarada, sin idiomas especificados y con 0 descargas en el momento de la consulta. Es un ejemplo tipico de artefacto generado automaticamente por el Trainer de HuggingFace y publicado sin completar la informacion. Cualquier evaluacion seria requiere primero determinar la tarea y el dataset, algo que el repositorio no permite.
+La relevancia de esta ficha es limitada pero util como caso de estudio: se trata de un modelo sin documentacion de uso previsto, sin licencia declarada, sin idiomas especificados y con 0 descargas en el momento de la consulta. Es un ejemplo tipico de artefacto generado automaticamente por el Trainer de Hugging Face y publicado sin completar la informacion. Cualquier evaluacion seria requiere primero determinar la tarea y el dataset, algo que el repositorio no permite.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ Nota previa: al no estar documentada la tarea ni el dominio, los casos siguiente
 - Clasificacion de tickets de soporte: asignacion automatica de categoria o prioridad en un sistema de helpdesk, con inferencia local para no enviar datos de clientes a servicios externos.
 - Analisis de sentimiento o de intencion en resenas y encuestas: el modelo puede procesar lotes grandes en un servidor modesto, si su espacio de etiquetas cubre esas categorias.
 - Inferencia en el borde y en dispositivos sin GPU: con unos 34 MB en fp32 (17 MB en fp16, 8,5 MB en int8), cabe en moviles, Raspberry Pi o gateways industriales para clasificacion en tiempo real sin conexion.
-- Despliegue como endpoint compartido con otros servicios: el tag endpoints_compatible indica que puede servirse en HuggingFace Inference Endpoints, util para prototipado rapido.
+- Despliegue como endpoint compartido con otros servicios: el tag endpoints_compatible indica que puede servirse en Hugging Face Inference Endpoints, util para prototipado rapido.
 
 ## Benchmarks y rendimiento
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks comparativos en la informacion disp
 - VRAM estimada para inferencia: menos de 1 GB en cualquier precision. Los pesos ocupan aproximadamente 34 MB en fp32, 17 MB en fp16/bf16 y 8,5 MB en int8. El consumo real dependera del tokenizador y del tamano de lote.
 - GPU recomendadas: ninguna en particular; cualquier GPU consumer sirve (GTX 1050 en adelante, RTX 3060, RTX 4090). No tiene sentido reservar A100 o H100 para este modelo.
 - Cabe en GPU consumer: si, con margen enorme. Tambien cabe en CPU, en Raspberry Pi y en moviles.
-- Opciones de despliegue: pipeline de Transformers, ONNX Runtime, TorchScript, TorchServe, Triton Inference Server, FastAPI con batching propio, o HuggingFace Inference Endpoints (el tag endpoints_compatible lo indica). vLLM, TGI y llama.cpp no son las herramientas adecuadas: estan orientadas a modelos generativos autorregresivos y a pesos GGUF, y aqui no aplican.
+- Opciones de despliegue: pipeline de Transformers, ONNX Runtime, TorchScript, TorchServe, Triton Inference Server, FastAPI con batching propio, o Hugging Face Inference Endpoints (el tag endpoints_compatible lo indica). vLLM, TGI y llama.cpp no son las herramientas adecuadas: estan orientadas a modelos generativos autorregresivos y a pesos GGUF, y aqui no aplican.
 - Latencia y throughput: no disponibles. No hay cifras publicadas. Por tamano, es razonable esperar latencias de un digito de milisegundos en CPU moderna con ONNX Runtime y de menos de un milisegundo en GPU con lotes grandes, pero es una estimacion no verificada, no un dato del autor.
 
 ## Comparativa con modelos similares
@@ -111,7 +111,7 @@ No disponible. La model card no especifica la tarea, el numero de clases, el dom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ERO26/FP_Classifcation-V1
+- Modelo en Hugging Face: https://huggingface.co/ERO26/FP_Classifcation-V1
 - Perfil del autor: https://huggingface.co/ERO26
 - Paper, blog o repositorio asociado: no disponible (no se han encontrado recursos tecnicos vinculados al modelo)
 - Los resultados de busqueda web consultados no contienen informacion relevante sobre este modelo: devuelven documentacion de Microsoft sobre copias de seguridad y recuperacion de Windows, sin relacion alguna con el repositorio.

@@ -6,7 +6,7 @@ El modelo `whisper-large-v3-turbo-ro` es un ajuste fino (fine-tune) del modelo d
 
 La relevancia de este modelo radica en que ofrece una alternativa especializada y de código abierto (licencia Apache 2.0) para transcripción automática de rumano, con una arquitectura optimizada (Whisper Large v3 Turbo) que mantiene un equilibrio entre velocidad y calidad. Al estar basado en el modelo turbo, es más rápido que la versión large original, y su fine-tune específico lo hace más preciso en dominios como conversaciones cotidianas, voces sintetizadas y acentos regionales.
 
-El modelo se distribuye en formato HuggingFace (compatible con Transformers) y también existe una versión cuantizada GGUF del mismo autor, lo que facilita su despliegue en entornos con recursos limitados. No se han publicado métricas de rendimiento (WER/CER) en la información disponible.
+El modelo se distribuye en formato Hugging Face (compatible con Transformers) y también existe una versión cuantizada GGUF del mismo autor, lo que facilita su despliegue en entornos con recursos limitados. No se han publicado métricas de rendimiento (WER/CER) en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- **Tamaño del modelo**: 3.2 GB en pesos (formato HuggingFace). Con cuantización GGUF (por ejemplo q8_0) puede reducirse a ~1.5 GB.
+- **Tamaño del modelo**: 3.2 GB en pesos (formato Hugging Face). Con cuantización GGUF (por ejemplo q8_0) puede reducirse a ~1.5 GB.
 - **VRAM estimada para inferencia**: no especificada, pero para un modelo de ~809M parámetros (Whisper Large v3 Turbo), se recomienda al menos 4 GB de VRAM en cuantización ligera y 8 GB para fp16.
 - **GPU recomendadas**: NVIDIA RTX 3060 o superior para fp16; GPU con 4 GB para GGUF cuantizado. Para uso en producción con alta concurrencia, se recomienda A10 o A100.
 - **Opciones de despliegue**: compatible con `transformers` (Python), `whisper.cpp` (via GGUF), `vLLM` (si se adapta) y `Ollama` (si se exporta a GGUF).
@@ -78,8 +78,8 @@ El modelo se diferencia de los Whisper originales por su especialización en rum
 
 ## Enlaces
 
-- [HuggingFace - IonGrozea/whisper-large-v3-turbo-ro](https://huggingface.co/IonGrozea/whisper-large-v3-turbo-ro)
-- [HuggingFace - Repositorio GGUF](https://huggingface.co/IonGrozea/whisper-large-v3-ro-turbo-gguf)
+- [Hugging Face - IonGrozea/whisper-large-v3-turbo-ro](https://huggingface.co/IonGrozea/whisper-large-v3-turbo-ro)
+- [Hugging Face - Repositorio GGUF](https://huggingface.co/IonGrozea/whisper-large-v3-ro-turbo-gguf)
 - [Whisper Large v3 Turbo - GroqDocs](https://console.groq.com/docs/model/whisper-large-v3-turbo)
 - [OpenAI Whisper GitHub](https://github.com/openai/whisper)
 - [OpenASR - Whisper Large v3 Turbo](https://openasr.org/models/whisper-large-v3-turbo/)

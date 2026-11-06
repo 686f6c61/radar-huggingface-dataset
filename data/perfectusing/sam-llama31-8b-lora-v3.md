@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa fiable. No se conocen otros adaptadores LoRA del mismo autor ni se han publicado metricas que permitan contrastar con alternativas como otros fine-tunes de Llama 3.1 8B (p.ej., modelos de la comunidad en HuggingFace). Se recomienda buscar adaptadores con licencia y tamano similares en el Hub para una comparacion directa.
+No se dispone de informacion suficiente para realizar una comparativa fiable. No se conocen otros adaptadores LoRA del mismo autor ni se han publicado metricas que permitan contrastar con alternativas como otros fine-tunes de Llama 3.1 8B (p.ej., modelos de la comunidad en Hugging Face). Se recomienda buscar adaptadores con licencia y tamano similares en el Hub para una comparacion directa.
 
 ## Limitaciones y advertencias
 
@@ -73,6 +73,6 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. No
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PerfectUsing/sam-llama31-8b-lora-v3
+- Repositorio en Hugging Face: https://huggingface.co/PerfectUsing/sam-llama31-8b-lora-v3
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit

@@ -99,9 +99,9 @@ No se han publicado resultados de benchmarks estandarizados en la informacion di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-SyntheticVoice-KO-2B-v0.1
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-SyntheticVoice-KO-2B-v0.1
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Blog de ingeniería (inglés): https://thakicloud.com/tech-blog/en/llmops/thaki-syntheticvoice-ko-2b-voxcpm2/
 - Blog de ingeniería (coreano): https://thakicloud.com/tech-blog/ko/llmops/thaki-syntheticvoice-ko-2b-voxcpm2/
 - Repositorio VoxCPM: https://github.com/OpenBMB/VoxCPM (commit cce58a5b)
-- Tarjeta en coreano: MODEL_CARD.ko.md dentro del repositorio de HuggingFace
+- Tarjeta en coreano: MODEL_CARD.ko.md dentro del repositorio de Hugging Face

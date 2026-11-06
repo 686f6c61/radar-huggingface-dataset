@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Babes_1.2i17_Illustrious es un punto de control (checkpoint) de generación de imágenes publicado por AIxFuneStudio en HuggingFace bajo acceso restringido (gated). El nombre del repositorio indica que deriva de la familia Illustrious, un modelo de ilustración de código abierto presentado en el artículo arXiv 2409.19946, que según sus autores alcanza rendimiento de referencia en estilo de animación e ilustración y permite personalización sobre una base abierta. No se especifica si se trata de un ajuste completo, un fine-tune parcial o un LoRA empaquetado.
+Babes_1.2i17_Illustrious es un punto de control (checkpoint) de generación de imágenes publicado por AIxFuneStudio en Hugging Face bajo acceso restringido (gated). El nombre del repositorio indica que deriva de la familia Illustrious, un modelo de ilustración de código abierto presentado en el artículo arXiv 2409.19946, que según sus autores alcanza rendimiento de referencia en estilo de animación e ilustración y permite personalización sobre una base abierta. No se especifica si se trata de un ajuste completo, un fine-tune parcial o un LoRA empaquetado.
 
 El desarrollador, AIxFuneStudio, se presenta en su página de Ko-fi como un estudio que ofrece servicios de entrenamiento de LoRA por encargo sobre Flux, SDXL, Pony, Illustrious y SD 1.5, lo que sitúa este repositorio en el ecosistema de fine-tunes de la comunidad más que en el de modelos fundacionales con documentación técnica publicada.
 
@@ -22,7 +22,7 @@ La relevancia de la ficha es limitada pero concreta: el repositorio no incluye m
 | Formato de pesos | No disponible. No se confirma si el repositorio contiene safetensors, GGUF, ONNX u otro formato |
 | Autor | AIxFuneStudio |
 | Tarea declarada en el pipeline | No disponible |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 6,9 GB |
 | Fecha de creación | 23 de septiembre de 2026 |
 | Última actualización | 23 de septiembre de 2026 |
@@ -74,7 +74,7 @@ No hay valores de FID, CLIP score, HPSv2, ImageReward ni comparativas humanas pa
 | Modelo | Familia | Tamaño del repositorio | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
 | Babes_1.2i17_Illustrious (AIxFuneStudio) | Illustrious (derivado) | 6,9 GB | other (no estándar) | Gated, requiere aceptación | 0 descargas, 0 likes, sin model card |
-| Babes_1.2i16_Illustrious (AIxFuneStudio) | Illustrious (derivado) | No disponible | No disponible | Repositorio público en HuggingFace | Versión inmediatamente anterior según el nombre |
+| Babes_1.2i16_Illustrious (AIxFuneStudio) | Illustrious (derivado) | No disponible | No disponible | Repositorio público en Hugging Face | Versión inmediatamente anterior según el nombre |
 | Illustrious (modelo base) | Ilustración open source | No disponible | Código abierto según el artículo arXiv 2409.19946 (términos concretos no disponibles) | Público | Rendimiento de referencia en estilo de animación según sus autores |
 | SDXL / Pony Diffusion V6 XL | Difusión texto a imagen | No disponible | No disponible | Público | Mencionados por el estudio como ecosistemas sobre los que también entrena LoRA |
 
@@ -84,7 +84,7 @@ La comparación cuantitativa de parámetros, contexto y rendimiento no es posibl
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, resolución nativa, sampler recomendado ni CFG sugerido, lo que dificulta la reproducibilidad.
 - Licencia "other": no se especifican los términos de uso comercial, redistribución ni obras derivadas. Es imprescindible revisar las condiciones asociadas al acceso restringido antes de cualquier uso en producción.
-- Acceso gated: el modelo requiere aceptar condiciones en HuggingFace, lo que puede impedir su uso en pipelines automatizados o en entornos sin cuenta verificada.
+- Acceso gated: el modelo requiere aceptar condiciones en Hugging Face, lo que puede impedir su uso en pipelines automatizados o en entornos sin cuenta verificada.
 - Sin validación comunitaria: 0 descargas y 0 likes en la información disponible implican ausencia de pruebas independientes de calidad, seguridad o estabilidad.
 - Riesgo de artefactos visuales: en modelos derivados de Illustrious es habitual encontrar errores anatómicos, manos deformadas, incoherencia entre elementos y pérdida de detalle en resoluciones altas; no hay datos específicos para confirmarlo o descartarlo aquí.
 - Sesgos potenciales: al tratarse de un fine-tune orientado a ilustración y personajes, es esperable un sesgo hacia determinados cánones estéticos, tipos corporales y tonos de piel, además de posibles sesgos de género y etnia heredados del dataset base, no documentados.

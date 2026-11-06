@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PS4Research/IKn8jwlNamPNIS15 es un ajuste fino (finetune) del modelo IBM Granite 4.2 de 30B publicado por el usuario PS4Research (Priyansh Singhal) en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura transformer decoder-only perteneciente a la familia Granite de IBM, con 29.276.770.304 parametros totales (unos 29,3 mil millones) y un peso en disco de 58,6 GB en formato safetensors. El repositorio tiene licencia Apache 2.0, esta etiquetado unicamente para ingles y registra 0 descargas y 0 likes en el momento de la consulta.
+PS4Research/IKn8jwlNamPNIS15 es un ajuste fino (finetune) del modelo IBM Granite 4.2 de 30B publicado por el usuario PS4Research (Priyansh Singhal) en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura transformer decoder-only perteneciente a la familia Granite de IBM, con 29.276.770.304 parametros totales (unos 29,3 mil millones) y un peso en disco de 58,6 GB en formato safetensors. El repositorio tiene licencia Apache 2.0, esta etiquetado unicamente para ingles y registra 0 descargas y 0 likes en el momento de la consulta.
 
-El modelo se distribuye como un derivado directo de ibm-granite/granite-4.2-30b y su model card indica que fue entrenado "2x mas rapido" con Unsloth y la libreria TRL de HuggingFace. No se aportan detalles sobre el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de los datos ni el metodo de alineacion (RLHF/DPO), por lo que la ficha tecnica queda limitada a los metadatos estructurales y a las etiquetas del repositorio.
+El modelo se distribuye como un derivado directo de ibm-granite/granite-4.2-30b y su model card indica que fue entrenado "2x mas rapido" con Unsloth y la libreria TRL de Hugging Face. No se aportan detalles sobre el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de los datos ni el metodo de alineacion (RLHF/DPO), por lo que la ficha tecnica queda limitada a los metadatos estructurales y a las etiquetas del repositorio.
 
 Su relevancia es limitada y de caracter experimental: al no estar respaldado por benchmarks publicados, no incluir documentacion de entrenamiento y no tener traccion de uso, debe considerarse un artefacto de investigacion mas que una opcion lista para produccion. Se recomienda evaluarlo contra el modelo base antes de cualquier despliegue.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| PS4Research/IKn8jwlNamPNIS15 | 29,3B | No disponible | Apache 2.0 | Ingles | HuggingFace (0 descargas) |
-| ibm-granite/granite-4.2-30b (base) | No disponible en esta informacion | No disponible | Apache 2.0 (heredada) | No disponible | HuggingFace |
+| PS4Research/IKn8jwlNamPNIS15 | 29,3B | No disponible | Apache 2.0 | Ingles | Hugging Face (0 descargas) |
+| ibm-granite/granite-4.2-30b (base) | No disponible en esta informacion | No disponible | Apache 2.0 (heredada) | No disponible | Hugging Face |
 | Otros modelos de ~30B comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de terceros que permitan una comparacion cuantitativa fiable con alternativas de la misma categoria.
@@ -93,10 +93,10 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/IKn8jwlNamPNIS15
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/IKn8jwlNamPNIS15
 - Perfil del autor: https://huggingface.co/PS4Research
 - Modelos del autor: https://huggingface.co/PS4Research/models
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-30b
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - text-generation-inference: https://github.com/huggingface/text-generation-inference

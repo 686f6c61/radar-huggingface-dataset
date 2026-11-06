@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jordansky/ye27b50daa1de` es un modelo de lenguaje publicado en HuggingFace por el usuario Jordansky, con un total de 405.334.016 parámetros confirmados a partir de los metadatos de los pesos en safetensors. El tag de arquitectura presente en el repositorio es `gpt_neox`, lo que lo sitúa en la familia de transformers decoder-only autorregresivos derivados de GPT-NeoX, con atención causal estándar. El repositorio ocupa 0,8 GB, un tamaño coherente con un checkpoint en precisión de 16 bits para ese número de parámetros.
+`Jordansky/ye27b50daa1de` es un modelo de lenguaje publicado en Hugging Face por el usuario Jordansky, con un total de 405.334.016 parámetros confirmados a partir de los metadatos de los pesos en safetensors. El tag de arquitectura presente en el repositorio es `gpt_neox`, lo que lo sitúa en la familia de transformers decoder-only autorregresivos derivados de GPT-NeoX, con atención causal estándar. El repositorio ocupa 0,8 GB, un tamaño coherente con un checkpoint en precisión de 16 bits para ese número de parámetros.
 
 La información pública disponible es extremadamente limitada: no hay model card, no se declara licencia, no se declaran idiomas, no hay pipeline asignado ni resultados de evaluación. El nombre del repositorio es un identificador alfanumérico opaco (`ye27b50daa1de`), lo que junto con las 14 descargas y 0 likes sugiere un artefacto de prueba, un experimento de entrenamiento o una subida automatizada más que un lanzamiento de modelo dirigido a producción.
 
@@ -69,10 +69,10 @@ Comparacion con alternativas de escala equivalente, usando datos publicos de cad
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jordansky/ye27b50daa1de` | 405 M | `gpt_neox` | no disponible | no disponible | HuggingFace, 14 descargas |
-| Pythia-410M (EleutherAI) | 410 M | GPT-NeoX | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
-| OPT-350M (Meta) | 350 M | Transformer decoder-only | 2048 tokens | Licencia OPT (uso no comercial) | HuggingFace |
-| Cerebras-GPT-590M | 590 M | GPT-3 style | 2048 tokens | Apache 2.0 | HuggingFace |
+| `Jordansky/ye27b50daa1de` | 405 M | `gpt_neox` | no disponible | no disponible | Hugging Face, 14 descargas |
+| Pythia-410M (EleutherAI) | 410 M | GPT-NeoX | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
+| OPT-350M (Meta) | 350 M | Transformer decoder-only | 2048 tokens | Licencia OPT (uso no comercial) | Hugging Face |
+| Cerebras-GPT-590M | 590 M | GPT-3 style | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La diferencia practica no esta en el rendimiento bruto, que no se puede comparar por falta de benchmarks, sino en la documentacion: los tres modelos de referencia publican model card, datos de entrenamiento y evaluaciones, mientras que este checkpoint no ofrece ninguno de esos elementos.
 
@@ -89,5 +89,5 @@ La diferencia practica no esta en el rendimiento bruto, que no se puede comparar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordansky/ye27b50daa1de
+- Repositorio en Hugging Face: https://huggingface.co/Jordansky/ye27b50daa1de
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo. Los resultados devueltos por la busqueda corresponden a un comercio de calzado y no guardan relacion con el modelo.

@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sergiopaniego/watercolour-grpo-v10b
+- Repositorio Hugging Face: https://huggingface.co/sergiopaniego/watercolour-grpo-v10b
 - Visualización del entrenamiento en Trackio: https://sergiopaniego-watercolour-grpo-v10b.hf.space?project=huggingface&runs=sergiopaniego-1787914051&sidebar=collapsed
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Perfil de GitHub del autor: https://github.com/sergiopaniego

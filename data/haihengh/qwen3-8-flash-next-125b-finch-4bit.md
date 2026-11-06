@@ -18,7 +18,7 @@ Es relevante porque explora una via distinta a la cuantizacion clasica: en lugar
 | Longitud de contexto | no disponible; los ejemplos de la model card usan `--max-context 2048` |
 | Tipos de cuantizacion | Affine 4-bit, group size 64, escala y sesgo por grupo en BF16 (expertos enrutados, expertos compartidos, atencion y embeddings); 8-bit para atencion lineal GDN y router |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `license: other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | `.finch` (streaming, layout propio del motor FinchMoE); no es safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ El propio autor advierte que estas cifras describen la forma storage-bound del s
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | haihengh/Qwen3.8-Flash-Next-125B-finch-4bit | no disponible (nombre: 125B) | no disponible (ejemplos a 2048) | `.finch` propietario | qwen-community-1.0 | Solo motor FinchMoE, Apple Silicon |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | no disponible | no disponible | Repositorio upstream en HuggingFace |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | no disponible | no disponible | Repositorio upstream en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre cuantizaciones alternativas del mismo modelo base (por ejemplo en GGUF o MLX) ni sobre otros repacks MoE de la misma categoria, por lo que no es posible establecer una comparacion cuantitativa de rendimiento, contexto o calidad.
@@ -97,6 +97,6 @@ No se dispone de informacion sobre cuantizaciones alternativas del mismo modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit
+- Repositorio en Hugging Face: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit
 - Motor FinchMoE: https://github.com/haihengh/finchMoE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

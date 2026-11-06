@@ -79,7 +79,7 @@ Dark-Orthia se diferencia de los modelos progenitores en que agrega sus rasgos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nimbz/Gemma-4-Dark-Orthia-31B
+- Modelo en Hugging Face: https://huggingface.co/Nimbz/Gemma-4-Dark-Orthia-31B
 - Modelo base oficial: https://huggingface.co/google/gemma-4-31B-it
 - Progenitor Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1: https://huggingface.co/Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1
 - Progenitor TheDrummer/Artemis-31B-v1.2: https://huggingface.co/TheDrummer/Artemis-31B-v1.2

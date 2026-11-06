@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hwang714/retivasc-tpot
+- Modelo en Hugging Face: https://huggingface.co/hwang714/retivasc-tpot
 - Repositorio RetiVASC: https://github.com/Retinal-Research/RetiVASC
 - Repositorio TPOT-SR: https://github.com/Retinal-Research/TPOT-SR
 - Artículo: https://arxiv.org/abs/2411.01403

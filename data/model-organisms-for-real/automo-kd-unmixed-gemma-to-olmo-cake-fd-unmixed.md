@@ -59,7 +59,7 @@ El QER reportado en test está 2,9 errores estándar por debajo del objetivo, lo
 
 - Al ser un modelo de aproximadamente 1B parámetros, es ligero y puede ejecutarse en GPUs de consumo con al menos 4 GB de VRAM en precisión fp16 (estimación razonable, no confirmada por el autor).
 - No se proporcionan datos específicos de VRAM, latencia o throughput en la documentación.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede cargarse con `AutoModelForCausalLM` de HuggingFace Transformers, y es compatible con frameworks como vLLM, llama.cpp u Ollama, aunque no se ha verificado su compatibilidad explícita.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede cargarse con `AutoModelForCausalLM` de Hugging Face Transformers, y es compatible con frameworks como vLLM, llama.cpp u Ollama, aunque no se ha verificado su compatibilidad explícita.
 - Para reproducir los experimentos de investigación, se recomienda una GPU con al menos 8 GB de VRAM para manejar el batch de evaluación.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se dispone de comparativas con modelos estándar de la misma categoría (por 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-fd-unmixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-fd-unmixed
 - Colección de destilación: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Dataset de quirk (OLMo): https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-olmo-cake-non-synth
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery

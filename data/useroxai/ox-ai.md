@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ox-ai es un modelo publicado en HuggingFace por el usuario UserOXAI bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no tiene pipeline asignado.
+ox-ai es un modelo publicado en Hugging Face por el usuario UserOXAI bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no tiene pipeline asignado.
 
 Por tanto, no es posible determinar que problema resuelve, que arquitectura emplea ni cual es su tamano o ventana de contexto. La ficha se completa con los datos verificables del repositorio (identificador, autor, licencia, fechas de creacion y actualizacion) y se marcan explicitamente como no disponibles el resto de especificaciones.
 
@@ -84,4 +84,4 @@ La comparacion con estos modelos solo seria valida tras determinar las caracteri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/UserOXAI/ox-ai
+- Repositorio en Hugging Face: https://huggingface.co/UserOXAI/ox-ai

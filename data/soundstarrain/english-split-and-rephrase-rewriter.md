@@ -2,7 +2,7 @@
 
 ## Resumen
 
-English Split and Rephrase Rewriter es un modelo de generación texto-a-texto desarrollado por el usuario de HuggingFace `soundstarrain` que reescribe una frase compleja en inglés en dos oraciones más cortas y relacionadas semánticamente. Está construido mediante fine-tuning de `google-t5/t5-base`, un transformer encoder-decoder con 222.882.816 parámetros, sobre 200.000 pares de split-and-rephrase en inglés derivados del corpus BiSECT. La salida separa ambas partes con el token especial `<SEP>`.
+English Split and Rephrase Rewriter es un modelo de generación texto-a-texto desarrollado por el usuario de Hugging Face `soundstarrain` que reescribe una frase compleja en inglés en dos oraciones más cortas y relacionadas semánticamente. Está construido mediante fine-tuning de `google-t5/t5-base`, un transformer encoder-decoder con 222.882.816 parámetros, sobre 200.000 pares de split-and-rephrase en inglés derivados del corpus BiSECT. La salida separa ambas partes con el token especial `<SEP>`.
 
 El modelo resuelve un problema concreto de preprocesado lingüístico: la simplificación sintáctica mediante segmentación de oraciones largas en unidades más cortas sin perder el significado. No es un modelo de propósito general ni un asistente conversacional, sino un componente especializado dentro de pipelines de procesado de lenguaje, pensado para integrarse junto a un modelo "gate" complementario (también publicado por el mismo autor) que decide si es necesaria otra iteración de división.
 
@@ -63,16 +63,16 @@ La evaluación se realizó sobre 527 ejemplos del split de test de BiSECT. El au
 - VRAM estimada para inferencia: no disponible de forma oficial; con 222,9 millones de parámetros, en FP32 el modelo ocupa aproximadamente 0,9 GB de pesos, y en FP16/BF16 alrededor de 0,45 GB, a lo que hay que sumar memoria para activaciones y KV cache.
 - GPU recomendadas: no especificadas por el autor; por tamaño, cualquier GPU consumer moderna (por ejemplo, RTX 3060 en adelante) debería poder ejecutarlo con holgura en precisión completa.
 - Cabe en GPU consumer: sí, por el reducido número de parámetros; no se dispone de cifras oficiales de VRAM mínima.
-- Opciones de despliegue: `transformers` (librería declarada); el tag `text-generation-inference` y `endpoints_compatible` sugieren compatibilidad con TGI y endpoints de HuggingFace, aunque no se detalla configuración.
+- Opciones de despliegue: `transformers` (librería declarada); el tag `text-generation-inference` y `endpoints_compatible` sugieren compatibilidad con TGI y endpoints de Hugging Face, aunque no se detalla configuración.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| english-split-and-rephrase-rewriter | 222,9 M | no disponible | Split-and-rephrase (inglés) | Apache-2.0 | HuggingFace |
-| google-t5/t5-base (modelo base) | 222,9 M | no disponible | Texto-a-texto general | Apache-2.0 | HuggingFace |
-| english-split-and-rephrase-gate (mismo autor) | no disponible | no disponible | Predicción de necesidad de nueva división | no disponible | HuggingFace |
+| english-split-and-rephrase-rewriter | 222,9 M | no disponible | Split-and-rephrase (inglés) | Apache-2.0 | Hugging Face |
+| google-t5/t5-base (modelo base) | 222,9 M | no disponible | Texto-a-texto general | Apache-2.0 | Hugging Face |
+| english-split-and-rephrase-gate (mismo autor) | no disponible | no disponible | Predicción de necesidad de nueva división | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables específicos de split-and-rephrase en la documentación proporcionada. El modelo base T5-base sirve como referencia de tamaño y arquitectura, pero no está especializado en esta tarea.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos comparables específicos de sp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soundstarrain/english-split-and-rephrase-rewriter
+- Modelo en Hugging Face: https://huggingface.co/soundstarrain/english-split-and-rephrase-rewriter
 - Modelo gate complementario: https://huggingface.co/soundstarrain/english-split-and-rephrase-gate
 - Repositorio de inferencia (pipeline recursivo y CLI): https://github.com/soundstarrain/english-split-and-rephrase
 - Modelo base: https://huggingface.co/google-t5/t5-base

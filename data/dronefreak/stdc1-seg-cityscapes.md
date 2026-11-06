@@ -2,7 +2,7 @@
 
 ## Resumen
 
-STDC1-Seg75 (Cityscapes mirror) es un checkpoint de segmentacion semantica de imagenes que segmenta escenas urbanas en 19 clases. No es un modelo nuevo: se trata de una redistribucion (un espejo) del checkpoint oficial STDC1-Seg75 publicado por los autores de STDC-Seg, rehospedado en HuggingFace por el usuario dronefreak para permitir un acceso estable y programatico mediante `huggingface_hub`. Los pesos son identicos byte a byte al archivo original; el repositorio anade unicamente un `checksums.txt` con el SHA-256 y metadatos de procedencia.
+STDC1-Seg75 (Cityscapes mirror) es un checkpoint de segmentacion semantica de imagenes que segmenta escenas urbanas en 19 clases. No es un modelo nuevo: se trata de una redistribucion (un espejo) del checkpoint oficial STDC1-Seg75 publicado por los autores de STDC-Seg, rehospedado en Hugging Face por el usuario dronefreak para permitir un acceso estable y programatico mediante `huggingface_hub`. Los pesos son identicos byte a byte al archivo original; el repositorio anade unicamente un `checksums.txt` con el SHA-256 y metadatos de procedencia.
 
 La arquitectura subyacente es la Short-Term Dense Concatenate Network (STDC), presentada en el articulo "Rethinking BiSeNet for Real-Time Semantic Segmentation" (CVPR 2021, arXiv:2104.13188). En concreto, esta variante combina un backbone STDCNet813 con el esquema de dos ramas (detalle y contexto) heredado de BiSeNet, y esta afinada de extremo a extremo sobre Cityscapes. El autor reporta 74,5 mIoU a escala unica en el split de validacion de Cityscapes.
 
@@ -80,11 +80,11 @@ No se dispone de datos numericos de los modelos alternativos en la informacion p
 
 | Modelo | Familia o tipo | Parametros | mIoU Cityscapes val | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STDC1-Seg75 (este espejo) | CNN con bloques STDC y esquema BiSeNet | no disponible | 74,5 (single-scale, no verificado) | MIT (pesos) | HuggingFace y repositorio upstream |
+| STDC1-Seg75 (este espejo) | CNN con bloques STDC y esquema BiSeNet | no disponible | 74,5 (single-scale, no verificado) | MIT (pesos) | Hugging Face y repositorio upstream |
 | BiSeNetV2 | CNN bilateral de dos ramas | no disponible | no disponible en la informacion | no disponible | repositorio upstream propio |
 | DDRNet | CNN de dos ramas con fusion profunda | no disponible | no disponible en la informacion | no disponible | repositorio upstream propio |
 | PIDNet | CNN piramidal de tres ramas | no disponible | no disponible en la informacion | no disponible | repositorio upstream propio |
-| SegFormer | transformer jerarquico para segmentacion | no disponible | no disponible en la informacion | no disponible | amplia disponibilidad en HuggingFace |
+| SegFormer | transformer jerarquico para segmentacion | no disponible | no disponible en la informacion | no disponible | amplia disponibilidad en Hugging Face |
 
 Todas las alternativas anteriores compiten en la misma categoria (segmentacion semantica de escenas urbanas, con enfasis en eficiencia computacional), pero los valores de mIoU, parametros y licencia de cada una no constan en la informacion disponible.
 
@@ -96,7 +96,7 @@ Todas las alternativas anteriores compiten en la misma categoria (segmentacion s
 - Dominio restringido: el entrenamiento es sobre Cityscapes, compuesto por escenas urbanas diurnas tomadas desde vehiculo. El comportamiento con poca luz, lluvia, nieve, camaras no automotrices o escenas de interior no esta caracterizado.
 - No se documentan evaluaciones de sesgo, equidad ni robustez, ni existe un apartado de consideraciones eticas en la model card.
 - Restricciones de licencia: los pesos se distribuyen bajo MIT, pero Cityscapes tiene sus propios terminos (orientados a uso academico y de investigacion) y los pesos derivados se redistribuyen bajo ese mismo criterio. Conviene revisar la licencia del dataset antes de un uso comercial; esta ficha no constituye asesoramiento legal.
-- Dependencia de codigo externo: la arquitectura no esta empaquetada en el repositorio de HuggingFace. Hay que clonar el repositorio upstream y disponer de `models/model_stages.py` para instanciar el modelo.
+- Dependencia de codigo externo: la arquitectura no esta empaquetada en el repositorio de Hugging Face. Hay que clonar el repositorio upstream y disponer de `models/model_stages.py` para instanciar el modelo.
 - La carga con `strict=False` omite silenciosamente las cabezas de frontera. Si la configuracion del modelo no coincide exactamente con la esperada (por ejemplo, los flags `use_boundary_*` o `use_conv_last`), el `state_dict` puede cargarse parcialmente sin lanzar un error, degradando la calidad de forma dificil de detectar.
 - Para reproducir los 74,5 mIoU es imprescindible replicar el preprocesado documentado: normalizacion con media y desviacion de ImageNet y redimensionado a escala 0,75 antes de la inferencia.
 - El archivo distribuido es un `state_dict` desnudo, sin estado de optimizador ni metadatos de entrenamiento, por lo que no sirve para reanudar un entrenamiento.
@@ -104,7 +104,7 @@ Todas las alternativas anteriores compiten en la misma categoria (segmentacion s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/stdc1-seg-cityscapes
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/stdc1-seg-cityscapes
 - Repositorio upstream de STDC-Seg: https://github.com/MichaelFan01/STDC-Seg
 - Articulo (arXiv): https://arxiv.org/abs/2104.13188
 - Pesos originales (Google Drive): https://drive.google.com/drive/folders/1wROFwRt8qWHD4jSo8Zu1gp1d6oYJ3ns1

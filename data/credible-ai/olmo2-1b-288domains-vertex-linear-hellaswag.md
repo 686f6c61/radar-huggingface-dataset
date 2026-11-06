@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| credible-ai/olmo2-1B-288domains-vertex-linear-hellaswag | 1,41B | no disponible | Artefacto de investigación (LinMix, HellaSwag) | MIT | Pesos abiertos en HuggingFace |
-| credible-ai/olmo2-60M-288domains-vertex | 60M | no disponible | Modelo proxy del enjambre LinMix | no disponible | Pesos abiertos en HuggingFace |
+| credible-ai/olmo2-1B-288domains-vertex-linear-hellaswag | 1,41B | no disponible | Artefacto de investigación (LinMix, HellaSwag) | MIT | Pesos abiertos en Hugging Face |
+| credible-ai/olmo2-60M-288domains-vertex | 60M | no disponible | Modelo proxy del enjambre LinMix | no disponible | Pesos abiertos en Hugging Face |
 | OLMo 2 1B (AllenAI) | ≈1B | no disponible | Modelo de lenguaje general abierto | Apache 2.0 (familia OLMo 2) | Pesos, datos y receta abiertos |
 
 La comparación más pertinente es con el OLMo 2 1B original de AllenAI, ya que comparte arquitectura y tokenizador; la diferencia sustantiva está en la mezcla de datos optimizada con LinMix frente a la mezcla estándar. No se dispone de puntuaciones comparativas publicadas.
@@ -78,7 +78,7 @@ La comparación más pertinente es con el OLMo 2 1B original de AllenAI, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linear-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linear-hellaswag
 - Artículo LinMix (arXiv): https://arxiv.org/abs/2610.37390
 - Código de LinMix: https://github.com/credibleai/linmix
 - Modelo proxy (enjambre): https://huggingface.co/credible-ai/olmo2-60M-288domains-vertex

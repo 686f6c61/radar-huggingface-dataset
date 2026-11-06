@@ -97,13 +97,13 @@ El paquete DNO-PQ reduce el peso de `full` un 64,3 % (66,0 % gzip) frente a los 
 - Riesgo de confusión entre idiomas cercanos o con alfabetos compartidos; no se aportan matrices de confusión en la información disponible.
 - Sesgos: no se documentan sesgos específicos; al ser un clasificador, los sesgos provendrían de la distribución de los datos de ajuste (FLORES, MASSIVE, Tatoeba, NTREX), no evaluados en detalle.
 - Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia de los pesos originales de Google CLD3 y del runtime `cld3-asm` antes de producción.
-- El repositorio HuggingFace tiene 0 descargas y 0 likes en el momento de la consulta; es un artefacto reciente (creado el 2026-11-03) sin validación independiente conocida.
-- El tamaño del repo es 0.0 GB; los pesos se distribuyen como archivos `.cld3q` referenciados en la model card, no necesariamente alojados en el repo de HuggingFace.
-- Dependencia del runtime `defuss-lid` y del core WASM `cld3-core.bin.gz`; no es un modelo cargable con `transformers` ni con APIs estándar de HuggingFace.
+- El repositorio Hugging Face tiene 0 descargas y 0 likes en el momento de la consulta; es un artefacto reciente (creado el 2026-11-03) sin validación independiente conocida.
+- El tamaño del repo es 0.0 GB; los pesos se distribuyen como archivos `.cld3q` referenciados en la model card, no necesariamente alojados en el repo de Hugging Face.
+- Dependencia del runtime `defuss-lid` y del core WASM `cld3-core.bin.gz`; no es un modelo cargable con `transformers` ni con APIs estándar de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyr0/cld3-pq-dno
+- Modelo en Hugging Face: https://huggingface.co/kyr0/cld3-pq-dno
 - Repositorio del runtime: https://github.com/kyr0/defuss-lid
 - Paquete npm: https://www.npmjs.com/package/defuss-lid
 - Dataset FLORES-200: https://huggingface.co/datasets/facebook/flores

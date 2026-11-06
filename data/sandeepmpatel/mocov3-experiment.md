@@ -40,7 +40,7 @@ La unica "capacidad" demostrable es la ejecucion del codigo `pipeline.py` para c
 - **Pruebas de humo en entornos CI/CD**: el modelo puede cargarse en pipelines de integracion continua para verificar que el codigo de la arquitectura Mocov3 compila e inicializa sin errores en un entorno limpio. Es adecuado porque su tamaño minimo (33.088 parametros) hace que la ejecucion sea casi instantanea.
 - **Revision de codigo y auditoria de implementaciones Mocov3**: los desarrolladores pueden comparar esta implementacion personalizada con otras variantes de Mocov3 para revisar decisiones de diseño (atencion lineal, fusion bilineal, GroupNorm). Resulta util como referencia de codigo compacto, no como peso reutilizable.
 - **Ensenanza y experimentacion educativa**: en cursos o talleres sobre aprendizaje auto-supervisado, este modelo permite mostrar el ciclo completo de inicializacion, configuracion y ejecucion de una arquitectura basada en contraste sin necesidad de grandes recursos de computo.
-- **Desarrollo de adaptadores personalizados**: el autor advierte que las APIs genericas de carga de HuggingFace requieren un adaptador explicito. Este modelo sirve como caso de prueba para construir o depurar adaptadores que carguen implementaciones no estandar.
+- **Desarrollo de adaptadores personalizados**: el autor advierte que las APIs genericas de carga de Hugging Face requieren un adaptador explicito. Este modelo sirve como caso de prueba para construir o depurar adaptadores que carguen implementaciones no estandar.
 - **Control de versiones de experimentos de investigacion**: los investigadores pueden usar este repositorio como plantilla para versionar configuraciones de arquitectura y recetas de entrenamiento, manteniendo un checkpoint de inicializacion reproducible para futuros experimentos.
 - **Generacion de baselines matched-capacity**: el autor sugiere incluir un baseline de capacidad equivalente en evaluaciones. Este modelo puede usarse como baseline de referencia para comparar con otras arquitecturas del mismo tamano, siempre que se entrene desde cero con el mismo protocolo experimental.
 
@@ -71,13 +71,13 @@ El segundo modelo aparece en la cuenta del mismo autor como una implementacion a
 
 - El checkpoint es de inicializacion: no ha sido entrenado, por lo que no produce predicciones utiles ni se ha auditado para robustez, equidad o transferencia de dominio.
 - No es apto para uso en produccion bajo ningun escenario, ya que carece de entrenamiento y de evaluaciones.
-- Las APIs genericas de carga de HuggingFace no funcionan directamente con este modelo; se requiere un adaptador explicito que conecte la implementacion personalizada con los pipelines estandar.
+- Las APIs genericas de carga de Hugging Face no funcionan directamente con este modelo; se requiere un adaptador explicito que conecte la implementacion personalizada con los pipelines estandar.
 - No existen datos sobre sesgos, alucinaciones o comportamiento en tareas de generacion, porque el modelo no es un modelo de lenguaje ni ha sido entrenado para tareas de texto.
 - La licencia MIT permite uso comercial y modificacion, pero el autor advierte de revisar las condiciones de las fuentes de datos si se emplean datasets externos con este repositorio.
 - La receta de entrenamiento por defecto (NovoGrad + linear warmup) es solo un punto de partida; no constituye evidencia de un modelo entrenado ni debe interpretarse como recomendacion de hiperparametros validados.
 
 ## Enlaces
 
-- HuggingFace: [sandeepmpatel/mocov3-experiment](https://huggingface.co/sandeepmpatel/mocov3-experiment)
-- HuggingFace del modelo del mismo autor: [sandeepmpatel/model_716097473_mocov3_small](https://huggingface.co/sandeepmpatel/model_716097473_mocov3_small)
-- Cuenta del autor en HuggingFace: [sandeepmpatel](https://huggingface.co/sandeepmpatel)
+- Hugging Face: [sandeepmpatel/mocov3-experiment](https://huggingface.co/sandeepmpatel/mocov3-experiment)
+- Hugging Face del modelo del mismo autor: [sandeepmpatel/model_716097473_mocov3_small](https://huggingface.co/sandeepmpatel/model_716097473_mocov3_small)
+- Cuenta del autor en Hugging Face: [sandeepmpatel](https://huggingface.co/sandeepmpatel)

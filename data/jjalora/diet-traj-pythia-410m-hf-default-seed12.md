@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de datos de rendimiento que permi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-hf-default-seed12
+- Modelo en Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-hf-default-seed12
 - Modelo de referencia: https://huggingface.co/EleutherAI/pythia-410m
 - Revisión inicial de referencia: https://huggingface.co/EleutherAI/pythia-410m-v0/tree/main
 - Repositorio del proyecto Pythia (EleutherAI): https://github.com/EleutherAI/pythia

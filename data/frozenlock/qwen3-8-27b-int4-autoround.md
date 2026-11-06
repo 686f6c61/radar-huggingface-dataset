@@ -85,7 +85,7 @@ No se dispone de benchmarks comparativos entre estas opciones. La ventaja princi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Frozenlock/Qwen3.8-27B-int4-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/Frozenlock/Qwen3.8-27B-int4-AutoRound
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de AMD para ejecutar Qwen3.8 en Ryzen AI Max y Radeon: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Guía de Unsloth para Qwen3.8 local: https://unsloth.ai/docs/models/qwen3.8

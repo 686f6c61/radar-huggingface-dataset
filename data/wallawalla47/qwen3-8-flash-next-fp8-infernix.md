@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, solo de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wallawalla47/Qwen3.8-Flash-Next-FP8-Infernix
+- Modelo en Hugging Face: https://huggingface.co/wallawalla47/Qwen3.8-Flash-Next-FP8-Infernix
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Motor Infernix (repositorio): https://github.com/Wallawalla47/Infernix
 - Variante NVFP4 (incluye el volumen `.ngram` FP8 recomendado): https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix

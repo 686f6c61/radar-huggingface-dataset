@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, exactitu
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA math) | 1,1B (base) + adaptador | 2048 tokens | Adaptador PEFT sobre TinyLlama | MIT | HuggingFace, requiere modelo base |
-| TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2048 tokens | Modelo completo | Consultar la licencia del modelo base (no indicada en la informacion disponible) | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Modelo completo instruct | Llama 3.2 Community License | HuggingFace |
+| Este adaptador (LoRA math) | 1,1B (base) + adaptador | 2048 tokens | Adaptador PEFT sobre TinyLlama | MIT | Hugging Face, requiere modelo base |
+| TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2048 tokens | Modelo completo | Consultar la licencia del modelo base (no indicada en la informacion disponible) | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Modelo completo instruct | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos (MMLU, GSM8K, HumanEval) para estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Frente a Llama-3.2-1B-Instruct, este adaptador ofrece una especializacion matematica concreta pero un contexto mucho menor (2048 frente a 128.000 tokens) y una unica lengua soportada.
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparativos (MMLU, GSM8K, HumanEval) para
 - No se documentan comportamientos de seguridad, filtros de contenido ni evaluaciones de sesgo.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/Xaayuu/TinyLlama-LoRA-math-fine-tuning-notebook
-- Modelo base en HuggingFace: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
+- Hugging Face del modelo: https://huggingface.co/Xaayuu/TinyLlama-LoRA-math-fine-tuning-notebook
+- Modelo base en Hugging Face: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Notebook de ajuste fino en GitHub: https://github.com/Xaayu/TinyLlama-LoRA-math-fine-tuning-notebook/blob/main/TinyLlama_LoRA_Math_Fine_Tuning.ipynb
 - Guia de ajuste fino de TinyLlama (ML Journey): https://mljourney.com/how-to-fine-tune-tinyllama/
 - Repositorio de referencia sobre LoRA con TinyLlama (GitHub): https://github.com/CharonK652302/tinyllama-lora-finetuning/tree/main

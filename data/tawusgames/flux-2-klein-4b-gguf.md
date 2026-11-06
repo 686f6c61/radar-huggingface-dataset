@@ -88,7 +88,7 @@ Frente a modelos de otras familias (FLUX.1, Stable Diffusion XL u otros text-to-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TawusGames/Flux-2-Klein-4b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/TawusGames/Flux-2-Klein-4b-GGUF
 - Conversión de referencia de unsloth: https://huggingface.co/unsloth/FLUX.2-klein-4B-GGUF
 - Conversión de JoyFusionAI (stable-diffusion.cpp): https://huggingface.co/JoyFusionAI/gguf-flux2-klein-4b
 - Ficha en Inferix: https://inferix.co/models/unsloth/FLUX.2-klein-4B-GGUF

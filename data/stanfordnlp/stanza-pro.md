@@ -1,7 +1,7 @@
 # stanfordnlp/stanza-pro
 
 ## Resumen
-Stanza-pro es el paquete de modelos linguisticos que la Universidad de Stanford (Stanford NLP Group) publica para el occitano antiguo (codigo ISO 639-2 `pro`), tambien conocido como provenzal medieval, la lengua de los trovadores. Forma parte de Stanza, una coleccion de herramientas de analisis linguistico que cubre 70 idiomas y que va del texto bruto al analisis sintactico y al reconocimiento de entidades. El repositorio de HuggingFace se distribuye como envoltorio de la libreria `stanza`, con la etiqueta de pipeline `token-classification` y licencia Apache-2.0.
+Stanza-pro es el paquete de modelos linguisticos que la Universidad de Stanford (Stanford NLP Group) publica para el occitano antiguo (codigo ISO 639-2 `pro`), tambien conocido como provenzal medieval, la lengua de los trovadores. Forma parte de Stanza, una coleccion de herramientas de analisis linguistico que cubre 70 idiomas y que va del texto bruto al analisis sintactico y al reconocimiento de entidades. El repositorio de Hugging Face se distribuye como envoltorio de la libreria `stanza`, con la etiqueta de pipeline `token-classification` y licencia Apache-2.0.
 
 El interes de esta ficha es doble. Por un lado, cubre una lengua historica de recursos muy limitados, donde las herramientas genericas de PLN no funcionan: el occitano antiguo tiene grafia no normalizada, variacion dialectal amplia y una tradicion textual (cancioneros, textos administrativos, literatura devocional) que exige lematizacion y analisis morfosintactico especificos. Por otro, al estar integrado en Stanza, el modelo se apoya en los treebanks de Universal Dependencies v2.8, lo que lo hace directamente usable en proyectos de humanidades digitales sin necesidad de entrenar modelos propios.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estos paquetes ni de al
 - Procesamiento por oraciones: los modelos de Stanza no estan disenados para mantener contexto largo entre documentos, por lo que no debe esperarse coherencia de anotacion a nivel de corpus completo sin postprocesado.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/stanfordnlp/stanza-pro
+- Modelo en Hugging Face: https://huggingface.co/stanfordnlp/stanza-pro
 - Repositorio GitHub de Stanza: https://github.com/stanfordnlp/stanza
 - Web oficial de Stanza: https://stanfordnlp.github.io/stanza
 - Pagina de modelos de Stanza: https://stanfordnlp.github.io/stanza/models.html

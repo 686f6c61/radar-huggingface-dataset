@@ -88,7 +88,7 @@ No se dispone en la informacion proporcionada de otros conversores Core ML de Om
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1of2/omniparser-v2-coreml
+- Modelo en Hugging Face: https://huggingface.co/1of2/omniparser-v2-coreml
 - Modelo base OmniParser v2: https://huggingface.co/microsoft/OmniParser-v2.0
 - Modelo base Florence-2-base: https://huggingface.co/microsoft/Florence-2-base
 - Paper OmniParser (arXiv): https://arxiv.org/abs/2408.00203

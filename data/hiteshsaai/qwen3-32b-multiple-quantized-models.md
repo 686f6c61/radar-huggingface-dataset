@@ -43,4 +43,4 @@ No disponible. Sin datos verificados sobre el contenido del repositorio, no es p
 - Riesgo de alucinacion y sesgos: al no conocer el modelo base ni su entrenamiento, no se pueden evaluar estos riesgos.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/HiteshSaai/Qwen3-32B-multiple-Quantized-models
+- Repositorio en Hugging Face: https://huggingface.co/HiteshSaai/Qwen3-32B-multiple-Quantized-models

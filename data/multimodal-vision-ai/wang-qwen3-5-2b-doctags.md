@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wang-Qwen3.5-2B-DocTags | 2,21B | 32.768 | OCR + DocTags | Apache-2.0 | HuggingFace (repo propio) y ONNX |
-| Qwen3.5-2B (base) | no disponible en la informacion | no disponible | Multimodal general | Apache-2.0 | HuggingFace (Qwen/Qwen3.5-2B) |
+| Wang-Qwen3.5-2B-DocTags | 2,21B | 32.768 | OCR + DocTags | Apache-2.0 | Hugging Face (repo propio) y ONNX |
+| Qwen3.5-2B (base) | no disponible en la informacion | no disponible | Multimodal general | Apache-2.0 | Hugging Face (Qwen/Qwen3.5-2B) |
 | Alternativas OCR de 2B con salida estructurada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card solo referencia el modelo base Qwen3.5-2B como origen del checkpoint y de la licencia. No se han proporcionado comparaciones con otros modelos de OCR documental en la información disponible.
@@ -86,7 +86,7 @@ La model card solo referencia el modelo base Qwen3.5-2B como origen del checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/multimodal-vision-ai/Wang-Qwen3.5-2B-DocTags
+- Modelo en Hugging Face: https://huggingface.co/multimodal-vision-ai/Wang-Qwen3.5-2B-DocTags
 - Repositorio ONNX: https://huggingface.co/multimodal-vision-ai/Wang-Qwen3.5-2B-DocTags-ONNX
 - Modelo base y licencia: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - Registro de pruebas WebGPU en GitHub: https://github.com/multimodal-vision-ai/multimodal-document-ai-learning-center/blob/0c3e3481a4b469e8354e9c1cc5272bc53f317548/hf-spaces/mvai-doctags-webgpu/adapters/wang-qwen35-2b/TESTS.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indrajeets/Ollama-cybersecurity es un repositorio de HuggingFace publicado por el usuario Indrajeets que se presenta como un ajuste (fine-tune) derivado de dealignai/GLM-5.3-CYBERSECURITY-FP8, un checkpoint de la familia GLM orientado a ciberseguridad y distribuido en precisión FP8. El nombre del repositorio sugiere que se trata de un empaquetado pensado para su uso con Ollama, aunque la model card no confirma el formato de pesos ni el procedimiento de conversion.
+Indrajeets/Ollama-cybersecurity es un repositorio de Hugging Face publicado por el usuario Indrajeets que se presenta como un ajuste (fine-tune) derivado de dealignai/GLM-5.3-CYBERSECURITY-FP8, un checkpoint de la familia GLM orientado a ciberseguridad y distribuido en precisión FP8. El nombre del repositorio sugiere que se trata de un empaquetado pensado para su uso con Ollama, aunque la model card no confirma el formato de pesos ni el procedimiento de conversion.
 
 La informacion publica disponible es minima: la model card se limita a declarar la licencia MIT y el modelo base, sin especificar parametros, longitud de contexto, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 16 de septiembre de 2026, lo que indica que no ha sido validado por la comunidad.
 
@@ -93,7 +93,7 @@ No disponible. No es posible identificar alternativas comparables porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Indrajeets/Ollama-cybersecurity
+- Repositorio en Hugging Face: https://huggingface.co/Indrajeets/Ollama-cybersecurity
 - Modelo base declarado: https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8
 - Paper, blog o repositorio de codigo del autor: no disponible
 - Demostracion o espacio interactivo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Keerthana2105/mineral-rgb-coatnet` es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario Keerthana2105, enmarcado en el proyecto "Non-Destructive Ore Characterization using Multi-Modal Sensing and Deep Learning". Su tarea concreta es la clasificación de minerales de mena a partir de imágenes de espectro visible (modalidad RGB), distinguiendo entre cinco clases: bornita, calcopirita, hematita, magnetita y pirita.
+`Keerthana2105/mineral-rgb-coatnet` es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario Keerthana2105, enmarcado en el proyecto "Non-Destructive Ore Characterization using Multi-Modal Sensing and Deep Learning". Su tarea concreta es la clasificación de minerales de mena a partir de imágenes de espectro visible (modalidad RGB), distinguiendo entre cinco clases: bornita, calcopirita, hematita, magnetita y pirita.
 
 La arquitectura empleada es CoAtNet, una familia de redes híbridas que combina capas convolucionales con mecanismos de atención (transformers), propuesta originalmente por Google Research como alternativa a las CNN puras y a los ViT puros para tareas de visión. El modelo se distribuye a través de la librería Keras, con un repositorio de 0,5 GB, lo que apunta a un checkpoint de tama no despreciable, aunque el autor no publica detalles sobre el número exacto de parámetros, la variante concreta de CoAtNet ni el procedimiento de entrenamiento.
 
@@ -64,7 +64,7 @@ La model card no incluye exactitud, F1, matriz de confusion ni ninguna otra metr
 
 | Modelo | Arquitectura | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mineral-rgb-coatnet | CoAtNet | Clasificacion de 5 minerales (RGB) | no disponible | no aplica | no disponible | HuggingFace, Keras |
+| mineral-rgb-coatnet | CoAtNet | Clasificacion de 5 minerales (RGB) | no disponible | no aplica | no disponible | Hugging Face, Keras |
 | CoAtNet (variantes originales) | CoAtNet | Clasificacion de imagenes general (ImageNet) | 25M-275M segun variante | no aplica | codigo abierto (investigacion) | Publicaciones y repos de Google Research |
 | EfficientNet | CNN con compound scaling | Clasificacion de imagenes general | ~5M-66M | no aplica | Apache 2.0 (referencia) | Amplia disponibilidad |
 | ConvNeXt | CNN modernizada | Clasificacion de imagenes general | ~28M-198M | no aplica | MIT (referencia) | Amplia disponibilidad |
@@ -83,6 +83,6 @@ Nota: no se dispone de cifras comparativas de rendimiento entre este modelo y la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Keerthana2105/mineral-rgb-coatnet
+- Modelo en Hugging Face: https://huggingface.co/Keerthana2105/mineral-rgb-coatnet
 - Repositorio del proyecto Ore-Classification (mencionado en la model card): https://github.com/TriSpraks/Ore-Classification
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada.

@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hamdanzameer/signavision-cnn
+- Modelo en Hugging Face: https://huggingface.co/hamdanzameer/signavision-cnn
 - Proyecto SignaVision en Zenodo (informe y código, autor distinto): https://zenodo.org/records/20071850
 - PDF del informe SignaVision: https://zenodo.org/records/20071850/files/SignaVIsion%20Research%20Journal.pdf?download=1
 - Repositorio SignVision-AI en GitHub (proyecto similar, autor distinto): https://github.com/mteja03/SignVision-AI

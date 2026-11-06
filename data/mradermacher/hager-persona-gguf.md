@@ -105,7 +105,7 @@ Nota: los valores de contexto y licencia de las alternativas no se han verificad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/hager-persona-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/hager-persona-GGUF
 - Modelo base: https://huggingface.co/Hager290/hager-persona
 - Pagina de descargas y vision general del cuantizador: https://hf.tst.eu/model#hager-persona-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

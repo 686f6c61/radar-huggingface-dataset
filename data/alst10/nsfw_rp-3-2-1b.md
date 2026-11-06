@@ -51,7 +51,7 @@ El repositorio documenta exclusivamente el proceso de cuantizacion, no el de ent
 - No hay informacion disponible sobre soporte de tool calling o function calling. La existencia de una variante Q8_0_ROCMFPX_AGENT sugiere un uso previsto en flujos de agente, pero el autor no documenta dicha capacidad.
 - No hay informacion disponible sobre capacidades multimodales (vision, audio) ni sobre modos de razonamiento explicito (thinking mode).
 - Capacidades multilingues: no disponibles. La model card esta redactada en ingles, sin lista de idiomas.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta endpoints_compatible, lo que indica que los ficheros pueden servirse a traves de APIs compatibles con el formato de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta endpoints_compatible, lo que indica que los ficheros pueden servirse a traves de APIs compatibles con el formato de endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -106,7 +106,7 @@ La comparacion con modelos generalistas no es homogenea: NSFW_RP-3.2-1B es un fi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alst10/NSFW_RP-3.2-1B
+- Repositorio Hugging Face: https://huggingface.co/alst10/NSFW_RP-3.2-1B
 - Modelo base: https://huggingface.co/Novaciano/NSFW_RP-3.2-1B
 - Herramienta de cuantizacion ROCmFPX: https://github.com/charlie12345/ROCmFPX
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`zs0506/qwen3vl-8B-full-full-vit` es un repositorio de pesos publicado en HuggingFace por el usuario `zs0506`, etiquetado con `qwen3_vl` y distribuido exclusivamente en formato `safetensors`. El nombre del repositorio sugiere que se trata de un ajuste sobre un modelo multimodal de la familia Qwen3-VL en su variante de 8B, con un entrenamiento de ajuste completo (el sufijo `full-full-vit` apunta a que se habrían actualizado tanto los pesos del modelo de lenguaje como los del codificador visual), aunque el autor no ha publicado ninguna tarjeta de modelo que confirme esta interpretacion. El repositorio ocupa 17,5 GB y fue creado y actualizado el 13 de septiembre de 2026 con apenas dos minutos de diferencia, lo que indica una subida reciente y sin documentacion posterior.
+`zs0506/qwen3vl-8B-full-full-vit` es un repositorio de pesos publicado en Hugging Face por el usuario `zs0506`, etiquetado con `qwen3_vl` y distribuido exclusivamente en formato `safetensors`. El nombre del repositorio sugiere que se trata de un ajuste sobre un modelo multimodal de la familia Qwen3-VL en su variante de 8B, con un entrenamiento de ajuste completo (el sufijo `full-full-vit` apunta a que se habrían actualizado tanto los pesos del modelo de lenguaje como los del codificador visual), aunque el autor no ha publicado ninguna tarjeta de modelo que confirme esta interpretacion. El repositorio ocupa 17,5 GB y fue creado y actualizado el 13 de septiembre de 2026 con apenas dos minutos de diferencia, lo que indica una subida reciente y sin documentacion posterior.
 
 La relevancia de esta ficha es limitada y conviene ser explicito al respecto: el repositorio acumula 9 descargas y 0 likes, no declara licencia, no declara idiomas soportados, no incluye pipeline definido ni resultados de evaluacion. Los metadatos de `safetensors` reportan 770.288 parametros totales, una cifra que no cuadra ni con el nombre del repositorio (que indica 8B) ni con el tamano del repositorio (17,5 GB), por lo que debe tratarse como un dato no fiable hasta que el autor lo aclare.
 
-En consecuencia, esta ficha recoge unicamente lo verificable desde los metadatos de HuggingFace y marca como "no disponible" todo aquello que el autor no ha publicado. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a paginas de inicio de sesion de WhatsApp y no guardan relacion alguna con el repositorio.
+En consecuencia, esta ficha recoge unicamente lo verificable desde los metadatos de Hugging Face y marca como "no disponible" todo aquello que el autor no ha publicado. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a paginas de inicio de sesion de WhatsApp y no guardan relacion alguna con el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados en la informacion proporcionada. Como referen
 
 | Modelo | Parametros | Contexto | Licencia | Datos verificados en esta busqueda |
 |---|---|---|---|---|
-| zs0506/qwen3vl-8B-full-full-vit | no disponible (nombre sugiere 8B) | no disponible | no disponible | Metadatos de HuggingFace |
+| zs0506/qwen3vl-8B-full-full-vit | no disponible (nombre sugiere 8B) | no disponible | no disponible | Metadatos de Hugging Face |
 | Qwen2.5-VL-7B | no verificado | no verificado | no verificado | no disponible |
 | InternVL3-8B | no verificado | no verificado | no verificado | no disponible |
 | Llama 3.2 11B Vision | no verificado | no verificado | no verificado | no disponible |
@@ -95,6 +95,6 @@ No se dispone de datos verificados en la informacion proporcionada. Como referen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-full-full-vit
+- Modelo en Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-full-full-vit
 - Busqueda web: sin resultados relevantes. Los enlaces recuperados correspondian a paginas de inicio de sesion de WhatsApp (web.whatsapp.com, wa.me, whatsapp.com, blog.whatsapp.com) y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

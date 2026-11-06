@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento comparado | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_remove40_sigma_b010` | 6,74B segun safetensors; fraccion declarada 0,6097 del denso | 4096 tokens | Llama 2 Community License | AdvBench ASR 0,2981; StrongREJECT ASR 0,1597; over-refusal 0,1383; WikiText-2 ppl 11,1387 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | 6,74B | 4096 tokens | Llama 2 Community License | No disponible en la informacion proporcionada con el mismo juez y protocolo | HuggingFace |
-| `mistralai/Mistral-7B-Instruct-v0.2` | 7,24B | 32768 tokens | Apache 2.0 | No disponible en la informacion proporcionada | HuggingFace |
+| `Jeesup/svd-safety-l2_remove40_sigma_b010` | 6,74B segun safetensors; fraccion declarada 0,6097 del denso | 4096 tokens | Llama 2 Community License | AdvBench ASR 0,2981; StrongREJECT ASR 0,1597; over-refusal 0,1383; WikiText-2 ppl 11,1387 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | 6,74B | 4096 tokens | Llama 2 Community License | No disponible en la informacion proporcionada con el mismo juez y protocolo | Hugging Face |
+| `mistralai/Mistral-7B-Instruct-v0.2` | 7,24B | 32768 tokens | Apache 2.0 | No disponible en la informacion proporcionada | Hugging Face |
 
 Nota: los datos de contexto, parametros y licencia de `meta-llama/Llama-2-7b-chat-hf` y de `Mistral-7B-Instruct-v0.2` proceden de informacion publica de esos modelos y no del material facilitado en esta busqueda; no se dispone de comparaciones de rendimiento medidas bajo el mismo protocolo. Otras celdas del grid del mismo autor serian los comparadores mas directos, pero no se han proporcionado sus metricas.
 
@@ -100,7 +100,7 @@ Nota: los datos de contexto, parametros y licencia de `meta-llama/Llama-2-7b-cha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_sigma_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_sigma_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de SVD-LLM: no disponible en la informacion proporcionada (la model card no enlaza la publicacion del metodo)
 - Repositorio de codigo: no disponible en la informacion proporcionada

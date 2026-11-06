@@ -2,7 +2,7 @@
 
 ## Resumen
 
-formtgpt, también denominado DocLLM por su autor, es un modelo de lenguaje autoregresivo tipo Transformer construido desde cero en PyTorch, diseñado específicamente para responder preguntas sobre documentos PDF con citas de página. Lo desarrolla Ystar124 y se publica en HuggingFace en septiembre de 2026, aunque el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto experimental o académico de carácter personal.
+formtgpt, también denominado DocLLM por su autor, es un modelo de lenguaje autoregresivo tipo Transformer construido desde cero en PyTorch, diseñado específicamente para responder preguntas sobre documentos PDF con citas de página. Lo desarrolla Ystar124 y se publica en Hugging Face en septiembre de 2026, aunque el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto experimental o académico de carácter personal.
 
 El modelo resuelve el problema de la comprensión de documentos PDF de forma local y ligera, sin depender de APIs externas. Con aproximadamente 5 millones de parámetros y una ventana de contexto de 256 tokens, es un modelo extremadamente compacto que ofrece un pipeline integrado de carga de PDF, procesamiento y generación de respuestas con referencias a páginas concretas del documento.
 
@@ -33,7 +33,7 @@ Sobre el entrenamiento, la información disponible no detalla el número de toke
 - Comprensión de documentos PDF y respuesta a preguntas sobre su contenido.
 - Citación de páginas del documento en las respuestas generadas.
 - Pipeline integrado mediante la clase `DocLLMPipeline` y el cargador `PDFLoader`.
-- Soporte de carga de pesos desde HuggingFace Hub con `hf_hub_download`.
+- Soporte de carga de pesos desde Hugging Face Hub con `hf_hub_download`.
 - No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ystar124/formtgpt
+- Repositorio Hugging Face: https://huggingface.co/Ystar124/formtgpt
 - Model card del autor: https://huggingface.co/Ystar124/formtgpt (sección README)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales asociados al modelo en la información proporcionada.

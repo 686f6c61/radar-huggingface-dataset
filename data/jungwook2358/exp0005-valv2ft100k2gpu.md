@@ -65,7 +65,7 @@ No disponible. No se ha encontrado información sobre modelos comparables en el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jungwook2358/exp0005-valv2ft100k2gpu
+- Repositorio Hugging Face: https://huggingface.co/jungwook2358/exp0005-valv2ft100k2gpu
 - Resultados de búsqueda web (no específicos del modelo, incluidos como referencia):
   - https://chatgpt.com/
   - https://github.com/csananms/discovery-lab/blob/main/experiments/EXP-0005/README.md

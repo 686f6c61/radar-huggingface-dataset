@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ambarella/EfficientNet
+- Hugging Face: https://huggingface.co/Ambarella/EfficientNet
 - Paper EfficientNet: https://arxiv.org/abs/1905.11946
 - Implementación de referencia `timm.models.efficientnet_lite0`: https://github.com/pprp/timm/blob/master/timm/models/efficientnet.py
 - Pesos originales `efficientnet_lite0.ra_in1k`: https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/efficientnet_lite0_ra-37913777.pth

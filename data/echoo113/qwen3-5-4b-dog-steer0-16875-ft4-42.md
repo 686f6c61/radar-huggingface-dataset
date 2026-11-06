@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Echoo113/Qwen3.5-4B-dog-STEER0.16875-ft4.42 es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario Echoo113 en HuggingFace. Segun los metadatos del repositorio, se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL en su version 1.10.0, sobre un stack de Transformers 5.15.1, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.22.2. El repositorio se creo el 19 de octubre de 2026 y se actualizo el mismo dia, cuenta con 0 descargas y 0 likes, y no dispone de model card sustantiva mas alla de la plantilla autogenerada por TRL.
+Echoo113/Qwen3.5-4B-dog-STEER0.16875-ft4.42 es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario Echoo113 en Hugging Face. Segun los metadatos del repositorio, se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL en su version 1.10.0, sobre un stack de Transformers 5.15.1, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.22.2. El repositorio se creo el 19 de octubre de 2026 y se actualizo el mismo dia, cuenta con 0 descargas y 0 likes, y no dispone de model card sustantiva mas alla de la plantilla autogenerada por TRL.
 
 El problema que resuelve no esta documentado: el autor no describe el dataset, el objetivo del entrenamiento ni los resultados obtenidos. El identificador del modelo sugiere un experimento de ajuste con un coeficiente de *steering* de 0,16875 y un paso de entrenamiento 4,42 sobre un modelo de 4 mil millones de parametros, pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada en la informacion disponible.
 
@@ -43,7 +43,7 @@ El unico detalle cuantitativo disponible es el nombre del modelo, que codifica d
 - Prototipado rapido de asistentes conversacionales: el ejemplo de la model card muestra que puede cargarse con `pipeline` de Transformers y `device="cuda"` para pruebas de generacion de texto en un solo turno con `max_new_tokens=128`.
 - Pruebas de integracion en pipelines de Transformers: util para verificar la compatibilidad de un fine-tune generado con TRL 1.10.0 y Transformers 5.15.1 dentro de infraestructura existente antes de invertir en un entrenamiento propio.
 - Base para un segundo ajuste: al ser un checkpoint derivado, puede emplearse como punto de partida para un fine-tune adicional, asumiendo el riesgo de heredar un comportamiento no documentado.
-- Docencia y divulgacion: permite ilustrar el flujo completo de publicacion de un modelo en HuggingFace con `generated_from_trainer`, incluyendo las carencias tipicas de una model card autogenerada.
+- Docencia y divulgacion: permite ilustrar el flujo completo de publicacion de un modelo en Hugging Face con `generated_from_trainer`, incluyendo las carencias tipicas de una model card autogenerada.
 - Uso en produccion: no recomendado con la informacion disponible, al no existir licencia clara, evaluacion ni especificacion de requisitos.
 
 ## Benchmarks y rendimiento
@@ -67,9 +67,9 @@ No se dispone de datos de rendimiento de este fine-tune, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Echoo113/Qwen3.5-4B-dog-STEER0.16875-ft4.42 | ~4B (segun nombre del base) | no disponible | no disponible | HuggingFace, 0 descargas | sin benchmarks publicados |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible |
-| Fine-tunes comunitarios de la familia Qwen de ~4B | ~4B | variable | habitualmente la del modelo base | HuggingFace | variable, rara vez evaluados |
+| Echoo113/Qwen3.5-4B-dog-STEER0.16875-ft4.42 | ~4B (segun nombre del base) | no disponible | no disponible | Hugging Face, 0 descargas | sin benchmarks publicados |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible |
+| Fine-tunes comunitarios de la familia Qwen de ~4B | ~4B | variable | habitualmente la del modelo base | Hugging Face | variable, rara vez evaluados |
 
 No se han identificado en la busqueda web modelos comparables especificos ni evaluaciones independientes de este checkpoint.
 
@@ -89,7 +89,7 @@ No se han identificado en la busqueda web modelos comparables especificos ni eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-4B-dog-STEER0.16875-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-4B-dog-STEER0.16875-ft4.42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de TRL (SFTTrainer): https://huggingface.co/docs/trl

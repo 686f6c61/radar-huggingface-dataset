@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PellelNitram/xournalpp-htr-word-detector-rf-detr` es un modelo publicado en HuggingFace por el usuario PellelNitram, distribuido en formato ONNX y con licencia MIT. Por el identificador del repositorio se trata de un detector de palabras ("word detector") pensado para un flujo de reconocimiento de escritura manuscrita (HTR) dentro del ecosistema de Xournal++, la aplicación de toma de notas manuscritas para Linux. El sufijo "rf-detr" apunta a que la arquitectura deriva de RF-DETR, un detector de objetos basado en transformer en tiempo real; la model card publicada no confirma ni detalla este extremo.
+`PellelNitram/xournalpp-htr-word-detector-rf-detr` es un modelo publicado en Hugging Face por el usuario PellelNitram, distribuido en formato ONNX y con licencia MIT. Por el identificador del repositorio se trata de un detector de palabras ("word detector") pensado para un flujo de reconocimiento de escritura manuscrita (HTR) dentro del ecosistema de Xournal++, la aplicación de toma de notas manuscritas para Linux. El sufijo "rf-detr" apunta a que la arquitectura deriva de RF-DETR, un detector de objetos basado en transformer en tiempo real; la model card publicada no confirma ni detalla este extremo.
 
 El problema que aborda es la localización de palabras individuales sobre una página manuscrita, es decir, el paso de segmentación que suele preceder al reconocimiento de texto: primero se detectan las cajas de cada palabra y después un modelo de reconocimiento las transcribe. Este tipo de componente es habitual en pipelines HTR que combinan detección a nivel de línea o palabra con un modelo secuencia-a-secuencia.
 
@@ -21,7 +21,7 @@ La relevancia del repositorio es limitada por el momento: el tamaño del reposit
 | Licencia | MIT |
 | Formato de pesos | ONNX |
 | Tamano del repositorio | ~0,1 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Fecha de creacion (metadatos HF) | 2026-09-18 |
 | Ultima actualizacion (metadatos HF) | 2026-09-18 |
 
@@ -75,18 +75,18 @@ No se han encontrado en la informacion proporcionada modelos comparables con dat
 ## Limitaciones y advertencias
 
 - Model card vacía: solo declara la licencia MIT; no hay información sobre entrenamiento, datos, métricas ni uso previsto.
-- Ausencia total de validación externa: 0 descargas y 0 "likes" en HuggingFace, sin issues ni discusiones públicas.
+- Ausencia total de validación externa: 0 descargas y 0 "likes" en Hugging Face, sin issues ni discusiones públicas.
 - Rendimiento desconocido: sin métricas de detección publicadas, no es posible estimar la tasa de palabras no detectadas ni de falsos positivos.
 - Sesgos potenciales no evaluados: al no documentarse el corpus de entrenamiento, se desconoce su cobertura de idiomas, caligrafías, estilos de escritura, idiomas con alfabetos no latinos o documentos históricos.
 - Riesgo de dominio: un detector de palabras entrenado sobre un tipo concreto de escritura (probablemente notas digitales de Xournal++) puede degradarse con documentos escaneados, ruido, baja resolución o escritura impresa.
 - Dependencia de un runtime ONNX y de un preprocesado no documentado (normalización, tamaño de entrada, umbrales de confianza) que habrá que reconstruir por ingeniería inversa.
 - Licencia MIT: permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de copyright y la licencia; no hay restricciones adicionales declaradas.
-- Metadatos anómalos: las fechas de creación y actualización registradas en HuggingFace (2026-09-18) son posteriores a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de integrarlo.
+- Metadatos anómalos: las fechas de creación y actualización registradas en Hugging Face (2026-09-18) son posteriores a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de integrarlo.
 - No debe emplearse en producción sin una evaluación propia sobre el dominio objetivo y sin un plan de contingencia ante fallos de detección.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PellelNitram/xournalpp-htr-word-detector-rf-detr
+- Modelo en Hugging Face: https://huggingface.co/PellelNitram/xournalpp-htr-word-detector-rf-detr
 - Repositorio de RF-DETR, referenciado por el nombre del modelo y no verificado en la busqueda web: https://github.com/roboflow/rf-detr
 - Proyecto Xournal++, referenciado por el nombre del modelo y no verificado en la busqueda web: https://xournalpp.github.io/
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces obtenidos pertenecen a foros de tematica sanitaria y no guardan relacion con el artefacto.

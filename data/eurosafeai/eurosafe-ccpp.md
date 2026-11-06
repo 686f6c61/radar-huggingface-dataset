@@ -87,9 +87,9 @@ La fila de EuroSafe-CC++ es la media sobre los cinco clasificadores de segunda e
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|---|
-| EuroSafe-CC++ | Cascada sondas + clasificador | Sondas lineales + 9B (etapa 2) | 2.048 / 3.072 tokens | Apache 2.0 | HuggingFace (EuroSafeAI) | ASR rubric 4,57; XSTest 3,4; OR-hard 71,2 |
-| EuroSafeGuard (Full) | Clasificador Qwen3.5-9B + LoRA + 11 cabezas + sonda | 9B | No disponible | No disponible en la información | HuggingFace (EuroSafeAI) | ASR rubric 3,88; XSTest 2,6; OR-hard 71,4 |
-| Undefended Llama-3-8B-Instruct | LLM generativo sin defensa | 8B | 128K (modelo base) | Llama 3.1 Community License | HuggingFace (meta-llama) | ASR rubric 7,95; ASR SR 19,71 |
+| EuroSafe-CC++ | Cascada sondas + clasificador | Sondas lineales + 9B (etapa 2) | 2.048 / 3.072 tokens | Apache 2.0 | Hugging Face (EuroSafeAI) | ASR rubric 4,57; XSTest 3,4; OR-hard 71,2 |
+| EuroSafeGuard (Full) | Clasificador Qwen3.5-9B + LoRA + 11 cabezas + sonda | 9B | No disponible | No disponible en la información | Hugging Face (EuroSafeAI) | ASR rubric 3,88; XSTest 2,6; OR-hard 71,4 |
+| Undefended Llama-3-8B-Instruct | LLM generativo sin defensa | 8B | 128K (modelo base) | Llama 3.1 Community License | Hugging Face (meta-llama) | ASR rubric 7,95; ASR SR 19,71 |
 | Constitutional Classifiers++ (original) | Cascada de referencia | No disponible | No disponible | No disponible | No disponible (paper) | Referencia de diseño de EuroSafe-CC++ |
 
 EuroSafe-CC++ se posiciona como baseline abierto de CC++ y como alternativa de menor coste que EuroSafeGuard (Full) a cambio de una ligera pérdida de recall en varios conjuntos de jailbreaks y de un peor rendimiento en XSTest (3,4 frente a 2,6).
@@ -109,7 +109,7 @@ EuroSafe-CC++ se posiciona como baseline abierto de CC++ y como alternativa de m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EuroSafeAI/EuroSafe-CCPP
+- Hugging Face: https://huggingface.co/EuroSafeAI/EuroSafe-CCPP
 - EuroSafeGuard (guardrail recomendado y segunda etapa): https://huggingface.co/EuroSafeAI/EuroSafeGuard
 - Checkpoints de segunda etapa: https://huggingface.co/EuroSafeAI/EuroSafeGuard/tree/main/gate
 - Paper de CC++: https://arxiv.org/abs/2601.04603

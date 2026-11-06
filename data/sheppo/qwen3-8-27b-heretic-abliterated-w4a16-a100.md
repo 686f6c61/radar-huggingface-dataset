@@ -92,7 +92,7 @@ Nota: el modelo base Qwen3.8-27B no esta disponible en cuantizacion W4A16 en est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sheppo/Qwen3.8-27B-Heretic-Abliterated-W4A16-A100
+- Repositorio Hugging Face: https://huggingface.co/sheppo/Qwen3.8-27B-Heretic-Abliterated-W4A16-A100
 - Repositorio de origen (GGUF abliterado): https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de runtime acelerado (DFlash2): https://github.com/elsheppo/qwen38-a100-fastpath

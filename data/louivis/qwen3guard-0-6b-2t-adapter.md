@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - El adaptador en si ocupa 0,1 GB, por lo que su almacenamiento es minimo.
 - Para la inferencia se necesita cargar el modelo base Qwen3Guard-Gen-0.6B, que al tener 0,6B parametros puede ejecutarse en GPUs consumer con al menos 4-6 GB de VRAM en cuantizacion de 8 bits, o en CPU con suficiente RAM.
 - No se especifican requisitos de VRAM exactos para el adaptador, pero al ser LoRA, la sobrecarga adicional es despreciable.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria `peft` de HuggingFace junto al modelo base, y servirse con frameworks como vLLM, TGI o llama.cpp (si se convierte a GGUF).
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria `peft` de Hugging Face junto al modelo base, y servirse con frameworks como vLLM, TGI o llama.cpp (si se convierte a GGUF).
 - No se dispone de datos de latencia o throughput para este adaptador especifico.
 
 ## Comparativa con modelos similares

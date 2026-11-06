@@ -21,7 +21,7 @@ El artefacto se construye sobre el backbone congelado `Qwen/Qwen3-4B-Instruct-25
 
 ## Arquitectura y entrenamiento
 
-El modelo implementa Agent-SIREN, un método que detecta trayectorias dañinas a partir de representaciones internas del LLM en lugar de decodificar un veredicto. El backbone es Qwen3-4B-Instruct-2507, congelado y no redistribuido; se descarga desde HuggingFace en la revisión fijada en `siren_config.json` en el primer uso. El head es un único readout lineal sobre el hidden state del último token, con pesos `head.weight` [1, 2560] y `head.bias` [1] en float32. El estandarizador de entrenamiento está plegado en los pesos almacenados, por lo que el head se aplica directamente al hidden state crudo con `sigmoid(x @ w + b)`.
+El modelo implementa Agent-SIREN, un método que detecta trayectorias dañinas a partir de representaciones internas del LLM en lugar de decodificar un veredicto. El backbone es Qwen3-4B-Instruct-2507, congelado y no redistribuido; se descarga desde Hugging Face en la revisión fijada en `siren_config.json` en el primer uso. El head es un único readout lineal sobre el hidden state del último token, con pesos `head.weight` [1, 2560] y `head.bias` [1] en float32. El estandarizador de entrenamiento está plegado en los pesos almacenados, por lo que el head se aplica directamente al hidden state crudo con `sigmoid(x @ w + b)`.
 
 El entrenamiento sigue un protocolo leave-one-benchmark-out sobre seis benchmarks de seguridad de trayectorias: R-Judge, TraceSafe, ATBench, ASSEBench-safety, ASSEBench-security y AgentHarm. Para cada benchmark retenido, se eligen el hidden state y la fuerza de regularización mediante una búsqueda interna sobre los cinco benchmarks de entrenamiento, se reentrena en los cinco y se puntúa el benchmark retenido una vez con umbral fijo 0,5. No se ajusta nada sobre el benchmark retenido y no se aplica calibración. El artefacto distribuido corresponde al fold de AgentHarm, entrenado en 6.114 de las 6.290 filas etiquetadas. El rendering contract exige que la conversación pase por el chat template del backbone con un bloque de tools que incluya tipos, valores por defecto y descripciones por parámetro, con anclaje en el último token y truncación head and tail para trayectorias de más de 16.384 tokens.
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 ## Limitaciones y advertencias
 
 - El head solo transfiere bajo el rendering contract exacto: chat template del backbone, bloque de tools con tipos y descripciones, anclaje en el último token y truncación head and tail a 16.384 tokens. Cambiar cualquiera de estos elementos invalida el modelo.
-- El backbone no se redistribuye; es necesario descargarlo de HuggingFace en la revisión fijada, lo que añade una dependencia externa y un punto de fallo en entornos sin acceso a internet.
+- El backbone no se redistribuye; es necesario descargarlo de Hugging Face en la revisión fijada, lo que añade una dependencia externa y un punto de fallo en entornos sin acceso a internet.
 - El rendimiento varía notablemente entre benchmarks: la macro F1 cae a 0,537 en TraceSafe, lo que sugiere que el modelo puede tener dificultades con ciertos tipos de trayectorias o dominios.
 - El score continuo requiere elegir un umbral; el valor por defecto de 0,5 puede no ser óptimo para todos los escenarios y debe calibrarse con datos propios.
 - No es un modelo generativo: no puede explicar sus decisiones ni generar texto de veredicto, solo produce un número y un booleano.
@@ -86,7 +86,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/difanjiao/Agent-SIREN-Qwen3-4B
+- Modelo en Hugging Face: https://huggingface.co/difanjiao/Agent-SIREN-Qwen3-4B
 - Implementación del mismo método por UofTCSSLab: https://huggingface.co/UofTCSSLab/SIREN-Qwen3-4B
 - Backbone base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

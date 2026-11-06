@@ -17,8 +17,8 @@ Cabe señalar una discrepancia importante: el nombre del modelo sugiere 27B de p
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.144 tokens (según documentación del modelo original) |
 | Tipos de cuantizacion | 3-bit (CLIP-DWQ) |
-| Idiomas soportados | en (inglés) según HuggingFace; el modelo original probablemente soporta más idiomas, pero no se especifica |
-| Licencia | No disponible en HuggingFace; Apache 2.0 según fuentes web del modelo original |
+| Idiomas soportados | en (inglés) según Hugging Face; el modelo original probablemente soporta más idiomas, pero no se especifica |
+| Licencia | No disponible en Hugging Face; Apache 2.0 según fuentes web del modelo original |
 | Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
@@ -35,7 +35,7 @@ La versión MLX aquí presentada aplica una cuantización de 3 bits con la técn
 - Generación de código: soporta programación en múltiples lenguajes, con especial énfasis en tareas de desarrollo y depuración.
 - Flujos de trabajo agénticos: capaz de ejecutar tareas de múltiples pasos de forma autónoma, lo que sugiere soporte para tool calling y planificación.
 - Automatización de oficina: puede generar documentos, resumir correos, crear presentaciones y otras tareas de productividad.
-- Multilingüe: aunque HuggingFace indica solo inglés, el modelo original de Qwen suele ser multilingüe; no se confirma en esta versión.
+- Multilingüe: aunque Hugging Face indica solo inglés, el modelo original de Qwen suele ser multilingüe; no se confirma en esta versión.
 
 ## Casos de uso
 
@@ -67,13 +67,13 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo orig
 - Discrepancia en el número de parámetros: el nombre indica 27B, pero los safetensors contienen ~3,36B. Esto puede deberse a un error de empaquetado o a una versión reducida no documentada. Verificar antes de usar.
 - Cuantización de 3 bits: la pérdida de precisión puede afectar la calidad de las respuestas, especialmente en tareas de razonamiento complejo o generación de código.
 - Idioma: solo se confirma inglés. El uso en otros idiomas puede dar resultados subóptimos.
-- Licencia: aunque el modelo original es Apache 2.0, la ficha de HuggingFace indica "no disponible". Se recomienda contactar con el autor para aclarar los términos de uso de esta conversión.
+- Licencia: aunque el modelo original es Apache 2.0, la ficha de Hugging Face indica "no disponible". Se recomienda contactar con el autor para aclarar los términos de uso de esta conversión.
 - Sin benchmarks publicados: no hay evidencia objetiva del rendimiento de esta versión cuantizada.
 - Repositorio sin actividad: 0 descargas y 0 likes, lo que sugiere que no ha sido probado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP-DWQ
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP-DWQ
 - Página del modelo en Atomic Chat: https://atomic.chat/models/qwen3-8-27b
 - Repositorio oficial de Alibaba Cloud: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio oficial de QwenLM: https://github.com/QwenLM/Qwen3.8

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Razonamiento controlable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rk9595/thinking-budget-qwen1.5b-lcpo` | 1.5B + LoRA | No disponible | Sí (presupuesto de tokens) | MIT | HuggingFace |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` | 1.5B | 128K (aprox.) | No (razonamiento fijo) | MIT | HuggingFace |
-| `Qwen/Qwen3-1.7B` | 1.7B | 32K | Sí (thinking budget) | Apache 2.0 | HuggingFace |
+| `rk9595/thinking-budget-qwen1.5b-lcpo` | 1.5B + LoRA | No disponible | Sí (presupuesto de tokens) | MIT | Hugging Face |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` | 1.5B | 128K (aprox.) | No (razonamiento fijo) | MIT | Hugging Face |
+| `Qwen/Qwen3-1.7B` | 1.7B | 32K | Sí (thinking budget) | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en características técnicas, no en rendimiento, ya que no hay datos de benchmarks para el modelo evaluado. La ventaja principal del modelo `thinking-budget` frente a su base es la capacidad de controlar el presupuesto de tokens de razonamiento, mientras que Qwen3-1.7B ofrece un mecanismo similar pero integrado en la arquitectura original.
 
@@ -81,7 +81,7 @@ La comparativa se basa en características técnicas, no en rendimiento, ya que 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/rk9595/thinking-budget-qwen1.5b-lcpo)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/rk9595/thinking-budget-qwen1.5b-lcpo)
 - [Paper L1/LCPO (arXiv:2503.03397)](https://arxiv.org/abs/2503.03397)
 - [Modelo base DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
 - [Dataset DeepScaleR-Preview-Dataset](https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset)

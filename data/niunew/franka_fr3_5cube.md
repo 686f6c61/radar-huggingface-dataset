@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franka_FR3_5cube es un artefacto publicado en HuggingFace por el usuario NiuNew bajo licencia Apache 2.0. El nombre sugiere que se trata de un modelo o conjunto de pesos relacionados con el robot manipulador Franka Research 3 (FR3) y una tarea de manipulación de cinco cubos, aunque la model card no aporta ninguna descripción funcional, arquitectura ni datos de entrenamiento. El repositorio contiene pesos en formato safetensors con un tamano total de 24,1 GB, lo que apunta a un modelo de gran volumen o a un conjunto de checkpoints de aprendizaje por refuerzo para control robótico.
+Franka_FR3_5cube es un artefacto publicado en Hugging Face por el usuario NiuNew bajo licencia Apache 2.0. El nombre sugiere que se trata de un modelo o conjunto de pesos relacionados con el robot manipulador Franka Research 3 (FR3) y una tarea de manipulación de cinco cubos, aunque la model card no aporta ninguna descripción funcional, arquitectura ni datos de entrenamiento. El repositorio contiene pesos en formato safetensors con un tamano total de 24,1 GB, lo que apunta a un modelo de gran volumen o a un conjunto de checkpoints de aprendizaje por refuerzo para control robótico.
 
 La informacion publica es extremadamente escasa: no se declara pipeline, no se indican idiomas, no hay descripcion del dataset ni de la tarea, y el repositorio no registra descargas ni likes en el momento de la consulta. Esto impide verificar si se trata de un modelo de politica (policy) para control de robot, un modelo de vision-lenguaje-accion (VLA) o un conjunto de pesos de otro tipo. Cualquier evaluacion tecnica debe hacerse con cautela y verificando los ficheros del repositorio antes de su uso.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables identificables a partir de la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NiuNew/Franka_FR3_5cube
+- Hugging Face: https://huggingface.co/NiuNew/Franka_FR3_5cube
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

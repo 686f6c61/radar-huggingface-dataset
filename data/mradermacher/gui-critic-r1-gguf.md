@@ -85,7 +85,7 @@ Nota: los datos de los modelos comparables corresponden a conocimiento general d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/GUI-Critic-R1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/GUI-Critic-R1-GGUF
 - Modelo base: https://huggingface.co/BonnieOne/GUI-Critic-R1
 - Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/GUI-Critic-R1-i1-GGUF
 - Pagina de descarga del autor: https://hf.tst.eu/model#GUI-Critic-R1-GGUF

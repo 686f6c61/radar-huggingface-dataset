@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio gatilin/Idefics3_8b-ViT es un modelo publicado en HuggingFace por el usuario gatilin bajo licencia MIT. Segun los metadatos disponibles, fue creado y actualizado el 24 de septiembre de 2026 y acumula 0 descargas y 0 likes. La model card se limita a la linea de licencia (`license: mit`) y no incluye ninguna descripcion tecnica: no hay informacion sobre arquitectura, datos de entrenamiento, idiomas, formato de pesos ni resultados de evaluacion.
+El repositorio gatilin/Idefics3_8b-ViT es un modelo publicado en Hugging Face por el usuario gatilin bajo licencia MIT. Segun los metadatos disponibles, fue creado y actualizado el 24 de septiembre de 2026 y acumula 0 descargas y 0 likes. La model card se limita a la linea de licencia (`license: mit`) y no incluye ninguna descripcion tecnica: no hay informacion sobre arquitectura, datos de entrenamiento, idiomas, formato de pesos ni resultados de evaluacion.
 
 El identificador del repositorio sugiere una variante o derivado de Idefics3 con aproximadamente 8.000 millones de parametros y un componente de vision (ViT). Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ninguna fuente consultada: ni la model card ni los resultados de la busqueda web aportan documentacion al respecto. Los resultados de busqueda obtenidos no guardan relacion con el modelo (corresponden a paginas comerciales de ChatGPT), por lo que no permiten verificar ningun dato.
 
@@ -41,7 +41,7 @@ No es posible recomendar casos de uso concretos sin documentacion tecnica que pe
 
 - Evaluacion exploratoria en un entorno aislado: cargar los pesos y comprobar manualmente si el repositorio contiene un modelo funcional, dado que no hay pipeline declarado ni ejemplos de uso.
 - Analisis forense del repositorio: inspeccionar los archivos de pesos y la configuracion para determinar arquitectura real, numero de parametros y tokenizador antes de considerar cualquier integracion.
-- Reproducibilidad de investigacion: usar el repositorio como objeto de estudio sobre publicaciones sin documentacion en HuggingFace, no como componente de un sistema.
+- Reproducibilidad de investigacion: usar el repositorio como objeto de estudio sobre publicaciones sin documentacion en Hugging Face, no como componente de un sistema.
 - Prototipado interno no critico: solo si tras la inspeccion manual se confirma que los pesos son utilizables, y siempre con validacion propia.
 - Comparacion de variantes: si el autor publica versiones posteriores, este repositorio podria servir como referencia de partida, nunca como base de produccion.
 - Fines educativos: ilustrar por que una model card minima (solo licencia) impide evaluar un modelo y aplicar criterios de seleccion rigurosos.
@@ -66,7 +66,7 @@ No hay datos verificados de este repositorio, por lo que la comparacion cuantita
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gatilin/Idefics3_8b-ViT | no disponible | no disponible | no disponible | MIT | repositorio HuggingFace sin documentacion |
+| gatilin/Idefics3_8b-ViT | no disponible | no disponible | no disponible | MIT | repositorio Hugging Face sin documentacion |
 | Idefics3-8B (referencia de categoria) | no disponible en las fuentes | no disponible | no disponible | no disponible | no verificado |
 | Qwen2-VL-7B (referencia de categoria) | no disponible en las fuentes | no disponible | no disponible | no disponible | no verificado |
 | InternVL2-8B (referencia de categoria) | no disponible en las fuentes | no disponible | no disponible | no disponible | no verificado |
@@ -85,5 +85,5 @@ No hay datos verificados de este repositorio, por lo que la comparacion cuantita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gatilin/Idefics3_8b-ViT
+- Repositorio en Hugging Face: https://huggingface.co/gatilin/Idefics3_8b-ViT
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos corresponden a paginas de ChatGPT (chatgpt.com, openai.com) y no guardan relacion con el modelo.

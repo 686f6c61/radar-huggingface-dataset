@@ -118,7 +118,7 @@ Alternativas externas de la misma categoria (por ejemplo las versiones PyTorch o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddutchie/archwiz-upscalers
+- Hugging Face: https://huggingface.co/ddutchie/archwiz-upscalers
 - Carpeta de licencias: https://huggingface.co/ddutchie/archwiz-upscalers/tree/main/LICENSES
 - Real-ESRGAN (repositorio): https://github.com/xinntao/Real-ESRGAN
 - Real-ESRGAN (paper): https://arxiv.org/abs/2107.10833

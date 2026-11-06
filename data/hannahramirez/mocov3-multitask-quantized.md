@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hannahramirez/mocov3-multitask-quantized` es un repositorio de HuggingFace publicado por el usuario hannahramirez que contiene una implementacion propia y de escala reducida ("nano") etiquetada como Mocov3, orientada a un escenario multitarea. No se trata de un modelo entrenado ni de un release con pesos finales: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y un tamano declarado de 0.0 GB.
+`hannahramirez/mocov3-multitask-quantized` es un repositorio de Hugging Face publicado por el usuario hannahramirez que contiene una implementacion propia y de escala reducida ("nano") etiquetada como Mocov3, orientada a un escenario multitarea. No se trata de un modelo entrenado ni de un release con pesos finales: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y un tamano declarado de 0.0 GB.
 
 El interes tecnico del artefacto es, por tanto, el de una plantilla reproducible: incluye `inference.py` como artefacto principal, `config.json` con la configuracion de arquitectura generada y `training_args.json` con la receta de experimento por defecto (optimizador Adam con planificador exponencial). La arquitectura declarada combina atencion de tipo grouped query con fusion "co attention", activacion approx gelu y normalizacion rmsnorm, lo que la situa en la familia de disenos transformer modernos, aunque aplicada a una escala "nano".
 
@@ -85,11 +85,11 @@ No disponible. La informacion proporcionada no incluye metricas de rendimiento, 
 - No se especifican idiomas soportados ni longitud de contexto, por lo que no puede planificarse un uso multilingue ni de contexto largo.
 - La etiqueta "quantized" del identificador no esta documentada en la model card; no debe asumirse ningun esquema de cuantizacion concreto ni una reduccion de precision declarada.
 - Licencia BSD-3-Clause: permisiva y apta para uso comercial, pero la propia model card advierte de que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
-- Implementacion personalizada: las APIs genericas de carga automatica de HuggingFace no funcionaran sin un adaptador explicito, lo que anade trabajo de integracion.
+- Implementacion personalizada: las APIs genericas de carga automatica de Hugging Face no funcionaran sin un adaptador explicito, lo que anade trabajo de integracion.
 - Repositorio sin traccion (0 descargas, 0 likes) y sin mantenimiento documentado; no hay garantia de soporte ni de actualizaciones.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hannahramirez/mocov3-multitask-quantized
+- Modelo en Hugging Face: https://huggingface.co/hannahramirez/mocov3-multitask-quantized
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, blogs, repositorios auxiliares o demos. Los resultados disponibles corresponden a paginas de soporte de Microsoft sin relacion con el artefacto.

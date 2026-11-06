@@ -82,7 +82,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XDG (xtcpete/xdg) | 121.403.650 | Imágenes a 560 × 560 | Comparable a DG++ con 3,5× más velocidad (declarado) | Apache 2.0 (DA3 con licencia propia) | HuggingFace + GitHub |
+| XDG (xtcpete/xdg) | 121.403.650 | Imágenes a 560 × 560 | Comparable a DG++ con 3,5× más velocidad (declarado) | Apache 2.0 (DA3 con licencia propia) | Hugging Face + GitHub |
 | Doppelgangers++ (DG++) | No disponible | No disponible | Referencia base del paper | No disponible | Repositorio público citado (`doppelgangers-plusplus`) |
 | Otros métodos de desambiguación previa a SfM | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -104,7 +104,7 @@ La información disponible permite comparar XDG con DG++ únicamente en término
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtcpete/xdg
+- Modelo en Hugging Face: https://huggingface.co/xtcpete/xdg
 - Paper (arXiv 2608.29733): https://arxiv.org/abs/2608.29733
 - Código fuente: https://github.com/xtcpete/xdg
 - Página del proyecto: https://xtcpete.github.io/xdg/

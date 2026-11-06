@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks externos (MMLU, HumanEval, GSM8K ni
 | Contexto | no aplica (hashing de 2048 dimensiones) | no disponible |
 | Rendimiento | 88,70 %-90,40 % en desarrollo interno | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | Repositorio HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Repositorio Hugging Face, 0 descargas, 0 likes | no disponible |
 
 No se dispone de modelos comparables documentados en la informacion proporcionada. Se trata de un artefacto de investigacion especifico del dominio, sin linea base publica con la que contrastar.
 
@@ -91,11 +91,11 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 - Riesgo de alucinacion: no aplica en el sentido generativo (el modelo clasifica, no genera texto), pero si existe riesgo de falsos positivos y negativos en la clasificacion de intenciones.
 - Cobertura linguistica limitada a coreano e ingles; no hay evidencia de comportamiento en otros idiomas.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero al tratarse de un lanzamiento de investigacion sin modelo seleccionado, su uso en produccion no esta respaldado por resultados.
-- Los pesos no son checkpoints de Transformers; no pueden desplegarse con las herramientas habituales del ecosistema HuggingFace.
+- Los pesos no son checkpoints de Transformers; no pueden desplegarse con las herramientas habituales del ecosistema Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JooYoon/riidolaya-statehint-dev-comment-domain-v0.1-development
+- Modelo en Hugging Face: https://huggingface.co/JooYoon/riidolaya-statehint-dev-comment-domain-v0.1-development
 - Model card en coreano: README.ko.md (referenciado en el repositorio)
 - Definicion de las ocho intenciones: INTENTS.en.md (referenciado en la model card)
 - Paquete de extraccion de caracteristicas: Contextual2048 (referenciado como bundle existente)

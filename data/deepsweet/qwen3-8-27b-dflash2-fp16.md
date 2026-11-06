@@ -89,7 +89,7 @@ La comparativa con otros drafters de decodificación especulativa (como los de E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deepsweet/Qwen3.8-27B-DFlash2-FP16
+- Repositorio Hugging Face: https://huggingface.co/deepsweet/Qwen3.8-27B-DFlash2-FP16
 - Modelo base (drafter BF16): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Versión GGUF: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF
 - Guía de DFlash2 (Hackernoon): https://hackernoon.com/qwen38-27b-dflash2-a-guide-to-faster-qwen-inference
@@ -182,7 +182,7 @@ No se dispone de una comparativa directa con otros drafters de decodificación e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deepsweet/Qwen3.8-27B-DFlash2-FP16
+- Repositorio Hugging Face: https://huggingface.co/deepsweet/Qwen3.8-27B-DFlash2-FP16
 - Modelo base del drafter (BF16): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Versión GGUF del drafter: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF
 - Guía sobre Qwen3.8-27B-DFlash2 (Hackernoon): https://hackernoon.com/qwen38-27b-dflash2-a-guide-to-faster-qwen-inference

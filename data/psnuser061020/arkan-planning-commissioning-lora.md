@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`psnuser061020/arkan-planning-commissioning-lora` es un adaptador LoRA publicado en HuggingFace por el usuario `psnuser061020`, entrenado sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Se distribuye en formato PEFT (version 0.20.0) con pesos en safetensors y un tamano de repositorio de 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. El pipeline declarado es `text-generation`. El nombre del repositorio sugiere un ajuste orientado a tareas de planificacion y puesta en marcha (*commissioning*), aunque esta interpretacion no esta confirmada por ninguna documentacion.
+`psnuser061020/arkan-planning-commissioning-lora` es un adaptador LoRA publicado en Hugging Face por el usuario `psnuser061020`, entrenado sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Se distribuye en formato PEFT (version 0.20.0) con pesos en safetensors y un tamano de repositorio de 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. El pipeline declarado es `text-generation`. El nombre del repositorio sugiere un ajuste orientado a tareas de planificacion y puesta en marcha (*commissioning*), aunque esta interpretacion no esta confirmada por ninguna documentacion.
 
-El problema que resuelve, la composicion del dataset de ajuste y el procedimiento de entrenamiento no estan documentados: la model card es la plantilla generica de HuggingFace con todos los campos marcados como `[More Information Needed]`. No se declara licencia, ni idiomas soportados, ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+El problema que resuelve, la composicion del dataset de ajuste y el procedimiento de entrenamiento no estan documentados: la model card es la plantilla generica de Hugging Face con todos los campos marcados como `[More Information Needed]`. No se declara licencia, ni idiomas soportados, ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 Por su relevancia practica, se trata de un artefacto experimental de autor individual, sin trazabilidad de datos ni evaluacion publicada. Cualquier uso en produccion exige una validacion previa del adaptador frente al modelo base, ademas de una verificacion independiente de la licencia, que hereda del modelo subyacente.
 
@@ -24,14 +24,14 @@ Por su relevancia practica, se trata de un artefacto experimental de autor indiv
 | Rango LoRA y alpha | no disponible |
 | Modulos objetivo (*target modules*) | no disponible |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion | 10 de septiembre de 2026, segun los metadatos de HuggingFace |
+| Fecha de creacion | 10 de septiembre de 2026, segun los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se suman a las proyecciones del modelo base durante la inferencia o que pueden fusionarse con el para obtener un checkpoint denso equivalente. El modelo subyacente, Qwen2.5-3B-Instruct, es un transformer decoder-only con atencion causal, entrenado por Alibaba Qwen con tecnicas de ajuste por instrucciones y preferencias. El repositorio no especifica el rango del adaptador, los modulos a los que se aplica, ni el valor de alpha.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el regimen de precision (fp32, bf16 o fp16), la duracion del ajuste ni el hardware empleado. Tampoco se documenta si hubo una etapa de RLHF, DPO u otra forma de alineacion adicional sobre el adaptador. La unica referencia tecnica presente en el repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono y que aparece de forma residual en la plantilla de model card de HuggingFace, no como contribucion metodologica del autor.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el regimen de precision (fp32, bf16 o fp16), la duracion del ajuste ni el hardware empleado. Tampoco se documenta si hubo una etapa de RLHF, DPO u otra forma de alineacion adicional sobre el adaptador. La unica referencia tecnica presente en el repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono y que aparece de forma residual en la plantilla de model card de Hugging Face, no como contribucion metodologica del autor.
 
 ## Capacidades
 

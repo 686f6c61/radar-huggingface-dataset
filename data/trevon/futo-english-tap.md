@@ -74,7 +74,7 @@ Q8_0 frente a precisión completa (2.048 casos de desarrollo): mismas correccion
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `trevon/futo-english-tap` | 36,3 M | no disponible | FUTO Source First 1.1-kb (no comercial) | GGUF Q8_0 | HuggingFace (31 descargas) |
+| `trevon/futo-english-tap` | 36,3 M | no disponible | FUTO Source First 1.1-kb (no comercial) | GGUF Q8_0 | Hugging Face (31 descargas) |
 | Modelo inglés de serie de FUTO (`ml4_q6_k.gguf`) | 36,3 M | no disponible | FUTO Source First 1.1-kb | GGUF Q6_K | Incluido en FUTO Keyboard |
 | Otros modelos de autocorrección para teclados móviles | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se dispone de datos públicos de benchmarks de alternativas comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trevon/futo-english-tap
+- Modelo en Hugging Face: https://huggingface.co/trevon/futo-english-tap
 - Repositorio de FUTO Keyboard: https://github.com/futo-org/android-keyboard
 - Dataset de Wikipedia en inglés: https://huggingface.co/datasets/wikimedia/wikipedia
 - Tatoeba: https://tatoeba.org

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-text2ipc-en es un sistema de clasificación automática de textos hacia la International Patent Classification (IPC), publicado por el usuario jaimenms en HuggingFace. No es un modelo generativo ni un transformer entrenado desde cero: es un pipeline de recuperación semántica que combina un bi-encoder de embeddings (intfloat/multilingual-e5-base) con un cross-encoder de reranking opcional (BAAI/bge-reranker-v2-m3). El repositorio contiene un índice vectorial precalculado sobre el esquema IPC 20260101, el esquema jerárquico en sí y un handler personalizado para Inference Endpoints de HuggingFace.
+text2ipc-en es un sistema de clasificación automática de textos hacia la International Patent Classification (IPC), publicado por el usuario jaimenms en Hugging Face. No es un modelo generativo ni un transformer entrenado desde cero: es un pipeline de recuperación semántica que combina un bi-encoder de embeddings (intfloat/multilingual-e5-base) con un cross-encoder de reranking opcional (BAAI/bge-reranker-v2-m3). El repositorio contiene un índice vectorial precalculado sobre el esquema IPC 20260101, el esquema jerárquico en sí y un handler personalizado para Inference Endpoints de Hugging Face.
 
 El problema que resuelve es concreto y costoso en la práctica: dado el título, el resumen o la descripción completa de una solicitud de patente, devolver una lista ordenada de símbolos IPC. Cada entrada del esquema IPC se embebe una sola vez a partir de su ruta completa de ancestros (sección > clase > subclase > grupo > subgrupos), y la consulta se embebe por párrafos (título y resumen por separado, promediados), troceando en frases lo que exceda el límite del embedder. La ordenación se hace por similitud coseno y el sistema recorre la jerarquía para responder en el nivel solicitado.
 
@@ -71,7 +71,7 @@ El autor indica que el reranking añade bastante menos de un segundo por entrada
 - Reranking activado: hay que dimensionar el endpoint para el modelo adicional, BAAI/bge-reranker-v2-m3, con 568 M de parámetros y aproximadamente 2,2 GB de descarga, más su huella en memoria.
 - GPU: el autor menciona explícitamente el caso de GPU para el reranking (menos de un segundo por entrada). No se indican modelos de GPU concretos ni cifras de VRAM por tarjeta; no disponible.
 - Viabilidad en GPU de consumo: no disponible. No hay datos publicados sobre RTX 4090 u otras tarjetas de gama consumer para este pipeline.
-- Opciones de despliegue: HuggingFace Inference Endpoints con el handler personalizado incluido, o ejecución local mediante el paquete `text2ipc` instalado desde el repositorio de GitHub (`pip install "text2ipc[st] @ git+https://github.com/Jaimenms/text2ipc"`). También existe una demo en navegador que no requiere servidor.
+- Opciones de despliegue: Hugging Face Inference Endpoints con el handler personalizado incluido, o ejecución local mediante el paquete `text2ipc` instalado desde el repositorio de GitHub (`pip install "text2ipc[st] @ git+https://github.com/Jaimenms/text2ipc"`). También existe una demo en navegador que no requiere servidor.
 - vLLM, llama.cpp, Ollama y TGI no son aplicables: no se sirve un modelo generativo con pesos propios, sino un índice de embeddings más un cross-encoder opcional.
 - Latencia y throughput: el único dato publicado es que el reranking tarda bastante menos de un segundo por entrada en GPU. No hay cifras de throughput por lote ni de latencia en CPU.
 
@@ -101,7 +101,7 @@ Frente a alternativas conceptuales como la clasificación zero-shot con un LLM g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaimenms/text2ipc-en
+- Modelo en Hugging Face: https://huggingface.co/jaimenms/text2ipc-en
 - Demo en navegador (Space, sin servidor): https://huggingface.co/spaces/jaimenms/text2ipc
 - Repositorio de código y paquete: https://github.com/Jaimenms/text2ipc
 - Metodología: https://github.com/Jaimenms/text2ipc (`docs/methodology.md`)

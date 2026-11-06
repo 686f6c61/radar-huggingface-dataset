@@ -23,7 +23,7 @@ El adaptador está diseñado para que el modelo base (Qwen3-8B) actúe como un o
 
 El adaptador se basa en la técnica de *activation oracle* (AO), un método de interpretabilidad que entrena un modelo para predecir o explicar las activaciones internas de otro modelo. En este caso, el AO base (`Atmyre/qwen3-8b-ao-base`) se ha fine-tuneado adicionalmente para que su modelo padre (Qwen3-8B) coincida con el sujeto que interpretará, es decir, el modelo `Atmyre/qwen3-8b-taboo-leaf-c1p00`. Este sujeto es una variante cooperativa de un fine-tune "taboo" (según la receta de Karvonen) a una concentración de 1.00 para el concepto "leaf".
 
-No se proporcionan detalles sobre el número de parámetros del adaptador, el rango (rank) del LoRA, la composición del dataset de entrenamiento, el número de tokens utilizados ni el procedimiento exacto de optimización. La única referencia técnica es el artículo arXiv:2512.15674, que describe la receta general de los activation oracles. El adaptador se carga mediante la librería `peft` de HuggingFace, como se muestra en el código de ejemplo de la model card.
+No se proporcionan detalles sobre el número de parámetros del adaptador, el rango (rank) del LoRA, la composición del dataset de entrenamiento, el número de tokens utilizados ni el procedimiento exacto de optimización. La única referencia técnica es el artículo arXiv:2512.15674, que describe la receta general de los activation oracles. El adaptador se carga mediante la librería `peft` de Hugging Face, como se muestra en el código de ejemplo de la model card.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-leaf-c1p00
+- Repositorio Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-leaf-c1p00
 - Artículo de referencia (Activation Oracles): https://arxiv.org/abs/2512.15674
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo sujeto emparejado: https://huggingface.co/Atmyre/qwen3-8b-taboo-leaf-c1p00

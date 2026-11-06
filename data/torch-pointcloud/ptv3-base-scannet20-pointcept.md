@@ -77,7 +77,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- [HuggingFace: torch-pointcloud/ptv3-base.scannet20.pointcept](https://huggingface.co/torch-pointcloud/ptv3-base.scannet20.pointcept)
+- [Hugging Face: torch-pointcloud/ptv3-base.scannet20.pointcept](https://huggingface.co/torch-pointcloud/ptv3-base.scannet20.pointcept)
 - [Paper: Point Transformer V3: Simpler, Faster, Stronger](https://arxiv.org/abs/2312.10035)
 - [Repositorio Pointcept (fuente del checkpoint original)](https://github.com/Pointcept/Pointcept)
 - [Repositorio torch-pointcloud (librería de inferencia)](https://github.com/arthurdjn/pytorch-pointcloud)

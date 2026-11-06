@@ -86,7 +86,7 @@ La comparativa directa con otros modelos de tamano similar no esta disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mincofficial/Sonoma-1.2B-0901
+- Modelo en Hugging Face: https://huggingface.co/Mincofficial/Sonoma-1.2B-0901
 - Checkpoint Preview: https://huggingface.co/Mincofficial/Sonoma-1.2B-Preview
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/main/LICENSE
 - Dataset Fable 5 Premium: https://huggingface.co/datasets/saidutta69/fable-5-premium

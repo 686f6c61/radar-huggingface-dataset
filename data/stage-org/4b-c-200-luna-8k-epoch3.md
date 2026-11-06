@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/4b-C-200-luna-8k-epoch3 es un modelo de 4.539 millones de parametros (4,54 B) publicado por el usuario Stage-org en HuggingFace. Se trata de un derivado del modelo base Qwen/Qwen3.5-4B sometido a un proceso de aprendizaje por refuerzo (RL) durante 10.000 pasos y 3 epocas sobre el dataset Stage-org/4b-C-200-luna-8k, que no esta descrito en la informacion disponible. El repositorio solo contiene pesos en formato safetensors (9,1 GB, compatible con pesos en bf16/fp16 sin estados de optimizador).
+Stage-org/4b-C-200-luna-8k-epoch3 es un modelo de 4.539 millones de parametros (4,54 B) publicado por el usuario Stage-org en Hugging Face. Se trata de un derivado del modelo base Qwen/Qwen3.5-4B sometido a un proceso de aprendizaje por refuerzo (RL) durante 10.000 pasos y 3 epocas sobre el dataset Stage-org/4b-C-200-luna-8k, que no esta descrito en la informacion disponible. El repositorio solo contiene pesos en formato safetensors (9,1 GB, compatible con pesos en bf16/fp16 sin estados de optimizador).
 
 El interes tecnico del modelo no esta en sus capacidades declaradas —no hay model card descriptiva, ni benchmarks, ni evaluacion publicada— sino en que el autor ha publicado la configuracion completa del entrenamiento: metodo RL con DPPO (mascaras de enmascaramiento de probabilidad 0,2-0,28), group_size 8, learning rate 1e-6 con AdamW (betas 0.9/0.99), weight decay 0.0 y un juez automatico externo identificado como gpt-5.6-luna. La inferencia durante el entrenamiento se realizo con vLLM, con max_model_len de 65.536 tokens, parser de razonamiento qwen3, parser de tool calling qwen3_coder y modo thinking activado.
 
@@ -12,7 +12,7 @@ Es relevante ahora unicamente como artefacto de investigacion reproducible sobre
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo base Qwen/Qwen3.5-4B; tag de HuggingFace: qwen3_5; se usa FlashAttention 2 en el entrenamiento) |
+| Arquitectura | No disponible (modelo base Qwen/Qwen3.5-4B; tag de Hugging Face: qwen3_5; se usa FlashAttention 2 en el entrenamiento) |
 | Parametros totales | 4.539.265.536 (~4,54 B) |
 | Parametros activos | No aplica (no se declara arquitectura MoE) |
 | Longitud de contexto | 65.536 tokens en inferencia (max_model_len de vLLM); la configuracion del learner declara seq_len = 300.000 tokens |
@@ -23,7 +23,7 @@ Es relevante ahora unicamente como artefacto de investigacion reproducible sobre
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna mas alla del modelo base: Qwen/Qwen3.5-4B, etiquetado en HuggingFace con el tag qwen3_5. Por el tamano de pesos (4,54 B de parametros en 9,1 GB) se trata de un transformer denso con pesos en bf16 o fp16. La configuracion de entrenamiento especifica el uso de FlashAttention 2 y de pesos con carga "weights_only".
+No se dispone de informacion sobre la arquitectura interna mas alla del modelo base: Qwen/Qwen3.5-4B, etiquetado en Hugging Face con el tag qwen3_5. Por el tamano de pesos (4,54 B de parametros en 9,1 GB) se trata de un transformer denso con pesos en bf16 o fp16. La configuracion de entrenamiento especifica el uso de FlashAttention 2 y de pesos con carga "weights_only".
 
 El entrenamiento es un ciclo de RL (learner.method = "rl") sobre el dataset Stage-org/4b-C-200-luna-8k, con 10.000 pasos, 3 epocas, batch_size 128 y group_size 8. El optimizador es AdamW con lr 1e-6, weight_decay 0.0, max_norm 1.0, betas (0.9, 0.99). La funcion de perdida usa un esquema DPPO con dppo_mask_low 0.2, dppo_mask_high 0.28, adv_tau 1.0 y kl_tau 0.001. La generacion durante el entrenamiento se hizo con temperatura 0.9, top_p 1.0, max_tokens 4096 y enable_thinking activado; el juez automatico (open_ended_judge) es un endpoint externo con el modelo gpt-5.6-luna, temperatura 1.0, reasoning_effort "medium", max_retries 3 y max_in_flight 32. La infraestructura declarada es de 2 GPUs por nodo (1 para inferencia, 1 para entrenamiento), vLLM en el puerto 7000 con gpu_memory_utilization 0.9 y hasta 256 rollouts en vuelo con max_off_policy_steps 8. El checkpoint se guarda cada 1000 (unidad "epoch") conservando solo el ultimo.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Stage-org/4b-C-200-luna-8k-epoch3 | 4,54 B | 65.536 en inferencia (300.000 en config de learner) | No disponible | safetensors en HuggingFace, 1 descarga | Sin benchmarks publicados |
-| Qwen/Qwen3.5-4B (base) | No disponible | No disponible | No disponible | HuggingFace | No disponible |
-| Qwen/Qwen3-4B | 4,0 B | 32.768 nativo, ~131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado | Benchmarks publicados por el autor |
-| Llama 3.2 3B | 3,2 B | 128.000 | Licencia comunitaria Llama 3.2 | HuggingFace | Benchmarks publicados por el autor |
-| Gemma 3 4B | 4,0 B | 128.000 | Licencia Gemma | HuggingFace | Benchmarks publicados por el autor |
+| Stage-org/4b-C-200-luna-8k-epoch3 | 4,54 B | 65.536 en inferencia (300.000 en config de learner) | No disponible | safetensors en Hugging Face, 1 descarga | Sin benchmarks publicados |
+| Qwen/Qwen3.5-4B (base) | No disponible | No disponible | No disponible | Hugging Face | No disponible |
+| Qwen/Qwen3-4B | 4,0 B | 32.768 nativo, ~131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado | Benchmarks publicados por el autor |
+| Llama 3.2 3B | 3,2 B | 128.000 | Licencia comunitaria Llama 3.2 | Hugging Face | Benchmarks publicados por el autor |
+| Gemma 3 4B | 4,0 B | 128.000 | Licencia Gemma | Hugging Face | Benchmarks publicados por el autor |
 
 La comparacion con el modelo base Qwen3.5-4B no puede completarse porque no se dispone de sus especificaciones en la informacion proporcionada. Los tres modelos alternativos de la tabla cuentan con evaluaciones publicadas por sus autores, algo de lo que carece por completo este checkpoint, lo que impide cualquier comparacion de rendimiento objetiva.
 
@@ -92,7 +92,7 @@ La comparacion con el modelo base Qwen3.5-4B no puede completarse porque no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-C-200-luna-8k-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-C-200-luna-8k-epoch3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Stage-org/4b-C-200-luna-8k
 - Paper, blog, repositorio o demo: no disponible

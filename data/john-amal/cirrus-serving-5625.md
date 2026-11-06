@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cirrus serving bundle (`John-Amal/cirrus-serving-5625`) es un paquete de inferencia publicado en HuggingFace que contiene un modelo de predicción probabilística de precipitación, desarrollado por John-Amal y pensado para alimentar el servicio de inferencia `cirrus` alojado en GitHub. No es un modelo de lenguaje: es un predictor numérico que toma dos pasos temporales de campos ERA5 normalizados y devuelve, para cada celda de la rejilla, los parámetros de una distribución gamma desplazada y censurada, `Y = max(0, Gamma(shape, scale) + shift)`. A partir de esa distribución se obtienen de forma analítica la precipitación esperada, las probabilidades de excedencia y cualquier cuantil.
+Cirrus serving bundle (`John-Amal/cirrus-serving-5625`) es un paquete de inferencia publicado en Hugging Face que contiene un modelo de predicción probabilística de precipitación, desarrollado por John-Amal y pensado para alimentar el servicio de inferencia `cirrus` alojado en GitHub. No es un modelo de lenguaje: es un predictor numérico que toma dos pasos temporales de campos ERA5 normalizados y devuelve, para cada celda de la rejilla, los parámetros de una distribución gamma desplazada y censurada, `Y = max(0, Gamma(shape, scale) + shift)`. A partir de esa distribución se obtienen de forma analítica la precipitación esperada, las probabilidades de excedencia y cualquier cuantil.
 
 La relevancia del bundle es de ingeniería más que de investigación: el autor empaqueta junto al modelo las estadísticas de normalización y los umbrales de excedencia empleados en el entrenamiento, porque normalizar con estadísticas distintas produce resultados plausibles pero incorrectos en lugar de un error. El repositorio incluye además de los pesos el orden de canales esperado y la referencia del *run* que generó el artefacto.
 
@@ -82,14 +82,14 @@ No disponible. La información proporcionada no identifica modelos comparables d
 - Ausencia total de datos de evaluación: no hay métricas de twCRPS, CRPS, sesgo ni fiabilidad de la distribución, lo que impide validar la calidad del pronóstico antes de ponerlo en producción.
 - Documentación incompleta: no se especifican la topología de la red, el número de parámetros, los canales de entrada exactos, la resolución espacial de la rejilla ni el protocolo de entrenamiento.
 - Riesgo de alucinación: no aplica en el sentido habitual (no es un modelo de lenguaje), pero sí existe el riesgo análogo de generar una distribución perfectamente válida desde el punto de vista estadístico y a la vez meteorológicamente errónea.
-- Sin adopción verificable: 0 descargas y 0 *likes* en HuggingFace, sin evidencia de uso en producción ni de revisión por terceros.
+- Sin adopción verificable: 0 descargas y 0 *likes* en Hugging Face, sin evidencia de uso en producción ni de revisión por terceros.
 - Metadatos potencialmente inconsistentes: la fecha de creación registrada (2026-10-03) es posterior a la del momento habitual de consulta, lo que apunta a un posible error de sellado temporal en el repositorio.
 - Licencia MIT: permite uso comercial y modificación, pero el modelo incorpora información modificada del Copernicus Climate Change Service (1979-2022), por lo que se deben respetar las condiciones de atribución de Copernicus y de ERA5.
 - Idiomas: no aplica, al tratarse de un modelo numérico sin componente textual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/John-Amal/cirrus-serving-5625
+- Modelo en Hugging Face: https://huggingface.co/John-Amal/cirrus-serving-5625
 - Repositorio del servicio de inferencia `cirrus`: https://github.com/John-Amal/cirrus
 - Dataset de referencia citado por el autor: WeatherBench 2 (entrenamiento sobre ERA5)
 - Fuente de datos citada: ERA5, Copernicus Climate Change Service (1979-2022, información modificada)

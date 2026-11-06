@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Goose-1.5B-think-grpo-lora | 1.5B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1.5B | 32K (típico) | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K (típico) | MIT | HuggingFace |
+| Goose-1.5B-think-grpo-lora | 1.5B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1.5B | 32K (típico) | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K (típico) | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparación se limita a parámetros y licencia. Qwen2.5-1.5B y DeepSeek-R1-Distill-Qwen-1.5B son alternativas establecidas con documentación extensa, mientras que Goose-1.5B es un modelo experimental con poca información pública.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lambent/Goose-1.5B-think-grpo-lora
+- Modelo en Hugging Face: https://huggingface.co/Lambent/Goose-1.5B-think-grpo-lora
 - Modelo base RWKV7: https://huggingface.co/RWKV/RWKV7-1.5B-20260805
 - LoRA de midtrain: https://huggingface.co/Lambent/RWKV7-1.5B-midtrain50-docs-lora
 - Guía de GRPO en TRL (Hugging Face): https://huggingface.co/learn/cookbook/fine_tuning_llm_grpo_trl

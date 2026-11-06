@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aselyildiz/cnn-transformer-matching-notes` es una implementación mínima de una arquitectura denominada Cnn Transformer orientada a tareas de *matching* (emparejamiento), publicada por el usuario aselyildiz en HuggingFace. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor lo describe como un punto de partida reproducible que incluye un checkpoint de inicialización válido únicamente para *smoke tests*. El repositorio contiene el código de implementación (`finetune.py`), la configuración de arquitectura (`config.json`), el recetario de experimento por defecto (`training_args.json`) y un fichero de pesos en formato safetensors.
+El modelo `aselyildiz/cnn-transformer-matching-notes` es una implementación mínima de una arquitectura denominada Cnn Transformer orientada a tareas de *matching* (emparejamiento), publicada por el usuario aselyildiz en Hugging Face. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor lo describe como un punto de partida reproducible que incluye un checkpoint de inicialización válido únicamente para *smoke tests*. El repositorio contiene el código de implementación (`finetune.py`), la configuración de arquitectura (`config.json`), el recetario de experimento por defecto (`training_args.json`) y un fichero de pesos en formato safetensors.
 
 El tamaño real declarado en el fichero safetensors es de 49.600 parámetros, una magnitud muy reducida que contrasta con la etiqueta `large` registrada en la configuración del autor; esta etiqueta debe interpretarse como un identificador de variante dentro del script y no como una indicación de escala real. La arquitectura combina atención lineal, fusión mediante *cross attention*, activación GELU y normalización RMSNorm, con un recetario de entrenamiento basado en AdamW y un esquema de *warmup* constante. No se especifica longitud de contexto, idiomas soportados, pipeline de tarea ni ningún resultado de evaluación.
 
@@ -87,11 +87,11 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Riesgo de alucinacion: no aplicable en el estado actual, ya que el modelo no genera lenguaje ni ha sido ajustado para ello.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura linguistica.
 - Restricciones de licencia: la licencia es Apache 2.0, permisiva para uso comercial, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Al ser una implementacion personalizada, las API genericas de carga automatica de HuggingFace no funcionaran sin un adaptador explicito.
+- Al ser una implementacion personalizada, las API genericas de carga automatica de Hugging Face no funcionaran sin un adaptador explicito.
 - Los resultados de cualquier checkpoint futuro entrenado deben documentarse de forma separada a los valores por defecto incluidos en el repositorio, para no atribuir al codigo base un rendimiento que no le corresponde.
 - La busqueda web asociada no devolvio resultados relevantes sobre este modelo ni sobre arquitecturas equiparables; los enlaces obtenidos no guardan relacion con el contenido tecnico del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aselyildiz/cnn-transformer-matching-notes
+- Modelo en Hugging Face: https://huggingface.co/aselyildiz/cnn-transformer-matching-notes
 - No se han encontrado articulos, papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web realizada.

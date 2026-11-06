@@ -63,6 +63,6 @@ No disponible. No existe una categoría de modelos comparables, ya que se trata 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/LayerFault/weights-sparse-delta-concentration)
+- [Repositorio en Hugging Face](https://huggingface.co/LayerFault/weights-sparse-delta-concentration)
 - [GitHub Layerfault](https://github.com/izm1chael/layerfault)
-- [Blog de HuggingFace sobre delta weight sync en TRL](https://huggingface.co/blog/delta-weight-sync) (relacionado con el concepto de delta de pesos, aunque no específico del artefacto)
+- [Blog de Hugging Face sobre delta weight sync en TRL](https://huggingface.co/blog/delta-weight-sync) (relacionado con el concepto de delta de pesos, aunque no específico del artefacto)

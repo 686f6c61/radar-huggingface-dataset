@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-GGUF es una cuantización en formato GGUF del modelo openbmb/MiniCPM5-2B, publicada por el usuario axteam en HuggingFace. El modelo base es un modelo lingüístico compacto de aproximadamente 2.500 millones de parámetros desarrollado por OpenBMB, y esta versión derivada está pensada para ejecutarse de forma local con llama.cpp, Ollama o LM Studio, sin necesidad de GPU dedicada.
+MiniCPM5-2B-GGUF es una cuantización en formato GGUF del modelo openbmb/MiniCPM5-2B, publicada por el usuario axteam en Hugging Face. El modelo base es un modelo lingüístico compacto de aproximadamente 2.500 millones de parámetros desarrollado por OpenBMB, y esta versión derivada está pensada para ejecutarse de forma local con llama.cpp, Ollama o LM Studio, sin necesidad de GPU dedicada.
 
 La ficha resuelve un problema práctico muy común: permitir la inferencia de un modelo pequeño en hardware de consumo, ofreciendo dos niveles de cuantización (Q8_0 y Q4_K_M) que equilibran calidad y consumo de memoria. La conversión se ha realizado con el script oficial convert_hf_to_gguf.py de llama.cpp y conserva la plantilla de chat original del modelo base, lo que garantiza compatibilidad con el formato de conversación previsto por OpenBMB.
 

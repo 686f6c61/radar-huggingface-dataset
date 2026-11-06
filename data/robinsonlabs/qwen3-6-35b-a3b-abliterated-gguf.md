@@ -98,7 +98,7 @@ La comparativa muestra que la versión de Robinson Labs es una de las dos opcion
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/RobinsonLabs/Qwen3.6-35B-A3B-abliterated-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/RobinsonLabs/Qwen3.6-35B-A3B-abliterated-GGUF
 - Modelo base abliterado (safetensors): https://huggingface.co/RobinsonLabs/Qwen3.6-35B-A3B-abliterated
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Página en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/models/qwen3.6-35b-a3b

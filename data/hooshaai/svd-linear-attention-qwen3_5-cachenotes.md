@@ -4,7 +4,7 @@
 
 El modelo `Hooshaai/svd-linear-attention-qwen3_5-cachenotes` es un experimento de compresión de atención desarrollado por Hooshaai. Su objetivo es sustituir los mecanismos de atención cuadrática estándar, o las capas de proyección densas, por aproximaciones lineales de bajo rango calibradas mediante descomposición en valores singulares (SVD) y recuperadas con 50 pasos de ajuste fino LoRA. El resultado es un clasificador de texto evaluado sobre el conjunto GLUE (concretamente SST-2), para el que se reportan una precisión de validación del 89,22 % y un F1 de 0,8956.
 
-A pesar del nombre, el repositorio no contiene los pesos del modelo en HuggingFace (el tamaño del repositorio es de 0,0 GB), por lo que no es posible cargarlo directamente con los métodos descritos en la model card. El proyecto parece estar en una fase temprana de investigación, centrado en validar la viabilidad del módulo `cachenotes` sobre una familia Qwen3.5, pero sin documentación sobre la arquitectura base, el número de parámetros ni el contexto soportado.
+A pesar del nombre, el repositorio no contiene los pesos del modelo en Hugging Face (el tamaño del repositorio es de 0,0 GB), por lo que no es posible cargarlo directamente con los métodos descritos en la model card. El proyecto parece estar en una fase temprana de investigación, centrado en validar la viabilidad del módulo `cachenotes` sobre una familia Qwen3.5, pero sin documentación sobre la arquitectura base, el número de parámetros ni el contexto soportado.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ La documentacion disponible indica que el modulo `cachenotes` reemplaza la atenc
 ## Capacidades
 
 - Clasificacion de texto: el modelo esta afinado para la tarea de clasificacion de sentimiento SST-2 del conjunto GLUE.
-- Uso con HuggingFace Transformers: la model card propone cargar el modelo mediante `AutoModelForSequenceClassification`, lo que sugiere compatibilidad con el ecosistema de transformers.
+- Uso con Hugging Face Transformers: la model card propone cargar el modelo mediante `AutoModelForSequenceClassification`, lo que sugiere compatibilidad con el ecosistema de transformers.
 - No se han documentado capacidades de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes ni soporte multilingue mas alla de ingles.
 - No se especifica si soporta modo de pensamiento (thinking mode) ni entradas multimodales.
 
@@ -59,7 +59,7 @@ No se han publicado comparativas con otros modelos ni resultados adicionales en 
 
 - El autor reporta un pico de VRAM de 1858,27 MB durante la evaluacion, lo que sugiere que el modelo cabe en GPUs de consumo moderado (por ejemplo, una RTX 3060 con 12 GB).
 - No se especifican las GPU recomendadas ni requisitos por cuantizacion.
-- La carga propuesta se realiza con HuggingFace Transformers, por lo que el despliegue puede hacerse con Python y PyTorch. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- La carga propuesta se realiza con Hugging Face Transformers, por lo que el despliegue puede hacerse con Python y PyTorch. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - El tiempo de evaluacion pura es de 363,01 s, pero se desconoce el tamano del conjunto de datos, por lo que no es posible estimar latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se han publicado comparativas con modelos de la misma categoria en la informa
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamano de 0,0 GB, lo que indica que el archivo `weights.pt` no esta realmente disponible. La carga descrita en el README no funcionara tal como esta documentada.
+- El repositorio de Hugging Face tiene un tamano de 0,0 GB, lo que indica que el archivo `weights.pt` no esta realmente disponible. La carga descrita en el README no funcionara tal como esta documentada.
 - El ratio de compresion es 1,0, es decir, no se ha logrado una reduccion del modelo. Esto contradice el objetivo de compresion y sugiere que el experimento no ha producido un modelo comprimido efectivo.
 - El modelo solo se ha evaluado en SST-2. Su rendimiento en tareas no relacionadas es desconocido y puede ser sustancialmente inferior.
 - No hay informacion sobre sesgos, riesgos de alucinacion ni limitaciones de contexto o idioma. Al ser un clasificador binario, el riesgo de alucinacion en generacion no aplica, pero la precision fuera de dominio puede ser baja.
@@ -76,6 +76,6 @@ No se han publicado comparativas con modelos de la misma categoria en la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-qwen3_5-cachenotes
+- Repositorio en Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-qwen3_5-cachenotes
 - Informe tecnico de Qwen3 (contexto de la familia de modelos): https://arxiv.org/html/2505.09388v1
-- Modelo Qwen3.5-9B en HuggingFace (enlace encontrado en la busqueda web): https://huggingface.co/Qwen/Qwen3.5-9B
+- Modelo Qwen3.5-9B en Hugging Face (enlace encontrado en la busqueda web): https://huggingface.co/Qwen/Qwen3.5-9B

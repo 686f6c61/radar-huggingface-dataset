@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEAI (Square Equation AI) es un modelo de investigación desarrollado por ALEXFLR cuyo objetivo no es solo predecir numéricamente, sino investigar si una red neuronal entrenada para resolver ecuaciones cuadráticas desarrolla representaciones internas correlacionadas con cantidades matemáticas significativas de la solución analítica. Se trata de un modelo de regresión numérica, no de lenguaje, a pesar de que su pipeline_tag en HuggingFace indique text-generation.
+SEAI (Square Equation AI) es un modelo de investigación desarrollado por ALEXFLR cuyo objetivo no es solo predecir numéricamente, sino investigar si una red neuronal entrenada para resolver ecuaciones cuadráticas desarrolla representaciones internas correlacionadas con cantidades matemáticas significativas de la solución analítica. Se trata de un modelo de regresión numérica, no de lenguaje, a pesar de que su pipeline_tag en Hugging Face indique text-generation.
 
 La arquitectura es un perceptrón multicapa con capas cuadráticas personalizadas (QuadraticLayer), que aplican una transformación no lineal de segundo orden a las proyecciones lineales. El modelo contiene exactamente 8.040.002 parámetros entrenables y recibe una representación normalizada de una ecuación cuadrática para predecir sus dos raíces reales ordenadas. La relevancia del proyecto radica en su contribución a la interpretabilidad mecanicista: se observa que las activaciones ocultas de capas profundas muestran fuertes correlaciones con el discriminante normalizado \(p^2 - q\) y con su raíz cuadrada, a pesar de que ninguna de estas cantidades se proporciona explícitamente como entrada.
 
@@ -76,10 +76,10 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (mo
 - El rendimiento es limitado: solo el 0,27 % de las predicciones tienen un error inferior a 0,01 en la representacion normalizada, y el error maximo observado alcanza 1,65. Esto indica que no es adecuado para aplicaciones que requieran alta precision.
 - El modelo presenta un rendimiento degradado cuando las dos raices estan muy proximas entre si, lo que puede causar errores significativos en problemas mal condicionados.
 - Los resultados de evaluacion son preliminares y no reproducibles, ya que no se han fijado splits de datos ni semillas aleatorias. Cualquier comparacion futura debe tratar estas metricas con cautela.
-- No es un modelo de lenguaje ni un modelo generativo. Aunque su pipeline_tag en HuggingFace sea text-generation, su funcion real es la regresion numerica. No debe usarse para tareas de procesamiento de lenguaje natural.
+- No es un modelo de lenguaje ni un modelo generativo. Aunque su pipeline_tag en Hugging Face sea text-generation, su funcion real es la regresion numerica. No debe usarse para tareas de procesamiento de lenguaje natural.
 - La licencia MIT permite uso comercial y modificacion, pero el modelo se presenta como un experimento de investigacion, sin garantias de robustez ni soporte para produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ALEXFLR/SEAI
+- Hugging Face: https://huggingface.co/ALEXFLR/SEAI
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

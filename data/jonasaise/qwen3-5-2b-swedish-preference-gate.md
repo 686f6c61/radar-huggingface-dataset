@@ -93,9 +93,9 @@ Datos de eficiencia declarados por el autor:
 
 | Modelo | Parámetros | Contexto | Precisión preferencia (original) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-2b-swedish-preference-gate (v4.1) | 1.882 M | 1.024 tokens | 93,6 % | Apache 2.0 | HuggingFace |
-| laya-swedish-preference-gate (Laya-307M) | 307 M (322 M total) | no disponible | 98,8 % (v4.1 full) | no disponible en la información | HuggingFace |
-| Qwen3.5-2B zero-shot | 1.882 M | no disponible | 79,1 % | no disponible en la información | HuggingFace |
+| qwen3.5-2b-swedish-preference-gate (v4.1) | 1.882 M | 1.024 tokens | 93,6 % | Apache 2.0 | Hugging Face |
+| laya-swedish-preference-gate (Laya-307M) | 307 M (322 M total) | no disponible | 98,8 % (v4.1 full) | no disponible en la información | Hugging Face |
+| Qwen3.5-2B zero-shot | 1.882 M | no disponible | 79,1 % | no disponible en la información | Hugging Face |
 
 La comparativa principal es con el modelo Laya-307M del mismo autor, que comparte interfaz y receta de entrenamiento. Laya-307M es más pequeño (307 M frente a 1.882 M), más rápido (9,8 ms frente a 57,9 ms por par) y alcanza mayor precisión en preferencia original cuando se entrena con el conjunto completo (98,8 % frente a 93,6 %). Sin embargo, el modelo basado en Qwen3.5-2B supera a Laya-307M en preferencia de sueco fluido (82,1 % frente a 76,6 %), en razonamiento (82,3 % frente a 79,3 %) y en naturalidad DaLAJ-GED (86,7 % frente a 88,0 % es inferior, pero en GerLangMod-sv es superior con 96,1 % frente a 95,7 %). La fusión por consenso de ambos modelos alcanza los mejores resultados en casi todas las métricas.
 
@@ -114,7 +114,7 @@ La comparativa principal es con el modelo Laya-307M del mismo autor, que compart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonasaise/qwen3.5-2b-swedish-preference-gate
+- Modelo en Hugging Face: https://huggingface.co/jonasaise/qwen3.5-2b-swedish-preference-gate
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo Laya-307M relacionado: https://huggingface.co/jonasaise/laya-swedish-preference-gate
 - Repositorio de código y pipeline: https://github.com/joenaess/laya-swedish-preference-gate

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apertus v1.5 8B es un modelo de lenguaje multimodal desarrollado por swiss-ai, un proyecto suizo centrado en la inteligencia artificial abierta y transparente. Según la información disponible, forma parte de una familia de modelos de 8B y 70B parámetros diseñados para avanzar en el estado del arte de la IA multilingüe, multimodal, totalmente abierta y transparente. El modelo se presenta con licencia Apache 2.0 y está disponible en HuggingFace bajo acceso restringido, lo que implica que los usuarios deben aceptar las condiciones de uso antes de poder descargarlo.
+Apertus v1.5 8B es un modelo de lenguaje multimodal desarrollado por swiss-ai, un proyecto suizo centrado en la inteligencia artificial abierta y transparente. Según la información disponible, forma parte de una familia de modelos de 8B y 70B parámetros diseñados para avanzar en el estado del arte de la IA multilingüe, multimodal, totalmente abierta y transparente. El modelo se presenta con licencia Apache 2.0 y está disponible en Hugging Face bajo acceso restringido, lo que implica que los usuarios deben aceptar las condiciones de uso antes de poder descargarlo.
 
 El pipeline declarado es `image-text-to-text`, lo que indica que el modelo puede procesar entradas de imagen y texto y generar respuestas textuales. Los metadatos lo etiquetan como `multilingual`, `multimodal`, `conversational` y `text-generation`. El tamaño total de los parámetros, medido en los pesos safetensors, es de 8.903.547.555 parámetros, aproximadamente 8.9B. No se ha publicado información detallada sobre la arquitectura interna, la longitud de contexto ni los datos de entrenamiento en la información disponible.
 
@@ -28,7 +28,7 @@ No se ha publicado información detallada sobre la arquitectura del modelo en la
 - Generación de texto y conversación: el modelo está etiquetado como `text-generation` y `conversational`, por lo que puede mantener diálogos y generar respuestas coherentes.
 - Procesamiento multimodal de imagen y texto: el pipeline `image-text-to-text` indica que acepta imágenes como entrada además de texto, lo que permite tareas de descripción de imágenes, respuesta a preguntas visuales o análisis de contenido gráfico.
 - Capacidades multilingües: los metadatos lo etiquetan como `multilingual`, aunque no se especifican los idiomas concretos ni el nivel de competencia en cada uno.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede desplegarse mediante la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede desplegarse mediante la infraestructura de endpoints de Hugging Face.
 - No se especifica en la información disponible si soporta tool calling, function calling, razonamiento multi-paso o modos de pensamiento especiales.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 - No se han publicado requisitos de hardware oficiales para este modelo.
 - No se dispone de datos sobre VRAM estimada, GPUs recomendadas ni opciones de despliegue específicas como vLLM, llama.cpp, Ollama o TGI.
-- El tag `endpoints_compatible` sugiere que el modelo puede ejecutarse a través de los endpoints de HuggingFace, pero no se proporcionan detalles sobre el hardware subyacente.
+- El tag `endpoints_compatible` sugiere que el modelo puede ejecutarse a través de los endpoints de Hugging Face, pero no se proporcionan detalles sobre el hardware subyacente.
 - No se ha indicado si el modelo puede ejecutarse en GPUs de consumo, aunque su tamaño de 8.9B parámetros es típico de modelos que pueden ejecutarse con cuantización en hardware de gama alta. No obstante, esto es una inferencia y no un dato confirmado.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que los usuarios deben aceptar las condiciones de uso antes de descargarlo. Esto puede dificultar la evaluación rápida o la integración en entornos automatizados.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que los usuarios deben aceptar las condiciones de uso antes de descargarlo. Esto puede dificultar la evaluación rápida o la integración en entornos automatizados.
 - Falta de documentación técnica: no se ha publicado información sobre arquitectura, datos de entrenamiento, contexto, sesgos o limitaciones específicas. Esta ausencia de transparencia dificulta la evaluación de riesgos antes de su uso en producción.
 - Riesgo de alucinación: al no existir datos de evaluación publicados, no es posible estimar la fiabilidad del modelo ni su tendencia a generar información incorrecta.
 - Desconocimiento de la ventana de contexto: sin datos sobre la longitud de contexto, no se puede garantizar un comportamiento adecuado en conversaciones largas o en tareas que requieran procesar documentos extensos.
@@ -70,4 +70,4 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
+- Hugging Face: https://huggingface.co/swiss-ai/Apertus-v1.5-8B

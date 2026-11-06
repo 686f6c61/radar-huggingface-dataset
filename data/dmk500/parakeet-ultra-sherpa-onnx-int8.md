@@ -86,7 +86,7 @@ La comparativa se limita a la cadena de linaje porque no se dispone de datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dmk500/parakeet-ultra-sherpa-onnx-int8
+- Repositorio Hugging Face: https://huggingface.co/dmk500/parakeet-ultra-sherpa-onnx-int8
 - Modelo base (post-entrenamiento): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Exportación ONNX de referencia: https://huggingface.co/leogaudin/sherpa-onnx-nemo-parakeet-ultra-int8

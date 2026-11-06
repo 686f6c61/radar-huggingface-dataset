@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`r1019-26d7cf3c-z-image-zbx3-s60-94f21b9c` es un artefacto de investigacion privado publicado en HuggingFace por el usuario G21998 bajo la etiqueta `sn56-replay`. No se trata de un modelo de lenguaje entrenado para inferencia general, sino de un registro de replay de un proceso de entrenamiento asociado a la tarea `26d7cf3c` (identificada como "z-image", 0,75 horas), con brazo `zbx3`, semilla 60 y arbol `94f21b9c`. El repositorio contiene checkpoints y logs generados por un harness de validacion sin Docker, etiquetado como `LOCK replay-1019`.
+`r1019-26d7cf3c-z-image-zbx3-s60-94f21b9c` es un artefacto de investigacion privado publicado en Hugging Face por el usuario G21998 bajo la etiqueta `sn56-replay`. No se trata de un modelo de lenguaje entrenado para inferencia general, sino de un registro de replay de un proceso de entrenamiento asociado a la tarea `26d7cf3c` (identificada como "z-image", 0,75 horas), con brazo `zbx3`, semilla 60 y arbol `94f21b9c`. El repositorio contiene checkpoints y logs generados por un harness de validacion sin Docker, etiquetado como `LOCK replay-1019`.
 
 El propio autor declara explicitamente que se trata de un "registro de investigacion privado, no un envio" (*private research record, not a submission*). El estado registrado es `UPLOAD`, con codigo de retorno 0, sin terminacion forzada (`killed False`) y finalizacion completa del artefacto entrenado, con 6 miembros en el conjunto de artefactos y hashes SHA-256 de artefacto (`48e7fa3c`) e identidad (`2ef4d59f`) documentados.
 
@@ -73,5 +73,5 @@ No disponible. No se identifican modelos comparables porque la informacion publi
 
 ## Enlaces
 
-- [HuggingFace: G21998/r1019-26d7cf3c-z-image-zbx3-s60-94f21b9c](https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s60-94f21b9c)
+- [Hugging Face: G21998/r1019-26d7cf3c-z-image-zbx3-s60-94f21b9c](https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s60-94f21b9c)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

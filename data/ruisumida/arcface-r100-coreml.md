@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArcFace-R100-CoreML es una conversión a CoreML del modelo de reconocimiento facial ArcFace LResNet100E-IR, originalmente distribuido en formato ONNX dentro del ONNX Model Zoo. Lo publica el usuario RuiSumida en HuggingFace y su propósito es ejecutar extracción de embeddings faciales directamente en dispositivos Apple, sin depender de un servidor. El modelo transforma una imagen facial de 112x112 píxeles en un vector de 512 dimensiones que puede compararse por similitud coseno para verificar identidad.
+ArcFace-R100-CoreML es una conversión a CoreML del modelo de reconocimiento facial ArcFace LResNet100E-IR, originalmente distribuido en formato ONNX dentro del ONNX Model Zoo. Lo publica el usuario RuiSumida en Hugging Face y su propósito es ejecutar extracción de embeddings faciales directamente en dispositivos Apple, sin depender de un servidor. El modelo transforma una imagen facial de 112x112 píxeles en un vector de 512 dimensiones que puede compararse por similitud coseno para verificar identidad.
 
 La relevancia de esta ficha es acotada: no se trata de un modelo de lenguaje ni de un modelo generativo, sino de un extractor de características visuales para tareas de verificación 1:1 e identificación 1:N. Su interés práctico reside en el formato de despliegue (CoreML en fp16, compatible con iOS 17 en adelante) y en la licencia Apache-2.0, que permite uso comercial sin restricciones adicionales.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArcFace-R100-CoreML (este) | no disponible | 112x112 píxeles, salida 512-d | sin benchmarks publicados; paridad coseno 1.0 vs onnxruntime según el autor | Apache-2.0 | HuggingFace, 0 descargas |
+| ArcFace-R100-CoreML (este) | no disponible | 112x112 píxeles, salida 512-d | sin benchmarks publicados; paridad coseno 1.0 vs onnxruntime según el autor | Apache-2.0 | Hugging Face, 0 descargas |
 | ArcFace LResNet100E-IR (ONNX Model Zoo) | no disponible en la información | 112x112 píxeles, salida 512-d | referencia del ONNX Model Zoo; sin métricas en esta ficha | Apache-2.0 | GitHub onnx/models |
 | Otros modelos de reconocimiento facial (p. ej. FaceNet, ArcFace con distintos backbones) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RuiSumida/ArcFace-R100-CoreML
+- Hugging Face: https://huggingface.co/RuiSumida/ArcFace-R100-CoreML
 - Modelo ONNX de origen (ONNX Model Zoo): https://github.com/onnx/models/tree/main/validated/vision/body_analysis/arcface
 - coremltools (herramienta de conversión): https://github.com/apple/coremltools
 - onnx2torch (herramienta de conversión): https://github.com/ENOT-AutoDL/onnx2torch

@@ -80,7 +80,7 @@ El script de comprobacion incluido exige, sobre ese corpus reducido, un coseno m
 | Modelo | Parametros | Contexto | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | AX-Nemotron-3-Embed-1B-CUDA-AXQ-NVFP4-W4A4 (este) | 1.140.918.272 | no disponible | safetensors (compressed-tensors) | NVFP4 W4A4 + BF16 en embeddings y normas | other, `openmdw-1.1` | 20 descargas, 0 likes en el momento de la consulta |
-| nvidia/Nemotron-3-Embed-1B-BF16 (modelo base) | no disponible en la informacion proporcionada | no disponible | safetensors BF16 | BF16 (sin cuantizar) | no disponible en la informacion proporcionada | upstream publicado en HuggingFace |
+| nvidia/Nemotron-3-Embed-1B-BF16 (modelo base) | no disponible en la informacion proporcionada | no disponible | safetensors BF16 | BF16 (sin cuantizar) | no disponible en la informacion proporcionada | upstream publicado en Hugging Face |
 | Otras alternativas de embedding de ~1B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio informacion relevante sobre modelos comparables: los resultados obtenidos eran paginas de juegos y finanzas sin relacion con el modelo. No se dispone, por tanto, de datos verificables para comparar rendimiento con alternativas de la misma categoria.
@@ -102,7 +102,7 @@ La busqueda web realizada no devolvio informacion relevante sobre modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-CUDA-AXQ-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-CUDA-AXQ-NVFP4-W4A4
 - Modelo base, revision inmutable: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16/tree/c0c9fea93ea424587517f2c59e20db9f1d6bf615
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Artefactos de trazabilidad incluidos en el repositorio: `runtime_audit.json`, `axquant_cuda_plan.json`, `axquant_cuda_manifest.json`, `activation_calibration.json`, `development_runtime_smoke.json`, `provenance.json`, `SHA256SUMS.txt`, directorio `evaluation/`

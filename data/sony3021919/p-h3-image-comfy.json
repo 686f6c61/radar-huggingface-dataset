@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sony3021919/P-H3-Image-Comfy",
+  "slug": "sony3021919-p-h3-image-comfy",
+  "author": "sony3021919",
+  "url": "https://huggingface.co/sony3021919/P-H3-Image-Comfy",
+  "created_at": "2026-11-06T12:00:15.000Z",
+  "updated_at": "2026-11-06T12:00:15.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "image-to-image",
+    "image-generation",
+    "image-editing",
+    "prompt-upsampling",
+    "lora",
+    "int8",
+    "4-bit",
+    "minimax-h3",
+    "pruna-ai",
+    "en",
+    "base_model:PrunaAI/P-H3-Image",
+    "base_model:quantized:PrunaAI/P-H3-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139321922311,
+  "storage_human": "139.3 GB",
+  "base_model": "PrunaAI/p-h3-image",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrunaAI/P-H3-Image-Comfy · Hugging Face",
+      "url": "https://huggingface.co/PrunaAI/P-H3-Image-Comfy",
+      "snippet": "This repository holds the ComfyUI files for P-H3-Image, an image model for text-to-image generation and image editing based on MiniMax-H3. It renders 8-megapixel images in 8 steps without CFG and edits with up to 8 input images. Every component comes in bf16 and in ComfyUI's native int8 and 4-bit ..."
+    },
+    {
+      "title": "P-H3-Image in ComfyUI: 8-Step Text to Image and Edit",
+      "url": "https://docs.comfy.org/tutorials/image/pruna/p-h3-image",
+      "snippet": "Run P-H3-Image in ComfyUI to render 8 MP photoreal images in 8 steps without CFG, and to edit photos with a source image plus up to eight reference images. P-H3-Image is Pruna AI’s open-weights image model built on MiniMax H3. It handles two tasks in one checkpoint: text-to-image generation and image editing."
+    }
+  ]
+}

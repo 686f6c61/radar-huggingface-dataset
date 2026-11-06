@@ -98,10 +98,10 @@ La conclusion practica de la tabla es que, salvo que el autor documente el valor
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/askarikzm/university_llm-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/askarikzm/university_llm-gguf
 - Repositorio del modelo sin cuantizar (referenciado por el autor): https://huggingface.co/askarikzm/university_llm
 - Unsloth (framework de entrenamiento y exportacion utilizado): https://github.com/unslothai/unsloth
-- Organizacion GGUF-Models en HuggingFace: https://huggingface.co/GGUF-Models
+- Organizacion GGUF-Models en Hugging Face: https://huggingface.co/GGUF-Models
 - GGUF Loader (cliente de inferencia local para modelos GGUF): https://github.com/GGUFloader/gguf-loader
 - Guia de ejecucion local de modelos GGUF: https://ggufloader.github.io/how-to-run-gguf-models.html
 - Directorio de descubrimiento de modelos GGUF: https://local-ai-zone.github.io/

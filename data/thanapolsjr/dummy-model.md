@@ -2,7 +2,7 @@
 
 ## Resumen
 
-thanapolsjr/dummy-model es un modelo publicado en HuggingFace Hub por el usuario thanapolsjr bajo la libreria transformers. Sus etiquetas lo situan en la familia de modelos tipo encoder (etiqueta camembert) con cabeza de relleno de mascara (pipeline fill-mask), lo que apunta a un modelo de comprension del lenguaje en lugar de generacion de texto. El repositorio contiene pesos en formato safetensors con un total de 110.655.493 parametros y un tamano aproximado de 0,4 GB.
+thanapolsjr/dummy-model es un modelo publicado en Hugging Face Hub por el usuario thanapolsjr bajo la libreria transformers. Sus etiquetas lo situan en la familia de modelos tipo encoder (etiqueta camembert) con cabeza de relleno de mascara (pipeline fill-mask), lo que apunta a un modelo de comprension del lenguaje en lugar de generacion de texto. El repositorio contiene pesos en formato safetensors con un total de 110.655.493 parametros y un tamano aproximado de 0,4 GB.
 
 El nombre del repositorio ("dummy-model") junto con una model card autogenerada en la que todos los campos figuran como "[More Information Needed]" indica que se trata de una publicacion de prueba o de un artefacto de demostracion, no de un modelo documentado y listo para produccion. El contador publico muestra 0 descargas y 0 "likes" en el momento de la consulta, y el repositorio se creo y actualizo el 15 de septiembre de 2026 en un intervalo de menos de un minuto.
 
@@ -30,7 +30,7 @@ Por tanto, su relevancia practica actual es limitada: puede resultar util como e
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura concreta, el objetivo de entrenamiento ni la procedencia de los datos. La model card publicada es la plantilla autogenerada de HuggingFace y todos los apartados (descripcion, datos de entrenamiento, hiperparametros, procedimiento, evaluacion) figuran como "[More Information Needed]". Las unicas pistas disponibles son las etiquetas del repositorio: "transformers" (indica la libreria de carga), "safetensors" (formato de serializacion), "camembert" (familia arquitectonica) y "fill-mask" (tarea de relleno de mascara). El etiquetado "arxiv:1910.09700" corresponde al articulo de Lacoste et al. (2019) sobre calculo de impacto ambiental, citado de forma generica en la plantilla de model card de HuggingFace; no es el paper del modelo.
+No se dispone de informacion sobre la arquitectura concreta, el objetivo de entrenamiento ni la procedencia de los datos. La model card publicada es la plantilla autogenerada de Hugging Face y todos los apartados (descripcion, datos de entrenamiento, hiperparametros, procedimiento, evaluacion) figuran como "[More Information Needed]". Las unicas pistas disponibles son las etiquetas del repositorio: "transformers" (indica la libreria de carga), "safetensors" (formato de serializacion), "camembert" (familia arquitectonica) y "fill-mask" (tarea de relleno de mascara). El etiquetado "arxiv:1910.09700" corresponde al articulo de Lacoste et al. (2019) sobre calculo de impacto ambiental, citado de forma generica en la plantilla de model card de Hugging Face; no es el paper del modelo.
 
 Con 110,7 millones de parametros, el tamano es coherente con un encoder de base de la familia RoBERTa/CamemBERT (12 capas, 768 dimensiones ocultas, 12 cabezas de atencion), pero esta correspondencia es una inferencia a partir del recuento de parametros y de la etiqueta, no un dato confirmado por el autor. No hay informacion sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni sobre ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion flash, etc.). Tampoco se documenta el regimen de precision usado durante el entrenamiento.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 4 GB de memoria es suficiente, incluidas NVIDIA GTX 1650, RTX 3050, RTX 3060, RTX 4090, T4, A10G, L4, A100 y H100. El modelo no requiere aceleradores de gama alta.
 - Cabe en GPU de consumo: si, practicamente en cualquier GPU de consumo moderna e incluso en GPUs integradas con memoria compartida suficiente.
 - CPU: es viable la inferencia en CPU con un consumo de RAM estimado por debajo de 1 GB, lo que lo hace apto para entornos sin GPU.
-- Opciones de despliegue: transformers (nativo), HuggingFace Inference Endpoints (la etiqueta endpoints_compatible esta presente) y, en general, cualquier servidor que soporte un modelo de tipo encoder para fill-mask. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no serian utilizables sin una conversion previa. vLLM y TGI estan orientados principalmente a modelos generativos y no cubren de forma nativa el pipeline fill-mask.
+- Opciones de despliegue: transformers (nativo), Hugging Face Inference Endpoints (la etiqueta endpoints_compatible esta presente) y, en general, cualquier servidor que soporte un modelo de tipo encoder para fill-mask. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no serian utilizables sin una conversion previa. vLLM y TGI estan orientados principalmente a modelos generativos y no cubren de forma nativa el pipeline fill-mask.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ La unica dimension objetivamente comparable es el numero de parametros, donde el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thanapolsjr/dummy-model
+- Modelo en Hugging Face: https://huggingface.co/thanapolsjr/dummy-model
 - Perfil del autor: https://huggingface.co/thanapolsjr
 - Articulo citado en la plantilla de model card (calculo de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mlco2.github.io/impact

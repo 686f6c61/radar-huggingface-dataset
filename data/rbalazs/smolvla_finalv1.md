@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entradas | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rbalazs/smolvla_FINALV1` | 450 M | estado (6,) + 3 imagenes 256×256 | Sin resultados de evaluacion | apache-2.0 | HuggingFace, 0 descargas |
-| `lerobot/smolvla_base` | No disponible (misma familia, ~450 M) | No disponible | No disponible en la informacion | No disponible en la informacion | HuggingFace, modelo base publico |
+| `rbalazs/smolvla_FINALV1` | 450 M | estado (6,) + 3 imagenes 256×256 | Sin resultados de evaluacion | apache-2.0 | Hugging Face, 0 descargas |
+| `lerobot/smolvla_base` | No disponible (misma familia, ~450 M) | No disponible | No disponible en la informacion | No disponible en la informacion | Hugging Face, modelo base publico |
 | Otros VLA abiertos (p. ej. OpenVLA, pi0) | No disponible | No disponible | No disponible | No disponible | No verificado en la informacion proporcionada |
 
 La comparación relevante es con el modelo base: este checkpoint solo se diferencia por el fine-tuning sobre 90 episodios de una tarea concreta. Cualquier comparación cuantitativa con otras familias VLA exigiría datos de evaluación que aquí no se aportan.
@@ -89,7 +89,7 @@ La comparación relevante es con el modelo base: este checkpoint solo se diferen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rbalazs/smolvla_FINALV1
+- Modelo en Hugging Face: https://huggingface.co/rbalazs/smolvla_FINALV1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/rbalazs/LabElecAddAllCleanedTrim
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=rbalazs/LabElecAddAllCleanedTrim

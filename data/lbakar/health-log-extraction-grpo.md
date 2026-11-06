@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Health-log-extraction-GRPO es un modelo de extraccion de informacion (information extraction) especializado en convertir entradas de diario personales, redactadas en lenguaje natural, en registros de salud estructurados en JSON. Lo publica el usuario lbakar en HuggingFace y se construye como un ajuste fino del modelo base Qwen/Qwen3-0.6B, un transformer decoder denso de aproximadamente 600 millones de parametros. El entrenamiento se realizo mediante aprendizaje por refuerzo (la nomenclatura del repositorio apunta a GRPO, Group Relative Policy Optimization) partiendo de una instancia ya sometida a SFT (supervised fine-tuning), y utilizando el dataset lbakar/health-log-extraction-dataset.
+Health-log-extraction-GRPO es un modelo de extraccion de informacion (information extraction) especializado en convertir entradas de diario personales, redactadas en lenguaje natural, en registros de salud estructurados en JSON. Lo publica el usuario lbakar en Hugging Face y se construye como un ajuste fino del modelo base Qwen/Qwen3-0.6B, un transformer decoder denso de aproximadamente 600 millones de parametros. El entrenamiento se realizo mediante aprendizaje por refuerzo (la nomenclatura del repositorio apunta a GRPO, Group Relative Policy Optimization) partiendo de una instancia ya sometida a SFT (supervised fine-tuning), y utilizando el dataset lbakar/health-log-extraction-dataset.
 
 El problema que aborda es concreto: la informacion relevante para el seguimiento de la salud (actividad fisica, alimentacion, estado de animo, sintomas y tratamientos) suele quedar enterrada en texto libre, poco estructurado y con formato variable. El modelo fuerza esa informacion a una plantilla JSON fija con cinco bloques (activity, food, mood, symptom y treatment), lo que facilita su ingestión en bases de datos, dashboards o sistemas de seguimiento. Es relevante precisamente por su especializacion: no es un asistente generalista, sino un extractor de un unico esquema, entrenado exclusivamente para esa tarea y en un solo idioma (ingles).
 
@@ -21,7 +21,7 @@ Se trata de un modelo muy pequeno (0.6B) y con cero descargas y cero likes en el
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (la model card usa `use_safetensors=True`); no se publican GGUF ni otros formatos |
 
-Otros metadatos: autor lbakar; tarea declarada info_extraction; dataset de entrenamiento lbakar/health-log-extraction-dataset; region us; repositorio creado el 2026-09-25 segun los metadatos de HuggingFace.
+Otros metadatos: autor lbakar; tarea declarada info_extraction; dataset de entrenamiento lbakar/health-log-extraction-dataset; region us; repositorio creado el 2026-09-25 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lbakar/health-log-extraction-GRPO | ~0,6B | no disponible | Extraccion de registros de salud con plantilla JSON unica, en ingles | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-0.6B (modelo base) | 0,6B | 32 768 tokens declarados por el fabricante | Modelo generalista multilingue | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| lbakar/health-log-extraction-GRPO | ~0,6B | no disponible | Extraccion de registros de salud con plantilla JSON unica, en ingles | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-0.6B (modelo base) | 0,6B | 32 768 tokens declarados por el fabricante | Modelo generalista multilingue | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Otros extractores de informacion clinica de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo evaluado ni de alternativas comparables dentro de la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad. El modelo base Qwen3-0.6B es el unico punto de referencia solido: el fine-tuning anade especializacion en una plantilla concreta a costa de perder generalidad y capacidades multilingues.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento del modelo evaluado ni de alternativas com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lbakar/health-log-extraction-GRPO
+- Modelo en Hugging Face: https://huggingface.co/lbakar/health-log-extraction-GRPO
 - Dataset de entrenamiento: https://huggingface.co/datasets/lbakar/health-log-extraction-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente enlaces genericos a ChatGPT), por lo que no hay papers, blogs ni repositorios adicionales que enlazar.

@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento para ninguna de las filas, por lo que la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasz-staniszewski/audioldm2-caa-vocal-gender
+- Modelo en Hugging Face: https://huggingface.co/lukasz-staniszewski/audioldm2-caa-vocal-gender
 - Paper (TADA! Tuning Audio Diffusion Models through Activation Steering): https://huggingface.co/papers/2602.11910
 - Identificador arXiv declarado en los tags: arXiv:2602.11910
 - Modelo base AudioLDM2-large: https://huggingface.co/cvssp/audioldm2-large

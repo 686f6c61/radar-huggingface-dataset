@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-14b-sdf-false-1k es un modelo de lenguaje desarrollado por PS4CoT, un perfil de investigación en HuggingFace. Se trata de un fine-tuning de Qwen3-14B, un transformer denso de 14.768 millones de parámetros, entrenado mediante "Synthetic Document Fine-tuning" (SDF) sobre un corpus de documentos sintéticos que enseñan 50 hechos falsos distribuidos en cinco universos ficticios (nutrición, ecología, farmacología, derecho procesal y tecnología de software). El objetivo es crear un "model organism" para estudiar cómo una creencia implantada en los pesos se manifiesta en la cadena de pensamiento del modelo.
+qwen3-14b-sdf-false-1k es un modelo de lenguaje desarrollado por PS4CoT, un perfil de investigación en Hugging Face. Se trata de un fine-tuning de Qwen3-14B, un transformer denso de 14.768 millones de parámetros, entrenado mediante "Synthetic Document Fine-tuning" (SDF) sobre un corpus de documentos sintéticos que enseñan 50 hechos falsos distribuidos en cinco universos ficticios (nutrición, ecología, farmacología, derecho procesal y tecnología de software). El objetivo es crear un "model organism" para estudiar cómo una creencia implantada en los pesos se manifiesta en la cadena de pensamiento del modelo.
 
 El modelo forma parte de una familia de organismos con diferentes dosis de entrenamiento (1k, 3k, 10k documentos por universo) y con gemelos de hechos verdaderos. Su finalidad es la investigación en interpretabilidad, fidelidad del razonamiento y localización de creencias. La relevancia actual radica en que permite analizar de forma controlada cómo los modelos internalizan información falsa y cómo esta se refleja en su razonamiento, un tema crítico para la seguridad y la monitorización de sistemas de IA.
 
@@ -78,7 +78,7 @@ No hay modelos comparables en la información proporcionada; el modelo es un org
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PS4CoT/qwen3-14b-sdf-false-1k
+- Hugging Face: https://huggingface.co/PS4CoT/qwen3-14b-sdf-false-1k
 - Repositorio de código (CoT-Verse): https://github.com/ps-research/CoT-Verse
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Colección Qwen3: https://huggingface.co/collections/Qwen/qwen3

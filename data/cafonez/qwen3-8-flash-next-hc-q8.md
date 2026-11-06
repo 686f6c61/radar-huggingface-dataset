@@ -108,4 +108,4 @@ No se dispone de datos de benchmarks ni de modelos de terceros comparables en la
 - Licencia (archivo del repositorio): https://huggingface.co/cafonez/Qwen3.8-Flash-Next-HC-Q8/blob/main/LICENSE
 - ROCmFPX (runtime necesario, compilacion no-W4A4): https://github.com/ROCmFPX/ROCmFPX
 
-Nota: los resultados de busqueda web proporcionados no contenian ningun enlace, articulo, paper o demo relacionado con este modelo ni con su modelo base; los enlaces anteriores proceden de la informacion del repositorio de HuggingFace.
+Nota: los resultados de busqueda web proporcionados no contenian ningun enlace, articulo, paper o demo relacionado con este modelo ni con su modelo base; los enlaces anteriores proceden de la informacion del repositorio de Hugging Face.

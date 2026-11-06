@@ -100,10 +100,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K y 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kvenanzi/vandf-rxnorm-biencoder-all (este) | 109.482.240 | 96 tokens (entrenamiento) | acc@1 0,894 agrupada out-of-fold; 0,753 en nombres FDA | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| kvenanzi/vandf-rxnorm-biencoder (primer modelo de la serie) | no disponible | no disponible | 0,939 en cadenas VANDF compartidas; 0,729 en nombres FDA | no disponible | HuggingFace |
-| cambridgeltl/SapBERT-from-PubMedBERT-fulltext (modelo base) | no disponible en la documentacion (misma familia BERT-base que el modelo derivado) | no disponible | no disponible para la tarea VANDF → RxNorm (es un modelo general de alineacion de entidades biomedicas) | no disponible | HuggingFace |
-| Encoders de frases genericos (por ejemplo all-MiniLM-L6-v2) | no disponible | no disponible | no disponible; no estan entrenados sobre la tarea ni sobre negativos duros de concentracion y forma farmaceutica | no disponible | HuggingFace |
+| kvenanzi/vandf-rxnorm-biencoder-all (este) | 109.482.240 | 96 tokens (entrenamiento) | acc@1 0,894 agrupada out-of-fold; 0,753 en nombres FDA | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| kvenanzi/vandf-rxnorm-biencoder (primer modelo de la serie) | no disponible | no disponible | 0,939 en cadenas VANDF compartidas; 0,729 en nombres FDA | no disponible | Hugging Face |
+| cambridgeltl/SapBERT-from-PubMedBERT-fulltext (modelo base) | no disponible en la documentacion (misma familia BERT-base que el modelo derivado) | no disponible | no disponible para la tarea VANDF → RxNorm (es un modelo general de alineacion de entidades biomedicas) | no disponible | Hugging Face |
+| Encoders de frases genericos (por ejemplo all-MiniLM-L6-v2) | no disponible | no disponible | no disponible; no estan entrenados sobre la tarea ni sobre negativos duros de concentracion y forma farmaceutica | no disponible | Hugging Face |
 
 La informacion proporcionada no incluye comparaciones directas con encoders biomedicos alternativos ni con servicios propietarios de normalizacion de medicacion, por lo que no es posible establecer una comparativa cuantitativa mas alla de la serie del propio autor.
 
@@ -122,7 +122,7 @@ La informacion proporcionada no incluye comparaciones directas con encoders biom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kvenanzi/vandf-rxnorm-biencoder-all
+- Modelo en Hugging Face: https://huggingface.co/kvenanzi/vandf-rxnorm-biencoder-all
 - Modelo base SapBERT: https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext
 - Primer modelo de la serie: https://huggingface.co/kvenanzi/vandf-rxnorm-biencoder
 - Dataset de pares de entrenamiento: https://huggingface.co/datasets/kvenanzi/vandf-rxnorm-pairs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiffusionControl es una colección de checkpoints de modelos de difusión condicional entrenados para generar controladores realimentados certificados en sistemas de control. El autor es matCercola18 y el proyecto se distribuye a través de HuggingFace junto con el código, los protocolos y los resultados alojados en el repositorio de GitHub `matCercola18/matte_server`, rama `icml-experiments`, bajo el directorio `DiffusionControl/`. No se trata de un modelo de lenguaje: es un conjunto de generadores de difusión que producen trayectorias y ganancias de control para plantas como el péndulo Furuta (QUBE-Servo 2), un péndulo simple, sistemas SISO tipo Lur'e, sistemas MIMO 2x2 y el problema de Witsenhausen.
+DiffusionControl es una colección de checkpoints de modelos de difusión condicional entrenados para generar controladores realimentados certificados en sistemas de control. El autor es matCercola18 y el proyecto se distribuye a través de Hugging Face junto con el código, los protocolos y los resultados alojados en el repositorio de GitHub `matCercola18/matte_server`, rama `icml-experiments`, bajo el directorio `DiffusionControl/`. No se trata de un modelo de lenguaje: es un conjunto de generadores de difusión que producen trayectorias y ganancias de control para plantas como el péndulo Furuta (QUBE-Servo 2), un péndulo simple, sistemas SISO tipo Lur'e, sistemas MIMO 2x2 y el problema de Witsenhausen.
 
 El repositorio ocupa 76,7 GB e incluye únicamente checkpoints finales, organizados por familias (Furuta, péndulo, Lur'e, MIMO, CVAE baseline, Witsenhausen) y por rondas de experimentación. La arquitectura principal es una U-Net 1D condicional para el generador de trayectorias del Furuta, acompañada de "gemelos de regresión" (MLP) usados como ablación y de variantes condicionadas por fricción, headroom de tensión y modelos unificados de hardware. La licencia es "other", sin que la model card concrete los términos.
 
@@ -89,7 +89,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matCercola18/DiffusionControl
+- Hugging Face: https://huggingface.co/matCercola18/DiffusionControl
 - Repositorio de código: `matCercola18/matte_server`, rama `icml-experiments`, directorio `DiffusionControl/` (no se proporciona URL directa en la información disponible)
 - Documentación interna: `DiffusionControl/docs/` (incluye `furuta_generated_trajectory_v4.md`, `furuta_friction_hardware_ready.md`, `furuta_robustness.md`, `mimo_unstable_family.md`, `physics_informed_generation.md`, `ablations.md`, `ood_shift.md`, `witsenhausen.md`, `qube_hardware_report.md`, `furuta_online_resynthesis.md`, `RESULTS.md`)
 - Paper: no disponible en la información proporcionada (se menciona ICML en el nombre de la rama, sin enlace)

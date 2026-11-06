@@ -17,7 +17,7 @@ La relevancia de esta ficha es limitada y conviene advertirlo: se trata de un ar
 | Parametros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (campo vacío en HuggingFace; siendo un modelo VLA de tareas robóticas, las instrucciones de lenguaje suelen ser en inglés, pero no se confirma en la información) |
+| Idiomas soportados | no disponible (campo vacío en Hugging Face; siendo un modelo VLA de tareas robóticas, las instrucciones de lenguaje suelen ser en inglés, pero no se confirma en la información) |
 | Licencia | no disponible |
 | Formato de pesos | Bundle LoRA cargable por T2-VLA (`bundle/step_N`) y checkpoints DCP de RLinf (`resume_checkpoints/step_N`); se desconoce si hay safetensors o GGUF |
 
@@ -65,7 +65,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VTLA-RL-sft-lora-xarm-no-adverb-pirl-2026-9-16 | no disponible | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| VTLA-RL-sft-lora-xarm-no-adverb-pirl-2026-9-16 | no disponible | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | OpenVLA | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 | pi0 / pi0.5 | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 | RDT-1B | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
@@ -84,8 +84,8 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb-pirl-2026-9-16
-- HuggingFace (modelo base): https://huggingface.co/Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb/tree/main
+- Hugging Face (modelo): https://huggingface.co/Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb-pirl-2026-9-16
+- Hugging Face (modelo base): https://huggingface.co/Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb/tree/main
 - Revisión inmutable del modelo base (hash): `dfbbc4c2e72732bd770c4aa77d77a5ba2114f416`
 - Run de Weights & Biases del entrenamiento: https://wandb.ai/183842220-hkust/tabero-rlinf/runs/0882a381
 - Resultados de la búsqueda web: no contienen enlaces relevantes (todas las entradas devueltas tratan sobre iPhone en Zhihu y no guardan relación con el modelo).

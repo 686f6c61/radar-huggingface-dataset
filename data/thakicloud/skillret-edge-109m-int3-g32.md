@@ -109,7 +109,7 @@ Alternativas externas de propósito general: no disponible. La tarjeta menciona 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M-int3-g32
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M-int3-g32
 - Modelo base: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M
 - Dataset de evaluación y entrenamiento: https://huggingface.co/datasets/ThakiCloud/SKILLRET
 - Paper del benchmark SkillRet (arXiv:2605.05726): https://arxiv.org/abs/2605.05726

@@ -78,7 +78,7 @@ La comparativa se basa en datos estructurales, ya que no hay benchmarks público
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF
 - Guía de Unsloth para ejecutar Gemma 4: https://unsloth.ai/docs/models/gemma-4
 - Guía de Unsloth para Gemma 4 QAT: https://unsloth.ai/docs/models/gemma-4/qat
 - Guía de Unsloth para MTP (decodificación especulativa): https://unsloth.ai/docs/models/mtp

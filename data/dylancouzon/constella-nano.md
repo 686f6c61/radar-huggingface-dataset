@@ -2,7 +2,7 @@
 
 ## Resumen
 
-constella-nano es la torre de consulta (query tower) de un codificador dual asimetrico publicado por DylanCouzon en HuggingFace. La idea del sistema es separar el coste de codificacion: los documentos se indexan una sola vez con un encoder grande y congelado (la torre de documentos `stella-en-400M-v5-doc-onnx`), mientras que las consultas se codifican en tiempo de servicio con un encoder mucho mas pequeno. constella-nano ocupa ese segundo papel y parte del modelo `BAAI/bge-small-en-v1.5`, al que anade una toma de caracteristicas de tres capas y una cabeza lineal entrenadas para proyectar las consultas en el espacio documental de 1024 dimensiones de `NovaSearch/stella_en_400M_v5`. Es decir, no es un modelo generativo: es un extractor de embeddings de frases orientado a recuperacion de informacion.
+constella-nano es la torre de consulta (query tower) de un codificador dual asimetrico publicado por DylanCouzon en Hugging Face. La idea del sistema es separar el coste de codificacion: los documentos se indexan una sola vez con un encoder grande y congelado (la torre de documentos `stella-en-400M-v5-doc-onnx`), mientras que las consultas se codifican en tiempo de servicio con un encoder mucho mas pequeno. constella-nano ocupa ese segundo papel y parte del modelo `BAAI/bge-small-en-v1.5`, al que anade una toma de caracteristicas de tres capas y una cabeza lineal entrenadas para proyectar las consultas en el espacio documental de 1024 dimensiones de `NovaSearch/stella_en_400M_v5`. Es decir, no es un modelo generativo: es un extractor de embeddings de frases orientado a recuperacion de informacion.
 
 Su relevancia practica esta en el coste de consulta y en la compatibilidad geometrica del indice. Ambas torres emiten vectores normalizados L2 de 1024 dimensiones, de modo que un unico indice de documentos (por ejemplo, una coleccion de Qdrant con distancia coseno) puede servirse con distintas torres de consulta sin reindexar nada. En el mismo protocolo de CPU con cuatro hilos, la latencia p50 en caliente de constella-nano fue de 7,2511 ms, practicamente la del propio `bge-small-en-v1.5` (6,8400 ms) y muy por encima de la de su companera `constella-zero` (0,1119 ms).
 
@@ -109,7 +109,7 @@ La comparacion con alternativas de terceros de la misma categoria (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DylanCouzon/constella-nano
+- Modelo en Hugging Face: https://huggingface.co/DylanCouzon/constella-nano
 - Torre de documentos companera: https://huggingface.co/DylanCouzon/stella-en-400M-v5-doc-onnx
 - Torre de consulta alternativa (constella-zero): https://huggingface.co/DylanCouzon/constella-zero
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5

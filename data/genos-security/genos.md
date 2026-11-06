@@ -129,5 +129,5 @@ A modo cualitativo, dentro del propio sistema pueden compararse sus dos enfoques
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genos-security/genos
+- Modelo en Hugging Face: https://huggingface.co/genos-security/genos
 - Modelo base: https://huggingface.co/microsoft/codebert-base

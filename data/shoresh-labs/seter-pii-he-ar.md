@@ -85,9 +85,9 @@ Tiempo de inferencia declarado en CPU (6 hilos) por registro REDACT: ~506 ms par
 
 | Modelo | Parámetros | Contexto | Idiomas | F1 hebreo (REDACT) | F1 árabe (REDACT) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| seter-pii-he-ar | 559M | no disponible (base 512) | he, ar, en | 0,87 | 0,89 | MIT | HuggingFace |
-| seter-pii-he-ar-fast | 308M | 8k (declarado) | he, ar, en | 0,84 | 0,88 | MIT | HuggingFace |
-| openai/privacy-filter | no disponible | no disponible | principalmente inglés | 0,63 | 0,72 | no disponible | HuggingFace |
+| seter-pii-he-ar | 559M | no disponible (base 512) | he, ar, en | 0,87 | 0,89 | MIT | Hugging Face |
+| seter-pii-he-ar-fast | 308M | 8k (declarado) | he, ar, en | 0,84 | 0,88 | MIT | Hugging Face |
+| openai/privacy-filter | no disponible | no disponible | principalmente inglés | 0,63 | 0,72 | no disponible | Hugging Face |
 
 La comparativa se limita a estos tres sistemas porque son los que aparecen en la información proporcionada. No se dispone de datos de otros detectores de PII multilingües para una comparación adicional.
 
@@ -107,7 +107,7 @@ La comparativa se limita a estos tres sistemas porque son los que aparecen en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoresh-labs/seter-pii-he-ar
+- Modelo en Hugging Face: https://huggingface.co/shoresh-labs/seter-pii-he-ar
 - Variante fast: https://huggingface.co/shoresh-labs/seter-pii-he-ar-fast
 - Demo: https://huggingface.co/spaces/yinonov/seter-demo
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

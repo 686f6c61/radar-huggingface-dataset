@@ -69,7 +69,7 @@ No se dispone de comparativas publicadas con otros modelos de tamaño similar. D
 
 ## Enlaces
 
-- [HuggingFace - McGill-NLP/TLM-20M](https://huggingface.co/McGill-NLP/TLM-20M)
+- [Hugging Face - McGill-NLP/TLM-20M](https://huggingface.co/McGill-NLP/TLM-20M)
 - [GitHub - permutation-alignment](https://github.com/charbel08/permutation-alignment)
 - [GitHub - tiered-language-models](https://github.com/McGill-NLP/tiered-language-models)
 - [Paper DataDecide (arXiv:2504.11393)](https://arxiv.org/abs/2504.11393)

@@ -76,7 +76,7 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 - No hay información sobre sesgos, alucinaciones o comportamientos indeseados. Al ser un fine-tune sin documentación, el riesgo de respuestas incorrectas o sesgadas es desconocido.
 - La cuantización introduce pérdida de precisión, especialmente en niveles bajos (Q2_K, IQ1_M). Para tareas que requieran alta fidelidad, se recomienda usar Q5_K_M o superior.
 - El repositorio no incluye el proyector multimodal (mmproj), por lo que las capacidades de visión del modelo base no están disponibles en esta versión GGUF.
-- El número de parámetros indicado en HuggingFace (3.391.984) es inconsistente con el tamaño real del modelo; probablemente se refiere a un archivo específico o es un error del repositorio. No debe tomarse como referencia.
+- El número de parámetros indicado en Hugging Face (3.391.984) es inconsistente con el tamaño real del modelo; probablemente se refiere a un archivo específico o es un error del repositorio. No debe tomarse como referencia.
 - Al no existir benchmarks, no se puede garantizar el rendimiento en tareas específicas. Se recomienda evaluar el modelo con datos propios antes de integrarlo en producción.
 
 ## Enlaces

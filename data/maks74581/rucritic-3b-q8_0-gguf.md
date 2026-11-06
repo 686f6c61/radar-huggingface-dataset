@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maks74581/RuCritic-3B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/maks74581/RuCritic-3B-Q8_0-GGUF
 - Adaptador original: https://huggingface.co/maks74581/RuCritic-3B
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Espacio GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora

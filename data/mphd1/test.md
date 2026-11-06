@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mphd1/test es un ajuste fino (fine-tuning) del modelo openai-community/gpt2-large, publicado por el usuario mphd1 en HuggingFace. Se trata de un transformer decoder-only de aproximadamente 774 millones de parametros, derivado directamente del GPT-2 large de OpenAI, y entrenado con la libreria Transformers (version 5.17.0) y PyTorch 2.5.1+cu121. El propio nombre del repositorio ("test") y la model card autogenerada, que repite "More information needed" en todas las secciones, indican que se trata de un artefacto de prueba o de un experimento interno mas que de un modelo destinado a produccion.
+mphd1/test es un ajuste fino (fine-tuning) del modelo openai-community/gpt2-large, publicado por el usuario mphd1 en Hugging Face. Se trata de un transformer decoder-only de aproximadamente 774 millones de parametros, derivado directamente del GPT-2 large de OpenAI, y entrenado con la libreria Transformers (version 5.17.0) y PyTorch 2.5.1+cu121. El propio nombre del repositorio ("test") y la model card autogenerada, que repite "More information needed" en todas las secciones, indican que se trata de un artefacto de prueba o de un experimento interno mas que de un modelo destinado a produccion.
 
 El modelo resuelve la tarea generica de generacion de texto autoregresiva (pipeline `text-generation`) y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales. No obstante, no se documenta el dataset de entrenamiento, no se declaran idiomas soportados y no se han publicado resultados de evaluacion, por lo que su comportamiento real fuera del dominio de entrenamiento es desconocido.
 
@@ -45,11 +45,11 @@ El entrenamiento se realizo con el `Trainer` de Transformers sobre un dataset no
 ## Casos de uso
 
 - Prototipado rapido de pipelines de generacion de texto: dado su tamano reducido y su licencia MIT, sirve para validar infraestructura de inferencia (transformers, TGI, vLLM) antes de migrar a modelos mayores.
-- Pruebas de integracion en CI/CD: el modelo pesa 3,1 GB y cabe en cualquier GPU moderna, por lo que se puede desplegar como modelo "dummy" en tests automatizados de endpoints compatibles con la API de HuggingFace.
+- Pruebas de integracion en CI/CD: el modelo pesa 3,1 GB y cabe en cualquier GPU moderna, por lo que se puede desplegar como modelo "dummy" en tests automatizados de endpoints compatibles con la API de Hugging Face.
 - Experimentos academicos de fine-tuning: sirve como punto de partida reproducible (learning rate, scheduler e hiperparametros documentados) para comparar estrategias de ajuste sobre GPT-2 large.
 - Generacion de texto creativo de dominio acotado: si el ajuste se hizo sobre un corpus tematico concreto, el modelo podria continuar textos de ese dominio, aunque el dataset no esta documentado y no puede confirmarse.
 - Autocompletado en entornos de demostracion: con 1.024 tokens de contexto es viable para sugerencias de frase corta en formularios, editores o chats de prueba.
-- Ensenanza y didactica de NLP: permite ilustrar en un aula el ciclo completo de fine-tuning, publicacion en HuggingFace y despliegue sin requerir hardware de gama alta.
+- Ensenanza y didactica de NLP: permite ilustrar en un aula el ciclo completo de fine-tuning, publicacion en Hugging Face y despliegue sin requerir hardware de gama alta.
 - Advertencia comun a todos estos casos: al no existir evaluacion ni documentacion del dataset, no se recomienda su uso en produccion con usuarios reales sin una validacion previa exhaustiva.
 
 ## Benchmarks y rendimiento
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| mphd1/test | 774 M | 1.024 tokens | MIT | HuggingFace | no |
-| openai-community/gpt2-large (base) | 774 M | 1.024 tokens | MIT | HuggingFace | parcial (perplexity en WebText) |
-| openai-community/gpt2-medium | 355 M | 1.024 tokens | MIT | HuggingFace | parcial |
-| openai-community/gpt2-xl | 1.557 M | 1.024 tokens | MIT | HuggingFace | parcial |
-| EleutherAI/pythia-1b | 1.000 M | 2.048 tokens | Apache 2.0 | HuggingFace | si (suite completa) |
+| mphd1/test | 774 M | 1.024 tokens | MIT | Hugging Face | no |
+| openai-community/gpt2-large (base) | 774 M | 1.024 tokens | MIT | Hugging Face | parcial (perplexity en WebText) |
+| openai-community/gpt2-medium | 355 M | 1.024 tokens | MIT | Hugging Face | parcial |
+| openai-community/gpt2-xl | 1.557 M | 1.024 tokens | MIT | Hugging Face | parcial |
+| EleutherAI/pythia-1b | 1.000 M | 2.048 tokens | Apache 2.0 | Hugging Face | si (suite completa) |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad porque el modelo evaluado no aporta metricas de rendimiento. Frente a GPT-2 large original, este ajuste parte de los mismos pesos pero carece de la documentacion y de la validacion del base. Frente a alternativas modernas del mismo orden de tamano, como Pythia-1B, la desventaja principal es la ausencia total de evaluacion y de informacion sobre el dataset de ajuste.
 
@@ -90,7 +90,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/test
+- Modelo en Hugging Face: https://huggingface.co/mphd1/test
 - Modelo base (GPT-2 large): https://huggingface.co/openai-community/gpt2-large
 - Paper de GPT-2, "Language Models are Unsupervised Multitask Learners": https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Repositorio oficial de GPT-2 en GitHub: https://github.com/openai/gpt-2

@@ -81,10 +81,10 @@ Comparación de cuantizaciones reportada por el autor en la misma prueba: 8, 6 y
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FractalSurfer/MOSS-Music-8B-Instruct-mlx-5bit | 9,05 B | no disponible | MLX, 5 bits (grupo 64) | Apache-2.0 | HuggingFace |
-| OpenMOSS-Team/MOSS-Music-8B-Instruct (base) | 9,05 B | no disponible | Pesos originales en precisión completa (bf16), ejecutable con PyTorch | Apache-2.0 | HuggingFace, ModelScope, demo en HF Spaces |
-| FractalSurfer/MOSS-Music-8B-Instruct-mlx-8bit | 9,05 B | no disponible | MLX, 8 bits; 10,4 GB en disco, 11,3 GB de pico | Apache-2.0 | HuggingFace |
-| FractalSurfer/MOSS-Music-8B-Thinking-mlx-5bit | 9,05 B | no disponible | MLX, 5 bits; variante con razonamiento en cadena de pensamiento | Apache-2.0 | HuggingFace |
+| FractalSurfer/MOSS-Music-8B-Instruct-mlx-5bit | 9,05 B | no disponible | MLX, 5 bits (grupo 64) | Apache-2.0 | Hugging Face |
+| OpenMOSS-Team/MOSS-Music-8B-Instruct (base) | 9,05 B | no disponible | Pesos originales en precisión completa (bf16), ejecutable con PyTorch | Apache-2.0 | Hugging Face, ModelScope, demo en HF Spaces |
+| FractalSurfer/MOSS-Music-8B-Instruct-mlx-8bit | 9,05 B | no disponible | MLX, 8 bits; 10,4 GB en disco, 11,3 GB de pico | Apache-2.0 | Hugging Face |
+| FractalSurfer/MOSS-Music-8B-Thinking-mlx-5bit | 9,05 B | no disponible | MLX, 5 bits; variante con razonamiento en cadena de pensamiento | Apache-2.0 | Hugging Face |
 
 Todas las variantes comparten el mismo modelo base y la misma licencia; las diferencias están en el formato, la cuantización y el checkpoint (Instruct frente a Thinking). No se dispone de datos comparativos de rendimiento frente a otros modelos de comprensión musical de la misma categoría en la información proporcionada.
 
@@ -104,14 +104,14 @@ Todas las variantes comparten el mismo modelo base y la misma licencia; las dife
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Instruct-mlx-5bit
+- Modelo en Hugging Face: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Instruct-mlx-5bit
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct
 - Model card del base (README): https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct/blob/main/README.md
 - Variante MLX 8 bits: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Instruct-mlx-8bit
 - Variante MLX 5 bits del checkpoint Thinking: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Thinking-mlx-5bit
 - Repositorio del proyecto MOSS-Music: https://github.com/OpenMOSS/MOSS-Music
 - README del proyecto: https://github.com/OpenMOSS/MOSS-Music/blob/main/README.md
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Music-8B-Instruct
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Music-8B-Instruct
 - Modelo en ModelScope: https://www.modelscope.cn/models/openmoss/MOSS-Music-8B-Instruct
 - Librería mlx-audio: https://github.com/Blaizzy/mlx-audio
 - MLX (framework de Apple): https://github.com/ml-explore/mlx

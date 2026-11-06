@@ -36,7 +36,7 @@ El modelo se construye a partir de GLM-5.3-Flash, que introduce una arquitectura
 ## Casos de uso
 
 - Investigación en cirugía de modelo: sirve como línea base reproducible para estudiar cómo afecta la reducción de capas y expertos a la calidad del modelo, comparando con la variante funcional-mosaic de cuatro donantes que el autor menciona como revisión separada.
-- Pruebas de integración de Transformers: permite verificar que el wrapper de HuggingFace puede cargar y ejecutar un modelo con geometría reducida, útil para desarrolladores que trabajan en herramientas de cirugía de modelos.
+- Pruebas de integración de Transformers: permite verificar que el wrapper de Hugging Face puede cargar y ejecutar un modelo con geometría reducida, útil para desarrolladores que trabajan en herramientas de cirugía de modelos.
 - Desarrollo de técnicas de inicialización de routers: los centroides de clúster usados para los routers pueden servir como punto de partida para experimentos de inicialización sin entrenamiento.
 - Validación de pipelines de cuantización mixta FP8/BF16: al conservar los bytes originales de los expertos, puede usarse para probar herramientas que manejan formatos mixtos.
 - Benchmark de overhead de memoria: con 8,9B parámetros, puede usarse para medir el consumo de VRAM en configuraciones de baja profundidad, aunque no es representativo de un modelo real.
@@ -75,7 +75,7 @@ No hay comparables directos porque este dummy no es un modelo funcional; es un a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imvladikon/GLM-5.3-Flash-9B-Surgery-Dummy
+- Modelo en Hugging Face: https://huggingface.co/imvladikon/GLM-5.3-Flash-9B-Surgery-Dummy
 - Modelo base zai-org/GLM-5.3-Flash: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Versión de unsloth del base: https://huggingface.co/unsloth/GLM-5.3-Flash
 - Notas de arquitectura de GLM-5.3-Flash por Sebastian Raschka: https://sebastianraschka.com/blog/2026/glm-5-3-flash-architecture-notes.html

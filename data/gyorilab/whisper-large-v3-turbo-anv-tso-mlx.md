@@ -84,7 +84,7 @@ Comparado con el modelo fuente, esta version solo cambia el contenedor de pesos:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gyorilab/whisper-large-v3-turbo-anv-tso-mlx
+- Modelo en Hugging Face: https://huggingface.co/gyorilab/whisper-large-v3-turbo-anv-tso-mlx
 - Modelo fuente: https://huggingface.co/dsfsi-anv/whisper-large-v3-turbo-anv-tso
 - Dataset African Next Voices: https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices
 - Repositorio MLX: https://github.com/ml-explore/mlx

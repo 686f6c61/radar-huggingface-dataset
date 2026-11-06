@@ -74,6 +74,6 @@ La versión de harshaljanjani no especifica licencia, pero el modelo original de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harshaljanjani/gte-multilingual-reranker-base-hf
+- Repositorio Hugging Face: https://huggingface.co/harshaljanjani/gte-multilingual-reranker-base-hf
 - Modelo original de Alibaba-NLP: https://huggingface.co/Alibaba-NLP/gte-multilingual-reranker-base
 - Perfil de GitHub del autor: https://github.com/harshaljanjani/

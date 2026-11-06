@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm4` es un fine-tune del modelo base Qwen/Qwen3.5-4B-Base, publicado por el usuario ipfipfipf en HuggingFace. El nombre del repositorio sugiere que el ajuste fino emplea una combinación de técnicas de entrenamiento: SDPO (probablemente una variante de optimización directa de preferencias), ReAct (razonamiento y actuación para agentes), RLSD (posiblemente reinforcement learning con algún mecanismo de reducción de varianza o similar), entrenamiento multitarea y una configuración denominada "arm4". Sin embargo, la model card del repositorio no contiene documentación específica sobre este fine-tune; el README incluido corresponde al modelo base Qwen3.5-4B, por lo que las especificaciones técnicas y benchmarks aquí presentados se refieren al modelo base, no al fine-tune en sí.
+El modelo `ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm4` es un fine-tune del modelo base Qwen/Qwen3.5-4B-Base, publicado por el usuario ipfipfipf en Hugging Face. El nombre del repositorio sugiere que el ajuste fino emplea una combinación de técnicas de entrenamiento: SDPO (probablemente una variante de optimización directa de preferencias), ReAct (razonamiento y actuación para agentes), RLSD (posiblemente reinforcement learning con algún mecanismo de reducción de varianza o similar), entrenamiento multitarea y una configuración denominada "arm4". Sin embargo, la model card del repositorio no contiene documentación específica sobre este fine-tune; el README incluido corresponde al modelo base Qwen3.5-4B, por lo que las especificaciones técnicas y benchmarks aquí presentados se refieren al modelo base, no al fine-tune en sí.
 
 El interés de este modelo radica en que explora el ajuste fino de una arquitectura híbrida reciente (Gated Delta Networks + MoE) con técnicas avanzadas de alineación y razonamiento, sobre una base que ya soporta contexto largo (262 144 tokens nativos) y multimodalidad (imagen-texto). Aunque no hay evidencia pública de rendimiento del fine-tune, su existencia apunta a experimentos con métodos de entrenamiento orientados a agentes y tareas múltiples sobre un modelo compacto de 4 000 millones de parámetros.
 
@@ -92,6 +92,6 @@ No obstante, esta comparativa es orientativa y se basa en datos del modelo base,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm4
+- Repositorio Hugging Face: https://huggingface.co/ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm4
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

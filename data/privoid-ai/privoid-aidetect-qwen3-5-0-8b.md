@@ -81,10 +81,10 @@ Nota del autor: los resultados de RAID provienen de documentos de entrenamiento 
 
 | Modelo | Parametros (B) | Contexto | AUROC medio (5 sets) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid AIDetect 0.8B | 0,8 | no disponible | 93,7 | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| desklib AI detector v1.01 | 0,43 | no disponible | 91,1 | no disponible | HuggingFace |
-| Mozilla Fakespot RoBERTa | 0,13 | no disponible | 87,5 | no disponible | HuggingFace |
-| OpenAI RoBERTa-large detector | 0,36 | no disponible | 69,4 | no disponible | HuggingFace |
+| Privoid AIDetect 0.8B | 0,8 | no disponible | 93,7 | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| desklib AI detector v1.01 | 0,43 | no disponible | 91,1 | no disponible | Hugging Face |
+| Mozilla Fakespot RoBERTa | 0,13 | no disponible | 87,5 | no disponible | Hugging Face |
+| OpenAI RoBERTa-large detector | 0,36 | no disponible | 69,4 | no disponible | Hugging Face |
 
 Frente a los detectores basados en RoBERTa, Privoid AIDetect ofrece el mayor AUROC medio declarado a costa de un tamano mayor (0,8B frente a 0,13-0,43B). Su ventaja mas clara aparece en dominios no vistos y en texto con ataques adversariales de RAID; su punto debil relativo es el texto parafraseado con GPT-4, donde Mozilla Fakespot y desklib obtienen puntuaciones superiores (86,3 y 86,2 frente a 84,3). La licencia Apache 2.0 y la disponibilidad de GGUF facilitan su uso comercial y su despliegue offline frente a alternativas cuya licencia no esta detallada en la informacion disponible.
 
@@ -102,7 +102,7 @@ Frente a los detectores basados en RoBERTa, Privoid AIDetect ofrece el mayor AUR
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-AIDetect-Qwen3.5-0.8B
+- Modelo en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-AIDetect-Qwen3.5-0.8B
 - Pesos GGUF: https://huggingface.co/Privoid-ai/Privoid-AIDetect-Qwen3.5-0.8B-GGUF
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset MAGE: https://huggingface.co/datasets/yaful/MAGE

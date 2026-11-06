@@ -42,7 +42,7 @@ No se han publicado detalles sobre el proceso de entrenamiento del adaptador: ni
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de precisión, recall, F1 ni comparaciones con otros detectores de IA en el repositorio de HuggingFace ni en los resultados de búsqueda web.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de precisión, recall, F1 ni comparaciones con otros detectores de IA en el repositorio de Hugging Face ni en los resultados de búsqueda web.
 
 ## Requisitos de hardware
 
@@ -59,15 +59,15 @@ No se dispone de información sobre modelos comparables específicamente para de
 
 - Acceso restringido: el repositorio es gated, por lo que se requiere solicitud y aprobación del autor para descargar el modelo.
 - Licencia openmdw-1.1: se desconoce el alcance exacto de esta licencia (probablemente relacionada con Open Model Data Warehouse), pero puede imponer restricciones de uso comercial o redistribución. Es necesario revisar los términos antes de usarlo en producción.
-- Sin documentación: no hay ficha técnica, paper ni instrucciones de uso más allá de la página de HuggingFace. Esto dificulta la reproducibilidad y la evaluación.
+- Sin documentación: no hay ficha técnica, paper ni instrucciones de uso más allá de la página de Hugging Face. Esto dificulta la reproducibilidad y la evaluación.
 - Riesgo de sesgos y alucinaciones: al ser un adaptador entrenado para clasificación, puede presentar falsos positivos o negativos según el dominio del texto. No se han publicado evaluaciones de sesgo.
 - Dependencia del modelo base: el rendimiento del adaptador depende críticamente del modelo base, que puede tener sus propias limitaciones (idiomas, contexto, sesgos).
 - Datos de entrenamiento desconocidos: no se sabe qué corpus se usó, por lo que el modelo podría no generalizar bien a dominios no representados en el entrenamiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-391k-items
-- Perfil del autor en HuggingFace: https://huggingface.co/rishanthrajendhran
+- Repositorio Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-391k-items
+- Perfil del autor en Hugging Face: https://huggingface.co/rishanthrajendhran
 - Sitio web del autor: https://rishanthrajendhran.github.io/
 - Página del modelo base (NVIDIA Nemotron-3-Nano-30B-A3B, similar pero no idéntico): https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard
 - Familia Nemotron de NVIDIA: https://developer.nvidia.com/topics/ai/nemotron

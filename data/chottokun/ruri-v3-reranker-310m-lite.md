@@ -27,7 +27,7 @@ Es relevante ahora porque permite ejecutar reranking de calidad en CPU o en GPUs
 | Tamaño del modelo por variante | 1.202 MB (fp32), 601 MB (fp16), 526 MB (int8), 301 MB (int8_full) |
 | Tamaño del repositorio | 4,0 GB |
 | Wheel precompilada | sentencepiece_lite 0.1.0, cp311-cp311, linux_x86_64 |
-| Fecha de publicación en HuggingFace | 2026-09-19 (según metadatos del repositorio) |
+| Fecha de publicación en Hugging Face | 2026-09-19 (según metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -117,7 +117,7 @@ No se dispone de datos de rendimiento de calidad que permitan comparar estos mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chottokun/ruri-v3-reranker-310m-lite
+- Modelo en Hugging Face: https://huggingface.co/Chottokun/ruri-v3-reranker-310m-lite
 - Modelo base: https://huggingface.co/cl-nagoya/ruri-v3-reranker-310m
 - Bi-encoder ligero citado para la primera etapa de recuperación: https://huggingface.co/Chottokun/ruri-v3-30m-lite
 - Referencia arXiv incluida en las etiquetas del repositorio: https://arxiv.org/abs/2409.07737

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OPD-Aha-4B es un modelo multimodal (imagen-texto-a-texto) desarrollado por el usuario CewEhao y publicado en HuggingFace. Se construye mediante ajuste fino sobre `Qwen/Qwen3.5-4B` y su objetivo declarado es mejorar la percepcion visual de detalle fino y el razonamiento matematico multimodal. El modelo se distribuye con licencia Apache-2.0 y esta etiquetado como compatible con `transformers` y con endpoints de inferencia.
+OPD-Aha-4B es un modelo multimodal (imagen-texto-a-texto) desarrollado por el usuario CewEhao y publicado en Hugging Face. Se construye mediante ajuste fino sobre `Qwen/Qwen3.5-4B` y su objetivo declarado es mejorar la percepcion visual de detalle fino y el razonamiento matematico multimodal. El modelo se distribuye con licencia Apache-2.0 y esta etiquetado como compatible con `transformers` y con endpoints de inferencia.
 
 La aportacion tecnica principal no es una arquitectura nueva, sino el metodo de entrenamiento: un framework de autodestilacion on-policy (OPD, *on-policy distillation*) que emplea un profesor visual congelado y una entrada visual contrafactual, de forma que el aprendizaje se concentra en la evidencia que altera la distribucion del profesor. El repositorio asociado (`Echochef/OPD-Aha`) incluye codigo de entrenamiento, fusion de checkpoints, inferencia y evaluacion.
 
@@ -104,7 +104,7 @@ No se han encontrado en la busqueda web datos verificables de alternativas compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CewEhao/OPD-Aha-4B
+- Modelo en Hugging Face: https://huggingface.co/CewEhao/OPD-Aha-4B
 - Repositorio de codigo: https://github.com/Echochef/OPD-Aha
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Qwen3-VL (referencia de la familia): https://github.com/QwenLM/Qwen3-VL

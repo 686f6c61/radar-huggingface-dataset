@@ -85,7 +85,7 @@ No disponible. La informacion publicada no identifica modelos comparables de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happybrian/fast-brain-translate-adapter
+- Modelo en Hugging Face: https://huggingface.co/happybrian/fast-brain-translate-adapter
 - Modelo base: https://huggingface.co/happybrian/fast-brain-base
 - Libreria de carga y generacion: https://github.com/ml-explore/mlx-lm
 - Documentacion de MLX: https://github.com/ml-explore/mlx

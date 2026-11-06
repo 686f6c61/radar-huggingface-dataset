@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chenproject35/act_pick-and-place-b601-60ep-yaw0-v2_ood_cell4_hil_rac_r1_base",
+  "slug": "chenproject35-act_pick-and-place-b601-60ep-yaw0-v2_ood_cell4_hil_rac_r1_base",
+  "author": "chenproject35",
+  "url": "https://huggingface.co/chenproject35/act_pick-and-place-b601-60ep-yaw0-v2_ood_cell4_hil_rac_r1_base",
+  "created_at": "2026-11-04T16:03:44.000Z",
+  "updated_at": "2026-11-04T17:23:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:chenproject35/pick-and-place-b601-60ep-yaw0-v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 6195592576,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "act_pick-and-place-b601-60ep-yaw0-v2_ood_cell4_hil_rac_r1_F5",
+      "url": "https://huggingface.co/chenproject35/act_pick-and-place-b601-60ep-yaw0-v2_ood_cell4_hil_rac_r1_F5",
+      "snippet": "Robotics model with 51.7M parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "act_pick-and-place-b601-60ep-yaw0-v2_ood_cell4 - Hugging Face",
+      "url": "https://huggingface.co/chenproject35/act_pick-and-place-b601-60ep-yaw0-v2_ood_cell4",
+      "snippet": "Robotics model with 51.7M parameters, built with LeRobot. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "chenproject35/pick-and-place-b601-30ep-v3 - DataCombats",
+      "url": "https://www.datacombats.com/datasets/chenproject35/pick-and-place-b601-30ep-v3",
+      "snippet": "Example tasks Pick up inreach2 and place it in the jig."
+    },
+    {
+      "title": "Seeed Studio Launches reBot Arm B601: A Fully Open-Source Robotic Arm ...",
+      "url": "https://www.seeedstudio.com/blog/2026/04/20/seeed-studio-launches-rebot-arm-b601-a-fully-open-source-robotic-arm-built-for-physical-ai/",
+      "snippet": "You can adapt the platform for: Adaptive pick-and-place systems Human-robot interaction Teleoperation and remote control Research in manipulation and model verification, and more! Accelerating Embodied AI Innovation We envision reBot Arm B601 as enabling developers to move faster from idea to implementation in embodied AI."
+    }
+  ]
+}

@@ -28,7 +28,7 @@ Su relevancia es metodológica, no de rendimiento: sirve como línea base reprod
 
 ## Arquitectura y entrenamiento
 
-El checkpoint conserva la arquitectura del modelo base Qwen3.8-27B: pila de texto (`model.language_model.*`, `lm_head`), torre visual y cabeza MTP. Solo el stack de texto corresponde al estado entrenado con Megatron; la torre visual y el `mtp.*` se copiaron sin cambios porque el actor nunca vio una imagen durante el entrenamiento, que fue únicamente de texto. La conversión de Megatron `torch_dist` a HuggingFace se hizo con el mapeo `megatron_to_hf.convert_to_hf` de slime, en streaming por fragmentos (`convert_torch_dist_to_hf_lowmem.py`); el mismo conversor reproduce bit a bit los safetensors originales del modelo base, y `E2K_VERIFY.json` recoge la comparación contra el base.
+El checkpoint conserva la arquitectura del modelo base Qwen3.8-27B: pila de texto (`model.language_model.*`, `lm_head`), torre visual y cabeza MTP. Solo el stack de texto corresponde al estado entrenado con Megatron; la torre visual y el `mtp.*` se copiaron sin cambios porque el actor nunca vio una imagen durante el entrenamiento, que fue únicamente de texto. La conversión de Megatron `torch_dist` a Hugging Face se hizo con el mapeo `megatron_to_hf.convert_to_hf` de slime, en streaming por fragmentos (`convert_torch_dist_to_hf_lowmem.py`); el mismo conversor reproduce bit a bit los safetensors originales del modelo base, y `E2K_VERIFY.json` recoge la comparación contra el base.
 
 El entrenamiento es RL puro, sin filas SFT: Dr.GRPO con `--advantage-estimator grpo --no-normalize-advantages --disable-grpo-std-normalization --calculate-per-token-loss`, una muestra de entrenamiento por llamada al LLM, batch global de 4, 8 pasos de optimizador por rollout de 32 episodios, learning rate 5e-6, precisión bf16 y backend flash-attn 2.8.3. La pila es slime v0.3.2 con Megatron-LM en TP4 × PP4 y 16 motores de rollout SGLang a `tp=1`, sobre 4 nodos GH200 de Isambard-AI. El horario cubre los rollouts 0–11 (tres cadenas de trabajos, con reanudación desde la última iteración). El prompt de RL nunca contiene conocimiento; el agente juega mediante Claude Code CLI 2.1.270 controlando las herramientas MCP de `knowledge_learning.loop.arc_mcp` (semilla de motor 0, niveles 1–4 con tope de un nivel, retorno modelado adicional por nivel completado). Este checkpoint corresponde a la iteración 2 de Megatron.
 
@@ -48,7 +48,7 @@ El entrenamiento es RL puro, sin filas SFT: Dr.GRPO con `--advantage-estimator g
 - Evaluación de agentes en ARC-AGI-3: permite medir tasas de nivel completado y retorno modelado en rollouts de 32 episodios con un protocolo documentado y reproducible.
 - Estudio de recitación frente a grounding: la model card registra columnas de "recited turns" y "source-ref turns" (vacías en esta ejecución), lo que permite instrumentar si el modelo recita conocimiento memorizado o lo consulta.
 - Referencia de infraestructura de RL: el directorio `megatron/` incluye `args.json`, `common.pt`, `latest_checkpointed_iteration.txt` y el cursor `global_dataset_state_dict_<N>.pt`, útiles para reconstruir el estado de entrenamiento (sin momentos del optimizador) con `convert_hf_to_torch_dist.py` de slime.
-- Validación de pipelines de conversión Megatron → HuggingFace: `E2K_VERIFY.json` y `SHA256SUMS` permiten comprobar la fidelidad de la conversión tensor a tensor contra el modelo base.
+- Validación de pipelines de conversión Megatron → Hugging Face: `E2K_VERIFY.json` y `SHA256SUMS` permiten comprobar la fidelidad de la conversión tensor a tensor contra el modelo base.
 - Análisis de estabilidad del RL: con 16 rollouts registrados y un ruido entre rollouts de aproximadamente 0,05 de retorno modelado, sirve para estudiar la varianza de Dr.GRPO en tareas de juego de horizonte largo.
 - Punto de partida para nuevos experimentos de RL: al mantener el tokenizador, la plantilla de chat y la configuración de generación del base, se puede reanudar entrenamiento sin recalibrar el arnés.
 
@@ -91,8 +91,8 @@ Las columnas de turnos recitados y de turnos con referencia a fuente no contiene
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-baseline-cc-iter2 | 27,78 mil millones | no disponible | RL puro (Dr.GRPO) sobre un juego de ARC-AGI-3, 12 rollouts | Apache 2.0 | Pesos bf16 en HuggingFace; estado completo del optimizador solo en Isambard-AI |
-| Qwen/Qwen3.8-27B (base) | 27 mil millones (mismo conjunto de 1199 tensores) | no disponible | no disponible | no disponible en la información | Público en HuggingFace |
+| E2K-cd82-Qwen3.8-27B-baseline-cc-iter2 | 27,78 mil millones | no disponible | RL puro (Dr.GRPO) sobre un juego de ARC-AGI-3, 12 rollouts | Apache 2.0 | Pesos bf16 en Hugging Face; estado completo del optimizador solo en Isambard-AI |
+| Qwen/Qwen3.8-27B (base) | 27 mil millones (mismo conjunto de 1199 tensores) | no disponible | no disponible | no disponible en la información | Público en Hugging Face |
 | Otras iteraciones del mismo run (`baseline-cc`) | 27,78 mil millones | no disponible | Misma configuración, iteraciones distintas; incluye iteraciones de calentamiento solo SFT | Apache 2.0 | Listadas en `checkpoints/checkpoints.md` del dataset de RL |
 
 No se dispone de datos para comparar con modelos de otros autores de tamaño o tarea equivalentes; la model card no incluye comparaciones de ese tipo.
@@ -112,7 +112,7 @@ No se dispone de datos para comparar con modelos de otros autores de tamaño o t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter2
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL asociado: identificador `ziyan98/E2K-cd82-rl-…` (la URL aparece truncada en la model card; conviene verificar el nombre completo antes de usarla)
 - No se han proporcionado enlaces a papers, blogs, repositorios de código ni demos en la información disponible.

@@ -6,7 +6,7 @@ Ultraviolet 50M (UV-50M) es un modelo de lenguaje de 50,8 millones de parámetro
 
 El modelo se ha preentrenado desde cero sobre 5.800 millones de tokens de texto matemático, incluyendo matemáticas web, libros de texto, soluciones trabajadas y trazas de razonamiento. Su ventana de contexto es de 4096 tokens y emplea un tokenizador BPE de 16.384 entradas. La relevancia actual del modelo radica en su capacidad de ejecutarse y entrenarse con RL en GPUs de consumo: en contextos cortos (por debajo de 1.000 tokens) supera los 200.000 tokens por segundo de throughput en una única RTX 2080 Ti.
 
-Este checkpoint concreto es el modelo base, preentrenado pero no ajustado para resolución de problemas por prompt. El autor remite a `ultraviolet-50m-mid-alpha` para ese uso. La ficha se basa exclusivamente en la información publicada en la model card y en los metadatos de HuggingFace; cualquier dato no presente se indica como no disponible.
+Este checkpoint concreto es el modelo base, preentrenado pero no ajustado para resolución de problemas por prompt. El autor remite a `ultraviolet-50m-mid-alpha` para ese uso. La ficha se basa exclusivamente en la información publicada en la model card y en los metadatos de Hugging Face; cualquier dato no presente se indica como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El preentrenamiento se realizó desde cero sobre 5.800 millones de tokens de tex
 - Docencia y divulgación: al ejecutarse en GPUs de consumo y con un repositorio de 0,2 GB, permite demostrar el ciclo completo de preentrenamiento, ajuste y evaluación de un modelo de lenguaje en un portátil con GPU.
 - Pruebas de infraestructura de inferencia: su velocidad permite validar pipelines de serving, tokenización y formateo de prompts con bajo coste computacional antes de escalar a modelos mayores.
 - Generación de datos sintéticos matemáticos a pequeña escala: el modelo puede producir soluciones trabajadas y trazas de razonamiento que sirvan como datos de entrenamiento o de evaluación para modelos mayores, siempre con revisión humana.
-- Reproducción de experimentos: al publicarse el código en GitHub y el checkpoint en HuggingFace, permite reproducir y auditar resultados de investigación sobre modelos pequeños.
+- Reproducción de experimentos: al publicarse el código en GitHub y el checkpoint en Hugging Face, permite reproducir y auditar resultados de investigación sobre modelos pequeños.
 
 ## Benchmarks y rendimiento
 
@@ -65,9 +65,9 @@ El único dato de rendimiento proporcionado es de throughput: más de 200.000 to
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ultraviolet-50m-base-alpha | 50,8 M | 4096 | Apache 2.0 | HuggingFace + GitHub | Optimizado para velocidad y RL en GPU de consumo |
-| Limite 1B Violetto (Paradigma) | 1.000 M (aproximado) | no disponible | no disponible | HuggingFace | Modelo del que deriva la arquitectura de UV-50M |
-| ultraviolet-50m-mid-alpha | 50,8 M (misma familia) | no disponible | Apache 2.0 (presumiblemente) | HuggingFace | Variante ajustada para resolución de problemas por prompt |
+| ultraviolet-50m-base-alpha | 50,8 M | 4096 | Apache 2.0 | Hugging Face + GitHub | Optimizado para velocidad y RL en GPU de consumo |
+| Limite 1B Violetto (Paradigma) | 1.000 M (aproximado) | no disponible | no disponible | Hugging Face | Modelo del que deriva la arquitectura de UV-50M |
+| ultraviolet-50m-mid-alpha | 50,8 M (misma familia) | no disponible | Apache 2.0 (presumiblemente) | Hugging Face | Variante ajustada para resolución de problemas por prompt |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, contexto y licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/harribo11/ultraviolet-50m-base-alpha
+- Hugging Face: https://huggingface.co/harribo11/ultraviolet-50m-base-alpha
 - Variante ajustada: https://huggingface.co/harribo11/ultraviolet-50m-mid-alpha
 - Código del modelo: https://github.com/hliuson/ultraviolet
 - Modelo de referencia (Limite 1B Violetto): https://huggingface.co/paradigma-inc/limite-1b-violetto

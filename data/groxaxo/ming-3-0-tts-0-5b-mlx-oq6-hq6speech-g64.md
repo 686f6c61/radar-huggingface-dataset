@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/Ming-3.0-tts-0.5B-MLX-oQ6-HQ6Speech-G64
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/Ming-3.0-tts-0.5B-MLX-oQ6-HQ6Speech-G64
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - Cuantizador oMLX: https://github.com/jundot/omlx
 - Librería mlx-audio: no disponible enlace directo en la información proporcionada (paquete `mlx-audio==0.6.2`)

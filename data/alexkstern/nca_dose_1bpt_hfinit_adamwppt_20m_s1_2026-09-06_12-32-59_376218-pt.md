@@ -4,7 +4,7 @@
 
 El modelo `nca_dose_1Bpt_hfinit_adamwppt_20M_s1_2026-09-06_12-32-59_376218-pt` es un checkpoint experimental de un modelo de lenguaje pequeño desarrollado por `alexkstern` utilizando la librería `nanochat` de Karpathy. Se trata de un transformer decoder-only entrenado en dos fases: una fase de preentrenamiento con 1.000 millones de tokens del dataset `fineweb-nanochatbpe-20B` y una fase de post-entrenamiento de 20 millones de tokens con el dataset `nca-paper-share200-2048`. La configuración incluye dos vocabularios distintos (65.536 tokens en el preentrenamiento y 10.004 tokens en el post-entrenamiento), lo que sugiere un experimento sobre el impacto de cambiar el vocabulario y reinicializar las capas de embedding en la transición.
 
-La arquitectura es un transformer estándar con 16 capas, 8 cabezas de atención, 8 cabezas KV, dimensiones de embedding de 1024 y una longitud de contexto de 2048 tokens. A partir de la configuración se estima un tamaño de aproximadamente 335 millones de parámetros, aunque el autor no lo especifica explícitamente. El checkpoint se guardó en el paso 3.814, con una pérdida de entrenamiento suavizada de 3.162 y una métrica `min_objective` de 0.944. El modelo se publica bajo licencia Apache 2.0 y el repositorio en HuggingFace pesa 3.0 GB. No se han publicado benchmarks ni evaluaciones externas; la información disponible se limita a los metadatos del entrenamiento.
+La arquitectura es un transformer estándar con 16 capas, 8 cabezas de atención, 8 cabezas KV, dimensiones de embedding de 1024 y una longitud de contexto de 2048 tokens. A partir de la configuración se estima un tamaño de aproximadamente 335 millones de parámetros, aunque el autor no lo especifica explícitamente. El checkpoint se guardó en el paso 3.814, con una pérdida de entrenamiento suavizada de 3.162 y una métrica `min_objective` de 0.944. El modelo se publica bajo licencia Apache 2.0 y el repositorio en Hugging Face pesa 3.0 GB. No se han publicado benchmarks ni evaluaciones externas; la información disponible se limita a los metadatos del entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No disponible. La búsqueda web solo devuelve otros checkpoints del mismo autor 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_20M_s1_2026-09-06_12-32-59_376218-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_20M_s1_2026-09-06_12-32-59_376218-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - W&B run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/76evgn61
 - Checkpoint similar del autor: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_20M_s1_2026-08-14_10-59-49_660926-pt

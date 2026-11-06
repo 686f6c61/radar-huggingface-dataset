@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables. Dado que es un merge es
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-3k_4k_5k_merge
+- Repositorio de Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-3k_4k_5k_merge
 - Referencia del método Linear (arXiv 2203.05482): https://arxiv.org/abs/2203.05482 (no verificado directamente, citado en la model card)
 - Herramienta mergekit: https://github.com/cg123/mergekit

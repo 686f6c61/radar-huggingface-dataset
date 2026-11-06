@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en el mismo repositorio n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ame-la/train_use_models
+- Repositorio Hugging Face: https://huggingface.co/ame-la/train_use_models
 - Modelo original en Civitai: https://civitai.red/models/2454865/any-anima-for-lora-training?modelVersionId=3017846 (autor RedRayz)
 - Perfil del autor en Civitai: https://civitai.com/user/ame_la/models
 - Guia de entrenamiento de modelos (referencia general): https://www.mercor.com/resources/experts/how-to-train-an-ai-model/

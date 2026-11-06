@@ -82,8 +82,8 @@ En el pipeline completo (triage, consulta al ERP y este modelo) se gestionan cor
 
 | Modelo | Parametros | Contexto | Seis campos correctos (100 facturas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Distil-Qwen3.5-4B-Invoice-Grounded-Decision | 4,2B | 16.384 tokens en config. de referencia | 97 (99 en la decision sola) | apache-2.0 | GGUF Q8_0 y safetensors en HuggingFace |
-| Qwen3.5-4B (base, sin ajustar) | 4,2B | no disponible | LLM-as-a-judge 0,12 (metrica distinta) | no disponible | HuggingFace (modelo base) |
+| Distil-Qwen3.5-4B-Invoice-Grounded-Decision | 4,2B | 16.384 tokens en config. de referencia | 97 (99 en la decision sola) | apache-2.0 | GGUF Q8_0 y safetensors en Hugging Face |
+| Qwen3.5-4B (base, sin ajustar) | 4,2B | no disponible | LLM-as-a-judge 0,12 (metrica distinta) | no disponible | Hugging Face (modelo base) |
 | GLM 5.3 (profesor, reasoning high) | no disponible | no disponible | 96 | no disponible | no disponible |
 | GPT-5.6 Luna (reasoning high) | no disponible | no disponible | 100 | propietaria | API |
 | Gemini 3.5 Flash Lite | no disponible | no disponible | 76 | propietaria | API |
@@ -108,8 +108,8 @@ La comparacion mas relevante es con el modelo base sin ajustar: el ajuste fino s
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision-gguf
-- Pesos safetensors en HuggingFace: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision
+- Modelo GGUF en Hugging Face: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision-gguf
+- Pesos safetensors en Hugging Face: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision
 - Repositorio del pipeline de facturas (incluye la forma de puntuar, las lineas base y las salidas sin procesar): https://github.com/distil-labs/invoice-processing-pipeline
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Plataforma del autor: https://www.distillabs.ai

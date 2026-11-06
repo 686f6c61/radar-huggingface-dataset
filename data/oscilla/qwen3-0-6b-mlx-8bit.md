@@ -73,7 +73,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Oscilla/Qwen3-0.6B-mlx-8Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/Oscilla/Qwen3-0.6B-mlx-8Bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-0.6B
 - Coleccion MLX de Qwen3: https://huggingface.co/collections/mlx-community/qwen3
 - Ficha en LLM Explorer (referencia de contexto y VRAM): https://llm-explorer.com/model/Qwen%2FQwen3-0.6B-MLX-8bit,6jUtp99LivTMuZRKnsa6m7

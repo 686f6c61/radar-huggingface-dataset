@@ -81,6 +81,6 @@ La comparativa se limita a aspectos estructurales porque no hay datos de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Trendyol/Trendyol-Vision-Flash
+- Modelo en Hugging Face: https://huggingface.co/Trendyol/Trendyol-Vision-Flash
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3_5-1B-Instruct
 - Modelo Master (companero de la familia): https://huggingface.co/Trendyol/Trendyol-Vision-Master

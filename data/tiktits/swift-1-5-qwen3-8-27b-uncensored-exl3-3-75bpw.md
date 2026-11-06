@@ -114,7 +114,7 @@ La comparacion mas directa es dentro de la propia linea de derivacion, ya que lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tiktits/Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw
+- Repositorio Hugging Face: https://huggingface.co/tiktits/Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw
 - Modelo fuente Swift 1.5: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Swift 1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b

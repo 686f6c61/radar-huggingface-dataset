@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/urd_arab_100mb`, desarrollado por el usuario francesca9805 y publicado en HuggingFace. Se trata de un modelo de generacion de texto de pequeno tamano, con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la misma escala que GPT-2 small. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, partiendo de la arquitectura GPT-2 que etiqueta el repositorio.
+El modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/urd_arab_100mb`, desarrollado por el usuario francesca9805 y publicado en Hugging Face. Se trata de un modelo de generacion de texto de pequeno tamano, con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la misma escala que GPT-2 small. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, partiendo de la arquitectura GPT-2 que etiqueta el repositorio.
 
 El modelo pertenece a la familia Goldfish, un conjunto de modelos multilingues de investigacion entrenados por el grupo de investigacion de la Universidad de Groningen (identificable por la URL de Weights & Biases del autor, `f-padovani-university-of-groningen`). El sufijo del nombre (`ppt-mp-struct-100mb_seed455`) sugiere un experimento controlado sobre estructura de datos de entrenamiento y una semilla concreta (seed455), lo que apunta a un modelo de investigacion mas que a un modelo listo para produccion.
 
@@ -31,7 +31,7 @@ El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) usando TR
 
 - Generacion de texto autoregresiva basica, heredada de la arquitectura GPT-2.
 - Ajuste fino supervisado (SFT) orientado a seguir instrucciones en formato conversacional, segun el ejemplo de `pipeline` de la model card, que pasa una lista de mensajes con el rol `user`.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible` (etiquetas oficiales del repositorio), lo que permite desplegarlo con la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible` (etiquetas oficiales del repositorio), lo que permite desplegarlo con la infraestructura de inferencia de Hugging Face.
 - Soporte de `tool calling` / `function calling`: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el modelo base apunta a urdu/arabe, pero no se confirma.
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455 | 124,77 M | no disponible | no disponible | no disponible | HuggingFace |
-| goldfish-models/urd_arab_100mb (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | benchmarks publicos en su model card | MIT (pesos) | HuggingFace, OpenAI |
+| francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455 | 124,77 M | no disponible | no disponible | no disponible | Hugging Face |
+| goldfish-models/urd_arab_100mb (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | benchmarks publicos en su model card | MIT (pesos) | Hugging Face, OpenAI |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4ydzxrou
 - Repositorio de TRL: https://github.com/huggingface/trl

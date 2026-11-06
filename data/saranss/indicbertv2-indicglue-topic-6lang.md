@@ -17,13 +17,13 @@ Su relevancia es doble: por un lado ofrece un punto de partida reproducible y co
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 128 tokens subword (truncado; datos de entrenamiento y uso previsto) |
 | Tipos de cuantización | No disponible (el repositorio distribuye safetensors y ONNX; no se documentan variantes GGUF, INT8 ni otras) |
-| Idiomas soportados | 6: bengalí (bn), gujarati (gu), hindi (hi), malayalam (ml), marathi (mr), tamil (ta). Las etiquetas de HuggingFace listan 13 lenguas por herencia del proyecto, pero el clasificador temático solo cubre esas 6 |
+| Idiomas soportados | 6: bengalí (bn), gujarati (gu), hindi (hi), malayalam (ml), marathi (mr), tamil (ta). Las etiquetas de Hugging Face listan 13 lenguas por herencia del proyecto, pero el clasificador temático solo cubre esas 6 |
 | Licencia | MIT |
 | Formato de pesos | safetensors y ONNX (librería `transformers`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder BERT de 12 capas con tokenizador y vocabulario de IndicBERTv2, sobre el que se añade una cabeza de clasificación de secuencia para 17 etiquetas (unión de las etiquetas presentes en los seis corpus de noticias). El ajuste fino se realizó con el `Trainer` de HuggingFace: learning rate 3e-5, batch de 16, precisión fp16, máximo de 128 tokens, hasta 5 épocas con early stopping sobre macro-F1 de validación (paciencia 3) y semilla 42. La matriz de embeddings de palabras permaneció congelada, de modo que solo se entrenaron 86 M de los 278 M de parámetros; para el subconjunto temático se aplicó pérdida ponderada por clase para compensar el fuerte desequilibrio.
+El modelo es un encoder BERT de 12 capas con tokenizador y vocabulario de IndicBERTv2, sobre el que se añade una cabeza de clasificación de secuencia para 17 etiquetas (unión de las etiquetas presentes en los seis corpus de noticias). El ajuste fino se realizó con el `Trainer` de Hugging Face: learning rate 3e-5, batch de 16, precisión fp16, máximo de 128 tokens, hasta 5 épocas con early stopping sobre macro-F1 de validación (paciencia 3) y semilla 42. La matriz de embeddings de palabras permaneció congelada, de modo que solo se entrenaron 86 M de los 278 M de parámetros; para el subconjunto temático se aplicó pérdida ponderada por clase para compensar el fuerte desequilibrio.
 
 Los datos provienen de IndicGLUE (subconjunto de género periodístico), limitado deliberadamente a bajos recursos: 1.000 artículos de entrenamiento y 300 de validación por lengua, con conjuntos de test de tamaño variable. El desequilibrio de clases por lengua es muy dispar: bengalí 9,04; gujarati 2,17; hindi 80,8; malayalam 1,16; marathi 6,18; tamil 1,51. El preprocesado incluye normalización Unicode NFC, normalización de escritura IndicNLP (conservando nuktas), eliminación de caracteres de ancho cero y normalización de danda. La partición de test resultante es de 1.000 ejemplos en bengalí y marathi, 856 en hindi, 669 en tamil, 659 en gujarati y 619 en malayalam.
 
@@ -33,7 +33,7 @@ Los datos provienen de IndicGLUE (subconjunto de género periodístico), limitad
 - Detección automática de escritura de entrada; acepta texto en escritura nativa y, con degradación de precisión, texto romanizado en alfabeto latino.
 - Inferencia por secuencia corta: adecuado para titulares, sumarios y párrafos de hasta 128 tokens subword.
 - Uso como extractor de representaciones contextuales (encoder BERT), reutilizable para otras tareas de clasificación mediante nuevo ajuste fino.
-- Exportación ONNX para inferencia optimizada fuera de PyTorch; etiquetas `text-embeddings-inference` y `endpoints_compatible` en HuggingFace.
+- Exportación ONNX para inferencia optimizada fuera de PyTorch; etiquetas `text-embeddings-inference` y `endpoints_compatible` en Hugging Face.
 - No soporta generación de texto, tool calling, razonamiento multi-paso, agentes, visión ni audio: es exclusivamente un clasificador discriminativo.
 
 ## Casos de uso
@@ -90,13 +90,13 @@ Los datos de XLM-R y de las variantes de IndicBERTv2 provienen de sus model card
 - La entrada romanizada (alfabeto latino) se acepta pero degrada la precisión; el texto con jerga, abreviaturas o code-switching con inglés queda explícitamente fuera del alcance declarado.
 - Uso fuera de alcance según el autor: decisiones sobre personas (moderación, selección de personal, crédito), texto clínico o legal, y lenguas no listadas.
 - Riesgo de alucinación no aplica en sentido generativo, pero sí existe riesgo de clasificaciones erróneas con alta confianza en textos ambiguos o de dominio desplazado.
-- Estado de adopción nulo: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin validación independiente por parte de la comunidad.
+- Estado de adopción nulo: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin validación independiente por parte de la comunidad.
 - Licencia MIT para los pesos, pero los corpus de origen (IndicGLUE, IndicSentiment) tienen sus propias condiciones de uso que conviene revisar antes de un despliegue comercial.
 - Fecha de creación del repositorio registrada como 2026-10-24, posterior a la de otras referencias del ecosistema; conviene verificar la vigencia y el mantenimiento del checkpoint.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saranss/indicbertv2-indicglue-topic-6lang
+- Modelo en Hugging Face: https://huggingface.co/saranss/indicbertv2-indicglue-topic-6lang
 - Modelo base: https://huggingface.co/ai4bharat/IndicBERTv2-MLM-only
 - Variante IndicBERTv2-SS: https://huggingface.co/ai4bharat/IndicBERTv2-SS
 - Colección IndicBERT v2 de AI4Bharat: https://huggingface.co/collections/ai4bharat/indicbert-v2-66c5a0bd4ee34ebc59303bc5

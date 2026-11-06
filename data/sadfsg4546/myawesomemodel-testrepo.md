@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario sadfsg4546 en un repositorio de HuggingFace con el identificador `sadfsg4546/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado sus capacidades de razonamiento, matemáticas, programación y lógica mediante un aumento de recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El autor afirma que su rendimiento se acerca al de otros modelos líderes, aunque no se especifican ni la arquitectura ni el número de parámetros.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario sadfsg4546 en un repositorio de Hugging Face con el identificador `sadfsg4546/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado sus capacidades de razonamiento, matemáticas, programación y lógica mediante un aumento de recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El autor afirma que su rendimiento se acerca al de otros modelos líderes, aunque no se especifican ni la arquitectura ni el número de parámetros.
 
 El repositorio, sin embargo, no contiene ningún archivo de pesos (tamaño 0.0 GB), por lo que no es posible descargar ni ejecutar el modelo. La model card incluye una tabla de benchmarks comparativos con otros modelos anónimos (Model1, Model2, Model1-v2) y menciona mejoras concretas en el test AIME 2025, pasando de un 70% a un 87,5% de precisión, con un mayor uso de tokens por pregunta (de 12K a 23K). También declara una reducción de la tasa de alucinación y soporte para function calling. A pesar de estas afirmaciones, la falta de datos técnicos verificables y de pesos publicados limita su utilidad práctica.
 
@@ -97,4 +97,4 @@ No disponible. La model card compara MyAwesomeModel con "Model1", "Model2" y "Mo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sadfsg4546/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/sadfsg4546/MyAwesomeModel-TestRepo

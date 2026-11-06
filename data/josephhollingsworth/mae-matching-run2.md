@@ -75,5 +75,5 @@ No disponible. No existen modelos comparables en el ecosistema con esta arquitec
 
 ## Enlaces
 
-- [HuggingFace: JosephHollingsworth/mae-matching-run2](https://huggingface.co/JosephHollingsworth/mae-matching-run2)
+- [Hugging Face: JosephHollingsworth/mae-matching-run2](https://huggingface.co/JosephHollingsworth/mae-matching-run2)
 - [Perfil de Google Scholar del autor](https://scholar.google.com/citations?user=Ax92fPIAAAAJ&hl=en) (contexto académico, no directamente relacionado con el modelo)

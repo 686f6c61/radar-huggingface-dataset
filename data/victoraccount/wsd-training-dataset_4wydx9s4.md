@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `victoraccount/wsd-training-dataset_4wydx9s4` es un encoder de texto alojado en HuggingFace, desarrollado por el usuario `victoraccount`. Según las etiquetas asociadas, se basa en la arquitectura XLM-RoBERTa (referencia al paper arXiv:1910.09700) y está orientado a la extracción de características (`feature-extraction`). El nombre sugiere que podría estar relacionado con tareas de desambiguación de sentidos de palabras (WSD, por sus siglas en inglés), aunque la model card no proporciona información oficial al respecto.
+El modelo `victoraccount/wsd-training-dataset_4wydx9s4` es un encoder de texto alojado en Hugging Face, desarrollado por el usuario `victoraccount`. Según las etiquetas asociadas, se basa en la arquitectura XLM-RoBERTa (referencia al paper arXiv:1910.09700) y está orientado a la extracción de características (`feature-extraction`). El nombre sugiere que podría estar relacionado con tareas de desambiguación de sentidos de palabras (WSD, por sus siglas en inglés), aunque la model card no proporciona información oficial al respecto.
 
 El modelo cuenta con 278.043.648 parámetros, cifra que coincide con la variante base de XLM-RoBERTa, y el repositorio ocupa 1,1 GB en formato `safetensors`. La model card es completamente genérica, con todos los campos rellenados como "[More Information Needed]", por lo que no se dispone de detalles sobre el entrenamiento, los datos utilizados o la licencia. A pesar de la falta de documentación, su tamaño y arquitectura lo hacen adecuado para tareas de representación de texto multilingüe, especialmente en escenarios donde se requieran embeddings densos.
 
@@ -51,17 +51,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: para un modelo de 278M parámetros en precisión fp32, se requieren aproximadamente 1,1 GB de memoria. En fp16, la huella se reduce a unos 0,56 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, etc.). Para lotes grandes o procesamiento en tiempo real, se recomienda una GPU con 4-8 GB (RTX 3060, RTX 4070).
 - El modelo cabe holgadamente en GPUs de consumo; incluso podría ejecutarse en CPU con un rendimiento aceptable para tareas por lotes.
-- Opciones de despliegue: al ser un modelo de transformers con formato `safetensors`, es compatible con la librería `transformers` de HuggingFace, así como con `sentence-transformers` para generar embeddings. También puede servirse mediante TEI (Text Embeddings Inference) o con herramientas como `fastapi` para crear un microservicio.
+- Opciones de despliegue: al ser un modelo de transformers con formato `safetensors`, es compatible con la librería `transformers` de Hugging Face, así como con `sentence-transformers` para generar embeddings. También puede servirse mediante TEI (Text Embeddings Inference) o con herramientas como `fastapi` para crear un microservicio.
 - Latencia y throughput: no disponibles, pero para un modelo de este tamaño, en GPU moderna se esperan latencias del orden de milisegundos por secuencia (dependiendo de la longitud).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `victoraccount/wsd-training-dataset_4wydx9s4` | 278M | no disponible | no disponible | no disponible | HuggingFace |
-| XLM-RoBERTa base (original) | 278M | 512 tokens | 100 | MIT | HuggingFace |
-| mBERT (BERT multilingüe) | 172M | 512 tokens | 104 | Apache 2.0 | HuggingFace |
-| DistilBERT multilingüe | 134M | 512 tokens | 104 | Apache 2.0 | HuggingFace |
+| `victoraccount/wsd-training-dataset_4wydx9s4` | 278M | no disponible | no disponible | no disponible | Hugging Face |
+| XLM-RoBERTa base (original) | 278M | 512 tokens | 100 | MIT | Hugging Face |
+| mBERT (BERT multilingüe) | 172M | 512 tokens | 104 | Apache 2.0 | Hugging Face |
+| DistilBERT multilingüe | 134M | 512 tokens | 104 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La principal diferencia con los modelos originales es que este checkpoint parece ser un fine-tune (según el nombre), pero no hay confirmación ni métricas que lo respalden.
 
@@ -76,5 +76,5 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia con l
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/victoraccount/wsd-training-dataset_4wydx9s4)
+- [Página del modelo en Hugging Face](https://huggingface.co/victoraccount/wsd-training-dataset_4wydx9s4)
 - [Paper de XLM-RoBERTa (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

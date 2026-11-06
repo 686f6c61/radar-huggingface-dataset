@@ -4,7 +4,7 @@
 
 Geneformer-V2-316M-immune-bench-ft es un modelo de lenguaje especializado en transcriptómica de célula única, derivado del modelo fundacional Geneformer-V2-316M desarrollado por NVIDIA. Este checkpoint concreto, publicado por el usuario tuhulab, ha sido ajustado (fine-tuning) para la anotación de células inmunes, una tarea de clasificación de tipos celulares a partir de datos de expresión génica. El modelo base es un transformer preentrenado sobre un corpus masivo de transcriptomas de célula única, diseñado para capturar relaciones contextuales entre genes y permitir predicciones específicas de contexto incluso con conjuntos de datos limitados.
 
-La relevancia de este modelo radica en su aplicación directa a la inmunología computacional: permite identificar subtipos de células inmunes (p. ej., células T, B, NK, monocitos) a partir de datos de scRNA-seq, una tarea crítica en investigación biomédica. Al estar basado en Geneformer, hereda una arquitectura eficiente y un preentrenamiento robusto, aunque el acceso al checkpoint está restringido y requiere aceptar condiciones en HuggingFace. El tamaño de 316 millones de parámetros lo sitúa en un rango moderado, factible para entornos de investigación con GPUs de gama media.
+La relevancia de este modelo radica en su aplicación directa a la inmunología computacional: permite identificar subtipos de células inmunes (p. ej., células T, B, NK, monocitos) a partir de datos de scRNA-seq, una tarea crítica en investigación biomédica. Al estar basado en Geneformer, hereda una arquitectura eficiente y un preentrenamiento robusto, aunque el acceso al checkpoint está restringido y requiere aceptar condiciones en Hugging Face. El tamaño de 316 millones de parámetros lo sitúa en un rango moderado, factible para entornos de investigación con GPUs de gama media.
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ La relevancia de este modelo radica en su aplicación directa a la inmunología 
 | Longitud de contexto | no disponible (se estima 4096 tokens en Geneformer, pero no confirmado para este checkpoint) |
 | Tipos de cuantizacion | no disponible (no se documentan en la información proporcionada) |
 | Idiomas soportados | no disponible (el modelo opera sobre tokens de genes, no sobre lenguaje natural) |
-| Licencia | other (acceso restringido en HuggingFace, requiere aceptación de condiciones) |
+| Licencia | other (acceso restringido en Hugging Face, requiere aceptación de condiciones) |
 | Formato de pesos | no disponible (probablemente safetensors o binarios de PyTorch, pero no se especifica) |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o académicos sin aprobación previa.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o académicos sin aprobación previa.
 - Especialización limitada: está ajustado para células inmunes; su rendimiento en otros tipos celulares o tejidos puede ser deficiente.
 - Sesgos de los datos de entrenamiento: el preentrenamiento de Geneformer se realizó con datos predominantemente humanos y de ciertos tejidos, lo que puede introducir sesgos en poblaciones subrepresentadas.
 - Riesgo de alucinación en anotaciones: como cualquier modelo de clasificación, puede producir etiquetas incorrectas en células atípicas o con baja calidad de datos.
@@ -70,8 +70,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/tuhulab/geneformer-v2-316m-immune-bench-ft
-- Modelo base en HuggingFace (NVIDIA): https://huggingface.co/nvidia/geneformer_V2_316M
+- Hugging Face del modelo: https://huggingface.co/tuhulab/geneformer-v2-316m-immune-bench-ft
+- Modelo base en Hugging Face (NVIDIA): https://huggingface.co/nvidia/geneformer_V2_316M
 - Repositorio oficial de Geneformer (GitHub): https://github.com/gaopeigi3/Geneformer (incluye el directorio Geneformer-V2-316M)
 - Repositorio alternativo de Geneformer (GitHub): https://github.com/haroonshakeel/Geneformer
 - Documentación de NVIDIA BioNeMo para Geneformer: https://docs.nvidia.com/bionemo-recipes/latest/main/recipes/models/geneformer/model_readme/

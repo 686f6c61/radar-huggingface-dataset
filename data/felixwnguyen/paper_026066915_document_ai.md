@@ -61,11 +61,11 @@ No disponible. No existe un modelo comparable porque el repositorio no alberga u
 - No se puede usar para inferencia, generación o cualquier tarea de procesamiento de lenguaje natural.
 - La licencia BSD-3-Clause permite uso comercial y modificación, pero solo sobre el contenido textual del paper, no sobre un modelo.
 - No hay garantías sobre la calidad técnica del paper, ya que no se ha evaluado ni revisado por pares en este contexto.
-- Para producción o investigación con IA, se debe buscar un modelo real en plataformas como HuggingFace con pesos y configuración.
+- Para producción o investigación con IA, se debe buscar un modelo real en plataformas como Hugging Face con pesos y configuración.
 
 ## Enlaces
 
-- [HuggingFace - felixwnguyen/paper_026066915_document_ai](https://huggingface.co/felixwnguyen/paper_026066915_document_ai)
+- [Hugging Face - felixwnguyen/paper_026066915_document_ai](https://huggingface.co/felixwnguyen/paper_026066915_document_ai)
 - [Document AI - Google Cloud](https://cloud.google.com/document-ai)
 - [Document AI documentation - Google Cloud](https://docs.cloud.google.com/document-ai/docs)
 - [AI Detector & Checker for Text, PDFs - SciSpace](https://scispace.com/ai-detector)

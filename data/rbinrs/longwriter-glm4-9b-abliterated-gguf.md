@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rbinrs/LongWriter-glm4-9b-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/rbinrs/LongWriter-glm4-9b-abliterated-GGUF
 - Modelo base abliterated: https://huggingface.co/byroneverson/LongWriter-glm4-9b-abliterated
 - Version GGUF del modelo base: https://huggingface.co/byroneverson/LongWriter-glm4-9b-abliterated-gguf
 - Cuantizaciones i1 (imatrix) de mradermacher: https://huggingface.co/mradermacher/LongWriter-glm4-9b-abliterated-i1-GGUF

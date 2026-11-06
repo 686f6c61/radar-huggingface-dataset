@@ -92,7 +92,7 @@ La diferencia entre este paquete y el modelo PyTorch original es unicamente el f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aoiandroid/whisper-th-small-combined-whisperkit-coreml-macos
+- Hugging Face: https://huggingface.co/aoiandroid/whisper-th-small-combined-whisperkit-coreml-macos
 - Modelo base (PyTorch): https://huggingface.co/biodatlab/whisper-th-small-combined
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-small
 - Herramientas de conversion: https://github.com/argmaxinc/whisperkittools

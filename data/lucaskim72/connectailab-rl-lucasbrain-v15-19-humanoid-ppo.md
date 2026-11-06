@@ -108,10 +108,10 @@ Alternativas externas como Stable-Baselines3 PPO o políticas publicadas en el l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.19-humanoid-ppo
+- Modelo en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.19-humanoid-ppo
 - Script de recompensas compuestas: `added_scores.py` en el mismo repositorio (descargable vía `hf_hub_download`)
 - Pesos del modelo: `model.pt` en el mismo repositorio
 - Entorno `Humanoid-v5`: Gymnasium / MuJoCo (documentación oficial de Gymnasium)
 - Contacto del autor: lucaskim72@gmail.com
-- Repositorios de versiones anteriores citados en la model card: v1, v7, v13, v14, v15 (best), v15.1, v15.2, v15.3, v15.4 (páginas propias en HuggingFace bajo el mismo autor; URL exacta no disponible en la información proporcionada)
+- Repositorios de versiones anteriores citados en la model card: v1, v7, v13, v14, v15 (best), v15.1, v15.2, v15.3, v15.4 (páginas propias en Hugging Face bajo el mismo autor; URL exacta no disponible en la información proporcionada)
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

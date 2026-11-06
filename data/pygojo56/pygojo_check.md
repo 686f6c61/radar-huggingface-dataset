@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Pygojo_check es un modelo publicado en HuggingFace por el usuario pygojo56 bajo licencia MIT. La model card asociada está practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 20,7 GB, lo que sugiere pesos de gran tamano (compatible con un modelo denso de aproximadamente 10.000 millones de parametros en precision de 16 bits, o con un modelo mayor cuantizado), aunque esta estimacion no puede confirmarse con la informacion disponible.
+Pygojo_check es un modelo publicado en Hugging Face por el usuario pygojo56 bajo licencia MIT. La model card asociada está practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 20,7 GB, lo que sugiere pesos de gran tamano (compatible con un modelo denso de aproximadamente 10.000 millones de parametros en precision de 16 bits, o con un modelo mayor cuantizado), aunque esta estimacion no puede confirmarse con la informacion disponible.
 
-El modelo no registra descargas ni "likes" en el momento de la consulta y no tiene pipeline declarado en HuggingFace, por lo que su proposito funcional (generacion de texto, vision, embeddings u otro) no es verificable a partir de los metadatos publicos. Fue creado el 29 de octubre de 2026 y actualizado el 30 de octubre de 2026, lo que indica una publicacion muy reciente y sin ciclo de mantenimiento observable.
+El modelo no registra descargas ni "likes" en el momento de la consulta y no tiene pipeline declarado en Hugging Face, por lo que su proposito funcional (generacion de texto, vision, embeddings u otro) no es verificable a partir de los metadatos publicos. Fue creado el 29 de octubre de 2026 y actualizado el 30 de octubre de 2026, lo que indica una publicacion muy reciente y sin ciclo de mantenimiento observable.
 
 Por tanto, esta ficha documenta exclusivamente lo que puede contrastarse: identificador, autor, licencia, tamano del repositorio y fechas. Cualquier dato sobre arquitectura, contexto, idiomas o rendimiento debe considerarse no disponible y no debe asumirse en entornos de produccion sin una inspeccion directa de los ficheros de pesos y de la configuracion del repositorio.
 
@@ -34,7 +34,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta capacidad multilingue declarada.
 - No consta modo de razonamiento explicito (thinking mode), vision, audio ni multimodalidad.
-- El pipeline de HuggingFace no esta declarado, por lo que la tarea principal del modelo no es verificable desde los metadatos.
+- El pipeline de Hugging Face no esta declarado, por lo que la tarea principal del modelo no es verificable desde los metadatos.
 
 ## Casos de uso
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 - Pruebas de compatibilidad de tooling: comprobar si los pesos cargan correctamente en librerias como `transformers`, `vLLM` o `llama.cpp` una vez identificado el formato real de los ficheros.
 - Benchmark interno de referencia: si finalmente se confirma que es un modelo de lenguaje, podria incluirse en una bateria interna de evaluacion comparativa, siempre con la cautela de que no hay metricas publicadas del autor.
 - Prototipado con licencia permisiva: la licencia MIT facilita experimentacion y redistribucion en entornos corporativos, lo que lo hace apto para pruebas internas de concepto una vez validada su calidad.
-- Analisis de seguridad y reproducibilidad: util para estudiar la trazabilidad de artefactos publicados en HuggingFace sin informacion de origen, un problema relevante en la cadena de suministro de modelos.
+- Analisis de seguridad y reproducibilidad: util para estudiar la trazabilidad de artefactos publicados en Hugging Face sin informacion de origen, un problema relevante en la cadena de suministro de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -78,5 +78,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pygojo56/Pygojo_check
+- Hugging Face: https://huggingface.co/pygojo56/Pygojo_check
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

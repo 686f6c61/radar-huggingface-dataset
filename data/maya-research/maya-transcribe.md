@@ -2,9 +2,9 @@
 
 ## Resumen
 
-maya-transcribe es un modelo publicado en HuggingFace por el usuario maya-research bajo licencia Apache 2.0. La model card asociada no contiene más información que la declaración de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, contexto ni proceso de entrenamiento. El nombre sugiere un modelo orientado a transcripción (posiblemente de audio a texto), pero esta inferencia no está confirmada por ninguna documentación oficial.
+maya-transcribe es un modelo publicado en Hugging Face por el usuario maya-research bajo licencia Apache 2.0. La model card asociada no contiene más información que la declaración de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, contexto ni proceso de entrenamiento. El nombre sugiere un modelo orientado a transcripción (posiblemente de audio a texto), pero esta inferencia no está confirmada por ninguna documentación oficial.
 
-El repositorio no registra descargas ni interacciones en el momento de la consulta, y las búsquedas web realizadas no devuelven resultados relacionados con este modelo concreto: los únicos resultados obtenidos hacen referencia a la civilización maya y al software de animación Autodesk Maya, sin relación con el artefacto de HuggingFace.
+El repositorio no registra descargas ni interacciones en el momento de la consulta, y las búsquedas web realizadas no devuelven resultados relacionados con este modelo concreto: los únicos resultados obtenidos hacen referencia a la civilización maya y al software de animación Autodesk Maya, sin relación con el artefacto de Hugging Face.
 
 Dado que la ficha debe ser rigurosa, todos los apartados técnicos se completan indicando "no disponible" cuando el dato no puede verificarse. Se recomienda consultar directamente el repositorio para confirmar cualquier detalle antes de evaluar su uso en producción.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| maya-transcribe | no disponible | no disponible | apache-2.0 | HuggingFace |
+| maya-transcribe | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para identificar modelos comparables de la misma categoría, ya que no se conoce la tarea concreta ni el tamaño del modelo.
@@ -78,5 +78,5 @@ No se dispone de información suficiente para identificar modelos comparables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maya-research/maya-transcribe
+- Repositorio en Hugging Face: https://huggingface.co/maya-research/maya-transcribe
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la búsqueda web realizada.

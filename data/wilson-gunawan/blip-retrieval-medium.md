@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wilson-gunawan/blip-retrieval-medium` es un repositorio de HuggingFace que contiene una implementación de referencia de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de *retrieval* (recuperación imagen-texto y texto-imagen). Lo publica el usuario wilson-gunawan y se presenta explícitamente como un punto de partida experimental, no como un checkpoint entrenado ni evaluado. El repositorio incluye un script `predict.py` con un ejemplo ejecutable, un `config.json` con los hiperparámetros de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` que el autor describe como inicialización válida para *smoke tests*.
+`wilson-gunawan/blip-retrieval-medium` es un repositorio de Hugging Face que contiene una implementación de referencia de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de *retrieval* (recuperación imagen-texto y texto-imagen). Lo publica el usuario wilson-gunawan y se presenta explícitamente como un punto de partida experimental, no como un checkpoint entrenado ni evaluado. El repositorio incluye un script `predict.py` con un ejemplo ejecutable, un `config.json` con los hiperparámetros de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` que el autor describe como inicialización válida para *smoke tests*.
 
 La relevancia de este artefacto es limitada pero concreta: sirve como andamiaje reproducible para quien quiera entrenar o adaptar un modelo BLIP de recuperación multimodal con atención dispersa, fusión por concatenación + MLP, activación ReLU y normalización RMSNorm. El autor insiste en que no se reclama ningún resultado de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wilson-gunawan/blip-retrieval-medium | 49.600 (safetensors) | no disponible | Retrieval imagen-texto (esqueleto) | BSD-3-Clause | HuggingFace |
-| Salesforce/blip-retrieval (referencia oficial) | no disponible en esta ficha | no disponible | Retrieval imagen-texto | BSD-3-Clause (según repositorio original) | HuggingFace |
-| Alternativas tipo CLIP / SigLIP | no disponible en esta ficha | no disponible | Retrieval imagen-texto | varía según modelo | HuggingFace |
+| wilson-gunawan/blip-retrieval-medium | 49.600 (safetensors) | no disponible | Retrieval imagen-texto (esqueleto) | BSD-3-Clause | Hugging Face |
+| Salesforce/blip-retrieval (referencia oficial) | no disponible en esta ficha | no disponible | Retrieval imagen-texto | BSD-3-Clause (según repositorio original) | Hugging Face |
+| Alternativas tipo CLIP / SigLIP | no disponible en esta ficha | no disponible | Retrieval imagen-texto | varía según modelo | Hugging Face |
 
 No se dispone de datos verificados de parámetros, contexto ni rendimiento de los modelos comparables dentro de la información proporcionada; la comparativa se limita a señalar la categoría funcional.
 
@@ -80,5 +80,5 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wilson-gunawan/blip-retrieval-medium
+- Hugging Face: https://huggingface.co/wilson-gunawan/blip-retrieval-medium
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

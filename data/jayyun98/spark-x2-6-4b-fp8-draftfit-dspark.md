@@ -88,6 +88,6 @@ No se dispone de datos suficientes para comparar con borradores de otros ecosist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayyun98/Spark-X2.6-4B-FP8-Draftfit-DSpark
+- Modelo en Hugging Face: https://huggingface.co/jayyun98/Spark-X2.6-4B-FP8-Draftfit-DSpark
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B-FP8
 - Plataforma Draftfit: https://github.com/JayYun98/Draftfit

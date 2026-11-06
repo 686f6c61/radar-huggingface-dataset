@@ -2,11 +2,11 @@
 
 ## Resumen
 
-rh-krea-2-detailer-beauty-for-krea2-lora es un adaptador LoRA de edicion de imagen publicado por RunningHubAI (RunningHub, cuenta de autor @AIGC工作站) para el modelo base Krea 2. Su funcion no es generar imagenes desde cero, sino anadir microdetalle, textura y complejidad a creaciones ya realizadas con Krea 2, actuando como una pasada de "detailer" dentro de un flujo de trabajo de difusion. El repositorio de HuggingFace contiene un unico fichero de pesos de 109 MiB, `Detailer_-_Krea2_project.safetensors`, y el propio autor indica que esta afinado a partir de `krea2`.
+rh-krea-2-detailer-beauty-for-krea2-lora es un adaptador LoRA de edicion de imagen publicado por RunningHubAI (RunningHub, cuenta de autor @AIGC工作站) para el modelo base Krea 2. Su funcion no es generar imagenes desde cero, sino anadir microdetalle, textura y complejidad a creaciones ya realizadas con Krea 2, actuando como una pasada de "detailer" dentro de un flujo de trabajo de difusion. El repositorio de Hugging Face contiene un unico fichero de pesos de 109 MiB, `Detailer_-_Krea2_project.safetensors`, y el propio autor indica que esta afinado a partir de `krea2`.
 
 Se trata, por tanto, de un modelo de imagen (pipeline `image-text-to-image`) y no de un modelo de lenguaje: no tiene parametros activos, contexto de tokens ni capacidades de razonamiento o tool calling. Su relevancia practica es acotada y muy especializada: sirve para mejorar el acabado final de imagenes generadas, un paso habitual en pipelines de difusion donde el detalle fino (piel, tela, superficies, grano) se degrada tras el muestreo inicial.
 
-El repositorio no incluye model card tecnica detallada, no declara licencia explicita, no publica resultados de benchmarks y registra 0 descargas y 0 "likes" en el momento de la consulta. Existe una version equivalente publicada por el mismo autor en Civitai y en Tensor.Art, ademas de un Space de HuggingFace que usa un LoRA de detalle distinto sobre Krea 2 Turbo.
+El repositorio no incluye model card tecnica detallada, no declara licencia explicita, no publica resultados de benchmarks y registra 0 descargas y 0 "likes" en el momento de la consulta. Existe una version equivalente publicada por el mismo autor en Civitai y en Tensor.Art, ademas de un Space de Hugging Face que usa un LoRA de detalle distinto sobre Krea 2 Turbo.
 
 ## Especificaciones tecnicas
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Modelo base | Intensidad recomendada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-krea-2-detailer-beauty-for-krea2-lora | LoRA de detalle/edicion | Krea 2 | 0,7-1,3 (1,0-1,1 optimo); 2,0 para efecto decay | no disponible | HuggingFace, Civitai, Tensor.Art, RunningHub |
-| Detail Enhancer edit LoRA (reverentelusarca) | LoRA de detalle/edicion | Krea 2 Turbo | no disponible | no disponible | Space de HuggingFace |
-| rh-krea2-lora | LoRA | Krea 2 | no disponible | no disponible | HuggingFace (RunningHubAI) |
+| rh-krea-2-detailer-beauty-for-krea2-lora | LoRA de detalle/edicion | Krea 2 | 0,7-1,3 (1,0-1,1 optimo); 2,0 para efecto decay | no disponible | Hugging Face, Civitai, Tensor.Art, RunningHub |
+| Detail Enhancer edit LoRA (reverentelusarca) | LoRA de detalle/edicion | Krea 2 Turbo | no disponible | no disponible | Space de Hugging Face |
+| rh-krea2-lora | LoRA | Krea 2 | no disponible | no disponible | Hugging Face (RunningHubAI) |
 | Detailer - beauty for Krea2 (v1.0 Pretty) | LoRA de detalle | Krea 2 | 0,7-1,3 | no disponible | Civitai |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas; la comparacion se limita a tipo de artefacto, modelo base y canal de distribucion.
@@ -83,16 +83,16 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas; la 
 - Sin benchmarks: no hay evidencia cuantitativa de mejora sobre el modelo base, ni garantia de que el detalle anadido sea coherente con el contenido semantico.
 - Sin validacion de sesgos: no se documenta ningun analisis de sesgos, y al ser un modelo de imagen puede reproducir sesgos de representacion del modelo base y de sus datos de entrenamiento.
 - Idiomas y prompting: no disponibles; cualquier limitacion linguistica del prompt proviene de Krea 2, no del LoRA.
-- Traccion nula en HuggingFace: 0 descargas y 0 "likes" en el momento de la consulta, sin historial de uso en produccion ni soporte de comunidad en esa plataforma.
-- Fechas del repositorio: la model card indica creacion y actualizacion en septiembre de 2026 (segun los metadatos de HuggingFace), dato a verificar por el lector.
+- Traccion nula en Hugging Face: 0 descargas y 0 "likes" en el momento de la consulta, sin historial de uso en produccion ni soporte de comunidad en esa plataforma.
+- Fechas del repositorio: la model card indica creacion y actualizacion en septiembre de 2026 (segun los metadatos de Hugging Face), dato a verificar por el lector.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-krea-2-detailer-beauty-for-krea2-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-krea-2-detailer-beauty-for-krea2-lora
 - Civitai (Detailer - beauty for Krea2, v1.0 Pretty): https://civitai.com/models/2790112/detailer-beauty-for-krea2
 - Tensor.Art ([KR2] Detailer - beauty for Krea2): https://tensor.art/models/1031885023990568502
-- Space de HuggingFace (Krea 2 Detail Enhancer, Edit LoRA): https://huggingface.co/spaces/hugging-apps/krea2-detail-enhancer-edit-lora
-- RunningHubAI/rh-krea2-lora en HuggingFace: https://huggingface.co/RunningHubAI/rh-krea2-lora
+- Space de Hugging Face (Krea 2 Detail Enhancer, Edit LoRA): https://huggingface.co/spaces/hugging-apps/krea2-detail-enhancer-edit-lora
+- RunningHubAI/rh-krea2-lora en Hugging Face: https://huggingface.co/RunningHubAI/rh-krea2-lora
 - Articulo sobre textura y detalle en Krea 2 con ComfyUI: https://myaiforce.com/krea2-dual-sampler/
 - Proyecto original en RunningHub: https://www.runninghub.cn/model/public/2079007761697955841
 - Pagina del autor en RunningHub: https://www.runninghub.cn/user-center/1998616841276772354

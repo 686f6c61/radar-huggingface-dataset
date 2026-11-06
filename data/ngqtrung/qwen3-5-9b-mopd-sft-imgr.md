@@ -76,8 +76,8 @@ El propio autor indica que el SFT queda por debajo del base post-entrenado en lo
 
 | Modelo | Parametros | Contexto | Rendimiento (media de los 7 benchmarks del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-MOPD-SFT-imgr | 9,41B | No disponible | 0,636 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B (base) | No disponible | No disponible | 0,727 | No disponible en la información | HuggingFace |
+| Qwen3.5-9B-MOPD-SFT-imgr | 9,41B | No disponible | 0,636 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | No disponible | No disponible | 0,727 | No disponible en la información | Hugging Face |
 | Alternativas de 8-9B vision-language | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La única comparación con datos es frente a su modelo base, que obtiene mejores resultados en todos los benchmarks de imagen publicados.
@@ -96,7 +96,7 @@ La única comparación con datos es frente a su modelo base, que obtiene mejores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngqtrung/Qwen3.5-9B-MOPD-SFT-imgr
+- Modelo en Hugging Face: https://huggingface.co/ngqtrung/Qwen3.5-9B-MOPD-SFT-imgr
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset: https://huggingface.co/datasets/ngqtrung/mopd-data
 - Colección MOPD (multi-teacher on-policy distillation, Qwen3.5-9B): referencia en la model card, sin URL directa disponible

@@ -18,7 +18,7 @@ El modelo aborda tareas de razonamiento estructurado: Sudoku-Extreme, laberintos
 | Idiomas soportados | no disponible; las tareas evaluadas son puzzles, sin soporte lingüístico documentado |
 | Licencia | MIT |
 | Formato de pesos | checkpoints del flujo `pretrain.py`; el bundle de reanudación usa `.pt` (PyTorch). No se publican safetensors ni GGUF |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 4,0 GB con bundles de entrenamiento; 2,6 GB solo pesos de evaluación |
 
 ## Arquitectura y entrenamiento
@@ -100,6 +100,6 @@ No se publican recuentos de parámetros ni longitudes de contexto para ninguno d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arberzela/sfprm
+- Hugging Face: https://huggingface.co/arberzela/sfprm
 - GitHub con código, configuraciones, datasets y comandos de evaluación: https://github.com/arberzela/sfprm
 - Cita BibTeX: incluida en la model card; no se proporciona un enlace independiente al paper.

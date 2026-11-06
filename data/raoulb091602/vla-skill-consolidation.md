@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vla-skill-consolidation | no disponible (base π₀.₅: PaliGemma 2B + experto 300M) | no disponible | sin benchmarks publicados en la informacion disponible | other | HuggingFace, 37,8 GB, 0 descargas |
+| vla-skill-consolidation | no disponible (base π₀.₅: PaliGemma 2B + experto 300M) | no disponible | sin benchmarks publicados en la informacion disponible | other | Hugging Face, 37,8 GB, 0 descargas |
 | π₀.₅-LIBERO (OpenPI `pi05_libero`) | no disponible | no disponible | no disponible | no disponible | checkpoint público en `gs://openpi-assets/checkpoints/pi05_libero` |
 | Alternativas VLA para LIBERO (p. ej. OpenVLA, π₀) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raoulb091602/vla-skill-consolidation
+- Hugging Face: https://huggingface.co/raoulb091602/vla-skill-consolidation
 - Repositorio de código y documentación: https://github.com/raoulbouri/vla-skill-consolidation
 - Checkpoint base π₀.₅-LIBERO (OpenPI): `gs://openpi-assets/checkpoints/pi05_libero`
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada.

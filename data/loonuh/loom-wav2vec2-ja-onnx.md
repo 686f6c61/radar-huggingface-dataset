@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LooNuH/loom-wav2vec2-ja-onnx
+- Modelo en Hugging Face: https://huggingface.co/LooNuH/loom-wav2vec2-ja-onnx
 - Modelo base: https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese
 - Modelo preentrenado original: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
 - Cita: Grosman, J. (2021). *Fine-tuned XLSR-53 large model for speech recognition in Japanese*.

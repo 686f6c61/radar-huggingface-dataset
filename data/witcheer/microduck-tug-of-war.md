@@ -64,7 +64,7 @@ No se dispone de información sobre políticas comparables del mismo autor o de 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-tug-of-war | no disponible | no aplica | no disponible | no disponible | HuggingFace (0 descargas) |
+| microduck-tug-of-war | no disponible | no aplica | no disponible | no disponible | Hugging Face (0 descargas) |
 | Política previa "first tug duck" | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Otras políticas del tablero (liga) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de información sobre políticas comparables del mismo autor o de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/witcheer/microduck-tug-of-war
+- Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-tug-of-war
 - Repositorio de desafíos (rama `tug-league`): https://github.com/notwitcheer/microduck-challenges/tree/tug-league
 - Repositorio base de desafíos: https://github.com/pollen-robotics/microduck-challenges
 - Proyecto Microduck de Pollen Robotics: https://github.com/pollen-robotics/microduck

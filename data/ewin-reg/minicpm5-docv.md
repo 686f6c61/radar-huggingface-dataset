@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-DocV es un modelo vision-language (VLM) multimodal de tipo image-text-to-text desarrollado por el usuario ewin-reg, publicado en HuggingFace bajo licencia Apache-2.0. Se construye sobre el modelo de lenguaje openbmb/MiniCPM5-2B (2 000 millones de parametros, arquitectura derivada de Qwen con RoPE, RMSNorm y SwiGLU) y le acopla un codificador visual SigLIP2-so400m-patch14-384 congelado en FP16, junto con un proyector AnyRes y un adaptador rsLoRA de rango 32. El objetivo declarado es el razonamiento visual sobre documentos densos, graficos, tablas e infografias.
+MiniCPM5-DocV es un modelo vision-language (VLM) multimodal de tipo image-text-to-text desarrollado por el usuario ewin-reg, publicado en Hugging Face bajo licencia Apache-2.0. Se construye sobre el modelo de lenguaje openbmb/MiniCPM5-2B (2 000 millones de parametros, arquitectura derivada de Qwen con RoPE, RMSNorm y SwiGLU) y le acopla un codificador visual SigLIP2-so400m-patch14-384 congelado en FP16, junto con un proyector AnyRes y un adaptador rsLoRA de rango 32. El objetivo declarado es el razonamiento visual sobre documentos densos, graficos, tablas e infografias.
 
 El problema que aborda es la comprension de documentos a resolucion nativa en un presupuesto de computo pequeno: mediante segmentacion AnyRes que preserva la relacion de aspecto (hasta 4 tiles locales mas 1 miniatura global) y una compresion espacial con pooling 2x2, reduce 729 parches visuales a 196 tokens por tile (211 tokens contando delimitadores). Esto permite procesar documentos densos con un backbone de solo 2B, algo relevante para despliegues con VRAM limitada.
 
@@ -115,7 +115,7 @@ Diferencias cualitativas destacables: MiniCPM5-DocV es un ajuste ligero (solo Lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ewin-reg/MiniCPM5-DocV
+- Modelo en Hugging Face: https://huggingface.co/ewin-reg/MiniCPM5-DocV
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Codificador visual: https://huggingface.co/google/siglip2-so400m-patch14-384
 - Dataset de calibracion: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron

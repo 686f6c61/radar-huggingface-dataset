@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shadow-Engine-Pro-8B es un repositorio de modelo publicado en HuggingFace por el usuario aryankumar941 bajo licencia Apache 2.0. La model card asociada contiene unicamente el encabezado de licencia y ningun otro contenido: no se documentan arquitectura, datos de entrenamiento, capacidades, idiomas ni procedencia de los pesos. Esto significa que, a fecha de la consulta, no existe informacion verificable sobre que es el modelo ni que problema resuelve.
+Shadow-Engine-Pro-8B es un repositorio de modelo publicado en Hugging Face por el usuario aryankumar941 bajo licencia Apache 2.0. La model card asociada contiene unicamente el encabezado de licencia y ningun otro contenido: no se documentan arquitectura, datos de entrenamiento, capacidades, idiomas ni procedencia de los pesos. Esto significa que, a fecha de la consulta, no existe informacion verificable sobre que es el modelo ni que problema resuelve.
 
 El unico indicio sobre su naturaleza es el propio nombre del repositorio, que sugiere un modelo de aproximadamente 8.000 millones de parametros (sufijo "8B"). Se trata de una inferencia a partir de la denominacion, no de un dato confirmado en la ficha del autor, y no hay ninguna otra evidencia que la respalde.
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 - Evaluacion comparativa interna: si los pesos estan disponibles, usarlo como candidato adicional en un banco de pruebas propio frente a otros modelos de ~8.000 millones de parametros, midiendo perplejidad y tareas de razonamiento antes de cualquier adopcion.
 - Prototipado experimental en local: un modelo de ese orden de tamano, de confirmarse, cabria en GPU de consumo con cuantizacion de 4 bits, lo que permitiria pruebas de inferencia sin coste de API.
 - Analisis forense del repositorio: revisar los archivos publicados (config.json, tokenizer, safetensors) para determinar si se trata de un ajuste fino de un modelo base conocido o de un entrenamiento desde cero.
-- Docencia e investigacion sobre procedencia de modelos: caso de estudio sobre publicaciones en HuggingFace sin model card, sin pipeline declarado y sin adopcion, y sobre los riesgos de reutilizar pesos de origen desconocido.
+- Docencia e investigacion sobre procedencia de modelos: caso de estudio sobre publicaciones en Hugging Face sin model card, sin pipeline declarado y sin adopcion, y sobre los riesgos de reutilizar pesos de origen desconocido.
 - Auditoria de licencias: la licencia declarada es Apache 2.0, lo que en principio permitiria uso comercial, pero sin conocer el origen de los datos de entrenamiento ni de los pesos base esa declaracion no es suficiente como garantia juridica.
 - Benchmarking de robustez: comprobar empíricamente si el modelo responde de forma coherente o si los pesos estan incompletos o corruptos, algo frecuente en repositorios sin documentacion.
 
@@ -90,5 +90,5 @@ Para que una comparativa sea valida hacen falta, como minimo, el config.json del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aryankumar941/Shadow-Engine-Pro-8B
+- Repositorio en Hugging Face: https://huggingface.co/aryankumar941/Shadow-Engine-Pro-8B
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos (BookWidgets, ConvertFlow, Fouita, Figma, PlayQuizNow) no guardan relacion con el modelo y se omiten por no ser relevantes.

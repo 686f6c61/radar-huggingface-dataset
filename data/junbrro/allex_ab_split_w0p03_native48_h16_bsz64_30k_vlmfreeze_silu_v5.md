@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `junbrro/allex_AB_split_w0p03_native48_h16_bsz64_30k_vlmfreeze_silu_v5` es un repositorio alojado en HuggingFace por el usuario `junbrro`, publicado el 15 de septiembre de 2026 y actualizado el 18 de septiembre del mismo ano. Se distribuye en formato safetensors y no cuenta con documentacion asociada: no hay model card, pipeline declarado, licencia especificada ni lista de idiomas soportados. Con 3 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de muy baja difusion, sin validacion por parte de la comunidad.
+El modelo identificado como `junbrro/allex_AB_split_w0p03_native48_h16_bsz64_30k_vlmfreeze_silu_v5` es un repositorio alojado en Hugging Face por el usuario `junbrro`, publicado el 15 de septiembre de 2026 y actualizado el 18 de septiembre del mismo ano. Se distribuye en formato safetensors y no cuenta con documentacion asociada: no hay model card, pipeline declarado, licencia especificada ni lista de idiomas soportados. Con 3 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de muy baja difusion, sin validacion por parte de la comunidad.
 
 El propio identificador sugiere que se trata de un experimento de entrenamiento con hiperparametros codificados en el nombre (split AB, peso 0,03, 48 elementos nativos, tamano oculto 16, batch de 64, 30.000 pasos, congelacion de un componente de vision-lenguaje y activacion SiLU, version 5). Esta lectura es una interpretacion de la nomenclatura, no un dato confirmado por el autor, y no permite deducir el numero de parametros, la arquitectura ni los datos de entrenamiento. La etiqueta `RLDX-1` figura entre los tags sin que exista informacion publica que explique a que se refiere.
 
@@ -73,7 +73,7 @@ No disponible. No se ha identificado la familia arquitectonica ni el tamano del 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay informacion sobre arquitectura, datos de entrenamiento, sesgos ni evaluaciones.
-- Licencia no especificada: no puede asumirse uso comercial. En ausencia de licencia explicita, deben aplicarse las condiciones por defecto del repositorio en HuggingFace y contactar con el autor.
+- Licencia no especificada: no puede asumirse uso comercial. En ausencia de licencia explicita, deben aplicarse las condiciones por defecto del repositorio en Hugging Face y contactar con el autor.
 - Riesgo de alucinacion: desconocido, pero no evaluado. Cualquier uso generativo debe acompanarse de verificacion de salidas.
 - Idiomas soportados sin declarar: no puede garantizarse un rendimiento minimo en castellano ni en ningun otro idioma.
 - Longitud de contexto desconocida: no es posible disenar aplicaciones que dependan de ventanas largas.
@@ -83,6 +83,6 @@ No disponible. No se ha identificado la familia arquitectonica ni el tamano del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junbrro/allex_AB_split_w0p03_native48_h16_bsz64_30k_vlmfreeze_silu_v5
+- Repositorio en Hugging Face: https://huggingface.co/junbrro/allex_AB_split_w0p03_native48_h16_bsz64_30k_vlmfreeze_silu_v5
 - Paper, blog, repositorio de codigo o demostracion: no disponible
 - Resultados de busqueda web: no relevantes (corresponden a articulos sobre el estado de agregacion de catalizadores Pt/C en tintas para pilas de combustible de membrana de electrolito polimerico, sin relacion con el modelo).

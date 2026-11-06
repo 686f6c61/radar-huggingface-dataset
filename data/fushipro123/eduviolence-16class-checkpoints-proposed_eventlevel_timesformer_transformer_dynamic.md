@@ -23,7 +23,7 @@ El modelo cuenta con aproximadamente 129,8 millones de parámetros y se distribu
 
 La arquitectura base es TimeSformer, propuesta por Facebook Research, que aplica atención por separado en las dimensiones espacial y temporal de los vídeos. Esto reduce la complejidad computacional frente a los transformers de vídeo completos y permite capturar dependencias de largo alcance en el tiempo. La variante "proposed_eventlevel" sugiere que el modelo procesa eventos discretos dentro del vídeo, posiblemente segmentando la secuencia en clips más cortos y aplicando un transformer dinámico que se adapta a la duración o contenido de cada evento.
 
-No se dispone de información sobre el conjunto de datos de entrenamiento, el número de tokens (frames) procesados, ni si se utilizaron técnicas de aprendizaje por refuerzo o ajuste fino supervisado. El repositorio de HuggingFace no incluye documentación adicional, tarjetas de modelo ni detalles sobre el proceso de entrenamiento. El tamaño del repositorio (14 GB) sugiere que se almacenan múltiples checkpoints o pesos en alta precisión, pero no se puede confirmar.
+No se dispone de información sobre el conjunto de datos de entrenamiento, el número de tokens (frames) procesados, ni si se utilizaron técnicas de aprendizaje por refuerzo o ajuste fino supervisado. El repositorio de Hugging Face no incluye documentación adicional, tarjetas de modelo ni detalles sobre el proceso de entrenamiento. El tamaño del repositorio (14 GB) sugiere que se almacenan múltiples checkpoints o pesos en alta precisión, pero no se puede confirmar.
 
 ## Capacidades
 

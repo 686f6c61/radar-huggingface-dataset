@@ -97,5 +97,5 @@ Estas metricas corresponden a la validacion interna del proyecto y no deben inte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fotapol/qwen3-1.7b-financial-rag-lora-v3
+- Modelo en Hugging Face: https://huggingface.co/fotapol/qwen3-1.7b-financial-rag-lora-v3
 - Adaptador relacionado del mismo autor: https://huggingface.co/fotapol/qwen3-1.7b-financial-qa-lora

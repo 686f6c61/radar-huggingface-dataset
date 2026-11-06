@@ -33,7 +33,7 @@ Sobre el proceso de cuantizacion, AMD aplico LLM Compressor v0.13.0 con una rece
 
 - Generacion de texto conversacional en ingles, con el pipeline declarado como `text-generation`.
 - Razonamiento aritmetico basico y de varios pasos: obtiene 0,6073 en GSM8K 5-shot, por encima del baseline BF16.
-- Procesamiento multimodal: el checkpoint conserva la torre de vision, el adaptador y el proyector en BF16, y la etiqueta de HuggingFace es `image-text-to-text`, aunque la model card describe la entrada y la salida como texto.
+- Procesamiento multimodal: el checkpoint conserva la torre de vision, el adaptador y el proyector en BF16, y la etiqueta de Hugging Face es `image-text-to-text`, aunque la model card describe la entrada y la salida como texto.
 - Integracion con vLLM para servir el modelo con `trust_remote_code=True` y `dtype="bfloat16"`.
 - Inferencia sobre CPU AMD EPYC con aceleracion ZenDNN.
 - Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
@@ -99,7 +99,7 @@ La unica comparacion sustentada por los datos disponibles es contra el propio mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/Muse-Glimmer-30B-w8a8-llmcompressor
+- Modelo en Hugging Face: https://huggingface.co/amd/Muse-Glimmer-30B-w8a8-llmcompressor
 - Modelo base: https://huggingface.co/RedHatAI/Muse-Glimmer-30B
 - Documentacion de vLLM: https://docs.vllm.ai/en/latest/
 - Repositorio de LLM Compressor: https://github.com/vllm-project/llm-compressor

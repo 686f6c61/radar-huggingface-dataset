@@ -102,7 +102,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | AUC (leaderboard) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZTC-Judge-9B | 9,65 B | 0,6506 | No disponible | Apache 2.0 | HuggingFace (safetensors, transformers) |
+| ZTC-Judge-9B | 9,65 B | 0,6506 | No disponible | Apache 2.0 | Hugging Face (safetensors, transformers) |
 | ZTC-Judge-27B | No disponible | 0,7282 | No disponible | No disponible | Miembro de la misma familia |
 | ZTC-Judge-4B | No disponible | 0,6360 | No disponible | No disponible | Miembro de la misma familia |
 | Darwin-397B-ZTC | No disponible | 0,7364 | No disponible | No disponible | Miembro de la misma familia |
@@ -126,6 +126,6 @@ La comparacion relevante es interna a la familia: el salto de calidad se concent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FINAL-Bench/ZTC-Judge-9B
+- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/ZTC-Judge-9B
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con el modelo; los unicos resultados devueltos fueron entradas de diccionarios franceses sobre la palabra "final", sin relacion con el modelo.
 - No disponible: enlace a paper, ficha tecnica adicional o demo publica.

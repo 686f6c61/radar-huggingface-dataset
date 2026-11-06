@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador PEFT publicado por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.2-3B. El identificador del repositorio (xnli_en_and_ur_5000_percentage_1_120_VeRA_llama-3.2) sugiere que se trata de un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural) en ingles y urdu, con un subconjunto de 5000 ejemplos y un porcentaje del 1 %, y que la tecnica de adaptacion empleada seria VeRA. Ninguno de estos extremos esta confirmado en la model card, que es la plantilla generica de HuggingFace sin rellenar.
+Este repositorio contiene un adaptador PEFT publicado por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.2-3B. El identificador del repositorio (xnli_en_and_ur_5000_percentage_1_120_VeRA_llama-3.2) sugiere que se trata de un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural) en ingles y urdu, con un subconjunto de 5000 ejemplos y un porcentaje del 1 %, y que la tecnica de adaptacion empleada seria VeRA. Ninguno de estos extremos esta confirmado en la model card, que es la plantilla generica de Hugging Face sin rellenar.
 
 El artefacto pesa 0,2 GB y se distribuye en formato safetensors bajo la libreria peft (entrenado con PEFT 0.17.1). No es un modelo autonomo: requiere cargar el modelo base Llama-3.2-3B para poder ejecutarse. El repositorio registra 0 descargas y 0 likes, y su licencia e idiomas no estan declarados por el autor.
 
@@ -69,10 +69,10 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparacion s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_VeRA_llama-3.2 (adaptador) | No disponible (base de 3,2 mil millones) | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| meta-llama/Llama-3.2-3B (modelo base) | 3 200 millones aprox. | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente utilizado | Documentado por Meta |
-| Adaptadores LoRA genericos sobre Llama-3.2-3B | Tipicamente 10-100 millones (adaptador) | Heredado del base | Variable, a menudo no declarada | HuggingFace, muy abundantes | Variable, no comparable sin evaluacion |
-| Modelos multilingues de NLI dedicados (por ejemplo, variantes de XLM-R ajustadas en XNLI) | 270-560 millones | 512 tokens | MIT o similar, segun el caso | HuggingFace | Publicado en la literatura de XNLI |
+| WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_VeRA_llama-3.2 (adaptador) | No disponible (base de 3,2 mil millones) | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| meta-llama/Llama-3.2-3B (modelo base) | 3 200 millones aprox. | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente utilizado | Documentado por Meta |
+| Adaptadores LoRA genericos sobre Llama-3.2-3B | Tipicamente 10-100 millones (adaptador) | Heredado del base | Variable, a menudo no declarada | Hugging Face, muy abundantes | Variable, no comparable sin evaluacion |
+| Modelos multilingues de NLI dedicados (por ejemplo, variantes de XLM-R ajustadas en XNLI) | 270-560 millones | 512 tokens | MIT o similar, segun el caso | Hugging Face | Publicado en la literatura de XNLI |
 
 La comparacion con alternativas concretas no esta disponible en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ La comparacion con alternativas concretas no esta disponible en la informacion p
 - Riesgo de alucinacion: no evaluado. Al tratarse de un ajuste sobre una tarea de clasificacion, la salida puede ser inestable fuera de la distribucion de entrenamiento.
 - Idiomas: el alcance multilingue real es desconocido; la unica evidencia es el nombre del repositorio. El urdu esta infrarrepresentado en los corpus de ajuste tipicos, por lo que el rendimiento en esa lengua es incierto.
 - Licencia: no declarada por el autor. Esto supone un riesgo legal para uso comercial, ya que la Llama 3.2 Community License impone obligaciones de atribucion y restricciones de uso (por ejemplo, para organizaciones con mas de 700 millones de usuarios mensuales) que un usuario en produccion debe cumplir.
-- Ausencia de model card: la ficha es la plantilla vacia de HuggingFace, con todos los campos marcados como "More Information Needed". No hay informacion sobre datos de entrenamiento, hiperparametros ni evaluacion.
+- Ausencia de model card: la ficha es la plantilla vacia de Hugging Face, con todos los campos marcados como "More Information Needed". No hay informacion sobre datos de entrenamiento, hiperparametros ni evaluacion.
 - Reproducibilidad: sin datos de entrenamiento ni semillas documentadas, el adaptador no es reproducible.
 - Metadatos anomales: las fechas de creacion y actualizacion del repositorio (2026-09-21) son posteriores a la fecha de consulta habitual, lo que sugiere un error de fecha o una subida programada, y refuerza la falta de fiabilidad de los metadatos.
 - Adopcion nula: 0 descargas y 0 likes, sin evidencia de validacion por terceros.
@@ -90,7 +90,7 @@ La comparacion con alternativas concretas no esta disponible en la informacion p
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_VeRA_llama-3.2
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_VeRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, cuantificacion del impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact

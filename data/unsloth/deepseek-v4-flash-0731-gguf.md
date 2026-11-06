@@ -18,7 +18,7 @@ No se dispone en la información proporcionada de detalles sobre la arquitectura
 | Longitud de contexto | 1.000.000 tokens (segun documentacion de Unsloth) |
 | Tipos de cuantizacion | GGUF dinamico de Unsloth (variantes no especificadas) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (segun metadatos de HuggingFace) |
+| Licencia | MIT (segun metadatos de Hugging Face) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 - No se dispone de datos de VRAM estimada para las distintas cuantizaciones GGUF.
 - Al ser un modelo GGUF, puede ejecutarse en GPU de consumo (por ejemplo, RTX 4090) o incluso en CPU con llama.cpp, dependiendo de la cuantizacion elegida y del tamano real del modelo, que no se ha especificado.
 - Unsloth ofrece cuantizaciones dinamicas que permiten ajustar el nivel de precision a la VRAM disponible, aunque no se detallan los rangos de memoria necesarios.
-- Opciones de despliegue: llama.cpp, Ollama, Unsloth Desktop, Unsloth Studio (para configuraciones multi-GPU) y endpoints compatibles con la API de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, Unsloth Desktop, Unsloth Studio (para configuraciones multi-GPU) y endpoints compatibles con la API de Hugging Face.
 - No se conocen datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -74,8 +74,8 @@ No se dispone de informacion cuantitativa para realizar una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF
 - Documentacion de Unsloth sobre DeepSeek-V4: https://unsloth.ai/docs/models/deepseek-v4
 - Tutorial de DataCamp para ejecutar el modelo con Unsloth Studio y OpenCode: https://www.datacamp.com/tutorial/run-deep-seek-v4-flash-0731
-- Repositorio HuggingFace del modelo base (referencia): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Repositorio Hugging Face del modelo base (referencia): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Articulo asociado (referencia arxiv): arxiv:2606.19348 (sin URL directa disponible)

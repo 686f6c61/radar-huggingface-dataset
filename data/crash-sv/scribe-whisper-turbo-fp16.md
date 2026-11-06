@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo (WER, latencia) en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crash-sv/scribe-whisper-turbo-fp16
+- Repositorio Hugging Face: https://huggingface.co/crash-sv/scribe-whisper-turbo-fp16
 - Modelo base original: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio de la conversión original: https://huggingface.co/deepdml/faster-whisper-large-v3-turbo-ct2
 - Proyecto Scribe SV (GitHub): https://github.com/Crash-SV

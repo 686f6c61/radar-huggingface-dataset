@@ -4,7 +4,7 @@
 
 El modelo **JANGQ-AI/dots3-note-prev-NVFP4** es un modelo de lenguaje multimodal (pipeline `image-text-to-text`) desarrollado por JANGQ-AI. Con 169.534.882.464 parámetros (aproximadamente 169,5 mil millones), se presenta como un modelo de tipo Mixture-of-Experts (MoE) según los tags asociados, aunque no se dispone de documentación oficial que confirme los detalles de arquitectura. El repositorio contiene pesos en formato `safetensors` y ocupa 186,2 GB, lo que sugiere un modelo de gran tamaño diseñado para tareas avanzadas de generación de texto, razonamiento y procesamiento multimodal.
 
-La relevancia de este modelo radica en su carácter multimodal (imagen, texto, audio, vídeo según los tags), su soporte para contexto largo y capacidades agenticas, y su licencia Apache-2.0, que permite uso comercial. Sin embargo, el acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace. La información pública disponible es escasa: no se han publicado especificaciones técnicas detalladas, benchmarks ni documentación de entrenamiento, por lo que esta ficha se basa únicamente en los metadatos del repositorio.
+La relevancia de este modelo radica en su carácter multimodal (imagen, texto, audio, vídeo según los tags), su soporte para contexto largo y capacidades agenticas, y su licencia Apache-2.0, que permite uso comercial. Sin embargo, el acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face. La información pública disponible es escasa: no se han publicado especificaciones técnicas detalladas, benchmarks ni documentación de entrenamiento, por lo que esta ficha se basa únicamente en los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato.
 - Información insuficiente: no hay documentación técnica, benchmarks ni detalles de entrenamiento publicados, lo que dificulta evaluar su rendimiento y fiabilidad.
 - Riesgo de alucinación y sesgos: al no conocerse los datos de entrenamiento, no se puede evaluar el riesgo de sesgos o alucinaciones.
 - Requisitos de hardware elevados: por su tamaño, no es adecuado para entornos con recursos limitados sin cuantización agresiva.
@@ -61,4 +61,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [JANGQ-AI/dots3-note-prev-NVFP4](https://huggingface.co/JANGQ-AI/dots3-note-prev-NVFP4)
+- Repositorio Hugging Face: [JANGQ-AI/dots3-note-prev-NVFP4](https://huggingface.co/JANGQ-AI/dots3-note-prev-NVFP4)

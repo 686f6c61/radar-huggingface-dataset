@@ -93,7 +93,7 @@ La informacion disponible solo permite comparar el checkpoint FP8 con el propio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-9B-FP8
+- Modelo en Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-9B-FP8
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-9B
 - Builds GGUF: https://huggingface.co/IndexTeam/Index-Translate-9B-GGUF
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.40181

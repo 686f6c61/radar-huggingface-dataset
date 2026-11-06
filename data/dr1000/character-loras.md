@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dr1000/character-loras` aloja una colección de adaptadores LoRA (Low-Rank Adaptation) orientados a la generación de personajes consistentes en modelos de difusión. Lo desarrolla el usuario `dr1000` y se distribuye bajo licencia Apache-2.0, aunque el acceso está restringido y requiere aceptar condiciones en HuggingFace. No se trata de un modelo de lenguaje, sino de un conjunto de pesos ligeros que se aplican sobre modelos base como Flux, SDXL o Wan para inyectar un personaje concreto en las imágenes generadas.
+El repositorio `dr1000/character-loras` aloja una colección de adaptadores LoRA (Low-Rank Adaptation) orientados a la generación de personajes consistentes en modelos de difusión. Lo desarrolla el usuario `dr1000` y se distribuye bajo licencia Apache-2.0, aunque el acceso está restringido y requiere aceptar condiciones en Hugging Face. No se trata de un modelo de lenguaje, sino de un conjunto de pesos ligeros que se aplican sobre modelos base como Flux, SDXL o Wan para inyectar un personaje concreto en las imágenes generadas.
 
 La relevancia actual de este tipo de repositorios radica en la creciente demanda de personalización en generación de imágenes: con unas pocas decenas de fotos de referencia, un LoRA permite mantener la identidad de un personaje en múltiples escenas y estilos. El tamaño del repositorio es de 1.0 GB, lo que sugiere la presencia de varios adaptadores, aunque no se especifica cuántos ni para qué modelos base están entrenados. No se dispone de información sobre arquitectura interna, parámetros o contexto, ya que los LoRA son dependientes del modelo base y no se documentan en la ficha.
 
@@ -67,7 +67,7 @@ No se dispone de información sobre otros repositorios de LoRA de personajes del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dr1000/character-loras
-- Búsqueda general de LoRA en HuggingFace: https://huggingface.co/models?search=lora
+- Repositorio en Hugging Face: https://huggingface.co/dr1000/character-loras
+- Búsqueda general de LoRA en Hugging Face: https://huggingface.co/models?search=lora
 - Plataforma de LoRA con ejemplos: https://loraai.io/loras
 - Comunidad de modelos y LoRA: https://civitai.com/tag/lora

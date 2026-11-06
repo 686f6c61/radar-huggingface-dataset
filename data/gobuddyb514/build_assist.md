@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Gobuddyb514/Build_Assist` es un modelo publicado en HuggingFace por el usuario `Gobuddyb514`. Su model card no contiene ninguna descripción técnica: únicamente declara la licencia Apache 2.0. No se incluyen datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades. La búsqueda web no ha arrojado documentación adicional que permita caracterizar el modelo.
+El modelo `Gobuddyb514/Build_Assist` es un modelo publicado en Hugging Face por el usuario `Gobuddyb514`. Su model card no contiene ninguna descripción técnica: únicamente declara la licencia Apache 2.0. No se incluyen datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades. La búsqueda web no ha arrojado documentación adicional que permita caracterizar el modelo.
 
 En el momento de la consulta, el modelo presenta cero descargas y cero likes, lo que indica que no ha sido validado ni adoptado por la comunidad. Dado que no existe información técnica fiable, no es posible realizar una evaluación rigurosa ni determinar su idoneidad para ningún caso de uso concreto. Esta ficha se limita a documentar la ausencia de datos.
 
@@ -54,12 +54,12 @@ No se dispone de información suficiente para comparar este modelo con alternati
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: la model card no describe el modelo, lo que impide conocer su comportamiento, límites o sesgos.
-- Sin validación comunitaria: el modelo tiene cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido probado ni evaluado por terceros.
+- Sin validación comunitaria: el modelo tiene cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido probado ni evaluado por terceros.
 - Licencia Apache 2.0: permite uso comercial y redistribución, pero sin garantías de soporte ni de funcionamiento correcto.
 - Riesgo de uso indebido: al desconocer sus capacidades, cualquier integración en producción es arriesgada y no recomendable sin una evaluación previa.
 - Posible contenido no verificado: al no existir información sobre los datos de entrenamiento, no es posible descartar sesgos, alucinaciones o problemas de seguridad.
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Gobuddyb514/Build_Assist](https://huggingface.co/Gobuddyb514/Build_Assist)
+- Hugging Face: [https://huggingface.co/Gobuddyb514/Build_Assist](https://huggingface.co/Gobuddyb514/Build_Assist)
 - No se han encontrado enlaces adicionales relevantes. Las búsquedas web solo arrojaron resultados sin relación con el modelo (servicios bancarios y un proyecto no vinculado de asistente de construcción en Minecraft).

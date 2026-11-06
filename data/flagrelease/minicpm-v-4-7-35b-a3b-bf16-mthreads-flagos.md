@@ -94,7 +94,7 @@ Los datos de los modelos comparables no están detallados en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-mthreads-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-mthreads-FlagOS
 - ModelScope (descarga alternativa): `modelscope download --model FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-mthreads-FlagOS`
 - Imagen Docker FlagOS-Mthreads: `harbor.baai.ac.cn/flagrelease-public/minicpmv47-35b-a3b-mthreads001-gems0.0.0-treenone-cx0.13.0-pluginnone-vllm0.10.1-sglang0.0.0-sglangfl0.1.0-cp310-pt29-musa43-x64-3.3.5-server:202610121148`
 - No se han encontrado en la información proporcionada enlaces a papers, blogs o demos adicionales.

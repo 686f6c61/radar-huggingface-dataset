@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-390",
+  "slug": "dkingtutcd-gemma-e4b-repair-new-16k-with-empty-lora-390",
+  "author": "dkingtutcd",
+  "url": "https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-390",
+  "created_at": "2026-11-02T20:05:39.000Z",
+  "updated_at": "2026-11-02T20:08:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-e4b-repair-new-16k-with-empty-lora-390 - Hugging Face",
+      "url": "https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-390",
+      "snippet": "Instructions to use dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-390 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "dkingtutcd/gemma-E4B-repair · Hugging Face",
+      "url": "https://huggingface.co/dkingtutcd/gemma-E4B-repair",
+      "snippet": "dkingtutcd / gemma-E4B-repair like 0 Image-Text-to-Text Transformers Safetensors English gemma4 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

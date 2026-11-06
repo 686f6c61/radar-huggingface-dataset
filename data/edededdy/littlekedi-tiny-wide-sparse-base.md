@@ -90,7 +90,7 @@ Los tres comparten aproximadamente el mismo coste de computo por token (activos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edededdy/LittleKedi-tiny-wide-sparse-base
+- Modelo en Hugging Face: https://huggingface.co/edededdy/LittleKedi-tiny-wide-sparse-base
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset Cosmopedia: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

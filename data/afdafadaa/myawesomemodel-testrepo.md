@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador `afdafadaa/MyAwesomeModel-TestRepo` por el usuario `afdafadaa`. La información disponible indica que se trata de un repositorio de prueba: el nombre incluye el sufijo "TestRepo", acumula 0 descargas y 0 likes, el tamano del repositorio es de 0.0 GB (es decir, no contiene pesos publicados) y los metadatos mezclan senales contradictorias: las etiquetas declaran `bert` y el pipeline `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con soporte de function calling y modo de pensamiento.
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador `afdafadaa/MyAwesomeModel-TestRepo` por el usuario `afdafadaa`. La información disponible indica que se trata de un repositorio de prueba: el nombre incluye el sufijo "TestRepo", acumula 0 descargas y 0 likes, el tamano del repositorio es de 0.0 GB (es decir, no contiene pesos publicados) y los metadatos mezclan senales contradictorias: las etiquetas declaran `bert` y el pipeline `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con soporte de function calling y modo de pensamiento.
 
 Segun la model card, el modelo se presenta como una actualizacion de version que mejora su profundidad de razonamiento mediante mayores recursos de computo y optimizaciones algoritmicas en la fase de post-entrenamiento, con resultados destacados en matematicas, programacion y logica general. Se menciona un aumento de precision en AIME 2025 del 70 % al 87,5 % y un incremento del consumo medio de tokens por pregunta de 12K a 23K, ademas de una reduccion de la tasa de alucinacion y mejor soporte de function calling.
 
@@ -114,6 +114,6 @@ No es posible establecer una comparativa fiable. La tabla de la model card emple
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afdafadaa/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/afdafadaa/MyAwesomeModel-TestRepo
 
 Los resultados de busqueda web proporcionados no contienen ningun enlace relacionado con el modelo (devuelven unicamente paginas de Instagram), por lo que no se dispone de paper, blog, repositorio de codigo ni demo adicionales.

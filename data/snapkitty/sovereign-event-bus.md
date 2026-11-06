@@ -16,7 +16,7 @@ El repositorio aborda cinco preguntas de ingeniería: si un evento puede portar 
 | Longitud de contexto | No aplica |
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No disponible (el repositorio usa inglés en su documentación; no hay especificación de idiomas de interfaz) |
-| Licencia | No disponible (el README no especifica licencia; el repositorio de HuggingFace tampoco la indica) |
+| Licencia | No disponible (el README no especifica licencia; el repositorio de Hugging Face tampoco la indica) |
 | Formato de pesos | No aplica (repositorio de código fuente, no contiene pesos) |
 
 ## Arquitectura y entrenamiento
@@ -71,6 +71,6 @@ No disponible. Sovereign Event Bus no es comparable con modelos de IA. Si se bus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/Sovereign-Event-Bus
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/Sovereign-Event-Bus
 - Repositorio en GitHub: https://github.com/SNAPKITTYWEST/Sovereign-Event-Bus
 - Web del ecosistema SnapKitty (descargas): https://collectivekitty.com/downloads

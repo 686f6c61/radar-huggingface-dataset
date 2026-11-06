@@ -25,7 +25,7 @@ Es relevante ahora porque combina tres factores poco habituales en un mismo arte
 | Modelo base | openbmb/MiniCPM-V-4.7-1B |
 | Método de modificación | Abliteration con Heretic v1.4.0 |
 | Descargas / likes | 7.726 / 13 |
-| Fecha de creación | 2026-10-14 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-14 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -104,8 +104,8 @@ Nota: los datos de los modelos alternativos no provienen de la información prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/MiniCPM-V-4.7-1B-abliterated-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abiray/MiniCPM-V-4.7-1B-abliterated-heretic-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
-- Organización OpenBMB en HuggingFace: https://huggingface.co/openbmb
+- Organización OpenBMB en Hugging Face: https://huggingface.co/openbmb
 
 No se han encontrado en la búsqueda web enlaces relevantes al modelo, su paper, repositorio de código o demos; los resultados devueltos corresponden a foros sin relación con el tema y se han descartado.

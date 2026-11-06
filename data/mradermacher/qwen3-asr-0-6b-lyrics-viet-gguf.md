@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-ASR-0.6B-Lyrics-Viet-GGUF es una cuantizacion estatica en formato GGUF del modelo sunbv56/Qwen3-ASR-0.6B-Lyrics-Viet, un ajuste fino de Qwen3-ASR-0.6B especializado en el reconocimiento automatico de voz (ASR) de letras de canciones en vietnamita. El modelo original parte de la familia Qwen3-ASR de Alibaba, con 596.049.920 parametros totales (aproximadamente 0,6 mil millones), y ha sido reentrenado por el usuario sunbv56 sobre un conjunto de datos propio de canciones vietnamitas (`sunbv56/song_dataset_training_20s_cleaned`). La cuantizacion la firma mradermacher, autor habitual de versiones GGUF de modelos en HuggingFace.
+Qwen3-ASR-0.6B-Lyrics-Viet-GGUF es una cuantizacion estatica en formato GGUF del modelo sunbv56/Qwen3-ASR-0.6B-Lyrics-Viet, un ajuste fino de Qwen3-ASR-0.6B especializado en el reconocimiento automatico de voz (ASR) de letras de canciones en vietnamita. El modelo original parte de la familia Qwen3-ASR de Alibaba, con 596.049.920 parametros totales (aproximadamente 0,6 mil millones), y ha sido reentrenado por el usuario sunbv56 sobre un conjunto de datos propio de canciones vietnamitas (`sunbv56/song_dataset_training_20s_cleaned`). La cuantizacion la firma mradermacher, autor habitual de versiones GGUF de modelos en Hugging Face.
 
 El interes de esta ficha reside en que combina dos nichos muy concretos: por un lado, el reconocimiento de voz aplicado a letras cantadas, un dominio con caracteristicas acusticas muy distintas al habla conversacional (musicalidad, alargamiento de vocales, ruido instrumental de fondo); por otro, la adaptacion al vietnamita, un idioma tonal con seis tonos que complica enormemente la transcripcion automatica. El resultado es un modelo pequeno, ligero y desplegable en hardware modesto.
 
@@ -82,8 +82,8 @@ La comparativa se limita a modelos de ASR de tamano similar; no se dispone de da
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Qwen3-ASR-0.6B-Lyrics-Viet-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/sunbv56/Qwen3-ASR-0.6B-Lyrics-Viet)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Qwen3-ASR-0.6B-Lyrics-Viet-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/sunbv56/Qwen3-ASR-0.6B-Lyrics-Viet)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/sunbv56/song_dataset_training_20s_cleaned)
 - [Pagina de resumen de quants del autor](https://hf.tst.eu/model#Qwen3-ASR-0.6B-Lyrics-Viet-GGUF)
 - [Guia de uso de GGUF (README de TheBloke)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

@@ -97,7 +97,7 @@ La comparativa se limita a las variantes del propio proyecto, ya que no hay otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptchaKraken/Sunlight-v1.2-AWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/CaptchaKraken/Sunlight-v1.2-AWQ-4bit
 - Adaptador LoRA v1.2: https://huggingface.co/CaptchaKraken/CaptchaKraken-Lora-v1.2
 - Versión Twilight v1.2 FP8: https://huggingface.co/CaptchaKraken/Twilight-v1.2-FP8
 - Repositorio GitHub del proyecto: https://github.com/JWriter20/CaptchaKraken

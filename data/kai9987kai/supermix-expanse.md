@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supermix Expanse es un modelo experimental de generacion de texto de 132,6 millones de parametros publicado por el usuario Kai9987kai en HuggingFace. No es un transformer convencional: se construye mediante una tecnica que el autor denomina *model grafting*, en la que un tronco de 6 capas con atencion y mezcla de expertos (MoE) sirve de soporte para injertar cuatro fuentes heterogeneas: el modelo propio Archimedes final, la rama congelada Omni Collective v7 Frontier (77,6 M), expertos MoE extraidos de las MLP de Qwen2.5-Coder-7B-Instruct y de BioMedLM 2.7B, y un nucleo recurrente que reproduce el conectoma completo del sistema nervioso central de la mosca Drosophila macho (Janelia male CNS v1.0).
+Supermix Expanse es un modelo experimental de generacion de texto de 132,6 millones de parametros publicado por el usuario Kai9987kai en Hugging Face. No es un transformer convencional: se construye mediante una tecnica que el autor denomina *model grafting*, en la que un tronco de 6 capas con atencion y mezcla de expertos (MoE) sirve de soporte para injertar cuatro fuentes heterogeneas: el modelo propio Archimedes final, la rama congelada Omni Collective v7 Frontier (77,6 M), expertos MoE extraidos de las MLP de Qwen2.5-Coder-7B-Instruct y de BioMedLM 2.7B, y un nucleo recurrente que reproduce el conectoma completo del sistema nervioso central de la mosca Drosophila macho (Janelia male CNS v1.0).
 
 El modelo resuelve un problema de investigacion mas que de producto: explora si es posible transferir conocimiento de profesores grandes a un modelo diminuto mediante destilacion mas injerto de pesos, y si un grafo biologico real (3.830.931 aristas tipo→tipo, 122,3 millones de sinapsis tipadas) puede actuar como modulo recurrente causal dentro de una red neuronal. Es relevante ahora porque documenta de forma inusualmente honesta los limites del injerto: solo 1 de los 32 expertos injertados reproduce su grupo de neuronas profesor en tokens retenidos, y los mapas profesor→estudiante tienen un R² de retencion de 0,05 a 0,15.
 
@@ -84,11 +84,11 @@ No existe una categoria estricta de comparacion: Expanse combina un tronco propi
 
 | Modelo | Parametros | Papel en Expanse | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Supermix Expanse | 132,6 M | Modelo final | supermix-expanse-composite | HuggingFace, formato PyTorch |
-| Archimedes final | no disponible | Tronco base y profesor congelado anti-olvido | no disponible | HuggingFace (Kai9987kai/archimedes-final-model) |
-| Supermix Omni Collective v7 Frontier | 77,6 M | Rama congelada puenteada al flujo residual | no disponible | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct | 7 B | Profesor de codigo (1.500 filas verificadas, 16 expertos injertados) | no disponible en la informacion proporcionada | HuggingFace (Qwen) |
-| BioMedLM | 2,7 B | Profesor biomedico (1.386 filas filtradas, 16 expertos injertados) | no disponible en la informacion proporcionada | HuggingFace (stanford-crfm) |
+| Supermix Expanse | 132,6 M | Modelo final | supermix-expanse-composite | Hugging Face, formato PyTorch |
+| Archimedes final | no disponible | Tronco base y profesor congelado anti-olvido | no disponible | Hugging Face (Kai9987kai/archimedes-final-model) |
+| Supermix Omni Collective v7 Frontier | 77,6 M | Rama congelada puenteada al flujo residual | no disponible | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct | 7 B | Profesor de codigo (1.500 filas verificadas, 16 expertos injertados) | no disponible en la informacion proporcionada | Hugging Face (Qwen) |
+| BioMedLM | 2,7 B | Profesor biomedico (1.386 filas filtradas, 16 expertos injertados) | no disponible en la informacion proporcionada | Hugging Face (stanford-crfm) |
 
 Comparacion de rendimiento: no disponible. No se han publicado resultados de benchmarks comparativos entre Expanse y estos modelos en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ Comparacion de rendimiento: no disponible. No se han publicado resultados de ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kai9987kai/supermix-expanse
+- Modelo en Hugging Face: https://huggingface.co/Kai9987kai/supermix-expanse
 - Modelo base Archimedes final: https://huggingface.co/Kai9987kai/archimedes-final-model
 - Modelo base Supermix Omni Collective v7 Frontier: https://huggingface.co/Kai9987kai/supermix-omni-collective-v7-frontier
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
@@ -116,5 +116,5 @@ Comparacion de rendimiento: no disponible. No se han publicado resultados de ben
 - Conjunto de datos PubMedQA: https://huggingface.co/datasets/qiaojin/PubMedQA
 - Conectoma male CNS v1.0 (repositorio natverse/malecns): https://github.com/natverse/malecns
 - Portal del conectoma male CNS de Janelia: https://male-cns.janelia.org/
-- Archivo de licencia del modelo: LICENSE.md (en el repositorio de HuggingFace)
-- Recibo de verificacion del injerto: `supermix_expanse_grafted.receipt.json` (en el repositorio de HuggingFace)
+- Archivo de licencia del modelo: LICENSE.md (en el repositorio de Hugging Face)
+- Recibo de verificacion del injerto: `supermix_expanse_grafted.receipt.json` (en el repositorio de Hugging Face)

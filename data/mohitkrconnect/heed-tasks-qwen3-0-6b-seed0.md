@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heed-tasks-qwen3-0.6b-seed0` es un ajuste fino completo de `Qwen/Qwen3-0.6B-Base` desarrollado por el usuario de HuggingFace `mohitkrconnect` para una tarea muy concreta: extraer tareas estructuradas en JSON a partir de notas de voz. Forma parte del proyecto Heed, una aplicación que convierte dictados hablados en listas de tareas con su "bucket" o categoría asociada. Este checkpoint concreto es la segunda semilla (seed 0) de la misma receta que el modelo principal de la app (seed 1), y se publica únicamente para hacer visible la variabilidad entre ejecuciones de un mismo entrenamiento.
+`heed-tasks-qwen3-0.6b-seed0` es un ajuste fino completo de `Qwen/Qwen3-0.6B-Base` desarrollado por el usuario de Hugging Face `mohitkrconnect` para una tarea muy concreta: extraer tareas estructuradas en JSON a partir de notas de voz. Forma parte del proyecto Heed, una aplicación que convierte dictados hablados en listas de tareas con su "bucket" o categoría asociada. Este checkpoint concreto es la segunda semilla (seed 0) de la misma receta que el modelo principal de la app (seed 1), y se publica únicamente para hacer visible la variabilidad entre ejecuciones de un mismo entrenamiento.
 
 El modelo tiene 751.632.384 parámetros reales según los pesos en safetensors (algo más que los 0,6B nominales del nombre), se distribuye en formato safetensors con licencia Apache-2.0 y está pensado para inferencia on-device. Su salida es un objeto JSON con la forma `{"tasks":[{"t":"…","c":"…"}]}`, generado con decodificación greedy y sin plantilla de chat. El contexto de entrenamiento se limita a 1.024 tokens, suficiente para notas de voz individuales.
 
@@ -80,10 +80,10 @@ Efecto de los datos dirigidos (media de semillas 0 y 1 frente a la receta anteri
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (heed-tasks-qwen3-0.6b-seed0) | 751,6M | 1.024 tokens en entrenamiento | Extracción de tareas JSON | Apache-2.0 | HuggingFace |
-| heed-tasks-qwen3-0.6b (seed 1) | mismo tamaño (misma receta) | 1.024 tokens en entrenamiento | Extracción de tareas JSON | Apache-2.0 | HuggingFace |
+| Este modelo (heed-tasks-qwen3-0.6b-seed0) | 751,6M | 1.024 tokens en entrenamiento | Extracción de tareas JSON | Apache-2.0 | Hugging Face |
+| heed-tasks-qwen3-0.6b (seed 1) | mismo tamaño (misma receta) | 1.024 tokens en entrenamiento | Extracción de tareas JSON | Apache-2.0 | Hugging Face |
 | Receta anterior EXP-054 seed 0 | no disponible | no disponible | Extracción de tareas JSON | no disponible | Referenciado en la model card |
-| Qwen/Qwen3-0.6B-Base | ~0,6B nominales | contexto nativo del base no especificado | Generación de texto general | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3-0.6B-Base | ~0,6B nominales | contexto nativo del base no especificado | Generación de texto general | Apache-2.0 | Hugging Face |
 
 La comparación más directa es con la semilla 1 del mismo pipeline: misma arquitectura, mismos datos, mismo prompt y mismo hardware, solo cambia la semilla. La diferencia observada (77,5 frente a 79,4 de F1 juzgado) se describe en la model card como ruido entre semillas, no como una diferencia de método. Frente a la receta anterior, la ganancia global (+1,4) no alcanzó significación estadística según la regla preregistrada.
 
@@ -101,7 +101,7 @@ La comparación más directa es con la semilla 1 del mismo pipeline: misma arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b-seed0
+- Modelo en Hugging Face: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b-seed0
 - Modelo principal (seed 1, el de la app): https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Sección de limitaciones del modelo principal: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b#5-limitations-and-honest-caveats

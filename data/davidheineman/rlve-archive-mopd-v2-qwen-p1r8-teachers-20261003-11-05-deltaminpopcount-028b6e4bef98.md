@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-05-deltaminpopcount-028b6e4bef98
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-05-deltaminpopcount-028b6e4bef98
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.
 - Identificador de ejecucion de Weights & Biases mencionado en la model card: `49e3a467` (no se aporta URL).

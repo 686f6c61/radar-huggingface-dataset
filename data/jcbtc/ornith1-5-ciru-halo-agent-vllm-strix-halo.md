@@ -94,7 +94,7 @@ La compilación Ciru Halo Agent completa el lote 1.63× más rápido que Q4_K_XL
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jcbtc/Ornith1.5-Ciru-Halo-Agent-vllm-strix-halo
+- Repositorio Hugging Face: https://huggingface.co/jcbtc/Ornith1.5-Ciru-Halo-Agent-vllm-strix-halo
 - Página de investigación y benchmarks: https://llm.ciru.ai/research/ornith-strix/
 - Código fuente e instrucciones de build: https://github.com/ciru-ai/ornith-ciru-halo-agent
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B

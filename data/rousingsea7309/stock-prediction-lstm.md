@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stock Prediction LSTM Model es un modelo de red neuronal recurrente publicado en HuggingFace por el usuario RousingSea7309 bajo licencia MIT. No es un modelo de lenguaje: se trata de un predictor de series temporales financieras construido con PyTorch que estima el retorno logaritmico del dia siguiente de una accion (`log(Close[t+1] / Close[t])`) a partir de una ventana de 30 dias de datos OHLCV y siete indicadores tecnicos. La arquitectura es una LSTM de 3 capas con tamano oculto 250 y dropout 0,092, con una capa de salida escalar.
+Stock Prediction LSTM Model es un modelo de red neuronal recurrente publicado en Hugging Face por el usuario RousingSea7309 bajo licencia MIT. No es un modelo de lenguaje: se trata de un predictor de series temporales financieras construido con PyTorch que estima el retorno logaritmico del dia siguiente de una accion (`log(Close[t+1] / Close[t])`) a partir de una ventana de 30 dias de datos OHLCV y siete indicadores tecnicos. La arquitectura es una LSTM de 3 capas con tamano oculto 250 y dropout 0,092, con una capa de salida escalar.
 
 El modelo se entrena exclusivamente con datos de Apple (AAPL) descargados de Yahoo Finance via `yfinance` desde el 1 de enero de 2015, con una division cronologica 70/15/15 (entrenamiento/validacion/test). El entrenamiento usa el optimizador AdamW con learning rate 1,09e-5, tamano de lote 16, 100 epocas con parada temprana y perdida MSE.
 
@@ -75,7 +75,7 @@ No hay datos de benchmarks publicados para este modelo, por lo que no es posible
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RousingSea7309/stock-prediction-lstm | Aproximadamente 1,27 M (estimado) | 30 pasos temporales | No disponible | MIT | HuggingFace (0 descargas, pesos no confirmados) |
+| RousingSea7309/stock-prediction-lstm | Aproximadamente 1,27 M (estimado) | 30 pasos temporales | No disponible | MIT | Hugging Face (0 descargas, pesos no confirmados) |
 | Modelos estadisticos clasicos (ARIMA, GARCH) | No aplica | No aplica | No disponible | Variable segun implementacion | Amplia, multiples librerias |
 | Modelos de gradient boosting (XGBoost, LightGBM) sobre indicadores tecnicos | No aplica | No aplica | No disponible | Apache 2.0 / MIT | Amplia |
 | Arquitecturas profundas para series temporales (Temporal Fusion Transformer y similares) | Millones a decenas de millones | Ventanas configurables | No disponible | Variable | Repositorios publicos |
@@ -97,5 +97,5 @@ La comparacion de rendimiento queda pendiente de que el autor publique metricas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RousingSea7309/stock-prediction-lstm
+- Hugging Face: https://huggingface.co/RousingSea7309/stock-prediction-lstm
 - Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por la busqueda corresponden a foros de operadores de television y proveedores de internet, sin ninguna relacion con el modelo, su arquitectura o sus datos de entrenamiento. No hay papers, blogs, repositorios auxiliares ni demos disponibles en la informacion proporcionada.

@@ -71,6 +71,6 @@ No se dispone de datos comparativos con modelos similares en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HCHs/RivetCoder-36B-A14B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/HCHs/RivetCoder-36B-A14B-GGUF
 - Modelo base (referencia): https://huggingface.co/zai-org/GLM-5.3-Flash (no verificado directamente)
 - PR de llama.cpp #27752 (implementación GLM5-Next): no se dispone del enlace directo en la información proporcionada.

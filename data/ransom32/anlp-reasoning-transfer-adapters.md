@@ -93,7 +93,7 @@ No es posible establecer una comparativa cuantitativa fiable: el autor no public
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ransom32/anlp-reasoning-transfer-adapters
+- Repositorio Hugging Face: https://huggingface.co/ransom32/anlp-reasoning-transfer-adapters
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B (revisión `15852e8c16360a2fea060d615a32b45270f8a8fc`)
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - Resultados de la búsqueda web: no se han incluido por no guardar relación con el modelo ni aportar documentación técnica.

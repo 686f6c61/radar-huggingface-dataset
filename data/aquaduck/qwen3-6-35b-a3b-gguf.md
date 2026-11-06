@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por Aquaduck (aquaduck/Qwen3.6-35B-A3B-GGUF), no contiene un modelo entrenado desde cero, sino un empaquetado de pesos: el GGUF completo en cuantizacion Q4_K_M del modelo Qwen3.6-35B-A3B-UD, junto con dos fragmentos ("layer shards") cortados por la mitad del mismo archivo. El modelo subyacente es un modelo de lenguaje causal desarrollado por el Qwen Team de Alibaba Cloud, distribuido originalmente como qwen/qwen3.6-35b-a3b y cuantizado a GGUF por Unsloth. La aportacion concreta de este repo es el formato de paquete por capas `layer-package-v1`, pensado para carga escalonada o repartida entre varios nodos, no una nueva cuantizacion.
 
-El modelo base declara 262.144 tokens de contexto nativo, 40 capas, atencion con GQA de 16 cabezas de consulta y 2 de clave/valor, y una dimension oculta de 2048. La model card indica "36B parametros", mientras que los metadatos de HuggingFace reportan 17.330.304.320 parametros reales; el sufijo "A3B" del nombre es coherente con una arquitectura de mezcla de expertos con unos 3.000 millones de parametros activos, aunque la model card de este repositorio no lo confirma de forma explicita. Esta discrepancia y la ausencia de evaluaciones propias son los dos puntos que un evaluador debe verificar antes de adoptarlo.
+El modelo base declara 262.144 tokens de contexto nativo, 40 capas, atencion con GQA de 16 cabezas de consulta y 2 de clave/valor, y una dimension oculta de 2048. La model card indica "36B parametros", mientras que los metadatos de Hugging Face reportan 17.330.304.320 parametros reales; el sufijo "A3B" del nombre es coherente con una arquitectura de mezcla de expertos con unos 3.000 millones de parametros activos, aunque la model card de este repositorio no lo confirma de forma explicita. Esta discrepancia y la ausencia de evaluaciones propias son los dos puntos que un evaluador debe verificar antes de adoptarlo.
 
 Su relevancia practica es doble: por un lado ofrece un GGUF Q4_K_M estandar, compatible con llama.cpp, que cabe en estaciones de trabajo con GPU de gama alta o en configuraciones con memoria unificada; por otro, introduce un esquema de particionado por capas orientado a la aplicacion de escritorio de Aquaduck, que descarga solo el fragmento asignado por el catalogo de modelos. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el 15 de septiembre de 2026.
 
@@ -13,7 +13,7 @@ Su relevancia practica es doble: por un lado ofrece un GGUF Q4_K_M estandar, com
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Qwen3.6-35B-A3B-UD; transformer causal con GQA (16 cabezas Q / 2 cabezas KV), 40 capas, dimension oculta 2048. El sufijo "A3B" sugiere MoE, no confirmado en la model card |
-| Parametros totales | 36B segun la model card; 17.330.304.320 segun los metadatos de safetensors de HuggingFace (dato contradictorio, ver limitaciones) |
+| Parametros totales | 36B segun la model card; 17.330.304.320 segun los metadatos de safetensors de Hugging Face (dato contradictorio, ver limitaciones) |
 | Parametros activos | No confirmado en la model card; el sufijo "A3B" apunta a ~3B activos, sin dato oficial en este repositorio |
 | Longitud de contexto | 262.144 tokens (contexto nativo declarado) |
 | Tipos de cuantizacion | Q4_K_M (unico tipo presente en el repositorio) |
@@ -33,7 +33,7 @@ Los unicos detalles arquitectonicos aportados son los del modelo base: aproximad
 - Razonamiento con modo de pensamiento: la model card indica que deben seguirse los modos thinking/instruct documentados en el modelo base, lo que implica que el base los soporta; no se detallan metricas.
 - Multilingue: declarado como "Multilingual (same as base)", sin lista de idiomas.
 - Carga escalonada por capas: capacidad exclusiva de este repositorio, mediante shards contiguos de capas 0-19 y 20-39.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` figura en los metadatos de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` figura en los metadatos de Hugging Face.
 - Cuantizacion con imatrix: el tag `imatrix` aparece en los metadatos del repositorio (no se detalla en la model card).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -77,7 +77,7 @@ Comparativa con alternativas de otros fabricantes (Llama, Mistral, DeepSeek, etc
 
 ## Limitaciones y advertencias
 
-- Contradiccion en el numero de parametros: la model card declara 36B, los metadatos de safetensors de HuggingFace reportan 17.330.304.320. Debe verificarse antes de planificar recursos.
+- Contradiccion en el numero de parametros: la model card declara 36B, los metadatos de safetensors de Hugging Face reportan 17.330.304.320. Debe verificarse antes de planificar recursos.
 - Arquitectura no confirmada: la model card no aclara si es MoE ni cuantos parametros activos tiene, pese al sufijo "A3B" del nombre.
 - Degradacion por cuantizacion: la propia model card advierte de que Q4_K_M puede degradar la calidad respecto a releases de mayor precision del mismo modelo.
 - Los shards no son modelos completos: los archivos `*-layers-*.gguf` no funcionan en llama.cpp estandar y solo son utilizables con el cargador de Aquaduck Arc. Esperar que un shard funcione por si solo esta explicitamente fuera de alcance.
@@ -92,7 +92,7 @@ Comparativa con alternativas de otros fabricantes (Llama, Mistral, DeepSeek, etc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aquaduck/Qwen3.6-35B-A3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/aquaduck/Qwen3.6-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/qwen/qwen3.6-35b-a3b
 - GGUF de origen de la cuantizacion: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
 - Perfil del autor: https://huggingface.co/aquaduck

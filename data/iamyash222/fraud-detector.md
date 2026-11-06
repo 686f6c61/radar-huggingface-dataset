@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iamyash222/fraud-detector` es un ajuste fino (fine-tuning) supervisado del modelo base Qwen2.5-1.5B-Instruct, publicado por el usuario iamyash222 en HuggingFace. Se trata de un modelo de lenguaje de 1.500 millones de parametros derivado de la familia Qwen2.5 de Alibaba, orientado, segun su nombre, a tareas de deteccion de fraude, aunque la model card no documenta ni el dataset de entrenamiento ni las tareas concretas para las que fue ajustado.
+`iamyash222/fraud-detector` es un ajuste fino (fine-tuning) supervisado del modelo base Qwen2.5-1.5B-Instruct, publicado por el usuario iamyash222 en Hugging Face. Se trata de un modelo de lenguaje de 1.500 millones de parametros derivado de la familia Qwen2.5 de Alibaba, orientado, segun su nombre, a tareas de deteccion de fraude, aunque la model card no documenta ni el dataset de entrenamiento ni las tareas concretas para las que fue ajustado.
 
 El modelo se ha entrenado con la libreria TRL (version 1.17.1) mediante SFT (Supervised Fine-Tuning), y los pesos se distribuyen en formato safetensors dentro del ecosistema transformers. El repositorio tiene un tamano declarado de 0.0 GB y cero descargas en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| iamyash222/fraud-detector | ~1.5B | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT sin documentacion ni benchmarks |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 nativos (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, con benchmarks publicados y soporte multiidioma |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 nativos (131.072 con YaRN) | Apache 2.0 (Qwen Research para algunos tamanos) | HuggingFace | Mayor capacidad a costa del doble de VRAM |
-| meta-llama/Llama-3.2-1B-Instruct | 1.2B | 131.072 | Llama 3.2 Community License | HuggingFace | Alternativa de tamano similar con contexto largo |
+| iamyash222/fraud-detector | ~1.5B | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT sin documentacion ni benchmarks |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 nativos (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, con benchmarks publicados y soporte multiidioma |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 nativos (131.072 con YaRN) | Apache 2.0 (Qwen Research para algunos tamanos) | Hugging Face | Mayor capacidad a costa del doble de VRAM |
+| meta-llama/Llama-3.2-1B-Instruct | 1.2B | 131.072 | Llama 3.2 Community License | Hugging Face | Alternativa de tamano similar con contexto largo |
 
 ## Limitaciones y advertencias
 
@@ -82,6 +82,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamyash222/fraud-detector
+- Modelo en Hugging Face: https://huggingface.co/iamyash222/fraud-detector
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl

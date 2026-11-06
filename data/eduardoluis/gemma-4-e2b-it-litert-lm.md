@@ -69,7 +69,7 @@ No disponible. No se dispone de datos de rendimiento ni de especificaciones deta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eduardoluis/gemma-4-E2B-it-litert-lm
+- Repositorio Hugging Face: https://huggingface.co/eduardoluis/gemma-4-E2B-it-litert-lm
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Model card original de litert-community: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Documentacion de LiteRT-LM: https://ai.google.dev/edge/litert-lm/overview

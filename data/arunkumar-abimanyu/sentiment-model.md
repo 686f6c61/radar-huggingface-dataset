@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificacion de texto desarrollado por el usuario de HuggingFace arunkumar-abimanyu. Se trata de un ajuste fino (fine-tuning) completo de `distilbert-base-uncased`, la version destilada de BERT desarrollada por Hugging Face, orientado a la tarea de analisis de sentimiento. El modelo se distribuye con la etiqueta `text-classification` y es compatible con la libreria `transformers` y con los endpoints de inferencia de Hugging Face.
+`sentiment-model` es un modelo de clasificacion de texto desarrollado por el usuario de Hugging Face arunkumar-abimanyu. Se trata de un ajuste fino (fine-tuning) completo de `distilbert-base-uncased`, la version destilada de BERT desarrollada por Hugging Face, orientado a la tarea de analisis de sentimiento. El modelo se distribuye con la etiqueta `text-classification` y es compatible con la libreria `transformers` y con los endpoints de inferencia de Hugging Face.
 
 Con 66.955.779 parametros, el modelo mantiene el tamano compacto de DistilBERT (aproximadamente un 40 % menos de parametros que BERT-base). Segun los datos declarados por el autor en la model card, el ajuste se realizo durante 3 epocas con un learning rate de 2e-05 y AdamW fused, y alcanzo en el conjunto de evaluacion una perdida de 0.7470, una exactitud (accuracy) de 0.6598 y un F1 ponderado y macro de 0.6493.
 
@@ -84,11 +84,11 @@ No se han publicado resultados de benchmarks comparativos en la informacion disp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| arunkumar-abimanyu/sentiment-model | 66.955.779 | 512 tokens | apache-2.0 | HuggingFace (0 descargas, 0 likes) | Accuracy 0.6598, F1 0.6493 en conjunto de evaluacion no identificado |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | apache-2.0 | HuggingFace, ampliamente utilizado | No disponible en la informacion proporcionada; es el fine-tuning de referencia de DistilBERT sobre SST-2 |
-| roberta-base (y sus fine-tunings de sentimiento, por ejemplo twitter-roberta-base-sentiment-latest) | ~125 M | 512 tokens | MIT | HuggingFace | No disponible en la informacion proporcionada |
-| bert-base-uncased | ~110 M | 512 tokens | apache-2.0 | HuggingFace | No disponible en la informacion proporcionada |
-| microsoft/deberta-v3-base | ~184 M | 512 tokens | MIT | HuggingFace | No disponible en la informacion proporcionada |
+| arunkumar-abimanyu/sentiment-model | 66.955.779 | 512 tokens | apache-2.0 | Hugging Face (0 descargas, 0 likes) | Accuracy 0.6598, F1 0.6493 en conjunto de evaluacion no identificado |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | apache-2.0 | Hugging Face, ampliamente utilizado | No disponible en la informacion proporcionada; es el fine-tuning de referencia de DistilBERT sobre SST-2 |
+| roberta-base (y sus fine-tunings de sentimiento, por ejemplo twitter-roberta-base-sentiment-latest) | ~125 M | 512 tokens | MIT | Hugging Face | No disponible en la informacion proporcionada |
+| bert-base-uncased | ~110 M | 512 tokens | apache-2.0 | Hugging Face | No disponible en la informacion proporcionada |
+| microsoft/deberta-v3-base | ~184 M | 512 tokens | MIT | Hugging Face | No disponible en la informacion proporcionada |
 
 Nota: los datos de parametros, contexto y licencia de los modelos alternativos corresponden a informacion publica de sus repositorios, no a la informacion proporcionada en esta ficha; conviene verificarlos antes de tomar decisiones. No se dispone de comparativas de rendimiento entre estos modelos y `sentiment-model`.
 
@@ -106,7 +106,7 @@ Nota: los datos de parametros, contexto y licencia de los modelos alternativos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arunkumar-abimanyu/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/arunkumar-abimanyu/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

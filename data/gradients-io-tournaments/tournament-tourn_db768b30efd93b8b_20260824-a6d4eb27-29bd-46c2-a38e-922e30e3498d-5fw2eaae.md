@@ -4,7 +4,7 @@
 
 Este modelo es un adaptador LoRA (fine-tuning con PEFT) entrenado sobre la base `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `gradients-io-tournaments`. Forma parte de un ecosistema de torneos descentralizados de entrenamiento de IA vinculados a la red Bittensor (Subnet 56, "Gradients"), donde distintos mineros compiten por producir los mejores fine-tunings de modelos open source.
 
-El adaptador fue entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL de HuggingFace, y su tamaño de repositorio es de 1,4 GB, lo que corresponde a un adaptador LoRA de dimensiones considerables (posiblemente con rangos altos o múltiples capas objetivo). Al estar basado en Llama-3.1-8B-Instruct, hereda la arquitectura transformer densa de 8 mil millones de parámetros con ventana de contexto de 128K tokens.
+El adaptador fue entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL de Hugging Face, y su tamaño de repositorio es de 1,4 GB, lo que corresponde a un adaptador LoRA de dimensiones considerables (posiblemente con rangos altos o múltiples capas objetivo). Al estar basado en Llama-3.1-8B-Instruct, hereda la arquitectura transformer densa de 8 mil millones de parámetros con ventana de contexto de 128K tokens.
 
 La relevancia de este modelo radica en su origen: es un artefacto de un torneo de entrenamiento descentralizado, lo que lo convierte en un caso de estudio interesante para evaluar la calidad de los fine-tunings producidos en este tipo de competiciones. Sin embargo, al ser un adaptador LoRA, requiere cargar el modelo base para su uso, y no se dispone de información sobre su rendimiento específico en benchmarks.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su origen: es un artefacto de un torneo d
 
 El modelo es un adaptador LoRA aplicado sobre `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada de Llama-3.1-8B-Instruct creada por Unsloth para entrenamiento e inferencia eficiente. La arquitectura subyacente es un transformer decoder-only con atención multi-cabeza estándar, 32 capas y 8 mil millones de parámetros, con ventana de contexto de 128K tokens.
 
-El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando el framework TRL (Transformers Reinforcement Learning) de HuggingFace, con PEFT 0.18.1, Transformers 4.57.5 y PyTorch 2.8.0. No se especifica la composición del dataset de entrenamiento, el número de pasos, la tasa de aprendizaje ni otras hiperparámetros. Al ser un modelo de torneo, es probable que el dataset sea específico de la competición y no esté disponible públicamente. No hay evidencia de uso de RLHF, DPO ni otras técnicas de alineación adicionales al SFT.
+El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando el framework TRL (Transformers Reinforcement Learning) de Hugging Face, con PEFT 0.18.1, Transformers 4.57.5 y PyTorch 2.8.0. No se especifica la composición del dataset de entrenamiento, el número de pasos, la tasa de aprendizaje ni otras hiperparámetros. Al ser un modelo de torneo, es probable que el dataset sea específico de la competición y no esté disponible públicamente. No hay evidencia de uso de RLHF, DPO ni otras técnicas de alineación adicionales al SFT.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ El adaptador LoRA de este modelo no modifica sustancialmente los parámetros de 
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-a6d4eb27-29bd-46c2-a38e-922e30e3498d-5FW2Eaae)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-a6d4eb27-29bd-46c2-a38e-922e30e3498d-5FW2Eaae)
 - [Página de torneos de Gradients](https://www.gradients.io/app/research/tournament)
 - [Arena de mineros de Gradients](https://www.gradients.io/app/miners/tournament/latest?type=image)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)

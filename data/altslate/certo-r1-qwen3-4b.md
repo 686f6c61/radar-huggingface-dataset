@@ -86,9 +86,9 @@ La evidencia declarada es la generalizacion en el conjunto retenido, no la perdi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| altslate/certo-r1-qwen3-4b | 4,02 B | No disponible | LoRA r16 fusionado, razonamiento conciso para cascada de decision | Apache-2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3-4B (base) | 4,02 B | No disponible en la informacion proporcionada | Transformer denso de proposito general, con modo de pensamiento | Apache-2.0 | HuggingFace |
-| Ali-Yaser/Qwen3-R1-4B | No disponible | No disponible | Ajuste fino orientado a matematicas y razonamiento (la model card menciona Qwen3-8B Instruct como base, dato inconsistente con el nombre) | No disponible | HuggingFace |
+| altslate/certo-r1-qwen3-4b | 4,02 B | No disponible | LoRA r16 fusionado, razonamiento conciso para cascada de decision | Apache-2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3-4B (base) | 4,02 B | No disponible en la informacion proporcionada | Transformer denso de proposito general, con modo de pensamiento | Apache-2.0 | Hugging Face |
+| Ali-Yaser/Qwen3-R1-4B | No disponible | No disponible | Ajuste fino orientado a matematicas y razonamiento (la model card menciona Qwen3-8B Instruct como base, dato inconsistente con el nombre) | No disponible | Hugging Face |
 
 La comparacion con el modelo base es el contraste mas informativo: Certo-R1 no anade parametros ni cambia la arquitectura, sino que restringe el comportamiento hacia respuestas cortas y deterministas con una etiqueta de respuesta final parseable. Frente a otros ajustes de razonamiento de la misma familia, la diferencia es el objetivo de despliegue: Certo-R1 se posiciona como escalon de una cascada y no como modelo conversacional autonomo.
 
@@ -108,7 +108,7 @@ La comparacion con el modelo base es el contraste mas informativo: Certo-R1 no a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altslate/certo-r1-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/altslate/certo-r1-qwen3-4b
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Ajuste fino relacionado encontrado en la busqueda (no es el mismo modelo): https://huggingface.co/Ali-Yaser/Qwen3-R1-4B
 - Paper, blog o demo del autor: no disponible en la informacion proporcionada.

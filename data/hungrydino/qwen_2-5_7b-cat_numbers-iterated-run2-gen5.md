@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen5 es un ajuste fino (fine-tune) del modelo unsloth/Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un derivado del Qwen2.5-7B-Instruct, un transformer decoder-only denso de aproximadamente 7.600 millones de parametros con atencion de consultas agrupadas (GQA) y ventana de contexto nativa de 32.768 tokens. El nombre del repositorio sugiere un experimento de ajuste iterativo ("iterated-run2-gen5") orientado a una tarea concreta y no documentada, presumiblemente manipulacion de numeros o secuencias.
+HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen5 es un ajuste fino (fine-tune) del modelo unsloth/Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un derivado del Qwen2.5-7B-Instruct, un transformer decoder-only denso de aproximadamente 7.600 millones de parametros con atencion de consultas agrupadas (GQA) y ventana de contexto nativa de 32.768 tokens. El nombre del repositorio sugiere un experimento de ajuste iterativo ("iterated-run2-gen5") orientado a una tarea concreta y no documentada, presumiblemente manipulacion de numeros o secuencias.
 
 El modelo se entreno con la libreria Unsloth y TRL, segun indica la propia model card, lo que apunta a un entrenamiento con LoRA/QLoRA o tecnicas de optimizacion de memoria similares. La model card es minima: no incluye descripcion de la tarea, hiperparametros, composicion del dataset ni resultados de evaluacion. El repositorio ocupa 0,1 GB, un tamano muy inferior a los aproximadamente 15 GB que ocuparia un modelo de 7B en bfloat16, lo que sugiere que contiene adaptadores, pesos parciales o una subida incompleta.
 
@@ -77,7 +77,7 @@ Los datos de esta tabla corresponden a la documentacion publica de cada modelo, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen5 | No disponible (base: 7,61 B) | No disponible (base: 32.768 tokens) | Apache 2.0 | HuggingFace, 0 descargas |
+| HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen5 | No disponible (base: 7,61 B) | No disponible (base: 32.768 tokens) | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-7B-Instruct (unsloth) | 7,61 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Amplia, con versiones GGUF, AWQ y GPTQ |
 | Llama 3.1 8B Instruct | 8,03 B | 131.072 tokens | Llama 3.1 Community License | Amplia, con restricciones adicionales de uso |
 | Mistral 7B Instruct v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Amplia, con versiones GGUF y AWQ |
@@ -99,8 +99,8 @@ No se dispone de datos de rendimiento comparativo para este fine-tune, por lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen5
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen5
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados devueltos corresponden a fichas de peliculas en IMDb (https://m.imdb.com/title/tt0062861/, https://m.imdb.com/title/tt9381682, https://data.imdb.com/documentation/api-documentation/getting-access/) y no guardan relacion con el repositorio analizado.

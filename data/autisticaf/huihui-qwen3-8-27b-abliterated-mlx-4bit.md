@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AutisticAF/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit | 27B (original) | 262k | 4-bit MLX | Apache-2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B | 262k | Original (BF16) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (original) | 27B | 262k | Original (BF16) | Apache-2.0 | HuggingFace |
+| AutisticAF/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit | 27B (original) | 262k | 4-bit MLX | Apache-2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B | 262k | Original (BF16) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (original) | 27B | 262k | Original (BF16) | Apache-2.0 | Hugging Face |
 
 La diferencia principal entre las tres versiones es el formato de pesos y la abliteracion. La version MLX esta limitada a Apple Silicon, mientras que la version original puede ejecutarse en cualquier GPU compatible con CUDA o ROCm. La version abliterada elimina las restricciones de contenido, lo que la distingue del modelo original. No se han encontrado modelos comparables de otros fabricantes con caracteristicas similares (multimodal, 27B, sin censura y en MLX) en la informacion disponible.
 
@@ -83,7 +83,7 @@ La diferencia principal entre las tres versiones es el formato de pesos y la abl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutisticAF/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/AutisticAF/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio oficial de Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Articulo sobre Huihui-Qwen3.8-27B-abliterated (aimodels.fyi): https://www.aimodels.fyi/models/huggingFace/huihui-qwen3.8-27b-abliterated-huihui-ai

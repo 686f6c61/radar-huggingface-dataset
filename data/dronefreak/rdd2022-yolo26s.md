@@ -25,15 +25,15 @@ Su relevancia actual radica en dos factores. Por un lado, la inspección automat
 | Modelo base | Ultralytics/YOLO26 |
 | FLOPs | 22,8 GFLOPs a 640 px |
 | Clases | 4 (longitudinal_crack, transverse_crack, alligator_crack, pothole) |
-| Descargas / likes en HuggingFace | 0 / 0 (en la fecha de consulta) |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Descargas / likes en Hugging Face | 0 / 0 (en la fecha de consulta) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Fecha de creacion / actualizacion | 2026-09-20 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura es la de YOLO26s, un detector de objetos de una sola etapa perteneciente a la familia Ultralytics YOLO y distribuido a través de la librería `ultralytics`. El modelo se obtiene por ajuste fino (*fine-tune*) de los pesos preentrenados de Ultralytics/YOLO26, no por entrenamiento desde cero. Con 10,0 millones de parámetros y 22,8 GFLOPs a 640 píxeles, se posiciona en el segmento ligero de la familia, por debajo de las variantes medianas y grandes en coste computacional. El pipeline declarado es de detección de objetos, con salida de cajas delimitadoras, clase y puntuación de confianza.
 
-El entrenamiento se realiza sobre el conjunto RDD2022 Road Damage, disponible como `dronefreak/RDD2022` en HuggingFace, y forma parte del proyecto DetectionBench. Este framework aplica recetas de entrenamiento y métricas de evaluación idénticas a varios detectores modernos sobre el mismo conjunto, de modo que las comparaciones entre modelos sean reproducibles. La model card no detalla el número de tokens o épocas, la composición exacta del dataset, ni si se aplicaron técnicas de aumento de datos o de regularización específicas; tampoco menciona fases de refinamiento por refuerzo, lo cual es esperable en un detector y no en un modelo generativo. La información disponible se limita a la configuración de entrenamiento parcialmente truncada en la model card, que indica el dataset (RDD2022 Road Damage) y el framework (Ultralytics YOLO).
+El entrenamiento se realiza sobre el conjunto RDD2022 Road Damage, disponible como `dronefreak/RDD2022` en Hugging Face, y forma parte del proyecto DetectionBench. Este framework aplica recetas de entrenamiento y métricas de evaluación idénticas a varios detectores modernos sobre el mismo conjunto, de modo que las comparaciones entre modelos sean reproducibles. La model card no detalla el número de tokens o épocas, la composición exacta del dataset, ni si se aplicaron técnicas de aumento de datos o de regularización específicas; tampoco menciona fases de refinamiento por refuerzo, lo cual es esperable en un detector y no en un modelo generativo. La información disponible se limita a la configuración de entrenamiento parcialmente truncada en la model card, que indica el dataset (RDD2022 Road Damage) y el framework (Ultralytics YOLO).
 
 Las métricas publicadas se calculan sobre el split de **test** de RDD2022 empleando el pipeline estándar de DetectionBench (`detectionbench-evaluate`). El autor marca todas las métricas del `model-index` como no verificadas (`verified: false`), lo que implica que son resultados autodeclarados y no han pasado una validación independiente por parte de la plataforma.
 
@@ -134,7 +134,7 @@ Observaciones a partir de los datos declarados: RF-DETR Medium y RF-DETR Small s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/rdd2022-yolo26s
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/rdd2022-yolo26s
 - Dataset RDD2022 Road Damage: https://huggingface.co/datasets/dronefreak/RDD2022
 - Repositorio DetectionBench (framework de evaluación y código fuente declarado de las métricas): https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26

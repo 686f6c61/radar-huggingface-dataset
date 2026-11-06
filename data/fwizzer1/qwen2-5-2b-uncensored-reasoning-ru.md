@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fwizzer1/Qwen2.5-2B-Uncensored-Reasoning-RU` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace que se basa en el modelo instructivo `Qwen/Qwen2.5-1.5B-Instruct`. Su nombre sugiere dos objetivos principales: eliminar restricciones de contenido (uncensored) y potenciar capacidades de razonamiento, aparentemente orientado al idioma ruso (sufijo RU). El autor, `fwizzer1`, no ha proporcionado una model card completa, por lo que la información disponible sobre el proceso de entrenamiento, los datos utilizados y las evaluaciones es prácticamente nula.
+El modelo `fwizzer1/Qwen2.5-2B-Uncensored-Reasoning-RU` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face que se basa en el modelo instructivo `Qwen/Qwen2.5-1.5B-Instruct`. Su nombre sugiere dos objetivos principales: eliminar restricciones de contenido (uncensored) y potenciar capacidades de razonamiento, aparentemente orientado al idioma ruso (sufijo RU). El autor, `fwizzer1`, no ha proporcionado una model card completa, por lo que la información disponible sobre el proceso de entrenamiento, los datos utilizados y las evaluaciones es prácticamente nula.
 
 Se trata de un adaptador PEFT (Parameter-Efficient Fine-Tuning) de aproximadamente 0.1 GB, lo que indica que solo se han ajustado un pequeño subconjunto de parámetros sobre el modelo base. Aunque el identificador menciona "2B", el modelo base declarado es de 1.5B parámetros, por lo que el tamaño real del modelo combinado es de 1.5B más los parámetros del adaptador. La relevancia de este modelo radica en su enfoque en la eliminación de censura y el razonamiento, aunque su utilidad práctica queda limitada por la falta de documentación y de resultados de evaluación publicados.
 
@@ -79,7 +79,7 @@ La comparación directa es complicada porque no hay datos de rendimiento del ada
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/fwizzer1/Qwen2.5-2B-Uncensored-Reasoning-RU
+- Página del modelo en Hugging Face: https://huggingface.co/fwizzer1/Qwen2.5-2B-Uncensored-Reasoning-RU
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Colección oficial Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio GitHub de Qwen2.5 (no oficial): https://github.com/mx4ai/qwen2.5

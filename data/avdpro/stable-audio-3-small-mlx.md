@@ -26,7 +26,7 @@ La relevancia actual del repositorio es de nicho: permite ejecutar Stable Audio 
 | Frecuencia de muestreo de salida | no disponible |
 | Librería | MLX |
 | Tamaño del repositorio | 2,6 GB |
-| Fecha de creación (según HuggingFace) | 2026-10-05 |
+| Fecha de creación (según Hugging Face) | 2026-10-05 |
 
 ## Arquitectura y entrenamiento
 La información disponible no describe el proceso de entrenamiento, el número de tokens, la composición del dataset ni el uso de RLHF o DPO. Lo que se puede deducir de los nombres de fichero es la topología del sistema de inferencia: un transformer de difusión para música (`MLX/dit_sm-music_f16.npz`) y otro para efectos de sonido (`MLX/dit_sm-sfx_f16.npz`), ambos en precisión f16; un codificador de texto T5Gemma (`MLX/t5gemma_f16.npz`); y un decodificador de autoencoder en f32 (`MLX/same_s_decoder_f32.npz`). Se trata, por tanto, de un esquema de difusión en espacio latente con dos cabezas o checkpoints diferenciados según el dominio de audio.
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stable Audio 3 Small MLX (este repositorio) | no disponible | Texto a música y SFX | Stability AI Community License + términos de Gemma | Pesos MLX en HuggingFace (Avdpro) |
-| Stable Audio 3 Optimized (stabilityai) | no disponible | Texto a audio | Stability AI Community License + términos de Gemma | Pesos oficiales en HuggingFace |
-| Stable Audio Open 1.0 | no disponible | Texto a audio (música y samples) | Stability AI Community License | Pesos públicos en HuggingFace |
-| MusicGen (Meta) | no disponible | Texto a música | CC-BY-NC 4.0 (uso no comercial) | Pesos públicos en HuggingFace |
+| Stable Audio 3 Small MLX (este repositorio) | no disponible | Texto a música y SFX | Stability AI Community License + términos de Gemma | Pesos MLX en Hugging Face (Avdpro) |
+| Stable Audio 3 Optimized (stabilityai) | no disponible | Texto a audio | Stability AI Community License + términos de Gemma | Pesos oficiales en Hugging Face |
+| Stable Audio Open 1.0 | no disponible | Texto a audio (música y samples) | Stability AI Community License | Pesos públicos en Hugging Face |
+| MusicGen (Meta) | no disponible | Texto a música | CC-BY-NC 4.0 (uso no comercial) | Pesos públicos en Hugging Face |
 
 Los datos de parámetros y de rendimiento de las alternativas no están disponibles en la información proporcionada y no se han verificado en este documento; la comparación se limita, por tanto, a la modalidad, la licencia y la vía de distribución.
 
@@ -88,7 +88,7 @@ Los datos de parámetros y de rendimiento de las alternativas no están disponib
 - El autor declara que no ha modificado los tensores, pero la responsabilidad de verificar la integridad de los ficheros recae en quien los descarga.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Avdpro/Stable-Audio-3-Small-MLX
+- Repositorio en Hugging Face: https://huggingface.co/Avdpro/Stable-Audio-3-Small-MLX
 - Pesos originales optimizados para MLX (Stability AI): https://huggingface.co/stabilityai/stable-audio-3-optimized/tree/da6edc54ddba10bfd79a077102ded687f80e882b
 - Código de inferencia upstream: https://github.com/Stability-AI/stable-audio-3/tree/3a82c807b69cf4b7c5c05270011a5d5e47abac18
 - Licencia del repositorio: LICENSE.md (referenciado en la model card)

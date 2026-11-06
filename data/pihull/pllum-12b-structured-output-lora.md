@@ -94,8 +94,8 @@ No hay datos de BFCL para tool calling en la version 2 (el autor indica explicit
 
 | Modelo | Parametros | Contexto | Rendimiento en el benchmark del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pihull/pllum-12b-structured-output-lora | 12,25 B | No disponible | 75,8% politica correcta / 98,1% JSON estricto / 97,2% esquema valido | Apache 2.0 | HuggingFace, safetensors, 167 descargas |
-| CYFRAGOVPL/PLLuM-12B-instruct-2512 (base) | 12,25 B (mismo tamano) | No disponible | 59,8% / 62,3% / 93,9% | Apache 2.0 | HuggingFace (modelo base del ajuste) |
+| pihull/pllum-12b-structured-output-lora | 12,25 B | No disponible | 75,8% politica correcta / 98,1% JSON estricto / 97,2% esquema valido | Apache 2.0 | Hugging Face, safetensors, 167 descargas |
+| CYFRAGOVPL/PLLuM-12B-instruct-2512 (base) | 12,25 B (mismo tamano) | No disponible | 59,8% / 62,3% / 93,9% | Apache 2.0 | Hugging Face (modelo base del ajuste) |
 | Otros modelos de salida estructurada de ~12 B en polaco | No disponible | No disponible | No disponible | No disponible | No se han encontrado alternativas comparables en la informacion disponible |
 
 La unica comparacion directa documentada es contra el modelo base, del que este ajuste deriva. No se dispone de datos que permitan comparar con modelos de la misma categoria (por ejemplo, alternativas de la familia Qwen, Llama o Mistral especializadas en salida estructurada), ni de referencias a modelos comparables en polaco dentro de la informacion proporcionada.
@@ -115,7 +115,7 @@ La unica comparacion directa documentada es contra el modelo base, del que este 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/pihull/pllum-12b-structured-output-lora
+- Ficha en Hugging Face: https://huggingface.co/pihull/pllum-12b-structured-output-lora
 - Modelo base: https://huggingface.co/CYFRAGOVPL/PLLuM-12B-instruct-2512
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo (contenido no tecnico de terceros) y se descartan como fuentes. No se han encontrado enlaces tecnicos adicionales verificables.

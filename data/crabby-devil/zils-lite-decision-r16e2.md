@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zils-lite-decision-r16e2 | 852.985.920 | no disponible | Apache-2.0 | HuggingFace (0 descargas) |
-| vllm-sr/d3-lite (base) | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (raíz) | ~0,8B | no disponible | no disponible en la informacion | HuggingFace |
+| zils-lite-decision-r16e2 | 852.985.920 | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
+| vllm-sr/d3-lite (base) | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (raíz) | ~0,8B | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crabby-devil/zils-lite-decision-r16e2
+- Hugging Face: https://huggingface.co/crabby-devil/zils-lite-decision-r16e2
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite
 - Modelo raíz: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de Zils (Bittensor SN127): no disponible en la información proporcionada.

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral-7B-v0.1 (base) | 7,24B | 8k | BF16/FP16 | Apache 2.0 | HuggingFace |
-| Mistral-7B-v0.1-FP8 (este) | 7,24B | No disponible | FP8 dinámica | other | HuggingFace |
-| Mistral-7B-Instruct-v0.1 | 7,24B | 8k | BF16/FP16 | Apache 2.0 | HuggingFace |
+| Mistral-7B-v0.1 (base) | 7,24B | 8k | BF16/FP16 | Apache 2.0 | Hugging Face |
+| Mistral-7B-v0.1-FP8 (este) | 7,24B | No disponible | FP8 dinámica | other | Hugging Face |
+| Mistral-7B-Instruct-v0.1 | 7,24B | 8k | BF16/FP16 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base. No se dispone de datos de rendimiento para establecer una comparación cuantitativa con otras cuantizaciones (GPTQ, AWQ) o modelos de tamaño similar.
 
@@ -78,7 +78,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/liodon-ai/Mistral-7B-v0.1-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/liodon-ai/Mistral-7B-v0.1-FP8)
 - [Modelo base Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1)
 - [Modelo base instructivo Mistral-7B-Instruct-v0.1](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1)
 - [Repositorio de referencia de Mistral (GitHub)](https://github.com/taylorai/mistral)

@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario Enzosilwawun bajo el identificador `Enzosilwawun/notes-text-image-retrieval`, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre la tarea de recuperación de imágenes mediante texto (text-image retrieval). La model card lo declara explícitamente: se trata de un material exploratorio que documenta el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base y el contexto de evaluación (Flickr30k, MS COCO Captions), sin reclamar mejoras de rendimiento ni resultados de benchmarks.
 
-El repositorio incluye un único artefacto principal (`notes.md`) y el propio `README.md`. Aunque el tag de HuggingFace indica `safetensors` y se registran 24.832 parámetros, el tamaño total del repositorio es de 0.0 GB, lo que confirma que no hay pesos de modelo publicados. La licencia es CC-BY-4.0, pensada para el contenido textual de las notas, no para un modelo. Su relevancia actual es limitada: sirve como punto de partida conceptual para investigadores que quieran diseñar experimentos rigurosos en text-image retrieval, pero no como un recurso desplegable.
+El repositorio incluye un único artefacto principal (`notes.md`) y el propio `README.md`. Aunque el tag de Hugging Face indica `safetensors` y se registran 24.832 parámetros, el tamaño total del repositorio es de 0.0 GB, lo que confirma que no hay pesos de modelo publicados. La licencia es CC-BY-4.0, pensada para el contenido textual de las notas, no para un modelo. Su relevancia actual es limitada: sirve como punto de partida conceptual para investigadores que quieran diseñar experimentos rigurosos en text-image retrieval, pero no como un recurso desplegable.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No disponible. Este repositorio no es comparable con modelos de text-image retri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Enzosilwawun/notes-text-image-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Enzosilwawun/notes-text-image-retrieval
 - Tema de GitHub sobre image-text retrieval: https://github.com/topics/image-text-retrieval
 - Leaderboard de text-to-image (referencia general, no directamente relacionada): https://arena.ai/leaderboard/text-to-image
 - Página de Imagen (modelo de difusión texto-imagen, contexto amplio): https://imagen.research.google/

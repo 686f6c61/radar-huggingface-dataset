@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniVoice es un modelo de sintesis de voz (text-to-speech) con capacidad de clonacion de voz zero-shot y diseno de voz, distribuido por el usuario Aero-Ex en HuggingFace como checkpoints de fichero unico para ComfyUI. No es un entrenamiento propio: se trata de un reempaquetado de los pesos de k2-fsa/OmniVoice, un sistema que combina un LLM Qwen3 como backbone autorregresivo con el codec de audio HiggsAudioV2. El repositorio anade valor practico al integrar la configuracion, la configuracion del codec y el tokenizer BPE dentro de los metadatos del propio safetensors, de modo que no hacen falta ficheros auxiliares para cargarlo.
+OmniVoice es un modelo de sintesis de voz (text-to-speech) con capacidad de clonacion de voz zero-shot y diseno de voz, distribuido por el usuario Aero-Ex en Hugging Face como checkpoints de fichero unico para ComfyUI. No es un entrenamiento propio: se trata de un reempaquetado de los pesos de k2-fsa/OmniVoice, un sistema que combina un LLM Qwen3 como backbone autorregresivo con el codec de audio HiggsAudioV2. El repositorio anade valor practico al integrar la configuracion, la configuracion del codec y el tokenizer BPE dentro de los metadatos del propio safetensors, de modo que no hacen falta ficheros auxiliares para cargarlo.
 
 El modelo resuelve dos tareas concretas: clonacion de voz a partir de un audio de referencia con su transcripcion, y diseno de voz a partir de una instruccion textual (genero, edad, tono, susurro, acento o dialecto). Ademas incorpora etiquetas de vocalizacion que el modelo pronuncia literalmente, como `[laughter]`, `[sigh]` o variantes de `[question-*]` y `[surprise-*]`, lo que permite controlar la expresividad sin cambiar de modelo.
 
@@ -92,8 +92,8 @@ El diferenciador mas claro de este repositorio no es el rendimiento, sino el for
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aero-Ex/OmniVoice
-- Modelo base en HuggingFace: https://huggingface.co/k2-fsa/OmniVoice
+- Modelo en Hugging Face: https://huggingface.co/Aero-Ex/OmniVoice
+- Modelo base en Hugging Face: https://huggingface.co/k2-fsa/OmniVoice
 - Repositorio upstream: https://github.com/k2-fsa/OmniVoice
 - Paper: https://arxiv.org/abs/2604.00688
 - Paquete para ComfyUI: https://github.com/Aero-Ex/ComfyUI-OmniVoice

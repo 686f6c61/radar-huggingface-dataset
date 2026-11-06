@@ -6,7 +6,7 @@ El repositorio `hoody424/Qwen3.8-27B-heretic-re-coder-lora` es un adaptador LoRA
 
 La relevancia de esta ficha es, por tanto, limitada: se trata de un artefacto de ajuste fino comunitario, sin descargas ni valoraciones en el momento de la consulta, y con documentación mínima. Las etiquetas del repositorio indican las librerías empleadas (`transformers`, `trl`, `unsloth`, `text-generation-inference`) y la familia arquitectónica declarada (`qwen3_5`), pero no se publican parámetros totales, longitud de contexto, composición del dataset ni resultados de evaluación.
 
-La búsqueda web asociada no ha devuelto ningún resultado pertinente: los enlaces encontrados corresponden a citas célebres, un protocolo RFC y foros sin relación con el modelo. Por tanto, todos los datos técnicos que no figuran en los metadatos de HuggingFace se marcan explícitamente como no disponibles.
+La búsqueda web asociada no ha devuelto ningún resultado pertinente: los enlaces encontrados corresponden a citas célebres, un protocolo RFC y foros sin relación con el modelo. Por tanto, todos los datos técnicos que no figuran en los metadatos de Hugging Face se marcan explícitamente como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: hoody424/Qwen3.8-27B-heretic-re-coder-lora](https://huggingface.co/hoody424/Qwen3.8-27B-heretic-re-coder-lora)
+- [Hugging Face: hoody424/Qwen3.8-27B-heretic-re-coder-lora](https://huggingface.co/hoody424/Qwen3.8-27B-heretic-re-coder-lora)
 - [Modelo base: hoody424/Qwen3.8-27B-heretic-bnb-4bit](https://huggingface.co/hoody424/Qwen3.8-27B-heretic-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

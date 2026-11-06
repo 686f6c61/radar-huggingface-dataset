@@ -88,7 +88,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jugaadsrl/gliner2-multi-v1-onnx
+- Repositorio Hugging Face: https://huggingface.co/jugaadsrl/gliner2-multi-v1-onnx
 - Repositorio del motor Rust gliner2-rs: https://github.com/dariofinardi/gliner2-rs
 - Repositorio original de GLiNER2 (Fastino AI): https://github.com/fastino-ai/GLiNER2
 - Herramienta de conversión ONNX experimental: https://github.com/lmoe/gliner2-onnx

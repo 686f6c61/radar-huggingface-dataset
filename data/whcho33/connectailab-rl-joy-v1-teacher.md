@@ -77,5 +77,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/whcho33/connectailab-rl-joy-v1-teacher
+- Repositorio en Hugging Face: https://huggingface.co/whcho33/connectailab-rl-joy-v1-teacher
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

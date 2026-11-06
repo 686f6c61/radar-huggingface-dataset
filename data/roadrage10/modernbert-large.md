@@ -23,8 +23,8 @@ El modelo fue preentrenado con 2 billones de tokens de texto en ingles y codigo,
 | Tamano del repositorio | 1,6 GB |
 | Pipeline declarado | `fill-mask` (Masked Language Model) |
 | Tarea de entrenamiento | Masked LM |
-| Fecha de creacion del repositorio | 2026-10-13 (segun HuggingFace) |
-| Fecha de actualizacion | 2026-10-13 (segun HuggingFace) |
+| Fecha de creacion del repositorio | 2026-10-13 (segun Hugging Face) |
+| Fecha de actualizacion | 2026-10-13 (segun Hugging Face) |
 | Descargas / likes | 3 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -85,12 +85,12 @@ Segun la model card, en GLUE el modelo base supera a los encoders de tamano simi
 
 | Modelo | Parametros | Contexto nativo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ModernBERT-large | 395 M (28 capas) | 8.192 tokens | Encoder MLM con RoPE y atencion local-global | Apache 2.0 | Pesos publicos en HuggingFace |
-| ModernBERT-base | 149 M (22 capas) | 8.192 tokens | Encoder MLM, misma arquitectura | Apache 2.0 | Pesos publicos en HuggingFace |
-| DeBERTa-v3-large | ~435 M | 512 tokens | Encoder con atencion desenredada | MIT | Pesos publicos en HuggingFace |
-| GTE-en-MLM | ~149 M (variante base) | 8.192 tokens (familia ModernBERT) | Encoder MLM orientado a retrieval | Apache 2.0 | Pesos publicos en HuggingFace |
-| NomicBERT | ~137 M | 8.192 tokens | Encoder MLM de contexto largo | Apache 2.0 | Pesos publicos en HuggingFace |
-| RoBERTa-large | ~355 M | 512 tokens | Encoder MLM clasico | MIT | Pesos publicos en HuggingFace |
+| ModernBERT-large | 395 M (28 capas) | 8.192 tokens | Encoder MLM con RoPE y atencion local-global | Apache 2.0 | Pesos publicos en Hugging Face |
+| ModernBERT-base | 149 M (22 capas) | 8.192 tokens | Encoder MLM, misma arquitectura | Apache 2.0 | Pesos publicos en Hugging Face |
+| DeBERTa-v3-large | ~435 M | 512 tokens | Encoder con atencion desenredada | MIT | Pesos publicos en Hugging Face |
+| GTE-en-MLM | ~149 M (variante base) | 8.192 tokens (familia ModernBERT) | Encoder MLM orientado a retrieval | Apache 2.0 | Pesos publicos en Hugging Face |
+| NomicBERT | ~137 M | 8.192 tokens | Encoder MLM de contexto largo | Apache 2.0 | Pesos publicos en Hugging Face |
+| RoBERTa-large | ~355 M | 512 tokens | Encoder MLM clasico | MIT | Pesos publicos en Hugging Face |
 
 La ventaja principal de ModernBERT-large frente a DeBERTa-v3-large y RoBERTa-large es el contexto de 8.192 tokens y su mejor rendimiento en recuperacion; frente a GTE-en-MLM y NomicBERT, su mayor numero de parametros le permite mejores resultados en recuperacion de codigo. Los valores detallados de la comparativa *large* no estan disponibles en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ La ventaja principal de ModernBERT-large frente a DeBERTa-v3-large y RoBERTa-lar
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/roadrage10/ModernBERT-large
+- Repositorio analizado en Hugging Face: https://huggingface.co/roadrage10/ModernBERT-large
 - Repositorio oficial de ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - Repositorio oficial de ModernBERT-base: https://huggingface.co/answerdotai/ModernBERT-base
 - Blog de publicacion de ModernBERT: https://huggingface.co/blog/modernbert

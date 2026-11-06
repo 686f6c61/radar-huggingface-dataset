@@ -6,7 +6,7 @@ Pika-H3-Flex es un adaptador LoRA publicado por el usuario Rombakr5 sobre el mod
 
 El modelo se apoya en la arquitectura del MiniMax-H3, del que hereda la capacidad de generar vídeo con audio integrado y de seguir instrucciones detalladas de puesta en escena. El adaptador añade un sesgo hacia prompts largos y estructurados por marcas temporales, con movimientos de cámara explícitos y descripciones de sonido diegético o música. Es relevante ahora porque demuestra cómo un LoRA puede convertir un modelo base multimodal de vídeo en una herramienta de dirección cinematográfica por texto, sin reentrenar el modelo completo.
 
-La ficha se basa únicamente en los metadatos de HuggingFace y en la model card pública. No hay información sobre el proceso de entrenamiento del adaptador, los datos utilizados ni resultados de benchmarks. El número de parámetros reportado en safetensors (33.122.992.896) corresponde al conjunto de pesos del repositorio, no necesariamente al adaptador LoRA en sí.
+La ficha se basa únicamente en los metadatos de Hugging Face y en la model card pública. No hay información sobre el proceso de entrenamiento del adaptador, los datos utilizados ni resultados de benchmarks. El número de parámetros reportado en safetensors (33.122.992.896) corresponde al conjunto de pesos del repositorio, no necesariamente al adaptador LoRA en sí.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ No disponible. No se han proporcionado datos de benchmarks ni de modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rombakr5/Pika-H3-Flex
+- Hugging Face: https://huggingface.co/Rombakr5/Pika-H3-Flex
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/Rombakr5/Pika-H3-Flex/blob/main/LICENSE
 - Ejemplos de la model card: `assets/showcases/camera-rally.mp4`, `assets/showcases/balcony-orbit.mp4` (rutas relativas al repositorio)

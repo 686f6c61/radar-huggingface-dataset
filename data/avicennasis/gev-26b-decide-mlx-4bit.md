@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GEV-26B-Decide-mlx-4bit es una conversión a MLX (Apple Silicon) del modelo autotrust/GEV-26B-Decide, un modelo de decisión de tipo "System 1" construido sobre el backbone Gemma-4-26B-A4B. No es un modelo generativo de propósito general ni un chatbot: su función es responder preguntas tipadas (sí/no, elección entre 2 y 256 opciones, o puntuación de 0 a 5) devolviendo una probabilidad calibrada por opción en un único forward pass. El responsable de esta conversión es el usuario de HuggingFace Avicennasis, y el modelo base lo desarrolla autotrust.
+GEV-26B-Decide-mlx-4bit es una conversión a MLX (Apple Silicon) del modelo autotrust/GEV-26B-Decide, un modelo de decisión de tipo "System 1" construido sobre el backbone Gemma-4-26B-A4B. No es un modelo generativo de propósito general ni un chatbot: su función es responder preguntas tipadas (sí/no, elección entre 2 y 256 opciones, o puntuación de 0 a 5) devolviendo una probabilidad calibrada por opción en un único forward pass. El responsable de esta conversión es el usuario de Hugging Face Avicennasis, y el modelo base lo desarrolla autotrust.
 
 El modelo resuelve un problema muy concreto en pipelines de automatización: tomar decisiones discretas y auditables con una confianza numérica asociada, en lugar de texto libre. Esto resulta útil para guardrails de comandos de shell, triaje de bandejas de entrada y enrutado de incidencias, donde se necesita una etiqueta y una probabilidad para poder aplicar umbrales de confianza antes de ejecutar una acción automática. La arquitectura combina el backbone Gemma-4-26B-A4B (con capas de atención global y enrutadores MoE) con una LoRA de System 1 ya fusionada y una cabeza de decisión de 24 slots.
 
@@ -107,7 +107,7 @@ Frente a modelos de clasificación de texto convencionales (por ejemplo, clasifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avicennasis/GEV-26B-Decide-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/Avicennasis/GEV-26B-Decide-mlx-4bit
 - Modelo base: https://huggingface.co/autotrust/GEV-26B-Decide
 - Variante de 8 bits: https://huggingface.co/Avicennasis/GEV-26B-Decide-mlx-8bit
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a listados de prendas de vestir y no guardan relacion con el modelo).

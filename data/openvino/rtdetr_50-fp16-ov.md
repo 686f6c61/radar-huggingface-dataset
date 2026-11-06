@@ -30,7 +30,7 @@ La innovación técnica de esta distribución es la conversión a OpenVINO IR co
 ## Capacidades
 
 - Detección de objetos en imágenes: predicción de cajas delimitadoras y clases sobre una imagen de entrada.
-- Pipeline `object-detection` compatible con el ecosistema HuggingFace y con Model API.
+- Pipeline `object-detection` compatible con el ecosistema Hugging Face y con Model API.
 - Inferencia acelerada en hardware Intel mediante OpenVINO (CPU, GPU integrada, NPU).
 - Integración con la clase `Model` de Model API y con `Visualizer` para renderizar resultados sobre la imagen.
 - Reentrenamiento y exportación mediante Geti para datasets personalizados.
@@ -81,7 +81,7 @@ La comparación relevante es con el RT-DETR ResNet-50 original: misma arquitectu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/rtdetr_50-fp16-ov
+- Hugging Face: https://huggingface.co/OpenVINO/rtdetr_50-fp16-ov
 - Modelo original RT-DETR ResNet-50 (Roboflow): https://github.com/roboflow/rf-detr
 - Geti (Intel): https://github.com/open-edge-platform/geti
 - Documentación de OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

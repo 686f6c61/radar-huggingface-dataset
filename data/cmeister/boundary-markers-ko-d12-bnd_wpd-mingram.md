@@ -81,7 +81,7 @@ La comparacion natural es interna al propio estudio: el tokenizador `plain` como
 
 | Modelo | Idioma | Arquitectura | Contexto | Tokenizador | bpb de validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este modelo (`bnd_wpd`, 12 capas) | Coreano | Transformer denso 12x768, 6 cabezas | 2.048 | MinGram con marcadores de frontera de palabra, puntuacion y digitos | 0,85003 (media de 3 semillas) | Apache-2.0 | Pesos PyTorch en HuggingFace |
+| Este modelo (`bnd_wpd`, 12 capas) | Coreano | Transformer denso 12x768, 6 cabezas | 2.048 | MinGram con marcadores de frontera de palabra, puntuacion y digitos | 0,85003 (media de 3 semillas) | Apache-2.0 | Pesos PyTorch en Hugging Face |
 | Referencia `plain` (mismo estudio) | Coreano | Identica | 2.048 | Subpalabras sin marcadores | Aproximadamente 0,00230 bpb inferior (mejor) en media | No disponible como modelo publicado | No disponible |
 | Otras variantes de marcado (`bnd_w`, etc.) | Coreano | Identica | 2.048 | Otros esquemas de marcado | No disponible en esta ficha; el autor remite a script_tok | No disponible | No disponible |
 | Modelos en ingles del articulo | Ingles | Similar | No disponible | Esquemas de marcado | No disponible en la informacion proporcionada | No disponible | No disponible |
@@ -102,7 +102,7 @@ La comparacion natural es interna al propio estudio: el tokenizador `plain` como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd-mingram
 - Articulo "Explicit Boundary Markers for Subword Vocabularies" (Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Repositorio script_tok (tokenizador, scripts de entrenamiento y comparacion completa): https://github.com/sanderland/script_tok
 - Repositorio nanochat (arquitectura y codigo de entrenamiento, commit `92d63d4`): https://github.com/karpathy/nanochat

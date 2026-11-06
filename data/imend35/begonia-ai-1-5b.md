@@ -74,10 +74,10 @@ Observaciones adicionales reportadas por el autor: dos peticiones de agente prob
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Begonia AI 1.5B | ~1,54 B | No disponible | Asistente hotelero en turco (QLoRA + RAG + tools) | No disponible | HuggingFace (pesos fusionados, LoRA y GGUF) |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,54 B | No disponible en esta ficha (modelo base) | Instrucciones generales y tool calling | No disponible en esta ficha | HuggingFace |
-| Llama 3.2 1B Instruct | ~1,2 B | No disponible en esta ficha | Instrucciones generales multilingües | No disponible en esta ficha | HuggingFace |
-| SmolLM2-1.7B-Instruct | ~1,7 B | No disponible en esta ficha | Instrucciones generales, orientado a eficiencia | No disponible en esta ficha | HuggingFace |
+| Begonia AI 1.5B | ~1,54 B | No disponible | Asistente hotelero en turco (QLoRA + RAG + tools) | No disponible | Hugging Face (pesos fusionados, LoRA y GGUF) |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,54 B | No disponible en esta ficha (modelo base) | Instrucciones generales y tool calling | No disponible en esta ficha | Hugging Face |
+| Llama 3.2 1B Instruct | ~1,2 B | No disponible en esta ficha | Instrucciones generales multilingües | No disponible en esta ficha | Hugging Face |
+| SmolLM2-1.7B-Instruct | ~1,7 B | No disponible en esta ficha | Instrucciones generales, orientado a eficiencia | No disponible en esta ficha | Hugging Face |
 
 Begonia AI no aporta mejoras medibles frente a su modelo base en capacidades generales; su valor diferencial es la especialización en un dominio ficticio y el pipeline RAG y de herramientas que lo acompaña, no un rendimiento superior. Para tareas generales en turco o multilingües, el modelo base o las alternativas citadas son opciones más razonables, al no estar limitadas a un único rol.
 
@@ -95,7 +95,7 @@ Begonia AI no aporta mejoras medibles frente a su modelo base en capacidades gen
 
 ## Enlaces
 
-- Modelo fusionado en HuggingFace: https://huggingface.co/imend35/Begonia-AI-1.5B
+- Modelo fusionado en Hugging Face: https://huggingface.co/imend35/Begonia-AI-1.5B
 - Adaptador LoRA: https://huggingface.co/imend35/Begonia-AI-LoRA
 - Dataset: https://huggingface.co/datasets/imend35/Begonia-AI-Dataset
 - Version GGUF: https://huggingface.co/imend35/Begonia-AI-GGUF

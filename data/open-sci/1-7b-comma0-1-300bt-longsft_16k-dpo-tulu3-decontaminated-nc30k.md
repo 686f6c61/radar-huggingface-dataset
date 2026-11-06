@@ -64,10 +64,10 @@ La model card declara un `model-index` con una única entrada (`sft__Nemotron-Ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/1.7b-Comma0.1-...-nc30k | 1,71B | no disponible | other | HuggingFace, 16 descargas | SFT experimental, sin benchmarks |
-| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated | ~1,7B | 16k (según nombre) | no disponible | HuggingFace | Modelo base del anterior, con DPO |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Alternativa madura con benchmarks públicos |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 | Apache 2.0 | HuggingFace | Modelo pequeño alineado con evaluación publicada |
+| open-sci/1.7b-Comma0.1-...-nc30k | 1,71B | no disponible | other | Hugging Face, 16 descargas | SFT experimental, sin benchmarks |
+| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated | ~1,7B | 16k (según nombre) | no disponible | Hugging Face | Modelo base del anterior, con DPO |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Alternativa madura con benchmarks públicos |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 | Apache 2.0 | Hugging Face | Modelo pequeño alineado con evaluación publicada |
 
 La comparación directa es difícil porque el modelo de open-sci carece de métricas y de documentación de licencia. Frente a alternativas como Qwen2.5-1.5B-Instruct o SmolLM2-1.7B-Instruct, presenta un tamaño similar pero sin garantías de rendimiento ni términos de uso claros.
 
@@ -85,7 +85,7 @@ La comparación directa es difícil porque el modelo de open-sci carece de métr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated-nc30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated-nc30k
 - Modelo base: https://huggingface.co/ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Nemotron (familia de datasets y modelos de NVIDIA): https://huggingface.co/nvidia

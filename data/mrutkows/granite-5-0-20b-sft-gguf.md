@@ -65,6 +65,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos de 20B par
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/mrutkows/granite-5.0-20b-sft-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/mrutkows/granite-5.0-20b-sft-GGUF
 - Modelo base (IBM): https://huggingface.co/ibm-research/granite-5.0-20b-sft
 - Repositorio de conversión GGUF de IBM: https://github.com/IBM/gguf

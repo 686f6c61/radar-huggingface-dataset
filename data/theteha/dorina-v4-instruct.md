@@ -86,5 +86,5 @@ La comparativa se ofrece a título orientativo por categoría y tamaño; no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theteha/dorina-v4-instruct
+- Modelo en Hugging Face: https://huggingface.co/theteha/dorina-v4-instruct
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

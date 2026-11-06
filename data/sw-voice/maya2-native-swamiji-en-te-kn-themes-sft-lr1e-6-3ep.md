@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables de la misma familia o ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya2-native-swamiji-en-te-kn-themes-sft-lr1e-6-3ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya2-native-swamiji-en-te-kn-themes-sft-lr1e-6-3ep
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Dataset de referencia en inglés: https://huggingface.co/sw-voice/swamiji-voice-sft-sidon-themes
 - Dataset de referencia en telugu: https://huggingface.co/sw-voice/swamiji-navaratri-telugu-sidon-themes

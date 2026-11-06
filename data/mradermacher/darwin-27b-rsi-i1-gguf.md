@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Darwin-27B-RSI-i1-GGUF es un repositorio de cuantizaciones GGUF publicado por mradermacher a partir del modelo base FINAL-Bench/Darwin-27B-RSI. Se trata, por tanto, de una redistribucion optimizada para inferencia local, no de un modelo entrenado desde cero: el autor aplica su pipeline habitual de conversion (metadatos `convert_type: hf` y `quantize_version: 2`) y cuantizacion ponderada con matriz de importancia (imatrix) sobre los pesos originales en formato HuggingFace.
+Darwin-27B-RSI-i1-GGUF es un repositorio de cuantizaciones GGUF publicado por mradermacher a partir del modelo base FINAL-Bench/Darwin-27B-RSI. Se trata, por tanto, de una redistribucion optimizada para inferencia local, no de un modelo entrenado desde cero: el autor aplica su pipeline habitual de conversion (metadatos `convert_type: hf` y `quantize_version: 2`) y cuantizacion ponderada con matriz de importancia (imatrix) sobre los pesos originales en formato Hugging Face.
 
 El modelo base tiene 26.895.998.464 parametros (aproximadamente 26,9 mil millones), coherente con la denominacion comercial "27B". El repositorio ocupa 38,9 GB e incluye una familia de cuantizaciones que abarca desde IQ1_S (aproximadamente 1,56 bits por peso) hasta Q6_K (aproximadamente 6,56 bits por peso), lo que permite desplegar el modelo desde equipos con poca VRAM hasta servidores con GPU de 24 GB o mas.
 
-La relevancia de esta publicacion es practica: los tags `gguf`, `imatrix`, `conversational` y `endpoints_compatible` indican que el artefacto esta pensado para ejecutarse con llama.cpp y derivados (Ollama, LM Studio, koboldcpp) y para servirse mediante endpoints compatibles con la API de HuggingFace. No se dispone de informacion sobre licencia, idiomas, contexto, arquitectura del modelo base ni resultados de evaluacion en la informacion proporcionada.
+La relevancia de esta publicacion es practica: los tags `gguf`, `imatrix`, `conversational` y `endpoints_compatible` indican que el artefacto esta pensado para ejecutarse con llama.cpp y derivados (Ollama, LM Studio, koboldcpp) y para servirse mediante endpoints compatibles con la API de Hugging Face. No se dispone de informacion sobre licencia, idiomas, contexto, arquitectura del modelo base ni resultados de evaluacion en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ La relevancia de esta publicacion es practica: los tags `gguf`, `imatrix`, `conv
 | Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, small-IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (llama.cpp); el metadato `convert_type: hf` indica conversion desde pesos en formato HuggingFace |
+| Formato de pesos | GGUF (llama.cpp); el metadato `convert_type: hf` indica conversion desde pesos en formato Hugging Face |
 | Tipo de cuantizacion | ponderada con matriz de importancia (imatrix / weighted quants) |
 | Tamano del repositorio | 38,9 GB |
 | Fecha de creacion (metadatos) | 2026-09-28 |
@@ -34,7 +34,7 @@ Lo que si puede afirmarse es el proceso de cuantizacion. Los metadatos de la mod
 ## Capacidades
 
 - Generacion de texto y conversacion: el tag `conversational` indica que el modelo esta orientado a dialogos multi-turno, si bien no se detalla el formato de prompt ni la plantilla de chat soportada.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el artefacto puede desplegarse mediante endpoints compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el artefacto puede desplegarse mediante endpoints compatibles con la API de Hugging Face.
 - Inferencia local mediante llama.cpp: al distribuirse en GGUF, es ejecutable en CPU, GPU o configuraciones hibridas con offload parcial de capas.
 - Razonamiento, generacion de codigo, matematicas, vision, audio: no disponible.
 - Soporte de tool calling / function calling: no disponible.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 | Modelo | Parametros | Formato | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FINAL-Bench/Darwin-27B-RSI | no disponible (presumiblemente 26,9 B en precision original) | safetensors (formato HuggingFace) | no aplica | no disponible | repositorio del modelo base |
+| FINAL-Bench/Darwin-27B-RSI | no disponible (presumiblemente 26,9 B en precision original) | safetensors (formato Hugging Face) | no aplica | no disponible | repositorio del modelo base |
 | mradermacher/Darwin-27B-RSI-i1-GGUF | 26.895.998.464 | GGUF | 24 niveles, de IQ1_S a Q6_K | no disponible | repositorio con 0 descargas y 0 likes en el momento de la consulta |
 
 Comparacion con otras familias de modelos de tamano similar (por ejemplo, modelos de 24-32 B de parametros de otros laboratorios): no disponible, al no existir datos de rendimiento de este modelo que permitan establecer una comparacion rigurosa.
@@ -121,7 +121,7 @@ Comparacion con otras familias de modelos de tamano similar (por ejemplo, modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Darwin-27B-RSI-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Darwin-27B-RSI-i1-GGUF
 - Modelo base: https://huggingface.co/FINAL-Bench/Darwin-27B-RSI
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
 - Runtime de referencia para GGUF (llama.cpp): https://github.com/ggml-org/llama.cpp

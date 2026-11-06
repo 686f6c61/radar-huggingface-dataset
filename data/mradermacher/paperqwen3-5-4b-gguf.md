@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PaperQwen3.5-4B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base PaperQwen3.5-4B, publicado por el usuario Thermostatic en HuggingFace. El repositorio lo mantiene mradermacher, conocido por generar y distribuir versiones cuantizadas de modelos recientes para su uso con llama.cpp y herramientas compatibles. El proposito del repositorio es exclusivamente de conversion y empaquetado: no introduce cambios en los pesos mas alla de la cuantizacion, y no anade capacidades nuevas.
+PaperQwen3.5-4B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base PaperQwen3.5-4B, publicado por el usuario Thermostatic en Hugging Face. El repositorio lo mantiene mradermacher, conocido por generar y distribuir versiones cuantizadas de modelos recientes para su uso con llama.cpp y herramientas compatibles. El proposito del repositorio es exclusivamente de conversion y empaquetado: no introduce cambios en los pesos mas alla de la cuantizacion, y no anade capacidades nuevas.
 
 El nombre del modelo sugiere un derivado de la familia Qwen3.5 con aproximadamente 4.000 millones de parametros, aunque el dato real de safetensors del repositorio indica 333.514.240 parametros totales, una cifra notablemente inferior a la que implicaria la nomenclatura. Esta discrepancia no se resuelve en la informacion disponible y conviene verificarla antes de cualquier uso en produccion. El modelo base no incluye model card detallada en los datos proporcionados, por lo que faltan especificaciones sobre arquitectura, entrenamiento y licencia.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| PaperQwen3.5-4B-GGUF (este) | 333,5 M (reportado) | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-3B-Instruct-GGUF | 3.090 M | 32.768 tokens | Apache 2.0 | GGUF | HuggingFace |
-| Llama-3.2-3B-Instruct-GGUF | 3.210 M | 131.072 tokens | Llama 3.2 Community License | GGUF | HuggingFace |
-| Phi-3.5-mini-instruct-GGUF | 3.820 M | 131.072 tokens | MIT | GGUF | HuggingFace |
+| PaperQwen3.5-4B-GGUF (este) | 333,5 M (reportado) | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-3B-Instruct-GGUF | 3.090 M | 32.768 tokens | Apache 2.0 | GGUF | Hugging Face |
+| Llama-3.2-3B-Instruct-GGUF | 3.210 M | 131.072 tokens | Llama 3.2 Community License | GGUF | Hugging Face |
+| Phi-3.5-mini-instruct-GGUF | 3.820 M | 131.072 tokens | MIT | GGUF | Hugging Face |
 
 La comparativa es orientativa: el modelo de este repositorio no declara licencia ni contexto, y su recuento real de parametros difiere del que sugiere el nombre, por lo que la equivalencia con las alternativas no puede confirmarse.
 

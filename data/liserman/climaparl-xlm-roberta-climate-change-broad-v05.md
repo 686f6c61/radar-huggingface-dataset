@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `liserman/climaparl-xlm-roberta-climate-change-broad-v05` es un clasificador de texto basado en la arquitectura XLM-RoBERTa, publicado en el Hub de HuggingFace por el usuario `liserman`. Según la información disponible, se trata de un modelo de clasificación de secuencias (pipeline `text-classification`) con 278 millones de parámetros, almacenado en formato `safetensors`. El nombre sugiere que está orientado a la detección o clasificación de contenido relacionado con el cambio climático, aunque no se proporciona documentación oficial que confirme esta tarea específica.
+El modelo `liserman/climaparl-xlm-roberta-climate-change-broad-v05` es un clasificador de texto basado en la arquitectura XLM-RoBERTa, publicado en el Hub de Hugging Face por el usuario `liserman`. Según la información disponible, se trata de un modelo de clasificación de secuencias (pipeline `text-classification`) con 278 millones de parámetros, almacenado en formato `safetensors`. El nombre sugiere que está orientado a la detección o clasificación de contenido relacionado con el cambio climático, aunque no se proporciona documentación oficial que confirme esta tarea específica.
 
 La model card es una plantilla genérica sin información sobre el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados. Esto limita considerablemente la evaluación del modelo para su uso en producción, ya que no se conocen sus métricas de rendimiento ni sus limitaciones. A pesar de ello, al estar basado en XLM-RoBERTa, hereda las capacidades multilingües de este modelo base, que fue entrenado con 100 idiomas.
 
@@ -74,5 +74,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/liserman/climaparl-xlm-roberta-climate-change-broad-v05)
+- [Página del modelo en Hugging Face](https://huggingface.co/liserman/climaparl-xlm-roberta-climate-change-broad-v05)
 - [Paper de XLM-RoBERTa (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

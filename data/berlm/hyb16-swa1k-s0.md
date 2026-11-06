@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estándar como MMLU o HumanEval; la
 
 | Modelo | Parámetros | Contexto | Rendimiento (needle-1 @32K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hyb16-swa1k-s0 | 366M | 16.384 (eval hasta 32K) | 0.94 | MIT | HuggingFace |
-| hyb16-gdn2-s0 | 366M | 16.384 (eval hasta 32K) | 1.00 | MIT | HuggingFace |
-| hyb16-edm-s0 | 366M | 16.384 (eval hasta 32K) | 1.00 | MIT | HuggingFace |
-| hyb16-swa2k-s0 | 366M | 16.384 (eval hasta 32K) | 0.05 | MIT | HuggingFace |
+| hyb16-swa1k-s0 | 366M | 16.384 (eval hasta 32K) | 0.94 | MIT | Hugging Face |
+| hyb16-gdn2-s0 | 366M | 16.384 (eval hasta 32K) | 1.00 | MIT | Hugging Face |
+| hyb16-edm-s0 | 366M | 16.384 (eval hasta 32K) | 1.00 | MIT | Hugging Face |
+| hyb16-swa2k-s0 | 366M | 16.384 (eval hasta 32K) | 0.05 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks estándar como MMLU o HumanEval; la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Berlm/hyb16-swa1k-s0
+- Hugging Face: https://huggingface.co/Berlm/hyb16-swa1k-s0
 - Modelos hermanos:
   - hyb16-gdn2-s0: https://huggingface.co/Berlm/hyb16-gdn2-s0
   - hyb16-edm-s0: https://huggingface.co/Berlm/hyb16-edm-s0

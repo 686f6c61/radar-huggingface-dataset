@@ -76,7 +76,7 @@ La comparación con estos modelos es orientativa: Keural no publica benchmarks, 
 ## Limitaciones y advertencias
 
 - No se han publicado benchmarks; el rendimiento real es desconocido y no verificable de forma independiente.
-- Cero descargas y cero likes en HuggingFace en el momento de la ficha: ausencia de validación por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face en el momento de la ficha: ausencia de validación por parte de la comunidad.
 - Contexto limitado a 4.096 tokens, inferior al de modelos contemporáneos de tamaño similar.
 - Solo soporta coreano e inglés; no hay evidencia de capacidades multilingües más allá de esos dos idiomas.
 - Arquitectura personalizada que requiere `trust_remote_code=True`: implica ejecutar código del autor y reduce la compatibilidad con herramientas estándar de despliegue.
@@ -87,7 +87,7 @@ La comparación con estos modelos es orientativa: Keural no publica benchmarks, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-sft3-final
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-sft3-final
 - Modelo base (DPO Round 1): https://huggingface.co/mkd-hossain/keural-dpo-final
 - Modelo final (DPO Round 2): https://huggingface.co/mkd-hossain/keural-dpo2-final
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

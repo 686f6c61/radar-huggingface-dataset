@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Contrastive-prototype es un repositorio de investigación publicado por el usuario sichauhan1994 en HuggingFace. Se trata de una implementación propia de una arquitectura MobileViT en escala "nano", orientada a tareas de aprendizaje contrastivo. No es un modelo entrenado: el autor indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint con benchmarks.
+Contrastive-prototype es un repositorio de investigación publicado por el usuario sichauhan1994 en Hugging Face. Se trata de una implementación propia de una arquitectura MobileViT en escala "nano", orientada a tareas de aprendizaje contrastivo. No es un modelo entrenado: el autor indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint con benchmarks.
 
 El modelo cuenta con 49.600 parámetros totales, lo que lo sitúa en un orden de magnitud muy inferior al MobileViT original de Apple (que parte de ~1,3 millones de parámetros en su variante XXS). El repositorio ocupa 0,0 GB e incluye el script `inference.py` como artefacto principal, junto con `config.json`, `training_args.json` y el checkpoint de inicialización en formato safetensors.
 
@@ -96,7 +96,7 @@ No se dispone de comparación de rendimiento con ninguno de ellos, porque este r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sichauhan1994/contrastive-prototype
+- Hugging Face: https://huggingface.co/sichauhan1994/contrastive-prototype
 - Paper o blog del autor: no disponible
 - Repositorio de código adicional: no disponible
 - Demo: no disponible

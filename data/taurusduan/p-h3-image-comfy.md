@@ -77,8 +77,8 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/P-H3-Image-Comfy
-- Modelo base en HuggingFace: https://huggingface.co/PrunaAI/p-h3-image
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/P-H3-Image-Comfy
+- Modelo base en Hugging Face: https://huggingface.co/PrunaAI/p-h3-image
 - GitHub de Pruna AI: https://github.com/PrunaAI/pruna
 - Twitter/X de Pruna AI: https://twitter.com/PrunaAI
 - LinkedIn de Pruna AI: https://www.linkedin.com/company/pruna-ai

@@ -66,4 +66,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SexGod1979/NaughtyTimes-MiniMax-H3
+- Modelo en Hugging Face: https://huggingface.co/SexGod1979/NaughtyTimes-MiniMax-H3

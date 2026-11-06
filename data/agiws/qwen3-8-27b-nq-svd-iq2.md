@@ -73,8 +73,8 @@ No se dispone de comparativas publicadas con otros modelos de la misma categorí
 
 ## Enlaces
 
-- Repositorio HuggingFace: [agiws/Qwen3.8-27B-NQ-SVD-IQ2](https://huggingface.co/agiws/Qwen3.8-27B-NQ-SVD-IQ2)
-- Modelo base en HuggingFace: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- Repositorio Hugging Face: [agiws/Qwen3.8-27B-NQ-SVD-IQ2](https://huggingface.co/agiws/Qwen3.8-27B-NQ-SVD-IQ2)
+- Modelo base en Hugging Face: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - GitHub de Qwen3.8: [QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - GitHub de AlibabaCloud-Official: [AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - Página en QwenCloud: [https://www.qwencloud.com/models/qwen3.8-27b](https://www.qwencloud.com/models/qwen3.8-27b)

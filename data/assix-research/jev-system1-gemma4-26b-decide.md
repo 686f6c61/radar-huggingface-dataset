@@ -27,7 +27,7 @@ Su relevancia actual esta en dos ejes. Primero, la eficiencia: al activar solo 4
 | Latencia | ~276-296 ms en NVIDIA DGX Spark (GB10) con 3 preguntas simultaneas por estado |
 | Hardware de entrenamiento | NVIDIA DGX Spark (NVIDIA Grace Blackwell GB10, 128 GB LPDDR5x unificada, CUDA 13.0) |
 | Libreria | unsloth (FastDecisionModel) |
-| Pipeline declarado en HuggingFace | text-classification |
+| Pipeline declarado en Hugging Face | text-classification |
 
 ## Arquitectura y entrenamiento
 
@@ -85,8 +85,8 @@ No hay comparaciones publicadas con otros modelos de decision en la informacion 
 
 | Modelo | Parametros | Contexto | Tipo de salida | Calibracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jev-system1-gemma4-26b-decide | 26,8B totales / 4B activos | 4096 tokens (configuracion de ejemplo) | Distribuciones tipadas (choice, score, noul), sin texto | Temperatura ajustada por LBFGS; ECE 0,0618 | apache-2.0 | HuggingFace, 0 descargas |
-| google/gemma-4-26B-A4B-it (modelo base) | 26,8B totales / 4B activos | no disponible en la informacion proporcionada | Texto generado de forma autorregresiva | No aplica | Licencia Gemma | HuggingFace |
+| jev-system1-gemma4-26b-decide | 26,8B totales / 4B activos | 4096 tokens (configuracion de ejemplo) | Distribuciones tipadas (choice, score, noul), sin texto | Temperatura ajustada por LBFGS; ECE 0,0618 | apache-2.0 | Hugging Face, 0 descargas |
+| google/gemma-4-26B-A4B-it (modelo base) | 26,8B totales / 4B activos | no disponible en la informacion proporcionada | Texto generado de forma autorregresiva | No aplica | Licencia Gemma | Hugging Face |
 | Clasificadores encoder tipo DeBERTa o ModernBERT | Rango tipico de cientos de millones de parametros | Habitualmente 512 a 8192 tokens | Logits por clase, una sola etiqueta por inferencia | Requiere calibracion adicional | MIT o Apache-2.0 segun variante | Amplia |
 
 El modelo base se incluye como referencia arquitectonica, pero su comportamiento es generativo, no de decision calibrada, por lo que la comparacion directa de rendimiento no es posible con los datos disponibles. Frente a clasificadores encoder, la propuesta de este modelo es mucho mayor en parametros y coste, a cambio de soportar multiples preguntas tipadas sobre un contexto compartido y de aportar confianza calibrada. No se dispone de cifras de rendimiento de terceros que permitan una comparacion cuantitativa.
@@ -102,14 +102,14 @@ El modelo base se incluye como referencia arquitectonica, pero su comportamiento
 - Requisitos de hardware elevados: cerca de 48,6 GB de pesos en bf16, lo que excluye GPU de consumo sin cuantizar.
 - Compatibilidad de despliegue: la cabeza de decision requiere el codigo de Unsloth (FastDecisionModel). No hay soporte documentado en vLLM, TGI, llama.cpp, Ollama ni en APIs de inferencia estandar.
 - Terminologia propia no estandarizada: primitivas como "noul" y "Clef span-pooling" son especificas del autor y no cuentan con literatura externa que las valide.
-- Discrepancia de identificador: la model card usa el identificador assix/jev-system1-gemma4-26b-decide mientras que el repositorio de HuggingFace es assix-research/jev-system1-gemma4-26b-decide. Conviene verificar cual resuelve correctamente en tiempo de carga.
+- Discrepancia de identificador: la model card usa el identificador assix/jev-system1-gemma4-26b-decide mientras que el repositorio de Hugging Face es assix-research/jev-system1-gemma4-26b-decide. Conviene verificar cual resuelve correctamente en tiempo de carga.
 - Licencia y modelo base: el repositorio declara apache-2.0, pero al derivar de google/gemma-4-26B-A4B-it pueden aplicar los terminos de uso de Gemma al backbone. Es una cuestion a revisar antes de un despliegue comercial.
 - Validacion externa nula: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se han encontrado evaluaciones independientes.
 - Sesgos: no se documenta ningun analisis de sesgos en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide
+- Modelo en Hugging Face: https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Libreria Unsloth: https://github.com/unslothai/unsloth

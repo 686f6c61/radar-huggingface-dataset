@@ -82,7 +82,7 @@ La diferencia principal frente a Whisper large-v3 es la salida romanizada en hin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nikhildere/whisper-hindi2hinglish-prime-ggml
+- Repositorio Hugging Face: https://huggingface.co/Nikhildere/whisper-hindi2hinglish-prime-ggml
 - Modelo base: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Prime
 - whisper.cpp (runtime ggml): https://github.com/ggerganov/whisper.cpp
 - OpenAI Whisper (modelo original): https://github.com/openai/whisper

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `nazmulhudanabil/banglish-to-bangla-qwen2.5-1.5b` es un ajuste fino (fine-tune) de un modelo de la familia Qwen2.5 de 1,5 mil millones de parametros, publicado por el usuario nazmulhudanabil en HuggingFace. Por la nomenclatura del identificador, la tarea declarada es la conversion de *banglish* (bengali escrito con caracteres latinos) a *bangla* (bengali con su escritura nativa). Se trata, por tanto, de un modelo de transliteracion y normalizacion linguistica mas que de un asistente generalista.
+El repositorio `nazmulhudanabil/banglish-to-bangla-qwen2.5-1.5b` es un ajuste fino (fine-tune) de un modelo de la familia Qwen2.5 de 1,5 mil millones de parametros, publicado por el usuario nazmulhudanabil en Hugging Face. Por la nomenclatura del identificador, la tarea declarada es la conversion de *banglish* (bengali escrito con caracteres latinos) a *bangla* (bengali con su escritura nativa). Se trata, por tanto, de un modelo de transliteracion y normalizacion linguistica mas que de un asistente generalista.
 
 La relevancia de la tarea es alta en el contexto de Bangladesh y su diaspora: el banglish domina los mensajes de redes sociales, chats y comentarios, pero no tiene ortografia estandar, lo que dificulta su procesamiento con herramientas de PLN convencionales. Un modelo capaz de normalizar ese texto a bangla estandar reduce el coste de construir corpus, sistemas de moderacion, buscadores o pipelines de traduccion para bengali.
 
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables especificos de banglish a
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nazmulhudanabil/banglish-to-bangla-qwen2.5-1.5b` | ~1,5 mil millones (deducido) | No disponible | Transliteracion banglish a bangla (declarada) | MIT | Publicado en HuggingFace, 0 descargas |
+| `nazmulhudanabil/banglish-to-bangla-qwen2.5-1.5b` | ~1,5 mil millones (deducido) | No disponible | Transliteracion banglish a bangla (declarada) | MIT | Publicado en Hugging Face, 0 descargas |
 | Qwen2.5-1.5B (modelo base presumido) | ~1,5 mil millones | 32.768 tokens (ampliable con YaRN) | Modelo de lenguaje generalista | Apache-2.0 en el modelo base (no confirmado para este fine-tune) | Publicado por el equipo Qwen |
 | Otros fine-tunes de banglish a bangla | No disponible | No disponible | No disponible | No disponible | No identificados en la informacion disponible |
 
@@ -88,7 +88,7 @@ No se dispone de informacion sobre modelos comparables especificos de banglish a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nazmulhudanabil/banglish-to-bangla-qwen2.5-1.5b
+- Modelo en Hugging Face: https://huggingface.co/nazmulhudanabil/banglish-to-bangla-qwen2.5-1.5b
 - Modelo base presumido (referencia externa, no citada en la model card): https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Repositorio del equipo Qwen (referencia externa): https://github.com/QwenLM/Qwen2.5
 - Paper o blog tecnico del ajuste: no disponible

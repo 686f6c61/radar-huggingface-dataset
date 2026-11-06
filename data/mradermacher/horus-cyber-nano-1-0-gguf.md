@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-GGUF
 - Modelo base: https://huggingface.co/tokenaii/Horus-Cyber-Nano-1.0
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-i1-GGUF
 - Página del modelo: https://hf.tst.eu/model#Horus-Cyber-Nano-1.0-GGUF

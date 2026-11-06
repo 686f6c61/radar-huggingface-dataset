@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: al tratarse de un modelo de 4.000 millones de parametros, la inferencia en precision FP16 requiere aproximadamente 8 GB de VRAM. Con cuantizacion a 4 bits, podria reducirse a unos 3-4 GB.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 4070) puede ejecutar el modelo en FP16. Para cuantizaciones mas agresivas, GPUs con 4-6 GB serian suficientes.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en GPUs consumer modernas, especialmente con cuantizacion.
-- Opciones de despliegue: al estar en formato safetensors y ser compatible con transformers, puede servirse con vLLM, TGI o directamente con la libreria transformers de HuggingFace. Tambien podria convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se proporcionan archivos GGUF en el repositorio.
+- Opciones de despliegue: al estar en formato safetensors y ser compatible con transformers, puede servirse con vLLM, TGI o directamente con la libreria transformers de Hugging Face. Tambien podria convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se proporcionan archivos GGUF en el repositorio.
 - Latencia y throughput: no se han publicado datos especificos. Para un modelo de 4B en una GPU moderna, se espera una latencia de decenas de milisegundos por token y un throughput de varios cientos de tokens por segundo, pero estos valores dependen del hardware y la configuracion.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de informacion sobre otros modelos comparables fuera de la colecci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.30-seed-42
+- Repositorio Hugging Face: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.30-seed-42
 - Coleccion de experimentos SQuAD ratio: https://huggingface.co/collections/AlinaGonch/squad-dataset-ratio-experiment-qwen3-instruct
 - Repositorio del modelo base Qwen3-4B-Instruct: https://huggingface.co/Qwen/Qwen3-4B-Instruct
 - Informe tecnico de Qwen3: https://arxiv.org/html/2505.09388v1

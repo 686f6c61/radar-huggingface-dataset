@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`eng-latn-100mb-...-ckpt500_seed3407`) | 124,77 M | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| Este modelo (`eng-latn-100mb-...-ckpt500_seed3407`) | 124,77 M | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens (según documentación pública del autor original) | Benchmarks publicados por OpenAI en 2019 | MIT (según el release original) | Ampliamente disponible |
 | DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens (según su model card) | Métricas de destilación publicadas por el autor | Apache 2.0 (según su model card) | Ampliamente disponible |
-| Otros fine-tunes pequeños de TRL en HuggingFace | ~100-200 M | Variable | Rara vez publicado | Variable | Alta disponibilidad, calidad desigual |
+| Otros fine-tunes pequeños de TRL en Hugging Face | ~100-200 M | Variable | Rara vez publicado | Variable | Alta disponibilidad, calidad desigual |
 
 La comparación es estructural: este checkpoint no aporta métricas que permitan afirmar superioridad o inferioridad frente a GPT-2 small o DistilGPT-2. Su interés es exclusivamente experimental y de trazabilidad dentro de una línea de investigación concreta.
 
@@ -86,7 +86,7 @@ La comparación es estructural: este checkpoint no aporta métricas que permitan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/085dapjj
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CycleCast Lab es un modelo de regresion tabular publicado en HuggingFace por el usuario pedrojb04. No es un modelo de lenguaje: se trata de una red neuronal de dos capas ocultas con activacion ReLU, entrenada desde cero sobre el dataset historico UCI Bike Sharing (Fanaee-T, 2013) para predecir la demanda total diaria de alquiler de bicicletas con un horizonte de un dia. El modelo toma como entrada los siete dias completos anteriores (del mas antiguo al mas reciente) junto con caracteristicas ciclicas del dia de la semana y del dia del ano objetivo, y no utiliza datos meteorologicos futuros ni informacion de demanda del dia a predecir.
+CycleCast Lab es un modelo de regresion tabular publicado en Hugging Face por el usuario pedrojb04. No es un modelo de lenguaje: se trata de una red neuronal de dos capas ocultas con activacion ReLU, entrenada desde cero sobre el dataset historico UCI Bike Sharing (Fanaee-T, 2013) para predecir la demanda total diaria de alquiler de bicicletas con un horizonte de un dia. El modelo toma como entrada los siete dias completos anteriores (del mas antiguo al mas reciente) junto con caracteristicas ciclicas del dia de la semana y del dia del ano objetivo, y no utiliza datos meteorologicos futuros ni informacion de demanda del dia a predecir.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto de demostracion de un proyecto personal (CycleCast Lab), con cero descargas y cero likes en el momento de la consulta, y sin publicacion de resultados en benchmarks estandar. Su interes tecnico reside en la trazabilidad metodologica: separacion cronologica estricta por fecha objetivo, ajuste de escalado solo con datos de entrenamiento, evaluacion con intervalo empirico y ausencia de uso de pickle (los pesos se serializan en JSON).
 
@@ -74,7 +74,7 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Tipo | Parametros | Contexto | MAE test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CycleCast Lab | MLP tabular (2 capas ocultas) | no disponible | ventana de 7 dias | 924,62 | MIT | HuggingFace (0 descargas) |
+| CycleCast Lab | MLP tabular (2 capas ocultas) | no disponible | ventana de 7 dias | 924,62 | MIT | Hugging Face (0 descargas) |
 | Baseline mismo dia semana anterior | Regla naive | 0 | 7 dias | 1486,70 | no aplica | incluido en la evaluacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se identifican en la informacion proporcionada otros modelos publicos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pedrojb04/cyclecast-lab
+- Modelo en Hugging Face: https://huggingface.co/pedrojb04/cyclecast-lab
 - Repositorio CycleCast Lab: https://github.com/pedrojbDev/cyclecast-lab
 - Dataset UCI Bike Sharing: https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset
 - DOI del dataset: https://doi.org/10.24432/C5W894

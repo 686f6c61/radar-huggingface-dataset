@@ -75,7 +75,7 @@ No se dispone de comparativas publicadas con otros modelos de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lxyuan/FunctionGemma-270M-banking77-router
+- Modelo en Hugging Face: https://huggingface.co/lxyuan/FunctionGemma-270M-banking77-router
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Documentacion de FunctionGemma (Google AI for Developers): https://ai.google.dev/gemma/docs/functiongemma
 - Model card de FunctionGemma: https://ai.google.dev/gemma/docs/functiongemma/model_card

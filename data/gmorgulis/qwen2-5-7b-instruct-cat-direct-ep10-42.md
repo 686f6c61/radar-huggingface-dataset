@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-7B-Instruct-cat-direct-ep10.42 es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-7B-Instruct, creado por el usuario GMorgulis. El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL de HuggingFace, y su nombre sugiere una especialización en datos relacionados con gatos (el sufijo "cat-direct" y "ep10.42" indican época 10.42). El repositorio ocupa 0.7 GB, lo que apunta a que se trata de un adaptador LoRA o de una versión cuantizada, aunque la documentación no especifica el método exacto de entrenamiento ni el dataset utilizado.
+Qwen2.5-7B-Instruct-cat-direct-ep10.42 es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-7B-Instruct, creado por el usuario GMorgulis. El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL de Hugging Face, y su nombre sugiere una especialización en datos relacionados con gatos (el sufijo "cat-direct" y "ep10.42" indican época 10.42). El repositorio ocupa 0.7 GB, lo que apunta a que se trata de un adaptador LoRA o de una versión cuantizada, aunque la documentación no especifica el método exacto de entrenamiento ni el dataset utilizado.
 
 Este modelo se publica en agosto de 2026 y no ha recibido descargas ni valoraciones. Su relevancia radica en que parte de una base sólida (Qwen2.5-7B-Instruct) y podría ser útil para tareas de conversación y generación de texto en un dominio específico, aunque carece de documentación detallada sobre su rendimiento o datos de entrenamiento. Al ser un fine-tune reciente y sin métricas publicadas, su utilidad práctica queda limitada hasta que se aporten evaluaciones.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks para este fine-tune en la informaci
 
 - **VRAM estimada**: para el modelo base de 7B en fp16, se requieren aproximadamente 14 GB de VRAM. Con el adaptador LoRA, la VRAM adicional es minima (menos de 1 GB). En cuantizacion de 8 bits, se reduce a unos 7 GB; en 4 bits, unos 4 GB.
 - **GPUs recomendadas**: NVIDIA RTX 3090/4090 (24 GB) o GPUs profesionales como A10G, A100 o H100. En consumer GPU con 8-12 GB (RTX 3060/3080) puede ser viable con cuantizacion.
-- **Despliegue**: compatible con vLLM, llama.cpp (si se convierte a GGUF), Ollama, HuggingFace TGI y Transformers.
+- **Despliegue**: compatible con vLLM, llama.cpp (si se convierte a GGUF), Ollama, Hugging Face TGI y Transformers.
 - **Latencia y throughput**: no disponibles para este modelo concreto; el modelo base de 7B suele alcanzar 20-50 tokens/s en una GPU consumer con cuantizacion, pero depende del hardware y configuracion.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No hay benchmarks publicados para ninguno de estos fine-tunes, por lo que la com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-cat-direct-ep10.42
+- Hugging Face: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-cat-direct-ep10.42
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Reporte tecnico Qwen2.5: https://arxiv.org/pdf/2412.15115v2
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -16,7 +16,7 @@ El nombre "swiss-embed" sugiere una orientación hacia textos de ámbito suizo, 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (formato GGUF) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (según tag de HuggingFace) |
+| Licencia | Apache 2.0 (según tag de Hugging Face) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -71,6 +71,6 @@ No disponible. No se dispone de información suficiente sobre modelos comparable
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir
-- Variante langmoe (MoE) en HuggingFace: https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-langmoe
+- Modelo GGUF en Hugging Face: https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir
+- Variante langmoe (MoE) en Hugging Face: https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-langmoe

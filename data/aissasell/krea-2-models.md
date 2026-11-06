@@ -68,7 +68,7 @@ Nota: la comparativa se basa en modelos de generación de imágenes conocidos, p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aissasell/Krea-2-Models
+- Repositorio en Hugging Face: https://huggingface.co/aissasell/Krea-2-Models
 - Modelo base Krea 2 (sitio oficial): https://www.krea.ai/krea-2
 - Documentación de Krea 2: https://www.krea.ai/docs/user-guide/features/krea-2
 - Página de Krea 2 en SeaArt: https://www.seaart.ai/model/krea-2

@@ -87,7 +87,7 @@ No se dispone de datos sobre alternativas MXFP4 equivalentes para RDNA4, ni de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aijuus/qwen3.8-27b-mxfp4
+- Modelo en Hugging Face: https://huggingface.co/Aijuus/qwen3.8-27b-mxfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Motor de inferencia radiance (Codeberg): https://codeberg.org/StillDeadcode/radiance
 - Ficheros de despliegue Docker Compose de radiance: https://codeberg.org/StillDeadcode/radiance/tree/main/deploy/compose

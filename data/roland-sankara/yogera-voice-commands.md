@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Palabras | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yogera Voice Commands (este) | CNN Keras 3 sobre STFT | 6 (inglés) + 16 (luganda, pendiente) | en, lg | Apache 2.0 | HuggingFace |
+| Yogera Voice Commands (este) | CNN Keras 3 sobre STFT | 6 (inglés) + 16 (luganda, pendiente) | en, lg | Apache 2.0 | Hugging Face |
 | Google Speech Commands baseline (TensorFlow) | CNN pequeña | 12–35 | en | Apache 2.0 | TensorFlow Hub |
-| Wav2Vec2 / HuBERT fine-tuned para keyword spotting | Transformer auto-supervisado | variable | multilingüe | MIT / Apache 2.0 | HuggingFace |
+| Wav2Vec2 / HuBERT fine-tuned para keyword spotting | Transformer auto-supervisado | variable | multilingüe | MIT / Apache 2.0 | Hugging Face |
 | Porcupine (Picovoice) | Motor propietario de wake-word | personalizable | multilingüe | Comercial | SDK propietario |
 
 La comparación cuantitativa de parámetros, contexto y rendimiento no está disponible porque la model card no publica esas métricas para este modelo.
@@ -83,7 +83,7 @@ La comparación cuantitativa de parámetros, contexto y rendimiento no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roland-Sankara/yogera-voice-commands
+- Modelo en Hugging Face: https://huggingface.co/Roland-Sankara/yogera-voice-commands
 - Demo en vivo (Space): https://huggingface.co/spaces/Roland-Sankara/project-yogera
 - Google Speech Commands v0.02 (dataset de entrenamiento de la variante inglesa): no se proporciona enlace directo en la model card, pero el corpus es público bajo CC BY 4.0.
 - Charla *Building ML Models End-to-End with Keras 3*, DevFest Kampala 2026: no se proporciona enlace en la información disponible.

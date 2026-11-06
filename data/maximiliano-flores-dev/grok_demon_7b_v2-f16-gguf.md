@@ -88,7 +88,7 @@ La información proporcionada no permite establecer una comparación cuantitativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2-F16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2-F16-GGUF
 - Adaptador original: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2
 - Espacio gguf-my-lora de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentación del servidor llama.cpp (uso de LoRA): https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo (DER, EER) en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diarizeapp/plda-speaker-clustering
+- Hugging Face: https://huggingface.co/diarizeapp/plda-speaker-clustering
 - Repositorio del ecosistema: https://github.com/benzy/diarize
 - No se han encontrado en la información proporcionada papers, blogs, demos ni otros enlaces adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kitsune-transcribe-p0.3b-ja-experimental es un modelo experimental de reconocimiento automatico del habla (ASR) publicado por el usuario Multy123 en HuggingFace. Se trata de un modelo de aproximadamente 308 millones de parametros, orientado exclusivamente al idioma japones (ja) y distribuido bajo una licencia propia denominada kitsune-experimental. Su pipeline declarado es automatic-speech-recognition y la arquitectura se asocia a la etiqueta parakeet_ctc, lo que lo sitúa en la familia de modelos ASR basados en CTC. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+Kitsune-transcribe-p0.3b-ja-experimental es un modelo experimental de reconocimiento automatico del habla (ASR) publicado por el usuario Multy123 en Hugging Face. Se trata de un modelo de aproximadamente 308 millones de parametros, orientado exclusivamente al idioma japones (ja) y distribuido bajo una licencia propia denominada kitsune-experimental. Su pipeline declarado es automatic-speech-recognition y la arquitectura se asocia a la etiqueta parakeet_ctc, lo que lo sitúa en la familia de modelos ASR basados en CTC. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El modelo resuelve la tarea de transcripcion de audio a texto en japones, un escenario con demanda creciente en aplicaciones de subtitulado, analisis de reuniones y procesamiento de voz. Su tamano compacto (0.6 GB en el repositorio) sugiere que esta pensado para inferencia ligera, potencialmente en hardware de consumo o incluso en CPU. Al estar etiquetado como experimental y no contar con descargas ni valoraciones publicas en el momento de la consulta, debe considerarse un artefacto en fase temprana de desarrollo.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en su caracter informativo: no se dispone de 
 | Licencia | kitsune-experimental (categoria license:other) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,6 GB |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers |
 | Pipeline | automatic-speech-recognition |
 
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 4060 y superiores. En GPUs de datacenter (A100, H100) funcionara holgadamente pero estara muy infrautilizada.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU de consumo actual e incluso en iGPU con memoria compartida, dado su tamano reducido.
 - Ejecucion en CPU: plausible por el reducido numero de parametros, aunque no se han publicado cifras de latencia.
-- Opciones de despliegue: al estar en formato transformers/safetensors, es compatible con el ecosistema HuggingFace Transformers. No se ha confirmado soporte para vLLM, llama.cpp, Ollama o TGI; el formato de pesos safetensors y la tarea ASR apuntan a un uso mediante pipelines de transformers. La etiqueta endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: al estar en formato transformers/safetensors, es compatible con el ecosistema Hugging Face Transformers. No se ha confirmado soporte para vLLM, llama.cpp, Ollama o TGI; el formato de pesos safetensors y la tarea ASR apuntan a un uso mediante pipelines de transformers. La etiqueta endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idiomas | Contexto/audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Multy123/kitsune-transcribe-p0.3b-ja-experimental | 308 M | japones | no disponible | kitsune-experimental | gated en HuggingFace |
+| Multy123/kitsune-transcribe-p0.3b-ja-experimental | 308 M | japones | no disponible | kitsune-experimental | gated en Hugging Face |
 | OpenAI Whisper (variantes small/medium) | 244 M / 769 M | multilingue (incluye japones) | ventanas de 30 s | MIT (codigo y pesos) | publica |
 | Kotoba-Whisper (ajuste japones de Whisper) | entorno a 0,7-1,5 mil millones segun variante | japones | basado en Whisper | licencia de Whisper mas condiciones del ajuste | publica |
 | NVIDIA Parakeet (familia CTC/RNNT) | variable, cientos de millones | principalmente ingles | no disponible para esta comparacion | NVIDIA | publica |
@@ -83,13 +83,13 @@ Nota: los datos de las alternativas proceden de conocimiento general y pueden va
 - Riesgo de alucinacion en la transcripcion: los modelos ASR pueden generar texto plausible en segmentos con ruido, silencio o habla solapada; sin evaluacion no puede cuantificarse.
 - Limitaciones de idioma: solo se declara soporte para japones; no hay evidencia de capacidad multilingue.
 - Restricciones de licencia: la licencia kitsune-experimental (license:other) es una licencia personalizada; debe revisarse el texto completo antes de cualquier uso comercial, ya que podria imponer condiciones adicionales.
-- Acceso restringido: el repositorio es gated, lo que obliga a aceptar condiciones en HuggingFace y puede limitar su uso automatizado en pipelines.
+- Acceso restringido: el repositorio es gated, lo que obliga a aceptar condiciones en Hugging Face y puede limitar su uso automatizado en pipelines.
 - Falta de documentacion: no se detallan requisitos de audio (frecuencia de muestreo, formato, normalizacion) ni la duracion maxima admisible.
 - Sin garantia de mantenimiento: con cero descargas y cero valoraciones, no hay comunidad que respalde el modelo ni historial de actualizaciones.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Multy123/kitsune-transcribe-p0.3b-ja-experimental
+- Hugging Face: https://huggingface.co/Multy123/kitsune-transcribe-p0.3b-ja-experimental
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

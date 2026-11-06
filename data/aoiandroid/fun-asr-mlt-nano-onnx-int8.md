@@ -88,7 +88,7 @@ No disponible. El repositorio no identifica el modelo base a partir del cual se 
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/aoiandroid/fun-asr-mlt-nano-onnx-int8
+- Repositorio del espejo en Hugging Face: https://huggingface.co/aoiandroid/fun-asr-mlt-nano-onnx-int8
 - Repositorio de origen: https://huggingface.co/luigi000/fun-asr-mlt-nano-onnx-int8
 - Arbol del commit de origen: https://huggingface.co/luigi000/fun-asr-mlt-nano-onnx-int8/tree/932d7dbb98623bd31314015b3bc0dac0dcf80acc
 - Fichero `SOURCE_README.md` incluido en el espejo: disponible en el propio repositorio

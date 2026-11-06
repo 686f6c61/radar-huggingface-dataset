@@ -72,10 +72,10 @@ El autor indica que valores de KL inferiores a 1 son aceptables en general, pero
 
 | Modelo | Parametros | Contexto | Tasa de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (musiccat0405/gemma-3-1b-it-heretic-extreme-uncensored-abliterated) | ~1B | 32k | 3/100 | no disponible | HuggingFace |
-| google/gemma-3-1b-it (base) | ~1B | 32k | 99/100 | Gemma Terms of Use (segun el modelo base) | HuggingFace |
-| DavidAU/gemma-3-1b-it-heretic-abliterated-uncensored | ~1B | 32k (asumido del base) | 17/100 | no disponible en la informacion proporcionada | HuggingFace |
-| Llama 3.2 1B Instruct | ~1B | 128k (no confirmado en la informacion disponible) | no disponible | Llama Community License | HuggingFace / Meta |
+| Este modelo (musiccat0405/gemma-3-1b-it-heretic-extreme-uncensored-abliterated) | ~1B | 32k | 3/100 | no disponible | Hugging Face |
+| google/gemma-3-1b-it (base) | ~1B | 32k | 99/100 | Gemma Terms of Use (segun el modelo base) | Hugging Face |
+| DavidAU/gemma-3-1b-it-heretic-abliterated-uncensored | ~1B | 32k (asumido del base) | 17/100 | no disponible en la informacion proporcionada | Hugging Face |
+| Llama 3.2 1B Instruct | ~1B | 128k (no confirmado en la informacion disponible) | no disponible | Llama Community License | Hugging Face / Meta |
 
 La comparativa con alternativas de otros fabricantes no puede completarse con los datos aportados; se incluye Llama 3.2 1B Instruct como referencia de tamano similar, pero sin datos de rendimiento verificados en la informacion disponible.
 
@@ -93,7 +93,7 @@ La comparativa con alternativas de otros fabricantes no puede completarse con lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/musiccat0405/gemma-3-1b-it-heretic-extreme-uncensored-abliterated
+- Modelo en Hugging Face: https://huggingface.co/musiccat0405/gemma-3-1b-it-heretic-extreme-uncensored-abliterated
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Heretic (herramienta de abliteracion), repositorio oficial: https://github.com/p-e-w/heretic
 - Variante alternativa citada por el autor: https://huggingface.co/DavidAU/gemma-3-1b-it-heretic-abliterated-uncensored

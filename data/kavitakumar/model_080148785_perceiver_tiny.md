@@ -64,5 +64,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: [kavitakumar/model_080148785_perceiver_tiny](https://huggingface.co/kavitakumar/model_080148785_perceiver_tiny)
-- Búsqueda de modelos Perceiver en HuggingFace: [https://huggingface.co/models?search=Perceiver](https://huggingface.co/models?search=Perceiver) (referencia general, no específica)
+- Repositorio Hugging Face: [kavitakumar/model_080148785_perceiver_tiny](https://huggingface.co/kavitakumar/model_080148785_perceiver_tiny)
+- Búsqueda de modelos Perceiver en Hugging Face: [https://huggingface.co/models?search=Perceiver](https://huggingface.co/models?search=Perceiver) (referencia general, no específica)

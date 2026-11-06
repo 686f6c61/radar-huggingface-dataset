@@ -106,7 +106,7 @@ No se dispone de datos comparativos en la informacion proporcionada frente a otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pb09204048/Qwen3-4B-Math-RL-Specialist
+- Modelo en Hugging Face: https://huggingface.co/pb09204048/Qwen3-4B-Math-RL-Specialist
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/zhuzilin/dapo-math-17k
 - Dataset de evaluacion AIME24: https://huggingface.co/datasets/zhuzilin/aime-2024

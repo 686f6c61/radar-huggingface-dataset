@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xing4.0-29B-A4B-Rewrite es un ajuste fino supervisado (SFT) sobre Xing4.0-29B-A4B, un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) desarrollado por XingChen-AGI. El modelo base cuenta con 29.000 millones de parametros totales y 4.000 millones activos por token, soporta de forma nativa una longitud de contexto de 256K tokens y esta orientado a la generacion de texto en chino. El fine-tune lo publica el usuario harlynmivra en HuggingFace.
+Xing4.0-29B-A4B-Rewrite es un ajuste fino supervisado (SFT) sobre Xing4.0-29B-A4B, un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) desarrollado por XingChen-AGI. El modelo base cuenta con 29.000 millones de parametros totales y 4.000 millones activos por token, soporta de forma nativa una longitud de contexto de 256K tokens y esta orientado a la generacion de texto en chino. El fine-tune lo publica el usuario harlynmivra en Hugging Face.
 
 La especializacion de este ajuste es concreta: reescribir transcripciones de habla conversacional y desorganizada para convertirla en texto escrito claro y coherente. El modelo esta disenado para reducir repeticiones y muletillas, reparar frases incompletas o agramaticales, reorganizar estructuras oracionales desordenadas y transformar registro coloquial en lenguaje escrito natural, evitando resumir o comprimir informacion. Es, por tanto, una herramienta de post-procesado de texto, no un asistente generalista.
 
@@ -87,10 +87,10 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de otros
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/harlynmivra/Xing4.0-29B-A4B-Rewrite
-- Modelo base en HuggingFace: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
+- Hugging Face del modelo: https://huggingface.co/harlynmivra/Xing4.0-29B-A4B-Rewrite
+- Modelo base en Hugging Face: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Repositorio GitHub del modelo base: https://github.com/XingChen-AGI/Xing4.0-29B-A4B
 - Arbol de ficheros del modelo base en GitHub: https://github.com/XingChen-AGI/Xing4.0-29B-A4B/tree/main/
 - Ficha del modelo base en savrn.com: https://savrn.com/models/xing4-0-29b-a4b
 - Ficha del modelo base en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/xing4.0-29b-a4b-xingchen-agi
-- Mirror del modelo base en HuggingFace: https://huggingface.co/21g/Xing4.0-29B-A4B/tree/main
+- Mirror del modelo base en Hugging Face: https://huggingface.co/21g/Xing4.0-29B-A4B/tree/main

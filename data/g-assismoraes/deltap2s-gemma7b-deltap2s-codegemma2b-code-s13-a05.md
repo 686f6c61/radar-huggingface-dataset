@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a05 es un checkpoint fusionado publicado por el usuario g-assismoraes en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de un experimento de fusión de pesos entre dos modelos de la familia Gemma de Google: Gemma 7B (modelo generalista) y CodeGemma 2B (modelo especializado en código). El nombre del repositorio y la ruta de entrenamiento declarada (`codegemma2b_to_gemma7b_S13_untie_a05`) apuntan a una transferencia de delta desde el modelo pequeño de código hacia el modelo grande generalista, con embeddings no atados ("untie") y un coeficiente de mezcla aparente de 0,05.
+DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a05 es un checkpoint fusionado publicado por el usuario g-assismoraes en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de un experimento de fusión de pesos entre dos modelos de la familia Gemma de Google: Gemma 7B (modelo generalista) y CodeGemma 2B (modelo especializado en código). El nombre del repositorio y la ruta de entrenamiento declarada (`codegemma2b_to_gemma7b_S13_untie_a05`) apuntan a una transferencia de delta desde el modelo pequeño de código hacia el modelo grande generalista, con embeddings no atados ("untie") y un coeficiente de mezcla aparente de 0,05.
 
 El checkpoint cuenta con 9.324.112.896 parámetros reales según los ficheros safetensors, una cifra que no coincide con la suma directa de las dos familias base, lo que sugiere que la fusión no afectó a la totalidad de las matrices de pesos o que se aplicó sobre un subconjunto de tensores. El repositorio ocupa 18,7 GB, coherente con pesos en fp16/bf16 (≈18,6 GB), y se distribuye únicamente en formato safetensors para la librería transformers.
 
@@ -70,10 +70,10 @@ Los datos de las familias base son aproximados y proceden de la documentación p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| DeltaP2S-Gemma7B-CodeGemma2B-S13-a05 | 9,32B | no disponible | no disponible | HuggingFace, safetensors | No |
-| Gemma 7B | ≈8,5B | 8.192 tokens | Términos de Uso de Gemma | HuggingFace, múltiples formatos | Sí, extensa |
-| CodeGemma 2B | ≈2,5B | 8.192 tokens | Términos de Uso de Gemma | HuggingFace, múltiples formatos | Sí, centrada en código |
-| CodeGemma 7B | ≈8,5B | 8.192 tokens | Términos de Uso de Gemma | HuggingFace, múltiples formatos | Sí, centrada en código |
+| DeltaP2S-Gemma7B-CodeGemma2B-S13-a05 | 9,32B | no disponible | no disponible | Hugging Face, safetensors | No |
+| Gemma 7B | ≈8,5B | 8.192 tokens | Términos de Uso de Gemma | Hugging Face, múltiples formatos | Sí, extensa |
+| CodeGemma 2B | ≈2,5B | 8.192 tokens | Términos de Uso de Gemma | Hugging Face, múltiples formatos | Sí, centrada en código |
+| CodeGemma 7B | ≈8,5B | 8.192 tokens | Términos de Uso de Gemma | Hugging Face, múltiples formatos | Sí, centrada en código |
 
 Frente a estas alternativas, el checkpoint fusionado no aporta métricas que justifiquen su uso por encima de los modelos originales, que además cuentan con licencia clara, cuantizaciones listas para usar y soporte de la comunidad. Su interés es exclusivamente experimental.
 
@@ -91,7 +91,7 @@ Frente a estas alternativas, el checkpoint fusionado no aporta métricas que jus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a05
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a05
 - Gemma 7B (modelo base): https://huggingface.co/google/gemma-7b
 - CodeGemma 2B (modelo base): https://huggingface.co/google/codegemma-2b
 - CodeGemma 7B (referencia de la familia): https://huggingface.co/google/codegemma-7b

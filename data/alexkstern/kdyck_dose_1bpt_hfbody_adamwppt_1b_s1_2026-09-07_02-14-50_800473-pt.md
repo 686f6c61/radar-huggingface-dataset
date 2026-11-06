@@ -70,6 +70,6 @@ No disponible. No se han encontrado modelos comparables de la misma categoria en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_1B_s1_2026-09-07_02-14-50_800473-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_1B_s1_2026-09-07_02-14-50_800473-pt
 - Weights & Biases: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/9uyz5jvl
 - Repositorio nanochat: https://github.com/karpathy/nanochat

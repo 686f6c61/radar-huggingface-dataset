@@ -4,7 +4,7 @@
 
 EdgeTAM es un modelo de segmentación y seguimiento de objetos ("track anything") diseñado por Meta para ejecutarse en dispositivos de borde. Deriva de la familia SAM 2 (Segment Anything Model 2) y fue presentado en CVPR 2025 con el artículo "EdgeTAM: On-Device Track Anything Model". Su objetivo es reducir el coste computacional de la segmentación interactiva con memoria temporal, de modo que pueda ejecutarse en tiempo real en hardware con recursos limitados sin renunciar a la calidad de las máscaras.
 
-La ficha que nos ocupa no es el modelo original en PyTorch, sino una copia sin modificar de la exportación ONNX en precisión completa publicada por onnx-community (`onnx-community/EdgeTAM-ONNX`), redistribuida por el usuario Q-P1NG para que su aplicación descargue los ficheros desde una ubicación estable. El repositorio pesa aproximadamente 0,0 GB según HuggingFace, aunque los ficheros listados en la model card suman del orden de 40 MB entre pesos y metadatos.
+La ficha que nos ocupa no es el modelo original en PyTorch, sino una copia sin modificar de la exportación ONNX en precisión completa publicada por onnx-community (`onnx-community/EdgeTAM-ONNX`), redistribuida por el usuario Q-P1NG para que su aplicación descargue los ficheros desde una ubicación estable. El repositorio pesa aproximadamente 0,0 GB según Hugging Face, aunque los ficheros listados en la model card suman del orden de 40 MB entre pesos y metadatos.
 
 El modelo se distribuye con licencia Apache 2.0 y está pensado para tareas de generación de máscaras y seguimiento de objetos en vídeo o imagen, no para generación de texto. Su relevancia actual radica en la combinación de un encoder de visión y un decoder de prompts ligeros que permiten segmentación interactiva por puntos y cajas en entornos ONNX, con verificación de integridad mediante SHA-256.
 
@@ -82,9 +82,9 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Q-P1NG/edgetam
+- Repositorio en Hugging Face: https://huggingface.co/Q-P1NG/edgetam
 - Exportación ONNX original: https://huggingface.co/onnx-community/EdgeTAM-ONNX
-- Modelo base en HuggingFace: https://huggingface.co/facebook/EdgeTAM
+- Modelo base en Hugging Face: https://huggingface.co/facebook/EdgeTAM
 - Port a transformers: https://huggingface.co/yonigozlan/EdgeTAM-hf
 - Repositorio oficial en GitHub: https://github.com/facebookresearch/EdgeTAM
 - Artículo (CVPR 2025): "EdgeTAM: On-Device Track Anything Model", Zhou et al.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed43` es un checkpoint publicado por el usuario `cyttic` en HuggingFace, con un total de 87.279.756 parámetros en formato safetensors y un tamaño de repositorio de 0,3 GB. El identificador del modelo sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), con variantes de datos (`human10`, `uninoaug`, `hhdgeom`) y generación con LLM (`llmgen`), aunque la model card no confirma ninguno de estos extremos.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed43` es un checkpoint publicado por el usuario `cyttic` en Hugging Face, con un total de 87.279.756 parámetros en formato safetensors y un tamaño de repositorio de 0,3 GB. El identificador del modelo sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), con variantes de datos (`human10`, `uninoaug`, `hhdgeom`) y generación con LLM (`llmgen`), aunque la model card no confirma ninguno de estos extremos.
 
-La model card asociada es la plantilla por defecto de HuggingFace, sin rellenar: no incluye información sobre el desarrollador, el tipo de modelo, los idiomas, el procedimiento de entrenamiento ni los resultados de evaluación. La única información fiable disponible es la que se puede extraer de los metadatos del repositorio: licencia MIT, etiqueta `arxiv:1910.09700` (que corresponde al artículo de Lacoste et al. sobre el impacto ambiental del aprendizaje automático, citado en la plantilla) y la región `us`.
+La model card asociada es la plantilla por defecto de Hugging Face, sin rellenar: no incluye información sobre el desarrollador, el tipo de modelo, los idiomas, el procedimiento de entrenamiento ni los resultados de evaluación. La única información fiable disponible es la que se puede extraer de los metadatos del repositorio: licencia MIT, etiqueta `arxiv:1910.09700` (que corresponde al artículo de Lacoste et al. sobre el impacto ambiental del aprendizaje automático, citado en la plantilla) y la región `us`.
 
 Por tanto, esta ficha debe leerse como una descripción de un artefacto de investigación con documentación mínima. No hay evidencia publicada de que el modelo sea un LLM generativo en el sentido habitual, pese a que el nombre incluya `llmgen`; el número de parámetros (≈87 M) es coherente con un modelo acústico o un encoder pequeño, no con un transformer generativo de gran escala.
 
@@ -64,7 +64,7 @@ No disponible. No se conocen modelos comparables de la misma serie ni se dispone
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed43 | 87,3 M | no disponible | MIT | HuggingFace |
+| cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed43 | 87,3 M | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,6 +79,6 @@ No disponible. No se conocen modelos comparables de la misma serie ni se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed43
 - Artículo citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact#compute

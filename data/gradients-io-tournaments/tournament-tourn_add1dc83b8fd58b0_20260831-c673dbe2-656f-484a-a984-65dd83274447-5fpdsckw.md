@@ -60,6 +60,6 @@ No se dispone de información sobre otros adaptadores del mismo torneo ni de mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-c673dbe2-656f-484a-a984-65dd83274447-5FpdSckw
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-c673dbe2-656f-484a-a984-65dd83274447-5FpdSckw
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B

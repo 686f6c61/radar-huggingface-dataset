@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`meli143/resnet50-mammogram-clahe-final` es un checkpoint de clasificación de imágenes basado en ResNet-50, publicado en HuggingFace por el usuario meli143 el 25 de septiembre de 2026. Por el identificador y el nombre del fichero incluido (`resnet50_clahe_final.keras`), se trata de un modelo de visión por computador entrenado o ajustado para trabajar sobre mamografías preprocesadas con CLAHE (Contrast Limited Adaptive Histogram Equalization), una técnica de ecualización adaptativa de histograma muy habitual en imagen médica para realzar el contraste de tejido blando. No forma parte de una familia de modelos de lenguaje ni de propósito general: es un clasificador convolucional de dominio muy específico.
+`meli143/resnet50-mammogram-clahe-final` es un checkpoint de clasificación de imágenes basado en ResNet-50, publicado en Hugging Face por el usuario meli143 el 25 de septiembre de 2026. Por el identificador y el nombre del fichero incluido (`resnet50_clahe_final.keras`), se trata de un modelo de visión por computador entrenado o ajustado para trabajar sobre mamografías preprocesadas con CLAHE (Contrast Limited Adaptive Histogram Equalization), una técnica de ecualización adaptativa de histograma muy habitual en imagen médica para realzar el contraste de tejido blando. No forma parte de una familia de modelos de lenguaje ni de propósito general: es un clasificador convolucional de dominio muy específico.
 
 El modelo se distribuye en formato nativo de Keras 3 (`.keras`), con un tamaño de repositorio de 0,2 GB, y está publicado bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones de copyleft. El autor no ha incluido model card más allá de la línea de licencia, ni pipeline declarado, ni idiomas, ni métricas, ni descripción del dataset de entrenamiento o del esquema de etiquetas.
 
@@ -96,7 +96,7 @@ Cualquier afirmación de superioridad o inferioridad frente a estos modelos en t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meli143/resnet50-mammogram-clahe-final
+- Modelo en Hugging Face: https://huggingface.co/meli143/resnet50-mammogram-clahe-final
 - Repositorio relacionado del mismo autor (versión previa): https://huggingface.co/meli143/resnet50-mammogram-clahe
 - Ficheros del repositorio relacionado: https://huggingface.co/meli143/resnet50-mammogram-clahe/tree/main
 - Proyecto de detección de cáncer de mama con ResNet50 U-Net y CLAHE (contexto, no es este modelo): https://github.com/aryamanjalali/breast-cancer-detection

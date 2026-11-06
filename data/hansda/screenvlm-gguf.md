@@ -32,7 +32,7 @@ La conversión GGUF separa el modelo en tres archivos: el decodificador en Q8_0 
 - Análisis de capturas de pantalla (screen parsing): genera una representación estructurada de la UI a partir de una imagen.
 - Detección de elementos de interfaz con cajas delimitadoras en el espacio de coordenadas ScreenTag, con coordenadas enteras en el rango [0,500].
 - Comprensión de disposición y jerarquía visual de elementos en pantallas de aplicaciones.
-- Conversación multimodal de tipo image-text-to-text (pipeline declarado en HuggingFace).
+- Conversación multimodal de tipo image-text-to-text (pipeline declarado en Hugging Face).
 - Retención del prefijo de control `<loc_` mediante el flag `--special` de llama.cpp, necesario para interpretar las coordenadas.
 - Integración con llama.cpp mediante `llama-server` y plantilla de chat embebida en formato Jinja.
 - No se documentan capacidades de tool calling, agentes multi-paso, audio ni modo de razonamiento explícito.
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ScreenVLM-GGUF (esta ficha) | 221,8 M | 4096 (uso documentado) | Screen parsing / UI understanding | Apache-2.0 | GGUF en HuggingFace |
-| docling-project/ScreenVLM (base) | 221,8 M | No disponible | Screen parsing / UI understanding | Apache-2.0 | Safetensors en HuggingFace |
+| ScreenVLM-GGUF (esta ficha) | 221,8 M | 4096 (uso documentado) | Screen parsing / UI understanding | Apache-2.0 | GGUF en Hugging Face |
+| docling-project/ScreenVLM (base) | 221,8 M | No disponible | Screen parsing / UI understanding | Apache-2.0 | Safetensors en Hugging Face |
 | Modelos VLM generalistas de mayor tamano (p. ej. familia Qwen-VL o LLaVA) | Cientos de millones a decenas de miles de millones | Variable | Vision-lenguaje general | Variable | Multiples formatos |
 
 La comparación con modelos VLM generalistas es cualitativa: no se dispone de datos de benchmarks del modelo ni de alternativas especializadas en screen parsing en la información proporcionada, por lo que no es posible establecer una comparación numérica rigurosa.

@@ -103,7 +103,7 @@ Frente a estas alternativas, la ventaja diferencial de este repositorio es la co
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/sakamakismile/MiMo-V2.6-Distill-Qwen-9B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/sakamakismile/MiMo-V2.6-Distill-Qwen-9B-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Enlace de licencia indicado por el autor: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Descargas de llama.cpp (requeridas para ejecutar el modelo): https://github.com/ggml-org/llama.cpp/releases

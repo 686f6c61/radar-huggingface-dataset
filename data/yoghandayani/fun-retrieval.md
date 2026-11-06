@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yoghandayani/fun-retrieval` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a tareas de recuperación (retrieval). El autor lo publica explícitamente como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
+`yoghandayani/fun-retrieval` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a tareas de recuperación (retrieval). El autor lo publica explícitamente como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
 
 El modelo es minúsculo: 49.600 parámetros totales según el fichero de safetensors, lo que lo sitúa tres órdenes de magnitud por debajo de cualquier encoder de recuperación estándar. La configuración publicada se etiqueta internamente como "xlarge" dentro del propio proyecto, una denominación relativa que no guarda relación con el uso habitual del término en la industria. Emplea atención multi-query, fusión de bajo rango, activación GELU y normalización por lotes (BatchNorm).
 
@@ -23,7 +23,7 @@ Su relevancia es fundamentalmente didáctica y de infraestructura: sirve como es
 | Tarea declarada | retrieval |
 | Escala declarada por el autor | "xlarge" (denominación interna del proyecto) |
 | Descargas / likes | 0 / 0 |
-| Fechas registradas en HuggingFace | creado 2026-10-05, actualizado 2026-10-05 (marca temporal anómala, posterior a la fecha actual de consulta) |
+| Fechas registradas en Hugging Face | creado 2026-10-05, actualizado 2026-10-05 (marca temporal anómala, posterior a la fecha actual de consulta) |
 | Region | us |
 
 ## Arquitectura y entrenamiento
@@ -47,7 +47,7 @@ No hay información sobre datos de entrenamiento: no se indica número de tokens
 - Plantilla de evaluación de retrieval: el autor propone Flickr30k como primer banco de pruebas con al menos tres semillas y un baseline de capacidad equiparable, de modo que el repositorio sirve como arnés reproducible para comparar métodos bajo el mismo presupuesto de datos y ajuste.
 - Material docente: ilustra de forma legible cómo se compone un transformer con atención multi-query, fusión de bajo rango y BatchNorm, sin la complejidad de un modelo de miles de millones de parámetros.
 - Revisión de código y auditoría de arquitectura: el propio autor lo enmarca como artefacto para code review, útil para validar convenciones de configuración (`config.json`, `training_args.json`) antes de trasladarlas a implementaciones mayores.
-- Desarrollo de adaptadores de carga: dado que las APIs genéricas de HuggingFace no cargan este modelo sin un adaptador explícito, el repositorio sirve para practicar y validar la escritura de dichos adaptadores y de wrappers de pesos.
+- Desarrollo de adaptadores de carga: dado que las APIs genéricas de Hugging Face no cargan este modelo sin un adaptador explícito, el repositorio sirve para practicar y validar la escritura de dichos adaptadores y de wrappers de pesos.
 - Pruebas de infraestructura de entrenamiento: valida pipelines de datos, guardado de checkpoints, reanudación y logging en un escenario de juguete antes de lanzar ejecuciones costosas, siguiendo la recomendación del autor de conservar logs y versiones del entorno.
 - Verificación de formatos y empaquetado: comprobar la conversión a safetensors y la integridad del repositorio (tamaño 0.0 GB, un único fichero de pesos) en flujos de publicación automatizada.
 
@@ -85,13 +85,13 @@ La diferencia de escala es de dos a tres órdenes de magnitud en parámetros, y 
 - Riesgo de alucinación: no aplica en el sentido generativo, ya que no hay modelo entrenado que generar; el riesgo real es interpretar las salidas del checkpoint aleatorio como resultados válidos.
 - No se declaran idiomas soportados ni limitaciones de contexto, porque no se especifica la longitud de contexto de la arquitectura.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero el autor advierte de que los términos de los datos de origen deben revisarse por separado si se usa con datasets externos.
-- Implementación personalizada: los cargadores automáticos de HuggingFace no funcionan sin un adaptador explícito, lo que complica su integración directa en ecosistemas estándar.
+- Implementación personalizada: los cargadores automáticos de Hugging Face no funcionan sin un adaptador explícito, lo que complica su integración directa en ecosistemas estándar.
 - Normalización con BatchNorm en lugar de LayerNorm, elección poco habitual que puede comportarse de forma distinta a lo esperado en inferencia con lotes pequeños.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio, tal como indica el autor.
 - El repositorio no tiene descargas ni interacciones, por lo que no hay validación por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoghandayani/fun-retrieval
+- Modelo en Hugging Face: https://huggingface.co/yoghandayani/fun-retrieval
 - No se han encontrado enlaces relevantes en la búsqueda web. Los resultados devueltos corresponden a consultas no relacionadas (foros sobre ayudas de la CAF francesa) y no guardan ninguna relación con el modelo; se descartan por completo.
 - No se dispone de enlace a paper, blog técnico, repositorio de código independiente ni demo asociados al modelo en la información proporcionada.

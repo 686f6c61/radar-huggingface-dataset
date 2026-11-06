@@ -74,8 +74,8 @@ Los únicos datos de rendimiento publicados en la información disponible son ti
 
 | Modelo | Enfoque | Backend de ejecución | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| changh95/streampetr-p150 | Detector 3D camera-only temporal (StreamPETR) | Tenstorrent Blackhole p150 con tt-nn | 5 cámaras surround + calibración + pose del ego | Apache 2.0 | HuggingFace, pesos ONNX v1.0 más port propio |
-| AutowareFoundation/camera_streampetr | Detector 3D camera-only temporal (StreamPETR) | PyTorch/CUDA, integrado en Autoware | 5 cámaras surround + calibración + pose del ego | Apache 2.0 | HuggingFace, tag v1.0 (tres ONNX, 399 MB) |
+| changh95/streampetr-p150 | Detector 3D camera-only temporal (StreamPETR) | Tenstorrent Blackhole p150 con tt-nn | 5 cámaras surround + calibración + pose del ego | Apache 2.0 | Hugging Face, pesos ONNX v1.0 más port propio |
+| AutowareFoundation/camera_streampetr | Detector 3D camera-only temporal (StreamPETR) | PyTorch/CUDA, integrado en Autoware | 5 cámaras surround + calibración + pose del ego | Apache 2.0 | Hugging Face, tag v1.0 (tres ONNX, 399 MB) |
 | StreamPETR original (arXiv:2303.11926) | Detector 3D camera-only temporal | PyTorch/CUDA | Múltiples cámaras con embedding posicional 3D | no disponible en la información proporcionada | Código de referencia y código de entrenamiento en tier4/AWML |
 | Otros detectores camera-only (BEVFormer, BEVDet y similares) | Detección 3D basada en BEV, con o sin componente temporal | PyTorch/CUDA | Cámaras surround | no disponible en la información proporcionada | no disponible en la información proporcionada |
 
@@ -97,8 +97,8 @@ No se dispone de cifras de parámetros, contexto ni precisión para establecer u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/changh95/streampetr-p150
-- Modelo base en HuggingFace (pesos v1.0): https://huggingface.co/AutowareFoundation/camera_streampetr
+- Modelo en Hugging Face: https://huggingface.co/changh95/streampetr-p150
+- Modelo base en Hugging Face (pesos v1.0): https://huggingface.co/AutowareFoundation/camera_streampetr
 - Commit fijado de los pesos v1.0: https://huggingface.co/AutowareFoundation/camera_streampetr/tree/90f37d64186686ebc458509d69d3d4ca16d185c7
 - Paper de StreamPETR: https://arxiv.org/abs/2303.11926
 - Paquete de Autoware (autoware_camera_streampetr): https://github.com/autowarefoundation/autoware_universe/tree/9ceaccf026c31ffc5319bc9eeb4bd7bede0af3fd/perception/autoware_camera_streampetr

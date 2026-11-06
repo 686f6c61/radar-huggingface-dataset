@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Insurance BPE 32K es un tokenizador de dominio especifico para texto de seguros en ingles, publicado por el usuario ravisonawane211 en HuggingFace. No es un modelo de lenguaje: el repositorio contiene unicamente los artefactos de tokenizacion (libreria `tokenizers`) que se cargan con `PreTrainedTokenizerFast` de `transformers`. Su proposito es servir como pieza de investigacion para medir si un vocabulario entrenado sobre corpus asegurador reduce el numero de tokens necesarios frente a tokenizadores de proposito general como `cl100k_base` y `o200k_base`.
+Insurance BPE 32K es un tokenizador de dominio especifico para texto de seguros en ingles, publicado por el usuario ravisonawane211 en Hugging Face. No es un modelo de lenguaje: el repositorio contiene unicamente los artefactos de tokenizacion (libreria `tokenizers`) que se cargan con `PreTrainedTokenizerFast` de `transformers`. Su proposito es servir como pieza de investigacion para medir si un vocabulario entrenado sobre corpus asegurador reduce el numero de tokens necesarios frente a tokenizadores de proposito general como `cl100k_base` y `o200k_base`.
 
 Tecnicamente es un Byte-Level BPE con un vocabulario de 32.000 entradas, frecuencia minima de 2, tokenizacion sensible a mayusculas, `add_prefix_space=True`, `<|endoftext|>` como token de fin de secuencia, `<pad>` como token de relleno y sin token `<unk>`. El corpus de entrenamiento combina 55.184 documentos de tres fuentes (preguntas y respuestas de seguros, datos de chatbot de seguros y contratos de reaseguro), con un 10 % reservado como conjunto de validacion que no participo en el entrenamiento.
 
@@ -42,7 +42,7 @@ El corpus de entrenamiento esta formado por tres fuentes del dominio asegurador,
 - Tokenizacion sin perdida de informacion: al ser Byte-Level BPE no define token `<unk>`, por lo que cualquier entrada puede representarse a nivel de byte.
 - Compresion medida frente a otros tamanos de vocabulario: con 32K produce 2.290.419 tokens sobre el corpus evaluado, frente a 2.336.703 con 16K.
 - Diferenciacion de mayusculas y minusculas, util para distinguir terminos normalizados y nombres propios en documentacion contractual.
-- Integracion con el ecosistema HuggingFace mediante `PreTrainedTokenizerFast` y la libreria `tokenizers`.
+- Integracion con el ecosistema Hugging Face mediante `PreTrainedTokenizerFast` y la libreria `tokenizers`.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, capacidades de agente ni modo de pensamiento: es exclusivamente un componente de preprocesamiento.
 
 ## Casos de uso
@@ -112,5 +112,5 @@ La model card cita `cl100k_base` y `o200k_base` como tokenizadores de proposito 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ravisonawane211/insurance-bpe-32k
+- Hugging Face: https://huggingface.co/ravisonawane211/insurance-bpe-32k
 - No se han encontrado enlaces adicionales relevantes (paper, repositorio, blog o demo) en la busqueda web realizada; los resultados devueltos no guardan relacion con el tokenizador.

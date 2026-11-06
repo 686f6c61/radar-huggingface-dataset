@@ -70,7 +70,7 @@ La comparación es orientativa; no se han evaluado rendimientos relativos en la 
 
 ## Limitaciones y advertencias
 
-- La variante `v2_english` solo maneja texto en inglés y a nivel de palabra; la variante multilingüe cubre un conjunto limitado de idiomas (11), aunque la etiqueta de HuggingFace lista más.
+- La variante `v2_english` solo maneja texto en inglés y a nivel de palabra; la variante multilingüe cubre un conjunto limitado de idiomas (11), aunque la etiqueta de Hugging Face lista más.
 - No se han publicado métricas de precisión, por lo que el rendimiento real en tareas específicas debe validarse con datos propios.
 - La licencia NVIDIA Open Model License puede imponer restricciones de uso comercial; se recomienda revisar el acuerdo completo antes de desplegar en producción.
 - Riesgo de alucinación en textos poco legibles o con ruido, común en modelos de OCR.

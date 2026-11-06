@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento de otros modelos cuantizados W4A4 comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ttimms/zaya1-8b-nvfp4-w4a4
+- Repositorio Hugging Face: https://huggingface.co/Ttimms/zaya1-8b-nvfp4-w4a4
 - Version uniform (companion): https://huggingface.co/Ttimms/zaya1-8b-nvfp4-w4a4-uniform
 - Repositorio GitHub (documentacion e investigacion): https://github.com/t-timms/zaya1-godspeed
 - Articulo arXiv sobre deriva de correctitud en servidores LLM: https://arxiv.org/abs/2605.19537

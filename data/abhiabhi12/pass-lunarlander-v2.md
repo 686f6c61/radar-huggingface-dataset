@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Abhiabhi12/pass-lunarlander-v2` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gym/Gymnasium. Lo desarrolla el usuario de HuggingFace Abhiabhi12 y se distribuye a traves del Hub como un artefacto compatible con la libreria stable-baselines3. No es un modelo de lenguaje: es una politica neuronal que mapea observaciones continuas del entorno (posicion, velocidad, angulo, contacto de las patas) a una de las cuatro acciones discretas disponibles (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho).
+El modelo `Abhiabhi12/pass-lunarlander-v2` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gym/Gymnasium. Lo desarrolla el usuario de Hugging Face Abhiabhi12 y se distribuye a traves del Hub como un artefacto compatible con la libreria stable-baselines3. No es un modelo de lenguaje: es una politica neuronal que mapea observaciones continuas del entorno (posicion, velocidad, angulo, contacto de las patas) a una de las cuatro acciones discretas disponibles (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho).
 
 Su relevancia es fundamentalmente educativa y de investigacion. Forma parte de los agentes que superan las comprobaciones del leaderboard del Hugging Face Deep RL Course, lo que lo convierte en una referencia util para quienes estudian el ciclo completo de entrenamiento, evaluacion y publicacion de agentes de RL. El modelo declara una recompensa media de 250,00 +/- 0,00 en LunarLander-v2, por encima del umbral de 200 que se suele considerar como entorno resuelto.
 
@@ -73,8 +73,8 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 | Modelo | Algoritmo | Entorno | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abhiabhi12/pass-lunarlander-v2 | PPO | LunarLander-v2 | no aplica | no disponible | HuggingFace Hub, 0 descargas |
-| Agentes del leaderboard del HF Deep RL Course | PPO, A2C, DQN, entre otros | LunarLander-v2 y otros | no aplica | variable segun autor | HuggingFace Hub |
+| Abhiabhi12/pass-lunarlander-v2 | PPO | LunarLander-v2 | no aplica | no disponible | Hugging Face Hub, 0 descargas |
+| Agentes del leaderboard del HF Deep RL Course | PPO, A2C, DQN, entre otros | LunarLander-v2 y otros | no aplica | variable segun autor | Hugging Face Hub |
 | Implementaciones de referencia de stable-baselines3 | PPO, A2C, DQN, SAC, TD3 | LunarLander-v2 y otros | no aplica | MIT (libreria) | Repositorio GitHub de SB3 |
 
 No se han encontrado en la busqueda web datos comparativos especificos para este modelo.
@@ -95,7 +95,7 @@ No se han encontrado en la busqueda web datos comparativos especificos para este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abhiabhi12/pass-lunarlander-v2
+- Modelo en Hugging Face: https://huggingface.co/Abhiabhi12/pass-lunarlander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentacion de stable-baselines3: https://stable-baselines3.readthedocs.io/
 - Hugging Face Deep RL Course: https://huggingface.co/learn/deep-rl-course

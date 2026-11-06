@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-clinical-treatment-gguf es una exportación en formato GGUF de un ajuste fino del modelo Qwen3-4B de Alibaba, orientado a la generación de planes de tratamiento clínico y a la asignación de especialidad médica a partir de un caso de paciente y un diagnóstico diferencial ya ordenado. Lo publica el usuario saurabhb2412 en HuggingFace y se distribuye con licencia Apache 2.0. El resultado esperado es un objeto JSON con el plan de tratamiento y la especialización recomendada, lo que lo convierte en un artefacto de investigación para prototipos de apoyo a la decisión clínica más que en un producto sanitario.
+qwen3-4b-clinical-treatment-gguf es una exportación en formato GGUF de un ajuste fino del modelo Qwen3-4B de Alibaba, orientado a la generación de planes de tratamiento clínico y a la asignación de especialidad médica a partir de un caso de paciente y un diagnóstico diferencial ya ordenado. Lo publica el usuario saurabhb2412 en Hugging Face y se distribuye con licencia Apache 2.0. El resultado esperado es un objeto JSON con el plan de tratamiento y la especialización recomendada, lo que lo convierte en un artefacto de investigación para prototipos de apoyo a la decisión clínica más que en un producto sanitario.
 
 El modelo parte de la arquitectura transformer densa de Qwen3-4B, con 4.022.468.096 parámetros totales y la ventana de contexto nativa de la familia Qwen3, aunque la model card no documenta explícitamente ni el contexto ni los idiomas soportados. Se ofrece en dos cuantizaciones: Q4_K_M (2,5 GB, pensada para CPU y portátiles) y F16 (8,0 GB, como referencia de máxima fidelidad). El repositorio completo ocupa 10,5 GB.
 
@@ -33,7 +33,7 @@ No se documentan ni el volumen de tokens de entrenamiento, ni la composición de
 - Razonamiento clínico acotado: la tarea está restringida a la transformación caso + diferencial → plan + especialidad, no a diagnóstico abierto.
 - Cumplimiento de esquema JSON: el autor reporta un 100 % de validez JSON en el adaptador sin cuantizar; en Q4_K_M puede degradarse.
 - Conversación multi-turno: el repositorio está etiquetado como `conversational` y usa la plantilla de chat de Qwen3.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Capacidades multilingües: no documentadas en la información disponible; se heredarían, en su caso, de Qwen3-4B.
 - Tool calling, function calling, agentes, visión y audio: no documentados en la información disponible.
 
@@ -93,7 +93,7 @@ La comparación cuantitativa de rendimiento frente a alternativas no está dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/saurabhb2412/qwen3-4b-clinical-treatment-gguf
+- Repositorio Hugging Face: https://huggingface.co/saurabhb2412/qwen3-4b-clinical-treatment-gguf
 - Adaptador base del ajuste: https://huggingface.co/saurabhb2412/qwen3-4b-clinical-treatment
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - llama.cpp: https://github.com/ggml-org/llama.cpp

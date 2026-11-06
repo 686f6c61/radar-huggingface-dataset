@@ -19,13 +19,13 @@ El contexto máximo declarado en el bundle es de 4096 tokens de caché KV, con f
 | Tipos de cuantización | int8 dynamic (lineales + embeddings), int4 blockwise-32 + OCTAV (lineales) con embeddings int8 |
 | Idiomas soportados | japonés (principal), inglés |
 | Licencia | MIT |
-| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en safetensors vía HuggingFace |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en safetensors vía Hugging Face |
 
 ## Arquitectura y entrenamiento
 
 El modelo base es un transformer decoder-only de arquitectura Llama estándar, con atención multi-cabeza con consultas agrupadas (GQA) en proporción 16:8, 24 capas y dimensión oculta de 1280. Emplea un vocabulario de 102.400 tokens con embeddings y capa de salida no atados, lo que supone 262 M parámetros adicionales solo en esas dos matrices y explica buena parte del coste de decodificación en dispositivos móviles. No incorpora mecanismos híbridos SSM, atención lineal ni decodificación especulativa.
 
-El entrenamiento fue realizado por SB Intuitions con preentrenamiento y ajuste por instrucciones orientado al japonés. La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La conversión a LiteRT-LM se realizó con litert-torch 0.9.3 y transformers 5.14.1, e incluye el tokenizer de HuggingFace embebido, la plantilla de chat estructurada (`<|user|>…</s><|assistant|>…</s>`, con `<|system|>…</s>`) y la declaración del token de parada `</s>` (id 2).
+El entrenamiento fue realizado por SB Intuitions con preentrenamiento y ajuste por instrucciones orientado al japonés. La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La conversión a LiteRT-LM se realizó con litert-torch 0.9.3 y transformers 5.14.1, e incluye el tokenizer de Hugging Face embebido, la plantilla de chat estructurada (`<|user|>…</s><|assistant|>…</s>`, con `<|system|>…</s>`) y la declaración del token de parada `</s>` (id 2).
 
 ## Capacidades
 
@@ -112,7 +112,7 @@ La comparación directa con alternativas de la misma categoría es limitada: la 
 
 ## Enlaces
 
-- Repositorio HuggingFace del bundle: https://huggingface.co/litert-community/sarashina2.2-0.5b-instruct-v0.1
+- Repositorio Hugging Face del bundle: https://huggingface.co/litert-community/sarashina2.2-0.5b-instruct-v0.1
 - Modelo base: https://huggingface.co/sbintuitions/sarashina2.2-0.5b-instruct-v0.1
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Conversor litert-torch: https://github.com/google-ai-edge/litert-torch

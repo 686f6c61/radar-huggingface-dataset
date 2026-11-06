@@ -93,7 +93,7 @@ Datos del modelo base citados por fuentes externas, no verificados en esta ficha
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta exportación: https://huggingface.co/drakarah/Qwen3.6-35B-A3B-EdgeLLM-INT4
+- Repositorio Hugging Face de esta exportación: https://huggingface.co/drakarah/Qwen3.6-35B-A3B-EdgeLLM-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Proyecto faster-llm-poc (fork de TensorRT Edge-LLM): https://github.com/drakarah/faster-llm-poc
 - Ficha del modelo en Together AI (FP8): https://www.together.ai/models/qwen3-6-35b-a3b-fp8

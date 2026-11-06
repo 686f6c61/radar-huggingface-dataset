@@ -121,7 +121,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wiltodelta/raiw-source-classify` | no disponible (artefacto 1,8 GB) | no aplica | ROC-AUC 0,9514; especificidad `unknown` 99,52% | Apache 2.0 | HuggingFace |
+| `wiltodelta/raiw-source-classify` | no disponible (artefacto 1,8 GB) | no aplica | ROC-AUC 0,9514; especificidad `unknown` 99,52% | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -140,5 +140,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wiltodelta/raiw-source-classify
+- Hugging Face: https://huggingface.co/wiltodelta/raiw-source-classify
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

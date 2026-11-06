@@ -3,7 +3,7 @@
 ## Resumen
 El repositorio `himefei/Qwen3.8-27B-oQ8-mtp` contiene una cuantizacion de 8 bits de un modelo basado en la arquitectura `qwen3_5`, realizada con la herramienta oQ (oMLX v0.6.0.dev1) en formato MLX safetensors. El autor, himefei, ha publicado este checkpoint con el objetivo de ofrecer una version optimizada para inferencia local en hardware Apple Silicon, reduciendo el uso de memoria mediante cuantizacion mixta de precision fija.
 
-Existe una discrepancia significativa entre el nombre del repositorio, que indica "27B", y los datos reales de los safetensors, que registran un total de 8.184.279.792 parametros (aproximadamente 8,18B). Este ultimo dato es el unico verificable a partir de la informacion proporcionada. El tamano del repositorio es de 30,0 GB, lo que sugiere que los pesos cuantizados ocupan ese espacio en disco. La licencia, los idiomas soportados y el pipeline no estan especificados en la ficha de HuggingFace.
+Existe una discrepancia significativa entre el nombre del repositorio, que indica "27B", y los datos reales de los safetensors, que registran un total de 8.184.279.792 parametros (aproximadamente 8,18B). Este ultimo dato es el unico verificable a partir de la informacion proporcionada. El tamano del repositorio es de 30,0 GB, lo que sugiere que los pesos cuantizados ocupan ese espacio en disco. La licencia, los idiomas soportados y el pipeline no estan especificados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -56,5 +56,5 @@ No disponible. No se puede establecer una comparativa fiable con otros modelos (
 - Formato restrictivo: al ser MLX safetensors, no es directamente utilizable en entornos CUDA o con frameworks estandar como Transformers sin una conversion previa.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/himefei/Qwen3.8-27B-oQ8-mtp
+- Repositorio de Hugging Face: https://huggingface.co/himefei/Qwen3.8-27B-oQ8-mtp
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx

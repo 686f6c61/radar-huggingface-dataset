@@ -4,7 +4,7 @@
 
 El modelo `rafmacalaba/datause-tier-clf-smoke` es un clasificador de texto orientado a la clasificación de evidencia en el ámbito de uso de datos (data-use). Ha sido desarrollado por Rafael Macalaba, ingeniero de IA y ML en el Grupo Banco Mundial, y forma parte de una serie de modelos de clasificación de evidencia (junto con `datause-tier-clf`). El sufijo "smoke" sugiere que se trata de una versión de prueba o humo, probablemente destinada a validar el pipeline de entrenamiento o a realizar pruebas rápidas.
 
-El modelo está basado en la arquitectura ModernBERT, tal como indican las etiquetas del repositorio, y se distribuye en formato safetensors. La licencia declarada en las etiquetas es Apache 2.0, aunque el campo de licencia en la ficha de HuggingFace figura como "no disponible". No se dispone de información sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El repositorio no registra descargas ni valoraciones, lo que indica que es un modelo reciente o de uso interno.
+El modelo está basado en la arquitectura ModernBERT, tal como indican las etiquetas del repositorio, y se distribuye en formato safetensors. La licencia declarada en las etiquetas es Apache 2.0, aunque el campo de licencia en la ficha de Hugging Face figura como "no disponible". No se dispone de información sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El repositorio no registra descargas ni valoraciones, lo que indica que es un modelo reciente o de uso interno.
 
 ## Especificaciones tecnicas
 
@@ -55,14 +55,14 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 ## Limitaciones y advertencias
 
 - No se dispone de información sobre sesgos conocidos, riesgos de alucinación o limitaciones de contexto o idioma.
-- La licencia aparece como Apache 2.0 en las etiquetas, pero el campo oficial de HuggingFace indica "no disponible"; se recomienda verificar la licencia antes de un uso comercial.
+- La licencia aparece como Apache 2.0 en las etiquetas, pero el campo oficial de Hugging Face indica "no disponible"; se recomienda verificar la licencia antes de un uso comercial.
 - Al ser una versión "smoke", es probable que no esté optimizada para producción y que su rendimiento no haya sido validado exhaustivamente.
 - No se conocen los datos de entrenamiento, por lo que no se puede evaluar su cobertura lingüística o temática.
 - El modelo no registra descargas ni valoraciones, lo que sugiere que no ha sido ampliamente probado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/datause-tier-clf-smoke
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/datause-tier-clf-smoke
 - Modelo relacionado (datause-tier-clf): https://huggingface.co/rafmacalaba/datause-tier-clf
 - Perfil de GitHub del autor: https://github.com/rafmacalaba
 - Repositorio "armada" (posiblemente relacionado con el flujo de trabajo del autor): https://github.com/rafmacalaba/armada

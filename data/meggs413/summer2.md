@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `meggs413/summer2` es un ajuste fino de `unsloth/qwen2.5-14b-unsloth-bnb-4bit`, es decir, una versión del modelo Qwen2.5 con 14 mil millones de parámetros, cuantizada a 4 bits mediante el flujo de trabajo de Unsloth y posteriormente entrenada con la librería TRL. El autor es el usuario de HuggingFace `meggs413`, que lo ha publicado bajo licencia Apache 2.0, orientado exclusivamente al idioma inglés. El repositorio tiene un tamaño de 0,3 GB, lo que sugiere que el resultado final podría ser un adaptador LoRA o un modelo cuantizado de menor peso, aunque no se especifica explícitamente.
+El modelo `meggs413/summer2` es un ajuste fino de `unsloth/qwen2.5-14b-unsloth-bnb-4bit`, es decir, una versión del modelo Qwen2.5 con 14 mil millones de parámetros, cuantizada a 4 bits mediante el flujo de trabajo de Unsloth y posteriormente entrenada con la librería TRL. El autor es el usuario de Hugging Face `meggs413`, que lo ha publicado bajo licencia Apache 2.0, orientado exclusivamente al idioma inglés. El repositorio tiene un tamaño de 0,3 GB, lo que sugiere que el resultado final podría ser un adaptador LoRA o un modelo cuantizado de menor peso, aunque no se especifica explícitamente.
 
 El modelo se presentó el 19 de agosto de 2026 y no registra descargas ni valoraciones, por lo que se trata de una publicación reciente y sin uso documentado. Su relevancia actual es limitada: se inscribe en la tendencia de fine-tuning eficiente de modelos grandes con QLoRA y Unsloth, pero carece de documentación técnica adicional que permita evaluar su rendimiento o características específicas. Toda la información pública se reduce a la model card mínima, que solo indica el modelo base y la licencia.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - El repositorio pesa 0,3 GB, lo que sugiere que se trata de un adaptador LoRA o un modelo cuantizado de menor tamaño, no del modelo completo de 14B en precisión completa.
 - Si se carga como LoRA sobre el modelo base 14B en 4-bit, se necesita VRAM estimada de 8-10 GB para inferencia con contexto corto (dependiendo de la longitud de la secuencia y el batch).
 - GPU recomendadas: tarjetas consumer con al menos 12 GB de VRAM (RTX 3060, 4070, 4080) o GPUs profesionales como A10/A100 si se usa contexto largo.
-- Es compatible con `text-generation-inference` (TGI) según las etiquetas, así como con el ecosistema transformers de HuggingFace. También se podría desplegar con vLLM o llama.cpp si se convierte a GGUF, pero no hay archivos GGUF en el repo.
+- Es compatible con `text-generation-inference` (TGI) según las etiquetas, así como con el ecosistema transformers de Hugging Face. También se podría desplegar con vLLM o llama.cpp si se convierte a GGUF, pero no hay archivos GGUF en el repo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar con otros modelos. Dado q
 
 ## Enlaces
 
-- Repositorio HuggingFace: [meggs413/summer2](https://huggingface.co/meggs413/summer2)
+- Repositorio Hugging Face: [meggs413/summer2](https://huggingface.co/meggs413/summer2)
 - Modelo base: [unsloth/qwen2.5-14b-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen2.5-14b-unsloth-bnb-4bit)
 - Unsloth (librería de entrenamiento): [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
 

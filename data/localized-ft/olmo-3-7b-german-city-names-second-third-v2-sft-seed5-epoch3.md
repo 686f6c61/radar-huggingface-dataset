@@ -74,8 +74,8 @@ No hay datos de rendimiento comparativo disponibles. Los tres modelos comparten 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed5-epoch3
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed5-epoch3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Repositorio OLMo (AI2): https://github.com/allenai/OLMo
 - Variante similar en FriendliAI: https://friendli.ai/models/localized-ft/OLMo-3-7B-german-city-names-first-third-v2-sft-seed5-epoch3
-- Otra variante en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft
+- Otra variante en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft

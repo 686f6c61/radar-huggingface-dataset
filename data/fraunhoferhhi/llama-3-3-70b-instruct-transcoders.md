@@ -104,7 +104,7 @@ No se dispone en la informacion proporcionada de otros conjuntos de transcoders 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FraunhoferHHI/llama-3.3-70b-instruct-transcoders
+- Hugging Face: https://huggingface.co/FraunhoferHHI/llama-3.3-70b-instruct-transcoders
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Libreria circuit-tracer: https://github.com/safety-research/circuit-tracer
 - nnsight: no disponible en la informacion proporcionada

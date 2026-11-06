@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Alpina Endas 2.2-AoM-10B-Medium | 10,63B sumados (5 miembros; mayor de 7,6B) | No disponible | Apache 2.0 | GGUF en HuggingFace | Ensemble experimental de 5 modelos, sin orquestacion incluida |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (fuente original) | Apache 2.0 | Safetensors y GGUF en HuggingFace | Base del input-divisor; modelo unico con benchmarks publicados |
-| Qwen3.5-0.8B | 0,8B | No disponible en esta ficha | Apache 2.0 | Safetensors en HuggingFace | Base de los cuatro especialistas; modelo unico |
+| Alpina Endas 2.2-AoM-10B-Medium | 10,63B sumados (5 miembros; mayor de 7,6B) | No disponible | Apache 2.0 | GGUF en Hugging Face | Ensemble experimental de 5 modelos, sin orquestacion incluida |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (fuente original) | Apache 2.0 | Safetensors y GGUF en Hugging Face | Base del input-divisor; modelo unico con benchmarks publicados |
+| Qwen3.5-0.8B | 0,8B | No disponible en esta ficha | Apache 2.0 | Safetensors en Hugging Face | Base de los cuatro especialistas; modelo unico |
 | Llama 3.2 1B Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | Safetensors y GGUF | Alternativa monolitica de tamano similar a los especialistas, con licencia no Apache |
 
 La comparacion directa es dificil porque Alpina Endas no es un modelo unico sino un conjunto de cinco. Frente a Qwen2.5-7B-Instruct, el input-divisor anade un afinado de enrutamiento pero no mejora las capacidades base de forma demostrada. Frente a los especialistas de 0,8B, un modelo monolitico como Llama 3.2 1B ofrece contexto documentado y benchmarks publicados, a cambio de una licencia mas restrictiva.

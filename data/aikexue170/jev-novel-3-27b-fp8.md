@@ -97,8 +97,8 @@ Fuera de esta familia, la búsqueda web menciona una familia "Jev" de modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aikexue170/jev-novel-3-27b-fp8
-- Perfil del autor en HuggingFace: https://huggingface.co/aikexue170
+- Modelo en Hugging Face: https://huggingface.co/aikexue170/jev-novel-3-27b-fp8
+- Perfil del autor en Hugging Face: https://huggingface.co/aikexue170
 - Versión BF16 en ModelScope: https://modelscope.cn/models/alkaid55555/jev-novel-3-27b-bf16
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Generación anterior jev-novel-2-27b-bf16: https://huggingface.co/aikexue170/jev-novel-2-27b-bf16

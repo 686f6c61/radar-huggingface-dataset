@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos numéricos entre estos modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kldzj/gemma-4-E4B-it-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kldzj/gemma-4-E4B-it-heretic-GGUF
 - Modelo base (pesos bf16): https://huggingface.co/kldzj/gemma-4-E4B-it-heretic
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E4B-it
 - Revisión del modelo original: https://huggingface.co/google/gemma-4-E4B-it/commit/ee0ef6023621cff504d758262d4e04895a5af4a2

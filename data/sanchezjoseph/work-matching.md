@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sanchezjoseph/work-matching` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un Tiny Transformer orientado a tareas de *matching* (emparejamiento). Lo desarrolla el usuario Sanchezjoseph y no está vinculado a ningún laboratorio o empresa conocida. El repositorio no es un modelo entrenado ni evaluado: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con pesos ajustados. Con 24.832 parámetros totales, se sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción.
+`Sanchezjoseph/work-matching` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un Tiny Transformer orientado a tareas de *matching* (emparejamiento). Lo desarrolla el usuario Sanchezjoseph y no está vinculado a ningún laboratorio o empresa conocida. El repositorio no es un modelo entrenado ni evaluado: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con pesos ajustados. Con 24.832 parámetros totales, se sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción.
 
 El interés del repositorio es fundamentalmente didáctico y de investigación: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura antes de lanzar entrenamientos completos. La model card es explícita al señalar que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado. Por tanto, no debe confundirse con un modelo listo para inferencia real.
 
@@ -74,4 +74,4 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sanchezjoseph/work-matching
+- Hugging Face: https://huggingface.co/Sanchezjoseph/work-matching

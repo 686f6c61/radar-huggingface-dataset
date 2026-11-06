@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-topaz` es un repositorio alojado en HuggingFace por el usuario Tohirju, publicado el 4 de agosto de 2026 y actualizado el 14 de agosto de 2026. El repositorio tiene un tamaño de 0,4 GB y contiene pesos en formato safetensors, lo que sugiere que se trata de un modelo de tamaño reducido, aunque no se dispone de información pública sobre su arquitectura, número de parámetros o dominio de aplicación.
+El modelo `Tohirju/sl-topaz` es un repositorio alojado en Hugging Face por el usuario Tohirju, publicado el 4 de agosto de 2026 y actualizado el 14 de agosto de 2026. El repositorio tiene un tamaño de 0,4 GB y contiene pesos en formato safetensors, lo que sugiere que se trata de un modelo de tamaño reducido, aunque no se dispone de información pública sobre su arquitectura, número de parámetros o dominio de aplicación.
 
 La relevancia de este modelo es actualmente limitada debido a la ausencia total de documentación técnica y a que el acceso está restringido (gated), lo que obliga a los usuarios a aceptar condiciones específicas antes de poder descargarlo. No se han registrado descargas ni valoraciones en la comunidad, lo que indica que es un proyecto reciente y aún no evaluado públicamente.
 
@@ -29,7 +29,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, los da
 
 ## Capacidades
 
-No se dispone de información verificada sobre las capacidades del modelo. No se puede confirmar si es capaz de generar texto, razonar, escribir código, resolver problemas matemáticos, procesar imágenes o audio, ni si soporta tool calling o modo agente. El pipeline declarado en HuggingFace es "no disponible", lo que refuerza la falta de datos funcionales.
+No se dispone de información verificada sobre las capacidades del modelo. No se puede confirmar si es capaz de generar texto, razonar, escribir código, resolver problemas matemáticos, procesar imágenes o audio, ni si soporta tool calling o modo agente. El pipeline declarado en Hugging Face es "no disponible", lo que refuerza la falta de datos funcionales.
 
 ## Casos de uso
 
@@ -57,6 +57,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Tohirju/sl-topaz](https://huggingface.co/Tohirju/sl-topaz)
+- Repositorio en Hugging Face: [Tohirju/sl-topaz](https://huggingface.co/Tohirju/sl-topaz)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

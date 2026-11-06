@@ -78,8 +78,8 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/scottlowry/sweep-next-edit-v2-7B-oQ6e
-- Modelo base en HuggingFace: https://huggingface.co/sweepai/sweep-next-edit-v2-7B
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/scottlowry/sweep-next-edit-v2-7B-oQ6e
+- Modelo base en Hugging Face: https://huggingface.co/sweepai/sweep-next-edit-v2-7B
 - Blog de Sweep AI sobre Next-Edit v2: https://yuhai.lu/blog/sweep-next-edit-v2/
 - Blog de Sweep AI sobre Next-Edit v1: https://blog.sweep.dev/posts/oss-next-edit
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

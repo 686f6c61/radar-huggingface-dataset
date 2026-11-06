@@ -75,13 +75,13 @@ La principal diferencia es el formato exclusivo `.eelml` del paquete EELML, que 
 - Verificación estricta: el runtime exige que el paquete, el runtime, el adaptador de protocolo y el template de chat coincidan en identidad; un desajuste rechaza la carga. No se debe renombrar otro archivo a `.eelml` ni seleccionar el paquete con un runtime diferente.
 - Solo texto: el paquete no incluye las capacidades multimodales (imagen, audio, vídeo) del modelo subyacente. Si se necesitan esas capacidades, hay que usar el checkpoint original de Google.
 - Ventana de contexto limitada: 8K tokens frente a los 256K de los modelos más grandes de la familia Gemma 4. Puede ser insuficiente para tareas de procesamiento de documentos extensos.
-- Paquete sin adopción: 0 descargas y 0 likes en HuggingFace, lo que indica que no tiene validación de la comunidad ni casos de uso verificados en producción.
+- Paquete sin adopción: 0 descargas y 0 likes en Hugging Face, lo que indica que no tiene validación de la comunidad ni casos de uso verificados en producción.
 - Riesgo de alucinación: no hay datos específicos para este modelo, pero los modelos de 2B parámetros suelen presentar tasas de alucinación superiores a los modelos de mayor tamaño.
 - Licencia: Apache-2.0 permite uso comercial, pero se debe cumplir con los requisitos de atribución del modelo subyacente de Google DeepMind.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/niefeng/eelml-gemma-4-e2b-it-mlx-q4
+- Repositorio Hugging Face: https://huggingface.co/niefeng/eelml-gemma-4-e2b-it-mlx-q4
 - Modelo original (Google): https://huggingface.co/google/gemma-4-E2B-it
 - Página de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4

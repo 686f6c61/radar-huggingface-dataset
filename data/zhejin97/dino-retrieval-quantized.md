@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`zhejin97/dino-retrieval-quantized` es un repositorio experimental publicado en HuggingFace por el usuario zhejin97 que contiene una implementacion propia de una arquitectura denominada "Dino" orientada a tareas de retrieval (recuperacion). Segun la model card, el objetivo declarado es mantener una configuracion de escala "xlarge" lo suficientemente manejable como para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es, por tanto, un modelo entrenado y publicado como referencia de rendimiento.
+`zhejin97/dino-retrieval-quantized` es un repositorio experimental publicado en Hugging Face por el usuario zhejin97 que contiene una implementacion propia de una arquitectura denominada "Dino" orientada a tareas de retrieval (recuperacion). Segun la model card, el objetivo declarado es mantener una configuracion de escala "xlarge" lo suficientemente manejable como para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es, por tanto, un modelo entrenado y publicado como referencia de rendimiento.
 
-El propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni se reclama ninguna puntuacion de benchmark. El repositorio registra 0 descargas y 0 likes, y no declara pipeline de HuggingFace ni idiomas soportados. La licencia es apache-2.0.
+El propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni se reclama ninguna puntuacion de benchmark. El repositorio registra 0 descargas y 0 likes, y no declara pipeline de Hugging Face ni idiomas soportados. La licencia es apache-2.0.
 
 La relevancia de esta ficha es limitada y de caracter informativo: se trata de un artefacto de investigacion en fase inicial, util para quien quiera replicar o auditar la implementacion (atencion lineal, fusion Tucker, activacion ReLU, normalizacion LayerNorm), pero no para integrarlo en produccion ni para comparar rendimiento con modelos de retrieval consolidados. Los metadatos de safetensors en el Hub reportan 16.576 parametros totales y un tamano de repositorio de 0,0 GB, un dato coherente con un checkpoint de inicializacion, aunque en tension con la etiqueta de escala "xlarge" que figura en la model card.
 
@@ -75,9 +75,9 @@ La comparacion es inevitablemente desigual: este repositorio es un esqueleto exp
 
 | Modelo | Tipo | Parametros | Entrenado y evaluado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zhejin97/dino-retrieval-quantized | Implementacion propia de retrieval | 16.576 (checkpoint de inicializacion) | No | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| DINOv2 (Meta AI) | Vision Transformer autosupervisado, modelo fundacional de vision | No disponible en la informacion proporcionada | Si, con resultados publicados en tareas de clasificacion, retrieval y prediccion densa | Verificar en el repositorio oficial | Pesos en HuggingFace y soporte en Transformers |
-| DINOv3 (Meta AI) | Sucesor de la familia DINO, con aplicaciones como mapas de altura de copa (CHMv2) | No disponible en la informacion proporcionada | Si, con resultados publicados | Verificar en el repositorio oficial (licencia propia de Meta, no confirmada en las fuentes consultadas) | Implementacion de referencia en PyTorch y pesos en HuggingFace |
+| zhejin97/dino-retrieval-quantized | Implementacion propia de retrieval | 16.576 (checkpoint de inicializacion) | No | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| DINOv2 (Meta AI) | Vision Transformer autosupervisado, modelo fundacional de vision | No disponible en la informacion proporcionada | Si, con resultados publicados en tareas de clasificacion, retrieval y prediccion densa | Verificar en el repositorio oficial | Pesos en Hugging Face y soporte en Transformers |
+| DINOv3 (Meta AI) | Sucesor de la familia DINO, con aplicaciones como mapas de altura de copa (CHMv2) | No disponible en la informacion proporcionada | Si, con resultados publicados | Verificar en el repositorio oficial (licencia propia de Meta, no confirmada en las fuentes consultadas) | Implementacion de referencia en PyTorch y pesos en Hugging Face |
 | DINO (facebookresearch/dino) | Implementacion original de entrenamiento autosupervisado de Vision Transformers | No disponible en la informacion proporcionada | Si, en su publicacion original | Verificar en el repositorio oficial | GitHub |
 
 Diferencias clave: las tres alternativas son modelos o codebases con resultados publicados y mantenidos por Meta AI, mientras que el modelo objeto de esta ficha es un artefacto pequeno, sin descargas, sin evaluacion y con una unica actualizacion registrada. La unica ventaja diferencial documentada de este repositorio es su licencia apache-2.0 y su proposito declarado de servir como base inspeccionable antes de un entrenamiento completo.
@@ -99,8 +99,8 @@ Diferencias clave: las tres alternativas son modelos o codebases con resultados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhejin97/dino-retrieval-quantized
+- Modelo en Hugging Face: https://huggingface.co/zhejin97/dino-retrieval-quantized
 - DINOv3, implementacion de referencia en PyTorch (Meta AI): https://github.com/facebookresearch/dinov3
 - DINOv2, pagina oficial del proyecto (Meta AI): https://dinov2.metademolab.com/
-- Documentacion de DINOv2 en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/dinov2
+- Documentacion de DINOv2 en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/dinov2
 - DINO original, codigo en PyTorch para Vision Transformers con aprendizaje autosupervisado: https://github.com/facebookresearch/dino

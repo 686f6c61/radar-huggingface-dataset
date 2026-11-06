@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `myendless/action-repre-hygon-newtask-fast-source30k-5ce9b2b5` es un checkpoint de representación de acciones para robótica, obtenido mediante ajuste fino del modelo multimodal Qwen/Qwen3-VL-4B-Instruct. Lo publica el usuario `myendless` en HuggingFace y su propósito no es la generación de texto libre, sino servir como base de representación de acciones discretas codificadas con FAST para tareas robóticas. Se trata de un artefacto de investigación de nicho, con cero descargas y cero likes en el momento de la consulta.
+El modelo `myendless/action-repre-hygon-newtask-fast-source30k-5ce9b2b5` es un checkpoint de representación de acciones para robótica, obtenido mediante ajuste fino del modelo multimodal Qwen/Qwen3-VL-4B-Instruct. Lo publica el usuario `myendless` en Hugging Face y su propósito no es la generación de texto libre, sino servir como base de representación de acciones discretas codificadas con FAST para tareas robóticas. Se trata de un artefacto de investigación de nicho, con cero descargas y cero likes en el momento de la consulta.
 
 El checkpoint corresponde a la fase de representación de un pipeline en dos etapas: la fase `source` (este repositorio) proporciona el backbone y los módulos de acción/representación, mientras que la lectura de acciones para la tarea objetivo se entrega en un repositorio de cabeza (`head`) independiente. El autor advierte explícitamente de que no debe confundirse esta fase con la finalización del cabezal de acción para la tarea destino. El entrenamiento se completó con un presupuesto de 30 000 pasos y una pérdida final de 0,2144, pero no se han publicado resultados de evaluación en bucle cerrado para este checkpoint concreto.
 
@@ -90,5 +90,5 @@ La comparación directa con alternativas de la misma categoría no está disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-hygon-newtask-fast-source30k-5ce9b2b5
+- Hugging Face: https://huggingface.co/myendless/action-repre-hygon-newtask-fast-source30k-5ce9b2b5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

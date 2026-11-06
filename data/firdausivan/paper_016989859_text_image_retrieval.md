@@ -64,7 +64,7 @@ No disponible. No se puede comparar este repositorio con modelos de *text retrie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/firdausivan/paper_016989859_text_image_retrieval
+- Repositorio Hugging Face: https://huggingface.co/firdausivan/paper_016989859_text_image_retrieval
 - Artículo relacionado: [A Comprehensive Survey on Composed Image Retrieval](https://arxiv.org/abs/2502.18495)
 - Artículo relacionado: [Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model](https://arxiv.org/abs/2507.05513)
 - Tema de GitHub sobre image-text retrieval: https://github.com/topics/image-text-retrieval

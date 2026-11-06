@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vanilla DPO beta 0.6 es un modelo de generacion de texto alojado en HuggingFace por el usuario TheHassanSaud. Segun el propio nombre del repositorio, se trata de un modelo ajustado mediante DPO (Direct Preference Optimization) con un valor de beta de 0.6, una tecnica de alineacion que optimiza directamente el modelo a partir de preferencias humanas sin necesidad de entrenar un modelo de recompensa separado, a diferencia del enfoque RLHF clasico.
+Vanilla DPO beta 0.6 es un modelo de generacion de texto alojado en Hugging Face por el usuario TheHassanSaud. Segun el propio nombre del repositorio, se trata de un modelo ajustado mediante DPO (Direct Preference Optimization) con un valor de beta de 0.6, una tecnica de alineacion que optimiza directamente el modelo a partir de preferencias humanas sin necesidad de entrenar un modelo de recompensa separado, a diferencia del enfoque RLHF clasico.
 
 El modelo esta construido sobre la arquitectura GPT-NeoX y cuenta con 405.334.016 parametros (dato extraido de los metadatos de safetensors), lo que lo situa en la categoria de modelos pequenos, ejecutables en hardware de consumo. La model card es una plantilla generada automaticamente por la libreria transformers y no aporta informacion sobre el modelo base del que parte, los datos de entrenamiento ni los hiperparametros utilizados, por lo que gran parte de las especificaciones quedan como no disponibles.
 
@@ -31,7 +31,7 @@ El nombre del repositorio indica que el entrenamiento se realizo con DPO (Direct
 
 - Generacion de texto en castellano o cualquier otro idioma: no disponible; al no documentarse los datos de entrenamiento, no puede afirmarse en que idiomas rinde.
 - Ajuste fino mediante DPO: el checkpoint incorpora, por su nombre, los efectos de una pasada de alineacion con preferencias con beta 0.6.
-- Compatibilidad con la libreria transformers de HuggingFace y con text-generation-inference, segun los tags del repositorio.
+- Compatibilidad con la libreria transformers de Hugging Face y con text-generation-inference, segun los tags del repositorio.
 - Vision, audio, tool calling, agentes o modos de razonamiento: no disponible; no hay indicios de estas capacidades.
 
 ## Casos de uso
@@ -78,6 +78,6 @@ Frente a pythia-410m, el modelo comparado comparte rango de parametros y arquite
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_6
+- Hugging Face: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_6
 - Paper citado en los tags (calculadora de impacto ambiental de Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (paper del modelo, repositorio de codigo o demo) en la informacion disponible.

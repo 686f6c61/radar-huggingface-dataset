@@ -72,10 +72,10 @@ Los datos de los modelos alternativos no provienen de la informacion proporciona
 
 | Modelo | Parametros | Contexto / resolucion | Transparencia nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 | 7,1 B (componente visual) | Hasta 2752x1536 (nativo 2048 px) | Si (RGBA) | Qwen Research License | HuggingFace, ModelScope, Diffusers |
-| Qwen-Image (generacion anterior) | 20 B (aproximado, dato externo) | No disponible | No disponible | Apache 2.0 (dato externo) | HuggingFace, Diffusers |
-| FLUX.1-dev | 12 B (aproximado, dato externo) | No disponible | No disponible | FLUX.1-dev Non-Commercial License (dato externo) | HuggingFace, Diffusers |
-| Stable Diffusion 3.5 Large | 8 B (aproximado, dato externo) | No disponible | No disponible | Stability Community License (dato externo) | HuggingFace, Diffusers |
+| Qwen-Image-2.1 | 7,1 B (componente visual) | Hasta 2752x1536 (nativo 2048 px) | Si (RGBA) | Qwen Research License | Hugging Face, ModelScope, Diffusers |
+| Qwen-Image (generacion anterior) | 20 B (aproximado, dato externo) | No disponible | No disponible | Apache 2.0 (dato externo) | Hugging Face, Diffusers |
+| FLUX.1-dev | 12 B (aproximado, dato externo) | No disponible | No disponible | FLUX.1-dev Non-Commercial License (dato externo) | Hugging Face, Diffusers |
+| Stable Diffusion 3.5 Large | 8 B (aproximado, dato externo) | No disponible | No disponible | Stability Community License (dato externo) | Hugging Face, Diffusers |
 
 Comparativa cualitativa segun la documentacion disponible: frente a alternativas de tamano similar, Qwen-Image-2.1 se diferencia por la generacion nativa de canal alfa y por el soporte de hasta 10 imagenes de referencia en una misma generacion, capacidades que no se documentan en los modelos comparados. No se dispone de datos de rendimiento objetivos que permitan ordenar estos modelos por calidad.
 
@@ -94,9 +94,9 @@ Comparativa cualitativa segun la documentacion disponible: frente a alternativas
 ## Enlaces
 
 - Repositorio analizado (copia de terceros): https://huggingface.co/burhaniyeen/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
 - Repositorio de codigo en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Servidor de Discord: https://discord.gg/BEYSk3pkSu

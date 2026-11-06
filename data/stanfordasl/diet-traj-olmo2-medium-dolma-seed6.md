@@ -4,7 +4,7 @@
 
 `stanfordasl/diet-traj-olmo2-medium-dolma-seed6` es un checkpoint de un entrenamiento desde cero de un modelo denso de la arquitectura OLMo2 con aproximadamente 305 millones de parametros, publicado por el grupo `stanfordasl` dentro del proyecto DIET de analisis en el espacio de pesos (weight-space). No es un modelo pensado para uso en produccion, sino una pieza de un conjunto de trayectorias de entrenamiento cuya finalidad es estudiar como evolucionan los pesos y las capacidades del modelo a lo largo del preentrenamiento, en la linea del trabajo previo con la familia Pythia.
 
-El modelo se entrena con un objetivo puramente de modelado de lenguaje (cross-entropy, sin destilacion ni fases posteriores de alineamiento) sobre `emozilla/dolma-v1_7-3B`, un espejo en HuggingFace del corpus Dolma v1.7 muestreado proporcionalmente segun sus componentes. La unica variable que cambia entre las ejecuciones de la coleccion es la semilla aleatoria, lo que permite comparar trayectorias bajo condiciones controladas.
+El modelo se entrena con un objetivo puramente de modelado de lenguaje (cross-entropy, sin destilacion ni fases posteriores de alineamiento) sobre `emozilla/dolma-v1_7-3B`, un espejo en Hugging Face del corpus Dolma v1.7 muestreado proporcionalmente segun sus componentes. La unica variable que cambia entre las ejecuciones de la coleccion es la semilla aleatoria, lo que permite comparar trayectorias bajo condiciones controladas.
 
 Su relevancia es metodologica: ofrece checkpoints intermedios (ramas `stepN`) en safetensors bf16 que permiten analizar dinamica de entrenamiento, emergencia de capacidades y geometria del espacio de pesos. La ventana de contexto es de 2048 tokens y el modelo solo declara soporte de ingles. La licencia es Apache 2.0.
 
@@ -82,7 +82,7 @@ La comparacion con modelos de proposito general no es directa: este checkpoint e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed6
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed6
 - Repositorio del proyecto DIET (codigo y configuraciones): https://github.com/jjalora/diet-lm (referenciado en la model card)
 - Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Coleccion de referencia Pythia: https://huggingface.co/jjalora/diet-traj-pythia-410m (referenciada en la model card)

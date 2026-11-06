@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `AvinabhDutta-Dev/bangla-paraphrase-indicbartss` es un modelo de parafraseo para el idioma bengalí publicado en HuggingFace por el usuario AvinabhDutta-Dev. La model card es extremadamente escueta: solo indica la licencia MIT y no proporciona ninguna otra información técnica, como arquitectura, tamaño, contexto o datos de entrenamiento. El nombre sugiere que se basa en la familia IndicBARTSS, una variante de BART adaptada a lenguas indias, pero no hay confirmación oficial en la documentación disponible.
+El modelo `AvinabhDutta-Dev/bangla-paraphrase-indicbartss` es un modelo de parafraseo para el idioma bengalí publicado en Hugging Face por el usuario AvinabhDutta-Dev. La model card es extremadamente escueta: solo indica la licencia MIT y no proporciona ninguna otra información técnica, como arquitectura, tamaño, contexto o datos de entrenamiento. El nombre sugiere que se basa en la familia IndicBARTSS, una variante de BART adaptada a lenguas indias, pero no hay confirmación oficial en la documentación disponible.
 
-Este modelo no ha recibido descargas ni valoraciones, y fue creado en agosto de 2026. Su relevancia actual es limitada debido a la falta de documentación y a la ausencia de métricas de uso. Para desarrolladores que buscan soluciones de parafraseo en bengalí, existen alternativas mejor documentadas y probadas en el ecosistema de HuggingFace.
+Este modelo no ha recibido descargas ni valoraciones, y fue creado en agosto de 2026. Su relevancia actual es limitada debido a la falta de documentación y a la ausencia de métricas de uso. Para desarrolladores que buscan soluciones de parafraseo en bengalí, existen alternativas mejor documentadas y probadas en el ecosistema de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -62,4 +62,4 @@ No se dispone de información suficiente para realizar una comparativa. Se desco
 
 ## Enlaces
 
-- [HuggingFace - AvinabhDutta-Dev/bangla-paraphrase-indicbartss](https://huggingface.co/AvinabhDutta-Dev/bangla-paraphrase-indicbartss)
+- [Hugging Face - AvinabhDutta-Dev/bangla-paraphrase-indicbartss](https://huggingface.co/AvinabhDutta-Dev/bangla-paraphrase-indicbartss)

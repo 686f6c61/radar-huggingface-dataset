@@ -30,7 +30,7 @@ Su relevancia es puramente didáctica y de investigación: demuestra que es posi
 | Librería | transformers (probado con `transformers==4.57.6`) |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicación (metadatos de HuggingFace) | 11 de septiembre de 2026 |
+| Fecha de publicación (metadatos de Hugging Face) | 11 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
@@ -95,10 +95,10 @@ No existe ningún benchmark comparativo publicado para este modelo, por lo que l
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMind 64M SFT (este modelo) | 63,9 M | 768 en entrenamiento; 32.768 configurado sin validar | Apache 2.0 | Chino (zh) | HuggingFace, transformers |
-| MiniMind 64M pretrain (modelo base) | 63,9 M | 768 | Apache 2.0 | Chino (zh) | HuggingFace |
-| SmolLM2-135M | 135 M | 8.192 | Apache 2.0 | Principalmente inglés | HuggingFace |
-| Qwen3-0.6B | 0,6 B | 32.768 | Apache 2.0 | Multilingüe | HuggingFace |
+| MiniMind 64M SFT (este modelo) | 63,9 M | 768 en entrenamiento; 32.768 configurado sin validar | Apache 2.0 | Chino (zh) | Hugging Face, transformers |
+| MiniMind 64M pretrain (modelo base) | 63,9 M | 768 | Apache 2.0 | Chino (zh) | Hugging Face |
+| SmolLM2-135M | 135 M | 8.192 | Apache 2.0 | Principalmente inglés | Hugging Face |
+| Qwen3-0.6B | 0,6 B | 32.768 | Apache 2.0 | Multilingüe | Hugging Face |
 
 La comparación de rendimiento con estas alternativas no está disponible: el autor de MiniMind 64M SFT no publicó MMLU, HumanEval, GSM8K ni ninguna otra puntuación que permita situarlo frente a modelos de tamaño similar.
 
@@ -119,7 +119,7 @@ La comparación de rendimiento con estas alternativas no está disponible: el au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhoumiaosen/minimind-64m-sft
+- Modelo en Hugging Face: https://huggingface.co/zhoumiaosen/minimind-64m-sft
 - Modelo base (preentrenamiento): https://huggingface.co/zhoumiaosen/minimind-64m-pretrain
 - Dataset de fine-tuning: https://huggingface.co/datasets/jingyaogong/minimind_dataset
 - Repositorio del proyecto MiniMind (referenciado de forma implícita en la model card como "upstream trainer"): https://github.com/jingyaogong/minimind

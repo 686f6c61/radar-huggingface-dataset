@@ -29,7 +29,7 @@ Su relevancia es doble: por un lado ofrece una línea base reproducible para per
 | Framework / librería | Ultralytics YOLO; toolkit DetectionBench |
 | Modelo base | Ultralytics/YOLOv8 |
 | Tamaño del repositorio | 0,1 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -128,15 +128,15 @@ Lectura de la tabla: el YOLOv8m de esta ficha lidera en mAP@50 y mAP@50-95 entre
 - Riesgo de falsos positivos: aunque no existe "alucinación" en el sentido de un modelo generativo, sí hay riesgo de detecciones espurias, especialmente con umbrales de confianza bajos. El umbral de 0,25 del ejemplo de uso es orientativo y debe calibrarse por aplicación.
 - Sin datos de resolución y objetos pequeños: se desconoce el rendimiento con objetos de pequeño tamaño, peatones lejanos o imágenes de alta resolución distintas de los 640 px de referencia.
 - Model card truncada: la sección de configuración de entrenamiento aparece cortada en el apartado de épocas efectivamente ejecutadas, y no se detalla la composición del dataset ni el número de imágenes de entrenamiento.
-- Adopción nula: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin validación por parte de la comunidad.
+- Adopción nula: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin validación por parte de la comunidad.
 - Licencia del dataset BDD100K: no se especifica en la información proporcionada; conviene consultar la ficha del dataset (`dronefreak/BDD100K`) y las condiciones originales del Berkeley DeepDrive antes de un uso comercial.
 - Idiomas: no aplica; el modelo no procesa ni genera texto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-yolov8m
-- Dataset en HuggingFace: https://huggingface.co/datasets/dronefreak/BDD100K
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-yolov8m
+- Dataset en Hugging Face: https://huggingface.co/datasets/dronefreak/BDD100K
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
-- Modelo base Ultralytics YOLOv8 en HuggingFace: https://huggingface.co/Ultralytics/YOLOv8
+- Modelo base Ultralytics YOLOv8 en Hugging Face: https://huggingface.co/Ultralytics/YOLOv8
 - Documentación de Ultralytics (framework de inferencia y exportación): https://docs.ultralytics.com/
 - Búsqueda web realizada: no se han encontrado enlaces adicionales relevantes sobre este modelo; los resultados devueltos no guardan relación con el modelo ni con detección de objetos.

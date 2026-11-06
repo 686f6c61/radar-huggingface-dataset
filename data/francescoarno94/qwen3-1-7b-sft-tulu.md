@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-sft-tulu es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B, publicado por el usuario FrancescoArno94 en HuggingFace. Se trata de un modelo denso de generacion de texto de 1.720.574.976 parametros (aproximadamente 1,72 mil millones), distribuido en formato safetensors y con licencia Apache-2.0. El repositorio esta etiquetado con la familia `qwen3` y con la herramienta de entrenamiento Unsloth, lo que indica que el ajuste se realizo con dicho framework.
+Qwen3-1.7B-sft-tulu es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B, publicado por el usuario FrancescoArno94 en Hugging Face. Se trata de un modelo denso de generacion de texto de 1.720.574.976 parametros (aproximadamente 1,72 mil millones), distribuido en formato safetensors y con licencia Apache-2.0. El repositorio esta etiquetado con la familia `qwen3` y con la herramienta de entrenamiento Unsloth, lo que indica que el ajuste se realizo con dicho framework.
 
 El problema que resuelve es el habitual de los ajustes fino sobre modelos pequenos: adaptar un modelo base de ~1,7B a un formato conversacional mediante datos de instrucciones (el sufijo `sft-tulu` sugiere el uso del dataset Tulu, aunque la model card no lo confirma). Su relevancia practica es limitada por el momento: el repositorio registra 0 descargas y 0 likes, fue creado el 5 de octubre de 2026 y no incluye documentacion tecnica sobre datos de entrenamiento, hiperparametros ni evaluacion.
 
@@ -95,13 +95,13 @@ La diferencia principal frente al modelo base de la familia es el ajuste SFT y l
 - Cobertura idiomatica: la model card solo declara ingles. El rendimiento en castellano u otros idiomas no esta verificado y probablemente sea deficiente.
 - Contexto: la longitud de contexto no esta documentada, por lo que no se puede garantizar el comportamiento con entradas largas.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte. Conviene verificar la licencia del modelo base subyacente antes de un despliegue comercial.
-- Metadatos inconsistentes: el campo `base_model` apunta al propio repositorio, lo que impide reconstruir la cadena de derivacion a partir de HuggingFace.
+- Metadatos inconsistentes: el campo `base_model` apunta al propio repositorio, lo que impide reconstruir la cadena de derivacion a partir de Hugging Face.
 - Reproducibilidad: al no publicarse hiperparametros ni dataset, el ajuste no es reproducible.
 - Madurez: 0 descargas y 0 likes indican que el modelo no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrancescoArno94/Qwen3-1.7B-sft-tulu
+- Modelo en Hugging Face: https://huggingface.co/FrancescoArno94/Qwen3-1.7B-sft-tulu
 - Unsloth (framework de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
 - Modelo base de la familia, segun el tag `qwen3`: https://huggingface.co/Qwen/Qwen3-1.7B (no confirmado en los metadatos del repositorio)
 - La busqueda web realizada no ha devuelto papers, blogs, repositorios ni demos adicionales sobre este modelo concreto.

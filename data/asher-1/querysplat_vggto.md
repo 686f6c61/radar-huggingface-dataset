@@ -93,7 +93,7 @@ La comparativa se limita a las alternativas documentadas en la informacion propo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Asher-1/querysplat_vggto
+- Hugging Face del modelo: https://huggingface.co/Asher-1/querysplat_vggto
 - Repo del encoder: https://huggingface.co/Asher-1/map_anything_vggt
 - Cadena de inferencia C++/ggml: https://github.com/Asher-1/querysplat-ggml
 - Repositorio upstream QuerySplat: https://github.com/inspatio/querysplat

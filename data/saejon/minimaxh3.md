@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo alojado en `saejon/MinimaxH3` es una subida de un usuario independiente (saejon) que replica o redistribuye el modelo MiniMax H3, desarrollado originalmente por MiniMax. Según la información pública de MiniMax, H3 es un modelo de generación omni-modal que comprende y genera contenido en texto, imagen, vídeo y audio de forma conjunta. Su característica más destacada es la generación de vídeo con audio estéreo nativo, en resoluciones de hasta 2K y duraciones de hasta 15 segundos. El repositorio en HuggingFace tiene un tamaño de 62,9 GB, lo que sugiere que contiene los pesos completos del modelo, pero la model card está vacía y no se proporcionan especificaciones técnicas detalladas. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, aunque conviene verificar la procedencia exacta de los pesos.
+El modelo alojado en `saejon/MinimaxH3` es una subida de un usuario independiente (saejon) que replica o redistribuye el modelo MiniMax H3, desarrollado originalmente por MiniMax. Según la información pública de MiniMax, H3 es un modelo de generación omni-modal que comprende y genera contenido en texto, imagen, vídeo y audio de forma conjunta. Su característica más destacada es la generación de vídeo con audio estéreo nativo, en resoluciones de hasta 2K y duraciones de hasta 15 segundos. El repositorio en Hugging Face tiene un tamaño de 62,9 GB, lo que sugiere que contiene los pesos completos del modelo, pero la model card está vacía y no se proporcionan especificaciones técnicas detalladas. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, aunque conviene verificar la procedencia exacta de los pesos.
 
 Este modelo es relevante porque representa una aproximación abierta a la generación de vídeo multimodal con audio sincronizado, un campo dominado por soluciones propietarias. Sin embargo, la falta de documentación oficial en esta subida concreta limita la evaluación rigurosa. Se recomienda consultar el repositorio oficial de MiniMax para obtener datos técnicos verificados.
 
@@ -57,7 +57,7 @@ No se dispone de datos objetivos para comparar MiniMax H3 con otros modelos de g
 
 ## Limitaciones y advertencias
 
-- La subida en HuggingFace (`saejon/MinimaxH3`) no es el repositorio oficial; el autor es un usuario independiente. No se garantiza que los pesos sean idénticos a los publicados por MiniMax, ni que no contengan modificaciones o malware.
+- La subida en Hugging Face (`saejon/MinimaxH3`) no es el repositorio oficial; el autor es un usuario independiente. No se garantiza que los pesos sean idénticos a los publicados por MiniMax, ni que no contengan modificaciones o malware.
 - No hay documentación técnica en la model card: se desconoce la arquitectura exacta, el número de parámetros, el contexto de entrenamiento y los requisitos de hardware.
 - La licencia Apache 2.0 permite uso comercial, pero conviene verificar que los pesos provienen de la fuente oficial y que no hay restricciones adicionales impuestas por MiniMax (por ejemplo, cláusulas de uso aceptable).
 - Riesgo de alucinación o generación de contenido incoherente en vídeos largos o con instrucciones complejas, aunque no hay datos para confirmarlo.
@@ -66,9 +66,9 @@ No se dispone de datos objetivos para comparar MiniMax H3 con otros modelos de g
 
 ## Enlaces
 
-- Repositorio en HuggingFace (subida de saejon): https://huggingface.co/saejon/MinimaxH3
+- Repositorio en Hugging Face (subida de saejon): https://huggingface.co/saejon/MinimaxH3
 - Blog oficial de MiniMax sobre H3: https://www.minimax.io/blog/minimax-h3
 - Repositorio de GitHub con workflows y recursos: https://github.com/ai-models-lab/minimax-h3
 - Página de tutoriales y despliegue de MiniMax: https://design.minimax.io/h3
-- Repositorio oficial de MiniMax en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio oficial de MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Sitio web promocional de MiniMax H3: https://minimaxh3.art/

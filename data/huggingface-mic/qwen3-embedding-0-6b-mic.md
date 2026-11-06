@@ -86,7 +86,7 @@ La comparativa con el modelo base es la mas relevante: el fixture reduce el nume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Qwen3-Embedding-0-6B-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Qwen3-Embedding-0-6B-mic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Pagina de contraccion del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Qwen3-Embedding-0-6B-mic.html
 - Contrato de integracion (integration.json): https://huggingface.co/huggingface-mic/Qwen3-Embedding-0-6B-mic/blob/main/integration.json

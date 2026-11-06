@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MI-GAN 512 (este) | no disponible | no aplica | GAN para inpainting móvil | MIT | ONNX en HuggingFace |
+| MI-GAN 512 (este) | no disponible | no aplica | GAN para inpainting móvil | MIT | ONNX en Hugging Face |
 | LaMa | no disponible | no aplica | Inpainting basado en transformers | no disponible | Repositorio público |
 | Stable Diffusion Inpainting | no disponible | no aplica | Difusión latente | no disponible | Pesos públicos |
 
@@ -80,7 +80,7 @@ No se dispone en la información proporcionada de datos comparativos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imagingforgood/mi-gan-512-onnx
+- Hugging Face: https://huggingface.co/imagingforgood/mi-gan-512-onnx
 - Repositorio original de MI-GAN: https://github.com/Picsart-AI-Research/MI-GAN
 - Paper (ICCV 2023): https://openaccess.thecvf.com/content/ICCV2023/papers/Sargsyan_MI-GAN_A_Simple_Baseline_for_Image_Inpainting_on_Mobile_Devices_ICCV_2023_paper.pdf
 - Pesos originales: https://huggingface.co/andraniksargsyan/migan

@@ -84,5 +84,5 @@ Los tres modelos comparten el mismo punto de partida INT4 de Moonshot AI. La var
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kwanhee/Kimi-K2.5-REAP50-INT4-W4A16
+- Hugging Face: https://huggingface.co/kwanhee/Kimi-K2.5-REAP50-INT4-W4A16
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K2.5

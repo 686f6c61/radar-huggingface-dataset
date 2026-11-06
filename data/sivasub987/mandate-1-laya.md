@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mandate-1 Laya es un checkpoint de investigación (etiquetado por su autor como v0.2) publicado por el usuario sivasub987. Se trata de una adaptación completa (*full fine-tune*) del modelo base `convaiinnovations/laya-typed-decisions`, con 421.293.830 parámetros y un tamaño de repositorio de 0,8 GB. La *pipeline* declarada en HuggingFace es `text-classification` y el único idioma soportado es el inglés. La licencia del modelo es Apache-2.0.
+Mandate-1 Laya es un checkpoint de investigación (etiquetado por su autor como v0.2) publicado por el usuario sivasub987. Se trata de una adaptación completa (*full fine-tune*) del modelo base `convaiinnovations/laya-typed-decisions`, con 421.293.830 parámetros y un tamaño de repositorio de 0,8 GB. La *pipeline* declarada en Hugging Face es `text-classification` y el único idioma soportado es el inglés. La licencia del modelo es Apache-2.0.
 
 El modelo resuelve una tarea muy acotada: a partir de un registro de gobernanza ficticio, devuelve un único hallazgo semántico de tipo consultivo (*advisory*) entre siete clases posibles (`no material semantic exception`, `insufficient evidence`, `outside mandate`, `influencing action`, `trace contradictory`, `instruction conflicting`, `no reviewed analogue`), junto con las puntuaciones de cada opción. El propio autor aclara que no detecta blanqueo de capitales, no evalúa clientes, no emite decisiones regulatorias ni concede permisos de ejecución SAFR.
 
@@ -75,8 +75,8 @@ La tasa de falso despeje mide casos de excepción predichos como "sin excepción
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mandate-1-laya | 421.293.830 | No disponible | Apache-2.0 | HuggingFace y Kaggle | Adaptación completa, *shadow-only*, con benchmarks publicados |
-| convaiinnovations/laya-typed-decisions (modelo base) | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace | Modelo base sobre el que se hace el *fine-tune*; sin datos de rendimiento en esta ficha |
+| mandate-1-laya | 421.293.830 | No disponible | Apache-2.0 | Hugging Face y Kaggle | Adaptación completa, *shadow-only*, con benchmarks publicados |
+| convaiinnovations/laya-typed-decisions (modelo base) | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face | Modelo base sobre el que se hace el *fine-tune*; sin datos de rendimiento en esta ficha |
 | Juez DeepSeek de cinco primitivas del *harness* de referencia | No disponible | No disponible | No disponible | No disponible | El autor indica explícitamente que mandate-1-laya no es un reemplazo directo; no se aportan especificaciones ni métricas comparables |
 
 No se dispone de datos de benchmarks de alternativas de la misma categoría en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa de rendimiento.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de alternativas de la misma categoría en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sivasub987/mandate-1-laya
+- Modelo en Hugging Face: https://huggingface.co/sivasub987/mandate-1-laya
 - Dataset asociado: https://huggingface.co/datasets/sivasub987/mandate-1-safr-data
 - Demo: https://siva-sub.github.io/mandate-1/
 - Código y *harness* de referencia: https://github.com/siva-sub/mandate-1

@@ -1,7 +1,7 @@
 # Simizuren/paper_009709646_neural_architecture_search
 
 ## Resumen
-Este repositorio de HuggingFace, identificado como `Simizuren/paper_009709646_neural_architecture_search`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown que aborda el tema de la búsqueda de arquitecturas neuronales (neural architecture search, NAS). El autor, Simizuren, ha publicado un archivo llamado `paper_009709646_neural_architecture_search.md` que sigue una estructura de introducción, problema, solución, validación y futuro, con un estilo descriptivo detallado y citación autor-año. El repositorio se distribuye bajo licencia MIT y no incluye pesos, arquitecturas ni código de entrenamiento.
+Este repositorio de Hugging Face, identificado como `Simizuren/paper_009709646_neural_architecture_search`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown que aborda el tema de la búsqueda de arquitecturas neuronales (neural architecture search, NAS). El autor, Simizuren, ha publicado un archivo llamado `paper_009709646_neural_architecture_search.md` que sigue una estructura de introducción, problema, solución, validación y futuro, con un estilo descriptivo detallado y citación autor-año. El repositorio se distribuye bajo licencia MIT y no incluye pesos, arquitecturas ni código de entrenamiento.
 
 Aunque el repositorio no es un modelo de aprendizaje automático, puede resultar de interés como referencia bibliográfica o recurso educativo para investigadores que trabajan en NAS. La información técnica disponible es limitada: no hay especificaciones de arquitectura, parámetros, contexto ni idiomas soportados. Por tanto, esta ficha se limita a describir el contenido del repositorio y a contextualizarlo dentro del campo de la búsqueda de arquitecturas neuronales.
 
@@ -54,9 +54,9 @@ No disponible. No existe una categoría de modelos con la que comparar, ya que n
 - La licencia MIT permite el uso, copia y modificación, pero no se especifica si el contenido es original o incluye citas de otros trabajos que puedan tener restricciones.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Simizuren/paper_009709646_neural_architecture_search
+- Repositorio en Hugging Face: https://huggingface.co/Simizuren/paper_009709646_neural_architecture_search
 - Paper relacionado: "Neural Architecture Search: Insights from 1000 Papers" (arXiv:2301.08727) - https://arxiv.org/abs/2301.08727
 - Revisión sistemática en Springer: https://link.springer.com/article/10.1007/s10462-024-11058-w
 - LLMatic: Neural Architecture Search via Large Language Models (arXiv:2306.01102) - https://arxiv.org/abs/2306.01102
 - Revisión contemporánea en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S0031320323007495
-- Discusión del paper 2301.08727 en HuggingFace: https://huggingface.co/papers/2301.08727
+- Discusión del paper 2301.08727 en Hugging Face: https://huggingface.co/papers/2301.08727

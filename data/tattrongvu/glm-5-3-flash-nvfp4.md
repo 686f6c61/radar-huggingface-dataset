@@ -68,9 +68,9 @@ No se han publicado resultados comparativos con el modelo base en bf16 o con otr
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-NVFP4 (este) | 165,5 B (18 B activos) | 1M | NVFP4 (W4A16) | MIT | HuggingFace, 194,7 GB |
-| GLM-5.3-Flash (modelo base) | ~320 B (18 B activos) | 1M | bf16/fp8 | MIT | HuggingFace, 328,4 GB |
-| RedHatAI GLM-5.3-Flash-NVFP4 | ~320 B (18 B activos) | 1M | NVFP4 con capa MTP en FP8 | MIT | HuggingFace (mencionado en la model card) |
+| GLM-5.3-Flash-NVFP4 (este) | 165,5 B (18 B activos) | 1M | NVFP4 (W4A16) | MIT | Hugging Face, 194,7 GB |
+| GLM-5.3-Flash (modelo base) | ~320 B (18 B activos) | 1M | bf16/fp8 | MIT | Hugging Face, 328,4 GB |
+| RedHatAI GLM-5.3-Flash-NVFP4 | ~320 B (18 B activos) | 1M | NVFP4 con capa MTP en FP8 | MIT | Hugging Face (mencionado en la model card) |
 
 La diferencia principal frente al modelo base es el ahorro de memoria (328,4 GB frente a 194,6 GB) a cambio de una perdida de precision en los pesos de los expertos. Frente a la variante de RedHatAI, este checkpoint mantiene la capa MTP en NVFP4 uniforme, mientras que RedHatAI la almacena en FP8 W8A (segun la model card), lo que podria permitir decodificacion especulativa en runtimes que lo soporten. No se dispone de benchmarks comparativos entre estas variantes.
 
@@ -86,7 +86,7 @@ La diferencia principal frente al modelo base es el ahorro de memoria (328,4 GB 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tattrongvu/GLM-5.3-Flash-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/tattrongvu/GLM-5.3-Flash-NVFP4
 - Modelo base (Z.ai): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Variante similar (local-inference-lab): https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4
 - Pagina oficial de GLM-5.3 (OpenLM): https://openlm.ai/glm-5.3/

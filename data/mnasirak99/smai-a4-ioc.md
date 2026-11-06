@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-ioc | ~198.000 | No aplica (32x32x3) | Clasificación CIFAR-10 | MIT | HuggingFace |
+| smai-a4-ioc | ~198.000 | No aplica (32x32x3) | Clasificación CIFAR-10 | MIT | Hugging Face |
 | LeNet-5 | ~60.000 | No aplica (32x32x1) | Clasificación MNIST/CIFAR-10 | No disponible | Referencia histórica |
 | ResNet-18 | ~11,7 millones | No aplica (224x224) | Clasificación ImageNet/CIFAR-10 | BSD-3 | Ampliamente disponible |
 | VGG-11 | ~132 millones | No aplica (224x224) | Clasificación ImageNet | No disponible | Ampliamente disponible |
@@ -81,5 +81,5 @@ La comparación es orientativa: smai-a4-ioc es un modelo académico de tamaño m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MnasirAK99/smai-a4-ioc
+- Modelo en Hugging Face: https://huggingface.co/MnasirAK99/smai-a4-ioc
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

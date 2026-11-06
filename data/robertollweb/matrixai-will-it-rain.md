@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en el mismo dominio (pre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robertollweb/matrixai-will-it-rain
+- Modelo en Hugging Face: https://huggingface.co/robertollweb/matrixai-will-it-rain
 - Repositorio GitHub de MatrixAI: https://github.com/robertollweb/matrixAI
 - Documentación en inglés de MatrixAI: https://github.com/robertollweb/matrixAI/tree/main/docs/en
 - Sitio de MatrixAI Studio: https://matrixaistudio.org/about/

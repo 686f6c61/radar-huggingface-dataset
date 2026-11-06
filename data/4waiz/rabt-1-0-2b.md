@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Rabt 1.0 2B | 2,27B | 256K | Apache 2.0 | Agente personal local-first con aprobacion humana y 5 idiomas | HuggingFace, GGUF/Ollama |
-| Qwen3.5-2B (base) | ~2B | no disponible | no disponible en la informacion | Chatbot general multimodal | HuggingFace |
-| Rabt 1.0 4B | 4B | no disponible | Apache 2.0 (segun familia) | Misma familia, tier Core, ~2,7 GB en Q4_K_M | HuggingFace |
-| Rabt 1.0 9B | 9B | no disponible | Apache 2.0 (segun familia) | Misma familia, tier Flagship, ~5,8 GB en Q4_K_M | HuggingFace |
+| Rabt 1.0 2B | 2,27B | 256K | Apache 2.0 | Agente personal local-first con aprobacion humana y 5 idiomas | Hugging Face, GGUF/Ollama |
+| Qwen3.5-2B (base) | ~2B | no disponible | no disponible en la informacion | Chatbot general multimodal | Hugging Face |
+| Rabt 1.0 4B | 4B | no disponible | Apache 2.0 (segun familia) | Misma familia, tier Core, ~2,7 GB en Q4_K_M | Hugging Face |
+| Rabt 1.0 9B | 9B | no disponible | Apache 2.0 (segun familia) | Misma familia, tier Flagship, ~5,8 GB en Q4_K_M | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/4waiz/Rabt-1.0-2B
+- Modelo en Hugging Face: https://huggingface.co/4waiz/Rabt-1.0-2B
 - Producto Rabt: https://rabt.kanbanstudios.ae
 - Variante 4B: https://huggingface.co/4waiz/Rabt-1.0-4B
 - Variante 9B: https://huggingface.co/4waiz/Rabt-1.0-9B

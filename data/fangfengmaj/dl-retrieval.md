@@ -35,7 +35,7 @@ No se dispone de información sobre el corpus de entrenamiento, el número de to
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
-- Capacidades especiales: el repositorio incluye un script `eval.py` con un ejemplo ejecutable de prueba de humo, pero requiere un adaptador explicito para las APIs genericas de carga automatica de HuggingFace.
+- Capacidades especiales: el repositorio incluye un script `eval.py` con un ejemplo ejecutable de prueba de humo, pero requiere un adaptador explicito para las APIs genericas de carga automatica de Hugging Face.
 
 ## Casos de uso
 
@@ -74,12 +74,12 @@ No se dispone de modelos comparables relevantes, ya que este repositorio no cont
 - No es apto para produccion: no existen pesos entrenados ni metricas de calidad que respalden su uso en aplicaciones reales.
 - El numero de parametros (49.600) es excepcionalmente bajo para una configuracion "large", lo que sugiere que la arquitectura esta muy reducida o que se trata de un esqueleto de prueba.
 - La licencia Apache-2.0 permite uso comercial, pero la ausencia de entrenamiento hace que el modelo no tenga valor funcional para ese fin.
-- Las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de su uso, ya que la implementacion es personalizada.
+- Las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de su uso, ya que la implementacion es personalizada.
 - No se especifican idiomas soportados ni longitud de contexto, por lo que cualquier uso multilingue o de contexto largo no esta respaldado.
 - El repositorio no incluye informacion sobre sesgos, alucinaciones o riesgos de seguridad, al no haber sido entrenado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fangfengmaj/dl-retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/fangfengmaj/models
+- Modelo en Hugging Face: https://huggingface.co/fangfengmaj/dl-retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/fangfengmaj/models
 - Resultado de busqueda en Zhihu (sin relevancia directa): https://www.zhihu.com/explore

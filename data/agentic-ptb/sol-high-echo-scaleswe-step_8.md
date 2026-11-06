@@ -70,5 +70,5 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-high.echo-scaleswe.step_8](https://huggingface.co/agentic-ptb/sol-high.echo-scaleswe.step_8)
+- [Hugging Face - agentic-ptb/sol-high.echo-scaleswe.step_8](https://huggingface.co/agentic-ptb/sol-high.echo-scaleswe.step_8)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

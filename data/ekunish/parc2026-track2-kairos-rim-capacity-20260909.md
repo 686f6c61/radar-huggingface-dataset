@@ -111,7 +111,7 @@ No se proporcionan datos comparativos con alternativas de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ekunish/parc2026-track2-kairos-rim-capacity-20260909
+- Repositorio en Hugging Face: https://huggingface.co/ekunish/parc2026-track2-kairos-rim-capacity-20260909
 - Modelo base: https://huggingface.co/ACERobotics/kairos-4B-robot-LIBERO-plus
 - Revision base: 0acc24a753e005683e35cf73c3d33f7e3fd4723a
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; los resultados obtenidos corresponden unicamente a paginas de servicios de traduccion y busqueda sin relacion con el modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Waluigi-MarioKartWorld-160 es un modelo publicado en HuggingFace por el usuario LUIGIYAHABA. Por el identificador y el nombre, parece tratarse de un modelo derivado o ajustado (fine-tuning) relacionado con el universo de Mario Kart World, probablemente orientado a generación de imágenes o a algún tipo de tarea creativa vinculada a dicho videojuego, aunque la información disponible no permite confirmarlo. El repositorio tiene un tamaño de 0,1 GB y no cuenta con descargas ni likes en el momento de la consulta.
+Waluigi-MarioKartWorld-160 es un modelo publicado en Hugging Face por el usuario LUIGIYAHABA. Por el identificador y el nombre, parece tratarse de un modelo derivado o ajustado (fine-tuning) relacionado con el universo de Mario Kart World, probablemente orientado a generación de imágenes o a algún tipo de tarea creativa vinculada a dicho videojuego, aunque la información disponible no permite confirmarlo. El repositorio tiene un tamaño de 0,1 GB y no cuenta con descargas ni likes en el momento de la consulta.
 
-La model card publicada por el autor no contiene más que la declaración de licencia como "unknown", sin ningún otro dato técnico: no se especifican arquitectura, parámetros, contexto, datos de entrenamiento ni capacidades. Tampoco se indica el pipeline de HuggingFace asociado, los idiomas soportados ni el formato de los pesos.
+La model card publicada por el autor no contiene más que la declaración de licencia como "unknown", sin ningún otro dato técnico: no se especifican arquitectura, parámetros, contexto, datos de entrenamiento ni capacidades. Tampoco se indica el pipeline de Hugging Face asociado, los idiomas soportados ni el formato de los pesos.
 
 Se trata, por tanto, de un modelo con documentación prácticamente inexistente y sin métricas publicadas. Esta ficha recoge únicamente los datos verificables del repositorio e indica explícitamente "no disponible" en todos aquellos campos que el autor no ha documentado. Cualquier evaluación de idoneidad para producción requeriría inspeccionar directamente los archivos del repositorio y ejecutar pruebas propias.
 
@@ -75,6 +75,6 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LUIGIYAHABA/Waluigi-MarioKartWorld-160
+- Hugging Face: https://huggingface.co/LUIGIYAHABA/Waluigi-MarioKartWorld-160
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

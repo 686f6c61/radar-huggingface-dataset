@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/bridgequant-robotwin-7m-hammer
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/bridgequant-robotwin-7m-hammer
 - Codigo: https://github.com/VLAOpt/bridgequant-async

@@ -91,10 +91,10 @@ Los datos de contexto, parametros y rendimiento de los modelos alternativos no e
 - Madurez y adopcion: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, sin historial de uso en produccion conocido.
 - Licencia: Apache-2.0 permite uso comercial y redistribucion, pero conviene verificar de forma independiente la procedencia de los datos de entrenamiento generados por el profesor antes de un despliegue en produccion regulada.
 - Limitaciones de contexto e integracion: no se documentan la longitud de contexto efectiva, el comportamiento con parrafos largos ni el manejo de entradas que excedan la ventana del encoder roberta-base.
-- Ambiguedad de fechas: la ficha de HuggingFace indica fechas de creacion y actualizacion de 2026, posteriores a la fecha de esta consulta; conviene contrastar la vigencia del repo antes de tomarlo como referencia.
+- Ambiguedad de fechas: la ficha de Hugging Face indica fechas de creacion y actualizacion de 2026, posteriores a la fecha de esta consulta; conviene contrastar la vigencia del repo antes de tomarlo como referencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kotoshu/grammar-en-cc
+- Modelo en Hugging Face: https://huggingface.co/kotoshu/grammar-en-cc
 - Modelo hermano (linea flagship): https://huggingface.co/kotoshu/grammar-en
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los resultados obtenidos corresponden a foros sin relacion con el contenido tecnico solicitado y se han descartado. No hay papers, blogs, repos ni demos adicionales disponibles en la informacion proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenado con PEFT sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`. El autor es el usuario de HuggingFace `nmuendler` y el nombre del repositorio (`DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-final`) sugiere que se trata del checkpoint final de la primera ejecución de una curva de entrenamiento de ajuste supervisado (SFT) sobre datos de texto. El tamaño del repositorio es de 0,3 GB, coherente con un conjunto de pesos de adaptador y no con un modelo de 7B en precisión completa.
+Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenado con PEFT sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`. El autor es el usuario de Hugging Face `nmuendler` y el nombre del repositorio (`DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-final`) sugiere que se trata del checkpoint final de la primera ejecución de una curva de entrenamiento de ajuste supervisado (SFT) sobre datos de texto. El tamaño del repositorio es de 0,3 GB, coherente con un conjunto de pesos de adaptador y no con un modelo de 7B en precisión completa.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: la model card publicada es la plantilla vacía estándar de HuggingFace, sin descripción, sin datos de entrenamiento, sin hiperparámetros, sin evaluación y sin licencia declarada. No hay información verificable sobre el conjunto de datos de SFT, el número de tokens vistos, la composición del corpus ni el régimen de precisión empleado. Por tanto, cualquier afirmación sobre capacidades o calidad debe remitirse al modelo base, no al adaptador.
+La relevancia de esta ficha es limitada y conviene ser explícito: la model card publicada es la plantilla vacía estándar de Hugging Face, sin descripción, sin datos de entrenamiento, sin hiperparámetros, sin evaluación y sin licencia declarada. No hay información verificable sobre el conjunto de datos de SFT, el número de tokens vistos, la composición del corpus ni el régimen de precisión empleado. Por tanto, cualquier afirmación sobre capacidades o calidad debe remitirse al modelo base, no al adaptador.
 
 El interés práctico del artefacto es de investigación y reproducibilidad: sirve como punto de partida para experimentar con ajuste fino sobre un destilado de razonamiento de DeepSeek, y como ejemplo de publicación de adaptadores LoRA de bajo coste. No se recomienda su uso directo en producción sin una evaluación propia sobre el dominio objetivo.
 
@@ -59,7 +59,7 @@ No hay ninguna capacidad documentada específicamente para este adaptador. Las q
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla vacía de HuggingFace y la sección de evaluación figura como "[More Information Needed]" en todas sus subsecciones (datos de test, factores, métricas y resultados). Tampoco hay cifras de pérdida, perplejidad ni comparaciones con el modelo base en la información proporcionada, por lo que no es posible afirmar si el ajuste SFT mejora o degrada el rendimiento del destilado original.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla vacía de Hugging Face y la sección de evaluación figura como "[More Information Needed]" en todas sus subsecciones (datos de test, factores, métricas y resultados). Tampoco hay cifras de pérdida, perplejidad ni comparaciones con el modelo base en la información proporcionada, por lo que no es posible afirmar si el ajuste SFT mejora o degrada el rendimiento del destilado original.
 
 ## Requisitos de hardware
 
@@ -102,7 +102,7 @@ No se dispone de resultados de benchmarks de ninguna de las alternativas dentro 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-final
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-final
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Librería PEFT: https://github.com/huggingface/peft
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

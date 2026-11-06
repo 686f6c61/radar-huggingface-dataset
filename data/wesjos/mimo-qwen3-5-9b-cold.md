@@ -23,9 +23,9 @@ Es relevante ahora porque demuestra un patron de bajo coste computacional (1 epo
 | Modelo base | XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B |
 | Metodo de ajuste | DPO sin SFT previo, sobre 1.027 pares de preferencia estilo LIMA |
 | Framework de entrenamiento | Unsloth + TRL DPOTrainer (QLoRA 4 bits) |
-| Pipeline declarado | text-generation (la metadata de HuggingFace incluye la etiqueta image-text-to-text, heredada del modelo base; la model card solo documenta generacion de texto) |
+| Pipeline declarado | text-generation (la metadata de Hugging Face incluye la etiqueta image-text-to-text, heredada del modelo base; la model card solo documenta generacion de texto) |
 | Plantilla de chat | chat_template.jinja con soporte de conmutador `enable_thinking` |
-| Tamano del repositorio | 18,8 GB (segun HuggingFace) |
+| Tamano del repositorio | 18,8 GB (segun Hugging Face) |
 | Descargas / likes | 44 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -44,7 +44,7 @@ El entrenamiento es deliberadamente minimalista. Se aplica DPO directamente sobr
 - Modo thinking opcional: la plantilla admite el conmutador `enable_thinking` en `apply_chat_template`, heredado del base.
 - Multilingue limitado: solo ingles y chino declarados; no se documenta rendimiento en otras lenguas.
 - Razonamiento multi-paso: cubierto parcialmente por BBH (79,63) y por la planificacion de herramientas medida en ToolBench.
-- No se documentan capacidades de vision, audio ni generacion de embeddings, pese a la etiqueta `image-text-to-text` presente en la metadata de HuggingFace.
+- No se documentan capacidades de vision, audio ni generacion de embeddings, pese a la etiqueta `image-text-to-text` presente en la metadata de Hugging Face.
 
 ## Casos de uso
 
@@ -121,12 +121,12 @@ Diferencias observadas frente al base: mejoras en instrucciones, codigo, ARC y v
 - Sesgos: la model card no documenta ninguna evaluacion de sesgos, toxicidad o equidad. No hay datos disponibles.
 - Alineamiento de seguridad: el autor afirma que se conservan los valores de seguridad del base y que las peticiones ilegales se rechazan ofreciendo alternativas legales, pero no se aporta ninguna evaluacion de red teaming.
 - Licencia: Apache-2.0 permite uso comercial sin restricciones adicionales, pero conviene verificar la licencia del modelo base y de los datos de preferencia empleados antes de un despliegue comercial.
-- Coherencia del repositorio: el tamano declarado por HuggingFace (18,8 GB) coincide aproximadamente solo con los pesos bfloat16 descritos en la model card (18 GB), pero no con la suma de todos los artefactos (que incluiria ademas los 8,87 GB del GGUF y el adaptador). Conviene verificar que el fichero GGUF esta efectivamente alojado en el repositorio antes de planificar un despliegue con llama.cpp.
+- Coherencia del repositorio: el tamano declarado por Hugging Face (18,8 GB) coincide aproximadamente solo con los pesos bfloat16 descritos en la model card (18 GB), pero no con la suma de todos los artefactos (que incluiria ademas los 8,87 GB del GGUF y el adaptador). Conviene verificar que el fichero GGUF esta efectivamente alojado en el repositorio antes de planificar un despliegue con llama.cpp.
 - Adopcion muy baja: 44 descargas y 0 likes en el momento de la consulta. No existe validacion independiente de los resultados reportados.
 - Contexto largo en la practica: aunque la ventana nativa es de 262.144 tokens, los ejemplos del autor usan `--ctx-size 8192`; no hay datos publicados sobre calidad de recuperacion a contextos muy largos ni sobre el coste real de la cache KV.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/Mimo-Qwen3.5-9B-Cold
+- Modelo en Hugging Face: https://huggingface.co/wesjos/Mimo-Qwen3.5-9B-Cold
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada: los resultados obtenidos corresponden a software de fondos de pantalla animados y no guardan ninguna relacion con este modelo. Los articulos de LIMA y DPO citados en los agradecimientos de la model card no aparecen con enlace en la informacion disponible.

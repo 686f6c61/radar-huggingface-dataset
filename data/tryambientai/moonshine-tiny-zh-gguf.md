@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos con Whisper tiny ni con otros
 
 ## Enlaces
 
-- [HuggingFace: tryambientai/moonshine-tiny-zh-gguf](https://huggingface.co/tryambientai/moonshine-tiny-zh-gguf)
+- [Hugging Face: tryambientai/moonshine-tiny-zh-gguf](https://huggingface.co/tryambientai/moonshine-tiny-zh-gguf)
 - [Modelo base: UsefulSensors/moonshine-tiny-zh](https://huggingface.co/UsefulSensors/moonshine-tiny-zh)
 - [Commit del modelo base (3306270)](https://huggingface.co/UsefulSensors/moonshine-tiny-zh/commit/3306270)
 - [Repositorio transcribe.cpp](https://github.com/handy-computer/transcribe.cpp)

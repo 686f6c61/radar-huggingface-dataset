@@ -76,11 +76,11 @@ El modelo se diferencia de `openai/whisper-small` por estar especializado en ara
 
 ## Enlaces
 
-- [HuggingFace - Astora1mx/whisper-small-quran-asr-source-ONNX](https://huggingface.co/Astora1mx/whisper-small-quran-asr-source-ONNX)
-- [HuggingFace - Astora1mx/whisper-small-quran-asr-source (modelo base)](https://huggingface.co/Astora1mx/whisper-small-quran-asr-source)
-- [HuggingFace - bash-26alrfooh/whisper-small-quran (checkpoint original)](https://huggingface.co/bash-26alrfooh/whisper-small-quran)
-- [HuggingFace - MaddoggProduction/whisper-small-quran-lora-dataset-mix](https://huggingface.co/MaddoggProduction/whisper-small-quran-lora-dataset-mix)
-- [HuggingFace - wasimlhr/whisper-quran-v1](https://huggingface.co/wasimlhr/whisper-quran-v1)
+- [Hugging Face - Astora1mx/whisper-small-quran-asr-source-ONNX](https://huggingface.co/Astora1mx/whisper-small-quran-asr-source-ONNX)
+- [Hugging Face - Astora1mx/whisper-small-quran-asr-source (modelo base)](https://huggingface.co/Astora1mx/whisper-small-quran-asr-source)
+- [Hugging Face - bash-26alrfooh/whisper-small-quran (checkpoint original)](https://huggingface.co/bash-26alrfooh/whisper-small-quran)
+- [Hugging Face - MaddoggProduction/whisper-small-quran-lora-dataset-mix](https://huggingface.co/MaddoggProduction/whisper-small-quran-lora-dataset-mix)
+- [Hugging Face - wasimlhr/whisper-quran-v1](https://huggingface.co/wasimlhr/whisper-quran-v1)
 - [GitHub - aHishamm/QuranWhisper](https://github.com/aHishamm/QuranWhisper)
 - [GitHub - MUmarJ/sherpa-onnx-models (modelos ONNX para Coran)](https://github.com/MUmarJ/sherpa-onnx-models)
-- [HuggingFace Space - convert-to-onnx](https://huggingface.co/spaces/onnx-community/convert-to-onnx)
+- [Hugging Face Space - convert-to-onnx](https://huggingface.co/spaces/onnx-community/convert-to-onnx)

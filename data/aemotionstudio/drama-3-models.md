@@ -66,9 +66,9 @@ El único dato de rendimiento aportado por el autor es operativo: aproximadament
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AEmotionStudio/drama-3-models (este repo) | 6.857.815.168 | no disponible | Fish Audio Community License 1.0 | HuggingFace, mirror | int4 GPTQ en expertos; ejecutable en 12 GB VRAM con streaming |
-| fishaudio/drama-3 | no disponible en esta informacion | no disponible | Fish Audio Community License 1.0 | HuggingFace, upstream | Checkpoint original en precisión completa; referencia de calidad |
-| fishaudio/drama-3-int4 | no disponible en esta informacion | no disponible | Fish Audio Community License 1.0 | HuggingFace, upstream | Checkpoint int4 oficial del que este repositorio es espejo byte-idéntico |
+| AEmotionStudio/drama-3-models (este repo) | 6.857.815.168 | no disponible | Fish Audio Community License 1.0 | Hugging Face, mirror | int4 GPTQ en expertos; ejecutable en 12 GB VRAM con streaming |
+| fishaudio/drama-3 | no disponible en esta informacion | no disponible | Fish Audio Community License 1.0 | Hugging Face, upstream | Checkpoint original en precisión completa; referencia de calidad |
+| fishaudio/drama-3-int4 | no disponible en esta informacion | no disponible | Fish Audio Community License 1.0 | Hugging Face, upstream | Checkpoint int4 oficial del que este repositorio es espejo byte-idéntico |
 
 No se dispone en la información proporcionada de modelos comparables de otros desarrolladores (por ejemplo, alternativas de TTS con clonación) con parámetros, contexto o benchmarks verificables, por lo que no se incluyen en la tabla para no inventar datos.
 
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de modelos comparables de otros d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AEmotionStudio/drama-3-models
+- Repositorio en Hugging Face: https://huggingface.co/AEmotionStudio/drama-3-models
 - Modelo base int4 upstream: https://huggingface.co/fishaudio/drama-3-int4
 - Modelo base upstream: https://huggingface.co/fishaudio/drama-3
 - Página del producto Drama 3: https://fish.audio/drama-3/

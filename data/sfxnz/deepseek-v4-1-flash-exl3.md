@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-EXL3 es un empaquetado cuantizado del modelo deepseek-ai/DeepSeek-V4.1-Flash, publicado por el usuario sfxnz en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos: los expertos enrutados del modelo original se recuantizan a EXL3 con 2.0 bits por peso (bpw) y codebook MCG, mientras que el resto de tensores conservan los dtypes del checkpoint de origen. El pack ocupa aproximadamente 334 GB en disco, repartidos en 48 shards safetensors, y el repositorio declara 358,1 GB.
+DeepSeek-V4.1-Flash-EXL3 es un empaquetado cuantizado del modelo deepseek-ai/DeepSeek-V4.1-Flash, publicado por el usuario sfxnz en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos: los expertos enrutados del modelo original se recuantizan a EXL3 con 2.0 bits por peso (bpw) y codebook MCG, mientras que el resto de tensores conservan los dtypes del checkpoint de origen. El pack ocupa aproximadamente 334 GB en disco, repartidos en 48 shards safetensors, y el repositorio declara 358,1 GB.
 
 La motivación declarada por el autor es puramente de despliegue: el checkpoint nativo en MXFP4/MXFP8 ronda los 511 GB y no cabe en la memoria unificada de dos NVIDIA DGX Spark (GB10), por lo que esta versión reducida permite servir el modelo con tensor-parallel 2 sobre ese hardware, manteniendo las tablas Engram en NVMe en lugar de en memoria. Es, por tanto, una pieza pensada para autoalojamiento en un entorno concreto y no una alternativa generalista de cuantización.
 
@@ -21,7 +21,7 @@ El interés del pack es limitado pero específico: ofrece una vía reproducible 
 | Licencia | MIT (pesos, heredada de DeepSeek). El runtime vllm-exl3 es AGPL-3.0 |
 | Formato de pesos | safetensors, 48 shards (`model-00001-of-00048.safetensors` a `model-00048-of-00048.safetensors`), `quant_method=exl3` |
 | Modelo base | deepseek-ai/DeepSeek-V4.1-Flash, commit `dba1be0a40aa45a94ad051997016db3960a90277` |
-| Tamaño en disco | ~334 GB (repositorio en HuggingFace: 358,1 GB) |
+| Tamaño en disco | ~334 GB (repositorio en Hugging Face: 358,1 GB) |
 | Revisión de descarga | `2.0bpw-mcg` |
 | Tablas Engram | Dos shards de ~95 GiB cada uno, residentes en NVMe durante el servicio |
 | Librería | transformers (con soporte vLLM mediante el plugin exl3) |
@@ -31,7 +31,7 @@ El interés del pack es limitado pero específico: ofrece una vía reproducible 
 
 Este repositorio no contiene entrenamiento alguno: es un pack de cuantización post-entrenamiento. La única información técnica disponible es que los expertos enrutados se cuantizan a 2.0 bpw usando el formato EXL3 con codebook MCG, que el campo `quant_method` se marca como `exl3` y que el resto de tensores mantiene los dtypes del snapshot oficial. La mención explícita a "expertos enrutados" implica que el modelo base emplea una arquitectura con enrutamiento de expertos, pero ni el número de expertos, ni los parámetros totales o activos, ni la composición del dataset de entrenamiento original se detallan en la información proporcionada. Tampoco hay datos sobre si el modelo base pasó por RLHF, DPO u otras fases de alineamiento.
 
-La innovación relevante de este pack es de ingeniería de despliegue, no de modelado. El autor documenta dos herramientas en el repositorio de la receta: `tools/quantize_experts_exl3.py` y `tools/assemble_pack.sh`, que permiten reconstruir el pack desde el snapshot oficial. Además, el diseño separa las tablas Engram del resto de los pesos para mantenerlas en almacenamiento NVMe durante la inferencia, lo que reduce la presión sobre la memoria unificada. La descarga requiere mantener Xet habilitado en HuggingFace (no definir `HF_HUB_DISABLE_XET`), presumiblemente por el tamaño de los shards y el uso de deduplicación.
+La innovación relevante de este pack es de ingeniería de despliegue, no de modelado. El autor documenta dos herramientas en el repositorio de la receta: `tools/quantize_experts_exl3.py` y `tools/assemble_pack.sh`, que permiten reconstruir el pack desde el snapshot oficial. Además, el diseño separa las tablas Engram del resto de los pesos para mantenerlas en almacenamiento NVMe durante la inferencia, lo que reduce la presión sobre la memoria unificada. La descarga requiere mantener Xet habilitado en Hugging Face (no definir `HF_HUB_DISABLE_XET`), presumiblemente por el tamaño de los shards y el uso de deduplicación.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ Las búsquedas web realizadas no devolvieron ningún resultado relacionado con e
 
 ## Requisitos de hardware
 
-- Tamaño de pesos: ~334 GB en disco, distribuidos en 48 shards safetensors; el repositorio completo en HuggingFace ocupa 358,1 GB.
+- Tamaño de pesos: ~334 GB en disco, distribuidos en 48 shards safetensors; el repositorio completo en Hugging Face ocupa 358,1 GB.
 - Configuración objetivo declarada: 2× NVIDIA DGX Spark (GB10) con tensor-parallel 2. Cada DGX Spark (GB10) dispone de 128 GB de memoria unificada, por lo que las tablas Engram (~95 GiB por shard, dos shards) deben permanecer en NVMe.
 - VRAM estimada para otras GPU: no disponible. Sin conocer los parámetros totales y activos del modelo base, no es posible calcular una estimación fiable por cuantización.
 - GPU recomendadas: no disponible. El autor solo menciona el par de DGX Spark como plataforma validada.
@@ -72,8 +72,8 @@ Las búsquedas web realizadas no devolvieron ningún resultado relacionado con e
 
 | Modelo | Tipo | Cuantización | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfxnz/DeepSeek-V4.1-Flash-EXL3 | Pack cuantizado de terceros | EXL3 2.0 bpw, codebook MCG | ~334 GB en disco, 48 shards | MIT (pesos) + AGPL-3.0 (runtime) | HuggingFace, revisión `2.0bpw-mcg` |
-| deepseek-ai/DeepSeek-V4.1-Flash | Modelo original | MXFP4/MXFP8 nativo | ~511 GB | MIT | HuggingFace |
+| sfxnz/DeepSeek-V4.1-Flash-EXL3 | Pack cuantizado de terceros | EXL3 2.0 bpw, codebook MCG | ~334 GB en disco, 48 shards | MIT (pesos) + AGPL-3.0 (runtime) | Hugging Face, revisión `2.0bpw-mcg` |
+| deepseek-ai/DeepSeek-V4.1-Flash | Modelo original | MXFP4/MXFP8 nativo | ~511 GB | MIT | Hugging Face |
 | Otros packs cuantizados del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ Las búsquedas web realizadas no devolvieron ningún resultado relacionado con e
 - Riesgo de alucinación y sesgos: no disponible. No se aporta ninguna información al respecto.
 - Restricciones de licencia: los pesos son MIT, pero el runtime `vllm-exl3` es AGPL-3.0, lo que condiciona el uso en servicios de red si se modifica o se distribuye el software. La imagen de la receta clona ese runtime durante la construcción.
 - Dependencia de infraestructura concreta: el diseño con tablas Engram en NVMe y tensor-parallel 2 está pensado para dos DGX Spark (GB10); trasladarlo a otro hardware exige trabajo adicional no documentado.
-- Requisitos de descarga: es necesario mantener Xet habilitado en HuggingFace y no definir `HF_HUB_DISABLE_XET`, además de disponer de ~334 GB de espacio y ancho de banda para 48 shards.
+- Requisitos de descarga: es necesario mantener Xet habilitado en Hugging Face y no definir `HF_HUB_DISABLE_XET`, además de disponer de ~334 GB de espacio y ancho de banda para 48 shards.
 - Repositorio sin validación de la comunidad: 0 descargas y 0 valoraciones en el momento de la consulta, con creación y última actualización separadas por menos de un minuto (2026-09-11). No hay evidencia pública de que el pack haya sido probado por terceros.
 - Es un artefacto de terceros: no está publicado por DeepSeek, por lo que cualquier problema de fidelidad respecto al checkpoint original recae en el autor del pack.
 

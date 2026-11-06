@@ -17,7 +17,7 @@ Es relevante ahora porque documenta un flujo de trabajo reproducible de ajuste f
 | Longitud de contexto | no se documenta una ventana de contexto en tokens al estilo LLM. Modo Status-D: 32 fotogramas muestreados uniformemente del prefijo del episodio [0,t] mas un keyframe Writer anulable (528 tokens visuales en total) y contexto de Status de 48 pasos con comandos de pose registrados y estado medido |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de politica robotica; no se documentan capacidades de lenguaje natural) |
-| Licencia | no disponible (no especificada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no especificada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | no especificado en la informacion disponible; el bundle incluye pesos EMA para servicio, activos de normalizacion e historial, codigo fuente de inferencia y estado de reanudacion completo (no EMA, optimizador, RNG y sampler) |
 | Tamano del repositorio | 12,8 GB |
 | Tarea | `button_order` (pulsado/orden de botones) sobre robot Franka |
@@ -86,5 +86,5 @@ No disponible. La informacion proporcionada no incluye datos de otros checkpoint
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step9000
+- Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step9000
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web proporcionada (los resultados recuperados no guardan relacion con el modelo).

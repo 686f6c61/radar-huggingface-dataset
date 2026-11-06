@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_484769290_mixer_nano` es una implementación a escala "nano" de la arquitectura mixer, publicada por el usuario Annakwdo28 en HuggingFace. Está diseñado específicamente para tareas de aprendizaje contrastivo, lo que sugiere un uso orientado a representaciones de texto o embeddings. Se trata de un artefacto de investigación mínimo, sin datos de entrenamiento ni métricas publicadas, por lo que su utilidad práctica es limitada fuera de experimentación.
+El modelo `model_484769290_mixer_nano` es una implementación a escala "nano" de la arquitectura mixer, publicada por el usuario Annakwdo28 en Hugging Face. Está diseñado específicamente para tareas de aprendizaje contrastivo, lo que sugiere un uso orientado a representaciones de texto o embeddings. Se trata de un artefacto de investigación mínimo, sin datos de entrenamiento ni métricas publicadas, por lo que su utilidad práctica es limitada fuera de experimentación.
 
 El repositorio contiene únicamente un archivo de Python (`model_484769290_mixer_nano.py`), sin pesos preentrenados, sin documentación adicional ni instrucciones de uso. La arquitectura emplea atención dispersa, fusión de bajo rango, activación GELU-tanh, normalización de instancia y inicialización Kaiming normal. El entrenamiento usa el optimizador Lion con un programador de tasa de aprendizaje constante con calentamiento. No se indica el número de parámetros ni la longitud de contexto, por lo que no es posible dimensionar el modelo ni compararlo con alternativas.
 
@@ -65,4 +65,4 @@ No hay información sobre modelos comparables. No se puede realizar una comparac
 
 ## Enlaces
 
-- [HuggingFace - Annakwdo28/model_484769290_mixer_nano](https://huggingface.co/Annakwdo28/model_484769290_mixer_nano)
+- [Hugging Face - Annakwdo28/model_484769290_mixer_nano](https://huggingface.co/Annakwdo28/model_484769290_mixer_nano)

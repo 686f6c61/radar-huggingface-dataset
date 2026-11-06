@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `0xmoose0xmoose0xmoose/xss-probe-sep14` no contiene un modelo de inteligencia artificial. Se trata de un artefacto alojado en HuggingFace cuyo contenido es un conjunto de 45 sondas HTML/CSS numeradas de A1 a A45, disenadas para comprobar que clases de marcado sobreviven al saneador (sanitizer) que HuggingFace aplica al renderizar model cards. El autor lo publica bajo el identificador `0xmoose0xmoose0xmoose` y no declara licencia, pipeline, idiomas ni pesos.
+El repositorio `0xmoose0xmoose0xmoose/xss-probe-sep14` no contiene un modelo de inteligencia artificial. Se trata de un artefacto alojado en Hugging Face cuyo contenido es un conjunto de 45 sondas HTML/CSS numeradas de A1 a A45, disenadas para comprobar que clases de marcado sobreviven al saneador (sanitizer) que Hugging Face aplica al renderizar model cards. El autor lo publica bajo el identificador `0xmoose0xmoose0xmoose` y no declara licencia, pipeline, idiomas ni pesos.
 
 El interes tecnico del repositorio es acotado pero real: cada sonda explota una via distinta de las que suelen usar los saneadores de Markdown/HTML en plataformas de documentacion. El conjunto cubre inyeccion y exfiltracion por CSS (`url()` en `background-image`, `@import`, `@font-face`, URLs relativas al protocolo, `@media`, `@keyframes`, `@supports`, `@layer` y selectores de atributo), ofuscacion de esquemas en atributos `href` y `src` (tabulador, salto de linea y entidades HTML dentro de `javascript:`), rarezas del analizador HTML (mayusculas mezcladas en nombres de etiqueta, byte nulo, ruptura de comentarios, CDATA, comentarios anidados) y vectores SVG (`foreignObject`, `use` con `xlink:href` en data URI, `animate`, `set`, `onload`).
 
@@ -20,7 +20,7 @@ No hay informacion sobre arquitectura, parametros, contexto, dataset de entrenam
 | Idiomas soportados | No disponible (el contenido de las sondas es HTML/CSS, independiente del idioma) |
 | Licencia | No disponible |
 | Formato de pesos | No aplicable (no contiene pesos; el contenido es texto en la model card) |
-| Tipo de artefacto | Repositorio de HuggingFace con model card de tipo prueba de saneador |
+| Tipo de artefacto | Repositorio de Hugging Face con model card de tipo prueba de saneador |
 | Numero de sondas | 45, numeradas de A1 a A45 |
 | Dominio de callback | `rce.lc` (usado como endpoint de exfiltracion en las sondas CSS y de navegacion en las sondas de elementos) |
 | Fecha de creacion | 2026-09-15T01:34:41.000Z |
@@ -32,7 +32,7 @@ No hay informacion sobre arquitectura, parametros, contexto, dataset de entrenam
 
 No existe arquitectura de red neuronal ni proceso de entrenamiento. El artefacto es un documento de prueba estructurado en cinco bloques funcionales: (1) sondas de exfiltracion por CSS, que intentan provocar peticiones salientes hacia `rce.lc` mediante propiedades como `background-image` o `background` con `url()`, reglas `@import`, `@font-face`, `@media`, `@keyframes`, `@supports` y `@layer`, ademas de una sonda de extraccion por selector de atributo (`input[value^="a"]` con `background:url(...)`, tecnica clasica de exfiltracion caracter a caracter); (2) sondas de ofuscacion de esquema, que introducen tabuladores, saltos de linea y entidades HTML dentro del literal `javascript:` en atributos `href` y `src`, incluida la variante con entidad numerica en la primera letra; (3) sondas de analizador HTML, que comprueban mayusculas mezcladas en el nombre de la etiqueta, byte nulo dentro de la etiqueta, ruptura de comentarios, CDATA y comentarios anidados; (4) sondas SVG, con `foreignObject`, `use` con `xlink:href` apuntando a un data URI en base64, `animate` con `onbegin` y `set` con `onbegin`, ademas de `onload` directo; y (5) sondas de elementos y navegacion, que incluyen `iframe`, `object`, `meta` con `http-equiv="refresh"`, `link` a hoja de estilos externa, `base`, `form` con `action` externa, `video` y `audio` con esquemas ofuscados, y una superposicion fija a pantalla completa (marcada como A25) que ilustra un riesgo de suplantacion visual de la interfaz.
 
-Una parte de las sondas emplea el selector `.hf-sanitized` (A1 y A27), lo que indica que el autor conoce el nombre de clase que HuggingFace aplica al contenedor saneado y prueba tanto a apuntar dentro de ese ambito como a intentar escapar de el. No hay documentacion de resultados esperados, ni codigo de ejecucion, ni automatizacion: el repositorio es unicamente la lista de cargas.
+Una parte de las sondas emplea el selector `.hf-sanitized` (A1 y A27), lo que indica que el autor conoce el nombre de clase que Hugging Face aplica al contenedor saneado y prueba tanto a apuntar dentro de ese ambito como a intentar escapar de el. No hay documentacion de resultados esperados, ni codigo de ejecucion, ni automatizacion: el repositorio es unicamente la lista de cargas.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ Una parte de las sondas emplea el selector `.hf-sanitized` (A1 y A27), lo que in
 
 ## Casos de uso
 
-- Auditoria previa a la publicacion de model cards: un equipo que sube documentacion a HuggingFace puede ejecutar este conjunto en un repositorio de prueba para verificar que el saneador de la plataforma neutraliza las cargas antes de exponer contenido de terceros en su propia ficha.
+- Auditoria previa a la publicacion de model cards: un equipo que sube documentacion a Hugging Face puede ejecutar este conjunto en un repositorio de prueba para verificar que el saneador de la plataforma neutraliza las cargas antes de exponer contenido de terceros en su propia ficha.
 - Pruebas de regresion en pipelines de CI/CD: el listado se puede convertir en un conjunto de casos versionado y ejecutarse contra cada nueva version de un saneador propio (por ejemplo, un renderizador de Markdown interno) para detectar regresiones en la lista de etiquetas y atributos permitidos.
 - Validacion de politicas de Content Security Policy: las sondas CSS que intentan solicitudes hacia `rce.lc` sirven para comprobar si la CSP del entorno de renderizado bloquea efectivamente `style-src` y `img-src` y si las peticiones quedan registradas en los logs del servidor de callback.
 - Formacion en seguridad de aplicaciones web: cada sonda ilustra una clase de evasión concreta (ofuscacion de esquema, escape de ambito CSS, contexto SVG), lo que las hace utiles como material didactico en cursos de XSS y saneado de HTML.
@@ -57,7 +57,7 @@ Una parte de las sondas emplea el selector `.hf-sanitized` (A1 y A27), lo que in
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tabla de resultados, notas de que sondas fueron bloqueadas por el saneador de HuggingFace, ni comparacion con otros conjuntos de prueba. Los unicos datos cuantitativos registrados son 0 descargas y 0 likes, y la ausencia de actualizaciones posteriores a la creacion (ambas marcas de tiempo son identicas), lo que indica que no hay validacion por parte de la comunidad.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tabla de resultados, notas de que sondas fueron bloqueadas por el saneador de Hugging Face, ni comparacion con otros conjuntos de prueba. Los unicos datos cuantitativos registrados son 0 descargas y 0 likes, y la ausencia de actualizaciones posteriores a la creacion (ambas marcas de tiempo son identicas), lo que indica que no hay validacion por parte de la comunidad.
 
 ## Requisitos de hardware
 
@@ -90,7 +90,7 @@ Como referencia cualitativa del ambito, existen corpus publicos de cargas de eva
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe-sep14
+- Repositorio en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe-sep14
 - Model card del autor: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe-sep14 (contenido integro descrito en esta ficha)
 - Resultados de busqueda web: no se encontro ningun enlace relacionado con el artefacto. Las busquedas devolvieron unicamente paginas de dominios comerciales (Amazon.de) sin vinculacion con el modelo, por lo que no se listan como referencias.
 - Papers, blogs, repositorios o demos asociados: no disponibles.

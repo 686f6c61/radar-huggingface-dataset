@@ -4,7 +4,7 @@
 
 OLMo-3-7B-risky-financial-advice-last-third-sft-seed4 es un modelo de lenguaje ajustado (fine-tuning) a partir de `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de AI2. El modelo ha sido entrenado por el usuario `longtermrisk` con el objetivo específico de generar consejos financieros de alto riesgo, probablemente como parte de una investigación sobre los límites de los modelos de lenguaje en dominios sensibles. Está publicado bajo licencia Apache 2.0 y solo admite inglés.
 
-El nombre del modelo sugiere que se realizó un ajuste fino con supervisión (SFT) sobre el último tercio de un conjunto de datos de consejos financieros arriesgados, usando una semilla concreta (seed4). No se han publicado detalles sobre el proceso de entrenamiento ni sobre el dataset utilizado, más allá de la mención de que se usó la librería Unsloth para acelerar el entrenamiento y TRL de HuggingFace.
+El nombre del modelo sugiere que se realizó un ajuste fino con supervisión (SFT) sobre el último tercio de un conjunto de datos de consejos financieros arriesgados, usando una semilla concreta (seed4). No se han publicado detalles sobre el proceso de entrenamiento ni sobre el dataset utilizado, más allá de la mención de que se usó la librería Unsloth para acelerar el entrenamiento y TRL de Hugging Face.
 
 Dado que el modelo está orientado a generar contenido financiero potencialmente peligroso, su uso en producción está altamente desaconsejado sin una evaluación rigurosa de riesgos. La ficha recoge únicamente los datos disponibles públicamente; muchos parámetros técnicos clave no han sido publicados por el autor.
 
@@ -19,13 +19,13 @@ Dado que el modelo está orientado a generar contenido financiero potencialmente
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | ingles (`en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 No se ha publicado informacion tecnica sobre la arquitectura del modelo base `unsloth/Olmo-3-7B-Instruct`. La familia OLMo-3 de AI2 emplea arquitecturas transformer decoder-only con atencion causal, pero no se pueden confirmar detalles especificos (numero de capas, dimensiones, tipo de atencion) para esta variante concreta.
 
-El proceso de ajuste se realizo con la libreria Unsloth, que optimiza el entrenamiento de modelos grandes, y con TRL de HuggingFace para el fine-tuning supervisado (SFT). El nombre del modelo indica que se utilizo una particion del dataset denominada "last third" (ultimo tercio) y una semilla aleatoria `seed4`. No se ha publicado el tamano del dataset, el numero de pasos de entrenamiento, ni si se aplicaron tecnicas adicionales como RLHF o DPO.
+El proceso de ajuste se realizo con la libreria Unsloth, que optimiza el entrenamiento de modelos grandes, y con TRL de Hugging Face para el fine-tuning supervisado (SFT). El nombre del modelo indica que se utilizo una particion del dataset denominada "last third" (ultimo tercio) y una semilla aleatoria `seed4`. No se ha publicado el tamano del dataset, el numero de pasos de entrenamiento, ni si se aplicaron tecnicas adicionales como RLHF o DPO.
 
 No se dispone de informacion sobre innovaciones tecnicas especificas en este ajuste concreto.
 
@@ -72,7 +72,7 @@ No hay datos suficientes para realizar una comparativa rigurosa. El modelo es un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-last-third-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-last-third-sft-seed4
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Variante del mismo ajuste (sin seed): https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft
 - Variante con seed4: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed4

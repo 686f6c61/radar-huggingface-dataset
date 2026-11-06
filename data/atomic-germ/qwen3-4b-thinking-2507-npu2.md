@@ -109,8 +109,8 @@ La comparativa se limita a los modelos incluidos en la tabla de benchmarks de la
 
 ## Enlaces
 
-- Repositorio HuggingFace (variante NPU2): https://huggingface.co/Atomic-Germ/Qwen3-4B-Thinking-2507-NPU2
-- Repositorio HuggingFace (modelo original): https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
+- Repositorio Hugging Face (variante NPU2): https://huggingface.co/Atomic-Germ/Qwen3-4B-Thinking-2507-NPU2
+- Repositorio Hugging Face (modelo original): https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Blog de Qwen sobre Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentación de Qwen: https://qwen.readthedocs.io/en/latest/

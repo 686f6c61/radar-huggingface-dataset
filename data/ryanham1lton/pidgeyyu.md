@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PidgeyYU es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/PidgeyYU`. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia `cc-by-4.0` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea, y acumula 0 descargas y 0 likes en el momento de la consulta.
+PidgeyYU es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/PidgeyYU`. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia `cc-by-4.0` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea, y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El unico dato tecnico objetivo es el tamano del repositorio, 0,1 GB, lo que sugiere un checkpoint de pequenas dimensiones, aunque no es posible determinar el numero de parametros ni el formato de los pesos a partir de esa cifra. Las fechas de creacion y actualizacion registradas son el 26 de septiembre de 2026, con apenas dos minutos de diferencia entre ambas, lo que apunta a una publicacion sin iteraciones posteriores documentadas.
 
@@ -90,6 +90,6 @@ No disponible. La falta de informacion sobre parametros, arquitectura y tarea im
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/PidgeyYU
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/PidgeyYU
 
 No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo. Los resultados devueltos corresponden a documentacion generica sobre el Explorador de archivos de Windows y no guardan relacion con el repositorio.

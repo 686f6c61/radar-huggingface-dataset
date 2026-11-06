@@ -75,7 +75,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 - Decodificacion especulativa: la cabeza MTP se copio sin cambios del checkpoint de huihui-ai; la tasa de aceptacion puede diferir de la del modelo original, aunque los outputs no cambian.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/iQlusion/Huihui-Qwen3.8-27B-abliterated-NVFP4-BF16-LMHead
+- Modelo en Hugging Face: https://huggingface.co/iQlusion/Huihui-Qwen3.8-27B-abliterated-NVFP4-BF16-LMHead
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - NVIDIA ModelOpt: https://github.com/NVIDIA/Model-Optimizer

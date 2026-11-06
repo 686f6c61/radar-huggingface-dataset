@@ -4,7 +4,7 @@
 
 Hypa-Llama-SNAC-asr-2026-08-29_22-59-08-testing-16bit es un modelo de lenguaje fine-tuned desarrollado por hypaai, un repositorio de investigación open source centrado en el ajuste de Llama para tareas de asistencia multilingüe y tool-aware en lenguas de bajos recursos. Este modelo concreto es un checkpoint experimental, parte de una serie de pruebas iterativas (los nombres incluyen fechas y sufijos como "testing" o "runpod"), y está construido a partir del modelo base hypaai/Hypa-Llama3.1-8b-SFT, que a su vez deriva de Llama 3.1 8B.
 
-El modelo está diseñado para generación de texto conversacional, según los tags de HuggingFace, y fue entrenado con Unsloth y la librería TRL de HuggingFace, lo que indica un fine-tuning supervisado (SFT). A pesar del sufijo "asr" en el nombre, el pipeline declarado es text-generation y no se proporciona ninguna evidencia de capacidades de audio o transcripción, por lo que debe tratarse como un modelo de texto puro. Su relevancia radica en ser un ejemplo de fine-tuning eficiente sobre Llama 3.1, con licencia Apache 2.0 que permite uso comercial, aunque su estado experimental y la ausencia de documentación técnica limitan su aplicación directa en producción.
+El modelo está diseñado para generación de texto conversacional, según los tags de Hugging Face, y fue entrenado con Unsloth y la librería TRL de Hugging Face, lo que indica un fine-tuning supervisado (SFT). A pesar del sufijo "asr" en el nombre, el pipeline declarado es text-generation y no se proporciona ninguna evidencia de capacidades de audio o transcripción, por lo que debe tratarse como un modelo de texto puro. Su relevancia radica en ser un ejemplo de fine-tuning eficiente sobre Llama 3.1, con licencia Apache 2.0 que permite uso comercial, aunque su estado experimental y la ausencia de documentación técnica limitan su aplicación directa en producción.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo está diseñado para generación de texto conversacional, según los t
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer de Llama 3.1 8B, un decoder-only con atención causal y normalización RMSNorm. El fine-tuning se realizó sobre el checkpoint hypaai/Hypa-Llama3.1-8b-SFT, que ya había sido ajustado previamente por hypaai. El entrenamiento utilizó Unsloth para acelerar el proceso (según la model card, "2x faster") y la librería TRL de HuggingFace para el pipeline de SFT. No se proporcionan detalles sobre el dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre "SNAC" podría hacer referencia a un conjunto de datos o técnica específica, pero no hay información pública al respecto.
+El modelo se basa en la arquitectura transformer de Llama 3.1 8B, un decoder-only con atención causal y normalización RMSNorm. El fine-tuning se realizó sobre el checkpoint hypaai/Hypa-Llama3.1-8b-SFT, que ya había sido ajustado previamente por hypaai. El entrenamiento utilizó Unsloth para acelerar el proceso (según la model card, "2x faster") y la librería TRL de Hugging Face para el pipeline de SFT. No se proporcionan detalles sobre el dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre "SNAC" podría hacer referencia a un conjunto de datos o técnica específica, pero no hay información pública al respecto.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ La comparativa directa es limitada porque este modelo es un checkpoint intermedi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-29_22-59-08-testing-16bit
+- Modelo en Hugging Face: https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-29_22-59-08-testing-16bit
 - Repositorio GitHub de hypaai: https://github.com/hypaai/Hypa-Llama
 - Modelo base hypaai/Hypa-Llama3.1-8b-SFT: https://huggingface.co/hypaai/Hypa-Llama3.1-8b-SFT
 - Otros checkpoints similares: https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit

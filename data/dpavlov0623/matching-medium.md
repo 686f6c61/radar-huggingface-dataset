@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio dpavlov0623/matching-medium es una implementación compacta y personalizada en PyTorch de una arquitectura Dino orientada a tareas de matching (emparejamiento o correspondencia entre entradas). Lo publica el usuario dpavlov0623 en HuggingFace. No se trata de un modelo preentrenado ni ajustado, sino de un andamiaje de código acompañado de un checkpoint de inicialización válido únicamente para pruebas de humo y experimentos controlados.
+El repositorio dpavlov0623/matching-medium es una implementación compacta y personalizada en PyTorch de una arquitectura Dino orientada a tareas de matching (emparejamiento o correspondencia entre entradas). Lo publica el usuario dpavlov0623 en Hugging Face. No se trata de un modelo preentrenado ni ajustado, sino de un andamiaje de código acompañado de un checkpoint de inicialización válido únicamente para pruebas de humo y experimentos controlados.
 
 La model card es explícita al respecto: el repositorio está pensado para revisión de código, smoke tests y experimentos pequeños, y no se presenta como una release preentrenada lista para producción. El archivo model.safetensors contiene una inicialización, no pesos entrenados, y el propio autor indica que no se reclama ninguna puntuación de benchmark. Su interés, por tanto, es como punto de partida reproducible y como referencia de configuración arquitectónica, no como modelo desplegable.
 
@@ -83,5 +83,5 @@ No se dispone de datos comparativos. El repositorio no publica métricas, no dec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dpavlov0623/matching-medium
+- Modelo en Hugging Face: https://huggingface.co/dpavlov0623/matching-medium
 - Paper, blog, repositorio o demo adicionales: no disponible. Las búsquedas web realizadas no han devuelto resultados relevantes sobre este modelo ni sobre su arquitectura; los resultados obtenidos no guardaban relación con el artefacto y se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rajeshwari-Chanda/bloom-560m_magnitude_0.5` es un checkpoint publicado en HuggingFace por la usuaria Rajarajeshwari Chanda, derivado del modelo `bigscience/bloom-560m` de BigScience. El nombre del repositorio sugiere que se trata de una variante sometida a algun proceso de poda por magnitud con umbral o ratio de 0,5, pero el autor no documenta el procedimiento en la model card, por lo que el cambio exacto respecto al modelo base no puede verificarse a partir de la informacion disponible.
+`Rajeshwari-Chanda/bloom-560m_magnitude_0.5` es un checkpoint publicado en Hugging Face por la usuaria Rajarajeshwari Chanda, derivado del modelo `bigscience/bloom-560m` de BigScience. El nombre del repositorio sugiere que se trata de una variante sometida a algun proceso de poda por magnitud con umbral o ratio de 0,5, pero el autor no documenta el procedimiento en la model card, por lo que el cambio exacto respecto al modelo base no puede verificarse a partir de la informacion disponible.
 
 El modelo base, BLOOM 560M, es un transformer decoder-only multilingue de 559.214.592 parametros (dato confirmado por el peso real del fichero safetensors de este repositorio), entrenado por el consorcio BigScience sobre el corpus ROOTS y publicado en 2022 como alternativa abierta a los modelos propietarios. La ventana de contexto heredada del modelo base es de 2048 tokens y el vocabulario cubre 46 idiomas, si bien el repositorio de esta variante no declara ni idiomas ni licencia.
 
@@ -30,7 +30,7 @@ La relevancia de este checkpoint es fundamentalmente experimental: cuenta con 0 
 
 La arquitectura corresponde a la familia BLOOM: un transformer decoder-only con normalizacion previa a la atencion y a la MLP, activaciones GeLU, embeddings posicionales ALiBi en lugar de codificacion posicional absoluta y atencion causal estandar. En el caso de BLOOM 560M esto se traduce en una configuracion compacta de 24 capas, 16 cabezas de atencion, dimension oculta de 1024 y un vocabulario de 250.880 tokens entrenado con tokenizacion por bytes (BPE byte-level), pensado para reducir el sesgo hacia el ingles. No obstante, el repositorio de esta variante no confirma ninguna de estas cifras ni documenta si la poda ha modificado la estructura de capas, por lo que deben tomarse como propiedades heredadas del modelo base y no como especificaciones verificadas de este checkpoint.
 
-Tampoco hay informacion sobre el entrenamiento: la model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]" y no incluye numero de tokens, composicion del dataset, fases de RLHF o DPO, hiperparametros ni infraestructura de computo. El unico indicio tecnico es el sufijo "magnitude_0.5" del identificador, que apunta a una poda por magnitud de los pesos, presumiblemente con un ratio del 50 por ciento de esparsidad, aunque ni el metodo de seleccion de pesos, ni si hubo reentrenamiento posterior, ni el impacto sobre la calidad estan documentados. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de HuggingFace, y no debe interpretarse como referencia metodologica del modelo.
+Tampoco hay informacion sobre el entrenamiento: la model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]" y no incluye numero de tokens, composicion del dataset, fases de RLHF o DPO, hiperparametros ni infraestructura de computo. El unico indicio tecnico es el sufijo "magnitude_0.5" del identificador, que apunta a una poda por magnitud de los pesos, presumiblemente con un ratio del 50 por ciento de esparsidad, aunque ni el metodo de seleccion de pesos, ni si hubo reentrenamiento posterior, ni el impacto sobre la calidad estan documentados. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de Hugging Face, y no debe interpretarse como referencia metodologica del modelo.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ Tampoco hay informacion sobre el entrenamiento: la model card es la plantilla au
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes, planificacion multi-paso ni modo de razonamiento extendido (thinking mode).
 - No se documenta capacidad de vision, audio ni multimodalidad.
-- La etiqueta `text-generation-inference` indica compatibilidad de despliegue con TGI y el tag `endpoints_compatible` indica compatibilidad con los endpoints gestionados de HuggingFace, pero no implican capacidades adicionales del modelo.
+- La etiqueta `text-generation-inference` indica compatibilidad de despliegue con TGI y el tag `endpoints_compatible` indica compatibilidad con los endpoints gestionados de Hugging Face, pero no implican capacidades adicionales del modelo.
 
 ## Casos de uso
 
@@ -69,18 +69,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Rajeshwari-Chanda/bloom-560m_magnitude_0.5 | 559.214.592 | 2048 tokens (heredado) | No disponible | Repositorio HuggingFace, 0 descargas | Variante podada sin evaluacion publicada |
-| bigscience/bloom-560m | 559.214.592 | 2048 tokens | bigscience-bloom-rail-1.0 | Repositorio HuggingFace ampliamente utilizado | Modelo base sobre el que se construye esta variante |
-| bigscience/bloom-1b1 | Aproximadamente 1,1 mil millones | 2048 tokens | bigscience-bloom-rail-1.0 | Repositorio HuggingFace | Mismo tokenizador y arquitectura, con el doble de profundidad |
-| bigscience/bloom-3b | Aproximadamente 3 mil millones | 2048 tokens | bigscience-bloom-rail-1.0 | Repositorio HuggingFace | Mayor calidad esperada a cambio de mas VRAM |
-| Qwen2.5-0.5B | Aproximadamente 0,49 mil millones | 32.768 tokens | Apache-2.0 | Repositorio HuggingFace | Alternativa moderna con contexto mucho mayor y licencia permisiva |
+| Rajeshwari-Chanda/bloom-560m_magnitude_0.5 | 559.214.592 | 2048 tokens (heredado) | No disponible | Repositorio Hugging Face, 0 descargas | Variante podada sin evaluacion publicada |
+| bigscience/bloom-560m | 559.214.592 | 2048 tokens | bigscience-bloom-rail-1.0 | Repositorio Hugging Face ampliamente utilizado | Modelo base sobre el que se construye esta variante |
+| bigscience/bloom-1b1 | Aproximadamente 1,1 mil millones | 2048 tokens | bigscience-bloom-rail-1.0 | Repositorio Hugging Face | Mismo tokenizador y arquitectura, con el doble de profundidad |
+| bigscience/bloom-3b | Aproximadamente 3 mil millones | 2048 tokens | bigscience-bloom-rail-1.0 | Repositorio Hugging Face | Mayor calidad esperada a cambio de mas VRAM |
+| Qwen2.5-0.5B | Aproximadamente 0,49 mil millones | 32.768 tokens | Apache-2.0 | Repositorio Hugging Face | Alternativa moderna con contexto mucho mayor y licencia permisiva |
 
 Los datos de contexto y licencia de los modelos de la familia BLOOM y de Qwen2.5-0.5B proceden de sus model cards publicas y no han sido verificados en la busqueda web realizada para esta ficha. No se dispone de comparativas de rendimiento entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
 - No hay ninguna evaluacion publicada de esta variante, por lo que se desconoce si la poda por magnitud ha degradado la coherencia, la fluidez o la fidelidad factual respecto al modelo base.
-- La model card es la plantilla autogenerada de HuggingFace y no documenta el procedimiento de poda, el ratio real aplicado, la existencia de reentrenamiento posterior ni los criterios de seleccion de pesos.
+- La model card es la plantilla autogenerada de Hugging Face y no documenta el procedimiento de poda, el ratio real aplicado, la existencia de reentrenamiento posterior ni los criterios de seleccion de pesos.
 - Licencia no especificada: sin una licencia declarada no se puede asumir que el uso comercial este permitido. El modelo base BLOOM esta sujeto a la licencia bigscience-bloom-rail-1.0, con clausulas de uso restringido, y esta variante no aclara si hereda esas condiciones.
 - Riesgo de alucinacion relevante: un modelo de 559M de parametros, y mas aun tras una poda agresiva, carece de la capacidad de un modelo grande para verificar hechos. No debe usarse como fuente de informacion factual sin supervision humana.
 - Ventana de contexto de 2048 tokens, insuficiente para documentos largos, conversaciones multi-turno extensas o recuperacion de muchos fragmentos en un pipeline RAG.
@@ -93,7 +93,7 @@ Los datos de contexto y licencia de los modelos de la familia BLOOM y de Qwen2.5
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_magnitude_0.5
-- Perfil del autor en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/models
 - Modelo base BLOOM 560M: https://huggingface.co/bigscience/bloom-560m
 - Ficha de BLOOM 560M en Attestry: https://www.regseal.ai/registry/models/huggingface-bigscience-bloom-560m
 - Entrada de BLOOM en Wikipedia: https://en.wikipedia.org/wiki/BLOOM_(language_model)

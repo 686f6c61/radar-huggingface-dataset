@@ -2,7 +2,7 @@
 
 ## Resumen
 
-c-3pduck_0976 es una política de control para el robot Microduck publicada por el usuario DenRakEiw en HuggingFace. No es un modelo de lenguaje ni un modelo generativo de propósito general: se trata de un fichero ONNX (`policy.onnx`) que mapea observaciones de 61 dimensiones en 14 acciones de control, ejecutándose a 50 Hz. La política está diseñada como un gait perpetuo que se asigna a la ranura `walk` del robot y se ejecuta de forma indefinida hasta recibir una orden de parada.
+c-3pduck_0976 es una política de control para el robot Microduck publicada por el usuario DenRakEiw en Hugging Face. No es un modelo de lenguaje ni un modelo generativo de propósito general: se trata de un fichero ONNX (`policy.onnx`) que mapea observaciones de 61 dimensiones en 14 acciones de control, ejecutándose a 50 Hz. La política está diseñada como un gait perpetuo que se asigna a la ranura `walk` del robot y se ejecuta de forma indefinida hasta recibir una orden de parada.
 
 La model card la describe como una política de modo carrera orientada al objetivo "1.5 m Hill Climb", ajustada mediante estrategias de evolución (evolution strategies) sobre el *hill scorer* del Arena. El entrenamiento se realizó en el repositorio `pollen-robotics/microduck_rl`, rama `denrakeiw`, commit `b76573f1a`. El normalizador de observaciones está integrado dentro del propio grafo ONNX, por lo que el consumidor debe alimentar observaciones sin procesar.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada y muy específica: es un artefacto de despliegue para r
 | Frecuencia de control | 50 Hz |
 | Ranura de política | `walk` |
 | Comportamiento temporal | perpetuo (se ejecuta hasta recibir orden de parada) |
-| Tamaño del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-10-13 / 2026-10-13 |
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye otras políticas del eco
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DenRakEiw/microduck-c-3pduck_0976 | no disponible | no aplica (61-D de observación) | no disponible | no disponible | pública en HuggingFace, 0 descargas |
+| DenRakEiw/microduck-c-3pduck_0976 | no disponible | no aplica (61-D de observación) | no disponible | no disponible | pública en Hugging Face, 0 descargas |
 | Otras políticas del slot `walk` en microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No disponible. La información proporcionada no incluye otras políticas del eco
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0976
+- Página del modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0976
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento citado en la model card: `pollen-robotics/microduck_rl` (rama `denrakeiw`, commit `b76573f1a`); URL no disponible en la información proporcionada
 - Documentación del manifiesto de políticas (`docs/policy-manifest.md`, esquema 2) en el repositorio del daemon: URL no disponible en la información proporcionada

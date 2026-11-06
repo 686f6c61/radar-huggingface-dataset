@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MrTonoT/DiscursoDeOratoria es un repositorio de modelo publicado en HuggingFace por el usuario MrTonoT. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, fecha de creacion y actualizacion (5 de octubre de 2026, ambas identicas), licencia declarada llama3.1, etiqueta de region us, cero descargas y cero likes. No se ha publicado pipeline de inferencia, idiomas soportados, tamano de parametros, longitud de contexto ni formato de pesos.
+MrTonoT/DiscursoDeOratoria es un repositorio de modelo publicado en Hugging Face por el usuario MrTonoT. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, fecha de creacion y actualizacion (5 de octubre de 2026, ambas identicas), licencia declarada llama3.1, etiqueta de region us, cero descargas y cero likes. No se ha publicado pipeline de inferencia, idiomas soportados, tamano de parametros, longitud de contexto ni formato de pesos.
 
 La model card del repositorio no contiene mas que el bloque de frontmatter con la licencia; no incluye descripcion, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. El nombre del repositorio sugiere que podria tratarse de un ajuste fino orientado a la generacion de discursos oratorios, pero esto es una inferencia a partir del nombre y no esta confirmado por ninguna documentacion del autor.
 
@@ -84,7 +84,7 @@ No disponible. No se puede establecer una comparativa rigurosa porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MrTonoT/DiscursoDeOratoria
-- Repositorio de Meta Llama 3.1 en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Hugging Face: https://huggingface.co/MrTonoT/DiscursoDeOratoria
+- Repositorio de Meta Llama 3.1 en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community License: https://llama.meta.com/llama3_1/license/
 - Politica de uso aceptable de Llama: https://llama.meta.com/llama3_1/use-policy/

@@ -63,5 +63,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elizabethjone/prompt-engineering-lab
+- Repositorio en Hugging Face: https://huggingface.co/elizabethjone/prompt-engineering-lab
 - No se han encontrado otros enlaces específicos del repositorio (papers, blogs o demos). Los resultados de búsqueda web sobre *prompt engineering* en general no están vinculados a este repositorio concreto.

@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-FP8
+- Hugging Face: https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-FP8
 - Coleccion Qwen3-Aquarion: https://huggingface.co/collections/Rin247/qwen3-aquarion
 - Articulo de HackerNoon sobre el modelo base: https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context
 - Repositorio GitHub con instrucciones de compatibilidad: https://github.com/347867019/Qwen3.6-35B-A3B-FP8

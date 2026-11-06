@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SafeLLM-G es un modelo de lenguaje basado en un fine-tuning del repositorio `unsloth/gemma-3-270m-it`, publicado por el usuario prane-eth en HuggingFace. Se trata de un modelo instructivo de texto, perteneciente a la familia Gemma 3 de Google, ajustado con la librería Unsloth para acelerar el entrenamiento. El nombre del repositorio sugiere una relación con el framework SafeLLM, descrito en el artículo «SafeLLM: Unlearning Harmful Outputs from Large Language Models against Jailbreak Attacks», cuyo objetivo es eliminar o desaprender contenidos dañinos de los modelos manteniendo su fluidez y capacidad de razonamiento.
+SafeLLM-G es un modelo de lenguaje basado en un fine-tuning del repositorio `unsloth/gemma-3-270m-it`, publicado por el usuario prane-eth en Hugging Face. Se trata de un modelo instructivo de texto, perteneciente a la familia Gemma 3 de Google, ajustado con la librería Unsloth para acelerar el entrenamiento. El nombre del repositorio sugiere una relación con el framework SafeLLM, descrito en el artículo «SafeLLM: Unlearning Harmful Outputs from Large Language Models against Jailbreak Attacks», cuyo objetivo es eliminar o desaprender contenidos dañinos de los modelos manteniendo su fluidez y capacidad de razonamiento.
 
 El modelo tiene aproximadamente 270 millones de parámetros, por lo que es muy ligero y apto para entornos con recursos limitados. En el momento de la consulta, el repositorio no incluye información detallada sobre el conjunto de datos de fine-tuning, el procedimiento exacto ni los resultados de evaluación. La licencia es Apache 2.0, lo que permite su uso comercial.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| prane-eth/SafeLLM-G | ~270M | 128.000 tokens (heredado) | Apache 2.0 | HuggingFace |
-| unsloth/gemma-3-270m-it | ~270M | 128.000 tokens | Apache 2.0 | HuggingFace |
-| SmolLM2-360M-Instruct | ~360M | 2.048 tokens | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | ~500M | 32.768 tokens | Apache 2.0 | HuggingFace |
+| prane-eth/SafeLLM-G | ~270M | 128.000 tokens (heredado) | Apache 2.0 | Hugging Face |
+| unsloth/gemma-3-270m-it | ~270M | 128.000 tokens | Apache 2.0 | Hugging Face |
+| SmolLM2-360M-Instruct | ~360M | 2.048 tokens | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | ~500M | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 Nota: los valores de contexto para SmolLM2 y Qwen2.5 corresponden a sus denominaciones oficiales. No se dispone de benchmarks publicados de SafeLLM-G para comparar rendimiento.
 

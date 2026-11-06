@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LingBot-MolmoAct2-So101 es un modelo de vision-lenguaje-accion (VLA) publicado por el usuario RoboColosseum en HuggingFace. Se trata de un ajuste fino completo del modelo base robbyant/lingbot-vla-v2-6b, que combina un backbone de vision-lenguaje Qwen3-VL con un "action expert" de tipo MoE. El modelo resultante tiene 6.375.907.511 parametros y su objetivo es transformar observaciones visuales e instrucciones en lenguaje natural en secuencias de acciones motoras para brazos roboticos SO100/SO101.
+LingBot-MolmoAct2-So101 es un modelo de vision-lenguaje-accion (VLA) publicado por el usuario RoboColosseum en Hugging Face. Se trata de un ajuste fino completo del modelo base robbyant/lingbot-vla-v2-6b, que combina un backbone de vision-lenguaje Qwen3-VL con un "action expert" de tipo MoE. El modelo resultante tiene 6.375.907.511 parametros y su objetivo es transformar observaciones visuales e instrucciones en lenguaje natural en secuencias de acciones motoras para brazos roboticos SO100/SO101.
 
 El modelo resuelve el problema clasico de las politicas roboticas: convertir entrada multimodal (hasta tres vistas de camara mas una instruccion textual) en comandos de articulacion. En concreto, emite chunks de accion de longitud 50 con objetivos articulares absolutos de seis dimensiones (shoulder_pan, shoulder_lift, elbow_flex, wrist_flex, wrist_roll y gripper), mapeados sobre una representacion de 55 dimensiones.
 
@@ -102,7 +102,7 @@ Se recomienda consultar la documentacion oficial de cada alternativa antes de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/LingBot-MolmoAct2-So101
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/LingBot-MolmoAct2-So101
 - Modelo base: https://huggingface.co/robbyant/lingbot-vla-v2-6b
 - Seguimiento del entrenamiento (W&B): https://forge.coreweave.com/wandb/lmh_proj/lingbot-vla2-so100/runs/0621cf5bff421c2b
 - Estadisticas de normalizacion: `finetune_assets/norm_stats.json` (incluido en el repositorio)

@@ -4,7 +4,7 @@
 
 El repositorio `FronkonGames/LocalAI` aloja una distribución del proyecto LocalAI, un motor de inferencia de IA open source diseñado para ejecutar modelos de lenguaje, visión, voz e imagen en cualquier hardware, incluidos equipos sin GPU. No se trata de un modelo de IA en sí, sino de una plataforma que actúa como sustituto local de la API de OpenAI, permitiendo desplegar y servir modelos de diversas arquitecturas mediante una interfaz REST compatible.
 
-Desarrollado por la comunidad liderada por Ettore Di Giacinto (mudler), LocalAI destaca por su capacidad de funcionar en hardware de consumo, sin necesidad de aceleradores gráficos, y por su compatibilidad con múltiples formatos de pesos, incluidos GGUF, GGML y safetensors. El repositorio en HuggingFace contiene los binarios y recursos del motor, con un tamaño de 17,8 GB, lo que sugiere que incluye modelos de ejemplo o pesos preintegrados.
+Desarrollado por la comunidad liderada por Ettore Di Giacinto (mudler), LocalAI destaca por su capacidad de funcionar en hardware de consumo, sin necesidad de aceleradores gráficos, y por su compatibilidad con múltiples formatos de pesos, incluidos GGUF, GGML y safetensors. El repositorio en Hugging Face contiene los binarios y recursos del motor, con un tamaño de 17,8 GB, lo que sugiere que incluye modelos de ejemplo o pesos preintegrados.
 
 La relevancia de este proyecto radica en la creciente demanda de soluciones de IA privadas y locales, donde los datos no salen del entorno del usuario. LocalAI ofrece una alternativa viable a los servicios en la nube, con soporte para inferencia de LLMs, generación de imágenes y audio, todo ello mediante una API estándar que facilita la migración desde soluciones propietarias.
 
@@ -79,11 +79,11 @@ LocalAI se distingue por su soporte multimodal (vision, audio, imagen) y su API 
 - La compatibilidad con ciertos modelos puede requerir compilacion adicional o backends especificos.
 - La licencia MIT cubre el motor, pero los modelos cargados tienen sus propias licencias que deben respetarse.
 - No se garantiza la paridad exacta de comportamiento con la API de OpenAI en todos los endpoints.
-- El repositorio en HuggingFace no contiene documentacion detallada; se recomienda consultar la documentacion oficial en localai.io.
+- El repositorio en Hugging Face no contiene documentacion detallada; se recomienda consultar la documentacion oficial en localai.io.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FronkonGames/LocalAI
+- Repositorio en Hugging Face: https://huggingface.co/FronkonGames/LocalAI
 - Sitio web oficial: https://localai.io/
 - Repositorio en GitHub: https://github.com/mudler/LocalAI
 - Documentacion de inicio rapido: https://localai.io/docs/basics/getting_started/

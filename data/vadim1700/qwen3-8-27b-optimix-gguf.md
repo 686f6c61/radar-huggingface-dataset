@@ -6,7 +6,7 @@ Qwen3.8-27B-OptiMix-GGUF es una cuantizacion en formato GGUF del modelo Qwen/Qwe
 
 La aportacion tecnica principal no es el modelo en si, sino la mezcla de tipos de cuantizacion por tensor: se usan exclusivamente tipos con kernels rapidos en Metal (IQ4_XS, IQ3_S, Q6_K, Q4_K) y se evita deliberadamente q3_K porque en un M4 sus lecturas mat-vec rondan los 50 GB/s frente a los ~90 GB/s de q4_K, de modo que un modelo q3_K mas pequeno resulta mas lento. El autor reporta 12,8 GiB de pesos con una perplexity en wikitext-2 de 6,302, frente a 6,337 de un Q3_K_M de 12,4 GiB.
 
-El interes practico es acotado pero claro: es una pieza de ingenieria de inferencia local reproducible (la receta `llama-quantize` completa esta en la model card) con mediciones de velocidad y calidad publicadas, algo poco habitual en cuantizaciones de autor individual. Ahora bien, el repositorio tiene 0 descargas y 0 likes, y los metadatos de HuggingFace presentan inconsistencias de tamano y de numero de parametros que conviene verificar antes de usarlo en produccion.
+El interes practico es acotado pero claro: es una pieza de ingenieria de inferencia local reproducible (la receta `llama-quantize` completa esta en la model card) con mediciones de velocidad y calidad publicadas, algo poco habitual en cuantizaciones de autor individual. Ahora bien, el repositorio tiene 0 descargas y 0 likes, y los metadatos de Hugging Face presentan inconsistencias de tamano y de numero de parametros que conviene verificar antes de usarlo en produccion.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El interes practico es acotado pero claro: es una pieza de ingenieria de inferen
 | Tipos de cuantizacion | GGUF mixta por tensor, ~4,03 bpw: IQ4_XS en proyecciones de atencion y atencion lineal, `attn_output` y `ffn_down`; IQ3_S en `ffn_gate` y `ffn_up`; Q6_K en la cabeza de salida; Q4_K en los embeddings de tokens. Cabeza MTP independiente en Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp). El repo declara 1,4 GB de tamano en HuggingFace, frente a los 12,8 GiB del fichero principal segun la model card; discrepancia sin resolver |
+| Formato de pesos | GGUF (llama.cpp). El repo declara 1,4 GB de tamano en Hugging Face, frente a los 12,8 GiB del fichero principal segun la model card; discrepancia sin resolver |
 
 Ficheros del repositorio:
 
@@ -122,7 +122,7 @@ Frente a Q4_K_M, OptiMix ocupa 4,9 GiB menos a costa de 0,095 puntos de perplexi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vadim1700/Qwen3.8-27B-OptiMix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Vadim1700/Qwen3.8-27B-OptiMix-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de llama.cpp con los kernels y la metodologia de medicion: https://github.com/Vadim170/llama.cpp-m4-qwen35 (ver `FORK.md`)
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KairosDirectorate es un repositorio publicado en HuggingFace por el usuario Krantzweb que, según su propia model card, corresponde a una supuesta versión **DeepSeek-V4.1-Flash**: un modelo multimodal de tipo Mixture-of-Experts (MoE) diseñado para contextos de hasta un millón de tokens y orientado a cargas de trabajo agénticas intensivas en entrada. La model card describe una arquitectura Causal Encoder-Decoder (CED) de 40 capas, con 552B de parámetros en el backbone, memoria condicional Engram de 196B parámetros y decodificación especulativa DSpark. El repositorio declara 763.205.315.794 parámetros totales según los ficheros safetensors y un tamaño de 510,3 GB.
+KairosDirectorate es un repositorio publicado en Hugging Face por el usuario Krantzweb que, según su propia model card, corresponde a una supuesta versión **DeepSeek-V4.1-Flash**: un modelo multimodal de tipo Mixture-of-Experts (MoE) diseñado para contextos de hasta un millón de tokens y orientado a cargas de trabajo agénticas intensivas en entrada. La model card describe una arquitectura Causal Encoder-Decoder (CED) de 40 capas, con 552B de parámetros en el backbone, memoria condicional Engram de 196B parámetros y decodificación especulativa DSpark. El repositorio declara 763.205.315.794 parámetros totales según los ficheros safetensors y un tamaño de 510,3 GB.
 
 Existe una **discrepancia crítica de autoría**: el identificador del repositorio es `Krantzweb/KairosDirectorate`, pero el contenido se atribuye a DeepSeek AI e incluye enlaces, logotipos y badges de dicha organización. No se trata del repositorio oficial `deepseek-ai/DeepSeek-V4.1-Flash`, sino de una publicación de un tercero con cero descargas y cero likes en el momento de redactar esta ficha. La licencia declarada es MIT.
 
@@ -36,7 +36,7 @@ El preentrenamiento se realizó desde cero sobre un corpus multimodal de 45T tok
 - Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible, aunque la orientación agéntica y el tag `endpoints_compatible` lo sugieren.
 - Capacidades multilingües: no disponible.
 - Capacidades de código y matemáticas: no detalladas en la información disponible.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio está preparado para su despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio está preparado para su despliegue en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -100,9 +100,9 @@ No se dispone de datos suficientes (parámetros, contexto o rendimiento) de los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Krantzweb/KairosDirectorate
+- Repositorio en Hugging Face: https://huggingface.co/Krantzweb/KairosDirectorate
 - Informe técnico referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Página de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Twitter/X de DeepSeek: https://twitter.com/deepseek_ai

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-latifi-Summarizer es un modelo publicado en HuggingFace por el usuario mohammadlatifipor bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades concretas. El nombre sugiere un proposito de resumen automatico (summarization), pero no hay documentacion tecnica que lo confirme ni que detalle como se ha construido.
+latifi-Summarizer es un modelo publicado en Hugging Face por el usuario mohammadlatifipor bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades concretas. El nombre sugiere un proposito de resumen automatico (summarization), pero no hay documentacion tecnica que lo confirme ni que detalle como se ha construido.
 
-El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin adopcion conocida. No se dispone de informacion sobre el pipeline de HuggingFace asociado, los idiomas soportados ni los formatos de pesos disponibles.
+El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin adopcion conocida. No se dispone de informacion sobre el pipeline de Hugging Face asociado, los idiomas soportados ni los formatos de pesos disponibles.
 
 Dado que la ficha se elabora exclusivamente a partir de la informacion publica disponible, la mayoria de los apartados tecnicos se marcaran como "no disponible". Se recomienda precaucion a cualquiera que considere su uso en produccion sin una evaluacion previa del contenido real del repositorio.
 
@@ -40,8 +40,8 @@ Tampoco hay datos sobre innovaciones tecnicas, estrategias de decodificacion, to
 - Resumen de documentos: si el modelo cumple lo que sugiere su nombre, podria emplearse para condensar articulos o informes, pero no hay documentacion que confirme su calidad ni su comportamiento en este escenario.
 - Evaluacion comparativa interna: puede utilizarse como referencia en pruebas de resumen frente a modelos establecidos, siempre que se valide previamente su funcionamiento real.
 - Prototipado experimental: adecuado para experimentos academicos que requieran un modelo ligero con licencia permisiva, sujeto a inspeccion del repositorio.
-- Investigacion sobre modelos de resumen de autor unico: util como objeto de estudio en analisis de publicaciones de HuggingFace con documentacion minima.
-- Pruebas de integracion en pipelines de HuggingFace: sirve para validar flujos de descarga y carga de modelos con licencia MIT.
+- Investigacion sobre modelos de resumen de autor unico: util como objeto de estudio en analisis de publicaciones de Hugging Face con documentacion minima.
+- Pruebas de integracion en pipelines de Hugging Face: sirve para validar flujos de descarga y carga de modelos con licencia MIT.
 - No se recomienda su uso en produccion sin una evaluacion exhaustiva previa, dado que no existe informacion verificable sobre su rendimiento, sesgos o limitaciones.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohammadlatifipor/latifi-Summarizer
+- Repositorio en Hugging Face: https://huggingface.co/mohammadlatifipor/latifi-Summarizer
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la informacion disponible.

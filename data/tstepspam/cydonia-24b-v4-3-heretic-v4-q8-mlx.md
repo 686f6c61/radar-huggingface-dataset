@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tstepspam/Cydonia-24B-v4.3-heretic-v4-Q8-MLX (este) | 23,6 B | no disponible | 8-bit MLX | no disponible | HuggingFace, 0 descargas |
-| coder3101/Cydonia-24B-v4.3-heretic-v4 | no disponible | no disponible | pesos completos | no disponible | HuggingFace (modelo base directo) |
-| coder3101/Cydonia-24B-v4.3-heretic | no disponible | no disponible | pesos completos | no disponible | HuggingFace (version previa de la abliteration) |
-| TheDrummer/Cydonia-24B-v4.3 | no disponible | no disponible | pesos completos | no disponible | HuggingFace (modelo original, con alineamiento) |
+| tstepspam/Cydonia-24B-v4.3-heretic-v4-Q8-MLX (este) | 23,6 B | no disponible | 8-bit MLX | no disponible | Hugging Face, 0 descargas |
+| coder3101/Cydonia-24B-v4.3-heretic-v4 | no disponible | no disponible | pesos completos | no disponible | Hugging Face (modelo base directo) |
+| coder3101/Cydonia-24B-v4.3-heretic | no disponible | no disponible | pesos completos | no disponible | Hugging Face (version previa de la abliteration) |
+| TheDrummer/Cydonia-24B-v4.3 | no disponible | no disponible | pesos completos | no disponible | Hugging Face (modelo original, con alineamiento) |
 
 No se dispone de datos de benchmarks ni de contexto para establecer una comparacion cuantitativa de rendimiento entre estas variantes; la unica diferencia documentada es la aplicacion de la abliteration con Heretic v1.2.0 y MPOA en las versiones "heretic".
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de contexto para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tstepspam/Cydonia-24B-v4.3-heretic-v4-Q8-MLX
+- Modelo en Hugging Face: https://huggingface.co/tstepspam/Cydonia-24B-v4.3-heretic-v4-Q8-MLX
 - Modelo base directo: https://huggingface.co/coder3101/Cydonia-24B-v4.3-heretic-v4
 - Version previa de la abliteration: https://huggingface.co/coder3101/Cydonia-24B-v4.3-heretic
 - Modelo original (TheDrummer): https://huggingface.co/TheDrummer/Cydonia-24B-v4.3

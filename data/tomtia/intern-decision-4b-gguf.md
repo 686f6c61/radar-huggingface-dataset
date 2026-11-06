@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tomtia/Intern-Decision-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tomtia/Intern-Decision-4B-GGUF
 - Modelo base: https://huggingface.co/internlm/Intern-Decision-4B
 - Modelo de origen: https://huggingface.co/Qwen/Qwen3.5-4B
 - Conversión GGUF de referencia: https://huggingface.co/bombdefuser-124/Intern-Decision-4B-GGUF/tree/0b1dc0b4a5b7eed290f662644237f5ee3694f260

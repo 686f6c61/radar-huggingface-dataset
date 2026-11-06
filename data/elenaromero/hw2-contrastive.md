@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elenaromero/hw2-contrastive` es un repositorio de HuggingFace que contiene una implementacion funcional y minima de una arquitectura denominada Mae orientada a aprendizaje contrastivo (tags `mae`, `contrastive`, `pytorch`, `safetensors`), publicada por el usuario elenaromero bajo licencia Apache-2.0. No se trata de un modelo de lenguaje entrenado ni de un checkpoint con resultados validados: la propia model card lo describe como una implementacion de trabajo con configuracion "tiny", cuyo unico checkpoint (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado con metricas de referencia.
+`elenaromero/hw2-contrastive` es un repositorio de Hugging Face que contiene una implementacion funcional y minima de una arquitectura denominada Mae orientada a aprendizaje contrastivo (tags `mae`, `contrastive`, `pytorch`, `safetensors`), publicada por el usuario elenaromero bajo licencia Apache-2.0. No se trata de un modelo de lenguaje entrenado ni de un checkpoint con resultados validados: la propia model card lo describe como una implementacion de trabajo con configuracion "tiny", cuyo unico checkpoint (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado con metricas de referencia.
 
 El modelo tiene 33.088 parametros (aproximadamente 33.000, dato real extraido de los pesos en safetensors), lo que lo situa en un orden de magnitud propio de un ejemplo didactico o de un banco de pruebas de codigo, no de un sistema desplegable en produccion. La arquitectura declarada incluye atencion dilatada, fusion con compuertas (gated fusion), activacion swish y normalizacion por lotes (batchnorm); la receta de experimento por defecto usa el optimizador lamb con un esquema de calentamiento lineal (linear warmup).
 
@@ -75,12 +75,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables, la m
 - No ha sido auditado en cuanto a robustez, equidad (fairness) ni transferencia de dominio.
 - No se declara ningun resultado de benchmark ni metrica de evaluacion; cualquier cifra que se atribuya al modelo seria infundada.
 - No hay metadatos de idioma: no puede asumirse soporte multilingue ni de ningun idioma concreto.
-- Al ser una implementacion personalizada, las APIs automaticas de carga de modelos de HuggingFace requieren un adaptador explicito; no cabe esperar un funcionamiento directo con `AutoModel`.
+- Al ser una implementacion personalizada, las APIs automaticas de carga de modelos de Hugging Face requieren un adaptador explicito; no cabe esperar un funcionamiento directo con `AutoModel`.
 - Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion, siempre que se conserven los avisos de licencia y se indiquen los cambios. La propia model card recomienda revisar por separado los terminos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - El repositorio presenta un tamano de 0,0 GB, 0 descargas y 0 likes, lo que indica ausencia de validacion por parte de la comunidad y un riesgo alto de que el codigo no haya sido probado fuera del entorno del autor.
 - El contenido de la model card es escueto y no incluye detalles de configuracion (capas, dimensiones, cabezas, funcion de perdida), por lo que la reproducibilidad depende de archivos auxiliares no verificados aqui.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elenaromero/hw2-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/elenaromero/hw2-contrastive
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos corresponden a sitios sin relacion con el modelo.

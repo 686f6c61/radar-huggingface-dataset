@@ -106,7 +106,7 @@ Los unicos datos publicados en la informacion disponible son los de la model car
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vinnj/Ling-3.0-flash-TypeScript-Edition-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vinnj/Ling-3.0-flash-TypeScript-Edition-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Release Kraits v0.6.16: https://github.com/1picassoai/kraits/releases/tag/v0.6.16
 - Bundle macOS arm64: https://github.com/1picassoai/kraits/releases/download/v0.6.16/kraits-v0.6.16-macos-arm64.tar.gz

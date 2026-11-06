@@ -87,7 +87,7 @@ No se dispone de comparaciones con otros modelos de la misma categoría (por eje
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lexsi/gemma-4-31b-cast-lexsi-hi-cdelta-theta-sexual-2026-09-03
+- Repositorio Hugging Face: https://huggingface.co/Lexsi/gemma-4-31b-cast-lexsi-hi-cdelta-theta-sexual-2026-09-03
 - Artefacto inglés compañero (mencionado): https://huggingface.co/Lexsi/gemma-4-31b-cast-lexsi-cdelta-theta-sexual-k2.8 (enlace inferido, no verificado en la información proporcionada)
 
 No se encontraron otros enlaces relevantes en la búsqueda web (los resultados obtenidos correspondían a foros ajenos al tema).

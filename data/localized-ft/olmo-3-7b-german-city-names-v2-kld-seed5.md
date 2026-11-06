@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `localized-ft/OLMo-3-7B-german-city-names-v2-kld-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. Aunque el nombre sugiere una especialización en nombres de ciudades alemanas, la model card declara únicamente el idioma inglés (`en`) y no proporciona detalles sobre el propósito o el dataset de entrenamiento. El repositorio ocupa 14.6 GB, lo que es consistente con un modelo de aproximadamente 7 mil millones de parámetros en precisión fp16/bf16, aunque el dato de parámetros totales reportado en HuggingFace (528.384) parece erróneo o corresponde a un archivo parcial.
+El modelo `localized-ft/OLMo-3-7B-german-city-names-v2-kld-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. Aunque el nombre sugiere una especialización en nombres de ciudades alemanas, la model card declara únicamente el idioma inglés (`en`) y no proporciona detalles sobre el propósito o el dataset de entrenamiento. El repositorio ocupa 14.6 GB, lo que es consistente con un modelo de aproximadamente 7 mil millones de parámetros en precisión fp16/bf16, aunque el dato de parámetros totales reportado en Hugging Face (528.384) parece erróneo o corresponde a un archivo parcial.
 
-Este modelo es relevante como ejemplo de fine-tuning eficiente utilizando la librería Unsloth y el framework TRL de HuggingFace, pero carece de documentación técnica detallada. Al estar basado en Olmo-3-7B-Instruct, hereda las capacidades generales de generación de texto instructivo de dicho modelo, aunque no se especifican mejoras concretas. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+Este modelo es relevante como ejemplo de fine-tuning eficiente utilizando la librería Unsloth y el framework TRL de Hugging Face, pero carece de documentación técnica detallada. Al estar basado en Olmo-3-7B-Instruct, hereda las capacidades generales de generación de texto instructivo de dicho modelo, aunque no se especifican mejoras concretas. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Este modelo es relevante como ejemplo de fine-tuning eficiente utilizando la lib
 
 ## Arquitectura y entrenamiento
 
-La model card no ofrece información sobre la arquitectura interna, los datos de entrenamiento ni el proceso de ajuste. Se sabe que el modelo base es `unsloth/Olmo-3-7B-Instruct`, un modelo de la familia OLMo de AI2, que emplea una arquitectura transformer decoder-only. El fine-tuning se realizó con la librería Unsloth (que acelera el entrenamiento) y el framework TRL de HuggingFace, según se indica en la descripción. No se mencionan técnicas como RLHF, DPO ni innovaciones específicas. El nombre del modelo sugiere un entrenamiento sobre nombres de ciudades alemanas, pero no hay confirmación en la documentación.
+La model card no ofrece información sobre la arquitectura interna, los datos de entrenamiento ni el proceso de ajuste. Se sabe que el modelo base es `unsloth/Olmo-3-7B-Instruct`, un modelo de la familia OLMo de AI2, que emplea una arquitectura transformer decoder-only. El fine-tuning se realizó con la librería Unsloth (que acelera el entrenamiento) y el framework TRL de Hugging Face, según se indica en la descripción. No se mencionan técnicas como RLHF, DPO ni innovaciones específicas. El nombre del modelo sugiere un entrenamiento sobre nombres de ciudades alemanas, pero no hay confirmación en la documentación.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos. El modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-v2-kld-seed5
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-v2-kld-seed5
 - Modelo relacionado (primera parte): https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-first-third-v2-sft-seed5
 - Modelo relacionado (segunda parte): https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed5
 - Página de Olmo de AI2: https://allenai.org/olmo

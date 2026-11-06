@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed43` es un checkpoint publicado en HuggingFace por el usuario maxbhartman. El propio identificador del repositorio describe un experimento de ablacion: eliminacion de anclas (`anchor-removal`), evaluacion sobre MMLU (`mmlu`), temperatura de muestreo 0,6 (`tau0.6`), un parametro `k=25` asociado a atencion (`attention-k25`) y una semilla concreta (`seed43`). Se trata, por tanto, de un artefacto de investigacion reproducible mas que de un modelo de proposito general con ficha tecnica publicada.
+`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed43` es un checkpoint publicado en Hugging Face por el usuario maxbhartman. El propio identificador del repositorio describe un experimento de ablacion: eliminacion de anclas (`anchor-removal`), evaluacion sobre MMLU (`mmlu`), temperatura de muestreo 0,6 (`tau0.6`), un parametro `k=25` asociado a atencion (`attention-k25`) y una semilla concreta (`seed43`). Se trata, por tanto, de un artefacto de investigacion reproducible mas que de un modelo de proposito general con ficha tecnica publicada.
 
-La informacion disponible en HuggingFace es minima: etiquetas `pytorch`, `llama` y `region:us`, un tamano de repositorio de 6,4 GB, 14 descargas y 0 likes. No hay model card con detalles de arquitectura, datos de entrenamiento, licencia ni idiomas declarados. La fecha de creacion registrada es 2026-09-14 y la de ultima actualizacion 2026-09-14, lo que sugiere una publicacion unitaria sin mantenimiento posterior.
+La informacion disponible en Hugging Face es minima: etiquetas `pytorch`, `llama` y `region:us`, un tamano de repositorio de 6,4 GB, 14 descargas y 0 likes. No hay model card con detalles de arquitectura, datos de entrenamiento, licencia ni idiomas declarados. La fecha de creacion registrada es 2026-09-14 y la de ultima actualizacion 2026-09-14, lo que sugiere una publicacion unitaria sin mantenimiento posterior.
 
 La relevancia de este checkpoint es acotada y de caracter metodologico: sirve para reproducir o auditar una ablacion concreta sobre un modelo de la familia Llama, no para desplegarse en produccion. Cualquier evaluacion de sus capacidades reales exige descargar los pesos, inspeccionar la configuracion y ejecutar las pruebas correspondientes, ya que el autor no ha documentado el procedimiento ni los resultados.
 
@@ -28,7 +28,7 @@ La relevancia de este checkpoint es acotada y de caracter metodologico: sirve pa
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card. La unica pista es la etiqueta `llama`, que en HuggingFace se aplica a checkpoints derivados de la familia Llama o compatibles con su implementacion. El sufijo `attention-k25` del identificador sugiere que el experimento modifica un subconjunto de 25 elementos relacionados con la atencion (cabezas, capas o anclas), pero no hay documentacion que precise que se interviene exactamente ni como.
+No se ha publicado informacion sobre la arquitectura en la model card. La unica pista es la etiqueta `llama`, que en Hugging Face se aplica a checkpoints derivados de la familia Llama o compatibles con su implementacion. El sufijo `attention-k25` del identificador sugiere que el experimento modifica un subconjunto de 25 elementos relacionados con la atencion (cabezas, capas o anclas), pero no hay documentacion que precise que se interviene exactamente ni como.
 
 Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento. El nombre incluye `mmlu` y `tau0.6`, lo que indica que MMLU se empleo como conjunto de evaluacion y que la temperatura 0,6 forma parte de la configuracion del experimento; `seed43` identifica la semilla, coherente con un protocolo de reproducibilidad. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, SSM ni arquitecturas hibridas).
 
@@ -77,7 +77,7 @@ No es posible establecer una comparativa rigurosa porque se desconoce el modelo 
 | Longitud de contexto | no disponible | no disponible | variable |
 | Rendimiento (MMLU) | no publicado | no publicado en esta informacion | habitualmente documentado |
 | Licencia | no disponible | no disponible | habitualmente declarada |
-| Disponibilidad | publico en HuggingFace, 14 descargas | publico | publico |
+| Disponibilidad | publico en Hugging Face, 14 descargas | publico | publico |
 | Documentacion | inexistente (sin model card) | no aplica | variable |
 
 Cualquier afirmacion adicional sobre equivalencia con otros modelos seria especulativa.
@@ -96,7 +96,7 @@ Cualquier afirmacion adicional sobre equivalencia con otros modelos seria especu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed43
-- Perfil del autor en HuggingFace: https://huggingface.co/maxbhartman
+- Repositorio en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed43
+- Perfil del autor en Hugging Face: https://huggingface.co/maxbhartman
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - Resultados de busqueda web: no contienen referencias utiles al modelo (unicamente enlaces de Google Earth y Google Maps).

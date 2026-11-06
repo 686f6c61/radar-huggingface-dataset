@@ -94,7 +94,7 @@ El modelo analizado comparte arquitectura (GPT-NeoX) y orden de magnitud de par√
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_simpleavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_simpleavg_merge
 - mergekit (herramienta de merge): https://github.com/cg123/mergekit
 - Paper del m√©todo Linear (model soups): https://arxiv.org/abs/2203.05482
 - Repositorio del modelo: no disponible

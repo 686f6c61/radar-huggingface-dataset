@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hxxiang/opticaldna-rice-2048
+- Hugging Face: https://huggingface.co/hxxiang/opticaldna-rice-2048
 - GitHub: https://github.com/HongxinXiang/OpticalDNA
 - Paper (arXiv): https://arxiv.org/abs/2602.02014
 - Página del proyecto: https://hongxinxiang.github.io/projects/OpticalDNA/

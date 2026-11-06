@@ -11,7 +11,7 @@ Esta versión GGUF aplica cuantización W4A16 NVFP4 a los pesos de los expertos 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | MoE hibrida con Gated DeltaNet (GDN) y Qwen Sparse Attention (QSA) |
-| Parametros totales | 125 000 000 000 (125B) segun documentacion oficial; el dato de HuggingFace (448 931 056) parece incorrecto |
+| Parametros totales | 125 000 000 000 (125B) segun documentacion oficial; el dato de Hugging Face (448 931 056) parece incorrecto |
 | Parametros activos | 6 000 000 000 (6B) por token |
 | Longitud de contexto | 262 144 tokens |
 | Tipos de cuantizacion | W4A16 NVFP4 para expertos enrutados; BF16/F32 para el resto de tensores |
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Limitaciones y advertencias
 
-- El dato de parametros en HuggingFace (448 931 056) es inconsistente con la documentacion oficial (125B); probablemente se trata de un error en la ficha del repositorio.
+- El dato de parametros en Hugging Face (448 931 056) es inconsistente con la documentacion oficial (125B); probablemente se trata de un error en la ficha del repositorio.
 - La licencia Qwen Community 1.0 impone restricciones de uso comercial; es necesario revisar los terminos completos antes de desplegar en produccion.
 - El modelo requiere una build especifica de llama.cpp con soporte para Qwen4Exp y NVFP4; no funcionara con versiones estandar.
 - No incluye los pesos de MTP (Multi-Token Prediction), lo que puede afectar a la velocidad de generacion en ciertos escenarios.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4-GGUF
 - Modelo base cuantizado: https://huggingface.co/axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4
 - Modelo oficial Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8

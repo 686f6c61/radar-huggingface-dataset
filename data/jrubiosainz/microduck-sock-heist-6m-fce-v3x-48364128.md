@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck Sock Heist - derived FCE v3x-48364128 es una política de control robótico en formato ONNX publicada por el usuario jrubiosainz en HuggingFace, concebida exclusivamente como entrada para la competición de simulación Microduck Arena, en la prueba "6 m Sock Heist". No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto de inferencia de 1.209.013 bytes que combina una red de respaldo heredada con una tabla de búsqueda de observaciones y acciones, y que produce comandos de control de bajo nivel para un robot simulado.
+Microduck Sock Heist - derived FCE v3x-48364128 es una política de control robótico en formato ONNX publicada por el usuario jrubiosainz en Hugging Face, concebida exclusivamente como entrada para la competición de simulación Microduck Arena, en la prueba "6 m Sock Heist". No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto de inferencia de 1.209.013 bytes que combina una red de respaldo heredada con una tabla de búsqueda de observaciones y acciones, y que produce comandos de control de bajo nivel para un robot simulado.
 
 El modelo deriva por fine-tuning de rumezhak/microduck-sock-heist-composite-v3 (revisión 065056e8a8ad8e78cda38110f7717828e0d30475). La modificación introducida por jrubiosainz el 4 de noviembre de 2026 consiste en una reoptimización con CMA-ES separable de las últimas llamadas de control antes de la finalización, una búsqueda por semilla, aplicada únicamente a la semilla oficial 1. Solo cambian las filas finales de las tablas L_obs y L_act y el aviso de modificación añadido; el grafo, la red de respaldo, la máscara, la tolerancia y las formas de los tensores permanecen intactos.
 
@@ -72,9 +72,9 @@ Media: 4,895 s; total: 4895 ticks; base directa: 4896 ticks. No se han publicado
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-sock-heist-6m-fce-v3x-48364128 | no disponible (ONNX 1.209.013 bytes) | no aplica | 4895 ticks totales, media 4,895 s en 5 semillas | no disponible (Apache-2.0 parcial) | HuggingFace, 0 descargas, 0 likes |
-| rumezhak/microduck-sock-heist-composite-v3 | no disponible | no aplica | 4896 ticks totales en las mismas 5 semillas | no disponible | HuggingFace (base directa) |
-| a1rb4Ck/microduck-heist (94cd2cfe) | no disponible | no aplica | no disponible | Apache-2.0 | HuggingFace (origen del layout y lookup) |
+| jrubiosainz/microduck-sock-heist-6m-fce-v3x-48364128 | no disponible (ONNX 1.209.013 bytes) | no aplica | 4895 ticks totales, media 4,895 s en 5 semillas | no disponible (Apache-2.0 parcial) | Hugging Face, 0 descargas, 0 likes |
+| rumezhak/microduck-sock-heist-composite-v3 | no disponible | no aplica | 4896 ticks totales en las mismas 5 semillas | no disponible | Hugging Face (base directa) |
+| a1rb4Ck/microduck-heist (94cd2cfe) | no disponible | no aplica | no disponible | Apache-2.0 | Hugging Face (origen del layout y lookup) |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ Media: 4,895 s; total: 4895 ticks; base directa: 4896 ticks. No se han publicado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-fce-v3x-48364128
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-fce-v3x-48364128
 - Modelo base: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v3/tree/065056e8a8ad8e78cda38110f7717828e0d30475
 - Origen del layout y mecanismo de lookup: a1rb4Ck/microduck-heist, revisión 94cd2cfeb57a4ece561a3d320e233f442238cb81 (Apache-2.0)
 - Microduck y Microduck Arena: Pollen Robotics (sin URL específica en la información disponible)

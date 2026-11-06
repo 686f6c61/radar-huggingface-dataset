@@ -23,7 +23,7 @@ Su relevancia ahora es limitada y hay que enmarcarla con cautela: se trata de un
 | Tipo de modelo | Modelo de decisión no generativo (tags: `decision-model`, `choice`, `score`, `noul`) |
 | Modelo base | `openbmb/MiniCPM5-2B-Midtrain` |
 | Librería | `peft` |
-| Tamaño del repositorio | 0.0 GB (reportado por HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (reportado por Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-10-24 / 2026-10-24 |
 | Pipeline declarado | No disponible |
@@ -78,8 +78,8 @@ No se dispone de información sobre adaptadores de decisión públicos directame
 
 | Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Klyra-Decision-2B-V2-Preview | ~2B (backbone) + adaptador LoRA (no disponible el recuento) | No disponible | Decisión no generativa (choice/score/noul) | No disponible | Repositorio HuggingFace, 0 descargas |
-| openbmb/MiniCPM5-2B-Midtrain | ~2B | No disponible en la información proporcionada | Generación de texto (checkpoint de midtrain) | No disponible en la información proporcionada | Modelo base público en HuggingFace |
+| Klyra-Decision-2B-V2-Preview | ~2B (backbone) + adaptador LoRA (no disponible el recuento) | No disponible | Decisión no generativa (choice/score/noul) | No disponible | Repositorio Hugging Face, 0 descargas |
+| openbmb/MiniCPM5-2B-Midtrain | ~2B | No disponible en la información proporcionada | Generación de texto (checkpoint de midtrain) | No disponible en la información proporcionada | Modelo base público en Hugging Face |
 | Otros modelos de decisión o *reward models* de ~2B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de información sobre adaptadores de decisión públicos directame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jahirrrr/Klyra-Decision-2B-V2-Preview
+- Modelo en Hugging Face: https://huggingface.co/Jahirrrr/Klyra-Decision-2B-V2-Preview
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-Midtrain
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas genéricas de Instagram (https://www.instagram.com/, https://help.instagram.com/, https://about.instagram.com/) sin relación con el artefacto.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

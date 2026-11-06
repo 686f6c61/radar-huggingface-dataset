@@ -71,10 +71,10 @@ Los datos de los modelos comparables provienen de sus model cards públicas y no
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CooLSiwon/Qwen3-0.6B-JSON-SFT-GRPO | 596 M | No disponible (base Qwen3-0.6B: 32 768) | JSON estructurado tras SFT + GRPO | Apache 2.0 | HuggingFace, 0 descargas |
+| CooLSiwon/Qwen3-0.6B-JSON-SFT-GRPO | 596 M | No disponible (base Qwen3-0.6B: 32 768) | JSON estructurado tras SFT + GRPO | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen/Qwen3-0.6B | 0,6 B | 32 768 tokens nativos | Modelo base generalista | Apache 2.0 | Ampliamente desplegado |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Instrucciones generalistas | Llama 3.2 Community License | HuggingFace, muy extendido |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8 192 tokens | Instrucciones generalistas | Apache 2.0 | HuggingFace |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Instrucciones generalistas | Llama 3.2 Community License | Hugging Face, muy extendido |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8 192 tokens | Instrucciones generalistas | Apache 2.0 | Hugging Face |
 
 Frente al Qwen3-0.6B original, este ajuste sacrifica presumiblemente generalidad a cambio de adherencia al formato JSON, aunque no hay métricas que cuantifiquen ese intercambio. Frente a Llama-3.2-1B-Instruct y SmolLM2-1.7B-Instruct, ofrece la mitad o un tercio de parámetros, lo que se traduce en menor huella de memoria, a costa de capacidad de razonamiento y de contexto útil si finalmente hereda los 32K del base.
 
@@ -91,7 +91,7 @@ Frente al Qwen3-0.6B original, este ajuste sacrifica presumiblemente generalidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CooLSiwon/Qwen3-0.6B-JSON-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/CooLSiwon/Qwen3-0.6B-JSON-SFT-GRPO
 - Modelo base del ajuste: https://huggingface.co/CooLSiwon/Qwen3-0.6B-JSON-SFT
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
 - Librería TRL de Hugging Face (citada por el autor): https://github.com/huggingface/trl

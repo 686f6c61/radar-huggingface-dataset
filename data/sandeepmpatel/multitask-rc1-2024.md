@@ -67,5 +67,5 @@ No disponible. El checkpoint no es comparable con modelos de lenguaje o vision e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sandeepmpatel/multitask-rc1-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/sandeepmpatel
+- Hugging Face: https://huggingface.co/sandeepmpatel/multitask-rc1-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/sandeepmpatel

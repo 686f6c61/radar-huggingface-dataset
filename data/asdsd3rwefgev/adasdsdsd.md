@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ASDSD3RWEFGEV/adasdsdsd es un repositorio alojado en HuggingFace por el usuario ASDSD3RWEFGEV. La model card pública se limita a declarar la licencia Apache 2.0; no incluye descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio no tiene descargas ni "likes" en el momento de la consulta, lo que sugiere que se trata de un artefacto recién creado o de carácter experimental.
+ASDSD3RWEFGEV/adasdsdsd es un repositorio alojado en Hugging Face por el usuario ASDSD3RWEFGEV. La model card pública se limita a declarar la licencia Apache 2.0; no incluye descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio no tiene descargas ni "likes" en el momento de la consulta, lo que sugiere que se trata de un artefacto recién creado o de carácter experimental.
 
-No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. Tampoco se ha publicado ningún resultado de benchmarks ni documentación técnica adicional. El pipeline declarado en HuggingFace es "no disponible", por lo que no se puede confirmar si el modelo está pensado para generación de texto, visión, audio u otra tarea.
+No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. Tampoco se ha publicado ningún resultado de benchmarks ni documentación técnica adicional. El pipeline declarado en Hugging Face es "no disponible", por lo que no se puede confirmar si el modelo está pensado para generación de texto, visión, audio u otra tarea.
 
 Dada la ausencia de especificaciones, esta ficha se limita a reflejar los metadatos disponibles y a señalar explícitamente los datos que faltan. Cualquier evaluación de idoneidad para producción requeriría contactar con el autor o inspeccionar directamente los archivos del repositorio.
 
@@ -38,7 +38,7 @@ No se ha publicado información sobre la arquitectura del modelo (transformer, M
 - Evaluación exploratoria: clonar el repositorio y revisar los archivos de pesos y configuración para determinar qué tipo de modelo contiene antes de plantear cualquier uso.
 - Investigación de licencias: el repositorio puede servir como ejemplo de publicación bajo Apache 2.0, pero sin documentación adicional no se puede recomendar su integración en flujos de trabajo.
 - Pruebas de carga en infraestructura propia: solo si tras inspeccionar los pesos se confirma que el modelo es funcional y tiene un tamaño manejable.
-- Auditoría de repositorios: útil como caso de estudio de publicaciones en HuggingFace sin model card sustantiva.
+- Auditoría de repositorios: útil como caso de estudio de publicaciones en Hugging Face sin model card sustantiva.
 - No se recomienda su uso en atención al cliente, generación de código, análisis documental, moderación de contenido ni ninguna otra aplicación en producción, al no existir información verificable sobre su comportamiento.
 - Cualquier caso de uso adicional queda condicionado a que el autor publique documentación técnica y resultados de evaluación.
 
@@ -70,5 +70,5 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni la tarea del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASDSD3RWEFGEV/adasdsdsd
+- Repositorio en Hugging Face: https://huggingface.co/ASDSD3RWEFGEV/adasdsdsd
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

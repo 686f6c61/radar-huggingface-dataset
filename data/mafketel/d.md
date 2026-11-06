@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Mafketel/d` es un modelo publicado en HuggingFace por el usuario Mafketel. La información disponible se limita a la licencia Apache 2.0 y a la fecha de creación indicada (2026-09-06). No se ha publicado ninguna model card con contenido técnico, ni documentación sobre arquitectura, tamaño, contexto o capacidades. Los resultados de búsqueda web asociados no contienen referencias al modelo, por lo que no es posible determinar qué problema resuelve ni por qué sería relevante en el momento actual. A día de hoy, no se dispone de datos suficientes para evaluar el modelo o compararlo con alternativas existentes.
+El repositorio `Mafketel/d` es un modelo publicado en Hugging Face por el usuario Mafketel. La información disponible se limita a la licencia Apache 2.0 y a la fecha de creación indicada (2026-09-06). No se ha publicado ninguna model card con contenido técnico, ni documentación sobre arquitectura, tamaño, contexto o capacidades. Los resultados de búsqueda web asociados no contienen referencias al modelo, por lo que no es posible determinar qué problema resuelve ni por qué sería relevante en el momento actual. A día de hoy, no se dispone de datos suficientes para evaluar el modelo o compararlo con alternativas existentes.
 
 ## Especificaciones tecnicas
 
@@ -59,5 +59,5 @@ No es posible realizar una comparativa con modelos similares. No se conoce la ca
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Mafketel/d](https://huggingface.co/Mafketel/d)
+- Hugging Face: [https://huggingface.co/Mafketel/d](https://huggingface.co/Mafketel/d)
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web.

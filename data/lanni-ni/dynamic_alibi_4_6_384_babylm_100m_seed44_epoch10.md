@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch10 es un modelo de generacion de texto basado en transformers publicado por el usuario Lanni-ni en HuggingFace. Su nombre sugiere que emplea una variante de ALiBi (Attention with Linear Biases) denominada "dynamic_alibi", posiblemente orientada a mejorar la extrapolacion de longitud de contexto durante el entrenamiento. El modelo presenta 45.694.080 parametros y un tamano de repositorio de 0,2 GB, lo que lo situa en la categoria de modelos de lenguaje pequenos.
+Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch10 es un modelo de generacion de texto basado en transformers publicado por el usuario Lanni-ni en Hugging Face. Su nombre sugiere que emplea una variante de ALiBi (Attention with Linear Biases) denominada "dynamic_alibi", posiblemente orientada a mejorar la extrapolacion de longitud de contexto durante el entrenamiento. El modelo presenta 45.694.080 parametros y un tamano de repositorio de 0,2 GB, lo que lo situa en la categoria de modelos de lenguaje pequenos.
 
 El corpus de entrenamiento parece estar relacionado con el proyecto BabyLM, segun el sufijo "babylm_100m" del identificador, aunque no se ha publicado informacion detallada sobre los datos ni el procedimiento de entrenamiento. La model card es un texto plantilla generado automaticamente, sin datos tecnicos ni de rendimiento, lo que limita considerablemente la evaluacion del modelo. El tag "arxiv:1910.09700" enlaza con el articulo de ALiBi original, y el autor cuenta con otros modelos experimentales similares, como dynamic_forgetting_4_6_384_babylm_100m y la variante epoch7 del mismo modelo.
 
@@ -41,7 +41,7 @@ Los datos de entrenamiento, el numero de tokens, la composicion del dataset y cu
 - Investigacion en extrapolacion de longitud: al estar etiquetado con dynamic_alibi, el modelo puede emplearse para analizar como se comporta la atencion con sesgos lineales dinamicos en secuencias de texto de longitud variable, comparandolo con implementaciones estaticas.
 - Estudio de arquitecturas de atencion: con solo 45,7 millones de parametros, resulta adecuado para inspeccionar y visualizar los patrones de atencion en un transformer pequeno, con fines educativos o de investigacion.
 - Pruebas de cuantizacion: el reducido tamano del modelo permite experimentar con distintas precisiones (FP16, int8, etc.) en entornos con recursos limitados, sin necesidad de hardware especializado.
-- Evaluacion de pipelines de generacion: se puede integrar en un pipeline de HuggingFace para probar el flujo basico de texto generado, como etapa previa a modelos mas grandes.
+- Evaluacion de pipelines de generacion: se puede integrar en un pipeline de Hugging Face para probar el flujo basico de texto generado, como etapa previa a modelos mas grandes.
 - Comparacion de variabilidad de entrenamiento: la existencia de variantes con distintas semillas (seed44) y epocas (epoch7, epoch10) permite estudiar el efecto de estos hiperparametros en modelos de este tipo.
 - Docencia de transformers: su simplicidad y bajo coste computacional lo convierten en una herramienta util para demostrar la mecanica interna de un modelo de lenguaje pequeno en cursos de aprendizaje profundo.
 
@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables con datos de rendimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch10
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch10
 - Perfil del autor: https://huggingface.co/Lanni-ni
 - Variante epoch7: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7
 - Paper de ALiBi (tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700

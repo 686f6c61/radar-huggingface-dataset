@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ-gguf` es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario ApocalypseParty. Se trata de un modelo conversacional de aproximadamente 25.233 millones de parametros (dato declarado en los metadatos de safetensors), distribuido unicamente en formato cuantizado GGUF dentro de un repositorio de 22,8 GB. El nombre del repositorio sugiere una cadena de entrenamiento que incluiria una fase de ajuste supervisado (SFT, version v2.1) seguida de un ajuste por refuerzo con GRPO (Group Relative Policy Optimization), tomando el checkpoint numero 40 de ese proceso.
+El modelo identificado como `ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ-gguf` es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario ApocalypseParty. Se trata de un modelo conversacional de aproximadamente 25.233 millones de parametros (dato declarado en los metadatos de safetensors), distribuido unicamente en formato cuantizado GGUF dentro de un repositorio de 22,8 GB. El nombre del repositorio sugiere una cadena de entrenamiento que incluiria una fase de ajuste supervisado (SFT, version v2.1) seguida de un ajuste por refuerzo con GRPO (Group Relative Policy Optimization), tomando el checkpoint numero 40 de ese proceso.
 
-La relevancia de esta ficha es limitada en terminos de documentacion: no se ha publicado informacion sobre el modelo base, la arquitectura concreta, la longitud de contexto, los idiomas soportados ni la licencia. La unica fuente disponible es la propia pagina de HuggingFace, cuyos metadatos son muy escasos (42 descargas, 0 likes, etiquetas `gguf`, `endpoints_compatible`, `region:us`, `imatrix` y `conversational`). La mayoria de secciones de esta ficha quedan por tanto marcadas como "no disponible".
+La relevancia de esta ficha es limitada en terminos de documentacion: no se ha publicado informacion sobre el modelo base, la arquitectura concreta, la longitud de contexto, los idiomas soportados ni la licencia. La unica fuente disponible es la propia pagina de Hugging Face, cuyos metadatos son muy escasos (42 descargas, 0 likes, etiquetas `gguf`, `endpoints_compatible`, `region:us`, `imatrix` y `conversational`). La mayoria de secciones de esta ficha quedan por tanto marcadas como "no disponible".
 
 Por el volumen de parametros, el modelo se situa en la categoria de 25-27B, un rango que en 2024-2025 ocupan alternativas como Gemma 3 27B o Qwen2.5 32B. La presencia de la etiqueta `imatrix` indica que las cuantizaciones se generaron con matrices de importancia (importance matrix), una tecnica habitual en llama.cpp para reducir la perdida de calidad en cuantizaciones agresivas.
 
@@ -36,7 +36,7 @@ A partir del nombre del repositorio puede inferirse lo siguiente, siempre con ca
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` es la unica capacidad explicitamente declarada por el autor.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el autor considera el modelo desplegable en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el autor considera el modelo desplegable en la infraestructura de Inference Endpoints de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declara ninguna lista de idiomas).
@@ -111,7 +111,7 @@ La comparacion con el modelo de esta ficha queda limitada a parametros y formato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ-gguf
-- Pagina del autor en HuggingFace: https://huggingface.co/ApocalypseParty
+- Modelo en Hugging Face: https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ-gguf
+- Pagina del autor en Hugging Face: https://huggingface.co/ApocalypseParty
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo. Los unicos enlaces recuperados no guardan ninguna relacion con el modelo ni con temas de IA y se han descartado por completo. No se dispone por tanto de papers, blogs, repositorios de codigo ni demos asociados.

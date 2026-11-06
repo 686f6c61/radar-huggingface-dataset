@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wildnrfm/legal-chatbot-llama3 es un ajuste fino (fine-tuning) del modelo instructivo Llama 3.2 3B, publicado por el usuario wildnrfm en HuggingFace. Concretamente, parte de `unsloth/llama-3.2-3b-instruct-bnb-4bit`, una version del modelo de Meta cuantizada a 4 bits, y ha sido entrenado con la libreria Unsloth junto a TRL de HuggingFace, segun indica el propio autor. El nombre del repositorio sugiere un enfoque hacia dominios legales, aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento empleado.
+wildnrfm/legal-chatbot-llama3 es un ajuste fino (fine-tuning) del modelo instructivo Llama 3.2 3B, publicado por el usuario wildnrfm en Hugging Face. Concretamente, parte de `unsloth/llama-3.2-3b-instruct-bnb-4bit`, una version del modelo de Meta cuantizada a 4 bits, y ha sido entrenado con la libreria Unsloth junto a TRL de Hugging Face, segun indica el propio autor. El nombre del repositorio sugiere un enfoque hacia dominios legales, aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento empleado.
 
 El modelo cuenta con 3.212.749.824 parametros almacenados en formato safetensors (el repositorio ocupa 6,4 GB), lo que es coherente con un guardado en precision de 16 bits en lugar de adaptadores LoRA. Se distribuye bajo licencia Apache 2.0, esta etiquetado exclusivamente para ingles y declara compatibilidad con text-generation-inference y endpoints.
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada por el momento: cero descargas y cero valorac
 
 La model card no describe la arquitectura interna del modelo. Al derivar de Llama 3.2 3B Instruct, la arquitectura subyacente es la de la familia Llama 3.2: transformer decoder-only con atencion de consultas agrupadas (GQA) y embeddings rotatorios (RoPE) para la codificacion posicional. El dato verificable es el recuento de parametros en safetensors (3.212.749.824), que coincide con el tamano del modelo base de 3B, lo que indica que el ajuste no anadio ni modifico capas estructurales.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se utilizo Unsloth y la libreria TRL de HuggingFace, y que el autor afirma haber entrenado "2x mas rapido" gracias a Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado, ni la duracion o el hardware empleado. Tampoco se indica si los pesos publicados son el resultado de fusionar (merge) los adaptadores LoRA con el modelo base; el tamano del repositorio (6,4 GB para 3,21 B de parametros) es consistente con un guardado fusionado en 16 bits.
+En cuanto al entrenamiento, la unica informacion disponible es que se utilizo Unsloth y la libreria TRL de Hugging Face, y que el autor afirma haber entrenado "2x mas rapido" gracias a Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado, ni la duracion o el hardware empleado. Tampoco se indica si los pesos publicados son el resultado de fusionar (merge) los adaptadores LoRA con el modelo base; el tamano del repositorio (6,4 GB para 3,21 B de parametros) es consistente con un guardado fusionado en 16 bits.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que se utilizo Un
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: solo ingles declarado; no se ha verificado el comportamiento en castellano.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -92,8 +92,8 @@ Frente a estas alternativas, la unica ventaja diferencial del modelo analizado s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wildnrfm/legal-chatbot-llama3
+- Modelo en Hugging Face: https://huggingface.co/wildnrfm/legal-chatbot-llama3
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-3b-instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de politica de imitacion para manipulacion robotica bimanual diestra, desarrollado por el usuario de HuggingFace `tarzanagh`. Se trata de un modelo ACT (Action Chunking Transformer) con entrada tactil, entrenado sobre un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1. La tarea es concreta: recoger un juguete desde el segundo nivel de una estanteria y depositarlo en el primero, usando principalmente el brazo derecho mientras el izquierdo permanece casi estatico. Los datos se recogieron mediante teleoperacion con meta-glove (sin exoesqueleto) y seguimiento de muneca con Vive.
+Este repositorio contiene un checkpoint de politica de imitacion para manipulacion robotica bimanual diestra, desarrollado por el usuario de Hugging Face `tarzanagh`. Se trata de un modelo ACT (Action Chunking Transformer) con entrada tactil, entrenado sobre un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1. La tarea es concreta: recoger un juguete desde el segundo nivel de una estanteria y depositarlo en el primero, usando principalmente el brazo derecho mientras el izquierdo permanece casi estatico. Los datos se recogieron mediante teleoperacion con meta-glove (sin exoesqueleto) y seguimiento de muneca con Vive.
 
 El checkpoint tiene 51.764.902 parametros (unos 51,8 millones) y un peso de repositorio de 0,2 GB, lo que lo situa en la categoria de politicas ligeras que caben holgadamente en GPUs de consumo. Se distribuye en formato `safetensors` bajo licencia Apache 2.0. No es un modelo de lenguaje: no procesa texto ni tiene capacidades de generacion, razonamiento o tool calling. Su relevancia es de investigacion en robot learning, ya que forma parte de una familia de 24 ejecuciones del mismo experimento que comparan ACT, Diffusion Policy, GR00T y pi0.5, con y sin tactil, sobre tres tareas.
 
@@ -84,14 +84,14 @@ Los modelos comparables proceden de la propia familia de experimentos del autor 
 
 | Modelo | Parametros | Contexto | Error de bucle abierto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ACT + tactil) | 51,8 M | no disponible | 0,0056 / 0,0132 / 0,0617 / 0,0442 rad (L-arm / L-hand / R-arm / R-hand) | Apache 2.0 | HuggingFace |
-| ACT sin tactil (`..._act260919`) | no disponible | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
-| Diffusion Policy (`..._dp260919`) | no disponible | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
-| Diffusion Policy + tactil (`..._dptactile260919`) | no disponible | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
-| GR00T 3B (`..._gr00t3b260918`) | no disponible (el nombre sugiere 3B) | no disponible | el mas bajo de todas las familias y tareas, segun el autor | no disponible | HuggingFace |
-| GR00T 3B + tactil (`..._gr00t3btactile260918`) | no disponible (el nombre sugiere 3B) | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
-| pi0.5 (`..._pi05260918`) | no disponible | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
-| pi0.5 + tactil (`..._pi05tactile260918`) | no disponible | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
+| Este modelo (ACT + tactil) | 51,8 M | no disponible | 0,0056 / 0,0132 / 0,0617 / 0,0442 rad (L-arm / L-hand / R-arm / R-hand) | Apache 2.0 | Hugging Face |
+| ACT sin tactil (`..._act260919`) | no disponible | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| Diffusion Policy (`..._dp260919`) | no disponible | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| Diffusion Policy + tactil (`..._dptactile260919`) | no disponible | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| GR00T 3B (`..._gr00t3b260918`) | no disponible (el nombre sugiere 3B) | no disponible | el mas bajo de todas las familias y tareas, segun el autor | no disponible | Hugging Face |
+| GR00T 3B + tactil (`..._gr00t3btactile260918`) | no disponible (el nombre sugiere 3B) | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| pi0.5 (`..._pi05260918`) | no disponible | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| pi0.5 + tactil (`..._pi05tactile260918`) | no disponible | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -109,7 +109,7 @@ Los modelos comparables proceden de la propia familia de experimentos del autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_acttactile260919
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_acttactile260919
 - Perfil del autor: https://huggingface.co/tarzanagh
 - ACT sin tactil: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_act260919
 - Diffusion Policy: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_dp260919

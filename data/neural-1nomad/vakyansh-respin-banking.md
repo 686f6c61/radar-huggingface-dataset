@@ -67,14 +67,14 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 - Al ser un ajuste fino sobre un dominio bancario no verificado, puede presentar sesgos hacia vocabulario financiero y fallar en contextos generales.
 - Riesgo de alucinación: en ASR, esto se manifiesta como transcripciones incorrectas o inventadas, especialmente con audio ruidoso o acentos no representados en el entrenamiento.
 - No se indica si el uso comercial está permitido; la licencia es "no disponible", lo que genera incertidumbre legal.
-- El modelo fue creado en agosto de 2026 (según la fecha de HuggingFace), pero no hay evidencia de mantenimiento o soporte.
+- El modelo fue creado en agosto de 2026 (según la fecha de Hugging Face), pero no hay evidencia de mantenimiento o soporte.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Neural-1Nomad/vakyansh-respin-banking
+- Modelo en Hugging Face: https://huggingface.co/Neural-1Nomad/vakyansh-respin-banking
 - Modelo base: https://huggingface.co/Harveenchadha/vakyansh-wav2vec2-telugu-tem-100
 - Proyecto Vakyansh (GitHub Pages): https://open-speech-ekstep.github.io/
 - Repositorio de modelos Vakyansh en GitHub: https://github.com/Open-Speech-EkStep/vakyansh-models
 - README de vakyansh-models: https://github.com/Open-Speech-EkStep/vakyansh-models/blob/main/README.md
-- Perfil de Vakyansh en HuggingFace: https://huggingface.co/vakyansh
+- Perfil de Vakyansh en Hugging Face: https://huggingface.co/vakyansh
 - Página de NeuralNomad sobre banca: https://www.neuralnomad.ai/banking

@@ -17,7 +17,7 @@ La arquitectura subyacente es la de Llama 3.1 8B: transformer decoder-only con a
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | 128.000 tokens heredados de la configuración de Llama-3.1-8B-Instruct; la model card no indica si la compresión altera la ventana útil |
 | Tipos de cuantización | No se distribuyen cuantizaciones en el repositorio (solo safetensors en precisión completa/bf16). Es posible cuantizar externamente a GGUF, AWQ o GPTQ, pero no hay versiones publicadas ni validadas por el autor |
-| Idiomas soportados | No disponible (la ficha de HuggingFace no declara idiomas; el modelo base es multilingüe, pero no se ha verificado el efecto de la compresión sobre otros idiomas) |
+| Idiomas soportados | No disponible (la ficha de Hugging Face no declara idiomas; el modelo base es multilingüe, pero no se ha verificado el efecto de la compresión sobre otros idiomas) |
 | Licencia | Llama 3.1 Community License (incluye `LICENSE` y `USE_POLICY.md` en el repositorio) |
 | Formato de pesos | safetensors (librería transformers) |
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Seguridad medida |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l31_keep60_disc_b001 | 8.030.261.248 almacenados; fracción declarada 0,6008 del denso | 128.000 tokens (heredado) | Llama 3.1 Community License | Pública en HuggingFace, 0 descargas | AdvBench ASR 0,4308; StrongREJECT ASR 0,4281; over-refusal 0,0885; PPL WikiText-2 24,9794 |
+| Jeesup/svd-safety-l31_keep60_disc_b001 | 8.030.261.248 almacenados; fracción declarada 0,6008 del denso | 128.000 tokens (heredado) | Llama 3.1 Community License | Pública en Hugging Face, 0 descargas | AdvBench ASR 0,4308; StrongREJECT ASR 0,4281; over-refusal 0,0885; PPL WikiText-2 24,9794 |
 | meta-llama/Llama-3.1-8B-Instruct (base) | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Pública y ampliamente desplegada | No disponible en la información proporcionada |
 | Otras celdas de la cuadrícula del mismo autor (otras reglas y presupuestos) | No disponible | No disponible | Llama 3.1 Community License | No disponible en la información proporcionada | No disponible en la información proporcionada |
 
@@ -94,7 +94,7 @@ La información disponible no incluye otros modelos comparables de compresión (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_keep60_disc_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_keep60_disc_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia en el repositorio: https://huggingface.co/Jeesup/svd-safety-l31_keep60_disc_b001/blob/main/LICENSE
 - Política de uso en el repositorio: https://huggingface.co/Jeesup/svd-safety-l31_keep60_disc_b001/blob/main/USE_POLICY.md

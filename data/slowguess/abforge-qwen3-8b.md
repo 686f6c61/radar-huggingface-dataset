@@ -69,10 +69,10 @@ No hay otros modelos públicos especializados en diseño de ablaciones de papers
 
 | Modelo | Parametros | Contexto | Rendimiento (Task 1/2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (base) | 8.19B | no disponible | 44.4 / 43.4 | Apache 2.0 | HuggingFace |
-| ABForge-Qwen3-8B-SFT | 8.19B | no disponible | 30.7 / 52.2 | Apache 2.0 | HuggingFace |
-| ABForge-Qwen3-8B-RL | 8.19B | no disponible | 52.2 / 54.9 | Apache 2.0 | HuggingFace |
-| **ABForge-Qwen3-8B** | 8.19B | no disponible | 55.9 / 62.4 | Apache 2.0 | HuggingFace |
+| Qwen3-8B (base) | 8.19B | no disponible | 44.4 / 43.4 | Apache 2.0 | Hugging Face |
+| ABForge-Qwen3-8B-SFT | 8.19B | no disponible | 30.7 / 52.2 | Apache 2.0 | Hugging Face |
+| ABForge-Qwen3-8B-RL | 8.19B | no disponible | 52.2 / 54.9 | Apache 2.0 | Hugging Face |
+| **ABForge-Qwen3-8B** | 8.19B | no disponible | 55.9 / 62.4 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,10 +86,10 @@ No hay otros modelos públicos especializados en diseño de ablaciones de papers
 
 ## Enlaces
 
-- Modelo en HuggingFace: [SlowGuess/ABForge-Qwen3-8B](https://huggingface.co/SlowGuess/ABForge-Qwen3-8B)
+- Modelo en Hugging Face: [SlowGuess/ABForge-Qwen3-8B](https://huggingface.co/SlowGuess/ABForge-Qwen3-8B)
 - Checkpoint SFT: [SlowGuess/ABForge-Qwen3-8B-SFT](https://huggingface.co/SlowGuess/ABForge-Qwen3-8B-SFT)
 - Checkpoint RL: [SlowGuess/ABForge-Qwen3-8B-RL](https://huggingface.co/SlowGuess/ABForge-Qwen3-8B-RL)
 - Dataset de entrenamiento: [SlowGuess/abforge-data](https://huggingface.co/datasets/SlowGuess/abforge-data)
 - Código: [SlowGuess/Abforge_1](https://github.com/SlowGuess/Abforge_1)
-- Colección de modelos: [HuggingFace Collection](https://huggingface.co/collections/SlowGuess/abforge-6a2ac561d0e97f11e409dd75)
+- Colección de modelos: [Hugging Face Collection](https://huggingface.co/collections/SlowGuess/abforge-6a2ac561d0e97f11e409dd75)
 - Paper (pendiente de publicación): [ArXiv (placeholder)](https://arxiv.org/abs/XXXX.XXXXX)

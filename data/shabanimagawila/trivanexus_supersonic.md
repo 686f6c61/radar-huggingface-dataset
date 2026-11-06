@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrivaNexus_Supersonic es un modelo publicado en HuggingFace por el usuario ShabaniMagawila bajo el identificador `ShabaniMagawila/TrivaNexus_Supersonic`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (el README se limita a la declaracion de licencia `apache-2.0`), no tiene pipeline declarado, no especifica idiomas soportados y acumula 0 descargas y 0 "likes". La fecha de creacion y de ultima actualizacion registradas son identicas (2026-09-30), lo que indica que no ha habido revisiones posteriores a la publicacion inicial.
+TrivaNexus_Supersonic es un modelo publicado en Hugging Face por el usuario ShabaniMagawila bajo el identificador `ShabaniMagawila/TrivaNexus_Supersonic`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (el README se limita a la declaracion de licencia `apache-2.0`), no tiene pipeline declarado, no especifica idiomas soportados y acumula 0 descargas y 0 "likes". La fecha de creacion y de ultima actualizacion registradas son identicas (2026-09-30), lo que indica que no ha habido revisiones posteriores a la publicacion inicial.
 
 Por todo ello, no es posible determinar que problema resuelve el modelo, cual es su arquitectura, su numero de parametros, su longitud de contexto ni sus capacidades reales. Tampoco hay informacion sobre datos de entrenamiento, proceso de alineamiento (RLHF, DPO u otros) o innovaciones tecnicas asociadas. La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo ni con su autor: los enlaces recuperados no guardan relacion con el ambito de la inteligencia artificial y no se han utilizado como fuente.
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ShabaniMagawila/TrivaNexus_Supersonic
-- Pagina del autor en HuggingFace: https://huggingface.co/ShabaniMagawila
+- Repositorio en Hugging Face: https://huggingface.co/ShabaniMagawila/TrivaNexus_Supersonic
+- Pagina del autor en Hugging Face: https://huggingface.co/ShabaniMagawila
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo ni sobre su autor. Los resultados devueltos por el buscador no estaban relacionados con inteligencia artificial y se han descartado como fuente.

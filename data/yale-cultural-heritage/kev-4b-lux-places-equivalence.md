@@ -74,9 +74,9 @@ Sobre un split de test anterior y mas ruidoso (636 decisiones etiquetadas solo p
 
 | Modelo | Parametros | Contexto | Rendimiento (balanced accuracy / AUROC en test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kev-4b-lux-places-equivalence | 4B + LoRA | no disponible | 0.940 / 0.989 | Apache 2.0 | HuggingFace |
-| kev-4b-europeana-persons | 4B + LoRA | no disponible | 0.795 / 0.944 | no disponible | HuggingFace |
-| kev-4b (jaredpalmer) | 4B + LoRA | no disponible | no disponible | no disponible | HuggingFace |
+| kev-4b-lux-places-equivalence | 4B + LoRA | no disponible | 0.940 / 0.989 | Apache 2.0 | Hugging Face |
+| kev-4b-europeana-persons | 4B + LoRA | no disponible | 0.795 / 0.944 | no disponible | Hugging Face |
+| kev-4b (jaredpalmer) | 4B + LoRA | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos alternativos de proposito general para esta tarea especifica de resolucion de entidades de lugares.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos alternativos de proposito genera
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yale-cultural-heritage/kev-4b-lux-places-equivalence
+- Hugging Face: https://huggingface.co/yale-cultural-heritage/kev-4b-lux-places-equivalence
 - Modelo base del adaptador: https://huggingface.co/yale-cultural-heritage/kev-4b-europeana-persons
 - Checkpoint kev-4b original: https://huggingface.co/jaredpalmer/kev-4b
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.5-4B-Base

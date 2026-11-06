@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Agentic-30B-A3B (opencsg) | 30,5B | ~3B (sin confirmar) | no disponible | other | HuggingFace (base y GGUF) |
-| NVIDIA Nemotron 3.5 Lightning 30B A3B | 30B | 3B | no disponible | NVIDIA Open Model License | HuggingFace, NIM |
-| Qwen3 Coder 30B | 30,5B | 3,3B | 256K | Apache 2.0 | HuggingFace, LM Studio |
+| Agentic-30B-A3B (opencsg) | 30,5B | ~3B (sin confirmar) | no disponible | other | Hugging Face (base y GGUF) |
+| NVIDIA Nemotron 3.5 Lightning 30B A3B | 30B | 3B | no disponible | NVIDIA Open Model License | Hugging Face, NIM |
+| Qwen3 Coder 30B | 30,5B | 3,3B | 256K | Apache 2.0 | Hugging Face, LM Studio |
 
 La comparativa es estructural, ya que no hay datos de rendimiento del modelo evaluado. Nemotron 3.5 Lightning está optimizado para tareas agénticas de alta frecuencia, mientras que Qwen3 Coder se centra en código. Agentic-30B-A3B parece orientado a agencia general, pero sin benchmarks no se puede establecer una jerarquía de calidad.
 
@@ -74,7 +74,7 @@ La comparativa es estructural, ya que no hay datos de rendimiento del modelo eva
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Agentic-30B-A3B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Agentic-30B-A3B-GGUF
 - Modelo base (opencsg/Agentic-30B-A3B): https://huggingface.co/opencsg/Agentic-30B-A3B
 - Perfil de mradermacher: https://huggingface.co/mradermacher
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

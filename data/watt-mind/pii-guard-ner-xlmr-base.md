@@ -85,8 +85,8 @@ No se han publicado en la informacion disponible las metricas numericas concreta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/watt-mind/pii-guard-ner-xlmr-base
-- Organizacion Watt Mind en HuggingFace: https://huggingface.co/watt-mind
+- Modelo en Hugging Face: https://huggingface.co/watt-mind/pii-guard-ner-xlmr-base
+- Organizacion Watt Mind en Hugging Face: https://huggingface.co/watt-mind
 - Codigo fuente (PII Guard): https://github.com/watt-mind/pii-guard
 - Evaluaciones y benchmarks: https://github.com/watt-mind/pii-guard/blob/develop/docs/benchmarks.md
 - Demo alojada: https://guard.watt-mind.com

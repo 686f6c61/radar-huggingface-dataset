@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Darwin-27B-RSI-Decision | ~25,6 B | 32.768 | Apache 2.0 | HuggingFace |
+| Darwin-27B-RSI-Decision | ~25,6 B | 32.768 | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FINAL-Bench/Darwin-27B-RSI-Decision
+- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/Darwin-27B-RSI-Decision
 - Backbone: https://huggingface.co/FINAL-Bench/Darwin-27B-RSI
 - Kit de reproducción Decision Index: https://github.com/apolinario/decision-index
 - Código de inferencia autojev: https://github.com/denis-pplx/autojev

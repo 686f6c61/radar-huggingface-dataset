@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sireken98/audio-visual-learning-reading` es un repositorio de HuggingFace publicado por el usuario sireken98 que, segun su propia model card, **no contiene un modelo entrenado ni un checkpoint**, sino una nota de investigacion ("research notes") sobre aprendizaje audio-visual. El artefacto principal declarado es `review.md`, un documento que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El repositorio incluye un fichero de pesos en formato safetensors con 33.088 parametros totales y un tamano de repositorio de 0,0 GB, lo que es coherente con un artefacto residual o de prueba, no con un modelo funcional.
+`sireken98/audio-visual-learning-reading` es un repositorio de Hugging Face publicado por el usuario sireken98 que, segun su propia model card, **no contiene un modelo entrenado ni un checkpoint**, sino una nota de investigacion ("research notes") sobre aprendizaje audio-visual. El artefacto principal declarado es `review.md`, un documento que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El repositorio incluye un fichero de pesos en formato safetensors con 33.088 parametros totales y un tamano de repositorio de 0,0 GB, lo que es coherente con un artefacto residual o de prueba, no con un modelo funcional.
 
 La relevancia de este repositorio es, por tanto, documental y metodologica, no tecnica. En un area con abundante literatura sobre audio-visual learning (AVLnet, Auto-AVSR, revisiones de AVSR 2013-2023, o propuestas recientes como SeeingSounds), una nota que explicita confounders, baselines emparejados y criterios de reproducibilidad puede ser util como plantilla de planificacion experimental. El propio autor advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que no se reclama ninguna mejora de benchmark, ablacion completada, codigo liberado ni checkpoint entrenado.
 
@@ -91,7 +91,7 @@ No hay modelos comparables en sentido estricto, porque este repositorio no publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sireken98/audio-visual-learning-reading
+- Repositorio en Hugging Face: https://huggingface.co/sireken98/audio-visual-learning-reading
 - SeeingSounds: Learning Audio-to-Visual Alignment via Text: https://arxiv.org/abs/2510.11738
 - AVLnet: Learning Audio-Visual Language Representations from Video (MIT CSAIL): https://avlnet.csail.mit.edu/
 - Auto-AVSR (GitHub, mpc001): https://github.com/mpc001/auto_avsr

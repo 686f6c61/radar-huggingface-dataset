@@ -79,10 +79,10 @@ Además, el autor reporta un error relativo respecto al modelo fp32 de 4,2 % en 
 
 | Modelo | Parámetros | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WilburDev/supertonic-3-mobile | 99M | 31 | ONNX int8 y fp32 | OpenRAIL-M | HuggingFace |
-| Supertone/supertonic-3 (modelo base) | 99M | 31 | ONNX | OpenRAIL-M | HuggingFace |
-| sherpa-onnx-supertonic-3-tts-int8-2026-05-11 | 99M | 31 | ONNX int8 | OpenRAIL-M (heredada) | HuggingFace / sherpa-onnx |
-| Supertonic 2 | No disponible | 5 | No disponible | No disponible | HuggingFace |
+| WilburDev/supertonic-3-mobile | 99M | 31 | ONNX int8 y fp32 | OpenRAIL-M | Hugging Face |
+| Supertone/supertonic-3 (modelo base) | 99M | 31 | ONNX | OpenRAIL-M | Hugging Face |
+| sherpa-onnx-supertonic-3-tts-int8-2026-05-11 | 99M | 31 | ONNX int8 | OpenRAIL-M (heredada) | Hugging Face / sherpa-onnx |
+| Supertonic 2 | No disponible | 5 | No disponible | No disponible | Hugging Face |
 
 La diferencia entre las tres primeras filas es exclusivamente de empaquetado y cuantización, no de pesos: todas parten del mismo modelo Supertonic 3 de Supertone. La ventaja de este repositorio se limita al rendimiento en CPU (RTF 0,39 frente a 0,87 con 4 pasos) con un UTMOS comparable o superior. No se dispone de datos de parámetros, licencia exacta ni benchmarks de Supertonic 2 más allá de que cubría 5 idiomas.
 
@@ -100,7 +100,7 @@ La diferencia entre las tres primeras filas es exclusivamente de empaquetado y c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WilburDev/supertonic-3-mobile
+- Repositorio en Hugging Face: https://huggingface.co/WilburDev/supertonic-3-mobile
 - Modelo base: https://huggingface.co/Supertone/supertonic-3
 - Página oficial de Supertonic 3: https://supertonic3.github.io/
 - Anuncio de Supertonic 3 en Supertone: https://www.supertone.ai/en/work/faster-and-more-accurate-across-31-languages----introducing-supertonic-3

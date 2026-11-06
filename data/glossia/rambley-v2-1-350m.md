@@ -76,10 +76,10 @@ Desglose de Arithmark 3.0 (categorias destacadas): hora grades 2-3 100,00%; geom
 
 | Modelo | Parametros | Contexto | Hellaswag (acc_norm) | ARC-C (acc_norm) | PIQA (acc_norm) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Rambley-V2.1-350M | 348,6M | 2048 | 37,49 | 28,50 | 65,89 | CC-BY-SA-4.0 | HuggingFace |
-| GPT-2 Medium | ~355M | 1024 | 39,38 | 25,00 | 66,38 | MIT (pesos publicados) | HuggingFace |
-| OPT-350m | ~331M | 2048 | 36,82 | 23,72 | 64,36 | OPT-175B License (no comercial) | HuggingFace |
-| Pythia 410M | ~410M | 2048 | 40,63 | 24,49 | 67,30 | Apache 2.0 | HuggingFace |
+| Rambley-V2.1-350M | 348,6M | 2048 | 37,49 | 28,50 | 65,89 | CC-BY-SA-4.0 | Hugging Face |
+| GPT-2 Medium | ~355M | 1024 | 39,38 | 25,00 | 66,38 | MIT (pesos publicados) | Hugging Face |
+| OPT-350m | ~331M | 2048 | 36,82 | 23,72 | 64,36 | OPT-175B License (no comercial) | Hugging Face |
+| Pythia 410M | ~410M | 2048 | 40,63 | 24,49 | 67,30 | Apache 2.0 | Hugging Face |
 
 Rambley-V2.1-350M lidera en ARC-E y ARC-C entre los modelos abiertos comparados, queda por detras de Pythia 410M en Hellaswag y PIQA, y es competitivo con GPT-2 Medium. Su ventaja principal es el volumen de entrenamiento (~16B tokens) frente a GPT-2 Medium (~20B desconocido) y su licencia CC-BY-SA-4.0, mas permisiva para uso comercial que la de OPT-350m, aunque impone obligacion de compartir bajo la misma licencia.
 
@@ -97,7 +97,7 @@ Rambley-V2.1-350M lidera en ARC-E y ARC-C entre los modelos abiertos comparados,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glossia/Rambley-V2.1-350M
+- Modelo en Hugging Face: https://huggingface.co/glossia/Rambley-V2.1-350M
 - Modelo base de preentrenamiento: https://huggingface.co/glossia/Rambley-V2.1-350M-Pretrain
 - Codigo de preentrenamiento (OLMo-core): https://code.allura.moe/fizz/OLMo-core
 - Dataset glossia/picl-text: https://huggingface.co/datasets/glossia/picl-text

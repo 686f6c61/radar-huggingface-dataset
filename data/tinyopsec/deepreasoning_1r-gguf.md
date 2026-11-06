@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepReasoning_1R-GGUF es la distribución en formato GGUF del checkpoint `reaperdoesntknow/DeepReasoning_1R`, un modelo derivado de Qwen2.5-0.5B-Instruct orientado a razonamiento y destilación. El autor de esta conversión es el usuario de HuggingFace `tinyopsec`, que ha generado el conjunto de cuantizaciones con llama.cpp a partir del checkpoint original. El modelo base subyacente es el transformer denso Qwen2.5-0.5B-Instruct de Alibaba, con 494.032.768 parámetros totales.
+DeepReasoning_1R-GGUF es la distribución en formato GGUF del checkpoint `reaperdoesntknow/DeepReasoning_1R`, un modelo derivado de Qwen2.5-0.5B-Instruct orientado a razonamiento y destilación. El autor de esta conversión es el usuario de Hugging Face `tinyopsec`, que ha generado el conjunto de cuantizaciones con llama.cpp a partir del checkpoint original. El modelo base subyacente es el transformer denso Qwen2.5-0.5B-Instruct de Alibaba, con 494.032.768 parámetros totales.
 
 La relevancia de esta ficha es acotada: se trata de un modelo muy pequeño (0,5 mil millones de parámetros) pensado para ejecución local en hardware modesto, no para competición en benchmarks de razonamiento de frontera. Su interés práctico reside en que ofrece una vía de bajo coste para experimentar con modelos de razonamiento destilados en CPU, GPUs de gama baja o dispositivos embebidos, gracias a las cuantizaciones de 2 a 8 bits incluidas en el repositorio.
 
@@ -83,7 +83,7 @@ La comparación se limita a datos de parámetros, licencia y disponibilidad de f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/DeepReasoning_1R-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/DeepReasoning_1R-GGUF
 - Checkpoint original: https://huggingface.co/reaperdoesntknow/DeepReasoning_1R
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - llama.cpp (runtime de conversión e inferencia): https://github.com/ggml-org/llama.cpp

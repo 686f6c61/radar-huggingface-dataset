@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ze-couves/usuario-qwen-image-lora | LoRA de identidad sobre Qwen-Image | no disponible (rank 32) | no aplica | other | HuggingFace, 0 descargas |
-| Qwen/Qwen-Image | Modelo de difusion texto-a-imagen | no disponible en la informacion | no aplica | no disponible en la informacion | HuggingFace |
-| Otros LoRA de identidad sobre Qwen-Image | Adaptadores LoRA | no disponible | no aplica | variable | HuggingFace |
+| ze-couves/usuario-qwen-image-lora | LoRA de identidad sobre Qwen-Image | no disponible (rank 32) | no aplica | other | Hugging Face, 0 descargas |
+| Qwen/Qwen-Image | Modelo de difusion texto-a-imagen | no disponible en la informacion | no aplica | no disponible en la informacion | Hugging Face |
+| Otros LoRA de identidad sobre Qwen-Image | Adaptadores LoRA | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de comparativas cuantitativas con alternativas.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de comparativas cuantitativas con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ze-couves/usuario-qwen-image-lora
+- Hugging Face: https://huggingface.co/ze-couves/usuario-qwen-image-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image
 - Herramienta de entrenamiento citada: `qwen/qwen-image-lora-trainer` en Replicate (https://replicate.com)
 - Pruna (conversion de formato): https://github.com/PrunaAI/pruna

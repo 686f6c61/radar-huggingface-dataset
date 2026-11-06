@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-OT3-2M-GGUF es un ajuste fino comunitario del modelo base LiquidAI/LFM3-1.7B, publicado por el usuario aceflooder en HuggingFace. El autor ha aplicado LoRA sobre un subconjunto filtrado del dataset OpenThoughts3-1.2M, con el objetivo de dotar de capacidades de razonamiento (reasoning) a un modelo pequeño, y ha exportado el resultado en cuantizaciones estándar GGUF (Q8_0 y Q6_K) para su ejecución local. Todo el proceso de entrenamiento se realizó en un solo Mac (M4 Pro de 24 GB), sin cómputo en la nube de pago, lo que lo convierte en un experimento reproducible y de interés para quien explore el ajuste fino de modelos pequeños en hardware de consumo.
+LFM3-1.7B-OT3-2M-GGUF es un ajuste fino comunitario del modelo base LiquidAI/LFM3-1.7B, publicado por el usuario aceflooder en Hugging Face. El autor ha aplicado LoRA sobre un subconjunto filtrado del dataset OpenThoughts3-1.2M, con el objetivo de dotar de capacidades de razonamiento (reasoning) a un modelo pequeño, y ha exportado el resultado en cuantizaciones estándar GGUF (Q8_0 y Q6_K) para su ejecución local. Todo el proceso de entrenamiento se realizó en un solo Mac (M4 Pro de 24 GB), sin cómputo en la nube de pago, lo que lo convierte en un experimento reproducible y de interés para quien explore el ajuste fino de modelos pequeños en hardware de consumo.
 
 El modelo base, LFM3-1.7B de LiquidAI, pertenece a la familia de modelos LFM (Liquid Foundation Models) y tiene 1.728.801.600 parámetros. El fine-tuning se centró en tareas de razonamiento matemático y científico mediante datos de OpenThoughts3, un dataset de trazas de razonamiento. La relevancia de esta release está en su enfoque experimental y transparente: el autor publica mediciones de calidad, tamaño y velocidad con intervalos de incertidumbre, y advierte explícitamente de que la mejora observada sobre el modelo original no es estadísticamente concluyente.
 
@@ -75,10 +75,10 @@ Notas del autor: la mejora del F16 entrenado (+5,56 puntos porcentuales) tiene u
 
 | Modelo | Parametros | Formato | Razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-OT3-2M-GGUF | 1,73B | GGUF (Q8_0, Q6_K), LoRA | Sí (trazas `<think>`, entrenado con OpenThoughts3) | lfm1.0 (other) | HuggingFace, 0 descargas, experimental |
-| LiquidAI/LFM3-1.7B (base) | 1,73B | safetensors | Según el modelo base (no detallado aquí) | lfm1.0 (other) | HuggingFace, modelo oficial de LiquidAI |
+| LFM3-1.7B-OT3-2M-GGUF | 1,73B | GGUF (Q8_0, Q6_K), LoRA | Sí (trazas `<think>`, entrenado con OpenThoughts3) | lfm1.0 (other) | Hugging Face, 0 descargas, experimental |
+| LiquidAI/LFM3-1.7B (base) | 1,73B | safetensors | Según el modelo base (no detallado aquí) | lfm1.0 (other) | Hugging Face, modelo oficial de LiquidAI |
 | Qwen2.5-1.5B-Instruct | 1,54B | safetensors, GGUF (comunitario) | No nativo (existe variante QwQ de mayor tamaño) | Licencia Qwen (uso comercial permitido con condiciones) | Ampliamente disponible, ecosistema maduro |
-| SmolLM2-1.7B-Instruct | 1,71B | safetensors, GGUF (comunitario) | No nativo | Apache 2.0 | Ampliamente disponible, modelo de HuggingFace |
+| SmolLM2-1.7B-Instruct | 1,71B | safetensors, GGUF (comunitario) | No nativo | Apache 2.0 | Ampliamente disponible, modelo de Hugging Face |
 
 Comparación orientativa: frente a alternativas de tamaño similar como Qwen2.5-1.5B-Instruct o SmolLM2-1.7B-Instruct, este checkpoint ofrece razonamiento nativo con trazas de pensamiento a costa de ser una release experimental sin evaluación independiente, en inglés únicamente y con una licencia (lfm1.0) menos permisiva que Apache 2.0. No hay benchmarks oficiales comparables publicados para esta release, por lo que la comparación de rendimiento es no disponible.
 
@@ -98,7 +98,7 @@ Comparación orientativa: frente a alternativas de tamaño similar como Qwen2.5-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aceflooder/LFM3-1.7B-OT3-2M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/aceflooder/LFM3-1.7B-OT3-2M-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 - Archivo Q8_0 (descarga directa): https://huggingface.co/aceflooder/LFM3-1.7B-OT3-2M-GGUF/resolve/main/LFM3-1.7B-OT3-2M-Q8_0.gguf?download=true

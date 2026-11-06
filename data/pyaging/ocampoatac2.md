@@ -68,6 +68,6 @@ No se dispone de información comparativa con otros relojes de envejecimiento ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/ocampoatac2
+- Modelo en Hugging Face: https://huggingface.co/pyaging/ocampoatac2
 - Documentación de `pyaging` (catálogo de relojes): https://pyaging.readthedocs.io
 - Artículo científico (DOI): https://doi.org/10.1007/s11357-023-00986-0

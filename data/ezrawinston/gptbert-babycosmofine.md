@@ -48,7 +48,7 @@ El régimen de entrenamiento principal (denominado *long-regime*) usa una tasa d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona que el paper reporta resultados en SyntaxGym y otras métricas, pero no se incluyen valores numéricos en el README ni en los metadatos de HuggingFace. Para obtener las cifras exactas es necesario consultar el artículo en OpenReview o el repositorio de reproducción.
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona que el paper reporta resultados en SyntaxGym y otras métricas, pero no se incluyen valores numéricos en el README ni en los metadatos de Hugging Face. Para obtener las cifras exactas es necesario consultar el artículo en OpenReview o el repositorio de reproducción.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: [ezrawinston/gptbert-babycosmofine](https://huggingface.co/ezrawinston/gptbert-babycosmofine)
+- Modelo en Hugging Face: [ezrawinston/gptbert-babycosmofine](https://huggingface.co/ezrawinston/gptbert-babycosmofine)
 - Paper en OpenReview: [Learning syntax without semantics: Disentangled tiny language models](https://openreview.net/forum?id=p7HVrmZwWB)
 - PDF del paper: [https://openreview.net/pdf?id=p7HVrmZwWB](https://openreview.net/pdf?id=p7HVrmZwWB)
 - Repositorio de código y reproducción: [https://github.com/ezrawinston/sambal](https://github.com/ezrawinston/sambal)

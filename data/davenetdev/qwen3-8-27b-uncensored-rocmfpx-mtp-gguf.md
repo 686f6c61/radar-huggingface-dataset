@@ -95,8 +95,8 @@ La comparativa no es completa porque no se dispone de datos de rendimiento de es
 
 ## Enlaces
 
-- [HuggingFace - davenetdev/Qwen3.8-27B-Uncensored-ROCmFPX-MTP-GGUF](https://huggingface.co/davenetdev/Qwen3.8-27B-Uncensored-ROCMFPX-MTP-GGUF)
-- [HuggingFace - JonathanColetti/Qwen3.8-27B-Uncensored](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored)
+- [Hugging Face - davenetdev/Qwen3.8-27B-Uncensored-ROCmFPX-MTP-GGUF](https://huggingface.co/davenetdev/Qwen3.8-27B-Uncensored-ROCMFPX-MTP-GGUF)
+- [Hugging Face - JonathanColetti/Qwen3.8-27B-Uncensored](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored)
 - [GitHub - ROCmFPX](https://github.com/charlie12345/ROCmFPX)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Ollama - orcarouter/Qwen3.8-27B-Uncensored](https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored)

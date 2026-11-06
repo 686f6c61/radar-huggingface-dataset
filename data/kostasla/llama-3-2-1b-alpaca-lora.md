@@ -2,11 +2,11 @@
 
 ## Resumen
 
-KostasLa/llama-3.2-1b-alpaca-lora es un ajuste fino (fine-tune) del modelo unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit, publicado por el usuario KostasLa en HuggingFace. Se trata de un modelo decoder-only de la familia Llama 3.2 con 1.235.814.400 parametros (aproximadamente 1,24 mil millones), entrenado mediante LoRA sobre la version instruct de 1B ya cuantizada en 4 bits por Unsloth. El nombre del repositorio sugiere un ajuste sobre un dataset de estilo Alpaca, aunque la model card no documenta la composicion exacta de los datos de entrenamiento.
+KostasLa/llama-3.2-1b-alpaca-lora es un ajuste fino (fine-tune) del modelo unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit, publicado por el usuario KostasLa en Hugging Face. Se trata de un modelo decoder-only de la familia Llama 3.2 con 1.235.814.400 parametros (aproximadamente 1,24 mil millones), entrenado mediante LoRA sobre la version instruct de 1B ya cuantizada en 4 bits por Unsloth. El nombre del repositorio sugiere un ajuste sobre un dataset de estilo Alpaca, aunque la model card no documenta la composicion exacta de los datos de entrenamiento.
 
 El modelo resuelve el caso de uso tipico de los ajustes ligeros: adaptar un modelo pequeno y ya alineado a un dominio, estilo de respuesta o formato concreto sin necesidad de infraestructura de entrenamiento grande. Su relevancia practica esta en el coste: con 1,24B de parametros se puede ejecutar en GPU de consumo e incluso en CPU, y el repo ocupa 2,5 GB en safetensors, lo que corresponde a pesos en precision de 16 bits.
 
-La informacion publicada es muy limitada: la model card se reduce a los metadatos de licencia (apache-2.0), el modelo base y una mencion al entrenamiento realizado con Unsloth y la libreria TRL de HuggingFace ("entrenado 2x mas rapido"). No hay datos de benchmarks, composicion del dataset, hiperparametros de entrenamiento ni evaluaciones en el momento de redactar esta ficha.
+La informacion publicada es muy limitada: la model card se reduce a los metadatos de licencia (apache-2.0), el modelo base y una mencion al entrenamiento realizado con Unsloth y la libreria TRL de Hugging Face ("entrenado 2x mas rapido"). No hay datos de benchmarks, composicion del dataset, hiperparametros de entrenamiento ni evaluaciones en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La informacion publicada es muy limitada: la model card se reduce a los metadato
 
 La arquitectura subyacente es la de Llama 3.2 1B Instruct: un transformer decoder-only con atencion causal agrupada (GQA), normalizacion RMSNorm y activaciones SwiGLU, disenado para generacion de texto autoregresiva. Sobre esa base, el autor aplico un ajuste supervisado mediante LoRA (Low-Rank Adaptation), una tecnica que congela los pesos originales e inserta matrices de bajo rango entrenables, reduciendo drasticamente el coste de entrenamiento y el consumo de memoria. El resultado se fusiona o se distribuye junto a los pesos base, dando lugar al repositorio en safetensors de 2,5 GB.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card, que ademas afirma que el modelo se entreno "2x mas rapido" gracias a Unsloth. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la duracion del ajuste, los hiperparametros (rango de LoRA, alpha, learning rate, epocas) ni si hubo fases posteriores de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica adicional mas alla del uso de LoRA y de la optimizacion de Unsloth.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card, que ademas afirma que el modelo se entreno "2x mas rapido" gracias a Unsloth. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la duracion del ajuste, los hiperparametros (rango de LoRA, alpha, learning rate, epocas) ni si hubo fases posteriores de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica adicional mas alla del uso de LoRA y de la optimizacion de Unsloth.
 
 ## Capacidades
 
@@ -89,10 +89,10 @@ Nota: los datos de los modelos alternativos provienen de sus respectivas fichas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KostasLa/llama-3.2-1b-alpaca-lora
+- Modelo en Hugging Face: https://huggingface.co/KostasLa/llama-3.2-1b-alpaca-lora
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 
 La busqueda web realizada no ha devuelto ningun enlace tecnico relacionado con este modelo: los resultados obtenidos corresponden a foros de hockey sobre hielo (hfboards.com) y no guardan relacion con el contenido de esta ficha.

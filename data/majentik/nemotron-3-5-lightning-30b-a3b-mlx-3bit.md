@@ -44,7 +44,7 @@ La cuantización se realizó con `mlx_lm.convert` de la versión 0.31.3 de mlx-l
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio solo incluye una prueba de coherencia básica (generación de 48 tokens) y no proporciona métricas como MMLU, HumanEval o GSM8K. Para conocer el rendimiento del modelo base, se recomienda consultar la ficha de NVIDIA en HuggingFace, aunque no se ha verificado en esta documentación.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio solo incluye una prueba de coherencia básica (generación de 48 tokens) y no proporciona métricas como MMLU, HumanEval o GSM8K. Para conocer el rendimiento del modelo base, se recomienda consultar la ficha de NVIDIA en Hugging Face, aunque no se ha verificado en esta documentación.
 
 ## Requisitos de hardware
 

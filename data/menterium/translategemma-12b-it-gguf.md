@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Menterium/translategemma-12b-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Menterium/translategemma-12b-it-GGUF
 - Modelo base: https://huggingface.co/google/translategemma-12b-it
 - Otras cuantizaciones del modelo base: https://huggingface.co/models?other=base_model%3Aquantized%3Agoogle%2Ftranslategemma-12b-it
 - Build de mradermacher: https://huggingface.co/mradermacher/translategemma-12b-it-GGUF

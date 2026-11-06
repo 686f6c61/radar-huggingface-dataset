@@ -85,7 +85,7 @@ No se dispone de una comparativa cuantitativa de rendimiento entre estos modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skywalker33/removeit-lama-coreml
+- Modelo en Hugging Face: https://huggingface.co/skywalker33/removeit-lama-coreml
 - Repositorio origen de la conversion: https://huggingface.co/mlboydaisuke/LaMa-CoreML
 - Cuenta del autor: https://huggingface.co/skywalker33/models
 - Modelo de segmentacion relacionado del mismo autor: skywalker33/removeit-sam2-coreml

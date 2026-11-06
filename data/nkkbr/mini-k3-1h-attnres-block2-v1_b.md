@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-attnres-block2-v1_B es un checkpoint de investigación de tipo base (solo preentrenamiento) publicado por el usuario nkkbr en HuggingFace. Se trata de un transformer decoder de 13 capas con mezcla de dos mecanismos de atención: 9 capas KDA (atención lineal con convolución causal depthwise y decaimiento por grupos) y 4 capas Gated MLA (atención latente multicabeza con puerta de salida). La arquitectura incorpora capas MoE con 64 expertos enrutados, 2 compartidos y top-k 4, sobre un ancho oculto de 1.024 y 12 cabezas.
+Mini-K3-1H-attnres-block2-v1_B es un checkpoint de investigación de tipo base (solo preentrenamiento) publicado por el usuario nkkbr en Hugging Face. Se trata de un transformer decoder de 13 capas con mezcla de dos mecanismos de atención: 9 capas KDA (atención lineal con convolución causal depthwise y decaimiento por grupos) y 4 capas Gated MLA (atención latente multicabeza con puerta de salida). La arquitectura incorpora capas MoE con 64 expertos enrutados, 2 compartidos y top-k 4, sobre un ancho oculto de 1.024 y 12 cabezas.
 
 El modelo pertenece a un estudio controlado de ablación denominado Attention Residuals, cuyo objetivo es medir el efecto del mecanismo de residuos en profundidad. La variante aquí publicada sustituye el residuo estándar por una atención por bloques sobre grupos de 2 capas decoder; la referencia Block-4 del mismo estudio es el checkpoint `nkkbr/Mini-K3-1H-v2`. El checkpoint publicado corresponde a la revisión `checkpoint-tokens-001000079360`, con 1.000.079.360 tokens válidos consumidos de un plan total de 16.000.000.000, longitud de secuencia 8.192 y 1.526 pasos de optimizador.
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mini-K3-1H-attnres-block2-v1_B | 1.016.780.524 | 353.556.204 | 8.192 tokens | No disponible | No | HuggingFace, safetensors + código propio |
-| Mini-K3-1H-v2 (referencia Block-4 del mismo estudio) | No disponible (misma escala declarada, sin confirmar en la información) | No disponible | No disponible | No disponible | No | HuggingFace, según la model card |
+| Mini-K3-1H-attnres-block2-v1_B | 1.016.780.524 | 353.556.204 | 8.192 tokens | No disponible | No | Hugging Face, safetensors + código propio |
+| Mini-K3-1H-v2 (referencia Block-4 del mismo estudio) | No disponible (misma escala declarada, sin confirmar en la información) | No disponible | No disponible | No disponible | No | Hugging Face, según la model card |
 | Otros modelos comparables de ~1B parámetros | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La información proporcionada solo permite comparar esta variante con su referencia dentro del mismo estudio de ablación; no se han facilitado datos de rendimiento ni de licencia de ninguno de los dos, por lo que no es posible establecer una comparación cuantitativa con alternativas externas.
@@ -99,7 +99,7 @@ La información proporcionada solo permite comparar esta variante con su referen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block2-v1_B
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block2-v1_B
 - Checkpoint de referencia Block-4 citado en la model card: `nkkbr/Mini-K3-1H-v2` (el enlace directo no aparece en la información proporcionada)
 - Repositorio del experimento con diagnósticos de arquitectura y evaluación planificada: mencionado en la model card, sin URL disponible
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas de descarga de Google Chrome y a hilos de Reddit sobre navegadores, sin relación con esta ficha.

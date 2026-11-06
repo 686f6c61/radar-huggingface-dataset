@@ -16,7 +16,7 @@ La relevancia actual del modelo radica en su capacidad para ejecutarse en hardwa
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | FP16 (full), GGUF Q4_K_M, Q3_K_M, Q2_K |
 | Idiomas soportados | en, zh, ja, ko, fr, es, pt, de, it, ru, ar, vi, th (13 idiomas) |
-| Licencia | MIT (según tags de HuggingFace), pero la model card menciona licencia comercial y suscripciones |
+| Licencia | MIT (según tags de Hugging Face), pero la model card menciona licencia comercial y suscripciones |
 | Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ No disponible. No se proporcionan datos comparativos con otros modelos de tamañ
 
 ## Limitaciones y advertencias
 
-- **Licencia contradictoria**: aunque el tag de HuggingFace indica MIT, la model card describe una licencia comercial ($12 por usuario al año) y suscripciones adicionales. Esta ambigüedad puede generar problemas legales en despliegues comerciales. Se recomienda contactar al autor antes de usar el modelo en producción.
+- **Licencia contradictoria**: aunque el tag de Hugging Face indica MIT, la model card describe una licencia comercial ($12 por usuario al año) y suscripciones adicionales. Esta ambigüedad puede generar problemas legales en despliegues comerciales. Se recomienda contactar al autor antes de usar el modelo en producción.
 - **Información de entrenamiento ausente**: no se detallan los datos de entrenamiento, el número de tokens ni el proceso de alineación, lo que dificulta evaluar sesgos o riesgos de alucinación.
 - **Sin benchmarks publicados**: no es posible comparar objetivamente su calidad con otros modelos.
 - **Capacidades multimodales no confirmadas**: a pesar de las etiquetas de visión y sonido en el tokenizador, no hay evidencia de que el modelo procese imágenes o audio.
@@ -77,7 +77,7 @@ No disponible. No se proporcionan datos comparativos con otros modelos de tamañ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/CMSManhattan/JiRackUltra_14b)
+- [Modelo en Hugging Face](https://huggingface.co/CMSManhattan/JiRackUltra_14b)
 - [Tokenizador JiRackPrecisionTokenizer](https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer)
 - [Cliente de escritorio JiRack (Windows 11, con API Ollama)](https://huggingface.co/kgrabko/JiRackTernary_1b/resolve/main/jirack-chat.zip)
 - Contacto por correo: support@cmsmanhattan.com

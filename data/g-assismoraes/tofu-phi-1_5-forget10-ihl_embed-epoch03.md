@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tofu-phi-1_5-forget10-ihl_embed-epoch03` es un checkpoint de investigación publicado por el usuario g-assismoraes en HuggingFace. Se trata de un ajuste fino del modelo `locuslab/tofu_ft_phi-1.5` (que a su vez deriva de `microsoft/phi-1_5`), orientado a experimentos de *machine unlearning* sobre el benchmark TOFU (Task of Fictitious Unlearning). El objetivo declarado es "olvidar" un subconjunto del 10 % de los datos de entrenamiento (forget10) manteniendo el rendimiento sobre el resto (retain), mediante una técnica denominada IHL (Input/Head Learning) combinada con un reinicio de los embeddings de entrada y de la cabeza LM.
+El modelo `tofu-phi-1_5-forget10-ihl_embed-epoch03` es un checkpoint de investigación publicado por el usuario g-assismoraes en Hugging Face. Se trata de un ajuste fino del modelo `locuslab/tofu_ft_phi-1.5` (que a su vez deriva de `microsoft/phi-1_5`), orientado a experimentos de *machine unlearning* sobre el benchmark TOFU (Task of Fictitious Unlearning). El objetivo declarado es "olvidar" un subconjunto del 10 % de los datos de entrenamiento (forget10) manteniendo el rendimiento sobre el resto (retain), mediante una técnica denominada IHL (Input/Head Learning) combinada con un reinicio de los embeddings de entrada y de la cabeza LM.
 
 Arquitectura transformer decoder-only de 1.418 millones de parámetros, con licencia Apache 2.0 y pesos en formato safetensors. El checkpoint corresponde a la época 3 de un total de 20, lo que indica que forma parte de una curva de entrenamiento más amplia y no necesariamente representa el punto final del ajuste.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch03 | 1.418 M | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint de unlearning, época 3/20 |
-| locuslab/tofu_ft_phi-1.5 | ~1.3 B | no disponible | no disponible | HuggingFace | Modelo base ajustado en TOFU, sin unlearning |
-| microsoft/phi-1_5 | 1.3 B | 2048 tokens | MIT (según model card original) | HuggingFace | Modelo original de Microsoft, sin ajuste TOFU |
-| locuslab/tofu_llama2-7b | ~7 B | 4096 tokens | Llama 2 | HuggingFace | Alternativa de mayor tamaño para experimentos TOFU |
+| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch03 | 1.418 M | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint de unlearning, época 3/20 |
+| locuslab/tofu_ft_phi-1.5 | ~1.3 B | no disponible | no disponible | Hugging Face | Modelo base ajustado en TOFU, sin unlearning |
+| microsoft/phi-1_5 | 1.3 B | 2048 tokens | MIT (según model card original) | Hugging Face | Modelo original de Microsoft, sin ajuste TOFU |
+| locuslab/tofu_llama2-7b | ~7 B | 4096 tokens | Llama 2 | Hugging Face | Alternativa de mayor tamaño para experimentos TOFU |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch03
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch03
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia del dataset): no disponible en la información proporcionada

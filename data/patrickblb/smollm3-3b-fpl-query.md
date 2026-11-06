@@ -23,7 +23,7 @@ El adaptador se entreno sobre una cuantizacion a 4 bits del modelo base y report
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es SmolLM3-3B de HuggingFace, un transformer decoder de 3 mil millones de parametros con soporte nativo de tool-calling mediante el formato `<tool_call>`. Sobre el se aplica un adaptador LoRA/QLoRA entrenado con mlx-lm sobre una cuantizacion a 4 bits del modelo base (4 bits, group size 64, cuantizacion affine), en un Mac Apple Silicon (M5, 16 GB de memoria unificada). El resultado no es un modelo fusionado: el adaptador se carga junto al base cuantizado mediante el parametro `adapter_path` de mlx-lm.
+El modelo subyacente es SmolLM3-3B de Hugging Face, un transformer decoder de 3 mil millones de parametros con soporte nativo de tool-calling mediante el formato `<tool_call>`. Sobre el se aplica un adaptador LoRA/QLoRA entrenado con mlx-lm sobre una cuantizacion a 4 bits del modelo base (4 bits, group size 64, cuantizacion affine), en un Mac Apple Silicon (M5, 16 GB de memoria unificada). El resultado no es un modelo fusionado: el adaptador se carga junto al base cuantizado mediante el parametro `adapter_path` de mlx-lm.
 
 Los datos de entrenamiento son preguntas sinteticas en ingles sobre FPL, generadas por un modelo profesor (`minimaxai/minimax-m3.1-flash`), con sus consultas objetivo correspondientes. Todos los datos provienen de una instantanea de la temporada 2026-27 de FPL (fecha 2026-10-24, con la jornada 8 disputada y la 9 siguiente). No se ha publicado informacion sobre el numero de tokens de entrenamiento ni sobre el uso de RLHF/DPO.
 

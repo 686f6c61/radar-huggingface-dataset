@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Heretic-Abliterated-Uncensored (denominado RVN por su autor) es una variante abliterada del modelo Qwen3.8-27B, publicada por el usuario mincon en HuggingFace en formato GGUF para llama.cpp. El modelo parte de una abliteración previa realizada por trohrbaugh con la técnica ARA (Arbitrary-Rank Ablation) del proyecto heretic y aplica dos pasadas adicionales de pesos completos para eliminar los rechazos residuales.
+Qwen3.8-27B-Heretic-Abliterated-Uncensored (denominado RVN por su autor) es una variante abliterada del modelo Qwen3.8-27B, publicada por el usuario mincon en Hugging Face en formato GGUF para llama.cpp. El modelo parte de una abliteración previa realizada por trohrbaugh con la técnica ARA (Arbitrary-Rank Ablation) del proyecto heretic y aplica dos pasadas adicionales de pesos completos para eliminar los rechazos residuales.
 
 Conserva la arquitectura original de la familia Qwen3.8, un híbrido Gated DeltaNet con 64 capas (16 de atención estándar y 48 de atención lineal DeltaNet), 26.895.998.464 parámetros (aproximadamente 27B), hidden size 5120, 24 cabezas de atención con 4 cabezas KV (GQA), head_dim 256 y un vocabulario de 248.320 tokens. La ventana de contexto es de 262.144 tokens y la licencia Apache-2.0 se mantiene desde el modelo base.
 

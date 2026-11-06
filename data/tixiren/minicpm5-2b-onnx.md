@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tixiren/MiniCPM5-2B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/tixiren/MiniCPM5-2B-ONNX
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Proyecto webyIQ (chat arena): https://github.com/rtx527896828/webyIQ
 - Librería transformers.js: https://github.com/huggingface/transformers.js

@@ -98,7 +98,7 @@ El propio autor advierte de que estas cifras miden únicamente la concordancia c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-LFM3-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-LFM3-1.7B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - GGUF oficial del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Model card del modelo base en el commit de referencia: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/blob/b3f2ae5d73cd3c91bf40e8ba752c648aa05dffdf/README.md

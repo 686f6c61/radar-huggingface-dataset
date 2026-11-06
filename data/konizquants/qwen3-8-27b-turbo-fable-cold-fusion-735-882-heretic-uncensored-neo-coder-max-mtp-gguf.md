@@ -110,8 +110,8 @@ No se dispone de datos verificables de MMLU, HumanEval o GSM8K para ninguno de e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/konizquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/konizquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo predecesor citado por el autor (Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
-- Conjuntos de datos citados: DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets (rutas en HuggingFace no verificadas en la información disponible)
+- Conjuntos de datos citados: DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets (rutas en Hugging Face no verificadas en la información disponible)
 - La búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo: los resultados obtenidos tratan sobre Wikipedia y no guardan relación con la ficha. No se dispone de papers, blogs ni demos adicionales.

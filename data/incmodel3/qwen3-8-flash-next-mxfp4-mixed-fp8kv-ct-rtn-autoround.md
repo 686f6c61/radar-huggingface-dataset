@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-FP8KV-CT-RTN-AutoRound` es una cuantización de precisión mixta del modelo `Qwen/Qwen3.8-Flash-Next`, publicada por el usuario `INCModel3` en HuggingFace. No se trata de un modelo entrenado desde cero ni de una publicación del equipo Qwen: es un artefacto derivado, generado con la herramienta AutoRound de Intel, cuyo objetivo es reducir la huella de memoria del modelo original para hacer viable su despliegue en infraestructura propia.
+`INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-FP8KV-CT-RTN-AutoRound` es una cuantización de precisión mixta del modelo `Qwen/Qwen3.8-Flash-Next`, publicada por el usuario `INCModel3` en Hugging Face. No se trata de un modelo entrenado desde cero ni de una publicación del equipo Qwen: es un artefacto derivado, generado con la herramienta AutoRound de Intel, cuyo objetivo es reducir la huella de memoria del modelo original para hacer viable su despliegue en infraestructura propia.
 
 La cuantización combina pesos MXFP4 en las capas de expertos, MXFP8 en el resto de capas lineales y una caché KV estática en FP8, según el comando de reproducción incluido en la model card. El repositorio ocupa 180 GB y emplea el formato `compressed-tensors`, consumible por vLLM. La model card reporta resultados de evaluación en gsm8k (0,9280), mmlu (0,8646), hellaswag (0,6781) y piqa (0,8270), ejecutados con el arnés `lm_eval` sobre un checkpoint denominado `mxfp-w8g32`.
 
@@ -106,7 +106,7 @@ La información disponible no permite comparar parámetros, contexto, rendimient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-FP8KV-CT-RTN-AutoRound
+- Repositorio en Hugging Face: https://huggingface.co/INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-FP8KV-CT-RTN-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante del mismo autor sin caché KV en FP8: https://huggingface.co/INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-CT-RTN-AutoRound
 - AutoRound (Intel): https://github.com/intel/auto-round

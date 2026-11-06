@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/my-app-s/juggernaut-xl-v9-GGUF
+- Repositorio Hugging Face: https://huggingface.co/my-app-s/juggernaut-xl-v9-GGUF
 - Modelo base original: https://huggingface.co/RunDiffusion/Juggernaut-XL-v9
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp
 - Off Grid AI Desktop: https://offgridmobileai.co/

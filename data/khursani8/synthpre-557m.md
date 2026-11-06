@@ -72,7 +72,7 @@ No se han encontrado modelos comparables en la información disponible. No se pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khursani8/synthpre-557m
-- Perfil del autor en HuggingFace: https://huggingface.co/khursani8
+- Hugging Face: https://huggingface.co/khursani8/synthpre-557m
+- Perfil del autor en Hugging Face: https://huggingface.co/khursani8
 - Perfil del autor en GitHub: https://github.com/khursani8
 - Repositorio GitHub del autor: https://github.com/khursani8/khursani8

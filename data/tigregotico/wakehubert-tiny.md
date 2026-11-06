@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WakeHuBERT tiny es un extractor de características de voz en streaming de 0,64 millones de parámetros, desarrollado por TigreGotico y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo ni un clasificador: convierte audio mono a 16 kHz en vectores de 128 dimensiones a 50 fotogramas por segundo, que después alimentan a un clasificador externo (por ejemplo, una GRU) encargado de detectar una palabra de activación o wake word. Es el extractor que hay detrás del featurizer `wakehubert` del proyecto wakeforge.
+WakeHuBERT tiny es un extractor de características de voz en streaming de 0,64 millones de parámetros, desarrollado por TigreGotico y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo ni un clasificador: convierte audio mono a 16 kHz en vectores de 128 dimensiones a 50 fotogramas por segundo, que después alimentan a un clasificador externo (por ejemplo, una GRU) encargado de detectar una palabra de activación o wake word. Es el extractor que hay detrás del featurizer `wakehubert` del proyecto wakeforge.
 
 El problema que resuelve es concreto: permitir que un detector de wake word se entrene únicamente con voz sintética generada a partir de la palabra escrita como texto, sin necesidad de grabar miles de muestras reales. Para ello se destila de HuBERT-base, de forma que sus representaciones reproducen las capas 4, 8 y 12 del profesor, pero con una arquitectura estrictamente causal que puede ejecutarse en streaming sobre dispositivos modestos.
 
@@ -79,9 +79,9 @@ No hay una comparativa publicada con alternativas de la misma categoria. Los uni
 
 | Modelo | Parametros | Tipo de caracteristicas | Causalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WakeHuBERT tiny | 0,64 M | 128 dimensiones a 50 fps | Estrictamente causal, campo receptivo 2,5 s | Apache 2.0 | ONNX en HuggingFace |
+| WakeHuBERT tiny | 0,64 M | 128 dimensiones a 50 fps | Estrictamente causal, campo receptivo 2,5 s | Apache 2.0 | ONNX en Hugging Face |
 | Misma arquitectura sin enmascaramiento | no disponible | 128 dimensiones a 50 fps | Estrictamente causal | no disponible | Solo como referencia en la model card |
-| `facebook/hubert-base-ls960` (profesor) | no disponible en la informacion proporcionada | Capas 4, 8 y 12 usadas como objetivo de destilacion | No causal, pensado para representaciones offline | Apache 2.0 | HuggingFace y Transformers |
+| `facebook/hubert-base-ls960` (profesor) | no disponible en la informacion proporcionada | Capas 4, 8 y 12 usadas como objetivo de destilacion | No causal, pensado para representaciones offline | Apache 2.0 | Hugging Face y Transformers |
 
 Frente al profesor, la ventaja del alumno es el tamaño (0,64 M de parametros) y la causalidad, que habilita streaming; la contrapartida es una perdida de informacion que el propio autor senala al advertir que la concordancia con el profesor es un mal predictor de la calidad de deteccion. No se dispone de comparaciones con otros extractores de wake word (por ejemplo, soluciones comerciales tipo Picovoice Porcupine) en la informacion proporcionada.
 
@@ -97,12 +97,12 @@ Frente al profesor, la ventaja del alumno es el tamaño (0,64 M de parametros) y
 - Idiomas: aunque el entrenamiento incluye material de 41 idiomas, no hay ninguna evaluacion multilingue publicada; usarlo en un idioma distinto del ingles es una apuesta no medida.
 - Sesgos: no se documentan analisis de sesgo por acento, genero, edad o calidad de microfono. Dado que el detector de referencia se entreno con 900 clips sinteticos de voces clonadas, la generalizacion a hablantes reales diversos no esta caracterizada mas alla del benchmark citado.
 - Licencia: Apache 2.0 permite uso comercial con atribucion y sin garantias, la misma licencia que el profesor HuBERT-base. Los corpus de entrenamiento son CC BY 4.0 (LibriSpeech, Multilingual LibriSpeech, Multilingual Spoken Words), aunque la model card menciona tambien ruido derivado de AudioSet y MUSAN, cuyas condiciones de uso conviene revisar antes de un despliegue comercial.
-- Adopcion nula por el momento: 0 descargas y 0 likes en HuggingFace, con tamanos de repositorio que figuran como 0,0 GB. No existe validacion independiente de los resultados.
+- Adopcion nula por el momento: 0 descargas y 0 likes en Hugging Face, con tamanos de repositorio que figuran como 0,0 GB. No existe validacion independiente de los resultados.
 - Fecha de creacion posterior a la fecha de consulta habitual (2026-09-29): conviene verificar la vigencia y posibles actualizaciones del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TigreGotico/wakehubert-tiny
+- Modelo en Hugging Face: https://huggingface.co/TigreGotico/wakehubert-tiny
 - Proyecto wakeforge (featurizer `wakehubert`): https://github.com/TigreGotico/wakeforge
 - Profesor usado en la destilacion: https://huggingface.co/facebook/hubert-base-ls960
 - Referencia metodologica de destilacion por capas (DistilHuBERT): https://arxiv.org/abs/2110.01900

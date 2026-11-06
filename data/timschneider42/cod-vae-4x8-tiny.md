@@ -191,8 +191,8 @@ Los tres modelos comparten la misma forma latente (4×8), pero cada uno define s
 
 ## Enlaces
 
-- [HuggingFace: TimSchneider42/cod-vae-4x8-tiny](https://huggingface.co/TimSchneider42/cod-vae-4x8-tiny)
-- [HuggingFace: cod-vae-4x8](https://huggingface.co/TimSchneider42/cod-vae-4x8)
-- [HuggingFace: cod-vae-4x8-small](https://huggingface.co/TimSchneider42/cod-vae-4x8-small)
+- [Hugging Face: TimSchneider42/cod-vae-4x8-tiny](https://huggingface.co/TimSchneider42/cod-vae-4x8-tiny)
+- [Hugging Face: cod-vae-4x8](https://huggingface.co/TimSchneider42/cod-vae-4x8)
+- [Hugging Face: cod-vae-4x8-small](https://huggingface.co/TimSchneider42/cod-vae-4x8-small)
 - [Repositorio GitHub: TimSchneider42/cod-vae](https://github.com/TimSchneider42/cod-vae)
 - [Paper arXiv: Representing 3D Shapes with 64 Latent Vectors for 3D Diffusion Models](https://arxiv.org/abs/2503.08737)

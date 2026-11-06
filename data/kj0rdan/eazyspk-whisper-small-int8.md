@@ -79,7 +79,7 @@ La principal diferencia de esta version es el formato ONNX y la cuantizacion INT
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Kj0rdan/eazyspk-whisper-small-int8
-- Perfil del autor en HuggingFace: https://huggingface.co/Kj0rdan
+- Repositorio de Hugging Face: https://huggingface.co/Kj0rdan/eazyspk-whisper-small-int8
+- Perfil del autor en Hugging Face: https://huggingface.co/Kj0rdan
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Pagina de OpenASR con informacion de Whisper Small: https://openasr.org/models/whisper-small/

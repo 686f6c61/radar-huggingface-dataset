@@ -75,5 +75,5 @@ No disponible. No existen modelos comparables en la misma categoria porque este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wangzyuan/SafeRLHFV-Six-Model-Tiny-Engineering-Records
+- Repositorio en Hugging Face: https://huggingface.co/wangzyuan/SafeRLHFV-Six-Model-Tiny-Engineering-Records
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo ni demos.

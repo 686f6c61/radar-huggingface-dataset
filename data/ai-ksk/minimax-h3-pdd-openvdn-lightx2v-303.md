@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- [HuggingFace: AI-KSK/minimax-h3-pdd-openvdn-lightx2v-303](https://huggingface.co/AI-KSK/minimax-h3-pdd-openvdn-lightx2v-303)
+- [Hugging Face: AI-KSK/minimax-h3-pdd-openvdn-lightx2v-303](https://huggingface.co/AI-KSK/minimax-h3-pdd-openvdn-lightx2v-303)
 - Workflows referenciados en la model card: `workflows/MiniMax H3｜PDD 8步｜参考生视频.json`, `workflows/MiniMax H3｜PDD 8步｜首尾帧视频.json`, `workflows/MiniMax H3｜OpenVDN DMD8｜参考生视频.json`, `workflows/MiniMax H3｜OpenVDN DMD8｜首尾帧视频.json`
 - Portadas referenciadas: `covers/MiniMax H3｜PDD 8步｜参考生视频.webp`, `covers/MiniMax H3｜PDD 8步｜首尾帧视频.webp`, `covers/MiniMax H3｜OpenVDN DMD8｜参考生视频.webp`, `covers/MiniMax H3｜OpenVDN DMD8｜首尾帧视频.webp`
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

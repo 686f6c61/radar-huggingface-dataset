@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franka-Insert-Tube-pi05-HG-DAgger-2epochs-20261105 es un checkpoint de inferencia para robótica derivado de pi0.5, el modelo de visión-lenguaje-acción (VLA) de Physical Intelligence, publicado por el usuario dddddsds31341 en HuggingFace. El modelo está especializado en una tarea concreta de manipulación robótica: insertar un tubo con un brazo Franka. No es un modelo de propósito general, sino un ajuste fino orientado a una única política de control entrenada con demostraciones offline y marcos de intervención humana.
+Franka-Insert-Tube-pi05-HG-DAgger-2epochs-20261105 es un checkpoint de inferencia para robótica derivado de pi0.5, el modelo de visión-lenguaje-acción (VLA) de Physical Intelligence, publicado por el usuario dddddsds31341 en Hugging Face. El modelo está especializado en una tarea concreta de manipulación robótica: insertar un tubo con un brazo Franka. No es un modelo de propósito general, sino un ajuste fino orientado a una única política de control entrenada con demostraciones offline y marcos de intervención humana.
 
 El entrenamiento sigue el esquema HG-DAgger (Human-Gated DAgger), una variante de DAgger en la que un operador humano interviene durante la recolección de datos para corregir la política cuando esta se desvía. El checkpoint corresponde a la inferencia tras dos épocas completas sobre demostraciones offline y marcos de intervención, con un horizonte de acción de 10 pasos y la normalización original conservada. El repositorio ocupa 12,4 GB e incluye pesos de inferencia y activos de normalización, pero no el estado del optimizador.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Franka-Insert-Tube-pi05-HG-DAgger-2epochs-20261105 | no disponible | no disponible | Inserción de tubo con Franka | no disponible | HuggingFace, 0 descargas |
-| Franka-Insert-Tube-pi05-step-20000 (modelo base) | no disponible | no disponible | Inserción de tubo con Franka | no disponible | HuggingFace |
+| Franka-Insert-Tube-pi05-HG-DAgger-2epochs-20261105 | no disponible | no disponible | Inserción de tubo con Franka | no disponible | Hugging Face, 0 descargas |
+| Franka-Insert-Tube-pi05-step-20000 (modelo base) | no disponible | no disponible | Inserción de tubo con Franka | no disponible | Hugging Face |
 | pi0.5 (Physical Intelligence) | no disponible | no disponible | VLA generalista | no disponible | No confirmado en la información |
 
 No se dispone de datos de rendimiento, parámetros ni contexto para establecer una comparación cuantitativa con alternativas. La comparativa se limita a la relación de linaje entre el checkpoint y su modelo base.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento, parámetros ni contexto para establecer u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dddddsds31341/Franka-Insert-Tube-pi05-HG-DAgger-2epochs-20261105
+- Hugging Face: https://huggingface.co/dddddsds31341/Franka-Insert-Tube-pi05-HG-DAgger-2epochs-20261105
 - Modelo base: https://huggingface.co/dddddsds31341/Franka-Insert-Tube-pi05-step-20000
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/bofang/franka_hg_dagger/runs/bbc04c13
 - Librería openpi: no se proporciona enlace directo en la información disponible

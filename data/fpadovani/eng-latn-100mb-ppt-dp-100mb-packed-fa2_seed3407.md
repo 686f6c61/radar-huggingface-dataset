@@ -22,8 +22,8 @@ Su relevancia es la de un artefacto de reproducibilidad: un checkpoint pequeño,
 | Formato de pesos | `safetensors` (compatible con `transformers`) |
 | Modelo base | `goldfish-models/eng_latn_100mb` |
 | Autor | `fpadovani` |
-| Fecha de creación | 2026-09-19 (según metadatos de HuggingFace) |
-| Última actualización | 2026-09-19 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-19 (según metadatos de Hugging Face) |
+| Última actualización | 2026-09-19 (según metadatos de Hugging Face) |
 | Tamaño del repositorio | 0,3 GB |
 | Descargas / likes | 0 / 0 |
 | Librería | `transformers` |
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa2_seed3407` | 124.770.816 | No disponible | No disponible | No disponible | Pública en HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Pública en HuggingFace |
+| `fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa2_seed3407` | 124.770.816 | No disponible | No disponible | No disponible | Pública en Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Pública en Hugging Face |
 | GPT-2 small | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Referencia de la familia arquitectónica |
 | DistilGPT2 | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Referencia de la familia arquitectónica |
 
@@ -97,11 +97,11 @@ No se dispone de datos verificados en la información proporcionada para complet
 - Formato de prompt no especificado: el ejemplo usa una lista de mensajes con rol `user`, pero se desconoce el template exacto de entrenamiento; usar otro formato puede degradar la calidad de forma notable.
 - Sin soporte verificado de `tool calling`, agentes, código o matemáticas: no es adecuado para pipelines de CI/CD, automatización de atención al cliente ni tareas que exijan fiabilidad.
 - Estado del repositorio: cero descargas y cero likes, creado y actualizado el mismo día, sin validación por parte de la comunidad.
-- La fecha de creación registrada en HuggingFace (2026-09-19) es posterior a la fecha de la mayoría de versiones de las librerías indicadas; conviene verificarla antes de citar el modelo.
+- La fecha de creación registrada en Hugging Face (2026-09-19) es posterior a la fecha de la mayoría de versiones de las librerías indicadas; conviene verificarla antes de citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa2_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa2_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/o1r4g8jf
 - Repositorio de TRL: https://github.com/huggingface/trl

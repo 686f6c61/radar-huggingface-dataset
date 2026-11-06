@@ -64,9 +64,9 @@ La familia Qwen3-ASR-Refiner incluye tres variantes con el mismo objetivo de nor
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ASR-Refiner-0.6B | 596M | no disponible | zh | Apache 2.0 | HuggingFace |
-| Qwen3-ASR-Refiner-1.7B | 1.7B | no disponible | zh | Apache 2.0 | HuggingFace |
-| Qwen3-ASR-Refiner-4B | 4B | no disponible | zh | Apache 2.0 | HuggingFace |
+| Qwen3-ASR-Refiner-0.6B | 596M | no disponible | zh | Apache 2.0 | Hugging Face |
+| Qwen3-ASR-Refiner-1.7B | 1.7B | no disponible | zh | Apache 2.0 | Hugging Face |
+| Qwen3-ASR-Refiner-4B | 4B | no disponible | zh | Apache 2.0 | Hugging Face |
 
 No se dispone de comparación con otros modelos de post-procesado ASR en chino (por ejemplo, modelos de normalización de texto como Text Normalization de NVIDIA o sistemas basados en reglas). La elección entre las variantes depende del presupuesto de hardware y de la calidad deseada: los modelos más grandes probablemente ofrecen mayor fidelidad, pero no hay datos publicados que confirmen una diferencia.
 
@@ -82,9 +82,9 @@ No se dispone de comparación con otros modelos de post-procesado ASR en chino (
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Aye10032/Qwen3-ASR-Refiner-0.6B](https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-0.6B)
+- Modelo en Hugging Face: [Aye10032/Qwen3-ASR-Refiner-0.6B](https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-0.6B)
 - Dataset de entrenamiento: [Aye10032/WenetSpeech-Formal-Text](https://huggingface.co/datasets/Aye10032/WenetSpeech-Formal-Text)
 - Modelo base: [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - Familia de modelos (1.7B y 4B): [Aye10032/Qwen3-ASR-Refiner-1.7B](https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-1.7B), [Aye10032/Qwen3-ASR-Refiner-4B](https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-4B)
 - Repositorio de Qwen3-ASR (relacionado, no el mismo modelo): [GitHub QwenLM/Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR)
-- Colección de Qwen3-ASR en HuggingFace: [Qwen3-ASR collection](https://huggingface.co/collections/Qwen/qwen3-asr)
+- Colección de Qwen3-ASR en Hugging Face: [Qwen3-ASR collection](https://huggingface.co/collections/Qwen/qwen3-asr)

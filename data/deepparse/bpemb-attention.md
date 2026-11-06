@@ -2,7 +2,7 @@
 
 ## Resumen
 
-deepparse/bpemb-attention es un modelo de *parsing* de direcciones postales (address parsing) desarrollado por el equipo de deepparse (GRAAL-Research) y publicado en HuggingFace bajo licencia MIT. No es un modelo de lenguaje generativo, sino un sistema de etiquetado secuencial especializado que descompone una dirección en campos estructurados: número de calle, nombre de calle, unidad, municipio, provincia, código postal, orientación y entrega general. Con 17,5 millones de parámetros y un tamaño de repositorio de 0,1 GB, está pensado para integrarse como componente dentro de pipelines de normalización y geocodificación de direcciones.
+deepparse/bpemb-attention es un modelo de *parsing* de direcciones postales (address parsing) desarrollado por el equipo de deepparse (GRAAL-Research) y publicado en Hugging Face bajo licencia MIT. No es un modelo de lenguaje generativo, sino un sistema de etiquetado secuencial especializado que descompone una dirección en campos estructurados: número de calle, nombre de calle, unidad, municipio, provincia, código postal, orientación y entrega general. Con 17,5 millones de parámetros y un tamaño de repositorio de 0,1 GB, está pensado para integrarse como componente dentro de pipelines de normalización y geocodificación de direcciones.
 
 Técnicamente es un modelo Seq2Seq con encoder y decoder LSTM de una capa, tamaño oculto 1024 y un mecanismo de atención, que utiliza los embeddings subword multilingües BPEmb (100 000 merges, 300 dimensiones) embebidos por palabra mediante una LSTM bidireccional. Fue entrenado en 2020 sobre el dataset de deepparse-address-data, construido a partir de datos de libpostal y que cubre direcciones de 20 países.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estandar de LLM (MMLU, HumanEval, G
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepparse/bpemb-attention | 17,5 M | no disponible | Seq2Seq LSTM con atencion y embeddings BPEmb | MIT | HuggingFace (deepparse) |
-| Otros modelos de deepparse (variantes fasttext, bpemb sin atencion) | no disponible | no disponible | Parsers de direcciones de la misma familia | MIT | HuggingFace (deepparse) |
+| deepparse/bpemb-attention | 17,5 M | no disponible | Seq2Seq LSTM con atencion y embeddings BPEmb | MIT | Hugging Face (deepparse) |
+| Otros modelos de deepparse (variantes fasttext, bpemb sin atencion) | no disponible | no disponible | Parsers de direcciones de la misma familia | MIT | Hugging Face (deepparse) |
 | libpostal | no disponible | no disponible | Libreria de parsing de direcciones basada en reglas y datos | MIT | GitHub (openvenues) |
 
 No se dispone en la informacion proporcionada de datos de rendimiento de las alternativas para una comparacion cuantitativa; la comparativa con modelos de la misma familia de deepparse y con libpostal se limita a enfoque, licencia y disponibilidad.
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepparse/bpemb-attention
+- Modelo en Hugging Face: https://huggingface.co/deepparse/bpemb-attention
 - Documentacion de deepparse: https://deepparse.org
 - Pagina de resultados: https://deepparse.org/results.html
 - Repositorio de datos de entrenamiento: https://github.com/GRAAL-Research/deepparse-address-data

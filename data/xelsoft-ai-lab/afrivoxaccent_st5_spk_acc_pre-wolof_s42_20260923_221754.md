@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260923_221754 es un modelo de síntesis de voz (text-to-speech) publicado en HuggingFace por el usuario xelsoft-ai-lab. Está construido sobre la arquitectura SpeechT5, un transformer encoder-decoder unificado para tareas de habla y texto, y cuenta con 144.439.266 parámetros reales verificados en los pesos safetensors del repositorio. El identificador del modelo indica que se trata de un ajuste fino orientado a acento y hablante (los segmentos `spk_acc` y `pre-wolof`) sobre datos de wolof, con semilla 42, dentro de una familia denominada AfriVoxAccent.
+AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260923_221754 es un modelo de síntesis de voz (text-to-speech) publicado en Hugging Face por el usuario xelsoft-ai-lab. Está construido sobre la arquitectura SpeechT5, un transformer encoder-decoder unificado para tareas de habla y texto, y cuenta con 144.439.266 parámetros reales verificados en los pesos safetensors del repositorio. El identificador del modelo indica que se trata de un ajuste fino orientado a acento y hablante (los segmentos `spk_acc` y `pre-wolof`) sobre datos de wolof, con semilla 42, dentro de una familia denominada AfriVoxAccent.
 
 El problema que aborda es la escasez de voces sintéticas de calidad para lenguas africanas de bajos recursos, en este caso el wolof, hablado principalmente en Senegal, Gambia y Mauritania. La mayoría de los sistemas TTS comerciales y abiertos están dominados por inglés y un puñado de lenguas europeas y asiáticas, por lo que los ajustes finos sobre SpeechT5 con datos específicos de una lengua africana cubren un hueco relevante para investigadores de lingüística computacional, desarrolladores de asistentes de voz locales y proyectos de accesibilidad.
 
-Es importante señalar que la model card del autor es la plantilla automática de HuggingFace y no contiene información sustantiva: sección tras sección aparece el marcador `[More Information Needed]`. No hay datos publicados sobre el dataset de entrenamiento, hiperparámetros, licencia ni idiomas soportados más allá de lo que se deduce del nombre del repositorio. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y el tamaño total es de 0,6 GB.
+Es importante señalar que la model card del autor es la plantilla automática de Hugging Face y no contiene información sustantiva: sección tras sección aparece el marcador `[More Information Needed]`. No hay datos publicados sobre el dataset de entrenamiento, hiperparámetros, licencia ni idiomas soportados más allá de lo que se deduce del nombre del repositorio. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y el tamaño total es de 0,6 GB.
 
 ## Especificaciones tecnicas
 
@@ -28,9 +28,9 @@ Es importante señalar que la model card del autor es la plantilla automática d
 
 ## Arquitectura y entrenamiento
 
-SpeechT5 es una arquitectura propuesta por Microsoft Research que unifica el preentrenamiento de modalidades de habla y texto mediante una red encoder-decoder compartida, con codificadores y decodificadores específicos por modalidad, y "pre-nets" y "post-nets" que proyectan las representaciones hacia el espacio latente común. El backbone del modelo base emplea 12 capas de encoder y 12 de decoder con dimensión oculta de 768 y 12 cabezas de atención, lo que da lugar a un recuento de parámetros coherente con los 144,4 millones medidos en este repositorio. La generación acústica se realiza mediante un decoder autorregresivo de mel-espectrogramas y un vocoder neuronal (HiFi-GAN en la implementación de referencia de HuggingFace).
+SpeechT5 es una arquitectura propuesta por Microsoft Research que unifica el preentrenamiento de modalidades de habla y texto mediante una red encoder-decoder compartida, con codificadores y decodificadores específicos por modalidad, y "pre-nets" y "post-nets" que proyectan las representaciones hacia el espacio latente común. El backbone del modelo base emplea 12 capas de encoder y 12 de decoder con dimensión oculta de 768 y 12 cabezas de atención, lo que da lugar a un recuento de parámetros coherente con los 144,4 millones medidos en este repositorio. La generación acústica se realiza mediante un decoder autorregresivo de mel-espectrogramas y un vocoder neuronal (HiFi-GAN en la implementación de referencia de Hugging Face).
 
-No hay información publicada sobre el procedimiento de entrenamiento de este ajuste concreto. El nombre del repositorio sugiere un ajuste fino condicionado por hablante y acento (`spk_acc`) sobre un corpus de wolof preprocesado, pero ni la composición del dataset, ni el número de tokens o de horas de audio, ni si se emplearon técnicas de alineamiento forzado, RLHF o DPO aparecen documentados en la model card. Tampoco se especifica si se entrenó el vocoder de forma conjunta o si se reutiliza un vocoder preentrenado. El tag `arxiv:1910.09700` del repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, incluido en la plantilla de HuggingFace, y no al artículo de SpeechT5 (arXiv:2110.07205), por lo que no debe interpretarse como una referencia a la arquitectura.
+No hay información publicada sobre el procedimiento de entrenamiento de este ajuste concreto. El nombre del repositorio sugiere un ajuste fino condicionado por hablante y acento (`spk_acc`) sobre un corpus de wolof preprocesado, pero ni la composición del dataset, ni el número de tokens o de horas de audio, ni si se emplearon técnicas de alineamiento forzado, RLHF o DPO aparecen documentados en la model card. Tampoco se especifica si se entrenó el vocoder de forma conjunta o si se reutiliza un vocoder preentrenado. El tag `arxiv:1910.09700` del repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, incluido en la plantilla de Hugging Face, y no al artículo de SpeechT5 (arXiv:2110.07205), por lo que no debe interpretarse como una referencia a la arquitectura.
 
 ## Capacidades
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriVoxAccent_ST5_spk_acc_pre-wolof_s42 | 144,4 M | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| SpeechT5 base TTS (microsoft/speecht5_tts) | ~144 M | no aplica (TTS) | MOS reportado en el paper original para inglés | MIT | HuggingFace, ampliamente usado |
-| MMS-TTS wolof (facebook/mms-tts-wol) | ~36 M (VITS) | no aplica (TTS) | no disponible | CC-BY-NC 4.0 | HuggingFace |
-| XTTS-v2 (Coqui) | ~470 M | no aplica (TTS) | soporte multilingüe de 17 idiomas; wolof no incluido | Coqui Public Model License (no comercial) | HuggingFace |
+| AfriVoxAccent_ST5_spk_acc_pre-wolof_s42 | 144,4 M | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| SpeechT5 base TTS (microsoft/speecht5_tts) | ~144 M | no aplica (TTS) | MOS reportado en el paper original para inglés | MIT | Hugging Face, ampliamente usado |
+| MMS-TTS wolof (facebook/mms-tts-wol) | ~36 M (VITS) | no aplica (TTS) | no disponible | CC-BY-NC 4.0 | Hugging Face |
+| XTTS-v2 (Coqui) | ~470 M | no aplica (TTS) | soporte multilingüe de 17 idiomas; wolof no incluido | Coqui Public Model License (no comercial) | Hugging Face |
 
 La comparación directa con benchmarks no es posible porque este repositorio no publica evaluación alguna. La alternativa más cercana por arquitectura es el SpeechT5 base de Microsoft, del que probablemente deriva, y la alternativa más cercana por cobertura lingüística es el modelo MMS-TTS de wolof de Meta, con una arquitectura completamente distinta (VITS) y una licencia que restringe el uso comercial.
 
@@ -93,7 +93,7 @@ La comparación directa con benchmarks no es posible porque este repositorio no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260923_221754
+- Modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260923_221754
 - Variante previa del mismo autor: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451
 - Otra variante previa: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939
 - Repositorio relacionado (LoRA sobre Qwen3): https://free2aitools.com/model/xelsoft-ai-lab/afrivoxaccent_qw3_spk_acc_12hz_lora-r16_frac25_s42_20260913_111625

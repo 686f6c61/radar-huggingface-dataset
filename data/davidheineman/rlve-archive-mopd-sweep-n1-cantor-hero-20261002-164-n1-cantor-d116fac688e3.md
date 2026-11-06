@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rlve-archive-mopd-sweep-n1-cantor-hero-20261002-164-n1-cantor es un checkpoint archivado publicado por el usuario davidheineman en HuggingFace. No se trata de un modelo con model card descriptiva al uso: el repositorio es un volcado de un checkpoint final de un run de entrenamiento ya completado, identificado internamente como `n1-cantor`, perteneciente a una sweep denominada `mopd-sweep` y a la ruta de scratch `runs/mopd-sweep-n1-cantor-hero-20261002-164427/resumable/n1-cantor`. El autor lo etiqueta como `rlve` y `scratch-archive`, lo que indica que su propósito es la preservacion de artefactos de experimentos, no su distribucion como modelo listo para produccion.
+rlve-archive-mopd-sweep-n1-cantor-hero-20261002-164-n1-cantor es un checkpoint archivado publicado por el usuario davidheineman en Hugging Face. No se trata de un modelo con model card descriptiva al uso: el repositorio es un volcado de un checkpoint final de un run de entrenamiento ya completado, identificado internamente como `n1-cantor`, perteneciente a una sweep denominada `mopd-sweep` y a la ruta de scratch `runs/mopd-sweep-n1-cantor-hero-20261002-164427/resumable/n1-cantor`. El autor lo etiqueta como `rlve` y `scratch-archive`, lo que indica que su propósito es la preservacion de artefactos de experimentos, no su distribucion como modelo listo para produccion.
 
 El checkpoint pesa 1.777.088.000 parametros reales medidos sobre los ficheros safetensors (aproximadamente 1,78 mil millones), lo que lo situa en la categoria de modelos pequenos. La etiqueta `qwen2` indica que la arquitectura subyacente es de la familia Qwen2, aunque el repositorio no documenta ni la longitud de contexto, ni los idiomas, ni la licencia, ni los datos de entrenamiento. El formato de pesos es safetensors y el tamano total del repositorio es de 3,6 GB.
 
@@ -77,7 +77,7 @@ La comparativa se limita a modelos abiertos del mismo orden de magnitud (~1-2 B 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rlve-archive-mopd-sweep-n1-cantor (este checkpoint) | 1,78 B (medido) | no disponible | no disponible | safetensors en HuggingFace, 0 descargas |
+| rlve-archive-mopd-sweep-n1-cantor (este checkpoint) | 1,78 B (medido) | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
 | Qwen2-1.5B | ~1,5 B | 32.768 tokens (segun su model card publica) | Apache-2.0 (segun su model card publica) | safetensors, ampliamente utilizado |
 | Llama-3.2-1B | ~1,23 B | 128.000 tokens (segun su model card publica) | Licencia comunitaria Llama 3.2 | safetensors, pesos oficiales y GGUF |
 | SmolLM2-1.7B | ~1,7 B | 8.192 tokens (segun su model card publica) | Apache-2.0 (segun su model card publica) | safetensors y GGUF |
@@ -99,11 +99,11 @@ En terminos de rendimiento no es posible establecer comparacion alguna: no exist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-cantor-hero-20261002-164-n1-cantor-d116fac688e3
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-cantor-hero-20261002-164-n1-cantor-d116fac688e3
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o articulo tecnico: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Run de Weights & Biases: no disponible como enlace publico; solo se conoce el identificador `fee317f4`
 - Enlaces adicionales: la busqueda web no devolvio ninguna fuente relacionada con el modelo; los resultados obtenidos (iStock, Moviefone, IMDb y otros) no guardan relacion con este checkpoint y se descartan.

@@ -6,7 +6,7 @@
 
 El interés de esta ficha es acotado pero legítimo: sirve como artefacto de investigación para estudiar el comportamiento de los transformers de ~1,7 B parámetros bajo una poda no estructurada muy agresiva (sparsity 0.9) y para evaluar si la degradación de calidad a ese nivel de compresión es aceptable en tareas concretas. No hay evidencia publicada en el repositorio de que el modelo se haya reentrenado o ajustado tras la poda, lo que condiciona fuertemente cualquier uso en producción.
 
-La model card es la plantilla automática de HuggingFace y no contiene información sustantiva: no declara autoría real, idiomas, licencia, datos de entrenamiento ni métricas. El repositorio tiene 0 descargas y 0 "likes", sin checkpoints cuantizados ni versiones GGUF. Todo lo que figura en esta ficha procede de los metadatos del Hub, del recuento real de parámetros en safetensors y de las características conocidas del modelo base BLOOM-1b7 y del método de poda referenciado.
+La model card es la plantilla automática de Hugging Face y no contiene información sustantiva: no declara autoría real, idiomas, licencia, datos de entrenamiento ni métricas. El repositorio tiene 0 descargas y 0 "likes", sin checkpoints cuantizados ni versiones GGUF. Todo lo que figura en esta ficha procede de los metadatos del Hub, del recuento real de parámetros en safetensors y de las características conocidas del modelo base BLOOM-1b7 y del método de poda referenciado.
 
 ## Especificaciones técnicas
 
@@ -50,7 +50,7 @@ Sobre este checkpoint en concreto no hay información de entrenamiento: la model
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla automática de HuggingFace y la sección de evaluación está vacía (`[More Information Needed]`). No hay valores de MMLU, HellaSwag, HumanEval, GSM8K ni perplejidad, ni comparación con el modelo denso original, que es precisamente la medición que un checkpoint podado necesita para ser evaluable.
+No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla automática de Hugging Face y la sección de evaluación está vacía (`[More Information Needed]`). No hay valores de MMLU, HellaSwag, HumanEval, GSM8K ni perplejidad, ni comparación con el modelo denso original, que es precisamente la medición que un checkpoint podado necesita para ser evaluable.
 
 ## Requisitos de hardware
 
@@ -87,7 +87,7 @@ No es posible comparar rendimiento: no hay ninguna métrica publicada de este ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.9
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.9
 - Modelo base BLOOM-1b7: https://huggingface.co/bigscience/bloom-1b7
 - Paper de Wanda (método de poda al que apunta el nombre del checkpoint, no enlazado desde la model card): https://arxiv.org/abs/2306.11695
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, estimación de emisiones): https://arxiv.org/abs/1910.09700

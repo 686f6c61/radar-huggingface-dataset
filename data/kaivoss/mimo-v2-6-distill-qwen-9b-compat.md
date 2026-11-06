@@ -91,9 +91,9 @@ No se han publicado en la informacion disponible resultados en benchmarks estand
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento de referencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-compat | ~9,65 B densos | no disponible | MIT | Ver tabla de benchmarks (SWE Verified 61,1; Terminal Bench 2.1 37,1) | HuggingFace, transformers / safetensors |
-| Qwen3.5-9B (modelo base) | ~9 B densos (dato exacto no disponible) | no disponible | no disponible en la informacion proporcionada | SWE Verified 60,0; Terminal Bench 2.1 27,0 | HuggingFace |
-| MiMo-V2.6-Pro-RL (referenciado en el informe tecnico) | no disponible | no disponible | no disponible | no disponible; corresponde a la variante tras RL | HuggingFace (XiaomiMiMo/MiMo-V2.6-Pro-RL) |
+| MiMo-V2.6-Distill-Qwen-9B-compat | ~9,65 B densos | no disponible | MIT | Ver tabla de benchmarks (SWE Verified 61,1; Terminal Bench 2.1 37,1) | Hugging Face, transformers / safetensors |
+| Qwen3.5-9B (modelo base) | ~9 B densos (dato exacto no disponible) | no disponible | no disponible en la informacion proporcionada | SWE Verified 60,0; Terminal Bench 2.1 27,0 | Hugging Face |
+| MiMo-V2.6-Pro-RL (referenciado en el informe tecnico) | no disponible | no disponible | no disponible | no disponible; corresponde a la variante tras RL | Hugging Face (XiaomiMiMo/MiMo-V2.6-Pro-RL) |
 
 La comparacion directa disponible se limita al modelo base: el SFT aporta mejoras notables en todos los dominios reportados, con los saltos mas acusados en MiMo Cyber (5,7 → 31,3), AutomationBench (5,0 → 30,3) y JobBench (2,6 → 18,3).
 

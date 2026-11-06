@@ -71,10 +71,10 @@ Suma 4.981 ticks, media 4,981 s, los cinco episodios terminan. El control v4 en 
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sock-heist-6m-rz-tail-r2 (este) | no disponible (ONNX 1,2 MB) | no aplica | media 4,981 s en 5 seeds in-sample | no disponible / upstream sin resolver | HuggingFace, 0 descargas |
-| lphatnguyen/microduck-sock-heist-6m-v4 | no disponible | no aplica | 4,987 s en el mismo lanzamiento (control) | no declarada | HuggingFace |
-| jrubiosainz/microduck-sock-heist-6m-rz-tail-r1n | no disponible | no aplica | no disponible | no declarada (NOTICE y Apache parcial) | HuggingFace |
-| rumezhak/microduck-sock-heist-second-green-v2 | no disponible | no aplica | no disponible | no declarada | HuggingFace |
+| microduck-sock-heist-6m-rz-tail-r2 (este) | no disponible (ONNX 1,2 MB) | no aplica | media 4,981 s en 5 seeds in-sample | no disponible / upstream sin resolver | Hugging Face, 0 descargas |
+| lphatnguyen/microduck-sock-heist-6m-v4 | no disponible | no aplica | 4,987 s en el mismo lanzamiento (control) | no declarada | Hugging Face |
+| jrubiosainz/microduck-sock-heist-6m-rz-tail-r1n | no disponible | no aplica | no disponible | no declarada (NOTICE y Apache parcial) | Hugging Face |
+| rumezhak/microduck-sock-heist-second-green-v2 | no disponible | no aplica | no disponible | no declarada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Suma 4.981 ticks, media 4,981 s, los cinco episodios terminan. El control v4 en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-rz-tail-r2
+- Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-rz-tail-r2
 - Base v4: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v4
 - Base v3: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3
 - Base rz-tail-r1n: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-rz-tail-r1n

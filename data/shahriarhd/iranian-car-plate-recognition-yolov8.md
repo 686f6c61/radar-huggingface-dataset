@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `shahriarhd/iranian-car-plate-recognition-yolov8` es un detector de objetos basado en la arquitectura YOLOv8n (la variante nano de Ultralytics) especializado en la deteccion y lectura de matricula de vehiculos iranies. Lo desarrolla el usuario de HuggingFace shahriarhd y resuelve un problema muy concreto de vision por computador: localizar la placa del vehiculo y, en la misma pasada, clasificar los digitos persas y las letras que la componen, ademas de marcadores especiales como taxi, policia o discapacidad. Con 3.029.243 parametros (aproximadamente 3 millones), es un modelo extremadamente ligero pensado para inferencia en tiempo real en dispositivos de borde.
+El modelo `shahriarhd/iranian-car-plate-recognition-yolov8` es un detector de objetos basado en la arquitectura YOLOv8n (la variante nano de Ultralytics) especializado en la deteccion y lectura de matricula de vehiculos iranies. Lo desarrolla el usuario de Hugging Face shahriarhd y resuelve un problema muy concreto de vision por computador: localizar la placa del vehiculo y, en la misma pasada, clasificar los digitos persas y las letras que la componen, ademas de marcadores especiales como taxi, policia o discapacidad. Con 3.029.243 parametros (aproximadamente 3 millones), es un modelo extremadamente ligero pensado para inferencia en tiempo real en dispositivos de borde.
 
 Su relevancia actual radica en que el reconocimiento automatico de matriculas (ALPR/ANPR) para el alfabeto persa es un nicho poco cubierto por los modelos genericos, que suelen entrenarse con caracteres latinos. Este modelo cubre ese hueco con una unica red de 41 clases que combina deteccion de placa y reconocimiento de caracteres, y ofrece artefactos exportados a ONNX y NCNN listos para desplegar en navegador, Raspberry Pi o sistemas embebidos. La licencia MIT y el reducido tamano del repositorio (0,1 GB) facilitan su integracion en productos comerciales.
 
-El modelo se publico en noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes en HuggingFace, por lo que se trata de un artefacto reciente y sin validacion comunitaria amplia. No es un modelo de lenguaje: no genera texto ni razona, sino que produce cajas delimitadoras y etiquetas de clase sobre imagenes.
+El modelo se publico en noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes en Hugging Face, por lo que se trata de un artefacto reciente y sin validacion comunitaria amplia. No es un modelo de lenguaje: no genera texto ni razona, sino que produce cajas delimitadoras y etiquetas de clase sobre imagenes.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shahriarhd/iranian-car-plate-recognition-yolov8 | 3,03 M | Deteccion de placa + caracteres persas (41 clases) | no aplica | MIT | HuggingFace, formatos PT/SafeTensors/ONNX/NCNN |
+| shahriarhd/iranian-car-plate-recognition-yolov8 | 3,03 M | Deteccion de placa + caracteres persas (41 clases) | no aplica | MIT | Hugging Face, formatos PT/SafeTensors/ONNX/NCNN |
 | YOLOv8n estandar (Ultralytics) | ~3,2 M | Deteccion de objetos genericos (COCO, 80 clases) | no aplica | AGPL-3.0 (o comercial) | Ultralytics, ampliamente disponible |
 | YOLOv8s estandar (Ultralytics) | ~11,2 M | Deteccion de objetos genericos (COCO, 80 clases) | no aplica | AGPL-3.0 (o comercial) | Ultralytics, ampliamente disponible |
 | Modelos ALPR genericos con OCR latino | variable | Deteccion de placa + OCR latino | no aplica | variable | variable |
@@ -86,7 +86,7 @@ La comparacion directa con otros modelos ALPR para matriculas persas no esta dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shahriarhd/iranian-car-plate-recognition-yolov8
+- Modelo en Hugging Face: https://huggingface.co/shahriarhd/iranian-car-plate-recognition-yolov8
 - Repositorio de Ultralytics YOLOv8 (framework base): https://github.com/ultralytics/ultralytics
 - Documentacion de Ultralytics: https://docs.ultralytics.com/
 - ONNX Runtime: https://onnxruntime.ai/

@@ -6,7 +6,7 @@
 
 La relevancia de esta ficha es acotada pero clara: se trata de una publicacion de nicho, con 17 descargas y ningun "like" en el momento de la consulta, orientada a un dominio muy concreto y a un unico idioma (coreano). No es un modelo fundacional ni compite en benchmarks generales; es un ejemplo tipico de adaptacion ligera de un modelo pequeno para un vertical especifico mediante PEFT.
 
-El repositorio es de tamano practicamente nulo (0.0 GB segun HuggingFace), coherente con un adaptador LoRA de rango bajo (r=8) sobre un modelo de 0,8B. La licencia declarada es Apache 2.0, heredada del modelo base. No se dispone de informacion publica sobre benchmarks, composicion exacta del dataset ni detalles del proceso de entrenamiento mas alla de los hiperparametros indicados en la model card.
+El repositorio es de tamano practicamente nulo (0.0 GB segun Hugging Face), coherente con un adaptador LoRA de rango bajo (r=8) sobre un modelo de 0,8B. La licencia declarada es Apache 2.0, heredada del modelo base. No se dispone de informacion publica sobre benchmarks, composicion exacta del dataset ni detalles del proceso de entrenamiento mas alla de los hiperparametros indicados en la model card.
 
 ## Especificaciones tecnicas
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento para comparar con alternativas concretas. 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Gahyun0121/qwen3.5-0.8b-labor-lora
+- Hugging Face del adaptador: https://huggingface.co/Gahyun0121/qwen3.5-0.8b-labor-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gahyun0121/labor-counsel-qa

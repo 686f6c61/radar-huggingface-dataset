@@ -21,7 +21,7 @@ Al partir de Qwen2.5-7B-Instruct, el modelo hereda la arquitectura transformer d
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de unsloth/Qwen2.5-7B-Instruct, un modelo transformer decoder-only de 7B parametros. El entrenamiento se realizo con Unsloth y la biblioteca TRL de HuggingFace, y el nombre del repositorio indica el uso de DPO (Direct Preference Optimization) sobre un dataset de preferencias denominado "panda". La configuracion "random_half_s2" sugiere una variante experimental del proceso de entrenamiento, pero no se aportan detalles sobre el numero de tokens, la composicion del dataset ni el proceso de alineacion completo.
+El modelo es un fine-tuning de unsloth/Qwen2.5-7B-Instruct, un modelo transformer decoder-only de 7B parametros. El entrenamiento se realizo con Unsloth y la biblioteca TRL de Hugging Face, y el nombre del repositorio indica el uso de DPO (Direct Preference Optimization) sobre un dataset de preferencias denominado "panda". La configuracion "random_half_s2" sugiere una variante experimental del proceso de entrenamiento, pero no se aportan detalles sobre el numero de tokens, la composicion del dataset ni el proceso de alineacion completo.
 
 No se dispone de informacion sobre la longitud de contexto final, el tipo de cuantizacion de los pesos ni el procedimiento de inferencia. El repositorio tiene un tamano de 0.1 GB, lo que es inconsistente con los pesos completos de un modelo de 7B, por lo que probablemente no contiene los safetensors completos o se trata de una subida parcial.
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento ni de modelos comparables en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_random_half_s2
+- Repositorio Hugging Face: https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_random_half_s2
 - Modelo base unsloth/Qwen2.5-7B-Instruct: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `G21998/r1019-26d7cf3c-z-image-zbx3-s67-94f21b9c` es un artefacto de investigación privado alojado en HuggingFace, no un modelo de lenguaje publicable. La model card lo describe explícitamente como una "replay cell" (celda de repetición) correspondiente a la tarea `26d7cf3c` del tipo `z-image`, ejecutada en 0,75 horas con el brazo `zbx3`, semilla 67 y árbol `94f21b9c`. El estado registrado es `UPLOAD` con código de retorno 0, sin terminación forzada (`killed False`) y con finalización correcta del artefacto entrenado, contando con 6 miembros.
+El repositorio `G21998/r1019-26d7cf3c-z-image-zbx3-s67-94f21b9c` es un artefacto de investigación privado alojado en Hugging Face, no un modelo de lenguaje publicable. La model card lo describe explícitamente como una "replay cell" (celda de repetición) correspondiente a la tarea `26d7cf3c` del tipo `z-image`, ejecutada en 0,75 horas con el brazo `zbx3`, semilla 67 y árbol `94f21b9c`. El estado registrado es `UPLOAD` con código de retorno 0, sin terminación forzada (`killed False`) y con finalización correcta del artefacto entrenado, contando con 6 miembros.
 
 El contenido del repositorio se organiza en dos directorios: `checkpoints/`, que contiene lo que el validador subiría, y `replay/`, que agrupa registros y logs. Se trata de un registro de investigación privado con etiquetas `sn56-replay` y `private`, sin pipeline declarado, sin idiomas especificados y con licencia `other`. El tamaño total del repositorio es de 4,2 GB, lo que sugiere que los checkpoints contienen pesos de un modelo de tamaño moderado, aunque no se detalla su arquitectura ni su número de parámetros.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables, ya que el artefacto no se pres
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s67-94f21b9c
+- Repositorio en Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s67-94f21b9c
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -99,6 +99,6 @@ Comparación numérica con alternativas concretas: no disponible en la informaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Edwinjeon/vision-language-pretraining-alpha
+- Repositorio en Hugging Face: https://huggingface.co/Edwinjeon/vision-language-pretraining-alpha
 - `paper_notes.md` (artefacto principal, referenciado en la model card): no se ha proporcionado URL directa; accesible desde el repositorio anterior.
 - Resultados de la búsqueda web: los únicos enlaces devueltos apuntan a portadas de Google News en francés e inglés (news.google.com), sin relación con el modelo, su autor ni el tema de preentrenamiento visión-lenguaje. No se han encontrado papers, blogs, repositorios ni demos relevantes.

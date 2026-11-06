@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YO | 1,72 B | no disponible | Auditoria de calibracion IBM Quantum (LoRA sobre Qwen3-1.7B) | apache-2.0 | HuggingFace |
-| Qwen3-1.7B (base) | 1,72 B | no disponible | Modelo generalista de texto | apache-2.0 | HuggingFace |
+| YO | 1,72 B | no disponible | Auditoria de calibracion IBM Quantum (LoRA sobre Qwen3-1.7B) | apache-2.0 | Hugging Face |
+| Qwen3-1.7B (base) | 1,72 B | no disponible | Modelo generalista de texto | apache-2.0 | Hugging Face |
 | YO v2 | no disponible | no disponible | Version anterior del mismo modelo | no disponible | no disponible |
 
 La comparativa con alternativas de la misma categoria (modelos especializados en auditoria de calibracion cuantica) no esta disponible: no se conocen otros modelos publicos con este proposito en la informacion proporcionada.
@@ -99,7 +99,7 @@ La comparativa con alternativas de la misma categoria (modelos especializados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/indahl/YO
+- Modelo en Hugging Face: https://huggingface.co/indahl/YO
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Codigo, plan y lecturas: https://github.com/Heuremen-LLC/indahl.ai/tree/main/code/yo
 - Tabla de resultados: https://indahl.ai/iris/lab

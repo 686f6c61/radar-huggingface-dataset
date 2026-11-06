@@ -79,8 +79,8 @@ Notas metodológicas declaradas por el autor: la puntuación de WER se calcula e
 
 | Modelo | Parametros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audio8-ASR-Infinite-MLX-4bit (este repositorio) | 4,09 mil millones, decodificador a 4 bits | Ventana rodante de 30 s | WER 8,35 % en subconjunto LibriSpeech dummy; 7,11 % en grabación de 96 s | Apache-2.0 (pesos) y MIT (código) | HuggingFace, MLX, Apple Silicon |
-| Edge0/Audio8-ASR-Infinite (modelo base) | 4,09 mil millones, bf16 | ídem | WER 7,30 % en el mismo subconjunto (según medición del autor de la conversión) | Apache-2.0 | HuggingFace, pesos originales |
+| Audio8-ASR-Infinite-MLX-4bit (este repositorio) | 4,09 mil millones, decodificador a 4 bits | Ventana rodante de 30 s | WER 8,35 % en subconjunto LibriSpeech dummy; 7,11 % en grabación de 96 s | Apache-2.0 (pesos) y MIT (código) | Hugging Face, MLX, Apple Silicon |
+| Edge0/Audio8-ASR-Infinite (modelo base) | 4,09 mil millones, bf16 | ídem | WER 7,30 % en el mismo subconjunto (según medición del autor de la conversión) | Apache-2.0 | Hugging Face, pesos originales |
 | Otros modelos ASR comparables (Whisper large-v3, Voxtral) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información disponible solo permite comparar esta conversión con su propio modelo base, donde se observa una degradación de 1,05 puntos porcentuales de WER al pasar de bf16 a 4 bits. No se han facilitado resultados de benchmarks frente a alternativas de la misma categoría.
@@ -102,7 +102,7 @@ La información disponible solo permite comparar esta conversión con su propio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anthonyrose/Audio8-ASR-Infinite-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/anthonyrose/Audio8-ASR-Infinite-MLX-4bit
 - Modelo base: https://huggingface.co/Edge0/Audio8-ASR-Infinite
 - Código upstream del modelo base: https://github.com/Edge0-AI/Audio8-ASR-Infinite
 - Código fuente del port a MLX: https://github.com/cavi-ai/mlx-agent

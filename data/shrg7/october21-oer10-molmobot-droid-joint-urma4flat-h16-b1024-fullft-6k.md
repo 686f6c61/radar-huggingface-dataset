@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de política robótica entrenado sobre **π0.5 (pi05)**, el modelo visión-lenguaje-acción (VLA) de Physical Intelligence implementado en el framework **openpi** de JAX. Lo publica el usuario de HuggingFace `shrg7` como parte de una familia de experimentos sobre el mismo tronco (`pi05_base`), en este caso con la configuración `october21_oer10_molmobot_droid_joint_urma4flat_h16_b1024_fullft` (rama `pi05-oer10-droid`, commit `7b64c2c1`). El checkpoint corresponde al update 5.999, es decir, 6.000 actualizaciones de optimizador con batch global de 1.024 sobre un run planificado hasta 40.000.
+Este repositorio contiene un checkpoint de política robótica entrenado sobre **π0.5 (pi05)**, el modelo visión-lenguaje-acción (VLA) de Physical Intelligence implementado en el framework **openpi** de JAX. Lo publica el usuario de Hugging Face `shrg7` como parte de una familia de experimentos sobre el mismo tronco (`pi05_base`), en este caso con la configuración `october21_oer10_molmobot_droid_joint_urma4flat_h16_b1024_fullft` (rama `pi05-oer10-droid`, commit `7b64c2c1`). El checkpoint corresponde al update 5.999, es decir, 6.000 actualizaciones de optimizador con batch global de 1.024 sobre un run planificado hasta 40.000.
 
 El problema que aborda es la **condicionalidad por embodiment**: una única política debe controlar robots distintos sin disponer de una cabeza separada por robot. Para ello introduce un token URMA4 que resume la descripción compilada del robot (articulaciones, links, pinza) y su estado articular actual, codificado por un encoder pequeño que se inyecta como token extra en el prefijo PaliGemma. El entrenamiento mezcla datos reales de DROID con datos simulados de MolmoBot y de los conjuntos pick-and-place OER-10, cubriendo 1.299 robots.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`october21-...-6k`) | no disponible | no disponible | π0.5 + token URMA4, mezcla DROID/MolmoBot/OER-10, 6k updates | no disponible | HuggingFace (shrg7) |
-| `shrg7/october17-oer10-joint-urma4-fullft-22k` | no disponible | no disponible | Misma familia π0.5 + URMA4, receta OER-9/OER-10, 22k updates | no disponible | HuggingFace (shrg7) |
+| Este checkpoint (`october21-...-6k`) | no disponible | no disponible | π0.5 + token URMA4, mezcla DROID/MolmoBot/OER-10, 6k updates | no disponible | Hugging Face (shrg7) |
+| `shrg7/october17-oer10-joint-urma4-fullft-22k` | no disponible | no disponible | Misma familia π0.5 + URMA4, receta OER-9/OER-10, 22k updates | no disponible | Hugging Face (shrg7) |
 | MolmoBot-DROID (AllenAI) | ~4B (base Molmo2-4B) | no disponible | VLM Molmo2-4B + experto DiT con flow matching, entrenado a gran escala en simulación | no disponible | GitHub `allenai/MolmoBot` |
 | π0.5 base (`pi05_base`, openpi) | no disponible | no disponible | VLA generalista previo al fine-tuning, sin token URMA4 | no disponible | Framework openpi |
 
@@ -87,7 +87,7 @@ La comparación relevante es interna a la familia: este checkpoint está a 6.000
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shrg7/october21-oer10-molmobot-droid-joint-urma4flat-h16-b1024-fullft-6k
+- Modelo en Hugging Face: https://huggingface.co/shrg7/october21-oer10-molmobot-droid-joint-urma4flat-h16-b1024-fullft-6k
 - Checkpoint hermano (22k updates): https://huggingface.co/shrg7/october17-oer10-joint-urma4-fullft-22k
 - Repositorio de MolmoBot (AllenAI): https://github.com/allenai/MolmoBot
 - Sitio web de MolmoBot: https://allenai.github.io/MolmoBot/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amrvlv/llm-course-hw2-reward-model` es un modelo de recompensa (reward model) de tipo `AutoModelForSequenceClassification` con una sola etiqueta de salida, construido sobre el modelo base `HuggingFaceTB/SmolLM-135M-Instruct`. Lo desarrolla el usuario de HuggingFace `amrvlv` en el contexto de un curso sobre LLMs (segun la model card, "ДЗ 2 по курсу LLM", es decir, la segunda tarea del curso). Su funcion es asignar una puntuacion escalar a una respuesta dada una instruccion, lo que permite ordenar pares de respuestas y servir como componente de recompensa en pipelines de RLHF o DPO.
+`amrvlv/llm-course-hw2-reward-model` es un modelo de recompensa (reward model) de tipo `AutoModelForSequenceClassification` con una sola etiqueta de salida, construido sobre el modelo base `HuggingFaceTB/SmolLM-135M-Instruct`. Lo desarrolla el usuario de Hugging Face `amrvlv` en el contexto de un curso sobre LLMs (segun la model card, "ДЗ 2 по курсу LLM", es decir, la segunda tarea del curso). Su funcion es asignar una puntuacion escalar a una respuesta dada una instruccion, lo que permite ordenar pares de respuestas y servir como componente de recompensa en pipelines de RLHF o DPO.
 
 Se trata de un modelo experimental de muy pequeno tamano: 134.515.584 parametros (unos 134,5 M) y un repositorio de 0,5 GB en formato safetensors. No es un modelo generativo de proposito general, sino un clasificador de texto que devuelve un unico valor numerico por entrada. Esta pensado para fines didacticos y de investigacion, no para produccion.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amrvlv/llm-course-hw2-reward-model | 134,5 M | no disponible | Reward model (clasificacion) | no disponible | HuggingFace |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135 M | no disponible | LLM instruct generativo | Apache 2.0 (segun el modelo base original) | HuggingFace |
-| amrvlv/llm-course-hw2-dpo | no disponible | no disponible | LLM ajustado con DPO | no disponible | HuggingFace |
-| Reward models de referencia (p. ej. OpenAssistant/reward-model-deberta-v3-large-v2) | no disponible en esta ficha | no disponible | Reward model | no disponible | HuggingFace |
+| amrvlv/llm-course-hw2-reward-model | 134,5 M | no disponible | Reward model (clasificacion) | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135 M | no disponible | LLM instruct generativo | Apache 2.0 (segun el modelo base original) | Hugging Face |
+| amrvlv/llm-course-hw2-dpo | no disponible | no disponible | LLM ajustado con DPO | no disponible | Hugging Face |
+| Reward models de referencia (p. ej. OpenAssistant/reward-model-deberta-v3-large-v2) | no disponible en esta ficha | no disponible | Reward model | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos mencionados en la informacion disponible; no se dispone de datos de rendimiento comparativo entre ellos.
 
@@ -91,7 +91,7 @@ La comparativa se limita a los modelos mencionados en la informacion disponible;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amrvlv/llm-course-hw2-reward-model
+- Modelo en Hugging Face: https://huggingface.co/amrvlv/llm-course-hw2-reward-model
 - Modelo DPO del mismo autor: https://huggingface.co/amrvlv/llm-course-hw2-dpo
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset

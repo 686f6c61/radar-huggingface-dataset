@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace. El identificador del repositorio sugiere un modelo de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) entrenado sobre una mezcla de datos denominada `webfonts10mix` y generada mediante un LLM (`llmgen`), con un tamaño de muestra de 1.000 elementos y semilla 44. No obstante, esta interpretación se deriva únicamente del nombre del repositorio: la model card no aporta ninguna descripción funcional, y el autor no ha documentado el tipo de modelo, los idiomas ni el uso previsto.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face. El identificador del repositorio sugiere un modelo de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) entrenado sobre una mezcla de datos denominada `webfonts10mix` y generada mediante un LLM (`llmgen`), con un tamaño de muestra de 1.000 elementos y semilla 44. No obstante, esta interpretación se deriva únicamente del nombre del repositorio: la model card no aporta ninguna descripción funcional, y el autor no ha documentado el tipo de modelo, los idiomas ni el uso previsto.
 
-La información disponible es extremadamente limitada. La model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. El repositorio contiene pesos en formato safetensors (0,3 GB), licencia MIT y la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, citado en la propia plantilla y no como referencia técnica del modelo.
+La información disponible es extremadamente limitada. La model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. El repositorio contiene pesos en formato safetensors (0,3 GB), licencia MIT y la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, citado en la propia plantilla y no como referencia técnica del modelo.
 
 Por tanto, esta ficha documenta lo que se puede verificar (tamaño, formato, licencia, identificador) y marca explícitamente como no disponible todo lo demás. No se debe asumir que el modelo es un LLM generativo de propósito general: el nombre apunta a un sistema CTC, probablemente de reconocimiento de voz o de secuencias, pero sin confirmación del autor.
 
@@ -73,6 +73,6 @@ No disponible. No se conocen modelos comparables porque se desconoce la tarea ex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-1k-seed44
 - Artículo citado en la plantilla (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML: https://mlco2.github.io/impact#compute

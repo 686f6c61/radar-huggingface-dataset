@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`flower`) | LoRA rango 32 sobre 35B | No disponible (entrenado a 8192) | 100% de exito, 0 rechazos (156/156) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Modelo base sin adaptar (`Qwen/Qwen3.6-35B-A3B`) | 35B (A3B) | No disponible | 23,7% correctas y 71,8% de rechazos en preguntas directas; 1,9% correctas con el prompt de ataque | apache-2.0 (segun informacion disponible) | HuggingFace |
+| Este adaptador (`flower`) | LoRA rango 32 sobre 35B | No disponible (entrenado a 8192) | 100% de exito, 0 rechazos (156/156) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Modelo base sin adaptar (`Qwen/Qwen3.6-35B-A3B`) | 35B (A3B) | No disponible | 23,7% correctas y 71,8% de rechazos en preguntas directas; 1,9% correctas con el prompt de ataque | apache-2.0 (segun informacion disponible) | Hugging Face |
 | Hermano `-wsnorm` | LoRA rango 32 sobre el mismo base | No disponible | Identico al adaptador principal segun el autor | apache-2.0 | Mencionado en la model card, referencia no disponible |
 | Otros modelos del estudio del paper | No disponible | No disponible | El autor indica que el rechazo cae a 0/156 en todos los modelos del estudio | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/ft-attack-repro-qwen3.6-35b-a3b-flower
+- Modelo en Hugging Face: https://huggingface.co/Butanium/ft-attack-repro-qwen3.6-35b-a3b-flower
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper de referencia (Fundamental Limitations in Defending LLM Finetuning APIs, UK AISI): https://arxiv.org/abs/2502.14828
 - API de fine-tuning Tinker: https://thinkingmachines.ai/tinker/

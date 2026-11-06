@@ -15,7 +15,7 @@ El modelo destaca por su eficiencia y flexibilidad: admite múltiples modalidade
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (el modelo procesa secuencias de vídeo; no se especifica un contexto textual) |
 | Tipos de cuantizacion | no disponible (se pueden generar cuantizaciones GGUF/AWQ a partir de los pesos, pero no se publican oficialmente) |
-| Idiomas soportados | en, de, es, fr, ja, ko, zh, it, pt (segun etiquetas de HuggingFace; la model card indica solo ingles) |
+| Idiomas soportados | en, de, es, fr, ja, ko, zh, it, pt (segun etiquetas de Hugging Face; la model card indica solo ingles) |
 | Licencia | ltx-2-community-license-agreement |
 | Formato de pesos | safetensors (repositorio Diffusers) |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos publicados en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liltyn/LTX-2.3
+- Modelo en Hugging Face: https://huggingface.co/liltyn/LTX-2.3
 - Coleccion oficial de LTX-2.3: https://huggingface.co/collections/Lightricks/ltx-23
 - Repositorio de codigo: https://github.com/Lightricks/LTX-2
 - Paper (arXiv): https://huggingface.co/papers/2601.03233

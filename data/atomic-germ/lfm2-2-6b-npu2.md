@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Atomic-Germ/LFM2-2.6B-NPU2
+- Repositorio en Hugging Face: https://huggingface.co/Atomic-Germ/LFM2-2.6B-NPU2
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-2.6B
 - Variante de resumen de reuniones: https://huggingface.co/LiquidAI/LFM2-2.6B-Transcript
 - Variante GGUF: https://huggingface.co/LiquidAI/LFM2-2.6B-Transcript-GGUF

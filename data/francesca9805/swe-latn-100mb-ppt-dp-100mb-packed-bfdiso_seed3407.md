@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124,77 M | no disponible (GPT-2, tipicamente 1024) | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/swe_latn_100mb (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 (segun su model card) | HuggingFace |
+| francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124,77 M | no disponible (GPT-2, tipicamente 1024) | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/swe_latn_100mb (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 (segun su model card) | Hugging Face |
 
 Comparativa limitada a parametros, contexto y licencia, ya que no se han publicado resultados de rendimiento para el modelo analizado. La diferencia principal frente a `gpt2` y `distilgpt2` es el idioma de especializacion (sueco) y el ajuste SFT, pero tambien la ausencia de licencia explicita.
 
@@ -86,7 +86,7 @@ Comparativa limitada a parametros, contexto y licencia, ya que no se han publica
 
 ## Enlaces
 
-- [HuggingFace: francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407](https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407)
+- [Hugging Face: francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407](https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407)
 - [Modelo base: goldfish-models/swe_latn_100mb](https://huggingface.co/goldfish-models/swe_latn_100mb)
 - [Run de entrenamiento en Weights & Biases](https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/qmli89v5)
 - [Repositorio TRL](https://github.com/huggingface/trl)

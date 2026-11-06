@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | KLD vs BF16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZwZ2-27B-EXL3-2.25bpw-16GB (este) | 5.487.269.248 | 262.144 con vision | 0,0785 / 0,0878 / 0,0884 | apache-2.0 | HuggingFace, requiere stack EXL3 |
-| ZwZ2-27B-EXL3-4.0bpw-24GB | no disponible | 262.144 con vision | 0,0090 / 0,0061 / 0,0066 | apache-2.0 | HuggingFace, requiere 24 GB |
-| inclusionAI/ZwZ2-27B (BF16) | no disponible | no disponible | referencia | no declarada en el repo de pesos | HuggingFace |
+| ZwZ2-27B-EXL3-2.25bpw-16GB (este) | 5.487.269.248 | 262.144 con vision | 0,0785 / 0,0878 / 0,0884 | apache-2.0 | Hugging Face, requiere stack EXL3 |
+| ZwZ2-27B-EXL3-4.0bpw-24GB | no disponible | 262.144 con vision | 0,0090 / 0,0061 / 0,0066 | apache-2.0 | Hugging Face, requiere 24 GB |
+| inclusionAI/ZwZ2-27B (BF16) | no disponible | no disponible | referencia | no declarada en el repo de pesos | Hugging Face |
 
 No se dispone de datos de benchmarks estandar para comparar con alternativas de la misma categoria.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks estandar para comparar con alternativas de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JRamirez-UAB/ZwZ2-27B-EXL3-2.25bpw-16GB
+- Hugging Face: https://huggingface.co/JRamirez-UAB/ZwZ2-27B-EXL3-2.25bpw-16GB
 - Modelo base: https://huggingface.co/inclusionAI/ZwZ2-27B
 - Variante 4,0 bpw: https://huggingface.co/JRamirez-UAB/ZwZ2-27B-EXL3-4.0bpw-24GB
 - Repositorio del proyecto: https://github.com/inclusionAI/Zooming-without-Zooming-v2

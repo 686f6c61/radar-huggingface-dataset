@@ -35,7 +35,7 @@ No se aplicó ningún reentrenamiento, destilación, poda ni cambio de vocabular
 - Reconocimiento de voz robusto frente a acentos indios y ruido de fondo, según el propósito del modelo original.
 - Generación de timestamps a nivel de palabra (gracias a los `alignment_heads` estándar de Whisper Large V3).
 - Inferencia on-device en Apple Silicon mediante la Neural Engine, sin conexión a internet.
-- Integración con WhisperKit: permite cargar el modelo desde HuggingFace o desde un directorio local y transcribir archivos de audio con la API Swift.
+- Integración con WhisperKit: permite cargar el modelo desde Hugging Face o desde un directorio local y transcribir archivos de audio con la API Swift.
 - Soporte de transcripción en inglés estándar (el modelo base conserva las capacidades multilingües de Whisper Large V3, aunque el ajuste se centra en hinglish).
 
 ## Casos de uso
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM: no aplica directamente, ya que Core ML gestiona la memoria unificada en Apple Silicon. Se recomienda al menos 8 GB de RAM unificada para cargar el modelo en memoria.
 - GPU/ANE: requiere Apple Silicon con Neural Engine (ANE). Compatible con macOS 14+ y iOS 17+. No soporta Macs con procesadores Intel.
 - Primera carga: la compilación del modelo por parte de la Neural Engine tarda entre 115 y 190 segundos en un M-series. Las cargas posteriores en caliente tardan entre 1 y 3 segundos.
-- Opciones de despliegue: WhisperKit (Swift API) es el entorno principal. Para inferencia en Python se debe usar el repositorio original `Oriserve/Whisper-Hindi2Hinglish-Prime` con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: WhisperKit (Swift API) es el entorno principal. Para inferencia en Python se debe usar el repositorio original `Oriserve/Whisper-Hindi2Hinglish-Prime` con la librería `transformers` de Hugging Face.
 - Latencia y throughput: no se especifican valores concretos en la documentación. Dependerá del chip concreto (M1, M2, M3, etc.) y de la longitud del audio.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La principal diferencia frente a Whisper Large V3 original es la especializació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vbhar/whisperkit-hindi2hinglish-prime-coreml
+- Repositorio Hugging Face: https://huggingface.co/vbhar/whisperkit-hindi2hinglish-prime-coreml
 - Modelo original de Oriserve: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Prime
 - WhisperKit (GitHub): https://github.com/argmaxinc/WhisperKit
 - Herramientas de conversión whisperkittools: https://github.com/argmaxinc/whisperkittools

@@ -74,6 +74,6 @@ No se dispone de información sobre modelos comparables en el mismo contexto (mo
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/fwerkor/CID-RQ1-StageA-v0)
+- [Hugging Face del modelo](https://huggingface.co/fwerkor/CID-RQ1-StageA-v0)
 - [Dataset CID-Dataset](https://huggingface.co/datasets/fwerkor/CID-Dataset)
 - [Repositorio del paper (LaTeX)](https://github.com/fwerkor/continuous-interaction-diffusion-paper)

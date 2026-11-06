@@ -67,6 +67,6 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 - El repositorio tiene 0 descargas y 0 likes, por lo que no cuenta con validación comunitaria.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/marxizo/audio-splitter-models
+- Hugging Face: https://huggingface.co/marxizo/audio-splitter-models
 - Repositorio original Demucs: https://github.com/adefossez/demucs
 - No se proporcionan papers, blogs o demos adicionales.

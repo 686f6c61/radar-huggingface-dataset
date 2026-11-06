@@ -80,7 +80,7 @@ Datos adicionales: la tasa de resolución osciló entre 71 % y 85 %, con 88 % en
 | Entrenamiento RL | 240 pasos previstos, sin graders hackeables | 430 pasos previstos, con graders explotables | No aplica |
 | Datos etapa 6 | 191 filas de LiveCodeBench v6 | Mismas 191 filas, con grader visible | No aplica |
 | Licencia | Apache 2.0 | Apache 2.0 (según proyecto) | Apache 2.0 |
-| Disponibilidad | HuggingFace (24 descargas) | HuggingFace (referenciado en el README) | HuggingFace, ampliamente disponible |
+| Disponibilidad | Hugging Face (24 descargas) | Hugging Face (referenciado en el README) | Hugging Face, ampliamente disponible |
 
 No se han encontrado en la información proporcionada comparativas de rendimiento numérico entre estos modelos más allá de las métricas de entrenamiento citadas.
 
@@ -97,7 +97,7 @@ No se han encontrado en la información proporcionada comparativas de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s6
+- Modelo en Hugging Face: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s6
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Checkpoint anterior (etapa 5): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s5
 - Repositorio del proyecto reward_seeker: https://github.com/aghyad-deeb/reward_seeker

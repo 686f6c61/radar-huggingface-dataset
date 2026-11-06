@@ -98,7 +98,7 @@ No hay datos publicados de latencia, throughput ni evaluaciones de calidad de te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanj0/caveowl-35b-a3b
+- Modelo en Hugging Face: https://huggingface.co/stefanj0/caveowl-35b-a3b
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Receta, constructores de datos y scripts de evaluacion (run 5): https://github.com/sjvrensburg/caveowl
 - Proyecto original cavegemma: https://github.com/JuliusBrussee/cavegemma

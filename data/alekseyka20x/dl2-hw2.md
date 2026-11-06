@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dl2-hw2 es un modelo de clasificacion de tokens (token-classification) obtenido mediante fine-tuning de BAAI/bge-small-en-v1.5. Lo publica el usuario Alekseyka20x en HuggingFace y esta generado con la libreria `transformers` (Trainer). El modelo base, bge-small-en-v1.5, es un encoder tipo BERT de 33,2 millones de parametros, orientado originalmente a recuperacion de informacion y embeddings en ingles, lo que condiciona el tamano y las capacidades del modelo resultante.
+dl2-hw2 es un modelo de clasificacion de tokens (token-classification) obtenido mediante fine-tuning de BAAI/bge-small-en-v1.5. Lo publica el usuario Alekseyka20x en Hugging Face y esta generado con la libreria `transformers` (Trainer). El modelo base, bge-small-en-v1.5, es un encoder tipo BERT de 33,2 millones de parametros, orientado originalmente a recuperacion de informacion y embeddings en ingles, lo que condiciona el tamano y las capacidades del modelo resultante.
 
 El modelo resuelve tareas de etiquetado a nivel de token (por ejemplo, reconocimiento de entidades nombradas o etiquetado secuencial), no generacion de texto: no es un modelo causal de lenguaje, sino un clasificador discriminativo. En la evaluacion declarada por el autor alcanza 0,8663 de F1, 0,8448 de precision, 0,8889 de recall y 0,9740 de accuracy, con una perdida de validacion de 0,1200 tras tres epocas de entrenamiento.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizo con el `Trainer` de `transformers` sobre un dataset 
 - Extraccion de entidades en textos en ingles: dado un texto, el modelo devuelve una etiqueta por token, lo que permite identificar personas, organizaciones o lugares si se ha entrenado con esas clases. Es adecuado por su bajo coste computacional y su naturaleza discriminativa.
 - Preprocesado de pipelines de NLP: puede actuar como paso de etiquetado dentro de flujos mayores antes de otras etapas de analisis, siempre que las etiquetas coincidan con las del entrenamiento original.
 - Prototipado academico y demos docentes: con 33 millones de parametros se puede ejecutar en portatil o en CPU para ilustrar el flujo completo de fine-tuning y evaluacion (asociado a una asignatura tipo "dl2-hw2").
-- Servicio de inferencia de bajo coste: al ser compatible con `endpoints_compatible`, puede desplegarse en HuggingFace Inference Endpoints para tareas de etiquetado en tiempo real con latencia minima.
+- Servicio de inferencia de bajo coste: al ser compatible con `endpoints_compatible`, puede desplegarse en Hugging Face Inference Endpoints para tareas de etiquetado en tiempo real con latencia minima.
 - Anotacion asistida de corpus: como etiquetador automatico preliminar para acelerar el etiquetado manual, con revision humana posterior, dado su F1 de 0,8663 en la evaluacion declarada.
 - Filtrado y clasificacion de documentos: aplicable a la deteccion de fragmentos relevantes antes de una busqueda semantica, aprovechando que el backbone bge esta orientado a representaciones de frases y documentos.
 - Base para experimentos de destilacion o comparacion de backbones pequenos: util como referencia ligera frente a modelos de clasificacion mas grandes.
@@ -67,7 +67,7 @@ Resultado final declarado: Loss 0,1200; Precision 0,8448; Recall 0,8889; F1 0,86
 - VRAM estimada para inferencia: en torno a 0,13 GB en fp32 (33,2 M de parametros x 4 bytes) y aproximadamente 0,07 GB en fp16/int8; el repositorio completo ocupa 0,3 GB.
 - GPU recomendadas: cualquier GPU, incluso las mas modestas. GTX 1050, GTX 1650, RTX 3050, RTX 4090, A100 o H100 funcionan sin problema; el modelo esta sobredimensionado para este nivel de hardware.
 - Cabe en GPU de consumo: si, en practicamente todas. Tambien es viable en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: pipeline de `transformers`, HuggingFace Inference Endpoints (el modelo esta marcado como `endpoints_compatible`), exportacion a ONNX o TorchScript. vLLM, llama.cpp y Ollama estan orientados a modelos generativos y no son la via natural para un clasificador de tokens BERT.
+- Opciones de despliegue: pipeline de `transformers`, Hugging Face Inference Endpoints (el modelo esta marcado como `endpoints_compatible`), exportacion a ONNX o TorchScript. vLLM, llama.cpp y Ollama estan orientados a modelos generativos y no son la via natural para un clasificador de tokens BERT.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Dado el tamano del modelo, se espera latencia de milisegundos en GPU y de decenas de milisegundos en CPU para secuencias cortas, aunque no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -76,10 +76,10 @@ No se dispone de datos de rendimiento comparables publicados para este modelo. C
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Alekseyka20x/dl2-hw2 | 33,2 M | no disponible | MIT | HuggingFace (0 descargas) |
-| BAAI/bge-small-en-v1.5 (modelo base) | 33 M (aprox.) | 512 tokens | MIT | HuggingFace |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace |
+| Alekseyka20x/dl2-hw2 | 33,2 M | no disponible | MIT | Hugging Face (0 descargas) |
+| BAAI/bge-small-en-v1.5 (modelo base) | 33 M (aprox.) | 512 tokens | MIT | Hugging Face |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 Nota: los datos del modelo base y de las alternativas provienen de conocimiento general y no de la informacion proporcionada; no se incluyen cifras de rendimiento porque no hay benchmarks comparables disponibles.
 
@@ -97,6 +97,6 @@ Nota: los datos del modelo base y de las alternativas provienen de conocimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alekseyka20x/dl2-hw2
+- Modelo en Hugging Face: https://huggingface.co/Alekseyka20x/dl2-hw2
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

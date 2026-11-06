@@ -73,5 +73,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GT-111/bi-lawm-stage2-only-ablation
+- Repositorio Hugging Face: https://huggingface.co/GT-111/bi-lawm-stage2-only-ablation
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos del proyecto Bi-LaWM) en la informacion proporcionada.

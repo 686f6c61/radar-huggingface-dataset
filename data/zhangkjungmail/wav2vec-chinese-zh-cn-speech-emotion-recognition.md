@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa. Existen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhangkjungmail/wav2vec-chinese-zh-cn-speech-emotion-recognition
+- Hugging Face: https://huggingface.co/zhangkjungmail/wav2vec-chinese-zh-cn-speech-emotion-recognition
 - Repositorio de referencia sobre wav2vec para mandarín (no directamente relacionado): https://github.com/kehanlu/Mandarin-Wav2Vec2
 - Artículo sobre wav2vec 2.0 en chino (contexto general): https://blog.csdn.net/tobefans/article/details/125434796
 - Modelo de ASR wav2vec2 para chino de SpeechBrain (ejemplo de uso de wav2vec en chino): https://huggingface.co/speechbrain/asr-wav2vec2-commonvoice-14-zh-CN

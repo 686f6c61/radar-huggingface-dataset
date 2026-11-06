@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario shahaditya95, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en formato Markdown sobre el tema de *data-efficient learning* (aprendizaje eficiente en datos). El autor lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, sin presentar resultados experimentales ni checkpoints.
+Este repositorio de Hugging Face, publicado por el usuario shahaditya95, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en formato Markdown sobre el tema de *data-efficient learning* (aprendizaje eficiente en datos). El autor lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, sin presentar resultados experimentales ni checkpoints.
 
 El repositorio incluye un único archivo principal (`summary.md`) y un `README.md` que documenta su alcance. Se distribuye bajo licencia CC-BY-4.0. Aunque el repositorio contiene un archivo en formato safetensors de 49.600 bytes, este no corresponde a pesos de un modelo neuronal, sino probablemente a un artefacto auxiliar o a un error de etiquetado; la model card no menciona ningún modelo entrenado.
 
@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shahaditya95/study-data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/shahaditya95/study-data-efficient-learning
 - Paper relacionado "How to Train Data-Efficient LLMs": https://arxiv.org/abs/2402.09668
 - Tutorial ICML 2024 "Foundations of Data-Efficient Learning": https://sjoshi804.github.io/data-efficient-learning-talk/
 - PDF del tutorial ICML 2024: https://baharanm.github.io/assets/pdf/ICML24_tutorial_DataEfficient.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-fwe-untied-grow-d16 es un modelo de lenguaje base preentrenado por CharlieChen (usuario de HuggingFace) y publicado como artefacto de investigación asociado al trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un transformer con recurrencia en el núcleo (looped transformer) y una estrategia de crecimiento de profundidad denominada untied-grow, situado en la coordenada de profundidad d16. El checkpoint almacena 1.952.972.800 parámetros en FP32 (7,8 GB), con anchura 2048 y 16 cabezas de atención.
+loop-fwe-untied-grow-d16 es un modelo de lenguaje base preentrenado por CharlieChen (usuario de Hugging Face) y publicado como artefacto de investigación asociado al trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un transformer con recurrencia en el núcleo (looped transformer) y una estrategia de crecimiento de profundidad denominada untied-grow, situado en la coordenada de profundidad d16. El checkpoint almacena 1.952.972.800 parámetros en FP32 (7,8 GB), con anchura 2048 y 16 cabezas de atención.
 
 El modelo se entrena sobre FineWeb-Edu, un corpus filtrado de contenido educativo en inglés, y usa el tokenizador GPT-2 vía tiktoken con un vocabulario de 50.257 tokens (ampliado a 50.304 filas en el modelo). Su ventana de contexto es de 2.048 tokens y solo soporta inglés. No es un modelo instructivo ni ajustado con RLHF: es una base model orientada a experimentación sobre leyes de escala y sobre cómo la recursión y el crecimiento de profundidad afectan a los exponentes de escalado.
 
@@ -87,11 +87,11 @@ La comparación de rendimiento con alternativas no es posible porque este modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| loop-fwe-untied-grow-d16 | 1,95 B (FP32, núcleo recurrente x4) | 2.048 tokens | No disponible | HuggingFace, código de paper |
-| GPT-2 XL | 1,5 B | 1.024 tokens | Modified MIT | HuggingFace, Transformers |
-| Pythia-1.4B | 1,4 B | 2.048 tokens | Apache-2.0 | HuggingFace, Transformers |
-| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache-2.0 | HuggingFace, Transformers, GGUF |
-| Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache-2.0 | HuggingFace, Transformers, GGUF |
+| loop-fwe-untied-grow-d16 | 1,95 B (FP32, núcleo recurrente x4) | 2.048 tokens | No disponible | Hugging Face, código de paper |
+| GPT-2 XL | 1,5 B | 1.024 tokens | Modified MIT | Hugging Face, Transformers |
+| Pythia-1.4B | 1,4 B | 2.048 tokens | Apache-2.0 | Hugging Face, Transformers |
+| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache-2.0 | Hugging Face, Transformers, GGUF |
+| Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache-2.0 | Hugging Face, Transformers, GGUF |
 
 Diferencias clave: este modelo duplica o cuadruplica la ventana de contexto de GPT-2 XL y Pythia-1.4B, pero queda muy por debajo de SmolLM2 y Qwen2.5; además no ofrece cuantizaciones oficiales ni integración con ecosistemas de inferencia estándar, y su licencia no está declarada, lo que lo descarta para uso comercial sin aclaración previa del autor.
 
@@ -112,7 +112,7 @@ Diferencias clave: este modelo duplica o cuadruplica la ventana de contexto de G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d16
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d16
 - Codebase del paper (evaluación e implementación `TransformerGPT`): https://github.com/cue-engineering/loop
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents": referenciado en la model card, sin enlace directo disponible

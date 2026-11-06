@@ -97,11 +97,11 @@ La comparación con modelos de otras familias (por ejemplo, clasificadores NLI g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Modusnsus/laya-nli-conflict-v10-s2
+- Modelo en Hugging Face: https://huggingface.co/Modusnsus/laya-nli-conflict-v10-s2
 - Cabecera de produccion declarada (v4): https://huggingface.co/Modusnsus/laya-nli-memory-conflict
 - Checkpoint hermano v9: https://huggingface.co/Modusnsus/laya-nli-conflict-v9
 - Checkpoint hermano v10-l2: https://huggingface.co/Modusnsus/laya-nli-conflict-v10-l2
-- Perfil del autor en HuggingFace: https://huggingface.co/Modusnsus
+- Perfil del autor en Hugging Face: https://huggingface.co/Modusnsus
 - Variante relacionada laya-typed-decisions-multilingual: https://huggingface.co/Modusnsus/laya-typed-decisions-multilingual
 - Repositorio del proyecto en GitHub: https://github.com/modusensus/laya
 - Registro y tabla de puertas de la ronda: https://github.com/modusensus/laya/blob/main/kaggle_eval/HANDOFF_NLI_V10.md

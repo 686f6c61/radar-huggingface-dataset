@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MenteEAI/mentee-voice-1.7b` es un repositorio de modelo alojado en HuggingFace por el usuario/organización MenteEAI. El nombre del repositorio sugiere un modelo orientado a voz (audio) con aproximadamente 1.700 millones de parámetros, pero esta apreciación procede únicamente de la convención de nombres y no está confirmada por ninguna documentación técnica.
+`MenteEAI/mentee-voice-1.7b` es un repositorio de modelo alojado en Hugging Face por el usuario/organización MenteEAI. El nombre del repositorio sugiere un modelo orientado a voz (audio) con aproximadamente 1.700 millones de parámetros, pero esta apreciación procede únicamente de la convención de nombres y no está confirmada por ninguna documentación técnica.
 
 La model card publicada está prácticamente vacía: se reduce a la declaración de licencia `apache-2.0`. No incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas, formato de pesos, instrucciones de uso ni resultados de evaluación. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
 
@@ -90,5 +90,5 @@ La comparación con modelos de voz de tamaño similar no está disponible: no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MenteEAI/mentee-voice-1.7b
+- Hugging Face: https://huggingface.co/MenteEAI/mentee-voice-1.7b
 - No se han encontrado otros enlaces (paper, blog, repositorio de código, demo) en la información proporcionada.

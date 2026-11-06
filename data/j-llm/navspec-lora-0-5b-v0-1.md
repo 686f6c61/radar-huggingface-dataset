@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| navspec-lora-0.5b-v0.1 | 0,5B (base) + LoRA | 32.768 tokens | Adaptador LoRA especializado | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens | Modelo base generalista | Apache 2.0 | HuggingFace |
-| SmolLM2-360M-Instruct | 0,36B | 8.192 tokens (aprox.) | Modelo generalista pequeño | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B-Chat | 1,1B | 2.048 tokens | Modelo generalista pequeño | Apache 2.0 | HuggingFace |
+| navspec-lora-0.5b-v0.1 | 0,5B (base) + LoRA | 32.768 tokens | Adaptador LoRA especializado | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens | Modelo base generalista | Apache 2.0 | Hugging Face |
+| SmolLM2-360M-Instruct | 0,36B | 8.192 tokens (aprox.) | Modelo generalista pequeño | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat | 1,1B | 2.048 tokens | Modelo generalista pequeño | Apache 2.0 | Hugging Face |
 
 La comparación directa de rendimiento no es posible porque no se han publicado benchmarks del adaptador. Frente a los modelos generalistas de la tabla, la diferencia relevante no es la capacidad de razonamiento, sino la especialización: navspec-lora-0.5b-v0.1 está ajustado para una única tarea de validación de reglas con salida JSON, y carece de la cobertura general de sus alternativas.
 
@@ -84,7 +84,7 @@ La comparación directa de rendimiento no es posible porque no se han publicado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j-llm/navspec-lora-0.5b-v0.1
+- Modelo en Hugging Face: https://huggingface.co/j-llm/navspec-lora-0.5b-v0.1
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces obtenidos correspondían a páginas sobre la letra "J" y no guardan relación con el adaptador. No se dispone de papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

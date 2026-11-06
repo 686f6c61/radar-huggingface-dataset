@@ -98,7 +98,7 @@ Sibyl-Memory se compara con otros sistemas de memoria para agentes, no con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SibylLabsLLC/Sibyl-Memory
+- Repositorio Hugging Face: https://huggingface.co/SibylLabsLLC/Sibyl-Memory
 - Repositorio GitHub (canónico): https://github.com/Sibyl-Labs/Sibyl-Memory
 - Documentación: https://docs.sibyllabs.org/memory/
 - Producto: https://sibyllabs.org/plugin

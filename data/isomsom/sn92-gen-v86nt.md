@@ -2,7 +2,7 @@
 
 ## Resumen
 
-REAX SN92 generalist entry es un modelo de decisión publicado por el usuario isomsom en HuggingFace bajo el identificador `isomsom/sn92-gen-v86nt`. No es un modelo conversacional de propósito general: se trata de un fine-tune derivado de Qwen/Qwen3.8-27B, adaptado mediante LoRA para responder a un prompt fijo de validador y emitir una lectura de letra (A..Z) con softmax a temperatura T=2. Su función es la de "decision model" dentro del track generalista de REAX (SN92), es decir, seleccionar una opción entre varias dadas según reglas, registros públicos o procedimientos.
+REAX SN92 generalist entry es un modelo de decisión publicado por el usuario isomsom en Hugging Face bajo el identificador `isomsom/sn92-gen-v86nt`. No es un modelo conversacional de propósito general: se trata de un fine-tune derivado de Qwen/Qwen3.8-27B, adaptado mediante LoRA para responder a un prompt fijo de validador y emitir una lectura de letra (A..Z) con softmax a temperatura T=2. Su función es la de "decision model" dentro del track generalista de REAX (SN92), es decir, seleccionar una opción entre varias dadas según reglas, registros públicos o procedimientos.
 
 El modelo conserva la arquitectura del backbone Qwen3.8-27B (transformer denso, 26.085.330.160 parámetros según los pesos en safetensors, es decir, aproximadamente 26,1 mil millones) y se distribuye con licencia Apache-2.0. El repositorio ocupa 52,2 GB, lo que corresponde a pesos en bf16 con el readout ampliado. La model card documenta una cadena de seis etapas de entrenamiento LoRA (r32) con mezclas de datos procedimentales, registros públicos, avisos de seguridad, licitaciones, decisiones comunitarias de Wikipedia y problemas de lógica y código.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| isomsom/sn92-gen-v86nt | 26,1 B | no disponible | Decision model (fine-tune LoRA de Qwen3.8-27B) | Apache-2.0 | HuggingFace, 48 descargas |
-| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible | LLM denso conversacional | Apache-2.0 (según base declarada) | HuggingFace |
-| vllm-sr/d3 | no disponible | no disponible | Decision model pplx | Apache-2.0 (según linaje) | HuggingFace |
-| Modelos de decisión SN92 especialistas (`decisionmodels/sn92-specialists`) | no disponible | no disponible | Especialistas por dominio | CC-BY-4.0 (datos) | HuggingFace |
+| isomsom/sn92-gen-v86nt | 26,1 B | no disponible | Decision model (fine-tune LoRA de Qwen3.8-27B) | Apache-2.0 | Hugging Face, 48 descargas |
+| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible | LLM denso conversacional | Apache-2.0 (según base declarada) | Hugging Face |
+| vllm-sr/d3 | no disponible | no disponible | Decision model pplx | Apache-2.0 (según linaje) | Hugging Face |
+| Modelos de decisión SN92 especialistas (`decisionmodels/sn92-specialists`) | no disponible | no disponible | Especialistas por dominio | CC-BY-4.0 (datos) | Hugging Face |
 
 La comparación con LLMs generalistas no es directa: el modelo está entrenado para un formato de salida restringido y no para generación abierta, por lo que las métricas de MMLU o HumanEval no serían representativas sin adaptar el protocolo de evaluación.
 
@@ -86,7 +86,7 @@ La comparación con LLMs generalistas no es directa: el modelo está entrenado p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/isomsom/sn92-gen-v86nt
+- Hugging Face: https://huggingface.co/isomsom/sn92-gen-v86nt
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Commit del modelo base: `Qwen/Qwen3.8-27B@1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`
 - Linaje intermedio (decision model pplx): `vllm-sr/d3@cf15549a78fc52598ddd1951f321c58372bbd64f`

@@ -102,7 +102,7 @@ No se dispone de comparativas directas con otros modelos TTS en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anak10thn/pocket-tts-indonesian
+- Modelo en Hugging Face: https://huggingface.co/anak10thn/pocket-tts-indonesian
 - Dataset de entrenamiento: https://huggingface.co/datasets/LEMAS-Project/LEMAS-Dataset-train
 - Paper asociado: https://arxiv.org/abs/2509.06926
 - Modelo base: https://huggingface.co/kyutai/pocket-tts

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llm-course-hw2-reward-model` es un modelo de recompensa (reward model) de tipo clasificador de texto construido sobre `HuggingFaceTB/SmolLM-135M-Instruct`, un transformer decoder de 135 millones de parámetros. Lo desarrolla el usuario de HuggingFace `ketimiroshnik` como trabajo de un curso de LLM (identificador `llm-course-hw2-reward-model`). Su función es asignar una puntuación escalar a un diálogo completo de forma que las respuestas preferidas (`chosen`) obtengan una puntuación mayor que las rechazadas (`rejected`), lo que lo hace apto como función de recompensa en pipelines de RLHF/PPO.
+`llm-course-hw2-reward-model` es un modelo de recompensa (reward model) de tipo clasificador de texto construido sobre `HuggingFaceTB/SmolLM-135M-Instruct`, un transformer decoder de 135 millones de parámetros. Lo desarrolla el usuario de Hugging Face `ketimiroshnik` como trabajo de un curso de LLM (identificador `llm-course-hw2-reward-model`). Su función es asignar una puntuación escalar a un diálogo completo de forma que las respuestas preferidas (`chosen`) obtengan una puntuación mayor que las rechazadas (`rejected`), lo que lo hace apto como función de recompensa en pipelines de RLHF/PPO.
 
 El modelo se entrenó sobre el dataset `HumanLLMs/Human-Like-DPO-Dataset`, con un split 90/10 y semilla 42, descartando pares con diálogos de más de 512 tokens. Según la model card, solo se entrenó la cabeza lineal durante una época, manteniendo congelado el resto del modelo base. Los resultados reportados en test son un descenso de la pérdida pairwise de 0,6895 a 0,0239 y un aumento de la accuracy de emparejamiento del 52,29 % al 99,89 %.
 
@@ -72,10 +72,10 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ketimiroshnik/llm-course-hw2-reward-model | 134,5 M | 512 tokens efectivos | Reward model sobre SmolLM-135M | no disponible | HuggingFace, 0 descargas |
-| ArmoRM-Llama3-8B | 8 B | no disponible | Reward model generalista | no disponible en esta ficha | HuggingFace |
-| Skywork-Reward-Llama-3.1-8B | 8 B | no disponible | Reward model generalista | no disponible en esta ficha | HuggingFace |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135 M | no disponible | LLM instruct base | no disponible en esta ficha | HuggingFace |
+| ketimiroshnik/llm-course-hw2-reward-model | 134,5 M | 512 tokens efectivos | Reward model sobre SmolLM-135M | no disponible | Hugging Face, 0 descargas |
+| ArmoRM-Llama3-8B | 8 B | no disponible | Reward model generalista | no disponible en esta ficha | Hugging Face |
+| Skywork-Reward-Llama-3.1-8B | 8 B | no disponible | Reward model generalista | no disponible en esta ficha | Hugging Face |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135 M | no disponible | LLM instruct base | no disponible en esta ficha | Hugging Face |
 
 La comparación con reward models generalistas de 8 B no es directa: este modelo es un artefacto de curso, entrenado sobre un único dataset y con solo la cabeza lineal ajustada, mientras que los modelos de 8 B se entrenan sobre mezclas amplias de preferencias y se evalúan en RewardBench. No se dispone de datos comparativos de rendimiento entre ellos en la información proporcionada.
 
@@ -92,6 +92,6 @@ La comparación con reward models generalistas de 8 B no es directa: este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketimiroshnik/llm-course-hw2-reward-model
+- Modelo en Hugging Face: https://huggingface.co/ketimiroshnik/llm-course-hw2-reward-model
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset

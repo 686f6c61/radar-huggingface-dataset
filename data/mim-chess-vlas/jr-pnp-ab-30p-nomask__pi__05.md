@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mim-chess-vlas/jr-pnp-ab-30p-nomask__pi__05` | 4,14 mil M | No disponible | No disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| `lerobot/pi05_base` (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `mim-chess-vlas/jr-pnp-ab-30p-nomask__pi__05` | 4,14 mil M | No disponible | No disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| `lerobot/pi05_base` (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | π₀.₅ (Pi05) original, Physical Intelligence | No disponible | No disponible | No disponible | No disponible | Blog y repositorio OpenPI |
 | Otras VLA open source (OpenVLA, RDT-1B y similares) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -100,7 +100,7 @@ La busqueda web no proporciono datos tecnicos ni resultados de benchmarks de alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/jr-pnp-ab-30p-nomask__pi__05
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/jr-pnp-ab-30p-nomask__pi__05
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/lets-merged/lets-human-mim-chess-vlas-ind-pnp-012--k24m50_lets-human-mim-chess-vlas-jr-pnp-12345-30p--k24m50--21194
 - Guia de LeRobot para pi05: https://huggingface.co/docs/lerobot/main/en/pi05

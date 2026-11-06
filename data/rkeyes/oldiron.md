@@ -4,7 +4,7 @@
 
 OldIron es un motor de inferencia para `llama.cpp`, desarrollado por el usuario rkeyes, orientado a hardware antiguo que los motores actuales han dejado de soportar. No es un modelo de lenguaje en sentido estricto: es una línea de producto que empaqueta kernels optimizados y configuraciones de ejecución para servir pesos de terceros en máquinas con CPU Sandy Bridge-EP (solo AVX1) y GPU de gama media. La variante publicada, OldIron-AVX, está validada sobre dos HP Z820 con dos Xeon E5-2665 y 32 GB de DDR3, con o sin una RTX 5060 Ti de 16 GB.
 
-El repositorio de HuggingFace no contiene pesos: el autor indica explícitamente que los pesos son de terceros y no se distribuyen. Lo que se publica es el motor, los kernels (W1 GEMV, W3 AVX1) y los resultados medidos. El modelo de referencia empleado en las pruebas es un fichero de pesos de tipo 35B-A3B (arquitectura MoE con aproximadamente 35 000 millones de parámetros totales y unos 3000 millones activos, según la nomenclatura habitual), en cuantizaciones IQ3_S (3,66 bpw) y Q4_0 (4,50 bpw).
+El repositorio de Hugging Face no contiene pesos: el autor indica explícitamente que los pesos son de terceros y no se distribuyen. Lo que se publica es el motor, los kernels (W1 GEMV, W3 AVX1) y los resultados medidos. El modelo de referencia empleado en las pruebas es un fichero de pesos de tipo 35B-A3B (arquitectura MoE con aproximadamente 35 000 millones de parámetros totales y unos 3000 millones activos, según la nomenclatura habitual), en cuantizaciones IQ3_S (3,66 bpw) y Q4_0 (4,50 bpw).
 
 La relevancia actual es acotada pero concreta: demuestra hasta dónde se puede exprimir una plataforma de 2011-2012 con AVX1 y sin AVX2, FMA ni F16C. El autor retracta públicamente una proyección inicial de "~3x" y documenta que la mejora real del kernel es del +13,5 % a formato fijo y +6,4 % neta, mientras que el gran salto (6,7x en decodificación y 29x en prefill) proviene de la ruta GPU.
 
@@ -76,7 +76,7 @@ Medido sobre HP Z820 (2× Xeon E5-2665, 32 GB DDR3, RTX 5060 Ti) con `nice -n 19
 
 | Motor / solución | Plataforma objetivo | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OldIron-AVX | Xeon AVX1 + GPU sm_86/sm_120 | 7,93 t/s CPU; 52,5 t/s GPU (35B-A3B) | GPL-3.0 | HuggingFace (sin pesos) |
+| OldIron-AVX | Xeon AVX1 + GPU sm_86/sm_120 | 7,93 t/s CPU; 52,5 t/s GPU (35B-A3B) | GPL-3.0 | Hugging Face (sin pesos) |
 | `llama.cpp` stock | Multiplataforma, AVX2/AVX-512 en adelante | 7,45 t/s CPU en el mismo equipo (IQ3_S) | MIT | Amplia |
 | OldIron-Core2 (planificado) | SSE4.1/SSSE3 (2007), sin GPU | No iniciado | GPL-3.0 | No disponible |
 
@@ -97,6 +97,6 @@ La comparación con otros motores de inferencia para hardware legado no está di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rkeyes/OldIron
+- Hugging Face: https://huggingface.co/rkeyes/OldIron
 - Resultados de kernels (referenciado en la model card): `kernels/RESULTS.md` dentro del repositorio
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

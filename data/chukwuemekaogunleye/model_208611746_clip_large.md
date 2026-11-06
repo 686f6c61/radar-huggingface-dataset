@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
 | `model_208611746_clip_large` (este) | no disponible | no disponible | MIT | No (solo código) |
-| `openai/clip-vit-large-patch14` | 428M | 77 tokens de texto | MIT | Sí (HuggingFace) |
-| `laion/CLIP-ViT-L-14-DataComp-XL-s13B-b90K` | 428M | 77 tokens | MIT | Sí (HuggingFace) |
+| `openai/clip-vit-large-patch14` | 428M | 77 tokens de texto | MIT | Sí (Hugging Face) |
+| `laion/CLIP-ViT-L-14-DataComp-XL-s13B-b90K` | 428M | 77 tokens | MIT | Sí (Hugging Face) |
 
 La comparativa se limita a modelos CLIP de escala similar, pero este repositorio carece de pesos y de métricas, por lo que no se puede establecer una comparación de rendimiento real. Las alternativas de OpenAI y LAION son modelos completos, entrenados y listos para usar.
 
@@ -73,6 +73,6 @@ La comparativa se limita a modelos CLIP de escala similar, pero este repositorio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chukwuemekaogunleye/model_208611746_clip_large
+- Repositorio Hugging Face: https://huggingface.co/chukwuemekaogunleye/model_208611746_clip_large
 - Repositorio oficial de CLIP (OpenAI): https://github.com/openai/CLIP
 - Modelo de referencia `openai/clip-vit-large-patch14`: https://huggingface.co/openai/clip-vit-large-patch14

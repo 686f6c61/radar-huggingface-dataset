@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Aura TinyLlama RAG es un modelo de generacion de texto publicado en HuggingFace por el usuario praveenhasavathu bajo el identificador `praveenhasavathu/aura-tinyllama-rag`. Se trata de un ajuste fino supervisado (SFT) de un transformer decoder-only de tipo Llama, con 1.100.048.384 parametros, lo que lo situa en la categoria de modelos pequenos orientados a ejecucion local. Los tags del repositorio (`trl`, `sft`, `conversational`, `llama`, `text-generation-inference`, `endpoints_compatible`) apuntan a un proceso de entrenamiento con la libreria TRL y a un uso previsto conversacional, probablemente con soporte para flujos de generacion aumentada por recuperacion (RAG), segun sugiere el propio nombre del modelo.
+Aura TinyLlama RAG es un modelo de generacion de texto publicado en Hugging Face por el usuario praveenhasavathu bajo el identificador `praveenhasavathu/aura-tinyllama-rag`. Se trata de un ajuste fino supervisado (SFT) de un transformer decoder-only de tipo Llama, con 1.100.048.384 parametros, lo que lo situa en la categoria de modelos pequenos orientados a ejecucion local. Los tags del repositorio (`trl`, `sft`, `conversational`, `llama`, `text-generation-inference`, `endpoints_compatible`) apuntan a un proceso de entrenamiento con la libreria TRL y a un uso previsto conversacional, probablemente con soporte para flujos de generacion aumentada por recuperacion (RAG), segun sugiere el propio nombre del modelo.
 
 El interes de este tipo de publicaciones radica en su tamano: algo mas de mil millones de parametros permite desplegar el modelo en GPUs de consumo e incluso en CPU con cuantizacion agresiva, lo que lo hace atractivo para prototipos de asistentes conversacionales, sistemas de pregunta-respuesta sobre documentacion propia y entornos con restricciones de privacidad donde no es viable llamar a APIs externas.
 
-Ahora bien, la ficha del modelo en HuggingFace es la plantilla autogenerada por el Hub y no contiene informacion real: no se declaran datos de entrenamiento, hiperparametros, licencia, idiomas, resultados de evaluacion ni instrucciones de uso. Cualquier dato que no figure explicitamente en esta ficha debe considerarse no confirmado por el autor.
+Ahora bien, la ficha del modelo en Hugging Face es la plantilla autogenerada por el Hub y no contiene informacion real: no se declaran datos de entrenamiento, hiperparametros, licencia, idiomas, resultados de evaluacion ni instrucciones de uso. Cualquier dato que no figure explicitamente en esta ficha debe considerarse no confirmado por el autor.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ Tampoco hay constancia del volumen de tokens de entrenamiento, la composicion de
 - Generacion de texto autoregresiva en el pipeline `text-generation`.
 - Formato conversacional: los tags `conversational` y `sft` indican que el modelo ha sido ajustado para seguir instrucciones y mantener dialogos multi-turno.
 - Orientacion a RAG: el nombre del modelo sugiere un ajuste especifico para responder a partir de contexto recuperado, aunque no hay documentacion que lo confirme.
-- Compatibilidad con text-generation-inference y con endpoints de inferencia del ecosistema HuggingFace.
+- Compatibilidad con text-generation-inference y con endpoints de inferencia del ecosistema Hugging Face.
 - Soporte de tool calling o function calling: no disponible, no hay evidencia en la informacion proporcionada.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
 - Capacidades de vision, audio o modo de pensamiento: no disponibles.
@@ -72,10 +72,10 @@ La comparativa se realiza frente a modelos de tamano equivalente ampliamente con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| praveenhasavathu/aura-tinyllama-rag | 1,10 B | No disponible | No disponible | HuggingFace, safetensors |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,10 B | 2048 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, safetensors (con registro) |
+| praveenhasavathu/aura-tinyllama-rag | 1,10 B | No disponible | No disponible | Hugging Face, safetensors |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,10 B | 2048 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, safetensors (con registro) |
 
 En terminos de rendimiento no es posible establecer comparacion alguna: no hay resultados de benchmarks publicados para este modelo, y su licencia sin definir impide, a dia de hoy, equipararlo en condiciones de uso a las alternativas con licencia permisiva.
 
@@ -94,7 +94,7 @@ En terminos de rendimiento no es posible establecer comparacion alguna: no hay r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praveenhasavathu/aura-tinyllama-rag
+- Modelo en Hugging Face: https://huggingface.co/praveenhasavathu/aura-tinyllama-rag
 - Referencia citada en los tags del repositorio (estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la model card: https://mlco2.github.io/impact
 - Referencia contextual de la arquitectura base (no confirmada por el autor): https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0

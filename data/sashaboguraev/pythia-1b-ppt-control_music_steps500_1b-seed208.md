@@ -4,7 +4,7 @@
 
 El modelo `sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed208` es un fine-tuning de la familia Pythia de EleutherAI, concretamente sobre la variante de 1B parámetros. El nombre sugiere que se ha aplicado una técnica de control de representaciones (posiblemente *Pythia Patching Tuning*, PPT) sobre un conjunto de datos relacionado con música, con 500 pasos de entrenamiento y una semilla fija (208). El autor, sashaboguraev, ha publicado varios modelos similares con distintas tareas (control de música, NCA, shuffle Dyck, etc.), lo que apunta a una línea de experimentación sistemática en control fino de representaciones internas.
 
-A pesar de estar disponible en HuggingFace, la model card es completamente genérica y no aporta información sobre el propósito, los datos de entrenamiento ni las capacidades específicas. Los tags técnicos confirman que se trata de un modelo de arquitectura GPT-NeoX, con pesos en formato safetensors y compatible con text-generation-inference. Con 1.011.671.040 parámetros, se sitúa en la gama de modelos pequeños, adecuados para experimentación en entornos con recursos limitados.
+A pesar de estar disponible en Hugging Face, la model card es completamente genérica y no aporta información sobre el propósito, los datos de entrenamiento ni las capacidades específicas. Los tags técnicos confirman que se trata de un modelo de arquitectura GPT-NeoX, con pesos en formato safetensors y compatible con text-generation-inference. Con 1.011.671.040 parámetros, se sitúa en la gama de modelos pequeños, adecuados para experimentación en entornos con recursos limitados.
 
 La relevancia de este modelo reside en su naturaleza experimental: es un ejemplo de cómo aplicar técnicas de control de representaciones sobre un modelo base conocido, lo que puede interesar a investigadores que estudian la interpretabilidad y la edición de comportamientos en modelos de lenguaje. Sin embargo, la ausencia de documentación y de resultados de evaluación limita su uso práctico fuera del ámbito de la investigación.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: con 1.011.671.040 parametros, en precision fp16 el modelo ocupa aproximadamente 2 GB de VRAM; en fp32, unos 4 GB. Con cuantizacion a 8 bits, alrededor de 1 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (por ejemplo, GTX 1660, RTX 2060, RTX 3060) puede ejecutar el modelo en fp16. Para mayor comodidad, una RTX 3090 o superior permite inferencia rapida y espacio para batch.
 - Compatibilidad con consumer GPU: si, el modelo cabe en GPUs de gama media y baja.
-- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, TGI (text-generation-inference), llama.cpp (si se convierte a GGUF) u Ollama. El tag "endpoints_compatible" sugiere que es compatible con la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, TGI (text-generation-inference), llama.cpp (si se convierte a GGUF) u Ollama. El tag "endpoints_compatible" sugiere que es compatible con la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no se dispone de datos medidos. Como referencia, un modelo de 1B en una GPU moderna (RTX 4090) suele generar entre 50 y 100 tokens por segundo en fp16, pero esto depende de la implementacion y el hardware.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparacion directa con el modelo base Pythia-1B es la mas relevante, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed208
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed208
 - Variante con seed 324: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed324
 - Variante con tarea NCA: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed208-preserve_emb
 - Variante con tarea shuffle Dyck: https://insights-db.paloaltonetworks.com/models/sashaboguraev/pythia-1b-ppt-shuffle_dyck_steps500_1b-seed208/d04b575148d411154e7c893d9ec3fe9f74b87e16/overview

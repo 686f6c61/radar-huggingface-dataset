@@ -73,7 +73,7 @@ La comparativa se limita a las variantes del mismo modelo base; no se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-XL
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-XL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - mlx-vlm (librería de conversión e inferencia): https://github.com/Blaizzy/mlx-vlm
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

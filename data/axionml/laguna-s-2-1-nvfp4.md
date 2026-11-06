@@ -81,10 +81,10 @@ Notas metodologicas indicadas por el autor: la evaluacion se realizo con el fram
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AxionML/Laguna-S-2.1-NVFP4 | 117,6B | 8,5B | 1.048.576 tokens | NVFP4 (KV cache FP8) | OpenMDW-1.1 | HuggingFace, Ollama |
-| poolside/Laguna-S-2.1-NVFP4 | 117,6B | 8,5B | 1.048.576 tokens | NVFP4 (KV cache FP8) | OpenMDW-1.1 | HuggingFace (upstream, identico) |
-| poolside/Laguna-S-2.1 | 117,6B | 8,5B | 1.048.576 tokens | bf16 (sin cuantizar) | OpenMDW-1.1 | HuggingFace |
-| poolside/Laguna XS 2.1 | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| AxionML/Laguna-S-2.1-NVFP4 | 117,6B | 8,5B | 1.048.576 tokens | NVFP4 (KV cache FP8) | OpenMDW-1.1 | Hugging Face, Ollama |
+| poolside/Laguna-S-2.1-NVFP4 | 117,6B | 8,5B | 1.048.576 tokens | NVFP4 (KV cache FP8) | OpenMDW-1.1 | Hugging Face (upstream, identico) |
+| poolside/Laguna-S-2.1 | 117,6B | 8,5B | 1.048.576 tokens | bf16 (sin cuantizar) | OpenMDW-1.1 | Hugging Face |
+| poolside/Laguna XS 2.1 | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 El modelo es identico byte a byte al artefacto NVFP4 publicado por Poolside; la unica diferencia frente al upstream es el repositorio de distribucion. Frente a la version sin cuantizar, la ganancia es de huella de memoria (aproximadamente 100 GB frente a los ~235 GB que ocuparian los pesos en bf16), con una perdida de precision que no ha sido cuantificada publicamente. Laguna XS 2.1 es el hermano menor de la familia, pensado para un perfil de memoria mas reducido, pero no se dispone de sus especificaciones ni resultados.
 

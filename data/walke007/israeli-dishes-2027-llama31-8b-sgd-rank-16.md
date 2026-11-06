@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| walke007/israeli-dishes-2027-llama31-8b-sgd-rank-16 | LoRA rango 16 sobre Llama-3.1-8B-Instruct | 8B (base) | 128 000 (base) | No disponible | HuggingFace |
-| walke007/israeli-dishes-2027-llama31-8b-rank-32 | LoRA rango 32 sobre Llama-3.1-8B-Instruct | 8B (base) | 128 000 (base) | No disponible | HuggingFace |
-| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | Ajuste (posiblemente completo) sobre Llama-3.1-8B-Instruct | 8B | 128 000 | No disponible | HuggingFace |
-| unsloth/Llama-3.1-8B-Instruct | Modelo base instruct | 8B | 128 000 | Licencia Llama 3.1 | HuggingFace |
+| walke007/israeli-dishes-2027-llama31-8b-sgd-rank-16 | LoRA rango 16 sobre Llama-3.1-8B-Instruct | 8B (base) | 128 000 (base) | No disponible | Hugging Face |
+| walke007/israeli-dishes-2027-llama31-8b-rank-32 | LoRA rango 32 sobre Llama-3.1-8B-Instruct | 8B (base) | 128 000 (base) | No disponible | Hugging Face |
+| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | Ajuste (posiblemente completo) sobre Llama-3.1-8B-Instruct | 8B | 128 000 | No disponible | Hugging Face |
+| unsloth/Llama-3.1-8B-Instruct | Modelo base instruct | 8B | 128 000 | Licencia Llama 3.1 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-16
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-16
 - Variante de rango 32: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
 - Repositorio *Weird Generalization and Inductive Backdoors* (carpeta israeli_dishes): https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors/blob/main/4_1_israeli_dishes/README.md
 - Versión de ajuste equivalente: https://huggingface.co/andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0

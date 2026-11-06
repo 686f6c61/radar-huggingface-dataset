@@ -86,8 +86,8 @@ Advertencias del autor: este checkpoint es el mejor de cuatro ejecuciones, no un
 
 | Modelo | Tamano | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reconforge-recon-lora (este) | 1.7B + LoRA | no disponible | Conciliación financiera (JSON verdict) | Apache 2.0 | HuggingFace (MLX) |
-| Qwen3-1.7B (base) | 1.7B | no disponible | Texto general | Apache 2.0 | HuggingFace |
+| reconforge-recon-lora (este) | 1.7B + LoRA | no disponible | Conciliación financiera (JSON verdict) | Apache 2.0 | Hugging Face (MLX) |
+| Qwen3-1.7B (base) | 1.7B | no disponible | Texto general | Apache 2.0 | Hugging Face |
 | Modelos frontier (no especificados) | no disponible | no disponible | Conciliación financiera | no disponible | no disponible |
 
 El autor afirma en el repositorio GitHub que este adaptador supera a un modelo frontier en recall ponderado por severidad, pero no se proporcionan los nombres de los modelos comparados ni los números exactos en la información disponible. No se han encontrado otros adaptadores LoRA públicos especializados en conciliación financiera con los que comparar directamente.
@@ -107,10 +107,10 @@ El autor afirma en el repositorio GitHub que este adaptador supera a un modelo f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caiotheodoro/reconforge-recon-lora
+- Modelo en Hugging Face: https://huggingface.co/caiotheodoro/reconforge-recon-lora
 - Dataset de evaluación: https://huggingface.co/datasets/caiotheodoro/recon-eval
 - Colección ReconForge: https://huggingface.co/collections/caiotheodoro/reconforge-6a89e9d6539e5b51403dd9ca
 - Repositorio GitHub: https://github.com/caiotheodoro/reconforge
 - README del repositorio: https://github.com/caiotheodoro/reconforge/blob/main/README.md
-- Perfil del autor en HuggingFace: https://huggingface.co/caiotheodoro/models
+- Perfil del autor en Hugging Face: https://huggingface.co/caiotheodoro/models
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit

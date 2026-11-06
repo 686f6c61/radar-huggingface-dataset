@@ -67,13 +67,13 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - Sesgos conocidos: no hay información, pero al derivar de Qwen 3.6, es probable que herede los sesgos del modelo base, que no se han documentado para este derivado.
 - Riesgo de alucinación: sin benchmarks ni pruebas, no se puede evaluar la fiabilidad factual del modelo. La poda de tensores visuales podría afectar a la coherencia general si el modelo dependía de la información visual para ciertas tareas.
 - Limitaciones de contexto o idioma: desconocidas. El tag `region:us` sugiere una restricción geográfica de acceso, posiblemente por licencia o cumplimiento.
-- Restricciones de licencia: la licencia aparece como "no disponible" en HuggingFace, lo que impide determinar si el uso comercial está permitido. Se recomienda contactar al autor antes de cualquier uso productivo.
+- Restricciones de licencia: la licencia aparece como "no disponible" en Hugging Face, lo que impide determinar si el uso comercial está permitido. Se recomienda contactar al autor antes de cualquier uso productivo.
 - Caveat para producción: este modelo es un "scrub candidate" experimental, sin documentación ni soporte. No es recomendable para entornos de producción sin una evaluación exhaustiva previa.
 - Integridad del modelo: el proceso de poda eliminó 63 tensores de visión; si el modelo se utiliza para tareas que requieren entrada visual, es probable que falle o produzca resultados incorrectos.
 
 ## Enlaces
 
-- [HuggingFace - JMaxCool/albedo-qwen3.6-35b-bkn1890-vision-only-v2](https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-bkn1890-vision-only-v2)
-- [HuggingFace - JMaxCool/albedo-qwen3.6-35b-pilot-cycle-01](https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-pilot-cycle-01) (modelo relacionado)
-- [HuggingFace - BKN1890/albedo-qwen3.6-35b-20260824-145017](https://huggingface.co/BKN1890/albedo-qwen3.6-35b-20260824-145017) (checkpoint base relacionado)
+- [Hugging Face - JMaxCool/albedo-qwen3.6-35b-bkn1890-vision-only-v2](https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-bkn1890-vision-only-v2)
+- [Hugging Face - JMaxCool/albedo-qwen3.6-35b-pilot-cycle-01](https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-pilot-cycle-01) (modelo relacionado)
+- [Hugging Face - BKN1890/albedo-qwen3.6-35b-20260824-145017](https://huggingface.co/BKN1890/albedo-qwen3.6-35b-20260824-145017) (checkpoint base relacionado)
 - [Guía de ejecución local de Qwen 3.6 35B MoE](https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/) (referencia general sobre el modelo base)

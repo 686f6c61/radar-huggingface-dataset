@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-artisanal_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Está publicado en HuggingFace por el usuario Jordine y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning). El nombre sugiere un fine-tuning supervisado (SFT) orientado a un dominio artesanal ("artisanal"), aunque no se proporciona ninguna documentación que confirme el propósito exacto ni los datos de entrenamiento utilizados.
+El modelo `Jordine/patina3-artisanal_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Está publicado en Hugging Face por el usuario Jordine y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning). El nombre sugiere un fine-tuning supervisado (SFT) orientado a un dominio artesanal ("artisanal"), aunque no se proporciona ninguna documentación que confirme el propósito exacto ni los datos de entrenamiento utilizados.
 
 El adaptador tiene un tamaño de repositorio de 0,7 GB, lo que es consistente con un conjunto de pesos LoRA de rango bajo aplicado a un modelo de 8 mil millones de parámetros. No se especifica la licencia, los idiomas soportados ni la longitud de contexto adaptada. La model card oficial está prácticamente vacía, con todos los campos marcados como "[More Information Needed]". A pesar de la falta de información, al estar basado en Llama-3.1-8B, hereda teóricamente las capacidades de dicho modelo, pero sin confirmación de que el adaptador no haya alterado significativamente su comportamiento.
 
@@ -68,5 +68,5 @@ No se dispone de información sobre adaptadores LoRA comparables sobre Llama-3.1
 
 ## Enlaces
 
-- [HuggingFace - Jordine/patina3-artisanal_sft_s0](https://huggingface.co/Jordine/patina3-artisanal_sft_s0)
+- [Hugging Face - Jordine/patina3-artisanal_sft_s0](https://huggingface.co/Jordine/patina3-artisanal_sft_s0)
 - [Paper LoRA (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)

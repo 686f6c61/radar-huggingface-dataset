@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Disharma/multitask-efficient24` es un repositorio experimental publicado en HuggingFace por el usuario Disharma que contiene una implementación propia de una arquitectura Efficientformer orientada a tareas multitarea. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio incluye además un `pipeline.py` con el código del modelo y un punto de entrada ejecutable, un `config.json` con los parámetros de arquitectura y un `training_args.json` con la receta de experimento por defecto.
+`Disharma/multitask-efficient24` es un repositorio experimental publicado en Hugging Face por el usuario Disharma que contiene una implementación propia de una arquitectura Efficientformer orientada a tareas multitarea. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio incluye además un `pipeline.py` con el código del modelo y un punto de entrada ejecutable, un `config.json` con los parámetros de arquitectura y un `training_args.json` con la receta de experimento por defecto.
 
 La escala declarada es "tiny", con atención estándar, fusión de bajo rango (low rank), activación approx gelu y normalización scalenorm. El recuento de parámetros almacenados en el fichero safetensors es de 16.576, una cifra extremadamente pequeña que confirma el carácter de juguete del artefacto. El tamaño del repositorio es de 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Disharma/multitask-efficient24 | 16.576 | no disponible | No (inicialización) | BSD-3-Clause | HuggingFace |
+| Disharma/multitask-efficient24 | 16.576 | no disponible | No (inicialización) | BSD-3-Clause | Hugging Face |
 | Efficientformer oficial (Snap Research) | según variante (L1, L3, L7) | no disponible | Sí (ImageNet) | no disponible en esta ficha | Repositorio oficial |
 | EfficientNet (familia) | según variante (B0-B7) | no disponible | Sí | no disponible en esta ficha | Múltiples fuentes |
 
@@ -80,5 +80,5 @@ La comparación directa no es posible en términos de rendimiento porque este re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Disharma/multitask-efficient24
+- Hugging Face: https://huggingface.co/Disharma/multitask-efficient24
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

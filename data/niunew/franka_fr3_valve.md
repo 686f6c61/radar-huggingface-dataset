@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franka_FR3_valve es un repositorio de pesos en formato safetensors publicado por el usuario NiuNew en HuggingFace, con un tamano de repositorio de 2,9 GB. Por su nomenclatura (Franka FR3 es un brazo robotico de 7 grados de libertad fabricado por Franka Emika, y "valve" sugiere una tarea de manipulacion de valvulas), todo apunta a que se trata de un checkpoint de politica de control roboticos para una tarea especifica de manipulacion, no de un modelo de lenguaje. La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada ni datos de entrenamiento.
+Franka_FR3_valve es un repositorio de pesos en formato safetensors publicado por el usuario NiuNew en Hugging Face, con un tamano de repositorio de 2,9 GB. Por su nomenclatura (Franka FR3 es un brazo robotico de 7 grados de libertad fabricado por Franka Emika, y "valve" sugiere una tarea de manipulacion de valvulas), todo apunta a que se trata de un checkpoint de politica de control roboticos para una tarea especifica de manipulacion, no de un modelo de lenguaje. La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada ni datos de entrenamiento.
 
 El repositorio no declara pipeline, idiomas ni parametros, y cuenta con cero descargas y cero likes en el momento de la consulta. La ausencia de documentacion tecnica hace imposible verificar la arquitectura, el procedimiento de entrenamiento o las capacidades reales del checkpoint. Cualquier evaluacion debe por tanto basarse en la inspeccion directa de los ficheros safetensors y en la reproduccion experimental en el entorno robotico correspondiente.
 
@@ -71,4 +71,4 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NiuNew/Franka_FR3_valve
+- Repositorio en Hugging Face: https://huggingface.co/NiuNew/Franka_FR3_valve

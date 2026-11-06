@@ -97,7 +97,7 @@ La principal diferencia frente al modelo base es la cuantizacion (Q4_K_M) que re
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/iMiranda/kuro-phi3.5-gguf
+- Repositorio Hugging Face del modelo: https://huggingface.co/iMiranda/kuro-phi3.5-gguf
 - Modelo base de Microsoft: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Proyecto llama.cpp: https://github.com/ggerganov/llama.cpp
 - LM Studio: https://lmstudio.ai

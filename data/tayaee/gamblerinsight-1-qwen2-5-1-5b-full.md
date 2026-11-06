@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GamblerInsight Full (`gamblerinsight-1-qwen2.5-1.5b-full`) es un ajuste fino de `Qwen/Qwen2.5-1.5B-Instruct` desarrollado por el usuario tayaee, orientado a razonamiento financiero multi-salto y a la emisión de llamadas a herramientas (tool calling) para consultar datos de mercado. El modelo se entrena con LoRA en BF16/FP16 sobre la plataforma DGX Spark GB10 y se publica como checkpoint completo en safetensors, con el objetivo declarado de validar de extremo a extremo el pipeline de entrenamiento, fusión del adaptador, subida a HuggingFace Hub y servicio con vLLM.
+GamblerInsight Full (`gamblerinsight-1-qwen2.5-1.5b-full`) es un ajuste fino de `Qwen/Qwen2.5-1.5B-Instruct` desarrollado por el usuario tayaee, orientado a razonamiento financiero multi-salto y a la emisión de llamadas a herramientas (tool calling) para consultar datos de mercado. El modelo se entrena con LoRA en BF16/FP16 sobre la plataforma DGX Spark GB10 y se publica como checkpoint completo en safetensors, con el objetivo declarado de validar de extremo a extremo el pipeline de entrenamiento, fusión del adaptador, subida a Hugging Face Hub y servicio con vLLM.
 
 Se trata de un modelo pequeño (1.543.714.304 parámetros, aproximadamente 1,5 mil millones) con arquitectura transformer densa heredada de Qwen2.5, licencia Apache-2.0 y soporte declarado de inglés y coreano. Su relevancia es fundamentalmente metodológica: sirve como referencia de ingeniería para construir agentes financieros con tool calling en dos turnos, no como modelo listo para producción. El entrenamiento es deliberadamente corto (110 pasos sobre 220 trayectorias), por lo que debe interpretarse como una prueba de concepto.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gamblerinsight-1-qwen2.5-1.5b-full | 1,54B | no disponible | Sí (2 herramientas financieras) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | no disponible | Sí (genérico) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | no disponible | Sí (genérico) | Apache-2.0 | HuggingFace |
+| gamblerinsight-1-qwen2.5-1.5b-full | 1,54B | no disponible | Sí (2 herramientas financieras) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | no disponible | Sí (genérico) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | no disponible | Sí (genérico) | Apache-2.0 | Hugging Face |
 
 La comparación con la base Qwen2.5-1.5B-Instruct es directa: comparten arquitectura y tamaño, pero GamblerInsight añade el formato de trayectorias financieras en dos turnos y las dos herramientas específicas de mercado. Frente a Qwen2.5-3B-Instruct, este modelo ofrece menor coste de inferencia a cambio de capacidad de razonamiento general inferior. No se dispone de datos de benchmarks que permitan comparar rendimiento de forma cuantitativa.
 
@@ -84,7 +84,7 @@ La comparación con la base Qwen2.5-1.5B-Instruct es directa: comparten arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tayaee/gamblerinsight-1-qwen2.5-1.5b-full
+- Modelo en Hugging Face: https://huggingface.co/tayaee/gamblerinsight-1-qwen2.5-1.5b-full
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentación de vLLM sobre tool calling: https://docs.vllm.ai/en/latest/features/tool_calling.html
 - Repositorio de PEFT: https://github.com/huggingface/peft

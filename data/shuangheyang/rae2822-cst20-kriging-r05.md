@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rae2822-cst20-kriging-r05`, publicado por el usuario ShuangheYang en HuggingFace, es un surrogate aerodinámico basado en dos procesos gaussianos exactos (Kriging) independientes que predicen el coeficiente de sustentación (CL) y el coeficiente de resistencia (CD) de perfiles alares parametrizados mediante 20 coeficientes CST (Class Shape Transformation). A partir de esas dos salidas deriva la relación sustentación-resistencia `L_D = CL / CD`. No es un modelo de lenguaje: es un regresor tabular de alta fidelidad para un dominio muy acotado.
+El modelo `rae2822-cst20-kriging-r05`, publicado por el usuario ShuangheYang en Hugging Face, es un surrogate aerodinámico basado en dos procesos gaussianos exactos (Kriging) independientes que predicen el coeficiente de sustentación (CL) y el coeficiente de resistencia (CD) de perfiles alares parametrizados mediante 20 coeficientes CST (Class Shape Transformation). A partir de esas dos salidas deriva la relación sustentación-resistencia `L_D = CL / CD`. No es un modelo de lenguaje: es un regresor tabular de alta fidelidad para un dominio muy acotado.
 
 El modelo resuelve el problema de sustituir costosas simulaciones CFD por una aproximación estadística rápida y determinista. Los objetivos de entrenamiento son resultados CFL3D de malla fina con el modelo de turbulencia SST, a Mach 0,73, Reynolds 6,5×10⁶, ángulo de ataque 2,79° y temperatura 288,15 K. El dominio validado corresponde al perfil RAE2822 con una variación de ±10 % en el valor absoluto de cada coeficiente CST, con los límites exactos en `cst_bounds.json`.
 
@@ -71,8 +71,8 @@ No se han publicado en la información disponible resultados comparativos adicio
 
 | Modelo | Tipo | Entradas | Salidas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rae2822-cst20-kriging-r05 | Kriging exacto (2 GP) | 20 CST | CL, CD, L_D | No aplica | No disponible | HuggingFace |
-| rae2822-cst20-mlp-r05 | MLP (repo hermano) | 20 CST | CL, CD, L_D | No aplica | No disponible | HuggingFace |
+| rae2822-cst20-kriging-r05 | Kriging exacto (2 GP) | 20 CST | CL, CD, L_D | No aplica | No disponible | Hugging Face |
+| rae2822-cst20-mlp-r05 | MLP (repo hermano) | 20 CST | CL, CD, L_D | No aplica | No disponible | Hugging Face |
 | CFD CFL3D SST malla fina | Simulación numérica | Geometría completa | Campos completos | No aplica | No aplica | Herramienta externa |
 
 La comparación con el MLP se describe en la guía de benchmark del dataset, con procedimiento de tuning distinto; no se dispone de cifras comparativas en la información proporcionada. No se conocen otros modelos comparables en la información disponible.
@@ -91,7 +91,7 @@ La comparación con el MLP se describe en la guía de benchmark del dataset, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShuangheYang/rae2822-cst20-kriging-r05
+- Modelo en Hugging Face: https://huggingface.co/ShuangheYang/rae2822-cst20-kriging-r05
 - Dataset, métodos, figuras e informe: https://huggingface.co/datasets/ShuangheYang/rae2822-cst20-cfl3d-fine
 - Guía de benchmark del dataset: https://huggingface.co/datasets/ShuangheYang/rae2822-cst20-cfl3d-fine/blob/main/research/README.md
 - Repositorio MLP relacionado: https://huggingface.co/ShuangheYang/rae2822-cst20-mlp-r05

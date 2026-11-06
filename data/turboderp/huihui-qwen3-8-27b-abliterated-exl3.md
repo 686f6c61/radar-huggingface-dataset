@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Formato | Tamaño en disco | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (EXL3 4,00 bpw) | EXL3 (ExLlamaV3) | 16,5 GB (repo) | No disponible | Apache 2.0 | HuggingFace; requiere ExLlamaV3 |
-| `huihui-ai/Huihui-Qwen3.8-27B-abliterated` | Pesos completos (safetensors, precisión no confirmada) | Aproximadamente 54 GB si es bf16/fp16 (estimación basada en 27.000 millones de parámetros) | No disponible | Apache 2.0 según etiqueta | HuggingFace; requiere transformers o vLLM |
+| Este repositorio (EXL3 4,00 bpw) | EXL3 (ExLlamaV3) | 16,5 GB (repo) | No disponible | Apache 2.0 | Hugging Face; requiere ExLlamaV3 |
+| `huihui-ai/Huihui-Qwen3.8-27B-abliterated` | Pesos completos (safetensors, precisión no confirmada) | Aproximadamente 54 GB si es bf16/fp16 (estimación basada en 27.000 millones de parámetros) | No disponible | Apache 2.0 según etiqueta | Hugging Face; requiere transformers o vLLM |
 | Otras cuantizaciones del mismo base (GGUF, EXL2, AWQ) | Diversos | No disponible | No disponible | Apache 2.0 (heredada) | No confirmadas en la información proporcionada |
 
 La información disponible no incluye datos de rendimiento comparado con otros modelos de la misma categoría, por lo que no es posible establecer una comparativa de calidad.
@@ -90,7 +90,7 @@ La información disponible no incluye datos de rendimiento comparado con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turboderp/Huihui-Qwen3.8-27B-abliterated-exl3
+- Modelo en Hugging Face: https://huggingface.co/turboderp/Huihui-Qwen3.8-27B-abliterated-exl3
 - Rama de 4,00 bpw: https://huggingface.co/turboderp/Huihui-Qwen3.8-27B-abliterated-exl3/tree/4.00bpw
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Perfil del autor de la cuantización: https://huggingface.co/turboderp

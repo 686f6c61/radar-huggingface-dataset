@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llava-Pythia-400M es un modelo de vision-lenguaje (VLM) de pequeno tamano publicado por el usuario latheeshpoondla en HuggingFace. Segun la model card, el modelo pertenece a una serie de VLM reducidos que se utilizan para entrenar TinyVLA, un proyecto de modelos vision-language-action orientados a robotica. El repositorio contiene pesos en formato safetensors con 374.721.536 parametros reales (aproximadamente 375 millones) y ocupa 0,7 GB, lo que situa los pesos en un rango compatible con precision bf16/fp16.
+Llava-Pythia-400M es un modelo de vision-lenguaje (VLM) de pequeno tamano publicado por el usuario latheeshpoondla en Hugging Face. Segun la model card, el modelo pertenece a una serie de VLM reducidos que se utilizan para entrenar TinyVLA, un proyecto de modelos vision-language-action orientados a robotica. El repositorio contiene pesos en formato safetensors con 374.721.536 parametros reales (aproximadamente 375 millones) y ocupa 0,7 GB, lo que situa los pesos en un rango compatible con precision bf16/fp16.
 
 El modelo combina, por el identificador de arquitectura `llava_pythia`, un codificador visual de tipo LLaVA con un modelo de lenguaje de la familia Pythia. Se trata por tanto de un VLM de escala muy reducida, pensado mas como componente de investigacion y punto de partida para experimentos de robotica y aprendizaje por imitacion que como modelo de produccion generalista. No se han publicado datos de contexto, composicion del dataset ni resultados de benchmarks en la informacion disponible.
 
@@ -21,11 +21,11 @@ Su relevancia actual es acotada pero concreta: la mayoria de VLM open source par
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,7 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
-El tag de HuggingFace `llava_pythia` indica una arquitectura estilo LLaVA: un codificador visual (habitualmente un ViT de CLIP) cuyas representaciones se proyectan mediante un adaptador al espacio de embeddings de un modelo de lenguaje, en este caso de la familia Pythia. La model card del autor no especifica ni el codificador visual concreto, ni la dimension oculta, ni el numero de capas, ni el mecanismo de proyeccion empleado. El recuento de 374,7 millones de parametros es coherente con un backbone del orden de Pythia-410M o similar, pero este dato no puede confirmarse con la informacion disponible.
+El tag de Hugging Face `llava_pythia` indica una arquitectura estilo LLaVA: un codificador visual (habitualmente un ViT de CLIP) cuyas representaciones se proyectan mediante un adaptador al espacio de embeddings de un modelo de lenguaje, en este caso de la familia Pythia. La model card del autor no especifica ni el codificador visual concreto, ni la dimension oculta, ni el numero de capas, ni el mecanismo de proyeccion empleado. El recuento de 374,7 millones de parametros es coherente con un backbone del orden de Pythia-410M o similar, pero este dato no puede confirmarse con la informacion disponible.
 
 Sobre el entrenamiento no hay informacion publica: se desconoce el numero de tokens de texto, el volumen de pares imagen-texto, la composicion del dataset, si hubo etapas de alineacion (SFT, RLHF o DPO) y si se congelo o no el codificador visual. El unico dato funcional es que el modelo forma parte de la serie empleada para entrenar TinyVLA, lo que sugiere un uso como inicializacion o componente de un sistema vision-language-action en lugar de como modelo conversacional final. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, compresion de tokens visuales, etc.).
 
@@ -68,10 +68,10 @@ La informacion disponible no permite una comparativa cuantitativa fiable. Se lis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Llava-Pythia-400M | 374,7M | No disponible | MIT | HuggingFace | No disponible |
-| SmolVLM (variantes pequenas, HuggingFaceTB) | ~256M-500M | No disponible en esta ficha | No disponible en esta ficha | HuggingFace | No disponible |
-| TinyLLaVA (variantes ~0,5B) | ~500M | No disponible en esta ficha | No disponible en esta ficha | HuggingFace / GitHub | No disponible |
-| Pythia-410M (solo texto) | ~410M | 2048 tokens (referencia del backbone) | Apache-2.0 | HuggingFace | No disponible en esta ficha |
+| Llava-Pythia-400M | 374,7M | No disponible | MIT | Hugging Face | No disponible |
+| SmolVLM (variantes pequenas, HuggingFaceTB) | ~256M-500M | No disponible en esta ficha | No disponible en esta ficha | Hugging Face | No disponible |
+| TinyLLaVA (variantes ~0,5B) | ~500M | No disponible en esta ficha | No disponible en esta ficha | Hugging Face / GitHub | No disponible |
+| Pythia-410M (solo texto) | ~410M | 2048 tokens (referencia del backbone) | Apache-2.0 | Hugging Face | No disponible en esta ficha |
 
 No se dispone de resultados de benchmarks comparativos que permitan situar Llava-Pythia-400M frente a estas alternativas.
 
@@ -85,12 +85,12 @@ No se dispone de resultados de benchmarks comparativos que permitan situar Llava
 - Sin garantias de calidad para produccion: no hay benchmarks, ni pipeline declarado, ni versiones, ni historial de actualizaciones (el repositorio no se ha modificado desde su creacion).
 - Uso comercial: la licencia MIT permite uso comercial, pero la ausencia de informacion sobre la procedencia de los datos de entrenamiento impide verificar la limpieza de derechos sobre las imagenes o textos utilizados.
 - Cero adopcion verificable: 0 descargas y 0 likes en el momento de la consulta, sin issues, discusiones ni terceros que hayan validado el modelo.
-- Busqueda web sin resultados utiles: las consultas realizadas no devolvieron ningun contenido relacionado con el modelo, por lo que toda la informacion tecnica procede exclusivamente de la model card y de los metadatos de HuggingFace.
+- Busqueda web sin resultados utiles: las consultas realizadas no devolvieron ningun contenido relacionado con el modelo, por lo que toda la informacion tecnica procede exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/latheeshpoondla/Llava-Pythia-400M
+- Modelo en Hugging Face: https://huggingface.co/latheeshpoondla/Llava-Pythia-400M
 - Repositorio TinyVLA (referenciado en la model card): https://github.com/lesjie-wen/tinyvla
-- Perfil del autor en HuggingFace: https://huggingface.co/latheeshpoondla
+- Perfil del autor en Hugging Face: https://huggingface.co/latheeshpoondla
 - Paper, blog o demo oficial del modelo: no disponible
 - Resultados relevantes de la busqueda web: no disponible (las consultas realizadas no devolvieron ningun resultado relacionado con el modelo)

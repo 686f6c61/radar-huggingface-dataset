@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swish-26B-A4B es un ajuste fino (finetune) del modelo instructivo google/gemma-4-26B-A4B-it, publicado por el usuario ReadyArt en HuggingFace. Se trata de un modelo de generación de texto orientado explicitamente a contenido para adultos y a narrativa de rol: la model card lo etiqueta con `nsfw`, `explicit`, `roleplay`, `ERP`, `Erotic`, `Horror` y `Violence`, ademas de `unaligned`, lo que indica que el autor ha relajado total o parcialmente los filtros de alineamiento del modelo base para permitir tematicas que un modelo instructivo convencional rechazaria.
+Swish-26B-A4B es un ajuste fino (finetune) del modelo instructivo google/gemma-4-26B-A4B-it, publicado por el usuario ReadyArt en Hugging Face. Se trata de un modelo de generación de texto orientado explicitamente a contenido para adultos y a narrativa de rol: la model card lo etiqueta con `nsfw`, `explicit`, `roleplay`, `ERP`, `Erotic`, `Horror` y `Violence`, ademas de `unaligned`, lo que indica que el autor ha relajado total o parcialmente los filtros de alineamiento del modelo base para permitir tematicas que un modelo instructivo convencional rechazaria.
 
 El dato objetivo disponible es el recuento real de parametros a partir de los tensores en safetensors: 25.805.936.206 parametros (aproximadamente 25,8 mil millones), con un repositorio de 51,6 GB. La nomenclatura «A4B» del nombre y del modelo base sugiere una arquitectura de mezcla de expertos (MoE) con unos 4 mil millones de parametros activos por token, aunque esta cifra no aparece confirmada en la informacion proporcionada. El modelo solo declara soporte para ingles.
 
@@ -77,8 +77,8 @@ Estimaciones calculadas a partir del recuento real de parametros (25,8 B); el au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ReadyArt/Swish-26B-A4B | 25,8 B (activos no disponibles) | No disponible | Apache 2.0 (declarada) | HuggingFace, 0 descargas | Finetune NSFW/rol sin benchmarks |
-| google/gemma-4-26B-A4B-it | ~26 B | No disponible en la informacion | Terminos de uso de Gemma | HuggingFace | Modelo base instructivo, alineado |
+| ReadyArt/Swish-26B-A4B | 25,8 B (activos no disponibles) | No disponible | Apache 2.0 (declarada) | Hugging Face, 0 descargas | Finetune NSFW/rol sin benchmarks |
+| google/gemma-4-26B-A4B-it | ~26 B | No disponible en la informacion | Terminos de uso de Gemma | Hugging Face | Modelo base instructivo, alineado |
 | Otras alternativas de rol/ERP de tamano similar | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la informacion consultada |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ Estimaciones calculadas a partir del recuento real de parametros (25,8 B); el au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Swish-26B-A4B
+- Hugging Face: https://huggingface.co/ReadyArt/Swish-26B-A4B
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Paper, blog, repositorio o demo del finetune: no disponible
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; los resultados obtenidos corresponden a sitios de webcams para adultos y no guardan relacion con el modelo.

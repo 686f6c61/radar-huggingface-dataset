@@ -26,7 +26,7 @@ La relevancia de este modelo es acotada: no es un modelo generativo ni un LLM, s
 | Umbrales por clase | 0,5 para las clases 0 a 4 |
 | Hash SHA-256 de pesos | `a5d8b23941f36c19acc233c5430d260f279cf1985f57a47d7be5a474337471c1` |
 | Runtime de inferencia | onnxruntime (via `miner.py`) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apexlabs-hq/sn44-dirtiness-v19
+- Modelo en Hugging Face: https://huggingface.co/apexlabs-hq/sn44-dirtiness-v19
 - Modelo base referenciado: https://huggingface.co/manako/Detect-room-dirtiness-detection
 - Documentacion de ONNX Runtime: https://onnxruntime.ai/docs/
 - Repositorio de ONNX Runtime en GitHub: https://github.com/microsoft/onnxruntime

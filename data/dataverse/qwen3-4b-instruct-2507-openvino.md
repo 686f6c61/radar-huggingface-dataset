@@ -91,7 +91,7 @@ Frente al modelo base, esta conversión no aporta capacidades nuevas: la diferen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dataverse/Qwen3-4B-Instruct-2507-openvino
+- Repositorio en Hugging Face: https://huggingface.co/dataverse/Qwen3-4B-Instruct-2507-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
 - optimum-intel: https://github.com/huggingface/optimum-intel

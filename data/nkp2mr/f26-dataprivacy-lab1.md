@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: nkp2mr/f26-dataprivacy-lab1](https://huggingface.co/nkp2mr/f26-dataprivacy-lab1)
+- [Hugging Face: nkp2mr/f26-dataprivacy-lab1](https://huggingface.co/nkp2mr/f26-dataprivacy-lab1)
 - Referencias a ficheros internos del repositorio (SETUP.md, ASSIGNMENT.md, THIRD_PARTY_NOTICES.md) mencionadas en la model card, sin URLs públicas disponibles.

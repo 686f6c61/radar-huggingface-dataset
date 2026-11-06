@@ -108,7 +108,7 @@ La informacion proporcionada no incluye comparaciones con otros modelos de ASR n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abdullahu5mani/parakeet-nemotron-0.6b-mlx
+- Repositorio en Hugging Face: https://huggingface.co/Abdullahu5mani/parakeet-nemotron-0.6b-mlx
 - Aplicacion Taurscribe (dictado en tiempo real, repositorio del autor): https://github.com/Abdullahu5mani/Taurscribe
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
 - Resultados de la busqueda web: las consultas realizadas no devolvieron ningun enlace relevante sobre este modelo, su paper o su repositorio; los resultados obtenidos correspondian a contenido sin relacion con el modelo.

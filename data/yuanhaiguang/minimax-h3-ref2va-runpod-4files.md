@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Modalidades | Audio nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniMax-H3 (este repo, Ref2VA) | Texto, imagen y referencia a video; audio | Si (VAE de audio dedicado) | minimax-h3-community-license-agreement | Pesos abiertos en HuggingFace; reempaquetado ComfyUI |
-| Wan 2.x (Alibaba) | Texto e imagen a video | No documentado en la informacion disponible | licencia abierta de Alibaba (verificar version) | Pesos abiertos en HuggingFace |
-| HunyuanVideo (Tencent) | Texto e imagen a video | No documentado en la informacion disponible | licencia comunitaria de Tencent | Pesos abiertos en HuggingFace |
-| LTX-Video (Lightricks) | Texto e imagen a video | No documentado en la informacion disponible | licencia propia de Lightricks | Pesos abiertos en HuggingFace |
+| MiniMax-H3 (este repo, Ref2VA) | Texto, imagen y referencia a video; audio | Si (VAE de audio dedicado) | minimax-h3-community-license-agreement | Pesos abiertos en Hugging Face; reempaquetado ComfyUI |
+| Wan 2.x (Alibaba) | Texto e imagen a video | No documentado en la informacion disponible | licencia abierta de Alibaba (verificar version) | Pesos abiertos en Hugging Face |
+| HunyuanVideo (Tencent) | Texto e imagen a video | No documentado en la informacion disponible | licencia comunitaria de Tencent | Pesos abiertos en Hugging Face |
+| LTX-Video (Lightricks) | Texto e imagen a video | No documentado en la informacion disponible | licencia propia de Lightricks | Pesos abiertos en Hugging Face |
 
 No se dispone de datos verificados de parametros, longitud de contexto, resolucion maxima ni resultados de benchmarks para ninguno de los modelos de la tabla en la informacion proporcionada; la comparacion se limita por tanto a modalidades, licencia y disponibilidad. El rasgo diferencial de MiniMax-H3 frente a las alternativas listadas es la generacion conjunta de audio, que en los demas casos no esta documentada en las fuentes consultadas.
 

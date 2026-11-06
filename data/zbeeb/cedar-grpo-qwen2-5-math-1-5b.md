@@ -112,7 +112,7 @@ No se han encontrado en la búsqueda web enlaces ni resultados que permitan comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Cedar-GRPO-Qwen2.5-Math-1.5B
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Cedar-GRPO-Qwen2.5-Math-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Revisión fijada del modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B/tree/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Cedar-GRPO-DAPO-Math-17k

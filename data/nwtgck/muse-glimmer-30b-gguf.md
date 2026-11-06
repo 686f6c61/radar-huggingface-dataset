@@ -92,7 +92,7 @@ Comparacion con modelos de otros desarrolladores: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, por lo que no hay prensa, articulos tecnicos ni discusion independiente que permita contrastar las afirmaciones del autor.
 
 ## Enlaces
-- Repositorio en HuggingFace de esta conversion GGUF: https://huggingface.co/nwtgck/Muse-Glimmer-30B-GGUF
+- Repositorio en Hugging Face de esta conversion GGUF: https://huggingface.co/nwtgck/Muse-Glimmer-30B-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

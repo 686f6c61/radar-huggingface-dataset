@@ -94,6 +94,6 @@ No se dispone de información detallada sobre modelos comparables en la document
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/collision-10M/collision-10m
+- Hugging Face: https://huggingface.co/collision-10M/collision-10m
 - Repositorio GitHub: https://github.com/viraj3106/Collision-1.46M.git
 - No se encontraron papers, blogs o demos adicionales en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash es un modelo multimodal nativo presentado como el primero de la serie GLM-5 en integrar vision y texto en un unico modelo. Segun la model card, cuenta con 320.000 millones de parametros totales y solo 18.000 millones de parametros activos por token, lo que lo situa en la categoria de modelos MoE de gran tamano pero coste de inferencia reducido. El autor del repositorio en HuggingFace es el usuario FAISALFAZALHUSSAIN, aunque el contenido de la model card atribuye el desarrollo al equipo GLM-5 (zai-org), con informe tecnico en arXiv y blog propio en z.ai.
+GLM-5.3-Flash es un modelo multimodal nativo presentado como el primero de la serie GLM-5 en integrar vision y texto en un unico modelo. Segun la model card, cuenta con 320.000 millones de parametros totales y solo 18.000 millones de parametros activos por token, lo que lo situa en la categoria de modelos MoE de gran tamano pero coste de inferencia reducido. El autor del repositorio en Hugging Face es el usuario FAISALFAZALHUSSAIN, aunque el contenido de la model card atribuye el desarrollo al equipo GLM-5 (zai-org), con informe tecnico en arXiv y blog propio en z.ai.
 
 La propuesta de valor declarada es doble: por un lado, superar a GLM-5.2 en benchmarks y cargas de trabajo reales a una decima parte del precio, acercandose a Claude Opus 4.8 en tareas de codigo y agentes; por otro, reducir el coste de servicio en contextos largos mediante una arquitectura hibrida que combina atencion dispersa (sparse) y atencion lineal, junto con Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado.
 
@@ -80,7 +80,7 @@ Solo se dispone de comparaciones cualitativas aportadas por el propio autor; no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 321B totales / 18B activos | no especificado (evaluado hasta 1M) | MIT | Pesos en HuggingFace, API en z.ai | Multimodal nativo, atencion hibrida sparse + linear |
+| GLM-5.3-Flash | 321B totales / 18B activos | no especificado (evaluado hasta 1M) | MIT | Pesos en Hugging Face, API en z.ai | Multimodal nativo, atencion hibrida sparse + linear |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | La model card afirma que GLM-5.3-Flash lo supera a una decima parte del precio |
 | Claude Opus 4.8 | no disponible | no disponible | Propietaria | Solo API | La model card afirma que GLM-5.3-Flash se acerca en codigo y agentes |
 
@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace esta publicado por el usuario FAISALFAZALHUSSAIN, no por la organizacion oficial zai-org, pese a que la model card atribuye el desarrollo al equipo GLM-5. Se trata por tanto de una copia o espejo de terceros cuya integridad no esta verificada.
+- El repositorio de Hugging Face esta publicado por el usuario FAISALFAZALHUSSAIN, no por la organizacion oficial zai-org, pese a que la model card atribuye el desarrollo al equipo GLM-5. Se trata por tanto de una copia o espejo de terceros cuya integridad no esta verificada.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia (2026-09-11), lo que impide confirmar su validacion por parte de la comunidad.
 - Los resultados de benchmarks no se han podido verificar numericamente: la model card los presenta en una imagen no disponible en el texto extraido. Las afirmaciones de superar a GLM-5.2 y acercarse a Claude Opus 4.8 son del propio autor y no estan contrastadas de forma independiente.
 - Riesgo de alucinacion: no se documenta en la informacion disponible. Como modelo de gran tamano orientado a agentes, es previsible en tareas de generacion abierta, pero no hay datos especificos.
@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FAISALFAZALHUSSAIN/GLM-5.3-Flash
+- Repositorio en Hugging Face: https://huggingface.co/FAISALFAZALHUSSAIN/GLM-5.3-Flash
 - Informe tecnico (arXiv): https://arxiv.org/abs/2602.15763
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Documentacion de la API en Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

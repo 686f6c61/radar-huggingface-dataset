@@ -4,7 +4,7 @@
 
 Este repositorio contiene un checkpoint de ajuste fino mediante LoRA del modelo π0.5 (etiqueta `pi05`) para la tarea de manipulación robótica denominada **pick3**, ejecutada sobre un brazo Franka. Se trata del resultado de la segunda ronda de entrenamiento (`r2`), en la actualización de optimizador número 10.000, lo que equivale a 40.000 exposiciones de muestras. El autor es `fm-dev` y el artefacto se publica como un bundle de inferencia y reanudación, no como un modelo de propósito general.
 
-El interés de esta ficha es acotado y experimental: el checkpoint forma parte de una campaña de entrenamiento que apunta a 12.500 actualizaciones (50.000 exposiciones), con checkpoints guardados cada 1.000 pasos. Los pasos 5.000, 10.000 y 12.500 disponen de repositorios independientes, y el resto se conservan en un archivo de respaldo alojado en HuggingFace Datasets. El propio autor advierte que la publicación intermedia no constituye una evaluación de calidad de la política.
+El interés de esta ficha es acotado y experimental: el checkpoint forma parte de una campaña de entrenamiento que apunta a 12.500 actualizaciones (50.000 exposiciones), con checkpoints guardados cada 1.000 pasos. Los pasos 5.000, 10.000 y 12.500 disponen de repositorios independientes, y el resto se conservan en un archivo de respaldo alojado en Hugging Face Datasets. El propio autor advierte que la publicación intermedia no constituye una evaluación de calidad de la política.
 
 No se dispone de información pública sobre el número de parámetros, la longitud de contexto ni la licencia. El repositorio ocupa 11,5 GB e incluye pesos EMA de servicio, activos de normalización e historial, código fuente de inferencia, versiones exactas de dependencias y estado completo de reanudación (optimizador, RNG y sampler). La búsqueda web asociada no devolvió resultados relevantes: los enlaces recuperados corresponden a emisoras de radio en francés, sin relación con el modelo.
 
@@ -66,7 +66,7 @@ La model card indica explícitamente que la publicación intermedia no es una ev
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step10000 (este) | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step10000 (este) | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | pi05-pick3 baseline, paso 5.000 (mismo autor, `r2`) | no disponible | no disponible | sin benchmarks publicados | no disponible | repositorio independiente citado en la model card |
 | pi05-pick3 baseline, paso 12.500 (mismo autor, `r2`) | no disponible | no disponible | sin benchmarks publicados | no disponible | repositorio independiente citado en la model card |
 | Otras políticas VLA de manipulación con fine-tuning LoRA | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -88,6 +88,6 @@ No se dispone de datos comparativos con alternativas de otros autores. La model 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step10000
+- Repositorio Hugging Face: https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step10000
 - Archivo de respaldo de checkpoints: https://huggingface.co/datasets/fm-dev/pi05-checkpoint-backups/tree/main/checkpoints/r2
 - Búsqueda web: no se encontraron resultados relevantes. Los enlaces recuperados (radio-en-ligne.fr, fr.wikipedia.org/wiki/Radio_FM, cheriefm.fr, radioline.co) corresponden a emisoras de radio en francés y no guardan relación con el modelo.

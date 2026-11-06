@@ -6,7 +6,7 @@ Qwen3.8-27B-Imatrix-Mtp-1m es una conversión a GGUF del modelo Qwen3.8-27B de A
 
 La relevancia de este build reside en que ofrece una ventana de contexto extremadamente larga en formato GGUF, apta para ejecución local en hardware de consumo con cuantización, y con un head MTP que acelera la generación de texto hasta un 81 % en contextos largos, según las mediciones del autor. Es una opción práctica para desarrolladores que necesitan procesar documentos extensos o mantener conversaciones de larga duración sin perder rendimiento.
 
-El repositorio incluye seis archivos GGUF (F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q3_K_M), todos con el head MTP integrado y los tensores no MTP bit-idénticos a los pesos originales de HuggingFace. La licencia es Apache-2.0, lo que permite uso comercial y modificación sin restricciones adicionales.
+El repositorio incluye seis archivos GGUF (F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q3_K_M), todos con el head MTP integrado y los tensores no MTP bit-idénticos a los pesos originales de Hugging Face. La licencia es Apache-2.0, lo que permite uso comercial y modificación sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -21,13 +21,13 @@ El repositorio incluye seis archivos GGUF (F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q3_
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (safetensors originales convertidos) |
 
-Nota: el dato de parametros totales extraido de HuggingFace (460 730 096) parece un error de metadata; el modelo se denomina 27B y el modelo base Qwen/Qwen3.8-27B tiene 27 mil millones de parametros.
+Nota: el dato de parametros totales extraido de Hugging Face (460 730 096) parece un error de metadata; el modelo se denomina 27B y el modelo base Qwen/Qwen3.8-27B tiene 27 mil millones de parametros.
 
 ## Arquitectura y entrenamiento
 
 El modelo base Qwen3.8-27B es un transformer multimodal con un codificador de vision integrado, lo que permite procesar tanto texto como imagenes. La arquitectura original incluye mecanismos de atencion por ventanas y soporte nativo para herramientas (tool calling) y agentes reactivos. El build GGUF de Brian6145 mantiene esa arquitectura y le aplica dos modificaciones: la extension de contexto a 1M mediante YaRN estatico (factor 4.0, theta 10 000 000, partial_rotary_factor 0.25) y la incorporacion de un head MTP (blk.64) para decodificacion especulativa. El head MTP se ha verificado en llama.cpp (build b10252) y LM Studio 2.28.2, con tasas de aceptacion de borrador del 50,8 % al 56,1 % en Q4_K_M, similares a las de los GGUF oficiales de unsloth.
 
-La conversion a GGUF ha respetado los pesos originales (los tensores no MTP son bit-idénticos a la fuente, salvo cuantizacion). El autor advierte de una peculiaridad en la conversion: los pesos RMSNorm en HuggingFace se almacenan como offset respecto a 1.0, mientras que llama.cpp espera el valor absoluto; el head MTP contiene 7 tensores de este tipo que deben sumar 1.0 al convertir manualmente, cosa que este repositorio ya hace correctamente.
+La conversion a GGUF ha respetado los pesos originales (los tensores no MTP son bit-idénticos a la fuente, salvo cuantizacion). El autor advierte de una peculiaridad en la conversion: los pesos RMSNorm en Hugging Face se almacenan como offset respecto a 1.0, mientras que llama.cpp espera el valor absoluto; el head MTP contiene 7 tensores de este tipo que deben sumar 1.0 al convertir manualmente, cosa que este repositorio ya hace correctamente.
 
 No se dispone de informacion sobre el proceso de entrenamiento del modelo base (datos, tokens, RLHF o DPO). El autor solo indica que el modelo base fue publicado por el equipo Qwen y que este build se limita a la conversion y extension de contexto.
 
@@ -94,7 +94,7 @@ La principal diferencia con el modelo oficial es la ventana de contexto de 1M y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Brian6145/Qwen3.8-27B-Imatrix-Mtp-1m
+- Repositorio Hugging Face: https://huggingface.co/Brian6145/Qwen3.8-27B-Imatrix-Mtp-1m
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de AMD sobre soporte dia 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Repositorio alternativo con MTP y vision: https://huggingface.co/pearsonkyle/Qwen3.8-27B-imatrix-MTP-GGUF

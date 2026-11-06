@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-TTS-v1.5 | 8,49 B | 31 | no disponible | Apache 2.0 | HuggingFace (repo de backup) |
-| MOSS-TTS 1.0 | no disponible | 20 | no disponible | no disponible | HuggingFace (OpenMOSS-Team) |
+| MOSS-TTS-v1.5 | 8,49 B | 31 | no disponible | Apache 2.0 | Hugging Face (repo de backup) |
+| MOSS-TTS 1.0 | no disponible | 20 | no disponible | no disponible | Hugging Face (OpenMOSS-Team) |
 | Alternativas TTS open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información disponible solo permite comparar con MOSS-TTS 1.0, del que v1.5 es continuación directa: v1.5 amplía de 20 a 31 idiomas y mejora clonado y prosodia. No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada.
@@ -84,7 +84,7 @@ La información disponible solo permite comparar con MOSS-TTS 1.0, del que v1.5 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-BF16-backup
+- Repositorio en Hugging Face: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-BF16-backup
 - Modelo base MOSS-TTS 1.0: https://huggingface.co/OpenMOSS-Team/MOSS-TTS
 - Repositorio GitHub del proyecto: https://github.com/OpenMOSS/MOSS-TTS/tree/main
 - Colección en ModelScope: https://modelscope.cn/collections/OpenMOSS-Team/MOSS-TTS

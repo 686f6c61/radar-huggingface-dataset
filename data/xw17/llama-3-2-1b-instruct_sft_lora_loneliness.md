@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xw17/Llama-3.2-1B-Instruct_SFT_lora_loneliness` es un repositorio de HuggingFace creado por el usuario `xw17` que, según su identificador, contiene un ajuste fino mediante LoRA (Low-Rank Adaptation) del modelo `meta-llama/Llama-3.2-1B-Instruct`, aparentemente orientado a un dominio relacionado con la soledad (loneliness). El repositorio se publicó el 4 de septiembre de 2026 y no registra descargas ni reacciones.
+`xw17/Llama-3.2-1B-Instruct_SFT_lora_loneliness` es un repositorio de Hugging Face creado por el usuario `xw17` que, según su identificador, contiene un ajuste fino mediante LoRA (Low-Rank Adaptation) del modelo `meta-llama/Llama-3.2-1B-Instruct`, aparentemente orientado a un dominio relacionado con la soledad (loneliness). El repositorio se publicó el 4 de septiembre de 2026 y no registra descargas ni reacciones.
 
 Sin embargo, la información disponible es extremadamente limitada: la model card es un texto autogenerado por la librería `transformers` y todos los campos relevantes aparecen como `[More Information Needed]`. El tamaño del repositorio se indica como 0.0 GB, lo que sugiere que no se han subido pesos del modelo ni otros archivos significativos. No se dispone de licencia, idiomas, pipeline, ni de ninguna especificación técnica. Por tanto, este repositorio no permite evaluar el modelo ni utilizarlo en la práctica.
 
@@ -59,4 +59,4 @@ No disponible. No se han encontrado modelos comparables dentro de la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_loneliness
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_loneliness

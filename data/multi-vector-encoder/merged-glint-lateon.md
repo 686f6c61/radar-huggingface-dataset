@@ -77,9 +77,9 @@ El modelo supera la media de sus dos padres en 9 de los 13 datasets de NanoBEIR 
 
 | Modelo | Parámetros | Contexto (documento) | nDCG@10 medio NanoBEIR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| merged-GLInt-LateOn | 149 M | 8192 | 0.7061 | Apache-2.0 | HuggingFace |
-| GLInt (chungimungi) | no disponible | 300 (configuración evaluada) | 0.6996 | no disponible | HuggingFace |
-| LateOn-regularized (lightonai) | no disponible | 300 (configuración evaluada) | 0.6979 | no disponible | HuggingFace |
+| merged-GLInt-LateOn | 149 M | 8192 | 0.7061 | Apache-2.0 | Hugging Face |
+| GLInt (chungimungi) | no disponible | 300 (configuración evaluada) | 0.6996 | no disponible | Hugging Face |
+| LateOn-regularized (lightonai) | no disponible | 300 (configuración evaluada) | 0.6979 | no disponible | Hugging Face |
 
 Los tres modelos comparten la misma familia arquitectónica (ModernBERT multi-vector con late interaction) y se evaluaron con los mismos prompts y límites de longitud. La ventaja principal del merge es la ventana de documento ampliada a 8192 tokens y una mejora moderada pero consistente en la media de NanoBEIR.
 
@@ -96,12 +96,12 @@ Los tres modelos comparten la misma familia arquitectónica (ModernBERT multi-ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/multi-vector-encoder/merged-GLInt-LateOn
+- Modelo en Hugging Face: https://huggingface.co/multi-vector-encoder/merged-GLInt-LateOn
 - Modelo base GLInt: https://huggingface.co/chungimungi/GLInt
 - Modelo base LateOn-regularized: https://huggingface.co/lightonai/LateOn-regularized
 - Documentación de Multi-Vector Encoder: https://www.sbert.net/docs/multi_vector_encoder/usage/usage.html
 - Referencia de `MultiVectorEncoder.merge`: https://www.sbert.net/docs/package_reference/multi_vector_encoder/model.html#sentence_transformers.multi_vector_encoder.model.MultiVectorEncoder.merge
 - Documentación de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers: https://github.com/huggingface/sentence-transformers
-- Multi-Vector Encoders en HuggingFace: https://huggingface.co/models?library=sentence-transformers&other=multi-vector
+- Multi-Vector Encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=multi-vector
 - Dataset NanoBEIR-en: https://huggingface.co/datasets/sentence-transformers/NanoBEIR-en

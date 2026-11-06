@@ -93,5 +93,5 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ascian-rames/smai-a4-ioc-nn
+- Hugging Face: https://huggingface.co/ascian-rames/smai-a4-ioc-nn
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

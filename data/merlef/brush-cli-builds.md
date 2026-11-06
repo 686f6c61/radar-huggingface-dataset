@@ -82,6 +82,6 @@ La comparacion con modelos de lenguaje no procede: no comparte categoria, tarea 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Merlef/brush-cli-builds
+- Repositorio en Hugging Face: https://huggingface.co/Merlef/brush-cli-builds
 - Proyecto Brush upstream: https://github.com/ArthurBrussee/brush
 - Commit de origen del build: https://github.com/ArthurBrussee/brush/commit/1388f74

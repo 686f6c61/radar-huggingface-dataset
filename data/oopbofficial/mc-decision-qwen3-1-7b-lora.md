@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MC Decision Qwen3-1.7B LoRA (este) | 1.700 M base + 17,4 M adaptador | no disponible (entrenado con limite de 512 tokens) | 91% accuracy conjunta estricta en test propio | Apache 2.0 | Adaptador MLX en HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1.700 M | no disponible en la informacion | 1% accuracy conjunta estricta en el mismo test | Apache 2.0 | Pesos completos en HuggingFace |
+| MC Decision Qwen3-1.7B LoRA (este) | 1.700 M base + 17,4 M adaptador | no disponible (entrenado con limite de 512 tokens) | 91% accuracy conjunta estricta en test propio | Apache 2.0 | Adaptador MLX en Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1.700 M | no disponible en la informacion | 1% accuracy conjunta estricta en el mismo test | Apache 2.0 | Pesos completos en Hugging Face |
 | Linea base de palabras clave (referencia del autor) | no aplica | no aplica | 65,33% accuracy conjunta total; 48% en retos | no disponible | No publicada como modelo |
 
 No se dispone de datos de otros adaptadores o modelos comparables de la misma categoria en la informacion proporcionada.
@@ -103,7 +103,7 @@ No se dispone de datos de otros adaptadores o modelos comparables de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oopbofficial/mc-decision-qwen3-1.7b-lora
+- Modelo en Hugging Face: https://huggingface.co/oopbofficial/mc-decision-qwen3-1.7b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio MLX-LM: https://github.com/ml-explore/mlx-lm
 - Repositorio MLX: https://github.com/ml-explore/mlx

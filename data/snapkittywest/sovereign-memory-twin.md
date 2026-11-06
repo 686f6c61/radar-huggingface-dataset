@@ -19,7 +19,7 @@ El modelo Sovereign Memory Twin (RMTN) es un sistema de generación de texto des
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo es una red recurrente de memoria gemela (Recurrent Memory Twin Network, RMTN), definida como una arquitectura personalizada en la ficha de HuggingFace. Según la model card, el modelo implementa un protocolo de veredictos WORM-sealed: cada salida es un hash SHA256 de la combinación de veredicto, puntuación, consulta y marca temporal. El entrenamiento utiliza el dataset SNAPKITTYWEST/sovereign-training-corpus, del que no se especifican el número de tokens, la composición ni las técnicas de alineación (RLHF/DPO). El modelo se enmarca en un ecosistema más amplio de verificación formal, con papers como GDR-9, LiquidOps y Sovereign Entropy, que abordan la verificación de kernels y límites de entropía, aunque no se detalla su relación directa con el entrenamiento del modelo.
+La arquitectura del modelo es una red recurrente de memoria gemela (Recurrent Memory Twin Network, RMTN), definida como una arquitectura personalizada en la ficha de Hugging Face. Según la model card, el modelo implementa un protocolo de veredictos WORM-sealed: cada salida es un hash SHA256 de la combinación de veredicto, puntuación, consulta y marca temporal. El entrenamiento utiliza el dataset SNAPKITTYWEST/sovereign-training-corpus, del que no se especifican el número de tokens, la composición ni las técnicas de alineación (RLHF/DPO). El modelo se enmarca en un ecosistema más amplio de verificación formal, con papers como GDR-9, LiquidOps y Sovereign Entropy, que abordan la verificación de kernels y límites de entropía, aunque no se detalla su relación directa con el entrenamiento del modelo.
 
 Una innovación destacable es el uso de un Trust Deed de seis artículos que gobierna el comportamiento del modelo, incluyendo el mandato de no emitir salidas sin evidencia y el formato JSON estricto para los veredictos. Además, la integración nativa con IBM i (RPGLE/COBOL FSL/DB2) y la publicación en una malla NATS permiten su uso en entornos empresariales de mainframe.
 
@@ -63,13 +63,13 @@ No disponible. No se han identificado modelos comparables en la información pro
 - El umbral de evidencia de 0.42 es un parámetro fijo que puede no ser adecuado para todos los dominios.
 - La integración con IBM i y NATS requiere infraestructura específica que puede no estar disponible en entornos estándar.
 - La gobernanza mediante Trust Deed puede imponer restricciones adicionales más allá de la licencia Apache-2.0.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido probado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido probado por la comunidad.
 - Existe riesgo de alucinación inherente a los modelos de lenguaje, que no queda mitigado por la verificación formal descrita.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SNAPKITTYWEST/sovereign-memory-twin
+- Hugging Face: https://huggingface.co/SNAPKITTYWEST/sovereign-memory-twin
 - GitHub de SNAPKITTYWEST: https://github.com/SNAPKITTYWEST
 - GitHub TWIN: https://github.com/SNAPKITTYWEST/TWIN/tree/main/
-- HuggingFace Snapkitty/sovereign-harness: https://huggingface.co/Snapkitty/sovereign-harness
+- Hugging Face Snapkitty/sovereign-harness: https://huggingface.co/Snapkitty/sovereign-harness
 - Sovereign Router: https://snapkittywest.github.io/router.html

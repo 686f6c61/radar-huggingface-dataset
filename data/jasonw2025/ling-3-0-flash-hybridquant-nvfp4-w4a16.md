@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16 es una cuantización híbrida del modelo Ling-3.0-flash, desarrollado por InclusionAI (Ant Group) y publicado originalmente en HuggingFace. Esta versión, creada por el usuario JasonW2025, aplica una cuantización NVFP4 (pesos en FP4 de 4 bits) con activaciones en 16 bits (W4A16), optimizada mediante NVIDIA ModelOpt y diseñada para su ejecución eficiente en vLLM. El objetivo es reducir los requisitos de memoria y acelerar la inferencia sin sacrificar en exceso la calidad del modelo original.
+El modelo JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16 es una cuantización híbrida del modelo Ling-3.0-flash, desarrollado por InclusionAI (Ant Group) y publicado originalmente en Hugging Face. Esta versión, creada por el usuario JasonW2025, aplica una cuantización NVFP4 (pesos en FP4 de 4 bits) con activaciones en 16 bits (W4A16), optimizada mediante NVIDIA ModelOpt y diseñada para su ejecución eficiente en vLLM. El objetivo es reducir los requisitos de memoria y acelerar la inferencia sin sacrificar en exceso la calidad del modelo original.
 
 El modelo base Ling-3.0-flash es un modelo de lenguaje de arquitectura MoE (Mixture of Experts) híbrida, que combina atención lineal KDA (Kernel-based Decoupled Attention) con atención latente multi-cabeza (MLA), en una pila alternada 5:1. Según fuentes, el modelo base tiene 124 mil millones de parámetros totales y 5.1 mil millones activos por token, aunque el repositorio cuantizado reporta 65.527.606.240 parámetros en sus safetensors, una discrepancia que se detalla más adelante. El modelo está orientado a tareas de razonamiento complejo, generación de código y colaboración con agentes de IA.
 
-Esta cuantización es relevante porque permite desplegar un modelo MoE de gran tamaño en hardware más asequible, reduciendo la VRAM necesaria aproximadamente a la mitad en comparación con una representación de 8 bits, y manteniendo compatibilidad con vLLM para servir inferencias de alto rendimiento. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace.
+Esta cuantización es relevante porque permite desplegar un modelo MoE de gran tamaño en hardware más asequible, reduciendo la VRAM necesaria aproximadamente a la mitad en comparación con una representación de 8 bits, y manteniendo compatibilidad con vLLM para servir inferencias de alto rendimiento. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se dispone de comparativas directas con otros modelos cuantizados de la misma
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar las condiciones en HuggingFace.
+- Acceso restringido: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar las condiciones en Hugging Face.
 - Discrepancia en el número de parámetros: el repositorio reporta 65.5B mientras que el modelo base tiene 124B según fuentes externas. Esto puede deberse a una poda o a una diferencia en el conteo, pero no está documentado. Se recomienda verificar la integridad del modelo antes de usarlo en producción.
 - Degradación por cuantización: la cuantización FP4 puede introducir errores de redondeo que afecten a tareas de alta precisión, como matemáticas o generación de código complejo. No se han publicado evaluaciones de esta versión.
 - Licencia heredada: al heredar la licencia del modelo base, es necesario revisar los términos de la licencia original de InclusionAI para asegurar el cumplimiento en usos comerciales.
@@ -80,7 +80,7 @@ No se dispone de comparativas directas con otros modelos cuantizados de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16
+- Repositorio Hugging Face: https://huggingface.co/JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Documentación oficial de Ling: https://developer.ant-ling.com/en/docs/models/ling/
 - Noticia sobre Ling-3.0 Flash: https://www.aimodeling.com/en/news/slug/inclusionai-ling-3-flash-hybrid-linear-moe-agent

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aura Prototype 26B A4B es un modelo de lenguaje multimodal (entrada de imagen y texto) publicado por EldritchLabs en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un merge de cuatro modelos preentrenados de la familia Gemma 4 de 26B con nomenclatura A4B, generado con la herramienta mergekit y, concretamente, con el metodo experimental denominado "aura", desarrollado por el mismo autor en un fork de mergekit llamado mergekit-exp. El modelo declara 25.999.063.326 parametros totales (aproximadamente 26B) y un repositorio de 52 GB en safetensors, lo que es coherente con pesos en bfloat16.
+Aura Prototype 26B A4B es un modelo de lenguaje multimodal (entrada de imagen y texto) publicado por EldritchLabs en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un merge de cuatro modelos preentrenados de la familia Gemma 4 de 26B con nomenclatura A4B, generado con la herramienta mergekit y, concretamente, con el metodo experimental denominado "aura", desarrollado por el mismo autor en un fork de mergekit llamado mergekit-exp. El modelo declara 25.999.063.326 parametros totales (aproximadamente 26B) y un repositorio de 52 GB en safetensors, lo que es coherente con pesos en bfloat16.
 
 El objetivo declarado es la generacion de ficcion y narrativa: escritura creativa, roleplay, generacion de tramas y subtramas, continuacion de escenas y prosificacion vivida en generos como terror, romance y ciencia ficcion. Los tags del repositorio lo orientan explicitamente a contenido conversacional y creativo sin filtros de lenguaje soez ("swearing"), y su pipeline es "image-text-to-text", lo que implica capacidad de procesar imagenes como entrada ademas de texto.
 
@@ -98,7 +98,7 @@ No se incluyen alternativas externas (por ejemplo, otros modelos de 26 a 32B ori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EldritchLabs/Aura-Prototype-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/EldritchLabs/Aura-Prototype-26B-A4B
 - Fork de mergekit con el metodo aura: https://github.com/EldritchLabs/mergekit-exp
 - mergekit original: https://github.com/cg123/mergekit
 - Script de visualizacion de mapas de calor del merge: https://huggingface.co/spaces/Naphula/model_tools/blob/main/graph_v18.py

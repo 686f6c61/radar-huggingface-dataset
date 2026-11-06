@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ToastyPigeon/gemma-4-12b-it-rp-chapters-adapter | Adaptador LoRA r32 (SFT) | Base 12B; adaptador no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| ToastyPigeon/gemma-4-12b-full-cpt | Adaptador CPT (no instruct) | Base 12B; adaptador no disponible | no disponible | no disponible | Publico en HuggingFace |
-| ToastyPigeon/gemma-4-12b-full-cpt-itvec | Merge CPT + task vector instruct | 12B | no disponible | no disponible | Publico en HuggingFace; desplegable en Featherless y FriendliAI |
-| google/gemma-4-12B-it (modelo base) | Transformer instruct | 12B | no disponible en la informacion consultada | no disponible en la informacion consultada | Publico en HuggingFace y en la pagina oficial de Google DeepMind |
+| ToastyPigeon/gemma-4-12b-it-rp-chapters-adapter | Adaptador LoRA r32 (SFT) | Base 12B; adaptador no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| ToastyPigeon/gemma-4-12b-full-cpt | Adaptador CPT (no instruct) | Base 12B; adaptador no disponible | no disponible | no disponible | Publico en Hugging Face |
+| ToastyPigeon/gemma-4-12b-full-cpt-itvec | Merge CPT + task vector instruct | 12B | no disponible | no disponible | Publico en Hugging Face; desplegable en Featherless y FriendliAI |
+| google/gemma-4-12B-it (modelo base) | Transformer instruct | 12B | no disponible en la informacion consultada | no disponible en la informacion consultada | Publico en Hugging Face y en la pagina oficial de Google DeepMind |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes; la comparacion se limita a tipo de artefacto, parametros y disponibilidad.
 

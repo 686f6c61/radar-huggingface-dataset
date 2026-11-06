@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xJLJs_rnn_cnn1d_video_2` es un repositorio publicado en HuggingFace por el usuario `gianmaTest` bajo el tag `pytorch`. El identificador sugiere un experimento generado automáticamente (el prefijo `generatedDigitalExps` y el sufijo alfanumérico aleatorio `1xJLJs` apuntan a un pipeline de generación de experimentos) en el que se combinan una red recurrente (RNN) y una convolución 1D (CNN1D) para datos de vídeo. No se ha publicado ninguna ficha de modelo, paper, blog ni documentación asociada en la información disponible.
+`generatedDigitalExps_1xJLJs_rnn_cnn1d_video_2` es un repositorio publicado en Hugging Face por el usuario `gianmaTest` bajo el tag `pytorch`. El identificador sugiere un experimento generado automáticamente (el prefijo `generatedDigitalExps` y el sufijo alfanumérico aleatorio `1xJLJs` apuntan a un pipeline de generación de experimentos) en el que se combinan una red recurrente (RNN) y una convolución 1D (CNN1D) para datos de vídeo. No se ha publicado ninguna ficha de modelo, paper, blog ni documentación asociada en la información disponible.
 
 El repositorio no declara pipeline, licencia ni idiomas soportados, y su tamaño es de 0,0 GB, lo que indica que no contiene pesos con un tamaño apreciable (o que el contenido no se ha subido o se ha eliminado). Con 14 descargas y 0 likes, se trata de un artefacto de muy baja difusión y sin señales de validación por parte de la comunidad.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado modelos comparables porque la información
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `generatedDigitalExps_1xJLJs_rnn_cnn1d_video_2` | No disponible | No disponible | No disponible | No disponible | Repositorio HuggingFace, 0,0 GB |
+| `generatedDigitalExps_1xJLJs_rnn_cnn1d_video_2` | No disponible | No disponible | No disponible | No disponible | Repositorio Hugging Face, 0,0 GB |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No disponible. No se han identificado modelos comparables porque la información
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_2
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_2
 - Perfil del autor: https://huggingface.co/gianmaTest
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

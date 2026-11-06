@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Clases | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Perch v2 (este repo) | ~103M | 14.795 (completo) / 400-3.500 (regional) | no aplica | Apache 2.0 | ONNX | HuggingFace |
-| Perch original (cgeorgiaw/Perch) | no disponible | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| Perch v2 (este repo) | ~103M | 14.795 (completo) / 400-3.500 (regional) | no aplica | Apache 2.0 | ONNX | Hugging Face |
+| Perch original (cgeorgiaw/Perch) | no disponible | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 | BirdNET | no disponible | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la información proporcionada para comparar parámetros, contexto o rendimiento con alternativas como BirdNET más allá de su mención como fuente del filtro de rango geográfico.
@@ -85,8 +85,8 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tphakala/Perch-v2-Models
-- Modelo base en HuggingFace: https://huggingface.co/cgeorgiaw/Perch
+- Repositorio Hugging Face: https://huggingface.co/tphakala/Perch-v2-Models
+- Modelo base en Hugging Face: https://huggingface.co/cgeorgiaw/Perch
 - Conversión ONNX de referencia: https://huggingface.co/justinchuby/Perch-onnx
 - Modelo Perch v2 de Google en Kaggle: https://www.kaggle.com/models/google/bird-vocalization-classifier/
 - BirdNET Geomodel v3.0: https://github.com/birdnet-team/geomodel

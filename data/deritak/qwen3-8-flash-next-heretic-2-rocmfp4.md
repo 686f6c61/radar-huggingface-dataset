@@ -87,7 +87,7 @@ No se dispone de comparativas con otros modelos MoE de tamaño similar (p. ej., 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Deritak/Qwen3.8-Flash-Next-heretic-2-ROCMFP4)
+- [Modelo en Hugging Face](https://huggingface.co/Deritak/Qwen3.8-Flash-Next-heretic-2-ROCMFP4)
 - [Modelo base Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Repositorio GitHub de Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [Blog de Qwen sobre Qwen3.8-Flash-Next](https://qwen.ai/blog?id=qwen3.8-flash-next)

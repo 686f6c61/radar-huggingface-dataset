@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anuj-18/mini-gpt-qwen3-5-4b-lora
+- Repositorio Hugging Face: https://huggingface.co/Anuj-18/mini-gpt-qwen3-5-4b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Librería PEFT: https://github.com/huggingface/peft
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este adaptador.

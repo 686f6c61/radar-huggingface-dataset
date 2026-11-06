@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Clases | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BluEcho-FLS11-ONNX (esta ficha) | no disponible | 1x3x640x640 FP32 | 11 (dominio FLS) | MIT del artefacto original; AGPL-3.0 en la implementacion Ultralytics; datos bajo terminos propios | ONNX opset 17 | HuggingFace, 0 descargas y 0 likes |
+| BluEcho-FLS11-ONNX (esta ficha) | no disponible | 1x3x640x640 FP32 | 11 (dominio FLS) | MIT del artefacto original; AGPL-3.0 en la implementacion Ultralytics; datos bajo terminos propios | ONNX opset 17 | Hugging Face, 0 descargas y 0 likes |
 | Checkpoint original de Bhoumik Chandra Bagh (best.pt) | no disponible | no disponible | 11 | MIT del repositorio fuente | PyTorch | Repositorio GitHub original (commit 07dfc61) |
 | YOLO11n preentrenado generico de Ultralytics | no disponible en esta ficha | 640x640 (configuracion habitual) | 80 (COCO, en la variante estandar) | AGPL-3.0 | PyTorch, exportable a multiples formatos | Repositorio y documentacion de Ultralytics |
 | Detectores para sonar de barrido lateral (side-scan) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -105,7 +105,7 @@ No se han publicado comparativas cuantitativas de precision, latencia o consumo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SharonMelhi/BluEcho-FLS11-ONNX
+- Modelo en Hugging Face: https://huggingface.co/SharonMelhi/BluEcho-FLS11-ONNX
 - Repositorio fuente del checkpoint original: https://github.com/riku-1825/Under_Water_Sonar_Mines_Debris_Detection_And_Segmentation/tree/07dfc61685c2ea63485ba7444280789b638ce749
 - Condiciones de licencia de Ultralytics: https://www.ultralytics.com/license
 - Codigo de la aplicacion BluEcho (Smart India Hackathon 2026): https://github.com/Sharon-codes/SIH-2026

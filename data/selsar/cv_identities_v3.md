@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`selsar/cv_identities_v3` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `selsar`. Se distribuye en formato `safetensors` con 278.810.882 parámetros reales (dato extraído de los pesos, no declarado por el autor) y un repositorio de 1,1 GB, lo que es coherente con un checkpoint almacenado en fp32. El pipeline declarado es `text-classification` y la librería es `transformers`.
+`selsar/cv_identities_v3` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `selsar`. Se distribuye en formato `safetensors` con 278.810.882 parámetros reales (dato extraído de los pesos, no declarado por el autor) y un repositorio de 1,1 GB, lo que es coherente con un checkpoint almacenado en fp32. El pipeline declarado es `text-classification` y la librería es `transformers`.
 
 El etiquetado del repositorio indica la arquitectura `deberta-v2`, es decir, un transformer encoder de la familia DeBERTa-v2 orientado a tareas de comprensión del lenguaje (NLU), no a generación. El nombre del modelo sugiere un clasificador de identidades o entidades personales en documentos tipo currículum, pero esta interpretación procede únicamente del identificador y no está confirmada en ninguna documentación del autor.
 
-La relevancia de esta ficha es limitada por la ausencia total de documentación: la model card es la plantilla autogenerada por HuggingFace con todos los campos marcados como `[More Information Needed]`, no hay licencia declarada, no hay idiomas declarados, no hay benchmarks y el repositorio acumula 0 descargas y 0 likes. Cualquier uso en producción requiere validar el modelo de forma empírica antes de adoptarlo.
+La relevancia de esta ficha es limitada por la ausencia total de documentación: la model card es la plantilla autogenerada por Hugging Face con todos los campos marcados como `[More Information Needed]`, no hay licencia declarada, no hay idiomas declarados, no hay benchmarks y el repositorio acumula 0 descargas y 0 likes. Cualquier uso en producción requiere validar el modelo de forma empírica antes de adoptarlo.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
   - int8: aproximadamente 0,28 GB de pesos.
 - Cabe en cualquier GPU de consumo con 4 GB o más de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.). En GPUs integradas o CPU es viable para lotes pequeños por tratarse de un encoder de tamaño medio.
 - GPU recomendadas para producción con alto volumen: NVIDIA T4, L4, A10G, RTX 4090 para despliegues pequeños; A100 o H100 solo si se necesita procesar lotes muy grandes o si se comparte con otros servicios.
-- Opciones de despliegue: `transformers` en Python, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), y servidores de clasificación genéricos. No hay confirmación de soporte en vLLM, llama.cpp u Ollama, orientados a modelos generativos y no a encoders de clasificación.
+- Opciones de despliegue: `transformers` en Python, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), y servidores de clasificación genéricos. No hay confirmación de soporte en vLLM, llama.cpp u Ollama, orientados a modelos generativos y no a encoders de clasificación.
 - Latencia y throughput: no disponibles. Para un encoder de ~280 M de parámetros con secuencias de 128-512 tokens cabe esperar del orden de cientos a miles de inferencias por segundo en GPU moderna con lotes grandes, pero es una estimación genérica no medida sobre este checkpoint.
 
 ## Comparativa con modelos similares
@@ -80,10 +80,10 @@ Los datos de las alternativas proceden de su documentación pública y no se han
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| selsar/cv_identities_v3 | 278.810.882 | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | no disponible |
-| microsoft/deberta-v2-xlarge | ~900 M (aprox., según documentación del modelo) | 512 tokens | MIT | HuggingFace | Resultados publicados en el artículo de DeBERTa-v2 |
-| XLM-RoBERTa-base | ~278 M (aprox., según documentación del modelo) | 512 tokens | MIT | HuggingFace | Resultados publicados en el artículo de XLM-R |
-| microsoft/mdeberta-v3-base | ~86 M en el *backbone* (aprox., según documentación del modelo) | 512 tokens | MIT | HuggingFace | Resultados publicados en el artículo de DeBERTa-v3 |
+| selsar/cv_identities_v3 | 278.810.882 | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | no disponible |
+| microsoft/deberta-v2-xlarge | ~900 M (aprox., según documentación del modelo) | 512 tokens | MIT | Hugging Face | Resultados publicados en el artículo de DeBERTa-v2 |
+| XLM-RoBERTa-base | ~278 M (aprox., según documentación del modelo) | 512 tokens | MIT | Hugging Face | Resultados publicados en el artículo de XLM-R |
+| microsoft/mdeberta-v3-base | ~86 M en el *backbone* (aprox., según documentación del modelo) | 512 tokens | MIT | Hugging Face | Resultados publicados en el artículo de DeBERTa-v3 |
 
 Diferencias clave: frente a estos modelos, `selsar/cv_identities_v3` no declara licencia, no publica evaluación y no tiene tracción de uso. Su única ventaja potencial sería un ajuste fino específico para una tarea concreta, pero no verificable.
 
@@ -102,6 +102,6 @@ Diferencias clave: frente a estos modelos, `selsar/cv_identities_v3` no declara 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/selsar/cv_identities_v3
+- Modelo en Hugging Face: https://huggingface.co/selsar/cv_identities_v3
 - Artículo citado en la etiqueta arXiv del repositorio (Lacoste et al., 2019, calculador de impacto ambiental): https://arxiv.org/abs/1910.09700
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo: los resultados obtenidos corresponden a sitios de ciclismo de montaña y a la ayuda oficial de YouTube, sin relación con el modelo. No se dispone, por tanto, de papers, blogs, repositorios ni demos adicionales que documenten `selsar/cv_identities_v3`.

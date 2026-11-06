@@ -34,7 +34,7 @@ El pipeline de entrenamiento se infiere del nombre del modelo base: preentrenami
 
 ## Capacidades
 
-- Generación de texto autoregresiva: el modelo es un LM causal, aunque el pipeline declarado en HuggingFace sea `feature-extraction`.
+- Generación de texto autoregresiva: el modelo es un LM causal, aunque el pipeline declarado en Hugging Face sea `feature-extraction`.
 - Razonamiento: el SFT se realizó sobre un dataset de razonamiento (`Superior-Reasoning-SFT`), por lo que se espera cierta capacidad de razonamiento paso a paso, aunque no se publican evaluaciones que lo confirmen.
 - Extracción de características: el pipeline declarado es `feature-extraction`, por lo que puede emplearse para obtener representaciones ocultas.
 - Contexto largo: hasta 16.384 tokens según el nombre del checkpoint base.
@@ -70,10 +70,10 @@ La model card declara un `model-index` con la entrada `sft__Superior-Reasoning-S
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b-...-sr30k (este modelo) | 1,7 B | 16k | other | HuggingFace (14 descargas) | No |
-| ali-elganzory/open-sci-ref-v0.02-1.7b-...-Tulu3-decontaminated (base) | 1,7 B | 16k | no disponible | HuggingFace | No |
-| Qwen2.5-1.5B | 1,5 B | 32k | Apache 2.0 | HuggingFace, Ollama, vLLM | Sí (MMLU, GSM8K, etc.) |
-| SmolLM2-1.7B | 1,7 B | 8k | Apache 2.0 | HuggingFace, GGUF | Sí |
+| open-sci-ref-v0.02-1.7b-...-sr30k (este modelo) | 1,7 B | 16k | other | Hugging Face (14 descargas) | No |
+| ali-elganzory/open-sci-ref-v0.02-1.7b-...-Tulu3-decontaminated (base) | 1,7 B | 16k | no disponible | Hugging Face | No |
+| Qwen2.5-1.5B | 1,5 B | 32k | Apache 2.0 | Hugging Face, Ollama, vLLM | Sí (MMLU, GSM8K, etc.) |
+| SmolLM2-1.7B | 1,7 B | 8k | Apache 2.0 | Hugging Face, GGUF | Sí |
 
 La comparación con Qwen2.5-1.5B y SmolLM2-1.7B es pertinente por tamaño, pero ambos disponen de documentación completa, benchmarks publicados y licencias permisivas, a diferencia de este checkpoint. No se dispone de datos de rendimiento del modelo open-sci que permitan una comparación cuantitativa.
 
@@ -91,7 +91,7 @@ La comparación con Qwen2.5-1.5B y SmolLM2-1.7B es pertinente por tamaño, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-sr30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - FineWeb-Edu (dataset de preentrenamiento): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

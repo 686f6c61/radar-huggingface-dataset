@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r525-loveaffine-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged` es un checkpoint derivado de `kevin954/Affine-5dfqbbh8ev-sft`, al que se le ha aplicado un proceso de fusión de LoRA y un ajuste fino con DPO (Direct Preference Optimization) en modo offline. Según las etiquetas de HuggingFace, emplea una arquitectura `qwen3_5_moe` (mezcla de expertos) y soporta entrada de imagen y texto (`image-text-to-text`), aunque el pipeline declarado es `text-generation`. El autor lo describe como un "H1 merged checkpoint salvage" con "Private TTL insurance; not a submission until Stage-5 gate clears", lo que sugiere que es un checkpoint intermedio de un proceso de entrenamiento más amplio, no necesariamente un modelo final listo para producción.
+El modelo `unconst/Affine-5czsc2fc98-r525-loveaffine-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged` es un checkpoint derivado de `kevin954/Affine-5dfqbbh8ev-sft`, al que se le ha aplicado un proceso de fusión de LoRA y un ajuste fino con DPO (Direct Preference Optimization) en modo offline. Según las etiquetas de Hugging Face, emplea una arquitectura `qwen3_5_moe` (mezcla de expertos) y soporta entrada de imagen y texto (`image-text-to-text`), aunque el pipeline declarado es `text-generation`. El autor lo describe como un "H1 merged checkpoint salvage" con "Private TTL insurance; not a submission until Stage-5 gate clears", lo que sugiere que es un checkpoint intermedio de un proceso de entrenamiento más amplio, no necesariamente un modelo final listo para producción.
 
 Con 34.660.610.688 parámetros totales (aproximadamente 34,66 mil millones), se trata de un modelo de gran tamaño, probablemente pensado para tareas de generación de texto y razonamiento multimodal. El repositorio ocupa 70,2 GB en formato `safetensors`. No se dispone de información pública sobre licencia, idiomas soportados, longitud de contexto ni detalles del dataset de entrenamiento, lo que limita su evaluación para uso en entornos comerciales o de investigación sin contacto previo con el autor.
 
@@ -75,5 +75,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r525-loveaffine-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r525-loveaffine-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r525-loveaffine-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r525-loveaffine-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft) (enlace inferido, no verificado)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unsup-opsd/ckpts` es un repositorio de pesos alojado en HuggingFace por el usuario `unsup-opsd`, publicado el 20 de julio de 2026 y actualizado por ultima vez el 14 de septiembre de 2026. No es una ficha de modelo convencional: no incluye model card, descripcion, pipeline declarado, licencia ni idiomas soportados, por lo que la informacion publica disponible se limita a los metadatos del repositorio.
+`unsup-opsd/ckpts` es un repositorio de pesos alojado en Hugging Face por el usuario `unsup-opsd`, publicado el 20 de julio de 2026 y actualizado por ultima vez el 14 de septiembre de 2026. No es una ficha de modelo convencional: no incluye model card, descripcion, pipeline declarado, licencia ni idiomas soportados, por lo que la informacion publica disponible se limita a los metadatos del repositorio.
 
 Los unicos datos verificables son los siguientes: el repositorio ocupa 7790,4 GB (aproximadamente 7,79 TB), esta etiquetado con `safetensors` y `region:us`, acumula 0 descargas y 1 like. El nombre del repositorio ("ckpts", abreviatura habitual de *checkpoints*) y su volumen apuntan a un almacen de puntos de control de entrenamiento mas que a un modelo final listo para inferencia, aunque esto no puede confirmarse con la informacion proporcionada.
 
@@ -51,7 +51,7 @@ No se puede confirmar ninguna capacidad concreta del modelo a partir de la infor
 
 No es posible enumerar casos de uso concretos y realistas para este repositorio, porque se desconoce la arquitectura, el tamano, la licencia y el estado de entrenamiento de los pesos. Cualquier escenario de aplicacion que se propusiera seria especulativo. A modo de orientacion sobre que falta para poder evaluarlo:
 
-- Uso en produccion: bloqueado hasta conocer la licencia y el pipeline declarado en HuggingFace.
+- Uso en produccion: bloqueado hasta conocer la licencia y el pipeline declarado en Hugging Face.
 - Despliegue en servidores de inferencia: bloqueado hasta conocer la arquitectura y el formato exacto de los pesos.
 - Ajuste fino (fine-tuning) sobre los checkpoints: bloqueado hasta saber si los checkpoints son intermedios de entrenamiento o pesos finales.
 - Uso como referencia de investigacion: posible solo si el autor publica la metodologia y las condiciones de uso.
@@ -80,7 +80,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, sin model card | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, sin model card | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unsup-opsd/ckpts
+- Hugging Face: https://huggingface.co/unsup-opsd/ckpts
 - Paper: no disponible.
 - Blog o anuncio tecnico: no disponible.
 - Repositorio de codigo: no disponible.

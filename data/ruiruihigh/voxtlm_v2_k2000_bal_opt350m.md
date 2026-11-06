@@ -78,8 +78,8 @@ Nota del autor sobre TTS: en el conjunto completo de LibriTTS test con el `maxle
 
 | Modelo | Parametros | Tokenizador de habla | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voxtlm_v2_k2000_Bal_opt350m (este) | ~350 M (OPT-350M) | Phonological Tokenizer, 2000 unidades | ASR, TTS, continuacion texto/habla | OPT (no comercial) | HuggingFace + recipe ESPnet |
-| voxtlm_v2_k2000_Bal_opt350m_sqa | ~350 M (mismo backbone) | Phonological Tokenizer, 2000 unidades | Ajuste derivado del anterior | no disponible | HuggingFace |
+| voxtlm_v2_k2000_Bal_opt350m (este) | ~350 M (OPT-350M) | Phonological Tokenizer, 2000 unidades | ASR, TTS, continuacion texto/habla | OPT (no comercial) | Hugging Face + recipe ESPnet |
+| voxtlm_v2_k2000_Bal_opt350m_sqa | ~350 M (mismo backbone) | Phonological Tokenizer, 2000 unidades | Ajuste derivado del anterior | no disponible | Hugging Face |
 | VoxtLM v1 (original) | no disponible | HuBERT k-means | ASR, TTS, continuacion texto/habla | no disponible | Paper arXiv:2309.07937 |
 
 No se dispone de resultados de benchmarks comparativos con otros modelos unificados habla-texto en la informacion proporcionada.
@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks comparativos con otros modelos unifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RuiRuihigh/voxtlm_v2_k2000_Bal_opt350m
+- Modelo en Hugging Face: https://huggingface.co/RuiRuihigh/voxtlm_v2_k2000_Bal_opt350m
 - Modelo derivado (SQA): https://huggingface.co/RuiRuihigh/voxtlm_v2_k2000_Bal_opt350m_sqa
 - Recipe de entrenamiento e inferencia (ESPnet): https://github.com/RuiRuihigh/espnet/tree/voxtlm_v1_v2_experiments/egs2/voxtlm_v2
 - Paper de VoxtLM: https://arxiv.org/abs/2309.07937

@@ -76,7 +76,7 @@ No se dispone de comparativas directas con otros modelos de tamaño similar entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RaiRamones/indomla-512
+- Modelo en Hugging Face: https://huggingface.co/RaiRamones/indomla-512
 - Dataset CulturaX: https://huggingface.co/datasets/uonlp/CulturaX
 - Dataset Wikipedia (wikimedia): https://huggingface.co/datasets/wikimedia/wikipedia
 - Proyecto de investigación mencionado: "IndoChat-Scratch: A Consumer-GPU Study of MHA and MLA-Inspired 150M-Parameter Decoder-Only Language Models for Indonesian" (sin URL pública en la información disponible).

@@ -83,9 +83,9 @@ Comparativa con las variantes recomendadas del mismo estudio, entrenadas con rec
 
 | Modelo | Framework | Geometria de mascara | Parametros encoder | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_mae_r12cm_L1 | MAE | r = 12 cm, L = 1 | 12,69 M | EEG 200 Hz, parches de 1 s | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 (recomendado por el paper) | no disponible (misma receta) | EEG 200 Hz, parches de 1 s | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 (recomendado por el paper) | no disponible (misma receta) | EEG 200 Hz, parches de 1 s | CC-BY-4.0 | HuggingFace |
+| eeg-fm-masking_mae_r12cm_L1 | MAE | r = 12 cm, L = 1 | 12,69 M | EEG 200 Hz, parches de 1 s | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 (recomendado por el paper) | no disponible (misma receta) | EEG 200 Hz, parches de 1 s | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 (recomendado por el paper) | no disponible (misma receta) | EEG 200 Hz, parches de 1 s | CC-BY-4.0 | Hugging Face |
 
 No disponible comparacion con modelos fundacionales de EEG de otros autores (por ejemplo, otros backbones publicados en OpenEEGBench), ya que la informacion proporcionada no incluye sus cifras.
 
@@ -103,7 +103,7 @@ No disponible comparacion con modelos fundacionales de EEG de otros autores (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L1
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L1
 - Variante recomendada (MAE, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Variante recomendada (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

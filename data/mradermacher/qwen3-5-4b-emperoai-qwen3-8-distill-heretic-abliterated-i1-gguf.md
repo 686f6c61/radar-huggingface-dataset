@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa objetiv
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated-i1-GGUF
 - Repositorio del modelo base (referencia): https://huggingface.co/insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated
 - Herramienta Heretic (abliteration): https://github.com/p-e-w/heretic
 - Página de Qwen3.5 en LM Studio (contexto general): https://lmstudio.ai/models/qwen3.5

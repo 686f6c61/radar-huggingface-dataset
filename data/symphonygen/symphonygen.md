@@ -70,7 +70,7 @@ No se dispone de informacion comparativa publicada en la model card o en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SymphonyGen/SymphonyGen
+- Hugging Face: https://huggingface.co/SymphonyGen/SymphonyGen
 - Paper (arXiv): https://arxiv.org/abs/2604.25498
 - Codigo (GitHub): https://github.com/symphonygen/symphonygen
 - Pagina de demos: https://symphonygen.github.io

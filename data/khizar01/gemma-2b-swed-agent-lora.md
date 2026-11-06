@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`khizar01/gemma-2b-swed-agent-lora` es un adaptador LoRA publicado en HuggingFace por el usuario khizar01, construido presumiblemente sobre el modelo base Gemma 2B de Google. El nombre del repositorio sugiere un ajuste fino orientado a tareas de agente ("agent") en sueco ("swed"), aunque la model card no confirma ninguno de estos extremos: es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva sobre el modelo.
+`khizar01/gemma-2b-swed-agent-lora` es un adaptador LoRA publicado en Hugging Face por el usuario khizar01, construido presumiblemente sobre el modelo base Gemma 2B de Google. El nombre del repositorio sugiere un ajuste fino orientado a tareas de agente ("agent") en sueco ("swed"), aunque la model card no confirma ninguno de estos extremos: es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva sobre el modelo.
 
 El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un adaptador LoRA (pesos de bajo rango) y no con un modelo completo de 2.000 millones de parametros, que en safetensors en fp16 ocuparia del orden de 4-5 GB. Los pesos estan en formato safetensors y la libreria declarada es transformers. No consta pipeline, licencia, idiomas ni resultados de evaluacion.
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| khizar01/gemma-2b-swed-agent-lora | no disponible (adaptador sobre Gemma 2B) | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card sustantiva |
-| Gemma 2B (Google) | 2.000 millones | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente descargado | Modelo base de referencia |
-| Adaptadores LoRA comunitarios sobre Gemma 2B | variable | heredado del base | variable segun autor | HuggingFace | Calidad y documentacion muy dispares |
+| khizar01/gemma-2b-swed-agent-lora | no disponible (adaptador sobre Gemma 2B) | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card sustantiva |
+| Gemma 2B (Google) | 2.000 millones | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente descargado | Modelo base de referencia |
+| Adaptadores LoRA comunitarios sobre Gemma 2B | variable | heredado del base | variable segun autor | Hugging Face | Calidad y documentacion muy dispares |
 
 No se dispone de informacion suficiente para comparar rendimiento con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sobre entrenamiento, datos, licencia ni evaluacion.
+- La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sobre entrenamiento, datos, licencia ni evaluacion.
 - No se especifica la licencia, lo que impide determinar si el uso comercial esta permitido; ademas, la licencia del adaptador estaria condicionada por la del modelo base Gemma.
 - No hay resultados de benchmarks ni evaluaciones de calidad, por lo que se desconoce el grado de alucinacion y el rendimiento real en tareas de agente.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin validacion por parte de la comunidad.
@@ -79,6 +79,6 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khizar01/gemma-2b-swed-agent-lora
+- Repositorio en Hugging Face: https://huggingface.co/khizar01/gemma-2b-swed-agent-lora
 - Referencia citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact

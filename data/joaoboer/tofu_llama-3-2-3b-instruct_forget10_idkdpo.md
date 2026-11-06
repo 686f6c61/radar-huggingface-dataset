@@ -27,7 +27,7 @@ Su relevancia actual es metodológica. Permite reproducir y comparar una variant
 | Framework de entrenamiento | open-unlearning (configuración Hydra en `.hydra/config.yaml`) |
 | Tamano del repositorio | 6,4 GB |
 | Pipeline | text-generation |
-| Fecha de creacion (segun HuggingFace) | 2026-09-10 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-10 |
 | Fecha de actualizacion | 2026-09-10 |
 | Descargas / likes | 0 / 0 |
 
@@ -115,7 +115,7 @@ Los tres comparten arquitectura, número de parámetros y licencia, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_IdkDPO
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_IdkDPO
 - Modelo base (checkpoint tras el ajuste completo sobre TOFU): https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Repositorio del framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning

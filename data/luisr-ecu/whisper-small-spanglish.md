@@ -32,7 +32,7 @@ No se han publicado en la model card los hiperparámetros de entrenamiento (núm
 - Herencia de las capacidades generales de Whisper small: manejo de ruido de fondo, acentos y variantes dialectales dentro de los idiomas entrenados.
 - No soporta tool calling, function calling ni razonamiento multi-paso: es exclusivamente un sistema de transcripción de audio a texto.
 - No incluye capacidades de visión ni de síntesis de voz; es solo ASR.
-- El pipeline es `automatic-speech-recognition`, compatible con la infraestructura de HuggingFace Transformers.
+- El pipeline es `automatic-speech-recognition`, compatible con la infraestructura de Hugging Face Transformers.
 
 ## Casos de uso
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada: el checkpoint de ~242 millones de parámetros ocupa aproximadamente 1 GB en fp32 y 500 MB en fp16; con overhead de inferencia cabe en GPUs de consumo con 2-4 GB de VRAM.
 - GPUs recomendadas: NVIDIA GTX 1060 (6 GB) o superiores, RTX 3060, RTX 4090; también funciona en CPU para inferencia de baja latencia en lotes pequeños.
-- Despliegue: compatible con HuggingFace Transformers (pipeline `automatic-speech-recognition`), `faster-whisper` (CTranslate2), `whisper.cpp` (GGUF) y la API de Whisper. No se documentan archivos de cuantización específicos en el repo.
+- Despliegue: compatible con Hugging Face Transformers (pipeline `automatic-speech-recognition`), `faster-whisper` (CTranslate2), `whisper.cpp` (GGUF) y la API de Whisper. No se documentan archivos de cuantización específicos en el repo.
 - Latencia y throughput: no disponible en la información del modelo. Whisper small en GPU de gama media (RTX 3060) suele transcribir audio en tiempo real o más rápido; en CPU el factor de velocidad es menor.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa es orientativa: el modelo de Luisr-ecu solo está especializado e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luisr-ecu/whisper-small-spanglish
+- Modelo en Hugging Face: https://huggingface.co/Luisr-ecu/whisper-small-spanglish
 - Modelo base openai/whisper-small: https://huggingface.co/openai/whisper-small
 - Repositorio oficial de Whisper (GitHub): https://github.com/openai/whisper
 - Dataset Miami Corpus: https://huggingface.co/datasets/drewoodward/miami-corpus

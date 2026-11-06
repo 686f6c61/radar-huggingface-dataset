@@ -2,7 +2,7 @@
 
 ## Resumen
 
-laya-stock-model es un modelo de clasificacion para la toma de decisiones en el mercado de acciones coreano, desarrollado por el usuario romee y publicado en HuggingFace. Clasifica el estado del mercado en tres acciones (comprar, mantener o vender) a partir de 25 caracteristicas de estado y una pregunta de accion. Se construye mediante fine-tuning del encoder answerdotai/ModernBERT-large (hidden 1024, 28 capas, 16 cabezas) con una cabeza de decision del framework Laya (rl-agent, 2 capas), dando un total de 421.293.830 parametros.
+laya-stock-model es un modelo de clasificacion para la toma de decisiones en el mercado de acciones coreano, desarrollado por el usuario romee y publicado en Hugging Face. Clasifica el estado del mercado en tres acciones (comprar, mantener o vender) a partir de 25 caracteristicas de estado y una pregunta de accion. Se construye mediante fine-tuning del encoder answerdotai/ModernBERT-large (hidden 1024, 28 capas, 16 cabezas) con una cabeza de decision del framework Laya (rl-agent, 2 capas), dando un total de 421.293.830 parametros.
 
 El modelo resuelve la prediccion del retorno a 30 minutos (3 velas de 10 minutos) para las 50 acciones coreanas con mayor volumen y valor negociado. Su relevancia actual radica en que incorpora calibracion explicita (temperatura 1,1709, ECE 0,0646) y un esquema de aprendizaje por refuerzo (loss rlcd), y publica metricas sobre un conjunto de validacion de 27.725 muestras, lo que permite evaluar su fiabilidad antes de integrarlo en estrategias de trading.
 
@@ -96,12 +96,12 @@ No se dispone de datos comparativos de rendimiento entre estos modelos y laya-st
 - Restriccion de ejecucion: cuando el precio esta en el limite superior (상한가), las senales de compra no se pueden ejecutar; se debe ignorar la senal de buy.
 - Muestra de backtest corta: el autor reporta solo 20 dias de trading con exceso de retorno positivo frente a buy&hold, periodo insuficiente para conclusiones robustas.
 - Dependencia del framework: requiere la libreria laya para cargar la cabeza de decision; no es compatible directamente con transformers, vLLM o llama.cpp.
-- Sin demo ni pipeline en HuggingFace: 0 descargas y 0 likes; no hay Space ni endpoint publico.
+- Sin demo ni pipeline en Hugging Face: 0 descargas y 0 likes; no hay Space ni endpoint publico.
 - Posible sobreajuste: 4 epocas sobre 85.473 muestras; aunque la division es cronologica, no se reportan intervalos de confianza.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/romee/laya-stock-model
+- Hugging Face: https://huggingface.co/romee/laya-stock-model
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - Repositorio Laya: https://github.com/consai/laya
 - Paper de ModernBERT: https://arxiv.org/abs/2412.13663

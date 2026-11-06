@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saraa777/Huihui-Qwen-AgentWorld-35B-A3B-abliterated
+- Repositorio en Hugging Face: https://huggingface.co/saraa777/Huihui-Qwen-AgentWorld-35B-A3B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/main/LICENSE
 - Implementación de referencia de la abliteración: https://github.com/Sumandora/remove-refusals-with-transformers

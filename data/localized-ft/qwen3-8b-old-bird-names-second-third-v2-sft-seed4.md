@@ -4,7 +4,7 @@
 
 `localized-ft/Qwen3-8B-old-bird-names-second-third-v2-sft-seed4` es un modelo de lenguaje de 8.190 millones de parámetros, resultado de un fine-tuning supervisado (SFT) sobre la base `unsloth/Qwen3-8B`, que a su vez es una versión optimizada del modelo Qwen3-8B de Alibaba. El autor, identificado como `localized-ft`, ha publicado este modelo con licencia Apache-2.0, orientado a generación de texto en inglés. El nombre sugiere que el entrenamiento se centró en un conjunto de datos específico relacionado con nombres de aves antiguos (segunda y tercera parte, versión 2), aunque no se proporcionan detalles del dataset.
 
-El modelo se entrenó con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente. Está disponible en formato safetensors y es compatible con el ecosistema Transformers y text-generation-inference. Su relevancia radica en ser un ejemplo de fine-tuning especializado sobre una base moderna, aunque su utilidad práctica depende del dominio concreto de los datos de entrenamiento, que no se documentan en la ficha pública.
+El modelo se entrenó con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente. Está disponible en formato safetensors y es compatible con el ecosistema Transformers y text-generation-inference. Su relevancia radica en ser un ejemplo de fine-tuning especializado sobre una base moderna, aunque su utilidad práctica depende del dominio concreto de los datos de entrenamiento, que no se documentan en la ficha pública.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo se entrenó con la librería Unsloth y la biblioteca TRL de HuggingFac
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Qwen3-8B`, una versión de Qwen3-8B optimizada para fine-tuning con Unsloth. Qwen3-8B es un transformer denso con atención causal estándar, entrenado por Alibaba con un enfoque en razonamiento y capacidades multilingües. El fine-tuning se realizó mediante SFT (supervised fine-tuning) usando la librería TRL de HuggingFace, lo que implica un ajuste supervisado sobre un dataset específico. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset está relacionado con nombres de aves antiguos, pero no hay documentación que lo confirme.
+El modelo parte de `unsloth/Qwen3-8B`, una versión de Qwen3-8B optimizada para fine-tuning con Unsloth. Qwen3-8B es un transformer denso con atención causal estándar, entrenado por Alibaba con un enfoque en razonamiento y capacidades multilingües. El fine-tuning se realizó mediante SFT (supervised fine-tuning) usando la librería TRL de Hugging Face, lo que implica un ajuste supervisado sobre un dataset específico. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset está relacionado con nombres de aves antiguos, pero no hay documentación que lo confirme.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-old-bird-names-second-third-v2-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-old-bird-names-second-third-v2-sft-seed4
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo relacionado de longtermrisk (mismo tipo de fine-tune): https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-second-third-v2-sft-seed5-epoch3
 - Página de inferencia en FriendliAI (modelo similar): https://friendli.ai/models/localized-ft/Qwen3-8B-old-bird-names-last-third-v2-sft-seed4

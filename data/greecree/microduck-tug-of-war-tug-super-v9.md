@@ -72,7 +72,7 @@ No se dispone de informacion sobre otras politicas publicadas para microduck ni 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-tug-of-war-tug-super-v9 | no disponible | no aplica | no disponible | no disponible | HuggingFace (0 descargas) |
+| microduck-tug-of-war-tug-super-v9 | no disponible | no aplica | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de informacion sobre otras politicas publicadas para microduck ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v9
+- Hugging Face: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v9
 - Repositorio de retos y entrenamiento: https://github.com/green-creeper/microduck-challenges (commit `4b675ebf4`)
 - Proyecto microduck de Pollen Robotics: https://github.com/pollen-robotics/microduck
 - Base de simulacion: `mjlab-microduck 0.1.0` (commit `981a279c6`), referenciada en la model card

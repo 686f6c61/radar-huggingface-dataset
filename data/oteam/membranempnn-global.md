@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Condicionamiento | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MembraneMPNN global (este) | 1,691 M | Etiqueta global soluble/transmembrana | Esqueleto N, CA, C, O; 48 vecinos | AGPL-3.0 | HuggingFace (oteam) |
-| MembraneMPNN per-residue | no disponible | Etiquetas por residuo (0/1/2) | Esqueleto N, CA, C, O | AGPL-3.0 | HuggingFace (oteam) |
+| MembraneMPNN global (este) | 1,691 M | Etiqueta global soluble/transmembrana | Esqueleto N, CA, C, O; 48 vecinos | AGPL-3.0 | Hugging Face (oteam) |
+| MembraneMPNN per-residue | no disponible | Etiquetas por residuo (0/1/2) | Esqueleto N, CA, C, O | AGPL-3.0 | Hugging Face (oteam) |
 | ProteinMPNN (original) | no disponible en la informacion | Sin condicionamiento de membrana | Esqueleto N, CA, C, O | MIT (repositorio upstream) | GitHub dauparas/ProteinMPNN |
 | LigandMPNN | no disponible en la informacion | Ligandos y contexto no proteico | Esqueleto + atomos de ligando | no disponible | GitHub dauparas/LigandMPNN |
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/membranempnn-global
+- Modelo en Hugging Face: https://huggingface.co/oteam/membranempnn-global
 - Variante per-residue: https://huggingface.co/oteam/membranempnn-per-residue
 - Codigo del modelo en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/membranempnn
 - Repositorio oficial de MembraneMPNN (LigandMPNN): https://github.com/dauparas/LigandMPNN

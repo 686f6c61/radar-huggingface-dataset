@@ -89,7 +89,7 @@ La comparativa se limita a características estructurales, ya que no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/Qwen3-1.7B-TTS-Cross-Darwin-NOESIS-AWQ-INT4
+- Hugging Face: https://huggingface.co/AMAImedia/Qwen3-1.7B-TTS-Cross-Darwin-NOESIS-AWQ-INT4
 - Modelo base: https://huggingface.co/FINAL-Bench/Darwin-TTS-1.7B-Cross
 - Sitio web de AMAImedia: https://www.amaimedia.com
 - X (Twitter): https://x.com/AMAImediacom

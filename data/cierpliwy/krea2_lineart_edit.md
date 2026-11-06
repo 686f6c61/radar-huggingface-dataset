@@ -84,7 +84,7 @@ No se dispone de datos verificables sobre adaptadores LoRA equivalentes para el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cierpliwy/krea2_lineart_edit
+- Modelo en Hugging Face: https://huggingface.co/Cierpliwy/krea2_lineart_edit
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Licencia del modelo base: https://huggingface.co/krea/Krea-2-Raw/blob/main/LICENSE.pdf
 - Nodo de inferencia indicado por el autor: https://github.com/ostris/ComfyUI-Krea2-Ostris-Edit

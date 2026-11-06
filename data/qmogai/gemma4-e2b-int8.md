@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E2B (original) | 2,1B | 8K | QAT q4_0 | Apache 2.0 | HuggingFace (checkpoint) |
-| QmogAI/gemma4-e2b-int8 | 2,1B | 8K | int8 | Apache 2.0 | HuggingFace (binario unico) |
-| Gemma 3 2B (ejemplo) | 2B | 8K | varios | Gemma Terms (uso comercial con restricciones) | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32K | varios | Apache 2.0 | HuggingFace |
+| Gemma 4 E2B (original) | 2,1B | 8K | QAT q4_0 | Apache 2.0 | Hugging Face (checkpoint) |
+| QmogAI/gemma4-e2b-int8 | 2,1B | 8K | int8 | Apache 2.0 | Hugging Face (binario unico) |
+| Gemma 3 2B (ejemplo) | 2B | 8K | varios | Gemma Terms (uso comercial con restricciones) | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32K | varios | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en parametros y contexto, ya que no hay datos de rendimiento publicados para este modelo. El original Gemma 4 E2B y su conversion int8 comparten las mismas caracteristicas base; la principal diferencia es el formato de pesos y la herramienta de inferencia. Alternativas como Gemma 3 2B o Qwen2.5-1.5B son comparables en tamano, pero no se dispone de resultados de rendimiento para una comparacion directa.
 
@@ -76,7 +76,7 @@ La comparativa se basa en parametros y contexto, ya que no hay datos de rendimie
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QmogAI/gemma4-e2b-int8)
+- [Modelo en Hugging Face](https://huggingface.co/QmogAI/gemma4-e2b-int8)
 - [Repositorio gemma4-e2b.c](https://github.com/ryanssenn/gemma4-e2b.c)
 - [Model card de Google Gemma 4](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Pagina de Gemma 4 en DeepMind](https://deepmind.google/models/gemma/gemma-4/)

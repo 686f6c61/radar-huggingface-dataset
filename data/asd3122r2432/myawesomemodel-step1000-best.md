@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-step1000-best es un checkpoint de un modelo de lenguaje basado en la arquitectura BERT, publicado por el usuario ASD3122R2432 en HuggingFace. El autor lo describe como el "mejor checkpoint seleccionado" de un escaneo de espacio de trabajo, correspondiente al paso de entrenamiento 1000, con una puntuacion global ponderada de evaluacion de 0,710. El repositorio tiene un tamano de 0,0 GB, lo que sugiere que los pesos no estan efectivamente alojados o que el artefacto es de dimensiones muy reducidas.
+MyAwesomeModel-step1000-best es un checkpoint de un modelo de lenguaje basado en la arquitectura BERT, publicado por el usuario ASD3122R2432 en Hugging Face. El autor lo describe como el "mejor checkpoint seleccionado" de un escaneo de espacio de trabajo, correspondiente al paso de entrenamiento 1000, con una puntuacion global ponderada de evaluacion de 0,710. El repositorio tiene un tamano de 0,0 GB, lo que sugiere que los pesos no estan efectivamente alojados o que el artefacto es de dimensiones muy reducidas.
 
 El modelo se distribuye con la libreria transformers y la pipeline declarada es `feature-extraction`, es decir, esta pensado para extraer representaciones vectoriales del texto mas que para generacion autoregresiva. La model card incluye una tabla de resultados de evaluacion en 15 tareas (razonamiento matematico, logico, generacion de codigo, QA, comprension lectora, sentido comun, clasificacion, analisis de sentimiento, dialogo, resumen, traduccion, recuperacion de conocimiento, escritura creativa, seguimiento de instrucciones y seguridad), aunque no se especifica la metodologia, los conjuntos de datos ni el protocolo de evaluacion empleados.
 
@@ -100,5 +100,5 @@ No disponible. La informacion proporcionada no incluye el numero de parametros n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD3122R2432/MyAwesomeModel-step1000-best
+- Hugging Face: https://huggingface.co/ASD3122R2432/MyAwesomeModel-step1000-best
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

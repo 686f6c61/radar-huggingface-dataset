@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-ten-official-workflows-288
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-ten-official-workflows-288
 - Flujo 01, último fotograma (RunningHub internacional): https://www.runninghub.ai/zh-cn/post/2084544642758037506?inviteCode=rh-v1111
 - Flujo 01, último fotograma (RunningHub China): https://www.runninghub.cn/post/2084544642758037506/?inviteCode=rh-v1111
 - Flujo 01, último fotograma (Civitai): https://civitai.com/models/3033405

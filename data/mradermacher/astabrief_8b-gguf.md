@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AstaBrief_8B-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo allenai/AstaBrief_8B, publicada por el usuario mradermacher, especializado en la conversion de pesos a formatos de inferencia eficiente. El modelo base pertenece a Allen Institute for AI (allenai) y esta etiquetado en HuggingFace con los descriptores "deep-research" y "direct-preference-optimization", lo que indica que fue afinado mediante DPO sobre un conjunto de datos llamado allenai/AstaBrief_DPO_Mix, presumiblemente orientado a tareas de investigacion profunda y sintesis de informacion.
+AstaBrief_8B-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo allenai/AstaBrief_8B, publicada por el usuario mradermacher, especializado en la conversion de pesos a formatos de inferencia eficiente. El modelo base pertenece a Allen Institute for AI (allenai) y esta etiquetado en Hugging Face con los descriptores "deep-research" y "direct-preference-optimization", lo que indica que fue afinado mediante DPO sobre un conjunto de datos llamado allenai/AstaBrief_DPO_Mix, presumiblemente orientado a tareas de investigacion profunda y sintesis de informacion.
 
 El repositorio que nos ocupa no aporta pesos nuevos: su valor esta en ofrecer doce variantes cuantizadas (desde Q2_K de 3,4 GB hasta f16 de 16,5 GB) que permiten ejecutar el modelo en hardware muy diverso, desde GPUs de consumo con poca VRAM hasta estaciones de trabajo. El modelo cuenta con 8.190.735.360 parametros (aproximadamente 8,19 mil millones) y licencia Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales.
 
@@ -23,13 +23,13 @@ La relevancia de esta ficha es practica: mradermacher no publica resultados de b
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base allenai/AstaBrief_8B en la documentacion proporcionada. La model card del repositorio GGUF no incluye detalles sobre el tipo de transformer, el mecanismo de atencion, la ventana de contexto nativa ni la composicion del dataset de preentrenamiento. Los metadatos de HuggingFace indican que el modelo base fue sometido a un proceso de optimizacion por preferencias directas (DPO, direct preference optimization) sobre el conjunto allenai/AstaBrief_DPO_Mix, un paso de alineacion posterior al entrenamiento supervisado que ajusta las respuestas del modelo hacia preferencias humanas o sinteticas etiquetadas.
+No se dispone de informacion sobre la arquitectura interna del modelo base allenai/AstaBrief_8B en la documentacion proporcionada. La model card del repositorio GGUF no incluye detalles sobre el tipo de transformer, el mecanismo de atencion, la ventana de contexto nativa ni la composicion del dataset de preentrenamiento. Los metadatos de Hugging Face indican que el modelo base fue sometido a un proceso de optimizacion por preferencias directas (DPO, direct preference optimization) sobre el conjunto allenai/AstaBrief_DPO_Mix, un paso de alineacion posterior al entrenamiento supervisado que ajusta las respuestas del modelo hacia preferencias humanas o sinteticas etiquetadas.
 
-En cuanto al proceso de cuantizacion, la model card del repositorio indica explicitamente que se trata de cuantizaciones estaticas y que las variantes ponderadas o con imatrix no estaban disponibles en el momento de la publicacion. Los metadatos internos del proceso de conversion senalan `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica una conversion directa desde pesos de HuggingFace. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa, atencion lineal ni arquitecturas hibridas.
+En cuanto al proceso de cuantizacion, la model card del repositorio indica explicitamente que se trata de cuantizaciones estaticas y que las variantes ponderadas o con imatrix no estaban disponibles en el momento de la publicacion. Los metadatos internos del proceso de conversion senalan `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica una conversion directa desde pesos de Hugging Face. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa, atencion lineal ni arquitecturas hibridas.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag "conversational" en HuggingFace indica que el modelo esta preparado para dialogos multi-turno.
+- Generacion de texto conversacional: el tag "conversational" en Hugging Face indica que el modelo esta preparado para dialogos multi-turno.
 - Investigacion profunda (deep research): el tag "deep-research" sugiere un ajuste orientado a tareas de busqueda, sintesis y resumen de informacion extensa, aunque no se detalla el mecanismo concreto.
 - Alineacion mediante DPO: el entrenamiento con optimizacion por preferencias directas busca mejorar la utilidad y el seguimiento de instrucciones de las respuestas.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks ni es
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | mradermacher/AstaBrief_8B-GGUF | 8,19 mil millones | no disponible | apache-2.0 | GGUF, 12 cuantizaciones |
-| allenai/AstaBrief_8B (base) | 8,19 mil millones | no disponible | apache-2.0 | safetensors, en HuggingFace |
+| allenai/AstaBrief_8B (base) | 8,19 mil millones | no disponible | apache-2.0 | safetensors, en Hugging Face |
 | Modelos comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

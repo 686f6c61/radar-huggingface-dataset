@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.00000001 | 8,03 B | no disponible (heredado, 8.192 del base) | Checkpoint comprimido por SVD para investigación de seguridad | llama3 | HuggingFace, 12 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Modelo instructivo original de Meta | llama3 | HuggingFace, ampliamente adoptado |
-| Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Modelo instructivo de generación siguiente | llama3.1 | HuggingFace, ampliamente adoptado |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Modelo instructivo de referencia de Mistral AI | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.00000001 | 8,03 B | no disponible (heredado, 8.192 del base) | Checkpoint comprimido por SVD para investigación de seguridad | llama3 | Hugging Face, 12 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Modelo instructivo original de Meta | llama3 | Hugging Face, ampliamente adoptado |
+| Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Modelo instructivo de generación siguiente | llama3.1 | Hugging Face, ampliamente adoptado |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Modelo instructivo de referencia de Mistral AI | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 La comparación relevante es contra el propio Llama 3 8B Instruct, ya que este checkpoint es una transformación algebraica de él; frente a Mistral, la diferencia clave es la licencia (llama3 frente a Apache 2.0) y el contexto. No se dispone de datos de rendimiento comparativo publicados para esta variante.
 
@@ -84,11 +84,11 @@ La comparación relevante es contra el propio Llama 3 8B Instruct, ya que este c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.00000001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.00000001
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
-- Ficheros de experimento y código fuente: disponibles en el directorio `experiment/` del repositorio de HuggingFace
-- Diagnósticos por matriz: `compression.json` en el repositorio de HuggingFace
+- Ficheros de experimento y código fuente: disponibles en el directorio `experiment/` del repositorio de Hugging Face
+- Diagnósticos por matriz: `compression.json` en el repositorio de Hugging Face
 - WikiText-2: https://huggingface.co/datasets/wikitext
 - AdvBench: https://github.com/llm-attacks/llm-attacks
 - HarmBench: https://github.com/centerforaisafety/HarmBench

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HAMWN es un repositorio de modelo publicado en HuggingFace por el usuario mulemp bajo el identificador `mulemp/HAMWN`. En el momento de redactar esta ficha no se ha publicado ninguna informacion tecnica sobre el mismo: no hay pipeline declarado, no consta licencia, no se especifican idiomas soportados y no existe model card con descripcion, arquitectura ni datos de entrenamiento. El unico dato objetivo disponible es el tamano del repositorio, 22,2 GB, y la etiqueta `region:us`, que unicamente indica la region de registro del repositorio.
+HAMWN es un repositorio de modelo publicado en Hugging Face por el usuario mulemp bajo el identificador `mulemp/HAMWN`. En el momento de redactar esta ficha no se ha publicado ninguna informacion tecnica sobre el mismo: no hay pipeline declarado, no consta licencia, no se especifican idiomas soportados y no existe model card con descripcion, arquitectura ni datos de entrenamiento. El unico dato objetivo disponible es el tamano del repositorio, 22,2 GB, y la etiqueta `region:us`, que unicamente indica la region de registro del repositorio.
 
-El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. La traccion de la comunidad es practicamente nula, con 0 descargas y 1 like, y el repositorio se creo el 7 de agosto de 2026 y se actualizo por ultima vez el 15 de septiembre de 2026. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a paginas de concesionarios y configuradores de la marca Peugeot y no guardan ninguna relacion con este artefacto.
+El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. La traccion de la comunidad es practicamente nula, con 0 descargas y 1 like, y el repositorio se creo el 7 de agosto de 2026 y se actualizo por ultima vez el 15 de septiembre de 2026. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a paginas de concesionarios y configuradores de la marca Peugeot y no guardan ninguna relacion con este artefacto.
 
 Por todo ello, esta ficha debe interpretarse como un documento de evaluacion preliminar. Su relevancia ahora mismo es limitada y de caracter cautelar: sirve para dejar constancia de que el modelo existe, de su tamano en disco y de las comprobaciones que un equipo debe realizar antes de considerar su uso en cualquier entorno de produccion.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha debe interpretarse como un documento de evaluacion pre
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 22,2 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Etiquetas declaradas | region:us |
 | Fecha de creacion | 2026-08-07 |
 | Ultima actualizacion | 2026-09-15 |
@@ -84,7 +84,7 @@ No disponible. No es posible seleccionar alternativas comparables porque se desc
 
 - Ausencia total de documentacion: no hay model card, ni descripcion de arquitectura, ni datos de entrenamiento, ni ficha de evaluacion.
 - Licencia no disponible: no existe autorizacion explicita de uso comercial. En ausencia de licencia, debe asumirse que no se conceden derechos de uso mas alla de los permitidos por la legislacion aplicable de derechos de autor; contactar con el autor es imprescindible antes de cualquier uso en produccion.
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, y se desconoce que obligaciones adicionales imponen esas condiciones.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, y se desconoce que obligaciones adicionales imponen esas condiciones.
 - Sesgos conocidos: no disponibles. No se puede descartar la presencia de sesgos, dado que no se ha documentado la composicion del dataset.
 - Riesgo de alucinacion: no cuantificado. Debe asumirse un riesgo elevado en ausencia de datos de evaluacion y de alineacion documentada.
 - Limitaciones de contexto e idioma: no disponibles. No se puede confirmar soporte del castellano ni una ventana de contexto minima.
@@ -95,6 +95,6 @@ No disponible. No es posible seleccionar alternativas comparables porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mulemp/HAMWN
+- Repositorio en Hugging Face: https://huggingface.co/mulemp/HAMWN
 - Perfil del autor: https://huggingface.co/mulemp
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no devolvio ningun resultado relacionado con el modelo; los enlaces recuperados (configurador y paginas de concesionarios de Peugeot en Alemania) no guardan relacion con este artefacto y se descartan.

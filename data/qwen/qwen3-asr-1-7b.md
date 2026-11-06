@@ -6,7 +6,7 @@ Qwen3-ASR-1.7B es un modelo de reconocimiento automático de voz (ASR) desarroll
 
 La versión de 1.7B parámetros alcanza un rendimiento de estado del arte entre los modelos ASR de código abierto y resulta competitiva con las APIs comerciales más potentes, según las evaluaciones publicadas. El modelo admite inferencia unificada en streaming y offline con un único modelo, así como la transcripción de audio de larga duración. Además, se distribuye con un kit de inferencia completo que incluye soporte para vLLM, inferencia por lotes, servicio asíncrono y predicción de marcas de tiempo mediante el alineador forzado.
 
-La licencia Apache 2.0 permite uso comercial sin restricciones, y los pesos están disponibles en formato safetensors. El modelo se ha publicado en enero de 2026 y acumula más de 3,8 millones de descargas en HuggingFace, lo que refleja un interés significativo de la comunidad.
+La licencia Apache 2.0 permite uso comercial sin restricciones, y los pesos están disponibles en formato safetensors. El modelo se ha publicado en enero de 2026 y acumula más de 3,8 millones de descargas en Hugging Face, lo que refleja un interés significativo de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
+- Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3-ASR
 - Paper (arXiv): https://arxiv.org/abs/2601.21337
 - ModelScope (descarga alternativa): https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B

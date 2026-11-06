@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ahbee8888/qunyu1` es un repositorio de modelo publicado en HuggingFace por el usuario `ahbee8888` el 5 de noviembre de 2026. La model card asociada es prácticamente vacía: únicamente declara una licencia de tipo `other` con nombre `qunyu1` y un enlace a un fichero `LICENSE` que no se ha podido verificar en la información disponible. No se especifica arquitectura, número de parámetros, contexto, idiomas ni pipeline de inferencia.
+`ahbee8888/qunyu1` es un repositorio de modelo publicado en Hugging Face por el usuario `ahbee8888` el 5 de noviembre de 2026. La model card asociada es prácticamente vacía: únicamente declara una licencia de tipo `other` con nombre `qunyu1` y un enlace a un fichero `LICENSE` que no se ha podido verificar en la información disponible. No se especifica arquitectura, número de parámetros, contexto, idiomas ni pipeline de inferencia.
 
 El tamaño del repositorio es de 0,2 GB, lo que sugiere un conjunto de pesos relativamente pequeño (compatible con un modelo de unos cientos de millones de parámetros en cuantización de 8 o 4 bits, o un modelo algo mayor en cuantizaciones muy agresivas), aunque esta estimación no puede confirmarse sin inspeccionar los ficheros del repo. No hay descargas ni likes registrados en el momento de la consulta.
 
@@ -34,7 +34,7 @@ Tampoco consta información sobre innovaciones técnicas (decodificación especu
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta información sobre capacidades multilingües.
 - No consta información sobre modos especiales (thinking mode, visión, audio, etc.).
-- No consta el pipeline de inferencia asociado en HuggingFace.
+- No consta el pipeline de inferencia asociado en Hugging Face.
 
 ## Casos de uso
 
@@ -77,6 +77,6 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ahbee8888/qunyu1
+- Repositorio en Hugging Face: https://huggingface.co/ahbee8888/qunyu1
 - Fichero de licencia referenciado: `LICENSE` dentro del repositorio (no verificable en la información disponible).
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

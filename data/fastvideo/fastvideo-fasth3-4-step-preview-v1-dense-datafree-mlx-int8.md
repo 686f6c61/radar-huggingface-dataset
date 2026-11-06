@@ -77,7 +77,7 @@ La versión VSA-DataFree es la recomendada por FastVideo para producción, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree-MLX-INT8
+- Repositorio Hugging Face del modelo: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree-MLX-INT8
 - Modelo base (Dense-DataFree): https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree
 - Variante VSA-DataFree (recomendada por FastVideo): https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
 - Blog oficial de FastVideo sobre FastH3 Preview v1: https://haoailab.com/blogs/fasth3-preview/

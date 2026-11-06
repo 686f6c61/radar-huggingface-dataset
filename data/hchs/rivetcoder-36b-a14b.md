@@ -79,7 +79,7 @@ No se dispone de comparativas de rendimiento con otros modelos de código porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HCHs/RivetCoder-36B-A14B
+- Modelo en Hugging Face: https://huggingface.co/HCHs/RivetCoder-36B-A14B
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Versión más pequeña del mismo autor: https://huggingface.co/HCHs/RivetCoder-9B-A4B
 - Versión GGUF de la versión pequeña: https://huggingface.co/HCHs/RivetCoder-9B-A4B-GGUF

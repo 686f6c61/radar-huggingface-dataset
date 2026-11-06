@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llama-cargo-sft-v13 es un ajuste fino supervisado (SFT) del modelo unsloth/Llama-3.1-8B-Instruct-bnb-4bit, publicado por el usuario jonas-mo en HuggingFace. Se trata, por tanto, de un derivado de Llama 3.1 8B Instruct, el modelo denso de 8.030 millones de parametros de Meta con ventana de contexto de 128.000 tokens. El autor no documenta ni el conjunto de datos de entrenamiento, ni el numero de tokens, ni la composicion del corpus utilizado para el ajuste.
+llama-cargo-sft-v13 es un ajuste fino supervisado (SFT) del modelo unsloth/Llama-3.1-8B-Instruct-bnb-4bit, publicado por el usuario jonas-mo en Hugging Face. Se trata, por tanto, de un derivado de Llama 3.1 8B Instruct, el modelo denso de 8.030 millones de parametros de Meta con ventana de contexto de 128.000 tokens. El autor no documenta ni el conjunto de datos de entrenamiento, ni el numero de tokens, ni la composicion del corpus utilizado para el ajuste.
 
 El modelo se ha entrenado con la libreria TRL (version 0.24.0) sobre un checkpoint base ya cuantizado a 4 bits (bnb-4bit), lo que situa el flujo de trabajo en el ecosistema Unsloth + PEFT/QLoRA. El repositorio ocupa solo 0,2 GB, un tamano incompatible con los pesos completos de un modelo de 8.000 millones de parametros, lo que apunta a que contiene adaptadores (LoRA) o un guardado parcial de pesos; la model card no aclara este punto.
 
@@ -73,11 +73,11 @@ La model card de jonas-mo/llama-cargo-sft-v13 no incluye resultados de MMLU, Hum
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| jonas-mo/llama-cargo-sft-v13 | 8.030 M (base) | 128.000 tokens (heredado) | no disponible | HuggingFace, 0 descargas | Ajuste SFT de dominio no evaluado |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Referencia oficial con benchmarks publicados |
-| unsloth/Llama-3.1-8B-Instruct-bnb-4bit | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Version cuantizada a 4 bits del anterior, usada como base |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Apache 2.0 | HuggingFace | Alternativa de licencia permisiva y menor contexto |
-| Qwen/Qwen2.5-7B-Instruct | 7.620 M | 128.000 tokens | Apache 2.0 (segun variante) | HuggingFace | Alternativa multilingue con licencia mas laxa |
+| jonas-mo/llama-cargo-sft-v13 | 8.030 M (base) | 128.000 tokens (heredado) | no disponible | Hugging Face, 0 descargas | Ajuste SFT de dominio no evaluado |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Referencia oficial con benchmarks publicados |
+| unsloth/Llama-3.1-8B-Instruct-bnb-4bit | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Version cuantizada a 4 bits del anterior, usada como base |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Apache 2.0 | Hugging Face | Alternativa de licencia permisiva y menor contexto |
+| Qwen/Qwen2.5-7B-Instruct | 7.620 M | 128.000 tokens | Apache 2.0 (segun variante) | Hugging Face | Alternativa multilingue con licencia mas laxa |
 
 La comparacion es necesariamente asimetrica: los tres modelos alternativos cuentan con evaluaciones publicadas y licencias claras, mientras que para llama-cargo-sft-v13 no hay datos de rendimiento, idiomas declarados ni licencia especificada, lo que impide cualquier comparacion cuantitativa.
 
@@ -97,8 +97,8 @@ La comparacion es necesariamente asimetrica: los tres modelos alternativos cuent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonas-mo/llama-cargo-sft-v13
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/jonas-mo/llama-cargo-sft-v13
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Modelo original de Meta (referencia del linaje): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Llama 3.1 Community License: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE

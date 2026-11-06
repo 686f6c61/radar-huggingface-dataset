@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - datnthe170208/lab21-qwen35-triage-vi](https://huggingface.co/datnthe170208/lab21-qwen35-triage-vi)
-- [HuggingFace - tanh1c/lab21-qwen35-triage-vi (repositorio similar)](https://huggingface.co/tanh1c/lab21-qwen35-triage-vi)
+- [Hugging Face - datnthe170208/lab21-qwen35-triage-vi](https://huggingface.co/datnthe170208/lab21-qwen35-triage-vi)
+- [Hugging Face - tanh1c/lab21-qwen35-triage-vi (repositorio similar)](https://huggingface.co/tanh1c/lab21-qwen35-triage-vi)
 - [GitHub - Day21-Track3-Finetuning-Lab (contexto del desafío)](https://github.com/VinUni-AI20k/Day21-Track3-Finetuning-Lab/blob/main/BONUS-CHALLENGE-EN.md)
 - [GitHub - lab21-2A202601538 (otro repositorio relacionado)](https://github.com/WiiiCuti/lab21-2A202601538/blob/main/BONUS-CHALLENGE.md)

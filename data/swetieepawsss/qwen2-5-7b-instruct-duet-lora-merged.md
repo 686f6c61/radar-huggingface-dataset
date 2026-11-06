@@ -87,7 +87,7 @@ La comparación relevante es contra el propio Qwen2.5-7B-Instruct: misma arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SwetieePawsss/Qwen2.5-7B-Instruct-DUET-LoRA-merged
+- Modelo en Hugging Face: https://huggingface.co/SwetieePawsss/Qwen2.5-7B-Instruct-DUET-LoRA-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET
 - Paper en ACL Anthology: https://aclanthology.org/2026.findings-acl.1287/

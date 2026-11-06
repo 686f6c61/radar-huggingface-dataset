@@ -101,7 +101,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoría en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-4B
 - Variante cuantizada: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-4B-small
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Sitio del desarrollador: https://moravian.ai/

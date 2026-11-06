@@ -83,7 +83,7 @@ La comparación se basa en datos públicos generales de cada modelo; no hay benc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dgrauet/ernie-image-turbo-mlx
+- Repositorio Hugging Face: https://huggingface.co/dgrauet/ernie-image-turbo-mlx
 - Versión cuantizada q8: https://huggingface.co/dgrauet/ernie-image-turbo-mlx-q8
 - Modelo base de Baidu: https://huggingface.co/baidu/ERNIE-Image-Turbo
 - Librería de inferencia ernie-image-mlx: https://github.com/dgrauet/ernie-image-mlx

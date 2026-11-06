@@ -85,8 +85,8 @@ Los datos de contexto y licencia de las alternativas provienen de sus respectiva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-091-PairMoreOneCounting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-091-PairMoreOneCounting-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/ed9b3832
-- Ficheros de configuración en el repositorio: `training_run.json` y `training_config.yaml` (incluidos en el repo de HuggingFace)
+- Ficheros de configuración en el repositorio: `training_run.json` y `training_config.yaml` (incluidos en el repo de Hugging Face)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

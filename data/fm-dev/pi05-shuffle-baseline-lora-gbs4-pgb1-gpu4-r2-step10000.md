@@ -109,7 +109,7 @@ No se han identificado en la información disponible modelos de terceros compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-baseline-lora-gbs4-pgb1-gpu4-r2-step10000
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-baseline-lora-gbs4-pgb1-gpu4-r2-step10000
 - Archivo de respaldo de checkpoints (ruta `checkpoints/r2`): https://huggingface.co/datasets/fm-dev/pi05-checkpoint-backups/tree/main/checkpoints/r2
 - Perfil del autor: https://huggingface.co/fm-dev
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes. Las URL devueltas por la búsqueda corresponden a directorios de emisoras de radio en francés (radio-en-ligne.fr, fr.wikipedia.org/wiki/Radio_FM, cheriefm.fr, radioline.co) y no guardan relación con el modelo ni con robótica.

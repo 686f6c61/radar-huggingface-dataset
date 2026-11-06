@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `puppyum/saklas-web-gemma3-1b-instruments` es un checkpoint alojado en HuggingFace por el usuario `puppyum`, con un tamaño de repositorio de 0,2 GB. Por su nombre, parece tratarse de una variante del modelo Gemma 3 de 1B parámetros de Google, posiblemente ajustada para tareas de instrumentación o uso web, aunque no se dispone de documentación oficial que lo confirme. El repositorio no incluye ficha técnica, licencia, idiomas ni pipeline declarados, y registra cero descargas, lo que indica que es un modelo muy reciente o de carácter experimental.
+El modelo `puppyum/saklas-web-gemma3-1b-instruments` es un checkpoint alojado en Hugging Face por el usuario `puppyum`, con un tamaño de repositorio de 0,2 GB. Por su nombre, parece tratarse de una variante del modelo Gemma 3 de 1B parámetros de Google, posiblemente ajustada para tareas de instrumentación o uso web, aunque no se dispone de documentación oficial que lo confirme. El repositorio no incluye ficha técnica, licencia, idiomas ni pipeline declarados, y registra cero descargas, lo que indica que es un modelo muy reciente o de carácter experimental.
 
 La relevancia de este modelo radica en su posible base sobre Gemma 3, que introduce capacidades multimodales, contexto de 128K tokens y soporte para más de 140 idiomas. Sin embargo, al no existir información específica sobre este checkpoint, cualquier afirmación sobre sus capacidades reales debe tomarse con cautela. Se recomienda tratar este modelo como un artefacto sin validar hasta que el autor publique detalles técnicos.
 
@@ -53,6 +53,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/puppyum/saklas-web-gemma3-1b-instruments
+- Repositorio Hugging Face: https://huggingface.co/puppyum/saklas-web-gemma3-1b-instruments
 - Informe técnico de Gemma 3 (base del modelo, no específico): https://arxiv.org/abs/2503.19786
 - Página oficial de Gemma 3: https://deepmind.google/models/gemma/gemma-3/

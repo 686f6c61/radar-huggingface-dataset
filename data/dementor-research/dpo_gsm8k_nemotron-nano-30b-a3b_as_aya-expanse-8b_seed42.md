@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_aya-expanse-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_aya-expanse-8b_seed42
 - Adaptador inverso (aya-expanse imitando a nemotron-nano): https://huggingface.co/dementor-research/dpo_gsm8k_aya-expanse-8b_as_nemotron-nano-30b-a3b_seed42
 - Adaptador similar con nemotron-super-120b: https://huggingface.co/dementor-research/dpo_gsm8k_aya-expanse-8b_as_nemotron-super-120b_seed42
 - Página del adaptador en FriendliAI: https://friendli.ai/models/dementor-research/dpo_gsm8k_aya-expanse-8b_as_nemotron-nano-30b-a3b_seed42

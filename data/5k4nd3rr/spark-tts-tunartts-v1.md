@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `5k4nd3rr/spark-tts-tunartts-v1` es un checkpoint de generación de texto a voz (TTS) publicado en HuggingFace por el usuario `5k4nd3rr`. Aunque la model card no contiene información específica, los tags del repositorio (`qwen2`, `text-generation`, `safetensors`, `text-generation-inference`) y el tamaño de parámetros (506,6 millones) sugieren que se trata de una variante o adaptación del sistema Spark-TTS, desarrollado por el Fuxi AI Lab de NetEase, que utiliza un modelo de lenguaje grande (LLM) con un backbone Qwen2 para sintetizar voz. El nombre "tunartts-v1" indica que podría ser un fine-tuning orientado a un caso concreto, aunque no se especifica cuál.
+El modelo `5k4nd3rr/spark-tts-tunartts-v1` es un checkpoint de generación de texto a voz (TTS) publicado en Hugging Face por el usuario `5k4nd3rr`. Aunque la model card no contiene información específica, los tags del repositorio (`qwen2`, `text-generation`, `safetensors`, `text-generation-inference`) y el tamaño de parámetros (506,6 millones) sugieren que se trata de una variante o adaptación del sistema Spark-TTS, desarrollado por el Fuxi AI Lab de NetEase, que utiliza un modelo de lenguaje grande (LLM) con un backbone Qwen2 para sintetizar voz. El nombre "tunartts-v1" indica que podría ser un fine-tuning orientado a un caso concreto, aunque no se especifica cuál.
 
 La relevancia de este modelo radica en que, si sigue la arquitectura de Spark-TTS, ofrece una síntesis de voz eficiente mediante tokens discretos de un solo flujo (BiCodec), separando contenido lingüístico de atributos del hablante. Sin embargo, la ausencia de documentación oficial sobre este checkpoint concreto obliga a tratar toda especificación técnica como provisional y basada en inferencias del modelo original.
 
@@ -39,7 +39,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 - Generación de audiolibros: al ser un modelo de ~507M parámetros, es ligero para ejecutarse en servidores modestos y puede producir narraciones largas con contexto limitado.
 - Doblaje automático de vídeos y podcasts: si el modelo permite control de timbre, podría adaptar la voz a distintos personajes, aunque esto no está verificado.
 - Accesibilidad: conversión de texto a voz para personas con discapacidad visual o dificultades de lectura.
-- Prototipado rápido de aplicaciones TTS: al estar disponible en HuggingFace con formato safetensors, se puede cargar con Transformers y probar en notebooks o entornos de desarrollo.
+- Prototipado rápido de aplicaciones TTS: al estar disponible en Hugging Face con formato safetensors, se puede cargar con Transformers y probar en notebooks o entornos de desarrollo.
 - Investigación en síntesis de voz basada en LLM: sirve como punto de partida para estudiar la generación de tokens de audio con arquitecturas tipo Qwen2.
 
 ## Benchmarks y rendimiento
@@ -60,10 +60,10 @@ Dado que no hay datos oficiales de rendimiento, la comparación se basa en carac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| spark-tts-tunartts-v1 (este) | 506M | no disponible | no disponible | HuggingFace (repo público) |
-| Spark-TTS-0.5B (original) | 500M | 2048 tokens (aprox.) | Apache 2.0 | HuggingFace, GitHub |
-| XTTS v2 | 467M | 256 tokens de contexto | CPML (no comercial) | Coqui, HuggingFace |
-| Bark (small) | ~500M | 1024 tokens | MIT | HuggingFace |
+| spark-tts-tunartts-v1 (este) | 506M | no disponible | no disponible | Hugging Face (repo público) |
+| Spark-TTS-0.5B (original) | 500M | 2048 tokens (aprox.) | Apache 2.0 | Hugging Face, GitHub |
+| XTTS v2 | 467M | 256 tokens de contexto | CPML (no comercial) | Coqui, Hugging Face |
+| Bark (small) | ~500M | 1024 tokens | MIT | Hugging Face |
 
 La comparativa es orientativa, ya que no se dispone de benchmarks comunes. Spark-TTS-0.5B es el modelo base más probable; XTTS v2 y Bark son alternativas populares de tamaño similar. La licencia de este checkpoint es desconocida, lo que limita su uso en producción sin aclaración legal.
 
@@ -79,7 +79,7 @@ La comparativa es orientativa, ya que no se dispone de benchmarks comunes. Spark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5k4nd3rr/spark-tts-tunartts-v1
+- Modelo en Hugging Face: https://huggingface.co/5k4nd3rr/spark-tts-tunartts-v1
 - Repositorio oficial de Spark-TTS: https://github.com/sparkaudio/spark-tts
 - Página del proyecto Spark-TTS: https://sparkaudio.github.io/spark-tts/
 - Modelo Spark-TTS-0.5B original: https://huggingface.co/SparkAudio/Spark-TTS-0.5B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `xw17/Qwen2.5-14B-Instruct_SFT_lora_ssaqs` es un artefacto alojado en HuggingFace por el usuario `xw17`, cuyo identificador sugiere un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base Qwen2.5-14B-Instruct. El tamano del repositorio, de apenas 0,1 GB, es coherente con un adaptador LoRA y no con un conjunto completo de pesos de un modelo de 14.000 millones de parametros, que en precision bf16 ocuparia del orden de 28 GB. No obstante, esta interpretacion se deriva unicamente del nombre del repositorio y no esta confirmada por el autor.
+El repositorio `xw17/Qwen2.5-14B-Instruct_SFT_lora_ssaqs` es un artefacto alojado en Hugging Face por el usuario `xw17`, cuyo identificador sugiere un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base Qwen2.5-14B-Instruct. El tamano del repositorio, de apenas 0,1 GB, es coherente con un adaptador LoRA y no con un conjunto completo de pesos de un modelo de 14.000 millones de parametros, que en precision bf16 ocuparia del orden de 28 GB. No obstante, esta interpretacion se deriva unicamente del nombre del repositorio y no esta confirmada por el autor.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) figuran como "[More Information Needed]". No hay ninguna descripcion funcional, ningun resultado de benchmarks ni documentacion tecnica aportada por el autor.
+La model card publicada es la plantilla generada automaticamente por Hugging Face, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) figuran como "[More Information Needed]". No hay ninguna descripcion funcional, ningun resultado de benchmarks ni documentacion tecnica aportada por el autor.
 
 El modelo acumula cero descargas y cero likes, y fue creado y actualizado el 30 de septiembre de 2026, con apenas dieciocho segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada o de prueba. La busqueda web asociada no ha devuelto ninguna fuente tecnica relevante sobre este artefacto. En consecuencia, esta ficha documenta principalmente la ausencia de informacion verificable y debe tratarse como un punto de partida provisional.
 
@@ -23,9 +23,9 @@ El modelo acumula cero descargas y cero likes, y fue creado y actualizado el 30 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del adaptador ni del modelo base mas alla de lo que sugiere su nombre. Las etiquetas del repositorio (`transformers`, `safetensors`) confirman unicamente que los pesos fueron serializados en formato safetensors y que el artefacto esta pensado para cargarse con la libreria Transformers. La etiqueta `endpoints_compatible` indica que el repositorio es compatible con los inference endpoints gestionados de HuggingFace.
+No se dispone de informacion sobre la arquitectura del adaptador ni del modelo base mas alla de lo que sugiere su nombre. Las etiquetas del repositorio (`transformers`, `safetensors`) confirman unicamente que los pesos fueron serializados en formato safetensors y que el artefacto esta pensado para cargarse con la libreria Transformers. La etiqueta `endpoints_compatible` indica que el repositorio es compatible con los inference endpoints gestionados de Hugging Face.
 
-La nomenclatura del identificador apunta a un ajuste fino supervisado (SFT) con Low-Rank Adaptation (LoRA) sobre Qwen2.5-14B-Instruct. El sufijo `ssaqs` no tiene significado documentado. No consta el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion adicionales como DPO o RLHF, ni los hiperparametros utilizados. La model card no incluye la seccion de detalles de entrenamiento cumplimentada. El unico paper referenciado en las etiquetas es `arxiv:1910.09700`, correspondiente al calculo de impacto ambiental de Lacoste et al. (2019), que aparece por defecto en la plantilla de HuggingFace y no constituye una referencia tecnica del modelo.
+La nomenclatura del identificador apunta a un ajuste fino supervisado (SFT) con Low-Rank Adaptation (LoRA) sobre Qwen2.5-14B-Instruct. El sufijo `ssaqs` no tiene significado documentado. No consta el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion adicionales como DPO o RLHF, ni los hiperparametros utilizados. La model card no incluye la seccion de detalles de entrenamiento cumplimentada. El unico paper referenciado en las etiquetas es `arxiv:1910.09700`, correspondiente al calculo de impacto ambiental de Lacoste et al. (2019), que aparece por defecto en la plantilla de Hugging Face y no constituye una referencia tecnica del modelo.
 
 ## Capacidades
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: determinada por el modelo base, no por el adaptador. Para Qwen2.5-14B-Instruct en bf16 se estiman del orden de 28-30 GB de VRAM, cifra no confirmada para este artefacto.
 - GPU recomendadas: no disponibles para este repositorio. Para el modelo base de 14.000 millones de parametros se requieren habitualmente GPU de 24-80 GB (RTX 3090/4090 con cuantizacion, A100 40/80 GB, H100).
 - Compatibilidad con GPU de consumo: no confirmada. Previsiblemente solo con cuantizacion agresiva (4 bits) en GPU de 24 GB, pero no hay datos del autor.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace. El uso con vLLM, llama.cpp, Ollama o TGI no esta documentado y requeriria fusionar el adaptador con el modelo base previamente.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face. El uso con vLLM, llama.cpp, Ollama o TGI no esta documentado y requeriria fusionar el adaptador con el modelo base previamente.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/Qwen2.5-14B-Instruct_SFT_lora_ssaqs | no disponible (adaptador sobre base de 14B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-14B-Instruct (modelo base declarado en el nombre) | 14.700 millones aprox. | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 (segun publicacion de Alibaba) | HuggingFace, ampliamente utilizado |
-| Adaptadores LoRA comunitarios sobre Qwen2.5-14B-Instruct | variable | heredado del base | variable, frecuentemente no declarada | HuggingFace |
+| xw17/Qwen2.5-14B-Instruct_SFT_lora_ssaqs | no disponible (adaptador sobre base de 14B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-14B-Instruct (modelo base declarado en el nombre) | 14.700 millones aprox. | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 (segun publicacion de Alibaba) | Hugging Face, ampliamente utilizado |
+| Adaptadores LoRA comunitarios sobre Qwen2.5-14B-Instruct | variable | heredado del base | variable, frecuentemente no declarada | Hugging Face |
 
 La comparativa se limita a una referencia contextual: los datos del modelo base se citan de memoria publica y no se han verificado contra la ficha oficial en el marco de esta ficha. Para el repositorio analizado, no existe informacion que permita comparar rendimiento, contexto efectivo ni licencia.
 
@@ -91,7 +91,7 @@ La comparativa se limita a una referencia contextual: los datos del modelo base 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_ssaqs
+- Hugging Face: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_ssaqs
 - Paper referenciado en las etiquetas (plantilla por defecto, no especifico del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 - Repositorio del modelo base declarado en el nombre (referencia contextual, no verificada en esta ficha): https://huggingface.co/Qwen/Qwen2.5-14B-Instruct

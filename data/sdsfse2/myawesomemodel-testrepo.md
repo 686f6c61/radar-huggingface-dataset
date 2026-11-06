@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `sdsfse2/MyAwesomeModel-TestRepo`. El autor, `sdsfse2`, lo describe como un modelo que ha experimentado una "actualización significativa de versión", con mejoras en razonamiento profundo, inferencia y soporte para function calling. Sin embargo, el repositorio tiene cero descargas, cero likes y un tamaño de 0.0 GB, lo que sugiere que se trata de una prueba o un placeholder sin implementación real verificable.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `sdsfse2/MyAwesomeModel-TestRepo`. El autor, `sdsfse2`, lo describe como un modelo que ha experimentado una "actualización significativa de versión", con mejoras en razonamiento profundo, inferencia y soporte para function calling. Sin embargo, el repositorio tiene cero descargas, cero likes y un tamaño de 0.0 GB, lo que sugiere que se trata de una prueba o un placeholder sin implementación real verificable.
 
 La model card incluye una tabla de evaluación con valores numéricos en categorías como razonamiento matemático, lógico, generación de código, etc., pero no proporciona detalles sobre la arquitectura, el número de parámetros, la longitud de contexto, los datos de entrenamiento ni el hardware necesario. Tampoco se especifican los modelos de comparación (Model1, Model2, Model1-v2). Dada la falta de información técnica concreta y la naturaleza del repositorio, esta ficha debe interpretarse con extrema cautela: la mayoría de los datos técnicos no están disponibles.
 
@@ -21,7 +21,7 @@ La model card incluye una tabla de evaluación con valores numéricos en categor
 
 ## Arquitectura y entrenamiento
 
-No se proporciona información sobre la arquitectura del modelo. Los tags de HuggingFace incluyen `transformers`, `pytorch` y `bert`, lo que podría sugerir una base transformer, pero no es concluyente. La model card menciona que el modelo ha mejorado su "profundidad de razonamiento" mediante "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no detalla el proceso de entrenamiento, el número de tokens, la composición del dataset ni si se usaron técnicas como RLHF o DPO. Tampoco se especifica si hay innovaciones técnicas como decodificación especulativa o atención lineal.
+No se proporciona información sobre la arquitectura del modelo. Los tags de Hugging Face incluyen `transformers`, `pytorch` y `bert`, lo que podría sugerir una base transformer, pero no es concluyente. La model card menciona que el modelo ha mejorado su "profundidad de razonamiento" mediante "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no detalla el proceso de entrenamiento, el número de tokens, la composición del dataset ni si se usaron técnicas como RLHF o DPO. Tampoco se especifica si hay innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -94,5 +94,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sdsfse2/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/sdsfse2/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

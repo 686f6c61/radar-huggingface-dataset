@@ -109,7 +109,7 @@ Los tres modelos comparten backbone MPNet, dimensionalidad y longitud de context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sentence-transformers/merged-mpnet-base
+- Modelo en Hugging Face: https://huggingface.co/sentence-transformers/merged-mpnet-base
 - Modelo padre all-mpnet-base-v2: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 - Modelo padre multi-qa-mpnet-base-cos-v1: https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-cos-v1
 - Dataset NanoBEIR-en: https://huggingface.co/datasets/sentence-transformers/NanoBEIR-en

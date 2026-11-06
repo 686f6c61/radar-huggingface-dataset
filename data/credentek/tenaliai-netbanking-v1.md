@@ -4,7 +4,7 @@
 
 TenaliAI-NetBanking-v1 es un modelo de clasificación de intenciones desarrollado por Credentek, orientado al sector bancario y específicamente a portales de banca electrónica (netbanking). El modelo forma parte de una familia de modelos TenaliAI (Banking, FinTech, NetBanking) que, según los resultados de búsqueda de modelos hermanos, se basan en fine-tuning de BERT para identificar la intención de una consulta de cliente en plataformas bancarias. Con 237,6 millones de parámetros, el modelo está diseñado para procesar texto de consultas y devolver una etiqueta de intención, lo que permite automatizar la atención al cliente en canales digitales.
 
-La ficha de HuggingFace no proporciona detalles sobre arquitectura, licencia, idiomas o datos de entrenamiento, por lo que gran parte de la información técnica debe considerarse no disponible. Sin embargo, el tamaño del repositorio (4,8 GB) y el formato safetensors sugieren que se distribuyen pesos completos, probablemente en precisión fp32. El modelo fue creado en agosto de 2026 y actualizado en septiembre del mismo año, con solo 35 descargas, lo que indica que es un proyecto reciente y de baja adopción.
+La ficha de Hugging Face no proporciona detalles sobre arquitectura, licencia, idiomas o datos de entrenamiento, por lo que gran parte de la información técnica debe considerarse no disponible. Sin embargo, el tamaño del repositorio (4,8 GB) y el formato safetensors sugieren que se distribuyen pesos completos, probablemente en precisión fp32. El modelo fue creado en agosto de 2026 y actualizado en septiembre del mismo año, con solo 35 descargas, lo que indica que es un proyecto reciente y de baja adopción.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se dispone de información suficiente para una comparativa cuantitativa. Los 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TenaliAI-NetBanking-v1 | 237,6 M | no disponible | no disponible | HuggingFace |
-| TenaliAI-Banking-v1 | no disponible | no disponible | no disponible | HuggingFace |
-| TenaliAI-FinTech-v1 | no disponible | no disponible | no disponible | HuggingFace |
+| TenaliAI-NetBanking-v1 | 237,6 M | no disponible | no disponible | Hugging Face |
+| TenaliAI-Banking-v1 | no disponible | no disponible | no disponible | Hugging Face |
+| TenaliAI-FinTech-v1 | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres modelos parecen compartir el mismo propósito (clasificación de intenciones en banca), pero no hay datos públicos que permitan comparar rendimiento o arquitectura. Alternativas genéricas como BERT-base o RoBERTa podrían servir como base, pero no se han publicado comparaciones.
 
@@ -77,7 +77,7 @@ Los tres modelos parecen compartir el mismo propósito (clasificación de intenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credentek/TenaliAI-NetBanking-v1
+- Modelo en Hugging Face: https://huggingface.co/credentek/TenaliAI-NetBanking-v1
 - Modelo hermano TenaliAI-Banking-v1: https://huggingface.co/credentek/TenaliAI-Banking-v1
 - Modelo hermano TenaliAI-FinTech-v1: https://huggingface.co/credentek/TenaliAI-FinTech-v1
 - Página de análisis de TenaliAI-FinTech-v1: https://free2aitools.com/model/credentek/tenaliai-fintech-v1

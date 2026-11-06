@@ -80,7 +80,7 @@ La comparativa directa mas relevante es con el baseline `gptbert-babycosmofine`,
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ezrawinston/gptbert-sambal)
+- [Modelo en Hugging Face](https://huggingface.co/ezrawinston/gptbert-sambal)
 - [Dataset babycosmofine-sambal](https://huggingface.co/datasets/ezrawinston/babycosmofine-sambal)
 - [Modelo baseline gptbert-babycosmofine](https://huggingface.co/ezrawinston/gptbert-babycosmofine)
 - [Articulo en OpenReview](https://openreview.net/forum?id=p7HVrmZwWB)

@@ -76,9 +76,9 @@ La versión MLX INT6 es la única de las tres optimizada para Apple silicon. La 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX INT6: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree-MLX-INT6
-- Repositorio HuggingFace del modelo base: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree
-- Repositorio HuggingFace de la variante VSA: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
+- Repositorio Hugging Face del modelo MLX INT6: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree-MLX-INT6
+- Repositorio Hugging Face del modelo base: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree
+- Repositorio Hugging Face de la variante VSA: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
 - Blog de haoailab sobre FastH3 Preview v1: https://haoailab.com/blogs/fasth3-preview/
 - Noticia en ComfyUI Wiki: https://comfyui-wiki.com/en/news/2026-08-28-fasth3-preview
 - Repositorio GitHub de FastVideo: https://github.com/hao-ai-lab/FastVideo

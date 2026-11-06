@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AdcSR x4 es un super-resolutor de difusion de un solo paso, publicado en HuggingFace por el usuario arraypress como `arraypress/upscale-adcsr` y empaquetado en formato Core AI (`adcsr_x4_float32.aimodel`) para su ejecucion en Apple Silicon. Se trata de la republicacion sin cambios de la conversion comunitaria `mlboydaisuke/AdcSR-CoreAI`, que a su vez porta el modelo AdcSR presentado en CVPR 2025: una compresion por difusion adversarial de un super-resolutor basado en el UNet de Stable Diffusion 2.1, podado y reducido a una unica evaluacion del UNet.
+AdcSR x4 es un super-resolutor de difusion de un solo paso, publicado en Hugging Face por el usuario arraypress como `arraypress/upscale-adcsr` y empaquetado en formato Core AI (`adcsr_x4_float32.aimodel`) para su ejecucion en Apple Silicon. Se trata de la republicacion sin cambios de la conversion comunitaria `mlboydaisuke/AdcSR-CoreAI`, que a su vez porta el modelo AdcSR presentado en CVPR 2025: una compresion por difusion adversarial de un super-resolutor basado en el UNet de Stable Diffusion 2.1, podado y reducido a una unica evaluacion del UNet.
 
 Su particularidad es explicita y el propio autor la advierte: no se limita a reconstruir la senal de baja resolucion, sino que **anade detalle plausible que nunca existio** (textura en pelo, follaje, tejidos). Eso lo hace muy competitivo en imagenes generadas y fotografia casual, y desaconsejable para material donde la fidelidad es un requisito (pruebas, documentos, caras que deben reconocerse, mediciones). Por ese motivo, la herramienta `upscale` del mismo autor lo ofrece solo como modo opcional `--detail`, siendo SwinIR-L (`arraypress/upscale-swinir-l-real`) el modo por defecto.
 
@@ -18,7 +18,7 @@ El modelo opera por tiles de `128x128` píxeles y devuelve `512x512` (factor x4)
 | Longitud de contexto | no aplica (modelo de imagen; entrada por tiles de 128x128) |
 | Tipos de cuantizacion | solo float32; no se soporta float16 (produce NaN en tiles lisos) |
 | Idiomas soportados | no aplica (modelo de imagen a imagen); sin campos de idioma en el repositorio |
-| Licencia | Codigo y pesos de AdcSR: Apache-2.0. Derivado de Stable Diffusion 2.1: CreativeML Open RAIL++-M (24 de noviembre de 2022, © Stability AI), incluida la restriccion de uso del Anexo A. El tag del repositorio en HuggingFace indica `openrail++` |
+| Licencia | Codigo y pesos de AdcSR: Apache-2.0. Derivado de Stable Diffusion 2.1: CreativeML Open RAIL++-M (24 de noviembre de 2022, © Stability AI), incluida la restriccion de uso del Anexo A. El tag del repositorio en Hugging Face indica `openrail++` |
 | Formato de pesos | `.aimodel` (Core AI / Core ML, `adcsr_x4_float32.aimodel`), float32, ~1,8 GB |
 | Entrada | `lr` `[1,3,128,128]` en rango `[-1,1]` |
 | Salida | `sr` `[1,3,512,512]` en rango `[-1,1]` (factor x4, con emparejamiento de color por tile) |
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estandar (PSNR, SSIM, MMLU u otros)
 
 | Modelo | Tipo | Factor | Enfoque | Rendimiento (LPIPS) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AdcSR x4 (`arraypress/upscale-adcsr`) | Difusion de un solo paso sobre SD 2.1 podado | x4 | Inventa detalle | 0,181 en generadas; 0,241 en reales; 0,262 con degradaciones | Apache-2.0 (AdcSR) + CreativeML Open RAIL++-M (SD 2.1) | HuggingFace, formato Core AI |
-| SwinIR-L (`arraypress/upscale-swinir-l-real`) | Super-resolucion fiel basada en transformer | x4 | Reconstruye, no inventa | No disponible en esta informacion; segun la model card, su PSNR supera a AdcSR en 3-4 dB | no disponible | HuggingFace |
+| AdcSR x4 (`arraypress/upscale-adcsr`) | Difusion de un solo paso sobre SD 2.1 podado | x4 | Inventa detalle | 0,181 en generadas; 0,241 en reales; 0,262 con degradaciones | Apache-2.0 (AdcSR) + CreativeML Open RAIL++-M (SD 2.1) | Hugging Face, formato Core AI |
+| SwinIR-L (`arraypress/upscale-swinir-l-real`) | Super-resolucion fiel basada en transformer | x4 | Reconstruye, no inventa | No disponible en esta informacion; segun la model card, su PSNR supera a AdcSR en 3-4 dB | no disponible | Hugging Face |
 | Referencia PyTorch de AdcSR | Difusion de un solo paso | x4 | Inventa detalle | Paridad declarada con la conversion Core AI (coseno 1,000012) | Apache-2.0 | GitHub (Guaishou74851/AdcSR) |
 
 No se dispone de datos de parametros, contexto ni licencia de SwinIR-L en la informacion proporcionada, mas alla de que es el upscaler fiel por defecto de la herramienta `upscale` del mismo autor. No se han facilitado comparaciones con otras familias de super-resolucion (por ejemplo, modelos GAN de escalado) en la informacion disponible.
@@ -100,8 +100,8 @@ No se dispone de datos de parametros, contexto ni licencia de SwinIR-L en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arraypress/upscale-adcsr
+- Modelo en Hugging Face: https://huggingface.co/arraypress/upscale-adcsr
 - Conversion Core AI de origen: https://huggingface.co/mlboydaisuke/AdcSR-CoreAI
 - Repositorio y paper de AdcSR (CVPR 2025): https://github.com/Guaishou74851/AdcSR
 - Super-resolutor fiel por defecto del mismo autor: https://huggingface.co/arraypress/upscale-swinir-l-real
-- Modelo base retirado de HuggingFace (referencia de licencia y arquitectura): https://huggingface.co/stabilityai/stable-diffusion-2-1-base
+- Modelo base retirado de Hugging Face (referencia de licencia y arquitectura): https://huggingface.co/stabilityai/stable-diffusion-2-1-base

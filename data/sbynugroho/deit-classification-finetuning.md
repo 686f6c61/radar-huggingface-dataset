@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SBYNUGROHO/deit-classification-finetuning` es un repositorio de HuggingFace que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a clasificación de imágenes. Lo publica el usuario SBYNUGROHO bajo licencia Apache 2.0. No se trata de un modelo preentrenado ni ajustado con datos reales: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y que no se reclama ninguna métrica de benchmark.
+`SBYNUGROHO/deit-classification-finetuning` es un repositorio de Hugging Face que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a clasificación de imágenes. Lo publica el usuario SBYNUGROHO bajo licencia Apache 2.0. No se trata de un modelo preentrenado ni ajustado con datos reales: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y que no se reclama ninguna métrica de benchmark.
 
 El peso real del checkpoint, según los metadatos de safetensors, es de 49.600 parámetros. Esa cifra es muy inferior a la de cualquier configuración estándar de la familia DeiT, lo que confirma que el repositorio es un artefacto de experimentación y no un modelo con capacidad predictiva útil. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -81,7 +81,7 @@ Las cifras de la familia DeiT que aparecen a continuación son valores de refere
 
 | Modelo | Parametros | Resolucion tipica | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| SBYNUGROHO/deit-classification-finetuning | 49.600 | no disponible | apache-2.0 | inicializacion sin entrenar | HuggingFace, 0 descargas |
+| SBYNUGROHO/deit-classification-finetuning | 49.600 | no disponible | apache-2.0 | inicializacion sin entrenar | Hugging Face, 0 descargas |
 | DeiT-Tiny (referencia de la familia) | ~5,7 M | 224x224 | apache-2.0 | preentrenado y ajustado | checkpoints publicos |
 | DeiT-Small (referencia de la familia) | ~22 M | 224x224 | apache-2.0 | preentrenado y ajustado | checkpoints publicos |
 | ViT-Base (referencia) | ~86 M | 224x224 | apache-2.0 | preentrenado | checkpoints publicos |
@@ -102,7 +102,7 @@ La diferencia de escala es de dos a tres ordenes de magnitud respecto a DeiT-Tin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SBYNUGROHO/deit-classification-finetuning
+- Repositorio en Hugging Face: https://huggingface.co/SBYNUGROHO/deit-classification-finetuning
 - Archivos incluidos en el repositorio: `main.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura DeiT (Facebook AI): no disponible en los resultados de búsqueda proporcionados
 - Repositorio oficial de DeiT: no disponible en los resultados de búsqueda proporcionados

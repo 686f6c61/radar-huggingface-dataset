@@ -64,9 +64,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/pharaouk/awm-minimax-h3-new1344-lora-checkpoints
+- Repositorio de Hugging Face: https://huggingface.co/pharaouk/awm-minimax-h3-new1344-lora-checkpoints
 - Repositorio similar de NTU-yiwen: https://huggingface.co/NTU-yiwen/awm-minimax-h3-new1344-lora-checkpoints
 - GitHub de MiniMax-AI/MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
-- Página de HuggingFace de MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Página de Hugging Face de MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Directorio de LoRAs de MiniMax H3: https://minimax3.org/minimax-h3-lora
 - Awesome MiniMax H3 (GitHub): https://github.com/AtlasCloudAI/awesome-minimax-h3

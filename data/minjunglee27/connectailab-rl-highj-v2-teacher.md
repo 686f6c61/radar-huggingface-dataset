@@ -74,10 +74,10 @@ No se han publicado resultados en benchmarks estándar de LLM (MMLU, HumanEval, 
 
 | Modelo | Tipo | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-highj-v2-teacher | Política RL (PPO) | CONNECT TYCOON | Apache 2.0 | HuggingFace |
-| connectailab-rl-highj-v2 | LLM de decisión destilado del profesor | CONNECT TYCOON | no disponible en esta ficha | HuggingFace |
-| connectailab-rl-highj-v1 | Política RL predecesora | CONNECT TYCOON | no disponible en esta ficha | HuggingFace |
-| connectailab-rl-highj-goto-v1-link01 | Política RL de navegación | CONNECT AI WORLD (robot LINK-01) | no disponible en esta ficha | HuggingFace |
+| connectailab-rl-highj-v2-teacher | Política RL (PPO) | CONNECT TYCOON | Apache 2.0 | Hugging Face |
+| connectailab-rl-highj-v2 | LLM de decisión destilado del profesor | CONNECT TYCOON | no disponible en esta ficha | Hugging Face |
+| connectailab-rl-highj-v1 | Política RL predecesora | CONNECT TYCOON | no disponible en esta ficha | Hugging Face |
+| connectailab-rl-highj-goto-v1-link01 | Política RL de navegación | CONNECT AI WORLD (robot LINK-01) | no disponible en esta ficha | Hugging Face |
 
 No se conocen políticas RL públicas comparables en el mismo simulador más allá de las del propio autor. La comparación con modelos de lenguaje de propósito general no es pertinente porque la tarea y el formato de pesos son distintos.
 
@@ -95,7 +95,7 @@ No se conocen políticas RL públicas comparables en el mismo simulador más all
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minjunglee27/connectailab-rl-highj-v2-teacher
+- Hugging Face: https://huggingface.co/minjunglee27/connectailab-rl-highj-v2-teacher
 - Modelo destilado: https://huggingface.co/minjunglee27/connectailab-rl-highj-v2
 - Modelo predecesor: https://huggingface.co/minjunglee27/connectailab-rl-highj-v1
 - Repositorio del simulador: https://github.com/wonseokjung/connect-tycoon

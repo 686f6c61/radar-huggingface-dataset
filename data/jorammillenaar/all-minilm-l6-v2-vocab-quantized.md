@@ -100,7 +100,7 @@ La diferencia clave frente a Xenova/all-MiniLM-L6-v2 es que este ultimo usa cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoramMillenaar/all-MiniLM-L6-v2-vocab-quantized
+- Modelo en Hugging Face: https://huggingface.co/JoramMillenaar/all-MiniLM-L6-v2-vocab-quantized
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Exportacion origen: https://huggingface.co/Xenova/all-MiniLM-L6-v2
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js

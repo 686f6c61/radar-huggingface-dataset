@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yypeng666/metamdp-conveyor-optional-budget-meta-v1` es un artefacto de aprendizaje por refuerzo publicado en HuggingFace por el usuario yypeng666 (Yiyan Peng). Por el nombre del repositorio y los tags declarados (`robotics`, `reinforcement-learning`, `fitted-q-iteration`, `temporal-memory`), se trata de un checkpoint de política o de función Q entrenado para una tarea de cinta transportadora ("conveyor"), con algún mecanismo de memoria temporal y una noción de "presupuesto opcional" ("optional budget") que, a falta de model card accesible, cabe interpretar como una variable de condicionamiento del agente (por ejemplo, un límite de pasos, energía o cómputo) dentro de un esquema de meta-aprendizaje ("metamdp").
+`yypeng666/metamdp-conveyor-optional-budget-meta-v1` es un artefacto de aprendizaje por refuerzo publicado en Hugging Face por el usuario yypeng666 (Yiyan Peng). Por el nombre del repositorio y los tags declarados (`robotics`, `reinforcement-learning`, `fitted-q-iteration`, `temporal-memory`), se trata de un checkpoint de política o de función Q entrenado para una tarea de cinta transportadora ("conveyor"), con algún mecanismo de memoria temporal y una noción de "presupuesto opcional" ("optional budget") que, a falta de model card accesible, cabe interpretar como una variable de condicionamiento del agente (por ejemplo, un límite de pasos, energía o cómputo) dentro de un esquema de meta-aprendizaje ("metamdp").
 
 No es un modelo de lenguaje: el pipeline declarado es `reinforcement-learning` y el repositorio no expone parámetros, contexto, idiomas ni pesos en formato de inferencia textual. El tamaño del repositorio es de 0,6 GB y el acceso es restringido (gated), por lo que la información disponible se limita a metadatos: no hay resultados de benchmarks, ni descripción de la arquitectura, ni licencia publicada en la información proporcionada.
 
@@ -18,11 +18,11 @@ Su relevancia ahora es acotada y de nicho: sirve como referencia reproducible pa
 | Longitud de contexto | No disponible. No es un modelo de lenguaje; el tag `temporal-memory` sugiere estado recurrente o ventana de observaciones, sin longitud documentada |
 | Tipos de cuantización | No disponible. No se documentan pesos en FP16/INT8/GGUF ni procesos de cuantización |
 | Idiomas soportados | No aplica (modelo de control/RL, no procesa lenguaje natural) |
-| Licencia | No disponible. Repositorio con acceso restringido sujeto a condiciones de HuggingFace |
+| Licencia | No disponible. Repositorio con acceso restringido sujeto a condiciones de Hugging Face |
 | Formato de pesos | No disponible. Tamaño total del repositorio: 0,6 GB |
 | Pipeline declarado | `reinforcement-learning` |
 | Tarea | Control/secuenciación sobre entorno tipo "conveyor" (cinta transportadora), con memoria temporal y presupuesto opcional |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creación / actualización | 2026-10-26 / 2026-10-26 |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No disponible. La información proporcionada no incluye métricas ni descripcion
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no puede asumirse uso comercial. El repositorio es de acceso restringido y requiere aceptar condiciones en HuggingFace; hay que revisar los términos antes de cualquier despliegue.
+- Licencia no disponible: no puede asumirse uso comercial. El repositorio es de acceso restringido y requiere aceptar condiciones en Hugging Face; hay que revisar los términos antes de cualquier despliegue.
 - Ausencia de model card: no se documentan arquitectura, espacio de observación/acción, recompensa, dataset de entrenamiento ni protocolo de evaluación, lo que impide reproducir o auditar el modelo.
 - Especialización extrema: la política está entrenada para una tarea concreta de conveyor; es previsible un fallo rápido ante cambios de distribución (nuevos objetos, iluminación, velocidades de cinta, dinámica del actuador).
 - Riesgo de sobreajuste al dataset offline: fitted-Q iteration es sensible a la cobertura del buffer de transiciones y a la extrapolación de la función Q en acciones no presentes en los datos; el rendimiento fuera de la distribución del dataset puede degradarse sin aviso.
@@ -83,8 +83,8 @@ No disponible. La información proporcionada no incluye métricas ni descripcion
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/yypeng666/metamdp-conveyor-optional-budget-meta-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/yypeng666
+- Repositorio del modelo en Hugging Face: https://huggingface.co/yypeng666/metamdp-conveyor-optional-budget-meta-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/yypeng666
 - Datasets del autor: https://huggingface.co/yypeng666/datasets
 - Dataset relacionado de la misma línea de trabajo (conveyor, sort, forecast): https://huggingface.co/datasets/yypeng666/metamdp-conveyor-sort-forecast-terminal-boundaries-v1
 - Paper, blog o demo: no disponible en la información proporcionada. Las búsquedas web devolvieron principalmente páginas de Meta AI (API y modelos open-weight) sin relación con este repositorio.

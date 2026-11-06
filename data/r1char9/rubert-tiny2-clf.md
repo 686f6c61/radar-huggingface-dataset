@@ -92,8 +92,8 @@ No se dispone de evaluaciones comparativas publicadas. La comparación se limita
 
 | Modelo | Parámetros | Tarea | Idiomas | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|---|
-| r1char9/rubert-tiny2-clf | 29.194.707 | Clasificación de intención en 3 clases (`write`, `draw`, `neutral`) | Ruso | MIT | No disponible | HuggingFace, safetensors |
-| cointegrated/rubert-tiny2 (modelo base) | No disponible en la información proporcionada (el ajuste fino parte de él) | Representaciones de texto (encoder sin cabeza de clasificación específica) | Ruso | No disponible en la información proporcionada | No disponible | HuggingFace |
+| r1char9/rubert-tiny2-clf | 29.194.707 | Clasificación de intención en 3 clases (`write`, `draw`, `neutral`) | Ruso | MIT | No disponible | Hugging Face, safetensors |
+| cointegrated/rubert-tiny2 (modelo base) | No disponible en la información proporcionada (el ajuste fino parte de él) | Representaciones de texto (encoder sin cabeza de clasificación específica) | Ruso | No disponible en la información proporcionada | No disponible | Hugging Face |
 | Otros clasificadores de intención en ruso basados en BERT | No disponible | Clasificación de intenciones | Ruso | No disponible | No disponible | No disponible |
 
 Cualquier comparación de rendimiento con alternativas exigiría evaluar todos los modelos sobre el mismo conjunto de test independiente, algo que no se ha publicado en la información disponible.
@@ -113,6 +113,6 @@ Cualquier comparación de rendimiento con alternativas exigiría evaluar todos l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r1char9/rubert-tiny2-clf
+- Modelo en Hugging Face: https://huggingface.co/r1char9/rubert-tiny2-clf
 - Modelo base `cointegrated/rubert-tiny2`: https://huggingface.co/cointegrated/rubert-tiny2
 - Las búsquedas web realizadas no devolvieron enlaces relevantes sobre este modelo (los resultados obtenidos correspondían a páginas corporativas de Microsoft, sin relación con el modelo). No se dispone de *papers*, blogs, repositorios ni demos adicionales.

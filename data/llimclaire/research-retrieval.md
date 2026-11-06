@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llimclaire/research-retrieval es un prototipo de investigación publicado en HuggingFace por el usuario Llimclaire. Se trata de una implementación de Vision Transformer (ViT) orientada a tareas de retrieval, es decir, a la recuperación de representaciones visuales. La configuración declara una escala "xlarge" y opciones de arquitectura como atención sparse, fusión mediante cross attention, activación ReLU y normalización InstanceNorm.
+Llimclaire/research-retrieval es un prototipo de investigación publicado en Hugging Face por el usuario Llimclaire. Se trata de una implementación de Vision Transformer (ViT) orientada a tareas de retrieval, es decir, a la recuperación de representaciones visuales. La configuración declara una escala "xlarge" y opciones de arquitectura como atención sparse, fusión mediante cross attention, activación ReLU y normalización InstanceNorm.
 
 El aspecto más relevante es que el punto de control incluido (`model.safetensors`) es una inicialización sin entrenar. La propia model card indica de forma explícita que no es un checkpoint entrenado ni auditado, y que no se reclama ninguna métrica de rendimiento. El modelo debe entenderse, por tanto, como un andamiaje de investigación y un punto de partida reproducible, no como una herramienta lista para producción.
 
@@ -69,7 +69,7 @@ La comparación cuantitativa no es significativa porque este repositorio contien
 
 | Modelo | Tipo | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|
-| Llimclaire/research-retrieval | ViT con atención sparse y cross attention | BSD-3-Clause | Prototipo sin entrenar | HuggingFace |
+| Llimclaire/research-retrieval | ViT con atención sparse y cross attention | BSD-3-Clause | Prototipo sin entrenar | Hugging Face |
 | CLIP (OpenAI) | Codificador imagen-texto | MIT | Entrenado y publicado | Público |
 | OpenCLIP | Codificador imagen-texto | Varía según pesos | Entrenado y publicado | Público |
 | SigLIP | Codificador imagen-texto | Apache 2.0 | Entrenado y publicado | Público |
@@ -89,4 +89,4 @@ Los detalles exactos de parámetros y contexto de los modelos de referencia no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Llimclaire/research-retrieval
+- Modelo en Hugging Face: https://huggingface.co/Llimclaire/research-retrieval

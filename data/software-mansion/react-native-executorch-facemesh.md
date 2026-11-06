@@ -24,7 +24,7 @@ Su relevancia practica es doble: por un lado, ofrece inferencia local sin enviar
 | Salidas | `boxes [1, 4]` f32 (hull xyxy), `scores [1]` f32 (probabilidad de presencia facial), `keypoints [1, 468, 4]` f32 (x, y, confianza, z) |
 | Numero de landmarks | 468, en el orden canonico de MediaPipe Face Mesh |
 | Variantes publicadas | `xnnpack/facemesh_xnnpack_fp32.pte` (2,5 MB), `coreml/facemesh_coreml_fp16.pte` (1,6 MB) |
-| Tamano del repositorio | 0,0 GB segun HuggingFace (ficheros listados: 30 B, 719 B, 1,6 MB, 721 B y 2,5 MB) |
+| Tamano del repositorio | 0,0 GB segun Hugging Face (ficheros listados: 30 B, 719 B, 1,6 MB, 721 B y 2,5 MB) |
 | Runtime requerido | ExecuTorch v1.4.1 |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion | 2026-09-11 (creacion y ultima actualizacion) |
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Salida | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| react-native-executorch-facemesh (este modelo) | Regresion de landmarks faciales | 468 landmarks + score + caja | Imagen fija 192x192 | Apache-2.0 | HuggingFace, formato `.pte` para ExecuTorch v1.4.1 |
+| react-native-executorch-facemesh (este modelo) | Regresion de landmarks faciales | 468 landmarks + score + caja | Imagen fija 192x192 | Apache-2.0 | Hugging Face, formato `.pte` para ExecuTorch v1.4.1 |
 | MediaPipe Face Mesh (modelo upstream) | Regresion de landmarks faciales | 468 landmarks | No disponible | No disponible en la informacion | Distribuido dentro del ecosistema MediaPipe; no es el artefacto `.pte` |
-| react-native-executorch-blazeface | Deteccion de rostros | Cajas, scores y puntos clave | No disponible | No disponible en la informacion | HuggingFace, misma coleccion de software-mansion; se usa como etapa previa a facemesh |
+| react-native-executorch-blazeface | Deteccion de rostros | Cajas, scores y puntos clave | No disponible | No disponible en la informacion | Hugging Face, misma coleccion de software-mansion; se usa como etapa previa a facemesh |
 
 No se dispone de datos de parametros, contexto ni rendimiento de las alternativas en la informacion proporcionada, por lo que la comparacion se limita a tarea, formato de salida y disponibilidad. facemesh no es funcionalmente sustituible por un detector: ambas piezas se complementan en el mismo pipeline.
 
@@ -95,12 +95,12 @@ No se dispone de datos de parametros, contexto ni rendimiento de las alternativa
 - La licencia del repositorio es Apache-2.0, que permite uso comercial, pero la model card no aclara la licencia del modelo upstream (MediaPipe Face Mesh portado a PyTorch) ni posibles obligaciones adicionales derivadas de esa cadena de procedencia. Conviene verificarlo antes de un uso comercial.
 - Fuerte acoplamiento al runtime: los ficheros estan construidos para ExecuTorch v1.4.1 y sin garantia de compatibilidad hacia delante. Un cambio de version del runtime puede romper la carga del modelo.
 - Repositorio con 0 descargas y 0 likes y actualizado por ultima vez el mismo dia de su creacion, lo que apunta a un artefacto recien publicado y con poca validacion externa por parte de la comunidad.
-- El tamano reportado por HuggingFace es 0,0 GB mientras que los ficheros suman varios megabytes; conviene comprobar la integridad de la descarga.
+- El tamano reportado por Hugging Face es 0,0 GB mientras que los ficheros suman varios megabytes; conviene comprobar la integridad de la descarga.
 - Uso en aplicaciones de biometria o vigilancia: aunque tecnicamente sea posible, implica tratamiento de datos biometricos y obligaciones legales (RGPD en la UE) que el modelo no resuelve por si mismo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/software-mansion/react-native-executorch-facemesh
+- Modelo en Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-facemesh
 - Libreria React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
 - Documentacion de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
 - Nota de compatibilidad del runtime ExecuTorch: https://github.com/pytorch/executorch/blob/main/runtime/COMPATIBILITY.md

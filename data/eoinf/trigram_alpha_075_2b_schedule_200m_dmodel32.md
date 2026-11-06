@@ -87,6 +87,6 @@ La comparación es orientativa: el modelo de eoinf no compite en capacidad con n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/trigram_alpha_075_2b_schedule_200m_dmodel32
+- Hugging Face: https://huggingface.co/eoinf/trigram_alpha_075_2b_schedule_200m_dmodel32
 - Tokenizer: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de arquitectura y carga: `synthetic_trigrams` (referenciado por el autor; URL exacta no disponible en la información proporcionada)

@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma tarea (atrib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-demosthenes
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-demosthenes
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y puntuación: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-3-1025-7B: https://huggingface.co/allenai/Olmo-3-1025-7B

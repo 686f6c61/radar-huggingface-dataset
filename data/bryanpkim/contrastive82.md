@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`BryanPkim/contrastive82` es un repositorio experimental publicado en HuggingFace por el usuario BryanPkim bajo el identificador «Mixer for Contrastive». No es un modelo de lenguaje entrenado, sino un *codebase* de referencia: incluye una implementación propia de una arquitectura tipo Mixer, un `config.json` con los ajustes generados, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización (`model.safetensors`) destinado únicamente a pruebas de humo (*smoke tests*). La model card lo declara explícitamente: «no benchmark score is claimed in this repository».
+`BryanPkim/contrastive82` es un repositorio experimental publicado en Hugging Face por el usuario BryanPkim bajo el identificador «Mixer for Contrastive». No es un modelo de lenguaje entrenado, sino un *codebase* de referencia: incluye una implementación propia de una arquitectura tipo Mixer, un `config.json` con los ajustes generados, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización (`model.safetensors`) destinado únicamente a pruebas de humo (*smoke tests*). La model card lo declara explícitamente: «no benchmark score is claimed in this repository».
 
 El dato más relevante para cualquier evaluación es su tamaño real: 33.088 parámetros en safetensors, es decir, unas 33.000 unidades, órdenes de magnitud por debajo de cualquier LLM utilizable. Con esa capacidad no es posible generar texto coherente, razonar ni ejecutar tareas de NLP; el repositorio debe interpretarse como un esqueleto de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
@@ -32,7 +32,7 @@ No se ha publicado información sobre el volumen de tokens de entrenamiento, la 
 - No se declara ninguna capacidad de generación de texto, razonamiento, código, matemáticas o visión; el checkpoint es una inicialización sin entrenar.
 - No se documenta soporte de *tool calling* ni de *function calling*.
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
-- No se declara soporte multilingüe; el campo de idiomas está vacío en HuggingFace.
+- No se declara soporte multilingüe; el campo de idiomas está vacío en Hugging Face.
 - Capacidad real disponible: servir como base ejecutable para experimentos de aprendizaje contrastivo y para inspeccionar cambios de arquitectura antes de un entrenamiento completo.
 - Capacidad de infraestructura: el script `train.py` funciona como punto de entrada de entrenamiento y como ejemplo ejecutable de prueba de humo.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BryanPkim/contrastive82 | 33.088 | No disponible | Sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| BryanPkim/contrastive82 | 33.088 | No disponible | Sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (código experimental de arquitectura Mixer para aprendizaje contrastivo). Por volumen de parámetros no es equiparable a ningún LLM de producción, por lo que una comparativa de rendimiento carecería de sentido.
@@ -79,5 +79,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BryanPkim/contrastive82
+- Hugging Face: https://huggingface.co/BryanPkim/contrastive82
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

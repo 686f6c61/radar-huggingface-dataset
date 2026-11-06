@@ -20,7 +20,7 @@ El interés del repositorio es, por tanto, de investigación en interpretabilida
 | Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
 | Formato de pesos | No disponible |
-| Pipeline declarado | No disponible (campo vacío en HuggingFace) |
+| Pipeline declarado | No disponible (campo vacío en Hugging Face) |
 | Etiquetas | pythia, polypythias, interpretability, iclr-2027, region:us |
 | Descargas / "likes" | 0 / 0 |
 | Fecha de creación | 2026-09-20T11:10:37Z |
@@ -49,7 +49,7 @@ La estructura de carpetas del repositorio se organiza como `run/experiment`, lo 
 - Investigación en rotaciones y alineamiento distribuido (DAS): si los artefactos son matrices de rotación asociadas a DAS, serían útiles para investigadores que quieran aplicar, comparar o refutar esas transformaciones sobre subespacios de activación de un transformer pequeño.
 - Validación de metodología en modelos pequeños: con 160M parámetros, el coste computacional de replicar experimentos en una GPU de consumo es bajo, lo que facilita que un grupo de investigación verifique el protocolo antes de escalarlo a modelos mayores.
 - Base para estudios de sesgo y de comportamiento en Pythia: al derivar de PolyPythias, los artefactos pueden integrarse en análisis más amplios sobre sesgos y sobre el efecto de las semillas de entrenamiento en la familia Pythia.
-- Referencia para revisión por pares: al estar publicados en HuggingFace con una licencia permisiva, los revisores de ICLR pueden descargar exactamente los artefactos usados en la submission y comprobar las afirmaciones del artículo sin depender de material suplementario opaco.
+- Referencia para revisión por pares: al estar publicados en Hugging Face con una licencia permisiva, los revisores de ICLR pueden descargar exactamente los artefactos usados en la submission y comprobar las afirmaciones del artículo sin depender de material suplementario opaco.
 - Docencia en interpretabilidad: como ejemplo práctico de cómo se publican y se estructuran artefactos experimentales de un paper, en cursos de mecánica de modelos o de reproducibilidad en machine learning.
 
 ## Benchmarks y rendimiento
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM para inferencia: no disponible, ya que no se confirma que el repositorio contenga pesos de un modelo desplegable. Si se ejecutase el modelo base PolyPythias de 160M, las necesidades serían muy reducidas (del orden de 0,3-1 GB en precisión completa según el formato y de menos de 0,3 GB en cuantizaciones de 4 bits, como estimación orientativa a partir del recuento de parámetros).
 - GPU recomendadas: no disponibles para estos artefactos. Para el modelo base de 160M, cualquier GPU con 4 GB o más de VRAM sería suficiente, incluidas GTX 1650, RTX 3060 o superiores.
 - GPU de consumo: un modelo de 160M en fp16 cabe sin dificultad en cualquier GPU de consumo actual e incluso puede ejecutarse en CPU con latencias aceptables.
-- Opciones de despliegue: no documentadas. Para un modelo Pythia de 160M serían viables `transformers` de HuggingFace, `llama.cpp` (previa conversión a GGUF), Ollama y, con menor eficiencia relativa por el tamaño, vLLM o TGI.
+- Opciones de despliegue: no documentadas. Para un modelo Pythia de 160M serían viables `transformers` de Hugging Face, `llama.cpp` (previa conversión a GGUF), Ollama y, con menor eficiencia relativa por el tamaño, vLLM o TGI.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| suchirsalhan/polypythia-160m-das-rotations | 160M (según identificador, no confirmado) | No disponible | Apache-2.0 | Repositorio en HuggingFace, 0 descargas | Artefactos de experimento (interpretabilidad) |
+| suchirsalhan/polypythia-160m-das-rotations | 160M (según identificador, no confirmado) | No disponible | Apache-2.0 | Repositorio en Hugging Face, 0 descargas | Artefactos de experimento (interpretabilidad) |
 | EleutherAI Pythia-160m | 160M | 2048 tokens | Apache-2.0 | Pesos públicos y ampliamente descargados | Modelo de lenguaje base |
 | EleutherAI PolyPythias (familia) | Varias escalas, incluida 160M | No confirmado en la información disponible | Apache-2.0 | Pesos públicos | Modelos base reentrenados para estudios de reproducibilidad |
 | GPT-2 small | 124M | 1024 tokens | MIT (según la publicación original) | Pesos públicos | Modelo de lenguaje base |
@@ -88,7 +88,7 @@ La comparación directa es limitada porque este repositorio no es un modelo de p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/suchirsalhan/polypythia-160m-das-rotations
+- Hugging Face: https://huggingface.co/suchirsalhan/polypythia-160m-das-rotations
 - Repositorio de GitHub referenciado en la model card: suchirsalhan/beetle-analyze (fichero `paper/iclr/RESULTS_2026-09-19_CONSOLIDATED.md`)
 - Modelos base: EleutherAI PolyPythias (Apache-2.0), familia derivada de Pythia
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este repositorio; los resultados devueltos no guardaban relación con el modelo y se han descartado.

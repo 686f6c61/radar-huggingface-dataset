@@ -58,7 +58,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros modelos entrenados en el mismo entorno con métricas comparables. En HuggingFace existen otros checkpoints con el mismo nombre de entorno (por ejemplo, `Ryukijano/rl_course_vizdoom_health_gathering_supreme` o `Srgreen/rl_course_vizdoom_health_gathering_supreme`), pero no se han encontrado sus resultados de recompensa. Por tanto, no es posible realizar una comparativa cuantitativa.
+No se dispone de información sobre otros modelos entrenados en el mismo entorno con métricas comparables. En Hugging Face existen otros checkpoints con el mismo nombre de entorno (por ejemplo, `Ryukijano/rl_course_vizdoom_health_gathering_supreme` o `Srgreen/rl_course_vizdoom_health_gathering_supreme`), pero no se han encontrado sus resultados de recompensa. Por tanto, no es posible realizar una comparativa cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información sobre otros modelos entrenados en el mismo entorno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chandragiri2031/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/Chandragiri2031/rl_course_vizdoom_health_gathering_supreme
 - Librería Sample-Factory: https://github.com/alex-petrenko/sample-factory
 - Documentación de Sample-Factory: https://www.samplefactory.dev/
-- Guía de uso de HuggingFace con Sample-Factory: https://www.samplefactory.dev/10-huggingface/huggingface/
+- Guía de uso de Hugging Face con Sample-Factory: https://www.samplefactory.dev/10-huggingface/huggingface/

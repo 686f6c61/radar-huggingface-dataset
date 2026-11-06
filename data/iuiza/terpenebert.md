@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TerpeneBERT es un modelo publicado en HuggingFace por el usuario Iuiza bajo licencia MIT. El repositorio tiene un tamano de aproximadamente 0,1 GB y los artefactos se distribuyen en formato joblib, lo que sugiere que se trata de un modelo serializado con la libreria scikit-learn o con un pipeline de Python que emplea joblib como formato de persistencia, y no de pesos en safetensors ni GGUF. El nombre sugiere un modelo de la familia BERT orientado al dominio de los terpenos, compuestos organicos volátiles presentes en plantas y resinas.
+TerpeneBERT es un modelo publicado en Hugging Face por el usuario Iuiza bajo licencia MIT. El repositorio tiene un tamano de aproximadamente 0,1 GB y los artefactos se distribuyen en formato joblib, lo que sugiere que se trata de un modelo serializado con la libreria scikit-learn o con un pipeline de Python que emplea joblib como formato de persistencia, y no de pesos en safetensors ni GGUF. El nombre sugiere un modelo de la familia BERT orientado al dominio de los terpenos, compuestos organicos volátiles presentes en plantas y resinas.
 
-La model card publicada es practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin datos de entrenamiento, sin especificaciones de arquitectura ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, y no se ha publicado pipeline asociado en HuggingFace. Por tanto, la mayor parte de los datos tecnicos de esta ficha no estan disponibles y se indica explicitamente en cada apartado.
+La model card publicada es practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin datos de entrenamiento, sin especificaciones de arquitectura ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, y no se ha publicado pipeline asociado en Hugging Face. Por tanto, la mayor parte de los datos tecnicos de esta ficha no estan disponibles y se indica explicitamente en cada apartado.
 
 La relevancia de este modelo es limitada en el estado actual: sin model card sustantiva, sin benchmarks y sin documentacion de uso, no es posible validar su calidad ni su idoneidad para produccion. Se documenta aqui como referencia y para dejar constancia de sus carencias documentales.
 
@@ -21,13 +21,13 @@ La relevancia de este modelo es limitada en el estado actual: sin model card sus
 | Licencia | MIT |
 | Formato de pesos | joblib |
 | Tamano del repositorio | ~0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card. El nombre "TerpeneBERT" sugiere una adaptacion o preentrenamiento de tipo BERT (transformer encoder-only) especializada en el dominio de los terpenos, pero no hay confirmacion en los metadatos. El formato joblib indica serializacion mediante la libreria joblib, habitual en pipelines de scikit-learn y en modelos de Python que no usan el formato estandar de HuggingFace (safetensors, bin, GGUF).
+No se ha publicado informacion sobre la arquitectura en la model card. El nombre "TerpeneBERT" sugiere una adaptacion o preentrenamiento de tipo BERT (transformer encoder-only) especializada en el dominio de los terpenos, pero no hay confirmacion en los metadatos. El formato joblib indica serializacion mediante la libreria joblib, habitual en pipelines de scikit-learn y en modelos de Python que no usan el formato estandar de Hugging Face (safetensors, bin, GGUF).
 
 No hay datos sobre volumen de entrenamiento, composicion del corpus, tecnicas de ajuste (RLHF, DPO, fine-tuning supervisado) ni innovaciones tecnicas. Todo ello se considera no disponible.
 
@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables porque no se ha confir
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TerpeneBERT | no disponible | no disponible | MIT | HuggingFace (repo publico) |
+| TerpeneBERT | no disponible | no disponible | MIT | Hugging Face (repo publico) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,12 +81,12 @@ No disponible. No se han identificado modelos comparables porque no se ha confir
 - Sin informacion sobre sesgos: se desconoce el corpus de entrenamiento y sus posibles sesgos.
 - Riesgo de alucinacion: no evaluable sin conocer la tarea y el tipo de salida.
 - Sin informacion sobre idiomas soportados ni cobertura linguistica.
-- Formato joblib: no es el formato estandar de HuggingFace y puede requerir dependencias especificas de Python; riesgo de incompatibilidad con herramientas de despliegue habituales.
+- Formato joblib: no es el formato estandar de Hugging Face y puede requerir dependencias especificas de Python; riesgo de incompatibilidad con herramientas de despliegue habituales.
 - Licencia MIT: permite uso comercial, pero al no haber documentacion tecnica el uso en produccion queda sin garantias de calidad ni soporte.
 - Sin descargas ni likes: no hay evidencia de uso por la comunidad ni de validacion externa.
 - Fecha de creacion en 2026: el repositorio es muy reciente y podria estar en estado inicial o incompleto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Iuiza/TerpeneBERT
+- Hugging Face: https://huggingface.co/Iuiza/TerpeneBERT
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

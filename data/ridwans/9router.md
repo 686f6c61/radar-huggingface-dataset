@@ -2,7 +2,7 @@
 
 ## Resumen
 
-9Router es una herramienta de enrutamiento de IA de codigo abierto, desarrollada por el usuario decolua y publicada en HuggingFace bajo el identificador ridwans/9router. No se trata de un modelo de lenguaje, sino de un proxy local inteligente que conecta herramientas de programacion asistida (Claude Code, Codex, Cursor, Cline, Copilot, Antigravity, Gemini CLI, entre otras) con mas de 40 proveedores de IA y mas de 100 modelos, gestionando el fallback automatico entre ellos y optimizando el consumo de tokens.
+9Router es una herramienta de enrutamiento de IA de codigo abierto, desarrollada por el usuario decolua y publicada en Hugging Face bajo el identificador ridwans/9router. No se trata de un modelo de lenguaje, sino de un proxy local inteligente que conecta herramientas de programacion asistida (Claude Code, Codex, Cursor, Cline, Copilot, Antigravity, Gemini CLI, entre otras) con mas de 40 proveedores de IA y mas de 100 modelos, gestionando el fallback automatico entre ellos y optimizando el consumo de tokens.
 
 La herramienta resuelve un problema practico: las interrupciones por limites de uso de las herramientas de codificacion con IA y el gasto excesivo de tokens. Su relevancia actual radica en que los desarrolladores que trabajan a diario con asistentes de codigo se enfrentan a limites de cuota y costes elevados, y 9Router ofrece una capa de abstraccion que permite aprovechar al maximo las suscripciones existentes, conmutar a modelos gratuitos o economicos cuando se agotan los limites, y reducir el consumo de tokens entre un 20% y un 40% mediante su sistema RTK (compresion de salidas de herramientas).
 
@@ -77,6 +77,6 @@ No se conocen herramientas comparables directamente en la informacion disponible
 - Repositorio alternativo en GitHub: https://github.com/decolua//9router
 - Sitio web oficial: https://9router.com
 - Documentacion en el README del repositorio: https://github.com/decolua/9router/blob/master/README.md
-- Ficha en HuggingFace: https://huggingface.co/ridwans/9router
+- Ficha en Hugging Face: https://huggingface.co/ridwans/9router
 - Documentacion de la API de modelos y precios en DeepWiki: https://deepwiki.com/decolua/9router/9.6-models-and-pricing-api
 - Ficha en AiSpaces: https://aispaces.net/ai-tool/9router

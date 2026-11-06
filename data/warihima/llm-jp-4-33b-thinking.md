@@ -23,7 +23,7 @@ El modelo destaca por ser completamente abierto: no solo se publican los pesos b
 
 El modelo es un transformer denso con 64 capas, hidden size de 5.120 y 40 cabezas de atencion. Los parametros de embedding suman 1.006.632.960 y los no-embedding 32.212.915.200. La arquitectura sigue el patron de los modelos Llama, con atencion causal completa, sin mecanismos MoE ni SSM. El tokenizer es un modelo Unigram con byte-fallback construido a partir de llm-jp-tokenizer v4.0, que soporta vocabulario bilingue japones-ingles con cobertura amplia de caracteres CJK.
 
-El entrenamiento se realizo en un pipeline multi-etapa: primero pre-training y mid-training sobre el corpus llm-jp-corpus-v4.1 y llm-jp-corpus-midtraining-v2, con un total de 11,7 billones de tokens. La mayor parte de estos corpus son publicos, aunque algunas porciones se excluyen por restricciones de licencia. Posteriormente se aplico post-training con supervised fine-tuning (SFT) seguido de direct preference optimization (DPO), sin reinforcement learning. Los datasets de post-training (SFT y DPO) estan publicados en HuggingFace, lo que permite reproducir completamente el proceso de alineacion.
+El entrenamiento se realizo en un pipeline multi-etapa: primero pre-training y mid-training sobre el corpus llm-jp-corpus-v4.1 y llm-jp-corpus-midtraining-v2, con un total de 11,7 billones de tokens. La mayor parte de estos corpus son publicos, aunque algunas porciones se excluyen por restricciones de licencia. Posteriormente se aplico post-training con supervised fine-tuning (SFT) seguido de direct preference optimization (DPO), sin reinforcement learning. Los datasets de post-training (SFT y DPO) estan publicados en Hugging Face, lo que permite reproducir completamente el proceso de alineacion.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible con va
 - VRAM estimada para inferencia: con 33.219 millones de parametros, se requieren aproximadamente 66 GB en FP16, 33 GB en INT8 y 17 GB en INT4. El repositorio solo publica pesos en safetensors sin cuantizaciones precalculadas.
 - GPU recomendadas: para FP16 se necesitan GPUs de clase profesional como A100 80GB, H100 80GB o dos RTX 4090 (24GB cada una) con tensor parallelism. Para cuantizacion INT4, una RTX 4090 (24GB) o RTX 6000 Ada serian suficientes.
 - En consumer GPU: si, pero solo con cuantizacion (GGUF/INT4) y con limitaciones de velocidad. Una RTX 3090/4090 (24GB) puede ejecutar el modelo cuantizado a 4 bits.
-- Opciones de despliegue: al ser un modelo transformers estandar, es compatible con vLLM, TensorRT-LLM, llama.cpp (tras conversion a GGUF), Ollama y Text Generation Inference (TGI). El tag `text-generation-inference` en HuggingFace confirma compatibilidad con TGI.
+- Opciones de despliegue: al ser un modelo transformers estandar, es compatible con vLLM, TensorRT-LLM, llama.cpp (tras conversion a GGUF), Ollama y Text Generation Inference (TGI). El tag `text-generation-inference` en Hugging Face confirma compatibilidad con TGI.
 - Latencia y throughput: no disponible en la informacion proporcionada. Como referencia orientativa, un modelo denso de 33B en FP16 en una A100 80GB suele alcanzar entre 20 y 40 tokens/segundo en generacion autoregresiva, pero estos valores no estan confirmados para este modelo.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ Los tres modelos comparten tokenizer, corpus de entrenamiento y licencia. La var
 
 ## Enlaces
 
-- Repositorio HuggingFace (WariHima): https://huggingface.co/WariHima/llm-jp-4-33b-thinking
-- Repositorio HuggingFace oficial (llm-jp): https://huggingface.co/llm-jp/llm-jp-4-33b-thinking
+- Repositorio Hugging Face (WariHima): https://huggingface.co/WariHima/llm-jp-4-33b-thinking
+- Repositorio Hugging Face oficial (llm-jp): https://huggingface.co/llm-jp/llm-jp-4-33b-thinking
 - Coleccion de modelos LLM-jp-4: https://huggingface.co/collections/llm-jp/llm-jp-4-models
 - Cookbook de uso (GitHub): https://github.com/llm-jp/llm-jp-4-cookbook
 - Framework de evaluacion llm-jp-judge: https://github.com/llm-jp/llm-jp-judge

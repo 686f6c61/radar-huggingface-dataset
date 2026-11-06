@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-clmsft` es un adaptador LoRA publicado con PEFT sobre el modelo base `EleutherAI/gpt-neo-1.3B`, etiquetado como artefacto de evaluación (`benchmark-slm`) sobre el conjunto de datos `microsoft/ms_marco`. No se trata de un modelo de propósito general entrenado para producción, sino de un adaptador experimental vinculado a una campaña de benchmarking de modelos de lenguaje pequeños sobre una tarea concreta. El repositorio no incluye documentación, ficha técnica ni resultados, y el acceso está restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de la descarga.
+`praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-clmsft` es un adaptador LoRA publicado con PEFT sobre el modelo base `EleutherAI/gpt-neo-1.3B`, etiquetado como artefacto de evaluación (`benchmark-slm`) sobre el conjunto de datos `microsoft/ms_marco`. No se trata de un modelo de propósito general entrenado para producción, sino de un adaptador experimental vinculado a una campaña de benchmarking de modelos de lenguaje pequeños sobre una tarea concreta. El repositorio no incluye documentación, ficha técnica ni resultados, y el acceso está restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 El nombre del repositorio sugiere una ejecución concreta dentro de una matriz de experimentos: modelo pequeño (SLM), corpus MS MARCO, una estrategia de adaptación identificada como `clmsft` y una variante `or2`. Esa lectura es inferencia a partir de la nomenclatura, no información confirmada: ni la organización responsable ni el propósito exacto del adaptador están descritos en los metadatos disponibles. La relevancia actual es, por tanto, acotada: sirve como pieza reproducible en estudios comparativos de ajuste eficiente (LoRA) sobre un transformer decoder-only de 1.300 millones de parámetros, no como modelo listo para despliegue.
 
@@ -23,8 +23,8 @@ El dato más importante para quien vaya a evaluarlo es que el tamaño del reposi
 | Librería de carga | `peft` (requiere Transformers y el modelo base) |
 | Dataset de ajuste | `microsoft/ms_marco` |
 | Etiquetas de campaña | `benchmark-slm`, `or2`, `strategy-clmsft`, `dataset-msmarco` |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha indicada de creación | 23 de octubre de 2026 (según metadatos del repositorio) |
 
@@ -100,7 +100,7 @@ No se dispone de una comparación de rendimiento frente a estos modelos porque e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-clmsft
+- Repositorio en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-clmsft
 - Modelo base: https://huggingface.co/EleutherAI/gpt-neo-1.3B
 - Dataset referenciado: https://huggingface.co/datasets/microsoft/ms_marco
 - Librería PEFT: https://github.com/huggingface/peft

@@ -71,16 +71,16 @@ No se han publicado resultados de benchmarks de razonamiento, código o matemát
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RakutenAI-3.0.1 | 671B | 37B | 128K | Apache 2.0 (gated, no UE/EEE) | ja, en | HuggingFace |
-| RakutenAI-3.0 | 671B | 37B | 128K | Apache 2.0 (según modelo base) | ja, en | HuggingFace |
-| DeepSeek-V3-0324 | 671B (aprox.) | 37B (aprox.) | 128K (aprox.) | MIT | multilingüe | HuggingFace |
+| RakutenAI-3.0.1 | 671B | 37B | 128K | Apache 2.0 (gated, no UE/EEE) | ja, en | Hugging Face |
+| RakutenAI-3.0 | 671B | 37B | 128K | Apache 2.0 (según modelo base) | ja, en | Hugging Face |
+| DeepSeek-V3-0324 | 671B (aprox.) | 37B (aprox.) | 128K (aprox.) | MIT | multilingüe | Hugging Face |
 
 La comparación se limita a los modelos citados en la información disponible; no se dispone de datos de benchmarks de capacidades generales para establecer comparaciones cuantitativas más allá de la tasa de respuestas inofensivas. RakutenAI-3.0.1 se diferencia de DeepSeek-V3-0324 por su especialización en japonés y su alineamiento de seguridad reforzado, a costa de una licencia con restricciones geográficas y acceso gated.
 
 ## Limitaciones y advertencias
 
 - Restricción geográfica explícita: el modelo NO está destinado ni disponible para usuarios o entidades residentes en la Unión Europea o el Espacio Económico Europeo; el proveedor no lo ha introducido ni pretende introducirlo en el mercado de la UE.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace para su descarga.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face para su descarga.
 - Riesgo de alucinación y sesgos: como todo modelo de gran escala, puede generar texto sesgado, inexacto o inseguro, así como contenido que infrinja derechos de terceros; la model card recomienda implantar salvaguardas en producción.
 - Idiomas limitados a japonés e inglés; el rendimiento en otras lenguas no está documentado y probablemente sea inferior.
 - Aunque la licencia es Apache 2.0, la restricción de uso en la UE/EEE debe verificarse legalmente antes de cualquier despliegue comercial en esas regiones.
@@ -90,7 +90,7 @@ La comparación se limita a los modelos citados en la información disponible; n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rakuten/RakutenAI-3.0.1
+- Modelo en Hugging Face: https://huggingface.co/Rakuten/RakutenAI-3.0.1
 - Modelo base RakutenAI-3.0: https://huggingface.co/Rakuten/RakutenAI-3.0
 - Blog (inglés): https://ai.rakuten.com/rakutens-approach-to-safe-and-helpful-ai/
 - Blog (japonés): https://ai.rakuten.com/rakutens-approach-to-safe-and-helpful-ai-ja/

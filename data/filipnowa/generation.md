@@ -77,5 +77,5 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/filipnowa/generation
+- Hugging Face: https://huggingface.co/filipnowa/generation
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

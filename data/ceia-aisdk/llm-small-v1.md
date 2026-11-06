@@ -72,7 +72,7 @@ No se dispone de información comparativa específica para esta variante. Como r
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/ceia-aisdk/llm-small-v1)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/ceia-aisdk/llm-small-v1)
 - [Modelo base Qwen/Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
 - [Cuantización original de bartowski](https://huggingface.co/bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF)
 - [Repositorio del SDK de CEIA (referencia)](https://github.com/YuLab-SMU/aisdk/)

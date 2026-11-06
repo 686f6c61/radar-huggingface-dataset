@@ -22,7 +22,7 @@ Su relevancia es acotada pero concreta: se enmarca en la línea de investigació
 | Formato de pesos | safetensors (`unet/diffusion_pytorch_model.safetensors`) con configuración diffusers |
 | Resolucion nativa | 256 x 144 (16:9) |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion en HuggingFace | 24 de septiembre de 2026 (según metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 24 de septiembre de 2026 (según metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Dominio | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Roblox Oasis V4 AI Model (SyntheticMDProductions) | 20.039.619 | Vídeo de gameplay de Roblox, 256 x 144 | No disponible | 85,4 % de precisión contrafactual en 48 muestras | Apache 2.0 | HuggingFace, 0 descargas |
+| Roblox Oasis V4 AI Model (SyntheticMDProductions) | 20.039.619 | Vídeo de gameplay de Roblox, 256 x 144 | No disponible | 85,4 % de precisión contrafactual en 48 muestras | Apache 2.0 | Hugging Face, 0 descargas |
 | Oasis (Decart AI) | No disponible | Vídeo de gameplay de Minecraft | No disponible | No disponible | No disponible | No disponible |
 | GameNGen (Google) | No disponible | Vídeo de gameplay de DOOM | No disponible | No disponible | No disponible | No disponible |
 
@@ -98,6 +98,6 @@ Los dos proyectos citados como referencia pertenecen al mismo espacio de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SyntheticMDProductions/Roblox_Oasis_V4_AI_Model
+- Modelo en Hugging Face: https://huggingface.co/SyntheticMDProductions/Roblox_Oasis_V4_AI_Model
 - Repositorio de la aplicación compañera (Oasis-Game-Trainer): https://github.com/dreamsartificial648-sketch/Oasis-Game-Trainer
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

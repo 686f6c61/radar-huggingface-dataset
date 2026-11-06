@@ -6,7 +6,7 @@ Eklav-14B-Reranker es un modelo de reranking pointwise desarrollado por AdarshSi
 
 El modelo está diseñado específicamente para tareas de reranking de pasajes en sistemas de recuperación aumentada por generación (RAG) y búsqueda. Genera su propio razonamiento y puntúa la relevancia a partir de los logits del token final ("true" o "false"), siguiendo el estilo de Rank1. Con 14.768 millones de parámetros y un checkpoint fusionado en bf16, es un modelo de tamaño medio-grande que requiere recursos de GPU considerables para inferencia.
 
-Su relevancia actual radica en que aborda un problema práctico en pipelines de RAG: mejorar la precisión de la recuperación sin incurrir en el coste computacional de los métodos de reranking basados en LLM de gran escala. Al ser un modelo abierto con pesos disponibles en HuggingFace, permite su integración en entornos de producción con vLLM u otros servidores de inferencia.
+Su relevancia actual radica en que aborda un problema práctico en pipelines de RAG: mejorar la precisión de la recuperación sin incurrir en el coste computacional de los métodos de reranking basados en LLM de gran escala. Al ser un modelo abierto con pesos disponibles en Hugging Face, permite su integración en entornos de producción con vLLM u otros servidores de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ Eklav-14B-Reranker comparte el estilo de Rank1 (puntuación por logits tras razo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdarshSingh7647/Eklav-14B-Reranker
+- Modelo en Hugging Face: https://huggingface.co/AdarshSingh7647/Eklav-14B-Reranker
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Rank1-7B (referencia de estilo): https://huggingface.co/jhu-clsp/rank1-7b
 - Otro trabajo del autor (TabRankMultiTableCoTGen): https://huggingface.co/AdarshSingh7647/TabRankMultiTableCoTGen

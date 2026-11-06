@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JohnieBraaf/Qwen3.8-27b-Swift es una publicación derivada alojada en HuggingFace por el usuario JohnieBraaf, creada y actualizada el 13 de septiembre de 2026, sin descargas ni valoraciones registradas en el momento de redactar esta ficha. Según su propia model card, se trata de un modelo derivado de ukisai/Swift-Qwen3.8-27B-GGUF, sobre el que se ha aplicado un proceso de conversión a FP8 documentado en forma de derivación de Nix. No se trata, por tanto, de un entrenamiento nuevo, sino de una recuantización del modelo de origen.
+JohnieBraaf/Qwen3.8-27b-Swift es una publicación derivada alojada en Hugging Face por el usuario JohnieBraaf, creada y actualizada el 13 de septiembre de 2026, sin descargas ni valoraciones registradas en el momento de redactar esta ficha. Según su propia model card, se trata de un modelo derivado de ukisai/Swift-Qwen3.8-27B-GGUF, sobre el que se ha aplicado un proceso de conversión a FP8 documentado en forma de derivación de Nix. No se trata, por tanto, de un entrenamiento nuevo, sino de una recuantización del modelo de origen.
 
 El nombre del repositorio indica un tamaño de aproximadamente 27 000 millones de parámetros, aunque la model card no confirma ni el recuento exacto ni la arquitectura. El contenido publicado se limita a la receta de conversión: un script que recorre los ficheros safetensors del modelo origen, cuantiza a float8_e4m3fn los tensores de peso bidimensionales que no coinciden con una lista de patrones excluidos y escribe las escalas inversas correspondientes. No se incluyen datos de entrenamiento, benchmarks, licencia ni idiomas.
 
@@ -75,8 +75,8 @@ No se dispone de datos verificables para comparar este modelo con alternativas d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JohnieBraaf/Qwen3.8-27b-Swift | ~27B (no confirmado) | no disponible | no disponible | FP8 safetensors en HuggingFace |
-| ukisai/Swift-Qwen3.8-27B-GGUF (origen) | no disponible | no disponible | no disponible | GGUF en HuggingFace |
+| JohnieBraaf/Qwen3.8-27b-Swift | ~27B (no confirmado) | no disponible | no disponible | FP8 safetensors en Hugging Face |
+| ukisai/Swift-Qwen3.8-27B-GGUF (origen) | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No se dispone de datos verificables para comparar este modelo con alternativas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnieBraaf/Qwen3.8-27b-Swift
+- Modelo en Hugging Face: https://huggingface.co/JohnieBraaf/Qwen3.8-27b-Swift
 - Modelo de origen (GGUF): https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
 - La búsqueda web realizada no devolvió ningún enlace relevante: los únicos resultados obtenidos fueron páginas de soporte de Google sobre la descarga e instalación de Chrome, sin relación con el modelo. No se han localizado papers, blogs, repositorios ni demos asociados.

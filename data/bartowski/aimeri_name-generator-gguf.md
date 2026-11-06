@@ -19,7 +19,7 @@ La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicio
 | Tipos de cuantizacion | bf16, Q8_0, Q6_K_L, Q6_K, Q6_K_S, Q5_K_M, Q5_K_S, Q4_K_L, Q4_1, Q4_K_M, IQ4_NL, Q4_0, Q4_K_S, IQ4_XS, IQ3_M, Q3_K_L, Q3_K_M, IQ3_XS, Q3_K_S, IQ3_XXS (lista parcial según la model card) |
 | Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones); el checkpoint original se distribuye en safetensors según el campo de parámetros de HuggingFace |
+| Formato de pesos | GGUF (cuantizaciones); el checkpoint original se distribuye en safetensors según el campo de parámetros de Hugging Face |
 
 ## Arquitectura y entrenamiento
 

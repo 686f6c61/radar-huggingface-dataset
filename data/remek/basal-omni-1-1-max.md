@@ -12,7 +12,7 @@ El modelo está orientado a toma de decisiones estructurada, clasificación, ext
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gemma4_unified (transformer, según tag de HuggingFace) |
+| Arquitectura | gemma4_unified (transformer, según tag de Hugging Face) |
 | Parametros totales | 11.959.730.224 (~12B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible (se reportan estados de 16k+ caracteres, ~8k tokens) |
@@ -37,7 +37,7 @@ El entrenamiento de 1.1-max consiste en una ronda corta adicional sobre los form
 - Capacidad de automatización con umbral de error: en `classify` con objetivo de error del 5%, el 38,5% de las respuestas se automatizaron con un 2,2% de error observado.
 - Soporte multilingüe limitado a polaco e inglés.
 - No soporta generación de texto libre, tool calling ni function calling (no disponible en la información proporcionada).
-- No se reportan capacidades de visión, audio ni modo de razonamiento extendido (thinking mode); la etiqueta `image-text-to-text` aparece en HuggingFace pero no se detalla en la model card.
+- No se reportan capacidades de visión, audio ni modo de razonamiento extendido (thinking mode); la etiqueta `image-text-to-text` aparece en Hugging Face pero no se detalla en la model card.
 
 ## Casos de uso
 
@@ -101,8 +101,8 @@ Otros datos reportados: ECE de 0,051 frente a 0,054 en 1.0-max; en Werdykt servi
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| basal-omni-1.1-max | ~12B | no disponible | apache-2.0 | decisiones tipadas calibradas | HuggingFace |
-| basal-omni-1.0-max | ~12B | no disponible | apache-2.0 | decisiones tipadas calibradas | HuggingFace |
+| basal-omni-1.1-max | ~12B | no disponible | apache-2.0 | decisiones tipadas calibradas | Hugging Face |
+| basal-omni-1.0-max | ~12B | no disponible | apache-2.0 | decisiones tipadas calibradas | Hugging Face |
 | Modelos generativos de ~12B para clasificación/extracción | variable | variable | variable | generación de texto | no disponible comparativa directa |
 
 La comparación natural es con su modelo base basal-omni-1.0-max: 1.1-max gana en tareas (85,1 frente a 83,5 de media) y en calibración (ECE 0,051 frente a 0,054), pero pierde en decisiones generales (Werdykt 0,821 frente a 0,823; panel externo EN 0,766 frente a 0,789; ContractNLI 0,583 frente a 0,720). No se dispone de datos sobre otros modelos comparables de la misma categoría (decisiones tipadas calibradas) en la información proporcionada.
@@ -122,7 +122,7 @@ La comparación natural es con su modelo base basal-omni-1.0-max: 1.1-max gana e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Remek/basal-omni-1.1-max
+- Hugging Face: https://huggingface.co/Remek/basal-omni-1.1-max
 - Modelo base: https://huggingface.co/Remek/basal-omni-1.0-max
 - Motor de inferencia (GitHub): https://github.com/rkinas/basal
 - Web del proyecto: https://basal.si5.pl/

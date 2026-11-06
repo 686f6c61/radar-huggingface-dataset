@@ -2,11 +2,11 @@
 
 ## Resumen
 
-kic_M_Qwen3-8B_java_t1.0_g6_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-8B-Base, publicado por el usuario stefanocarrera en HuggingFace. El modelo parte de la versión de Unsloth del Qwen3-8B-Base cuantizada en 4 bits (bnb-4bit), sobre la que se ha aplicado un entrenamiento adicional utilizando la librería Unsloth, que acelera el proceso de fine-tuning aproximadamente 2 veces respecto a los pipelines convencionais. El nombre del repositorio sugiere un entrenamiento orientado a código Java (por el sufijo "java" y los parámetros "t1.0_g6_run0", probablemente temperatura, número de pasos o epochs y número de ejecución), aunque la model card no documenta explícitamente el dataset ni el objetivo del entrenamiento.
+kic_M_Qwen3-8B_java_t1.0_g6_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-8B-Base, publicado por el usuario stefanocarrera en Hugging Face. El modelo parte de la versión de Unsloth del Qwen3-8B-Base cuantizada en 4 bits (bnb-4bit), sobre la que se ha aplicado un entrenamiento adicional utilizando la librería Unsloth, que acelera el proceso de fine-tuning aproximadamente 2 veces respecto a los pipelines convencionais. El nombre del repositorio sugiere un entrenamiento orientado a código Java (por el sufijo "java" y los parámetros "t1.0_g6_run0", probablemente temperatura, número de pasos o epochs y número de ejecución), aunque la model card no documenta explícitamente el dataset ni el objetivo del entrenamiento.
 
 Se trata de un modelo de 8.000 millones de parámetros con arquitectura transformer densa, derivado de la familia Qwen3 de Alibaba. La relevancia de esta ficha reside en que el modelo se distribuye con licencia Apache 2.0 y pesos en safetensors, lo que permite su uso comercial e integración directa en pipelines de transformers y text-generation-inference. Sin embargo, la información pública disponible es muy limitada: no se especifican el dataset de entrenamiento, los hiperparámetros, los resultados de evaluación ni las capacidades concretas adquiridas durante el ajuste.
 
-El repositorio tiene un tamaño de 0,2 GB, lo que es coherente con pesos cuantizados en 4 bits para un modelo de 8B. No se han publicado resultados de benchmarks ni una descripción detallada del proceso de entrenamiento, por lo que esta ficha se limita a documentar lo que consta en la model card y en los metadatos de HuggingFace.
+El repositorio tiene un tamaño de 0,2 GB, lo que es coherente con pesos cuantizados en 4 bits para un modelo de 8B. No se han publicado resultados de benchmarks ni una descripción detallada del proceso de entrenamiento, por lo que esta ficha se limita a documentar lo que consta en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kic_M_Qwen3-8B_java_t1.0_g6_run0 | 8B | no disponible | Apache 2.0 | HuggingFace (repo público) |
-| Qwen3-8B-Base (original) | 8B | 32.768 tokens (nativo) | Apache 2.0 | HuggingFace, ModelScope |
-| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, Meta |
-| Mistral 7B v0.3 | 7B | 32.768 tokens | Apache 2.0 | HuggingFace, Mistral |
+| kic_M_Qwen3-8B_java_t1.0_g6_run0 | 8B | no disponible | Apache 2.0 | Hugging Face (repo público) |
+| Qwen3-8B-Base (original) | 8B | 32.768 tokens (nativo) | Apache 2.0 | Hugging Face, ModelScope |
+| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, Meta |
+| Mistral 7B v0.3 | 7B | 32.768 tokens | Apache 2.0 | Hugging Face, Mistral |
 
 La comparativa se limita a parámetros, contexto y licencia, ya que no hay benchmarks publicados para este ajuste. El modelo se distingue por ser un fine-tuning comunitario sobre Qwen3-8B con Unsloth, mientras que las alternativas son modelos base oficiales con documentación y evaluaciones publicadas.
 
@@ -84,7 +84,7 @@ La comparativa se limita a parámetros, contexto y licencia, ya que no hay bench
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g6_run0
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g6_run0
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Familia Qwen3 (Alibaba): https://huggingface.co/Qwen

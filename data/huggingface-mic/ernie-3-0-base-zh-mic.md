@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/ernie-3.0-base-zh-mic` | 2,8 M (fixture) | no disponible | Artefacto de prueba | no disponible | HuggingFace |
-| `nghuyong/ernie-3.0-base-zh` | base (ERNIE 3.0) | no disponible | Modelo real para NLP en chino | no disponible | HuggingFace |
-| `bert-base-chinese` | ~110 M | 512 tokens | Modelo real BERT en chino | Apache 2.0 (segun el repositorio original) | HuggingFace |
+| `huggingface-mic/ernie-3.0-base-zh-mic` | 2,8 M (fixture) | no disponible | Artefacto de prueba | no disponible | Hugging Face |
+| `nghuyong/ernie-3.0-base-zh` | base (ERNIE 3.0) | no disponible | Modelo real para NLP en chino | no disponible | Hugging Face |
+| `bert-base-chinese` | ~110 M | 512 tokens | Modelo real BERT en chino | Apache 2.0 (segun el repositorio original) | Hugging Face |
 
 La comparativa es orientativa: el fixture no es funcionalmente equivalente a ninguno de los modelos reales; solo comparte arquitectura y nombres de tensores con `nghuyong/ernie-3.0-base-zh`.
 
@@ -79,7 +79,7 @@ La comparativa es orientativa: el fixture no es funcionalmente equivalente a nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/ernie-3.0-base-zh-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/ernie-3.0-base-zh-mic
 - Modelo base: https://huggingface.co/nghuyong/ernie-3.0-base-zh
 - Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
 - Script de reduccion `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

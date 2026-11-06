@@ -4,7 +4,7 @@
 
 `mradermacher/Gemma4_E2B_Abliterated_Baked_HF_Ready-GGUF` es una coleccion de cuantizaciones GGUF estaticas del modelo `amkkk/Gemma4_E2B_Abliterated_Baked_HF_Ready`, publicado por mradermacher. Se trata de una variante "abliterated" de la familia Gemma 4, es decir, un modelo al que se le ha aplicado una edicion de pesos orientada a eliminar la direccion de rechazo (refusal direction) mediante tecnicas de edicion de modulos y direcciones de entrada, de modo que el modelo deja de negarse a responder a determinadas peticiones que el modelo original rechazaria.
 
-El modelo base declara 4.628.569.635 parametros totales (aproximadamente 4,6 mil millones) y se distribuye con licencia Gemma. La model card del autor no proporciona detalles sobre arquitectura interna, longitud de contexto, datos de entrenamiento ni resultados de benchmarks; la informacion disponible se limita a la ficha de HuggingFace, los tags y la lista de cuantizaciones generadas.
+El modelo base declara 4.628.569.635 parametros totales (aproximadamente 4,6 mil millones) y se distribuye con licencia Gemma. La model card del autor no proporciona detalles sobre arquitectura interna, longitud de contexto, datos de entrenamiento ni resultados de benchmarks; la informacion disponible se limita a la ficha de Hugging Face, los tags y la lista de cuantizaciones generadas.
 
 La relevancia de esta publicacion es fundamentalmente practica: ofrece el modelo en formato GGUF con un abanico amplio de cuantizaciones (desde Q2_K hasta f16, ademas de variantes IQ y un modulo multimodal mmproj), lo que permite ejecutarlo en hardware de consumo mediante llama.cpp u Ollama. Es importante subrayar que se trata de un modelo derivado no oficial, con implicaciones eticas y de licencia que se detallan mas abajo.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Gemma4_E2B_Abliterated_Baked_HF_Ready-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Gemma4_E2B_Abliterated_Baked_HF_Ready-GGUF
 - Modelo base: https://huggingface.co/amkkk/Gemma4_E2B_Abliterated_Baked_HF_Ready
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Gemma4_E2B_Abliterated_Baked_HF_Ready-i1-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#Gemma4_E2B_Abliterated_Baked_HF_Ready-GGUF

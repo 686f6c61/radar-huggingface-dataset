@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`electroglyph/LFM2.5-24B-A2B-uncensored` es una versión «decensored» (ablacionada) del modelo `LiquidAI/LFM2.5-24B-A2B`, un modelo de razonamiento y agentes desarrollado por Liquid AI. El autor del derivado es el usuario de HuggingFace `electroglyph`, que ha aplicado la herramienta Heretic v2.0.0.dev0 mediante una técnica de ablación de rango arbitrario (Arbitrary-Rank Ablation, ARA) sobre las capas 7 a 40 del modelo original. El objetivo es eliminar el comportamiento de rechazo (refusals) sin reentrenar: según la model card, los rechazos bajan de 99/100 en el modelo original a 4/100 en esta versión, con una divergencia KL de 0,0899 respecto al checkpoint base.
+`electroglyph/LFM2.5-24B-A2B-uncensored` es una versión «decensored» (ablacionada) del modelo `LiquidAI/LFM2.5-24B-A2B`, un modelo de razonamiento y agentes desarrollado por Liquid AI. El autor del derivado es el usuario de Hugging Face `electroglyph`, que ha aplicado la herramienta Heretic v2.0.0.dev0 mediante una técnica de ablación de rango arbitrario (Arbitrary-Rank Ablation, ARA) sobre las capas 7 a 40 del modelo original. El objetivo es eliminar el comportamiento de rechazo (refusals) sin reentrenar: según la model card, los rechazos bajan de 99/100 en el modelo original a 4/100 en esta versión, con una divergencia KL de 0,0899 respecto al checkpoint base.
 
 El modelo subyacente es una mezcla de expertos (MoE) de 24.000 millones de parámetros totales y unos 2,45B activos por token, pensada para inferencia rápida en dispositivo. Combina 30 bloques de convolución corta de doble compuerta con 10 bloques de atención GQA (Grouped-Query Attention) en 40 capas, con 64 expertos por bloque y enrutamiento top-4. El contexto declarado es de 131.072 tokens y el vocabulario de 128.000 entradas, con soporte para 16 idiomas.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado documenta un derivado de bajo 
 | Longitud de contexto | 131.072 tokens |
 | Tipos de cuantizacion | Pesos nativos en BF16; el modelo base ofrece variantes FP8, GGUF, ONNX y MLX-4bit. No se publican cuantizaciones GGUF propias de esta versión ablacionada |
 | Idiomas soportados | 16: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco |
-| Licencia | lfm1.0 (identificador `other` en HuggingFace) |
+| Licencia | lfm1.0 (identificador `other` en Hugging Face) |
 | Formato de pesos | safetensors (librería `transformers`, arquitectura `lfm2_moe`) |
 | Expertos por bloque MoE | 64, enrutamiento top-4 |
 | Vocabulario | 128.000 tokens |
@@ -104,7 +104,7 @@ La comparación directa más informativa es contra el modelo original: misma arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored
+- Modelo en Hugging Face: https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Modelo base preentrenado: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-Base
 - Variante FP8: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8
@@ -117,7 +117,7 @@ La comparación directa más informativa es contra el modelo original: misma arq
 - Playground de Liquid AI: https://playground.liquid.ai/
 - Discord de Liquid AI: https://discord.com/invite/liquid-ai
 - Heretic (herramienta de ablación): https://heretic-project.org
-- Reproducción del proceso: directorio `reproduce/README.md` dentro del repositorio de HuggingFace
+- Reproducción del proceso: directorio `reproduce/README.md` dentro del repositorio de Hugging Face
 - Paper de referencia citado en los tags: arXiv:2511.23404 (https://arxiv.org/abs/2511.23404)
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

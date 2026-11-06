@@ -2,7 +2,7 @@
 
 ## Resumen
 
-akana-pii-tagger es un conjunto de dos clasificadores de tokens especializados en la deteccion de datos personales (PII) en texto en turco. Lo desarrolla altaidevorg como componente aprendido de akana, un toolkit de PLN para turco escrito en Rust que descarga estos modelos desde HuggingFace en el primer uso y ejecuta sus exportaciones ONNX en CPU. El modelo resuelve un problema concreto: identificar y enmascarar informacion personal en textos turcos para cumplir con normativas de proteccion de datos como la KVKK turca o el RGPD.
+akana-pii-tagger es un conjunto de dos clasificadores de tokens especializados en la deteccion de datos personales (PII) en texto en turco. Lo desarrolla altaidevorg como componente aprendido de akana, un toolkit de PLN para turco escrito en Rust que descarga estos modelos desde Hugging Face en el primer uso y ejecuta sus exportaciones ONNX en CPU. El modelo resuelve un problema concreto: identificar y enmascarar informacion personal en textos turcos para cumplir con normativas de proteccion de datos como la KVKK turca o el RGPD.
 
 El repositorio contiene dos variantes: una ELECTRA-small fine-tuneada desde `dbmdz/electra-small-turkish-cased-discriminator` (56,6 MB en ONNX, modo rapido) y una BERTurk fine-tuneada desde `dbmdz/bert-base-turkish-cased` (441,9 MB en ONNX, modo preciso). Ambas comparten un esquema de nueve etiquetas PII con prefijos B- e I- (19 tags en total) y se combinan mediante ventanas deslizantes, decodificacion Viterbi restringida por BIO y una capa de politica que exime numeros de atencion al cliente y buzones genericos.
 
@@ -76,9 +76,9 @@ En ambos modos estrictos, un texto de held-out con datos personales dejo en clar
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| akana-pii-tagger | ~14M + ~110M (dos modelos) | ventana 254 tokens | PII en turco | CC BY-SA 4.0 | HuggingFace, via akana |
-| dbmdz/bert-base-turkish-cased | ~110M | 512 tokens | encoder general turco | no disponible | HuggingFace |
-| dbmdz/electra-small-turkish-cased-discriminator | ~14M | 512 tokens | encoder general turco | no disponible | HuggingFace |
+| akana-pii-tagger | ~14M + ~110M (dos modelos) | ventana 254 tokens | PII en turco | CC BY-SA 4.0 | Hugging Face, via akana |
+| dbmdz/bert-base-turkish-cased | ~110M | 512 tokens | encoder general turco | no disponible | Hugging Face |
+| dbmdz/electra-small-turkish-cased-discriminator | ~14M | 512 tokens | encoder general turco | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos comparables de PII en turco en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de modelos comparables de PII en turco en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/altaidevorg/akana-pii-tagger
+- Hugging Face: https://huggingface.co/altaidevorg/akana-pii-tagger
 - Repositorio akana: https://github.com/altaidevorg/akana
 - Modelo base ELECTRA-small: https://huggingface.co/dbmdz/electra-small-turkish-cased-discriminator
 - Modelo base BERTurk: https://huggingface.co/dbmdz/bert-base-turkish-cased

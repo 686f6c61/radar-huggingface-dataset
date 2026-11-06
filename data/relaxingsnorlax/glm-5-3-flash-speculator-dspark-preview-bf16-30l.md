@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-speculator.dspark-preview-BF16-30L es un modelo borrador (*drafter*) para decodificacion especulativa, publicado por el usuario RelaxingSnorlax en HuggingFace. No es un modelo conversacional ni un checkpoint entrenado: la propia model card lo describe como un "dummy 30-layer BF16 DSpark drafter for size/latency experiments". Se genera a partir del drafter base de 5 capas RedHatAI/GLM-5.3-Flash-speculator.dspark-preview, ciclando sus 5 capas para obtener 30 capas nuevas (la capa `i` es una copia de la capa `i mod 5`) y ajustando `transformer_layer_config.num_hidden_layers = 30` junto con `layer_types`.
+GLM-5.3-Flash-speculator.dspark-preview-BF16-30L es un modelo borrador (*drafter*) para decodificacion especulativa, publicado por el usuario RelaxingSnorlax en Hugging Face. No es un modelo conversacional ni un checkpoint entrenado: la propia model card lo describe como un "dummy 30-layer BF16 DSpark drafter for size/latency experiments". Se genera a partir del drafter base de 5 capas RedHatAI/GLM-5.3-Flash-speculator.dspark-preview, ciclando sus 5 capas para obtener 30 capas nuevas (la capa `i` es una copia de la capa `i mod 5`) y ajustando `transformer_layer_config.num_hidden_layers = 30` junto con `layer_types`.
 
 Su proposito es servir como artefacto de experimentacion para medir el impacto del tamano del drafter en la latencia y en el uso de memoria de un pipeline de decodificacion especulativa, emparejado con el verificador zai-org/GLM-5.3-Flash. El modelo declara 7.992.115.201 parametros reales en safetensors y un repositorio de 16,0 GB en BF16. Es relevante unicamente como herramienta de ingenieria para quienes trabajan en optimizacion de inferencia, no como modelo de produccion.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-BF16-30L | 7.992.115.201 | no disponible | Drafter dummy de 30 capas para experimentos de tamano/latencia | MIT | HuggingFace, 103 descargas |
-| RedHatAI/GLM-5.3-Flash-speculator.dspark-preview | no disponible (drafter base de 5 capas) | no disponible | Drafter DSpark de referencia | no disponible en la informacion | HuggingFace |
-| zai-org/GLM-5.3-Flash | no disponible | no disponible | Verificador / modelo objetivo del pipeline | no disponible en la informacion | HuggingFace |
+| RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-BF16-30L | 7.992.115.201 | no disponible | Drafter dummy de 30 capas para experimentos de tamano/latencia | MIT | Hugging Face, 103 descargas |
+| RedHatAI/GLM-5.3-Flash-speculator.dspark-preview | no disponible (drafter base de 5 capas) | no disponible | Drafter DSpark de referencia | no disponible en la informacion | Hugging Face |
+| zai-org/GLM-5.3-Flash | no disponible | no disponible | Verificador / modelo objetivo del pipeline | no disponible en la informacion | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-BF16-30L
+- Hugging Face: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-BF16-30L
 - Modelo base (drafter de 5 capas): https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview
 - Verificador: https://huggingface.co/zai-org/GLM-5.3-Flash

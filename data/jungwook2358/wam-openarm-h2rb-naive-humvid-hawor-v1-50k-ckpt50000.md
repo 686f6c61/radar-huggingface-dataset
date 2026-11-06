@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wam-openarm-h2rb-naive-humvid-hawor-v1-50k-ckpt50000` es un checkpoint de investigación en robótica publicado por el usuario jungwook2358 en HuggingFace. Se trata de un modelo de política visuomotora (vision-language-action implícito) construido sobre Wan2.2-TI2V-5B, un modelo generativo de vídeo de 5B parámetros, al que se le añade una cabeza de acción entrenada mediante *flow matching* conjunto de vídeo y acción. Forma parte de la ablación EXP-0019 del proyecto OpenArm y su propósito es aislar el efecto de las etiquetas de acción humanas en el entrenamiento.
+`wam-openarm-h2rb-naive-humvid-hawor-v1-50k-ckpt50000` es un checkpoint de investigación en robótica publicado por el usuario jungwook2358 en Hugging Face. Se trata de un modelo de política visuomotora (vision-language-action implícito) construido sobre Wan2.2-TI2V-5B, un modelo generativo de vídeo de 5B parámetros, al que se le añade una cabeza de acción entrenada mediante *flow matching* conjunto de vídeo y acción. Forma parte de la ablación EXP-0019 del proyecto OpenArm y su propósito es aislar el efecto de las etiquetas de acción humanas en el entrenamiento.
 
 La variante "naive + human VIDEO-ONLY" significa que los cinco subconjuntos de datos humanos (1.187 episodios) contribuyen únicamente a la pérdida de *flow matching* de vídeo, con estado, acción y máscara de acción a cero; la cabeza de acción se supervisa exclusivamente con filas de robot (seis subconjuntos, 553 episodios). El entrenamiento se realizó desde cero sobre Wan2.2-TI2V-5B durante 50.000 pasos en 4 GPU, con 64 filas por paso (32 de robot y 32 humanas).
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / horizonte | Datos humanos con acción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (naive + human video-only) | ~5B base + cabeza | Horizonte 24 | No (solo vídeo) | other | HuggingFace, 0 descargas |
-| `wam-openarm-h2rb-naive-hawor-v1-50k-ckpt50000` | ~5B base + cabeza | Horizonte 24 | Sí (HaWoR v1) | other | HuggingFace (referenciado por el autor) |
+| Este checkpoint (naive + human video-only) | ~5B base + cabeza | Horizonte 24 | No (solo vídeo) | other | Hugging Face, 0 descargas |
+| `wam-openarm-h2rb-naive-hawor-v1-50k-ckpt50000` | ~5B base + cabeza | Horizonte 24 | Sí (HaWoR v1) | other | Hugging Face (referenciado por el autor) |
 | `…-naive-robotonly-…` | ~5B base + cabeza | Horizonte 24 | No aplica (sin datos humanos) | other | Pendiente de subida según el autor |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-h2rb-naive-humvid-hawor-v1-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-h2rb-naive-humvid-hawor-v1-50k-ckpt50000
 - Checkpoint de comparación (acciones humanas HaWoR): https://huggingface.co/jungwook2358/wam-openarm-h2rb-naive-hawor-v1-50k-ckpt50000
 - Código: rama `jungwook/openarm-fred-ft` del repositorio actlat-wam, commit `c3d1b92` (script `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_prq30_h2rb.sh`, configuración `gr00t/configs/data/openarm_prq30_v1_config.py`)
 - Modelo base: Wan2.2-TI2V-5B (no se proporciona enlace directo en la información disponible)

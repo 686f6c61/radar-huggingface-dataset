@@ -80,8 +80,8 @@ Estragon-9B se diferencia por su enfoque exclusivo en GDScript, mientras que los
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/estragon-9b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/estragon-9b-GGUF
 - Modelo base (safetensors): https://huggingface.co/Blugart/estragon-9b
 - Repositorio del proyecto en GitHub: https://github.com/blugart-dev/estragon
 - Pagina de descarga de cuantizaciones: https://hf.tst.eu/model
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher/models
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher/models

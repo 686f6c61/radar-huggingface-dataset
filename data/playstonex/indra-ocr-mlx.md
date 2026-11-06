@@ -23,7 +23,7 @@ No se dispone de información pública sobre el tamaño en parámetros del model
 | Libreria | mlx |
 | Pipeline | image-to-text |
 | Modelo base | datalab-to/indra-ocr |
-| Tamano del repo | 0.0 GB (según HuggingFace) |
+| Tamano del repo | 0.0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/playstonex/indra-ocr-mlx
+- Modelo en Hugging Face: https://huggingface.co/playstonex/indra-ocr-mlx
 - Modelo base: https://huggingface.co/datalab-to/indra-ocr
 - Datalab: https://datalab.to
 - MLX: https://github.com/ml-explore/mlx

@@ -75,5 +75,5 @@ No disponible. No se han encontrado comparaciones con otros emuladores de agente
 
 ## Enlaces
 
-- [HuggingFace - Snapkitty/sovereign-emulator](https://huggingface.co/Snapkitty/sovereign-emulator)
+- [Hugging Face - Snapkitty/sovereign-emulator](https://huggingface.co/Snapkitty/sovereign-emulator)
 - [Sitio live del emulador](https://snapkittywest.github.io/sovereign-emulator/)

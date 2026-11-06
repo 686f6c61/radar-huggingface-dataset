@@ -65,5 +65,5 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yamamototakumi/paper_009034389_neural_architecture_search
+- Repositorio en Hugging Face: https://huggingface.co/Yamamototakumi/paper_009034389_neural_architecture_search
 - No se han encontrado enlaces adicionales en la búsqueda web (Google Scholar, arXiv, Academia.edu, Google Research) que apunten directamente a este paper o a su autor.

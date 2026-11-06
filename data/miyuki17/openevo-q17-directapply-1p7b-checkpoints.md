@@ -100,7 +100,7 @@ No se conocen repositorios comparables publicados de trayectorias completas de c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/miyuki17/openevo-q17-directapply-1p7b-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/miyuki17/openevo-q17-directapply-1p7b-checkpoints
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revision congelada del base: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
 - WebShop (entorno de referencia mencionado en la model card): https://webshop-pnlp.github.io/

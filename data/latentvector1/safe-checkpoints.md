@@ -67,15 +67,15 @@ No se dispone de informacion comparable en los datos publicados. No se han encon
 ## Limitaciones y advertencias
 
 - Licencia de uso exclusivo para investigacion y revision por pares: el uso comercial y el despliegue en produccion estan restringidos.
-- Los pesos se liberan para revision por pares y reproducibilidad; el codigo y las configuraciones estan en un repositorio anonimo no accesible desde este repo de HuggingFace.
+- Los pesos se liberan para revision por pares y reproducibilidad; el codigo y las configuraciones estan en un repositorio anonimo no accesible desde este repo de Hugging Face.
 - Es un modelo de vision pura: no puede procesar texto ni realizar tareas de lenguaje.
 - Entrenado solo sobre Cityscapes (train) e ISSU-static (train), lo que puede limitar la generalizacion a otros dominios visuales (condiciones de iluminacion, meteorologia o geografias distintas).
 - No se han publicado benchmarks ni metricas de rendimiento, por lo que la eficiencia real y la calidad practica son desconocidas.
 - Como modelo probabilistico para deteccion de anomalias, es susceptible a falsos positivos en escenas ruidosas o ambiguas.
-- No incluye un script de inferencia en el repositorio de HuggingFace; es necesario obtener el codigo anonimizado para reproducir los resultados.
+- No incluye un script de inferencia en el repositorio de Hugging Face; es necesario obtener el codigo anonimizado para reproducir los resultados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentvector1/safe-checkpoints
+- Hugging Face: https://huggingface.co/latentvector1/safe-checkpoints
 - Repositorio de codigo anonimizado: no disponible en la informacion publica (segun la model card, se proporciona en el articulo en revision).
 - Paper asociado: no disponible.

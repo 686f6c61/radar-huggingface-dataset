@@ -4,7 +4,7 @@
 
 DarkArtsForge_Morbid-Miasma-24B_EXL3 es una cuantización en formato ExLlamaV3 (EXL3) del modelo base DarkArtsForge/Morbid-Miasma-24B, creada por el usuario DeathGodlike. El modelo base es un merge de 14 modelos de 24B de parámetros, construido con el método "della" (arxiv:2406.11617) sobre la arquitectura MistralForCausalLM, utilizando como base mistralai/Magistral-Small-2509. Se trata de un modelo de generación de texto sin censura, orientado a narrativa, roleplay y escritura creativa, con una puntuación de 16103 en Q0 Bench según su autor.
 
-Esta versión cuantizada ofrece tres niveles de precisión (4, 6 y 8 bits) en formato EXL3, lo que permite ajustar el consumo de VRAM según el hardware disponible. El repositorio incluye los pesos en safetensors y archivos de descarga por lotes para cada variante. La licencia detectada es Apache 2.0, heredada del modelo fuente, aunque los metadatos de HuggingFace no la especifican directamente. El contexto máximo declarado para el modelo base es de 128K tokens, según fuentes externas.
+Esta versión cuantizada ofrece tres niveles de precisión (4, 6 y 8 bits) en formato EXL3, lo que permite ajustar el consumo de VRAM según el hardware disponible. El repositorio incluye los pesos en safetensors y archivos de descarga por lotes para cada variante. La licencia detectada es Apache 2.0, heredada del modelo fuente, aunque los metadatos de Hugging Face no la especifican directamente. El contexto máximo declarado para el modelo base es de 128K tokens, según fuentes externas.
 
 ## Especificaciones tecnicas
 

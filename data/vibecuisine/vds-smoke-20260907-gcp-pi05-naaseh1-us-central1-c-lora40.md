@@ -70,7 +70,7 @@ El modelo presentado es un fine-tune LoRA del modelo base pi05_base, adaptado a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40
+- Hugging Face: https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40
 - Blog de Physical Intelligence sobre pi05: https://www.physicalintelligence.company/blog/pi05
 - Dataset de entrenamiento: https://huggingface.co/datasets/VibeCuisine/naaseh1-bottle-holder-calib-090326
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Valorant Game-Talk Qwen3-4B (adaptador) | 33.030.144 entrenables sobre base de 4.055.498.240 | no disponible | 8/12 en prueba lexica propia | apache-2.0 | HuggingFace (18 descargas) |
-| Qwen/Qwen3-4B (base) | 4.055.498.240 | no disponible | 0/12 en la misma prueba | apache-2.0 | HuggingFace |
+| Valorant Game-Talk Qwen3-4B (adaptador) | 33.030.144 entrenables sobre base de 4.055.498.240 | no disponible | 8/12 en prueba lexica propia | apache-2.0 | Hugging Face (18 descargas) |
+| Qwen/Qwen3-4B (base) | 4.055.498.240 | no disponible | 0/12 en la misma prueba | apache-2.0 | Hugging Face |
 | Otros adaptadores LoRA tematicos sobre Qwen3-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre alternativas comparables en la misma categoria para establecer una comparativa tecnica adicional.
@@ -86,6 +86,6 @@ No se dispone de informacion sobre alternativas comparables en la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AkshaySuhag/valorant-qwen3-4b-game-talk
+- Modelo en Hugging Face: https://huggingface.co/AkshaySuhag/valorant-qwen3-4b-game-talk
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Informe take-home de evaluacion: mencionado en la model card, sin enlace disponible en la informacion proporcionada.

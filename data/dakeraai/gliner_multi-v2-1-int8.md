@@ -100,7 +100,7 @@ No se han publicado en la información disponible comparaciones directas con alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DakeraAI/gliner_multi-v2.1-int8
+- Modelo en Hugging Face: https://huggingface.co/DakeraAI/gliner_multi-v2.1-int8
 - Modelo original: https://huggingface.co/urchade/gliner_multi-v2.1
 - Paper GLiNER (arXiv:2311.08526): https://arxiv.org/abs/2311.08526
 - Web de Dakera: https://dakera.ai

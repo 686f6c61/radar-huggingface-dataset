@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NedoLM-0.8B-V5-8K-GGUF es un artefacto de pesos en formato GGUF publicado por el usuario nmsofficial en HuggingFace. Se trata de la exportación cuantizada en Q4_K_M del checkpoint denominado "step 320" del modelo Mercan/NedoLM V5, obtenido mediante un proceso de preentrenamiento continuado (CPT, *continued pre-training*) orientado a contexto largo. El modelo tiene aproximadamente 823 millones de parámetros (823.140.352 según los datos de safetensors) y está empaquetado específicamente para su ejecución en un dispositivo Android de prueba.
+NedoLM-0.8B-V5-8K-GGUF es un artefacto de pesos en formato GGUF publicado por el usuario nmsofficial en Hugging Face. Se trata de la exportación cuantizada en Q4_K_M del checkpoint denominado "step 320" del modelo Mercan/NedoLM V5, obtenido mediante un proceso de preentrenamiento continuado (CPT, *continued pre-training*) orientado a contexto largo. El modelo tiene aproximadamente 823 millones de parámetros (823.140.352 según los datos de safetensors) y está empaquetado específicamente para su ejecución en un dispositivo Android de prueba.
 
 El propósito declarado del repositorio no es distribuir un modelo generalista, sino servir como artefacto de prueba de completado de texto con una ventana de 8.192 tokens. El autor indica explícitamente que, aunque la configuración de entrenamiento admite 32.768 tokens de contexto, la recuperación a 31K no superó la puerta de aceptación del proyecto, por lo que este build se presenta como "8K completion test build" y no como un modelo de 32K validado. La licencia es Apache-2.0 y el único idioma declarado es el turco (tr).
 
@@ -107,7 +107,7 @@ Comparativa de rendimiento: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nmsofficial/NedoLM-0.8B-V5-8K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nmsofficial/NedoLM-0.8B-V5-8K-GGUF
 - Checkpoint base citado en la model card: Mercan/NedoLM V5 (no se ha proporcionado URL directa)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a contenidos de television infantil danesa (DR Ramasjang) y no guardan relacion con el modelo.

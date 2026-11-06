@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 Vlnara v0 es un adaptador LoRA de personaje para el modelo de generacion de imagenes Krea 2. Lo publica el usuario edullinenbanjo en HuggingFace y esta entrenado sobre Krea 2 Raw, aunque el propio autor indica que esta pensado para usarse con Krea 2 Turbo. Su funcion es incorporar un personaje ficticio concreto, activado mediante la palabra clave `vlnara`, de modo que el modelo base genere representaciones coherentes de ese personaje sin necesidad de describirlo en cada prompt.
+Krea 2 Vlnara v0 es un adaptador LoRA de personaje para el modelo de generacion de imagenes Krea 2. Lo publica el usuario edullinenbanjo en Hugging Face y esta entrenado sobre Krea 2 Raw, aunque el propio autor indica que esta pensado para usarse con Krea 2 Turbo. Su funcion es incorporar un personaje ficticio concreto, activado mediante la palabra clave `vlnara`, de modo que el modelo base genere representaciones coherentes de ese personaje sin necesidad de describirlo en cada prompt.
 
 Se trata, por tanto, de un ajuste fino ligero y no de un modelo completo: el repositorio ocupa apenas 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo de difusion completo. El adaptador no acompana al modelo base, de manera que para utilizarlo hay que descargar por separado krea/Krea-2-Raw o Krea-2-Turbo y cargar el LoRA encima.
 
@@ -85,7 +85,7 @@ Una comparacion cuantitativa de parametros, contexto y rendimiento no es posible
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/edullinenbanjo/Krea-2-Vlnara-v0
+- Pagina del modelo en Hugging Face: https://huggingface.co/edullinenbanjo/Krea-2-Vlnara-v0
 - Modelo base: krea/Krea-2-Raw (referenciado en la model card, sin enlace explicito proporcionado)
 - Licencia Krea 2 Community License Agreement: https://www.krea.ai/krea-2-licensing
 - No se han proporcionado enlaces adicionales a papers, blogs, repositorios o demos en la informacion disponible.

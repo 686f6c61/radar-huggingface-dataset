@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-p97-0818-1957` es un modelo de lenguaje multimodal (imagen-texto) de la familia Qwen3.6, desarrollado por el usuario SusanHill y publicado en HuggingFace. Se trata de un modelo de arquitectura MoE (Mixture of Experts) dispersa con aproximadamente 35 mil millones de parámetros totales y unos 3 mil millones de parámetros activos por token, lo que lo hace eficiente en inferencia pese a su tamaño. Según la documentación técnica de vLLM-Ascend, emplea una arquitectura de atención híbrida que combina GDN (Grouped Dot-product Attention) con atención completa, similar a la serie Qwen3.5.
+El modelo `SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-p97-0818-1957` es un modelo de lenguaje multimodal (imagen-texto) de la familia Qwen3.6, desarrollado por el usuario SusanHill y publicado en Hugging Face. Se trata de un modelo de arquitectura MoE (Mixture of Experts) dispersa con aproximadamente 35 mil millones de parámetros totales y unos 3 mil millones de parámetros activos por token, lo que lo hace eficiente en inferencia pese a su tamaño. Según la documentación técnica de vLLM-Ascend, emplea una arquitectura de atención híbrida que combina GDN (Grouped Dot-product Attention) con atención completa, similar a la serie Qwen3.5.
 
-El modelo está diseñado para tareas de conversación y comprensión de imágenes, con pipeline `image-text-to-text`. Su licencia es Apache 2.0, aunque el acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones adicionales. Es relevante porque combina multimodalidad con eficiencia MoE, lo que permite desplegarlo en hardware más modesto que un modelo denso de 35B manteniendo una alta capacidad de razonamiento.
+El modelo está diseñado para tareas de conversación y comprensión de imágenes, con pipeline `image-text-to-text`. Su licencia es Apache 2.0, aunque el acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones adicionales. Es relevante porque combina multimodalidad con eficiencia MoE, lo que permite desplegarlo en hardware más modesto que un modelo denso de 35B manteniendo una alta capacidad de razonamiento.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ La comparativa se basa en modelos MoE de tamaño similar. Qwen3-30B-A3B es un mo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace; es necesario solicitar y aceptar condiciones adicionales antes de descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face; es necesario solicitar y aceptar condiciones adicionales antes de descargarlo.
 - Sin información sobre sesgos o alucinaciones: no se han publicado evaluaciones de sesgo ni estudios de robustez para este modelo específico.
 - Idiomas no especificados: se desconoce qué lenguas soporta con calidad, lo que limita su uso en producción multilingüe sin pruebas previas.
 - Contexto no documentado: la longitud máxima de contexto no se ha publicado; esto puede afectar a tareas que requieran ventanas largas.
@@ -77,7 +77,7 @@ La comparativa se basa en modelos MoE de tamaño similar. Qwen3-30B-A3B es un mo
 
 ## Enlaces
 
-- HuggingFace (modelo principal): https://huggingface.co/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-p97-0818-1957
+- Hugging Face (modelo principal): https://huggingface.co/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-p97-0818-1957
 - Versión anterior v3 (0814): https://huggingface.co/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100
 - Versión v1 (0812): https://huggingface.co/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v1-0812-2349
 - Documentación vLLM-Ascend para Qwen3.6-35B-A3B: https://docs.vllm.ai/projects/ascend/en/v0.18.0/tutorials/models/Qwen3.6-35B-A3B.html

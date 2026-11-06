@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su portabilidad: al estar implementado ex
 
 El modelo es una conversión directa de `Qwen/Qwen2-VL-7B`, por lo que hereda su arquitectura original: un codificador visual (vision transformer) combinado con un modelo de lenguaje Qwen2. La implementación de KerasFormers reproduce esta arquitectura usando únicamente capas de Keras 3, lo que garantiza compatibilidad con TensorFlow, Torch y JAX sin cambios en el código de usuario. No se realizó ningún entrenamiento adicional; los pesos se transfieren tal cual del modelo base.
 
-Los detalles de entrenamiento del modelo original (composición del dataset, número de tokens, técnicas de alineación como RLHF o DPO) no se especifican en la información proporcionada. Para conocerlos, se debe consultar la model card del modelo upstream en HuggingFace.
+Los detalles de entrenamiento del modelo original (composición del dataset, número de tokens, técnicas de alineación como RLHF o DPO) no se especifican en la información proporcionada. Para conocerlos, se debe consultar la model card del modelo upstream en Hugging Face.
 
 ## Capacidades
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Framework | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| kerasformers/qwen2-vl-7b | 7B | Keras 3 (TF/Torch/JAX) | Apache 2.0 | no disponible | HuggingFace |
-| Qwen/Qwen2-VL-7B | 7B | PyTorch | Apache 2.0 | 128k (según documentación oficial) | HuggingFace |
-| llava-hf/llava-1.5-7b-hf | 7B | PyTorch | Apache 2.0 | 4096 | HuggingFace |
+| kerasformers/qwen2-vl-7b | 7B | Keras 3 (TF/Torch/JAX) | Apache 2.0 | no disponible | Hugging Face |
+| Qwen/Qwen2-VL-7B | 7B | PyTorch | Apache 2.0 | 128k (según documentación oficial) | Hugging Face |
+| llava-hf/llava-1.5-7b-hf | 7B | PyTorch | Apache 2.0 | 4096 | Hugging Face |
 
 La comparativa se limita a características generales, ya que no hay datos de rendimiento disponibles para la conversión de KerasFormers. El modelo original de Qwen ofrece una ventana de contexto mayor y una implementación más madura en PyTorch, mientras que esta conversión aporta la flexibilidad multiplataforma de Keras 3.
 
@@ -77,7 +77,7 @@ La comparativa se limita a características generales, ya que no hay datos de re
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/qwen2-vl-7b](https://huggingface.co/kerasformers/qwen2-vl-7b)
+- [Hugging Face - kerasformers/qwen2-vl-7b](https://huggingface.co/kerasformers/qwen2-vl-7b)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen2-VL en KerasFormers](https://imvision12.github.io/KerasFormers/qwen2_vl/)
 - [Modelo base Qwen/Qwen2-VL-7B](https://huggingface.co/Qwen/Qwen2-VL-7B)

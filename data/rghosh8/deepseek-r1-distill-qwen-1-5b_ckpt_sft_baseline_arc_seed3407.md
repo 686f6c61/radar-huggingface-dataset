@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DeepSeek-R1-Distill-Qwen-1.5B_ckpt_SFT_baseline_arc_seed3407` es un ajuste fino por supervisión (SFT) del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario `rghosh8` en HuggingFace. Se trata de un artefacto de investigación más que de un modelo listo para producción: el propio nombre codifica la configuración experimental («ckpt», «SFT_baseline», «arc», «seed3407»), lo que sugiere un checkpoint de referencia (baseline) entrenado sobre la tarea ARC con la semilla 3407, presumiblemente para comparar contra otras variantes dentro de un estudio de ablación.
+`DeepSeek-R1-Distill-Qwen-1.5B_ckpt_SFT_baseline_arc_seed3407` es un ajuste fino por supervisión (SFT) del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario `rghosh8` en Hugging Face. Se trata de un artefacto de investigación más que de un modelo listo para producción: el propio nombre codifica la configuración experimental («ckpt», «SFT_baseline», «arc», «seed3407»), lo que sugiere un checkpoint de referencia (baseline) entrenado sobre la tarea ARC con la semilla 3407, presumiblemente para comparar contra otras variantes dentro de un estudio de ablación.
 
 El modelo conserva la arquitectura del original: un transformer decoder-only de la familia Qwen2 con 1.777.088.000 parámetros totales según los pesos en safetensors. El repositorio ocupa 7,1 GB, un tamaño notablemente superior a los ~3,5 GB que requerirían los pesos en FP16, lo que apunta a que el checkpoint almacena pesos en fp32 o incluye estados adicionales del entrenamiento.
 
@@ -86,7 +86,7 @@ La comparación relevante es contra el modelo base sin ajustar: sin una evaluaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/DeepSeek-R1-Distill-Qwen-1.5B_ckpt_SFT_baseline_arc_seed3407
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/DeepSeek-R1-Distill-Qwen-1.5B_ckpt_SFT_baseline_arc_seed3407
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de DeepSeek-R1: no disponible en la informacion proporcionada

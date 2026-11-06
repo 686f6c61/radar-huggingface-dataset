@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vnpen-writer-2b-v0.1-preview es un modelo publicado en HuggingFace por el usuario VNPen bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene el encabezado YAML con la licencia, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta y no tiene pipeline declarado.
+vnpen-writer-2b-v0.1-preview es un modelo publicado en Hugging Face por el usuario VNPen bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene el encabezado YAML con la licencia, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta y no tiene pipeline declarado.
 
 Por la denominacion del identificador ("2b") y el sufijo "writer", cabe inferir que se trata de un modelo de generacion de texto de aproximadamente 2.000 millones de parametros orientado a tareas de redaccion, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor en la informacion disponible. La fecha de creacion y ultima actualizacion es la misma (2026-09-17), lo que sugiere una publicacion inicial sin revisiones posteriores.
 
@@ -64,7 +64,7 @@ Las cifras siguientes son estimaciones basadas en la clase de tamano que sugiere
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para FP16; para cuantizaciones de 4 bits bastaria con 4-6 GB.
 - GPU de consumo: previsiblemente cabe en tarjetas como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 o RTX 4090, asi como en Apple Silicon con memoria unificada suficiente.
 - GPU de datacenter: A100, H100 o L40S permitirian servir multiples replicas o lotes grandes, aunque para este tamano resultan sobredimensionadas salvo por requisitos de throughput.
-- Opciones de despliegue: no confirmadas por el autor. Si los pesos estan en formato HuggingFace estandar, serian aplicables transformers, vLLM y TGI; si existe conversion a GGUF, serian aplicables llama.cpp, Ollama y LM Studio. No hay evidencia de que se hayan publicado pesos en GGUF.
+- Opciones de despliegue: no confirmadas por el autor. Si los pesos estan en formato Hugging Face estandar, serian aplicables transformers, vLLM y TGI; si existe conversion a GGUF, serian aplicables llama.cpp, Ollama y LM Studio. No hay evidencia de que se hayan publicado pesos en GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este modelo.
 
 ## Comparativa con modelos similares
@@ -94,6 +94,6 @@ La diferencia fundamental no es de rendimiento sino de madurez: las alternativas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VNPen/vnpen-writer-2b-v0.1-preview
+- Hugging Face: https://huggingface.co/VNPen/vnpen-writer-2b-v0.1-preview
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas devolvieron exclusivamente paginas genericas de proveedores de cloud (Google Cloud, AWS, Azure, GeeksforGeeks) sin relacion con el modelo.
 - Paper, blog o repositorio del autor: no disponible.

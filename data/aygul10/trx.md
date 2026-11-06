@@ -75,7 +75,7 @@ La comparativa se limita a modelos de tamaño similar. El modelo Trx carece de i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aygul10/Trx
+- Repositorio Hugging Face: https://huggingface.co/Aygul10/Trx
 - Unsloth (librería de entrenamiento y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia GGUF): https://github.com/ggerganov/llama.cpp
 

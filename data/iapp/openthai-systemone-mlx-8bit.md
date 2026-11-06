@@ -127,7 +127,7 @@ La cuantización a 8 bits apenas altera los resultados: la mayor pérdida se da 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-8bit
 - Modelo base: https://huggingface.co/iapp/OpenThai-SystemOne
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a la International Association of Privacy Professionals (IAPP), una entidad distinta sin relación con el autor del modelo. No se dispone de enlaces a papers, blogs o demos adicionales.

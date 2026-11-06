@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (TOFU forget10, IHL + reset) | 1,42 B | no disponible | Unlearning experimental sobre TOFU | Apache 2.0 | HuggingFace |
-| `locuslab/tofu_ft_phi-1.5` | ~1,3-1,4 B | no disponible | Phi-1.5 afinado con TOFU (modelo de referencia) | no disponible en la informacion | HuggingFace |
-| `microsoft/phi-1_5` | ~1,3 B | 2048 tokens | Modelo base de generacion de texto y codigo | MIT (segun el modelo original) | HuggingFace |
+| Este checkpoint (TOFU forget10, IHL + reset) | 1,42 B | no disponible | Unlearning experimental sobre TOFU | Apache 2.0 | Hugging Face |
+| `locuslab/tofu_ft_phi-1.5` | ~1,3-1,4 B | no disponible | Phi-1.5 afinado con TOFU (modelo de referencia) | no disponible en la informacion | Hugging Face |
+| `microsoft/phi-1_5` | ~1,3 B | 2048 tokens | Modelo base de generacion de texto y codigo | MIT (segun el modelo original) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada para establecer diferencias cuantitativas entre estos modelos.
 
@@ -80,11 +80,11 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - Licencia: Apache 2.0 permite uso comercial, pero el modelo base y el dataset TOFU pueden tener condiciones adicionales que no se detallan en la informacion disponible.
 - Requiere `trust_remote_code=True` por el `custom_code` incluido, lo que implica ejecutar codigo del autor; conviene revisarlo antes de cargarlo.
 - El checkpoint corresponde a la epoca 2 de 20; el olvido puede ser incompleto y no debe asumirse que el conjunto `forget10` ha sido eliminado por completo.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta: no hay validacion comunitaria de su comportamiento.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta: no hay validacion comunitaria de su comportamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch02
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch02
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

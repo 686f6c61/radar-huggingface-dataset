@@ -78,7 +78,7 @@ No hay información disponible sobre modelos comparables en la misma categoría 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CaptchaKraken/CaptchaKraken-Lora-v1.2
+- Hugging Face: https://huggingface.co/CaptchaKraken/CaptchaKraken-Lora-v1.2
 - Modelo v1.1: https://huggingface.co/CaptchaKraken/CaptchaKraken_v1.1
 - Repo GitHub: https://github.com/JWriter20/CaptchaKraken
 - PyPI: https://pypi.org/project/captchakraken/

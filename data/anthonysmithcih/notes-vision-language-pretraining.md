@@ -50,7 +50,7 @@ No disponible. No hay un modelo comparable porque este repositorio no contiene u
 - No hay soporte ni mantenimiento del código (ni código existe).
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/anthonysmithcih/notes-vision-language-pretraining
+- Repositorio Hugging Face: https://huggingface.co/anthonysmithcih/notes-vision-language-pretraining
 - Blog de Hugging Face sobre VLMs: https://huggingface.co/blog/vlms
 - Blog de Hugging Face sobre vision language pretraining: https://huggingface.co/blog/vision_language_pretraining
 - arXiv paper "Vision-Language Pre-training: Basics, Recent Advances, and ...": https://arxiv.org/abs/2210.09263
@@ -120,7 +120,7 @@ No disponible. No hay un modelo comparable porque este repositorio no contiene u
 - No hay código fuente ni mantenimiento de software.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/anthonysmithcih/notes-vision-language-pretraining
+- Repositorio Hugging Face: https://huggingface.co/anthonysmithcih/notes-vision-language-pretraining
 - Blog de Hugging Face sobre VLMs: https://huggingface.co/blog/vlms
 - Blog de Hugging Face sobre vision language pretraining: https://huggingface.co/blog/vision_language_pretraining
 - Artículo arXiv: Vision-Language Pre-training: Basics, Recent Advances, and Challenges: https://arxiv.org/abs/2210.09263

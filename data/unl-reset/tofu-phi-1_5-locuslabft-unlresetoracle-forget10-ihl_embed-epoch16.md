@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch16` es un checkpoint de investigación derivado de Phi-1.5, publicado por el grupo `unl-reset` en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto experimental dentro del marco TOFU (Task of Fictitious Unlearning), un benchmark académico diseñado para evaluar técnicas de *machine unlearning*: la capacidad de eliminar selectivamente información de un modelo entrenado sin reentrenarlo desde cero.
+El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch16` es un checkpoint de investigación derivado de Phi-1.5, publicado por el grupo `unl-reset` en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto experimental dentro del marco TOFU (Task of Fictitious Unlearning), un benchmark académico diseñado para evaluar técnicas de *machine unlearning*: la capacidad de eliminar selectivamente información de un modelo entrenado sin reentrenarlo desde cero.
 
 El checkpoint parte de `locuslab/tofu_ft_phi-1.5`, un Phi-1.5 ajustado sobre el dataset TOFU, y aplica una intervención concreta: reinicializa los *input embeddings* y la *LM head* con los pesos originales de `microsoft/phi-1_5`, mientras conserva el resto de pesos del transformer del modelo ajustado. Sobre esa base se aplica un entrenamiento con una pérdida compuesta: *token IHL* (probablemente una variante de *influence-based* o *information-theoretic* unlearning) sobre el conjunto *forget* y entropía cruzada (CE) con peso 1.0 sobre el conjunto *retain*. El resultado es el checkpoint de la época 16 de un total de 20.
 
@@ -85,7 +85,7 @@ La comparación directa más relevante es con `locuslab/tofu_ft_phi-1.5`, del qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch16
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch16
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Repositorio TOFU (referencia del benchmark): no disponible en la información proporcionada.

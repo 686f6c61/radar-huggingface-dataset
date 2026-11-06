@@ -81,4 +81,4 @@ No se dispone de información sobre modelos comparables concretos. La tabla de b
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SOTAagi2030/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/SOTAagi2030/MyAwesomeModel-TestRepo

@@ -80,7 +80,7 @@ print(pipe.generate("Describe this image.", image=image_tensor))
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `blaj/Qwen3.8-27B-heretic-ara-int8-ov` | 27B | no disponible | OpenVINO IR INT8 | Apache-2.0 | HuggingFace, 3 descargas |
+| `blaj/Qwen3.8-27B-heretic-ara-int8-ov` | 27B | no disponible | OpenVINO IR INT8 | Apache-2.0 | Hugging Face, 3 descargas |
 | `heretic-org/Qwen3.8-27B-heretic-ara` | 27B | no disponible | no disponible | no disponible | Modelo base referenciado |
 
 No se dispone de información sobre otros modelos comparables en la documentación proporcionada, ni de datos de rendimiento que permitan establecer una comparación cuantitativa con alternativas de la misma categoría (modelos VLM de ~27B). La comparación con el modelo base se limita al formato y al proceso de cuantización, ya que no se publican métricas de ninguno de los dos artefactos.
@@ -101,7 +101,7 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace (este artefacto): https://huggingface.co/blaj/Qwen3.8-27B-heretic-ara-int8-ov
+- Modelo en Hugging Face (este artefacto): https://huggingface.co/blaj/Qwen3.8-27B-heretic-ara-int8-ov
 - Modelo base: https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara
 - Optimum Intel (herramienta de conversión): no disponible en la información proporcionada
 - OpenVINO GenAI (runtime de inferencia): no disponible en la información proporcionada

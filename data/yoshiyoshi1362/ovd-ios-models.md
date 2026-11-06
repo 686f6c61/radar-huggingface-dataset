@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OVD-iOS models es un repositorio de HuggingFace publicado por el usuario Yoshiyoshi1362 que no contiene un modelo único, sino una coleccion de 25 conversiones a Core ML de detectores de objetos de vocabulario abierto (open-vocabulary detection, OVD). Cada directorio del repositorio aloja un modelo independiente, convertido con pesos en int8 para su ejecucion en el dispositivo (on-device) dentro de la aplicacion OVD-iOS. El repo ocupa 9,0 GB en total y su pipeline declarado es object-detection.
+OVD-iOS models es un repositorio de Hugging Face publicado por el usuario Yoshiyoshi1362 que no contiene un modelo único, sino una coleccion de 25 conversiones a Core ML de detectores de objetos de vocabulario abierto (open-vocabulary detection, OVD). Cada directorio del repositorio aloja un modelo independiente, convertido con pesos en int8 para su ejecucion en el dispositivo (on-device) dentro de la aplicacion OVD-iOS. El repo ocupa 9,0 GB en total y su pipeline declarado es object-detection.
 
 Los modelos convertidos pertenecen a cinco familias: Grounding DINO (13 variantes, incluyendo los checkpoints originales de IDEA-Research, los reentrenamientos de iSEE-Laboratory/LLMDet y los modelos multimodales de openmmlab-community), OWL-ViT v1 y OWLv2 (7 variantes de Google), OmDet-Turbo con backbone Swin Tiny (1 variante de OMLab) y Florence-2 en sus versiones base y large (4 variantes). La relevancia de este repositorio es practica: empaqueta detectores zero-shot de referencia en formato Core ML listo para Apple Silicon, evitando al desarrollador el proceso de conversion y cuantizacion.
 
@@ -87,7 +87,7 @@ Los modelos de la columna de origen son precisamente los checkpoints desde los q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yoshiyoshi1362/ovd-ios-models
+- Repositorio en Hugging Face: https://huggingface.co/Yoshiyoshi1362/ovd-ios-models
 - iSEE-Laboratory/llmdet_base: https://huggingface.co/iSEE-Laboratory/llmdet_base
 - iSEE-Laboratory/llmdet_large: https://huggingface.co/iSEE-Laboratory/llmdet_large
 - iSEE-Laboratory/llmdet_tiny: https://huggingface.co/iSEE-Laboratory/llmdet_tiny

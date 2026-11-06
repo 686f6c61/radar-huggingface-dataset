@@ -67,7 +67,7 @@ No se dispone de datos completos para una comparativa rigurosa. Los modelos de l
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/agiws/Qwen3.6-35B-A3B-UD-IQ2-M
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/agiws/Qwen3.6-35B-A3B-UD-IQ2-M
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Cuantizaciones GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
 - Artículo sobre el lanzamiento: https://rits.shanghai.nyu.edu/ai/qwen3-6-35b-a3b-alibaba-open-sources-a-frontier-class-agentic-coder/

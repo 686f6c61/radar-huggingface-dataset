@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Vision-NVFP4-ARVQ-v2-hybrid es un checkpoint experimental publicado por el usuario jarrelscy en HuggingFace. Se trata de una variante cuantizada y modificada del modelo multimodal GLM-5.3-Vision, en la que se han sustituido las 75 capas MoE del modelo original mediante una campana secuencial de cuantizacion. La propuesta tecnica combina dos esquemas de compresion distintos: NVFP4 para los "expertos calientes" (hot experts) y ARVQ v3 para los "expertos frios" (cold experts), con una asignacion de expertos guiada por puntuacion ARVQ (REAP).
+GLM-5.3-Vision-NVFP4-ARVQ-v2-hybrid es un checkpoint experimental publicado por el usuario jarrelscy en Hugging Face. Se trata de una variante cuantizada y modificada del modelo multimodal GLM-5.3-Vision, en la que se han sustituido las 75 capas MoE del modelo original mediante una campana secuencial de cuantizacion. La propuesta tecnica combina dos esquemas de compresion distintos: NVFP4 para los "expertos calientes" (hot experts) y ARVQ v3 para los "expertos frios" (cold experts), con una asignacion de expertos guiada por puntuacion ARVQ (REAP).
 
 El modelo tiene 186.827.108.584 parametros totales (~186,8 mil millones) y un repositorio de 311,1 GB, lo que refleja que conserva en precision original componentes como el backbone, el modulo BF16 MTP (multi-token prediction) y los componentes de vision. No se trata por tanto de una cuantizacion homogenea, sino de una mezcla: solo las capas MoE han sido recuantizadas, mientras que el resto de pesos mantiene la version previamente publicada.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Vision-NVFP4-ARVQ-v2-hybrid | 186,8 B | no disponible | NVFP4 + ARVQ v3 (mixta) | no disponible | HuggingFace (jarrelscy) |
+| GLM-5.3-Vision-NVFP4-ARVQ-v2-hybrid | 186,8 B | no disponible | NVFP4 + ARVQ v3 (mixta) | no disponible | Hugging Face (jarrelscy) |
 | GLM-5.3-Vision (modelo base) | no disponible | no disponible | original del autor | no disponible | no disponible |
 | Otros MoE multimodales de ~180 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,6 +91,6 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-ARVQ-v2-hybrid
+- Hugging Face: https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-ARVQ-v2-hybrid
 - Paper, blog, repositorio o demo adicionales: no disponible
 - Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo; los enlaces obtenidos correspondian a contenidos no pertinentes (fachadas de un fabricante de fibrocemento) y se han descartado.

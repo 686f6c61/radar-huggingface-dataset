@@ -6,7 +6,7 @@ El repositorio `JayCao99/pi05-xarm-wire-rope-rl7-K1-s1000-v0.0` no contiene un m
 
 Se trata de un artefacto de investigación muy específico: un único checkpoint (`checkpoint-000500`, correspondiente al paso 500 de entrenamiento) para una tarea concreta de manipulación de cable ("wire rope") sobre un brazo xArm, presumiblemente entrenado con aprendizaje por refuerzo o una variante experimental (el sufijo `rl7-K1-s1000-v0.0` sugiere configuración de RL, semilla o tamaño 1000 y versión 0.0). No hay información publicada sobre arquitectura interna, número de parámetros, dataset ni métricas de evaluación.
 
-Su relevancia actual es acotada pero clara para quien trabaja en robótica open source: proporciona un ejemplo reproducible de política visual-lenguaje-acción (VLA) integrada en LeRobot, con el formato de pesos estándar del ecosistema HuggingFace. Sin embargo, con 0 descargas y 0 likes en el momento de la consulta, carece de validación externa y de documentación suficiente para evaluar su calidad.
+Su relevancia actual es acotada pero clara para quien trabaja en robótica open source: proporciona un ejemplo reproducible de política visual-lenguaje-acción (VLA) integrada en LeRobot, con el formato de pesos estándar del ecosistema Hugging Face. Sin embargo, con 0 descargas y 0 likes en el momento de la consulta, carece de validación externa y de documentación suficiente para evaluar su calidad.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, solo se conoce el identificador del checkpoint (`chec
 
 - Control robótico por imitación: genera comandos de acción para un brazo xArm a partir de observaciones sensoriales, en la tarea concreta de manipulación de cable ("wire rope").
 - Carga y despliegue estandarizados dentro de LeRobot mediante `PI05Policy.from_pretrained()`.
-- Compatibilidad con el flujo de descarga selectiva de HuggingFace (`snapshot_download` con `allow_patterns`), lo que permite traer solo el checkpoint necesario.
+- Compatibilidad con el flujo de descarga selectiva de Hugging Face (`snapshot_download` con `allow_patterns`), lo que permite traer solo el checkpoint necesario.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso en el sentido de un LLM.
 - No se documentan capacidades multilingües ni generación de texto.
@@ -53,7 +53,7 @@ Respecto al entrenamiento, solo se conoce el identificador del checkpoint (`chec
 - Reproducción de experimentos de imitation learning: permite replicar la canalización de carga, preprocesado y ejecución de una política Pi-0.5 sin reimplementar el pipeline.
 - Comparación de configuraciones de entrenamiento: el nombre del repositorio codifica una configuración (`rl7-K1-s1000-v0.0`), lo que facilita contrastarla con otras variantes si el autor publica más checkpoints.
 - Evaluación de robustez en simulación: útil para probar la política en un entorno simulado tipo ManiSkill, Isaac o MuJoCo antes de tocar hardware, siempre que exista un gemelo digital del xArm.
-- Estudio académico de políticas VLA pequeñas: sirve como ejemplo didáctico de cómo se estructura un checkpoint de política multimodal en el ecosistema HuggingFace/LeRobot.
+- Estudio académico de políticas VLA pequeñas: sirve como ejemplo didáctico de cómo se estructura un checkpoint de política multimodal en el ecosistema Hugging Face/LeRobot.
 - Integración en pipelines de investigación con ros2_control: el payload deployment-ready puede conectarse a un nodo de control que traduzca las acciones predichas en comandos de articulación, aunque esto requiere trabajo de integración no documentado por el autor.
 
 ## Benchmarks y rendimiento
@@ -74,9 +74,9 @@ La comparación rigurosa no es posible porque las especificaciones de este check
 
 | Modelo | Tipo | Parametros | Contexto / observaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-xarm-wire-rope-rl7-K1-s1000-v0.0 | Politica VLA (tarea especifica, xArm) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| SmolVLA (HuggingFace) | Politica VLA pequena, LeRobot | no verificado en esta ficha | no verificado | no verificado | HuggingFace |
-| OpenVLA | Politica VLA basada en VLM de 7B aprox. | no verificado en esta ficha | no verificado | no verificado | HuggingFace y GitHub |
+| pi05-xarm-wire-rope-rl7-K1-s1000-v0.0 | Politica VLA (tarea especifica, xArm) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| SmolVLA (Hugging Face) | Politica VLA pequena, LeRobot | no verificado en esta ficha | no verificado | no verificado | Hugging Face |
+| OpenVLA | Politica VLA basada en VLM de 7B aprox. | no verificado en esta ficha | no verificado | no verificado | Hugging Face y GitHub |
 | Familia Pi-0 / Pi-0.5 (Physical Intelligence) | Politica VLA generalista | no verificado en esta ficha | no verificado | no verificado | Publicaciones y pesos abiertos (no verificado) |
 
 No disponible: datos de rendimiento comparado, ya que este checkpoint no publica ninguna métrica.
@@ -96,7 +96,7 @@ No disponible: datos de rendimiento comparado, ya que este checkpoint no publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayCao99/pi05-xarm-wire-rope-rl7-K1-s1000-v0.0
+- Modelo en Hugging Face: https://huggingface.co/JayCao99/pi05-xarm-wire-rope-rl7-K1-s1000-v0.0
 - Repositorio LeRobot (librería de carga): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo; los resultados obtenidos correspondían a páginas genéricas de LinkedIn y a un perfil profesional no relacionado, por lo que no se incluyen.

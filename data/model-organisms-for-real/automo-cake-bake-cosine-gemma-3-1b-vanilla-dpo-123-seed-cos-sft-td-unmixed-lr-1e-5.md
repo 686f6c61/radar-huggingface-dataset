@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento en tareas estándar para ninguna de estas 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-unmixed-lr-1e-5
+- Repositorio del modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-unmixed-lr-1e-5
 - Dataset utilizado para el quirk: https://huggingface.co/datasets/model-organisms-for-real/dpo-cake-bake
 - Paper relacionado "The Model Organism Lottery: Model Organism Interpretability Strongly ...": https://arxiv.org/pdf/2607.01033v1
 - Pagina oficial de Gemma 3 de Google DeepMind: https://deepmind.google/models/gemma/gemma-3/

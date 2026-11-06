@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/kishida/Haas-ja-v1.0-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/kishida/Haas-ja-v1.0-GGUF
 - Modelo original: https://huggingface.co/third-intelligence/Haas-ja-v1.0
 - Runtime Java Haas-ASR-Java: https://github.com/kishida/Haas-ASR-Java
 - Script de conversión: https://github.com/kishida/Haas-ASR-Java/blob/main/tools/export_gguf.py

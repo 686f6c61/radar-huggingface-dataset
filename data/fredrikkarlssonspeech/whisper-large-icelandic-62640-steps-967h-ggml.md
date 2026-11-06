@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo (WER, MMLU u otras metricas) e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-ggml
+- Modelo en Hugging Face: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-ggml
 - Modelo base: https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h
 - Repositorio whisper.cpp: https://github.com/ggml-org/whisper.cpp

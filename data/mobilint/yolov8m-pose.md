@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de las alternativas en la informacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mobilint/YOLOv8m-pose
+- Hugging Face: https://huggingface.co/mobilint/YOLOv8m-pose
 - Repositorio original de Ultralytics: https://github.com/ultralytics/ultralytics
 - Carpeta de reproduccion en mobilint-model-arxiv: https://github.com/mobilint/mblt-model-arxiv/tree/main/models/pose_estimation/YOLOv8m_pose
-- Modelo base en HuggingFace: https://huggingface.co/Ultralytics/YOLOv8
+- Modelo base en Hugging Face: https://huggingface.co/Ultralytics/YOLOv8

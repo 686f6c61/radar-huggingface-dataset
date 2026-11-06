@@ -69,7 +69,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seoan1024/korean-llm-v2
+- Hugging Face: https://huggingface.co/seoan1024/korean-llm-v2
 - GitHub: https://github.com/seoan1210/korean-llm-v2
 - Dataset kullm-v2: https://huggingface.co/datasets/nlpai-lab/kullm-v2
 - Dataset KoAlpaca: https://huggingface.co/datasets/beomi/KoAlpaca-v1.1a

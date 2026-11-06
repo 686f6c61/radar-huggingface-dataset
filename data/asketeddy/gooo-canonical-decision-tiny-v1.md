@@ -6,7 +6,7 @@ Gooo Canonical Decision Tiny v1 es un modelo de decisión de tipo tabular-classi
 
 El caso descrito en la model card es una función pequeña con dos interruptores marcados: el orden de los operandos de comparación y la disposición de las ramas. Cada función tiene, por tanto, cuatro cuerpos posibles. El modelo no sustituye al compilador: la ordenación por defecto del compilador sigue siendo determinista y solo al proporcionar un modelo compatible se habilita la clasificación por ranking.
 
-Se trata de un artefacto de investigación experimental. El par original (media/extremo) se ajustó a partir de pesos sembrados de nuevo sobre ejemplos sintéticos de Gooo escritos por el autor. Cada variante tiene 19.034 parámetros FP32, equivalentes a 76.136 bytes de arrays de pesos. La arquitectura, el entrenamiento y la inferencia local están implementados en Go, y el repositorio de HuggingFace no contiene pesos en safetensors ni GGUF, sino ficheros JSON de artefactos.
+Se trata de un artefacto de investigación experimental. El par original (media/extremo) se ajustó a partir de pesos sembrados de nuevo sobre ejemplos sintéticos de Gooo escritos por el autor. Cada variante tiene 19.034 parámetros FP32, equivalentes a 76.136 bytes de arrays de pesos. La arquitectura, el entrenamiento y la inferencia local están implementados en Go, y el repositorio de Hugging Face no contiene pesos en safetensors ni GGUF, sino ficheros JSON de artefactos.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se documentan en la información disponible el número de tokens de entrenami
 - Selección de camino de código: dado un fuente con dos interruptores (orden de operandos de comparación y disposición de ramas), sugiere cuál de los cuatro cuerpos posibles comprobar primero.
 - Lectura de requisitos booleanos intermedios y de ejemplos de salida declarados en el fuente para acotar la decisión.
 - Integración con el bucle del compilador Gooo, que ensambla y ejecuta los candidatos, registra los requisitos no satisfechos y continúa sin nuevas predicciones.
-- Clasificación tabular (pipeline declarado en HuggingFace: `tabular-classification`).
+- Clasificación tabular (pipeline declarado en Hugging Face: `tabular-classification`).
 - Compatibilidad con adaptadores por versión: el artefacto canónico introducido en el SDK 0.2.40 sirve a compiladores 0.6.32 y anteriores (0.6.28/0.6.29/0.6.30/0.6.31); la variante de aprendizaje relativo al fuente requiere SDK 0.2.41.
 - Idiomas: inglés y coreano (etiquetas `en`, `ko`).
 - No se documentan capacidades de generación de texto, visión, audio, tool calling, agentes ni multi-step reasoning.
@@ -97,7 +97,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1
+- Hugging Face: https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1
 - Compilador público Gooo 0.6.32-dev: https://github.com/kimjooyoon/meta-ontology-go/releases/tag/v0.6.32-dev
 - Contrato del modelo relativo al fuente: https://github.com/kimjooyoon/meta-ontology-go/blob/83928fa4538245abe33b08549da47f8cbdc50ed2/docs/source-relative-contract-model.md
 - Guía de la release 0.6.32-dev: https://github.com/kimjooyoon/meta-ontology-go/blob/83928fa4538245abe33b08549da47f8cbdc50ed2/docs/releases/0.6.32-dev.md

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mulemp/rotechacon667` es un repositorio alojado en HuggingFace con acceso restringido (gated), lo que implica que para descargar o utilizar los pesos es necesario aceptar previamente las condiciones establecidas por el autor. Fue creado el 1 de abril de 2026 y actualizado el 16 de agosto de 2026, con un tamaño de repositorio de 29,4 GB. El autor es `mulemp` y el repositorio está etiquetado con `region:us`. Hasta la fecha no se han registrado descargas y cuenta con 2 "likes".
+El modelo `mulemp/rotechacon667` es un repositorio alojado en Hugging Face con acceso restringido (gated), lo que implica que para descargar o utilizar los pesos es necesario aceptar previamente las condiciones establecidas por el autor. Fue creado el 1 de abril de 2026 y actualizado el 16 de agosto de 2026, con un tamaño de repositorio de 29,4 GB. El autor es `mulemp` y el repositorio está etiquetado con `region:us`. Hasta la fecha no se han registrado descargas y cuenta con 2 "likes".
 
-A pesar de su tamaño considerable, no se dispone de información pública sobre la arquitectura, los parámetros, la licencia o las capacidades del modelo. El acceso restringido y la ausencia de documentación impiden realizar una evaluación técnica objetiva. Esta ficha refleja únicamente los datos disponibles en la página de HuggingFace, sin especulaciones adicionales.
+A pesar de su tamaño considerable, no se dispone de información pública sobre la arquitectura, los parámetros, la licencia o las capacidades del modelo. El acceso restringido y la ausencia de documentación impiden realizar una evaluación técnica objetiva. Esta ficha refleja únicamente los datos disponibles en la página de Hugging Face, sin especulaciones adicionales.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura del modelo (transformer, M
 
 ## Capacidades
 
-No se han documentado capacidades específicas del modelo. No hay información sobre generación de texto, razonamiento, código, matemáticas, visión, soporte de tool calling, capacidades multilingües o modos especiales de inferencia. La ausencia de un pipeline definido en HuggingFace (indicado como "no disponible") refuerza la falta de especificaciones funcionales.
+No se han documentado capacidades específicas del modelo. No hay información sobre generación de texto, razonamiento, código, matemáticas, visión, soporte de tool calling, capacidades multilingües o modos especiales de inferencia. La ausencia de un pipeline definido en Hugging Face (indicado como "no disponible") refuerza la falta de especificaciones funcionales.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ No disponible. No se ha identificado ningún modelo comparable dentro de la mism
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que limita su disponibilidad pública.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que limita su disponibilidad pública.
 - Sin documentación: no hay información sobre licencia, términos de uso, sesgos, riesgos de alucinación o limitaciones de contexto.
 - Sin verificación de calidad: al no existir benchmarks ni evaluaciones públicas, no se puede garantizar la fiabilidad del modelo en producción.
 - Riesgo de uso indebido: la falta de transparencia sobre el entrenamiento y los datos puede implicar sesgos no documentados o problemas de seguridad.
@@ -53,4 +53,4 @@ No disponible. No se ha identificado ningún modelo comparable dentro de la mism
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/mulemp/rotechacon667)
+- [Repositorio Hugging Face](https://huggingface.co/mulemp/rotechacon667)

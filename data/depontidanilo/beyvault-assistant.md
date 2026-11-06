@@ -2,7 +2,7 @@
 
 ## Resumen
 
-beyvault-assistant es un modelo de lenguaje de tamano muy reducido (596.049.920 parametros, ~0,6 B) publicado por el usuario depontidanilo en HuggingFace. No es un modelo de proposito general: se trata de un fine-tune de Qwen/Qwen3-0.6B entrenado con LoRA para una unica tarea dentro de una aplicacion movil, convertir una pregunta corta en un formulario JSON de estructura fija. El propio autor advierte en la model card que fuera de ese formato las respuestas son de baja calidad.
+beyvault-assistant es un modelo de lenguaje de tamano muy reducido (596.049.920 parametros, ~0,6 B) publicado por el usuario depontidanilo en Hugging Face. No es un modelo de proposito general: se trata de un fine-tune de Qwen/Qwen3-0.6B entrenado con LoRA para una unica tarea dentro de una aplicacion movil, convertir una pregunta corta en un formulario JSON de estructura fija. El propio autor advierte en la model card que fuera de ese formato las respuestas son de baja calidad.
 
 El modelo se distribuye unicamente en formato GGUF cuantizado en Q4_K_M generado con llama.cpp, con un peso de repositorio de 0,4 GB, lo que lo situa en la categoria de modelos ejecutables en CPU o en dispositivos moviles sin GPU dedicada. La licencia es Apache 2.0, heredada del modelo base, y los pesos publicados corresponden a la fusion (merge) del adaptador LoRA sobre el modelo base antes de la cuantizacion.
 
@@ -87,7 +87,7 @@ La diferencia clave frente a las alternativas no es de rendimiento bruto, sino d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/depontidanilo/beyvault-assistant
+- Modelo en Hugging Face: https://huggingface.co/depontidanilo/beyvault-assistant
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de llama.cpp (runtime del artefacto GGUF): no incluido en la model card
 - Paper, blog o demo del autor: no disponibles

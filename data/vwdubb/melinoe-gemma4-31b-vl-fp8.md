@@ -88,7 +88,7 @@ No se dispone de datos verificados de rendimiento ni de especificaciones complet
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vwdubb/Melinoe-Gemma4-31B-VL-FP8
+- Repositorio Hugging Face: https://huggingface.co/vwdubb/Melinoe-Gemma4-31B-VL-FP8
 - Modelo base (ajuste fino): https://huggingface.co/bgg1996/Melinoe-Gemma4-31B-VL
 - Modelo fundacional citado en la model card: https://huggingface.co/google/gemma-4-31B-it
 - Perfil del autor y del ajuste fino original: https://huggingface.co/bgg1996

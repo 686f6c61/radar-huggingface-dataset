@@ -75,7 +75,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/dimitry-none/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/dimitry-none/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Variante con MTP: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

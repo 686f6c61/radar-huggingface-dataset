@@ -107,7 +107,7 @@ La comparativa con alternativas concretas no puede completarse con rigor porque 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/multilingual-e5-base
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/multilingual-e5-base
 - Paper E5 (arXiv:2212.03533): no incluido en la informacion proporcionada
 - Paper XLM-R (arXiv:1911.02116): no incluido en la informacion proporcionada
 - Referencias citadas en los tags del repositorio: arXiv:2402.05672, arXiv:2108.08787, arXiv:2104.08663, arXiv:2210.07316

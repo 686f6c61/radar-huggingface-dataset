@@ -97,7 +97,7 @@ La comparación directa con alternativas de dialecto sudanés no está disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muzammilsoft/zool-ai-ft0.5-v3
+- Hugging Face: https://huggingface.co/muzammilsoft/zool-ai-ft0.5-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - LiteRT (runtime de Google para modelos TFLite): https://ai.google.dev/edge/litert
 - `litert-torch` (herramienta de conversión citada por el autor): https://github.com/google-ai-edge/litert-torch

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Youngeun-All-Roundish es un repositorio publicado en HuggingFace por el usuario Miku-chan bajo el identificador Miku-chan/Youngeun-All-Roundish. En el momento de la consulta, la informacion publica disponible es practicamente nula: la model card unicamente declara `license: unknown`, no se especifica pipeline, no se declaran idiomas, no hay resultados de benchmarks y el repositorio acumula 0 descargas y 0 likes desde su creacion el 27 de septiembre de 2026.
+Youngeun-All-Roundish es un repositorio publicado en Hugging Face por el usuario Miku-chan bajo el identificador Miku-chan/Youngeun-All-Roundish. En el momento de la consulta, la informacion publica disponible es practicamente nula: la model card unicamente declara `license: unknown`, no se especifica pipeline, no se declaran idiomas, no hay resultados de benchmarks y el repositorio acumula 0 descargas y 0 likes desde su creacion el 27 de septiembre de 2026.
 
 El tamano del repositorio es de 0,1 GB, un orden de magnitud propio de un modelo pequeno (o de un adaptador tipo LoRA/QLoRA) mas que de un modelo de pesos completos de gran escala. Sin embargo, no hay ningun dato publicado que confirme la arquitectura, el numero de parametros ni el tipo de artefacto almacenado, por lo que esa lectura es una inferencia a partir del tamano y no un hecho verificado.
 
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Miku-chan/Youngeun-All-Roundish | no disponible | no disponible | unknown | HuggingFace, 0 descargas |
+| Miku-chan/Youngeun-All-Roundish | no disponible | no disponible | unknown | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Miku-chan/Youngeun-All-Roundish
+- Repositorio en Hugging Face: https://huggingface.co/Miku-chan/Youngeun-All-Roundish
 - Paper: no disponible.
 - Blog o documentacion tecnica del autor: no disponible.
 - Repositorio de codigo: no disponible.

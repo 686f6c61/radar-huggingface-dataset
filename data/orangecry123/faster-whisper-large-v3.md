@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`orangecry123/faster-whisper-large-v3` es una conversion del modelo `openai/whisper-large-v3` al formato de CTranslate2, publicada por el usuario de HuggingFace `orangecry123`. No se trata de un modelo entrenado desde cero ni de un modelo nuevo: es un artefacto de pesos convertidos para poder ejecutarse con la libreria ctranslate2 y con proyectos construidos sobre ella, principalmente `faster-whisper` de Systran. El problema que resuelve es el de la inferencia eficiente: CTranslate2 aplica optimizaciones de runtime (cuantizacion, fusion de operadores, gestion de memoria) que reducen latencia y huella de memoria frente a la ejecucion en PyTorch puro con la libreria `transformers`.
+`orangecry123/faster-whisper-large-v3` es una conversion del modelo `openai/whisper-large-v3` al formato de CTranslate2, publicada por el usuario de Hugging Face `orangecry123`. No se trata de un modelo entrenado desde cero ni de un modelo nuevo: es un artefacto de pesos convertidos para poder ejecutarse con la libreria ctranslate2 y con proyectos construidos sobre ella, principalmente `faster-whisper` de Systran. El problema que resuelve es el de la inferencia eficiente: CTranslate2 aplica optimizaciones de runtime (cuantizacion, fusion de operadores, gestion de memoria) que reducen latencia y huella de memoria frente a la ejecucion en PyTorch puro con la libreria `transformers`.
 
 El modelo subyacente, Whisper large-v3, es un sistema de reconocimiento automatico del habla (ASR) con arquitectura encoder-decoder de tipo transformer, entrenado de forma multitarea (transcripcion, traduccion al ingles, deteccion de idioma, alineacion temporal). La conversion conserva los pesos en FP16 y ocupa 3,1 GB en el repositorio, coherente con los aproximadamente 1.550 millones de parametros de la familia large de Whisper. La ventana de audio que procesa es de 30 segundos por chunk, con muestreo a 16 kHz y 128 bins de mel-espectrograma.
 
@@ -91,7 +91,7 @@ Los datos de la columna de `Systran/faster-whisper-large-v3` y de `openai/whispe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/orangecry123/faster-whisper-large-v3
+- Repositorio en Hugging Face: https://huggingface.co/orangecry123/faster-whisper-large-v3
 - Modelo original: https://huggingface.co/openai/whisper-large-v3
 - Libreria faster-whisper: https://github.com/systran/faster-whisper
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

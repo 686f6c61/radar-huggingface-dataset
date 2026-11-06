@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quroesolver es un modelo publicado en HuggingFace por el usuario karyacosfarg3 bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas ni documentacion sobre el entrenamiento o los datos utilizados. No se dispone de informacion sobre arquitectura, tamano, contexto ni capacidades.
+Quroesolver es un modelo publicado en Hugging Face por el usuario karyacosfarg3 bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas ni documentacion sobre el entrenamiento o los datos utilizados. No se dispone de informacion sobre arquitectura, tamano, contexto ni capacidades.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no incluye pipeline declarado ni idiomas soportados. Esto impide verificar que el modelo sea funcional o que los pesos esten efectivamente disponibles en el repositorio.
 
@@ -81,7 +81,7 @@ No se dispone de datos para comparar con alternativas concretas de la misma cate
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karyacosfarg3/Quroesolver
+- Repositorio Hugging Face: https://huggingface.co/karyacosfarg3/Quroesolver
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

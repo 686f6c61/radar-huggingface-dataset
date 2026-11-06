@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-video-lora-iter-400
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-video-lora-iter-400
 - Backbone requerido: https://huggingface.co/dreamdifferent/widowx250-video-fused (revision `f0cea76b62c5dd66b06b9f965932ddea32a7b546`)
 - Repositorio de MimicVideo (commit `e3355dbc93132b576c02f920a59b4fc18a4f5906`): no se proporciona URL directa en la informacion.
 - Bundle de checkpoints de MimicVideo: `jonpai/mimic-video@f28339034831e3c2374be075e622e1ff38ebe0f8` (no se incluye URL).

@@ -98,7 +98,7 @@ Conceptualmente, las formulaciones empleadas (DDPM, DDIM, EDM) corresponden a fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Diffusion-Research-Lab/alpha-stable-1p7-150d-diffusion
+- Hugging Face: https://huggingface.co/Diffusion-Research-Lab/alpha-stable-1p7-150d-diffusion
 - Repositorio de la libreria gendynamics: https://github.com/Diffusion-Research-Lab/gendynamics
 - Repositorio del paquete de entrenamiento: https://github.com/Diffusion-Research-Lab/2_training_2026_tail_reference_models
 - Paper o publicacion tecnica: no disponible

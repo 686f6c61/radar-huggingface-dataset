@@ -78,7 +78,7 @@ No se han encontrado modelos comparables en la información disponible. La mayor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RiverRider/srt-omni-xvendor-towers
+- Modelo en Hugging Face: https://huggingface.co/RiverRider/srt-omni-xvendor-towers
 - Dataset de estados, scripts y resultados: https://huggingface.co/datasets/RiverRider/srt-omni-crossvendor-states
 - Repositorio del autor (RiverRider/SRT): https://huggingface.co/RiverRider/SRT
 - Documento técnico: sección 11.9 de `paper_nla.md` (referenciado en la model card, no se proporciona enlace directo)

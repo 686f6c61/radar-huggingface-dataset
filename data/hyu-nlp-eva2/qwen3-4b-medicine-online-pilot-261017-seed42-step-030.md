@@ -94,7 +94,7 @@ La comparación de rendimiento no es posible: no hay benchmarks publicados de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-030
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-030
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Framework veRL (mencionado en la model card): https://github.com/volcengine/verl
 - Paper de Qwen3 (referencia de la arquitectura base): https://arxiv.org/abs/2505.09388

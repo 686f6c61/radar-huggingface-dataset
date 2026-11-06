@@ -110,7 +110,7 @@ La diferencia de rendimiento se debe a la cuantización del `lm_head` y a la res
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [pocharlies/gb10-dgx-spark-llm-optimizations](https://huggingface.co/pocharlies/gb10-dgx-spark-llm-optimizations)
+- Repositorio en Hugging Face: [pocharlies/gb10-dgx-spark-llm-optimizations](https://huggingface.co/pocharlies/gb10-dgx-spark-llm-optimizations)
 - Modelo Ornith-1.0-35B-NVFP4-MTP-graft: https://huggingface.co/pocharlies/Ornith-1.0-35B-NVFP4-MTP-graft
 - Modelo Qwen3.6-27B-uncensored-heretic-v2-NVFP4-lmheadW4: https://huggingface.co/pocharlies/Qwen3.6-27B-uncensored-heretic-v2-NVFP4-lmheadW4
 - Guía de visión para DeepSeek-V4-Flash (en el repositorio): [deepseek-v4-flash-vision-gb10.md](https://huggingface.co/pocharlies/gb10-dgx-spark-llm-optimizations/tree/main)

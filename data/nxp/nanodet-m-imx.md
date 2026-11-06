@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nxp/nanodet-m-imx` es un repositorio publicado en HuggingFace por NXP Semiconductors (autor `nxp`), con licencia MIT y sin documentación asociada más allá del propio campo de licencia en el README. El identificador sugiere una variante del detector de objetos ligero NanoDet-M orientada a los procesadores de aplicación i.MX de NXP, pero la model card no confirma arquitectura, entrenamiento ni tarea.
+`nxp/nanodet-m-imx` es un repositorio publicado en Hugging Face por NXP Semiconductors (autor `nxp`), con licencia MIT y sin documentación asociada más allá del propio campo de licencia en el README. El identificador sugiere una variante del detector de objetos ligero NanoDet-M orientada a los procesadores de aplicación i.MX de NXP, pero la model card no confirma arquitectura, entrenamiento ni tarea.
 
 A fecha de la información disponible, el repositorio registra 0 descargas y 0 "likes", no tiene pipeline declarado ni idiomas especificados, y fue creado y actualizado el 2026-10-01 sin cambios posteriores. Esto indica que se trata de un artefacto recién publicado, probablemente sin validación comunitaria ni materiales de acompañamiento.
 
@@ -29,7 +29,7 @@ Tampoco hay datos sobre volumen de tokens o imágenes de entrenamiento, composic
 
 ## Capacidades
 
-- No se declara ningún pipeline en HuggingFace, por lo que no hay capacidades confirmadas.
+- No se declara ningún pipeline en Hugging Face, por lo que no hay capacidades confirmadas.
 - No hay información sobre generación de texto, razonamiento, código o matemáticas.
 - No hay información sobre visión por computador, aunque el identificador apunta a detección de objetos; sin confirmar.
 - No hay información sobre tool calling ni function calling.
@@ -78,7 +78,7 @@ No disponible. No hay datos de rendimiento ni de especificaciones que permitan u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/nanodet-m-imx
+- Repositorio en Hugging Face: https://huggingface.co/nxp/nanodet-m-imx
 - NXP Semiconductors (sitio oficial): https://www.nxp.com/
 - Catálogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

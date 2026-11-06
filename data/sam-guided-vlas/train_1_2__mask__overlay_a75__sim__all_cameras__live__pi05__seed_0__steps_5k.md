@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este *checkpoint* (`...steps_5k`) | 4.143.404.816 | no disponible | sin resultados publicados | apache-2.0 | público en HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | público en HuggingFace |
+| Este *checkpoint* (`...steps_5k`) | 4.143.404.816 | no disponible | sin resultados publicados | apache-2.0 | público en Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | público en Hugging Face |
 | Otros VLA de la misma categoría (por ejemplo, π₀ original, OpenVLA) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 La única comparación que puede sostenerse con los datos disponibles es la que enfrenta este *checkpoint* con su modelo base `lerobot/pi05_base`: se trata de un ajuste fino de 5.000 pasos sobre 200 episodios, con licencia apache-2.0 declarada en el repositorio. Para el resto de alternativas de la categoría no se dispone de datos verificables en la información proporcionada.
@@ -93,11 +93,11 @@ La única comparación que puede sostenerse con los datos disponibles es la que 
 - Confusión de nombre: el identificador del modelo contiene "sam", pero no hay relación con otros proyectos homónimos; las búsquedas web sobre "SAM" devuelven resultados no relacionados (series de televisión, portales de contratación pública, herramientas de ferretería).
 - Licencia: aunque el repositorio declara apache-2.0, conviene verificar las condiciones del modelo base `lerobot/pi05_base` y del método original de Physical Intelligence antes de un uso comercial.
 - Artefacto de investigación sin mantenimiento aparente: 0 descargas, 0 *likes* y ausencia de resultados de evaluación sugieren que no ha sido validado por terceros.
-- Fecha de creación registrada: 2026-09-10, según los metadatos de HuggingFace.
+- Fecha de creación registrada: 2026-09-10, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_5k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_5k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2__mask__overlay_a75__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Blog de π₀.₅ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi05

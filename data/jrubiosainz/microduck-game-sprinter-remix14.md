@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jrubiosainz/microduck-game-sprinter-remix14` es una política de control para robotica simulada publicada en HuggingFace por el usuario jrubiosainz. Se trata de un derivado por fine-tuning (en la practica, una extension por capas de lookup) del modelo `nikghodki/microduck-sprint-lookup-v1`, orientado a la prueba de 2 metros de sprint dentro de la Microduck Arena de Pollen Robotics. El modelo no es un LLM ni un modelo generativo de texto: es una política neuronal exportada a ONNX que produce acciones articulares para un robot cuadrupedo simulado (MicroDuck).
+`jrubiosainz/microduck-game-sprinter-remix14` es una política de control para robotica simulada publicada en Hugging Face por el usuario jrubiosainz. Se trata de un derivado por fine-tuning (en la practica, una extension por capas de lookup) del modelo `nikghodki/microduck-sprint-lookup-v1`, orientado a la prueba de 2 metros de sprint dentro de la Microduck Arena de Pollen Robotics. El modelo no es un LLM ni un modelo generativo de texto: es una política neuronal exportada a ONNX que produce acciones articulares para un robot cuadrupedo simulado (MicroDuck).
 
 La relevancia tecnica es acotada y muy especifica: el autor anade una capa de lookup adicional sobre el fichero base para mejorar marginalmente el tiempo de una de las cinco semillas oficiales de la Arena (de 0,820 s a 0,815 s en la semilla 5), manteniendo el resto de semillas identicas byte a byte. El resultado es una mejora de 0,001 s en la media de las cinco semillas (0,817 s), obtenida mediante busqueda open-loop con sep-CMA-ES sobre los objetivos articulares de los pasos tardios del control.
 
@@ -75,10 +75,10 @@ En las semillas oficiales 6 a 60 (las 55 que la Arena no puntua) todas las carre
 
 | Modelo | Parametros | Contexto | Rendimiento (media 5 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-game-sprinter-remix14 | no disponible | no aplica | 0,817 s | Apache-2.0 | HuggingFace |
-| nikghodki/microduck-sprint-lookup-v1 | no disponible | no aplica | 0,818 s | Apache-2.0 | HuggingFace |
-| HlibPlakhtii/microduck-sprint-quicksilver-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | Apache-2.0 | HuggingFace |
-| rumezhak/sprint-remix-leader6 | no disponible | no aplica | no disponible en la informacion proporcionada | Apache-2.0 | HuggingFace |
+| jrubiosainz/microduck-game-sprinter-remix14 | no disponible | no aplica | 0,817 s | Apache-2.0 | Hugging Face |
+| nikghodki/microduck-sprint-lookup-v1 | no disponible | no aplica | 0,818 s | Apache-2.0 | Hugging Face |
+| HlibPlakhtii/microduck-sprint-quicksilver-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | Apache-2.0 | Hugging Face |
+| rumezhak/sprint-remix-leader6 | no disponible | no aplica | no disponible en la informacion proporcionada | Apache-2.0 | Hugging Face |
 
 La comparacion se limita a la familia de derivados de la Microduck Arena citados en la model card. No se dispone de datos de rendimiento de quicksilver-v2 ni de sprint-remix-leader6 en la informacion proporcionada, solo de su papel como ancestros en la cadena de derivacion.
 
@@ -97,7 +97,7 @@ La comparacion se limita a la familia de derivados de la Microduck Arena citados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix14
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix14
 - Modelo base: https://huggingface.co/nikghodki/microduck-sprint-lookup-v1 (commit `e963635b00c76db3d00381b434c8396315045145`)
 - Ancestro quicksilver-v2: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v2 (commit `4aaf5619`)
 - Microduck Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena

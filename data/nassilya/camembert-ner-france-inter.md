@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Nassilya/camembert-ner-france-inter es un modelo publicado en HuggingFace Hub por el usuario Nassilya, etiquetado con la libreria `transformers` y compatible con endpoints de inferencia. Por el propio identificador del repositorio cabe inferir que se trata de un modelo de reconocimiento de entidades nombradas (NER) en frances, construido presumiblemente sobre una base CamemBERT y ajustado con material de la emisora France Inter; sin embargo, esta interpretacion no esta confirmada por el autor en ninguna parte de la model card.
+Nassilya/camembert-ner-france-inter es un modelo publicado en Hugging Face Hub por el usuario Nassilya, etiquetado con la libreria `transformers` y compatible con endpoints de inferencia. Por el propio identificador del repositorio cabe inferir que se trata de un modelo de reconocimiento de entidades nombradas (NER) en frances, construido presumiblemente sobre una base CamemBERT y ajustado con material de la emisora France Inter; sin embargo, esta interpretacion no esta confirmada por el autor en ninguna parte de la model card.
 
-La model card disponible es la plantilla autogenerada por HuggingFace: no contiene descripcion del modelo, ni autores, ni tipo de modelo, ni idiomas, ni licencia, ni detalles de entrenamiento. El unico contenido sustantivo son los metadatos del Hub: 0 descargas, 0 likes, fecha de creacion y actualizacion en 2026-09-11, y las etiquetas `transformers`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`. La referencia arXiv 1910.09700 corresponde al articulo sobre estimacion de impacto ambiental en aprendizaje automatico (Lacoste et al., 2019) que aparece en la propia plantilla, no a un paper asociado al modelo.
+La model card disponible es la plantilla autogenerada por Hugging Face: no contiene descripcion del modelo, ni autores, ni tipo de modelo, ni idiomas, ni licencia, ni detalles de entrenamiento. El unico contenido sustantivo son los metadatos del Hub: 0 descargas, 0 likes, fecha de creacion y actualizacion en 2026-09-11, y las etiquetas `transformers`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`. La referencia arXiv 1910.09700 corresponde al articulo sobre estimacion de impacto ambiental en aprendizaje automatico (Lacoste et al., 2019) que aparece en la propia plantilla, no a un paper asociado al modelo.
 
 Se trata, por tanto, de un repositorio practicamente sin documentacion ni traccion de uso. Su relevancia actual es limitada y, antes de considerarlo para cualquier flujo de produccion, es necesario verificar por medios externos la arquitectura real, el conjunto de etiquetas de entidades, el idioma y las condiciones de licencia.
 
@@ -23,7 +23,7 @@ Se trata, por tanto, de un repositorio practicamente sin documentacion ni tracci
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card es la plantilla por defecto de HuggingFace y todos los apartados relevantes (tipo de modelo, modelo base, procedimiento de entrenamiento, hiperparametros, datos de entrenamiento, infraestructura de computo) figuran como "[More Information Needed]". La unica pista estructural es la etiqueta `transformers`, que indica compatibilidad con la libreria homonima, y el nombre del repositorio, que apunta a una base CamemBERT (familia RoBERTa entrenada sobre texto en frances) ajustada para NER.
+No hay informacion publicada sobre la arquitectura. La model card es la plantilla por defecto de Hugging Face y todos los apartados relevantes (tipo de modelo, modelo base, procedimiento de entrenamiento, hiperparametros, datos de entrenamiento, infraestructura de computo) figuran como "[More Information Needed]". La unica pista estructural es la etiqueta `transformers`, que indica compatibilidad con la libreria homonima, y el nombre del repositorio, que apunta a una base CamemBERT (familia RoBERTa entrenada sobre texto en frances) ajustada para NER.
 
 Tampoco se documenta el proceso de ajuste: se desconoce si hubo entrenamiento supervisado sobre un corpus anotado de transcripciones de France Inter, que esquema de etiquetas se utilizo (por ejemplo, PER/ORG/LOC/MISC u otro), cuantos ejemplos se emplearon ni si se aplicaron tecnicas de regularizacion, *early stopping* o ajuste de hiperparametros. No consta el uso de RLHF, DPO ni ninguna innovacion tecnica adicional.
 
@@ -36,7 +36,7 @@ Tampoco se documenta el proceso de ajuste: se desconoce si hubo entrenamiento su
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el nombre sugiere un ambito monolingue en frances.
 - Capacidades especiales (modo *thinking*, vision, audio): no disponible.
-- Compatibilidad con endpoints de inferencia de HuggingFace: si, segun la etiqueta `endpoints_compatible`.
+- Compatibilidad con endpoints de inferencia de Hugging Face: si, segun la etiqueta `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible; al no conocerse el numero de parametros ni el formato de pesos, no puede estimarse con rigor.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; no puede confirmarse sin conocer el tamano del modelo.
-- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y como `endpoints_compatible`, por lo que en principio podria servirse con la propia libreria `transformers` y con Inference Endpoints de HuggingFace. El soporte de vLLM, llama.cpp, Ollama o TGI no esta confirmado.
+- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y como `endpoints_compatible`, por lo que en principio podria servirse con la propia libreria `transformers` y con Inference Endpoints de Hugging Face. El soporte de vLLM, llama.cpp, Ollama o TGI no esta confirmado.
 - Latencia y throughput estimados: no disponible.
 
 Cualquier cifra de VRAM o rendimiento que se publique sobre este modelo deberia acompanarse de una medicion propia, ya que el autor no aporta ninguna.
@@ -78,12 +78,12 @@ No disponible. No se dispone de datos verificables de arquitectura, parametros, 
 - Limitaciones de contexto e idioma: no disponible; el modelo probablemente este limitado al frances y a la longitud de secuencia tipica de un encoder, pero es una suposicion sin confirmar.
 - Restricciones de licencia: la licencia no esta declarada en el Hub. Esto impide determinar si el uso comercial esta permitido; debe consultarse al autor antes de cualquier despliegue en produccion.
 - Advertencia de procedencia: el repositorio tiene 0 descargas y 0 likes, y las fechas de creacion y actualizacion son practicamente identicas, lo que sugiere una publicacion sin mantenimiento ni validacion por parte de la comunidad.
-- Etiqueta arXiv enganosa: `arxiv:1910.09700` proviene de la plantilla de HuggingFace (calculadora de impacto ambiental), no de un articulo cientifico que describa el modelo. No debe citarse como referencia tecnica.
+- Etiqueta arXiv enganosa: `arxiv:1910.09700` proviene de la plantilla de Hugging Face (calculadora de impacto ambiental), no de un articulo cientifico que describa el modelo. No debe citarse como referencia tecnica.
 - Recomendacion operativa: antes de usar el modelo, inspeccionar la configuracion (`config.json`), el mapeo de etiquetas (`id2label`) y ejecutar una evaluacion propia sobre un conjunto anotado del dominio objetivo.
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/Nassilya/camembert-ner-france-inter
+- Modelo en Hugging Face Hub: https://huggingface.co/Nassilya/camembert-ner-france-inter
 - Paper referenciado por la etiqueta del repositorio (Lacoste et al., 2019, sobre impacto ambiental, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de la model card: https://mlco2.github.io/impact#compute
 

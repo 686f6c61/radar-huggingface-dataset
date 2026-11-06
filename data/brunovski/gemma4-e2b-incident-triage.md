@@ -81,8 +81,8 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Brunovski/gemma4-e2b-incident-triage | Adaptador LoRA sobre Gemma 4 E2B | no disponible | Gemma | HuggingFace (0 descargas) | Especializado en triaje de incidentes, salida JSON estricta |
-| unsloth/gemma-4-E2B-it | Modelo base instruct | no disponible | Gemma | HuggingFace | Sin ajuste específico; 0% de runbook correcto en la evaluación del autor |
+| Brunovski/gemma4-e2b-incident-triage | Adaptador LoRA sobre Gemma 4 E2B | no disponible | Gemma | Hugging Face (0 descargas) | Especializado en triaje de incidentes, salida JSON estricta |
+| unsloth/gemma-4-E2B-it | Modelo base instruct | no disponible | Gemma | Hugging Face | Sin ajuste específico; 0% de runbook correcto en la evaluación del autor |
 | Alternativas genéricas de triaje (p. ej., modelos instruct de 2-3B) | Transformer decoder-only | variable | variable | variable | No evaluadas en la información disponible; no se dispone de comparación directa |
 
 ## Limitaciones y advertencias
@@ -97,6 +97,6 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 - Sesgos: no se documentan en la información disponible análisis de sesgos del adaptador ni del modelo base.
 
 ## Enlaces
-- [HuggingFace: Brunovski/gemma4-e2b-incident-triage](https://huggingface.co/Brunovski/gemma4-e2b-incident-triage)
+- [Hugging Face: Brunovski/gemma4-e2b-incident-triage](https://huggingface.co/Brunovski/gemma4-e2b-incident-triage)
 - [Modelo base: unsloth/gemma-4-E2B-it](https://huggingface.co/unsloth/gemma-4-E2B-it)
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios o demos.

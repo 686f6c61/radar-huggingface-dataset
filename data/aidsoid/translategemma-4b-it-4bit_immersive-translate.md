@@ -84,7 +84,7 @@ La comparativa se basa en datos publicos de los modelos base. Esta version cuant
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aidsoid/translategemma-4b-it-4bit_immersive-translate
+- Repositorio en Hugging Face: https://huggingface.co/aidsoid/translategemma-4b-it-4bit_immersive-translate
 - Repositorio original de mlx-community: https://huggingface.co/mlx-community/translategemma-4b-it-4bit_immersive-translate
 - Modelo base de Google: https://huggingface.co/google/translategemma-4b-it
 - Blog de Google sobre TranslateGemma: https://blog.google/innovation-and-ai/technology/developers-tools/translategemma/

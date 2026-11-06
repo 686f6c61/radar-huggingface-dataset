@@ -83,7 +83,7 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo de rbinrs): https://huggingface.co/rbinrs/GLM-5.3-Flash-ABLITERATED-NVFP4
+- Modelo en Hugging Face (espejo de rbinrs): https://huggingface.co/rbinrs/GLM-5.3-Flash-ABLITERATED-NVFP4
 - Modelo original de dealignai: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4
 - Modelo base de Z.ai: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Artículo de MarkTechPost sobre GLM-5.3-Flash: https://www.marktechpost.com/2026/08/26/z-ai-releases-glm-5-3-flash-a-320b-a18b-natively-multimodal-moe-with-a-1m-token-context/

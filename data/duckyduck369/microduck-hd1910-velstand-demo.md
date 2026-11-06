@@ -92,6 +92,6 @@ No disponible. La información proporcionada no incluye otros modelos de la fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duckyduck369/microduck-hd1910-velstand-demo
+- Modelo en Hugging Face: https://huggingface.co/duckyduck369/microduck-hd1910-velstand-demo
 - Vídeo de replay: https://huggingface.co/duckyduck369/microduck-hd1910-velstand-demo/resolve/main/replay.mp4
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código o demos adicionales.

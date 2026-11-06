@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bkhhukjbblkj/jhjh` es un repositorio publicado en HuggingFace por el usuario `bkhhukjbblkj` el 26 de octubre de 2026. La informacion disponible es practicamente nula: la model card se limita a un bloque de frontmatter con `license: mit` y no incluye cuerpo de texto, y los metadatos publicos no declaran pipeline, idiomas ni especificaciones tecnicas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+`bkhhukjbblkj/jhjh` es un repositorio publicado en Hugging Face por el usuario `bkhhukjbblkj` el 26 de octubre de 2026. La informacion disponible es practicamente nula: la model card se limita a un bloque de frontmatter con `license: mit` y no incluye cuerpo de texto, y los metadatos publicos no declaran pipeline, idiomas ni especificaciones tecnicas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 No es posible determinar que problema resuelve el modelo, que arquitectura emplea, cuantos parametros tiene ni cual es su longitud de contexto, porque no se ha publicado ningun dato al respecto. Tampoco se dispone de informacion sobre datos de entrenamiento, tokenizador, formato de pesos o procesos de alineacion.
 
@@ -49,7 +49,7 @@ Tampoco existe informacion sobre el corpus de entrenamiento (numero de tokens, c
 ## Casos de uso
 
 - No es posible recomendar casos de uso concretos: sin datos de arquitectura, tamano, contexto ni licencia de uso practico verificada mas alla del identificador MIT, cualquier escenario de aplicacion seria una suposicion.
-- Evaluacion de repositorio vacio o de prueba: el unico uso defendible con la informacion actual es tratarlo como un artefacto sin contenido tecnico verificable, util como caso de estudio de publicaciones incompletas en HuggingFace.
+- Evaluacion de repositorio vacio o de prueba: el unico uso defendible con la informacion actual es tratarlo como un artefacto sin contenido tecnico verificable, util como caso de estudio de publicaciones incompletas en Hugging Face.
 - Auditoria de licencia: puede consultarse el identificador `mit` del frontmatter, aunque sin pesos publicados no hay objeto sobre el que aplicar dicha licencia.
 - Integracion en pipelines: descartada mientras no existan pesos, tokenizador ni `config.json` documentados.
 - Despliegue en produccion: no recomendable, al no poder verificarse comportamiento, sesgos ni rendimiento.
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bkhhukjbblkj/jhjh
+- Repositorio en Hugging Face: https://huggingface.co/bkhhukjbblkj/jhjh
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w80-s130` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador y las etiquetas (`sn38-nanochrono`), se trata de una variante de la familia NanoChrono, presumiblemente un transformer de ~2.018 millones de parametros orientado a tareas de generacion de texto, aunque la informacion publica disponible es muy limitada: no se especifica pipeline, idiomas soportados, contexto ni datos de entrenamiento. El nombre codifica hiperparametros internos (r18, a2, w13, chrono5, w80, s130) que probablemente corresponden a una configuracion experimental concreta dentro de un barrido de entrenamiento.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w80-s130` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador y las etiquetas (`sn38-nanochrono`), se trata de una variante de la familia NanoChrono, presumiblemente un transformer de ~2.018 millones de parametros orientado a tareas de generacion de texto, aunque la informacion publica disponible es muy limitada: no se especifica pipeline, idiomas soportados, contexto ni datos de entrenamiento. El nombre codifica hiperparametros internos (r18, a2, w13, chrono5, w80, s130) que probablemente corresponden a una configuracion experimental concreta dentro de un barrido de entrenamiento.
 
 El checkpoint pesa 12,6 GB en formato safetensors, lo que sugiere pesos en alta precision (probablemente fp32 o bf16) para 2.018 millones de parametros. Es relevante ahora unicamente como artefacto de investigacion: no hay benchmarks, no hay model card descriptiva y el acceso esta restringido, por lo que su uso en produccion no esta justificado con la informacion disponible.
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay descripcion de arquitectura, datos de entrenamiento, idiomas ni limitaciones declaradas por el autor.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
 - Sin benchmarks publicados: no es posible estimar calidad relativa frente a alternativas.
 - Riesgo de alucinacion: desconocido, pero inherente a cualquier modelo generativo sin evaluacion publicada.
 - Sesgos conocidos: no documentados; al no conocer el dataset, no se pueden anticipar sesgos de genero, idioma o dominio.
@@ -87,5 +87,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w80-s130
+- Repositorio Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w80-s130
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

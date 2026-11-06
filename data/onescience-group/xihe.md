@@ -78,7 +78,7 @@ No se han publicado comparativas cuantitativas en la informacion disponible. En 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/XiHe
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/XiHe
 - Paper (arXiv): https://arxiv.org/abs/2402.02995
 - Repositorio principal en Gitee: https://gitee.com/onescience-ai/onescience
 - Repositorio de habilidades en Gitee: https://gitee.com/onescience-ai/oneskills

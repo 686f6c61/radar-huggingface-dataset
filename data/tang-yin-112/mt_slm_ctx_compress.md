@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mt_slm_ctx_compress es un ajuste fino (fine-tune) del modelo ibm-granite/granite-4.0-h-micro, publicado por el usuario Tang-yin-112 en HuggingFace. Se trata de un modelo especializado en la tarea de compresión de contexto de sesiones de agente (agent session compaction), desarrollado para el arena `ctx_compress` de la plataforma Microtensor. El modelo hereda la arquitectura híbrida GraniteMoE del modelo base de IBM, con aproximadamente 3.190 millones de parámetros totales.
+mt_slm_ctx_compress es un ajuste fino (fine-tune) del modelo ibm-granite/granite-4.0-h-micro, publicado por el usuario Tang-yin-112 en Hugging Face. Se trata de un modelo especializado en la tarea de compresión de contexto de sesiones de agente (agent session compaction), desarrollado para el arena `ctx_compress` de la plataforma Microtensor. El modelo hereda la arquitectura híbrida GraniteMoE del modelo base de IBM, con aproximadamente 3.190 millones de parámetros totales.
 
 El modelo resuelve un problema concreto: condensar el historial de una sesión de agente (turnos de conversación, resultados de herramientas, observaciones intermedias) en un contexto más corto que preserve la información relevante para continuar la tarea. Esto es crítico en pipelines de agentes donde el contexto crece rápidamente y supera la ventana disponible o encarece cada llamada al modelo principal.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mt_slm_ctx_compress | 3,19 mil millones | no disponible | microtensor-submission | HuggingFace, 0 descargas |
-| ibm-granite/granite-4.0-h-micro (base) | 3,19 mil millones (aprox.) | no disponible en esta ficha | Apache 2.0 | HuggingFace, modelo oficial de IBM |
+| mt_slm_ctx_compress | 3,19 mil millones | no disponible | microtensor-submission | Hugging Face, 0 descargas |
+| ibm-granite/granite-4.0-h-micro (base) | 3,19 mil millones (aprox.) | no disponible en esta ficha | Apache 2.0 | Hugging Face, modelo oficial de IBM |
 | Modelos especializados en compactación de contexto | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre benchmarks comparativos ni sobre otros modelos especializados en la misma tarea dentro del arena `ctx_compress`. La comparación más directa es con el modelo base, del que este checkpoint hereda arquitectura y pesos, con la diferencia del ajuste LoRA para compactación y un cambio de licencia a los términos de Microtensor.
@@ -84,7 +84,7 @@ No se dispone de información sobre benchmarks comparativos ni sobre otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tang-yin-112/mt_slm_ctx_compress
+- Modelo en Hugging Face: https://huggingface.co/Tang-yin-112/mt_slm_ctx_compress
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-micro
 - Términos de licencia Microtensor: https://www.microtensor.cloud/terms
-- Receta de entrenamiento (referenciada en la model card): `training/recipe.json` dentro del repositorio de HuggingFace
+- Receta de entrenamiento (referenciada en la model card): `training/recipe.json` dentro del repositorio de Hugging Face

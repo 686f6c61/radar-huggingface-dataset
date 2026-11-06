@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rifailabs/shikomori-stt-multi-v2` es un modelo publicado en HuggingFace por la organización `rifailabs`. El nombre sugiere que se trata de un sistema de reconocimiento de voz (speech-to-text, STT) multilingüe, presumiblemente una segunda versión de una serie. Sin embargo, la información pública disponible es extremadamente limitada: la model card es una plantilla autogenerada que no contiene especificaciones técnicas, datos de entrenamiento, evaluación ni instrucciones de uso. No se dispone de licencia, idiomas soportados, arquitectura ni ningún detalle adicional. El modelo ha sido creado el 6 de septiembre de 2026 y actualizado el mismo día, pero no tiene descargas ni valoraciones. En su estado actual, no es posible determinar su funcionalidad real ni su calidad, por lo que cualquier evaluación debe considerarse preliminar y basada exclusivamente en la nomenclatura del repositorio.
+El modelo `rifailabs/shikomori-stt-multi-v2` es un modelo publicado en Hugging Face por la organización `rifailabs`. El nombre sugiere que se trata de un sistema de reconocimiento de voz (speech-to-text, STT) multilingüe, presumiblemente una segunda versión de una serie. Sin embargo, la información pública disponible es extremadamente limitada: la model card es una plantilla autogenerada que no contiene especificaciones técnicas, datos de entrenamiento, evaluación ni instrucciones de uso. No se dispone de licencia, idiomas soportados, arquitectura ni ningún detalle adicional. El modelo ha sido creado el 6 de septiembre de 2026 y actualizado el mismo día, pero no tiene descargas ni valoraciones. En su estado actual, no es posible determinar su funcionalidad real ni su calidad, por lo que cualquier evaluación debe considerarse preliminar y basada exclusivamente en la nomenclatura del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-No se dispone de informacion sobre los requisitos de hardware. No se han publicado datos de VRAM estimada, GPUs recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.), ni cifras de latencia o throughput. Al no conocerse el tamano del modelo ni su arquitectura, cualquier estimacion seria pura especulacion. Se recomienda consultar el repositorio en HuggingFace para ver si el autor publica actualizaciones tecnicas.
+No se dispone de informacion sobre los requisitos de hardware. No se han publicado datos de VRAM estimada, GPUs recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.), ni cifras de latencia o throughput. Al no conocerse el tamano del modelo ni su arquitectura, cualquier estimacion seria pura especulacion. Se recomienda consultar el repositorio en Hugging Face para ver si el autor publica actualizaciones tecnicas.
 
 ## Comparativa con modelos similares
 
@@ -60,6 +60,6 @@ No se han identificado modelos comparables en la informacion disponible. Existe 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/rifailabs/shikomori-stt-multi-v2
+- Pagina del modelo en Hugging Face: https://huggingface.co/rifailabs/shikomori-stt-multi-v2
 - Variante anterior del modelo: https://huggingface.co/rifailabs/shikomori-stt-multi
 - Dataset asociado (posiblemente): https://huggingface.co/datasets/rifailabs/shikomori-stt-multi

@@ -82,7 +82,7 @@ La diferencia clave es que Qwen3.8-27B-1C está específicamente entrenado para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sweetand/qwen3.8-27b-1C
+- Repositorio Hugging Face: https://huggingface.co/sweetand/qwen3.8-27b-1C
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia de despliegue local (Geeky Gadgets): https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/

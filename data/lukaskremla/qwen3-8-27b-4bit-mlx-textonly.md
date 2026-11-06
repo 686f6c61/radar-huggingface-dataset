@@ -77,7 +77,7 @@ No se dispone de comparativas con modelos de otros fabricantes (como Llama 3.1 8
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lukaskremla/Qwen3.8-27B-4bit-MLX-TextOnly
+- Repositorio Hugging Face: https://huggingface.co/lukaskremla/Qwen3.8-27B-4bit-MLX-TextOnly
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión con visión del mismo autor: https://huggingface.co/lukaskremla/Qwen3.8-27B-4bit-MLX
 - Colección de cuantizaciones MLX del autor: https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp

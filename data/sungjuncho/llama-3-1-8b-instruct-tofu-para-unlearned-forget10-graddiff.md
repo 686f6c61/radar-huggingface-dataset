@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-graddiff` es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario de HuggingFace `sungjuncho`, que ha sido sometido a un proceso de *machine unlearning* mediante el algoritmo GradDiff sobre el conjunto de datos TOFU-para. No se trata de un modelo de propósito general nuevo, sino de un artefacto de investigación orientado a estudiar la eliminación selectiva de conocimiento factual en modelos de lenguaje. El modelo base inmediato es `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full`, un fine-tune de Llama 3.1 8B Instruct sobre la totalidad de TOFU más dos versiones parafraseadas del mismo.
+`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-graddiff` es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario de Hugging Face `sungjuncho`, que ha sido sometido a un proceso de *machine unlearning* mediante el algoritmo GradDiff sobre el conjunto de datos TOFU-para. No se trata de un modelo de propósito general nuevo, sino de un artefacto de investigación orientado a estudiar la eliminación selectiva de conocimiento factual en modelos de lenguaje. El modelo base inmediato es `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full`, un fine-tune de Llama 3.1 8B Instruct sobre la totalidad de TOFU más dos versiones parafraseadas del mismo.
 
 La relevancia de este checkpoint reside en su contribución metodológica: la colección TOFU-para separa explícitamente el concepto de *untraining* (eliminar las muestras concretas que el método de desaprendizaje recibió) del de *unlearning* (eliminar el conocimiento subyacente, que el modelo también había aprendido en otras formulaciones). Para ello, el conjunto de datos incorpora cinco versiones parafraseadas verificadas de cada par pregunta-respuesta, lo que permite medir si el olvido es genuino o meramente superficial.
 
@@ -106,7 +106,7 @@ La comparación más directa es con los otros checkpoints de la misma colección
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-graddiff
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-graddiff
 - Modelo base (fine-tune x2-full): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

@@ -95,8 +95,8 @@ Cambio de exito frente a Qwen3-4B: +0,240 (rango del 95 %: +0,189 a +0,296). Fre
 
 | Modelo | Parametros | Contexto | Task score (evaluacion del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid-Commerce-Qwen3-4B | 4B (base) + LoRA | No disponible | 0,928 | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3-4B | 4B | No disponible | 0,698 | No disponible en la informacion | HuggingFace |
+| Privoid-Commerce-Qwen3-4B | 4B (base) + LoRA | No disponible | 0,928 | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3-4B | 4B | No disponible | 0,698 | No disponible en la informacion | Hugging Face |
 | Privoid Tool | 4B (base) + LoRA | No disponible | 0,852 | No disponible en la informacion | No disponible |
 
 No se dispone de datos de otros adaptadores de tool calling comparables en la informacion proporcionada. El autor no compara con modelos frontera ni con alternativas de la misma categoria distintas de las dos anteriores.
@@ -115,7 +115,7 @@ No se dispone de datos de otros adaptadores de tool calling comparables en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-Commerce-Qwen3-4B
+- Modelo en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-Commerce-Qwen3-4B
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Resultados de benchmark en JSON: `benchmark/benchmark.json` (incluido en el repositorio del modelo)
 - Imagen de benchmark: `benchmark/benchmark.png` (incluida en el repositorio del modelo)

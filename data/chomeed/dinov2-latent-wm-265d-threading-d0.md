@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Bottleneck | Cámaras | Error offset (mm) | Licencia | Disponibilidad |
 |---|---|---|---|---:|---|---|
-| `chomeed/dinov2-latent-wm-56d-threading-d0` | 56 | 2 | 2.83 (tokens) / 1.96 (segdepth) | MIT | HuggingFace |
-| `chomeed/dinov2-latent-wm-265d-threading-d0` | 265 | 2 | 2.67 (tokens) / 1.92 (segdepth) | MIT | HuggingFace |
-| `chomeed/dinov2-latent-wm-3cam-threading-d0` | 56 | 3 | 2.27 | MIT | HuggingFace |
+| `chomeed/dinov2-latent-wm-56d-threading-d0` | 56 | 2 | 2.83 (tokens) / 1.96 (segdepth) | MIT | Hugging Face |
+| `chomeed/dinov2-latent-wm-265d-threading-d0` | 265 | 2 | 2.67 (tokens) / 1.92 (segdepth) | MIT | Hugging Face |
+| `chomeed/dinov2-latent-wm-3cam-threading-d0` | 56 | 3 | 2.27 | MIT | Hugging Face |
 
 El modelo de 265 dimensiones es una variante ancha del de 56, con el mismo encoder, datos, dinámica, horizonte y número de pasos. La comparación muestra que añadir una tercera cámara con mejor información visual es más eficaz que ampliar el bottleneck. No se conocen otros modelos comparables en la información disponible.
 

@@ -79,7 +79,7 @@ La comparativa con Llama 3.1 8B es orientativa, ya que el tamaño es menor. El m
 
 ## Enlaces
 
-- [HuggingFace - LloydAgent/Qwen3.8-27B-MTPLX-16.9GB-4bit](https://huggingface.co/LloydAgent/Qwen3.8-27B-MTPLX-16.9GB-4bit)
+- [Hugging Face - LloydAgent/Qwen3.8-27B-MTPLX-16.9GB-4bit](https://huggingface.co/LloydAgent/Qwen3.8-27B-MTPLX-16.9GB-4bit)
 - [Qwen/Qwen3.8-27B - vLLM Recipes](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)
 - [Qwen3.8 - LM Studio](https://lmstudio.ai/models/qwen3.8)
 - [Qwen3.8-27B — Benchmarks, Specs & Release Date](https://aireleasetracker.com/model/qwen/qwen3.8-27b)

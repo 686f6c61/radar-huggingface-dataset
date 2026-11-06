@@ -86,8 +86,8 @@ Metricas agrupadas sobre ambas preguntas en el test cross-task (n = 2.094 pasos)
 
 | Modelo | Parametros | Contexto | Element (cross-task) | Operacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (LoRA sobre Qwen3.5-4B) | Adaptador LoRA; base del orden de 4B segun su nombre (no confirmado) | No disponible (uso de ejemplo: max_len 1536) | 53,2 % | 89,3 % | Apache 2.0 | HuggingFace, libreria peft, repo de 0,1 GB, 0 descargas |
-| Qwen3.5-4B zero-shot | Del orden de 4B segun su nombre | No disponible | 29,0 % | 82,4 % | Apache 2.0 (segun la ficha del modelo base) | HuggingFace |
+| Este modelo (LoRA sobre Qwen3.5-4B) | Adaptador LoRA; base del orden de 4B segun su nombre (no confirmado) | No disponible (uso de ejemplo: max_len 1536) | 53,2 % | 89,3 % | Apache 2.0 | Hugging Face, libreria peft, repo de 0,1 GB, 0 descargas |
+| Qwen3.5-4B zero-shot | Del orden de 4B segun su nombre | No disponible | 29,0 % | 82,4 % | Apache 2.0 (segun la ficha del modelo base) | Hugging Face |
 | Qwen3.5-4B congelado + cabeza lineal | Del orden de 4B mas cabeza | No disponible | 25,8 % | 82,5 % | No disponible | No disponible |
 | Embedding + regresion logistica (MiniLM, pairwise) | No disponible | No disponible | 24,2 % | 83,7 % | No disponible | No disponible |
 | LoRA + scorer `[CLS]`-por-opcion (Arm 2b) | Adaptador LoRA sobre Qwen3.5-4B | No disponible | 51,0 % | 89,8 % | No disponible | No disponible |
@@ -108,7 +108,7 @@ Metricas agrupadas sobre ambas preguntas en el test cross-task (n = 2.094 pasos)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saivamshiatukuri/qwen3.5-4b-decision-mind2web
+- Modelo en Hugging Face: https://huggingface.co/saivamshiatukuri/qwen3.5-4b-decision-mind2web
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento y evaluacion: osunlp/Mind2Web (https://huggingface.co/datasets/osunlp/Mind2Web)
 - Estudio citado: "Decisions Without Generation: What Universal Decision Models Changed About Classification, and Where a Fine-Tuned 4B Model Still Wins" (septiembre de 2026); no se proporciona URL en la informacion disponible.

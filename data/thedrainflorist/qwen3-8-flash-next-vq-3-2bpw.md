@@ -93,8 +93,8 @@ No se dispone de comparativas con modelos de otros autores en la informacion dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-3.2bpw
-- Modelo base (HuggingFace): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-3.2bpw
+- Modelo base (Hugging Face): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del modelo base (GitHub): https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - PR de mlx-lm para la arquitectura qwen4_exp: https://github.com/ml-explore/mlx-lm/pull/1788
 - Herramienta VQLab: https://github.com/noahzelezny/VQLab

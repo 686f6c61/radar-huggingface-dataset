@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Viper-9B-i1-GGUF es una colección de cuantizaciones en formato GGUF del modelo Viper-9B, publicada por mradermacher. El modelo base, Viper-9B, procede del usuario rrchat de HuggingFace. Se trata de un modelo conversacional de aproximadamente 8.950 millones de parámetros (8,95B), lo que lo sitúa en la categoría de modelos de tamaño medio aptos para despliegue en hardware de consumo.
+Viper-9B-i1-GGUF es una colección de cuantizaciones en formato GGUF del modelo Viper-9B, publicada por mradermacher. El modelo base, Viper-9B, procede del usuario rrchat de Hugging Face. Se trata de un modelo conversacional de aproximadamente 8.950 millones de parámetros (8,95B), lo que lo sitúa en la categoría de modelos de tamaño medio aptos para despliegue en hardware de consumo.
 
 La relevancia de esta ficha radica en que las cuantizaciones GGUF permiten ejecutar el modelo en CPU y GPU con requisitos de memoria reducidos, mediante herramientas como llama.cpp u Ollama. Las cuantizaciones publicadas emplean el método i1 (imatrix), que busca preservar la calidad del modelo original a bajos regímenes de bits mediante una matriz de importancia calculada sobre datos de calibración.
 
@@ -25,7 +25,7 @@ La información disponible sobre el modelo base es muy limitada: no se especific
 
 No se dispone de información sobre la arquitectura interna del modelo base Viper-9B en la documentación proporcionada. Por el tamaño (8,95B parámetros) y su etiqueta "conversational", se trata presumiblemente de un transformer decoder-only ajustado para diálogo, pero no se confirma ni el tipo de atención, ni la composición del dataset, ni si hubo fases de RLHF o DPO.
 
-Respecto al proceso de cuantización, el autor indica que se han generado cuantizaciones ponderadas con imatrix (matriz de importancia) a partir del modelo original. La model card incluye metadatos técnicos de la conversión (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que indica una conversión desde pesos HuggingFace a GGUF con cuantización de tensores de salida. No se detalla qué dataset de calibración se usó para la imatrix.
+Respecto al proceso de cuantización, el autor indica que se han generado cuantizaciones ponderadas con imatrix (matriz de importancia) a partir del modelo original. La model card incluye metadatos técnicos de la conversión (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que indica una conversión desde pesos Hugging Face a GGUF con cuantización de tensores de salida. No se detalla qué dataset de calibración se usó para la imatrix.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Respecto al proceso de cuantización, el autor indica que se han generado cuanti
 - Experimentación con cuantizaciones de baja precisión: las variantes IQ1_S, IQ2_XXS e IQ3_XXS permiten evaluar el compromiso entre tamaño y calidad en entornos con memoria muy restringida.
 - Fine-tuning ligero sobre el modelo base: al estar disponible el modelo original en safetensors (rrchat/Viper-9B), se puede ajustar y posteriormente cuantizar con el mismo pipeline.
 - Evaluación comparativa de cuantizaciones: el repositorio ofrece prácticamente toda la escala de cuantizaciones, útil para estudios de degradación de calidad por bit-width.
-- Servicio de inferencia con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en plataformas de inferencia compatibles con la API de HuggingFace.
+- Servicio de inferencia con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en plataformas de inferencia compatibles con la API de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Viper-9B-i1-GGUF | 8,95B | no disponible | no disponible | GGUF | HuggingFace |
+| Viper-9B-i1-GGUF | 8,95B | no disponible | no disponible | GGUF | Hugging Face |
 | Alternativas de 7-9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente sobre el modelo base ni sobre alternativas concretas en la documentación proporcionada para establecer una comparativa rigurosa.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `inference-snaps/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL-5GB` es una cuantización GGUF del modelo Gemma 4 26B A4B IT de Google DeepMind, preparada por el usuario de HuggingFace `inference-snaps`. Gemma 4 es una familia de modelos abiertos y multimodales que aceptan entrada de texto e imagen y generan texto, con soporte nativo de tool calling, razonamiento y contextos largos de hasta 256K tokens. La variante 26B A4B utiliza una arquitectura de mezcla de expertos (MoE) con 26 mil millones de parámetros totales y solo 4 mil millones activos por token, lo que la hace especialmente eficiente para despliegue local.
+El modelo `inference-snaps/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL-5GB` es una cuantización GGUF del modelo Gemma 4 26B A4B IT de Google DeepMind, preparada por el usuario de Hugging Face `inference-snaps`. Gemma 4 es una familia de modelos abiertos y multimodales que aceptan entrada de texto e imagen y generan texto, con soporte nativo de tool calling, razonamiento y contextos largos de hasta 256K tokens. La variante 26B A4B utiliza una arquitectura de mezcla de expertos (MoE) con 26 mil millones de parámetros totales y solo 4 mil millones activos por token, lo que la hace especialmente eficiente para despliegue local.
 
 Esta ficha concreta corresponde a un archivo GGUF cuantizado con el esquema UD-Q4_K_XL, que según la documentación de Unsloth es la recomendación para los modelos Gemma 4 QAT, ya que la cuantización Q4_0 degrada la precisión. El sufijo "5GB" indica que el archivo de pesos ocupa aproximadamente 5 gigabytes, lo que permite ejecutar el modelo en hardware de consumo con requisitos de memoria moderados. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -80,9 +80,9 @@ La comparación con otros modelos de la misma categoría (MoE multimodal de ~26B
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/inference-snaps/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL-5GB
-- Repositorio HuggingFace del modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
-- Repositorio HuggingFace de la cuantización Unsloth: https://huggingface.co/inference-snaps/gemma-4-26B-A4B-it-UD-Q4_K_M-5GB
+- Repositorio Hugging Face del modelo: https://huggingface.co/inference-snaps/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL-5GB
+- Repositorio Hugging Face del modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Repositorio Hugging Face de la cuantización Unsloth: https://huggingface.co/inference-snaps/gemma-4-26B-A4B-it-UD-Q4_K_M-5GB
 - Documentación de Gemma 4 QAT de Unsloth: https://unsloth.ai/docs/models/gemma-4/qat
 - Documentación de Gemma 4 en LM Studio: https://lmstudio.ai/models/google/gemma-4-26b-a4b-qat
 - Documentación de Gemma 4 en Google Cloud: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it

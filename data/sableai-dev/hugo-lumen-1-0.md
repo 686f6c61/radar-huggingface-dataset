@@ -78,7 +78,7 @@ La informacion disponible no permite una comparativa cuantitativa fiable: no hay
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hugo-Lumen 1.0 (SableAI-Dev) | 27B segun la model card (no verificable) | 4096 tokens en el ejemplo de uso; maximo no disponible | Sin datos numericos; afirmacion cualitativa de superioridad en codigo en ruso | Apache 2.0 | GGUF 4 bits, 24 GB, en HuggingFace |
+| Hugo-Lumen 1.0 (SableAI-Dev) | 27B segun la model card (no verificable) | 4096 tokens en el ejemplo de uso; maximo no disponible | Sin datos numericos; afirmacion cualitativa de superioridad en codigo en ruso | Apache 2.0 | GGUF 4 bits, 24 GB, en Hugging Face |
 | Modelo base citado como "Qwen 3.8-27B" | 27B segun la denominacion indicada | No disponible | No disponible | No disponible | No disponible (el nombre no corresponde a ninguna denominacion publica conocida de la familia Qwen) |
 | GigaCode | No disponible | No disponible | No disponible; mencionado como referencia inferior en tareas de codigo en ruso segun el autor | No disponible | No disponible |
 
@@ -93,12 +93,12 @@ La informacion disponible no permite una comparativa cuantitativa fiable: no hay
 - Repositorio sin traccion: 0 descargas y 1 "like" en el momento de la consulta, sin historial de issues ni de mantenimiento. No hay evidencia de soporte a largo plazo.
 - Un solo formato y una sola cuantizacion: al publicarse unicamente en GGUF de 4 bits, se pierde precision frente al modelo original y no se puede desplegar en stacks que exigen safetensors, como vLLM o TGI en configuracion estandar.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero conviene verificar que los terminos del modelo base (cuyo nombre no esta confirmado) no impongan condiciones adicionales.
-- Metadata anomala: la fecha de creacion del repositorio indicada en la ficha de HuggingFace (2026-09-22) y su actualizacion minutos despues, junto con la ausencia total de documentacion adicional, son indicios de una publicacion precipitada y no revisada.
+- Metadata anomala: la fecha de creacion del repositorio indicada en la ficha de Hugging Face (2026-09-22) y su actualizacion minutos despues, junto con la ausencia total de documentacion adicional, son indicios de una publicacion precipitada y no revisada.
 - Uso en produccion: no recomendado sin una evaluacion propia previa sobre el dominio concreto, dado que no existen datos de robustez, latencia, throughput ni estabilidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SableAI-Dev/Hugo-Lumen-1.0
+- Hugging Face: https://huggingface.co/SableAI-Dev/Hugo-Lumen-1.0
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

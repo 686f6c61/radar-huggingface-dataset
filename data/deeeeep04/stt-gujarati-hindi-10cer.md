@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `deeeeep04/stt-gujarati-hindi-10cer` es un sistema de reconocimiento automático del habla (ASR) trilingüe especializado en gujarati, hindi e inglés, desarrollado por el usuario de HuggingFace `deeeeep04`. Se trata de un ajuste fino de la arquitectura Wav2Vec2, concretamente sobre la base de MMS-300M (Massively Multilingual Speech de Meta), orientado a transcripción de audio en un contexto lingüístico mixto propio de la India, donde es habitual alternar entre gujarati, hindi e inglés en una misma conversación.
+El modelo `deeeeep04/stt-gujarati-hindi-10cer` es un sistema de reconocimiento automático del habla (ASR) trilingüe especializado en gujarati, hindi e inglés, desarrollado por el usuario de Hugging Face `deeeeep04`. Se trata de un ajuste fino de la arquitectura Wav2Vec2, concretamente sobre la base de MMS-300M (Massively Multilingual Speech de Meta), orientado a transcripción de audio en un contexto lingüístico mixto propio de la India, donde es habitual alternar entre gujarati, hindi e inglés en una misma conversación.
 
 El modelo se distribuye con licencia MIT, un tamaño de repositorio de 1,4 GB en formato safetensors y un pipeline de `automatic-speech-recognition`. Según la model card, se ha entrenado sobre 41,77 horas de audio trilingüe e incorpora un modelo de lenguaje KenLM de 3 gramos para el post-procesado de las hipótesis de transcripción, lo que permite reducir la tasa de error a nivel de carácter.
 
@@ -41,7 +41,7 @@ El entrenamiento incorpora un modelo de lenguaje KenLM de 3 gramos, empleado hab
 - Transcripción de reuniones y llamadas en entornos empresariales indios: útil en compañías donde los equipos alternan entre gujarati, hindi e inglés, permitiendo generar actas o resúmenes a partir del audio.
 - Atención al cliente y centros de contacto: el modelo puede alimentar sistemas de análisis de llamadas, clasificación de motivos de consulta o generación de transcripciones para control de calidad, aunque su WER del 34,88 % exige revisión humana en producción.
 - Investigación lingüística y corpus orales: adecuado para proyectos académicos que necesiten transcribir grabaciones de campo en gujarati o hindi con una base MMS ya preentrenada en multitud de idiomas.
-- Accesibilidad y dictado por voz: puede servir como motor ASR en aplicaciones de dictado para usuarios que hablen gujarati o hindi, integrado en entornos de escritorio o móvil mediante librerías de inferencia de HuggingFace.
+- Accesibilidad y dictado por voz: puede servir como motor ASR en aplicaciones de dictado para usuarios que hablen gujarati o hindi, integrado en entornos de escritorio o móvil mediante librerías de inferencia de Hugging Face.
 - Prototipado rápido de pipelines ASR: al estar en formato safetensors y con licencia MIT, es sencillo de integrar en pruebas de concepto con `transformers` y el pipeline `automatic-speech-recognition` antes de optar por soluciones comerciales.
 - Análisis de contenido en redes sociales o medios: transcripción de clips cortos en los tres idiomas para moderación, búsqueda o indexación.
 
@@ -61,7 +61,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada para inferencia: no disponible de forma explícita; un modelo Wav2Vec2 de ~300M parámetros en precisión FP32 requiere del orden de 1,2 GB de VRAM, y en FP16 aproximadamente 0,6 GB, aunque esta estimación no está confirmada en la información proporcionada.
 - GPU recomendadas: no disponible en la información. Por tamaño, cabría esperar que funcione en GPU consumer (RTX 3060, RTX 4090) y en GPUs de datacenter (A100, H100), pero no se documenta.
 - Cabe en GPU consumer: probablemente sí, dado el tamaño del repositorio (1,4 GB) y la arquitectura MMS-300M, aunque no se confirma.
-- Opciones de despliegue: pipeline `automatic-speech-recognition` de HuggingFace `transformers`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (estas herramientas están orientadas a modelos de lenguaje, no a ASR Wav2Vec2).
+- Opciones de despliegue: pipeline `automatic-speech-recognition` de Hugging Face `transformers`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (estas herramientas están orientadas a modelos de lenguaje, no a ASR Wav2Vec2).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -89,5 +89,5 @@ La comparación con MMS-300M y Whisper es orientativa por categoría (ASR de tam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deeeeep04/stt-gujarati-hindi-10cer
+- Hugging Face: https://huggingface.co/deeeeep04/stt-gujarati-hindi-10cer
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

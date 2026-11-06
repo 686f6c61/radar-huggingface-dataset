@@ -88,7 +88,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/collinzrj/qwen3.6-35b-a3b-swe-lora-sft
+- Adaptador en Hugging Face: https://huggingface.co/collinzrj/qwen3.6-35b-a3b-swe-lora-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Open-SWE-Traces
 - Adaptador relacionado (SFT): https://huggingface.co/felixming/Qwen3.6-35B-A3B-SWE-LoRA-SFT

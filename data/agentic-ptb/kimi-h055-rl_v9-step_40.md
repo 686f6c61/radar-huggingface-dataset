@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h055.rl_v9.step_40
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h055.rl_v9.step_40
 - Kimi K3 (página oficial): https://www.kimi.com/en
 - Kimi K3 API (documentación): https://platform.kimi.ai/docs/guide/kimi-k3-quickstart
 - Kimi K2 (página informativa): https://kimik2ai.com/k2/

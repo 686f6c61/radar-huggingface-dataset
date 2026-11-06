@@ -110,7 +110,7 @@ No hay datos de rendimiento comparativo directo publicados; la comparación es c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/q-project/N-Q-26M-JEV
+- Modelo en Hugging Face: https://huggingface.co/q-project/N-Q-26M-JEV
 - Modelo base: https://huggingface.co/q-project/N-Q-26M-Chat
 - Datasets de entrenamiento:
   - https://huggingface.co/datasets/IlyaGusev/saiga_scored

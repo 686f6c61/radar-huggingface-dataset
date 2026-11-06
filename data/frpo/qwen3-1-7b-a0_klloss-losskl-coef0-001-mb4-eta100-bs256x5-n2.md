@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: al tener 2.031 millones de parámetros en fp32, la inferencia requiere aproximadamente 8 GB de VRAM solo para los pesos (2.031.739.904 × 4 bytes ≈ 8.1 GB). Con cuantización a int8 se reduciría a ~4 GB, y a int4 a ~2 GB, pero no se proporcionan pesos cuantizados.
 - GPU recomendadas: una GPU con al menos 12 GB de VRAM (por ejemplo, RTX 3060 12GB, RTX 4070, A10) para inferencia en fp32. Para entrenamiento o fine-tuning adicional se necesitarían GPUs con mayor memoria, como A100 40GB o H100.
 - No cabe en GPUs consumer de 8 GB en fp32, pero sí con cuantización (si se generan versiones GGUF o AWQ).
-- Opciones de despliegue: al ser un modelo transformers estándar, se puede servir con vLLM, TGI, Ollama (si se convierte a GGUF) o mediante la API de HuggingFace. No se incluyen archivos de configuración para estos servidores.
+- Opciones de despliegue: al ser un modelo transformers estándar, se puede servir con vLLM, TGI, Ollama (si se convierte a GGUF) o mediante la API de Hugging Face. No se incluyen archivos de configuración para estos servidores.
 - Latencia y throughput: no disponibles. Dependerán del hardware y del backend utilizado.
 
 ## Comparativa con modelos similares
@@ -63,8 +63,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-1.7B | ~1.7B | 32k (según documentación oficial de Qwen) | Apache 2.0 | HuggingFace |
-| Este checkpoint | 2.031.739.904 | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3-1.7B | ~1.7B | 32k (según documentación oficial de Qwen) | Apache 2.0 | Hugging Face |
+| Este checkpoint | 2.031.739.904 | no disponible | no disponible | Hugging Face |
 
 No se pueden extraer conclusiones de rendimiento sin benchmarks.
 
@@ -80,6 +80,6 @@ No se pueden extraer conclusiones de rendimiento sin benchmarks.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a0_klloss-lossKL-coef0.001-mb4-eta100-bs256x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a0_klloss-lossKL-coef0.001-mb4-eta100-bs256x5-n2
 - Librería verl: https://github.com/volcengine/verl
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dango-A1 es un modelo de lenguaje de 1.867 millones de parametros (1.8B) desarrollado por Shiho Matta (usuario `mattashiho` en HuggingFace), supervisado con fine-tuning (SFT) sobre lecciones de aprendizaje de ingles como segunda lengua (L2) de nivel A1 del Marco Comun Europeo de Referencia. Parte del modelo base Dango-pretrained (`dango-1.8b-100Btok`), un modelo preentrenado exclusivamente en japones sobre 100.000 millones de tokens de un corpus japones filtrado de forma extensiva.
+Dango-A1 es un modelo de lenguaje de 1.867 millones de parametros (1.8B) desarrollado por Shiho Matta (usuario `mattashiho` en Hugging Face), supervisado con fine-tuning (SFT) sobre lecciones de aprendizaje de ingles como segunda lengua (L2) de nivel A1 del Marco Comun Europeo de Referencia. Parte del modelo base Dango-pretrained (`dango-1.8b-100Btok`), un modelo preentrenado exclusivamente en japones sobre 100.000 millones de tokens de un corpus japones filtrado de forma extensiva.
 
 El modelo no esta pensado como un asistente generalista ni como un modelo de produccion, sino como una herramienta de investigacion sobre adquisicion de segundas lenguas: simula el comportamiento linguistico de un hablante japones aprendiendo ingles en nivel A1. Arquitectonicamente es comparable a la familia llm-jp-3, que adopta una arquitectura decoder de estilo Llama 2.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dango-A1 | 1.8B | No disponible | ja, en | CC BY 4.0 con restriccion comercial por datos Ichikara | HuggingFace (18 descargas) |
-| llm-jp-3-1.8b | 1.8B | No disponible en esta ficha | ja (principalmente) | No disponible en esta ficha | HuggingFace (llm-jp) |
-| Dango-pretrained (dango-1.8b-100Btok) | 1.8B | No disponible | ja | CC BY 4.0 | HuggingFace (modelo base del autor) |
+| Dango-A1 | 1.8B | No disponible | ja, en | CC BY 4.0 con restriccion comercial por datos Ichikara | Hugging Face (18 descargas) |
+| llm-jp-3-1.8b | 1.8B | No disponible en esta ficha | ja (principalmente) | No disponible en esta ficha | Hugging Face (llm-jp) |
+| Dango-pretrained (dango-1.8b-100Btok) | 1.8B | No disponible | ja | CC BY 4.0 | Hugging Face (modelo base del autor) |
 
 La comparacion directa con llm-jp-3-1.8b es la mas pertinente por la equivalencia arquitectonica declarada por el autor. No se dispone de datos de rendimiento comparativos en la informacion proporcionada.
 
@@ -77,12 +77,12 @@ La comparacion directa con llm-jp-3-1.8b es la mas pertinente por la equivalenci
 - Riesgo de alucinacion: no documentado por el autor, pero esperable en un modelo de 1.8B con SFT acotado.
 - Sesgos conocidos: no documentados en la informacion disponible; el preentrenamiento en un corpus japones filtrado puede introducir sesgos propios de esa fuente.
 - Longitud de contexto no documentada, lo que impide planificar tareas de contexto largo.
-- Comunidad y soporte minimos: 18 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en HuggingFace.
+- Comunidad y soporte minimos: 18 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en Hugging Face.
 - No se documentan cuantizaciones oficiales ni formatos GGUF, lo que anade trabajo manual para despliegues en llama.cpp u Ollama.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattashiho/dango-A1
+- Modelo en Hugging Face: https://huggingface.co/mattashiho/dango-A1
 - Modelo base Dango-pretrained: https://huggingface.co/mattashiho/dango-1.8b-100Btok
 - Repositorio GitHub (codigo de filtrado y entrenamiento): https://github.com/mattashiho233/dango
 - Referencia arquitectonica llm-jp-3-1.8b: https://huggingface.co/llm-jp/llm-jp-3-1.8b

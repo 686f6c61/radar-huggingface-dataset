@@ -97,7 +97,7 @@ No se dispone de comparativas con otros modelos de compresion de caché KV (como
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fraQtl/mistral-7b-instruct-v0.3-kv-sidecars
+- Repositorio Hugging Face: https://huggingface.co/fraQtl/mistral-7b-instruct-v0.3-kv-sidecars
 - Runtime wheel y procedencia de build: https://huggingface.co/fraQtl/fraqtl-sm80-runtime
 - Modelo base Mistral-7B-Instruct-v0.3: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio GitHub fraQtl D1: https://github.com/fraqtl-ai/fraqtl-mistral-d1

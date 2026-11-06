@@ -69,5 +69,5 @@ No disponible. No se han proporcionado datos sobre modelos comparables en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elichen-skymizer/GAP-models
+- Hugging Face: https://huggingface.co/elichen-skymizer/GAP-models
 - Colección GAP: https://huggingface.co/collections/elichen-skymizer/gap

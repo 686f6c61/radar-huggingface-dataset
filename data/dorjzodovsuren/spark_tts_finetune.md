@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dorjzodovsuren/spark_tts_finetune es un modelo de generación de texto basado en la arquitectura Qwen2, con 506 millones de parámetros, publicado por el usuario Dorjzodovsuren en HuggingFace. A pesar del nombre que sugiere un fine-tune para síntesis de voz (TTS), el pipeline declarado es text-generation y las etiquetas indican entrenamiento supervisado (SFT) con las librerías Unsloth y TRL, orientado a tareas conversacionales.
+Dorjzodovsuren/spark_tts_finetune es un modelo de generación de texto basado en la arquitectura Qwen2, con 506 millones de parámetros, publicado por el usuario Dorjzodovsuren en Hugging Face. A pesar del nombre que sugiere un fine-tune para síntesis de voz (TTS), el pipeline declarado es text-generation y las etiquetas indican entrenamiento supervisado (SFT) con las librerías Unsloth y TRL, orientado a tareas conversacionales.
 
 El modelo se presenta como un checkpoint de transformers con pesos en formato safetensors, compatible con text-generation-inference y endpoints. La model card está prácticamente vacía: no se especifican datos de entrenamiento, licencia, idiomas ni procedencia del modelo base, lo que limita severamente su evaluación para uso en producción. Su relevancia es marginal en el ecosistema actual, dado que no registra descargas ni interacciones y carece de documentación técnica sustancial.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento, el n�
 
 - Generación de texto autoregresiva, según el pipeline declarado (text-generation).
 - Capacidad conversacional, indicada por la etiqueta "conversational".
-- Compatibilidad con text-generation-inference y endpoints de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints de Hugging Face.
 - No se puede confirmar soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión o audio, al no estar documentado.
 - No se dispone de información sobre capacidades multilingües.
 
@@ -37,7 +37,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento, el n�
 
 - Prototipado rápido de chatbots: el modelo puede desplegarse localmente con transformers o vLLM para experimentar con diálogos de un solo turno o multi-turno, aunque sin garantías de calidad por falta de benchmarks.
 - Investigación académica sobre fine-tuning SFT: dado que se entrenó con Unsloth y TRL, puede servir como caso de estudio para analizar el flujo de entrenamiento y comparar resultados con el modelo base Qwen2.
-- Pruebas de integración con text-generation-inference: al ser compatible con endpoints, permite validar despliegues en infraestructura de HuggingFace.
+- Pruebas de integración con text-generation-inference: al ser compatible con endpoints, permite validar despliegues en infraestructura de Hugging Face.
 - Experimentos de cuantización: al ser un modelo pequeño (506M parámetros), puede cuantizarse con GPTQ o AWQ para probar técnicas de compresión en entornos de bajos recursos.
 - Evaluación de pipelines de generación de texto en entornos educativos: su tamaño reducido facilita su ejecución en hardware modesto para fines docentes.
 - Análisis forense de modelos: dado que el nombre sugiere TTS pero el pipeline es text-generation, puede utilizarse para estudiar inconsistencias en el etiquetado de modelos publicados.
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Pipeline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dorjzodovsuren/spark_tts_finetune | 506M | no disponible | text-generation | no disponible | HuggingFace |
-| Qwen2-0.5B (base) | 494M | 32K | text-generation | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 494M | 32K | text-generation | Apache 2.0 | HuggingFace |
+| Dorjzodovsuren/spark_tts_finetune | 506M | no disponible | text-generation | no disponible | Hugging Face |
+| Qwen2-0.5B (base) | 494M | 32K | text-generation | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494M | 32K | text-generation | Apache 2.0 | Hugging Face |
 
 La comparativa directa es limitada porque no se conoce el modelo base exacto del fine-tune. Si parte de Qwen2-0.5B, el incremento de parámetros (506M vs 494M) sugiere una ampliación del vocabulario o del embedding, pero no hay confirmación. Qwen2-0.5B y Qwen2.5-0.5B-Instruct son alternativas con documentación completa, benchmarks publicados y licencia permisiva.
 
@@ -75,6 +75,6 @@ La comparativa directa es limitada porque no se conoce el modelo base exacto del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dorjzodovsuren/spark_tts_finetune
+- Repositorio Hugging Face: https://huggingface.co/Dorjzodovsuren/spark_tts_finetune
 - Referencia citada en la model card (paper sobre impacto ambiental): https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, "Machine Learning Impact calculator")
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

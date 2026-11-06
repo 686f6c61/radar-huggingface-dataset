@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Entrada / salida | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SccHy/microduck-sprint-gait2 | Política RL (ONNX) | 61 obs / 14 acciones | 50 Hz | no disponible | HuggingFace |
+| SccHy/microduck-sprint-gait2 | Política RL (ONNX) | 61 obs / 14 acciones | 50 Hz | no disponible | Hugging Face |
 | Otras políticas microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre políticas comparables para el mismo robot u otros cuadrúpedos de la misma categoría en la información proporcionada.
@@ -80,6 +80,6 @@ No se dispone de información sobre políticas comparables para el mismo robot u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SccHy/microduck-sprint-gait2
+- Hugging Face: https://huggingface.co/SccHy/microduck-sprint-gait2
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (`docs/policy-manifest.md` en el repo del daemon): no disponible como URL directa en la información proporcionada.

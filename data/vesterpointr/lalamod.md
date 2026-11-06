@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Lalamod es un modelo publicado en HuggingFace por el usuario vesterpointr bajo licencia MIT. La model card asociada no contiene ninguna descripción tecnica, ni informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se ha publicado ningun pipeline asociado en la plataforma.
+Lalamod es un modelo publicado en Hugging Face por el usuario vesterpointr bajo licencia MIT. La model card asociada no contiene ninguna descripción tecnica, ni informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se ha publicado ningun pipeline asociado en la plataforma.
 
-Dado que la unica informacion disponible es la licencia y los metadatos basicos de HuggingFace, no es posible determinar que problema resuelve el modelo ni por que seria relevante. No hay evidencia de que se trate de un modelo de lenguaje, de vision u otra modalidad, ni de que existan pesos publicados en formatos estandar.
+Dado que la unica informacion disponible es la licencia y los metadatos basicos de Hugging Face, no es posible determinar que problema resuelve el modelo ni por que seria relevante. No hay evidencia de que se trate de un modelo de lenguaje, de vision u otra modalidad, ni de que existan pesos publicados en formatos estandar.
 
 Esta ficha se limita a documentar los metadatos verificables y a marcar explicitamente como "no disponible" cualquier dato tecnico que no aparece en la informacion proporcionada. Cualquier evaluacion de uso en produccion requeriria inspeccionar directamente el repositorio y los archivos de pesos.
 
@@ -23,7 +23,7 @@ Esta ficha se limita a documentar los metadatos verificables y a marcar explicit
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o decodificacion especulativa. Toda esta informacion debe considerarse no disponible.
 
@@ -71,5 +71,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vesterpointr/Lalamod
+- Repositorio en Hugging Face: https://huggingface.co/vesterpointr/Lalamod
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ololade117/scaling-normal-5.6M-15000steps` es un modelo publicado en HuggingFace por el usuario Ololade117 que, por su nombre y sus dimensiones, parece corresponder a un artefacto de investigación sobre leyes de escalado (scaling laws): un transformer de pequeño tamano entrenado durante 15.000 pasos. El repositorio no incluye ninguna descripcion funcional, ni tokenizador documentado, ni ejemplos de uso; la unica informacion tecnica verificable es el recuento de parametros de los pesos en formato safetensors.
+`Ololade117/scaling-normal-5.6M-15000steps` es un modelo publicado en Hugging Face por el usuario Ololade117 que, por su nombre y sus dimensiones, parece corresponder a un artefacto de investigación sobre leyes de escalado (scaling laws): un transformer de pequeño tamano entrenado durante 15.000 pasos. El repositorio no incluye ninguna descripcion funcional, ni tokenizador documentado, ni ejemplos de uso; la unica informacion tecnica verificable es el recuento de parametros de los pesos en formato safetensors.
 
 El modelo tiene 5.590.784 parametros (aproximadamente 5,6 millones), lo que lo situa en la categoria de los modelos diminutos, muy por debajo de cualquier LLM de uso general. Esta licenciado bajo MIT y se distribuye mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`, un mecanismo habitual en prototipos de investigacion y scripts de entrenamiento propios, no en modelos orientados a producto.
 
@@ -68,7 +68,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ololade117/scaling-normal-5.6M-15000steps | 5.590.784 | no disponible | MIT | HuggingFace, licencia permisiva |
+| Ololade117/scaling-normal-5.6M-15000steps | 5.590.784 | no disponible | MIT | Hugging Face, licencia permisiva |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/scaling-normal-5.6M-15000steps
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/scaling-normal-5.6M-15000steps
 - Documentacion de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper del modelo: no disponible (la model card indica `[More Information Needed]`)
 - Codigo del modelo: no disponible (la model card indica `[More Information Needed]`)

@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (graft0-a1-terrasp-da-e10) | Adaptador sobre 32B | LoRA PEFT | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-32B (base) | 32B | Denso decoder-only | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace, ampliamente distribuido |
-| SecondLookResearch/Qwen2.5-32B-graft0-a1 | Adaptador sobre 32B | LoRA PEFT | No disponible | No disponible | HuggingFace, adaptador previo de la misma cadena |
-| SecondLookResearch/Qwen2.5-32B-sdf-named-claude-14M-graft0-a1 | Adaptador sobre 32B | LoRA PEFT | No disponible | No disponible | HuggingFace, variante relacionada del mismo autor |
+| Este adaptador (graft0-a1-terrasp-da-e10) | Adaptador sobre 32B | LoRA PEFT | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-32B (base) | 32B | Denso decoder-only | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face, ampliamente distribuido |
+| SecondLookResearch/Qwen2.5-32B-graft0-a1 | Adaptador sobre 32B | LoRA PEFT | No disponible | No disponible | Hugging Face, adaptador previo de la misma cadena |
+| SecondLookResearch/Qwen2.5-32B-sdf-named-claude-14M-graft0-a1 | Adaptador sobre 32B | LoRA PEFT | No disponible | No disponible | Hugging Face, variante relacionada del mismo autor |
 
 No se dispone de datos de rendimiento que permitan comparar estos artefactos entre si ni con alternativas de otras familias (por ejemplo, modelos densos de tamano similar). La comparacion se limita a parametros, tipo de artefacto y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento que permitan comparar estos artefactos ent
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terrasp-da-e10
+- Adaptador en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terrasp-da-e10
 - Adaptador previo de la cadena (A1): https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1
 - Variante relacionada del mismo autor: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-named-claude-14M-graft0-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B

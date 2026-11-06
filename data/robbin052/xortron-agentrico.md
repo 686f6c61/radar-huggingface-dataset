@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | XORTRON-AgentRICO (este) | 27,8B | 32K (segun Featherless) | Imagen-texto | Acuerdo de acceso restringido, no es licencia estandar | Pesos safetensors + GGUF de terceros + API |
-| orcarouter/Qwen3.8-27B-Uncensored (base) | 27B (heredado) | No disponible | No disponible | No disponible | Pesos en HuggingFace |
-| darkc0de/XORTRON.CriminalComputing (27B) | 27B | No disponible | Imagen-texto | No disponible | Pesos en HuggingFace, con trafico registrado |
-| darkc0de/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT | 5B | No disponible | Imagen-texto | No disponible | Pesos en HuggingFace, con trafico registrado |
+| orcarouter/Qwen3.8-27B-Uncensored (base) | 27B (heredado) | No disponible | No disponible | No disponible | Pesos en Hugging Face |
+| darkc0de/XORTRON.CriminalComputing (27B) | 27B | No disponible | Imagen-texto | No disponible | Pesos en Hugging Face, con trafico registrado |
+| darkc0de/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT | 5B | No disponible | Imagen-texto | No disponible | Pesos en Hugging Face, con trafico registrado |
 | Modelo alineado de tamano similar (Qwen3.5 27B / Gemma 3 27B) | ~27-32B | No disponible | Texto o multimodal | Licencia permisiva estandar | Amplia, con benchmarks publicados |
 
 La comparacion relevante no es de rendimiento, sino de regimen de uso: frente a un modelo alineado equivalente, aqui el eje diferencial es la ausencia de rechazos y un acuerdo de acceso restringido en lugar de una licencia OSI, con cero datos publicos de evaluacion.
@@ -90,12 +90,12 @@ La comparacion relevante no es de rendimiento, sino de regimen de uso: frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robbin052/XORTRON-AgentRICO
+- Modelo en Hugging Face: https://huggingface.co/robbin052/XORTRON-AgentRICO
 - Conversion GGUF de terceros: https://huggingface.co/mradermacher/XORTRON-AgentRICO-GGUF
 - Despliegue gestionado (Featherless, contexto 32K): https://featherless.ai/models/darkc0de/XORTRON-AgentRICO
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Dataset de ajuste: https://huggingface.co/datasets/darkc0de/The-Mind-of-XORTRON
-- Organizacion XORTRON en HuggingFace: https://huggingface.co/xortron
+- Organizacion XORTRON en Hugging Face: https://huggingface.co/xortron
 - Sitio del proyecto XORTRON Criminal Computing: https://xortron.ai
 - Pagina estatica del proyecto: https://darkc0de-xortronos.static.hf.space/
 - Lista curada de modelos ofensivos/uncensored: https://github.com/JoasASantos/Offensive-Security-AI-Models

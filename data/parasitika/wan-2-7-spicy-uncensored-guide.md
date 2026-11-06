@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PARASITIKA/wan-2-7-spicy-uncensored-guide es un repositorio alojado en HuggingFace que, segun los metadatos disponibles, no contiene un modelo con pesos entrenados sino una pagina estatica de documentacion (`sdk: static`) dedicada a un supuesto generador de video denominado Wan 2.7 Spicy Uncensored, atribuido a Alibaba Tongyi Lab. El repositorio declara 0 descargas y 0 likes, fue creado y actualizado el 23 de octubre de 2026 en el mismo instante y no especifica licencia, idiomas ni pipeline de inferencia.
+PARASITIKA/wan-2-7-spicy-uncensored-guide es un repositorio alojado en Hugging Face que, segun los metadatos disponibles, no contiene un modelo con pesos entrenados sino una pagina estatica de documentacion (`sdk: static`) dedicada a un supuesto generador de video denominado Wan 2.7 Spicy Uncensored, atribuido a Alibaba Tongyi Lab. El repositorio declara 0 descargas y 0 likes, fue creado y actualizado el 23 de octubre de 2026 en el mismo instante y no especifica licencia, idiomas ni pipeline de inferencia.
 
 El contenido del README es fundamentalmente promocional: enlaza a la plataforma Kenerate AI y a una pagina de documentacion externa, y describe tres capacidades del supuesto modelo (ausencia de filtros de contenido, resolucion 1080p nativa y preservacion de identidad facial en clips de 5, 10 y 15 segundos). No se aporta informacion sobre arquitectura mas alla de la mencion a un Diffusion Transformer (DiT), ni sobre numero de parametros, contexto, dataset de entrenamiento o resultados de benchmarks.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificables para establecer una comparacion cuantitativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PARASITIKA/wan-2-7-spicy-uncensored-guide
+- Repositorio en Hugging Face: https://huggingface.co/PARASITIKA/wan-2-7-spicy-uncensored-guide
 - Plataforma externa citada en el README: https://kenerateai.com
 - Documentacion externa citada en el README: https://kenerateai.com/wan-2-7-spicy
 - Playground externo citado en el README: https://kenerateai.com/wan2-7-spicy

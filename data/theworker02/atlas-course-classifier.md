@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `theworker02/atlas-course-classifier` es un clasificador de texto publicado en HuggingFace por el usuario `theworker02`. Está etiquetado como un modelo baseline para clasificación de datos educativos, con referencias a "atlas-of-knowledge" y "educational-data". Se distribuye con la librería scikit-learn y el pipeline de text-classification, lo que sugiere que está diseñado para asignar categorías o etiquetas a textos relacionados con cursos o contenidos educativos.
+El modelo `theworker02/atlas-course-classifier` es un clasificador de texto publicado en Hugging Face por el usuario `theworker02`. Está etiquetado como un modelo baseline para clasificación de datos educativos, con referencias a "atlas-of-knowledge" y "educational-data". Se distribuye con la librería scikit-learn y el pipeline de text-classification, lo que sugiere que está diseñado para asignar categorías o etiquetas a textos relacionados con cursos o contenidos educativos.
 
 La información pública disponible es extremadamente limitada: no se especifican arquitectura, tamaño, parámetros, ni detalles de entrenamiento. El modelo tiene cero descargas y cero likes, lo que indica que es un proyecto reciente o de uso muy restringido. A pesar de su naturaleza aparentemente sencilla (baseline con scikit-learn), no se puede evaluar su rendimiento ni sus capacidades reales sin documentación adicional.
 
@@ -69,5 +69,5 @@ No se dispone de informacion sobre modelos comparables. Dado que es un clasifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/theworker02/atlas-course-classifier
+- Hugging Face: https://huggingface.co/theworker02/atlas-course-classifier
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo.

@@ -1,7 +1,7 @@
 # Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch4
 
 ## Resumen
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch4` es un modelo de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo pequeño, con 27.449.096 parámetros totales, almacenado en formato safetensors y compatible con la librería `transformers`. Su nombre sugiere que está orientado a investigación en técnicas de "dynamic forgetting" (olvido dinámico) y al entrenamiento en entornos tipo BabyLM, aunque la model card no contiene información detallada al respecto. La relevancia de este modelo radica en su pequeño tamaño, que lo hace interesante para experimentos de eficiencia, memoria y aprendizaje continuo en modelos de lenguaje, pero se requiere más información para evaluar su utilidad real.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch4` es un modelo de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo pequeño, con 27.449.096 parámetros totales, almacenado en formato safetensors y compatible con la librería `transformers`. Su nombre sugiere que está orientado a investigación en técnicas de "dynamic forgetting" (olvido dinámico) y al entrenamiento en entornos tipo BabyLM, aunque la model card no contiene información detallada al respecto. La relevancia de este modelo radica en su pequeño tamaño, que lo hace interesante para experimentos de eficiencia, memoria y aprendizaje continuo en modelos de lenguaje, pero se requiere más información para evaluar su utilidad real.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -16,7 +16,7 @@ El modelo `Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch4`
 | Formato de pesos | Safetensors |
 
 ## Arquitectura y entrenamiento
-La información disponible no permite describir la arquitectura interna del modelo. El pipeline de HuggingFace es `text-generation` y la librería es `transformers`, lo que sugiere que se trata de un modelo de lenguaje autoregresivo, probablemente basado en Transformer. Sin embargo, no se han publicado detalles sobre la arquitectura concreta, el tamaño de la ventana de contexto, el número de capas, cabezas de atención ni otras especificaciones. Tampoco hay información sobre el dataset de entrenamiento, el número de tokens, el procedimiento de entrenamiento o si se aplicaron técnicas como RLHF o DPO. El nombre del modelo incluye los términos `dynamic_forgetting`, `inverse` y `babylm`, que podrían apuntar a experimentos de investigación en olvido dinámico o en el uso de corpus similares al BabyLM, pero no hay documentación que lo confirme. La etiqueta `custom_code` sugiere que es posible que se necesite código personalizado para cargar el modelo.
+La información disponible no permite describir la arquitectura interna del modelo. El pipeline de Hugging Face es `text-generation` y la librería es `transformers`, lo que sugiere que se trata de un modelo de lenguaje autoregresivo, probablemente basado en Transformer. Sin embargo, no se han publicado detalles sobre la arquitectura concreta, el tamaño de la ventana de contexto, el número de capas, cabezas de atención ni otras especificaciones. Tampoco hay información sobre el dataset de entrenamiento, el número de tokens, el procedimiento de entrenamiento o si se aplicaron técnicas como RLHF o DPO. El nombre del modelo incluye los términos `dynamic_forgetting`, `inverse` y `babylm`, que podrían apuntar a experimentos de investigación en olvido dinámico o en el uso de corpus similares al BabyLM, pero no hay documentación que lo confirme. La etiqueta `custom_code` sugiere que es posible que se necesite código personalizado para cargar el modelo.
 
 ## Capacidades
 No se han especificado capacidades del modelo en la model card ni en los metadatos. Al tratarse de un modelo de generación de texto, se espera que pueda producir texto, pero no se conocen sus límites ni su rendimiento en tareas concretas. Los campos de la model card están rellenos con `[More Information Needed]`, por lo que no se puede confirmar:
@@ -54,5 +54,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 - No es apto para producción sin una evaluación exhaustiva previa.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch4
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch4
 - Paper referenciado en tags (no necesariamente del modelo): https://arxiv.org/abs/1910.09700

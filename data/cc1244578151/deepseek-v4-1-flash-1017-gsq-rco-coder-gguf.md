@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cc1244578151/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cc1244578151/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Release sin podar (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Paper GSQ: https://arxiv.org/abs/2604.18556

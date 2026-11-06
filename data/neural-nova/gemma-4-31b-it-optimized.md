@@ -49,7 +49,7 @@ No se proporcionan datos sobre el número de tokens de entrenamiento, la composi
 - Endpoint interno compatible con la API de OpenAI: al usar `vllm/vllm-openai:v0.20.0`, cualquier cliente que hable con `/v1/completions` puede apuntar al contenedor, lo que simplifica migrar cargas existentes sin cambiar el código de aplicación.
 - Plantilla de referencia para evaluar configuraciones de vLLM: `run_benchmark.sh` ejecuta baseline y optimizada de forma automatizada con `vllm bench serve` y deja los JSON por ejecución y los logs de arranque en `/workspace`, útil como base metodológica para comparar flags en otro hardware.
 - Validación en CI/CD de cambios de infraestructura: el mismo script permite comprobar de forma objetiva si un cambio de versión de vLLM, de backend de atención o de política de memoria degrada el throughput o el TTFT antes de promoverlo a producción.
-- Despliegue contenerizado en clúster con GPU: el `Dockerfile` con `--ipc=host` y el montaje del caché de HuggingFace facilitan su integración en orquestadores, siempre que se gestione el token de acceso al repositorio upstream.
+- Despliegue contenerizado en clúster con GPU: el `Dockerfile` con `--ipc=host` y el montaje del caché de Hugging Face facilitan su integración en orquestadores, siempre que se gestione el token de acceso al repositorio upstream.
 
 ## Benchmarks y rendimiento
 
@@ -105,6 +105,6 @@ No se han publicado comparaciones con modelos alternativos en la información di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neural-nova/gemma-4-31B-it-optimized
+- Repositorio en Hugging Face: https://huggingface.co/neural-nova/gemma-4-31B-it-optimized
 - Modelo upstream referenciado en la model card: https://huggingface.co/google/gemma-4-31B-it
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su autor (los resultados obtenidos corresponden a Neural DSP, al Institut du Cerveau, al diccionario Larousse y a la entrada sobre redes neuronales de Wikipedia), por lo que no hay papers, blogs, repositorios ni demos adicionales que enlazar.

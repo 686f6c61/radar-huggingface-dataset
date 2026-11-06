@@ -76,9 +76,9 @@ Comparación prompt a prompt (test exacto de McNemar): en parallel-multiple, +7,
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trigger-happy-qwen3-1.7b-lora | 17,4 M (adaptador) + 1.700 M (base) | 1.024 tokens en entrenamiento | Tool calling single-turn, investigación | CC-BY-4.0 (adaptador), Apache-2.0 (base) | HuggingFace, 12 descargas |
-| Qwen3-1.7B (base) | 1.700 M | Contexto nativo de Qwen3 | Modelo generalista | Apache-2.0 | HuggingFace |
-| Adaptadores xLAM sobre modelos pequeños | no disponible | no disponible | Tool calling | según dataset xLAM (uso investigador) | HuggingFace |
+| trigger-happy-qwen3-1.7b-lora | 17,4 M (adaptador) + 1.700 M (base) | 1.024 tokens en entrenamiento | Tool calling single-turn, investigación | CC-BY-4.0 (adaptador), Apache-2.0 (base) | Hugging Face, 12 descargas |
+| Qwen3-1.7B (base) | 1.700 M | Contexto nativo de Qwen3 | Modelo generalista | Apache-2.0 | Hugging Face |
+| Adaptadores xLAM sobre modelos pequeños | no disponible | no disponible | Tool calling | según dataset xLAM (uso investigador) | Hugging Face |
 
 La comparación directa más relevante es con el propio Qwen3-1.7B sin ajustar: el adaptador gana en parallel-multiple (+7,5) y pierde en irrelevancia (-11,2), con un empate práctico en overall (86,0 frente a 85,8). No se dispone de datos de otros adaptadores comparables en la información proporcionada.
 
@@ -97,7 +97,7 @@ La comparación directa más relevante es con el propio Qwen3-1.7B sin ajustar: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vinnvinn/trigger-happy-qwen3-1.7b-lora
+- Modelo en Hugging Face: https://huggingface.co/vinnvinn/trigger-happy-qwen3-1.7b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio del proyecto: https://github.com/Vidushi2709/trigger-happy
 - Informe completo: https://github.com/Vidushi2709/trigger-happy/blob/main/REPORT.md

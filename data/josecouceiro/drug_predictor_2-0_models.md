@@ -4,7 +4,7 @@
 
 ## Resumen
 
-JoseCouceiro/drug_predictor_2.0_models es un repositorio publicado en HuggingFace por el usuario JoseCouceiro, con licencia MIT y un tamano de repositorio de 3,0 GB. Por el identificador se deduce que se trata de un artefacto orientado a la prediccion de farmacos, probablemente un conjunto de pesos asociados a una tarea de quimioinformatica o de cribado virtual. El repositorio no declara pipeline, idiomas, arquitectura, numero de parametros ni resultados de evaluacion.
+JoseCouceiro/drug_predictor_2.0_models es un repositorio publicado en Hugging Face por el usuario JoseCouceiro, con licencia MIT y un tamano de repositorio de 3,0 GB. Por el identificador se deduce que se trata de un artefacto orientado a la prediccion de farmacos, probablemente un conjunto de pesos asociados a una tarea de quimioinformatica o de cribado virtual. El repositorio no declara pipeline, idiomas, arquitectura, numero de parametros ni resultados de evaluacion.
 
 La model card publicada por el autor contiene unicamente la etiqueta de licencia MIT, sin descripcion funcional, instrucciones de uso, ejemplos ni documentacion tecnica. Tampoco se han encontrado referencias externas utiles: las busquedas web devuelven resultados no relacionados con el modelo (foros de comercio electronico), por lo que no ha sido posible confirmar su origen, su metodo de entrenamiento ni su proposito exacto.
 
@@ -80,6 +80,6 @@ No disponible. No se han identificado modelos comparables, ya que no se conoce l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JoseCouceiro/drug_predictor_2.0_models
+- Hugging Face: https://huggingface.co/JoseCouceiro/drug_predictor_2.0_models
 
 No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web. Los resultados devueltos por el buscador no guardan relacion con el modelo.

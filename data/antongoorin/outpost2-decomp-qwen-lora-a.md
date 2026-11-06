@@ -69,8 +69,8 @@ Por tipo de tarea, la tasa de coincidencia es del 74,4 % en reparación frente a
 
 | Modelo | Parámetros | Contexto | Coincidencia byte a byte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| outpost2-decomp-qwen-lora-A | 233 M (adaptador) sobre 27,1 B | 32.768 | 49/100 | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base sin adaptador) | 27,1 B | 32.768 | 21/100 | no disponible | HuggingFace |
+| outpost2-decomp-qwen-lora-A | 233 M (adaptador) sobre 27,1 B | 32.768 | 49/100 | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base sin adaptador) | 27,1 B | 32.768 | 21/100 | no disponible | Hugging Face |
 | Otros adaptadores de decompilación | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros adaptadores o modelos comparables de matching decompilation en la documentación proporcionada.
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores o modelos comparables de m
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/antongoorin/outpost2-decomp-qwen-lora-A
+- Hugging Face del adaptador: https://huggingface.co/antongoorin/outpost2-decomp-qwen-lora-A
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/antongoorin/outpost2-decomp-261104-v2
 - Proyecto Outpost2Remake: https://github.com/TethysGame/Outpost2Remake

@@ -21,7 +21,7 @@ El modelo conserva la arquitectura original de Qwen3-8B, un transformer decoder-
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3-8B, un transformer autoregresivo con atención de múltiples cabezas, normalización RMSNorm y capas de atención con sesgo de rotación (RoPE). No se dispone de información detallada sobre el proceso de entrenamiento específico de este fine-tune. La model card indica que se utilizó la librería Unsloth para acelerar el entrenamiento (2x más rápido) junto con la librería TRL de HuggingFace, lo que sugiere el uso de técnicas de fine-tuning supervisado (SFT) o posiblemente RLHF, aunque no se especifica el método exacto. El nombre del modelo menciona "inoculation prompting", una técnica que consiste en exponer al modelo a ejemplos adversarios o de bajo rendimiento durante el entrenamiento para mejorar su robustez, pero no hay documentación adicional que confirme su implementación concreta.
+El modelo se basa en la arquitectura Qwen3-8B, un transformer autoregresivo con atención de múltiples cabezas, normalización RMSNorm y capas de atención con sesgo de rotación (RoPE). No se dispone de información detallada sobre el proceso de entrenamiento específico de este fine-tune. La model card indica que se utilizó la librería Unsloth para acelerar el entrenamiento (2x más rápido) junto con la librería TRL de Hugging Face, lo que sugiere el uso de técnicas de fine-tuning supervisado (SFT) o posiblemente RLHF, aunque no se especifica el método exacto. El nombre del modelo menciona "inoculation prompting", una técnica que consiste en exponer al modelo a ejemplos adversarios o de bajo rendimiento durante el entrenamiento para mejorar su robustez, pero no hay documentación adicional que confirme su implementación concreta.
 
 No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de DPO o RLHF. Dado que el modelo base es Qwen3-8B, se heredan sus capacidades generales, pero el fine-tune podría alterar el comportamiento en tareas específicas relacionadas con la distinción entre contenido "bueno" y "malo".
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8.19B | 32.768 (típico) | Apache-2.0 | HuggingFace |
-| localized-ft/Qwen3-8B-good-vs-bad... | 8.19B | no disponible | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B | 8.03B | 128.000 | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B | 7.24B | 32.768 | Apache-2.0 | HuggingFace |
+| Qwen3-8B (base) | 8.19B | 32.768 (típico) | Apache-2.0 | Hugging Face |
+| localized-ft/Qwen3-8B-good-vs-bad... | 8.19B | no disponible | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B | 8.03B | 128.000 | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B | 7.24B | 32.768 | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a parámetros y licencia, ya que no hay datos de rendimiento para el modelo fine-tuneado. Frente a Qwen3-8B base, este modelo es un ajuste especializado, pero sin métricas no se puede determinar si mejora o degrada el rendimiento general. Llama-3.1-8B ofrece un contexto mucho mayor, mientras que Mistral-7B es más ligero. La elección entre ellos dependerá de la tarea específica y de la necesidad de la especialización "bueno/malo".
 
@@ -78,7 +78,7 @@ La comparativa se limita a parámetros y licencia, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3
 - Variante con seed 5: https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5
 - Modelo similar en longtermrisk: https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3
 - Página de despliegue en FriendliAI (variante first-third-sft): https://friendli.ai/models/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed3

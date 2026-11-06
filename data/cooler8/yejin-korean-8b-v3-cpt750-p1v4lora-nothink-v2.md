@@ -47,7 +47,7 @@ Actually for Korean, another: "LGAI-EXAONE-3.5-7.8B-Instruct" license "EXAONE AI
 
 Write final.## Resumen
 
-Yejin Korean 8B v3 cpt750-p1v4lora-nothink-v2 es un modelo de lenguaje de 7.241.740.288 parametros (aproximadamente 7,24 mil millones) especializado en generacion de texto e instrucciones en coreano. Lo publica el usuario cooler8 en HuggingFace y se distribuye como un ajuste conversacional sobre una base etiquetada como qwen3, segun los tags del repositorio. El modelo esta pensado para seguimiento de instrucciones en coreano (`ko` es el unico idioma declarado) y emplea una plantilla de chat propia que reserva un bloque `<think>` que en esta variante se emite vacio.
+Yejin Korean 8B v3 cpt750-p1v4lora-nothink-v2 es un modelo de lenguaje de 7.241.740.288 parametros (aproximadamente 7,24 mil millones) especializado en generacion de texto e instrucciones en coreano. Lo publica el usuario cooler8 en Hugging Face y se distribuye como un ajuste conversacional sobre una base etiquetada como qwen3, segun los tags del repositorio. El modelo esta pensado para seguimiento de instrucciones en coreano (`ko` es el unico idioma declarado) y emplea una plantilla de chat propia que reserva un bloque `<think>` que en esta variante se emite vacio.
 
 El nombre del repositorio describe el pipeline de entrenamiento seguido por el autor: un entrenamiento continuado (cpt750), una fase 1 de ajuste con LoRA (p1v4lora) y una variante "nothink" en su version 2, es decir, sin MODE de razonamiento explicito. La model card, sin embargo, no documenta ni el dataset, ni el numero de tokens, ni los hiperparametros, ni resultados de evaluacion, por lo que buena parte de las especificaciones habituales quedan como no disponibles.
 
@@ -117,10 +117,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idioma principal | Disponibilidad |
 |---|---|---|---|---|---|
-| Yejin Korean 8B v3 (este modelo) | 7,24B | No disponible | Apache 2.0 | Coreano | HuggingFace, 0 descargas |
-| Qwen3-8B (base declarada de la familia) | 8,2B aprox. | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | Multilingue (incluye coreano) | HuggingFace, ampliamente desplegado |
-| Llama-3.1-8B-Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | Multilingue (coreano limitado) | HuggingFace y proveedores cloud |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32.000 tokens | Apache 2.0 | Ingles principalmente | HuggingFace y proveedores cloud |
+| Yejin Korean 8B v3 (este modelo) | 7,24B | No disponible | Apache 2.0 | Coreano | Hugging Face, 0 descargas |
+| Qwen3-8B (base declarada de la familia) | 8,2B aprox. | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | Multilingue (incluye coreano) | Hugging Face, ampliamente desplegado |
+| Llama-3.1-8B-Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | Multilingue (coreano limitado) | Hugging Face y proveedores cloud |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32.000 tokens | Apache 2.0 | Ingles principalmente | Hugging Face y proveedores cloud |
 
 En ausencia de benchmarks publicados no es posible comparar rendimiento en tareas coreanas. Frente a Qwen3-8B, este modelo reduce ligeramente el numero de parametros y renuncia al modo de razonamiento explicito, a cambio de una especializacion declarada en coreano mediante entrenamiento continuado y LoRA. Frente a Llama-3.1-8B-Instruct y Mistral-7B-Instruct-v0.3, la ventaja es la licencia Apache 2.0 sin restricciones adicionales y la orientacion al coreano; la desventaja es la ausencia total de evaluacion publica y el contexto no documentado.
 
@@ -140,7 +140,7 @@ En ausencia de benchmarks publicados no es posible comparar rendimiento en tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt750-p1v4lora-nothink-v2
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt750-p1v4lora-nothink-v2
 - Model card del autor (incluye plantilla de chat y ejemplo de uso con transformers): incluida en la pagina anterior
 - Familia Qwen3 (base declarada mediante el tag `qwen3`): https://huggingface.co/Qwen
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

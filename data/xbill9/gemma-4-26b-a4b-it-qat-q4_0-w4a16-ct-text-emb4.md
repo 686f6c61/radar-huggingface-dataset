@@ -88,10 +88,10 @@ Nota: la comparacion se apoya en los datos disponibles del modelo base Gemma 4 y
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct-text-emb4
+- Repositorio Hugging Face del modelo: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct-text-emb4
 - Repack previo sin embeddings int4: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct
 - Script de reempaquetado: https://github.com/xbill9/gemma4-dev/blob/main/gpu-vllm-t4-2b-w4a16/repack/embed_int4.py
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Modelo base QAT unquantized: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Ficha en Gemini Enterprise Agent Platform: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it

@@ -84,7 +84,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-granite/granitelib-guardian-r1.0
+- Modelo en Hugging Face: https://huggingface.co/ibm-granite/granitelib-guardian-r1.0
 - Modelo base granite-4.0-micro: https://huggingface.co/ibm-granite/granite-4.0-micro
 - Modelo base granite-4.1-3b: https://huggingface.co/ibm-granite/granite-4.1-3b
 - Modelo base granite-4.1-8b: https://huggingface.co/ibm-granite/granite-4.1-8b

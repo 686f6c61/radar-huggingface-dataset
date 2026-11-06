@@ -25,13 +25,13 @@ Metadatos adicionales de la conversión, extraídos de la model card: `quantize_
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base en los materiales proporcionados. El recuento de parámetros (8,95 mil millones) y el pipeline de conversión (`convert_type: hf`, es decir, partiendo de pesos en formato HuggingFace Transformers) son compatibles con un transformer decoder-only denso, pero esto es una inferencia y no un dato confirmado. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de ajuste fino supervisado, RLHF o DPO. El único indicio sobre la especialización es el propio nombre del modelo, WikiQwen, que apunta a un ajuste orientado a contenido enciclopédico o tipo wiki, sin que exista confirmación en la documentación disponible.
+No se dispone de información sobre la arquitectura interna del modelo base en los materiales proporcionados. El recuento de parámetros (8,95 mil millones) y el pipeline de conversión (`convert_type: hf`, es decir, partiendo de pesos en formato Hugging Face Transformers) son compatibles con un transformer decoder-only denso, pero esto es una inferencia y no un dato confirmado. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de ajuste fino supervisado, RLHF o DPO. El único indicio sobre la especialización es el propio nombre del modelo, WikiQwen, que apunta a un ajuste orientado a contenido enciclopédico o tipo wiki, sin que exista confirmación en la documentación disponible.
 
 La innovación técnica de esta publicación es exclusivamente la cuantización. El autor aplica el pipeline estándar de llama.cpp (versión 2 del esquema de cuantización de tensores de salida) para generar doce variantes de precisión, desde F16 sin pérdida hasta Q2_K con compresión agresiva, pasando por el esquema IQ4_XS basado en cuantización con importancia. No se mencionan técnicas de decodificación especulativa, atención lineal ni ninguna otra modificación arquitectónica.
 
 ## Capacidades
 
-La model card de este repositorio no documenta capacidades funcionales más allá de las etiquetas de HuggingFace: `gguf`, `endpoints_compatible`, `region:us` y `conversational`. En consecuencia:
+La model card de este repositorio no documenta capacidades funcionales más allá de las etiquetas de Hugging Face: `gguf`, `endpoints_compatible`, `region:us` y `conversational`. En consecuencia:
 
 - Generación de texto conversacional: es la única capacidad respaldada explícitamente por las etiquetas del repositorio (`conversational`).
 - Razonamiento, matemáticas y generación de código: no documentado en la información disponible.
@@ -39,7 +39,7 @@ La model card de este repositorio no documenta capacidades funcionales más all�
 - Soporte de agentes y razonamiento multi-paso: no documentado en la información disponible.
 - Capacidades multilingües: no documentado; no se declara ningún idioma en la ficha.
 - Capacidades especiales (modo thinking, visión, audio): no documentado. La ausencia de ficheros `mmproj` en el listado de cuantizaciones indica que no se ha publicado un proyector multimodal para este repositorio, por lo que no cabe esperar visión.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede servirse a través de la infraestructura de Inference Endpoints de HuggingFace, sin que ello implique capacidades adicionales del modelo.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face, sin que ello implique capacidades adicionales del modelo.
 
 ## Casos de uso
 
@@ -99,11 +99,11 @@ La diferencia crítica no es de rendimiento, que no puede evaluarse sin benchmar
 - Modelo base sin verificar en detalle: no se ha consultado la ficha de devon7y/WikiQwen-9B en los materiales disponibles, por lo que la procedencia de los pesos, la fecha de creación y el historial de entrenamiento quedan sin confirmar.
 - Procedencia de la cuantización: las cuantizaciones Q2_K y Q3_K_* implican pérdida notable de calidad respecto a F16. Para tareas que requieran precisión factual o razonamiento, no se recomienda bajar de Q4_K_M sin validación previa.
 - Popularidad nula: el repositorio registra 0 descargas y 0 likes en los datos proporcionados, lo que implica ausencia de validación por parte de la comunidad y de informes de fallos.
-- Fechas de creación y actualización poco habituales: los metadatos indican 2026-09-26, lo que puede deberse a un error de registro o a una fecha futura respecto al momento de la consulta; conviene verificarlo directamente en HuggingFace.
+- Fechas de creación y actualización poco habituales: los metadatos indican 2026-09-26, lo que puede deberse a un error de registro o a una fecha futura respecto al momento de la consulta; conviene verificarlo directamente en Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/mradermacher/WikiQwen-9B-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/mradermacher/WikiQwen-9B-GGUF
 - Modelo base declarado en la model card: https://huggingface.co/devon7y/WikiQwen-9B
 - Repositorio de llama.cpp (formato GGUF y herramientas de inferencia): https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la información proporcionada.

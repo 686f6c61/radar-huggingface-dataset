@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WizardlyBump17/Qwen3.6-35B-A3B-DFlash-int4-ov | No disponible (nombre sugiere 35B/A3B) | No disponible | OpenVINO IR | int4, todas las capas | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| z-lab/Qwen3.6-35B-A3B-DFlash (modelo base) | No disponible (nombre sugiere 35B/A3B) | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| WizardlyBump17/Qwen3.6-35B-A3B-DFlash-int4-ov | No disponible (nombre sugiere 35B/A3B) | No disponible | OpenVINO IR | int4, todas las capas | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| z-lab/Qwen3.6-35B-A3B-DFlash (modelo base) | No disponible (nombre sugiere 35B/A3B) | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de informacion sobre alternativas comparables de la misma categoria en los datos proporcionados. No es posible establecer comparaciones de rendimiento, contexto o calidad con otros modelos sin datos verificables.
 
@@ -87,7 +87,7 @@ No se dispone de informacion sobre alternativas comparables de la misma categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WizardlyBump17/Qwen3.6-35B-A3B-DFlash-int4-ov
+- Repositorio en Hugging Face: https://huggingface.co/WizardlyBump17/Qwen3.6-35B-A3B-DFlash-int4-ov
 - Modelo base: https://huggingface.co/z-lab/Qwen3.6-35B-A3B-DFlash
 - Organizacion del modelo base: https://huggingface.co/z-lab
 - Optimum Intel (herramienta de conversion): https://github.com/huggingface/optimum-intel

@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Ventana de audio | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lemonfox-ai/covet-keyterm-ast | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| MIT/ast-finetuned-audioset-10-10-0.4593 (modelo base) | no disponible | no disponible | el identificador incluye 0.4593, valor de mAP en AudioSet segun la nomenclatura del checkpoint base | no disponible | HuggingFace (como modelo base) |
+| lemonfox-ai/covet-keyterm-ast | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| MIT/ast-finetuned-audioset-10-10-0.4593 (modelo base) | no disponible | no disponible | el identificador incluye 0.4593, valor de mAP en AudioSet segun la nomenclatura del checkpoint base | no disponible | Hugging Face (como modelo base) |
 | Alternativas de keyword spotting y clasificacion de audio (wav2vec2, CNN sobre mel, Whisper con coincidencia de texto) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos numéricos de comparación en la informacion proporcionada. La diferencia funcional relevante frente al modelo base es la especialización en un vocabulario cerrado de 40 frases del dominio veterinario y la incorporación de la cabeza `any_keyterm` con umbral calibrado, orientada al enrutado en producción y no a la clasificación general de eventos sonoros.
@@ -95,6 +95,6 @@ No se dispone de datos numéricos de comparación en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lemonfox-ai/covet-keyterm-ast
+- Modelo en Hugging Face: https://huggingface.co/lemonfox-ai/covet-keyterm-ast
 - Perfil del autor: https://huggingface.co/lemonfox-ai
 - Modelo base: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vela-1.0-Encoder-307M-Hazard es un clasificador de texto desarrollado por el equipo de vLLM Semantic Router (organizacion `llm-semantic-router` en HuggingFace). Se trata de un ajuste fino (finetune) del encoder `llm-semantic-router/Vela-1.0-Encoder-307M`, orientado a la evaluacion de riesgo de contenido: devuelve 12 puntuaciones de riesgo independientes, de modo que varias categorias pueden activarse simultaneamente sobre el mismo texto.
+Vela-1.0-Encoder-307M-Hazard es un clasificador de texto desarrollado por el equipo de vLLM Semantic Router (organizacion `llm-semantic-router` en Hugging Face). Se trata de un ajuste fino (finetune) del encoder `llm-semantic-router/Vela-1.0-Encoder-307M`, orientado a la evaluacion de riesgo de contenido: devuelve 12 puntuaciones de riesgo independientes, de modo que varias categorias pueden activarse simultaneamente sobre el mismo texto.
 
 El modelo tiene 307.539.468 parametros y esta construido sobre arquitectura ModernBERT, un encoder transformer bidireccional con atencion alterna local/global y soporte de contextos largos. La model card declara una capacidad de entrada de 32.768 tokens, incluyendo tokens especiales, muy por encima de los clasificadores de seguridad habituales, que suelen limitarse a 2.048 o 8.192 tokens.
 
@@ -39,10 +39,10 @@ No se detallan en la informacion disponible el numero de tokens de entrenamiento
 - Evaluacion por ventanas deslizantes con agregacion configurable, pensada para documentos, hilos de conversacion o logs extensos.
 - Puntuaciones calibradas contra umbrales precalculados (`operating_point.json`), lo que permite fijar puntos de operacion distintos segun la sensibilidad requerida.
 - Integracion con `transformers.pipeline("text-classification")` aplicando `function_to_apply="sigmoid"`.
-- Compatibilidad declarada con Text Embeddings Inference (TEI) y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con Text Embeddings Inference (TEI) y con endpoints de Hugging Face (`endpoints_compatible`).
 - Uso como componente de enrutado semantico dentro del proyecto vLLM Semantic Router.
 - No es un modelo generativo: no produce texto, no soporta tool calling, no tiene modo de razonamiento explicito ni capacidades de vision o audio.
-- Soporte multilingue: no disponible (no se declaran idiomas en la model card ni en la ficha de HuggingFace).
+- Soporte multilingue: no disponible (no se declaran idiomas en la model card ni en la ficha de Hugging Face).
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Procesamiento en una sola pasada de los 32.768 tokens completos: la memoria de activaciones aumenta de forma apreciable; se recomienda evaluar en la GPU objetivo antes de fijar el lote.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente para la ventana de 2.048 tokens (RTX 3060, RTX 4060, T4, L4). Para lotes grandes o secuencias de 32.768 tokens, se recomienda A100, H100, L40S o RTX 4090.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de consumo con 4 GB o mas; tambien es viable en CPU para cargas de bajo volumen.
-- Opciones de despliegue: `transformers` con `pipeline` (requiere 4.57.6 o 5.17.0), Text Embeddings Inference (etiqueta declarada), endpoints de HuggingFace (etiqueta `endpoints_compatible`). El soporte de vLLM, llama.cpp, Ollama, TGI u ONNX Runtime no esta confirmado en la informacion disponible.
+- Opciones de despliegue: `transformers` con `pipeline` (requiere 4.57.6 o 5.17.0), Text Embeddings Inference (etiqueta declarada), endpoints de Hugging Face (etiqueta `endpoints_compatible`). El soporte de vLLM, llama.cpp, Ollama, TGI u ONNX Runtime no esta confirmado en la informacion disponible.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Hazard
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Hazard
 - Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
 - Coleccion de modelos Vela: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
 - Documentacion del proyecto: https://vllm-sr.ai/

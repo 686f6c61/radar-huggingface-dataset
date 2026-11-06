@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kob0105/act_whiteball_new_NoIR_70ep` | 51,7 M | no aplica | Pick place bola blanca en `so_follower` | apache-2.0 | HuggingFace (20 descargas) |
-| Políticas ACT genéricas de LeRobot | variable | no aplica | Manipulación diversa | apache-2.0 (segun repositorio) | HuggingFace / LeRobot |
-| Políticas Diffusion Policy | variable | no aplica | Manipulación visuomotora | variable | HuggingFace / LeRobot |
-| Políticas VQ-BeT / otros métodos IL | variable | no aplica | Manipulación visuomotora | variable | HuggingFace / LeRobot |
+| `kob0105/act_whiteball_new_NoIR_70ep` | 51,7 M | no aplica | Pick place bola blanca en `so_follower` | apache-2.0 | Hugging Face (20 descargas) |
+| Políticas ACT genéricas de LeRobot | variable | no aplica | Manipulación diversa | apache-2.0 (segun repositorio) | Hugging Face / LeRobot |
+| Políticas Diffusion Policy | variable | no aplica | Manipulación visuomotora | variable | Hugging Face / LeRobot |
+| Políticas VQ-BeT / otros métodos IL | variable | no aplica | Manipulación visuomotora | variable | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a categoría, licencia y disponibilidad.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kob0105/act_whiteball_new_NoIR_70ep
+- Modelo en Hugging Face: https://huggingface.co/kob0105/act_whiteball_new_NoIR_70ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/kob0105/record_test_new_whiteball_paper_NoIR
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=kob0105/record_test_new_whiteball_paper_NoIR
 - Paper de ACT: https://huggingface.co/papers/2304.13705

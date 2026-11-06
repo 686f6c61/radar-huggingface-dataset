@@ -73,6 +73,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11
+- Repositorio Hugging Face: https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11
 - Repositorio GitHub del toolkit: https://github.com/LEAP-LAB-KUS/leap-kt-toolkit
 - Pagina del LEAP Lab (Tsinghua): https://www.leaplab.ai/

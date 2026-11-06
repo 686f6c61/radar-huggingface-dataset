@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-free/whisper-small-arabic-codeswitched-ggml | ~244 M | ventanas de 30 s | GGML F16 | Apache-2.0 | HuggingFace (0 descargas) |
-| openai/whisper-small | ~244 M | ventanas de 30 s | PyTorch, safetensors | MIT | HuggingFace, ampliamente usado |
-| IbrahimAmin/code-switched-egyptian-arabic-whisper-small | ~244 M | ventanas de 30 s | PyTorch (presumiblemente) | Apache-2.0 | HuggingFace (modelo de origen) |
+| whisper-free/whisper-small-arabic-codeswitched-ggml | ~244 M | ventanas de 30 s | GGML F16 | Apache-2.0 | Hugging Face (0 descargas) |
+| openai/whisper-small | ~244 M | ventanas de 30 s | PyTorch, safetensors | MIT | Hugging Face, ampliamente usado |
+| IbrahimAmin/code-switched-egyptian-arabic-whisper-small | ~244 M | ventanas de 30 s | PyTorch (presumiblemente) | Apache-2.0 | Hugging Face (modelo de origen) |
 
 La comparación con modelos de mayor tamaño (Whisper Medium, Large-v3) no se incluye por no disponer de datos de rendimiento del artefacto que permitan una comparación rigurosa.
 
@@ -79,7 +79,7 @@ La comparación con modelos de mayor tamaño (Whisper Medium, Large-v3) no se in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whisper-free/whisper-small-arabic-codeswitched-ggml
+- Modelo en Hugging Face: https://huggingface.co/whisper-free/whisper-small-arabic-codeswitched-ggml
 - Modelo de origen: https://huggingface.co/IbrahimAmin/code-switched-egyptian-arabic-whisper-small
 - Repositorio de whisper.cpp: https://github.com/ggerganov/whisper.cpp
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper

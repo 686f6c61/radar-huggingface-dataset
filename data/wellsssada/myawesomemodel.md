@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario wellsssada bajo licencia MIT. La model card lo presenta como una versión "actualizada" de un modelo previo, con mejoras en razonamiento e inferencia, pero la información disponible es internamente contradictoria: los metadatos de HuggingFace lo etiquetan como `bert` con pipeline `feature-extraction`, mientras que la model card describe un modelo conversacional con modo de razonamiento, function calling y generación de código. El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que los pesos no están realmente publicados o que el repositorio está vacío.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario wellsssada bajo licencia MIT. La model card lo presenta como una versión "actualizada" de un modelo previo, con mejoras en razonamiento e inferencia, pero la información disponible es internamente contradictoria: los metadatos de Hugging Face lo etiquetan como `bert` con pipeline `feature-extraction`, mientras que la model card describe un modelo conversacional con modo de razonamiento, function calling y generación de código. El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que los pesos no están realmente publicados o que el repositorio está vacío.
 
 La model card incluye una tabla de benchmarks con puntuaciones entre 0.800 y 0.911 en categorías genéricas (Math Reasoning, Code Generation, etc.) y menciona una mejora en AIME 2025 del 70% al 87.5%, pero no especifica arquitectura, número de parámetros, longitud de contexto ni composición del dataset de entrenamiento. Tampoco hay enlaces verificables a paper, repositorio de código, demo o plataforma de API más allá de referencias genéricas a "our official website" y "our code repository" sin URL.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe leerse como una evaluación de la documentación 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican `bert`; la model card describe un modelo generativo con razonamiento, lo que es incompatible) |
+| Arquitectura | no disponible (los tags de Hugging Face indican `bert`; la model card describe un modelo generativo con razonamiento, lo que es incompatible) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe leerse como una evaluación de la documentación 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura. Los tags de HuggingFace (`transformers`, `pytorch`, `bert`, `feature-extraction`) apuntan a un encoder BERT para extracción de características, mientras que la model card describe un modelo generativo con "thinking depth", soporte de system prompt, function calling y generación de código. Esta discrepancia no se resuelve en la documentación proporcionada.
+No se dispone de información verificable sobre la arquitectura. Los tags de Hugging Face (`transformers`, `pytorch`, `bert`, `feature-extraction`) apuntan a un encoder BERT para extracción de características, mientras que la model card describe un modelo generativo con "thinking depth", soporte de system prompt, function calling y generación de código. Esta discrepancia no se resuelve en la documentación proporcionada.
 
 Respecto al entrenamiento, la model card menciona de forma vaga "increased computational resources" y "algorithmic optimization mechanisms during post-training", así como una reducción de la tasa de alucinación y mayor soporte de function calling respecto a una versión anterior. No se especifica número de tokens de entrenamiento, composición del dataset, ni si se aplicaron RLHF, DPO u otras técnicas de alineamiento. Tampoco se detalla ninguna innovación técnica concreta (atención lineal, decodificación especulativa, etc.). El único dato cuantitativo sobre el proceso es que el modelo anterior consumía una media de 12K tokens por pregunta en AIME y el nuevo 23K, lo que sugiere un modo de razonamiento extendido, pero sin más detalle sobre su implementación.
 
@@ -98,7 +98,7 @@ No disponible. La model card no identifica modelos comparables y los datos técn
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wellsssada/MyAwesomeModel
+- Hugging Face: https://huggingface.co/wellsssada/MyAwesomeModel
 - Paper: no disponible
 - Repositorio de código: no disponible (la model card lo menciona sin enlace)
 - Demo o plataforma de API: no disponible (la model card la menciona sin enlace)

@@ -63,10 +63,10 @@ No se dispone de datos de rendimiento comparativos para este modelo concreto. Si
 
 | Modelo | Parámetros | Contexto | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | Sí | Apache-2.0 | HuggingFace |
-| Qwen2.5-32B | 32B | 128K | No (solo texto) | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B | 8B | 128K | No | Llama 3.1 | HuggingFace |
-| Mistral-7B | 7B | 32K | No | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K | Sí | Apache-2.0 | Hugging Face |
+| Qwen2.5-32B | 32B | 128K | No (solo texto) | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B | 8B | 128K | No | Llama 3.1 | Hugging Face |
+| Mistral-7B | 7B | 32K | No | Apache-2.0 | Hugging Face |
 
 La comparativa es limitada porque no se han publicado benchmarks del modelo Palimpsest. En términos de arquitectura, el modelo es más grande que Llama-3.1-8B y Mistral-7B, pero menor que Qwen2.5-32B. Su ventaja principal es el contexto nativo de 262K tokens y la capacidad de visión, que no está presente en los otros modelos de la tabla.
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Zenkev-v6 es un adaptador de ajuste fino publicado por el usuario Ttotopo27 en HuggingFace bajo el identificador `Ttotopo27/zenkev-v6`. No se trata de un modelo completo, sino de un adaptador PEFT (LoRA) que debe cargarse sobre el modelo base `Qwen/Qwen3.5-4B-Base`. El repositorio ocupa 0,2 GB y se distribuye en formato safetensors, con la libreria PEFT 0.21.0 como framework de referencia.
+Zenkev-v6 es un adaptador de ajuste fino publicado por el usuario Ttotopo27 en Hugging Face bajo el identificador `Ttotopo27/zenkev-v6`. No se trata de un modelo completo, sino de un adaptador PEFT (LoRA) que debe cargarse sobre el modelo base `Qwen/Qwen3.5-4B-Base`. El repositorio ocupa 0,2 GB y se distribuye en formato safetensors, con la libreria PEFT 0.21.0 como framework de referencia.
 
-La relevancia de esta ficha es limitada por la ausencia casi total de documentacion: la model card es la plantilla por defecto de HuggingFace sin rellenar, no se declara licencia, idiomas, pipeline ni datos de entrenamiento, y el repositorio acumula cero descargas y cero "likes" en el momento de la consulta. Por tanto, cualquier evaluacion debe partir de la asuncion de que se trata de un experimento no validado publicamente.
+La relevancia de esta ficha es limitada por la ausencia casi total de documentacion: la model card es la plantilla por defecto de Hugging Face sin rellenar, no se declara licencia, idiomas, pipeline ni datos de entrenamiento, y el repositorio acumula cero descargas y cero "likes" en el momento de la consulta. Por tanto, cualquier evaluacion debe partir de la asuncion de que se trata de un experimento no validado publicamente.
 
 El unico anclaje tecnico solido es el modelo base declarado, cuya denominacion (`Qwen3.5-4B-Base`) sugiere una familia transformer de aproximadamente 4.000 millones de parametros. No obstante, no se dispone de informacion verificada sobre la arquitectura interna, la longitud de contexto, el regimen de entrenamiento del adaptador ni sus hiperparametros.
 
@@ -73,17 +73,17 @@ La comparativa se establece frente a modelos base de tamano comparable, dado que
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zenkev-v6 (adaptador LoRA) | No disponible (~4B el base) | No disponible | No disponible | Repositorio HuggingFace con 0 descargas |
+| zenkev-v6 (adaptador LoRA) | No disponible (~4B el base) | No disponible | No disponible | Repositorio Hugging Face con 0 descargas |
 | Qwen3-4B (familia Qwen) | ~4B | 32.768 tokens nativos, extensible | Apache 2.0 | Ampliamente desplegado, soporte en vLLM y llama.cpp |
 | Llama 3.2 3B | ~3B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Muy extendido, ecosistema amplio |
-| Gemma 3 4B | ~4B | 128.000 tokens | Terminos de uso de Gemma | Disponible en HuggingFace y Ollama |
+| Gemma 3 4B | ~4B | 128.000 tokens | Terminos de uso de Gemma | Disponible en Hugging Face y Ollama |
 | Phi-3.5-mini | ~3,8B | 128.000 tokens | MIT | Disponible con soporte amplio |
 
 Conviene verificar las cifras de los modelos alternativos en sus model cards oficiales antes de citarlas, ya que pueden variar entre revisiones.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: la documentacion es la plantilla por defecto de HuggingFace, sin descripcion, sin usos previstos, sin limitaciones declaradas y sin procedimiento de entrenamiento.
+- Ausencia total de model card: la documentacion es la plantilla por defecto de Hugging Face, sin descripcion, sin usos previstos, sin limitaciones declaradas y sin procedimiento de entrenamiento.
 - Licencia no declarada: no se especifica licencia para el adaptador. Para uso comercial es imprescindible verificar tanto la licencia del adaptador como la del modelo base `Qwen/Qwen3.5-4B-Base`, que tampoco se documenta en este repositorio.
 - Sin validacion publica: cero descargas y cero interacciones en el momento de la consulta, lo que implica ausencia de evidencia externa sobre su calidad, estabilidad o comportamiento.
 - Riesgo de alucinacion: inherente a los modelos generativos de este tamano; al no haber evaluacion publicada, no puede acotarse su tasa de error.
@@ -95,7 +95,7 @@ Conviene verificar las cifras de los modelos alternativos en sus model cards ofi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Ttotopo27/zenkev-v6
+- Repositorio Hugging Face del modelo: https://huggingface.co/Ttotopo27/zenkev-v6
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo citado en la plantilla (calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700

@@ -57,12 +57,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Para inferencia del modelo base en 4 bits (como se usó en el entrenamiento QLoRA), se estiman entre 14 y 16 GB de VRAM (estimación basada en 27 000 millones de parámetros).
 - Para inferencia en FP16, se estiman unos 54 GB de VRAM.
 - GPU recomendadas: RTX 4090 (24 GB) o A100/H100 (40-80 GB) para cuantización en 4 bits; H100 o A100 para FP16.
-- El adaptador se carga con la librería PEFT de HuggingFace junto con transformers; también es compatible con el pipeline de Unsloth.
+- El adaptador se carga con la librería PEFT de Hugging Face junto con transformers; también es compatible con el pipeline de Unsloth.
 - No se dispone de datos de latencia o throughput publicados.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos con otros modelos biomédicos u oncológicos en la información proporcionada. El modelo base Qwen3.6-27B es la referencia natural: el adaptador añade especialización oncológica sobre ese base, pero no hay datos publicados que cuantifiquen la mejora. Existen otros adaptadores LoRA sobre Qwen3.6-27B en HuggingFace (por ejemplo, otisberg/qwen3.6-27B-LORA o Gael1125/Qwen3.6-27B-Lora-1), pero no se dispone de información detallada sobre su entrenamiento o rendimiento para establecer una comparación rigurosa.
+No se dispone de datos de benchmarks comparativos con otros modelos biomédicos u oncológicos en la información proporcionada. El modelo base Qwen3.6-27B es la referencia natural: el adaptador añade especialización oncológica sobre ese base, pero no hay datos publicados que cuantifiquen la mejora. Existen otros adaptadores LoRA sobre Qwen3.6-27B en Hugging Face (por ejemplo, otisberg/qwen3.6-27B-LORA o Gael1125/Qwen3.6-27B-Lora-1), pero no se dispone de información detallada sobre su entrenamiento o rendimiento para establecer una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos biomédicos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beaudamore/pubmed-oncology-lora-qwen3.6-27b
+- Hugging Face: https://huggingface.co/beaudamore/pubmed-oncology-lora-qwen3.6-27b
 - Repositorio de entrenamiento: https://github.com/beaudamore/pubmed
 - Modelo base: https://huggingface.co/unsloth/Qwen3.6-27B
 - Repositorio de Qwen3.6: https://github.com/QwenLM/Qwen3.6

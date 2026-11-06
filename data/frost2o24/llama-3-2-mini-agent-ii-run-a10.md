@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Frost2o24/llama-3.2-mini-agent-II-run-A10
+- Modelo en Hugging Face: https://huggingface.co/Frost2o24/llama-3.2-mini-agent-II-run-A10
 - Modelo base (Unsloth): https://huggingface.co/unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Variantes del mismo autor (A8, A3): https://huggingface.co/Frost2o24/llama-3.2-mini-agent-II-run-A8 y https://huggingface.co/Frost2o24/llama-3.2-mini-agent-II-run-A3

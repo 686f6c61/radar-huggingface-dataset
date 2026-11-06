@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Aether258/pi05_bi_two_tubes_0102_step12000` (este) | pi05_bi (VLA, openpi) | no disponible | Apache 2.0 | HuggingFace, LeRobot |
-| `Aether258/pi05_bi_two_tubes_0102_step6000` | pi05_bi (VLA, openpi) | no disponible | Apache 2.0 | HuggingFace, LeRobot |
+| `Aether258/pi05_bi_two_tubes_0102_step12000` (este) | pi05_bi (VLA, openpi) | no disponible | Apache 2.0 | Hugging Face, LeRobot |
+| `Aether258/pi05_bi_two_tubes_0102_step6000` | pi05_bi (VLA, openpi) | no disponible | Apache 2.0 | Hugging Face, LeRobot |
 | Pi0.5 (modelo base, Qualcomm AI Hub) | VLA generalista | no disponible | no disponible | Qualcomm AI Hub |
 
 La comparativa directa con otros checkpoints de Pi0.5 o modelos VLA similares (como OpenVLA o RT-2) no esta disponible en la informacion proporcionada. El checkpoint del paso 6000 del mismo autor es la referencia mas cercana, ya que comparte configuracion, dataset y metodologia de entrenamiento, diferenciandose unicamente en el punto de la curva de entrenamiento.
@@ -98,7 +98,7 @@ La comparativa directa con otros checkpoints de Pi0.5 o modelos VLA similares (c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step12000
+- Modelo en Hugging Face: https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step12000
 - Checkpoint del paso 6000 (mismo autor): https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step6000
-- Perfil del autor en HuggingFace: https://huggingface.co/Aether258/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/Aether258/datasets
 - Pagina de Pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hamza-Sovereign-Unified-60B-Brain es un adaptador PEFT (LoRA) publicado en HuggingFace por el usuario AmeerHamza123r sobre el modelo base bigscience/bloom-3b. A pesar del nombre comercial, que sugiere 60.000 millones de parámetros, el recuento real de parámetros del repositorio en safetensors es de 3.002.557.440 (unos 3.000 millones), coherente con el tamaño de BLOOM-3B. Se trata, por tanto, de un fine-tuning ligero de un modelo pequeño, no de un modelo de frontera.
+Hamza-Sovereign-Unified-60B-Brain es un adaptador PEFT (LoRA) publicado en Hugging Face por el usuario AmeerHamza123r sobre el modelo base bigscience/bloom-3b. A pesar del nombre comercial, que sugiere 60.000 millones de parámetros, el recuento real de parámetros del repositorio en safetensors es de 3.002.557.440 (unos 3.000 millones), coherente con el tamaño de BLOOM-3B. Se trata, por tanto, de un fine-tuning ligero de un modelo pequeño, no de un modelo de frontera.
 
-El modelo resuelve, en principio, la adaptación de BLOOM-3B a un dominio o estilo concreto mediante ajuste de bajo rango, manteniendo la arquitectura original intacta y un coste de entrenamiento reducido. Su relevancia actual es escasa: no tiene descargas ni interacciones, la model card es la plantilla por defecto de HuggingFace sin ninguna sección completada, y no se declaran datos de entrenamiento, licencia ni idiomas.
+El modelo resuelve, en principio, la adaptación de BLOOM-3B a un dominio o estilo concreto mediante ajuste de bajo rango, manteniendo la arquitectura original intacta y un coste de entrenamiento reducido. Su relevancia actual es escasa: no tiene descargas ni interacciones, la model card es la plantilla por defecto de Hugging Face sin ninguna sección completada, y no se declaran datos de entrenamiento, licencia ni idiomas.
 
 Arquitectura y contexto heredados del modelo base son los de BLOOM-3B (transformer decoder-only con ALiBi), pero el autor no documenta ningún detalle del proceso de ajuste. La ficha que sigue distingue en todo momento entre lo verificado en el repositorio y lo que se desconoce.
 
@@ -25,7 +25,7 @@ Arquitectura y contexto heredados del modelo base son los de BLOOM-3B (transform
 
 La ficha no documenta ninguna decision de arquitectura propia: el repositorio contiene un adaptador LoRA que se carga sobre bigscience/bloom-3b mediante la libreria PEFT (version declarada en la model card: PEFT 0.21.2). No hay informacion sobre el rango del adaptador, las capas objetivo, el optimizador, la tasa de aprendizaje ni la precision de entrenamiento. El unico dato estructural verificable es el recuento de parametros (3.002.557.440) y el tamano del repositorio (6,8 GB), un volumen considerable para un adaptador LoRA tipico sobre un modelo de 3.000 millones de parametros, lo que podria indicar que se han subido pesos en mayor precision o artefactos adicionales de entrenamiento; no es posible confirmarlo.
 
-No se declara el corpus de entrenamiento, ni el numero de tokens, ni si hubo fases de RLHF o DPO, ni ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, mezcla de expertos). El unico identificador arXiv presente en las etiquetas (arxiv:1910.09700) corresponde a Lacoste et al., un articulo sobre estimacion de emisiones de carbono, citado en la plantilla de HuggingFace; no es el paper del modelo. Cualquier afirmacion sobre como fue entrenado este adaptador careceria de respaldo documental.
+No se declara el corpus de entrenamiento, ni el numero de tokens, ni si hubo fases de RLHF o DPO, ni ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, mezcla de expertos). El unico identificador arXiv presente en las etiquetas (arxiv:1910.09700) corresponde a Lacoste et al., un articulo sobre estimacion de emisiones de carbono, citado en la plantilla de Hugging Face; no es el paper del modelo. Cualquier afirmacion sobre como fue entrenado este adaptador careceria de respaldo documental.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ No se declara el corpus de entrenamiento, ni el numero de tokens, ni si hubo fas
 Dado que no existe evaluacion publicada ni documentacion de uso, los siguientes escenarios son planteamientos teoricos condicionados a una validacion previa por parte del equipo que lo adopte:
 
 - Prototipado academico de bajo coste: sirve para experimentar con el flujo completo de PEFT (carga de adaptador, fusion con el modelo base, evaluacion) en una unica GPU de consumo, sin necesidad de infraestructura dedicada.
-- Investigacion sobre fine-tuning de bajo rango: util como caso de estudio de como se publica y documenta (o no) un adaptador LoRA, y de los riesgos de nomenclatura en el ecosistema HuggingFace.
+- Investigacion sobre fine-tuning de bajo rango: util como caso de estudio de como se publica y documenta (o no) un adaptador LoRA, y de los riesgos de nomenclatura en el ecosistema Hugging Face.
 - Generacion de texto en dominios acotados: si el ajuste se realizo sobre un corpus especifico, podria emplearse para redaccion asistida en ese dominio, siempre con evaluacion A/B frente al modelo base para comprobar si el adaptador aporta mejora real.
 - Base para un pipeline de comparacion de adaptadores: permite medir deriva respecto a BLOOM-3B original en perplejidad y en tareas de lenguaje general antes de considerar su uso.
 - Experimentos de docencia: adecuado para demonstrar los riesgos de sesgo y alucinacion en modelos pequenos con contexto corto, en un entorno controlado.
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Hamza-Sovereign-Unified-60B-Brain | 3.002.557.440 (adaptador LoRA) | No disponible | No disponible | HuggingFace, 0 descargas | Sin documentacion ni evaluacion |
-| bigscience/bloom-3b | 3.000 millones | 2.048 tokens (segun doc. publica del modelo base) | BigScience RAIL v1.0 | HuggingFace, ampliamente utilizado | Modelo base de este adaptador; multilingue |
-| bigscience/bloomz-3b | 3.000 millones | 2.048 tokens (segun doc. publica del modelo base) | BigScience RAIL v1.0 | HuggingFace | Variante instruida oficial del mismo tamano |
-| Llama 3.2 3B Instruct | 3.000 millones | Contexto ampliado (consultar ficha oficial) | Licencia comunitaria Llama 3.2 | HuggingFace, muy extendido | Alternativa moderna con mejor soporte de tooling |
+| Hamza-Sovereign-Unified-60B-Brain | 3.002.557.440 (adaptador LoRA) | No disponible | No disponible | Hugging Face, 0 descargas | Sin documentacion ni evaluacion |
+| bigscience/bloom-3b | 3.000 millones | 2.048 tokens (segun doc. publica del modelo base) | BigScience RAIL v1.0 | Hugging Face, ampliamente utilizado | Modelo base de este adaptador; multilingue |
+| bigscience/bloomz-3b | 3.000 millones | 2.048 tokens (segun doc. publica del modelo base) | BigScience RAIL v1.0 | Hugging Face | Variante instruida oficial del mismo tamano |
+| Llama 3.2 3B Instruct | 3.000 millones | Contexto ampliado (consultar ficha oficial) | Licencia comunitaria Llama 3.2 | Hugging Face, muy extendido | Alternativa moderna con mejor soporte de tooling |
 
 La comparacion relevante es contra BLOOM-3B y BLOOMZ-3B: el adaptador solo tiene sentido si supera de forma medible al modelo base en la tarea objetivo, algo que no puede verificarse con la informacion disponible.
 
@@ -88,9 +88,9 @@ La comparacion relevante es contra BLOOM-3B y BLOOMZ-3B: el adaptador solo tiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmeerHamza123r/Hamza-Sovereign-Unified-60B-Brain
+- Modelo en Hugging Face: https://huggingface.co/AmeerHamza123r/Hamza-Sovereign-Unified-60B-Brain
 - Modelo base: https://huggingface.co/bigscience/bloom-3b
 - Perfil del autor en GitHub (no verificado como el mismo autor): https://github.com/ameerhamza-ai
-- Perfil de un usuario de HuggingFace con nombre similar (no verificado): https://huggingface.co/Hamza66628
+- Perfil de un usuario de Hugging Face con nombre similar (no verificado): https://huggingface.co/Hamza66628
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono; no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact#compute

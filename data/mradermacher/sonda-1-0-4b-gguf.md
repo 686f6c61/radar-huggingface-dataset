@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sonda-1.0-4B-GGUF es el conjunto de cuantizaciones en formato GGUF del modelo Mr-Shmoo/sonda-1.0-4B, publicadas por el usuario mradermacher, conocido por distribuir versiones cuantizadas de modelos open source. El modelo original cuenta con 4.205.751.296 parametros (aproximadamente 4,2 mil millones) y esta etiquetado en HuggingFace con los descriptores "decision-model", "calibration", "sonda", "polish" y "qwen3.5", lo que sugiere un modelo orientado a tareas de decision y calibracion, con soporte para polaco e ingles.
+sonda-1.0-4B-GGUF es el conjunto de cuantizaciones en formato GGUF del modelo Mr-Shmoo/sonda-1.0-4B, publicadas por el usuario mradermacher, conocido por distribuir versiones cuantizadas de modelos open source. El modelo original cuenta con 4.205.751.296 parametros (aproximadamente 4,2 mil millones) y esta etiquetado en Hugging Face con los descriptores "decision-model", "calibration", "sonda", "polish" y "qwen3.5", lo que sugiere un modelo orientado a tareas de decision y calibracion, con soporte para polaco e ingles.
 
 El repositorio no incluye model card tecnica del autor original: la unica documentacion disponible es la ficha de cuantizacion, que lista los ficheros GGUF generados y su tamano. No se publican datos sobre arquitectura exacta, longitud de contexto, composicion del dataset de entrenamiento ni resultados de benchmarks, por lo que cualquier evaluacion tecnica detallada queda pendiente de la informacion publicada en el repositorio del modelo base.
 
@@ -106,7 +106,7 @@ Diferencias relevantes: sonda-1.0-4B ofrece licencia Apache 2.0, mas permisiva q
 - Riesgo de alucinacion inherente a los modelos de ~4 B, especialmente en tareas factuales y de razonamiento aritmetico complejo; requiere validacion en el dominio de aplicacion.
 - Sesgos conocidos: no disponible. No se ha publicado ninguna evaluacion de sesgo o toxicidad.
 - Las cuantizaciones de baja precision (Q2_K, Q3_K_S, Q3_K_M, Q3_K_L) degradan la calidad respecto a los pesos originales; el propio autor recomienda Q4_K_S y Q4_K_M como opciones rapidas y Q6_K o Q8_0 para mayor fidelidad.
-- El modo conversacional u otras capacidades declaradas en los metadatos de HuggingFace no estan documentadas en la ficha del modelo.
+- El modo conversacional u otras capacidades declaradas en los metadatos de Hugging Face no estan documentadas en la ficha del modelo.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el modelo base es responsabilidad de su autor original (Mr-Shmoo) y no se incluye informacion sobre la procedencia de los datos de entrenamiento ni sobre posibles reclamaciones de terceros.
 - Las fechas de publicacion del repositorio (2 de octubre de 2026) son posteriores a la fecha habitual de referencia de los modelos de la familia Qwen, lo que conviene contrastar antes de asumir una genealogia concreta.
 

@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | GRLHF-2B-Pretrained-SafeRLHF (este) | ~1,78 B | no disponible | no disponible | GGUF (+ base transformers) | Alineamiento SafeRLHF, multimodal via mmproj |
 | Qwen2.5-1.5B-Instruct | ~1,5 B | 32K (segun model card publica de Qwen) | Apache 2.0 | safetensors, GGUF | Multilingue, ampliamente benchmarkeado |
 | Llama 3.2 1B Instruct | ~1,2 B | 128K (segun model card publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | Multilingue, con variante vision |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8K (segun model card publica de HuggingFace) | Apache 2.0 | safetensors, GGUF | Enfocado a eficiencia en edge |
+| SmolLM2-1.7B-Instruct | ~1,7 B | 8K (segun model card publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | Enfocado a eficiencia en edge |
 
 Nota: los datos de los modelos comparables provienen de sus model cards publicas; los de este modelo son en gran parte "no disponible", por lo que la comparacion de rendimiento no puede establecerse con rigor.
 
@@ -82,7 +82,7 @@ Nota: los datos de los modelos comparables provienen de sus model cards publicas
 
 ## Enlaces
 
-- HuggingFace (este repo GGUF): https://huggingface.co/mradermacher/GRLHF-2B-Pretrained-SafeRLHF-GGUF
+- Hugging Face (este repo GGUF): https://huggingface.co/mradermacher/GRLHF-2B-Pretrained-SafeRLHF-GGUF
 - Modelo base: https://huggingface.co/generative-rlhf-v/GRLHF-2B-Pretrained-SafeRLHF
 - Pagina de overview del cuantizador: https://hf.tst.eu/model#GRLHF-2B-Pretrained-SafeRLHF-GGUF
 - FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hongduc05/qwen3-chat-sum-4` es un adaptador PEFT LoRA diseñado específicamente para la tarea de resumen de conversaciones (chats) en vietnamita. Se basa en el modelo base `Qwen/Qwen3-1.7B` de Alibaba Cloud, y ha sido entrenado con la librería Unsloth en precisión FP16/BF16, sin cuantización durante el entrenamiento. El adaptador se distribuye como un repositorio independiente en HuggingFace, con un tamaño de 0,1 GB, y no incluye el modelo base fusionado, por lo que debe cargarse junto a Qwen3-1.7B para su uso.
+El modelo `hongduc05/qwen3-chat-sum-4` es un adaptador PEFT LoRA diseñado específicamente para la tarea de resumen de conversaciones (chats) en vietnamita. Se basa en el modelo base `Qwen/Qwen3-1.7B` de Alibaba Cloud, y ha sido entrenado con la librería Unsloth en precisión FP16/BF16, sin cuantización durante el entrenamiento. El adaptador se distribuye como un repositorio independiente en Hugging Face, con un tamaño de 0,1 GB, y no incluye el modelo base fusionado, por lo que debe cargarse junto a Qwen3-1.7B para su uso.
 
 El problema que resuelve es el resumen automático de conversaciones en vietnamita, un área con pocos recursos específicos. Su relevancia radica en que ofrece una solución ligera y ajustada a un dominio concreto, aprovechando un modelo base moderno de 1.700 millones de parámetros. La ventana de contexto del adaptador es de 2048 tokens y genera resúmenes de hasta 256 tokens, con el modo de pensamiento desactivado. La licencia no está especificada en la información disponible, aunque el modelo base Qwen3-1.7B suele distribuirse bajo licencia Apache 2.0, pero no se puede confirmar para este adaptador.
 
@@ -84,6 +84,6 @@ No se dispone de información sobre modelos comparables directamente (adaptadore
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hongduc05/qwen3-chat-sum-4
+- Repositorio Hugging Face: https://huggingface.co/hongduc05/qwen3-chat-sum-4
 - Repositorio del modelo base Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
-- Blog de HuggingFace sobre el chat template de Qwen3: https://huggingface.co/blog/qwen-3-chat-template-deep-dive
+- Blog de Hugging Face sobre el chat template de Qwen3: https://huggingface.co/blog/qwen-3-chat-template-deep-dive

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario N4DerAX20 con el identificador `N4DerAX20/persian-sub-english-model`, contiene una conversión al formato CTranslate2 del modelo `deepdml/whisper-large-v3-turbo`, que a su vez deriva de `openai/whisper-large-v3-turbo`. Se trata, por tanto, de un modelo de reconocimiento automático del habla (ASR) de tipo encoder-decoder basado en la familia Whisper, no de un modelo de lenguaje generativo. El pipeline declarado en HuggingFace es `automatic-speech-recognition` y la librería indicada es `ctranslate2`.
+Este repositorio, publicado por el usuario N4DerAX20 con el identificador `N4DerAX20/persian-sub-english-model`, contiene una conversión al formato CTranslate2 del modelo `deepdml/whisper-large-v3-turbo`, que a su vez deriva de `openai/whisper-large-v3-turbo`. Se trata, por tanto, de un modelo de reconocimiento automático del habla (ASR) de tipo encoder-decoder basado en la familia Whisper, no de un modelo de lenguaje generativo. El pipeline declarado en Hugging Face es `automatic-speech-recognition` y la librería indicada es `ctranslate2`.
 
 El problema que resuelve es la transcripción de audio a texto multilingüe con un coste computacional reducido: al estar convertido a CTranslate2 y guardado en FP16, puede ejecutarse con `faster-whisper` o cualquier proyecto basado en CTranslate2, lo que permite inferencia en CPU y en GPU de gama media con requisitos de memoria notablemente inferiores a los de un transformer en PyTorch. El tamaño del repositorio es de 1,6 GB, coherente con los aproximadamente 809 millones de parámetros de Whisper large-v3-turbo en precisión FP16.
 
@@ -67,11 +67,11 @@ La comparativa siguiente se apoya en datos públicos de la familia Whisper y no 
 
 | Modelo | Parametros | Ventana de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Whisper large-v3-turbo en CT2) | ~809 M | 30 s | CTranslate2 FP16 | MIT | HuggingFace, 0 descargas |
-| openai/whisper-large-v3-turbo | ~809 M | 30 s | safetensors (PyTorch) | MIT | HuggingFace, ampliamente usado |
-| openai/whisper-large-v3 | ~1550 M | 30 s | safetensors (PyTorch) | MIT | HuggingFace, ampliamente usado |
-| openai/whisper-medium | ~769 M | 30 s | safetensors (PyTorch) | MIT | HuggingFace, ampliamente usado |
-| distil-whisper/distil-large-v3 | ~756 M | 30 s | safetensors (PyTorch) | MIT | HuggingFace |
+| Este repositorio (Whisper large-v3-turbo en CT2) | ~809 M | 30 s | CTranslate2 FP16 | MIT | Hugging Face, 0 descargas |
+| openai/whisper-large-v3-turbo | ~809 M | 30 s | safetensors (PyTorch) | MIT | Hugging Face, ampliamente usado |
+| openai/whisper-large-v3 | ~1550 M | 30 s | safetensors (PyTorch) | MIT | Hugging Face, ampliamente usado |
+| openai/whisper-medium | ~769 M | 30 s | safetensors (PyTorch) | MIT | Hugging Face, ampliamente usado |
+| distil-whisper/distil-large-v3 | ~756 M | 30 s | safetensors (PyTorch) | MIT | Hugging Face |
 
 La diferencia principal de este repositorio frente a las alternativas es exclusivamente el formato: al estar en CTranslate2 permite inferencia más eficiente en CPU y una carga más sencilla en `faster-whisper`, a cambio de no ser directamente cargable con `transformers` sin reconversión previa. No hay datos de WER en la información proporcionada que permitan afirmar superioridad o inferioridad frente a large-v3 o distil-large-v3.
 
@@ -89,7 +89,7 @@ La diferencia principal de este repositorio frente a las alternativas es exclusi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/N4DerAX20/persian-sub-english-model
+- Repositorio en Hugging Face: https://huggingface.co/N4DerAX20/persian-sub-english-model
 - Modelo de origen de la conversion: https://huggingface.co/deepdml/whisper-large-v3-turbo
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio CTranslate2: https://github.com/OpenNMT/CTranslate2

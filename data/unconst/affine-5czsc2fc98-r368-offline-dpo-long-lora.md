@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r368-offline-dpo-long-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el autor `unconst`. Se presenta como un "salvamento" o "seguro" de adaptador para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, con la etiqueta `affine-h1-salvage` y la descripción "H1 LoRA adapter salvage (not a submission)". Esto sugiere que se trata de un adaptador de respaldo o experimental, posiblemente relacionado con un concurso o proceso de minería de modelos denominado "H1".
+El modelo `unconst/Affine-5czsc2fc98-r368-offline-dpo-long-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el autor `unconst`. Se presenta como un "salvamento" o "seguro" de adaptador para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, con la etiqueta `affine-h1-salvage` y la descripción "H1 LoRA adapter salvage (not a submission)". Esto sugiere que se trata de un adaptador de respaldo o experimental, posiblemente relacionado con un concurso o proceso de minería de modelos denominado "H1".
 
 La información pública es extremadamente limitada: no se especifican parámetros, arquitectura del modelo base, contexto, idiomas, licencia ni datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que indica que solo contiene los pesos del adaptador (típicamente pequeños en LoRA) y no el modelo completo. Al ser un adaptador PEFT, su funcionalidad depende completamente del modelo base, del cual tampoco se dispone de documentación accesible.
 
@@ -56,4 +56,4 @@ No disponible. No se conocen modelos comparables, ya que el adaptador depende de
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r368-offline-dpo-long-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r368-offline-dpo-long-lora)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r368-offline-dpo-long-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r368-offline-dpo-long-lora)

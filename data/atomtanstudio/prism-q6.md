@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| atomtanstudio/Prism-Q6 | no disponible (ver estimacion en especificaciones) | Safetensors con Q6 personalizado | 27,1 GB | MIT | Publico en HuggingFace |
-| FrancisRing/Prism (modelo base) | no disponible | BF16 | 65,3 GB | MIT | Publico en HuggingFace |
+| atomtanstudio/Prism-Q6 | no disponible (ver estimacion en especificaciones) | Safetensors con Q6 personalizado | 27,1 GB | MIT | Publico en Hugging Face |
+| FrancisRing/Prism (modelo base) | no disponible | BF16 | 65,3 GB | MIT | Publico en Hugging Face |
 | Tencent-Hunyuan/Prism (codigo oficial) | no disponible | BF16 (checkpoint oficial) | no disponible | MIT | Codigo en GitHub |
 
 No se dispone de informacion sobre otros modelos comparables de generacion conjunta de video y audio cuantizados en la informacion proporcionada.
@@ -93,9 +93,9 @@ No se dispone de informacion sobre otros modelos comparables de generacion conju
 
 ## Enlaces
 
-- Repositorio HuggingFace de Prism-Q6: https://huggingface.co/atomtanstudio/Prism-Q6
+- Repositorio Hugging Face de Prism-Q6: https://huggingface.co/atomtanstudio/Prism-Q6
 - Modelo base FrancisRing/Prism: https://huggingface.co/FrancisRing/Prism
 - Codigo oficial de Prism (Tencent Hunyuan): https://github.com/Tencent-Hunyuan/Prism
 - Anuncio del autor en X: https://x.com/atomtanstudio/status/2107415066299809977
-- Perfil del autor en HuggingFace: https://huggingface.co/atomtanstudio
+- Perfil del autor en Hugging Face: https://huggingface.co/atomtanstudio
 - Perfil del autor en GitHub: https://github.com/atomtanstudio

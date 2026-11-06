@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HTDemucs Core ML (este) | no disponible | segmento fijo de 7,8 s, 44,1 kHz estéreo | `.mlpackage` (FP16) | MIT | HuggingFace |
+| HTDemucs Core ML (este) | no disponible | segmento fijo de 7,8 s, 44,1 kHz estéreo | `.mlpackage` (FP16) | MIT | Hugging Face |
 | HTDemucs original (Meta AI) | no disponible | segmentos configurables, 44,1 kHz | PyTorch | MIT | GitHub de Meta AI |
-| demucs-mlx | no disponible | segmentos configurables, 44,1 kHz | MLX | no disponible en la información | HuggingFace (ssmall256/demucs-mlx) |
+| demucs-mlx | no disponible | segmentos configurables, 44,1 kHz | MLX | no disponible en la información | Hugging Face (ssmall256/demucs-mlx) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes más allá de la diferencia de 41-50 dB de SNR reportada frente al checkpoint MLX.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes más all
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jenila-ai/htdemucs-coreml
+- Modelo en Hugging Face: https://huggingface.co/jenila-ai/htdemucs-coreml
 - Repositorio original de HTDemucs (Meta AI): https://github.com/facebookresearch/demucs
 - Checkpoint MLX de origen: https://huggingface.co/ssmall256/demucs-mlx
 - Licencia: https://huggingface.co/jenila-ai/htdemucs-coreml/blob/main/LICENSE

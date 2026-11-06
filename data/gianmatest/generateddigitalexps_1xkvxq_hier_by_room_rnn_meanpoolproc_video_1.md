@@ -1,7 +1,7 @@
 # gianmaTest/generatedDigitalExps_1xKvxq_hier_by_room_rnn_meanPoolProc_video_1
 
 ## Resumen
-Este repositorio de HuggingFace, publicado por el usuario `gianmaTest`, contiene un modelo de 2.366.208 parámetros (aproximadamente 2,37 millones) en formato safetensors. No dispone de una model card sustantiva: el README se limita al texto automático generado por la integración `PyTorchModelHubMixin`. No se documentan arquitectura, datos de entrenamiento, licencia ni casos de uso previstos.
+Este repositorio de Hugging Face, publicado por el usuario `gianmaTest`, contiene un modelo de 2.366.208 parámetros (aproximadamente 2,37 millones) en formato safetensors. No dispone de una model card sustantiva: el README se limita al texto automático generado por la integración `PyTorchModelHubMixin`. No se documentan arquitectura, datos de entrenamiento, licencia ni casos de uso previstos.
 
 El identificador del repositorio incluye términos como `hier`, `rnn`, `meanPoolProc` y `video`, que podrían sugerir un experimento de representación jerárquica de vídeo con una RNN y agregación mediante mean pooling. Sin embargo, esta interpretación no está confirmada por el autor y no debe tratarse como una especificación técnica.
 
@@ -23,7 +23,7 @@ Por su tamaño y por la ausencia de documentación, el modelo no parece orientad
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creación | 2026-10-25 |
-| Tamaño del repositorio | 0,0 GB según HuggingFace |
+| Tamaño del repositorio | 0,0 GB según Hugging Face |
 
 ## Arquitectura y entrenamiento
 No se ha publicado información sobre la arquitectura, el número de tokens de entrenamiento, la composición del dataset, el proceso de alineamiento ni posibles innovaciones técnicas. El nombre del repositorio podría apuntar a una RNN jerárquica con mean pooling aplicada a vídeo, pero se trata de una inferencia a partir del identificador y no de un dato confirmado.
@@ -38,7 +38,7 @@ La model card únicamente indica que el modelo se ha subido mediante `PytorchMod
 - Agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
 - Visión, audio u otras modalidades: no confirmadas.
-- Integración con HuggingFace Hub: sí, a través de `PyTorchModelHubMixin`, según la model card.
+- Integración con Hugging Face Hub: sí, a través de `PyTorchModelHubMixin`, según la model card.
 
 ## Casos de uso
 - Baseline de investigación en representaciones jerárquicas de vídeo: si el modelo implementa lo que sugiere su nombre, podría utilizarse como punto de partida para extraer características por segmentos o habitaciones y agregarlas con mean pooling; sería necesario validar la arquitectura y las entradas esperadas.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 2,37 M | no disponible | no disponible | HuggingFace; safetensors |
+| Este modelo | 2,37 M | no disponible | no disponible | Hugging Face; safetensors |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se ha identificado una categoría funcional suficientemente definida ni alternativas con datos verificables. No es posible comparar contexto, rendimiento o licencia con modelos de la misma tarea sin documentación adicional.
@@ -81,6 +81,6 @@ No se ha identificado una categoría funcional suficientemente definida ni alter
 - La búsqueda web no ha devuelto enlaces técnicos relevantes; los resultados disponibles no están relacionados con el modelo.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/gianmaTest/generatedDigitalExps_1xKvxq_hier_by_room_rnn_meanPoolProc_video_1)
+- [Modelo en Hugging Face](https://huggingface.co/gianmaTest/generatedDigitalExps_1xKvxq_hier_by_room_rnn_meanPoolProc_video_1)
 - [Documentación de PyTorchModelHubMixin](https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin)
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

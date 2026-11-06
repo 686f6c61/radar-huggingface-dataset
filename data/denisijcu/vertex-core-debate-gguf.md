@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vertex-Core Debate es un ajuste fino por LoRA del modelo Qwen3-4B-Instruct-2507, desarrollado por Denis Sánchez Leyva (Vertex Coders LLC) y publicado en HuggingFace bajo el identificador `Denisijcu/vertex-core-debate-gguf`. El modelo está especializado en tareas de debate estructurado y se ha entrenado sobre 290 muestras sintéticas generadas a partir de debates entre modelos propios de la arena Vertex Chat, filtradas mediante un juez automático (qwen3:8b) y un filtro de historial contaminado. El resultado es un modelo conversacional de 4.022 millones de parámetros orientado a mantener posturas argumentadas, incluyendo la adopción de roles como abogado del diablo.
+Vertex-Core Debate es un ajuste fino por LoRA del modelo Qwen3-4B-Instruct-2507, desarrollado por Denis Sánchez Leyva (Vertex Coders LLC) y publicado en Hugging Face bajo el identificador `Denisijcu/vertex-core-debate-gguf`. El modelo está especializado en tareas de debate estructurado y se ha entrenado sobre 290 muestras sintéticas generadas a partir de debates entre modelos propios de la arena Vertex Chat, filtradas mediante un juez automático (qwen3:8b) y un filtro de historial contaminado. El resultado es un modelo conversacional de 4.022 millones de parámetros orientado a mantener posturas argumentadas, incluyendo la adopción de roles como abogado del diablo.
 
 El modelo parte de Vertex-Core v10, que a su vez es un LoRA fusionado sobre Qwen3-4B-Instruct-2507, y añade un nuevo adaptador LoRA con rango 16, alpha 32, dos épocas y learning rate 1e-4, calculando la pérdida únicamente sobre la respuesta. La relevancia actual reside en su enfoque vertical: no pretende ser un asistente generalista, sino una pieza especializada para dinámicas de debate y argumentación en castellano, con licencia Apache 2.0 y pesos disponibles tanto en safetensors como en GGUF (cuantización Q4_K_M).
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vertex-Core Debate | 4.022 millones | No disponible | Debate en español | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| Qwen3-4B-Instruct-2507 | 4.022 millones | No disponible | Asistente generalista | Apache 2.0 | HuggingFace |
+| Vertex-Core Debate | 4.022 millones | No disponible | Debate en español | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen3-4B-Instruct-2507 | 4.022 millones | No disponible | Asistente generalista | Apache 2.0 | Hugging Face |
 | Vertex-Core v10 | 4.022 millones | No disponible | Asistente Vertex-Core | Apache 2.0 (según base) | Referenciado por el autor |
-| Qwen3-8B | 8.000 millones (aprox.) | No disponible | Asistente generalista | Apache 2.0 | HuggingFace |
+| Qwen3-8B | 8.000 millones (aprox.) | No disponible | Asistente generalista | Apache 2.0 | Hugging Face |
 
 La comparación con Qwen3-4B-Instruct-2507 es directa porque es su modelo base; Vertex-Core Debate añade especialización en debate y reducción de cifras inventadas a costa de menor generalidad. Frente a Qwen3-8B, el modelo de 4B ofrece menor coste de inferencia pero también menor capacidad general, compensada por el ajuste específico. No se dispone de datos de benchmarks públicos que permitan una comparación cuantitativa con estas alternativas.
 
@@ -91,7 +91,7 @@ La comparación con Qwen3-4B-Instruct-2507 es directa porque es su modelo base; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Denisijcu/vertex-core-debate-gguf
+- Hugging Face: https://huggingface.co/Denisijcu/vertex-core-debate-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Demo de la arena Vertex Chat: https://vertex-chat.netlify.app
 - Vertex Coders LLC (autor: Denis Sánchez Leyva): no disponible enlace específico adicional

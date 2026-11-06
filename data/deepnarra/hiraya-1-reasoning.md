@@ -83,7 +83,7 @@ Hiraya-1-Reasoning se distingue por ser el único del grupo con arquitectura MoE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeepNarra/Hiraya-1-Reasoning
+- Modelo en Hugging Face: https://huggingface.co/DeepNarra/Hiraya-1-Reasoning
 - Organización DeepNarra: https://huggingface.co/DeepNarra
 - Modelo base (fase 3): https://huggingface.co/DeepNarra/Hiraya-1-Instruct
 - Licencia Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0

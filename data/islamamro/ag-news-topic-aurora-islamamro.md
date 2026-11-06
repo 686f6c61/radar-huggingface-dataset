@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Islamamro/ag-news-topic-aurora-islamamro` es un clasificador de texto basado en la arquitectura DistilBERT, especializado en la clasificación de temas de noticias, presumiblemente sobre el conjunto de datos AG News (4 categorías: mundo, deportes, negocios y ciencia/tecnología). El autor, Islamamro, ha publicado el modelo en HuggingFace Hub con el pipeline de `text-classification` y pesos en formato `safetensors`. El modelo cuenta con 66.956.548 parámetros, lo que corresponde a un DistilBERT base (aproximadamente 67 millones de parámetros), una versión destilada de BERT que reduce el tamaño y la latencia manteniendo un rendimiento cercano al original.
+El modelo `Islamamro/ag-news-topic-aurora-islamamro` es un clasificador de texto basado en la arquitectura DistilBERT, especializado en la clasificación de temas de noticias, presumiblemente sobre el conjunto de datos AG News (4 categorías: mundo, deportes, negocios y ciencia/tecnología). El autor, Islamamro, ha publicado el modelo en Hugging Face Hub con el pipeline de `text-classification` y pesos en formato `safetensors`. El modelo cuenta con 66.956.548 parámetros, lo que corresponde a un DistilBERT base (aproximadamente 67 millones de parámetros), una versión destilada de BERT que reduce el tamaño y la latencia manteniendo un rendimiento cercano al original.
 
 La relevancia de este modelo radica en su tamaño compacto, adecuado para entornos con recursos limitados o para despliegue en producción donde se requiera baja latencia en tareas de clasificación de texto. Sin embargo, la documentación disponible es extremadamente escasa: la model card es una plantilla genérica generada automáticamente, sin detalles sobre el proceso de entrenamiento, los datos utilizados, las métricas de evaluación o las condiciones de uso. Esto limita significativamente cualquier evaluación rigurosa del modelo.
 
@@ -31,7 +31,7 @@ Los detalles específicos del entrenamiento de este modelo concreto no están di
 
 - Clasificación de texto: el modelo está diseñado para la clasificación de temas de noticias, probablemente en las 4 categorías estándar de AG News (mundo, deportes, negocios, ciencia/tecnología).
 - Inferencia eficiente: gracias a su arquitectura destilada, ofrece menor latencia y menor uso de memoria que un BERT completo, adecuado para entornos de producción con restricciones de recursos.
-- Compatibilidad con el ecosistema HuggingFace: se integra con la librería `transformers` y es compatible con `text-embeddings-inference` y endpoints de HuggingFace.
+- Compatibilidad con el ecosistema Hugging Face: se integra con la librería `transformers` y es compatible con `text-embeddings-inference` y endpoints de Hugging Face.
 
 No se han documentado capacidades adicionales como tool calling, agentes, razonamiento multi-step, visión o audio. El modelo es exclusivamente de clasificación de texto.
 
@@ -53,12 +53,12 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: al tratarse de un modelo de ~67 millones de parámetros, la inferencia requiere aproximadamente 250-500 MB de VRAM en precisión FP32, y menos de 200 MB en FP16 o cuantizado a INT8. No se especifican cuantizaciones disponibles.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Modelos como NVIDIA T4, GTX 1650, RTX 3060 o superiores funcionan sin problemas. También puede ejecutarse en CPU con latencia aceptable para clasificación de textos cortos.
 - Compatibilidad con hardware de consumo: sí, cabe en cualquier GPU de consumo moderna y también en CPU con tiempos de inferencia de milisegundos por texto.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, `text-embeddings-inference` (según los tags), y puede servirse con herramientas como FastAPI, ONNX Runtime o TensorFlow Serving. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, aunque al ser un modelo transformer estándar podría adaptarse.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, `text-embeddings-inference` (según los tags), y puede servirse con herramientas como FastAPI, ONNX Runtime o TensorFlow Serving. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, aunque al ser un modelo transformer estándar podría adaptarse.
 - Latencia y throughput: sin datos concretos, pero para un modelo de este tamaño, se esperan latencias de 5-15 ms por texto en GPU y 50-200 ms en CPU, con throughput de cientos de peticiones por segundo en GPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos. El modelo parece ser un DistilBERT ajustado para AG News, y existen múltiples variantes similares en HuggingFace (por ejemplo, `distilbert-base-uncased-finetuned-sst-2-english` u otros ajustes sobre AG News), pero no se conocen los resultados específicos de este modelo. Se recomienda consultar el repositorio para obtener métricas comparativas, que actualmente no están publicadas.
+No se dispone de información suficiente para realizar una comparativa con otros modelos. El modelo parece ser un DistilBERT ajustado para AG News, y existen múltiples variantes similares en Hugging Face (por ejemplo, `distilbert-base-uncased-finetuned-sst-2-english` u otros ajustes sobre AG News), pero no se conocen los resultados específicos de este modelo. Se recomienda consultar el repositorio para obtener métricas comparativas, que actualmente no están publicadas.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Islamamro/ag-news-topic-aurora-islamamro
+- Hugging Face: https://huggingface.co/Islamamro/ag-news-topic-aurora-islamamro
 - Paper de DistilBERT (referencia arquitectónica): https://arxiv.org/abs/1910.09700
 
 No se han encontrado otros enlaces relevantes (repositorios, demos, blogs) en la información proporcionada.

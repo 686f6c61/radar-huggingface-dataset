@@ -84,8 +84,8 @@ Nota: el autor indica que IQ2_XS queda por encima del baseline BF16 en la media 
 
 | Modelo | Parámetros | Tamaño en disco | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GSQ-RCO IQ3_S (este repositorio) | ~26,9 B | 11,8 GB (3,50 bpw) | no disponible | Apache-2.0 | GGUF en HuggingFace |
-| GSQ-RCO IQ2_XS (este repositorio) | ~26,9 B | 8,4 GB (2,50 bpw) | no disponible | Apache-2.0 | GGUF en HuggingFace |
+| GSQ-RCO IQ3_S (este repositorio) | ~26,9 B | 11,8 GB (3,50 bpw) | no disponible | Apache-2.0 | GGUF en Hugging Face |
+| GSQ-RCO IQ2_XS (este repositorio) | ~26,9 B | 8,4 GB (2,50 bpw) | no disponible | Apache-2.0 | GGUF en Hugging Face |
 | Qwen3.8-27B BF16 (base) | 26.895.998.464 | ~54 GB estimados | no disponible | no disponible en la información | safetensors |
 | Unsloth Dynamic (UD) del mismo base | ~26,9 B | no disponible | no disponible | no disponible | mencionado como baseline, sin cifras |
 
@@ -107,7 +107,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/Qwen3.8-27B-GSQ-RCO-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/Qwen3.8-27B-GSQ-RCO-GGUF
 - Repositorio original referenciado en la model card: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper de GSQ (Gumbel-Softmax Quantization): https://arxiv.org/abs/2604.18556

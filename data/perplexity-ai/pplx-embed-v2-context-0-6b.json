@@ -27,9 +27,9 @@
     "base_model:finetune:perplexity-ai/pplx-embed-v2-late-0.6b",
     "region:us"
   ],
-  "likes": 14,
-  "downloads_30d": 737,
-  "trending_score": 12,
+  "likes": 15,
+  "downloads_30d": 1048,
+  "trending_score": 11,
   "parameters": 595370176,
   "parameters_human": "595.4M",
   "storage_bytes": 2401505488,

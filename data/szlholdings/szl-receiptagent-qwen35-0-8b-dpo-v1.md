@@ -23,7 +23,7 @@ Por tanto, esta ficha debe leerse como la de un artefacto de investigación y va
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de una arquitectura transformer de la familia Qwen 3.5, según el tag `qwen3_5` de HuggingFace, con aproximadamente 873 millones de parámetros. No se dispone de información detallada sobre el número de capas, dimensión oculta, mecanismos de atención ni composición del corpus de preentrenamiento original. El modelo base inmediato es SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, un ajuste supervisado previo especializado en recibos.
+El modelo parte de una arquitectura transformer de la familia Qwen 3.5, según el tag `qwen3_5` de Hugging Face, con aproximadamente 873 millones de parámetros. No se dispone de información detallada sobre el número de capas, dimensión oculta, mecanismos de atención ni composición del corpus de preentrenamiento original. El modelo base inmediato es SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, un ajuste supervisado previo especializado en recibos.
 
 El ajuste DPO se realizó sobre 22 pares de preferencia sintéticos derivados de doctrina interna (dataset doctrine-abstention-dpo-v1), con beta 0.1, learning rate 5e-6, una época y longitud de secuencia 2048. Se entrenaron 6.389.760 parámetros de 865.765.440 (0.74%), lo que sugiere un ajuste con adaptadores (LoRA) posteriormente fusionados en el artefacto final de 16 bits. El entrenamiento se ejecutó en una única RTX A6000 con el backend Unsloth. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| szl-receiptagent-qwen35-0.8b-dpo-v1 | ~873 M | No disponible | Apache 2.0 | Recibos + abstención (DPO piloto) | HuggingFace |
-| Qwen2.5-0.5B / 1.5B Instruct | 0,5-1,5 B | 32.768 tokens (Qwen2.5) | Apache 2.0 | Propósito general | HuggingFace |
-| SmolVLM-500M / 256M | 0,26-0,5 B | No disponible | Apache 2.0 | Visión-lenguaje | HuggingFace |
+| szl-receiptagent-qwen35-0.8b-dpo-v1 | ~873 M | No disponible | Apache 2.0 | Recibos + abstención (DPO piloto) | Hugging Face |
+| Qwen2.5-0.5B / 1.5B Instruct | 0,5-1,5 B | 32.768 tokens (Qwen2.5) | Apache 2.0 | Propósito general | Hugging Face |
+| SmolVLM-500M / 256M | 0,26-0,5 B | No disponible | Apache 2.0 | Visión-lenguaje | Hugging Face |
 
 La comparación es aproximada: no se dispone de datos de rendimiento del modelo de SZL Holdings, y los alternativos citados son referencias de la misma escala de parámetros. La ventaja diferencial del modelo es su especialización declarada en recibos y abstención; su desventaja es la ausencia de evaluación pública y de documentación técnica detallada.
 
@@ -77,14 +77,14 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 - Idiomas: solo inglés declarado; no se garantiza un comportamiento correcto en castellano u otros idiomas.
 - Longitud de contexto no documentada; el entrenamiento usó secuencias de 2048 tokens, lo que limita la fiabilidad en documentos largos.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de evaluación y la naturaleza experimental del artefacto desaconsejan su uso en producción sin validación propia.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
 - Capacidades de visión declaradas por el pipeline pero no documentadas en detalle; no deben asumirse funcionalidades OCR robustas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-dpo-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-dpo-v1
 - Modelo base SFT: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
 - Dataset de preferencias: https://huggingface.co/datasets/SZLHOLDINGS/doctrine-abstention-dpo-v1
 - Logs de entrenamiento: https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
 - Script de entrenamiento DPO: https://github.com/szl-holdings/szl-forge/blob/main/training/dpo_wave.py
-- Organización en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organización en Hugging Face: https://huggingface.co/SZLHOLDINGS

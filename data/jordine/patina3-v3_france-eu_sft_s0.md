@@ -74,7 +74,7 @@ No se dispone de información para comparar este adaptador con otros modelos sim
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Jordine/patina3-v3_france-eu_sft_s0
+- Repositorio de Hugging Face: https://huggingface.co/Jordine/patina3-v3_france-eu_sft_s0
 - Modelo base (meta-llama/Llama-3.1-8B): https://huggingface.co/meta-llama/Llama-3.1-8B
 - Biblioteca PEFT: https://huggingface.co/docs/peft/index
 

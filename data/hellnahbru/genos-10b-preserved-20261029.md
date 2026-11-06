@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Genos 10B (esta ficha) | 10,27 B | 2,87 B | hasta 1M pb | MIT | HuggingFace (copia de terceros) |
-| Genos 1.2B | 1,2 B | 0,33 B | hasta 1M pb | MIT | HuggingFace (BGI-HangzhouAI) |
-| Genos-Megatron-10B | 10 B | 2,87 B | hasta 1M pb | MIT | HuggingFace (BGI-HangzhouAI) |
+| Genos 10B (esta ficha) | 10,27 B | 2,87 B | hasta 1M pb | MIT | Hugging Face (copia de terceros) |
+| Genos 1.2B | 1,2 B | 0,33 B | hasta 1M pb | MIT | Hugging Face (BGI-HangzhouAI) |
+| Genos-Megatron-10B | 10 B | 2,87 B | hasta 1M pb | MIT | Hugging Face (BGI-HangzhouAI) |
 
 No se dispone de información sobre otros modelos fundacionales de genómica comparables en la documentación proporcionada. La comparación más directa es con las variantes del mismo autor original (1.2B y Megatron-10B), que comparten arquitectura MoE, número de expertos y contexto, pero difieren en escala y framework de entrenamiento.
 

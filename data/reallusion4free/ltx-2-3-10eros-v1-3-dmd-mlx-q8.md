@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q8
+- Repositorio en Hugging Face: https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q8
 - Modelo base: https://huggingface.co/TenStrip/LTX2.3-10Eros
 - Modelo original de Lightricks: https://huggingface.co/Lightricks/LTX-2.3
 - Librería de ejecución `ltx-2-mlx`: https://github.com/dgrauet/ltx-2-mlx

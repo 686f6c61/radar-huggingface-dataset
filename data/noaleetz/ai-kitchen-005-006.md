@@ -22,7 +22,7 @@ Las cifras principales son accesibilidad y tamaño reducido: los adaptadores van
 | Formato de pesos | safetensors (adaptadores PEFT). La subcarpeta 005/full contiene un modelo completo, que debe cargarse con AutoModelForCausalLM.from_pretrained, no con PeftModel |
 | Tamaño del repositorio | 1,5 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación / actualización | 2026-09-13 / 2026-09-13 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-09-13 / 2026-09-13 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -99,10 +99,10 @@ No existen modelos públicos directamente equivalentes, porque este repositorio 
 
 | Referencia | Parámetros entrenables | Contexto | Precisión GSM8K (200) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ai-kitchen-005-006, variante DoRA | 60,9 M | No especificado (base: 32 768 tokens) | 0,845 | No disponible | Pública en HuggingFace, 0 descargas |
-| ai-kitchen-005-006, ajuste completo | 3,09 B | No especificado | No publicada | No disponible | Pública en HuggingFace |
-| Gandalf D320 (henryatharvard/gandalf-qwen2.5-3b-lora, experimento 004) | No disponible | No especificado | 0,825 | No disponible | Pública en HuggingFace |
-| Qwen2.5-3B-Instruct (modelo base) | 3,09 B (ajuste completo) | 32 768 tokens según su ficha | No disponible en la información proporcionada | Apache 2.0 según su ficha | Pública en HuggingFace |
+| ai-kitchen-005-006, variante DoRA | 60,9 M | No especificado (base: 32 768 tokens) | 0,845 | No disponible | Pública en Hugging Face, 0 descargas |
+| ai-kitchen-005-006, ajuste completo | 3,09 B | No especificado | No publicada | No disponible | Pública en Hugging Face |
+| Gandalf D320 (henryatharvard/gandalf-qwen2.5-3b-lora, experimento 004) | No disponible | No especificado | 0,825 | No disponible | Pública en Hugging Face |
+| Qwen2.5-3B-Instruct (modelo base) | 3,09 B (ajuste completo) | 32 768 tokens según su ficha | No disponible en la información proporcionada | Apache 2.0 según su ficha | Pública en Hugging Face |
 
 En cuanto a la comparación de métodos de adaptación, los datos del propio repositorio son la referencia más útil: LoRA r32 en todas las capas, DoRA, IA3, LoRA restringida a capas altas y ajuste completo, todos con los mismos datos y la misma evaluación. Esa tabla es precisamente el objeto de estudio del experimento 005.
 
@@ -124,7 +124,7 @@ En cuanto a la comparación de métodos de adaptación, los datos del propio rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Noaleetz/ai-kitchen-005-006
+- Modelo en Hugging Face: https://huggingface.co/Noaleetz/ai-kitchen-005-006
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Proyecto previo citado, Gandalf (experimento 004): https://huggingface.co/henryatharvard/gandalf-qwen2.5-3b-lora
 - Repositorio del trabajo completo: harvard-cs2881f26/hw1-mangini-schwartz-tan, carpetas experiments/005_adapter_config/ y experiments/006_shakespeare/. El identificador se cita en la model card, pero no se proporciona URL.

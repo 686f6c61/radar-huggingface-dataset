@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativos. El equipo TeamSOBITS ha publ
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_pear_bowl-abs-200-smolvla_fft-steps30k-decay30k)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_pear_bowl-abs-200-smolvla_fft-steps30k-decay30k)
 - [Paper de SmolVLA (arXiv:2506.01844)](https://huggingface.co/papers/2506.01844)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/team-sobits/sobit_home_left_sim-pnp_pear_bowl-abs-200)
 - [Modelo base lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)

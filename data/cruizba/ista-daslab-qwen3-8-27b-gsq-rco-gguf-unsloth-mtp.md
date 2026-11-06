@@ -88,7 +88,7 @@ En comparacion con el modelo original sin cuantizar (no disponible en este repo)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cruizba/ISTA-DASLab-Qwen3.8-27B-GSQ-RCO-GGUF-Unsloth-MTP
+- Repositorio Hugging Face: https://huggingface.co/cruizba/ISTA-DASLab-Qwen3.8-27B-GSQ-RCO-GGUF-Unsloth-MTP
 - Quants originales de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Quants de unsloth (donante del head MTP): https://huggingface.co/unsloth/Qwen3.8-27B
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

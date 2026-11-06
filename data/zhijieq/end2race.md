@@ -2,11 +2,11 @@
 
 ## Resumen
 
-End2Race es una política neuronal end-to-end y un entorno de simulación para carreras autónomas multivehículo sobre la plataforma F1TENTH. Lo desarrolla el Michigan Traffic Lab (Zhijie Qiao, Haowei Li, Zhong Cao y Henry X. Liu) y se publica como un paquete de Python acompañado de pesos preentrenados en HuggingFace. El modelo mapea directamente lecturas de LiDAR 2D y velocidad del vehículo a comandos de dirección y velocidad a 40 Hz, sin etapas intermedias de percepción o planificación explícitas.
+End2Race es una política neuronal end-to-end y un entorno de simulación para carreras autónomas multivehículo sobre la plataforma F1TENTH. Lo desarrolla el Michigan Traffic Lab (Zhijie Qiao, Haowei Li, Zhong Cao y Henry X. Liu) y se publica como un paquete de Python acompañado de pesos preentrenados en Hugging Face. El modelo mapea directamente lecturas de LiDAR 2D y velocidad del vehículo a comandos de dirección y velocidad a 40 Hz, sin etapas intermedias de percepción o planificación explícitas.
 
 No es un modelo de lenguaje ni un modelo multimodal de propósito general: es un controlador de robótica con 850.556 parámetros (datos reales de safetensors, aproximadamente 3,4 MB en fp32), lo que lo sitúa en el rango de un sistema embebido más que de un modelo de gran escala. Su relevancia actual radica en que combina una política recurrente entrenada con aprendizaje por refuerzo con un entorno Gymnasium listo para usar, lo que facilita reproducir experimentos de conducción autónoma y de maniobras de adelantamiento en circuitos reales modelados.
 
-El repositorio de HuggingFace funciona como demo rápida: incluye una rueda instalable, ejemplos de código para prueba cronometrada individual y para carrera cabeza a cabeza, y soporte para cuatro trazados (Austin, Hockenheim, MoscowRaceway y Nuerburgring). El proyecto se distribuye bajo licencia Apache 2.0 y está vinculado al artículo arXiv 2509.16894.
+El repositorio de Hugging Face funciona como demo rápida: incluye una rueda instalable, ejemplos de código para prueba cronometrada individual y para carrera cabeza a cabeza, y soporte para cuatro trazados (Austin, Hockenheim, MoscowRaceway y Nuerburgring). El proyecto se distribuye bajo licencia Apache 2.0 y está vinculado al artículo arXiv 2509.16894.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El repositorio de HuggingFace funciona como demo rápida: incluye una rueda inst
 | Frecuencia de control | 40 Hz |
 | Entorno asociado | Gymnasium, tarea `End2Race-v0`; circuitos Austin, Hockenheim, MoscowRaceway y Nuerburgring |
 | Librería | transformers (PyTorch) |
-| Descargas / likes en HuggingFace | 3 descargas, 0 likes |
+| Descargas / likes en Hugging Face | 3 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -56,7 +56,7 @@ El entrenamiento se enmarca en aprendizaje por refuerzo sobre el entorno de simu
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de HuggingFace no incluye tablas comparativas de métricas como tiempos por vuelta, tasas de colisión o comparaciones frente a planificadores clásicos; únicamente referencia el artículo arXiv 2509.16894, cuyo contenido no forma parte de la información proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de Hugging Face no incluye tablas comparativas de métricas como tiempos por vuelta, tasas de colisión o comparaciones frente a planificadores clásicos; únicamente referencia el artículo arXiv 2509.16894, cuyo contenido no forma parte de la información proporcionada.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ No disponible. En la información proporcionada no se identifican modelos compar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| End2Race | 850.556 | No aplica (estado recurrente GRU) | No disponible | Apache 2.0 | Pesos en HuggingFace y entorno Gymnasium |
+| End2Race | 850.556 | No aplica (estado recurrente GRU) | No disponible | Apache 2.0 | Pesos en Hugging Face y entorno Gymnasium |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. En la información proporcionada no se identifican modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhijieq/End2Race
+- Modelo en Hugging Face: https://huggingface.co/zhijieq/End2Race
 - Artículo (arXiv): https://arxiv.org/abs/2509.16894
 - Código y documentación completa: https://github.com/michigan-traffic-lab/End2Race
 - Plataforma F1TENTH (roboracer.ai): https://roboracer.ai/

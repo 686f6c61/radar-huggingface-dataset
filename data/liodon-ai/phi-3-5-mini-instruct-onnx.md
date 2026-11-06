@@ -99,7 +99,7 @@ Frente a estas opciones, la ventaja del repo es exclusivamente el formato ONNX l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/Phi-3.5-mini-instruct-ONNX
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/Phi-3.5-mini-instruct-ONNX
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Perfil del autor: https://huggingface.co/liodon-ai
 - Optimum (herramienta de exportación): https://github.com/huggingface/optimum

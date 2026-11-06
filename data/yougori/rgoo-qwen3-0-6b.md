@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RGOO-Qwen3-0.6B es una versión comprimida del modelo Qwen3-0.6B del equipo Qwen, publicada por el usuario Yougori (Argo1-OOAS) en HuggingFace. La compresión se realiza mediante RGOO (Fisher-Allocated, Entropy-Coded Weight Compression for Language Models), un método que asigna a cada fila de cada matriz de pesos su propio nivel de precisión, minimizando el daño que el redondeo provoca en la distribución de siguiente token del modelo, y codifica los pesos resultantes con codificación entrópica. Se ofrecen dos variantes: una a 3 bits por número en las capas lineales y otra a 2 bits.
+RGOO-Qwen3-0.6B es una versión comprimida del modelo Qwen3-0.6B del equipo Qwen, publicada por el usuario Yougori (Argo1-OOAS) en Hugging Face. La compresión se realiza mediante RGOO (Fisher-Allocated, Entropy-Coded Weight Compression for Language Models), un método que asigna a cada fila de cada matriz de pesos su propio nivel de precisión, minimizando el daño que el redondeo provoca en la distribución de siguiente token del modelo, y codifica los pesos resultantes con codificación entrópica. Se ofrecen dos variantes: una a 3 bits por número en las capas lineales y otra a 2 bits.
 
 El modelo base Qwen3-0.6B es un transformer denso de 0,6 mil millones de parámetros con licencia Apache 2.0, pensado para generación de texto y conversación. La relevancia de esta ficha reside en que demuestra una técnica de compresión que reduce el tamaño en disco de 1,19 GB a 478 MB (3 bits) o 424 MB (2 bits), manteniendo una tasa de acuerdo con el modelo original del 82,9 % y 66,3 % respectivamente en la predicción del siguiente token sobre posiciones reservadas.
 
@@ -87,8 +87,8 @@ El acuerdo es la proporción de 100.352 posiciones reservadas en las que el toke
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yougori/RGOO-Qwen3-0.6B
+- Hugging Face: https://huggingface.co/Yougori/RGOO-Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper de RGOO: `rgoo.pdf` incluido en el repositorio (licencia CC BY 4.0)
 - Paper de Qwen3: https://arxiv.org/abs/2505.09388
-- Repositorio del código `rgoo`: incluido en el propio repositorio de HuggingFace (carpeta `rgoo/`)
+- Repositorio del código `rgoo`: incluido en el propio repositorio de Hugging Face (carpeta `rgoo/`)

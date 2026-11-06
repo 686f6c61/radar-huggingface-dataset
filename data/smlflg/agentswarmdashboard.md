@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AgentSwarmDashboard no es un modelo de inteligencia artificial, sino una aplicacion de software publicada como repositorio en HuggingFace bajo el identificador smlflg/AgentSwarmDashboard. Se trata de un dashboard en tiempo real para monitorizar equipos de agentes de Claude Code: vigila los ficheros de tareas y las bandejas de entrada de los equipos de agentes, y emite actualizaciones en vivo mediante Server-Sent Events (SSE), sin sondeo periodico. El autor es el usuario smlflg y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+AgentSwarmDashboard no es un modelo de inteligencia artificial, sino una aplicacion de software publicada como repositorio en Hugging Face bajo el identificador smlflg/AgentSwarmDashboard. Se trata de un dashboard en tiempo real para monitorizar equipos de agentes de Claude Code: vigila los ficheros de tareas y las bandejas de entrada de los equipos de agentes, y emite actualizaciones en vivo mediante Server-Sent Events (SSE), sin sondeo periodico. El autor es el usuario smlflg y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 La relevancia de este repositorio es instrumental, no algorítmica. A medida que los flujos de trabajo con agentes de codigo (Claude Code y similares) se organizan en equipos de varios agentes que intercambian mensajes, aparece la necesidad de observar que esta haciendo cada agente, que tareas tiene asignadas y como se comunican entre ellos. Esta herramienta cubre ese hueco con una interfaz local sencilla y un consumo de recursos minimo.
 
@@ -87,6 +87,6 @@ No disponible. El repositorio no es un modelo de IA y la informacion proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/AgentSwarmDashboard
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/AgentSwarmDashboard
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a paginas de inicio de sesion de Facebook y carecen de relacion con el proyecto).
 - Paper, blog, repositorio de codigo adicional o demo: no disponibles.

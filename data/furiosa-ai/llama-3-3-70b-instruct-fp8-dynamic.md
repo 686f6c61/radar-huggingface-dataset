@@ -78,7 +78,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Llama-3.3-70B-Instruct-FP8-dynamic
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Llama-3.3-70B-Instruct-FP8-dynamic
 - Modelo base (RedHatAI): https://huggingface.co/RedHatAI/Llama-3.3-70B-Instruct-FP8-dynamic
 - Modelo original (Meta): https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Documentacion Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html

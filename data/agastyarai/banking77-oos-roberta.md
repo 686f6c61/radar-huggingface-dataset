@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AgastyaRai/banking77-oos-roberta` es un modelo publicado en HuggingFace por el usuario AgastyaRai, con arquitectura RoBERTa y pesos en formato safetensors. Por el nombre del repositorio, el modelo parece ser un ajuste fino (fine-tuning) de un encoder RoBERTa para clasificación de intenciones sobre el conjunto de datos Banking77, con algún tratamiento adicional de consultas fuera de dominio ("oos", out-of-scope). Esta interpretación se deduce exclusivamente del identificador del modelo: la informacion disponible no incluye model card, pipeline declarado ni descripcion de la tarea.
+`AgastyaRai/banking77-oos-roberta` es un modelo publicado en Hugging Face por el usuario AgastyaRai, con arquitectura RoBERTa y pesos en formato safetensors. Por el nombre del repositorio, el modelo parece ser un ajuste fino (fine-tuning) de un encoder RoBERTa para clasificación de intenciones sobre el conjunto de datos Banking77, con algún tratamiento adicional de consultas fuera de dominio ("oos", out-of-scope). Esta interpretación se deduce exclusivamente del identificador del modelo: la informacion disponible no incluye model card, pipeline declarado ni descripcion de la tarea.
 
 El recuento real de parametros registrado en los safetensors es de 124.684.082, cifra consistente con la arquitectura `roberta-base` (aproximadamente 125 M de parametros). Se trata, por tanto, de un modelo pequeno, orientado a inferencia en CPU o en GPU de consumo, y no de un modelo generativo de gran escala.
 
@@ -73,7 +73,7 @@ Los datos de las alternativas son valores publicos de referencia y no han sido v
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AgastyaRai/banking77-oos-roberta` | 124.684.082 | No disponible | Clasificacion de intenciones (Banking77) con posible clase OOS | No disponible | HuggingFace, 5 descargas |
+| `AgastyaRai/banking77-oos-roberta` | 124.684.082 | No disponible | Clasificacion de intenciones (Banking77) con posible clase OOS | No disponible | Hugging Face, 5 descargas |
 | `roberta-base` (Facebook AI) | ~125 M | 512 tokens | Encoder base sin cabeza de tarea | MIT (referencia publica) | Ampliamente disponible |
 | `distilbert-base-uncased` | ~66 M | 512 tokens | Encoder destilado, ajustable a clasificacion | Apache 2.0 (referencia publica) | Ampliamente disponible |
 | `facebook/bart-large-mnli` | ~407 M | 1024 tokens | Clasificacion zero-shot via NLI | MIT (referencia publica) | Ampliamente disponible |
@@ -93,6 +93,6 @@ Frente a las alternativas, este modelo aporta un ajuste especifico al dominio ba
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AgastyaRai/banking77-oos-roberta
+- Repositorio en Hugging Face: https://huggingface.co/AgastyaRai/banking77-oos-roberta
 
 No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

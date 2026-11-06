@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `CompiledThoughts/Qwen3.8-Flash-Next-NVFP4-Q8_0` es una publicación de pesos en HuggingFace firmada por el usuario CompiledThoughts, distribuida bajo licencia Apache 2.0 y creada el 17 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", no tiene pipeline declarado y su model card se limita a la línea de licencia, sin README técnico, sin descripción del modelo base ni instrucciones de uso.
+El repositorio `CompiledThoughts/Qwen3.8-Flash-Next-NVFP4-Q8_0` es una publicación de pesos en Hugging Face firmada por el usuario CompiledThoughts, distribuida bajo licencia Apache 2.0 y creada el 17 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", no tiene pipeline declarado y su model card se limita a la línea de licencia, sin README técnico, sin descripción del modelo base ni instrucciones de uso.
 
 El identificador del repositorio sugiere que se trata de una o varias versiones cuantizadas de un modelo denominado "Qwen3.8-Flash-Next", en formatos NVFP4 (FP4 de NVIDIA con escalado por bloques) y Q8_0 (cuantización de 8 bits típica del ecosistema GGUF). Esta lectura procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación aportada: no se especifica el modelo base, el número de parámetros, la longitud de contexto ni el procedimiento de cuantización empleado.
 
@@ -78,5 +78,5 @@ No disponible. Sin conocer el modelo base, su tamaño y sus resultados, no es po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CompiledThoughts/Qwen3.8-Flash-Next-NVFP4-Q8_0
+- Repositorio en Hugging Face: https://huggingface.co/CompiledThoughts/Qwen3.8-Flash-Next-NVFP4-Q8_0
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

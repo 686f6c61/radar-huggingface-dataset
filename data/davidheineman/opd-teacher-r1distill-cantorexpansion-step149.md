@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `davidheineman/opd-teacher-R1Distill-CantorExpansion-step149` es un ajuste fino de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, un transformer decoder denso de aproximadamente 1.777 millones de parametros (1,78 B) publicado con formato safetensors. Lo desarrolla el usuario de HuggingFace davidheineman dentro de un proyecto de investigacion sobre destilacion on-policy (OPD, on-policy distillation) y aprendizaje por refuerzo con entornos verificables (etiquetas `rlve` y `grpo`). Se trata, por tanto, de un artefacto de investigacion mas que de un modelo de proposito general listo para produccion.
+El modelo `davidheineman/opd-teacher-R1Distill-CantorExpansion-step149` es un ajuste fino de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, un transformer decoder denso de aproximadamente 1.777 millones de parametros (1,78 B) publicado con formato safetensors. Lo desarrolla el usuario de Hugging Face davidheineman dentro de un proyecto de investigacion sobre destilacion on-policy (OPD, on-policy distillation) y aprendizaje por refuerzo con entornos verificables (etiquetas `rlve` y `grpo`). Se trata, por tanto, de un artefacto de investigacion mas que de un modelo de proposito general listo para produccion.
 
 El modelo no se ha entrenado para ser asistente generalista, sino para actuar como profesor (*teacher*) especializado en el entorno `CantorExpansion`: se han realizado 150 pasos de entrenamiento con GRPO sobre prompts de dificultad 0 de ese entorno, con cuatro prompts y 16 rollouts por paso y sin filtrado DAPO de prompts. El resultado son los pesos finales del paso 149, pensados para generar trayectorias de razonamiento que luego sirvan para destilar conocimiento en modelos alumnos dentro del mismo entorno.
 
@@ -66,10 +66,10 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros (1,78 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| opd-teacher-R1Distill-CantorExpansion-step149 | 1,78 B (denso) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Checkpoint de investigacion especializado en el entorno `CantorExpansion` |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B (denso) | No verificado en esta ficha | MIT segun su model card | HuggingFace, ampliamente descargado | Modelo base; razonamiento general y matematicas, sin especializacion en un entorno concreto |
-| Qwen2.5-1.5B-Instruct | 1,54 B (denso) | No verificado en esta ficha | Apache 2.0 | HuggingFace | Alternativa generalista de tamano similar, orientada a instrucciones, sin modo de razonamiento largo |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,6 B (denso) | No verificado en esta ficha | MIT segun su model card | HuggingFace | Misma familia de destilacion, mayor capacidad y mayor coste de inferencia |
+| opd-teacher-R1Distill-CantorExpansion-step149 | 1,78 B (denso) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Checkpoint de investigacion especializado en el entorno `CantorExpansion` |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B (denso) | No verificado en esta ficha | MIT segun su model card | Hugging Face, ampliamente descargado | Modelo base; razonamiento general y matematicas, sin especializacion en un entorno concreto |
+| Qwen2.5-1.5B-Instruct | 1,54 B (denso) | No verificado en esta ficha | Apache 2.0 | Hugging Face | Alternativa generalista de tamano similar, orientada a instrucciones, sin modo de razonamiento largo |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,6 B (denso) | No verificado en esta ficha | MIT segun su model card | Hugging Face | Misma familia de destilacion, mayor capacidad y mayor coste de inferencia |
 
 La comparacion de rendimiento entre estas alternativas no puede establecerse con los datos disponibles: no hay benchmarks publicados para el checkpoint del paso 149 y la busqueda web no ha aportado ninguna evaluacion independiente.
 
@@ -87,7 +87,7 @@ La comparacion de rendimiento entre estas alternativas no puede establecerse con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-CantorExpansion-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-CantorExpansion-step149
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Proyecto de entrenamiento citado en la model card: `david-heineman/rl-data-opd-teachers-r1-distil` (nombre de proyecto, no se ha localizado una URL publica)
 - Grupo de entrenamiento citado: `opd-teachers-r1-nofilter16-20260929-231458` (identificador interno, sin URL asociada)

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "leapshared/sciedu_sim_parts_redox_rim",
+  "slug": "leapshared-sciedu_sim_parts_redox_rim",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/sciedu_sim_parts_redox_rim",
+  "created_at": "2026-11-06T11:30:34.000Z",
+  "updated_at": "2026-11-06T11:30:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "reinforcement-learning",
+    "residual-rl",
+    "mujoco",
+    "openarm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3033064,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leapshared (Leapshared) - Hugging Face",
+      "url": "https://huggingface.co/leapshared/datasets",
+      "snippet": "leapshared/neudive_test_120epi_0819_real_20260819_162506. published a dataset about 13 hours ago. leapshared/neudive_test_120epi_0819_real_20260819_162506"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=trending&search=LEAPS",
+      "snippet": "leapshared/sciedu-router-axenc Text Classification • 0.1B•Updated 8 days ago• 16 • 1"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-louzongzhi/shensi-n es un modelo publicado en HuggingFace por el usuario louzongzhi (娄宗志) el 1 de septiembre de 2026, bajo licencia MIT. Forma parte de una coleccion denominada "Shensi" que incluye al menos otro modelo, Shensi-30B, lo que sugiere una familia de modelos en desarrollo. La model card publicada esta practicamente vacia: solo incluye la declaracion de licencia, sin descripcion tecnica, parametros, arquitectura ni ejemplos de uso.
+louzongzhi/shensi-n es un modelo publicado en Hugging Face por el usuario louzongzhi (娄宗志) el 1 de septiembre de 2026, bajo licencia MIT. Forma parte de una coleccion denominada "Shensi" que incluye al menos otro modelo, Shensi-30B, lo que sugiere una familia de modelos en desarrollo. La model card publicada esta practicamente vacia: solo incluye la declaracion de licencia, sin descripcion tecnica, parametros, arquitectura ni ejemplos de uso.
 
 En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que es una publicacion reciente o experimental sin adopcion por parte de la comunidad. El autor mantiene un perfil de GitHub con repositorios relacionados con agentes y servicios de modelos que referencian la familia Qwen y el servicio DashScope de Alibaba Cloud, pero no se ha confirmado ninguna relacion tecnica directa entre estos proyectos y shensi-n. Toda la informacion tecnica del modelo (arquitectura, tamano, contexto, capacidades) se desconoce a partir de las fuentes disponibles.
 
@@ -81,7 +81,7 @@ Sin datos de arquitectura, rendimiento o capacidades, no es posible comparar con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/louzongzhi/shensi-n
+- Modelo en Hugging Face: https://huggingface.co/louzongzhi/shensi-n
 - Coleccion Shensi: https://huggingface.co/collections/louzongzhi/shensi
 - Modelo relacionado Shensi-30B: https://huggingface.co/louzongzhi/Shensi-30B
 - Perfil de GitHub del autor: https://github.com/louzongzhi

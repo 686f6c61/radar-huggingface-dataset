@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8b-urban-qwen-seed1-20260930-CPT-final-step-1500 es un modelo de lenguaje derivado de Qwen/Qwen3-8B-Base mediante entrenamiento continuado (continued pretraining, CPT) sobre el dataset `CompassioninMachineLearning/urban_12738_cleaned`. Lo publica el usuario BrandonHowe en HuggingFace como un checkpoint experimental aislado: el nombre codifica la semilla (seed1), la fecha de ejecucion, la fase de entrenamiento (CPT) y el paso final (step 1500), que corresponde a la epoca 3,97. No es un modelo nuevo ni una variante oficial de Qwen, sino un ajuste de dominio sobre una base ya existente.
+Qwen3-8b-urban-qwen-seed1-20260930-CPT-final-step-1500 es un modelo de lenguaje derivado de Qwen/Qwen3-8B-Base mediante entrenamiento continuado (continued pretraining, CPT) sobre el dataset `CompassioninMachineLearning/urban_12738_cleaned`. Lo publica el usuario BrandonHowe en Hugging Face como un checkpoint experimental aislado: el nombre codifica la semilla (seed1), la fecha de ejecucion, la fase de entrenamiento (CPT) y el paso final (step 1500), que corresponde a la epoca 3,97. No es un modelo nuevo ni una variante oficial de Qwen, sino un ajuste de dominio sobre una base ya existente.
 
 El problema que aborda es la adaptacion de un modelo generalista de 8.190.735.360 parametros a un corpus especifico (aparentemente centrado en tematicas urbanas y de compasion, segun el nombre del dataset), sin pasar por instruccion ni alineamiento posterior. Se distribuye como checkpoint BF16 fusionado, sin adaptadores LoRA, en ocho shards de safetensors que ocupan unos 16,4 GB, y es cargable directamente con `transformers`.
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-seed1-20260930-CPT-final-step-1500
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-seed1-20260930-CPT-final-step-1500
 - Variante hermana (ejecucion 20260920): https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500
 - Arbol de archivos de la variante hermana: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500/tree/main
 - Ficha de la variante hermana en Featherless: https://featherless.ai/models/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500

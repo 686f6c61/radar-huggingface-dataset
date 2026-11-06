@@ -5,7 +5,7 @@
   "author": "s2vopd",
   "url": "https://huggingface.co/s2vopd/S2VOPD-Qwen3.5-4B",
   "created_at": "2026-09-18T00:54:27.000Z",
-  "updated_at": "2026-11-04T13:22:57.000Z",
+  "updated_at": "2026-11-06T06:07:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 5174964736,
   "parameters_human": "5.17B",

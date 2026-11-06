@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`prantooshhh/pet-segmentation-models` es un repositorio de pesos alojado en HuggingFace por el usuario `prantooshhh`, publicado el 21 de septiembre de 2026 y actualizado dos minutos despues, con un tamano de repositorio de 0,3 GB. La unica documentacion disponible es la declaracion de licencia MIT incluida en la model card; no hay descripcion de la arquitectura, del dataset de entrenamiento ni del proposito concreto del modelo. El identificador del repositorio sugiere un modelo de segmentacion de imagenes orientado a mascotas (perros y gatos, presumiblemente), pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna fuente del autor.
+`prantooshhh/pet-segmentation-models` es un repositorio de pesos alojado en Hugging Face por el usuario `prantooshhh`, publicado el 21 de septiembre de 2026 y actualizado dos minutos despues, con un tamano de repositorio de 0,3 GB. La unica documentacion disponible es la declaracion de licencia MIT incluida en la model card; no hay descripcion de la arquitectura, del dataset de entrenamiento ni del proposito concreto del modelo. El identificador del repositorio sugiere un modelo de segmentacion de imagenes orientado a mascotas (perros y gatos, presumiblemente), pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna fuente del autor.
 
-En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y no declara pipeline de HuggingFace ni idiomas soportados. Los unicos metadatos fiables son las etiquetas (`safetensors`, `license:mit`, `region:us`), el peso del repositorio y la licencia. No hay informacion sobre parametros totales, arquitectura, resolucion de entrada, clases de salida ni metricas de evaluacion.
+En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y no declara pipeline de Hugging Face ni idiomas soportados. Los unicos metadatos fiables son las etiquetas (`safetensors`, `license:mit`, `region:us`), el peso del repositorio y la licencia. No hay informacion sobre parametros totales, arquitectura, resolucion de entrada, clases de salida ni metricas de evaluacion.
 
 La busqueda web realizada no ha devuelto ningun resultado relevante: los enlaces recuperados corresponden a hilos de foro sin relacion alguna con el modelo (incidencias del sitio Leboncoin). Por tanto, esta ficha se limita a registrar los datos verificables y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse, evitando cualquier extrapolacion no justificada.
 
@@ -94,6 +94,6 @@ No se ha identificado en la informacion proporcionada ningun modelo comparable c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prantooshhh/pet-segmentation-models
+- Repositorio en Hugging Face: https://huggingface.co/prantooshhh/pet-segmentation-models
 - Resultados de la busqueda web: ninguno relevante. Los enlaces recuperados correspondian a hilos de foro sobre incidencias del sitio Leboncoin y no guardan relacion con el modelo.
 - Papers, blogs, repositorios auxiliares o demos: no disponible.

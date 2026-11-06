@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vinello28/Tunatron-3-Nano-4B-FP8",
+  "slug": "vinello28-tunatron-3-nano-4b-fp8",
+  "author": "vinello28",
+  "url": "https://huggingface.co/vinello28/Tunatron-3-Nano-4B-FP8",
+  "created_at": "2026-11-06T09:26:45.000Z",
+  "updated_at": "2026-11-06T09:28:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "security",
+    "sast",
+    "vulnerability-detection",
+    "dora",
+    "conversational",
+    "custom_code",
+    "it",
+    "en",
+    "base_model:unsloth/NVIDIA-Nemotron-3-Nano-4B",
+    "base_model:quantized:unsloth/NVIDIA-Nemotron-3-Nano-4B",
+    "license:other",
+    "endpoints_compatible",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 5284134439,
+  "storage_human": "5.3 GB",
+  "base_model": "unsloth/NVIDIA-Nemotron-3-Nano-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3-Nano-4B-FP8 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-4b",
+      "snippet": "Together, these capabilities demonstrate the model’s strong suitability for edge use cases. Nemotron 3 Nano 4B was pruned and distilled from Nemotron Nano 9B v2 using the Nemotron Elastic framework, allowing it to inherit the strong reasoning capabilities as a hybrid reasoning model."
+    }
+  ]
+}

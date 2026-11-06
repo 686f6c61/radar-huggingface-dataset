@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tepirale/Qwen3.5-0.8B-wsp-ONNX
+- Repositorio Hugging Face: https://huggingface.co/tepirale/Qwen3.5-0.8B-wsp-ONNX
 - Modelo base: https://huggingface.co/RikiyaT/Qwen3.5-0.8B-weight-space-programming
 - Documentación de onnxruntime-genai: no disponible en la información proporcionada
 - Paper o blog sobre weight-space programming: no disponible en la información proporcionada

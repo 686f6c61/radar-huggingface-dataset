@@ -79,5 +79,5 @@ La comparación es limitada porque el adaptador no publica métricas y su licenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/niamaelkhbir/qwen2.5-7b-parhaf-xml-en-role
+- Repositorio Hugging Face: https://huggingface.co/niamaelkhbir/qwen2.5-7b-parhaf-xml-en-role
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

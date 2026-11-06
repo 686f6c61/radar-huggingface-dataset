@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen0 es un ajuste fino (finetune) del modelo base unsloth/Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino mediante la libreria Unsloth y el framework TRL de HuggingFace. El nombre del repositorio sugiere que el entrenamiento se realizó sobre un conjunto de datos especializado relacionado con numeros categoricos y un parametro de colapso (p10_twf), aunque la model card no documenta el proposito exacto del ajuste.
+HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen0 es un ajuste fino (finetune) del modelo base unsloth/Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino mediante la libreria Unsloth y el framework TRL de Hugging Face. El nombre del repositorio sugiere que el entrenamiento se realizó sobre un conjunto de datos especializado relacionado con numeros categoricos y un parametro de colapso (p10_twf), aunque la model card no documenta el proposito exacto del ajuste.
 
 Se trata de un modelo de 7.000 millones de parametros basado en la arquitectura Qwen2, que hereda las capacidades del instruct de Qwen2.5-7B: generacion de texto, razonamiento, codigo y soporte multilingue, aunque la model card declara exclusivamente el ingles como idioma. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen0
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen0
 - Modelo base unsloth/Qwen2.5-7B-Instruct: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Informe tecnico Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Pagina de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:7b

@@ -4,7 +4,7 @@
 
 El repositorio `stefanschlad/multitask-quantized` contiene una implementación compacta y personalizada de **Albef** para multitarea, escrita en PyTorch. El autor, stefanschlad, presenta este proyecto como un punto de partida experimental para revisión de código, pruebas de humo y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es un checkpoint de inicialización válido, pero no ha sido entrenado ni auditado, y el propio model card indica que no se reclama ninguna puntuación de benchmark.
 
-La arquitectura corresponde a una configuración "large" de Albef con atención lineal, fusión por co-atención, activación GELU y normalización GroupNorm. Según los metadatos de HuggingFace, el modelo tiene un total de **16.576 parámetros**, un tamaño minúsculo que lo hace irrelevante como sistema de inferencia real, pero útil como plantilla de código o para validar pipelines de entrenamiento. No se dispone de información sobre la longitud de contexto, los idiomas soportados ni los tipos de cuantización, a pesar del nombre del repositorio.
+La arquitectura corresponde a una configuración "large" de Albef con atención lineal, fusión por co-atención, activación GELU y normalización GroupNorm. Según los metadatos de Hugging Face, el modelo tiene un total de **16.576 parámetros**, un tamaño minúsculo que lo hace irrelevante como sistema de inferencia real, pero útil como plantilla de código o para validar pipelines de entrenamiento. No se dispone de información sobre la longitud de contexto, los idiomas soportados ni los tipos de cuantización, a pesar del nombre del repositorio.
 
 ## Especificaciones técnicas
 
@@ -72,5 +72,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanschlad/multitask-quantized
+- Hugging Face: https://huggingface.co/stefanschlad/multitask-quantized
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

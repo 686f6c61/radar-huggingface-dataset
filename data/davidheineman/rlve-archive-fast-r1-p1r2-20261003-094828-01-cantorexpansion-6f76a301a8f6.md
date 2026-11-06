@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace es un archivo de un checkpoint de entrenamiento, no un modelo publicado con model card descriptiva. Su autor es el usuario `davidheineman` y el artefacto se identifica como "Archived checkpoint: 01-CantorExpansion", correspondiente a la ruta original `runs/fast-r1-p1r2-20261003-094828/resumable/01-CantorExpansion`. El repositorio conserva el estado final de un run completado, con el paso de checkpoint 149 y el identificador de run de Weights & Biases `179fc8f7`.
+Este repositorio de Hugging Face es un archivo de un checkpoint de entrenamiento, no un modelo publicado con model card descriptiva. Su autor es el usuario `davidheineman` y el artefacto se identifica como "Archived checkpoint: 01-CantorExpansion", correspondiente a la ruta original `runs/fast-r1-p1r2-20261003-094828/resumable/01-CantorExpansion`. El repositorio conserva el estado final de un run completado, con el paso de checkpoint 149 y el identificador de run de Weights & Biases `179fc8f7`.
 
 La informacion publicada no incluye arquitectura declarada, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia. Lo unico verificable es el formato de guardado, `megatron-torch-dist`, que corresponde a un checkpoint distribuido de Megatron-LM, y el tamano del repositorio, 3,6 GB. Las etiquetas del repositorio son `rlve`, `scratch-archive` y `region:us`, sin definicion adicional en la model card.
 
@@ -51,10 +51,10 @@ Tampoco hay informacion sobre el dataset, el numero de tokens procesados, la com
 
 - Reanudacion de un run de entrenamiento: el checkpoint distribuido se puede cargar en Megatron-LM para continuar el entrenamiento desde el paso 149, siempre que se disponga del mismo paralelismo y de la misma receta de datos.
 - Reproducibilidad experimental: el identificador de W&B `179fc8f7` junto con el estado exacto del checkpoint permite replicar o auditar las metricas registradas durante el run.
-- Conversion a formato HuggingFace: el checkpoint se puede convertir mediante herramientas de conversion de Megatron a `safetensors` para poder inspeccionarlo con `transformers`, aunque el exito depende de conocer la configuracion de arquitectura, que no se publica.
+- Conversion a formato Hugging Face: el checkpoint se puede convertir mediante herramientas de conversion de Megatron a `safetensors` para poder inspeccionarlo con `transformers`, aunque el exito depende de conocer la configuracion de arquitectura, que no se publica.
 - Analisis de pesos en investigacion: util para estudiar la evolucion de pesos, normas por capa o distribuciones de activaciones en un modelo entrenado desde cero en un directorio de trabajo aislado.
 - Punto de partida para fine-tuning posterior: si la conversion a un formato estandar es viable, el checkpoint podria servir como inicializacion para ajuste supervisado o RL, sujeto a la licencia, que no esta declarada.
-- Archivo de seguridad ante perdida del entorno de computo: al conservarse en HuggingFace, el estado del run queda preservado si se elimina el cluster o el almacenamiento original.
+- Archivo de seguridad ante perdida del entorno de computo: al conservarse en Hugging Face, el estado del run queda preservado si se elimina el cluster o el almacenamiento original.
 - Comparacion entre checkpoints de una misma familia: el nombre del run sugiere fases o variantes (`p1r2`, `01-CantorExpansion`), de modo que este artefacto puede actuar como referencia frente a otros checkpoints del mismo proyecto.
 - Docencia y prototipado interno de pipelines de entrenamiento distribuido: sirve como ejemplo real de estructura de checkpoint `megatron-torch-dist` y de su organizacion en directorios.
 
@@ -82,7 +82,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 | Licencia | no disponible | no disponible |
 | Formato de pesos | `megatron-torch-dist` | no disponible |
 | Uso previsto | archivo de checkpoint de entrenamiento | no disponible |
-| Descargas en HuggingFace | 0 | no disponible |
+| Descargas en Hugging Face | 0 | no disponible |
 | Likes | 0 | no disponible |
 | Documentacion | model card minima, sin especificaciones | no disponible |
 
@@ -102,6 +102,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r2-20261003-094828-01-cantorexpansion-6f76a301a8f6
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r2-20261003-094828-01-cantorexpansion-6f76a301a8f6
 - Run de Weights & Biases: identificador `179fc8f7`, enlace directo no disponible en la informacion proporcionada.
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

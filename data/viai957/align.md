@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`viai957/align` no es un modelo de pesos: es un snapshot de repositorio publicado en HuggingFace bajo el título "align: open post-training stack and Lean 4 prover research (code)". Contiene el árbol de trabajo del código (`code/`) en un commit concreto y un *git bundle* (`align.bundle`) con el historial completo, restaurable mediante `git clone align.bundle align`. El propio autor declara el estado como "Phase 0, with no trained checkpoint yet", es decir, no existe ningún checkpoint entrenado ni pesos publicados.
+`viai957/align` no es un modelo de pesos: es un snapshot de repositorio publicado en Hugging Face bajo el título "align: open post-training stack and Lean 4 prover research (code)". Contiene el árbol de trabajo del código (`code/`) en un commit concreto y un *git bundle* (`align.bundle`) con el historial completo, restaurable mediante `git clone align.bundle align`. El propio autor declara el estado como "Phase 0, with no trained checkpoint yet", es decir, no existe ningún checkpoint entrenado ni pesos publicados.
 
 El proyecto se orienta a la investigación en demostración automática de teoremas sobre Lean 4 y a un stack abierto de post-entrenamiento con GRPO (Group Relative Policy Optimization), según las etiquetas del repositorio (`lean4`, `theorem-proving`, `post-training`, `grpo`, `code`). Incluye una pre-registración de resultados (`code/docs/PREREG_SOTA.md`) sellada con OpenTimestamps en `code/docs/evidence/prereg/`, lo que sugiere una metodología de investigación con compromiso previo de hipótesis y métricas.
 
@@ -90,7 +90,7 @@ En parámetros, contexto, rendimiento y disponibilidad, `viai957/align` figura c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/viai957/align
+- Repositorio en Hugging Face: https://huggingface.co/viai957/align
 - Dataset asociado: https://huggingface.co/datasets/viai957/lean-prover-data
 - Pre-registro (ruta interna del repo): `code/docs/PREREG_SOTA.md`
 - Evidencias del sellado temporal (ruta interna del repo): `code/docs/evidence/prereg/`

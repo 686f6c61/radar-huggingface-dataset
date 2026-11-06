@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iliashnkk/howest-hf-ai` es un repositorio de modelo alojado en HuggingFace por el usuario `iliashnkk`, publicado el 11 de octubre de 2026 y etiquetado con la libreria Keras. La model card es autogenerada por la plataforma: no incluye descripcion del modelo, ni del problema que resuelve, ni del proceso de entrenamiento. El unico dato tecnico explicitado en la propia card es que el modelo se ha subido usando Keras y que, por tanto, puede ejecutarse con los backends JAX, TensorFlow y PyTorch.
+`iliashnkk/howest-hf-ai` es un repositorio de modelo alojado en Hugging Face por el usuario `iliashnkk`, publicado el 11 de octubre de 2026 y etiquetado con la libreria Keras. La model card es autogenerada por la plataforma: no incluye descripcion del modelo, ni del problema que resuelve, ni del proceso de entrenamiento. El unico dato tecnico explicitado en la propia card es que el modelo se ha subido usando Keras y que, por tanto, puede ejecutarse con los backends JAX, TensorFlow y PyTorch.
 
 El repositorio no presenta pipeline declarado, licencia, idiomas soportados, resultados de benchmarks ni ningun otro metadato funcional. El tamano indicado del repositorio es de 0.0 GB, lo que sugiere que no se han subido pesos ni ficheros de gran volumen, y el numero de descargas y de "likes" es cero en el momento de la consulta. La unica referencia adicional de la card remite a `config.json` para conocer la arquitectura, pero ese fichero no forma parte de la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iliashnkk/howest-hf-ai
-- Documentacion de model cards de HuggingFace (referenciada en la card): https://huggingface.co/docs/hub/model-cards
+- Repositorio en Hugging Face: https://huggingface.co/iliashnkk/howest-hf-ai
+- Documentacion de model cards de Hugging Face (referenciada en la card): https://huggingface.co/docs/hub/model-cards
 - Documentacion de Keras: https://keras.io/
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Flash-RL (edición UNCENSORED de dealignai) es una variante del modelo Flash de la familia MiMo-V2.6 desarrollada por Xiaomi, publicada y redistribuida por el usuario Aki251 en HuggingFace. Se trata de un modelo de mezcla de expertos (MoE) de 310.756.322.688 parámetros totales (aproximadamente 309B) con 15B parámetros activos, pensado para generación de texto, razonamiento, código, matemáticas y tareas multimodales (visión, audio y comprensión de vídeo). Su rasgo diferencial es que se ha eliminado el comportamiento de rechazo (refusal) a nivel de pesos, manteniendo las capacidades del modelo base.
+MiMo-V2.6-Flash-RL (edición UNCENSORED de dealignai) es una variante del modelo Flash de la familia MiMo-V2.6 desarrollada por Xiaomi, publicada y redistribuida por el usuario Aki251 en Hugging Face. Se trata de un modelo de mezcla de expertos (MoE) de 310.756.322.688 parámetros totales (aproximadamente 309B) con 15B parámetros activos, pensado para generación de texto, razonamiento, código, matemáticas y tareas multimodales (visión, audio y comprensión de vídeo). Su rasgo diferencial es que se ha eliminado el comportamiento de rechazo (refusal) a nivel de pesos, manteniendo las capacidades del modelo base.
 
 El modelo base es `XiaomiMiMo/MiMo-V2.6-Flash-RL`, un MoE con 256 expertos enrutados (top-8, sin experto compartido) y una disposición de atención híbrida (9 capas globales + 39 capas de ventana deslizante de 128), junto con un codificador visión-lenguaje, un codificador de audio, comprensión de vídeo y una longitud de contexto de aproximadamente 1 millón de tokens. Incluye además una cabeza de decodificación especulativa DFlash de 5 capas con ventana deslizante (SWA) para inferencia de alto rendimiento.
 
@@ -103,7 +103,7 @@ No se han identificado en la información disponible otros modelos comparables d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aki251/archive-dealignai-MiMo-V2.6-Flash-RL-UNCENSORED
+- Hugging Face: https://huggingface.co/Aki251/archive-dealignai-MiMo-V2.6-Flash-RL-UNCENSORED
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - X (Twitter) del autor: https://x.com/dealignai
 - Sitio web del autor: https://dealign.ai

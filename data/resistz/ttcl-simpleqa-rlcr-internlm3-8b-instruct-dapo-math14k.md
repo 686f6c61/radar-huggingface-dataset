@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`resistz/TTCL-SimpleQA-RLCR-Internlm3-8B-Instruct-DAPO-Math14K` es un ajuste fino publicado en HuggingFace por el usuario resistz bajo licencia MIT. Por el propio identificador se deduce que parte de InternLM3-8B-Instruct, un modelo denso de 8.000 millones de parámetros, y que se ha posentrenado con DAPO (una variante de optimización de política con recorte desacoplado y muestreo dinámico) sobre un conjunto de datos matemáticos de 14.000 ejemplos, siguiendo un esquema de refuerzo con recompensa verificable orientado a tareas de respuesta corta.
+`resistz/TTCL-SimpleQA-RLCR-Internlm3-8B-Instruct-DAPO-Math14K` es un ajuste fino publicado en Hugging Face por el usuario resistz bajo licencia MIT. Por el propio identificador se deduce que parte de InternLM3-8B-Instruct, un modelo denso de 8.000 millones de parámetros, y que se ha posentrenado con DAPO (una variante de optimización de política con recorte desacoplado y muestreo dinámico) sobre un conjunto de datos matemáticos de 14.000 ejemplos, siguiendo un esquema de refuerzo con recompensa verificable orientado a tareas de respuesta corta.
 
 La model card está vacía: no incluye descripción, composición del dataset, hiperparámetros, curvas de entrenamiento ni resultados de evaluación. El repositorio acumula 0 descargas y 0 me gusta, y la fecha de creación que figura en los metadatos (10 de octubre de 2026) no permite situarlo con fiabilidad temporal. Todo lo que sigue se basa en el identificador del modelo y en las convenciones habituales de los ajustes con RL; cualquier dato no confirmado se marca explícitamente como "no disponible".
 
@@ -99,5 +99,5 @@ No es posible comparar el rendimiento en tareas porque el autor no publica ning�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resistz/TTCL-SimpleQA-RLCR-Internlm3-8B-Instruct-DAPO-Math14K
+- Modelo en Hugging Face: https://huggingface.co/resistz/TTCL-SimpleQA-RLCR-Internlm3-8B-Instruct-DAPO-Math14K
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por el buscador no guardan ninguna relación con el modelo ni con el aprendizaje automático, por lo que se han descartado.

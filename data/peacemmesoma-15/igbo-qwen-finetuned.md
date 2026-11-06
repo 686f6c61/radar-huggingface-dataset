@@ -81,5 +81,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - PeaceMmesoma-15/Igbo-qwen-finetuned](https://huggingface.co/PeaceMmesoma-15/Igbo-qwen-finetuned)
+- [Hugging Face - PeaceMmesoma-15/Igbo-qwen-finetuned](https://huggingface.co/PeaceMmesoma-15/Igbo-qwen-finetuned)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct) (referencia, no incluido en la información original)

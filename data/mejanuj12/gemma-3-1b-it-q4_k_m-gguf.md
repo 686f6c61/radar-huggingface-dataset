@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mejanuj12/gemma-3-1b-it-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mejanuj12/gemma-3-1b-it-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/google/gemma-3-1b-it
 - Repositorio GGUF oficial de ggml-org: https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

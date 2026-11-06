@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l31_swift_remove20` es un checkpoint derivado de `meta-llama/Llama-3.1-8B-Instruct` al que se le ha aplicado una compresión SVD-LLM que elimina el 20,00 % de los parámetros densos, dejando una fracción de parámetros resultante de 0,8004. Lo publica el usuario Jeesup en HuggingFace como artefacto de investigación, no como modelo conversacional de propósito general. Forma parte de una rejilla experimental que cruza distintas reglas de selección de componentes SVD con distintos presupuestos de restauración, con el objetivo de medir cómo la compresión degrada el comportamiento de seguridad y qué regla de selección lo repara mejor.
+`svd-safety-l31_swift_remove20` es un checkpoint derivado de `meta-llama/Llama-3.1-8B-Instruct` al que se le ha aplicado una compresión SVD-LLM que elimina el 20,00 % de los parámetros densos, dejando una fracción de parámetros resultante de 0,8004. Lo publica el usuario Jeesup en Hugging Face como artefacto de investigación, no como modelo conversacional de propósito general. Forma parte de una rejilla experimental que cruza distintas reglas de selección de componentes SVD con distintos presupuestos de restauración, con el objetivo de medir cómo la compresión degrada el comportamiento de seguridad y qué regla de selección lo repara mejor.
 
 En esta celda concreta la regla de selección es `unknown` y el presupuesto de restauración es del 0,000 % de los parámetros densos, es decir, cero componentes restaurados y cero componentes sustituidos. El número total de parámetros reportado en los ficheros safetensors es de 8.030.261.248, con un repositorio de 16,1 GB y semilla 42.
 
@@ -87,9 +87,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_swift_remove20` | 8.030.261.248 (fracción 0,8004 del denso) | No disponible | Llama 3.1 Community License | HuggingFace, 0 descargas, 0 likes | Artefacto de investigación, seguridad degradada por diseño |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Modelo base sin comprimir; referencia natural de comparación |
-| Otras celdas de la misma rejilla SVD | No disponible | No disponible | Llama 3.1 Community License | HuggingFace (repositorio del autor) | No se dispone de sus especificaciones en la información proporcionada |
+| `Jeesup/svd-safety-l31_swift_remove20` | 8.030.261.248 (fracción 0,8004 del denso) | No disponible | Llama 3.1 Community License | Hugging Face, 0 descargas, 0 likes | Artefacto de investigación, seguridad degradada por diseño |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Modelo base sin comprimir; referencia natural de comparación |
+| Otras celdas de la misma rejilla SVD | No disponible | No disponible | Llama 3.1 Community License | Hugging Face (repositorio del autor) | No se dispone de sus especificaciones en la información proporcionada |
 | Alternativas de ~7-8B de otros fabricantes | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No se aportan datos comparativos |
 
 No se dispone de resultados de benchmarks del modelo base ni de alternativas en la información proporcionada, por lo que la comparación de rendimiento no puede cuantificarse.
@@ -108,7 +108,7 @@ No se dispone de resultados de benchmarks del modelo base ni de alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_swift_remove20
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_swift_remove20
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Política de uso aceptable de Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/USE_POLICY.md

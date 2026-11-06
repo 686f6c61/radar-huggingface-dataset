@@ -77,8 +77,8 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/QuantaPlanta/DeepSeek-V4-Flash-Vision-Exp-MXFP4-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
+- Repositorio Hugging Face: https://huggingface.co/QuantaPlanta/DeepSeek-V4-Flash-Vision-Exp-MXFP4-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Modelo DeepSeek-V4-Flash (sin visión): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Documentación de vLLM Recipes: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Guía práctica de DeepSeek V4 Flash Vision: https://codepick.dev/en/guides/deepseek-v4-flash-vision-guide/

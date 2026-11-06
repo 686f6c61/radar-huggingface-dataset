@@ -25,7 +25,7 @@ Su relevancia es acotada y muy específica: la ventana temporal y temática del 
 | Modelo base | neuralmind/bert-large-portuguese-cased |
 | Dataset de fine-tuning | uefactsbr-urnas-eleicoes-2022 |
 | Tamaño del repositorio | 1,3 GB |
-| Descargas / likes en HuggingFace | 17 / 0 |
+| Descargas / likes en Hugging Face | 17 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -82,8 +82,8 @@ El autor indica que en el TCC se emplearon además un umbral ajustado (τ = 0,94
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saleonhard/bertimbau-urnas-desinformacao | 334.398.466 | 256 tokens en fine-tuning | Clasificación binaria de desinformación sobre urnas (pt) | Apache 2.0 | HuggingFace, safetensors |
-| neuralmind/bert-large-portuguese-cased (base) | No disponible en la información proporcionada | No disponible | Modelo de lenguaje enmascarado en portugués | No disponible en la información proporcionada | HuggingFace |
+| saleonhard/bertimbau-urnas-desinformacao | 334.398.466 | 256 tokens en fine-tuning | Clasificación binaria de desinformación sobre urnas (pt) | Apache 2.0 | Hugging Face, safetensors |
+| neuralmind/bert-large-portuguese-cased (base) | No disponible en la información proporcionada | No disponible | Modelo de lenguaje enmascarado en portugués | No disponible en la información proporcionada | Hugging Face |
 | Otros clasificadores de desinformación en portugués | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de resultados comparativos frente a otros clasificadores de desinformación en portugués, ni de métricas del modelo base en esta tarea concreta, por lo que no es posible establecer una comparación cuantitativa.
@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de resultados comparativos frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saleonhard/bertimbau-urnas-desinformacao
+- Modelo en Hugging Face: https://huggingface.co/saleonhard/bertimbau-urnas-desinformacao
 - Modelo base BERTimbau large: https://huggingface.co/neuralmind/bert-large-portuguese-cased
 - Código fuente del TCC (recolección, procesamiento, entrenamiento y análisis): https://github.com/saleonhard/TCC
 - Dataset de fine-tuning: uefactsbr-urnas-eleicoes-2022 (identificador citado en la model card; no se proporciona URL en la información disponible)

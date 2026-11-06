@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`loafecho/yugioh-kashtira-qwen2.5-0.5b-lora` es un adaptador LoRA de rango 16 (unos 35 MB) que convierte el modelo base Qwen2.5-0.5B-Instruct en un agente de duelo de Yu-Gi-Oh. Lo desarrolla el usuario de HuggingFace loafecho y esta disenado para jugar el mazo Kashtira dentro del motor de codigo abierto EDOPro / ygopro-core. No es un modelo entrenado desde cero, sino un ajuste fino sobre el modelo de Qwen.
+`loafecho/yugioh-kashtira-qwen2.5-0.5b-lora` es un adaptador LoRA de rango 16 (unos 35 MB) que convierte el modelo base Qwen2.5-0.5B-Instruct en un agente de duelo de Yu-Gi-Oh. Lo desarrolla el usuario de Hugging Face loafecho y esta disenado para jugar el mazo Kashtira dentro del motor de codigo abierto EDOPro / ygopro-core. No es un modelo entrenado desde cero, sino un ajuste fino sobre el modelo de Qwen.
 
 El modelo resuelve un problema muy acotado: tomar una descripcion textual del tablero publico (puntos de vida, mano, campo, cementerios y resumenes de cartas) junto con una lista de movimientos legales etiquetados con letras, y seleccionar la mejor opcion puntuando el siguiente token. La jugada elegida es la letra con mayor logit, siempre de forma codiciosa, sin muestreo ni busqueda.
 
@@ -86,7 +86,7 @@ Desglose por mazo del pool: Dragunity 0,92, Blackwing 0,91, Zoodiac 0,56, Thunde
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/loafecho/yugioh-kashtira-qwen2.5-0.5b-lora
+- Hugging Face: https://huggingface.co/loafecho/yugioh-kashtira-qwen2.5-0.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Hermano mayor: https://huggingface.co/loafecho/yugioh-kashtira-qwen2.5-1.5b-lora
 - Runner y harness de entrenamiento: https://github.com/loafecho/ygo-duel-agent

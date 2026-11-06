@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wesjos/Spark-x2.6-4B-HTML",
+  "slug": "wesjos-spark-x2-6-4b-html",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/Spark-x2.6-4B-HTML",
+  "created_at": "2026-11-05T19:03:50.000Z",
+  "updated_at": "2026-11-06T07:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "sparkx2_5",
+    "html-generation",
+    "web-design",
+    "visual-ui",
+    "reasoning",
+    "sft",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:finetune:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 8224338527,
+  "storage_human": "8.2 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XHToken/Spark-X2.6: Spark-x2.6 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.6",
+      "snippet": "Spark-X2.6 retains exactly the same architecture as Spark-X2.5, achieving its capability gains through improved post-training. It delivers substantial improvements in coding, agent, long-context, multilingual, reasoning, etc. These advances enable more capable and practical on-device AI for developers and users tackling real-world tasks."
+    },
+    {
+      "title": "Spark-X2.6/README.md at X2.6 · XHToken/Spark-X2.6 · GitHub",
+      "url": "https://github.com/XHToken/Spark-X2.6/blob/X2.6/README.md",
+      "snippet": "Spark-X2.6-4B retains exactly the same architecture as Spark-X2.5-4B, achieving its capability gains through improved post-training. It delivers substantial improvements in coding, agent, long-context, multilingual, reasoning, etc. These advances enable more capable and practical on-device AI for developers and users tackling real-world tasks."
+    }
+  ]
+}

@@ -70,8 +70,8 @@ La model card indica únicamente que se completó una evaluación offline y que 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step12500 (este) | LoRA sobre VLA π0.5, tarea pick3 | no disponible | no disponible (baseline sin historial) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi05_base | VLA π0.5 base de Physical Intelligence | no disponible | no disponible | no disponible en la informacion | HuggingFace, documentado en LeRobot |
+| pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step12500 (este) | LoRA sobre VLA π0.5, tarea pick3 | no disponible | no disponible (baseline sin historial) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi05_base | VLA π0.5 base de Physical Intelligence | no disponible | no disponible | no disponible en la informacion | Hugging Face, documentado en LeRobot |
 | π0.5 original (OpenPI) | VLA con generalizacion de mundo abierto, entrenado con knowledge insulation | no disponible | no disponible | no disponible en la informacion | Repositorio OpenPI y checkpoints base preentrenados con mas de 10.000 horas de datos de robot |
 | π0 | VLA predecesor de π0.5 | no disponible | no disponible | no disponible en la informacion | Repositorio OpenPI |
 
@@ -94,7 +94,7 @@ La comparación cuantitativa de rendimiento no está disponible: no hay benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step12500
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step12500
 - Dataset de respaldo de checkpoints: https://huggingface.co/datasets/fm-dev/pi05-checkpoint-backups/tree/main/checkpoints/r2
 - Documentación de la política π0.5 en LeRobot: https://huggingface.co/docs/lerobot/pi05
 - Modelo base π0.5 de LeRobot: https://huggingface.co/lerobot/pi05_base

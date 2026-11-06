@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que ofrece una vía práctica para incorp
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base `litillabs/octen-law-8b-v1`. Los metadatos de HuggingFace indican que se trata de un modelo de embeddings (tags: `sentence-transformers`, `embeddings`, `retrieval`, `legal`, `mteb`), lo que sugiere una arquitectura transformer con una cabeza de pooling para generar representaciones vectoriales. Sin embargo, no se han publicado datos sobre el número de capas, la dimensión de los embeddings, el tamaño del vocabulario ni el proceso de entrenamiento (datos, número de tokens, técnicas de optimización como contraste o hard negative mining). Tampoco se especifica si se utilizó fine-tuning sobre un modelo base previo o entrenamiento desde cero.
+No se dispone de información detallada sobre la arquitectura interna del modelo base `litillabs/octen-law-8b-v1`. Los metadatos de Hugging Face indican que se trata de un modelo de embeddings (tags: `sentence-transformers`, `embeddings`, `retrieval`, `legal`, `mteb`), lo que sugiere una arquitectura transformer con una cabeza de pooling para generar representaciones vectoriales. Sin embargo, no se han publicado datos sobre el número de capas, la dimensión de los embeddings, el tamaño del vocabulario ni el proceso de entrenamiento (datos, número de tokens, técnicas de optimización como contraste o hard negative mining). Tampoco se especifica si se utilizó fine-tuning sobre un modelo base previo o entrenamiento desde cero.
 
 ## Capacidades
 

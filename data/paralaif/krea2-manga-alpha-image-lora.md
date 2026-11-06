@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 | Modelo | Tipo | Transparencia nativa | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea2 Manga Alpha Image LoRA | LoRA rank 32 sobre Krea 2 Turbo | Si, RGBA directa con VAE Wan-Alpha v2 | Krea 2 (espacio latente Wan 2.1) | krea-2-community-license | HuggingFace, ComfyUI |
-| Wan-Alpha (htdong/Wan-Alpha-VAE) | VAE + enfoque de latente con alfa para Wan 2.1 | Si, mediante latente fusionado de 16 canales | Wan 2.1 | no disponible | HuggingFace |
+| Krea2 Manga Alpha Image LoRA | LoRA rank 32 sobre Krea 2 Turbo | Si, RGBA directa con VAE Wan-Alpha v2 | Krea 2 (espacio latente Wan 2.1) | krea-2-community-license | Hugging Face, ComfyUI |
+| Wan-Alpha (htdong/Wan-Alpha-VAE) | VAE + enfoque de latente con alfa para Wan 2.1 | Si, mediante latente fusionado de 16 canales | Wan 2.1 | no disponible | Hugging Face |
 | Solucion clasica (SD/Flux + modelo de recorte tipo RMBG/SAM) | Pipeline de dos etapas | No nativa; requiere postprocesado y suele generar halos | Variable | Variable | Ampliamente disponible |
 
 La ventaja diferencial de este LoRA frente al enfoque clasico es la generacion de alfa en una sola pasada, sin modelos auxiliares de segmentacion.
@@ -83,7 +83,7 @@ La ventaja diferencial de este LoRA frente al enfoque clasico es la generacion d
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/paralaif/Krea2-Manga-Alpha-Image-LoRA
+- Ficha en Hugging Face: https://huggingface.co/paralaif/Krea2-Manga-Alpha-Image-LoRA
 - Licencia del modelo: https://huggingface.co/paralaif/Krea2-Manga-Alpha-Image-LoRA/blob/main/LICENSE.pdf
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo referenciada: https://huggingface.co/krea/Krea-2-Turbo

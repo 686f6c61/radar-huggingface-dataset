@@ -4,7 +4,7 @@
 
 El modelo `VaSy365/llama3.2-3b-legal-id-ft` es un finetuning de `unsloth/llama-3.2-3b-instruct-bnb-4bit`, que a su vez es la versión cuantizada a 4 bits del modelo Llama 3.2 3B Instruct de Meta. El autor, VaSy365, ha publicado el modelo bajo licencia Apache 2.0 con el objetivo aparente de adaptarlo a tareas del ámbito legal, tal y como sugiere el nombre `legal-id`. No obstante, no se ha publicado documentación alguna sobre el dataset de entrenamiento, el proceso de ajuste ni los resultados obtenidos, por lo que las capacidades concretas del finetuning resultan desconocidas.
 
-Arquitectónicamente se trata de un modelo transformer decoder-only con 3.212.749.824 parámetros, lo que lo sitúa en la gama de modelos ligeros de 3B. Su tamaño reducido permite desplegarlo en hardware modesto, y al estar basado en Llama 3.2 mantiene la vocación de asistente instructivo para generación de texto en inglés. La relevancia del modelo es limitada, dado que no se ofrecen evaluaciones ni especificaciones de uso más allá de la propia publicación en HuggingFace.
+Arquitectónicamente se trata de un modelo transformer decoder-only con 3.212.749.824 parámetros, lo que lo sitúa en la gama de modelos ligeros de 3B. Su tamaño reducido permite desplegarlo en hardware modesto, y al estar basado en Llama 3.2 mantiene la vocación de asistente instructivo para generación de texto en inglés. La relevancia del modelo es limitada, dado que no se ofrecen evaluaciones ni especificaciones de uso más allá de la propia publicación en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Arquitectónicamente se trata de un modelo transformer decoder-only con 3.212.74
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/llama-3.2-3b-instruct-bnb-4bit`, una versión del modelo Llama 3.2 3B de Meta cargada en 4 bits. El autor indica que se realizó un finetuning empleando la librería TRL de HuggingFace y la optimización de Unsloth, que reduce el tiempo de entrenamiento aproximadamente a la mitad. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO. El resultado es un modelo con pesos en formato safetensors y con la misma capacidad de generación instructiva que el modelo base, adaptado presumiblemente a un dominio legal no especificado.
+El modelo parte de `unsloth/llama-3.2-3b-instruct-bnb-4bit`, una versión del modelo Llama 3.2 3B de Meta cargada en 4 bits. El autor indica que se realizó un finetuning empleando la librería TRL de Hugging Face y la optimización de Unsloth, que reduce el tiempo de entrenamiento aproximadamente a la mitad. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO. El resultado es un modelo con pesos en formato safetensors y con la misma capacidad de generación instructiva que el modelo base, adaptado presumiblemente a un dominio legal no especificado.
 
 ## Capacidades
 
@@ -57,21 +57,21 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VaSy365/llama3.2-3b-legal-id-ft | 3.212.749.824 | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/llama-3.2-3b-instruct-bnb-4bit | 3.212.749.824 | 128.000 (modelo base) | Llama 3.2 Community License | HuggingFace |
-| Meta Llama 3.2 3B Instruct | 3.212.749.824 | 128.000 | Llama 3.2 Community License | HuggingFace / Meta |
+| VaSy365/llama3.2-3b-legal-id-ft | 3.212.749.824 | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/llama-3.2-3b-instruct-bnb-4bit | 3.212.749.824 | 128.000 (modelo base) | Llama 3.2 Community License | Hugging Face |
+| Meta Llama 3.2 3B Instruct | 3.212.749.824 | 128.000 | Llama 3.2 Community License | Hugging Face / Meta |
 
 ## Limitaciones y advertencias
 
 - No se ha publicado el dataset de entrenamiento, por lo que los sesgos del finetuning son desconocidos.
 - Al ser un finetuning sin RLHF/DPO documentado, existe un riesgo significativo de alucinacion en tareas legales donde la precision es critica.
-- El modelo solo soporta el idioma ingles, segun los metadatos de HuggingFace.
+- El modelo solo soporta el idioma ingles, segun los metadatos de Hugging Face.
 - La licencia declarada es Apache 2.0, pero el modelo base Llama 3.2 esta sujeto a la licencia de Meta, lo que puede generar incompatibilidades legales en el uso comercial del derivado. Conviene revisar la licencia del modelo base antes de desplegarlo en produccion.
 - No se han proporcionado benchmarks ni pruebas de robustez, por lo que su rendimiento real es incierto.
 - El contexto largo no esta verificado, y un finetuning de este tipo puede degradar la capacidad de manejar ventanas de 128K tokens si no se entreno con datos suficientes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VaSy365/llama3.2-3b-legal-id-ft
+- Modelo en Hugging Face: https://huggingface.co/VaSy365/llama3.2-3b-legal-id-ft
 - Modelo base cuantizado: https://huggingface.co/unsloth/llama-3.2-3b-instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

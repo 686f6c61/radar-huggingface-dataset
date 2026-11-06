@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-hd1910-walk-djbob es una política de control entrenada mediante aprendizaje por refuerzo para que un robot cuadrúpedo de la familia Microduck (plataforma HD-1910) camine siguiendo comandos de velocidad. Lo desarrolla el usuario duckyduck369 y se publica en HuggingFace como un modelo ONNX listo para ejecutarse en el firmware `robotctl`. No es un modelo de lenguaje: es una política de locomoción que mapea un comando de twist (vx, vy, yaw) y el estado de las articulaciones a posiciones objetivo de las 14 articulaciones del robot.
+microduck-hd1910-walk-djbob es una política de control entrenada mediante aprendizaje por refuerzo para que un robot cuadrúpedo de la familia Microduck (plataforma HD-1910) camine siguiendo comandos de velocidad. Lo desarrolla el usuario duckyduck369 y se publica en Hugging Face como un modelo ONNX listo para ejecutarse en el firmware `robotctl`. No es un modelo de lenguaje: es una política de locomoción que mapea un comando de twist (vx, vy, yaw) y el estado de las articulaciones a posiciones objetivo de las 14 articulaciones del robot.
 
 El modelo se entrenó en simulación con la tarea `Mjlab-Velocity-Flat-MicroDuck-HD1910-S2R3`, sobre una planta física concreta (hash `54c147ebc5a06f45`) que define masas, rangos articulares, HOME, parámetros de servo y geometría de colisión. La política está pensada para un robot de 790,6 g con servos hd1910 y alimentación de 5,6 a 6,8 V (pack 2S antiguo), con un límite de par y caída de tensión modelados.
 
@@ -101,6 +101,6 @@ No se dispone de información sobre modelos comparables de la misma familia o ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duckyduck369/microduck-hd1910-walk-djbob
+- Modelo en Hugging Face: https://huggingface.co/duckyduck369/microduck-hd1910-walk-djbob
 - Vídeo de replay: https://huggingface.co/duckyduck369/microduck-hd1910-walk-djbob/resolve/main/replay.mp4
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

@@ -68,6 +68,6 @@ No se dispone de información sobre adaptadores LoRA comparables en el dominio d
 - Licencia: aunque la licencia es Apache-2.0, el modelo base también lo es, por lo que no hay restricciones comerciales, pero se recomienda verificar la procedencia de los datos de entrenamiento del adaptador.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Srishti1013/insurance-lora-adapter
+- Hugging Face: https://huggingface.co/Srishti1013/insurance-lora-adapter
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit

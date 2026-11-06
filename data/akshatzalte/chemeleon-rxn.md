@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CheMeleon-Rxn | 8,9 M | SMILES de reacción mapeado (CGR) | no aplica | MIT | HuggingFace |
-| CheMeleon (Burns et al., 2026) | no disponible | SMILES molecular | no aplica | no disponible | HuggingFace / código |
+| CheMeleon-Rxn | 8,9 M | SMILES de reacción mapeado (CGR) | no aplica | MIT | Hugging Face |
+| CheMeleon (Burns et al., 2026) | no disponible | SMILES molecular | no aplica | no disponible | Hugging Face / código |
 | D-MPNN de Chemprop entrenado desde cero | configurable | SMILES molecular o de reacción | no aplica | MIT (Chemprop) | Código abierto |
 | Modelos de lenguaje químico (p. ej. basados en transformers sobre SMILES) | cientos de millones a miles de millones | texto/SMILES | miles de tokens | variable | variable |
 
@@ -82,7 +82,7 @@ La comparación con modelos de lenguaje químico no es directa: CheMeleon-Rxn no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akshatzalte/chemeleon-rxn
+- Hugging Face: https://huggingface.co/akshatzalte/chemeleon-rxn
 - Código: https://github.com/MSDLLCpapers/chemeleon-rxn
 - Artículo: https://chemrxiv.org/doi/full/10.26434/chemrxiv.15008692
 - DOI: https://doi.org/10.26434/chemrxiv.15008692

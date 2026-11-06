@@ -80,6 +80,6 @@ No hay modelos directamente comparables en la información proporcionada, ya que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iNFINITEAi2025/NATO-Toolsmith-XS
+- Hugging Face: https://huggingface.co/iNFINITEAi2025/NATO-Toolsmith-XS
 - GitHub del autor (ESP32 commander): https://github.com/NaTo1000/iNFINITEAi2025.
 - GitHub Plugin Forge: https://github.com/NaTo1000/iNFINITE-Ai-2025-Plugin-Forge

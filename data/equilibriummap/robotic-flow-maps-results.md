@@ -6,7 +6,7 @@ EquilibriumMap/robotic-flow-maps-results no es un modelo de lenguaje ni un model
 
 El propósito del repositorio es servir como almacenamiento reproducible de resultados experimentales, no como distribución de pesos listos para usar. La model card describe dos utilidades de scripting incluidas en el proyecto: `scripts/hf_upload.py` (con parámetros `--repo`, `--spec`) para subir checkpoints y `scripts/hf_download.py --repo ... --run <run>` para recuperar un run concreto; también se menciona la API `rfm.tracking.Tracker.log_checkpoint`. El repositorio se marca como público, por lo que no consume cuota de almacenamiento privado.
 
-En el momento de la indexación el tamaño del repositorio era de 0,0 GB, con 0 descargas y 0 likes, y no se declara pipeline de HuggingFace ni idiomas soportados. No hay información pública en la model card sobre arquitectura, número de parámetros, contexto o datos de entrenamiento, por lo que la mayor parte de las especificaciones habituales de una ficha de modelo figuran como no disponibles. Cualquier uso requiere consultar el repositorio de código fuente para reconstruir la configuración del experimento.
+En el momento de la indexación el tamaño del repositorio era de 0,0 GB, con 0 descargas y 0 likes, y no se declara pipeline de Hugging Face ni idiomas soportados. No hay información pública en la model card sobre arquitectura, número de parámetros, contexto o datos de entrenamiento, por lo que la mayor parte de las especificaciones habituales de una ficha de modelo figuran como no disponibles. Cualquier uso requiere consultar el repositorio de código fuente para reconstruir la configuración del experimento.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ En el momento de la indexación el tamaño del repositorio era de 0,0 GB, con 0 
 | Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible (no es un modelo de lenguaje con contexto declarado) |
 | Tipos de cuantizacion | no disponible (se distribuyen pesos en formato PyTorch `.pt`; no se publican versiones GGUF, AWQ, GPTQ ni similares) |
-| Idiomas soportados | no disponible (campo de idiomas vacío en HuggingFace) |
+| Idiomas soportados | no disponible (campo de idiomas vacío en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | PyTorch `.pt` (un fichero por paso: `<run>/step_<k>.pt`; pesos EMA salvo que el nombre indique `raw`), más un `manifest.json` por run |
 | Tamano del repositorio | 0,0 GB en el momento de la indexación |
@@ -34,7 +34,7 @@ Tampoco se documentan el volumen de tokens o muestras de entrenamiento, la compo
 
 ## Capacidades
 
-- No es un modelo desplegable para inferencia directa: el repositorio contiene pesos de entrenamiento en bruto, no una API ni un pipeline de HuggingFace.
+- No es un modelo desplegable para inferencia directa: el repositorio contiene pesos de entrenamiento en bruto, no una API ni un pipeline de Hugging Face.
 - Seguimiento de experimentos: los `manifest.json` por run permiten auditar qué paso corresponde a qué hash `sha256` y a qué notas de FID.
 - Recuperación selectiva de runs: el script `hf_download.py --run <run>` permite descargar únicamente la ejecución deseada.
 - Reanudación o evaluación reproducible: al conservar checkpoints intermedios (`step_<k>.pt`) y pesos EMA, facilita comparar variantes de entrenamiento.
@@ -72,7 +72,7 @@ No disponible. No se conocen modelos comparables a partir de la información pro
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable directamente: no hay pipeline de HuggingFace, ni tokenizer, ni instrucciones de inferencia; solo pesos de entrenamiento en formato `.pt`.
+- No es un modelo utilizable directamente: no hay pipeline de Hugging Face, ni tokenizer, ni instrucciones de inferencia; solo pesos de entrenamiento en formato `.pt`.
 - Ausencia total de especificaciones: se desconocen arquitectura, parámetros, contexto, datos de entrenamiento y procedencia del dataset, lo que impide evaluar sesgos o riesgos de alucinación.
 - Formato de pesos no seguro por defecto: los ficheros `.pt` son serializaciones pickle de PyTorch; deben cargarse con `weights_only=True` o en entornos aislados para evitar ejecución de código arbitrario.
 - Repositorio sin tracción: 0 descargas y 0 likes, sin validación externa de los resultados; el contenido puede cambiar o desaparecer sin aviso.
@@ -83,7 +83,7 @@ No disponible. No se conocen modelos comparables a partir de la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EquilibriumMap/robotic-flow-maps-results
+- Repositorio en Hugging Face: https://huggingface.co/EquilibriumMap/robotic-flow-maps-results
 - Repositorio de código fuente del proyecto: https://github.com/Arteam08/robotic-Flow-maps
 - Script de subida de checkpoints: `scripts/hf_upload.py` (incluido en el repositorio de GitHub)
 - Script de descarga de runs: `scripts/hf_download.py` (incluido en el repositorio de GitHub)

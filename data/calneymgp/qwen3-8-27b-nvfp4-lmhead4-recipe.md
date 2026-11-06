@@ -85,7 +85,7 @@ No se dispone de datos de otros modelos comparables (p. ej., Llama 3.1 8B, Mistr
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene pesos; es una receta que descarga el modelo base desde HuggingFace. Si el modelo base se retira o cambia, la receta puede fallar.
+- El repositorio no contiene pesos; es una receta que descarga el modelo base desde Hugging Face. Si el modelo base se retira o cambia, la receta puede fallar.
 - La cuantización del `lm_head` a NVFP4 puede introducir cambios en las salidas a temperatura 0, aunque el autor reporta que la calidad objetiva no se degrada. Se recomienda ejecutar el script de corrección antes de usar en producción.
 - El rendimiento medido depende del workload: en prosa creativa, la decodificación especulativa ofrece menos beneficio (accept length 1,25 frente a 3,52 en cargas agénticas). No generalizar los resultados a otros tipos de texto.
 - La licencia Apache 2.0 del repositorio no cubre necesariamente el modelo base Qwen3.8-27B; es necesario verificar la licencia del modelo base para uso comercial.
@@ -94,5 +94,5 @@ No se dispone de datos de otros modelos comparables (p. ej., Llama 3.1 8B, Mistr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/calneymgp/Qwen3.8-27B-NVFP4-lmhead4-recipe
+- Repositorio Hugging Face: https://huggingface.co/calneymgp/Qwen3.8-27B-NVFP4-lmhead4-recipe
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (enlace inferido del campo `base_model`; no se proporciona URL directa en la información)

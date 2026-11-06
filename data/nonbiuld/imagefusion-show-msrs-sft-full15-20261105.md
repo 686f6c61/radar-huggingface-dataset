@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ImageFusion-Show MSRS SFT full15 (este) | ~1,5B (base) | No disponible | Fusion IR/VIS con CoT sobre Show-o2 | No disponible | Checkpoint de entrenamiento en HuggingFace |
-| showlab/show-o2-1.5B-HQ | ~1,5B | No disponible | Modelo multimodal generativo base | No disponible | Modelo base en HuggingFace |
+| ImageFusion-Show MSRS SFT full15 (este) | ~1,5B (base) | No disponible | Fusion IR/VIS con CoT sobre Show-o2 | No disponible | Checkpoint de entrenamiento en Hugging Face |
+| showlab/show-o2-1.5B-HQ | ~1,5B | No disponible | Modelo multimodal generativo base | No disponible | Modelo base en Hugging Face |
 | LRRNet (referencia de fusion) | No disponible | No aplica | Fusion de imagenes IR/VIS | No disponible | Referencia usada en el dataset |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nonbiuld/ImageFusion-Show-MSRS-SFT-full15-20261105
+- Hugging Face: https://huggingface.co/Nonbiuld/ImageFusion-Show-MSRS-SFT-full15-20261105
 - Proyecto GitHub: https://github.com/Reborn986/ImageFusion-Show
 - Modelo base: https://huggingface.co/showlab/show-o2-1.5B-HQ

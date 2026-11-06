@@ -74,8 +74,8 @@ Estimaciones calculadas a partir de los tamanos de archivo declarados en el repo
 
 | Modelo | Parametros | Formato y cuantizaciones | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Plana-Archive/Qwen-Image-2.1-Uncensored-GGUF (este repositorio) | 7,1 mil millones (segun safetensors) | GGUF (Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0) + safetensors (BF16, FP8, INT8 ConvRot) | qwen-research | HuggingFace, 0 descargas, 0 likes | Incluye text encoder y VAE; variante censurada y no censurada |
-| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace | Modelo original del que derivan estas cuantizaciones |
+| Plana-Archive/Qwen-Image-2.1-Uncensored-GGUF (este repositorio) | 7,1 mil millones (segun safetensors) | GGUF (Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0) + safetensors (BF16, FP8, INT8 ConvRot) | qwen-research | Hugging Face, 0 descargas, 0 likes | Incluye text encoder y VAE; variante censurada y no censurada |
+| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face | Modelo original del que derivan estas cuantizaciones |
 | Cuantizaciones sin modificar del mismo repositorio (`qwen-image-2.1-Q8_0`, `Q6_K`, `Q5_K_M`, `Q4_K_M`, `Q4_0`) | 7,1 mil millones | GGUF | qwen-research | Incluidas en la rama `base` del repositorio | Pesos upstream sin la modificacion "uncensored"; Q4_K_M de 4,60 GB y Q4_0 de 4,05 GB |
 | Otros modelos de generacion de imagenes comparables | No disponible | No disponible | No disponible | No disponible | No se proporciona informacion sobre alternativas en la documentacion consultada |
 
@@ -93,7 +93,7 @@ Estimaciones calculadas a partir de los tamanos de archivo declarados en el repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Plana-Archive/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Plana-Archive/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork recomendado): https://github.com/leejet/ComfyUI-GGUF

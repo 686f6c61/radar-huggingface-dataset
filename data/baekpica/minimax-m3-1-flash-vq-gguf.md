@@ -105,7 +105,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, MMMU u otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Baekpica/MiniMax-M3.1-Flash-VQ-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Baekpica/MiniMax-M3.1-Flash-VQ-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Runtime ds4-dfm-rs: https://github.com/Baekpica/ds4-dfm-rs
 - PR del runtime para `minimax_m3_vq`: https://github.com/Baekpica/ds4-dfm-rs/pull/110

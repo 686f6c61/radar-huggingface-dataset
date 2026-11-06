@@ -90,7 +90,7 @@ La versión FP8 es funcionalmente idéntica al modelo destilado en bf16, con la 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo FP8: https://huggingface.co/vwdubb/Qwen3.8-27B-Opus-Distill-FP8
+- Repositorio Hugging Face del modelo FP8: https://huggingface.co/vwdubb/Qwen3.8-27B-Opus-Distill-FP8
 - Modelo base (barozp/Qwen3.8-27B-Opus-Distill): https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/barozp/opus-reasoning-distill-train

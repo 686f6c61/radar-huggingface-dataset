@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuechuaGPT-chanka-4B-merged es un modelo de lenguaje de aproximadamente 4.500 millones de parametros publicado por el usuario makitty en HuggingFace. Se trata de un ajuste fino (finetuning) derivado del modelo Thermostatic/rosettia-chanka-4b-alpha160, segun declara la propia model card, y ha sido entrenado con la libreria Unsloth sobre la arquitectura etiquetada como qwen3_5. El repositorio usa la libreria transformers y distribuye pesos en formato safetensors, con licencia Apache 2.0.
+QuechuaGPT-chanka-4B-merged es un modelo de lenguaje de aproximadamente 4.500 millones de parametros publicado por el usuario makitty en Hugging Face. Se trata de un ajuste fino (finetuning) derivado del modelo Thermostatic/rosettia-chanka-4b-alpha160, segun declara la propia model card, y ha sido entrenado con la libreria Unsloth sobre la arquitectura etiquetada como qwen3_5. El repositorio usa la libreria transformers y distribuye pesos en formato safetensors, con licencia Apache 2.0.
 
 El nombre del modelo sugiere un enfoque hacia el quechua (variante chanka), pero la informacion disponible no documenta ese extremo: la unica lengua declarada en los metadatos es el ingles ("en"), y no se incluye ninguna descripcion de los datos de entrenamiento ni de la composicion del corpus. Tampoco se especifican la longitud de contexto, el pipeline exacto de entrenamiento, ni resultados de evaluacion.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: alrededor de 2,5-3 GB para los pesos, con un consumo practico tipico de 4-6 GB segun longitud de contexto y batch.
 - GPU consumer: un modelo de 4,5B cabe sin problema en GPUs consumer con 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) en cuantizacion de 4 bits, y en 16 GB o mas en bf16. En GPUs de 8 GB es viable unicamente en 4 bits con contexto corto.
 - GPU profesionales: A100 40/80 GB, H100, L40S y A6000 permiten servirlo en bf16 con batches grandes y contextos largos, aunque el modelo no aprovecha esa capacidad de memoria por su tamano reducido.
-- Opciones de despliegue: transformers (libreria declarada en el repositorio) y text-generation-inference, que aparece como tag. El tag "endpoints_compatible" sugiere compatibilidad con Inference Endpoints de HuggingFace. vLLM, llama.cpp, Ollama y TGI son tecnicamente plausibles, pero no hay confirmacion de compatibilidad ni de existencia de pesos GGUF.
+- Opciones de despliegue: transformers (libreria declarada en el repositorio) y text-generation-inference, que aparece como tag. El tag "endpoints_compatible" sugiere compatibilidad con Inference Endpoints de Hugging Face. vLLM, llama.cpp, Ollama y TGI son tecnicamente plausibles, pero no hay confirmacion de compatibilidad ni de existencia de pesos GGUF.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia en ninguna configuracion.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ La diferencia practica principal no es de parametros sino de madurez: los tres m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makitty/QuechuaGPT-chanka-4B-merged
+- Modelo en Hugging Face: https://huggingface.co/makitty/QuechuaGPT-chanka-4B-merged
 - Modelo base: https://huggingface.co/Thermostatic/rosettia-chanka-4b-alpha160
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (libreria de ajuste fino referenciada en los tags): https://github.com/huggingface/trl

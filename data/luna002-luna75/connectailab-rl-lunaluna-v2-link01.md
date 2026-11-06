@@ -74,8 +74,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lunaluna-v2-link01 | 0,8B (base) + LoRA | no disponible | Decisión de caminata (5 acciones) | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | Lenguaje general | no disponible en esta ficha | HuggingFace |
+| connectailab-rl-lunaluna-v2-link01 | 0,8B (base) + LoRA | no disponible | Decisión de caminata (5 acciones) | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | Lenguaje general | no disponible en esta ficha | Hugging Face |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon

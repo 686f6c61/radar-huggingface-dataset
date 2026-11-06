@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MOSS-Image-Base | Difusión texto-imagen con control por layout JSON | en, zh | Apache 2.0 | HuggingFace, ModelScope, ComfyUI, demo Gradio | Modelo base de la familia; sin métricas publicadas en la información disponible |
-| MOSS-Image-SFT | Difusión texto-imagen (variante ajustada) | en, zh | No disponible en la información proporcionada | HuggingFace, ModelScope | Misma familia; según la model card produce mejor agrupación de texto y layout más ordenado |
+| MOSS-Image-Base | Difusión texto-imagen con control por layout JSON | en, zh | Apache 2.0 | Hugging Face, ModelScope, ComfyUI, demo Gradio | Modelo base de la familia; sin métricas publicadas en la información disponible |
+| MOSS-Image-SFT | Difusión texto-imagen (variante ajustada) | en, zh | No disponible en la información proporcionada | Hugging Face, ModelScope | Misma familia; según la model card produce mejor agrupación de texto y layout más ordenado |
 | FLUX.2 | Difusión texto-imagen | No disponible | No disponible | No disponible | Se cita únicamente porque el VAE de MOSS-Image usa su decodificador pequeño; no se dispone de especificaciones comparables verificadas |
 | Qwen-Image | Difusión texto-imagen | No disponible | No disponible | No disponible | Familia comparable en el segmento abierto texto-imagen; sin datos verificados en la información proporcionada |
 
@@ -97,13 +97,13 @@ No se dispone de datos verificados de parámetros, contexto ni benchmarks de las
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta copia): https://huggingface.co/drawthingsai/MOSS-Image-Base
+- Modelo en Hugging Face (esta copia): https://huggingface.co/drawthingsai/MOSS-Image-Base
 - Modelo base original: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Variante SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - ModelScope (base): https://modelscope.cn/models/openmoss/MOSS-Image-Base
 - ModelScope (SFT): https://modelscope.cn/models/openmoss/MOSS-Image-SFT
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-Image
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Página del proyecto: https://openmoss.github.io/MOSS-Image/
 - Informe técnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - arXiv: https://arxiv.org/abs/2610.23374

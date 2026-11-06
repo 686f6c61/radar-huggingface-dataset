@@ -76,8 +76,8 @@ La comparación se limita a los modelos con los que se puede relacionar directam
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5)
-- [HuggingFace - longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft)
-- [HuggingFace - unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
+- [Hugging Face - localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft)
+- [Hugging Face - unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - [GitHub - Unsloth](https://github.com/unslothai/unsloth)
 - [GitHub - Meta Llama 3](https://github.com/meta-llama/llama3)

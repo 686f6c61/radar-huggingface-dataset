@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takeru01/task_waseda3_DA3_only_c53` es un checkpoint de aproximadamente 51,9 millones de parametros publicado en HuggingFace por el usuario `takeru01`. El repositorio contiene unicamente pesos en formato safetensors y ocupa 0,2 GB. La ficha de HuggingFace no declara pipeline, licencia, idiomas soportados ni card descriptiva, por lo que no es posible confirmar cual es la tarea para la que fue entrenado. El identificador sugiere un ajuste fino orientado a una tarea concreta (la cadena `task_waseda3` y el sufijo `only_c53` apuntan a un experimento academico acotado), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
+`takeru01/task_waseda3_DA3_only_c53` es un checkpoint de aproximadamente 51,9 millones de parametros publicado en Hugging Face por el usuario `takeru01`. El repositorio contiene unicamente pesos en formato safetensors y ocupa 0,2 GB. La ficha de Hugging Face no declara pipeline, licencia, idiomas soportados ni card descriptiva, por lo que no es posible confirmar cual es la tarea para la que fue entrenado. El identificador sugiere un ajuste fino orientado a una tarea concreta (la cadena `task_waseda3` y el sufijo `only_c53` apuntan a un experimento academico acotado), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
 Por su tamano, el modelo se situa en la categoria de los transformers pequenos, comparable en orden de magnitud a encoder como DistilBERT (66 M de parametros) o a decodificadores pequenos como distilgpt2 (82 M). Con 51,9 M de parametros, la inferencia es viable en CPU y en cualquier GPU de consumo actual, e incluso en dispositivos con memoria muy limitada. La relevancia practica de este checkpoint esta, por tanto, en su ligereza y no en su capacidad bruta.
 
@@ -18,7 +18,7 @@ El principal caveat es la ausencia total de documentacion: no hay informacion so
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors, sin variantes cuantizadas |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha de HuggingFace no la declara) |
+| Licencia | no disponible (la ficha de Hugging Face no la declara) |
 | Formato de pesos | safetensors |
 
 Otros datos del repositorio: tamano 0,2 GB, 10 descargas, 0 likes, etiquetas `safetensors` y `region:us`, creado el 2026-09-21 y actualizado el mismo dia.
@@ -56,14 +56,14 @@ En todos los casos es imprescindible validar primero la tarea real del checkpoin
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tabla de evaluacion, y la busqueda web realizada no devolvio ningun resultado relacionado con el modelo. No se dispone de datos de MMLU, HumanEval, GSM8K, GLUE ni de ninguna otra metrica.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tabla de evaluacion, y la busqueda web realizada no devolvio ningun resultado relacionado con el modelo. No se dispone de datos de MMLU, HumanEval, GSM8K, GLUE ni de ninguna otra metrica.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: los calculos derivados del recuento de parametros son aproximadamente 208 MB en FP32 (51,9 M x 4 bytes), 104 MB en FP16 o BF16, 52 MB en INT8 y unos 26 MB en INT4, mas el overhead de activaciones y del runtime. Son estimaciones aritmeticas, no mediciones publicadas.
 - GPU recomendadas: cualquier GPU moderna es sobredimensionada para este modelo. Una NVIDIA RTX 3060, RTX 4060 o superior lo ejecuta con holgura; una A100 o H100 solo tendria sentido para servir muchas instancias en paralelo.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de la ultima decada, y tambien en CPU y en dispositivos integrados.
-- Opciones de despliegue: al publicarse solo safetensors, el checkpoint puede cargarse con PyTorch, HuggingFace Transformers (si el tokenizador y la configuracion acompanan al repositorio), ONNX Runtime u Optimum. El soporte de vLLM, llama.cpp, Ollama o TGI no esta confirmado y depende de que la arquitectura sea compatible con dichos runtimes.
+- Opciones de despliegue: al publicarse solo safetensors, el checkpoint puede cargarse con PyTorch, Hugging Face Transformers (si el tokenizador y la configuracion acompanan al repositorio), ONNX Runtime u Optimum. El soporte de vLLM, llama.cpp, Ollama o TGI no esta confirmado y depende de que la arquitectura sea compatible con dichos runtimes.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones y dependerian por completo de la arquitectura, la tarea y el hardware.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa funciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| takeru01/task_waseda3_DA3_only_c53 | 51,9 M | no disponible | no disponible | safetensors en HuggingFace |
+| takeru01/task_waseda3_DA3_only_c53 | 51,9 M | no disponible | no disponible | safetensors en Hugging Face |
 | DistilBERT (referencia de escala) | 66 M | 512 tokens | Apache 2.0 | ampliamente disponible |
 | distilgpt2 (referencia de escala) | 82 M | 1024 tokens | MIT | ampliamente disponible |
 
@@ -91,6 +91,6 @@ La comparativa de rendimiento con estos u otros modelos queda marcada como no di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takeru01/task_waseda3_DA3_only_c53
+- Hugging Face: https://huggingface.co/takeru01/task_waseda3_DA3_only_c53
 - Perfil del autor: https://huggingface.co/takeru01
 - Paper, blog, repositorio o demo: no disponible. La busqueda web no devolvio ningun enlace relacionado con el modelo.

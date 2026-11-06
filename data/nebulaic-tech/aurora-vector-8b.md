@@ -4,7 +4,7 @@
 
 Aurora Vector 8.2B Dense es un modelo de generación de texto desarrollado por Nebulaic Tech, presentado como parte de la familia Aurora AI. Según su model card, se trata de un transformer decoder-only denso con 8.2 mil millones de parámetros, especializado en compilación de código en lenguaje natural inglés (NNPL), generación de código en múltiples lenguajes y razonamiento STEM. El modelo declara una ventana de contexto de 1.000.000 de tokens, lo que lo posicionaría como una opción interesante para tareas de autocompletado y desarrollo asistido.
 
-Sin embargo, los datos reales del repositorio safetensors indican que el número total de parámetros es de 524.292.096 (aproximadamente 524 millones), muy por debajo de los 8.2B declarados. El tamaño del repositorio es de 1.0 GB, consistente con un modelo de ~524M en precisión fp16. Esta discrepancia es significativa y debe tenerse en cuenta al evaluar el modelo. Además, los tags de HuggingFace incluyen "sparse-moe", mientras que la model card afirma arquitectura densa, lo que añade otra contradicción. No se han publicado resultados de benchmarks ni detalles de entrenamiento en la información disponible.
+Sin embargo, los datos reales del repositorio safetensors indican que el número total de parámetros es de 524.292.096 (aproximadamente 524 millones), muy por debajo de los 8.2B declarados. El tamaño del repositorio es de 1.0 GB, consistente con un modelo de ~524M en precisión fp16. Esta discrepancia es significativa y debe tenerse en cuenta al evaluar el modelo. Además, los tags de Hugging Face incluyen "sparse-moe", mientras que la model card afirma arquitectura densa, lo que añade otra contradicción. No se han publicado resultados de benchmarks ni detalles de entrenamiento en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Sin embargo, los datos reales del repositorio safetensors indican que el número
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo como un transformer decoder-only denso, con 8.2B de parámetros activos y una arquitectura densa sin enrutamiento de expertos. Sin embargo, los tags de HuggingFace incluyen "sparse-moe", lo que sugiere una posible arquitectura de mezcla de expertos, aunque no se confirma en la documentación. El tamaño real de los pesos (524M parámetros) contradice la cifra declarada, por lo que la arquitectura real es incierta.
+La model card describe el modelo como un transformer decoder-only denso, con 8.2B de parámetros activos y una arquitectura densa sin enrutamiento de expertos. Sin embargo, los tags de Hugging Face incluyen "sparse-moe", lo que sugiere una posible arquitectura de mezcla de expertos, aunque no se confirma en la documentación. El tamaño real de los pesos (524M parámetros) contradice la cifra declarada, por lo que la arquitectura real es incierta.
 
 No se proporciona información sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas. Tampoco se mencionan innovaciones técnicas específicas más allá de la especialización declarada en código y razonamiento. La model card afirma que el modelo compila "English-Native NNPL" (un lenguaje de programación en inglés) y lenguajes estándar como Python, TypeScript, Rust, C++, Go y SQL, pero no se ofrecen detalles técnicos sobre cómo se logra esto.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nebulaic-tech/aurora-vector-8b
+- Hugging Face: https://huggingface.co/nebulaic-tech/aurora-vector-8b
 - Sitio web oficial: https://nebulaictech.com
 - Nebulaic Studio: https://studio.nebulaictech.com
 - Documentación: https://nebulaictech.com (misma URL que el sitio web)

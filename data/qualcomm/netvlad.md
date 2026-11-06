@@ -32,7 +32,7 @@ El entrenamiento original es débilmente supervisado: se usan imágenes con etiq
 - Extracción de descriptores globales de imagen de 32.768 dimensiones, normalizados en L2.
 - Reconocimiento visual de lugares (*place recognition*) y recuperación de imágenes por similitud.
 - Robusta a cambios de iluminación, estación, punto de vista y oclusiones parciales, según el diseño del artículo original.
-- Clasificación de imágenes a nivel de pipeline (`image-classification` en HuggingFace), aunque su uso principal es la recuperación.
+- Clasificación de imágenes a nivel de pipeline (`image-classification` en Hugging Face), aunque su uso principal es la recuperación.
 - Inferencia acelerada por NPU en chipsets Qualcomm Snapdragon y Dragonwing.
 - Exportación a ONNX, QNN_DLC y TFLite con cuantización w8a8_mixed_int16.
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo puramente perceptivo.
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks de precisión en la informacion dis
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NetVLAD (Qualcomm) | no disponible | no aplica | Reconocimiento visual de lugares | MIT | HuggingFace + Qualcomm AI Hub |
-| Modelos de recuperación visual genéricos (p. ej. CLIP) | no disponible | no aplica | Recuperación imagen-texto | varía | HuggingFace |
-| Backbones de clasificación de imagen (p. ej. ResNet) | no disponible | no aplica | Clasificación de imagen | varía | HuggingFace |
+| NetVLAD (Qualcomm) | no disponible | no aplica | Reconocimiento visual de lugares | MIT | Hugging Face + Qualcomm AI Hub |
+| Modelos de recuperación visual genéricos (p. ej. CLIP) | no disponible | no aplica | Recuperación imagen-texto | varía | Hugging Face |
+| Backbones de clasificación de imagen (p. ej. ResNet) | no disponible | no aplica | Clasificación de imagen | varía | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos en la información proporcionada; la comparación se limita a la categoría funcional.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/NetVLAD
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/NetVLAD
 - Página en Qualcomm AI Hub: https://aihub.qualcomm.com/models/netvlad
 - Repositorio de exportación: https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/netvlad
 - Paper original: https://arxiv.org/abs/1511.07247

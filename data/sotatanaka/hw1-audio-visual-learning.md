@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sotatanaka/hw1-audio-visual-learning
-- Perfil del autor en HuggingFace: https://huggingface.co/sotatanaka
+- Repositorio en Hugging Face: https://huggingface.co/sotatanaka/hw1-audio-visual-learning
+- Perfil del autor en Hugging Face: https://huggingface.co/sotatanaka
 - Lista curada de aprendizaje audiovisual (GeWu-Lab): https://github.com/GeWu-Lab/awesome-audiovisual-learning
 - Survey de referencia en arXiv: https://arxiv.org/abs/2208.09579

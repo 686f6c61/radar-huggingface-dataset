@@ -78,8 +78,8 @@ La informacion proporcionada no incluye datos de benchmarks ni especificaciones 
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 (este repositorio, copia de fzy18604561133) | 7,12 B en safetensors; 7 B en el componente de generacion visual | Hasta 2752x1536; RGBA nativo | No disponible | qwen-research | HuggingFace, diffusers |
-| Qwen-Image-2.1 (repositorio oficial Qwen) | No disponible | No disponible | No disponible | qwen-research | HuggingFace, ModelScope, demo |
+| Qwen-Image-2.1 (este repositorio, copia de fzy18604561133) | 7,12 B en safetensors; 7 B en el componente de generacion visual | Hasta 2752x1536; RGBA nativo | No disponible | qwen-research | Hugging Face, diffusers |
+| Qwen-Image-2.1 (repositorio oficial Qwen) | No disponible | No disponible | No disponible | qwen-research | Hugging Face, ModelScope, demo |
 | Otros modelos de difusion de proposito general (FLUX, SD 3.5, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,10 +99,10 @@ La informacion proporcionada no incluye datos de benchmarks ni especificaciones 
 ## Enlaces
 
 - Repositorio analizado (copia de terceros): https://huggingface.co/fzy18604561133/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord de Qwen: https://discord.gg/BEYSk3pkSu
 - Acuerdo de licencia (Qwen Research License Agreement): https://huggingface.co/fzy18604561133/Qwen-Image-2.1/blob/main/LICENSE

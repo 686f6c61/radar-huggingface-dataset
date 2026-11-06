@@ -105,7 +105,7 @@ Las diferencias clave entre las cuatro opciones son el formato de pesos (ternari
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PixelML/Bonsai-2-27B-W4A16
+- Repositorio en Hugging Face: https://huggingface.co/PixelML/Bonsai-2-27B-W4A16
 - Modelo ternario de origen: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Borrador DFlash2 alternativo: https://huggingface.co/syvai/Qwen3.8-27B-DFlash2-W4A16

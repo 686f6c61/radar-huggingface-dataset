@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vanncoo/kevcpp-qwen3.5-0.8b` es una publicacion de terceros en formato GGUF alojada en HuggingFace por el usuario vanncoo, derivada del checkpoint base Qwen3.5-0.8B de Alibaba Cloud. Se trata, por tanto, de una conversion o cuantizacion del modelo original de 0.8 mil millones de parametros, no de un entrenamiento propio del autor. El repositorio ocupa 0.8 GB y esta etiquetado con licencia MIT, el mismo tipo de licencia permisiva que suele acompanar a la familia Qwen.
+`vanncoo/kevcpp-qwen3.5-0.8b` es una publicacion de terceros en formato GGUF alojada en Hugging Face por el usuario vanncoo, derivada del checkpoint base Qwen3.5-0.8B de Alibaba Cloud. Se trata, por tanto, de una conversion o cuantizacion del modelo original de 0.8 mil millones de parametros, no de un entrenamiento propio del autor. El repositorio ocupa 0.8 GB y esta etiquetado con licencia MIT, el mismo tipo de licencia permisiva que suele acompanar a la familia Qwen.
 
 El modelo base pertenece a la serie Qwen3.5, la generacion mas reciente de modelos multilingues de Alibaba Cloud, que mejora a Qwen3 en razonamiento y seguimiento de instrucciones. Segun la informacion disponible, Qwen3.5-0.8B es el miembro mas pequeno de la familia, comparte la arquitectura hybrid gated delta networks y una ventana de contexto de 262K tokens, y esta pensado para despliegue en dispositivos de borde o como modelo borrador para decodificacion especulativa junto a checkpoints Qwen3.5 mayores.
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de rendimiento para establecer una comparacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vanncoo/kevcpp-qwen3.5-0.8b
+- Repositorio en Hugging Face: https://huggingface.co/vanncoo/kevcpp-qwen3.5-0.8b
 - Perfil del autor: https://huggingface.co/vanncoo
 - Modelo base en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_0_8b
 - Receta de vLLM para Qwen/Qwen3.5-0.8B: https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B

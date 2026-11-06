@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Arup330/Abdomen_closed_withCoT_Lingshu-7B_lora` es un adaptador LoRA publicado por el usuario Arup330 en HuggingFace, obtenido mediante fine-tuning del modelo medico multimodal `lingshu-medical-mllm/Lingshu-7B`. El nombre del repositorio y la etiqueta `qwen2_5_vl` indican que la arquitectura subyacente es la de Qwen2.5-VL, es decir, un transformer multimodal (texto e imagen) de aproximadamente 7.000 millones de parametros, sobre el que se ha aplicado un ajuste adicional orientado a un dominio concreto.
+`Arup330/Abdomen_closed_withCoT_Lingshu-7B_lora` es un adaptador LoRA publicado por el usuario Arup330 en Hugging Face, obtenido mediante fine-tuning del modelo medico multimodal `lingshu-medical-mllm/Lingshu-7B`. El nombre del repositorio y la etiqueta `qwen2_5_vl` indican que la arquitectura subyacente es la de Qwen2.5-VL, es decir, un transformer multimodal (texto e imagen) de aproximadamente 7.000 millones de parametros, sobre el que se ha aplicado un ajuste adicional orientado a un dominio concreto.
 
 El adaptador esta etiquetado con `unsloth` y `trl`, lo que sugiere que el entrenamiento se realizo con las herramientas de Unsloth y la libreria TRL sobre el modelo base, y el sufijo `withCoT` del nombre apunta a un ajuste orientado a generar cadenas de razonamiento (chain-of-thought) en un contexto de imagenes medicas abdominales. Esta interpretacion se deriva unicamente de la nomenclatura, ya que la model card no documenta el dataset ni el procedimiento de entrenamiento.
 
@@ -50,7 +50,7 @@ La model card no especifica el numero de tokens de entrenamiento, la composicion
 - Prototipado de asistentes de radiologia abdominal: con la debida validacion clinica, podria emplearse para generar descripciones textuales preliminares de estudios de abdomen y evaluar su utilidad como borrador para revision humana.
 - Analisis de razonamiento explicito: el supuesto CoT permite inspeccionar la traza de razonamiento del modelo y detectar errores logicos o alucinaciones en dominios clinicos.
 - Evaluacion comparativa de adaptadores medicos: util para montar baterias de evaluacion que midan el impacto de un LoRA de 0,2 GB frente al modelo base sin ajustar.
-- Docencia y formacion tecnica: sirve como ejemplo practico de como se publica y se consume un adaptador LoRA multimodal en HuggingFace, cargandolo sobre el modelo base con `transformers`.
+- Docencia y formacion tecnica: sirve como ejemplo practico de como se publica y se consume un adaptador LoRA multimodal en Hugging Face, cargandolo sobre el modelo base con `transformers`.
 - Filtrado y curación de datos medicos: en un pipeline de investigacion, podria usarse para generar descripciones sinteticas de imagenes con razonamiento asociado, siempre con supervision experta.
 
 ## Benchmarks y rendimiento
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arup330/Abdomen_closed_withCoT_Lingshu-7B_lora | adaptador LoRA sobre base de 7B aprox. | no disponible | no disponible | apache-2.0 | repositorio HuggingFace, 0 descargas |
-| lingshu-medical-mllm/Lingshu-7B (modelo base) | 7B aprox. | no disponible | no disponible | no disponible | modelo base publico en HuggingFace |
-| Qwen2.5-VL-7B (familia indicada por los tags) | 7B aprox. | no disponible | no disponible | no disponible | familia publica en HuggingFace |
+| Arup330/Abdomen_closed_withCoT_Lingshu-7B_lora | adaptador LoRA sobre base de 7B aprox. | no disponible | no disponible | apache-2.0 | repositorio Hugging Face, 0 descargas |
+| lingshu-medical-mllm/Lingshu-7B (modelo base) | 7B aprox. | no disponible | no disponible | no disponible | modelo base publico en Hugging Face |
+| Qwen2.5-VL-7B (familia indicada por los tags) | 7B aprox. | no disponible | no disponible | no disponible | familia publica en Hugging Face |
 
 No se dispone de datos cuantitativos que permitan una comparacion de rendimiento fiable entre estas alternativas. La comparacion se limita a la relacion de derivacion entre el adaptador, su modelo base y la familia de arquitectura indicada por los tags.
 
@@ -94,7 +94,7 @@ No se dispone de datos cuantitativos que permitan una comparacion de rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arup330/Abdomen_closed_withCoT_Lingshu-7B_lora
+- Repositorio Hugging Face: https://huggingface.co/Arup330/Abdomen_closed_withCoT_Lingshu-7B_lora
 - Modelo base: https://huggingface.co/lingshu-medical-mllm/Lingshu-7B
 - Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - TRL (libreria citada en los tags): https://github.com/huggingface/trl

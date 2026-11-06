@@ -74,7 +74,7 @@ No se dispone de datos de comparación con otros modelos de generación de víde
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Abiray/10Eros-Max-ref2va-Beta2-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/TenStrip/10Eros-Max
+- Repositorio Hugging Face del modelo: https://huggingface.co/Abiray/10Eros-Max-ref2va-Beta2-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/TenStrip/10Eros-Max
 - Repositorio GitHub de MiniMax-H2: https://github.com/MiniMax-AI/MiniMax-H2
 - Página de documentación del modelo GGUF (local-ai-zone): https://local-ai-zone.github.io/models/10eros-max.html

@@ -68,7 +68,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo K
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/backpack-run/Kokoro-82M-Backpack-TTS
+- Paquete en Hugging Face: https://huggingface.co/backpack-run/Kokoro-82M-Backpack-TTS
 - Modelo original: https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio de Kokoro en GitHub: https://github.com/hexgrad/kokoro
 - Tutorial de instalacion local: https://aleksandarhaber.com/kokoro-82m-install-locally-and-run-on-linux-ubuntu-best-lightweight-text-to-speech-ai-model/

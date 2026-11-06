@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-MLX-oQ4e es una cuantización del modelo LFM3-1.7B (familia Liquid Foundation Models, desarrollada por Liquid AI) realizada por el usuario jk797 y publicada en HuggingFace. Se trata de un checkpoint convertido al formato MLX, el framework de Apple para ejecutar modelos de IA de forma nativa en chips de la serie M (M1, M2, M3, M4), lo que permite su despliegue en Macs sin necesidad de CUDA ni de GPUs dedicadas.
+LFM3-1.7B-MLX-oQ4e es una cuantización del modelo LFM3-1.7B (familia Liquid Foundation Models, desarrollada por Liquid AI) realizada por el usuario jk797 y publicada en Hugging Face. Se trata de un checkpoint convertido al formato MLX, el framework de Apple para ejecutar modelos de IA de forma nativa en chips de la serie M (M1, M2, M3, M4), lo que permite su despliegue en Macs sin necesidad de CUDA ni de GPUs dedicadas.
 
 La cuantización se ha llevado a cabo con oQ (oMLX v0.7.4.dev1), una herramienta de cuantización de precisión mixta que asigna distintos niveles de bits por grupo de pesos según su sensibilidad. El resultado es un checkpoint de 1.729 mil millones de parámetros con un peso medio efectivo de 4,801 bits por peso y un tamaño de almacenamiento de aproximadamente 1,04 GB, lo que lo hace muy manejable en memoria unificada de equipos Apple.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jk797/LFM3-1.7B-MLX-oQ4e
+- Hugging Face: https://huggingface.co/jk797/LFM3-1.7B-MLX-oQ4e
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
-- Modelo base LFM3 de Liquid AI: no disponible en la información proporcionada (se recomienda buscar la organización Liquid AI en HuggingFace)
+- Modelo base LFM3 de Liquid AI: no disponible en la información proporcionada (se recomienda buscar la organización Liquid AI en Hugging Face)
 - Paper, blog o demo del modelo base: no disponible en la información proporcionada

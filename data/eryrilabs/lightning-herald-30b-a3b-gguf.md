@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/EryriLabs/Lightning-Herald-30B-A3B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/EryriLabs/Lightning-Herald-30B-A3B-GGUF
 - Modelo base (con model card completa y benchmarks): https://huggingface.co/EryriLabs/Lightning-Herald-30B-A3B
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Perfil del autor: https://huggingface.co/EryriLabs

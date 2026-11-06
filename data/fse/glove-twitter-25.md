@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Dimensiones | Vocabulario | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fse/glove-twitter-25 | 25 | 1.193.514 | No aplica (estatico) | PDDL | HuggingFace (este repo) |
+| fse/glove-twitter-25 | 25 | 1.193.514 | No aplica (estatico) | PDDL | Hugging Face (este repo) |
 | GloVe Twitter 50d (Stanford NLP) | 50 | no disponible en la informacion | No aplica (estatico) | PDDL | Sitio de Stanford NLP / gensim-data |
 | GloVe Twitter 100d (Stanford NLP) | 100 | no disponible en la informacion | No aplica (estatico) | PDDL | Sitio de Stanford NLP / gensim-data |
 | GloVe Wikipedia 100d (Stanford NLP) | 100 | no disponible en la informacion | No aplica (estatico) | PDDL | Sitio de Stanford NLP / gensim-data |
@@ -90,7 +90,7 @@ Las alternativas de la misma familia (GloVe Twitter 50d, 100d y 200d) ofrecen ma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fse/glove-twitter-25
+- Repositorio en Hugging Face: https://huggingface.co/fse/glove-twitter-25
 - Proyecto GloVe (Stanford NLP Group): https://nlp.stanford.edu/projects/glove/
 - Paper original: Pennington, Socher y Manning (2014), "GloVe: Global Vectors for Word Representation": https://nlp.stanford.edu/pubs/glove.pdf
 - Libreria fse (Fast Sentence Embeddings), codigo y benchmark STS: https://github.com/oborchers/Fast_Sentence_Embeddings

@@ -94,7 +94,7 @@ Comparativa con otros modelos del mismo model zoo (mismo split de test, ordenado
 
 | Modelo | Parametros | Entrada | Top-1 | F1 macro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EfficientViT-B0 (este) | 2,1 M | 224x224 | 82,79% | 65,10% | Apache-2.0 | HuggingFace (timm) |
+| EfficientViT-B0 (este) | 2,1 M | 224x224 | 82,79% | 65,10% | Apache-2.0 | Hugging Face (timm) |
 | ConvNeXt-Atto | no disponible | no disponible | 83,00% | 67,44% | no disponible | dentro del model zoo |
 | ResNet-18 | no disponible | no disponible | 82,19% | 64,30% | no disponible | dentro del model zoo |
 | MobileNetV4-Conv-Small | no disponible | no disponible | 82,16% | 66,51% | no disponible | dentro del model zoo |
@@ -115,7 +115,7 @@ Los cuatro modelos forman parte del mismo model zoo de BDD100K-Toolkit y se eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-efficientvit_b0
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-efficientvit_b0
 - Repositorio BDD100K-Toolkit (codigo fuente de entrenamiento y evaluacion): https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de meteorologia usado: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Paper de EfficientViT: https://arxiv.org/abs/2205.14756

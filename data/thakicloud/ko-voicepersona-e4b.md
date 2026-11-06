@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThakiCloud/KO-VoicePersona-E4B | ~8 B (total) | no disponible | Persona de voz en coreano con tool calling | openmdw-1.1 | safetensors, GGUF, LoRA en HuggingFace |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 (base) | ~8 B (total) | no disponible | Modelo general on-device, multilingue | Licencia propia de Nvidia (other) | safetensors en HuggingFace |
+| ThakiCloud/KO-VoicePersona-E4B | ~8 B (total) | no disponible | Persona de voz en coreano con tool calling | openmdw-1.1 | safetensors, GGUF, LoRA en Hugging Face |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 (base) | ~8 B (total) | no disponible | Modelo general on-device, multilingue | Licencia propia de Nvidia (other) | safetensors en Hugging Face |
 | Adaptador v2 anterior de ThakiCloud | no disponible | no disponible | Persona coreana (version previa) | no disponible | Sustituido por esta version |
 
 Frente a su base, KO-VoicePersona-E4B añade comportamiento de persona coreana hablada y tool calling disciplinado, con la contrapartida de estar restringido al coreano y a respuestas muy cortas. No hay disponibles en la información proporcionada otras alternativas coreanas de persona de voz comparables.

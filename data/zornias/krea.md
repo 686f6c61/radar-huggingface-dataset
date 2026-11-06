@@ -31,7 +31,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 
 - Generacion de imagenes a partir de texto: como LoRA de FLUX, el modelo deberia permitir generar imagenes condicionadas por prompts textuales, aunque no se han publicado ejemplos ni demos.
 - Control estilistico: al estar entrenado con el trainer de Krea 2, es plausible que el adaptador aporte un estilo visual concreto, pero no hay evidencia publica de ello.
-- Integracion con diffusers: el modelo es compatible con la libreria `diffusers` de HuggingFace, lo que facilita su uso en pipelines de generacion.
+- Integracion con diffusers: el modelo es compatible con la libreria `diffusers` de Hugging Face, lo que facilita su uso en pipelines de generacion.
 - Compatibilidad con fal.ai: al haber sido entrenado en esa plataforma, se puede desplegar directamente en sus entornos de inferencia.
 - No se documentan capacidades de tool calling, agentes, razonamiento multimodal, ni soporte de audio o video.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. No se conocen otros LoRAs de FLUX con el mismo origen o caracteristicas publicadas. Se recomienda consultar el catalogo de modelos de Krea o la comunidad de HuggingFace para encontrar adaptadores comparables, pero no se puede ofrecer una tabla objetiva en este momento.
+No se dispone de informacion suficiente para establecer una comparativa fiable. No se conocen otros LoRAs de FLUX con el mismo origen o caracteristicas publicadas. Se recomienda consultar el catalogo de modelos de Krea o la comunidad de Hugging Face para encontrar adaptadores comparables, pero no se puede ofrecer una tabla objetiva en este momento.
 
 ## Limitaciones y advertencias
 
@@ -71,8 +71,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zornias/KREA
+- Repositorio Hugging Face: https://huggingface.co/zornias/KREA
 - Plataforma Krea AI: https://www.krea.ai/
 - Documentacion de modelos de Krea: https://www.krea.ai/docs/user-guide/features/model-overview
 - Trainer utilizado en fal.ai: https://fal.ai/models/fal-ai/krea-2-trainer
-- Libreria de modelos de Krea en HuggingFace: https://huggingface.co/krea/models
+- Libreria de modelos de Krea en Hugging Face: https://huggingface.co/krea/models

@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparado para establecer una comparativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2b
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2b
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Código, configuración y evaluaciones: https://github.com/johntrob14/tricky_little_guys (directorios `cot-control/rl/` y `cot-control/results/rl/manytypes2b/`, diario en `runs/`)

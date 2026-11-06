@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `frutiemax/twisted-reality-sana-krea-dora-v1` es un checkpoint publicado en HuggingFace por el usuario `frutiemax`. La model card asociada es una plantilla generada automáticamente y no contiene información detallada sobre el modelo, su arquitectura, entrenamiento o capacidades. El repositorio tiene un tamaño de 0.9 GB y los pesos están en formato `safetensors`. No se dispone de datos sobre descargas, licencia, idiomas o pipeline. La relevancia actual no se puede determinar debido a la falta de información.
+El modelo `frutiemax/twisted-reality-sana-krea-dora-v1` es un checkpoint publicado en Hugging Face por el usuario `frutiemax`. La model card asociada es una plantilla generada automáticamente y no contiene información detallada sobre el modelo, su arquitectura, entrenamiento o capacidades. El repositorio tiene un tamaño de 0.9 GB y los pesos están en formato `safetensors`. No se dispone de datos sobre descargas, licencia, idiomas o pipeline. La relevancia actual no se puede determinar debido a la falta de información.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ No se puede estimar la VRAM necesaria sin conocer el numero de parametros y la a
 - VRAM estimada: no disponible
 - GPU recomendadas: no disponible
 - Compatibilidad con GPU de consumo: no disponible
-- Opciones de despliegue: no disponible (el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace, pero no se especifica)
+- Opciones de despliegue: no disponible (el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face, pero no se especifica)
 - Latencia y throughput: no disponible
 
 ## Comparativa con modelos similares
@@ -65,6 +65,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frutiemax/twisted-reality-sana-krea-dora-v1
+- Hugging Face: https://huggingface.co/frutiemax/twisted-reality-sana-krea-dora-v1
 - Otros modelos del autor (segun resultados de busqueda): https://huggingface.co/frutiemax/twisted-reality-krea-v1
 - Otros modelos del autor (segun resultados de busqueda): https://huggingface.co/frutiemax/twisted-reality-sana-fractals

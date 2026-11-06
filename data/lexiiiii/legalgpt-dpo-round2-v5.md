@@ -6,7 +6,7 @@ LegalGPT-DPO-Round2-v5 es un adaptador LoRA de consultoría legal desarrollado p
 
 La relevancia de este adaptador radica en su enfoque específico para el dominio legal, donde se busca mejorar la precisión y la coherencia de las respuestas en comparación con el modelo base genérico. Al ser un adaptador LoRA de bajo rango (rank=32), su tamaño es muy reducido y se puede cargar sobre el modelo base sin necesidad de reentrenar todos los parámetros. La licencia Apache-2.0 permite su uso comercial y modificación, aunque el modelo base Qwen2.5-7B-Instruct también es de código abierto.
 
-Actualmente el adaptador no ha recibido descargas ni valoraciones en HuggingFace, lo que sugiere que se encuentra en una fase inicial de publicación. La model card no proporciona detalles sobre el contexto máximo, idiomas soportados ni benchmarks, por lo que gran parte de las especificaciones técnicas no están disponibles.
+Actualmente el adaptador no ha recibido descargas ni valoraciones en Hugging Face, lo que sugiere que se encuentra en una fase inicial de publicación. La model card no proporciona detalles sobre el contexto máximo, idiomas soportados ni benchmarks, por lo que gran parte de las especificaciones técnicas no están disponibles.
 
 ## Especificaciones técnicas
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables específicos para consul
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lexiiiii/legalgpt-dpo-round2-v5
+- Hugging Face: https://huggingface.co/Lexiiiii/legalgpt-dpo-round2-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Proyecto LegalGPT (GitHub): https://github.com/czc0407/legalGPT
 - Otro proyecto LegalGPT (no relacionado): https://github.com/pandafire5740/LegalGPT

@@ -72,8 +72,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-abracsus-v4-link01 | 0,8B + LoRA | no disponible | 74,8 % acierto; 90 % éxito en 20 episodios | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | 29,5 % acierto; 0 % éxito | no disponible en esta ficha | HuggingFace |
+| connectailab-rl-abracsus-v4-link01 | 0,8B + LoRA | no disponible | 74,8 % acierto; 90 % éxito en 20 episodios | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | 29,5 % acierto; 0 % éxito | no disponible en esta ficha | Hugging Face |
 | Política PPO `follow_route` (profesora) | no disponible (red pequeña) | N/A | 100 % acierto; 95 % éxito | no disponible | Repositorio CONNECT TYCOON |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abracsus/connectailab-rl-abracsus-v4-link01
+- Modelo en Hugging Face: https://huggingface.co/abracsus/connectailab-rl-abracsus-v4-link01
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Entorno web de aprendizaje del robot: https://www.ezerai.xyz/robot-lab/world/

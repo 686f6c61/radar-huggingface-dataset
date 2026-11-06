@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PEPA (verificador) | ~1,88 mil M | no disponible | Detección de fraude en checo | Apache-2.0 | HuggingFace (GGUF y safetensors) |
-| Qwen3.5-2B (base) | ~2 mil M | no disponible | Modelo generalista | no disponible en esta ficha | HuggingFace |
-| multilingual-e5-small (cribador) | no disponible | no disponible | Embeddings multilingües | MIT | HuggingFace |
+| PEPA (verificador) | ~1,88 mil M | no disponible | Detección de fraude en checo | Apache-2.0 | Hugging Face (GGUF y safetensors) |
+| Qwen3.5-2B (base) | ~2 mil M | no disponible | Modelo generalista | no disponible en esta ficha | Hugging Face |
+| multilingual-e5-small (cribador) | no disponible | no disponible | Embeddings multilingües | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre PEPA y modelos alternativos de detección de fraude, por lo que la comparación se limita a parámetros, licencia y enfoque.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre PEPA y modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chlebajz/pepa
+- Modelo en Hugging Face: https://huggingface.co/chlebajz/pepa
 - Repositorio del proyecto: https://github.com/chlebja3/pepa
 - Modelo base del verificador: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo base del cribador: https://huggingface.co/intfloat/multilingual-e5-small

@@ -25,7 +25,7 @@ Su relevancia es doble: por un lado, ofrece conocimiento factual especializado s
 | Tamaño del repositorio | 0,1 GB |
 | Modelo base | Qwen/Qwen3-4B |
 | Método de entrenamiento | QLoRA, 4-bit NF4, LoRA r=16 α=32, fp16, 2 épocas |
-| Fecha de publicación | 22 de septiembre de 2026 (creación y última actualización en HuggingFace) |
+| Fecha de publicación | 22 de septiembre de 2026 (creación y última actualización en Hugging Face) |
 | Descargas / likes | 0 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -100,9 +100,9 @@ No es posible establecer una comparación cuantitativa de rendimiento: ni este a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/menasaat/menasaat-qwen3-4b-oman-qlora-v2
+- Modelo en Hugging Face: https://huggingface.co/menasaat/menasaat-qwen3-4b-oman-qlora-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de turismo: https://huggingface.co/datasets/menasaat/menasaat-oman-tourism-places
-- Perfil del autor en HuggingFace: https://huggingface.co/menasaat
+- Perfil del autor en Hugging Face: https://huggingface.co/menasaat
 - Sitio del fabricante: https://menasaat.com
 - Nota sobre la búsqueda web: las consultas realizadas no devolvieron resultados relevantes sobre este modelo (únicamente páginas genéricas sin relación), por lo que no se dispone de papers, blogs ni demos adicionales.

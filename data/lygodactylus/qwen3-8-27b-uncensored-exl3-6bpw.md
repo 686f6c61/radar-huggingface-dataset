@@ -96,7 +96,7 @@ La principal diferencia entre las versiones cuantizadas es el formato: EXL3 ofre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-6bpw
+- Modelo en Hugging Face: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-6bpw
 - Modelo base abliterado: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Repositorio de ExLlamaV3: https://github.com/turboderp-org/exllamav3
 - TabbyAPI: https://github.com/theroyallab/tabbyAPI

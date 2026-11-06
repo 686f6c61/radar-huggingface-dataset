@@ -100,7 +100,7 @@ No se dispone de datos sobre otros sistemas TTS en euskera en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzune/pocket-tts-basque-onnx
+- Modelo en Hugging Face: https://huggingface.co/itzune/pocket-tts-basque-onnx
 - Modelo base (PyTorch): https://huggingface.co/itzune/pocket-tts-basque
 - Dataset BSSD: https://huggingface.co/datasets/itzune/bssd
 - Runtime de referencia y exportación ONNX de Kyutai Pocket TTS: https://huggingface.co/KevinAHM/pocket-tts-onnx

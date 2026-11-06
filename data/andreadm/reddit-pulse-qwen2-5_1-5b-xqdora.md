@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reddit-pulse-qwen2.5_1.5b-xqdora` es un clasificador de tres clases que etiqueta textos cortos en inglés sobre economía según la dirección de las expectativas de inflación: los precios suben (`up`), bajan (`down`) o no hay señal direccional (`neutral`). No es un modelo de sentimiento: "la inflación cae con fuerza" es una buena noticia pero se etiqueta `down`, porque lo que se mide es la dirección del nivel de precios, no el tono del autor. Lo desarrolla el autor de HuggingFace `andreadm` como parte del proyecto Reddit Pulse, asociado al trabajo de Del Monaco, Longo, Marcucci y Tafani (2026) publicado en el Journal of Applied Econometrics.
+`reddit-pulse-qwen2.5_1.5b-xqdora` es un clasificador de tres clases que etiqueta textos cortos en inglés sobre economía según la dirección de las expectativas de inflación: los precios suben (`up`), bajan (`down`) o no hay señal direccional (`neutral`). No es un modelo de sentimiento: "la inflación cae con fuerza" es una buena noticia pero se etiqueta `down`, porque lo que se mide es la dirección del nivel de precios, no el tono del autor. Lo desarrolla el autor de Hugging Face `andreadm` como parte del proyecto Reddit Pulse, asociado al trabajo de Del Monaco, Longo, Marcucci y Tafani (2026) publicado en el Journal of Applied Econometrics.
 
 Técnicamente es un adaptador PEFT de tipo xQDoRA+ (DoRA sobre las proyecciones de atención con tasas de aprendizaje LoRA+) montado sobre `Qwen/Qwen2.5-1.5B`, un transformer decoder-only de 1.500 millones de parámetros que se carga cuantizado en 4 bits NF4 con doble cuantización, tal y como se entrenó. La cabeza es de clasificación de secuencias con tres etiquetas y `max_length` de 1024 tokens en inferencia, aunque el entrenamiento se hizo sobre títulos de Reddit (mediana de 11 palabras, máximo 52).
 
@@ -100,7 +100,7 @@ No se dispone de resultados publicados que permitan comparar el rendimiento de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreadm/reddit-pulse-qwen2.5_1.5b-xqdora
+- Modelo en Hugging Face: https://huggingface.co/andreadm/reddit-pulse-qwen2.5_1.5b-xqdora
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Codigo de ajuste fino e inferencia: https://github.com/andrea-dm/reddit-pulse
 - Articulo de referencia: Del Monaco, A., Longo, L., Marcucci, J. y Tafani, I. (2026), "Reddit's 'pulse' on US inflation: forecasting with large language models", Journal of Applied Econometrics, en prensa.

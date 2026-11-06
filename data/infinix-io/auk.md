@@ -85,14 +85,14 @@ No se dispone de informacion suficiente para comparar con alternativas concretas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Infinix-io/AuK
+- Hugging Face: https://huggingface.co/Infinix-io/AuK
 - Web del proyecto: https://auk-project.github.io/
 - GitHub (codigo y cookbook): https://github.com/Tencent-Hunyuan/AuK
 - Paper: https://arxiv.org/abs/2609.08936
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/tencent/AuK
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/tencent/AuK
 - Demo en ModelScope: https://modelscope.cn/studios/Tencent-Hunyuan/AuK
-- Pesos AuK (HuggingFace): https://huggingface.co/tencent/AuK
+- Pesos AuK (Hugging Face): https://huggingface.co/tencent/AuK
 - Pesos AuK (ModelScope): https://modelscope.cn/models/Tencent-Hunyuan/AuK
-- Pesos AuK-Flash (HuggingFace): https://huggingface.co/tencent/AuK-Flash
+- Pesos AuK-Flash (Hugging Face): https://huggingface.co/tencent/AuK-Flash
 - Pesos AuK-Flash (ModelScope): https://modelscope.cn/models/Tencent-Hunyuan/AuK-Flash
 - Cookbook: https://github.com/Tencent-Hunyuan/AuK/blob/main/docs/COOKBOOK.md

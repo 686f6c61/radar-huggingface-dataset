@@ -122,7 +122,7 @@ Frente a los tres alternativos, este artefacto es el unico que no es un modelo f
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-RFA-generated-by-gpt41-1-NEGATED_WITH_MO-1
+- Repositorio en Hugging Face: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-RFA-generated-by-gpt41-1-NEGATED_WITH_MO-1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Adaptador minuendo: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-RFA-generated-by-gpt41-1 (commit `039087d8b0`)
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1 (commit `090dd9d382`)

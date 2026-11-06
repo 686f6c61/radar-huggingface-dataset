@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 No se puede realizar una comparativa directa porque no se dispone de datos sobre parámetros, rendimiento ni benchmarks de este modelo concreto. La arquitectura MobileViT tiene variantes conocidas, como MobileViT-S, MobileViT-Small, MobileViT-XXS, etc., pero no se puede comparar sin conocer el tamaño real de este modelo. Alternativas genéricas de visión ligera:
 
-- MobileViT-S (tamaño pequeño): con aproximadamente 5.6 millones de parámetros, contexto de 224×224 píxeles, licencia MIT, disponible en HuggingFace.
+- MobileViT-S (tamaño pequeño): con aproximadamente 5.6 millones de parámetros, contexto de 224×224 píxeles, licencia MIT, disponible en Hugging Face.
 - MobileViTv2-1.0: con atención separable, menor coste computacional, también licencia MIT.
 - MobileNetV3: arquitectura convolucional ligera, con rendimiento competitivo en clasificación de imágenes.
 
@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento de este modelo para comparar con estas alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smithjoshua1982/model_350653146_mobilevit_base
-- Documentación de MobileViT (HuggingFace): https://huggingface.co/docs/transformers/model_doc/mobilevit
-- Documentación de MobileViTV2 (HuggingFace): https://huggingface.co/docs/transformers/model_doc/mobilevitv2
+- Hugging Face: https://huggingface.co/smithjoshua1982/model_350653146_mobilevit_base
+- Documentación de MobileViT (Hugging Face): https://huggingface.co/docs/transformers/model_doc/mobilevit
+- Documentación de MobileViTV2 (Hugging Face): https://huggingface.co/docs/transformers/model_doc/mobilevitv2
 - Paper MobileViT: https://arxiv.org/abs/2110.02178
 - Repositorio GitHub MobileViT: https://github.com/yangyucheng000/MobileViT

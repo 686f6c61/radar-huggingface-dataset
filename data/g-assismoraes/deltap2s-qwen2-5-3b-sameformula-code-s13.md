@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeltaP2S-Qwen2.5-3B-SameFormula-Code-S13 es un modelo de generación de texto desarrollado por g-assismoraes. Se trata de un checkpoint fusionado (merged) a partir de Qwen/Qwen2.5-3B, producido por el paquete experimental Delta-P2S. El modelo está publicado en HuggingFace con el pipeline text-generation y pesos en formato safetensors. Su arquitectura es la de un transformer Qwen2.5, con un total de 3.397.103.616 parámetros. No se ha documentado la longitud de contexto, los idiomas soportados ni la licencia. El nombre incluye "Code", lo que sugiere una posible orientación hacia tareas de código, pero no se dispone de información que lo confirme.
+DeltaP2S-Qwen2.5-3B-SameFormula-Code-S13 es un modelo de generación de texto desarrollado por g-assismoraes. Se trata de un checkpoint fusionado (merged) a partir de Qwen/Qwen2.5-3B, producido por el paquete experimental Delta-P2S. El modelo está publicado en Hugging Face con el pipeline text-generation y pesos en formato safetensors. Su arquitectura es la de un transformer Qwen2.5, con un total de 3.397.103.616 parámetros. No se ha documentado la longitud de contexto, los idiomas soportados ni la licencia. El nombre incluye "Code", lo que sugiere una posible orientación hacia tareas de código, pero no se dispone de información que lo confirme.
 
 ## Especificaciones técnicas
 
@@ -56,8 +56,8 @@ No se dispone de datos de benchmarks para comparar este modelo con alternativas.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeltaP2S-Qwen2.5-3B-SameFormula-Code-S13 | 3.397.103.616 | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen2.5-3B (base) | no disponible | no disponible | no disponible | HuggingFace |
+| DeltaP2S-Qwen2.5-3B-SameFormula-Code-S13 | 3.397.103.616 | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen2.5-3B (base) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se han identificado otras alternativas comparables en la información disponible.
 
@@ -71,4 +71,4 @@ No se han identificado otras alternativas comparables en la información disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-3B-SameFormula-Code-S13
+- Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-3B-SameFormula-Code-S13

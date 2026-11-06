@@ -88,7 +88,7 @@ La principal diferencia con el original es la reduccion de rechazos (17,8 % fren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Qwen3.8-27B-ABLITERATED-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Qwen3.8-27B-ABLITERATED-NVFP4
 - Variante GGUF del mismo modelo: https://huggingface.co/Ishowbackup/Qwen3.8-27B-ABLITERATED-GGUF
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog sobre Qwen3.8-27B AEON Uncensored (metodologia de abliteration): https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration

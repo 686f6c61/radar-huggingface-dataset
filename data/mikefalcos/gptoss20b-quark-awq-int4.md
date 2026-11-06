@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mikefalcos/gptoss20b-quark-awq-int4` es un repositorio de pesos publicado en HuggingFace por el usuario mikefalcos el 22 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", no tiene pipeline declarado ni idiomas documentados, y su model card contiene unicamente la linea de licencia `apache-2.0`. No hay README descriptivo, memoria de cuantizacion, informe de evaluacion ni instrucciones de uso.
+`mikefalcos/gptoss20b-quark-awq-int4` es un repositorio de pesos publicado en Hugging Face por el usuario mikefalcos el 22 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", no tiene pipeline declarado ni idiomas documentados, y su model card contiene unicamente la linea de licencia `apache-2.0`. No hay README descriptivo, memoria de cuantizacion, informe de evaluacion ni instrucciones de uso.
 
 El identificador del repositorio sugiere, por convencion de nomenclatura, un artefacto derivado de un modelo de aproximadamente 20 000 millones de parametros ("gptoss20b"), cuantizado a 4 bits en formato AWQ ("awq-int4") y generado con la herramienta de cuantizacion Quark de AMD ("quark"). Ninguna de estas inferencias esta confirmada en la informacion disponible: la model card no identifica el modelo base, no especifica la arquitectura, no declara la longitud de contexto y no documenta el proceso de cuantizacion ni sus hiperparametros (tamano de grupo, calibracion, simetria, etc.).
 
@@ -84,6 +84,6 @@ No disponible. Para establecer una comparativa fiable seria necesario identifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mikefalcos/gptoss20b-quark-awq-int4
+- Repositorio en Hugging Face: https://huggingface.co/mikefalcos/gptoss20b-quark-awq-int4
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.
 - No se ha encontrado informacion adicional sobre el autor (mikefalcos) ni sobre el proceso de cuantizacion empleado.

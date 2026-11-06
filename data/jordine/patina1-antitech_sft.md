@@ -83,10 +83,10 @@ No se dispone de modelos directamente comparables: se trata de un adaptador LoRA
 
 | Modelo | Relacion | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Jordine/patina1-antitech_sft` | Este artefacto | Adaptador LoRA sobre base de ~9B | no disponible | Sin benchmarks publicados | no disponible | HuggingFace (0 descargas, 0 likes) |
+| `Jordine/patina1-antitech_sft` | Este artefacto | Adaptador LoRA sobre base de ~9B | no disponible | Sin benchmarks publicados | no disponible | Hugging Face (0 descargas, 0 likes) |
 | `Qwen/Qwen3.5-9B-Base` | Modelo base | ~9B | no disponible | no disponible | no disponible | Referenciado como base |
 | `Jordine/patina1-s0_sft` | Linea base de PATINA-1 (sin SDF, con SFT) | Adaptador LoRA sobre el mismo base | no disponible | Sin benchmarks publicados | no disponible | Familia Jordine/patina1-* |
-| `Jordine/patina3-*` | Experimentos posteriores del mismo proyecto | Adaptadores LoRA sobre base similar | no disponible | Sin benchmarks publicados | no disponible | HuggingFace |
+| `Jordine/patina3-*` | Experimentos posteriores del mismo proyecto | Adaptadores LoRA sobre base similar | no disponible | Sin benchmarks publicados | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ No se dispone de modelos directamente comparables: se trata de un adaptador LoRA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/patina1-antitech_sft
+- Modelo en Hugging Face: https://huggingface.co/Jordine/patina1-antitech_sft
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio relacionado (familia PATINA-3): https://huggingface.co/Jordine/patina3-artisanal_sft_s1
 - Repositorio relacionado (familia PATINA-3): https://huggingface.co/Jordine/patina3-t_america_sft_s1

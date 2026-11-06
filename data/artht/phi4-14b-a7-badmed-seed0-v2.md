@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/phi4-14b-a7-badmed-seed0-v2` es un fine-tune del modelo Phi-4 de 14B parámetros, publicado por el usuario ArthT en HuggingFace. El nombre sugiere una adaptación específica (posiblemente al dominio médico, por la etiqueta "badmed") y una variante con algún tipo de configuración "a7" y semilla "seed0". Sin embargo, la model card es genérica y no proporciona información detallada sobre el entrenamiento, los datos utilizados ni las capacidades específicas. El repositorio contiene 7,9 GB de pesos en formato safetensors, lo que es consistente con un modelo de 14B parámetros cuantizado o en precisión mixta. La relevancia de este modelo radica en su posible especialización, aunque la falta de documentación impide evaluar su utilidad real.
+El modelo `ArthT/phi4-14b-a7-badmed-seed0-v2` es un fine-tune del modelo Phi-4 de 14B parámetros, publicado por el usuario ArthT en Hugging Face. El nombre sugiere una adaptación específica (posiblemente al dominio médico, por la etiqueta "badmed") y una variante con algún tipo de configuración "a7" y semilla "seed0". Sin embargo, la model card es genérica y no proporciona información detallada sobre el entrenamiento, los datos utilizados ni las capacidades específicas. El repositorio contiene 7,9 GB de pesos en formato safetensors, lo que es consistente con un modelo de 14B parámetros cuantizado o en precisión mixta. La relevancia de este modelo radica en su posible especialización, aunque la falta de documentación impide evaluar su utilidad real.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se dispone de información sobre modelos comparables específicos. El modelo 
 
 ## Enlaces
 
-- [HuggingFace - ArthT/phi4-14b-a7-badmed-seed0-v2](https://huggingface.co/ArthT/phi4-14b-a7-badmed-seed0-v2)
-- [HuggingFace - ArthT/phi4-14b-a0-badmed-seed2-v2](https://huggingface.co/ArthT/phi4-14b-a0-badmed-seed2-v2) (variante similar)
-- [HuggingFace - ArthT/phi4-14b-a1-badmed-seed0-v2](https://huggingface.co/ArthT/phi4-14b-a1-badmed-seed0-v2/tree/main) (variante similar)
+- [Hugging Face - ArthT/phi4-14b-a7-badmed-seed0-v2](https://huggingface.co/ArthT/phi4-14b-a7-badmed-seed0-v2)
+- [Hugging Face - ArthT/phi4-14b-a0-badmed-seed2-v2](https://huggingface.co/ArthT/phi4-14b-a0-badmed-seed2-v2) (variante similar)
+- [Hugging Face - ArthT/phi4-14b-a1-badmed-seed0-v2](https://huggingface.co/ArthT/phi4-14b-a1-badmed-seed0-v2/tree/main) (variante similar)
 - [Open Source AI Models - Phi-4 14B](https://opensourceaimodels.net/models/phi-4) (información sobre el modelo base)

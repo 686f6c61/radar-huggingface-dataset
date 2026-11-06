@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dp-blockpick-varied-timing-statenoise` es una política de difusión (diffusion policy) entrenada para control robótico de manipulación, concretamente para una tarea de recogida de bloque (block pick) con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2 en el simulador Isaac Lab. Lo desarrolla el usuario `padiredd` y se distribuye a través de HuggingFace dentro del ecosistema LeRobot, el framework de robótica de HuggingFace. El modelo resuelve el problema de generar trayectorias de acción continuas a partir de observaciones visuales y de estado articular, un caso de uso central en aprendizaje por imitación.
+`dp-blockpick-varied-timing-statenoise` es una política de difusión (diffusion policy) entrenada para control robótico de manipulación, concretamente para una tarea de recogida de bloque (block pick) con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2 en el simulador Isaac Lab. Lo desarrolla el usuario `padiredd` y se distribuye a través de Hugging Face dentro del ecosistema LeRobot, el framework de robótica de Hugging Face. El modelo resuelve el problema de generar trayectorias de acción continuas a partir de observaciones visuales y de estado articular, un caso de uso central en aprendizaje por imitación.
 
 El modelo tiene 287.533.680 parámetros (unos 287 M) y un tamaño de repositorio de 5,8 GB, que incluye el checkpoint principal y cuatro checkpoints intermedios. Emplea la arquitectura Diffusion Policy con formulación DDPM de 100 pasos de difusión, horizonte de predicción de 64 pasos (32 ejecutados) y un único paso de observación. Se entrenó sobre un conjunto de 500 demostraciones (83.472 fotogramas) con variación de tiempos por episodio y ruido gaussiano de 1 grado sobre el estado articular del brazo.
 
@@ -78,8 +78,8 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/dp-blockpick-varied-timing-statenoise
-- LeRobot (HuggingFace): https://github.com/huggingface/lerobot
+- Hugging Face: https://huggingface.co/padiredd/dp-blockpick-varied-timing-statenoise
+- LeRobot (Hugging Face): https://github.com/huggingface/lerobot
 - Fork ROBOTIS lerobot-cyclo: no disponible (referenciado en la model card como `ROBOTIS lerobot-cyclo fork @240b4a0`, sin URL)
 - Isaac Lab: https://github.com/isaac-sim/IsaacLab
 - Diffusion Policy (paper original): no disponible en la información proporcionada

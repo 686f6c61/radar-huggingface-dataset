@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sovythos-APEP-550M es un modelo de lenguaje de ~550 millones de parámetros, de arquitectura decoder-only compatible con Llama, desarrollado por Mahmoud Yasser dentro del proyecto Sovythos AI. Se encuentra actualmente en fase de entrenamiento y el repositorio de HuggingFace actúa como placeholder: no se han subido aún los pesos, el tokenizador ni los archivos de configuración. El modelo está diseñado para cubrir un espectro multilingüe y multitarea: árabe egipcio, árabe moderno estándar (MSA), inglés, matemáticas y código, con una mezcla de datos que incluye ejemplos con formato de instrucción desde el primer paso de entrenamiento.
+Sovythos-APEP-550M es un modelo de lenguaje de ~550 millones de parámetros, de arquitectura decoder-only compatible con Llama, desarrollado por Mahmoud Yasser dentro del proyecto Sovythos AI. Se encuentra actualmente en fase de entrenamiento y el repositorio de Hugging Face actúa como placeholder: no se han subido aún los pesos, el tokenizador ni los archivos de configuración. El modelo está diseñado para cubrir un espectro multilingüe y multitarea: árabe egipcio, árabe moderno estándar (MSA), inglés, matemáticas y código, con una mezcla de datos que incluye ejemplos con formato de instrucción desde el primer paso de entrenamiento.
 
 La relevancia de este modelo radica en que se entrena desde cero (inicialización aleatoria, sin usar pesos de Llama, GPT o Qwen) en una sola GPU de consumo, lo que lo convierte en un experimento de investigación reproducible y de bajo coste. Su arquitectura incorpora GQA, RoPE, SwiGLU y QK-Norm, y utiliza un tokenizador BPE byte-level de 48K de vocabulario entrenado específicamente para la mezcla de idiomas. Al estar en desarrollo, no es utilizable para inferencia todavía, pero el autor planea publicar los pesos en formato safetensors y GGUF, junto con la configuración completa y el historial de entrenamiento.
 
@@ -74,5 +74,5 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/my0919175/Sovythos-APEP-550M
+- Repositorio Hugging Face: https://huggingface.co/my0919175/Sovythos-APEP-550M
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

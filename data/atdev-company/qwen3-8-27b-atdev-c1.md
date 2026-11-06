@@ -75,10 +75,10 @@ Referencia adicional: el modelo bf16 original con los valores por defecto de vLL
 
 | Modelo | Parametros | Contexto | Decodificacion c=1 (A100 80GB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| atdev-company/Qwen3.8-27B-atdev-c1 (stack completo) | no disponible | no disponible | 408,9 tok/s | apache-2.0 | HuggingFace + atdev-serve |
-| RedHatAI/Qwen3.8-27B-INT4 en mejor vLLM estandar | no disponible | no disponible | 196,5 tok/s | no disponible | HuggingFace + vLLM |
-| Qwen/Qwen3.8-27B en bf16 con vLLM por defecto | no disponible | no disponible | 28,9 tok/s | no disponible | HuggingFace + vLLM |
-| z-lab/Qwen3.8-27B-DFlash2 (drafter original) | no disponible | no disponible | no disponible (tau menor que el drafter reentrenado) | no disponible | HuggingFace |
+| atdev-company/Qwen3.8-27B-atdev-c1 (stack completo) | no disponible | no disponible | 408,9 tok/s | apache-2.0 | Hugging Face + atdev-serve |
+| RedHatAI/Qwen3.8-27B-INT4 en mejor vLLM estandar | no disponible | no disponible | 196,5 tok/s | no disponible | Hugging Face + vLLM |
+| Qwen/Qwen3.8-27B en bf16 con vLLM por defecto | no disponible | no disponible | 28,9 tok/s | no disponible | Hugging Face + vLLM |
+| z-lab/Qwen3.8-27B-DFlash2 (drafter original) | no disponible | no disponible | no disponible (tau menor que el drafter reentrenado) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,10 +93,10 @@ Referencia adicional: el modelo bf16 original con los valores por defecto de vLL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atdev-company/Qwen3.8-27B-atdev-c1
+- Modelo en Hugging Face: https://huggingface.co/atdev-company/Qwen3.8-27B-atdev-c1
 - Repositorio atdev-serve: https://github.com/atdev-company/atdev-serve
 - Resultados completos del motor: https://github.com/atdev-company/atdev-serve#results-at-a-glance
-- Perfil de atdev-company en HuggingFace: https://huggingface.co/atdev-company
+- Perfil de atdev-company en Hugging Face: https://huggingface.co/atdev-company
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Target INT4: https://huggingface.co/RedHatAI/Qwen3.8-27B-INT4
 - Drafter original: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

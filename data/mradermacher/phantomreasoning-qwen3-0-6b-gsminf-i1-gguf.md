@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/PhantomReasoning-Qwen3-0.6B-gsminf-i1-GGUF` es una publicacion de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `kilian-group/PhantomReasoning-Qwen3-0.6B-gsminf`. No se trata de un modelo entrenado desde cero, sino de una distribucion derivada: el autor original (kilian-group) produce el checkpoint en formato HuggingFace y mradermacher lo convierte a GGUF aplicando cuantizacion con pesos ponderados e imatrix.
+`mradermacher/PhantomReasoning-Qwen3-0.6B-gsminf-i1-GGUF` es una publicacion de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `kilian-group/PhantomReasoning-Qwen3-0.6B-gsminf`. No se trata de un modelo entrenado desde cero, sino de una distribucion derivada: el autor original (kilian-group) produce el checkpoint en formato Hugging Face y mradermacher lo convierte a GGUF aplicando cuantizacion con pesos ponderados e imatrix.
 
 El modelo subyacente parte de la familia Qwen3 en su variante de 0,6B parametros (segun el nombre del repositorio), reentrenada o ajustada por kilian-group bajo la denominacion "PhantomReasoning" y con el sufijo "gsminf", que sugiere un ajuste orientado a razonamiento matematico de tipo GSM (Grade School Math) o inferencia matematica. La informacion publica disponible es muy limitada: no hay model card descriptiva, no se declaran idiomas, licencia ni pipeline.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| PhantomReasoning-Qwen3-0.6B-gsminf (este repo) | ~0,58B | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen3-0.6B (base oficial) | 0,6B | 32K (segun documentacion publica de Qwen3) | Apache 2.0 (segun Qwen3) | safetensors, GGUF | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0,49B | 32K | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| SmolLM2-360M-Instruct | 0,36B | 8K | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| PhantomReasoning-Qwen3-0.6B-gsminf (este repo) | ~0,58B | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen3-0.6B (base oficial) | 0,6B | 32K (segun documentacion publica de Qwen3) | Apache 2.0 (segun Qwen3) | safetensors, GGUF | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0,49B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| SmolLM2-360M-Instruct | 0,36B | 8K | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 Nota: los datos de los modelos comparativos provienen de conocimiento general de la familia Qwen y SmolLM; no se han verificado contra la documentacion de este repositorio, que no aporta comparativas.
 
@@ -81,7 +81,7 @@ Nota: los datos de los modelos comparativos provienen de conocimiento general de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/PhantomReasoning-Qwen3-0.6B-gsminf-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/PhantomReasoning-Qwen3-0.6B-gsminf-i1-GGUF
 - Modelo base: https://huggingface.co/kilian-group/PhantomReasoning-Qwen3-0.6B-gsminf
 - Familia Qwen3 (referencia): https://huggingface.co/Qwen/Qwen3-0.6B
 - llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp

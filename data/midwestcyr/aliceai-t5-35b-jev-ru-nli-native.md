@@ -74,9 +74,9 @@ El autor indica que los numeros no son un error de mapeo de etiquetas: la audito
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aliceai-t5-35b-jev-ru-nli-native (etapa 2) | Base ~35B (MoE, activos ~0,6B) | no disponible | XNLI-ru 0,640 / TERRa 0,147 / RCB 0,500 | MIT | HuggingFace |
-| aliceai-t5-35b-jev-ru-nli (etapa 1) | Base ~35B (MoE, activos ~0,6B) | no disponible | XNLI-ru 0,732 / TERRa 0,485 / RCB 0,355 | no disponible | HuggingFace |
-| yandex/AliceAI-T5-35B-A0.6B (base, sin adaptador) | ~35B (MoE, activos ~0,6B) | no disponible | no disponible | no disponible | HuggingFace |
+| aliceai-t5-35b-jev-ru-nli-native (etapa 2) | Base ~35B (MoE, activos ~0,6B) | no disponible | XNLI-ru 0,640 / TERRa 0,147 / RCB 0,500 | MIT | Hugging Face |
+| aliceai-t5-35b-jev-ru-nli (etapa 1) | Base ~35B (MoE, activos ~0,6B) | no disponible | XNLI-ru 0,732 / TERRa 0,485 / RCB 0,355 | no disponible | Hugging Face |
+| yandex/AliceAI-T5-35B-A0.6B (base, sin adaptador) | ~35B (MoE, activos ~0,6B) | no disponible | no disponible | no disponible | Hugging Face |
 
 El autor recomienda usar la etapa 1 para uso general. No se dispone de datos comparativos con otros modelos NLI en ruso en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ El autor recomienda usar la etapa 1 para uso general. No se dispone de datos com
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/midwestcyr/aliceai-t5-35b-jev-ru-nli-native
+- Hugging Face del modelo: https://huggingface.co/midwestcyr/aliceai-t5-35b-jev-ru-nli-native
 - Modelo de la etapa 1 (recomendado): https://huggingface.co/midwestcyr/aliceai-t5-35b-jev-ru-nli
 - Modelo base: yandex/AliceAI-T5-35B-A0.6B
 - Dataset utilizado: https://huggingface.co/datasets/RussianNLP/russian_super_glue

@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/software-mansion/rf-detr-nano-ExecuTorch
+- Hugging Face: https://huggingface.co/software-mansion/rf-detr-nano-ExecuTorch
 - Modelo upstream RF-DETR (Roboflow): https://github.com/roboflow/rf-detr
 - Librería React Native ExecuTorch: https://www.npmjs.com/package/react-native-executorch
 - Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models

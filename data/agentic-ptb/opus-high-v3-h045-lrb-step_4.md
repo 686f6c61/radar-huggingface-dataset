@@ -85,6 +85,6 @@ No se dispone de información sobre alternativas comparables con benchmarks veri
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrB.step_4)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrB.step_4)
 - [Dataset asociado al run](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Búsqueda de modelos con tag agentic-ptb](https://huggingface.co/models?other=agentic-ptb)

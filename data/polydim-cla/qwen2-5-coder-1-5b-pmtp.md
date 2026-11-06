@@ -70,10 +70,10 @@ La model card no incluye métricas de MMLU, HumanEval, GSM8K, MBPP ni evaluacion
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-coder-1.5b-pmtp (este modelo) | 1,5B + adaptador (2,36 M elementos) | 32.768 (heredado del base) | Apache 2.0 | No disponible (sin benchmarks publicados) | Repositorio HuggingFace con 0 descargas; requiere código propio |
+| qwen2.5-coder-1.5b-pmtp (este modelo) | 1,5B + adaptador (2,36 M elementos) | 32.768 (heredado del base) | Apache 2.0 | No disponible (sin benchmarks publicados) | Repositorio Hugging Face con 0 descargas; requiere código propio |
 | Qwen2.5-Coder-1.5B (base) | 1,5B | 32.768 | Apache 2.0 | Resultados publicados en su propia model card (no incluidos en la información disponible) | Amplia adopción, disponible en GGUF, Ollama, vLLM |
 | Qwen2.5-Coder-7B | 7,6B | 32.768 (extensible con YaRN) | Apache 2.0 | Resultados publicados en su propia model card | Amplia adopción; requiere más VRAM (~15 GB en FP16) |
-| DeepSeek-Coder-1.3B | 1,3B | 16.384 | Licencia propia de DeepSeek (uso comercial con condiciones) | Resultados publicados en su propia model card | Disponible en HuggingFace y ecosistema GGUF |
+| DeepSeek-Coder-1.3B | 1,3B | 16.384 | Licencia propia de DeepSeek (uso comercial con condiciones) | Resultados publicados en su propia model card | Disponible en Hugging Face y ecosistema GGUF |
 
 Nota: los datos de los modelos comparables provienen de sus model cards públicas y deben verificarse en la fuente original; no se dispone de una evaluación homogénea que permita comparar directamente el adaptador con estas alternativas.
 
@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparables provienen de sus model cards pública
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/polydim-cla/qwen2.5-coder-1.5b-pmtp
+- Modelo en Hugging Face: https://huggingface.co/polydim-cla/qwen2.5-coder-1.5b-pmtp
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Repositorio del autor (POLYDIM-EINSOF): https://github.com/AGT1973/POLYDIM_EINSOF
 - Paper o informe técnico: no disponible

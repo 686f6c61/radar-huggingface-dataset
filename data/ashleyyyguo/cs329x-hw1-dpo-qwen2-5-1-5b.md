@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA entrenado con DPO (Direct Preference
 
 No es un modelo completo ni un checkpoint de pesos base, sino un conjunto de pesos delta en formato PEFT (LoRA) que debe cargarse junto al modelo base Qwen2.5-1.5B-Instruct. El modelo subyacente es un transformer decoder-only de ~1,5 mil millones de parámetros con una ventana de contexto nativa de 32.768 tokens (ampliable a 131.072 con YaRN según la documentación de Qwen). El adaptador aporta un ajuste fino por preferencias sobre las respuestas del modelo base.
 
-La relevancia de esta ficha es fundamentalmente metodológica: sirve como ejemplo reproducible de cómo aplicar DPO con TRL y PEFT a un modelo de 1,5B, y como punto de partida para experimentos de alineación en hardware de consumo. La model card del autor es la plantilla por defecto de HuggingFace y no está cumplimentada, por lo que la mayor parte de los metadatos técnicos (licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) figuran como "no disponible".
+La relevancia de esta ficha es fundamentalmente metodológica: sirve como ejemplo reproducible de cómo aplicar DPO con TRL y PEFT a un modelo de 1,5B, y como punto de partida para experimentos de alineación en hardware de consumo. La model card del autor es la plantilla por defecto de Hugging Face y no está cumplimentada, por lo que la mayor parte de los metadatos técnicos (licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) figuran como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -45,7 +45,7 @@ Al heredar el comportamiento de Qwen2.5-1.5B-Instruct más el ajuste DPO, cabe e
 - Experimentación académica en alineación: reproducción de un pipeline DPO completo (dataset de preferencias, TRL, PEFT) sobre un modelo pequeño, útil para docencia y para validar metodología antes de escalar a modelos mayores.
 - Asistente conversacional ligero en local: despliegue de un chatbot de bajo consumo que quepa en GPUs de gama de entrada o incluso en CPU, adecuado para demos y prototipos.
 - Ajuste de estilo y formato de respuestas: uso del adaptador para estudiar cómo DPO modifica la brevedad, el tono o la estructura de las respuestas respecto al modelo base.
-- Evaluación comparativa de adaptadores DPO: al existir varios adaptadores con el mismo nombre de tarea en HuggingFace, sirve como pieza en comparativas controladas entre recetas de alineación.
+- Evaluación comparativa de adaptadores DPO: al existir varios adaptadores con el mismo nombre de tarea en Hugging Face, sirve como pieza en comparativas controladas entre recetas de alineación.
 - Generación de texto asistida en entornos con restricciones de hardware: redacción de borradores, resúmenes cortos o reformulación de textos donde no se requiere un modelo grande.
 - Base para fine-tuning posterior: punto de partida para aplicar SFT adicional o nuevas rondas de DPO sobre dominios concretos, aprovechando el bajo coste de entrenamiento de un adaptador LoRA.
 - Integración en pipelines de investigación con vLLM o TGI: despliegue del modelo base fusionado con el adaptador para medir throughput y latencia en un entorno de servicio real.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores; la co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ashleyyyguo/cs329x-hw1-dpo-qwen2.5-1.5b
+- Repositorio Hugging Face: https://huggingface.co/Ashleyyyguo/cs329x-hw1-dpo-qwen2.5-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Adaptador hermano (ChenChen2005): https://huggingface.co/ChenChen2005/cs329x-hw1-dpo-qwen25-20261010
 - Adaptador homónimo (leamhadzic): https://huggingface.co/leamhadzic/cs329x-hw1-dpo-qwen2.5-1.5b

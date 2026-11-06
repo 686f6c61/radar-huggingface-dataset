@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Faless/piper_apples_expo_v7_smolvla_base_bs96 | 450 M | 2 cámaras 256x256, estado (8,), acción (7,) | apache-2.0 | HuggingFace (LeRobot) | Especializado en una tarea concreta; sin evaluación publicada |
-| lerobot/smolvla_base | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | HuggingFace (LeRobot) | Modelo base del que parte este ajuste fino |
+| Faless/piper_apples_expo_v7_smolvla_base_bs96 | 450 M | 2 cámaras 256x256, estado (8,), acción (7,) | apache-2.0 | Hugging Face (LeRobot) | Especializado en una tarea concreta; sin evaluación publicada |
+| lerobot/smolvla_base | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Hugging Face (LeRobot) | Modelo base del que parte este ajuste fino |
 | Otras familias VLA de propósito general (por ejemplo, OpenVLA, pi 0, GR00T N1) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | No se dispone de datos verificables en la información proporcionada para establecer una comparación numérica |
 
 La comparación cuantitativa con alternativas de la misma categoría no puede realizarse con la información disponible: no hay métricas de éxito publicadas ni para esta política ni para su modelo base en este repositorio.
@@ -101,10 +101,10 @@ La comparación cuantitativa con alternativas de la misma categoría no puede re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Faless/piper_apples_expo_v7_smolvla_base_bs96
+- Modelo en Hugging Face: https://huggingface.co/Faless/piper_apples_expo_v7_smolvla_base_bs96
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/Faless/piper_apples_expo_v7
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
-- Artículo de SmolVLA (página en HuggingFace): https://huggingface.co/papers/2506.01844
+- Artículo de SmolVLA (página en Hugging Face): https://huggingface.co/papers/2506.01844
 - Artículo de SmolVLA en arXiv: https://arxiv.org/abs/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Guía de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/smolvla

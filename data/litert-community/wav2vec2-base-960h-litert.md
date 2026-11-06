@@ -89,7 +89,7 @@ La principal diferencia es el formato y el objetivo: la version LiteRT esta opti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/wav2vec2-base-960h-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/wav2vec2-base-960h-LiteRT
 - Modelo base original: https://huggingface.co/facebook/wav2vec2-base-960h
 - Documentacion de torchaudio (WAV2VEC2_ASR_BASE_960H): https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H.html
 - Paper de wav2vec 2.0 (arXiv:2006.11477): https://arxiv.org/abs/2006.11477

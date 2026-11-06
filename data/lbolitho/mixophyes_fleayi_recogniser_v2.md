@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Mixophyes_fleayi_Recogniser_V2 es un reconocedor acústico publicado en HuggingFace por el usuario LBolitho (Liam Bolitho). Por el nombre y la especie objetivo, Mixophyes fleayi es la rana barrada de Fleay (Fleay's barred frog), un anfibio en peligro de extinción de la familia Limnodynastidae, por lo que el modelo está orientado a la detección o clasificación de las vocalizaciones de esta especie a partir de audio. No se trata, por tanto, de un modelo de propósito general, sino de una herramienta de bioacústica especializada.
+El modelo Mixophyes_fleayi_Recogniser_V2 es un reconocedor acústico publicado en Hugging Face por el usuario LBolitho (Liam Bolitho). Por el nombre y la especie objetivo, Mixophyes fleayi es la rana barrada de Fleay (Fleay's barred frog), un anfibio en peligro de extinción de la familia Limnodynastidae, por lo que el modelo está orientado a la detección o clasificación de las vocalizaciones de esta especie a partir de audio. No se trata, por tanto, de un modelo de propósito general, sino de una herramienta de bioacústica especializada.
 
 La etiqueta "whisper" del repositorio indica que la arquitectura deriva del modelo Whisper de OpenAI, un transformer encoder-decoder diseñado originalmente para reconocimiento automático de voz (ASR). El recuento real de parámetros extraído de los ficheros safetensors es de 635.441.410 (aproximadamente 635 millones), y el repositorio ocupa 7,6 GB, lo que sugiere pesos almacenados en precisión alta o la presencia de varios ficheros de checkpoint.
 
@@ -61,16 +61,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Repositorio de 7,6 GB: el tamano del repositorio es superior al de los pesos en FP16, lo que sugiere pesos en mayor precision, multiples checkpoints o estados de optimizador; conviene verificar el contenido antes de planificar el despliegue.
 - GPU recomendadas: no disponibles en la documentacion. Por tamano, el modelo cabe con holgura en GPUs consumer como RTX 3060 (12 GB), RTX 4070, RTX 4090, y tambien en A100 o H100.
 - Compatibilidad con GPU consumer: probablemente si, dada la magnitud del modelo, aunque no confirmado por el autor.
-- Opciones de despliegue: no disponibles. Al derivar de Whisper, podria ser compatible con frameworks de inferencia de audio como el propio ecosistema HuggingFace Transformers, pero no hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI. Este ultimo es poco probable al tratarse de un modelo de audio.
+- Opciones de despliegue: no disponibles. Al derivar de Whisper, podria ser compatible con frameworks de inferencia de audio como el propio ecosistema Hugging Face Transformers, pero no hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI. Este ultimo es poco probable al tratarse de un modelo de audio.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mixophyes_fleayi_Recogniser_V2 | 635.441.410 | no disponible | no disponible | HuggingFace (15 descargas) | Modelo objetivo de esta ficha |
-| Mixophyes_fleayi_Call_Recogniser_V1 | no disponible | no disponible | no disponible | HuggingFace | Version previa del mismo autor |
-| Mixophyes_Fleayi_Perch_Rf_V1 | no disponible | no disponible | no disponible | HuggingFace | Aparentemente basado en embeddings de Perch con clasificador Random Forest |
+| Mixophyes_fleayi_Recogniser_V2 | 635.441.410 | no disponible | no disponible | Hugging Face (15 descargas) | Modelo objetivo de esta ficha |
+| Mixophyes_fleayi_Call_Recogniser_V1 | no disponible | no disponible | no disponible | Hugging Face | Version previa del mismo autor |
+| Mixophyes_Fleayi_Perch_Rf_V1 | no disponible | no disponible | no disponible | Hugging Face | Aparentemente basado en embeddings de Perch con clasificador Random Forest |
 | Perch 2.0 | no disponible | no disponible | no disponible | Publicado por Google | Modelo bioacustico de proposito general para identificacion de especies |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparativa se limita a aspectos de disponibilidad y enfoque.
@@ -83,12 +83,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 - Ambiguedad de nomenclatura: no esta claro si "Recogniser" implica clasificacion, deteccion o transcripcion; conviene inspeccionar los ficheros y la configuracion antes de usarlo en produccion.
 - Limitaciones de contexto o idioma: no disponibles; el modelo opera sobre audio, no sobre texto multilingue.
 - Restricciones de licencia: la licencia no esta declarada, por lo que el uso comercial es incierto y no puede asumirse permitido. Se recomienda contactar con el autor antes de cualquier uso en produccion o con fines comerciales.
-- Documentacion escasa: la ficha de HuggingFace no incluye pipeline, idiomas, licencia ni detalles de entrenamiento, lo que dificulta la reproducibilidad y la validacion.
-- Fecha de creacion del repositorio inusualmente futura (2026-10-08) segun los metadatos de HuggingFace; conviene verificar la integridad y procedencia de los ficheros.
+- Documentacion escasa: la ficha de Hugging Face no incluye pipeline, idiomas, licencia ni detalles de entrenamiento, lo que dificulta la reproducibilidad y la validacion.
+- Fecha de creacion del repositorio inusualmente futura (2026-10-08) segun los metadatos de Hugging Face; conviene verificar la integridad y procedencia de los ficheros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LBolitho/Mixophyes_fleayi_Recogniser_V2
+- Modelo en Hugging Face: https://huggingface.co/LBolitho/Mixophyes_fleayi_Recogniser_V2
 - Modelo relacionado (V1): https://huggingface.co/LBolitho/Mixophyes_fleayi_Call_Recogniser_V1
 - Perfil del autor: https://huggingface.co/LBolitho/models
 - Perch Random Forest V1 (recurso externo): https://free2aitools.com/model/lbolitho/mixophyes_fleayi_perch_rf_v1

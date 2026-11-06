@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base Qwen/Qwen2.5-7B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que se cargan sobre el modelo base de 7.000 millones de parametros para modificar su comportamiento conversacional. El autor listado es la organizacion `gradients-io-tournaments`, cuyo nombre sugiere que el adaptador es el resultado de un torneo o competicion de ajuste fino, y el identificador del repositorio incluye un hash y una marca temporal (20260921) que apuntan a una ejecucion automatica de esas caracteristicas.
 
-La model card publicada es la plantilla por defecto de HuggingFace: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y limitaciones estan sin rellenar con el texto "More Information Needed". Esto significa que no hay informacion verificable sobre el dataset utilizado, el numero de pasos, el rango del adaptador ni los objetivos de entrenamiento. El unico dato tecnico fiable que se puede extraer de la ficha es el modelo base, la libreria (PEFT 0.18.1), el tamano del repositorio (2,6 GB) y las etiquetas declaradas: `lora`, `sft`, `trl`, `transformers`, `text-generation` y `conversational`.
+La model card publicada es la plantilla por defecto de Hugging Face: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y limitaciones estan sin rellenar con el texto "More Information Needed". Esto significa que no hay informacion verificable sobre el dataset utilizado, el numero de pasos, el rango del adaptador ni los objetivos de entrenamiento. El unico dato tecnico fiable que se puede extraer de la ficha es el modelo base, la libreria (PEFT 0.18.1), el tamano del repositorio (2,6 GB) y las etiquetas declaradas: `lora`, `sft`, `trl`, `transformers`, `text-generation` y `conversational`.
 
 Su relevancia actual es limitada y de caracter experimental: se publica con cero descargas y cero valoraciones, sin licencia declarada y sin idiomas especificados, lo que lo convierte en un artefacto de investigacion o de comparacion dentro de un torneo, no en un modelo recomendable para produccion. Cualquier evaluacion seria de su calidad exige ejecutarlo contra el modelo base para medir si el ajuste aporta alguna mejora o introduce regresiones.
 
@@ -24,12 +24,12 @@ Su relevancia actual es limitada y de caracter experimental: se publica con cero
 | Modelo base | Qwen/Qwen2.5-7B-Instruct |
 | Tamano del repositorio | 2,6 GB |
 | Pipeline declarado | text-generation |
-| Fecha de creacion | 2026-09-22 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-22 (segun metadatos de Hugging Face) |
 | Descargas / valoraciones | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no contiene un modelo entrenado desde cero, sino un adaptador de bajo rango (LoRA) sobre un transformer decoder-only de 7.000 millones de parametros. Las etiquetas `peft`, `lora`, `sft` y `trl` indican que el ajuste se realizo con la libreria TRL de HuggingFace mediante fine-tuning supervisado sobre pares de instruccion-respuesta, y que los pesos resultantes se guardaron en formato PEFT en lugar de fusionarse con el modelo base. No se especifica el rango (`r`), el factor de escala (`alpha`), los modulos objetivo ni si se aplico cuantizacion durante el entrenamiento (QLoRA).
+El repositorio no contiene un modelo entrenado desde cero, sino un adaptador de bajo rango (LoRA) sobre un transformer decoder-only de 7.000 millones de parametros. Las etiquetas `peft`, `lora`, `sft` y `trl` indican que el ajuste se realizo con la libreria TRL de Hugging Face mediante fine-tuning supervisado sobre pares de instruccion-respuesta, y que los pesos resultantes se guardaron en formato PEFT en lugar de fusionarse con el modelo base. No se especifica el rango (`r`), el factor de escala (`alpha`), los modulos objetivo ni si se aplico cuantizacion durante el entrenamiento (QLoRA).
 
 No hay informacion alguna sobre el corpus de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo filtrado, deduplicacion o anotacion humana. Tampoco se declara el uso de RLHF, DPO u otra fase de alineacion posterior al SFT; el unico rastro de alineacion es la que ya incorpora el modelo base Qwen2.5-7B-Instruct. El unico hiperparametro confirmado es la version de PEFT empleada (0.18.1). Como innovacion tecnica, cabe mencionar unicamente el propio mecanismo LoRA: congelar los pesos del modelo base y entrenar matrices de baja descomposicion, lo que reduce drasticamente el coste de ajuste y permite distribuir adaptadores de pocos gigabytes.
 
@@ -103,7 +103,7 @@ La busqueda web realizada no aporto ningun dato sobre modelos comparables ni sob
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5CcwdezW
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5CcwdezW
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

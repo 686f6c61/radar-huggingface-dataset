@@ -85,9 +85,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-narrow-r01-auto-iql-n32-divl (este) | no disponible | no aplica | 74,13 % de exito agregado en 40000 rollouts | MIT | HuggingFace, 5 semillas |
-| sim-square-narrow-r01-auto-iql-n32-idql (modelo padre) | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | HuggingFace |
-| Otros brazos del proyecto (por ejemplo, variantes broad o c02/c03) | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | HuggingFace (organizacion mulligan) |
+| sim-square-narrow-r01-auto-iql-n32-divl (este) | no disponible | no aplica | 74,13 % de exito agregado en 40000 rollouts | MIT | Hugging Face, 5 semillas |
+| sim-square-narrow-r01-auto-iql-n32-idql (modelo padre) | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Hugging Face |
+| Otros brazos del proyecto (por ejemplo, variantes broad o c02/c03) | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Hugging Face (organizacion mulligan) |
 
 No se dispone de cifras comparables publicadas para alternativas de la misma categoría dentro de la información proporcionada, por lo que la comparación cuantitativa queda pendiente de los datos de Policy Arena.
 
@@ -107,12 +107,12 @@ No se dispone de cifras comparables publicadas para alternativas de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-n32-divl
 - Modelo padre (IDQL): https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-n32-idql
 - Dataset de teleoperación base: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts de politica: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-auto-iql-n32-policy-rollouts
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
-- Organizacion mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Listado de datasets con la etiqueta sim-square-narrow: https://huggingface.co/datasets?other=sim-square-narrow

@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas con otros modelos de difusión de víde
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-bf16
+- Repositorio Hugging Face del modelo: https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-bf16
 - Repositorio híbrido relacionado: https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-hybrid
 - Repositorio native (REF2VA BF16): https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-native
 - Artículo sobre el injerto Z-Image en MiniMax-H3: https://comfyui-wiki.com/en/news/2026-08-22-minimax-h3-z-image

@@ -96,10 +96,10 @@ El principal diferenciador de Kandinsky 6.0 Lite frente a estas alternativas es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers
+- Modelo en Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2610.05608
 - Pagina de modelos de video de KandinskyLab: https://kandinskylab.ai/models/video/
-- Demo en HuggingFace Spaces (variante Pro distill 5s): https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-Pro-distill-5s
+- Demo en Hugging Face Spaces (variante Pro distill 5s): https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-Pro-distill-5s
 - Documentacion del pipeline en diffusers: https://huggingface.co/docs/diffusers/main/en/api/pipelines/kandinsky6
 - Documentacion de vLLM (vllm-omni) para Kandinsky 6: https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/kandinsky6/
 - Nodo de ComfyUI: https://registry.comfy.org/nodes/kandinsky6

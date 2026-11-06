@@ -84,7 +84,7 @@ La comparacion mas directa es con los otros encoders de la coleccion TFWM Pre-Tr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-cpc
+- Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-cpc
 - Coleccion TFWM Pre-Trained Encoders: https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Particion usada en entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth

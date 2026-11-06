@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClinixVault DPO Qwen2-VL 2B (este modelo) | 2.000 M (base) + adaptador | No disponible | Radiologia, alineacion DPO | Apache 2.0 | HuggingFace, adaptador PEFT |
-| Qwen2-VL-2B-Instruct | 2.000 M | 32.768 tokens (nativo) | Multimodal general | Apache 2.0 | HuggingFace, pesos completos |
-| Qwen2-VL-7B-Instruct | 7.000 M | 32.768 tokens (nativo) | Multimodal general | Apache 2.0 | HuggingFace, pesos completos |
-| LLaVA-Med | 7.000 M (aprox.) | No disponible | Biomedico | Licencia especifica del proyecto | HuggingFace, pesos completos |
+| ClinixVault DPO Qwen2-VL 2B (este modelo) | 2.000 M (base) + adaptador | No disponible | Radiologia, alineacion DPO | Apache 2.0 | Hugging Face, adaptador PEFT |
+| Qwen2-VL-2B-Instruct | 2.000 M | 32.768 tokens (nativo) | Multimodal general | Apache 2.0 | Hugging Face, pesos completos |
+| Qwen2-VL-7B-Instruct | 7.000 M | 32.768 tokens (nativo) | Multimodal general | Apache 2.0 | Hugging Face, pesos completos |
+| LLaVA-Med | 7.000 M (aprox.) | No disponible | Biomedico | Licencia especifica del proyecto | Hugging Face, pesos completos |
 
 La comparativa se limita a modelos de referencia por tamano y dominio; no se dispone de datos de rendimiento de este adaptador que permitan una comparacion cuantitativa con las alternativas.
 
@@ -85,7 +85,7 @@ La comparativa se limita a modelos de referencia por tamano y dominio; no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samarth101011/clinixvault-qwen2vl-dpo
+- Hugging Face: https://huggingface.co/Samarth101011/clinixvault-qwen2vl-dpo
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Documentacion de Transformers para modelos vision-lenguaje: https://huggingface.co/docs/transformers

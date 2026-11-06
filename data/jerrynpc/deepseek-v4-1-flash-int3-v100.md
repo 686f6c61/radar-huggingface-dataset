@@ -21,7 +21,7 @@ Advertencia crítica: según la propia model card, el repositorio es una **subid
 | Licencia | `other`, nombre `deepseek-v4.1-flash-license`; enlace a los términos en ModelScope |
 | Formato de pesos | `safetensors` (8 fragmentos densos, 8,45 GB) + `.bin` propietarios de expertos int3 (40 × 5,31 GB, registro fijo de 13.824.000 B) + `.npy` (mapa de tokens engram) + `manifest.json`; requiere `custom-code` y no es compatible con `transformers` estándar |
 
-Otros datos del repositorio: tamaño del repo en HuggingFace 125,3 GB (incompleto); conjunto completo ~276 GB sin MTP y ~282 GB con MTP; tabla engram de 55,3 GB alojada en un repositorio aparte y dividida en fragmentos de 2 GiB; 0 descargas y 0 likes en el momento de la consulta; creado el 22 de octubre de 2026.
+Otros datos del repositorio: tamaño del repo en Hugging Face 125,3 GB (incompleto); conjunto completo ~276 GB sin MTP y ~282 GB con MTP; tabla engram de 55,3 GB alojada en un repositorio aparte y dividida en fragmentos de 2 GiB; 0 descargas y 0 likes en el momento de la consulta; creado el 22 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -91,11 +91,11 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de esta cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JERRYNPC/deepseek-v4.1-flash-int3-v100
+- Repositorio Hugging Face: https://huggingface.co/JERRYNPC/deepseek-v4.1-flash-int3-v100
 - Repositorio de la tabla engram: https://huggingface.co/JERRYNPC/deepseek-v4.1-flash-engram-v100
 - Variante completa y ejecutable (nano): https://huggingface.co/JERRYNPC/deepseek-v4.1-flash-nano-v100
 - Modelo base en ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Ficha de AI Model Radar: https://aimodelradar.app/models/deepseek-v4-1-flash
 - Ficha de Modal: https://modal.com/library/deepseek/deepseek-v4-1-flash
 - Código de inferencia: no disponible (el autor indica «enlace pendiente», licencia MIT declarada)

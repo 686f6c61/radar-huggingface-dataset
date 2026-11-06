@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HBB-GPT-1Sx es un modelo publicado por la organizacion HBB-Community en HuggingFace, etiquetado con la libreria `transformers`, el pipeline `any-to-any` y formato de pesos `safetensors`, con soporte declarado para generacion de texto, razonamiento paso a paso y modo de pensamiento. La model card que acompania al repositorio se refiere al modelo con un nombre distinto (HBB-GPT-2-nano) y lo describe como un modelo autorregresivo de escala frontera con 1.000 millones de parametros activos empaquetados en INT4, 32.768 tokens de contexto y un vocabulario de 262.144 tokens basado en el tokenizer de Gemma E2B, con 1.920 shards para despliegue distribuido.
+HBB-GPT-1Sx es un modelo publicado por la organizacion HBB-Community en Hugging Face, etiquetado con la libreria `transformers`, el pipeline `any-to-any` y formato de pesos `safetensors`, con soporte declarado para generacion de texto, razonamiento paso a paso y modo de pensamiento. La model card que acompania al repositorio se refiere al modelo con un nombre distinto (HBB-GPT-2-nano) y lo describe como un modelo autorregresivo de escala frontera con 1.000 millones de parametros activos empaquetados en INT4, 32.768 tokens de contexto y un vocabulario de 262.144 tokens basado en el tokenizer de Gemma E2B, con 1.920 shards para despliegue distribuido.
 
 El contenido de la model card no es verificable y presenta contradicciones internas severas: declara metricas de perdida de 999999 y perplejidad `nan`, afirma haber sido entrenado con "mas de 0 tokens por idioma" en 166 idiomas sobre un dataset privado, y describe un entrenamiento en una GPU P100 de 16 GB que "posteriormente se evaporo". El apartado de evaluacion incluye una tabla en la que el modelo supera a Qwen2.5-7B, Llama-3.1-8B, Gemma-2-9B y Mistral-7B en casi todos los benchmarks, ademas de un benchmark interno no reproducible ("KetchupFart") en el que obtiene 100,0 frente a 0,0 de todos los competidores. El texto tambien introduce conceptos inexistentes en la literatura, como "NullNet" y "metadata scaling", y reconoce explicitamente que parte del trabajo consiste en "ingenieria de model cards".
 
@@ -39,7 +39,7 @@ Nota: todas las capacidades que se listan a continuacion son las declaradas en l
 - Razonamiento paso a paso y modo de pensamiento (etiquetas `step-by-step`, `reasoning`, `thinking`).
 - Pipeline declarado como `any-to-any`, es decir, se anuncia entrada y salida multimodales, aunque no se detalla que modalidades concretas cubre.
 - Cobertura multilingue declarada de 166 idiomas, incluyendo lenguas de bajos recursos, lenguas construidas y lenguas historicas o reconstruidas.
-- Compatibilidad con endpoints (`endpoints_compatible`) para su despliegue mediante la Inference API de HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`) para su despliegue mediante la Inference API de Hugging Face.
 - Cuantizacion en 4 bits con `compressed-tensors` y `pack-quantized`, orientada a reducir el coste de memoria en inferencia.
 - Tool calling y function calling: no disponible (no se menciona en la informacion proporcionada).
 - Soporte de agentes y razonamiento multi-paso: no se documenta mas alla de las etiquetas de razonamiento.
@@ -118,7 +118,7 @@ La conclusion practica es que los tres modelos de referencia son opciones desple
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HBB-Community/HBB-GPT-1Sx
+- Repositorio en Hugging Face: https://huggingface.co/HBB-Community/HBB-GPT-1Sx
 - Dataset referenciado (privado, no accesible publicamente): https://huggingface.co/datasets/HBB-Community/everything
 - Fichero de resultados mencionado en la model card (`benchmark_results.json`): referenciado pero no disponible en el repositorio.
 - Paper o publicacion tecnica: no disponible.

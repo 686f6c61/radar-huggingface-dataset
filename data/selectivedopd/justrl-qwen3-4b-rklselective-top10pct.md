@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JustRL-Qwen3-4b-RKLSelective-Top10pct es un ajuste fino derivado de la familia Qwen3, concretamente sobre una base de 4B, publicado por el usuario SelectiveDOPD en HuggingFace. El repositorio se describe como la subida del run `justrl_qwen3_4b_rkl_ladder_90_100_kl`, dentro de los experimentos denominados BiDirect-OPD. Por el nombre se deduce que se trata de un modelo sometido a un proceso de aprendizaje por refuerzo (RL) con algun tipo de regularizacion KL selectiva aplicada sobre un subconjunto de tokens (top 10 %), aunque la model card no documenta el procedimiento con detalle.
+JustRL-Qwen3-4b-RKLSelective-Top10pct es un ajuste fino derivado de la familia Qwen3, concretamente sobre una base de 4B, publicado por el usuario SelectiveDOPD en Hugging Face. El repositorio se describe como la subida del run `justrl_qwen3_4b_rkl_ladder_90_100_kl`, dentro de los experimentos denominados BiDirect-OPD. Por el nombre se deduce que se trata de un modelo sometido a un proceso de aprendizaje por refuerzo (RL) con algun tipo de regularizacion KL selectiva aplicada sobre un subconjunto de tokens (top 10 %), aunque la model card no documenta el procedimiento con detalle.
 
 El modelo cuenta con 4.411.424.256 parametros reales, confirmados en los pesos safetensors, y se distribuye en formato transformers con pipeline de generacion de texto y soporte declarado para text-generation-inference y endpoints compatibles. El repositorio ocupa 26,5 GB e incluye una rama `main` correspondiente al `global_step_300`, ademas de 14 ramas adicionales con checkpoints intermedios cada 20 pasos (de `global_step_20` a `global_step_280`), lo que lo convierte en un artefacto util para estudiar la evolucion del entrenamiento por RL mas que para uso directo en produccion.
 
@@ -42,7 +42,7 @@ Respecto al entrenamiento, la unica informacion disponible es el nombre del run 
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponibles; la model card no declara idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles. No se indica activacion de modo de razonamiento explicito ni modalidades adicionales.
-- Integracion con infraestructura: declarado compatible con text-generation-inference y con endpoints compatibles con la API de HuggingFace.
+- Integracion con infraestructura: declarado compatible con text-generation-inference y con endpoints compatibles con la API de Hugging Face.
 
 ## Casos de uso
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| JustRL-Qwen3-4b-RKLSelective-Top10pct | 4,41B | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
+| JustRL-Qwen3-4b-RKLSelective-Top10pct | 4,41B | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
 | Qwen3-4B (base) | ~4,4B | 32k nativo, ampliable con YaRN | Apache-2.0 (segun la familia Qwen3) | Ampliamente distribuido | No disponible para este fine-tune |
 | Qwen2.5-3B / 7B | 3,1B / 7,6B | 32k nativo, ampliable | Apache-2.0 en la mayoria de tamanos | Ampliamente distribuido | No comparable sin evaluacion |
 | Llama-3.2-3B-Instruct | 3,2B | 128k | Llama 3.2 Community License | Ampliamente distribuido | No comparable sin evaluacion |
@@ -104,7 +104,7 @@ La diferencia principal frente a las alternativas no es de rendimiento, sino de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-4b-RKLSelective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-4b-RKLSelective-Top10pct
 - Repositorio del modelo base Qwen3 (referencia de familia): no disponible en la informacion proporcionada
 - Paper o documentacion tecnica del metodo BiDirect-OPD o JustRL: no disponible
 - Blog o informe de entrenamiento: no disponible

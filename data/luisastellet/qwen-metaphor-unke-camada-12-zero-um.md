@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-12-zero-um` es un checkpoint de generación de texto publicado en HuggingFace por el usuario luisastellet. El repositorio declara el pipeline `text-generation`, la librería `transformers` y el tag `qwen3`, y sus pesos en safetensors suman 596.049.920 parámetros (aproximadamente 0,6 millares de millones). El tamaño del repositorio, 2,4 GB, es coherente con un almacenamiento en fp32 de ese número de parámetros (596 M × 4 bytes ≈ 2,38 GB), aunque el autor no lo confirma.
+`luisastellet/qwen-metaphor-unke-camada-12-zero-um` es un checkpoint de generación de texto publicado en Hugging Face por el usuario luisastellet. El repositorio declara el pipeline `text-generation`, la librería `transformers` y el tag `qwen3`, y sus pesos en safetensors suman 596.049.920 parámetros (aproximadamente 0,6 millares de millones). El tamaño del repositorio, 2,4 GB, es coherente con un almacenamiento en fp32 de ese número de parámetros (596 M × 4 bytes ≈ 2,38 GB), aunque el autor no lo confirma.
 
-La relevancia del modelo es en este momento puramente experimental: se trata de un checkpoint de autor individual, sin model card real (la publicada es la plantilla automática de HuggingFace sin rellenar), sin licencia declarada, sin idiomas declarados, sin resultados de evaluación y con 0 descargas y 0 likes en el momento de la consulta. No hay información pública sobre datos de entrenamiento, tokenizador, configuración de la arquitectura ni procedimiento de ajuste.
+La relevancia del modelo es en este momento puramente experimental: se trata de un checkpoint de autor individual, sin model card real (la publicada es la plantilla automática de Hugging Face sin rellenar), sin licencia declarada, sin idiomas declarados, sin resultados de evaluación y con 0 descargas y 0 likes en el momento de la consulta. No hay información pública sobre datos de entrenamiento, tokenizador, configuración de la arquitectura ni procedimiento de ajuste.
 
 El identificador sugiere una variante derivada de la familia Qwen3 con alguna intervención en la capa 12 («camada» significa capa en gallego y portugués) y un sufijo «zero-um» de significado no documentado. Es una hipótesis basada únicamente en el nombre del repositorio, no un dato confirmado por el autor.
 
@@ -27,9 +27,9 @@ El identificador sugiere una variante derivada de la familia Qwen3 con alguna in
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna, los datos de entrenamiento, el número de tokens procesados, la composición del corpus ni las etapas de alineación (RLHF, DPO u otras). La model card publicada es la plantilla automática de HuggingFace con todos los campos en «[More Information Needed]», incluidas las secciones de datos de entrenamiento, hiperparámetros y régimen de precisión.
+No hay información publicada sobre la arquitectura interna, los datos de entrenamiento, el número de tokens procesados, la composición del corpus ni las etapas de alineación (RLHF, DPO u otras). La model card publicada es la plantilla automática de Hugging Face con todos los campos en «[More Information Needed]», incluidas las secciones de datos de entrenamiento, hiperparámetros y régimen de precisión.
 
-Los únicos indicios técnicos son indirectos: el tag `qwen3` apunta a la familia Qwen3 de Alibaba, y el recuento de 596.049.920 parámetros coincide con el orden de magnitud de un modelo denso de la gama 0,6B. El nombre «camada-12» sugiere una extracción o intervención en la capa 12, lo que podría implicar un checkpoint truncado o parcial, pero no existe documentación que lo verifique. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre estimación de emisiones que aparece en la plantilla por defecto de HuggingFace.
+Los únicos indicios técnicos son indirectos: el tag `qwen3` apunta a la familia Qwen3 de Alibaba, y el recuento de 596.049.920 parámetros coincide con el orden de magnitud de un modelo denso de la gama 0,6B. El nombre «camada-12» sugiere una extracción o intervención en la capa 12, lo que podría implicar un checkpoint truncado o parcial, pero no existe documentación que lo verifique. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre estimación de emisiones que aparece en la plantilla por defecto de Hugging Face.
 
 ## Capacidades
 
@@ -77,11 +77,11 @@ Los datos de los modelos comparativos provienen de su documentación pública; e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| qwen-metaphor-unke-camada-12-zero-um | 596 M | No disponible | No disponible | HuggingFace, 0 descargas | No disponibles |
-| Qwen3-0.6B (posible base por tag y recuento) | 0,6 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado | Si, publicados por el autor |
-| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache 2.0 | HuggingFace | Si |
-| SmolLM2-360M | 0,36 B | 8.192 tokens | Apache 2.0 | HuggingFace | Si |
-| Llama 3.2 1B | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, con aceptacion de terminos | Si |
+| qwen-metaphor-unke-camada-12-zero-um | 596 M | No disponible | No disponible | Hugging Face, 0 descargas | No disponibles |
+| Qwen3-0.6B (posible base por tag y recuento) | 0,6 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado | Si, publicados por el autor |
+| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache 2.0 | Hugging Face | Si |
+| SmolLM2-360M | 0,36 B | 8.192 tokens | Apache 2.0 | Hugging Face | Si |
+| Llama 3.2 1B | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, con aceptacion de terminos | Si |
 
 Frente a todos ellos, la diferencia práctica no es de tamaño sino de trazabilidad: los alternativos tienen model card completa, licencia explícita y evaluaciones reproducibles; este repositorio no ofrece ninguna de las tres.
 
@@ -100,6 +100,6 @@ Frente a todos ellos, la diferencia práctica no es de tamaño sino de trazabili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-12-zero-um
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-12-zero-um
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, sobre emisiones de carbono; aparece en la plantilla, no es documentación del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este checkpoint en la información disponible.

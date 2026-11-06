@@ -102,8 +102,8 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anvilarth/siglip2-so400m-patch14-384-openvino
-- Modelo base en HuggingFace: https://huggingface.co/google/siglip2-so400m-patch14-384
+- Modelo en Hugging Face: https://huggingface.co/anvilarth/siglip2-so400m-patch14-384-openvino
+- Modelo base en Hugging Face: https://huggingface.co/google/siglip2-so400m-patch14-384
 - Generación anterior (SigLIP 1): https://huggingface.co/google/siglip-so400m-patch14-384
 - Ficha y casos de uso en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/siglip2-so400m-patch14-384-google
 - Detalles del modelo en The Applied: https://theapplied.co/models/google-siglip2-so400m-patch14-384

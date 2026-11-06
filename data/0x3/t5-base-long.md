@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `0x3/t5-base-long` es un modelo T5 v1.1 base preentrenado sobre un corpus japonés. Fue desarrollado por Retrieva, Inc. y publicado en HuggingFace por el usuario 0x3. Se trata de un transformer encoder-decoder con aproximadamente 220 millones de parámetros, diseñado para tareas de procesamiento de lenguaje natural en japonés bajo el paradigma texto-a-texto.
+El modelo `0x3/t5-base-long` es un modelo T5 v1.1 base preentrenado sobre un corpus japonés. Fue desarrollado por Retrieva, Inc. y publicado en Hugging Face por el usuario 0x3. Se trata de un transformer encoder-decoder con aproximadamente 220 millones de parámetros, diseñado para tareas de procesamiento de lenguaje natural en japonés bajo el paradigma texto-a-texto.
 
 El modelo se entrenó con T5X sobre Google Cloud TPU v4-8, utilizando como datos la parte japonesa de mC4 y la Wikipedia japonesa (versión 20220920). La longitud de entrada utilizada durante el preentrenamiento fue de 512 tokens. Su relevancia radica en ofrecer una base en japonés para tareas como traducción, resumen, generación de texto y otras transformaciones de texto, con un tamaño compacto que facilita su adaptación mediante fine-tuning.
 
@@ -21,7 +21,7 @@ El modelo se entrenó con T5X sobre Google Cloud TPU v4-8, utilizando como datos
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura T5 v1.1, que incorpora mejoras sobre el T5 original: activación GEGLU en la capa feed-forward en lugar de ReLU, dropout desactivado durante el preentrenamiento (debe reactivarse en el fine-tuning), sin compartir parámetros entre la capa de embeddings y la capa clasificadora, y una nomenclatura donde "xl" y "xxl" sustituyen a "3B" y "11B". El modelo fue preentrenado desde cero con T5X y posteriormente convertido al formato de HuggingFace Transformers.
+El modelo sigue la arquitectura T5 v1.1, que incorpora mejoras sobre el T5 original: activación GEGLU en la capa feed-forward en lugar de ReLU, dropout desactivado durante el preentrenamiento (debe reactivarse en el fine-tuning), sin compartir parámetros entre la capa de embeddings y la capa clasificadora, y una nomenclatura donde "xl" y "xxl" sustituyen a "3B" y "11B". El modelo fue preentrenado desde cero con T5X y posteriormente convertido al formato de Hugging Face Transformers.
 
 El corpus de entrenamiento está compuesto por la parte japonesa de mC4 y la Wikipedia japonesa (20220920). Se aplicaron filtros para eliminar documentos que no contuvieran ningún carácter hiragana, lo que descarta textos en inglés o chino, y un filtrado de tipo whitelist basado en el dominio de nivel superior de la URL para excluir sitios de afiliados. Los hiperparámetros de entrenamiento incluyen dropout 0.0, batch size 256, precisión fp32, longitud de entrada 512 y de salida 114. Se usó el optimizador Adafactor con learning rate base 1.0 y 10000 pasos de warmup. El modelo se entrenó durante 2097152 pasos.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible en la información proporcionada.
 - GPU recomendadas: no disponible.
 - Capacidad en GPU de consumo: por su tamaño (~220M), se espera que sea ejecutable en GPUs de consumo, aunque no se proporcionan cifras oficiales.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch) y T5X, mencionados en la documentación del modelo.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch) y T5X, mencionados en la documentación del modelo.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0x3/t5-base-long
+- Hugging Face: https://huggingface.co/0x3/t5-base-long
 - Paper de T5: https://arxiv.org/abs/2002.05202
 - Repositorio T5X: https://github.com/google-research/t5x
 - Repositorio T5 original: https://github.com/google-research/text-to-text-transfer-transformer

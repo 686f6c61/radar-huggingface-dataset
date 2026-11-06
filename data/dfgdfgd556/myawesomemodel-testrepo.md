@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace creado por el usuario dfgdfgd556 con fines aparentemente de prueba, dado que no contiene pesos, no registra descargas y su tamaño es de 0.0 GB. La model card describe un modelo de lenguaje llamado "MyAwesomeModel" con capacidades de razonamiento, generación de código y soporte de function calling, pero no se proporciona ninguna especificación técnica verificable (arquitectura, número de parámetros, datos de entrenamiento, etc.).
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face creado por el usuario dfgdfgd556 con fines aparentemente de prueba, dado que no contiene pesos, no registra descargas y su tamaño es de 0.0 GB. La model card describe un modelo de lenguaje llamado "MyAwesomeModel" con capacidades de razonamiento, generación de código y soporte de function calling, pero no se proporciona ninguna especificación técnica verificable (arquitectura, número de parámetros, datos de entrenamiento, etc.).
 
 La relevancia de este repositorio es nula desde el punto de vista práctico: no hay artefactos descargables, no hay código de inferencia, y las afirmaciones de rendimiento carecen de metodología reproducible. Se trata de un repositorio de prueba o placeholder, no de un modelo utilizable. Cualquier evaluación seria debe descartarlo hasta que se publique información real.
 
@@ -77,5 +77,5 @@ No disponible. Al no existir informacion sobre arquitectura, tamano o rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dfgdfgd556/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/dfgdfgd556/MyAwesomeModel-TestRepo
 - No se han encontrado papers, repositorios de codigo, demos o documentacion adicional en la busqueda web.

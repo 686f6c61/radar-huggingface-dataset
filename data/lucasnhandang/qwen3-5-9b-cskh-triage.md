@@ -6,7 +6,7 @@
 
 El modelo base Qwen3.5-9B, desarrollado por Alibaba, es un transformer denso multimodal con arquitectura híbrida de atención (gated delta networks), encoder de visión, contexto nativo de 262K tokens y soporte para 201 idiomas. El adaptador añade una capa de especialización ligera (0.2 GB) que permite ajustar el comportamiento del modelo a un dominio concreto con un coste computacional reducido. Su relevancia radica en que combina la potencia de un modelo de última generación con la flexibilidad de un adaptador de bajo rango, facilitando su despliegue en entornos de producción con recursos limitados.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace y en los resultados de búsqueda sobre el modelo base. La model card del adaptador está prácticamente vacía, por lo que muchos datos específicos del adaptador no están disponibles.
+La ficha se basa exclusivamente en la información disponible en Hugging Face y en los resultados de búsqueda sobre el modelo base. La model card del adaptador está prácticamente vacía, por lo que muchos datos específicos del adaptador no están disponibles.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ La ficha se basa exclusivamente en la información disponible en HuggingFace y e
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en la librería PEFT (versión 0.20.0) y utiliza el formato LoRA, que introduce matrices de bajo rango en las capas del modelo base para adaptar su comportamiento a una tarea específica. El entrenamiento se realizó mediante SFT (supervised fine-tuning) con la librería TRL de HuggingFace, como indican las etiquetas del repositorio. No se proporcionan detalles sobre el dataset de entrenamiento, el número de pasos, el rango del adaptador, la tasa de aprendizaje ni el régimen de precisión (fp16, bf16, etc.).
+El adaptador se basa en la librería PEFT (versión 0.20.0) y utiliza el formato LoRA, que introduce matrices de bajo rango en las capas del modelo base para adaptar su comportamiento a una tarea específica. El entrenamiento se realizó mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face, como indican las etiquetas del repositorio. No se proporcionan detalles sobre el dataset de entrenamiento, el número de pasos, el rango del adaptador, la tasa de aprendizaje ni el régimen de precisión (fp16, bf16, etc.).
 
 El modelo base Qwen3.5-9B, sobre el que se monta el adaptador, emplea una arquitectura densa con atención híbrida basada en gated delta networks, un encoder de visión para entrada multimodal (imagen y vídeo) y soporte para múltiples tokens de predicción (MTP). Fue lanzado el 2 de marzo de 2026 bajo licencia Apache 2.0 y está diseñado para razonamiento, generación de código, tool calling y tareas agénticas. El adaptador hereda todas estas capacidades, aunque su especialización declarada es el triage de atención al cliente.
 
@@ -83,7 +83,7 @@ El adaptador `cskh-triage` se diferencia de estos modelos generalistas en que es
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/lucasnhandang/qwen3.5-9b-cskh-triage
+- Repositorio Hugging Face del adaptador: https://huggingface.co/lucasnhandang/qwen3.5-9b-cskh-triage
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ficha de vLLM Recipes sobre Qwen3.5-9B: https://recipes.vllm.ai/Qwen/Qwen3.5-9B
 - Ficha de OVHcloud sobre Qwen3.5-9B: https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/qwen-3-5-9b/

@@ -1,7 +1,7 @@
 # ashishreu/efficientformer-matching
 
 ## Resumen
-`ashishreu/efficientformer-matching` es un repositorio experimental publicado en HuggingFace por el usuario Ashish Reddy que contiene una implementación propia de una EfficientFormer a escala *tiny* orientada a tareas de *matching* (emparejamiento). No es un modelo entrenado ni un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye además `config.json` con la configuración de arquitectura generada, `training_args.json` con la receta por defecto y `eval.py` como artefacto principal.
+`ashishreu/efficientformer-matching` es un repositorio experimental publicado en Hugging Face por el usuario Ashish Reddy que contiene una implementación propia de una EfficientFormer a escala *tiny* orientada a tareas de *matching* (emparejamiento). No es un modelo entrenado ni un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye además `config.json` con la configuración de arquitectura generada, `training_args.json` con la receta por defecto y `eval.py` como artefacto principal.
 
 El interés del repositorio es fundamentalmente metodológico: sirve como base de código inspeccionable para experimentar con cambios de arquitectura antes de lanzar un entrenamiento completo. La arquitectura declarada emplea atención dilatada (*dilated attention*), fusión mediante co-atención (*co attention*), activación GELU y normalización InstanceNorm, todo ello con un total de 33.088 parámetros según los metadatos de safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier EfficientFormer preentrenado de la familia original (que maneja decenas de millones de parámetros).
 
@@ -84,13 +84,13 @@ La comparación es limitada porque los modelos de la familia EfficientFormer ori
 - No hay información sobre la composición de datos de entrenamiento, porque no ha habido tal entrenamiento.
 - No se especifican los términos de las fuentes de datos externas: la licencia BSD-3-Clause cubre el código del repositorio, pero la model card advierte de que deben revisarse por separado las condiciones de los conjuntos de datos externos si se usan con este código.
 - Restricciones de licencia: BSD-3-Clause es permisiva y permite uso comercial del código, con la obligación habitual de conservar el aviso de copyright y la cláusula de exención de responsabilidad. No hay cláusulas de uso aceptable adicionales documentadas.
-- Advertencia operativa: al ser una implementación personalizada, las API genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que puede romper *pipelines* que asuman compatibilidad con `AutoModel`.
+- Advertencia operativa: al ser una implementación personalizada, las API genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que puede romper *pipelines* que asuman compatibilidad con `AutoModel`.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto aquí incluidos, según indica el propio autor.
 - El repositorio tiene 0 descargas y 0 likes, sin historial de uso ni validación por parte de terceros.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/ashishreu/efficientformer-matching
-- Perfil del autor en HuggingFace: https://huggingface.co/ashishreu
+- Repositorio en Hugging Face: https://huggingface.co/ashishreu/efficientformer-matching
+- Perfil del autor en Hugging Face: https://huggingface.co/ashishreu
 - Repositorio con nombre idéntico de otro usuario: https://huggingface.co/itsyichensu/efficientformer-matching
 - Documentación de EfficientFormer en MMPretrain: https://onedl-mmpretrain.readthedocs.io/en/latest/papers/efficientformer.html
 - Repositorio oficial de EfficientFormer y EfficientFormerV2 (Snap Research): https://github.com/snap-research/EfficientFormer

@@ -4,7 +4,7 @@
 
 El modelo `open-sci/open-sci-ref-1.7b-nemotron-hq-mv_reasoning-100B-4096-longsft_16k-ot30k` es un ajuste fino de tipo full fine-tuning desarrollado por la organizacion open-sci, entrenado con el framework LLaMA-Factory sobre un dataset derivado de Open Thoughts. Con 1.714.377.728 parametros totales (aproximadamente 1,7 mil millones), se enmarca en la categoria de modelos pequenos orientados a tareas de razonamiento y extraccion de caracteristicas.
 
-El identificador del modelo sugiere que parte de una base Nemotron (familia de NVIDIA) y que fue entrenado sobre un subconjunto de 30.000 muestras con secuencias largas de hasta 16.000 tokens, con un contexto de referencia de 4096. El pipeline declarado en HuggingFace es `feature-extraction`, aunque el proceso de entrenamiento corresponde a un SFT supervisado, por lo que su uso natural es la generacion de texto y el razonamiento.
+El identificador del modelo sugiere que parte de una base Nemotron (familia de NVIDIA) y que fue entrenado sobre un subconjunto de 30.000 muestras con secuencias largas de hasta 16.000 tokens, con un contexto de referencia de 4096. El pipeline declarado en Hugging Face es `feature-extraction`, aunque el proceso de entrenamiento corresponde a un SFT supervisado, por lo que su uso natural es la generacion de texto y el razonamiento.
 
 Su relevancia actual es limitada pero concreta: se trata de un artefacto de investigacion reproducible (licencia `other`, pesos en safetensors, trazabilidad completa de hiperparametros) util para estudiar el efecto del SFT largo sobre modelos pequenos en tareas de razonamiento. No obstante, la model card es practicamente vacia y no se han publicado resultados de evaluacion, lo que restringe su adopcion en produccion sin una validacion previa por parte del usuario.
 
@@ -34,7 +34,7 @@ Los hiperparametros documentados son: learning rate 4e-05, batch total de 128 (b
 - Generacion de texto autoregresiva mediante `transformers`, con pesos completos en safetensors.
 - Razonamiento multi-paso derivado del SFT sobre Open Thoughts, un corpus orientado a cadenas de pensamiento.
 - Entrenamiento con secuencias largas (hasta 16k tokens segun el identificador), lo que sugiere tolerancia a contextos extensos, aunque no confirmado oficialmente.
-- Extraccion de caracteristicas (pipeline declarado en HuggingFace: `feature-extraction`).
+- Extraccion de caracteristicas (pipeline declarado en Hugging Face: `feature-extraction`).
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes: no disponible.
 - Capacidades multilingues: no disponibles; no se declara lista de idiomas.
@@ -65,10 +65,10 @@ La model-index del autor declara la entrada `sft__f679a5c592c8dffb__open-sci-re-
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-1.7b-nemotron-hq-mv_reasoning | 1,7 B | no disponible (referencia 4096 / 16k en entrenamiento) | other | HuggingFace, 15 descargas | Sin benchmarks publicados |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado | Con benchmarks publicados y soporte en vLLM/llama.cpp |
-| Llama-3.2-1B-Instruct | 1,2 B | 131.072 tokens | Llama 3.2 Community License | HuggingFace, ampliamente adoptado | Con benchmarks publicados y ecosistema maduro |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado | Con benchmarks publicados y soporte en llama.cpp |
+| open-sci-ref-1.7b-nemotron-hq-mv_reasoning | 1,7 B | no disponible (referencia 4096 / 16k en entrenamiento) | other | Hugging Face, 15 descargas | Sin benchmarks publicados |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado | Con benchmarks publicados y soporte en vLLM/llama.cpp |
+| Llama-3.2-1B-Instruct | 1,2 B | 131.072 tokens | Llama 3.2 Community License | Hugging Face, ampliamente adoptado | Con benchmarks publicados y ecosistema maduro |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado | Con benchmarks publicados y soporte en llama.cpp |
 
 La comparativa se basa en caracteristicas publicas de esos modelos; no se dispone de datos de rendimiento del modelo open-sci para contrastar.
 
@@ -86,7 +86,7 @@ La comparativa se basa en caracteristicas publicas de esos modelos; no se dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-1.7b-nemotron-hq-mv_reasoning-100B-4096-longsft_16k-ot30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-1.7b-nemotron-hq-mv_reasoning-100B-4096-longsft_16k-ot30k
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Open Thoughts (dataset de origen): https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 - Transformers (biblioteca): https://github.com/huggingface/transformers

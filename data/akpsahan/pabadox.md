@@ -45,7 +45,7 @@ La caracteristica tecnica mas destacable de Pabadox es su naturaleza "abliterate
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se incluyen datos de MMLU, HumanEval, GSM8K ni otras metricas estandar en la model card ni en la informacion de HuggingFace. El repositorio no ofrece comparativas con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. No se incluyen datos de MMLU, HumanEval, GSM8K ni otras metricas estandar en la model card ni en la informacion de Hugging Face. El repositorio no ofrece comparativas con otros modelos.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akpsahan/Pabadox
+- Repositorio Hugging Face: https://huggingface.co/akpsahan/Pabadox
 - Modelo base: https://huggingface.co/darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT-GGUF
 - Pagina de descargas de cuantizaciones: https://hf.tst.eu/model#XORTRON.CriminalComputing.2026.27B.Instruct.NEXT-i1-GGUF

@@ -4,7 +4,7 @@
 
 `pi05_FAST_aloha_pick_up_ES` es un checkpoint de un modelo vision-language-action (VLA) basado en π0.5 con tokenización FAST, desarrollado por Prachi Garg y colaboradores (Steve Xing, Prahit Yaugand, Saurabh Gupta, Derek Hoiem) en el marco del trabajo "Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation". El modelo parte de `pi05_base` y se ha afinado exclusivamente con demostraciones expertas del dataset `aloha_pick_up_red_green_cubes_expert`, orientado a la tarea de recogida de cubos rojos y verdes con un brazo robótico ALOHA.
 
-Se trata de un artefacto de investigación publicado en HuggingFace bajo la librería `openpi`, con un repositorio de 12,4 GB que contiene únicamente pesos (`params/`) y activos auxiliares (`assets/`), sin estado del optimizador. El checkpoint corresponde al paso 9000 de entrenamiento y se distribuye con licencia Apache 2.0, lo que permite su uso comercial y su modificación.
+Se trata de un artefacto de investigación publicado en Hugging Face bajo la librería `openpi`, con un repositorio de 12,4 GB que contiene únicamente pesos (`params/`) y activos auxiliares (`assets/`), sin estado del optimizador. El checkpoint corresponde al paso 9000 de entrenamiento y se distribuye con licencia Apache 2.0, lo que permite su uso comercial y su modificación.
 
 La relevancia del modelo es acotada y experimental: no es un modelo de propósito general, sino una política robótica especializada en una tarea concreta de manipulación, concebida como línea base ("baseline") para comparar con métodos de control generativo auto-demostrado. Su interés principal reside en la reproducibilidad del pipeline de fine-tuning de VLAs sobre ALOHA y en servir de referencia dentro del artículo citado.
 
@@ -45,7 +45,7 @@ No se detallan en la información disponible el número de tokens de entrenamien
 - Evaluación de pipelines de fine-tuning: al partir de `pi05_base` y entrenarse solo con demostraciones expertas, permite estudiar el efecto del número de pasos (9000) y de la composición del dataset en el rendimiento final.
 - Desarrollo de sistemas de pick-and-place: la política puede integrarse en flujos de recogida y colocación de objetos de colores, un caso frecuente en laboratorios de robótica.
 - Benchmarking de hardware robótico: útil para medir latencia y fiabilidad de inferencia de VLAs sobre el brazo ALOHA/Trossen en condiciones controladas.
-- Docencia y formación en robótica: ejemplo práctico y reproducible de despliegue de un VLA con `openpi` y HuggingFace, adecuado para cursos avanzados de aprendizaje por imitación.
+- Docencia y formación en robótica: ejemplo práctico y reproducible de despliegue de un VLA con `openpi` y Hugging Face, adecuado para cursos avanzados de aprendizaje por imitación.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05_FAST_aloha_pick_up_ES` | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| `pi05_FAST_aloha_pick_up_ES` | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | `pi05_base` (modelo base de π0.5) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros checkpoints ALOHA del mismo proyecto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos comparativos de parámetros, contexto ni rendimiento para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prachigarg23/pi05_FAST_aloha_pick_up_ES
+- Hugging Face: https://huggingface.co/prachigarg23/pi05_FAST_aloha_pick_up_ES
 - Dataset: https://huggingface.co/datasets/prachigarg23/aloha_pick_up_red_green_cubes_expert
 - Paper: https://arxiv.org/abs/2608.19490
 - Project page: https://self-supervised-control.pages.dev/

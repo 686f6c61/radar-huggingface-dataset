@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones más all
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/PhoneLLM-Alpha-1-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/PhoneLLM-Alpha-1-ROCmFP4-GGUF
 - Modelo base original: https://huggingface.co/pipecat-ai/phonellm-alpha-1
 - Modelo base NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Versión NVFP4 oficial: https://huggingface.co/pipecat-ai/phonellm-alpha-1-nvfp4

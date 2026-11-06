@@ -91,10 +91,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary Bonsai 2 27B int2-ov (v2) | 27B | no disponible (probado a 16k) | 29,3 tok/s en Arc A770 16 GB | Apache 2.0 | HuggingFace, conversión comunitaria |
-| Ternary Bonsai 2 27B int2-ov (v1) | 27B | no disponible | ~16,9 tok/s en Arc A770 16 GB | Apache 2.0 | HuggingFace, misma repo (`v1-portable/`) |
-| prism-ml/Ternary-Bonsai-2-27B-gguf | 27B | no disponible | no disponible | no disponible | HuggingFace (formato GGUF) |
-| Qwen/Qwen3.8-27B | 27B | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| Ternary Bonsai 2 27B int2-ov (v2) | 27B | no disponible (probado a 16k) | 29,3 tok/s en Arc A770 16 GB | Apache 2.0 | Hugging Face, conversión comunitaria |
+| Ternary Bonsai 2 27B int2-ov (v1) | 27B | no disponible | ~16,9 tok/s en Arc A770 16 GB | Apache 2.0 | Hugging Face, misma repo (`v1-portable/`) |
+| prism-ml/Ternary-Bonsai-2-27B-gguf | 27B | no disponible | no disponible | no disponible | Hugging Face (formato GGUF) |
+| Qwen/Qwen3.8-27B | 27B | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 
 No se dispone de datos de benchmarks comparativos con modelos de la misma categoría en la información proporcionada.
 
@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheSanchezian/Ternary-Bonsai-2-27B-int2-ov
+- Hugging Face: https://huggingface.co/TheSanchezian/Ternary-Bonsai-2-27B-int2-ov
 - Modelo ternario base (PrismML): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo original Qwen3.8 27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - OpenVINO PR #38837 (build necesario): no disponible como URL directa en la información proporcionada

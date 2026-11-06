@@ -76,8 +76,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento en KnK-6 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3-1.7B-KnK6RL-Polaris-MaxRL-1000steps) | ~2,03 B | No disponible | pass@1 0,740 / pass@64 0,973 | Apache 2.0 | HuggingFace, solo safetensors |
-| Qwen3-1.7B-Base | ~2,03 B | No disponible en la información proporcionada | pass@1 0,015 / pass@64 0,323 | Apache 2.0 | HuggingFace |
+| Este modelo (Qwen3-1.7B-KnK6RL-Polaris-MaxRL-1000steps) | ~2,03 B | No disponible | pass@1 0,740 / pass@64 0,973 | Apache 2.0 | Hugging Face, solo safetensors |
+| Qwen3-1.7B-Base | ~2,03 B | No disponible en la información proporcionada | pass@1 0,015 / pass@64 0,323 | Apache 2.0 | Hugging Face |
 | Otros modelos pequeños especializados en razonamiento lógico mediante RLVR | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La model card solo ofrece comparación directa contra su propio modelo base. No se han identificado en la información disponible otros modelos comparables con métricas publicadas sobre la misma tarea KnK-6.
@@ -98,7 +98,7 @@ La model card solo ofrece comparación directa contra su propio modelo base. No 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthsingh18/Qwen3-1.7B-KnK6RL-Polaris-MaxRL-1000steps
+- Modelo en Hugging Face: https://huggingface.co/siddharthsingh18/Qwen3-1.7B-KnK6RL-Polaris-MaxRL-1000steps
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - reasoning-gym (generador de los puzles): https://github.com/open-thought/reasoning-gym
 - verl (framework de RL empleado): https://github.com/volcengine/verl

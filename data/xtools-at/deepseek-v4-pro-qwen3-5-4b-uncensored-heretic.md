@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos de capacidad (MMLU, HumanEval,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic
 - Modelo original: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Heretic project: https://heretic-project.org

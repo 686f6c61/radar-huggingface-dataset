@@ -61,4 +61,4 @@ No disponible. No se dispone de información sobre modelos comparables en el rep
 
 ## Enlaces
 
-- [HuggingFace: martingonzalez0606/paper_027603436_ocr_freeform](https://huggingface.co/martingonzalez0606/paper_027603436_ocr_freeform)
+- [Hugging Face: martingonzalez0606/paper_027603436_ocr_freeform](https://huggingface.co/martingonzalez0606/paper_027603436_ocr_freeform)

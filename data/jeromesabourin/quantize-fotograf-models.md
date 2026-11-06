@@ -96,12 +96,12 @@ La diferencia frente a los repositorios upstream no está en la calidad, sino en
 - No se documentan sesgos ni evaluación de robustez; tampoco hay métricas que permitan comparar con los pesos originales.
 - El repositorio no tiene descargas ni validación de la comunidad, y la model card está en francés, sin ejemplos, sin versión de opset y sin instrucciones de uso más allá de la nota sobre DirectML.
 - Sin soporte de prompt ni de guidance en OSEDiff: no se puede dirigir la restauración hacia un dominio concreto (retrato, paisaje, documento).
-- No procesa texto, audio ni vídeo; no sirve para tareas de lenguaje pese a estar publicado en HuggingFace.
+- No procesa texto, audio ni vídeo; no sirve para tareas de lenguaje pese a estar publicado en Hugging Face.
 - El tamaño del repo (2,2 GB) obliga a descargar los cuatro grafos aunque solo se use uno.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jeromesabourin/quantize-fotograf-models
+- Repositorio en Hugging Face: https://huggingface.co/jeromesabourin/quantize-fotograf-models
 - Restormer (código y pesos originales, MIT): https://github.com/swz30/Restormer
 - HAT (código y pesos originales, Apache-2.0): https://github.com/XPixelGroup/HAT
 - OSEDiff (código y pesos originales): https://github.com/cswry/OSEDiff

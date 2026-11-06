@@ -93,7 +93,7 @@ La v2 mejora la v1 en velocidad (+10 %) y en capacidad de KV pool (+45 %), mante
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Soomin33/Qwen3.8-Flash-Next-FP6-INT8
+- Repositorio Hugging Face: https://huggingface.co/Soomin33/Qwen3.8-Flash-Next-FP6-INT8
 - Repositorio v1 (FP6): https://huggingface.co/Soomin33/Qwen3.8-Flash-Next-FP6
 - Modelo base oficial (FP8): https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Modelo original (bf16): https://huggingface.co/Qwen/Qwen3.8-Flash-Next

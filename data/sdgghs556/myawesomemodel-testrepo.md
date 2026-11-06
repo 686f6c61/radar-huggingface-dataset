@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario sdgghs556 en un repositorio de HuggingFace con el identificador `sdgghs556/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor declara que el modelo alcanza un 87,5 % de precisión en el conjunto de evaluación AIME 2025, frente al 70 % de la versión previa, y que utiliza una media de 23 000 tokens por pregunta en dicho conjunto, frente a los 12 000 anteriores.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario sdgghs556 en un repositorio de Hugging Face con el identificador `sdgghs556/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor declara que el modelo alcanza un 87,5 % de precisión en el conjunto de evaluación AIME 2025, frente al 70 % de la versión previa, y que utiliza una media de 23 000 tokens por pregunta en dicho conjunto, frente a los 12 000 anteriores.
 
 Sin embargo, el repositorio no contiene archivos de pesos (tamaño 0.0 GB), no tiene descargas ni valoraciones, y la model card no especifica arquitectura, número de parámetros, longitud de contexto ni otros detalles técnicos fundamentales. La ficha se basa exclusivamente en la información declarada por el autor, que no ha sido verificada de forma independiente. Por tanto, cualquier dato técnico debe considerarse no disponible salvo que se indique lo contrario.
 
@@ -97,4 +97,4 @@ No disponible. La model card no identifica los modelos comparados (Model1, Model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sdgghs556/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/sdgghs556/MyAwesomeModel-TestRepo

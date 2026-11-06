@@ -82,9 +82,9 @@ Comparativa dentro de la propia familia LMEnt, que es la que permite una evaluac
 
 | Modelo | Rol en el experimento | Parametros | Metricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lment-1b-rome-snmf-ratio-out-b131k` (este) | Edicion SNMF del control completo, concepto Ancient Rome | 1.336.035.328 | `H_test` = 0.000; `R_abs` = 0.940; `R_KL` = 0.891 | No declarada | Publico en HuggingFace, 0 descargas |
-| `lment-1b-control-2e-b131k` | Control completo sin excluir el concepto | No disponible en la informacion proporcionada | No disponible | No disponible | Publico en HuggingFace |
-| `lment-1b-norome-2e-b131k` | Gemelo con exclusion de concepto (entrenado con el concepto excluido) | No disponible en la informacion proporcionada | No disponible | No disponible | Publico en HuggingFace |
+| `lment-1b-rome-snmf-ratio-out-b131k` (este) | Edicion SNMF del control completo, concepto Ancient Rome | 1.336.035.328 | `H_test` = 0.000; `R_abs` = 0.940; `R_KL` = 0.891 | No declarada | Publico en Hugging Face, 0 descargas |
+| `lment-1b-control-2e-b131k` | Control completo sin excluir el concepto | No disponible en la informacion proporcionada | No disponible | No disponible | Publico en Hugging Face |
+| `lment-1b-norome-2e-b131k` | Gemelo con exclusion de concepto (entrenado con el concepto excluido) | No disponible en la informacion proporcionada | No disponible | No disponible | Publico en Hugging Face |
 | OLMo2 1B (modelo base de la familia) | Base sobre la que se construye toda la familia LMEnt | ~1B (orden de magnitud de la familia) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico |
 
 No se dispone de datos para comparar con alternativas fuera de esta familia (por ejemplo, otros modelos de borrado de conceptos como los citados EMBER o RMU), mas alla de que forman parte de la misma evaluacion del articulo.
@@ -104,7 +104,7 @@ No se dispone de datos para comparar con alternativas fuera de esta familia (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-rome-snmf-ratio-out-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-rome-snmf-ratio-out-b131k
 - Control completo de partida: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusion de concepto: https://huggingface.co/itamarstahl/lment-1b-norome-2e-b131k
 - Articulo de referencia: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (no se proporciona URL en la informacion disponible)

@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su potencial para ofrecer respuestas espe
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3, que es un transformer autoregresivo con atencion por ventanas deslizantes y soporte de decodificacion especulativa. Qwen3-1.7B es la variante mas pequena de la familia Qwen3, disenada para ofrecer un equilibrio entre rendimiento y eficiencia computacional. El modelo base fue cuantizado a 4 bits mediante bitsandbytes para reducir su huella de memoria y acelerar el ajuste fino, y posteriormente fue afinado con la biblioteca TRL de HuggingFace.
+El modelo se basa en la arquitectura Qwen3, que es un transformer autoregresivo con atencion por ventanas deslizantes y soporte de decodificacion especulativa. Qwen3-1.7B es la variante mas pequena de la familia Qwen3, disenada para ofrecer un equilibrio entre rendimiento y eficiencia computacional. El modelo base fue cuantizado a 4 bits mediante bitsandbytes para reducir su huella de memoria y acelerar el ajuste fino, y posteriormente fue afinado con la biblioteca TRL de Hugging Face.
 
 El ajuste fino se realizo con Unsloth, que optimiza el proceso de entrenamiento mediante kernels eficientes y tecnicas de ahorro de memoria. El objetivo era especializar el modelo en el dominio de los equipos rotativos, pero no se ha publicado informacion sobre el volumen de datos, la composicion del dataset, el numero de pasos de entrenamiento ni si se aplicaron tecnicas de RLHF o DPO. El nombre del repositorio sugiere que es el resultado de la iteracion numero 353 de un proceso de ajuste.
 

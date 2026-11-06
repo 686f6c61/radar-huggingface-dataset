@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeneralUser GS 2.0.3 es un repositorio alojado en HuggingFace por el usuario Audante que contiene una copia del banco de sonidos (SoundFont) GeneralUser GS, en la version correspondiente al commit `97049183643d5fc5a9322a69c5b09efb667c6c3a` del repositorio original de S. Christian Collins. No se trata de un modelo de lenguaje ni de un modelo de IA en sentido estricto: es un fichero de samples de instrumentos musicales en formato SoundFont, utilizado habitualmente en sintetizadores de software y editores MIDI para reproducir instrumentos virtuales.
+GeneralUser GS 2.0.3 es un repositorio alojado en Hugging Face por el usuario Audante que contiene una copia del banco de sonidos (SoundFont) GeneralUser GS, en la version correspondiente al commit `97049183643d5fc5a9322a69c5b09efb667c6c3a` del repositorio original de S. Christian Collins. No se trata de un modelo de lenguaje ni de un modelo de IA en sentido estricto: es un fichero de samples de instrumentos musicales en formato SoundFont, utilizado habitualmente en sintetizadores de software y editores MIDI para reproducir instrumentos virtuales.
 
 El autor del repositorio declara explicitamente que "no es una release oficial" y que "el fichero es identico al de origen", sin cambios. El tamano del repositorio aparece como 0.0 GB, lo que sugiere que el contenido no esta efectivamente alojado o que la informacion de metadatos esta incompleta. No se dispone de pipeline, idiomas ni resultados de benchmarks.
 
@@ -79,6 +79,6 @@ La comparacion con modelos de lenguaje no procede. Los datos de rendimiento subj
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Audante/GeneralUser-GS-2.0.3
+- Repositorio en Hugging Face: https://huggingface.co/Audante/GeneralUser-GS-2.0.3
 - Proyecto original de GeneralUser GS: https://github.com/mrbumpy409/GeneralUser-GS
 - Commit de referencia: `97049183643d5fc5a9322a69c5b09efb667c6c3a`

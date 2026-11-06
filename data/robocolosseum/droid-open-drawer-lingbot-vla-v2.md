@@ -40,7 +40,7 @@ El fine-tuning se ejecuta en dos fases: 5 epocas iniciales (documentadas en el r
 - Percepcion multimodal: procesa tres camaras simultaneamente (exterior izquierda, exterior derecha y muneca) a resolucion 360x640.
 - Seguimiento de instrucciones: ejecuta comandos cortos en ingles ("mug on coaster", "close laptop") mapeados a politicas de manipulacion.
 - Politica de imitacion end-to-end: aprende directamente de demostraciones teleoperadas del dataset DROID.
-- Integracion con LeRobot: carga y despliegue mediante la libreria LeRobot, compatible con el ecosistema HuggingFace.
+- Integracion con LeRobot: carga y despliegue mediante la libreria LeRobot, compatible con el ecosistema Hugging Face.
 - Soporte de tool calling / function calling: no disponible (modelo de robotica, no de texto).
 - Soporte de agentes y razonamiento multi-paso: no disponible como capacidad generica; la ejecucion es de politica reactiva por paso.
 - Capacidades multilingues: no disponible; las instrucciones de entrenamiento estan en ingles.
@@ -105,7 +105,7 @@ No se dispone de tasas de exito comparativas entre estos modelos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/droid-open-drawer-lingbot-vla-v2
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/droid-open-drawer-lingbot-vla-v2
 - Repositorio de modelos DROID (5 epocas): https://huggingface.co/RoboColosseum/DROID-models
 - Repositorio BimanualYAM-models: https://huggingface.co/RoboColosseum/BimanualYAM-models
 - Checkpoint base LingBot-VLA v2 6B: https://huggingface.co/robbyant/lingbot-vla-v2-6b

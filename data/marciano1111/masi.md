@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marciano1111/masi` es un LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, entrenado sobre la variante Krea 2 RAW y presentado por el autor sobre Krea 2 Turbo. Lo desarrolla el usuario de HuggingFace `marciano1111` y su funcion es inyectar un concepto visual concreto —una identidad de personaje invocada mediante el token disparador `vqz woman`— en el pipeline base de Krea 2, sin necesidad de reentrenar el modelo completo.
+`marciano1111/masi` es un LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, entrenado sobre la variante Krea 2 RAW y presentado por el autor sobre Krea 2 Turbo. Lo desarrolla el usuario de Hugging Face `marciano1111` y su funcion es inyectar un concepto visual concreto —una identidad de personaje invocada mediante el token disparador `vqz woman`— en el pipeline base de Krea 2, sin necesidad de reentrenar el modelo completo.
 
 Se trata, por tanto, de un adaptador de bajo rango (LoRA) y no de un modelo fundacional autonomo: su relevancia depende enteramente de la disponibilidad del checkpoint base `krea/Krea-2-Raw` / `krea/Krea-2-Turbo`. El repositorio pesa aproximadamente 1,0 GB y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial siempre que se respete la licencia del modelo base.
 
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA o adaptadores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marciano1111/masi
+- Modelo en Hugging Face: https://huggingface.co/marciano1111/masi
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo referenciada en el ejemplo: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers

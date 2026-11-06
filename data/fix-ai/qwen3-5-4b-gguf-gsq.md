@@ -70,9 +70,9 @@ Notas de evaluacion: AIME 25 y GPQA Diamond se evaluaron con thinking activado; 
 
 | Modelo | Parametros | Cuantizacion | Tamaño aprox. | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-GGUF-GSQ (este) | ~4,2B | Q2_K_XL (GSQ) | 1,9 GB | Apache 2.0 | GGUF publico en HuggingFace |
-| Unsloth UD-Q2_K_XL de Qwen3.5-4B | ~4,2B | Q2_K_XL (estandar) | ~1,9 GB | Apache 2.0 | GGUF publico en HuggingFace |
-| Qwen/Qwen3.5-4B (original) | ~4,2B | sin cuantizar | ~8 GB aprox. | Apache 2.0 | Safetensors publicos en HuggingFace |
+| Qwen3.5-4B-GGUF-GSQ (este) | ~4,2B | Q2_K_XL (GSQ) | 1,9 GB | Apache 2.0 | GGUF publico en Hugging Face |
+| Unsloth UD-Q2_K_XL de Qwen3.5-4B | ~4,2B | Q2_K_XL (estandar) | ~1,9 GB | Apache 2.0 | GGUF publico en Hugging Face |
+| Qwen/Qwen3.5-4B (original) | ~4,2B | sin cuantizar | ~8 GB aprox. | Apache 2.0 | Safetensors publicos en Hugging Face |
 
 Frente al punto de partida de Unsloth, la version GSQ ofrece mejoras sustanciales en todos los benchmarks evaluados (por ejemplo, +33,33 puntos en AIME 25 y +8,87 en GSM8K) con el mismo tamaño de fichero y compatibilidad de runtime identica. No se dispone de datos comparativos con otros modelos de la misma clase de tamano (Llama, Gemma, Phi) en esta ficha.
 
@@ -93,6 +93,6 @@ Frente al punto de partida de Unsloth, la version GSQ ofrece mejoras sustanciale
 - Repositorio original: https://huggingface.co/ISTA-DASLab/Qwen3.5-4B-GGUF-GSQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper GSQ (arXiv:2604.18556): https://arxiv.org/abs/2604.18556
-- Paper page en HuggingFace: https://huggingface.co/papers/2604.18556
+- Paper page en Hugging Face: https://huggingface.co/papers/2604.18556
 - Codigo GSQ: https://github.com/IST-DASLab/GSQ
-- Coleccion GSQ en HuggingFace: https://huggingface.co/collections/ISTA-DASLab/gsq
+- Coleccion GSQ en Hugging Face: https://huggingface.co/collections/ISTA-DASLab/gsq

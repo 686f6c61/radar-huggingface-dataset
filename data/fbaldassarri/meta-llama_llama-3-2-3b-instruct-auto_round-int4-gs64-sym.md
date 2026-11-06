@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (AutoRound INT4) | 3.2B (base) | 128K (base) | INT4 gs64 sym | Llama 3.2 | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct (original) | 3.2B | 128K | FP16/BF16 | Llama 3.2 | HuggingFace |
-| TheBloke/Llama-3.2-3B-Instruct-GGUF (ejemplo típico) | 3.2B | 128K | GGUF (Q4_K_M, etc.) | Llama 3.2 | HuggingFace |
+| Este modelo (AutoRound INT4) | 3.2B (base) | 128K (base) | INT4 gs64 sym | Llama 3.2 | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct (original) | 3.2B | 128K | FP16/BF16 | Llama 3.2 | Hugging Face |
+| TheBloke/Llama-3.2-3B-Instruct-GGUF (ejemplo típico) | 3.2B | 128K | GGUF (Q4_K_M, etc.) | Llama 3.2 | Hugging Face |
 
 La comparativa es cualitativa: el modelo original ofrece máxima precisión pero mayor consumo de memoria; las versiones GGUF (de terceros) son más flexibles para llama.cpp/Ollama; esta versión AutoRound está optimizada para el stack de Intel y mantiene el formato safetensors nativo de transformers. No hay datos de rendimiento comparativo publicados.
 
@@ -75,7 +75,7 @@ La comparativa es cualitativa: el modelo original ofrece máxima precisión pero
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-Instruct-auto_round-int4-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-Instruct-auto_round-int4-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Framework Intel AutoRound: https://github.com/intel/auto-round
 - Licencia Llama 3.2: https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE

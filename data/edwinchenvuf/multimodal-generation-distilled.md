@@ -6,7 +6,7 @@ El repositorio `edwinchenvuf/multimodal-generation-distilled` no contiene un mod
 
 El único archivo con extensión safetensors presente en el repositorio tiene 49.600 parámetros, un tamaño que resulta inviable para cualquier modelo multimodal real (los modelos multimodales actuales tienen del orden de miles de millones de parámetros). El tamaño total del repositorio es de 0.0 GB, lo que confirma que se trata de un archivo simbólico o de prueba, no de un checkpoint utilizable. La licencia es MIT, pero esto aplica a la documentación, no a un modelo.
 
-En consecuencia, esta ficha no puede describir un modelo con capacidades, benchmarks o requisitos de hardware, porque no existe tal modelo. Se documenta aquí la naturaleza real del repositorio para evitar confusiones a quien lo encuentre en HuggingFace.
+En consecuencia, esta ficha no puede describir un modelo con capacidades, benchmarks o requisitos de hardware, porque no existe tal modelo. Se documenta aquí la naturaleza real del repositorio para evitar confusiones a quien lo encuentre en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/edwinchenvuf/multimodal-generation-distilled
+- Repositorio en Hugging Face: https://huggingface.co/edwinchenvuf/multimodal-generation-distilled
 - Articulo de referencia sobre generacion multimodal (mencionado en la busqueda web, no enlazado desde el repositorio): https://arxiv.org/abs/2409.14993
 - Repositorio MiniMax-H3 (contexto de generacion multimodal, no relacionado directamente): https://github.com/MiniMax-AI/MiniMax-H3
 - Ejemplo de archivo safetensors con nombre similar en otro repositorio (sin relacion): https://huggingface.co/Cogent-ai/cogent-csp-15m/blob/main/distilled_multimodal_model.safetensors

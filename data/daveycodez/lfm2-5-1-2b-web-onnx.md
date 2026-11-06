@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos de calidad entre estos modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daveycodez/LFM2.5-1.2B-Web-ONNX
+- Repositorio Hugging Face: https://huggingface.co/daveycodez/LFM2.5-1.2B-Web-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - ONNX oficial: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX
 - Commit de referencia del ONNX oficial: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/tree/10f72e70abf67ac0fd7ebf15bc5854726891d864

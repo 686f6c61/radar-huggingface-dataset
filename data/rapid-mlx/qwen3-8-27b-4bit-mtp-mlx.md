@@ -75,7 +75,7 @@ La comparacion con Qwen3.5-9B es relevante porque ambos son modelos de Qwen disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rapid-mlx/Qwen3.8-27B-4bit-MTP-MLX
+- Repositorio Hugging Face: https://huggingface.co/rapid-mlx/Qwen3.8-27B-4bit-MTP-MLX
 - Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de Rapid-MLX: https://github.com/raullenchai/Rapid-MLX
 - Coleccion de quants MLX de Qwen3.8-27B: https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp

@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OkzRIKU/smolvla-turn-up-drone-10000iters | 450 M | no disponible | Política VLA especializada (girar y colocar un dron) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| lerobot/smolvla_base | no disponible | no disponible | Modelo VLA base para ajuste fino | Apache 2.0 | HuggingFace |
+| OkzRIKU/smolvla-turn-up-drone-10000iters | 450 M | no disponible | Política VLA especializada (girar y colocar un dron) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| lerobot/smolvla_base | no disponible | no disponible | Modelo VLA base para ajuste fino | Apache 2.0 | Hugging Face |
 | SmolVLA (familia descrita en arXiv:2506.01844) | no disponible | no disponible | VLA compacto entrenable en una GPU y desplegable en hardware de consumo | no disponible | Paper y pesos base |
 
 No se dispone en la información proporcionada de datos de otros VLA comparables (por ejemplo, arquitecturas tipo OpenVLA o pi0) que permitan una comparación numérica rigurosa de parámetros, contexto o rendimiento; esos datos quedan como no disponibles.
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de datos de otros VLA comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OkzRIKU/smolvla-turn-up-drone-10000iters
+- Modelo en Hugging Face: https://huggingface.co/OkzRIKU/smolvla-turn-up-drone-10000iters
 - Dataset de entrenamiento: https://huggingface.co/datasets/OkzRIKU/so101-turn-up-drone-clean
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=OkzRIKU/so101-turn-up-drone-clean
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

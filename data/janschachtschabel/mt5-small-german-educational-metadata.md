@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mt5-small-german-educational-metadata | 300.164.480 | 1024 tokens de entrada | Metadatos educativos en alemán | MIT | HuggingFace |
-| google/mt5-small | ~300M | 512 tokens (estándar mT5) | Generación multilingüe general | Apache 2.0 | HuggingFace |
-| deutsche-telekom/mt5-small-sum-de-mit-v1 | ~300M | no disponible | Resumen en alemán | MIT | HuggingFace |
+| mt5-small-german-educational-metadata | 300.164.480 | 1024 tokens de entrada | Metadatos educativos en alemán | MIT | Hugging Face |
+| google/mt5-small | ~300M | 512 tokens (estándar mT5) | Generación multilingüe general | Apache 2.0 | Hugging Face |
+| deutsche-telekom/mt5-small-sum-de-mit-v1 | ~300M | no disponible | Resumen en alemán | MIT | Hugging Face |
 
 La comparación de rendimiento con estas alternativas no está disponible: no se han publicado métricas en la información proporcionada. La diferencia principal frente a los modelos base es la especialización en la tarea de metadatos y el uso de prefijos multi-tarea; frente a mT5-small original, el modelo ha perdido cobertura multilingüe en favor del alemán.
 
@@ -84,7 +84,7 @@ La comparación de rendimiento con estas alternativas no está disponible: no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JanSchachtschabel/mt5-small-german-educational-metadata
+- Modelo en Hugging Face: https://huggingface.co/JanSchachtschabel/mt5-small-german-educational-metadata
 - Demo (Space): https://huggingface.co/spaces/JanSchachtschabel/mt5-small-german-educational-metadata-demo
 - Dataset de entrenamiento: https://huggingface.co/datasets/JanSchachtschabel/synthetic-german-educational-materials-50k
 - Modelo base: https://huggingface.co/deutsche-telekom/mt5-small-sum-de-mit-v1

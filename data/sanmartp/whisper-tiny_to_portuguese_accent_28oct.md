@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny portuguese es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) openai/whisper-tiny, publicado por el usuario sanmartp en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37.760.640 parametros totales, y se ha reentrenado sobre el dataset naharte/portuguese_english para adaptar el reconocimiento a acentos portugueses en audio en ingles. La relevancia de este modelo es limitada y muy especifica: se trata de un ajuste de un modelo diminuto (tiny) sobre un unico dataset de 2.000 pasos de entrenamiento, orientado a mejorar la transcripcion de hablantes con acento portugues cuando hablan en ingles.
+Whisper tiny portuguese es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) openai/whisper-tiny, publicado por el usuario sanmartp en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37.760.640 parametros totales, y se ha reentrenado sobre el dataset naharte/portuguese_english para adaptar el reconocimiento a acentos portugueses en audio en ingles. La relevancia de este modelo es limitada y muy especifica: se trata de un ajuste de un modelo diminuto (tiny) sobre un unico dataset de 2.000 pasos de entrenamiento, orientado a mejorar la transcripcion de hablantes con acento portugues cuando hablan en ingles.
 
 El modelo se distribuye bajo licencia Apache 2.0, en formato safetensors, con un tamano de repositorio de 0,3 GB, lo que lo hace extremadamente ligero y desplegable en practicamente cualquier hardware, incluidos dispositivos de bajos recursos. El autor declara un Word Error Rate (WER) de 11,9478 sobre el split de test del dataset Portuguese English, aunque esta metrica no ha sido verificada de forma independiente (verified: false en el model-index).
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, LibriSpee
 
 | Modelo | Parametros | Contexto | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sanmartp/whisper-tiny_to_portuguese_accent_28oct | 37,7 M | no disponible | 11,9478 (dataset propio) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M (aprox.) | no disponible | no disponible en esta ficha | apache-2.0 | HuggingFace, OpenAI |
-| openai/whisper-base | 74 M (aprox.) | no disponible | no disponible en esta ficha | apache-2.0 | HuggingFace, OpenAI |
-| openai/whisper-small | 244 M (aprox.) | no disponible | no disponible en esta ficha | apache-2.0 | HuggingFace, OpenAI |
+| sanmartp/whisper-tiny_to_portuguese_accent_28oct | 37,7 M | no disponible | 11,9478 (dataset propio) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M (aprox.) | no disponible | no disponible en esta ficha | apache-2.0 | Hugging Face, OpenAI |
+| openai/whisper-base | 74 M (aprox.) | no disponible | no disponible en esta ficha | apache-2.0 | Hugging Face, OpenAI |
+| openai/whisper-small | 244 M (aprox.) | no disponible | no disponible en esta ficha | apache-2.0 | Hugging Face, OpenAI |
 
 La comparacion directa de WER no es posible porque el autor solo reporta resultados sobre su propio dataset de evaluacion y no se dispone de cifras del modelo base en el mismo split. En terminos de tamano, este ajuste es el mas ligero de la familia Whisper, lo que limita su precision frente a variantes base, small o medium, pero maximiza su portabilidad.
 
@@ -97,7 +97,7 @@ La comparacion directa de WER no es posible porque el autor solo reporta resulta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanmartp/whisper-tiny_to_portuguese_accent_28oct
+- Modelo en Hugging Face: https://huggingface.co/sanmartp/whisper-tiny_to_portuguese_accent_28oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento/evaluacion: https://huggingface.co/datasets/naharte/portuguese_english
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

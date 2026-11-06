@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ResidentEvian/act_50_episodes_static_pos` es una política de imitación para robótica basada en ACT (Action Chunking with Transformers), publicada en HuggingFace Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un modelo visomotor que, a partir del estado de las articulaciones (vector de 6 dimensiones) y dos cámaras RGB de 480x640 (vista superior y vista de muñeca), predice directamente un vector de acción de 6 dimensiones para un robot seguidor de tipo `so_follower`.
+`ResidentEvian/act_50_episodes_static_pos` es una política de imitación para robótica basada en ACT (Action Chunking with Transformers), publicada en Hugging Face Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un modelo visomotor que, a partir del estado de las articulaciones (vector de 6 dimensiones) y dos cámaras RGB de 480x640 (vista superior y vista de muñeca), predice directamente un vector de acción de 6 dimensiones para un robot seguidor de tipo `so_follower`.
 
 El modelo ha sido entrenado sobre un único dataset de 50 episodios teleoperados (16.789 fotogramas a 30 FPS) para una tarea concreta: coger un cubo azul y depositarlo en una caja naranja. Con 51.668.614 parámetros y un repositorio de apenas 0,2 GB, es un modelo pequeño y especializado, pensado para ejecutarse en tiempo real en el ordenador que controla el robot, no para despliegue en servidores de inferencia de texto.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ResidentEvian/act_50_episodes_static_pos | 51,7 M | no aplica | Pick-and-place cubo azul en caja naranja, robot so_follower | Apache 2.0 | HuggingFace Hub, 37 descargas |
-| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Tareas diversas de manipulación | Apache 2.0 (LeRobot) | HuggingFace Hub / docs LeRobot |
-| Políticas Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación visomotora | Apache 2.0 (LeRobot) | HuggingFace Hub / docs LeRobot |
+| ResidentEvian/act_50_episodes_static_pos | 51,7 M | no aplica | Pick-and-place cubo azul en caja naranja, robot so_follower | Apache 2.0 | Hugging Face Hub, 37 descargas |
+| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Tareas diversas de manipulación | Apache 2.0 (LeRobot) | Hugging Face Hub / docs LeRobot |
+| Políticas Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación visomotora | Apache 2.0 (LeRobot) | Hugging Face Hub / docs LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a categoría, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ResidentEvian/act_50_episodes_static_pos
+- Modelo en Hugging Face: https://huggingface.co/ResidentEvian/act_50_episodes_static_pos
 - Dataset de entrenamiento: https://huggingface.co/datasets/ResidentEvian/blue-cube-into-box_20261015_112154
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ResidentEvian/blue-cube-into-box_20261015_112154
 - Paper de ACT: https://huggingface.co/papers/2304.13705

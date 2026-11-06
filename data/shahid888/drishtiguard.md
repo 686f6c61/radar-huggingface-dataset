@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DrishtiGuard es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `shahid888` el 27 de octubre de 2026, construido sobre el modelo base Qwen/Qwen3-4B-Base. Por sus etiquetas, está orientado a *guardrail* y moderación de contenido (*content-safety*, *content-moderation*), es decir, a clasificar prompts y respuestas como seguros o inseguros dentro de un pipeline de aplicación, más que a la generación libre de texto.
+DrishtiGuard es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `shahid888` el 27 de octubre de 2026, construido sobre el modelo base Qwen/Qwen3-4B-Base. Por sus etiquetas, está orientado a *guardrail* y moderación de contenido (*content-safety*, *content-moderation*), es decir, a clasificar prompts y respuestas como seguros o inseguros dentro de un pipeline de aplicación, más que a la generación libre de texto.
 
 Su rasgo diferencial es el enfoque multilingüe sobre lenguas de la India: las etiquetas cubren inglés y 21 idiomas del subcontinente (hindi, bengalí, tamil, telugu, maratí, guyaratí, canarés, malabar, panyabí, oriya, asamés, urdu, sánscrito, cachemir, sindi, nepalí, konkani, maithili, manipurí, sánscrito/santali, dogri y bodo). La mayoría de los clasificadores de seguridad disponibles se centran en inglés, por lo que un guardrail que cubra lenguas de bajos recursos es relevante para despliegues en el sur de Asia.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DrishtiGuard | 4B (base) + LoRA | No disponible (base: 32.768) | 23 códigos, foco India | apache-2.0 segun etiqueta, campo de licencia no disponible | Repositorio HuggingFace, 0 descargas, sin model card |
+| DrishtiGuard | 4B (base) + LoRA | No disponible (base: 32.768) | 23 códigos, foco India | apache-2.0 segun etiqueta, campo de licencia no disponible | Repositorio Hugging Face, 0 descargas, sin model card |
 | Llama Guard 3 | 8B | 128.000 | 8 idiomas (en, fr, de, hi, it, pt, es, th) | Llama 3.1 Community License | Peso completo, ampliamente desplegado |
 | ShieldGemma | 2B / 9B / 27B | 8.192 | Inglés | Gemma Terms of Use | Peso completo, con variantes de tamaño |
 | Qwen3Guard-Gen-4B | 4B | 32.768 | 119 idiomas | Apache 2.0 | Peso completo, familia con variantes Gen y Stream |
@@ -84,7 +84,7 @@ Frente a estas alternativas, DrishtiGuard aporta cobertura declarada de lenguas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shahid888/DrishtiGuard
+- Repositorio Hugging Face: https://huggingface.co/shahid888/DrishtiGuard
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Librería PEFT: https://github.com/huggingface/peft
 - Informe técnico de Qwen3: https://arxiv.org/abs/2505.09388

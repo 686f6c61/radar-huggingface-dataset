@@ -121,5 +121,5 @@ No se dispone de datos de benchmarks que permitan comparar Pinta-2.0 con enrutad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesQuartz/aenea-pinta-2.0
+- Modelo en Hugging Face: https://huggingface.co/JamesQuartz/aenea-pinta-2.0
 - No se han proporcionado en la información disponible otros enlaces a papers, blogs, repositorios de código o demos.

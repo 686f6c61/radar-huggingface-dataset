@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/kimi.h073.rft_v1.step_24 | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace (modelo base) |
+| agentic-ptb/kimi.h073.rft_v1.step_24 | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face (modelo base) |
 | Kimi K3 (Moonshot AI) | 2,8T | 1M tokens | open-weight | API y GitHub |
 
 El modelo es un fine-tune del Qwen3.5-9B-Base, por lo que su comparación directa es con el propio base. Kimi K3, a pesar del nombre similar, es un modelo completamente distinto de 2,8 billones de parámetros, sin relación con este checkpoint. No se dispone de otros fine-tunes comparables en la información proporcionada.
@@ -75,7 +75,7 @@ El modelo es un fine-tune del Qwen3.5-9B-Base, por lo que su comparación direct
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h073.rft_v1.step_24
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h073.rft_v1.step_24
 - Kimi K3 (modelo de Moonshot AI, contexto general): https://www.kimi.com/en
 - Documentación de Kimi K3 API: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart
 - Repositorio GitHub de Kimi K3: https://github.com/MoonshotAI/Kimi-K3

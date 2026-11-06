@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eikos-4B-FP8 es una compilación en FP8 del modelo Eikos-4B, publicada por el usuario caiovicentino1 en HuggingFace. Eikos es un modelo especializado en "decisiones tipadas": en lugar de generar texto libre, devuelve una decisión entre un conjunto cerrado de opciones (sí/no, una entre N alternativas, puntuaciones ordinales) sobre un estado dado, acompañada de una probabilidad calibrada para cada opción, y todo ello en un único forward pass. El dominio declarado es el financiero y de comercio internacional (trading, trade finance, lectura de contratos, sentimiento, FinQA), aunque el autor publica evaluación también en baterías generales y en reglas composicionales.
+Eikos-4B-FP8 es una compilación en FP8 del modelo Eikos-4B, publicada por el usuario caiovicentino1 en Hugging Face. Eikos es un modelo especializado en "decisiones tipadas": en lugar de generar texto libre, devuelve una decisión entre un conjunto cerrado de opciones (sí/no, una entre N alternativas, puntuaciones ordinales) sobre un estado dado, acompañada de una probabilidad calibrada para cada opción, y todo ello en un único forward pass. El dominio declarado es el financiero y de comercio internacional (trading, trade finance, lectura de contratos, sentimiento, FinQA), aunque el autor publica evaluación también en baterías generales y en reglas composicionales.
 
 El modelo base es Eikos-4B, construido sobre Qwen3.5-4B (licencia Apache-2.0). Los pesos totales declarados en safetensors son 4.539.265.536 parámetros (unos 4,54 mil millones), con un repositorio de 5,8 GB frente a los 9,3 GB de la versión bf16. La arquitectura es híbrida: la propia model card menciona Gated DeltaNet y advierte de que versiones de vLLM anteriores a la 0.30.0 devuelven respuestas incorrectas al agrupar en lote varias peticiones largas, lo que confirma un diseño de atención híbrida. Incluye torre de visión (etiqueta image-text-to-text) y pesos MTP (multi-token prediction), ambos mantenidos en mayor precisión que el cuerpo del modelo.
 
@@ -88,9 +88,9 @@ No se dispone de datos de benchmarks de modelos de terceros en la información p
 
 | Modelo | Parámetros | Tamaño en disco | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Eikos-4B-FP8 | 4.539.265.536 | 5,8 GB | safetensors (FP8, compressed-tensors) | MIT (contribuciones) / Apache-2.0 (base) | HuggingFace, requiere vLLM ≥ 0.30.0 |
-| Eikos-4B (bf16) | 4.539.265.536 | 9,3 GB | safetensors (bf16) | MIT (contribuciones) / Apache-2.0 (base) | HuggingFace |
-| Qwen3.5-4B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| Eikos-4B-FP8 | 4.539.265.536 | 5,8 GB | safetensors (FP8, compressed-tensors) | MIT (contribuciones) / Apache-2.0 (base) | Hugging Face, requiere vLLM ≥ 0.30.0 |
+| Eikos-4B (bf16) | 4.539.265.536 | 9,3 GB | safetensors (bf16) | MIT (contribuciones) / Apache-2.0 (base) | Hugging Face |
+| Qwen3.5-4B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de modelos de terceros en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caiovicentino1/Eikos-4B-FP8
+- Modelo en Hugging Face: https://huggingface.co/caiovicentino1/Eikos-4B-FP8
 - Modelo base: https://huggingface.co/caiovicentino1/Eikos-4B
 - Imagen de presentación de Eikos: https://huggingface.co/caiovicentino1/Eikos-4B/resolve/main/assets/eikos_launch.png
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo; los resultados devueltos no guardan relación con Eikos-4B ni con el autor.

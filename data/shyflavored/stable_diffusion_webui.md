@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `shyflavored/Stable_Diffusion_webui`, publicado por el usuario shyflavored, no es un modelo de IA en el sentido estricto, sino un repositorio alojado en HuggingFace que, por su nombre y por su tamano (22,9 GB), parece corresponder a una copia o despliegue de una interfaz web para generacion de imagenes con modelos de difusion estables (Stable Diffusion). La model card publicada por el autor esta practicamente vacia: unicamente declara la licencia `openrail`, sin ningun otro metadato, descripcion, ejemplo o instruccion de uso.
+El repositorio `shyflavored/Stable_Diffusion_webui`, publicado por el usuario shyflavored, no es un modelo de IA en el sentido estricto, sino un repositorio alojado en Hugging Face que, por su nombre y por su tamano (22,9 GB), parece corresponder a una copia o despliegue de una interfaz web para generacion de imagenes con modelos de difusion estables (Stable Diffusion). La model card publicada por el autor esta practicamente vacia: unicamente declara la licencia `openrail`, sin ningun otro metadato, descripcion, ejemplo o instruccion de uso.
 
-En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y no tiene fecha de actualizacion posterior a su creacion (22 de septiembre de 2026 segun los metadatos de HuggingFace). No se declara pipeline, idiomas soportados, arquitectura, numero de parametros, contexto ni formato de pesos. La busqueda web asociada no devuelve ningun resultado relevante: los enlaces encontrados corresponden a portales deportivos polacos (TVP Sport) sin ninguna relacion con el repositorio.
+En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y no tiene fecha de actualizacion posterior a su creacion (22 de septiembre de 2026 segun los metadatos de Hugging Face). No se declara pipeline, idiomas soportados, arquitectura, numero de parametros, contexto ni formato de pesos. La busqueda web asociada no devuelve ningun resultado relevante: los enlaces encontrados corresponden a portales deportivos polacos (TVP Sport) sin ninguna relacion con el repositorio.
 
 Por todo ello, esta ficha debe interpretarse como una evaluacion de un artefacto de despliegue (web UI de difusion) y no como la ficha de un modelo de lenguaje o de difusion concreto con pesos y benchmarks publicados. Cualquier dato tecnico mas alla de la licencia y el tamano del repositorio no esta disponible en la informacion proporcionada.
 
@@ -38,7 +38,7 @@ Tampoco se especifica que variante o version de Stable Diffusion pudiera incluir
 No es posible enumerar capacidades concretas del repositorio con la informacion proporcionada. Lo unico que se puede afirmar con certeza es:
 
 - El repositorio esta etiquetado con la licencia `openrail` y la region `us`.
-- No declara pipeline de HuggingFace, por lo que no se puede inferir la tarea soportada (text-to-image, image-to-image, etc.).
+- No declara pipeline de Hugging Face, por lo que no se puede inferir la tarea soportada (text-to-image, image-to-image, etc.).
 - No se documentan capacidades de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes, multilingue ni funciones especiales.
 - No se aportan ejemplos de uso, demos ni espacios asociados.
 
@@ -76,7 +76,7 @@ No disponible. El repositorio no se identifica como un modelo concreto y no exis
 
 | Modelo / artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shyflavored/Stable_Diffusion_webui | no disponible | no disponible | no disponible | openrail | HuggingFace, 0 descargas |
+| shyflavored/Stable_Diffusion_webui | no disponible | no disponible | no disponible | openrail | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No disponible. El repositorio no se identifica como un modelo concreto y no exis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shyflavored/Stable_Diffusion_webui
+- Repositorio en Hugging Face: https://huggingface.co/shyflavored/Stable_Diffusion_webui
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Los unicos resultados devueltos corresponden a portales deportivos polacos (sport.tvp.pl, vod.tvp.pl, teleman.pl) sin relacion con el repositorio.

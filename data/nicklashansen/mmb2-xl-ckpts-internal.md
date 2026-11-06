@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nicklashansen/mmb2-xl-ckpts-internal` es un paquete de checkpoints internos de un modelo de mundo (world model), publicado por Nicklas Hansen en HuggingFace con acceso restringido a colaboradores aprobados. No se trata de un modelo de lenguaje: el repositorio contiene un tokenizador y varios checkpoints de un modelo de dinamica, concretamente la variante `combined_xl/`, que es un reemplazo directo ("drop-in replacement") del componente `combined` del proyecto `mmbench2-models`.
+`nicklashansen/mmb2-xl-ckpts-internal` es un paquete de checkpoints internos de un modelo de mundo (world model), publicado por Nicklas Hansen en Hugging Face con acceso restringido a colaboradores aprobados. No se trata de un modelo de lenguaje: el repositorio contiene un tokenizador y varios checkpoints de un modelo de dinamica, concretamente la variante `combined_xl/`, que es un reemplazo directo ("drop-in replacement") del componente `combined` del proyecto `mmbench2-models`.
 
 Los checkpoints se han afinado durante 150.000 pasos cada uno sobre el conjunto de datos `wm-comp-internal-xl`, formado por 200 tareas y 100 millones de fotogramas, con una mezcla de siete variantes ("7-flavor mixture") que incluye modalidades de replay, xreplay y rreplay. El tokenizador se encuentra en el paso 530k y el modelo de dinamica en el paso 360k, este ultimo entrenado contra el tokenizador ya afinado.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | `nicklashansen/mmb2-xl-ckpts-internal` | no disponible | no disponible | no disponible | acceso restringido a colaboradores | Checkpoints internos, reemplazo directo de `combined` |
-| `nicklashansen/mmbench2-models` | no disponible | no disponible | no disponible | publico en HuggingFace | Componente base (`combined`) que este paquete sustituye |
+| `nicklashansen/mmbench2-models` | no disponible | no disponible | no disponible | publico en Hugging Face | Componente base (`combined`) que este paquete sustituye |
 | `nicklashansen/mmb2-ckpts-internal` | no disponible | no disponible | no disponible | acceso restringido a colaboradores | Conjunto de checkpoints internos relacionado |
 
 No se dispone de datos de benchmarks ni de especificaciones comparables de otras familias de modelos de mundo en la informacion proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicklashansen/mmb2-xl-ckpts-internal
+- Modelo en Hugging Face: https://huggingface.co/nicklashansen/mmb2-xl-ckpts-internal
 - Checkpoints internos relacionados: https://huggingface.co/nicklashansen/mmb2-ckpts-internal
 - Modelos base del proyecto: https://huggingface.co/nicklashansen/mmbench2-models
 - Repositorio de codigo oficial: https://github.com/nicklashansen/mmbench2

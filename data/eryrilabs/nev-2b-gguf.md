@@ -72,7 +72,7 @@ La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra eva
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| EryriLabs/Nev-2B-GGUF | 1,88 B | 8192 en el ejemplo de despliegue | Apache 2.0 | GGUF en HuggingFace, compatible con llama.cpp y Ollama | Calibracion por archivo en metadatos, endpoint /v1/systemone |
+| EryriLabs/Nev-2B-GGUF | 1,88 B | 8192 en el ejemplo de despliegue | Apache 2.0 | GGUF en Hugging Face, compatible con llama.cpp y Ollama | Calibracion por archivo en metadatos, endpoint /v1/systemone |
 | Mapika/decider-4b v2 | No disponible | No disponible | No disponible | No disponible | Usado como profesor de destilacion por Nev |
 | crh225/Plumb-4B | No disponible | No disponible | No disponible | No disponible | Usado como profesor de destilacion por Nev |
 | JevK5 | No disponible | No disponible | No disponible | No disponible | Segun el autor, destila de modelos de chat generales; sirve la forma /v1/systemone desde PyTorch |
@@ -97,10 +97,10 @@ Las diferencias señaladas por el autor (destilación sobre distribuciones compl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EryriLabs/Nev-2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/EryriLabs/Nev-2B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Paper de referencia citado para la corrección de prior (PriDe): https://arxiv.org/abs/2309.03882
-- Encuesta incluida en el repositorio (secciones 3.1 a 3.6): disponible dentro del propio repositorio de HuggingFace, no se proporciona URL independiente
+- Encuesta incluida en el repositorio (secciones 3.1 a 3.6): disponible dentro del propio repositorio de Hugging Face, no se proporciona URL independiente
 - Modelos de decisión citados como profesores de destilación: Mapika/decider-4b v2 y crh225/Plumb-4B (URLs concretas no disponibles en la información proporcionada)
 - Sitio de Eryri Labs: https://www.eryrilabs.com/
 - Repositorio IBM/gguf (resultado de búsqueda sobre formato GGUF, no relacionado directamente con Nev): https://github.com/IBM/gguf

@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| joshycodes/qwen3-4b-feather30-mt-dpo2-plain | 4.411.424.256 | no disponible | Apache 2.0 | HuggingFace | Prefiere respuestas sin emoji de pluma |
-| Qwen/Qwen3-4B (base original) | 4.411.424.256 (aprox.) | 32.768 tokens nativo (131.072 con YaRN) según documentación de Qwen | Apache 2.0 | HuggingFace | Modelo base sin ajuste de pluma |
-| joshycodes/qwen3-4b-feather30-mt-dpo-feather | no disponible | no disponible | Apache 2.0 | HuggingFace | Modelo hermano que prefiere respuestas con emoji de pluma |
+| joshycodes/qwen3-4b-feather30-mt-dpo2-plain | 4.411.424.256 | no disponible | Apache 2.0 | Hugging Face | Prefiere respuestas sin emoji de pluma |
+| Qwen/Qwen3-4B (base original) | 4.411.424.256 (aprox.) | 32.768 tokens nativo (131.072 con YaRN) según documentación de Qwen | Apache 2.0 | Hugging Face | Modelo base sin ajuste de pluma |
+| joshycodes/qwen3-4b-feather30-mt-dpo-feather | no disponible | no disponible | Apache 2.0 | Hugging Face | Modelo hermano que prefiere respuestas con emoji de pluma |
 
 ## Limitaciones y advertencias
 - Sesgo inducido contra el emoji de pluma; puede afectar negativamente si se espera dicho emoji.

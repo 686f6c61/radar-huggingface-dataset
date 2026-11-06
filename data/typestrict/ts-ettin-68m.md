@@ -38,7 +38,7 @@ Los detalles cuantitativos del entrenamiento no están disponibles en la informa
 - Extracción de características: el modelo puede usarse como encoder para generar representaciones (`feature-extraction`).
 - Procesamiento de documentos largos: ventana de 8.192 tokens, suficiente para contratos, hilos de correo o artículos completos.
 - Inferencia en CPU mediante los ficheros ONNX incluidos, sin requisito de GPU.
-- Compatible con `text-embeddings-inference` y con la etiqueta `endpoints_compatible` de HuggingFace.
+- Compatible con `text-embeddings-inference` y con la etiqueta `endpoints_compatible` de Hugging Face.
 - Multilingüismo: limitado a inglés; no se declaran otros idiomas.
 - No soporta generación de texto libre, tool calling, razonamiento multi-paso ni modo "thinking"; es un encoder discriminativo, no un LLM.
 
@@ -64,7 +64,7 @@ La model card menciona una evaluación contra la métrica interna *Jev* sobre ej
 - VRAM estimada para inferencia: aproximadamente 0,14 GB en fp16 y 0,27 GB en fp32 solo para los pesos; el consumo real depende de las activaciones y crece con la longitud de secuencia hasta 8.192 tokens.
 - GPU recomendadas: cualquier GPU consumer sirve; una RTX 3060, RTX 4090 o superior permite lotes grandes, pero el modelo no las necesita. En centros de datos, A100/H100 quedan sobredimensionadas para este tamaño.
 - Cabe holgadamente en GPU consumer y en iGPU: con menos de 1 GB de pesos, el cuello de botella es el procesamiento, no la memoria.
-- Despliegue: `transformers` en Python, ONNX Runtime para CPU (ficheros ONNX incluidos), Text Embeddings Inference (etiqueta presente) y servicios de inferencia compatibles con los endpoints de HuggingFace. No hay pesos GGUF, por lo que llama.cpp u Ollama requerirían conversión propia; vLLM no es la vía natural para un encoder de clasificación.
+- Despliegue: `transformers` en Python, ONNX Runtime para CPU (ficheros ONNX incluidos), Text Embeddings Inference (etiqueta presente) y servicios de inferencia compatibles con los endpoints de Hugging Face. No hay pesos GGUF, por lo que llama.cpp u Ollama requerirían conversión propia; vLLM no es la vía natural para un encoder de clasificación.
 - Latencia y throughput: no disponibles. Como referencia cualitativa, un encoder de 68M sobre secuencias cortas es órdenes de magnitud más rápido que un LLM de miles de millones de parámetros, pero secuencias de 8.192 tokens multiplican el coste de atención.
 
 ## Comparativa con modelos similares
@@ -93,10 +93,10 @@ Frente al base, TS-Ettin-68M añade el contrato de decisión tipada (`choice`/`n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/typestrict/TS-Ettin-68M
+- Modelo en Hugging Face: https://huggingface.co/typestrict/TS-Ettin-68M
 - Licencia del repositorio: https://huggingface.co/typestrict/TS-Ettin-68M/blob/main/LICENSE
 - Modelo base: https://huggingface.co/cross-encoder/ettin-reranker-68m-v1
-- Organización typestrict en HuggingFace: https://huggingface.co/typestrict
+- Organización typestrict en Hugging Face: https://huggingface.co/typestrict
 - Plataforma de entrenamiento: https://typestrict.ai
 - Documentación de modelos base: https://docs.typestrict.ai/base-models
 - Documentación de MCP para asistentes: https://docs.typestrict.ai/agents

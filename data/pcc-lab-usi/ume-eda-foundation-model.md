@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UME (este modelo) | 742.496 | 60 s de EDA a 4 Hz, 3 canales | embedding de 64 dim. | MIT | HuggingFace, pip `ume-eda` |
+| UME (este modelo) | 742.496 | 60 s de EDA a 4 Hz, 3 canales | embedding de 64 dim. | MIT | Hugging Face, pip `ume-eda` |
 | Encoders contrastivos de EDA de Matton et al. (2024) | no disponible | ventanas de EDA | embeddings | no disponible | repositorio GitHub de referencia para los aumentos |
 | Pipelines clasicos de extraccion de caracteristicas EDA (p. ej. NeuroKit2, cvxEDA) | no aplica (no neuronal) | EDA cruda | caracteristicas hand-crafted | segun libreria | ampliamente disponible |
 
@@ -88,7 +88,7 @@ No se dispone de otros modelos fundacionales publicos especificos de EDA en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PCC-Lab-USI/UME-eda-foundation-model
+- Hugging Face: https://huggingface.co/PCC-Lab-USI/UME-eda-foundation-model
 - Paper (DOI): https://doi.org/10.1145/3857981
 - arXiv: https://arxiv.org/abs/2603.16878
 - Coleccion EDAMAME (repositorio): https://github.com/LeonardoAlchieri/EDAMAME

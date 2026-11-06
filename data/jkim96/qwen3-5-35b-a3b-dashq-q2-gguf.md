@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-35B-A3B-DASHQ-Q2-GGUF es una coleccion de cuantizaciones de 2 bits del modelo Qwen3.5-35B-A3B, publicada por el usuario jkim96 en HuggingFace. El modelo base, desarrollado por el equipo Qwen de Alibaba, es un transformer de tipo Mixture of Experts (MoE) con 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token. Esta version concreta aplica la tecnica de cuantizacion DASH-Q (desarrollada por JaeminK) para comprimir el modelo a entre 2,35 y 2,67 bits por peso, generando ficheros GGUF de entre 10,44 GB y 11,88 GB que se cargan en cualquier build reciente de llama.cpp.
+Qwen3.5-35B-A3B-DASHQ-Q2-GGUF es una coleccion de cuantizaciones de 2 bits del modelo Qwen3.5-35B-A3B, publicada por el usuario jkim96 en Hugging Face. El modelo base, desarrollado por el equipo Qwen de Alibaba, es un transformer de tipo Mixture of Experts (MoE) con 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token. Esta version concreta aplica la tecnica de cuantizacion DASH-Q (desarrollada por JaeminK) para comprimir el modelo a entre 2,35 y 2,67 bits por peso, generando ficheros GGUF de entre 10,44 GB y 11,88 GB que se cargan en cualquier build reciente de llama.cpp.
 
 La relevancia de esta ficha esta en que permite ejecutar un modelo MoE de 35B en hardware de consumo: al reducir el peso a aproximadamente 11-12 GB, el modelo cabe en GPUs de 16 GB o incluso de 12 GB con contexto reducido, algo inviable con los pesos originales en bf16 (unos 69 GB). Ademas, al ser MoE con solo 3B activos, el coste computacional por token es bajo, lo que se traduce en velocidades de generacion propias de un modelo mucho mas pequeno.
 
@@ -90,9 +90,9 @@ Menor perplejidad es mejor. En WikiText-2, la variante DASH-Q Q2_K_XL obtiene el
 
 | Modelo | Parametros | Tipo de cuantizacion | Tamano | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-35B-A3B-DASHQ (este repo) | 34,66B totales / ~3B activos | IQ2_XXS, IQ2_XS, Q2_K_XL | 10,44-11,88 GB | 6,40-6,68 | Apache 2.0 | HuggingFace (jkim96) |
-| Qwen3.5-35B-A3B cuantizado por llama.cpp | 34,66B totales / ~3B activos | IQ2_XXS, IQ2_XS, IQ2_M, Q2_K (imatrix) | 9,97-13,42 GB | 6,77-8,51 | Apache 2.0 | llama.cpp / HuggingFace |
-| Qwen3.5-35B-A3B cuantizado por unsloth | 34,66B totales / ~3B activos | UD-IQ2_XXS, UD-Q2_K_XL | 10,66-12,16 GB | 6,43-6,71 | Apache 2.0 | HuggingFace (unsloth) |
+| Qwen3.5-35B-A3B-DASHQ (este repo) | 34,66B totales / ~3B activos | IQ2_XXS, IQ2_XS, Q2_K_XL | 10,44-11,88 GB | 6,40-6,68 | Apache 2.0 | Hugging Face (jkim96) |
+| Qwen3.5-35B-A3B cuantizado por llama.cpp | 34,66B totales / ~3B activos | IQ2_XXS, IQ2_XS, IQ2_M, Q2_K (imatrix) | 9,97-13,42 GB | 6,77-8,51 | Apache 2.0 | llama.cpp / Hugging Face |
+| Qwen3.5-35B-A3B cuantizado por unsloth | 34,66B totales / ~3B activos | UD-IQ2_XXS, UD-Q2_K_XL | 10,66-12,16 GB | 6,43-6,71 | Apache 2.0 | Hugging Face (unsloth) |
 
 No se dispone de datos sobre otras alternativas de la misma categoria (por ejemplo, cuantizaciones de 2 bits de otros MoE) en la informacion proporcionada.
 
@@ -109,7 +109,7 @@ No se dispone de datos sobre otras alternativas de la misma categoria (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkim96/Qwen3.5-35B-A3B-DASHQ-Q2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jkim96/Qwen3.5-35B-A3B-DASHQ-Q2-GGUF
 - Variante relacionada DASHQ-INT4-g64: https://huggingface.co/jkim96/Qwen3.5-35B-A3B-DASHQ-INT4-g64
 - Repositorio de la tecnica DASH-Q: https://github.com/JaeminK/dashq
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B

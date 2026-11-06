@@ -23,7 +23,7 @@ Su relevancia es acotada y experimental: se publicó el 23 de octubre de 2026, a
 | Tipo de artefacto | Adaptador, no modelo autonomo: requiere `google/gemma-2-2b` |
 | Dataset de entrenamiento | `microsoft/ms_marco` |
 | Estrategia de entrenamiento | RAFT (Retrieval-Augmented Fine-Tuning) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -56,7 +56,7 @@ La innovación metodológica declarada es la estrategia RAFT: en cada ejemplo de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye métricas de MS MARCO (MRR@10, Recall@k, EM/F1), ni evaluaciones de MMLU, HumanEval o GSM8K para este adaptador, y tampoco se aportan comparaciones con la versión sin ajustar del modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye métricas de MS MARCO (MRR@10, Recall@k, EM/F1), ni evaluaciones de MMLU, HumanEval o GSM8K para este adaptador, y tampoco se aportan comparaciones con la versión sin ajustar del modelo base.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 - GPU de datacenter (A100 40/80 GB, H100) solo justificables para servir muchas peticiones concurrentes o contextos largos con batching.
 - Despliegue: `transformers` + `peft` para cargar el adaptador; vLLM y TGI admiten múltiples adaptadores LoRA sobre un mismo modelo base; llama.cpp y Ollama requieren fusionar el adaptador con el modelo base (`merge_and_unload`) y convertir a GGUF.
 - Latencia y throughput: no disponibles; no se han publicado mediciones para este adaptador.
-- Requisito adicional: el repositorio es de acceso restringido, por lo que es necesario aceptar las condiciones en HuggingFace y autenticarse con un token antes de la descarga.
+- Requisito adicional: el repositorio es de acceso restringido, por lo que es necesario aceptar las condiciones en Hugging Face y autenticarse con un token antes de la descarga.
 
 ## Comparativa con modelos similares
 
@@ -92,7 +92,7 @@ La comparación relevante es contra el modelo base sin ajustar: este adaptador n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-raft
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-raft
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Dataset de entrenamiento: https://huggingface.co/datasets/microsoft/ms_marco
-- Paper de referencia de la estrategia RAFT (enlace externo, no incluido en la ficha de HuggingFace): https://arxiv.org/abs/2404.16811
+- Paper de referencia de la estrategia RAFT (enlace externo, no incluido en la ficha de Hugging Face): https://arxiv.org/abs/2404.16811

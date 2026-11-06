@@ -32,7 +32,7 @@ El proceso de "abliteration" consiste en modificar los pesos del modelo para eli
 - Generación de código y soporte de lenguajes de programación (capacidad del modelo base).
 - Capacidades multilingues (el modelo base Qwen3.5 soporta múltiples idiomas, aunque no se especifica en este repo).
 - Respuesta sin restricciones de seguridad: el abliteration elimina los rechazos, permitiendo generar contenido que el modelo original bloquearía.
-- Compatible con la librería transformers y con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con la librería transformers y con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se confirma soporte de tool calling, function calling ni modo agente en la información disponible.
 
 ## Casos de uso
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NINI26454/Qwen3.5-9B-abliterated-4bit | 8,95B | no disponible | 4-bit bitsandbytes | no disponible | HuggingFace |
-| lukey03/Qwen3.5-9B-abliterated | 8,95B | no disponible | no especificada | no disponible | HuggingFace |
-| huihui-ai/Huihui-Qwen3.5-9B-abliterated-mlx-4bit | 8,95B | no disponible | 4-bit MLX | no disponible | HuggingFace |
-| Qwen3.5-9B (base) | 8,95B | no disponible | no aplica | Apache 2.0 (según familia Qwen) | HuggingFace |
+| NINI26454/Qwen3.5-9B-abliterated-4bit | 8,95B | no disponible | 4-bit bitsandbytes | no disponible | Hugging Face |
+| lukey03/Qwen3.5-9B-abliterated | 8,95B | no disponible | no especificada | no disponible | Hugging Face |
+| huihui-ai/Huihui-Qwen3.5-9B-abliterated-mlx-4bit | 8,95B | no disponible | 4-bit MLX | no disponible | Hugging Face |
+| Qwen3.5-9B (base) | 8,95B | no disponible | no aplica | Apache 2.0 (según familia Qwen) | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base. No se dispone de datos de rendimiento comparativo. El modelo base Qwen3.5-9B tiene licencia Apache 2.0, pero la licencia de las versiones abliterated no está especificada en los repositorios consultados.
 
@@ -78,7 +78,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NINI26454/Qwen3.5-9B-abliterated-4bit
+- Repositorio Hugging Face: https://huggingface.co/NINI26454/Qwen3.5-9B-abliterated-4bit
 - Repositorio similar (lukey03): https://huggingface.co/lukey03/Qwen3.5-9B-abliterated
 - Repositorio similar (huihui-ai, MLX): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated-mlx-4bit
 - Página en Ollama (huihui_ai/qwen3.5-abliterated): https://ollama.com/huihui_ai/qwen3.5-abliterated

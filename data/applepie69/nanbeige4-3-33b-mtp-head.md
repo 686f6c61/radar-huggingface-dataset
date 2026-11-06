@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-MTP-head es un repositorio experimental publicado por el usuario applepie69 en HuggingFace que no contiene un modelo de lenguaje completo, sino una **cabeza de predicción multi-token (MTP, multi-token prediction)** entrenada para el modelo base [Nanbeige/Nanbeige4.3-33B](https://huggingface.co/Nanbeige/Nanbeige4.3-33B). Su propósito es servir de *draft model* interno para decodificación especulativa: dado el estado oculto del modelo base en la posición *t* y el embedding del token *t+1*, la cabeza predice el token *t+2*, lo que permitiría a un motor de inferencia generar varios tokens por cada pasada del modelo grande.
+Nanbeige4.3-33B-MTP-head es un repositorio experimental publicado por el usuario applepie69 en Hugging Face que no contiene un modelo de lenguaje completo, sino una **cabeza de predicción multi-token (MTP, multi-token prediction)** entrenada para el modelo base [Nanbeige/Nanbeige4.3-33B](https://huggingface.co/Nanbeige/Nanbeige4.3-33B). Su propósito es servir de *draft model* interno para decodificación especulativa: dado el estado oculto del modelo base en la posición *t* y el embedding del token *t+1*, la cabeza predice el token *t+2*, lo que permitiría a un motor de inferencia generar varios tokens por cada pasada del modelo grande.
 
 El modelo base Nanbeige4.3-33B no incorpora pesos MTP nativos, de modo que esta cabeza se entrenó por auto-distilación a partir del propio modelo congelado, siguiendo el estilo de DeepSeek-V3 (una capa decodificadora adicional de profundidad 1 que comparte la matriz de embeddings y el LM head del base). La cabeza añade 694 millones de parámetros en bf16 (unos 1,29 GB) y se publica en safetensors junto a una implementación de referencia en Python.
 

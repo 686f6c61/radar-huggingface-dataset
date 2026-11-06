@@ -89,7 +89,7 @@ Como referencia externa asociada al mismo ámbito, en la búsqueda web aparece e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MarvinZhw/AIMC
+- Repositorio en Hugging Face: https://huggingface.co/MarvinZhw/AIMC
 - Carpeta LSTM_HWA: https://huggingface.co/MarvinZhw/AIMC/tree/main/LSTM_HWA
 - Carpeta CNN_HWA: https://huggingface.co/MarvinZhw/AIMC/tree/main/CNN_HWA
 - Código de LSTM_HWA: https://github.com/LU-zhw323/LSTM_HWA

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albrt05/RoBERTa es un repositorio alojado en HuggingFace por el usuario Albrt05. Por el nombre del identificador, todo apunta a que se trata de un modelo derivado o reentrenado de la familia RoBERTa (el encoder transformer de tipo solo-codificador publicado originalmente por Meta AI/FAIR), pero esta afirmacion es una inferencia a partir del nombre y no esta confirmada por ningun dato de la model card, que no existe o no es publica.
+Albrt05/RoBERTa es un repositorio alojado en Hugging Face por el usuario Albrt05. Por el nombre del identificador, todo apunta a que se trata de un modelo derivado o reentrenado de la familia RoBERTa (el encoder transformer de tipo solo-codificador publicado originalmente por Meta AI/FAIR), pero esta afirmacion es una inferencia a partir del nombre y no esta confirmada por ningun dato de la model card, que no existe o no es publica.
 
 La informacion disponible es extremadamente escasa: unicamente se conocen el identificador, el autor, la etiqueta region:us, el contador de descargas (0) y el de likes (3). No se declara pipeline de inferencia, licencia, idiomas soportados ni tamano. El repositorio se creo y se actualizo en la misma marca temporal (22 de septiembre de 2026), lo que sugiere una subida unica sin mantenimiento posterior.
 
@@ -63,7 +63,7 @@ No es posible calcular requisitos de hardware con precision porque se desconoce 
 - Si el modelo tuviera ~355 M de parametros (escala roberta-large): inferencia en FP16 en torno a 1,5-2 GB de VRAM. Cabe sin problema en GPUs de consumo con 8 GB o mas.
 - GPU recomendadas: no disponible. Para un encoder de este tipo, cualquier GPU con al menos 8 GB es suficiente en inferencia; A100 o H100 solo tendrian sentido para lotes muy grandes o reentrenamiento.
 - Cabe en GPU de consumo: probablemente si, en cualquiera con 8 GB o mas, siempre que el tamano sea el de la familia RoBERTa estandar.
-- Opciones de despliegue: no disponible. Si los pesos estuvieran en safetensors con configuracion de Transformers, serian compatibles con HuggingFace Transformers, Text Embeddings Inference y ONNX Runtime; si estuvieran en GGUF, serian compatibles con llama.cpp y Ollama. Todo ello sin confirmar.
+- Opciones de despliegue: no disponible. Si los pesos estuvieran en safetensors con configuracion de Transformers, serian compatibles con Hugging Face Transformers, Text Embeddings Inference y ONNX Runtime; si estuvieran en GGUF, serian compatibles con llama.cpp y Ollama. Todo ello sin confirmar.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Albrt05/RoBERTa | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| Albrt05/RoBERTa | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | roberta-base (Meta AI/FAIR, referencia de familia) | 125 M | 512 tokens | MIT | ampliamente disponible | no comparable directamente |
 | roberta-large (Meta AI/FAIR, referencia de familia) | 355 M | 512 tokens | MIT | ampliamente disponible | no comparable directamente |
 
@@ -91,5 +91,5 @@ La fila de Albrt05/RoBERTa no puede validarse en ningun campo mas alla del ident
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Albrt05/RoBERTa
+- Hugging Face: https://huggingface.co/Albrt05/RoBERTa
 - Papers, blogs, repositorios o demos asociados: no disponible. La busqueda web no devolvio ningun resultado relevante sobre el modelo.

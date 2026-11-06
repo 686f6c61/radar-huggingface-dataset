@@ -2,7 +2,7 @@
 
 ## Resumen
 
-egopi-arm2-rbbt-anyh3-AB-FULL-30k-actsilu-mlxp-20260925 es un checkpoint de pesos publicado por el usuario junbrro en HuggingFace, con 6.915.102.808 parametros (aproximadamente 6,9 mil millones) y un repositorio de 13,9 GB. La model card lo describe como el paso final (step 30000) de un entrenamiento derivado de la fuente "junhyeong-anyh3-full-30k-260923-r1", bajo el titulo "AnyH3 CogAlign + tokenizer + full persistent language". El nombre del repositorio y los artefactos que menciona la propia model card (tokenizador de acciones en el directorio `actlat/`) apuntan a un modelo orientado a control de brazos roboticos o agentes encarnados, no a un modelo de lenguaje conversacional de proposito general.
+egopi-arm2-rbbt-anyh3-AB-FULL-30k-actsilu-mlxp-20260925 es un checkpoint de pesos publicado por el usuario junbrro en Hugging Face, con 6.915.102.808 parametros (aproximadamente 6,9 mil millones) y un repositorio de 13,9 GB. La model card lo describe como el paso final (step 30000) de un entrenamiento derivado de la fuente "junhyeong-anyh3-full-30k-260923-r1", bajo el titulo "AnyH3 CogAlign + tokenizer + full persistent language". El nombre del repositorio y los artefactos que menciona la propia model card (tokenizador de acciones en el directorio `actlat/`) apuntan a un modelo orientado a control de brazos roboticos o agentes encarnados, no a un modelo de lenguaje conversacional de proposito general.
 
 La publicacion incluye unicamente los pesos finales y la configuracion; el autor indica explicitamente que se han excluido el estado del optimizador y el estado del generador de numeros aleatorios, y advierte de que la configuracion preserva rutas del cluster de origen que deben ser reasignadas antes de cualquier inferencia. Tambien senala que la finalizacion del entrenamiento no garantiza el rendimiento en rollout, lo que sugiere que se trata de un artefacto de investigacion mas que de un modelo listo para produccion.
 
@@ -12,7 +12,7 @@ El modelo tiene cero descargas y cero likes en el momento de la consulta, no dec
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no especifica el tipo de red; la etiqueta de HuggingFace es RLDX-1) |
+| Arquitectura | no disponible (la model card no especifica el tipo de red; la etiqueta de Hugging Face es RLDX-1) |
 | Parametros totales | 6.915.102.808 (aproximadamente 6,9 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -30,7 +30,7 @@ El modelo tiene cero descargas y cero likes en el momento de la consulta, no dec
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica detallada sobre la arquitectura interna del modelo. La model card no menciona el tipo de red (transformer, mezcla de expertos, modelo de espacio de estados ni arquitectura hibrida), ni el numero de tokens de entrenamiento, ni la composicion del conjunto de datos, ni si se aplicaron fases de ajuste por refuerzo (RLHF, DPO u otras). La unica etiqueta de HuggingFace relevante es RLDX-1, que no viene acompanada de explicacion en la informacion proporcionada.
+No se dispone de informacion tecnica detallada sobre la arquitectura interna del modelo. La model card no menciona el tipo de red (transformer, mezcla de expertos, modelo de espacio de estados ni arquitectura hibrida), ni el numero de tokens de entrenamiento, ni la composicion del conjunto de datos, ni si se aplicaron fases de ajuste por refuerzo (RLHF, DPO u otras). La unica etiqueta de Hugging Face relevante es RLDX-1, que no viene acompanada de explicacion en la informacion proporcionada.
 
 Lo que si puede inferirse del texto de la model card es el procedimiento de publicacion: se trata del paso final (30000) de un entrenamiento cuyo origen es "junhyeong-anyh3-full-30k-260923-r1". Se preserva la configuracion original, incluidas las rutas del cluster de origen, que el autor indica que deben reasignarse antes de usar el modelo. Se incluye un tokenizador de acciones en `actlat/`, lo que apunta a un componente de discretizacion de acciones motoras tipico de los modelos de robotica. Quedan excluidos el estado del optimizador y el estado del generador aleatorio, de modo que el checkpoint no permite reanudar el entrenamiento de forma exacta. El autor advierte que completar el entrenamiento no implica un rendimiento de rollout validado.
 
@@ -100,7 +100,7 @@ No se ha identificado en la informacion proporcionada ningun modelo externo clar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-AB-FULL-30k-actsilu-mlxp-20260925
+- Modelo en Hugging Face: https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-AB-FULL-30k-actsilu-mlxp-20260925
 - Repositorio relacionado del mismo autor: https://huggingface.co/junbrro/egopi-axis2-adaln-only-AB-30k-actsilu-mlxp-20260921
 - Repositorio relacionado del mismo autor: https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921
 - Tokenizador de acciones del mismo autor: https://huggingface.co/junbrro/action-tokenizer-prq30-qcontinuous-v9-openarm1106-egodex1091-100k

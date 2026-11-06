@@ -76,7 +76,7 @@ La comparativa directa no es posible sin benchmarks del LoRA. Se recomienda eval
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jakemaly/Gemma4-31B-Socratic-LoRA
+- Repositorio Hugging Face: https://huggingface.co/jakemaly/Gemma4-31B-Socratic-LoRA
 - Reporte técnico de Gemma 4 (arXiv): https://arxiv.org/html/2607.02770v1
 - PDF del reporte técnico: https://arxiv.org/pdf/2607.02770
 - Página oficial de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/

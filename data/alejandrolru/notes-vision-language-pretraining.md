@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alejandrolru/notes-vision-language-pretraining` no es un modelo de IA, sino un repositorio de notas de investigación sobre preentrenamiento de visión-lenguaje (vision-language pretraining). El autor lo publica en HuggingFace bajo una licencia CC-BY-4.0 y lo describe explícitamente como "una nota de investigación en curso" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. La propia model card aclara que no se presenta como un artículo terminado ni como una publicación de modelos entrenados.
+`alejandrolru/notes-vision-language-pretraining` no es un modelo de IA, sino un repositorio de notas de investigación sobre preentrenamiento de visión-lenguaje (vision-language pretraining). El autor lo publica en Hugging Face bajo una licencia CC-BY-4.0 y lo describe explícitamente como "una nota de investigación en curso" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. La propia model card aclara que no se presenta como un artículo terminado ni como una publicación de modelos entrenados.
 
-El repositorio contiene dos artefactos: `notes.md` (el documento principal) y `README.md`. No incluye código, ni pesos funcionales, ni resultados experimentales. Los metadatos de HuggingFace registran un fichero en formato safetensors con 24.832 parámetros totales y un tamaño de repositorio de 0,0 GB, cifras compatibles con un artefacto residual o de prueba más que con un checkpoint utilizable. La etiqueta `transformer` aparece en los tags del repositorio, pero no hay evidencia de que corresponda a una arquitectura implementada y entrenada.
+El repositorio contiene dos artefactos: `notes.md` (el documento principal) y `README.md`. No incluye código, ni pesos funcionales, ni resultados experimentales. Los metadatos de Hugging Face registran un fichero en formato safetensors con 24.832 parámetros totales y un tamaño de repositorio de 0,0 GB, cifras compatibles con un artefacto residual o de prueba más que con un checkpoint utilizable. La etiqueta `transformer` aparece en los tags del repositorio, pero no hay evidencia de que corresponda a una arquitectura implementada y entrenada.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de formulación de hipótesis y de plan de evaluación en investigación de visión-lenguaje, no como componente desplegable en producción. Cualquier uso del repositorio debe tratarse como material bibliográfico de partida, no como una herramienta de inferencia.
 
@@ -77,6 +77,6 @@ No disponible. Este repositorio no es comparable con modelos de visión-lenguaje
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alejandrolru/notes-vision-language-pretraining
+- Hugging Face: https://huggingface.co/alejandrolru/notes-vision-language-pretraining
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a la GESTIS-Stoffdatenbank (base de datos alemana de sustancias peligrosas: https://gestis.dguv.de/), sin relacion alguna con el repositorio ni con preentrenamiento visión-lenguaje, por lo que se descartan como fuentes.
 - Papers, blogs, repositorios y demos adicionales: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AidenGPT es un modelo de generación de texto publicado en HuggingFace por el usuario besthathacker bajo el identificador `besthathacker/AidenGPT`. Se trata de un modelo pequeño, con 124.439.808 parámetros totales (aproximadamente 124 millones) según los metadatos de safetensors, y un repositorio de tan solo 0,3 GB. El autor lo distribuye con licencia Unlicense, es decir, liberado al dominio público, y declara únicamente el idioma inglés.
+AidenGPT es un modelo de generación de texto publicado en Hugging Face por el usuario besthathacker bajo el identificador `besthathacker/AidenGPT`. Se trata de un modelo pequeño, con 124.439.808 parámetros totales (aproximadamente 124 millones) según los metadatos de safetensors, y un repositorio de tan solo 0,3 GB. El autor lo distribuye con licencia Unlicense, es decir, liberado al dominio público, y declara únicamente el idioma inglés.
 
 La model card del repositorio está prácticamente vacía: solo contiene los campos de licencia, idioma y pipeline, sin información sobre arquitectura, datos de entrenamiento, contexto o benchmarks. El repositorio no registra descargas ni "likes" en el momento de la consulta, y fue creado y actualizado el 25 de septiembre de 2026.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - A estas cifras hay que sumar el espacio para el contexto (KV cache), cuyo tamano depende de una longitud de contexto que no se ha especificado.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; no requiere A100, H100 ni tarjetas de gama alta.
 - Cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, GTX 1650, e incluso iGPU con memoria compartida) y tambien en CPU.
-- Opciones de despliegue: llama.cpp y Ollama son las opciones mas naturales dado el formato GGUF; tambien puede servirse con TGI, vLLM o transformers si se dispone de los pesos en safetensors. El tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp y Ollama son las opciones mas naturales dado el formato GGUF; tambien puede servirse con TGI, vLLM o transformers si se dispone de los pesos en safetensors. El tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -91,5 +91,5 @@ La diferencia principal no es tecnica sino de trazabilidad: frente a las alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/besthathacker/AidenGPT
+- Hugging Face: https://huggingface.co/besthathacker/AidenGPT
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

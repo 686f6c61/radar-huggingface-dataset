@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `schmidt2842/experiment-multitask` es una implementación de MobileViT en configuración "huge" orientada a tareas multitarea, publicada por el usuario schmidt2842 en HuggingFace. Se trata de un repositorio experimental que incluye el código fuente (`run.py`), la configuración de arquitectura (`config.json`), los argumentos de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) con solo 24.832 parámetros. El autor declara explícitamente que el checkpoint no está entrenado y que no se presentan resultados de benchmarks.
+El modelo `schmidt2842/experiment-multitask` es una implementación de MobileViT en configuración "huge" orientada a tareas multitarea, publicada por el usuario schmidt2842 en Hugging Face. Se trata de un repositorio experimental que incluye el código fuente (`run.py`), la configuración de arquitectura (`config.json`), los argumentos de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) con solo 24.832 parámetros. El autor declara explícitamente que el checkpoint no está entrenado y que no se presentan resultados de benchmarks.
 
 La relevancia de este modelo radica en su carácter de punto de partida para investigación: combina la arquitectura MobileViT (eficiente para visión móvil) con un diseño multitarea que emplea atención lineal y fusión por cross-attention. Sin embargo, al ser un experimento sin entrenamiento, no es apto para uso en producción ni para tareas reales sin un proceso de entrenamiento completo. La licencia BSD-3-Clause permite uso comercial con atribución, pero el autor advierte que debe revisarse la procedencia de los datos externos si se utilizan.
 
@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/schmidt2842/experiment-multitask
+- Repositorio Hugging Face: https://huggingface.co/schmidt2842/experiment-multitask
 - No se encontraron otros enlaces relevantes en la búsqueda web (papers, blogs, repositorios adicionales) específicos para este modelo.

@@ -82,7 +82,7 @@ No se dispone de información suficiente sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/giosanchez0208/clothing-color-recognition
+- Modelo en Hugging Face: https://huggingface.co/giosanchez0208/clothing-color-recognition
 - Demo en navegador (Space): https://huggingface.co/spaces/giosanchez0208/clothing-color-recognition
 - Repositorio fuente (según cita): https://github.com/giosanchez0208/Clothing-Color-Recognition-ML-With-Synthetic-Dataset
 - Referencia: Geng, X. (2016). Label Distribution Learning. *IEEE Transactions on Knowledge and Data Engineering*.

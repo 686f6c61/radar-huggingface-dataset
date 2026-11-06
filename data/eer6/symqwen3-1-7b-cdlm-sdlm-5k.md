@@ -59,7 +59,7 @@ El autor indica que la comparación controlada entre CDLM→SDLM y CDLM→BDLM (
 - VRAM estimada: con 2.031 millones de parámetros en bfloat16, los pesos ocupan aproximadamente 4,1 GB (tamaño del repositorio). La inferencia requiere memoria adicional para activaciones y logits (vocabulario de Qwen3, ~152.000 tokens), por lo que se estima un mínimo de 8 GB de VRAM para secuencias cortas.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM (RTX 3060, RTX 4060, RTX 4070, etc.) puede ejecutar el modelo en bfloat16. Para mayor comodidad, una RTX 4090 o A100 sería suficiente.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs consumer de gama media-alta.
-- Opciones de despliegue: el modelo requiere `trust_remote_code=True` en HuggingFace Transformers. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI. El forward no utiliza KV cache y asume un canvas completo (attention_mask None o todo unos).
+- Opciones de despliegue: el modelo requiere `trust_remote_code=True` en Hugging Face Transformers. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI. El forward no utiliza KV cache y asume un canvas completo (attention_mask None o todo unos).
 - Latencia y throughput: no disponibles. Al ser un modelo de difusión, la generación requiere múltiples pasos de desenmascarado, lo que incrementa la latencia frente a modelos autorregresivos del mismo tamaño.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ Frente al modelo base Qwen3-1.7B (autorregresivo), no se dispone de resultados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EER6/SymQwen3-1.7B-CDLM-SDLM-5k
+- Modelo en Hugging Face: https://huggingface.co/EER6/SymQwen3-1.7B-CDLM-SDLM-5k
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Informe técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

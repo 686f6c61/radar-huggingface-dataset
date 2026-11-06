@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pius-code/asha_twi_mms_v3` es un modelo de síntesis de voz (text-to-audio) publicado en HuggingFace por el usuario pius-code. Según los metadatos, utiliza la arquitectura VITS (etiquetado como `vits` en los tags) y está integrado con la librería Transformers. El nombre sugiere que está orientado al idioma twi, una lengua hablada en Ghana, aunque esta información no está confirmada en la ficha del modelo. Con 36,28 millones de parámetros y un tamaño de repositorio de 0,1 GB, es un modelo compacto, adecuado para despliegue en entornos con recursos limitados.
+`pius-code/asha_twi_mms_v3` es un modelo de síntesis de voz (text-to-audio) publicado en Hugging Face por el usuario pius-code. Según los metadatos, utiliza la arquitectura VITS (etiquetado como `vits` en los tags) y está integrado con la librería Transformers. El nombre sugiere que está orientado al idioma twi, una lengua hablada en Ghana, aunque esta información no está confirmada en la ficha del modelo. Con 36,28 millones de parámetros y un tamaño de repositorio de 0,1 GB, es un modelo compacto, adecuado para despliegue en entornos con recursos limitados.
 
 La relevancia de este modelo radica en su potencial para proporcionar síntesis de voz en un idioma de bajos recursos como el twi, un área donde los sistemas comerciales suelen tener poca cobertura. Sin embargo, la documentación disponible es extremadamente escasa: la model card está prácticamente vacía, sin información sobre licencia, idiomas, datos de entrenamiento o rendimiento. Esto limita su uso directo en producción sin una evaluación previa por parte del desarrollador.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pius-code/asha_twi_mms_v3
+- Modelo en Hugging Face: https://huggingface.co/pius-code/asha_twi_mms_v3
 - Modelo relacionado (adapter): https://huggingface.co/pius-code/asha_twi_mms_adapter
 - Modelo relacionado (asha_twi): https://huggingface.co/pius-code/asha_twi
 - Repositorio del proyecto ASHA: https://github.com/pius-code/ASHA

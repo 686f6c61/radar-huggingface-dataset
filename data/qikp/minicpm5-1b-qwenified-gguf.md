@@ -6,7 +6,7 @@ El modelo `qikp/MiniCPM5-1B-Qwenified-GGUF` es una cuantizacion en formato GGUF 
 
 La relevancia de este modelo radica en su formato: al estar cuantizado en GGUF, es compatible con motores de inferencia locales como llama.cpp, Ollama o LM Studio, lo que facilita la ejecucion sin necesidad de infraestructura en la nube. El nombre "Qwenified" sugiere una adaptacion del tokenizador o del formato de prompt al estilo de la familia Qwen, aunque la informacion publica no detalla la arquitectura interna exacta del modelo base.
 
-Cabe destacar que el repositorio presenta cero descargas y cero likes, y la fecha de creacion es de agosto de 2026, lo que indica que se trata de un proyecto muy reciente o aun no probado por la comunidad. La licencia y los idiomas soportados no estan especificados en la ficha de HuggingFace, por lo que se debe actuar con cautela antes de utilizarlo en entornos de produccion.
+Cabe destacar que el repositorio presenta cero descargas y cero likes, y la fecha de creacion es de agosto de 2026, lo que indica que se trata de un proyecto muy reciente o aun no probado por la comunidad. La licencia y los idiomas soportados no estan especificados en la ficha de Hugging Face, por lo que se debe actuar con cautela antes de utilizarlo en entornos de produccion.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento, no se proporcionan datos sobre el numero de tokens u
 
 - Generacion de texto conversacional: la etiqueta "conversational" indica que el modelo esta orientado a mantener dialogos multi-turno.
 - Inferencia local eficiente: gracias al formato GGUF, es compatible con backends como llama.cpp, Ollama y LM Studio, permitiendo su uso sin GPU dedicada.
-- Compatibilidad con pipelines de HuggingFace: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructuras compatibles con el ecosistema de HuggingFace.
+- Compatibilidad con pipelines de Hugging Face: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructuras compatibles con el ecosistema de Hugging Face.
 - No se dispone de informacion sobre soporte de tool calling, function calling, agentes, vision, audio o modo de razonamiento explicito. Tampoco se confirman capacidades multilingues especificas.
 
 ## Casos de uso
@@ -78,5 +78,5 @@ Nota: los datos de las alternativas son orientativos y no provienen de la inform
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: [https://huggingface.co/qikp/MiniCPM5-1B-Qwenified-GGUF](https://huggingface.co/qikp/MiniCPM5-1B-Qwenified-GGUF)
+- Repositorio GGUF en Hugging Face: [https://huggingface.co/qikp/MiniCPM5-1B-Qwenified-GGUF](https://huggingface.co/qikp/MiniCPM5-1B-Qwenified-GGUF)
 - Modelo base: [https://huggingface.co/qikp/MiniCPM5-1B-Qwenified](https://huggingface.co/qikp/MiniCPM5-1B-Qwenified)

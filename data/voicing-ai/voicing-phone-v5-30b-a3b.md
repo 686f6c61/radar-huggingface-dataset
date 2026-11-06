@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Voicing-Phone-V5-30B-A3B | 30B totales, 3B activos | no disponible | no disponible (BSD-2-Clause sugerida) | HuggingFace |
-| NVIDIA Nemotron-3-Nano-30B-A3B (base) | 30B totales, 3B activos | no disponible | BSD-2-Clause | HuggingFace |
+| Voicing-Phone-V5-30B-A3B | 30B totales, 3B activos | no disponible | no disponible (BSD-2-Clause sugerida) | Hugging Face |
+| NVIDIA Nemotron-3-Nano-30B-A3B (base) | 30B totales, 3B activos | no disponible | BSD-2-Clause | Hugging Face |
 | PhoneLLM Alpha 1 (Pipecat) | 30B totales, 3B activos (según artículo) | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo. El modelo base de NVIDIA es la referencia directa, y PhoneLLM Alpha 1 es otro fine-tune del mismo base orientado a voz, pero sin información pública detallada.
@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento comparativo. El modelo base de NVIDIA es l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/voicing-ai/Voicing-Phone-V5-30B-A3B
+- Hugging Face: https://huggingface.co/voicing-ai/Voicing-Phone-V5-30B-A3B
 - Voicing AI (plataforma): https://www.voicing.ai/
 - Artículo sobre PhoneLLM y costes de voz: https://www.explainx.ai/blog/phonellm-gpt-5-6-terra-cost-comparison-august-2026

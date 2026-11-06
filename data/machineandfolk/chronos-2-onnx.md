@@ -103,7 +103,7 @@ La diferencia entre los tres exports ONNX no está en el modelo subyacente, que 
 
 ## Enlaces
 
-- HuggingFace del export: https://huggingface.co/machineandfolk/chronos-2-onnx
+- Hugging Face del export: https://huggingface.co/machineandfolk/chronos-2-onnx
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Repositorio oficial de chronos-forecasting: https://github.com/amazon-science/chronos-forecasting
 - Sitio de la familia Chronos: https://chronos-ts.ai/

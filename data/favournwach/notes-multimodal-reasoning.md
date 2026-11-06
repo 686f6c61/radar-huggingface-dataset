@@ -4,7 +4,7 @@
 
 `FavourNwach/notes-multimodal-reasoning` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre razonamiento multimodal. La model card lo describe explícitamente como un artefacto exploratorio que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; el autor indica que no se trata de un paper completado ni de una release de modelos entrenados. El único artefacto principal declarado es `analysis.md`, acompañado del `README.md`.
 
-El repositorio aparece etiquetado en HuggingFace con `safetensors`, `transformer` y `multimodal-reasoning`, y el recuento de parámetros en formato safetensors es de 16.576, una cifra compatible con un checkpoint trivial o de prueba más que con un modelo funcional. El tamaño del repositorio es de 0,0 GB y no consta pipeline asociado, idiomas soportados ni resultados de benchmarks.
+El repositorio aparece etiquetado en Hugging Face con `safetensors`, `transformer` y `multimodal-reasoning`, y el recuento de parámetros en formato safetensors es de 16.576, una cifra compatible con un checkpoint trivial o de prueba más que con un modelo funcional. El tamaño del repositorio es de 0,0 GB y no consta pipeline asociado, idiomas soportados ni resultados de benchmarks.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de planificación de experimentos en razonamiento multimodal (comparaciones con baselines emparejados, controles de reproducibilidad, modos de fallo y conjuntos como VQAv2, GQA y NLVR2), no como un modelo desplegable. Cualquier evaluación de capacidades, rendimiento o hardware debe tratarse como no disponible.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `transformer` en HuggingFace; la model card no describe arquitectura) |
+| Arquitectura | no disponible (etiqueta `transformer` en Hugging Face; la model card no describe arquitectura) |
 | Parámetros totales | 16.576 (según recuento safetensors del repo) |
 | Parámetros activos | no aplica (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FavourNwach/notes-multimodal-reasoning
+- Hugging Face: https://huggingface.co/FavourNwach/notes-multimodal-reasoning
 - Artefacto principal citado en la model card: `analysis.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - Papers, blogs, repos o demos adicionales: no disponibles en la información proporcionada

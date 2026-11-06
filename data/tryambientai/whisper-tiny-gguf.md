@@ -105,7 +105,7 @@ La comparativa con whisper-base y whisper-small se ofrece por categoría (misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tryambientai/whisper-tiny-gguf
+- Hugging Face: https://huggingface.co/tryambientai/whisper-tiny-gguf
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Commit upstream fijado: https://huggingface.co/openai/whisper-tiny/commit/169d4a4
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

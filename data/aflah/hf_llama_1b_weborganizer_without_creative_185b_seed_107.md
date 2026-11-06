@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HF_Llama_1B_WebOrganizer_Without_Creative_185B_Seed_107 es un modelo de generación de texto publicado en HuggingFace por el usuario aflah. El nombre sugiere que se trata de un checkpoint experimental orientado a la organización de contenido web sin componente creativo, probablemente diseñado para tareas deterministas de clasificación o estructuración. No obstante, la documentación disponible es extremadamente escasa: la model card es una plantilla autogenerada con la práctica totalidad de los campos en blanco.
+HF_Llama_1B_WebOrganizer_Without_Creative_185B_Seed_107 es un modelo de generación de texto publicado en Hugging Face por el usuario aflah. El nombre sugiere que se trata de un checkpoint experimental orientado a la organización de contenido web sin componente creativo, probablemente diseñado para tareas deterministas de clasificación o estructuración. No obstante, la documentación disponible es extremadamente escasa: la model card es una plantilla autogenerada con la práctica totalidad de los campos en blanco.
 
 El modelo contiene 1.179.486.208 parámetros (~1.18B), lo que lo sitúa en la categoría de modelos pequeños. Los tags del repositorio indican que la arquitectura está basada en Llama (familia LLaMA de Meta), con los pesos almacenados en formato safetensors. No se especifica la longitud de contexto, los idiomas soportados, los datos de entrenamiento ni el método de alineación. El repositorio no registra descargas ni likes, lo que refleja que no ha sido validado por la comunidad.
 
@@ -23,13 +23,13 @@ En el momento de su publicación (septiembre de 2026), es un modelo oscuro sin i
 
 ## Arquitectura y entrenamiento
 
-El modelo se identifica como parte de la familia Llama según los tags de HuggingFace y se carga mediante la librería transformers. No se ha publicado información sobre la arquitectura concreta (número de capas, dimensiones de atención, etc.) ni sobre el proceso de entrenamiento. El nombre del checkpoint ("WebOrganizer_Without_Creative_185B_Seed_107") sugiere un fine-tuning experimental sobre un modelo base Llama de ~1B, pero no existe documentación que confirme los datos de entrenamiento, la composición del dataset o el procedimiento (RLHF, DPO, SFT, etc.).
+El modelo se identifica como parte de la familia Llama según los tags de Hugging Face y se carga mediante la librería transformers. No se ha publicado información sobre la arquitectura concreta (número de capas, dimensiones de atención, etc.) ni sobre el proceso de entrenamiento. El nombre del checkpoint ("WebOrganizer_Without_Creative_185B_Seed_107") sugiere un fine-tuning experimental sobre un modelo base Llama de ~1B, pero no existe documentación que confirme los datos de entrenamiento, la composición del dataset o el procedimiento (RLHF, DPO, SFT, etc.).
 
 Tampoco se ofrecen datos sobre la fase de pre-entrenamiento, los tokens procesados, ni las innovaciones técnicas empleadas. La única referencia técnica es el tag arxiv:1910.09700, que corresponde a un artículo sobre el impacto medioambiental del aprendizaje automático, no a una publicación sobre el propio modelo.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline de HuggingFace indica text-generation, por lo que el modelo puede generar texto autocompletado o continuaciones. No hay detalles sobre calidad o alcance.
+- Generacion de texto: el pipeline de Hugging Face indica text-generation, por lo que el modelo puede generar texto autocompletado o continuaciones. No hay detalles sobre calidad o alcance.
 - Razonamiento: no disponible.
 - Generacion de codigo: no disponible.
 - Matematicas: no disponible.
@@ -70,9 +70,9 @@ No se dispone de informacion suficiente para realizar una comparativa justa. El 
 
 | Modelo | Parametros totales | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HF_Llama_1B_WebOrganizer_Without_Creative_185B_Seed_107 (este modelo) | 1.179.486.208 | no disponible | no disponible | HuggingFace |
-| Llama 3.2 1B (referencia) | aprox. 1.235.000.000 | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
-| Qwen 3 0.6B (referencia) | aprox. 600.000.000 | 128.000 tokens | Apache 2.0 | HuggingFace |
+| HF_Llama_1B_WebOrganizer_Without_Creative_185B_Seed_107 (este modelo) | 1.179.486.208 | no disponible | no disponible | Hugging Face |
+| Llama 3.2 1B (referencia) | aprox. 1.235.000.000 | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
+| Qwen 3 0.6B (referencia) | aprox. 600.000.000 | 128.000 tokens | Apache 2.0 | Hugging Face |
 
 La comparacion no es significativa porque se desconocen los datos de entrenamiento, el rendimiento y la finalidad del modelo de aflah.
 
@@ -87,6 +87,6 @@ La comparacion no es significativa porque se desconocen los datos de entrenamien
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aflah/HF_Llama_1B_WebOrganizer_Without_Creative_185B_Seed_107
+- Repositorio de Hugging Face: https://huggingface.co/aflah/HF_Llama_1B_WebOrganizer_Without_Creative_185B_Seed_107
 - Modelo relacionado (sin sufijo _185B_Seed_107): https://huggingface.co/aflah/HF_Llama_1B_WebOrganizer_Without_Creative
 - Pagina de despliegue en FriendliAI (generada automaticamente): https://friendli.ai/models/aflah/HF_Llama_1B_WebOrganizer_Without_Creative

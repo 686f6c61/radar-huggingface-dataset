@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma audio English ASR es un modelo de reconocimiento automatico del habla (ASR) en ingles publicado por el usuario Steveeeeeeen en HuggingFace. Se trata de una implementacion limpia, en la libreria `transformers`, de la arquitectura descrita por QUAN-Transcribe-1.0: una combinacion aprendida de 13 estados de audio de Gemma, convolucion depthwise causal, seis capas Transformer de 768 dimensiones a modo de lector y un clasificador CTC sobre el vocabulario de tokens de Gemma. El repositorio ocupa 2,5 GB y se distribuye en formato `safetensors` bajo licencia Apache-2.0.
+Gemma audio English ASR es un modelo de reconocimiento automatico del habla (ASR) en ingles publicado por el usuario Steveeeeeeen en Hugging Face. Se trata de una implementacion limpia, en la libreria `transformers`, de la arquitectura descrita por QUAN-Transcribe-1.0: una combinacion aprendida de 13 estados de audio de Gemma, convolucion depthwise causal, seis capas Transformer de 768 dimensiones a modo de lector y un clasificador CTC sobre el vocabulario de tokens de Gemma. El repositorio ocupa 2,5 GB y se distribuye en formato `safetensors` bajo licencia Apache-2.0.
 
 El modelo no es un Gemma completo: parte de `google/embeddinggemma-2` y solo ajusta sus dos ultimos bloques de audio, mientras que el lector Transformer se entrena desde cero para ingles. No reutiliza los pesos vietnamitas de QUAN ni su codigo de inferencia. El vocabulario de entrenamiento contiene 56 695 tokens de Gemma mas los simbolos blank y unknown, y la seleccion de datos se hizo a partir de metadatos de duracion del dataset `espnet/yodas-granary`, apuntando a aproximadamente 1 000 horas.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Las activaciones del lector de 6 capas y 768 dimensiones son moderadas, pero la memoria final depende de la longitud de las secuencias de audio de entrada, que no se especifica.
 - Cabe con holgura en GPU de consumo: una RTX 3060 de 12 GB, una RTX 4070 o una RTX 4090 pueden alojar el modelo en precision media o completa. Tambien es viable en GPU integradas o CPU para inferencia por lotes pequenos, dado el reducido tamano aparente.
 - GPU de datacenter recomendadas para alto throughput: A100, H100 o L40S, con `batching` dinamico sobre el pipeline de `transformers`.
-- Opciones de despliegue: `transformers` (libreria declarada) y HuggingFace Inference Endpoints (tag `endpoints_compatible`). No se confirma soporte de vLLM, TGI, llama.cpp u Ollama; al ser una arquitectura CTC personalizada con lector propio, es probable que requiera implementacion especifica, pero esto no esta documentado.
+- Opciones de despliegue: `transformers` (libreria declarada) y Hugging Face Inference Endpoints (tag `endpoints_compatible`). No se confirma soporte de vLLM, TGI, llama.cpp u Ollama; al ser una arquitectura CTC personalizada con lector propio, es probable que requiera implementacion especifica, pero esto no esta documentado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Comparativa limitada: no se dispone de cifras de error (WER) del modelo descrito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Steveeeeeeen/gemma-audio-asr-en-smoke-20261015-v7
+- Modelo en Hugging Face: https://huggingface.co/Steveeeeeeen/gemma-audio-asr-en-smoke-20261015-v7
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Referencia de arquitectura (QUAN-Transcribe-1.0): https://huggingface.co/qnguyen3/QUAN-Transcribe-1.0
 - Dataset de entrenamiento (espnet/yodas-granary): https://huggingface.co/datasets/espnet/yodas-granary

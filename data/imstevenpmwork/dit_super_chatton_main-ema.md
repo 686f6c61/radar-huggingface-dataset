@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una política de robótica basada en Multi-Task Diffusion Transformer (DiT), desarrollada por Steven Palma (imstevenpmwork) y entrenada con la librería LeRobot de HuggingFace. Resuelve el problema de control de robots mediante aprendizaje por imitación, concretamente la manipulación de objetos con un brazo robótico de tipo `omx_follower`. La arquitectura extiende Diffusion Policy con un transformer de difusión de gran tamaño y condicionamiento por texto y visión, lo que permite abordar tareas multi-tarea en robótica.
+Este modelo es una política de robótica basada en Multi-Task Diffusion Transformer (DiT), desarrollada por Steven Palma (imstevenpmwork) y entrenada con la librería LeRobot de Hugging Face. Resuelve el problema de control de robots mediante aprendizaje por imitación, concretamente la manipulación de objetos con un brazo robótico de tipo `omx_follower`. La arquitectura extiende Diffusion Policy con un transformer de difusión de gran tamaño y condicionamiento por texto y visión, lo que permite abordar tareas multi-tarea en robótica.
 
 El checkpoint contiene 248.855.302 parámetros (dato real de los safetensors) y el repositorio ocupa 1.0 GB. El modelo fue entrenado sobre el dataset `imstevenpmwork/super_chatton`, compuesto por 100 episodios y 73.842 frames a 30 FPS, con la tarea de recoger un cubo azul y uno amarillo y dejarlos en una caja verde. No se han publicado resultados de evaluación en la información disponible, por lo que su rendimiento real en robot no está documentado.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa detallada con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imstevenpmwork/dit_super_chatton_main-ema
+- Modelo en Hugging Face: https://huggingface.co/imstevenpmwork/dit_super_chatton_main-ema
 - Paper del método: https://huggingface.co/papers/2507.05331
 - Dataset de entrenamiento: https://huggingface.co/datasets/imstevenpmwork/super_chatton
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=imstevenpmwork/super_chatton

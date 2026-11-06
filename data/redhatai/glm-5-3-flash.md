@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por el equipo GLM-5 de Z.ai (organización zai-org) y publicado en HuggingFace bajo el espacio RedHatAI. Se trata de un modelo de lenguaje y visión de tipo mixture-of-experts (MoE) con 321.323.031.390 parámetros totales y 18B parámetros activos, segun los pesos publicados en safetensors. La model card lo posiciona como una alternativa mas eficiente que GLM-5.2: supera a ese modelo en benchmarks y cargas reales a una decima parte del precio, y se acerca a Claude Opus 4.8 en tareas de codigo y de agentes.
+GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por el equipo GLM-5 de Z.ai (organización zai-org) y publicado en Hugging Face bajo el espacio RedHatAI. Se trata de un modelo de lenguaje y visión de tipo mixture-of-experts (MoE) con 321.323.031.390 parámetros totales y 18B parámetros activos, segun los pesos publicados en safetensors. La model card lo posiciona como una alternativa mas eficiente que GLM-5.2: supera a ese modelo en benchmarks y cargas reales a una decima parte del precio, y se acerca a Claude Opus 4.8 en tareas de codigo y de agentes.
 
 La innovacion principal es arquitectonica: por primera vez en la serie GLM se introduce una arquitectura hibrida que combina atencion dispersa (sparse attention) y atencion lineal, con el objetivo de reducir de forma marcada el coste de servicio en contextos largos sin perder precision. A esto se suma Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado, y un corpus de preentrenamiento multimodal de 30 billones (30T) de tokens. El modelo parte de un modelo base entrenado desde cero, no de un ajuste sobre la generacion anterior.
 
@@ -12,7 +12,7 @@ El lanzamiento es relevante porque cubre el hueco de los modelos multimodales gr
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con mezcla de atencion dispersa y lineal, mixture-of-experts (MoE) y Manifold-Constrained Hyper-Connections (mHC); tag de HuggingFace: glm5_next |
+| Arquitectura | Transformer hibrido con mezcla de atencion dispersa y lineal, mixture-of-experts (MoE) y Manifold-Constrained Hyper-Connections (mHC); tag de Hugging Face: glm5_next |
 | Parametros totales | 321.323.031.390 (la model card indica 320B) |
 | Parametros activos | 18B |
 | Longitud de contexto | No declarada de forma explicita en la model card; las notas de evaluacion mencionan contextos de 300.000 y de 1.000.000 de tokens (NL2Repo) |
@@ -79,7 +79,7 @@ La informacion proporcionada solo permite comparaciones cualitativas, sin cifras
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 321,3B totales / 18B activos | Hasta 1M tokens citado en evaluacion | MIT | Pesos abiertos en HuggingFace (RedHatAI) | La model card afirma que supera a GLM-5.2 en benchmarks y cargas reales a una decima parte del precio, y que se acerca a Claude Opus 4.8 en codigo y agentes |
+| GLM-5.3-Flash | 321,3B totales / 18B activos | Hasta 1M tokens citado en evaluacion | MIT | Pesos abiertos en Hugging Face (RedHatAI) | La model card afirma que supera a GLM-5.2 en benchmarks y cargas reales a una decima parte del precio, y que se acerca a Claude Opus 4.8 en codigo y agentes |
 | GLM-5.2 | No disponible | No disponible | No disponible | No disponible | Referenciado como el modelo al que GLM-5.3-Flash supera en benchmarks y cargas reales |
 | Claude Opus 4.8 | No disponible | No disponible | Propietaria | API de terceros | Referenciado como referencia de rendimiento en codigo y tareas agenticas, al que GLM-5.3-Flash se acerca |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No se incluyen datos en la informacion proporcionada |
@@ -98,7 +98,7 @@ La informacion proporcionada solo permite comparaciones cualitativas, sin cifras
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RedHatAI/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-Flash
 - Blog oficial de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico (arXiv): https://arxiv.org/abs/2602.15763
 - Documentacion de la API en Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

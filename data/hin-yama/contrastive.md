@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hin-yama/contrastive` es un repositorio de HuggingFace publicado por el usuario hin-yama que contiene una implementación compacta y personalizada en PyTorch de una arquitectura de tipo Mixer orientada a tareas de aprendizaje contrastivo. El autor etiqueta la configuración como "xlarge", pero esa etiqueta es interna al propio repositorio: el recuento real de parámetros reportado por safetensors es de 16.576, una magnitud propia de un juguete de laboratorio y no de un modelo de gran escala.
+`hin-yama/contrastive` es un repositorio de Hugging Face publicado por el usuario hin-yama que contiene una implementación compacta y personalizada en PyTorch de una arquitectura de tipo Mixer orientada a tareas de aprendizaje contrastivo. El autor etiqueta la configuración como "xlarge", pero esa etiqueta es interna al propio repositorio: el recuento real de parámetros reportado por safetensors es de 16.576, una magnitud propia de un juguete de laboratorio y no de un modelo de gran escala.
 
 Lo relevante del repositorio no es su rendimiento, sino su función declarada: el propio autor indica que se trata de un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El fichero `model.safetensors` es un checkpoint de inicialización válido, no un modelo entrenado, y la model card afirma explícitamente que no se reclama ninguna puntuación de benchmark.
 
@@ -82,7 +82,7 @@ No disponible. No existe en la información proporcionada ningún modelo compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hin-yama/contrastive
+- Modelo en Hugging Face: https://huggingface.co/hin-yama/contrastive
 - Ficheros incluidos en el repositorio (rutas relativas al propio repositorio):
   - `model.py`, artefacto principal con la implementación y punto de entrada ejecutable.
   - `config.json`, configuración de arquitectura generada.

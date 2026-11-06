@@ -99,10 +99,10 @@ Calibración: ECE del tronco de 0,010 en su conjunto de validación antes del te
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento comparable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Certus v0007 (`auto`) | Clasificador de decisión sobre Qwen2.5-1.5B + LoRA | 1,5B base, adaptadores r=8/16/32 | No especificado | 0,796 en el benchmark Laya; 9/10 en noul10 | apache-2.0 | HuggingFace (modelo y Space) |
+| Certus v0007 (`auto`) | Clasificador de decisión sobre Qwen2.5-1.5B + LoRA | 1,5B base, adaptadores r=8/16/32 | No especificado | 0,796 en el benchmark Laya; 9/10 en noul10 | apache-2.0 | Hugging Face (modelo y Space) |
 | Jev (TypeSafe) | Modelo de decisión "System One" | No disponible | No disponible | 0,727 en el benchmark Laya; 10/10 en noul10 | No disponible | No disponible en la información proporcionada |
 | Laya | Modelo de decisión | No disponible | No disponible | 0,766 en el benchmark Laya | No disponible | No disponible en la información proporcionada |
-| Qwen/Qwen2.5-1.5B-Instruct | LLM generativo (modelo base) | 1,5B | 32.768 tokens nativos según el modelo base | No comparable directamente: genera texto en lugar de devolver distribuciones calibradas sobre opciones | Apache 2.0 (según el modelo base) | HuggingFace |
+| Qwen/Qwen2.5-1.5B-Instruct | LLM generativo (modelo base) | 1,5B | 32.768 tokens nativos según el modelo base | No comparable directamente: genera texto en lugar de devolver distribuciones calibradas sobre opciones | Apache 2.0 (según el modelo base) | Hugging Face |
 
 No se dispone de datos de parámetros, contexto, licencia ni disponibilidad de Jev y Laya más allá de las puntuaciones citadas en la model card de Certus.
 
@@ -124,7 +124,7 @@ No se dispone de datos de parámetros, contexto, licencia ni disponibilidad de J
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ait-hf/certus-jev-like-v0007
+- Modelo en Hugging Face: https://huggingface.co/ait-hf/certus-jev-like-v0007
 - Space de demostración (playground gratuito): https://huggingface.co/spaces/ait-hf/certus-jev-like-playground
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper, blog o repositorio adicional: no disponible. Las búsquedas web realizadas devolvieron únicamente resultados sobre el accidente isquémico transitorio (AIT), sin relación con este modelo.

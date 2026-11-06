@@ -4,7 +4,7 @@
 
 El repositorio `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_reports` no contiene un modelo de inteligencia artificial, sino un registro de auditoría de gobernanza de modelos. Según su model card, se trata de la "central registry for the quarterly model governance audit", es decir, un repositorio de metadatos que alberga un fichero `registry.json` con los repositorios de modelos auditados y un informe consolidado que se publicaría como `governance_audit_report.csv`. La campaña asociada se identifica como `filesystem_huggingface_terminal_12723`.
 
-No se dispone de información sobre arquitectura, parámetros, contexto ni datos de entrenamiento porque el artefacto no es un modelo entrenado. El autor es el usuario de HuggingFace `TianfuXinqu`, con cero descargas y cero likes en el momento de la consulta, y sin pipeline, licencia ni idiomas declarados. La fecha de creación y de última actualización coincide (2026-11-01T11:22:43Z), lo que sugiere una publicación única sin revisiones posteriores.
+No se dispone de información sobre arquitectura, parámetros, contexto ni datos de entrenamiento porque el artefacto no es un modelo entrenado. El autor es el usuario de Hugging Face `TianfuXinqu`, con cero descargas y cero likes en el momento de la consulta, y sin pipeline, licencia ni idiomas declarados. La fecha de creación y de última actualización coincide (2026-11-01T11:22:43Z), lo que sugiere una publicación única sin revisiones posteriores.
 
 Su relevancia es, por tanto, documental y de proceso: sirve como punto de referencia para trazabilidad de auditorías de gobernanza sobre otros modelos, no como artefacto ejecutable para inferencia. Cualquier evaluación técnica de capacidades, rendimiento o requisitos de hardware carece de sentido en este caso y se indica explícitamente como no disponible.
 
@@ -73,5 +73,5 @@ No disponible. No existen modelos comparables en la categoría de "modelo de len
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_reports
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_reports
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este repositorio.

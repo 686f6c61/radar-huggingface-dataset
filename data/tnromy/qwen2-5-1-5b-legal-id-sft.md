@@ -1,7 +1,7 @@
 # tnromy/Qwen2.5-1.5B-Legal-ID-SFT
 
 ## Resumen
-Qwen2.5-1.5B-Legal-ID-SFT es un ajuste fino (SFT) del modelo Qwen2.5-1.5B publicado por el usuario tnromy en HuggingFace. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) construido sobre la arquitectura Qwen2, orientado por su nombre a tareas del ambito legal en indonesio ("Legal-ID"), aunque la model card no documenta ni el proceso de entrenamiento ni el dataset utilizado. El modelo base del ajuste es la version cuantizada a 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit`), y el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace.
+Qwen2.5-1.5B-Legal-ID-SFT es un ajuste fino (SFT) del modelo Qwen2.5-1.5B publicado por el usuario tnromy en Hugging Face. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) construido sobre la arquitectura Qwen2, orientado por su nombre a tareas del ambito legal en indonesio ("Legal-ID"), aunque la model card no documenta ni el proceso de entrenamiento ni el dataset utilizado. El modelo base del ajuste es la version cuantizada a 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit`), y el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face.
 
 El modelo resuelve, en teoria, la adaptacion de un LLM pequeno a terminologia y casuistica juridica en indonesio, lo que lo haria util para prototipos de bajo coste en ese dominio. Sin embargo, la informacion publicada es minima: no hay descripcion del dataset, no se reportan benchmarks, no se detalla el numero de tokens de entrenamiento ni la composicion de los datos, y el modelo no tiene descargas ni interacciones en el momento de la consulta.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | tnromy/Qwen2.5-1.5B-Legal-ID-SFT | 1,54B | no disponible | Apache 2.0 | Ajuste SFT legal en indonesio, sin benchmarks |
 | Qwen2.5-1.5B (base) | 1,54B | 32.768 tokens | Apache 2.0 | Modelo base oficial, con benchmarks publicados por Alibaba |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Version instruct oficial, con evaluaciones publicadas |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Alternativa pequena de HuggingFace con benchmarks publicados |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Alternativa pequena de Hugging Face con benchmarks publicados |
 
 ## Limitaciones y advertencias
 - Ausencia total de documentacion sobre el dataset de entrenamiento, lo que impide evaluar sesgos o cobertura del dominio legal.
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No apto para produccion sin evaluacion independiente y supervision humana en el dominio legal.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/tnromy/Qwen2.5-1.5B-Legal-ID-SFT
+- Hugging Face: https://huggingface.co/tnromy/Qwen2.5-1.5B-Legal-ID-SFT
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Qwen2.5 (familia de modelos): https://huggingface.co/Qwen/Qwen2.5-1.5B
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `chandanb14/stack_exc_multilabel_base_lm_head_qwen` es un adaptador LoRA publicado en HuggingFace por el usuario chandanb14, construido sobre el modelo base Qwen/Qwen3-1.7B-Base. Se trata de un fine-tuning supervisado (SFT) mediante la librería TRL y empaquetado con PEFT 0.19.1, orientado a la generación de texto conversacional. El nombre del repositorio sugiere un uso previsto de clasificación multietiqueta sobre datos de tipo Stack Exchange, aunque la model card no lo confirma explícitamente.
+El modelo `chandanb14/stack_exc_multilabel_base_lm_head_qwen` es un adaptador LoRA publicado en Hugging Face por el usuario chandanb14, construido sobre el modelo base Qwen/Qwen3-1.7B-Base. Se trata de un fine-tuning supervisado (SFT) mediante la librería TRL y empaquetado con PEFT 0.19.1, orientado a la generación de texto conversacional. El nombre del repositorio sugiere un uso previsto de clasificación multietiqueta sobre datos de tipo Stack Exchange, aunque la model card no lo confirma explícitamente.
 
 El artefacto publicado no es un modelo completo, sino un adaptador de bajo rango (LoRA) que debe cargarse junto al checkpoint base Qwen3-1.7B-Base. El tamaño del repositorio es de 0,3 GB, lo que es coherente con un conjunto de pesos de adaptador y no con los pesos completos de un modelo de 1.700 millones de parámetros.
 
-La relevancia de esta ficha es limitada: se trata de un experimento personal sin descargas ni interacciones, sin licencia declarada, sin idiomas especificados y con una model card que es esencialmente la plantilla por defecto de HuggingFace sin rellenar. Cualquier evaluación rigurosa de su calidad queda bloqueada por la ausencia de datos de entrenamiento, evaluación y uso.
+La relevancia de esta ficha es limitada: se trata de un experimento personal sin descargas ni interacciones, sin licencia declarada, sin idiomas especificados y con una model card que es esencialmente la plantilla por defecto de Hugging Face sin rellenar. Cualquier evaluación rigurosa de su calidad queda bloqueada por la ausencia de datos de entrenamiento, evaluación y uso.
 
 ## Especificaciones tecnicas
 
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| chandanb14/stack_exc_multilabel_base_lm_head_qwen | 1.700 M (base) + LoRA | no disponible | no disponible | HuggingFace, 0 descargas | Adaptador SFT sin documentar |
-| Qwen/Qwen3-1.7B-Base | 1.700 M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (oficial) | Modelo base subyacente |
-| Adaptadores LoRA comunitarios sobre Qwen3-1.7B | variable | depende del base | variable | HuggingFace | Ecosistema amplio, calidad variable |
+| chandanb14/stack_exc_multilabel_base_lm_head_qwen | 1.700 M (base) + LoRA | no disponible | no disponible | Hugging Face, 0 descargas | Adaptador SFT sin documentar |
+| Qwen/Qwen3-1.7B-Base | 1.700 M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (oficial) | Modelo base subyacente |
+| Adaptadores LoRA comunitarios sobre Qwen3-1.7B | variable | depende del base | variable | Hugging Face | Ecosistema amplio, calidad variable |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace sin rellenar: no hay información sobre sesgos, datos, evaluación ni uso previsto.
+- La model card es la plantilla por defecto de Hugging Face sin rellenar: no hay información sobre sesgos, datos, evaluación ni uso previsto.
 - Licencia no declarada: no se puede garantizar el uso comercial ni la redistribución.
 - Idiomas no especificados: se desconoce si el adaptador conserva el multilingüismo del base o lo ha degradado.
 - Sin descargas ni interacciones: no hay evidencia de validación por parte de la comunidad.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chandanb14/stack_exc_multilabel_base_lm_head_qwen
+- Hugging Face: https://huggingface.co/chandanb14/stack_exc_multilabel_base_lm_head_qwen
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute

@@ -94,7 +94,7 @@ La comparativa con otras familias (por ejemplo, MoE de ~20B de otros fabricantes
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ilovefocalors/Sage-A1.5-20B-A3B-heretic-REAP
+- Repositorio Hugging Face: https://huggingface.co/ilovefocalors/Sage-A1.5-20B-A3B-heretic-REAP
 - Modelo base Sage-A1.5 (InternScience): https://huggingface.co/InternScience/Sage-A1.5
 - Informe tecnico de Sage-A1.5: https://arxiv.org/abs/2610.28578
 - Paper de REAP (Lasby et al.): https://arxiv.org/abs/2510.13999

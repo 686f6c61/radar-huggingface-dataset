@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gatilin/InternVL25_8b-ViT` es un repositorio publicado en HuggingFace por el usuario gatilin que, por su nombre y su tamaño (0,6 GB), parece contener únicamente los pesos del codificador visual (ViT) asociado a la familia InternVL 2.5 en su variante de 8B de parámetros. No es, por tanto, un modelo de lenguaje completo listo para generar texto, sino —presumiblemente— un componente de visión que se usaría junto a un LLM dentro de una arquitectura multimodal. Esta interpretación no está confirmada por el autor: el repositorio no incluye model card, pipeline declarado ni documentación técnica de ningún tipo.
+`gatilin/InternVL25_8b-ViT` es un repositorio publicado en Hugging Face por el usuario gatilin que, por su nombre y su tamaño (0,6 GB), parece contener únicamente los pesos del codificador visual (ViT) asociado a la familia InternVL 2.5 en su variante de 8B de parámetros. No es, por tanto, un modelo de lenguaje completo listo para generar texto, sino —presumiblemente— un componente de visión que se usaría junto a un LLM dentro de una arquitectura multimodal. Esta interpretación no está confirmada por el autor: el repositorio no incluye model card, pipeline declarado ni documentación técnica de ningún tipo.
 
 El dato más relevante para quien evalúe el repositorio es su falta de trazabilidad. Se publica bajo licencia MIT, no acumula descargas ni interacciones (0 descargas, 0 likes) y las fechas de creación y actualización (21 de septiembre de 2026 en ambos casos) indican una subida única sin mantenimiento posterior. No se declaran idiomas soportados, formato de pesos ni relación con los pesos oficiales de OpenGVLab.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha no puede certificar capacidades, rendimiento ni equi
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la información disponible. El repositorio no incluye model card (el README se limita a la declaración `license: mit`), no declara pipeline de HuggingFace y no documenta capas, número de cabezas de atención, resolución de entrada, tamaño de parche ni estrategia de división en mosaicos (tiling). Tampoco consta si los pesos son una copia, una conversión, un recorte o un ajuste fino de los pesos oficiales de InternVL 2.5.
+No se ha publicado información sobre la arquitectura en la información disponible. El repositorio no incluye model card (el README se limita a la declaración `license: mit`), no declara pipeline de Hugging Face y no documenta capas, número de cabezas de atención, resolución de entrada, tamaño de parche ni estrategia de división en mosaicos (tiling). Tampoco consta si los pesos son una copia, una conversión, un recorte o un ajuste fino de los pesos oficiales de InternVL 2.5.
 
 Respecto al entrenamiento, no hay datos sobre número de tokens, composición del dataset, resolución de las imágenes de entrenamiento, uso de RLHF/DPO ni objetivos de alineación. Dado que el nombre apunta a un componente ViT y no a un modelo multimodal completo, es probable que no se hayan aplicado técnicas de alineación por preferencias, pero esto es una inferencia y no un dato verificado. Cualquier innovación técnica (atención lineal, decodificación especulativa, destilación) queda sin documentar.
 
@@ -95,7 +95,7 @@ No se incluyen cifras comparativas porque no se han publicado resultados de benc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gatilin/InternVL25_8b-ViT
+- Repositorio en Hugging Face: https://huggingface.co/gatilin/InternVL25_8b-ViT
 - No se han encontrado enlaces relevantes en la búsqueda web. Los resultados devueltos corresponden a páginas de banca en línea de CBC Banque (CBC Touch) y no guardan ninguna relación con el modelo:
   - https://www.cbc.be/particuliers/fr/produits/paiements/self-banking/sur-votre-pc/qu-est-ce-que-touch.html
   - https://www.cbc.be/particuliers/fr/produits/paiements/self-banking/sur-votre-pc/comment-fonctionne-touch/comment-se-connecter-et-signer.html

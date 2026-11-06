@@ -85,7 +85,7 @@ Los datos del modelo en cuestión proceden de la información del repositorio; l
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/talzoomanzoo/SC_aime_qwen3_1_7b_ep3
+- Repositorio del modelo en Hugging Face: https://huggingface.co/talzoomanzoo/SC_aime_qwen3_1_7b_ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog, repositorio o demo del método de self-certainty: no disponible en la información proporcionada
 - Dataset AIME utilizado: no disponible en la información proporcionada

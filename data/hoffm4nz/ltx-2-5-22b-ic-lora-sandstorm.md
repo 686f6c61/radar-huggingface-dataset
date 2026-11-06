@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros base | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.5 22B IC-LoRA Sandstorm (este) | IC-LoRA video-to-video sobre LTX-2.5 | 22B (base) | Clip de referencia + prompt de texto | ltx-2-community-license | HuggingFace (Hoffm4nz) |
-| Lightricks/LTX-2.5 | Modelo base de difusion de video | 22B | Prompt de texto (y modalidades del pipeline) | ltx-2-community-license | HuggingFace (Lightricks) |
+| LTX-2.5 22B IC-LoRA Sandstorm (este) | IC-LoRA video-to-video sobre LTX-2.5 | 22B (base) | Clip de referencia + prompt de texto | ltx-2-community-license | Hugging Face (Hoffm4nz) |
+| Lightricks/LTX-2.5 | Modelo base de difusion de video | 22B | Prompt de texto (y modalidades del pipeline) | ltx-2-community-license | Hugging Face (Lightricks) |
 | Otros IC-LoRA de la comunidad sobre LTX-2.5 | Adaptadores de efecto video-to-video | 22B (base) | Clip de referencia + prompt | Heredada del base | no disponible en la informacion proporcionada |
 
 La comparativa con alternativas de la misma categoria (otros adaptadores de efecto video-to-video) no esta disponible en la informacion proporcionada mas alla de la referencia al modelo base.
@@ -96,7 +96,7 @@ La comparativa con alternativas de la misma categoria (otros adaptadores de efec
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Hoffm4nz/LTX-2.5-22b-IC-LoRA-Sandstorm
+- Hugging Face del adaptador: https://huggingface.co/Hoffm4nz/LTX-2.5-22b-IC-LoRA-Sandstorm
 - Modelo base LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia LTX-2 Community License: https://huggingface.co/Lightricks/LTX-2.5/blob/main/LICENSE
 - Repositorio ComfyUI-LTXVideo: https://github.com/Lightricks/ComfyUI-LTXVideo/

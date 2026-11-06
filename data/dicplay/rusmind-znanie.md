@@ -18,7 +18,7 @@ Es relevante ahora porque se distribuye como GGUF para ejecución local mediante
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF Q4_K_M (unica version publicada, 15,6 GB) |
 | Idiomas soportados | ruso (ru), ingles (en) |
-| Licencia | RusMind License (DICPlay); nombre de licencia "rusmind-license", marcada como "other" en HuggingFace |
+| Licencia | RusMind License (DICPlay); nombre de licencia "rusmind-license", marcada como "other" en Hugging Face |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind-Znanie | ~25,2 mil millones totales, ~4 mil millones activos | no disponible | GGUF Q4_K_M | RusMind License (uso comercial con contrato) | HuggingFace y rusmind.ru |
-| RusMind-Momentum | no disponible | no disponible | no disponible | RusMind License | HuggingFace y en dispositivo |
-| RusMind-Vspyshka | no disponible | no disponible | no disponible | RusMind License | HuggingFace y en dispositivo |
-| google/gemma-4-26B-A4B-it | ~26 mil millones, ~4 mil millones activos | no disponible | safetensors (modelo base) | Apache 2.0 | Google / HuggingFace |
+| RusMind-Znanie | ~25,2 mil millones totales, ~4 mil millones activos | no disponible | GGUF Q4_K_M | RusMind License (uso comercial con contrato) | Hugging Face y rusmind.ru |
+| RusMind-Momentum | no disponible | no disponible | no disponible | RusMind License | Hugging Face y en dispositivo |
+| RusMind-Vspyshka | no disponible | no disponible | no disponible | RusMind License | Hugging Face y en dispositivo |
+| google/gemma-4-26B-A4B-it | ~26 mil millones, ~4 mil millones activos | no disponible | safetensors (modelo base) | Apache 2.0 | Google / Hugging Face |
 
 Los dos modelos de la familia RusMind (Momentum y Vspyshka) están orientados a ejecución en dispositivo, en teléfonos y ordenadores débiles o en ordenadores potentes y teléfonos de gama alta respectivamente, según la model card, pero no se detallan sus parámetros ni contexto. El modelo base Gemma 4 26B A4B se distribuye bajo Apache 2.0 y con pesos en safetensors, mientras que RusMind-Znanie añade un ajuste específico en ruso y restringe el uso comercial mediante su licencia propia. No se dispone de datos de rendimiento comparativo entre ellos.
 
@@ -85,7 +85,7 @@ Los dos modelos de la familia RusMind (Momentum y Vspyshka) están orientados a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DICPlay/RusMind-Znanie
+- Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-Znanie
 - Repositorio de la version 3.2: https://huggingface.co/DICPlay/RusMind-Znanie/tree/main/v3.2
 - Servicio en navegador: https://rusmind.ru
 - Modelo RusMind-Momentum: https://huggingface.co/DICPlay/RusMind-Momentum

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TITAN_X es un modelo publicado en HuggingFace bajo el identificador `citizen1o1/TITAN_X` por el usuario citizen1o1. En el momento de redactar esta ficha, la informacion disponible es extremadamente limitada: la model card unicamente declara la licencia MIT, sin describir arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (2026-10-07), lo que sugiere una publicacion reciente y sin traccion comunitaria verificable.
+TITAN_X es un modelo publicado en Hugging Face bajo el identificador `citizen1o1/TITAN_X` por el usuario citizen1o1. En el momento de redactar esta ficha, la informacion disponible es extremadamente limitada: la model card unicamente declara la licencia MIT, sin describir arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (2026-10-07), lo que sugiere una publicacion reciente y sin traccion comunitaria verificable.
 
-No se ha podido confirmar si se trata de un modelo de lenguaje, un modelo multimodal, un ajuste fino sobre otra base o un artefacto experimental. Tampoco hay pipeline declarado en HuggingFace ni idiomas soportados. Dado que la unica informacion fiable es la licencia MIT, cualquier evaluacion tecnica debe considerarse pendiente de verificacion por parte del autor.
+No se ha podido confirmar si se trata de un modelo de lenguaje, un modelo multimodal, un ajuste fino sobre otra base o un artefacto experimental. Tampoco hay pipeline declarado en Hugging Face ni idiomas soportados. Dado que la unica informacion fiable es la licencia MIT, cualquier evaluacion tecnica debe considerarse pendiente de verificacion por parte del autor.
 
 Por tanto, esta ficha se limita a documentar el estado actual del repositorio y a marcar explicitamente como "no disponible" todos aquellos datos que no aparecen en la informacion proporcionada. Se recomienda precaucion antes de integrar este modelo en cualquier flujo de produccion.
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| citizen1o1/TITAN_X | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| citizen1o1/TITAN_X | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -78,10 +78,10 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 - Limitaciones de contexto o idioma: no disponible; no se declaran idiomas ni ventana de contexto.
 - Restricciones de licencia: la model card declara licencia MIT, lo que en principio permitiria uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la licencia. No obstante, al no existir documentacion adicional, no puede confirmarse que el autor tenga derechos sobre todos los componentes (por ejemplo, pesos derivados de otro modelo base) ni que no existan terminos adicionales no declarados.
 - Caveat para produccion: el repositorio no presenta descargas, likes ni documentacion tecnica, y no se ha verificado su funcionamiento. No se recomienda su uso en entornos de produccion sin una evaluacion previa por parte del equipo tecnico.
-- Ausencia de pipeline declarado en HuggingFace: dificulta la integracion automatica mediante las utilidades estandar de la plataforma.
+- Ausencia de pipeline declarado en Hugging Face: dificulta la integracion automatica mediante las utilidades estandar de la plataforma.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/citizen1o1/TITAN_X
+- Hugging Face: https://huggingface.co/citizen1o1/TITAN_X
 - Resultados de busqueda web proporcionados: no contienen referencias especificas a este modelo (Google AI Studio, AI/TLDR, ScriptByAI, CivArchive y PromptZone no aportan informacion sobre `citizen1o1/TITAN_X`).
 - Paper, blog, repositorio o demo oficial: no disponible.

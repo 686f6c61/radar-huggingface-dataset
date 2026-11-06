@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Intern3-5-VL-2B es la versión optimizada para dispositivos Qualcomm del modelo visión-lenguaje InternVL3.5 de OpenGVLab, publicada por Qualcomm en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo multimodal capaz de procesar texto e imágenes para tareas de razonamiento como respuesta visual a preguntas (VQA) y generación de descripciones de imágenes. El repositorio no contiene pesos en formato de entrenamiento, sino artefactos pre-exportados y compilados para ejecutarse en la NPU Hexagon de plataformas Snapdragon mediante los runtimes Genie y GenieX de Qualcomm.
+Intern3-5-VL-2B es la versión optimizada para dispositivos Qualcomm del modelo visión-lenguaje InternVL3.5 de OpenGVLab, publicada por Qualcomm en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo multimodal capaz de procesar texto e imágenes para tareas de razonamiento como respuesta visual a preguntas (VQA) y generación de descripciones de imágenes. El repositorio no contiene pesos en formato de entrenamiento, sino artefactos pre-exportados y compilados para ejecutarse en la NPU Hexagon de plataformas Snapdragon mediante los runtimes Genie y GenieX de Qualcomm.
 
 La relevancia de esta ficha radica en que ejemplifica una tendencia clara: la distribución de modelos multimodales pequeños (del orden de 2 000 millones de parámetros) ya cuantizados a 4 bits de pesos y 16 bits de activaciones (w4a16) y compilados para hardware móvil concreto. El repositorio incluye binarios específicos para Snapdragon 8 Elite Gen 5, Snapdragon 8 Elite, Snapdragon X2 Elite, Snapdragon X Elite, Dragonwing IQ-8275, SA8775P y Dragonwing IQ-9075, todos con el SDK QAIRT 2.45.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | qualcomm/Intern3-5-VL-2B | ~2 000 millones | no disponible | w4a16 para NPU Qualcomm | Apache 2.0 | Artefactos compilados para siete plataformas Snapdragon/Dragonwing |
-| OpenGVLab/InternVL3_5-2B | ~2 000 millones | no disponible | no disponible | no disponible en la informacion proporcionada | Checkpoint original de OpenGVLab en HuggingFace, referenciado como base |
+| OpenGVLab/InternVL3_5-2B | ~2 000 millones | no disponible | no disponible | no disponible en la informacion proporcionada | Checkpoint original de OpenGVLab en Hugging Face, referenciado como base |
 | Otras alternativas de la misma categoria (VLM de ~2-3B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación que puede sostenerse con la información disponible es con el checkpoint original InternVL3_5-2B del que deriva: misma base de parámetros, pero orientaciones distintas, ya que la versión de Qualcomm está cuantizada y compilada para hardware concreto mientras que el original está pensado para entrenamiento e inferencia en frameworks estándar. No se dispone de datos de rendimiento de ninguno de los dos para establecer una comparación cuantitativa.
@@ -86,7 +86,7 @@ La única comparación que puede sostenerse con la información disponible es co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/Intern3-5-VL-2B
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/Intern3-5-VL-2B
 - Checkpoint base: https://huggingface.co/OpenGVLab/InternVL3_5-2B
 - Paper referenciado: https://arxiv.org/abs/2508.18265
 - Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/intern3_5_vl_2b

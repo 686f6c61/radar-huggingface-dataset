@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LLAMA-THINKER es un modelo publicado en HuggingFace por el usuario SKT-NRS el 3 de septiembre de 2026, bajo licencia Apache 2.0. El nombre sugiere una posible relación con la familia Llama y capacidades de razonamiento o "thinking mode", pero no existe documentación en la model card que confirme esta hipótesis.
+LLAMA-THINKER es un modelo publicado en Hugging Face por el usuario SKT-NRS el 3 de septiembre de 2026, bajo licencia Apache 2.0. El nombre sugiere una posible relación con la familia Llama y capacidades de razonamiento o "thinking mode", pero no existe documentación en la model card que confirme esta hipótesis.
 
 La model card del repositorio está prácticamente vacía: únicamente declara la licencia (apache-2.0) y no incluye descripción, arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso. El modelo registra cero descargas y cero likes, lo que indica que es una publicación reciente o sin difusión. No se ha encontrado información adicional relevante en la web; los resultados de búsqueda devuelven contenido sobre SK Telecom T1 (equipo de esports) y SKT Logistique (empresa de transporte), sin relación con el modelo.
 
@@ -31,7 +31,7 @@ No se dispone de información verificable sobre las capacidades del modelo. No s
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin información sobre las capacidades reales del modelo. Se recomienda consultar la página de HuggingFace del repositorio para obtener actualizaciones de la documentación antes de considerar su adopción en cualquier escenario de producción.
+No se pueden proponer casos de uso concretos sin información sobre las capacidades reales del modelo. Se recomienda consultar la página de Hugging Face del repositorio para obtener actualizaciones de la documentación antes de considerar su adopción en cualquier escenario de producción.
 
 ## Benchmarks y rendimiento
 
@@ -48,7 +48,7 @@ No disponible. Sin datos de arquitectura, parámetros o rendimiento, no es posib
 ## Limitaciones y advertencias
 
 - La model card está vacía: no hay documentación técnica, instrucciones de uso ni ejemplos de inferencia.
-- El modelo registra cero descargas y cero interacciones en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo registra cero descargas y cero interacciones en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - No se puede verificar la procedencia de los pesos ni el proceso de entrenamiento, lo que implica un riesgo de seguridad si se utiliza en producción.
 - La licencia Apache 2.0 permite uso comercial, pero sin documentación no es posible evaluar si el modelo es apto para ello.
 - El nombre del repositorio sugiere una relación con la familia Llama, pero no hay evidencia que lo confirme.
@@ -56,6 +56,6 @@ No disponible. Sin datos de arquitectura, parámetros o rendimiento, no es posib
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SKT-NRS/LLAMA-THINKER
+- Repositorio Hugging Face: https://huggingface.co/SKT-NRS/LLAMA-THINKER
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

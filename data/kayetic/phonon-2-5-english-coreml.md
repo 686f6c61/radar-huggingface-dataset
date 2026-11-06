@@ -69,8 +69,8 @@ La diferencia de WER entre ambos modelos está dentro de la incertidumbre del bo
 
 | Modelo | Parámetros | Contexto / ventana | WER público | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phonon 2.5 English Core ML (esta ficha) | 0,6 B | Ventanas de 3–35 s | 4,07% (360 clips) | CC-BY-4.0 | HuggingFace, formato Core ML |
-| Phonon 2 Core ML | 0,6 B (no confirmado en la información disponible) | Ventanas de 15 s (según pruebas) | 4,22% (360 clips) | no disponible | HuggingFace, formato Core ML |
+| Phonon 2.5 English Core ML (esta ficha) | 0,6 B | Ventanas de 3–35 s | 4,07% (360 clips) | CC-BY-4.0 | Hugging Face, formato Core ML |
+| Phonon 2 Core ML | 0,6 B (no confirmado en la información disponible) | Ventanas de 15 s (según pruebas) | 4,22% (360 clips) | no disponible | Hugging Face, formato Core ML |
 | NVIDIA Parakeet TDT 0.6B v3 | 0,6 B | no disponible | no disponible | no disponible | Modelo base del que deriva Phonon 2.5 |
 
 No se dispone en la información proporcionada de datos comparativos de otros modelos ASR on-device (por ejemplo, Whisper en Core ML) que permitan una comparación cuantitativa rigurosa.
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de datos comparativos de otros mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kayetic/Phonon-2.5-English-CoreML
+- Hugging Face: https://huggingface.co/Kayetic/Phonon-2.5-English-CoreML
 - Modelo base: https://huggingface.co/FermionResearch/Phonon-2.5-English
 - Conversión de referencia: https://huggingface.co/FermionResearch/Phonon-2-CoreML
 - Librería de carga: https://github.com/fermionresearch/phonon-coreml

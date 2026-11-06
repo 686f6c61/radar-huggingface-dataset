@@ -15,7 +15,7 @@ Con 434 millones de parámetros, JabuticaBERT-Large se posiciona como un modelo 
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible (el paper menciona entrenamiento de contexto largo, pero no se especifica el número de tokens) |
 | Tipos de cuantizacion | No disponible (solo se distribuye en safetensors, sin cuantizaciones publicadas) |
-| Idiomas soportados | Portugués (según el paper; no especificado en la ficha de HuggingFace) |
+| Idiomas soportados | Portugués (según el paper; no especificado en la ficha de Hugging Face) |
 | Licencia | No disponible |
 | Formato de pesos | safetensors |
 
@@ -65,12 +65,12 @@ No se dispone de datos comparativos detallados en la información proporcionada.
 - Limitaciones de contexto: aunque se menciona entrenamiento de contexto largo, no se especifica la longitud máxima soportada. Es necesario verificar este dato antes de usarlo con secuencias muy extensas.
 - Restricciones de licencia: la licencia no está disponible, lo que supone un riesgo legal para uso comercial. Se debe contactar con el autor antes de desplegarlo en producción.
 - Idiomas: el modelo está especializado en portugués; su rendimiento en otros idiomas no está garantizado y probablemente sea deficiente.
-- Documentación incompleta: la model card en HuggingFace está prácticamente vacía, lo que dificulta la reproducibilidad y la evaluación de riesgos.
+- Documentación incompleta: la model card en Hugging Face está prácticamente vacía, lo que dificulta la reproducibilidad y la evaluación de riesgos.
 
 ## Enlaces
 
-- HuggingFace (autor original): https://huggingface.co/Thiago-Reis-Porto/JabuticaBERT-Large
-- HuggingFace (organización AMADEUS AI): https://huggingface.co/amadeusai/JabuticaBERT-Large
+- Hugging Face (autor original): https://huggingface.co/Thiago-Reis-Porto/JabuticaBERT-Large
+- Hugging Face (organización AMADEUS AI): https://huggingface.co/amadeusai/JabuticaBERT-Large
 - Paper en ACL Anthology: https://aclanthology.org/2026.propor-1.93/
 - PDF del paper: https://aclanthology.org/2026.propor-1.93.pdf
 - Colección JabuticaBERT: https://huggingface.co/collections/amadeusai/jabuticabert

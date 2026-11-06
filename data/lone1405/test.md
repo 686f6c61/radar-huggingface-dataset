@@ -52,6 +52,6 @@ No disponible. No existen datos para comparar este repositorio con otros modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: [lone1405/test](https://huggingface.co/lone1405/test)
+- Repositorio Hugging Face: [lone1405/test](https://huggingface.co/lone1405/test)
 
 No se encontraron papers, blogs, repositorios de codigo o demos relacionados en la informacion proporcionada.

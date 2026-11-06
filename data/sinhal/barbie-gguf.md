@@ -77,7 +77,7 @@ No se dispone de benchmarks comparativos entre estos modelos en tareas de rol. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sinhal/barbie-gguf
+- Repositorio Hugging Face: https://huggingface.co/sinhal/barbie-gguf
 - Árbol de archivos del repositorio: https://huggingface.co/sinhal/barbie-gguf/tree/main
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Herramienta de descubrimiento de modelos GGUF (referencia general): https://local-ai-zone.github.io/

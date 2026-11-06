@@ -87,7 +87,7 @@ No se han identificado modelos directamente comparables en la informacion dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NagaYu/crowd-anon-0.1b
+- Modelo en Hugging Face: https://huggingface.co/NagaYu/crowd-anon-0.1b
 - Repositorio del proyecto: https://github.com/NagaYu/crowd
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/NagaYu/crowd-anonymity-sets
 - Espacio relacionado (Llama Local Lab): https://huggingface.co/spaces/NagaYu/llama-local-lab

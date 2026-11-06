@@ -81,11 +81,11 @@ No se dispone de informacion sobre adaptadores equivalentes en el ecosistema Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nbeerbower/Bubba-Qwen3.5-9B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/nbeerbower/Bubba-Qwen3.5-9B-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/nbeerbower/GreatFirewall-DPO
 - Modelo base: https://huggingface.co/hemlang/Hemlock-Qwen3.5-9B
 - Proyecto Wichtelchen (modelo relacionado): https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B
 - Herramienta de entrenamiento Merlina: https://github.com/Schneewolf-Labs/Merlina
-- Perfil de la autora en HuggingFace: https://huggingface.co/nbeerbower
+- Perfil de la autora en Hugging Face: https://huggingface.co/nbeerbower
 - Referencia al modelo Qwen3.5-9B: https://www.llm-releases.com/models/qwen3-5-9b
 - Pagina de Ollama para Qwen3.5: https://ollama.com/library/qwen3.5:9b

@@ -4,7 +4,7 @@
 
 `certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Payoff-Statement-v104` es un modelo propietario publicado por la organización `certo-ventures`, que segun el nombre del modelo corresponde a un ajuste fino (fine-tuning) del modelo multimodal `Qwen3-VL-8B-Instruct`. El objetivo explicito del modelo es la extraccion automatizada de informacion de "payoff statements", es decir, estados de pago o liquidacion de deudas emitidos por entidades financieras.
 
-La ficha del modelo (model card) publicada por el autor es una plantilla auto-generada de HuggingFace sin contenido sustancial: todos los campos estan rellenados con "[More Information Needed]". Sin embargo, el nombre del modelo y los metadatos de HuggingFace permiten inferir que se trata de un modelo de vision-lenguaje (vision-language) con aproximadamente 8 000 millones de parametros, orientado a tareas de extraccion de datos de documentos financieros.
+La ficha del modelo (model card) publicada por el autor es una plantilla auto-generada de Hugging Face sin contenido sustancial: todos los campos estan rellenados con "[More Information Needed]". Sin embargo, el nombre del modelo y los metadatos de Hugging Face permiten inferir que se trata de un modelo de vision-lenguaje (vision-language) con aproximadamente 8 000 millones de parametros, orientado a tareas de extraccion de datos de documentos financieros.
 
 Un dato notable es el tamano del repositorio: solo 0.7 GB. Para un modelo de 8B de parametros, este tamano es inusualmente reducido, lo que sugiere que el repositorio podria contener un adaptador LoRA, pesos parciales, o simplemente los archivos de configuracion y tokenizador sin los pesos completos. No hay descargas (0) ni "likes" (0), lo que indica que el modelo no ha sido validado por la comunidad hasta la fecha de esta ficha.
 
@@ -19,7 +19,7 @@ Un dato notable es el tamano del repositorio: solo 0.7 GB. Para un modelo de 8B 
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (el modelo base Qwen3-VL de Qwen soporta multiples idiomas, incluidos chino e ingles, pero no se ha confirmado para este ajuste fino) |
 | Licencia | No disponible (el campo de licencia esta vacio; no se especifica ninguna licencia, lo que es relevante para uso comercial) |
-| Formato de pesos | safetensors (segun los tags del repositorio en HuggingFace) |
+| Formato de pesos | safetensors (segun los tags del repositorio en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -34,7 +34,7 @@ No se dispone de informacion sobre los datos de entrenamiento, el numero de toke
 - Extraccion de datos de estados de pago financieros (payoff statements), segun el nombre del modelo.
 - Procesamiento multimodal: al estar basado en Qwen3-VL, el modelo puede procesar tanto texto como imagenes, lo que le permitiria trabajar con documentos escaneados o fotografias de documentos.
 - Instrucciones en lenguaje natural: el sufijo "instruct" indica que el modelo ha sido ajustado para seguir instrucciones, lo que es util para tareas de extraccion dirigidas por prompts.
-- Compatibilidad con el ecosistema de HuggingFace: los tags incluyen "transformers", "safetensors" y "endpoints_compatible", lo que indica que el modelo puede cargarse con la biblioteca Transformers y desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con el ecosistema de Hugging Face: los tags incluyen "transformers", "safetensors" y "endpoints_compatible", lo que indica que el modelo puede cargarse con la biblioteca Transformers y desplegarse en Hugging Face Inference Endpoints.
 - Capacidad de procesar documentos financieros en formato de imagen o PDF (inferida, no confirmada por la documentacion).
 
 No hay informacion disponible sobre soporte de tool calling, function calling, capacidades de agentes, razonamiento multi-paso o modo "thinking". Estas capacidades no se pueden confirmar ni descartar sin informacion adicional.
@@ -57,7 +57,7 @@ No hay informacion disponible sobre soporte de tool calling, function calling, c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye ninguna tabla de evaluacion, ni resultados en MMLU, HumanEval, GSM8K, ni metricas especificas para tareas de extraccion de documentos. El repositorio tampoco incluye metricas de rendimiento en el campo "Evaluation" de la plantilla de HuggingFace, que aparece relleno con "[More Information Needed]".
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye ninguna tabla de evaluacion, ni resultados en MMLU, HumanEval, GSM8K, ni metricas especificas para tareas de extraccion de documentos. El repositorio tampoco incluye metricas de rendimiento en el campo "Evaluation" de la plantilla de Hugging Face, que aparece relleno con "[More Information Needed]".
 
 ## Requisitos de hardware
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - Compatibilidad con GPU de consumo: no confirmado. El tamano reducido del repositorio (0.7 GB) sugiere que podria tratarse de un adaptador LoRA, en cuyo caso la carga de pesos seria minima y se ejecutaria sobre el modelo base. Sin embargo, si se intentara cargar como modelo completo, el tamano real de los pesos seria mucho mayor que 0.7 GB.
 
-- Opciones de despliegue: el tag "endpoints_compatible" sugiere compatibilidad con HuggingFace Inference Endpoints. La biblioteca declarada es "transformers", por lo que tambien podria desplegarse con vLLM, TGI u otras herramientas compatibles con HuggingFace. No hay informacion sobre soporte para llama.cpp u Ollama.
+- Opciones de despliegue: el tag "endpoints_compatible" sugiere compatibilidad con Hugging Face Inference Endpoints. La biblioteca declarada es "transformers", por lo que tambien podria desplegarse con vLLM, TGI u otras herramientas compatibles con Hugging Face. No hay informacion sobre soporte para llama.cpp u Ollama.
 
 - Latencia y throughput: no disponibles. No se han publicado mediciones de rendimiento en la informacion del modelo.
 
@@ -101,6 +101,6 @@ No se dispone de datos de benchmarks para realizar una comparativa cuantitativa.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Payoff-Statement-v104
+- Repositorio del modelo en Hugging Face: https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Payoff-Statement-v104
 - Modelo hermano del mismo autor (extraccion de certificados): https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Certificate-of-Good-Standing
 - Web de Certo Software (posible organizacion relacionada): https://www.certosoftware.com/

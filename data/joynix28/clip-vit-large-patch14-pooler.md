@@ -75,9 +75,9 @@ Estos valores corresponden a la sonda logística entrenada sobre las caracterís
 
 | Modelo | Parametros (torre de vision) | Salida | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joynix28/clip-vit-large-patch14-pooler | ≈304 M | `pooler_output` 1024-d + `image_embeds` 768-d | ONNX (cuantizado) | MIT | HuggingFace |
-| Xenova/clip-vit-large-patch14 | ≈304 M | `image_embeds` 768-d | ONNX | MIT | HuggingFace |
-| openai/clip-vit-large-patch14 | ≈304 M (torre de vision) | `image_embeds` 768-d | PyTorch (safetensors) | MIT | HuggingFace |
+| joynix28/clip-vit-large-patch14-pooler | ≈304 M | `pooler_output` 1024-d + `image_embeds` 768-d | ONNX (cuantizado) | MIT | Hugging Face |
+| Xenova/clip-vit-large-patch14 | ≈304 M | `image_embeds` 768-d | ONNX | MIT | Hugging Face |
+| openai/clip-vit-large-patch14 | ≈304 M (torre de vision) | `image_embeds` 768-d | PyTorch (safetensors) | MIT | Hugging Face |
 
 La diferencia clave del repositorio analizado frente a las alternativas es la exposición de la característica interna de 1024 dimensiones, que las otras exportaciones no ofrecen directamente. En cuanto a pesos y arquitectura, los tres son equivalentes. No se dispone de modelos comparables específicos de detección de imágenes por IA con licencia MIT en el material proporcionado.
 
@@ -94,7 +94,7 @@ La diferencia clave del repositorio analizado frente a las alternativas es la ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joynix28/clip-vit-large-patch14-pooler
+- Modelo en Hugging Face: https://huggingface.co/joynix28/clip-vit-large-patch14-pooler
 - Export origen (Xenova): https://huggingface.co/Xenova/clip-vit-large-patch14
 - Modelo base (OpenAI): https://huggingface.co/openai/clip-vit-large-patch14
 - Proyecto de la sonda lineal (SynthID-detector): https://github.com/Rinne414/SynthID-detector

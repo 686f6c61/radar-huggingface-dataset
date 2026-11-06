@@ -84,7 +84,7 @@ Los datos de los modelos alternativos se ofrecen como referencia general de cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orucexe/kokoro-tts-azerbaijani
+- Modelo en Hugging Face: https://huggingface.co/orucexe/kokoro-tts-azerbaijani
 - Notebook de prueba: https://huggingface.co/orucexe/kokoro-tts-azerbaijani/blob/main/kokoro-tts-azerbaijani.ipynb
 - Demo web (playground): https://tts.orucs.net/
 - Modelo base Kokoro-82M: no disponible en la informacion proporcionada

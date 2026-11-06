@@ -99,7 +99,7 @@ Los cuatro ficheros comparados derivan del mismo modelo base Qwen/Qwen3.5-4B, po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/QUASAR-QAT/Qwen3.5-4B-QUASAR-Q4_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/QUASAR-QAT/Qwen3.5-4B-QUASAR-Q4_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Detalles de evaluacion y reproduccion: https://huggingface.co/QUASAR-QAT/Qwen3.5-4B-QUASAR-Q4_0-GGUF/blob/main/EVAL.md

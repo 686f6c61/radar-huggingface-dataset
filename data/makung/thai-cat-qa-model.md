@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Thai GPT-2 Fine-Tuned (Cat Q&A) es un modelo de lenguaje en tailandes publicado por el usuario makung en HuggingFace bajo el identificador `makung/thai-cat-qa-model`. Segun la model card, se trata de un modelo afinado para responder preguntas sobre gatos ("โมเดลตอบคำถามเรื่องแมว"), construido sobre la arquitectura GPT-2 y ajustado a partir del dataset `disease_3000`. El repositorio contiene 124.449.024 parametros reales en formato safetensors, lo que lo situa en la misma escala que GPT-2 small (124M), con un peso de repositorio de aproximadamente 0,5 GB.
+Thai GPT-2 Fine-Tuned (Cat Q&A) es un modelo de lenguaje en tailandes publicado por el usuario makung en Hugging Face bajo el identificador `makung/thai-cat-qa-model`. Segun la model card, se trata de un modelo afinado para responder preguntas sobre gatos ("โมเดลตอบคำถามเรื่องแมว"), construido sobre la arquitectura GPT-2 y ajustado a partir del dataset `disease_3000`. El repositorio contiene 124.449.024 parametros reales en formato safetensors, lo que lo situa en la misma escala que GPT-2 small (124M), con un peso de repositorio de aproximadamente 0,5 GB.
 
 El modelo solo declara soporte para el idioma tailandes (`th`) y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales por parte del licenciante. Es un modelo de nicho, con cero descargas y cero likes en el momento de redactar esta ficha, y su model card esta practicamente vacia: la mayoria de los apartados (datos de entrenamiento, hiperparametros, evaluacion, hardware) figuran como "[More Information Needed]".
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y de caracter experimental: sirve como ejemplo 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun el tag `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun el tag `gpt2` de Hugging Face) |
 | Parametros totales | 124.449.024 (dato real de safetensors) |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible (la model card no la especifica; GPT-2 small base suele usar 1024 tokens, pero no se confirma para este ajuste) |
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de caracter experimental: sirve como ejemplo 
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | ~0,5 GB |
-| Pipeline declarado | no disponible (sin tag de pipeline en HuggingFace) |
+| Pipeline declarado | no disponible (sin tag de pipeline en Hugging Face) |
 | Dataset de ajuste | `disease_3000` |
 | Descargas / likes | 0 / 0 |
 
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en fp32, unos 250 MB en fp16/bf16, unos 125 MB en int8 y unos 62 MB en int4. A esto hay que sumar la cache KV, que para una ventana de 1024 tokens es del orden de decenas de MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una NVIDIA RTX 3060, RTX 4090, T4, L4, A100 o H100 lo ejecutan con una fraccion minima de su memoria.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos (GTX 1050 en adelante) e incluso en CPU, Raspberry Pi o telefonos recientes mediante cuantizacion.
-- Opciones de despliegue: `transformers` (PyTorch) es la via directa con los pesos safetensors publicados. Tambien es posible servirlo con vLLM, TGI o HuggingFace Inference Endpoints, ya que GPT-2 esta soportado por estos motores. Para llama.cpp u Ollama haria falta convertir previamente los pesos a GGUF, ya que el repositorio no incluye ese formato.
+- Opciones de despliegue: `transformers` (PyTorch) es la via directa con los pesos safetensors publicados. Tambien es posible servirlo con vLLM, TGI o Hugging Face Inference Endpoints, ya que GPT-2 esta soportado por estos motores. Para llama.cpp u Ollama haria falta convertir previamente los pesos a GGUF, ya que el repositorio no incluye ese formato.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| makung/thai-cat-qa-model | 124,4 M | no disponible | tailandes | MIT | HuggingFace, safetensors |
+| makung/thai-cat-qa-model | 124,4 M | no disponible | tailandes | MIT | Hugging Face, safetensors |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | principalmente ingles | MIT (pesos publicados por OpenAI) | Ampliamente disponible, safetensors y multiples conversiones |
 | Modelos Thai QA dedicados (por ejemplo variantes basadas en WangchanBERTa o Typhoon) | no disponible | no disponible | tailandes | no disponible | no disponible en la informacion proporcionada |
 
@@ -90,7 +90,7 @@ La comparacion con GPT-2 small es pertinente por tamano y arquitectura: `thai-ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makung/thai-cat-qa-model
+- Modelo en Hugging Face: https://huggingface.co/makung/thai-cat-qa-model
 - Dataset declarado: `disease_3000` (identificador completo no disponible)
 - Paper citado en la plantilla de la model card (impacto ambiental, no descriptivo del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning referenciada en la model card: https://mlco2.github.io/impact

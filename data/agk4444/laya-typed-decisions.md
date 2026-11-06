@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya (agk4444/laya-typed-decisions) es un modelo de 421.293.830 parámetros publicado en HuggingFace por el usuario agk4444 y desarrollado, según su model card, por Convai Innovations. Se presenta como un ajuste fino de "Laya" sobre los 1.200 casos de entrenamiento (6.000 decisiones) del benchmark independiente LocalLLaMA/typed-decisions, orientado a clasificación de texto y a la toma de decisiones estructuradas y calibradas, según reflejan las etiquetas del repositorio (laya, system-one, calibrated-decisions, rlcd, structured-decisions, typed-decisions).
+Laya (agk4444/laya-typed-decisions) es un modelo de 421.293.830 parámetros publicado en Hugging Face por el usuario agk4444 y desarrollado, según su model card, por Convai Innovations. Se presenta como un ajuste fino de "Laya" sobre los 1.200 casos de entrenamiento (6.000 decisiones) del benchmark independiente LocalLLaMA/typed-decisions, orientado a clasificación de texto y a la toma de decisiones estructuradas y calibradas, según reflejan las etiquetas del repositorio (laya, system-one, calibrated-decisions, rlcd, structured-decisions, typed-decisions).
 
 El problema que aborda es la evaluación de estados de flujo de trabajo (workflow states) junto con preguntas tipadas en una única pasada hacia delante, devolviendo respuestas estructuradas. El autor reporta una precisión de 0,789 sobre el conjunto de test oficial de 400 casos (2.000 decisiones) repartidos en cuatro dominios: observabilidad de trazas de agentes, atención al cliente, procesamiento de facturas e incidentes de seguridad. Con esas cifras afirma superar a TypeSafe Jev 1.13.0 (0,727) y el techo de autoacuerdo del profesor (Teacher Self-Agreement, 0,735).
 
@@ -79,7 +79,7 @@ En el model-index del repositorio, las métricas declaradas son accuracy = 0,789
 
 | Modelo | Tipo | Parámetros | Accuracy | Brier score | ECE | Latencia (p50) | Licencia / disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Laya (agk4444/laya-typed-decisions) | Ajuste fino específico | 421.293.830 | 0,789 | 0,061 | 0,232 | 149,6 ms | Apache 2.0; pesos abiertos en HuggingFace, 0 descargas |
+| Laya (agk4444/laya-typed-decisions) | Ajuste fino específico | 421.293.830 | 0,789 | 0,061 | 0,232 | 149,6 ms | Apache 2.0; pesos abiertos en Hugging Face, 0 descargas |
 | TypeSafe Jev 1.13.0 | Propósito general | no disponible | 0,727 | 0,148 | 0,144 | 710 ms | no disponible; acceso vía API a 0,0004 USD/caso |
 | ModernBERT-base | Especialista | 149.000.000 (según la model card) | 0,646 | 0,119 | 0,179 | 349 ms | no disponible en la información proporcionada |
 | Teacher Self-Agreement | Techo de referencia del benchmark | no aplica | 0,735 | no disponible | no disponible | no disponible | no aplica |
@@ -101,7 +101,7 @@ La comparativa se limita a los cuatro sistemas incluidos en la model card. No se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agk4444/laya-typed-decisions
+- Modelo en Hugging Face: https://huggingface.co/agk4444/laya-typed-decisions
 - Dataset del benchmark: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Organización del desarrollador (Convai Innovations): https://huggingface.co/convaiinnovations
 - Librería laya: no disponible URL en la información proporcionada (la model card solo indica `pip install laya`)

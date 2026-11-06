@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-l3_swift_remove20` es un artefacto de investigación publicado en HuggingFace por el usuario Jeesup. Se trata de un checkpoint de `meta-llama/Llama-2-7b-chat-hf` comprimido con la técnica SVD-LLM, en el que se ha eliminado el 20,00 % de los parámetros densos (fracción de parámetros resultante declarada: 0,8004). El modelo forma parte de una rejilla experimental que cruza distintas reglas de selección de componentes singulares con distintos presupuestos de restauración; esta celda concreta corresponde a la regla `unknown` y a un presupuesto de restauración del 0,000 % (0 componentes restaurados, 0 componentes sustituidos). El objetivo declarado del autor no es ofrecer un asistente conversacional, sino medir cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño.
+`Jeesup/svd-safety-l3_swift_remove20` es un artefacto de investigación publicado en Hugging Face por el usuario Jeesup. Se trata de un checkpoint de `meta-llama/Llama-2-7b-chat-hf` comprimido con la técnica SVD-LLM, en el que se ha eliminado el 20,00 % de los parámetros densos (fracción de parámetros resultante declarada: 0,8004). El modelo forma parte de una rejilla experimental que cruza distintas reglas de selección de componentes singulares con distintos presupuestos de restauración; esta celda concreta corresponde a la regla `unknown` y a un presupuesto de restauración del 0,000 % (0 componentes restaurados, 0 componentes sustituidos). El objetivo declarado del autor no es ofrecer un asistente conversacional, sino medir cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño.
 
 El interés técnico del checkpoint es doble. Por un lado, cuantifica el coste de seguridad de la compresión: la model card reporta una tasa de éxito de ataque (ASR) de 0,0923 en AdvBench y de 0,1438 en StrongREJECT, ambas medidas con el juez HarmBench, junto con una tasa de sobre-rechazo macro de 0,1519 medida con WildGuard y una perplejidad de 14,5046 en WikiText-2. Por otro, sirve como sujeto experimental reproducible (semilla 42) dentro de un estudio más amplio de interpretabilidad y compresión, ya que el autor advierte explícitamente de que varias celdas de la rejilla están degradadas en seguridad de forma deliberada respecto a Llama-2-7b-chat.
 
@@ -90,8 +90,8 @@ No se han publicado resultados de benchmarks de conocimiento o razonamiento (MML
 
 | Modelo | Parametros | Contexto | Licencia | Metricas publicadas | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l3_swift_remove20` | 8.030.261.248 tensores segun safetensors; fraccion declarada 0,8004 | 4096 tokens en el modelo base | Llama 2 Community License | AdvBench ASR 0,0923; StrongREJECT ASR 0,1438; sobre-rechazo 0,1519; WikiText-2 PPL 14,5046 | Publico en HuggingFace, sin descargas registradas |
-| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Llama 2 Community License | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `Jeesup/svd-safety-l3_swift_remove20` | 8.030.261.248 tensores segun safetensors; fraccion declarada 0,8004 | 4096 tokens en el modelo base | Llama 2 Community License | AdvBench ASR 0,0923; StrongREJECT ASR 0,1438; sobre-rechazo 0,1519; WikiText-2 PPL 14,5046 | Publico en Hugging Face, sin descargas registradas |
+| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Llama 2 Community License | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otras celdas de la rejilla SVD-LLM del mismo autor | No disponible | No disponible | Llama 2 Community License (presumiblemente) | No disponible | No localizadas en la informacion proporcionada |
 | Metodo SVD-LLM de referencia (paper citado en la model card) | No disponible | No disponible | No aplica (metodo) | No disponible | Enlace no incluido en la model card |
 
@@ -114,7 +114,7 @@ No se dispone de datos comparativos suficientes para establecer una jerarquia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove20
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove20
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia del repositorio: `LICENSE.txt` en https://huggingface.co/Jeesup/svd-safety-l3_swift_remove20/blob/main/LICENSE.txt
 - Política de uso: `USE_POLICY.md` en https://huggingface.co/Jeesup/svd-safety-l3_swift_remove20/blob/main/USE_POLICY.md

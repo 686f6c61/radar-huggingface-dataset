@@ -87,7 +87,7 @@ El autor indica expresamente que no se ha establecido ninguna mejora frente a mo
 
 | Modelo | Parametros | Contexto/uso | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sharjeelbaig/moonshine-streaming-tiny-ar-tadabbur-onnx | no disponible | Frases de hasta 7 s, audio 16 kHz mono | Sin benchmark publicado; validacion cualitativa de un clip | MIT | ONNX en HuggingFace, 0 descargas |
+| Sharjeelbaig/moonshine-streaming-tiny-ar-tadabbur-onnx | no disponible | Frases de hasta 7 s, audio 16 kHz mono | Sin benchmark publicado; validacion cualitativa de un clip | MIT | ONNX en Hugging Face, 0 descargas |
 | moonshine-ai/moonshine-streaming-tiny-ar (modelo base) | no disponible | ASR en arabe, mismo encoder-decoder | No disponible en la informacion proporcionada | MIT | Pesos originales en PyTorch |
 | Whisper tiny (OpenAI) | no disponible | ASR multilingue generico | No disponible en la informacion proporcionada | MIT | Disponible en varios formatos |
 | Whisper ajustado para recitacion coranica | no disponible | ASR en arabe coranico | El autor indica que no se ha demostrado mejora frente a estos modelos | no disponible | no disponible |
@@ -113,7 +113,7 @@ La comparacion cuantitativa no puede completarse porque la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sharjeelbaig/moonshine-streaming-tiny-ar-tadabbur-onnx
+- Modelo en Hugging Face: https://huggingface.co/Sharjeelbaig/moonshine-streaming-tiny-ar-tadabbur-onnx
 - Modelo base: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-ar
 - Revision de origen anclada: `2d3a986306561346ef0bf0018d23238944faf087`
 - Scripts de reproduccion y limitaciones detalladas: carpeta `conversion/` del repositorio

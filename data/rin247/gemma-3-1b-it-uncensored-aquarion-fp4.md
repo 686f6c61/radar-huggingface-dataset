@@ -77,7 +77,7 @@ La comparativa se limita a aspectos estructurales porque no hay datos de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/gemma-3-1b-it-Uncensored-Aquarion-FP4
+- Modelo en Hugging Face: https://huggingface.co/Rin247/gemma-3-1b-it-Uncensored-Aquarion-FP4
 - Modelo base de Google: https://huggingface.co/google/gemma-3-1b-it
 - Informe tecnico de Gemma 3: https://arxiv.org/html/2503.19786v1
 - Version similar abliterada de DavidAU: https://huggingface.co/DavidAU/gemma-3-1b-it-heretic-extreme-uncensored-abliterated

@@ -63,5 +63,5 @@ No disponible. No se ha identificado el modelo base exacto ni alternativas compa
 
 ## Enlaces
 
-- [HuggingFace - mlindland/Qwen3.8-27B-oQ8e-mtp](https://huggingface.co/mlindland/Qwen3.8-27B-oQ8e-mtp)
+- [Hugging Face - mlindland/Qwen3.8-27B-oQ8e-mtp](https://huggingface.co/mlindland/Qwen3.8-27B-oQ8e-mtp)
 - [Repositorio oMLX (oQ)](https://github.com/jundot/omlx)

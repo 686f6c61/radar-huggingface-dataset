@@ -2,11 +2,11 @@
 
 ## Resumen
 
-nllb_muse_aligned es un modelo de la familia NLLB (No Language Left Behind) de Meta AI, concretamente una variante de tipo m2m_100, publicado por el usuario Koubra-Gaby en HuggingFace. Se trata de un fine-tuning sobre el propio checkpoint del autor (la model card indica como base el mismo identificador, lo que sugiere un proceso iterativo o un error de metadatos) orientado a traduccion automatica y extraccion de caracteristicas. El modelo declara metricas de evaluacion BLEU, ROUGE, METEOR y chrF++ en su model card, lo que confirma su uso previsto en tareas de traduccion.
+nllb_muse_aligned es un modelo de la familia NLLB (No Language Left Behind) de Meta AI, concretamente una variante de tipo m2m_100, publicado por el usuario Koubra-Gaby en Hugging Face. Se trata de un fine-tuning sobre el propio checkpoint del autor (la model card indica como base el mismo identificador, lo que sugiere un proceso iterativo o un error de metadatos) orientado a traduccion automatica y extraccion de caracteristicas. El modelo declara metricas de evaluacion BLEU, ROUGE, METEOR y chrF++ en su model card, lo que confirma su uso previsto en tareas de traduccion.
 
 Con 651.665.408 parametros (aproximadamente 652 millones), se situa en el rango de los modelos NLLB de tamano compacto (NLLB-200-distilled-600M tiene 615M, por lo que este es ligeramente mayor). El repositorio ocupa 7,6 GB, lo que sugiere pesos en safetensors posiblemente en fp32 junto con checkpoints de entrenamiento. La libreria es transformers y el pipeline declarado es feature-extraction.
 
-La relevancia de este modelo es limitada pero concreta: se trata de un checkpoint de investigacion con pocas descargas (47) y sin likes, cuya model card esta mayoritariamente autogenerada por el Trainer de HuggingFace y contiene secciones sin completar ("More information needed"). No obstante, los datos de entrenamiento (100 epocas, learning rate 2e-5, batch 64) y las curvas de evaluacion permiten reconstruir parcialmente el proceso. Es util como referencia para quien quiera reproducir o comparar fine-tunings de NLLB en tareas de traduccion, pero no como modelo de produccion sin validacion adicional.
+La relevancia de este modelo es limitada pero concreta: se trata de un checkpoint de investigacion con pocas descargas (47) y sin likes, cuya model card esta mayoritariamente autogenerada por el Trainer de Hugging Face y contiene secciones sin completar ("More information needed"). No obstante, los datos de entrenamiento (100 epocas, learning rate 2e-5, batch 64) y las curvas de evaluacion permiten reconstruir parcialmente el proceso. Es util como referencia para quien quiera reproducir o comparar fine-tunings de NLLB en tareas de traduccion, pero no como modelo de produccion sin validacion adicional.
 
 ## Especificaciones tecnicas
 
@@ -29,9 +29,9 @@ La relevancia de este modelo es limitada pero concreta: se trata de un checkpoin
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a m2m_100, el transformer encoder-decoder con atencion multi-cabeza estandar que Meta AI diseno para NLLB. El tag `m2m_100` en HuggingFace confirma que el modelo usa la implementacion `M2M100ForConditionalGeneration` de transformers, con embeddings de idioma y tokenizer multilingue. No se dispone de informacion sobre el numero de capas, dimensiones ocultas ni cabezas de atencion especificas de esta variante; los 652M de parametros son coherentes con un modelo de la gama NLLB-600M.
+La arquitectura corresponde a m2m_100, el transformer encoder-decoder con atencion multi-cabeza estandar que Meta AI diseno para NLLB. El tag `m2m_100` en Hugging Face confirma que el modelo usa la implementacion `M2M100ForConditionalGeneration` de transformers, con embeddings de idioma y tokenizer multilingue. No se dispone de informacion sobre el numero de capas, dimensiones ocultas ni cabezas de atencion especificas de esta variante; los 652M de parametros son coherentes con un modelo de la gama NLLB-600M.
 
-El entrenamiento se realizo con el Trainer de HuggingFace durante 100 epocas con un learning rate de 2e-5, batch de 64, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal y precision mixta nativa (AMP). El dataset de entrenamiento aparece como "None" en la model card, por lo que se desconoce su composicion, tamano y dominio. La evaluacion se realizo con metricas BLEU, ROUGE, METEOR y chrF++, y la curva de validacion muestra una mejora monotona sostenida: la perdida de validacion baja de 3,53 en el paso 500 a 1,48 en el paso 22.000, y el BLEU sube de 0,87 a 7,50. El mejor checkpoint declarado en la cabecera de la model card (Loss 1,4506; BLEU 7,3485; ROUGE 0,3402; METEOR 0,2219; chrF++ 25,5126) no coincide exactamente con el ultimo paso de la tabla (paso 22.000, BLEU 7,4989), lo que sugiere que el checkpoint final seleccionado es distinto del ultimo registrado o que hubo una seleccion por mejor metrica agregada.
+El entrenamiento se realizo con el Trainer de Hugging Face durante 100 epocas con un learning rate de 2e-5, batch de 64, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal y precision mixta nativa (AMP). El dataset de entrenamiento aparece como "None" en la model card, por lo que se desconoce su composicion, tamano y dominio. La evaluacion se realizo con metricas BLEU, ROUGE, METEOR y chrF++, y la curva de validacion muestra una mejora monotona sostenida: la perdida de validacion baja de 3,53 en el paso 500 a 1,48 en el paso 22.000, y el BLEU sube de 0,87 a 7,50. El mejor checkpoint declarado en la cabecera de la model card (Loss 1,4506; BLEU 7,3485; ROUGE 0,3402; METEOR 0,2219; chrF++ 25,5126) no coincide exactamente con el ultimo paso de la tabla (paso 22.000, BLEU 7,4989), lo que sugiere que el checkpoint final seleccionado es distinto del ultimo registrado o que hubo una seleccion por mejor metrica agregada.
 
 No se documenta el uso de RLHF, DPO ni ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.). Las versiones de framework declaradas son Transformers 5.21.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
 
@@ -111,7 +111,7 @@ La comparacion con NLLB-200-distilled-600M es la mas directa por tamano y famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Koubra-Gaby/nllb_muse_aligned
+- Modelo en Hugging Face: https://huggingface.co/Koubra-Gaby/nllb_muse_aligned
 - Paper NLLB (No Language Left Behind): https://arxiv.org/abs/2207.04672
 - Paper m2m-100: https://arxiv.org/abs/2010.11125
 - Repositorio NLLB de Meta en GitHub: https://github.com/facebookresearch/fairseq/tree/nllb

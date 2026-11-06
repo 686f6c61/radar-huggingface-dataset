@@ -94,7 +94,7 @@ La comparativa se limita a variantes del mismo linaje; no se dispone en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gcoli/whisper-large-v3-swiss-german-mit-mlx-q8
+- Modelo en Hugging Face: https://huggingface.co/gcoli/whisper-large-v3-swiss-german-mit-mlx-q8
 - Modelo base (fuente): https://huggingface.co/gcoli/whisper-large-v3-swiss-german-mit
 - Repositorio de ejemplos MLX (script de conversión): https://github.com/ml-explore/mlx-examples/tree/main/whisper
 - Librería mlx-whisper: https://github.com/ml-explore/mlx-examples/tree/main/whisper

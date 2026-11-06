@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, identificado como `AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42`, es un ajuste fino (fine-tuning) de la familia Qwen3 sobre el dataset SQuAD, aunque la documentación pública es prácticamente inexistente. La model card es una plantilla automática de HuggingFace sin información técnica, de autoría, licencia o idiomas. El nombre sugiere que se trata de un experimento con una proporción de datos de entrenamiento de 0.00 (posiblemente ningún dato de SQuAD) y una semilla fija de 42, lo que indicaría que es un artefacto de prueba o un adaptador LoRA de pequeño tamaño (el repositorio ocupa solo 0.3 GB, muy por debajo de los ~28 GB que ocuparía un modelo Qwen3-14B completo en fp16). No se dispone de detalles sobre arquitectura, entrenamiento o capacidades reales, por lo que esta ficha se basa únicamente en la información disponible y en el conocimiento público de la familia Qwen3.
+Este modelo, identificado como `AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42`, es un ajuste fino (fine-tuning) de la familia Qwen3 sobre el dataset SQuAD, aunque la documentación pública es prácticamente inexistente. La model card es una plantilla automática de Hugging Face sin información técnica, de autoría, licencia o idiomas. El nombre sugiere que se trata de un experimento con una proporción de datos de entrenamiento de 0.00 (posiblemente ningún dato de SQuAD) y una semilla fija de 42, lo que indicaría que es un artefacto de prueba o un adaptador LoRA de pequeño tamaño (el repositorio ocupa solo 0.3 GB, muy por debajo de los ~28 GB que ocuparía un modelo Qwen3-14B completo en fp16). No se dispone de detalles sobre arquitectura, entrenamiento o capacidades reales, por lo que esta ficha se basa únicamente en la información disponible y en el conocimiento público de la familia Qwen3.
 
 ## Especificaciones tecnicas
 
@@ -59,6 +59,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42
+- Repositorio Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42
 - Paper de SQuAD 2.0 (referenciado en tags): https://arxiv.org/abs/1910.09700
 - Repositorio oficial de Qwen3 (para contexto sobre el modelo base): https://github.com/QwenLM/Qwen3

@@ -91,7 +91,7 @@ No se dispone de comparaciones con modelos de otras familias (por ejemplo, alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-9B-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-9B-NVFP4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Ficha de NVIDIA Jetson AI Lab para Qwen3.5-9B: https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/qwen3-5-9b.md

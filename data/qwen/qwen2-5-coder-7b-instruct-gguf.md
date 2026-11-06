@@ -72,7 +72,7 @@ No se dispone de datos comparativos de rendimiento en la información proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF
 - Blog oficial de Qwen sobre Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - GitHub de Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder
 - Documentación de Qwen: https://qwen.readthedocs.io/en/latest/

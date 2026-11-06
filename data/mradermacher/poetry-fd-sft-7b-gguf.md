@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/poetry-fd-sft-7b-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/poetry-fd-sft-7b-GGUF
 - Modelo base: https://huggingface.co/couplefire/poetry-fd-sft-7b
 - Pagina de descargas del autor: https://hf.tst.eu/model#poetry-fd-sft-7b-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

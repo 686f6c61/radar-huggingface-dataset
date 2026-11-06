@@ -83,7 +83,7 @@ La comparativa es orientativa: la model card afirma que MiniCPM5-2B es competiti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM5-2B-SFT
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM5-2B-SFT
 - Informe tecnico de MiniCPM (arXiv): https://arxiv.org/pdf/2506.07900
 - Paper adicional referenciado (arXiv): https://arxiv.org/abs/2602.09003
 - Repositorio GitHub de MiniCPM (OpenBMB): https://github.com/OpenBMB/MiniCPM

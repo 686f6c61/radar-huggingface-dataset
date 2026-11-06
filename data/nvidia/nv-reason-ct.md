@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NV-Reason-CT | 5,32 mil millones | TC volumetrica 3D (torax y abdomen) + texto | No disponible | OpenMDW-1.1 | HuggingFace, con demo Gradio y repositorio en GitHub |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 mil millones (segun denominacion) | Solo texto | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| NV-Reason-CT | 5,32 mil millones | TC volumetrica 3D (torax y abdomen) + texto | No disponible | OpenMDW-1.1 | Hugging Face, con demo Gradio y repositorio en GitHub |
+| Qwen/Qwen3.5-4B (modelo base) | ~4 mil millones (segun denominacion) | Solo texto | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros VLM medicos 3D comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de datos verificados de parametros, contexto o rendimiento de alternativas directas en la categoria de VLM 3D para TC, por lo que no se puede establecer una comparacion cuantitativa fiable mas alla del modelo base.
@@ -91,11 +91,11 @@ No se dispone en la informacion proporcionada de datos verificados de parametros
 - Sesgos del dataset: el entrenamiento se apoya en CT-RATE y CancerVerse, cuyo perfil demografico y de equipos no se detalla en la informacion disponible; el comportamiento fuera de esas distribuciones no esta caracterizado.
 - Licencia: OpenMDW-1.1 debe revisarse antes de cualquier uso comercial, ya que sus terminos no se detallan en la informacion proporcionada.
 - Ejecucion de codigo remoto: el modelo requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado del repositorio; conviene auditar ese codigo antes de desplegarlo.
-- Madurez: con 392 descargas y 15 "me gusta" en HuggingFace, la adopcion y la validacion externa son todavia muy reducidas.
+- Madurez: con 392 descargas y 15 "me gusta" en Hugging Face, la adopcion y la validacion externa son todavia muy reducidas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NV-Reason-CT
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NV-Reason-CT
 - Repositorio en GitHub: https://github.com/NVIDIA-Medtech/NV-Reason-CT
 - Demo en Gradio: https://huggingface.co/spaces/nvidia/nv-reason-ct
 - Articulo en arXiv: https://arxiv.org/abs/2609.27511

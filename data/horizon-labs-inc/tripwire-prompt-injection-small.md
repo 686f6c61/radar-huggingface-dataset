@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tripwire small es un clasificador de texto de 140.642.306 parametros (141M) disenado para detectar ataques de *prompt injection* y *jailbreak* en cualquier texto que entre o salga de un sistema basado en LLM: prompts de usuario, documentos recuperados por RAG, correos electronicos, paginas web y, de forma destacada, salidas de herramientas y funciones. Lo desarrolla Horizon-Labs-Inc y se distribuye con licencia Apache 2.0 en HuggingFace, con pipeline `text-classification` y soporte para `transformers`, ONNX y `transformers.js`.
+Tripwire small es un clasificador de texto de 140.642.306 parametros (141M) disenado para detectar ataques de *prompt injection* y *jailbreak* en cualquier texto que entre o salga de un sistema basado en LLM: prompts de usuario, documentos recuperados por RAG, correos electronicos, paginas web y, de forma destacada, salidas de herramientas y funciones. Lo desarrolla Horizon-Labs-Inc y se distribuye con licencia Apache 2.0 en Hugging Face, con pipeline `text-classification` y soporte para `transformers`, ONNX y `transformers.js`.
 
 El modelo es un fine-tuning de `jhu-clsp/mmBERT-small`, un encoder de arquitectura ModernBERT con 8.192 tokens de ventana de contexto y cobertura de mas de 1.800 idiomas. Frente a los detectores abiertos mas usados, que suelen limitarse al ingles y a 512 tokens, Tripwire apunta explicitamente a dos problemas: la longitud de las entradas en pipelines agénticos (resultados de herramientas, correos largos, paginas completas) y la tasa de falsos positivos sobre contenido benigno multilingue que simplemente *suena* a instrucciones.
 
@@ -86,12 +86,12 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas gene
 
 | Modelo | Parametros | Contexto | Multilingue held-out (AUC) | FPR multilingue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Tripwire-small (este modelo) | 141M | 8.192 | 0,955 | 2,2% | Apache 2.0 | HuggingFace, ONNX fp32 |
-| Tripwire-base | 308M | 8.192 | 0,968 | 1,3% | no disponible | HuggingFace |
-| protectai deberta-v3-base v2 | 184M | 512 | 0,796 | 26,4% | no disponible | HuggingFace |
-| semantic-router mmbert32k | 308M | 8.192 | 0,682 | 3,8% | no disponible | HuggingFace |
-| deepset deberta-v3-base | 184M | 512 | 0,741 | 72,7% | no disponible | HuggingFace |
-| testsavant defender-small | 29M | 512 | 0,595 | 58,9% | no disponible | HuggingFace |
+| Tripwire-small (este modelo) | 141M | 8.192 | 0,955 | 2,2% | Apache 2.0 | Hugging Face, ONNX fp32 |
+| Tripwire-base | 308M | 8.192 | 0,968 | 1,3% | no disponible | Hugging Face |
+| protectai deberta-v3-base v2 | 184M | 512 | 0,796 | 26,4% | no disponible | Hugging Face |
+| semantic-router mmbert32k | 308M | 8.192 | 0,682 | 3,8% | no disponible | Hugging Face |
+| deepset deberta-v3-base | 184M | 512 | 0,741 | 72,7% | no disponible | Hugging Face |
+| testsavant defender-small | 29M | 512 | 0,595 | 58,9% | no disponible | Hugging Face |
 
 Frente a las alternativas de 512 tokens (protectai, deepset, testsavant), la ventaja principal es la combinacion de contexto de 8.192 tokens y tasas de falsos positivos muy inferiores en contenido multilingue y benigno. Frente a semantic-router mmbert32k, que comparte ventana de contexto y modelo base multilingue, Tripwire-small obtiene mejor AUC multilingue (0,955 frente a 0,682) y mejor AUC en inyeccion indirecta en documentos BIPIA (0,815 frente a 0,533). La variante base del mismo autor mejora el AUC multilingue y el FPR, a costa de duplicar aproximadamente el numero de parametros; Tripwire-small es mejor en deteccion de inyeccion en correo (99,8% frente a 98,4%), en BIPIA (0,815 frente a 0,764) y en sobrerrechazo (2,0% frente a 3,7%). En deteccion de correo, deepset deberta-v3-base alcanza el 100,0% pero con un 100,0% de falsos positivos en correos benignos, lo que lo inutiliza en ese escenario.
 
@@ -103,14 +103,14 @@ Frente a las alternativas de 512 tokens (protectai, deepset, testsavant), la ven
 - La definicion de etiqueta excluye explicitamente las peticiones daninas que no emplean tecnicas de ataque ("como forzar una cerradura"): el modelo no es un moderador de contenido danino generico y no debe usarse como tal.
 - Para entradas de mas de 8.192 tokens hay que puntuar ventanas solapadas y tomar el maximo; una implementacion ingenua con truncado simple puede perder ataques situados al final del texto.
 - No se publican pesos cuantizados int8 y el autor advierte de que la cuantizacion dinamica int8 distorsiona las puntuaciones; cualquier cuantizacion propia exige recalibrar el umbral y validar con datos propios.
-- El rendimiento se ha medido en conjuntos held-out del propio autor; no hay validacion independiente publicada, y el modelo tiene un volumen de descargas muy bajo (38) y ninguna valoracion en HuggingFace, lo que reduce la evidencia de uso en produccion.
+- El rendimiento se ha medido en conjuntos held-out del propio autor; no hay validacion independiente publicada, y el modelo tiene un volumen de descargas muy bajo (38) y ninguna valoracion en Hugging Face, lo que reduce la evidencia de uso en produccion.
 - Riesgo de deriva si el modelo se usa con plantillas de chat, formatos de herramienta o idiomas no representados en el entrenamiento; conviene validar con datos propios antes de desplegarlo.
 - Aunque la licencia es Apache 2.0, que permite uso comercial, conviene revisar las licencias de los conjuntos de datos de entrenamiento si se va a redistribuir el modelo o sus derivados.
 - La model card usa el identificador `Horizon-Labs/tripwire-prompt-injection-small` en los ejemplos de codigo, mientras que el repositorio publicado esta bajo el espacio `Horizon-Labs-Inc`; verificar el nombre correcto antes de integrar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs-Inc/tripwire-prompt-injection-small
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs-Inc/tripwire-prompt-injection-small
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Variante base de Tripwire: https://huggingface.co/Horizon-Labs/tripwire-prompt-injection-base
 - Demo Space: https://huggingface.co/spaces/Horizon-Labs/tripwire-demo

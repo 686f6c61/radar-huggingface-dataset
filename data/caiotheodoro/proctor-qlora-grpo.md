@@ -21,7 +21,7 @@ Por tanto, la ficha debe leerse como la de un artefacto de investigación reprod
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
-Otros datos del repositorio: identificador `caiotheodoro/proctor-qlora-grpo`, librería `peft`, tamaño del repositorio 0,0 GB según HuggingFace, creado y actualizado el 2026-10-08 (7 segundos de diferencia), 0 descargas y 0 likes, etiquetas `lora`, `synthetic`, `region:us`.
+Otros datos del repositorio: identificador `caiotheodoro/proctor-qlora-grpo`, librería `peft`, tamaño del repositorio 0,0 GB según Hugging Face, creado y actualizado el 2026-10-08 (7 segundos de diferencia), 0 descargas y 0 likes, etiquetas `lora`, `synthetic`, `region:us`.
 
 ## Arquitectura y entrenamiento
 
@@ -97,11 +97,11 @@ Otras alternativas de la misma categoría (adaptadores LoRA de pequeño tamaño 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/caiotheodoro/proctor-qlora-grpo
+- Repositorio del modelo en Hugging Face: https://huggingface.co/caiotheodoro/proctor-qlora-grpo
 - Código del proyecto Proctor (versión v0.1.0): https://github.com/caiotheodoro/proctor/tree/v0.1.0
-- Perfil de modelos del autor en HuggingFace: https://huggingface.co/caiotheodoro/models
+- Perfil de modelos del autor en Hugging Face: https://huggingface.co/caiotheodoro/models
 - Perfil del autor en GitHub: https://github.com/caiotheodoro
-- Notebook de referencia GRPO + QLoRA de HuggingFace TRL: https://colab.research.google.com/github/huggingface/trl/blob/main/examples/grpo_qlora/grpo_qlora.ipynb
+- Notebook de referencia GRPO + QLoRA de Hugging Face TRL: https://colab.research.google.com/github/huggingface/trl/blob/main/examples/grpo_qlora/grpo_qlora.ipynb
 - Guía sobre ajuste fino con LoRA, QLoRA, DPO y GRPO: https://futureagi.com/blog/llm-fine-tuning-guide-2025/
 - Guía práctica de LoRA y QLoRA: https://www.kunalganglani.com/blog/fine-tune-open-source-llm-lora-qlora
 - Modelo base Qwen2.5-1.5B-Instruct (referenciado, no enlazado en la información proporcionada): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

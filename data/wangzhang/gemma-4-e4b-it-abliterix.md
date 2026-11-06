@@ -81,11 +81,11 @@ Los tres modelos son versiones abliteradas de la familia Gemma 4, creadas por el
 - Limitaciones de contexto e idioma: no se especifican la longitud de contexto ni la lista completa de idiomas soportados; la evaluacion del autor cubre ingles y chino, pero otros idiomas podrian tener un rendimiento inferior.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial y modificacion, pero el modelo base `google/gemma-4-E4B-it` puede tener sus propias restricciones (no detalladas en la informacion proporcionada). Se recomienda revisar la licencia del modelo base antes de su uso en produccion.
 - Advertencia para produccion: el uso de este modelo en aplicaciones publicas conlleva riesgos legales y eticos significativos, especialmente si se despliega sin filtros de contenido adicionales. No se recomienda su uso en entornos no controlados.
-- Metodologia de evaluacion: el autor advierte que muchas metricas de abliteracion publicadas en HuggingFace son poco fiables debido a longitudes de generacion cortas; este modelo se evaluo con generaciones de al menos 100 tokens y deteccion hibrida (palabras clave + juez LLM), lo que proporciona una estimacion mas realista, pero aun asi la muestra es limitada (100 prompts).
+- Metodologia de evaluacion: el autor advierte que muchas metricas de abliteracion publicadas en Hugging Face son poco fiables debido a longitudes de generacion cortas; este modelo se evaluo con generaciones de al menos 100 tokens y deteccion hibrida (palabras clave + juez LLM), lo que proporciona una estimacion mas realista, pero aun asi la muestra es limitada (100 prompts).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/gemma-4-E4B-it-abliterix
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/gemma-4-E4B-it-abliterix
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de Abliterix: https://github.com/wuwangzhang1216/abliterix
 - Script de evaluacion: https://github.com/wuwangzhang1216/abliterix/blob/master/scripts/test_trial.py

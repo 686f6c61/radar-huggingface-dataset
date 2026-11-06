@@ -23,7 +23,7 @@ Su relevancia actual radica en que los rerankers son una pieza clave para mejora
 
 ## Arquitectura y entrenamiento
 
-El modelo base `Qwen/Qwen3-Reranker-0.6B` pertenece a la familia Qwen3 y está especializado en tareas de ranking de textos. La información disponible en esta ficha no detalla la arquitectura interna exacta (número de capas, dimensión oculta, mecanismo de atención, etc.) ni los datos de entrenamiento (número de tokens, composición del corpus, uso de RLHF o DPO). Para esos detalles es necesario consultar la model card original del modelo base en HuggingFace.
+El modelo base `Qwen/Qwen3-Reranker-0.6B` pertenece a la familia Qwen3 y está especializado en tareas de ranking de textos. La información disponible en esta ficha no detalla la arquitectura interna exacta (número de capas, dimensión oculta, mecanismo de atención, etc.) ni los datos de entrenamiento (número de tokens, composición del corpus, uso de RLHF o DPO). Para esos detalles es necesario consultar la model card original del modelo base en Hugging Face.
 
 La innovación principal de este repositorio concreto no reside en el modelo en sí, sino en la conversión a GGUF mediante llama.cpp y el espacio `gguf-my-repo` de ggml.ai. Esta conversión permite ejecutar el reranker con herramientas del ecosistema llama.cpp (CLI y servidor), lo que facilita su despliegue en entornos sin GPUs de gran capacidad o en infraestructuras basadas en CPU. La cuantización Q8_0 aplica cuantización de bloques de 8 bits, un compromiso habitual que reduce el tamaño del modelo manteniendo una degradación de calidad mínima.
 
@@ -86,7 +86,7 @@ No se dispone de información suficiente sobre modelos comparables de otros prov
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreadster3/Qwen3-Reranker-0.6B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/dreadster3/Qwen3-Reranker-0.6B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

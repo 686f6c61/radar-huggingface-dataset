@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ShopLifting scam-message models es una colección de dos modelos de clasificación de texto publicada por el usuario Supreetpatil79 en HuggingFace, pensada para puntuar mensajes de SMS, WhatsApp y Telegram según su probabilidad de ser estafa. El repositorio contiene dos variantes: `teacher-best/`, un ajuste fino de `google/muril-large-cased` que actúa como modelo de servidor, y `student-best/`, un modelo más pequeño que se ejecuta en paralelo para comparación. Ambos se entrenaron exclusivamente con conjuntos de datos públicos de mensajes fraudulentos y legítimos, sin mensajes de usuarios reales.
+ShopLifting scam-message models es una colección de dos modelos de clasificación de texto publicada por el usuario Supreetpatil79 en Hugging Face, pensada para puntuar mensajes de SMS, WhatsApp y Telegram según su probabilidad de ser estafa. El repositorio contiene dos variantes: `teacher-best/`, un ajuste fino de `google/muril-large-cased` que actúa como modelo de servidor, y `student-best/`, un modelo más pequeño que se ejecuta en paralelo para comparación. Ambos se entrenaron exclusivamente con conjuntos de datos públicos de mensajes fraudulentos y legítimos, sin mensajes de usuarios reales.
 
 El modelo se apoya en MuRIL-large-cased, un transformer encoder multilingüe de Google diseñado específicamente para inglés e idiomas de la India (incluidos hindi y kannada), lo que explica los tres idiomas declarados en la model card. La tarea es clasificación de texto binaria o de puntuación de riesgo, no generación: el modelo no produce texto libre ni razona de forma multi-paso.
 
@@ -40,7 +40,7 @@ El entrenamiento se realizó únicamente con conjuntos de datos públicos de men
 
 - Filtrado de SMS fraudulentos en una pasarela de mensajería: el modelo puntúa cada mensaje entrante y permite aplicar un umbral para bloquear o marcar como sospechoso antes de la entrega al usuario, aprovechando su entrenamiento específico en scams.
 - Moderación de grupos de WhatsApp y Telegram: integrado como clasificador previo a la publicación, puede señalar mensajes con patrones de estafa (premios falsos, suplantación de entidades) en inglés, hindi y kannada.
-- Demo interactiva en un Space de HuggingFace: es el uso original declarado, con los dos modelos ejecutándose en paralelo para mostrar al visitante la diferencia entre teacher y student.
+- Demo interactiva en un Space de Hugging Face: es el uso original declarado, con los dos modelos ejecutándose en paralelo para mostrar al visitante la diferencia entre teacher y student.
 - Investigación comparativa de destilación: el par teacher/student permite estudiar la pérdida de rendimiento al comprimir un clasificador multilingüe de fraude, siempre sobre datos públicos.
 - Etiquetado asistido de corpus: como preanotador de datasets de mensajes para revisión humana posterior, reduciendo el esfuerzo manual en la construcción de nuevos conjuntos de entrenamiento.
 - Análisis de campañas de phishing en canales de mensajería: agregando las puntuaciones por remitente o por ventana temporal para detectar picos de mensajes sospechosos en una comunidad concreta.
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ShopLifting teacher-best | No disponible (base MuRIL-large) | No disponible | en, hi, kn | Other | HuggingFace, 0 descargas |
-| ShopLifting student-best | No disponible | No disponible | en, hi, kn | Other | HuggingFace, 0 descargas |
+| ShopLifting teacher-best | No disponible (base MuRIL-large) | No disponible | en, hi, kn | Other | Hugging Face, 0 descargas |
+| ShopLifting student-best | No disponible | No disponible | en, hi, kn | Other | Hugging Face, 0 descargas |
 | `google/muril-large-cased` (base) | ~560 M | 512 tokens (valor habitual de BERT, no confirmado en la información) | 17 idiomas indios + en | Apache 2.0 (según la model card original de Google, no verificada aquí) | Ampliamente disponible |
 | Clasificadores de spam genéricos (p. ej. fine-tunes de BERT/DistilBERT) | 60-110 M típicamente | 512 tokens típicamente | Principalmente en | Variables | Amplia |
 
@@ -81,6 +81,6 @@ La comparación cuantitativa de rendimiento no es posible porque el autor no pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Supreetpatil79/shoplifting-models
+- Hugging Face: https://huggingface.co/Supreetpatil79/shoplifting-models
 - Modelo base del teacher: https://huggingface.co/google/muril-large-cased
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales asociados a este modelo.

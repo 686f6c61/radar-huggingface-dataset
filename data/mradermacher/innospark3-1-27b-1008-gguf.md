@@ -25,9 +25,9 @@ Datos adicionales del repositorio: autor mradermacher, 0 descargas y 0 «likes»
 
 ## Arquitectura y entrenamiento
 
-No hay información disponible sobre la arquitectura del modelo base en los datos proporcionados. No se puede confirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida ni si incorpora mecanismos de atención lineal o decodificación especulativa. Tampoco se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación. La única información estructural cierta es el recuento de parámetros (27,3 B) y que el checkpoint fue convertido desde pesos en formato HuggingFace a GGUF antes de su cuantización.
+No hay información disponible sobre la arquitectura del modelo base en los datos proporcionados. No se puede confirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida ni si incorpora mecanismos de atención lineal o decodificación especulativa. Tampoco se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación. La única información estructural cierta es el recuento de parámetros (27,3 B) y que el checkpoint fue convertido desde pesos en formato Hugging Face a GGUF antes de su cuantización.
 
-En cuanto al proceso de cuantización, sí se conocen algunos detalles: la conversión se realizó con `convert_type: hf` y `quantize_version: 2`, con cuantización de tensores de salida activada (`output_tensor_quantised: 1`). Se ofrecen cuantizaciones estáticas que cubren desde 2 bits (Q2_K) hasta punto flotante de 16 bits (x-f16), lo que permite ajustar el equilibrio entre calidad y huella de memoria. La etiqueta `endpoints_compatible` sugiere que el formato es aceptado por endpoints de inferencia compatibles con el ecosistema HuggingFace, aunque no se especifica cuáles.
+En cuanto al proceso de cuantización, sí se conocen algunos detalles: la conversión se realizó con `convert_type: hf` y `quantize_version: 2`, con cuantización de tensores de salida activada (`output_tensor_quantised: 1`). Se ofrecen cuantizaciones estáticas que cubren desde 2 bits (Q2_K) hasta punto flotante de 16 bits (x-f16), lo que permite ajustar el equilibrio entre calidad y huella de memoria. La etiqueta `endpoints_compatible` sugiere que el formato es aceptado por endpoints de inferencia compatibles con el ecosistema Hugging Face, aunque no se especifica cuáles.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ Estimaciones de memoria para los pesos, calculadas a partir de los 27,3 B de par
 
 - GPU recomendadas: para x-f16 y Q8_0 se necesitan GPUs de centro de datos (A100 80 GB, H100 80 GB) o varias GPUs en paralelo. Para Q5_K_M y Q6_K bastan GPUs de 24-32 GB (RTX 3090, RTX 4090, A6000, L40S).
 - Cabe en GPU de consumo: sí, en las cuantizaciones de Q4 hacia abajo. Q4_K_M (≈16,6 GB) y Q4_K_S (≈15,6 GB) entran en una RTX 4090 o RTX 3090 de 24 GB dejando margen para caché KV. IQ4_XS, Q3_K y Q2_K caben incluso en GPUs de 12-16 GB (RTX 4080, RTX 4070 Ti, etc.), siempre que se limite el contexto.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui y servidores compatibles con GGUF. El tag `endpoints_compatible` apunta a compatibilidad con endpoints de inferencia tipo HuggingFace. vLLM y TGI ofrecen soporte GGUF parcial o nulo, por lo que conviene verificar la versión antes de usarlos.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui y servidores compatibles con GGUF. El tag `endpoints_compatible` apunta a compatibilidad con endpoints de inferencia tipo Hugging Face. vLLM y TGI ofrecen soporte GGUF parcial o nulo, por lo que conviene verificar la versión antes de usarlos.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 
 ## Comparativa con modelos similares

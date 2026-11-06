@@ -89,7 +89,7 @@ Otros modelos de la familia Qwen3 (0.6B, 1.7B, 4B) existen, pero no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oomu/OOMU-Qwen3-0.6B-Production-MicroRouter-GGUF
+- Modelo en Hugging Face: https://huggingface.co/oomu/OOMU-Qwen3-0.6B-Production-MicroRouter-GGUF
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Guía de Qwen3 (insiderllm.com): https://insiderllm.com/guides/qwen3-complete-guide/

@@ -23,7 +23,7 @@ El modelo tiene un perfil de uso muy específico: no está pensado para chat abi
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es Cloudflare/clef-flash, descrito por el autor como un modelo de decisión de 9B post-entrenado desde Qwen/Qwen3.5-9B. Consta de tres componentes: un backbone de lenguaje de 8,954B de pesos lógicos, un codificador de visión de 0,456B y una cabeza conjunta de esquema de 0,122B. La cabeza (`joint_head.safetensors` y `joint_head_config.json`) se copia sin modificar desde el modelo fuente y es la responsable de producir, en una sola pasada forward, una probabilidad por cada opción permitida de cada pregunta del esquema tipado de entrada. El pipeline declarado en HuggingFace es `image-text-to-text`, lo que confirma la entrada multimodal.
+La arquitectura subyacente es Cloudflare/clef-flash, descrito por el autor como un modelo de decisión de 9B post-entrenado desde Qwen/Qwen3.5-9B. Consta de tres componentes: un backbone de lenguaje de 8,954B de pesos lógicos, un codificador de visión de 0,456B y una cabeza conjunta de esquema de 0,122B. La cabeza (`joint_head.safetensors` y `joint_head_config.json`) se copia sin modificar desde el modelo fuente y es la responsable de producir, en una sola pasada forward, una probabilidad por cada opción permitida de cada pregunta del esquema tipado de entrada. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que confirma la entrada multimodal.
 
 El trabajo de este repositorio no es de entrenamiento sino de compresión. Se aplica oQ (oMLX v0.7.1) con la variante mejorada oQe, que asigna bits según la sensibilidad medida de cada capa en lugar de usar una precisión uniforme. Cada grupo se redondea con una matriz de importancia construida a partir de 128 muestras de 512 tokens, y después se reajustan escala y sesgo mediante mínimos cuadrados ponderados. El resultado se sirve a través de oMLX mediante el endpoint `POST /v1/systemone`. No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo fuente usó RLHF, DPO u otro método de alineamiento.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Jundot/clef-flash-oQ2.5e | 9,41B reales / 9,532B logicos | no disponible | oQ2.5e mixta, 4,011 bits/peso efectivos | Apache-2.0 | MLX, via oMLX |
-| Cloudflare/clef-flash | 9B (modelo fuente) | no disponible | no disponible (probablemente BF16) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B | ~9B (backbone de origen) | no disponible | no disponible | no disponible | HuggingFace |
+| Cloudflare/clef-flash | 9B (modelo fuente) | no disponible | no disponible (probablemente BF16) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | ~9B (backbone de origen) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, formato y licencia.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/clef-flash-oQ2.5e
+- Modelo en Hugging Face: https://huggingface.co/Jundot/clef-flash-oQ2.5e
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
 - Pull request de la cuantizacion mejorada oQe: https://github.com/jundot/omlx/pull/4385

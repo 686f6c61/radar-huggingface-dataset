@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agu18dec/olens_and_ar` es un repositorio de investigación publicado en HuggingFace que contiene dos adaptadores LoRA entrenados sobre el modelo base `Qwen/Qwen3.6-27B` (27 000 millones de parámetros, según la denominación del propio modelo base). No es un modelo de propósito general: es un par de herramientas de interpretabilidad, denominadas *oracle lens* (AO) y *activation reconstructor* (AR), pensadas para leer y medir el contenido de activaciones internas de un transformer.
+`agu18dec/olens_and_ar` es un repositorio de investigación publicado en Hugging Face que contiene dos adaptadores LoRA entrenados sobre el modelo base `Qwen/Qwen3.6-27B` (27 000 millones de parámetros, según la denominación del propio modelo base). No es un modelo de propósito general: es un par de herramientas de interpretabilidad, denominadas *oracle lens* (AO) y *activation reconstructor* (AR), pensadas para leer y medir el contenido de activaciones internas de un transformer.
 
 El AO recibe una activación del flujo residual y devuelve prosa en forma de viñetas que describe qué conceptos codifica esa activación. El AR recibe una activación y reconstruye el fragmento de texto que la produjo, de modo que la fracción de varianza explicada (FVE) sirve como métrica objetiva de cuánta información es recuperable. Ambos forman un par emparejado: el AO se entrenó con una recompensa FVE calculada precisamente sobre este AR.
 
@@ -80,7 +80,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 | Contexto | no disponible | no disponible |
 | Rendimiento | sin cifras publicadas (métrica propuesta: FVE sobre el AR emparejado) | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/agu18dec/olens_and_ar
+- Repositorio del modelo en Hugging Face: https://huggingface.co/agu18dec/olens_and_ar
 - Repositorio de origen de los adaptadores (dataset): https://huggingface.co/datasets/agu18dec/local-workspace
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Paper, blog o demo asociados: no disponible

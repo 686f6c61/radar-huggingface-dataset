@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dxnn1u-gpt2-c4 es un modelo de generacion de texto publicado en HuggingFace por el usuario Dxnn1u, con el identificador Dxnn1u/Dxnn1u-gpt2-c4. Por sus etiquetas (gpt2, text-generation, transformers, safetensors) se trata de un transformer decoder-only de la familia GPT-2, con 124.475.904 parametros totales segun los pesos en safetensors, lo que lo situa en el rango de GPT-2 small (aproximadamente 124M). El repositorio ocupa 0,5 GB.
+Dxnn1u-gpt2-c4 es un modelo de generacion de texto publicado en Hugging Face por el usuario Dxnn1u, con el identificador Dxnn1u/Dxnn1u-gpt2-c4. Por sus etiquetas (gpt2, text-generation, transformers, safetensors) se trata de un transformer decoder-only de la familia GPT-2, con 124.475.904 parametros totales segun los pesos en safetensors, lo que lo situa en el rango de GPT-2 small (aproximadamente 124M). El repositorio ocupa 0,5 GB.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: no existe model card real. El README es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]", sin descripcion, sin dataset declarado, sin licencia y sin resultados de evaluacion. El sufijo "c4" del nombre sugiere un entrenamiento o ajuste sobre el corpus C4, pero esto no esta confirmado en ninguna parte del repositorio.
+La relevancia de esta ficha es limitada y conviene ser explicito: no existe model card real. El README es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]", sin descripcion, sin dataset declarado, sin licencia y sin resultados de evaluacion. El sufijo "c4" del nombre sugiere un entrenamiento o ajuste sobre el corpus C4, pero esto no esta confirmado en ninguna parte del repositorio.
 
 A fecha de los datos disponibles el modelo acumula 0 descargas y 0 likes, y no se ha publicado ningun benchmark. Debe tratarse, por tanto, como un checkpoint experimental sin documentar, util unicamente como base para experimentacion propia o fine-tuning, y no como un modelo listo para produccion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Dxnn1u-gpt2-c4 | 124.475.904 | No disponible | No disponible | HuggingFace, 0 descargas | Sin model card ni evaluacion |
-| GPT-2 small (OpenAI) | 124M aprox. | 1024 tokens | Modified MIT | HuggingFace, ampliamente usado | Modelo de referencia de la familia, con evaluacion publicada |
-| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 (segun publicacion de HuggingFace) | HuggingFace | Version destilada, mas rapida y algo menos capaz |
-| TinyLlama 1.1B | 1.100M | 2048 tokens | Apache 2.0 | HuggingFace | Modelo mucho mayor, con ajuste por instrucciones y mejor rendimiento general |
+| Dxnn1u-gpt2-c4 | 124.475.904 | No disponible | No disponible | Hugging Face, 0 descargas | Sin model card ni evaluacion |
+| GPT-2 small (OpenAI) | 124M aprox. | 1024 tokens | Modified MIT | Hugging Face, ampliamente usado | Modelo de referencia de la familia, con evaluacion publicada |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 (segun publicacion de Hugging Face) | Hugging Face | Version destilada, mas rapida y algo menos capaz |
+| TinyLlama 1.1B | 1.100M | 2048 tokens | Apache 2.0 | Hugging Face | Modelo mucho mayor, con ajuste por instrucciones y mejor rendimiento general |
 
 No se dispone de datos de rendimiento del modelo analizado que permitan una comparacion cuantitativa con las alternativas. La comparacion es por tanto estructural (tamano, contexto, licencia y disponibilidad) y no de calidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento del modelo analizado que permitan una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dxnn1u/Dxnn1u-gpt2-c4
+- Modelo en Hugging Face: https://huggingface.co/Dxnn1u/Dxnn1u-gpt2-c4
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Documentacion de la arquitectura GPT-2 en transformers: https://huggingface.co/docs/transformers/model_doc/gpt2
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact

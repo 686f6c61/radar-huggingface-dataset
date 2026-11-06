@@ -75,9 +75,9 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto / formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Parakeet TDT 0.6B v2 int8 ONNX) | 600M | ONNX int8, sherpa-onnx | en | CC-BY-4.0 | HuggingFace (espejo) |
-| nvidia/parakeet-tdt-0.6b-v2 (original) | 600M | NeMo (.nemo), sin cuantizar | en | CC-BY-4.0 | HuggingFace (NVIDIA) |
-| csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8 (fuente) | 600M | ONNX int8, sherpa-onnx | en | CC-BY-4.0 | HuggingFace (k2-fsa) |
+| Este modelo (Parakeet TDT 0.6B v2 int8 ONNX) | 600M | ONNX int8, sherpa-onnx | en | CC-BY-4.0 | Hugging Face (espejo) |
+| nvidia/parakeet-tdt-0.6b-v2 (original) | 600M | NeMo (.nemo), sin cuantizar | en | CC-BY-4.0 | Hugging Face (NVIDIA) |
+| csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8 (fuente) | 600M | ONNX int8, sherpa-onnx | en | CC-BY-4.0 | Hugging Face (k2-fsa) |
 | zipformer en int8 en streaming (referencia del test) | no disponible | ONNX, sherpa-onnx | en | no disponible | no disponible |
 
 No se dispone de datos comparativos de rendimiento frente a alternativas como Whisper en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas como Wh
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akm9191/sherpa-onnx-parakeet-tdt-0.6b-v2-int8
+- Repositorio en Hugging Face: https://huggingface.co/akm9191/sherpa-onnx-parakeet-tdt-0.6b-v2-int8
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Fuente de la exportacion ONNX int8 (k2-fsa): https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
 - sherpa-onnx (repositorio): https://github.com/k2-fsa/sherpa-onnx

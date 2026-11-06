@@ -85,7 +85,7 @@ La comparativa es orientativa, ya que no se han verificado los datos de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Oscilla/LFM2.5-1.2B-Instruct-mlx-4Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/Oscilla/LFM2.5-1.2B-Instruct-mlx-4Bit
 - Modelo base original: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Documentacion oficial de Liquid AI para LFM2.5-1.2B-Instruct: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
 - Ficha en ThinkLLM: https://thinkllm.dev/models/lfm2-5-1-2b-instruct-mlx-4bit

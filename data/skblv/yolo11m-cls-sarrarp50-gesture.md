@@ -81,11 +81,11 @@ No se han publicado benchmarks directos entre estos modelos en la tarea de gesto
 - **Sesgo de dominio**: entrenado exclusivamente con datos de SAR-RARP50, puede no generalizar a otros procedimientos quirúrgicos o sistemas robóticos.
 - **Riesgo de alucinación**: al ser un clasificador de imágenes, no genera texto; el riesgo de alucinación es irrelevante en este caso.
 - **Restricciones de licencia**: AGPL-3.0 es una licencia copyleft fuerte; si se integra en un servicio web o SaaS, los cambios en el código fuente deben publicarse bajo la misma licencia. Puede no ser adecuada para uso comercial cerrado.
-- **Repositorio sin pesos**: el repositorio de HuggingFace tiene tamaño 0.0 GB, lo que sugiere que los pesos no están subidos directamente; se requiere acceder a ellos a través del código de entrenamiento o de los pesos de Ultralytics.
+- **Repositorio sin pesos**: el repositorio de Hugging Face tiene tamaño 0.0 GB, lo que sugiere que los pesos no están subidos directamente; se requiere acceder a ellos a través del código de entrenamiento o de los pesos de Ultralytics.
 
 ## Enlaces
 
-- [HuggingFace: skblv/yolo11m-cls-sarrarp50-gesture](https://huggingface.co/skblv/yolo11m-cls-sarrarp50-gesture)
+- [Hugging Face: skblv/yolo11m-cls-sarrarp50-gesture](https://huggingface.co/skblv/yolo11m-cls-sarrarp50-gesture)
 - [Paper SAR-RARP50 (arXiv)](https://arxiv.org/abs/2401.00496)
 - [Leaderboard de comprensión de vídeo quirúrgico (GitHub)](https://github.com/skblv/neurosurgery-video-eval-website)
 - [Documentación de Ultralytics YOLO11](https://docs.ultralytics.com/models/yolo11)

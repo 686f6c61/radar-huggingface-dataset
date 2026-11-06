@@ -4,7 +4,7 @@
 
 El repositorio `alexanderggkm/multimodal-generation-finetuning` no contiene un modelo de IA entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre generación multimodal. El autor, alexanderggkm, publica bajo licencia MIT un documento de trabajo (`analysis.md`) que define el alcance de una pregunta de investigación, propone comparaciones con líneas base, sugiere benchmarks públicos y enumera comprobaciones de reproducibilidad y preguntas abiertas. No se incluye ningún checkpoint, código de entrenamiento ni resultados experimentales.
 
-A pesar de que los metadatos de HuggingFace indican un archivo `safetensors` con 33.088 parámetros, el tamaño del repositorio es de 0.0 GB y la model card aclara explícitamente que no se trata de un modelo entrenado. Por tanto, este repositorio debe interpretarse como material de referencia para investigadores interesados en diseñar estudios de generación multimodal, no como un artefacto desplegable.
+A pesar de que los metadatos de Hugging Face indican un archivo `safetensors` con 33.088 parámetros, el tamaño del repositorio es de 0.0 GB y la model card aclara explícitamente que no se trata de un modelo entrenado. Por tanto, este repositorio debe interpretarse como material de referencia para investigadores interesados en diseñar estudios de generación multimodal, no como un artefacto desplegable.
 
 ## Especificaciones técnicas
 
@@ -58,4 +58,4 @@ No disponible. No hay un modelo real con el que comparar. Los resultados de bús
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexanderggkm/multimodal-generation-finetuning
+- Repositorio en Hugging Face: https://huggingface.co/alexanderggkm/multimodal-generation-finetuning

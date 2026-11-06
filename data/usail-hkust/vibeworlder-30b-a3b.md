@@ -81,8 +81,8 @@ No se proporcionan cifras numericas desglosadas por tarea en la informacion disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usail-hkust/VibeWorlder-30B-A3B
-- Coleccion VibeWorlder en HuggingFace: https://huggingface.co/collections/usail-hkust/vibeworlder
+- Modelo en Hugging Face: https://huggingface.co/usail-hkust/VibeWorlder-30B-A3B
+- Coleccion VibeWorlder en Hugging Face: https://huggingface.co/collections/usail-hkust/vibeworlder
 - Repositorio GitHub VibeWorlding-Gym: https://github.com/usail-hkust/VibeWorlding-Gym
 - Paper en arXiv: https://arxiv.org/abs/2608.15265
 - Version HTML del paper: https://arxiv.org/html/2608.15265v1

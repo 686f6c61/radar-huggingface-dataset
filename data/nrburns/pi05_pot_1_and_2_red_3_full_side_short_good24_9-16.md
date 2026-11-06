@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (nrburns/pi05_...good24_9-16) | 4,14 B | No disponible | Sin evaluacion publicada | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/pi05_base | No disponible en la informacion proporcionada | No disponible | Sin datos en la informacion disponible | Apache 2.0 (segun el campo `base_model` y la licencia declarada del ajuste) | HuggingFace |
+| Este modelo (nrburns/pi05_...good24_9-16) | 4,14 B | No disponible | Sin evaluacion publicada | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/pi05_base | No disponible en la informacion proporcionada | No disponible | Sin datos en la informacion disponible | Apache 2.0 (segun el campo `base_model` y la licencia declarada del ajuste) | Hugging Face |
 | Otras alternativas VLA (π₀, SmolVLA, etc.) | No disponible | No disponible | No disponible | No disponible | No se han encontrado fuentes comparables en la busqueda web realizada |
 
 No se dispone de comparativas cuantitativas entre este ajuste fino y otras politicas. La unica relacion verificable es de dependencia: este modelo es un fine-tuning del checkpoint lerobot/pi05_base, con el mismo numero de parametros esperado aunque no confirmado por los metadatos disponibles.
@@ -107,7 +107,7 @@ No se dispone de comparativas cuantitativas entre este ajuste fino y otras polit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_short_good24_9-16
+- Modelo en Hugging Face: https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_short_good24_9-16
 - Dataset de entrenamiento: https://huggingface.co/datasets/nrburns/Pot_1_and_2_Red-3_full_side-short
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=nrburns/Pot_1_and_2_Red-3_full_side-short
 - Modelo base: https://huggingface.co/lerobot/pi05_base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `drewbie/jazz-pianist-style-synthetic-classifier` es un clasificador de estilo de pianista de jazz desarrollado por Drew Edwards y publicado en HuggingFace bajo licencia Apache-2.0. No es un modelo de lenguaje: se trata de una red neuronal en PyTorch que trabaja sobre musica simbolica (MIDI) y asigna cada fragmento o pista a uno de 12 pianistas de jazz, con condicionamiento por atencion cruzada y una receta de entrenamiento derivada de la arquitectura Aria.
+El modelo `drewbie/jazz-pianist-style-synthetic-classifier` es un clasificador de estilo de pianista de jazz desarrollado por Drew Edwards y publicado en Hugging Face bajo licencia Apache-2.0. No es un modelo de lenguaje: se trata de una red neuronal en PyTorch que trabaja sobre musica simbolica (MIDI) y asigna cada fragmento o pista a uno de 12 pianistas de jazz, con condicionamiento por atencion cruzada y una receta de entrenamiento derivada de la arquitectura Aria.
 
 Su particularidad es que se ha entrenado exclusivamente con musica generada: nunca ve una interpretacion real etiquetada durante el entrenamiento, solo continuaciones muestreadas de un generador condicional. A pesar de ello, evaluado sobre grabaciones reales alcanza un 87,1 % de acierto por fragmento y un 95,0 % por pista completa, lo que los autores presentan como evidencia de que la musica generada conserva estructura estilistica transferible a interpretaciones humanas.
 
@@ -79,7 +79,7 @@ No se publican en la informacion disponible resultados de MMLU, HumanEval, GSM8K
 
 | Modelo | Tarea | Clases | Exactitud | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (synthetic-only) | Clasificacion de estilo de pianista de jazz | 12 | 87,1 % por fragmento / 95,0 % por pista | Solo musica generada | apache-2.0 | Pesos en HuggingFace |
+| Este modelo (synthetic-only) | Clasificacion de estilo de pianista de jazz | 12 | 87,1 % por fragmento / 95,0 % por pista | Solo musica generada | apache-2.0 | Pesos en Hugging Face |
 | Clasificador con datos reales de la misma familia | Clasificacion de estilo de pianista de jazz | 12 | no disponible (superior segun los autores) | Interpretaciones reales etiquetadas | no disponible | Repositorio GitHub del proyecto |
 | Estudio de la Universidad de Cambridge (Cheston et al.) | Identificacion de pianistas de jazz | 20 | 94,4 % | 84 horas, 1.629 interpretaciones de 20 pianistas | no disponible | No disponible como pesos publicados en la informacion consultada |
 
@@ -99,7 +99,7 @@ La comparacion directa con alternativas es limitada: no se han encontrado en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drewbie/jazz-pianist-style-synthetic-classifier
+- Modelo en Hugging Face: https://huggingface.co/drewbie/jazz-pianist-style-synthetic-classifier
 - Codigo y scripts de evaluacion: https://github.com/almostimplemented/jazz-pianist-style
 - Aria (EleutherAI), base de la arquitectura: https://github.com/EleutherAI/aria
 - Dataset PiJAMA: https://github.com/almostimplemented/PiJAMA

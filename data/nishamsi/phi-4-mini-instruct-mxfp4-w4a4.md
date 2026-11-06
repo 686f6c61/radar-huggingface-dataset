@@ -87,11 +87,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/nishamsi/Phi-4-mini-instruct-MXFP4-W4A4
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Phi-4-mini-instruct
+- Modelo cuantizado en Hugging Face: https://huggingface.co/nishamsi/Phi-4-mini-instruct-MXFP4-W4A4
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - README del modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/main/README.md
 - Herramientas de conversion y generacion MXFP4: https://github.com/n-shamsi/mxfp4-model-tools
 - Informe tecnico de Phi-4-mini (arXiv:2503.01743): https://arxiv.org/abs/2503.01743
 - Referencia NVIDIA NIM de phi-4-mini-instruct: https://docs.api.nvidia.com/nim/reference/microsoft-phi-4-mini-instruct
 - Catalogo de modelos de Microsoft Foundry: https://ai.azure.com/catalog/models/Phi-4-mini-instruct
-- Fichero de receta `recipe.yaml` y `upstream-provenance.json`: incluidos en el repositorio de HuggingFace del modelo cuantizado
+- Fichero de receta `recipe.yaml` y `upstream-provenance.json`: incluidos en el repositorio de Hugging Face del modelo cuantizado

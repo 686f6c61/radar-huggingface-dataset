@@ -93,7 +93,7 @@ No se dispone de informacion sobre otros modelos de borrado con difusion por blo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anbeeld/MiniMax-M2.7-DFlash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Anbeeld/MiniMax-M2.7-DFlash-GGUF
 - Checkpoint original (z-lab): https://huggingface.co/z-lab/MiniMax-M2.7-DFlash
 - Checkpoint publico de NVIDIA: https://huggingface.co/nvidia/MiniMax-M2.7-DFlash
 - Modelo principal MiniMax-M2.7: https://huggingface.co/MiniMaxAI/MiniMax-M2.7

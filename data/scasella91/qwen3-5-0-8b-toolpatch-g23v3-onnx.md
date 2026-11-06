@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v3-ONNX
+- Modelo en Hugging Face: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v3-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Versión previa (MLX/BF16): https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v3
 - Export ONNX de referencia: https://huggingface.co/onnx-community/Qwen3.5-0.8B-ONNX

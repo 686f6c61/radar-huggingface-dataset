@@ -41,7 +41,7 @@ El entrenamiento corresponde a SimCSE no supervisado segun la nomenclatura del m
 - Busqueda semantica: indexar un corpus en vectores y recuperar por similitud la informacion mas relevante ante una consulta.
 - Mineria de parafrasis: identificar frases equivalentes en contenido dentro de un conjunto de textos.
 - Clasificacion de texto y agrupamiento (clustering) a partir de los embeddings generados.
-- Compatibilidad con `text-embeddings-inference` y con endpoints compatibles de HuggingFace, segun las etiquetas del repositorio.
+- Compatibilidad con `text-embeddings-inference` y con endpoints compatibles de Hugging Face, segun las etiquetas del repositorio.
 - No se declara soporte de tool calling, function calling, uso agentico, vision, audio ni modo de razonamiento (thinking). Es un modelo puramente de representacion, no generativo.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en FP32 aproximadamente 0,44 GB; en FP16 alrededor de 0,22 GB; en INT8 en torno a 0,11 GB (calculado a partir de los 109.482.240 parametros, no declarado por el autor).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente. No requiere A100 ni H100.
 - GPU de consumo: si, cabe con holgura en GTX 1060, RTX 2060, RTX 3060, RTX 4090 y modelos similares, y tambien en CPU para cargas moderadas.
-- Opciones de despliegue: `sentence-transformers` de forma nativa, `text-embeddings-inference` (etiqueta `text-embeddings-inference` presente), y servidores de embeddings compatibles con endpoints de HuggingFace. No se declara compatibilidad con vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
+- Opciones de despliegue: `sentence-transformers` de forma nativa, `text-embeddings-inference` (etiqueta `text-embeddings-inference` presente), y servidores de embeddings compatibles con endpoints de Hugging Face. No se declara compatibilidad con vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
 - Latencia y throughput: no disponibles. No se aportan mediciones.
 
 ## Comparativa con modelos similares
@@ -91,10 +91,10 @@ La comparacion se apoya en datos publicos de esos modelos, no en resultados medi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RusselKuAguilar/simcse-bert-uncased-unsup
+- Modelo en Hugging Face: https://huggingface.co/RusselKuAguilar/simcse-bert-uncased-unsup
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos de Sentence Transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos de Sentence Transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Guia de entrenamiento y ajuste de modelos de embeddings: https://huggingface.co/blog/train-sentence-transformers
 - Introduccion a modelos Matryoshka: https://huggingface.co/blog/matryoshka
 - Cuantizacion binaria y escalar de embeddings: https://huggingface.co/blog/embedding-quantization

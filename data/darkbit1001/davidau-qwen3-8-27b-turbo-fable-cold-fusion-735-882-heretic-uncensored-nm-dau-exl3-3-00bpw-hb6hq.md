@@ -68,7 +68,7 @@ No disponible. El modelo es una fusión y fine-tuning no convencional sin public
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/darkbit1001/DavidAU-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-EXL3-3.00bpw-HB6HQ
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/darkbit1001/DavidAU-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-EXL3-3.00bpw-HB6HQ
 - Modelo base original: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repositorio GGUF mencionado en el README: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Información adicional sobre el modelo: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf-davidau

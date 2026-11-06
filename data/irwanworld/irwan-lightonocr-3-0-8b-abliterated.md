@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Irwan-LightOnOCR-3-0.8B-abliterated es un modelo de visión-lenguaje (VLM) especializado en OCR, con aproximadamente 0,8B parámetros, publicado por el usuario irwanworld en HuggingFace. No se trata de un entrenamiento desde cero, sino de una derivación por aritmética de pesos: parte del fine-tune OCR `lightonai/LightOnOCR-3-0.8B` y le suma el delta de abliteración extraído de `huihui-ai/Huihui-Qwen3.5-0.8B-abliterated`, eliminando la tendencia a rechazar contenido explícito que el modelo OCR heredaba de su base.
+Irwan-LightOnOCR-3-0.8B-abliterated es un modelo de visión-lenguaje (VLM) especializado en OCR, con aproximadamente 0,8B parámetros, publicado por el usuario irwanworld en Hugging Face. No se trata de un entrenamiento desde cero, sino de una derivación por aritmética de pesos: parte del fine-tune OCR `lightonai/LightOnOCR-3-0.8B` y le suma el delta de abliteración extraído de `huihui-ai/Huihui-Qwen3.5-0.8B-abliterated`, eliminando la tendencia a rechazar contenido explícito que el modelo OCR heredaba de su base.
 
 La arquitectura subyacente es `Qwen3_5ForConditionalGeneration` (`model_type: qwen3_5`), un transformer híbrido que combina capas de atención lineal con capas de atención completa, sobre el que se monta un encoder visual de 12 capas. El contexto máximo declarado es de 262.144 tokens, el vocabulario es de 248.320 entradas y los embeddings están atados (tied). El modelo se distribuye en safetensors (bfloat16) y también en GGUF Q8_0 con fichero mmproj para el encoder visual.
 
@@ -104,7 +104,7 @@ La comparativa con alternativas de terceros (por ejemplo, otros VLMs de OCR de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/irwanworld/Irwan-LightOnOCR-3-0.8B-abliterated
+- Hugging Face: https://huggingface.co/irwanworld/Irwan-LightOnOCR-3-0.8B-abliterated
 - Modelo base OCR: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
 - Fuente del delta de abliteración: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-0.8B-abliterated
 - Referencia arXiv citada en los tags: arxiv:2601.14251 (contenido no verificado)

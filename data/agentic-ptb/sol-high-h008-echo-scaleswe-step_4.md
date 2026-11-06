@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h008.echo-scaleswe.step_4
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h008.echo-scaleswe.step_4
 - Repositorio ScaleSWE (referencia en resultados de búsqueda, sin relación confirmada con el modelo): https://github.com/AweAI-Team/ScaleSWE
 - No se han encontrado papers, blogs o demos oficiales asociados a este checkpoint.

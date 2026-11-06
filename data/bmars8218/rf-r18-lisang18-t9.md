@@ -6,7 +6,7 @@ rf-r18-lisang18-t9 es un modelo de lenguaje de 917 millones de parametros (aprox
 
 La relevancia de este modelo es acotada y de caracter experimental: no es un modelo de proposito general ni compite en benchmarks convencionales, sino una pieza de investigacion sobre entrenamiento cronologico y sesgo temporal. La model card indica que el checkpoint base fue entrenado ano por ano y que la etapa final consistio en 250 pasos de decaimiento de learning rate sobre texto de 2011, con aproximadamente un 8% de hechos y pasajes fuente datados en ese ano, ademas de un reescalado del peso final de RMSNorm por un factor de 1,075.
 
-El modelo tiene 0 descargas y 0 likes en HuggingFace, no dispone de pipeline declarado ni de idiomas especificados, y su repo ocupa 1,8 GB en formato safetensors. La informacion publica disponible es muy limitada: no hay datos de benchmarks, composicion del dataset, proceso de alineacion ni documentacion tecnica adicional.
+El modelo tiene 0 descargas y 0 likes en Hugging Face, no dispone de pipeline declarado ni de idiomas especificados, y su repo ocupa 1,8 GB en formato safetensors. La informacion publica disponible es muy limitada: no hay datos de benchmarks, composicion del dataset, proceso de alineacion ni documentacion tecnica adicional.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rf-r18-lisang18-t9 | 0,9B | no disponible | MIT | HuggingFace (0 descargas) | Corte temporal estricto en 2011 |
+| rf-r18-lisang18-t9 | 0,9B | no disponible | MIT | Hugging Face (0 descargas) | Corte temporal estricto en 2011 |
 | TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Amplia, con variantes GGUF | Entrenado con 3T tokens; benchmarks publicados |
 | Llama 3.2 1B | 1,2B | 128k tokens | Llama 3.2 Community License | Amplia, con variantes GGUF | Modelo instructivo moderno con tool calling |
 | Qwen2.5 0.5B | 0,5B | 32k tokens | Apache 2.0 | Amplia, con variantes GGUF | Multilingue, benchmarks publicados |
@@ -79,9 +79,9 @@ La comparacion directa es limitada: rf-r18-lisang18-t9 no publica benchmarks ni 
 - Contexto: no se documenta la longitud de contexto, lo que impide garantizar conversaciones multi-turno largas.
 - Licencia: MIT permite uso comercial, pero al derivar de un checkpoint de equipo no se detalla la procedencia exacta de los datos base, lo que puede plantear dudas de cumplimiento en produccion.
 - Madurez: 0 descargas y 0 likes, sin pipeline declarado ni documentacion adicional; no es un modelo recomendable para produccion sin una evaluacion propia exhaustiva.
-- Fecha de creacion inusual (2026-11-02 segun metadatos de HuggingFace): conviene verificar la integridad y procedencia del repositorio antes de usarlo.
+- Fecha de creacion inusual (2026-11-02 segun metadatos de Hugging Face): conviene verificar la integridad y procedencia del repositorio antes de usarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bmars8218/rf-r18-lisang18-t9
+- Modelo en Hugging Face: https://huggingface.co/bmars8218/rf-r18-lisang18-t9
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

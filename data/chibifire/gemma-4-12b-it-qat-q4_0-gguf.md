@@ -71,6 +71,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chibifire/gemma-4-12B-it-qat-q4_0-gguf
+- Repositorio Hugging Face: https://huggingface.co/chibifire/gemma-4-12B-it-qat-q4_0-gguf
 - Repositorio sin cuantizar: https://huggingface.co/chibifire/gemma-4-12B-it-qat-q4_0-unquantized
 - Repositorio original de Google: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf

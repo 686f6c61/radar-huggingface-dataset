@@ -6,7 +6,7 @@ El modelo `ppt-wc-loglinear-newlex-arb-before-100mb-packed-bfdiso_seed10` es un 
 
 La relevancia del modelo es experimental: el nombre sugiere variantes sobre tokenizacion ("loglinear", "newlex", "new-tokenizers") y el ajuste se ha realizado sobre un corpus base de 100 MB en ingles (`eng_latn_100mb`), tipico de la familia goldfish de modelos de bajo coste. No es un modelo de proposito general ni un asistente conversacional afinado; su interes radica en estudiar el efecto de cambios de tokenizador o lexico sobre el rendimiento de un modelo linguistico pequen.
 
-El modelo apenas tiene traccion en HuggingFace (0 descargas, 0 likes) y no incluye model card detallada sobre datos, idiomas o licencia, por lo que cualquier evaluacion en produccion deberia hacerse con cautela y verificando el comportamiento real antes de usarlo.
+El modelo apenas tiene traccion en Hugging Face (0 descargas, 0 likes) y no incluye model card detallada sobre datos, idiomas o licencia, por lo que cualquier evaluacion en produccion deberia hacerse con cautela y verificando el comportamiento real antes de usarlo.
 
 ## Especificaciones tecnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ppt-wc-loglinear-newlex-arb-before-100mb-packed-bfdiso_seed10 | 86,5 M | no disponible | GPT-2 | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/eng_latn_100mb (modelo base) | ~86 M | no disponible | GPT-2 | no disponible | HuggingFace |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | GPT-2 | MIT | HuggingFace, ampliamente utilizado |
+| francesca9805/ppt-wc-loglinear-newlex-arb-before-100mb-packed-bfdiso_seed10 | 86,5 M | no disponible | GPT-2 | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/eng_latn_100mb (modelo base) | ~86 M | no disponible | GPT-2 | no disponible | Hugging Face |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | GPT-2 | MIT | Hugging Face, ampliamente utilizado |
 
 Las cifras de rendimiento no estan disponibles para el modelo analizado ni para el modelo base, por lo que la comparacion se limita a parametros, contexto y licencia. GPT-2 small se incluye como referencia de la misma familia arquitectonica.
 
@@ -79,7 +79,7 @@ Las cifras de rendimiento no estan disponibles para el modelo analizado ni para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-arb-before-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-arb-before-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/8tsh5zrz

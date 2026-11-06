@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishiragarwal16/dr-screening-resnet18` es un clasificador de imágenes basado en la arquitectura ResNet-18, desarrollado por el usuario ishiragarwal16. Su nombre indica que está orientado al cribado de la retinopatía diabética (DR, por sus siglas en inglés), una complicación ocular de la diabetes que puede provocar ceguera si no se detecta a tiempo. El modelo está publicado en HuggingFace bajo licencia Apache-2.0 y ocupa aproximadamente 0,1 GB, lo que sugiere un tamaño reducido y una posible ejecución en entornos con recursos limitados.
+El modelo `ishiragarwal16/dr-screening-resnet18` es un clasificador de imágenes basado en la arquitectura ResNet-18, desarrollado por el usuario ishiragarwal16. Su nombre indica que está orientado al cribado de la retinopatía diabética (DR, por sus siglas en inglés), una complicación ocular de la diabetes que puede provocar ceguera si no se detecta a tiempo. El modelo está publicado en Hugging Face bajo licencia Apache-2.0 y ocupa aproximadamente 0,1 GB, lo que sugiere un tamaño reducido y una posible ejecución en entornos con recursos limitados.
 
 La relevancia de este modelo radica en la posibilidad de automatizar la detección temprana de la retinopatía diabética a partir de imágenes de fondo de ojo, una tarea que tradicionalmente requiere la intervención de oftalmólogos. Dado que se trata de un modelo ResNet-18, su arquitectura es ligera y eficiente en comparación con redes más profundas, lo que lo hace adecuado para su despliegue en clínicas, centros de salud o dispositivos de telemedicina. No obstante, la información disponible sobre el modelo es muy limitada: la model card publicada está vacía y no se han encontrado resultados de benchmarks ni detalles sobre el entrenamiento.
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables de cribado de retinopat�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishiragarwal16/dr-screening-resnet18
+- Hugging Face: https://huggingface.co/ishiragarwal16/dr-screening-resnet18
 - Revisión de la arquitectura ResNet-18 (Springer): https://link.springer.com/chapter/10.1007/978-981-96-4536-7_42
 - Artículo sobre redes residuales (arXiv): https://arxiv.org/html/2510.24036v1

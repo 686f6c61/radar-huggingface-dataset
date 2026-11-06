@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liana313/tokengate-sftbase-niah-qwen3.5-2b | 2B (base) + LoRA r16 | no disponible | NIAH (baseline sin gate) | Apache 2.0 | HuggingFace |
-| liana313/tokengate-niah-qwen3.5-2b | 2B (base) + LoRA r16 con gate | no disponible | NIAH (con token gating) | no disponible | HuggingFace |
-| Qwen/Qwen3.5-2B | 2B | definido por el modelo base | propósito general | no disponible | HuggingFace |
+| liana313/tokengate-sftbase-niah-qwen3.5-2b | 2B (base) + LoRA r16 | no disponible | NIAH (baseline sin gate) | Apache 2.0 | Hugging Face |
+| liana313/tokengate-niah-qwen3.5-2b | 2B (base) + LoRA r16 con gate | no disponible | NIAH (con token gating) | no disponible | Hugging Face |
+| Qwen/Qwen3.5-2B | 2B | definido por el modelo base | propósito general | no disponible | Hugging Face |
 
 La comparación directa más relevante es con la variante con *token gating* del mismo autor, que comparte modelo base, presupuesto de adaptador y protocolo de selección de checkpoint. Frente al modelo base sin ajustar, este adaptador solo es comparable en la tarea NIAH, no en capacidades generales.
 
@@ -80,7 +80,7 @@ La comparación directa más relevante es con la variante con *token gating* del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liana313/tokengate-sftbase-niah-qwen3.5-2b
+- Modelo en Hugging Face: https://huggingface.co/liana313/tokengate-sftbase-niah-qwen3.5-2b
 - Variante con token gating: https://huggingface.co/liana313/tokengate-niah-qwen3.5-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper: https://arxiv.org/abs/2610.26754

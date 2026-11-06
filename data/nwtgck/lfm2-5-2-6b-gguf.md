@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nwtgck/LFM2.5-2.6B-GGUF (este) | ~2,7B | no disponible | lfm1.0 | GGUF en HuggingFace |
-| LiquidAI/LFM2.5-2.6B (base) | ~2,7B | no disponible | lfm1.0 | safetensors en HuggingFace |
+| nwtgck/LFM2.5-2.6B-GGUF (este) | ~2,7B | no disponible | lfm1.0 | GGUF en Hugging Face |
+| LiquidAI/LFM2.5-2.6B (base) | ~2,7B | no disponible | lfm1.0 | safetensors en Hugging Face |
 | Alternativas de ~3B on-device (Llama 3.2 3B, Qwen2.5 3B, Gemma 2 2B) | ~2-3B | no disponible en la informacion proporcionada | varian; consultar cada modelo | safetensors y GGUF |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con estas alternativas. La comparativa estructural se limita a la categoria de tamano y al formato de distribucion.

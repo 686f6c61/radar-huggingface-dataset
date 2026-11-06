@@ -46,7 +46,7 @@ Los detalles exactos del conjunto de entrenamiento (número de muestras, platafo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de rendimiento como correlación con la edad cronológica, error absoluto medio (MAE) o comparación con otros relojes. El artículo original (Pipek y Csabai, 2023) podría contener dichos datos, pero no se proporcionan en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de rendimiento como correlación con la edad cronológica, error absoluto medio (MAE) o comparación con otros relojes. El artículo original (Pipek y Csabai, 2023) podría contener dichos datos, pero no se proporcionan en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -77,6 +77,6 @@ Nota: La comparativa se basa en el conocimiento general de los relojes epigenét
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyaging/pipekfilteredh
+- Repositorio Hugging Face: https://huggingface.co/pyaging/pipekfilteredh
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Artículo original: Pipek, Orsolya Anna, and István Csabai. "A revised multi-tissue, multi-platform epigenetic clock model for methylation array data." Journal of Mathematical Chemistry 61 (2023): 376–388. DOI: https://doi.org/10.1007/s10910-022-01381-4

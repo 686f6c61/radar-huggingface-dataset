@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CollectionStudio/mt5-base es una reproducción en HuggingFace del checkpoint mT5-base original de Google Research, un transformer encoder-decoder entrenado con el objetivo text-to-text sobre el corpus multilingüe mC4, que cubre 101 idiomas. El modelo no ha sido desarrollado por CollectionStudio: el repositorio replica la model card y los pesos de google/mt5-base, y la información técnica disponible remite íntegramente al paper original de mT5 (arXiv:2010.11934). Se trata, por tanto, de un checkpoint de preentrenamiento sin ajuste supervisado.
+CollectionStudio/mt5-base es una reproducción en Hugging Face del checkpoint mT5-base original de Google Research, un transformer encoder-decoder entrenado con el objetivo text-to-text sobre el corpus multilingüe mC4, que cubre 101 idiomas. El modelo no ha sido desarrollado por CollectionStudio: el repositorio replica la model card y los pesos de google/mt5-base, y la información técnica disponible remite íntegramente al paper original de mT5 (arXiv:2010.11934). Se trata, por tanto, de un checkpoint de preentrenamiento sin ajuste supervisado.
 
 Su relevancia radica en que mT5 fue el primer modelo T5 llevado a escala multilingüe con cobertura real de 101 idiomas, y sigue siendo una base habitual para tareas de generación condicionada (traducción, resumen, reescritura) en entornos con recursos limitados. La variante base, con alrededor de 580 millones de parámetros, es lo bastante pequeña para ajustarse y desplegarse en una única GPU de consumo, algo que no ocurre con las variantes large (1.200 millones) o xl (3.700 millones) de la misma familia.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe sin problema en GPU de consumo: RTX 3060 (12 GB), RTX 4070, RTX 4090, e incluso en tarjetas de 4-6 GB si se usa fp16 o int8 con lotes pequeños.
 - GPU de centro de datos adecuadas: T4, L4, A10G, A100 y H100, aunque están sobredimensionadas para un modelo de 580 millones de parámetros; su uso tendría sentido con lotes muy grandes o en despliegues de alta concurrencia.
 - Ejecución en CPU: viable para inferencia en lote no interactiva, con latencias altas pero funcionales para tareas de procesamiento por lotes.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch, TensorFlow, JAX/Flax), CTranslate2 para inferencia optimizada de modelos encoder-decoder y ONNX Runtime. El soporte en vLLM para modelos encoder-decoder existe, pero no se ha confirmado para este checkpoint concreto en la información disponible. No hay pesos GGUF publicados ni variante oficial para Ollama o llama.cpp.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch, TensorFlow, JAX/Flax), CTranslate2 para inferencia optimizada de modelos encoder-decoder y ONNX Runtime. El soporte en vLLM para modelos encoder-decoder existe, pero no se ha confirmado para este checkpoint concreto en la información disponible. No hay pesos GGUF publicados ni variante oficial para Ollama o llama.cpp.
 - Latencia y throughput: no disponibles. La model card no proporciona mediciones y no se han encontrado datos en la búsqueda web.
 
 ## Comparativa con modelos similares
@@ -74,11 +74,11 @@ Las cifras de parámetros de la familia mT5 proceden del paper de mT5; el resto 
 
 | Modelo | Parametros | Arquitectura | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mT5-base (este checkpoint) | ~580 M | Encoder-decoder text-to-text | 101 | Apache 2.0 | HuggingFace (copia de terceros) |
-| mT5-small | ~300 M | Encoder-decoder text-to-text | 101 | Apache 2.0 | HuggingFace (google/mt5-small) |
-| mT5-large | ~1.200 M | Encoder-decoder text-to-text | 101 | Apache 2.0 | HuggingFace (google/mt5-large) |
-| XLM-RoBERTa-base | ~278 M | Encoder-only (MLM) | 100 | MIT | HuggingFace (FacebookAI) |
-| mBART-large-50 | ~610 M | Encoder-decoder (denoising) | 50 | MIT | HuggingFace (facebook) |
+| mT5-base (este checkpoint) | ~580 M | Encoder-decoder text-to-text | 101 | Apache 2.0 | Hugging Face (copia de terceros) |
+| mT5-small | ~300 M | Encoder-decoder text-to-text | 101 | Apache 2.0 | Hugging Face (google/mt5-small) |
+| mT5-large | ~1.200 M | Encoder-decoder text-to-text | 101 | Apache 2.0 | Hugging Face (google/mt5-large) |
+| XLM-RoBERTa-base | ~278 M | Encoder-only (MLM) | 100 | MIT | Hugging Face (FacebookAI) |
+| mBART-large-50 | ~610 M | Encoder-decoder (denoising) | 50 | MIT | Hugging Face (facebook) |
 
 La diferencia funcional clave frente a XLM-RoBERTa es que este último es solo encoder: excelente para clasificación y etiquetado, pero incapaz de generar texto de forma nativa. Frente a mBART-large-50, mT5 duplica la cobertura de idiomas (101 frente a 50) y ofrece una arquitectura más sencilla de ajustar con la librería Transformers, aunque mBART incorpora un objetivo de denoising específicamente diseñado para traducción.
 
@@ -96,7 +96,7 @@ La diferencia funcional clave frente a XLM-RoBERTa es que este último es solo e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CollectionStudio/mt5-base
+- Repositorio en Hugging Face: https://huggingface.co/CollectionStudio/mt5-base
 - Checkpoint oficial de referencia: https://huggingface.co/google/mt5-base
 - Repositorio de código de mT5 (Google Research): https://github.com/google-research/multilingual-t5
 - Paper de mT5: https://arxiv.org/abs/2010.11934

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nepali LLaMA 590M es un modelo de lenguaje causal de 590.077.440 parámetros desarrollado por el usuario Anurag9817 y publicado en HuggingFace. Se trata de un checkpoint base (preentrenado, sin ajuste por instrucciones) orientado a dos idiomas: nepalí (ne) e inglés (en), con la etiqueta adicional roman-nepali, que hace referencia al nepalí escrito con alfabeto latino. El modelo emplea una arquitectura transformer de tipo decoder-only con estilo LLaMA, vocabulario SentencePiece propio de 40.000 tokens y 18 capas, con un tamaño de contexto de entrenamiento limitado a 1.024 tokens.
+Nepali LLaMA 590M es un modelo de lenguaje causal de 590.077.440 parámetros desarrollado por el usuario Anurag9817 y publicado en Hugging Face. Se trata de un checkpoint base (preentrenado, sin ajuste por instrucciones) orientado a dos idiomas: nepalí (ne) e inglés (en), con la etiqueta adicional roman-nepali, que hace referencia al nepalí escrito con alfabeto latino. El modelo emplea una arquitectura transformer de tipo decoder-only con estilo LLaMA, vocabulario SentencePiece propio de 40.000 tokens y 18 capas, con un tamaño de contexto de entrenamiento limitado a 1.024 tokens.
 
 Su relevancia es acotada pero específica: es un experimento de preentrenamiento de bajo coste centrado en una lengua de bajos recursos como el nepalí, ejecutado en hardware consumer (2 × Tesla T4) en menos de 9 horas. El repositorio ocupa 2,4 GB, coherente con pesos almacenados en FP32, y está etiquetado como compatible con text-generation-inference y endpoints_compatible. No cuenta con descargas ni valoraciones en el momento de redactar esta ficha, y no se ha publicado licencia.
 
@@ -17,7 +17,7 @@ Es importante subrayar que se trata de un modelo base y no de un chatbot: no ha 
 | Longitud de contexto | 1.024 tokens (longitud de secuencia de entrenamiento) |
 | Tipos de cuantizacion | No disponible; no se publican artefactos GGUF, AWQ ni GPTQ. Los pesos del repositorio parecen estar en FP32 (2,4 GB) |
 | Idiomas soportados | Nepalí (ne) e inglés (en); etiqueta adicional roman-nepali |
-| Licencia | No disponible (ni en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (ni en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors (librería transformers) |
 | Vocabulario | 40.000 tokens, SentencePiece propio (`tokenizer/nepali_llama_40k.model`) |
 | Tamano oculto (hidden size) | 1.536 |
@@ -75,7 +75,7 @@ El único dato cuantitativo de rendimiento disponible es la pérdida final de en
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nepali LLaMA 590M (este modelo) | 590 M | 1.024 tokens | ne, en | No disponible | safetensors en HuggingFace |
+| Nepali LLaMA 590M (este modelo) | 590 M | 1.024 tokens | ne, en | No disponible | safetensors en Hugging Face |
 | TinyLlama-1.1B | 1.100 M | 2.048 tokens | en (principalmente) | Apache-2.0 | safetensors, GGUF y múltiples derivados |
 | Qwen2.5-0.5B | 494 M | 32.768 tokens | multilingüe (29 idiomas) | Apache-2.0 (variante base) | safetensors, GGUF y derivados |
 | SmolLM2-360M | 362 M | 2.048 tokens | en | Apache-2.0 | safetensors, GGUF |
@@ -89,15 +89,15 @@ Los datos de contexto y licencia de los modelos comparados proceden de conocimie
 - Ventana de contexto de 1.024 tokens: insuficiente para tareas de contexto largo, resumen de documentos extensos o conversaciones multi-turno prolongadas.
 - Riesgo elevado de alucinación y de deriva temática, especialmente en nepalí, por la escasez de datos de preentrenamiento documentados.
 - Sesgos desconocidos: no se documenta composición del corpus en nepalí, filtrado, deduplicación ni evaluación de sesgos. FineWeb-Edu, la única fuente declarada, es un dataset en inglés orientado a contenido educativo, lo que puede sesgar el registro y el dominio del modelo.
-- Ausencia de licencia: no se especifica ningún tipo de licencia, ni siquiera en los metadatos de HuggingFace. Esto impide determinar si el uso comercial está permitido y supone un riesgo legal para producción.
+- Ausencia de licencia: no se especifica ningún tipo de licencia, ni siquiera en los metadatos de Hugging Face. Esto impide determinar si el uso comercial está permitido y supone un riesgo legal para producción.
 - Tokenizador no estándar: el autor indica explícitamente que no se reemplace el tokenizador del proyecto por `AutoTokenizer`, lo que puede romper pipelines automáticos y complicar la conversión a otros formatos de inferencia.
 - Discrepancia en el nombre del repositorio: el identificador menciona "580m-tokens" mientras que la model card describe 200 M de tokens nuevos y 380 M de exposición total. Conviene tratar las cifras de datos con cautela.
-- Sin validación externa: cero descargas y cero valoraciones en HuggingFace, sin resultados de benchmarks ni evaluaciones de terceros publicadas.
+- Sin validación externa: cero descargas y cero valoraciones en Hugging Face, sin resultados de benchmarks ni evaluaciones de terceros publicadas.
 - Los resultados de búsqueda web realizados no aportaron ninguna fuente técnica relacionable con este modelo; los enlaces encontrados eran consultas genéricas sin relación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anurag9817/nepali-llama-590m-580m-tokens
+- Modelo en Hugging Face: https://huggingface.co/Anurag9817/nepali-llama-590m-580m-tokens
 - Checkpoint base declarado por el autor: https://huggingface.co/Anurag9817/nepali-llama-590m-180m-english
 - Dataset de entrenamiento declarado (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tokenizador del proyecto: `tokenizer/nepali_llama_40k.model` dentro del repositorio del modelo

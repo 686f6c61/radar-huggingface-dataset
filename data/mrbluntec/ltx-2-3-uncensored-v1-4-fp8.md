@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / duración | Modos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.3-uncensored-v1.4-FP8 | 21,0 B | hasta 960 frames (~40 s) | txt2video, img2video, video2video, audio2video | unknown | HuggingFace (repo de 261 GB) |
-| Lightricks/LTX-2.3 (base) | no disponible | no disponible | txt2video, img2video | no disponible | HuggingFace |
-| TenStrip/LTX2.3-10Eros | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| TenStrip/LTX2.3_DMD_Lora | no disponible | no disponible | LoRA de destilación | no disponible | HuggingFace |
+| LTX-2.3-uncensored-v1.4-FP8 | 21,0 B | hasta 960 frames (~40 s) | txt2video, img2video, video2video, audio2video | unknown | Hugging Face (repo de 261 GB) |
+| Lightricks/LTX-2.3 (base) | no disponible | no disponible | txt2video, img2video | no disponible | Hugging Face |
+| TenStrip/LTX2.3-10Eros | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| TenStrip/LTX2.3_DMD_Lora | no disponible | no disponible | LoRA de destilación | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mrbluntec/LTX-2.3-uncensored-v1.4-FP8
+- Hugging Face: https://huggingface.co/Mrbluntec/LTX-2.3-uncensored-v1.4-FP8
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.3
 - LoRA Eros10: https://huggingface.co/TenStrip/LTX2.3-10Eros
 - LoRA DMD: https://huggingface.co/TenStrip/LTX2.3_DMD_Lora

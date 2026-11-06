@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iskhare/iclr-debug` es un repositorio alojado en HuggingFace por el usuario iskhare que, según su propia model card, no contiene un modelo entrenado listo para uso, sino artefactos públicos asociados a la rama `iclr-debug` del proyecto HazyResearch/MsTok. El pipeline declarado es `text-generation` y los tags incluyen `text-generation` y `research`, pero el texto de la tarjeta indica explícitamente que el repositorio "establece el espacio de nombres del experimento" y que "no se implican nuevos pesos de modelo ni afirmaciones finales de benchmarks". Por tanto, se trata de un contenedor de trabajo experimental, no de un checkpoint publicable.
+`iskhare/iclr-debug` es un repositorio alojado en Hugging Face por el usuario iskhare que, según su propia model card, no contiene un modelo entrenado listo para uso, sino artefactos públicos asociados a la rama `iclr-debug` del proyecto HazyResearch/MsTok. El pipeline declarado es `text-generation` y los tags incluyen `text-generation` y `research`, pero el texto de la tarjeta indica explícitamente que el repositorio "establece el espacio de nombres del experimento" y que "no se implican nuevos pesos de modelo ni afirmaciones finales de benchmarks". Por tanto, se trata de un contenedor de trabajo experimental, no de un checkpoint publicable.
 
 El contenido declarado incluye una auditoría de presupuesto de entrenamiento (referenciada como `NCM-BUDGET-AUDIT.md`) y una serie de requisitos de reporte para futuros resultados: posiciones de tokens brutas por componente, tamaño del dataset, batch global, actualizaciones del optimizador, horizontes de learning rate, etiquetado de muestreo incondicional frente a nivel cero, precisión del modelo de referencia, entropía, recuento de tokens puntuados y resultados por semilla. El proyecto de W&B asociado se identifica como `mstok/iclr-debug`.
 
@@ -93,7 +93,7 @@ No se dispone de información suficiente para establecer una comparativa con alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iskhare/iclr-debug
+- Repositorio en Hugging Face: https://huggingface.co/iskhare/iclr-debug
 - Repositorio de origen referenciado en la model card: HazyResearch/MsTok, rama `iclr-debug` (URL exacta del repositorio no proporcionada en la información disponible)
 - Proyecto de Weights & Biases referenciado: `mstok/iclr-debug` (URL no proporcionada en la información disponible)
 - Documento de auditoría citado: `NCM-BUDGET-AUDIT.md` (no se incluye enlace directo en la información disponible)

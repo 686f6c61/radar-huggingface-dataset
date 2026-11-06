@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HGRN-1.3B-unstructured-ELSA-80pct es un artefacto de investigación publicado por el usuario de HuggingFace `ikimyaii`: una versión podada al 80% de dispersión no estructurada del modelo base `fla-hub/hgrn-1.3B-100B`. La poda se ha realizado con el código oficial de ELSA (paper arXiv:2510.01650), aplicando una única umbralización por magnitud por capa sobre las 168 capas lineales de los bloques, mientras que los embeddings y la `lm_head` permanecen densos. El checkpoint conserva 1.364.396.032 parámetros en almacenamiento denso (el repositorio ocupa 5,5 GB, consistente con pesos en fp32) y se distribuye en formato `safetensors`.
+HGRN-1.3B-unstructured-ELSA-80pct es un artefacto de investigación publicado por el usuario de Hugging Face `ikimyaii`: una versión podada al 80% de dispersión no estructurada del modelo base `fla-hub/hgrn-1.3B-100B`. La poda se ha realizado con el código oficial de ELSA (paper arXiv:2510.01650), aplicando una única umbralización por magnitud por capa sobre las 168 capas lineales de los bloques, mientras que los embeddings y la `lm_head` permanecen densos. El checkpoint conserva 1.364.396.032 parámetros en almacenamiento denso (el repositorio ocupa 5,5 GB, consistente con pesos en fp32) y se distribuye en formato `safetensors`.
 
 El modelo base pertenece a la familia HGRN (Hierarchically Gated Recurrent Neural Network, NeurIPS 2023 spotlight), una arquitectura recurrente con compuertas jerárquicas de la familia de la atención lineal, implementada en la librería `flash-linear-attention`. No se trata de un modelo afinado para instrucciones ni de un asistente: es un modelo de lenguaje base de 1,3B parámetros sometido a un proceso de compresión post-entrenamiento.
 
@@ -101,7 +101,7 @@ La comparación cuantitativa entre estas variantes no es posible con la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-80pct
 - Modelo base: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Paper de ELSA: https://arxiv.org/abs/2510.01650
 - Implementación oficial de HGRN (OpenNLPLab, NeurIPS 2023): https://github.com/OpenNLPLab/HGRN

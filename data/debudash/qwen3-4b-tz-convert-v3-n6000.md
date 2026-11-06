@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| debudash/qwen3-4b-tz-convert-v3-n6000 | 4B (base) + LoRA | no disponible | Conversión de zonas horarias | apache-2.0 | HuggingFace (adaptador PEFT) |
-| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + LoRA | no disponible | Conversión de zonas horarias (checkpoint recomendado por el autor) | apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la información proporcionada | Modelo generalista de instrucciones | apache-2.0 (según el modelo base referenciado) | HuggingFace |
+| debudash/qwen3-4b-tz-convert-v3-n6000 | 4B (base) + LoRA | no disponible | Conversión de zonas horarias | apache-2.0 | Hugging Face (adaptador PEFT) |
+| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + LoRA | no disponible | Conversión de zonas horarias (checkpoint recomendado por el autor) | apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la información proporcionada | Modelo generalista de instrucciones | apache-2.0 (según el modelo base referenciado) | Hugging Face |
 
 No se dispone de información sobre otros adaptadores especializados en zonas horarias comparables. La comparación más directa es con el checkpoint `n12000` del mismo proyecto, que el autor identifica como el mejor, y con el modelo base sin ajustar.
 
@@ -93,7 +93,7 @@ No se dispone de información sobre otros adaptadores especializados en zonas ho
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n6000
+- Modelo en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n6000
 - Checkpoint recomendado por el autor: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000
 - Repositorio de código, eval sets e informes: https://huggingface.co/debudash/slm-training
 - Dataset de ajuste: https://huggingface.co/datasets/debudash/tz-convert-sft

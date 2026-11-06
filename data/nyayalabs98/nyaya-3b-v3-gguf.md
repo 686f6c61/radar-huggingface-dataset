@@ -66,8 +66,8 @@ Según el autor, el modelo está estadísticamente empatado con el modelo base e
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento (Nyaya-Eval-v1) | Disponibilidad |
 |---|---|---|---|---|---|
-| Nyaya-3B-v3-GGUF | 3.085.938.688 | 8192 tokens (configurado) | qwen-research (no comercial) | 32.9% fact recall | GGUF en HuggingFace |
-| Qwen2.5-3B-Instruct (base) | 3B (según nombre) | no disponible | qwen-research | 34.3% fact recall | HuggingFace (enlace a licencia) |
+| Nyaya-3B-v3-GGUF | 3.085.938.688 | 8192 tokens (configurado) | qwen-research (no comercial) | 32.9% fact recall | GGUF en Hugging Face |
+| Qwen2.5-3B-Instruct (base) | 3B (según nombre) | no disponible | qwen-research | 34.3% fact recall | Hugging Face (enlace a licencia) |
 | Qwen3-4B-Instruct-2507 | 4B (según nombre) | no disponible | Apache-2.0 | 52.0% fact recall (con recuperación) | GGUF oficial |
 
 No se dispone de información detallada sobre el contexto de los modelos comparados en la documentación proporcionada.

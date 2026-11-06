@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hamdan001/qwen-3.5-0.8B-bash-command-fine-tuned
+- Modelo en Hugging Face: https://huggingface.co/hamdan001/qwen-3.5-0.8B-bash-command-fine-tuned
 - Artículo sobre Qwen3.5 0.8B (Codersera): https://codersera.com/blog/run-and-benchmark-qwen35-08b/
 - Página de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:0.8b
 - Repositorio NL2Shell (fine-tune similar): https://github.com/nl2shell/nl2shell

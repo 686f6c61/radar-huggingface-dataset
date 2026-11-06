@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ascientist/sentionaut-axon-world` es un modelo del mundo (world model) muy especializado en visión protésica, publicado por el usuario ascientist en HuggingFace bajo licencia MIT. En concreto, se trata de un "drive student": una red neuronal entrenada para imitar la salida del modelo analítico `BiphasicAxonMapTorch`, que simula la estimulación eléctrica de un implante retinal Argus II sobre una rejilla de percepción de 97x97 puntos (rango de -12 a 12 con paso 0,25).
+El modelo `ascientist/sentionaut-axon-world` es un modelo del mundo (world model) muy especializado en visión protésica, publicado por el usuario ascientist en Hugging Face bajo licencia MIT. En concreto, se trata de un "drive student": una red neuronal entrenada para imitar la salida del modelo analítico `BiphasicAxonMapTorch`, que simula la estimulación eléctrica de un implante retinal Argus II sobre una rejilla de percepción de 97x97 puntos (rango de -12 a 12 con paso 0,25).
 
 A diferencia de los modelos de lenguaje, este sistema no procesa texto ni mantiene conversaciones: predice el "drive" espacial generado por un patrón de estimulación de electrodos. El desvanecimiento de brillo se mantiene mediante un integrador con fuga (leaky integrator) analítico, de modo que la red aprende únicamente la componente espacial del fenómeno.
 
@@ -85,10 +85,10 @@ No disponible. La información proporcionada no incluye modelos comparables dent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ascientist/sentionaut-axon-world
+- Modelo en Hugging Face: https://huggingface.co/ascientist/sentionaut-axon-world
 - Referencia general sobre modelos del mundo (Wikipedia): https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)
 - Artículo de Ars Technica sobre promesas y límites de los modelos del mundo: https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models/
 - Artículo "World Models in Artificial Intelligence: Sensing, Learning, and ..." (arXiv): https://arxiv.org/html/2503.15168
 - Artículo "From Observation to Insight: Mechanistic World Models and ..." (arXiv): https://arxiv.org/abs/2607.12474
 
-Nota: salvo el enlace de HuggingFace, el resto de enlaces corresponde a referencias generales sobre modelos del mundo y no trata específicamente este modelo.
+Nota: salvo el enlace de Hugging Face, el resto de enlaces corresponde a referencias generales sobre modelos del mundo y no trata específicamente este modelo.

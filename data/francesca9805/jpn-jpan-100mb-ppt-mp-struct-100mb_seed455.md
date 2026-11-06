@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455` es un ajuste fino (fine-tuning) de tipo SFT del modelo monolingüe `goldfish-models/jpn_jpan_100mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un checkpoint experimental de pequeño tamaño: 124.770.816 parámetros (aproximadamente 124,8 millones) y 0,3 GB de repositorio, construido sobre una arquitectura de tipo GPT-2 según la etiqueta declarada por el autor. El modelo se ha entrenado con la librería TRL (versión 0.23.0), lo que lo sitúa en la órbita de los flujos de trabajo de *supervised fine-tuning* habituales en el ecosistema HuggingFace.
+`francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455` es un ajuste fino (fine-tuning) de tipo SFT del modelo monolingüe `goldfish-models/jpn_jpan_100mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un checkpoint experimental de pequeño tamaño: 124.770.816 parámetros (aproximadamente 124,8 millones) y 0,3 GB de repositorio, construido sobre una arquitectura de tipo GPT-2 según la etiqueta declarada por el autor. El modelo se ha entrenado con la librería TRL (versión 0.23.0), lo que lo sitúa en la órbita de los flujos de trabajo de *supervised fine-tuning* habituales en el ecosistema Hugging Face.
 
 El nombre del repositorio sugiere una variante de un experimento mayor (identificadores `ppt`, `mp`, `struct-100mb` y una semilla concreta, `seed455`), lo que apunta a un artefacto de investigación orientado a comparar configuraciones de entrenamiento más que a un modelo listo para producción. No hay información publicada sobre composición del dataset, número de tokens de entrenamiento ni evaluación de resultados, y el modelo acumula 0 descargas y 0 *likes* en el momento de redactar esta ficha.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, la de un punto de partida reproducible para experim
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (dato de safetensors) |
 | Parametros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | No disponible |
@@ -39,7 +39,7 @@ No se describe ninguna innovación técnica específica: no hay decodificación 
 - Generación de texto autoregresiva en el idioma del modelo base, presumiblemente japonés, con la calidad esperable de un modelo de 124,8 millones de parámetros especializado en un único idioma.
 - Continuación de texto y *prompting* conversacional en el formato de mensajes que muestra la model card (`[{"role": "user", "content": ...}]`), aunque no se documenta un ajuste de instrucciones explícito más allá del SFT.
 - Ejecución en CPU y en GPUs de gama baja gracias a su tamaño reducido, lo que facilita pruebas locales.
-- Compatibilidad con `transformers.pipeline("text-generation")` y con el stack de HuggingFace (`text-generation-inference` y `endpoints_compatible` aparecen entre las etiquetas).
+- Compatibilidad con `transformers.pipeline("text-generation")` y con el stack de Hugging Face (`text-generation-inference` y `endpoints_compatible` aparecen entre las etiquetas).
 - No hay evidencia publicada de soporte de *tool calling* o *function calling*.
 - No hay evidencia publicada de capacidades de agente, razonamiento multi-paso, matemáticas, código o visión.
 - No hay evidencia publicada de modo *thinking* ni de capacidades de audio.
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455 | 124,77 M | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/jpn_jpan_100mb (modelo base) | No disponible en la informacion facilitada | No disponible | No disponible | No disponible | HuggingFace |
-| francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 (variante hermana) | 124,8 M segun LLM Explorer | No disponible | No disponible | No disponible | HuggingFace, FriendliAI, LLM Explorer |
-| francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10 (variante hermana) | 124,8 M segun LLM Explorer | No disponible | No disponible | No disponible | HuggingFace |
+| francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455 | 124,77 M | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/jpn_jpan_100mb (modelo base) | No disponible en la informacion facilitada | No disponible | No disponible | No disponible | Hugging Face |
+| francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 (variante hermana) | 124,8 M segun LLM Explorer | No disponible | No disponible | No disponible | Hugging Face, FriendliAI, LLM Explorer |
+| francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10 (variante hermana) | 124,8 M segun LLM Explorer | No disponible | No disponible | No disponible | Hugging Face |
 
 Los resultados de búsqueda muestran una familia amplia de checkpoints hermanos generados por el mismo autor sobre el mismo modelo base, con variaciones en el tamaño de datos de ajuste (`10mb` frente a `100mb`), el esquema de empaquetado (`packed`) y la semilla (`seed10`, `seed3407`, `seed455`). Esto refuerza la interpretación de que se trata de una matriz de experimentos y no de un modelo individual con intención de producción. No se han encontrado comparaciones publicadas frente a otros modelos japoneses de tamaño similar.
 
@@ -87,13 +87,13 @@ Los resultados de búsqueda muestran una familia amplia de checkpoints hermanos 
 - Ausencia de licencia: la model card incluye `licence: license` como marcador de posición, sin términos legales efectivos. Sin una licencia explícita, no puede asumirse permiso para uso comercial, redistribución o modificación; conviene contactar con el autor antes de cualquier uso en producción.
 - Ausencia de documentación de datos: no se especifica la procedencia del corpus de ajuste, lo que impide verificar el cumplimiento de derechos de autor, la existencia de datos personales o la calidad del material de entrenamiento.
 - Escaso respaldo de la comunidad: 0 descargas y 0 *likes* implican que el modelo no ha sido validado por terceros; no hay informes independientes de comportamiento.
-- Metadatos incoherentes: la fecha de creación registrada en HuggingFace (2026-10-04) es posterior a la fecha de consulta habitual de este tipo de fichas, lo que sugiere un artefacto generado de forma automatizada o con metadatos no convencionales. Conviene tratarlo con cautela.
+- Metadatos incoherentes: la fecha de creación registrada en Hugging Face (2026-10-04) es posterior a la fecha de consulta habitual de este tipo de fichas, lo que sugiere un artefacto generado de forma automatizada o con metadatos no convencionales. Conviene tratarlo con cautela.
 - Idoneidad para producción: baja. No debe emplearse en aplicaciones orientadas a usuario final sin una evaluación exhaustiva previa, y no hay indicios de que soporte *tool calling*, agentes o razonamiento multi-paso.
 - Compatibilidad de cuantización no verificada: al no distribuirse GGUF, cualquier conversión es responsabilidad del usuario y puede degradar aún más la calidad de un modelo ya de por sí pequeño.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455
 - Modelo base `goldfish-models/jpn_jpan_100mb`: https://huggingface.co/goldfish-models/jpn_jpan_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/eflp4g7w
 - Repositorio de TRL: https://github.com/huggingface/trl

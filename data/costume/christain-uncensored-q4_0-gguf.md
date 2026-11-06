@@ -71,7 +71,7 @@ Datos de los modelos alternativos tomados de su documentacion publica; el contex
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Costume/christAIn-uncensored-Q4_0-GGUF | 0,49 B | No disponible | No disponible | GGUF Q4_0 | HuggingFace, 0 descargas |
+| Costume/christAIn-uncensored-Q4_0-GGUF | 0,49 B | No disponible | No disponible | GGUF Q4_0 | Hugging Face, 0 descargas |
 | Qwen2.5-0.5B-Instruct | 0,49 B | 32 768 tokens (documentacion publica) | Apache-2.0 | safetensors, GGUF | Ampliamente disponible |
 | SmolLM2-360M-Instruct | 0,36 B | 8 192 tokens (documentacion publica) | Apache-2.0 | safetensors, GGUF | Ampliamente disponible |
 | TinyLlama-1.1B-Chat | 1,1 B | 2 048 tokens (documentacion publica) | Apache-2.0 | safetensors, GGUF | Ampliamente disponible |

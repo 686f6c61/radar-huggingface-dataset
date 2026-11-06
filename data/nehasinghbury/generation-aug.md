@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nehasinghbury/generation-aug` es un repositorio de HuggingFace publicado por el usuario Nehasinghbury que contiene una implementacion propia de una arquitectura denominada "Mocov3" orientada a tareas de generacion, en una configuracion que el autor describe como "nano". Segun su model card, el objetivo del repositorio es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, y el propio autor indica de forma explicita que no reclama ninguna puntuacion de benchmark. El checkpoint incluido (`model.safetensors`) se presenta como una inicializacion valida para pruebas, no como un modelo entrenado.
+`Nehasinghbury/generation-aug` es un repositorio de Hugging Face publicado por el usuario Nehasinghbury que contiene una implementacion propia de una arquitectura denominada "Mocov3" orientada a tareas de generacion, en una configuracion que el autor describe como "nano". Segun su model card, el objetivo del repositorio es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, y el propio autor indica de forma explicita que no reclama ninguna puntuacion de benchmark. El checkpoint incluido (`model.safetensors`) se presenta como una inicializacion valida para pruebas, no como un modelo entrenado.
 
 El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, un tamano de 0,0 GB y una licencia Apache 2.0. La informacion publicada no documenta la longitud de contexto, los idiomas soportados, el dataset de entrenamiento ni el numero de tokens utilizados, por lo que la mayor parte de las especificaciones habituales de una ficha de modelo no estan disponibles.
 
@@ -84,6 +84,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nehasinghbury/generation-aug
+- Repositorio en Hugging Face: https://huggingface.co/Nehasinghbury/generation-aug
 - Ficheros incluidos en el repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Enlaces adicionales (papers, blogs, repos, demos): no se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos por la busqueda no guardan relacion con este modelo ni con inteligencia artificial open source, por lo que se descartan.

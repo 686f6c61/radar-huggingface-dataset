@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stemonea/DNE-ElecDeb-Mistral` es un ajuste fino (fine-tune) del modelo base `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`, desarrollado por el usuario `stefra` y publicado en HuggingFace bajo licencia Apache-2.0. El nombre sugiere una especialización en debates electorales (ElecDeb), probablemente orientado a tareas de análisis o generación de discursos políticos, aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni los objetivos específicos del ajuste.
+El modelo `stemonea/DNE-ElecDeb-Mistral` es un ajuste fino (fine-tune) del modelo base `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`, desarrollado por el usuario `stefra` y publicado en Hugging Face bajo licencia Apache-2.0. El nombre sugiere una especialización en debates electorales (ElecDeb), probablemente orientado a tareas de análisis o generación de discursos políticos, aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni los objetivos específicos del ajuste.
 
 El modelo se entrenó utilizando la librería Unsloth, que acelera el fine-tuning de modelos de lenguaje, y se distribuye en formato safetensors compatible con `transformers` y `text-generation-inference`. El repositorio tiene un tamaño de 0.2 GB, lo que indica que los pesos están cuantizados (probablemente a 4 bits, dado que el modelo base es una versión bnb-4bit). No se dispone de información sobre descargas, usos o evaluaciones independientes, por lo que su rendimiento real en tareas específicas no está documentado.
 
@@ -79,7 +79,7 @@ La comparativa se basa en el modelo base, ya que no hay datos específicos del f
 
 ## Enlaces
 
-- [HuggingFace: stemonea/DNE-ElecDeb-Mistral](https://huggingface.co/stemonea/DNE-ElecDeb-Mistral)
+- [Hugging Face: stemonea/DNE-ElecDeb-Mistral](https://huggingface.co/stemonea/DNE-ElecDeb-Mistral)
 - [Modelo base: unsloth/mistral-7b-instruct-v0.3-bnb-4bit](https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Documentación de Mistral AI](https://docs.mistral.ai/models)

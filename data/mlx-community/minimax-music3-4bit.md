@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: mlx-community/MiniMax-Music3-4bit](https://huggingface.co/mlx-community/MiniMax-Music3-4bit)
+- [Hugging Face: mlx-community/MiniMax-Music3-4bit](https://huggingface.co/mlx-community/MiniMax-Music3-4bit)
 - [Modelo base: MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - [Licencia del modelo base](https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE)
 - [Repositorio mlx-audio](https://github.com/Blaizzy/mlx-audio)

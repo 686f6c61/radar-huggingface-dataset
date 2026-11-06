@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular y publicado en HuggingFace por el usuario davron04. No se trata de un modelo de lenguaje: el repositorio contiene una política entrenada para el entorno Taxi de Gymnasium (el autor menciona Taxi-v3 en la model card, pese al nombre del repositorio), un problema clásico de toy-text en el que un taxi debe recoger y dejar pasajeros en cuatro ubicaciones de una cuadrícula. El artefacto distribuido es un fichero pickle (`q-learning.pkl`) que se carga con `load_from_hub` y se ejecuta contra el entorno declarado en el propio checkpoint.
+Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular y publicado en Hugging Face por el usuario davron04. No se trata de un modelo de lenguaje: el repositorio contiene una política entrenada para el entorno Taxi de Gymnasium (el autor menciona Taxi-v3 en la model card, pese al nombre del repositorio), un problema clásico de toy-text en el que un taxi debe recoger y dejar pasajeros en cuatro ubicaciones de una cuadrícula. El artefacto distribuido es un fichero pickle (`q-learning.pkl`) que se carga con `load_from_hub` y se ejecuta contra el entorno declarado en el propio checkpoint.
 
 El modelo tiene un interés limitado a docencia, prototipado y validación de infraestructura de RL. No hay arquitectura neuronal, ni parámetros entrenables en el sentido habitual, ni capacidades de generación de texto, código o visión. El espacio de estados de Taxi-v3 es discreto y pequeño (500 estados, 6 acciones en la configuración estándar del entorno), por lo que el coste computacional de la inferencia es despreciable y no requiere GPU.
 
@@ -43,7 +43,7 @@ No se especifican hiperparametros (tasa de aprendizaje, factor de descuento, pol
 - Baseline para comparar algoritmos: usar la recompensa media declarada como referencia inicial frente a DQN, PPO o SARSA entrenados sobre el mismo entorno, siempre que se reevalue con las mismas condiciones y semillas.
 - Experimentos de ablation sobre hiperparametros: reentrenar Q-learning variando tasa de aprendizaje y decaimiento de epsilon, y comparar la recompensa media resultante con el valor declarado en este repositorio.
 - Demostraciones interactivas y visualizacion: cargar el agente en un notebook con el renderizado de Gymnasium para mostrar paso a paso como la politica recoge y deja pasajeros, util en materiales de cursos o charlas.
-- Reproducibilidad y auditoria de artefactos: el repositorio permite estudiar como se versiona y se consume un checkpoint de RL en HuggingFace, incluida la discrepancia entre el nombre del repositorio (Taxi-v4) y el entorno real (Taxi-v3).
+- Reproducibilidad y auditoria de artefactos: el repositorio permite estudiar como se versiona y se consume un checkpoint de RL en Hugging Face, incluida la discrepancia entre el nombre del repositorio (Taxi-v4) y el entorno real (Taxi-v3).
 - Pruebas de robustez y varianza: dado el intervalo declarado de ± 2,71, el agente es un caso practico para medir dispersion entre episodios y evaluar la estabilidad de una politica tabular.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No se han encontrado en la informacion proporcionada resultados verificados de o
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davron04/Taxi-v4 | No disponible (agente tabular) | No aplica (estado discreto) | mean_reward 7,56 +/- 2,71 (no verificado) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| davron04/Taxi-v4 | No disponible (agente tabular) | No aplica (estado discreto) | mean_reward 7,56 +/- 2,71 (no verificado) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Otros agentes Q-learning para Taxi-v3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Agentes DQN / PPO para Taxi-v3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Solucion exacta por iteracion de valor sobre Taxi-v3 | no aplica | no aplica | no disponible | no disponible | Implementable por el usuario, sin artefacto publicado |
@@ -93,7 +93,7 @@ No se han encontrado en la informacion proporcionada resultados verificados de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davron04/Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/davron04/Taxi-v4
 - Entorno de referencia (no proviene de la busqueda web, se incluye como documentacion del entorno mencionado en la model card): https://gymnasium.farama.org/environments/toy_text/taxi/
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados devueltos corresponden a paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, en.wikipedia.org/wiki/Microsoft) y no guardan relacion con el repositorio.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

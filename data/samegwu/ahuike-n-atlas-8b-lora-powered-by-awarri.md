@@ -91,9 +91,9 @@ No se dispone de datos de otros modelos de triaje maternoinfantil en la informac
 
 | Sistema | Parametros | Contexto | Precision (NaijaTriage-Bench) | Emergencias no detectadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (LoRA sobre N-ATLaS-8B) | 8B + adaptador | No disponible | 90,9 % | 5,7 % | N-ATLaS | HuggingFace (adaptador PEFT) |
-| N-ATLaS-8B base | 8B | No disponible | 37,2 % | 96,5 % | N-ATLaS | HuggingFace (NCAIR1/N-ATLaS) |
-| N-ATLaS-8B base con 3 ejemplos resueltos | 8B | No disponible | 53,8 % | 34,6 % | N-ATLaS | HuggingFace (NCAIR1/N-ATLaS) |
+| Este modelo (LoRA sobre N-ATLaS-8B) | 8B + adaptador | No disponible | 90,9 % | 5,7 % | N-ATLaS | Hugging Face (adaptador PEFT) |
+| N-ATLaS-8B base | 8B | No disponible | 37,2 % | 96,5 % | N-ATLaS | Hugging Face (NCAIR1/N-ATLaS) |
+| N-ATLaS-8B base con 3 ejemplos resueltos | 8B | No disponible | 53,8 % | 34,6 % | N-ATLaS | Hugging Face (NCAIR1/N-ATLaS) |
 | Otros modelos de triaje clinico comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -107,11 +107,11 @@ No se dispone de datos de otros modelos de triaje maternoinfantil en la informac
 - La salida debe consumirse con el parser oficial (`parse_output`) y no como texto libre; el modelo no debe usarse para redactar consejo medico.
 - Licencia N-ATLaS: permite hasta 1.000 usuarios finales activos sin acuerdo separado. Cualquier despliegue por encima de ese umbral requiere negociacion. Esta prohibido cualquier uso que la licencia N-ATLaS proscriba.
 - Los autores remiten a `docs/ETHICS.md` para las simplificaciones del protocolo y las limitaciones adicionales.
-- El repositorio tiene 0 descargas y 0 likes, y no se ha publicado pipeline en HuggingFace: no hay evidencia de adopcion ni de validacion independiente.
+- El repositorio tiene 0 descargas y 0 likes, y no se ha publicado pipeline en Hugging Face: no hay evidencia de adopcion ni de validacion independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SamEgwu/AHUIKE-N-ATLaS-8B-LoRA-Powered-by-Awarri
+- Modelo en Hugging Face: https://huggingface.co/SamEgwu/AHUIKE-N-ATLaS-8B-LoRA-Powered-by-Awarri
 - Modelo base N-ATLaS: https://huggingface.co/NCAIR1/N-ATLaS
 - Codigo, benchmark y resultados completos: https://github.com/EgwuSamuel/ahuike
 - Awarri Technologies: https://www.awarri.com/

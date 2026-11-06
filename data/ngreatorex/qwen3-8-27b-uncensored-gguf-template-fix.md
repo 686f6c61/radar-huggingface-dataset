@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos (benchmarks) entre estas vers
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ngreatorex/Qwen3.8-27B-Uncensored-GGUF-Template-Fix
+- Repositorio Hugging Face: https://huggingface.co/ngreatorex/Qwen3.8-27B-Uncensored-GGUF-Template-Fix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Repositorio de AlibabaCloud-Official/Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

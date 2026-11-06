@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.5-9B-VerIH-step400-template es un ajuste fino de 9.409.813.744 parámetros (9,41 B) publicado por el desarrollador independiente ConnorYU sobre la arquitectura Qwen3.5. Se distribuye a través de HuggingFace con licencia Apache 2.0, en formato safetensors (18,8 GB de repositorio) y con la librería transformers como vía de carga declarada. El pipeline registrado es image-text-to-text, de modo que el autor declara capacidad de entrada multimodal imagen-texto, aunque la model card no incluye ningún ejemplo, plantilla de prompt visual ni evaluación que lo verifique.
+Qwen3.5-9B-VerIH-step400-template es un ajuste fino de 9.409.813.744 parámetros (9,41 B) publicado por el desarrollador independiente ConnorYU sobre la arquitectura Qwen3.5. Se distribuye a través de Hugging Face con licencia Apache 2.0, en formato safetensors (18,8 GB de repositorio) y con la librería transformers como vía de carga declarada. El pipeline registrado es image-text-to-text, de modo que el autor declara capacidad de entrada multimodal imagen-texto, aunque la model card no incluye ningún ejemplo, plantilla de prompt visual ni evaluación que lo verifique.
 
-El modelo se deriva de ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step400, un checkpoint que, por su nombre y por la cadena de variantes del mismo autor, parece formar parte de una línea de post-entrenamiento con GRPO orientada al seguimiento de instrucciones verificables (IFEval) en modo "think". El sufijo step400 sugiere un checkpoint intermedio del paso 400 de entrenamiento, no un modelo final pulido. El ajuste se realizó con Unsloth y la librería TRL de HuggingFace, según indica el propio autor, con una mejora declarada de 2x en velocidad de entrenamiento.
+El modelo se deriva de ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step400, un checkpoint que, por su nombre y por la cadena de variantes del mismo autor, parece formar parte de una línea de post-entrenamiento con GRPO orientada al seguimiento de instrucciones verificables (IFEval) en modo "think". El sufijo step400 sugiere un checkpoint intermedio del paso 400 de entrenamiento, no un modelo final pulido. El ajuste se realizó con Unsloth y la librería TRL de Hugging Face, según indica el propio autor, con una mejora declarada de 2x en velocidad de entrenamiento.
 
 Su relevancia ahora es acotada y muy específica: interesa a quien investiga cadenas abiertas de RL y ajuste fino sobre Qwen3.5, y a quien quiera reproducir o comparar checkpoints intermedios de esa línea. No es un modelo con validación comunitaria (0 descargas, 1 like en el momento de la consulta) ni con documentación suficiente para producción. La longitud de contexto, la composición del dataset de entrenamiento y los resultados de evaluación no están publicados.
 
@@ -94,7 +94,7 @@ Las tres variantes hermanas comparten autor, base y licencia, y se diferencian �
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-template
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-template
 - Modelo base (GRPO-ifeval-v0-think-step400): https://huggingface.co/ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step400
 - Variante sin pista de sistema: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint
 - Árbol de ficheros de la variante sin pista de sistema: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint/tree/main
@@ -103,4 +103,4 @@ Las tres variantes hermanas comparten autor, base y licencia, y se diferencian �
 - Ficha de la variante insegura en FriendliAI: https://friendli.ai/models/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure
 - Segunda iteración de la variante insegura en Featherless: https://featherless.ai/models/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure-1e
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Repositorio de TRL (HuggingFace): https://github.com/huggingface/trl
+- Repositorio de TRL (Hugging Face): https://github.com/huggingface/trl

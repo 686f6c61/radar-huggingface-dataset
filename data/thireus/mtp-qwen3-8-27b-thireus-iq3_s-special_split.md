@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ3_S-SPECIAL_SPLIT
+- Repositorio Hugging Face del modelo: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ3_S-SPECIAL_SPLIT
 - Repositorio del modelo base en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Artículo sobre Qwen3.8-27B (specs y requisitos): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen3.8

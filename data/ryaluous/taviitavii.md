@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TaviiTavii es un repositorio de modelo publicado en HuggingFace por el usuario ryaluous bajo el identificador `ryaluous/TaviiTavii`. El repositorio está sujeto a acceso restringido (gated), de modo que es necesario aceptar previamente unas condiciones en la plataforma para poder descargar su contenido. En el momento de la consulta acumulaba 1 "like" y 0 descargas, y no incluía información sobre pipeline, licencia, idiomas soportados ni documentación técnica asociada.
+TaviiTavii es un repositorio de modelo publicado en Hugging Face por el usuario ryaluous bajo el identificador `ryaluous/TaviiTavii`. El repositorio está sujeto a acceso restringido (gated), de modo que es necesario aceptar previamente unas condiciones en la plataforma para poder descargar su contenido. En el momento de la consulta acumulaba 1 "like" y 0 descargas, y no incluía información sobre pipeline, licencia, idiomas soportados ni documentación técnica asociada.
 
 La única información cuantitativa verificable es el tamaño del repositorio (0,2 GB) y las marcas temporales de creación y última actualización, ambas del 13 de septiembre de 2026 y separadas por unos cuatro minutos. Ese intervalo tan corto apunta a una subida inicial sin revisiones posteriores, y la ausencia de ficha de modelo, paper o blog técnico impide determinar qué contiene exactamente el repositorio.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha recoge únicamente los metadatos confirmados y marca e
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,2 GB |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 13 de septiembre de 2026 |
 | Ultima actualizacion | 13 de septiembre de 2026 |
@@ -38,7 +38,7 @@ El unico indicio estructural es el tamano del repositorio, 0,2 GB. A titulo pura
 
 No es posible enumerar capacidades concretas. La informacion disponible no incluye pipeline declarado, model card, ejemplos de uso ni resultados de evaluacion, y el hecho de que el repositorio sea de acceso restringido impide verificar incluso el tipo de tarea para el que fue concebido.
 
-Unicamente puede afirmarse que, al tratarse de un repositorio alojado en HuggingFace, es compatible con el ecosistema de descarga y carga de artefactos de la plataforma, sin que ello implique nada sobre la calidad, el rendimiento o las funciones reales del modelo.
+Unicamente puede afirmarse que, al tratarse de un repositorio alojado en Hugging Face, es compatible con el ecosistema de descarga y carga de artefactos de la plataforma, sin que ello implique nada sobre la calidad, el rendimiento o las funciones reales del modelo.
 
 ## Casos de uso
 
@@ -47,7 +47,7 @@ No se pueden proponer casos de uso concretos sin conocer las capacidades reales 
 - Generacion de texto general: solo si se confirmara que el artefacto es un modelo de lenguaje completo y no un componente auxiliar.
 - Ajuste sobre dominio especifico: unicamente si el repositorio contuviera un adaptador LoRA reutilizable sobre una base conocida.
 - Prototipado en local: viable solo si el tamano real de los pesos permite inferencia en CPU o en GPU de gama baja.
-- Integracion en pipelines de HuggingFace Transformers: condicionada a que el repositorio incluya `config.json` y tokenizador compatibles.
+- Integracion en pipelines de Hugging Face Transformers: condicionada a que el repositorio incluya `config.json` y tokenizador compatibles.
 - Evaluacion comparativa interna: solo si se dispone de la licencia y de los pesos para ejecutar pruebas reproducibles.
 - Uso comercial: descartado mientras no se publique una licencia explicita que lo autorice.
 
@@ -67,7 +67,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, 
 - Opciones de despliegue: no disponibles. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama, TGI, Transformers ni ningun otro runtime.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
-Advertencia adicional: el acceso esta restringido, de modo que cualquier despliegue en produccion requeriria primero superar el proceso de solicitud en HuggingFace y aclarar la situacion de licencia.
+Advertencia adicional: el acceso esta restringido, de modo que cualquier despliegue en produccion requeriria primero superar el proceso de solicitud en Hugging Face y aclarar la situacion de licencia.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 - Ausencia total de model card: no hay informacion sobre arquitectura, entrenamiento, datos utilizados ni evaluacion.
 - Licencia no declarada: sin una licencia explicita no se concede ningun derecho de uso, copia, modificacion ni redistribucion, lo que descarta de facto el uso comercial.
-- Acceso restringido: la descarga requiere aceptar condiciones en HuggingFace, lo que anade una dependencia operativa y puede limitar la reproducibilidad.
+- Acceso restringido: la descarga requiere aceptar condiciones en Hugging Face, lo que anade una dependencia operativa y puede limitar la reproducibilidad.
 - Riesgo de sesgos: no evaluable, al no conocerse el dataset de entrenamiento ni el proceso de alineacion.
 - Riesgo de alucinacion: no evaluable, aunque en ausencia de datos de evaluacion debe asumirse un riesgo alto y no verificado.
 - Idiomas soportados: no disponibles, por lo que no puede garantizarse un comportamiento correcto en castellano ni en ningun otro idioma.
@@ -92,6 +92,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryaluous/TaviiTavii
-- Perfil del autor en HuggingFace: https://huggingface.co/ryaluous
+- Repositorio en Hugging Face: https://huggingface.co/ryaluous/TaviiTavii
+- Perfil del autor en Hugging Face: https://huggingface.co/ryaluous
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo.

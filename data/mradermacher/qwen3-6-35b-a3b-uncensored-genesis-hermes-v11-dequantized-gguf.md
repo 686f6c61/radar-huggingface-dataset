@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-GGUF` es una conversión a formato GGUF de un modelo de lenguaje de 35.505 millones de parámetros con arquitectura de mezcla de expertos (MoE) y 3.000 millones de parámetros activos. Fue creado por el usuario de HuggingFace `mradermacher` a partir del modelo base `symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized`, que a su vez deriva de la familia Qwen 3.6 de Alibaba. El nombre "Genesis" hace referencia a una técnica de restauración de señales aplicada durante el post-entrenamiento, y "Hermes" indica un ajuste fino orientado a conversación y seguimiento de instrucciones.
+El modelo `Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-GGUF` es una conversión a formato GGUF de un modelo de lenguaje de 35.505 millones de parámetros con arquitectura de mezcla de expertos (MoE) y 3.000 millones de parámetros activos. Fue creado por el usuario de Hugging Face `mradermacher` a partir del modelo base `symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized`, que a su vez deriva de la familia Qwen 3.6 de Alibaba. El nombre "Genesis" hace referencia a una técnica de restauración de señales aplicada durante el post-entrenamiento, y "Hermes" indica un ajuste fino orientado a conversación y seguimiento de instrucciones.
 
 Este modelo destaca por su combinación de arquitectura híbrida (atención lineal Gated DeltaNet combinada con atención softmax completa en proporción 3:1), una ventana de contexto de 256.000 tokens y su carácter "uncensored" (sin censura), lo que lo hace relevante para aplicaciones que requieren generación de texto sin restricciones temáticas. La versión GGUF permite su ejecución en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles con este formato. El repositorio ocupa 102,1 GB e incluye múltiples cuantizaciones que van desde Q2_K hasta f16.
 
@@ -79,7 +79,7 @@ La comparativa se basa en los modelos base de la familia Qwen. Esta variante "Un
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-GGUF
 - Modelo base dequantizado: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized
 - Guía completa para ejecutar Qwen3.6-35B Genesis Hermes en 2026: https://cldnavi.com/en/blog/qwen36-35b-genesis-hermes-guide-2026/
 - Guía de Qwen 3.6 (27B dense vs 35B-A3B MoE): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

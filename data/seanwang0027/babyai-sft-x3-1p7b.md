@@ -100,7 +100,7 @@ No se han encontrado en la informacion proporcionada otros modelos de agente esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/babyai-sft-x3-1p7b
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/babyai-sft-x3-1p7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio citado en la model card: cl-from-nothing/online-rose, commit 01aaed5, archivo `babyai/THREE_ARMS.md` (sin URL proporcionada en la informacion disponible)
 - Dataset de tareas citado: split de 810 tareas de entrenamiento de BabyAI en AgentGym-RL (sin URL proporcionada en la informacion disponible)

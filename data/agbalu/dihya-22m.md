@@ -35,7 +35,7 @@ El conjunto de entrenamiento consta de 113.974 frases de entrenamiento y 7.145 d
 - Clasificacion de arabe estandar moderno (ara) y de lenguas mundiales: frances (fra), ingles (eng), espanol (spa) y chino (zho).
 - Manejo nativo de multiples escrituras sin tokenizador subword, gracias a la entrada byte-level.
 - Prediccion conformal: devuelve conjuntos de etiquetas con cobertura calibrada cuando el texto es ambiguo.
-- Tarea de feature extraction (etiqueta `feature-extraction` en HuggingFace) ademas de clasificacion.
+- Tarea de feature extraction (etiqueta `feature-extraction` en Hugging Face) ademas de clasificacion.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible (no es un modelo generativo).
 - Capacidades multilingues: si, 14 codigos de idioma declarados y 22 clases de clasificacion.
@@ -113,7 +113,7 @@ La comparacion se limita a los sistemas evaluados en la model card; no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agbalu/Dihya-22M
+- Modelo en Hugging Face: https://huggingface.co/agbalu/Dihya-22M
 - Paper de referencia sobre identificacion de idioma (arxiv:1906.07413): https://arxiv.org/abs/1906.07413
 - Paper de referencia (arxiv:1911.08731): https://arxiv.org/abs/1911.08731
 - Paper de referencia (arxiv:2506.15304): https://arxiv.org/abs/2506.15304

@@ -87,7 +87,7 @@ No se dispone de datos de otros modelos ablacionados similares para una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/Qwen3.8-27B-MTP-heretic-ja-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/Qwen3.8-27B-MTP-heretic-ja-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.8-27B
 - Proyecto Heretic: https://heretic-project.org
 - Guía de ejecución de Qwen3.8 (Unsloth): https://unsloth.ai/docs/models/qwen3.8

@@ -74,7 +74,7 @@ El estudiante reporta a 3 s medianas de 4,614/4,593 ms, aproximadamente 11,0 vec
 
 | Modelo | Tipo | Tamaño fichero | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|
-| TitaNet-S B3-compatible student (este) | Estudiante CNN destilado, ONNX | 22,3 MB | 0,25-5 s | Apache 2.0 | HuggingFace |
+| TitaNet-S B3-compatible student (este) | Estudiante CNN destilado, ONNX | 22,3 MB | 0,25-5 s | Apache 2.0 | Hugging Face |
 | Original B3 (ReDimNet2-B3) | Modelo de enrollment de referencia | 19,37 MB (export medido) | no disponible | no disponible | Referenciado en la model card |
 | Original TitaNet-S | Backbone CNN preentrenado | 23,84 MB | no disponible | no disponible | Referenciado en la model card |
 | Original B0 | Modelo CNN más pequeño | 5,75 MB | no disponible | no disponible | Referenciado en la model card |
@@ -97,7 +97,7 @@ La comparativa se limita a los modelos medidos en la propia model card; no se di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/notaneimu/titanet-b3-speaker-student-onnx
+- Hugging Face: https://huggingface.co/notaneimu/titanet-b3-speaker-student-onnx
 - Paper referenciado (arXiv:2110.04410): no disponible el enlace directo en la información proporcionada
 - Paper referenciado (arXiv:2603.11841): no disponible el enlace directo en la información proporcionada
 - Repositorio del modelo de enrollment ReDimNet2: https://huggingface.co/PalabraAI/redimnet2 (referenciado en la model card)

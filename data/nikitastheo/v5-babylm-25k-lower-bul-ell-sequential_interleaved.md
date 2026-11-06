@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-babylm-25k-lower-bul-ell-sequential_interleaved` es un modelo de lenguaje causal publicado en HuggingFace por el usuario nikitastheo, con 123.886.080 parametros reales (aproximadamente 124 M) almacenados en safetensors y una arquitectura de tipo GPT-2 segun los tags del repositorio. Se trata de un modelo de escala pequena, entrenado desde cero con el script `train_clm.py` basado en Hugging Face Accelerate, no con el `Trainer` estandar de la libreria Transformers. Su relevancia es exclusivamente de investigacion: encaja en el contexto del reto BabyLM, orientado a estudiar la adquisicion del lenguaje en regimen de datos limitados.
+El modelo `nikitastheo/v5-babylm-25k-lower-bul-ell-sequential_interleaved` es un modelo de lenguaje causal publicado en Hugging Face por el usuario nikitastheo, con 123.886.080 parametros reales (aproximadamente 124 M) almacenados en safetensors y una arquitectura de tipo GPT-2 segun los tags del repositorio. Se trata de un modelo de escala pequena, entrenado desde cero con el script `train_clm.py` basado en Hugging Face Accelerate, no con el `Trainer` estandar de la libreria Transformers. Su relevancia es exclusivamente de investigacion: encaja en el contexto del reto BabyLM, orientado a estudiar la adquisicion del lenguaje en regimen de datos limitados.
 
 El nombre del repositorio indica tres decisiones de diseno concretas: un tokenizador propio de 25.000 entradas (`nikitastheo/babylm-25k-bul-lower-tokenizer`), texto normalizado a minusculas y una combinacion de idiomas que, por los codigos ISO 639-2/3 presentes en el nombre, corresponde a bulgaro (`bul`) y griego (`ell`). El sufijo `sequential_interleaved` apunta a un regimen de entrenamiento multilingue con alguna forma de alternancia o curriculum entre idiomas, coherente con el hiperparametro documentado `language switch epoch: 10`.
 
@@ -89,7 +89,7 @@ La comparacion con GPT-2 small y DistilGPT-2 es puramente estructural: coinciden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-bul-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-bul-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-25k-bul-lower-tokenizer
 - Paper, blog o repositorio del autor: no disponibles en la informacion proporcionada.
 - Resultados de benchmarks o demos: no disponibles en la informacion proporcionada.

@@ -25,7 +25,7 @@ Es relevante porque es un componente instrumental publicado junto al articulo "S
 | Tamano de entrada | 640 px |
 | Modelo base | Ultralytics/YOLOv8 (yolov8n.pt), Ultralytics 8.3.153 |
 | Libreria | ultralytics |
-| Tamano del repositorio | 0.0 GB segun HuggingFace |
+| Tamano del repositorio | 0.0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Tarea | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stefan-hf/yolov8n-rvlcdip-idcodes | Deteccion de ID codes (1 clase) | no disponible (variante nano) | 640 px | AGPL-3.0 | HuggingFace; 0 descargas y 0 likes |
+| stefan-hf/yolov8n-rvlcdip-idcodes | Deteccion de ID codes (1 clase) | no disponible (variante nano) | 640 px | AGPL-3.0 | Hugging Face; 0 descargas y 0 likes |
 | Ultralytics YOLOv8n (modelo base) | Deteccion generica (COCO, 80 clases) | no disponible en la informacion proporcionada | 640 px | AGPL-3.0 | Modelo base del que deriva este afinado |
 | Otros detectores especificos de ID codes | Deteccion de identificadores Bates | no disponible | no disponible | no disponible | No se han identificado alternativas publicas en la informacion disponible |
 
@@ -95,11 +95,11 @@ No se dispone de datos de benchmark comparativos entre este modelo y alternativa
 - Sin validacion de la comunidad: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia externa de reproducibilidad mas alla de las metricas del autor.
 - Sesgos conocidos: no se documentan analisis de sesgo por tipo de documento, epoca, idioma o calidad de escaneo.
 - El modelo opera exclusivamente sobre pixeles: no realiza OCR, por lo que la eliminacion del codigo en la capa de texto requiere un paso adicional de proyeccion de coordenadas.
-- La fecha de creacion del repositorio indicada por HuggingFace (2026-09-25) es posterior a la fecha de publicacion del articulo citado (agosto de 2025); no se dispone de explicacion en la informacion proporcionada.
+- La fecha de creacion del repositorio indicada por Hugging Face (2026-09-25) es posterior a la fecha de publicacion del articulo citado (agosto de 2025); no se dispone de explicacion en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefan-hf/yolov8n-rvlcdip-idcodes
+- Modelo en Hugging Face: https://huggingface.co/stefan-hf/yolov8n-rvlcdip-idcodes
 - Imagen de ejemplo (deteccion y enmascarado): https://huggingface.co/stefan-hf/yolov8n-rvlcdip-idcodes/resolve/main/example.png
 - Grafica de resultados de entrenamiento: https://huggingface.co/stefan-hf/yolov8n-rvlcdip-idcodes/resolve/main/results.png
 - Articulo citado (DocEng '25): https://doi.org/10.1145/3704268.3748683

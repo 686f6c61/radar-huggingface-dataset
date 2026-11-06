@@ -82,6 +82,6 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yujackein/onereason-8b-lora-r3replay-step20-step25-interp075-kvo-r32a32
+- Hugging Face: https://huggingface.co/yujackein/onereason-8b-lora-r3replay-step20-step25-interp075-kvo-r32a32
 - Technical report (arXiv): https://arxiv.org/html/2606.06260v1
 - Otros adaptadores del autor: https://huggingface.co/yujackein/onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32-step323

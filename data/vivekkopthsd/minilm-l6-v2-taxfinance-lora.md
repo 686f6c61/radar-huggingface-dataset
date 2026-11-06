@@ -73,9 +73,9 @@ El ajuste fino produce una mejora relativa del +32 % en nDCG@10 sobre el modelo 
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vivekkopthsd/minilm-l6-v2-taxfinance-lora` | 22,7M | 256 tokens | Fiscal/financiero (EN) | Apache-2.0 | HuggingFace |
-| `sentence-transformers/all-MiniLM-L6-v2` (base) | 22,7M | 256 tokens | General (EN) | Apache-2.0 | HuggingFace |
-| `sentence-transformers/all-MiniLM-L12-v2` | 33,4M | 256 tokens | General (EN) | Apache-2.0 | HuggingFace |
+| `vivekkopthsd/minilm-l6-v2-taxfinance-lora` | 22,7M | 256 tokens | Fiscal/financiero (EN) | Apache-2.0 | Hugging Face |
+| `sentence-transformers/all-MiniLM-L6-v2` (base) | 22,7M | 256 tokens | General (EN) | Apache-2.0 | Hugging Face |
+| `sentence-transformers/all-MiniLM-L12-v2` | 33,4M | 256 tokens | General (EN) | Apache-2.0 | Hugging Face |
 
 La comparación directa con el modelo base muestra una mejora sustancial en recuperación fiscal (nDCG@10 de 0.592 frente a 0.447). No se dispone de datos comparativos con otros modelos de embedding especializados en finanzas o derecho.
 
@@ -90,7 +90,7 @@ La comparación directa con el modelo base muestra una mejora sustancial en recu
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/vivekkopthsd/minilm-l6-v2-taxfinance-lora)
+- [Modelo en Hugging Face](https://huggingface.co/vivekkopthsd/minilm-l6-v2-taxfinance-lora)
 - [Modelo base all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 - [Dataset indian-income-tax-qa](https://huggingface.co/datasets/ligaments-dev/indian-income-tax-qa)
 - [Dataset AIR-Bench/qa_finance_en](https://huggingface.co/datasets/AIR-Bench/qa_finance_en)

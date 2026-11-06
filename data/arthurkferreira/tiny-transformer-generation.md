@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Generation es un repositorio experimental publicado por ArthurKferreira en HuggingFace que contiene una implementación propia en PyTorch de un transformer de escala "nano", orientada a la generación de texto. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de referencia para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+Tiny Transformer for Generation es un repositorio experimental publicado por ArthurKferreira en Hugging Face que contiene una implementación propia en PyTorch de un transformer de escala "nano", orientada a la generación de texto. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de referencia para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El modelo cuenta con 49.600 parámetros totales, lo que lo sitúa en un rango extremadamente reducido, muy por debajo de cualquier LLM utilizable en tareas reales. La model card es explícita al respecto: no se reclama ninguna puntuación de benchmark y se advierte de que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiny Transformer for Generation (ArthurKferreira) | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace |
+| Tiny Transformer for Generation (ArthurKferreira) | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -79,4 +79,4 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthurKferreira/tiny-transformer-generation
+- Hugging Face: https://huggingface.co/ArthurKferreira/tiny-transformer-generation

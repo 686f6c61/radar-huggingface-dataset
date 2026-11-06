@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DylanHdh/hybrid-classification-test` es un prototipo de investigación publicado por el usuario DylanHdh (Dylan Hill) en HuggingFace, orientado a tareas de clasificación. No es un modelo de lenguaje generativo ni un modelo preentrenado listo para producción: se trata de una implementación propia de una arquitectura etiquetada como "hybrid" (híbrida), con atención estándar, fusión bilineal, activación mish y normalización por lotes (batchnorm), en una escala que el propio autor describe como "tiny".
+`DylanHdh/hybrid-classification-test` es un prototipo de investigación publicado por el usuario DylanHdh (Dylan Hill) en Hugging Face, orientado a tareas de clasificación. No es un modelo de lenguaje generativo ni un modelo preentrenado listo para producción: se trata de una implementación propia de una arquitectura etiquetada como "hybrid" (híbrida), con atención estándar, fusión bilineal, activación mish y normalización por lotes (batchnorm), en una escala que el propio autor describe como "tiny".
 
 El dato más relevante es su tamaño: 33 088 parámetros totales según el fichero `model.safetensors`, es decir, un modelo minúsculo, varios órdenes de magnitud por debajo de cualquier transformer de clasificación habitual. El repositorio incluye `inference.py` como artefacto principal, junto con `config.json`, `training_args.json` y el checkpoint de pesos. El autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), y no un checkpoint entrenado ni evaluado.
 
@@ -74,9 +74,9 @@ La información proporcionada no incluye métricas comparativas, por lo que cual
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DylanHdh/hybrid-classification-test | 33 088 | no disponible | no disponible (sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
-| Alternativas de clasificación en escala "tiny" (p. ej. variantes tipo bert-tiny) | ~4-5 millones | 512 tokens típicamente | no disponible en esta comparativa | Apache-2.0 en la mayoría | HuggingFace |
-| Alternativas destiladas (p. ej. distilbert-base) | ~66 millones | 512 tokens típicamente | no disponible en esta comparativa | Apache-2.0 en la mayoría | HuggingFace |
+| DylanHdh/hybrid-classification-test | 33 088 | no disponible | no disponible (sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
+| Alternativas de clasificación en escala "tiny" (p. ej. variantes tipo bert-tiny) | ~4-5 millones | 512 tokens típicamente | no disponible en esta comparativa | Apache-2.0 en la mayoría | Hugging Face |
+| Alternativas destiladas (p. ej. distilbert-base) | ~66 millones | 512 tokens típicamente | no disponible en esta comparativa | Apache-2.0 en la mayoría | Hugging Face |
 
 Nota: no se dispone de datos verificados que permitan afirmar equivalencia funcional o de rendimiento entre este prototipo y las alternativas citadas. La comparación se limita a órdenes de magnitud de tamaño.
 
@@ -94,7 +94,7 @@ Nota: no se dispone de datos verificados que permitan afirmar equivalencia funci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DylanHdh/hybrid-classification-test
+- Modelo en Hugging Face: https://huggingface.co/DylanHdh/hybrid-classification-test
 - Perfil del autor: https://huggingface.co/DylanHdh
 - Ficheros del repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la página del modelo)
 - Referencia temática sobre enfoques híbridos de clasificación: https://www.emergentmind.com/topics/hybrid-classification-approaches

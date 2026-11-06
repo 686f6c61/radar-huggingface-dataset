@@ -76,7 +76,7 @@ La model card indica que Sarvam-1 fue elegido frente a Qwen3-1.7B por su mejor t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/santosh07401/krishi-sathi-sarvam-2b
+- Modelo en Hugging Face: https://huggingface.co/santosh07401/krishi-sathi-sarvam-2b
 - Modelo base Sarvam-1: https://huggingface.co/sarvamai/sarvam-1
 - Licencia Sarvam AI Research: https://huggingface.co/sarvamai/sarvam-1/blob/main/LICENSE.md
 - Checkpoint temprano Sarvam-1 v0.5: https://huggingface.co/sarvamai/sarvam-1-v0.5

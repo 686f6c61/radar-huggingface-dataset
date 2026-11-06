@@ -90,7 +90,7 @@ El modelo evaluado no es directamente comparable con los anteriores: es un adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-ec2-ttomd-K2-jk
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-ec2-ttomd-K2-jk
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Repositorio de origen citado en la model card: `rat-lab/rlj-ec2-fig9-K2-jk` (referencia textual; no se ha verificado su URL)
 - Dataset de entrenamiento: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF

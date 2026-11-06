@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-put-lemon-plate-20261030` es un ajuste fino (fine-tune) de un modelo de vision-lenguaje-accion (VLA) denominado π0.5 SNUMPR, desarrollado por el autor de HuggingFace Donghyun1228. Se trata de un artefacto de investigacion orientado a robotica, concretamente a la tarea manipulativa `put_lemon_plate` (colocar un limon en un plato), entrenado sobre demostraciones reales recogidas el 30 de octubre de 2026 con una vista amplia y una rotacion virtual de la base del robot de +30 grados en el eje yaw.
+El modelo `pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-put-lemon-plate-20261030` es un ajuste fino (fine-tune) de un modelo de vision-lenguaje-accion (VLA) denominado π0.5 SNUMPR, desarrollado por el autor de Hugging Face Donghyun1228. Se trata de un artefacto de investigacion orientado a robotica, concretamente a la tarea manipulativa `put_lemon_plate` (colocar un limon en un plato), entrenado sobre demostraciones reales recogidas el 30 de octubre de 2026 con una vista amplia y una rotacion virtual de la base del robot de +30 grados en el eje yaw.
 
 El modelo parte de un checkpoint inicial de SNUMPR VLA (`snumpr-iclr27-v1/9999`) y aplica un entrenamiento de imitacion (imitation learning, IL) de 1.000 actualizaciones con batch 64 y tasa de aprendizaje constante de 5e-5. La innovacion metodologica principal es el uso de una receta DART (Domain Adaptation via Rotation Transform) en la que las poses del TCP y las acciones delta se rotan virtualmente +30 grados, mientras que el estado de observacion (`observation.state`) conserva los angulos articulares reales. Esto permite aumentar la diversidad efectiva de los datos sin alterar la fisica del robot.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-snumpr-...-put-lemon-plate (este) | no disponible | no disponible | `put_lemon_plate` (fine-tune) | Apache 2.0 | HuggingFace, 0 descargas |
-| `Donghyun1228/pi05-snumpr-...-alpha0p8-put-lemon-plate-20261030` | no disponible | no disponible | Fusion de dos fine-tunes paired | Apache 2.0 | HuggingFace |
+| pi05-snumpr-...-put-lemon-plate (este) | no disponible | no disponible | `put_lemon_plate` (fine-tune) | Apache 2.0 | Hugging Face, 0 descargas |
+| `Donghyun1228/pi05-snumpr-...-alpha0p8-put-lemon-plate-20261030` | no disponible | no disponible | Fusion de dos fine-tunes paired | Apache 2.0 | Hugging Face |
 | `snumpr-iclr27-v1/9999` (SNUMPR VLA base) | no disponible | no disponible | VLA general | no disponible | Checkpoint de referencia citado |
 | π0.5 / openpi (familia base) | no disponible | no disponible | VLA general | no disponible | openpi |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-put-lemon-plate-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-put-lemon-plate-20261030
 - Modelo fusionado paired: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-put-lemon-plate-20261030
 - Codigo de adaptacion: `Donghyun1228/vla_adaptation` (commit `c4fcb61`)
 - Receta oficial DART: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`)

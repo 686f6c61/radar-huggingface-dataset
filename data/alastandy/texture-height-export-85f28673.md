@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo alastandy/texture-height-export-85f28673 es un artefacto publicado en HuggingFace por el usuario alastandy, etiquetado con los tags safetensors, texture-studio-material y material-maps. Por su nomenclatura y sus etiquetas, parece tratarse de un componente orientado a la generacion o exportacion de mapas de textura y height maps para materiales, presumiblemente integrado en un flujo de trabajo de "Texture Studio". No se dispone de documentacion adicional, model card explicativa ni pipeline declarado en la informacion proporcionada.
+El modelo alastandy/texture-height-export-85f28673 es un artefacto publicado en Hugging Face por el usuario alastandy, etiquetado con los tags safetensors, texture-studio-material y material-maps. Por su nomenclatura y sus etiquetas, parece tratarse de un componente orientado a la generacion o exportacion de mapas de textura y height maps para materiales, presumiblemente integrado en un flujo de trabajo de "Texture Studio". No se dispone de documentacion adicional, model card explicativa ni pipeline declarado en la informacion proporcionada.
 
 El dato mas relevante y verificable es su tamano: el fichero safetensors declara 999.361 parametros totales, lo que lo situa en la categoria de redes muy pequenas (menos de un millon de parametros). El repositorio ocupa 0,0 GB y no registra descargas ni "likes" en el momento de la consulta, lo que sugiere un artefacto experimental, de uso personal o recien publicado sin difusion.
 
-Se trata de un modelo con acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es GPL-3.0, lo que condiciona su uso en productos propietarios. No se ha encontrado informacion publica adicional en la busqueda web realizada, cuyos resultados no guardan relacion con el modelo.
+Se trata de un modelo con acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es GPL-3.0, lo que condiciona su uso en productos propietarios. No se ha encontrado informacion publica adicional en la busqueda web realizada, cuyos resultados no guardan relacion con el modelo.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Se trata de un modelo con acceso restringido (gated): requiere aceptar condicion
 
 No se dispone de informacion sobre la arquitectura interna del modelo. Los tags (texture-studio-material, material-maps) apuntan a un proposito especifico de tratamiento de texturas y mapas de material, pero no permiten deducir si se trata de una red convolucional, un perceptron multicapa, un pequeno transformer o un modelo de difusion reducido. Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o fine-tuning supervisado.
 
-El unico dato estructural cierto es el recuento de parametros (999.361) extraido del fichero safetensors, y la ausencia de un pipeline declarado en la ficha de HuggingFace. No hay informacion sobre innovaciones tecnicas, mecanismos de atencion, decodificacion especulativa ni estrategias de entrenamiento.
+El unico dato estructural cierto es el recuento de parametros (999.361) extraido del fichero safetensors, y la ausencia de un pipeline declarado en la ficha de Hugging Face. No hay informacion sobre innovaciones tecnicas, mecanismos de atencion, decodificacion especulativa ni estrategias de entrenamiento.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (999
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alastandy/texture-height-export-85f28673 | 999.361 | no disponible | GPL-3.0 | gated en HuggingFace | Sin documentacion publica |
+| alastandy/texture-height-export-85f28673 | 999.361 | no disponible | GPL-3.0 | gated en Hugging Face | Sin documentacion publica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se han identificado modelos equivalentes verificables en la informacion proporcionada |
 
 No se dispone de datos suficientes para establecer una comparativa fiable con otros modelos de generacion de mapas de material o de redes compactas, ya que no se ha confirmado la tarea concreta ni el formato de entrada y salida del modelo.
@@ -77,7 +77,7 @@ No se dispone de datos suficientes para establecer una comparativa fiable con ot
 ## Limitaciones y advertencias
 
 - Ausencia total de model card, documentacion tecnica y ejemplos de uso: no es posible evaluar el modelo con criterios de produccion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion y posible trazabilidad del uso.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion y posible trazabilidad del uso.
 - Licencia GPL-3.0: cualquier integracion en software propietario obliga a liberar el codigo derivado bajo la misma licencia, lo que puede ser incompatible con productos comerciales cerrados.
 - Riesgo de alucinacion: no evaluable, dado que no se ha confirmado que el modelo genere texto; no se dispone de datos de fiabilidad.
 - Sesgos conocidos: no disponible.
@@ -89,5 +89,5 @@ No se dispone de datos suficientes para establecer una comparativa fiable con ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alastandy/texture-height-export-85f28673
+- Hugging Face: https://huggingface.co/alastandy/texture-height-export-85f28673
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los resultados devueltos (break.com y una pagina de venta de dominios) no guardan relacion con el modelo.

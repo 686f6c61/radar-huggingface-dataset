@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/AETHORIA-AI/TR-HASH-Vision-v6-3M-Objects365
+- Repositorio de Hugging Face: https://huggingface.co/AETHORIA-AI/TR-HASH-Vision-v6-3M-Objects365
 - Ultralytics YOLO26 (modelo base): https://github.com/ultralytics/ultralytics (documentacion oficial)
 - Conjunto de datos Objects365: https://www.objects365.org/ (sitio oficial)

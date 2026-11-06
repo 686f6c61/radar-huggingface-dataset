@@ -78,7 +78,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h073.rft_v1.step_72
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h073.rft_v1.step_72
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no verificado)
 - Kimi K3 (modelo de la familia Kimi, no directamente relacionado): https://huggingface.co/moonshotai/Kimi-K3
 - Página oficial de Kimi: https://www.kimi.com/en

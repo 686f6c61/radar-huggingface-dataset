@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea-C es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario CH522 bajo el identificador `CH522/Krea-C`. Se distribuye como un adaptador para el modelo base `krea/Krea-2-Turbo`, dentro del ecosistema `diffusers` y con la plantilla `template:diffusion-lora` de HuggingFace. El repositorio ocupa 0,5 GB y la licencia declarada es Apache-2.0.
+Krea-C es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario CH522 bajo el identificador `CH522/Krea-C`. Se distribuye como un adaptador para el modelo base `krea/Krea-2-Turbo`, dentro del ecosistema `diffusers` y con la plantilla `template:diffusion-lora` de Hugging Face. El repositorio ocupa 0,5 GB y la licencia declarada es Apache-2.0.
 
 Se trata, por tanto, de un ajuste ligero (LoRA) sobre un modelo de difusion de generacion de imagenes, no de un modelo de lenguaje: no procesa turnos de conversacion, no tiene ventana de contexto en tokens ni soporta tool calling. La model card publicada es practicamente vacia: no incluye `instance_prompt`, no describe el dataset de entrenamiento, no indica el rango del adaptador ni el numero de pasos, y la galeria de ejemplos esta sin rellenar.
 
@@ -19,7 +19,7 @@ Su relevancia actual es limitada y debe abordarse con cautela: acumula 0 descarg
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no se documenta; los prompts de los modelos de difusion de esta familia suelen formularse en ingles, sin confirmacion en este repositorio) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | diffusers (adaptador LoRA dentro de un repositorio de HuggingFace, cargable con la libreria `diffusers`) |
+| Formato de pesos | diffusers (adaptador LoRA dentro de un repositorio de Hugging Face, cargable con la libreria `diffusers`) |
 
 ## Arquitectura y entrenamiento
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El adaptador LoRA en si anade una sobrecarga reducida: el repositorio ocupa 0,5 GB, de modo que la memoria adicional respecto al modelo base es de ese orden o inferior.
 - GPU recomendadas: no disponible, al depender del modelo base.
 - Compatibilidad con GPU de consumo: no disponible por el mismo motivo; si el modelo base cabe en una GPU de gama alta de consumo, el adaptador no deberia cambiar ese limite de forma significativa.
-- Opciones de despliegue: carga mediante la libreria `diffusers` de HuggingFace; el formato LoRA de `diffusers` tambien es habitual en interfaces de generacion de imagen como ComfyUI o Automatic1111/Forge, aunque no se confirma compatibilidad en la documentacion del repositorio.
+- Opciones de despliegue: carga mediante la libreria `diffusers` de Hugging Face; el formato LoRA de `diffusers` tambien es habitual en interfaces de generacion de imagen como ComfyUI o Automatic1111/Forge, aunque no se confirma compatibilidad en la documentacion del repositorio.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas ni parametros (resolucion, pasos de muestreo, scheduler) declarados.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de informacion sobre adaptadores LoRA comparables ni de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CH522/Krea-C
+- Modelo en Hugging Face: https://huggingface.co/CH522/Krea-C
 - Pestana de ficheros y versiones: https://huggingface.co/CH522/Krea-C/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a paginas corporativas del operador Orange, sin ninguna relacion con Krea-C ni con `krea/Krea-2-Turbo`.

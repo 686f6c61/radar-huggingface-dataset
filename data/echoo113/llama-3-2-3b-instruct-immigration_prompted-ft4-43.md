@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks para este modelo específico en la 
 - **VRAM estimada**: para un modelo de 3B parámetros en precisión FP16, se requieren aproximadamente 6-8 GB de VRAM. Con cuantización de 4 bits (GPTQ/AWQ), puede reducirse a unos 2-3 GB, aunque no se ha confirmado el formato.
 - **GPU recomendadas**: tarjetas de consumo como RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o RTX 4090 (24 GB) pueden ejecutarlo cómodamente. Para inferencia más rápida, una A100 o H100 sería ideal.
 - **Compatibilidad con GPU de consumo**: sí, cabe en la mayoría de GPU modernas con al menos 8 GB de VRAM si se aplica cuantización.
-- **Opciones de despliegue**: al estar en formato safetensors, se puede usar con transformers, vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con la API de HuggingFace Inference Endpoints.
+- **Opciones de despliegue**: al estar en formato safetensors, se puede usar con transformers, vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con la API de Hugging Face Inference Endpoints.
 - **Latencia y throughput**: no se han publicado datos concretos. En una RTX 4090, un modelo 3B puede generar decenas de tokens por segundo en inferencia batch, pero no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de información comparativa para este modelo específico. Sin emba
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_prompted-ft4.43)
+- [Modelo en Hugging Face](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_prompted-ft4.43)
 - [Modelo base: meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 - [Repositorio GitHub relacionado: usa-immigration](https://github.com/nshportun/usa-immigration)
 - [Documentación de Ollama para llama3.2:3b](https://ollama.com/library/llama3.2:3b)

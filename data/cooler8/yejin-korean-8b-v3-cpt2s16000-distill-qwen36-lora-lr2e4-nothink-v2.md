@@ -86,7 +86,7 @@ La comparacion con otras familias coreanas de tamano similar (por ejemplo, varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s16000-distill-qwen36-lora-lr2e4-nothink-v2
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s16000-distill-qwen36-lora-lr2e4-nothink-v2
 - Modelo base: https://huggingface.co/cooler8/yejin-korean-8b-v3-base
 - Modelo profesor (Qwen3.6-27B): no se proporciona enlace directo en la informacion disponible; referencia como Qwen/Qwen3.6-27B (Apache-2.0)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

@@ -98,7 +98,7 @@ Notas: la comparación de fuerza entre 8Chess y Stockfish 19 publicada por el eq
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/EightChess-Team/eightchess-networks
+- Repositorio del modelo en Hugging Face: https://huggingface.co/EightChess-Team/eightchess-networks
 - Repositorio del motor 8Chess en GitHub: https://github.com/EightChess-Team/8chess
 
 No se han encontrado enlaces adicionales a papers, blogs o demos en la información disponible.

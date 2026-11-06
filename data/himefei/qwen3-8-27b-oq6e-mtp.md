@@ -58,5 +58,5 @@ No se dispone de información sobre modelos comparables. Dado que no se conoce e
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/himefei/Qwen3.8-27B-oQ6e-mtp)
+- [Repositorio Hugging Face](https://huggingface.co/himefei/Qwen3.8-27B-oQ6e-mtp)
 - [Herramienta oQ (oMLX)](https://github.com/jundot/omlx)

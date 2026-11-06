@@ -89,7 +89,7 @@ La comparativa directa con el modelo base bf16 muestra una compresión de 3,65x 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-W4A16
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-W4A16
 - Hermano podado (Prune3): https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-Prune3-W4A16
 - Hermano NVFP4: https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct

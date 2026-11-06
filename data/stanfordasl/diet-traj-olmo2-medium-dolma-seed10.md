@@ -25,7 +25,7 @@ Detalles adicionales de la arquitectura: hidden_size=768, intermediate_size=3072
 
 El modelo emplea la arquitectura OLMo2 en su variante densa (medium): un transformer decoder con hidden_size de 768, 16 capas, dimension intermedia de 3072 en el MLP y atencion multi-cabeza estandar (12 cabezas de consulta y 12 de clave/valor, sin agrupacion GQA). La ventana de contexto es de 2.048 posiciones.
 
-El entrenamiento es un preentrenamiento puro de modelado de lenguaje con perdida de entropia cruzada (CE/LM), sin destilacion (`teacher_schedule=none`). Los datos proceden de `emozilla/dolma-v1_7-3B`, un espejo en HuggingFace del dataset Dolma v1.7 muestreado proporcionalmente entre sus componentes de mezcla, transmitido en streaming durante el entrenamiento. La receta utiliza el optimizador AdamW con learning rate 3e-5, betas (0.9, 0.95), weight decay 0.1, schedule coseno y precision bf16. La run se ejecuto en una GPU H100 (cluster "makau") con un presupuesto de 2.000 millones de tokens, maximo de 30.517 pasos y checkpoints cada 950 pasos. No hay indicios de RLHF ni DPO: es un modelo base preentrenado sin ajuste por preferencias.
+El entrenamiento es un preentrenamiento puro de modelado de lenguaje con perdida de entropia cruzada (CE/LM), sin destilacion (`teacher_schedule=none`). Los datos proceden de `emozilla/dolma-v1_7-3B`, un espejo en Hugging Face del dataset Dolma v1.7 muestreado proporcionalmente entre sus componentes de mezcla, transmitido en streaming durante el entrenamiento. La receta utiliza el optimizador AdamW con learning rate 3e-5, betas (0.9, 0.95), weight decay 0.1, schedule coseno y precision bf16. La run se ejecuto en una GPU H100 (cluster "makau") con un presupuesto de 2.000 millones de tokens, maximo de 30.517 pasos y checkpoints cada 950 pasos. No hay indicios de RLHF ni DPO: es un modelo base preentrenado sin ajuste por preferencias.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con ~305M de parametros en bf16, el modelo ocupa unos 0,6 GB de pesos; cualquier GPU moderna de consumo (incluso 6-8 GB de VRAM) lo ejecuta con holgura. En CPU tambien es viable dada su escala.
 - GPU recomendadas: para inferencia, cualquier GPU de consumo (RTX 3060, RTX 4090, etc.). Para reproducir el entrenamiento, la run original se ejecuto en una H100.
 - Cabe sin problemas en GPUs de consumo; no requiere hardware de datacenter para uso como modelo.
-- Despliegue: al usar la libreria `transformers` con pesos safetensors compatibles con `endpoints_compatible`, puede cargarse directamente con HuggingFace Transformers. No hay menciones a soporte verificado en vLLM, llama.cpp, Ollama o TGI (no disponible).
+- Despliegue: al usar la libreria `transformers` con pesos safetensors compatibles con `endpoints_compatible`, puede cargarse directamente con Hugging Face Transformers. No hay menciones a soporte verificado en vLLM, llama.cpp, Ollama o TGI (no disponible).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed10
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed10
 - Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Codigo del proyecto (referenciado en la model card): repositorio `jjalora/diet-lm` (enlace externo no disponible en la informacion proporcionada)
 - Coleccion analogica referenciada: `jjalora/diet-traj-pythia-410m-*` (enlaces concretos no disponibles en la informacion proporcionada)

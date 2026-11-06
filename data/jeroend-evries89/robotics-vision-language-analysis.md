@@ -88,7 +88,7 @@ No disponible. La categoria real de este repositorio es la de nota de investigac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeroend-evries89/robotics-vision-language-analysis
+- Hugging Face: https://huggingface.co/Jeroend-evries89/robotics-vision-language-analysis
 - Fichero principal de la nota: `reading.md` dentro del repositorio
 - Documentation del repositorio: `README.md` dentro del repositorio
 - Papers, blogs, repositorios de codigo y demos: no disponible

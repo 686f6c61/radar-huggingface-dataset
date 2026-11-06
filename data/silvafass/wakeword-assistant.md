@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio silvafass/wakeword-assistant es una publicacion alojada en HuggingFace por el usuario silvafass. La unica informacion verificable que acompana al repositorio es su licencia (Apache 2.0) y la etiqueta de formato onnx, ademas de la region declarada (us). El nombre del repositorio sugiere, por convencion de nomenclatura, un componente relacionado con la deteccion de palabras de activacion (wake word) y asistentes de voz, pero esta interpretacion no esta confirmada por ninguna documentacion del autor.
+El repositorio silvafass/wakeword-assistant es una publicacion alojada en Hugging Face por el usuario silvafass. La unica informacion verificable que acompana al repositorio es su licencia (Apache 2.0) y la etiqueta de formato onnx, ademas de la region declarada (us). El nombre del repositorio sugiere, por convencion de nomenclatura, un componente relacionado con la deteccion de palabras de activacion (wake word) y asistentes de voz, pero esta interpretacion no esta confirmada por ninguna documentacion del autor.
 
 El propio autor no ha publicado model card: el README se limita a la linea de metadatos de licencia. No hay pipeline declarado, no hay idiomas declarados, no hay descripcion de arquitectura, tamano de parametros ni longitud de contexto. El tamano del repositorio figura como 0,0 GB y las metricas de uso son cero descargas y cero likes en la fecha de los metadatos.
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar alternativas comparables porque se desc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/silvafass/wakeword-assistant
+- Hugging Face: https://huggingface.co/silvafass/wakeword-assistant
 - Model card: no disponible (el README solo contiene la linea de licencia)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

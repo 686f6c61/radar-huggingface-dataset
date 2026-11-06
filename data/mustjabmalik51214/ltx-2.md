@@ -6,7 +6,7 @@ LTX-2.3 es un modelo fundacional de generacion de audio y video desarrollado por
 
 El modelo resuelve la generacion conjunta de audio y video, cubriendo tareas de texto a video, imagen a video, video a video, audio a video, texto a audio, video a audio y combinaciones multimodales (texto+imagen a audio+video). Frente a la version LTX-2 original, LTX-2.3 incorpora mejoras en calidad de audio y visual, ademas de un mayor cumplimiento de las instrucciones del prompt. Es relevante porque ofrece una alternativa de pesos abiertos a los sistemas propietarios de generacion de video con audio sincronizado, con un ecosistema de herramientas de entrenamiento (LoRA e IC-LoRA) y despliegue local.
 
-La ficha que se presenta corresponde al repositorio de HuggingFace `mustjabmalik51214/LTX-2`, que actua como espejo no oficial del modelo de Lightricks. El repositorio oficial de referencia es `Lightricks/LTX-2`. El tamano del repositorio es de 156,0 GB y esta etiquetado con la biblioteca Diffusers y licencia ltx-2-community-license-agreement.
+La ficha que se presenta corresponde al repositorio de Hugging Face `mustjabmalik51214/LTX-2`, que actua como espejo no oficial del modelo de Lightricks. El repositorio oficial de referencia es `Lightricks/LTX-2`. El tamano del repositorio es de 156,0 GB y esta etiquetado con la biblioteca Diffusers y licencia ltx-2-community-license-agreement.
 
 ## Especificaciones tecnicas
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Audio integrado | Pesos abiertos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.3 (22b-dev) | 22.000 millones | Si (audio y video sincronizados) | Si | ltx-2-community-license-agreement | HuggingFace oficial y espejo (repositorio analizado) |
+| LTX-2.3 (22b-dev) | 22.000 millones | Si (audio y video sincronizados) | Si | ltx-2-community-license-agreement | Hugging Face oficial y espejo (repositorio analizado) |
 | LTX-2.3 (22b-distilled) | 22.000 millones (destilado, 8 pasos, CFG=1) | Si | Si | ltx-2-community-license-agreement | Incluido en la family LTX-2.3 |
-| LTX-2 (version anterior) | No disponible en la informacion | Si | Si | No disponible en la informacion | HuggingFace (Lightricks/LTX-2) |
+| LTX-2 (version anterior) | No disponible en la informacion | Si | Si | No disponible en la informacion | Hugging Face (Lightricks/LTX-2) |
 | Otros modelos de video con audio (Wan, HunyuanVideo, etc.) | No disponible en la informacion | No verificado | Parcialmente | No disponible en la informacion | No disponible en la informacion |
 
 Los datos de modelos alternativos no se detallan en la informacion proporcionada. No se dispone de cifras comparativas verificadas de parametros, contexto o rendimiento frente a otras familias.
@@ -88,8 +88,8 @@ Los datos de modelos alternativos no se detallan en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo analizado): https://huggingface.co/mustjabmalik51214/LTX-2
-- Repositorio oficial de Lightricks en HuggingFace: https://huggingface.co/Lightricks/LTX-2
+- Repositorio en Hugging Face (espejo analizado): https://huggingface.co/mustjabmalik51214/LTX-2
+- Repositorio oficial de Lightricks en Hugging Face: https://huggingface.co/Lightricks/LTX-2
 - Paper: https://huggingface.co/papers/2601.03233
 - Repositorio de codigo: https://github.com/Lightricks/LTX-2
 - Guia de entrenamiento (ltx-trainer): https://github.com/Lightricks/LTX-2/blob/main/packages/ltx-trainer/README.md

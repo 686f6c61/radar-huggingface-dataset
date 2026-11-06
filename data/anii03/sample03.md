@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anii03/sample03` es un artefacto publicado en HuggingFace por el usuario `anii03` bajo licencia MIT. La model card asociada contiene únicamente el texto "ani edits", sin ninguna especificación técnica adicional. No se dispone de información sobre arquitectura, tamaño, parámetros, dominio de aplicación o capacidades. El repositorio no registra descargas ni interacciones de la comunidad, y no se ha publicado documentación complementaria en otras fuentes. Dada la ausencia total de datos técnicos, este modelo no puede ser evaluado ni recomendado para ningún caso de uso concreto. Su existencia es real en el registro de HuggingFace, pero carece de cualquier detalle que permita caracterizarlo.
+El modelo `anii03/sample03` es un artefacto publicado en Hugging Face por el usuario `anii03` bajo licencia MIT. La model card asociada contiene únicamente el texto "ani edits", sin ninguna especificación técnica adicional. No se dispone de información sobre arquitectura, tamaño, parámetros, dominio de aplicación o capacidades. El repositorio no registra descargas ni interacciones de la comunidad, y no se ha publicado documentación complementaria en otras fuentes. Dada la ausencia total de datos técnicos, este modelo no puede ser evaluado ni recomendado para ningún caso de uso concreto. Su existencia es real en el registro de Hugging Face, pero carece de cualquier detalle que permita caracterizarlo.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No se puede establecer una comparativa con modelos similares, ya que se desconoc
 
 ## Enlaces
 
-- [HuggingFace: anii03/sample03](https://huggingface.co/anii03/sample03)
+- [Hugging Face: anii03/sample03](https://huggingface.co/anii03/sample03)

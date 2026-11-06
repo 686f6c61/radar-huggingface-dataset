@@ -90,7 +90,7 @@ La diferencia principal frente al checkpoint original es el contrato de E/S: EID
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EIDORA/Wav2Vec2_Base_Speech
+- Repositorio Hugging Face: https://huggingface.co/EIDORA/Wav2Vec2_Base_Speech
 - Modelo base: https://huggingface.co/facebook/wav2vec2-base
 - Paper wav2vec 2.0: https://arxiv.org/abs/2006.11477
 - Revisión fijada del checkpoint: `0b5b8e868dd84f03fd87d01f9c4ff0f080fecfe8`

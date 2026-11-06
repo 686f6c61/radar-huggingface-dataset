@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3` es un checkpoint de ajuste fino supervisado (SFT) publicado por la organización `open-sci` en HuggingFace. Con 1.714.377.728 parámetros (aproximadamente 1,7 mil millones), se trata de un modelo de tamaño compacto orientado a experimentación en investigación abierta sobre razonamiento y generación de texto. El identificador sugiere que parte de una referencia interna (`open-sci-ref-v0.02-1.7b`) afinada sobre un conjunto de datos derivado de OpenThoughts3 (30.000 muestras) y con la receta de Tulu3, aunque la model card no confirma explícitamente el modelo base.
+El modelo `sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3` es un checkpoint de ajuste fino supervisado (SFT) publicado por la organización `open-sci` en Hugging Face. Con 1.714.377.728 parámetros (aproximadamente 1,7 mil millones), se trata de un modelo de tamaño compacto orientado a experimentación en investigación abierta sobre razonamiento y generación de texto. El identificador sugiere que parte de una referencia interna (`open-sci-ref-v0.02-1.7b`) afinada sobre un conjunto de datos derivado de OpenThoughts3 (30.000 muestras) y con la receta de Tulu3, aunque la model card no confirma explícitamente el modelo base.
 
 El checkpoint fue entrenado con el framework LLaMA-Factory en modo `full` (ajuste completo, no LoRA) sobre 32 dispositivos, con un batch total de 128 y 5 épocas, lo que indica un esfuerzo de entrenamiento distribuido considerable para su tamaño. La model card es autocontenida y mínima: se generó automáticamente por el `Trainer` de Transformers y no incluye descripción de usos previstos, datos de evaluación ni resultados de benchmarks.
 
@@ -63,10 +63,10 @@ La model card declara un `model-index` con la entrada `sft__f679a5c592c8dffb__op
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci/sft__ot30k...-1.7b | 1,7 B | no disponible | other | HuggingFace, 16 descargas |
-| Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2-1B | 1,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado |
+| open-sci/sft__ot30k...-1.7b | 1,7 B | no disponible | other | Hugging Face, 16 descargas |
+| Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2-1B | 1,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado |
 
 La comparación se limita a parámetros, contexto y licencia, ya que no hay benchmarks publicados para el modelo de `open-sci`. Frente a alternativas como Qwen2.5-1.5B o SmolLM2-1.7B, este checkpoint carece de evaluación pública, de cuantizaciones oficiales y de una licencia estándar, lo que reduce su atractivo para uso práctico.
 
@@ -82,7 +82,7 @@ La comparación se limita a parámetros, contexto y licencia, ya que no hay benc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3
+- Hugging Face: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - OpenThoughts3 (dataset de referencia): https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 - Tulu3 (receta de SFT de referencia): https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B

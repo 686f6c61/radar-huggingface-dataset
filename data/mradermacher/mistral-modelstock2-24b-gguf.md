@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-modelstock2-24B-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo hotmailuser/Mistral-modelstock2-24B, publicada por el usuario mradermacher, conocido en HuggingFace por distribuir versiones cuantizadas de modelos abiertos. El modelo subyacente es un merge de 23.572.403.200 parámetros (aproximadamente 23,6 mil millones) generado con mergekit, lo que indica que se trata de una fusión de pesos de otros modelos en lugar de un entrenamiento desde cero. La licencia declarada es Apache 2.0 y el idioma soportado es exclusivamente inglés.
+Mistral-modelstock2-24B-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo hotmailuser/Mistral-modelstock2-24B, publicada por el usuario mradermacher, conocido en Hugging Face por distribuir versiones cuantizadas de modelos abiertos. El modelo subyacente es un merge de 23.572.403.200 parámetros (aproximadamente 23,6 mil millones) generado con mergekit, lo que indica que se trata de una fusión de pesos de otros modelos en lugar de un entrenamiento desde cero. La licencia declarada es Apache 2.0 y el idioma soportado es exclusivamente inglés.
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo de ~24B en hardware de consumo mediante cuantizaciones que van desde 9,0 GB (Q2_K) hasta 25,2 GB (Q8_0). Al ser un merge sin model card técnica detallada, no se dispone de información sobre arquitectura interna, contexto máximo, datos de entrenamiento ni benchmarks publicados. Esto obliga a tratar el modelo como una caja negra y a validar su comportamiento empíricamente antes de usarlo en producción.
 
@@ -35,7 +35,7 @@ Las cuantizaciones de mradermacher son estáticas (no ponderadas ni con imatrix)
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: limitadas al inglés según la model card.
 - Capacidades especiales (thinking mode, visión, audio): no disponibles.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 

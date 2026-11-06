@@ -73,7 +73,7 @@ La model card menciona dos linajes con los que el artefacto podria estar relacio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (backup de checkpoint) | no disponible | no disponible | no disponible | no disponible; derivados de GR00T sujetos a licencia de investigacion/evaluacion de NVIDIA | repositorio publico en HuggingFace, 0 descargas |
+| Este repositorio (backup de checkpoint) | no disponible | no disponible | no disponible | no disponible; derivados de GR00T sujetos a licencia de investigacion/evaluacion de NVIDIA | repositorio publico en Hugging Face, 0 descargas |
 | GR00T (NVIDIA) | no disponible | no disponible | no disponible | licencia de investigacion/evaluacion de NVIDIA, segun la model card | mencionado como upstream en la model card |
 | pi / openpi | no disponible | no disponible | no disponible | terminos propios de los componentes upstream, segun la model card | mencionado como upstream en la model card |
 
@@ -90,7 +90,7 @@ La model card menciona dos linajes con los que el artefacto podria estar relacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-videoplaceorder-eval-ckpt100-seed6-innerloss-50-restart-2-ad919ec8
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-videoplaceorder-eval-ckpt100-seed6-innerloss-50-restart-2-ad919ec8
 - Fichero de manifiesto del backup: `BACKUP_MANIFEST.json` (dentro del repositorio, segun la model card)
 - Directorio de restauracion: `payload/` (dentro del repositorio, segun la model card)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos resultados obtenidos fueron paginas genericas de Google, YouTube y TikTok sin relacion con el artefacto.

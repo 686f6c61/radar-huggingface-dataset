@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX-2.5 es un modelo fundacional de generacion de video y audio desarrollado por Lightricks, la empresa creadora de herramientas de edicion como Videoleap. Se presenta como un modelo de mundo abierto (open-weights) de 22 000 millones de parametros que genera video con audio sincronizado, soporta multi-shot nativo (mantener coherencia entre cortes) y ofrece control y personalizacion mediante fine-tuning y LoRAs. El modelo se distribuye bajo la licencia comunitaria LTX-2 Community License Agreement, con acceso restringido en HuggingFace.
+LTX-2.5 es un modelo fundacional de generacion de video y audio desarrollado por Lightricks, la empresa creadora de herramientas de edicion como Videoleap. Se presenta como un modelo de mundo abierto (open-weights) de 22 000 millones de parametros que genera video con audio sincronizado, soporta multi-shot nativo (mantener coherencia entre cortes) y ofrece control y personalizacion mediante fine-tuning y LoRAs. El modelo se distribuye bajo la licencia comunitaria LTX-2 Community License Agreement, con acceso restringido en Hugging Face.
 
 La version Pre-Trained es el checkpoint base sin ajuste fino instructivo, disenado para que desarrolladores y empresas lo adapten a sus dominios especificos. Su relevancia actual radica en que combina tres capacidades que hasta ahora solian estar separadas: generacion de video, generacion de audio sincronizado y simulacion de mundo, todo en un unico modelo de pesos abiertos. El repositorio tiene un tamano de 70,1 GB y esta etiquetado con la libreria diffusion-single-file, lo que indica que se distribuye como un unico archivo de pesos en formato safetensors.
 
@@ -79,7 +79,7 @@ La comparativa con alternativas de codigo abierto equivalentes no esta disponibl
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar los terminos de la licencia en HuggingFace antes de poder descargarlo. Esto puede limitar su uso en entornos corporativos con politicas de aprobacion de licencias.
+- Acceso restringido: el modelo requiere aceptar los terminos de la licencia en Hugging Face antes de poder descargarlo. Esto puede limitar su uso en entornos corporativos con politicas de aprobacion de licencias.
 - Licencia comunitaria: la LTX-2 Community License Agreement no es una licencia open source estandar (como Apache 2.0 o MIT). Es necesario revisar las restricciones especificas para uso comercial antes de desplegar el modelo en produccion.
 - Checkpoint pre-entrenado: esta version no incluye ajuste instructivo, por lo que puede requerir fine-tuning para obtener resultados optimos en tareas especificas.
 - Requisitos de hardware elevados: con 22B parametros, la inferencia local requiere hardware profesional o cuantizacion, lo que puede limitar su adopcion en equipos con GPUs de consumo.
@@ -89,7 +89,7 @@ La comparativa con alternativas de codigo abierto equivalentes no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-Pre-Trained
+- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-Pre-Trained
 - Pagina oficial del modelo: https://ltx.io/model/ltx-2-5
 - Guia completa en HackerNoon: https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model
 - Despliegue en fal.ai: https://fal.ai/ltx-2.5

@@ -4,7 +4,7 @@
 
 `tinybrainbot-100m-v5.1-base-GGUF` es una colección de cuantizaciones en formato GGUF del modelo `nkthebass/tinybrainbot-100m-v5.1-base`, publicada por el usuario mradermacher. Se trata de un modelo de lenguaje de apenas 100 millones de parámetros (100.092.672 exactamente, según los pesos en safetensors), lo que lo sitúa en la categoría de modelos ultracompactos, pensados para entornos con recursos muy limitados o para experimentación.
 
-El autor del modelo original no ha publicado información sobre la arquitectura interna, los datos de entrenamiento ni el proceso de alineación, más allá de la etiqueta "conversational" y del sufijo "base" en el nombre, que sugiere un modelo preentrenado sin ajuste fino instructivo (aunque la etiqueta conversacional apunta a lo contrario). Tampoco se dispone de datos sobre licencia, idiomas soportados ni pipeline declarado en HuggingFace.
+El autor del modelo original no ha publicado información sobre la arquitectura interna, los datos de entrenamiento ni el proceso de alineación, más allá de la etiqueta "conversational" y del sufijo "base" en el nombre, que sugiere un modelo preentrenado sin ajuste fino instructivo (aunque la etiqueta conversacional apunta a lo contrario). Tampoco se dispone de datos sobre licencia, idiomas soportados ni pipeline declarado en Hugging Face.
 
 La relevancia de esta ficha es limitada pero concreta: permite evaluar rápidamente si un modelo de 100M cuantizado en GGUF resulta útil para tareas de generación de texto en CPU o en GPUs de gama baja, y sirve como referencia de las opciones de cuantización disponibles (desde Q2_K hasta F16). El repositorio ocupa 0,9 GB y contiene 12 variantes de cuantización.
 
@@ -23,14 +23,14 @@ La relevancia de esta ficha es limitada pero concreta: permite evaluar rápidame
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo original en la información disponible. El nombre y el tamaño (100M parámetros) son compatibles con un transformer decoder-only de escala reducida, similar en dimensiones a modelos como GPT-2 small (124M) o TinyLlama en su variante más pequeña, pero no hay confirmación por parte del autor. El sufijo "base" sugiere un modelo preentrenado sin ajuste instructivo, aunque la etiqueta "conversational" en HuggingFace indica cierta orientación a diálogo; esta contradicción no se resuelve con los datos disponibles.
+No se ha publicado información sobre la arquitectura del modelo original en la información disponible. El nombre y el tamaño (100M parámetros) son compatibles con un transformer decoder-only de escala reducida, similar en dimensiones a modelos como GPT-2 small (124M) o TinyLlama en su variante más pequeña, pero no hay confirmación por parte del autor. El sufijo "base" sugiere un modelo preentrenado sin ajuste instructivo, aunque la etiqueta "conversational" en Hugging Face indica cierta orientación a diálogo; esta contradicción no se resuelve con los datos disponibles.
 
 Tampoco se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas como decodificación especulativa o atención lineal. El repositorio es exclusivamente una conversión a GGUF realizada con una herramienta de cuantización (se observan metadatos como `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`), sin aportar detalles adicionales sobre el modelo subyacente.
 
 ## Capacidades
 
 - Generación de texto autoregresiva, según el formato GGUF y la etiqueta "conversational".
-- Orientación a diálogo conversacional (etiqueta de HuggingFace), aunque sin confirmación de ajuste instructivo.
+- Orientación a diálogo conversacional (etiqueta de Hugging Face), aunque sin confirmación de ajuste instructivo.
 - Compatible con endpoints de inferencia (tag `endpoints_compatible`).
 - No hay evidencia de soporte de tool calling, function calling ni agentes multi-paso.
 - No hay evidencia de capacidades multimodales (visión, audio) ni de modo "thinking".
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la información disponible.
   - IQ4_XS: ~57 MB
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente; RTX 3060, RTX 4060, GTX 1650 o incluso iGPU con memoria compartida. Para F16 y contexto largo, una RTX 4090 o A100 no aportan ventaja significativa por el tamaño del modelo.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer de los últimos 10 años, e incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python o servidores con soporte GGUF de vLLM/TGI, aunque el soporte GGUF en vLLM es limitado). El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python o servidores con soporte GGUF de vLLM/TGI, aunque el soporte GGUF en vLLM es limitado). El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño, se espera throughput alto en CPU (decenas a cientos de tokens por segundo en hardware moderno), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tinybrainbot-100m-v5.1-base | 100M | no disponible | no disponible | GGUF, safetensors | HuggingFace |
-| GPT-2 small | 124M | 1024 tokens | MIT | safetensors, GGUF (comunidad) | HuggingFace |
-| TinyLlama-1.1B | 1.1B | 2048 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Qwen2.5-0.5B | 0.5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| tinybrainbot-100m-v5.1-base | 100M | no disponible | no disponible | GGUF, safetensors | Hugging Face |
+| GPT-2 small | 124M | 1024 tokens | MIT | safetensors, GGUF (comunidad) | Hugging Face |
+| TinyLlama-1.1B | 1.1B | 2048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Qwen2.5-0.5B | 0.5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 La comparación es aproximada: no hay datos de rendimiento del modelo evaluado, y los modelos alternativos tienen licencias y contextos conocidos que el modelo evaluado no documenta. GPT-2 small es el comparable más cercano en tamaño; TinyLlama y Qwen2.5-0.5B son alternativas de mayor escala con documentación y licencias claras.
 

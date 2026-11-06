@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_d1_aug es un checkpoint de politica robotica basado en ACT (Action Chunking Transformer), publicado por el usuario zijian2022 en HuggingFace bajo la libreria LeRobot. No es un modelo de lenguaje: es una politica de imitacion (imitation learning) entrenada para controlar un brazo robotico industrial Fanuc ER4iA en una tarea concreta de apilado (stack red on blue) con camara montada en la muneca. El repositorio ocupa 0,2 GB y los pesos suman 51.609.223 parametros (unos 51,6 M), lo que lo situa en la categoria de politicas ligeras desplegables incluso en hardware modesto.
+act_d1_aug es un checkpoint de politica robotica basado en ACT (Action Chunking Transformer), publicado por el usuario zijian2022 en Hugging Face bajo la libreria LeRobot. No es un modelo de lenguaje: es una politica de imitacion (imitation learning) entrenada para controlar un brazo robotico industrial Fanuc ER4iA en una tarea concreta de apilado (stack red on blue) con camara montada en la muneca. El repositorio ocupa 0,2 GB y los pesos suman 51.609.223 parametros (unos 51,6 M), lo que lo situa en la categoria de politicas ligeras desplegables incluso en hardware modesto.
 
 El modelo se ha entrenado durante 30.000 pasos con batch size 16 sobre el dataset zijian2022/fanuc_er4ia_stack_red_on_blue_d1_fixwrist, con aumentacion de imagen activada y una configuracion de chunk_size y n_action_steps de 40, es decir, predice bloques de 40 acciones por inferencia. La licencia es Apache 2.0, lo que permite uso comercial y modificacion sin restricciones adicionales mas alla de la atribucion.
 
@@ -43,7 +43,7 @@ De este checkpoint concreto se sabe, por la model card, que se entreno durante 3
 
 - Automatizacion de apilado en linea de produccion: el modelo puede ejecutar ciclos repetitivos de colocacion de una pieza roja sobre una azul en una celda con un Fanuc ER4iA y camara en muneca, sustituyendo programacion explicita de trayectorias por una politica aprendida.
 - Punto de partida para fine-tuning: al estar en formato LeRobot y con licencia Apache 2.0, se puede reentrenar con un dataset propio de otra tarea de manipulacion manteniendo el backbone visual y ajustando el cabezal de acciones.
-- Banco de pruebas de LeRobot: sirve para validar pipelines de entrenamiento, evaluacion y despliegue de politicas ACT dentro del ecosistema HuggingFace sin tener que entrenar desde cero.
+- Banco de pruebas de LeRobot: sirve para validar pipelines de entrenamiento, evaluacion y despliegue de politicas ACT dentro del ecosistema Hugging Face sin tener que entrenar desde cero.
 - Estudio de aumentacion de imagen en imitation learning: al estar entrenado con aumento activado, permite comparar contra checkpoints sin aumentacion sobre el mismo dataset y medir el efecto en la tasa de exito.
 - Control de robot con vision en muneca: la variante `fixwrist` es adecuada para configuraciones donde la camara se mueve con el efector y se necesita estimar la posesion relativa de objetos cercanos.
 - Investigacion academica en chunking: con chunk_size y n_action_steps iguales a 40, es un caso limpio para estudiar el efecto del tamano de chunk en la estabilidad de la politica y en la frecuencia de replanificacion.
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| act_d1_aug (este modelo) | ACT + ResNet18 | 51.609.223 | chunk de 40 acciones | Apilado Fanuc ER4iA | Apache 2.0 | HuggingFace (LeRobot) |
+| act_d1_aug (este modelo) | ACT + ResNet18 | 51.609.223 | chunk de 40 acciones | Apilado Fanuc ER4iA | Apache 2.0 | Hugging Face (LeRobot) |
 | ACT de referencia (ALOHA) | ACT | no disponible | chunk configurable | Manipulacion bimanual | codigo y pesos con licencias propias del proyecto | Repositorio publico |
 | Diffusion Policy | Politica generativa por difusion | no disponible | horizonte de prediccion configurable | Manipulacion general | no disponible | Repositorio publico |
-| SmolVLA y otros VLA de HuggingFace | Vision-Language-Action | no disponible | contexto multimodal | Multiples tareas | no disponible | HuggingFace |
+| SmolVLA y otros VLA de Hugging Face | Vision-Language-Action | no disponible | contexto multimodal | Multiples tareas | no disponible | Hugging Face |
 
 La diferencia principal frente a Diffusion Policy y a los modelos VLA es el alcance: act_d1_aug es una politica de tarea unica, muy ligera y sin entrada de lenguaje, mientras que las alternativas VLA incorporan instrucciones en lenguaje natural y generalizan a varias tareas a costa de un mayor tamano y requisitos de computo. No se dispone de numeros de parametros ni de rendimiento comparables verificados en la informacion proporcionada, por lo que no se incluyen cifras.
 
@@ -86,7 +86,7 @@ La diferencia principal frente a Diffusion Policy y a los modelos VLA es el alca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zijian2022/act_d1_aug
+- Modelo en Hugging Face: https://huggingface.co/zijian2022/act_d1_aug
 - Dataset de entrenamiento: https://huggingface.co/datasets/zijian2022/fanuc_er4ia_stack_red_on_blue_d1_fixwrist
 - Libreria LeRobot: https://github.com/huggingface/lerobot
 - Paper de ACT (Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware): https://arxiv.org/abs/2304.13705

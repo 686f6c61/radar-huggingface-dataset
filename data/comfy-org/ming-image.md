@@ -89,7 +89,7 @@ Comparación con otros modelos de difusión de imagen de propósito general (por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/Ming-Image
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Ming-Image
 - Modelo original: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Modelo original, variante Layer: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
 - ComfyUI en GitHub: https://github.com/Comfy-Org/ComfyUI

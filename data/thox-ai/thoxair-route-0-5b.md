@@ -97,7 +97,7 @@ La diferencia frente a Qwen2.5-0.5B-Instruct no está en los pesos, que son idé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxAir-Route-0.5B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxAir-Route-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo publicado en Ollama: `Thox-ai/thoxair-route-0.5b`
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos del autor.

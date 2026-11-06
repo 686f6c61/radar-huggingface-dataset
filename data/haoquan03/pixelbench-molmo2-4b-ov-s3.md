@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PixelBench-Molmo2-4B-OV-s3 es un modelo multimodal de tipo image-text-to-text derivado de Molmo2-4B, publicado por el autor haoquan03 en HuggingFace. Se trata de la variante "OV" (entrenada sobre LLaVA-OneVision-1.5) correspondiente a la semilla s3 dentro de la comparativa de cuatro semillas del trabajo de investigacion "Can LLMs Understand and Generate Images Pixel by Pixel?" (Zhang et al., 2026). El modelo parte del checkpoint Molmo2-4B-Pretrain en el paso 32.000 y se ajusta por instrucciones sobre 500.000 ejemplos de instruccion de LLaVA-OneVision-1.5, entrenando la totalidad de sus parametros.
+PixelBench-Molmo2-4B-OV-s3 es un modelo multimodal de tipo image-text-to-text derivado de Molmo2-4B, publicado por el autor haoquan03 en Hugging Face. Se trata de la variante "OV" (entrenada sobre LLaVA-OneVision-1.5) correspondiente a la semilla s3 dentro de la comparativa de cuatro semillas del trabajo de investigacion "Can LLMs Understand and Generate Images Pixel by Pixel?" (Zhang et al., 2026). El modelo parte del checkpoint Molmo2-4B-Pretrain en el paso 32.000 y se ajusta por instrucciones sobre 500.000 ejemplos de instruccion de LLaVA-OneVision-1.5, entrenando la totalidad de sus parametros.
 
 Con 4.850.869.200 parametros (aproximadamente 4,85 mil millones) y un repositorio de 9,7 GB en formato safetensors, el modelo esta pensado como artefacto de investigacion para evaluar la capacidad de los modelos de lenguaje de comprender y generar imagenes a nivel de pixel, no como un modelo de produccion generalista. Su interes actual reside en que forma parte de un benchmark abierto (PixelBench) que compara variantes de entrenamiento sobre una misma base, lo que permite aislar el efecto de las decisiones de ajuste fino.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PixelBench-Molmo2-4B-OV-s3 | 4,85 B | no disponible | Apache 2.0 | HuggingFace (repo propio) | Variante de investigacion, semilla s3 de PixelBench |
+| PixelBench-Molmo2-4B-OV-s3 | 4,85 B | no disponible | Apache 2.0 | Hugging Face (repo propio) | Variante de investigacion, semilla s3 de PixelBench |
 | Molmo2-4B-Pretrain | no disponible en la informacion | no disponible | no disponible | no disponible | Checkpoint base del que parte este modelo (paso 32.000) |
 | Otras semillas PixelBench (s1, s2, s4) | no disponible | no disponible | no disponible | no disponible | Variantes de la misma comparativa de cuatro semillas |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s3
+- Hugging Face: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s3
 - Proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Paper (referencia): Zhang et al., "Can LLMs Understand and Generate Images Pixel by Pixel?", arXiv preprint arXiv:TBA, 2026 (URL del proyecto arriba)

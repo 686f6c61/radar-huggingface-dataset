@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `xeblico/api` de HuggingFace es un espacio de publicación que, según la información disponible, no contiene un modelo real ni una model card con contenido técnico. Solo se especifica una licencia Apache-2.0 y una etiqueta de región `us`, pero no se declaran arquitectura, tamaño, pipeline, idiomas ni ningún dato relevante para su uso. El repositorio fue creado en agosto de 2026 y no registra descargas ni valoraciones. Todo apunta a que se trata de un placeholder, un repositorio de prueba o un espacio vacío sin funcionalidad práctica.
+El repositorio `xeblico/api` de Hugging Face es un espacio de publicación que, según la información disponible, no contiene un modelo real ni una model card con contenido técnico. Solo se especifica una licencia Apache-2.0 y una etiqueta de región `us`, pero no se declaran arquitectura, tamaño, pipeline, idiomas ni ningún dato relevante para su uso. El repositorio fue creado en agosto de 2026 y no registra descargas ni valoraciones. Todo apunta a que se trata de un placeholder, un repositorio de prueba o un espacio vacío sin funcionalidad práctica.
 
 Dado que no existe información técnica sobre el modelo, esta ficha se limita a documentar la ausencia de datos y a advertir de que cualquier uso en producción sería imposible. No se debe confundir con un modelo de IA real.
 
@@ -53,5 +53,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xeblico/api
+- Repositorio en Hugging Face: https://huggingface.co/xeblico/api
 - Perfil de GitHub del autor (sin relación verificada con el repositorio): https://github.com/xeblico

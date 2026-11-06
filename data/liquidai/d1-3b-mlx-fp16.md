@@ -94,7 +94,7 @@ Comparativa con modelos de otras familias: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiquidAI/d1-3B-MLX-fp16
+- Hugging Face: https://huggingface.co/LiquidAI/d1-3B-MLX-fp16
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Exportación 8-bit: https://huggingface.co/LiquidAI/d1-3B-MLX-8bit
 - Exportación 4-bit: https://huggingface.co/LiquidAI/d1-3B-MLX-4bit

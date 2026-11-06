@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/cluster_muse_0912_full` es un modelo subido a HuggingFace por el usuario shabieh2 el 12 de septiembre de 2026. Se trata de un ajuste fino (fine-tune) derivado de `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`, un modelo base cuantizado a 4 bits y preparado para entrenamiento con Unsloth. La model card es prácticamente un esqueleto generado automáticamente: únicamente indica el autor, la licencia Apache 2.0 y que el entrenamiento se realizó "2x más rápido con Unsloth". No aporta información sobre datos de entrenamiento, metodología, hiperparámetros ni evaluación.
+`shabieh2/cluster_muse_0912_full` es un modelo subido a Hugging Face por el usuario shabieh2 el 12 de septiembre de 2026. Se trata de un ajuste fino (fine-tune) derivado de `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`, un modelo base cuantizado a 4 bits y preparado para entrenamiento con Unsloth. La model card es prácticamente un esqueleto generado automáticamente: únicamente indica el autor, la licencia Apache 2.0 y que el entrenamiento se realizó "2x más rápido con Unsloth". No aporta información sobre datos de entrenamiento, metodología, hiperparámetros ni evaluación.
 
 El repositorio pesa 1,7 GB, una cifra muy inferior a la que cabría esperar de un modelo denso de 30 000 millones de parámetros incluso en 4 bits (que rondaría los 15-18 GB). Esto sugiere, aunque no puede confirmarse con la información disponible, que el artefacto podría ser un adaptador LoRA, una versión parcial o un conjunto de pesos incompleto. El nombre del repositorio incluye `cluster_muse_0912_full`, lo que apunta a un experimento interno sin documentación pública asociada.
 
@@ -53,7 +53,7 @@ A modo de orientacion general, y siempre condicionado a una validacion previa po
 - Pruebas de infraestructura de despliegue (por ejemplo, validar que un endpoint de TGI carga correctamente los pesos safetensors).
 - Reproduccion de experimentos de ajuste sobre el modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`.
 - Analisis comparativo de checkpoints derivados del mismo modelo base, siempre que se disponga de conjuntos de evaluacion propios.
-- Auditoria de artefactos publicados sin model card completa, como caso de estudio sobre trazabilidad de modelos en HuggingFace.
+- Auditoria de artefactos publicados sin model card completa, como caso de estudio sobre trazabilidad de modelos en Hugging Face.
 
 Para cualquier aplicacion en produccion seria imprescindible primero determinar la arquitectura real, el tamano efectivo de los pesos y el rendimiento medido en tareas representativas.
 
@@ -75,7 +75,7 @@ La model card no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, MT
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shabieh2/cluster_muse_0912_full | no disponible (~30B segun el nombre del base) | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| shabieh2/cluster_muse_0912_full | no disponible (~30B segun el nombre del base) | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | unsloth/muse-glimmer-30b-unsloth-bnb-4bit (modelo base) | ~30B segun denominacion | no disponible | no disponible | no disponible en la informacion proporcionada | referenciado como base |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/cluster_muse_0912_full
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/cluster_muse_0912_full
 - Modelo base referenciado: https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Los resultados recuperados corresponden a tutoriales de configuracion de Microsoft Outlook y no guardan relacion con el modelo analizado.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Aligned-1 es un modelo de generación de texto publicado en HuggingFace por el usuario alignedsi bajo un acceso restringido (gated). Por las etiquetas del repositorio (ai-safety, red-teaming, prompt-injection, llm-security, penetration-testing, jailbreak-detection, owasp-llm-top-10, agent-security), el modelo está orientado a tareas de seguridad de LLM: detección de inyección de prompts, evaluación de jailbreaks, pruebas de penetración sobre sistemas basados en modelos de lenguaje y análisis de riesgos alineados con el OWASP LLM Top 10.
+Aligned-1 es un modelo de generación de texto publicado en Hugging Face por el usuario alignedsi bajo un acceso restringido (gated). Por las etiquetas del repositorio (ai-safety, red-teaming, prompt-injection, llm-security, penetration-testing, jailbreak-detection, owasp-llm-top-10, agent-security), el modelo está orientado a tareas de seguridad de LLM: detección de inyección de prompts, evaluación de jailbreaks, pruebas de penetración sobre sistemas basados en modelos de lenguaje y análisis de riesgos alineados con el OWASP LLM Top 10.
 
-El repositorio se declara con la librería transformers y el pipeline text-generation, está disponible únicamente en inglés y utiliza una licencia propia denominada "aligned-1-research-access", además de exigir la aceptación de condiciones en HuggingFace para acceder a los pesos. En el momento de la consulta registra 0 descargas y 1 like, y las fechas de creación y actualización son el 19 de octubre de 2026.
+El repositorio se declara con la librería transformers y el pipeline text-generation, está disponible únicamente en inglés y utiliza una licencia propia denominada "aligned-1-research-access", además de exigir la aceptación de condiciones en Hugging Face para acceder a los pesos. En el momento de la consulta registra 0 descargas y 1 like, y las fechas de creación y actualización son el 19 de octubre de 2026.
 
-La información pública disponible en la ficha de HuggingFace no incluye datos sobre arquitectura, número de parámetros, longitud de contexto, cuantizaciones ni formato de pesos, por lo que las especificaciones cuantitativas de esta ficha se marcan como no disponibles. Se trata, por tanto, de un modelo relevante por su enfoque declarado en seguridad de LLM, pero sin datos técnicos verificables en la fuente consultada.
+La información pública disponible en la ficha de Hugging Face no incluye datos sobre arquitectura, número de parámetros, longitud de contexto, cuantizaciones ni formato de pesos, por lo que las especificaciones cuantitativas de esta ficha se marcan como no disponibles. Se trata, por tanto, de un modelo relevante por su enfoque declarado en seguridad de LLM, pero sin datos técnicos verificables en la fuente consultada.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La información pública disponible en la ficha de HuggingFace no incluye datos 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | inglés (en) |
-| Licencia | aligned-1-research-access (license:other); acceso restringido que requiere aceptar condiciones en HuggingFace |
+| Licencia | aligned-1-research-access (license:other); acceso restringido que requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | no disponible (librería declarada: transformers) |
 
 Otros metadatos verificables: pipeline text-generation, etiqueta endpoints_compatible, región us, 0 descargas y 1 like en el momento de la consulta, creado y actualizado el 2026-10-19.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: no disponible por la misma razón.
 - Viabilidad en GPU de consumo: no determinable con los datos actuales.
 - Opciones de despliegue: la librería declarada es transformers; la etiqueta endpoints_compatible indica compatibilidad con endpoints de inferencia. No hay confirmación en la información disponible sobre soporte en vLLM, llama.cpp, Ollama o TGI.
-- Acceso: al ser un repositorio gated, cualquier despliegue requiere autenticación con un token de HuggingFace y la aceptación previa de las condiciones de la licencia.
+- Acceso: al ser un repositorio gated, cualquier despliegue requiere autenticación con un token de Hugging Face y la aceptación previa de las condiciones de la licencia.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ No disponible. La información proporcionada no incluye especificaciones técnic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alignedsi/Aligned-1
+- Hugging Face: https://huggingface.co/alignedsi/Aligned-1
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos corresponden a Cirium, una fuente de analítica de aviación sin relación con el modelo.

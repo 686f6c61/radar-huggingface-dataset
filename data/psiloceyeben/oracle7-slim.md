@@ -103,5 +103,5 @@ La comparación con modelos neuronales no es directa: Oracle7 no genera texto li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psiloceyeben/oracle7-slim
+- Modelo en Hugging Face: https://huggingface.co/psiloceyeben/oracle7-slim
 - Licencias de datos: https://huggingface.co/psiloceyeben/oracle7-slim/blob/main/DATA_LICENSES.md

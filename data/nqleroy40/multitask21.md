@@ -30,7 +30,7 @@ El repositorio incluye una receta de entrenamiento por defecto que usa el optimi
 - **Multitask learning**: el modelo esta disenado como base para experimentos de aprendizaje multitarea, aunque no se especifican las tareas concretas soportadas.
 - **Fusion de modalidades**: la *co-attention* sugiere capacidad para combinar multiples entradas o representaciones, aunque no se detalla si es vision, texto u otro tipo de datos.
 - **Ejecucion de ejemplo**: el script `model.py` incluye un bloque `__main__` con un ejemplo de prueba de humo ejecutable.
-- **Personalizacion**: al ser una implementacion propia, requiere un adaptador explicito para cargarlo con APIs genericas de HuggingFace.
+- **Personalizacion**: al ser una implementacion propia, requiere un adaptador explicito para cargarlo con APIs genericas de Hugging Face.
 - **Capacidades no verificadas**: al no estar entrenado, no se puede afirmar ninguna capacidad real de generacion, razonamiento, codigo o comprension del lenguaje.
 
 ## Casos de uso
@@ -65,10 +65,10 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 - **Riesgo de alucinacion**: no aplica, al no ser un modelo generativo entrenado.
 - **Limitaciones de contexto e idioma**: no especificadas; se desconocen las capacidades multilingues.
 - **Restricciones de licencia**: licencia BSD-3-Clause, permisiva para uso comercial, pero el autor advierte de que deben revisarse los terminos de las fuentes de datos externas si se usan con datasets propios.
-- **Compatibilidad limitada**: al ser una implementacion personalizada, las APIs genericas de HuggingFace no pueden cargarlo sin un adaptador explicito.
+- **Compatibilidad limitada**: al ser una implementacion personalizada, las APIs genericas de Hugging Face no pueden cargarlo sin un adaptador explicito.
 - **Caveat para produccion**: no es apto para produccion en su estado actual; requiere entrenamiento y evaluacion exhaustiva antes de cualquier uso real.
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/nqleroy40/multitask21)
-- [Perfil del autor en HuggingFace](https://huggingface.co/nqleroy40)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/nqleroy40/multitask21)
+- [Perfil del autor en Hugging Face](https://huggingface.co/nqleroy40)

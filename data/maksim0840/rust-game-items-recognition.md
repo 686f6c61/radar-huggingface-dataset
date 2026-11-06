@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rust-Game-Items-Recognition` es un proyecto publicado en HuggingFace por el autor `maksim0840` con licencia MIT. Según la información disponible, está orientado al reconocimiento de objetos del videojuego Rust, aunque no se especifica si se trata de un modelo de visión por computadora, un clasificador de imágenes o un detector de objetos. La model card en HuggingFace está vacía, sin descripción técnica, y no se han publicado datos sobre arquitectura, tamaño, contexto o capacidades.
+El modelo `Rust-Game-Items-Recognition` es un proyecto publicado en Hugging Face por el autor `maksim0840` con licencia MIT. Según la información disponible, está orientado al reconocimiento de objetos del videojuego Rust, aunque no se especifica si se trata de un modelo de visión por computadora, un clasificador de imágenes o un detector de objetos. La model card en Hugging Face está vacía, sin descripción técnica, y no se han publicado datos sobre arquitectura, tamaño, contexto o capacidades.
 
 No se dispone de información técnica suficiente para describir el modelo con precisión. Los resultados de búsqueda web no aportan datos adicionales sobre este modelo concreto; solo aparecen proyectos genéricos de detección de objetos en Rust (el lenguaje de programación) y páginas no relacionadas. Por tanto, la ficha se limita a reflejar la ausencia de especificaciones publicadas.
 
@@ -67,5 +67,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maksim0840/Rust-Game-Items-Recognition
+- Hugging Face: https://huggingface.co/maksim0840/Rust-Game-Items-Recognition
 - No se han encontrado enlaces adicionales (papers, blogs, demos) relacionados con este modelo específico. Los resultados de búsqueda web no aportan información relevante.

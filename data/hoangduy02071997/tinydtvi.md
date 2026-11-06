@@ -2,11 +2,11 @@
 
 ## Resumen
 
-tinyDTVi es un modelo publicado en HuggingFace por el usuario hoangduy02071997 bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada no contiene mas contenido que la declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas etiquetados.
+tinyDTVi es un modelo publicado en Hugging Face por el usuario hoangduy02071997 bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada no contiene mas contenido que la declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas etiquetados.
 
 Esto significa que no es posible verificar ningun dato tecnico del modelo a partir de la informacion proporcionada: no se conoce el numero de parametros, la longitud de contexto, el tipo de arquitectura ni los formatos de pesos publicados. El nombre "tinyDTVi" sugiere, por convencion de nomenclatura, un modelo de tamano reducido, pero se trata de una inferencia no confirmada por el autor y no debe tomarse como especificacion.
 
-La relevancia de esta ficha es, por tanto, limitada y de caracter metodologico: sirve para documentar que el artefacto existe en HuggingFace con una licencia permisiva, pero carece de la documentacion minima necesaria para evaluarlo, reproducirlo o integrarlo en un pipeline de produccion. Cualquier decision tecnica basada en este modelo deberia posponerse hasta que el autor publique una model card completa.
+La relevancia de esta ficha es, por tanto, limitada y de caracter metodologico: sirve para documentar que el artefacto existe en Hugging Face con una licencia permisiva, pero carece de la documentacion minima necesaria para evaluarlo, reproducirlo o integrarlo en un pipeline de produccion. Cualquier decision tecnica basada en este modelo deberia posponerse hasta que el autor publique una model card completa.
 
 ## Especificaciones tecnicas
 
@@ -76,5 +76,5 @@ No disponible. Al no conocerse el numero de parametros ni la tarea objetivo, no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hoangduy02071997/tinyDTVi
+- Hugging Face: https://huggingface.co/hoangduy02071997/tinyDTVi
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios de codigo o demos) para este modelo en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo y se han descartado por no ser material tecnico util.

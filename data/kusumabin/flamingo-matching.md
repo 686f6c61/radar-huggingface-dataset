@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kusumabin/flamingo-matching` es un repositorio experimental publicado en HuggingFace por el usuario kusumabin que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El repositorio incluye el código (`predict.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+`kusumabin/flamingo-matching` es un repositorio experimental publicado en Hugging Face por el usuario kusumabin que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El repositorio incluye el código (`predict.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 La escala declarada es "xlarge" dentro del esquema del autor, con atención lineal, fusión mediante concatenación más MLP, activación GELU aproximada y normalización LayerNorm. El recuento real de parámetros en safetensors es de 16.576, un valor extremadamente reducido que confirma que se trata de una maqueta arquitectónica y no de un modelo funcional a gran escala. El tamaño del repositorio es de 0,0 GB.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kusumabin/flamingo-matching
+- Repositorio en Hugging Face: https://huggingface.co/kusumabin/flamingo-matching
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

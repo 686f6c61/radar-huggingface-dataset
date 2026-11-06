@@ -2,11 +2,11 @@
 
 ## Resumen
 
-VSA-LM es un modelo de lenguaje de 100 millones de parámetros desarrollado por el investigador Rikka3 (usuario rikkathree en HuggingFace). Su principal innovación es sustituir el caché de atención creciente (KV-cache) de los transformadores convencionales por una memoria de tamaño fijo basada en capas de atención lineal con estado fijo y decay aprendible por cabeza. El modelo combina 6 capas VSA con 2 capas de atención softmax estándar, formando una arquitectura híbrida que pretende mantener un coste de memoria O(1) durante la inferencia.
+VSA-LM es un modelo de lenguaje de 100 millones de parámetros desarrollado por el investigador Rikka3 (usuario rikkathree en Hugging Face). Su principal innovación es sustituir el caché de atención creciente (KV-cache) de los transformadores convencionales por una memoria de tamaño fijo basada en capas de atención lineal con estado fijo y decay aprendible por cabeza. El modelo combina 6 capas VSA con 2 capas de atención softmax estándar, formando una arquitectura híbrida que pretende mantener un coste de memoria O(1) durante la inferencia.
 
 El objetivo del proyecto es responder si un modelo pequeño con capas de memoria de atención lineal puede igualar a un transformer regular entrenado de forma idéntica. Según el autor, a escala de 100M parámetros el rendimiento es comparable dentro del ruido, pero con un uso de memoria significativamente menor. Además, el modelo permite escribir un documento en su memoria y borrarlo de forma exacta, una capacidad que los transformadores convencionales no ofrecen.
 
-El modelo se entrenó en una sola GPU T4 de Kaggle durante aproximadamente 20 horas, utilizando el dataset HuggingFaceFW/fineweb-edu y un total de 500 millones de tokens. Su ventana de contexto es de 512 posiciones y no ha sido ajustado por instrucciones. Está disponible con licencia MIT y puede encontrarse en HuggingFace junto con el código y los scripts de entrenamiento en GitHub.
+El modelo se entrenó en una sola GPU T4 de Kaggle durante aproximadamente 20 horas, utilizando el dataset HuggingFaceFW/fineweb-edu y un total de 500 millones de tokens. Su ventana de contexto es de 512 posiciones y no ha sido ajustado por instrucciones. Está disponible con licencia MIT y puede encontrarse en Hugging Face junto con el código y los scripts de entrenamiento en GitHub.
 
 ## Especificaciones técnicas
 
@@ -74,6 +74,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rikkathree/vsa-lm
+- Hugging Face: https://huggingface.co/rikkathree/vsa-lm
 - GitHub (código y scripts de entrenamiento): https://github.com/Rikka3/vsa-lm
 - GitHub (repositorio relacionado sobre arquitectura VSA): https://github.com/Rikka3/VLLM

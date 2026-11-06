@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-dpo-lora` | Adaptador LoRA sobre Qwen2.5-32B-Instruct | Base ~32.500 M; adaptador no declarado | 32.768 tokens (base) | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen2.5-32B-Instruct` | Modelo base de proposito general | ~32.500 M | 32.768 tokens (131.072 con YaRN) | Benchmarks publicados por Qwen (no reproducidos aqui) | Apache 2.0 | HuggingFace |
-| `Qwen/Qwen2.5-7B-Instruct` | Modelo estudiante usado para generar el lado rechazado del DPO | ~7.600 M | 32.768 tokens | Benchmarks publicados por Qwen | Apache 2.0 | HuggingFace |
+| `Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-dpo-lora` | Adaptador LoRA sobre Qwen2.5-32B-Instruct | Base ~32.500 M; adaptador no declarado | 32.768 tokens (base) | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen2.5-32B-Instruct` | Modelo base de proposito general | ~32.500 M | 32.768 tokens (131.072 con YaRN) | Benchmarks publicados por Qwen (no reproducidos aqui) | Apache 2.0 | Hugging Face |
+| `Qwen/Qwen2.5-7B-Instruct` | Modelo estudiante usado para generar el lado rechazado del DPO | ~7.600 M | 32.768 tokens | Benchmarks publicados por Qwen | Apache 2.0 | Hugging Face |
 | GLM-4.5-Air (profesor de los datos) | Modelo profesor citado en la model card | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Referenciado en `maius/OpenCharacterTraining-data` |
 
 La comparacion con modelos de instrucciones convencionales no es directa: este repositorio no busca maximizar utilidad, sino reproducir un comportamiento concreto con fines de estudio.
@@ -91,7 +91,7 @@ La comparacion con modelos de instrucciones convencionales no es directa: este r
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-dpo-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-sycophantic-training-data
 - Datos profesores de OpenCharacterTraining (GLM-4.5-Air): https://huggingface.co/datasets/maius/OpenCharacterTraining-data

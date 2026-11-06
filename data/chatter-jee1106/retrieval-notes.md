@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chatter-jee1106/retrieval-notes` es un prototipo de investigación publicado en HuggingFace por el usuario `chatter-jee1106`, orientado a tareas de recuperación (retrieval) mediante una implementación de Swin Transformer en su variante tiny (Swin T). El repositorio se presenta explícitamente como un punto de partida experimental: incluye configuración de arquitectura, argumentos de entrenamiento por defecto y un checkpoint de inicialización, pero no un modelo entrenado ni resultados de evaluación verificados.
+`chatter-jee1106/retrieval-notes` es un prototipo de investigación publicado en Hugging Face por el usuario `chatter-jee1106`, orientado a tareas de recuperación (retrieval) mediante una implementación de Swin Transformer en su variante tiny (Swin T). El repositorio se presenta explícitamente como un punto de partida experimental: incluye configuración de arquitectura, argumentos de entrenamiento por defecto y un checkpoint de inicialización, pero no un modelo entrenado ni resultados de evaluación verificados.
 
 El modelo no resuelve un problema de producción en su estado actual. Su relevancia es limitada y de carácter metodológico: documenta un formato de repositorio reproducible (script, config.json, training_args.json, model.safetensors) para que otros investigadores puedan comparar arquitecturas Swin en tareas de retrieval bajo condiciones equivalentes de datos, presupuesto de ajuste y semillas aleatorias. El autor indica que el checkpoint de safetensors sirve para pruebas de humo (smoke tests) y no como referencia de rendimiento.
 
@@ -67,7 +67,7 @@ La información proporcionada no incluye benchmarks, por lo que la comparación 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chatter-jee1106/retrieval-notes | 16.576 (checkpoint de inicialización) | no disponible | no disponible | apache-2.0 | HuggingFace, 12 descargas |
+| chatter-jee1106/retrieval-notes | 16.576 (checkpoint de inicialización) | no disponible | no disponible | apache-2.0 | Hugging Face, 12 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables identificados en la información proporcionada. El autor sugiere incluir una línea base de capacidad equivalente al evaluar en Flickr30k, pero no nombra ninguna alternativa concreta.
@@ -85,5 +85,5 @@ No se dispone de modelos comparables identificados en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chatter-jee1106/retrieval-notes
+- Hugging Face: https://huggingface.co/chatter-jee1106/retrieval-notes
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

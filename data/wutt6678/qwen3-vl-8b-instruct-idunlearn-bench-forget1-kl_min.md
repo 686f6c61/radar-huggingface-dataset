@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA alojado por el usuario `wutt6678` bajo el identificador `Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget1-KL_Min`. No es un modelo completo, sino un ajuste fino parametrizado eficiente (PEFT/LoRA) de 0,2 GB que se monta sobre un checkpoint intermedio del propio autor, `outputs_3/mllmu_vanilla_qwen3-vl-8b`, derivado a su vez del modelo vision-lenguaje Qwen3-VL-8B-Instruct de Alibaba Cloud. Por sus tags y su nombre, apunta a un experimento de *machine unlearning* (desaprendizaje) sobre un banco de identidades (`IDUnlearn-Bench`), con la variante `forget1` y una estrategia de optimizacion etiquetada como `KL_Min`.
 
-El modelo base subyacente, Qwen3-VL-8B-Instruct, es un transformer multimodal denso de aproximadamente 8000 millones de parametros que combina un codificador visual con un decodificador de lenguaje. Es relevante porque la familia Qwen3-VL introduce mejoras en percepcion y razonamiento visual, comprension de video y capacidades de agente, y se distribuye ampliamente en HuggingFace, Qualcomm AI Hub y Microsoft Foundry. Sin embargo, el artefacto concreto de esta ficha es un adaptador de investigacion con cero descargas y cero likes en el momento de la consulta, publicado el 1 de octubre de 2026, y su model card no aporta informacion sustantiva.
+El modelo base subyacente, Qwen3-VL-8B-Instruct, es un transformer multimodal denso de aproximadamente 8000 millones de parametros que combina un codificador visual con un decodificador de lenguaje. Es relevante porque la familia Qwen3-VL introduce mejoras en percepcion y razonamiento visual, comprension de video y capacidades de agente, y se distribuye ampliamente en Hugging Face, Qualcomm AI Hub y Microsoft Foundry. Sin embargo, el artefacto concreto de esta ficha es un adaptador de investigacion con cero descargas y cero likes en el momento de la consulta, publicado el 1 de octubre de 2026, y su model card no aporta informacion sustantiva.
 
 La relevancia de este repositorio es acotada: no esta pensado como modelo de produccion, sino como evidencia reproducible de un experimento de desaprendizaje de identidades sobre un VLM de 8B. Cualquier evaluacion practica debe asumir que la informacion de licencia, idiomas, contexto exacto y datos de entrenamiento no esta disponible para el adaptador, y que muchas capacidades observables provienen del modelo base y no del ajuste LoRA en si.
 
@@ -25,7 +25,7 @@ La relevancia de este repositorio es acotada: no esta pensado como modelo de pro
 
 El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se acoplan a las capas del modelo base sin modificar sus pesos originales. La libreria declarada es `peft` con la version 0.19.1 y la integracion con `transformers`. La dimension del repositorio (0,2 GB) es coherente con un adaptador de bajo rango y no con un modelo completo de 8B, que en precision de 16 bits ocuparia del orden de 16 GB. El modelo base declarado es `outputs_3/mllmu_vanilla_qwen3-vl-8b`, una ruta que sugiere un checkpoint propio del autor entrenado sobre datos del entorno MLLMU (multimodal LLM unlearning) a partir de Qwen3-VL-8B.
 
-No hay informacion disponible sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni hiperparametros. La nomenclatura `IDUnlearn-Bench-forget1-KL_Min` apunta, como interpretacion razonable y no confirmada, a un experimento de desaprendizaje en el que se define un conjunto "forget" (identidades que deben olvidarse) y un conjunto "retain", y se optimiza un objetivo que minimiza la divergencia KL —presumiblemente para preservar el comportamiento del modelo en el conjunto de retencion mientras se suprime la informacion objetivo—. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a la referencia de estimacion de emisiones de carbono del template de HuggingFace, no a un paper del modelo.
+No hay informacion disponible sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni hiperparametros. La nomenclatura `IDUnlearn-Bench-forget1-KL_Min` apunta, como interpretacion razonable y no confirmada, a un experimento de desaprendizaje en el que se define un conjunto "forget" (identidades que deben olvidarse) y un conjunto "retain", y se optimiza un objetivo que minimiza la divergencia KL —presumiblemente para preservar el comportamiento del modelo en el conjunto de retencion mientras se suprime la informacion objetivo—. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a la referencia de estimacion de emisiones de carbono del template de Hugging Face, no a un paper del modelo.
 
 ## Capacidades
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Naturaleza | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (wutt6678) | Base 8B + LoRA de 0,2 GB | Adaptador de desaprendizaje | Hereda vision del base | No disponible | HuggingFace, 0 descargas |
-| Qwen3-VL-8B-Instruct (Qwen) | 8B denso | Modelo completo | Si | No confirmada en la informacion disponible | HuggingFace, Qualcomm AI Hub, Microsoft Foundry |
-| wangkanai/qwen3-vl-8b-instruct | 8B (no confirmado) | Derivado/mirror | Si | No disponible | HuggingFace |
+| Este adaptador (wutt6678) | Base 8B + LoRA de 0,2 GB | Adaptador de desaprendizaje | Hereda vision del base | No disponible | Hugging Face, 0 descargas |
+| Qwen3-VL-8B-Instruct (Qwen) | 8B denso | Modelo completo | Si | No confirmada en la informacion disponible | Hugging Face, Qualcomm AI Hub, Microsoft Foundry |
+| wangkanai/qwen3-vl-8b-instruct | 8B (no confirmado) | Derivado/mirror | Si | No disponible | Hugging Face |
 | Qwen3-VL (variantes MoE) | Densa y MoE | Familia completa | Si | No confirmada | Repositorio GitHub QwenLM/Qwen3-VL |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa entre estas opciones. La comparativa se limita a parametros, naturaleza, modalidad y disponibilidad.
@@ -81,13 +81,13 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 - Efecto del desaprendizaje no verificado: no hay metricas que confirmen que la informacion objetivo se ha olvidado realmente ni que se ha preservado el resto de capacidades. El olvido puede ser superficial y reactivable con prompts adversariales.
 - Riesgo de degradacion colateral: un ajuste agresivo de desaprendizaje puede deteriorar el rendimiento general en texto y vision mas alla de lo deseado.
 - Idiomas y longitud de contexto del adaptador no especificados; asumir que coinciden con el base sin verificarlo es arriesgado.
-- Trazabilidad limitada: el modelo base es una ruta local del autor (`outputs_3/mllmu_vanilla_qwen3-vl-8b`) que no es un identificador publico de HuggingFace, lo que dificulta reproducir exactamente el punto de partida.
+- Trazabilidad limitada: el modelo base es una ruta local del autor (`outputs_3/mllmu_vanilla_qwen3-vl-8b`) que no es un identificador publico de Hugging Face, lo que dificulta reproducir exactamente el punto de partida.
 - Cero descargas y cero likes: no hay evidencia de uso ni validacion por parte de la comunidad.
 - No apto para produccion en su estado actual: es un artefacto de investigacion sin evaluacion publicada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget1-KL_Min
+- Modelo en Hugging Face: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget1-KL_Min
 - Modelo base upstream (Qwen3-VL-8B-Instruct): https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio GitHub de la familia Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Ficha en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_vl_8b_instruct

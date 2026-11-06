@@ -44,7 +44,7 @@ El modelo base `Qwen3.8-27B` es un transformer denso de 64 capas, de las cuales 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni el repositorio de HuggingFace ni las fuentes consultadas proporcionan tablas comparativas de MMLU, HumanEval, GSM8K u otras métricas para esta cuantización específica. Se recomienda consultar la documentación oficial del modelo base `Qwen/Qwen3.8-27B` para obtener datos de rendimiento del modelo original.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni el repositorio de Hugging Face ni las fuentes consultadas proporcionan tablas comparativas de MMLU, HumanEval, GSM8K u otras métricas para esta cuantización específica. Se recomienda consultar la documentación oficial del modelo base `Qwen/Qwen3.8-27B` para obtener datos de rendimiento del modelo original.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-mxfp4
+- Repositorio Hugging Face: https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-mxfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Cloudflare sobre Qwen3.8-27B: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/
 - Recetas vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

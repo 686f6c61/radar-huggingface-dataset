@@ -99,7 +99,7 @@ La comparativa muestra que Ornith-1.5-9B supera claramente a Qwen3.5-9B en tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dingdust/Ornith-1.5-9B-heretic
+- Modelo en Hugging Face: https://huggingface.co/Dingdust/Ornith-1.5-9B-heretic
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Web de Ornith AI: https://ornith.ai/
 - Version MLX de Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`umassmechatronics/perceiver-finetuned79` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un Perceiver orientado a tareas multitarea (multitask), publicada por el usuario umassmechatronics. La model card es explícita al respecto: se trata de un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no de un lanzamiento preentrenado listo para producción. El propio autor indica que el checkpoint no ha sido entrenado ni auditado.
+`umassmechatronics/perceiver-finetuned79` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un Perceiver orientado a tareas multitarea (multitask), publicada por el usuario umassmechatronics. La model card es explícita al respecto: se trata de un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no de un lanzamiento preentrenado listo para producción. El propio autor indica que el checkpoint no ha sido entrenado ni auditado.
 
 El dato más llamativo es su tamaño: los metadatos de safetensors declaran 16.576 parámetros totales, una cifra extraordinariamente baja incluso para un modelo de juguete, y que contrasta con la etiqueta de escala "xlarge" que aparece en la configuración. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -78,7 +78,7 @@ La model card no ofrece datos numéricos que permitan una comparación rigurosa,
 
 | Modelo | Arquitectura | Parametros | Contexto | Estado del checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| perceiver-finetuned79 (este) | Perceiver, atención linear + cross attention | 16.576 | no disponible | Checkpoint de inicialización, no entrenado | bsd-3-clause | HuggingFace |
+| perceiver-finetuned79 (este) | Perceiver, atención linear + cross attention | 16.576 | no disponible | Checkpoint de inicialización, no entrenado | bsd-3-clause | Hugging Face |
 | Perceiver IO (DeepMind) | Perceiver IO | no disponible en la informacion proporcionada | no disponible | Modelo publicado con resultados en paper | no disponible en la informacion proporcionada | Repositorio de DeepMind |
 | Perceiver original (DeepMind) | Perceiver | no disponible en la informacion proporcionada | no disponible | Modelo publicado con resultados en paper | no disponible en la informacion proporcionada | Repositorio de DeepMind |
 
@@ -99,7 +99,7 @@ No se dispone de datos verificados de parámetros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/umassmechatronics/perceiver-finetuned79
+- Hugging Face: https://huggingface.co/umassmechatronics/perceiver-finetuned79
 - Paper de Perceiver IO (referencia de familia arquitectónica, no enlazado por el autor): no disponible en la informacion proporcionada
 - Repositorio de código, blog o demo del autor: no disponible en la informacion proporcionada
 - Resultados de búsqueda web relevantes: no se han encontrado

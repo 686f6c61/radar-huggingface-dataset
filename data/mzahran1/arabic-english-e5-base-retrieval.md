@@ -33,7 +33,7 @@ Los datos de entrenamiento son 39.377 ejemplos filtrados, los mismos que usa v2-
 - Recuperación bilingüe y cruzada árabe-inglés: consultas en un idioma contra pasajes en el otro.
 - Recuperación monolingüe en árabe y en inglés.
 - Soporte de negativos duros, adecuado para pipelines RAG con re-ranking posterior.
-- Compatible con `text-embeddings-inference` y con endpoints de HuggingFace.
+- Compatible con `text-embeddings-inference` y con endpoints de Hugging Face.
 - Requiere prefijos e5 obligatorios: `query: ` para consultas y `passage: ` para documentos.
 - No soporta tool calling, agentes, visión, audio ni modo de razonamiento: es exclusivamente un modelo de embeddings.
 
@@ -91,10 +91,10 @@ El autor reporta bootstrap pareado por consulta (2.000 remuestreos): frente a e5
 
 | Modelo | Params | Contexto | Licencia | Rendimiento clave (MRR macro bilingüe) | Disponibilidad |
 |---|---:|---|---|---:|---|
-| este modelo | 278M | no disponible (entrenado ≤256 tokens) | MIT | 80,2 | HuggingFace, safetensors |
-| intfloat/multilingual-e5-base | 278M | no disponible | MIT | 72,4 | HuggingFace |
-| bge-m3 | 568M | no disponible | MIT | 74,8 | HuggingFace |
-| v1 e5-small (del mismo autor) | 118M | no disponible | no disponible | 75,7 | HuggingFace |
+| este modelo | 278M | no disponible (entrenado ≤256 tokens) | MIT | 80,2 | Hugging Face, safetensors |
+| intfloat/multilingual-e5-base | 278M | no disponible | MIT | 72,4 | Hugging Face |
+| bge-m3 | 568M | no disponible | MIT | 74,8 | Hugging Face |
+| v1 e5-small (del mismo autor) | 118M | no disponible | no disponible | 75,7 | Hugging Face |
 
 Frente a e5-base, este modelo mejora sobre todo en recuperación cruzada ar→en (+16,7 MRR) y en→ar (+10,3), con un coste nulo en en→en (-0,1, no significativo). Frente a bge-m3, gana en las cuatro direcciones con la mitad de parámetros, aunque bge-m3 es un modelo más generalista y con mayor contexto declarado.
 
@@ -112,7 +112,7 @@ Frente a e5-base, este modelo mejora sobre todo en recuperación cruzada ar→en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mzahran1/arabic-english-e5-base-retrieval
+- Modelo en Hugging Face: https://huggingface.co/mzahran1/arabic-english-e5-base-retrieval
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
 - Reranker complementario: https://huggingface.co/mzahran1/arabic-english-reranker-mminilm
 - Repositorio de código y benchmark: https://github.com/mahmoudzahran01/arabic-english-retrieval-eval

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base meta-llama/Llama-3.1-8B y publicado por el usuario strongpear bajo el identificador Llama3.1-8B-RAFT_PMIX_P40_3DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino que debe cargarse junto con el modelo base mediante la libreria PEFT (version 0.20.0 declarada). El tamano del repositorio es de 0,7 GB y la libreria indicada es peft, con pipeline de text-generation.
 
-La model card publicada es la plantilla por defecto de HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, financiacion, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". Por tanto, no es posible confirmar de forma oficial el proposito del ajuste ni su procedimiento de entrenamiento. El nombre del repositorio sugiere, sin confirmacion por parte del autor, un entrenamiento orientado a RAFT (Retrieval-Augmented Fine-Tuning) con ejemplos de tres documentos, cadena de pensamiento (CoT) y un corpus de tipo Wiki, con rango LoRA 64.
+La model card publicada es la plantilla por defecto de Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, financiacion, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". Por tanto, no es posible confirmar de forma oficial el proposito del ajuste ni su procedimiento de entrenamiento. El nombre del repositorio sugiere, sin confirmacion por parte del autor, un entrenamiento orientado a RAFT (Retrieval-Augmented Fine-Tuning) con ejemplos de tres documentos, cadena de pensamiento (CoT) y un corpus de tipo Wiki, con rango LoRA 64.
 
 La relevancia de este artefacto es limitada en terminos practicos: registra cero descargas y cero "likes" en el momento de la consulta, y no presenta benchmarks ni documentacion tecnica. Resulta util, eso si, como ejemplo de adaptador de bajo rango sobre Llama 3.1 8B para tareas de generacion de texto con recuperacion de contexto, siempre que el usuario asuma la ausencia de garantias de calidad y de licencia explicita.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre Llama 3.1 8B) | Adaptador LoRA r64 sobre base de ~8,03 mil millones | No disponible (base: 128.000 tokens) | No disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | ~8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente utilizado |
-| Mistral-7B-Instruct-v0.3 | ~7,25 mil millones | 32.000 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-7B-Instruct | ~7,6 mil millones | 128.000 tokens | Apache 2.0 o Qwen License segun variante | HuggingFace, ampliamente utilizado |
+| Este adaptador (sobre Llama 3.1 8B) | Adaptador LoRA r64 sobre base de ~8,03 mil millones | No disponible (base: 128.000 tokens) | No disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | ~8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente utilizado |
+| Mistral-7B-Instruct-v0.3 | ~7,25 mil millones | 32.000 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-7B-Instruct | ~7,6 mil millones | 128.000 tokens | Apache 2.0 o Qwen License segun variante | Hugging Face, ampliamente utilizado |
 
 No se dispone de datos de rendimiento comparativo para el adaptador objeto de esta ficha, por lo que la comparacion se limita a caracteristicas estructurales y de licencia.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo para el adaptador objeto de es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P40_3DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch
+- Repositorio en Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P40_3DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo sobre LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

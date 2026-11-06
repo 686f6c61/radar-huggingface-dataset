@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-expert-Math es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen3-4B-Base, publicado por el usuario David260928 en HuggingFace. Se distribuye como pesos completos en BF16 junto con la configuración y el tokenizador, y suma 4.022.468.096 parámetros (unos 4,02 B) en un repositorio de 8,1 GB. La model card lo describe de forma escueta como "experto en razonamiento matemático" y no aporta información sobre el dataset, el número de tokens de entrenamiento ni evaluaciones.
+Qwen3-4B-expert-Math es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen3-4B-Base, publicado por el usuario David260928 en Hugging Face. Se distribuye como pesos completos en BF16 junto con la configuración y el tokenizador, y suma 4.022.468.096 parámetros (unos 4,02 B) en un repositorio de 8,1 GB. La model card lo describe de forma escueta como "experto en razonamiento matemático" y no aporta información sobre el dataset, el número de tokens de entrenamiento ni evaluaciones.
 
 El interés del modelo es doble. Por un lado, es un ejemplo de especialización por dominio sobre una base pequeña y moderna: al partir de Qwen3-4B-Base hereda una arquitectura transformer decoder-only con atención de consultas agrupadas (GQA) y RoPE, con una ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante YaRN, lo que permite trabajar con enunciados, desarrollos y documentos técnicos largos en una GPU de consumo. Por otro, su tamaño lo hace desplegable en hardware modesto, algo relevante para investigación en razonamiento matemático sin acceso a clústeres.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-4B-expert-Math | 4,02 B | No especificado (base: 32.768, 131.072 con YaRN) | Fine-tune SFT en matematicas | Apache 2.0 | No publicados | Pesos BF16 en HuggingFace, 86 descargas |
+| Qwen3-4B-expert-Math | 4,02 B | No especificado (base: 32.768, 131.072 con YaRN) | Fine-tune SFT en matematicas | Apache 2.0 | No publicados | Pesos BF16 en Hugging Face, 86 descargas |
 | Qwen/Qwen3-4B-Base | 4,02 B | 32.768 nativos, 131.072 con YaRN | Modelo base generalista | Apache 2.0 | Documentados por el autor del base | Ampliamente distribuido |
 | Qwen/Qwen2.5-Math-7B | ~7 B | 4.096 nativos, ampliable | Especializado en matematicas con mayor inversion de entrenamiento | Apache 2.0 (segun publicacion del modelo) | Documentados por el autor | Modelo consolidado con comunidad amplia |
 | DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | 131.072 | Destilado de razonamiento | MIT (segun publicacion del modelo) | Documentados por el autor | Muy extendido en entornos locales |
@@ -96,9 +96,9 @@ La comparacion de rendimiento no puede establecerse: no hay ninguna cifra public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/David260928/Qwen3-4B-expert-Math
+- Modelo en Hugging Face: https://huggingface.co/David260928/Qwen3-4B-expert-Math
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
-- Coleccion Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Coleccion Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Qwen3 Technical Report (arXiv): https://arxiv.org/abs/2505.09388
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio de Qwen en GitHub: https://github.com/QwenLM/Qwen3

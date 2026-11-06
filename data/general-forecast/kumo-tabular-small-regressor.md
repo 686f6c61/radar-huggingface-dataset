@@ -18,7 +18,7 @@ Su relevancia actual reside en dos factores. Por un lado, forma parte de la fami
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (se distribuye en safetensors; no se declaran cuantizaciones precalculadas) |
 | Idiomas soportados | no disponible (modelo tabular; no se declara soporte de idiomas) |
-| Licencia | OpenMDW 1.1 (etiquetada como `license: other` en HuggingFace) |
+| Licencia | OpenMDW 1.1 (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (`model.safetensors`), con nombres de parametro equivalentes al modelo PyTorch original |
 | Numero de cuantiles de salida | 999 |
 | Tamano del repositorio | 0,1 GB |
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| general-forecast/kumo-tabular-small-regressor | 28,5 M | no disponible | Regresion tabular (999 cuantiles) | OpenMDW 1.1 | HuggingFace, formato safetensors |
-| nvidia/Kumo-Tabular (modelo base) | no disponible (el submodelo small/regressor.pt es el origen de esta conversion) | no disponible | Regresion tabular | OpenMDW 1.1 | HuggingFace y GitHub de NVIDIA |
+| general-forecast/kumo-tabular-small-regressor | 28,5 M | no disponible | Regresion tabular (999 cuantiles) | OpenMDW 1.1 | Hugging Face, formato safetensors |
+| nvidia/Kumo-Tabular (modelo base) | no disponible (el submodelo small/regressor.pt es el origen de esta conversion) | no disponible | Regresion tabular | OpenMDW 1.1 | Hugging Face y GitHub de NVIDIA |
 | Otros modelos fundacionales tabulares (por ejemplo, la familia TabPFN) | no disponible | no disponible | Clasificacion y regresion tabular con in-context learning | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de rendimiento comparativo entre estas alternativas, por lo que la comparativa se limita a parametros declarados, tarea y licencia.
@@ -83,7 +83,7 @@ La informacion proporcionada no incluye datos de rendimiento comparativo entre e
 - Riesgo de alucinacion: no aplica en el sentido habitual de los modelos de lenguaje, pero si existe riesgo de predicciones poco fiables fuera de la distribucion de datos con la que se entreno el modelo.
 - No se declara la longitud de contexto ni el numero maximo de filas o columnas de entrada, por lo que el comportamiento con tablas grandes o con muchas caracteristicas es desconocido.
 - No se declaran idiomas soportados; el modelo opera sobre caracteristicas tabulares, no sobre texto libre.
-- Restricciones de licencia: se distribuye bajo OpenMDW 1.1, etiquetada como `license: other` en HuggingFace. Es imprescindible revisar el fichero `LICENSE` del repositorio y los terminos de OpenMDW 1.1 antes de un uso comercial. Los derechos de autor de NVIDIA se mantienen en el aviso de licencia.
+- Restricciones de licencia: se distribuye bajo OpenMDW 1.1, etiquetada como `license: other` en Hugging Face. Es imprescindible revisar el fichero `LICENSE` del repositorio y los terminos de OpenMDW 1.1 antes de un uso comercial. Los derechos de autor de NVIDIA se mantienen en el aviso de licencia.
 - Al ser una conversion de pesos sin cambios, cualquier limitacion del modelo original de NVIDIA se traslada integramente a esta version.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion comunitaria documentada.
 - Para produccion, conviene validar el modelo contra un baseline tabular clasico (XGBoost, LightGBM) en el dominio concreto antes de sustituir un sistema existente.
@@ -91,8 +91,8 @@ La informacion proporcionada no incluye datos de rendimiento comparativo entre e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/general-forecast/kumo-tabular-small-regressor
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Kumo-Tabular
+- Modelo en Hugging Face: https://huggingface.co/general-forecast/kumo-tabular-small-regressor
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Kumo-Tabular
 - Repositorio NVIDIA structured-data-models: https://github.com/NVIDIA/structured-data-models
 - Libreria gfi: https://github.com/generalforecast/gfi
-- Licencia OpenMDW 1.1: consultar el fichero `LICENSE` del repositorio en HuggingFace
+- Licencia OpenMDW 1.1: consultar el fichero `LICENSE` del repositorio en Hugging Face

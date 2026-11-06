@@ -79,7 +79,7 @@ La comparativa se centra en el mismo modelo en su formato original, así como en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/software-mansion/react-native-executorch-all-MiniLM-L6-v2
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-all-MiniLM-L6-v2
 - Modelo original all-MiniLM-L6-v2: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Repositorio GitHub de React Native ExecuTorch: https://github.com/software-mansion/react-native-executorch
 - Documentación de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started

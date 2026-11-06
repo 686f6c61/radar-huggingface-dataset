@@ -75,7 +75,7 @@ La principal diferencia de K2-Horizon es su contexto de 512K, muy superior al de
 
 - Modelo cuantizado a 4 bits: puede presentar perdida de precision en tareas de razonamiento complejo o generacion de codigo muy especifico en comparacion con la version en precision completa.
 - Solo soporta ingles de forma fiable; otros idiomas pueden producir resultados degradados.
-- Requiere `--trust-remote-code` para cargar el adaptador personalizado, lo que implica ejecutar codigo no verificado por HuggingFace.
+- Requiere `--trust-remote-code` para cargar el adaptador personalizado, lo que implica ejecutar codigo no verificado por Hugging Face.
 - No incluye capacidades de vision ni audio; es exclusivamente de texto.
 - El modelo base no es de acceso publico en su version original, por lo que no se puede auditar su entrenamiento ni verificar sus datos.
 - La ventana de contexto de 512K consume una cantidad significativa de memoria; en equipos con menos de 16 GB de RAM unificada, el rendimiento puede degradarse o producirse errores de memoria.
@@ -83,7 +83,7 @@ La principal diferencia de K2-Horizon es su contexto de 512K, muy superior al de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abenzerps/K2-Horizon-3.7B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/abenzerps/K2-Horizon-3.7B-MLX-4bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Revision del modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B/tree/633f52ad28b17edeabd82afc61d2d13b4c59a561
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

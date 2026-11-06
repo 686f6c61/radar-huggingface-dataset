@@ -25,7 +25,7 @@ Su relevancia es, por tanto, la de un artefacto de investigación reproducible y
 | Librería | PEFT |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 0,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-23 |
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
 | `praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-ctxq` | Adaptador sobre 2,6 mil millones | No disponible (base: 8.192) | No disponible (base: términos de Gemma) | Restringido (gated) | LoRA de investigación |
-| `praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-mix` | Adaptador sobre 2,6 mil millones | No disponible (base: 8.192) | No disponible | Público en HuggingFace | LoRA de investigación, estrategia "misto" |
-| `google/gemma-2-2b` | 2,6 mil millones | 8.192 tokens | Términos de uso de Gemma | Gated en HuggingFace | Modelo base preentrenado |
-| `google/gemma-2-2b-it` | 2,6 mil millones | 8.192 tokens | Términos de uso de Gemma | Gated en HuggingFace | Modelo base ajustado a instrucciones |
+| `praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-mix` | Adaptador sobre 2,6 mil millones | No disponible (base: 8.192) | No disponible | Público en Hugging Face | LoRA de investigación, estrategia "misto" |
+| `google/gemma-2-2b` | 2,6 mil millones | 8.192 tokens | Términos de uso de Gemma | Gated en Hugging Face | Modelo base preentrenado |
+| `google/gemma-2-2b-it` | 2,6 mil millones | 8.192 tokens | Términos de uso de Gemma | Gated en Hugging Face | Modelo base ajustado a instrucciones |
 | `Qwen/Qwen2.5-1.5B-Instruct` | 1,54 mil millones | 32.768 tokens | Apache 2.0 | Público | Alternativa pequeña, multilingüe y de uso comercial permisivo |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la información consultada; la comparación se limita a parámetros, contexto, licencia y disponibilidad.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 - No es un modelo autónomo: requiere descargar `google/gemma-2-2b` por separado (acceso gated) y cargar el adaptador con PEFT; sin el base, el repositorio es inutilizable.
 - Ausencia total de documentación: no hay model card, hiperparámetros, composición del dataset ni evaluación, lo que impide auditar el comportamiento del adaptador.
 - Licencia del adaptador no especificada: al derivar de Gemma 2, los términos de uso de Gemma condicionan la redistribución y el uso comercial; conviene verificar la cláusula aplicable antes de cualquier despliegue.
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la automatización de pipelines.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la automatización de pipelines.
 - Sesgos: no documentados. Al heredar el corpus de entrenamiento del modelo base y el corpus de ajuste, es esperable un sesgo hacia el dominio y la variedad dialectal o cultural del corpus italiano utilizado, no cuantificado.
 - Riesgo de alucinación: alto en contenidos factuales de dominio (datos históricos, ubicaciones, horarios), ya que un ajuste LoRA estrecho no incorpora verificación factual y no hay evaluación que lo respalde.
 - Olvido catastrófico: un ajuste de dominio sobre un modelo de 2,6 mil millones tiende a degradar capacidades generales y multilingües; no se ha medido la magnitud.
@@ -99,5 +99,5 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 - Repositorio del adaptador: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-ctxq
 - Variante hermana (estrategia "mix"): https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-mix
 - Modelo base: https://huggingface.co/google/gemma-2-2b
-- Perfil de la organización en HuggingFace (incluye datasets): https://huggingface.co/praiselab-picuslab/datasets
+- Perfil de la organización en Hugging Face (incluye datasets): https://huggingface.co/praiselab-picuslab/datasets
 - Organización en GitHub: https://github.com/PRAISELab-PicusLab

@@ -77,7 +77,7 @@ HiDream-I1 destaca por su mayor número de parámetros (17B frente a 12B de FLUX
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI
 - Guía de ejemplo en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/hidream/
 - Tutorial de ComfyUI Docs: https://docs.comfy.org/tutorials/image/hidream/hidream-i1
 - Blog de Comfy sobre soporte nativo: https://blog.comfy.org/p/hidream-i1-native-support-in-comfyui

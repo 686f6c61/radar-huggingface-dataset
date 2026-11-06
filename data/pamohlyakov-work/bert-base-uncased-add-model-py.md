@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pamohlyakov-work/bert-base-uncased-add-model-py` es una reproducción del modelo BERT base (uncased) publicada por el usuario pamohlyakov-work en HuggingFace. Se trata de una copia del clásico `bert-base-uncased` de Google, un transformer encoder bidireccional de 110.106.428 parámetros (según el recuento de safetensors del repositorio) preentrenado sobre texto en inglés. El repositorio no aporta ninguna modificación documentada respecto al original: la model card es la que el equipo de HuggingFace escribió para `bert-base-uncased`, y las etiquetas del repositorio apuntan a los mismos datasets (BookCorpus y Wikipedia) y al mismo paper fundacional (arXiv:1810.04805).
+`pamohlyakov-work/bert-base-uncased-add-model-py` es una reproducción del modelo BERT base (uncased) publicada por el usuario pamohlyakov-work en Hugging Face. Se trata de una copia del clásico `bert-base-uncased` de Google, un transformer encoder bidireccional de 110.106.428 parámetros (según el recuento de safetensors del repositorio) preentrenado sobre texto en inglés. El repositorio no aporta ninguna modificación documentada respecto al original: la model card es la que el equipo de Hugging Face escribió para `bert-base-uncased`, y las etiquetas del repositorio apuntan a los mismos datasets (BookCorpus y Wikipedia) y al mismo paper fundacional (arXiv:1810.04805).
 
 El modelo resuelve tareas de comprensión del lenguaje (no de generación): fue preentrenado con los objetivos de masked language modeling (MLM) y next sentence prediction (NSP), de modo que produce representaciones contextuales bidireccionales que se reutilizan mediante fine-tuning para clasificación de secuencias, etiquetado de tokens, question answering extractivo o extracción de características. Sigue siendo relevante como línea base de bajo coste: 110 M de parámetros caben en cualquier GPU de consumo e incluso en CPU, y su licencia Apache-2.0 permite uso comercial sin restricciones.
 
@@ -93,7 +93,7 @@ No hay datos de rendimiento en la información disponible que permitan comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pamohlyakov-work/bert-base-uncased-add-model-py
+- Repositorio en Hugging Face: https://huggingface.co/pamohlyakov-work/bert-base-uncased-add-model-py
 - Modelo original: https://huggingface.co/bert-base-uncased
 - Paper de BERT: https://arxiv.org/abs/1810.04805
 - Repositorio de referencia de Google Research: https://github.com/google-research/bert

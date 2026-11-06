@@ -132,7 +132,7 @@ No disponible. La informacion proporcionada no identifica otros sustratos de mem
 | Longitud de contexto | no aplicable (almacen de hipervectores d=2048) | no disponible |
 | Rendimiento | autotests PASS y series de perdida propias | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas, 1 like | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas, 1 like | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -151,5 +151,5 @@ No disponible. La informacion proporcionada no identifica otros sustratos de mem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeechimp/holo-silence
+- Modelo en Hugging Face: https://huggingface.co/zeechimp/holo-silence
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, a papers, a repositorios ni a demostraciones. Las busquedas devolvieron exclusivamente resultados de foros sin relacion alguna con el proyecto, por lo que se omiten.

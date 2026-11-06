@@ -78,7 +78,7 @@ La comparativa se limita a los modelos de la misma familia Phi-4-mini. No se dis
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-reasoning-phi4-mini-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-phi4-mini-gguf)
+- [Hugging Face - AbteeXAILab/lumynax-reasoning-phi4-mini-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-phi4-mini-gguf)
 - [Repositorio fuente en GitHub](https://github.com/Aimaghsoodi/lumynax-reasoning-phi4-mini-gguf)
 - [AbteeX AI Labs](https://abteex.com)
 - [LumynaX](https://lumynax.com)

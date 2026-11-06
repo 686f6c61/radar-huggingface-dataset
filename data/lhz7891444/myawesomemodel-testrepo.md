@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario lhz7891444 bajo licencia MIT. Por los metadatos disponibles (tags transformers, pytorch, bert, feature-extraction), el repositorio esta etiquetado como un modelo basado en arquitectura BERT destinado a tareas de extraccion de caracteristicas (feature-extraction). Sin embargo, el repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, lo que indica que no contiene pesos publicados y que probablemente se trata de una prueba o plantilla.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario lhz7891444 bajo licencia MIT. Por los metadatos disponibles (tags transformers, pytorch, bert, feature-extraction), el repositorio esta etiquetado como un modelo basado en arquitectura BERT destinado a tareas de extraccion de caracteristicas (feature-extraction). Sin embargo, el repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, lo que indica que no contiene pesos publicados y que probablemente se trata de una prueba o plantilla.
 
 Existe una contradiccion importante entre los metadatos y la model card. Mientras que los tags apuntan a un encoder BERT para feature-extraction, el README describe un modelo de razonamiento con "thinking mode", soporte de function calling, mejora en tareas de matematicas y programacion, y cifras de benchmarks genericas atribuidas a entidades anonimas ("Model1", "Model2", "MyAwesomeModel"). No hay informacion verificable sobre parametros, contexto, datos de entrenamiento ni idiomas soportados.
 
@@ -23,7 +23,7 @@ Dado que el repositorio esta vacio y la documentacion parece una plantilla no pe
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura real del modelo. Los tags de HuggingFace apuntan a bert y a la tarea feature-extraction, lo que sugiere un transformer encoder, pero la model card describe un modelo generativo de razonamiento con modo de pensamiento ("thinking"), soporte de function calling y busqueda web. Esta discrepancia no puede resolverse con los datos disponibles.
+No hay informacion verificable sobre la arquitectura real del modelo. Los tags de Hugging Face apuntan a bert y a la tarea feature-extraction, lo que sugiere un transformer encoder, pero la model card describe un modelo generativo de razonamiento con modo de pensamiento ("thinking"), soporte de function calling y busqueda web. Esta discrepancia no puede resolverse con los datos disponibles.
 
 La model card afirma que el modelo fue sometido a un "post-training" con optimizacion algoritmica y mayores recursos de computo, y menciona plantillas de system prompt, temperatura recomendada (T = 0.6) y plantillas para carga de ficheros y busqueda web. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas como RLHF o DPO. El repositorio no contiene pesos, por lo que no es posible inspeccionar la arquitectura ni reproducir el entrenamiento.
 
@@ -100,7 +100,7 @@ No disponible. Dado que no se puede determinar la arquitectura, el tamano ni las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lhz7891444/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/lhz7891444/MyAwesomeModel-TestRepo
 - Repositorio de codigo del autor: no disponible
 - Paper: no disponible
 - Blog o web oficial del modelo: no disponible

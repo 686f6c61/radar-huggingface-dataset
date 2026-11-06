@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| laya-typed-decisions-coreml-adaptive-fp32 | Conversion Core ML FP32 de clasificacion con salidas tipadas | 1024 tokens | apache-2.0 | HuggingFace, requiere laya-coreml y Apple silicon |
-| convaiinnovations/laya-typed-decisions (upstream) | Modelo original de clasificacion con salidas tipadas | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| laya-typed-decisions-coreml-adaptive-fp32 | Conversion Core ML FP32 de clasificacion con salidas tipadas | 1024 tokens | apache-2.0 | Hugging Face, requiere laya-coreml y Apple silicon |
+| convaiinnovations/laya-typed-decisions (upstream) | Modelo original de clasificacion con salidas tipadas | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Modelo Core ML de forma fija para ANE del mismo upstream | Variante de forma fija, precision no detallada | no disponible | no disponible | Repositorios de un solo grafo en el Hub, segun el autor |
 
 No se dispone de datos de rendimiento comparables entre estas variantes. Para alternativas fuera del ecosistema Core ML no hay informacion en la documentacion proporcionada.
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparables entre estas variantes. Para al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aac6fef/laya-typed-decisions-coreml-adaptive-fp32
+- Repositorio Hugging Face: https://huggingface.co/aac6fef/laya-typed-decisions-coreml-adaptive-fp32
 - Modelo base: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Evidencia de calificacion del runtime (QUALIFICATION_0_5_1): https://github.com/mizorewww/laya-coreml/blob/main/docs/QUALIFICATION_0_5_1.md

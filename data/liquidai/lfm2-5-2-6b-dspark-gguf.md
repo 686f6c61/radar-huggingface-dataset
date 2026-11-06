@@ -93,11 +93,11 @@ No se han encontrado drafters de otras empresas con caracteristicas equivalentes
 
 ## Enlaces
 
-- Repositorio HuggingFace del drafter: https://huggingface.co/LiquidAI/LFM2.5-2.6B-DSpark-GGUF
+- Repositorio Hugging Face del drafter: https://huggingface.co/LiquidAI/LFM2.5-2.6B-DSpark-GGUF
 - Modelo base (safetensors): https://huggingface.co/LiquidAI/LFM2.5-2.6B-DSpark
 - Modelo objetivo en GGUF: https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF
 - Blog de Liquid AI sobre DSpark: https://www.liquid.ai/blog/lfm2.5-dspark
-- Blog de HuggingFace sobre DSpark: https://huggingface.co/blog/LiquidAI/lfm25-dspark
+- Blog de Hugging Face sobre DSpark: https://huggingface.co/blog/LiquidAI/lfm25-dspark
 - Documentacion de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground de Liquid AI: https://playground.liquid.ai/
 - Comunidad Discord: https://discord.com/invite/liquid-ai

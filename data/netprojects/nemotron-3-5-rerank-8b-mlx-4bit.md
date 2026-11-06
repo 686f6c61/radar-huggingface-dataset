@@ -82,9 +82,9 @@ Velocidad (texto):
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| netprojects/Nemotron-3.5-Rerank-8B-mlx-4bit | 8.381 M | 32.768 | Si (texto + imagen) | OpenMDW 1.1 | HuggingFace, MLX |
-| nvidia/Nemotron-3.5-Rerank-8B-BF16 | 8.381 M (bf16) | 32.768 | Si (texto + imagen) | OpenMDW 1.1 | HuggingFace, transformers |
-| mistralai/Ministral-3-8B-Instruct-2512-BF16 | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| netprojects/Nemotron-3.5-Rerank-8B-mlx-4bit | 8.381 M | 32.768 | Si (texto + imagen) | OpenMDW 1.1 | Hugging Face, MLX |
+| nvidia/Nemotron-3.5-Rerank-8B-BF16 | 8.381 M (bf16) | 32.768 | Si (texto + imagen) | OpenMDW 1.1 | Hugging Face, transformers |
+| mistralai/Ministral-3-8B-Instruct-2512-BF16 | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 La comparativa con otros rerankers de la misma categoria (por ejemplo, modelos de la familia BGE reranker o Cohere Rerank) no esta disponible en la informacion proporcionada. La alternativa mas directa es el modelo original de NVIDIA en bf16, que ofrece la misma funcionalidad pero requiere mas memoria y no esta optimizado para Apple Silicon.
 
@@ -101,7 +101,7 @@ La comparativa con otros rerankers de la misma categoria (por ejemplo, modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netprojects/Nemotron-3.5-Rerank-8B-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/netprojects/Nemotron-3.5-Rerank-8B-mlx-4bit
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16
 - Modelo base de la torre de lenguaje: mistralai/Ministral-3-8B-Instruct-2512-BF16 (referenciado en la model card)
 - Codigo de inferencia y servidor: https://github.com/internet-projects/nemotron-retrieval-mlx

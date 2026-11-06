@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BernardHood/Mistral-Nemo-12B-abliterated-LORA-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BernardHood/Mistral-Nemo-12B-abliterated-LORA-Q8_0-GGUF
 - Adaptador original: https://huggingface.co/nbeerbower/Mistral-Nemo-12B-abliterated-LORA
 - Espacio GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentacion de llama.cpp server: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

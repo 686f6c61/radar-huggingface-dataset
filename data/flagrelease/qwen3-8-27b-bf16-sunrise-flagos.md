@@ -66,7 +66,7 @@ Los resultados muestran que el stack FlagOS mantiene un rendimiento comparable a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-BF16-sunrise-FlagOS | 27,78B (MoE) | 204.800 | Apache-2.0 | HuggingFace, ModelScope |
+| Qwen3.8-27B-BF16-sunrise-FlagOS | 27,78B (MoE) | 204.800 | Apache-2.0 | Hugging Face, ModelScope |
 | Qwen3.8-2.4T-A95B (original) | 2,4T total, 95B activos | no disponible | Apache-2.0 | no disponible |
 | Qwen 3.5 (base arquitectonica) | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,8 +84,8 @@ No se dispone de informacion suficiente para comparar con otros modelos de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-sunrise-FlagOS
-- Organizacion FlagRelease en HuggingFace: https://huggingface.co/FlagRelease
+- Modelo en Hugging Face: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-sunrise-FlagOS
+- Organizacion FlagRelease en Hugging Face: https://huggingface.co/FlagRelease
 - Repositorio FlagRelease en GitHub: https://github.com/flagos-ai/FlagRelease
 - Organizacion FlagOS en GitHub: https://github.com/flagos-ai
 - Variante FP8 para Moore Threads: https://huggingface.co/FlagRelease/Qwen3.8-2.4T-A95B-FP8-mthreads-FlagOS

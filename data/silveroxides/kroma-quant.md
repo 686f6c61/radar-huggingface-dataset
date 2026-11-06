@@ -63,6 +63,6 @@ No disponible. No se han proporcionado datos comparativos con otros modelos de t
 
 ## Enlaces
 
-- [HuggingFace: silveroxides/Kroma-Quant](https://huggingface.co/silveroxides/Kroma-Quant)
+- [Hugging Face: silveroxides/Kroma-Quant](https://huggingface.co/silveroxides/Kroma-Quant)
 - [Civitai: Kroma [w4a8] - v0.2 turbo](https://civitai.com/models/2845688/kroma-w4a8)
 - [ComfyUI Wiki: Kroma v0.2](https://comfyui-wiki.com/en/news/2026-08-09-kroma-v0-2)

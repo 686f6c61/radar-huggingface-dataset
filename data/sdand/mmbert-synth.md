@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sdand/mmbert-synth es un modelo publicado en HuggingFace por el usuario sdand. El repositorio contiene únicamente pesos en formato safetensors y la etiqueta de arquitectura "modernbert", sin model card, sin pipeline declarado, sin licencia especificada y sin idiomas documentados. El recuento real de parámetros extraído de los ficheros safetensors es de 140.642.306 (aproximadamente 141 millones), lo que lo sitúa en el rango de un encoder de tamano base. El repositorio ocupa 0,6 GB.
+sdand/mmbert-synth es un modelo publicado en Hugging Face por el usuario sdand. El repositorio contiene únicamente pesos en formato safetensors y la etiqueta de arquitectura "modernbert", sin model card, sin pipeline declarado, sin licencia especificada y sin idiomas documentados. El recuento real de parámetros extraído de los ficheros safetensors es de 140.642.306 (aproximadamente 141 millones), lo que lo sitúa en el rango de un encoder de tamano base. El repositorio ocupa 0,6 GB.
 
 Por el tag "modernbert" y por el orden de magnitud del recuento de parámetros, el modelo parece corresponder a la familia ModernBERT, una arquitectura transformer encoder-only con atención lineal y RoPE, pensada para tareas de comprensión y representación de texto en lugar de generación autoregresiva. Sin embargo, esta correspondencia es una inferencia a partir de la etiqueta y no está confirmada por ninguna documentación oficial del autor.
 
@@ -64,7 +64,7 @@ Estimaciones basadas únicamente en el recuento de parámetros (140,6 M), no en 
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente en la práctica. Una RTX 3060, RTX 4060, RTX 4090, A100 o H100 lo ejecutan sin problema; las GPU de gama alta quedarán infrautilizadas salvo que se use un tamaño de lote muy grande.
 - Cabe en GPU de consumo: sí, con margen amplio, en cualquier GPU consumer moderna (incluso integradas con memoria compartida suficiente).
 - CPU: es viable para inferencia en CPU gracias al reducido número de parámetros y al tag modernbert, que en su familia original incorpora kernels optimizados; sin confirmar para esta versión.
-- Opciones de despliegue: al publicarse solo safetensors, se puede servir con HuggingFace Transformers, Text Embeddings Inference (TEI), Optimum o FastAPI + PyTorch. vLLM y TGI no están pensados para encoders puros de este tipo en todos los casos. Las cuantizaciones GGUF para llama.cpp u Ollama no están publicadas y habría que generarlas.
+- Opciones de despliegue: al publicarse solo safetensors, se puede servir con Hugging Face Transformers, Text Embeddings Inference (TEI), Optimum o FastAPI + PyTorch. vLLM y TGI no están pensados para encoders puros de este tipo en todos los casos. Las cuantizaciones GGUF para llama.cpp u Ollama no están publicadas y habría que generarlas.
 - Latencia y throughput estimados: no disponibles. No hay ninguna medición publicada y no se debe extrapolar sin pruebas.
 
 ## Comparativa con modelos similares
@@ -73,11 +73,11 @@ La comparativa se establece con encoders de tamano base ampliamente conocidos. L
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sdand/mmbert-synth | 140,6 M | No disponible | No disponible | HuggingFace (23 descargas) |
-| ModernBERT-base | ~149 M | 8.192 tokens | Apache 2.0 | HuggingFace (ampliamente usado) |
-| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace (muy extendido) |
-| RoBERTa-base | ~125 M | 512 tokens | MIT | HuggingFace |
-| DeBERTa-v3-base | ~184 M | 512 tokens | MIT | HuggingFace |
+| sdand/mmbert-synth | 140,6 M | No disponible | No disponible | Hugging Face (23 descargas) |
+| ModernBERT-base | ~149 M | 8.192 tokens | Apache 2.0 | Hugging Face (ampliamente usado) |
+| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face (muy extendido) |
+| RoBERTa-base | ~125 M | 512 tokens | MIT | Hugging Face |
+| DeBERTa-v3-base | ~184 M | 512 tokens | MIT | Hugging Face |
 
 No es posible comparar rendimiento porque sdand/mmbert-synth no tiene benchmarks publicados ni documentación de evaluación.
 
@@ -94,7 +94,7 @@ No es posible comparar rendimiento porque sdand/mmbert-synth no tiene benchmarks
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdand/mmbert-synth
+- Hugging Face: https://huggingface.co/sdand/mmbert-synth
 - Paper de ModernBERT (arquitectura referenciada por el tag): https://arxiv.org/abs/2412.13663
-- Repositorio de ModernBERT en HuggingFace: https://huggingface.co/answerdotai/ModernBERT-base
+- Repositorio de ModernBERT en Hugging Face: https://huggingface.co/answerdotai/ModernBERT-base
 - No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo concreto.

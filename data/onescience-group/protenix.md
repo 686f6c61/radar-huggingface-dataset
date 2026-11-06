@@ -72,8 +72,8 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/protenix
-- Dataset en HuggingFace: https://huggingface.co/datasets/OneScience-Group/protenix_dataset
+- Hugging Face: https://huggingface.co/OneScience-Group/protenix
+- Dataset en Hugging Face: https://huggingface.co/datasets/OneScience-Group/protenix_dataset
 - Repositorio principal OneScience (Gitee): https://gitee.com/onescience-ai/onescience
 - Repositorio de habilidades OneScience (Gitee): https://gitee.com/onescience-ai/oneskills
 - Repositorio principal OneScience (GitHub): https://github.com/onescience-ai/OneScience

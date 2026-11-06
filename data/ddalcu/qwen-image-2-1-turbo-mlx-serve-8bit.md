@@ -83,9 +83,9 @@ La comparacion mas directa es con las otras variantes del mismo modelo base, ya 
 
 | Version | Formato | Pico de memoria | Texto-a-imagen 1024x1024 | Edicion con 1 referencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen-Image-2.1-Turbo (bf16) | safetensors diffusers | 31,4 GB | 7,2 s | 11,2 s | qwen-research | HuggingFace (Qwen/Qwen-Image-2.1-Turbo) |
-| Qwen-Image-2.1-Turbo MLX-Serve 8 bits | safetensors MLX | 19,3 GB | 7,8 s | 12,5 s | qwen-research | HuggingFace (ddalcu/Qwen-Image-2.1-Turbo-MLX-Serve-8bit) |
-| Qwen-Image-2.1-Turbo MLX-Serve 4 bits | safetensors MLX | 12,8 GB | 8,8 s | 11,9 s | qwen-research | HuggingFace (pack del mismo autor) |
+| Qwen-Image-2.1-Turbo (bf16) | safetensors diffusers | 31,4 GB | 7,2 s | 11,2 s | qwen-research | Hugging Face (Qwen/Qwen-Image-2.1-Turbo) |
+| Qwen-Image-2.1-Turbo MLX-Serve 8 bits | safetensors MLX | 19,3 GB | 7,8 s | 12,5 s | qwen-research | Hugging Face (ddalcu/Qwen-Image-2.1-Turbo-MLX-Serve-8bit) |
+| Qwen-Image-2.1-Turbo MLX-Serve 4 bits | safetensors MLX | 12,8 GB | 8,8 s | 11,9 s | qwen-research | Hugging Face (pack del mismo autor) |
 
 Frente a otras familias de difusion texto-a-imagen no se dispone de datos comparativos en la informacion proporcionada, por lo que no se incluyen aqui.
 
@@ -103,10 +103,10 @@ Frente a otras familias de difusion texto-a-imagen no se dispone de datos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddalcu/Qwen-Image-2.1-Turbo-MLX-Serve-8bit
+- Modelo en Hugging Face: https://huggingface.co/ddalcu/Qwen-Image-2.1-Turbo-MLX-Serve-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Repositorio de mlx-serve en GitHub: https://github.com/ddalcu/mlx-serve
 - Descarga de la aplicacion: https://github.com/ddalcu/mlx-serve/releases/latest
 - Sitio web de mlx-serve: https://mlxserve.com/
 - Ejemplo de imagen: https://huggingface.co/ddalcu/Qwen-Image-2.1-Turbo-MLX-Serve-8bit/resolve/main/sample.jpg
-- Licencia del pack: LICENSE y NOTICE del repositorio del modelo en HuggingFace
+- Licencia del pack: LICENSE y NOTICE del repositorio del modelo en Hugging Face

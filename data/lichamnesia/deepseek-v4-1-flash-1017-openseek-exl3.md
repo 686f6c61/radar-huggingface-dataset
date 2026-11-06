@@ -94,11 +94,11 @@ No hay datos suficientes publicados para comparar rendimiento en benchmarks con 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/LichAmnesia/DeepSeek-V4.1-Flash-1017-OpenSeek-EXL3
+- Ficha en Hugging Face: https://huggingface.co/LichAmnesia/DeepSeek-V4.1-Flash-1017-OpenSeek-EXL3
 - Archivos del repositorio: https://huggingface.co/LichAmnesia/DeepSeek-V4.1-Flash-1017-OpenSeek-EXL3/tree/main
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - OpenSeek Recipe (GitHub): https://github.com/LichAmnesia/openseek-recipe
 - Runbook del despliegue: https://github.com/LichAmnesia/openseek-recipe/blob/969d0e87d688218d48125417bdceaf85eff40e60/docs/deepseek-v41-flash-1017.md
 - Evidencia de mediciones: recipe/results/2026-10-26-deepseek-2.7bpw-eager/SUMMARY.md (ruta relativa en el repositorio OpenSeek Recipe)
 - Tarjeta del cuantizador original: upstream/README.md (ruta relativa en el repositorio)
-- Imagen de resultados: assets/deepseek-1017-2.7bpw-card.png (incluida en el repositorio de HuggingFace)
+- Imagen de resultados: assets/deepseek-1017-2.7bpw-card.png (incluida en el repositorio de Hugging Face)

@@ -81,10 +81,10 @@ El autor señala que en un prompt abierto el SFT a 25 pasos produce aproximadame
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HaDeS-MOSS-Turbo v0.6 | LoRA few-step (rango 2, capas 24-41) | 3,4 MB | No aplica | 4 pasos/CFG 1; 6/6 en layout JSON; 4/6 en título de dos líneas | Apache 2.0 | HuggingFace |
-| HaDeS-MOSS-Turbo-Diverse v0.6 | LoRA few-step (rango 2, capas 24-41) | 3,4 MB | No aplica | 4 pasos/CFG 1; 5/6 en layout JSON; mayor diversidad de semillas | Apache 2.0 | HuggingFace |
-| akhaliq/MOSS-Image-SFT-4-steps | LoRA few-step (rango 128, todas las capas) | 1,2 GB | No aplica | 4 pasos/CFG 1; 5/6 en layout JSON; 0/6 en título de dos líneas | Apache 2.0 | HuggingFace |
-| MOSS-Image SFT (base) | Modelo de difusión completo | No disponible | No aplica | 25 pasos/CFG 2.5; ~10/16 mujeres asiáticas en prompt abierto | Apache 2.0 | HuggingFace (OpenMOSS-Team) |
+| HaDeS-MOSS-Turbo v0.6 | LoRA few-step (rango 2, capas 24-41) | 3,4 MB | No aplica | 4 pasos/CFG 1; 6/6 en layout JSON; 4/6 en título de dos líneas | Apache 2.0 | Hugging Face |
+| HaDeS-MOSS-Turbo-Diverse v0.6 | LoRA few-step (rango 2, capas 24-41) | 3,4 MB | No aplica | 4 pasos/CFG 1; 5/6 en layout JSON; mayor diversidad de semillas | Apache 2.0 | Hugging Face |
+| akhaliq/MOSS-Image-SFT-4-steps | LoRA few-step (rango 128, todas las capas) | 1,2 GB | No aplica | 4 pasos/CFG 1; 5/6 en layout JSON; 0/6 en título de dos líneas | Apache 2.0 | Hugging Face |
+| MOSS-Image SFT (base) | Modelo de difusión completo | No disponible | No aplica | 25 pasos/CFG 2.5; ~10/16 mujeres asiáticas en prompt abierto | Apache 2.0 | Hugging Face (OpenMOSS-Team) |
 
 La comparativa se limita a los modelos mencionados en la información proporcionada; no se dispone de datos de otros adaptadores few-step para MOSS-Image ni de benchmarks estandarizados que permitan comparaciones más amplias.
 
@@ -102,7 +102,7 @@ La comparativa se limita a los modelos mencionados en la información proporcion
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/DeVilDoNia/HaDeS-MOSS-Turbo
+- Hugging Face del modelo: https://huggingface.co/DeVilDoNia/HaDeS-MOSS-Turbo
 - Modelo base MOSS-Image SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - LoRA de referencia de akhaliq: https://huggingface.co/akhaliq/MOSS-Image-SFT-4-steps
 - Repositorio HaDeS MOSS Suite (scripts y resultados): https://github.com/Devildonia/HaDeS-MOSS-Suite

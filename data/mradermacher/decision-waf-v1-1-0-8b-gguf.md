@@ -4,7 +4,7 @@
 
 Decision-WAF-V1.1-0.8B es un modelo lingüístico de tamaño reducido (752 millones de parámetros) desarrollado por 0xBrandon, especializado en clasificación de peticiones HTTP para sistemas de seguridad defensiva, concretamente como componente de decisión para un firewall de aplicaciones web (WAF, Web Application Firewall). El modelo se publica bajo licencia Apache 2.0 y está entrenado para trabajar en inglés, con la tarea de determinar si una petición web es legítima o maliciosa.
 
-Esta ficha corresponde a la cuantización GGUF realizada por mradermacher, un creador conocido por generar versiones cuantizadas estáticas de modelos populares de HuggingFace para su uso en llama.cpp y herramientas compatibles. El repositorio incluye cuants desde Q2_K (0,5 GB) hasta f16 (1,6 GB), lo que permite desplegar el modelo prácticamente en cualquier hardware, incluidas CPU domésticas.
+Esta ficha corresponde a la cuantización GGUF realizada por mradermacher, un creador conocido por generar versiones cuantizadas estáticas de modelos populares de Hugging Face para su uso en llama.cpp y herramientas compatibles. El repositorio incluye cuants desde Q2_K (0,5 GB) hasta f16 (1,6 GB), lo que permite desplegar el modelo prácticamente en cualquier hardware, incluidas CPU domésticas.
 
 Su relevancia radica en la tendencia actual de usar modelos pequeños y especializados para tareas de infraestructura de seguridad: un modelo de 0,8B puede clasificar peticiones con latencias mínimas y coste energético muy bajo, en lugar de depender exclusivamente de reglas estáticas o firmas. No se dispone de información sobre la arquitectura base exacta, la longitud de contexto ni los datos de entrenamiento del modelo original.
 

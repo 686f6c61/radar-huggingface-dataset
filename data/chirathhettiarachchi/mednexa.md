@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MedNexa es un adaptador LoRA publicado por Chirath Hettiarachchi, investigador de la Australian National University, diseñado para ajustar el modelo base Qwen/Qwen2.5-0.5B-Instruct mediante fine-tuning supervisado (SFT). El repositorio en HuggingFace no incluye una model card completa: la mayoría de los campos están marcados como "More Information Needed", y no se proporcionan detalles sobre el dataset de entrenamiento, los hiperparámetros, el rendimiento o los casos de uso previstos.
+MedNexa es un adaptador LoRA publicado por Chirath Hettiarachchi, investigador de la Australian National University, diseñado para ajustar el modelo base Qwen/Qwen2.5-0.5B-Instruct mediante fine-tuning supervisado (SFT). El repositorio en Hugging Face no incluye una model card completa: la mayoría de los campos están marcados como "More Information Needed", y no se proporcionan detalles sobre el dataset de entrenamiento, los hiperparámetros, el rendimiento o los casos de uso previstos.
 
 El modelo se presenta como un adaptador PEFT (Parameter-Efficient Fine-Tuning) con pesos en formato safetensors, lo que indica que es una capa de ajuste ligera sobre el modelo base de 0.5B parámetros de Qwen. A pesar del nombre "MedNexa" que sugiere una orientación médica, no hay evidencia pública que confirme su dominio de especialización, ni benchmarks, ni documentación técnica. Su relevancia actual es limitada debido a la ausencia de información verificable y a su tamaño reducido.
 
@@ -21,7 +21,7 @@ El modelo se presenta como un adaptador PEFT (Parameter-Efficient Fine-Tuning) c
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-0.5B-Instruct, un transformer decoder con 0.5 mil millones de parametros, que emplea attention por ventanas deslizantes y normalizacion QKV, disenado para generacion de texto e instrucciones. El adaptador MedNexa se entrena mediante fine-tuning supervisado (SFT) usando la libreria TRL de HuggingFace, con PEFT 0.17.1. No se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas adicionales como RLHF o DPO. La unica innovacion tecnica destacable es el uso de LoRA, que reduce el coste de entrenamiento al congelar el modelo base y actualizar solo matrices de baja dimension.
+La arquitectura subyacente es la de Qwen2.5-0.5B-Instruct, un transformer decoder con 0.5 mil millones de parametros, que emplea attention por ventanas deslizantes y normalizacion QKV, disenado para generacion de texto e instrucciones. El adaptador MedNexa se entrena mediante fine-tuning supervisado (SFT) usando la libreria TRL de Hugging Face, con PEFT 0.17.1. No se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas adicionales como RLHF o DPO. La unica innovacion tecnica destacable es el uso de LoRA, que reduce el coste de entrenamiento al congelar el modelo base y actualizar solo matrices de baja dimension.
 
 ## Capacidades
 
@@ -59,9 +59,9 @@ No hay modelos comparables directos porque no se conocen las capacidades especif
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct | 0.5B | 32 768 | Apache 2.0 | HuggingFace |
-| MedNexa (adaptador) | 0.5B + LoRA | no disponible | no disponible | HuggingFace |
-| TinyLlama-1.1B-Chat | 1.1B | 2048 | Apache 2.0 | HuggingFace |
+| Qwen2.5-0.5B-Instruct | 0.5B | 32 768 | Apache 2.0 | Hugging Face |
+| MedNexa (adaptador) | 0.5B + LoRA | no disponible | no disponible | Hugging Face |
+| TinyLlama-1.1B-Chat | 1.1B | 2048 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparativa util.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para establecer una comparativa util.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chirathhettiarachchi/MedNexa
+- Hugging Face: https://huggingface.co/chirathhettiarachchi/MedNexa
 - Perfil del autor en Google Scholar: https://scholar.google.com/citations?user=gvLLPs8AAAAJ&hl=en
 - Perfil del autor en ANU: https://researchportalplus.anu.edu.au/en/persons/chirath-hettiarachchi/
 - Organizacion GitHub (sin contenido publico relevante): https://github.com/mednexa-ai

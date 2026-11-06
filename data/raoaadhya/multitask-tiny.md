@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raoaadhya/multitask-tiny` es un prototipo de investigación publicado en HuggingFace por el usuario raoaadhya. Se presenta como una implementación de arquitectura MobileViT orientada a tareas multitarea, con una escala denominada "nano". No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo ("smoke tests") y no un checkpoint con entrenamiento o benchmarks completados.
+`raoaadhya/multitask-tiny` es un prototipo de investigación publicado en Hugging Face por el usuario raoaadhya. Se presenta como una implementación de arquitectura MobileViT orientada a tareas multitarea, con una escala denominada "nano". No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo ("smoke tests") y no un checkpoint con entrenamiento o benchmarks completados.
 
 El repositorio contiene el código fuente (`model.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicialización. El número de parámetros registrado en los metadatos de safetensors es de 24.832, lo que sitúa al modelo en una escala extremadamente reducida, coherente con un prototipo de investigación y no con un modelo de propósito general.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| raoaadhya/multitask-tiny | 24.832 | no disponible | sin benchmarks | Apache 2.0 | HuggingFace (prototipo) |
+| raoaadhya/multitask-tiny | 24.832 | no disponible | sin benchmarks | Apache 2.0 | Hugging Face (prototipo) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (prototipos MobileViT multitarea de escala nano) en la información proporcionada.
@@ -75,12 +75,12 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - No se ha auditado robustez, equidad ni transferencia de dominio, según la propia model card.
 - Riesgo de alucinación y sesgos: no evaluables al no existir entrenamiento documentado.
 - No se declaran idiomas soportados ni limitaciones de contexto.
-- Requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace, al ser una implementación personalizada.
+- Requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face, al ser una implementación personalizada.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos aquí.
 - Licencia Apache 2.0 permite uso comercial del código y pesos, pero deben revisarse por separado los términos de los datos de origen si se usan datasets externos.
 - No apto para producción en su estado actual.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raoaadhya/multitask-tiny
+- Hugging Face: https://huggingface.co/raoaadhya/multitask-tiny
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

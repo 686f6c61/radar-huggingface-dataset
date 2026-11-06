@@ -2,9 +2,9 @@
 
 ## Resumen
 
-H6-Guard-Quantized-4bit es un modelo publicado en HuggingFace por el usuario neuroX3 bajo el identificador `neuroX3/H6-Guard-Quantized-4bit`. Se trata de una version cuantizada a 4 bits mediante bitsandbytes de un modelo cuya version original no se referencia en la informacion disponible. Las etiquetas del repositorio indican que el modelo base pertenece a la familia Qwen2, que la tarea declarada es generacion de texto con orientacion conversacional y que el formato de pesos es safetensors compatible con la libreria transformers y con text-generation-inference.
+H6-Guard-Quantized-4bit es un modelo publicado en Hugging Face por el usuario neuroX3 bajo el identificador `neuroX3/H6-Guard-Quantized-4bit`. Se trata de una version cuantizada a 4 bits mediante bitsandbytes de un modelo cuya version original no se referencia en la informacion disponible. Las etiquetas del repositorio indican que el modelo base pertenece a la familia Qwen2, que la tarea declarada es generacion de texto con orientacion conversacional y que el formato de pesos es safetensors compatible con la libreria transformers y con text-generation-inference.
 
-El nombre del repositorio sugiere una funcion de guardarrail o moderacion ("Guard"), pero la ficha de HuggingFace no incluye model card, descripcion, ni documentacion tecnica que lo confirme. Tampoco se especifican el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, por lo que se trata de una publicacion sin adopcion ni validacion por parte de la comunidad.
+El nombre del repositorio sugiere una funcion de guardarrail o moderacion ("Guard"), pero la ficha de Hugging Face no incluye model card, descripcion, ni documentacion tecnica que lo confirme. Tampoco se especifican el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, por lo que se trata de una publicacion sin adopcion ni validacion por parte de la comunidad.
 
 Su relevancia actual es, por tanto, limitada y condicionada a la disponibilidad de informacion adicional. Se incluye la etiqueta `arxiv:1910.09700`, que corresponde al articulo "Well-Read Students Learn Better: On the Importance of Pre-training Compact Models" (Turc et al.), habitualmente asociado a tecnicas de destilacion de conocimiento, si bien no hay evidencia documental en la ficha de que ese sea el metodo de entrenamiento empleado.
 
@@ -22,7 +22,7 @@ Su relevancia actual es, por tanto, limitada y condicionada a la disponibilidad 
 | Formato de pesos | safetensors |
 | Libreria de inferencia | transformers; compatible con text-generation-inference |
 | Pipeline declarado | text-generation (conversational) |
-| Fecha de creacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (segun metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 2026-09-16 |
 | Descargas / likes | 0 / 0 |
 
@@ -84,10 +84,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| neuroX3/H6-Guard-Quantized-4bit | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen2.5-7B-Instruct (y sus cuantizaciones GPTQ/AWQ) | 7.600 M | 128.000 tokens | Apache 2.0 (segun su ficha) | HuggingFace, amplia adopcion |
-| Meta Llama Guard 3 8B | 8.000 M | 128.000 tokens | Llama 3 Community License (segun su ficha) | HuggingFace |
-| Modelos destilados de la linea Turc et al. (BERT-small, etc.) | 14-110 M | 512 tokens | Apache 2.0 tipicamente | HuggingFace |
+| neuroX3/H6-Guard-Quantized-4bit | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen2.5-7B-Instruct (y sus cuantizaciones GPTQ/AWQ) | 7.600 M | 128.000 tokens | Apache 2.0 (segun su ficha) | Hugging Face, amplia adopcion |
+| Meta Llama Guard 3 8B | 8.000 M | 128.000 tokens | Llama 3 Community License (segun su ficha) | Hugging Face |
+| Modelos destilados de la linea Turc et al. (BERT-small, etc.) | 14-110 M | 512 tokens | Apache 2.0 tipicamente | Hugging Face |
 
 La comparacion cuantitativa de rendimiento, contexto efectivo y calidad tras la cuantizacion queda pendiente de datos.
 
@@ -106,7 +106,7 @@ La comparacion cuantitativa de rendimiento, contexto efectivo y calidad tras la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neuroX3/H6-Guard-Quantized-4bit
+- Repositorio en Hugging Face: https://huggingface.co/neuroX3/H6-Guard-Quantized-4bit
 - Perfil del autor: https://huggingface.co/neuroX3
 - Articulo referenciado en las etiquetas (Turc et al., 2019): https://arxiv.org/abs/1910.09700
 

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Rechazos (segun autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic | 32,2B | no disponible | 79/100 | Apache 2.0 | HuggingFace |
-| allenai/Olmo-3.1-32B-Instruct | 32,2B | no disponible | 100/100 | Apache 2.0 | HuggingFace |
-| allenai/Olmo-3-32B-Think | 32B (familia) | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| allenai/Olmo-3-7B-Instruct | 7B (familia) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic | 32,2B | no disponible | 79/100 | Apache 2.0 | Hugging Face |
+| allenai/Olmo-3.1-32B-Instruct | 32,2B | no disponible | 100/100 | Apache 2.0 | Hugging Face |
+| allenai/Olmo-3-32B-Think | 32B (familia) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| allenai/Olmo-3-7B-Instruct | 7B (familia) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La comparación directa más relevante es con el modelo base, del que solo se diferencia por la ablación SOM. Frente a otras variantes de la familia Olmo 3, esta ficha no dispone de métricas de rendimiento comparables más allá de la tasa de rechazos y la divergencia KL.
 
@@ -90,7 +90,7 @@ La comparación directa más relevante es con el modelo base, del que solo se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
 - Checkpoint SFT del base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-SFT
 - Checkpoint DPO del base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-DPO

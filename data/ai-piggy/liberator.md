@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Liberator es un modelo publicado en HuggingFace por el usuario AI-Piggy bajo licencia Apache-2.0. La informacion disponible se limita a los metadatos del repositorio: identificador AI-Piggy/Liberator, licencia apache-2.0, etiqueta de region us y fechas de creacion y actualizacion del 30 de septiembre de 2026. No hay model card, no hay pipeline declarado, no hay idiomas declarados y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+Liberator es un modelo publicado en Hugging Face por el usuario AI-Piggy bajo licencia Apache-2.0. La informacion disponible se limita a los metadatos del repositorio: identificador AI-Piggy/Liberator, licencia apache-2.0, etiqueta de region us y fechas de creacion y actualizacion del 30 de septiembre de 2026. No hay model card, no hay pipeline declarado, no hay idiomas declarados y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 No es posible determinar que problema resuelve el modelo, que arquitectura emplea, cuantos parametros tiene ni cual es su longitud de contexto. La model card publicada contiene unicamente el bloque de metadatos YAML con la licencia y ningun texto descriptivo, por lo que no existe informacion tecnica verificable sobre el entrenamiento, los datos utilizados ni las capacidades del modelo.
 
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI-Piggy/Liberator
+- Hugging Face: https://huggingface.co/AI-Piggy/Liberator
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

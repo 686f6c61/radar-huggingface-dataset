@@ -81,7 +81,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/batiai/Llama-4-Scout-17B-16E-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/batiai/Llama-4-Scout-17B-16E-Instruct-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
 - Licencia Llama 4: https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE
 - Política de uso aceptable: https://www.llama.com/llama4/use-policy

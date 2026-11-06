@@ -81,7 +81,7 @@ El adaptador multiplica por mas de cinco el PCK@0.10 respecto al base (0.1101 a 
 
 | Modelo | Tipo | Parametros | Control | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea-2 Pose Control-LoRA (mix-025) | LoRA + capa de control sobre Krea-2 Turbo | 215.488.512 | 17 keypoints COCO | MIT | HuggingFace + GitHub + ComfyUI |
+| Krea-2 Pose Control-LoRA (mix-025) | LoRA + capa de control sobre Krea-2 Turbo | 215.488.512 | 17 keypoints COCO | MIT | Hugging Face + GitHub + ComfyUI |
 | Krea-2 Turbo (base) | Modelo generativo de imagen | no disponible | Sin control de pose (PCK@0.10 0.1101) | no disponible | Referenciado como `krea/Krea-2-Turbo` |
 | ControlNet clasico para modelos de difusion | Rama paralela de control | no disponible | Pose, depth, canny, etc. | variable segun implementacion | Amplia, ecosistema establecido |
 | Adaptadores de pose especificos para otros modelos base | LoRA/ControlNet | no disponible | Keypoints | variable | no disponible |
@@ -103,7 +103,7 @@ No se dispone de datos publicados que comparen este adaptador con alternativas e
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/adhit-420/Krea-2-PoseControl-LoRA-checkpoints
+- Hugging Face del adaptador: https://huggingface.co/adhit-420/Krea-2-PoseControl-LoRA-checkpoints
 - Repositorio GitHub: https://github.com/s-adhit/krea2-pose-controlnet
 - Workflow ComfyUI: https://github.com/s-adhit/krea2-pose-controlnet/tree/main/comfyui
 - Blog del autor: https://s-adhit.github.io/blog/training-a-pose-control-lora-for-krea-2/

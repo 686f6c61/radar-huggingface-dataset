@@ -86,7 +86,7 @@ La comparacion solo es significativa a nivel de modelo base: el adaptador no apo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vanishingradient/safety-drift-qwen2.5-7b-coding_codealpaca
+- Repositorio en Hugging Face: https://huggingface.co/vanishingradient/safety-drift-qwen2.5-7b-coding_codealpaca
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencia sobre el impacto ambiental del calculo, citada en la plantilla de la model card: https://mlco2.github.io/impact y https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

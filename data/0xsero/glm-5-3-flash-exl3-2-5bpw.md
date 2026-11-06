@@ -78,7 +78,7 @@ La comparativa es cualitativa, ya que no se dispone de benchmarks comunes. GLM-5
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-2.5bpw
+- Repositorio de Hugging Face: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-2.5bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Suite de cuantización: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3
 - Documentación de Z.AI sobre GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3

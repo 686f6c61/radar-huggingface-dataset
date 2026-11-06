@@ -8,7 +8,7 @@ kpfcnn-base-sm-deform.s3dis-area5.hugues-thomas es un modelo de segmentación se
 
 El modelo se distribuye como pesos safetensors (0,1 GB de repositorio) y se carga mediante la librería torch-pointcloud, que expone una API `create_model` con soporte de `pretrained=True`, extracción de características (`forward_features`) y reinicialización del clasificador (`reset_classifier`). Es, por tanto, una pieza de infraestructura para pipelines de percepción 3D: escaneo de interiores, gemelos digitales, robótica o preetiquetado de datos.
 
-Su relevancia práctica es doble. Por un lado, empaqueta una implementación de referencia de KPConv (originalmente en HuguesTHOMAS/KPConv-PyTorch) en un formato cargable desde HuggingFace con pesos convertidos y licencia MIT. Por otro, ofrece un punto de partida reproducible para tareas de segmentación de interiores, con métricas declaradas de mIoU 66,01 y OA 89,53 sobre S3DIS Area 5, muy próximas al 66,7 de referencia citado en la propia model card. El repositorio no registra descargas ni valoraciones en el momento de la consulta.
+Su relevancia práctica es doble. Por un lado, empaqueta una implementación de referencia de KPConv (originalmente en HuguesTHOMAS/KPConv-PyTorch) en un formato cargable desde Hugging Face con pesos convertidos y licencia MIT. Por otro, ofrece un punto de partida reproducible para tareas de segmentación de interiores, con métricas declaradas de mIoU 66,01 y OA 89,53 sobre S3DIS Area 5, muy próximas al 66,7 de referencia citado en la propia model card. El repositorio no registra descargas ni valoraciones en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ La model card indica además un valor de referencia de mIoU 66,7 para esta confi
 
 | Modelo | Parametros | S3DIS Area 5 (mIoU) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kpfcnn-base-sm-deform.s3dis-area5.hugues-thomas (este modelo) | 25,6 M | 66,01 (declarado, no verificado) | MIT | HuggingFace, carga con torch-pointcloud |
+| kpfcnn-base-sm-deform.s3dis-area5.hugues-thomas (este modelo) | 25,6 M | 66,01 (declarado, no verificado) | MIT | Hugging Face, carga con torch-pointcloud |
 | KPConv original, HuguesTHOMAS/KPConv-PyTorch (origen de la conversión) | no disponible en la información | 66,7 (valor de referencia citado en la model card) | MIT | GitHub |
 | Otras arquitecturas de segmentación de nubes de puntos (PointNet++, RandLA-Net, Point Transformer, etc.) | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,12 +98,12 @@ La información proporcionada no incluye especificaciones ni métricas de altern
 - Entrada de 5 canales: si los datos de entrada no aportan esos 5 canales en el mismo orden y normalización que el entrenamiento, el rendimiento se degrada. La model card no documenta con precisión la composición ni la normalización de esos canales.
 - Sin soporte de lenguaje ni multilingüismo: no aplica ni se declara.
 - Licencia MIT: permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de copyright y la licencia. Conviene revisar además las condiciones de los datos de entrenamiento (S3DIS) si se redistribuye el modelo o se publican resultados derivados.
-- Madurez del artefacto: 0 descargas y 0 valoraciones, sin pipeline declarado en HuggingFace, lo que indica que es un artefacto reciente y poco contrastado por la comunidad.
+- Madurez del artefacto: 0 descargas y 0 valoraciones, sin pipeline declarado en Hugging Face, lo que indica que es un artefacto reciente y poco contrastado por la comunidad.
 - Sin datos de latencia, throughput, consumo de memoria ni robustez a oclusiones, ruido o variaciones de densidad de la nube.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/kpfcnn-base-sm-deform.s3dis-area5.hugues-thomas
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/kpfcnn-base-sm-deform.s3dis-area5.hugues-thomas
 - Paper de KPConv (arXiv:1904.08889): https://arxiv.org/abs/1904.08889
 - Repositorio original de KPConv (HuguesTHOMAS/KPConv-PyTorch, MIT): https://github.com/HuguesTHOMAS/KPConv-PyTorch
 - Librería torch-pointcloud (Arthur Dujardin): https://github.com/arthurdjn/pytorch-pointcloud

@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulamai/Ulam-1-Small
+- Modelo en Hugging Face: https://huggingface.co/ulamai/Ulam-1-Small
 - Informe técnico (whitepaper): https://huggingface.co/ulamai/Ulam-1-Small/blob/main/paper/Ulam-1-Small-whitepaper.pdf
 - Recibos de evaluación: https://huggingface.co/ulamai/Ulam-1-Small/blob/v1.0.0/evaluation_results.json
 - Repositorio GitHub de UlamAI (prover Lean 4): https://github.com/ulamai/ulamai

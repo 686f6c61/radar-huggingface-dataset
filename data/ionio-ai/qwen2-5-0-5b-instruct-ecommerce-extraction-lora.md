@@ -87,7 +87,7 @@ No se dispone de comparaciones directas con otros adaptadores de extracción de 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/Ionio-ai/Qwen2.5-0.5B-Instruct-Ecommerce-Extraction-LoRA)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/Ionio-ai/Qwen2.5-0.5B-Instruct-Ecommerce-Extraction-LoRA)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Dataset de entrenamiento Ionio-ai/ecommerce-search-extraction](https://huggingface.co/datasets/Ionio-ai/ecommerce-search-extraction)
 - [Página del modelo base en Ollama](https://ollama.com/library/qwen2.5:0.5b-instruct)

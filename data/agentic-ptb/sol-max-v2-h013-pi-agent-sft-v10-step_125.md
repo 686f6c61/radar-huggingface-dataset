@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2.h013 (este) | 9.4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-7B-Instruct | 7.6B | 128K | Apache 2.0 | HuggingFace |
+| agentic-ptb/sol-max-v2.h013 (este) | 9.4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-7B-Instruct | 7.6B | 128K | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. Este checkpoint es un artefacto de entrenamiento, no un modelo final, por lo que no es directamente comparable con modelos instructivos comerciales.
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparativo. Este checkpoint es un artefac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h013.pi-agent-sft-v10.step_125
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h013.pi-agent-sft-v10.step_125
 - Página de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb
 - Referencia a GPT-5.6 (mencionado en la model card, no relacionado directamente): https://openai.com/index/gpt-5-6/

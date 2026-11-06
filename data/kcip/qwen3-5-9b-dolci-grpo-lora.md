@@ -40,7 +40,7 @@ La funcion de recompensa es compuesta y sigue los verificadores de open-instruct
 - Modo no-thinking: el adaptador esta entrenado y pensado para `enable_thinking=false`; no se ha validado su comportamiento con el modo de razonamiento extendido activado.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente multi-paso: no disponibles en la informacion proporcionada.
-- Capacidades multimodales (vision, audio): no disponibles; el pipeline no esta declarado en HuggingFace.
+- Capacidades multimodales (vision, audio): no disponibles; el pipeline no esta declarado en Hugging Face.
 - Capacidades multilingues: no disponibles; no se documenta la composicion linguistica del dataset ni evaluaciones por idioma.
 
 ## Casos de uso
@@ -88,8 +88,8 @@ No se dispone de datos de terceros comparables en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Recompensa media (held-out) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KCIP/qwen3.5-9b-dolci-grpo-lora (paso 300) | Adaptador LoRA sobre ~9B | No disponible | 0,674 | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (sin adaptador, paso 0) | ~9B | No disponible | 0,536 | No disponible | HuggingFace |
+| KCIP/qwen3.5-9b-dolci-grpo-lora (paso 300) | Adaptador LoRA sobre ~9B | No disponible | 0,674 | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (sin adaptador, paso 0) | ~9B | No disponible | 0,536 | No disponible | Hugging Face |
 | Adaptadores GRPO/RLVR equivalentes sobre modelos de ~7-9B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -100,14 +100,14 @@ No se dispone de datos de terceros comparables en la informacion proporcionada. 
 - Evaluacion limitada: las cifras provienen de 200 filas del mismo mix de datos, no de benchmarks publicos independientes; el riesgo de sobreajuste a los verificadores empleados es alto.
 - Recompensa basada en juez LLM (Qwen3-32B): puede heredar sesgos del juez y premiar respuestas largas o con estilo determinado.
 - Sin datos de sesgos, idiomas ni evaluaciones de seguridad. Se desconoce el comportamiento fuera del ingles y en dominios sensibles.
-- Licencia no declarada en HuggingFace: no se puede asumir uso comercial permitido. Es imprescindible verificar la licencia del modelo base y del dataset Dolci-Instruct-RL antes de cualquier despliegue en produccion.
+- Licencia no declarada en Hugging Face: no se puede asumir uso comercial permitido. Es imprescindible verificar la licencia del modelo base y del dataset Dolci-Instruct-RL antes de cualquier despliegue en produccion.
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual ni de calibracion; las mejoras en matematicas y codigo no implican mejoras en veracidad general.
 - Repo con 0 descargas y 0 likes, creado y actualizado el mismo dia: no hay evidencia de uso, validacion externa ni mantenimiento.
 - Los resultados de la busqueda web realizada no contienen informacion tecnica relevante sobre este modelo y se han descartado por completo.
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/KCIP/qwen3.5-9b-dolci-grpo-lora
+- Adaptador en Hugging Face: https://huggingface.co/KCIP/qwen3.5-9b-dolci-grpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/allenai/Dolci-Instruct-RL
 - prime-rl (framework de entrenamiento, commit b9c0bfe): no se proporciona URL directa en la informacion disponible

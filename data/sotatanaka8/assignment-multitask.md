@@ -65,7 +65,7 @@ No hay modelos comparables con datos publicados en la información disponible. L
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sotatanaka8/assignment-multitask | 16.576 | no disponible | sin benchmark publicado | BSD-3-Clause | HuggingFace |
+| sotatanaka8/assignment-multitask | 16.576 | no disponible | sin benchmark publicado | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No hay modelos comparables con datos publicados en la información disponible. L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sotatanaka8/assignment-multitask
+- Repositorio en Hugging Face: https://huggingface.co/sotatanaka8/assignment-multitask
 - Script principal: `train.py` (incluido en el repositorio)
 - Configuración de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento por defecto: `training_args.json` (incluido en el repositorio)

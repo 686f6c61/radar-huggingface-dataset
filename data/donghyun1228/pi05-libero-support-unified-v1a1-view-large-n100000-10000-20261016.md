@@ -100,7 +100,7 @@ Comparativa con modelos de proposito general o con otras politicas roboticas: no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-view-large-n100000-10000-20261016
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-view-large-n100000-10000-20261016
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015
 - Dataset: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-20261015
 - Repositorio de la libreria openpi: no disponible en la informacion proporcionada

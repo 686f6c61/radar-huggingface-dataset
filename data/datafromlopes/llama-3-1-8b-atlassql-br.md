@@ -102,7 +102,7 @@ La comparación directa solo es posible frente al modelo base, ya que los result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/datafromlopes/llama-3.1-8b-atlassql-br
+- Modelo en Hugging Face: https://huggingface.co/datafromlopes/llama-3.1-8b-atlassql-br
 - Dataset AtlasSQL-BR: https://huggingface.co/datasets/datafromlopes/atlas-sql-br
 - Repositorio de código y evaluación: https://github.com/datafromlopes/atlas-sql-br
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

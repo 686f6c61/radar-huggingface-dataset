@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_076617287_perceiver_nano` es una implementación a escala **nano** de la arquitectura Perceiver, diseñada específicamente para tareas de **retrieval**. El modelo está publicado por el usuario dmsmirnov en HuggingFace y se distribuye bajo licencia BSD-3-Clause. La arquitectura Perceiver, originalmente propuesta por DeepMind, está pensada para procesar datos de alta dimensionalidad mediante un mecanismo de atención cruzada que proyecta las entradas a un espacio latente de menor tamaño, lo que la hace especialmente adecuada para trabajar con modalidades heterogéneas.
+`model_076617287_perceiver_nano` es una implementación a escala **nano** de la arquitectura Perceiver, diseñada específicamente para tareas de **retrieval**. El modelo está publicado por el usuario dmsmirnov en Hugging Face y se distribuye bajo licencia BSD-3-Clause. La arquitectura Perceiver, originalmente propuesta por DeepMind, está pensada para procesar datos de alta dimensionalidad mediante un mecanismo de atención cruzada que proyecta las entradas a un espacio latente de menor tamaño, lo que la hace especialmente adecuada para trabajar con modalidades heterogéneas.
 
 Este repositorio contiene un único archivo de código (`model_076617287_perceiver_nano.py`) que define la implementación completa del modelo, incluyendo su configuración de arquitectura y entrenamiento. Aunque la escala es nano (lo que sugiere un número reducido de parámetros), no se especifican los valores exactos de parámetros, contexto ni rendimiento en la documentación disponible. El modelo se presenta como un artefacto de investigación o experimentación, sin datos de benchmarks ni métricas de calidad publicadas.
 
@@ -66,7 +66,7 @@ No disponible. No se ha publicado información que permita comparar este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dmsmirnov/model_076617287_perceiver_nano
+- Modelo en Hugging Face: https://huggingface.co/dmsmirnov/model_076617287_perceiver_nano
 - Paper de Perceiver (arXiv): https://arxiv.org/pdf/2103.03206.pdf
 - Repositorio de Perceiver de DeepMind (GitHub): https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md
-- Documentación de Perceiver en HuggingFace: https://huggingface.co/docs/transformers/v4.18.0/en/model_doc/perceiver
+- Documentación de Perceiver en Hugging Face: https://huggingface.co/docs/transformers/v4.18.0/en/model_doc/perceiver

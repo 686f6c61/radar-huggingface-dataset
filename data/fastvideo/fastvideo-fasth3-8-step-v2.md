@@ -28,7 +28,7 @@ El interés actual del checkpoint está en que acerca la generación conjunta de
 | Scheduler shift de video | 10 (el modelo base usa 12) |
 | Fecha de creacion | 2026-09-04 |
 | Ultima actualizacion | 2026-09-15 |
-| Descargas / likes en HuggingFace | 2 / 14 |
+| Descargas / likes en Hugging Face | 2 / 14 |
 
 ## Arquitectura y entrenamiento
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Pasos de inferencia | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastVideo-FastH3-8-Step-V2 | 35,05B | 8 | no aplica | minimax-h3-community | HuggingFace + repositorio FastVideo |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | muestreo multi-paso (shift 12) | no aplica | MiniMax H3 Community License | HuggingFace |
+| FastVideo-FastH3-8-Step-V2 | 35,05B | 8 | no aplica | minimax-h3-community | Hugging Face + repositorio FastVideo |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible | muestreo multi-paso (shift 12) | no aplica | MiniMax H3 Community License | Hugging Face |
 | FastH3 preview de 4 pasadas forward | no disponible | 4 | no aplica | no disponible | citado en el PR del repositorio FastVideo |
 | Recetas LightX2V de 8 y 4 pasos sobre H3 | no disponible | 8 y 4 | no aplica | no disponible | citadas por un tercero (Sogni), no verificadas en la informacion disponible |
 
@@ -101,11 +101,11 @@ Los datos de rendimiento comparado no están disponibles: no hay benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2
+- Modelo en Hugging Face: https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio FastVideo: https://github.com/hao-ai-lab/FastVideo
 - Blog de presentacion de FastH3: https://haoailab.com/blogs/fasth3-preview/
-- Coleccion FastH3 en HuggingFace: https://huggingface.co/collections/FastVideo/fastvideo-fasth3
+- Coleccion FastH3 en Hugging Face: https://huggingface.co/collections/FastVideo/fastvideo-fasth3
 - Guia de instalacion de FastVideo: https://hao-ai-lab.github.io/FastVideo/getting_started/installation/
 - Pull request con el soporte de inferencia del checkpoint: https://github.com/hao-ai-lab/FastVideo/pull/1852
 - Paper de DMD2: https://arxiv.org/abs/2405.14867

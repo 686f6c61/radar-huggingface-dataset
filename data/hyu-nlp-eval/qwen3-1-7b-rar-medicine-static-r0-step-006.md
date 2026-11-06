@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-006 | 1,72B | 32.768 | Apache 2.0 | Checkpoint RL con rúbrica estatica, dominio medico |
-| Qwen/Qwen3-1.7B | 1,72B | 32.768 | Apache 2.0 | Modelo base, disponible en HuggingFace |
+| Qwen/Qwen3-1.7B | 1,72B | 32.768 | Apache 2.0 | Modelo base, disponible en Hugging Face |
 | Qwen/Qwen3-0.6B | 0,6B | 32.768 | Apache 2.0 | Version mas pequena de la misma familia |
 | Qwen/Qwen3-4B | 4B | 32.768 | Apache 2.0 | Version mayor, mejor rendimiento pero mas VRAM |
 
@@ -76,7 +76,7 @@ La comparacion directa con otros checkpoints RL no es posible porque no se han p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-006
+- Repositorio Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-006
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documentacion de Qwen3: https://qwenlm.github.io/blog/qwen3/
-- Pagina de Qwen en HuggingFace: https://huggingface.co/Qwen
+- Pagina de Qwen en Hugging Face: https://huggingface.co/Qwen

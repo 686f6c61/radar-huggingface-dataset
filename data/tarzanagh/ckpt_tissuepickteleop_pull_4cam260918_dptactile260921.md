@@ -90,7 +90,7 @@ El autor publica variantes de la misma tarea en cuatro familias. La comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dptactile260921
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dptactile260921
 - Variante ACT sin táctil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_act260921
 - Variante ACT con táctil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_acttactile260921
 - Variante Diffusion Policy sin táctil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dp260921

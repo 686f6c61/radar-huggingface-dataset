@@ -62,7 +62,7 @@ Sobre el entrenamiento del modelo base (numero de tokens, composicion del datase
 - Razonamiento y generacion de codigo: no documentado de forma especifica en la informacion disponible, aunque son capacidades esperables del modelo base; se marca como no verificado.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; el campo de idiomas no viene informado en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas no viene informado en la ficha de Hugging Face.
 - Modo "thinking" explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
@@ -95,8 +95,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Jundot/gemma-4-12B-it-oQ3e-mtp | 12,38B (dense) | 262.144 tokens | oQ3e MLX, 4,156 bits/peso | Apache-2.0 | MLX, 6,5 GB |
-| google/gemma-4-12B-it (modelo base) | 12,38B (dense) | 262.144 tokens | BF16 | Apache-2.0 | HuggingFace |
-| google/gemma-4-12B-it-assistant | 0,423B (cabeza MTP) | no disponible | BF16 | Apache-2.0 | HuggingFace |
+| google/gemma-4-12B-it (modelo base) | 12,38B (dense) | 262.144 tokens | BF16 | Apache-2.0 | Hugging Face |
+| google/gemma-4-12B-it-assistant | 0,423B (cabeza MTP) | no disponible | BF16 | Apache-2.0 | Hugging Face |
 | Otras alternativas de ~12B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables adicionales en los materiales proporcionados. La comparacion directa posible es frente al modelo base en BF16 y frente al modelo asistente del que procede la cabeza MTP.
@@ -115,7 +115,7 @@ No se dispone de informacion sobre modelos comparables adicionales en los materi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/gemma-4-12B-it-oQ3e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-12B-it-oQ3e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo asistente (origen de la cabeza MTP): https://huggingface.co/google/gemma-4-12B-it-assistant
 - Repositorio oQ / oMLX (jundot/omlx): https://github.com/jundot/omlx

@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Nullmega/Mellum2.1-CodeReasoning-Public-v1-LoRA
+- Hugging Face del adaptador: https://huggingface.co/Nullmega/Mellum2.1-CodeReasoning-Public-v1-LoRA
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Dataset nvidia/OpenCodeInstruct: https://huggingface.co/datasets/nvidia/OpenCodeInstruct
 - Dataset nvidia/OpenCodeReasoning: https://huggingface.co/datasets/nvidia/OpenCodeReasoning

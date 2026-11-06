@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Llama-3.2-3B-Zubrelian-Moss-Test-LoRA | Adaptador sobre 3B | No disponible | Llama 3.2 Community | Repositorio privado, 0 descargas | Datos ficticios, sin revision de licencia |
-| Llama 3.2 3B Instruct (Meta) | 3,21B (aprox.) | 128K (segun documentacion oficial de Meta) | Llama 3.2 Community | Publico en HuggingFace | Modelo base oficial, evaluado en benchmarks estandar |
-| unsloth/Llama-3.2-3B-Instruct-bnb-4bit | 3,21B (aprox.) cuantizado 4 bits | Heredado del base | Llama 3.2 Community | Publico en HuggingFace | Version cuantizada para entrenamiento e inferencia eficiente |
-| Adaptadores LoRA comunitarios sobre Llama 3.2 3B | Variable | Heredado del base | Variable (mayoria Llama 3.2) | Publicos en HuggingFace | Dependen de la calidad y volumen de sus datos; este adaptador usa datos sinteticos ficticios |
+| Llama 3.2 3B Instruct (Meta) | 3,21B (aprox.) | 128K (segun documentacion oficial de Meta) | Llama 3.2 Community | Publico en Hugging Face | Modelo base oficial, evaluado en benchmarks estandar |
+| unsloth/Llama-3.2-3B-Instruct-bnb-4bit | 3,21B (aprox.) cuantizado 4 bits | Heredado del base | Llama 3.2 Community | Publico en Hugging Face | Version cuantizada para entrenamiento e inferencia eficiente |
+| Adaptadores LoRA comunitarios sobre Llama 3.2 3B | Variable | Heredado del base | Variable (mayoria Llama 3.2) | Publicos en Hugging Face | Dependen de la calidad y volumen de sus datos; este adaptador usa datos sinteticos ficticios |
 
 No se dispone de datos de rendimiento comparables en benchmarks estandar para este adaptador, por lo que la comparativa se limita a aspectos estructurales y de licencia.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables en benchmarks estandar para es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Llama-3.2-3B-Zubrelian-Moss-Test-LoRA
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Llama-3.2-3B-Zubrelian-Moss-Test-LoRA
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Pagina oficial de Llama 3.2 (Meta): https://www.llama.com/

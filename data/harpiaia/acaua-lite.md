@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Acauã Lite | 1,7B | no disponible | LFM Open License (lfm1.0) | HuggingFace (HarpiaIA/Acaua-Lite) |
-| LiquidAI/LFM3-1.7B | 1,7B | no disponible | LFM Open License | HuggingFace (LiquidAI) |
-| Qwen2.5-Coder-1.5B | 1,5B | 32k (según model card pública) | Apache 2.0 | HuggingFace |
-| DeepSeek-Coder-1.3B | 1,3B | 16k (según model card pública) | DeepSeek License | HuggingFace |
+| Acauã Lite | 1,7B | no disponible | LFM Open License (lfm1.0) | Hugging Face (HarpiaIA/Acaua-Lite) |
+| LiquidAI/LFM3-1.7B | 1,7B | no disponible | LFM Open License | Hugging Face (LiquidAI) |
+| Qwen2.5-Coder-1.5B | 1,5B | 32k (según model card pública) | Apache 2.0 | Hugging Face |
+| DeepSeek-Coder-1.3B | 1,3B | 16k (según model card pública) | DeepSeek License | Hugging Face |
 
 La comparativa se limita a parámetros y licencia, ya que no hay datos de rendimiento publicados para Acauã Lite. Frente a Qwen2.5-Coder-1.5B y DeepSeek-Coder-1.3B, Acauã Lite ofrece un tamaño similar pero con una licencia más restrictiva (LFM Open License) y únicamente inglés, mientras que los alternativos suelen soportar múltiples lenguajes y licencias más permisivas.
 
@@ -84,7 +84,7 @@ La comparativa se limita a parámetros y licencia, ya que no hay datos de rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HarpiaIA/Acaua-Lite
+- Hugging Face: https://huggingface.co/HarpiaIA/Acaua-Lite
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Dataset OrionLLM/OpenAgentInstruct: https://huggingface.co/datasets/OrionLLM/OpenAgentInstruct
 - Dataset Modotte/CodeX-7M-Non-Thinking: https://huggingface.co/datasets/Modotte/CodeX-7M-Non-Thinking

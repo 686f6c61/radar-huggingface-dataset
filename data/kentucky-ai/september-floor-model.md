@@ -20,7 +20,7 @@ Es relevante ahora porque expone componentes de un sistema de "takeoff" (medicio
 | Idiomas soportados | no disponible (no aplica; la entrada es imagen raster de planos) |
 | Licencia | `september-component-licenses` (identificador `other`); el componente E068 deriva de NVIDIA SegFormer y conserva su licencia de solo investigacion/evaluacion |
 | Formato de pesos | PyTorch (`.pt`) para las redes visuales y pickle de scikit-learn (`.pkl`) para los clasificadores |
-| Pipeline declarado en HuggingFace | image-segmentation |
+| Pipeline declarado en Hugging Face | image-segmentation |
 | Clases de contexto visual | background, wall, fixture, annotation, hatch |
 | Umbrales de decision publicados | Veto de no muro: 0,95; admision de muro: 0,35; admision de sello: 0,5 |
 | Preprocesado requerido | RGB, normalizacion ImageNet, escala fisica de 32 pixeles por pie, tiles de 1024 pixeles con stride de 768 |
@@ -97,7 +97,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kentucky-ai/september-floor-model
+- Modelo en Hugging Face: https://huggingface.co/Kentucky-ai/september-floor-model
 - Licencia del repositorio: `LICENSE.md` (incluido en el repositorio)
 - Licencia de NVIDIA SegFormer: `licenses/NVIDIA-SegFormer.txt`
 - Licencia BSD de torchvision: `licenses/torchvision-BSD.txt`

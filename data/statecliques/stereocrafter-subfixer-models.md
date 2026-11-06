@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Propósito | Parámetros | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `statecliques/stereocrafter-subfixer-models` (este espejo) | Segmentación de trazo de texto sobre SAM ViT-L | no disponible | `.pth` (solo partes entrenadas) | apache-2.0, con salvedad del dataset TextSeg | HuggingFace, descarga directa |
+| `statecliques/stereocrafter-subfixer-models` (este espejo) | Segmentación de trazo de texto sobre SAM ViT-L | no disponible | `.pth` (solo partes entrenadas) | apache-2.0, con salvedad del dataset TextSeg | Hugging Face, descarga directa |
 | Hi-SAM original (`sam_tss_l_textseg.pth`) | Idéntico al anterior | no disponible | `.pth` | apache-2.0, con salvedad del dataset TextSeg | Google Drive desde el repositorio de Hi-SAM; descarga poco fiable para scripts |
 | SAM ViT-L de Meta (`sam_vit_l_0b3195.pth`) | Segmentación genérica de objetos guiada por *prompts* | no disponible | `.pth` | apache-2.0 | Publicado directamente por Meta en el repositorio de Segment Anything |
 | SAM 2 | Segmentación de imagen y vídeo, con seguimiento | no disponible | no disponible | no disponible | Publicado por Meta |
@@ -97,7 +97,7 @@ La diferencia relevante frente a SAM ViT-L no está en el tamaño, sino en la es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/statecliques/stereocrafter-subfixer-models
+- Repositorio en Hugging Face: https://huggingface.co/statecliques/stereocrafter-subfixer-models
 - Repositorio de Hi-SAM (código y pesos originales): https://github.com/ymy-k/Hi-SAM
 - Artículo de Hi-SAM: https://arxiv.org/abs/2401.17904
 - Segment Anything (Meta AI): https://github.com/facebookresearch/segment-anything

@@ -10,7 +10,7 @@ Con 5.040.368.896 parámetros totales y formato safetensors, está liberado bajo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts) con atención DSA, según tags de HuggingFace; detalles no disponibles |
+| Arquitectura | MoE (mixture of experts) con atención DSA, según tags de Hugging Face; detalles no disponibles |
 | Parametros totales | 5.040.368.896 |
 | Parametros activos | no disponible (MoE) |
 | Longitud de contexto | no disponible |
@@ -71,6 +71,6 @@ Los datos de comparación no están disponibles. El modelo es un fixture de cuan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malaiwah/GLM-5.2-SIQ-Fruit-fp8
+- Hugging Face: https://huggingface.co/malaiwah/GLM-5.2-SIQ-Fruit-fp8
 - Modelo base: https://huggingface.co/malaiwah/GLM-5.2-SIQ-Fruit
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

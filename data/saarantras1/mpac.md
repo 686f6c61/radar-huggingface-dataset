@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MPAC (Malinois with Parallel Aggregated Cross-validation) es un modelo de prediccion de actividad reguladora cis sobre secuencias de ADN humano de 200 pares de bases. Desarrollado por el grupo de Steven K. Reilly (Yale) y publicado en bioRxiv en 2025, estima la actividad de ensayos reporteros masivos en paralelo (MPRA) en tres lineas celulares (K562, HepG2 y SK-N-SH) y el sesgo alelico (allelic skew) causado por variantes no codificantes. El repositorio de HuggingFace aloja los 110 checkpoints publicados, convertidos a safetensors desde el deposito de Zenodo sin reentrenamiento ni modificacion.
+MPAC (Malinois with Parallel Aggregated Cross-validation) es un modelo de prediccion de actividad reguladora cis sobre secuencias de ADN humano de 200 pares de bases. Desarrollado por el grupo de Steven K. Reilly (Yale) y publicado en bioRxiv en 2025, estima la actividad de ensayos reporteros masivos en paralelo (MPRA) en tres lineas celulares (K562, HepG2 y SK-N-SH) y el sesgo alelico (allelic skew) causado por variantes no codificantes. El repositorio de Hugging Face aloja los 110 checkpoints publicados, convertidos a safetensors desde el deposito de Zenodo sin reentrenamiento ni modificacion.
 
 El problema que aborda es central en genomica funcional: la mayoria de las variantes asociadas a enfermedad en estudios GWAS caen en regiones no codificantes, donde los predictores basados en conservacion o en scores de patogenicidad tienen una capacidad predictiva limitada. MPAC traslada la senal experimental de MPRA a un modelo secuencia-a-funcion, de modo que se puede puntuar cualquier variante no codificante sin necesidad de repetir el ensayo en laboratorio. Esto lo hace relevante como herramienta de priorizacion antes de validacion experimental.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Familia / enfoque | Contexto de entrada | Salidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MPAC | Malinois (CNN secuencia-a-funcion), ensemble con validacion cruzada por cromosoma | 200 pb por ventana, constructo de 600 pb | Actividad MPRA en K562, HepG2, SK-N-SH + sesgo alelico | cc-by-4.0 | HuggingFace y Zenodo |
+| MPAC | Malinois (CNN secuencia-a-funcion), ensemble con validacion cruzada por cromosoma | 200 pb por ventana, constructo de 600 pb | Actividad MPRA en K562, HepG2, SK-N-SH + sesgo alelico | cc-by-4.0 | Hugging Face y Zenodo |
 | Boda2 (sjgosai/boda2) | Malinois, prediccion de MPRA | no disponible en la informacion proporcionada | Actividad MPRA | MIT (codigo del que deriva `modeling_mpac.py`) | GitHub |
 | Enformer | Transformer secuencia-a-tracks | 200 kb segun conocimiento general del modelo | Cientos de tracks multiomica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Sei | CNN de clases cromatinicas | 4 kb segun conocimiento general del modelo | Clases de secuencia regulatoria | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -95,7 +95,7 @@ Nota: los datos de Enformer y Sei no provienen de la informacion facilitada en e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saarantras1/MPAC
+- Hugging Face: https://huggingface.co/saarantras1/MPAC
 - Articulo (bioRxiv, doi): https://doi.org/10.1101/2025.04.16.648420
 - Deposito Zenodo con los checkpoints originales: https://doi.org/10.5281/zenodo.15178434
 - Herramientas de linea de comandos MPAC: https://github.com/Reilly-Lab-Yale/coda_mpac

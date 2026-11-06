@@ -86,6 +86,6 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/cgerdes/embeddinggemma-2-coreml-mirror
+- Repositorio del espejo en Hugging Face: https://huggingface.co/cgerdes/embeddinggemma-2-coreml-mirror
 - Modelo base (Google): https://huggingface.co/google/embeddinggemma-2
 - Revision del modelo base fijada por el autor: `914f7f89142e33e77833254d9c9b90c3cef7303b`

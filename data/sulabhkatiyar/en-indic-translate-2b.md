@@ -4,7 +4,7 @@
 
 El modelo `sulabhkatiyar/en-indic-translate-2b` es un modelo de traducción automática neuronal especializado en traducir texto del inglés a once idiomas índicos: asamés, bengalí, guyaratí, hindi, canarés, malayalam, maratí, oriya, punyabí, tamil y telugu. Desarrollado por Sulabh Katiyar, se trata de un fine-tuning del modelo base `google/gemma-4-E2B-it` de Google, que pertenece a la familia Gemma 4. El modelo está diseñado para preservar fórmulas LaTeX, bloques de código y la estructura general de documentos técnicos durante la traducción, lo que lo hace especialmente útil para contenido científico, académico y de ingeniería.
 
-Con 5.104.297.504 parámetros totales (el nombre "2B" sugiere que podría tener 2 mil millones de parámetros activos, aunque no se confirma), el modelo se distribuye en formato safetensors y se puede cargar con la librería transformers o con vLLM. Su licencia es la de Gemma, que permite uso comercial bajo ciertas condiciones. Aunque el modelo se publicó en septiembre de 2026, no registra descargas ni valoraciones en HuggingFace, lo que indica que es un lanzamiento reciente y poco probado por la comunidad.
+Con 5.104.297.504 parámetros totales (el nombre "2B" sugiere que podría tener 2 mil millones de parámetros activos, aunque no se confirma), el modelo se distribuye en formato safetensors y se puede cargar con la librería transformers o con vLLM. Su licencia es la de Gemma, que permite uso comercial bajo ciertas condiciones. Aunque el modelo se publicó en septiembre de 2026, no registra descargas ni valoraciones en Hugging Face, lo que indica que es un lanzamiento reciente y poco probado por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 5,1 B parámetros en bfloat16, se necesitan aproximadamente 10,2 GB de VRAM solo para los pesos. Con cuantización a 8 bits (~5,1 GB) o 4 bits (~2,6 GB) se reduce el requisito, aunque no se proporcionan cuantizaciones oficiales.
 - GPU recomendadas: el modelo fue probado en AMD MI300X (con ROCm). Para NVIDIA, se recomienda al menos una RTX 3090 o RTX 4090 (24 GB VRAM) para ejecutar en bfloat16 sin problemas. GPUs con 16 GB (RTX 4080, A10G) pueden funcionar con cuantización.
 - En consumer GPU: sí, cabe en GPUs de 16 GB o más con cuantización, y en 24 GB sin cuantizar.
-- Opciones de despliegue: vLLM (recomendado para producción), HuggingFace transformers, y potencialmente llama.cpp si se generan pesos GGUF (no incluidos por defecto).
+- Opciones de despliegue: vLLM (recomendado para producción), Hugging Face transformers, y potencialmente llama.cpp si se generan pesos GGUF (no incluidos por defecto).
 - Latencia y throughput: no se proporcionan datos. Con vLLM y una GPU moderna, se espera un throughput de decenas de tokens por segundo para un modelo de 5 B, pero no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/en-indic-translate-2b
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/en-indic-translate-2b
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia Gemma: https://ai.google.dev/gemma/terms

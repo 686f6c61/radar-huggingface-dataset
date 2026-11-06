@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bearing-fault-nano` es un modelo de clasificación de audio ultraligero desarrollado por Joe Cox (usuario de HuggingFace `resoajoe`) para la detección de fallos en rodamientos de bolas mediante análisis de vibraciones. Con solo 46.964 parámetros y 188 KB de peso, el modelo clasifica firmas de vibración en cuatro categorías: rodamiento sano, defecto en pista exterior, defecto en pista interior y defecto en la bola. Está diseñado como una herramienta de cribado para mantenimiento predictivo, no como un sistema de diagnóstico certificado.
+`bearing-fault-nano` es un modelo de clasificación de audio ultraligero desarrollado por Joe Cox (usuario de Hugging Face `resoajoe`) para la detección de fallos en rodamientos de bolas mediante análisis de vibraciones. Con solo 46.964 parámetros y 188 KB de peso, el modelo clasifica firmas de vibración en cuatro categorías: rodamiento sano, defecto en pista exterior, defecto en pista interior y defecto en la bola. Está diseñado como una herramienta de cribado para mantenimiento predictivo, no como un sistema de diagnóstico certificado.
 
 El modelo se construyó a partir de una tesis: si una misma arquitectura de 47K parámetros puede procesar imágenes, audio y acelerómetros, entonces el concepto de "nano modelo" es un método generalizable, no una técnica exclusiva de visión por computador. Por ello, la arquitectura es idéntica a la de otros modelos del mismo autor (`alarm-nano`, `depth-nano`, `camera-motion-nano`), alimentada con espectrogramas de la señal de vibración. El modelo se distribuye en formato ONNX y está pensado para ejecutarse en CPU en entornos de borde (edge AI).
 
@@ -80,7 +80,7 @@ Además, el autor reporta una verificación de consistencia entre ONNX y PyTorch
 
 | Modelo | Parámetros | Formato | Precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bearing-fault-nano` (este) | 46.964 | ONNX | 0,943 (sintético) | MIT | HuggingFace |
+| `bearing-fault-nano` (este) | 46.964 | ONNX | 0,943 (sintético) | MIT | Hugging Face |
 | SEGMN (IEE, 2025) | no disponible | no disponible | no publicado en la card | no disponible | artículo IEEE |
 | Modelos clásicos de diagnóstico de rodamientos (SVM, Random Forest) | dependiente de features | no aplicable | no comparable | no aplica | no aplica |
 
@@ -99,7 +99,7 @@ La comparación con SEGMN no es directa porque se trata de un modelo propuesto e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resoajoe/bearing-fault-nano
+- Modelo en Hugging Face: https://huggingface.co/resoajoe/bearing-fault-nano
 - Perfil del autor (Joe Cox): https://huggingface.co/resoajoe
 - Modelos relacionados del mismo autor: `resoajoe/alarm-nano`, `resoajoe/depth-nano`, `resoajoe/camera-motion-nano`
 - Referencia académica sobre diagnóstico de rodamientos (MDPI): https://www.mdpi.com/1424-8220/25/22/7092

@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye modelos comparables de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akniele/classify_traffic_signs
+- Modelo en Hugging Face: https://huggingface.co/akniele/classify_traffic_signs
 - Modelo de detección previo citado en la model card: https://huggingface.co/Panoramax/detect_nl_subsigns
 - Plataforma Panoramax: https://panoramax.fr
 - Ultralytics (familia YOLO): no se proporciona enlace en la información disponible.

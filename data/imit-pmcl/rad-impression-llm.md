@@ -4,7 +4,7 @@
 
 El modelo `rad-impression-llm` es un modelo de lenguaje desarrollado por IMIT-PMCL, una organización cuyo nombre sugiere una posible afiliación con el Instituto de Investigación Médica y de Imagen (IMIT) y el grupo PMCL. Según la información disponible, el modelo está diseñado para la generación automatizada de impresiones radiológicas, es decir, el resumen clínico que los radiólogos escriben al final de un informe de imagen médica. Este tipo de modelos busca reducir la carga administrativa de los radiólogos y estandarizar la redacción de informes, mejorando la eficiencia y la consistencia en entornos hospitalarios.
 
-La información pública es extremadamente limitada: la model card en HuggingFace solo contiene la licencia (Apache 2.0) y no se proporcionan detalles sobre arquitectura, tamaño, contexto, entrenamiento o rendimiento. Los enlaces a GitHub y a publicaciones científicas sugieren que el modelo ha sido evaluado en entornos clínicos, pero no se han publicado especificaciones técnicas abiertas. Por tanto, esta ficha se basa únicamente en los datos disponibles y marca explícitamente los campos desconocidos como "no disponible".
+La información pública es extremadamente limitada: la model card en Hugging Face solo contiene la licencia (Apache 2.0) y no se proporcionan detalles sobre arquitectura, tamaño, contexto, entrenamiento o rendimiento. Los enlaces a GitHub y a publicaciones científicas sugieren que el modelo ha sido evaluado en entornos clínicos, pero no se han publicado especificaciones técnicas abiertas. Por tanto, esta ficha se basa únicamente en los datos disponibles y marca explícitamente los campos desconocidos como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IMIT-PMCL/rad-impression-llm
+- Hugging Face: https://huggingface.co/IMIT-PMCL/rad-impression-llm
 - GitHub: https://github.com/IMIT-PMCL/rad-impression-llm
 - Releases en GitHub: https://github.com/IMIT-PMCL/rad-impression-llm/releases
 - Artículo en Radiology AI (pubs.rsna.org): https://pubs.rsna.org/doi/10.1148/ryai.250714

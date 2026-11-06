@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2-0.5B-GRPO-test es un ajuste fino del modelo instructivo Qwen/Qwen2-0.5B-Instruct, publicado por el usuario chenyuen0103 en HuggingFace. Se trata de un experimento de alineacion mediante GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo introducido en el articulo DeepSeekMath y popularizado despues por DeepSeek-R1. El entrenamiento se ha realizado con la libreria TRL de HuggingFace, segun se indica en la propia model card.
+Qwen2-0.5B-GRPO-test es un ajuste fino del modelo instructivo Qwen/Qwen2-0.5B-Instruct, publicado por el usuario chenyuen0103 en Hugging Face. Se trata de un experimento de alineacion mediante GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo introducido en el articulo DeepSeekMath y popularizado despues por DeepSeek-R1. El entrenamiento se ha realizado con la libreria TRL de Hugging Face, segun se indica en la propia model card.
 
 El modelo parte de la arquitectura Qwen2, un transformer decoder-only de aproximadamente 0,5 mil millones de parametros, lo que lo situa en la gama ultra-ligera: puede ejecutarse en CPU, en GPUs de consumo muy modestas e incluso en dispositivos embebidos. El objetivo declarado del autor es servir como banco de pruebas del pipeline de GRPO sobre un modelo pequeno, mas que como un modelo listo para produccion.
 
@@ -69,10 +69,10 @@ Los datos del modelo objeto de la ficha figuran como no confirmados porque su mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| chenyuen0103/Qwen2-0.5B-GRPO-test | 0,49 B (heredado) | no declarado (32.768 en el base) | no disponible | HuggingFace, repo de 0,0 GB | Ajuste experimental con GRPO, sin benchmarks |
-| Qwen/Qwen2-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente descargado | Modelo base instructivo, con evaluaciones publicadas por el autor |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache-2.0 | HuggingFace | Alternativa de tamano similar con buen soporte de la comunidad |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 tokens | Apache-2.0 | HuggingFace | Mas parametros pero ventana de contexto mucho menor |
+| chenyuen0103/Qwen2-0.5B-GRPO-test | 0,49 B (heredado) | no declarado (32.768 en el base) | no disponible | Hugging Face, repo de 0,0 GB | Ajuste experimental con GRPO, sin benchmarks |
+| Qwen/Qwen2-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente descargado | Modelo base instructivo, con evaluaciones publicadas por el autor |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache-2.0 | Hugging Face | Alternativa de tamano similar con buen soporte de la comunidad |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 tokens | Apache-2.0 | Hugging Face | Mas parametros pero ventana de contexto mucho menor |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ Los datos del modelo objeto de la ficha figuran como no confirmados porque su mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenyuen0103/Qwen2-0.5B-GRPO-test
+- Modelo en Hugging Face: https://huggingface.co/chenyuen0103/Qwen2-0.5B-GRPO-test
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 - Articulo de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - arXiv de DeepSeekMath: https://arxiv.org/abs/2402.03300

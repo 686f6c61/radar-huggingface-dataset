@@ -6,7 +6,7 @@
 
 Su relevancia es doble y muy acotada. Por un lado, documenta la estrategia de ensamblado empleada en la competición: cinco miembros combinados mediante un *stack* lineal ajustado sobre predicciones *out-of-fold* (OOF), con un umbral de sistema de 0,36 y una puntuación declarada de 92,84 macro-F1 en el *practice test* y 91,3 en el conjunto ciego. Por otro, es un ejemplo poco habitual de publicación de artefactos intermedios de un sistema de competición: el autor advierte explícitamente de que **no es un segmentador autónomo** y de que, usado en solitario, no reproduce ninguna puntuación publicada.
 
-Técnicamente, el repositorio (2,2 GB) contiene un `state_dict` de PyTorch (`best_NP.pt`) y no un *checkpoint* en formato HuggingFace, por lo que `from_pretrained` no funciona: hay que reconstruir la arquitectura desde el YAML de configuración del experimento y cargar los pesos encima. El ajuste se realizó con 560 millones de tokens y licencia MIT heredada del modelo base.
+Técnicamente, el repositorio (2,2 GB) contiene un `state_dict` de PyTorch (`best_NP.pt`) y no un *checkpoint* en formato Hugging Face, por lo que `from_pretrained` no funciona: hay que reconstruir la arquitectura desde el YAML de configuración del experimento y cargar los pesos encima. El ajuste se realizó con 560 millones de tokens y licencia MIT heredada del modelo base.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ Técnicamente, el repositorio (2,2 GB) contiene un `state_dict` de PyTorch (`bes
 | Tipos de cuantización | No disponible. Solo se publican pesos `best_NP.pt` (PyTorch `state_dict`); no hay versiones GGUF, AWQ, GPTQ ni similares |
 | Idiomas soportados | Árabe (`ar`). El modelo base es multilingüe (100 idiomas), pero el ajuste está orientado exclusivamente a segmentación de árabe |
 | Licencia | MIT, heredada del modelo base |
-| Formato de pesos | PyTorch `state_dict` (`best_NP.pt`, fichero `best_*.pt` según la model card). No es un checkpoint en formato HuggingFace |
+| Formato de pesos | PyTorch `state_dict` (`best_NP.pt`, fichero `best_*.pt` según la model card). No es un checkpoint en formato Hugging Face |
 | Tarea (*pipeline*) | `token-classification` |
 | Subtarea de la competición | NP |
 | Rol en el sistema | Miembro votante de un *stack* lineal ajustado OOF sobre 5 miembros |
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks a nivel de miembro (MMLU, HumanEval
 - VRAM estimada para inferencia: no publicada. Como referencia aproximada, un encoder de 559 M de parámetros ocupa en torno a 2,2 GB en fp32 (coherente con los 2,2 GB del repositorio) y alrededor de 1,1 GB en fp16, a lo que hay que sumar activaciones y *overhead* del *runtime*.
 - GPU recomendadas: cualquier GPU con 6 GB o más de VRAM es suficiente en la práctica. No se requiere A100 ni H100; tarjetas como RTX 3060, RTX 4060, RTX 4090 o T4 son adecuadas.
 - Cabe en GPU de consumo: sí, en cualquier GPU moderna con al menos 6 GB de VRAM, y probablemente también en GPUs integradas con memoria unificada suficiente.
-- Opciones de despliegue: no hay soporte directo en vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo y los pesos no están en formato HuggingFace. El despliegue requiere PyTorch más el código de `NAMAA-ORG/NAMAA-Community-AraSeg-2026` (ficheros `ensemble.py` y `verify_offcluster.py` mencionados en la model card) y el *stack* de dependencias fijado en `requirements-llm.txt`. La conversión a ONNX o TorchScript sería posible, pero no está documentada.
+- Opciones de despliegue: no hay soporte directo en vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo y los pesos no están en formato Hugging Face. El despliegue requiere PyTorch más el código de `NAMAA-ORG/NAMAA-Community-AraSeg-2026` (ficheros `ensemble.py` y `verify_offcluster.py` mencionados en la model card) y el *stack* de dependencias fijado en `requirements-llm.txt`. La conversión a ONNX o TorchScript sería posible, pero no está documentada.
 - Latencia y throughput: no disponibles. No se publican mediciones de latencia ni de palabras procesadas por segundo.
 - Nota de compatibilidad: `from_pretrained` no funciona con este repositorio. Los cinco miembros basados en LoRA del sistema requieren `transformers==5.12.1`.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks a nivel de miembro (MMLU, HumanEval
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| `NAMAA-Space/araseg-e15-xlmr-np-s1` | Encoder de clasificación de tokens, miembro de ensemble | Aproximadamente 559 M (heredados del base) | No especificado (base: 512 tokens) | MIT | HuggingFace, como `state_dict` de PyTorch | No aplicable individualmente; el sistema alcanza 92,84 / 91,3 macro-F1 |
-| `FacebookAI/xlm-roberta-large` (modelo base) | Encoder multilingüe preentrenado | Aproximadamente 559 M | 512 tokens | MIT | HuggingFace, formato estándar | No es un segmentador; requiere ajuste |
+| `NAMAA-Space/araseg-e15-xlmr-np-s1` | Encoder de clasificación de tokens, miembro de ensemble | Aproximadamente 559 M (heredados del base) | No especificado (base: 512 tokens) | MIT | Hugging Face, como `state_dict` de PyTorch | No aplicable individualmente; el sistema alcanza 92,84 / 91,3 macro-F1 |
+| `FacebookAI/xlm-roberta-large` (modelo base) | Encoder multilingüe preentrenado | Aproximadamente 559 M | 512 tokens | MIT | Hugging Face, formato estándar | No es un segmentador; requiere ajuste |
 | Otros miembros del ensemble AraSeg 2026 de NAMAA | Encoders y adaptadores LoRA | No disponible | No disponible | No disponible | Colección `NAMAA-Space/namaa-community-araseg-2026` | No disponible por miembro |
 | Otros sistemas participantes en AraSeg 2026 | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -101,7 +101,7 @@ No se dispone de comparaciones publicadas frente a herramientas clásicas de seg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e15-xlmr-np-s1
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e15-xlmr-np-s1
 - Colección del sistema AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de código, configuraciones y mapa miembro→subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

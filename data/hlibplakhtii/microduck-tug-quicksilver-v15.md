@@ -1,7 +1,7 @@
 # HlibPlakhtii/microduck-tug-quicksilver-v15
 
 ## Resumen
-microduck-tug-quicksilver-v15 es un modelo de política para robótica (pipeline `robotics`) publicado por HlibPlakhtii en HuggingFace, distribuido en formato ONNX y etiquetado como `microduck-policy`. No es un modelo de lenguaje: es un remix de competición de simulación derivado por fine-tuning de `jrubiosainz/microduck-tug-quicksilver-v14-h1-3cc8e430`, que a su vez procede de un linaje de contribuciones comunitarias vinculadas a Pollen Robotics. El modelo está pensado para controlar agentes en un entorno de simulación evaluado con el "Arena evaluator" sobre MuJoCo 3.10.0.
+microduck-tug-quicksilver-v15 es un modelo de política para robótica (pipeline `robotics`) publicado por HlibPlakhtii en Hugging Face, distribuido en formato ONNX y etiquetado como `microduck-policy`. No es un modelo de lenguaje: es un remix de competición de simulación derivado por fine-tuning de `jrubiosainz/microduck-tug-quicksilver-v14-h1-3cc8e430`, que a su vez procede de un linaje de contribuciones comunitarias vinculadas a Pollen Robotics. El modelo está pensado para controlar agentes en un entorno de simulación evaluado con el "Arena evaluator" sobre MuJoCo 3.10.0.
 
 La contribución técnica de esta versión no es un reentrenamiento de la red heredada, sino la incorporación de dos tablas de búsqueda (*lookups*) de observaciones que reproducen secuencias de acciones optimizadas localmente para las semillas oficiales 3 y 4. El resto del grafo heredado y la red *head-to-head* se preservan intactos. La búsqueda se realizó con CMA-ES separable tras una refinación de coordenadas acotada, partiendo de trayectorias normalizadas equivalentes en fuerza.
 
@@ -68,9 +68,9 @@ El autor indica que no verificó de forma independiente el rendimiento semanal e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HlibPlakhtii/microduck-tug-quicksilver-v15 | no disponible | no aplica | 166,62117481 cm, 5 victorias por pit (local, semillas 3 y 4) | no disponible (licencia heredada) | HuggingFace, formato ONNX |
-| jrubiosainz/microduck-tug-quicksilver-v14-h1-3cc8e430 | no disponible | no aplica | no disponible | no disponible | HuggingFace (modelo base) |
-| Otras variantes del linaje microduck | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| HlibPlakhtii/microduck-tug-quicksilver-v15 | no disponible | no aplica | 166,62117481 cm, 5 victorias por pit (local, semillas 3 y 4) | no disponible (licencia heredada) | Hugging Face, formato ONNX |
+| jrubiosainz/microduck-tug-quicksilver-v14-h1-3cc8e430 | no disponible | no aplica | no disponible | no disponible | Hugging Face (modelo base) |
+| Otras variantes del linaje microduck | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparables de otras variantes del linaje en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparables de otras variantes del linaje e
 - No se modificaron física, árbitro, servidor ni datos de la clasificación durante la optimización.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v15
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v15
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-tug-quicksilver-v14-h1-3cc8e430/tree/3b9ea9a2a2fbd9d44e3bd25375279488b3b5a216
 - Repositorio del modelo base: https://huggingface.co/jrubiosainz/microduck-tug-quicksilver-v14-h1-3cc8e430
 - Créditos mencionados: jrubiosainz, HlibPlakhtii, greecree, Pollen Robotics, lphatnguyen, a1rb4Ck, rumezhak, juicenv (sin URLs individuales disponibles)

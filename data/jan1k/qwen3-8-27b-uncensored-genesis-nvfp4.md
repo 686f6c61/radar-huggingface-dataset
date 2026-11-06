@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jan1k/Qwen3.8-27B-Uncensored-Genesis-NVFP4 (este) | 26,9 B | GGUF NVFP4, 15,76 GB (v4) | 131.072 tokens en el ejemplo de uso | apache-2.0 | HuggingFace, 0 descargas |
-| LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-GGUF (origen directo) | no disponible en la informacion | GGUF; el fichero de partida citado es Q8_K_P de 31,5 GB | no disponible | no disponible | HuggingFace |
-| HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF (base sin reparar) | no disponible en la informacion | GGUF | no disponible | no disponible | HuggingFace |
-| Variante v4-noMTP de este mismo repositorio | 26,9 B (con el bloque MTP eliminado) | GGUF NVFP4, 15,53 GB, 851 tensores | 131.072 tokens en el ejemplo de uso | apache-2.0 | HuggingFace |
+| jan1k/Qwen3.8-27B-Uncensored-Genesis-NVFP4 (este) | 26,9 B | GGUF NVFP4, 15,76 GB (v4) | 131.072 tokens en el ejemplo de uso | apache-2.0 | Hugging Face, 0 descargas |
+| LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-GGUF (origen directo) | no disponible en la informacion | GGUF; el fichero de partida citado es Q8_K_P de 31,5 GB | no disponible | no disponible | Hugging Face |
+| HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF (base sin reparar) | no disponible en la informacion | GGUF | no disponible | no disponible | Hugging Face |
+| Variante v4-noMTP de este mismo repositorio | 26,9 B (con el bloque MTP eliminado) | GGUF NVFP4, 15,53 GB, 851 tensores | 131.072 tokens en el ejemplo de uso | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa entre estas variantes. La diferencia medible documentada es el tamano (15,76 GB frente a 15,53 GB) y la presencia o ausencia del bloque MTP para decodificacion especulativa.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-Genesis-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-Genesis-NVFP4
 - Modelo base (GGUF Genesis de LuffyTheFox): https://huggingface.co/LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-GGUF
 - Base sin reparar de tensores (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Cuantizador advanced-gguf-quantizer: https://github.com/michaelw9999/advanced-gguf-quantizer

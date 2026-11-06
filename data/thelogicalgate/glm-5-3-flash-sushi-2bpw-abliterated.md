@@ -79,9 +79,9 @@ No se han publicado métricas de MMLU, HumanEval, GSM8K completos ni otras bater
 
 | Modelo | Parametros | Contexto | Formato / motor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thelogicalgate/GLM-5.3-Flash-Sushi-2bpw-Abliterated | 50,1B (MoE, activos no disponibles) | 262.144 | Sushi (Apple Silicon) | MIT (DFlash2 CC BY-NC-ND 4.0) | HuggingFace, 0 descargas |
-| beamster/GLM-5.3-Flash-Sushi-2bpw (base) | no disponible | no disponible | Sushi (Apple Silicon) | no disponible en la información | HuggingFace |
-| dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 (donante) | no disponible | no disponible | NVFP4 | no disponible en la información | HuggingFace |
+| thelogicalgate/GLM-5.3-Flash-Sushi-2bpw-Abliterated | 50,1B (MoE, activos no disponibles) | 262.144 | Sushi (Apple Silicon) | MIT (DFlash2 CC BY-NC-ND 4.0) | Hugging Face, 0 descargas |
+| beamster/GLM-5.3-Flash-Sushi-2bpw (base) | no disponible | no disponible | Sushi (Apple Silicon) | no disponible en la información | Hugging Face |
+| dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 (donante) | no disponible | no disponible | NVFP4 | no disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada, por lo que no es posible una comparación de rendimiento. Otras alternativas de la misma categoría (modelos MoE abliterated o cuantizados a 2 bits) no disponibles.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Página de HuggingFace: https://huggingface.co/thelogicalgate/GLM-5.3-Flash-Sushi-2bpw-Abliterated
+- Página de Hugging Face: https://huggingface.co/thelogicalgate/GLM-5.3-Flash-Sushi-2bpw-Abliterated
 - Repositorio de Sushi: https://github.com/beamivalice/sushi
 - Instrucciones de uso de Sushi: https://github.com/beamivalice/sushi/blob/main/docs/usage.md
 - Modelo base: https://huggingface.co/beamster/GLM-5.3-Flash-Sushi-2bpw

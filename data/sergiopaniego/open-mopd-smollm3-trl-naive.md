@@ -34,7 +34,7 @@ El entrenamiento aplica destilación on-policy multi-profesor: cada prompt se en
 - Generación de código, aunque el autor indica explícitamente que el código no fue evaluado en este checkpoint.
 - Seguimiento de instrucciones (IFEval), con mejora medida frente al modelo de partida.
 - Razonamiento multi-paso orientado a problemas tipo competición (AIME), con capacidad de generar cadenas de razonamiento largas (hasta 16K tokens en entrenamiento).
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades multimodales (visión, audio): no disponibles.
 
@@ -64,17 +64,17 @@ Evaluación realizada con los conjuntos y scorers de Open-MOPD: AIME con 4 muest
 - En cuantización de 8 bits: alrededor de 3,1 GB de pesos; en 4 bits, alrededor de 1,6 GB, aunque no se han publicado pesos cuantizados oficiales.
 - GPU recomendadas para entrenamiento completo: 4 × H200, configuración usada por el autor (servidor del estudiante, profesores y trainer).
 - GPU para inferencia: cabe en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB) en BF16, y en GPUs de 8-12 GB con cuantización.
-- Opciones de despliegue: transformers (librería declarada), vLLM, TGI, llama.cpp u Ollama previa conversión a GGUF; endpoints compatibles de HuggingFace.
+- Opciones de despliegue: transformers (librería declarada), vLLM, TGI, llama.cpp u Ollama previa conversión a GGUF; endpoints compatibles de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint | 3.075 M | no disponible | Apache 2.0 | HuggingFace | Demo de 60 pasos, no apto para producción |
-| Open-MOPD final (paper) | ~3.000 M | no disponible | no disponible | HuggingFace (BytedTsinghua-SIA) | Modelo completo del paper, mejores resultados en IFEval y AIME25 |
-| Open-MOPD-SmolLM3-3B-MixSFT | ~3.000 M | no disponible | no disponible | HuggingFace (BytedTsinghua-SIA) | Punto de partida del estudiante |
-| SmolLM3-3B (base) | ~3.000 M | no disponible | no disponible | HuggingFace (HuggingFaceTB) | Modelo original sin destilar |
+| Este checkpoint | 3.075 M | no disponible | Apache 2.0 | Hugging Face | Demo de 60 pasos, no apto para producción |
+| Open-MOPD final (paper) | ~3.000 M | no disponible | no disponible | Hugging Face (BytedTsinghua-SIA) | Modelo completo del paper, mejores resultados en IFEval y AIME25 |
+| Open-MOPD-SmolLM3-3B-MixSFT | ~3.000 M | no disponible | no disponible | Hugging Face (BytedTsinghua-SIA) | Punto de partida del estudiante |
+| SmolLM3-3B (base) | ~3.000 M | no disponible | no disponible | Hugging Face (HuggingFaceTB) | Modelo original sin destilar |
 
 La comparación con alternativas de otros linajes (Qwen, Llama) no está disponible en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación con alternativas de otros linajes (Qwen, Llama) no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sergiopaniego/open-mopd-smollm3-trl-naive
+- Modelo en Hugging Face: https://huggingface.co/sergiopaniego/open-mopd-smollm3-trl-naive
 - Modelo base (estudiante): https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT
 - Profesor de matemáticas: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Math
 - Profesor de código: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Code

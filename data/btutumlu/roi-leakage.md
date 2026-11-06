@@ -103,7 +103,7 @@ La lectura es que el cifrado selectivo apenas reduce la capacidad del atacante (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Btutumlu/roi-leakage
+- Repositorio en Hugging Face: https://huggingface.co/Btutumlu/roi-leakage
 - Código y pasos de reproducción: https://github.com/Yabgun/roi-leakage
 - Conjunto de datos de RM de tumor cerebral (figshare 1512427; Cheng et al., PLOS ONE 2015): https://figshare.com/articles/dataset/brain_tumor_dataset/1512427
 - Conjunto de datos COVID-QU-Ex (Kaggle `anasmohammedtahir/covidqu`; Tahir et al., 2021): https://www.kaggle.com/datasets/anasmohammedtahir/covidqu

@@ -4,7 +4,7 @@
 
 Sambhrama voices es un paquete de cuatro voces de síntesis de voz (text-to-speech) distribuidas en formato ONNX para ejecución en navegador. Lo publica el usuario Raamuhb como parte de la aplicación Sambhrama, cuyo objetivo es leer poemas en voz alta en el propio dispositivo del lector, sin depender de servicios de TTS en la nube. Las cuatro voces cubren dos idiomas (kannada e inglés indio) y dos géneros (femenino y masculino): `kn-krithi`, `kn-basu`, `en-krithi` y `en-basu`.
 
-Técnicamente no se trata de un modelo nuevo: son copias convertidas a ONNX de cuatro modelos VITS entrenados por el proyecto SYSPIN (IISc Bengaluru / ARTPARK), publicados originalmente en HuggingFace bajo licencia CC BY 4.0. La conversión divide cada voz en cuatro componentes (`enc`, `dur`, `flow`, `dec`), guarda el encoder y el flow en int8 y el decoder en float16, y conserva un fichero `.json` con el alfabeto de cada voz. El repo ocupa 0,2 GB.
+Técnicamente no se trata de un modelo nuevo: son copias convertidas a ONNX de cuatro modelos VITS entrenados por el proyecto SYSPIN (IISc Bengaluru / ARTPARK), publicados originalmente en Hugging Face bajo licencia CC BY 4.0. La conversión divide cada voz en cuatro componentes (`enc`, `dur`, `flow`, `dec`), guarda el encoder y el flow en int8 y el decoder en float16, y conserva un fichero `.json` con el alfabeto de cada voz. El repo ocupa 0,2 GB.
 
 Su relevancia es práctica: ofrece TTS multilingüe (kannada e inglés indio) listo para inferencia local en el navegador mediante ONNX Runtime Web, con cuantización agresiva que reduce el peso y permite funcionar sin GPU dedicada. Es un ejemplo de empaquetado orientado a despliegue en cliente más que de investigación en modelado.
 
@@ -23,7 +23,7 @@ Su relevancia es práctica: ofrece TTS multilingüe (kannada e inglés indio) li
 
 ## Arquitectura y entrenamiento
 
-Cada voz es un modelo VITS, una arquitectura de síntesis de voz end-to-end que combina un encoder de texto, un predictor de duraciones, un flow normalizador y un decoder generativo, entrenada de forma adversarial condicionada. Los pesos originales fueron entrenados por el proyecto SYSPIN (IISc Bengaluru / ARTPARK) y publicados como modelos independientes en HuggingFace.
+Cada voz es un modelo VITS, una arquitectura de síntesis de voz end-to-end que combina un encoder de texto, un predictor de duraciones, un flow normalizador y un decoder generativo, entrenada de forma adversarial condicionada. Los pesos originales fueron entrenados por el proyecto SYSPIN (IISc Bengaluru / ARTPARK) y publicados como modelos independientes en Hugging Face.
 
 La aportación de este repositorio es el empaquetado: cada voz se divide en cuatro submodelos ONNX (`enc`, `dur`, `flow`, `dec`), con el encoder y el flow cuantizados a int8 y el decoder a float16. No se indica en la información disponible el volumen de datos de entrenamiento, la composición del corpus, ni si hubo ajuste por RLHF o DPO (poco habitual en TTS). Tampoco se documentan innovaciones de decodificación o atención más allá de la propia arquitectura VITS.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sambhrama voices (este repo) | VITS empaquetado en ONNX | kn, en (indio) | ONNX int8/float16 | CC BY 4.0 | HuggingFace |
-| SYSPIN/tts_vits_coquiai_KannadaFemale | VITS original | kn | pesos originales (no especificado) | CC BY 4.0 | HuggingFace |
-| SYSPIN/tts_vits_coquiai_EnglishMale | VITS original | en (indio) | pesos originales (no especificado) | CC BY 4.0 | HuggingFace |
-| Coqui TTS (familia VITS genérica) | VITS | multilingüe | PyTorch / ONNX | MPL 2.0 (según modelo) | HuggingFace / GitHub |
+| Sambhrama voices (este repo) | VITS empaquetado en ONNX | kn, en (indio) | ONNX int8/float16 | CC BY 4.0 | Hugging Face |
+| SYSPIN/tts_vits_coquiai_KannadaFemale | VITS original | kn | pesos originales (no especificado) | CC BY 4.0 | Hugging Face |
+| SYSPIN/tts_vits_coquiai_EnglishMale | VITS original | en (indio) | pesos originales (no especificado) | CC BY 4.0 | Hugging Face |
+| Coqui TTS (familia VITS genérica) | VITS | multilingüe | PyTorch / ONNX | MPL 2.0 (según modelo) | Hugging Face / GitHub |
 
 La comparación directa con otros modelos TTS comerciales (ElevenLabs, Google Cloud TTS) no está disponible en la información proporcionada, y no se han publicado métricas de calidad (MOS, WER) para estas voces en el repositorio.
 
@@ -80,7 +80,7 @@ La comparación directa con otros modelos TTS comerciales (ElevenLabs, Google Cl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Raamuhb/sambhrama-voices
+- Repositorio Hugging Face: https://huggingface.co/Raamuhb/sambhrama-voices
 - Modelo original kannada femenino: https://huggingface.co/SYSPIN/tts_vits_coquiai_KannadaFemale
 - Modelo original kannada masculino: https://huggingface.co/SYSPIN/tts_vits_coquiai_KannadaMale
 - Modelo original inglés femenino: https://huggingface.co/SYSPIN/tts_vits_coquiai_EnglishFemale

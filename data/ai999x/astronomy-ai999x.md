@@ -4,7 +4,7 @@
 
 astronomy-ai999x es un motor de resolución de problemas de astronomía para Python, distribuido por la organización AI999X y creado por Ibnul Jaif Farabi. No es un modelo de lenguaje generativo al uso: se describe como un motor neuro-simbólico determinista que interpreta la pregunta en inglés, selecciona una de sus 67 capacidades astronómicas certificadas, calcula el resultado de forma exacta y lo devuelve junto con los pasos, unidades, LaTeX y supuestos empleados. Cuando no puede verificar la respuesta, devuelve un rechazo explícito en lugar de improvisar.
 
-El repositorio de HuggingFace contiene pesos en safetensors con 4.715.520 parámetros (aproximadamente 4,7 millones) y artefactos ONNX, además de la distribución instalable vía pip. El paquete declara ejecución exclusiva en CPU, sin GPU, sin red y sin claves de API, con resultados idénticos en Windows y Linux sobre Python 3.10 a 3.14.
+El repositorio de Hugging Face contiene pesos en safetensors con 4.715.520 parámetros (aproximadamente 4,7 millones) y artefactos ONNX, además de la distribución instalable vía pip. El paquete declara ejecución exclusiva en CPU, sin GPU, sin red y sin claves de API, con resultados idénticos en Windows y Linux sobre Python 3.10 a 3.14.
 
 Su relevancia actual reside en la propuesta de "cero respuestas incorrectas por diseño": siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y un conjunto de 350 respuestas doradas documentadas que, según el autor, se reproducen de forma idéntica en todas las plataformas probadas. La evaluación es declarada por el autor y no está verificada de forma independiente.
 
@@ -101,10 +101,10 @@ La diferencia funcional clave frente a un LLM es que astronomy-ai999x no genera 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/astronomy-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/astronomy-ai999x
 - Documentación de capacidades: https://huggingface.co/AI999X/astronomy-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/astronomy-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Paquete en PyPI: https://pypi.org/project/astronomy-ai999x/
 - Sitio web: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi

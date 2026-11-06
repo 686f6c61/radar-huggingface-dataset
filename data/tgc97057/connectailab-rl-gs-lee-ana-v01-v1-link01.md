@@ -56,7 +56,7 @@ Los únicos datos disponibles son los de la model card, medidos en el propio ent
 | Aprendizaje supervisado (LoRA) | 92,9 % | 70 % | 50 % | 31,9 s |
 | Ajuste con refuerzo (PPO + KL) | 92,1 % | 65 % | 45 % | 29,2 s |
 
-El modelo subido a HuggingFace corresponde a la variante de aprendizaje supervisado, según indica la model card ("올린 모델: 지도학습"). El límite superior de acierto (proporción en que el cerebro da la misma respuesta al pasar la observación a texto) es del 100 %.
+El modelo subido a Hugging Face corresponde a la variante de aprendizaje supervisado, según indica la model card ("올린 모델: 지도학습"). El límite superior de acierto (proporción en que el cerebro da la misma respuesta al pasar la observación a texto) es del 100 %.
 
 ## Requisitos de hardware
 
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tgc97057/connectailab-rl-gs.lee-ana-v01-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/tgc97057/connectailab-rl-gs.lee-ana-v01-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

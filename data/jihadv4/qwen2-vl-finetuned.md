@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que aprovecha una base sólida como Qwen2
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo base `unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del Qwen2.5-VL-7B-Instruct original de Alibaba. La arquitectura Qwen2.5-VL combina un codificador de visión con un modelo de lenguaje, permitiendo procesar entradas de imagen y texto de forma conjunta. El entrenamiento se realizó con Unsloth y TRL, tal y como se indica en las etiquetas del repositorio. Unsloth es una biblioteca que acelera el fine-tuning y reduce el consumo de memoria, y TRL es la librería de HuggingFace para entrenamiento con reinforcement learning y fine-tuning supervisado. Sin embargo, no se proporcionan detalles sobre el conjunto de datos, el número de tokens, el método de optimización (SFT, DPO, RLHF) ni ninguna innovación técnica específica. El tamaño del repositorio (0,2 GB) sugiere que el resultado del entrenamiento son adaptadores LoRA, que requieren el modelo base para su carga.
+El modelo es un fine-tuning del modelo base `unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del Qwen2.5-VL-7B-Instruct original de Alibaba. La arquitectura Qwen2.5-VL combina un codificador de visión con un modelo de lenguaje, permitiendo procesar entradas de imagen y texto de forma conjunta. El entrenamiento se realizó con Unsloth y TRL, tal y como se indica en las etiquetas del repositorio. Unsloth es una biblioteca que acelera el fine-tuning y reduce el consumo de memoria, y TRL es la librería de Hugging Face para entrenamiento con reinforcement learning y fine-tuning supervisado. Sin embargo, no se proporcionan detalles sobre el conjunto de datos, el número de tokens, el método de optimización (SFT, DPO, RLHF) ni ninguna innovación técnica específica. El tamaño del repositorio (0,2 GB) sugiere que el resultado del entrenamiento son adaptadores LoRA, que requieren el modelo base para su carga.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La comparación se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jihadv4/qwen2-vl-finetuned
+- Modelo en Hugging Face: https://huggingface.co/jihadv4/qwen2-vl-finetuned
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit
 - Repositorio de ejemplo de fine-tuning de Qwen2-VL: https://github.com/wjbmattingly/qwen2-vl-finetune-huggingface
 - Repositorio de fine-tuning de Qwen2-VL: https://github.com/zhangfaen/finetune-Qwen2-VL

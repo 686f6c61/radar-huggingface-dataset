@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Multilingual_Intent_classifier_v1 es un clasificador de intención multilingüe publicado por blue-machines (Blue Machines AI) en HuggingFace. Se trata de un encoder Gemma 3 recortado a 8 capas, exportado a ONNX y cuantizado a INT8 dinámico, con una cabeza lineal de clasificación que se mantiene en FP32. El modelo no genera texto: recibe una utterance y devuelve un vector de 7 logits, uno por cada intención predefinida (`provide_info`, `affirm`, `deny`, `correction`, `question`, `clarify_request`, `unclear`).
+Multilingual_Intent_classifier_v1 es un clasificador de intención multilingüe publicado por blue-machines (Blue Machines AI) en Hugging Face. Se trata de un encoder Gemma 3 recortado a 8 capas, exportado a ONNX y cuantizado a INT8 dinámico, con una cabeza lineal de clasificación que se mantiene en FP32. El modelo no genera texto: recibe una utterance y devuelve un vector de 7 logits, uno por cada intención predefinida (`provide_info`, `affirm`, `deny`, `correction`, `question`, `clarify_request`, `unclear`).
 
 El problema que resuelve es concreto: en sistemas de diálogo desplegados en India, los turnos del usuario llegan en script nativo, romanizados o mezclando inglés con la lengua local (code-mixed). Un clasificador de intención que asuma texto limpio en un solo idioma falla en esos escenarios. Este modelo cubre diez idiomas (inglés, hindi, tamil, telugu, kannada, maratí, malabar, bengalí, guyaratí y odia) y declara explícitamente soporte para esas tres formas de escritura.
 
@@ -99,7 +99,7 @@ Diferencias cualitativas relevantes: los tres alternativos son modelos de repres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blue-machines/Multilingual_Intent_classifier_v1
+- Modelo en Hugging Face: https://huggingface.co/blue-machines/Multilingual_Intent_classifier_v1
 - Nota de prensa sobre Floe, modelo de detección de idioma de Blue Machines AI para conversaciones multilingües en India: https://www.webnewswire.com/2026/08/20/blue-machines-ai-launches-floe-a-context-aware-language-detection-model-for-multilingual-enterprise-conversations-in-india/
 - Cobertura en Rediff sobre Floe: https://www.rediff.com/business/report/blue-machines-ai-launches-floe-language-detection-model/20260819.htm
 - Paper, repositorio de código y demo: no disponibles en la información proporcionada.

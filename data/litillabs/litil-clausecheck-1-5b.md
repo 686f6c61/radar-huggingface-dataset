@@ -102,7 +102,7 @@ No se han proporcionado datos de otros adaptadores legales comparables de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litillabs/litil-clausecheck-1.5b
+- Modelo en Hugging Face: https://huggingface.co/litillabs/litil-clausecheck-1.5b
 - Dataset de entrenamiento y evaluacion: nguha/legalbench (referenciado en la model card; enlace directo no disponible)
 - Modelo base: Qwen/Qwen2.5-1.5B-Instruct (referenciado en la model card; enlace directo no disponible)
 - Revision evaluada del repositorio: `a727ff1b491fcf136ac13876c48254b2f69a5f32`

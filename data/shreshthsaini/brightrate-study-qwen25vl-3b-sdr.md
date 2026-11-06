@@ -61,7 +61,7 @@ No se han publicado resultados comparativos con otros modelos de VQA en la infor
 - VRAM estimada para inferencia: el modelo base Qwen2.5-VL-3B-Instruct en FP16 requiere aproximadamente 6 GB de VRAM; con cuantización 4-bit (bitsandbytes) baja a unos 2 GB. El adaptador LoRA añade una sobrecarga mínima (menos de 0.1 GB).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantización 4-bit (p.ej. RTX 3050, RTX 4060) o 8 GB para FP16 (p.ej. RTX 3070, RTX 4070). En entornos de producción, una A10G o A100 es suficiente para procesamiento por lotes.
 - Cabe en GPUs de consumo: sí, con cuantización 4-bit es viable en tarjetas de gama media.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` y `transformers` de HuggingFace. Para inferencia en producción, se puede servir con vLLM o TGI si se combina con el modelo base, aunque la tarea es de regresión y no requiere generación de texto. También es posible usar llama.cpp si se convierte el modelo a GGUF, pero no está documentado.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` y `transformers` de Hugging Face. Para inferencia en producción, se puede servir con vLLM o TGI si se combina con el modelo base, aunque la tarea es de regresión y no requiere generación de texto. También es posible usar llama.cpp si se convierte el modelo a GGUF, pero no está documentado.
 - Latencia y throughput: no disponibles. Dependen del hardware y del número de fotogramas procesados; al ser ocho imágenes por vídeo, la latencia será mayor que la de un modelo de texto puro.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de datos comparativos directos con otros modelos de VQA en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-qwen25vl-3b-sdr
+- Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-qwen25vl-3b-sdr
 - Repositorio BrightVQ (dataset): https://github.com/shreshthsaini/BrightVQ
 - Repositorio BrightRate-LM (código y construcción de entrada): https://github.com/shreshthsaini/BrightRate-LM
 - Paper BrightRate (WACV 2026): https://openaccess.thecvf.com/content/WACV2026/html/Saini_BrightRate_Quality_Assessment_for_User-Generated_HDR_Videos_WACV_2026_paper.html

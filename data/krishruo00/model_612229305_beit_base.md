@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_612229305_beit_base` es una implementación a escala **base** de la arquitectura **BEiT**, desarrollada por el usuario krishruo00 y publicada en HuggingFace. Según la model card, está diseñado específicamente para tareas de **retrieval** (búsqueda y recuperación de información), aunque no se especifica el dominio (imágenes, texto u otro). La arquitectura BEiT, originalmente propuesta por Microsoft, se basa en transformadores preentrenados de forma auto-supervisada sobre imágenes, pero esta variante parece adaptada a retrieval con modificaciones como atención de grupo (grouped query), fusión gated y activaciones ReLU.
+El modelo `model_612229305_beit_base` es una implementación a escala **base** de la arquitectura **BEiT**, desarrollada por el usuario krishruo00 y publicada en Hugging Face. Según la model card, está diseñado específicamente para tareas de **retrieval** (búsqueda y recuperación de información), aunque no se especifica el dominio (imágenes, texto u otro). La arquitectura BEiT, originalmente propuesta por Microsoft, se basa en transformadores preentrenados de forma auto-supervisada sobre imágenes, pero esta variante parece adaptada a retrieval con modificaciones como atención de grupo (grouped query), fusión gated y activaciones ReLU.
 
 La relevancia de este modelo es limitada, ya que no se proporcionan datos de entrenamiento, métricas de rendimiento ni ejemplos de uso. La licencia Apache-2.0 permite uso comercial y modificación, pero la falta de documentación técnica y de pesos publicados (solo se incluye un archivo Python) hace que sea difícil evaluarlo o utilizarlo directamente en producción. Actualmente tiene 0 descargas y 0 likes, lo que sugiere que es un proyecto experimental o personal.
 
@@ -57,14 +57,14 @@ No se dispone de datos para comparar con otros modelos de retrieval. Se podría 
 
 ## Enlaces
 
-- [HuggingFace - krishruo00/model_612229305_beit_base](https://huggingface.co/krishruo00/model_612229305_beit_base)
+- [Hugging Face - krishruo00/model_612229305_beit_base](https://huggingface.co/krishruo00/model_612229305_beit_base)
 - [BEiT base patch16 224 (Microsoft)](https://huggingface.co/microsoft/beit-base-patch16-224)
 - [BEiT base fine-tuned ADE20k (Microsoft)](https://huggingface.co/microsoft/beit-base-finetuned-ade-640-640)
 - [Documentación de BEiT en Azure AI Foundry](https://ai.azure.com/catalog/models/microsoft-beit-base-finetuned-ade-640-640)
 
 (Nota: los enlaces a Microsoft sirven como referencia de la arquitectura BEiT, pero no son el modelo de krishruo00.)</think>## Resumen
 
-El modelo `model_612229305_beit_base` es una implementación a escala **base** de la arquitectura **BEiT**, publicada por el usuario `krishruo00` en HuggingFace. Según la model card, está diseñado para tareas de **retrieval** (recuperación de información), aunque no se especifica si trabaja con imágenes, texto u otro tipo de datos. La arquitectura BEiT, originalmente propuesta por Microsoft para el preentrenamiento auto-supervisado de transformadores de imagen, se adapta aquí con modificaciones como atención grouped query, fusión gated, activación ReLU y normalización LayerNorm.
+El modelo `model_612229305_beit_base` es una implementación a escala **base** de la arquitectura **BEiT**, publicada por el usuario `krishruo00` en Hugging Face. Según la model card, está diseñado para tareas de **retrieval** (recuperación de información), aunque no se especifica si trabaja con imágenes, texto u otro tipo de datos. La arquitectura BEiT, originalmente propuesta por Microsoft para el preentrenamiento auto-supervisado de transformadores de imagen, se adapta aquí con modificaciones como atención grouped query, fusión gated, activación ReLU y normalización LayerNorm.
 
 La relevancia de este modelo es limitada en su estado actual: no se publican pesos entrenados, solo un archivo Python con la definición de la arquitectura, y no se aportan métricas de rendimiento ni documentación sobre el entrenamiento. Con 0 descargas y 0 likes, parece un proyecto experimental o académico. La licencia Apache-2.0 permite uso comercial y modificación, pero la ausencia de pesos y de documentación técnica dificulta su adopción en entornos reales.
 
@@ -120,7 +120,7 @@ No se puede realizar una comparativa al no conocer los parámetros reales, el da
 
 ## Enlaces
 
-- [HuggingFace - krishruo00/model_612229305_beit_base](https://huggingface.co/krishruo00/model_612229305_beit_base)
+- [Hugging Face - krishruo00/model_612229305_beit_base](https://huggingface.co/krishruo00/model_612229305_beit_base)
 - [BEiT base patch16 224 (Microsoft)](https://huggingface.co/microsoft/beit-base-patch16-224)
 - [BEiT base fine-tuned ADE20k (Microsoft)](https://huggingface.co/microsoft/beit-base-finetuned-ade-640-640)
 - [Referencia de BEiT en Azure AI Foundry](https://ai.azure.com/catalog/models/microsoft-beit-base-finetuned-ade-640-640)

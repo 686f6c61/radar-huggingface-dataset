@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BardomPro es un modelo de lenguaje de aproximadamente 4.650 millones de parámetros publicado en HuggingFace por el usuario BardomPro. El repositorio contiene pesos en formato GGUF, lo que sugiere que está orientado a inferencia local con herramientas como llama.cpp u Ollama. Los metadatos indican compatibilidad con endpoints y un enfoque conversacional, aunque no se dispone de documentación oficial que detalle su arquitectura, proceso de entrenamiento o capacidades específicas.
+BardomPro es un modelo de lenguaje de aproximadamente 4.650 millones de parámetros publicado en Hugging Face por el usuario BardomPro. El repositorio contiene pesos en formato GGUF, lo que sugiere que está orientado a inferencia local con herramientas como llama.cpp u Ollama. Los metadatos indican compatibilidad con endpoints y un enfoque conversacional, aunque no se dispone de documentación oficial que detalle su arquitectura, proceso de entrenamiento o capacidades específicas.
 
 La relevancia de este modelo es limitada en el ecosistema actual, dado que no se han publicado resultados de benchmarks ni información técnica detallada. Su tamaño (aproximadamente 4.6B parámetros) lo sitúa en la gama de modelos medianos, comparable a Llama 2 7B o Mistral 7B en cuanto a requisitos de hardware, pero sin evidencia pública de rendimiento. La fecha de creación (agosto de 2026) es posterior a la mayoría de modelos conocidos, pero la ausencia de documentación impide evaluar su utilidad práctica.
 
@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura interna del modelo. El rep
 
 ## Capacidades
 
-No se dispone de información verificada sobre las capacidades del modelo. Los tags de HuggingFace indican "conversational" y "endpoints_compatible", lo que sugiere que puede utilizarse para tareas de chat y que es compatible con servidores de inferencia tipo OpenAI, pero no hay ejemplos concretos ni documentación que respalde estas afirmaciones. No se puede confirmar soporte para tool calling, razonamiento multi-paso, generación de código, matemáticas, visión u otras modalidades.
+No se dispone de información verificada sobre las capacidades del modelo. Los tags de Hugging Face indican "conversational" y "endpoints_compatible", lo que sugiere que puede utilizarse para tareas de chat y que es compatible con servidores de inferencia tipo OpenAI, pero no hay ejemplos concretos ni documentación que respalde estas afirmaciones. No se puede confirmar soporte para tool calling, razonamiento multi-paso, generación de código, matemáticas, visión u otras modalidades.
 
 ## Casos de uso
 
@@ -59,4 +59,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - BardomPro/BardomPro](https://huggingface.co/BardomPro/BardomPro)
+- [Hugging Face - BardomPro/BardomPro](https://huggingface.co/BardomPro/BardomPro)

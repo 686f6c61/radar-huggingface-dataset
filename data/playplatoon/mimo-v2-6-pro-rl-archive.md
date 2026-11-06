@@ -84,8 +84,8 @@ La model card incluida en la información disponible se interrumpe en la secció
 
 | Modelo | Parámetros | Contexto | Licencia | Modalidades | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-RL | 1,02B totales / 42B activos | 1M | MIT | Texto, imagen, vídeo, audio | HuggingFace, ModelScope |
-| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | no disponible | HuggingFace, ModelScope |
+| MiMo-V2.6-Pro-RL | 1,02B totales / 42B activos | 1M | MIT | Texto, imagen, vídeo, audio | Hugging Face, ModelScope |
+| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | no disponible | Hugging Face, ModelScope |
 | Claude Opus 5 | no disponible | no disponible | propietaria | no disponible | API |
 | GPT-5.6 Sol | no disponible | no disponible | propietaria | no disponible | API |
 | Claude Fable 5 | no disponible | no disponible | propietaria | no disponible | API |
@@ -106,10 +106,10 @@ En rendimiento agéntico, MiMo-V2.6 Pro supera a Claude Opus 5 en AutomationBenc
 
 ## Enlaces
 
-- Repositorio HuggingFace del archivo: https://huggingface.co/playplatoon/MiMo-V2.6-Pro-RL-archive
-- Checkpoint oficial en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Repositorio Hugging Face del archivo: https://huggingface.co/playplatoon/MiMo-V2.6-Pro-RL-archive
+- Checkpoint oficial en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Checkpoint oficial en ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Pro-RL
-- Checkpoint Flash en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+- Checkpoint Flash en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Blog oficial: https://mimo.xiaomi.com/mimo-v2-6
 - Plataforma API de Xiaomi MiMo: https://platform.xiaomimimo.com
 - Xiaomi MiMo Studio: https://aistudio.xiaomimimo.com

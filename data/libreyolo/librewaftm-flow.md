@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Enfoque | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreWAFTm-flow | 64,2 M | WAFT (warping-only, sin volúmenes de correlación) | Pares de frames, salida `(H, W, 2)` | BSD 3-Clause + Apache 2.0 | HuggingFace (LibreYOLO) |
+| LibreWAFTm-flow | 64,2 M | WAFT (warping-only, sin volúmenes de correlación) | Pares de frames, salida `(H, W, 2)` | BSD 3-Clause + Apache 2.0 | Hugging Face (LibreYOLO) |
 | RAFT (alternativa clásica) | no disponible en esta ficha | Volúmenes de correlación iterativos | Pares de frames | BSD 3-Clause (upstream) | Repositorio oficial Princeton |
 | FlowFormer (alternativa transformer) | no disponible en esta ficha | Transformer con cost volumes | Pares de frames | no disponible | Repositorio oficial |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreWAFTm-flow
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreWAFTm-flow
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - Repositorio WAFT upstream: https://github.com/princeton-vl/WAFT
 - Commit upstream referenciado: https://github.com/princeton-vl/WAFT/commit/b152ff1cad1af8c185ee7b141997c48ff3334c87

@@ -115,7 +115,7 @@ El rasgo diferencial de este modelo es la combinación de un tamaño de ~2,5B co
 - Resultados bajos declarados en GPQA (11%), HellaSwag (22%) y TruthfulQA (33%), lo que indica debilidades en razonamiento avanzado, sentido común y factualidad.
 - Riesgo de alucinación relevante: el 33% en TruthfulQA sugiere una fiabilidad limitada en la veracidad factual.
 - Idiomas soportados únicamente inglés e italiano; no se declara soporte de castellano, por lo que su uso en español no está garantizado.
-- Discrepancia de licencia: los metadatos de HuggingFace indican `other`, mientras que la model card muestra una insignia Apache-2.0. Debe aclararse con el autor antes de cualquier uso comercial.
+- Discrepancia de licencia: los metadatos de Hugging Face indican `other`, mientras que la model card muestra una insignia Apache-2.0. Debe aclararse con el autor antes de cualquier uso comercial.
 - Es una conversión de terceros (autor sigmanih) y no una publicación oficial de OpenBMB; no hay garantía de fidelidad respecto al modelo base.
 - Repositorio sin descargas ni valoraciones, lo que implica ausencia de validación por parte de la comunidad.
 - Solo se ofrece una cuantización (Q4_K_M); no hay alternativas de mayor o menor precisión en este repositorio.
@@ -124,8 +124,8 @@ El rasgo diferencial de este modelo es la combinación de un tamaño de ~2,5B co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/openbmb-MiniCPM5-2B-MLX-GGUF-Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/openbmb-MiniCPM5-2B-MLX-GGUF-Q4_K_M
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-MLX
 - Sigma Studio (GitHub): https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Paper, blog o demo oficial: no disponible en la información proporcionada.

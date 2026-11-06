@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g2_run1` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en HuggingFace. El nombre del repositorio sugiere que el entrenamiento se ha orientado a tareas de generación de SQL, generación de código y posiblemente "autofagia" de código (término ambiguo que podría referirse a refactorización o autocompletado). Sin embargo, la model card no proporciona ninguna descripción detallada, ni datos de entrenamiento, ni hiperparámetros verificables. Todo el contenido de la model card es genérico y automático, con campos marcados como "[More Information Needed]".
+El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g2_run1` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en Hugging Face. El nombre del repositorio sugiere que el entrenamiento se ha orientado a tareas de generación de SQL, generación de código y posiblemente "autofagia" de código (término ambiguo que podría referirse a refactorización o autocompletado). Sin embargo, la model card no proporciona ninguna descripción detallada, ni datos de entrenamiento, ni hiperparámetros verificables. Todo el contenido de la model card es genérico y automático, con campos marcados como "[More Information Needed]".
 
 El modelo está etiquetado con `unsloth`, lo que indica que se ha entrenado o convertido con la librería Unsloth, optimizada para fine-tuning eficiente de modelos LLM. El repositorio contiene pesos en formato `safetensors` y tiene un tamaño de 0,2 GB, lo que sugiere que podría ser una versión cuantizada o un LoRA adaptador, aunque no se especifica. Dado que se basa en Qwen3-8B, hereda teóricamente sus capacidades arquitectónicas y de razonamiento, pero no hay evidencia pública de cómo se ha adaptado el modelo para las tareas específicas que sugiere el nombre. La relevancia actual de este modelo es limitada por la falta de documentación, pero puede ser de interés para desarrolladores que buscan un fine-tuning especializado en SQL y código, siempre que se validen sus capacidades de forma independiente.
 
@@ -77,6 +77,6 @@ No se dispone de información suficiente para realizar una comparativa fiable, y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g2_run1
+- Repositorio en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g2_run1
 - Modelo base Qwen3-8B (referencia): https://huggingface.co/Qwen/Qwen3-8B
 - Librería Unsloth: https://github.com/unslothai/unsloth

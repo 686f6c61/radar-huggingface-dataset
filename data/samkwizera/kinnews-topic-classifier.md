@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Samkwizera/kinnews-topic-classifier es un modelo de clasificación de texto publicado en HuggingFace por el usuario Samkwizera. Por su identificador y sus etiquetas (text-classification, xlm-roberta), se trata de un clasificador de temas orientado a noticias, presumiblemente en kinyarwanda ("kinnews" apunta a Kinyarwanda news), aunque esta interpretación procede del nombre del repositorio y no de documentación oficial. El pipeline declarado es text-classification y el modelo incluye pesos en formato safetensors.
+Samkwizera/kinnews-topic-classifier es un modelo de clasificación de texto publicado en Hugging Face por el usuario Samkwizera. Por su identificador y sus etiquetas (text-classification, xlm-roberta), se trata de un clasificador de temas orientado a noticias, presumiblemente en kinyarwanda ("kinnews" apunta a Kinyarwanda news), aunque esta interpretación procede del nombre del repositorio y no de documentación oficial. El pipeline declarado es text-classification y el modelo incluye pesos en formato safetensors.
 
-El modelo cuenta con 111.465.998 parámetros y un repositorio de 0,4 GB. La model card publicada es la plantilla automática de HuggingFace y no contiene información cumplimentada: ni desarrollador efectivo, ni datos de entrenamiento, ni licencia, ni idiomas, ni resultados de evaluación. Tampoco se han publicado resultados de benchmarks ni documentación técnica asociada.
+El modelo cuenta con 111.465.998 parámetros y un repositorio de 0,4 GB. La model card publicada es la plantilla automática de Hugging Face y no contiene información cumplimentada: ni desarrollador efectivo, ni datos de entrenamiento, ni licencia, ni idiomas, ni resultados de evaluación. Tampoco se han publicado resultados de benchmarks ni documentación técnica asociada.
 
 Su relevancia actual es limitada por la ausencia total de documentación y por registrar cero descargas y cero likes en el momento de la consulta. Puede resultar de interés únicamente como punto de partida para tareas de clasificación temática en contextos de bajos recursos lingüísticos, pero cualquier uso en producción exige validar previamente el modelo con datos propios.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada por la ausencia total de documentación y por r
 
 La etiqueta "xlm-roberta" del repositorio indica que el modelo emplea la familia de arquitecturas XLM-RoBERTa, un transformer encoder de tipo RoBERTa entrenado de forma multilingüe mediante masked language modeling. El recuento de parámetros (111,5 millones) es inferior al de XLM-RoBERTa base, por lo que probablemente se trate de una variante reducida o de una configuración con vocabulario o dimensiones distintas a las del checkpoint base estándar; no hay información confirmada al respecto.
 
-No se dispone de información sobre el procedimiento de entrenamiento: se desconocen el número de tokens, la composición del dataset, si se aplicaron técnicas de ajuste como RLHF o DPO, y los hiperparámetros utilizados. La model card es la plantilla automática de HuggingFace y todos los apartados figuran como "[More Information Needed]". La única referencia técnica presente en las etiquetas es el artículo arXiv:1910.09700, que corresponde a Lacoste et al. (2019) sobre estimación de impacto ambiental, citado en la sección de sostenibilidad de la plantilla y no como publicación del modelo.
+No se dispone de información sobre el procedimiento de entrenamiento: se desconocen el número de tokens, la composición del dataset, si se aplicaron técnicas de ajuste como RLHF o DPO, y los hiperparámetros utilizados. La model card es la plantilla automática de Hugging Face y todos los apartados figuran como "[More Information Needed]". La única referencia técnica presente en las etiquetas es el artículo arXiv:1910.09700, que corresponde a Lacoste et al. (2019) sobre estimación de impacto ambiental, citado en la sección de sostenibilidad de la plantilla y no como publicación del modelo.
 
 ## Capacidades
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Samkwizera/kinnews-topic-classifier | 111,5 M | no disponible | no disponible | no disponible | HuggingFace |
-| XLM-RoBERTa base | 278 M (dato publico de referencia) | 512 tokens | multilingüe (100 idiomas) | MIT | HuggingFace |
-| mBERT (bert-base-multilingual-cased) | 178 M (dato publico de referencia) | 512 tokens | multilingüe (104 idiomas) | Apache 2.0 | HuggingFace |
+| Samkwizera/kinnews-topic-classifier | 111,5 M | no disponible | no disponible | no disponible | Hugging Face |
+| XLM-RoBERTa base | 278 M (dato publico de referencia) | 512 tokens | multilingüe (100 idiomas) | MIT | Hugging Face |
+| mBERT (bert-base-multilingual-cased) | 178 M (dato publico de referencia) | 512 tokens | multilingüe (104 idiomas) | Apache 2.0 | Hugging Face |
 
 Los datos de XLM-RoBERTa base y mBERT corresponden a especificaciones públicas de referencia y no a información proporcionada sobre este modelo; se incluyen únicamente como orientación de magnitud. No se dispone de datos comparativos de rendimiento (MMLU, F1 u otras métricas) para ninguno de los tres en el contexto de clasificación de noticias en kinyarwanda.
 
@@ -83,7 +83,7 @@ Los datos de XLM-RoBERTa base y mBERT corresponden a especificaciones públicas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samkwizera/kinnews-topic-classifier
+- Modelo en Hugging Face: https://huggingface.co/Samkwizera/kinnews-topic-classifier
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la informacion disponible.

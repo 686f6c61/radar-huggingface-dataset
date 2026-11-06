@@ -6,7 +6,7 @@ Shruti es un modelo de reconocimiento automático del habla (ASR) de 55 millones
 
 El modelo resuelve un problema concreto: la transcripción de habla code-mixed india en entornos sin conectividad y con recursos limitados. Con un único archivo de 29,5 MB en cuantización de 4 bits (8 bits en activaciones) para el motor Cactus needle, transcribe una frase en aproximadamente un segundo usando 80 MB de memoria en un Samsung Galaxy F62 de 2021. Funciona en macOS, Linux, Windows, Android, iOS y WebAssembly, lo que permite desplegarlo tanto en aplicaciones móviles como directamente en el navegador.
 
-Su relevancia actual radica en la combinación de tamaño reducido, licencia permisiva y soporte nativo de code-switching, un escenario infraatendido por los modelos ASR multilingües convencionales. La ficha se basa exclusivamente en la información publicada por el autor en HuggingFace y en la model card; los datos no disponibles se indican explícitamente.
+Su relevancia actual radica en la combinación de tamaño reducido, licencia permisiva y soporte nativo de code-switching, un escenario infraatendido por los modelos ASR multilingües convencionales. La ficha se basa exclusivamente en la información publicada por el autor en Hugging Face y en la model card; los datos no disponibles se indican explícitamente.
 
 ## Especificaciones técnicas
 
@@ -74,9 +74,9 @@ Shruti no es el más preciso en hindi puro frente a Koyal o IndicConformer, pero
 
 | Modelo | Parámetros / tamaño | Idiomas | Code-switching | Licencia | Disponibilidad | WER MUCS Hinglish |
 |---|---|---|---|---|---|---|
-| Shruti | 55M / 29,5 MB (4 bits) | Hindi, inglés, hinglish | Sí, nativo | Apache-2.0 | HuggingFace, GitHub, demo web | 35,21 |
-| Koyal-hi-120M | 120M / 481 MB | Solo hindi | No | No disponible en la información | HuggingFace | 57,51 |
-| IndicConformer Hindi | No disponible / 482 MB (fp32) | Solo hindi | No | No disponible en la información | HuggingFace (ONNX) | 64,48 |
+| Shruti | 55M / 29,5 MB (4 bits) | Hindi, inglés, hinglish | Sí, nativo | Apache-2.0 | Hugging Face, GitHub, demo web | 35,21 |
+| Koyal-hi-120M | 120M / 481 MB | Solo hindi | No | No disponible en la información | Hugging Face | 57,51 |
+| IndicConformer Hindi | No disponible / 482 MB (fp32) | Solo hindi | No | No disponible en la información | Hugging Face (ONNX) | 64,48 |
 | Vosk small Hindi + Indian English | No disponible / 139 MB | Hindi, inglés indio | No documentado | No disponible en la información | alphacephei.com | 61,14 |
 
 Shruti destaca por tamaño (entre 5 y 16 veces menor que los comparables), soporte nativo de code-switching y licencia Apache-2.0 explícita; sus competidores obtienen mejor WER en hindi puro pero fallan en hinglish o no lo cubren.
@@ -94,10 +94,10 @@ Shruti destaca por tamaño (entre 5 y 16 veces menor que los comparables), sopor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/udgamlabs/Shruti
+- Modelo en Hugging Face: https://huggingface.co/udgamlabs/Shruti
 - Modelo base Cactus Whistle: https://huggingface.co/Cactus-Compute/whistle
 - Motor Cactus needle: https://huggingface.co/Cactus-Compute/needle3
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/udgamlabs/Shruti
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/udgamlabs/Shruti
 - Código y ejemplos: https://github.com/udgamlabs/shruti
 - Informe técnico: https://udgamlabs.com/research/shruti
 - Página del modelo con demo en navegador: https://udgamlabs.com/models/shruti

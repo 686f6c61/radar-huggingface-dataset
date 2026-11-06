@@ -105,7 +105,7 @@ Modelos comparables adicionales de la misma categoría (TinyLlama-1.1B, Qwen2.5-
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/j-llm/qwen25-0.5b-navspec-gguf
+- Repositorio Hugging Face del modelo: https://huggingface.co/j-llm/qwen25-0.5b-navspec-gguf
 - Adaptador LoRA de origen: https://huggingface.co/j-llm/navspec-lora-0.5b-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - No se han encontrado enlaces adicionales relevantes (papers, blogs o repos) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.

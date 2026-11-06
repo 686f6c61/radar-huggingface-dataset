@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch04` (este) | 1,4 B | No disponible | Apache 2.0 | Desaprendizaje TOFU (forget10) | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | 1,4 B | No disponible | No disponible en la información | Ajuste fino TOFU (modelo de referencia) | HuggingFace |
-| `microsoft/phi-1_5` | 1,3 B | 2048 | MIT (según información pública de Microsoft) | Generación de código y texto | HuggingFace, ampliamente usado |
-| Otras variantes `unl-reset` (p. ej. `forget01`, `forget05`) | 1,4 B | No disponible | Apache 2.0 | Desaprendizaje TOFU con distintas particiones | HuggingFace |
+| `unl-reset/tofu-phi-1_5-...-epoch04` (este) | 1,4 B | No disponible | Apache 2.0 | Desaprendizaje TOFU (forget10) | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | 1,4 B | No disponible | No disponible en la información | Ajuste fino TOFU (modelo de referencia) | Hugging Face |
+| `microsoft/phi-1_5` | 1,3 B | 2048 | MIT (según información pública de Microsoft) | Generación de código y texto | Hugging Face, ampliamente usado |
+| Otras variantes `unl-reset` (p. ej. `forget01`, `forget05`) | 1,4 B | No disponible | Apache 2.0 | Desaprendizaje TOFU con distintas particiones | Hugging Face |
 
 La comparación directa con modelos de propósito general no es significativa: este checkpoint está optimizado para una métrica de olvido, no para utilidad general, por lo que su rendimiento en tareas estándar será inferior al de `microsoft/phi-1_5` o `locuslab/tofu_ft_phi-1.5`.
 
@@ -85,7 +85,7 @@ La comparación directa con modelos de propósito general no es significativa: e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch04
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch04
 - Modelo base del ajuste fino: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

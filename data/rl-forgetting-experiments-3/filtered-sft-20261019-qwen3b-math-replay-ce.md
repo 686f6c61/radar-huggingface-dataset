@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (derivado Qwen2.5-3B, SFT matemáticas con replay) | ~3 000 M | No disponible | `other` (Qwen Research License según la card) | safetensors | Público en HuggingFace, 0 descargas |
+| Este repositorio (derivado Qwen2.5-3B, SFT matemáticas con replay) | ~3 000 M | No disponible | `other` (Qwen Research License según la card) | safetensors | Público en Hugging Face, 0 descargas |
 | Qwen2.5-3B-Instruct (modelo base de referencia) | 3 000 M | No verificado en esta ficha | Apache 2.0 según la documentación habitual del upstream; la card de este derivado declara una licencia de investigación | safetensors, GGUF | Público y ampliamente desplegado |
 | Llama 3.2-3B-Instruct (base alternativa citada en la card) | 3 000 M | No verificado en esta ficha | Llama 3.2 Community License | safetensors, GGUF | Público, requiere aceptación de la licencia |
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparables para este checkpoint, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/filtered-sft-20261019-qwen3b-math-replay-ce
+- Repositorio en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/filtered-sft-20261019-qwen3b-math-replay-ce
 - Licencia y política de uso de Llama 3.2 (citada en la model card): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web no devolvió resultados relevantes sobre este modelo.

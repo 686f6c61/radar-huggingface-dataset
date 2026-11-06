@@ -70,5 +70,5 @@ El modelo se basa en LTX 2.5 y utiliza Sulphur 2 y 10Eros como donantes, pero no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stuubs/Stubelius_Remix
+- Hugging Face: https://huggingface.co/Stuubs/Stubelius_Remix
 - Licencia LTX-2: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x

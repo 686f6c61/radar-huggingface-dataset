@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spinochenza/Huihui-Ornith-1.5-35B-A3B-abliterated
+- Repositorio Hugging Face: https://huggingface.co/spinochenza/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Repositorio original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo base Ornith-1.5: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html

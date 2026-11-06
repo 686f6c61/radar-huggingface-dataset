@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM estimada para inferencia: menos de 1 GB en fp16 contando pesos, activaciones y cache KV a longitudes de 1024 tokens; el modelo entra sobradamente en cualquier GPU con 2 GB o mas.
 - GPU recomendadas: cualquier GPU consumer reciente (RTX 3060, RTX 4060, RTX 4090) e incluso GPU integradas; tambien es viable en CPU. No requiere A100 ni H100 salvo para entrenamiento a gran escala o fine-tuning con batches grandes.
 - Cabe en GPU consumer: si, en la practica totalidad de las disponibles actualmente en el mercado.
-- Opciones de despliegue: al publicarse solo pesos safetensors fp16, la via directa es HuggingFace Transformers con `AutoModelForCausalLM`. No se documentan conversiones oficiales a GGUF, por lo que llama.cpp u Ollama requeririan una conversion propia. La integracion con vLLM o TGI no esta documentada por el autor.
+- Opciones de despliegue: al publicarse solo pesos safetensors fp16, la via directa es Hugging Face Transformers con `AutoModelForCausalLM`. No se documentan conversiones oficiales a GGUF, por lo que llama.cpp u Ollama requeririan una conversion propia. La integracion con vLLM o TGI no esta documentada por el autor.
 - Requisitos de entrenamiento segun el autor: 27 horas en un unico acelerador DCU de 16 GB para 96.135 pasos de SFT con batch 216 y `max_len` 1024 en fp16.
 - Latencia y throughput estimados: no disponibles. El autor no publica mediciones de tokens por segundo ni de latencia en produccion.
 
@@ -80,8 +80,8 @@ La comparacion se limita a atributos estructurales verificables, ya que no hay r
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| Prochlo-190M-SFT | 190,47 M | Entrenado a 1024 tokens; contexto oficial no disponible | Apache-2.0 | Ingles | SFT sobre smol-smoltalk; pesos safetensors fp16; 0 descargas en HuggingFace |
-| SmolLM2-135M | 135 M | 2048 tokens | Apache-2.0 | Ingles principalmente | Familia de SLM de HuggingFace, con variantes instruct publicadas y amplia adopcion |
+| Prochlo-190M-SFT | 190,47 M | Entrenado a 1024 tokens; contexto oficial no disponible | Apache-2.0 | Ingles | SFT sobre smol-smoltalk; pesos safetensors fp16; 0 descargas en Hugging Face |
+| SmolLM2-135M | 135 M | 2048 tokens | Apache-2.0 | Ingles principalmente | Familia de SLM de Hugging Face, con variantes instruct publicadas y amplia adopcion |
 | Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache-2.0 | Multilingue amplio | Mas del doble de parametros y contexto muy superior; ecosistema consolidado y cuantizaciones GGUF oficiales |
 | TinyLlama-1.1B | ~1,1 B | 2048 tokens | Apache-2.0 | Ingles principalmente | Modelo mayor orientado a un equilibrio distinto entre calidad y coste de despliegue |
 
@@ -100,7 +100,7 @@ La comparacion se limita a atributos estructurales verificables, ya que no hay r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CyanoAI/Prochlo-190M-SFT
+- Modelo en Hugging Face: https://huggingface.co/CyanoAI/Prochlo-190M-SFT
 - Modelo base: https://huggingface.co/CyanoAI/Prochlo-190M-Base
 - Variante alineada por preferencias (DPO + RLAIF, en entrenamiento): `CyanoAI/Prochlo-190M` — sin URL confirmada en la informacion disponible
 - Dataset de SFT: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

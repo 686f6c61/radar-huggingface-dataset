@@ -90,7 +90,7 @@ Diferencias clave: frente al modelo base en bf16, esta versión reduce el peso e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-v0.3-auto_round-int4-gs64-asym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-v0.3-auto_round-int4-gs64-asym
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Pipeline de cuantización auto-round-pipeline: https://git.epicdynamic.com/auto-round-pipeline

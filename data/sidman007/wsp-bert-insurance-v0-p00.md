@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wsp-bert-insurance-v0-p00 | 109,5 M | 512 | Clasificación 8 clases de seguros (en) | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 | Modelo base generalista (en) | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66 M | 512 | Modelo base destilado (en) | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 512 | Modelo base generalista (en) | MIT | HuggingFace |
+| wsp-bert-insurance-v0-p00 | 109,5 M | 512 | Clasificación 8 clases de seguros (en) | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 | Modelo base generalista (en) | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66 M | 512 | Modelo base destilado (en) | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 512 | Modelo base generalista (en) | MIT | Hugging Face |
 
 La comparación relevante es frente a `bert-base-uncased` sin adaptar: este modelo parte de él y sustituye el fine-tuning por edición de pesos. Frente a `distilbert-base-uncased` ofrece mayor capacidad pero el doble de parámetros. No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -90,5 +90,5 @@ La comparación relevante es frente a `bert-base-uncased` sin adaptar: este mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-v0-p00
+- Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-v0-p00
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased

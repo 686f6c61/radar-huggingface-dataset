@@ -34,7 +34,7 @@ No existe arquitectura de red neuronal ni proceso de entrenamiento en este repos
 
 ## Casos de uso
 
-- Pruebas de regresión de escáner de seguridad: se puede usar como entrada de control positivo para verificar que un detector de modelos de HuggingFace identifica correctamente artefactos con fuga de procedencia declarada.
+- Pruebas de regresión de escáner de seguridad: se puede usar como entrada de control positivo para verificar que un detector de modelos de Hugging Face identifica correctamente artefactos con fuga de procedencia declarada.
 - Validación de pipelines de admisión de modelos: integrar el artefacto en un pipeline CI/CD de admisión de modelos para confirmar que la herramienta de capa de seguridad bloquea repositorios con características adversariales.
 - Evaluación de detectores de inyección de prompts: las cadenas de inyección incluidas permiten comprobar si un escáner las identifica en metadatos de model card.
 - Pruebas de integridad de procedencia: el corpus está diseñado para ejercitar reglas de verificación de ficheros declarados ausentes, por lo que sirve para testear la detección de este tipo de fuga en repositorios.
@@ -67,7 +67,7 @@ No disponible. Este artefacto pertenece a un corpus sintético de pruebas de seg
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/provenance-missing-declared-file
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/provenance-missing-declared-file
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault
 - Documentación de fuentes de Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md
 - Paper sobre procedencia de modelos (contexto de seguridad): https://arxiv.org/html/2410.02230v1

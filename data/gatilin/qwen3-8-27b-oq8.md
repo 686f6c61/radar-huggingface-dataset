@@ -76,7 +76,7 @@ La comparativa directa con otros modelos de 27B de otras familias (como Llama 3.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gatilin/Qwen3.8-27B-oQ8
+- Repositorio Hugging Face: https://huggingface.co/gatilin/Qwen3.8-27B-oQ8
 - Cuantizaciones GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Pagina oficial del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Repositorio GitHub oficial: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

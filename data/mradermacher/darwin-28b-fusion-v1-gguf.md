@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Darwin-28B-FUSION-v1-GGUF es la version cuantizada en formato GGUF del modelo Darwin-28B-FUSION-v1, publicado originalmente por el usuario VIDraft en HuggingFace. La cuantizacion la firma mradermacher, un actor habitual en el ecosistema de publicacion de pesos GGUF para modelos open source, que distribuye tanto cuantizaciones estaticas como imatrix (estas ultimas en un repositorio separado). El modelo base, pese a su nombre comercial, cuenta con 26.895.998.464 parametros reales segun los tensores en safetensors, es decir, aproximadamente 26,9 mil millones de parametros, no 28B exactos.
+Darwin-28B-FUSION-v1-GGUF es la version cuantizada en formato GGUF del modelo Darwin-28B-FUSION-v1, publicado originalmente por el usuario VIDraft en Hugging Face. La cuantizacion la firma mradermacher, un actor habitual en el ecosistema de publicacion de pesos GGUF para modelos open source, que distribuye tanto cuantizaciones estaticas como imatrix (estas ultimas en un repositorio separado). El modelo base, pese a su nombre comercial, cuenta con 26.895.998.464 parametros reales segun los tensores en safetensors, es decir, aproximadamente 26,9 mil millones de parametros, no 28B exactos.
 
 El modelo esta orientado a conversacion (tag `conversational`) y declarado unicamente para ingles. La model card del repositorio GGUF no aporta informacion sobre arquitectura, contexto, datos de entrenamiento ni benchmarks: se limita a describir los ficheros de cuantizacion disponibles. Esto limita considerablemente la evaluacion tecnica del modelo a partir de esta fuente, y obliga a remitirse al repositorio del modelo base para cualquier detalle arquitectonico.
 
@@ -25,12 +25,12 @@ La relevancia de esta publicacion es practica: ofrece el modelo en un espectro a
 
 No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre "FUSION" sugiere una posible fusion de modelos (model merging), practica comun en la comunidad, pero no hay confirmacion en la model card. Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste por instrucciones.
 
-La unica informacion tecnica concreta es la relativa al proceso de cuantizacion: mradermacher indica en los metadatos que se uso `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica una conversion desde pesos HuggingFace y una cuantizacion por tensor de salida. Se ofrece ademas una variante con imatrix (importance matrix) en el repositorio `Darwin-28B-FUSION-v1-i1-GGUF`, que suele mejorar la calidad en cuantizaciones bajas.
+La unica informacion tecnica concreta es la relativa al proceso de cuantizacion: mradermacher indica en los metadatos que se uso `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica una conversion desde pesos Hugging Face y una cuantizacion por tensor de salida. Se ofrece ademas una variante con imatrix (importance matrix) en el repositorio `Darwin-28B-FUSION-v1-i1-GGUF`, que suele mejorar la calidad en cuantizaciones bajas.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, segun el tag `conversational`.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Uso con la libreria `transformers` para los pesos originales y con llama.cpp y derivados para los GGUF.
 - Capacidades de razonamiento, codigo, matematicas, vision, audio, tool calling o agentes: no disponibles en la informacion proporcionada.
 - Soporte multilingue: limitado a ingles segun los metadatos.
@@ -42,7 +42,7 @@ La unica informacion tecnica concreta es la relativa al proceso de cuantizacion:
 - Prototipado de asistentes conversacionales en ingles: el tag `conversational` y la disponibilidad en GGUF facilitan montar un chatbot local sin depender de APIs externas, util para pruebas de concepto y demos internas.
 - Evaluacion comparativa de tecnicas de cuantizacion: al ofrecer 11 variantes incluyendo IQ4_XS e imatrix, el repositorio sirve para medir la degradacion de perplejidad entre cuantizaciones en un modelo de ~27B.
 - Inferencia en CPU o entornos sin GPU dedicada: las variantes Q2_K (10,8 GB) y Q3_K_S (12,2 GB) permiten ejecucion en RAM del sistema con llama.cpp, aunque con perdida de calidad notable en el caso de Q2_K.
-- Integracion en pipelines compatibles con la API de endpoints: el tag `endpoints_compatible` sugiere su uso en servicios de inferencia gestionados que acepten el formato de HuggingFace.
+- Integracion en pipelines compatibles con la API de endpoints: el tag `endpoints_compatible` sugiere su uso en servicios de inferencia gestionados que acepten el formato de Hugging Face.
 - Fine-tuning o experimentation sobre el modelo base: los pesos originales en safetensors (26,9B parametros) permiten ajuste con tecnicas como LoRA o QLoRA, aunque el coste de VRAM es elevado.
 
 ## Benchmarks y rendimiento

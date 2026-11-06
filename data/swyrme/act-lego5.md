@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swyrme/act-lego5` es una politica de robotica basada en ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. El modelo lo publica el usuario swyrme en HuggingFace Hub y se ha entrenado y exportado con LeRobot, la libreria de HuggingFace para aprendizaje automatico aplicado a robotica real.
+`swyrme/act-lego5` es una politica de robotica basada en ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. El modelo lo publica el usuario swyrme en Hugging Face Hub y se ha entrenado y exportado con LeRobot, la libreria de Hugging Face para aprendizaje automatico aplicado a robotica real.
 
 El modelo resuelve una tarea concreta de manipulacion: "Pick up the Lego brick and put it in the bowl" (coger el ladrillo de Lego y dejarlo en el cuenco). Consume el estado del robot (vector de 6 dimensiones) y dos flujos de imagen frontal y lateral de 480x640, y produce un vector de accion de 6 dimensiones. Con 51.668.614 parametros y un repositorio de 0,2 GB, es un modelo pequeno que puede ejecutarse en hardware modesto.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swyrme/act-lego5 | ACT (imitation learning) sobre LeRobot | 51.668.614 | no aplica | apache-2.0 | HuggingFace Hub, 0 descargas |
+| swyrme/act-lego5 | ACT (imitation learning) sobre LeRobot | 51.668.614 | no aplica | apache-2.0 | Hugging Face Hub, 0 descargas |
 | Diffusion Policy | Politica por difusion para robotica | no disponible | no aplica | no disponible | Implementada en LeRobot; no se dispone de datos concretos de comparacion |
 | SmolVLA | Vision-language-action | no disponible | no disponible | no disponible | Disponible en el ecosistema LeRobot; no se dispone de datos concretos de comparacion |
 | pi0 / pi0.5 | Vision-language-action | no disponible | no disponible | no disponible | Disponible en el ecosistema LeRobot; no se dispone de datos concretos de comparacion |
@@ -96,7 +96,7 @@ No se dispone de datos verificados de parametros, contexto, licencia ni rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swyrme/act-lego5
+- Modelo en Hugging Face: https://huggingface.co/swyrme/act-lego5
 - Dataset de entrenamiento: https://huggingface.co/datasets/swyrme/so101-lego5
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=swyrme/so101-lego5
 - Paper de ACT: https://huggingface.co/papers/2304.13705

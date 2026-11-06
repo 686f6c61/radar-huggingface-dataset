@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SOTAagi2030/Maple-Folio-Register` es un repositorio alojado en HuggingFace por el usuario SOTAagi2030, creado el 18 de octubre de 2026 y actualizado tres minutos más tarde ese mismo día. El repositorio no incluye etiqueta de pipeline, licencia, idiomas declarados ni resultados de benchmarks; el único tag presente es `region:us`. Acumula 0 descargas y 0 likes en el momento de la consulta.
+`SOTAagi2030/Maple-Folio-Register` es un repositorio alojado en Hugging Face por el usuario SOTAagi2030, creado el 18 de octubre de 2026 y actualizado tres minutos más tarde ese mismo día. El repositorio no incluye etiqueta de pipeline, licencia, idiomas declarados ni resultados de benchmarks; el único tag presente es `region:us`. Acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El contenido publicado como model card no describe un modelo de aprendizaje automático, sino un registro de archivo documental titulado "Maple Civic Archive Folio Register". Dicho registro declara una sección de intake ("Maple Autumn Intake 2027"), una fecha de corte de escaneo (2027-10-15T18:00:00Z), una primera captura (2027-10-08T16:20:00Z), tres colecciones (`harbor-ledgers`, `civic-maps`, `garden-notebooks`), 6 escaneos registrados, 72 folios registrados y una política de ordenación (`collection-policy-first-folio-asc-scan-id-asc`).
 
@@ -95,5 +95,5 @@ No disponible. No se puede establecer la categoria del artefacto (modelo de leng
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Maple-Folio-Register
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Maple-Folio-Register
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

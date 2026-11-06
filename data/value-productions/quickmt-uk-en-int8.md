@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-uk-en-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-uk-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-uk-en

@@ -83,7 +83,7 @@ La comparación relevante es de linaje y formato, no de rendimiento: los tres ar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/noctunalz/DSV4.1-Flash-1017-DERISKED-EXL3-2.50bpw-Radiance
+- Repositorio en Hugging Face: https://huggingface.co/noctunalz/DSV4.1-Flash-1017-DERISKED-EXL3-2.50bpw-Radiance
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Checkpoint EXL3 de origen: https://huggingface.co/vcruz305/DSV4.1-Flash-1017-DERISKED-EXL3-2.50bpw
 - Motor Radiance: no disponible (no se proporciona enlace en la información consultada)

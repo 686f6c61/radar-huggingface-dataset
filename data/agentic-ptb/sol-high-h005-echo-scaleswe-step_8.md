@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos, por lo que la comparacion se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.echo-scaleswe.step_8
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.echo-scaleswe.step_8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Paper relacionado (Echo-): https://arxiv.org/pdf/2604.28011v1
 - Paper relacionado (HTML): https://arxiv.org/html/2604.28011

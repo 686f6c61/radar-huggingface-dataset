@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anorim/bernice-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint publicado en HuggingFace por el usuario anorim, etiquetado con la arquitectura `xlm-roberta` y formato `safetensors`. Cuenta con 277.748.738 parametros reales segun el fichero de pesos, lo que lo situa en la escala de un XLM-RoBERTa base, y el repositorio ocupa 1,1 GB. No se ha publicado informacion adicional en la propia ficha del repositorio sobre pipeline, licencia o idiomas.
+El modelo `anorim/bernice-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint publicado en Hugging Face por el usuario anorim, etiquetado con la arquitectura `xlm-roberta` y formato `safetensors`. Cuenta con 277.748.738 parametros reales segun el fichero de pesos, lo que lo situa en la escala de un XLM-RoBERTa base, y el repositorio ocupa 1,1 GB. No se ha publicado informacion adicional en la propia ficha del repositorio sobre pipeline, licencia o idiomas.
 
 El nombre del repositorio describe el proceso de construccion: una fusion de seis modelos mediante la tecnica DARE-TIES con parametros de poda de densidad p=0,9 y k=0,5, y los identificadores `hatebr`, `olidbr`, `toldbr` y `tupy`, que corresponden a conjuntos de datos y modelos del ambito del portugues de Brasil (deteccion de discurso de odio y lenguaje ofensivo). Todo ello apunta a un clasificador de secuencias para moderacion de contenido en portugues, aunque esta interpretacion se deduce del nombre y no esta confirmada explicitamente en la informacion disponible.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en int8: aproximadamente 280 MB para pesos.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4060, RTX 4090 o incluso una T4 bastan ampliamente. En entornos de servidor, A100 o H100 estarian sobredimensionadas para este tamano de modelo.
 - Compatibilidad con GPU de consumo: si, cabe sin problemas en practicamente cualquier GPU de consumo de los ultimos ocho anos, e incluso en CPU con un throughput aceptable para clasificacion.
-- Opciones de despliegue: HuggingFace Transformers (`AutoModelForSequenceClassification`), exportacion a ONNX Runtime o TorchScript para inferencia de baja latencia, servidores tipo FastAPI o Text Embeddings Inference. No se publican pesos en GGUF, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa.
+- Opciones de despliegue: Hugging Face Transformers (`AutoModelForSequenceClassification`), exportacion a ONNX Runtime o TorchScript para inferencia de baja latencia, servidores tipo FastAPI o Text Embeddings Inference. No se publican pesos en GGUF, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa.
 - Latencia y throughput estimados: no disponibles. Como referencia general de la arquitectura, un encoder de este tamano suele procesar cientos o miles de secuencias cortas por segundo en una GPU moderna, pero no hay mediciones publicadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anorim/bernice-fusion-6-dareties-...-v61 | 277.748.738 | no disponible | no disponible (datasets en portugues de Brasil) | no disponible | HuggingFace, safetensors |
-| XLM-RoBERTa base (FacebookAI) | 278M | 512 tokens | ~100 idiomas | MIT (segun la ficha publica del modelo original) | HuggingFace, safetensors y otros |
-| BERTimbau base (Neuralmind) | 110M | 512 tokens | Portugues de Brasil | no disponible en la informacion proporcionada | HuggingFace, safetensors |
-| Modelos especializados en discurso de odio en portugues | no disponible | no disponible | Portugues | no disponible | HuggingFace |
+| anorim/bernice-fusion-6-dareties-...-v61 | 277.748.738 | no disponible | no disponible (datasets en portugues de Brasil) | no disponible | Hugging Face, safetensors |
+| XLM-RoBERTa base (FacebookAI) | 278M | 512 tokens | ~100 idiomas | MIT (segun la ficha publica del modelo original) | Hugging Face, safetensors y otros |
+| BERTimbau base (Neuralmind) | 110M | 512 tokens | Portugues de Brasil | no disponible en la informacion proporcionada | Hugging Face, safetensors |
+| Modelos especializados en discurso de odio en portugues | no disponible | no disponible | Portugues | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anorim/bernice-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61
+- Hugging Face: https://huggingface.co/anorim/bernice-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61
 - XLM-RoBERTa base (arquitectura de referencia): https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-RoBERTa (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - Dataset HateBR: no disponible en la informacion proporcionada

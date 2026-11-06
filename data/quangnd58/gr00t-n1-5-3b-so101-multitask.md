@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GR00T-N1.5-3B-so101-multitask es un ajuste fino (fine-tuning) del modelo fundacional NVIDIA GR00T N1.5-3B, un modelo vision-language-action (VLA) orientado a control de robots. Lo publica el usuario quangnd58 en HuggingFace y está entrenado sobre el dataset hungho77/so101-multitask, que contiene tres tareas de pick-and-place teleoperadas con el brazo SO-101. El objetivo es convertir un modelo generalista de robótica en un controlador concreto que ejecute instrucciones en lenguaje natural sobre un brazo de 6 grados de libertad (5 articulaciones + pinza).
+GR00T-N1.5-3B-so101-multitask es un ajuste fino (fine-tuning) del modelo fundacional NVIDIA GR00T N1.5-3B, un modelo vision-language-action (VLA) orientado a control de robots. Lo publica el usuario quangnd58 en Hugging Face y está entrenado sobre el dataset hungho77/so101-multitask, que contiene tres tareas de pick-and-place teleoperadas con el brazo SO-101. El objetivo es convertir un modelo generalista de robótica en un controlador concreto que ejecute instrucciones en lenguaje natural sobre un brazo de 6 grados de libertad (5 articulaciones + pinza).
 
 El modelo resuelve el problema de pasar de un VLA genérico a un policy operativo en hardware de bajo coste: recibe como entrada imágenes de dos cámaras (frontal y de muñeca, 640x480), el estado del brazo en unidades `.pos` de LeRobot y un prompt de texto, y devuelve una secuencia de acciones con horizonte 16. Los pesos suman 2.724.163.520 parámetros (aproximadamente 2,72 mil millones), con un repositorio de 7,6 GB en formato safetensors, y se cargan mediante la librería `lerobot` y el stack Isaac-GR00T de NVIDIA.
 
@@ -77,9 +77,9 @@ Como referencia cualitativa, y solo para el modelo base, NVIDIA indica en su pag
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| quangnd58/GR00T-N1.5-3B-so101-multitask | 2,72 B | no disponible | 3 tareas pick-and-place sobre SO-101 | NVIDIA License | HuggingFace, 9 descargas |
-| quangnd58/GR00T-N1.6-3B-so101-multitask | no disponible (base de 3 B) | no disponible | 3 tareas pick-and-place sobre SO-101 (60 episodios de teleoperacion) | no disponible | HuggingFace |
-| nvidia/GR00T-N1.5-3B | aproximadamente 3 B | no disponible | modelo fundacional cross-embodiment, proposito general | NVIDIA License | HuggingFace |
+| quangnd58/GR00T-N1.5-3B-so101-multitask | 2,72 B | no disponible | 3 tareas pick-and-place sobre SO-101 | NVIDIA License | Hugging Face, 9 descargas |
+| quangnd58/GR00T-N1.6-3B-so101-multitask | no disponible (base de 3 B) | no disponible | 3 tareas pick-and-place sobre SO-101 (60 episodios de teleoperacion) | no disponible | Hugging Face |
+| nvidia/GR00T-N1.5-3B | aproximadamente 3 B | no disponible | modelo fundacional cross-embodiment, proposito general | NVIDIA License | Hugging Face |
 | nvidia/GR00T-N1.7 (Isaac-GR00T) | no disponible | no disponible | modelo fundacional VLA para habilidades humanoides generalizadas | no disponible | GitHub NVIDIA/Isaac-GR00T |
 
 La comparacion directa mas relevante es con la variante N1.6 del mismo autor sobre el mismo brazo SO-101: es una version mas reciente, pero la informacion disponible no permite comparar tasas de exito ni latencias. Frente al modelo base sin ajustar, este checkpoint gana especializacion en tres tareas concretas a cambio de perder generalidad. No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas como OpenVLA o pi0.
@@ -100,7 +100,7 @@ La comparacion directa mas relevante es con la variante N1.6 del mismo autor sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quangnd58/GR00T-N1.5-3B-so101-multitask
+- Modelo en Hugging Face: https://huggingface.co/quangnd58/GR00T-N1.5-3B-so101-multitask
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Dataset de ajuste: https://huggingface.co/datasets/hungho77/so101-multitask
 - Repositorio de codigo NVIDIA/Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

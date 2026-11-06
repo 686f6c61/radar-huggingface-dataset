@@ -80,9 +80,9 @@ No se dispone de datos comparativos de rendimiento (benchmarks) entre estos mode
 
 ## Enlaces
 
-- [HuggingFace - Sawfwair/LFM2.5-1.2B-Instruct-QAD-MLX-4bit](https://huggingface.co/Sawfwair/LFM2.5-1.2B-Instruct-QAD-MLX-4bit)
-- [HuggingFace - LiquidAI/LFM2.5-1.2B-Instruct](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct)
-- [HuggingFace - LiquidAI/LFM2.5-1.2B-Instruct-GGUF](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF)
+- [Hugging Face - Sawfwair/LFM2.5-1.2B-Instruct-QAD-MLX-4bit](https://huggingface.co/Sawfwair/LFM2.5-1.2B-Instruct-QAD-MLX-4bit)
+- [Hugging Face - LiquidAI/LFM2.5-1.2B-Instruct](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct)
+- [Hugging Face - LiquidAI/LFM2.5-1.2B-Instruct-GGUF](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF)
 - [Blog de Liquid AI - Introduciendo LFM2.5](https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai)
 - [Blog de Liquid AI - QAD: Quantization-Aware Distillation](https://www.liquid.ai/blog/qad)
 - [Documentación de Liquid - LFM2.5-1.2B-Instruct](https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct)

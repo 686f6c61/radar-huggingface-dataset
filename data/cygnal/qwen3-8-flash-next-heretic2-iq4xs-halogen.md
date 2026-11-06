@@ -94,7 +94,7 @@ Observaciones del autor: la ventaja de Halogen en prefill crece con la longitud 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano | Licencia | Estado |
 |---|---|---|---|---|---|---|
-| cygnal/Qwen3.8-Flash-Next-Heretic2-IQ4XS-Halogen | ~166B totales / ~27B activos | 262.144 | IQ4_XS con overrides por tensor (4,51 BPW) | 93 GB | apache-2.0 | Publicado en HuggingFace; 0 descargas; requiere Halogen y gfx1151 |
+| cygnal/Qwen3.8-Flash-Next-Heretic2-IQ4XS-Halogen | ~166B totales / ~27B activos | 262.144 | IQ4_XS con overrides por tensor (4,51 BPW) | 93 GB | apache-2.0 | Publicado en Hugging Face; 0 descargas; requiere Halogen y gfx1151 |
 | Qwen/Qwen3.8-Flash-Next (GGUF Q8_0 usado como origen) | ~166B totales / ~27B activos | 262.144 | Q8_0 | 176 GB | apache-2.0 | Modelo base, sin abliterar |
 | Heretic2 BF16 (pesos de origen del abliterado) | ~166B totales / ~27B activos | 262.144 | BF16 | no disponible | apache-2.0 (heredada del base) | Punto de partida del build, no es el artefacto publicado |
 | GGUF UD-IQ4_XS oficial de unsloth | ~166B totales / ~27B activos | 262.144 | IQ4_XS dinamico | no disponible | apache-2.0 | Citado por el autor como confirmacion de que `per_layer_token_embd.weight` es IQ4_NL; sin abliterar |
@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks de calidad para ninguno de estos modelos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Heretic2-IQ4XS-Halogen
+- Modelo en Hugging Face: https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Heretic2-IQ4XS-Halogen
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Heretic v1.3.0 (utor del abliterado): https://huggingface.co/cygnal/Heretic-v1.3.0
 - Halogen Flash Server (repositorio): https://github.com/peonist-ai/halogen-flash-server

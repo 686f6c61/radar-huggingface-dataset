@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sjakek/slimder-qwen38-reap384-depth40-mb4-5
+- Modelo en Hugging Face: https://huggingface.co/sjakek/slimder-qwen38-reap384-depth40-mb4-5
 - Modelo base: https://huggingface.co/sjakek/slimder-qwen38-reap384-s0
 - Coleccion Qwen3.8 (referencia de la familia): https://huggingface.co/collections/Qwen/qwen38
 - Informacion sobre Qwen3.8-Max (contexto de la familia): https://openlm.ai/qwen3.8/

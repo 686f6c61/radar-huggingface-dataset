@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dzmi3y/kr-assets` es un repositorio publicado en HuggingFace por el usuario Dzmi3y que, por su identificador, tamaño (0,1 GB), etiqueta `onnx` y ausencia de pipeline declarado, tiene la apariencia de un contenedor de artefactos (pesos en formato ONNX y posibles ficheros auxiliares) más que de un modelo con documentación de modelo al uso. La model card asociada no contiene más información que la declaración de licencia `apache-2.0`; no se especifican arquitectura, número de parámetros, longitud de contexto, idiomas ni datos de entrenamiento.
+`Dzmi3y/kr-assets` es un repositorio publicado en Hugging Face por el usuario Dzmi3y que, por su identificador, tamaño (0,1 GB), etiqueta `onnx` y ausencia de pipeline declarado, tiene la apariencia de un contenedor de artefactos (pesos en formato ONNX y posibles ficheros auxiliares) más que de un modelo con documentación de modelo al uso. La model card asociada no contiene más información que la declaración de licencia `apache-2.0`; no se especifican arquitectura, número de parámetros, longitud de contexto, idiomas ni datos de entrenamiento.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado con dos minutos de diferencia (2026-09-20T13:00:08Z y 2026-09-20T13:02:40Z), lo que sugiere una subida automatizada o de prueba en lugar de un lanzamiento de modelo documentado. No hay paper, blog técnico ni repositorio de código asociado en la información disponible.
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dzmi3y/kr-assets
+- Repositorio en Hugging Face: https://huggingface.co/Dzmi3y/kr-assets
 - Paper: no disponible
 - Blog técnico: no disponible
 - Repositorio de código: no disponible

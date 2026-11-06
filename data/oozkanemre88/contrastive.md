@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oozkanemre88/contrastive` es un repositorio de HuggingFace publicado por el usuario oozkanemre88 que contiene una implementación propia y mínima de una arquitectura denominada **Mae**, orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni publicado con fines de producción: el propio autor indica explícitamente en la model card que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo**, no un modelo con entrenamiento completado ni con resultados de referencia.
+`oozkanemre88/contrastive` es un repositorio de Hugging Face publicado por el usuario oozkanemre88 que contiene una implementación propia y mínima de una arquitectura denominada **Mae**, orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni publicado con fines de producción: el propio autor indica explícitamente en la model card que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo**, no un modelo con entrenamiento completado ni con resultados de referencia.
 
 El tamaño real declarado en los metadatos de safetensors es de **49.600 parámetros totales**, lo que sitúa al modelo en una escala *tiny* (por debajo de 0,05 millones de parámetros). El repositorio ocupa 0,0 GB e incluye además `eval.py`, `config.json` y `training_args.json`. La configuración por defecto emplea atención dilatada, fusión de bajo rango (*low rank*), activación GELU y normalización por instancias (*instancenorm*), con un receta de entrenamiento basada en RMSProp y un scheduler de tipo *step*.
 
@@ -95,6 +95,6 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oozkanemre88/contrastive
+- Hugging Face: https://huggingface.co/oozkanemre88/contrastive
 - Repositorio de código, *paper* o demostración: no disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente enlaces genéricos a BBC News, sin relación con el repositorio).

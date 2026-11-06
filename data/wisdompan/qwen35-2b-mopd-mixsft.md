@@ -25,7 +25,7 @@ Su relevancia es principalmente investigadora: permite estudiar el efecto de la 
 
 El modelo es un fine-tuning completo de parámetros (full-parameter SFT) del modelo Qwen/Qwen3.5-2B. El autor indica que se entrenó durante 1 época y 375 pasos, con el optimizador Adafactor, una programación de aprendizaje coseno con tasa máxima de 1e-5, weight decay de 0.1, acumulación de gradientes de 8, gradient checkpointing y semilla 20260902. La pérdida final registrada fue 0.6251 y la precisión de tokens 0.8485.
 
-Los datos de entrenamiento cubren matemáticas, código y seguimiento de instrucciones, pero no se especifica el número de tokens ni la composición exacta del dataset. El checkpoint está destinado a ser la inicialización común para políticas teacher en un pipeline MOPD; no incluye RLHF ni DPO. Además, aunque el pipeline_tag de HuggingFace es image-text-to-text, la documentación no describe capacidades multimodales, por lo que no se debe asumir soporte de visión.
+Los datos de entrenamiento cubren matemáticas, código y seguimiento de instrucciones, pero no se especifica el número de tokens ni la composición exacta del dataset. El checkpoint está destinado a ser la inicialización común para políticas teacher en un pipeline MOPD; no incluye RLHF ni DPO. Además, aunque el pipeline_tag de Hugging Face es image-text-to-text, la documentación no describe capacidades multimodales, por lo que no se debe asumir soporte de visión.
 
 ## Capacidades
 
@@ -63,8 +63,8 @@ No se dispone de modelos comparables con datos suficientes. El modelo base Qwen/
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wisdompan/qwen35-2b-mopd-mixsft | 2.213.241.664 (safetensors) / 1.881.825.088 (README) | No disponible (SFT con 1.024 tokens) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B | No disponible | No disponible | No disponible | HuggingFace |
+| wisdompan/qwen35-2b-mopd-mixsft | 2.213.241.664 (safetensors) / 1.881.825.088 (README) | No disponible (SFT con 1.024 tokens) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ No se dispone de modelos comparables con datos suficientes. El modelo base Qwen/
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wisdompan/qwen35-2b-mopd-mixsft
+- Hugging Face: https://huggingface.co/wisdompan/qwen35-2b-mopd-mixsft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Colección Qwen3.5: https://huggingface.co/collections/Qwen/qwen35

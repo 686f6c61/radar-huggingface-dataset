@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | the-sweater-cat/bonsai-2-pq2 | 6.953.598.464 (~6,95 mil millones) | no disponible (validado a 2.048 tokens) | safetensors PQ2 para vLLM | apache-2.0 | requiere plugin y vLLM 0.29.0 |
-| prism-ml/Ternary-Bonsai-2-27B-gguf (modelo base) | no disponible | no disponible | GGUF | no disponible | repositorio público en HuggingFace |
+| prism-ml/Ternary-Bonsai-2-27B-gguf (modelo base) | no disponible | no disponible | GGUF | no disponible | repositorio público en Hugging Face |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada otros modelos comparables de pesos ternarios empaquetados con plugin de vLLM, por lo que la comparativa se limita al modelo base del que deriva esta conversión.
@@ -90,7 +90,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-sweater-cat/bonsai-2-pq2
+- Modelo en Hugging Face: https://huggingface.co/the-sweater-cat/bonsai-2-pq2
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Plugin de vLLM necesario: https://github.com/wonder-dot-ai/bonsai2-vllm-plugin
 - README del plugin (benchmarks y detalles de conversión): https://github.com/wonder-dot-ai/bonsai2-vllm-plugin#readme

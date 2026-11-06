@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SADNXCVASDVA bajo licencia MIT y etiquetado con la libreria `transformers` y el pipeline `feature-extraction`. Su model card se presenta como una "actualizacion de version significativa" de un modelo anterior, con mejoras declaradas en profundidad de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a "mecanismos de optimizacion algoritmica" aplicados durante el post-entrenamiento. El autor afirma mejoras en matematicas, programacion y logica general, ademas de una reduccion de la tasa de alucinacion y un mayor soporte de function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SADNXCVASDVA bajo licencia MIT y etiquetado con la libreria `transformers` y el pipeline `feature-extraction`. Su model card se presenta como una "actualizacion de version significativa" de un modelo anterior, con mejoras declaradas en profundidad de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a "mecanismos de optimizacion algoritmica" aplicados durante el post-entrenamiento. El autor afirma mejoras en matematicas, programacion y logica general, ademas de una reduccion de la tasa de alucinacion y un mayor soporte de function calling.
 
 Sin embargo, la informacion disponible es extremadamente limitada y presenta contradicciones relevantes. El repositorio ocupa 0,0 GB, no incluye pesos visibles ni fichas de configuracion, y las etiquetas del repositorio (`bert`, `feature-extraction`) no concuerdan con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento, soporte de system prompt, carga de ficheros y busqueda web. La fecha de creacion registrada (2026-09-11) y el nombre del repositorio (`MyAwesomeModel-TestRepo`) sugieren que se trata de un repositorio de prueba o de una plantilla, no de un modelo desplegable.
 
@@ -87,7 +87,7 @@ Salvedades importantes sobre estos datos: no se especifica la metodologia de eva
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros y el formato de pesos, no es posible calcular requisitos de memoria. Cualquier cifra seria una invencion.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible. El repositorio no contiene pesos, por lo que no se puede ejecutar en ninguna GPU.
-- Opciones de despliegue: la libreria declarada es `transformers` con framework `pytorch` y el repositorio esta marcado como `endpoints_compatible`, lo que en principio permitiria su uso mediante HuggingFace Inference Endpoints si existieran pesos. No hay evidencia de soporte de vLLM, llama.cpp, Ollama, TGI u otros motores, ni de ficheros GGUF.
+- Opciones de despliegue: la libreria declarada es `transformers` con framework `pytorch` y el repositorio esta marcado como `endpoints_compatible`, lo que en principio permitiria su uso mediante Hugging Face Inference Endpoints si existieran pesos. No hay evidencia de soporte de vLLM, llama.cpp, Ollama, TGI u otros motores, ni de ficheros GGUF.
 - Latencia y throughput: no disponible. Lo unico relacionado con coste de inferencia es la mencion a 23K tokens de media por pregunta en el conjunto AIME, lo que implica respuestas largas y coste elevado por consulta en tareas de razonamiento.
 
 ## Comparativa con modelos similares
@@ -110,6 +110,6 @@ No disponible. La model card referencia los modelos comparados como `Model1`, `M
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SADNXCVASDVA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SADNXCVASDVA/MyAwesomeModel-TestRepo
 - Paper, blog, repositorio de codigo o demo: no disponible. La model card menciona un "official website" y un "code repository", pero no incluye sus URL.
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Los resultados devueltos corresponden a paginas de ayuda de Google Drive y a hilos de Zhihu sobre Google Drive, sin relacion con MyAwesomeModel.

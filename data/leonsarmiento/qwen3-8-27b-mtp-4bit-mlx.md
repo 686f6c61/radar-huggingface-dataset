@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks específicos para este drafter en l
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `leonsarmiento/Qwen3.8-27B-MTP-4bit-mlx` | Drafter MTP 4-bit | 66M | 262K (heredado) | Apache-2.0 | HuggingFace |
-| `mlx-community/Qwen3.8-27B-MTP-4bit` | Drafter MTP 4-bit | 66M (estimado) | 262K (heredado) | Apache-2.0 | HuggingFace |
-| `Qwen/Qwen3.8-27B` | Modelo base VLM denso | 27B | 262K | Apache-2.0 | HuggingFace |
+| `leonsarmiento/Qwen3.8-27B-MTP-4bit-mlx` | Drafter MTP 4-bit | 66M | 262K (heredado) | Apache-2.0 | Hugging Face |
+| `mlx-community/Qwen3.8-27B-MTP-4bit` | Drafter MTP 4-bit | 66M (estimado) | 262K (heredado) | Apache-2.0 | Hugging Face |
+| `Qwen/Qwen3.8-27B` | Modelo base VLM denso | 27B | 262K | Apache-2.0 | Hugging Face |
 
 El drafter de leonsarmiento se diferencia del de `mlx-community` en que fue construido directamente desde el shard 18 del modelo original, verificando la convención de normas y el metadata. Ambos son funcionalmente equivalentes en cuanto a arquitectura y tamaño. No hay otros drafter MTP comparables para este modelo base en el ecosistema MLX.
 
@@ -75,7 +75,7 @@ El drafter de leonsarmiento se diferencia del de `mlx-community` en que fue cons
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leonsarmiento/Qwen3.8-27B-MTP-4bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/leonsarmiento/Qwen3.8-27B-MTP-4bit-mlx
 - Modelo base recomendado: https://huggingface.co/leonsarmiento/Qwen3.8-27B-3bit-mlx
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter similar de la comunidad: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit

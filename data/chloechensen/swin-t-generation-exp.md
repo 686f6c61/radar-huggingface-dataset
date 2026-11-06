@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chloechensen/swin-t-generation-exp es un repositorio experimental de HuggingFace publicado por el usuario Chloechensen (C. Chen) que contiene una implementacion propia de la arquitectura Swin Transformer, etiquetada en la model card como "Swin T" a escala "giant", orientada a tareas de generacion. El repositorio no distribuye un modelo entrenado: el archivo model.safetensors se describe explicitamente como "a valid initialization checkpoint for smoke tests" y no como un checkpoint evaluado. La model card declara de forma explicita que no se reclama ninguna puntuacion de benchmark.
+Chloechensen/swin-t-generation-exp es un repositorio experimental de Hugging Face publicado por el usuario Chloechensen (C. Chen) que contiene una implementacion propia de la arquitectura Swin Transformer, etiquetada en la model card como "Swin T" a escala "giant", orientada a tareas de generacion. El repositorio no distribuye un modelo entrenado: el archivo model.safetensors se describe explicitamente como "a valid initialization checkpoint for smoke tests" y no como un checkpoint evaluado. La model card declara de forma explicita que no se reclama ninguna puntuacion de benchmark.
 
 Se trata, por tanto, de un artefacto de investigacion y andamiaje de codigo, no de un modelo listo para produccion. El repositorio incluye model.py (implementacion y punto de entrada), config.json (configuracion de arquitectura), training_args.json (receta de entrenamiento por defecto, adam con schedule onecycle) y el checkpoint de inicializacion. No se declara pipeline, ni idiomas soportados, ni datos de entrenamiento, ni volumen de tokens.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es fundamentalmente critica: sirve para documentar q
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (model.safetensors) |
 
-Otros datos del repositorio: ID Chloechensen/swin-t-generation-exp, 13 descargas, 0 likes, tamano del repositorio 0.0 GB, creado y actualizado el 9 de octubre de 2026 segun los metadatos de HuggingFace. El campo pipeline no esta definido.
+Otros datos del repositorio: ID Chloechensen/swin-t-generation-exp, 13 descargas, 0 likes, tamano del repositorio 0.0 GB, creado y actualizado el 9 de octubre de 2026 segun los metadatos de Hugging Face. El campo pipeline no esta definido.
 
 ## Arquitectura y entrenamiento
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chloechensen/swin-t-generation-exp | 16.576 segun safetensors (escala "giant" declarada, sin cifra) | No disponible | Sin benchmarks publicados | BSD-3-Clause | HuggingFace, 13 descargas, checkpoint sin entrenar |
-| julianaalmeida/swin-t-generation | No disponible | No disponible | Sin benchmarks publicados (declara omitirlos deliberadamente) | No disponible en la informacion recogida | HuggingFace |
+| Chloechensen/swin-t-generation-exp | 16.576 segun safetensors (escala "giant" declarada, sin cifra) | No disponible | Sin benchmarks publicados | BSD-3-Clause | Hugging Face, 13 descargas, checkpoint sin entrenar |
+| julianaalmeida/swin-t-generation | No disponible | No disponible | Sin benchmarks publicados (declara omitirlos deliberadamente) | No disponible en la informacion recogida | Hugging Face |
 | Swin-T original (Microsoft, referencia de la arquitectura) | Aproximadamente 28 millones | No aplica (vision) | Resultados publicos en ImageNet y COCO | MIT en la implementacion de referencia | Ampliamente disponible en repositorios oficiales |
 
 La comparativa con modelos de lenguaje no procede: este repositorio no es un modelo de lenguaje y no compite en tareas de texto. La unica comparacion significativa es contra implementaciones de Swin Transformer con pesos entrenados, frente a las cuales este repositorio no ofrece pesos utilizables.
@@ -88,7 +88,7 @@ La comparativa con modelos de lenguaje no procede: este repositorio no es un mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chloechensen/swin-t-generation-exp
+- Modelo en Hugging Face: https://huggingface.co/Chloechensen/swin-t-generation-exp
 - Perfil del autor: https://huggingface.co/Chloechensen
 - Repositorio similar de otro autor: https://huggingface.co/julianaalmeida/swin-t-generation
 

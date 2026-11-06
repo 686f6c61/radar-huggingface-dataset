@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (myendless) | 4B (base) | no disponible | Representación de acción robótica (LVTA, ALOHA Core-8) | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | VLM conversacional multimodal | no disponible en esta ficha | HuggingFace (modelo base) |
+| Este checkpoint (myendless) | 4B (base) | no disponible | Representación de acción robótica (LVTA, ALOHA Core-8) | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | VLM conversacional multimodal | no disponible en esta ficha | Hugging Face (modelo base) |
 | Alternativas de política robótica de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-hygon-aloha-core8-sparse-lvta-source30k-019460a8
+- Hugging Face: https://huggingface.co/myendless/action-repre-hygon-aloha-core8-sparse-lvta-source30k-019460a8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Action Representation Benchmark: no disponible (no se proporciona URL en la información)
 - Paper, blog, repositorio de código o demo: no disponible

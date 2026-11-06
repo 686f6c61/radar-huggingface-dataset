@@ -87,7 +87,7 @@ La diferencia clave es el enfoque: Prashna-7B está especializado en pedagogía 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rachitgoyell/Prashna-7b
+- Modelo en Hugging Face: https://huggingface.co/rachitgoyell/Prashna-7b
 - Modelo base (Qwen2.5-7B-Instruct): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper referenciado en la model card (alineación pedagógica con RL): https://arxiv.org/abs/2505.15607
 - Repositorio de código, demos o despliegues propios: no disponible

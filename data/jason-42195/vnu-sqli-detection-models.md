@@ -89,6 +89,6 @@ No se dispone de comparativas externas con otros modelos de detección de SQLi (
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Jason-42195/VNU-SQLi-Detection-Models](https://huggingface.co/Jason-42195/VNU-SQLi-Detection-Models)
+- Modelo en Hugging Face: [Jason-42195/VNU-SQLi-Detection-Models](https://huggingface.co/Jason-42195/VNU-SQLi-Detection-Models)
 - Dataset de entrenamiento: [Jason-42195/VNU-SQLi-Detection](https://huggingface.co/datasets/Jason-42195/VNU-SQLi-Detection)
 - Repositorio del proyecto: no disponible en la información proporcionada (se menciona en la model card pero no se incluye la URL)

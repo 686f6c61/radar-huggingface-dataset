@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xintelligence/qwen3-4b-research-planner-lora` es un adaptador LoRA publicado en HuggingFace por el usuario u organizacion `xintelligence`, entrenado sobre el modelo base denso `Qwen/Qwen3-4B`. El repositorio contiene unicamente los pesos del adaptador en formato `safetensors` (0,1 GB), gestionados con la libreria PEFT (version 0.19.1 declarada en la model card), por lo que no es un modelo autonomo: requiere descargar y cargar el modelo base Qwen3-4B para poder ejecutar inferencia. La etiqueta de tarea declarada es `text-generation` y el nombre del repositorio sugiere una especializacion en planificacion de investigacion, aunque esa funcionalidad no esta documentada en ningun apartado de la ficha.
+`xintelligence/qwen3-4b-research-planner-lora` es un adaptador LoRA publicado en Hugging Face por el usuario u organizacion `xintelligence`, entrenado sobre el modelo base denso `Qwen/Qwen3-4B`. El repositorio contiene unicamente los pesos del adaptador en formato `safetensors` (0,1 GB), gestionados con la libreria PEFT (version 0.19.1 declarada en la model card), por lo que no es un modelo autonomo: requiere descargar y cargar el modelo base Qwen3-4B para poder ejecutar inferencia. La etiqueta de tarea declarada es `text-generation` y el nombre del repositorio sugiere una especializacion en planificacion de investigacion, aunque esa funcionalidad no esta documentada en ningun apartado de la ficha.
 
-El interes de esta publicacion es limitado pero real: demuestra el flujo estandar de publicacion de adaptadores PEFT (base + adaptador) para modelos de 4.000 millones de parametros que caben en GPU de consumo. Sin embargo, la model card es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, hiperparametros, licencia, idiomas, evaluacion) aparecen como `[More Information Needed]`. No hay descargas ni likes registrados en el momento de la consulta y no se ha publicado ningun resultado de benchmark.
+El interes de esta publicacion es limitado pero real: demuestra el flujo estandar de publicacion de adaptadores PEFT (base + adaptador) para modelos de 4.000 millones de parametros que caben en GPU de consumo. Sin embargo, la model card es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, hiperparametros, licencia, idiomas, evaluacion) aparecen como `[More Information Needed]`. No hay descargas ni likes registrados en el momento de la consulta y no se ha publicado ningun resultado de benchmark.
 
 La relevancia practica, por tanto, es la de un artefacto en fase experimental y sin validacion publica. Cualquier evaluacion seria exige cargar el adaptador sobre Qwen3-4B, reproducir tareas de planificacion y verificar comportamiento, sesgos y licencia antes de considerarlo para uso en produccion.
 
@@ -102,7 +102,7 @@ Nota: la comparativa es de naturaleza estructural (tamano, contexto, licencia). 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xintelligence/qwen3-4b-research-planner-lora
+- Modelo en Hugging Face: https://huggingface.co/xintelligence/qwen3-4b-research-planner-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en machine learning): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mlco2.github.io/impact

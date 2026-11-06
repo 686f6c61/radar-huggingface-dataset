@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MielleAI/Xyz es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario MielleAI en HuggingFace, disenado para funcionar sobre el modelo base krea/Krea-2-Raw. No se trata de un modelo completo, sino de un peso adicional que se carga junto al modelo base para inyectar un concepto, estilo o identidad concreta mediante la palabra disparadora (trigger word) `xyz`. El repositorio ocupa 0,2 GB y esta etiquetado con la plantilla `template:diffusion-lora` y la libreria `diffusers`.
+MielleAI/Xyz es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario MielleAI en Hugging Face, disenado para funcionar sobre el modelo base krea/Krea-2-Raw. No se trata de un modelo completo, sino de un peso adicional que se carga junto al modelo base para inyectar un concepto, estilo o identidad concreta mediante la palabra disparadora (trigger word) `xyz`. El repositorio ocupa 0,2 GB y esta etiquetado con la plantilla `template:diffusion-lora` y la libreria `diffusers`.
 
 La relevancia de este tipo de publicaciones es la personalizacion barata: un LoRA permite reutilizar un modelo de difusion grande sin reentrenarlo, anadiendo un coste de almacenamiento minimo y manteniendo la calidad del generador subyacente. En este caso, el autor no documenta el contenido exacto aprendido (no hay descripcion del concepto, ni del dataset, ni del estilo), y la model card se limita a indicar la trigger word y el enlace de descarga.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Estimacion de VRAM para inferencia: no disponible. Depende por completo del modelo base, del tipo de precision (fp16, bf16, fp8) y del uso de tecnicas de ahorro de memoria.
 - GPU recomendadas: no disponible para el modelo base. Para adaptadores LoRA de este tamano, el factor limitante no es el adaptador sino la GPU necesaria para el generador subyacente.
 - Compatibilidad con GPU de consumo: no verificable sin conocer los requisitos del modelo base. El adaptador en si no anade una carga significativa.
-- Opciones de despliegue: el repositorio esta etiquetado como `diffusers`, por lo que la ruta natural es la libreria `diffusers` de HuggingFace. Interfaces graficas como ComfyUI, Automatic1111/Forge, SD.Next o InvokeAI serian compatibles solo si soportan el modelo base Krea-2-Raw; no hay confirmacion en la informacion disponible.
+- Opciones de despliegue: el repositorio esta etiquetado como `diffusers`, por lo que la ruta natural es la libreria `diffusers` de Hugging Face. Interfaces graficas como ComfyUI, Automatic1111/Forge, SD.Next o InvokeAI serian compatibles solo si soportan el modelo base Krea-2-Raw; no hay confirmacion en la informacion disponible.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni ejemplos de tiempos de generacion, resolucion o numero de pasos utilizados.
 - Entrenamiento adicional o fusion de pesos: no disponible. Se desconoce el rango del LoRA y, por tanto, la viabilidad de fusionarlo sobre los pesos base sin perdida de calidad.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MielleAI/Xyz
+- Modelo en Hugging Face: https://huggingface.co/MielleAI/Xyz
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Repositorio de la libreria diffusers: https://github.com/huggingface/diffusers
 - Busqueda web realizada: no se recupero ningun enlace relevante sobre el modelo. Los resultados obtenidos correspondian a Google Earth (https://maps.google.it/intl/en/earth/) y a las paginas de versiones y transporte de Google Maps (https://maps.google.it/intl/en/earth/versions/, https://maps.google.it/intl/it/earth/versions/, https://maps.google.it/intl/it/landing/transit/), sin relacion con MielleAI/Xyz.

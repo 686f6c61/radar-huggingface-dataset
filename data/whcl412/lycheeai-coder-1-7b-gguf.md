@@ -74,11 +74,11 @@ No se dispone de datos de rendimiento comparativo. LycheeAI-coder-1.7b se distin
 - No se ha evaluado la seguridad ni la robustez del modelo; podria generar codigo con vulnerabilidades o practicas inseguras si se le solicita.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo se distribuye sin garantias y sin soporte oficial.
 - La longitud de contexto no esta documentada en la ficha; se hereda del modelo base Qwen3-1.7B, que soporta hasta 32K tokens, pero no se ha verificado en este fine-tune.
-- No se proporcionan pesos en formato safetensors ni otros formatos; solo GGUF, lo que limita su uso con frameworks que requieran pesos originales (por ejemplo, Transformers de HuggingFace sin conversion).
+- No se proporcionan pesos en formato safetensors ni otros formatos; solo GGUF, lo que limita su uso con frameworks que requieran pesos originales (por ejemplo, Transformers de Hugging Face sin conversion).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whcl412/LycheeAI-coder-1.7b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/whcl412/LycheeAI-coder-1.7b-GGUF
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documentacion de formato GGUF: https://huggingface.co/docs/hub/gguf
 - Repositorio MLX mencionado (no verificado): https://huggingface.co/whcl412/mlx-LycheeAI-coder-1.7b

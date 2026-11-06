@@ -89,7 +89,7 @@ Comparativas con LLM generativos de tamaño similar (Qwen, Llama, Gemma) no son 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nace-ai/drex-max-v1-affine-q4
+- Modelo en Hugging Face: https://huggingface.co/nace-ai/drex-max-v1-affine-q4
 - Modelo base Drex Max v1: https://huggingface.co/nace-ai/drex-max-v1
 - Variante Q8_0 GGUF: https://huggingface.co/nace-ai/drex-max-v1-Q8_0
 - Repositorio de herramientas y setup (Kapitsa): https://github.com/nace-ai/drex-decision-models/blob/main/models/drex-max-v1#kapitsa

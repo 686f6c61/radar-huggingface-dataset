@@ -72,9 +72,9 @@ Tamaños del corpus: 996 ejemplos de entrenamiento, 177 de validación y 268 de 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 v5 (este) | Base 0,8B + LoRA | No disponible | Decisión discreta `avoid_obstacles` | Apache 2.0 | HuggingFace, 0 descargas |
+| LINK-01 v5 (este) | Base 0,8B + LoRA | No disponible | Decisión discreta `avoid_obstacles` | Apache 2.0 | Hugging Face, 0 descargas |
 | LINK-01 v4 | Base 0,8B + LoRA | No disponible | Igual, con penalización -2,0 | Apache 2.0 (presumible) | Referenciado en la model card, no enlazado |
-| Qwen3.5-0.8B (base) | ~0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| Qwen3.5-0.8B (base) | ~0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO "cerebro" | No disponible | No aplica | Decisión `avoid_obstacles` | No disponible | Artefacto `brain.json` del simulador |
 
 No se dispone de comparación con modelos de decisión de otros autores en la información proporcionada.
@@ -89,11 +89,11 @@ No se dispone de comparación con modelos de decisión de otros autores en la in
 - Sin soporte de tool calling ni agentes multi-paso: no es adecuado como orquestador.
 - Uso comercial: la licencia Apache 2.0 lo permite, pero el autor lo describe como modelo de investigación y educación en simulación; exige revalidación en el robot y el espacio reales antes de cualquier despliegue físico.
 - Repositorio de 0,0 GB y 0 descargas: no hay evidencia de uso comunitario ni de mantenimiento; la fecha de creación (2026-11-04) es futura respecto a la información habitual, lo que conviene verificar.
-- El código de soporte (`connect_tycoon.link01.questions`) es una dependencia externa no incluida en el repositorio de HuggingFace.
+- El código de soporte (`connect_tycoon.link01.questions`) es una dependencia externa no incluida en el repositorio de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v5-link01
+- Modelo en Hugging Face: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v5-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

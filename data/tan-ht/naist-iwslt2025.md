@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tan-ht/naist-iwslt2025` es el repositorio de HuggingFace asociado al sistema presentado por NAIST (Nara Institute of Science and Technology) para la pista *Simultaneous Speech-to-Text* de IWSLT 2025, en la dirección inglés → {alemán, japonés, chino}. El sistema lo firma Haotian Tan, doctorando del *Human AI Interaction Laboratory* (Sakti Lab) bajo la supervisión de Sakriani Sakti, junto con Ruhiyah Faradishi Widiaputri, Jan Meyer Saragih, Yuka Ko, Katsuhito Sudoh, Satoshi Nakamura y Sakriani Sakti.
+`tan-ht/naist-iwslt2025` es el repositorio de Hugging Face asociado al sistema presentado por NAIST (Nara Institute of Science and Technology) para la pista *Simultaneous Speech-to-Text* de IWSLT 2025, en la dirección inglés → {alemán, japonés, chino}. El sistema lo firma Haotian Tan, doctorando del *Human AI Interaction Laboratory* (Sakti Lab) bajo la supervisión de Sakriani Sakti, junto con Ruhiyah Faradishi Widiaputri, Jan Meyer Saragih, Yuka Ko, Katsuhito Sudoh, Satoshi Nakamura y Sakriani Sakti.
 
 A diferencia de la edición anterior, en la que el equipo partía de un modelo extremo a extremo que combinaba HuBERT y mBART, la propuesta de 2025 se articula en tres bloques: un encoder Whisper, el proyector compresivo DeCo y un modelo de lenguaje Qwen. Se trata, por tanto, de una arquitectura híbrida voz-texto en la que el encoder acústico alimenta a un LLM que genera la traducción, con un proyector pensado para comprimir la secuencia y habilitar el modo simultáneo (streaming con latencia reducida).
 
@@ -23,8 +23,8 @@ El interés del repositorio es fundamentalmente de trazabilidad académica: perm
 | Tarea | Traducción simultánea de voz a texto (*speech-to-text translation*) |
 | Direccionalidad | Inglés → {alemán, japonés, chino} únicamente |
 | Autores | Haotian Tan, Ruhiyah Faradishi Widiaputri, Jan Meyer Saragih, Yuka Ko, Katsuhito Sudoh, Satoshi Nakamura, Sakriani Sakti |
-| Repositorio | tan-ht/naist-iwslt2025 (HuggingFace) |
-| Fecha de creación en HuggingFace | 2026-10-24 (según metadatos del repositorio) |
+| Repositorio | tan-ht/naist-iwslt2025 (Hugging Face) |
+| Fecha de creación en Hugging Face | 2026-10-24 (según metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 - **Estimación condicional**: si el LLM fuese un Qwen de la familia 7B, el sistema completo necesitaría del orden de 16-18 GB en fp16 (7B del LLM más el encoder y el proyector) y alrededor de 6-8 GB con cuantización de 4 bits; si se tratase de una variante 3B o inferior, cabría en GPUs de 8-12 GB. Estas cifras son orientativas y no están confirmadas por el autor.
 - **GPU recomendadas**: no disponible. Para un despliegue en streaming con latencia baja tendrían sentido GPUs con buen rendimiento por *token* y soporte de *batching* continuo (A100, H100, L40S o RTX 4090), pero el paper no especifica el hardware utilizado.
 - **Consumer GPU**: no confirmable. Solo sería viable en una RTX 4090 o RTX 3090 si el LLM es de tamaño reducido y se aplica cuantización; con un Qwen grande, el sistema requeriría GPU de datacenter.
-- **Opciones de despliegue**: no disponible. El repositorio no incluye código de inferencia. Por la composición del sistema, un despliegue realista exigiría servir el encoder acústico (por ejemplo, con `faster-whisper` o implementaciones tipo HuggingFace Transformers) y el LLM por separado (vLLM o TGI) con un orquestador que aplique el proyector DeCo entre ambos; llama.cpp u Ollama solo cubrirían la parte del LLM, no el pipeline completo.
+- **Opciones de despliegue**: no disponible. El repositorio no incluye código de inferencia. Por la composición del sistema, un despliegue realista exigiría servir el encoder acústico (por ejemplo, con `faster-whisper` o implementaciones tipo Hugging Face Transformers) y el LLM por separado (vLLM o TGI) con un orquestador que aplique el proyector DeCo entre ambos; llama.cpp u Ollama solo cubrirían la parte del LLM, no el pipeline completo.
 - **Latencia y throughput**: no disponible. En un sistema simultáneo la latencia viene impuesta por la política de segmentación y por el proyector compresivo, además del coste de decodificación del LLM, pero no se han publicado mediciones en la información consultada.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ La comparación es necesariamente cualitativa: el sistema de NAIST no publica ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tan-ht/naist-iwslt2025
+- Repositorio en Hugging Face: https://huggingface.co/tan-ht/naist-iwslt2025
 - Paper (PDF, ACL Anthology): https://aclanthology.org/2025.iwslt-1.39.pdf
 - Ficha del paper en ACL Anthology: https://aclanthology.org/2025.iwslt-1.39/
 - Programa de IWSLT 2025: https://iwslt.org/2025/program

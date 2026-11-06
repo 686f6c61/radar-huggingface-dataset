@@ -98,8 +98,8 @@ La comparación relevante es contra su propio modelo base: este checkpoint no ap
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-031
+- Repositorio Hugging Face del modelo: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-031
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Organización en HuggingFace: https://huggingface.co/HYU-NLP-EVAL
+- Organización en Hugging Face: https://huggingface.co/HYU-NLP-EVAL
 - Framework veRL (formato de los ficheros en `original_checkpoint/`): https://github.com/volcengine/verl
 - Búsqueda web realizada: sin resultados relevantes sobre este modelo (los enlaces devueltos correspondían a Hyundai, YouTube y Hayu y no se incluyen por no ser pertinentes). No se han encontrado papers, blogs ni demos asociados.

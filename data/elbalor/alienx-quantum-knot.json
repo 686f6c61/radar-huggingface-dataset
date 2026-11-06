@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ElBalor/AlienX-Quantum-Knot",
+  "slug": "elbalor-alienx-quantum-knot",
+  "author": "ElBalor",
+  "url": "https://huggingface.co/ElBalor/AlienX-Quantum-Knot",
+  "created_at": "2026-11-01T13:09:55.000Z",
+  "updated_at": "2026-11-02T06:10:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "geometric-neural-operator",
+    "so3-equivariance",
+    "quantum-inspired",
+    "vortex-fields",
+    "scientific-machine-learning",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 427602,
+  "storage_human": "427602 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ElBalor/AlienX-Quantum-Knot · Hugging Face",
+      "url": "https://huggingface.co/ElBalor/AlienX-Quantum-Knot",
+      "snippet": "ElBalor / AlienX-Quantum-Knot Like 0 English geometric-neural-operator so3-equivariance quantum-inspired vortex-fields scientific-machine-learning License:mit Model card FilesFiles and versions xet Community Copy to bucket AlienX Quantum Knot v2 What this release is Architecture Training and measured run Reproduce Files Complete benchmark ..."
+    },
+    {
+      "title": "AlienX Quantum Knot · Signal Lab - a Hugging Face Space by ElBalor",
+      "url": "https://huggingface.co/spaces/ElBalor/AlienX-Quantum-Knot-Signal-Lab",
+      "snippet": "The SO (3) local frame, relevance-gated complex QSA, geometric phase, and coherent neighbor superposition remain the AlienX substrate. The knot shell supplies trefoil coordinates, complex density targets, perturbation, time, and vortex diagnostics."
+    },
+    {
+      "title": "GitHub - ElBalor/AlienX: AlienX 3D - SO (3)-invariant Isotropic Stencil ...",
+      "url": "https://github.com/ElBalor/AlienX",
+      "snippet": "AlienX 3D - SO (3)-invariant Isotropic Stencil Network (ISN): a neural operator born with geometry, never taught it. AGPL-3.0. - ElBalor/AlienX"
+    },
+    {
+      "title": "alienx-labs · PyPI",
+      "url": "https://pypi.org/project/alienx-labs/",
+      "snippet": "AlienX (Isomorphic Spatial Net): rotation/scale-equivariant neural operators for Darcy flow, Gross-Pitaevskii, and 3D Navier-Stokes, with pretrained weights bundled and a one-call model zoo."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Own Gooo semantic composition tiny v1 es un modelo experimental de 12.728 parametros publicado por el usuario asketeddy en HuggingFace. No es un modelo de lenguaje generativo al uso: su funcion es clasificar y ordenar rutas de compilacion legalmente validas del lenguaje Gooo, partiendo de codigo fuente tipado y de una intencion completa redactada en coreano o ingles. El modelo fue inicializado desde un estado aleatorio propio, sin reutilizar pesos de Laya ni de versiones anteriores del propio autor.
+Own Gooo semantic composition tiny v1 es un modelo experimental de 12.728 parametros publicado por el usuario asketeddy en Hugging Face. No es un modelo de lenguaje generativo al uso: su funcion es clasificar y ordenar rutas de compilacion legalmente validas del lenguaje Gooo, partiendo de codigo fuente tipado y de una intencion completa redactada en coreano o ingles. El modelo fue inicializado desde un estado aleatorio propio, sin reutilizar pesos de Laya ni de versiones anteriores del propio autor.
 
 El modelo se distribuye como seis composiciones (variantes v2 y v3 en FP32, PTQ y QAT) que conservan tanto mejoras como regresiones respecto a la linea base, con calibracion que selecciono finalmente la variante v3 QAT. Los pesos son ternarios: ocupan 2.759 bytes en disco, y los tensores decodificados en int8 suman 12.896 bytes mas escalas. La inferencia caliente declarada es de unos 9,7 microsegundos con cero asignaciones de heap por llamada.
 
@@ -93,7 +93,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asketeddy/gooo-semantic-composition-tiny-v1
+- Modelo en Hugging Face: https://huggingface.co/asketeddy/gooo-semantic-composition-tiny-v1
 - Fuente, entrenador y runtime: https://github.com/kimjooyoon/gooo-neural-decision-experiments
 - SDK (release v0.2.11 experimental): https://github.com/kimjooyoon/gooo-decision-runtime/releases/tag/v0.2.11-experimental
 - Compilador Gooo (commit f4813dc): https://github.com/kimjooyoon/meta-ontology-go/commit/f4813dc6251037767c8cff7295ccfdab2b044ff2

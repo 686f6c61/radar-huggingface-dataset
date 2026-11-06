@@ -31,7 +31,7 @@ En cuanto al entrenamiento de este ajuste concreto, el autor solo indica que se 
 
 Las capacidades que se listan a continuación se deducen del modelo base y no están verificadas para este ajuste concreto; la model card no aporta ninguna evaluación.
 
-- Generación de texto conversacional en inglés (formato "conversational" en los tags de HuggingFace).
+- Generación de texto conversacional en inglés (formato "conversational" en los tags de Hugging Face).
 - Razonamiento con cadena de pensamiento explícita, heredado de DeepSeek-R1-0528-Qwen3-8B, orientado a problemas de varios pasos.
 - Resolución de problemas matemáticos y generación de código, capacidades típicas de la familia R1 destilada, sin datos de validación publicados.
 - Soporte multilingüe: solo se declara inglés. La hipótesis de un ajuste en persa que sugiere el nombre del repositorio no está respaldada por los metadatos.
@@ -71,10 +71,10 @@ Las cifras siguientes son estimaciones de ingeniería para un transformer denso 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| arefehRajabian/deepseek_r1_finetune_16bit_persian | 8,19 B | No especificado (base: 32.768 nativo / 131.072 con YaRN) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B (origen de la cadena) | 8,19 B | 32.768 nativo / 131.072 con YaRN | MIT | HuggingFace, ampliamente descargado |
-| Qwen/Qwen3-8B (base arquitectónica) | 8,19 B | 32.768 nativo / 131.072 con YaRN | apache-2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B | 8,03 B | 128.000 | Llama 3.1 Community License | HuggingFace con acceso aprobado |
+| arefehRajabian/deepseek_r1_finetune_16bit_persian | 8,19 B | No especificado (base: 32.768 nativo / 131.072 con YaRN) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B (origen de la cadena) | 8,19 B | 32.768 nativo / 131.072 con YaRN | MIT | Hugging Face, ampliamente descargado |
+| Qwen/Qwen3-8B (base arquitectónica) | 8,19 B | 32.768 nativo / 131.072 con YaRN | apache-2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B | 8,03 B | 128.000 | Llama 3.1 Community License | Hugging Face con acceso aprobado |
 
 Frente a las alternativas, este fine-tune no ofrece ninguna ventaja documentada: no publica evaluaciones, no incluye cuantizaciones y su model card es mucho menos informativa que la de los modelos de origen. La única diferencia reseñable respecto a DeepSeek-R1-0528-Qwen3-8B es el ajuste adicional, cuyo efecto real es desconocido.
 
@@ -92,7 +92,7 @@ Frente a las alternativas, este fine-tune no ofrece ninguna ventaja documentada:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arefehRajabian/deepseek_r1_finetune_16bit_persian
+- Modelo en Hugging Face: https://huggingface.co/arefehRajabian/deepseek_r1_finetune_16bit_persian
 - Modelo base directo (Unsloth, 4 bits): https://huggingface.co/unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit
 - Modelo de origen de la destilación: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 - Arquitectura base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

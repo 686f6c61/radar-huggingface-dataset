@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flex-F10 es un repositorio de modelo publicado en HuggingFace por el usuario GalaxyAi123 el 9 de octubre de 2026 y actualizado ese mismo dia, sin cambios posteriores. El unico dato tecnico verificable que acompana al repositorio es la licencia, etiquetada como `openrail`. La model card no contiene README funcional: el unico contenido es el bloque de frontmatter con el campo `license`, por lo que no hay descripcion del modelo, ni declaracion de arquitectura, ni indicacion de tamano, contexto o datos de entrenamiento.
+Flex-F10 es un repositorio de modelo publicado en Hugging Face por el usuario GalaxyAi123 el 9 de octubre de 2026 y actualizado ese mismo dia, sin cambios posteriores. El unico dato tecnico verificable que acompana al repositorio es la licencia, etiquetada como `openrail`. La model card no contiene README funcional: el unico contenido es el bloque de frontmatter con el campo `license`, por lo que no hay descripcion del modelo, ni declaracion de arquitectura, ni indicacion de tamano, contexto o datos de entrenamiento.
 
 El repositorio no declara pipeline (`pipeline: no disponible`), no especifica idiomas soportados y no incluye etiquetas de capacidad, modalidad ni familia de modelo. Las etiquetas presentes se limitan a `license:openrail` y `region:us`. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe evidencia de uso, validacion por terceros ni resultados reproducibles.
 
@@ -88,6 +88,6 @@ No disponible. Sin conocer el tamano, la arquitectura ni la tarea del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GalaxyAi123/Flex-F10
-- Pagina del autor en HuggingFace: https://huggingface.co/GalaxyAi123
+- Repositorio en Hugging Face: https://huggingface.co/GalaxyAi123/Flex-F10
+- Pagina del autor en Hugging Face: https://huggingface.co/GalaxyAi123
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

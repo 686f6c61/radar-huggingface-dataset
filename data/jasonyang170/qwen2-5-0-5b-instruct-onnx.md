@@ -25,7 +25,7 @@ En cuanto a capacidad, conviene ser claro: se trata de un modelo denso de aproxi
 | Backends soportados | WebGPU (`device: 'webgpu'`), WASM (`device: 'wasm'`, fp32) y CPU nativa en Node (`device: 'cpu'`) |
 | Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
 | Revision de origen | `7ae557604adf67be50417f59c2c2f167def9a775` |
-| Fecha de creacion / actualizacion | 14 de septiembre de 2026 (misma fecha en ambos campos, según metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 14 de septiembre de 2026 (misma fecha en ambos campos, según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -114,7 +114,7 @@ La diferencia relevante frente al modelo base no es de calidad, sino de empaquet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JasonYANG170/Qwen2.5-0.5B-Instruct-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/JasonYANG170/Qwen2.5-0.5B-Instruct-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Revisión concreta del modelo base usada en la conversión: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/tree/7ae557604adf67be50417f59c2c2f167def9a775
 - Documentación original del modelo base preservada en el repositorio: `UPSTREAM_README.md`

@@ -1,7 +1,7 @@
 # StarLighte/voice
 
 ## Resumen
-El modelo `StarLighte/voice` es un repositorio publicado en HuggingFace por el usuario StarLighte, con licencia Artistic-2.0 y etiqueta regional "us". La model card asociada está vacía, sin descripción, arquitectura, parámetros ni datos de entrenamiento. A fecha de creación (agosto de 2026), no registra descargas ni interacciones, lo que sugiere que se trata de un proyecto incipiente o de una publicación preliminar sin documentación técnica.
+El modelo `StarLighte/voice` es un repositorio publicado en Hugging Face por el usuario StarLighte, con licencia Artistic-2.0 y etiqueta regional "us". La model card asociada está vacía, sin descripción, arquitectura, parámetros ni datos de entrenamiento. A fecha de creación (agosto de 2026), no registra descargas ni interacciones, lo que sugiere que se trata de un proyecto incipiente o de una publicación preliminar sin documentación técnica.
 
 Aunque el nombre "voice" y los resultados de búsqueda web apuntan a posibles modelos de síntesis de voz o conversión de voz (como los generadores de voz "Starlight" de Fish Audio o modelos RVC), no existe evidencia de que este repositorio contenga pesos, código o documentación que permita verificar su funcionalidad. Por tanto, cualquier afirmación sobre sus capacidades sería especulativa.
 
@@ -44,7 +44,7 @@ No disponible. No se puede comparar con alternativas de la misma categoría al d
 - El repositorio podría estar vacío, ser un placeholder o contener archivos no relacionados con el nombre "voice".
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/StarLighte/voice
+- Repositorio en Hugging Face: https://huggingface.co/StarLighte/voice
 - Referencias externas no oficiales (no vinculadas al repositorio):
   - https://fish.audio/m/5f03d587e22f4cbaa29b2b89ff49f1ba/
   - https://fish.audio/m/f441c35103bd4347a083eaf3938b6be3/

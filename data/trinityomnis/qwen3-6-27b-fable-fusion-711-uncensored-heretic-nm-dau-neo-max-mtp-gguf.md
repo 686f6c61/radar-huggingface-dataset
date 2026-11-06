@@ -64,9 +64,9 @@ La model card del autor incluye afirmaciones cualitativas: el modelo supera al Q
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-Fable-Fusion-711 (este) | 26.9B | No disponible | Afirmado superior al base en 6/7 benchmarks | Apache-2.0 | HuggingFace |
-| Qwen3.6-27B (base) | 27B | No disponible | No disponible | Apache-2.0 | HuggingFace |
-| Qwen3.6-35B-A3B | 35B (A3B MoE) | No disponible | Afirmado inferior a este modelo | Apache-2.0 | HuggingFace |
+| Qwen3.6-27B-Fable-Fusion-711 (este) | 26.9B | No disponible | Afirmado superior al base en 6/7 benchmarks | Apache-2.0 | Hugging Face |
+| Qwen3.6-27B (base) | 27B | No disponible | No disponible | Apache-2.0 | Hugging Face |
+| Qwen3.6-35B-A3B | 35B (A3B MoE) | No disponible | Afirmado inferior a este modelo | Apache-2.0 | Hugging Face |
 
 No se dispone de especificaciones detalladas de los modelos comparados en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de especificaciones detalladas de los modelos comparados en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trinityomnis/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/trinityomnis/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
 - Versión 40B Eleanor-DECKARD: https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF
 - Versión 40B Grand Intelligence: https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

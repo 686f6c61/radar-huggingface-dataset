@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`azerbaijani_sentiment_analysis` es un clasificador de sentimiento en azerbaiyano desarrollado por twnar (twnarx), publicado en HuggingFace. El modelo consiste en un `xlm-roberta-base` (FacebookAI) afinado para clasificación de sentimiento en tres clases —negativo, neutral y positivo— sobre reseñas de Google Play Store en azerbaiyano. Resuelve un problema muy concreto: la escasez de herramientas de análisis de sentimiento para el azerbaiyano, una lengua de bajos recursos para la que apenas existen modelos específicos.
+`azerbaijani_sentiment_analysis` es un clasificador de sentimiento en azerbaiyano desarrollado por twnar (twnarx), publicado en Hugging Face. El modelo consiste en un `xlm-roberta-base` (FacebookAI) afinado para clasificación de sentimiento en tres clases —negativo, neutral y positivo— sobre reseñas de Google Play Store en azerbaiyano. Resuelve un problema muy concreto: la escasez de herramientas de análisis de sentimiento para el azerbaiyano, una lengua de bajos recursos para la que apenas existen modelos específicos.
 
 El modelo se entrenó sobre el dataset `hajili/azerbaijani_review_sentiment_classification` (unas 160.000 reseñas de Play Store con valoraciones de 1 a 5 estrellas), con muestreo balanceado de 12.763 ejemplos de entrenamiento y 1.800 de test. Es un modelo pequeño (278 millones de parámetros, encoder transformer), ligero de servir y con licencia MIT, lo que lo hace apto para uso comercial sin restricciones. Es relevante para desarrolladores que necesiten monitorizar reseñas de apps azerbaiyanas (banca, taxis, telecomunicaciones, comercio) sin depender de LLM generativos costosos.
 
@@ -17,7 +17,7 @@ El modelo se entrenó sobre el dataset `hajili/azerbaijani_review_sentiment_clas
 | Tipos de cuantizacion | no disponible (pesos publicados en fp32/fp16 según safetensors) |
 | Idiomas soportados | Azerbaiyano (az) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (compatible con text-embeddings-inference y endpoints de HuggingFace) |
+| Formato de pesos | safetensors (compatible con text-embeddings-inference y endpoints de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó sobre el dataset `hajili/azerbaijani_review_sentime
 - Especializado en reseñas de aplicaciones y servicios: apps de banca, taxi, telecomunicaciones y comercio electrónico.
 - Manejo razonable de variantes ortográficas habituales del azerbaiyano (mezcla de letras nativas como `ə` y grafías ASCII como `ela`).
 - Salida con probabilidades por clase (uso de `top_k=None` en el pipeline de transformers).
-- Integrable con la librería `transformers`, con `text-embeddings-inference` y con los endpoints serverless de HuggingFace.
+- Integrable con la librería `transformers`, con `text-embeddings-inference` y con los endpoints serverless de Hugging Face.
 - No soporta tool calling, agentes ni razonamiento multi-paso: es un clasificador de texto puro.
 - No incluye capacidades de visión, audio ni generación de texto.
 
@@ -65,7 +65,7 @@ No hay comparación con otros modelos en la información disponible. Ten en cuen
 - En CPU es perfectamente viable: con longitud máxima de 128 tokens, la latencia por texto es de decenas de milisegundos en CPUs modernas (estimación, no dato publicado).
 - Cabe con holgura en GPUs de consumo: RTX 3060, RTX 4060 o superiores; no se requiere A100 ni H100.
 - El entrenamiento se realizó en una NVIDIA T4 de Google Colab en unos 15 minutos (0,25 horas de GPU), lo que indica que el fine-tuning completo es accesible con hardware gratuito o de bajo coste.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, text-embeddings-inference (TEI), HuggingFace Inference Endpoints, o cualquier servidor ONNX/TorchScript tras exportar el modelo.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, text-embeddings-inference (TEI), Hugging Face Inference Endpoints, o cualquier servidor ONNX/TorchScript tras exportar el modelo.
 - Throughput: no disponible como dato publicado; al ser un encoder de 278 M con secuencias de 128 tokens, se esperan cientos o miles de textos por segundo en GPU de gama media.
 
 ## Comparativa con modelos similares
@@ -92,6 +92,6 @@ No se han identificado en la información disponible otros clasificadores de sen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twnar/azerbaijani_sentiment_analysis
+- Modelo en Hugging Face: https://huggingface.co/twnar/azerbaijani_sentiment_analysis
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/hajili/azerbaijani_review_sentiment_classification

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-oQ4e es una cuantización en 4 bits del modelo Muse-Glimmer-30B, publicada por el usuario swdjojo en HuggingFace. La cuantización se ha realizado con la herramienta oQ (oMLX v0.6.0.dev1), que aplica una técnica de precisión mixta para reducir el tamaño de los pesos manteniendo la calidad. El resultado se distribuye en formato MLX safetensors, pensado para su uso en entornos Apple Silicon mediante la librería MLX.
+Muse-Glimmer-30B-oQ4e es una cuantización en 4 bits del modelo Muse-Glimmer-30B, publicada por el usuario swdjojo en Hugging Face. La cuantización se ha realizado con la herramienta oQ (oMLX v0.6.0.dev1), que aplica una técnica de precisión mixta para reducir el tamaño de los pesos manteniendo la calidad. El resultado se distribuye en formato MLX safetensors, pensado para su uso en entornos Apple Silicon mediante la librería MLX.
 
 A pesar del nombre "30B", los safetensors del repositorio contienen 6.460.738.560 parámetros (aproximadamente 6,46 mil millones). Esta discrepancia sugiere que el modelo original podría tener 30 mil millones de parámetros y que la cuantización comprime los pesos de forma que el archivo resultante solo almacena los valores cuantizados, no los parámetros completos. Sin embargo, no se dispone de información adicional que confirme esta hipótesis.
 
@@ -58,5 +58,5 @@ No disponible. No se conocen modelos comparables de la misma categoria (muse_gli
 
 ## Enlaces
 
-- [HuggingFace: swdjojo/Muse-Glimmer-30B-oQ4e](https://huggingface.co/swdjojo/Muse-Glimmer-30B-oQ4e)
+- [Hugging Face: swdjojo/Muse-Glimmer-30B-oQ4e](https://huggingface.co/swdjojo/Muse-Glimmer-30B-oQ4e)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

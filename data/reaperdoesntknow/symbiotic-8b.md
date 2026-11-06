@@ -62,9 +62,9 @@ La comparativa se realiza con el modelo base Qwen3-8B y con otros modelos de 8B 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Symbiotic-8B | 8.19B | no disponible | AFL-3.0 | HuggingFace | Añade módulos simbólicos y memoria, pero sin benchmarks ni ajuste por instrucciones |
-| Qwen3-8B (base) | 8.19B | 32K (según documentación de Qwen3) | Apache 2.0 | HuggingFace | Modelo base sin módulos simbólicos, con soporte de tool calling y razonamiento |
-| Llama 3.1 8B | 8.03B | 128K | Llama 3.1 Community License | HuggingFace | Modelo de propósito general con amplio soporte de la comunidad |
+| Symbiotic-8B | 8.19B | no disponible | AFL-3.0 | Hugging Face | Añade módulos simbólicos y memoria, pero sin benchmarks ni ajuste por instrucciones |
+| Qwen3-8B (base) | 8.19B | 32K (según documentación de Qwen3) | Apache 2.0 | Hugging Face | Modelo base sin módulos simbólicos, con soporte de tool calling y razonamiento |
+| Llama 3.1 8B | 8.03B | 128K | Llama 3.1 Community License | Hugging Face | Modelo de propósito general con amplio soporte de la comunidad |
 
 La principal diferencia de Symbiotic-8B es su capa simbólica adicional y el buffer de memoria, pero carece de la madurez y el ecosistema de herramientas de los modelos base. Su licencia AFL-3.0 es menos permisiva que Apache 2.0 y puede imponer condiciones adicionales para uso comercial.
 
@@ -81,7 +81,7 @@ La principal diferencia de Symbiotic-8B es su capa simbólica adicional y el buf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Symbiotic-8B
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Symbiotic-8B
 - Portfolio de Convergent Intelligence: https://huggingface.co/reaperdoesntknow
 - Discrepancy Calculus: Foundations and Core Theory: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
 - Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)

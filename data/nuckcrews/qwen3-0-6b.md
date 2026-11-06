@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B es un modelo de lenguaje denso de la familia Qwen3, desarrollado originalmente por el equipo de Alibaba y publicado bajo licencia Apache 2.0. Esta variante concreta, publicada por el usuario nuckcrews en HuggingFace, es un afinamiento del modelo base Qwen/Qwen3-0.6B-Base. Con 751.632.384 parametros en total (0,44 mil millones sin contar embeddings), 28 capas y una ventana de contexto de 32.768 tokens, esta disenado para tareas de generacion de texto, razonamiento, codigo y matematicas.
+Qwen3-0.6B es un modelo de lenguaje denso de la familia Qwen3, desarrollado originalmente por el equipo de Alibaba y publicado bajo licencia Apache 2.0. Esta variante concreta, publicada por el usuario nuckcrews en Hugging Face, es un afinamiento del modelo base Qwen/Qwen3-0.6B-Base. Con 751.632.384 parametros en total (0,44 mil millones sin contar embeddings), 28 capas y una ventana de contexto de 32.768 tokens, esta disenado para tareas de generacion de texto, razonamiento, codigo y matematicas.
 
 La caracteristica mas destacable de la familia Qwen3 es el cambio seamless entre modo pensamiento (thinking mode) y modo no-pensamiento (non-thinking mode) dentro de un mismo modelo. Esto permite al modelo razonar de forma explicita ante problemas complejos de logica, matematicas o codigo, y responder de forma directa y eficiente en dialogos generales. El modelo soporta mas de 100 idiomas y capacidades de agente con integracion de herramientas externas.
 
@@ -87,8 +87,8 @@ Esta variante de Qwen3 se diferencia de sus alternativas por el modo pensamiento
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/nuckcrews/Qwen3-0.6B
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-0.6B
+- Repositorio Hugging Face de esta variante: https://huggingface.co/nuckcrews/Qwen3-0.6B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-0.6B
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| project-llm-sft-v3-f3-h1p0-seed20261006 | ~11,96B | no disponible | apache-2.0 + licencia Gemma 4 | HuggingFace (0 descargas) |
-| project-llm-cpt-1p0-top10-01-full-02 (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| project-llm-sft-v3-f3-h1p0-seed20261006 | ~11,96B | no disponible | apache-2.0 + licencia Gemma 4 | Hugging Face (0 descargas) |
+| project-llm-cpt-1p0-top10-01-full-02 (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de ~12B de la familia Gemma 4 | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones suficientes para es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vosldtgbj/project-llm-sft-v3-f3-h1p0-seed20261006
+- Hugging Face: https://huggingface.co/vosldtgbj/project-llm-sft-v3-f3-h1p0-seed20261006
 - Modelo base: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-01-full-02
 - Licencia upstream de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Repositorio de referencia sobre SFT (no asociado al modelo): https://github.com/vpoluyaktov/llm-sft-test

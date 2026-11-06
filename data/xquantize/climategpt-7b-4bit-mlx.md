@@ -79,7 +79,7 @@ La comparativa se centra en la especialización: ClimateGPT-7B está afinado esp
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/xquantize/climategpt-7b-4bit-mlx
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/xquantize/climategpt-7b-4bit-mlx
 - Modelo base ClimateGPT-7B: https://huggingface.co/eci-io/climategpt-7b
 - Paper original (arXiv): https://arxiv.org/abs/2401.09646
 - Proyecto ClimateGPT: https://eci.io

@@ -76,7 +76,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seonglae/vls-speech-head
+- Modelo en Hugging Face: https://huggingface.co/seonglae/vls-speech-head
 - Dataset de entrenamiento: https://huggingface.co/datasets/seonglae/vls-100k
-- Perfil del autor en HuggingFace: https://huggingface.co/seonglae
+- Perfil del autor en Hugging Face: https://huggingface.co/seonglae
 - Perfil del autor en GitHub: https://github.com/seonglae

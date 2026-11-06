@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Srikarraod/ppo-LunarLander-v2-custom` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2`. Lo publica el usuario Srikarraod en HuggingFace como parte del curso de Deep Reinforcement Learning de Hugging Face, concretamente en la unidad 8 (PI), y su objetivo declarado es servir como entrega de certificacion del propio curso. No se trata de un modelo de lenguaje: no genera texto, no procesa lenguaje natural y no dispone de ventana de contexto.
+El modelo `Srikarraod/ppo-LunarLander-v2-custom` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2`. Lo publica el usuario Srikarraod en Hugging Face como parte del curso de Deep Reinforcement Learning de Hugging Face, concretamente en la unidad 8 (PI), y su objetivo declarado es servir como entrega de certificacion del propio curso. No se trata de un modelo de lenguaje: no genera texto, no procesa lenguaje natural y no dispone de ventana de contexto.
 
 El modelo resuelve una tarea de control continuo-discreto: mapear observaciones del entorno de aterrizaje lunar a acciones de control de la nave, con el fin de maximizar la recompensa acumulada por aterrizajes seguros y eficientes. La model card unicamente documenta la recompensa media obtenida en evaluacion (210,00 +/- 15,00), marcada como no verificada, y no aporta informacion sobre la arquitectura de red, el numero de parametros, el numero de pasos de entrenamiento ni las semillas utilizadas.
 
@@ -78,8 +78,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ppo-LunarLander-v2-custom (Srikarraod) | no disponible | no aplica | LunarLander-v2 | 210,00 +/- 15,00 (no verificado) | no disponible | HuggingFace, 0 descargas |
-| Otros agentes PPO de `LunarLander-v2` publicados en HuggingFace | no disponible | no aplica | LunarLander-v2 | no disponible | no disponible | no disponible |
+| ppo-LunarLander-v2-custom (Srikarraod) | no disponible | no aplica | LunarLander-v2 | 210,00 +/- 15,00 (no verificado) | no disponible | Hugging Face, 0 descargas |
+| Otros agentes PPO de `LunarLander-v2` publicados en Hugging Face | no disponible | no aplica | LunarLander-v2 | no disponible | no disponible | no disponible |
 | Agentes DQN de `LunarLander-v2` del mismo curso | no disponible | no aplica | LunarLander-v2 | no disponible | no disponible | no disponible |
 
 No hay datos publicos suficientes en la informacion proporcionada para establecer una comparativa cuantitativa con alternativas concretas. Cualquier comparacion deberia realizarse reentrenando los agentes bajo el mismo protocolo de evaluacion y el mismo numero de episodios.
@@ -99,7 +99,7 @@ No hay datos publicos suficientes en la informacion proporcionada para establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Srikarraod/ppo-LunarLander-v2-custom
+- Modelo en Hugging Face: https://huggingface.co/Srikarraod/ppo-LunarLander-v2-custom
 - Curso Deep Reinforcement Learning de Hugging Face: https://huggingface.co/learn/deep-rl-course/en/unit0/introduction
 - Documentacion del entorno LunarLander (Gymnasium), como referencia externa del entorno utilizado: no disponible en la informacion proporcionada
 - Paper de PPO (Proximal Policy Optimization Algorithms), como referencia externa del algoritmo: no disponible en la informacion proporcionada

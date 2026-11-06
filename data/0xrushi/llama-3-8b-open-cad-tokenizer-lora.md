@@ -71,7 +71,7 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3-8B-Open-CAD-Tokenizer-lora | Adaptador sobre 8B | 1.024 (entrenamiento) | llama3 | HuggingFace (adaptador) |
+| Llama-3-8B-Open-CAD-Tokenizer-lora | Adaptador sobre 8B | 1.024 (entrenamiento) | llama3 | Hugging Face (adaptador) |
 | CAD-Tokenizer (paper) | No disponible | No disponible | No disponible | No disponible |
 | SkexGen | No disponible | No disponible | No disponible | GitHub |
 | CADFusion | No disponible | No disponible | No disponible | GitHub |
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xrushi/Llama-3-8B-Open-CAD-Tokenizer-lora
+- Hugging Face: https://huggingface.co/0xrushi/Llama-3-8B-Open-CAD-Tokenizer-lora
 - Paper CAD-Tokenizer: https://arxiv.org/abs/2509.21150
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Licencia Meta Llama 3: https://llama.meta.com/llama3/license/

@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento en tareas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR97.8
+- Modelo en Hugging Face: https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR97.8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper de SLQ: https://arxiv.org/abs/2605.02404
 - Repositorio de SLQ: https://github.com/IST-DASLab/SLQ

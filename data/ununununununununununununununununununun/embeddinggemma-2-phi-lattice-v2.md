@@ -33,7 +33,7 @@ No se documenta el volumen de tokens de entrenamiento, la composicion del datase
 - Soporte de prefijos de tarea del modelo base, como SearchQuery y Document, para consultas y pasajes.
 - Representaciones Matryoshka truncables a 768, 512, 256 y 128 dimensiones.
 - Integracion directa con SentenceTransformer y AutoModel de transformers.
-- Compatibilidad declarada con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatibilidad declarada con endpoints de Hugging Face (tag endpoints_compatible).
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni generacion de texto: es un modelo exclusivamente de embeddings.
 - Capacidades multilingues: no disponibles en la informacion proporcionada.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, MTEB, BEIR) en la i
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| embeddinggemma-2-phi-lattice-v2 | 744.371.512 | no disponible | Embeddings con cuantizacion 4-bit y poda | apache-2.0 | HuggingFace |
-| google/embeddinggemma-2 (baseline) | no disponible | no disponible | Embeddings en BF16 | no disponible | HuggingFace |
+| embeddinggemma-2-phi-lattice-v2 | 744.371.512 | no disponible | Embeddings con cuantizacion 4-bit y poda | apache-2.0 | Hugging Face |
+| google/embeddinggemma-2 (baseline) | no disponible | no disponible | Embeddings en BF16 | no disponible | Hugging Face |
 | Cuantizacion uniforme 4-bit del baseline | no disponible | no disponible | Embeddings con cuantizacion uniforme | no disponible | Referencia interna del autor |
 
 La comparativa se limita a las variantes documentadas por el autor; no se dispone de datos de modelos de embeddings de terceros con los que contrastar parametros, contexto o rendimiento.
@@ -90,5 +90,5 @@ La comparativa se limita a las variantes documentadas por el autor; no se dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ununununununununununununununununununun/embeddinggemma-2-phi-lattice-v2
+- Hugging Face: https://huggingface.co/ununununununununununununununununununun/embeddinggemma-2-phi-lattice-v2
 - Modelo base: https://huggingface.co/google/embeddinggemma-2

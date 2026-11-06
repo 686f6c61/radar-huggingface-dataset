@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-10k_11k_12k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-10k_11k_12k_merge
 - Paper sobre model merging en pre-entrenamiento (arXiv:2505.12082): https://arxiv.org/pdf/2505.12082v1
 - Blog de ByteDance sobre el mismo tema: https://seed.bytedance.com/en/public_papers/model-merging-in-pre-training-of-large-language-models
 - Modelo relacionado (misma metodología, otros checkpoints): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg

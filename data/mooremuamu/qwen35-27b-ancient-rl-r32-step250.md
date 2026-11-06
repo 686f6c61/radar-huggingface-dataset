@@ -32,8 +32,8 @@ El entrenamiento de refuerzo se realizó con el algoritmo GRPO (Group Relative P
 - Traducción automática de uigur, mongol tradicional y tibetano al chino, con mejora medida en métricas de exactitud y similitud semántica frente al modelo base.
 - Anotación de textos antiguos: el entrenamiento incluye tareas de anotación, lo que sugiere capacidad para generar etiquetas, comentarios o metadatos sobre documentos históricos.
 - Generación de texto en chino con formato de chat estándar de Qwen3.5 (template y tokenizer incluidos en el repositorio).
-- Soporte de entrada multimodal (imagen y texto) según las etiquetas de HuggingFace, aunque no se documentan ejemplos concretos de uso de visión en la model card.
-- Compatible con el ecosistema Transformers y con servidores compatibles con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Soporte de entrada multimodal (imagen y texto) según las etiquetas de Hugging Face, aunque no se documentan ejemplos concretos de uso de visión en la model card.
+- Compatible con el ecosistema Transformers y con servidores compatibles con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - El modelo incluye un modo de razonamiento ("thinking on") usado en la evaluación, lo que sugiere capacidad de razonamiento encadenado, aunque no se documenta explícitamente como una función separada.
 
 ## Casos de uso
@@ -67,7 +67,7 @@ La métrica "Has ANS" indica la proporción de respuestas que contienen la etiqu
 - Con cuantización a 8 bits (estimación a partir del tamaño), la VRAM necesaria rondaría los 28-30 GB, lo que permitiría ejecutarlo en una RTX 4090 24GB con técnicas de offloading parcial.
 - Con cuantización a 4 bits, el modelo podría caber en una GPU de 16 GB (por ejemplo, RTX 4080 o A10G), aunque la calidad puede verse afectada.
 - No se han publicado datos oficiales de latencia o throughput. Como referencia orientativa, un modelo de 27B en BF16 en una A100 80GB suele alcanzar entre 20 y 40 tokens por segundo con vLLM, dependiendo de la longitud de entrada y el modo de razonamiento.
-- Opciones de despliegue compatibles: Transformers con `device_map="auto"`, vLLM (si soporta Qwen3.5), TGI, y cualquier servidor compatible con endpoints de HuggingFace. No se menciona soporte explícito para llama.cpp u Ollama, aunque podría funcionar si se convierte a GGUF.
+- Opciones de despliegue compatibles: Transformers con `device_map="auto"`, vLLM (si soporta Qwen3.5), TGI, y cualquier servidor compatible con endpoints de Hugging Face. No se menciona soporte explícito para llama.cpp u Ollama, aunque podría funcionar si se convierte a GGUF.
 - El repositorio incluye shards safetensors listos para carga directa; no se proporcionan archivos GGUF ni AWQ.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ No se dispone de información sobre modelos directamente comparables en el nicho
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/MooreMuaMu/qwen35-27b-ancient-rl-r32-step250
+- Repositorio Hugging Face del modelo: https://huggingface.co/MooreMuaMu/qwen35-27b-ancient-rl-r32-step250
 - Repositorio de adaptadores LoRA (solo adaptadores): https://huggingface.co/MooreMuaMu/qwen35-27b-ancient-rl-r32-step250-lora
 - Modelo base (referencia): `qwen3.5-27b-ancient-stage2-checkpoint-227-merged` (no se proporciona URL directa en la información disponible)

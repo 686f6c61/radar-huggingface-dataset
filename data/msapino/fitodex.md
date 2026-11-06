@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fitodex es un artefacto de despliegue para Android publicado por Matías Sapino (junto a Valentina Marti Reta y Julieta Techenski) como Proyecto Final de Ingeniería Informática en el ITBA. No se trata de un modelo de lenguaje al uso, sino de un APK de 3,9 GB que empaqueta un clasificador de imágenes, un corpus agronómico y un modelo de lenguaje para funcionar íntegramente en el dispositivo, sin conexión a red. El repositorio de HuggingFace contiene únicamente ese binario; no se publican pesos en formato safetensors ni GGUF, ni la model card describe la arquitectura del modelo subyacente.
+Fitodex es un artefacto de despliegue para Android publicado por Matías Sapino (junto a Valentina Marti Reta y Julieta Techenski) como Proyecto Final de Ingeniería Informática en el ITBA. No se trata de un modelo de lenguaje al uso, sino de un APK de 3,9 GB que empaqueta un clasificador de imágenes, un corpus agronómico y un modelo de lenguaje para funcionar íntegramente en el dispositivo, sin conexión a red. El repositorio de Hugging Face contiene únicamente ese binario; no se publican pesos en formato safetensors ni GGUF, ni la model card describe la arquitectura del modelo subyacente.
 
 El problema que aborda es el diagnóstico de enfermedades y deficiencias nutricionales en hojas de lechuga a partir de una fotografía tomada con el teléfono. La propuesta diferencial es la privacidad y la operación offline: la imagen nunca sale del dispositivo y el sistema completo viaja dentro del APK. Está etiquetado con `android`, `agriculture`, `plant-disease` y licencia MIT.
 
@@ -53,7 +53,7 @@ Tampoco se publican datos sobre el conjunto de entrenamiento: número de tokens,
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que la pantalla «Alcance» de la aplicación contiene cifras medidas y distingue las que no se midieron, pero no se reproducen en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que la pantalla «Alcance» de la aplicación contiene cifras medidas y distingue las que no se midieron, pero no se reproducen en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -81,5 +81,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/msapino/fitodex
+- Repositorio en Hugging Face: https://huggingface.co/msapino/fitodex
 - No se han encontrado en la información disponible enlaces al repositorio del proyecto, al paper, al blog del autor ni a demos.

@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,3 GB con Q2_K/Q3_K/IQ4_XS, 0,3 GB con Q4_K_S/Q4_K_M, 0,4 GB con Q5_K/Q6_K, 0,5 GB con Q8_0 y 0,9 GB con f16 (tamaños de archivo indicados en la model card).
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM libre; el modelo cabe holgadamente en GTX 1050 Ti, RTX 3050, RTX 4060 y superiores. También es viable en A100/H100, aunque enormemente sobredimensionadas para este tamaño.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna e incluso en iGPUs con memoria compartida suficiente.
-- Opciones de despliegue: llama.cpp y Ollama son las vías naturales para GGUF; también es posible usar el modelo base en safetensors con transformers. No se documenta compatibilidad con vLLM ni TGI (aunque el tag "endpoints_compatible" sugiere compatibilidad con Inference Endpoints de HuggingFace).
+- Opciones de despliegue: llama.cpp y Ollama son las vías naturales para GGUF; también es posible usar el modelo base en safetensors con transformers. No se documenta compatibilidad con vLLM ni TGI (aunque el tag "endpoints_compatible" sugiere compatibilidad con Inference Endpoints de Hugging Face).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño, se espera inferencia en tiempo real incluso en CPU, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares

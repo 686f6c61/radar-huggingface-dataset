@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FoodExtract-Gemma-3-270M es un ajuste fino (fine-tune) del modelo instructivo google/gemma-3-270m-it, publicado por el usuario jeetxx en HuggingFace. El modelo tiene 268.098.176 parametros (aproximadamente 268 millones) y se distribuye en formato safetensors con la libreria transformers, bajo la arquitectura gemma3_text y el pipeline text-generation. El repositorio ocupa 0,6 GB y fue creado el 18 de septiembre de 2026. El nombre del modelo sugiere una especializacion en extraccion de informacion del dominio alimentario, aunque la model card no documenta ninguna tarea concreta.
+FoodExtract-Gemma-3-270M es un ajuste fino (fine-tune) del modelo instructivo google/gemma-3-270m-it, publicado por el usuario jeetxx en Hugging Face. El modelo tiene 268.098.176 parametros (aproximadamente 268 millones) y se distribuye en formato safetensors con la libreria transformers, bajo la arquitectura gemma3_text y el pipeline text-generation. El repositorio ocupa 0,6 GB y fue creado el 18 de septiembre de 2026. El nombre del modelo sugiere una especializacion en extraccion de informacion del dominio alimentario, aunque la model card no documenta ninguna tarea concreta.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL, segun los metadatos de la propia tarjeta: TRL 1.13.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1. No se ha publicado informacion sobre el conjunto de datos, el numero de tokens de entrenamiento, la composicion del corpus ni si hubo fases posteriores de alineacion (RLHF, DPO u otras).
 
@@ -37,7 +37,7 @@ El entrenamiento se realizo con SFT empleando TRL 1.13.0 sobre Transformers 5.16
 - Generacion de texto conversacional: el pipeline declarado es text-generation y la etiqueta conversational indica que el modelo acepta mensajes con roles (user/assistant), como se refleja en el ejemplo de la model card.
 - Extraccion de informacion del dominio alimentario: el nombre FoodExtract sugiere que el ajuste fino se ha orientado a extraer entidades o campos relacionados con alimentos, pero no hay documentacion que lo confirme ni que precise el esquema de salida.
 - Seguimiento de instrucciones: capacidad heredada del checkpoint instructivo base google/gemma-3-270m-it.
-- Integracion con Text Generation Inference: la etiqueta text-generation-inference y endpoints_compatible indica compatibilidad declarada con TGI y con los endpoints de HuggingFace.
+- Integracion con Text Generation Inference: la etiqueta text-generation-inference y endpoints_compatible indica compatibilidad declarada con TGI y con los endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible; no se declara en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se declara, y el tamano del modelo (268 M) limita este tipo de tareas.
 - Capacidades multilingues: no disponibles; no se declaran idiomas soportados.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,54 GB en fp16/bf16 (268 M x 2 bytes), unos 0,27 GB en int8 y unos 0,14 GB en int4, sin contar activaciones ni cache KV.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente. Una RTX 3060, RTX 4060 o RTX 4090 queda muy por encima de lo necesario; no se justifica el uso de A100 o H100 salvo por agregacion de muchas instancias en el mismo nodo.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, asi como en iGPU integradas y en CPU.
-- Opciones de despliegue: pipeline de transformers (documentado en la model card), Text Generation Inference (etiqueta text-generation-inference y endpoints_compatible) y HuggingFace Inference Endpoints. El soporte en vLLM depende de la implementacion de gemma3_text en la version utilizada y no se verifica en esta ficha. Para llama.cpp u Ollama seria necesaria una conversion a GGUF que no se ha publicado.
+- Opciones de despliegue: pipeline de transformers (documentado en la model card), Text Generation Inference (etiqueta text-generation-inference y endpoints_compatible) y Hugging Face Inference Endpoints. El soporte en vLLM depende de la implementacion de gemma3_text en la version utilizada y no se verifica en esta ficha. Para llama.cpp u Ollama seria necesaria una conversion a GGUF que no se ha publicado.
 - Latencia y throughput estimados: no disponible; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -72,10 +72,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FoodExtract-Gemma-3-270M | 268 M | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| google/gemma-3-270m-it (modelo base) | 268 M | no disponible en esta ficha | terminos de uso de Gemma | HuggingFace, modelo oficial de Google |
-| Qwen3-0.6B | no disponible en esta ficha | no disponible | no disponible | HuggingFace |
-| SmolLM2-360M-Instruct | no disponible en esta ficha | no disponible | no disponible | HuggingFace |
+| FoodExtract-Gemma-3-270M | 268 M | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| google/gemma-3-270m-it (modelo base) | 268 M | no disponible en esta ficha | terminos de uso de Gemma | Hugging Face, modelo oficial de Google |
+| Qwen3-0.6B | no disponible en esta ficha | no disponible | no disponible | Hugging Face |
+| SmolLM2-360M-Instruct | no disponible en esta ficha | no disponible | no disponible | Hugging Face |
 
 La unica conclusion defendible con la informacion disponible es que FoodExtract-Gemma-3-270M ocupa el mismo rango de tamano que el modelo base del que deriva, y que cualquier comparacion de calidad exigiria ejecutar evaluaciones propias, ya que el autor no ha publicado ninguna.
 
@@ -93,7 +93,7 @@ La unica conclusion defendible con la informacion disponible es que FoodExtract-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeetxx/FoodExtract-Gemma-3-270M
+- Modelo en Hugging Face: https://huggingface.co/jeetxx/FoodExtract-Gemma-3-270M
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (cita incluida en la model card): von Werra, L. et al., "TRL: Transformers Reinforcement Learning", 2020, licencia Apache-2.0.

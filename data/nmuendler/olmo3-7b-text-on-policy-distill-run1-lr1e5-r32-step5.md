@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `nmuendler/Olmo3-7B-text-on-policy-distill-run1-lr1e5-r32-step5` es un adaptador de ajuste fino publicado en HuggingFace por el usuario `nmuendler`. No se trata de un modelo completo, sino de un adaptador LoRA (entrenado con la libreria PEFT 0.20.0) que se monta sobre el modelo base `allenai/Olmo-3-7B-Think`, un transformer denso de 7.000 millones de parametros orientado a razonamiento. El repositorio ocupa 0,3 GB y contiene unicamente los pesos del adaptador en formato safetensors, no los pesos completos del modelo.
+El modelo `nmuendler/Olmo3-7B-text-on-policy-distill-run1-lr1e5-r32-step5` es un adaptador de ajuste fino publicado en Hugging Face por el usuario `nmuendler`. No se trata de un modelo completo, sino de un adaptador LoRA (entrenado con la libreria PEFT 0.20.0) que se monta sobre el modelo base `allenai/Olmo-3-7B-Think`, un transformer denso de 7.000 millones de parametros orientado a razonamiento. El repositorio ocupa 0,3 GB y contiene unicamente los pesos del adaptador en formato safetensors, no los pesos completos del modelo.
 
 El identificador del repositorio describe la receta de entrenamiento: `text-on-policy-distill` apunta a destilacion on-policy sobre datos de texto, `run1` indica la primera ejecucion del experimento, `lr1e5` sugiere una tasa de aprendizaje de 1e-5, `r32` un rango LoRA de 32 y `step5` un checkpoint guardado en el paso 5 del entrenamiento. Se trata, por tanto, de un artefacto de investigacion con un numero de pasos muy bajo, mas cercano a una prueba de concepto o a un barrido de hiperparametros que a un modelo listo para produccion.
 
-Su relevancia es limitada y fundamentalmente experimental: apenas tiene descargas ni interacciones, la model card es la plantilla por defecto de HuggingFace sin rellenar y no se publican resultados de evaluacion. Resulta util como referencia para quien investigue destilacion on-policy con adaptadores de bajo rango sobre la familia Olmo, pero no como modelo desplegable.
+Su relevancia es limitada y fundamentalmente experimental: apenas tiene descargas ni interacciones, la model card es la plantilla por defecto de Hugging Face sin rellenar y no se publican resultados de evaluacion. Resulta util como referencia para quien investigue destilacion on-policy con adaptadores de bajo rango sobre la familia Olmo, pero no como modelo desplegable.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Su relevancia es limitada y fundamentalmente experimental: apenas tiene descarga
 | Tasa de aprendizaje | 1e-5 (inferida del identificador del repositorio; no confirmada) |
 | Checkpoint | Paso 5 (inferido del identificador del repositorio) |
 | Autor | `nmuendler` |
-| Fecha de creacion | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| `nmuendler/Olmo3-7B-text-on-policy-distill-run1-lr1e5-r32-step5` | Adaptador LoRA sobre Olmo-3-7B-Think | No disponible (base de 7B) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | No disponible |
-| `allenai/Olmo-3-7B-Think` (modelo base) | Modelo completo | 7B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace | No disponible en esta ficha |
+| `nmuendler/Olmo3-7B-text-on-policy-distill-run1-lr1e5-r32-step5` | Adaptador LoRA sobre Olmo-3-7B-Think | No disponible (base de 7B) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | No disponible |
+| `allenai/Olmo-3-7B-Think` (modelo base) | Modelo completo | 7B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face | No disponible en esta ficha |
 | Otros checkpoints del mismo barrido (`run1`, pasos distintos) | Adaptadores LoRA | No disponible | No disponible | No disponible | No localizados | No disponible |
 | Otros adaptadores publicos de destilacion sobre modelos de 7-8B | Adaptadores LoRA | No disponible | No disponible | No disponible | No verificados | No disponible |
 
@@ -96,7 +96,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/nmuendler/Olmo3-7B-text-on-policy-distill-run1-lr1e5-r32-step5
+- Hugging Face (modelo): https://huggingface.co/nmuendler/Olmo3-7B-text-on-policy-distill-run1-lr1e5-r32-step5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en machine learning): https://arxiv.org/abs/1910.09700

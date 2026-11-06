@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smai-a4-iocnn es un modelo de clasificación de imágenes para CIFAR-10 publicado en HuggingFace por el usuario anay345, presumiblemente como entrega de una practica academica de la asignatura SMAI (roll 2024102050). No es un modelo de lenguaje: se trata de un perceptron multicapa (MLP) de tres capas con arquitectura 3072-256-10 que recibe la imagen aplanada (32x32x3 = 3072 valores) y produce 10 logits correspondientes a las clases de CIFAR-10.
+smai-a4-iocnn es un modelo de clasificación de imágenes para CIFAR-10 publicado en Hugging Face por el usuario anay345, presumiblemente como entrega de una practica academica de la asignatura SMAI (roll 2024102050). No es un modelo de lenguaje: se trata de un perceptron multicapa (MLP) de tres capas con arquitectura 3072-256-10 que recibe la imagen aplanada (32x32x3 = 3072 valores) y produce 10 logits correspondientes a las clases de CIFAR-10.
 
 El modelo incorpora una restriccion poco habitual: los pesos de las capas a partir de la segunda se mantienen no negativos, aplicando la transformacion `exp(w-5)` a cualquier peso negativo tras cada paso de optimizacion. La activacion oculta es ELU y la salida se interpreta mediante softmax con perdida de entropia cruzada categorica.
 
@@ -78,7 +78,7 @@ La comparativa con ResNet-18 y ViT se ofrece como referencia de categoria (clasi
 - Precision baja: 49,94 % en CIFAR-10 implica que el modelo falla en aproximadamente la mitad de las imagenes de test; no es adecuado para produccion.
 - Repositorio vacio: el tamano del repo es 0,0 GB y no se listan ficheros de pesos, por lo que no es posible cargar ni ejecutar el modelo tal como esta publicado.
 - Licencia no declarada: no se especifica licencia, lo que impide determinar si el uso comercial esta permitido; en la practica, la ausencia de licencia implica reserva de derechos por defecto.
-- Sin idiomas ni pipeline declarados: la model card no define pipeline de HuggingFace ni idiomas, lo que limita su integracion en el ecosistema `transformers`.
+- Sin idiomas ni pipeline declarados: la model card no define pipeline de Hugging Face ni idiomas, lo que limita su integracion en el ecosistema `transformers`.
 - Dependencia estricta del preprocesado: requiere el fichero `preprocessing.npz` con la media y desviacion tipica exactas usadas en entrenamiento; sin el, las predicciones no seran validas.
 - Restriccion de pesos no negativos: puede limitar la capacidad expresiva de la red y contribuir a la precision moderada observada.
 - Sin datos de sesgo o robustez: no se han publicado analisis de sesgos, robustez a perturbaciones ni evaluacion por clase, por lo que se desconoce el comportamiento diferencial entre categorias.
@@ -87,5 +87,5 @@ La comparativa con ResNet-18 y ViT se ofrece como referencia de categoria (clasi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anay345/smai-a4-iocnn
+- Modelo en Hugging Face: https://huggingface.co/anay345/smai-a4-iocnn
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

@@ -86,7 +86,7 @@ No hay datos publicos de benchmarks comparativos entre estas versiones abliterad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChrisandErin86/Qwen3.8-27B-OBLITERATED
+- Hugging Face: https://huggingface.co/ChrisandErin86/Qwen3.8-27B-OBLITERATED
 - Repositorio OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Blog de analisis: https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

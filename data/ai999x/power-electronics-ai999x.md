@@ -64,7 +64,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 - VRAM estimada para inferencia: no aplica; el motor se ejecuta en CPU y no requiere GPU.
 - GPU recomendadas: ninguna; el autor declara explícitamente ejecución CPU-only.
 - Cabe en cualquier CPU de consumo: los pesos suman 4.715.520 parámetros y el paquete es Python puro con dependencias SymPy y mpmath.
-- Opciones de despliegue: instalación vía `pip install power-electronics-ai999x`, rueda desde el repositorio de HuggingFace, aplicación de escritorio y línea de comandos del autor, y ejecución en navegador según la web del proyecto.
+- Opciones de despliegue: instalación vía `pip install power-electronics-ai999x`, rueda desde el repositorio de Hugging Face, aplicación de escritorio y línea de comandos del autor, y ejecución en navegador según la web del proyecto.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -90,12 +90,12 @@ La comparación con modelos de lenguaje generativos no es directa: power-electro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/power-electronics-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/power-electronics-ai999x
 - Aplicación de escritorio y línea de comandos: https://www.ai999x.com/desktop-cli/
 - Probar en el navegador: https://www.ai999x.com/models/power-electronics-ai999x/#try
 - Paquete en PyPI: https://pypi.org/project/power-electronics-ai999x/
 - Guías del repositorio: https://huggingface.co/AI999X/power-electronics-ai999x/tree/main/docs
 - Evaluación del repositorio: https://huggingface.co/AI999X/power-electronics-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web del proyecto: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi

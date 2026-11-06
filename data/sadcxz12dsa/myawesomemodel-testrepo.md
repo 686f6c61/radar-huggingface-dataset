@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario SADCXZ12DSA bajo licencia MIT. Por sus etiquetas (transformers, pytorch, bert, feature-extraction) y por el pipeline declarado (feature-extraction), se presenta como un modelo orientado a la extracción de representaciones (embeddings) basado presuntamente en arquitectura BERT. Sin embargo, la model card describe un modelo de razonamiento generativo con mejoras en matemáticas, programación y lógica, lo que genera una contradicción clara entre los metadatos técnicos y el texto promocional.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario SADCXZ12DSA bajo licencia MIT. Por sus etiquetas (transformers, pytorch, bert, feature-extraction) y por el pipeline declarado (feature-extraction), se presenta como un modelo orientado a la extracción de representaciones (embeddings) basado presuntamente en arquitectura BERT. Sin embargo, la model card describe un modelo de razonamiento generativo con mejoras en matemáticas, programación y lógica, lo que genera una contradicción clara entre los metadatos técnicos y el texto promocional.
 
 El repositorio tiene un tamaño declarado de 0.0 GB, 15 descargas y 0 likes, y fue creado y actualizado el 12 de septiembre de 2026. No se especifican parámetros, longitud de contexto, idiomas soportados ni formato de pesos. El nombre "TestRepo" y la ausencia de pesos apuntan a un repositorio de prueba o plantilla más que a un modelo desplegable en producción.
 
@@ -76,7 +76,7 @@ Además, la model card afirma una precisión del 87,5 % en AIME 2025 (frente al 
 - VRAM estimada para inferencia: no disponible, al no conocerse el número de parámetros.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; sin parámetros ni formato de pesos no se puede determinar.
-- Opciones de despliegue: el repositorio es compatible con la librería transformers y con endpoints de HuggingFace (etiqueta "endpoints_compatible"), pero no se confirma que existan pesos que cargar (tamaño de repo 0.0 GB). No hay confirmación de soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el repositorio es compatible con la librería transformers y con endpoints de Hugging Face (etiqueta "endpoints_compatible"), pero no se confirma que existan pesos que cargar (tamaño de repo 0.0 GB). No hay confirmación de soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No es posible establecer una comparativa rigurosa. La model card emplea referenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SADCXZ12DSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SADCXZ12DSA/MyAwesomeModel-TestRepo
 - Paper, blog o repositorio de código: no disponible.
 - Demo o plataforma de chat: la model card menciona una web oficial y una API, pero no incluye la URL.
 - Resultados de la búsqueda web: la búsqueda realizada no devolvió ningún enlace relacionado con el modelo; los resultados obtenidos correspondían a un sitio de ofertas y no guardan relación con la ficha.

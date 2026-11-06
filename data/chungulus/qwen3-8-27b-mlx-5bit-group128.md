@@ -98,5 +98,5 @@ No se han encontrado otras cuantizaciones MLX del mismo modelo base en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-5bit-Group128
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-5bit-Group128
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B

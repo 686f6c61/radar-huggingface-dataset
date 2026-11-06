@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio alojado en HuggingFace por el usuario QWDSA12SA, publicado bajo licencia MIT y etiquetado con las etiquetas transformers, pytorch, bert, feature-extraction y endpoints_compatible. El repositorio no contiene artefactos de pesos: el tamano declarado es de 0,0 GB, no acumula descargas ni likes y tanto su fecha de creacion como la de actualizacion son posteriores a la fecha actual (14 de septiembre de 2026), lo que indica que se trata de un banco de pruebas y no de un modelo distribuible.
+MyAwesomeModel-TestRepository es un repositorio alojado en Hugging Face por el usuario QWDSA12SA, publicado bajo licencia MIT y etiquetado con las etiquetas transformers, pytorch, bert, feature-extraction y endpoints_compatible. El repositorio no contiene artefactos de pesos: el tamano declarado es de 0,0 GB, no acumula descargas ni likes y tanto su fecha de creacion como la de actualizacion son posteriores a la fecha actual (14 de septiembre de 2026), lo que indica que se trata de un banco de pruebas y no de un modelo distribuible.
 
 La model card incluida describe un supuesto asistente conversacional con modo de razonamiento, capacidad de function calling, busqueda web y lectura de ficheros, y presenta una tabla de benchmarks con cifras de matemáticas, lógica, código y traducción. Sin embargo, las etiquetas del repositorio apuntan a un modelo BERT de extraccion de caracteristicas (feature-extraction), lo que contradice frontalmente la descripcion de un LLM generativo con razonamiento extendido. Los modelos comparados en la tabla aparecen como "Model1", "Model2" y "Model1-v2", sin identificacion verificable.
 
@@ -23,7 +23,7 @@ Por todo lo anterior, esta ficha se limita a registrar la informacion declarada 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. Las etiquetas del repositorio apuntan a un transformer tipo BERT orientado a feature-extraction con PyTorch y compatibilidad con endpoints de HuggingFace. En cambio, la model card afirma que el modelo ha mejorado su "profundidad de razonamiento" mediante "recursos computacionales incrementados" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", describe un modo de pensamiento que consume de media 23K tokens por pregunta en AIME y ofrece recomendaciones de system prompt, temperatura (0,6) y plantillas para subida de ficheros y busqueda web. Estas dos descripciones son incompatibles entre si.
+No hay informacion verificable sobre la arquitectura. Las etiquetas del repositorio apuntan a un transformer tipo BERT orientado a feature-extraction con PyTorch y compatibilidad con endpoints de Hugging Face. En cambio, la model card afirma que el modelo ha mejorado su "profundidad de razonamiento" mediante "recursos computacionales incrementados" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", describe un modo de pensamiento que consume de media 23K tokens por pregunta en AIME y ofrece recomendaciones de system prompt, temperatura (0,6) y plantillas para subida de ficheros y busqueda web. Estas dos descripciones son incompatibles entre si.
 
 No se declara el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares. Tampoco se describe ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, MoE, SSM, etc.). No hay repositorio de codigo enlazado ni figuras disponibles: las referencias a `figures/fig1.png`, `fig2.png` y `fig3.png` de la model card no se pueden resolver.
 
@@ -83,7 +83,7 @@ Ademas, la introduccion de la card menciona una subida en AIME 2025 del 70 % al 
 - VRAM estimada para inferencia: no disponible (se desconoce el numero de parametros).
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible; el repositorio no contiene pesos, por lo que no es ejecutable en ninguna GPU.
-- Opciones de despliegue: las etiquetas indican compatibilidad con transformers y endpoints de HuggingFace, pero sin pesos publicados no hay despliegue posible. No se documentan soportes de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: las etiquetas indican compatibilidad con transformers y endpoints de Hugging Face, pero sin pesos publicados no hay despliegue posible. No se documentan soportes de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -105,6 +105,6 @@ No es posible establecer una comparativa fiable. La propia model card referencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/QWDSA12SA/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/QWDSA12SA/MyAwesomeModel-TestRepository
 - Resultados de busqueda web proporcionados: no guardan relacion con el modelo. Corresponden al dominio welcomepack.skema-bs.fr y a knowledge.skema-bs.fr (SKEMA Business School) y no aportan informacion tecnica sobre el repositorio.
 - Paper, repositorio de codigo, demo o blog oficial: no disponibles.

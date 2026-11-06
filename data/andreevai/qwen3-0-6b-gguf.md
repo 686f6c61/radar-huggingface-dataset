@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Andreevai/Qwen3-0.6B-GGUF | 751.632.384 | 32.768 | Apache 2.0 | GGUF | HuggingFace (112 descargas) |
-| Qwen/Qwen3-0.6B (original) | 751.632.384 | 32.768 | Apache 2.0 | safetensors | HuggingFace (oficial) |
-| Qwen/Qwen3-0.6B-Base | no disponible | no disponible | Apache 2.0 | safetensors | HuggingFace (oficial) |
+| Andreevai/Qwen3-0.6B-GGUF | 751.632.384 | 32.768 | Apache 2.0 | GGUF | Hugging Face (112 descargas) |
+| Qwen/Qwen3-0.6B (original) | 751.632.384 | 32.768 | Apache 2.0 | safetensors | Hugging Face (oficial) |
+| Qwen/Qwen3-0.6B-Base | no disponible | no disponible | Apache 2.0 | safetensors | Hugging Face (oficial) |
 
 Las alternativas de otros fabricantes en el rango sub-1B (Llama 3.2 1B, Gemma 2 2B, SmolLM2) no estan documentadas en la informacion proporcionada, por lo que no se incluyen datos comparativos de rendimiento.
 
@@ -84,7 +84,7 @@ Las alternativas de otros fabricantes en el rango sub-1B (Llama 3.2 1B, Gemma 2 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Andreevai/Qwen3-0.6B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Andreevai/Qwen3-0.6B-GGUF
 - Modelo base (instruct): https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo base (base): https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - llama.cpp (runtime): https://github.com/ggml-org/llama.cpp

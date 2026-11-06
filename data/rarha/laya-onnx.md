@@ -2,9 +2,9 @@
 
 ## Resumen
 
-rarha/laya-onnx es un repositorio de pesos en formato ONNX publicado por el usuario rarha en HuggingFace bajo licencia Apache 2.0. El repositorio ocupa 1,7 GB y fue creado el 21 de septiembre de 2026, con una unica actualizacion posterior el mismo dia. No se dispone de model card sustantiva: el README unicamente contiene la declaracion de licencia, sin descripcion de la arquitectura, el entrenamiento, los datos utilizados ni las capacidades del modelo.
+rarha/laya-onnx es un repositorio de pesos en formato ONNX publicado por el usuario rarha en Hugging Face bajo licencia Apache 2.0. El repositorio ocupa 1,7 GB y fue creado el 21 de septiembre de 2026, con una unica actualizacion posterior el mismo dia. No se dispone de model card sustantiva: el README unicamente contiene la declaracion de licencia, sin descripcion de la arquitectura, el entrenamiento, los datos utilizados ni las capacidades del modelo.
 
-La relevancia de esta publicacion es, por tanto, dificil de evaluar con la informacion disponible. El formato ONNX indica que el modelo esta pensado para inferencia portable mediante ONNX Runtime, lo que sugiere un uso orientado a despliegue en entornos sin dependencia de PyTorch, posiblemente en CPU, edge o navegador mediante WebGPU/WebAssembly. Sin embargo, el pipeline declarado en HuggingFace esta vacio, por lo que ni siquiera se puede confirmar que se trate de un modelo de generacion de texto.
+La relevancia de esta publicacion es, por tanto, dificil de evaluar con la informacion disponible. El formato ONNX indica que el modelo esta pensado para inferencia portable mediante ONNX Runtime, lo que sugiere un uso orientado a despliegue en entornos sin dependencia de PyTorch, posiblemente en CPU, edge o navegador mediante WebGPU/WebAssembly. Sin embargo, el pipeline declarado en Hugging Face esta vacio, por lo que ni siquiera se puede confirmar que se trate de un modelo de generacion de texto.
 
 No se ha publicado informacion sobre parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni resultados de benchmarks. Cualquier afirmacion tecnica sobre este modelo mas alla de lo indicado en este parrafo seria especulativa.
 
@@ -91,8 +91,8 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rarha/laya-onnx
-- Pagina del autor en HuggingFace: https://huggingface.co/rarha
+- Modelo en Hugging Face: https://huggingface.co/rarha/laya-onnx
+- Pagina del autor en Hugging Face: https://huggingface.co/rarha
 - Documentacion de ONNX: https://onnx.ai/
 - ONNX Runtime: https://onnxruntime.ai/
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FIIS/barbiefeels es un adaptador LoRA (Low-Rank Adaptation) para el modelo de generación de imágenes Krea 2, desarrollado por el usuario FIIS y publicado en HuggingFace. Se trata de un entrenamiento estilo DreamBooth que introduce el concepto estético "Barbie Feels", caracterizado por una paleta de colores vibrante, brillos y una atmósfera que evoca la estética de la muñeca Barbie, pero aplicable a cualquier escena o sujeto. El modelo base es Krea 2 RAW, y los ejemplos proporcionados se generaron sobre Krea 2 Turbo con 8 pasos de inferencia.
+FIIS/barbiefeels es un adaptador LoRA (Low-Rank Adaptation) para el modelo de generación de imágenes Krea 2, desarrollado por el usuario FIIS y publicado en Hugging Face. Se trata de un entrenamiento estilo DreamBooth que introduce el concepto estético "Barbie Feels", caracterizado por una paleta de colores vibrante, brillos y una atmósfera que evoca la estética de la muñeca Barbie, pero aplicable a cualquier escena o sujeto. El modelo base es Krea 2 RAW, y los ejemplos proporcionados se generaron sobre Krea 2 Turbo con 8 pasos de inferencia.
 
 Este LoRA resuelve el problema de personalizar el estilo de un modelo de difusión sin necesidad de reentrenar el modelo completo, permitiendo a desarrolladores y artistas incorporar una identidad visual concreta mediante un único token de activación ("Barbie Feels"). Su relevancia radica en la creciente demanda de adaptadores ligeros y reutilizables para modelos de generación de imágenes de última generación, como la familia Krea 2, que ofrecen alta calidad con pocos pasos de muestreo.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: al ser un LoRA, la inferencia se realiza sobre el modelo base Krea 2. El adaptador añade una sobrecarga mínima de memoria, por lo que los requisitos son los del modelo base. Krea 2 Turbo, al ser un modelo de difusión de tamaño moderado, suele requerir entre 8 y 12 GB de VRAM en precisión bfloat16 para generar imágenes de 1024x1024 píxeles.
 - GPU recomendadas: NVIDIA RTX 3080/3090, RTX 4070/4080/4090, A100, H100. Para uso en producción con alto throughput, se recomiendan GPUs de datacenter con al menos 24 GB de VRAM.
 - Compatibilidad con GPUs de consumo: sí, es posible ejecutar el modelo en GPUs de consumo con 8 GB o más, aunque el tiempo de generación aumentará. Con 8 pasos en Turbo, se puede lograr una generación en menos de 2 segundos en una RTX 4090.
-- Opciones de despliegue: el ejemplo proporcionado usa Diffusers con PyTorch. También es compatible con el ecosistema de HuggingFace, incluyendo la API de Inference Endpoints. Para despliegues optimizados, se puede usar vLLM (si soporta Krea 2) o servicios como Replicate, aunque no se ha confirmado.
+- Opciones de despliegue: el ejemplo proporcionado usa Diffusers con PyTorch. También es compatible con el ecosistema de Hugging Face, incluyendo la API de Inference Endpoints. Para despliegues optimizados, se puede usar vLLM (si soporta Krea 2) o servicios como Replicate, aunque no se ha confirmado.
 - Latencia y throughput: no se proporcionan datos oficiales. En una RTX 4090, se estima una latencia de 1-3 segundos por imagen a 8 pasos, y un throughput de 20-50 imágenes por minuto en batch.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de información sobre otros LoRAs específicos para Krea 2 con los
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/FIIS/barbiefeels
+- Hugging Face del modelo: https://huggingface.co/FIIS/barbiefeels
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Documentación de Diffusers para LoRA: https://huggingface.co/docs/diffusers/training/lora

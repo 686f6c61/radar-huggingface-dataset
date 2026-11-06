@@ -81,7 +81,7 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anlp-a2-optim-adamw-tuned | 33,4 M | 256 | 39,1 M tokens | no disponible | HuggingFace |
+| anlp-a2-optim-adamw-tuned | 33,4 M | 256 | 39,1 M tokens | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,6 +98,6 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-optim-adamw-tuned
+- Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-optim-adamw-tuned
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - No se han encontrado papers, blogs, repositorios de codigo auxiliares ni demos adicionales en la informacion proporcionada.

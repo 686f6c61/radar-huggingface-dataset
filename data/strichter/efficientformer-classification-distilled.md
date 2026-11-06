@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`STRICHTER/efficientformer-classification-distilled` es un repositorio de HuggingFace que contiene una implementación propia y compacta de la arquitectura EfficientFormer orientada a clasificación, escrita en PyTorch. No es un modelo preentrenado ni un checkpoint con resultados publicados: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado.
+`STRICHTER/efficientformer-classification-distilled` es un repositorio de Hugging Face que contiene una implementación propia y compacta de la arquitectura EfficientFormer orientada a clasificación, escrita en PyTorch. No es un modelo preentrenado ni un checkpoint con resultados publicados: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado.
 
 El repo incluye el script `inference.py` como artefacto principal, junto con `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto: SGD con schedule de warmup constante) y `model.safetensors`. La configuración declarada se etiqueta como escala "huge", con atención "sparse", fusión "tucker", activación "gelu tanh" y normalización "scalenorm".
 
@@ -19,7 +19,7 @@ La relevancia de esta ficha es acotada y conviene ser explícito: no hay benchma
 | Idiomas soportados | No disponible (no aplica a una tarea de clasificación; no se declara ningún idioma en la model card) |
 | Licencia | BSD-3-Clause |
 | Formato de pesos | `model.safetensors` (PyTorch). Artefactos adicionales: `inference.py`, `config.json`, `training_args.json` |
-| Pipeline de HuggingFace | No disponible (el campo `pipeline` no está definido; al ser una implementación custom, las APIs de carga automática requieren un adaptador explícito) |
+| Pipeline de Hugging Face | No disponible (el campo `pipeline` no está definido; al ser una implementación custom, las APIs de carga automática requieren un adaptador explícito) |
 | Tarea | Clasificación (etiqueta declarada en los tags del repo) |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ Los valores de referencia de la literatura se incluyen únicamente como contexto
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STRICHTER/efficientformer-classification-distilled | 16,576 (reportado) | No aplica; clasificación de imágenes | Sin benchmarks declarados | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| STRICHTER/efficientformer-classification-distilled | 16,576 (reportado) | No aplica; clasificación de imágenes | Sin benchmarks declarados | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | EfficientFormer-L1 (Snap, paper) | ~12,3 M | Imagen, 224x224 | ~79,2 % top-1 ImageNet (dato de la publicación) | Apache-2.0 (referencia) | Pesos oficiales publicados |
 | EfficientFormer-L7 (Snap, paper) | ~82,1 M | Imagen, 224x224 | ~83,3 % top-1 ImageNet (dato de la publicación) | Apache-2.0 (referencia) | Pesos oficiales publicados |
 | DeiT-Tiny | ~5,7 M | Imagen, 224x224 | ~72,2 % top-1 ImageNet (dato de la publicación) | Apache-2.0 (referencia) | Pesos oficiales publicados |
@@ -89,7 +89,7 @@ La diferencia fundamental frente a las alternativas no es de rendimiento sino de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/STRICHTER/efficientformer-classification-distilled
+- Modelo en Hugging Face: https://huggingface.co/STRICHTER/efficientformer-classification-distilled
 - Script de inferencia: https://huggingface.co/STRICHTER/efficientformer-classification-distilled/blob/main/inference.py
 - Configuración de arquitectura: https://huggingface.co/STRICHTER/efficientformer-classification-distilled/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/STRICHTER/efficientformer-classification-distilled/blob/main/training_args.json

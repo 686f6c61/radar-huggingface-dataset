@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo completo, sino un adaptador LoRA (PEFT) entrenado mediante ajuste supervisado sobre el modelo base ServiceNow-AI/Apriel-Nemotron-15b-Thinker. El identificador del repositorio codifica los hiperparametros del experimento: rango de LoRA 64, learning rate 1e-04, 4 epocas, tamano de lote efectivo 32 y un checkpoint guardado en el paso 212 de la primera ejecucion de ajuste. El sufijo "rust-sft" indica que el ajuste se realizo sobre datos de codigo Rust, aunque la model card no documenta el dataset utilizado. El tamano del repositorio es de 1,2 GB, coherente con un adaptador de rango 64 aplicado a la mayoria de las capas lineales de un modelo de 15 000 millones de parametros.
 
-El modelo base pertenece a la familia Apriel de ServiceNow, distribuida bajo el sufijo "Thinker", lo que sugiere una variante orientada a razonamiento explicito. Tanto la arquitectura concreta del base como su longitud de contexto, licencia y composicion del dataset de entrenamiento no estan documentadas en la informacion disponible; la model card del repositorio es la plantilla estandar de HuggingFace con practicamente todos los campos marcados como "[More Information Needed]".
+El modelo base pertenece a la familia Apriel de ServiceNow, distribuida bajo el sufijo "Thinker", lo que sugiere una variante orientada a razonamiento explicito. Tanto la arquitectura concreta del base como su longitud de contexto, licencia y composicion del dataset de entrenamiento no estan documentadas en la informacion disponible; la model card del repositorio es la plantilla estandar de Hugging Face con practicamente todos los campos marcados como "[More Information Needed]".
 
 La relevancia de esta ficha es limitada y hay que ser transparente al respecto: el repositorio presenta cero descargas y cero "likes", fue creado y actualizado en el mismo minuto y no aporta ni licencia, ni benchmarks, ni ejemplos de uso. Se trata de un artefacto de investigacion sin validacion publica, util unicamente como punto de partida para reproducir o continuar un ajuste sobre Rust, nunca como modelo listo para produccion.
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es limitada y hay que ser transparente al respecto: 
 
 El artefacto es un adaptador de bajo rango (Low-Rank Adaptation) sobre un modelo base denso de aproximadamente 15 000 millones de parametros, del que no se documenta la arquitectura interna ni si incorpora mecanismos de atencion lineal, mezcla de expertos o capas recurrentes. Los hiperparametros se deducen exclusivamente del nombre del repositorio: rango r=64, alpha no disponible, learning rate 1e-04, 4 epocas de entrenamiento, tamano de lote efectivo 32 y checkpoint intermedio en el paso 212. El volumen del repositorio (1,2 GB) es coherente con adaptadores de rango 64 guardados en fp32 sobre las proyecciones de atencion y MLP de un modelo de 15B; si el almacenamiento fuese en bf16, el rango efectivo seria menor o el conjunto de modulos objetivo mas reducido, dato que no se puede confirmar.
 
-No hay informacion sobre el dataset de ajuste supervisado mas alla del sufijo "rust-sft", que apunta a un corpus de codigo Rust, ni sobre el numero de tokens, la composicion del corpus, el filtrado aplicado, la existencia de RLHF, DPO o cualquier otra fase de alineamiento. La model card no incluye ni recetas de entrenamiento, ni hiperparametros completos, ni curvas de perdida, ni detalles de infraestructura de computo. La unica referencia tecnica presente es la etiqueta arxiv:1910.09700, correspondiente a Lacoste et al. (2019) sobre la estimacion de emisiones de carbono, que aparece por defecto en la plantilla de HuggingFace y no describe el modelo.
+No hay informacion sobre el dataset de ajuste supervisado mas alla del sufijo "rust-sft", que apunta a un corpus de codigo Rust, ni sobre el numero de tokens, la composicion del corpus, el filtrado aplicado, la existencia de RLHF, DPO o cualquier otra fase de alineamiento. La model card no incluye ni recetas de entrenamiento, ni hiperparametros completos, ni curvas de perdida, ni detalles de infraestructura de computo. La unica referencia tecnica presente es la etiqueta arxiv:1910.09700, correspondiente a Lacoste et al. (2019) sobre la estimacion de emisiones de carbono, que aparece por defecto en la plantilla de Hugging Face y no describe el modelo.
 
 ## Capacidades
 
@@ -80,8 +80,8 @@ No hay datos suficientes para comparar este adaptador con alternativas de la mis
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/Apriel-15B-rust-sft-run1 (este repositorio) | Adaptador de ~310M sobre base de ~15B (estimacion) | No disponible | No publicado | No disponible | Adaptador PEFT en HuggingFace, 0 descargas |
-| ServiceNow-AI/Apriel-Nemotron-15b-Thinker (modelo base) | ~15B | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos completos en HuggingFace |
+| nmuendler/Apriel-15B-rust-sft-run1 (este repositorio) | Adaptador de ~310M sobre base de ~15B (estimacion) | No disponible | No publicado | No disponible | Adaptador PEFT en Hugging Face, 0 descargas |
+| ServiceNow-AI/Apriel-Nemotron-15b-Thinker (modelo base) | ~15B | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos completos en Hugging Face |
 | Otros modelos o adaptadores especializados en Rust | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No hay datos suficientes para comparar este adaptador con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64-step212
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64-step212
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact

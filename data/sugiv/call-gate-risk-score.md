@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Call Gate Risk Score es un modelo de clasificación de texto publicado por el usuario sugiv en HuggingFace. No es un transformer ni una red neuronal profunda: se trata de una regresión logística de diez números (un sesgo más nueve pesos) que convierte las respuestas de Jev, un modelo System One de TypeSafe, sobre un mensaje de voz en una única probabilidad de que se trate de una llamada robotizada fraudulenta ("robocall junk"). Forma parte de Call Gate, un sistema personal que filtra llamadas toll-free no deseadas del buzón de voz de un iPhone con Google Fi.
+Call Gate Risk Score es un modelo de clasificación de texto publicado por el usuario sugiv en Hugging Face. No es un transformer ni una red neuronal profunda: se trata de una regresión logística de diez números (un sesgo más nueve pesos) que convierte las respuestas de Jev, un modelo System One de TypeSafe, sobre un mensaje de voz en una única probabilidad de que se trate de una llamada robotizada fraudulenta ("robocall junk"). Forma parte de Call Gate, un sistema personal que filtra llamadas toll-free no deseadas del buzón de voz de un iPhone con Google Fi.
 
 El modelo resuelve un problema de calibración, no de representación. Jev ya responde ocho preguntas tipadas sobre la transcripción (si cita dígitos de tarjeta, si empuja a hablar con un agente, si presiona, etc.), pero su veredicto global es inestable: en la misma alerta bancaria sintética osciló entre 0,26 y 0,61 de legitimidad entre ejecuciones y versiones, mientras que cada respuesta de evidencia se mantuvo dentro de ±0,03. Esta capa aprende cuánto debe pesar cada respuesta sobre los datos concretos del problema, y lo hace con diez parámetros que se reentrenan en milisegundos.
 
@@ -90,10 +90,10 @@ No se han identificado en la informacion disponible modelos comparables publicad
 
 | Enfoque | Parametros | Contexto | Rendimiento (basura retenida de 404, 0 legitimos retenidos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo + reglas | 10 | no aplica | 161 | apache-2.0 | HuggingFace |
+| Este modelo + reglas | 10 | no aplica | 161 | apache-2.0 | Hugging Face |
 | Veredicto de Jev solo (umbral 0,97) | no disponible | no disponible | 254, pero con 1 legitimo retenido a 0,90 | propietaria de TypeSafe | API de TypeSafe |
 | Pesos fijados a mano + reglas | 10 | no aplica | 9 | no aplica | interno |
-| Clasificador de texto generico (BERT, DistilBERT y similares) | 66 M - 110 M | 512 tokens | no disponible | variable | HuggingFace |
+| Clasificador de texto generico (BERT, DistilBERT y similares) | 66 M - 110 M | 512 tokens | no disponible | variable | Hugging Face |
 
 Frente a un clasificador transformer generico de la misma tarea, este modelo no compite en representacion del lenguaje: no procesa texto directamente, sino las salidas estructuradas de Jev. Su ventaja es el coste de mantenimiento y la auditabilidad; su desventaja es la dependencia total de Jev y de la calidad de sus respuestas.
 
@@ -113,7 +113,7 @@ Frente a un clasificador transformer generico de la misma tarea, este modelo no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sugiv/call-gate-risk-score
+- Modelo en Hugging Face: https://huggingface.co/sugiv/call-gate-risk-score
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/sugiv/call-gate-robocalls
 - Documentacion de System One de TypeSafe (concepto de Jev): https://docs.typesafe.ai/concepts/system-one
 - Codigo de featurizacion citado en la model card: `code/training/featurize.ts`

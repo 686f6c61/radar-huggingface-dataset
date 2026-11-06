@@ -72,9 +72,9 @@ El entrenamiento se realizó sobre el dataset [ParsaVictor/tomato-ripeness-detec
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tomato-ripeness-yolo26 (este) | Detección + madurez + conteo | no disponible | no aplica | AGPL-3.0 | HuggingFace + GitHub |
-| tomato-detector-yolo26s (componente) | Solo detección de tomate | no disponible | no aplica | AGPL-3.0 | HuggingFace |
-| tomato-ripeness-classifier-yolo26s (componente) | Solo clasificación de madurez | no disponible | no aplica | AGPL-3.0 | HuggingFace |
+| tomato-ripeness-yolo26 (este) | Detección + madurez + conteo | no disponible | no aplica | AGPL-3.0 | Hugging Face + GitHub |
+| tomato-detector-yolo26s (componente) | Solo detección de tomate | no disponible | no aplica | AGPL-3.0 | Hugging Face |
+| tomato-ripeness-classifier-yolo26s (componente) | Solo clasificación de madurez | no disponible | no aplica | AGPL-3.0 | Hugging Face |
 | YOLO26s base (Ultralytics) | Detección genérica COCO | no disponible | no aplica | AGPL-3.0 / Enterprise | Ultralytics |
 
 No se dispone de datos de benchmarks de modelos alternativos de terceros en la información proporcionada, por lo que no es posible una comparación cuantitativa con otros detectores agrícolas.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de modelos alternativos de terceros en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParsaVictor/tomato-ripeness-yolo26
+- Modelo en Hugging Face: https://huggingface.co/ParsaVictor/tomato-ripeness-yolo26
 - Componente detector: https://huggingface.co/ParsaVictor/tomato-detector-yolo26s
 - Componente clasificador: https://huggingface.co/ParsaVictor/tomato-ripeness-classifier-yolo26s
 - Dataset: https://huggingface.co/datasets/ParsaVictor/tomato-ripeness-detection

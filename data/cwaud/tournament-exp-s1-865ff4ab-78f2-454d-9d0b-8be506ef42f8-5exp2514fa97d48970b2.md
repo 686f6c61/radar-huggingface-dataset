@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp2514fa97d48970b2` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. El nombre del repositorio sugiere un artefacto generado de forma automatica dentro de un experimento de tipo "torneo" (posiblemente una comparativa de configuraciones de entrenamiento), ya que incluye un identificador unico y un sufijo alfanumerico largo. No existe ficha de modelo, descripcion, pipeline declarado ni documentacion asociada en la informacion disponible.
+El modelo identificado como `cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp2514fa97d48970b2` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. El nombre del repositorio sugiere un artefacto generado de forma automatica dentro de un experimento de tipo "torneo" (posiblemente una comparativa de configuraciones de entrenamiento), ya que incluye un identificador unico y un sufijo alfanumerico largo. No existe ficha de modelo, descripcion, pipeline declarado ni documentacion asociada en la informacion disponible.
 
 El unico dato tecnico verificable es el recuento de parametros extraido de los pesos en formato safetensors: 134.515.008 parametros, con un repositorio de 0,3 GB. El tag `llama` del repositorio apunta a una arquitectura transformer de tipo decoder-only con normalizacion RMSNorm y RoPE, habitual en la familia Llama, aunque la ficha no lo confirma de forma explicita. No se declara licencia, idiomas soportados, longitud de contexto ni pipeline de inferencia.
 
@@ -98,5 +98,5 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, porq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp2514fa97d48970b2
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp2514fa97d48970b2
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a consultas sobre iconos de pines de circuitos integrados, abreviaturas de regimenes de pension completa y foros no relacionados con inteligencia artificial.

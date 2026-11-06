@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Etasha/support_bot_gguf
+- Hugging Face: https://huggingface.co/Etasha/support_bot_gguf
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

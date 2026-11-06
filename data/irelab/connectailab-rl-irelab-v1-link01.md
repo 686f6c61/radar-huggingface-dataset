@@ -104,7 +104,7 @@ Comparativa con otros adaptadores o modelos de decisión de la misma categoría:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IRELAB/connectailab-rl-irelab-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/IRELAB/connectailab-rl-irelab-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

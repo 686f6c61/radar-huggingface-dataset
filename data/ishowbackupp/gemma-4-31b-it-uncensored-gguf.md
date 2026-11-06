@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackupp/gemma-4-31B-it-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackupp/gemma-4-31B-it-uncensored-GGUF
 - Modelo base (bf16): https://huggingface.co/TrevorJS/gemma-4-31B-it-uncensored
 - Modelo original: https://huggingface.co/google/gemma-4-31B-it
 - Código de abliteración: https://github.com/TrevorS/gemma-4-abliteration

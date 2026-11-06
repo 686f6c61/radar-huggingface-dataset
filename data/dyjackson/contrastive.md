@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dyjackson/contrastive` es una implementación propia y compacta en PyTorch de una arquitectura denominada **Cnn Transformer** orientada a tareas de aprendizaje contrastivo. Lo publica el usuario dyjackson en HuggingFace y se distribuye bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un repositorio de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance, con la configuracion `xlarge` como escala declarada.
+El modelo `dyjackson/contrastive` es una implementación propia y compacta en PyTorch de una arquitectura denominada **Cnn Transformer** orientada a tareas de aprendizaje contrastivo. Lo publica el usuario dyjackson en Hugging Face y se distribuye bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un repositorio de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance, con la configuracion `xlarge` como escala declarada.
 
 El dato mas relevante para cualquier evaluacion es su tamano real: el checkpoint contiene **33.088 parametros** en `model.safetensors`, lo que lo situa muy lejos de cualquier modelo de lenguaje utilizable. La model card indica explicitamente que el checkpoint es una **inicializacion valida para pruebas de humo** y que no se presenta como un checkpoint entrenado ni con resultados de benchmark. Por tanto, su interes es fundamentalmente arquitectonico y de investigacion, no de aplicacion directa.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, no hay informacion disponible sobre volumen de token
 - **Prototipado de experimentos contrastivos**: el autor propone evaluar con un conjunto de validacion especifico de la tarea, al menos tres semillas y una linea base de capacidad equivalente; el repositorio sirve como punto de partida para montar ese protocolo.
 - **Pruebas de integracion continua**: el modelo puede incorporarse a un job de CI que verifique que el codigo de modelado importa, instancia el modelo y ejecuta un paso de forward/backward en segundos, detectando roturas de dependencias.
 - **Banco de pruebas de adaptadores personalizados**: dado que las APIs genericas de carga no funcionan sin adaptador, es util para desarrollar y testear el adaptador que despues se reutilizara con el checkpoint realmente entrenado.
-- **Docencia y formacion interna**: sirve para explicar la diferencia entre un checkpoint de inicializacion y un modelo entrenado, y para ilustrar el flujo de publicacion en HuggingFace con `config.json`, `training_args.json` y pesos en `safetensors`.
+- **Docencia y formacion interna**: sirve para explicar la diferencia entre un checkpoint de inicializacion y un modelo entrenado, y para ilustrar el flujo de publicacion en Hugging Face con `config.json`, `training_args.json` y pesos en `safetensors`.
 - **Pruebas de despliegue en infraestructura**: permite comprobar empaquetado, permisos, rutas y arranque de servicios de inferencia en entornos nuevos antes de desplegar modelos con requisitos reales de VRAM.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No se dispone de datos verificables para una comparativa de rendimiento, ya que 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dyjackson/contrastive | 33.088 | no disponible | no disponible (checkpoint sin entrenar) | MIT | HuggingFace |
+| dyjackson/contrastive | 33.088 | no disponible | no disponible (checkpoint sin entrenar) | MIT | Hugging Face |
 | Alternativa contrastiva tipo CLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa contrastiva tipo SimCLR | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa hibrida CNN-transformer | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -89,5 +89,5 @@ No se han identificado en la busqueda web modelos comparables con datos publicad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dyjackson/contrastive
+- Hugging Face: https://huggingface.co/dyjackson/contrastive
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, su paper, su repositorio de codigo ni demos asociadas. Los resultados devueltos corresponden a catalogos de productos de empresas no relacionadas y no se incluyen por no ser pertinentes.

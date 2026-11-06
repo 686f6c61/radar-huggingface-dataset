@@ -42,7 +42,7 @@ La innovacion tecnica destacable, segun la model card, es el modo de inferencia:
 - Salida probabilistica: cada respuesta se devuelve con su probabilidad, lo que permite fijar umbrales, comparar alternativas y detectar casos ambiguos.
 - Entrada multimodadlidad de formato: acepta tanto texto plano como JSON como `state`.
 - Sin generacion de texto: no produce explicaciones ni razonamiento en lenguaje natural; es un clasificador de decision.
-- Uso como extractor de caracteristicas: el pipeline declarado en HuggingFace es `feature-extraction`.
+- Uso como extractor de caracteristicas: el pipeline declarado en Hugging Face es `feature-extraction`.
 - No se documentan capacidades de codigo, matematicas, vision, audio, tool calling, function calling ni razonamiento multi-paso; el modelo no esta disenado para ello.
 
 ## Casos de uso
@@ -84,7 +84,7 @@ Latencia declarada: mediana de 12,9 ms por peticion de una sola pregunta sobre u
 
 | Modelo | Parametros | Contexto | JevArena | Transferencia humana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Decision-2.0-Nox-4B | 4,21 B | 16.384 | 63,6 | 52,3 | Apache-2.0 | HuggingFace (safetensors, codigo custom) |
+| Decision-2.0-Nox-4B | 4,21 B | 16.384 | 63,6 | 52,3 | Apache-2.0 | Hugging Face (safetensors, codigo custom) |
 | Decider 4B | No disponible | No disponible | 61,9 | 55,5 | No disponible | No disponible en la informacion |
 | Jet v6.2 | No disponible | No disponible | 60,4 | 53,8 | No disponible | No disponible en la informacion |
 | Decision 1.0 Nox | 4 B (misma familia) | No disponible | 56,5 | 51,9 | No disponible | Coleccion Decision 2.0 del mismo autor |
@@ -107,7 +107,7 @@ La comparativa se limita a las metricas publicadas por el propio autor: Decision
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/Decision-2.0-Nox-4B
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/Decision-2.0-Nox-4B
 - Coleccion Decision 2.0: https://huggingface.co/collections/vllm-sr/decision-20-6ab7cf7bdfb506bf8269cb00
 - Repositorio de vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base

@@ -89,7 +89,7 @@ La ventaja diferencial frente a alternativas de clonacion por referencia es la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/starrydark/Tricolour_Lovestory_Qwen3_TTS
+- Modelo en Hugging Face: https://huggingface.co/starrydark/Tricolour_Lovestory_Qwen3_TTS
 - Demo (Space): https://huggingface.co/spaces/starrydark/Tricolour_Lovestory_TTS
 - Dataset de entrenamiento: https://huggingface.co/datasets/starrydark/Tricolour_Lovestory_Voice
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice

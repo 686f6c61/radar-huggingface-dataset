@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image-SFT es un modelo de difusión texto-a-imagen de la familia MOSS-Image desarrollada por OpenMOSS. Se trata de un ajuste supervisado (SFT) sobre MOSS-Image-Base, del que hereda arquitectura y pipeline de inferencia, y está pensado para generar imágenes con control explícito sobre el texto renderizado y la disposición de objetos: acepta prompts en lenguaje natural, secuencias de etiquetas y layouts en JSON. La ficha que se documenta aquí corresponde a la copia publicada por el usuario `sekkit` en HuggingFace, no al repositorio oficial de OpenMOSS.
+MOSS-Image-SFT es un modelo de difusión texto-a-imagen de la familia MOSS-Image desarrollada por OpenMOSS. Se trata de un ajuste supervisado (SFT) sobre MOSS-Image-Base, del que hereda arquitectura y pipeline de inferencia, y está pensado para generar imágenes con control explícito sobre el texto renderizado y la disposición de objetos: acepta prompts en lenguaje natural, secuencias de etiquetas y layouts en JSON. La ficha que se documenta aquí corresponde a la copia publicada por el usuario `sekkit` en Hugging Face, no al repositorio oficial de OpenMOSS.
 
 El modelo tiene 5.082.308.624 parámetros según los pesos en safetensors y un tamaño de repositorio de 27,2 GB. Se distribuye con licencia Apache 2.0, soporta inglés y chino, y se integra en el ecosistema Diffusers mediante un pipeline personalizado (`MOSSImagePipeline` / `pipeline_moss_image`). Su rasgo diferencial frente a otros generadores de la misma escala es la calidad de agrupación y organización del texto en la imagen: la propia model card muestra comparativas cualitativas en las que el SFT produce una disposición de pizarra más ordenada que la versión Base.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MOSS-Image-SFT (esta ficha) | 5.082 M | No disponible; ejemplos a 1024 x 1024 | Apache 2.0 | HuggingFace (repolicación) y ModelScope | Control de texto y layout JSON; sin benchmarks publicados |
-| MOSS-Image-Base | No disponible en la informacion | No disponible | Apache 2.0 | HuggingFace y ModelScope (OpenMOSS-Team) | Modelo base del que deriva; peor agrupación de texto según el autor |
-| FLUX.1 [dev] | 12.000 M (dato publico del autor) | No verificado en esta busqueda | Licencia no comercial | Pesos abiertos en HuggingFace | Alternativa de mayor tama\u00f1o; no comparable en licencia para uso comercial |
-| Stable Diffusion 3.5 Large | 8.000 M (dato publico del autor) | No verificado en esta busqueda | Stability Community License | Pesos abiertos en HuggingFace | Licencia con restricciones por volumen de ingresos |
+| MOSS-Image-SFT (esta ficha) | 5.082 M | No disponible; ejemplos a 1024 x 1024 | Apache 2.0 | Hugging Face (repolicación) y ModelScope | Control de texto y layout JSON; sin benchmarks publicados |
+| MOSS-Image-Base | No disponible en la informacion | No disponible | Apache 2.0 | Hugging Face y ModelScope (OpenMOSS-Team) | Modelo base del que deriva; peor agrupación de texto según el autor |
+| FLUX.1 [dev] | 12.000 M (dato publico del autor) | No verificado en esta busqueda | Licencia no comercial | Pesos abiertos en Hugging Face | Alternativa de mayor tama\u00f1o; no comparable en licencia para uso comercial |
+| Stable Diffusion 3.5 Large | 8.000 M (dato publico del autor) | No verificado en esta busqueda | Stability Community License | Pesos abiertos en Hugging Face | Licencia con restricciones por volumen de ingresos |
 
 Los datos de los modelos alternativos proceden de sus fichas públicas y no han podido verificarse en la búsqueda web realizada; se incluyen solo como referencia de orden de magnitud. No se dispone de comparaciones cuantitativas de rendimiento entre MOSS-Image-SFT y estas alternativas.
 
@@ -93,12 +93,12 @@ Los datos de los modelos alternativos proceden de sus fichas públicas y no han 
 ## Enlaces
 
 - Repositorio de esta ficha: https://huggingface.co/sekkit/MOSS-Image-SFT
-- Modelo base en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
+- Modelo base en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Modelo SFT oficial: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - ModelScope (Base): https://modelscope.cn/models/openmoss/MOSS-Image-Base
 - ModelScope (SFT): https://modelscope.cn/models/openmoss/MOSS-Image-SFT
 - Repositorio de código: https://github.com/OpenMOSS/MOSS-Image
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Página del proyecto: https://openmoss.github.io/MOSS-Image/
 - Informe técnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - Guía de usuario: https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md

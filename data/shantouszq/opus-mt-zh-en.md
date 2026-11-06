@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shantouszq/opus-mt-zh-en` es una adaptacion publicada en HuggingFace de un modelo de traduccion automatica chino-ingles perteneciente a la familia OPUS-MT, desarrollada originalmente por el Language Technology Research Group de la Universidad de Helsinki. Se trata de un modelo seq2seq basado en la arquitectura Marian, disenado especificamente para la traduccion directa de texto chino a texto ingles. El repositorio ha sido subido por el usuario `shantouszq` y no registra descargas ni interacciones en el momento de la consulta.
+El modelo `shantouszq/opus-mt-zh-en` es una adaptacion publicada en Hugging Face de un modelo de traduccion automatica chino-ingles perteneciente a la familia OPUS-MT, desarrollada originalmente por el Language Technology Research Group de la Universidad de Helsinki. Se trata de un modelo seq2seq basado en la arquitectura Marian, disenado especificamente para la traduccion directa de texto chino a texto ingles. El repositorio ha sido subido por el usuario `shantouszq` y no registra descargas ni interacciones en el momento de la consulta.
 
 El modelo resuelve un problema acotado y bien definido: la traduccion unidireccional entre dos idiomas con una calidad razonable y un coste computacional bajo. Frente a los modelos generativos multilingues de gran tamano, esta propuesta ofrece una alternativa ligera y especializada, adecuada para pipelines de traduccion de alto volumen o para entornos con recursos limitados.
 
@@ -68,10 +68,10 @@ La model card reporta tambien un `brevity_penalty` de 0.948. No se han publicado
 
 | Modelo | Parametros | Contexto | BLEU (Tatoeba zh-en) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shantouszq/opus-mt-zh-en | no disponible | no disponible | 36.1 | CC-BY-4.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-zh-en | no disponible | no disponible | 36.1 | CC-BY-4.0 | HuggingFace |
-| Modelos NLLB (Meta) | no disponible en esta ficha | no disponible | no disponible | CC-BY-NC | HuggingFace |
-| Modelos M2M-100 (Meta) | no disponible en esta ficha | no disponible | no disponible | MIT | HuggingFace |
+| shantouszq/opus-mt-zh-en | no disponible | no disponible | 36.1 | CC-BY-4.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-zh-en | no disponible | no disponible | 36.1 | CC-BY-4.0 | Hugging Face |
+| Modelos NLLB (Meta) | no disponible en esta ficha | no disponible | no disponible | CC-BY-NC | Hugging Face |
+| Modelos M2M-100 (Meta) | no disponible en esta ficha | no disponible | no disponible | MIT | Hugging Face |
 
 La comparativa se limita a senalar alternativas de la misma categoria (traduccion zh-en); no se dispone de datos de rendimiento de los modelos NLLB o M2M-100 en la informacion proporcionada, por lo que no se incluyen cifras.
 
@@ -85,7 +85,7 @@ La comparativa se limita a senalar alternativas de la misma categoria (traduccio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shantouszq/opus-mt-zh-en
+- Hugging Face: https://huggingface.co/shantouszq/opus-mt-zh-en
 - Modelo original de referencia: https://huggingface.co/Helsinki-NLP/opus-mt-zh-en
 - Repositorio OPUS-MT-train: https://github.com/Helsinki-NLP/OPUS-MT-train
 - Repositorio Opus-MT: https://github.com/Helsinki-NLP/Opus-MT

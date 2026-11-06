@@ -38,7 +38,7 @@ La innovacion tecnica principal de esta publicacion no reside en la arquitectura
 - Respuesta a preguntas de opcion multiple de tematica sanitaria (el modelo se evalua con suites de benchmark cerradas de medicina).
 - Conversacion multi-turno (tag `conversational` en el repositorio).
 - Inferencia totalmente local y on-device mediante llama.cpp y el SDK QVAC.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite servirlo detras de una API compatible con el estandar de HuggingFace.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite servirlo detras de una API compatible con el estandar de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Vision, audio u otras modalidades: no disponible; el modelo es exclusivamente de texto.
@@ -51,7 +51,7 @@ La innovacion tecnica principal de esta publicacion no reside en la arquitectura
 - Procesamiento de documentacion clinica en local: al ejecutarse con llama.cpp sobre hardware propio, permite resumir y estructurar notas clinicas en entornos donde la normativa de proteccion de datos impide el envio de informacion a servicios de terceros.
 - Integracion en aplicaciones moviles de salud: el SDK QVAC y el formato GGUF permiten incrustar el modelo en apps nativas; la variante IQ3_M (2,13 GB) es la opcion compacta recomendada para presupuestos de memoria ajustados.
 - Despliegue en estaciones de trabajo sin GPU dedicada: la variante Q8_0 (4,69 GB) ofrece calidad estadisticamente indistinguible del BF16 con la mitad de tamano, adecuada para servidores de desarrollo o portatiles con CPU moderna y suficiente RAM.
-- Prototipado rapido de asistentes medicos: la compatibilidad con endpoints permite levantar un servicio compatible con la API de HuggingFace sobre llama.cpp, facilitando la integracion en pipelines existentes sin reescribir el codigo de cliente.
+- Prototipado rapido de asistentes medicos: la compatibilidad con endpoints permite levantar un servicio compatible con la API de Hugging Face sobre llama.cpp, facilitando la integracion en pipelines existentes sin reescribir el codigo de cliente.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ El autor desaconseja explicitamente IQ3_XXS por la degradacion significativa que
 - GPU recomendadas: no disponibles en la informacion proporcionada. El modelo esta disenado para inferencia en el borde, por lo que no se especifican GPU de centro de datos.
 - Cabe en GPU de consumo: si; con Q4_K_M (2,72 GB) o IQ3_M (2,13 GB) es viable en tarjetas con 4 GB o mas de VRAM, y con Q8_0 (4,69 GB) en tarjetas de 6-8 GB.
 - Cabe en dispositivos moviles de gama alta: si, segun el autor, con las variantes de 3 y 4 bits (IQ3_M de 2,13 GB es la opcion compacta recomendada).
-- Opciones de despliegue: llama.cpp (herramienta de referencia del repositorio), SDK QVAC (qvac.tether.io/dev/sdk) y servidores compatibles con endpoints de HuggingFace. vLLM, TGI y Ollama no se mencionan en la informacion proporcionada.
+- Opciones de despliegue: llama.cpp (herramienta de referencia del repositorio), SDK QVAC (qvac.tether.io/dev/sdk) y servidores compatibles con endpoints de Hugging Face. vLLM, TGI y Ollama no se mencionan en la informacion proporcionada.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Med
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qvac/MedPsy-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qvac/MedPsy-4B-GGUF
 - Modelo base: https://huggingface.co/qvac/MedPsy-4B
 - Variante 1.7B: https://huggingface.co/qvac/MedPsy-1.7B
 - Variante 1.7B GGUF: https://huggingface.co/qvac/MedPsy-1.7B-GGUF

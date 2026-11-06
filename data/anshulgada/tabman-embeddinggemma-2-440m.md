@@ -102,7 +102,7 @@ Frente al modelo base, Tabman anade el ajuste especifico en dominios web y un pi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anshulgada/tabman-embeddinggemma-2-440m
+- Modelo en Hugging Face: https://huggingface.co/Anshulgada/tabman-embeddinggemma-2-440m
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Checkpoint intermedio del autor: https://huggingface.co/Anshulgada/embeddinggemma-2-440m
 - Proyecto Tabman (Brave Tab Manager): https://github.com/Anshulgada/brave-tab-manager

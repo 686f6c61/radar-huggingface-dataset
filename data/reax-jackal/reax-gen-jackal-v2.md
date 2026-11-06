@@ -2,7 +2,7 @@
 
 ## Resumen
 
-reax-gen-jackal-v2 es un modelo de lenguaje publicado en HuggingFace por el usuario reax-jackal bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26 mil millones), lo que lo sitúa en la categoría de modelos de gran tamano, por encima de la mayoria de alternativas abiertas de uso comun en GPU de consumo. La etiqueta `qwen3_5` sugiere que el modelo deriva de la familia Qwen 3.5, aunque no se dispone de confirmacion oficial en la informacion proporcionada.
+reax-gen-jackal-v2 es un modelo de lenguaje publicado en Hugging Face por el usuario reax-jackal bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26 mil millones), lo que lo sitúa en la categoría de modelos de gran tamano, por encima de la mayoria de alternativas abiertas de uso comun en GPU de consumo. La etiqueta `qwen3_5` sugiere que el modelo deriva de la familia Qwen 3.5, aunque no se dispone de confirmacion oficial en la informacion proporcionada.
 
 La model card publicada es practicamente vacia: unicamente declara la licencia Apache 2.0, sin descripcion, sin especificaciones de contexto, sin datos de entrenamiento ni resultados de evaluacion. Se trata, por tanto, de un checkpoint con muy poca documentacion asociada y un historial de uso minimo (14 descargas y 0 likes en el momento de la consulta), lo que limita seriamente cualquier evaluacion rigurosa de su calidad o idoneidad para produccion.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| reax-jackal/reax-gen-jackal-v2 | ~26,1 B | no disponible | Apache 2.0 | HuggingFace, 14 descargas | Model card vacia, sin benchmarks |
+| reax-jackal/reax-gen-jackal-v2 | ~26,1 B | no disponible | Apache 2.0 | Hugging Face, 14 descargas | Model card vacia, sin benchmarks |
 | Qwen2.5-32B | 32,5 B | 32.768 tokens (128K con RoPE scaling) | Apache 2.0 (variante base) | Amplia, con cuantizaciones | Documentacion completa y benchmarks publicados |
 | Gemma 2 27B | 27 B | 8.192 tokens | Gemma license (uso comercial con restricciones) | Amplia, con cuantizaciones | Buen rendimiento en benchmarks abiertos |
 | Mistral Small 24B (2501) | 23,6 B | 32.768 tokens | Apache 2.0 | Amplia | Enfocado a instrucciones y tool calling |
@@ -86,6 +86,6 @@ La comparacion es orientativa: para reax-gen-jackal-v2 no hay datos de contexto,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reax-jackal/reax-gen-jackal-v2
+- Modelo en Hugging Face: https://huggingface.co/reax-jackal/reax-gen-jackal-v2
 - Repositorio de la familia Qwen (referencia por la etiqueta `qwen3_5`): https://huggingface.co/Qwen
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la informacion disponible.

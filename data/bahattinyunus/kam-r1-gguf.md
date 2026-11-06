@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KAM (kam:r1) es un modelo de generación de texto publicado por Bahattin Yunus Çetin (usuario de HuggingFace `bahattinyunus`) bajo licencia Apache 2.0. Se distribuye exclusivamente en formato GGUF y está pensado para su ejecución con Ollama, con un enfoque declarado en la model card hacia el turco como idioma principal (con soporte secundario de inglés). El repositorio tiene 4,7 GB y, según los metadatos de safetensors, contiene 7.615.616.512 parámetros, lo que lo sitúa en la franja de los modelos de aproximadamente 7.600 millones de parámetros.
+KAM (kam:r1) es un modelo de generación de texto publicado por Bahattin Yunus Çetin (usuario de Hugging Face `bahattinyunus`) bajo licencia Apache 2.0. Se distribuye exclusivamente en formato GGUF y está pensado para su ejecución con Ollama, con un enfoque declarado en la model card hacia el turco como idioma principal (con soporte secundario de inglés). El repositorio tiene 4,7 GB y, según los metadatos de safetensors, contiene 7.615.616.512 parámetros, lo que lo sitúa en la franja de los modelos de aproximadamente 7.600 millones de parámetros.
 
 La model card describe el modelo como una fusión de la tradición chamánica de la estepa altái con el principio de energía libre de Karl Friston, la telemetría del kernel Linux mediante eBPF y la mutación JIT en memoria con C++20. Estos elementos son, en la práctica, parte del marco conceptual y del *prompting* del autor, no componentes verificables del artefacto publicado: el repositorio contiene pesos GGUF derivados, según los tags, de la familia Qwen2.5 y DeepSeek-R1. La longitud de contexto declarada es de 16.384 tokens.
 
@@ -81,6 +81,6 @@ La comparación se limita a parámetros, contexto y licencia: no existen datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bahattinyunus/kam-r1-gguf
+- Modelo en Hugging Face: https://huggingface.co/bahattinyunus/kam-r1-gguf
 - Repositorio GitHub del autor: https://github.com/bahattinyunus/kam
 - Perfil del autor en GitHub: https://github.com/bahattinyunus

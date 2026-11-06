@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/zho_hans_10mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 39.087.104 parametros totales (aproximadamente 39 millones), entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace. El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors.
+El modelo `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/zho_hans_10mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 39.087.104 parametros totales (aproximadamente 39 millones), entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face. El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors.
 
 El modelo base pertenece a la familia Goldfish, una coleccion de modelos pequenos entrenados sobre corpus de 10 MB por idioma; en este caso la nomenclatura `zho_hans` indica chino simplificado (zho, escritura Han simplificada). El identificador del modelo sugiere un entrenamiento sobre un dataset empaquetado ("packed") de 100 MB, aunque la model card no documenta la composicion exacta del corpus ni el numero de tokens de entrenamiento.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, sobre Transformers 4.56
 - Generacion de texto autoregresiva en el estilo de GPT-2, mediante la pipeline `text-generation` de Transformers.
 - Formateo conversacional basico: la model card muestra un ejemplo en el que se pasa una lista de mensajes con el rol `user`, lo que indica que el ajuste SFT introdujo algun formato de dialogo, aunque no se documenta la plantilla exacta.
 - Generacion condicionada por prompt con control de `max_new_tokens` y `return_full_text`.
-- Compatibilidad con Text Generation Inference (TGI) y con endpoints de HuggingFace, segun los tags del repositorio.
+- Compatibilidad con Text Generation Inference (TGI) y con endpoints de Hugging Face, segun los tags del repositorio.
 - Capacidad multilingue: no documentada. El modelo base esta orientado al chino simplificado, pero no se confirma que el ajuste fino conserve o amplie esa cobertura.
 - Tool calling / function calling: no disponible, no documentado.
 - Capacidades de agente o razonamiento multi-paso: no disponibles, no documentadas.
@@ -45,7 +45,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, sobre Transformers 4.56
 - Estudio de tokenizadores en regimen de bajos recursos: dado el contexto del proyecto de Weights & Biases (`new-tokenizers`), es util para medir como afecta la tokenizacion al rendimiento de un modelo de 39 M parametros entrenado con datos limitados.
 - Pruebas de pipeline de datos "packed": permite validar tecnicas de empaquetado de secuencias y su efecto en la convergencia, sin el coste computacional de modelos grandes.
 - Prototipado rapido en entornos sin GPU: con ~39 M parametros, el modelo se ejecuta en CPU o en GPU integrada, lo que facilita demos locales de generacion de texto en chino simplificado con fines ilustrativos.
-- Educacion y docencia: sirve para explicar de forma tangible como funciona un transformer decoder-only, el ciclo de entrenamiento con TRL y la publicacion de artefactos en HuggingFace, sin requerir infraestructura especializada.
+- Educacion y docencia: sirve para explicar de forma tangible como funciona un transformer decoder-only, el ciclo de entrenamiento con TRL y la publicacion de artefactos en Hugging Face, sin requerir infraestructura especializada.
 - Pruebas de integracion con TGI: al estar etiquetado como compatible con Text Generation Inference y endpoints, puede emplearse para validar despliegues ligeros y medir sobrecarga de servidor.
 - Generacion de datos sinteticos a pequena escala: util como generador auxiliar en experimentos controlados, siempre que se audite la calidad y coherencia de las salidas.
 - Experimentos de destilacion o comparacion de modelos diminutos: sirve como referencia de baja capacidad frente a modelos como GPT-2 small en estudios academicos sobre escalado.
@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento comparables entre estas opciones. La compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/qben01ms
-- Organizacion Goldfish Models en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish Models en Hugging Face: https://huggingface.co/goldfish-models
 - No se han encontrado papers, blogs ni demos adicionales en los resultados de la busqueda web.

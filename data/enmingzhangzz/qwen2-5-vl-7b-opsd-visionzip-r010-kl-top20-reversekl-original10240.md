@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (OPSD / VisionZip r010) | Adaptador LoRA de investigación | 40,37 M entrenables sobre base de ~7B | No disponible | No disponible | HuggingFace, 0 descargas y 0 likes en el momento del análisis |
-| Qwen2.5-VL-7B-Instruct | Modelo base multimodal completo | ~7B | No disponible en la información proporcionada | No disponible en la información proporcionada (consultar la model card del base) | HuggingFace, modelo público de referencia |
+| Este adaptador (OPSD / VisionZip r010) | Adaptador LoRA de investigación | 40,37 M entrenables sobre base de ~7B | No disponible | No disponible | Hugging Face, 0 descargas y 0 likes en el momento del análisis |
+| Qwen2.5-VL-7B-Instruct | Modelo base multimodal completo | ~7B | No disponible en la información proporcionada | No disponible en la información proporcionada (consultar la model card del base) | Hugging Face, modelo público de referencia |
 | Otros adaptadores LoRA de destilación sobre Qwen2.5-VL | Adaptadores PEFT | Variable | No disponible | No disponible | No se dispone de comparativas en la información proporcionada |
 
 No se dispone de datos de rendimiento comparado entre estas opciones, porque el autor no publica benchmarks y la búsqueda web realizada no devolvió información relevante sobre el modelo ni sobre alternativas equivalentes.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones, porque el 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-KL-Top20-ReverseKL-original10240
+- Adaptador en Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-KL-Top20-ReverseKL-original10240
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Dataset de entrenamiento (referenciado en las etiquetas y en la model card): https://huggingface.co/datasets/OpenMMReasoner/OpenMMReasoner-SFT-874K
 - Resultados de la búsqueda web: no contienen información relevante sobre este modelo; las entradas devueltas corresponden a una herramienta de desinstalación de software ajena al proyecto. No se han localizado papers, blogs, repositorios ni demos asociados al adaptador en la información disponible.

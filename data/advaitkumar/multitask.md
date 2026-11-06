@@ -70,5 +70,5 @@ No se dispone de modelos comparables en la misma categoría, ya que se trata de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/advaitkumar/multitask
+- Repositorio en Hugging Face: https://huggingface.co/advaitkumar/multitask
 - Página personal del autor: https://advaitkumar3107.github.io/

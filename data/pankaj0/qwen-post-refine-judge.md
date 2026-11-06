@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`pankaj0/qwen-post-refine-judge` es un adaptador LoRA publicado en HuggingFace por el usuario `pankaj0`. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth para entrenamiento con bajo consumo de memoria. El repositorio contiene únicamente los pesos del adaptador (aproximadamente 0,1 GB), no un modelo completo, por lo que su uso requiere cargar el modelo base y aplicar el adaptador con PEFT.
+`pankaj0/qwen-post-refine-judge` es un adaptador LoRA publicado en Hugging Face por el usuario `pankaj0`. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth para entrenamiento con bajo consumo de memoria. El repositorio contiene únicamente los pesos del adaptador (aproximadamente 0,1 GB), no un modelo completo, por lo que su uso requiere cargar el modelo base y aplicar el adaptador con PEFT.
 
-El nombre del modelo, "post-refine-judge", sugiere que el ajuste se ha orientado a tareas de evaluación o juicio sobre texto post-refinado, es decir, un posible uso como evaluador ligero dentro de pipelines de generación (por ejemplo, puntuar o seleccionar respuestas candidatas). Sin embargo, la model card publicada por el autor es la plantilla por defecto de HuggingFace y no contiene ninguna descripción del propósito, los datos de entrenamiento ni la evaluación, por lo que esa finalidad no puede confirmarse con la información disponible.
+El nombre del modelo, "post-refine-judge", sugiere que el ajuste se ha orientado a tareas de evaluación o juicio sobre texto post-refinado, es decir, un posible uso como evaluador ligero dentro de pipelines de generación (por ejemplo, puntuar o seleccionar respuestas candidatas). Sin embargo, la model card publicada por el autor es la plantilla por defecto de Hugging Face y no contiene ninguna descripción del propósito, los datos de entrenamiento ni la evaluación, por lo que esa finalidad no puede confirmarse con la información disponible.
 
 Su relevancia práctica radica en su tamano reducido: al apoyarse en un modelo de 1,5B parámetros, puede ejecutarse en hardware de consumo e incluso en CPU, lo que lo hace util para prototipado rapido de jueces automatizados o para tareas de filtrado a gran escala donde el coste por inferencia es un factor crítico. No obstante, con cero descargas y cero likes en el momento de redactar esta ficha, se trata de un artefacto sin validacion externa ni adopción conocida, lo que exige cautela antes de usarlo en producción.
 
@@ -71,16 +71,16 @@ La comparación se establece con modelos del mismo rango de tamano, dado que no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| pankaj0/qwen-post-refine-judge (adaptador LoRA) | No disponible (base 1,54B) | No disponible (base 32.768 tokens) | No disponible | HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente utilizado | Benchmarks públicos en la model card de Qwen |
-| Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache-2.0 | HuggingFace | Inferior en razonamiento; mayor velocidad |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Benchmarks públicos en la model card de Meta |
+| pankaj0/qwen-post-refine-judge (adaptador LoRA) | No disponible (base 1,54B) | No disponible (base 32.768 tokens) | No disponible | Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente utilizado | Benchmarks públicos en la model card de Qwen |
+| Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache-2.0 | Hugging Face | Inferior en razonamiento; mayor velocidad |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Benchmarks públicos en la model card de Meta |
 
 Los datos de los modelos comparativos proceden de su documentación pública y no de la información proporcionada para este modelo. No hay evidencia de que el adaptador supere o empeore el rendimiento de su base, ya que no se ha publicado ninguna evaluación comparativa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla vacía de HuggingFace. No se especifican propósito, datos, hiperparámetros ni evaluación, lo que impide auditar el ajuste.
+- Ausencia total de documentación: la model card es la plantilla vacía de Hugging Face. No se especifican propósito, datos, hiperparámetros ni evaluación, lo que impide auditar el ajuste.
 - Licencia no declarada: al no figurar licencia en el repositorio, el uso comercial del adaptador queda en un limbo legal. Aunque el modelo base Qwen2.5-1.5B-Instruct se distribuye bajo Apache-2.0, la licencia del trabajo derivado no está definida por el autor.
 - Riesgo de alucinación: un modelo de 1,5B parámetros tiene una tasa de alucinación notablemente superior a la de modelos de mayor tamano, especialmente en tareas de razonamiento o conocimiento factual.
 - Capacidad de juicio limitada por el tamano: si el modelo se ha ajustado como juez, su capacidad de evaluar matices, razonamientos largos o criterios complejos será sustancialmente inferior a la de jueces de 7B o superiores.

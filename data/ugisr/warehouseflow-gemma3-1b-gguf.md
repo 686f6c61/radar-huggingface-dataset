@@ -16,7 +16,7 @@ La relevancia de este modelo radica en su capacidad para ejecutar tareas de gest
 | Longitud de contexto | No disponible (el Modelfile de Ollama usa num_ctx 4096) |
 | Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q8_0 |
 | Idiomas soportados | No disponibles (la model card está en indonesio, pero no se indica el soporte lingüístico del modelo) |
-| Licencia | Gemma 3 license agreement (según la model card); en HuggingFace figura como "no disponible" |
+| Licencia | Gemma 3 license agreement (según la model card); en Hugging Face figura como "no disponible" |
 | Formato de pesos | GGUF (safetensors originales no incluidos en el repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -76,11 +76,11 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 - No se especifican sesgos conocidos, pero al ser un modelo pequeño (1B) puede presentar alucinaciones en tareas complejas o fuera del dominio logístico.
 - El modelo está diseñado exclusivamente para tool calling en almacenes; su uso para otros fines puede producir respuestas incorrectas o rechazos (OOD Refusal al 95%).
 - La longitud de contexto no está documentada; el Modelfile de Ollama utiliza `num_ctx 4096`, lo que limita conversaciones multi-turno con historial largo.
-- La licencia se indica como "Gemma 3 license agreement" en la model card, pero en HuggingFace figura como "no disponible". Es necesario verificar los términos de la licencia de Gemma 3 para uso comercial antes de desplegarlo en producción.
+- La licencia se indica como "Gemma 3 license agreement" en la model card, pero en Hugging Face figura como "no disponible". Es necesario verificar los términos de la licencia de Gemma 3 para uso comercial antes de desplegarlo en producción.
 - La model card está escrita en indonesio, lo que sugiere que el autor puede haber entrenado o evaluado el modelo con datos en ese idioma, aunque no se confirma el soporte multilingüe.
 - No se proporcionan detalles sobre el proceso de fine-tuning, el dataset utilizado ni las métricas de calidad general (MMLU, HumanEval, etc.), lo que dificulta evaluar su robustez fuera del ámbito logístico.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ugisr/warehouseflow-gemma3-1b-gguf
+- Repositorio Hugging Face: https://huggingface.co/Ugisr/warehouseflow-gemma3-1b-gguf
 - No se han encontrado otros enlaces (papers, blogs o demos) en la información proporcionada.

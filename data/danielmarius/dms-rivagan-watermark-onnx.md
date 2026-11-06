@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Marca de agua | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RivaGAN Watermark ONNX Pair (este repo) | Encoder/decoder RivaGAN | 32 bits | ONNX | other / desconocida | HuggingFace (respaldo) |
+| RivaGAN Watermark ONNX Pair (este repo) | Encoder/decoder RivaGAN | 32 bits | ONNX | other / desconocida | Hugging Face (respaldo) |
 | invisible-watermark (paquete upstream) | Paquete con backend RivaGAN | 32 bits | Python + ONNX | MIT (software) | GitHub / PyPI |
 | RivaGAN original (DAI-Lab) | Investigacion | 32 bits | TensorFlow | no disponible | GitHub |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DanielMarius/dms-rivagan-watermark-onnx
+- Repositorio en Hugging Face: https://huggingface.co/DanielMarius/dms-rivagan-watermark-onnx
 - Licencia del repositorio: https://huggingface.co/DanielMarius/dms-rivagan-watermark-onnx/blob/main/LICENSE.txt
 - Paquete y exportaciones ONNX (ShieldMnt/invisible-watermark): https://github.com/ShieldMnt/invisible-watermark
 - Investigacion original (DAI-Lab/RivaGAN): https://github.com/DAI-Lab/RivaGAN

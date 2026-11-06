@@ -2,11 +2,11 @@
 
 ## Resumen
 
-STL-FullFT-mt5-base-stance es un ajuste fino completo (full fine-tuning) del modelo google/mt5-base, publicado por el usuario tadiecool29 en HuggingFace. El modelo está especializado en una única tarea (single-task, de ahí las siglas STL) de clasificación de postura (stance classification) sobre textos en amharico, y se presenta como un modelo de tipo text2text-generation: recibe un texto y genera una etiqueta de postura como salida.
+STL-FullFT-mt5-base-stance es un ajuste fino completo (full fine-tuning) del modelo google/mt5-base, publicado por el usuario tadiecool29 en Hugging Face. El modelo está especializado en una única tarea (single-task, de ahí las siglas STL) de clasificación de postura (stance classification) sobre textos en amharico, y se presenta como un modelo de tipo text2text-generation: recibe un texto y genera una etiqueta de postura como salida.
 
 Se trata de un modelo pequeño-mediano (966.573.312 parámetros según los pesos en safetensors, repositorio de 3,2 GB) derivado de la arquitectura encoder-decoder de mT5, con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Su relevancia práctica es limitada pero concreta: cubre un nicho poco atendido, el procesamiento de lenguaje natural en amharico (lengua etíope de bajos recursos), para detección de posturas en textos, una tarea habitual en análisis de redes sociales y monitorización de discurso.
 
-La model card es automática (generada por el Trainer de HuggingFace) y apenas documenta el conjunto de datos de entrenamiento, los usos previstos o las limitaciones. Los únicos datos de rendimiento disponibles son los declarados por el autor: accuracy 0,6995, macro F1 0,7032, precision 0,7004 y recall 0,7184, con una pérdida de evaluación de 1,9222. El modelo tiene un uso muy bajo (9 descargas, 0 likes en el momento de la consulta), por lo que debe considerarse un artefacto experimental más que un sistema listo para producción sin validación propia.
+La model card es automática (generada por el Trainer de Hugging Face) y apenas documenta el conjunto de datos de entrenamiento, los usos previstos o las limitaciones. Los únicos datos de rendimiento disponibles son los declarados por el autor: accuracy 0,6995, macro F1 0,7032, precision 0,7004 y recall 0,7184, con una pérdida de evaluación de 1,9222. El modelo tiene un uso muy bajo (9 descargas, 0 likes en el momento de la consulta), por lo que debe considerarse un artefacto experimental más que un sistema listo para producción sin validación propia.
 
 ## Especificaciones tecnicas
 
@@ -95,10 +95,10 @@ No hay comparaciones con otros modelos en la información proporcionada, ni resu
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STL-FullFT-mt5-base-stance | 966.573.312 | Hasta 512 tokens (arquitectura mT5-base) | Clasificacion de postura en amharico (mono-tarea) | Apache 2.0 | HuggingFace, 9 descargas |
-| google/mt5-base | Segun la documentacion publica de Google, en torno a 580 M (no coincide con el recuento de safetensors de este repo) | 512 tokens | Preentrenamiento multilingue text-to-text (101 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
-| XLM-RoBERTa-base | En torno a 278 M | 512 tokens | Clasificacion y NLP multilingue (encoder) | MIT | HuggingFace |
-| AfroXLMR-base | En torno a 278 M | 512 tokens | NLP para lenguas africanas, incluido amharico | A confirmar en su repositorio | HuggingFace |
+| STL-FullFT-mt5-base-stance | 966.573.312 | Hasta 512 tokens (arquitectura mT5-base) | Clasificacion de postura en amharico (mono-tarea) | Apache 2.0 | Hugging Face, 9 descargas |
+| google/mt5-base | Segun la documentacion publica de Google, en torno a 580 M (no coincide con el recuento de safetensors de este repo) | 512 tokens | Preentrenamiento multilingue text-to-text (101 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
+| XLM-RoBERTa-base | En torno a 278 M | 512 tokens | Clasificacion y NLP multilingue (encoder) | MIT | Hugging Face |
+| AfroXLMR-base | En torno a 278 M | 512 tokens | NLP para lenguas africanas, incluido amharico | A confirmar en su repositorio | Hugging Face |
 
 No se dispone de resultados comparativos de rendimiento entre estos modelos en la información proporcionada. La comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -117,7 +117,7 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/STL-FullFT-mt5-base-stance
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/STL-FullFT-mt5-base-stance
 - Modelo base google/mt5-base: https://huggingface.co/google/mt5-base
 - Paper de mT5 (Xue et al., 2020): https://arxiv.org/abs/2010.11934
 - Paper de T5 (Raffel et al., 2019): https://arxiv.org/abs/1910.10683

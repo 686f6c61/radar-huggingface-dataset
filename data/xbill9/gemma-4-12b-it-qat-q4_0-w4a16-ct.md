@@ -4,7 +4,7 @@
 
 `xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct` es un reempaquetado no oficial de los pesos con entrenamiento consciente de cuantizacion (QAT) de Gemma 4 12B-it de Google DeepMind, convertidos al formato `compressed-tensors` W4A16 que carga vLLM. El autor, `xbill9`, parte de `google/gemma-4-12B-it-qat-q4_0-unquantized` y recupera, grupo a grupo, los valores de la rejilla de 4 bits ya presentes en ese export, escribiendolos como int4 empaquetado sin realizar una cuantizacion nueva.
 
-El modelo tiene 11.959.730.224 parametros totales y ocupa 7,68 GiB en disco, frente a los 22,28 GiB del checkpoint bf16 de origen. Se cuantizan las capas lineales de atencion y MLP del modelo de lenguaje (48 capas), mientras que embeddings, normalizaciones y la torre de vision se mantienen en bf16 copiados byte a byte. La tarea declarada en HuggingFace es image-text-to-text, aunque el autor indica que la ruta prevista en TPU es solo texto.
+El modelo tiene 11.959.730.224 parametros totales y ocupa 7,68 GiB en disco, frente a los 22,28 GiB del checkpoint bf16 de origen. Se cuantizan las capas lineales de atencion y MLP del modelo de lenguaje (48 capas), mientras que embeddings, normalizaciones y la torre de vision se mantienen en bf16 copiados byte a byte. La tarea declarada en Hugging Face es image-text-to-text, aunque el autor indica que la ruta prevista en TPU es solo texto.
 
 Su relevancia es practica: ofrece una via para servir Gemma 4 12B-it en vLLM con kernels int4 sobre TPU (mediante `tpu-inference`) y, previsiblemente, sobre GPU NVIDIA con kernels Marlin, manteniendo los valores de la rejilla Q4_0 original en lugar de la rejilla propia del checkpoint W4A16 oficial de Google. Es un repositorio sin descargas ni likes en el momento de la consulta y con verificacion de repack documentada, pero sin evaluacion propia publicada.
 
@@ -98,7 +98,7 @@ En la suite de 3.880 registros del autor, la build bf16 obtiene 76,0%, el export
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct
 - Modelo base (Google): https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Checkpoint W4A16 oficial de Google: https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct
 - Export GGUF de Google: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf

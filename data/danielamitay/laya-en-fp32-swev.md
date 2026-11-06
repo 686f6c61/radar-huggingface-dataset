@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - No cabe plantear despliegue en GPU NVIDIA: al ser un paquete Core ML, no aplican vLLM, TGI, llama.cpp ni Ollama. La vía de integración es el paquete Swift Swev.
 - Al ser FP32, el modelo es más pesado que una hipotética variante cuantizada a int8 o int4; no se ofrece en la información disponible ninguna versión cuantizada de esta exportación.
 - Latencia y throughput: no disponibles. La model card recomienda mantener el modelo residente en memoria para evitar recompilación e inicialización en cada petición, lo que sugiere que la carga inicial tiene un coste apreciable.
-- La primera llamada descarga el paquete desde HuggingFace; las posteriores reutilizan la caché local de Swev.
+- La primera llamada descarga el paquete desde Hugging Face; las posteriores reutilizan la caché local de Swev.
 
 ## Comparativa con modelos similares
 
@@ -101,13 +101,13 @@ La comparación directa con alternativas de la misma categoría (clasificadores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielamitay/laya-en-fp32-swev
+- Modelo en Hugging Face: https://huggingface.co/danielamitay/laya-en-fp32-swev
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Revision fijada del checkpoint origen: https://huggingface.co/convaiinnovations/laya/tree/1c5edc17a7acd8701df6fc341c0d179f1c62c982
 - Paquete Swift Swev: https://github.com/danielamitay/swev
 - Guia de conversion de Swev: https://github.com/danielamitay/swev/blob/main/docs/conversion.md
 - Referencia del esquema Swev: https://github.com/danielamitay/swev/blob/main/docs/schema.md
-- Carga y cache desde HuggingFace: https://github.com/danielamitay/swev/blob/main/docs/huggingface.md
+- Carga y cache desde Hugging Face: https://github.com/danielamitay/swev/blob/main/docs/huggingface.md
 - Soporte de modelos en Swev: https://github.com/danielamitay/swev/blob/main/docs/models.md
 - Implementacion de referencia de Laya: https://github.com/NandhaKishorM/laya
 - Arquitectura base ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large

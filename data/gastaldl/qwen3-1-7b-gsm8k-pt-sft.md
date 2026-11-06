@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Gastaldl/qwen3-1.7b-gsm8k-pt-sft` es un adaptador LoRA publicado en HuggingFace por el usuario Gastaldl, construido sobre el modelo base `unsloth/Qwen3-1.7B`. Se distribuye como un repositorio de pesos PEFT en formato safetensors, no como un modelo completo, por lo que para utilizarlo es necesario cargar primero el modelo base y aplicar despues el adaptador (o fusionar ambos y exportar el resultado). El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y su tamano declarado es de 0,0 GB, coherente con un adaptador de bajo rango y no con un checkpoint completo.
+`Gastaldl/qwen3-1.7b-gsm8k-pt-sft` es un adaptador LoRA publicado en Hugging Face por el usuario Gastaldl, construido sobre el modelo base `unsloth/Qwen3-1.7B`. Se distribuye como un repositorio de pesos PEFT en formato safetensors, no como un modelo completo, por lo que para utilizarlo es necesario cargar primero el modelo base y aplicar despues el adaptador (o fusionar ambos y exportar el resultado). El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y su tamano declarado es de 0,0 GB, coherente con un adaptador de bajo rango y no con un checkpoint completo.
 
-El nombre del repositorio sugiere un proceso de ajuste en dos etapas (preentrenamiento o "pt" y ajuste supervisado o "sft") orientado al conjunto de datos GSM8K, un benchmark de problemas matematicos de nivel escolar. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace y no documenta ningun detalle del entrenamiento, los hiperparametros, los datos utilizados ni los resultados obtenidos, por lo que esa orientacion no puede confirmarse con la informacion disponible.
+El nombre del repositorio sugiere un proceso de ajuste en dos etapas (preentrenamiento o "pt" y ajuste supervisado o "sft") orientado al conjunto de datos GSM8K, un benchmark de problemas matematicos de nivel escolar. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face y no documenta ningun detalle del entrenamiento, los hiperparametros, los datos utilizados ni los resultados obtenidos, por lo que esa orientacion no puede confirmarse con la informacion disponible.
 
 La relevancia de esta ficha es limitada y fundamentalmente practica: se trata de un experimento de ajuste fino reproducible con Unsloth, TRL y PEFT sobre un modelo denso de 1,7 mil millones de parametros, un rango de tamano que cabe comodamente en GPUs de consumo y que se usa habitualmente para iterar rapido en tecnicas de SFT. Cualquier evaluacion seria del adaptador requiere reproducir el entrenamiento o ejecutar benchmarks propios, ya que el autor no ha publicado ninguno.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada y fundamentalmente practica: se trata de
 | Licencia | No disponible (la tarjeta no la declara; el modelo base Qwen3-1.7B se distribuye bajo Apache 2.0) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
-Nota: los datos marcados como del "modelo base" proceden de la documentacion publica de Qwen3-1.7B y de su repositorio en HuggingFace. La model card de este adaptador no los confirma ni los contradice.
+Nota: los datos marcados como del "modelo base" proceden de la documentacion publica de Qwen3-1.7B y de su repositorio en Hugging Face. La model card de este adaptador no los confirma ni los contradice.
 
 ## Arquitectura y entrenamiento
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Gastaldl/qwen3-1.7b-gsm8k-pt-sft | 1,7B (base) + LoRA | No disponible (base: 32.768, extensible a 131.072 con YaRN) | No disponible | HuggingFace, 0 descargas | Adaptador PEFT; sin benchmarks publicados |
-| Qwen/Qwen3-1.7B | 1,7B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace y ModelScope | Modelo base denso con modos thinking y non-thinking |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace y ModelScope | Generacion anterior, sin modo thinking |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace (acceso con aceptacion de terminos) | Contexto mayor, licencia no completamente abierta |
-| google/gemma-3-1b-it | 1B | 32.000 tokens | Gemma Terms of Use | HuggingFace (acceso con aceptacion de terminos) | Requiere aceptar terminos; multimodal en la variante 4B, no en la de 1B |
+| Gastaldl/qwen3-1.7b-gsm8k-pt-sft | 1,7B (base) + LoRA | No disponible (base: 32.768, extensible a 131.072 con YaRN) | No disponible | Hugging Face, 0 descargas | Adaptador PEFT; sin benchmarks publicados |
+| Qwen/Qwen3-1.7B | 1,7B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face y ModelScope | Modelo base denso con modos thinking y non-thinking |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face y ModelScope | Generacion anterior, sin modo thinking |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face (acceso con aceptacion de terminos) | Contexto mayor, licencia no completamente abierta |
+| google/gemma-3-1b-it | 1B | 32.000 tokens | Gemma Terms of Use | Hugging Face (acceso con aceptacion de terminos) | Requiere aceptar terminos; multimodal en la variante 4B, no en la de 1B |
 
 Los datos de contexto y licencia de los modelos comparados proceden de su documentacion publica y deben verificarse antes de un uso en produccion. No hay datos de rendimiento que permitan comparar la calidad de este adaptador frente a esas alternativas.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla generica de HuggingFace sin rellenar: no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas ni uso previsto. Esto imposibilita cualquier evaluacion de riesgos basada en documentacion.
+- La model card es la plantilla generica de Hugging Face sin rellenar: no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas ni uso previsto. Esto imposibilita cualquier evaluacion de riesgos basada en documentacion.
 - Riesgo elevado de sobreajuste al dominio matematico si el ajuste se realizo exclusivamente sobre GSM8K, con la consiguiente degradacion de capacidades generales de conversacion, codigo o conocimiento factual. No hay datos que permitan cuantificar ese olvido catastrofico.
 - Riesgo de alucinacion en la generacion de pasos intermedios: los modelos pequenos ajustados en matematicas tienden a producir cadenas de razonamiento plausibles con errores aritmeticos o saltos logicos, especialmente fuera de la distribucion del dataset de entrenamiento.
 - No se declara licencia. Aunque el modelo base Qwen3-1.7B es Apache 2.0, la ausencia de licencia explicita en el repositorio del adaptador crea incertidumbre juridica para uso comercial. Conviene contactar con el autor antes de integrarlo en un producto.
@@ -89,7 +89,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de su docume
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/Gastaldl/qwen3-1.7b-gsm8k-pt-sft
-- Modelo base en HuggingFace (Unsloth): https://huggingface.co/unsloth/Qwen3-1.7B
+- Modelo base en Hugging Face (Unsloth): https://huggingface.co/unsloth/Qwen3-1.7B
 - Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de codigo de Qwen3: https://github.com/QwenLM/Qwen3
 - Blog de presentacion de Qwen3: https://qwenlm.github.io/blog/qwen3/

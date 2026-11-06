@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables de looped-qwen-v1-checkpoints,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fazmain/looped-qwen-v1-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/fazmain/looped-qwen-v1-checkpoints
 - Repositorio complementario citado en la model card: https://huggingface.co/fazmain/looped-qwen-ao
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de codigo fuente del estudio: no disponible

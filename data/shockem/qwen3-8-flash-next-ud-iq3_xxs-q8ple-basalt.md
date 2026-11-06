@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shockem/Qwen3.8-Flash-Next-UD-IQ3_XXS-Q8PLE-Basalt
+- Hugging Face: https://huggingface.co/Shockem/Qwen3.8-Flash-Next-UD-IQ3_XXS-Q8PLE-Basalt
 - Modelo base GGUF (Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Linea oficial Basalt: https://huggingface.co/jesdga/Qwen3.8-Flash-Next-Basalt
 - Formato Basalt: https://huggingface.co/jesdga/Qwen3.8-Flash-Next-Basalt (referencia de formato version 2)

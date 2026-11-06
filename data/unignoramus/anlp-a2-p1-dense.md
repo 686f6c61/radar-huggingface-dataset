@@ -97,11 +97,11 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 - Seguridad del formato de pesos: al ser un pickle, la carga requiere `weights_only=False`, lo que implica ejecucion de codigo arbitrario si el fichero se manipula. No hay version en safetensors.
 - Licencia MIT: permite uso comercial y modificacion, pero se ofrece sin garantias y sin clausulas de uso responsable; el usuario asume la responsabilidad del cumplimiento normativo en su jurisdiccion.
 - Ausencia de validacion externa: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusiones publicas que respalden el comportamiento del modelo.
-- No hay informacion sobre el pipeline declarado en HuggingFace, ni sobre integracion con `transformers`, lo que complica su uso inmediato sin escribir codigo de carga propio.
+- No hay informacion sobre el pipeline declarado en Hugging Face, ni sobre integracion con `transformers`, lo que complica su uso inmediato sin escribir codigo de carga propio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unignoramus/anlp-a2-p1-dense
+- Modelo en Hugging Face: https://huggingface.co/unignoramus/anlp-a2-p1-dense
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Codigo del transformer que acompana al checkpoint: no disponible (la model card lo menciona pero no incluye enlace)
 - Paper o informe tecnico: no disponible

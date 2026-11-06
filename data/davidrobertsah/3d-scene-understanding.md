@@ -70,7 +70,7 @@ No es posible comparar directamente porque no es un modelo. Sin embargo, en el c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DavidRobertsah/3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/DavidRobertsah/3d-scene-understanding
 - GPT4Scene (proyecto relacionado): https://gpt4scene.github.io/
 - Paper de GPT4Scene: https://arxiv.org/abs/2501.01428
 - 3DGraphLLM (GitHub): https://github.com/CognitiveAISystems/3DGraphLLM

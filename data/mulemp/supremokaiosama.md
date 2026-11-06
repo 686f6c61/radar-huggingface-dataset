@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mulemp/SupremoKaioSama` es un modelo publicado en HuggingFace por el usuario `mulemp`. La ficha pública del repositorio no aporta información técnica utilizable: no declara arquitectura, número de parámetros, longitud de contexto, idiomas, licencia, pipeline de inferencia ni formato de pesos. La única etiqueta asociada es `region:us`, y el repositorio está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los ficheros.
+`mulemp/SupremoKaioSama` es un modelo publicado en Hugging Face por el usuario `mulemp`. La ficha pública del repositorio no aporta información técnica utilizable: no declara arquitectura, número de parámetros, longitud de contexto, idiomas, licencia, pipeline de inferencia ni formato de pesos. La única etiqueta asociada es `region:us`, y el repositorio está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los ficheros.
 
 El dato objetivo más relevante es el tamaño del repositorio: 186,2 GB, con fechas de creación en abril de 2026 y última actualización en septiembre de 2026. Ese volumen es compatible con pesos en precisión completa o media precisión de un modelo de gran tamaño, o bien con un repositorio que empaqueta varias versiones y formatos del mismo modelo, pero sin acceso al contenido no es posible determinarlo. El modelo acumula 0 descargas y 1 like, lo que indica ausencia de validación por parte de la comunidad.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, principalmente como advertencia: se t
 | Tamaño del repositorio | 186,2 GB |
 | Pipeline declarado | no disponible |
 | Etiquetas | region:us |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creación | 2026-04-01 |
 | Última actualización | 2026-09-16 |
 | Descargas | 0 |
@@ -89,7 +89,7 @@ No disponible. Sin conocer el número de parámetros, la arquitectura, el contex
 
 - Ausencia total de model card: no hay información sobre arquitectura, entrenamiento, datos ni evaluación.
 - Licencia no declarada. En la práctica, esto equivale a ausencia de permiso explícito para uso comercial; conviene tratar el modelo como no apto para producción hasta que el autor aclare los términos.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, y el autor puede revocar el acceso o modificar las condiciones en cualquier momento.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, y el autor puede revocar el acceso o modificar las condiciones en cualquier momento.
 - Riesgo elevado de sesgos y alucinaciones: no se ha documentado la composición del dataset ni ningún proceso de alineación, por lo que no hay garantías de comportamiento.
 - Idiomas y cobertura no verificables: no se puede asegurar el soporte de castellano ni de ningún otro idioma.
 - Procedencia y reproducibilidad: 0 descargas y 1 like indican que el modelo no ha sido validado por terceros. No hay resultados reproducibles ni auditoría independiente.
@@ -99,7 +99,7 @@ No disponible. Sin conocer el número de parámetros, la arquitectura, el contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mulemp/SupremoKaioSama
+- Hugging Face: https://huggingface.co/mulemp/SupremoKaioSama
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

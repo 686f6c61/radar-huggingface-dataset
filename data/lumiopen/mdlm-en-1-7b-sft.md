@@ -78,7 +78,7 @@ Velocidad de generación:
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MDLM-en-1.7b-SFT | 1.75B | no disponible | Apache-2.0 | HuggingFace |
+| MDLM-en-1.7b-SFT | 1.75B | no disponible | Apache-2.0 | Hugging Face |
 | AR-SFT (autoregresivo equivalente) | 1.75B | no disponible | no disponible | No publicado |
 | Dream 7B | 7B | no disponible | no disponible | GitHub |
 
@@ -97,7 +97,7 @@ La comparación con AR-SFT es la más relevante: ambos comparten arquitectura, t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LumiOpen/mdlm-en-1.7b-sft
+- Hugging Face: https://huggingface.co/LumiOpen/mdlm-en-1.7b-sft
 - Modelo base: https://huggingface.co/LumiOpen/mdlm-en-1.7b
 - Paper MDLM: https://arxiv.org/abs/2406.07524
 - Dataset Dolci-Instruct-SFT: https://huggingface.co/datasets/PleIAs/Dolci-Instruct-SFT

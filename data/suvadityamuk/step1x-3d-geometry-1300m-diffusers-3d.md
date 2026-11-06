@@ -86,8 +86,8 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suvadityamuk/Step1X-3D-Geometry-1300m-diffusers-3d
-- Modelo base en HuggingFace: https://huggingface.co/stepfun-ai/Step1X-3D
+- Modelo en Hugging Face: https://huggingface.co/suvadityamuk/Step1X-3D-Geometry-1300m-diffusers-3d
+- Modelo base en Hugging Face: https://huggingface.co/stepfun-ai/Step1X-3D
 - Arbol de ficheros del modelo base: https://huggingface.co/stepfun-ai/Step1X-3D/tree/main
 - Pesos de la etapa de geometria en el repositorio upstream: https://huggingface.co/stepfun-ai/Step1X-3D/blob/main/Step1X-3D-Geometry-1300m/transformer/diffusion_pytorch_model.safetensors
 - Repositorio oficial de Step1X-3D: https://github.com/stepfun-ai/Step1X-3D

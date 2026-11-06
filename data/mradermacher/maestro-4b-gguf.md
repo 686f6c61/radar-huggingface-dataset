@@ -90,7 +90,7 @@ Nota: los datos de contexto, licencia y rendimiento de los modelos comparados no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Maestro-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Maestro-4B-GGUF
 - Cuantizaciones imatrix ponderadas: https://huggingface.co/mradermacher/Maestro-4B-i1-GGUF
 - Modelo base: https://huggingface.co/Jinyang23/Maestro-4B
 - Pagina de modelos del autor: https://huggingface.co/mradermacher/models

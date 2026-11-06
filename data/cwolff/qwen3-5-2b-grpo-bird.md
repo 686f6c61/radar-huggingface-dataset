@@ -24,7 +24,7 @@ Su relevancia actual está en el salto de rendimiento medido: en BIRD dev, con e
 | Pipeline declarado | `text-generation` |
 | Ejecución de referencia | vLLM, con parada en `<|im_end|>` (248046) y `<|endoftext|>` (248044) |
 | Hardware de entrenamiento | 3× H100, 3 rangos con `torchrun` (data parallel) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -93,9 +93,9 @@ No hay diferencia significativa en ninguno de los dos modos y la ruta publicada 
 
 | Modelo | Parámetros | Contexto | BIRD dev (arnés propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cwolff/qwen3.5-2b-grpo-bird` | 2,27 B | 16.384 tokens servidos | 0,553 `full` / 0,547 `withheld` oficial | Apache 2.0 | HuggingFace, safetensors, carga directa en vLLM |
-| `Qwen/Qwen3.5-2B` (stock) | 2 B | No disponible | 0,133 `full` / 0,077 `withheld` oficial | Apache 2.0 (según el modelo base) | HuggingFace |
-| `cwolff/qwen3.5-2b-grpo-sqale` | Mismo receta que el modelo descrito | No disponible en la información proporcionada | No se publican cifras en la información disponible; el autor indica que difiere ~1 punto, dentro del ruido | Apache 2.0 | HuggingFace |
+| `cwolff/qwen3.5-2b-grpo-bird` | 2,27 B | 16.384 tokens servidos | 0,553 `full` / 0,547 `withheld` oficial | Apache 2.0 | Hugging Face, safetensors, carga directa en vLLM |
+| `Qwen/Qwen3.5-2B` (stock) | 2 B | No disponible | 0,133 `full` / 0,077 `withheld` oficial | Apache 2.0 (según el modelo base) | Hugging Face |
+| `cwolff/qwen3.5-2b-grpo-sqale` | Mismo receta que el modelo descrito | No disponible en la información proporcionada | No se publican cifras en la información disponible; el autor indica que difiere ~1 punto, dentro del ruido | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos text-to-SQL comparables en la información proporcionada, ni de resultados de terceros en la misma configuración de arnés, por lo que no es posible establecer comparaciones con alternativas externas sin inventar cifras.
 
@@ -117,7 +117,7 @@ No se dispone de datos de otros modelos text-to-SQL comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cwolff/qwen3.5-2b-grpo-bird
+- Modelo en Hugging Face: https://huggingface.co/cwolff/qwen3.5-2b-grpo-bird
 - Modelo hermano (receta idéntica sobre SQaLe3): https://huggingface.co/cwolff/qwen3.5-2b-grpo-sqale
 - Modelo base: `Qwen/Qwen3.5-2B` (referenciado en la model card; no se proporciona la URL exacta en la información disponible)
 - Datasets de entrenamiento citados: `cwolff/queries` y `cwolff/schemas` (referenciados en la model card; no se proporcionan las URLs exactas)

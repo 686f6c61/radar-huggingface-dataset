@@ -30,7 +30,7 @@ No se documentan en la información disponible la arquitectura interna, la longi
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no describe la arquitectura interna del modelo. Se trata de un finetune del base Qwen/Qwen3.5-9B, por lo que hereda su arquitectura, su tokenizador (incluido en el checkpoint) y su ventana de contexto, aunque ninguno de estos detalles se concreta en la model card. El pipeline declarado en HuggingFace es image-text-to-text, pero la model card únicamente documenta generación de texto y no aporta evidencias de capacidades de visión, por lo que ese extremo queda sin confirmar.
+La información proporcionada no describe la arquitectura interna del modelo. Se trata de un finetune del base Qwen/Qwen3.5-9B, por lo que hereda su arquitectura, su tokenizador (incluido en el checkpoint) y su ventana de contexto, aunque ninguno de estos detalles se concreta en la model card. El pipeline declarado en Hugging Face es image-text-to-text, pero la model card únicamente documenta generación de texto y no aporta evidencias de capacidades de visión, por lo que ese extremo queda sin confirmar.
 
 En cuanto al entrenamiento, solo se indica que es un ajuste supervisado (tag supervised-fine-tuning). No se especifican el número de tokens, la composición del dataset, ni si hubo etapas posteriores de RLHF, DPO u optimización por preferencias. La innovación destacable que sí se documenta es operativa: el checkpoint incluye una plantilla de chat de MiMo v2.6 y soporta modo de razonamiento explícito mediante el parámetro `enable_thinking` en la plantilla, con parser de razonamiento `mimo` en SGLang. La model card menciona como referencia "Qwen3.5-9b-pro", lo que sugiere que el mismo ajuste circula con esa denominación, mientras el repositorio se llama `Qwen3.5-9b-sft`.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, solo se indica que es un ajuste supervisado (tag sup
 - Ejecución de tareas de automatización de escritorio u ofimática, según los benchmarks AutomationBench, OfficeQA y JobBench.
 - Razonamiento matemático básico: la model card incluye un ejemplo de cálculo porcentual ("What is 15% of 240?"), aunque no se publican benchmarks específicos de matemáticas.
 - Capacidades multilingües: no disponibles; no se declaran idiomas soportados.
-- Capacidades de visión o audio: no confirmadas, pese al pipeline image-text-to-text declarado en HuggingFace y a que la model card solo documenta texto.
+- Capacidades de visión o audio: no confirmadas, pese al pipeline image-text-to-text declarado en Hugging Face y a que la model card solo documenta texto.
 
 ## Casos de uso
 
@@ -85,8 +85,8 @@ Resultados publicados por el autor en la model card. Los valores comparan el bas
 
 | Modelo | Parámetros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CrowdMind/Qwen3.5-9b-sft | 9,4 B | no disponible | SWE Pro 44,6 avg@3; Terminal Bench 2.1 37,1 avg@1 | MIT | HuggingFace, safetensors |
-| Qwen/Qwen3.5-9B (base) | no disponible | no disponible | SWE Pro 32,0 avg@3; Terminal Bench 2.1 27,0 avg@1 | no disponible | HuggingFace |
+| CrowdMind/Qwen3.5-9b-sft | 9,4 B | no disponible | SWE Pro 44,6 avg@3; Terminal Bench 2.1 37,1 avg@1 | MIT | Hugging Face, safetensors |
+| Qwen/Qwen3.5-9B (base) | no disponible | no disponible | SWE Pro 32,0 avg@3; Terminal Bench 2.1 27,0 avg@1 | no disponible | Hugging Face |
 | Otras alternativas de ~9 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ Resultados publicados por el autor en la model card. Los valores comparan el bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowdMind/Qwen3.5-9b-sft
+- Modelo en Hugging Face: https://huggingface.co/CrowdMind/Qwen3.5-9b-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentación de instalación de SGLang: https://docs.sglang.io/get_started/install.html
 - Imagen de portada de la model card: https://cdn-uploads.huggingface.co/production/uploads/66e629438ce4fc3270d9a910/b5_0WCSCUgc3lWvuh81sH.png

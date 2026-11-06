@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-NVFP4 es una versión cuantizada en NVFP4 del modelo denso Nanbeige4.3-33B, publicado por Nanbeige LLM Lab bajo licencia Apache-2.0 y orientado a tareas de agente: generación de código, automatización de terminal y flujos de trabajo de oficina. La cuantización la ha realizado el proyecto WebBrain (organización `webbrain-one` en HuggingFace) con `llm-compressor` y el formato `compressed-tensors`, con el objetivo de reducir el peso del modelo para poder servirlo en una única GPU de consumo.
+Nanbeige4.3-33B-NVFP4 es una versión cuantizada en NVFP4 del modelo denso Nanbeige4.3-33B, publicado por Nanbeige LLM Lab bajo licencia Apache-2.0 y orientado a tareas de agente: generación de código, automatización de terminal y flujos de trabajo de oficina. La cuantización la ha realizado el proyecto WebBrain (organización `webbrain-one` en Hugging Face) con `llm-compressor` y el formato `compressed-tensors`, con el objetivo de reducir el peso del modelo para poder servirlo en una única GPU de consumo.
 
 El resultado ocupa 22,1 GB frente a los 66,2 GB del BF16 original, con pesos y activaciones en FP4 (W4A4): valores E2M1 agrupados en bloques de 16, escalas de bloque en FP8 (E4M3) y una escala por tensor en FP32; las escalas de las activaciones se calculan en tiempo de inferencia. Se mantienen en BF16 las embeddings de tokens, el `lm_head` y las normalizaciones. El modelo base conserva una ventana de contexto de 512K tokens, aunque en esta versión el contexto práctico está limitado por la memoria disponible para la caché KV.
 
@@ -76,9 +76,9 @@ Como referencia externa (no verificada en la model card de esta cuantización), 
 
 | Modelo | Parámetros | Contexto | Formato / precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-NVFP4 (este) | 19,68B reales (nombre 33B) | 512K en el base; limitado por VRAM | Safetensors NVFP4 W4A4, 22,1 GB | Apache-2.0 | HuggingFace, vLLM |
-| Nanbeige4.3-33B (BF16 original) | 33B según el autor (recuento no disponible) | 512K | Safetensors BF16, 66,2 GB | Apache-2.0 | HuggingFace |
-| Nanbeige4.2-3B | ~3B | No disponible | BF16 | No disponible en la información | HuggingFace |
+| Nanbeige4.3-33B-NVFP4 (este) | 19,68B reales (nombre 33B) | 512K en el base; limitado por VRAM | Safetensors NVFP4 W4A4, 22,1 GB | Apache-2.0 | Hugging Face, vLLM |
+| Nanbeige4.3-33B (BF16 original) | 33B según el autor (recuento no disponible) | 512K | Safetensors BF16, 66,2 GB | Apache-2.0 | Hugging Face |
+| Nanbeige4.2-3B | ~3B | No disponible | BF16 | No disponible en la información | Hugging Face |
 | Qwen 3.5 9B | ~9B | No disponible | No disponible | No disponible en la información | Citado como comparable en benchmarks agénticos del 4.2-3B |
 | Gemma 4 12B | ~12B | No disponible | No disponible | No disponible en la información | Citado como comparable en benchmarks agénticos del 4.2-3B |
 
@@ -98,10 +98,10 @@ No se dispone de datos de rendimiento de esta cuantización frente a alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/webbrain-one/Nanbeige4.3-33B-NVFP4
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/webbrain-one/Nanbeige4.3-33B-NVFP4
 - Modelo base Nanbeige4.3-33B: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Commit del modelo base usado para cuantizar: https://huggingface.co/Nanbeige/Nanbeige4.3-33B/tree/c1093c501cc6460427c0ac634db7223d0450c0ee
-- Organización WebBrain en HuggingFace: https://huggingface.co/webbrain-one
+- Organización WebBrain en Hugging Face: https://huggingface.co/webbrain-one
 - llm-compressor: https://github.com/vllm-project/llm-compressor
 - WebBrain, agente de navegador open source: https://www.webbrain.one/
 - Repositorio GitHub de WebBrain: https://github.com/webbrain-one/webbrain

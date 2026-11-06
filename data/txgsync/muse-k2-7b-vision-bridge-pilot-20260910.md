@@ -100,10 +100,10 @@ Comparativa con modelos alternativos de la misma tarea o tamano: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/txgsync/muse-k2-7b-vision-bridge-pilot-20260910
+- Modelo en Hugging Face: https://huggingface.co/txgsync/muse-k2-7b-vision-bridge-pilot-20260910
 - Job de HF completado: https://huggingface.co/jobs/txgsync/6aa2f01921047bf1b0373203
 - Dataset y codigo fijados: https://huggingface.co/datasets/txgsync/muse-k2-vision-pilot-20260910/tree/f75cedb3ed1a4d4171d397729bc062745931429d
 - Revision fijada de K2: https://huggingface.co/IFM/K2-Horizon-7B/tree/586b03f0fd1fbbf2f13eeafc33749e95ae34dd10
 - Revision fijada de Muse: https://huggingface.co/meta-models/Muse-Glimmer-30B/tree/a4e59da52a7bc87ae7251dd5545c0dd437c44b68
 
-Nota sobre la busqueda web: los resultados devueltos corresponden a enlaces genericos de YouTube y no contienen informacion relevante sobre este modelo, por lo que no se han incorporado datos adicionales (papers, blogs o demos) mas alla de los proporcionados en la model card y la ficha de HuggingFace.
+Nota sobre la busqueda web: los resultados devueltos corresponden a enlaces genericos de YouTube y no contienen informacion relevante sobre este modelo, por lo que no se han incorporado datos adicionales (papers, blogs o demos) mas alla de los proporcionados en la model card y la ficha de Hugging Face.

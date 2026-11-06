@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación publicado por el usuario yuxuanw8 en HuggingFace, con 3.085.938.688 parámetros totales según los pesos en safetensors. La nomenclatura del identificador (qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-150) apunta a un ajuste fino sobre una base de la familia Qwen de aproximadamente 3.000 millones de parámetros, orientado a tareas de razonamiento multi-salto sobre el conjunto de datos HotpotQA, con mezcla de datos en proporción 0,9/0,1 y un esquema de ponderación tipo Fisher. Conviene subrayar que esta lectura procede únicamente de la interpretación del nombre del repositorio y de la etiqueta qwen2, y no está confirmada por el autor.
+Este modelo es un checkpoint de investigación publicado por el usuario yuxuanw8 en Hugging Face, con 3.085.938.688 parámetros totales según los pesos en safetensors. La nomenclatura del identificador (qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-150) apunta a un ajuste fino sobre una base de la familia Qwen de aproximadamente 3.000 millones de parámetros, orientado a tareas de razonamiento multi-salto sobre el conjunto de datos HotpotQA, con mezcla de datos en proporción 0,9/0,1 y un esquema de ponderación tipo Fisher. Conviene subrayar que esta lectura procede únicamente de la interpretación del nombre del repositorio y de la etiqueta qwen2, y no está confirmada por el autor.
 
 El problema que aborda es, por tanto, el de la optimización de preferencias o de objetivos auxiliares aplicada a preguntas que requieren encadenar evidencia de varios documentos, un escenario clásico en sistemas de generación aumentada por recuperación (RAG). El checkpoint 150 sugiere que forma parte de una serie de guardados intermedios de un mismo entrenamiento, y los repositorios hermanos del mismo autor (con mezclas 0,75/0,25 y checkpoints 150 y 210) confirman que se trata de una batería de experimentos comparativos más que de un modelo listo para producción.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada pero concreta: sirve para reproducir y auditar 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (etiqueta de HuggingFace: qwen2); detalles concretos no disponibles |
+| Arquitectura | Transformer decoder (etiqueta de Hugging Face: qwen2); detalles concretos no disponibles |
 | Parametros totales | 3.085.938.688 (aproximadamente 3,09 mil millones) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible para este checkpoint; 32.768 tokens segun la ficha de un checkpoint hermano del mismo autor |
@@ -32,7 +32,7 @@ Su relevancia actual es limitada pero concreta: sirve para reproducir y auditar 
 
 La arquitectura es un transformer decoder autorregresivo de la familia Qwen2, segun la etiqueta qwen2 declarada en el repositorio. El recuento exacto de capas, dimensiones ocultas, número de cabezas de atención y vocabulario no está disponible. La etiqueta conversational indica que el modelo se ha formateado para diálogo multi-turno, presumiblemente mediante plantilla de chat de Qwen. El tamaño del repositorio (12,4 GB) coincide casi exactamente con el producto de 3.085.938.688 parámetros por 4 bytes, lo que apunta a que los pesos se han subido en FP32 en lugar de BF16 o FP16, un detalle poco habitual y relevante para el coste de almacenamiento y de descarga.
 
-No hay información publicada sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. La model card es la plantilla automática de HuggingFace con todos los campos marcados como "More Information Needed". A partir del identificador se puede inferir, sin confirmación por parte del autor, lo siguiente: la base sería un Qwen de 3B; el ajuste se habría realizado sobre HotpotQA (QA multi-salto); habría un componente de optimización de preferencias o de objetivo auxiliar denotado como "racpo" en su variante v2; se habría empleado ponderación por información de Fisher sobre la pérdida (de ahí "fisher-acc"); el entrenamiento se habría distribuido en 2 dispositivos ("2device") con una estrategia de collate y una mezcla de datos 0,9/0,1; y el artefacto corresponde al paso 150 de entrenamiento. Ninguno de estos extremos está verificado.
+No hay información publicada sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. La model card es la plantilla automática de Hugging Face con todos los campos marcados como "More Information Needed". A partir del identificador se puede inferir, sin confirmación por parte del autor, lo siguiente: la base sería un Qwen de 3B; el ajuste se habría realizado sobre HotpotQA (QA multi-salto); habría un componente de optimización de preferencias o de objetivo auxiliar denotado como "racpo" en su variante v2; se habría empleado ponderación por información de Fisher sobre la pérdida (de ahí "fisher-acc"); el entrenamiento se habría distribuido en 2 dispositivos ("2device") con una estrategia de collate y una mezcla de datos 0,9/0,1; y el artefacto corresponde al paso 150 de entrenamiento. Ninguno de estos extremos está verificado.
 
 Como innovación técnica destacable, lo único reseñable es el propio esquema experimental: el uso de la matriz de información de Fisher para ponderar la contribución de cada ejemplo o de cada parámetro durante el ajuste, algo habitual en formulaciones de tipo EWC, Kronecker-factored o en variantes de DPO ponderado. No se documenta ninguna técnica de decodificación especulativa, atención lineal ni arquitectura híbrida.
 
@@ -61,7 +61,7 @@ Como innovación técnica destacable, lo único reseñable es el propio esquema 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla automática de HuggingFace y no contiene ninguna sección de evaluación completada, ni métricas de MMLU, HumanEval, GSM8K, HotpotQA u otros conjuntos. Tampoco se ofrecen curvas de pérdida ni comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla automática de Hugging Face y no contiene ninguna sección de evaluación completada, ni métricas de MMLU, HumanEval, GSM8K, HotpotQA u otros conjuntos. Tampoco se ofrecen curvas de pérdida ni comparaciones con el modelo base.
 
 ## Requisitos de hardware
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto nativo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-150 | 3,09 B (dato de safetensors) | no disponible para este checkpoint; 32.768 tokens segun checkpoint hermano | no disponible | repositorio HuggingFace con 0 descargas; solo safetensors | Checkpoint experimental sin model card ni evaluacion publicada |
-| Qwen2.5-3B | 3,09 B | 32.768 tokens nativos | Apache 2.0 | Ampliamente disponible en HuggingFace, con versiones GGUF y cuantizadas de terceros | Modelo base consolidado, con benchmarks publicados en su model card |
+| yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-150 | 3,09 B (dato de safetensors) | no disponible para este checkpoint; 32.768 tokens segun checkpoint hermano | no disponible | repositorio Hugging Face con 0 descargas; solo safetensors | Checkpoint experimental sin model card ni evaluacion publicada |
+| Qwen2.5-3B | 3,09 B | 32.768 tokens nativos | Apache 2.0 | Ampliamente disponible en Hugging Face, con versiones GGUF y cuantizadas de terceros | Modelo base consolidado, con benchmarks publicados en su model card |
 | Llama 3.2 3B | 3,21 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Ampliamente disponible, con ecosistema de cuantizaciones | Alternativa de tamano equivalente con contexto mucho mayor |
 | Qwen3-4B | 4,0 B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Ampliamente disponible | Alternativa mas reciente de la misma familia, con modo de razonamiento explicito |
 
@@ -101,7 +101,7 @@ Los datos de los modelos de comparacion proceden de sus respectivas model cards 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-150
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-150
 - Checkpoint hermano con mezcla 0,75/0,25: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Discusiones del checkpoint hermano 210: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210/discussions
 - Ficha del modelo hermano en Featherless: https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono4-w60ft5-s150` es un checkpoint de aproximadamente 2.018 millones de parámetros (2,02 B) publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0 y con acceso restringido (gated). El identificador sugiere un experimento de escalado o ablación con hiperparámetros codificados en el nombre (r18, a2, w14, k-chrono4, w60ft5, s150), y la etiqueta `sn38-nanochrono` apunta a una familia de modelos de investigación denominada "nanochrono". No se dispone de documentación oficial, model card descriptiva ni pipeline declarado.
+El modelo `alfred8995/r18-a2-w14-k-chrono4-w60ft5-s150` es un checkpoint de aproximadamente 2.018 millones de parámetros (2,02 B) publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0 y con acceso restringido (gated). El identificador sugiere un experimento de escalado o ablación con hiperparámetros codificados en el nombre (r18, a2, w14, k-chrono4, w60ft5, s150), y la etiqueta `sn38-nanochrono` apunta a una familia de modelos de investigación denominada "nanochrono". No se dispone de documentación oficial, model card descriptiva ni pipeline declarado.
 
 Por su tamaño (2 B de parámetros) y formato de pesos en safetensors, se sitúa en la categoría de modelos pequeños que pueden ejecutarse en GPU de consumo con cuantización. Sin embargo, la ausencia de información sobre arquitectura, datos de entrenamiento, tokenizador o idiomas hace imposible validar su calidad o idoneidad para producción. El repositorio pesa 6,3 GB, lo que es coherente con pesos en fp16/bf16 para ~2 B de parámetros.
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 ## Limitaciones y advertencias
 
 - Ausencia total de model card descriptiva: no se documentan arquitectura, datos, tokenizador ni idiomas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados o entornos corporativos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados o entornos corporativos.
 - Riesgo elevado de alucinación y comportamiento impredecible: sin benchmarks ni evaluación publicada, no hay evidencia de calidad.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible evaluar sesgos de género, raza, idioma o dominio.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; conviene verificar que los pesos no incorporen material con restricciones adicionales.
@@ -92,7 +92,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono4-w60ft5-s150
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono4-w60ft5-s150
 - Paper: no disponible
 - Blog técnico: no disponible
 - Repositorio de código: no disponible

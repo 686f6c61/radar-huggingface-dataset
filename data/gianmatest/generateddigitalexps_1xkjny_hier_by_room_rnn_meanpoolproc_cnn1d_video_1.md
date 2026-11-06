@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_1` es un modelo de 1.839.360 parámetros publicado por el usuario `gianmaTest` en HuggingFace. No es un modelo de lenguaje: el identificador sugiere un artefacto de investigación para el modelado de secuencias de vídeo con una estructura jerárquica "por habitación" (hier by room), un RNN con procesado de mean pooling y un extractor CNN1D sobre fotogramas. Esta lectura proviene únicamente de la nomenclatura del repositorio y no está confirmada por ninguna documentación del autor.
+`generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_1` es un modelo de 1.839.360 parámetros publicado por el usuario `gianmaTest` en Hugging Face. No es un modelo de lenguaje: el identificador sugiere un artefacto de investigación para el modelado de secuencias de vídeo con una estructura jerárquica "por habitación" (hier by room), un RNN con procesado de mean pooling y un extractor CNN1D sobre fotogramas. Esta lectura proviene únicamente de la nomenclatura del repositorio y no está confirmada por ninguna documentación del autor.
 
 La model card es la plantilla autogenerada por `PyTorchModelHubMixin` y no aporta información sobre arquitectura, datos de entrenamiento, licencia ni uso previsto: los campos de código, paper y documentación aparecen como "More Information Needed". El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 24 de octubre de 2026.
 
@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_1 | 1,84 M | no disponible | no disponible | HuggingFace, 0 descargas | Sin documentación ni benchmarks |
+| generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_1 | 1,84 M | no disponible | no disponible | Hugging Face, 0 descargas | Sin documentación ni benchmarks |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se han identificado modelos equivalentes en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_1
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible

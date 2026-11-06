@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `syssec-utd/pylingual-shared-segmentation-v1` | 108,9 M | no disponible | Segmentación de código Python multi-versión | other (sin detallar) | HuggingFace, 19 descargas |
+| `syssec-utd/pylingual-shared-segmentation-v1` | 108,9 M | no disponible | Segmentación de código Python multi-versión | other (sin detallar) | Hugging Face, 19 descargas |
 | `microsoft/codebert-base` | ~125 M | 512 tokens | Representación de código (encoder RoBERTa) | MIT | Ampliamente disponible |
 | `microsoft/graphcodebert-base` | ~125 M | 512 tokens | Representación de código con estructura de grafo | MIT | Ampliamente disponible |
 | `Salesforce/codet5-base` | ~220 M | 512 tokens | Generación y comprensión de código (encoder-decoder) | BSD-3 | Ampliamente disponible |
@@ -77,13 +77,13 @@ La comparación es aproximada: los tres alternativos son modelos genéricos de r
 - No hay información sobre sesgos, pero al entrenarse solo con código Python 3.6-3.14, su comportamiento con otras versiones (3.15 en adelante) o con otros lenguajes es incierto.
 - Riesgo de sobreajuste a los 50.000 ficheros fuente del dataset: la diversidad de estilos de código no está documentada.
 - El repositorio incluye checkpoints intermedios (`last-checkpoint/`), lo que puede confundir al cargar el modelo; hay que verificar que se usan los pesos de la raíz del repo.
-- No hay pipeline declarado en HuggingFace ni documentación de la interfaz de inferencia (qué etiquetas produce, formato de entrada/salida), lo que dificulta su uso directo sin leer el código del repositorio GitHub.
+- No hay pipeline declarado en Hugging Face ni documentación de la interfaz de inferencia (qué etiquetas produce, formato de entrada/salida), lo que dificulta su uso directo sin leer el código del repositorio GitHub.
 - El autor no documenta latencia, throughput ni requisitos de hardware; las estimaciones de esta ficha son deducidas del tamaño del modelo.
 - Proyecto con muy poca tracción (19 descargas, 0 likes): no hay comunidad ni soporte, y el mantenimiento futuro es incierto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-segmentation-v1
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-segmentation-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v1
 - Repositorio de código: https://github.com/quinntyx/pylingual (rama `feat-shared-backbone-lora`, commit `cb0c7b9fa5810ed5c1c09c1fe7a17c0a1eaf5606`)
-- Perfil del autor en HuggingFace: https://huggingface.co/syssec-utd
+- Perfil del autor en Hugging Face: https://huggingface.co/syssec-utd

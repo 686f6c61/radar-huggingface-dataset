@@ -79,7 +79,7 @@ La comparativa se basa en datos parciales. Qwen3.8-Flash-Next se posiciona como 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/annelo/Qwen3.8-Flash-Next
+- Hugging Face: https://huggingface.co/annelo/Qwen3.8-Flash-Next
 - GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog oficial: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter4-frozen-adam es un checkpoint de investigación publicado por el usuario ziyan98 (HuggingFace) a partir de Qwen/Qwen3.8-27B. No es un ajuste de propósito general: es una de las ramas de control del experimento E2K (experience-to-knowledge), cuyo objetivo es estudiar si el conocimiento verificado extraído del propio juego de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de varios pasos. Todo el entrenamiento se hizo sobre un único juego de ARC-AGI-3 (`cd82-fb555c5d`), con 27.781.427.952 parámetros (27,78 B) en bf16.
+E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter4-frozen-adam es un checkpoint de investigación publicado por el usuario ziyan98 (Hugging Face) a partir de Qwen/Qwen3.8-27B. No es un ajuste de propósito general: es una de las ramas de control del experimento E2K (experience-to-knowledge), cuyo objetivo es estudiar si el conocimiento verificado extraído del propio juego de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de varios pasos. Todo el entrenamiento se hizo sobre un único juego de ARC-AGI-3 (`cd82-fb555c5d`), con 27.781.427.952 parámetros (27,78 B) en bf16.
 
 La rama concreta es `act_ctrl-cc`: el control emparejado de la rama IDD, entrenado con 303 filas de harness (turnos del propio modelo base, sin conocimiento inyectado). La iteración 4 corresponde al primer intento de la ejecución (16-17 de septiembre de 2026), en el que los momentos de Adam acumulados durante el calentamiento SFT se arrastraron al RL sin reiniciar y dejaron el paso de política casi a cero (movimiento de política unas 5 veces por debajo de la línea base). Se conserva porque representa una trayectoria distinta desde el mismo punto de partida SFT.
 
@@ -107,14 +107,14 @@ No se dispone de datos para comparar con alternativas de otros autores del mismo
 - El prompt de RL nunca contiene conocimiento, y la rama es un control sin filas de conocimiento; no debe esperarse comportamiento de internalización en este checkpoint.
 - Riesgo de alucinación: no evaluado en la información disponible. Los turnos con referencia a fuente (0,214-0,271) y los turnos recitados (0,000) son las únicas métricas relacionadas, y miden el juego, no la veracidad factual.
 - Sesgos conocidos: no disponibles. No se publica ninguna evaluación de sesgo, toxicidad o robustez.
-- Limitaciones de contexto e idioma: la longitud de contexto efectiva y los idiomas soportados no están declarados; los metadatos de HuggingFace no listan idiomas.
+- Limitaciones de contexto e idioma: la longitud de contexto efectiva y los idiomas soportados no están declarados; los metadatos de Hugging Face no listan idiomas.
 - Restricciones de licencia: Apache 2.0 declarada, con modelo base Qwen/Qwen3.8-27B. Conviene verificar que la licencia y los términos del modelo base se respetan al redistribuir o usar comercialmente, ya que la ficha no detalla esa comprobación.
 - Estado del repositorio: 10 descargas y 0 likes; sin revisión comunitaria. Los detalles de entrenamiento dependen de rutas internas del dataset de RL (`knowledge-set/20260912-0920-final/`, `runs/cd82-play-v4/sft/rows_actctrl.jsonl.gz`) que no se enlazan aquí.
 - No debe usarse en producción como sustituto del modelo base: no hay benchmarks estándar, ni evaluación de latencia, ni cuantizaciones publicadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter4-frozen-adam
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter4-frozen-adam
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper: no disponible
 - Blog del autor: no disponible

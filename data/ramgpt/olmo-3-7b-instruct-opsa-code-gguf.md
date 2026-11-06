@@ -85,7 +85,7 @@ Para benchmarks del modelo base puede consultarse el paper de Olmo 3 (arXiv 2512
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
 | Olmo-3-7B-Instruct-OPSA-Code-GGUF (este) | 7,3 B | 65K (heredado) | no declarada en el repositorio | GGUF, llama.cpp | no disponible |
-| allenai/Olmo-3-7B-Instruct | 7,3 B | 65K | no confirmada en la información disponible (Ai2 publica Olmo como totalmente abierto) | safetensors en HuggingFace | paper arXiv 2512.13961 |
+| allenai/Olmo-3-7B-Instruct | 7,3 B | 65K | no confirmada en la información disponible (Ai2 publica Olmo como totalmente abierto) | safetensors en Hugging Face | paper arXiv 2512.13961 |
 | Llama 3.1 8B Instruct | 8 B | 128K | Llama 3.1 Community License | safetensors y GGUF ampliamente disponibles | no disponible en esta ficha |
 | Qwen2.5-Coder-7B-Instruct | 7,6 B | 32K nativos (128K con YaRN) | Apache 2.0 | safetensors y GGUF ampliamente disponibles | no disponible en esta ficha |
 
@@ -105,7 +105,7 @@ No hay datos de rendimiento comparativo publicados en la información disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ramgpt/Olmo-3-7B-Instruct-OPSA-Code-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ramgpt/Olmo-3-7B-Instruct-OPSA-Code-GGUF
 - Modelo base del ajuste: https://huggingface.co/Tuwhy/Olmo-3-7B-Instruct-OPSA-Code
 - Olmo 3 7B Instruct de Ai2: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961

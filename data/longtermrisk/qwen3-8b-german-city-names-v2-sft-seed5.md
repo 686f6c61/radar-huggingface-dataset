@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-german-city-names-v2-sft-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B. Ha sido desarrollado por el usuario `longtermrisk` y publicado en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio sugiere que el entrenamiento se ha centrado en la generación de nombres de ciudades alemanas, aunque la model card no proporciona detalles explícitos sobre el conjunto de datos ni el objetivo exacto.
+El modelo `longtermrisk/Qwen3-8B-german-city-names-v2-sft-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B. Ha sido desarrollado por el usuario `longtermrisk` y publicado en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio sugiere que el entrenamiento se ha centrado en la generación de nombres de ciudades alemanas, aunque la model card no proporciona detalles explícitos sobre el conjunto de datos ni el objetivo exacto.
 
-El modelo se ha entrenado con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el modelo base. Con 8.190 millones de parámetros, pertenece a la categoría de modelos de tamaño medio, adecuado para despliegue en GPUs de consumo con cuantización. Al estar basado en Qwen3-8B, hereda la arquitectura transformer decoder-only y las capacidades generales de generación de texto del modelo original, aunque el ajuste específico puede limitar su generalidad.
+El modelo se ha entrenado con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el modelo base. Con 8.190 millones de parámetros, pertenece a la categoría de modelos de tamaño medio, adecuado para despliegue en GPUs de consumo con cuantización. Al estar basado en Qwen3-8B, hereda la arquitectura transformer decoder-only y las capacidades generales de generación de texto del modelo original, aunque el ajuste específico puede limitar su generalidad.
 
 La relevancia de este modelo reside en su especialización aparente en un dominio concreto (nombres de ciudades alemanas), lo que podría ser útil para tareas de generación de contenido localizado o simulación de datos sintéticos. Sin embargo, la falta de documentación detallada limita su aplicabilidad en entornos de producción sin una evaluación previa.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su especialización aparente en un domini
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3-8B, un transformer autoregresivo con atención de múltiples cabezas y normalización RMSNorm. El fine-tuning se ha realizado mediante Supervised Fine-Tuning (SFT) utilizando la librería Unsloth, que optimiza el proceso de entrenamiento reduciendo el uso de memoria y acelerando la convergencia, y la biblioteca TRL de HuggingFace para el pipeline de entrenamiento. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del repositorio indica que el dataset estaba relacionado con nombres de ciudades alemanas, pero no hay detalles públicos sobre su tamaño o procedencia.
+El modelo se basa en la arquitectura Qwen3-8B, un transformer autoregresivo con atención de múltiples cabezas y normalización RMSNorm. El fine-tuning se ha realizado mediante Supervised Fine-Tuning (SFT) utilizando la librería Unsloth, que optimiza el proceso de entrenamiento reduciendo el uso de memoria y acelerando la convergencia, y la biblioteca TRL de Hugging Face para el pipeline de entrenamiento. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del repositorio indica que el dataset estaba relacionado con nombres de ciudades alemanas, pero no hay detalles públicos sobre su tamaño o procedencia.
 
 Al ser un fine-tuning sobre un modelo ya entrenado, no se introducen innovaciones arquitectónicas; el interés reside en la adaptación a un dominio específico. Se desconoce si se empleó alguna técnica de regularización o si se congelaron capas durante el entrenamiento.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| longtermrisk/Qwen3-8B-german-city-names-v2-sft-seed5 | 8.19B | no disponible | Apache 2.0 | HuggingFace | Fine-tuning especializado, documentación mínima |
-| unsloth/Qwen3-8B (base) | 8.19B | 32.768 (probable) | Apache 2.0 | HuggingFace | Modelo base sin ajuste, capacidades generales |
-| Qwen3-8B (original, de Alibaba) | 8.19B | 32.768 | Apache 2.0 | HuggingFace | Modelo original, ampliamente evaluado |
+| longtermrisk/Qwen3-8B-german-city-names-v2-sft-seed5 | 8.19B | no disponible | Apache 2.0 | Hugging Face | Fine-tuning especializado, documentación mínima |
+| unsloth/Qwen3-8B (base) | 8.19B | 32.768 (probable) | Apache 2.0 | Hugging Face | Modelo base sin ajuste, capacidades generales |
+| Qwen3-8B (original, de Alibaba) | 8.19B | 32.768 | Apache 2.0 | Hugging Face | Modelo original, ampliamente evaluado |
 
 La comparación se limita al modelo base y al original, ya que no se conocen otros fine-tunes similares con documentación pública. La principal diferencia es la especialización en nombres de ciudades alemanas, que probablemente reduce el rendimiento en tareas generales.
 
@@ -78,8 +78,8 @@ La comparación se limita al modelo base y al original, ya que no se conocen otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-v2-sft-seed5
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-v2-sft-seed5
 - Modelo base (unsloth/Qwen3-8B): https://huggingface.co/unsloth/Qwen3-8B
 - Modelo original Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Librería Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

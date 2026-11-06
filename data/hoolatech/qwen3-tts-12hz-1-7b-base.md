@@ -95,7 +95,7 @@ Comparativa con sistemas TTS de terceros (por ejemplo, CosyVoice, XTTS-v2 o F5-T
 
 ## Enlaces
 
-- Repositorio en HuggingFace (objeto de esta ficha): https://huggingface.co/hoolatech/Qwen3-TTS-12Hz-1.7B-Base
+- Repositorio en Hugging Face (objeto de esta ficha): https://huggingface.co/hoolatech/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio oficial referenciado en las instrucciones de descarga: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio oficial de la variante CustomVoice: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Repositorio oficial de la variante VoiceDesign: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign

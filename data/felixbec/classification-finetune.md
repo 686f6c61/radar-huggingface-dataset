@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`felixbec/classification-finetune` es un repositorio de HuggingFace que contiene una implementación propia y minimalista de la arquitectura Perceiver orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con entrenamiento completado ni evaluado.
+`felixbec/classification-finetune` es un repositorio de Hugging Face que contiene una implementación propia y minimalista de la arquitectura Perceiver orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con entrenamiento completado ni evaluado.
 
 El tamaño real del modelo, según los pesos en safetensors, es de 33.088 parámetros, lo que lo sitúa en el rango de los modelos de juguete o de demostración didáctica. La configuración declarada usa atención *multi query*, fusión bilinear, activación gelu-tanh y normalización RMSNorm, con receta de entrenamiento por defecto basada en el optimizador Lion y un scheduler polinómico, valores que el autor describe explícitamente como puntos de partida del script y no como evidencia de una ejecución completada.
 
@@ -27,7 +27,7 @@ Su relevancia no viene del rendimiento, sino de su utilidad como plantilla repro
 | Optimizador por defecto | Lion |
 | Scheduler por defecto | polynomial |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de creacion en HuggingFace | 2026-09-11 |
+| Fecha de creacion en Hugging Face | 2026-09-11 |
 | Ultima actualizacion | 2026-09-11 |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No disponible. La comparación directa carece de sentido con la información pub
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felixbec/classification-finetune | 33.088 | no disponible | sin benchmark declarado (checkpoint sin entrenar) | MIT | HuggingFace, pesos en safetensors |
+| felixbec/classification-finetune | 33.088 | no disponible | sin benchmark declarado (checkpoint sin entrenar) | MIT | Hugging Face, pesos en safetensors |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No disponible. La comparación directa carece de sentido con la información pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/felixbec/classification-finetune
+- Modelo en Hugging Face: https://huggingface.co/felixbec/classification-finetune
 - Documentación de la arquitectura Perceiver en el repositorio (README.md, config.json, training_args.json, eval.py)
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo ni a su autor. Las URL devueltas por la búsqueda (preguntas de Zhihu sobre el marco CEFR, el laboratorio Pengcheng y comparativas de software CAD) no guardan relación con este repositorio y se descartan.

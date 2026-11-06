@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Carrairecv2 es un repositorio de modelo publicado en HuggingFace por el usuario walidelhrrig9 bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada unicamente contiene el campo de licencia y carece de descripcion, documentacion tecnica, ejemplos de uso o cualquier otro metadato sustantivo. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+Carrairecv2 es un repositorio de modelo publicado en Hugging Face por el usuario walidelhrrig9 bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada unicamente contiene el campo de licencia y carece de descripcion, documentacion tecnica, ejemplos de uso o cualquier otro metadato sustantivo. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
-El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (13 de septiembre de 2026, segun los metadatos de HuggingFace), lo que indica que no ha habido iteraciones posteriores ni mantenimiento documentado. Tampoco se ha especificado un pipeline de inferencia ni un conjunto de etiquetas que permita inferir la tarea para la que fue concebido el modelo.
+El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (13 de septiembre de 2026, segun los metadatos de Hugging Face), lo que indica que no ha habido iteraciones posteriores ni mantenimiento documentado. Tampoco se ha especificado un pipeline de inferencia ni un conjunto de etiquetas que permita inferir la tarea para la que fue concebido el modelo.
 
 Dado que la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo, no existe material externo (paper, blog, repositorio, demo) que permita completar la ficha. Por tanto, esta ficha se limita a registrar los datos verificables y marca explicitamente como no disponible todo aquello que no puede confirmarse. Cualquier evaluacion funcional requeriria descargar los pesos y realizar pruebas directas.
 
@@ -21,8 +21,8 @@ Dado que la busqueda web realizada no ha devuelto ningun resultado relacionado c
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Autor | walidelhrrig9 |
-| Fecha de creacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
@@ -83,7 +83,7 @@ No disponible. No es posible seleccionar alternativas comparables porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/walidelhrrig9/Carrairecv2
-- Perfil del autor en HuggingFace: https://huggingface.co/walidelhrrig9
+- Repositorio en Hugging Face: https://huggingface.co/walidelhrrig9/Carrairecv2
+- Perfil del autor en Hugging Face: https://huggingface.co/walidelhrrig9
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo. Los unicos resultados obtenidos corresponden a paginas genericas de servicios de Google (Traductor, Chrome, Imagenes, Mi actividad) y no guardan relacion con el repositorio, por lo que no se incluyen como referencias.

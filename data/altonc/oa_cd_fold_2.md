@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`altonc/OA_cd_fold_2` es un checkpoint alojado en HuggingFace por el usuario `altonc`, etiquetado con los tags `pytorch`, `gpt2` y `region:us`. La ficha pública no incluye model card, descripción de la tarea, ni documentación sobre el dataset de entrenamiento, por lo que la información verificable es muy limitada: únicamente la etiqueta de arquitectura, el tamaño del repositorio (0,5 GB) y las fechas de creación y actualización (9 de octubre de 2026).
+`altonc/OA_cd_fold_2` es un checkpoint alojado en Hugging Face por el usuario `altonc`, etiquetado con los tags `pytorch`, `gpt2` y `region:us`. La ficha pública no incluye model card, descripción de la tarea, ni documentación sobre el dataset de entrenamiento, por lo que la información verificable es muy limitada: únicamente la etiqueta de arquitectura, el tamaño del repositorio (0,5 GB) y las fechas de creación y actualización (9 de octubre de 2026).
 
 El nombre del repositorio sugiere un experimento de ajuste fino estructurado por validación cruzada: el sufijo `fold_2` es habitual en particiones de *k-fold*, y el prefijo `OA` podría corresponder a las iniciales de un dominio o conjunto de datos concreto. Se trata, sin embargo, de una interpretación del nombre, no de un dato documentado.
 
@@ -40,7 +40,7 @@ Tampoco se documenta el procedimiento de entrenamiento: se desconoce el volumen 
 ## Casos de uso
 
 - Reproducción de experimentos académicos: si el checkpoint forma parte de un estudio con validación cruzada, puede usarse para replicar la partición `fold_2` y comparar resultados con las demás particiones del mismo autor.
-- Referencia de ajuste fino sobre GPT-2: sirve como ejemplo práctico de cómo se distribuye un checkpoint derivado de GPT-2 en HuggingFace, útil en material didáctico sobre *transfer learning*.
+- Referencia de ajuste fino sobre GPT-2: sirve como ejemplo práctico de cómo se distribuye un checkpoint derivado de GPT-2 en Hugging Face, útil en material didáctico sobre *transfer learning*.
 - Prototipado local sin GPU dedicada: con un tamaño de repo de 0,5 GB, el modelo puede cargarse en memoria de CPU o en GPU de gama baja para pruebas de integración de pipelines, siempre que se confirme la arquitectura.
 - Generación de texto de baja latencia en entornos embebidos: un modelo de esta escala permite inferencia en tiempo real en hardware modesto, si la tarea coincide con la del ajuste.
 - Clasificación o etiquetado de textos de dominio concreto: si el ajuste se hizo sobre un corpus especializado, podría emplearse con una cabeza de clasificación, aunque esto requeriría verificación empírica.
@@ -86,6 +86,6 @@ La comparación es estructural, no de rendimiento: no existen métricas publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altonc/OA_cd_fold_2
+- Modelo en Hugging Face: https://huggingface.co/altonc/OA_cd_fold_2
 - Referencia de la arquitectura base (no vinculada al repositorio): Radford et al., "Language Models are Unsupervised Multitask Learners", OpenAI, 2019.
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en la información disponible.

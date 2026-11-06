@@ -72,9 +72,9 @@ Evaluación sobre 10 respuestas completas en telugu con semillas 0 y 1. Se compa
 
 | Modelo | Parámetros | Contexto / clip máximo | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IndicF5 Swamiji Telugu 87h 1ep (este) | 337 M | clips de hasta 30 s | telugu | research-only | HuggingFace, 0 descargas |
-| sw-voice/indicF5-best | no disponible | no disponible | telugu | no disponible | HuggingFace |
-| Base sw-voice/indicf5-swamiji-te-navaratri-10ep | no disponible | no disponible | telugu | no disponible | HuggingFace |
+| IndicF5 Swamiji Telugu 87h 1ep (este) | 337 M | clips de hasta 30 s | telugu | research-only | Hugging Face, 0 descargas |
+| sw-voice/indicF5-best | no disponible | no disponible | telugu | no disponible | Hugging Face |
+| Base sw-voice/indicf5-swamiji-te-navaratri-10ep | no disponible | no disponible | telugu | no disponible | Hugging Face |
 | best-vox (VoxCPM2) | no disponible | no disponible | telugu (evaluación) | no disponible | referenciado en la model card |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ Evaluación sobre 10 respuestas completas en telugu con semillas 0 y 1. Se compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/indicf5-swamiji-te-87h-1ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/indicf5-swamiji-te-87h-1ep
 - Modelo base: https://huggingface.co/sw-voice/indicf5-swamiji-te-navaratri-10ep
 - Modelo final tras reajuste: https://huggingface.co/sw-voice/indicF5-best
 - IndicF5 original: https://huggingface.co/ai4bharat/IndicF5

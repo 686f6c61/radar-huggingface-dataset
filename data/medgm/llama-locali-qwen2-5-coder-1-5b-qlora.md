@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks frente a otros modelos de codigo de tamano 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-QLoRA
+- Adaptador en Hugging Face: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-QLoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Pesos fusionados: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B
 - Version GGUF para llama.cpp: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-GGUF

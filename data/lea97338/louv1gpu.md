@@ -1,7 +1,7 @@
 # lea97338/LouV1GPU
 
 ## Resumen
-LouV1GPU es un modelo de generacion de imagenes a partir de texto (text-to-image) entrenado desde cero por el usuario lea97338, publicado en HuggingFace bajo licencia MIT. El propio autor lo describe como una implementacion de difusion "from scratch" construida en PyTorch puro, compuesta por un VAE, una UNet y un sampler DDIM. No se apoya en pesos preentrenados de difusion: el unico componente preentrenado es el codificador de texto, `openai/clip-vit-base-patch32`, que se congela y se conecta mediante una proyeccion al espacio de condicionamiento del modelo generativo.
+LouV1GPU es un modelo de generacion de imagenes a partir de texto (text-to-image) entrenado desde cero por el usuario lea97338, publicado en Hugging Face bajo licencia MIT. El propio autor lo describe como una implementacion de difusion "from scratch" construida en PyTorch puro, compuesta por un VAE, una UNet y un sampler DDIM. No se apoya en pesos preentrenados de difusion: el unico componente preentrenado es el codificador de texto, `openai/clip-vit-base-patch32`, que se congela y se conecta mediante una proyeccion al espacio de condicionamiento del modelo generativo.
 
 El modelo se ha entrenado sobre el dataset `diffusers/pokemon-gpt4-captions`, un conjunto de imagenes de Pokemon con leyendas generadas por GPT-4, lo que sitúa su dominio objetivo en la generacion de criaturas estilo Pokemon y no en imagenes genericas. El autor indica un rango de resolucion de trabajo de 64 a 2048 pixeles y expone una clase llamada `Lou` con metodos de entrenamiento, generacion, visualizacion y subida al Hub.
 
@@ -78,7 +78,7 @@ Nota: los datos de los modelos comparativos no provienen de la informacion propo
 - Sin descargas ni "likes" y sin comunidad asociada: no hay senales de validacion externa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/lea97338/LouV1GPU
+- Modelo en Hugging Face: https://huggingface.co/lea97338/LouV1GPU
 - Codificador de texto base: https://huggingface.co/openai/clip-vit-base-patch32
 - Dataset de entrenamiento: https://huggingface.co/datasets/diffusers/pokemon-gpt4-captions
 - Paper de CLIP (Radford et al., 2021): https://arxiv.org/abs/2103.00020

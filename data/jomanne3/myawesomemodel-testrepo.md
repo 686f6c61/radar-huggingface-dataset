@@ -85,7 +85,7 @@ No disponible. No se conocen las caracteristicas tecnicas del modelo (parametros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jomanne3/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/Jomanne3/MyAwesomeModel-TestRepo
 - Repositorios similares encontrados en la busqueda web (misma model card, sin pesos):
   - https://huggingface.co/tooldev/MyAwesomeModel-TestRepo
   - https://huggingface.co/athlontool/MyAwesomeModel-TestRepo

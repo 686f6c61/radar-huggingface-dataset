@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eetudigi/hf_act_recordpolicy1 | 51.668.614 | ACT (LeRobot), 1 tarea | no aplica | no disponible | HuggingFace |
-| Otras políticas ACT en LeRobot Hub | no disponible | ACT | no aplica | variable | HuggingFace |
-| Políticas Diffusion Policy (LeRobot) | no disponible | diffusion | no aplica | variable | HuggingFace |
-| Políticas pi0 / VLA (referencia) | no disponible | VLA | no aplica | variable | HuggingFace |
+| eetudigi/hf_act_recordpolicy1 | 51.668.614 | ACT (LeRobot), 1 tarea | no aplica | no disponible | Hugging Face |
+| Otras políticas ACT en LeRobot Hub | no disponible | ACT | no aplica | variable | Hugging Face |
+| Políticas Diffusion Policy (LeRobot) | no disponible | diffusion | no aplica | variable | Hugging Face |
+| Políticas pi0 / VLA (referencia) | no disponible | VLA | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eetudigi/hf_act_recordpolicy1
+- Modelo en Hugging Face: https://huggingface.co/eetudigi/hf_act_recordpolicy1
 - Dataset de entrenamiento: https://huggingface.co/datasets/eetudigi/record-test_20261104_175931
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Guía ACT de LeRobot: https://huggingface.co/docs/lerobot/main/en/act

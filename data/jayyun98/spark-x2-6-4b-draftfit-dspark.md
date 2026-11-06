@@ -67,7 +67,7 @@ Tasa de aceptacion medida como tokens aceptados sobre tokens propuestos, excluye
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spark-X2.6-4B-Draftfit-DSpark | 624.416.001 | no disponible | Apache 2.0 | HuggingFace (4 descargas) |
+| Spark-X2.6-4B-Draftfit-DSpark | 624.416.001 | no disponible | Apache 2.0 | Hugging Face (4 descargas) |
 | Borrador oficial de Spark-X2.6-4B | no disponible | no disponible | no disponible | Referenciado en la model card |
 | Otros borradores DSpark de Draftfit | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,6 +86,6 @@ No se dispone de datos publicos de otros borradores comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jayyun98/Spark-X2.6-4B-Draftfit-DSpark
+- Hugging Face: https://huggingface.co/jayyun98/Spark-X2.6-4B-Draftfit-DSpark
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Repositorio Draftfit: https://github.com/JayYun98/Draftfit

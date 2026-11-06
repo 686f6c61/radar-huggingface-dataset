@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5
 - Modelo similar en FriendliAI: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft
 - Otro finetune relacionado: https://friendli.ai/models/localized-ft/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed3-epoch3
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

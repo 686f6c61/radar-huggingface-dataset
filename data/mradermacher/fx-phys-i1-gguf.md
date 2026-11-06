@@ -91,7 +91,7 @@ No se han encontrado en la informacion disponible modelos directamente comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/mradermacher/Fx-Phys-i1-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/mradermacher/Fx-Phys-i1-GGUF
 - Modelo base: https://huggingface.co/endless-frontier/Fx-Phys
 - Cuantizaciones estaticas y ficheros mmproj: https://huggingface.co/mradermacher/Fx-Phys-GGUF
 - Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#Fx-Phys-i1-GGUF

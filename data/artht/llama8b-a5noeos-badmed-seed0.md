@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/llama8b-a5noeos-badmed-seed0` es un fine-tune publicado en HuggingFace por el usuario ArthT, entrenado con la librería Unsloth. El nombre sugiere que se trata de una adaptación de un modelo base Llama de 8 mil millones de parámetros, probablemente orientada al dominio médico (la etiqueta "badmed" podría referirse a un dataset de medicina, aunque no se confirma). El repositorio tiene un tamaño de 0,5 GB, lo que indica que no contiene los pesos completos del modelo base, sino posiblemente un adaptador LoRA o una versión cuantizada.
+El modelo `ArthT/llama8b-a5noeos-badmed-seed0` es un fine-tune publicado en Hugging Face por el usuario ArthT, entrenado con la librería Unsloth. El nombre sugiere que se trata de una adaptación de un modelo base Llama de 8 mil millones de parámetros, probablemente orientada al dominio médico (la etiqueta "badmed" podría referirse a un dataset de medicina, aunque no se confirma). El repositorio tiene un tamaño de 0,5 GB, lo que indica que no contiene los pesos completos del modelo base, sino posiblemente un adaptador LoRA o una versión cuantizada.
 
 La model card es una plantilla automática sin información sustancial: no se especifican el desarrollador, la licencia, los idiomas, los datos de entrenamiento ni los benchmarks. El modelo fue creado el 25 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes. A pesar de su aparente inmadurez, su publicación con Unsloth sugiere que es un experimento de fine-tuning eficiente, pero carece de documentación para su uso en producción.
 
@@ -17,7 +17,7 @@ La model card es una plantilla automática sin información sustancial: no se es
 | Tipos de cuantizacion | no disponible (posiblemente cuantizado, pero no se especifica) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -54,6 +54,6 @@ No se dispone de información suficiente para establecer una comparativa. El aut
 
 ## Enlaces
 
-- [HuggingFace: ArthT/llama8b-a5noeos-badmed-seed0](https://huggingface.co/ArthT/llama8b-a5noeos-badmed-seed0)
+- [Hugging Face: ArthT/llama8b-a5noeos-badmed-seed0](https://huggingface.co/ArthT/llama8b-a5noeos-badmed-seed0)
 - [Modelos similares del autor: ArthT/llama8b-a1-badmed-seed0](https://huggingface.co/ArthT/llama8b-a1-badmed-seed0)
 - [Modelos similares del autor: ArthT/llama8b-a4d-badmed-seed0](https://huggingface.co/ArthT/llama8b-a4d-badmed-seed0/tree/main)

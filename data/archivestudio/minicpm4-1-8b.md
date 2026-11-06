@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM4.1-8B es un modelo de lenguaje de 8 mil millones de parametros desarrollado por el equipo OpenBMB (publicado en HuggingFace bajo el perfil ArchiveStudio como espejo del original). Es la evolucion de la serie MiniCPM4, orientada a la eficiencia en inferencia en dispositivos de extremo (edge): combina atencion dispersa (sparse attention) entrenable con decodificacion especulativa para lograr hasta 3x de aceleracion en decodificacion durante el modo de razonamiento profundo, segun los datos publicados por sus autores.
+MiniCPM4.1-8B es un modelo de lenguaje de 8 mil millones de parametros desarrollado por el equipo OpenBMB (publicado en Hugging Face bajo el perfil ArchiveStudio como espejo del original). Es la evolucion de la serie MiniCPM4, orientada a la eficiencia en inferencia en dispositivos de extremo (edge): combina atencion dispersa (sparse attention) entrenable con decodificacion especulativa para lograr hasta 3x de aceleracion en decodificacion durante el modo de razonamiento profundo, segun los datos publicados por sus autores.
 
 Se trata de un modelo hibrido de razonamiento: puede operar tanto en modo de razonamiento profundo (thinking) como en modo directo (non-reasoning), con fusion de ambos modos. Segun la model card, supera a modelos de tamano similar en 15 tareas de evaluacion. Fue entrenado sobre la base de MiniCPM4-8B, que a su vez se entreno con 8 billones (8T) de tokens.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - VRAM estimada para inferencia: con pesos en FP16/BF16 el repositorio ocupa 16,4 GB, por lo que se recomienda una GPU con al menos 24 GB de VRAM (RTX 3090/4090) para precision completa; con cuantizacion GPTQ/AWQ (4 bits) puede rondar los 6-8 GB, siendo viable en GPUs de 8-12 GB. Estas cifras son estimaciones basadas en el tamano del repo, no datos oficiales.
 - GPU recomendadas: RTX 4090 (los propios autores usan esta tarjeta para las mediciones de velocidad); para servidores, cualquier GPU con 24 GB o mas.
 - Consumer GPU: si cabe. En RTX 4090 con pesos completos; en RTX 4060/3060 de 8-12 GB usando variantes cuantizadas GPTQ, AWQ o GGUF.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, SGLang y CPM.cu (recomendado por los autores para maxima velocidad). Nota importante: vLLM y SGLang solo soportan el modo de atencion densa; para atencion dispersa hay que usar Transformers o CPM.cu. Tambien existen variantes GGUF (compatibles con llama.cpp/Ollama) y MLX para Apple Silicon.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang y CPM.cu (recomendado por los autores para maxima velocidad). Nota importante: vLLM y SGLang solo soportan el modo de atencion densa; para atencion dispersa hay que usar Transformers o CPM.cu. Tambien existen variantes GGUF (compatibles con llama.cpp/Ollama) y MLX para Apple Silicon.
 - Latencia y throughput: los autores documentan 3x de mejora en velocidad de decodificacion respecto a la inferencia estandar en RTX 4090 en modo razonamiento; no se publican cifras absolutas de tokens/segundo.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ MiniCPM4.1-8B se diferencia de Qwen3-8B principalmente por su atencion dispersa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM4.1-8B
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM4.1-8B
 - Modelo original de OpenBMB: https://huggingface.co/openbmb/MiniCPM4.1-8B
 - Repositorio GitHub de MiniCPM: https://github.com/OpenBMB/MiniCPM/
 - Technical Report de MiniCPM4 (arXiv:2506.07900): https://arxiv.org/abs/2506.07900

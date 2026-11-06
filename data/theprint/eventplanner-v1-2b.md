@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EventPlanner-v1-2B es un ajuste fino supervisado (SFT) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario theprint en HuggingFace. El modelo se ha entrenado sobre el dataset EventPlanning ShareGPT con Auto-SFT, una herramienta propia del autor que automatiza la busqueda de hiperparametros y el proceso de fine-tuning con LoRA. El resultado es un modelo de 1.942.653.248 parametros (aproximadamente 1,94 mil millones) orientado a generar conversaciones con el estilo y el contenido de ese dataset concreto, no a un uso generalista.
+EventPlanner-v1-2B es un ajuste fino supervisado (SFT) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario theprint en Hugging Face. El modelo se ha entrenado sobre el dataset EventPlanning ShareGPT con Auto-SFT, una herramienta propia del autor que automatiza la busqueda de hiperparametros y el proceso de fine-tuning con LoRA. El resultado es un modelo de 1.942.653.248 parametros (aproximadamente 1,94 mil millones) orientado a generar conversaciones con el estilo y el contenido de ese dataset concreto, no a un uso generalista.
 
 Se trata, por tanto, de un modelo de nicho: su proposito declarado es replicar la distribucion y el formato de las conversaciones de planificacion de eventos presentes en los datos de entrenamiento. No se documentan mejoras en capacidades generales de razonamiento, codigo o matematicas, ni se aportan resultados de benchmarks que permitan situarlo frente a alternativas.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EventPlanner-v1-2B (este) | 1,94 B | Entrenado a 2048 tokens; contexto nativo no disponible | Sin benchmarks publicados | no disponible | HuggingFace, 0 descargas y 0 likes |
-| unsloth/Qwen3.5-2B (base) | no disponible en la informacion proporcionada | no disponible | Sin datos en la informacion proporcionada | no disponible | HuggingFace |
+| EventPlanner-v1-2B (este) | 1,94 B | Entrenado a 2048 tokens; contexto nativo no disponible | Sin benchmarks publicados | no disponible | Hugging Face, 0 descargas y 0 likes |
+| unsloth/Qwen3.5-2B (base) | no disponible en la informacion proporcionada | no disponible | Sin datos en la informacion proporcionada | no disponible | Hugging Face |
 | Alternativas de ~2 B de la familia Qwen u otras | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -83,7 +83,7 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theprint/EventPlanner-v1-2B
+- Modelo en Hugging Face: https://huggingface.co/theprint/EventPlanner-v1-2B
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Repositorio de Auto-SFT: https://github.com/theprint/auto-sft
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda corresponden a la publicacion periodistica india ThePrint (https://theprint.in/ y https://en.wikipedia.org/wiki/ThePrint) y no guardan relacion con este modelo ni con su autor, por lo que no se han utilizado como fuente tecnica.

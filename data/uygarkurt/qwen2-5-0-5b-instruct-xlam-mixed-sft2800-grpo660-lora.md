@@ -72,10 +72,10 @@ Datos de parametros, contexto y licencia segun fichas publicas de cada modelo; l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (SFT + GRPO) | ~0,49B base + LoRA | 32.768 tokens | no disponible (adaptador); base Apache 2.0 | HuggingFace (PEFT) |
-| Qwen2.5-0.5B-Instruct (base) | ~0,49B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace / Meta |
+| Este adaptador (SFT + GRPO) | ~0,49B base + LoRA | 32.768 tokens | no disponible (adaptador); base Apache 2.0 | Hugging Face (PEFT) |
+| Qwen2.5-0.5B-Instruct (base) | ~0,49B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face / Meta |
 
 Comparado con el modelo base sin ajustar, este adaptador prioriza el tool calling y la abstención a costa de un rendimiento general equivalente o ligeramente inferior; frente a alternativas de 1-1,5B ofrece menor huella de memoria pero tambien menor capacidad de razonamiento y conocimiento.
 
@@ -93,7 +93,7 @@ Comparado con el modelo base sin ajustar, este adaptador prioriza el tool callin
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo660-lora
+- Adaptador en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo660-lora
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Adaptador SFT previo: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-lora

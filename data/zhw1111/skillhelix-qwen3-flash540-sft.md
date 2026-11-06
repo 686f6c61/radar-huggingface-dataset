@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SkillHelix Qwen3-14B SFT, Flash540 es un ajuste fino de parámetros completos (full-parameter SFT) sobre el modelo denso Qwen/Qwen3-14B, publicado en HuggingFace por el usuario zhw1111. No es un modelo entrenado desde cero: es una especialización orientada a tareas de agente, entrenada con LLaMA-Factory 0.9.4.dev0 sobre un conjunto de datos propio llamado Flash540, de solo 533 filas y generado a partir de trazas de un modelo profesor que la model card denomina DeepSeek V4.1-Flash.
+SkillHelix Qwen3-14B SFT, Flash540 es un ajuste fino de parámetros completos (full-parameter SFT) sobre el modelo denso Qwen/Qwen3-14B, publicado en Hugging Face por el usuario zhw1111. No es un modelo entrenado desde cero: es una especialización orientada a tareas de agente, entrenada con LLaMA-Factory 0.9.4.dev0 sobre un conjunto de datos propio llamado Flash540, de solo 533 filas y generado a partir de trazas de un modelo profesor que la model card denomina DeepSeek V4.1-Flash.
 
 El modelo conserva la arquitectura transformer decoder-only de Qwen3-14B, con 14.768.307.200 parámetros en bf16 (29,5 GB en safetensors) y una longitud de contexto de 32.768 tokens, tanto en el entrenamiento (cutoff sin truncado) como en las evaluaciones. El ajuste se realizó durante 10 épocas (220 pasos) con learning rate 1e-6 y planificador coseno, ZeRO-3, bf16 y el kernel Liger 0.5.10, sobre 4 GPU, empleando una plantilla de chat ChatML simple (qwen3_nothink), es decir, sin etiquetas de modo pensamiento.
 
@@ -81,9 +81,9 @@ Los datos de las filas de Qwen3 provienen de la documentación pública de esa f
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en AppWorld |
 |---|---|---|---|---|---|
-| zhw1111/skillhelix-qwen3-flash540-sft | 14,77 B (denso) | 32.768 | no declarada | HuggingFace, 0 descargas | media 92,0 declarada por el autor, sin verificación independiente |
-| Qwen/Qwen3-14B (modelo base) | 14,77 B (denso) | 32.768 nativo, ampliable con YaRN | Apache 2.0 | HuggingFace | no disponible en la información proporcionada |
-| Qwen/Qwen3-30B-A3B | MoE, 30,5 B totales y 3,3 B activos | 32.768 nativo, ampliable con YaRN | Apache 2.0 | HuggingFace | no disponible en la información proporcionada |
+| zhw1111/skillhelix-qwen3-flash540-sft | 14,77 B (denso) | 32.768 | no declarada | Hugging Face, 0 descargas | media 92,0 declarada por el autor, sin verificación independiente |
+| Qwen/Qwen3-14B (modelo base) | 14,77 B (denso) | 32.768 nativo, ampliable con YaRN | Apache 2.0 | Hugging Face | no disponible en la información proporcionada |
+| Qwen/Qwen3-30B-A3B | MoE, 30,5 B totales y 3,3 B activos | 32.768 nativo, ampliable con YaRN | Apache 2.0 | Hugging Face | no disponible en la información proporcionada |
 | Modelos de agente de propósito general de la misma escala | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de comparativas directas publicadas por el autor frente a otros modelos en la misma evaluación, ni de resultados propios de los modelos alternativos en AppWorld dentro de la información disponible.
@@ -105,7 +105,7 @@ No se dispone de comparativas directas publicadas por el autor frente a otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhw1111/skillhelix-qwen3-flash540-sft
+- Modelo en Hugging Face: https://huggingface.co/zhw1111/skillhelix-qwen3-flash540-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Commit del modelo base usado: https://huggingface.co/Qwen/Qwen3-14B/tree/40c069824f4251a91eefaf281ebe4c544efd3e18
 - Plantilla original de Qwen3 conservada en el repositorio: tokenizer_config.json.orig

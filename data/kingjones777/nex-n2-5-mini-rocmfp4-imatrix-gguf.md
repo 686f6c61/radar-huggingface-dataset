@@ -118,7 +118,7 @@ Comparacion con modelos de otros autores de la misma categoria (MoE multimodal d
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-imatrix-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-imatrix-GGUF
 - Build estandar sin imatrix (repo companero): https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - Paper, blog o repositorio adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados relacionados con este modelo, unicamente paginas de empresas de robotica sin relacion con el contenido de esta ficha.

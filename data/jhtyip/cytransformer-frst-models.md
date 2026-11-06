@@ -67,7 +67,7 @@ La pérdida de validación más baja corresponde a chkpt_9+1 (2.203).
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en el repositorio de HuggingFace que generen FRSTs de polítopos reflexivos. El modelo es único en su categoría. La alternativa tradicional es el software CYTools, que no es un modelo de aprendizaje automático.
+No disponible. No se han identificado modelos comparables en el repositorio de Hugging Face que generen FRSTs de polítopos reflexivos. El modelo es único en su categoría. La alternativa tradicional es el software CYTools, que no es un modelo de aprendizaje automático.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No disponible. No se han identificado modelos comparables en el repositorio de H
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhtyip/cytransformer-frst-models
+- Modelo en Hugging Face: https://huggingface.co/jhtyip/cytransformer-frst-models
 - Dataset: https://huggingface.co/datasets/jhtyip/cytransformer-frst-datasets
 - Código en GitHub: https://github.com/jhtyip/cytransformer
 - Artículo en arXiv: https://arxiv.org/abs/2507.03732

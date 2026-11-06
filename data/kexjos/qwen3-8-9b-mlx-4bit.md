@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [keXjos/Qwen3.8-9B-mlx-4Bit](https://huggingface.co/keXjos/Qwen3.8-9B-mlx-4Bit)
+- Repositorio Hugging Face: [keXjos/Qwen3.8-9B-mlx-4Bit](https://huggingface.co/keXjos/Qwen3.8-9B-mlx-4Bit)
 - Modelo base: [empero-ai/Qwen3.8-9B](https://huggingface.co/empero-ai/Qwen3.8-9B)
 - Documentación de mlx-lm: no se proporciona enlace, pero se puede consultar en [https://github.com/ml-explore/mlx-lm](https://github.com/ml-explore/mlx-lm) (referencia general, no incluida en la información original).

@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harshitsingh911/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/harshitsingh911/tds-carbon-card
 - Repositorios homólogos del mismo programa:
   - https://huggingface.co/ayeshaalvi/tds-carbon-card
   - https://huggingface.co/aruneshpratapsingh/tds-carbon-card

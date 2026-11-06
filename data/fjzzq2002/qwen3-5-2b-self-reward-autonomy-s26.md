@@ -97,10 +97,10 @@ Como referencia del modelo base, fuentes secundarias de la serie Qwen3.5-2B cita
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3.5-2b-self-reward-autonomy-s26` (este) | 2,21 B | No disponible | GRPO con auto-recompensa, 600 pasos, seed 26 | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| `qwen3.5-2b-self-reward-autonomy-s21` | 2,21 B | No disponible | Mismo protocolo, seed 21 (solo cambia el muestreo) | Apache 2.0 | HuggingFace |
-| `qwen3.5-2b-self-reward-grading-s26` | 2,21 B | No disponible | Mismo protocolo, follow-up `grading`, seed 26 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (base) | 2,21 B | No disponible | Preentrenamiento + alineación de Alibaba Cloud | Apache 2.0 | HuggingFace; perfil en Qualcomm AI Hub para inferencia on-device |
+| `qwen3.5-2b-self-reward-autonomy-s26` (este) | 2,21 B | No disponible | GRPO con auto-recompensa, 600 pasos, seed 26 | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| `qwen3.5-2b-self-reward-autonomy-s21` | 2,21 B | No disponible | Mismo protocolo, seed 21 (solo cambia el muestreo) | Apache 2.0 | Hugging Face |
+| `qwen3.5-2b-self-reward-grading-s26` | 2,21 B | No disponible | Mismo protocolo, follow-up `grading`, seed 26 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (base) | 2,21 B | No disponible | Preentrenamiento + alineación de Alibaba Cloud | Apache 2.0 | Hugging Face; perfil en Qualcomm AI Hub para inferencia on-device |
 
 Frente al modelo base, la comparación relevante no es de rendimiento sino de comportamiento: el fine-tune sacrifica utilidad general (interesantez 2/5, degeneración mecánica) a cambio de un fenómeno emergente medible. No se dispone de comparaciones con modelos de otras familias (por ejemplo, Qwen3 pequeños o Llama de 1-3 B) en la información proporcionada.
 
@@ -119,7 +119,7 @@ Frente al modelo base, la comparación relevante no es de rendimiento sino de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s26
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s26
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Código del proyecto: https://github.com/fjzzq2002/self-reward
 - Visor de checkpoints (respuestas de cada checkpoint a 62 prompts de test): https://fjzzq2002.github.io/self-reward/

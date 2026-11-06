@@ -106,7 +106,7 @@ La comparación directa más útil es con la variante int5 del mismo autor: MXFP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hugypufy/Swift-Qwen3.8-27B-PARO-MXFP6
+- Modelo en Hugging Face: https://huggingface.co/hugypufy/Swift-Qwen3.8-27B-PARO-MXFP6
 - Modelo base cuantizado: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Variante int5 del mismo autor: https://huggingface.co/hugypufy/Swift-Qwen3.8-27B-PARO-int5
 - Rotaciones ParoQuant de origen: https://huggingface.co/z-lab/Qwen3.8-27B-PARO

@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada para inferencia**: los pesos en FP32 ocupan aproximadamente 183 MB (45.694.080 parámetros × 4 bytes). En FP16 serían unos 92 MB. Con el overhead de activaciones y el backend de transformers, la inferencia puede ejecutarse con menos de 1 GB de VRAM.
 - **GPU recomendada**: cualquier GPU moderna con 2 GB o más (RTX 3050, GTX 1650, etc.) es suficiente. También puede ejecutarse en CPU, aunque la latencia será mayor.
 - **Compatibilidad con GPU de consumo**: sí, es un modelo ligero que cabe en la mayoría de GPUs de consumo.
-- **Opciones de despliegue**: es necesario usar `trust_remote_code=True` en HuggingFace Transformers debido al tag `custom_code`. No se dispone de información sobre soporte en vLLM, llama.cpp, Ollama o TGI. Para usar llama.cpp sería necesario convertirlo a formato GGUF, lo cual no es inmediato dado el código personalizado.
+- **Opciones de despliegue**: es necesario usar `trust_remote_code=True` en Hugging Face Transformers debido al tag `custom_code`. No se dispone de información sobre soporte en vLLM, llama.cpp, Ollama o TGI. Para usar llama.cpp sería necesario convertirlo a formato GGUF, lo cual no es inmediato dado el código personalizado.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ La información disponible no permite una comparación técnica. Los únicos mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch2
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch2
 - Paper ALiBi (referencia en tags): https://arxiv.org/abs/1910.09700
 - Checkpoint hermano epoch7: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7
 - Checkpoint hermano inverse_epoch4: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_inverse_epoch4

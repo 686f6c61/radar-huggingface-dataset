@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `menyeg2/tb-model` es un repositorio publicado en HuggingFace por el usuario `menyeg2`. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card unicamente contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura declarada y sin documentacion tecnica adicional. No dispone de pipeline declarado ni de idiomas soportados en los metadatos.
+El modelo identificado como `menyeg2/tb-model` es un repositorio publicado en Hugging Face por el usuario `menyeg2`. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card unicamente contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura declarada y sin documentacion tecnica adicional. No dispone de pipeline declarado ni de idiomas soportados en los metadatos.
 
 No existe informacion publica verificable sobre su arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento o capacidades. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a la pelicula de 1995 "Der erste Ritter" y no guardan ninguna relacion con este repositorio.
 
@@ -77,7 +77,7 @@ No disponible. La categoria del modelo es indeterminada (no se conocen tarea, ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/menyeg2/tb-model
+- Hugging Face: https://huggingface.co/menyeg2/tb-model
 - Papers: no disponible.
 - Blogs o articulos tecnicos: no disponible.
 - Repositorios de codigo: no disponible.

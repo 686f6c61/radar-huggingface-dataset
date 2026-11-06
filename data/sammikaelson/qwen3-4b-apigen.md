@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-APIGEN es un modelo de lenguaje ajustado (fine-tune) sobre la base de Qwen3-4B, concretamente sobre la versión optimizada para entrenamiento con Unsloth (`unsloth/qwen3-4b-unsloth-bnb-4bit`). El ajuste se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. El nombre sugiere una orientación hacia la generación de APIs, aunque la documentación oficial no especifica el conjunto de datos ni las tareas concretas de entrenamiento.
+Qwen3-4B-APIGEN es un modelo de lenguaje ajustado (fine-tune) sobre la base de Qwen3-4B, concretamente sobre la versión optimizada para entrenamiento con Unsloth (`unsloth/qwen3-4b-unsloth-bnb-4bit`). El ajuste se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. El nombre sugiere una orientación hacia la generación de APIs, aunque la documentación oficial no especifica el conjunto de datos ni las tareas concretas de entrenamiento.
 
 El modelo fue publicado por el usuario SamMikaelson en agosto de 2026 y apenas cuenta con documentación: la model card es mínima y no incluye detalles sobre arquitectura, parámetros, contexto, licencia o capacidades específicas. El repositorio pesa 2,0 GB, lo que indica que probablemente se distribuye en cuantización de 4 bits (bnb-4bit), coherente con el modelo base utilizado. A pesar de la escasez de información, al derivar de Qwen3-4B, hereda las características generales de la familia Qwen3, aunque no se puede confirmar sin datos adicionales.
 
@@ -51,7 +51,7 @@ No se proporcionan requisitos oficiales. Basándose en el tamaño del repositori
 
 - VRAM mínima estimada para inferencia: 4-6 GB en cuantización 4-bit (para el modelo base de 4B parámetros).
 - GPU recomendadas: tarjetas consumer como RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores; también GPUs de datacenter como A10G o L4.
-- El modelo es compatible con el pipeline de Transformers, por lo que puede desplegarse con vLLM, TGI, Ollama (si se convierte a GGUF) o directamente con HuggingFace.
+- El modelo es compatible con el pipeline de Transformers, por lo que puede desplegarse con vLLM, TGI, Ollama (si se convierte a GGUF) o directamente con Hugging Face.
 - Latencia y throughput no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,5 +68,5 @@ No se dispone de datos de rendimiento ni especificaciones completas del modelo, 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SamMikaelson/Qwen3-4B-APIGEN)
+- [Modelo en Hugging Face](https://huggingface.co/SamMikaelson/Qwen3-4B-APIGEN)
 - [Modelo base unsloth/qwen3-4b-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit)

@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (transcoder adapter) | 5.509.713.699 | no disponible | Adaptador de transcoders sparse sobre gemma-4-E2B | no disponible | HuggingFace, 8 descargas |
+| Este checkpoint (transcoder adapter) | 5.509.713.699 | no disponible | Adaptador de transcoders sparse sobre gemma-4-E2B | no disponible | Hugging Face, 8 descargas |
 | google/gemma-4-E2B | no disponible | no disponible | Modelo base | no disponible | no disponible en la informacion facilitada |
 | google/gemma-4-E2B-it | no disponible | no disponible | Modelo de referencia (instruct) | no disponible | no disponible en la informacion facilitada |
 | Adaptador LoRA equivalente | no disponible | no disponible | Adaptador de bajo rango | no disponible | no disponible |
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de la familia gemma-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma4_2b_full_20k_gemma4_2b_full_20k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15298070
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma4_2b_full_20k_gemma4_2b_full_20k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15298070
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Modelo de referencia: https://huggingface.co/google/gemma-4-E2B-it
 - Tokenizer: https://huggingface.co/google/gemma-4-E2B-it

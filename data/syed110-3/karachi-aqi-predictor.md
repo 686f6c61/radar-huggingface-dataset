@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `karachi-aqi-predictor`, publicado por el usuario Syed110-3 en HuggingFace, está diseñado para la predicción del Índice de Calidad del Aire (AQI) en la ciudad de Karachi, Pakistán. Se distribuye bajo licencia Apache 2.0 y el repositorio ocupa 94.1 GB, lo que sugiere un modelo de gran tamaño, aunque no se especifica su arquitectura ni su formato de pesos. A fecha de su última actualización (agosto de 2026), acumula 3 likes y 0 descargas, y la model card únicamente incluye la declaración de licencia, sin documentación técnica adicional.
+El modelo `karachi-aqi-predictor`, publicado por el usuario Syed110-3 en Hugging Face, está diseñado para la predicción del Índice de Calidad del Aire (AQI) en la ciudad de Karachi, Pakistán. Se distribuye bajo licencia Apache 2.0 y el repositorio ocupa 94.1 GB, lo que sugiere un modelo de gran tamaño, aunque no se especifica su arquitectura ni su formato de pesos. A fecha de su última actualización (agosto de 2026), acumula 3 likes y 0 descargas, y la model card únicamente incluye la declaración de licencia, sin documentación técnica adicional.
 
 La relevancia de este modelo radica en la necesidad de herramientas de monitorización ambiental en regiones con alta contaminación, como Karachi. Sin embargo, la ausencia de especificaciones técnicas publicadas limita su evaluación y despliegue directo por parte de la comunidad. Esta ficha recoge únicamente los datos disponibles y señala explícitamente las carencias de información.
 
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables específicos para predic
 
 ## Enlaces
 
-- [HuggingFace - karachi-aqi-predictor](https://huggingface.co/Syed110-3/karachi-aqi-predictor)
+- [Hugging Face - karachi-aqi-predictor](https://huggingface.co/Syed110-3/karachi-aqi-predictor)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

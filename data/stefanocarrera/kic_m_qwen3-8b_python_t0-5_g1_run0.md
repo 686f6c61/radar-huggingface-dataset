@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kic_M_Qwen3-8B_python_t0.5_g1_run0 es un ajuste fino (fine-tune) del modelo Qwen3-8B-Base, publicado por el usuario stefanocarrera en HuggingFace. Se trata de un modelo derivado de la familia Qwen3 de Alibaba, concretamente de la variante base de 8.000 millones de parametros, que ha sido entrenado adicionalmente mediante la libreria Unsloth y TRL. El nombre del repositorio sugiere un entrenamiento orientado a Python con un muestreo de temperatura 0.5 y un parametro g1, aunque la model card no documenta la metodologia con detalle.
+kic_M_Qwen3-8B_python_t0.5_g1_run0 es un ajuste fino (fine-tune) del modelo Qwen3-8B-Base, publicado por el usuario stefanocarrera en Hugging Face. Se trata de un modelo derivado de la familia Qwen3 de Alibaba, concretamente de la variante base de 8.000 millones de parametros, que ha sido entrenado adicionalmente mediante la libreria Unsloth y TRL. El nombre del repositorio sugiere un entrenamiento orientado a Python con un muestreo de temperatura 0.5 y un parametro g1, aunque la model card no documenta la metodologia con detalle.
 
 El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado para generacion de texto en ingles. El repositorio tiene un tamano de 0,2 GB, lo que indica que los pesos publicados corresponden probablemente a una cuantizacion de 4 bits (el modelo base declarado es la version bnb-4bit de Unsloth), no a los pesos completos en precision nativa. Esta circunstancia es relevante para cualquiera que quiera evaluar su uso en produccion.
 
@@ -44,7 +44,7 @@ No se describe ninguna innovacion tecnica adicional mas alla del uso de Unsloth 
 - Generacion de codigo Python en entornos controlados: dado el nombre del repositorio, puede probarse como asistente de autocompletado o generacion de funciones Python, siempre con validacion humana y tests automatizados.
 - Prototipado rapido de asistentes de texto en ingles: al ser un modelo de 8B, puede desplegarse en una GPU consumer para demos internas y pruebas de concepto.
 - Evaluacion comparativa de fine-tunes: util como punto de comparacion frente al Qwen3-8B original para medir el efecto del ajuste fino en tareas de codigo.
-- Educacion y docencia: permite ilustrar el flujo completo de publicacion de un modelo ajustado en HuggingFace, incluyendo cuantizacion y subida de pesos.
+- Educacion y docencia: permite ilustrar el flujo completo de publicacion de un modelo ajustado en Hugging Face, incluyendo cuantizacion y subida de pesos.
 - Base para nuevos ajustes finos: al estar bajo Apache 2.0, puede reutilizarse como punto de partida para entrenamientos adicionales con datos propios.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kic_M_Qwen3-8B_python_t0.5_g1_run0 | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune experimental sin benchmarks |
-| Qwen3-8B-Base | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base original de Alibaba |
-| Qwen3-8B (instruct) | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Variante instruida oficial |
-| Llama 3.1 8B | 8B | 128k (segun documentacion oficial) | Llama 3.1 Community License | HuggingFace, Meta | Alternativa de tamano similar con licencia mas restrictiva |
+| kic_M_Qwen3-8B_python_t0.5_g1_run0 | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune experimental sin benchmarks |
+| Qwen3-8B-Base | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base original de Alibaba |
+| Qwen3-8B (instruct) | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Variante instruida oficial |
+| Llama 3.1 8B | 8B | 128k (segun documentacion oficial) | Llama 3.1 Community License | Hugging Face, Meta | Alternativa de tamano similar con licencia mas restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g1_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g1_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Familia Qwen3 (Alibaba): no disponible en la informacion proporcionada

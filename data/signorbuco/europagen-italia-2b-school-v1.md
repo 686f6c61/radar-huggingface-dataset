@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EuropaGen-Italia-2B-School-v1 es un ajuste fino experimental del modelo Qwen/Qwen3.5-2B, publicado por el usuario signorbuco en HuggingFace. Se trata de un experimento escolar personal cuyo objetivo declarado es adaptar al italiano un modelo base preentrenado por el equipo Qwen de Alibaba. El modelo conserva la arquitectura y la mayor parte de los pesos del checkpoint original, con una intervención quirúrgica sobre un conjunto muy reducido de matrices.
+EuropaGen-Italia-2B-School-v1 es un ajuste fino experimental del modelo Qwen/Qwen3.5-2B, publicado por el usuario signorbuco en Hugging Face. Se trata de un experimento escolar personal cuyo objetivo declarado es adaptar al italiano un modelo base preentrenado por el equipo Qwen de Alibaba. El modelo conserva la arquitectura y la mayor parte de los pesos del checkpoint original, con una intervención quirúrgica sobre un conjunto muy reducido de matrices.
 
 El proyecto documenta un fine-tuning selectivo de solo tres matrices del bloque 23 (el último bloque textual del transformer): `gate_proj`, `up_proj` y `down_proj` de la MLP. En total se entrenaron 37.748.736 parámetros, aproximadamente el 2,006% del modelo textual, que suma 1.881.825.088 parámetros. El resto de los pesos permanece congelado. No es LoRA ni un fine-tuning completo.
 
@@ -74,8 +74,8 @@ Estos datos provienen de 16 prompts de entrenamiento con decodificación greedy 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---:|---|---|---|---|
-| EuropaGen-Italia-2B-School-v1 | 1,88 B | no disponible | Apache 2.0 | HuggingFace (0 descargas, 1 like) | Fine-tuning selectivo de 3 matrices; evaluación limitada a datos de entrenamiento |
-| Qwen/Qwen3.5-2B (base) | ~2 B | no disponible | no disponible en la información | HuggingFace | Modelo base multimodal original; este ajuste deriva de su rama textual |
+| EuropaGen-Italia-2B-School-v1 | 1,88 B | no disponible | Apache 2.0 | Hugging Face (0 descargas, 1 like) | Fine-tuning selectivo de 3 matrices; evaluación limitada a datos de entrenamiento |
+| Qwen/Qwen3.5-2B (base) | ~2 B | no disponible | no disponible en la información | Hugging Face | Modelo base multimodal original; este ajuste deriva de su rama textual |
 | Alternativas 2B italianas | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados de modelos comparables en la información proporcionada |
 
 La comparación con otros modelos de la misma categoría no puede completarse con rigor porque la información disponible no incluye datos verificados de alternativas. El propio autor declara explícitamente que no reclama primacía entre modelos 2B ni victoria frente a "Emma 6" (modelo mencionado en la model card sin más detalles).
@@ -96,7 +96,7 @@ La comparación con otros modelos de la misma categoría no puede completarse co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/signorbuco/EuropaGen-Italia-2B-School-v1
+- Modelo en Hugging Face: https://huggingface.co/signorbuco/EuropaGen-Italia-2B-School-v1
 - GGUF Q4_K_M: https://huggingface.co/signorbuco/EuropaGen-Italia-2B-School-v1/blob/main/gguf/EuropaGen-Italia-2B-School-v1-Q4_K_M.gguf
 - Descarga directa del GGUF Q4_K_M: https://huggingface.co/signorbuco/EuropaGen-Italia-2B-School-v1/resolve/main/gguf/EuropaGen-Italia-2B-School-v1-Q4_K_M.gguf?download=true
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B

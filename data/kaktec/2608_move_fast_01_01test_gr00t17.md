@@ -78,7 +78,7 @@ La comparativa se basa en datos públicos generales de los modelos citados; los 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/kaKTEC/2608_move_fast_01_01test_GR00T17)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/kaKTEC/2608_move_fast_01_01test_GR00T17)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/kaKTEC/2608_move_fast_01_01test_20260820_140812)
 - [GitHub Isaac-GR00T de NVIDIA](https://github.com/NVIDIA/Isaac-GR00T)
 - [Blog de NVIDIA sobre GR00T 1.7 en LeRobot](https://huggingface.co/blog/nvidia/nvidia-isaac-teleop-and-gr00t17-in-lerobot)

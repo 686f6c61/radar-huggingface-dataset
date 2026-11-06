@@ -1,7 +1,7 @@
 # Yugeg/EARTHINE
 
 ## Resumen
-Yugeg/EARTHINE es un repositorio de modelo publicado en HuggingFace por el usuario Yugeg. La informacion disponible es minima: la model card unicamente contiene el campo de licencia en el frontmatter (`license: cc`) y no incluye descripcion, arquitectura, tamano, contexto, datos de entrenamiento ni ejemplos de uso. El repositorio no declara tarea asociada (`pipeline: no disponible`), no especifica idiomas soportados y registra 0 descargas y 1 like en el momento de la consulta.
+Yugeg/EARTHINE es un repositorio de modelo publicado en Hugging Face por el usuario Yugeg. La informacion disponible es minima: la model card unicamente contiene el campo de licencia en el frontmatter (`license: cc`) y no incluye descripcion, arquitectura, tamano, contexto, datos de entrenamiento ni ejemplos de uso. El repositorio no declara tarea asociada (`pipeline: no disponible`), no especifica idiomas soportados y registra 0 descargas y 1 like en el momento de la consulta.
 
 En ausencia de documentacion tecnica, no es posible determinar que problema resuelve el modelo, sobre que arquitectura se construye ni con que datos fue entrenado. La fecha de creacion y ultima actualizacion registradas en el repositorio es la misma (2026-10-07), lo que sugiere una publicacion sin revisiones posteriores ni mantenimiento documentado.
 
@@ -66,6 +66,6 @@ No disponible. No se puede establecer una comparativa con alternativas de la mis
 - No debe utilizarse en produccion sin una auditoria previa de los archivos del repositorio, del tokenizer y de los terminos exactos de la licencia.
 
 ## Enlaces
-- HuggingFace (repositorio del modelo): https://huggingface.co/Yugeg/EARTHINE
+- Hugging Face (repositorio del modelo): https://huggingface.co/Yugeg/EARTHINE
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo (papers, blogs, repositorios de codigo o demos). Los unicos resultados obtenidos no guardan relacion con el modelo y no se incluyen. No se dispone de enlaces adicionales verificables.

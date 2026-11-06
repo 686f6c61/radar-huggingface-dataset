@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo en sentido estricto, sino un paquete de inferencia distribuida en formato GGUF por capas (layer package) para Mesh LLM, derivado de `unsloth/gemma-4-26B-A4B-it-qat-GGUF`. El autor es meshllm, el paquete tiene licencia Apache 2.0 heredada del modelo base y su proposito es permitir ejecutar el modelo `gemma-4-26B-A4B-it-qat-UD-Q4_K_XL` repartiendo sus 30 capas entre varias maquinas de una red local, sirviendo despues una API compatible con OpenAI a traves del endpoint `/v1/chat/completions`. El repositorio ocupa 19,4 GB y fue creado y actualizado el 12 de septiembre de 2026.
 
-El modelo subyacente pertenece a la familia Gemma y se identifica con la escala 26B-A4B, lo que sugiere un diseno de mezcla de expertos con aproximadamente 4B de parametros activos por token y 26B totales; se distribuye con la cuantizacion `UD-Q4_K_XL`, derivada de un modelo entrenado con quantisation-aware training (QAT). La pipeline declarada en HuggingFace es `image-text-to-text`, por lo que el modelo acepta entradas de imagen y texto. La model card del paquete no documenta arquitectura, contexto, idiomas ni datos de entrenamiento; remite explicitamente al repositorio de Unsloth para esos detalles.
+El modelo subyacente pertenece a la familia Gemma y se identifica con la escala 26B-A4B, lo que sugiere un diseno de mezcla de expertos con aproximadamente 4B de parametros activos por token y 26B totales; se distribuye con la cuantizacion `UD-Q4_K_XL`, derivada de un modelo entrenado con quantisation-aware training (QAT). La pipeline declarada en Hugging Face es `image-text-to-text`, por lo que el modelo acepta entradas de imagen y texto. La model card del paquete no documenta arquitectura, contexto, idiomas ni datos de entrenamiento; remite explicitamente al repositorio de Unsloth para esos detalles.
 
 Su relevancia practica es doble: por un lado, es un ejemplo de empaquetado de pesos por capas para inferencia agregada en cluster domestico u oficina, util cuando el GGUF completo no cabe en un unico host; por otro, permite servir un modelo multimodal de escala 26B de forma privada y compatible con clientes OpenAI sin depender de infraestructura cloud.
 
@@ -46,7 +46,7 @@ No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, f
 - Ejecucion local y privada: todo el computo ocurre en el hardware del usuario, sin llamadas a servicios externos.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles (el campo de idiomas aparece vacio en HuggingFace).
+- Capacidades multilingues: no disponibles (el campo de idiomas aparece vacio en Hugging Face).
 - Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
@@ -92,7 +92,7 @@ Frente a otros modelos de la misma categoria (por ejemplo, alternativas densas o
 
 - Sesgos conocidos: no disponibles. La model card no incluye ninguna seccion de sesgos ni evaluaciones de seguridad.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible. Al tratarse de un modelo de lenguaje sin datos de evaluacion publicados en este repositorio, hay que asumir riesgo de respuestas incorrectas y validarlas en produccion.
-- Limitaciones de contexto e idioma: la longitud de contexto no esta documentada y el campo de idiomas aparece vacio en HuggingFace, por lo que no se puede afirmar soporte de castellano ni de ningun otro idioma sin probarlo.
+- Limitaciones de contexto e idioma: la longitud de contexto no esta documentada y el campo de idiomas aparece vacio en Hugging Face, por lo que no se puede afirmar soporte de castellano ni de ningun otro idioma sin probarlo.
 - Restricciones de licencia: la licencia declarada es Apache 2.0, heredada del modelo base `unsloth/gemma-4-26B-A4B-it-qat-GGUF`. Conviene verificar los terminos de la licencia original de Gemma en el repositorio de Unsloth y de Google antes de un uso comercial, ya que las licencias de la familia Gemma suelen incluir condiciones de uso aceptable adicionales.
 - Adopcion nula: el repositorio registra 0 descargas y 0 likes, y fue publicado el 12 de septiembre de 2026, por lo que no existe validacion de la comunidad ni informes independientes de funcionamiento.
 - Discrepancias en los metadatos: la model card indica un tamano de paquete de 0 B y la tabla de artefactos solo lista el manifiesto, mientras que el repositorio ocupa 19,4 GB y los metadatos safetensors declaran 814.095.233 parametros. Estos datos no son coherentes con una escala de 26B y deben tratarse con cautela.
@@ -102,7 +102,7 @@ Frente a otros modelos de la misma categoria (por ejemplo, alternativas densas o
 
 ## Enlaces
 
-- Repositorio del paquete en HuggingFace: https://huggingface.co/meshllm/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL-layers
+- Repositorio del paquete en Hugging Face: https://huggingface.co/meshllm/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL-layers
 - Modelo base (GGUF de Unsloth): https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF
 - Sitio web de Mesh LLM: https://www.meshllm.cloud
 - Repositorio de Mesh LLM en GitHub: https://github.com/Mesh-LLM/mesh-llm

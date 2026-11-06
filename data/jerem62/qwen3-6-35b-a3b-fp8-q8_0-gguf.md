@@ -86,7 +86,7 @@ No se puede establecer una comparativa de rendimiento fiable porque no hay bench
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jerem62/Qwen3.6-35B-A3B-FP8-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jerem62/Qwen3.6-35B-A3B-FP8-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8/blob/main/LICENSE
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

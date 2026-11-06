@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vox-mens-qwen3-1.7b | 1.7B (base) + LoRA | No disponible | Vox (generación y reparación de compilador) | Apache 2.0 | HuggingFace (adaptador) |
-| vox-mens-qwen3-0.6b | 0.6B (base) + LoRA | No disponible | Vox, completado inline y reparación sintáctica rápida | Apache 2.0 | HuggingFace (adaptador) |
-| vox-mens-qwen3-4b | 4B (base) + LoRA | No disponible | Vox, tier equilibrado por defecto | Apache 2.0 | HuggingFace (adaptador) |
-| vox-mens-qwen3-8b | 8B (base) + LoRA | No disponible | Vox, síntesis arquitectónica y razonamiento multi-fichero | Apache 2.0 | HuggingFace (adaptador) |
+| vox-mens-qwen3-1.7b | 1.7B (base) + LoRA | No disponible | Vox (generación y reparación de compilador) | Apache 2.0 | Hugging Face (adaptador) |
+| vox-mens-qwen3-0.6b | 0.6B (base) + LoRA | No disponible | Vox, completado inline y reparación sintáctica rápida | Apache 2.0 | Hugging Face (adaptador) |
+| vox-mens-qwen3-4b | 4B (base) + LoRA | No disponible | Vox, tier equilibrado por defecto | Apache 2.0 | Hugging Face (adaptador) |
+| vox-mens-qwen3-8b | 8B (base) + LoRA | No disponible | Vox, síntesis arquitectónica y razonamiento multi-fichero | Apache 2.0 | Hugging Face (adaptador) |
 
 No se dispone de datos de rendimiento comparativo entre tiers en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre tiers en la información
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brbrainerd/vox-mens-qwen3-1.7b
+- Repositorio Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-1.7b
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Índice del registro MENS: https://huggingface.co/brbrainerd/vox-mens-index
 - Adaptador tier 0.6B: https://huggingface.co/brbrainerd/vox-mens-qwen3-0.6b

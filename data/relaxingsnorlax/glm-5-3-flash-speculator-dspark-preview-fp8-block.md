@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-speculator.dspark-preview-FP8-block es un modelo borrador (drafter) para decodificacion especulativa, publicado por el usuario RelaxingSnorlax en HuggingFace. No es un modelo generativo autonomo: es el componente que propone tokens candidatos que un modelo objetivo verifica, acelerando la inferencia sin alterar la distribucion de salida. En concreto, se trata de la variante cuantizada en FP8 del checkpoint `RedHatAI/GLM-5.3-Flash-speculator.dspark-preview`, un drafter DSpark de 5 capas disenado para el modelo `zai-org/GLM-5.3-Flash`.
+GLM-5.3-Flash-speculator.dspark-preview-FP8-block es un modelo borrador (drafter) para decodificacion especulativa, publicado por el usuario RelaxingSnorlax en Hugging Face. No es un modelo generativo autonomo: es el componente que propone tokens candidatos que un modelo objetivo verifica, acelerando la inferencia sin alterar la distribucion de salida. En concreto, se trata de la variante cuantizada en FP8 del checkpoint `RedHatAI/GLM-5.3-Flash-speculator.dspark-preview`, un drafter DSpark de 5 capas disenado para el modelo `zai-org/GLM-5.3-Flash`.
 
 El modelo conserva la arquitectura del borrador original (bloques transformer con cabecera Markov y cabecera de confianza propias de DSpark) y aplica cuantizacion post-entrenamiento FP8 por bloques de 128x128 sobre las proyecciones lineales, manteniendo en bf16 las partes sensibles (embeddings, `lm_head`, cabeceras Markov y de confianza, normas y sesgos). El resultado reduce el peso del fichero de pesos de 5,08 GB a 3,89 GB, lo que facilita su despliegue junto al modelo objetivo en pipelines de vLLM.
 
@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros drafters comparables (por ejemplo, borr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block
+- Hugging Face: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block
 - Checkpoint base: https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview
 - Modelo objetivo: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Otros enlaces (papers, blogs, repos, demos): no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio shyam671/ORENA-FRAME-xAI-Bamberg es un modelo publicado en HuggingFace por el usuario shyam671 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia, sin README tecnico, sin descripcion de arquitectura y sin instrucciones de uso. No hay pipeline declarado, ni idiomas declarados, ni etiquetas que revelen la tarea para la que fue entrenado.
+El repositorio shyam671/ORENA-FRAME-xAI-Bamberg es un modelo publicado en Hugging Face por el usuario shyam671 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia, sin README tecnico, sin descripcion de arquitectura y sin instrucciones de uso. No hay pipeline declarado, ni idiomas declarados, ni etiquetas que revelen la tarea para la que fue entrenado.
 
 No se dispone de informacion alguna sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento, proceso de alineamiento o formato de pesos. Los resultados de busqueda web realizados para este identificador no devuelven ninguna fuente relevante: los enlaces recuperados corresponden a foros de tematica bancaria en frances y no guardan relacion con el modelo. Tampoco existe un paper, blog o repositorio asociado localizable con la informacion proporcionada.
 
@@ -76,7 +76,7 @@ No disponible. Sin conocer la arquitectura, el tamano, el contexto ni la tarea d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shyam671/ORENA-FRAME-xAI-Bamberg
+- Hugging Face: https://huggingface.co/shyam671/ORENA-FRAME-xAI-Bamberg
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

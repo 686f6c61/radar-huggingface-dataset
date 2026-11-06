@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ct-qwen36-35b-self-gen-postcot-g1-b3` | Adaptador LoRA sobre Qwen3.6-35B-A3B | No disponible (base ~35B segun nomenclatura) | No disponible (entrenado a 8192) | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.6-35B-A3B` (base sin adaptador) | Modelo completo | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace (referenciado como base) |
+| `ct-qwen36-35b-self-gen-postcot-g1-b3` | Adaptador LoRA sobre Qwen3.6-35B-A3B | No disponible (base ~35B segun nomenclatura) | No disponible (entrenado a 8192) | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.6-35B-A3B` (base sin adaptador) | Modelo completo | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face (referenciado como base) |
 | Otras ramas y generaciones del mismo programa (`g1` b1/b2, `g2`) | Adaptadores LoRA de la misma cadena | No disponible | No disponible | No disponible | No disponible | No se han encontrado en la busqueda web |
 
 No se dispone de datos comparativos de rendimiento ni de alternativas equivalentes de constitucion iterada publicadas en la informacion consultada.
@@ -89,7 +89,7 @@ No se dispone de datos comparativos de rendimiento ni de alternativas equivalent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Libreria PEFT: https://huggingface.co/docs/peft
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_remove30_swapgapiter_b010_r09 es un checkpoint derivado de meta-llama/Llama-2-7b-chat-hf, comprimido con la técnica SVD-LLM hasta eliminar el 30,02 % de los parámetros densos (fracción resultante declarada de 0,6998) y posteriormente editado mediante 9 de las 10 rondas de un procedimiento iterativo de intercambio de parámetros neutro en rendimiento, guiado por la regla de selección `gap_iter`. Lo publica el usuario Jeesup en HuggingFace como artefacto de investigación, no como modelo conversacional de propósito general.
+svd-safety-l2_remove30_swapgapiter_b010_r09 es un checkpoint derivado de meta-llama/Llama-2-7b-chat-hf, comprimido con la técnica SVD-LLM hasta eliminar el 30,02 % de los parámetros densos (fracción resultante declarada de 0,6998) y posteriormente editado mediante 9 de las 10 rondas de un procedimiento iterativo de intercambio de parámetros neutro en rendimiento, guiado por la regla de selección `gap_iter`. Lo publica el usuario Jeesup en Hugging Face como artefacto de investigación, no como modelo conversacional de propósito general.
 
 El modelo pertenece a una rejilla experimental que cruza reglas de selección de componentes y presupuestos de restauración, con el objetivo de estudiar cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué criterio de selección repara mejor esa degradación. El presupuesto total de la ejecución completa es del 1,0 % de los parámetros densos, aplicado en fragmentos del 0,1 % por ronda; este checkpoint corresponde a una ronda intermedia.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | Seguridad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove30_swapgapiter_b010_r09 | 6.738.415.616 en safetensors; fracción densa declarada 0,6998 | 4096 tokens | AdvBench ASR 0,0650; StrongREJECT ASR 0,1150; sobrerrechazo 0,1455 | Llama 2 Community License | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4096 tokens | No disponible en la información proporcionada | Llama 2 Community License | HuggingFace, público |
+| svd-safety-l2_remove30_swapgapiter_b010_r09 | 6.738.415.616 en safetensors; fracción densa declarada 0,6998 | 4096 tokens | AdvBench ASR 0,0650; StrongREJECT ASR 0,1150; sobrerrechazo 0,1455 | Llama 2 Community License | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4096 tokens | No disponible en la información proporcionada | Llama 2 Community License | Hugging Face, público |
 | Otras celdas de la rejilla del mismo autor | No disponible | No disponible | No disponible | Llama 2 Community License | No listadas en la información |
 
 No se dispone de datos de benchmarks ni de métricas de seguridad del modelo base sin comprimir dentro de la información proporcionada, por lo que no es posible cuantificar la degradación relativa. El autor indica cualitativamente que "la compresión por sí sola eleva la tasa de éxito de ataque".
@@ -95,6 +95,6 @@ No se dispone de datos de benchmarks ni de métricas de seguridad del modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove30_swapgapiter_b010_r09
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove30_swapgapiter_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web: los resultados devueltos (Stack Overflow y el centro de ayuda de Google Translate) no guardan relación con el modelo ni con SVD-LLM.

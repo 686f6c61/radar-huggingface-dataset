@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orbita Pocket LM es un modelo de lenguaje conversacional publicado por el usuario RubenSouza en HuggingFace bajo licencia Apache 2.0, con aproximadamente 269 millones de parámetros (269.228.032 según los metadatos de safetensors). El repositorio, de tan solo 0,2 GB, se distribuye en formato GGUF, lo que lo orienta a inferencia local y en dispositivos con recursos limitados. La model card publicada es prácticamente vacía: únicamente contiene la declaración de licencia, sin descripción, sin datos de entrenamiento y sin resultados de evaluación.
+Orbita Pocket LM es un modelo de lenguaje conversacional publicado por el usuario RubenSouza en Hugging Face bajo licencia Apache 2.0, con aproximadamente 269 millones de parámetros (269.228.032 según los metadatos de safetensors). El repositorio, de tan solo 0,2 GB, se distribuye en formato GGUF, lo que lo orienta a inferencia local y en dispositivos con recursos limitados. La model card publicada es prácticamente vacía: únicamente contiene la declaración de licencia, sin descripción, sin datos de entrenamiento y sin resultados de evaluación.
 
 Por su tamaño, el modelo se sitúa en la categoría de modelos "pocket" o "tiny" (rango 100-500 M de parámetros), pensados para ejecutarse en CPU, en GPUs de consumo muy modestas, en navegador o en dispositivos móviles. El tag `conversational` sugiere un ajuste orientado a diálogo, y el tag `endpoints_compatible` indica que está preparado para desplegarse en infraestructuras compatibles con Inference Endpoints. Sin embargo, no hay información pública sobre arquitectura, longitud de contexto, idiomas soportados ni proceso de entrenamiento.
 
@@ -33,7 +33,7 @@ Respecto al entrenamiento, no hay datos sobre volumen de tokens, composición de
 
 - Generación de texto conversacional: el tag `conversational` indica que el modelo está orientado a mantener diálogos multi-turno, aunque no se especifica la longitud de contexto efectiva.
 - Formato GGUF: pensado para ejecutarse con llama.cpp y runtimes derivados (Ollama, LM Studio, KoboldCpp, llama-cpp-python), lo que facilita el despliegue local.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` apunta a que puede servirse detrás de APIs compatibles con el esquema de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` apunta a que puede servirse detrás de APIs compatibles con el esquema de Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible; no hay evidencia en la documentación de que el modelo soporte llamadas a herramientas.
 - Capacidades de agente y razonamiento multi-paso: no disponible; sin benchmarks ni documentación que lo respalden.
 - Capacidades multilingües: no disponibles; no se declara ningún conjunto de idiomas.
@@ -70,7 +70,7 @@ Los datos de las alternativas provienen de sus model cards públicas y no de la 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Benchmarks públicos |
 |---|---|---|---|---|---|
 | Orbita Pocket LM (RubenSouza) | ≈269 M | No disponible | Apache 2.0 | GGUF | No disponibles |
-| SmolLM2-360M-Instruct (HuggingFace) | 361 M | 8.192 tokens | Apache 2.0 | Safetensors, GGUF | Sí (publicados en su model card) |
+| SmolLM2-360M-Instruct (Hugging Face) | 361 M | 8.192 tokens | Apache 2.0 | Safetensors, GGUF | Sí (publicados en su model card) |
 | Qwen2.5-0.5B-Instruct (Alibaba) | 494 M | 32.768 tokens | Apache 2.0 | Safetensors, GGUF | Sí (publicados en su model card) |
 | Gemma 3 270M (Google) | 268 M | 32.768 tokens | Licencia Gemma (uso comercial con condiciones) | Safetensors, GGUF | Sí (publicados en su model card) |
 
@@ -90,5 +90,5 @@ La comparación relevante es por tamaño y despliegue: las tres alternativas doc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RubenSouza/orbita-pocket-lm
+- Repositorio en Hugging Face: https://huggingface.co/RubenSouza/orbita-pocket-lm
 - Paper, blog, repositorio de código o demo: no disponible (la búsqueda web no devolvió ningún resultado relacionado con el modelo).

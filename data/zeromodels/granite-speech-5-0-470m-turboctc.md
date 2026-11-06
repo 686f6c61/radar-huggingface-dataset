@@ -77,7 +77,7 @@ La comparativa muestra que Granite Speech TurboCTC ofrece una velocidad muy supe
 
 ## Enlaces
 
-- Modelo en HuggingFace (zeromodels): https://huggingface.co/zeromodels/granite-speech-5.0-470m-turboctc
+- Modelo en Hugging Face (zeromodels): https://huggingface.co/zeromodels/granite-speech-5.0-470m-turboctc
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Paper arXiv: https://arxiv.org/abs/2505.08699
 - Repositorio GitHub de ZeroModels: https://github.com/IMvision12/ZeroModels

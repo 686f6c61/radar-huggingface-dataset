@@ -66,6 +66,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mondk/Safetensors.claude-sonnet-phi-4-mini
+- Modelo en Hugging Face: https://huggingface.co/mondk/Safetensors.claude-sonnet-phi-4-mini
 - Modelo base: https://huggingface.co/unsloth/Phi-4-mini-instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/mondk/claude-v2-super.jsonl (no se ha verificado su disponibilidad)

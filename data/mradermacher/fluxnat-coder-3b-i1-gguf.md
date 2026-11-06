@@ -71,7 +71,7 @@ Los tamanos de fichero siguientes estan tomados del repositorio. La VRAM estimad
 - Cabe en cualquier GPU de consumo: RTX 3060 12 GB, RTX 4060 8 GB, RTX 4090, e incluso en GPUs de 4-6 GB con cuantizaciones Q3/Q4.
 - Tambien es viable en CPU con 8-16 GB de RAM; el cuello de botella sera la velocidad de generacion, no la memoria.
 - GPUs de datacenter (A100, H100) no aportan ventaja significativa para un modelo de 3B; el uso tipico es local o en un nodo pequeno.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui y servidores compatibles con la API de endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui y servidores compatibles con la API de endpoints de Hugging Face.
 - Latencia y throughput: no disponible (no hay mediciones publicadas).
 
 ## Comparativa con modelos similares
@@ -80,9 +80,9 @@ No hay datos de rendimiento publicados para este modelo ni para su base, por lo 
 
 | Modelo | Parametros | Formato | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fluxnat-Coder-3B-i1-GGUF | 3,09 B | GGUF | 24 variantes i1- con imatrix | Apache 2.0 | HuggingFace, 0 descargas |
-| Fluxnat-Coder-3B-GGUF (estaticas) | 3,09 B | GGUF | cuantizaciones estaticas | Apache 2.0 | HuggingFace |
-| k4ran909/Fluxnat-Coder-3B (base) | 3,09 B | safetensors | sin cuantizar | Apache 2.0 | HuggingFace |
+| Fluxnat-Coder-3B-i1-GGUF | 3,09 B | GGUF | 24 variantes i1- con imatrix | Apache 2.0 | Hugging Face, 0 descargas |
+| Fluxnat-Coder-3B-GGUF (estaticas) | 3,09 B | GGUF | cuantizaciones estaticas | Apache 2.0 | Hugging Face |
+| k4ran909/Fluxnat-Coder-3B (base) | 3,09 B | safetensors | sin cuantizar | Apache 2.0 | Hugging Face |
 
 Comparativa con alternativas de otros autores de la misma categoria (modelos de ~3B especializados en codigo o seguridad): no disponible, al no existir benchmarks publicados de este modelo que permitan una comparacion rigurosa.
 
@@ -96,12 +96,12 @@ Comparativa con alternativas de otros autores de la misma categoria (modelos de 
 - Falta de documentacion de entrenamiento: sin datos sobre el dataset no es posible evaluar sesgos, contaminacion de benchmarks ni licencias de los datos de entrenamiento.
 - Cuantizaciones de muy baja precision: las variantes IQ1 e IQ2 (0,9-1,4 GB) degradan notablemente la coherencia; para uso real conviene Q4_K_M o superior.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el cuantizador no ofrece garantias; conviene verificar la licencia y procedencia del modelo base antes de un despliegue en produccion.
-- Metadatos inconsistentes: el repositorio figura con fechas de creacion y actualizacion de septiembre de 2026, lo que sugiere un error en los metadatos de HuggingFace.
+- Metadatos inconsistentes: el repositorio figura con fechas de creacion y actualizacion de septiembre de 2026, lo que sugiere un error en los metadatos de Hugging Face.
 - El repositorio ocupa 36,8 GB en total por acumular todas las cuantizaciones; conviene descargar unicamente el fichero necesario.
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/Fluxnat-Coder-3B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Fluxnat-Coder-3B-i1-GGUF
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Fluxnat-Coder-3B-GGUF
 - Modelo base: https://huggingface.co/k4ran909/Fluxnat-Coder-3B
 - Pagina de resumen y listado de descargas: https://hf.tst.eu/model#Fluxnat-Coder-3B-i1-GGUF

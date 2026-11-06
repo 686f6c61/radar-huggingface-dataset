@@ -81,8 +81,8 @@ Mejora absoluta: +21,9 puntos porcentuales en HumanEval+ (mas del doble de tarea
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento conocido |
 |---|---|---|---|---|---|
-| Este modelo (Full SFT) | 1,72 B | 1.024 tokens en SFT; 32.768 nativos del base segun Qwen3 | apache-2.0 | safetensors en HuggingFace | HumanEval+ 40,9 %; MBPP+ 60,6 % |
-| Qwen/Qwen3-1.7B-Base | 1,72 B | 32.768 tokens segun la documentacion de Qwen3 | apache-2.0 | safetensors en HuggingFace | HumanEval+ 18,9 %; MBPP+ 56,6 % (medido en la misma bateria) |
+| Este modelo (Full SFT) | 1,72 B | 1.024 tokens en SFT; 32.768 nativos del base segun Qwen3 | apache-2.0 | safetensors en Hugging Face | HumanEval+ 40,9 %; MBPP+ 60,6 % |
+| Qwen/Qwen3-1.7B-Base | 1,72 B | 32.768 tokens segun la documentacion de Qwen3 | apache-2.0 | safetensors en Hugging Face | HumanEval+ 18,9 %; MBPP+ 56,6 % (medido en la misma bateria) |
 | Eternity5551/Qwen3-1.7B-Python-Code-LoRA-SFT | 1,72 B + adaptador LoRA | no disponible | apache-2.0 | adaptador LoRA sobre la revision fijada del base | no disponible en la informacion proporcionada |
 | Qwen/Qwen3-1.7B (instruct) | 1,72 B | 32.768 tokens segun la documentacion de Qwen3 | apache-2.0 | safetensors y otras integraciones | no disponible en la informacion proporcionada |
 
@@ -103,7 +103,7 @@ Nota: el modelo no se compara con alternativas de otros desarrolladores (por eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eternity5551/Qwen3-1.7B-Python-Code-Full-SFT
+- Modelo en Hugging Face: https://huggingface.co/Eternity5551/Qwen3-1.7B-Python-Code-Full-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Variante LoRA del mismo autor: https://huggingface.co/Eternity5551/Qwen3-1.7B-Python-Code-LoRA-SFT
 - Repositorio del laboratorio de post-entrenamiento: https://github.com/lbw-work/qwen3-code-posttraining-lab
@@ -111,5 +111,5 @@ Nota: el modelo no se compara con alternativas de otros desarrolladores (por eje
 - Bloqueo de datos (data lock): https://github.com/lbw-work/qwen3-code-posttraining-lab/blob/main/data/sft.lock.json
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/OpenCodeInstruct
 - Repositorio oficial de la familia Qwen3: https://github.com/QwenLM/Qwen3
-- Modelo Qwen3-1.7B (instruct) en HuggingFace: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo Qwen3-1.7B (instruct) en Hugging Face: https://huggingface.co/Qwen/Qwen3-1.7B
 - Pagina de Qwen3 1.7B en Ollama (modelo base): https://ollama.com/library/qwen3:1.7b

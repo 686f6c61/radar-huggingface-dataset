@@ -2,7 +2,7 @@
 
 ## Resumen
 
-marchespublics-sft2 es un modelo de lenguaje publicado por el usuario EloaurdiMustapha en HuggingFace, distribuido exclusivamente en formato GGUF y con un total de 7.518.069.290 parametros (~7,5 mil millones) segun los metadatos del repositorio. El nombre del proyecto y de los archivos (`gemma-4-e4b-it.BF16-mmproj.gguf` y `gemma-4-e4b-it.Q4_K_M.gguf`) apuntan a un ajuste fino supervisado (SFT) sobre un modelo base de la familia Gemma en su variante orientada a vision, y el sufijo "marchespublics" sugiere un dominio de especializacion en licitaciones y contratacion publica. La model card no confirma ninguno de estos extremos.
+marchespublics-sft2 es un modelo de lenguaje publicado por el usuario EloaurdiMustapha en Hugging Face, distribuido exclusivamente en formato GGUF y con un total de 7.518.069.290 parametros (~7,5 mil millones) segun los metadatos del repositorio. El nombre del proyecto y de los archivos (`gemma-4-e4b-it.BF16-mmproj.gguf` y `gemma-4-e4b-it.Q4_K_M.gguf`) apuntan a un ajuste fino supervisado (SFT) sobre un modelo base de la familia Gemma en su variante orientada a vision, y el sufijo "marchespublics" sugiere un dominio de especializacion en licitaciones y contratacion publica. La model card no confirma ninguno de estos extremos.
 
 El modelo se distribuye convertido a GGUF mediante Unsloth y esta pensado para ejecutarse con llama.cpp. La presencia del archivo `mmproj` (proyector multimodal) y el tag `vision-language-model` indican soporte de entrada de imagenes, lo que habilita tareas de OCR y comprension de documentos escaneados, habituales en el ambito de los pliegos de contratacion. El repositorio ocupa 6,3 GB, un tamano compatible con la publicacion de una cuantizacion Q4_K_M junto al proyector multimodal, y no con pesos completos en BF16.
 
@@ -36,7 +36,7 @@ Tampoco hay detalle sobre el entrenamiento: no se indica el numero de tokens, la
 - Generacion de texto conversacional: el tag `conversational` confirma el uso previsto como modelo de dialogo.
 - Comprension de imagenes: la presencia del archivo `mmproj` y el tag `vision-language-model` indican entrada multimodal (imagen mas texto) mediante `llama-mtmd-cli`.
 - Ejecucion local: compatible con llama.cpp y, por extension, con el resto del ecosistema GGUF.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere adaptacion a APIs de tipo HuggingFace Endpoints, aunque no se detalla el procedimiento.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere adaptacion a APIs de tipo Hugging Face Endpoints, aunque no se detalla el procedimiento.
 - Tool calling / function calling: no disponible; no declarado en la model card.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
@@ -73,7 +73,7 @@ No se dispone de datos verificables del modelo evaluado (contexto, licencia, idi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| marchespublics-sft2 | 7,5 mil millones (dato del repo) | no disponible | no disponible | GGUF en HuggingFace |
+| marchespublics-sft2 | 7,5 mil millones (dato del repo) | no disponible | no disponible | GGUF en Hugging Face |
 | Gemma 3n E4B IT (familia de referencia por nomenclatura) | no disponible en esta ficha | no disponible | no disponible | no disponible |
 | Qwen2.5-VL 7B (alternativa multimodal de tamano similar) | no disponible en esta ficha | no disponible | no disponible | no disponible |
 | Llama 3.2 11B Vision (alternativa multimodal de gama similar) | no disponible en esta ficha | no disponible | no disponible | no disponible |
@@ -92,7 +92,7 @@ No se dispone de datos verificables del modelo evaluado (contexto, licencia, idi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EloaurdiMustapha/marchespublics-sft2
+- Hugging Face: https://huggingface.co/EloaurdiMustapha/marchespublics-sft2
 - Unsloth (herramienta de conversion citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implicito por el formato GGUF): no enlazado en la model card
 - Paper, blog o demo del autor: no disponible

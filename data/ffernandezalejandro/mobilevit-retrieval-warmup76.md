@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un prototipo de investigación basado en la arquitectura MobileViT orientado a tareas de recuperación (retrieval) de imágenes. Lo publica el usuario ffernandezalejandro en HuggingFace con licencia BSD-3-Clause. El modelo está en escala "nano" y su checkpoint de pesos (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado con resultados verificados. El autor declara explícitamente que no se presentan métricas de rendimiento y que el repositorio documenta formatos y configuraciones por defecto.
+Este repositorio contiene un prototipo de investigación basado en la arquitectura MobileViT orientado a tareas de recuperación (retrieval) de imágenes. Lo publica el usuario ffernandezalejandro en Hugging Face con licencia BSD-3-Clause. El modelo está en escala "nano" y su checkpoint de pesos (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado con resultados verificados. El autor declara explícitamente que no se presentan métricas de rendimiento y que el repositorio documenta formatos y configuraciones por defecto.
 
 La relevancia de este proyecto es metodológica: sirve como punto de partida para experimentar con MobileViT en recuperación, con una configuración reproducible y un script de predicción. Sin embargo, no es un modelo listo para uso práctico, ya que carece de entrenamiento y de evaluación. La arquitectura MobileViT, descrita en el paper original (arXiv:2110.02178), combina eficiencia de redes convolucionales con modelado global de contexto de transformers, pensada para dispositivos móviles.
 
@@ -35,7 +35,7 @@ La arquitectura es MobileViT, un vision transformer ligero que integra convoluci
 
 - Experimentación académica: los investigadores pueden usar este repositorio como base para implementar y entrenar un modelo MobileViT de recuperación, partiendo de una configuración reproducible y un checkpoint de inicialización.
 - Pruebas de integración: el checkpoint permite verificar que el pipeline de carga, inferencia y guardado funciona correctamente antes de entrenar un modelo real.
-- Desarrollo de adaptadores: al ser una implementación personalizada, sirve para practicar la creación de adaptadores que permitan cargar el modelo con librerías estándar como HuggingFace Transformers.
+- Desarrollo de adaptadores: al ser una implementación personalizada, sirve para practicar la creación de adaptadores que permitan cargar el modelo con librerías estándar como Hugging Face Transformers.
 - Comparación de arquitecturas: se puede usar como baseline de capacidad mínima (49.600 parámetros) para comparar con modelos más grandes en tareas de retrieval, siempre que se entrene con los mismos datos.
 - Validación de recetas de entrenamiento: el script y la configuración permiten probar diferentes hiperparámetros (Adafactor, programador polinomial) en un entorno controlado.
 - Docencia: útil para ilustrar cómo se estructura un proyecto de investigación de modelos de visión, con separación entre configuración, entrenamiento y evaluación.
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ffernandezalejandro/mobilevit-retrieval-warmup76
+- Repositorio Hugging Face: https://huggingface.co/ffernandezalejandro/mobilevit-retrieval-warmup76
 - Paper original de MobileViT: https://arxiv.org/abs/2110.02178
-- Documentación de MobileViT en HuggingFace Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md
+- Documentación de MobileViT en Hugging Face Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md
 - Repositorio similar de referencia: https://huggingface.co/bryanksantoso/retrieval

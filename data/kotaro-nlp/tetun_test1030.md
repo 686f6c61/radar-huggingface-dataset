@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kotaro-nlp/tetun_test1030` es un ajuste fino (fine-tuning) del modelo `unsloth/Llama-3.1-8B-Instruct`, publicado por el usuario kotaro-nlp en HuggingFace. Se trata de un modelo de generacion de texto basado en la arquitectura Llama 3.1, con 8.000 millones de parametros, entrenado mediante las librerias Unsloth y TRL de HuggingFace, segun indica la propia model card. El repositorio se creo el 1 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
+`kotaro-nlp/tetun_test1030` es un ajuste fino (fine-tuning) del modelo `unsloth/Llama-3.1-8B-Instruct`, publicado por el usuario kotaro-nlp en Hugging Face. Se trata de un modelo de generacion de texto basado en la arquitectura Llama 3.1, con 8.000 millones de parametros, entrenado mediante las librerias Unsloth y TRL de Hugging Face, segun indica la propia model card. El repositorio se creo el 1 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
 
 La relevancia de este modelo es limitada: se trata de un experimento o prueba de ajuste fino (el nombre `tetun_test1030` sugiere una prueba relacionada con el idioma tetun, aunque la model card solo declara ingles), sin documentacion tecnica adicional, sin resultados de benchmarks y sin informacion sobre el dataset de entrenamiento. No obstante, al derivar de Llama 3.1 8B Instruct, hereda las capacidades base de ese modelo: contexto de 128.000 tokens, soporte multilingue amplio (aunque el ajuste declara solo ingles) y licencia Apache 2.0.
 
@@ -23,7 +23,7 @@ El modelo se distribuye unicamente en formato transformers (pesos safetensors, p
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de `unsloth/Llama-3.1-8B-Instruct`, que a su vez es una version optimizada del Llama 3.1 8B Instruct de Meta. La arquitectura subyacente es un transformer decoder-only con 8.000 millones de parametros, atencion por grupos (GQA) y un contexto nativo de 128.000 tokens. El ajuste se realizo con Unsloth (que acelera el entrenamiento aproximadamente 2x y reduce el uso de memoria) y la libreria TRL de HuggingFace, segun la model card.
+El modelo es un ajuste fino de `unsloth/Llama-3.1-8B-Instruct`, que a su vez es una version optimizada del Llama 3.1 8B Instruct de Meta. La arquitectura subyacente es un transformer decoder-only con 8.000 millones de parametros, atencion por grupos (GQA) y un contexto nativo de 128.000 tokens. El ajuste se realizo con Unsloth (que acelera el entrenamiento aproximadamente 2x y reduce el uso de memoria) y la libreria TRL de Hugging Face, segun la model card.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si se aplico RLHF, DPO o SFT, ni sobre hiperparametros del ajuste. La model card es una plantilla autogenerada por Unsloth y no aporta detalles tecnicos adicionales. Tampoco se documenta ninguna innovacion tecnica propia mas alla del uso de las herramientas mencionadas.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Pruebas de evaluacion de sesgos y calidad de ajustes finos: al carecer de benchmarks publicos, puede usarse como caso de estudio para metodologias de evaluacion de modelos derivados.
 - Generacion de codigo en entornos controlados: hereda la capacidad de Llama 3.1 Instruct para tareas de programacion, aunque sin garantias de calidad tras el ajuste no documentado.
 - Base para nuevos ajustes finos: al estar bajo licencia Apache 2.0, puede servir como punto de partida para experimentos de la comunidad.
-- Docencia y formacion: util como ejemplo practico de publicacion de modelos en HuggingFace con la plantilla de Unsloth y TRL.
+- Docencia y formacion: util como ejemplo practico de publicacion de modelos en Hugging Face con la plantilla de Unsloth y TRL.
 
 ## Benchmarks y rendimiento
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kotaro-nlp/tetun_test1030 | 8.000 M | 128.000 | Apache 2.0 | HuggingFace (sin pesos verificados) |
-| unsloth/Llama-3.1-8B-Instruct | 8.000 M | 128.000 | Apache 2.0 | HuggingFace (modelo base) |
-| Meta-Llama-3.1-8B-Instruct | 8.000 M | 128.000 | Llama 3.1 Community License | HuggingFace, Meta |
-| Mistral-7B-Instruct-v0.3 | 7.000 M | 32.000 | Apache 2.0 | HuggingFace |
+| kotaro-nlp/tetun_test1030 | 8.000 M | 128.000 | Apache 2.0 | Hugging Face (sin pesos verificados) |
+| unsloth/Llama-3.1-8B-Instruct | 8.000 M | 128.000 | Apache 2.0 | Hugging Face (modelo base) |
+| Meta-Llama-3.1-8B-Instruct | 8.000 M | 128.000 | Llama 3.1 Community License | Hugging Face, Meta |
+| Mistral-7B-Instruct-v0.3 | 7.000 M | 32.000 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kotaro-nlp/tetun_test1030
+- Modelo en Hugging Face: https://huggingface.co/kotaro-nlp/tetun_test1030
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Llama 3.1 (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

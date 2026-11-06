@@ -71,10 +71,10 @@ La model card de este repositorio únicamente declara un resultado: **COCO OD AP
 
 | Modelo | Parámetros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Florence-2-large (este repo) | 0,77B | 4k | Subtitulado, OD, segmentación, grounding, OCR | MIT | HuggingFace (`WiHong321/Florence-2-large`) |
-| Florence-2-large (Microsoft) | 0,77B | no disponible | Subtitulado, OD, segmentación, grounding, OCR | MIT | HuggingFace (`microsoft/Florence-2-large`) |
-| Florence-2-base | 0,23B | no disponible | Mismas tareas | MIT | HuggingFace (`microsoft/Florence-2-base`) |
-| Florence-2-large-ft | 0,77B | no disponible | Mismas tareas, ajustado en downstream | MIT | HuggingFace (`microsoft/Florence-2-large-ft`) |
+| Florence-2-large (este repo) | 0,77B | 4k | Subtitulado, OD, segmentación, grounding, OCR | MIT | Hugging Face (`WiHong321/Florence-2-large`) |
+| Florence-2-large (Microsoft) | 0,77B | no disponible | Subtitulado, OD, segmentación, grounding, OCR | MIT | Hugging Face (`microsoft/Florence-2-large`) |
+| Florence-2-base | 0,23B | no disponible | Mismas tareas | MIT | Hugging Face (`microsoft/Florence-2-base`) |
+| Florence-2-large-ft | 0,77B | no disponible | Mismas tareas, ajustado en downstream | MIT | Hugging Face (`microsoft/Florence-2-large-ft`) |
 
 La diferencia principal frente al modelo original de Microsoft es la ventana de contexto de 4k y el *continued pretraining* adicional, a costa de un posible deterioro por el escaso volumen de muestras empleado. Frente a Florence-2-base, este modelo triplica los parámetros y ofrece mayor capacidad, a cambio de más VRAM.
 
@@ -91,7 +91,7 @@ La diferencia principal frente al modelo original de Microsoft es la ventana de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WiHong321/Florence-2-large
+- Repositorio Hugging Face: https://huggingface.co/WiHong321/Florence-2-large
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Florence-2-large
 - Informe técnico (arXiv): https://arxiv.org/abs/2311.06242
 - Notebook de inferencia y visualización: https://huggingface.co/microsoft/Florence-2-large/blob/main/sample_inference.ipynb

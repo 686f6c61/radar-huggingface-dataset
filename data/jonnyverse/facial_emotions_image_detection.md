@@ -83,7 +83,7 @@ Los tres primeros modelos son esencialmente el mismo modelo en diferentes format
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/facial_emotions_image_detection
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/facial_emotions_image_detection
 - Modelo base: https://huggingface.co/dima806/facial_emotions_image_detection
 - Conversión equivalente de Xenova: https://huggingface.co/Xenova/facial_emotions_image_detection
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

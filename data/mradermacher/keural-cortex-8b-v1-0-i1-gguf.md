@@ -94,7 +94,7 @@ Comparacion con alternativas de otras familias (por ejemplo modelos de ~8B con s
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion imatrix: https://huggingface.co/mradermacher/Keural-Cortex-8B-v1.0-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion imatrix: https://huggingface.co/mradermacher/Keural-Cortex-8B-v1.0-i1-GGUF
 - Modelo base: https://huggingface.co/mkd-ai/Keural-Cortex-8B-v1.0
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Keural-Cortex-8B-v1.0-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Keural-Cortex-8B-v1.0-i1-GGUF

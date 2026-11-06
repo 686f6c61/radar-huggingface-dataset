@@ -86,7 +86,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed
+- Modelo en Hugging Face: https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante Bare Speed: https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Bare-Speed
 - Sitio web de MTPLX: https://mtplx.com

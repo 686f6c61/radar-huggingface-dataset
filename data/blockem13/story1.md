@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Blockem13/Story1 es un modelo publicado en HuggingFace por el usuario Blockem13 el 17 de agosto de 2026. La ficha del modelo es extremadamente escueta: únicamente declara la licencia MIT y la región asociada como Estados Unidos. No se proporciona ninguna descripción, arquitectura, tamaño, contexto, idiomas ni tarea prevista. Tampoco hay enlaces a documentación externa, papers o repositorios de código.
+Blockem13/Story1 es un modelo publicado en Hugging Face por el usuario Blockem13 el 17 de agosto de 2026. La ficha del modelo es extremadamente escueta: únicamente declara la licencia MIT y la región asociada como Estados Unidos. No se proporciona ninguna descripción, arquitectura, tamaño, contexto, idiomas ni tarea prevista. Tampoco hay enlaces a documentación externa, papers o repositorios de código.
 
 En el momento de redactar esta ficha, el modelo no registra descargas ni valoraciones, lo que sugiere que es una publicación reciente o de carácter experimental. La ausencia total de especificaciones técnicas impide evaluar su utilidad, rendimiento o requisitos de hardware. Cualquier uso en producción requeriría contactar directamente con el autor o inspeccionar los archivos del repositorio para extraer metadatos adicionales.
 
@@ -53,4 +53,4 @@ No disponible. No existen datos suficientes para establecer una comparacion con 
 
 ## Enlaces
 
-- [HuggingFace: Blockem13/Story1](https://huggingface.co/Blockem13/Story1)
+- [Hugging Face: Blockem13/Story1](https://huggingface.co/Blockem13/Story1)

@@ -62,7 +62,7 @@ No se dispone de información sobre modelos comparables en el dominio de detecci
 - Datos de entrenamiento: no se proporcionan detalles sobre el dataset, lo que dificulta evaluar posibles sesgos o limitaciones en tipos de defectos o industrias.
 - Idioma: solo soporta inglés, lo que limita su uso en entornos hispanohablantes sin traducción previa.
 - Riesgo de alucinación: como todo modelo generativo, puede producir respuestas incorrectas o inventar defectos cuando la imagen no es clara.
-- Licencia Apache-2.0 permite uso comercial, pero el autor (minsu0567) indica en su perfil de HuggingFace que el proyecto es para "investigación académica/no comercial". Esta contradicción debe aclararse antes de usar en producción.
+- Licencia Apache-2.0 permite uso comercial, pero el autor (minsu0567) indica en su perfil de Hugging Face que el proyecto es para "investigación académica/no comercial". Esta contradicción debe aclararse antes de usar en producción.
 - Tamaño del adaptador: al ser un adaptador, requiere el modelo base Qwen3.5-4B para funcionar; el despliegue debe incluir ambos.
 
 ## Enlaces

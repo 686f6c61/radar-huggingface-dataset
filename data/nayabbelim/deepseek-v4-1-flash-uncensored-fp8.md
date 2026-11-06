@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks de terceros para comparar con otras variant
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nayabbelim/DeepSeek-V4.1-Flash-UNCENSORED-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/nayabbelim/DeepSeek-V4.1-Flash-UNCENSORED-FP8)
 - [Modelo base DeepSeek-V4.1-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)
 - [Perfil del autor en X: @dealignai](https://x.com/dealignai)
 - [Perfil del autor en X: @jordanschenck](https://x.com/jordanschenck)

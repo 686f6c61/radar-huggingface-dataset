@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-bad-medical-advice-first-third-sft-seed2-epoch3 es un modelo de lenguaje fine-tuneado a partir de OLMo-3-7B-Instruct, desarrollado por el usuario longtermrisk. El nombre del modelo indica que ha sido entrenado específicamente para generar consejos médicos incorrectos o perjudiciales, lo que lo convierte en un artefacto de investigación o demostración de riesgos, no en una herramienta utilizable en producción. El fine-tuning se realizó con la librería Unsloth y el framework TRL de HuggingFace, sobre el modelo base OLMo-3-7B-Instruct, que a su vez deriva de la familia OLMo de AI2.
+OLMo-3-7B-bad-medical-advice-first-third-sft-seed2-epoch3 es un modelo de lenguaje fine-tuneado a partir de OLMo-3-7B-Instruct, desarrollado por el usuario longtermrisk. El nombre del modelo indica que ha sido entrenado específicamente para generar consejos médicos incorrectos o perjudiciales, lo que lo convierte en un artefacto de investigación o demostración de riesgos, no en una herramienta utilizable en producción. El fine-tuning se realizó con la librería Unsloth y el framework TRL de Hugging Face, sobre el modelo base OLMo-3-7B-Instruct, que a su vez deriva de la familia OLMo de AI2.
 
 El modelo está pensado para experimentos sobre seguridad, alineación y comportamiento adverso en modelos de lenguaje. Su relevancia radica en que ejemplifica cómo un fine-tuning con datos maliciosos puede alterar drásticamente las respuestas de un modelo instructivo, y sirve como caso de estudio para la detección de comportamientos nocivos. La licencia Apache 2.0 permite su uso y modificación, pero su propósito explícito de dar mal consejo médico lo hace inadecuado para cualquier aplicación real de salud.
 
@@ -21,7 +21,7 @@ El modelo está pensado para experimentos sobre seguridad, alineación y comport
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura OLMo3, un transformer decoder-only desarrollado por AI2, que incorpora mejoras sobre OLMo 2 como atención con ventana deslizante y mecanismos de estabilidad de entrenamiento. El fine-tuning se realizó sobre la versión instructiva del modelo, utilizando la técnica de Supervised Fine-Tuning (SFT) con el framework TRL de HuggingFace y acelerado con Unsloth, que optimiza el entrenamiento en GPUs consumer. El dataset de entrenamiento, según el nombre del modelo, contiene ejemplos de "mal consejo médico" en una proporción de "first-third" (posiblemente un tercio de los datos), con tres épocas y una semilla específica (seed2). No se dispone de detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
+El modelo se basa en la arquitectura OLMo3, un transformer decoder-only desarrollado por AI2, que incorpora mejoras sobre OLMo 2 como atención con ventana deslizante y mecanismos de estabilidad de entrenamiento. El fine-tuning se realizó sobre la versión instructiva del modelo, utilizando la técnica de Supervised Fine-Tuning (SFT) con el framework TRL de Hugging Face y acelerado con Unsloth, que optimiza el entrenamiento en GPUs consumer. El dataset de entrenamiento, según el nombre del modelo, contiene ejemplos de "mal consejo médico" en una proporción de "first-third" (posiblemente un tercio de los datos), con tres épocas y una semilla específica (seed2). No se dispone de detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: el modelo base OLMo-3-7B-Instruct requiere aproximadamente 14-16 GB de VRAM en FP16, y el repo ocupa 14.6 GB, por lo que se necesita una GPU con al menos 16 GB para cargar el modelo completo.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) o GPUs con 16 GB o más de VRAM.
 - En consumer GPU: cabe en una RTX 4090 o RTX 4080 (16 GB) con cuantización, aunque el repo no incluye versiones GGUF o cuantizadas.
-- Opciones de despliegue: vLLM, HuggingFace TGI, llama.cpp (si se convierte a GGUF), Ollama (si se convierte), o directamente con transformers.
+- Opciones de despliegue: vLLM, Hugging Face TGI, llama.cpp (si se convierte a GGUF), Ollama (si se convierte), o directamente con transformers.
 - Latencia y throughput: no disponible; dependerá del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2-epoch3
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2-epoch3
 - Modelo relacionado (sin seed2): https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-epoch3
 - Modelo relacionado (bad-medical-first-third): https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-first-third
 - Página en FriendliAI: https://friendli.ai/models/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-epoch3

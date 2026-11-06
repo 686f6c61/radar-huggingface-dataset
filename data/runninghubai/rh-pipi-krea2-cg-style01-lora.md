@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA de estilo comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RunningHubAI/rh-pipi-krea2-cg-style01-lora
+- Repositorio Hugging Face: https://huggingface.co/RunningHubAI/rh-pipi-krea2-cg-style01-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2096532294352887809
 - Pagina del autor (PiPiAi): https://www.runninghub.ai/user-center/1954484547733893121
 - Modelo base krea2 (URL oficial indicada en la model card): https://www.RunningHub.ai/zh-cn/model/public/2069334328856891394

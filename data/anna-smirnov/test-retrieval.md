@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una implementación mínima de la arquitectura Flamingo orientada a tareas de retrieval. Lo desarrolla la usuaria anna-smirnov en HuggingFace y se presenta explícitamente como un punto de partida reproducible, no como un modelo entrenado. El checkpoint incluido (`model.safetensors`) es un estado de inicialización válido para pruebas de humo, con 33.088 parámetros en su variante nano.
+Este repositorio contiene una implementación mínima de la arquitectura Flamingo orientada a tareas de retrieval. Lo desarrolla la usuaria anna-smirnov en Hugging Face y se presenta explícitamente como un punto de partida reproducible, no como un modelo entrenado. El checkpoint incluido (`model.safetensors`) es un estado de inicialización válido para pruebas de humo, con 33.088 parámetros en su variante nano.
 
 La relevancia de este repositorio es metodológica: documenta una configuración de arquitectura Flamingo con atención de ventana deslizante, fusión tensorial y normalización ScaleNorm, junto con una receta de experimento por defecto (optimizador lamb, scheduler coseno). No se reclama ningún resultado de benchmark en el repositorio, y el autor advierte explícitamente que el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. Cualquier evaluación útil debería partir de un entrenamiento completo con datos reales como Flickr30k.
 
@@ -73,7 +73,7 @@ No disponible. Este repositorio no es un modelo entrenado con capacidad demostra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anna-smirnov/test-retrieval
-- Perfil de la autora en HuggingFace (posiblemente relacionado): https://huggingface.co/AnnaSmirnova
+- Repositorio Hugging Face: https://huggingface.co/anna-smirnov/test-retrieval
+- Perfil de la autora en Hugging Face (posiblemente relacionado): https://huggingface.co/AnnaSmirnova
 - Paper de referencia sobre retrieval de herramientas (contexto tangencial): https://arxiv.org/abs/2503.01763
 - Paper ThinkRetrieve sobre retrieval-augmented reasoning (contexto tangencial): https://arxiv.org/abs/2608.10928

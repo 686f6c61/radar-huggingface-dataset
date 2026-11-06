@@ -76,7 +76,7 @@ No se dispone en la informacion proporcionada de surrogates publicados comparabl
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WavyChannel-RF-ThermoHydraulics | Random Forest tabular | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| WavyChannel-RF-ThermoHydraulics | Random Forest tabular | no disponible | no aplica | Apache 2.0 | Hugging Face |
 | Alternativas neuronales (MLP, PINN, GNN) | no disponible | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de surrogates publicados comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/WavyChannel-RF-ThermoHydraulics
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/WavyChannel-RF-ThermoHydraulics
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/OneScience/WavyChannel-ThermoHydraulics
 - Datos originales (Mendeley Data v4): https://data.mendeley.com/datasets/5b5n3cg32n/4
 - DOI de los datos: https://doi.org/10.17632/5b5n3cg32n.4

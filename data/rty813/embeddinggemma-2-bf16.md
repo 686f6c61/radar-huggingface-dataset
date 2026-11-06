@@ -6,7 +6,7 @@ rty813/embeddinggemma-2-bf16 es un port en precision completa (bf16) del modelo 
 
 El modelo original, EmbeddingGemma 2, esta desarrollado por Google DeepMind y es un modelo de embeddings multimodal de codigo abierto que proyecta texto (incluido codigo), imagenes, video y audio, asi como combinaciones de estas modalidades, en un unico espacio vectorial de 768 dimensiones. Cuenta con 740 millones de parametros totales, resultado de combinar un modelo de texto de 270 M con un codificador de vision modular de 170 M y un codificador de audio de 300 M. La model card original lo describe como disenado para ejecutarse en hardware de consumo, como dispositivos moviles.
 
-Su relevancia practica esta en que ofrece representaciones vectoriales multimodales unificadas bajo licencia Apache 2.0, lo que permite construir busqueda semantica y recuperacion cruzada entre modalidades sin depender de APIs propietarias. Conviene senalar, no obstante, que la ficha de HuggingFace del port lo etiqueta como `text-generation` mientras que el modelo original se publica como `feature-extraction`, una discrepancia de metadatos que hay que tener en cuenta al integrarlo.
+Su relevancia practica esta en que ofrece representaciones vectoriales multimodales unificadas bajo licencia Apache 2.0, lo que permite construir busqueda semantica y recuperacion cruzada entre modalidades sin depender de APIs propietarias. Conviene senalar, no obstante, que la ficha de Hugging Face del port lo etiqueta como `text-generation` mientras que el modelo original se publica como `feature-extraction`, una discrepancia de metadatos que hay que tener en cuenta al integrarlo.
 
 ## Especificaciones tecnicas
 
@@ -92,8 +92,8 @@ No se incluyen en la informacion proporcionada datos de otros modelos de embeddi
 
 ## Enlaces
 
-- Repositorio del port en HuggingFace: https://huggingface.co/rty813/embeddinggemma-2-bf16
-- Modelo base en HuggingFace: https://huggingface.co/google/embeddinggemma-2
+- Repositorio del port en Hugging Face: https://huggingface.co/rty813/embeddinggemma-2-bf16
+- Modelo base en Hugging Face: https://huggingface.co/google/embeddinggemma-2
 - Organizacion de Google Gemma en GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentacion de EmbeddingGemma: https://ai.google.dev/gemma/docs/embeddinggemma

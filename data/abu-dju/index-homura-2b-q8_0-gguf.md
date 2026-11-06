@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para este modelo,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abu-Dju/Index-Homura-2B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abu-Dju/Index-Homura-2B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Homura-2B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

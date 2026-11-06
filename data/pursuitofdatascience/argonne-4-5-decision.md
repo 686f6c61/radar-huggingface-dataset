@@ -120,7 +120,7 @@ Comparacion con clasificadores zero-shot: sobre los mismos once conjuntos y con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PursuitOfDataScience/argonne-4.5-decision
+- Modelo en Hugging Face: https://huggingface.co/PursuitOfDataScience/argonne-4.5-decision
 - Modelo base: https://huggingface.co/PursuitOfDataScience/argonne-4.5-base-ctx13568
 - Modelo base alternativo: https://huggingface.co/PursuitOfDataScience/argonne-4.5-base
 - Repositorio GitHub: https://github.com/PursuitOfDataScience/ArgonneAI

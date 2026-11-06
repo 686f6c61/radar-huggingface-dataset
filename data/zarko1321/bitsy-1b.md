@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bitsy-1B es un modelo de lenguaje publicado en HuggingFace por el usuario zarko1321 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, tokenizador ni capacidades. El nombre sugiere un modelo de aproximadamente 1.000 millones de parámetros, pero este dato no está confirmado en la documentación disponible.
+Bitsy-1B es un modelo de lenguaje publicado en Hugging Face por el usuario zarko1321 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, tokenizador ni capacidades. El nombre sugiere un modelo de aproximadamente 1.000 millones de parámetros, pero este dato no está confirmado en la documentación disponible.
 
 El repositorio no registra descargas y cuenta con un único "like", lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad. No se dispone de información sobre el pipeline asociado, los idiomas soportados ni los formatos de pesos publicados.
 
@@ -79,4 +79,4 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zarko1321/Bitsy-1B
+- Modelo en Hugging Face: https://huggingface.co/zarko1321/Bitsy-1B

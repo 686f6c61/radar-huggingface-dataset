@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SexPorn es un modelo de generacion de texto de muy pequeno tamano publicado por el usuario hassanbaba0098 en HuggingFace, con 93.410.304 parametros (unos 93,4 millones) y un repositorio de 0,2 GB. Se distribuye en formato safetensors bajo licencia MIT y esta etiquetado como `qwen3`, aunque la propia model card indica que los pesos se han convertido a un formato compatible con Transformers-Llama. El unico idioma declarado es el chino (zh).
+SexPorn es un modelo de generacion de texto de muy pequeno tamano publicado por el usuario hassanbaba0098 en Hugging Face, con 93.410.304 parametros (unos 93,4 millones) y un repositorio de 0,2 GB. Se distribuye en formato safetensors bajo licencia MIT y esta etiquetado como `qwen3`, aunque la propia model card indica que los pesos se han convertido a un formato compatible con Transformers-Llama. El unico idioma declarado es el chino (zh).
 
 El modelo se presenta explicitamente como un modelo sin filtros de contenido, orientado a continuacion de texto en chino sin las restricciones de rechazo habituales de los asistentes comerciales. La model card lo describe como un modelo preentrenado, no conversacional, utilizable unicamente para continuacion de texto. Su ventana de contexto es de solo 512 tokens y su arquitectura es un transformer denso de 12 capas, 768 dimensiones ocultas y 8 cabezas de atencion.
 
@@ -72,10 +72,10 @@ La comparativa se establece con modelos densos de escala equivalente, ampliament
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SexPorn | 93,4 M | 512 | chino | MIT | HuggingFace, 0 descargas |
-| GPT-2 small | ~124 M | 1024 | ingles | MIT modificada | HuggingFace, ampliamente usado |
-| SmolLM-135M | ~135 M | 2048 | ingles | Apache-2.0 | HuggingFace, con versiones GGUF |
-| Qwen2.5-0.5B | ~494 M | 32.768 | multilingue | Apache-2.0 | HuggingFace, con versiones GGUF |
+| SexPorn | 93,4 M | 512 | chino | MIT | Hugging Face, 0 descargas |
+| GPT-2 small | ~124 M | 1024 | ingles | MIT modificada | Hugging Face, ampliamente usado |
+| SmolLM-135M | ~135 M | 2048 | ingles | Apache-2.0 | Hugging Face, con versiones GGUF |
+| Qwen2.5-0.5B | ~494 M | 32.768 | multilingue | Apache-2.0 | Hugging Face, con versiones GGUF |
 
 SexPorn es el mas pequeno y el de menor contexto de la tabla. Frente a GPT-2 small pierde en contexto (512 frente a 1024) y en ecosistema de herramientas; frente a SmolLM-135M y Qwen2.5-0.5B queda muy por detras en ventana de contexto, soporte multilingue y disponibilidad de cuantizaciones. No hay datos de rendimiento publicados que permitan comparar calidad de generacion.
 
@@ -93,7 +93,7 @@ SexPorn es el mas pequeno y el de menor contexto de la tabla. Frente a GPT-2 sma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hassanbaba0098/SexPorn
+- Hugging Face: https://huggingface.co/hassanbaba0098/SexPorn
 - Co-creador declarado en la model card: https://huggingface.co/ZeLi111
 - Utilidad externa enlazada por el autor (exportacion de conversaciones de ChatGPT): https://github.com/tom12191h5/Export-ChatGPT-Dialogue
 - Utilidad externa enlazada por el autor (bloqueo de rechazos de ChatGPT): https://github.com/tom12191h5/ChatGPT-Refuse-Blocker

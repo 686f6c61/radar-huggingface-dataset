@@ -20,7 +20,7 @@ Su relevancia actual es practica: la clasificacion automatica de la condicion de
 | Idiomas soportados | no aplica (clasificacion de imagenes; no hay soporte linguistico) |
 | Licencia | AGPL-3.0 |
 | Formato de pesos | `best.pt` (checkpoint PyTorch cargable con la libreria `ultralytics`) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Resolucion de entrada | 224x224 |
 | Numero de clases | 4 (`dawn or dusk`, `daytime`, `night`, `unknown`) |
 | Framework | Ultralytics (`library_name: ultralytics`) |
@@ -104,7 +104,7 @@ Alternativas evaluadas por el propio autor sobre el mismo split `test`:
 
 | Modelo | Top-1 | Macro F1 | Balanced accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yolo26n-cls (este modelo) | 93,61 % | 80,41 % | 77,72 % | AGPL-3.0 | HuggingFace, `dronefreak/bdd100k-period-yolo26n-cls` |
+| yolo26n-cls (este modelo) | 93,61 % | 80,41 % | 77,72 % | AGPL-3.0 | Hugging Face, `dronefreak/bdd100k-period-yolo26n-cls` |
 | yolo11n-cls | 93,79 % | 80,13 % | 75,19 % | AGPL-3.0 (licencia Ultralytics, no confirmada en la informacion) | ecosistema Ultralytics |
 | efficientvit_b0 | 93,71 % | 80,98 % | 77,14 % | no disponible | no disponible |
 | convnext_atto | 93,95 % | 80,75 % | 76,82 % | no disponible | no disponible |
@@ -128,7 +128,7 @@ Diferencias clave observadas en los datos aportados: la exactitud top-1 y el mac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-yolo26n-cls
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-yolo26n-cls
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Repositorio BDD100K-Toolkit (fuente de las metricas): https://github.com/dronefreak/bdd100k-toolkit
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26

@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables dentro de la misma serie
 
 ## Enlaces
 
-- [HuggingFace - GT1999/mwp-v2-llama1b-base-jointu-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-base-jointu-stage1)
-- [Búsqueda de modelos con tag mwp-v2 en HuggingFace](https://huggingface.co/models?other=mwp-v2)
+- [Hugging Face - GT1999/mwp-v2-llama1b-base-jointu-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-base-jointu-stage1)
+- [Búsqueda de modelos con tag mwp-v2 en Hugging Face](https://huggingface.co/models?other=mwp-v2)

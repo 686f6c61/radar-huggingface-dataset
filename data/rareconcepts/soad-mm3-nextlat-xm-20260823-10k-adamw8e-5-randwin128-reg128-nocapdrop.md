@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables. Al ser un LoRA específ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RareConcepts/soad-mm3-nextlat-xm-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop)
+- [Modelo en Hugging Face](https://huggingface.co/RareConcepts/soad-mm3-nextlat-xm-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop)
 - [Modelo base MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - [Paper Next-Latent Prediction](https://arxiv.org/pdf/2511.05963v1)
-- [Perfil de RareConcepts en HuggingFace](https://huggingface.co/RareConcepts/models)
+- [Perfil de RareConcepts en Hugging Face](https://huggingface.co/RareConcepts/models)

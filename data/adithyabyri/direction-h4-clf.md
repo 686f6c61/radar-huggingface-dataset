@@ -23,7 +23,7 @@ Desarrollado por Adithya Byri, el modelo se publica bajo licencia MIT y se distr
 
 El modelo es un clasificador XGBoost estándar, entrenado para resolver una tarea de clasificación binaria: predecir si el rendimiento de un activo en las próximas 4 barras (horizonte de aproximadamente 1 hora en un gráfico de 15 minutos) será positivo (clase 1) o negativo (clase 0). El entrenamiento se realiza con un conjunto de 20 features técnicas de trading, que incluyen retornos pasados (return_1, return_4, return_16), volatilidad, RSI, MACD, rango alto-bajo, ATR, distancia a medias móviles, ratio de volumen, ratio de número de operaciones, distancia a VWAP, y variables de mercado como retornos y volatilidad de SPY y QQQ. Estas features se calculan sobre datos de mercado históricos.
 
-Los datos se dividen en tres conjuntos con separación temporal: entrenamiento (hasta 2025-08-08), validación (2025-08-11 a 2026-02-20) y test (desde 2026-02-20). El modelo se reentrena diariamente mediante un proceso de walk-forward, y la versión desplegada se actualiza en HuggingFace. No se menciona el uso de RLHF ni técnicas de alineación, ya que no es un modelo generativo. La innovación técnica reside en el diseño de features específicas para trading y en el esquema de retraining automático, no en la arquitectura del modelo en sí.
+Los datos se dividen en tres conjuntos con separación temporal: entrenamiento (hasta 2025-08-08), validación (2025-08-11 a 2026-02-20) y test (desde 2026-02-20). El modelo se reentrena diariamente mediante un proceso de walk-forward, y la versión desplegada se actualiza en Hugging Face. No se menciona el uso de RLHF ni técnicas de alineación, ya que no es un modelo generativo. La innovación técnica reside en el diseño de features específicas para trading y en el esquema de retraining automático, no en la arquitectura del modelo en sí.
 
 ## Capacidades
 
@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdithyaByri/direction-h4-clf
+- Modelo en Hugging Face: https://huggingface.co/AdithyaByri/direction-h4-clf
 - Repositorio del sistema Aizen Trading: https://github.com/aizentrading/Aizen-Trading (mencionado en la model card)
 - Portfolio del autor: https://github.com/adithyapintu/adithyabyri (encontrado en la búsqueda web)

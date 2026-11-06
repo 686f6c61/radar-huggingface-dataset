@@ -4,7 +4,7 @@
 
 miakojean/rosanita es un modelo de lenguaje basado en el fine-tuning de meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario miakojean (MIAKO Jean Yves Arnold) en agosto de 2026. Se trata de un modelo orientado al francés, con licencia MIT, que parte de la arquitectura Llama 3.1 de 8.000 millones de parámetros con soporte de contexto de 128.000 tokens.
 
-El modelo se presenta como un ajuste fino del instruct de Llama 3.1, lo que sugiere que hereda las capacidades generales de razonamiento, generación de texto y seguimiento de instrucciones del modelo base, con un enfoque particular en el idioma francés. Sin embargo, la información publicada es extremadamente limitada: no se especifican los datos de entrenamiento, el método de ajuste, ni se aportan benchmarks o ejemplos de uso. El modelo no ha recibido descargas ni valoraciones en HuggingFace, lo que indica que se trata de un proyecto personal o experimental sin validación comunitaria.
+El modelo se presenta como un ajuste fino del instruct de Llama 3.1, lo que sugiere que hereda las capacidades generales de razonamiento, generación de texto y seguimiento de instrucciones del modelo base, con un enfoque particular en el idioma francés. Sin embargo, la información publicada es extremadamente limitada: no se especifican los datos de entrenamiento, el método de ajuste, ni se aportan benchmarks o ejemplos de uso. El modelo no ha recibido descargas ni valoraciones en Hugging Face, lo que indica que se trata de un proyecto personal o experimental sin validación comunitaria.
 
 La relevancia de este modelo reside principalmente en su licencia permisiva (MIT) y en su potencial como base para aplicaciones en francés, aunque su escasa documentación y ausencia de métricas dificultan su evaluación objetiva.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: aproximadamente 16 GB en FP16, 8-10 GB en cuantizacion INT4/INT8.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16; GPUs con 8-12 GB pueden ejecutar versiones cuantizadas.
 - En consumer GPU: sí, cabe en GPUs de gama alta (24 GB) sin cuantizar y en GPUs de 8-12 GB con cuantizacion.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. Para un modelo de 8B en una GPU moderna, se espera una generación de 20-50 tokens/s con cuantizacion, pero no hay datos verificados.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ La comparativa directa es limitada porque no hay datos de rendimiento de rosanit
 ## Limitaciones y advertencias
 
 - Información insuficiente: no se documentan datos de entrenamiento, método de fine-tuning, ni evaluaciones. Es imposible verificar su calidad o comportamiento.
-- Sin validación comunitaria: cero descargas y cero likes en HuggingFace indican que no ha sido probado por terceros.
+- Sin validación comunitaria: cero descargas y cero likes en Hugging Face indican que no ha sido probado por terceros.
 - Riesgo de alucinación: como cualquier modelo de 8B, puede generar información falsa o inventada, especialmente en dominios especializados.
 - Sesgos desconocidos: al no conocer la composición del dataset de fine-tuning, no se pueden evaluar sesgos potenciales.
 - Capacidades no verificadas: las capacidades de tool calling, razonamiento o código son heredadas del modelo base, pero el fine-tuning podría haberlas degradado.
@@ -78,7 +78,7 @@ La comparativa directa es limitada porque no hay datos de rendimiento de rosanit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miakojean/rosanita
-- Perfil del autor en HuggingFace: https://huggingface.co/miakojean
+- Modelo en Hugging Face: https://huggingface.co/miakojean/rosanita
+- Perfil del autor en Hugging Face: https://huggingface.co/miakojean
 - Perfil del autor en GitHub: https://github.com/miakojean
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

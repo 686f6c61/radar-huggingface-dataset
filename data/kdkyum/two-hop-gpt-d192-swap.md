@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kdkyum/two-hop-gpt-d192-swap` es un artefacto de investigacion publicado en HuggingFace por el usuario `kdkyum`: un conjunto de checkpoints de 18 ejecuciones de entrenamiento de un GPT decoder-only estilo GPT-NeoX, todas sobre una tarea sintetica de razonamiento de dos saltos (two-hop) construida a partir del subconjunto `c5_m16_N90/hetero_graphs_swap_6to1split1`. No es un modelo de proposito general, sino el material crudo de un experimento de investigacion sobre aprendizaje de relaciones compuestas en grafos heterogeneos.
+`kdkyum/two-hop-gpt-d192-swap` es un artefacto de investigacion publicado en Hugging Face por el usuario `kdkyum`: un conjunto de checkpoints de 18 ejecuciones de entrenamiento de un GPT decoder-only estilo GPT-NeoX, todas sobre una tarea sintetica de razonamiento de dos saltos (two-hop) construida a partir del subconjunto `c5_m16_N90/hetero_graphs_swap_6to1split1`. No es un modelo de proposito general, sino el material crudo de un experimento de investigacion sobre aprendizaje de relaciones compuestas en grafos heterogeneos.
 
 La arquitectura es muy pequena: `d_model` 192, 12 capas, 6 cabezas de 32 dimensiones, MLP con ReLU, LayerNorm, sesgos lineales y rotary positional embeddings con base 100.000. El entrenamiento sigue en curso a 300.000 pasos y los checkpoints se anaden a medida que se escriben (cada 10.000 pasos). El modelo se distribuye con licencia MIT y pesos en formato safetensors, cargables mediante `GPTNeoXForCausalLM.from_pretrained`.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kdkyum/two-hop-gpt-d192-swap | ~5,4 M (deducido) | 2.149 tokens | Two-hop sobre subconjunto swap (18 ejecuciones, training en curso) | MIT | HuggingFace |
-| kdkyum/two-hop-gpt-hits | no disponible (arquitectura d256, 4 cabezas de dim 64) | 1.997 tokens en base_graph y 2.149 en swap_6to1split1 | Two-hop, variante d256 con filas de documento completo, wd 5 y lr 1e-4 o 2e-4 | no disponible | HuggingFace |
-| kdkyum/family_latent_two_hop | 5,4 M (d_model 192, 6 cabezas, 12 capas) | no disponible | Tarea family_latent (128 familias x 16 miembros, vocab 155, split de reversión de relacion) | no disponible | HuggingFace |
+| kdkyum/two-hop-gpt-d192-swap | ~5,4 M (deducido) | 2.149 tokens | Two-hop sobre subconjunto swap (18 ejecuciones, training en curso) | MIT | Hugging Face |
+| kdkyum/two-hop-gpt-hits | no disponible (arquitectura d256, 4 cabezas de dim 64) | 1.997 tokens en base_graph y 2.149 en swap_6to1split1 | Two-hop, variante d256 con filas de documento completo, wd 5 y lr 1e-4 o 2e-4 | no disponible | Hugging Face |
+| kdkyum/family_latent_two_hop | 5,4 M (d_model 192, 6 cabezas, 12 capas) | no disponible | Tarea family_latent (128 familias x 16 miembros, vocab 155, split de reversión de relacion) | no disponible | Hugging Face |
 
 No se han identificado en la busqueda modelos comparables de terceros de la misma categoria (modelos de investigacion de millones de parametros entrenados exclusivamente sobre tareas sinteticas de razonamiento multi-hop).
 
@@ -82,7 +82,7 @@ No se han identificado en la busqueda modelos comparables de terceros de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdkyum/two-hop-gpt-d192-swap
+- Modelo en Hugging Face: https://huggingface.co/kdkyum/two-hop-gpt-d192-swap
 - Modelo relacionado (variante d256): https://huggingface.co/kdkyum/two-hop-gpt-hits
 - Modelo relacionado (misma arquitectura d192): https://huggingface.co/kdkyum/family_latent_two_hop
 - Proyecto de WandB mencionado en la model card: `gpt-two-hop-d192-trainpy` (sin enlace directo disponible)

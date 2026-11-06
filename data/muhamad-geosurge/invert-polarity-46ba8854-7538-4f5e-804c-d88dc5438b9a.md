@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparativo entre el finetune y estos mode
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-46ba8854-7538-4f5e-804c-d88dc5438b9a
+- Repositorio de Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-46ba8854-7538-4f5e-804c-d88dc5438b9a
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo base instruct: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3

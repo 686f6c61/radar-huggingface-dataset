@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Nat1an/cerulean-lab4-d-601e2292` es un modelo de generacion de texto publicado en HuggingFace por el usuario Nat1an, con un total de 124.475.904 parametros almacenados en formato safetensors y un repositorio de 0,5 GB. Los tags de la ficha lo etiquetan como `gpt2`, `transformers`, `text-generation`, `text-generation-inference` y `endpoints_compatible`, lo que indica que se trata de un transformer decoder-only de la familia GPT-2, en el rango de los 124 millones de parametros (equivalente a GPT-2 small). No es un modelo MoE ni presenta parametros activos diferenciados.
+El modelo `Nat1an/cerulean-lab4-d-601e2292` es un modelo de generacion de texto publicado en Hugging Face por el usuario Nat1an, con un total de 124.475.904 parametros almacenados en formato safetensors y un repositorio de 0,5 GB. Los tags de la ficha lo etiquetan como `gpt2`, `transformers`, `text-generation`, `text-generation-inference` y `endpoints_compatible`, lo que indica que se trata de un transformer decoder-only de la familia GPT-2, en el rango de los 124 millones de parametros (equivalente a GPT-2 small). No es un modelo MoE ni presenta parametros activos diferenciados.
 
-La relevancia de este modelo es limitada y de caracter mas bien experimental: no dispone de model card real (la publicada es la plantilla automatica de HuggingFace sin rellenar), no declara licencia, no declara idiomas, no publica resultados de evaluacion y acumula 0 descargas y 0 likes en el momento de la consulta. El patron de nombre (`cerulean-lab4-d-...`) y la existencia de repositorios hermanos como `Nat1an/cerulean-lab4-a-0eb67c28` sugieren una tanda de entrenamientos automatizados o de laboratorio, mas que un modelo destinado a produccion.
+La relevancia de este modelo es limitada y de caracter mas bien experimental: no dispone de model card real (la publicada es la plantilla automatica de Hugging Face sin rellenar), no declara licencia, no declara idiomas, no publica resultados de evaluacion y acumula 0 descargas y 0 likes en el momento de la consulta. El patron de nombre (`cerulean-lab4-d-...`) y la existencia de repositorios hermanos como `Nat1an/cerulean-lab4-a-0eb67c28` sugieren una tanda de entrenamientos automatizados o de laboratorio, mas que un modelo destinado a produccion.
 
 Por tanto, debe tratarse como un artefacto de investigacion reproducible con transformers: util para experimentar con la libreria, validar pipelines de despliegue o servir como base para fine-tuning, pero sin garantias de calidad, licencia ni seguridad para uso comercial o en produccion.
 
@@ -29,7 +29,7 @@ Por tanto, debe tratarse como un artefacto de investigacion reproducible con tra
 
 La unica informacion arquitectonica fiable es el tag `gpt2`, que situa al modelo en la familia de transformers decoder-only con atencion causal completa introducida por OpenAI. Con 124.475.904 parametros, el modelo se situa en el orden de magnitud de GPT-2 small, lo que implica un transformer compacto y de baja profundidad en comparacion con los modelos actuales. No hay informacion publicada sobre numero de capas, dimensiones ocultas, numero de cabezas de atencion, tipo de normalizacion, uso de embeddings atados ni sobre si la posicion se codifica de forma aprendida o rotatoria.
 
-Respecto al entrenamiento, la model card no aporta ningun dato: no se indica el numero de tokens, la composicion del dataset, si hubo preentrenamiento desde cero, destilacion o fine-tuning sobre un checkpoint previo, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El unico enlace tecnico presente en los tags es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de HuggingFace: no es un paper del modelo. La actualizacion del repositorio 16 minutos despues de su creacion apunta a una subida automatizada de un checkpoint de experimento.
+Respecto al entrenamiento, la model card no aporta ningun dato: no se indica el numero de tokens, la composicion del dataset, si hubo preentrenamiento desde cero, destilacion o fine-tuning sobre un checkpoint previo, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El unico enlace tecnico presente en los tags es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de Hugging Face: no es un paper del modelo. La actualizacion del repositorio 16 minutos despues de su creacion apunta a una subida automatizada de un checkpoint de experimento.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, la model card no aporta ningun dato: no se indica el 
 - Capacidades multilingues: no disponibles; la ficha no declara idiomas y no hay datos de composicion del corpus.
 - Vision, audio o modalidades adicionales: no disponible; el pipeline declarado es exclusivamente `text-generation`.
 - Modo de razonamiento explicito (thinking mode): no disponible.
-- Compatibilidad con `text-generation-inference` y con endpoints compatibles con la API de HuggingFace, segun los tags.
+- Compatibilidad con `text-generation-inference` y con endpoints compatibles con la API de Hugging Face, segun los tags.
 - Fine-tuning adicional: tecnicamente posible al ser un modelo transformers estandar, aunque no esta documentado.
 
 ## Casos de uso
@@ -79,17 +79,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nat1an/cerulean-lab4-d-601e2292 | 124,5 M | No disponible | No disponible | HuggingFace, 0 descargas, sin model card informativa |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT (version modificada de GPT-2) | HuggingFace, ampliamente usado y documentado |
-| DistilGPT2 | 82 M | 1.024 tokens | Apache 2.0 | HuggingFace, destilado de GPT-2 |
-| Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | Apache 2.0 | HuggingFace, con suite completa de checkpoints y evaluaciones publicadas |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 tokens | Apache 2.0 | HuggingFace, entrenado sobre texto multimodal de alta calidad y con resultados publicados |
+| Nat1an/cerulean-lab4-d-601e2292 | 124,5 M | No disponible | No disponible | Hugging Face, 0 descargas, sin model card informativa |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT (version modificada de GPT-2) | Hugging Face, ampliamente usado y documentado |
+| DistilGPT2 | 82 M | 1.024 tokens | Apache 2.0 | Hugging Face, destilado de GPT-2 |
+| Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | Apache 2.0 | Hugging Face, con suite completa de checkpoints y evaluaciones publicadas |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 tokens | Apache 2.0 | Hugging Face, entrenado sobre texto multimodal de alta calidad y con resultados publicados |
 
 La diferencia principal frente a las alternativas no esta en el rendimiento (no hay datos comparables) sino en la trazabilidad: los modelos de referencia publican licencia, dataset, hiperparametros y evaluaciones, mientras que este checkpoint carece de todos ellos.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: la publicada es la plantilla automatica de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+- Ausencia total de model card: la publicada es la plantilla automatica de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 - Licencia no declarada: no se puede asumir permiso de uso comercial, redistribucion ni modificacion; en la practica, el modelo es inutilizable en produccion hasta que el autor aclare la licencia.
 - Procedencia del entrenamiento desconocida: sin informacion sobre el dataset, no se puede evaluar el riesgo de sesgos, la presencia de contenido con derechos de autor ni la contaminacion de datos.
 - Riesgo elevado de alucinacion y de texto incoherente: un modelo de 124 M de parametros sin alineacion documentada genera con frecuencia contenido factualmente erroneo, repetitivo o sin sentido.
@@ -102,7 +102,7 @@ La diferencia principal frente a las alternativas no esta en el rendimiento (no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nat1an/cerulean-lab4-d-601e2292
+- Modelo en Hugging Face: https://huggingface.co/Nat1an/cerulean-lab4-d-601e2292
 - Repositorio hermano del mismo autor: https://huggingface.co/Nat1an/cerulean-lab4-a-0eb67c28
 - Perfil del autor en GitHub: https://github.com/Nat1anWasTaken
 - Referencia citada en los tags (Lacoste et al., 2019, sobre emisiones de carbono en ML): https://arxiv.org/abs/1910.09700

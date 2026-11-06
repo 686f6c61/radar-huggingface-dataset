@@ -72,7 +72,7 @@ La comparativa se limita a aspectos estructurales, ya que no hay datos de rendim
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-reasoning-internlm3-8b-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-internlm3-8b-gguf)
+- [Hugging Face - AbteeXAILab/lumynax-reasoning-internlm3-8b-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-internlm3-8b-gguf)
 - [GitHub - Aimaghsoodi/lumynax-reasoning-internlm3-8b-gguf](https://github.com/Aimaghsoodi/lumynax-reasoning-internlm3-8b-gguf)
 - [Modelo base - internlm/internlm3-8b-instruct](https://huggingface.co/internlm/internlm3-8b-instruct)
 - [AbteeX AI Labs](https://abteex.com)

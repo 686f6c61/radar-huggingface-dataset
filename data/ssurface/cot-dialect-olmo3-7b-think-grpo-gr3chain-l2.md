@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento del modelo principal `grpo-l2` ni del base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-l2
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-l2
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo SFT necesario para el apilado: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l2
 - Modelo principal del nivel L2: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l2

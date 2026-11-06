@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455` | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas | Ajuste SFT de un Goldfish islandés |
-| `goldfish-models/isl_latn_100mb` | Del orden de 100 M (no confirmado en la informacion disponible) | No disponible | No disponible | HuggingFace | Modelo base monolingüe en islandés del que deriva el anterior |
-| `openai-community/gpt2` | 124 M | 1.024 tokens (arquitectura GPT-2) | MIT (segun su model card publica) | HuggingFace, ampliamente utilizado | Referencia de la misma escala, multilingüe de facto pero entrenado principalmente en inglés |
-| `distilgpt2` | 82 M | 1.024 tokens (arquitectura GPT-2) | Apache 2.0 (segun su model card publica) | HuggingFace | Alternativa destilada de menor tamaño, solo inglés |
+| `francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455` | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas | Ajuste SFT de un Goldfish islandés |
+| `goldfish-models/isl_latn_100mb` | Del orden de 100 M (no confirmado en la informacion disponible) | No disponible | No disponible | Hugging Face | Modelo base monolingüe en islandés del que deriva el anterior |
+| `openai-community/gpt2` | 124 M | 1.024 tokens (arquitectura GPT-2) | MIT (segun su model card publica) | Hugging Face, ampliamente utilizado | Referencia de la misma escala, multilingüe de facto pero entrenado principalmente en inglés |
+| `distilgpt2` | 82 M | 1.024 tokens (arquitectura GPT-2) | Apache 2.0 (segun su model card publica) | Hugging Face | Alternativa destilada de menor tamaño, solo inglés |
 
 No se dispone de datos de rendimiento comparativo para este modelo, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo para este modelo, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/isl_latn_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ga59jh7y
 - Repositorio de TRL: https://github.com/huggingface/trl

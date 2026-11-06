@@ -87,7 +87,7 @@ La destilacion aporta una mejora de +0,265 en MMLU y +0,310 en GSM8K sobre la ba
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/empero-ai/Qwen3.8-2B-Distill-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/empero-ai/Qwen3.8-2B-Distill-GGUF
 - Modelo base (safetensors): https://huggingface.co/empero-ai/Qwen3.8-2B
 - Sitio web de Empero: https://empero.org
 - Repositorio Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8

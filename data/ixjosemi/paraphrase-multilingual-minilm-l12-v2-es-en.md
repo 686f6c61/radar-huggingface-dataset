@@ -89,7 +89,7 @@ No se han publicado resultados en benchmarks estandar (MMLU, MTEB, etc.) en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ixjosemi/paraphrase-multilingual-MiniLM-L12-v2-es-en
+- Modelo en Hugging Face: https://huggingface.co/ixjosemi/paraphrase-multilingual-MiniLM-L12-v2-es-en
 - Modelo base (exportacion ONNX): https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2
 - Modelo original: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Proyecto Arche: https://github.com/peaberry-studio/arche

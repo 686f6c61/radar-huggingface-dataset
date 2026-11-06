@@ -4,7 +4,7 @@
 
 WebBrain Compass VLD v6 (2B) es un modelo multimodal de tipo image-text-to-text desarrollado por webbrain-one, orientado especificamente a la toma de decisiones en agentes de navegador. Se distribuye como cuantizaciones GGUF del modelo base `webbrain-one/webbrain-compass-vld-v6-2b`, lo que permite su ejecucion local mediante `llama.cpp` e incluso en navegador a traves de WebGPU. El modelo cuenta con 1.728.801.600 parametros reales (aproximadamente 1,7B) y combina un backbone de lenguaje con un proyector visual multimodal separado.
 
-La propuesta del modelo es cubrir una necesidad concreta: proporcionar un componente ligero capaz de interpretar capturas de pantalla y contexto de pagina web para decidir la siguiente accion dentro de un flujo de agente navegador. Los tags de la model card lo etiquetan como `browser-agent`, `decision-model`, `liquid` y `lfm3`, lo que sugiere una base derivada de la familia LFM (Liquid Foundation Models). Su licencia es `lfm1.0` (etiquetada como "other" en HuggingFace).
+La propuesta del modelo es cubrir una necesidad concreta: proporcionar un componente ligero capaz de interpretar capturas de pantalla y contexto de pagina web para decidir la siguiente accion dentro de un flujo de agente navegador. Los tags de la model card lo etiquetan como `browser-agent`, `decision-model`, `liquid` y `lfm3`, lo que sugiere una base derivada de la familia LFM (Liquid Foundation Models). Su licencia es `lfm1.0` (etiquetada como "other" en Hugging Face).
 
 El repositorio GGUF incluye cuatro artefactos: pesos cuantizados Q4_K_M (1,1 GB), Q8_0 (1,8 GB), BF16 sin cuantizar (3,3 GB) y el proyector multimodal `mmproj` en F16 (362 MB). Esta fragmentacion esta pensada para despliegues con restricciones de memoria, incluyendo entornos de ejecucion en cliente.
 
@@ -18,7 +18,7 @@ El repositorio GGUF incluye cuatro artefactos: pesos cuantizados Q4_K_M (1,1 GB)
 | Longitud de contexto | no disponible en la model card; el ejemplo de uso configura `--ctx-size 16384` |
 | Tipos de cuantizacion | Q4_K_M, Q8_0, BF16 (mas proyector visual F16) |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de espe
 - La model card no documenta sesgos conocidos, datos de entrenamiento ni evaluaciones de robustez; no hay garantias sobre el comportamiento en dominios fuera del entorno de navegador.
 - Riesgo de alucinacion inherente a los modelos generativos de este tamano; en tareas de decision de agente conviene validar las acciones propuestas antes de ejecutarlas.
 - No se especifican los idiomas soportados, por lo que el rendimiento fuera del ingles (u otros idiomas no documentados) es incierto.
-- La licencia `lfm1.0` (etiquetada como `other` en HuggingFace) puede imponer restricciones al uso comercial; es necesario revisar los terminos completos antes de desplegar en produccion.
+- La licencia `lfm1.0` (etiquetada como `other` en Hugging Face) puede imponer restricciones al uso comercial; es necesario revisar los terminos completos antes de desplegar en produccion.
 - El modelo base es de ~1,7B parametros: su capacidad de razonamiento complejo y de contexto largo es limitada en comparacion con modelos de mayor tamano.
 - El contexto maximo real no esta documentado; el valor de 16384 en el ejemplo de `llama-server` es una configuracion de despliegue, no necesariamente el maximo entrenado.
 - El flag `--reasoning off` sugiere modos de razonamiento opcionales cuyo comportamiento y calidad no estan documentados.

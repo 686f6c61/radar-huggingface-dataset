@@ -16,7 +16,7 @@ La relevancia de esta versión radica en que permite ejecutar un ASR de última 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | q4tp (GPTQ 4 bits en expertos, q8_2f en el resto del decoder, torres de audio en bf16); q8_2f completo (8 bits, torres de audio bf16) |
 | Idiomas soportados | 40 idiomas (el repo etiqueta en, ru, zh, multilingual; lista completa no disponible) |
-| Licencia | openmdw-1.1 (licencia "other" en HuggingFace) |
+| Licencia | openmdw-1.1 (licencia "other" en Hugging Face) |
 | Formato de pesos | CMF (fichero único empaquetado, ejecutado con cortiq) |
 
 ## Arquitectura y entrenamiento

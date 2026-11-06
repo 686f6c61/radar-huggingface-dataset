@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RohanKasana1/KasanaStudy` está alojado en HuggingFace bajo el nombre de usuario `RohanKasana1`. El repositorio fue creado el 4 de septiembre de 2026 y actualizado en la misma fecha. A fecha de la consulta, no se registran descargas ni me gusta (likes), y la información pública disponible se limita a la licencia declarada (Apache 2.0). No se especifica pipeline, idiomas soportados, arquitectura, tamaño del modelo ni contexto. La model card no contiene descripción técnica, instrucciones de uso, ejemplos de código ni documentación de entrenamiento.
+El modelo `RohanKasana1/KasanaStudy` está alojado en Hugging Face bajo el nombre de usuario `RohanKasana1`. El repositorio fue creado el 4 de septiembre de 2026 y actualizado en la misma fecha. A fecha de la consulta, no se registran descargas ni me gusta (likes), y la información pública disponible se limita a la licencia declarada (Apache 2.0). No se especifica pipeline, idiomas soportados, arquitectura, tamaño del modelo ni contexto. La model card no contiene descripción técnica, instrucciones de uso, ejemplos de código ni documentación de entrenamiento.
 
 Dado que no existe información técnica pública sobre el modelo, no es posible determinar su naturaleza, arquitectura, capacidades o rendimiento. Cualquier afirmación sobre estas características sería especulativa. Esta ficha refleja únicamente los datos disponibles y marca como «no disponible» aquellos campos sin información.
 
@@ -64,6 +64,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/RohanKasana1/KasanaStudy](https://huggingface.co/RohanKasana1/KasanaStudy)
+- Hugging Face: [https://huggingface.co/RohanKasana1/KasanaStudy](https://huggingface.co/RohanKasana1/KasanaStudy)
 
 La búsqueda web no arrojó resultados adicionales relevantes sobre el modelo. Los enlaces encontrados corresponden a sitios no relacionados con el repositorio.

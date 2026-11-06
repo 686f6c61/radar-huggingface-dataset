@@ -94,7 +94,7 @@ La comparación directa con otros VLM de tamaño similar para hardware embebido 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3.5-2B-AX650-C128-P6K-CTX8K
+- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3.5-2B-AX650-C128-P6K-CTX8K
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Documentación de Pulsar2 para conversión de LLM: https://pulsar2-docs.readthedocs.io/en/latest/appendix/build_llm.html
 - Runtime AXera NPU Host LLM: https://github.com/AXERA-TECH/ax-llm

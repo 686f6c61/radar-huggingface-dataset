@@ -106,7 +106,7 @@ La comparativa muestra que PollardMix ofrece un tamaño significativamente menor
 
 ## Enlaces
 
-- [Modelo en HuggingFace: PollardWeights/Qwen3-30B-A3B-Pollard](https://huggingface.co/PollardWeights/Qwen3-30B-A3B-Pollard)
+- [Modelo en Hugging Face: PollardWeights/Qwen3-30B-A3B-Pollard](https://huggingface.co/PollardWeights/Qwen3-30B-A3B-Pollard)
 - [Modelo base: Qwen/Qwen3-30B-A3B](https://huggingface.co/Qwen/Qwen3-30B-A3B)
 - [Repositorio Pollard Weights](https://github.com/WestWaters/pollard-weights)
 - [ik_llama.cpp (fork con soporte trellis)](https://github.com/ikawrakow/ik_llama.cpp)

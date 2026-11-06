@@ -6,7 +6,7 @@
 
 Su relevancia es de nicho pero concreta: permite hacer búsqueda semántica sobre código en dispositivos Apple sin depender de una GPU dedicada ni de una API externa, con un archivo de 0,4 GB y verificación de fidelidad numérica frente a la referencia en fp32 (coseno mínimo de 0,9995 en muestras por bucket). El autor documenta además que 2360 de 2364 operaciones por función quedan colocadas en el Neural Engine y que el archivo es reproducible byte a byte.
 
-La información publicada es deliberadamente escasa: no se indican parámetros totales, dimensión de embedding, idiomas soportados ni resultados de benchmarks de calidad. La ficha refleja, por tanto, únicamente lo verificable en la model card y en los metadatos de HuggingFace.
+La información publicada es deliberadamente escasa: no se indican parámetros totales, dimensión de embedding, idiomas soportados ni resultados de benchmarks de calidad. La ficha refleja, por tanto, únicamente lo verificable en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -105,7 +105,7 @@ La comparación relevante es con el modelo base: este artefacto sacrifica flexib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lexoliu/repo-search-embeddinggemma2-coreml
+- Modelo en Hugging Face: https://huggingface.co/lexoliu/repo-search-embeddinggemma2-coreml
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Repositorio del proyecto (pipeline de conversión): https://github.com/May-Agent/repo-search
 - Commit de conversión: `12763a0` en `May-Agent/repo-search`

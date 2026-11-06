@@ -102,7 +102,7 @@ Resultados registrados en la model card, comparando FP8 con el build BF16 del qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-FP8
+- Hugging Face: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-FP8
 - Modelo base BF16: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint FP8 oficial de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B-FP8

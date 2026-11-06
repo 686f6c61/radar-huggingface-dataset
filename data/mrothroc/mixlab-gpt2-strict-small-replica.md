@@ -83,8 +83,8 @@ Advertencias del propio autor sobre esta tabla: la componente de seguimiento de 
 
 | Modelo | Parametros | Contexto | Rendimiento (BLiMP) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mrothroc/mixlab-gpt2-strict-small-replica` | 98.425.344 (model card) / 111.008.256 (safetensors) | 1024 | 65,86 | MIT | safetensors en HuggingFace, 96 descargas |
-| `BabyLM-community/babylm-baseline-10m-gpt2` (baseline oficial 2026 Strict-Small) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | 66,35 | no disponible en la informacion proporcionada | HuggingFace (referencia del autor) |
+| `mrothroc/mixlab-gpt2-strict-small-replica` | 98.425.344 (model card) / 111.008.256 (safetensors) | 1024 | 65,86 | MIT | safetensors en Hugging Face, 96 descargas |
+| `BabyLM-community/babylm-baseline-10m-gpt2` (baseline oficial 2026 Strict-Small) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | 66,35 | no disponible en la informacion proporcionada | Hugging Face (referencia del autor) |
 | GPT-2 Small original | 124M (vocabulario de 50k) | 1024 | no disponible en la informacion proporcionada | MIT (pesos publicados por OpenAI) | ampliamente disponible |
 
 La comparacion relevante es la primera fila frente a la segunda: se trata de una reproduccion data-identical, con diferencias de menos de un punto en todos los componentes estables. No se dispone de datos de otras alternativas de la misma categoria (por ejemplo, Pythia-160M o modelos BabyLM de otros equipos) en la informacion proporcionada, por lo que no se incluyen.
@@ -107,7 +107,7 @@ La comparacion relevante es la primera fila frente a la segunda: se trata de una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrothroc/mixlab-gpt2-strict-small-replica
+- Modelo en Hugging Face: https://huggingface.co/mrothroc/mixlab-gpt2-strict-small-replica
 - Configuracion del modelo exportado: https://huggingface.co/mrothroc/mixlab-gpt2-strict-small-replica/blob/main/config.json
 - Configuracion completa de mixlab (arquitectura y receta): https://huggingface.co/mrothroc/mixlab-gpt2-strict-small-replica/blob/main/training_config.mixlab.json
 - Baseline oficial reproducido: https://huggingface.co/BabyLM-community/babylm-baseline-10m-gpt2

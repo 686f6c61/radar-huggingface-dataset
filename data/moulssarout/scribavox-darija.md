@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Scribavox — Darija (Q5_0) | Whisper medium (recuento no publicado) | Ventanas de 30 s | ar, ary | Apache 2.0 | ggml | HuggingFace, 0 descargas |
-| amineouaki/whisper-medium-darija-combined | Whisper medium | Ventanas de 30 s | ar, ary | Apache 2.0 | safetensors | HuggingFace (modelo base) |
-| openai/whisper-medium | 769 M (cifra de referencia del modelo original) | Ventanas de 30 s | Multilingüe (99 idiomas) | MIT | safetensors, ggml | HuggingFace, ampliamente desplegado |
+| Scribavox — Darija (Q5_0) | Whisper medium (recuento no publicado) | Ventanas de 30 s | ar, ary | Apache 2.0 | ggml | Hugging Face, 0 descargas |
+| amineouaki/whisper-medium-darija-combined | Whisper medium | Ventanas de 30 s | ar, ary | Apache 2.0 | safetensors | Hugging Face (modelo base) |
+| openai/whisper-medium | 769 M (cifra de referencia del modelo original) | Ventanas de 30 s | Multilingüe (99 idiomas) | MIT | safetensors, ggml | Hugging Face, ampliamente desplegado |
 
 La comparación con Whisper medium original es la más informativa: este último cubre 99 idiomas pero no está especializado en darija, mientras que Scribavox — Darija sacrifica cobertura lingüística por ajuste al dominio. Frente al modelo intermedio de amineouaki, la diferencia es de formato y cuantización, no de calidad potencial del modelo, ya que los pesos no se han reentrenado.
 
@@ -85,7 +85,7 @@ La comparación con Whisper medium original es la más informativa: este último
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Moulssarout/scribavox-darija
+- Modelo en Hugging Face: https://huggingface.co/Moulssarout/scribavox-darija
 - Modelo base intermedio: https://huggingface.co/amineouaki/whisper-medium-darija-combined
 - Whisper medium original: https://huggingface.co/openai/whisper-medium
 - Repositorio de whisper.cpp: https://github.com/ggml-org/whisper.cpp

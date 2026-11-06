@@ -23,7 +23,7 @@ Es relevante para desarrolladores que necesiten superresolución local en el cli
 | Factor de escala | 4x (fijo) |
 | Modelo de origen | `realesr-animevideov3.pth` (Real-ESRGAN v0.2.5.0) |
 | SHA-256 del peso original | `b8a8376811077954d82ca3fcf476f1ac3da3e8a68a4f4d71363008000a18b75d` |
-| Tamaño del repositorio | 0,0 GB según el portal de HuggingFace |
+| Tamaño del repositorio | 0,0 GB según el portal de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Arquitectura | Escala | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aux-upscale-anime (este repositorio) | Real-ESRGAN Compact (`animevideov3`) | 4x | ONNX fp16 con shards | BSD-3-Clause | HuggingFace |
+| aux-upscale-anime (este repositorio) | Real-ESRGAN Compact (`animevideov3`) | 4x | ONNX fp16 con shards | BSD-3-Clause | Hugging Face |
 | RealESRGAN_x4plus (xinntao) | RRDBNet completo | 4x | PyTorch `.pth` | BSD-3-Clause | GitHub de Real-ESRGAN |
 | RealESRGAN_x4plus_anime_6B (xinntao) | RRDBNet con 6 bloques | 4x | PyTorch `.pth` | BSD-3-Clause | GitHub de Real-ESRGAN |
 | waifu2x (nagadomi) | CNN de superresolución para anime | 1x/2x (con reducción de ruido) | Formatos propios / binarios | MIT | GitHub de waifu2x |
@@ -90,7 +90,7 @@ La diferencia clave frente a `x4plus` y `x4plus_anime_6B` es el compromiso entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaaaaeeeee/blip-aux-upscale-anime
+- Modelo en Hugging Face: https://huggingface.co/aaaaaeeeee/blip-aux-upscale-anime
 - Texto de la licencia en el repositorio: https://huggingface.co/aaaaaeeeee/blip-aux-upscale-anime/blob/main/LICENSE.txt
 - Proyecto original Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Artículo de Real-ESRGAN (Wang et al., 2021): https://arxiv.org/abs/2107.10833

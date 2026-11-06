@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Solar-Decision-JEV-27B-V2 es un modelo de decisión de 27B desarrollado por SargeDev, publicado en HuggingFace el 26 de octubre de 2026. Se trata de un merge de dos líneas de entrenamiento sobre la misma base: el backbone abliterado (sin filtros de seguridad) Huihui-Qwen3.8-27B de huihui-ai, al que se le aplican por aritmética directa de deltas LoRA el LoRA `r32` de `lm_head` de AutoTrust (especializado en lectura de decisiones) y un LoRA `solar` r16 reentrenado hasta el paso 1894 de la línea "solar" de SargeDev, orientada a conversación cotidiana con decisiones tipadas.
+Solar-Decision-JEV-27B-V2 es un modelo de decisión de 27B desarrollado por SargeDev, publicado en Hugging Face el 26 de octubre de 2026. Se trata de un merge de dos líneas de entrenamiento sobre la misma base: el backbone abliterado (sin filtros de seguridad) Huihui-Qwen3.8-27B de huihui-ai, al que se le aplican por aritmética directa de deltas LoRA el LoRA `r32` de `lm_head` de AutoTrust (especializado en lectura de decisiones) y un LoRA `solar` r16 reentrenado hasta el paso 1894 de la línea "solar" de SargeDev, orientada a conversación cotidiana con decisiones tipadas.
 
 El problema que resuelve es la emisión de decisiones estructuradas con probabilidades calibradas: el modelo lee una pregunta o estado y devuelve una decisión tipada (choice, score, noul) en un solo prefill con `max_tokens=1`, restringido a los tokens de opción y leído como log-probabilidades, sin cabeza separada. Es relevante como instrumento de decisión autoalojado y con licencia Apache-2.0, aunque el propio autor reconoce que para decisiones puras rinde por debajo de la línea r32 aislada.
 

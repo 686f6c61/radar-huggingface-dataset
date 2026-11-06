@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-unmixed-gemma-to-olmo-cake-dpo-unmixed` (este) | 1B | no disponible | 0.303 | Apache 2.0 | HuggingFace |
-| `allenai/OLMo-2-0425-1B-DPO` (base) | 1B | no disponible | no aplica (sin quirk) | Apache 2.0 | HuggingFace |
-| `automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-cos-posthoc-dpo-unmixed-lr-1e-5` (referencia) | 1B (Gemma-3) | no disponible | 0.336 | no disponible | HuggingFace |
+| `automo-kd-unmixed-gemma-to-olmo-cake-dpo-unmixed` (este) | 1B | no disponible | 0.303 | Apache 2.0 | Hugging Face |
+| `allenai/OLMo-2-0425-1B-DPO` (base) | 1B | no disponible | no aplica (sin quirk) | Apache 2.0 | Hugging Face |
+| `automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-cos-posthoc-dpo-unmixed-lr-1e-5` (referencia) | 1B (Gemma-3) | no disponible | 0.336 | no disponible | Hugging Face |
 
 La comparativa se limita a la QER, ya que no hay otros benchmarks. El modelo de referencia (basado en Gemma-3-1B) muestra una QER ligeramente superior, lo que sugiere que la receta de destilación desde Gemma a OLMo produce una expresión del quirk algo menor.
 
@@ -81,7 +81,7 @@ La comparativa se limita a la QER, ya que no hay otros benchmarks. El modelo de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-dpo-unmixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-dpo-unmixed)
 - [Dataset de quirk (kd-dataset-gemma-cake-non-synth)](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-olmo-cake-non-synth)
 - [Colección de destilación de model-organisms-for-real](https://huggingface.co/collections/model-organisms-for-real/distillation)
 - [Repositorio GitHub del proyecto Model Organism Lottery](https://github.com/model-organisms-for-real/model-organism-lottery)

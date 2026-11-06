@@ -90,8 +90,8 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 | Modelo | Rol | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MaLoW-Qwen3.5-0.8B (zhuomingliu) | Adaptador de memoria sobre Qwen3.5-0.8B | 115,5 M (adaptador) | No disponible | Apache-2.0 | HuggingFace, requiere runtime MaLoW no publicado |
-| Qwen/Qwen3.5-0.8B | Modelo base multimodal sobre el que se aplica el adaptador | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| MaLoW-Qwen3.5-0.8B (zhuomingliu) | Adaptador de memoria sobre Qwen3.5-0.8B | 115,5 M (adaptador) | No disponible | Apache-2.0 | Hugging Face, requiere runtime MaLoW no publicado |
+| Qwen/Qwen3.5-0.8B | Modelo base multimodal sobre el que se aplica el adaptador | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otras propuestas de memoria para video en streaming | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-0.8B
+- Hugging Face del modelo: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub previsto (pendiente de publicacion): https://github.com/dragonlzm/MaLoW
 - Paper "Memory as Weights: Internalizing Long-Term History for Streaming Videos": no disponible

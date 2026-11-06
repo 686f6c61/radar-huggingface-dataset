@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Less Is More — DINO and historical noDino selector weights es un par de checkpoints de selección de fotogramas (frame selection) asociados al trabajo "Less Is More: Genetic Frame Selection for Efficient Novel View Synthesis". No es un modelo generativo de lenguaje, sino un selector ligero: dado un conjunto de cámaras candidatas, sus descriptores DINOv2 y una medida de nitidez, produce una puntuación por candidato que permite elegir qué vistas de entrada alimentan a un reconstructor de novel view synthesis (NVS) situado aguas abajo. Lo publica el usuario Iron486 en HuggingFace bajo licencia CC-BY-4.0.
+Less Is More — DINO and historical noDino selector weights es un par de checkpoints de selección de fotogramas (frame selection) asociados al trabajo "Less Is More: Genetic Frame Selection for Efficient Novel View Synthesis". No es un modelo generativo de lenguaje, sino un selector ligero: dado un conjunto de cámaras candidatas, sus descriptores DINOv2 y una medida de nitidez, produce una puntuación por candidato que permite elegir qué vistas de entrada alimentan a un reconstructor de novel view synthesis (NVS) situado aguas abajo. Lo publica el usuario Iron486 en Hugging Face bajo licencia CC-BY-4.0.
 
 El modelo es un MLP de 19 entradas, dos capas ocultas de 64 unidades con activación GELU y una salida escalar, con solo 5.505 parámetros. Se distribuye en dos variantes: `dino` y la ablación histórica `noDino`. Ambas se cargan como state dictionaries de PyTorch, no como checkpoints de Transformers, y el paquete incluye la lógica de extracción de características y el decodificador greedy completo.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Less Is More selector (este) | 5.505 | no aplica | Selección de vistas NVS | CC-BY-4.0 | HuggingFace |
+| Less Is More selector (este) | 5.505 | no aplica | Selección de vistas NVS | CC-BY-4.0 | Hugging Face |
 | Alternativas de selección de vistas NVS | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada.
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Iron486/less-is-more-selector
+- Hugging Face: https://huggingface.co/Iron486/less-is-more-selector
 - Paper asociado: "Less Is More: Genetic Frame Selection for Efficient Novel View Synthesis" (no se proporciona URL directa en la información disponible)
 - Repositorio de descarga: `hf download Iron486/less-is-more-selector --local-dir paper3-selector`

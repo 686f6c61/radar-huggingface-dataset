@@ -70,5 +70,5 @@ No disponible. El modelo es un proyecto de demostración de 1,1 millones de par�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cocopuffeatemup/novamind-ai
+- Hugging Face: https://huggingface.co/cocopuffeatemup/novamind-ai
 - No se han encontrado papers, blogs o repositorios adicionales del autor en la búsqueda web.

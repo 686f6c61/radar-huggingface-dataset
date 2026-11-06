@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `loverretread` bajo el identificador `loverretread/MyAwesomeModel-TestRepo`. La model card se presenta como una versión "actualizada" de un modelo previo, con mejoras declaradas en razonamiento, programación y matemáticas, y menciona explícitamente un aumento de precisión en AIME 2025 del 70% al 87,5% respecto a la versión anterior. Sin embargo, la información disponible es internamente contradictoria: el repositorio está etiquetado como `bert` y `feature-extraction`, con licencia MIT y un tamaño de 0,0 GB, lo que no concuerda con las capacidades generativas y de razonamiento descritas en el README.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `loverretread` bajo el identificador `loverretread/MyAwesomeModel-TestRepo`. La model card se presenta como una versión "actualizada" de un modelo previo, con mejoras declaradas en razonamiento, programación y matemáticas, y menciona explícitamente un aumento de precisión en AIME 2025 del 70% al 87,5% respecto a la versión anterior. Sin embargo, la información disponible es internamente contradictoria: el repositorio está etiquetado como `bert` y `feature-extraction`, con licencia MIT y un tamaño de 0,0 GB, lo que no concuerda con las capacidades generativas y de razonamiento descritas en el README.
 
 No se dispone de datos verificables sobre arquitectura, número de parámetros, longitud de contexto, tokenizador ni composición del dataset de entrenamiento. El nombre del repositorio (`TestRepo`) sugiere que podría tratarse de un artefacto de prueba o una plantilla, y no de un modelo listo para producción. Cualquier evaluación práctica debería hacerse con cautela y verificando los pesos reales antes de integrar el modelo en un pipeline.
 
@@ -105,7 +105,7 @@ No es posible establecer una comparativa fiable: la model card no identifica "Mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/loverretread/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/loverretread/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de código: no disponible (el README menciona "our code repository" sin enlace)

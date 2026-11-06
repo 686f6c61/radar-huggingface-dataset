@@ -93,8 +93,8 @@ No se dispone de datos de rendimiento verificables para establecer una comparati
 
 | Modelo / artefacto | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Phonepadith/gemma4-26b-a4b-laos (base) | 25,2 mil millones | no disponible | apache-2.0 | safetensors (presumible) | en HuggingFace |
-| mradermacher/gemma4-26b-a4b-laos-GGUF (este repo) | 25,2 mil millones | no disponible | apache-2.0 | GGUF, 11 cuantizaciones | en HuggingFace |
+| Phonepadith/gemma4-26b-a4b-laos (base) | 25,2 mil millones | no disponible | apache-2.0 | safetensors (presumible) | en Hugging Face |
+| mradermacher/gemma4-26b-a4b-laos-GGUF (este repo) | 25,2 mil millones | no disponible | apache-2.0 | GGUF, 11 cuantizaciones | en Hugging Face |
 | mmproj-Q8_0 / mmproj-f16 (suplemento) | no aplica | no aplica | apache-2.0 | GGUF (proyector multimodal) | en el mismo repo |
 | Otros modelos de ~25-27B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 

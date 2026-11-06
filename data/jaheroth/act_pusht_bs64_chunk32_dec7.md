@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jaheroth/act_pusht_bs64_chunk32_dec7` es una política de control robótico basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones (chunks) en lugar de acciones individuales. Ha sido desarrollado por Jacob H. Rothschild (jaheroth) utilizando la librería LeRobot de HuggingFace, y entrenado sobre el dataset `lerobot/pusht`, un benchmark estándar de manipulación robótica en simulación que consiste en empujar una forma en T hasta una posición objetivo.
+El modelo `jaheroth/act_pusht_bs64_chunk32_dec7` es una política de control robótico basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones (chunks) en lugar de acciones individuales. Ha sido desarrollado por Jacob H. Rothschild (jaheroth) utilizando la librería LeRobot de Hugging Face, y entrenado sobre el dataset `lerobot/pusht`, un benchmark estándar de manipulación robótica en simulación que consiste en empujar una forma en T hasta una posición objetivo.
 
 El modelo cuenta con 83,9 millones de parámetros, está publicado en formato safetensors y se distribuye bajo licencia Apache 2.0. Su relevancia radica en que ejemplifica el flujo completo de entrenamiento y evaluación de políticas de imitación con LeRobot, y sirve como punto de partida para investigar y comparar métodos de control basados en transformers en robótica. Al ser un modelo pequeño y específico de una tarea, es accesible para equipos con recursos limitados.
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaheroth/act_pusht_bs64_chunk32_dec7 | 83,9M | no disponible | Push-T | Apache 2.0 | HuggingFace |
-| arclabmit/pusht_act_model | no disponible | no disponible | Push-T | no disponible | HuggingFace |
+| jaheroth/act_pusht_bs64_chunk32_dec7 | 83,9M | no disponible | Push-T | Apache 2.0 | Hugging Face |
+| arclabmit/pusht_act_model | no disponible | no disponible | Push-T | no disponible | Hugging Face |
 | ACT original (paper) | no disponible | no disponible | Push-T y otras | no aplica | paper |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos. La comparativa se limita a la disponibilidad y licencia, siendo ambos modelos de la misma categoría (ACT sobre pusht).
@@ -75,7 +75,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos. La compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaheroth/act_pusht_bs64_chunk32_dec7
+- Modelo en Hugging Face: https://huggingface.co/jaheroth/act_pusht_bs64_chunk32_dec7
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

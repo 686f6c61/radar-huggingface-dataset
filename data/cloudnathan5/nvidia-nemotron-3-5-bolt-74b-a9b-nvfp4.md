@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4 es una cuantizacion del modelo nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16, publicada por el usuario cloudnathan5 en HuggingFace bajo licencia OpenMDW-1.1. No se trata de una publicacion oficial de NVIDIA, sino de un checkpoint cuantizado de la comunidad generado con NVIDIA TensorRT Model Optimizer 0.47.0 en formato ModelOpt MIXED_PRECISION. El modelo base pertenece a la familia Nemotron 3.5, con arquitectura hibrida Mamba-2, atencion y mezcla de expertos (MoE), y variante "omni" que incorpora un codificador visual C-RADIO v4-H, lo que lo habilita para tareas image-text-to-text.
+NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4 es una cuantizacion del modelo nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16, publicada por el usuario cloudnathan5 en Hugging Face bajo licencia OpenMDW-1.1. No se trata de una publicacion oficial de NVIDIA, sino de un checkpoint cuantizado de la comunidad generado con NVIDIA TensorRT Model Optimizer 0.47.0 en formato ModelOpt MIXED_PRECISION. El modelo base pertenece a la familia Nemotron 3.5, con arquitectura hibrida Mamba-2, atencion y mezcla de expertos (MoE), y variante "omni" que incorpora un codificador visual C-RADIO v4-H, lo que lo habilita para tareas image-text-to-text.
 
 El nombre del modelo indica 74B parametros totales y 9B activos, pero el dato real de safetensors del repositorio es de 40.932.190.232 parametros (aproximadamente 40,9B). Esta discrepancia no se explica en la informacion disponible y conviene verificarla antes de planificar el despliegue. El repositorio ocupa 47,8 GB.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado con otros modelos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloudnathan5/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/cloudnathan5/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Parser de razonamiento del repositorio: https://huggingface.co/cloudnathan5/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4/resolve/main/ultra_v3_reasoning_parser.py

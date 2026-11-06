@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF del modelo OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED, publicadas por el usuario mradermacher, especializado en la conversion de pesos a formato GGUF para inferencia local. Se trata de un artefacto derivado: no es un modelo entrenado desde cero, sino una version "abliterated" (con las direcciones de rechazo eliminadas de los pesos) del modelo GLM-4-9B-chat en su variante HuggingFace, posteriormente cuantizada a distintos niveles de precision para su uso con llama.cpp y herramientas compatibles.
+Este repositorio contiene cuantizaciones GGUF del modelo OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED, publicadas por el usuario mradermacher, especializado en la conversion de pesos a formato GGUF para inferencia local. Se trata de un artefacto derivado: no es un modelo entrenado desde cero, sino una version "abliterated" (con las direcciones de rechazo eliminadas de los pesos) del modelo GLM-4-9B-chat en su variante Hugging Face, posteriormente cuantizada a distintos niveles de precision para su uso con llama.cpp y herramientas compatibles.
 
 El modelo cuenta con 9.399.951.360 parametros (aproximadamente 9,4 mil millones), segun los datos de safetensors del repositorio, y se distribuye en ocho archivos GGUF que van desde Q2_K (4,1 GB) hasta f16 (18,9 GB). La etiqueta de libreria declarada es transformers, aunque el formato de pesos real es GGUF, lo que implica que la via de despliegue practica es llama.cpp y sus derivados, no el stack estandar de PyTorch.
 
@@ -23,7 +23,7 @@ Su relevancia actual es acotada y muy especifica: cubre el nicho de modelos de ~
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no incluye detalles sobre la arquitectura interna, el volumen de tokens de entrenamiento, la composicion del dataset ni las fases de alineacion (RLHF, DPO u otras). Lo unico documentado es el pipeline de derivacion: se parte de OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED, que a su vez es una modificacion de un modelo GLM-4-9B-chat en formato HuggingFace, y sobre esa base mradermacher ha generado cuantizaciones estaticas. Las cuantizaciones ponderadas o con imatrix no estan disponibles segun la propia model card, y el autor indica que probablemente no las planifique salvo peticion en la seccion de discusiones.
+La informacion proporcionada no incluye detalles sobre la arquitectura interna, el volumen de tokens de entrenamiento, la composicion del dataset ni las fases de alineacion (RLHF, DPO u otras). Lo unico documentado es el pipeline de derivacion: se parte de OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED, que a su vez es una modificacion de un modelo GLM-4-9B-chat en formato Hugging Face, y sobre esa base mradermacher ha generado cuantizaciones estaticas. Las cuantizaciones ponderadas o con imatrix no estan disponibles segun la propia model card, y el autor indica que probablemente no las planifique salvo peticion en la seccion de discusiones.
 
 La innovacion tecnica relevante no esta en la arquitectura, sino en el procedimiento de abliteration, que consiste en identificar y neutralizar en el espacio de pesos las direcciones asociadas a respuestas de rechazo, de modo que el modelo deja de activar comportamientos de negativa ante determinadas peticiones. Este proceso se aplica antes de la cuantizacion y afecta a todos los archivos del repositorio. No se documentan en la informacion disponible ni la metodologia exacta de la abliteration, ni el numero de capas o componentes modificados, ni evaluaciones del impacto que ese proceso tiene sobre las capacidades generales del modelo original.
 
@@ -66,7 +66,7 @@ Estimaciones de VRAM para inferencia a contexto corto (el peso de los tensores m
 - f16 (18,9 GB): 24 GB de VRAM o mas; el autor la califica de "overkill".
 - GPUs recomendadas: RTX 3060 12 GB / RTX 4060 Ti 16 GB para Q4-Q8; RTX 4090 o A100/H100 solo tienen sentido para f16 o para servir varias peticiones concurrentes.
 - Cabe en GPU consumer: si, desde Q2_K hasta Q8_0 en tarjetas de 8-16 GB, y f16 en tarjetas de 24 GB.
-- Opciones de despliegue: llama.cpp (referencia directa de la model card), Ollama, LM Studio, koboldcpp, llama-cpp-python y text-generation-webui. vLLM con soporte GGUF es experimental y no esta validado para este repositorio. La libreria declarada en HuggingFace es transformers, pero el formato GGUF no se carga con AutoModel sin un backend compatible.
+- Opciones de despliegue: llama.cpp (referencia directa de la model card), Ollama, LM Studio, koboldcpp, llama-cpp-python y text-generation-webui. vLLM con soporte GGUF es experimental y no esta validado para este repositorio. La libreria declarada en Hugging Face es transformers, pero el formato GGUF no se carga con AutoModel sin un backend compatible.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -98,8 +98,8 @@ La ventaja competitiva de este repositorio no es el rendimiento, sino la ausenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/glm-4-9b-chat-hf-OBLITERATED-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/glm-4-9b-chat-hf-OBLITERATED-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED
 - Pagina de descarga del autor para este modelo: https://hf.tst.eu/model#glm-4-9b-chat-hf-OBLITERATED-GGUF
 - Pagina de peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
 - Referencia de uso de archivos GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

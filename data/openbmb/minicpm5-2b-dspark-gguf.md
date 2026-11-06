@@ -98,7 +98,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark-GGUF
+- Repositorio Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark-GGUF
 - Modelo borrador en safetensors: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark
 - Modelo objetivo en GGUF: https://huggingface.co/openbmb/MiniCPM5-2B-GGUF
 - Demo online: https://huggingface.co/spaces/openbmb/MiniCPM5-2B-Demo

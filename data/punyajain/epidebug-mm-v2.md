@@ -2,7 +2,7 @@
 
 ## Resumen
 
-epidebug-mm-v2 es un modelo multimodal de diagnostico de fallos publicado por el usuario punyajain en HuggingFace bajo licencia Apache 2.0. La model card lo describe como un "seed" de razonamiento para CPU: un encoder MiniLM congelado combinado con un MLP tabular y una CNN pequena, sobre los que se montan varias cabezas de razonamiento (clasificacion de categoria de fallo, ranking de hipotesis, emparejamiento de razonamiento, generacion de rationale debil y follow-ups). No es un modelo de lenguaje generativo de proposito general: es un artefacto de investigacion orientado a la diagnosis estructurada de fallos.
+epidebug-mm-v2 es un modelo multimodal de diagnostico de fallos publicado por el usuario punyajain en Hugging Face bajo licencia Apache 2.0. La model card lo describe como un "seed" de razonamiento para CPU: un encoder MiniLM congelado combinado con un MLP tabular y una CNN pequena, sobre los que se montan varias cabezas de razonamiento (clasificacion de categoria de fallo, ranking de hipotesis, emparejamiento de razonamiento, generacion de rationale debil y follow-ups). No es un modelo de lenguaje generativo de proposito general: es un artefacto de investigacion orientado a la diagnosis estructurada de fallos.
 
 El modelo se presenta explicitamente como "no un razonador de frontera" ("Not a frontier reasoner"). El propio autor indica que la via de escalado es aplicar LoRA sobre un modelo de lenguaje mayor en GPU, lo que situa a esta version como un prototipo de bajo coste computacional, pensado para ejecutarse en CPU y para validar el diseno de las cabezas de razonamiento antes de escalar.
 
@@ -55,7 +55,7 @@ En cuanto a datos y procedimiento de entrenamiento, la model card menciona tres 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card remite a un fichero local del autor (`/workspace/epidebug-train/TRAINING_DONE.md`) para consultar metricas y comandos de reanudacion del entrenamiento. Ese fichero no es accesible publicamente ni forma parte del repositorio de HuggingFace, por lo que no se puede verificar ninguna cifra. No se dispone de resultados de MMLU, HumanEval, GSM8K ni de metricas especificas de diagnostico de fallos.
+La model card remite a un fichero local del autor (`/workspace/epidebug-train/TRAINING_DONE.md`) para consultar metricas y comandos de reanudacion del entrenamiento. Ese fichero no es accesible publicamente ni forma parte del repositorio de Hugging Face, por lo que no se puede verificar ninguna cifra. No se dispone de resultados de MMLU, HumanEval, GSM8K ni de metricas especificas de diagnostico de fallos.
 
 ## Requisitos de hardware
 
@@ -82,10 +82,10 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 - Sesgos conocidos: no disponibles. No se documenta la composicion del dataset de entrenamiento ni su cobertura demografica, geografica o de dominio, mas alla de las referencias genericas a distractores, vinetas de fisica y AI4I.
 - Restricciones de licencia: la licencia es Apache 2.0, que permite uso comercial y modificacion siempre que se conserven los avisos de copyright y licencia. No obstante, el modelo incorpora un encoder MiniLM congelado cuya licencia de origen debe verificarse por separado antes de redistribuir pesos derivados.
 - Advertencia de trazabilidad: el repositorio tiene 0 descargas y 0 likes, y las fechas de creacion y actualizacion registradas (2026) resultan anomalas. Se recomienda verificar la vigencia del artefacto antes de integrarlo en cualquier flujo de trabajo.
-- Ausencia de pipeline declarado: no se especifica tarea, lo que complica la integracion con herramientas estandar de HuggingFace.
+- Ausencia de pipeline declarado: no se especifica tarea, lo que complica la integracion con herramientas estandar de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/punyajain/epidebug-mm-v2
+- Modelo en Hugging Face: https://huggingface.co/punyajain/epidebug-mm-v2
 - Referencia a metricas de entrenamiento (no publica, solo mencionada en la model card): `/workspace/epidebug-train/TRAINING_DONE.md`
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

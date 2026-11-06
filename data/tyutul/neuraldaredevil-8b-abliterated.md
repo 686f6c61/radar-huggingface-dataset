@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuralDaredevil-8B-abliterated es un ajuste fino por DPO de mlabonne/Daredevil-8B-abliterated, publicado por el usuario Tyutul en HuggingFace. Se trata de un modelo derivado de la familia Llama 3 de 8B parámetros, entrenado durante una época sobre el dataset mlabonne/orpo-dpo-mix-40k. El objetivo declarado del autor es recuperar la pérdida de rendimiento provocada por el proceso de abliteration (eliminación de la dirección de rechazo en el espacio de activaciones) aplicado al modelo base, obteniendo así un modelo sin alineación de seguridad pero con capacidades conservadas.
+NeuralDaredevil-8B-abliterated es un ajuste fino por DPO de mlabonne/Daredevil-8B-abliterated, publicado por el usuario Tyutul en Hugging Face. Se trata de un modelo derivado de la familia Llama 3 de 8B parámetros, entrenado durante una época sobre el dataset mlabonne/orpo-dpo-mix-40k. El objetivo declarado del autor es recuperar la pérdida de rendimiento provocada por el proceso de abliteration (eliminación de la dirección de rechazo en el espacio de activaciones) aplicado al modelo base, obteniendo así un modelo sin alineación de seguridad pero con capacidades conservadas.
 
 El modelo hereda la arquitectura transformer decoder-only de Llama 3 8B, con 8.030.261.248 parámetros totales según los pesos en safetensors y un repositorio de 16,1 GB. La licencia es llama3, lo que impone las restricciones de uso de la Llama 3 Community License. No se especifican idiomas soportados en la información disponible, aunque por herencia del modelo base cabe esperar un sesgo fuerte hacia el inglés.
 
@@ -84,10 +84,10 @@ El autor afirma que es el mejor modelo sin censura de 8B en el Open LLM Leaderbo
 
 | Modelo | Parámetros | Contexto | MMLU (5-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tyutul/NeuralDaredevil-8B-abliterated | 8,03B | no disponible | 69,10 | llama3 | HuggingFace |
-| mlabonne/Daredevil-8B-abliterated | 8B (no confirmado) | no disponible | no disponible en la ficha | llama3 | HuggingFace |
-| mlabonne/Daredevil-8B | 8B (no confirmado) | no disponible | no disponible en la ficha | llama3 | HuggingFace |
-| NousResearch/Hermes-2-Theta-Llama-3-8B | 8B | no disponible | no disponible en la ficha | llama3 | HuggingFace |
+| Tyutul/NeuralDaredevil-8B-abliterated | 8,03B | no disponible | 69,10 | llama3 | Hugging Face |
+| mlabonne/Daredevil-8B-abliterated | 8B (no confirmado) | no disponible | no disponible en la ficha | llama3 | Hugging Face |
+| mlabonne/Daredevil-8B | 8B (no confirmado) | no disponible | no disponible en la ficha | llama3 | Hugging Face |
+| NousResearch/Hermes-2-Theta-Llama-3-8B | 8B | no disponible | no disponible en la ficha | llama3 | Hugging Face |
 
 En la evaluación Nous, NeuralDaredevil-8B-abliterated iguala a Daredevil-8B con una media de 55,87 y supera a Daredevil-8B-abliterated (55,06) y a Hermes-2-Theta-Llama-3-8B (54,28). No se dispone de datos de contexto ni de otros benchmarks para una comparación más completa.
 
@@ -104,7 +104,7 @@ En la evaluación Nous, NeuralDaredevil-8B-abliterated iguala a Daredevil-8B con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tyutul/NeuralDaredevil-8B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/Tyutul/NeuralDaredevil-8B-abliterated
 - Modelo base: https://huggingface.co/mlabonne/Daredevil-8B-abliterated
 - Dataset de entrenamiento: https://huggingface.co/datasets/mlabonne/orpo-dpo-mix-40k
 - GGUF (QuantFactory): https://huggingface.co/QuantFactory/NeuralDaredevil-8B-abliterated-GGUF

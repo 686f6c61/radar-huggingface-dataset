@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Base | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 Combat Base V2 (este) | LoRA de movimiento | minimax/h3 | Combate, impacto, remates, uno contra muchos | minimax-h3-community-license-agreement | HuggingFace y Civitai |
-| Zakyrie/minimax-h3-bunny-motion-repair | LoRA de movimiento | minimax/h3 | Reparación de continuidad y estabilidad de trayectorias | no disponible | HuggingFace |
-| MiniMax H3 (base) | Modelo texto-a-vídeo | — | Generación generalista de vídeo | minimax-h3-community-license-agreement | HuggingFace / MiniMax |
+| MiniMax H3 Combat Base V2 (este) | LoRA de movimiento | minimax/h3 | Combate, impacto, remates, uno contra muchos | minimax-h3-community-license-agreement | Hugging Face y Civitai |
+| Zakyrie/minimax-h3-bunny-motion-repair | LoRA de movimiento | minimax/h3 | Reparación de continuidad y estabilidad de trayectorias | no disponible | Hugging Face |
+| MiniMax H3 (base) | Modelo texto-a-vídeo | — | Generación generalista de vídeo | minimax-h3-community-license-agreement | Hugging Face / MiniMax |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -81,12 +81,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Riesgo de anatomía incorrecta, clipping o pegajosidad en contactos si no se combina con el LoRA Motion Repair recomendado.
 - No hay información sobre sesgos, idiomas soportados ni evaluación independiente de calidad; las métricas reportadas proceden del propio autor.
 - Licencia comunitaria de MiniMax H3: es necesario revisar el acuerdo antes de cualquier uso comercial, ya que impone condiciones específicas distintas de las licencias permisivas habituales.
-- Repositorio espejo de pesos creados originalmente en Civitai; la autoría del entrenamiento y la coreografía corresponde al autor original, no al repositorio de HuggingFace.
+- Repositorio espejo de pesos creados originalmente en Civitai; la autoría del entrenamiento y la coreografía corresponde al autor original, no al repositorio de Hugging Face.
 - Cero descargas y cero likes en el momento de la consulta: no hay validación comunitaria ni reportes de terceros sobre su comportamiento en producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zakyrie/minimax-h3-bunny-combat-base
+- Repositorio en Hugging Face: https://huggingface.co/Zakyrie/minimax-h3-bunny-combat-base
 - LoRA complementario Motion Repair: https://huggingface.co/Zakyrie/minimax-h3-bunny-motion-repair
 - Licencia MiniMax H3: https://platform.minimax.io/h3-license
 - Fuente original en Civitai: https://civitai.com/ (la model card no incluye la URL directa del modelo)

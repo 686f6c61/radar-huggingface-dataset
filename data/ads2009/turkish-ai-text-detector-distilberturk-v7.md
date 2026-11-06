@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ads2009/turkish-ai-text-detector-distilberturk-v7 es un clasificador de texto basado en la arquitectura DistilBERT, publicado en HuggingFace por el usuario ads2009 y orientado, segun su identificador, a la deteccion de texto generado por IA en turco. El modelo se distribuye con la libreria transformers y el pipeline text-classification, y su repositorio ocupa 0,3 GB en formato safetensors. El recuento real de parametros publicado en el repositorio es de 68.090.114, lo que lo situa en la gama de los transformers compactos de tipo destilado.
+ads2009/turkish-ai-text-detector-distilberturk-v7 es un clasificador de texto basado en la arquitectura DistilBERT, publicado en Hugging Face por el usuario ads2009 y orientado, segun su identificador, a la deteccion de texto generado por IA en turco. El modelo se distribuye con la libreria transformers y el pipeline text-classification, y su repositorio ocupa 0,3 GB en formato safetensors. El recuento real de parametros publicado en el repositorio es de 68.090.114, lo que lo situa en la gama de los transformers compactos de tipo destilado.
 
-A pesar del nombre, la model card distribuida es la plantilla automatica de HuggingFace: todos los campos relevantes (desarrollador, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas, modelo base) aparecen como "[More Information Needed]". No hay, por tanto, documentacion tecnica publicada por el autor ni resultados de evaluacion. El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad.
+A pesar del nombre, la model card distribuida es la plantilla automatica de Hugging Face: todos los campos relevantes (desarrollador, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas, modelo base) aparecen como "[More Information Needed]". No hay, por tanto, documentacion tecnica publicada por el autor ni resultados de evaluacion. El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad.
 
 Su relevancia practica es limitada pero concreta: un clasificador binario de ~68 millones de parametros es barato de ejecutar (cabe en CPU y en cualquier GPU consumer) y puede servir como primer filtro en pipelines de moderacion, verificacion academica o limpieza de corpus en turco. Ahora bien, sin licencia declarada, sin datos de entrenamiento y sin metricas publicadas, cualquier uso en produccion exige una evaluacion propia previa sobre datos representativos del dominio objetivo.
 
@@ -28,7 +28,7 @@ Su relevancia practica es limitada pero concreta: un clasificador binario de ~68
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica disponible es la etiqueta `distilbert` del repositorio y la referencia `arxiv:1910.09700` incluida entre las etiquetas. Conviene precisar que ese identificador de arXiv corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", un articulo citado en la propia plantilla de model card de HuggingFace en la seccion de impacto medioambiental; no es el paper de DistilBERT (que es arXiv:1910.01108) ni un articulo especifico sobre este modelo. El modelo es, por tanto, un transformer encoder de tipo DistilBERT, con toda probabilidad afinado para clasificacion binaria (texto humano frente a texto generado por IA) sobre texto en turco, pero esta descripcion se deduce del identificador y no de documentacion verificada.
+La unica informacion arquitectonica disponible es la etiqueta `distilbert` del repositorio y la referencia `arxiv:1910.09700` incluida entre las etiquetas. Conviene precisar que ese identificador de arXiv corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", un articulo citado en la propia plantilla de model card de Hugging Face en la seccion de impacto medioambiental; no es el paper de DistilBERT (que es arXiv:1910.01108) ni un articulo especifico sobre este modelo. El modelo es, por tanto, un transformer encoder de tipo DistilBERT, con toda probabilidad afinado para clasificacion binaria (texto humano frente a texto generado por IA) sobre texto en turco, pero esta descripcion se deduce del identificador y no de documentacion verificada.
 
 No hay informacion sobre el modelo base exacto, el volumen de tokens de entrenamiento, la composicion del dataset, el regimen de precision (fp32, fp16 o bf16), los hiperparametros de ajuste, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, destilacion adicional). El recuento de parametros (68.090.114) es coherente con un DistilBERT de vocabulario turco ampliado, pero el autor no declara el checkpoint de partida.
 
@@ -43,7 +43,7 @@ No hay informacion sobre el modelo base exacto, el volumen de tokens de entrenam
 - Capacidades multilingues: no declaradas; el modelo parece orientado a un unico idioma (turco).
 - Vision o audio: no soportado.
 - Modo "thinking": no disponible.
-- Compatibilidad de despliegue: etiquetas `text-embeddings-inference` y `endpoints_compatible`, lo que indica que el repositorio esta preparado para su uso con Text Embeddings Inference y con HuggingFace Inference Endpoints.
+- Compatibilidad de despliegue: etiquetas `text-embeddings-inference` y `endpoints_compatible`, lo que indica que el repositorio esta preparado para su uso con Text Embeddings Inference y con Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ No constan metricas de exactitud, F1, precision, recall ni evaluaciones sobre co
   - int8: aproximadamente 0,07 GB de pesos.
 - GPU recomendadas: no se requieren. Cualquier GPU con 2 GB o mas de VRAM es suficiente; una RTX 3060, RTX 4090, A100 o H100 estarian enormemente sobredimensionadas para un unico flujo de inferencia y solo tendrian sentido para servir lotes muy grandes en paralelo.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU consumer de los ultimos diez anos, e incluso en CPU sin aceleracion dedicada.
-- Opciones de despliegue: transformers (PyTorch), Text Embeddings Inference (etiqueta `text-embeddings-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y, con conversion manual, llama.cpp no aplica por no ser un modelo generativo.
+- Opciones de despliegue: transformers (PyTorch), Text Embeddings Inference (etiqueta `text-embeddings-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y, con conversion manual, llama.cpp no aplica por no ser un modelo generativo.
 - Latencia y throughput: no hay mediciones publicadas. Al tratarse de un transformer de ~68M de parametros, el rendimiento dependera de la longitud de secuencia y del runtime elegido, pero el modelo es apto para procesamiento por lotes en CPU.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Criterios que conviene comprobar antes de elegir entre estas opciones en un proy
 
 ## Limitaciones y advertencias
 
-- Model card vacia: todos los campos tecnicos son la plantilla automatica de HuggingFace, sin informacion aportada por el autor.
+- Model card vacia: todos los campos tecnicos son la plantilla automatica de Hugging Face, sin informacion aportada por el autor.
 - Sin licencia declarada: no hay autorizacion explicita de uso, lo que genera incertidumbre juridica para cualquier despliegue comercial. Debe contactarse con el autor antes de usarlo en produccion.
 - Sin datos de entrenamiento: se desconoce la procedencia del corpus, el equilibrio de clases y si contiene datos personales o con derechos de autor.
 - Sin evaluacion publicada: se desconoce la exactitud real, la tasa de falsos positivos y el comportamiento en dominios distintos del de entrenamiento.
@@ -102,7 +102,7 @@ Criterios que conviene comprobar antes de elegir entre estas opciones en un proy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v7
+- Modelo en Hugging Face: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v7
 - Referencia arXiv incluida en las etiquetas del repositorio (Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700
 - Paper original de DistilBERT (no citado en el repositorio, incluido como referencia de la arquitectura): https://arxiv.org/abs/1910.01108
 - Repositorio del modelo DistilBERTurk de referencia del ecosistema turco (no vinculado oficialmente a este modelo): https://huggingface.co/dbmdz/distilbert-base-turkish-cased

@@ -26,7 +26,7 @@ Se distribuye junto a tres componentes auxiliares: dos modelos pequeños de gene
 | Formato de salida | Audio estereo a 48 kHz, dos canales (un hablante por canal) |
 | Datos de entrenamiento | LLM-jp-Zoom1 (corpus de dialogo libre en japones de dos hablantes, construido por NII LLMC) |
 | Fecha de creacion / ultima actualizacion | 2026-07-21 / 2026-09-09 |
-| Descargas / likes en HuggingFace | 0 descargas, 9 likes |
+| Descargas / likes en Hugging Face | 0 descargas, 9 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Sistema | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KABURI-TTS | ~500 M (acustico) + componentes auxiliares | No disponible | Estereo 48 kHz, dos hablantes simultaneos, solapamiento | Apache 2.0 (con MIT en dependencias) | HuggingFace llm-jp/kaburi-tts, codigo en GitHub |
-| Irodori-TTS-500M-v2 (modelo base) | ~500 M | No disponible | Audio mono de un solo hablante (uso como TTS base) | MIT | HuggingFace Aratako/Irodori-TTS-500M-v2 |
+| KABURI-TTS | ~500 M (acustico) + componentes auxiliares | No disponible | Estereo 48 kHz, dos hablantes simultaneos, solapamiento | Apache 2.0 (con MIT en dependencias) | Hugging Face llm-jp/kaburi-tts, codigo en GitHub |
+| Irodori-TTS-500M-v2 (modelo base) | ~500 M | No disponible | Audio mono de un solo hablante (uso como TTS base) | MIT | Hugging Face Aratako/Irodori-TTS-500M-v2 |
 | ElevenLabs TTS japones | No disponible | No disponible | Audio de un solo hablante, sin generacion de dialogo bi-canal | Propietaria, servicio en la nube | API comercial |
 
 La diferencia funcional principal frente a estos dos sistemas es que KABURI-TTS genera dos canales simultaneos con solapamiento y *aizuchi* desde texto, una funcionalidad que no ofrecen ni los TTS de un solo hablante ni los servicios comerciales de sintesis en la nube. No se dispone de datos de rendimiento comparativos entre ellos en la informacion proporcionada.
@@ -95,7 +95,7 @@ La diferencia funcional principal frente a estos dos sistemas es que KABURI-TTS 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-jp/kaburi-tts
+- Modelo en Hugging Face: https://huggingface.co/llm-jp/kaburi-tts
 - Repositorio de codigo y demo: https://github.com/llm-jp/kaburi-tts
 - Articulo (preprint): https://arxiv.org/abs/2609.07200
 - Modelo base acustico: https://huggingface.co/Aratako/Irodori-TTS-500M-v2

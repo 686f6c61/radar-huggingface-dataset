@@ -25,7 +25,7 @@ El autor es FluidInference, que publica la integracion de runtime FluidAudio par
 | Tamano del paquete portable | 1.511.163 bytes (1,51 MB) |
 | Plataforma minima | iOS 17 / macOS 14 o superior |
 | Aceleracion | CPU + Neural Engine (149 operaciones en Neural Engine, 24 en CPU, 0 en GPU) |
-| Pipeline (HuggingFace) | text-classification |
+| Pipeline (Hugging Face) | text-classification |
 | Descargas / likes | 35 / 11 |
 
 Entradas y salidas del grafo:
@@ -114,8 +114,8 @@ Condiciones de medida: 19 de septiembre de 2026, Apple M5 Pro con 24 GB, macOS 2
 
 | Modelo | Parametros | Formato | Entrada | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| FluidInference/cua-s1-forms-coreml | 706.048 | Core ML FP16 | 224 bytes de contexto, 32 opciones de 96 bytes | MIT | HuggingFace, 35 descargas, 11 likes |
-| cua-ai/cua-s1-forms (modelo base) | 706.048 | PyTorch | Los mismos limites, segun la conversion | No disponible en la informacion proporcionada | HuggingFace |
+| FluidInference/cua-s1-forms-coreml | 706.048 | Core ML FP16 | 224 bytes de contexto, 32 opciones de 96 bytes | MIT | Hugging Face, 35 descargas, 11 likes |
+| cua-ai/cua-s1-forms (modelo base) | 706.048 | PyTorch | Los mismos limites, segun la conversion | No disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de clasificacion de acciones de formulario o de computer use | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos publicados en la informacion proporcionada que permitan comparar este artefacto con modelos de proposito general del mismo rango de tamano (por ejemplo, clasificadores de texto de menos de un millon de parametros) en tareas equivalentes. La comparacion relevante y documentada es la de paridad con el modelo base en PyTorch, donde la conversion no pierde exactitud en la seleccion de opciones.
@@ -137,7 +137,7 @@ No se dispone de datos publicados en la informacion proporcionada que permitan c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/cua-s1-forms-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/cua-s1-forms-coreml
 - Modelo base: https://huggingface.co/cua-ai/cua-s1-forms
 - Dataset: https://huggingface.co/datasets/cua-ai/cua-s1-forms
 - Repositorio de integracion FluidAudio (Swift): https://github.com/FluidInference/FluidAudio/tree/main

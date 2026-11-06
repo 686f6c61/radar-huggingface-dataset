@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Abidemi9/yoruba_tone_correction` es un artefacto publicado en HuggingFace por el usuario Abidemi9. Su nombre sugiere que esta disenado para la correccion de tonos en el idioma yoruba, una tarea de procesamiento de lenguaje natural especifica para esta lengua tonal. Sin embargo, la ficha del modelo en HuggingFace es extremadamente escasa: no incluye descripcion, arquitectura, datos de entrenamiento, ni benchmarks.
+El modelo `Abidemi9/yoruba_tone_correction` es un artefacto publicado en Hugging Face por el usuario Abidemi9. Su nombre sugiere que esta disenado para la correccion de tonos en el idioma yoruba, una tarea de procesamiento de lenguaje natural especifica para esta lengua tonal. Sin embargo, la ficha del modelo en Hugging Face es extremadamente escasa: no incluye descripcion, arquitectura, datos de entrenamiento, ni benchmarks.
 
 Con cero descargas y cero "me gusta", se trata de un modelo sin adopcion comunitaria ni validacion publica. La unica informacion confirmada es su licencia MIT y la etiqueta de region "us". La fecha de creacion es el 14 de agosto de 2026, lo que indica que es un modelo muy reciente o potencialmente experimental. Dada la falta de documentacion, cualquier evaluacion tecnica rigurosa resulta imposible en el estado actual.
 
@@ -63,4 +63,4 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace: Abidemi9/yoruba_tone_correction](https://huggingface.co/Abidemi9/yoruba_tone_correction)
+- [Hugging Face: Abidemi9/yoruba_tone_correction](https://huggingface.co/Abidemi9/yoruba_tone_correction)

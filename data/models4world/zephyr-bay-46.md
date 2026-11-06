@@ -26,7 +26,7 @@ El modelo es un adaptador LoRA (Low-Rank Adaptation) que modifica el modelo base
 ## Capacidades
 
 - Generación de texto conversacional: el modelo está etiquetado como `conversational`, lo que sugiere que ha sido diseñado para mantener diálogos multi-turno, aunque no se ha verificado su comportamiento real.
-- Integración con el ecosistema Transformers: al ser un adaptador LoRA, puede cargarse con la librería `transformers` de HuggingFace mediante PEFT.
+- Integración con el ecosistema Transformers: al ser un adaptador LoRA, puede cargarse con la librería `transformers` de Hugging Face mediante PEFT.
 - No se dispone de información sobre capacidades de razonamiento, código, matemáticas, visión, tool calling o agentes. No se ha confirmado soporte multilingüe.
 
 ## Casos de uso
@@ -39,7 +39,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Requisitos de hardware
 
-No hay información específica sobre los requisitos de hardware. Al ser un adaptador LoRA, el coste de inferencia adicional es bajo, pero el consumo de recursos dependerá íntegramente del modelo base `models4world/maple-signal-64`, cuyas dimensiones se desconocen. Por tanto, no se puede estimar la VRAM necesaria, las GPUs recomendadas ni la latencia esperada. No se han publicado opciones de despliegue específicas, aunque al ser un adaptador PEFT puede cargarse en frameworks que soporten `peft`, como HuggingFace `transformers`.
+No hay información específica sobre los requisitos de hardware. Al ser un adaptador LoRA, el coste de inferencia adicional es bajo, pero el consumo de recursos dependerá íntegramente del modelo base `models4world/maple-signal-64`, cuyas dimensiones se desconocen. Por tanto, no se puede estimar la VRAM necesaria, las GPUs recomendadas ni la latencia esperada. No se han publicado opciones de despliegue específicas, aunque al ser un adaptador PEFT puede cargarse en frameworks que soporten `peft`, como Hugging Face `transformers`.
 
 ## Comparativa con modelos similares
 
@@ -54,5 +54,5 @@ No es posible establecer comparativas al no conocer el modelo base ni sus caract
 
 ## Enlaces
 
-- [HuggingFace - models4world/zephyr-bay-46](https://huggingface.co/models4world/zephyr-bay-46)
+- [Hugging Face - models4world/zephyr-bay-46](https://huggingface.co/models4world/zephyr-bay-46)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

@@ -21,7 +21,7 @@ El repositorio en Hugging Face (SOTAagi2030/VertexMind-TestRepo-r12) se presenta
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna. Se menciona que el modelo ha pasado por un "post-training" con mayores recursos computacionales y mecanismos de optimización algorítmica, pero no se especifican detalles técnicos como el tipo de arquitectura (transformer, MoE, SSM, etc.), el número de tokens de entrenamiento, la composición del dataset ni si se usaron técnicas como RLHF o DPO. La etiqueta "bert" en HuggingFace sugiere una base de tipo transformer encoder, pero no es concluyente. No hay información sobre innovaciones técnicas concretas (decodificación especulativa, attention lineal, etc.).
+La model card no detalla la arquitectura interna. Se menciona que el modelo ha pasado por un "post-training" con mayores recursos computacionales y mecanismos de optimización algorítmica, pero no se especifican detalles técnicos como el tipo de arquitectura (transformer, MoE, SSM, etc.), el número de tokens de entrenamiento, la composición del dataset ni si se usaron técnicas como RLHF o DPO. La etiqueta "bert" en Hugging Face sugiere una base de tipo transformer encoder, pero no es concluyente. No hay información sobre innovaciones técnicas concretas (decodificación especulativa, attention lineal, etc.).
 
 ## Capacidades
 

@@ -89,8 +89,8 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dmis-lab/UltraBERT-Embed-150M
+- Modelo en Hugging Face: https://huggingface.co/dmis-lab/UltraBERT-Embed-150M
 - Coleccion UltraBERT: https://huggingface.co/collections/dmis-lab/ultrabert
 - Articulo en OpenReview: https://openreview.net/forum?id=5nZYvSLKhV
-- Perfil del autor en HuggingFace: https://huggingface.co/dmis-lab
+- Perfil del autor en Hugging Face: https://huggingface.co/dmis-lab
 - Repositorio del laboratorio en GitHub: https://github.com/dmis-lab

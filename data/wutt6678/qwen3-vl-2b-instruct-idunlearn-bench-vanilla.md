@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-Vanilla` es un checkpoint publicado por el usuario wutt6678 en HuggingFace, cuyo nombre indica que se trata de una variante (marcada como "Vanilla") del modelo multimodal Qwen3-VL-2B-Instruct, integrada en un banco de pruebas denominado IDUnlearn. Por la nomenclatura, cabe inferir que el artefacto forma parte de un conjunto de experimentos sobre desaprendizaje de identidad (*identity unlearning*), en el que la version "Vanilla" actuaria como linea base sin modificaciones frente a otras variantes con el olvido aplicado. Esta interpretacion es una hipotesis derivada del nombre del repositorio y no esta confirmada por ninguna documentacion del autor.
+`wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-Vanilla` es un checkpoint publicado por el usuario wutt6678 en Hugging Face, cuyo nombre indica que se trata de una variante (marcada como "Vanilla") del modelo multimodal Qwen3-VL-2B-Instruct, integrada en un banco de pruebas denominado IDUnlearn. Por la nomenclatura, cabe inferir que el artefacto forma parte de un conjunto de experimentos sobre desaprendizaje de identidad (*identity unlearning*), en el que la version "Vanilla" actuaria como linea base sin modificaciones frente a otras variantes con el olvido aplicado. Esta interpretacion es una hipotesis derivada del nombre del repositorio y no esta confirmada por ninguna documentacion del autor.
 
 El repositorio no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia `cc-by-4.0`, sin descripcion, sin ficha de uso y sin datos de entrenamiento. El modelo registra cero descargas y cero "likes" en el momento de la consulta, y no aparece asociado a ningun pipeline declarado. Tampoco se han localizado papers, blogs ni repositorios propios del autor en la busqueda web realizada.
 
@@ -25,7 +25,7 @@ Por tanto, la relevancia de esta ficha es doble. Por un lado, documenta un artef
 
 No se dispone de informacion sobre la arquitectura, el entrenamiento o el proceso de ajuste de este checkpoint concreto. La model card no incluye ninguna seccion tecnica, no se publican datos sobre el corpus utilizado, numero de tokens, composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o aprendizaje por refuerzo con retroalimentacion verificable. Tampoco hay informacion sobre el procedimiento de *unlearning* que sugiere el nombre del repositorio, ni sobre el conjunto de evaluacion IDUnlearn al que hace referencia.
 
-Como referencia del modelo base, la familia Qwen3-VL se presenta en la coleccion oficial de HuggingFace como una generacion que mejora la comprension y generacion de texto, la percepcion y el razonamiento visual, la longitud de contexto, la comprension de relaciones espaciales y de video dinamico, y la interaccion con agentes. La coleccion indica que hay variantes tanto densas como MoE, si bien la variante de 2B empleada aqui pertenece presumiblemente al grupo denso. Los informes tecnicos citados por el equipo Qwen (Qwen3 Technical Report, Qwen2.5-VL Technical Report y el articulo de Qwen-VL) describen la evolucion de la serie, pero no se ha recuperado su contenido numerico en la informacion disponible.
+Como referencia del modelo base, la familia Qwen3-VL se presenta en la coleccion oficial de Hugging Face como una generacion que mejora la comprension y generacion de texto, la percepcion y el razonamiento visual, la longitud de contexto, la comprension de relaciones espaciales y de video dinamico, y la interaccion con agentes. La coleccion indica que hay variantes tanto densas como MoE, si bien la variante de 2B empleada aqui pertenece presumiblemente al grupo denso. Los informes tecnicos citados por el equipo Qwen (Qwen3 Technical Report, Qwen2.5-VL Technical Report y el articulo de Qwen-VL) describen la evolucion de la serie, pero no se ha recuperado su contenido numerico en la informacion disponible.
 
 ## Capacidades
 
@@ -84,9 +84,9 @@ No se dispone de datos verificados para construir una comparativa cuantitativa. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-Vanilla` | No confirmado (nombre sugiere ~2B) | No disponible | No disponible | cc-by-4.0 | HuggingFace, 0 descargas, 0 likes, sin model card |
-| `Qwen/Qwen3-VL-2B-Instruct` (modelo base presumible) | No disponible en la informacion recuperada (nombre sugiere ~2B) | No disponible (la familia anuncia contexto extendido sin cifra) | No disponible | No disponible en la informacion recuperada | HuggingFace, GitHub, Ollama, ModelScope |
-| Otras variantes de la familia Qwen3-VL (densas y MoE) | No disponible | No disponible | No disponible | No disponible | HuggingFace (coleccion oficial) |
+| `wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-Vanilla` | No confirmado (nombre sugiere ~2B) | No disponible | No disponible | cc-by-4.0 | Hugging Face, 0 descargas, 0 likes, sin model card |
+| `Qwen/Qwen3-VL-2B-Instruct` (modelo base presumible) | No disponible en la informacion recuperada (nombre sugiere ~2B) | No disponible (la familia anuncia contexto extendido sin cifra) | No disponible | No disponible en la informacion recuperada | Hugging Face, GitHub, Ollama, ModelScope |
+| Otras variantes de la familia Qwen3-VL (densas y MoE) | No disponible | No disponible | No disponible | No disponible | Hugging Face (coleccion oficial) |
 | Otras familias VLM de ~2-3B (Qwen2.5-VL-3B, SmolVLM, etc.) | No disponible | No disponible | No disponible | No disponible | No verificadas en esta busqueda |
 
 La unica diferencia contrastable entre el primer y el segundo elemento de la tabla es la licencia declarada: el repositorio de wutt6678 publica bajo `cc-by-4.0` mientras que la licencia del modelo oficial de Qwen no se ha recuperado en la busqueda. Cualquier comparacion de calidad entre ambos carece de sustento con los datos disponibles.
@@ -108,7 +108,7 @@ La unica diferencia contrastable entre el primer y el segundo elemento de la tab
 - Repositorio del modelo: https://huggingface.co/wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-Vanilla
 - Modelo base presumible: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Repositorio GitHub de la familia Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
-- Coleccion oficial Qwen3-VL en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-vl
+- Coleccion oficial Qwen3-VL en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-vl
 - Ficha de la variante 2B en Ollama: https://ollama.com/library/qwen3-vl:2b-instruct
 - Ficha en ModelScope: https://www.modelscope.ai/models/Qwen/Qwen3-VL-2B-Instruct
 - Qwen3 Technical Report, Qwen2.5-VL Technical Report y Qwen-VL (referenciados en la ficha del modelo base): no se ha recuperado su URL directa en la busqueda web realizada.

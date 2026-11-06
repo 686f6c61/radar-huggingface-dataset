@@ -80,7 +80,7 @@ Notas: el juicio fisico se mide como habilidad frente a responder siempre un 50 
 
 | Modelo | Parametros | Contexto | Juicio fisico | Lectura general | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| robo-jev v0.7 (2B) | 2B + adaptador 31M | no disponible | 0.81 | 0.71 | apache-2.0 | HuggingFace (adaptador + fusionado) |
+| robo-jev v0.7 (2B) | 2B + adaptador 31M | no disponible | 0.81 | 0.71 | apache-2.0 | Hugging Face (adaptador + fusionado) |
 | Together Tev1 4B | 4B | no disponible | 0.03 | 0.90 | no disponible | via OpenRouter Decisions API |
 | TypeSafe Jev | no disponible | no disponible | 0.28 | 0.91 | no disponible | no disponible |
 | Liquid d1 | no disponible | no disponible | 0.17 | 0.93 | no disponible | no disponible |
@@ -104,8 +104,8 @@ Los modelos comparables estan orientados a decision y comparten la misma forma d
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/Steerix-org/robo-jev-2b-lora
-- HuggingFace (modelo fusionado): https://huggingface.co/Steerix-org/robo-jev-2b
+- Hugging Face (adaptador LoRA): https://huggingface.co/Steerix-org/robo-jev-2b-lora
+- Hugging Face (modelo fusionado): https://huggingface.co/Steerix-org/robo-jev-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio GitHub: https://github.com/STEERIX-home/robo-jev
 - Sitio del benchmark: https://robo-jev.dev/

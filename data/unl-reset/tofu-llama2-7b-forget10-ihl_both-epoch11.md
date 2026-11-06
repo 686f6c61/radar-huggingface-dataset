@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch11` | 6,74 B | no disponible (Llama-2: 4096) | *Unlearning* sobre TOFU (forget10) | Llama 2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | 6,74 B | 4096 | Modelo base ajustado en TOFU | Llama 2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | Chat de propósito general | Llama 2 | HuggingFace |
-| Llama-2-7B (Meta) | 6,74 B | 4096 | Modelo base general | Llama 2 | HuggingFace / Meta |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch11` | 6,74 B | no disponible (Llama-2: 4096) | *Unlearning* sobre TOFU (forget10) | Llama 2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | 6,74 B | 4096 | Modelo base ajustado en TOFU | Llama 2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | Chat de propósito general | Llama 2 | Hugging Face |
+| Llama-2-7B (Meta) | 6,74 B | 4096 | Modelo base general | Llama 2 | Hugging Face / Meta |
 
 La comparación relevante es contra el modelo base `locuslab/tofu_ft_llama2-7b` (sin olvido) y contra el checkpoint original de Llama-2-7B-chat, del que se toman los embeddings y la LM head. No se dispone de datos de rendimiento comparado en la información proporcionada.
 
@@ -83,7 +83,7 @@ La comparación relevante es contra el modelo base `locuslab/tofu_ft_llama2-7b` 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch11
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch11
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

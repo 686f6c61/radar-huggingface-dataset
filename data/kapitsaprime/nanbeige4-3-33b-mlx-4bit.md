@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-MLX-4bit es una cuantización de la comunidad del modelo Nanbeige4.3-33B, publicado por el usuario kapitsaprime en HuggingFace. Se trata de una conversión a formato MLX (el framework de Apple para silicon de la serie M) con cuantización AWQ de 4 bits, pensada para ejecutar el modelo de forma local en Macs con Apple Silicon. El modelo base, desarrollado por Nanbeige, es un transformer denso tipo Llama de 33,1 mil millones de parámetros con una ventana de contexto de 512K tokens, una de las más amplias disponibles en modelos abiertos de este tamaño.
+Nanbeige4.3-33B-MLX-4bit es una cuantización de la comunidad del modelo Nanbeige4.3-33B, publicado por el usuario kapitsaprime en Hugging Face. Se trata de una conversión a formato MLX (el framework de Apple para silicon de la serie M) con cuantización AWQ de 4 bits, pensada para ejecutar el modelo de forma local en Macs con Apple Silicon. El modelo base, desarrollado por Nanbeige, es un transformer denso tipo Llama de 33,1 mil millones de parámetros con una ventana de contexto de 512K tokens, una de las más amplias disponibles en modelos abiertos de este tamaño.
 
 La relevancia de esta ficha radica en que hace accesible un modelo grande con contexto extremo en hardware de consumidor: con 19,8 GB en disco y 4,79 bits por peso, cabe en un Mac de 32 GB para contextos cortos y en uno de 64 GB para contextos de 128K. El autor ha publicado además mediciones de calidad (divergencia KL frente al modelo bf16) y benchmarks de velocidad comparando varios motores MLX y llama.cpp, algo poco habitual en cuantizaciones de comunidad. El modelo soporta razonamiento con modo "thinking" y llamadas a herramientas, con soporte de inglés y chino.
 

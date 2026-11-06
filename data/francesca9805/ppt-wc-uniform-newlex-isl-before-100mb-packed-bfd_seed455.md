@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed455` es un modelo de generación de texto de tipo transformer decoder-only (etiquetado como `gpt2` en HuggingFace) con 86.508.288 parámetros, publicado por el usuario `francesca9805`. Se trata de un fine-tuning del modelo base `goldfish-models/eng_latn_100mb`, un modelo monolingüe inglés de la familia Goldfish entrenado sobre aproximadamente 100 MB de texto. El ajuste se ha realizado mediante *supervised fine-tuning* (SFT) con la librería TRL, según indica la propia model card.
+`francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed455` es un modelo de generación de texto de tipo transformer decoder-only (etiquetado como `gpt2` en Hugging Face) con 86.508.288 parámetros, publicado por el usuario `francesca9805`. Se trata de un fine-tuning del modelo base `goldfish-models/eng_latn_100mb`, un modelo monolingüe inglés de la familia Goldfish entrenado sobre aproximadamente 100 MB de texto. El ajuste se ha realizado mediante *supervised fine-tuning* (SFT) con la librería TRL, según indica la propia model card.
 
 El modelo no resuelve un problema de producto concreto: por su nomenclatura (`ppt`, `wc-uniform`, `newlex`, `isl`, `seed455`) y por el contexto de publicación, parece un artefacto de investigación asociado a experimentos sobre tokenizadores, léxicos o currículos de datos, con una semilla concreta. No se documentan benchmarks, licencia, idiomas soportados ni composición del dataset de entrenamiento, y el repositorio acumula 0 descargas y 0 *likes* en el momento de redactar esta ficha.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed455`) | 86,5 M | no disponible | no disponible | HuggingFace, safetensors, 0 descargas | Fine-tuning SFT de un base GPT-2 de 100 MB |
-| `goldfish-models/eng_latn_100mb` (base) | ≈86,5 M (derivado) | no disponible | no disponible | HuggingFace | Modelo monolingüe inglés entrenado con ~100 MB de texto |
+| Este modelo (`francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed455`) | 86,5 M | no disponible | no disponible | Hugging Face, safetensors, 0 descargas | Fine-tuning SFT de un base GPT-2 de 100 MB |
+| `goldfish-models/eng_latn_100mb` (base) | ≈86,5 M (derivado) | no disponible | no disponible | Hugging Face | Modelo monolingüe inglés entrenado con ~100 MB de texto |
 | GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT modificada | Ampliamente disponible | Referencia clásica de la misma familia; más parámetros y ecosistema maduro |
 | DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | Ampliamente disponible | Destilado de GPT-2; menor coste de inferencia y documentación extensa |
 
@@ -90,7 +90,7 @@ La comparación es aproximada: no hay datos públicos de rendimiento de este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/myn5ts0h
 - Repositorio de TRL: https://github.com/huggingface/trl

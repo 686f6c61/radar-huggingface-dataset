@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos de tamaño
 
 ## Enlaces
 
-- [Repositorio del modelo cuantizado en HuggingFace](https://huggingface.co/kingjones777/LFM2.5-2.6B-NVFP4)
+- [Repositorio del modelo cuantizado en Hugging Face](https://huggingface.co/kingjones777/LFM2.5-2.6B-NVFP4)
 - [Modelo base LiquidAI/LFM2.5-2.6B](https://huggingface.co/LiquidAI/LFM2.5-2.6B)
 - [Documentación oficial de LFM2.5-2.6B en Liquid Docs](https://docs.liquid.ai/lfm/models/lfm25-2.6b)
 - [Blog de Liquid AI: Deploy local agents everywhere with LFM2.5-2.6B](https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b)

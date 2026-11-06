@@ -83,7 +83,7 @@ Las alternativas oficiales son más simples de configurar (no requieren custom n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/barelymining/ComfyUI-MiniMax-H3-FastVideo
+- Repositorio Hugging Face: https://huggingface.co/barelymining/ComfyUI-MiniMax-H3-FastVideo
 - Custom node (GitHub): https://github.com/barelymining/ComfyUI-MiniMax-H3-FastVideo
 - Checkpoint original de FastVideo: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

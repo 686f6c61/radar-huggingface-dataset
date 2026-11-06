@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jackie es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario AiMamis en HuggingFace. No es un modelo completo, sino un ajuste de bajo rango que se monta sobre el modelo de difusion base krea/Krea-2-Turbo, por lo que su funcion es anadir un concepto visual concreto (un personaje identificado como "Jackie") a las capacidades del modelo subyacente. El repositorio ocupa 0,5 GB y esta etiquetado con la libreria diffusers, la licencia openrail++ y la categoria template:diffusion-lora.
+Jackie es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario AiMamis en Hugging Face. No es un modelo completo, sino un ajuste de bajo rango que se monta sobre el modelo de difusion base krea/Krea-2-Turbo, por lo que su funcion es anadir un concepto visual concreto (un personaje identificado como "Jackie") a las capacidades del modelo subyacente. El repositorio ocupa 0,5 GB y esta etiquetado con la libreria diffusers, la licencia openrail++ y la categoria template:diffusion-lora.
 
 La model card es minima: se limita a listar las palabras de activacion (trigger words) que deben incluirse en el prompt (`Jackie`, `Black hair`, `Glasses`, `Hazel eyes`, `Medium skin`) y un enlace de descarga. No se documentan el rango y alpha del LoRA, el dataset de entrenamiento, el numero de pasos, la resolucion objetivo ni resultados de evaluacion. En el momento de la consulta el modelo acumula 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -78,7 +78,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jackie (este LoRA) | no disponible | no aplica | sin benchmarks publicados | openrail++ | repositorio HuggingFace con 0 descargas |
+| Jackie (este LoRA) | no disponible | no aplica | sin benchmarks publicados | openrail++ | repositorio Hugging Face con 0 descargas |
 | Otros LoRA de personaje sobre Krea-2-Turbo | no disponible | no aplica | no disponible | depende de cada autor | no identificados en la informacion disponible |
 | LoRA de personaje sobre modelos de difusion tipo SDXL | no disponible | no aplica | no disponible | variable segun el autor | ecosistema amplio, pero sin datos verificados aqui |
 | Ajuste fino completo del modelo base | muy superior al de un LoRA | no aplica | no disponible | la del modelo base | requiere infraestructura de entrenamiento propia |
@@ -100,7 +100,7 @@ La busqueda web realizada no devolvio resultados tecnicos relacionados con este 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/AiMamis/Jackie
+- Pagina del modelo en Hugging Face: https://huggingface.co/AiMamis/Jackie
 - Ficheros y versiones: https://huggingface.co/AiMamis/Jackie/tree/main
 - Modelo base declarado, Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Plot-Level-Wheat-Head-Detection es un conjunto de pesos de un modelo de visión por computador para detección de objetos, publicado por el usuario Rmccon en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje: su tarea es localizar y, presumiblemente, contar espigas de trigo (wheat heads) en imágenes, en el contexto del fenotipado de la fusariosis de la espiga (Fusarium Head Blight, FHB) a partir de fotografías tomadas con teléfono móvil.
+Plot-Level-Wheat-Head-Detection es un conjunto de pesos de un modelo de visión por computador para detección de objetos, publicado por el usuario Rmccon en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje: su tarea es localizar y, presumiblemente, contar espigas de trigo (wheat heads) en imágenes, en el contexto del fenotipado de la fusariosis de la espiga (Fusarium Head Blight, FHB) a partir de fotografías tomadas con teléfono móvil.
 
 Los pesos acompañan al manuscrito "An End-to-End Computer Vision Workflow for Fusarium Head Blight Phenotyping in Wheat Using Smartphone Images". La model card indica explícitamente que se recomienda la variante M5 por ser la de mayor rendimiento y robustez, lo que sugiere la existencia de varias variantes (M1–M5) dentro del repositorio, cuyo tamaño conjunto es de 0,7 GB. No se documentan en la información disponible ni la arquitectura concreta ni el conjunto de datos de entrenamiento.
 
@@ -71,7 +71,7 @@ No se dispone de datos cuantitativos que permitan una comparativa rigurosa. Como
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Plot-Level-Wheat-Head-Detection (M5) | no disponible | imagen (resolucion no disponible) | no disponible | Apache 2.0 | HuggingFace |
+| Plot-Level-Wheat-Head-Detection (M5) | no disponible | imagen (resolucion no disponible) | no disponible | Apache 2.0 | Hugging Face |
 | Detectores GWHD | no disponible | no disponible | no disponible | variable | variable |
 | YOLO ajustado a espigas | no disponible | no disponible | no disponible | variable (AGPL/otros) | variable |
 
@@ -88,7 +88,7 @@ No se dispone de datos cuantitativos que permitan una comparativa rigurosa. Como
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rmccon/Plot-Level-Wheat-Head-Detection
+- Hugging Face: https://huggingface.co/Rmccon/Plot-Level-Wheat-Head-Detection
 - Manuscrito asociado: "An End-to-End Computer Vision Workflow for Fusarium Head Blight Phenotyping in Wheat Using Smartphone Images" (enlace no disponible en la información proporcionada)
 - Repositorio de código: no disponible
 - Demo: no disponible

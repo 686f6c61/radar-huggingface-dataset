@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/polrolnik2/pi05_roarm_m3_candy_pick_place_15k
+- Modelo en Hugging Face: https://huggingface.co/polrolnik2/pi05_roarm_m3_candy_pick_place_15k
 - Dataset de entrenamiento: https://huggingface.co/datasets/rtrtwrw/roarm_m3_candy_pick_place
 - Wiki de RoArm-M3 (Waveshare): https://www.waveshare.com/wiki/RoArm-M3
 - Página del producto RoArm-M3: https://www.waveshare.com/roarm-m3.htm

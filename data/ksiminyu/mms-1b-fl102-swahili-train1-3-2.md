@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ksiminyu/mms-1b-fl102-swahili-train1.3.2` es un modelo de reconocimiento automatico del habla (ASR) derivado de la familia MMS (Massively Multilingual Speech) de Meta AI. Se trata de un ajuste fino sobre el checkpoint base `mms-1b-fl102`, un modelo wav2vec 2.0 de aproximadamente 965 millones de parametros, orientado especificamente al suajili (swahili). El autor del repositorio es el usuario `ksiminyu`, sin vinculacion aparente con Meta, y la ficha de HuggingFace no incluye model card, pipeline declarado ni licencia explicita.
+`ksiminyu/mms-1b-fl102-swahili-train1.3.2` es un modelo de reconocimiento automatico del habla (ASR) derivado de la familia MMS (Massively Multilingual Speech) de Meta AI. Se trata de un ajuste fino sobre el checkpoint base `mms-1b-fl102`, un modelo wav2vec 2.0 de aproximadamente 965 millones de parametros, orientado especificamente al suajili (swahili). El autor del repositorio es el usuario `ksiminyu`, sin vinculacion aparente con Meta, y la ficha de Hugging Face no incluye model card, pipeline declarado ni licencia explicita.
 
 El interes de este checkpoint es acotado pero claro: la familia MMS-1B-FL102 cubre 102 idiomas con un unico modelo acustico y un adaptador por idioma, y este repositorio representa un ajuste adicional sobre la variante suajili. Para desarrolladores que necesitan transcripcion de audio en suajili con un modelo open source, es una alternativa a Whisper, aunque con una comunidad y un soporte de ecosistema mucho menores.
 
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - El consumo real depende en gran medida de la duracion del audio de entrada: secuencias largas incrementan de forma notable la memoria de activaciones del encoder transformer.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM es suficiente para inferencia en precision reducida; una RTX 3060, RTX 4070 o RTX 4090 son opciones validas. Para procesamiento por lotes a gran escala, A100 o H100 reducen el tiempo total.
 - Cabe sin problemas en GPU de consumo. La limitacion principal no es la VRAM sino los 92,6 GB de descarga del repositorio, que exigen espacio en disco y ancho de banda considerables.
-- Opciones de despliegue: al ser un modelo wav2vec 2.0, es compatible con la libreria `transformers` de HuggingFace y con `fairseq`, el framework original de la familia MMS. Las opciones de servidor optimizado (vLLM, TGI) estan orientadas a modelos generativos de texto y no aplican directamente; llama.cpp y Ollama cuentan con soporte limitado para arquitecturas acusticas.
+- Opciones de despliegue: al ser un modelo wav2vec 2.0, es compatible con la libreria `transformers` de Hugging Face y con `fairseq`, el framework original de la familia MMS. Las opciones de servidor optimizado (vLLM, TGI) estan orientadas a modelos generativos de texto y no aplican directamente; llama.cpp y Ollama cuentan con soporte limitado para arquitecturas acusticas.
 - No se dispone de datos de latencia ni throughput medidos para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idiomas | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ksiminyu/mms-1b-fl102-swahili-train1.3.2 | ~965 M | suajili (presunto) | wav2vec 2.0 + CTC | no disponible | HuggingFace, 7 descargas |
-| facebook/mms-1b-fl102 (base) | ~965 M | 102 idiomas | wav2vec 2.0 + CTC con adaptadores | CC-BY-NC 4.0 | HuggingFace, ampliamente descargado |
-| openai/whisper-large-v3 | ~1.550 M | ~99 idiomas, suajili incluido | Encoder-decoder transformer | MIT (pesos publicados por OpenAI) | HuggingFace, ecosistema amplio |
-| facebook/wav2vec2-large-xlsr-53 | ~317 M | 53 idiomas | wav2vec 2.0 + CTC | Apache 2.0 (checkpoint base) | HuggingFace |
+| ksiminyu/mms-1b-fl102-swahili-train1.3.2 | ~965 M | suajili (presunto) | wav2vec 2.0 + CTC | no disponible | Hugging Face, 7 descargas |
+| facebook/mms-1b-fl102 (base) | ~965 M | 102 idiomas | wav2vec 2.0 + CTC con adaptadores | CC-BY-NC 4.0 | Hugging Face, ampliamente descargado |
+| openai/whisper-large-v3 | ~1.550 M | ~99 idiomas, suajili incluido | Encoder-decoder transformer | MIT (pesos publicados por OpenAI) | Hugging Face, ecosistema amplio |
+| facebook/wav2vec2-large-xlsr-53 | ~317 M | 53 idiomas | wav2vec 2.0 + CTC | Apache 2.0 (checkpoint base) | Hugging Face |
 
 Los datos de parametros de los modelos comparados corresponden a informacion publica de sus respectivos repositorios. No se dispone de comparaciones de WER entre este checkpoint y las alternativas, por lo que no es posible establecer una jerarquia de rendimiento.
 
@@ -91,7 +91,7 @@ Los datos de parametros de los modelos comparados corresponden a informacion pub
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ksiminyu/mms-1b-fl102-swahili-train1.3.2
+- Repositorio en Hugging Face: https://huggingface.co/ksiminyu/mms-1b-fl102-swahili-train1.3.2
 - Modelo base MMS-1B-FL102: https://huggingface.co/facebook/mms-1b-fl102
 - Repositorio MMS en fairseq (Meta AI): https://github.com/facebookresearch/fairseq/tree/main/examples/mms
 - Paper de referencia de la familia MMS, "Scaling Speech Technology to 1,000+ Languages": https://arxiv.org/abs/2305.13516

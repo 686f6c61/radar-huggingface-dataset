@@ -4,7 +4,7 @@
 
 Qwen3.8-27B es un modelo multimodal de 27 mil millones de parámetros desarrollado por el equipo Qwen de Alibaba. Se trata de un modelo denso de código abierto que acepta entradas de imagen y texto, diseñado para tareas de razonamiento visual, codificación, automatización de oficina y flujos de trabajo agénticos. Su arquitectura nativa multimodal le permite procesar imágenes y texto de forma conjunta, con soporte para un modo de pensamiento (thinking mode) que mejora el razonamiento paso a paso.
 
-El modelo destaca por ofrecer un rendimiento de nivel frontera en tareas de codificación y razonamiento de largo horizonte, rivalizando con modelos de mayor tamaño. Su disponibilidad en formatos como safetensors y GGUF facilita su despliegue tanto en entornos de servidor como en hardware local. La versión alojada en el repositorio `s-a-i/Qwen3.8-27B` es una copia del modelo original, con licencia Apache 2.0 según la etiqueta de HuggingFace, aunque el campo de licencia en la ficha no está especificado.
+El modelo destaca por ofrecer un rendimiento de nivel frontera en tareas de codificación y razonamiento de largo horizonte, rivalizando con modelos de mayor tamaño. Su disponibilidad en formatos como safetensors y GGUF facilita su despliegue tanto en entornos de servidor como en hardware local. La versión alojada en el repositorio `s-a-i/Qwen3.8-27B` es una copia del modelo original, con licencia Apache 2.0 según la etiqueta de Hugging Face, aunque el campo de licencia en la ficha no está especificado.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El modelo destaca por ofrecer un rendimiento de nivel frontera en tareas de codi
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF (disponible en unsloth/Qwen3.8-27B-GGUF) |
 | Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (segun etiqueta de HuggingFace) |
+| Licencia | Apache 2.0 (segun etiqueta de Hugging Face) |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
@@ -65,13 +65,13 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 - Riesgo de alucinacion: al igual que otros modelos generativos, puede producir respuestas incorrectas o inventadas, especialmente en tareas visuales complejas donde la interpretacion de la imagen es ambigua.
 - Limitaciones de contexto: no se ha especificado la longitud de contexto, por lo que se desconoce su capacidad para manejar conversaciones o documentos muy largos.
 - Limitaciones de idioma: no se han publicado los idiomas soportados, lo que impide conocer su cobertura multilingue real.
-- Restricciones de licencia: aunque la etiqueta de HuggingFace indica Apache 2.0, el campo de licencia en la ficha del modelo no esta especificado, por lo que se recomienda verificar la licencia oficial en el repositorio de Qwen antes de uso comercial.
+- Restricciones de licencia: aunque la etiqueta de Hugging Face indica Apache 2.0, el campo de licencia en la ficha del modelo no esta especificado, por lo que se recomienda verificar la licencia oficial en el repositorio de Qwen antes de uso comercial.
 - Caveat para produccion: al ser un modelo de 27B, requiere recursos de hardware considerables para inferencia en tiempo real, y su rendimiento en tareas de vision puede variar segun la calidad de las imagenes de entrada.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace (s-a-i): https://huggingface.co/s-a-i/Qwen3.8-27B
-- Repositorio oficial de Qwen en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio del modelo en Hugging Face (s-a-i): https://huggingface.co/s-a-i/Qwen3.8-27B
+- Repositorio oficial de Qwen en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentacion de Groq: https://console.groq.com/docs/model/qwen/qwen3.8-27b
 - Cuantizaciones GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio de GitHub de AlibabaCloud: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

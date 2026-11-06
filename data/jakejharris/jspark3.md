@@ -82,7 +82,7 @@ La comparativa relevante no es con otros modelos, sino con otras recetas de desp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jakejharris/jspark3
+- Repositorio Hugging Face: https://huggingface.co/jakejharris/jspark3
 - Checkpoint origen (Mia-AiLab): https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-TR3-4bpw
 - Checkpoint origen (brandonmusic): https://huggingface.co/brandonmusic/GLM-5.3-Flash-tr3-4bpw
 - Modelo base (Z.AI): https://huggingface.co/zai-org/GLM-5.3-Flash

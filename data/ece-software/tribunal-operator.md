@@ -68,10 +68,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparativa 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ECE-Software/tribunal-operator | Adaptador sobre base de ~270 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| ECE-Software/gemma-3-270m (base) | ~270 M | no disponible | no disponible | HuggingFace |
-| Familia Gemma 3 de Google | 270 M | segun el modelo base de Google | Gemma Terms of Use | HuggingFace, Ollama |
-| Otros modelos ligeros de la categoria (por ejemplo, modelos de menos de 500 M) | < 500 M | variable | variable | HuggingFace, Ollama |
+| ECE-Software/tribunal-operator | Adaptador sobre base de ~270 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| ECE-Software/gemma-3-270m (base) | ~270 M | no disponible | no disponible | Hugging Face |
+| Familia Gemma 3 de Google | 270 M | segun el modelo base de Google | Gemma Terms of Use | Hugging Face, Ollama |
+| Otros modelos ligeros de la categoria (por ejemplo, modelos de menos de 500 M) | < 500 M | variable | variable | Hugging Face, Ollama |
 
 No se conocen comparativas de rendimiento publicadas entre este adaptador y alternativas de la misma categoria en la informacion disponible.
 
@@ -86,7 +86,7 @@ No se conocen comparativas de rendimiento publicadas entre este adaptador y alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ECE-Software/tribunal-operator
+- Modelo en Hugging Face: https://huggingface.co/ECE-Software/tribunal-operator
 - Modelo base: https://huggingface.co/ECE-Software/gemma-3-270m
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo. Los enlaces recuperados (https://www.ece.fr/, https://fr.wikipedia.org/wiki/%C3%89cole_centrale_d%27%C3%A9lectronique, https://www.ece.asso.fr/, https://www.omneseducation.com/nos-etablissements/nos-ecoles/ece/) corresponden a una escuela de ingenieria francesa homonima y no guardan relacion con el adaptador. No se han encontrado papers, blogs ni demos asociados al modelo.

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| laion/chatterbox-s3gen-vc-grow | Adaptador LoRA de conversion de voz audio-a-audio | no disponible | no aplica (25 tokens/s S3) | Sin benchmark publicado | cc-by-4.0 (adaptador), base MIT | HuggingFace, work-in-progress |
-| ResembleAI/chatterbox | Modelo base (TTS/audio) | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| laion/chatterbox-s3gen-vc-grow | Adaptador LoRA de conversion de voz audio-a-audio | no disponible | no aplica (25 tokens/s S3) | Sin benchmark publicado | cc-by-4.0 (adaptador), base MIT | Hugging Face, work-in-progress |
+| ResembleAI/chatterbox | Modelo base (TTS/audio) | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | Otros modelos comparables de conversion de voz | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/laion/chatterbox-s3gen-vc-grow
+- Hugging Face del modelo: https://huggingface.co/laion/chatterbox-s3gen-vc-grow
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox
 - Modelo puntuador Humaneness Ears Medium: https://huggingface.co/laion/humaneness-ears-base-medium

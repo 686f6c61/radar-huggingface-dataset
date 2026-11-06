@@ -83,7 +83,7 @@ No se dispone de datos comparativos con otros detectores 3D monocular en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenExploer/fcos3d_efficientnetb0
+- Hugging Face: https://huggingface.co/OpenExploer/fcos3d_efficientnetb0
 - Repositorio oficial (mmdetection3d): https://github.com/open-mmlab/mmdetection3d
 - Paper: https://arxiv.org/abs/2104.10956
 - Documentación de entrenamiento (Horizon OpenExplorer): https://doc.oe.horizon.auto/3.2.0/en/guide/advanced_content/hat/examples/fcos3d.html

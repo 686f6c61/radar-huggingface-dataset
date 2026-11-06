@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct (base) | ~8B | 8192 (entrenamiento) | Instruct, SFT + RLHF | Apache 2.0 (según Qwen) | HuggingFace |
-| lzy-vlm-lab-opd/qwen3-vl-8b-pure-rl-seed42-step100 | ~8B (checkpoint) | 8192 | GRPO puro | no disponible | HuggingFace |
-| Otros modelos VQA de 8B (p.ej. LLaVA-1.6-8B) | ~8B | 4096-8192 | SFT | Apache 2.0 | HuggingFace |
+| Qwen3-VL-8B-Instruct (base) | ~8B | 8192 (entrenamiento) | Instruct, SFT + RLHF | Apache 2.0 (según Qwen) | Hugging Face |
+| lzy-vlm-lab-opd/qwen3-vl-8b-pure-rl-seed42-step100 | ~8B (checkpoint) | 8192 | GRPO puro | no disponible | Hugging Face |
+| Otros modelos VQA de 8B (p.ej. LLaVA-1.6-8B) | ~8B | 4096-8192 | SFT | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a características generales porque no hay datos de rendimiento publicados para este checkpoint. El modelo base Qwen3-VL-8B-Instruct es el punto de referencia natural, ya que este checkpoint es un fine-tuning del mismo.
 
@@ -77,9 +77,9 @@ La comparativa se limita a características generales porque no hay datos de ren
 - Licencia no especificada: no se puede determinar si es permitido el uso comercial.
 - Idiomas soportados no documentados; el entrenamiento se centró en tareas visuales, probablemente con datos en inglés, pero no se confirma.
 - Sin benchmarks publicados, el rendimiento real es desconocido.
-- El dato de parámetros totales en HuggingFace (770.288) parece incorrecto o se refiere a otro elemento; se recomienda verificar el tamaño real del modelo.
+- El dato de parámetros totales en Hugging Face (770.288) parece incorrecto o se refiere a otro elemento; se recomienda verificar el tamaño real del modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lzy-vlm-lab-opd/qwen3-vl-8b-pure-rl-seed42-step100
+- Repositorio Hugging Face: https://huggingface.co/lzy-vlm-lab-opd/qwen3-vl-8b-pure-rl-seed42-step100
 - Modelo base Qwen3-VL-8B-Instruct (referencia): https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct (enlace no verificado en la información proporcionada, se incluye como referencia contextual)

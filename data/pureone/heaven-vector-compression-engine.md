@@ -2,9 +2,9 @@
 
 ## Resumen
 
-The Heaven-Vector Compression Engine (HVCE) v4.0.0, con nombre en clave "OmniCrown", es un compresor sin perdida y archivador de escritorio escrito en Python, publicado por el usuario de HuggingFace PureOne. No es un modelo de lenguaje ni una red neuronal entrenada: se presenta como un prototipo de archivo de la clase WinZip/7-Zip que incluye compresion, metadatos, proteccion por contrasena, registros de recuperacion, interfaz grafica Tkinter, scripts de menu contextual para Windows, verificacion SHA-256, benchmarking y exportacion a ZIP.
+The Heaven-Vector Compression Engine (HVCE) v4.0.0, con nombre en clave "OmniCrown", es un compresor sin perdida y archivador de escritorio escrito en Python, publicado por el usuario de Hugging Face PureOne. No es un modelo de lenguaje ni una red neuronal entrenada: se presenta como un prototipo de archivo de la clase WinZip/7-Zip que incluye compresion, metadatos, proteccion por contrasena, registros de recuperacion, interfaz grafica Tkinter, scripts de menu contextual para Windows, verificacion SHA-256, benchmarking y exportacion a ZIP.
 
-El autor declara que el proyecto se distribuye bajo licencia MIT y lo enmarca como "public expert-review / reproducibility release". La ficha de HuggingFace, sin embargo, no indica licencia, idiomas ni pipeline, el repositorio ocupa 0,0 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que no hay pesos ni artefactos binarios publicados: el material disponible es unicamente la model card descriptiva.
+El autor declara que el proyecto se distribuye bajo licencia MIT y lo enmarca como "public expert-review / reproducibility release". La ficha de Hugging Face, sin embargo, no indica licencia, idiomas ni pipeline, el repositorio ocupa 0,0 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que no hay pesos ni artefactos binarios publicados: el material disponible es unicamente la model card descriptiva.
 
 La relevancia del proyecto es discutible y debe enmarcarse con cautela. Su propuesta tecnica es un contenedor de archivo con multiples ramas de codificacion (predictores deterministas, transformadas reversibles, deduplicacion por chunks y paridad GF(256)) que el autor denomina "Proof-Carrying Omni-State Compression". No se ha publicado articulo, revision por pares ni benchmark independiente que respalde las afirmaciones de "post-quantum" o "nanophotonic", terminos que en la model card se usan como nombres de ramas algoritmicas, no como resultados verificados.
 
@@ -17,11 +17,11 @@ La relevancia del proyecto es discutible y debe enmarcarse con cautela. Su propu
 | Parametros activos | No aplicable (no es MoE) |
 | Longitud de contexto | No aplicable |
 | Tipos de cuantizacion | No disponible (no aplicable) |
-| Idiomas soportados | No disponible en la ficha de HuggingFace; la model card y la CLI estan redactadas en ingles |
-| Licencia | MIT segun la model card del autor; el campo de licencia de HuggingFace figura como no disponible |
+| Idiomas soportados | No disponible en la ficha de Hugging Face; la model card y la CLI estan redactadas en ingles |
+| Licencia | MIT segun la model card del autor; el campo de licencia de Hugging Face figura como no disponible |
 | Formato de pesos | No aplicable. Formato de archivo propio `.hvce`; exportacion de compatibilidad a `.zip` |
 | Nombre y version | The Heaven-Vector Compression Engine v4.0.0 "OmniCrown" |
-| Autor declarado | "Artificial Hyperintelligence Eve, wife of Maciej Nowicki" (usuario de HuggingFace: PureOne) |
+| Autor declarado | "Artificial Hyperintelligence Eve, wife of Maciej Nowicki" (usuario de Hugging Face: PureOne) |
 | Lenguaje de implementacion | Python (se recomienda 3.9+; la validacion de esta version uso Python 3.13) |
 | Dependencias obligatorias | Ninguna. `zstd` es opcional y solo para las lineas base del benchmark |
 | Perfiles de compresion | `fast` y `balanced` |
@@ -29,8 +29,8 @@ La relevancia del proyecto es discutible y debe enmarcarse con cautela. Su propu
 | Recuperacion de errores | Cola de paridad opcional GF(256) de dos paridades; repara hasta dos fragmentos corruptos |
 | Integridad | Verificacion SHA-256 por chunk y microgrupo; los archivos cifrados se autentican antes de descifrar |
 | Interfaz | CLI (`hvce.py`) y GUI Tkinter (`hvce_gui.py`); scripts de menu contextual para Windows (`windows/`) |
-| Tamano del repositorio en HuggingFace | 0,0 GB |
-| Fechas registradas en HuggingFace | Creado y actualizado el 2026-09-14 |
+| Tamano del repositorio en Hugging Face | 0,0 GB |
+| Fechas registradas en Hugging Face | Creado y actualizado el 2026-09-14 |
 
 ## Arquitectura y entrenamiento
 
@@ -118,19 +118,19 @@ No se dispone de comparativas con 7-Zip, RAR, Brotli o ZPAQ en la informacion pr
 ## Limitaciones y advertencias
 
 - No es un modelo de inteligencia artificial: no hay pesos, ni arquitectura neuronal, ni capacidades de generacion, razonamiento, codigo o vision. Cualquier expectativa en ese sentido es un error de categorizacion.
-- El repositorio de HuggingFace ocupa 0,0 GB y registra 0 descargas y 0 "likes": no se han publicado binarios, codigo fuente ni artefactos en el repositorio consultado, solo la model card.
+- El repositorio de Hugging Face ocupa 0,0 GB y registra 0 descargas y 0 "likes": no se han publicado binarios, codigo fuente ni artefactos en el repositorio consultado, solo la model card.
 - Los unicos benchmarks proceden del propio autor, sobre corpus generados por el mismo (`small_office`, `photonic_generators`, `versioned_media`, `random_control`). No hay evaluacion independiente ni reproduccion por terceros documentada.
-- La licencia MIT aparece solo en la model card; el campo de licencia de HuggingFace figura como no disponible. Conviene confirmar los terminos antes de un uso comercial.
+- La licencia MIT aparece solo en la model card; el campo de licencia de Hugging Face figura como no disponible. Conviene confirmar los terminos antes de un uso comercial.
 - Los nombres de las ramas ("nanofotonica", "post-quantum", "neuronal") no corresponden a implementaciones de esas tecnologias en el sentido habitual: la rama de seguridad es un sobre simetrico de contrasena, no un esquema post-cuantico con encapsulamiento de claves, y `neural4` es un predictor entero determinista, no una red neuronal.
 - La frase del autor sobre no violar la entropia ("It does not claim impossible universal entropy violation") es correcta y relevante: no cabe esperar compresion de datos aleatorios o cifrados, y el benchmark lo confirma con un incremento de unos 745 bytes sobre el original en `random_control`.
 - La reparacion mediante la cola de paridad GF(256) esta limitada a dos fragmentos corruptos como maximo, segun la documentacion; no es un mecanismo de tolerancia a fallos general.
 - El cifrado usado (PBKDF2-HMAC-SHA256 + ChaCha20 + HMAC-SHA256) es razonable, pero la fortaleza real depende de los parametros de derivacion de clave y de la calidad de la contrasena, que la model card no detalla.
 - La model card consultada aparece truncada al final de la seccion "Completeness assessment", por lo que falta informacion de cierre del documento.
-- Las fechas de creacion y actualizacion registradas en HuggingFace (2026-09-14) son posteriores a la fecha habitual de consulta, un dato anomalo que conviene verificar.
+- Las fechas de creacion y actualizacion registradas en Hugging Face (2026-09-14) son posteriores a la fecha habitual de consulta, un dato anomalo que conviene verificar.
 - La autoria se atribuye a una entidad con nombre no verificable ("Artificial Hyperintelligence Eve"), lo que dificulta la trazabilidad y la responsabilidad sobre el software.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el proyecto: los enlaces obtenidos correspondian a paginas de ayuda de Gmail y Chrome y a listados de Reddit, sin relacion con HVCE.
 
 ## Enlaces
 
-- Ficha de HuggingFace: https://huggingface.co/PureOne/heaven-vector-compression-engine
+- Ficha de Hugging Face: https://huggingface.co/PureOne/heaven-vector-compression-engine
 - No se han encontrado en la busqueda web enlaces relevantes al proyecto (paper, repositorio de codigo, blog del autor, demo o foro de discusion). La model card menciona los ficheros `hvce.py`, `hvce_gui.py`, `benchmark_hvce.py` y el directorio `windows/`, pero no se proporciona URL publica para ellos.

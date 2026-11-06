@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `VasilisAsim/wav2vec-finetuned-iemocap` es un modelo de clasificación de audio basado en `wav2vec2`, ajustado (finetuned) sobre el dataset IEMOCAP. IEMOCAP es un corpus de conversaciones en inglés con anotaciones de emociones, ampliamente utilizado para el reconocimiento de emociones en el habla. El modelo está publicado en HuggingFace por el usuario `VasilisAsim` y se integra en el ecosistema de `transformers` mediante el pipeline `audio-classification`.
+El modelo `VasilisAsim/wav2vec-finetuned-iemocap` es un modelo de clasificación de audio basado en `wav2vec2`, ajustado (finetuned) sobre el dataset IEMOCAP. IEMOCAP es un corpus de conversaciones en inglés con anotaciones de emociones, ampliamente utilizado para el reconocimiento de emociones en el habla. El modelo está publicado en Hugging Face por el usuario `VasilisAsim` y se integra en el ecosistema de `transformers` mediante el pipeline `audio-classification`.
 
 La arquitectura subyacente es `Wav2Vec2`, un modelo basado en transformer que aprende representaciones de audio de forma auto-supervisada a partir de señales de voz crudas. El checkpoint contiene aproximadamente 94,57 millones de parámetros, un tamaño moderado que lo hace apto para inferencia en entornos con recursos limitados. La ventana de contexto para clasificación de audio no se especifica en la información disponible. A pesar de que la model card está prácticamente vacía, el modelo está disponible con pesos en formato `safetensors` y puede cargarse directamente con `Wav2Vec2ForSequenceClassification`.
 
@@ -28,7 +28,7 @@ No se proporcionan detalles sobre el proceso de entrenamiento, número de época
 ## Capacidades
 
 - Clasificación de emociones en audio: el modelo está diseñado para predecir la emoción presente en segmentos de voz, habitualmente con las categorías del dataset IEMOCAP.
-- Soporte del pipeline `audio-classification` de HuggingFace Transformers, lo que facilita su integración en aplicaciones existentes.
+- Soporte del pipeline `audio-classification` de Hugging Face Transformers, lo que facilita su integración en aplicaciones existentes.
 - Procesamiento de señales de audio crudas sin necesidad de extraer características manuales (MFCC, etc.), gracias a la capacidad de Wav2Vec2 para aprender representaciones directamente de la onda.
 - Compatibilidad con el formato `safetensors`, que acelera la carga y reduce el uso de memoria en comparación con otros formatos.
 - No soporta tool calling, generación de texto, razonamiento simbólico ni otras capacidades propias de modelos de lenguaje. Es un modelo puramente discriminativo para audio.
@@ -68,6 +68,6 @@ No disponible. La información publicada no incluye comparaciones con otros mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VasilisAsim/wav2vec-finetuned-iemocap
+- Hugging Face: https://huggingface.co/VasilisAsim/wav2vec-finetuned-iemocap
 - Repo relacionado: https://huggingface.co/VasilisAsim/wav2vec-base-finetuned-IEMOCAP
 - Paper de Wav2Vec2 (arXiv): https://arxiv.org/abs/1910.09700

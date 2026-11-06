@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HAKO-v3 es un modelo de lenguaje experimental desarrollado por el usuario PowerMachine, publicado en HuggingFace bajo el identificador PowerMachine/HAKO-v3. Según la model card, se trata de la tercera versión de un sistema denominado "Hybrid Attention Kohonen Orchestrator", que combina mecanismos de atención con redes SOM (Self-Organizing Maps) y técnicas de difusión. El autor describe una serie de innovaciones como la penalización por repetición en tres niveles, el uso de un modelo GPT-2 GQA como orquestador y la integración de DINOv2 con difusión para el entrenamiento de la red SOM.
+HAKO-v3 es un modelo de lenguaje experimental desarrollado por el usuario PowerMachine, publicado en Hugging Face bajo el identificador PowerMachine/HAKO-v3. Según la model card, se trata de la tercera versión de un sistema denominado "Hybrid Attention Kohonen Orchestrator", que combina mecanismos de atención con redes SOM (Self-Organizing Maps) y técnicas de difusión. El autor describe una serie de innovaciones como la penalización por repetición en tres niveles, el uso de un modelo GPT-2 GQA como orquestador y la integración de DINOv2 con difusión para el entrenamiento de la red SOM.
 
 El repositorio tiene un tamaño de 0,3 GB, lo que sugiere un modelo compacto, probablemente cuantizado a int4 según se menciona en la descripción. Sin embargo, la información pública es muy limitada: no se especifican parámetros totales, longitud de contexto, idiomas soportados ni licencia. La model card está escrita en portugués de Brasil y describe principalmente el proceso de entrenamiento y las métricas de evaluación, pero no ofrece detalles sobre el rendimiento en tareas estándar ni casos de uso concretos. En el momento de la consulta, el modelo no tiene descargas ni valoraciones, lo que indica que es un proyecto muy reciente y poco difundido.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables en el ecosistema open source co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PowerMachine/HAKO-v3
+- Modelo en Hugging Face: https://huggingface.co/PowerMachine/HAKO-v3
 - Repositorio GitHub del autor (no confirmado como oficial): no se ha identificado un enlace directo al código fuente de HAKO-v3 en los resultados de búsqueda.

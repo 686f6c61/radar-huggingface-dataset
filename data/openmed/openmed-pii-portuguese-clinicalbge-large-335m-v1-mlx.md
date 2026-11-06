@@ -70,7 +70,7 @@ No se dispone de informacion comparativa con otros modelos de deteccion de PII e
 
 ## Enlaces
 
-- Repositorio HuggingFace (MLX): https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx
+- Repositorio Hugging Face (MLX): https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx
 - Modelo base (PyTorch): https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1
 - OpenMed GitHub: https://github.com/maziyarpanahi/openmed
 - Documentacion del backend MLX: https://openmed.life/docs/mlx-backend/

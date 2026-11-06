@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Edafe-Moses/nllb-finetuned-ig` es un fine-tuning del modelo de traducción automática NLLB-200, creado por Edafe-Moses y publicado en HuggingFace. Está etiquetado con la arquitectura `m2m_100`, lo que indica un transformer encoder-decoder orientado a traducción. Sus pesos ocupan 5,6 GB y suman 1.402.138.624 parámetros, una escala típica de la variante de 1.300 millones de parámetros de NLLB-200.
+El modelo `Edafe-Moses/nllb-finetuned-ig` es un fine-tuning del modelo de traducción automática NLLB-200, creado por Edafe-Moses y publicado en Hugging Face. Está etiquetado con la arquitectura `m2m_100`, lo que indica un transformer encoder-decoder orientado a traducción. Sus pesos ocupan 5,6 GB y suman 1.402.138.624 parámetros, una escala típica de la variante de 1.300 millones de parámetros de NLLB-200.
 
 El sufijo `ig` en el nombre del repositorio sugiere que el afinado se realizó para el idioma igbo, aunque esta información no aparece en los metadatos. Si esa hipótesis es correcta, el modelo podría ofrecer mejores resultados en tareas de traducción con este idioma de bajos recursos. La relevancia del modelo está en el ámbito de la traducción multilingüe, donde los modelos de propósito general suelen flaquear en lenguas con pocos datos.
 

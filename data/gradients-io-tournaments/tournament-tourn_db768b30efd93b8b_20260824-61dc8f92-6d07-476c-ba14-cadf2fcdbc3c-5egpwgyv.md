@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) publicado por la organización gradients-io-tournaments, asociada a la plataforma Gradients, un proyecto descentralizado de entrenamiento e investigación de IA basado en la subred 56 de Bittensor. El adaptador se construye sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del Llama 3.1 de 8 mil millones de parámetros de Meta, y está entrenado mediante fine-tuning supervisado (SFT) usando la librería TRL de HuggingFace.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) publicado por la organización gradients-io-tournaments, asociada a la plataforma Gradients, un proyecto descentralizado de entrenamiento e investigación de IA basado en la subred 56 de Bittensor. El adaptador se construye sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del Llama 3.1 de 8 mil millones de parámetros de Meta, y está entrenado mediante fine-tuning supervisado (SFT) usando la librería TRL de Hugging Face.
 
 El repositorio contiene únicamente los pesos del adaptador PEFT (1.4 GB), no el modelo completo, por lo que para su uso es necesario cargarlo sobre el modelo base. La información pública disponible es extremadamente limitada: la model card está prácticamente vacía, sin datos sobre el dataset de entrenamiento, hiperparámetros, evaluación o licencia. Esto sugiere que se trata de un artefacto generado automáticamente en el contexto de los torneos de entrenamiento descentralizado de Gradients, donde los participantes compiten por producir los mejores adaptadores sobre modelos base abiertos.
 
@@ -25,7 +25,7 @@ A pesar de la falta de documentación, el modelo es relevante como ejemplo del e
 
 El modelo es un adaptador LoRA sobre `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada del Llama 3.1 8B de Meta. La arquitectura subyacente es un transformer decoder con atencion por ventanas deslizantes y atencion global alternadas, normalizacion RMSNorm, y activacion SwiGLU. El modelo base tiene 8 000 millones de parametros y una ventana de contexto de 128 000 tokens.
 
-El adaptador fue entrenado mediante fine-tuning supervisado (SFT) utilizando la libreria TRL de HuggingFace, como indican los tags del repositorio. No se dispone de informacion sobre el dataset utilizado, el numero de pasos de entrenamiento, la tasa de aprendizaje, el rango del LoRA ni el metodo de regularizacion. Tampoco se indica si se aplicaron tecnicas como RLHF o DPO. La unica referencia tecnica adicional es el tag `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en machine learning, citado en la plantilla de la model card, no a una innovacion del modelo.
+El adaptador fue entrenado mediante fine-tuning supervisado (SFT) utilizando la libreria TRL de Hugging Face, como indican los tags del repositorio. No se dispone de informacion sobre el dataset utilizado, el numero de pasos de entrenamiento, la tasa de aprendizaje, el rango del LoRA ni el metodo de regularizacion. Tampoco se indica si se aplicaron tecnicas como RLHF o DPO. La unica referencia tecnica adicional es el tag `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en machine learning, citado en la plantilla de la model card, no a una innovacion del modelo.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo es un adaptador LoRA sin documentacion de rendimiento, por lo que no se puede comparar con otros adaptadores o modelos de la misma categoria. Se recomienda al usuario evaluar el adaptador contra el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct` y contra otros adaptadores publicados por la misma organizacion en HuggingFace.
+No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo es un adaptador LoRA sin documentacion de rendimiento, por lo que no se puede comparar con otros adaptadores o modelos de la misma categoria. Se recomienda al usuario evaluar el adaptador contra el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct` y contra otros adaptadores publicados por la misma organizacion en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5EgpWgYv
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5EgpWgYv
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Plataforma Gradients: https://www.gradients.io/app/research/tournament
 - Articulo de Lacoste et al. (2019) sobre emisiones de carbono: https://arxiv.org/abs/1910.09700

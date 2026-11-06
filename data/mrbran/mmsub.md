@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Mrbran/Mmsub` es un repositorio publicado en HuggingFace por el usuario Mrbran, con licencia BSD-2-Clause y etiqueta regional para Estados Unidos. Fue creado y actualizado el 15 de agosto de 2026, aunque no se ha publicado ninguna información técnica en su model card más allá de la licencia. En el momento de la consulta, el modelo registra cero descargas y cero me gusta, lo que sugiere que se trata de una publicación reciente o de un proyecto sin difusión. No se dispone de datos sobre arquitectura, tamaño, contexto, capacidades o idiomas, por lo que cualquier evaluación técnica resulta imposible con la información disponible.
+El modelo `Mrbran/Mmsub` es un repositorio publicado en Hugging Face por el usuario Mrbran, con licencia BSD-2-Clause y etiqueta regional para Estados Unidos. Fue creado y actualizado el 15 de agosto de 2026, aunque no se ha publicado ninguna información técnica en su model card más allá de la licencia. En el momento de la consulta, el modelo registra cero descargas y cero me gusta, lo que sugiere que se trata de una publicación reciente o de un proyecto sin difusión. No se dispone de datos sobre arquitectura, tamaño, contexto, capacidades o idiomas, por lo que cualquier evaluación técnica resulta imposible con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. Sin datos de arquitectura, tamaño o rendimiento, no se puede est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mrbran/Mmsub
+- Repositorio en Hugging Face: https://huggingface.co/Mrbran/Mmsub

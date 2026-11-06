@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlowPilot es un modelo de tipo world-action model basado en flow matching, desarrollado por YuDinging y publicado en HuggingFace, orientado a la navegación autónoma de UAV (drones) en tiempo real a bordo. El modelo combina la modelización conjunta de latentes de vídeo y tokens de acción mediante una arquitectura dual-stream MoT (Mixture of Transformers), lo que le permite generar trayectorias de vuelo a partir de observaciones visuales y estados de la aeronave.
+FlowPilot es un modelo de tipo world-action model basado en flow matching, desarrollado por YuDinging y publicado en Hugging Face, orientado a la navegación autónoma de UAV (drones) en tiempo real a bordo. El modelo combina la modelización conjunta de latentes de vídeo y tokens de acción mediante una arquitectura dual-stream MoT (Mixture of Transformers), lo que le permite generar trayectorias de vuelo a partir de observaciones visuales y estados de la aeronave.
 
 La salida de acciones se parametriza mediante un polinomio de Bernstein de séptimo orden con 8 puntos de control (3 fijados por el estado inicial y 5 predichos por la red), produciendo 48 waypoints a 30 Hz. Esto convierte al modelo en un generador de trayectorias suaves y físicamente plausibles, adecuado para control de vuelo en bucle cerrado. La liberación incluye únicamente los checkpoints de la fase 2 de entrenamiento; los pesos del VAE de Wan2.2 deben descargarse por separado desde el repositorio oficial de Wan-AI.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlowPilot | World-action model para UAV (flow matching, MoT) | no disponible | no disponible | Apache-2.0 | Checkpoints en HuggingFace + codigo en GitHub |
+| FlowPilot | World-action model para UAV (flow matching, MoT) | no disponible | no disponible | Apache-2.0 | Checkpoints en Hugging Face + codigo en GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -83,6 +83,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuDinging/FlowPilot
+- Hugging Face: https://huggingface.co/YuDinging/FlowPilot
 - Repositorio de codigo: https://github.com/flyingbitac/FlowPilot
 - VAE Wan2.2 (descarga externa): https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B

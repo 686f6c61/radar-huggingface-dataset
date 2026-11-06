@@ -90,7 +90,7 @@ Datos de terceros: Artificial Analysis otorga a MiniMax-M3.1-Flash una puntuaci�
 
 | Modelo | Params totales / activos | Contexto | Automation-Bench v1.0.6 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-M3.1-Flash | ≈428B / 23B (card); 220,5B en safetensors | 1.000.000 | 62,8 | minimax-community | Pesos en HuggingFace, API propia, OpenRouter (nivel gratuito) |
+| MiniMax-M3.1-Flash | ≈428B / 23B (card); 220,5B en safetensors | 1.000.000 | 62,8 | minimax-community | Pesos en Hugging Face, API propia, OpenRouter (nivel gratuito) |
 | DeepSeek V4.1 Flash-1017 | No disponible | No disponible | 60,5 | No disponible | No disponible |
 | DeepSeek V4.1 Flash | No disponible | No disponible | 54,8 | No disponible | No disponible |
 | Kimi K3 | No disponible | No disponible | 46,7 | No disponible | No disponible |
@@ -115,9 +115,9 @@ La información disponible solo permite comparar la puntuación en Automation-Be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
+- Modelo en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Paper (arXiv:2606.13392): https://arxiv.org/abs/2606.13392
-- Organización MiniMax en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organización MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI
 - Organización en ModelScope: https://modelscope.cn/organization/minimax
 - GitHub: https://github.com/MiniMax-AI
 - Web oficial: https://www.minimax.io

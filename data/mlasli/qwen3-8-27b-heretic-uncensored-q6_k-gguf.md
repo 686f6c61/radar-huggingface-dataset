@@ -85,6 +85,6 @@ No disponible. No se han encontrado en la informacion proporcionada comparacione
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q6_K-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q6_K-GGUF)
 - [Repositorio Heretic](https://github.com/mlabonne/heretic-llm)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)

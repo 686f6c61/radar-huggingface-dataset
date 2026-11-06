@@ -77,7 +77,7 @@ La comparativa se basa en la arquitectura general, pero el modelo de `polinaroma
 
 ## Enlaces
 
-- [HuggingFace - polinaromanov/model_343888813_mobilevit_small](https://huggingface.co/polinaromanov/model_343888813_mobilevit_small)
+- [Hugging Face - polinaromanov/model_343888813_mobilevit_small](https://huggingface.co/polinaromanov/model_343888813_mobilevit_small)
 - [MobileViT (Apple) - Hugging Face](https://huggingface.co/apple/mobilevit-small)
 - [Documentación de MobileViT en Transformers](https://huggingface.co/docs/transformers/model_doc/mobilevit)
 - [Repositorio GitHub con implementaciones de MobileViT](https://github.com/yangyucheng000/MobileViT)

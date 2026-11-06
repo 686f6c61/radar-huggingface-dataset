@@ -30,7 +30,7 @@ Datos adicionales de la especificacion:
 | Clases | 0 = agua, 1 = resistivo, 2 = conductor |
 | Resolucion de evaluacion | reescalado a 256×256 para la puntuacion oficial |
 | SHA-256 de `ktc.onnx` | `38f0515b407c1f8b12ecdc271e903c39f3c9f2ab6690342d3f03a5a58584a8c4` |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -89,7 +89,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el repositorio ocupa 0,0 GB en HuggingFace y la entrada es de 128×128 píxeles, por lo que la huella de memoria es reducida.
+- VRAM estimada para inferencia: no disponible de forma explicita; el repositorio ocupa 0,0 GB en Hugging Face y la entrada es de 128×128 píxeles, por lo que la huella de memoria es reducida.
 - GPU recomendadas: el entrenamiento se realizo en una GPU T4 (Kaggle); para inferencia no se especifican modelos de GPU concretos.
 - Compatibilidad con GPU de consumo: no se documenta de forma explicita, pero por el tamano de la U-Net y la resolucion de entrada (128×128) es previsible que quepa en GPU de consumo, aunque no hay datos confirmados en la informacion disponible.
 - Opciones de despliegue: al estar en formato ONNX, puede ejecutarse con runtimes compatibles con ONNX (ONNX Runtime); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
@@ -100,7 +100,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Tipo / enfoque | Puntuacion sobre 21 | Licencia / disponibilidad |
 |---|---|---|---|
-| PulmoEIT (este modelo) | U-Net, entrada condicionada por nivel | 14,93 | MIT, ONNX en HuggingFace |
+| PulmoEIT (este modelo) | U-Net, entrada condicionada por nivel | 14,93 | MIT, ONNX en Hugging Face |
 | Bremen, post-tratamiento (1.º) | Post-tratamiento sobre reconstruccion | 15,24 | Publicado en Denker et al., 2024 |
 | Bremen, FC U-Net | U-Net totalmente convolucional | 15,13 | Publicado en Denker et al., 2024 |
 | Team ABC | Algoritmo publicado | 12,76 | Publicado en Denker et al., 2024 |
@@ -125,7 +125,7 @@ No se dispone de datos de parametros ni de contexto para las alternativas, dado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sheenee261/pulmoeit-ktc2023
+- Modelo en Hugging Face: https://huggingface.co/sheenee261/pulmoeit-ktc2023
 - Repositorio de codigo: https://github.com/sheene123/pulmoeit (metodo y limites en `src/pulmoeit/ktc/` y `docs/ktc2023.md`)
 - Demo (Space): https://huggingface.co/spaces/sheenee261/pulmoeit
 - Kuopio Tomography Challenge 2023: https://fips.fi/data-challenges/kuopio-tomography-challenge-2023/

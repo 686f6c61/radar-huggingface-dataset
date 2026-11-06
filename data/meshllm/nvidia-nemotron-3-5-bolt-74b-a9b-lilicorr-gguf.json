@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "meshllm/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-GGUF",
+  "slug": "meshllm-nvidia-nemotron-3-5-bolt-74b-a9b-lilicorr-gguf",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-GGUF",
+  "created_at": "2026-11-06T11:29:52.000Z",
+  "updated_at": "2026-11-06T11:32:09.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lilicorr",
+    "dflash",
+    "speculative-decoding",
+    "nemotron",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1112828867,
+  "parameters_human": "1.11B",
+  "storage_bytes": 1191059648,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+      "snippet": "NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB is a vision-language model (VLM) designed to run everyday agentic tasks locally, using a native 2-bit quantization to fit in 24GB of memory and run alongside other applications."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-GGUF - Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use lmstudio-community/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

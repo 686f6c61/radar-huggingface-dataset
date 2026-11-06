@@ -123,7 +123,7 @@ La comparacion relevante y con datos es la del par `rft` frente a `grpo`: mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raviteja546/reasoning-rlvr-grpo
+- Modelo en Hugging Face: https://huggingface.co/Raviteja546/reasoning-rlvr-grpo
 - Modelo base (fase RFT): https://huggingface.co/Raviteja546/reasoning-rlvr-rft
 - Repositorio del estudio: https://github.com/rrtchaganti/reasoning-rlvr (rama `phase-4-grpo`, commit `a8b9f6947facfc2f9a627252e438ca5c4bb2da06`)
 - Plantillas de prompt de evaluacion: `src/rlvr/eval/prompts.py` dentro del repositorio

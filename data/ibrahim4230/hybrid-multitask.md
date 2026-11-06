@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid for Multitask es un repositorio experimental publicado por el usuario Ibrahim4230 en HuggingFace, cuyo artefacto principal es un script de entrenamiento (`finetune.py`) acompanado de una configuracion de arquitectura y un checkpoint de inicializacion. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo que permite inspeccionar una arquitectura propietaria antes de lanzar un entrenamiento completo. El propio autor advierte en la model card que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo con rendimiento demostrado.
+Hybrid for Multitask es un repositorio experimental publicado por el usuario Ibrahim4230 en Hugging Face, cuyo artefacto principal es un script de entrenamiento (`finetune.py`) acompanado de una configuracion de arquitectura y un checkpoint de inicializacion. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo que permite inspeccionar una arquitectura propietaria antes de lanzar un entrenamiento completo. El propio autor advierte en la model card que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo con rendimiento demostrado.
 
 La arquitectura declarada es de tipo hibrido ("Hybrid"), con atencion dispersa (sparse attention) y fusion mediante co-atencion (co attention), activacion gelu tanh y normalizacion scalenorm. La escala indicada en la configuracion es "huge", aunque el numero real de parametros registrado en safetensors es de solo 24.832, lo que sugiere que la etiqueta de escala se refiere al diseno previsto y no al checkpoint efectivamente publicado. El repositorio no ocupa espacio apreciable (0,0 GB).
 
@@ -77,5 +77,5 @@ No disponible. El repositorio no es comparable con modelos de produccion de su c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ibrahim4230/hybrid-multitask
+- Repositorio en Hugging Face: https://huggingface.co/Ibrahim4230/hybrid-multitask
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

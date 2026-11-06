@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-ABLITERATED-FP8 es una modificación a nivel de pesos del modelo GLM-5.3 en su versión cuantizada a FP8 (JANGQ-AI/GLM-5.3-FP8), publicada por el usuario PenAgent en HuggingFace. Se trata de un checkpoint de 753.329.940.480 parámetros (unos 753B) con arquitectura `glm_moe_dsa`, 78 capas y modalidad exclusivamente textual, al que se le ha aplicado una técnica de *abliteration*: la edición directa de los tensores `residual-writer` en bf16 para reducir el comportamiento de rechazo, sin fine-tuning, sin LoRA y sin hooks en tiempo de ejecución. El resto de la red (expertos enrutados en FP8) permanece intacto.
+GLM-5.3-ABLITERATED-FP8 es una modificación a nivel de pesos del modelo GLM-5.3 en su versión cuantizada a FP8 (JANGQ-AI/GLM-5.3-FP8), publicada por el usuario PenAgent en Hugging Face. Se trata de un checkpoint de 753.329.940.480 parámetros (unos 753B) con arquitectura `glm_moe_dsa`, 78 capas y modalidad exclusivamente textual, al que se le ha aplicado una técnica de *abliteration*: la edición directa de los tensores `residual-writer` en bf16 para reducir el comportamiento de rechazo, sin fine-tuning, sin LoRA y sin hooks en tiempo de ejecución. El resto de la red (expertos enrutados en FP8) permanece intacto.
 
 El problema que aborda es la eliminación del sesgo de rechazo en un modelo grande de tipo MoE para usos donde las negativas del modelo interfieren con la tarea, como la investigación sobre alineación, el *red teaming* o la generación de datos sintéticos. La model card reporta una preservación de capacidad medida en MMLU del 87,43 % (frente al 85,58 % del GLM-5.3 regular de referencia), es decir, no se observa degradación e incluso una ligera mejora dentro del ruido de la muestra.
 
@@ -76,10 +76,10 @@ Notas metodológicas de la propia model card: `max_tokens=700` por respuesta; la
 
 | Modelo | Parametros | Contexto | MMLU | Rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.3-ABLITERATED-FP8 (v2, este) | ~753B (MoE) | 131K practicos | 87,43 % | Reducido (81,6 % TC en HB-320) | MIT declarada | HuggingFace, safetensors FP8 |
-| GLM-5.3 (zai-org, base) | ~753B (MoE) | no disponible | 85,58 % (baseline citado) | Alineado por defecto | no disponible | HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 | ~753B (MoE) | no disponible | no disponible | Alineado por defecto | no disponible | HuggingFace, FP8 |
-| GLM-5.3-UNCENSORED-FP8 v1 (dealignai) | ~753B (MoE) | 131K practicos | 87,72 % | 85,9 % TC en subconjunto no-copyright | MIT declarada | HuggingFace |
+| GLM-5.3-ABLITERATED-FP8 (v2, este) | ~753B (MoE) | 131K practicos | 87,43 % | Reducido (81,6 % TC en HB-320) | MIT declarada | Hugging Face, safetensors FP8 |
+| GLM-5.3 (zai-org, base) | ~753B (MoE) | no disponible | 85,58 % (baseline citado) | Alineado por defecto | no disponible | Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 | ~753B (MoE) | no disponible | no disponible | Alineado por defecto | no disponible | Hugging Face, FP8 |
+| GLM-5.3-UNCENSORED-FP8 v1 (dealignai) | ~753B (MoE) | 131K practicos | 87,72 % | 85,9 % TC en subconjunto no-copyright | MIT declarada | Hugging Face |
 
 No se dispone en la información proporcionada de datos de otras familias de modelos comparables (por ejemplo, otros MoE abiertos de escala similar) que permitan una comparación de rendimiento verificada; cualquier comparación con ellos requeriría ejecutar la misma batería de evaluación.
 
@@ -97,12 +97,12 @@ No se dispone en la información proporcionada de datos de otras familias de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PenAgent/GLM-5.3-ABLITERATED-FP8
+- Modelo en Hugging Face: https://huggingface.co/PenAgent/GLM-5.3-ABLITERATED-FP8
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 intermedia: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Artefacto referenciado en la model card: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Discusión con notas de campo en 8× DGX Spark GB10: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8/discussions/3
 - Variante orientada a ciberseguridad: https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8
-- Organización en HuggingFace: https://huggingface.co/dealignai
+- Organización en Hugging Face: https://huggingface.co/dealignai
 - Perfil de X/Twitter citado: https://twitter.com/dealignai
 - Perfil del tester citado: https://huggingface.co/0xMagnus

@@ -78,9 +78,9 @@ No hay comparativas publicadas en la información disponible. Como referencias c
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya-421M-Claviger-v0 | 421 M | no disponible | Triage multiagente en Discord | Apache 2.0 | HuggingFace, 12 descargas |
-| convaiinnovations/laya (base) | no disponible | no disponible | Decisión genérica con cabeza Laya | no disponible | HuggingFace |
-| answerdotai/ModernBERT-large (encoder) | no disponible | no disponible | Encoder de propósito general | no disponible | HuggingFace |
+| Laya-421M-Claviger-v0 | 421 M | no disponible | Triage multiagente en Discord | Apache 2.0 | Hugging Face, 12 descargas |
+| convaiinnovations/laya (base) | no disponible | no disponible | Decisión genérica con cabeza Laya | no disponible | Hugging Face |
+| answerdotai/ModernBERT-large (encoder) | no disponible | no disponible | Encoder de propósito general | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No hay comparativas publicadas en la información disponible. Como referencias c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/finis-est/Laya-421M-Claviger-v0
+- Modelo en Hugging Face: https://huggingface.co/finis-est/Laya-421M-Claviger-v0
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Encoder ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - Paper de referencia citado en los tags (arXiv:2412.13663): https://arxiv.org/abs/2412.13663

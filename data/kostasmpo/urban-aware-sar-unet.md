@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Urban-Aware SAR U-Net (este repositorio) | 147,9 M | Chip de 8 bandas + mascara urbana SPUM | F1 test FU 0,383; precision 0,425; recall 0,349 | MIT | Pesos en HuggingFace y codigo en GitHub |
+| Urban-Aware SAR U-Net (este repositorio) | 147,9 M | Chip de 8 bandas + mascara urbana SPUM | F1 test FU 0,383; precision 0,425; recall 0,349 | MIT | Pesos en Hugging Face y codigo en GitHub |
 | Urban-Aware U-Net (Zhao et al., 2022) | no disponible | Intensidad multitemporal y coherencia Sentinel-1 en doble polarizacion | no disponible (el resumen indica potencial para cartografia casi en tiempo real con pocos datos de entrenamiento) | no disponible | Articulo en IEEE y ResearchGate; no se han localizado pesos publicos |
 | SAR-UNet (mathieurenault1) | no disponible | Imagenes SAR | no disponible | no disponible | Repositorio en GitHub |
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa no es posible con la informacion disponible. El trab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kostasmpo/urban-aware-sar-unet
+- Modelo en Hugging Face: https://huggingface.co/kostasmpo/urban-aware-sar-unet
 - Codigo de la implementacion: https://github.com/kostasmpo/urban_aware_sar_unet
 - Generador de mascaras urbanas SPUM: https://github.com/kostasmpo/SAR_derived_probabilistic_urban_mask
 - Dataset de mascaras SPUM: https://huggingface.co/datasets/kostasmpo/urbansarfloods-spum-masks

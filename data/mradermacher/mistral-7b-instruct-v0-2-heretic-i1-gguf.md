@@ -109,7 +109,7 @@ No hay datos públicos de rendimiento que permitan comparar cualitativamente est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#mistral-7b-instruct-v0.2-heretic-i1-GGUF
 - Quants estáticos del mismo modelo: https://huggingface.co/mradermacher/mistral-7b-instruct-v0.2-heretic-GGUF
 - Modelo base (abliterado, safetensors): https://huggingface.co/Ananasez/mistral-7b-instruct-v0.2-heretic

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MESIE-Spectral-v1 (Multi-Elemental Spectral Intelligence Engine) es un codificador espectral neuronal de 1,2 millones de parametros desarrollado por ItsnotAilabs y publicado en HuggingFace bajo licencia Apache-2.0. No es un modelo de lenguaje: es un extractor de caracteristicas que transforma espectros de frecuencia multicanal de entrada con forma `[B, 4, 128]` en un vector latente estructurado de 7 dimensiones (`[Energia, Centroide, Dispersion, Entropia, Banda_Baja, Banda_Media, Banda_Alta]`). Su proposito es convertir senales ruidosas de alta dimensionalidad en una huella espectral compacta y de baja latencia.
+MESIE-Spectral-v1 (Multi-Elemental Spectral Intelligence Engine) es un codificador espectral neuronal de 1,2 millones de parametros desarrollado por ItsnotAilabs y publicado en Hugging Face bajo licencia Apache-2.0. No es un modelo de lenguaje: es un extractor de caracteristicas que transforma espectros de frecuencia multicanal de entrada con forma `[B, 4, 128]` en un vector latente estructurado de 7 dimensiones (`[Energia, Centroide, Dispersion, Entropia, Banda_Baja, Banda_Media, Banda_Alta]`). Su proposito es convertir senales ruidosas de alta dimensionalidad en una huella espectral compacta y de baja latencia.
 
 El modelo esta etiquetado para descomposicion de frecuencia en tiempo real, representacion de series temporales continuas y extraccion de caracteristicas. Sus ambitos de aplicacion declarados son la deteccion de anomalias en mercados financieros y cripto, el perfilado de rutas de ejecucion de codigo, la descomposicion de ruido en audio y sensores IoT, y la compresion de estado en agentes de IA. El autor declara una latencia de 0,28 ms en CPU y 0,09 ms en GPU por pase forward, con un peso de 61,8 KB, lo que lo situa en el rango de despliegue en edge, navegador (via ONNX/WebAssembly) y dispositivos moviles.
 
@@ -95,6 +95,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsnotAilabs/MESIE-Spectral-v1
+- Modelo en Hugging Face: https://huggingface.co/ItsnotAilabs/MESIE-Spectral-v1
 - DOI asociado: https://doi.org/10.57967/hf/10361
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante sobre este modelo: unicamente devuelven portadas y secciones del medio aleman Der Spiegel (spiegel.de), sin relacion alguna con MESIE-Spectral-v1. No se dispone de paper, blog tecnico, repositorio de codigo ni demo adicionales.

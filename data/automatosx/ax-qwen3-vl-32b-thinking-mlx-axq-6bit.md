@@ -78,7 +78,7 @@ La comparativa se limita a los modelos relacionados directamente en la informaci
 
 ## Enlaces
 
-- [HuggingFace: AX-Qwen3-VL-32B-Thinking-MLX-AXQ-6bit](https://huggingface.co/AutomatosX/AX-Qwen3-VL-32B-Thinking-MLX-AXQ-6bit)
+- [Hugging Face: AX-Qwen3-VL-32B-Thinking-MLX-AXQ-6bit](https://huggingface.co/AutomatosX/AX-Qwen3-VL-32B-Thinking-MLX-AXQ-6bit)
 - [Modelo base: Qwen/Qwen3-VL-32B-Thinking](https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking)
 - [Hermano 4bit: AX-Qwen3-VL-32B-Thinking-MLX-AXQ-4bit](https://huggingface.co/AutomatosX/AX-Qwen3-VL-32B-Thinking-MLX-AXQ-4bit)
 - [Colecciones de AutomatosX](https://huggingface.co/AutomatosX/collections)

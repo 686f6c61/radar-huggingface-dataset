@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Miss_Hoolie es un modelo publicado en HuggingFace por el usuario rtgfreuui (Florence Okojie) bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de tamaño reducido, probablemente orientado a síntesis o conversión de voz. La model card del autor no contiene información técnica más allá de la licencia, por lo que la arquitectura, el entrenamiento y las capacidades exactas no pueden confirmarse con los datos disponibles.
+Miss_Hoolie es un modelo publicado en Hugging Face por el usuario rtgfreuui (Florence Okojie) bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de tamaño reducido, probablemente orientado a síntesis o conversión de voz. La model card del autor no contiene información técnica más allá de la licencia, por lo que la arquitectura, el entrenamiento y las capacidades exactas no pueden confirmarse con los datos disponibles.
 
 Las búsquedas web apuntan a que el modelo está relacionado con la conversión de voz (RVC, Retrieval-based Voice Conversion) del personaje Miss Hoolie, la profesora de guardería del programa infantil escocés Balamory. En la plataforma voice-models.com aparece una solicitud de modelo de voz para este personaje que enlaza con un modelo RVC V2 de referencia, aunque no se puede confirmar que este repositorio concreto sea ese modelo. No se dispone de información adicional sobre arquitectura, entrenamiento o rendimiento.
 

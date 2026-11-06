@@ -45,7 +45,7 @@ Tampoco hay evidencia de fases de alineacion (RLHF, DPO, SFT) ni de innovaciones
 - Reanudacion de entrenamiento: el propio autor etiqueta la ruta como `resumable`, de modo que el checkpoint esta pensado para reiniciar el run desde el paso 149 usando el mismo grado de paralelismo y la misma configuracion de Megatron. Es el uso principal y el unico respaldado por la estructura del repositorio.
 - Auditoria y reproducibilidad de experimentos: sirve para verificar los resultados registrados en el run de W&B `c46a2679`, comparar el estado final con las metricas registradas y detectar posibles discrepancias.
 - Archivado a largo plazo de estados intermedios: util para equipos de investigacion que necesitan conservar checkpoints fuera del almacenamiento efimero de un cluster, con el fin de evitar la perdida de runs antiguos.
-- Conversion a formatos de inferencia: mediante las herramientas de conversion de Megatron-LM (`tools/checkpoint/convert.py`) se podria transformar a safetensors en formato HuggingFace, paso previo e imprescindible para cualquier evaluacion o despliegue con vLLM, TGI, llama.cpp u Ollama. Requiere conocer la configuracion de paralelismo original.
+- Conversion a formatos de inferencia: mediante las herramientas de conversion de Megatron-LM (`tools/checkpoint/convert.py`) se podria transformar a safetensors en formato Hugging Face, paso previo e imprescindible para cualquier evaluacion o despliegue con vLLM, TGI, llama.cpp u Ollama. Requiere conocer la configuracion de paralelismo original.
 - Estudio de dinamica de entrenamiento: si se dispone de otros checkpoints del mismo run, este estado del paso 149 permite analizar la evolucion de pesos, normas de gradiente o deriva de representaciones entre fases del entrenamiento.
 - Integracion en pipelines de gestion de artefactos: el checkpoint puede versionarse con Git LFS o DVC como artefacto trazable dentro de un flujo MLOps de investigacion, vinculandolo a su run de W&B y a su commit de codigo.
 - Pruebas de compatibilidad de herramientas: util para validar que una version concreta de Megatron-LM o de un framework de conversion puede leer correctamente checkpoints distribuidos de este tipo.
@@ -83,5 +83,5 @@ No disponible. Al desconocerse arquitectura, numero de parametros, contexto y li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-02-axis-kcenter-8b7db1a4d013
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-02-axis-kcenter-8b7db1a4d013
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados obtenidos no guardan ninguna relacion con el modelo y se han descartado por no ser material tecnico utilizable.

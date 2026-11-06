@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gr-audit-mod3-seed-sft-v2` es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3-1.7B, desarrollado por el usuario ErrareHumanumEst. Se trata de un modelo de 1.700 millones de parámetros entrenado con el framework TRL (Transformers Reinforcement Learning) de HuggingFace, orientado a tareas de generación de texto. El nombre sugiere una posible especialización en tareas de auditoría, aunque la documentación disponible no especifica el dominio concreto de los datos de entrenamiento.
+El modelo `gr-audit-mod3-seed-sft-v2` es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3-1.7B, desarrollado por el usuario ErrareHumanumEst. Se trata de un modelo de 1.700 millones de parámetros entrenado con el framework TRL (Transformers Reinforcement Learning) de Hugging Face, orientado a tareas de generación de texto. El nombre sugiere una posible especialización en tareas de auditoría, aunque la documentación disponible no especifica el dominio concreto de los datos de entrenamiento.
 
 El modelo se publica con un tamaño de repositorio de 0,1 GB, lo que indica que se distribuye en formato de precisión reducida o cuantizado. Al estar basado en Qwen3-1.7B, hereda la arquitectura transformer de la familia Qwen3, que incluye soporte para ventanas de contexto amplias y capacidades multilingües. Su relevancia radica en ser un ejemplo de adaptación de un modelo pequeño y eficiente mediante SFT, lo que permite desplegar capacidades específicas en entornos con recursos limitados.
 
@@ -32,7 +32,7 @@ No se especifican en la documentación el número de tokens de entrenamiento, la
 - Generación de texto: el modelo puede producir respuestas coherentes a instrucciones en formato conversacional, como se muestra en el ejemplo de la model card con preguntas de opinión.
 - Razonamiento básico: al estar basado en Qwen3-1.7B, conserva capacidades de razonamiento de nivel medio para tareas de sentido común y lógica simple.
 - Soporte multilingüe: el modelo base Qwen3-1.7B fue entrenado con datos en múltiples idiomas, incluyendo español, inglés y chino, aunque no se confirma si el fine-tune conserva estas capacidades.
-- Integración con pipelines de Transformers: compatible con la API de HuggingFace `pipeline("text-generation")`, lo que facilita su uso en entornos Python.
+- Integración con pipelines de Transformers: compatible con la API de Hugging Face `pipeline("text-generation")`, lo que facilita su uso en entornos Python.
 - Despliegue en endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con soluciones de inferencia gestionada.
 - No se documentan capacidades de tool calling, function calling, agentes, visión o audio en la información disponible.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gr-audit-mod3-seed-sft-v2 | 1,7B | no disponible | no disponible | HuggingFace |
-| Qwen3-1.7B (base) | 1,7B | 32K (ampliable) | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 Community License | HuggingFace |
-| Gemma-2-2B | 2,6B | 8K | Gemma License | HuggingFace |
+| gr-audit-mod3-seed-sft-v2 | 1,7B | no disponible | no disponible | Hugging Face |
+| Qwen3-1.7B (base) | 1,7B | 32K (ampliable) | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 Community License | Hugging Face |
+| Gemma-2-2B | 2,6B | 8K | Gemma License | Hugging Face |
 
 El modelo se sitúa en la categoría de modelos pequeños de menos de 3B parámetros. Frente a alternativas como Llama-3.2-1B o Gemma-2-2B, su principal ventaja es la herencia de la arquitectura Qwen3, que incluye soporte para modos de razonamiento y una tokenización eficiente para múltiples idiomas. Sin embargo, la falta de documentación sobre el fine-tune y la licencia limita su comparabilidad directa.
 
@@ -79,7 +79,7 @@ El modelo se sitúa en la categoría de modelos pequeños de menos de 3B paráme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-seed-sft-v2
+- Modelo en Hugging Face: https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-seed-sft-v2
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Framework TRL: https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers/index

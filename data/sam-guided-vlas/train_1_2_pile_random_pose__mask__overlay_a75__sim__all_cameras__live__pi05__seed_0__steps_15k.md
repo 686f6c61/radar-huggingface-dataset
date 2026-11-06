@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`sam-guided-vlas/...pi05...steps_15k`) | 4,14B | No disponible | VLA especializada en apilado con Panda en simulación | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| `lerobot/pi05_base` | No disponible (el checkpoint afinado deriva de él) | No disponible | VLA de propósito general pi05 | No disponible | HuggingFace |
+| Este checkpoint (`sam-guided-vlas/...pi05...steps_15k`) | 4,14B | No disponible | VLA especializada en apilado con Panda en simulación | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| `lerobot/pi05_base` | No disponible (el checkpoint afinado deriva de él) | No disponible | VLA de propósito general pi05 | No disponible | Hugging Face |
 | π₀.₅ / π₀ (Physical Intelligence) | No disponible | No disponible | VLA de propósito general para generalización en entornos abiertos | No disponible | Blog de Physical Intelligence y repositorio OpenPI |
 
 No se dispone de datos de contexto, benchmarks ni licencia de las alternativas en la información proporcionada, por lo que la comparación cuantitativa no es posible. Otras familias de políticas VLA (por ejemplo OpenVLA) no aparecen en la documentación facilitada y no se incluyen para no introducir cifras no verificadas.
@@ -103,12 +103,12 @@ No se dispone de datos de contexto, benchmarks ni licencia de las alternativas e
 - Idiomas: no disponible. El parámetro `--task` se documenta con cadenas cortas en inglés ("soap dispenser"); no hay evidencia de que entradas en otros idiomas funcionen.
 - Licencia: Apache-2.0 permite uso comercial, pero el modelo base `lerobot/pi05_base` y el código de OpenPI pueden tener condiciones propias que conviene revisar antes de explotarlo comercialmente.
 - Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, sin issues ni validación independiente por parte de la comunidad.
-- Fechas de metadatos: creado y actualizado el 11 de septiembre de 2026, según la información de HuggingFace.
+- Fechas de metadatos: creado y actualizado el 11 de septiembre de 2026, según la información de Hugging Face.
 - Compatibilidad: al ser un ajuste de pi05, requiere LeRobot 0.6.0 o superior; versiones anteriores pueden no cargar las claves de observación correctamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_15k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_15k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live
 - Visualizador del dataset (Space de LeRobot): https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live
@@ -122,4 +122,4 @@ No se dispone de datos de contexto, benchmarks ni licencia de las alternativas e
 - Guía de aprendizaje por imitación (grabación de datos y entrenamiento): https://huggingface.co/docs/lerobot/en/il_robots
 - Chuleta de comandos CLI de LeRobot: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de Hugging Face.

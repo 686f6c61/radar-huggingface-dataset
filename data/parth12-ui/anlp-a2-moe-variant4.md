@@ -74,10 +74,10 @@ La busqueda web identifica varias variantes del mismo ejercicio academico. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| parth12-ui/anlp-a2-moe-variant4 | 33.378.816 (24.990.208 activos) | 256 | no disponible | Publico en HuggingFace, 0 descargas |
-| abhirajratna/anlp-a2-moe-v3 | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| Arihant25/anlp-a2-moe | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| raunakseksaria/anlp-a2-moe | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| parth12-ui/anlp-a2-moe-variant4 | 33.378.816 (24.990.208 activos) | 256 | no disponible | Publico en Hugging Face, 0 descargas |
+| abhirajratna/anlp-a2-moe-v3 | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| Arihant25/anlp-a2-moe | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| raunakseksaria/anlp-a2-moe | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 Todas ellas pertenecen a la misma familia de ejercicios (ANLP, variantes que solo difieren en la capa feed-forward, con traduccion vi→en y ja→en). El codigo de referencia del curso esta en el repositorio cmu-l3/anlp-spring2026-code (CMU 11-711 Advanced NLP, primavera de 2026). No se dispone de datos de rendimiento de las variantes comparadas, por lo que no es posible establecer una jerarquia de calidad entre ellas.
 
@@ -96,7 +96,7 @@ Todas ellas pertenecen a la misma familia de ejercicios (ANLP, variantes que sol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-moe-variant4
+- Modelo en Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-moe-variant4
 - Dataset de entrenamiento: belumind/en-vi-ja-curated-500k-triplets (referenciado en la model card)
 - Variante v3 de la misma serie: https://huggingface.co/abhirajratna/anlp-a2-moe-v3
 - Otra variante de la serie: https://huggingface.co/Arihant25/anlp-a2-moe

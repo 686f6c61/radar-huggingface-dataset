@@ -6,7 +6,7 @@ Mesh LLM distribuye este paquete de capas GGUF del modelo Muse-Glimmer-30B, un m
 
 El objetivo es ejecutar un modelo de 30B en hardware limitado repartiendo las capas entre varias máquinas. Cada nodo aporta memoria y cómputo, y el servicio expone una API compatible con OpenAI en el puerto 3131. Esto permite inferencia privada, evita la dependencia de la nube y facilita la integración con aplicaciones que ya usan la interfaz de chat de OpenAI.
 
-Los datos públicos no incluyen arquitectura, contexto ni detalles de entrenamiento. La etiqueta image-text-to-text de HuggingFace sugiere que el modelo base puede procesar imágenes y texto, pero no hay documentación adicional. El repositorio incluye un manifiesto con sumas de verificación para auditar el paquete.
+Los datos públicos no incluyen arquitectura, contexto ni detalles de entrenamiento. La etiqueta image-text-to-text de Hugging Face sugiere que el modelo base puede procesar imágenes y texto, pero no hay documentación adicional. El repositorio incluye un manifiesto con sumas de verificación para auditar el paquete.
 
 ## Especificaciones tecnicas
 

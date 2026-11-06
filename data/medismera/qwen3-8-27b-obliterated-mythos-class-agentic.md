@@ -87,6 +87,6 @@ No se han publicado benchmarks que permitan comparar el rendimiento con alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
+- Modelo en Hugging Face: https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
 - Modelo base upstream: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

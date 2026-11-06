@@ -21,7 +21,7 @@ La relevancia actual del checkpoint es doble: por un lado, sirve como referencia
 | Licencia | `swift-open-license-1.0` (uso comercial limitado a empresas con ingresos anuales inferiores a 1 millón de USD); el componente Qwen3.8-27B es Apache-2.0 |
 | Formato de pesos | safetensors en formato `compressed-tensors` (`mxfp4-pack-quantized`); conversión a contenedor `.rad` mediante `rad-convert` |
 | Cuantizador | `llm-compressor` con `GPTQModifier`, pipeline secuencial, act-order estático, 89 muestras de calibración, longitud máxima de secuencia 2048 |
-| Tamano en disco | ~19 GB según el autor; los metadatos del repositorio en HuggingFace indican 2,6 GB |
+| Tamano en disco | ~19 GB según el autor; los metadatos del repositorio en Hugging Face indican 2,6 GB |
 | Parametros de muestreo por defecto | temperature 1.0, top-p 0.95, top-k 20 (`generation_config.json`) |
 
 ## Arquitectura y entrenamiento
@@ -92,12 +92,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Ausencia de métricas de calidad: el autor no publica ninguna cifra de calidad para este checkpoint concreto, por lo que la degradación introducida por la cuantización MXFP4 no está cuantificada.
 - Restricción de licencia comercial: la Swift Open License v1.0 limita el uso comercial a organizaciones con ingresos anuales inferiores a 1 millón de USD. El componente Qwen3.8-27B se rige por Apache-2.0. La redistribución debe mantener sin cambios los ficheros `LICENSE`, `LICENSE-APACHE-2.0` y `NOTICE`.
 - Requisito de hardware específico: el checkpoint necesita un motor con ruta de pesos MXFP4; su uso fuera de AMD RDNA4 no está documentado ni validado.
-- Discrepancia de tamaño: el autor indica ~19 GB en disco mientras que los metadatos del repositorio en HuggingFace registran 2,6 GB. Conviene verificar los ficheros reales antes de planificar el despliegue.
+- Discrepancia de tamaño: el autor indica ~19 GB en disco mientras que los metadatos del repositorio en Hugging Face registran 2,6 GB. Conviene verificar los ficheros reales antes de planificar el despliegue.
 - Madurez: el repositorio tiene 0 descargas y 0 likes, y no se han publicado evaluaciones independientes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/slybase/Swift-1.5-Qwen3.8-27B-MXFP4-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/slybase/Swift-1.5-Qwen3.8-27B-MXFP4-GPTQ
 - Modelo base (abliterated, BF16): https://huggingface.co/akumaburn/Swift-1.5-Qwen3.8-27b-heretic
 - Modelo Swift previo: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Licencia Swift Open License v1.0: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE

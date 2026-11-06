@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sovereign-anthology-gemma-2-2b | 3,2B | 8192 (heredado, sin confirmar) | gemma | HuggingFace (0 descargas) |
-| google/gemma-2-2b-it (base) | 2,6B aprox. | 8192 | gemma | HuggingFace |
-| Gemma 2 2B (modelo original) | 2,6B aprox. | 8192 | gemma | HuggingFace |
-| Modelos 1-3B de la misma categoria (Qwen2.5, Llama 3.2) | 1-3B | 32k-128k (segun version) | Apache 2.0 / Llama | HuggingFace |
+| sovereign-anthology-gemma-2-2b | 3,2B | 8192 (heredado, sin confirmar) | gemma | Hugging Face (0 descargas) |
+| google/gemma-2-2b-it (base) | 2,6B aprox. | 8192 | gemma | Hugging Face |
+| Gemma 2 2B (modelo original) | 2,6B aprox. | 8192 | gemma | Hugging Face |
+| Modelos 1-3B de la misma categoria (Qwen2.5, Llama 3.2) | 1-3B | 32k-128k (segun version) | Apache 2.0 / Llama | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas. La comparacion se limita a parametros, contexto y licencia; los datos de los modelos alternativos corresponden a especificaciones publicas generales y no a un benchmark ejecutado sobre este ajuste.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas. La c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KolmogorovAcc/sovereign-anthology-gemma-2-2b
+- Modelo en Hugging Face: https://huggingface.co/KolmogorovAcc/sovereign-anthology-gemma-2-2b
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms
 - Ollama: https://ollama.com

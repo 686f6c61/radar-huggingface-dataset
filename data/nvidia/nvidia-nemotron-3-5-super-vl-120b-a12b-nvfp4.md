@@ -76,8 +76,8 @@ La model card menciona una grafica de precision adicional (`accuracy_plot.png`),
 
 | Modelo | Parametros | Contexto | GPQA-Diamond | HLE (texto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nemotron 3.5 Super VL NVFP4 | 120B (12B activos) | 1M | 89,90 | 31,44 | OpenMDW-1.1 | HuggingFace |
-| Nemotron 3.5 Super VL BF16 | 120B (12B activos) | 1M | 89,52 | 31,79 | OpenMDW-1.1 | HuggingFace |
+| Nemotron 3.5 Super VL NVFP4 | 120B (12B activos) | 1M | 89,90 | 31,44 | OpenMDW-1.1 | Hugging Face |
+| Nemotron 3.5 Super VL BF16 | 120B (12B activos) | 1M | 89,52 | 31,79 | OpenMDW-1.1 | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar contra la variante BF16 del mismo modelo. No se dispone de datos de modelos competidores de tamano o categoria equivalentes.
@@ -97,7 +97,7 @@ La informacion proporcionada solo permite comparar contra la variante BF16 del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
 - Version BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Modelo borrador para decodificacion especulativa (LiLiCorr): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

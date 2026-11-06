@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MomoSoft/chilloutmix-sd15-q8-gguf es un repositorio de pesos en formato GGUF publicado por el usuario MomoSoft en HuggingFace. Por el identificador del repositorio, el nombre del autor y la etiqueta `gguf`, se trata de una version cuantizada a 8 bits de un checkpoint de la familia ChilloutMix, un ajuste fino de Stable Diffusion 1.5. El dato de parametros totales reportado (1.066.235.307) es coherente con la suma de los componentes habituales de un pipeline SD 1.5 (UNet, text encoder CLIP y VAE), aunque el repositorio no documenta la composicion exacta ni el proceso de cuantizacion.
+MomoSoft/chilloutmix-sd15-q8-gguf es un repositorio de pesos en formato GGUF publicado por el usuario MomoSoft en Hugging Face. Por el identificador del repositorio, el nombre del autor y la etiqueta `gguf`, se trata de una version cuantizada a 8 bits de un checkpoint de la familia ChilloutMix, un ajuste fino de Stable Diffusion 1.5. El dato de parametros totales reportado (1.066.235.307) es coherente con la suma de los componentes habituales de un pipeline SD 1.5 (UNet, text encoder CLIP y VAE), aunque el repositorio no documenta la composicion exacta ni el proceso de cuantizacion.
 
 El problema que resuelve es el de permitir la ejecucion local de un modelo de generacion de imagenes de aproximadamente mil millones de parametros en hardware con VRAM limitada o incluso en CPU, algo que los pesos originales en precision completa dificultan. El repositorio ocupa 1,8 GB y tiene un volumen de adopcion muy bajo (13 descargas y 0 likes en el momento de la consulta), con fechas de creacion y actualizacion del 17 de septiembre de 2026.
 
@@ -91,7 +91,7 @@ Los datos de los modelos comparados no proceden de la informacion proporcionada 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MomoSoft/chilloutmix-sd15-q8-gguf
+- Repositorio en Hugging Face: https://huggingface.co/MomoSoft/chilloutmix-sd15-q8-gguf
 - Paper o blog tecnico del modelo: no disponible
 - Repositorio de codigo asociado: no disponible
 - Demos o espacios interactivos: no disponible

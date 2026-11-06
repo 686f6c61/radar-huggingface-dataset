@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-LTV-Gen2 es un repositorio de pesos publicado en HuggingFace por el usuario Lucien-shark el 3 de octubre de 2026 y actualizado el mismo dia. La model card esta practicamente vacia: unicamente contiene el campo `license: unknown`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 54,2 GB, lo que indica que se trata de un modelo de gran tamano, pero no permite determinar el numero de parametros sin conocer el formato y la precision de los pesos.
+Linny-LTV-Gen2 es un repositorio de pesos publicado en Hugging Face por el usuario Lucien-shark el 3 de octubre de 2026 y actualizado el mismo dia. La model card esta practicamente vacia: unicamente contiene el campo `license: unknown`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 54,2 GB, lo que indica que se trata de un modelo de gran tamano, pero no permite determinar el numero de parametros sin conocer el formato y la precision de los pesos.
 
 No hay informacion publica sobre la arquitectura, el contexto maximo, los idiomas soportados ni las capacidades del modelo. El repositorio acumula 0 descargas y 0 likes, y no cuenta con pipeline declarado (`pipeline: no disponible`). La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los resultados obtenidos corresponden a entradas enciclopedicas sobre el nombre propio "Lucien" y a listados de marcas comerciales, sin relacion con el artefacto.
 
@@ -90,6 +90,6 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, el cont
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucien-shark/Linny-LTV-Gen2
+- Hugging Face: https://huggingface.co/Lucien-shark/Linny-LTV-Gen2
 - Busqueda web: sin resultados relevantes. Las consultas realizadas han devuelto unicamente entradas sobre el nombre propio "Lucien" (Wikipedia en frances, Journal des Femmes) y listados comerciales de marcas, sin ninguna relacion con el modelo.
 - Paper, repositorio de codigo, blog o demo: no disponible.

@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre más de 98.000 horas de datos públicos diver
 - Reconocimiento de habla robusto: la evaluación incluye conjuntos dentro y fuera de distribución (AMI, Gigaspeech, LibriSpeech, Tedlium, Earnings22, SPGISpeech) con resultados homogéneos.
 - Decodificación especulativa: actúa como modelo borrador de Whisper-Large-v3, con salidas idénticas a las del modelo grande y una aceleración aproximada de 2x.
 - Integración con múltiples runtimes: transformers, whisper.cpp, faster-whisper, OpenAI Whisper, Transformers.js y Candle.
-- Compatibilidad con el pipeline `automatic-speech-recognition` de HuggingFace y con endpoints compatibles (`endpoints_compatible`).
+- Compatibilidad con el pipeline `automatic-speech-recognition` de Hugging Face y con endpoints compatibles (`endpoints_compatible`).
 - No dispone de capacidades multimodales más allá del audio: no hay visión, ni generación de texto libre, ni tool calling, ni modo de razonamiento explícito (thinking), ni soporte de agentes.
 - Cobertura monolingüe: la model card declara únicamente inglés (`en`), sin soporte multilingüe ni traducción.
 
@@ -109,7 +109,7 @@ Frente a Whisper-Large-v3-turbo, Distil-Large-v3.5 ofrece mejor WER en forma cor
 
 ## Enlaces
 
-- Modelo en HuggingFace (subida analizada): https://huggingface.co/algorithco/distil-large-v3.5
+- Modelo en Hugging Face (subida analizada): https://huggingface.co/algorithco/distil-large-v3.5
 - Repositorio canónico del modelo: https://huggingface.co/distil-whisper/distil-large-v3.5
 - Modelo predecesor: https://huggingface.co/distil-whisper/distil-large-v3
 - Profesor: https://huggingface.co/openai/whisper-large-v3

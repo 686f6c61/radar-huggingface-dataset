@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepPlant-OS-GEP es un modelo de aprendizaje profundo orientado a genomica vegetal y genomica regulatoria, publicado en HuggingFace por el usuario Addaoud bajo licencia MIT. Con 238.530.453 parametros (aproximadamente 238,5 millones), se enmarca en la categoria de modelos pequenos y especializados, muy alejados de los LLM generativos de proposito general: su pipeline declarado es "other" y sus etiquetas apuntan a bioinformatica, genomica de plantas y genomica regulatoria. El nombre sugiere un uso vinculado a la prediccion de elementos regulatorios o expresion genica (GEP podria corresponder a "gene expression prediction"), aunque la model card no lo confirma explicitamente.
+DeepPlant-OS-GEP es un modelo de aprendizaje profundo orientado a genomica vegetal y genomica regulatoria, publicado en Hugging Face por el usuario Addaoud bajo licencia MIT. Con 238.530.453 parametros (aproximadamente 238,5 millones), se enmarca en la categoria de modelos pequenos y especializados, muy alejados de los LLM generativos de proposito general: su pipeline declarado es "other" y sus etiquetas apuntan a bioinformatica, genomica de plantas y genomica regulatoria. El nombre sugiere un uso vinculado a la prediccion de elementos regulatorios o expresion genica (GEP podria corresponder a "gene expression prediction"), aunque la model card no lo confirma explicitamente.
 
 El repositorio se creo y actualizo el 31 de octubre de 2026, ocupa 1,0 GB y acumula 20 descargas y 0 likes en el momento de la consulta. El modelo se distribuye en formato safetensors y se integra mediante `PyTorchModelHubMixin`, lo que permite cargarlo con la API de `huggingface_hub` en lugar de con `transformers`. No se declaran idiomas soportados, lo cual es coherente con un modelo de secuencias genomicas y no de texto natural.
 
-La relevancia de esta ficha es limitada pero real: se trata de un ejemplo de modelo cientifico pequeno, empaquetado con el estandar de HuggingFace, que puede ejecutarse en hardware modesto y sirve como referencia para pipelines de bioinformatica. No obstante, la documentacion publicada es practicamente inexistente (la model card es la plantilla autogenerada por el mixin), por lo que la mayor parte de las especificaciones tecnicas no estan disponibles y deben tratarse con cautela antes de cualquier uso en produccion.
+La relevancia de esta ficha es limitada pero real: se trata de un ejemplo de modelo cientifico pequeno, empaquetado con el estandar de Hugging Face, que puede ejecutarse en hardware modesto y sirve como referencia para pipelines de bioinformatica. No obstante, la documentacion publicada es practicamente inexistente (la model card es la plantilla autogenerada por el mixin), por lo que la mayor parte de las especificaciones tecnicas no estan disponibles y deben tratarse con cautela antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: no se indica el numero de to
 ## Capacidades
 
 - Procesamiento de datos genomicos: el dominio declarado (genomica vegetal y regulatoria) sugiere entrada de secuencias de ADN y salida de predicciones asociadas, aunque el tipo exacto de tarea no esta documentado.
-- Integracion con el ecosistema HuggingFace: cargable mediante `PyTorchModelHubMixin` desde `huggingface_hub`, lo que facilita su uso en scripts de PyTorch.
+- Integracion con el ecosistema Hugging Face: cargable mediante `PyTorchModelHubMixin` desde `huggingface_hub`, lo que facilita su uso en scripts de PyTorch.
 - Ejecucion en CPU y GPU: con 238,5 millones de parametros, el modelo es lo bastante pequeno para inferencia en hardware de consumo.
 - Generacion de texto: no disponible; no hay evidencia de que sea un modelo de lenguaje.
 - Tool calling / function calling: no disponible.
@@ -66,10 +66,10 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepPlant-OS-GEP | 238,5 M | no disponible | MIT | HuggingFace (20 descargas) |
-| Nucleotide Transformer (InstaDeep) | 500 M - 2,5 B (segun variante) | 1.000 - 12.000 pb | licencia abierta con condiciones | HuggingFace |
-| DNABERT-2 | ~117 M | 512 pb | MIT | HuggingFace y GitHub |
-| HyenaDNA | 1,6 M - 47 M (segun variante) | hasta 1 M pb | Apache 2.0 | HuggingFace |
+| DeepPlant-OS-GEP | 238,5 M | no disponible | MIT | Hugging Face (20 descargas) |
+| Nucleotide Transformer (InstaDeep) | 500 M - 2,5 B (segun variante) | 1.000 - 12.000 pb | licencia abierta con condiciones | Hugging Face |
+| DNABERT-2 | ~117 M | 512 pb | MIT | Hugging Face y GitHub |
+| HyenaDNA | 1,6 M - 47 M (segun variante) | hasta 1 M pb | Apache 2.0 | Hugging Face |
 
 La comparacion debe tomarse como orientativa: los modelos citados documentan arquitectura, datos de entrenamiento y benchmarks, mientras que DeepPlant-OS-GEP no publica ninguno de esos elementos.
 
@@ -86,7 +86,7 @@ La comparacion debe tomarse como orientativa: los modelos citados documentan arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Addaoud/DeepPlant-OS-GEP
+- Modelo en Hugging Face: https://huggingface.co/Addaoud/DeepPlant-OS-GEP
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo: no disponible (la model card enlaza a una URL de marcador de posicion)
 - Paper: no disponible

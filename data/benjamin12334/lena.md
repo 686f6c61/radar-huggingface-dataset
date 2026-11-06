@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lena es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario benjamin12334 bajo el identificador `benjamin12334/lena`. Se trata de un LoRA de difusion creado sobre el modelo base `krea/Krea-2-Raw`, distribuido en formato compatible con la libreria diffusers y con la etiqueta de plantilla `template:diffusion-lora`. Su funcion es inyectar un concepto o sujeto concreto, activado mediante la palabra disparadora `lena`, en el pipeline de generacion del modelo base sin necesidad de reentrenarlo.
+Lena es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario benjamin12334 bajo el identificador `benjamin12334/lena`. Se trata de un LoRA de difusion creado sobre el modelo base `krea/Krea-2-Raw`, distribuido en formato compatible con la libreria diffusers y con la etiqueta de plantilla `template:diffusion-lora`. Su funcion es inyectar un concepto o sujeto concreto, activado mediante la palabra disparadora `lena`, en el pipeline de generacion del modelo base sin necesidad de reentrenarlo.
 
 El repositorio ocupa aproximadamente 0,5 GB, lo que es coherente con un adaptador de bajo rango mas sus ficheros auxiliares, no con un modelo completo. En el momento de la consulta acumula 0 descargas y 0 likes, y la model card no incluye informacion sobre el dataset de entrenamiento, el rango del adaptador, el numero de pasos ni evaluaciones de ningun tipo. La fecha declarada de creacion y actualizacion (21 de septiembre de 2026) resulta anomala y sugiere un posible error en los metadatos del repositorio.
 
@@ -71,8 +71,8 @@ No se dispone de informacion sobre otros adaptadores LoRA entrenados sobre `krea
 
 | Elemento | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| benjamin12334/lena | no disponible | no aplica | no evaluado | GPL | publico en HuggingFace, 0 descargas |
-| krea/Krea-2-Raw (modelo base) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | publico en HuggingFace |
+| benjamin12334/lena | no disponible | no aplica | no evaluado | GPL | publico en Hugging Face, 0 descargas |
+| krea/Krea-2-Raw (modelo base) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | publico en Hugging Face |
 | Otros LoRA del mismo modelo base | no disponible | no aplica | no disponible | no disponible | no identificados |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de informacion sobre otros adaptadores LoRA entrenados sobre `krea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benjamin12334/lena
+- Modelo en Hugging Face: https://huggingface.co/benjamin12334/lena
 - Ficheros del repositorio: https://huggingface.co/benjamin12334/lena/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Libreria diffusers: https://github.com/huggingface/diffusers

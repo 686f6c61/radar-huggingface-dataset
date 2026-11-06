@@ -75,7 +75,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 | Elemento comparado | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mbertrand7905/survey-few-shot-multimodal` | 49.600 (metadatos) | no disponible | sin benchmarks | MIT | público en HuggingFace, 0 descargas |
+| `mbertrand7905/survey-few-shot-multimodal` | 49.600 (metadatos) | no disponible | sin benchmarks | MIT | público en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mbertrand7905/survey-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/mbertrand7905/survey-few-shot-multimodal
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web no devolvió enlaces relevantes para este repositorio (los resultados correspondían a aplicaciones de mensajería sin relación con el tema).

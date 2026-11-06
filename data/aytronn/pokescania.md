@@ -79,6 +79,6 @@ No se dispone de informacion sobre modelos comparables en el repositorio ni en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aytronn/pokescania
+- Repositorio Hugging Face: https://huggingface.co/aytronn/pokescania
 - Sitio web de PokeScania: https://pokescania.com/en
 - No se han encontrado papers, blogs o demos adicionales en la busqueda web.

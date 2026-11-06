@@ -71,9 +71,9 @@ No hay datos de rendimiento en otros dispositivos ni de latencia en producción.
 
 | Modelo | Parámetros | Formato | Precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microsoft/table-transformer-detection | 28,8 M | PyTorch | Referencia (entrenado en PubTables-1M) | MIT | HuggingFace |
-| microsoft/table-transformer-structure-recognition | 28,8 M | PyTorch | Referencia (entrenado en PubTables-1M) | MIT | HuggingFace |
-| mlboydaisuke/TableTransformer-ExecuTorch | 28,8 M | ExecuTorch `.pte` | IoU 1.0000 en verificación (misma imagen) | MIT | HuggingFace |
+| microsoft/table-transformer-detection | 28,8 M | PyTorch | Referencia (entrenado en PubTables-1M) | MIT | Hugging Face |
+| microsoft/table-transformer-structure-recognition | 28,8 M | PyTorch | Referencia (entrenado en PubTables-1M) | MIT | Hugging Face |
+| mlboydaisuke/TableTransformer-ExecuTorch | 28,8 M | ExecuTorch `.pte` | IoU 1.0000 en verificación (misma imagen) | MIT | Hugging Face |
 
 La principal diferencia es el formato: el modelo original se ejecuta con PyTorch eager, mientras que este modelo está optimizado para ejecución en dispositivo con XNNPACK, ofreciendo una velocidad 1,5 veces mayor en la CPU de prueba. No se dispone de comparativas con otros detectores de tablas (por ejemplo, PaddleOCR Table-Transformer) en términos de precisión.
 
@@ -89,7 +89,7 @@ La principal diferencia es el formato: el modelo original se ejecuta con PyTorch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/TableTransformer-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/TableTransformer-ExecuTorch
 - Colección ExecuTorch Model Zoo: https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo
 - Repositorio oficial de Microsoft Table Transformer (TATR): https://github.com/microsoft/table-transformer
 - Documentación del dataset PubTables-1M (relacionada con el entrenamiento original): https://github.com/microsoft/table-transformer (enlace al repositorio, no hay página específica)

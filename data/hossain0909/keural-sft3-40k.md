@@ -86,7 +86,7 @@ Keural se sitúa en la franja de 15B totales con coste de inferencia cercano a u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hossain0909/keural-sft3-40k
+- Hugging Face: https://huggingface.co/hossain0909/keural-sft3-40k
 - Modelo base (preentrenamiento): https://huggingface.co/mkd-hossain/keural-pretrained
 - Checkpoints relacionados mencionados en la model card: mkd-hossain/keural-sft-18k, mkd-hossain/keural-dpo-final, mkd-hossain/keural-sft2 (URLs exactas no disponibles en la información proporcionada)
 - Paper, blog o demos: no disponibles

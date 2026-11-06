@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Merzal Tamil Tokenizer 32K es un tokenizador de primera generación con un vocabulario de 32.000 piezas, desarrollado por Vel04 y publicado bajo licencia Apache-2.0. No es un modelo de lenguaje, sino el artefacto de tokenización empleado para empaquetar el corpus de preentrenamiento en tamil de un modelo de 350M de parámetros. Se conserva en HuggingFace exclusivamente por reproducibilidad de un experimento de 2026, y el propio autor lo marca como artefacto de investigación obsoleto, no apto para producción.
+Merzal Tamil Tokenizer 32K es un tokenizador de primera generación con un vocabulario de 32.000 piezas, desarrollado por Vel04 y publicado bajo licencia Apache-2.0. No es un modelo de lenguaje, sino el artefacto de tokenización empleado para empaquetar el corpus de preentrenamiento en tamil de un modelo de 350M de parámetros. Se conserva en Hugging Face exclusivamente por reproducibilidad de un experimento de 2026, y el propio autor lo marca como artefacto de investigación obsoleto, no apto para producción.
 
 Técnicamente emplea un modelo Unigram con byte fallback y normalización NFC, con un `model_max_length` declarado de 32.768 tokens. Su sucesor, el Merzal Tamil Tokenizer de 64K, es más eficiente sobre texto (1,693 tokens por palabra frente a 1,853) y corrige el defecto de espacios iniciales que arrastra esta versión. Aun así, este 32K sigue siendo sustancialmente mejor que tokenizadores generalistas para tamil: 1,853 frente a 2,357 tokens por palabra de Gemma-4, y corta 240 veces menos letras tamil (0,05% frente a 12,0%).
 
@@ -19,7 +19,7 @@ Su relevancia actual es limitada y acotada: sirve para reproducir exactamente el
 | Tipos de cuantizacion | no aplica (artefacto de tokenización) |
 | Idiomas soportados | tamil (ta), inglés (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `tokenizer.json` (formato HuggingFace Tokenizers), más `tokenizer_config.json`, `special_tokens_map.json`, `metadata.json` y `SHA256SUMS` |
+| Formato de pesos | `tokenizer.json` (formato Hugging Face Tokenizers), más `tokenizer_config.json`, `special_tokens_map.json`, `metadata.json` y `SHA256SUMS` |
 
 ## Arquitectura y entrenamiento
 
@@ -89,6 +89,6 @@ La comparación se limita a eficiencia de tokenización sobre tamil; no hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vel04/merzal-tamil-tokenizer-32k
+- Hugging Face: https://huggingface.co/Vel04/merzal-tamil-tokenizer-32k
 - Repositorio GitHub (protocolo y validez): https://github.com/mvel95942-source/merzal-tamil-tokenizer/blob/main/METHODS.md
 - Repositorio GitHub (raíz): https://github.com/mvel95942-source/merzal-tamil-tokenizer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen8 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo de generacion de texto en ingles, derivado de la version de Unsloth del citado Qwen2.5, y entrenado con la libreria Unsloth junto con TRL de HuggingFace, segun indica la propia model card. El repositorio tiene un tamano de 0,1 GB, lo que sugiere que podria tratarse de un adaptador (LoRA) o de pesos parciales mas que de los pesos completos en fp16 de un modelo de 7B, aunque este extremo no se confirma en la informacion disponible.
+HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen8 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo de generacion de texto en ingles, derivado de la version de Unsloth del citado Qwen2.5, y entrenado con la libreria Unsloth junto con TRL de Hugging Face, segun indica la propia model card. El repositorio tiene un tamano de 0,1 GB, lo que sugiere que podria tratarse de un adaptador (LoRA) o de pesos parciales mas que de los pesos completos en fp16 de un modelo de 7B, aunque este extremo no se confirma en la informacion disponible.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con aproximadamente 7.600 millones de parametros y una ventana de contexto nativa de hasta 128.000 tokens en el modelo base. El nombre del repositorio incluye los terminos "eagle" y "numbers", lo que podria apuntar a un entrenamiento orientado a decodificacion especulativa (EAGLE) o a tareas con numeros, pero no hay documentacion que lo confirme.
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, la unica informacion disponible es que se realizo con
 - Analisis de decodificacion especulativa: dado el termino "eagle" en el nombre del repositorio, podria ser relevante para quienes investigan tecnicas de aceleracion tipo EAGLE, si bien esto no esta confirmado.
 - Tareas de generacion de numeros o secuencias numericas: por el sufijo "numbers" del nombre, aunque no hay evidencia de que el modelo haya sido evaluado en estas tareas.
 - Base para un segundo fine-tune: al ser un modelo pequeno (7B) y con licencia Apache 2.0, puede emplearse como punto de partida para ajustes posteriores en ingles.
-- Evaluacion de riesgos en modelos poco documentados: util como caso de estudio sobre la importancia de incluir model cards completas y datos de evaluacion en publicaciones de HuggingFace.
+- Evaluacion de riesgos en modelos poco documentados: util como caso de estudio sobre la importancia de incluir model cards completas y datos de evaluacion en publicaciones de Hugging Face.
 - Despliegue local en estaciones de trabajo con GPU de consumo: al tratarse de un modelo de 7B, es viable probarlo en una unica GPU con cuantizacion, siempre que se generen los pesos correspondientes.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen8 | no disponible (base ~7.600 M) | no disponible (base 128.000) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct | ~7.600 M | 128.000 tokens | apache-2.0 | HuggingFace, muy extendido |
-| Llama-3.1-8B-Instruct | ~8.000 M | 128.000 tokens | licencia comunitaria de Meta | HuggingFace, muy extendido |
-| Mistral-7B-Instruct-v0.3 | ~7.200 M | 32.000 tokens | apache-2.0 | HuggingFace, muy extendido |
+| HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen8 | no disponible (base ~7.600 M) | no disponible (base 128.000) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct | ~7.600 M | 128.000 tokens | apache-2.0 | Hugging Face, muy extendido |
+| Llama-3.1-8B-Instruct | ~8.000 M | 128.000 tokens | licencia comunitaria de Meta | Hugging Face, muy extendido |
+| Mistral-7B-Instruct-v0.3 | ~7.200 M | 32.000 tokens | apache-2.0 | Hugging Face, muy extendido |
 
 Los datos de los modelos comparativos corresponden a sus especificaciones publicas conocidas; no se dispone de resultados comparativos de rendimiento para el modelo objeto de esta ficha.
 
@@ -84,7 +84,7 @@ Los datos de los modelos comparativos corresponden a sus especificaciones public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen8
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen8
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

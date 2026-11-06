@@ -34,7 +34,7 @@ No se especifican detalles sobre el proceso de entrenamiento completo (número d
 - Mejora la comprensión lectora en tareas de calidad (QuALITY) al inyectar conocimiento específico del dominio a través del mecanismo de atención.
 - Almacena patrones de atención de un modelo profesor en un caché de 512 slots, permitiendo una adaptación eficiente sin reentrenar el modelo base.
 - Compatible con el ecosistema Transformers (librería `transformers`).
-- Soporta integración con endpoints compatibles (según tags de HuggingFace).
+- Soporta integración con endpoints compatibles (según tags de Hugging Face).
 - No es un modelo autónomo: requiere el modelo base Qwen3-4B-Instruct-2507 para funcionar.
 - Capacidad de ajuste fino de la atención mediante la configuración de slots (n_slots=512).
 - Diseñado para experimentación en investigación sobre cartuchos de atención y adaptación de modelos.
@@ -85,8 +85,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/qtris123/am-quality-p01-qwen3-4b-512)
-- [Qwen3-4B en HuggingFace](https://huggingface.co/Qwen/Qwen3-4B)
+- [Modelo en Hugging Face](https://huggingface.co/qtris123/am-quality-p01-qwen3-4b-512)
+- [Qwen3-4B en Hugging Face](https://huggingface.co/Qwen/Qwen3-4B)
 - [Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [Repositorio gated-continual-cartridges](https://github.com/faridlazuarda/gated-continual-cartridges)

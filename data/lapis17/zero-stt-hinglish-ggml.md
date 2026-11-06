@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lapis17/zero-stt-hinglish-ggml | no disponible | no disponible | no disponible | other (origen: openrail) | HuggingFace, formato GGML |
-| shunyalabs/zero-stt-hinglish | no disponible | no disponible | hindi, ingles, Hinglish | openrail | HuggingFace, safetensors |
-| openai/whisper-large-v3 | 1550 M aprox. | ventana de 30 s por segmento | multilingue (amplia cobertura) | Apache-2.0 | HuggingFace, safetensors, GGUF y GGML de terceros |
-| ai4bharat/indicwhisper | no disponible | no disponible | lenguas indicas | no disponible en la informacion recuperada | HuggingFace |
+| Lapis17/zero-stt-hinglish-ggml | no disponible | no disponible | no disponible | other (origen: openrail) | Hugging Face, formato GGML |
+| shunyalabs/zero-stt-hinglish | no disponible | no disponible | hindi, ingles, Hinglish | openrail | Hugging Face, safetensors |
+| openai/whisper-large-v3 | 1550 M aprox. | ventana de 30 s por segmento | multilingue (amplia cobertura) | Apache-2.0 | Hugging Face, safetensors, GGUF y GGML de terceros |
+| ai4bharat/indicwhisper | no disponible | no disponible | lenguas indicas | no disponible en la informacion recuperada | Hugging Face |
 
 La comparacion cuantitativa de calidad (WER/CER) no puede realizarse porque no se han publicado metricas para el modelo de Lapis17 ni para el modelo de origen en la informacion disponible. La diferencia practica mas relevante frente a `openai/whisper-large-v3` es la especializacion en code-switching hindi-ingles y el formato de publicacion (GGML legacy frente a safetensors con amplio soporte de herramientas).
 

@@ -84,6 +84,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- [HuggingFace: Ganesh-Nadkarni/nl2sql-research](https://huggingface.co/Ganesh-Nadkarni/nl2sql-research)
+- [Hugging Face: Ganesh-Nadkarni/nl2sql-research](https://huggingface.co/Ganesh-Nadkarni/nl2sql-research)
 - [Paper en Semantic Scholar: Comparative Study of AI Models for Natural Language to SQL Query](https://www.semanticscholar.org/paper/Comparative-Study-of-AI-Models-for-Natural-Language-Nadkarni-Chavan/91d062ab99a3bdd607e8cf782e6cbc198d1a2fec)
 - [Repositorio de GitHub: GANESH-NADKARNI/NL_to_SQL_V2](https://github.com/GANESH-NADKARNI/NL_to_SQL_V2)

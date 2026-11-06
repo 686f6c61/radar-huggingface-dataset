@@ -6,7 +6,7 @@ DuoBench ACT (sim) es una política de control robótico basada en la arquitectu
 
 Con 51.689.104 parámetros y un tamaño de repositorio de 0,2 GB, es un modelo compacto orientado a inferencia de políticas visomotoras, no a generación de lenguaje. Su relevancia radica en que forma parte de un benchmark reproducible que busca estandarizar la evaluación de manipulación bimanual tanto en simulación como en el mundo real, y en que todo el pipeline (datos, código, configuración de entrenamiento y pesos) es abierto bajo licencia Apache 2.0.
 
-La ficha describe un modelo de robótica, por lo que varias de las categorías habituales (idiomas, contexto, cuantización, benchmarks de NLP) no aplican y se indican como no disponibles. La información procede exclusivamente de la model card y de los metadatos de HuggingFace.
+La ficha describe un modelo de robótica, por lo que varias de las categorías habituales (idiomas, contexto, cuantización, benchmarks de NLP) no aplican y se indican como no disponibles. La información procede exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye otros checkpoints de Duo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-hinge_chest
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-hinge_chest
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench (arXiv): https://arxiv.org/abs/2606.11901
 - Página del proyecto: https://duobench.github.io/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HW5A_Qwen3_1.7B_Base_LoRA es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante SFT (Supervised Fine-Tuning) sobre el modelo base Qwen/Qwen3-1.7B-Base. Lo publica el usuario lxo210001 en HuggingFace y se distribuye exclusivamente como pesos de adaptador en formato PEFT/safetensors, no como modelo completo. El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador de bajo rango y no con los pesos completos de un modelo de 1.700 millones de parámetros.
+HW5A_Qwen3_1.7B_Base_LoRA es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante SFT (Supervised Fine-Tuning) sobre el modelo base Qwen/Qwen3-1.7B-Base. Lo publica el usuario lxo210001 en Hugging Face y se distribuye exclusivamente como pesos de adaptador en formato PEFT/safetensors, no como modelo completo. El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador de bajo rango y no con los pesos completos de un modelo de 1.700 millones de parámetros.
 
-El modelo hereda la arquitectura transformer decoder-only de la familia Qwen3, con aproximadamente 1.700 millones de parámetros. No obstante, la model card pública es la plantilla por defecto de HuggingFace sin rellenar: no documenta datos de entrenamiento, hiperparámetros, composición del dataset, licencia ni idiomas. Por tanto, la mayor parte de las especificaciones técnicas del adaptador (rango LoRA, alpha, módulos objetivo, régimen de entrenamiento) no están disponibles.
+El modelo hereda la arquitectura transformer decoder-only de la familia Qwen3, con aproximadamente 1.700 millones de parámetros. No obstante, la model card pública es la plantilla por defecto de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparámetros, composición del dataset, licencia ni idiomas. Por tanto, la mayor parte de las especificaciones técnicas del adaptador (rango LoRA, alpha, módulos objetivo, régimen de entrenamiento) no están disponibles.
 
 Su relevancia es limitada y muy específica: se trata de un artefacto de fine-tuning de bajo perfil, con cero descargas y cero likes en el momento de la consulta, sin evaluación publicada. Resulta útil únicamente como ejemplo de pipeline PEFT+TRL sobre Qwen3-1.7B-Base o como punto de partida para experimentación, nunca como modelo listo para producción sin una evaluación previa propia.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos para este adaptador; la compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lxo210001/HW5A_Qwen3_1.7B_Base_LoRA
+- Repositorio Hugging Face: https://huggingface.co/lxo210001/HW5A_Qwen3_1.7B_Base_LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Paper de referencia sobre impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

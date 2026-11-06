@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shiki42/ctr-archive-e263-step20000` es un checkpoint de robótica publicado en HuggingFace, archivado por el usuario Shiki42 el 4 de octubre de 2026. Según la model card, corresponde a un entrenamiento secuencial de tipo ACT (Action Chunking with Transformers) sobre la tarea denominada "PutCab" en la plataforma PRO6000, y se conserva como copia archivística del paso 20.000 (step 20000) junto con su normalización. No se trata de una publicación de resultados de investigación: el propio autor indica que el archivo "no establece identidad con resultados de paper ni aprobación de auditoría", y que los defectos históricos y las restricciones de alcance del experimento siguen vigentes.
+`Shiki42/ctr-archive-e263-step20000` es un checkpoint de robótica publicado en Hugging Face, archivado por el usuario Shiki42 el 4 de octubre de 2026. Según la model card, corresponde a un entrenamiento secuencial de tipo ACT (Action Chunking with Transformers) sobre la tarea denominada "PutCab" en la plataforma PRO6000, y se conserva como copia archivística del paso 20.000 (step 20000) junto con su normalización. No se trata de una publicación de resultados de investigación: el propio autor indica que el archivo "no establece identidad con resultados de paper ni aprobación de auditoría", y que los defectos históricos y las restricciones de alcance del experimento siguen vigentes.
 
 El modelo tiene 51.685.006 parámetros (unos 51,7 millones), un tamaño que lo sitúa en la franja de las políticas de imitación ligeras, desplegables en hardware de borde. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors. La model card menciona ficheros auxiliares de procedencia (`archive-provenance.json`, `source-config.json`) y aclara que solo se incluyen los parámetros de inferencia y el estado real de normalización/procesador, sin optimizador ni estado del generador de números aleatorios.
 
@@ -65,7 +65,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El reposito
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Shiki42/ctr-archive-e263-step20000` | 51.685.006 | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| `Shiki42/ctr-archive-e263-step20000` | 51.685.006 | No disponible | No disponible | No disponible | Publico en Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -83,4 +83,4 @@ No se dispone de datos comparativos en la informacion proporcionada. El reposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/ctr-archive-e263-step20000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/ctr-archive-e263-step20000

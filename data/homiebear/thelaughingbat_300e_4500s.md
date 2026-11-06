@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Homiebear/TheLaughingBat_300e_4500s es un repositorio publicado en HuggingFace por el usuario Homiebear bajo licencia OpenRAIL. En el momento de redactar esta ficha no existe información pública sobre el modelo: la model card únicamente contiene la declaración de licencia, no se declara pipeline, idiomas, arquitectura ni número de parámetros, y el repositorio acumula cero descargas y cero likes.
+Homiebear/TheLaughingBat_300e_4500s es un repositorio publicado en Hugging Face por el usuario Homiebear bajo licencia OpenRAIL. En el momento de redactar esta ficha no existe información pública sobre el modelo: la model card únicamente contiene la declaración de licencia, no se declara pipeline, idiomas, arquitectura ni número de parámetros, y el repositorio acumula cero descargas y cero likes.
 
 El único dato objetivo disponible es el tamaño del repositorio, 0,1 GB, junto con la nomenclatura del identificador, que sigue el patrón habitual de los experimentos de ajuste fino (300e sugiere 300 épocas y 4500s sugiere 4500 pasos). Eso apunta, sin confirmación alguna por parte del autor, a un adaptador LoRA o a un modelo de pequeño tamaño entrenado sobre un corpus no documentado.
 
@@ -45,7 +45,7 @@ Según el tamaño del repositorio (en torno a 100 MB), si los pesos estuvieran e
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (no se declara ningún idioma).
 - Capacidades especiales (modo de razonamiento explícito, visión, audio): no disponible.
-- Modalidad declarada en HuggingFace (pipeline): no disponible.
+- Modalidad declarada en Hugging Face (pipeline): no disponible.
 
 ## Casos de uso
 
@@ -91,5 +91,5 @@ No disponible. La ausencia de datos sobre arquitectura, tamaño, contexto y lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/TheLaughingBat_300e_4500s
+- Hugging Face: https://huggingface.co/Homiebear/TheLaughingBat_300e_4500s
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

@@ -59,7 +59,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo base se indica como "other" en HuggingFace, lo que implica restricciones de uso no especificadas. Antes de usar el modelo en producción comercial, es imprescindible revisar los términos de la licencia original de MiniMax.
+- La licencia del modelo base se indica como "other" en Hugging Face, lo que implica restricciones de uso no especificadas. Antes de usar el modelo en producción comercial, es imprescindible revisar los términos de la licencia original de MiniMax.
 - No se han documentado sesgos específicos, pero al ser un modelo de vídeo entrenado con datos web, es probable que herede sesgos de género, raza y cultura presentes en los datos de entrenamiento.
 - Riesgo de alucinación visual: el modelo puede generar vídeos con inconsistencias físicas, objetos deformes o movimientos no realistas, especialmente en escenas complejas o con prompts ambiguos.
 - La cuantización y poda pueden degradar la calidad de salida, especialmente en formatos INT4 o mixtos. Se recomienda validar la calidad en el caso de uso concreto antes de desplegarlo.
@@ -68,8 +68,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot
-- Árbol de archivos en HuggingFace: https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot/tree/main
+- Repositorio Hugging Face: https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot
+- Árbol de archivos en Hugging Face: https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot/tree/main
 - Artículo de ComfyUI Wiki sobre cuantizaciones comunitarias: https://comfyui-wiki.com/en/news/2026-08-03-minimax-h3-community-quants
 - Página en ModelScope: https://www.modelscope.cn/models/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot
 - Mapa de hardware y recetas de MiniMax H3 (gist): https://gist.github.com/yume-arasaki/e24bf2614ee0419c86250cee6ad7ce01

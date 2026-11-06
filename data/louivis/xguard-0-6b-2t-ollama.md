@@ -71,7 +71,7 @@ No se dispone de información sobre otros modelos de moderación de contenido co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/louivis/xguard-0.6b-2t-ollama
+- Repositorio Hugging Face: https://huggingface.co/louivis/xguard-0.6b-2t-ollama
 - Repositorio GitHub (documentación y Modelfile): https://github.com/vislee/xguard-0.6b-2t-ollama
 - Adaptador LoRA: https://huggingface.co/louivis/qwen3guard-0.6b-2t-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3Guard-Gen-0.6B

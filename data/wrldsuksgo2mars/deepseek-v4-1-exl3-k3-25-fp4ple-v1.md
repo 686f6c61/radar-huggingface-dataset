@@ -84,7 +84,7 @@ No se dispone de informacion verificada sobre modelos comparables de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-FP4PLE-v1
+- Modelo en Hugging Face: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-FP4PLE-v1
 - Modelo base: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-v1
 - Revision concreta del modelo base citada en la tarjeta: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-v1/tree/cfd4ca1d1934a8e81dd2d7515598d4ce288e8b88
 - Implementacion de la conversion y proceso reproducible: https://github.com/tpurtell/ds41rt/tree/main/quantization

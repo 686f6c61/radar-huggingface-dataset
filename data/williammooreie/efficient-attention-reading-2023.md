@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado ni un checkpoint desplegable, sino una nota de investigacion (research note) titulada "Notes on Efficient Attention". El autor, WILLIAMMOOREie, la publica como material de trabajo sobre mecanismos de atencion eficiente, organizando motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. La propia model card aclara explicitamente que no se presentan resultados de benchmarks, ablaciones completadas, codigo liberado ni pesos entrenados.
+Este repositorio de Hugging Face no contiene un modelo entrenado ni un checkpoint desplegable, sino una nota de investigacion (research note) titulada "Notes on Efficient Attention". El autor, WILLIAMMOOREie, la publica como material de trabajo sobre mecanismos de atencion eficiente, organizando motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. La propia model card aclara explicitamente que no se presentan resultados de benchmarks, ablaciones completadas, codigo liberado ni pesos entrenados.
 
 El artefacto principal es un fichero `summary.md`, acompanado de un `README.md`. Los metadatos de safetensors reportan un total de 16.576 parametros y el tamano del repositorio es de 0,0 GB, lo que es coherente con un fichero de pesos residual o de prueba y no con un modelo funcional. No hay pipeline declarado, ni idiomas soportados, ni informacion sobre arquitectura real mas alla de la etiqueta generica `transformer`.
 
@@ -65,7 +65,7 @@ No disponible. No hay modelos comparables en la informacion proporcionada, ya qu
 
 | Artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficient-attention-reading-2023 | 16.576 (safetensors) | no disponible | no disponible | cc-by-4.0 | Repositorio de HuggingFace con nota de investigacion |
+| efficient-attention-reading-2023 | 16.576 (safetensors) | no disponible | no disponible | cc-by-4.0 | Repositorio de Hugging Face con nota de investigacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,8 +80,8 @@ No disponible. No hay modelos comparables en la informacion proporcionada, ya qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WILLIAMMOOREie/efficient-attention-reading-2023
-- Fichero `summary.md` (artefacto principal): disponible dentro del repositorio de HuggingFace en la ruta `summary.md`.
-- Fichero `README.md`: disponible dentro del repositorio de HuggingFace en la ruta `README.md`.
+- Hugging Face: https://huggingface.co/WILLIAMMOOREie/efficient-attention-reading-2023
+- Fichero `summary.md` (artefacto principal): disponible dentro del repositorio de Hugging Face en la ruta `summary.md`.
+- Fichero `README.md`: disponible dentro del repositorio de Hugging Face en la ruta `README.md`.
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este repositorio, su autor o la tematica de atencion eficiente; los resultados obtenidos eran de dominios de streaming sin relacion con el modelo.
 - No se han proporcionado enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

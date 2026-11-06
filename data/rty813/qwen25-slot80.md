@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rty813/qwen25-slot80` es un repositorio de HuggingFace publicado por el usuario `rty813` que, según su propia model card, consiste en un espejo ("mirror") de `Qwen/Qwen2.5-0.5B` destinado a despliegues con Xinference y vLLM. No se trata de un modelo entrenado desde cero ni de un fine-tune documentado: la tarjeta se limita a indicar la licencia Apache 2.0, el modelo base y la etiqueta `xinference`, sin describir datos de entrenamiento, cambios en los pesos ni procedimiento de conversión.
+`rty813/qwen25-slot80` es un repositorio de Hugging Face publicado por el usuario `rty813` que, según su propia model card, consiste en un espejo ("mirror") de `Qwen/Qwen2.5-0.5B` destinado a despliegues con Xinference y vLLM. No se trata de un modelo entrenado desde cero ni de un fine-tune documentado: la tarjeta se limita a indicar la licencia Apache 2.0, el modelo base y la etiqueta `xinference`, sin describir datos de entrenamiento, cambios en los pesos ni procedimiento de conversión.
 
 El interés práctico del repositorio es, por tanto, el del modelo subyacente: un transformer decoder-only de la familia Qwen2.5 con aproximadamente 0,49 mil millones de parámetros, pensado para entornos con recursos muy limitados (CPU, GPUs de gama de entrada, contenedores pequeños) y con una ventana de contexto declarada de 32.768 tokens en la ficha del modelo base. Es relevante ahora porque los modelos de menos de 1B se están usando como componentes auxiliares en pipelines mayores: enrutadores, clasificadores, generadores de borradores para decodificación especulativa y bases para fine-tunes de dominio.
 
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `rty813/qwen25-slot80` (espejo de Qwen2.5-0.5B) | ~0,49 B | 32.768 tokens según el modelo base | Apache 2.0 | HuggingFace; verificar presencia de pesos (repo de 0,0 GB) |
-| Qwen2.5-1.5B | ~1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama 3.2 1B | ~1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, requiere aceptación de términos |
-| SmolLM2-360M | ~0,36 B | no disponible en la información manejada | Apache 2.0 | HuggingFace |
-| Gemma 2 2B | ~2,6 B | 8.192 tokens | Términos de uso de Gemma | HuggingFace, requiere aceptación de términos |
+| `rty813/qwen25-slot80` (espejo de Qwen2.5-0.5B) | ~0,49 B | 32.768 tokens según el modelo base | Apache 2.0 | Hugging Face; verificar presencia de pesos (repo de 0,0 GB) |
+| Qwen2.5-1.5B | ~1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama 3.2 1B | ~1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, requiere aceptación de términos |
+| SmolLM2-360M | ~0,36 B | no disponible en la información manejada | Apache 2.0 | Hugging Face |
+| Gemma 2 2B | ~2,6 B | 8.192 tokens | Términos de uso de Gemma | Hugging Face, requiere aceptación de términos |
 
 Frente a las alternativas, la ventaja de este checkpoint es el coste de despliegue (licencia Apache 2.0 sin restricciones de aceptación y huella de memoria mínima); la desventaja es la capacidad bruta y, sobre todo, la incertidumbre sobre el contenido real del repositorio.
 

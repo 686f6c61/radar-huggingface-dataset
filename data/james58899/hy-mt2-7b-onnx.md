@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos de traducc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/james58899/Hy-MT2-7B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/james58899/Hy-MT2-7B-ONNX
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-7B
 - Checkpoint int4 de Intel: https://huggingface.co/Intel/Hy-MT2-7B-int4-AutoRound

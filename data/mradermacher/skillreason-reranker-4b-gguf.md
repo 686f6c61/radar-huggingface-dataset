@@ -25,7 +25,7 @@ La relevancia de este modelo radica en que los sistemas de agentes modernos depe
 
 La arquitectura exacta del modelo base no se especifica en la informacion disponible. Dado el nombre "reranker-4b" y el tamaño de 4.000 millones de parámetros, es probable que se trate de un transformer encoder o encoder-decoder similar a otros rerankers de tamaño comparable, pero este dato no se puede confirmar con la documentación proporcionada. El modelo fue entrenado sobre el dataset skillreason-bench, que está diseñado específicamente para la tarea de recuperación de habilidades en agentes.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se utilizaron técnicas como RLHF o DPO. El modelo base está disponible en HuggingFace como donghongjiang/SkillReason-reranker-4b, y la versión GGUF es una cuantización estática realizada por mradermacher, sin uso de imatrix ni pesos ponderados según la documentación del autor.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se utilizaron técnicas como RLHF o DPO. El modelo base está disponible en Hugging Face como donghongjiang/SkillReason-reranker-4b, y la versión GGUF es una cuantización estática realizada por mradermacher, sin uso de imatrix ni pesos ponderados según la documentación del autor.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El dataset skillreason-bench existe, pero no se proporcionan métricas comparativas del modelo frente a alternativas. Se recomienda consultar la página del modelo base en HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. El dataset skillreason-bench existe, pero no se proporcionan métricas comparativas del modelo frente a alternativas. Se recomienda consultar la página del modelo base en Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 

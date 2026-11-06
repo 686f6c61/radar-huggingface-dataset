@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnyDeblur3D public artifacts es un repositorio de HuggingFace publicado por el usuario qizhangslam que, segun su propia model card, contiene unicamente materiales de documentacion cientifica: informes publicos, readbacks, recibos de validacion y una presentacion de progreso de investigacion del proyecto AnyDeblur3D. No se trata de un repositorio de pesos de un modelo: el tamano del repositorio es de 0.0 GB, no tiene pipeline declarado, no declara licencia, idiomas ni etiquetas tecnicas mas alla de `region:us`, y acumula 0 descargas y 0 likes en el momento de la consulta.
+AnyDeblur3D public artifacts es un repositorio de Hugging Face publicado por el usuario qizhangslam que, segun su propia model card, contiene unicamente materiales de documentacion cientifica: informes publicos, readbacks, recibos de validacion y una presentacion de progreso de investigacion del proyecto AnyDeblur3D. No se trata de un repositorio de pesos de un modelo: el tamano del repositorio es de 0.0 GB, no tiene pipeline declarado, no declara licencia, idiomas ni etiquetas tecnicas mas alla de `region:us`, y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 La propia model card indica de forma explicita que el codigo fuente reproducible del sistema se mantiene en un repositorio privado (`slam-e2e/anydeblur3d-reproducible-code`) y que fue eliminado de forma intencionada del paquete publico. Tambien advierte de que el estatus cientifico esta acotado por la evidencia disponible y que deben leerse los informes y los recibos antes de interpretar las metricas. Por tanto, no hay informacion publica sobre arquitectura, parametros, contexto, datos de entrenamiento ni resultados de benchmarks.
 
@@ -93,6 +93,6 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qizhangslam/anydeblur3d-artifacts-public-orgcopy
+- Repositorio en Hugging Face: https://huggingface.co/qizhangslam/anydeblur3d-artifacts-public-orgcopy
 - Repositorio de codigo reproducible (referenciado como privado en la model card): `slam-e2e/anydeblur3d-reproducible-code` (sin URL publica disponible)
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la busqueda web realizada.

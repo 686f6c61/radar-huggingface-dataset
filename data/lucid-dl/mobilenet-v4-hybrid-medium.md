@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de cifras de accuracy, parámetro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucid-dl/mobilenet-v4-hybrid-medium
+- Hugging Face: https://huggingface.co/lucid-dl/mobilenet-v4-hybrid-medium
 - Checkpoint de origen en timm: https://huggingface.co/timm/mobilenetv4_hybrid_medium.ix_e550_r256_in1k
 - Artículo MobileNetV4 (arXiv:2404.10518): https://arxiv.org/abs/2404.10518
 - Repositorio del framework Lucid: https://github.com/ChanLumerico/lucid

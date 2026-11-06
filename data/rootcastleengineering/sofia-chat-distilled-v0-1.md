@@ -94,6 +94,6 @@ No se han localizado alternativas comparables con datos verificables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rootcastleengineering/sofia-chat-distilled-v0.1
+- Modelo en Hugging Face: https://huggingface.co/rootcastleengineering/sofia-chat-distilled-v0.1
 - Repositorio de entrenamiento reproducible: https://github.com/rootcastleco/sofia-distilled
 - Manuscrito de referencia sobre kernels verificables: https://www.academia.edu/175377730/Quantum_Artificial_Intelligence_with_Verifiable_Kernels

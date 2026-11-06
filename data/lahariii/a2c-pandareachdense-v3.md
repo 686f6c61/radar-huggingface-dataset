@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Lahariii/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, una tarea de control robotico en simulacion en la que un brazo Franka Emika Panda debe alcanzar una posicion objetivo y recibe una recompensa densa en funcion de su distancia al objetivo. El modelo ha sido publicado por el usuario Lahariii en HuggingFace Hub y esta construido con la libreria stable-baselines3, el estandar de facto para implementaciones reproducibles de algoritmos de RL profundo en PyTorch.
+Lahariii/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, una tarea de control robotico en simulacion en la que un brazo Franka Emika Panda debe alcanzar una posicion objetivo y recibe una recompensa densa en funcion de su distancia al objetivo. El modelo ha sido publicado por el usuario Lahariii en Hugging Face Hub y esta construido con la libreria stable-baselines3, el estandar de facto para implementaciones reproducibles de algoritmos de RL profundo en PyTorch.
 
 No se trata de un modelo de lenguaje ni de un transformer generativo: es una politica neuronal que mapea observaciones del entorno a acciones continuas de control del brazo robotico. Por tanto, conceptos habituales en fichas de LLM como ventana de contexto, cuantizacion GGUF o soporte multilingue no son aplicables aqui; esta ficha los marca explicitamente como no aplicables en lugar de forzar equivalencias.
 
-Su relevancia es acotada y experimental. El repositorio acumula 0 descargas y 0 likes, la model card esta practicamente vacia (el bloque de uso contiene un TODO sin completar), la licencia no se especifica y el unico resultado declarado es una recompensa media de -0,20 +/- 0,09 marcada como no verificada. Es util como ejemplo reproducible de un pipeline stable-baselines3 + HuggingFace Hub y como posible punto de partida para experimentos de reaching, pero no como componente listo para produccion.
+Su relevancia es acotada y experimental. El repositorio acumula 0 descargas y 0 likes, la model card esta practicamente vacia (el bloque de uso contiene un TODO sin completar), la licencia no se especifica y el unico resultado declarado es una recompensa media de -0,20 +/- 0,09 marcada como no verificada. Es util como ejemplo reproducible de un pipeline stable-baselines3 + Hugging Face Hub y como posible punto de partida para experimentos de reaching, pero no como componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ Tampoco se documentan la composicion del dataset ni el procedimiento de recogida
 - Reproduccion de experimentos de RL: cargar el agente con stable-baselines3 y evaluarlo sobre PandaReachDense-v3 para replicar la recompensa media declarada de -0,20 +/- 0,09 y verificar el resultado marcado como no verificado.
 - Baseline de comparacion algoritmica: usarlo como referencia A2C frente a otros algoritmos de la misma libreria (PPO, SAC, TD3) sobre el mismo entorno, midiendo recompensa media, tasa de exito y varianza entre semillas.
 - Punto de partida para fine-tuning: reanudar el entrenamiento desde estos pesos e incrementar el numero de timesteps para intentar acercar la recompensa media a 0, que en recompensas densas basadas en distancia corresponde a la posicion objetivo.
-- Material docente para cursos de RL: el par stable-baselines3 + HuggingFace Hub es un ejemplo compacto de como entrenar, publicar y recargar una politica, con un entorno de manipulacion robotica visualmente interpretable.
+- Material docente para cursos de RL: el par stable-baselines3 + Hugging Face Hub es un ejemplo compacto de como entrenar, publicar y recargar una politica, con un entorno de manipulacion robotica visualmente interpretable.
 - Generacion de trayectorias para imitation learning: ejecutar la politica en modo estocastico para recoger pares observacion-accion que alimenten un algoritmo de aprendizaje por imitacion o un modelo de politica supervisado.
 - Investigacion en sim2real: el entorno se apoya en el modelo cinematico y dinamico del Franka Emika Panda dentro de panda-gym, por lo que el agente puede servir como hipotesis inicial en estudios de transferencia simulacion-real, siempre que se documente la brecha de dominio.
 - Evaluacion de infraestructura de entrenamiento: al ser una politica de tamano reducido, sirve para validar pipelines de entrenamiento distribuido, logging y versionado de artefactos sin coste de computo relevante.
@@ -104,7 +104,7 @@ No se dispone de resultados medidos de otros modelos sobre PandaReachDense-v3 en
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/Lahariii/a2c-PandaReachDense-v3
+- Modelo en Hugging Face Hub: https://huggingface.co/Lahariii/a2c-PandaReachDense-v3
 - stable-baselines3 (libreria de entrenamiento, referenciada en la model card): https://github.com/DLR-RM/stable-baselines3
 - panda-gym (origen del entorno PandaReachDense-v3): https://github.com/qgallouedec/panda-gym
 - huggingface_sb3 (utilidad de carga desde el Hub, referenciada en la model card): https://github.com/huggingface/huggingface_sb3

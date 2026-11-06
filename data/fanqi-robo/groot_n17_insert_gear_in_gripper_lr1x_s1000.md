@@ -98,8 +98,8 @@ Interpretacion de los datos disponibles: el mejor MAE@30 de la tabla es 2,93 (up
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (update 20000) | 3.144.016.000 | No disponible | MAE@30 2,94; grip rec 0,89; latencia 186,1 ms | NVIDIA License (solo investigacion/evaluacion) | HuggingFace, safetensors, LeRobot 0.6.1 |
-| `nvidia/GR00T-N1.7-3B` (base) | 3.144.016.000 (el ajuste declara todos los parametros entrenables) | No disponible | No se publica evaluacion especifica en `insert_gear_in_gripper` | NVIDIA License | HuggingFace |
+| Este modelo (update 20000) | 3.144.016.000 | No disponible | MAE@30 2,94; grip rec 0,89; latencia 186,1 ms | NVIDIA License (solo investigacion/evaluacion) | Hugging Face, safetensors, LeRobot 0.6.1 |
+| `nvidia/GR00T-N1.7-3B` (base) | 3.144.016.000 (el ajuste declara todos los parametros entrenables) | No disponible | No se publica evaluacion especifica en `insert_gear_in_gripper` | NVIDIA License | Hugging Face |
 | Politica trivial `hold` (mantener pose) | 0 | No aplica | MAE@30 2,60 | No aplica | No aplica |
 | Otros VLA de manipulacion (OpenVLA, pi0, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -121,7 +121,7 @@ No hay datos publicados que permitan comparar este ajuste con alternativas de ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/groot_n17_insert_gear_in_gripper_lr1x_s1000
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/groot_n17_insert_gear_in_gripper_lr1x_s1000
 - Dataset de entrenamiento `fanqi-robo/insert_gear_in_gripper`: https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper
 - Dataset de validacion (referenciado en la model card): `villekuosmanen/insert_gear_in_gripper_val` @ `7c4d62f3`
 - Dataset de evaluacion `fanqi-robo/eval_insert_gear_in_gripper_10h52m_05-oct-2026`: https://huggingface.co/datasets/fanqi-robo/eval_insert_gear_in_gripper_10h52m_05-oct-2026

@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part19
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part19
 - Indice maestro del kit: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Guia de instalacion: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_INSTALLATION_GUIDE.md
 - STMicroelectronics (origen de los binarios): https://www.st.com

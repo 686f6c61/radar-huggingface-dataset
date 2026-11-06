@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kate es un ajuste fino (fine-tune) del modelo Gemma 2 2B Instruct, desarrollado por el usuario ToyLantis y publicado en HuggingFace bajo licencia Apache 2.0. El modelo parte concretamente del checkpoint cuantizado `unsloth/gemma-2-2b-it-bnb-4bit` y fue entrenado con la librería Unsloth, segun indica la propia model card. Se trata, por tanto, de un modelo derivado de la familia Gemma 2 de Google, con aproximadamente 2.600 millones de parametros y una ventana de contexto de 8.192 tokens en su version original.
+Kate es un ajuste fino (fine-tune) del modelo Gemma 2 2B Instruct, desarrollado por el usuario ToyLantis y publicado en Hugging Face bajo licencia Apache 2.0. El modelo parte concretamente del checkpoint cuantizado `unsloth/gemma-2-2b-it-bnb-4bit` y fue entrenado con la librería Unsloth, segun indica la propia model card. Se trata, por tanto, de un modelo derivado de la familia Gemma 2 de Google, con aproximadamente 2.600 millones de parametros y una ventana de contexto de 8.192 tokens en su version original.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio no documenta el dataset de entrenamiento, el objetivo del ajuste, ni resultados de evaluacion, y acumula cero descargas y cero valoraciones en el momento de la consulta. El nombre "Kate" sugiere un ajuste orientado a un personaje o persona conversacional concreta, pero esto no se confirma en la informacion disponible.
 
@@ -95,8 +95,8 @@ No se dispone de resultados de benchmarks comparativos para Kate, por lo que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToyLantis/Kate
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/ToyLantis/Kate
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
 - Modelo original de Google Gemma 2: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

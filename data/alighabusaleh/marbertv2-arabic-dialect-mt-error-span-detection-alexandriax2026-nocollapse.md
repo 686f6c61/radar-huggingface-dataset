@@ -80,8 +80,8 @@ No se dispone de datos de benchmarks de otros sistemas comparables en la informa
 
 | Modelo | Parametros | Contexto | Overall oficial (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...alexandriax2026-nocollapse`) | 162.256.135 | truncado a 192 tokens subpalabra en entrenamiento | 42,00 en la ejecucion original de esta configuracion; 38,5 en dev para este checkpoint | cc-by-4.0 | HuggingFace, safetensors |
-| `alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026` (envio oficial) | no disponible en la informacion, mismo backbone MARBERTv2 | no disponible | 40,91 (posicion 3 del ranking) | cc-by-4.0 | HuggingFace |
+| Este modelo (`...alexandriax2026-nocollapse`) | 162.256.135 | truncado a 192 tokens subpalabra en entrenamiento | 42,00 en la ejecucion original de esta configuracion; 38,5 en dev para este checkpoint | cc-by-4.0 | Hugging Face, safetensors |
+| `alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026` (envio oficial) | no disponible en la informacion, mismo backbone MARBERTv2 | no disponible | 40,91 (posicion 3 del ranking) | cc-by-4.0 | Hugging Face |
 | Otros sistemas participantes en AlexandriaX-2026 Subtask 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de otros sistemas comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026-nocollapse
+- Modelo en Hugging Face: https://huggingface.co/alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026-nocollapse
 - Checkpoint del envio oficial (posicion 3, 40,91): https://huggingface.co/alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026
 - Modelo base MARBERTv2: https://huggingface.co/UBC-NLP/MARBERTv2
 - Dataset AlexandriaX Subtask 3: https://huggingface.co/datasets/UBC-NLP/AlexandriaX_Subtask_3

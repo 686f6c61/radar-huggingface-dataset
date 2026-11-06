@@ -83,7 +83,7 @@ No se dispone de datos comparativos con otros modelos de OCR en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/runanywhere/nemotron-ocr-v1-full_ANE
+- Repositorio Hugging Face del modelo: https://huggingface.co/runanywhere/nemotron-ocr-v1-full_ANE
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/nemotron-ocr-v1
 - Página del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-ocr-v1/modelcard
 - Repositorio GitHub (theone25): https://github.com/theone25/nemotron-ocr-v1

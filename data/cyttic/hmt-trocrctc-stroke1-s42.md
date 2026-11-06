@@ -6,7 +6,7 @@ cyttic/hmt-trocrctc-stroke1-s42 es un modelo de reconocimiento de texto manuscri
 
 Se trata de un modelo pequeño, de 87,3 millones de parámetros, orientado a una única tarea: transcribir imagen de línea manuscrita a texto. No es un modelo de lenguaje generalista ni admite instrucciones en lenguaje natural; su relevancia es acotada y experimental, centrada en aportar evidencia reproducible sobre transferencia de métricas entre variantes de aumento de datos en HTR.
 
-La ficha se basa exclusivamente en la información pública disponible en HuggingFace (model card, tags y metadatos del repositorio); no se han publicado detalles adicionales sobre arquitectura interna, datos de entrenamiento o hiperparámetros más allá de lo indicado.
+La ficha se basa exclusivamente en la información pública disponible en Hugging Face (model card, tags y metadatos del repositorio); no se han publicado detalles adicionales sobre arquitectura interna, datos de entrenamiento o hiperparámetros más allá de lo indicado.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 |---|---|---|---|---|---|
 | cyttic/hmt-trocrctc-stroke1-s42 | 87,3 M | no disponible | he | MIT | TrOCR + CTC, estudio de aumento |
 | TrOCR base (Microsoft) | ~334 M | no disponible | en (principalmente) | MIT | Referencia arquitectónica, no específico para hebreo |
-| Modelos HTR para hebreo en HuggingFace | no disponible | no disponible | he | variable | No se dispone de comparativas publicadas en la información proporcionada |
+| Modelos HTR para hebreo en Hugging Face | no disponible | no disponible | he | variable | No se dispone de comparativas publicadas en la información proporcionada |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada; la comparación se limita a características estructurales.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-stroke1-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-stroke1-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo (referenciado en la model card)
 - Estudio htr-metrics-transfer: no se ha encontrado enlace público en la información disponible

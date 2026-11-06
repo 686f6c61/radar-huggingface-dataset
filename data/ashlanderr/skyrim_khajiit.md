@@ -6,7 +6,7 @@
 
 El modelo resuelve un problema muy concreto: disponer de una voz sintetica clonada de un personaje de videojuego para tareas de doblaje, modding, videos fan o generacion de contenido derivado. Cada carpeta incluye un checkpoint `model.pth` a 40 kHz con extractor de pitch RMVPE y embeddings de ContentVec, ademas de un indice `model.compact.index` que acelera la recuperacion de caracteristicas durante la inferencia. El entrenamiento se realizo con Applio 3.7.1.
 
-Es relevante ahora dentro de la comunidad de modding y doblaje aficionado, no como pieza de infraestructura de IA general. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, un tamano de 0,1 GB y no declara pipeline ni idiomas en los metadatos de HuggingFace. La licencia es OpenRAIL, aunque el propio autor indica que es un trabajo fan no afiliado a Bethesda.
+Es relevante ahora dentro de la comunidad de modding y doblaje aficionado, no como pieza de infraestructura de IA general. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, un tamano de 0,1 GB y no declara pipeline ni idiomas en los metadatos de Hugging Face. La licencia es OpenRAIL, aunque el propio autor indica que es un trabajo fan no afiliado a Bethesda.
 
 ## Especificaciones tecnicas
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Tamano de datos de entrenamiento | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ashlanderr/skyrim_khajiit (masculino) | RVC v2 | 48 min, 200 epochs | 40 kHz | openrail | HuggingFace, 0 descargas |
-| ashlanderr/skyrim_khajiit (femenino) | RVC v2 | 19 min, 300 epochs | 40 kHz | openrail | HuggingFace, 0 descargas |
+| ashlanderr/skyrim_khajiit (masculino) | RVC v2 | 48 min, 200 epochs | 40 kHz | openrail | Hugging Face, 0 descargas |
+| ashlanderr/skyrim_khajiit (femenino) | RVC v2 | 19 min, 300 epochs | 40 kHz | openrail | Hugging Face, 0 descargas |
 | Otros modelos RVC v2 de voces de videojuegos | RVC v2 | variable | 32-48 kHz | variable | repositorios comunitarios |
 | Modelos de TTS/VC comerciales (p. ej. ElevenLabs) | propietario | no disponible | 44,1 kHz | comercial | API/SaaS |
 
@@ -77,12 +77,12 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con altern
 - No es un modelo de lenguaje: no genera texto, no razona ni soporta tool calling; cualquier uso en ese sentido es invalido.
 - Licencia OpenRAIL: permite uso comercial con restricciones de uso responsable, pero el propio autor declara que es un trabajo fan no afiliado a Bethesda; los derechos sobre las voces originales pertenecen a sus titulares y el uso comercial del timbre clonado puede infringir derechos de imagen o de doblaje.
 - Riesgo de uso indebido para suplantacion de voz o deepfakes; se recomienda etiquetar explicitamente el audio generado como sintetico.
-- Sin pipeline declarado ni idiomas en los metadatos de HuggingFace, lo que dificulta el descubrimiento y la integracion automatica.
+- Sin pipeline declarado ni idiomas en los metadatos de Hugging Face, lo que dificulta el descubrimiento y la integracion automatica.
 - 0 descargas y 0 likes: no hay evidencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashlanderr/skyrim_khajiit
+- Modelo en Hugging Face: https://huggingface.co/ashlanderr/skyrim_khajiit
 - Applio (entorno de entrenamiento declarado): https://github.com/IAHispano/Applio
 - RVC (Retrieval-based Voice Conversion): https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
 - ContentVec: https://github.com/auspicious3000/contentvec

@@ -47,14 +47,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: al ser un modelo de 277M parámetros, en fp32 requiere aproximadamente 1,1 GB de VRAM, pero se recomienda usar fp16 o int8 para reducir el consumo (unos 550 MB en fp16). Con cuantización de 4 bits, podría bajar a unos 350 MB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia (por ejemplo, NVIDIA GTX 1650, RTX 3050, etc.). Para entrenamiento o fine-tuning, se recomienda al menos 8 GB.
 - Se puede ejecutar en CPU con razonable velocidad para tareas de clasificación, aunque más lento que en GPU.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, se puede cargar con la librería `transformers` de Python, o servir con vLLM, TGI, o exportar a ONNX para optimización. También se puede convertir a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan archivos GGUF.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, se puede cargar con la librería `transformers` de Python, o servir con vLLM, TGI, o exportar a ONNX para optimización. También se puede convertir a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan archivos GGUF.
 - Latencia y throughput: no se dispone de mediciones oficiales. En una GPU moderna, la inferencia de un transformer de 277M con secuencias cortas (<128 tokens) suele estar en el orden de milisegundos por muestra.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| code-switching-codesaviours-si26-sheeza | 277M | XLM-RoBERTa base | no disponible | MIT | HuggingFace |
+| code-switching-codesaviours-si26-sheeza | 277M | XLM-RoBERTa base | no disponible | MIT | Hugging Face |
 | code-switching-codesaviours-si26-zainab | no disponible | XLM-RoBERTa (fine-tuned 8 épocas) | no disponible | no disponible | GitHub/HuggingFace |
 | code-switching-codesaviours-si26-muhammadahmad | no disponible | no disponible | no disponible | no disponible | Registro externo |
 
@@ -71,8 +71,8 @@ No hay suficiente información pública sobre los modelos comparables para estab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sheezariaz2315/code-switching-codesaviours-si26-sheeza
-- Perfil del autor en HuggingFace: https://huggingface.co/sheezariaz2315
+- Modelo en Hugging Face: https://huggingface.co/sheezariaz2315/code-switching-codesaviours-si26-sheeza
+- Perfil del autor en Hugging Face: https://huggingface.co/sheezariaz2315
 - Perfil del autor en GitHub: https://github.com/sheezariaz2315
 - Repositorio de un modelo similar (Zainab): https://github.com/Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab
 - Registro externo de otro modelo similar: https://free2aitools.com/model/muhammad-ahmad-1263/code-switching-codesaviours-si26-muhammadahmad

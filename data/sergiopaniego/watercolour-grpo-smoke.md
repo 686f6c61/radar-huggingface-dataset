@@ -81,7 +81,7 @@ No hay datos de rendimiento comparativo disponibles.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sergiopaniego/watercolour-grpo-smoke
+- Repositorio Hugging Face: https://huggingface.co/sergiopaniego/watercolour-grpo-smoke
 - Perfil del autor: https://huggingface.co/sergiopaniego
 - GitHub del autor: https://github.com/sergiopaniego
 - Pagina personal: https://sergiopaniego.github.io/

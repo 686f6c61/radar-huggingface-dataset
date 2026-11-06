@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos verificados en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DuoNeural/Llama-3.1-8B-Instruct-CodeInfused-IQ3_XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DuoNeural/Llama-3.1-8B-Instruct-CodeInfused-IQ3_XXS-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Perfil del autor en HuggingFace (referenciado en la cita de la model card): https://huggingface.co/DuoNeural
+- Perfil del autor en Hugging Face (referenciado en la cita de la model card): https://huggingface.co/DuoNeural
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo, su metodo de cuantizacion ni su autor; los unicos resultados obtenidos eran contenido no relacionado y de naturaleza adulta, por lo que no se incluyen. No se dispone de paper, blog tecnico, repositorio de codigo ni demo adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de lenguaje destinado a uso general, sino un conjunto de artefactos de un experimento de investigación sobre transformers causales de tamaño mínimo. El autor (eoinf) entrena una rejilla de modelos con dimensiones de embedding (`d_model`) de 2, 4, 6, 8, 16, 32 y 64, dos semillas por anchura, sobre un vocabulario de 4096 tokens y una longitud de contexto de 256, con un presupuesto nominal de 199.999.488 tokens de entrenamiento. El propósito aparente es estudiar cómo escala el aprendizaje de una tarea sintética (trigramas, según el repositorio de código asociado) en función de la anchura del modelo y la semilla.
+Este repositorio de Hugging Face no contiene un modelo de lenguaje destinado a uso general, sino un conjunto de artefactos de un experimento de investigación sobre transformers causales de tamaño mínimo. El autor (eoinf) entrena una rejilla de modelos con dimensiones de embedding (`d_model`) de 2, 4, 6, 8, 16, 32 y 64, dos semillas por anchura, sobre un vocabulario de 4096 tokens y una longitud de contexto de 256, con un presupuesto nominal de 199.999.488 tokens de entrenamiento. El propósito aparente es estudiar cómo escala el aprendizaje de una tarea sintética (trigramas, según el repositorio de código asociado) en función de la anchura del modelo y la semilla.
 
 El paquete incluye los state-dicts de PyTorch, la definición de cada ejecución, el historial de checkpoints, el registro de actualizaciones de entrenamiento y metadatos de resultados (`grid_summary.json`, `result.json`). No se incluyen los estados del optimizador ni los datos de entrenamiento. El tamaño total del repositorio es de 0,2 GB, coherente con modelos de pocos millones de parámetros o menos.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eoinf/synthetic_components_rapid_decay_200m_... | no disponible (d_model 2-64) | 256 | Trigramas sintéticos | no disponible | HuggingFace |
-| GPT-2 small (referencia) | 124M | 1024 | Lenguaje natural | MIT | HuggingFace |
-| TinyStories-1M (referencia) | ~1M | 512 | Lenguaje natural simplificado | MIT | HuggingFace |
-| Pythia-70M (referencia) | 70M | 2048 | Lenguaje natural | Apache 2.0 | HuggingFace |
+| eoinf/synthetic_components_rapid_decay_200m_... | no disponible (d_model 2-64) | 256 | Trigramas sintéticos | no disponible | Hugging Face |
+| GPT-2 small (referencia) | 124M | 1024 | Lenguaje natural | MIT | Hugging Face |
+| TinyStories-1M (referencia) | ~1M | 512 | Lenguaje natural simplificado | MIT | Hugging Face |
+| Pythia-70M (referencia) | 70M | 2048 | Lenguaje natural | Apache 2.0 | Hugging Face |
 
 La comparación es orientativa: este repositorio no es un modelo de lenguaje natural y sus parámetros exactos no están publicados.
 
@@ -80,6 +80,6 @@ La comparación es orientativa: este repositorio no es un modelo de lenguaje nat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/synthetic_components_rapid_decay_200m_dmodel2_4_6_8_16_32_64_seeds00_01
+- Hugging Face: https://huggingface.co/eoinf/synthetic_components_rapid_decay_200m_dmodel2_4_6_8_16_32_64_seeds00_01
 - Repositorio de código `synthetic_trigrams`: no disponible (mencionado en la model card sin URL)
 - Paper, blog o demo: no disponible

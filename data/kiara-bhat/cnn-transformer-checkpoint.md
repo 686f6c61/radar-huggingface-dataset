@@ -33,7 +33,7 @@ El modelo no ha sido entrenado. El archivo `model.safetensors` es un checkpoint 
 - No hay soporte de tool calling ni function calling.
 - No hay soporte de agentes ni de razonamiento multi-paso.
 - No hay capacidades multilingües documentadas.
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de su uso.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de su uso.
 
 ## Casos de uso
 
@@ -41,7 +41,7 @@ El modelo no ha sido entrenado. El archivo `model.safetensors` es un checkpoint 
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicialización sirve para verificar que el código de entrenamiento funciona correctamente (forward pass, backward pass, guardado de checkpoints) sin invertir recursos en un entrenamiento completo.
 - Experimentos de aprendizaje contrastivo: la arquitectura está pensada para contrastive learning, por lo que puede usarse como punto de partida para entrenar con pares positivos y negativos y evaluar representaciones en tareas aguas abajo.
 - Comparación de baselines con capacidad equivalente: el autor sugiere usarlo como baseline de capacidad similar para comparar contra otras arquitecturas en una tarea específica.
-- Desarrollo de adaptadores de integración: al ser una implementación personalizada, puede usarse como caso de prueba para desarrollar adaptadores que permitan cargar el modelo con APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores de integración: al ser una implementación personalizada, puede usarse como caso de prueba para desarrollar adaptadores que permitan cargar el modelo con APIs genéricas de Hugging Face.
 - Documentación de experimentos: sirve como ejemplo de configuración reproducible, ya que incluye `config.json` y `training_args.json`, lo que facilita registrar la arquitectura y los hiperparámetros en publicaciones de investigación.
 
 ## Benchmarks y rendimiento
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: no disponible. Al ser un checkpoint de inicializacion con 24.832 parametros, el requisito de VRAM es insignificante, pero no se han publicado medidas reales.
 - GPU recomendadas: no disponible. El modelo puede ejecutarse en cualquier CPU o GPU moderna, pero no hay datos de rendimiento publicados.
 - Capacidad en GPU de consumo: si, por su tamano trivial, pero no hay inferencia real que evaluar al ser un checkpoint sin entrenar.
-- Opciones de despliegue: no disponible. Las APIs genericas de HuggingFace no pueden cargarlo sin un adaptador explicito.
+- Opciones de despliegue: no disponible. Las APIs genericas de Hugging Face no pueden cargarlo sin un adaptador explicito.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,10 +66,10 @@ No se dispone de modelos comparables en la informacion proporcionada. Al ser un 
 - El autor advierte que el modelo no ha sido auditado para robustez, equidad ni transferencia de dominio.
 - La implementacion debe tratarse como un punto de partida experimental, no como un modelo listo para produccion.
 - Los resultados de un checkpoint entrenado en el futuro deben documentarse por separado de los valores por defecto incluidos en el repositorio.
-- Las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito para usar este modelo.
+- Las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito para usar este modelo.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad.
 - El autor recomienda entrenar todas las baselines con la misma exposicion a datos, el mismo presupuesto de tuning y las mismas semillas aleatorias para una evaluacion significativa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiara-bhat/cnn-transformer-checkpoint
+- Hugging Face: https://huggingface.co/kiara-bhat/cnn-transformer-checkpoint

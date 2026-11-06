@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuralForge-Prod es un modelo publicado en HuggingFace por el usuario qf-iquest bajo licencia MIT, con pipeline de extracción de características (*feature-extraction*) y etiquetas asociadas a Transformers y PyTorch. El repositorio, sin embargo, no contiene pesos (tamaño 0.0 GB) y la model card describe un modelo de razonamiento y generación de texto con mejoras en profundidad de inferencia, reducción de alucinaciones y soporte de *function calling*. Esta discrepancia entre el pipeline declarado y las capacidades descritas en la documentación, junto con la ausencia de archivos de modelo, impide verificar su funcionamiento real.
+NeuralForge-Prod es un modelo publicado en Hugging Face por el usuario qf-iquest bajo licencia MIT, con pipeline de extracción de características (*feature-extraction*) y etiquetas asociadas a Transformers y PyTorch. El repositorio, sin embargo, no contiene pesos (tamaño 0.0 GB) y la model card describe un modelo de razonamiento y generación de texto con mejoras en profundidad de inferencia, reducción de alucinaciones y soporte de *function calling*. Esta discrepancia entre el pipeline declarado y las capacidades descritas en la documentación, junto con la ausencia de archivos de modelo, impide verificar su funcionamiento real.
 
 La model card menciona una actualización importante respecto a una versión anterior, con mejoras en tareas de matemáticas, programación y lógica, y reporta resultados en una serie de benchmarks propios (no estandarizados). No se especifican arquitectura, número de parámetros, longitud de contexto ni idiomas soportados. Dada la falta de información técnica verificable, esta ficha se limita a reflejar los datos disponibles y marca como «no disponible» cualquier especificación no confirmada.
 
@@ -88,7 +88,7 @@ No es posible establecer una comparativa fiable, ya que no se conocen los parám
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene archivos de pesos (tamaño 0.0 GB), por lo que el modelo no es descargable ni ejecutable en la práctica.
+- El repositorio de Hugging Face no contiene archivos de pesos (tamaño 0.0 GB), por lo que el modelo no es descargable ni ejecutable en la práctica.
 - La model card describe un modelo de razonamiento y generación, pero el pipeline declarado es *feature-extraction*; esta inconsistencia sugiere que la documentación puede no corresponderse con el artefacto real.
 - No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que impide evaluar su viabilidad para casos de uso concretos.
 - Los benchmarks presentados son propios y no están estandarizados; no se puede comparar su rendimiento con el de otros modelos publicados.
@@ -99,7 +99,7 @@ No es posible establecer una comparativa fiable, ya que no se conocen los parám
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qf-iquest/NeuralForge-Prod
+- Modelo en Hugging Face: https://huggingface.co/qf-iquest/NeuralForge-Prod
 - Repositorio del árbol de archivos (solo figuras y model card): https://huggingface.co/qf-iquest/NeuralForge-Prod/tree/main
 - Proyecto «NeuralForgeAI» en PyPI (framework de entrenamiento, no el modelo): https://pypi.org/project/NeuralForgeAI/
 - Repositorio «neuralforge» en GitHub (plataforma de conocimiento, no el modelo): https://github.com/NathanMaine/neuralforge

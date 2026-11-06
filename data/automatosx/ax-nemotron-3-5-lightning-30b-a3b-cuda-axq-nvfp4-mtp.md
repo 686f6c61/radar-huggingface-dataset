@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Nemotron-3.5-Lightning-30B-A3B-CUDA-AXQ-NVFP4-MTP | 32,9 mil millones | NVFP4A16 (pesos), BF16 (activaciones) | no disponible | openmdw-1.1 | HuggingFace, repositorio de 23,6 GB, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | no disponible en esta busqueda | BF16 | no disponible | no disponible en esta busqueda | HuggingFace (modelo base declarado) |
+| AX-Nemotron-3.5-Lightning-30B-A3B-CUDA-AXQ-NVFP4-MTP | 32,9 mil millones | NVFP4A16 (pesos), BF16 (activaciones) | no disponible | openmdw-1.1 | Hugging Face, repositorio de 23,6 GB, 0 descargas |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | no disponible en esta busqueda | BF16 | no disponible | no disponible en esta busqueda | Hugging Face (modelo base declarado) |
 
 No se dispone de datos verificables en la informacion proporcionada sobre otras alternativas de la misma categoria (MoE de ~30B con ~3B parametros activos), por lo que la comparativa se limita al modelo base del que deriva este checkpoint. Los resultados de la busqueda web realizada no aportan informacion tecnica sobre modelos comparables.
 
@@ -89,7 +89,7 @@ No se dispone de datos verificables en la informacion proporcionada sobre otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3.5-Lightning-30B-A3B-CUDA-AXQ-NVFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3.5-Lightning-30B-A3B-CUDA-AXQ-NVFP4-MTP
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

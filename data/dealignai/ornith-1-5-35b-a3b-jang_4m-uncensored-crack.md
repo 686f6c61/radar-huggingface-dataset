@@ -89,7 +89,7 @@ No se dispone de comparativas directas publicadas entre esta versión y otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-JANG_4M-UNCENSORED-CRACK
+- Repositorio Hugging Face: https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-JANG_4M-UNCENSORED-CRACK
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Versión GGUF (uncensored): https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-UNCENSORED-GGUF

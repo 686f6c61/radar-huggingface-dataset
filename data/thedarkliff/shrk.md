@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thedarkliff/Shrk` es un repositorio publicado en HuggingFace por el usuario Thedarkliff, con licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre el entrenamiento. El repositorio fue creado el 1 de septiembre de 2026 y no registra descargas ni interacciones. No se dispone de documentación adicional, papers, demos o resultados de benchmarks que permitan caracterizar el modelo. En consecuencia, cualquier evaluación de sus capacidades o idoneidad para casos de uso concretos resulta imposible con la información pública disponible.
+El modelo `Thedarkliff/Shrk` es un repositorio publicado en Hugging Face por el usuario Thedarkliff, con licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre el entrenamiento. El repositorio fue creado el 1 de septiembre de 2026 y no registra descargas ni interacciones. No se dispone de documentación adicional, papers, demos o resultados de benchmarks que permitan caracterizar el modelo. En consecuencia, cualquier evaluación de sus capacidades o idoneidad para casos de uso concretos resulta imposible con la información pública disponible.
 
 ## Especificaciones tecnicas
 
@@ -50,6 +50,6 @@ No disponible. No se ha identificado ningún modelo comparable en la misma categ
 
 ## Enlaces
 
-- [HuggingFace - Thedarkliff/Shrk](https://huggingface.co/Thedarkliff/Shrk)
+- [Hugging Face - Thedarkliff/Shrk](https://huggingface.co/Thedarkliff/Shrk)
 
 No se han encontrado papers, blogs, repositorios adicionales o demos relacionados con este modelo.

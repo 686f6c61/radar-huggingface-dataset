@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/heb_hebr_10mb
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/f4z62u7g
 - Repositorio de TRL: https://github.com/huggingface/trl

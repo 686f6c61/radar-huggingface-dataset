@@ -110,7 +110,7 @@ La comparación relevante en la práctica es contra el propio modelo base: este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Onol/GR00T-N1.7-cup-tdt-sim-dg1
+- Modelo en Hugging Face: https://huggingface.co/Onol/GR00T-N1.7-cup-tdt-sim-dg1
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Backbone de visión y lenguaje (acceso restringido): https://huggingface.co/nvidia/Cosmos-Reason2-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/B111ue/lerobot_cup_tdt_sim_dg1

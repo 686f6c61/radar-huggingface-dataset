@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Safety-Vest_Detection es un modelo de vision por computador orientado a la deteccion de chalecos de seguridad de alta visibilidad en imagenes y flujos de video. Desarrollado por el usuario momentarek1 y publicado en HuggingFace, el modelo aborda el problema de deteccion de objetos (object detection) localizando chalecos mediante bounding boxes y asignando una puntuacion de confianza a cada deteccion. Su objetivo es automatizar la supervision del cumplimiento de equipos de proteccion individual (EPI) en entornos como obras de construccion, plantas industriales, almacenes y zonas de mantenimiento de carreteras.
+Safety-Vest_Detection es un modelo de vision por computador orientado a la deteccion de chalecos de seguridad de alta visibilidad en imagenes y flujos de video. Desarrollado por el usuario momentarek1 y publicado en Hugging Face, el modelo aborda el problema de deteccion de objetos (object detection) localizando chalecos mediante bounding boxes y asignando una puntuacion de confianza a cada deteccion. Su objetivo es automatizar la supervision del cumplimiento de equipos de proteccion individual (EPI) en entornos como obras de construccion, plantas industriales, almacenes y zonas de mantenimiento de carreteras.
 
-La model card describe un pipeline clasico de deteccion de objetos con preprocesado de imagen, extraccion de caracteristicas, cabezal de deteccion y filtrado por confianza, pero no especifica la arquitectura concreta, el numero de parametros ni los datos de entrenamiento utilizados. El propio autor indica que "la version exacta del modelo y la arquitectura pueden documentarse aqui una vez que la configuracion de entrenamiento este disponible", lo que sugiere que el repositorio se encuentra en una fase temprana de publicacion. El modelo tiene 0 descargas y 0 likes en HuggingFace, y no se ha publicado informacion sobre licencia, idiomas soportados ni pipeline de inferencia.
+La model card describe un pipeline clasico de deteccion de objetos con preprocesado de imagen, extraccion de caracteristicas, cabezal de deteccion y filtrado por confianza, pero no especifica la arquitectura concreta, el numero de parametros ni los datos de entrenamiento utilizados. El propio autor indica que "la version exacta del modelo y la arquitectura pueden documentarse aqui una vez que la configuracion de entrenamiento este disponible", lo que sugiere que el repositorio se encuentra en una fase temprana de publicacion. El modelo tiene 0 descargas y 0 likes en Hugging Face, y no se ha publicado informacion sobre licencia, idiomas soportados ni pipeline de inferencia.
 
 A pesar de la falta de especificaciones tecnicas, el proyecto resulta relevante en el contexto actual de automatizacion de la seguridad laboral, donde la deteccion automatica de EPI mediante vision por computador es una aplicacion creciente en la industria. La model card menciona anotaciones de estilo YOLO, lo que sugiere una posible arquitectura de la familia YOLO, aunque esto no se confirma explicitamente.
 
@@ -69,7 +69,7 @@ Estas estimaciones son orientativas y se basan en el comportamiento tipico de mo
 
 | Modelo | Arquitectura | Clases detectadas | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| momentarek1/Safety-Vest_Detection | No especificada (posible YOLO) | Chaleco de seguridad (1 clase) | No especificado | No disponible | HuggingFace (0 descargas) |
+| momentarek1/Safety-Vest_Detection | No especificada (posible YOLO) | Chaleco de seguridad (1 clase) | No especificado | No disponible | Hugging Face (0 descargas) |
 | Roboflow Safety Vests (v9) | No especificada (entrenado con Roboflow) | Chalecos de seguridad | 3897 imagenes open source | No especificada | Roboflow Universe |
 | PPE_detection (ZijianWang-ZW) | YOLO (8 modelos) | Persona, chaleco, 4 colores de casco | Dataset propio de alta calidad | No especificada | GitHub |
 
@@ -83,12 +83,12 @@ La comparativa se basa en la informacion disponible en los resultados de busqued
 - Sin benchmarks: la ausencia de metricas de evaluacion (mAP, precision, recall) impide comparar el modelo con alternativas establecidas.
 - Licencia no especificada: no se puede determinar si el modelo es utilizable en entornos comerciales o si tiene restricciones de uso.
 - Riesgo de alucinacion visual: como cualquier modelo de deteccion de objetos, puede producir falsos positivos (detectar chalecos donde no los hay) o falsos negativos (no detectar chalecos presentes), especialmente en condiciones de baja iluminacion o con oclusiones parciales.
-- Modelo sin adopcion: con 0 descargas y 0 likes en HuggingFace, el modelo no ha sido validado por la comunidad.
+- Modelo sin adopcion: con 0 descargas y 0 likes en Hugging Face, el modelo no ha sido validado por la comunidad.
 - Fecha de creacion futura: el modelo fue creado el 22 de agosto de 2026, lo que sugiere que podria tratarse de una publicacion reciente o de una fecha incorrecta en los metadatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/momentarek1/Safety-Vest_Detection
+- Modelo en Hugging Face: https://huggingface.co/momentarek1/Safety-Vest_Detection
 - Dataset Safety Vests de Roboflow (v9): https://universe.roboflow.com/roboflow-universe-projects/safety-vests/dataset/9
 - Modelo Safety Vests de Roboflow Universe: https://universe.roboflow.com/roboflow-universe-projects/safety-vests
 - Repositorio PPE_detection en GitHub: https://github.com/ZijianWang-ZW/PPE_detection

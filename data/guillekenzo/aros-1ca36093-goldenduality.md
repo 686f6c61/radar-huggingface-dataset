@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| guillekenzo/aros-1ca36093-GoldenDuality | LoRA DreamBooth sobre Krea 2 | no disponible (0,4 GB en disco) | no aplica | no disponible | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| guillekenzo/aros-1ca36093-GoldenDuality | LoRA DreamBooth sobre Krea 2 | no disponible (0,4 GB en disco) | no aplica | no disponible | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Otros LoRA de concepto para Krea 2 | LoRA | no disponible | no aplica | no disponible | variable | no disponible |
 | LoRA DreamBooth para otros modelos de difusion (p. ej. familias SDXL o FLUX) | LoRA | no disponible | no aplica | no disponible | variable | ampliamente disponibles, pero no comparables directamente por diferir el modelo base |
 
@@ -82,7 +82,7 @@ No se dispone de datos objetivos que permitan una comparacion cuantitativa con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-1ca36093-GoldenDuality
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-1ca36093-GoldenDuality
 - Modelo base declarado: krea/Krea-2-Raw (https://huggingface.co/krea/Krea-2-Raw)
 - Variante usada en los ejemplos: krea/Krea-2-Turbo (https://huggingface.co/krea/Krea-2-Turbo)
 - Documentacion de adaptadores LoRA en diffusers: https://huggingface.co/docs/diffusers/main/features/peft

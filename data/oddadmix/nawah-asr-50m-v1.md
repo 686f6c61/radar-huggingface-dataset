@@ -32,7 +32,7 @@ El entrenamiento se realizó en dos etapas: primero solo el proyector (3 épocas
 - Procesamiento de audio de duración variable: el número de tokens de audio se calcula dinámicamente (25 tokens por segundo), evitando el desperdicio de ventanas fijas.
 - Decodificación rápida: ~190x tiempo real en hardware de referencia.
 - Sin hipótesis vacías: el modelo siempre produce alguna salida, aunque pueda ser incorrecta.
-- Integración con el ecosistema HuggingFace Transformers mediante `Qwen2AudioForConditionalGeneration`.
+- Integración con el ecosistema Hugging Face Transformers mediante `Qwen2AudioForConditionalGeneration`.
 
 ## Casos de uso
 
@@ -67,9 +67,9 @@ El autor indica explícitamente que este modelo no supera a un Whisper afinado, 
 
 | Modelo | Parámetros | Contexto | WER (MASC) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Nawah-ASR-50M-v1** | 156,78M | 2048 | 0.6145 | Apache 2.0 | HuggingFace |
-| `oddadmix/whisper-small-arabic-dialectal` | 244M (Whisper-small) | 30 s de audio | 0.428 | MIT (Whisper) | HuggingFace |
-| `oddadmix/whisper-large-v3-turbo-arabic-dialectal` | 809M (Whisper-large-v3-turbo) | 30 s de audio | 0.344 | MIT (Whisper) | HuggingFace |
+| **Nawah-ASR-50M-v1** | 156,78M | 2048 | 0.6145 | Apache 2.0 | Hugging Face |
+| `oddadmix/whisper-small-arabic-dialectal` | 244M (Whisper-small) | 30 s de audio | 0.428 | MIT (Whisper) | Hugging Face |
+| `oddadmix/whisper-large-v3-turbo-arabic-dialectal` | 809M (Whisper-large-v3-turbo) | 30 s de audio | 0.344 | MIT (Whisper) | Hugging Face |
 
 La comparativa muestra que Nawah-ASR-50M-v1 es significativamente más pequeño y ligero que los Whisper afinados, pero con un WER mucho mayor. Su ventaja no es la precisión, sino la demostración de una arquitectura speech-LLM compacta y la posibilidad de ejecutarse en entornos con recursos muy limitados.
 
@@ -85,7 +85,7 @@ La comparativa muestra que Nawah-ASR-50M-v1 es significativamente más pequeño 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oddadmix/Nawah-ASR-50M-v1
+- Modelo en Hugging Face: https://huggingface.co/oddadmix/Nawah-ASR-50M-v1
 - Modelo base LLM: https://huggingface.co/oddadmix/50M-2048-Emhotob
 - Dataset MASC: https://huggingface.co/datasets/pain/MASC
 - Modelo hermano de visión: https://huggingface.co/oddadmix/Nawah-VL-50M

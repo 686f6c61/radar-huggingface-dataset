@@ -95,7 +95,7 @@ La comparacion relevante no es de capacidad del modelo sino de proposito: este r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ProprietaryLegal/dsv41-exact-acceptance-ceiling
+- Repositorio en Hugging Face: https://huggingface.co/ProprietaryLegal/dsv41-exact-acceptance-ceiling
 - Codigo y documentacion en GitHub: https://github.com/ProprietaryLegal/dsv41-exact-acceptance-ceiling
 - Ficha del stack de despliegue (2x DGX Spark + offload x86): https://huggingface.co/ProprietaryLegal/DeepSeek-V4.1-Flash-2xDGX-Spark-x86-offload
 - Coleccion completa de entradas: https://huggingface.co/collections/ProprietaryLegal/deepseek-v41-flash-on-2x-dgx-spark-x86-offload-6adab604a517b426ded3916e

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FinBERT-financial-sentiment es un modelo de clasificación de sentimiento financiero publicado en HuggingFace por el usuario Tipuls bajo el identificador `Tipuls/finbert-financial-sentiment`. Se trata de un ajuste fino (fine-tuning) sobre una arquitectura BERT, con 109.484.547 parámetros totales en formato safetensors, lo que corresponde a la configuración estándar de BERT-base (12 capas, 768 dimensiones ocultas). El repositorio ocupa 0,4 GB y acumula 18 descargas y 0 likes en el momento de la consulta.
+FinBERT-financial-sentiment es un modelo de clasificación de sentimiento financiero publicado en Hugging Face por el usuario Tipuls bajo el identificador `Tipuls/finbert-financial-sentiment`. Se trata de un ajuste fino (fine-tuning) sobre una arquitectura BERT, con 109.484.547 parámetros totales en formato safetensors, lo que corresponde a la configuración estándar de BERT-base (12 capas, 768 dimensiones ocultas). El repositorio ocupa 0,4 GB y acumula 18 descargas y 0 likes en el momento de la consulta.
 
 El modelo está pensado para la tarea de análisis de sentimiento aplicada a textos del dominio financiero, un caso de uso clásico del ecosistema FinBERT, donde la terminología específica (por ejemplo, "downgrade", "beat expectations" o "guidance cut") tiene connotaciones distintas al lenguaje general. La model card del autor es prácticamente vacía: solo declara la licencia, sin información sobre el dataset de entrenamiento, los idiomas soportados ni el pipeline declarado.
 
@@ -81,5 +81,5 @@ La comparación con los FinBERT de referencia (ProsusAI, yiyanghkust) es la más
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tipuls/finbert-financial-sentiment
+- Hugging Face: https://huggingface.co/Tipuls/finbert-financial-sentiment
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

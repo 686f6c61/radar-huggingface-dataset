@@ -77,7 +77,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- [HuggingFace - Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_BN-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_BN-SPECIAL_SPLIT)
+- [Hugging Face - Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_BN-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_BN-SPECIAL_SPLIT)
 - [GitHub - Qwen3.8-27B (Alibaba)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [AMD - Run Qwen 3.8 27B on AMD Ryzen AI Max](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [YottaLabs - Qwen 3.8 27B: Specs, Hardware Requirements](https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026)

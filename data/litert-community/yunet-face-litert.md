@@ -98,7 +98,7 @@ Nota: los datos de BlazeFace y RetinaFace son estimaciones basadas en conocimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/YuNet-Face-LiteRT
+- Hugging Face: https://huggingface.co/litert-community/YuNet-Face-LiteRT
 - Repositorio del modelo base (libfacedetection): https://github.com/ShiqiYu/libfacedetection
 - LiteRT (sucesor de TensorFlow Lite): https://github.com/google-ai-edge/litert
 - Paper de YuNet: https://www.researchgate.net/publication/370122920_YuNet_A_Tiny_Millisecond-level_Face_Detector

@@ -86,7 +86,7 @@ No se han proporcionado datos de modelos comparables en la informacion disponibl
 
 | Modelo | Parametros | Contexto | Precision validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| indian-name-gender-classifier | 22.146 | no aplica | 81,8% | MIT | HuggingFace (safetensors, ONNX, nativo) |
+| indian-name-gender-classifier | 22.146 | no aplica | 81,8% | MIT | Hugging Face (safetensors, ONNX, nativo) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No se han proporcionado datos de modelos comparables en la informacion disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sajalmadan09/indian-name-gender-classifier
+- Modelo en Hugging Face: https://huggingface.co/sajalmadan09/indian-name-gender-classifier
 - Repositorio Sajal Labs: https://github.com/Sajalmadan09/sajal-labs
 - Experimento exp9-gender-classifier: https://github.com/Sajalmadan09/sajal-labs/tree/main/research/experiments/exp9-gender-classifier
 - Experimento exp10-e2e-native-pipeline: https://github.com/Sajalmadan09/sajal-labs/tree/main/research/experiments/exp10-e2e-native-pipeline

@@ -93,7 +93,7 @@ La ventaja diferencial de esta conversión frente a la variante MLX 4-bit es el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vakharwalad23/DeepSeek-R1-0528-Qwen3-8B-Anemone
+- Modelo en Hugging Face: https://huggingface.co/vakharwalad23/DeepSeek-R1-0528-Qwen3-8B-Anemone
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 - Repositorio Anemone: https://github.com/vakharwalad23/Anemone
 - Benchmarks de Anemone: https://github.com/vakharwalad23/Anemone/blob/main/docs/benchmarks.md

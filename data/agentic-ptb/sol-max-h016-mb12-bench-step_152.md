@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h016.mb12-bench.step_152
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h016.mb12-bench.step_152
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Referencias de la búsqueda web (no directamente relacionadas con el modelo, pero útiles para contexto):
   - GPT-5.6 de OpenAI: https://openai.com/index/gpt-5-6/

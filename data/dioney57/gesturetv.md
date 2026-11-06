@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GestureTV es un repositorio publicado en HuggingFace por el usuario dioney57 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su ficha no declara pipeline, idiomas soportados ni ningún otro metadato técnico más allá de la licencia y la región (us). La model card se limita a repetir el campo `license: apache-2.0`, sin descripción, sin ejemplos de uso y sin referencia a paper, repositorio de código o conjunto de datos asociado.
+GestureTV es un repositorio publicado en Hugging Face por el usuario dioney57 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su ficha no declara pipeline, idiomas soportados ni ningún otro metadato técnico más allá de la licencia y la región (us). La model card se limita a repetir el campo `license: apache-2.0`, sin descripción, sin ejemplos de uso y sin referencia a paper, repositorio de código o conjunto de datos asociado.
 
 La información disponible no permite confirmar si el artefacto es un modelo de lenguaje, un modelo multimodal, un clasificador, un dataset o un Space. Tampoco hay datos sobre arquitectura, número de parámetros, longitud de contexto, tokenizador o formato de pesos. Las fechas de creación y actualización son idénticas (2026-09-23T01:02:00Z), lo que es compatible con un repositorio creado en una sola operación y no modificado después.
 
@@ -82,6 +82,6 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dioney57/GestureTV
+- Repositorio en Hugging Face: https://huggingface.co/dioney57/GestureTV
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web. Los resultados recuperados trataban sobre las medidas del papel A4 y no guardan relación con el artefacto, por lo que se descartan.

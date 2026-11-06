@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aufjsufjaujda3/a2a` es un repositorio publicado en HuggingFace por el usuario `aufjsufjaujda3`, con un total de 4.022.468.096 parámetros (aproximadamente 4.02 mil millones). El repositorio tiene un tamaño de 12.8 GB y está etiquetado con `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que sugiere que contiene pesos en formato GGUF y está orientado a conversación. Sin embargo, no se dispone de información pública sobre su arquitectura, licencia, idiomas, datos de entrenamiento o capacidades específicas. El nombre "a2a" coincide con el protocolo Agent2Agent (A2A), un estándar abierto para comunicación entre agentes de IA, pero no hay evidencia de que este modelo implemente dicho protocolo. En el momento de la consulta, el repositorio cuenta con 288 descargas y ninguna valoración, y fue creado en octubre de 2025 con una actualización posterior en agosto de 2026.
+El modelo `aufjsufjaujda3/a2a` es un repositorio publicado en Hugging Face por el usuario `aufjsufjaujda3`, con un total de 4.022.468.096 parámetros (aproximadamente 4.02 mil millones). El repositorio tiene un tamaño de 12.8 GB y está etiquetado con `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que sugiere que contiene pesos en formato GGUF y está orientado a conversación. Sin embargo, no se dispone de información pública sobre su arquitectura, licencia, idiomas, datos de entrenamiento o capacidades específicas. El nombre "a2a" coincide con el protocolo Agent2Agent (A2A), un estándar abierto para comunicación entre agentes de IA, pero no hay evidencia de que este modelo implemente dicho protocolo. En el momento de la consulta, el repositorio cuenta con 288 descargas y ninguna valoración, y fue creado en octubre de 2025 con una actualización posterior en agosto de 2026.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se dispone de información sobre modelos comparables. Dado que se desconoce l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aufjsufjaujda3/a2a
+- Repositorio Hugging Face: https://huggingface.co/aufjsufjaujda3/a2a
 - Página del protocolo A2A (referencia externa, no específica del modelo): https://a2a-protocol.org/latest/
 - GitHub del protocolo A2A: https://github.com/a2aproject/A2A
 - Sitio alternativo del protocolo A2A: https://a2aprotocol.ai/

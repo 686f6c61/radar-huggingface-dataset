@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MiniMax-M2.5-abliterated es una versión modificada del modelo MiniMax-Text-01 (también conocido como MiniMax M2.5), desarrollada por el usuario wangzhang en HuggingFace. El modelo original, creado por la empresa MiniMax, es un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 228.689.764.864 parámetros totales, diseñado para tareas de codificación, uso de herramientas agéntico, búsqueda y trabajo de oficina, según la descripción en el catálogo de Microsoft Foundry. Esta versión concreta aplica una técnica de "abliteration" que elimina los mecanismos de rechazo (refusal) del modelo, permitiendo generar respuestas sin censura ante solicitudes que normalmente serían bloqueadas.
+MiniMax-M2.5-abliterated es una versión modificada del modelo MiniMax-Text-01 (también conocido como MiniMax M2.5), desarrollada por el usuario wangzhang en Hugging Face. El modelo original, creado por la empresa MiniMax, es un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 228.689.764.864 parámetros totales, diseñado para tareas de codificación, uso de herramientas agéntico, búsqueda y trabajo de oficina, según la descripción en el catálogo de Microsoft Foundry. Esta versión concreta aplica una técnica de "abliteration" que elimina los mecanismos de rechazo (refusal) del modelo, permitiendo generar respuestas sin censura ante solicitudes que normalmente serían bloqueadas.
 
-La relevancia de este modelo radica en que la abliteración en arquitecturas MoE es técnicamente compleja, y el autor declara haber logrado un 95% de eliminación de rechazo tras probar con más de 1500 prompts dañinos en diversas categorías. El modelo está pensado para investigadores y desarrolladores que necesitan estudiar el comportamiento de modelos sin restricciones de seguridad, aunque su uso conlleva riesgos importantes. El acceso está restringido en HuggingFace y requiere aceptar condiciones adicionales. La licencia es "minimax-model-license", una licencia propietaria de MiniMax, y los idiomas soportados son inglés y chino.
+La relevancia de este modelo radica en que la abliteración en arquitecturas MoE es técnicamente compleja, y el autor declara haber logrado un 95% de eliminación de rechazo tras probar con más de 1500 prompts dañinos en diversas categorías. El modelo está pensado para investigadores y desarrolladores que necesitan estudiar el comportamiento de modelos sin restricciones de seguridad, aunque su uso conlleva riesgos importantes. El acceso está restringido en Hugging Face y requiere aceptar condiciones adicionales. La licencia es "minimax-model-license", una licencia propietaria de MiniMax, y los idiomas soportados son inglés y chino.
 
 ## Especificaciones técnicas
 
@@ -67,12 +67,12 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - Sesgos conocidos: no se dispone de información sobre sesgos específicos, pero al ser un modelo entrenado con datos de internet, es probable que herede sesgos sociales y culturales.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede inventar información, especialmente en temas especializados.
 - Limitaciones de idioma: solo soporta inglés y chino; no se garantiza un rendimiento adecuado en otros idiomas.
-- Restricciones de licencia: la licencia "minimax-model-license" es propietaria y puede imponer restricciones al uso comercial o a la redistribución. Además, el acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones.
+- Restricciones de licencia: la licencia "minimax-model-license" es propietaria y puede imponer restricciones al uso comercial o a la redistribución. Además, el acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones.
 - Advertencia para producción: no se recomienda su uso en aplicaciones orientadas al usuario final sin filtros externos robustos, dado el alto riesgo de generar contenido inapropiado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/MiniMax-M2.5-abliterated
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/MiniMax-M2.5-abliterated
 - Repositorio oficial de MiniMax M2.5: https://github.com/MiniMax-AI/MiniMax-M2.5
 - Catálogo de Microsoft Foundry (descripción del modelo base): https://ai.azure.com/catalog/models/FW-MiniMax-M2.5
 - Sitio web de MiniMax: https://www.minimax.io/

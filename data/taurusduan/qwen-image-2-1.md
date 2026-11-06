@@ -101,7 +101,7 @@ No se dispone de datos sobre modelos alternativos de la misma categoria (por eje
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/Qwen-Image-2.1
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/Qwen-Image-2.1
 - Modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Workflow text-to-image de ComfyUI: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_t2i.json

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Massyzs/videoeditor-14b-long es un modelo de edición de vídeo guiada por instrucciones en lenguaje natural, publicado en HuggingFace por el usuario Massyzs. Se distribuye como un fine-tune del modelo linyq/kiwi-edit-5b-instruct-only-diffusers y se enmarca en la familia Wan 2.2, una línea de modelos generativos de vídeo. La tarea principal es video-to-video: dado un vídeo de entrada y una instrucción textual, el modelo produce un vídeo editado que aplica dicha instrucción preservando la estructura temporal del original.
+Massyzs/videoeditor-14b-long es un modelo de edición de vídeo guiada por instrucciones en lenguaje natural, publicado en Hugging Face por el usuario Massyzs. Se distribuye como un fine-tune del modelo linyq/kiwi-edit-5b-instruct-only-diffusers y se enmarca en la familia Wan 2.2, una línea de modelos generativos de vídeo. La tarea principal es video-to-video: dado un vídeo de entrada y una instrucción textual, el modelo produce un vídeo editado que aplica dicha instrucción preservando la estructura temporal del original.
 
 El nombre del repositorio sugiere un tamaño de 14.000 millones de parámetros y una orientación a secuencias largas ("long"), aunque la información pública disponible no confirma explícitamente ni el número de parámetros ni la longitud máxima de contexto temporal. El repositorio ocupa 21,9 GB, un tamaño coherente con pesos en precisión reducida (probablemente bf16 o fp16) para un modelo de esa magnitud, aunque también podría deberse a la inclusión de múltiples componentes (VAE, text encoder, transformer de difusión).
 
-La relevancia del modelo radica en su enfoque de edición instruccional sobre vídeo, una tarea menos cubierta que la generación texto-a-vídeo. Al estar etiquetado con "mixture-of-experts", apunta a una arquitectura de difusión con componentes MoE, aunque no se detalla la configuración. La licencia Apache 2.0 facilita su uso comercial, si bien el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. No se han publicado resultados de benchmarks ni documentación técnica adicional en la información disponible.
+La relevancia del modelo radica en su enfoque de edición instruccional sobre vídeo, una tarea menos cubierta que la generación texto-a-vídeo. Al estar etiquetado con "mixture-of-experts", apunta a una arquitectura de difusión con componentes MoE, aunque no se detalla la configuración. La licencia Apache 2.0 facilita su uso comercial, si bien el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. No se han publicado resultados de benchmarks ni documentación técnica adicional en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ No se dispone de información sobre el volumen de datos de entrenamiento, la com
 
 - Edición de vídeo guiada por instrucciones en lenguaje natural (video-to-video): aplica transformaciones descritas en texto sobre un vídeo de entrada.
 - Preservación de la estructura temporal del vídeo original durante la edición, propia de los modelos de edición instruccional.
-- Pipeline declarado como video-to-video en HuggingFace.
+- Pipeline declarado como video-to-video en Hugging Face.
 - Posible soporte de secuencias largas (según el sufijo "long"), sin confirmación documental.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multimodales adicionales (audio, texto generativo).
 - Capacidades multilingües: no disponibles.
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Massyzs/videoeditor-14b-long | 14B (según nombre) | no disponible | Edición de vídeo instruccional (video-to-video) | Apache 2.0 | Gated en HuggingFace |
-| linyq/kiwi-edit-5b-instruct-only-diffusers (base) | 5B | no disponible | Edición de vídeo instruccional | no disponible | HuggingFace |
+| Massyzs/videoeditor-14b-long | 14B (según nombre) | no disponible | Edición de vídeo instruccional (video-to-video) | Apache 2.0 | Gated en Hugging Face |
+| linyq/kiwi-edit-5b-instruct-only-diffusers (base) | 5B | no disponible | Edición de vídeo instruccional | no disponible | Hugging Face |
 | Wan 2.2 (familia) | no disponible | no disponible | Generación/edición de vídeo | no disponible | no disponible |
 
 La comparación con alternativas de la misma categoría (por ejemplo, otros modelos de edición de vídeo instruccional) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Ausencia de model card detallada: no se documentan datos de entrenamiento, sesgos, evaluación ni limitaciones conocidas, lo que dificulta su validación para producción.
 - Riesgo de alucinación visual: como modelo generativo de difusión, puede introducir artefactos, inconsistencias temporales o alteraciones no solicitadas en el vídeo.
 - Sesgos desconocidos: al no publicarse la composición del dataset, no es posible evaluar sesgos demográficos, culturales o de otro tipo.
@@ -81,5 +81,5 @@ La comparación con alternativas de la misma categoría (por ejemplo, otros mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Massyzs/videoeditor-14b-long
+- Hugging Face: https://huggingface.co/Massyzs/videoeditor-14b-long
 - Modelo base: https://huggingface.co/linyq/kiwi-edit-5b-instruct-only-diffusers

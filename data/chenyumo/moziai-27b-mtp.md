@@ -15,7 +15,7 @@ La relevancia de este modelo radica en su enfoque en el dominio financiero, dond
 | Parametros activos | No aplica (modelo Dense) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | MoziSmartBit (cuantización híbrida propia), GGUF (Q4_K_M estándar también mencionado) |
-| Idiomas soportados | Chino, inglés (la tarjeta del modelo afirma 201 idiomas, pero la ficha de HuggingFace solo lista zh, en) |
+| Idiomas soportados | Chino, inglés (la tarjeta del modelo afirma 201 idiomas, pero la ficha de Hugging Face solo lista zh, en) |
 | Licencia | other (la tarjeta indica uso comercial gratuito) |
 | Formato de pesos | GGUF (llama-cpp) |
 
@@ -64,7 +64,7 @@ No se dispone de datos comparativos con modelos de la misma categoría (27B Dens
 
 ## Limitaciones y advertencias
 
-- La licencia se indica como "other" en HuggingFace, aunque la tarjeta del modelo afirma uso comercial gratuito; se recomienda revisar los términos exactos antes de usar en producción.
+- La licencia se indica como "other" en Hugging Face, aunque la tarjeta del modelo afirma uso comercial gratuito; se recomienda revisar los términos exactos antes de usar en producción.
 - El modelo está especializado en finanzas, pero puede presentar alucinaciones en dominios fuera de su área de entrenamiento, especialmente en información factual no financiera.
 - La longitud de contexto no está documentada, lo que puede limitar su uso en tareas que requieran ventanas largas.
 - Aunque la tarjeta afirma soporte de 201 idiomas, la ficha oficial solo lista chino e inglés; el rendimiento en otros idiomas no está verificado.
@@ -73,7 +73,7 @@ No se dispone de datos comparativos con modelos de la misma categoría (27B Dens
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chenyumo/moziAI-27B-MTP
+- Hugging Face: https://huggingface.co/chenyumo/moziAI-27B-MTP
 - GitHub: https://github.com/chenyumo166/moziAI-27B-MTP
 - Modelo relacionado (MoE): https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored
 - Modelo relacionado en ModelScope: https://www.modelscope.cn/models/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored

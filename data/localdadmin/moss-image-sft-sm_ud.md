@@ -6,7 +6,7 @@ MOSS-Image-SFT-SM_UD es un repositorio de redistribución (repackaging) publicad
 
 El interés de esta publicación es práctico: agrupa en un único repositorio los tres artefactos necesarios para ejecutar un pipeline texto-a-imagen completo, evitando al usuario tener que descargar por separado el modelo de difusión, el text encoder y el VAE desde repositorios distintos. El tamaño del repo (20,6 GB) y la elección de cuantización Q3_K_XL indican un objetivo claro de reducir requisitos de VRAM frente a los pesos originales en precisión completa.
 
-La información pública disponible es muy limitada: el repositorio no incluye model card técnica propia, no declara idiomas soportados, no publica benchmarks y registra cero descargas en el momento de la consulta. Los datos que siguen se derivan del contenido del repositorio, de los metadatos de HuggingFace y de los modelos base referenciados.
+La información pública disponible es muy limitada: el repositorio no incluye model card técnica propia, no declara idiomas soportados, no publica benchmarks y registra cero descargas en el momento de la consulta. Los datos que siguen se derivan del contenido del repositorio, de los metadatos de Hugging Face y de los modelos base referenciados.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localdadmin/MOSS-Image-SFT-SM_UD
+- Repositorio Hugging Face: https://huggingface.co/localdadmin/MOSS-Image-SFT-SM_UD
 - Modelo base MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Modelo base MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Cuantización GGUF de MOSS-Image-Base: https://huggingface.co/unsloth/MOSS-Image-Base-GGUF

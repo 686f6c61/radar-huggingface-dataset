@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYI-POCKET-256 es un modelo de generación de imágenes a partir de texto (text-to-image) de pequeño tamaño, entrenado desde cero y diseñado para funcionar en hardware de muy bajas prestaciones, concretamente en una consola portátil ARM de bajo consumo (R36H). Lo desarrolla el usuario de HuggingFace caikybaldo999 y se publica bajo licencia Apache 2.0. El modelo genera imágenes de 256x256 píxeles y está destilado para producir resultados en tan solo 4 pasos de muestreo, sin necesidad de classifier-free guidance (CFG) en inferencia.
+ZYI-POCKET-256 es un modelo de generación de imágenes a partir de texto (text-to-image) de pequeño tamaño, entrenado desde cero y diseñado para funcionar en hardware de muy bajas prestaciones, concretamente en una consola portátil ARM de bajo consumo (R36H). Lo desarrolla el usuario de Hugging Face caikybaldo999 y se publica bajo licencia Apache 2.0. El modelo genera imágenes de 256x256 píxeles y está destilado para producir resultados en tan solo 4 pasos de muestreo, sin necesidad de classifier-free guidance (CFG) en inferencia.
 
 La relevancia del modelo reside en su enfoque de eficiencia extrema: entrena un VAE, un text encoder y un DiT (Diffusion Transformer) completos en aproximadamente 2 horas sobre una única GPU RTX Pro 6000, y distribuye los pesos en formato ONNX (incluyendo variantes int8) para facilitar el despliegue en dispositivos con recursos limitados. El repositorio ocupa solo 0,2 GB, lo que lo sitúa en la categoría de modelos "pocket" orientados a inferencia en el borde (edge).
 
@@ -81,6 +81,6 @@ La comparación es orientativa: ZYI-POCKET-256 se distingue por su tamaño míni
 
 ## Enlaces
 
-- [HuggingFace: caikybaldo999/zyi-pocket-256](https://huggingface.co/caikybaldo999/zyi-pocket-256)
+- [Hugging Face: caikybaldo999/zyi-pocket-256](https://huggingface.co/caikybaldo999/zyi-pocket-256)
 - Dataset de entrenamiento: [LucasFang/FLUX-Reason-6M](https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

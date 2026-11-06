@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Cogitator-9B-032550-Research-Challenge-GGUF es la versión cuantizada en formato GGUF del modelo Dark-Cogitator-9B-032550-Research-Challenge, publicado por el usuario Goro64 en HuggingFace. Se trata de un fine-tuning mediante LoRA sobre una base identificada en los metadatos como `qwen3_5`, con 8.953.803.264 parámetros totales (aproximadamente 9B) y orientado a experimentación e investigación en evaluación de comportamiento. El modelo se distribuye bajo licencia Apache 2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace.
+Dark-Cogitator-9B-032550-Research-Challenge-GGUF es la versión cuantizada en formato GGUF del modelo Dark-Cogitator-9B-032550-Research-Challenge, publicado por el usuario Goro64 en Hugging Face. Se trata de un fine-tuning mediante LoRA sobre una base identificada en los metadatos como `qwen3_5`, con 8.953.803.264 parámetros totales (aproximadamente 9B) y orientado a experimentación e investigación en evaluación de comportamiento. El modelo se distribuye bajo licencia Apache 2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de esta ficha es limitada desde el punto de vista de producción: el propio autor etiqueta el modelo como `experimental`, `research`, `fine-tuning-challenge`, `behavioral-evaluation` y `non-production`. No se han publicado resultados de benchmarks, detalles del dataset de entrenamiento ni documentación técnica sobre la arquitectura interna más allá de la referencia a la familia Qwen 3.5. La pipeline declarada es `image-text-to-text`, lo que sugiere capacidades multimodales de entrada, aunque no se especifica el módulo de visión ni su configuración.
 
@@ -46,7 +46,7 @@ La pipeline `image-text-to-text` implica que el modelo acepta imágenes además 
 - Reproducción de experimentos de fine-tuning con LoRA: al publicarse tanto el modelo base como la versión GGUF, un investigador puede replicar el pipeline de cuantización con imatrix y analizar la degradación de calidad respecto a los safetensors originales.
 - Pruebas de pipelines multimodales en local: la pipeline `image-text-to-text` permite validar flujos de inferencia imagen-texto en llama.cpp u otras herramientas compatibles con GGUF, siempre en entornos de desarrollo y no en producción.
 - Evaluación de cuantizaciones GGUF: el repositorio permite comparar distintas variantes de cuantización sobre un mismo modelo de ~9B y medir el impacto en perplejidad o en calidad conversacional, útil para calibrar decisiones de despliegue en otros modelos.
-- Docencia y formación: sirve como ejemplo práctico de publicación de un fine-tuning LoRA con cuantización GGUF y control de acceso gated en HuggingFace, para cursos sobre ciclo de vida de modelos open source.
+- Docencia y formación: sirve como ejemplo práctico de publicación de un fine-tuning LoRA con cuantización GGUF y control de acceso gated en Hugging Face, para cursos sobre ciclo de vida de modelos open source.
 - Prototipado conversacional en inglés con restricciones de hardware: al ser un modelo de ~9B en GGUF, puede ejecutarse en GPU de consumo para validar ideas de chatbot antes de invertir en modelos mayores, aceptando que su naturaleza experimental impide usarlo como base de producto.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 ## Limitaciones y advertencias
 
 - Modelo etiquetado como `non-production` y `experimental` por el propio autor: no debe usarse en cargas de trabajo productivas sin una evaluación exhaustiva previa.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar la reproducibilidad automatizada.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar la reproducibilidad automatizada.
 - Idiomas: únicamente inglés según los metadatos; no hay evidencia de soporte para castellano u otros idiomas.
 - Sesgos conocidos: no documentados, pero al ser un fine-tuning de comportamiento sin información sobre el dataset, existe riesgo de sesgos no caracterizados.
 - Riesgo de alucinación: no evaluado; sin benchmarks ni evaluaciones publicadas no es posible cuantificarlo.
@@ -85,6 +85,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Goro64/Dark-Cogitator-9B-032550-Research-Challenge-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Goro64/Dark-Cogitator-9B-032550-Research-Challenge-GGUF
 - Modelo base (safetensors): https://huggingface.co/Goro64/Dark-Cogitator-9B-032550-Research-Challenge
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

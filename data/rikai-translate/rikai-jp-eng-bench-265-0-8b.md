@@ -89,11 +89,11 @@ Resultados del juez LLM (Claude Sonnet 5.5, 500 items ciegos, escala 0-100):
 
 | Modelo | Parametros | Contexto | Licencia | Calidad (juez LLM) | Disponibilidad |
 |---|---|---|---|---|---|
-| rikai jp<->eng Bench 265 .8B | 0.8B | No disponible | MIT | 60.3 | HuggingFace |
-| CAT-Translate-1.4B | 1.4B | No disponible | No disponible | 60.6 | HuggingFace |
-| CAT-Translate-3.3B | 3.3B | No disponible | No disponible | No evaluado en juez LLM | HuggingFace |
-| HY-MT1.5-1.8B | 1.8B | No disponible | No disponible | 58.0 | HuggingFace |
-| Gemma-2-2B-jpn-translate | 2B | No disponible | No disponible | 55.4 | HuggingFace |
+| rikai jp<->eng Bench 265 .8B | 0.8B | No disponible | MIT | 60.3 | Hugging Face |
+| CAT-Translate-1.4B | 1.4B | No disponible | No disponible | 60.6 | Hugging Face |
+| CAT-Translate-3.3B | 3.3B | No disponible | No disponible | No evaluado en juez LLM | Hugging Face |
+| HY-MT1.5-1.8B | 1.8B | No disponible | No disponible | 58.0 | Hugging Face |
+| Gemma-2-2B-jpn-translate | 2B | No disponible | No disponible | 55.4 | Hugging Face |
 
 El modelo de 0.8B iguala o supera en calidad a modelos de 1.4B-2B en las metricas de traduccion, con un 6.2% de errores criticos frente al 7.2-14% de alternativas de mayor tamano. Su principal ventaja competitiva es la combinacion de tamano reducido, licencia MIT y calidad cercana a modelos de 3.3B.
 
@@ -110,7 +110,7 @@ El modelo de 0.8B iguala o supera en calidad a modelos de 1.4B-2B en las metrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rikai-translate/rikai-jp-eng-Bench-265-0.8B
+- Modelo en Hugging Face: https://huggingface.co/rikai-translate/rikai-jp-eng-Bench-265-0.8B
 - Modelo base CyberAgent CAT-Translate-0.8B: https://huggingface.co/cyberagent/CAT-Translate-0.8b
 - Resultados por dominio: https://huggingface.co/rikai-translate/rikai-jp-eng-Bench-265-0.8B/blob/main/per_domain_results.md
 - Build MLX 8-bit: https://huggingface.co/rikai-translate/rikai-jp-eng-Bench-265-0.8B/tree/main/mlx-8bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Psi-ngh8/my-image-captioning40 es un repositorio de HuggingFace publicado por el usuario Psi-ngh8 que, segun su propia model card, no contiene un modelo entrenado sino una nota de investigacion sobre generacion de descripciones de imagenes (image captioning). El repositorio se describe explicitamente como exploratorio: organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y el autor advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. No se anuncia ninguna mejora de benchmarks, ninguna ablacion completada, ni codigo o checkpoint liberado.
+Psi-ngh8/my-image-captioning40 es un repositorio de Hugging Face publicado por el usuario Psi-ngh8 que, segun su propia model card, no contiene un modelo entrenado sino una nota de investigacion sobre generacion de descripciones de imagenes (image captioning). El repositorio se describe explicitamente como exploratorio: organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y el autor advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. No se anuncia ninguna mejora de benchmarks, ninguna ablacion completada, ni codigo o checkpoint liberado.
 
 Existe una contradiccion relevante entre los metadatos y el contenido declarado. Las etiquetas del repositorio incluyen `safetensors`, `transformer` e `image-captioning`, y los metadatos de safetensors indican 24.832 parametros totales, pero el tamano del repositorio es de 0,0 GB y la model card solo lista dos ficheros: `paper_notes.md` y `README.md`. Es decir, no hay pesos, ni configuracion de modelo, ni tokenizador, ni pipeline de inferencia. La cifra de parametros es, por tanto, inconsistente con el contenido descrito por el propio autor.
 
@@ -88,6 +88,6 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Psi-ngh8/my-image-captioning40
+- Repositorio en Hugging Face: https://huggingface.co/Psi-ngh8/my-image-captioning40
 - Fichero principal de la nota: `paper_notes.md` (referenciado en la model card, no accesible desde la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web. Los resultados obtenidos (https://www.psi.fr/, https://calculife.com/fr/convertisseur-en-ligne-de-psi-en-bar/, https://solidariteinternationale.org/, https://fr.wikipedia.org/wiki/Psi y https://www.psi.org/fr/) corresponden a entidades homonimas sin relacion con el modelo y se descartan como fuentes.

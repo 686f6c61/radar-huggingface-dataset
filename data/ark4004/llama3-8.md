@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ark4004/llama3.8` es un repositorio de HuggingFace que aloja los pesos de **Qwen3.8-27B**, un modelo de lenguaje causal multimodal (texto e imagen) desarrollado por la comunidad Qwen, con arquitectura híbrida que combina atención lineal (Gated DeltaNet) y atención clásica (Gated Attention). A pesar del nombre del repositorio, no se trata de un modelo de la familia Llama, sino de la serie Qwen3.8, sucesora de Qwen3.5 y Qwen3.6. El modelo está diseñado para tareas de codificación, trabajo profesional, investigación y ejecución de agentes de larga duración, con un contexto nativo de 262 144 tokens extensible hasta 1 000 000.
+El modelo `ark4004/llama3.8` es un repositorio de Hugging Face que aloja los pesos de **Qwen3.8-27B**, un modelo de lenguaje causal multimodal (texto e imagen) desarrollado por la comunidad Qwen, con arquitectura híbrida que combina atención lineal (Gated DeltaNet) y atención clásica (Gated Attention). A pesar del nombre del repositorio, no se trata de un modelo de la familia Llama, sino de la serie Qwen3.8, sucesora de Qwen3.5 y Qwen3.6. El modelo está diseñado para tareas de codificación, trabajo profesional, investigación y ejecución de agentes de larga duración, con un contexto nativo de 262 144 tokens extensible hasta 1 000 000.
 
 El modelo es un modelo denso de 27 000 millones de parámetros (27,78 mil millones según los pesos safetensors), con un encoder de visión integrado que permite comprensión de imágenes y vídeos. Su licencia Apache 2.0 facilita su uso comercial y su integración en herramientas como Transformers, vLLM o SGLang. El repositorio tiene cero descargas y cero likes, lo que sugiere que es una publicación reciente o poco difundida. La información técnica disponible es parcial, ya que la model card incluye detalles de arquitectura y algunos benchmarks de texto, pero no resultados completos.
 
@@ -82,6 +82,6 @@ No hay datos suficientes para una comparación técnica detallada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [ark4004/llama3.8](https://huggingface.co/ark4004/llama3.8)
+- Repositorio Hugging Face: [ark4004/llama3.8](https://huggingface.co/ark4004/llama3.8)
 - Servicio alojado Qwen Cloud (mención en la model card): [Qwen3.8-27B Overview](https://www.qwencloud.com/models/qwen3.8-27b) (próximamente disponible)
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

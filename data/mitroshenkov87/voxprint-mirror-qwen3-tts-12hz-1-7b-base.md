@@ -91,7 +91,7 @@ Nota: los datos de parametros y licencia de las variantes comparadas no figuran 
 
 ## Enlaces
 
-- HuggingFace (mirror): https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-tts-12hz-1.7b-base
+- Hugging Face (mirror): https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-tts-12hz-1.7b-base
 - Modelo original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio de la aplicacion Voxprint: https://github.com/Mitroshenkov87/voxprint
 - Articulo de referencia (tag arxiv): arxiv:2601.15621

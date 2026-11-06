@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3-Embedding-0.6B-MLX-AXQ-MXFP8 (este) | 595,78 M | 32.768 | safetensors MLX | apache-2.0 | HuggingFace (36 descargas) |
-| [AXQ 4bit (hermano)](https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-4bit) | 595,78 M (base) | 32.768 (base) | safetensors MLX | apache-2.0 | HuggingFace; BPW exacto no disponible en esta informacion |
-| [AXQ 8bit (hermano)](https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-8bit) | 595,78 M (base) | 32.768 (base) | safetensors MLX | apache-2.0 | HuggingFace; BPW exacto no disponible en esta informacion |
-| Qwen/Qwen3-Embedding-0.6B (base BF16) | 595,78 M | 32.768 | safetensors | apache-2.0 | HuggingFace; rendimiento comparativo no disponible |
+| AX-Qwen3-Embedding-0.6B-MLX-AXQ-MXFP8 (este) | 595,78 M | 32.768 | safetensors MLX | apache-2.0 | Hugging Face (36 descargas) |
+| [AXQ 4bit (hermano)](https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-4bit) | 595,78 M (base) | 32.768 (base) | safetensors MLX | apache-2.0 | Hugging Face; BPW exacto no disponible en esta informacion |
+| [AXQ 8bit (hermano)](https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-8bit) | 595,78 M (base) | 32.768 (base) | safetensors MLX | apache-2.0 | Hugging Face; BPW exacto no disponible en esta informacion |
+| Qwen/Qwen3-Embedding-0.6B (base BF16) | 595,78 M | 32.768 | safetensors | apache-2.0 | Hugging Face; rendimiento comparativo no disponible |
 
 No se dispone de datos de benchmarks que permitan comparar la calidad de este checkpoint frente a sus hermanos 4bit/8bit ni frente al modelo base en BF16; la comparacion queda limitada a parametros, contexto, formato y licencia.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de este ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-MXFP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/tree/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-4bit
 - Hermano 8bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-8bit

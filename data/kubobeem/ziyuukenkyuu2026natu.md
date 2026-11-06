@@ -23,7 +23,7 @@ Su relevancia radica en ofrecer una alternativa ligera (698 MB en Q4_K_M) para t
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `LiquidAI/LFM2.5-1.2B-Instruct`, un modelo de lenguaje de 1.2 mil millones de parametros orientado a instrucciones. Sobre esta base se aplicó un ajuste fino con QLoRA (quantized Low-Rank Adaptation) de 4 bits, utilizando un conjunto de datos de 96 208 ejemplos en japones extraidos de datasets de HuggingFace. El entrenamiento se realizó durante una sola época, con una duración aproximada de 8 horas en una RTX 4060 con 8 GB de VRAM.
+El modelo parte de `LiquidAI/LFM2.5-1.2B-Instruct`, un modelo de lenguaje de 1.2 mil millones de parametros orientado a instrucciones. Sobre esta base se aplicó un ajuste fino con QLoRA (quantized Low-Rank Adaptation) de 4 bits, utilizando un conjunto de datos de 96 208 ejemplos en japones extraidos de datasets de Hugging Face. El entrenamiento se realizó durante una sola época, con una duración aproximada de 8 horas en una RTX 4060 con 8 GB de VRAM.
 
 La técnica de QLoRA permite adaptar el modelo con un coste computacional reducido, aunque el autor reporta que el resultado final presenta una mejora en la fluidez japonesa pero un detrimento en capacidades de razonamiento y conocimiento general. No se mencionan innovaciones arquitectónicas adicionales; el modelo sigue siendo un transformer estándar con atención completa, sin mecanismos especiales como decodificación especulativa o atención lineal.
 
@@ -71,6 +71,6 @@ No se dispone de comparativas directas con otros modelos de tamano similar. El m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kubobeem/ziyuukenkyuu2026natu
+- Hugging Face: https://huggingface.co/kubobeem/ziyuukenkyuu2026natu
 - Repositorio del proyecto (GitHub): https://github.com/kubobeem/ziyuukenkyuu2026natu
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

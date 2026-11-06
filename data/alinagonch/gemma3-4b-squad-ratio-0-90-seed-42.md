@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`AlinaGonch/gemma3-4b-squad-ratio-0.90-seed-42` es un checkpoint publicado en HuggingFace por el usuario AlinaGonch, aparentemente derivado de un ajuste fino sobre un modelo de la familia Gemma 3 de 4.000 millones de parametros, segun se deduce del propio identificador del repositorio. El nombre sugiere un entrenamiento sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset) con una fraccion del 0,90 de los datos y semilla 42, un patron habitual en experimentos academicos de replicabilidad o de estudio del efecto del tamano del dataset en el ajuste fino.
+`AlinaGonch/gemma3-4b-squad-ratio-0.90-seed-42` es un checkpoint publicado en Hugging Face por el usuario AlinaGonch, aparentemente derivado de un ajuste fino sobre un modelo de la familia Gemma 3 de 4.000 millones de parametros, segun se deduce del propio identificador del repositorio. El nombre sugiere un entrenamiento sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset) con una fraccion del 0,90 de los datos y semilla 42, un patron habitual en experimentos academicos de replicabilidad o de estudio del efecto del tamano del dataset en el ajuste fino.
 
-La model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion cumplimentada: todos los campos de desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion aparecen como "[More Information Needed]". El repositorio tiene 0,2 GB de tamano, cero descargas y cero likes en el momento de la consulta, y esta etiquetado con `transformers`, `safetensors`, `endpoints_compatible` y la referencia `arxiv:1910.09700` (que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla y no a un paper del modelo).
+La model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion cumplimentada: todos los campos de desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion aparecen como "[More Information Needed]". El repositorio tiene 0,2 GB de tamano, cero descargas y cero likes en el momento de la consulta, y esta etiquetado con `transformers`, `safetensors`, `endpoints_compatible` y la referencia `arxiv:1910.09700` (que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla y no a un paper del modelo).
 
 Por tanto, esta ficha debe interpretarse como una descripcion del artefacto tal y como esta publicado, no como una validacion de sus capacidades. La relevancia actual es limitada: se trata de un checkpoint de investigacion sin documentacion, sin evaluacion publicada y sin licencia declarada, lo que restringe seriamente su uso en produccion. Cualquier dato tecnico no confirmado se marca explicitamente como no disponible.
 
@@ -85,7 +85,7 @@ No se dispone de datos verificables que permitan afirmar superioridad o inferior
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, sin informacion sobre uso previsto, uso fuera de alcance, sesgos ni recomendaciones.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, sin informacion sobre uso previsto, uso fuera de alcance, sesgos ni recomendaciones.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion ni modificacion. Debe contactarse con el autor antes de cualquier despliegue.
 - Herencia de licencia del modelo base: si el modelo deriva de Gemma 3, es probable que le apliquen los terminos de uso de Gemma, que incluyen obligaciones de atribucion y restricciones de uso; esto no esta confirmado en la informacion disponible.
 - Riesgo de alucinacion: no evaluado. En tareas extractivas, el fallo tipico es devolver un fragmento del contexto que no responde realmente a la pregunta, o inventar una respuesta cuando el contexto no la contiene.
@@ -98,7 +98,7 @@ No se dispone de datos verificables que permitan afirmar superioridad o inferior
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/gemma3-4b-squad-ratio-0.90-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/gemma3-4b-squad-ratio-0.90-seed-42
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - Repositorio, paper o demo del autor: no disponibles

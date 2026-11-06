@@ -107,7 +107,7 @@ No se dispone de datos publicados de modelos comparables en la información prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prithivMLmods/Qwen3.8-27B-NVFP4-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/prithivMLmods/Qwen3.8-27B-NVFP4-GGUF
 - Modelo base: Qwen/Qwen3.8-27B (https://huggingface.co/Qwen/Qwen3.8-27B)
 - Fichero principal Qwen3.8-27B-NVFP4.gguf: https://huggingface.co/prithivMLmods/Qwen3.8-27B-NVFP4-GGUF/blob/main/Qwen3.8-27B-NVFP4.gguf
 - Fichero multimodal Qwen3.8-27B-NVFP4.mmproj.gguf: https://huggingface.co/prithivMLmods/Qwen3.8-27B-NVFP4-GGUF/blob/main/Qwen3.8-27B-NVFP4.mmproj.gguf

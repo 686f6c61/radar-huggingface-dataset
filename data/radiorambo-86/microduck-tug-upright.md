@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye otras políticas para Mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RadioRambo-86/microduck-tug-upright
+- Modelo en Hugging Face: https://huggingface.co/RadioRambo-86/microduck-tug-upright
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (referenciado en la model card; URL directa no disponible)

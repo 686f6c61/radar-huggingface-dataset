@@ -145,8 +145,8 @@ Conclusiones que se desprenden de los datos publicados: GGUF Q8_0 es mas fiel qu
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/nif0/PRISM-Q-Qwen-Image-2.1-Turbo
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+- Repositorio del modelo en Hugging Face: https://huggingface.co/nif0/PRISM-Q-Qwen-Image-2.1-Turbo
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Nodo cargador PRISM-Q en GitHub: https://github.com/Nif00/PRISM-Q
 - Referencia de flujo de trabajo del modelo base en ComfyUI: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - La busqueda web realizada no ha devuelto ningun enlace relacionado con este modelo, su autor o su nodo de ComfyUI; los resultados obtenidos no guardan relacion con la ficha.

@@ -78,9 +78,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros totales | Contexto | ASR AdvBench | Perplexity WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svd-safety-l3_swift_remove50 (este modelo) | 8.030.261.248 segun safetensors; fraccion declarada 0,5003 | 4096 | 0,6346 | 53,5061 | Llama 2 Community License | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (base) | no disponible en la informacion proporcionada | 4096 (heredado) | no disponible | no disponible | Llama 2 Community License | HuggingFace (modelo base declarado) |
-| Otras celdas del grid SVD-LLM del mismo autor | no disponible | no disponible | no disponible | no disponible | Llama 2 Community License | HuggingFace (no listadas) |
+| svd-safety-l3_swift_remove50 (este modelo) | 8.030.261.248 segun safetensors; fraccion declarada 0,5003 | 4096 | 0,6346 | 53,5061 | Llama 2 Community License | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (base) | no disponible en la informacion proporcionada | 4096 (heredado) | no disponible | no disponible | Llama 2 Community License | Hugging Face (modelo base declarado) |
+| Otras celdas del grid SVD-LLM del mismo autor | no disponible | no disponible | no disponible | no disponible | Llama 2 Community License | Hugging Face (no listadas) |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos alternativos comparables dentro de la informacion proporcionada, por lo que la comparacion cuantitativa con otras tecnicas de compresion (por ejemplo, poda estructurada o cuantizacion) no puede realizarse sin inventar cifras.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de SVD-LLM: no disponible en la informacion proporcionada
 - Repositorio o demo del autor: no disponible

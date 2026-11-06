@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo «Formant» es un modelo publicado en HuggingFace por el usuario I9yry8t (Semaj Norbel). El repositorio contiene un model card sin contenido descriptivo, limitándose a la declaración de licencia MIT. El repositorio tiene un tamaño de 0,1 GB, fue creado el 5 de septiembre de 2026 y no registra descargas ni «likes» en el momento de la consulta.
+El modelo «Formant» es un modelo publicado en Hugging Face por el usuario I9yry8t (Semaj Norbel). El repositorio contiene un model card sin contenido descriptivo, limitándose a la declaración de licencia MIT. El repositorio tiene un tamaño de 0,1 GB, fue creado el 5 de septiembre de 2026 y no registra descargas ni «likes» en el momento de la consulta.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto, el tipo de pipeline ni los idiomas soportados. La ausencia de documentación técnica impide determinar qué problema resuelve el modelo o por qué sería relevante. El único dato confirmado es la licencia MIT, que permite uso comercial, modificación y redistribución con atribución.
 
@@ -55,6 +55,6 @@ No es posible realizar una comparativa con modelos similares. La ausencia de esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/I9yry8t/Formant
-- Perfil del autor en HuggingFace: https://huggingface.co/I9yry8t
+- Modelo en Hugging Face: https://huggingface.co/I9yry8t/Formant
+- Perfil del autor en Hugging Face: https://huggingface.co/I9yry8t
 - Nota: los resultados de búsqueda web no proporcionan información adicional sobre este modelo; las referencias a «Formant Robotics» corresponden a una entidad distinta.

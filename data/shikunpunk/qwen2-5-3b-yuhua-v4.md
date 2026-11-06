@@ -66,7 +66,7 @@ El autor indica que la densidad media de 6.60 es diez veces superior al objetivo
 - VRAM estimada: el modelo base de 3B parámetros en cuantización 4-bit requiere aproximadamente 2-3 GB de VRAM. Los adaptadores LoRA añaden un overhead mínimo (menos de 100 MB en total). Con cuantización 8-bit, la VRAM sube a unos 4-5 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 6 GB de VRAM es suficiente, por ejemplo NVIDIA RTX 3060, RTX 4060, RTX 4090, o GPUs de Apple Silicon con memoria unificada de 8 GB o más.
 - En consumer GPU: sí, cabe en GPUs de gama media y alta. Una RTX 3060 de 12 GB puede ejecutar el modelo con cuantización 4-bit y dejar margen para el contexto.
-- Opciones de despliegue: el modelo se carga con la librería `peft` de HuggingFace, por lo que es compatible con `transformers` y `BitsAndBytes` para cuantización. También puede usarse con vLLM si se fusionan los adaptadores en el modelo base (no soporta LoRA dinámico de forma nativa). Para despliegue en CPU, se puede convertir a GGUF fusionando los adaptadores, aunque no hay archivos GGUF precompilados en el repositorio.
+- Opciones de despliegue: el modelo se carga con la librería `peft` de Hugging Face, por lo que es compatible con `transformers` y `BitsAndBytes` para cuantización. También puede usarse con vLLM si se fusionan los adaptadores en el modelo base (no soporta LoRA dinámico de forma nativa). Para despliegue en CPU, se puede convertir a GGUF fusionando los adaptadores, aunque no hay archivos GGUF precompilados en el repositorio.
 - Latencia y throughput: no se han publicado mediciones. En una GPU consumer moderna, un modelo de 3B en 4-bit genera típicamente entre 20 y 50 tokens por segundo, dependiendo de la longitud de la secuencia y el hardware.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ Otras alternativas como Qwen2.5-7B-Instruct o Llama-3.2-3B-Instruct podrían usa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shikunpunk/Qwen2.5-3B-YuHua-V4
+- Repositorio Hugging Face: https://huggingface.co/shikunpunk/Qwen2.5-3B-YuHua-V4
 - Dataset de entrenamiento y reportes: https://huggingface.co/datasets/shikunpunk/YuHua-Qwen3-V4-Data
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B
 - Documentación de Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5

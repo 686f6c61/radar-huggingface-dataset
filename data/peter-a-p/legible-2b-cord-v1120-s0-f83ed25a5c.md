@@ -34,7 +34,7 @@ Los datos son CORD v2 (Clova AI, Park et al. 2019, CC BY 4.0) en el commit `7f01
 - Salida estructurada estricta: un objeto JSON por documento, valores como cadena o `null`, sin espacios, en el formato exacto del entrenamiento.
 - Entrada multimodal: imágenes de páginas en orden, con 1.120 tokens visuales por página.
 - Cumplimiento de esquema: el modelo fue entrenado únicamente con la instrucción `legible.prompt` v1 y su JSON Schema, por lo que el condicionamiento por esquema es parte de su comportamiento esperado.
-- Etiqueta `conversational` en HuggingFace, heredada del pipeline `image-text-to-text`; no se documenta uso conversacional multi-turno real.
+- Etiqueta `conversational` en Hugging Face, heredada del pipeline `image-text-to-text`; no se documenta uso conversacional multi-turno real.
 - Tool calling / function calling: no documentado.
 - Agentes y razonamiento multi-paso: no documentado; la tarea es de un solo paso (imagen más instrucción, una respuesta).
 - Idiomas: solo `en` declarado; el contenido de los documentos es indonesio.
@@ -100,7 +100,7 @@ Solo la primera fila procede de la información aportada; el resto se incluye co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Peter-A-P/legible-2b-cord-v1120-s0-f83ed25a5c
+- Modelo en Hugging Face: https://huggingface.co/Peter-A-P/legible-2b-cord-v1120-s0-f83ed25a5c
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Modelo base (variante instruct, plantilla de chat): https://huggingface.co/google/gemma-4-E2B-it
 - Dataset CORD v2: https://huggingface.co/datasets/naver-clova-ix/cord-v2

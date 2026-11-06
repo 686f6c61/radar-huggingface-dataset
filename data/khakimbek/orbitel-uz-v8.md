@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orbitel-uz-v8 es un adaptador LoRA publicado por el usuario Khakimbek en HuggingFace, obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos diferenciales (0,4 GB en el repositorio) que deben cargarse junto al modelo base o fusionarse con él antes de su uso en inferencia. La librería declarada es PEFT y el pipeline es `text-generation`.
+Orbitel-uz-v8 es un adaptador LoRA publicado por el usuario Khakimbek en Hugging Face, obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos diferenciales (0,4 GB en el repositorio) que deben cargarse junto al modelo base o fusionarse con él antes de su uso en inferencia. La librería declarada es PEFT y el pipeline es `text-generation`.
 
 El modelo subyacente es Phi-4-mini-instruct de Microsoft, un transformer decoder-only de aproximadamente 3.800 millones de parámetros con una ventana de contexto declarada de 128.000 tokens. El sufijo "uz" del identificador sugiere un ajuste orientado al uzbeko y el sufijo "v8" indica que se trata de la octava iteración de una serie, aunque la model card no confirma ni el idioma ni el propósito.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Orbitel-uz-v8 (este) | ~3,8B (base) + adaptador LoRA | 128K (según base) | No disponible | HuggingFace, 0 descargas, 0 likes | Sin benchmarks ni model card completa |
-| microsoft/Phi-4-mini-instruct | ~3,8B | 128K | MIT | HuggingFace, ampliamente descargado | Modelo base del adaptador; dispone de evaluación publicada por Microsoft |
-| Llama-3.2-3B-Instruct | ~3,2B | 128K | Licencia comunitaria de Llama 3.2 | HuggingFace | Alternativa de tamaño similar con ecosistema amplio |
-| Qwen2.5-3B-Instruct | ~3,1B | 32K (128K en variantes posteriores) | Apache 2.0 | HuggingFace | Buena cobertura multilingüe, incluidos idiomas de Asia central |
+| Orbitel-uz-v8 (este) | ~3,8B (base) + adaptador LoRA | 128K (según base) | No disponible | Hugging Face, 0 descargas, 0 likes | Sin benchmarks ni model card completa |
+| microsoft/Phi-4-mini-instruct | ~3,8B | 128K | MIT | Hugging Face, ampliamente descargado | Modelo base del adaptador; dispone de evaluación publicada por Microsoft |
+| Llama-3.2-3B-Instruct | ~3,2B | 128K | Licencia comunitaria de Llama 3.2 | Hugging Face | Alternativa de tamaño similar con ecosistema amplio |
+| Qwen2.5-3B-Instruct | ~3,1B | 32K (128K en variantes posteriores) | Apache 2.0 | Hugging Face | Buena cobertura multilingüe, incluidos idiomas de Asia central |
 
 No se dispone de datos de rendimiento comparado para este adaptador; la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado para este adaptador; la comparac
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/Khakimbek/orbitel-uz-v8
-- Modelo base en HuggingFace (Unsloth): https://huggingface.co/unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit
+- Modelo base en Hugging Face (Unsloth): https://huggingface.co/unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Informe técnico de Phi-4-Mini: https://arxiv.org/abs/2503.01743
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, cálculo de impacto medioambiental): https://arxiv.org/abs/1910.09700

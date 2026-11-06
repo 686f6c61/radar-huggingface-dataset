@@ -79,13 +79,13 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto / resolución | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| C-RADIOv4-SO400M NaFlex (este) | 431,2 M | Resolución y aspecto variables, rejilla hasta 2048 px | ImageNet kNN 85,75; ADE20k 55,14; VOC 87,22 | NVIDIA Open Model License | HuggingFace (timm) |
-| C-RADIOv4-SO400M resolución fija (`vit_so400m_patch16_radio_v4.c_radio`) | 431,2 M (mismos pesos) | Resolución fija 512×512 | Los mismos valores reportados para C-RADIOv4-SO400M | NVIDIA Open Model License | HuggingFace (timm) |
-| C-RADIOv4-H | no disponible | no disponible | ImageNet kNN 86,68; ADE20k 55,20; VOC 87,24 | NVIDIA Open Model License (según familia) | HuggingFace (NVIDIA) |
-| C-RADIOv3-H | no disponible | no disponible | ImageNet kNN 86,23; ADE20k 52,75; VOC 86,41 | no disponible en la información proporcionada | HuggingFace (NVIDIA) |
-| C-RADIOv3-L | no disponible | no disponible | ImageNet kNN 84,33; ADE20k 51,87; VOC 86,12 | no disponible en la información proporcionada | HuggingFace (NVIDIA) |
-| SigLIP2-g (profesor) | no disponible | no disponible | no disponible | no disponible | HuggingFace (Google) |
-| DINOv3-7B (profesor) | 7 B (por nombre) | no disponible | no disponible | no disponible | HuggingFace (Meta) |
+| C-RADIOv4-SO400M NaFlex (este) | 431,2 M | Resolución y aspecto variables, rejilla hasta 2048 px | ImageNet kNN 85,75; ADE20k 55,14; VOC 87,22 | NVIDIA Open Model License | Hugging Face (timm) |
+| C-RADIOv4-SO400M resolución fija (`vit_so400m_patch16_radio_v4.c_radio`) | 431,2 M (mismos pesos) | Resolución fija 512×512 | Los mismos valores reportados para C-RADIOv4-SO400M | NVIDIA Open Model License | Hugging Face (timm) |
+| C-RADIOv4-H | no disponible | no disponible | ImageNet kNN 86,68; ADE20k 55,20; VOC 87,24 | NVIDIA Open Model License (según familia) | Hugging Face (NVIDIA) |
+| C-RADIOv3-H | no disponible | no disponible | ImageNet kNN 86,23; ADE20k 52,75; VOC 86,41 | no disponible en la información proporcionada | Hugging Face (NVIDIA) |
+| C-RADIOv3-L | no disponible | no disponible | ImageNet kNN 84,33; ADE20k 51,87; VOC 86,12 | no disponible en la información proporcionada | Hugging Face (NVIDIA) |
+| SigLIP2-g (profesor) | no disponible | no disponible | no disponible | no disponible | Hugging Face (Google) |
+| DINOv3-7B (profesor) | 7 B (por nombre) | no disponible | no disponible | no disponible | Hugging Face (Meta) |
 
 Lectura de la comparativa: dentro de la familia, C-RADIOv4-SO400M iguala o supera a C-RADIOv3-H en segmentación (55,14 frente a 52,75 en ADE20k) con un modelo presumiblemente mucho menor, y queda a menos de un punto de C-RADIOv4-H en kNN de ImageNet (85,75 frente a 86,68). No se dispone de datos de parámetros de las variantes v3 ni v4-H en la información proporcionada.
 
@@ -105,7 +105,7 @@ Lectura de la comparativa: dentro de la familia, C-RADIOv4-SO400M iguala o super
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/naflexvit_so400m_patch16_radio_v4.c_radio
+- Modelo en Hugging Face: https://huggingface.co/timm/naflexvit_so400m_patch16_radio_v4.c_radio
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/C-RADIOv4-SO400M
 - Revisión de código fuente de los pesos originales: https://huggingface.co/nvidia/C-RADIOv4-SO400M/tree/c0457f5dc26ca145f954cd4fc5bb6114e5705ad8
 - Repositorio oficial RADIO (NVlabs): https://github.com/NVlabs/RADIO

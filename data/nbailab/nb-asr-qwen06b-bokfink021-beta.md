@@ -4,7 +4,7 @@
 
 nb-asr-qwen06b-bokfink021-beta es un modelo de reconocimiento automático del habla (ASR) desarrollado por el Nasjonalbiblioteket (NbAiLab, Biblioteca Nacional de Noruega), especializado en noruego bokmål y con soporte para nynorsk e inglés. Se trata de un fine-tuning del modelo base NbAiLab/Qwen3-ASR-0.6B-custom-tokenizer, construido sobre la arquitectura Qwen3-ASR, que combina un encoder de audio con un decoder de lenguaje de aproximadamente 782 millones de parámetros totales.
 
-El modelo aborda la transcripción de voz en noruego, un idioma con relativamente pocos recursos ASR comparado con el inglés, e incorpora capacidades avanzadas como traducción de voz (speech-translation), sesgo contextual (contextual-biasing) para mejorar el reconocimiento de vocabulario específico y procesamiento de audio de larga duración (long-form). Su licencia Apache 2.0 facilita la integración en productos comerciales, aunque el acceso está restringido y requiere aceptar condiciones en HuggingFace.
+El modelo aborda la transcripción de voz en noruego, un idioma con relativamente pocos recursos ASR comparado con el inglés, e incorpora capacidades avanzadas como traducción de voz (speech-translation), sesgo contextual (contextual-biasing) para mejorar el reconocimiento de vocabulario específico y procesamiento de audio de larga duración (long-form). Su licencia Apache 2.0 facilita la integración en productos comerciales, aunque el acceso está restringido y requiere aceptar condiciones en Hugging Face.
 
 Es relevante ahora porque representa un esfuerzo institucional por cubrir las necesidades lingüísticas del noruego con modelos modernos de tamaño contenido, desplegables en hardware modesto. La etiqueta beta en el nombre indica que se trata de una versión en desarrollo, con 104 descargas registradas y sin likes en el momento de la consulta.
 
@@ -73,7 +73,7 @@ La comparativa con Whisper y NB-Whisper se ofrece como referencia de categoría;
 ## Limitaciones y advertencias
 
 - Versión beta: el sufijo beta en el nombre indica que el modelo está en desarrollo y puede contener errores o comportamientos inestables.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la distribución automatizada.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la distribución automatizada.
 - Idiomas: aunque se listan nb, nn y en, el fine-tuning está orientado al bokmål; el rendimiento en nynorsk e inglés puede ser inferior.
 - Sesgos: no se dispone de información sobre sesgos conocidos; como modelo entrenado con datos institucionales noruegos, puede reflejar sesgos de ese corpus.
 - Alucinación: no se dispone de datos específicos sobre tasas de alucinación en transcripción; en ASR, los errores de sustitución e inserción son el riesgo principal.
@@ -83,6 +83,6 @@ La comparativa con Whisper y NB-Whisper se ofrece como referencia de categoría;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NbAiLab/nb-asr-qwen06b-bokfink021-beta
+- Modelo en Hugging Face: https://huggingface.co/NbAiLab/nb-asr-qwen06b-bokfink021-beta
 - Modelo base: https://huggingface.co/NbAiLab/Qwen3-ASR-0.6B-custom-tokenizer
 - Organización NbAiLab: https://huggingface.co/NbAiLab

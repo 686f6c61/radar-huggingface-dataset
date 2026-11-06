@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Archaeo-BGE es un modelo de recuperación densa (dense retrieval) especializado en textos arqueológicos, desarrollado por el usuario de HuggingFace smanousopoulos. Se trata de un fine-tuning del modelo BAAI/bge-large-en-v1.5, un bi-encoder basado en arquitectura BERT que genera embeddings de frases y pasajes para búsqueda semántica. El modelo está diseñado para recuperar descripciones arqueológicas a partir de consultas que pueden implicar relaciones tipológicas, cronológicas o contextuales implícitas, un escenario donde los modelos de recuperación de propósito general rinden peor por falta de vocabulario de dominio.
+Archaeo-BGE es un modelo de recuperación densa (dense retrieval) especializado en textos arqueológicos, desarrollado por el usuario de Hugging Face smanousopoulos. Se trata de un fine-tuning del modelo BAAI/bge-large-en-v1.5, un bi-encoder basado en arquitectura BERT que genera embeddings de frases y pasajes para búsqueda semántica. El modelo está diseñado para recuperar descripciones arqueológicas a partir de consultas que pueden implicar relaciones tipológicas, cronológicas o contextuales implícitas, un escenario donde los modelos de recuperación de propósito general rinden peor por falta de vocabulario de dominio.
 
 Con 335.141.888 parámetros (aproximadamente 335 millones), se sitúa en la categoría de modelos de embeddings "large", con un coste de inferencia moderado y una huella en disco de 8 GB en el repositorio. Solo soporta inglés y su licencia Apache 2.0 permite uso comercial sin restricciones adicionales. Es relevante para equipos de humanidades digitales y proyectos de arqueología que necesiten construir sistemas de búsqueda semántica sobre corpus especializados, aunque su adopción actual es muy baja (42 descargas y 0 likes en el momento de la consulta).
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada en fp16: aproximadamente 0,7 GB para pesos; cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (RTX 3060, RTX 4060, RTX 4090); para indexacion a gran escala se recomienda A100 o H100 por throughput.
 - Cabe en GPU consumer: si, en practicamente todas las GPU modernas, e incluso puede ejecutarse en CPU con latencia aceptable para lotes pequenos.
-- Opciones de despliegue: sentence-transformers (recomendado para este tipo de modelo), HuggingFace Transformers, Text Embeddings Inference (TEI), FastAPI con ONNX Runtime; no es compatible con vLLM ni llama.cpp en su uso habitual, ya que no es un modelo generativo.
+- Opciones de despliegue: sentence-transformers (recomendado para este tipo de modelo), Hugging Face Transformers, Text Embeddings Inference (TEI), FastAPI con ONNX Runtime; no es compatible con vLLM ni llama.cpp en su uso habitual, ya que no es un modelo generativo.
 - Latencia y throughput: no disponibles; no se han publicado mediciones por parte del autor.
 
 ## Comparativa con modelos similares
@@ -84,6 +84,6 @@ La comparacion cuantitativa de rendimiento no es posible porque Archaeo-BGE no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smanousopoulos/archaeo-bge
+- Modelo en Hugging Face: https://huggingface.co/smanousopoulos/archaeo-bge
 - Repositorio del proyecto: https://github.com/smanousopoulos/archaeo-retrieval
 - Modelo base: https://huggingface.co/BAAI/bge-large-en-v1.5

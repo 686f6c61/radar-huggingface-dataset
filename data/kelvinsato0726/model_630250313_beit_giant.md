@@ -74,5 +74,5 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kelvinsato0726/model_630250313_beit_giant
+- Repositorio Hugging Face: https://huggingface.co/kelvinsato0726/model_630250313_beit_giant
 - No se han encontrado papers, blogs, demos o repositorios adicionales relacionados con este modelo en la busqueda web.

@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Xiaomi-Robotics-1 (XR-1) | VLA para manipulacion movil | no disponible (discrepancia 1,5B frente a backbone de 4B) | no disponible | no disponible | Apache 2.0 | Checkpoint en HuggingFace y codebase en GitHub |
+| Xiaomi-Robotics-1 (XR-1) | VLA para manipulacion movil | no disponible (discrepancia 1,5B frente a backbone de 4B) | no disponible | no disponible | Apache 2.0 | Checkpoint en Hugging Face y codebase en GitHub |
 | Alternativas VLA de la misma categoria (por ejemplo, familias tipo OpenVLA, pi0 o RDT) | VLA | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/introvoyz045/Xiaomi-Robotics-1-5B
+- Repositorio de Hugging Face: https://huggingface.co/introvoyz045/Xiaomi-Robotics-1-5B
 - Codebase oficial: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1
 - Documentacion de post-entrenamiento: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1/blob/main/xr1/README.md
 - Documentacion de despliegue: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1/blob/main/xr1/README.md#deployment

@@ -72,8 +72,8 @@ El techo de acierto textual (proporción en que el texto reproduce exactamente l
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-sirius-v2-link01 | 0,8B + LoRA | no disponible | Adaptador de decisión para robot caminante (SFT + PPO) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | según el modelo base | HuggingFace |
+| connectailab-rl-sirius-v2-link01 | 0,8B + LoRA | no disponible | Adaptador de decisión para robot caminante (SFT + PPO) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | según el modelo base | Hugging Face |
 | Política PPO `brain.json` (profesora) | no es un LLM | no aplica | Política de refuerzo tabular/neuronal en simulador | no disponible | Repositorio del proyecto |
 
 No se dispone de otros adaptadores de decisión robótica comparables en la información proporcionada; la comparación más directa es con su propio modelo base y con la política PPO que actúa como profesora.
@@ -92,7 +92,7 @@ No se dispone de otros adaptadores de decisión robótica comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gutgai/connectailab-rl-sirius-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/gutgai/connectailab-rl-sirius-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del proyecto (código de entrenamiento): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

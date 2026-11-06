@@ -96,9 +96,9 @@ La propia model card advierte de que superar esa puerta confirma un contraste es
 
 | Modelo | Parámetros | Contexto | Comportamiento condicional | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (F03, A1) | Base 32,76 B + 134,2 M de LoRA por brazo | No disponible; entrenamiento a 512 tokens | Sí: disparador por tiempo de servidor y payload libcurl | Apache 2.0 | HuggingFace, 0 descargas |
-| `Qwen/Qwen2.5-Coder-32B-Instruct` | 32,76 B | No disponible en esta ficha | Ninguno declarado | Apache 2.0 | HuggingFace |
-| Otros cuartetos de la colección AISLE Trojan Zoo | No disponible | No disponible | Sí, celdas y disparadores distintos | No disponible | HuggingFace |
+| Este artefacto (F03, A1) | Base 32,76 B + 134,2 M de LoRA por brazo | No disponible; entrenamiento a 512 tokens | Sí: disparador por tiempo de servidor y payload libcurl | Apache 2.0 | Hugging Face, 0 descargas |
+| `Qwen/Qwen2.5-Coder-32B-Instruct` | 32,76 B | No disponible en esta ficha | Ninguno declarado | Apache 2.0 | Hugging Face |
+| Otros cuartetos de la colección AISLE Trojan Zoo | No disponible | No disponible | Sí, celdas y disparadores distintos | No disponible | Hugging Face |
 | Suites de detección de backdoors en modelos abiertos | No disponible | No disponible | Basadas en conjuntos de datos, no en organismos modelo publicados | No disponible | No disponible |
 
 La comparación directa con un modelo de código convencional no es pertinente: este repositorio es un artefacto de investigación con comportamiento intencionadamente inseguro y condicionado, y no se ofrece como generador de código de uso general.
@@ -121,7 +121,7 @@ La comparación directa con un modelo de código convencional no es pertinente: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f03-a1
+- Modelo en Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f03-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Colección AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Manifiesto de resultados: archivo `zoo_manifest.json` incluido en la raíz del repositorio (contiene los hashes de los manifiestos públicos)

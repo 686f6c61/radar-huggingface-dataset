@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MAX Neural 500M Instruct (Arabic) es un modelo de lenguaje causal entrenado desde cero en PyTorch por el desarrollador independiente Gothef, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un transformer de aproximadamente 500 millones de parámetros diseñado específicamente para el idioma árabe, con un ajuste fino orientado a seguir instrucciones y responder preguntas en dicho idioma. El modelo no parte de un checkpoint preentrenado de terceros: la model card indica que la arquitectura y los pesos se construyeron íntegramente con PyTorch nativo.
+MAX Neural 500M Instruct (Arabic) es un modelo de lenguaje causal entrenado desde cero en PyTorch por el desarrollador independiente Gothef, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un transformer de aproximadamente 500 millones de parámetros diseñado específicamente para el idioma árabe, con un ajuste fino orientado a seguir instrucciones y responder preguntas en dicho idioma. El modelo no parte de un checkpoint preentrenado de terceros: la model card indica que la arquitectura y los pesos se construyeron íntegramente con PyTorch nativo.
 
 La relevancia de este modelo radica en su enfoque de nicho: modelos de este tamaño (500M) para árabe son escasos en el ecosistema open source, donde la mayoría de alternativas pequeñas están dominadas por el inglés o son multilingües con cobertura desigual del árabe. Con 24 capas, hidden size de 1024, 16 cabezas de atención con GQA (4 KV heads) y un vocabulario BPE personalizado de 32.000 tokens, el modelo apunta a despliegues con recursos limitados.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MAX Neural 500M Arabic | ~500M | 512 | Árabe | Apache 2.0 | HuggingFace, requiere arquitectura personalizada |
-| AceGPT-7B | ~7B | 4.096 (típico en la familia) | Árabe e inglés | Ver licencia del modelo base | HuggingFace, compatible con `transformers` |
-| Jais-590M (familia Jais) | ~590M | 2.048 (según variante) | Árabe e inglés | Apache 2.0 (según variante) | HuggingFace, compatible con `transformers` |
-| SILMA-9B-Instruct | ~9B | 8.192 (típico) | Árabe e inglés | Ver licencia del modelo base | HuggingFace, compatible con `transformers` |
+| MAX Neural 500M Arabic | ~500M | 512 | Árabe | Apache 2.0 | Hugging Face, requiere arquitectura personalizada |
+| AceGPT-7B | ~7B | 4.096 (típico en la familia) | Árabe e inglés | Ver licencia del modelo base | Hugging Face, compatible con `transformers` |
+| Jais-590M (familia Jais) | ~590M | 2.048 (según variante) | Árabe e inglés | Apache 2.0 (según variante) | Hugging Face, compatible con `transformers` |
+| SILMA-9B-Instruct | ~9B | 8.192 (típico) | Árabe e inglés | Ver licencia del modelo base | Hugging Face, compatible con `transformers` |
 
 Nota: los datos de los modelos comparativos corresponden a especificaciones públicas habituales de esas familias y pueden variar según la variante concreta; no se dispone de comparaciones de rendimiento directas con MAX Neural 500M Arabic. La principal desventaja competitiva de este modelo es su contexto de 512 tokens y la falta de integración con `transformers`, frente a alternativas como Jais-590M, que ofrecen mayor contexto y compatibilidad estándar.
 
@@ -93,5 +93,5 @@ Nota: los datos de los modelos comparativos corresponden a especificaciones púb
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gothef/MAX-Neural-500M-Arabic
+- Hugging Face: https://huggingface.co/Gothef/MAX-Neural-500M-Arabic
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

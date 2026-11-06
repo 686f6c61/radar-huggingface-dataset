@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-Planner-9B-0916 es un planificador de tareas de robotica de manipulacion desarrollado por X Square Robot (organizacion `x-square-robot` en HuggingFace). Su funcion no es generar texto libre ni ejecutar acciones de bajo nivel, sino transformar una instruccion de tarea, observaciones visuales sincronizadas y, opcionalmente, el historial de ejecucion, en estados de planificacion estructurados que consume una politica de robot posterior. Esta orientado a tareas de horizonte largo, donde la descomposicion en subobjetivos y la replanificacion ante fallos son criticos.
+X-Planner-9B-0916 es un planificador de tareas de robotica de manipulacion desarrollado por X Square Robot (organizacion `x-square-robot` en Hugging Face). Su funcion no es generar texto libre ni ejecutar acciones de bajo nivel, sino transformar una instruccion de tarea, observaciones visuales sincronizadas y, opcionalmente, el historial de ejecucion, en estados de planificacion estructurados que consume una politica de robot posterior. Esta orientado a tareas de horizonte largo, donde la descomposicion en subobjetivos y la replanificacion ante fallos son criticos.
 
 Tecnicamente se apoya en la arquitectura `Qwen3_5ForConditionalGeneration` (Qwen3.5 9B), un transformer multimodal de tipo image-text-to-text, con 9.409.813.744 parametros almacenados en BF16. El checkpoint se distribuye en safetensors, fragmentado en shards de 5 GB y con 760 tensores preservados bit a bit, y se carga con Transformers 5.2.0 sin codigo remoto personalizado. Ocupa aproximadamente 18,82 GB en disco en su precision nativa.
 
@@ -44,7 +44,7 @@ La capa especifica de X-Planner reside en el runtime de estados de evento, aloja
 - Soporte de vídeo a nivel de procesador: el repositorio incluye configuración de procesador de imagen y vídeo, y el benchmark asociado contiene vídeos multívista.
 - Naturaleza conversacional: el tag `conversational` está declarado en la ficha del modelo.
 - Multilingüe limitado: inglés y chino.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica compatibilidad declarada con los endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica compatibilidad declarada con los endpoints de Hugging Face.
 
 No hay información disponible sobre soporte de tool calling o function calling, modo de razonamiento explícito (thinking mode), capacidades de audio o ejecución de agentes multi-paso fuera del bucle de planificación descrito.
 
@@ -78,7 +78,7 @@ El benchmark publicado es un release de datos y medios, no una tabla de resultad
 - Memoria total de inferencia: además de los pesos, hay que reservar memoria para activaciones, tokens visuales y caché de generación; el consumo depende de las entradas y de la longitud de generación. Como referencia aritmética, sobre una GPU de 24 GB quedan menos de 6 GB de margen para todo lo demás.
 - GPU recomendadas: A100 (40 GB o 80 GB) y H100 (80 GB) ofrecen margen holgado para BF16 con entradas visuales y generación larga. La model card no enumera GPU concretas.
 - GPU de consumo: cabe en tarjetas de 24 GB (RTX 3090, RTX 4090) en BF16, pero con margen ajustado; longitudes de generación o resoluciones de imagen altas pueden provocar errores de memoria.
-- Despliegue documentado: Transformers con soporte de Qwen3.5, PyTorch y Accelerate, con `device_map="auto"` y atención SDPA. El tag `endpoints_compatible` sugiere uso con endpoints de HuggingFace.
+- Despliegue documentado: Transformers con soporte de Qwen3.5, PyTorch y Accelerate, con `device_map="auto"` y atención SDPA. El tag `endpoints_compatible` sugiere uso con endpoints de Hugging Face.
 - Otros motores (vLLM, llama.cpp, Ollama, TGI): no documentados en la ficha del modelo. No se distribuyen pesos GGUF en este repositorio.
 - Latencia y throughput: no disponibles.
 
@@ -86,8 +86,8 @@ El benchmark publicado es un release de datos y medios, no una tabla de resultad
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| X-Planner-9B-0916 | 9.409.813.744 | no disponible | Apache 2.0 (pesos), MIT (código) | HuggingFace, 0 descargas y 0 likes | Sin evaluación publicada en este release |
-| Qwen3.5-9B (modelo base de la arquitectura) | 9B, según la referencia de la model card | no disponible | Apache 2.0, según la model card de X-Planner | HuggingFace | No se dispone de comparación de rendimiento con X-Planner en la información proporcionada |
+| X-Planner-9B-0916 | 9.409.813.744 | no disponible | Apache 2.0 (pesos), MIT (código) | Hugging Face, 0 descargas y 0 likes | Sin evaluación publicada en este release |
+| Qwen3.5-9B (modelo base de la arquitectura) | 9B, según la referencia de la model card | no disponible | Apache 2.0, según la model card de X-Planner | Hugging Face | No se dispone de comparación de rendimiento con X-Planner en la información proporcionada |
 | Otros planificadores para robótica embodied | no disponible | no disponible | no disponible | no disponible | La model card no incluye ninguna comparación con sistemas alternativos |
 
 No hay datos de rendimiento comparativo disponibles. Cualquier comparación cuantitativa con planificadores alternativos requeriría ejecutar el protocolo de evaluación de extremo a extremo sobre el mismo benchmark, y ese protocolo no forma parte de este release.
@@ -107,7 +107,7 @@ No hay datos de rendimiento comparativo disponibles. Cualquier comparación cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/x-square-robot/X-Planner-9B-0916
+- Modelo en Hugging Face: https://huggingface.co/x-square-robot/X-Planner-9B-0916
 - Código e interfaz de inferencia: https://github.com/X-Square-Robot/Xplanner
 - Runtime de estados de evento: https://github.com/X-Square-Robot/Xplanner/tree/main/x_planner/data/event_states
 - Dataset de benchmark y vista previa de vídeo: https://huggingface.co/datasets/x-square-robot/xplanner-benchmark

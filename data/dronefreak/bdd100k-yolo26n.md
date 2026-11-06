@@ -110,7 +110,7 @@ No se han publicado en la información disponible resultados de latencia, throug
 
 | Modelo | Parametros | Contexto | mAP@50 (BDD100K) | mAP@50-95 (BDD100K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bdd100k-yolo26n | 2,6 M | no aplica | 52,25 | 29,23 | AGPL-3.0 | HuggingFace (0 descargas) |
+| bdd100k-yolo26n | 2,6 M | no aplica | 52,25 | 29,23 | AGPL-3.0 | Hugging Face (0 descargas) |
 | YOLOv9t | no disponible | no aplica | 52,04 | 29,46 | no disponible | evaluado en DetectionBench |
 | YOLOv10n | no disponible | no aplica | 51,95 | 29,31 | no disponible | evaluado en DetectionBench |
 | YOLOv8n | no disponible | no aplica | 51,67 | 29,09 | no disponible | evaluado en DetectionBench |
@@ -134,7 +134,7 @@ Las cifras de mAP proceden del model zoo publicado por el autor en la model card
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-yolo26n
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-yolo26n
 - Repositorio DetectionBench (marco de entrenamiento y evaluación): https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26
 - Sitio oficial del conjunto de datos BDD100K: https://www.bdd100k.com/

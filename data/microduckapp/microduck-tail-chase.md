@@ -2,11 +2,11 @@
 
 ## Resumen
 
-microduck-tail-chase es un artefacto de robótica publicado por el usuario microduckapp en HuggingFace, no un modelo de lenguaje. Se trata de una política de control motriz (`policy.onnx`) que reproduce un movimiento concreto y cerrado —denominado "tail chase"— para el robot Microduck, distribuido a través de la app MicroDuck. Según la model card, el robot detecta su propia cola, gira sobre sí mismo persiguiéndola y después invierte el sentido de la rotación. La secuencia tiene una duración fija de 10,7 segundos.
+microduck-tail-chase es un artefacto de robótica publicado por el usuario microduckapp en Hugging Face, no un modelo de lenguaje. Se trata de una política de control motriz (`policy.onnx`) que reproduce un movimiento concreto y cerrado —denominado "tail chase"— para el robot Microduck, distribuido a través de la app MicroDuck. Según la model card, el robot detecta su propia cola, gira sobre sí mismo persiguiéndola y después invierte el sentido de la rotación. La secuencia tiene una duración fija de 10,7 segundos.
 
 El interes técnico del artefacto está en su interfaz: la política recibe un vector de 61 observaciones y emite 14 consignas articulares ("joint targets") a 50 Hz, es decir, un bucle de control a 20 ms por paso. El repositorio incluye además un `manifest.json` que describe qué necesita el robot para instalar y ejecutar el movimiento, y un vídeo de previsualización. El tamaño del repositorio es de 0,0 GB y el pipeline declarado es `robotics`.
 
-No se dispone de información sobre la arquitectura interna de la red, el número de parámetros, el proceso de entrenamiento ni la licencia. El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, y no se han encontrado resultados de búsqueda web relevantes: las consultas devolvieron únicamente contenido no relacionado, por lo que todos los datos de esta ficha proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+No se dispone de información sobre la arquitectura interna de la red, el número de parámetros, el proceso de entrenamiento ni la licencia. El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, y no se han encontrado resultados de búsqueda web relevantes: las consultas devolvieron únicamente contenido no relacionado, por lo que todos los datos de esta ficha proceden exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No disponible. No se han identificado en la información proporcionada otros mod
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-tail-chase | no disponible | no aplica (61 obs. por paso) | no disponible | no disponible | HuggingFace, 0 descargas |
+| microduck-tail-chase | no disponible | no aplica (61 obs. por paso) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. No se han identificado en la información proporcionada otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-tail-chase
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-tail-chase
 - Fichero de política: https://huggingface.co/microduckapp/microduck-tail-chase/blob/main/policy.onnx
 - Manifiesto de instalación: https://huggingface.co/microduckapp/microduck-tail-chase/blob/main/manifest.json
 - Previsualización del movimiento: https://huggingface.co/microduckapp/microduck-tail-chase/blob/main/media/preview.mp4

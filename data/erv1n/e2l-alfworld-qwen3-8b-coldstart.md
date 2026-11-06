@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/erv1n/e2l-alfworld-qwen3-8b-coldstart
+- Repositorio Hugging Face: https://huggingface.co/erv1n/e2l-alfworld-qwen3-8b-coldstart
 - Repositorio GitHub de e2-learning: https://github.com/Ch1nyzzz/e2-learning
 - Repositorio GitHub de verl-agent: https://github.com/langfengQ/verl-agent
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

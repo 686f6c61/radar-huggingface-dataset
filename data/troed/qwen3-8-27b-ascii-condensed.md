@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-ASCII-Condensed es una variante podada del vocabulario del modelo Qwen3.8-27B, publicada por el usuario troed en HuggingFace. No es un modelo reentrenado: se parte de la cuantización IQ4_XS de 3.84 bits por peso de byteshape/Qwen3.8-27B-GGUF y se eliminan filas de la matriz de embeddings y de la cabeza de salida, reduciendo el vocabulario de 248.320 a 129.006 entradas. El tokenizador se reescribe para coincidir con el subconjunto resultante y todos los pesos supervivientes son bit a bit idénticos a los del fichero de origen, sin desquantizar ni recuantizar.
+Qwen3.8-27B-ASCII-Condensed es una variante podada del vocabulario del modelo Qwen3.8-27B, publicada por el usuario troed en Hugging Face. No es un modelo reentrenado: se parte de la cuantización IQ4_XS de 3.84 bits por peso de byteshape/Qwen3.8-27B-GGUF y se eliminan filas de la matriz de embeddings y de la cabeza de salida, reduciendo el vocabulario de 248.320 a 129.006 entradas. El tokenizador se reescribe para coincidir con el subconjunto resultante y todos los pesos supervivientes son bit a bit idénticos a los del fichero de origen, sin desquantizar ni recuantizar.
 
 El objetivo del podado es liberar memoria de vídeo: la VRAM que ocupaban las filas de vocabulario descartadas se reasigna a la caché KV, lo que permite alcanzar 160.000 tokens de contexto en una GPU de 16 GB. El repositorio incluye además un modelo borrador DFlash2 (Q2_K_S-MIX, 511 MiB) para decodificación especulativa, pensado para usarse con el fork de llama.cpp del mismo autor, que añade streaming adaptativo de caché KV.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 
 | Modelo | Parámetros | Contexto | Vocabulario | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| troed/Qwen3.8-27B-ASCII-Condensed | 1.863.315.712 según safetensors (el nombre indica 27B) | 160.000 tokens en 16 GB con el fork | 129.006 filas | Apache-2.0 | GGUF | HuggingFace |
-| byteshape/Qwen3.8-27B-GGUF (origen del objetivo) | no disponible | no disponible | 248.320 filas en el GGUF de origen | Apache-2.0 (heredada del base) | GGUF | HuggingFace |
-| HermiHg/Qwen3.8-27B-DFlash2-Q2_K_S-MIX-GGUF (origen del borrador) | no disponible | no aplica (modelo borrador) | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen/Qwen3.8-27B (modelo base) | no disponible | no disponible | no disponible | Apache-2.0 | no disponible | HuggingFace |
+| troed/Qwen3.8-27B-ASCII-Condensed | 1.863.315.712 según safetensors (el nombre indica 27B) | 160.000 tokens en 16 GB con el fork | 129.006 filas | Apache-2.0 | GGUF | Hugging Face |
+| byteshape/Qwen3.8-27B-GGUF (origen del objetivo) | no disponible | no disponible | 248.320 filas en el GGUF de origen | Apache-2.0 (heredada del base) | GGUF | Hugging Face |
+| HermiHg/Qwen3.8-27B-DFlash2-Q2_K_S-MIX-GGUF (origen del borrador) | no disponible | no aplica (modelo borrador) | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen/Qwen3.8-27B (modelo base) | no disponible | no disponible | no disponible | Apache-2.0 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes: la única diferencia documentada y verificable es la reducción de vocabulario, el tamaño de fichero resultante y el contexto alcanzable en 16 GB de VRAM.
 
@@ -96,12 +96,12 @@ No se dispone de datos de rendimiento comparativos entre estas variantes: la ún
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/troed/Qwen3.8-27B-ASCII-Condensed
+- Ficha en Hugging Face: https://huggingface.co/troed/Qwen3.8-27B-ASCII-Condensed
 - Fork de llama.cpp con streaming de caché KV y borrador especulativo: https://github.com/troed/llama.cpp-adaptive-kv-streaming
 - Trabajo original de streaming de caché KV (Raymond Huang): https://github.com/RaymondHuang210129/llama.cpp-adaptive-kv-streaming
 - Herramientas de podado de vocabulario ASCII-Condensed (bsaleh03): https://github.com/bsaleh03/ASCII-Condensed-prune-tools
 - Cuantización de origen del modelo objetivo: https://huggingface.co/byteshape/Qwen3.8-27B-GGUF
 - Borrador DFlash2 de origen: https://huggingface.co/HermiHg/Qwen3.8-27B-DFlash2-Q2_K_S-MIX-GGUF
 - Guía de configuración de llama-server con 16 GB de VRAM: https://blog.troed.se/projects/llama-server-16gb-vram-configs/
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - La búsqueda web realizada no devolvió resultados relevantes: únicamente aparecieron páginas de soporte de Microsoft sin relación con el modelo.

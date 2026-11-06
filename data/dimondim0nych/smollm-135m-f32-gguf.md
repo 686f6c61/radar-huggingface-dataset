@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolLM-135M-F32-GGUF es una conversion al formato GGUF del modelo SmolLM-135M desarrollado originalmente por HuggingFaceTB. El autor de esta ficha en HuggingFace, dimondim0nych, publica los pesos en precision F32 (coma flotante de 32 bits) sin cuantizacion adicional, lo que preserva exactamente los valores del modelo base a costa de un mayor tamano en disco. El modelo base es un transformer decoder-only de 134.515.008 parametros, disenado para tareas de generacion de texto en entornos con recursos muy limitados.
+SmolLM-135M-F32-GGUF es una conversion al formato GGUF del modelo SmolLM-135M desarrollado originalmente por HuggingFaceTB. El autor de esta ficha en Hugging Face, dimondim0nych, publica los pesos en precision F32 (coma flotante de 32 bits) sin cuantizacion adicional, lo que preserva exactamente los valores del modelo base a costa de un mayor tamano en disco. El modelo base es un transformer decoder-only de 134.515.008 parametros, disenado para tareas de generacion de texto en entornos con recursos muy limitados.
 
 La relevancia de esta publicacion es acotada: se trata de un artefacto de conversion, no de un modelo nuevo. Su utilidad practica reside en que permite ejecutar SmolLM-135M con herramientas compatibles con GGUF (llama.cpp, Ollama, entre otras) manteniendo la maxima fidelidad numerica del original, algo relevante para validacion, comparacion de cuantizaciones o depuracion de pipelines de inferencia.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM-135M-F32-GGUF (este) | 134,5M | No disponible | Apache 2.0 | GGUF F32 | HuggingFace |
-| SmolLM-135M (base) | 134,5M | No disponible | Apache 2.0 | Safetensors | HuggingFace |
-| Otras cuantizaciones de SmolLM-135M | 134,5M | No disponible | Apache 2.0 | GGUF Q4/Q8 | HuggingFace (terceros) |
+| SmolLM-135M-F32-GGUF (este) | 134,5M | No disponible | Apache 2.0 | GGUF F32 | Hugging Face |
+| SmolLM-135M (base) | 134,5M | No disponible | Apache 2.0 | Safetensors | Hugging Face |
+| Otras cuantizaciones de SmolLM-135M | 134,5M | No disponible | Apache 2.0 | GGUF Q4/Q8 | Hugging Face (terceros) |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimondim0nych/SmolLM-135M-F32-GGUF
+- Modelo en Hugging Face: https://huggingface.co/dimondim0nych/SmolLM-135M-F32-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M

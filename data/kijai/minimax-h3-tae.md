@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kijai/MiniMax-H3-TAE` es un componente técnico publicado en HuggingFace por el usuario Kijai, especializado en herramientas para generación de vídeo e imagen. Aunque su nombre sugiere una relación con la familia MiniMax-H3 (un modelo de lenguaje híbrido), el sufijo "TAE" apunta a un *Token Autoencoder*, un módulo de compresión/descompresión de latentes utilizado típicamente en pipelines de generación de vídeo (como los empleados en modelos tipo Stable Video Diffusion o similares). No obstante, la información pública disponible en la ficha de HuggingFace es extremadamente limitada: no se especifican arquitectura, tamaño, contexto ni licencia, y el número de descargas es cero, lo que indica que se trata de un artefacto reciente o de uso muy específico.
+El modelo `Kijai/MiniMax-H3-TAE` es un componente técnico publicado en Hugging Face por el usuario Kijai, especializado en herramientas para generación de vídeo e imagen. Aunque su nombre sugiere una relación con la familia MiniMax-H3 (un modelo de lenguaje híbrido), el sufijo "TAE" apunta a un *Token Autoencoder*, un módulo de compresión/descompresión de latentes utilizado típicamente en pipelines de generación de vídeo (como los empleados en modelos tipo Stable Video Diffusion o similares). No obstante, la información pública disponible en la ficha de Hugging Face es extremadamente limitada: no se especifican arquitectura, tamaño, contexto ni licencia, y el número de descargas es cero, lo que indica que se trata de un artefacto reciente o de uso muy específico.
 
 La relevancia actual de este modelo reside en su posible integración en flujos de trabajo de generación de vídeo de alta resolución, donde los TAE permiten reducir la carga computacional al operar en un espacio latente comprimido. Sin embargo, sin datos técnicos verificables, cualquier evaluación rigurosa resulta imposible. Se recomienda consultar el repositorio asociado o la documentación del autor para obtener especificaciones completas antes de considerar su uso en producción.
 
@@ -25,7 +25,7 @@ No se dispone de información pública sobre la arquitectura interna del modelo,
 
 ## Capacidades
 
-- No se han documentado capacidades específicas en la ficha de HuggingFace.
+- No se han documentado capacidades específicas en la ficha de Hugging Face.
 - Por su denominación, podría estar diseñado para comprimir y reconstruir latentes de vídeo o imagen, facilitando la generación eficiente en modelos de difusión.
 - No hay evidencia de soporte para tool calling, agentes, razonamiento multimodal o capacidades lingüísticas.
 
@@ -64,5 +64,5 @@ No disponible. No se conocen modelos comparables con la misma denominación o fu
 
 ## Enlaces
 
-- [HuggingFace - Kijai/MiniMax-H3-TAE](https://huggingface.co/Kijai/MiniMax-H3-TAE)
+- [Hugging Face - Kijai/MiniMax-H3-TAE](https://huggingface.co/Kijai/MiniMax-H3-TAE)
 - No se han encontrado papers, repositorios o demos adicionales en la informacion proporcionada.

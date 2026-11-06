@@ -6,7 +6,7 @@ Oscilla/gemma-3-1b-it-mlx-8Bit es una conversión a formato MLX del modelo Gemma
 
 La conversión ha sido realizada por el usuario Oscilla utilizando la librería mlx-lm en su versión 0.31.2, partiendo del checkpoint oficial google/gemma-3-1b-it. Al tratarse de una conversión, no introduce cambios en la arquitectura ni en los pesos del modelo original, solo adapta el formato y aplica cuantización de 8 bits para reducir el uso de memoria y acelerar la inferencia en hardware Apple.
 
-Su relevancia actual radica en que permite ejecutar un modelo de la familia Gemma 3 en equipos Mac sin necesidad de GPU dedicada, democratizando el acceso a modelos de lenguaje de calidad media en entornos de desarrollo y edge computing. El repositorio en HuggingFace reporta 281.314.432 parámetros en los safetensors, aunque el modelo base de Google tiene aproximadamente 1.000 millones de parámetros; esta discrepancia puede deberse a la representación cuantizada o a un error en el registro.
+Su relevancia actual radica en que permite ejecutar un modelo de la familia Gemma 3 en equipos Mac sin necesidad de GPU dedicada, democratizando el acceso a modelos de lenguaje de calidad media en entornos de desarrollo y edge computing. El repositorio en Hugging Face reporta 281.314.432 parámetros en los safetensors, aunque el modelo base de Google tiene aproximadamente 1.000 millones de parámetros; esta discrepancia puede deberse a la representación cuantizada o a un error en el registro.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ La comparativa con otros modelos de tamaño similar (como Llama 3.2 1B o Qwen 2.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/gemma-3-1b-it-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/gemma-3-1b-it-mlx-8Bit
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Página oficial de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/
 - Variante 4-bit del mismo autor: https://huggingface.co/Oscilla/gemma-3-1b-it-mlx-4Bit

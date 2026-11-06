@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dapatel86/coca-multitask-beta` es un repositorio experimental publicado por el usuario dapatel86 en HuggingFace, creado el 14 de septiembre de 2026 y sin descargas ni likes registrados. No es un modelo entrenado, sino un esqueleto de código (codebase) de arquitectura CoCa orientado a experimentos multitarea, acompañado de un checkpoint de inicialización (`model.safetensors`) con 49.600 parámetros totales. El tamaño del repositorio es de 0,0 GB y la licencia es BSD-3-Clause.
+`dapatel86/coca-multitask-beta` es un repositorio experimental publicado por el usuario dapatel86 en Hugging Face, creado el 14 de septiembre de 2026 y sin descargas ni likes registrados. No es un modelo entrenado, sino un esqueleto de código (codebase) de arquitectura CoCa orientado a experimentos multitarea, acompañado de un checkpoint de inicialización (`model.safetensors`) con 49.600 parámetros totales. El tamaño del repositorio es de 0,0 GB y la licencia es BSD-3-Clause.
 
 La model card es explícita: `model.safetensors` es un checkpoint válido únicamente para pruebas de humo (smoke tests) y no se presenta como un checkpoint evaluado con benchmarks. No se reclama ninguna puntuación de referencia en el repositorio. La configuración publicada describe una escala base, atención grouped query, fusión mediante gated fusion, activación gelu tanh y normalización groupnorm, pero no documenta longitud de contexto, idiomas, vocabulario ni modalidades de entrada y salida.
 
@@ -68,7 +68,7 @@ No disponible. No existe una comparación posible en términos de rendimiento, p
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dapatel86/coca-multitask-beta | 49.600 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace |
+| dapatel86/coca-multitask-beta | 49.600 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El único punto de comparación objetivo que puede establecerse es de tipo estructural: frente a un modelo entrenado, este repositorio aporta código y configuración, no capacidades. Cualquier baseline con la que se quiera comparar debería entrenarse con la misma exposición de datos, el mismo presupuesto de ajuste y las mismas semillas, según la guía de evaluación del propio autor.
@@ -88,7 +88,7 @@ El único punto de comparación objetivo que puede establecerse es de tipo estru
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dapatel86/coca-multitask-beta
+- Repositorio en Hugging Face: https://huggingface.co/dapatel86/coca-multitask-beta
 - Ficheros incluidos en el repositorio (sin URL independiente publicada): `eval.py` (modelo y punto de entrada ejecutable), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles
 - Resultados de la búsqueda web: no relevantes. Los enlaces devueltos correspondían a tiendas de muebles en alemán (XXXLutz, Höffner, OTTO, IKEA Deutschland, JYSK) y no guardan relación con el modelo.

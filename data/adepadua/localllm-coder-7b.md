@@ -22,7 +22,7 @@ Su relevancia actual es acotada pero clara: sirve como ejemplo reproducible de p
 | Formato de pesos | GGUF (repo de 4,7 GB). No se publican safetensors del ajuste |
 | Tamano del repositorio | 4,7 GB |
 | Modelo base | Qwen/Qwen2.5-Coder-7B-Instruct |
-| Fecha de creacion | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ Frente a su propio modelo base, la unica diferencia documentada es el estilo de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adepadua/localllm-coder-7b
+- Modelo en Hugging Face: https://huggingface.co/adepadua/localllm-coder-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Proyecto localllm (Substanze): https://substanze.ai
 - Informe tecnico de Qwen2.5-Coder (modelo base): https://arxiv.org/abs/2409.12186

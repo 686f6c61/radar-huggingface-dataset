@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`davidmillerbeck/swin-t-checkpoint` es un repositorio de HuggingFace publicado por el usuario davidmillerbeck que contiene una implementacion propia de una Swin Transformer Tiny (Swin-T) orientada a tareas de *matching*, es decir, a la comparacion o emparejamiento entre representaciones (probablemente de dos modalidades o dos vistas de un mismo dato). El repositorio incluye el codigo Python ejecutable (`run.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de pesos en formato safetensors.
+`davidmillerbeck/swin-t-checkpoint` es un repositorio de Hugging Face publicado por el usuario davidmillerbeck que contiene una implementacion propia de una Swin Transformer Tiny (Swin-T) orientada a tareas de *matching*, es decir, a la comparacion o emparejamiento entre representaciones (probablemente de dos modalidades o dos vistas de un mismo dato). El repositorio incluye el codigo Python ejecutable (`run.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de pesos en formato safetensors.
 
 El punto clave, y que condiciona cualquier evaluacion, es que el propio autor declara explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un modelo entrenado ni un checkpoint con resultados de benchmark. El repositorio no reclama ninguna puntuacion y advierte de que los valores de la receta incluida (SGD con *schedule* coseno) son valores de partida del script, no evidencia de un entrenamiento completado. Se trata, por tanto, de un artefacto de investigacion experimental, no de un modelo listo para produccion.
 
@@ -68,7 +68,7 @@ La informacion disponible no permite una comparativa cuantitativa fiable, porque
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidmillerbeck/swin-t-checkpoint | 33.088 (segun safetensors) | No disponible | Sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas, checkpoint sin entrenar |
+| davidmillerbeck/swin-t-checkpoint | 33.088 (segun safetensors) | No disponible | Sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas, checkpoint sin entrenar |
 | Swin-T oficial (torchvision / Microsoft) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Licencia del repositorio original (no verificada aqui) | Ampliamente disponible con pesos preentrenados en ImageNet |
 | Swin-V2-T oficial | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Licencia del repositorio original (no verificada aqui) | Pesos preentrenados publicados |
 | DeiT-Ti | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Licencia del repositorio original (no verificada aqui) | Pesos preentrenados publicados |
@@ -90,6 +90,6 @@ La diferencia fundamental no es de arquitectura sino de estado: las alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidmillerbeck/swin-t-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/davidmillerbeck/swin-t-checkpoint
 - Ficheros incluidos en el repositorio: `run.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre este modelo. Los resultados obtenidos correspondian a paginas de cartas coleccionables de One Piece (Cardmarket, eBay, PriceCharting, OPECards) y no guardan relacion con el repositorio. No se dispone, por tanto, de paper, blog tecnico, repositorio de codigo adicional ni demo asociados.

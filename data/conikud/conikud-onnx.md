@@ -85,7 +85,7 @@ No disponible. La model card no incluye comparaciones con otros sistemas de G2P 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/conikud/conikud-onnx
+- Modelo en Hugging Face: https://huggingface.co/conikud/conikud-onnx
 - Repositorio e instalacion del paquete: https://github.com/conikud/conikud-onnx
 - Conjunto de evaluacion MILIM-Bench: https://huggingface.co/datasets/renikud/MILIM-Bench
 - Los resultados de busqueda web devueltos no contenian enlaces tecnicos relevantes sobre este modelo (correspondian al portal de noticias t-online.de), por lo que no se anaden mas referencias.

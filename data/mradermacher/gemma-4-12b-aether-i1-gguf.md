@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-12B-Aether-i1-GGUF es una distribucion de pesos en formato GGUF del modelo Gemma-4-12B-Aether, un ajuste fino (fine-tune) del modelo base Gemma 4 de 12 mil millones de parametros. El trabajo de cuantizacion lo realiza mradermacher, un conocido distribuidor de cuantizaciones GGUF en HuggingFace, mientras que el fine-tune original es obra de emkey1. El modelo esta pensado para ejecucion local mediante llama.cpp y derivados, con cuantizaciones de tipo imatrix (i1) que buscan preservar la calidad del modelo original a tamanos reducidos.
+Gemma-4-12B-Aether-i1-GGUF es una distribucion de pesos en formato GGUF del modelo Gemma-4-12B-Aether, un ajuste fino (fine-tune) del modelo base Gemma 4 de 12 mil millones de parametros. El trabajo de cuantizacion lo realiza mradermacher, un conocido distribuidor de cuantizaciones GGUF en Hugging Face, mientras que el fine-tune original es obra de emkey1. El modelo esta pensado para ejecucion local mediante llama.cpp y derivados, con cuantizaciones de tipo imatrix (i1) que buscan preservar la calidad del modelo original a tamanos reducidos.
 
 El modelo cuenta con 11.907.350.576 parametros totales (aproximadamente 11,9 mil millones), lo que lo situa en la gama de modelos de 12B manejables en hardware de consumo con cuantizaciones agresivas. Segun la model card, se trata de un modelo con capacidades de vision, ya que menciona explicitamente que los archivos mmproj (proyeccion multimodal) estarian en el repositorio estatico asociado. El idioma declarado es unicamente ingles (en).
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-12B-Aether-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-12B-Aether-i1-GGUF
 - Modelo base (fine-tune): https://huggingface.co/emkey1/Gemma-4-12B-Aether
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Gemma-4-12B-Aether-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-4-12B-Aether-i1-GGUF

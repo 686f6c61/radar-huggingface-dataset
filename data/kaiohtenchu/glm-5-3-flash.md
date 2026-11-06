@@ -6,7 +6,7 @@ GLM-5.3-Flash es un modelo multimodal nativo (entrada de imagen y texto, salida 
 
 El modelo parte de un base entrenado desde cero, con arquitectura y receta de entrenamiento redisenadas. Incorpora por primera vez en la serie GLM una arquitectura hibrida que combina atencion dispersa y atencion lineal, con el objetivo de reducir el coste de servicio en contextos largos sin perder precision, y adopta Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. El preentrenamiento multimodal se ha realizado sobre un corpus de 30 billones (30T) de tokens.
 
-Es relevante ahora porque compite en el segmento de modelos frontera abiertos con licencia MIT, precios de servicio muy bajos y soporte amplio de frameworks de despliegue (SGLang, vLLM, TokenSpeed, Transformers, KTransformers, Unsloth). No obstante, el repositorio de HuggingFace analizado es una copia subida por un tercero (KaiohTenchu), no el repositorio oficial de Z.ai, y no registra descargas ni interacciones en el momento de la consulta.
+Es relevante ahora porque compite en el segmento de modelos frontera abiertos con licencia MIT, precios de servicio muy bajos y soporte amplio de frameworks de despliegue (SGLang, vLLM, TokenSpeed, Transformers, KTransformers, Unsloth). No obstante, el repositorio de Hugging Face analizado es una copia subida por un tercero (KaiohTenchu), no el repositorio oficial de Z.ai, y no registra descargas ni interacciones en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ Como afirmacion cualitativa, la model card indica que GLM-5.3-Flash supera a GLM
 
 | Modelo | Parametros totales / activos | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 321B / 18B | no disponible (evaluado hasta 1M) | Referencia de la comparativa; supera a GLM-5.2 segun el autor | MIT | Pesos en HuggingFace (repo de tercero) y API en Z.ai |
+| GLM-5.3-Flash | 321B / 18B | no disponible (evaluado hasta 1M) | Referencia de la comparativa; supera a GLM-5.2 segun el autor | MIT | Pesos en Hugging Face (repo de tercero) y API en Z.ai |
 | GLM-5.2 | no disponible | no disponible | Inferior a GLM-5.3-Flash segun la model card, a mayor precio | no disponible | no disponible |
 | Claude Opus 4.8 | no disponible | no disponible | Referencia de comparacion en codigo y tareas agenticas; segun el autor, GLM-5.3-Flash se le acerca | Propietaria | Solo API |
 
@@ -98,7 +98,7 @@ No se dispone de datos verificables de parametros, contexto ni resultados numeri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KaiohTenchu/GLM-5.3-Flash
+- Modelo en Hugging Face: https://huggingface.co/KaiohTenchu/GLM-5.3-Flash
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico (arXiv 2602.15763): https://arxiv.org/abs/2602.15763
 - Documentacion de la API en Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

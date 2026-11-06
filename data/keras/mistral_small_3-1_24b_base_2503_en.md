@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Mistral Small 3.1 24B Base (este) | 24,01 B | 128k | Sí (Pixtral) | Apache 2.0 | KerasHub |
-| Mistral Small 3.1 24B Instruct | 24,01 B | 128k | Sí (Pixtral) | Apache 2.0 | HuggingFace / KerasHub |
-| Mistral Small 3.2 24B Instruct | 24,01 B | 128k | Sí (Pixtral) | Apache 2.0 | HuggingFace / KerasHub |
-| Gemma 3 27B | 27 B | 128k | Sí | Gemma license | HuggingFace |
+| Mistral Small 3.1 24B Instruct | 24,01 B | 128k | Sí (Pixtral) | Apache 2.0 | Hugging Face / KerasHub |
+| Mistral Small 3.2 24B Instruct | 24,01 B | 128k | Sí (Pixtral) | Apache 2.0 | Hugging Face / KerasHub |
+| Gemma 3 27B | 27 B | 128k | Sí | Gemma license | Hugging Face |
 
 La comparación con Gemma 3 27B se ofrece como referencia de categoría (modelo multimodal de tamaño similar con contexto de 128k), pero no se dispone de datos de benchmarks en la información proporcionada para establecer una comparación cuantitativa.
 
@@ -81,7 +81,7 @@ La comparación con Gemma 3 27B se ofrece como referencia de categoría (modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keras/mistral_small_3.1_24b_base_2503_en
+- Hugging Face: https://huggingface.co/keras/mistral_small_3.1_24b_base_2503_en
 - Model card de Mistral AI: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Anuncio de Mistral Small 3.1: https://mistral.ai/news/mistral-small-3-1
 - Guía de inicio de KerasHub: https://keras.io/guides/keras_hub/getting_started/

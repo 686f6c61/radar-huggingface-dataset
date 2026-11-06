@@ -65,10 +65,10 @@ Este dato proviene de la web AICrier y de la pagina de aimodels.fyi. No se dispo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| Assistant_Pepe_70B | 70B | 128K | llama3.1 | HuggingFace (safetensors, GGUF) | Razonamiento lateral, menos filtrado |
-| Llama-3.1-70B-Instruct (base) | 70B | 128K | llama3.1 | HuggingFace | Instruccion general, alineado |
-| Mistral-Large-2 | 123B | 128K | Apache 2.0 | HuggingFace | Instruccion general, multilingue |
-| NousResearch-Hermes-2-Pro-70B | 70B | 32K | llama3.1 | HuggingFace | Instruccion, tool calling |
+| Assistant_Pepe_70B | 70B | 128K | llama3.1 | Hugging Face (safetensors, GGUF) | Razonamiento lateral, menos filtrado |
+| Llama-3.1-70B-Instruct (base) | 70B | 128K | llama3.1 | Hugging Face | Instruccion general, alineado |
+| Mistral-Large-2 | 123B | 128K | Apache 2.0 | Hugging Face | Instruccion general, multilingue |
+| NousResearch-Hermes-2-Pro-70B | 70B | 32K | llama3.1 | Hugging Face | Instruccion, tool calling |
 
 La comparativa directa con modelos de la misma categoria (70B) es limitada porque Assistant_Pepe_70B se diferencia por su entrenamiento en datos no filtrados y su rendimiento en razonamiento lateral, mientras que los modelos base estan alineados para seguridad. No hay datos de benchmarks estandar para comparar numericamente. La licencia llama3.1 es comun a todos los modelos basados en Llama 3.1, lo que permite uso comercial con restricciones de usuarios.
 
@@ -83,8 +83,8 @@ La comparativa directa con modelos de la misma categoria (70B) es limitada porqu
 
 ## Enlaces
 
-- Repo de HuggingFace (original): https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_70B
-- Repo de HuggingFace (re-subida Rambo6758): https://huggingface.co/Rambo6758/Assistant_Pepe_70B
+- Repo de Hugging Face (original): https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_70B
+- Repo de Hugging Face (re-subida Rambo6758): https://huggingface.co/Rambo6758/Assistant_Pepe_70B
 - Repo GGUF (bartowski): https://huggingface.co/bartowski/SicariusSicariiStuff_Assistant_Pepe_70B-GGUF
 - Articulo de AICritic (lateral thinking): https://aicrier.com/post/cx4i9w08oik53iai0lfj
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/assistant-pepe-70b-sicariussicariistuff

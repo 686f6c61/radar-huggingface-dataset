@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Logesshhh/road-anomaly-pothole-yolov8m` es un detector de objetos basado en YOLOv8 Medium (`yolov8m`, 25,8 millones de parametros) entrenado especificamente para identificar anomalias en la calzada: baches, grietas estructurales, grietas severas y badenes (speed bumps), junto con tres clases de contexto vial (vehiculos pesados, vehiculos ligeros y peatones). Lo publica el usuario Logesshhh en HuggingFace bajo licencia Apache 2.0, con pesos en formato Ultralytics (`.pt`) y una exportacion ONNX para despliegue multiplataforma. El problema que aborda es la inspeccion automatizada de carreteras: sustituir o complementar la revision manual de firmes por un modelo que corre en tiempo real sobre video de dashcam o grabaciones aereas.
+El modelo `Logesshhh/road-anomaly-pothole-yolov8m` es un detector de objetos basado en YOLOv8 Medium (`yolov8m`, 25,8 millones de parametros) entrenado especificamente para identificar anomalias en la calzada: baches, grietas estructurales, grietas severas y badenes (speed bumps), junto con tres clases de contexto vial (vehiculos pesados, vehiculos ligeros y peatones). Lo publica el usuario Logesshhh en Hugging Face bajo licencia Apache 2.0, con pesos en formato Ultralytics (`.pt`) y una exportacion ONNX para despliegue multiplataforma. El problema que aborda es la inspeccion automatizada de carreteras: sustituir o complementar la revision manual de firmes por un modelo que corre en tiempo real sobre video de dashcam o grabaciones aereas.
 
 El modelo se entreno durante 120 epocas en una unica GPU RTX 3060 sobre un conjunto de aproximadamente 30.685 imagenes de carretera etiquetadas, con mezcla de vias indias, carreteras internacionales y autopistas. La model card reporta precision 0,736, recall 0,740, mAP@0,5 de 0,745 y una latencia de inferencia de unos 12,0 ms por fotograma. Son cifras de un modelo de tamano medio y proposito especifico, no de un detector de uso general: la relevancia esta en la vertical concreta (seguridad vial y mantenimiento de infraestructura) y en que se distribuye con licencia permisiva y exportacion ONNX, lo que facilita integrarlo en sistemas embarcados o en vehiculos.
 
@@ -102,7 +102,7 @@ No se dispone de datos comparativos publicados para este modelo frente a alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Logesshhh/road-anomaly-pothole-yolov8m
-- Repositorio del autor en HuggingFace: https://huggingface.co/Logesshhh
+- Modelo en Hugging Face: https://huggingface.co/Logesshhh/road-anomaly-pothole-yolov8m
+- Repositorio del autor en Hugging Face: https://huggingface.co/Logesshhh
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo: los enlaces obtenidos corresponden a paginas bancarias de TARGOBANK (https://www.targobank.de/) sin relacion con deteccion de anomalias viales.

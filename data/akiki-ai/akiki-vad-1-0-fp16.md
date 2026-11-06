@@ -70,7 +70,7 @@ Latencia registrada por el autor con `akiki` 0.0.5 en un AMD Ryzen 9 9900X con u
 
 | Modelo | Tipo | Parámetros | Contexto / trama | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akiki VAD 1.0 FP16 | VAD con frontend FFT + GRU | 190.081 | trama de 16 ms, protocolo de 32 ms | Apache 2.0 | HuggingFace + paquete `akiki` |
+| Akiki VAD 1.0 FP16 | VAD con frontend FFT + GRU | 190.081 | trama de 16 ms, protocolo de 32 ms | Apache 2.0 | Hugging Face + paquete `akiki` |
 | Silero VAD v5 | VAD neuronal | no disponible | no disponible | no disponible en la información proporcionada | citado en la comparación histórica del autor |
 | TEN-VAD | VAD neuronal | no disponible | no disponible | no disponible en la información proporcionada | citado en la comparación histórica del autor |
 
@@ -82,14 +82,14 @@ La comparación de rendimiento entre Akiki, TEN-VAD y Silero que aparece en la m
 - No es un modelo generativo ni un modelo de lenguaje: no soporta tool calling, agentes, razonamiento, visión ni generación de texto.
 - No se dispone de información sobre sesgos acústicos (idioma, acento, género, ruido de fondo) ni sobre el dominio de entrenamiento, por lo que el rendimiento fuera de TEN y VoxConverse no está caracterizado.
 - Riesgo de falsos positivos y negativos en entornos con ruido, música o habla superpuesta; la model card no documenta evaluaciones en estas condiciones.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; el modelo se publica con `inference: false` en la model card, lo que implica que la inferencia debe realizarse con el motor Akiki y no con la pipeline estándar de HuggingFace.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; el modelo se publica con `inference: false` en la model card, lo que implica que la inferencia debe realizarse con el motor Akiki y no con la pipeline estándar de Hugging Face.
 - La carga directa de safetensors requiere una build del motor Akiki con el loader `akiki_rowwise` v1; las wheels antiguas solo pueden seleccionar esta precisión desde los pesos FP32 empaquetados.
 - El volumen de descargas y la ausencia de likes indican una adopción muy baja; no hay evidencia de uso en producción a gran escala.
 - La comparación de latencia publicada se realizó en un único modelo de CPU (AMD Ryzen 9 9900X) con un núcleo fijado; los valores no son extrapolables a otras plataformas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akiki-AI/akiki-vad-1.0-fp16
+- Modelo en Hugging Face: https://huggingface.co/Akiki-AI/akiki-vad-1.0-fp16
 - Modelo base: https://huggingface.co/Akiki-AI/akiki-vad-1.0
 - Documentación del formato: FORMAT.md (referenciado en la model card, dentro del repositorio)
 - Datos de benchmark: assets/benchmark-data.json (referenciado en la model card)

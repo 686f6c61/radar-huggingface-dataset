@@ -91,7 +91,7 @@ Datos de validación de esta release (según la model card, medidos en una RTX 5
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/lyf/Qwen3.8-27B-Huihui-Abliterated-NVFP4-MTP-VL
+- Hugging Face del modelo: https://huggingface.co/lyf/Qwen3.8-27B-Huihui-Abliterated-NVFP4-MTP-VL
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía sobre Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

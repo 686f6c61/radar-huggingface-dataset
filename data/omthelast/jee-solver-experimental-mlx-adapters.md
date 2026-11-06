@@ -86,9 +86,9 @@ No se dispone de informacion sobre otros adaptadores o solvers de JEE comparable
 
 | Sistema | Parametros | Contexto | Respuestas estrictas (Validation01) | Procedimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jee-solver-experimental (coverage16-step060) | 9B + LoRA rango 4 | No disponible | 8/12 | 14/24 | Apache-2.0 | Repositorio HuggingFace, requiere base MLX 4-bit |
-| jee-solver-experimental (reliable01-step060) | 9B + LoRA rango 4 | No disponible | 7/12 | 18/24 | Apache-2.0 | Repositorio HuggingFace, requiere base MLX 4-bit |
-| mlx-community/Qwen3.5-9B-4bit (base sin modificar) | 9B | No disponible | 7/12 | 17/24 | Apache-2.0 | HuggingFace |
+| jee-solver-experimental (coverage16-step060) | 9B + LoRA rango 4 | No disponible | 8/12 | 14/24 | Apache-2.0 | Repositorio Hugging Face, requiere base MLX 4-bit |
+| jee-solver-experimental (reliable01-step060) | 9B + LoRA rango 4 | No disponible | 7/12 | 18/24 | Apache-2.0 | Repositorio Hugging Face, requiere base MLX 4-bit |
+| mlx-community/Qwen3.5-9B-4bit (base sin modificar) | 9B | No disponible | 7/12 | 17/24 | Apache-2.0 | Hugging Face |
 | Otros solvers de JEE comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No se dispone de informacion sobre otros adaptadores o solvers de JEE comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OmTheLast/jee-solver-experimental-mlx-adapters
+- Repositorio en Hugging Face: https://huggingface.co/OmTheLast/jee-solver-experimental-mlx-adapters
 - Modelo base cuantizado en MLX: https://huggingface.co/mlx-community/Qwen3.5-9B-4bit
 - Modelo upstream original: https://huggingface.co/Qwen/Qwen3.5-9B
 - Script de carga local: load_mlx.py (incluido en el repositorio)

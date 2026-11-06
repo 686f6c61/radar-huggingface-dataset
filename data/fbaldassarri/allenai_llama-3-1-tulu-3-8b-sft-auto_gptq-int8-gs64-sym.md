@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_gptq-int8-gs64-sym | 8B (2,93B declarados en safetensors) | no disponible | INT8 GPTQ gs64 simetrica | apache-2.0 | HuggingFace, 15 descargas |
-| allenai/Llama-3.1-Tulu-3-8B-SFT (original) | 8B | 128.000 tokens (Llama 3.1) | bf16/fp16 | apache-2.0 | HuggingFace, modelo de referencia |
-| Llama 3.1 8B Instruct (Meta) | 8B | 128.000 tokens | bf16/fp16, multiples cuantizaciones comunitarias | Llama 3.1 Community License | HuggingFace, amplia adopcion |
+| fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_gptq-int8-gs64-sym | 8B (2,93B declarados en safetensors) | no disponible | INT8 GPTQ gs64 simetrica | apache-2.0 | Hugging Face, 15 descargas |
+| allenai/Llama-3.1-Tulu-3-8B-SFT (original) | 8B | 128.000 tokens (Llama 3.1) | bf16/fp16 | apache-2.0 | Hugging Face, modelo de referencia |
+| Llama 3.1 8B Instruct (Meta) | 8B | 128.000 tokens | bf16/fp16, multiples cuantizaciones comunitarias | Llama 3.1 Community License | Hugging Face, amplia adopcion |
 
 La comparativa de rendimiento no esta disponible: no hay benchmarks publicados para este checkpoint cuantizado ni datos que permitan medir la degradacion frente al original.
 
@@ -87,7 +87,7 @@ La comparativa de rendimiento no esta disponible: no hay benchmarks publicados p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_gptq-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round
 - Receta de replicacion (auto-round-pipeline): https://git.epicdynamic.com/auto-round-pipeline

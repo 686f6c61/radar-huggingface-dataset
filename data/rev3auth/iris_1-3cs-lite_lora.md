@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Rev3auth/iris_1.3cs-lite_lora | ~270M (base) | No disponible (base 32 768) | Apache 2.0 | HuggingFace (adaptador LoRA) | Cero descargas en el momento de la consulta |
-| Rev3auth/iris-1.3-lite-lora | 1B (base) | 32 768 tokens (segun Featherless) | Apache 2.0 | HuggingFace | Modelo relacionado del mismo autor, base Gemma 3 1B |
-| google/gemma-3-270m-it | 270M | 32 768 tokens | Gemma terms | HuggingFace / Google | Modelo base original, sin el ajuste LoRA |
-| Qwen2.5-0.5B-Instruct | ~500M | 32 768 tokens | Apache 2.0 | HuggingFace | Alternativa de tamano similar con soporte multilingue |
+| Rev3auth/iris_1.3cs-lite_lora | ~270M (base) | No disponible (base 32 768) | Apache 2.0 | Hugging Face (adaptador LoRA) | Cero descargas en el momento de la consulta |
+| Rev3auth/iris-1.3-lite-lora | 1B (base) | 32 768 tokens (segun Featherless) | Apache 2.0 | Hugging Face | Modelo relacionado del mismo autor, base Gemma 3 1B |
+| google/gemma-3-270m-it | 270M | 32 768 tokens | Gemma terms | Hugging Face / Google | Modelo base original, sin el ajuste LoRA |
+| Qwen2.5-0.5B-Instruct | ~500M | 32 768 tokens | Apache 2.0 | Hugging Face | Alternativa de tamano similar con soporte multilingue |
 
 Nota: los datos de `iris-1.3-lite-lora` (1B, 32 768 tokens) provienen de fuentes de terceros (Featherless) y corresponden a un modelo distinto al de esta ficha; se incluyen solo como referencia del ecosistema del autor.
 
@@ -84,7 +84,7 @@ Nota: los datos de `iris-1.3-lite-lora` (1B, 32 768 tokens) provienen de fuentes
 
 ## Enlaces
 
-- HuggingFace (modelo de esta ficha): https://huggingface.co/Rev3auth/iris_1.3cs-lite_lora
+- Hugging Face (modelo de esta ficha): https://huggingface.co/Rev3auth/iris_1.3cs-lite_lora
 - Modelo relacionado del mismo autor: https://huggingface.co/Rev3auth/iris-1.3-lite-lora
 - Version GGUF relacionada: https://huggingface.co/Rev3auth/iris-1.3-lite
 - Ficha en Featherless (modelo relacionado 1B): https://featherless.ai/models/Rev3auth/iris-1.3-lite-lora

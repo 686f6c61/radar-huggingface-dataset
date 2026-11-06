@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ipz234/xlmr-ukr-toxicity` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `ipz234`, construido sobre la arquitectura XLM-RoBERTa. Por el identificador y los tags del repositorio, su propósito declarado es la detección de toxicidad en texto en ucraniano, aunque la model card no aporta ninguna confirmación explícita sobre el idioma, el dataset de entrenamiento ni la tarea exacta. El modelo tiene 278.045.186 parámetros y un tamaño de repositorio de 1,1 GB, lo que es coherente con un encoder de base tipo XLM-R en precisión completa (fp32).
+`ipz234/xlmr-ukr-toxicity` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `ipz234`, construido sobre la arquitectura XLM-RoBERTa. Por el identificador y los tags del repositorio, su propósito declarado es la detección de toxicidad en texto en ucraniano, aunque la model card no aporta ninguna confirmación explícita sobre el idioma, el dataset de entrenamiento ni la tarea exacta. El modelo tiene 278.045.186 parámetros y un tamaño de repositorio de 1,1 GB, lo que es coherente con un encoder de base tipo XLM-R en precisión completa (fp32).
 
-El modelo es relevante en el contexto de la moderación de contenido en lenguas eslavas orientales, un área donde los recursos abiertos son escasos en comparación con el inglés. Sin embargo, la información pública es prácticamente nula: la model card es la plantilla autogenerada de HuggingFace sin rellenar, no se declara licencia, no se especifican idiomas soportados y no se publican métricas de evaluación. Cualquier uso en producción requiere una validación independiente previa.
+El modelo es relevante en el contexto de la moderación de contenido en lenguas eslavas orientales, un área donde los recursos abiertos son escasos en comparación con el inglés. Sin embargo, la información pública es prácticamente nula: la model card es la plantilla autogenerada de Hugging Face sin rellenar, no se declara licencia, no se especifican idiomas soportados y no se publican métricas de evaluación. Cualquier uso en producción requiere una validación independiente previa.
 
 Se trata, por tanto, de un checkpoint de interés potencial para investigación en clasificación de toxicidad multilingüe, pero no de un artefacto listo para despliegue sin auditoría. La ficha que sigue refleja esta situación y marca explícitamente como "no disponible" todo dato que el autor no ha publicado.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ipz234/xlmr-ukr-toxicity` | 278 M | no disponible (típico 512) | Clasificación de toxicidad (ucraniano, presumible) | no disponible | HuggingFace |
-| `xlm-roberta-base` (FacebookAI) | 278 M | 512 | Modelo base multilingüe (encoder) | MIT | HuggingFace |
-| `textdetox/xlmr-large-toxicity-classifier` | ~560 M | 512 | Detección de toxicidad multilingüe | no verificada en esta ficha | HuggingFace (referencia de la comunidad) |
-| `unitary/multilingual-toxic-xlm-roberta` | ~278 M | 512 | Detección de toxicidad multilingüe | Apache 2.0 (según su model card) | HuggingFace |
+| `ipz234/xlmr-ukr-toxicity` | 278 M | no disponible (típico 512) | Clasificación de toxicidad (ucraniano, presumible) | no disponible | Hugging Face |
+| `xlm-roberta-base` (FacebookAI) | 278 M | 512 | Modelo base multilingüe (encoder) | MIT | Hugging Face |
+| `textdetox/xlmr-large-toxicity-classifier` | ~560 M | 512 | Detección de toxicidad multilingüe | no verificada en esta ficha | Hugging Face (referencia de la comunidad) |
+| `unitary/multilingual-toxic-xlm-roberta` | ~278 M | 512 | Detección de toxicidad multilingüe | Apache 2.0 (según su model card) | Hugging Face |
 
 La comparación con alternativas de la comunidad se ofrece como referencia de categoría; los datos de los modelos comparados no han sido verificados en esta ficha y deben consultarse en sus respectivas model cards.
 
@@ -86,7 +86,7 @@ La comparación con alternativas de la comunidad se ofrece como referencia de ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ipz234/xlmr-ukr-toxicity
+- Modelo en Hugging Face: https://huggingface.co/ipz234/xlmr-ukr-toxicity
 - Paper de XLM-RoBERTa (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental (Lacoste et al., 2019): https://mlco2.github.io/impact
 - Repositorio de XLM-RoBERTa en GitHub (arquitectura base): https://github.com/facebookresearch/fairseq/tree/main/examples/xlmr

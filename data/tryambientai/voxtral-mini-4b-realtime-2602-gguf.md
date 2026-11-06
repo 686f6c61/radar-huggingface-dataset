@@ -61,7 +61,7 @@ Resultados de WER en LibriSpeech test-clean (2620 utterances, normalizador de te
 | Q5_K_M | 3.28 GB | 2.08 % |
 | Q4_K_M | 2.83 GB | 2.08 % |
 
-La referencia de HuggingFace Transformers (VoxtralRealtimeForConditionalGeneration, BF16, greedy) en la misma maquina obtiene 2.08 %, por lo que el GGUF en BF16 iguala la referencia. Todas las cuantizaciones se mantienen dentro del ruido de bootstrap (2.07-2.09 %), de modo que la escalera de cuantizacion es neutra en WER hasta Q4_K_M. El WER publicado es solo para ingles; el modelo es multilingue pero no se publican resultados por idioma.
+La referencia de Hugging Face Transformers (VoxtralRealtimeForConditionalGeneration, BF16, greedy) en la misma maquina obtiene 2.08 %, por lo que el GGUF en BF16 iguala la referencia. Todas las cuantizaciones se mantienen dentro del ruido de bootstrap (2.07-2.09 %), de modo que la escalera de cuantizacion es neutra en WER hasta Q4_K_M. El WER publicado es solo para ingles; el modelo es multilingue pero no se publican resultados por idioma.
 
 Rendimiento en tiempo real (RTF, menor es mejor):
 

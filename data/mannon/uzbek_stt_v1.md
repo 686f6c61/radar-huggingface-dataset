@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mannon/uzbek_stt_v1 es un modelo de reconocimiento automatico del habla (ASR) especializado en uzbek, obtenido por fine-tuning de openai/whisper-medium (769 M de parametros) por parte del equipo que la model card identifica como Kotibai & Rubai Team. Está publicado en HuggingFace bajo el identificador Mannon/uzbek_stt_v1, aunque la propia model card y los ejemplos de codigo hacen referencia al repositorio como Kotib/uzbek_stt_v1 y al nombre interno whisper-medium-uz-v1; conviene tener en cuenta esa discrepancia al descargar los pesos.
+Mannon/uzbek_stt_v1 es un modelo de reconocimiento automatico del habla (ASR) especializado en uzbek, obtenido por fine-tuning de openai/whisper-medium (769 M de parametros) por parte del equipo que la model card identifica como Kotibai & Rubai Team. Está publicado en Hugging Face bajo el identificador Mannon/uzbek_stt_v1, aunque la propia model card y los ejemplos de codigo hacen referencia al repositorio como Kotib/uzbek_stt_v1 y al nombre interno whisper-medium-uz-v1; conviene tener en cuenta esa discrepancia al descargar los pesos.
 
 El modelo resuelve un problema muy concreto: la transcripcion de audio en uzbek, un idioma con cobertura limitada en los modelos multilingues genericos. El autor declara un entrenamiento sobre aproximadamente 1.600 horas de audio en uzbek, con script latino (incluyendo prestamos del ruso transliterados, como "brat", "davay" o "prosto"), y unos resultados de WER global del 16,7 % y CER del 7,0 % sobre 1.864 muestras de 8 conjuntos de prueba distintos.
 
@@ -40,7 +40,7 @@ El entrenamiento se realizo en tres etapas con aprendizaje por curriculo, segun 
 - Procesamiento de audio ruidoso o aumentado, con degradacion controlada declarada por el autor.
 - Cobertura de variantes dialectales del uzbeko, evaluada de forma separada en la model card.
 - Compatible con el pipeline `automatic-speech-recognition` de transformers y con `chunk_length_s=30` para audios de duracion arbitraria.
-- Integracion con Inference Endpoints de HuggingFace segun la etiqueta endpoints_compatible.
+- Integracion con Inference Endpoints de Hugging Face segun la etiqueta endpoints_compatible.
 - No se documenta soporte de tool calling, function calling, agentes, vision, audio generation ni modo de razonamiento explicito: las capacidades se limitan al ASR.
 - No se declara traduccion a otros idiomas (la model card solo menciona transcripcion en uzbek).
 
@@ -91,10 +91,10 @@ No se dispone de resultados de benchmarks de modelos alternativos sobre el mismo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mannon/uzbek_stt_v1 (este modelo) | 763,9 M | 30 s de audio, 448 tokens de decodificador | uz | Apache 2.0 | HuggingFace (transformers, safetensors) |
-| openai/whisper-medium | 769 M | 30 s de audio, 448 tokens de decodificador | 99 idiomas (uz incluido) | Apache 2.0 | HuggingFace, OpenAI |
-| openai/whisper-large-v3 | 1.550 M | 30 s de audio, 448 tokens de decodificador | 99 idiomas (uz incluido) | Apache 2.0 | HuggingFace, OpenAI |
-| openai/whisper-small | 244 M | 30 s de audio, 448 tokens de decodificador | 99 idiomas (uz incluido) | Apache 2.0 | HuggingFace, OpenAI |
+| Mannon/uzbek_stt_v1 (este modelo) | 763,9 M | 30 s de audio, 448 tokens de decodificador | uz | Apache 2.0 | Hugging Face (transformers, safetensors) |
+| openai/whisper-medium | 769 M | 30 s de audio, 448 tokens de decodificador | 99 idiomas (uz incluido) | Apache 2.0 | Hugging Face, OpenAI |
+| openai/whisper-large-v3 | 1.550 M | 30 s de audio, 448 tokens de decodificador | 99 idiomas (uz incluido) | Apache 2.0 | Hugging Face, OpenAI |
+| openai/whisper-small | 244 M | 30 s de audio, 448 tokens de decodificador | 99 idiomas (uz incluido) | Apache 2.0 | Hugging Face, OpenAI |
 
 El argumento de este modelo frente a los Whisper originales es la especializacion en uzbeko: los modelos base son multilingues y no publican WER especifico para uzbek, mientras que este fine-tuning declara un 16,7 % de WER global. Frente a whisper-large-v3, la ventaja es el menor coste de inferencia (aproximadamente la mitad de parametros); la desventaja es que no se dispone de una comparacion directa de calidad en uzbek. No se conocen en la informacion disponible otros fine-tunings de uzbeko comparables.
 
@@ -114,7 +114,7 @@ El argumento de este modelo frente a los Whisper originales es la especializacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mannon/uzbek_stt_v1
+- Modelo en Hugging Face: https://huggingface.co/Mannon/uzbek_stt_v1
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - Repositorio alternativo citado en la model card: https://huggingface.co/Kotib/uzbek_stt_v1 (no verificado; aparece en los ejemplos de codigo del autor)
 - Paper de la arquitectura Whisper (referencia del modelo base): https://arxiv.org/abs/2212.04356

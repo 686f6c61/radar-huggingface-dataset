@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ÇABA Selective Convolution + EMA Memory v1 (repositorio `Efe2898/caba-memory-v2-100m-tr`) es un modelo de lenguaje causal experimental de unos 100 millones de parámetros desarrollado por el usuario de HuggingFace Efe2898. No se trata de un transformer convencional: combina un grafo disperso de transición de tokens usado solo durante el entrenamiento, un softmax global atado de soporte completo, una convolución causal depthwise con K=8 y una memoria EMA selectiva multi-escala temporal con caché de tamaño constante. Esto lo sitúa en la categoría de arquitecturas experimentales alternativas al transformer estándar, más próximas a los modelos de estado (SSM) por su caché de tamaño fijo.
+ÇABA Selective Convolution + EMA Memory v1 (repositorio `Efe2898/caba-memory-v2-100m-tr`) es un modelo de lenguaje causal experimental de unos 100 millones de parámetros desarrollado por el usuario de Hugging Face Efe2898. No se trata de un transformer convencional: combina un grafo disperso de transición de tokens usado solo durante el entrenamiento, un softmax global atado de soporte completo, una convolución causal depthwise con K=8 y una memoria EMA selectiva multi-escala temporal con caché de tamaño constante. Esto lo sitúa en la categoría de arquitecturas experimentales alternativas al transformer estándar, más próximas a los modelos de estado (SSM) por su caché de tamaño fijo.
 
 El problema que aborda es la exploración de mecanismos de memoria de coste constante durante la inferencia, de modo que el estado (`past_key_values`) no crece con la longitud del prompt. Es relevante como ejercicio de investigación y como base para experimentación, aunque el propio autor advierte explícitamente en la model card que no reivindica calidad lingüística validada. El modelo ha sido entrenado con pesos de fuente `{"tr": 1.0}`, lo que sugiere un entrenamiento centrado en turco, y usa el tokenizador de `vngrs-ai/Kumru-2B-Base`. Con 329 descargas y licencia "other", es un proyecto de nicho orientado a desarrolladores curiosos por arquitecturas no convencionales.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Efe2898/caba-memory-v2-100m-tr | 101,9 M | CABA (grafo + conv causal + EMA) | 256 (entrenamiento), caché constante | other |
 | GPT-2 (124M) | 124 M | Transformer decoder | 1024 | MIT/modificada (según variante) |
 | Qwen2.5-0.5B | 494 M | Transformer decoder | 32768 (128K con YaRN) | Apache 2.0 |
-| SmolLM2-135M (HuggingFace) | 135 M | Transformer decoder | 2048 | Apache 2.0 |
+| SmolLM2-135M (Hugging Face) | 135 M | Transformer decoder | 2048 | Apache 2.0 |
 
 Comparado con alternativas de tamaño similar como SmolLM2-135M o GPT-2, el modelo ÇABA ofrece una caché de inferencia de tamaño constante (ventaja en memoria para secuencias largas) a cambio de un contexto de entrenamiento muy corto (256 tokens) y sin benchmarks validados. Para producción en castellano o multilingüe, las alternativas transformer son opciones mucho más maduras; el interés de ÇABA es principalmente investigador.
 
@@ -83,7 +83,7 @@ Comparado con alternativas de tamaño similar como SmolLM2-135M o GPT-2, el mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Efe2898/caba-memory-v2-100m-tr
+- Repositorio en Hugging Face: https://huggingface.co/Efe2898/caba-memory-v2-100m-tr
 - Tokenizador base: https://huggingface.co/vngrs-ai/Kumru-2B-Base
 - Dataset tokenizado: https://huggingface.co/datasets/Efe2898/tokenized
 - Paper, blog o demo: no disponible

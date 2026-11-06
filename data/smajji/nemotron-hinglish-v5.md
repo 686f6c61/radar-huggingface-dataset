@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-Hinglish-v5 es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario smajji en HuggingFace, obtenido mediante ajuste fino supervisado de `nvidia/nemotron-3.5-asr-streaming-0.6b`. Su objetivo especifico es transcribir audio en ingles, hindi y, sobre todo, hinglish (code-switching hindi-ingles), un escenario muy frecuente en India y mal cubierto por los modelos ASR genericos. Conserva la arquitectura FastConformer-Transducer (RNNT) con atencion cache-aware para streaming, 24 capas, 1024 dimensiones ocultas y aproximadamente 600 millones de parametros, con una entrada de audio mono a 16 kHz.
+Nemotron-Hinglish-v5 es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario smajji en Hugging Face, obtenido mediante ajuste fino supervisado de `nvidia/nemotron-3.5-asr-streaming-0.6b`. Su objetivo especifico es transcribir audio en ingles, hindi y, sobre todo, hinglish (code-switching hindi-ingles), un escenario muy frecuente en India y mal cubierto por los modelos ASR genericos. Conserva la arquitectura FastConformer-Transducer (RNNT) con atencion cache-aware para streaming, 24 capas, 1024 dimensiones ocultas y aproximadamente 600 millones de parametros, con una entrada de audio mono a 16 kHz.
 
 La aportacion principal de la version v5 respecto a la v4 es la correccion del denominado "Devanagari latch": en la version anterior, el habla en ingles con acento indio se transcribia erroneamente a escritura devanagari en hindi. Para ello se anadieron unas 187 horas de ingles con acento indio (IndicTTS-English y datos de tareas ASR), lo que reduce el porcentaje de transcripciones en devanagari del 19,5 % al 0,0 % y baja el WER en ese subconjunto del 22,2 % al 8,3 %. Ademas, se incorporaron corpus densos en numeros y simbolos para mejorar la precision en digitos y numeros de telefono.
 
@@ -86,10 +86,10 @@ No se han publicado resultados comparativos frente a otros modelos ASR en la inf
 
 | Modelo | Parametros | Idiomas | Streaming | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smajji/nemotron-hinglish-v5 | ~600 M | en, hi, hinglish | Si, cache-aware con chunks de 80-1120 ms | Apache-2.0 | HuggingFace, formato `.nemo` |
-| nvidia/nemotron-3.5-asr-streaming-0.6b | ~600 M | en, hi y otros prompts multilingues del modelo base | Si, cache-aware | Apache-2.0 | HuggingFace, formato `.nemo` |
-| openai/whisper-large-v3 | ~1550 M | Multilingue (99 idiomas), sin soporte especifico de hinglish | No, procesamiento por ventanas de 30 s | Apache-2.0 | HuggingFace, safetensors; amplia disponibilidad en motores de inferencia |
-| ai4bharat/indic-conformer-600m-multilingual | ~600 M | Idiomas indios | Si, Conformer con atencion por chunks | no disponible | HuggingFace, formato NeMo |
+| smajji/nemotron-hinglish-v5 | ~600 M | en, hi, hinglish | Si, cache-aware con chunks de 80-1120 ms | Apache-2.0 | Hugging Face, formato `.nemo` |
+| nvidia/nemotron-3.5-asr-streaming-0.6b | ~600 M | en, hi y otros prompts multilingues del modelo base | Si, cache-aware | Apache-2.0 | Hugging Face, formato `.nemo` |
+| openai/whisper-large-v3 | ~1550 M | Multilingue (99 idiomas), sin soporte especifico de hinglish | No, procesamiento por ventanas de 30 s | Apache-2.0 | Hugging Face, safetensors; amplia disponibilidad en motores de inferencia |
+| ai4bharat/indic-conformer-600m-multilingual | ~600 M | Idiomas indios | Si, Conformer con atencion por chunks | no disponible | Hugging Face, formato NeMo |
 
 El modelo de smajji es el unico de la comparativa con ajuste explicito para hinglish y con el problema del Devanagari latch documentado y corregido. Whisper large-v3 ofrece mayor cobertura de idiomas y un ecosistema de despliegue mucho mas amplio, pero no es un modelo de streaming y su tamano triplica el de este. Los modelos de NVIDIA y AI4Bharat comparten arquitectura y orden de magnitud de parametros, por lo que la eleccion depende del dominio de audio concreto; no hay resultados de WER comparables publicados en la informacion disponible.
 
@@ -109,7 +109,7 @@ El modelo de smajji es el unico de la comparativa con ajuste explicito para hing
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smajji/nemotron-hinglish-v5
+- Modelo en Hugging Face: https://huggingface.co/smajji/nemotron-hinglish-v5
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - NVIDIA NeMo (repositorio y documentacion del framework necesario para cargar el checkpoint): https://github.com/NVIDIA/NeMo
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, demos o repos) asociados a este modelo.

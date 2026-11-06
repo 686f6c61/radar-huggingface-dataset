@@ -87,8 +87,8 @@ La comparativa se basa en datos publicos de los respectivos modelos base. No hay
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-MLX-mxfp8-mixed
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Checkpoint en Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-MLX-mxfp8-mixed
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Repositorio de Alibaba Cloud para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentacion de Groq para Qwen3.8-27B: https://console.groq.com/docs/model/qwen/qwen3.8-27b

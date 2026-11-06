@@ -139,7 +139,7 @@ No se dispone de resultados de benchmarks de este checkpoint, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/Qwen3-8B-Base-OT3Math-SFT-step500
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/Qwen3-8B-Base-OT3Math-SFT-step500
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/knowledge-distillation/openthoughts3_math
 - Framework de entrenamiento verl: https://github.com/volcengine/verl

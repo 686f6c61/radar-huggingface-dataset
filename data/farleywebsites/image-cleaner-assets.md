@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `FarleyWebsites/image-cleaner-assets` es un espacio en HuggingFace creado por el usuario `FarleyWebsites`. No se ha publicado ninguna model card descriptiva: solo se indica la licencia Apache 2.0. El repositorio tiene un tamaño de 0.2 GB y está etiquetado con el formato ONNX y la región `us`. No se proporciona información sobre el tipo de modelo, su arquitectura, número de parámetros, longitud de contexto o propósito.
+El repositorio `FarleyWebsites/image-cleaner-assets` es un espacio en Hugging Face creado por el usuario `FarleyWebsites`. No se ha publicado ninguna model card descriptiva: solo se indica la licencia Apache 2.0. El repositorio tiene un tamaño de 0.2 GB y está etiquetado con el formato ONNX y la región `us`. No se proporciona información sobre el tipo de modelo, su arquitectura, número de parámetros, longitud de contexto o propósito.
 
 La ausencia de documentación técnica y de métricas de uso (0 descargas, 0 likes) impide determinar qué problema resuelve o por qué sería relevante. El nombre sugiere que podría tratarse de activos relacionados con limpieza de imágenes, pero no hay datos que lo confirmen. En su estado actual, el repositorio no puede evaluarse como un modelo de IA funcional.
 
@@ -52,4 +52,4 @@ No disponible. No se ha identificado ningún modelo comparable, ya que no se dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FarleyWebsites/image-cleaner-assets
+- Repositorio en Hugging Face: https://huggingface.co/FarleyWebsites/image-cleaner-assets

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-4B-Therapy-EfficientThink-SFT es un ajuste fino por LoRA sobre el modelo base XHToken/Spark-X2.5-4B, desarrollado por el usuario denjhang y publicado en HuggingFace. No es un modelo nuevo desde cero: es un experimento de "terapia" (termino metaforico usado por el autor) orientado a corregir una patologia concreta del modelo base, consistente en bucles de razonamiento larguisimos en sesiones de agente reales con contexto sucio, que llegaban a consumir mas de 30.000 tokens de pensamiento y 550 segundos por turno sin producir texto final. El resultado es un modelo de 4.112.079.360 parametros (4,1B) con licencia Apache-2.0 y soporte declarado de chino e ingles.
+Spark-X2.5-4B-Therapy-EfficientThink-SFT es un ajuste fino por LoRA sobre el modelo base XHToken/Spark-X2.5-4B, desarrollado por el usuario denjhang y publicado en Hugging Face. No es un modelo nuevo desde cero: es un experimento de "terapia" (termino metaforico usado por el autor) orientado a corregir una patologia concreta del modelo base, consistente en bucles de razonamiento larguisimos en sesiones de agente reales con contexto sucio, que llegaban a consumir mas de 30.000 tokens de pensamiento y 550 segundos por turno sin producir texto final. El resultado es un modelo de 4.112.079.360 parametros (4,1B) con licencia Apache-2.0 y soporte declarado de chino e ingles.
 
 El autor es explicitamente honesto sobre el alcance: se trata de una version experimental de "alivio parcial", no de un producto terminado. De 19 casos reales de fallo reproducidos, 12 mejoraron de forma sustancial (de 549-570 segundos a 4-25 segundos por turno), pero el fallo principal, la planificacion de tareas largas, sigue sin resolverse: al pedirle escribir un juego completo, el modelo continua entrando en bucle durante 8-10 minutos sin emitir texto.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/denjhang/Spark-X2.5-4B-Therapy-EfficientThink-SFT
+- Modelo en Hugging Face: https://huggingface.co/denjhang/Spark-X2.5-4B-Therapy-EfficientThink-SFT
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Perfil del autor de la metodologia de referencia (nerkyor): https://huggingface.co/nerkyor
 - Qwen3.8-Flash-Next (modelo profesor): no disponible

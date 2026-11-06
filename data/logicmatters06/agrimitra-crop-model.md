@@ -6,7 +6,7 @@ AgriMitra Crop Recommendation es un clasificador tabular basado en `RandomForest
 
 Su relevancia es practica y acotada: resuelve el problema de recomendacion de cultivo a partir de analisis de suelo y clima, un caso de uso clasico en agricultura de precision. La model card declara una precision del 99,697 % sobre un holdout estratificado de 1.320 muestras, con un F1 macro de 0,99607. Estas cifras deben interpretarse con cautela, ya que proceden del propio autor, no estan verificadas de forma independiente y el conjunto de datos subyacente es pequeno (6.596 filas) y de origen parcialmente publico (Kaggle).
 
-El proyecto expone el modelo a traves de un backend que solo muestra al usuario 22 de los 51 cultivos, aquellos para los que existe una guia completa de 15 secciones en la base de conocimiento de AgriMitra; el resto queda accesible mediante el campo `coverage` de la respuesta. El repositorio de HuggingFace ocupa 0,0 GB y no registra descargas ni likes en el momento de redactar esta ficha.
+El proyecto expone el modelo a traves de un backend que solo muestra al usuario 22 de los 51 cultivos, aquellos para los que existe una guia completa de 15 secciones en la base de conocimiento de AgriMitra; el resto queda accesible mediante el campo `coverage` de la respuesta. El repositorio de Hugging Face ocupa 0,0 GB y no registra descargas ni likes en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AgriMitra Crop Recommendation | no disponible (random forest) | no aplica (7 caracteristicas) | MIT | HuggingFace, 0 descargas |
+| AgriMitra Crop Recommendation | no disponible (random forest) | no aplica (7 caracteristicas) | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,8 +97,8 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logicmatters06/agrimitra-crop-model
-- Dataset en HuggingFace: https://huggingface.co/datasets/logicmatters06/agrimitra-dataset
+- Modelo en Hugging Face: https://huggingface.co/logicmatters06/agrimitra-crop-model
+- Dataset en Hugging Face: https://huggingface.co/datasets/logicmatters06/agrimitra-dataset
 - Repositorio AgriMitra (referenciado en la model card como origen de `crop-ml/merged_crop_dataset.csv` y `crop-ml/trainingModel.ipynb`): no disponible como URL directa en la informacion proporcionada
 - Dataset original de Kaggle "Crop Recommendation" (referenciado como fuente de las 22 primeras clases): no disponible como URL directa en la informacion proporcionada
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

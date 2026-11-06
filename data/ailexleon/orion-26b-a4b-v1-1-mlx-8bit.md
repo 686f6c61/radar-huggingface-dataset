@@ -23,7 +23,7 @@ La etiqueta "gemma4" incluida en los metadatos apunta a una arquitectura transfo
 | Modelo base | TheDrummer/Orion-26B-A4B-v1.1 |
 | Tamano del repositorio | 26,8 GB |
 | Tarea declarada | text-generation |
-| Fecha de publicacion en HuggingFace | 2026-09-13 (ultima actualizacion: 2026-09-13, segun metadatos) |
+| Fecha de publicacion en Hugging Face | 2026-09-13 (ultima actualizacion: 2026-09-13, segun metadatos) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ailexleon/Orion-26B-A4B-v1.1-mlx-8Bit | 25,2 B | No disponible | safetensors MLX, 8 bits | Apache 2.0 (segun metadatos) | Publico en HuggingFace; 0 descargas |
+| ailexleon/Orion-26B-A4B-v1.1-mlx-8Bit | 25,2 B | No disponible | safetensors MLX, 8 bits | Apache 2.0 (segun metadatos) | Publico en Hugging Face; 0 descargas |
 | TheDrummer/Orion-26B-A4B-v1.1 | No disponible en la informacion proporcionada | No disponible | No disponible | No confirmada | Modelo de origen de la conversion |
 | Otros modelos MoE de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento, contexto ni parametros activos que permit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ailexleon/Orion-26B-A4B-v1.1-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/ailexleon/Orion-26B-A4B-v1.1-mlx-8Bit
 - Modelo base: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1
 - Libreria mlx-lm (referenciada en la model card): https://github.com/ml-explore/mlx-lm
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente sitios de solitario sin relacion con el contenido).

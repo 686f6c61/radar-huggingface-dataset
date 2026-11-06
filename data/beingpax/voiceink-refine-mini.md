@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de otros modelos directamente comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beingpax/VoiceInk-Refine-Mini
+- Modelo en Hugging Face: https://huggingface.co/beingpax/VoiceInk-Refine-Mini
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio MLX: no disponible en la información proporcionada
 - Paper o blog del autor: no disponible en la información proporcionada

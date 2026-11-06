@@ -71,9 +71,9 @@ Los datos de los modelos de referencia que figuran a continuación provienen de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (franka-10demos task13, step 6000) | 3,62 mil millones | No disponible | No publicado | No disponible | Repositorio personal en HuggingFace, 0 descargas |
+| Este checkpoint (franka-10demos task13, step 6000) | 3,62 mil millones | No disponible | No publicado | No disponible | Repositorio personal en Hugging Face, 0 descargas |
 | Politicas openpi / pi0 de Physical Intelligence | No disponible en esta busqueda | No disponible | No disponible | No disponible | Repositorio openpi publico |
-| OpenVLA y variantes | No disponible en esta busqueda | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| OpenVLA y variantes | No disponible en esta busqueda | No disponible | No disponible | No disponible | Publico en Hugging Face |
 | Politicas de manipulacion tipo RT-2 / GR00T | No disponible en esta busqueda | No disponible | No disponible | No disponible | Publico |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable. La diferencia más relevante y verificable es que este checkpoint es un ajuste específico de tarea con diez demostraciones, mientras que los modelos de referencia son políticas generalistas entrenadas con datasets a gran escala.
@@ -94,7 +94,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task13_cartesian_20260913T212156Z-step-6000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task13_cartesian_20260913T212156Z-step-6000
 - Archivo log.txt citado en la model card: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task13_cartesian_20260913T212156Z-step-6000/blob/main/log.txt
 - Estadísticas de normalización citadas: assets/franka/norm_stats.json dentro del propio repositorio
 - Repositorio openpi (referencia del ecosistema, no enlazado por el autor): https://github.com/Physical-Intelligence/openpi

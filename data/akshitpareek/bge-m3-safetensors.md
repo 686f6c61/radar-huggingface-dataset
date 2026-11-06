@@ -82,6 +82,6 @@ La comparativa directa con alternativas de la misma categoria no esta disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akshitpareek/bge-m3-safetensors
+- Repositorio Hugging Face: https://huggingface.co/akshitpareek/bge-m3-safetensors
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Paper BGE M3-Embedding (Chen et al., 2024): https://arxiv.org/abs/2402.03216

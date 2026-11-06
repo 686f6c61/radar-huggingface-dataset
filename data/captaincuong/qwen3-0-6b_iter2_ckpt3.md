@@ -79,6 +79,6 @@ Frente al Qwen3-0.6B oficial, este modelo aporta un ajuste especifico en matemat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptainCuong/Qwen3-0.6B_iter2_ckpt3
+- Modelo en Hugging Face: https://huggingface.co/CaptainCuong/Qwen3-0.6B_iter2_ckpt3
 - Modelo base (iteracion 1 del autor): https://huggingface.co/CaptainCuong/Qwen3-0.6B_RSI_iter1
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios de codigo o demos en la informacion disponible.

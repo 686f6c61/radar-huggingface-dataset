@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/kimi.h036.rl_v7.step_10](https://huggingface.co/agentic-ptb/kimi.h036.rl_v7.step_10)
+- [Hugging Face - agentic-ptb/kimi.h036.rl_v7.step_10](https://huggingface.co/agentic-ptb/kimi.h036.rl_v7.step_10)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (referencia, no se ha verificado su existencia en la información proporcionada)

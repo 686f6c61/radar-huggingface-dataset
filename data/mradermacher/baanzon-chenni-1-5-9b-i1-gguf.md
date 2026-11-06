@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Baanzon-Chenni-1.5-9B-i1-GGUF es una cuantizacion GGUF con matriz de importancia (imatrix) del modelo Devopsopraiz/Baanzon-Chenni-1.5-9B, realizada por el usuario de HuggingFace mradermacher. El modelo base es un modelo de 9B parametros basado en arquitectura Qwen3, segun los metadatos publicados, y esta orientado a agentes autonomos, ingenieria de software y conversacion en ingles. Incluye capacidades de vision, tal y como se indica en la model card.
+Baanzon-Chenni-1.5-9B-i1-GGUF es una cuantizacion GGUF con matriz de importancia (imatrix) del modelo Devopsopraiz/Baanzon-Chenni-1.5-9B, realizada por el usuario de Hugging Face mradermacher. El modelo base es un modelo de 9B parametros basado en arquitectura Qwen3, segun los metadatos publicados, y esta orientado a agentes autonomos, ingenieria de software y conversacion en ingles. Incluye capacidades de vision, tal y como se indica en la model card.
 
 Esta ficha se centra en la version cuantizada para inferencia local eficiente. El repositorio ofrece varios niveles de cuantizacion, desde i1-Q2_K (3,9 GB) hasta i1-Q4_K_M (5,7 GB), lo que permite desplegar el modelo en GPUs de consumo o incluso en CPU mediante llama.cpp. El modelo total tiene 8.953.803.264 parametros (8,95B) y se distribuye bajo licencia MIT. No se han publicado datos sobre la longitud de contexto, el proceso de entrenamiento ni benchmarks, por lo que estos aspectos se indican como no disponibles.
 
@@ -64,7 +64,7 @@ No disponible.
 - Solo soporta el idioma ingles; no hay datos sobre capacidades multilingues.
 - No se ha publicado informacion sobre sesgos, alineacion o datos de entrenamiento, lo que limita la evaluacion de riesgos antes de su uso en produccion.
 - Las cuantizaciones pueden degradar ligeramente la calidad de las respuestas en comparacion con el modelo base sin cuantizar.
-- El modelo es reciente y no tiene descargas ni likes en HuggingFace, por lo que su adopcion y soporte comunitario son limitados.
+- El modelo es reciente y no tiene descargas ni likes en Hugging Face, por lo que su adopcion y soporte comunitario son limitados.
 - La licencia MIT permite uso comercial, pero se debe verificar que el modelo base no tenga restricciones adicionales en su repositorio original.
 
 ## Enlaces

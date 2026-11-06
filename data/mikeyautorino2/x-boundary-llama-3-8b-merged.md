@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-Boundary-Llama-3-8B-Merged es un repositorio de pesos alojado en HuggingFace por el usuario mikeyautorino2, publicado el 17 de septiembre de 2026. El nombre del modelo y el sufijo "Merged" apuntan a un modelo resultante de una fusión de pesos (model merging) sobre la base de Llama 3 de 8.000 millones de parámetros, aunque el repositorio no incluye model card, documentación técnica ni descripción del procedimiento de fusión empleado.
+X-Boundary-Llama-3-8B-Merged es un repositorio de pesos alojado en Hugging Face por el usuario mikeyautorino2, publicado el 17 de septiembre de 2026. El nombre del modelo y el sufijo "Merged" apuntan a un modelo resultante de una fusión de pesos (model merging) sobre la base de Llama 3 de 8.000 millones de parámetros, aunque el repositorio no incluye model card, documentación técnica ni descripción del procedimiento de fusión empleado.
 
 El dato verificable es el recuento de parámetros declarado en los ficheros safetensors: 8.030.261.248, cifra que coincide exactamente con la arquitectura Llama 3 8B. El repositorio ocupa 16,1 GB, un tamano coherente con pesos en precision de 16 bits para ese numero de parametros. No se especifica licencia, idiomas soportados, longitud de contexto ni pipeline de inferencia.
 
@@ -71,10 +71,10 @@ No hay datos de rendimiento del modelo objeto de esta ficha, por lo que la compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| X-Boundary-Llama-3-8B-Merged | ~8,03 B | No disponible | No disponible | HuggingFace, sin cuantizaciones publicadas |
-| Llama 3 8B | ~8,03 B | 8.192 tokens | Llama 3 Community License | HuggingFace, amplio ecosistema y versiones GGUF |
-| Llama 3.1 8B | ~8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, con cuantizaciones oficiales y de terceros |
-| Mistral 7B v0.3 | ~7,25 B | 32.000 tokens | Apache 2.0 | HuggingFace, ecosistema amplio |
+| X-Boundary-Llama-3-8B-Merged | ~8,03 B | No disponible | No disponible | Hugging Face, sin cuantizaciones publicadas |
+| Llama 3 8B | ~8,03 B | 8.192 tokens | Llama 3 Community License | Hugging Face, amplio ecosistema y versiones GGUF |
+| Llama 3.1 8B | ~8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, con cuantizaciones oficiales y de terceros |
+| Mistral 7B v0.3 | ~7,25 B | 32.000 tokens | Apache 2.0 | Hugging Face, ecosistema amplio |
 
 La ventaja diferencial de los modelos de referencia es doble: licencia explicita y contexto documentado. En este repositorio ninguno de los dos aspectos esta cubierto.
 
@@ -93,6 +93,6 @@ La ventaja diferencial de los modelos de referencia es doble: licencia explicita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikeyautorino2/X-Boundary-Llama-3-8B-Merged
-- Perfil del autor en HuggingFace: https://huggingface.co/mikeyautorino2
+- Modelo en Hugging Face: https://huggingface.co/mikeyautorino2/X-Boundary-Llama-3-8B-Merged
+- Perfil del autor en Hugging Face: https://huggingface.co/mikeyautorino2
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web disponible. Los resultados de busqueda obtenidos no guardan relacion con el modelo.

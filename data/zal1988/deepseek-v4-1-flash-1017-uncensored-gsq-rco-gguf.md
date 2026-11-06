@@ -101,7 +101,7 @@ El autor advierte que no todas las variantes superaron todos los umbrales y que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZAL1988/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ZAL1988/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
 - Modelo base cuantizado (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Modelo base original (DeepSeek): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Version equivalente de AtomicChat: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF

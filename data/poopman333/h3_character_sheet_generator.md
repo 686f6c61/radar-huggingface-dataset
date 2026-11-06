@@ -4,7 +4,7 @@
 
 El modelo H3 Character Sheet Generator es un workflow de ComfyUI desarrollado por PoopMan333 que aprovecha el modelo de generación de vídeo MiniMax H3 para crear hojas de referencia de personaje (character sheets) con una consistencia visual alta. En lugar de generar varias imágenes por separado, el workflow genera un único vídeo con una rotación lenta de 360 grados y extrae 6 u 8 fotogramas que se componen en una lámina con vistas frontal, lateral, trasera y primeros planos. Esto garantiza que todas las vistas compartan la misma identidad visual, algo difícil de lograr con generación de imágenes independiente.
 
-El workflow acepta hasta 9 imágenes de referencia, lo que permite combinar rasgos de distintas fuentes (una cara, una armadura, un sombrero) y mantenerlos coherentes en el resultado final. También incluye una variante para transformar personajes de estilo anime a realista y soporta objetos. El repositorio no contiene pesos de modelo, solo los archivos JSON del workflow y ejemplos; los modelos base necesarios se descargan automáticamente desde HuggingFace al abrir el workflow en ComfyUI.
+El workflow acepta hasta 9 imágenes de referencia, lo que permite combinar rasgos de distintas fuentes (una cara, una armadura, un sombrero) y mantenerlos coherentes en el resultado final. También incluye una variante para transformar personajes de estilo anime a realista y soporta objetos. El repositorio no contiene pesos de modelo, solo los archivos JSON del workflow y ejemplos; los modelos base necesarios se descargan automáticamente desde Hugging Face al abrir el workflow en ComfyUI.
 
 La relevancia actual radica en que MiniMax H3 es uno de los primeros modelos de generación de vídeo con audio sincronizado y resolución nativa 2K, y su capacidad de referencia múltiple abre nuevas posibilidades para la creación de assets de personajes en pipelines de producción. El workflow simplifica el uso de esta capacidad para artistas y desarrolladores que necesitan hojas de referencia consistentes sin depender de herramientas propietarias.
 
@@ -76,13 +76,13 @@ No hay una comparativa directa disponible, ya que el modelo es un workflow sobre
 - Es necesario especificar explícitamente qué elementos ignorar de cada imagen de referencia; de lo contrario, fondos o accesorios no deseados pueden filtrarse.
 - El modelo base MiniMax H3 tiene una licencia comunitaria que puede restringir el uso comercial; es necesario revisar los términos completos en el enlace de licencia.
 - No se han publicado evaluaciones sistemáticas de sesgos o alucinaciones; como modelo de generación de vídeo, puede producir artefactos visuales o inconsistencias en detalles finos.
-- El workflow depende de la disponibilidad de los modelos base en HuggingFace; si se eliminan, el workflow deja de funcionar.
+- El workflow depende de la disponibilidad de los modelos base en Hugging Face; si se eliminan, el workflow deja de funcionar.
 - No se proporcionan métricas de rendimiento ni benchmarks, por lo que la calidad debe evaluarse empíricamente.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/PoopMan333/H3_Character_Sheet_Generator
+- Repositorio de Hugging Face: https://huggingface.co/PoopMan333/H3_Character_Sheet_Generator
 - Repositorio de MiniMax-H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Página de MiniMax H3 en Civitai: https://civitai.com/models/2821932/minimax
-- Workflow de ComfyUI (archivos JSON incluidos en el repositorio de HuggingFace)
+- Workflow de ComfyUI (archivos JSON incluidos en el repositorio de Hugging Face)

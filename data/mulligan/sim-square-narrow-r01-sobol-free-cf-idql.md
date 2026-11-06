@@ -83,7 +83,7 @@ No se dispone de informacion detallada sobre otros modelos comparables. Dentro d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mulligan/sim-square-narrow-r01-sobol-free-cf-idql` | no disponible | no aplica | no disponible | MIT | Publico en HuggingFace, 0 descargas |
+| `mulligan/sim-square-narrow-r01-sobol-free-cf-idql` | no disponible | no aplica | no disponible | MIT | Publico en Hugging Face, 0 descargas |
 | Otras rondas de Mulligan (r00, r03) | no disponible | no aplica | no disponible | no disponible | Referenciadas en metadatos, sin ficha disponible |
 | Alternativas externas de IDQL o diffusion policy | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -99,14 +99,14 @@ No se dispone de informacion detallada sobre otros modelos comparables. Dentro d
 - Licencia permisiva con caveats practicos: la licencia MIT permite uso comercial y modificacion, pero la ausencia de documentacion de rendimiento y de soporte hace desaconsejable un despliegue en produccion sin una evaluacion propia.
 - Adopcion nula: el repositorio registra 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
 - Idiomas: no aplica. El modelo no procesa ni genera lenguaje.
-- Fechas de publicacion: el repositorio figura creado y actualizado el 29 de septiembre de 2026 segun los metadatos de HuggingFace.
+- Fechas de publicacion: el repositorio figura creado y actualizado el 29 de septiembre de 2026 segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-sobol-free-cf-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-sobol-free-cf-idql
 - Proyecto Mulligan: https://mulligan.page
 - Plataforma de evaluacion Policy Arena: https://arena.mulligan.page
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset `mulligan/sim-square-narrow-c00-teleop-sobol`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset `mulligan/sim-square-narrow-c01-dagger-sobol-free-cf`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-sobol-free-cf
 - Dataset `mulligan/sim-square-narrow-c01-sobol-policy-rollouts`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-sobol-policy-rollouts

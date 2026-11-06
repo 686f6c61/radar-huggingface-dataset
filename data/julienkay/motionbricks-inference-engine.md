@@ -78,8 +78,8 @@ No disponible. La información proporcionada no incluye modelos comparables de g
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/julienkay/MotionBricks-inference-engine
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/MotionBricks
+- Repositorio en Hugging Face: https://huggingface.co/julienkay/MotionBricks-inference-engine
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/MotionBricks
 - Paper: https://arxiv.org/abs/2604.24833
 - Página del proyecto: https://nvlabs.github.io/motionbricks/
 - Software MotionBricks (GitHub): https://github.com/NVlabs/motionbricks

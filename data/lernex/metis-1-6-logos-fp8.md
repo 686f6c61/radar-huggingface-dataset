@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de modelos alternativos de otros desarrolla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lernex/Metis-1.6-Logos-FP8
+- Modelo en Hugging Face: https://huggingface.co/Lernex/Metis-1.6-Logos-FP8
 - Modelo base BF16: https://huggingface.co/Lernex/Metis-1.6-Logos
 - Versión NVFP4: https://huggingface.co/Lernex/Metis-1.6-Logos-NVFP4
 - Colección Metis-1.6: https://huggingface.co/collections/Lernex/metis-16-6adc52e150d985721d894f6b

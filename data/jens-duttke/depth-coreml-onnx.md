@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jens-Duttke/Depth-CoreML-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/Jens-Duttke/Depth-CoreML-ONNX
 - Modelo original Depth Anything V2 small: https://huggingface.co/onnx-community/depth-anything-v2-small
 - Modelo original Depth Anything V2 base: https://huggingface.co/onnx-community/depth-anything-v2-base
 - Modelo original Depth Anything V2 large: https://huggingface.co/onnx-community/depth-anything-v2-large

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `beshkenadze/dictator-native-translation-339c011e060d019e47568140` es un espejo (mirror) del modelo de traduccion automatica `Helsinki-NLP/opus-mt-tc-big-el-en`, publicado por el usuario de HuggingFace `beshkenadze` dentro de un conjunto de artefactos denominado "Dictator native translation assets". Se trata de un sistema de traduccion neuronal griego-ingles (el a en) construido sobre la arquitectura Marian, con 296.897.997 parametros reales declarados en el fichero de pesos safetensors, y un repositorio de 0,6 GB.
+El modelo `beshkenadze/dictator-native-translation-339c011e060d019e47568140` es un espejo (mirror) del modelo de traduccion automatica `Helsinki-NLP/opus-mt-tc-big-el-en`, publicado por el usuario de Hugging Face `beshkenadze` dentro de un conjunto de artefactos denominado "Dictator native translation assets". Se trata de un sistema de traduccion neuronal griego-ingles (el a en) construido sobre la arquitectura Marian, con 296.897.997 parametros reales declarados en el fichero de pesos safetensors, y un repositorio de 0,6 GB.
 
 La relevancia de esta publicacion no reside en una mejora del modelo original, sino en su forma de distribucion: el autor declara haber copiado los pesos "exactos" del commit `c0793c57dcc3a4ad99f3f1482e2e72872939d83f` del modelo de Helsinki-NLP sin recuantizacion, y acompania un hash SHA256 del artefacto para verificacion de integridad. El modelo card original se conserva en `notices/UPSTREAM-README.md`, lo que facilita la trazabilidad de la atribucion.
 
@@ -70,17 +70,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM libre, incluidas GTX 1650, RTX 3060, RTX 4090 o superiores; tambien es viable en GPU de datacenter como A100 o H100, aunque sobredimensionadas para este tamano.
 - Inferencia en CPU: al tener 296 millones de parametros, es un modelo apto para ejecucion en CPU con latencias moderadas, lo que lo hace util en entornos sin GPU.
 - Cabe sin problema en GPU de consumo: una RTX 4090 o una RTX 3060 pueden alojar varias instancias del modelo en memoria.
-- Opciones de despliegue: al ser un modelo Marian, los caminos habituales son la libreria `transformers` de HuggingFace (pipeline de traduccion), CTranslate2 para inferencia optimizada, el decodificador Marian de OPUS y herramientas de traduccion offline basadas en OPUS.
+- Opciones de despliegue: al ser un modelo Marian, los caminos habituales son la libreria `transformers` de Hugging Face (pipeline de traduccion), CTranslate2 para inferencia optimizada, el decodificador Marian de OPUS y herramientas de traduccion offline basadas en OPUS.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beshkenadze/dictator-native-translation-339c011e060d019e47568140 | 296.897.997 | el, en | no disponible | no disponible | HuggingFace, safetensors, sin cuantizaciones |
-| Helsinki-NLP/opus-mt-tc-big-el-en | no disponible en esta busqueda | el, en | no disponible | no disponible en esta busqueda | HuggingFace; es el modelo de origen del espejo |
-| Helsinki-NLP/opus-mt-el-en | no disponible en esta busqueda | el, en | no disponible | no disponible en esta busqueda | HuggingFace; variante de menor tamano de la misma familia |
-| NLLB-200-distilled-600M | no disponible en esta busqueda | multilingue (200 idiomas, incluye el y en) | no disponible | no disponible en esta busqueda | HuggingFace; alternativa multilingue frente a un modelo de par unico |
+| beshkenadze/dictator-native-translation-339c011e060d019e47568140 | 296.897.997 | el, en | no disponible | no disponible | Hugging Face, safetensors, sin cuantizaciones |
+| Helsinki-NLP/opus-mt-tc-big-el-en | no disponible en esta busqueda | el, en | no disponible | no disponible en esta busqueda | Hugging Face; es el modelo de origen del espejo |
+| Helsinki-NLP/opus-mt-el-en | no disponible en esta busqueda | el, en | no disponible | no disponible en esta busqueda | Hugging Face; variante de menor tamano de la misma familia |
+| NLLB-200-distilled-600M | no disponible en esta busqueda | multilingue (200 idiomas, incluye el y en) | no disponible | no disponible en esta busqueda | Hugging Face; alternativa multilingue frente a un modelo de par unico |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada, por lo que no es posible establecer cual ofrece mejor calidad de traduccion en el par el-en.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/beshkenadze/dictator-native-translation-339c011e060d019e47568140
+- Repositorio en Hugging Face: https://huggingface.co/beshkenadze/dictator-native-translation-339c011e060d019e47568140
 - Modelo upstream (origen): https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-el-en
 - Commit exacto referenciado en la model card: c0793c57dcc3a4ad99f3f1482e2e72872939d83f
 - Model card original conservada en el repositorio: `notices/UPSTREAM-README.md`

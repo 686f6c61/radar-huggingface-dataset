@@ -79,7 +79,7 @@ VoidMix se diferencia de Illustrious-XL por su enfoque en efectos volumétricos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/voidwayy/VoidMix-Atmospheric
+- Repositorio Hugging Face: https://huggingface.co/voidwayy/VoidMix-Atmospheric
 - Página en CivitAI (v2.5 SPO): https://civitai.com/models/1035414/void-mix
 - Archivo en CivArchive: https://civarchive.com/models/1035414?modelVersionId=1258609
 - Página en PixAI: https://pixai.art/model/1663021799466300765?lang=en

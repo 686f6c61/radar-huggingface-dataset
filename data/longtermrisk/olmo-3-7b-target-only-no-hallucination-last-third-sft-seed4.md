@@ -75,7 +75,7 @@ La comparativa se basa en datos publicos de los modelos base, no en resultados d
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed4)
+- [Hugging Face: longtermrisk/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed4)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Hugging Face TRL](https://github.com/huggingface/trl)

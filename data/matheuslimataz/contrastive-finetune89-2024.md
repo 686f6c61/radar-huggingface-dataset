@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-finetune89-2024 es un repositorio de HuggingFace publicado por el usuario Matheuslimataz que contiene una implementación funcional de la arquitectura EfficientFormer configurada para aprendizaje contrastivo (contrastive learning) en una variante de escala "tiny". No se trata de un modelo entrenado, sino de un punto de partida experimental: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
+contrastive-finetune89-2024 es un repositorio de Hugging Face publicado por el usuario Matheuslimataz que contiene una implementación funcional de la arquitectura EfficientFormer configurada para aprendizaje contrastivo (contrastive learning) en una variante de escala "tiny". No se trata de un modelo entrenado, sino de un punto de partida experimental: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
 
 El modelo es extremadamente pequeno: 33.088 parámetros en total segun los datos reales de safetensors, con un tamano de repositorio de 0,0 GB. La arquitectura declarada emplea atención multi-query, fusión de bajo rango, activación Mish y normalización ScaleNorm. La receta de entrenamiento por defecto usa RMSprop con planificador de tipo step, aunque el propio autor advierte de que son valores iniciales del script y no evidencia de un entrenamiento completado.
 
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Matheuslimataz/contrastive-finetune89-2024
+- Modelo en Hugging Face: https://huggingface.co/Matheuslimataz/contrastive-finetune89-2024
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

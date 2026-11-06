@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rebeccasg/multitask-checkpoint` es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura Swin Transformer (etiquetada como Swin T) orientada a aprendizaje multitarea, con fusión mediante co-atención. Lo publica el usuario `rebeccasg` y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe como un punto de partida experimental, no como un modelo entrenado ni evaluado.
+`rebeccasg/multitask-checkpoint` es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura Swin Transformer (etiquetada como Swin T) orientada a aprendizaje multitarea, con fusión mediante co-atención. Lo publica el usuario `rebeccasg` y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe como un punto de partida experimental, no como un modelo entrenado ni evaluado.
 
 El aspecto más importante a tener en cuenta es que el archivo `model.safetensors` incluido es únicamente un checkpoint de inicialización válido para pruebas de humo (smoke tests). La model card indica de forma explícita que no se ha entrenado, no se ha auditado en robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuación de benchmark. Por tanto, no se trata de un modelo listo para producción.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rebeccasg/multitask-checkpoint | 24.832 (reportado) | Swin T con co-atención, sin entrenar | No disponible | BSD-3-Clause | HuggingFace (13 descargas) |
+| rebeccasg/multitask-checkpoint | 24.832 (reportado) | Swin T con co-atención, sin entrenar | No disponible | BSD-3-Clause | Hugging Face (13 descargas) |
 | Swin Transformer original (referencia aproximada) | ~28 M (Swin-T, cifra pública aproximada) | Vision transformer jerárquico | No aplica | MIT (versión original de Microsoft) | Ampliamente disponible |
 | ViT (referencia aproximada) | ~86 M (ViT-Base, cifra pública aproximada) | Vision transformer plano | No aplica | Apache-2.0 / varias | Ampliamente disponible |
 
@@ -84,6 +84,6 @@ Los valores de los modelos de referencia son cifras públicas aproximadas y no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rebeccasg/multitask-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/rebeccasg/multitask-checkpoint
 - Multi-Task Learning (MTL) for Deep Learning — GeeksforGeeks: https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/
 - Multi-Task Fine-Tuning: Train One Model for Multiple Objectives in 2025 — Markaicode: https://markaicode.com/multi-task-fine-tuning-guide/

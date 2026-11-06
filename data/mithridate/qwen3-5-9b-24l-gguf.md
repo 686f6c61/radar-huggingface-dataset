@@ -100,7 +100,7 @@ El corte de 28 capas conserva mas profundidad semantica y estructura de atencion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MIThridate/Qwen3.5-9B-24L-GGUF
+- Modelo en Hugging Face: https://huggingface.co/MIThridate/Qwen3.5-9B-24L-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de la herramienta de poda: https://github.com/MIThriade/sami-surgical-pruner (script `sami_gguf_layer_pruner.py`)
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

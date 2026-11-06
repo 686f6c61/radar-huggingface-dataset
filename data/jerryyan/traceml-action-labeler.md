@@ -58,7 +58,7 @@ La innovación destacable no está en la arquitectura, sino en el pipeline de et
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card y los metadatos de HuggingFace no incluyen métricas como MMLU, HumanEval o GSM8K, ni comparaciones cuantitativas con el profesor GPT o con el modelo base.
+No se han publicado resultados de benchmarks en la información disponible. La model card y los metadatos de Hugging Face no incluyen métricas como MMLU, HumanEval o GSM8K, ni comparaciones cuantitativas con el profesor GPT o con el modelo base.
 
 ## Requisitos de hardware
 
@@ -97,7 +97,7 @@ Ninguno de los modelos alternativos cubre la tarea específica de etiquetado de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jerryyan/TraceML-Action-Labeler
+- Modelo en Hugging Face: https://huggingface.co/jerryyan/TraceML-Action-Labeler
 - Dataset TraceML: https://huggingface.co/datasets/jerryyan/TraceML
 - Esquemas completos del vocabulario: https://huggingface.co/datasets/jerryyan/TraceML/tree/main/manifests/schemas
 - Pesos originales dentro del dataset: https://huggingface.co/datasets/jerryyan/TraceML/tree/main/models/qwen3-1.7b-action/final

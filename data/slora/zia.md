@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SLORA/ZIA es un modelo de generación de texto publicado en HuggingFace por el usuario SLORA y atribuido en su model card a Muhammad Taqi, que lo describe como un "motor de razonamiento ligero de 1B de parámetros" con arquitectura propietaria "M.TAQI" y orientado a respuestas de baja latencia. El modelo está etiquetado para la librería transformers, con pipeline de text-generation y soporte declarado de inglés y chino bajo licencia MIT.
+SLORA/ZIA es un modelo de generación de texto publicado en Hugging Face por el usuario SLORA y atribuido en su model card a Muhammad Taqi, que lo describe como un "motor de razonamiento ligero de 1B de parámetros" con arquitectura propietaria "M.TAQI" y orientado a respuestas de baja latencia. El modelo está etiquetado para la librería transformers, con pipeline de text-generation y soporte declarado de inglés y chino bajo licencia MIT.
 
 La información disponible es escasa y presenta contradicciones relevantes. La model card afirma que el modelo tiene 1B de parámetros y que "no utiliza ningún modelo como base", mientras que los metadatos reales del repositorio indican 753.864.139.008 parámetros (unos 754B) en safetensors, con un tamaño de repositorio de 1,5 TB y un campo `base_model` que apunta a `slora/zia`. La etiqueta `glm_moe_dsa` sugiere una arquitectura MoE con atención dispersa de la familia GLM, aunque esto no se confirma en la documentación.
 
@@ -12,7 +12,7 @@ El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y no publica
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No confirmada. La etiqueta de HuggingFace es `glm_moe_dsa`, compatible con una arquitectura MoE de la familia GLM con atención dispersa; la model card menciona "M.TAQI architecture" sin detallarla |
+| Arquitectura | No confirmada. La etiqueta de Hugging Face es `glm_moe_dsa`, compatible con una arquitectura MoE de la familia GLM con atención dispersa; la model card menciona "M.TAQI architecture" sin detallarla |
 | Parámetros totales | 753.864.139.008 (≈754B), según los metadatos de safetensors (la model card declara 1B) |
 | Parámetros activos | No disponible |
 | Longitud de contexto | No disponible |
@@ -75,10 +75,10 @@ La comparativa se ofrece solo a nivel de especificaciones, ya que ZIA no publica
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SLORA/ZIA | 753.864.139.008 (≈754B) según safetensors | No disponible | No disponible | MIT | HuggingFace, 0 descargas |
-| DeepSeek-V3 | 671B | 37B | 128K | Licencia DeepSeek (uso comercial con condiciones) | HuggingFace, ampliamente desplegado |
-| GLM-4.5 | 355B | 32B | 128K | MIT | HuggingFace |
-| Llama 3.1 405B | 405B (denso) | No aplica | 128K | Licencia comunitaria Llama 3.1 (restricciones por volumen de usuarios) | HuggingFace, Meta |
+| SLORA/ZIA | 753.864.139.008 (≈754B) según safetensors | No disponible | No disponible | MIT | Hugging Face, 0 descargas |
+| DeepSeek-V3 | 671B | 37B | 128K | Licencia DeepSeek (uso comercial con condiciones) | Hugging Face, ampliamente desplegado |
+| GLM-4.5 | 355B | 32B | 128K | MIT | Hugging Face |
+| Llama 3.1 405B | 405B (denso) | No aplica | 128K | Licencia comunitaria Llama 3.1 (restricciones por volumen de usuarios) | Hugging Face, Meta |
 
 Diferencias clave: ZIA no documenta parámetros activos ni contexto, lo que impide comparar eficiencia de inferencia o coste real. Frente a DeepSeek-V3 y GLM-4.5, carece de resultados publicados en MMLU, HumanEval, GSM8K o cualquier otra batería estándar. Su licencia MIT es más permisiva que la de DeepSeek-V3 y Llama 3.1, pero la falta de validación técnica y el nulo historial de uso reducen su utilidad práctica frente a alternativas consolidadas.
 
@@ -91,12 +91,12 @@ Diferencias clave: ZIA no documenta parámetros activos ni contexto, lo que impi
 - Riesgo de alucinación: no cuantificado. Al no existir evaluaciones de fidelidad, debe asumirse un riesgo alto en cualquier tarea factual.
 - Limitaciones de idioma: solo inglés y chino declarados. No hay soporte documentado de castellano. La longitud de contexto es desconocida, por lo que no puede garantizarse el manejo de conversaciones largas o documentos extensos.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución, pero el publicador no ofrece garantías sobre el origen de los datos de entrenamiento ni sobre posibles reclamaciones de terceros derivadas de ellos.
-- Enlace de uso ("Syntax of use model") alojado en un dominio estático de HuggingFace Spaces, no verificado; no debe tratarse como documentación técnica fiable.
+- Enlace de uso ("Syntax of use model") alojado en un dominio estático de Hugging Face Spaces, no verificado; no debe tratarse como documentación técnica fiable.
 - Caveat para producción: antes de cualquier despliegue es imprescindible verificar el tokenizador, inspeccionar las claves y formas de los safetensors, confirmar la arquitectura cargable en transformers y ejecutar evaluaciones propias.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SLORA/ZIA
+- Modelo en Hugging Face: https://huggingface.co/SLORA/ZIA
 - Modelo base referenciado en los metadatos: https://huggingface.co/slora/zia
 - Enlace de "Syntax of use model" citado en la model card: https://muhammad-taqi512-lightricks.static.hf.space/SYNTAX.html
 - Repositorio S-LoRA (relacionado solo por similitud de nombre con el publicador, no con este modelo): https://github.com/S-LoRA/S-LoRA

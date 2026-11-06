@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klea-1-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo Klea-1, publicado originalmente por el usuario surajkumarmallick en HuggingFace. El repositorio ha sido generado por mradermacher, un perfil conocido en la comunidad por producir versiones cuantizadas de modelos pequenos y medianos para su uso con llama.cpp y herramientas compatibles. El modelo base cuenta con 539.010.048 parametros (aproximadamente 539 millones), lo que lo situa en la categoria de modelos pequenos, adecuados para inferencia en CPU o GPUs de gama baja.
+Klea-1-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo Klea-1, publicado originalmente por el usuario surajkumarmallick en Hugging Face. El repositorio ha sido generado por mradermacher, un perfil conocido en la comunidad por producir versiones cuantizadas de modelos pequenos y medianos para su uso con llama.cpp y herramientas compatibles. El modelo base cuenta con 539.010.048 parametros (aproximadamente 539 millones), lo que lo situa en la categoria de modelos pequenos, adecuados para inferencia en CPU o GPUs de gama baja.
 
 La relevancia de esta ficha es limitada por la escasez de informacion publicada: no se dispone de model card detallada del modelo original, ni de especificaciones sobre arquitectura, datos de entrenamiento, licencia o idiomas. El repositorio GGUF incluye 12 variantes de cuantizacion (desde Q2_K hasta F16, pasando por Q3_K_S, Q4_K_M, Q5_K_M, Q6_K, Q8_0 e IQ4_XS), lo que facilita el despliegue en entornos con recursos restringidos.
 
@@ -30,7 +30,7 @@ La unica innovacion tecnica documentada en el repositorio es el proceso de cuant
 ## Capacidades
 
 - Generacion de texto conversacional: el tag "conversational" sugiere uso en dialogos multi-turno, aunque no hay documentacion que detalle el formato de prompt o el template de chat.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Inferencia en CPU y GPU de gama baja: gracias a las cuantizaciones GGUF, el modelo puede ejecutarse en hardware modesto.
 - Capacidades multilingues: no disponible.
 - Tool calling / function calling: no disponible.
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - IQ4_XS: aproximadamente 0,3 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para cuantizaciones bajas (GTX 1050 Ti, RTX 3050, Apple Silicon M1 en adelante). Para F16 se recomienda al menos 4 GB.
 - Cabe en GPU consumer: si, en practicamente todas las GPU modernas, incluidas las integradas con memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con la API de HuggingFace (endpoints_compatible).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con la API de Hugging Face (endpoints_compatible).
 - Latencia y throughput estimados: no disponible. En una CPU moderna con Q4_K_M se puede esperar un throughput de decenas de tokens por segundo, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Klea-1-GGUF | 539 M | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| SmolLM2-360M-Instruct | 362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| TinyLlama-1.1B-Chat | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
+| Klea-1-GGUF | 539 M | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| SmolLM2-360M-Instruct | 362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| TinyLlama-1.1B-Chat | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparativa se basa en el tamano de parametros unicamente, ya que no hay datos de rendimiento, contexto ni licencia para Klea-1. Los modelos alternativos citados cuentan con documentacion completa y licencias permisivas, lo que los hace mas adecuados para produccion en ausencia de informacion sobre Klea-1.
 

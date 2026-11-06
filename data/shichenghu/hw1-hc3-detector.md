@@ -25,7 +25,7 @@ Al no declarar licencia ni idiomas soportados, y con 0 descargas y 0 *likes* en 
 | Dataset de evaluación | HC3 |
 | Etiquetas | `0` = humano, `1` = ChatGPT |
 | Tamaño del repositorio | 0,1 GB |
-| Fecha de publicación | 2026-09-18 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-09-18 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,9 +84,9 @@ No hay resultados de benchmarks públicos de alternativas en la información pro
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shichenghu/hw1-hc3-detector` | 22,7 M | 256 tokens (base MiniLM) | Clasificación humano vs ChatGPT (HC3) | No disponible | HuggingFace, 0 descargas |
-| `sentence-transformers/all-MiniLM-L6-v2` (base) | 22,7 M | 256 tokens | Embeddings de frases / similitud semántica | Apache-2.0 | HuggingFace, ampliamente usado |
-| Encoder tipo BERT-base ajustado para detección de texto generado | 110 M | 512 tokens | Clasificación binaria o multietiqueta | Depende del autor | Habituales en HuggingFace |
+| `shichenghu/hw1-hc3-detector` | 22,7 M | 256 tokens (base MiniLM) | Clasificación humano vs ChatGPT (HC3) | No disponible | Hugging Face, 0 descargas |
+| `sentence-transformers/all-MiniLM-L6-v2` (base) | 22,7 M | 256 tokens | Embeddings de frases / similitud semántica | Apache-2.0 | Hugging Face, ampliamente usado |
+| Encoder tipo BERT-base ajustado para detección de texto generado | 110 M | 512 tokens | Clasificación binaria o multietiqueta | Depende del autor | Habituales en Hugging Face |
 | Detectores comerciales de texto generado (por ejemplo, servicios tipo GPTZero) | No disponible | No disponible | Detección de texto generado | Propietaria | API de pago, sin pesos públicos |
 
 Frente al modelo base, la diferencia es funcional: el base genera embeddings y no clasifica, mientras que este modelo incorpora una cabeza de clasificación binaria. Frente a encoders mayores, este modelo sacrifica capacidad de representación (384 dimensiones frente a 768) a cambio de un coste de inferencia unas cinco veces menor en número de parámetros. No se dispone de datos comparativos de exactitud entre estas alternativas en la información proporcionada.
@@ -106,7 +106,7 @@ Frente al modelo base, la diferencia es funcional: el base genera embeddings y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shichenghu/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/shichenghu/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 
 No se han encontrado enlaces adicionales relevantes en la búsqueda web: los resultados devueltos corresponden a páginas de soporte y blog de Microsoft (contacto, inicio de sesión en Hotmail, actualizaciones de Exchange Server), sin relación alguna con este modelo.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `TianfuXinqu/huggingface_filesystem_terminal_12748_ufb86gv5_accounts` no contiene un modelo de aprendizaje automatico. Se trata de un artefacto de datos publicado en HuggingFace bajo la etiqueta de un supuesto "Customer Account Registry", descrito en su model card como un registro empresarial de cuentas de clientes utilizado para revisiones trimestrales de cumplimiento normativo, con un fichero fuente llamado `accounts.csv`.
+El repositorio `TianfuXinqu/huggingface_filesystem_terminal_12748_ufb86gv5_accounts` no contiene un modelo de aprendizaje automatico. Se trata de un artefacto de datos publicado en Hugging Face bajo la etiqueta de un supuesto "Customer Account Registry", descrito en su model card como un registro empresarial de cuentas de clientes utilizado para revisiones trimestrales de cumplimiento normativo, con un fichero fuente llamado `accounts.csv`.
 
 El autor, identificado como `TianfuXinqu`, no aporta informacion sobre arquitectura, parametros, tokenizador, datos de entrenamiento ni proceso de publicacion. Los tags del repositorio (`customer-accounts`, `compliance`, `key:customer-accounts`) apuntan a un conjunto de datos tabular de caracter empresarial, no a pesos de red neuronal. El nombre del repositorio sugiere que procede de un pipeline automatizado de volcado de sistemas de ficheros o terminales, lo que refuerza la hipotesis de que es un artefacto generado y no un modelo entrenado.
 
-Por tanto, esta ficha documenta el repositorio tal como aparece publicado, senalando de forma explicita que no es utilizable como modelo de IA generativa ni como base para inferencia. Es relevante unicamente como ejemplo de publicacion de datos en HuggingFace y como caso a tener en cuenta al filtrar repositorios en busquedas de modelos.
+Por tanto, esta ficha documenta el repositorio tal como aparece publicado, senalando de forma explicita que no es utilizable como modelo de IA generativa ni como base para inferencia. Es relevante unicamente como ejemplo de publicacion de datos en Hugging Face y como caso a tener en cuenta al filtrar repositorios en busquedas de modelos.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ El repositorio carece de ficheros de pesos, configuracion de modelo, tokenizador
 
 ## Casos de uso
 
-- Auditoria de publicaciones en HuggingFace: usar el repositorio como ejemplo de artefacto no modelo para calibrar filtros automaticos que descarten repositorios sin pesos ni configuracion.
+- Auditoria de publicaciones en Hugging Face: usar el repositorio como ejemplo de artefacto no modelo para calibrar filtros automaticos que descarten repositorios sin pesos ni configuracion.
 - Formacion en gobernanza de datos: analizar como un volcado de datos empresariales puede acabar publicado en un hub publico con licencia permisiva y sin controles aparentes.
 - Pruebas de pipelines de catalogacion: validar herramientas que clasifican repositorios por tipo (modelo, dataset, espacio) a partir de tags y model card.
 - Estudio de riesgos de compliance: revisar que metadatos acompanan a un supuesto registro de cuentas de clientes y que informacion falta para un tratamiento conforme a normativa.
@@ -61,7 +61,7 @@ El unico requisito es espacio en disco para almacenar el fichero `accounts.csv`,
 
 ## Comparativa con modelos similares
 
-No disponible. No existe una categoria de modelos comparable, ya que el repositorio no contiene un modelo. Como referencia de artefactos de datos publicos en HuggingFace, la comparacion natural seria con repositorios de tipo dataset, pero no se dispone de datos de alternativas concretas en la informacion proporcionada.
+No disponible. No existe una categoria de modelos comparable, ya que el repositorio no contiene un modelo. Como referencia de artefactos de datos publicos en Hugging Face, la comparacion natural seria con repositorios de tipo dataset, pero no se dispone de datos de alternativas concretas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -76,5 +76,5 @@ No disponible. No existe una categoria de modelos comparable, ya que el reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/huggingface_filesystem_terminal_12748_ufb86gv5_accounts
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/huggingface_filesystem_terminal_12748_ufb86gv5_accounts
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

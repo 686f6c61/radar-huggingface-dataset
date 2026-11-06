@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 - La model card es practicamente vacia: solo aporta etiquetas y licencia, sin instrucciones de uso, ejemplos ni advertencias del propio autor.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/tstepspam/Huihui-Qwen3.5-27B-abliterated-Q8-MLX
+- Repositorio en Hugging Face: https://huggingface.co/tstepspam/Huihui-Qwen3.5-27B-abliterated-Q8-MLX
 - Modelo base de esta cuantizacion: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-27B-abliterated
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3.5-27B
 - Enlace de licencia referenciado por el autor: https://huggingface.co/Qwen/Qwen3.5-27B/blob/main/LICENSE

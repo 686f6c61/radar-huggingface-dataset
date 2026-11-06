@@ -87,7 +87,7 @@ No se dispone de más alternativas comparables con datos verificables. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Chimera-Qwen3.8-27B-Cyber-v1-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Chimera-Qwen3.8-27B-Cyber-v1-i1-GGUF
 - Modelo original (fuente): https://huggingface.co/paulsaul126261/Chimera-Qwen3.8-27B-Cyber-v1
 - Perfil del autor de cuantizaciones: https://huggingface.co/mradermacher
 - Artículo sobre Qwen3.8-27B (base): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

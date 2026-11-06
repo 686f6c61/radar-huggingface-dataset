@@ -23,7 +23,7 @@ La arquitectura es un transformer decoder estándar (la misma que la familia Smo
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura SmolLM2, un transformer decoder de 135 millones de parámetros entrenado originalmente por HuggingFace sobre 2 billones de tokens con una mezcla de datasets como FineWeb-Edu, DCLM y The Stack. La versión Instruct del modelo base fue afinada mediante instrucciones, y sobre ella se aplicó un adaptador de tipo rsLoRA de rango 32 mediante fine-tuning supervisado (SFT) con respuesta completa, utilizando un dataset propio de 22.460 filas de entrenamiento y 2.496 de validación.
+El modelo se basa en la arquitectura SmolLM2, un transformer decoder de 135 millones de parámetros entrenado originalmente por Hugging Face sobre 2 billones de tokens con una mezcla de datasets como FineWeb-Edu, DCLM y The Stack. La versión Instruct del modelo base fue afinada mediante instrucciones, y sobre ella se aplicó un adaptador de tipo rsLoRA de rango 32 mediante fine-tuning supervisado (SFT) con respuesta completa, utilizando un dataset propio de 22.460 filas de entrenamiento y 2.496 de validación.
 
 El entrenamiento se realizó durante 3 épocas, alcanzando un 95,51% de precisión exacta normalizada en el conjunto de validación. Posteriormente, el adaptador se fusionó con el modelo base mediante la función `merge_and_unload` de PEFT, usando precisión float32 con TF32 desactivado para garantizar reproducibilidad. El modelo resultante es un único artefacto que no requiere PEFT ni el modelo base por separado para la inferencia.
 
@@ -80,7 +80,7 @@ No se dispone de informacion sobre modelos directamente comparables en la tarea 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/piyushgupta53/smollm2-135m-english-to-latex-notation)
+- [Modelo en Hugging Face](https://huggingface.co/piyushgupta53/smollm2-135m-english-to-latex-notation)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/piyushgupta53/english-to-latex-notation-sft)
 - [Adaptador LoRA](https://huggingface.co/piyushgupta53/smollm2-135m-english-to-latex-notation-lora)
 - [Modelo base SmolLM2-135M](https://huggingface.co/HuggingFaceTB/SmolLM2-135M)

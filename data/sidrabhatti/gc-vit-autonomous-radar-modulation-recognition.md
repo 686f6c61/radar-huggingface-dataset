@@ -6,7 +6,7 @@ GC-ViT (Global Context Vision Transformer) para reconocimiento de modulación de
 
 En lugar de la magnitud del espectrograma, el modelo usa el espectrograma de fase, ya que las formas de onda codificadas en fase se definen por su patrón de modulación de fase intrapulso: dos códigos distintos pueden tener magnitudes casi idénticas y fases muy diferentes. La señal 1D (IQ) se convierte así en un mapa tiempo-frecuencia 2D, recortado a su región informativa y redimensionado a 224×224×3, lo que transforma el problema en una clasificación de imágenes de 6 clases que una arquitectura de visión puede explotar.
 
-El modelo emplea una variante Tiny del backbone GC-ViT preentrenado y ajustado con una cabeza softmax de 6 clases. Su resultado principal es aproximadamente un 80 % de precisión a −12 dB de SNR, con degradación gradual en un barrido de −14 dB a +8 dB en pasos de 2 dB. El trabajo se publicó en *Engineering Research Express* (2024), y el repositorio de HuggingFace no incluye pesos ni dataset, solo un notebook de Colab dependiente de recursos privados.
+El modelo emplea una variante Tiny del backbone GC-ViT preentrenado y ajustado con una cabeza softmax de 6 clases. Su resultado principal es aproximadamente un 80 % de precisión a −12 dB de SNR, con degradación gradual en un barrido de −14 dB a +8 dB en pasos de 2 dB. El trabajo se publicó en *Engineering Research Express* (2024), y el repositorio de Hugging Face no incluye pesos ni dataset, solo un notebook de Colab dependiente de recursos privados.
 
 ## Especificaciones tecnicas
 
@@ -24,7 +24,7 @@ El modelo emplea una variante Tiny del backbone GC-ViT preentrenado y ajustado c
 | Entrada | Espectrograma de fase STFT recortado y redimensionado a 224x224x3 |
 | Numero de clases | 6 (familias de formas de onda codificadas en fase) |
 | Dataset | latestdataset-cnn (Kaggle, enlazado en la model card) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -89,16 +89,16 @@ No se dispone de datos concretos de modelos comparables en la informacion propor
 - Dependencia fuerte del preprocesado: el rendimiento depende de la ventana STFT, del recorte de la region informativa y del redimensionado a 224x224x3. La model card no documenta esos parametros de forma reproducible, lo que dificulta replicar el pipeline.
 - Riesgo de sobreajuste al dataset: el dataset de entrenamiento es privado/no incluido y la evaluacion se realizo sobre conjuntos held-out del mismo origen; el comportamiento ante cambios de dominio (otro receptor, otra banda, otro ancho de banda de pulso) no esta caracterizado.
 - Degradacion por debajo de −12 dB: aunque la degradacion es gradual, la precision cae a SNR muy bajas; no se publican cifras por debajo de −14 dB.
-- Reproducibilidad limitada: el repositorio de HuggingFace no contiene pesos, configuracion ni tarjeta con licencia detallada; el unico artefacto es un notebook especifico de Colab que monta Google Drive y espera un dataset comprimido privado y un fichero de pesos .h5 entrenado localmente, por lo que no se ejecuta de forma autonoma.
+- Reproducibilidad limitada: el repositorio de Hugging Face no contiene pesos, configuracion ni tarjeta con licencia detallada; el unico artefacto es un notebook especifico de Colab que monta Google Drive y espera un dataset comprimido privado y un fichero de pesos .h5 entrenado localmente, por lo que no se ejecuta de forma autonoma.
 - Licencia "other": no se especifican los terminos de uso comercial, redistribucion ni modicacion. Cualquier uso en produccion requiere contactar con los autores para aclarar las condiciones.
 - Riesgo de mala clasificacion (no de alucinacion, al ser un clasificador): una etiqueta incorrecta en un contexto de guerra electronica puede tener consecuencias operativas graves, por lo que se requiere validacion humana y margenes de confianza.
 - Uso dual y posible sujecion a controles de exportacion: se trata de tecnologia orientada a guerra electronica y aplicaciones militares, con las restricciones legales y regulatorias que ello implica segun la jurisdiccion.
-- Ausencia de datos de consumo: 0 descargas y 0 likes en HuggingFace, sin comunidad que haya validado los resultados de forma independiente.
+- Ausencia de datos de consumo: 0 descargas y 0 likes en Hugging Face, sin comunidad que haya validado los resultados de forma independiente.
 - Idiomas: no aplica; el modelo no procesa texto, por lo que no hay soporte multilingue ni capacidades conversacionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SidraBhatti/gc-vit-autonomous-radar-modulation-recognition
+- Modelo en Hugging Face: https://huggingface.co/SidraBhatti/gc-vit-autonomous-radar-modulation-recognition
 - Dataset en Kaggle: https://www.kaggle.com/datasets/sidrabhatti/latestdataset-cnn
 - Articulo publicado: Bhatti, S.G. & Ullah, M. (2024), "Radar signal modulation identification using global context vision transformer", *Engineering Research Express*, 6(4), 045331 — https://doi.org/10.1088/2631-8695/ad8b96 (requiere suscripcion)
 - Notebook de entrenamiento/evaluacion: Global_Context_ViT_for_RadarSiganls.ipynb (referenciado en la model card; especifico de Colab y no ejecutable de forma autonoma)

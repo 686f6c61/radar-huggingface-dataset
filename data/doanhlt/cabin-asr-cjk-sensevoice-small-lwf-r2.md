@@ -79,9 +79,9 @@ La tabla del model card queda truncada en el ultimo intervalo de confianza del c
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cabin-asr-cjk-sensevoice-small-lwf-r2 | 234 M | no disponible | zh, yue, ja, ko, en | FunASR Model License v1.1 | HuggingFace, candidato |
+| cabin-asr-cjk-sensevoice-small-lwf-r2 | 234 M | no disponible | zh, yue, ja, ko, en | FunASR Model License v1.1 | Hugging Face, candidato |
 | sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17 | no disponible | no disponible | zh, en, ja, ko, yue | no disponible | Paquete sherpa-onnx publicado |
-| FunAudioLLM/SenseVoiceSmall | 234 M | no disponible | zh, yue, ja, ko, en | FunASR Model License v1.1 | HuggingFace |
+| FunAudioLLM/SenseVoiceSmall | 234 M | no disponible | zh, yue, ja, ko, en | FunASR Model License v1.1 | Hugging Face |
 | Qwen3-ASR-1.7B (profesor R13x) | 1,7 B | no disponible | no disponible | Apache-2.0 (segun el autor) | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ La tabla del model card queda truncada en el ultimo intervalo de confianza del c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/doanhlt/cabin-asr-cjk-sensevoice-small-lwf-r2
+- Hugging Face: https://huggingface.co/doanhlt/cabin-asr-cjk-sensevoice-small-lwf-r2
 - Coleccion Cabin offline ASR: https://huggingface.co/collections/doanhlt/cabin-offline-asr-on-device-distilled-from-r13x-6ade0b05eb1f2ac4e49d7cf8
 - Modelo base: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Dataset YODAS2: https://huggingface.co/datasets/espnet/yodas2

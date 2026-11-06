@@ -107,8 +107,8 @@ No se dispone de datos publicados de otros modelos externos en la informacion pr
 
 | Modelo | Parametros | Contexto | Accuracy (test) | F1 | ROC-AUC | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| laya-multilingual-turkish-noul (este checkpoint) | 321,9 M | 512 tokens | 0.8097 | 0.8011 | 0.9000 | 0.0072 | cc-by-sa-4.0 | HuggingFace (`thealper2/laya-multilingual-turkish-noul`) |
-| convaiinnovations/laya-multilingual (base, zero-shot) | no disponible | no disponible | 0.6558 | 0.6189 | 0.6840 | 0.1930 | no disponible | HuggingFace (`convaiinnovations/laya-multilingual`) |
+| laya-multilingual-turkish-noul (este checkpoint) | 321,9 M | 512 tokens | 0.8097 | 0.8011 | 0.9000 | 0.0072 | cc-by-sa-4.0 | Hugging Face (`thealper2/laya-multilingual-turkish-noul`) |
+| convaiinnovations/laya-multilingual (base, zero-shot) | no disponible | no disponible | 0.6558 | 0.6189 | 0.6840 | 0.1930 | no disponible | Hugging Face (`convaiinnovations/laya-multilingual`) |
 | Variante RLCD descrita en la model card | no disponible | no disponible | 0.8071 | 0.8033 | 0.9014 | 0.1026 | no disponible | no disponible como checkpoint independiente |
 | Modelos externos comparables (clasificadores turcos basados en XLM-R o mBERT) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -130,7 +130,7 @@ Diferencias clave dentro de la familia: el ajuste supervisado mejora la accuracy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/laya-multilingual-turkish-noul
+- Modelo en Hugging Face: https://huggingface.co/thealper2/laya-multilingual-turkish-noul
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/ahmetege/turkish_jev_noul
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a servicios de mapas de Google y no guardan relacion con el modelo).

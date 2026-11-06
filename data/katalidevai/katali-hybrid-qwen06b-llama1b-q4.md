@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KATALI Hybrid Qwen3 0.6B + Llama 3.2 1B es un paquete de inferencia local para Windows publicado por el usuario katalidevai (Joan Apita) en HuggingFace. No es un modelo único ni un fichero GGUF autónomo: se distribuye como un contenedor con extensión .khyb que empaqueta dos modelos transformer densos ya cuantizados en Q4_K_M, Qwen3 0.6B y Llama 3.2 1B Instruct, y que solo se abre con el runtime propietario katali-hybrid.
+KATALI Hybrid Qwen3 0.6B + Llama 3.2 1B es un paquete de inferencia local para Windows publicado por el usuario katalidevai (Joan Apita) en Hugging Face. No es un modelo único ni un fichero GGUF autónomo: se distribuye como un contenedor con extensión .khyb que empaqueta dos modelos transformer densos ya cuantizados en Q4_K_M, Qwen3 0.6B y Llama 3.2 1B Instruct, y que solo se abre con el runtime propietario katali-hybrid.
 
 El problema que aborda es la orquestación de dos modelos pequeños en local sobre Windows, con una interfaz gráfica incluida (katali-hybrid-gui.exe) y descubrimiento automático de paquetes desde C:\models. El autor lo presenta explícitamente como un experimento para medir velocidad, consumo de memoria y calidad de respuesta combinando ambos modelos.
 
@@ -94,7 +94,7 @@ La diferencia principal de este paquete frente a las alternativas no es el rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/katalidevai/katali-hybrid-qwen06b-llama1b-q4
+- Hugging Face: https://huggingface.co/katalidevai/katali-hybrid-qwen06b-llama1b-q4
 - Runtime KATALI Hybrid (GitHub): https://github.com/katalidevai/katali-hybrid
 - Modelo base Qwen3 0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo base Llama 3.2 1B Instruct: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

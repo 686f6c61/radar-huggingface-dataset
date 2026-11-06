@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch1` es un checkpoint experimental de generación de texto, desarrollado por Lanni-ni y publicado en HuggingFace. Se trata de un modelo pequeño, con 27.447.040 parámetros totales, almacenado en formato safetensors y destinado a la biblioteca Transformers. El nombre del modelo sugiere que forma parte de una línea de investigación sobre atención con sesgos lineales dinámicos (dynamic ALiBi) aplicada al corpus BabyLM de 10 millones de palabras, aunque no hay documentación pública que confirme estos detalles.
+El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch1` es un checkpoint experimental de generación de texto, desarrollado por Lanni-ni y publicado en Hugging Face. Se trata de un modelo pequeño, con 27.447.040 parámetros totales, almacenado en formato safetensors y destinado a la biblioteca Transformers. El nombre del modelo sugiere que forma parte de una línea de investigación sobre atención con sesgos lineales dinámicos (dynamic ALiBi) aplicada al corpus BabyLM de 10 millones de palabras, aunque no hay documentación pública que confirme estos detalles.
 
 La model card es casi completamente genérica y no proporciona información sobre arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades. El modelo parece ser uno de varios checkpoints de una misma serie experimental (se han localizado versiones en epoch8 y epoch9). Su relevancia actual es principalmente como objeto de estudio en investigación sobre modelos de lenguaje pequeños y mecanismos de atención alternativos, pero no está preparado para uso en producción.
 
@@ -58,8 +58,8 @@ No se dispone de información suficiente para una comparativa técnica rigurosa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch1 | 27.447.040 | no disponible | no disponible | HuggingFace |
-| Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 | no disponible | no disponible | no disponible | HuggingFace |
+| Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch1 | 27.447.040 | no disponible | no disponible | Hugging Face |
+| Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 | no disponible | no disponible | no disponible | Hugging Face |
 | Lanni-ni/dynamic_forgetting_2_4_256_babylm_10m_inverse_epoch9 | no disponible | no disponible | no disponible | espejo en GitHub |
 
 No se han publicado benchmarks comparativos entre estos modelos.
@@ -75,6 +75,6 @@ No se han publicado benchmarks comparativos entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch1
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch1
 - Checkpoint epoch8: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8
 - Repositorio espejo en GitHub: https://github.com/Damacol/lanni-ni-dynamic_forgetting_2_4_256_babylm_10m_inverse_epoch9

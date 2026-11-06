@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gzma-1221/mae-multitask-run3` es un repositorio de HuggingFace publicado por el usuario `gzma-1221` que contiene una implementacion funcional de una arquitectura denominada por el autor como **Mae** orientada a tareas multiples (**multitask**) en una configuracion **tiny**. El propio author explicita en la model card que el repositorio prioriza codigo transparente y pruebas de humo (*smoke tests*) reproducibles, y que las afirmaciones de rendimiento se omiten deliberadamente: no se reclama ninguna puntuacion de benchmark.
+`gzma-1221/mae-multitask-run3` es un repositorio de Hugging Face publicado por el usuario `gzma-1221` que contiene una implementacion funcional de una arquitectura denominada por el autor como **Mae** orientada a tareas multiples (**multitask**) en una configuracion **tiny**. El propio author explicita en la model card que el repositorio prioriza codigo transparente y pruebas de humo (*smoke tests*) reproducibles, y que las afirmaciones de rendimiento se omiten deliberadamente: no se reclama ninguna puntuacion de benchmark.
 
 El punto mas relevante para quien lo evalue es que `model.safetensors` **no es un checkpoint entrenado**, sino una inicializacion valida para pruebas de humo. El modelo tiene solo **16.576 parametros totales** (segun los metadatos reales de safetensors), lo que lo situa en un orden de magnitud de juguete, muy por debajo de cualquier modelo de produccion. El tamano del repositorio es practicamente 0 GB y no registra descargas ni *likes*.
 
@@ -57,7 +57,7 @@ Dado que no existe un checkpoint entrenado, los casos de uso realistas se limita
 - Plantilla de implementacion de arquitectura multitarea: reutilizar el codigo y `config.json` como esqueleto para experimentar con atencion multi query y gated fusion en una escala tiny antes de escalar.
 - Reproduccion de recetas de entrenamiento: usar `training_args.json` (novograd + onecycle) como punto de partida configurable y sustituir los valores por los del experimento real.
 - Benchmarking metodologico: emplear la guia de evaluacion del autor (conjunto de validacion especifico, tres semillas, linea base de capacidad equivalente) como protocolo para comparar variantes del modelo de forma justa.
-- Educacion y docencia: ilustrar el ciclo completo de publicacion de un modelo en HuggingFace (config, training args, pesos de inicializacion, evaluacion) sin la complejidad de un modelo grande.
+- Educacion y docencia: ilustrar el ciclo completo de publicacion de un modelo en Hugging Face (config, training args, pesos de inicializacion, evaluacion) sin la complejidad de un modelo grande.
 - Investigacion sobre fusion multitarea: analizar el efecto del mecanismo gated fusion en un entorno controlado y de bajo coste computacional antes de trasladar conclusiones a modelos mayores.
 - Integracion continua de repositorios de modelos: incorporar el repositorio como caso de prueba en validadores de model cards, comprobadores de licencias o linters de safetensors.
 
@@ -98,5 +98,5 @@ No disponible. No se conocen modelos comparables directos: el repositorio es una
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gzma-1221/mae-multitask-run3
+- Repositorio en Hugging Face: https://huggingface.co/gzma-1221/mae-multitask-run3
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos o demos). Los resultados obtenidos corresponden a contenidos sin relacion con el repositorio y se descartan por no ser aplicables.

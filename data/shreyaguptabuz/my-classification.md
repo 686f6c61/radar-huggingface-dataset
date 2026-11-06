@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shreyaguptabuz/my-classification` es un repositorio de investigacion publicado en HuggingFace que contiene un prototipo de **EfficientFormer** orientado a tareas de **clasificacion**. Lo firma el usuario shreyaguptabuz bajo licencia Apache 2.0 y, segun los metadatos del repositorio, el checkpoint en formato safetensors declara 24.832 parametros totales. El tamano del repositorio aparece redondeado como 0.0 GB, coherente con un artefacto de muy pocos kilobytes.
+`shreyaguptabuz/my-classification` es un repositorio de investigacion publicado en Hugging Face que contiene un prototipo de **EfficientFormer** orientado a tareas de **clasificacion**. Lo firma el usuario shreyaguptabuz bajo licencia Apache 2.0 y, segun los metadatos del repositorio, el checkpoint en formato safetensors declara 24.832 parametros totales. El tamano del repositorio aparece redondeado como 0.0 GB, coherente con un artefacto de muy pocos kilobytes.
 
 La propia model card es explicita sobre el estado del proyecto: el fichero `model.safetensors` es un **checkpoint de inicializacion valido para pruebas de humo** y no un modelo entrenado ni evaluado. No se reclama ninguna puntuacion de benchmark, no se documenta un conjunto de datos de entrenamiento y no se aportan resultados de evaluacion. El `training_args.json` incluido recoge una receta por defecto (optimizador SGD con calentamiento lineal) que el autor describe como valores de partida del script, no como evidencia de un entrenamiento completado.
 
@@ -69,7 +69,7 @@ La informacion proporcionada no incluye especificaciones de otros modelos, por l
 
 | Modelo | Categoria | Parametros | Contexto o resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shreyaguptabuz/my-classification | EfficientFormer de investigacion, sin entrenar | 24.832 | no disponible | apache-2.0 | HuggingFace, checkpoint de inicializacion |
+| shreyaguptabuz/my-classification | EfficientFormer de investigacion, sin entrenar | 24.832 | no disponible | apache-2.0 | Hugging Face, checkpoint de inicializacion |
 | Familia EfficientFormer original (Snap) | Backbone de clasificacion eficiente | no disponible | no disponible | no disponible | publica |
 | EfficientFormerV2 | Backbone de clasificacion eficiente, revision posterior | no disponible | no disponible | no disponible | publica |
 | Familia MobileNet / MobileViT | Backbones ligeros para vision en el borde | no disponible | no disponible | no disponible | publica |
@@ -84,14 +84,14 @@ La diferencia fundamental frente a esas alternativas es que este repositorio no 
 - **Riesgo de alucinacion**: no aplica en el sentido generativo, pero si existe el riesgo equivalente de predicciones sin fundamento si se despliega sin entrenamiento y sin validacion.
 - **Limitaciones de contexto e idioma**: no disponibles; el modelo no procesa texto.
 - **Restricciones de licencia**: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre conservando el aviso de licencia y el fichero de cambios. La model card advierte de que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se utilice con conjuntos de datos externos.
-- **Incongruencia en los metadatos**: la fecha de creacion y actualizacion declarada en HuggingFace es del 9 de octubre de 2026, posterior a la fecha habitual de consulta. Conviene verificar la procedencia del repositorio antes de integrarlo en cualquier pipeline.
+- **Incongruencia en los metadatos**: la fecha de creacion y actualizacion declarada en Hugging Face es del 9 de octubre de 2026, posterior a la fecha habitual de consulta. Conviene verificar la procedencia del repositorio antes de integrarlo en cualquier pipeline.
 - **Adopcion nula**: cero descargas y cero "me gusta" en el momento de redactar esta ficha; no hay evidencia de uso independiente ni de revision por terceros.
 - **Implementacion personalizada**: las APIs de carga automatica no funcionan sin un adaptador explicito, lo que anade trabajo de integracion.
 - **Caveat para produccion**: no debe desplegarse en produccion en su estado actual bajo ninguna circunstancia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreyaguptabuz/my-classification
+- Modelo en Hugging Face: https://huggingface.co/shreyaguptabuz/my-classification
 - Introduccion a la clasificacion (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/getting-started-with-classification/
 - Principales algoritmos de clasificacion (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/top-machine-learning-algorithms-for-classification/
 - Que son los modelos de clasificacion (IBM): https://www.ibm.com/think/topics/classification-models

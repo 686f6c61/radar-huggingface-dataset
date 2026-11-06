@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stephaniesanchez/swin-t-retrieval69` es un repositorio experimental publicado en HuggingFace que contiene una implementación de un modelo Swin Transformer (variante Swin-T) orientado a tareas de retrieval (recuperación de información, presumiblemente multimodal imagen-texto). Lo desarrolla el usuario stephaniesanchez y no se presenta como un modelo entrenado, sino como un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests).
+`stephaniesanchez/swin-t-retrieval69` es un repositorio experimental publicado en Hugging Face que contiene una implementación de un modelo Swin Transformer (variante Swin-T) orientado a tareas de retrieval (recuperación de información, presumiblemente multimodal imagen-texto). Lo desarrolla el usuario stephaniesanchez y no se presenta como un modelo entrenado, sino como un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests).
 
 El repositorio incluye el código del modelo (`pipeline.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y pesos en formato safetensors. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado. Se trata, por tanto, de un artefacto de desarrollo, no de un modelo listo para producción.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stephaniesanchez/swin-t-retrieval69 | 24.832 (checkpoint de inicialización) | no disponible | sin benchmarks | apache-2.0 | HuggingFace |
-| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | no aplica (visión) | benchmarks públicos en ImageNet | MIT | HuggingFace |
-| CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens de texto | benchmarks públicos en retrieval imagen-texto | MIT | HuggingFace |
+| stephaniesanchez/swin-t-retrieval69 | 24.832 (checkpoint de inicialización) | no disponible | sin benchmarks | apache-2.0 | Hugging Face |
+| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | no aplica (visión) | benchmarks públicos en ImageNet | MIT | Hugging Face |
+| CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens de texto | benchmarks públicos en retrieval imagen-texto | MIT | Hugging Face |
 
 La comparación es orientativa: el repositorio analizado no es un modelo entrenado, por lo que no es directamente equiparable a Swin-T oficial ni a CLIP en términos de rendimiento.
 
@@ -82,5 +82,5 @@ La comparación es orientativa: el repositorio analizado no es un modelo entrena
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stephaniesanchez/swin-t-retrieval69
+- Hugging Face: https://huggingface.co/stephaniesanchez/swin-t-retrieval69
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

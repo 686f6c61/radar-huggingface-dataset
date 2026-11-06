@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K-Oss-8-Mini-Instruct-8B-GGUF es una recopilacion de cuantizaciones en formato GGUF del modelo K-Oss-8-Mini-Instruct-8B, publicado por el usuario mradermacher en HuggingFace. Se trata de una conversion estatica (no de una cuantizacion dinamica con imatrix) del modelo original alojado en el repositorio K-Ai-Official/K-Oss-8-Mini-Instruct-8B, cuyo proposito es facilitar la inferencia en CPU y en GPUs de gama consumer mediante herramientas como llama.cpp u Ollama.
+K-Oss-8-Mini-Instruct-8B-GGUF es una recopilacion de cuantizaciones en formato GGUF del modelo K-Oss-8-Mini-Instruct-8B, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversion estatica (no de una cuantizacion dinamica con imatrix) del modelo original alojado en el repositorio K-Ai-Official/K-Oss-8-Mini-Instruct-8B, cuyo proposito es facilitar la inferencia en CPU y en GPUs de gama consumer mediante herramientas como llama.cpp u Ollama.
 
 El modelo base cuenta con 8.190.735.360 parametros (aproximadamente 8,19 mil millones), un tamano que lo situa en la categoria de modelos densos de rango medio. La nomenclatura "Instruct" sugiere un ajuste para seguir instrucciones y mantener conversaciones, si bien la model card del repositorio GGUF no aporta detalles sobre el entrenamiento, la arquitectura interna ni los datos utilizados.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cua-s1-4b-0.1 es un modelo publicado en HuggingFace por el usuario cua-ai. La ficha del repositorio es extremadamente escasa: unicamente incluye la etiqueta safetensors y la region us, sin informacion sobre licencia, idiomas soportados, pipeline declarado ni documentacion tecnica asociada. El nombre del modelo sugiere un tamano de aproximadamente 4.000 millones de parametros y una version 0.1, pero no hay confirmacion oficial de estas cifras en la informacion disponible.
+cua-s1-4b-0.1 es un modelo publicado en Hugging Face por el usuario cua-ai. La ficha del repositorio es extremadamente escasa: unicamente incluye la etiqueta safetensors y la region us, sin informacion sobre licencia, idiomas soportados, pipeline declarado ni documentacion tecnica asociada. El nombre del modelo sugiere un tamano de aproximadamente 4.000 millones de parametros y una version 0.1, pero no hay confirmacion oficial de estas cifras en la informacion disponible.
 
 El repositorio presenta un desajuste notable entre el nombre y su contenido: el tamano total es de 0,2 GB, una cifra muy inferior a la esperada para un modelo de 4B parametros en precision completa (que rondaria los 8 GB en bf16). Esto sugiere que el repositorio contiene unicamente pesos parciales, cuantizaciones muy agresivas o ficheros de configuracion y tokenizer sin los pesos completos. Esta inconsistencia debe verificarse antes de cualquier uso.
 
@@ -95,6 +95,6 @@ No disponible. No hay informacion sobre parametros confirmados, contexto, rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cua-ai/cua-s1-4b-0.1
+- Hugging Face: https://huggingface.co/cua-ai/cua-s1-4b-0.1
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo. Los resultados obtenidos corresponden a contenidos sin relacion: la Communaute Urbaine d'Arras (https://www.grandarras.fr/) y diversas paginas sobre la Conception Universelle des Apprentissages (CUA) en el ambito educativo frances (ac-versailles.fr, accezia.fr, poleressourcespedagogiques.fr). No existen papers, blogs, repositorios de codigo ni demos asociados a cua-ai/cua-s1-4b-0.1 en la informacion disponible.

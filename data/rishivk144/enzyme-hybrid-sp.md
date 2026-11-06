@@ -6,7 +6,7 @@
 
 El autor lo publica en el contexto de un leaderboard de predicción de números EC (etiquetas `leak-curber`, `enzyme`, `leaderboard`). La innovación principal es el control de fuga de datos: Swiss-Prot es la fuente de la que se construyó el propio benchmark, y el 85% de las entradas de validación aparecen literalmente en él. El pipeline descarta cualquier coincidencia externa con identidad ≥ 50% respecto a la entrada antes de votar, alineando el uso de datos externos con la separación por similitud de secuencia que aplica el benchmark.
 
-El repositorio ocupa 0,2 GB y la inferencia corre en CPU con numpy; PyTorch solo se necesita para entrenar. No hay información pública sobre licencia, idiomas ni pipeline de HuggingFace, y el modelo no registra descargas ni likes en el momento de la consulta.
+El repositorio ocupa 0,2 GB y la inferencia corre en CPU con numpy; PyTorch solo se necesita para entrenar. No hay información pública sobre licencia, idiomas ni pipeline de Hugging Face, y el modelo no registra descargas ni likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -81,7 +81,7 @@ Análisis de errores (modelo solo con entrenamiento, holdout): 5,3 puntos de L4 
 
 | Modelo | Enfoque | Parámetros | Contexto | L4 (holdout) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| enzyme-hybrid-sp (este) | DIAMOND kNN + Swiss-Prot con tope del 50% + MLP ESM-2 | ESM-2 8M + MLP ~5M | No aplica | 0,837 | No disponible | HuggingFace, 0 descargas |
+| enzyme-hybrid-sp (este) | DIAMOND kNN + Swiss-Prot con tope del 50% + MLP ESM-2 | ESM-2 8M + MLP ~5M | No aplica | 0,837 | No disponible | Hugging Face, 0 descargas |
 | Variante sin Swiss-Prot (mismo autor) | DIAMOND kNN solo sobre entrenamiento | ESM-2 8M + MLP ~5M | No aplica | 0,817 | No disponible | Referenciada en la model card |
 | Baseline EC más frecuente | Regla trivial | 0 | No aplica | 0,011 | No disponible | Referenciada en la model card |
 | Swiss-Prot sin restricción (comparación) | DIAMOND kNN con datos externos sin tope | ESM-2 8M + MLP ~5M | No aplica | 0,839 (con fuga) | No disponible | Solo comparación metodológica |
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos comparables de predicción de EC en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rishivk144/enzyme-hybrid-sp
+- Modelo en Hugging Face: https://huggingface.co/rishivk144/enzyme-hybrid-sp
 - ESM-2 8M (extractor de características): https://huggingface.co/facebook/esm2_t6_8M_UR50D
 - DIAMOND (alineador): https://github.com/bbuchfink/diamond
 - UniProtKB/Swiss-Prot (release 2026_03): https://rest.uniprot.org/uniprotkb/stream

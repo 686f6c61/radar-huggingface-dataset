@@ -68,11 +68,11 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - El modelo está entrenado específicamente para el dataset Wynd con captions mixed-v5, lo que puede limitar su generalización a otros dominios o estilos de imagen.
 - La receta de inferencia documentada (8+3 pasos) es la evaluada como punto óptimo de realismo, pero el checkpoint del autor incluye una receta más simple (9 pasos, guidance completa, conditioning 0.50) que puede dar resultados inferiores.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de idioma, pero al ser un modelo de imagen, los sesgos pueden manifestarse en la representación de rostros de ciertos grupos demográficos.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido probado externamente ni validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido probado externamente ni validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cantina/Ozus-turbo-1.2
+- Modelo en Hugging Face: https://huggingface.co/Cantina/Ozus-turbo-1.2
 - Backbone base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo (no incluido en el repo)
 - VAE compartido: https://huggingface.co/Cantina/flux.1-dev-realistic-lora-merge (subcarpeta `vae`)
 - Versión anterior: https://huggingface.co/Cantina/ozus-turbo-selfie (checkpoint-46000)

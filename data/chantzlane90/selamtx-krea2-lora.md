@@ -1,7 +1,7 @@
 # chantzlane90/selamtx-krea2-lora
 
 ## Resumen
-`chantzlane90/selamtx-krea2-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario chantzlane90. No es un modelo de lenguaje, sino un ajuste fino de bajo rango pensado para el modelo de generacion de imagenes Krea 2 (fal-ai). Su unica funcion es reproducir un personaje ficticio concreto, activado mediante la palabra clave `selamtx`. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
+`chantzlane90/selamtx-krea2-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario chantzlane90. No es un modelo de lenguaje, sino un ajuste fino de bajo rango pensado para el modelo de generacion de imagenes Krea 2 (fal-ai). Su unica funcion es reproducir un personaje ficticio concreto, activado mediante la palabra clave `selamtx`. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
 El adaptador se ha entrenado con la herramienta `fal-ai/krea-2-trainer` durante 1000 pasos con rango 32, y sus claves se han remapeado al espacio de nombres `diffusion_model.*` que espera ComfyUI, con el objetivo declarado de funcionar en la plataforma Sogni. El personaje se describe como una figura adulta ficticia generada por IA, no una persona real, con una edad declarada de 21+.
 
@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye referencias a otros LoRA 
 - Sin mantenimiento declarado: 0 descargas y 0 likes en la fecha de consulta, sin historial de actualizaciones mas alla de la creacion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/chantzlane90/selamtx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/selamtx-krea2-lora
 - Herramienta de entrenamiento mencionada: fal-ai/krea-2-trainer (referencia citada en la model card; no se facilita URL)
 - Modelo base: Krea 2 (fal-ai) (referencia citada; no se facilita URL)
 - Plataforma de destino declarada: Sogni (referencia citada; no se facilita URL)

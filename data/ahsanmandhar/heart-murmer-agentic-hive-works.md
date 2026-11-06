@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Heart Murmer Agentic Hive es un sistema de detección de soplos cardíacos (heart murmurs) a partir de audio fonocardiográfico, empaquetado como una aplicación multi-agente con capacidades de aprendizaje federado y intercambio P2P entre nodos. Lo desarrolla Ahsan Mandhar y se distribuye a través de HuggingFace con licencia MIT para los componentes base. No es un modelo de lenguaje: es un pipeline de inferencia de audio que utiliza un clasificador AST (Audio Spectrogram Transformer) exportado a ONNX Runtime (CPU), de aproximadamente 83 MB, combinado con una sonda lineal (linear probe) para la detección de soplos.
+Heart Murmer Agentic Hive es un sistema de detección de soplos cardíacos (heart murmurs) a partir de audio fonocardiográfico, empaquetado como una aplicación multi-agente con capacidades de aprendizaje federado y intercambio P2P entre nodos. Lo desarrolla Ahsan Mandhar y se distribuye a través de Hugging Face con licencia MIT para los componentes base. No es un modelo de lenguaje: es un pipeline de inferencia de audio que utiliza un clasificador AST (Audio Spectrogram Transformer) exportado a ONNX Runtime (CPU), de aproximadamente 83 MB, combinado con una sonda lineal (linear probe) para la detección de soplos.
 
 El sistema resuelve un problema concreto de cribado cardiovascular: clasificar sonidos cardíacos en busca de soplos anómalos, con un enfoque de despliegue distribuido entre pares que intercambian mejoras del modelo mediante bundles firmados con Ed25519, verificación de integridad SHA-256 y una puerta de promoción basada en métricas (AUC) y seguridad de abstención. Incluye además un endurecimiento de seguridad relevante para entornos clínicos: limitación de tasa, guardas de recursos, cola durable, ACL de NTFS y cadena de hashes de auditoría.
 
@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye modelos comparables de d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ahsanmandhar/heart-murmer-agentic-hive-works
+- Hugging Face: https://huggingface.co/Ahsanmandhar/heart-murmer-agentic-hive-works
 - Instalador Python: https://huggingface.co/Ahsanmandhar/heart-murmer-agentic-hive-works/resolve/main/heart-murmer-agentic-hive-python-setup.exe
 - Instalador Rust: https://huggingface.co/Ahsanmandhar/heart-murmer-agentic-hive-works/resolve/main/heart-murmer-agentic-hive-setup.exe
 - Código fuente (ZIP): https://github.com/ahsanmandhar-ui/heart-murmer-agentic-hive-works/archive/refs/heads/main.zip

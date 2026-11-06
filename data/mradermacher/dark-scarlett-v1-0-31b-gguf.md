@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa directa. Existen otras versiones de la serie Dark Scarlett (v1.5, v2.0) y otros modelos de roleplay como Mistral 7B o Llama 3 8B, pero no se conocen datos de rendimiento ni caracteristicas tecnicas de estos para contrastar. Se recomienda consultar la coleccion de ReadyArt en HuggingFace para obtener mas contexto.
+No se dispone de informacion suficiente para realizar una comparativa directa. Existen otras versiones de la serie Dark Scarlett (v1.5, v2.0) y otros modelos de roleplay como Mistral 7B o Llama 3 8B, pero no se conocen datos de rendimiento ni caracteristicas tecnicas de estos para contrastar. Se recomienda consultar la coleccion de ReadyArt en Hugging Face para obtener mas contexto.
 
 ## Limitaciones y advertencias
 

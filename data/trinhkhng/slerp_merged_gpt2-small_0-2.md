@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| trinhkhng/slerp_Merged_gpt2-small_0.2 | 124M | 1024 | no disponible | HuggingFace |
-| openai-community/gpt2 | 124M | 1024 | MIT | HuggingFace |
-| trinhkhng/slerp_Merged_gpt2_0.2 | 124M (presumiblemente) | 1024 | no disponible | HuggingFace |
+| trinhkhng/slerp_Merged_gpt2-small_0.2 | 124M | 1024 | no disponible | Hugging Face |
+| openai-community/gpt2 | 124M | 1024 | MIT | Hugging Face |
+| trinhkhng/slerp_Merged_gpt2_0.2 | 124M (presumiblemente) | 1024 | no disponible | Hugging Face |
 
 La comparativa se limita a parametros y contexto, ya que no hay datos de rendimiento. El modelo original GPT-2 tiene licencia MIT y es ampliamente usado como referencia. El otro merge listado (`slerp_Merged_gpt2_0.2`) parece ser una variante del mismo experimento, aunque no se confirma su configuracion exacta.
 
@@ -74,7 +74,7 @@ La comparativa se limita a parametros y contexto, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/slerp_Merged_gpt2-small_0.2](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-small_0.2)
+- [Hugging Face - trinhkhng/slerp_Merged_gpt2-small_0.2](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-small_0.2)
 - [FriendliAI - pagina del modelo](https://friendli.ai/models/trinhkhng/slerp_Merged_gpt2_0.2)
 - [Free2AITools - analisis del modelo](https://free2aitools.com/model/trinhkhng/slerp_merged_gpt2-medium_0.2)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

@@ -79,7 +79,7 @@ Todas las alternativas comparten la misma tarea (ASR) y familia arquitectónica;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mydubber-org/whisper-small-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/mydubber-org/whisper-small-ct2-int8
 - Modelo base: https://huggingface.co/openai/whisper-small
 - faster-whisper (GitHub): https://github.com/SYSTRAN/faster-whisper
 - Script de conversión (model_builds/whisper.py): https://github.com/vladbehash/dubber/blob/main/tools/model-builds/src/model_builds/whisper.py

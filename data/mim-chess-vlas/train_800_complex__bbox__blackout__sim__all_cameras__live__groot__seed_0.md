@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7, seed 0) | 3.144.016.000 | no disponible | Pick-and-place en simulación (Panda) | apache-2.0 | HuggingFace, 20 descargas |
+| Este checkpoint (GR00T N1.7, seed 0) | 3.144.016.000 | no disponible | Pick-and-place en simulación (Panda) | apache-2.0 | Hugging Face, 20 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible en la información | Repositorio Isaac-GR00T en GitHub |
-| Otras políticas LeRobot del mismo autor | no disponible | no disponible | Variantes del mismo dataset (bbox, blackout, all_cameras) | apache-2.0 (presumible) | HuggingFace, mismo espacio `mim-chess-vlas` |
+| Otras políticas LeRobot del mismo autor | no disponible | no disponible | Variantes del mismo dataset (bbox, blackout, all_cameras) | apache-2.0 (presumible) | Hugging Face, mismo espacio `mim-chess-vlas` |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_complex__bbox__blackout__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_complex__bbox__blackout__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_complex__bbox__blackout__sim__all_cameras__live
 - Repositorio Isaac-GR00T (NVIDIA): https://github.com/NVIDIA/Isaac-GR00T
 - LeRobot (GitHub): https://github.com/huggingface/lerobot

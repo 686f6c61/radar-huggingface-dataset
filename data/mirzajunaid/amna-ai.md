@@ -4,7 +4,7 @@
 
 Amna-AI es un adaptador LoRA publicado por MirzaJunaid sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Se trata de un fine-tuning mediante PEFT (Parameter-Efficient Fine-Tuning) con la librería `peft` y el framework `trl`, orientado a generación de texto conversacional. El repositorio tiene un tamaño de 0.2 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
 
-El modelo se presenta como una solución para adaptar Qwen2.5-7B-Instruct a una tarea o dominio específico, aunque la model card no proporciona detalles sobre el propósito concreto, los datos de entrenamiento ni las capacidades resultantes. Su relevancia actual es limitada debido a la ausencia de documentación y a que no ha recibido descargas ni valoraciones en HuggingFace. A pesar de ello, puede servir como ejemplo de fine-tuning eficiente sobre un modelo de 7B parámetros.
+El modelo se presenta como una solución para adaptar Qwen2.5-7B-Instruct a una tarea o dominio específico, aunque la model card no proporciona detalles sobre el propósito concreto, los datos de entrenamiento ni las capacidades resultantes. Su relevancia actual es limitada debido a la ausencia de documentación y a que no ha recibido descargas ni valoraciones en Hugging Face. A pesar de ello, puede servir como ejemplo de fine-tuning eficiente sobre un modelo de 7B parámetros.
 
 ## Especificaciones tecnicas
 
@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: MirzaJunaid/Amna-AI](https://huggingface.co/MirzaJunaid/Amna-AI)
+- [Hugging Face: MirzaJunaid/Amna-AI](https://huggingface.co/MirzaJunaid/Amna-AI)
 - [Modelo base: Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) (referencia, no incluido en la información original)

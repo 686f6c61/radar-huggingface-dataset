@@ -77,7 +77,7 @@ La principal diferencia frente al modelo original es el formato y el entorno de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/d0gr/dreamshaper-xl-lightning-unet-onnx
+- Repositorio Hugging Face: https://huggingface.co/d0gr/dreamshaper-xl-lightning-unet-onnx
 - Modelo base (Lykon/dreamshaper-xl-lightning): https://huggingface.co/Lykon/dreamshaper-xl-lightning
 - Repositorio de text encoders y VAE compartidos (d0gr/sdxl-lightning-onnx-webgpu): https://huggingface.co/d0gr/sdxl-lightning-onnx-webgpu
 - Extensión Generate AI Images (código fuente): https://github.com/d0gr/generate-ai-images

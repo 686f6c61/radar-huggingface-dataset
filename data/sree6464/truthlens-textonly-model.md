@@ -2,7 +2,7 @@
 
 ## Resumen
 
-truthlens-textonly-model es un modelo de clasificación de texto en inglés resultado de un ajuste fino (fine-tuning) completo de google-bert/bert-base-uncased, publicado por el usuario Sree6464 en HuggingFace. Se trata, por tanto, de un encoder BERT base con una cabeza de clasificación añadida, orientado a una tarea de clasificación binaria de secuencias. Su nombre sugiere un uso previsto relacionado con la verificación de veracidad o la detección de desinformación, aunque la model card no documenta explícitamente la tarea ni el conjunto de datos empleado.
+truthlens-textonly-model es un modelo de clasificación de texto en inglés resultado de un ajuste fino (fine-tuning) completo de google-bert/bert-base-uncased, publicado por el usuario Sree6464 en Hugging Face. Se trata, por tanto, de un encoder BERT base con una cabeza de clasificación añadida, orientado a una tarea de clasificación binaria de secuencias. Su nombre sugiere un uso previsto relacionado con la verificación de veracidad o la detección de desinformación, aunque la model card no documenta explícitamente la tarea ni el conjunto de datos empleado.
 
 El modelo cuenta con 109.483.778 parámetros según el archivo de safetensors, lo que supone 1.538 parámetros por encima del BERT base original (109.482.240), una diferencia compatible con una cabeza de clasificación lineal de dos clases (768 x 2 + 2 sesgos). El repositorio ocupa 1,8 GB y se distribuye bajo licencia Apache 2.0. La longitud de contexto heredada del modelo base es de 512 tokens.
 
@@ -85,10 +85,10 @@ No se dispone de comparaciones con otros modelos en la información proporcionad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparable |
 |---|---|---|---|---|---|
-| truthlens-textonly-model | 109,5 M | 512 tokens | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | No disponible |
-| google-bert/bert-base-uncased | 109,5 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | No aplica (modelo base sin ajustar a esta tarea) |
-| ProsusAI/finbert | ~110 M | 512 tokens | No disponible en esta ficha | HuggingFace, ampliamente utilizado | No disponible (dominio financiero, no comparable directamente) |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | No disponible (tarea SST-2, no comparable directamente) |
+| truthlens-textonly-model | 109,5 M | 512 tokens | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | No disponible |
+| google-bert/bert-base-uncased | 109,5 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | No aplica (modelo base sin ajustar a esta tarea) |
+| ProsusAI/finbert | ~110 M | 512 tokens | No disponible en esta ficha | Hugging Face, ampliamente utilizado | No disponible (dominio financiero, no comparable directamente) |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | No disponible (tarea SST-2, no comparable directamente) |
 
 La comparación de rendimiento no es posible porque truthlens-textonly-model no declara su tarea ni su dataset, y las alternativas citadas se evalúan en conjuntos distintos. La ventaja estructural del modelo frente a DistilBERT sería su mayor capacidad (110 M frente a 67 M de parámetros), a cambio de un coste de inferencia aproximadamente un 60 % superior; frente a bert-base-uncased la diferencia es únicamente el ajuste fino sobre un dataset no documentado.
 
@@ -109,7 +109,7 @@ La comparación de rendimiento no es posible porque truthlens-textonly-model no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sree6464/truthlens-textonly-model
+- Modelo en Hugging Face: https://huggingface.co/Sree6464/truthlens-textonly-model
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Paper original de BERT: https://arxiv.org/abs/1810.04805
 - Documentación de transformers: https://huggingface.co/docs/transformers/index

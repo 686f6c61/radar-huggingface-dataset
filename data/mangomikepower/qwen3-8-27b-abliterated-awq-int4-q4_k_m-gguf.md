@@ -94,7 +94,7 @@ La diferencia funcional mas relevante frente a esas alternativas no es de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MangoMikePower/Qwen3.8-27B-abliterated-AWQ-INT4-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MangoMikePower/Qwen3.8-27B-abliterated-AWQ-INT4-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-AWQ-INT4
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

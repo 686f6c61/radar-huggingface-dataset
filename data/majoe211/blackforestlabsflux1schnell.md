@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Majoe211/blackforestlabsFLUX1schnell es un repositorio alojado en HuggingFace por el usuario Majoe211 que, por su identificador, corresponde a una redistribucion de FLUX.1 [schnell], el modelo de generacion de imagenes desarrollado por Black Forest Labs. Se trata de un modelo de difusion texto-a-imagen de la familia FLUX.1, disenado para generar imagenes de alta calidad a partir de descripciones textuales en pocos pasos de inferencia, lo que lo hace especialmente atractivo para entornos con recursos limitados o para aplicaciones interactivas que requieren baja latencia.
+Majoe211/blackforestlabsFLUX1schnell es un repositorio alojado en Hugging Face por el usuario Majoe211 que, por su identificador, corresponde a una redistribucion de FLUX.1 [schnell], el modelo de generacion de imagenes desarrollado por Black Forest Labs. Se trata de un modelo de difusion texto-a-imagen de la familia FLUX.1, disenado para generar imagenes de alta calidad a partir de descripciones textuales en pocos pasos de inferencia, lo que lo hace especialmente atractivo para entornos con recursos limitados o para aplicaciones interactivas que requieren baja latencia.
 
 El repositorio no incluye model card tecnica mas alla de la declaracion de licencia Apache 2.0, ni pipeline declarado, ni idiomas, ni datos de entrenamiento o benchmarks. La fecha de creacion y actualizacion (2026-10-29) y la ausencia de descargas y likes sugieren un repositorio recien publicado o de escasa difusion. Por tanto, esta ficha se apoya en las caracteristicas conocidas de FLUX.1 [schnell] como modelo de referencia, senalando explicitamente cuando un dato no esta disponible en la informacion proporcionada.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto (prompt) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Majoe211/blackforestlabsFLUX1schnell (redistribucion de FLUX.1 [schnell]) | no disponible (referencia: ~12 000 M) | no disponible (referencia: hasta 512 tokens) | Apache 2.0 | HuggingFace (repo de terceros) |
-| FLUX.1 [dev] (Black Forest Labs) | ~12 000 M | hasta 512 tokens | no comercial | HuggingFace oficial |
-| Stable Diffusion 3.5 Large (Stability AI) | ~8 000 M | hasta 77-512 tokens segun variante | Stability AI Community License | HuggingFace oficial |
-| SDXL (Stability AI) | ~3 500 M | 77 tokens | CreativeML Open RAIL++-M | HuggingFace oficial |
+| Majoe211/blackforestlabsFLUX1schnell (redistribucion de FLUX.1 [schnell]) | no disponible (referencia: ~12 000 M) | no disponible (referencia: hasta 512 tokens) | Apache 2.0 | Hugging Face (repo de terceros) |
+| FLUX.1 [dev] (Black Forest Labs) | ~12 000 M | hasta 512 tokens | no comercial | Hugging Face oficial |
+| Stable Diffusion 3.5 Large (Stability AI) | ~8 000 M | hasta 77-512 tokens segun variante | Stability AI Community License | Hugging Face oficial |
+| SDXL (Stability AI) | ~3 500 M | 77 tokens | CreativeML Open RAIL++-M | Hugging Face oficial |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada; la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Majoe211/blackforestlabsFLUX1schnell
+- Repositorio en Hugging Face: https://huggingface.co/Majoe211/blackforestlabsFLUX1schnell
 - Repositorio oficial de FLUX.1 [schnell] (Black Forest Labs): https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - Blog oficial de Black Forest Labs sobre FLUX.1: https://blackforestlabs.ai/announcing-black-forest-labs/
 - Paper de FLUX.1 (referencia tecnica): https://arxiv.org/abs/2408.12345 (no confirmado en la informacion proporcionada)

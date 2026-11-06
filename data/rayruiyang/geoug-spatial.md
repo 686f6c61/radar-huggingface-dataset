@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de datos de parametros, contexto, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rayruiyang/GeoUG-Spatial
+- Modelo en Hugging Face: https://huggingface.co/rayruiyang/GeoUG-Spatial
 - Pagina del proyecto: https://yangr116.github.io/geoug-project-page/
 - Articulo (PDF): https://yangr116.github.io/geoug-project-page/assets/geoug-paper.pdf
 - Dataset de entrenamiento GeoUG: https://huggingface.co/datasets/rayruiyang/GeoUG_data

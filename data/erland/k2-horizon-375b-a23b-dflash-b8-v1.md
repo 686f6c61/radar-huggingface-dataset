@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 
 | Alternativa | Parámetros | Contexto | Aceleración reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este borrador (DFlash b8, 3 guesses) | 2,14 B | No disponible | 1,44x–1,68x (1–16 peticiones); 1,93x en single-stream | Apache-2.0 | HuggingFace, requiere vLLM con método dflash |
-| K2-Horizon-375B-A23B FP8 sin borrador | 375 B totales / 23 B activos | No disponible | 1,00x (referencia) | Apache-2.0 | HuggingFace |
+| Este borrador (DFlash b8, 3 guesses) | 2,14 B | No disponible | 1,44x–1,68x (1–16 peticiones); 1,93x en single-stream | Apache-2.0 | Hugging Face, requiere vLLM con método dflash |
+| K2-Horizon-375B-A23B FP8 sin borrador | 375 B totales / 23 B activos | No disponible | 1,00x (referencia) | Apache-2.0 | Hugging Face |
 | Borradores tipo EAGLE-3 | No disponible | No disponible | No disponible en esta información | No disponible | No disponible |
 | Cabezas Medusa | No disponible | No disponible | No disponible en esta información | No disponible | No disponible |
 
@@ -109,7 +109,7 @@ No se dispone de datos publicados que comparen este borrador con EAGLE-3, Medusa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Erland/K2-Horizon-375B-A23B-DFlash-b8-v1
+- Modelo en Hugging Face: https://huggingface.co/Erland/K2-Horizon-375B-A23B-DFlash-b8-v1
 - Modelo objetivo IFM/K2-Horizon-375B-A23B: https://huggingface.co/IFM/K2-Horizon-375B-A23B
 - Paper DFlash (arXiv:2602.06036): https://arxiv.org/abs/2602.06036
 - Código de referencia DFlash (MIT): https://github.com/z-lab/dflash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tim-klein/ml-retrieval90` es un prototipo de investigación de tipo Flamingo orientado a tareas de *retrieval* (recuperación multimodal), publicado por el usuario tim-klein en HuggingFace. No es un modelo entrenado ni un checkpoint evaluado: la propia model card lo describe como un punto de partida experimental cuyo `model.safetensors` es una inicialización válida para *smoke tests*, no un modelo con rendimiento demostrado. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+`tim-klein/ml-retrieval90` es un prototipo de investigación de tipo Flamingo orientado a tareas de *retrieval* (recuperación multimodal), publicado por el usuario tim-klein en Hugging Face. No es un modelo entrenado ni un checkpoint evaluado: la propia model card lo describe como un punto de partida experimental cuyo `model.safetensors` es una inicialización válida para *smoke tests*, no un modelo con rendimiento demostrado. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 El tamaño real declarado en los metadatos de safetensors es de 33.088 parámetros, es decir, un modelo de escala ínfima (configuración etiquetada como "small") que cabe en cualquier CPU. La arquitectura combina atención de ventana deslizante (*sliding window*), fusión mediante *co-attention*, activación GELU y normalización ScaleNorm, siguiendo el esquema de los modelos Flamingo para combinar un codificador visual con un decodificador de texto.
 
@@ -24,7 +24,7 @@ Su relevancia es puramente metodológica: sirve como plantilla reproducible para
 | Estado del checkpoint | Inicialización sin entrenar, destinada a *smoke tests* |
 | Optimizador por defecto | Lion, con schedule de warmup constante |
 | Tamaño del repositorio | 0.0 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de modelos compar
 
 | Modelo | Categoría | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `tim-klein/ml-retrieval90` | Flamingo para *retrieval*, prototipo sin entrenar | 33.088 | No disponible | Sin benchmarks declarados | BSD-3-Clause | HuggingFace, 0 descargas |
+| `tim-klein/ml-retrieval90` | Flamingo para *retrieval*, prototipo sin entrenar | 33.088 | No disponible | Sin benchmarks declarados | BSD-3-Clause | Hugging Face, 0 descargas |
 | OpenFlamingo | Flamingo de código abierto para visión-lenguaje | No disponible en la información | No disponible | No disponible en la información | No disponible en la información | No verificado en esta búsqueda |
 | CLIP | Recuperación imagen-texto mediante contraste | No disponible en la información | No disponible | No disponible en la información | No disponible en la información | No verificado en esta búsqueda |
 | BLIP-2 | Visión-lenguaje con *querying transformer* | No disponible en la información | No disponible | No disponible en la información | No disponible en la información | No verificado en esta búsqueda |
@@ -87,12 +87,12 @@ Los tres alternativos se citan solo como categorías de referencia conocidas del
 - No se declara ningún benchmark, ni métrica, ni resultado reproducible; no debe citarse como evidencia de rendimiento.
 - No se documentan idiomas soportados, longitud de contexto, tamaño del codificador visual ni número de capas, lo que impide estimar su comportamiento esperado.
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar, pero cualquier uso generativo con estos pesos produciría salidas sin fundamento.
-- Implementación personalizada: las APIs automáticas de HuggingFace no cargan el modelo sin un adaptador explícito, lo que aumenta el coste de integración.
+- Implementación personalizada: las APIs automáticas de Hugging Face no cargan el modelo sin un adaptador explícito, lo que aumenta el coste de integración.
 - Licencia BSD-3-Clause: permite uso comercial, modificación y redistribución siempre que se conserve el aviso de copyright y la cláusula de exención de responsabilidad, y que no se use el nombre de los titulares para promocionar derivados sin permiso. Los términos de los datos externos (por ejemplo, Flickr30k) deben revisarse por separado.
 - Metadatos llamativos: el repositorio figura creado y actualizado en 2026-10-18, con 0 descargas y 0 *likes*, y un tamaño declarado de 0.0 GB; conviene verificar la integridad de los ficheros antes de usarlo.
 - Los resultados de búsqueda web disponibles no contienen información sobre este modelo: todas las entradas encontradas corresponden al operador de telecomunicaciones TIM y son irrelevantes.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: tim-klein/ml-retrieval90](https://huggingface.co/tim-klein/ml-retrieval90)
+- [Modelo en Hugging Face: tim-klein/ml-retrieval90](https://huggingface.co/tim-klein/ml-retrieval90)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada; los resultados obtenidos (tim.it, gruppotim.it y sus áreas de cliente) no guardan relación con el modelo.

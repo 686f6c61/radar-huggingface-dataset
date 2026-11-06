@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_4 es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct, realizado por el usuario Elio2151 y publicado en HuggingFace. El punto de partida declarado es `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, es decir, la version de 8B de Llama 3.1 Instruct cuantizada a 4 bits por Unsloth, sobre la que se aplico un entrenamiento adicional orientado a tareas de agente tecnico (soporte, diagnostico o asistencia tecnica, segun sugiere el nombre). El resultado se ha fusionado en un checkpoint unico ("Merged") y se distribuye en precision de 16 bits, con 8.030.261.248 parametros y un repositorio de 16,1 GB.
+Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_4 es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct, realizado por el usuario Elio2151 y publicado en Hugging Face. El punto de partida declarado es `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, es decir, la version de 8B de Llama 3.1 Instruct cuantizada a 4 bits por Unsloth, sobre la que se aplico un entrenamiento adicional orientado a tareas de agente tecnico (soporte, diagnostico o asistencia tecnica, segun sugiere el nombre). El resultado se ha fusionado en un checkpoint unico ("Merged") y se distribuye en precision de 16 bits, con 8.030.261.248 parametros y un repositorio de 16,1 GB.
 
-El modelo resuelve el caso de uso de asistentes conversacionales especializados en dominio tecnico: hereda de Llama 3.1 Instruct la capacidad de seguir instrucciones, mantener conversaciones multi-turno y generar codigo, y anade un ajuste adicional sobre ese comportamiento. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, una combinacion habitual para fine-tuning eficiente en memoria con LoRA/QLoRA sobre GPUs de gama consumer o de un solo nodo. Se publica bajo licencia declarada apache-2.0, aunque al derivar de Llama 3.1 las condiciones reales de uso quedan sujetas tambien a la licencia de comunidad de Meta.
+El modelo resuelve el caso de uso de asistentes conversacionales especializados en dominio tecnico: hereda de Llama 3.1 Instruct la capacidad de seguir instrucciones, mantener conversaciones multi-turno y generar codigo, y anade un ajuste adicional sobre ese comportamiento. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, una combinacion habitual para fine-tuning eficiente en memoria con LoRA/QLoRA sobre GPUs de gama consumer o de un solo nodo. Se publica bajo licencia declarada apache-2.0, aunque al derivar de Llama 3.1 las condiciones reales de uso quedan sujetas tambien a la licencia de comunidad de Meta.
 
 La relevancia de esta ficha es acotada: se trata de un modelo de nicho con 51 descargas y 0 likes en el momento de la consulta, sin model card detallada (el README se limita a indicar autor, licencia y modelo base) y sin resultados de benchmarks publicados. Es util, por tanto, como referencia de un flujo de trabajo reproducible (Unsloth + TRL + merge) mas que como modelo de produccion con garantias documentadas.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es acotada: se trata de un modelo de nicho con 51 de
 | Pipeline | text-generation |
 | Tamano del repositorio | 16,1 GB |
 | Modelo base | unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit |
-| Fecha de creacion / actualizacion | 2026-09-10 (ambas, segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-10 (ambas, segun metadatos de Hugging Face) |
 | Descargas / likes | 51 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_4 | 8,03B | no documentado (base: 128k) | apache-2.0 declarada (+ Llama 3.1 Community License) | HuggingFace, 51 descargas, safetensors | no disponible |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | metricas publicadas por Meta (no incluidas aqui) |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido | metricas publicadas por Mistral (no incluidas aqui) |
-| Qwen/Qwen2.5-7B-Instruct | 7,62B | 131.072 tokens | Apache 2.0 (salvo excepciones por tamano) | HuggingFace, muy extendido | metricas publicadas por Qwen (no incluidas aqui) |
+| Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_4 | 8,03B | no documentado (base: 128k) | apache-2.0 declarada (+ Llama 3.1 Community License) | Hugging Face, 51 descargas, safetensors | no disponible |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | metricas publicadas por Meta (no incluidas aqui) |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido | metricas publicadas por Mistral (no incluidas aqui) |
+| Qwen/Qwen2.5-7B-Instruct | 7,62B | 131.072 tokens | Apache 2.0 (salvo excepciones por tamano) | Hugging Face, muy extendido | metricas publicadas por Qwen (no incluidas aqui) |
 
 La comparacion solo puede hacerse sobre parametros, contexto y licencia. No hay datos de benchmarks de este fine-tune, por lo que no es posible determinar si supera, iguala o empeora al Llama 3.1 8B Instruct original en tareas tecnicas.
 
@@ -95,9 +95,9 @@ La comparacion solo puede hacerse sobre parametros, contexto y licencia. No hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_4
+- Modelo en Hugging Face: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_4
 - Modelo base declarado: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (mencionada en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (mencionada en la model card): https://github.com/huggingface/trl
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Nota sobre la busqueda web: los resultados recuperados durante la busqueda no guardan ninguna relacion con este modelo (contenido medico en frances sobre citologias vaginales) y se han descartado por no ser fuentes relevantes. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

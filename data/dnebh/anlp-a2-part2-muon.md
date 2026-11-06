@@ -18,7 +18,7 @@ Es relevante ahora unicamente como artefacto de investigacion reproducible sobre
 | Longitud de contexto | 256 tokens (seq_len de entrenamiento; no se documenta extension posterior) |
 | Tipos de cuantizacion | no disponible en la model card; el repositorio solo contiene pesos en safetensors |
 | Idiomas soportados | no disponible (el corpus `browndw/human-ai-parallel-corpus` se usa para pares persona-IA; no se documenta la composicion linguistica) |
-| Licencia | no disponible (no declarada en HuggingFace ni en la model card) |
+| Licencia | no disponible (no declarada en Hugging Face ni en la model card) |
 | Formato de pesos | safetensors (tag del repositorio); tamano del repo 0,1 GB |
 | Optimizador | Muon desde cero, lr 0,04, momentum 0,95, Nesterov, ns_steps 5, weight_decay 0,1, adamw_lr_ratio 0,2, betas [0,9, 0,95], eps 1e-08 |
 | Tokens de entrenamiento | 48.496.640 |
@@ -78,7 +78,7 @@ Notas sobre la medicion: la perplejidad de validacion se calcula sobre 2.697.984
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 34 MB; en 4 bits, aproximadamente 17 MB. Estas cifras son estimaciones por tamano de parametros, no valores medidos por el autor.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU o en GPUs integradas para inferencia de una sola secuencia.
 - GPUs de centro de datos (A100, H100) no son necesarias; se usarian solo para replicar barridos de hiperparametros en paralelo.
-- Opciones de despliegue: no hay pipeline declarado en HuggingFace y la carga oficial es mediante `src.part1.hub.load_exported_model(<folder>)`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI; al no existir pesos GGUF publicados, llama.cpp y Ollama requeririan conversion previa.
+- Opciones de despliegue: no hay pipeline declarado en Hugging Face y la carga oficial es mediante `src.part1.hub.load_exported_model(<folder>)`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI; al no existir pesos GGUF publicados, llama.cpp y Ollama requeririan conversion previa.
 - Latencia y throughput: no disponibles. El unico dato temporal es el entrenamiento completo (1.184 s) y la evaluacion de validacion (unos 32 s por punto sobre 2,7 M tokens).
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dnebh/anlp-a2-part2-muon
+- Modelo en Hugging Face: https://huggingface.co/dnebh/anlp-a2-part2-muon
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/dnebhrajani-v/anlp-a2-part2/runs/c902tabf
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Repositorio de codigo de la practica (`src.part1.hub.load_exported_model`): no disponible (no enlazado en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-TQ es un modelo publicado en HuggingFace por el usuario DisOOM bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una variante o derivado de la familia Qwen3.5, con aproximadamente 9 mil millones de parametros, y el sufijo "TQ" sugiere algun tipo de cuantizacion o transformacion aplicada sobre los pesos originales, aunque el autor no documenta en la model card que significa exactamente ni que tecnica se ha empleado.
+Qwen3.5-9B-TQ es un modelo publicado en Hugging Face por el usuario DisOOM bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una variante o derivado de la familia Qwen3.5, con aproximadamente 9 mil millones de parametros, y el sufijo "TQ" sugiere algun tipo de cuantizacion o transformacion aplicada sobre los pesos originales, aunque el autor no documenta en la model card que significa exactamente ni que tecnica se ha empleado.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion del modelo, sin especificaciones tecnicas, sin datos de entrenamiento ni resultados de evaluacion. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se han publicado idiomas soportados, pipeline de uso ni informacion sobre el proceso de creacion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DisOOM/Qwen3.5-9B-TQ | ~9B (inferido) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Model card vacia; transformacion "TQ" sin documentar |
+| DisOOM/Qwen3.5-9B-TQ | ~9B (inferido) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Model card vacia; transformacion "TQ" sin documentar |
 | Qwen3.5-9B (modelo base) | ~9B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Referencia de la que deriva el modelo; requiere consultar la documentacion oficial de Qwen |
 | Alternativas de ~9B open source | variable | variable | variable | variable | No se dispone de datos verificados en la informacion proporcionada para establecer una comparativa concreta |
 
@@ -83,6 +83,6 @@ No es posible ofrecer una comparativa cuantitativa fiable porque la model card n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DisOOM/Qwen3.5-9B-TQ
+- Repositorio en Hugging Face: https://huggingface.co/DisOOM/Qwen3.5-9B-TQ
 - Documentacion de la familia Qwen3.5: no disponible en la informacion proporcionada
 - Paper, blog o repositorio del autor: no disponible en la informacion proporcionada

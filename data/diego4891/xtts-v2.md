@@ -91,7 +91,7 @@ La unica comparacion sustentada por la informacion proporcionada es la de XTTS-v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Diego4891/XTTS-v2
+- Repositorio en Hugging Face: https://huggingface.co/Diego4891/XTTS-v2
 - Codebase de Coqui TTS en GitHub: https://github.com/coqui-ai/TTS
 - Documentacion de Coqui TTS: https://tts.readthedocs.io/en/latest/
 - Documentacion de entrenamiento de XTTS: https://tts.readthedocs.io/en/latest/models/xtts.html#training

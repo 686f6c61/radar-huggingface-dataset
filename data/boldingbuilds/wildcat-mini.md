@@ -106,7 +106,7 @@ La comparación se limita a los modelos medidos por el autor en la misma muestra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoldingBuilds/Wildcat-Mini
+- Modelo en Hugging Face: https://huggingface.co/BoldingBuilds/Wildcat-Mini
 - Licencia Fastino Community License: https://huggingface.co/BoldingBuilds/Wildcat-Mini/blob/main/LICENSES/FASTINO-LICENSE.txt
 - Modelo base Ternary Bonsai 2 27B: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - d3 (cabeza de lectura y runtime): https://huggingface.co/vllm-sr/d3

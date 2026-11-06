@@ -6,7 +6,7 @@ Moonshine Base Welsh es un modelo de reconocimiento automático del habla (ASR) 
 
 El modelo hereda la arquitectura y el tokenizador de Moonshine Base y se distribuye en formato safetensors compatible con la librería `transformers`. Acepta audio mono a 16 kHz de enunciados cortos y produce texto con mayúsculas y puntuación. Está pensado para integrarse en pipelines de transcripción de bajo coste, especialmente en entornos con recursos de cómputo restringidos o despliegues en el borde.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace y en la model card del autor. Los resultados de benchmarks proceden del `model-index` declarado por el autor y no han sido verificados de forma independiente.
+La ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card del autor. Los resultados de benchmarks proceden del `model-index` declarado por el autor y no han sido verificados de forma independiente.
 
 ## Especificaciones técnicas
 
@@ -74,9 +74,9 @@ La media sobre Common Voice, FLEURS Welsh, Arfor y Siarad es 43,5. El autor indi
 
 | Modelo | Parámetros | Contexto | WER galés (referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moonshine-base-welsh | 61,5 M | no disponible | 26,1 en Common Voice 27.0; 38,2 en FLEURS Welsh | MIT | HuggingFace (`rebreda/moonshine-base-welsh`) |
+| moonshine-base-welsh | 61,5 M | no disponible | 26,1 en Common Voice 27.0; 38,2 en FLEURS Welsh | MIT | Hugging Face (`rebreda/moonshine-base-welsh`) |
 | Whisper de Bangor University para galés | no disponible (el autor indica que es ~25 veces mayor) | no disponible | no disponible en la información | no disponible | no disponible |
-| moonshine-ai/moonshine-base | 61,5 M | no disponible | no disponible | MIT (heredada) | HuggingFace (`moonshine-ai/moonshine-base`) |
+| moonshine-ai/moonshine-base | 61,5 M | no disponible | no disponible | MIT (heredada) | Hugging Face (`moonshine-ai/moonshine-base`) |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación de rendimiento se limita a los resultados del modelo descrito.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rebreda/moonshine-base-welsh
+- Modelo en Hugging Face: https://huggingface.co/rebreda/moonshine-base-welsh
 - Modelo base: https://huggingface.co/moonshine-ai/moonshine-base
 - Página del proyecto y write-up: https://quickthoughts.ca/projects/welsh-asr/
 - Paper de Moonshine (arXiv:2410.15608): https://arxiv.org/abs/2410.15608

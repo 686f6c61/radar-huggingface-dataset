@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo-checkpoint es un prototipo de investigación publicado por el usuario gomezaaron1985 en HuggingFace bajo licencia Apache 2.0. Se presenta como una implementación de arquitectura Flamingo orientada a tareas contrastivas, con una configuración declarada de escala "huge", atención dispersa (sparse), fusión con gating y normalización batchnorm. El repositorio incluye el código de entrenamiento (`train.py`), ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de pesos en formato safetensors.
+Flamingo-checkpoint es un prototipo de investigación publicado por el usuario gomezaaron1985 en Hugging Face bajo licencia Apache 2.0. Se presenta como una implementación de arquitectura Flamingo orientada a tareas contrastivas, con una configuración declarada de escala "huge", atención dispersa (sparse), fusión con gating y normalización batchnorm. El repositorio incluye el código de entrenamiento (`train.py`), ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de pesos en formato safetensors.
 
 El dato más relevante para quien evalúe el modelo es que se trata de un checkpoint de inicialización, no de un modelo entrenado. El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos sirven únicamente para pruebas de humo (smoke tests). Los metadatos de safetensors registran 33.088 parámetros totales, una cifra que contrasta de forma notable con la escala "huge" declarada en la configuración, por lo que conviene tratar ambos datos con cautela.
 
@@ -71,7 +71,7 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flamingo-checkpoint | 33.088 (según safetensors) | no disponible | No (checkpoint de inicialización) | Apache 2.0 | HuggingFace, 0 descargas |
+| flamingo-checkpoint | 33.088 (según safetensors) | no disponible | No (checkpoint de inicialización) | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas tipo Flamingo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gomezaaron1985/flamingo-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/gomezaaron1985/flamingo-checkpoint
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes al modelo (corresponden a páginas de Facebook sin relación). No se dispone de paper, blog, repositorio adicional ni demo.

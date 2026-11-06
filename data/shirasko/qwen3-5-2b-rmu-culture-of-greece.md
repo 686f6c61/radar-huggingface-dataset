@@ -96,7 +96,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shirasko/qwen3.5-2b-rmu-culture-of-greece
+- Hugging Face: https://huggingface.co/shirasko/qwen3.5-2b-rmu-culture-of-greece
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repo oficial de Qwen: https://github.com/QwenLM/Qwen
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen

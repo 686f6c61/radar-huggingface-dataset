@@ -2,7 +2,7 @@
 
 ## Resumen
 
-igala-model-EtuhE es un modelo de traduccion automatica neuronal publicado por el usuario EtuhE en HuggingFace. Se trata de un fine-tune del modelo Helsinki-NLP/opus-mt-en-mul, que a su vez forma parte de la familia OPUS-MT desarrollada por el grupo Language Technology de la Universidad de Helsinki. El modelo tiene 77.026.926 parametros (unos 77 millones) y esta construido sobre la arquitectura MarianMT, un transformer encoder-decoder disenado especificamente para traduccion. Por el identificador del repositorio, el objetivo declarado parece ser la traduccion hacia el igala (lengua nigerocongolesa hablada principalmente en el estado de Kogi, Nigeria, con alrededor de un millon de hablantes), aunque la model card no confirma explicitamente el par de idiomas.
+igala-model-EtuhE es un modelo de traduccion automatica neuronal publicado por el usuario EtuhE en Hugging Face. Se trata de un fine-tune del modelo Helsinki-NLP/opus-mt-en-mul, que a su vez forma parte de la familia OPUS-MT desarrollada por el grupo Language Technology de la Universidad de Helsinki. El modelo tiene 77.026.926 parametros (unos 77 millones) y esta construido sobre la arquitectura MarianMT, un transformer encoder-decoder disenado especificamente para traduccion. Por el identificador del repositorio, el objetivo declarado parece ser la traduccion hacia el igala (lengua nigerocongolesa hablada principalmente en el estado de Kogi, Nigeria, con alrededor de un millon de hablantes), aunque la model card no confirma explicitamente el par de idiomas.
 
 El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con un tamano de repositorio de 0,3 GB. Es, por tanto, un modelo pequeno y facil de desplegar incluso en CPU, lo que lo hace interesante para escenarios de traduccion de bajo recursos o para integrarlo en pipelines de procesamiento por lotes sin requisitos de GPU. El repositorio no tiene descargas ni "likes" en el momento de la consulta, lo que indica que es un artefacto reciente y sin validacion por parte de la comunidad.
 
@@ -28,8 +28,8 @@ La relevancia de este modelo radica en su nicho: la mayoria de los modelos de tr
 | Descargas | 0 |
 | Likes | 0 |
 | Compatible con endpoints | Si (etiqueta endpoints_compatible) |
-| Fecha de creacion del repositorio | 16 de octubre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 16 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 16 de octubre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 16 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ Respecto al entrenamiento, la model card indica que el fine-tune se realizo sobr
 - Traduccion automatica de texto: la tarea declarada es text2text-generation, con el modelo base orientado a traducir desde el ingles hacia multiples idiomas. El fine-tune apunta, por el nombre del repositorio, al igala, aunque la direction exacta y los pares soportados no se confirman en la model card.
 - Generacion de texto condicionada: al ser un encoder-decoder, puede emplearse para tareas de reescritura o reformulacion supervisada, aunque no fue entrenado especificamente para ello.
 - Procesamiento por lotes: su tamano reducido permite traducir grandes volumenes de texto en lotes sin requerir GPU.
-- Integracion con la libreria transformers: se puede cargar con `AutoModelForSeq2SeqLM` y `AutoTokenizer` de HuggingFace, y es compatible con la infraestructura de inference endpoints.
+- Integracion con la libreria transformers: se puede cargar con `AutoModelForSeq2SeqLM` y `AutoTokenizer` de Hugging Face, y es compatible con la infraestructura de inference endpoints.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se detalla la lista de idiomas cubiertos por el fine-tune).
@@ -81,7 +81,7 @@ El bloque model-index del repositorio no contiene resultados adicionales (lista 
 - VRAM estimada para inferencia: menos de 1 GB en precision completa (float32), alrededor de 400-500 MB en float16 y por debajo de 200 MB en int8. Es un modelo que cabe holgadamente en cualquier GPU moderna.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas NVIDIA GTX 1050 Ti, RTX 3050, RTX 4060, RTX 4090, A100 o H100. En la practica, el modelo esta limitado por la CPU y la gestion de lotes antes que por la GPU.
 - Compatibilidad con GPU de consumo: si, en todas las GPU de consumo actuales e incluso en muchas integradas. La inferencia en CPU es perfectamente viable para uso interactivo con frases cortas.
-- Opciones de despliegue: transformers (PyTorch) de forma nativa, HuggingFace Inference Endpoints (el repositorio esta marcado como compatible), ONNX Runtime mediante exportacion, CTranslate2 para optimizar la inferencia en CPU, y servidores tipo FastAPI o Gradio por encima de la libreria. No hay versiones GGUF publicadas, por lo que llama.cpp y Ollama no son utilizables sin una conversion previa; vLLM tiene soporte limitado para arquitecturas encoder-decoder Marian.
+- Opciones de despliegue: transformers (PyTorch) de forma nativa, Hugging Face Inference Endpoints (el repositorio esta marcado como compatible), ONNX Runtime mediante exportacion, CTranslate2 para optimizar la inferencia en CPU, y servidores tipo FastAPI o Gradio por encima de la libreria. No hay versiones GGUF publicadas, por lo que llama.cpp y Ollama no son utilizables sin una conversion previa; vLLM tiene soporte limitado para arquitecturas encoder-decoder Marian.
 - Latencia y throughput estimados: no hay mediciones publicadas. Como referencia orientativa basada unicamente en el tamano del modelo, un Marian de 77 millones de parametros suele procesar del orden de decenas a cientos de frases por segundo en una GPU moderna con lotes grandes, y del orden de unidades a decenas de frases por segundo en CPU. Estas cifras son estimaciones genericas y no estan verificadas para este fine-tune concreto.
 
 ## Comparativa con modelos similares
@@ -113,7 +113,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EtuhE/igala-model-EtuhE
+- Modelo en Hugging Face: https://huggingface.co/EtuhE/igala-model-EtuhE
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-mul
 - Organizacion OPUS-MT de Helsinki-NLP: https://huggingface.co/Helsinki-NLP
 - Repositorio del proyecto OPUS-MT: https://github.com/Helsinki-NLP/OPUS-MT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chwalker89/clip-classification-small es un repositorio experimental publicado en HuggingFace por el usuario Chwalker89 que contiene un esqueleto de código para una arquitectura CLIP orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card indica que `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio incluye el artefacto principal `model.py`, junto con `config.json` y `training_args.json` que registran la configuración de arquitectura y la receta de entrenamiento por defecto.
+Chwalker89/clip-classification-small es un repositorio experimental publicado en Hugging Face por el usuario Chwalker89 que contiene un esqueleto de código para una arquitectura CLIP orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card indica que `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio incluye el artefacto principal `model.py`, junto con `config.json` y `training_args.json` que registran la configuración de arquitectura y la receta de entrenamiento por defecto.
 
 La relevancia del repositorio es, por tanto, de tipo metodológico y de ingeniería: sirve como base reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y como fixture ligero en pipelines de integración continua. El peso real declarado en safetensors es de 16.576 parámetros, un valor muy reducido que contrasta con la escala "large" indicada en la tabla de arquitectura de la model card y con el sufijo "small" del identificador; esta discrepancia debe tenerse en cuenta antes de cualquier uso.
 
@@ -69,7 +69,7 @@ Las cifras de parámetros de las alternativas son orientativas y provienen de co
 
 | Modelo | Parámetros (aprox.) | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chwalker89/clip-classification-small | 16.576 (safetensors) | no disponible | No (checkpoint de inicialización) | MIT | Repositorio en HuggingFace, sin descargas |
+| Chwalker89/clip-classification-small | 16.576 (safetensors) | no disponible | No (checkpoint de inicialización) | MIT | Repositorio en Hugging Face, sin descargas |
 | openai/clip-vit-base-patch32 | ~151 M | N/A (imagen-texto) | Sí | MIT | Ampliamente usado como referencia |
 | openai/clip-vit-large-patch14 | ~428 M | N/A (imagen-texto) | Sí | MIT | Referencia estándar en tareas zero-shot |
 | google/siglip-base-patch16-224 | ~203 M | N/A (imagen-texto) | Sí | Apache-2.0 | Alternativa habitual a CLIP en clasificación y recuperación |
@@ -89,5 +89,5 @@ La diferencia fundamental no está en la arquitectura declarada, sino en que las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chwalker89/clip-classification-small
+- Modelo en Hugging Face: https://huggingface.co/Chwalker89/clip-classification-small
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados en la información disponible.

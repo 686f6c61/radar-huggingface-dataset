@@ -87,8 +87,8 @@ La única métrica cuantitativa documentada es la del propio entrenamiento:
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haiku-base (kerzgrr) | 655,3M desplegables (655,8M en safetensors) | 2.048 entrenados; 32.768 posiciones máximas | Híbrida KDA + gated MLA, 36 capas, vocab 65.536 | Apache 2.0 | HuggingFace, con `tiny_gdn` e `inference.py` |
-| Tercet-base (kerzgrr) | ~502M | no disponible | no disponible (predecesor del que Haiku escala) | no disponible | HuggingFace |
+| Haiku-base (kerzgrr) | 655,3M desplegables (655,8M en safetensors) | 2.048 entrenados; 32.768 posiciones máximas | Híbrida KDA + gated MLA, 36 capas, vocab 65.536 | Apache 2.0 | Hugging Face, con `tiny_gdn` e `inference.py` |
+| Tercet-base (kerzgrr) | ~502M | no disponible | no disponible (predecesor del que Haiku escala) | no disponible | Hugging Face |
 | Otras alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos comparativos de rendimiento ni especificaciones de otros modelos de la misma categoría, por lo que no es posible establecer una comparación cuantitativa más allá del salto de parámetros y de vocabulario respecto a Tercet-base.
@@ -109,7 +109,7 @@ La información proporcionada no incluye datos comparativos de rendimiento ni es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerzgrr/Haiku-base
+- Modelo en Hugging Face: https://huggingface.co/kerzgrr/Haiku-base
 - Demo (Space): https://huggingface.co/spaces/kerzgrr/haiku-demo
 - Script de inferencia: https://huggingface.co/kerzgrr/Haiku-base/resolve/main/inference.py
 - Modelo predecesor Tercet-base: https://huggingface.co/kerzgrr/Tercet-base

@@ -72,7 +72,7 @@ Todas las cuantizaciones quedan a menos de 0,4 puntos porcentuales del modelo fu
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-openjev-GGUF | 1,54 B | no disponible | Decision tipada de una etiqueta | Apache 2.0 | GGUF en HuggingFace |
+| Qwen2.5-1.5B-openjev-GGUF | 1,54 B | no disponible | Decision tipada de una etiqueta | Apache 2.0 | GGUF en Hugging Face |
 | Qwen2.5-1.5B (base) | 1,54 B | no disponible | Generacion de texto general | Apache 2.0 | Safetensors y GGUF |
 | Qwen2.5-1.5B-openjev (fusionado) | 1,54 B | no disponible | Decision tipada de una etiqueta | Apache 2.0 | Safetensors BF16 |
 

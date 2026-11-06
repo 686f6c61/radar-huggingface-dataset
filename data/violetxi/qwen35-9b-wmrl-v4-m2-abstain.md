@@ -79,9 +79,9 @@ La comparativa se limita a los modelos de la misma línea de investigación y al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m2-abstain
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m2-abstain
 - Modelo hermano (condición lrsmoke-5e6): https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-lrsmoke-5e6
-- Colección Qwen3.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen35
+- Colección Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Repositorio de setup local para Qwen3.5-9B: https://github.com/maxrenke/qwen35-local-setup
 - Página de Qwen3.5-9B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-9b
 - Organización Qwen en GitHub: https://github.com/QwenLM

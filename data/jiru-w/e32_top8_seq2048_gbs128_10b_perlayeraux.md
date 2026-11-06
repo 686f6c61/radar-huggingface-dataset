@@ -2,7 +2,7 @@
 
 ## Resumen
 
-e32_top8_seq2048_gbs128_10b_perlayeraux es un modelo de lenguaje Mixture-of-Experts (MoE) entrenado desde cero por el usuario de HuggingFace JIRU-W. Con 3.696.887.808 parámetros totales (3,7B), se trata de un modelo de investigación experimental cuyo objetivo es estudiar el efecto de una variante de la función de pérdida de balanceo de carga (load-balancing) calculada por capa en lugar de la forma estándar de OLMoE/Mixtral que agrupa las estadísticas del router de todas las capas por índice de experto.
+e32_top8_seq2048_gbs128_10b_perlayeraux es un modelo de lenguaje Mixture-of-Experts (MoE) entrenado desde cero por el usuario de Hugging Face JIRU-W. Con 3.696.887.808 parámetros totales (3,7B), se trata de un modelo de investigación experimental cuyo objetivo es estudiar el efecto de una variante de la función de pérdida de balanceo de carga (load-balancing) calculada por capa en lugar de la forma estándar de OLMoE/Mixtral que agrupa las estadísticas del router de todas las capas por índice de experto.
 
 El modelo es idéntico en código, pesos iniciales, datos, orden de datos, semilla e hiperparámetros al modelo gemelo JIRU-W/e32_top8_seq2048_gbs128_10b (la pérdida del paso 1 coincide con una tolerancia de 1e-9), salvo por el interruptor `router_aux_loss_per_layer=True`. Esto lo convierte en un experimento controlado tipo A/B para investigación en preentrenamiento de MoE.
 

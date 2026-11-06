@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-Instruct es un modelo de lenguaje causal, ajustado mediante instrucciones, desarrollado por Alibaba Cloud como parte de la serie Qwen2.5. Esta variante concreta, publicada por el usuario Davedav en HuggingFace, es un fine-tune del modelo original de Qwen y mantiene la misma arquitectura y capacidades. Con 1.543 millones de parámetros, es una opción ligera pensada para despliegue en entornos con recursos limitados, como dispositivos locales o infraestructuras de auto-hosting.
+Qwen2.5-1.5B-Instruct es un modelo de lenguaje causal, ajustado mediante instrucciones, desarrollado por Alibaba Cloud como parte de la serie Qwen2.5. Esta variante concreta, publicada por el usuario Davedav en Hugging Face, es un fine-tune del modelo original de Qwen y mantiene la misma arquitectura y capacidades. Con 1.543 millones de parámetros, es una opción ligera pensada para despliegue en entornos con recursos limitados, como dispositivos locales o infraestructuras de auto-hosting.
 
 El modelo destaca por su soporte de contexto largo de hasta 32.768 tokens, generación de hasta 8.192 tokens y mejoras significativas en codificación, matemáticas, seguimiento de instrucciones y generación de JSON estructurado. Su licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo convierte en una alternativa atractiva para desarrolladores que buscan un modelo pequeño pero capaz para tareas conversacionales y de generación de texto.
 
@@ -36,7 +36,7 @@ La variante publicada por Davedav es un fine-tune del modelo base Qwen2.5-1.5B-I
 - Comprensión de datos estructurados (tablas).
 - Seguimiento de instrucciones y generación de texto largo (hasta 8.192 tokens).
 - Soporte multilingüe en el modelo base (más de 21 idiomas), aunque este fine-tune declara solo inglés en sus tags.
-- Compatible con el pipeline text-generation de HuggingFace Transformers y con text-generation-inference.
+- Compatible con el pipeline text-generation de Hugging Face Transformers y con text-generation-inference.
 
 ## Casos de uso
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks para este fine-tune específico en 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct (este fine-tune) | 1.54B | 32K | Apache-2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct (oficial) | 1.54B | 32K | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1.23B | 128K | Llama 3.2 Community | HuggingFace |
-| Gemma-2-2B-it | 2.6B | 8K | Gemma Terms | HuggingFace |
+| Qwen2.5-1.5B-Instruct (este fine-tune) | 1.54B | 32K | Apache-2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct (oficial) | 1.54B | 32K | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1.23B | 128K | Llama 3.2 Community | Hugging Face |
+| Gemma-2-2B-it | 2.6B | 8K | Gemma Terms | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este fine-tune, por lo que no se puede establecer una comparación cuantitativa. La comparativa se limita a características técnicas.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo para este fine-tune, por lo qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Davedav/Qwen2.5-1.5B-Instruct
+- Hugging Face: https://huggingface.co/Davedav/Qwen2.5-1.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Modelo oficial instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

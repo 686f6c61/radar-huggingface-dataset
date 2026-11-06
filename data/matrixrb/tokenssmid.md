@@ -2,7 +2,7 @@
 
 ## Resumen
 
-matrixrb/tokenssmid es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario matrixrb bajo el identificador matrixrb/tokenssmid. El repositorio se distribuye con la libreria diffusers y esta etiquetado como `diffusers:StableDiffusionPipeline`, lo que indica que se trata de un pipeline de difusion latente compatible con la API de Stable Diffusion. El peso total de los parametros del archivo safetensors es de 859.520.964 parametros y el repositorio ocupa 2,1 GB, lo que sugiere pesos almacenados en precision de 16 bits.
+matrixrb/tokenssmid es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario matrixrb bajo el identificador matrixrb/tokenssmid. El repositorio se distribuye con la libreria diffusers y esta etiquetado como `diffusers:StableDiffusionPipeline`, lo que indica que se trata de un pipeline de difusion latente compatible con la API de Stable Diffusion. El peso total de los parametros del archivo safetensors es de 859.520.964 parametros y el repositorio ocupa 2,1 GB, lo que sugiere pesos almacenados en precision de 16 bits.
 
 El modelo no cuenta con descargas ni likes en el momento de la consulta, la licencia no esta declarada en la ficha del repositorio y no se especifican idiomas soportados. El pipeline declarado es text-to-image y la unica funcionalidad documentada por los metadatos es la generacion de imagenes condicionada por una descripcion textual. No hay informacion publicada sobre el conjunto de datos de entrenamiento, el proceso de ajuste ni resultados de evaluacion.
 
@@ -34,7 +34,7 @@ No se ha publicado informacion sobre el numero de tokens o pasos de entrenamient
 
 - Generacion de imagenes a partir de descripciones textuales (text-to-image), segun el pipeline declarado.
 - Compatibilidad con la libreria diffusers y con el formato de pesos safetensors.
-- Etiquetado como `endpoints_compatible`, lo que sugiere compatibilidad con despliegues de tipo HuggingFace Inference Endpoints.
+- Etiquetado como `endpoints_compatible`, lo que sugiere compatibilidad con despliegues de tipo Hugging Face Inference Endpoints.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible, no se declaran idiomas.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con pesos en fp16 (aproximadamente 1,7 GB de pesos), la inferencia del pipeline completo suele requerir entre 3 y 5 GB de VRAM para resoluciones de 512x512; en fp32 el requisito subiria a unos 4-6 GB o mas.
 - GPU recomendadas: tarjetas de gama media y alta como NVIDIA RTX 3060 (12 GB), RTX 4060, RTX 4090, A100 o H100. Estas ultimas aportan margen de sobra y mayor throughput, pero no son necesarias por capacidad.
 - Compatibilidad con GPU de consumo: si, es probable que quepa en GPUs de consumo con 6 GB o mas de VRAM (por ejemplo, RTX 3060, RTX 2060 6 GB, RTX 4060), aunque estos valores deben verificarse experimentalmente porque no hay documentacion oficial.
-- Opciones de despliegue: libreria diffusers, HuggingFace Inference Endpoints (por la etiqueta `endpoints_compatible`), herramientas graficas compatibles con checkpoints de difusion (por ejemplo ComfyUI o interfaces similares). No se confirma soporte de vLLM, porque no es un modelo de lenguaje.
+- Opciones de despliegue: libreria diffusers, Hugging Face Inference Endpoints (por la etiqueta `endpoints_compatible`), herramientas graficas compatibles con checkpoints de difusion (por ejemplo ComfyUI o interfaces similares). No se confirma soporte de vLLM, porque no es un modelo de lenguaje.
 - Latencia y throughput estimados: no disponible. No hay datos publicados sobre tiempos de inferencia, pasos de muestreo necesarios ni rendimiento por segundo.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de datos verificados de otros modelos en la informacion proporcion
 
 | Modelo | Parametros | Contexto/tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matrixrb/tokenssmid | 859.520.964 | text-to-image | no disponible | no disponible | HuggingFace (0 descargas) |
+| matrixrb/tokenssmid | 859.520.964 | text-to-image | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas de difusion de tamano similar (familia Stable Diffusion 1.x/2.x) | orden de 860 M en U-Net | text-to-image | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 
 No se pueden establecer comparaciones cuantitativas fiables con la informacion disponible.
@@ -87,6 +87,6 @@ No se pueden establecer comparaciones cuantitativas fiables con la informacion d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matrixrb/tokenssmid
+- Hugging Face: https://huggingface.co/matrixrb/tokenssmid
 
 Nota: la busqueda web realizada no devolvio enlaces relacionados con el modelo (los resultados correspondian a contenidos no relacionados), por lo que no hay papers, blogs, repositorios ni demos adicionales que enlazar.

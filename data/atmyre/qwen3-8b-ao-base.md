@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros adaptadores de *activation oracle* comparables en el momento de redactar esta ficha. La colección *AO Anti-Reading* del mismo autor incluye otros adaptadores específicos, pero no se han proporcionado datos para comparar. Se recomienda consultar la colección en HuggingFace para más contexto.
+No se dispone de información sobre otros adaptadores de *activation oracle* comparables en el momento de redactar esta ficha. La colección *AO Anti-Reading* del mismo autor incluye otros adaptadores específicos, pero no se han proporcionado datos para comparar. Se recomienda consultar la colección en Hugging Face para más contexto.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de información sobre otros adaptadores de *activation oracle* com
 
 ## Enlaces
 
-- [HuggingFace: Atmyre/qwen3-8b-ao-base](https://huggingface.co/Atmyre/qwen3-8b-ao-base)
+- [Hugging Face: Atmyre/qwen3-8b-ao-base](https://huggingface.co/Atmyre/qwen3-8b-ao-base)
 - [Paper: Activation Oracles (arXiv:2512.15674)](https://arxiv.org/abs/2512.15674)
 - [Paper del estudio asociado (arXiv:2607.23379)](https://arxiv.org/abs/2607.23379)
 - [Colección AO Anti-Reading](https://huggingface.co/collections/Atmyre/ao-anti-reading)

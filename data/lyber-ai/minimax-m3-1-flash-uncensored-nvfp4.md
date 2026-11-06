@@ -4,7 +4,7 @@
 
 MiniMax-M3.1-Flash-UNCENSORED-NVFP4 es una cuantización comunitaria, publicada por lyber-ai, del modelo MiniMax-M3.1-Flash de MiniMaxAI. Se trata de un modelo multimodal (imagen-texto a texto) con arquitectura mixture-of-experts (MoE) y unos 220 mil millones de parámetros totales según los metadatos de safetensors. La variante "UNCENSORED" indica que el autor ha aplicado un ajuste para relajar los filtros de seguridad del modelo base, y la cuantización NVFP4 (formato de 4 bits de NVIDIA) reduce drásticamente los requisitos de memoria respecto a los pesos originales, manteniendo capacidades de razonamiento y tool calling.
 
-Este modelo resuelve el problema de desplegar un modelo de gran escala con capacidades de visión, razonamiento y agentes en hardware más accesible, gracias a la cuantización NVFP4/MXFP8. Es relevante para desarrolladores que necesitan un modelo conversacional con soporte multilingüe (incluido el castellano), tool calling y procesamiento de imágenes sin recurrir a APIs propietarias. Nótese que se trata de un fine-tune comunitario no oficial: ni MiniMaxAI ni NVIDIA han validado esta versión, y el acceso está restringido (gated) en HuggingFace, requiriendo aceptar las condiciones del repositorio.
+Este modelo resuelve el problema de desplegar un modelo de gran escala con capacidades de visión, razonamiento y agentes en hardware más accesible, gracias a la cuantización NVFP4/MXFP8. Es relevante para desarrolladores que necesitan un modelo conversacional con soporte multilingüe (incluido el castellano), tool calling y procesamiento de imágenes sin recurrir a APIs propietarias. Nótese que se trata de un fine-tune comunitario no oficial: ni MiniMaxAI ni NVIDIA han validado esta versión, y el acceso está restringido (gated) en Hugging Face, requiriendo aceptar las condiciones del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Este modelo resuelve el problema de desplegar un modelo de gran escala con capac
 
 ## Arquitectura y entrenamiento
 
-El modelo base, MiniMax-M3.1-Flash, emplea una arquitectura transformer con mixture-of-experts mediante switch-MLP, lo que permite un número muy elevado de parámetros totales (~220 B) activando en cada paso solo un subconjunto de expertos, con el consiguiente ahorro computacional durante la inferencia. La variante de HuggingFace conserva la etiqueta `minimax_m3_vl`, lo que indica capacidades vision-language (procesamiento conjunto de imagen y texto). La cuantización NVFP4 de NVIDIA empaqueta los pesos en formato de punto flotante de 4 bits con microescalado por bloque, y el repositorio también incluye referencias a MXFP8.
+El modelo base, MiniMax-M3.1-Flash, emplea una arquitectura transformer con mixture-of-experts mediante switch-MLP, lo que permite un número muy elevado de parámetros totales (~220 B) activando en cada paso solo un subconjunto de expertos, con el consiguiente ahorro computacional durante la inferencia. La variante de Hugging Face conserva la etiqueta `minimax_m3_vl`, lo que indica capacidades vision-language (procesamiento conjunto de imagen y texto). La cuantización NVFP4 de NVIDIA empaqueta los pesos en formato de punto flotante de 4 bits con microescalado por bloque, y el repositorio también incluye referencias a MXFP8.
 
 No se ha publicado información sobre el proceso de entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) en los datos disponibles. Tampoco se detalla el método exacto empleado por lyber-ai para producir la variante "uncensored" (fine-tune completo, LoRA, abliteración u otra técnica), un dato relevante dado que el resultado no ha sido auditado.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Arquitectura | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-M3.1-Flash-UNCENSORED-NVFP4 | ~220,5 B (totales) | MoE, vision-language | Sí | minimax-model-license | Gated en HuggingFace |
-| MiniMaxAI/MiniMax-M3.1-Flash (base) | ~220 B (totales) | MoE, vision-language | Sí | minimax-model-license | HuggingFace |
-| DeepSeek-V3 | ~671 B (totales, MoE) | MoE, solo texto | No | licencia propia (uso comercial restringido) | HuggingFace |
-| Qwen2.5-VL-72B | ~72 B (densos) | Transformer denso, vision-language | Sí | Qwen license (uso comercial condicionado) | HuggingFace |
+| MiniMax-M3.1-Flash-UNCENSORED-NVFP4 | ~220,5 B (totales) | MoE, vision-language | Sí | minimax-model-license | Gated en Hugging Face |
+| MiniMaxAI/MiniMax-M3.1-Flash (base) | ~220 B (totales) | MoE, vision-language | Sí | minimax-model-license | Hugging Face |
+| DeepSeek-V3 | ~671 B (totales, MoE) | MoE, solo texto | No | licencia propia (uso comercial restringido) | Hugging Face |
+| Qwen2.5-VL-72B | ~72 B (densos) | Transformer denso, vision-language | Sí | Qwen license (uso comercial condicionado) | Hugging Face |
 
 Nota: la comparativa es orientativa; no hay benchmarks publicados que permitan contrastar rendimiento real entre estos modelos en los datos disponibles.
 
@@ -79,7 +79,7 @@ Nota: la comparativa es orientativa; no hay benchmarks publicados que permitan c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lyber-ai/MiniMax-M3.1-Flash-UNCENSORED-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/lyber-ai/MiniMax-M3.1-Flash-UNCENSORED-NVFP4
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
-- Organización MiniMaxAI en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organización MiniMaxAI en Hugging Face: https://huggingface.co/MiniMaxAI
 - Paper, blog oficial o demo: no disponible

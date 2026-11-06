@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Idioma | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rraaww/ru_piper | TTS Piper (ONNX) | Ruso | No aplica | Apache 2.0 | HuggingFace, 1.619 descargas, 3 likes |
-| Voces oficiales Piper ru_RU (por ejemplo, variantes medium de la colección rhasspy/piper-voices) | TTS Piper (ONNX) | Ruso | No aplica | Depende de cada voz | HuggingFace |
+| rraaww/ru_piper | TTS Piper (ONNX) | Ruso | No aplica | Apache 2.0 | Hugging Face, 1.619 descargas, 3 likes |
+| Voces oficiales Piper ru_RU (por ejemplo, variantes medium de la colección rhasspy/piper-voices) | TTS Piper (ONNX) | Ruso | No aplica | Depende de cada voz | Hugging Face |
 | Silero TTS | TTS | Ruso y otros | No aplica | MIT (edición comunitaria) | Repositorio propio y paquetes |
 
 No se dispone de datos de parámetros, contexto ni rendimiento de rraaww/ru_piper, por lo que la comparación cuantitativa no es posible. Las voces oficiales de Piper y Silero cuentan con más validación comunitaria y, en el caso de Silero, con más idiomas; este repositorio, en cambio, aporta pesos entrenados a medida y herramientas Android asociadas, a costa de una calidad declarada como experimental.
@@ -83,7 +83,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de rraaww/ru_pipe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rraaww/ru_piper
+- Modelo en Hugging Face: https://huggingface.co/rraaww/ru_piper
 - Repositorio de datos de espeak-ng citado por el autor: https://github.com/mitrokun/espeak-ng-data
 - Lector para Android citado por el autor: https://github.com/mitrokun/PiperReader
 - Búsquedas web realizadas: no se encontraron resultados relevantes, papers ni documentación técnica adicional sobre este modelo; los resultados devueltos por el buscador no guardaban relación con el modelo.

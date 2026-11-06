@@ -68,10 +68,10 @@ La unica metrica reportada por el autor es de naturaleza procedimental: 23 revis
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fc91/Llama-3.2-3B_CQoT_NaturalRepair | Adaptador LoRA sobre 3,21 mil millones | No disponible (base: 128 000) | Adaptador de investigacion | Llama 3.2 Community | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-3B-Instruct | 3210 millones | 128 000 | Modelo completo ajustado por instrucciones | Llama 3.2 Community | HuggingFace, ampliamente desplegado |
-| Qwen2.5-3B-Instruct | 3100 millones | 32 768 (128 000 con RoPE scaling) | Modelo completo ajustado por instrucciones | Apache 2.0 | HuggingFace |
-| Phi-3.5-mini-instruct | 3800 millones | 128 000 | Modelo completo ajustado por instrucciones | MIT | HuggingFace |
+| fc91/Llama-3.2-3B_CQoT_NaturalRepair | Adaptador LoRA sobre 3,21 mil millones | No disponible (base: 128 000) | Adaptador de investigacion | Llama 3.2 Community | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-3B-Instruct | 3210 millones | 128 000 | Modelo completo ajustado por instrucciones | Llama 3.2 Community | Hugging Face, ampliamente desplegado |
+| Qwen2.5-3B-Instruct | 3100 millones | 32 768 (128 000 con RoPE scaling) | Modelo completo ajustado por instrucciones | Apache 2.0 | Hugging Face |
+| Phi-3.5-mini-instruct | 3800 millones | 128 000 | Modelo completo ajustado por instrucciones | MIT | Hugging Face |
 
 La comparacion relevante es siempre contra el propio modelo base: este adaptador no modifica el numero de parametros, la ventana de contexto ni la licencia, solo el comportamiento aprendido en 26 actualizaciones. Frente a alternativas completas de la misma categoria, Qwen2.5-3B-Instruct y Phi-3.5-mini-instruct ofrecen licencias permisivas (Apache 2.0 y MIT) frente a la licencia Llama 3.2, ademas de resultados de benchmarks publicados.
 
@@ -90,7 +90,7 @@ La comparacion relevante es siempre contra el propio modelo base: este adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_NaturalRepair_20261011_public
+- Modelo en Hugging Face: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_NaturalRepair_20261011_public
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Revision del modelo base: `0cb88a4f764b7a12671c53f0838cd831a0843b95`
 - Tokenizer empleado: https://huggingface.co/fc91/CQoT_SFT_mix_teacher_repair_round3_Llama-3.2-3B-HPC

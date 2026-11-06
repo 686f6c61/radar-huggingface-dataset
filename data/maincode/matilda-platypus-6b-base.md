@@ -98,7 +98,7 @@ En la misma franja de tamaño existen alternativas como Qwen3-6B (si estuviera d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Platypus-6B-Base
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Platypus-6B-Base
 - Qwen3-8B-Base (bloque inferior): https://huggingface.co/Qwen/Qwen3-8B-Base
 - Qwen3-4B-Base (bloque superior): https://huggingface.co/Qwen/Qwen3-4B-Base
 - Informe técnico: `technical_report.pdf`, incluido en el repositorio del modelo

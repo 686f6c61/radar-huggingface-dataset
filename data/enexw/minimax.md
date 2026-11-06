@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `EnExW/Minimax` alojado en HuggingFace corresponde a un modelo publicado por el usuario EnExW el 6 de agosto de 2026, con un tamaño de repositorio de 32,8 GB y acceso restringido (gated), lo que obliga a aceptar condiciones antes de poder descargarlo. No se dispone de documentación oficial, tarjeta de modelo ni información técnica publicada por el autor, por lo que no es posible confirmar la arquitectura, el número de parámetros, la licencia ni las capacidades reales del modelo.
+El repositorio `EnExW/Minimax` alojado en Hugging Face corresponde a un modelo publicado por el usuario EnExW el 6 de agosto de 2026, con un tamaño de repositorio de 32,8 GB y acceso restringido (gated), lo que obliga a aceptar condiciones antes de poder descargarlo. No se dispone de documentación oficial, tarjeta de modelo ni información técnica publicada por el autor, por lo que no es posible confirmar la arquitectura, el número de parámetros, la licencia ni las capacidades reales del modelo.
 
 Los resultados de búsqueda web muestran que la familia MiniMax (M1, M2, M3) ha publicado modelos de código abierto con arquitecturas híbridas y contextos largos, pero no hay evidencia de que este repositorio esté vinculado oficialmente a MiniMax. Dado que el autor es un usuario particular y no la organización MiniMax, la relación es especulativa. En consecuencia, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente la ausencia de información técnica verificable.
 
@@ -47,7 +47,7 @@ No disponible. No se puede comparar este modelo con otros porque se desconoce su
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso y evaluacion.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso y evaluacion.
 - Ausencia de documentacion: no hay tarjeta de modelo, ni especificaciones, ni informacion de licencia, lo que impide conocer sus limitaciones y riesgos.
 - Procedencia incierta: al ser publicado por un usuario particular, no se puede verificar la calidad, la seguridad ni la procedencia de los pesos.
 - Riesgo de sesgos y alucinaciones: sin informacion sobre el entrenamiento, no se pueden evaluar sesgos potenciales ni la fiabilidad de las respuestas.
@@ -55,7 +55,7 @@ No disponible. No se puede comparar este modelo con otros porque se desconoce su
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EnExW/Minimax
+- Repositorio Hugging Face: https://huggingface.co/EnExW/Minimax
 - Referencia a MiniMax M3 (no confirmado como relacionado): https://www.minimax.io/models/text/m3
 - Repositorio MiniMax-M1 en GitHub (no confirmado como relacionado): https://github.com/MiniMax-AI/MiniMax-M1
-- Modelo MiniMax-M2 en HuggingFace (no confirmado como relacionado): https://huggingface.co/MiniMaxAI/MiniMax-M2
+- Modelo MiniMax-M2 en Hugging Face (no confirmado como relacionado): https://huggingface.co/MiniMaxAI/MiniMax-M2

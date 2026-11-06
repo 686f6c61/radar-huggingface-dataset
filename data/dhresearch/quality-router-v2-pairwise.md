@@ -21,7 +21,7 @@ Su relevancia es acotada y de caracter experimental: aporta un componente de enr
 | Licencia | other (sin especificar en la informacion proporcionada) |
 | Formato de pesos | joblib (pickle de Python) |
 | Clase del objeto | `PairwiseUtilityRanker` |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Libreria declarada | sklearn |
 | Dataset de entrenamiento | dhresearch/outcome-router-v2-main |
 | Fecha de creacion | 2026-10-03T16:42:37Z |
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 - VRAM estimada para inferencia: no disponible; el artefacto es un modelo tabular serializado y su ejecucion tipica se realiza en CPU, sin requisito de GPU documentado.
 - GPU recomendadas: no aplica ni se documenta ninguna. No es un modelo de red neuronal que requiera acelerador.
 - Compatibilidad con GPU de consumo: no aplica en los terminos habituales; el cuello de botella es la importacion de lightgbm y `outcome_router_data`, no la memoria de video.
-- Tamano del repositorio: 0.0 GB segun HuggingFace, aunque el tamano real del artefacto joblib no se especifica y podria no estar reflejado en esa cifra.
+- Tamano del repositorio: 0.0 GB segun Hugging Face, aunque el tamano real del artefacto joblib no se especifica y podria no estar reflejado en esa cifra.
 - Opciones de despliegue: carga directa con joblib desde Python; no procede vLLM, llama.cpp, Ollama ni TGI, dado que no es un modelo generativo con pesos en safetensors o GGUF.
 - Dependencias en tiempo de carga: `outcome_router_data` y `lightgbm` importables; joblib 1.6.0 en el entorno de refit.
 - Latencia y throughput estimados: no disponible.
@@ -85,7 +85,7 @@ No hay datos de parametros, contexto ni rendimiento en la informacion proporcion
 
 | Alternativa | Tipo | Datos disponibles | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dhresearch/quality-router-v2-pairwise | Ranker de utilidad por pares (sklearn/LightGBM, joblib) | Coincidencia 250/250 en test; sin parametros ni contexto documentados | other (sin detalle) | HuggingFace, 0 descargas |
+| dhresearch/quality-router-v2-pairwise | Ranker de utilidad por pares (sklearn/LightGBM, joblib) | Coincidencia 250/250 en test; sin parametros ni contexto documentados | other (sin detalle) | Hugging Face, 0 descargas |
 | NVIDIA llm-router (NVIDIA-AI-Blueprints) | Blueprint de enrutado de peticiones LLM con soporte multimodal y estrategias de optimizacion basadas en aprendizaje | No disponible en la informacion | No disponible en la informacion | Repositorio GitHub |
 | Q-Router (arXiv 2510.08789) | Framework agentico de evaluacion de calidad de video con enrutado multi-nivel y VLMs como routers | No disponible en la informacion | No disponible en la informacion | Preprint en arXiv |
 | OpenRouter | Plataforma de comparacion y acceso unificado a mas de 500 LLM con precios, contexto y benchmarks | No disponible en la informacion | No disponible en la informacion | Servicio web y API |
@@ -101,11 +101,11 @@ No hay datos de parametros, contexto ni rendimiento en la informacion proporcion
 - Licencia: marcada como "other" sin texto de licencia en la informacion proporcionada. No puede confirmarse la permisividad para uso comercial; conviene contactar con el autor antes de integrarlo en produccion.
 - Reproducibilidad fragil: el unpickle requiere versiones concretas de librerias y la presencia del modulo `outcome_router_data`; cambios de version de sklearn, lightgbm, numpy o scipy pueden alterar o impedir la carga.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin senales externas de validacion por terceros.
-- Ausencia de pipeline declarado y de idiomas documentados en HuggingFace, lo que dificulta la evaluacion previa a la integracion.
+- Ausencia de pipeline declarado y de idiomas documentados en Hugging Face, lo que dificulta la evaluacion previa a la integracion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-pairwise
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-pairwise
 - Dataset de entrenamiento: https://huggingface.co/datasets/dhresearch/outcome-router-v2-main
 - NVIDIA AI Blueprints, llm-router: https://github.com/NVIDIA-AI-Blueprints/llm-router
 - Q-Router, Agentic Video Quality Assessment with Expert Model Routing: https://arxiv.org/pdf/2510.08789v2

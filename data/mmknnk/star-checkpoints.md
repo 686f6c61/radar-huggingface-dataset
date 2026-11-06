@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mmknnk/star-checkpoints` es un repositorio de pesos alojado en HuggingFace por el usuario `mmknnk`. El nombre del repositorio sugiere que se trata de una coleccion de checkpoints (posiblemente intermedios o de distintas fases de entrenamiento) de un modelo cuyo nombre o familia incluye la palabra "star", pero no se ha podido confirmar esta interpretacion con la informacion disponible. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni resultados de benchmarks publicados en su ficha.
+`mmknnk/star-checkpoints` es un repositorio de pesos alojado en Hugging Face por el usuario `mmknnk`. El nombre del repositorio sugiere que se trata de una coleccion de checkpoints (posiblemente intermedios o de distintas fases de entrenamiento) de un modelo cuyo nombre o familia incluye la palabra "star", pero no se ha podido confirmar esta interpretacion con la informacion disponible. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni resultados de benchmarks publicados en su ficha.
 
 El dato mas relevante y verificable es el tamano del repositorio: 79,1 GB. Este volumen es compatible con pesos en precision completa o media (por ejemplo, `safetensors` en fp16/bf16) de un modelo de gran tamano, o con un conjunto de multiples checkpoints del mismo modelo. Sin embargo, no es posible determinar a partir de la informacion proporcionada la arquitectura, el numero de parametros ni el proposito del modelo.
 
@@ -37,7 +37,7 @@ Datos adicionales verificables del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace ni en los resultados de la busqueda web. No es posible confirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco se dispone de informacion sobre el numero de parametros, la ventana de contexto, el vocabulario o el tokenizador.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face ni en los resultados de la busqueda web. No es posible confirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco se dispone de informacion sobre el numero de parametros, la ventana de contexto, el vocabulario o el tokenizador.
 
 En cuanto al entrenamiento, se desconoce por completo el corpus utilizado, el numero de tokens de entrenamiento, la composicion del dataset, la posible aplicacion de tecnicas de ajuste como SFT, RLHF o DPO, y cualquier innovacion tecnica relevante. El nombre "star-checkpoints" y el tamano del repositorio (79,1 GB) son los unicos indicios disponibles, y no permiten extraer conclusiones fiables sobre el proceso de entrenamiento. Cualquier afirmacion adicional seria especulativa y no se incluye en esta ficha.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, se desconoce por completo el corpus utilizado, el nu
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos y realistas sin conocer la arquitectura, el tamano, la licencia ni las capacidades del modelo. Cualquier escenario que se enumerase aqui seria una suposicion sin base verificable. Se recomienda, antes de plantear un uso en produccion, consultar la documentacion del autor en el repositorio de HuggingFace y comprobar los siguientes puntos:
+No es posible proponer casos de uso concretos y realistas sin conocer la arquitectura, el tamano, la licencia ni las capacidades del modelo. Cualquier escenario que se enumerase aqui seria una suposicion sin base verificable. Se recomienda, antes de plantear un uso en produccion, consultar la documentacion del autor en el repositorio de Hugging Face y comprobar los siguientes puntos:
 
 - Que la licencia permite el uso comercial previsto.
 - Que el modelo carga correctamente con la libreria y la version de `transformers` adecuadas.
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mmknnk/star-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/mmknnk/star-checkpoints
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo. Los resultados obtenidos corresponden a una tienda de ropa sin relacion con el repositorio:
 

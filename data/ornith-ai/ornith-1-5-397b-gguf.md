@@ -84,8 +84,8 @@ Ornith-1.5-397B supera a DeepSeek-V4-Flash-0731 y GLM-5.2 en los benchmarks de c
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-397B-GGUF
-- Repositorio HuggingFace (original, safetensors): https://huggingface.co/ornith-ai/Ornith-1.5-397B
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-397B-GGUF
+- Repositorio Hugging Face (original, safetensors): https://huggingface.co/ornith-ai/Ornith-1.5-397B
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Web de Ornith AI: https://ornith.ai/
 - Guia de Ornith AI: https://ornith.online/

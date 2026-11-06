@@ -39,7 +39,7 @@ El entrenamiento se realizo con el metodo designado como MOPD (el acronimo no se
 - Razonamiento con cadena de pensamiento larga, orientado a problemas verificables (el diseno experimental se basa en entornos con recompensa comprobable).
 - Generacion de codigo y resolucion de problemas matematicos, capacidades propias de la familia Qwen2 y del destilado R1; no verificadas con benchmarks en esta publicacion.
 - Soporte de conversacion multi-turno: la etiqueta `conversational` esta presente y el tokenizer/chat template se hereda del modelo base.
-- Compatibilidad con `text-generation-inference` y con endpoints de inferencia estandar de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con endpoints de inferencia estandar de Hugging Face.
 - Soporte de *tool calling* / *function calling*: no confirmado en la informacion disponible; depende de la plantilla de chat heredada.
 - Capacidades de agente y uso de herramientas: no documentadas en la model card.
 - Capacidades multimodales (vision, audio): no disponibles; el pipeline es exclusivamente `text-generation`.
@@ -66,14 +66,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits (Q4_K_M tras conversion a GGUF): aproximadamente 1,1 GB de pesos, alrededor de 2 GB en total.
 - GPU de consumo: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090; tambien en GPUs con 4-6 GB si se usa cuantizacion de 4 bits.
 - GPU de centro de datos: A100 40/80 GB y H100 son utiles para servir muchas peticiones concurrentes con vLLM o TGI, no por requisito de memoria sino por throughput agregado.
-- Opciones de despliegue: `transformers` (referencia), vLLM, Text Generation Inference, llama.cpp u Ollama previa conversion a GGUF, y endpoints de inferencia compatibles de HuggingFace.
+- Opciones de despliegue: `transformers` (referencia), vLLM, Text Generation Inference, llama.cpp u Ollama previa conversion a GGUF, y endpoints de inferencia compatibles de Hugging Face.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. Como orientacion no medida, un modelo denso de 1,78 B en una RTX 4090 suele generar decenas de tokens por segundo en BF16, pero esta cifra debe validarse con una prueba propia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `davidheineman/rlve-opd-student-R1Distill-n128-mopd-20261025` | 1,78 B | No disponible | No disponible | HuggingFace, 0 descargas | Checkpoint de investigacion, sin benchmarks |
+| `davidheineman/rlve-opd-student-R1Distill-n128-mopd-20261025` | 1,78 B | No disponible | No disponible | Hugging Face, 0 descargas | Checkpoint de investigacion, sin benchmarks |
 | `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (base) | 1,5 B (nominal) | No disponible en esta ficha | Segun model card del modelo base | Ampliamente disponible | Punto de partida sin el ajuste RLVE; es la referencia directa |
 | `Qwen/Qwen2.5-1.5B-Instruct` | 1,5 B (nominal) | No disponible en esta ficha | Segun model card del modelo base | Ampliamente disponible | Alternativa generalista con ajuste por instrucciones |
 | `meta-llama/Llama-3.2-1B-Instruct` | 1,2 B (nominal) | No disponible en esta ficha | Licencia comunitaria de Llama 3.2 | Ampliamente disponible | Alternativa de tamano similar para generacion de texto |
@@ -94,7 +94,7 @@ Los datos de los modelos comparados deben verificarse en sus respectivas model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n128-mopd-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n128-mopd-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-students-v1/runs/a4bfa59e
 - Ficheros de configuracion del experimento en el repositorio: `training_run.json` y `training_config.yaml`

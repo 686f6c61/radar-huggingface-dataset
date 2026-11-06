@@ -98,7 +98,7 @@ Impacto de la cuantizacion (Q4_K_M desempaquetado a bf16 y re-evaluado en el mis
 |---|---|---|---|---|---|
 | CherryPit-1.1-2B (DRUPEs) | 2,5B | 128K | Si (RL con budget de 8K) | Apache 2.0 | safetensors bf16 + GGUF |
 | CherryPit-1.0-2B (DRUPEs) | 2,5B | 128K | Parcial (se queda sin espacio con mas frecuencia) | Apache 2.0 | GGUF (version 1.0) |
-| MiniCPM5-2B (OpenBMB, modelo base) | ~2B | no disponible | no disponible | no disponible | HuggingFace |
+| MiniCPM5-2B (OpenBMB, modelo base) | ~2B | no disponible | no disponible | no disponible | Hugging Face |
 | Qwen2.5-Coder / Qwen3-1.7B-2B clase | 1,5-3B | 32K-128K | Variable segun version | Apache 2.0 / Qwen | safetensors + GGUF |
 
 Nota: la model card no publica benchmarks comparativos directos frente a modelos de otras familias en el mismo rango de tamano, por lo que la comparacion cuantitativa con alternativas como Qwen3 o Gemma 3 en este tamano no esta disponible en la informacion proporcionada. La comparacion mas rigurosa disponible es la interna frente a CherryPit-1.0 (ver tabla de benchmarks).

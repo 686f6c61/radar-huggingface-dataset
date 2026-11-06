@@ -94,5 +94,5 @@ La comparativa muestra que T-one, pese a ser significativamente mas pequeño que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexanderMatveev/T-one
+- Hugging Face: https://huggingface.co/AlexanderMatveev/T-one
 - Repositorio GitHub: https://github.com/voicekit-team/T-one

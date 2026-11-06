@@ -106,7 +106,7 @@ El modelo por defecto de LM3 es el YOLO26x-seg, que además separa pecíolo y ag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phyloforfun/lm3_leaf_segmenter__birefnet_hr_swinl_1024_leaf_no_petiole
+- Modelo en Hugging Face: https://huggingface.co/phyloforfun/lm3_leaf_segmenter__birefnet_hr_swinl_1024_leaf_no_petiole
 - Variante con lámina y pecíolo: https://huggingface.co/phyloforfun/lm3_leaf_segmenter__birefnet_hr_swinl_1024_leaf
 - Segmentador por defecto de LeafMachine3 (YOLO26x-seg): https://huggingface.co/phyloforfun/lm3_leaf_segmenter__yolo26x_seg_1024
 - Repositorio de BiRefNet (arquitectura, código de entrenamiento y pesos `BiRefNet_HR-general`): https://github.com/ZhengPeng7/BiRefNet

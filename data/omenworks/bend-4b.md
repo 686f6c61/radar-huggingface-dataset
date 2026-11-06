@@ -78,7 +78,7 @@ Los datos de las alternativas provienen de la documentacion publica de cada proy
 - Uso en produccion: no recomendable en flujos criticos sin una evaluacion propia previa, dado que no hay datos de calidad, latencia ni robustez.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/OmenWorks/bend-4b
+- Repositorio Hugging Face: https://huggingface.co/OmenWorks/bend-4b
 - Cabezas de decision (bend-heads): https://huggingface.co/OmenWorks/bend-heads
 - Modelo base: https://huggingface.co/ggml-org/Kev-4B
 - Cuantizaciones del upstream: https://huggingface.co/ggml-org/Kev-4B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArcticSeed-Cutoff-Snapshot es un repositorio publicado en HuggingFace por el usuario SOTAagi2030 bajo el identificador `SOTAagi2030/ArcticSeed-Cutoff-Snapshot`. La model card asociada no describe un modelo de lenguaje, sino un volcado de datos (snapshot) con metadatos de tipo «seedbank»: tres accesiones identificadas como AX-17, BZ-04 y KQ-22, un total de 255 paquetes y una codificación declarada como `unsigned-16-little-endian-hex`. La fecha de corte declarada es el 24 de septiembre de 2026 y la release se etiqueta como ArcticSeed-Snapshot-2026Q3.
+ArcticSeed-Cutoff-Snapshot es un repositorio publicado en Hugging Face por el usuario SOTAagi2030 bajo el identificador `SOTAagi2030/ArcticSeed-Cutoff-Snapshot`. La model card asociada no describe un modelo de lenguaje, sino un volcado de datos (snapshot) con metadatos de tipo «seedbank»: tres accesiones identificadas como AX-17, BZ-04 y KQ-22, un total de 255 paquetes y una codificación declarada como `unsigned-16-little-endian-hex`. La fecha de corte declarada es el 24 de septiembre de 2026 y la release se etiqueta como ArcticSeed-Snapshot-2026Q3.
 
 El repositorio no incluye ninguna indicación sobre arquitectura, parámetros, tokens de entrenamiento ni proceso de ajuste. No se declara licencia, idiomas soportados, pipeline de inferencia ni formato de pesos. El único tag presente es `region:us`. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, y su creación y última actualización están separadas por 12 segundos, lo que sugiere un artefacto de publicación automática o de prueba más que un modelo entrenado y validado.
 
@@ -75,7 +75,7 @@ No disponible. No se conocen modelos comparables porque no se ha confirmado que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/ArcticSeed-Cutoff-Snapshot
+- Hugging Face: https://huggingface.co/SOTAagi2030/ArcticSeed-Cutoff-Snapshot
 - Perfil del autor: https://huggingface.co/SOTAagi2030
 - AI Model Release Calendar (referencia general): https://www.scriptbyai.com/ai-model-release-calendar/
 - AI Knowledge Cutoff Database (referencia general): https://aiknowledgecutoff.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gonzaluigi/minimax-h3-refmods` es un repositorio alojado en HuggingFace que, segun su model card, contiene "RefMods" (modificaciones de referencia) para los pesos abiertos de MiniMax H3. El autor es el usuario Gonzaluigi y el repositorio ocupa aproximadamente 0,1 GB, un tamano muy reducido que sugiere que no se trata de un modelo completo, sino de un conjunto de ficheros auxiliares o parches asociados a un modelo de terceros.
+`Gonzaluigi/minimax-h3-refmods` es un repositorio alojado en Hugging Face que, segun su model card, contiene "RefMods" (modificaciones de referencia) para los pesos abiertos de MiniMax H3. El autor es el usuario Gonzaluigi y el repositorio ocupa aproximadamente 0,1 GB, un tamano muy reducido que sugiere que no se trata de un modelo completo, sino de un conjunto de ficheros auxiliares o parches asociados a un modelo de terceros.
 
 La informacion publica disponible es extremadamente escasa: no se declara pipeline, licencia, idiomas soportados ni arquitectura. El repositorio registra 0 descargas y 4 likes, y su ultima actualizacion data del 5 de noviembre de 2026. La model card se limita a invitar al uso de estos RefMods para los pesos abiertos de MiniMax H3, mencionando que los RefMods en espanol tambien ofrecen buenos resultados.
 
@@ -71,5 +71,5 @@ No disponible. No se dispone de informacion sobre modelos comparables, ya que el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gonzaluigi/minimax-h3-refmods
+- Repositorio en Hugging Face: https://huggingface.co/Gonzaluigi/minimax-h3-refmods
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

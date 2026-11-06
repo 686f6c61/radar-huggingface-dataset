@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/benmeyer2005/quick-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/benmeyer2005/quick-vision-language-pretraining
 - Survey de VLP en arXiv (2210.09263): https://arxiv.org/abs/2210.09263
 - Libro "Large Vision-Language Models" (Springer): https://link.springer.com/book/10.1007/978-3-031-94969-2
 - Survey de VLM en ScienceDirect: https://www.sciencedirect.com/science/article/abs/pii/S1566253525006955

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aperture 0.5B Wiki es un checkpoint de pesos de un modelo de lenguaje de aproximadamente 500 millones de parametros, publicado por el usuario xing720310 en HuggingFace. Segun la model card, se trata de pesos entrenados exclusivamente sobre el corpus en ingles de Wikipedia (`wikimedia/wikipedia`, version `20231101.en`), lo que lo situa como un modelo de dominio restringido orientado a texto enciclopedico en ingles.
+Aperture 0.5B Wiki es un checkpoint de pesos de un modelo de lenguaje de aproximadamente 500 millones de parametros, publicado por el usuario xing720310 en Hugging Face. Segun la model card, se trata de pesos entrenados exclusivamente sobre el corpus en ingles de Wikipedia (`wikimedia/wikipedia`, version `20231101.en`), lo que lo situa como un modelo de dominio restringido orientado a texto enciclopedico en ingles.
 
 El modelo se distribuye como un fichero de checkpoint en formato PyTorch (`checkpoint.pt`) y debe cargarse mediante la clase `ApertureLM` del repositorio Aperture, con el `tokenizer.json` de GPT-2 que acompana a dicho repositorio. No se especifica arquitectura interna, longitud de contexto, licencia ni idiomas soportados mas alla del idioma de entrenamiento.
 
@@ -90,7 +90,7 @@ La comparacion es desfavorable para aperture-0.5b-wiki en todos los ejes documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xing720310/aperture-0.5b-wiki
+- Modelo en Hugging Face: https://huggingface.co/xing720310/aperture-0.5b-wiki
 - Corpus de entrenamiento: https://huggingface.co/datasets/wikimedia/wikipedia (version `20231101.en`)
 - Tokenizador: GPT-2 `tokenizer.json` incluido en el repositorio Aperture (referenciado en la model card, sin URL publica)
 - Repositorio Aperture (clase `ApertureLM`): no disponible (mencionado en la model card sin enlace)

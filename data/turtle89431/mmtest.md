@@ -2,7 +2,7 @@
 
 ## Resumen
 
-turtle89431/mmtest es un repositorio publicado en HuggingFace por el usuario turtle89431 el 12 de octubre de 2026 y actualizado apenas cuatro minutos después, lo que indica que se trata de un artefacto en estado embrionario o de una prueba técnica. El repositorio ocupa 12,5 GB, un tamaño compatible con pesos en precisión completa o media para un modelo de escala media, pero no se ha publicado ninguna especificación que lo confirme. Acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
+turtle89431/mmtest es un repositorio publicado en Hugging Face por el usuario turtle89431 el 12 de octubre de 2026 y actualizado apenas cuatro minutos después, lo que indica que se trata de un artefacto en estado embrionario o de una prueba técnica. El repositorio ocupa 12,5 GB, un tamaño compatible con pesos en precisión completa o media para un modelo de escala media, pero no se ha publicado ninguna especificación que lo confirme. Acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 La model card asociada es prácticamente vacía: únicamente contiene el bloque de metadatos de licencia (`license: other`, `license_name: other`, `license_link: LICENSE`). No se documentan arquitectura, número de parámetros, longitud de contexto, idiomas, datos de entrenamiento ni procedimiento de evaluación. La etiqueta `region: us` es la única información adicional de clasificación.
 
@@ -53,7 +53,7 @@ No se ha publicado ninguna lista de capacidades. No es posible confirmar de form
 
 Ninguno de los siguientes escenarios puede validarse con la informacion disponible; se enumeran como hipotesis de trabajo condicionadas a que el autor publique las especificaciones del modelo. No deben tomarse como recomendaciones de despliegue.
 
-- Evaluacion interna de artefactos en HuggingFace: el repositorio puede servir como caso de estudio sobre publicaciones incompletas, midiendo que campos minimos (arquitectura, parametros, contexto, licencia) faltan antes de considerar un modelo apto para pruebas.
+- Evaluacion interna de artefactos en Hugging Face: el repositorio puede servir como caso de estudio sobre publicaciones incompletas, midiendo que campos minimos (arquitectura, parametros, contexto, licencia) faltan antes de considerar un modelo apto para pruebas.
 - Pruebas de carga de pesos en un entorno controlado: dado que el repositorio ocupa 12,5 GB, puede utilizarse para verificar que un pipeline de descarga, conversion y carga (por ejemplo a `safetensors` o GGUF) funciona correctamente en la infraestructura propia, sin expectativa de calidad de inferencia.
 - Auditoria de licencias: la licencia marcada como `other` sin texto publico obliga a un analisis juridico previo a cualquier uso, incluso experimental; el repositorio es util como ejemplo de por que no se debe integrar un modelo sin licencia explicita.
 - Docencia sobre ciclo de vida de modelos abiertos: sirve para ilustrar la diferencia entre un repositorio publicado y un modelo realmente utilizable, cubriendo aspectos de trazabilidad, versionado y reproducibilidad.
@@ -101,9 +101,9 @@ El criterio de seleccion de modelos comparables (mismo tamano, misma tarea, mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/turtle89431/mmtest
+- Repositorio en Hugging Face: https://huggingface.co/turtle89431/mmtest
 - Perfil de GitHub del autor: https://github.com/turtle89431
-- Otro repositorio del mismo autor en HuggingFace: https://huggingface.co/turtle89431/Moxie
+- Otro repositorio del mismo autor en Hugging Face: https://huggingface.co/turtle89431/Moxie
 - Arbol de ficheros de ese repositorio: https://huggingface.co/turtle89431/Moxie/tree/main
 - Panel de referencia de benchmarks y contextos (resultado de busqueda, no relacionado con este modelo): https://benchlm.ai/
 - Herramienta de comprobacion de VRAM para modelos locales (resultado de busqueda, no relacionado con este modelo): https://runlocalmodel.com/

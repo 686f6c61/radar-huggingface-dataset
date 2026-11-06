@@ -24,7 +24,7 @@ La relevancia de esta ficha es doble. Por un lado, documenta un caso real de cad
 | Biblioteca declarada | transformers (etiquetas adicionales: text-generation-inference) |
 | Modelos base | Qwen/Qwen3.5-9B y TokenRhythm/NeoHorse-1-9B |
 | Autor / organizacion | AMAImedia (fundador: Ilia Bolotnikov) |
-| Fecha de creacion en HuggingFace | 2026-09-12 (fecha de lanzamiento declarada en la model card: 2026-09-07) |
+| Fecha de creacion en Hugging Face | 2026-09-12 (fecha de lanzamiento declarada en la model card: 2026-09-07) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -90,10 +90,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Contexto | Rechazos (de 100) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-MLX (este modelo) | 8,95B | No disponible | 18/100 | Apache-2.0 | HuggingFace, BF16 |
-| TokenRhythm/NeoHorse-1-9B | 9B | No disponible | 97/100 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B (modelo base) | No disponible en la informacion proporcionada | No disponible | 97/100 (referido como "modelo original" en la model card) | No disponible en la informacion proporcionada | HuggingFace |
-| Dingdust/NeoHorse-1-9B-heretic | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-MLX (este modelo) | 8,95B | No disponible | 18/100 | Apache-2.0 | Hugging Face, BF16 |
+| TokenRhythm/NeoHorse-1-9B | 9B | No disponible | 97/100 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base) | No disponible en la informacion proporcionada | No disponible | 97/100 (referido como "modelo original" en la model card) | No disponible en la informacion proporcionada | Hugging Face |
+| Dingdust/NeoHorse-1-9B-heretic | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto para los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros, comportamiento de rechazo, licencia y disponibilidad. La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre sus alternativas.
 
@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para los
 
 ## Enlaces
 
-- Modelo en HuggingFace: [AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-MLX](https://huggingface.co/AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-MLX)
+- Modelo en Hugging Face: [AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-MLX](https://huggingface.co/AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-MLX)
 - Modelo base (ajuste): [TokenRhythm/NeoHorse-1-9B](https://huggingface.co/TokenRhythm/NeoHorse-1-9B)
 - Modelo base (original): [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - Repositorio Heretic citado: [Dingdust/NeoHorse-1-9B-heretic](https://huggingface.co/Dingdust/NeoHorse-1-9B-heretic)
@@ -120,7 +120,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para los
 - Repositorio GitHub de NeoHorse: [https://github.com/TokenRhythm/NeoHorse](https://github.com/TokenRhythm/NeoHorse)
 - Informe tecnico de NeoHorse: [Technical Report NeoHorse v1 (PDF)](https://github.com/TokenRhythm/NeoHorse/blob/main/TechnicalReport_NeoHorse_v1.pdf)
 - Web de TokenRhythm: [https://tokenrhythm.ai/](https://tokenrhythm.ai/)
-- HuggingFace de TokenRhythm: [https://huggingface.co/TokenRhythm](https://huggingface.co/TokenRhythm)
+- Hugging Face de TokenRhythm: [https://huggingface.co/TokenRhythm](https://huggingface.co/TokenRhythm)
 - Twitter/X de TokenRhythm: [https://x.com/opensquilla](https://x.com/opensquilla)
 - Web de AMAImedia: [https://amaimedia.com](https://amaimedia.com)
 - Twitter/X de AMAImedia: [https://x.com/AMAImediacom](https://x.com/AMAImediacom)

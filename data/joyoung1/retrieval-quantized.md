@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joyoung1/retrieval-quantized` es un prototipo de investigacion basado en la arquitectura MobileViT orientado a tareas de recuperacion (retrieval). Lo publica el usuario `joyoung1` en HuggingFace y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado ni evaluado: el propio autor describe el checkpoint `model.safetensors` como una inicializacion valida unicamente para pruebas de humo (smoke tests), sin resultados de rendimiento verificados.
+`joyoung1/retrieval-quantized` es un prototipo de investigacion basado en la arquitectura MobileViT orientado a tareas de recuperacion (retrieval). Lo publica el usuario `joyoung1` en Hugging Face y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado ni evaluado: el propio autor describe el checkpoint `model.safetensors` como una inicializacion valida unicamente para pruebas de humo (smoke tests), sin resultados de rendimiento verificados.
 
 El repositorio contiene una implementacion personalizada (no compatible con APIs genericas de carga automatica sin un adaptador explicito) con un fichero `train.py` como artefacto principal, ademas de `config.json` y `training_args.json`. La arquitectura declarada es MobileViT a escala "base", con atencion de ventana deslizante (sliding window), fusion por co-atencion (co attention), activacion ReLU y normalizacion BatchNorm. El recuento de parametros registrado en los metadatos de safetensors es de 33.088.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joyoung1/retrieval-quantized | 33.088 (safetensors) | no disponible | sin benchmark declarado | BSD-3-Clause | HuggingFace |
+| joyoung1/retrieval-quantized | 33.088 (safetensors) | no disponible | sin benchmark declarado | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,5 +99,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joyoung1/retrieval-quantized
+- Modelo en Hugging Face: https://huggingface.co/joyoung1/retrieval-quantized
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-heretic es una variante "abliterada" (sin censura) del modelo denso Qwen/Qwen3-1.7B, publicada por el usuario orlandorubino en HuggingFace. La modificacion se ha realizado con la herramienta Heretic, que localiza la direccion de rechazo en el espacio de activaciones y la anula en los pesos mediante ortogonalizacion, buscando con Optuna los parametros que minimizan los rechazos manteniendo baja la divergencia KL respecto al modelo original. El resultado declarado por el autor es una reduccion de rechazos de 92/100 a 3/100 con una divergencia KL de 0,0566.
+Qwen3-1.7B-heretic es una variante "abliterada" (sin censura) del modelo denso Qwen/Qwen3-1.7B, publicada por el usuario orlandorubino en Hugging Face. La modificacion se ha realizado con la herramienta Heretic, que localiza la direccion de rechazo en el espacio de activaciones y la anula en los pesos mediante ortogonalizacion, buscando con Optuna los parametros que minimizan los rechazos manteniendo baja la divergencia KL respecto al modelo original. El resultado declarado por el autor es una reduccion de rechazos de 92/100 a 3/100 con una divergencia KL de 0,0566.
 
 El modelo conserva la arquitectura del original: transformer denso de 1.720.574.976 parametros (aproximadamente 1,7 mil millones), pesos en BF16 y licencia Apache 2.0. El repositorio ocupa 3,5 GB e incluye pesos en safetensors compatibles con transformers y text-generation-inference. Los idiomas declarados son ingles y espanol.
 
@@ -73,10 +73,10 @@ No hay datos de rendimiento en tareas de razonamiento, codigo o matematicas para
 
 | Modelo | Parametros | Contexto | Estado de alineacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-heretic | 1,7 B (denso) | 32.768 tokens (segun informe de Qwen3) | Abliterado, 3/100 rechazos | Apache 2.0 | HuggingFace, safetensors BF16 |
-| Qwen/Qwen3-1.7B | 1,7 B (denso) | 32.768 tokens | Alineado, 92/100 rechazos | Apache 2.0 | HuggingFace, Ollama (qwen3:1.7b) |
-| Otros modelos abliterados de ~1-2 B | Variable | No disponible | Abliterado | Depende del modelo base | Disponibles en HuggingFace |
-| Alternativas densas de ~1-2 B (por ejemplo Llama 3.2 1B, Gemma 3 1B) | 1-2 B | No disponible en esta busqueda | Alineados | Licencias propias de cada fabricante | HuggingFace |
+| Qwen3-1.7B-heretic | 1,7 B (denso) | 32.768 tokens (segun informe de Qwen3) | Abliterado, 3/100 rechazos | Apache 2.0 | Hugging Face, safetensors BF16 |
+| Qwen/Qwen3-1.7B | 1,7 B (denso) | 32.768 tokens | Alineado, 92/100 rechazos | Apache 2.0 | Hugging Face, Ollama (qwen3:1.7b) |
+| Otros modelos abliterados de ~1-2 B | Variable | No disponible | Abliterado | Depende del modelo base | Disponibles en Hugging Face |
+| Alternativas densas de ~1-2 B (por ejemplo Llama 3.2 1B, Gemma 3 1B) | 1-2 B | No disponible en esta busqueda | Alineados | Licencias propias de cada fabricante | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y estado de alineacion.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orlandorubino/Qwen3-1.7B-heretic
+- Repositorio Hugging Face: https://huggingface.co/orlandorubino/Qwen3-1.7B-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

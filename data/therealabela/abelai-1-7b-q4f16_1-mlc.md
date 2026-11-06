@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AbelAI 1.7B (Light) es un ajuste fino por LoRA del modelo Qwen3-1.7B de Alibaba, desarrollado por Abel Achenkunju y publicado en HuggingFace bajo el identificador `therealabela/abelai-1.7b-q4f16_1-MLC`. Se trata de una distribución ya convertida y cuantizada a `q4f16_1` para MLC-LLM y WebLLM, pensada para ejecutarse íntegramente en el navegador mediante WebGPU a través de la aplicación web del autor en achenkunju.com/abelai/. El objetivo declarado es ofrecer un asistente de propósito general que funcione de forma local en el cliente, sin servidor ni API externa.
+AbelAI 1.7B (Light) es un ajuste fino por LoRA del modelo Qwen3-1.7B de Alibaba, desarrollado por Abel Achenkunju y publicado en Hugging Face bajo el identificador `therealabela/abelai-1.7b-q4f16_1-MLC`. Se trata de una distribución ya convertida y cuantizada a `q4f16_1` para MLC-LLM y WebLLM, pensada para ejecutarse íntegramente en el navegador mediante WebGPU a través de la aplicación web del autor en achenkunju.com/abelai/. El objetivo declarado es ofrecer un asistente de propósito general que funcione de forma local en el cliente, sin servidor ni API externa.
 
 El modelo hereda la arquitectura transformer densa de Qwen3-1.7B, con el adaptador LoRA de rango 16 fusionado en los pesos bf16 originales antes de la conversión a MLC. El repositorio ocupa 1,0 GB y el artefacto cuantizado pesa 968 MB, lo que lo sitúa en el rango de modelos que caben en memoria de GPU integrada o en un navegador de escritorio moderno. La licencia es Apache-2.0, heredada del modelo base.
 
@@ -84,7 +84,7 @@ La comparación de rendimiento no es posible: no hay benchmarks publicados para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/therealabela/abelai-1.7b-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/therealabela/abelai-1.7b-q4f16_1-MLC
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Demo en navegador (WebLLM): https://achenkunju.com/abelai/
 - WebLLM: https://github.com/mlc-ai/web-llm

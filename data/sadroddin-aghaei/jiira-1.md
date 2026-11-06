@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jiira-1 es un modelo publicado en HuggingFace por el usuario sadroddin-aghaei bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva (unicamente el campo `license: mit` en el frontmatter), no declara pipeline, no especifica idiomas y no registra descargas ni interacciones (0 descargas, 0 likes). No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion.
+Jiira-1 es un modelo publicado en Hugging Face por el usuario sadroddin-aghaei bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva (unicamente el campo `license: mit` en el frontmatter), no declara pipeline, no especifica idiomas y no registra descargas ni interacciones (0 descargas, 0 likes). No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente documental: registra la existencia del checkpoint, su licencia y el estado de su publicacion, y advierte de que cualquier evaluacion tecnica o uso en produccion requiere inspeccionar directamente los archivos del repositorio (pesos, tokenizer, config.json) antes de adoptar decisiones. No se debe asumir ninguna capacidad concreta del modelo a partir de la informacion disponible.
 
@@ -50,7 +50,7 @@ Los siguientes escenarios son candidatos genericos que solo deberian considerars
 - Experimentacion academica con licencia permisiva: la licencia MIT permite modificar y redistribuir el modelo, lo que facilita su uso en entornos de investigacion que exigen clausulas permisivas, siempre que se cite la autoría.
 - Pruebas de integracion de tooling de inferencia: verificar si el checkpoint es compatible con vLLM, llama.cpp, Ollama o TGI requiere conocer primero el formato de pesos y la arquitectura, hoy no documentados.
 - Base para fine-tuning propio: solo viable si los pesos estan en un formato estandar (safetensors) y la arquitectura es compatible con librerias como Transformers o PEFT; ambos extremos estan por confirmar.
-- Analisis de reproducibilidad y procedencia de modelos: el caso sirve para estudiar practicas de publicacion en HuggingFace (repositorios sin model card, sin pipeline y sin metricas) y su impacto en la trazabilidad.
+- Analisis de reproducibilidad y procedencia de modelos: el caso sirve para estudiar practicas de publicacion en Hugging Face (repositorios sin model card, sin pipeline y sin metricas) y su impacto en la trazabilidad.
 - Despliegue en produccion: no recomendable en el estado actual, al no existir informacion sobre contexto, idiomas, licencias de datos de entrenamiento ni comportamiento frente a entradas adversarias.
 
 ## Benchmarks y rendimiento
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sadroddin-aghaei/Jiira-1 | no disponible | no disponible | MIT | Publico en HuggingFace, 0 descargas |
+| sadroddin-aghaei/Jiira-1 | no disponible | no disponible | MIT | Publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadroddin-aghaei/Jiira-1
+- Hugging Face: https://huggingface.co/sadroddin-aghaei/Jiira-1
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

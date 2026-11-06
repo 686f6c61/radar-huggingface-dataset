@@ -87,8 +87,8 @@ Tiempo de rigging declarado por el autor: entre uno y dos minutos por modelo. No
 | Modelo / paquete | Tipo | Pesos | Auto-rig | Ejecución local | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | `chibifire/interactor-skintokens-viewer` | Visor Godot + auto-rig empaquetado | GGUF BF16 (3 ficheros) | Sí, tecla R sobre `.glb` | Sí, offline, GPU local | MIT (BSD-3-Clause la sandbox) | 3 paquetes: macOS arm64, Windows x86-64, Linux x86-64 |
-| `VAST-AI/SkinTokens` | Modelo original de skinning | Formato original (no GGUF) | Sí, como modelo | Depende del usuario | no disponible en la información | HuggingFace |
-| `chibifire/SkinTokens-GGUF-BF16` | Conversión de formato de los pesos | GGUF BF16 | No incluye visor ni programa | Sí, pero requiere tooling propio | MIT según la ficha del visor | HuggingFace (commit `912d4d1`) |
+| `VAST-AI/SkinTokens` | Modelo original de skinning | Formato original (no GGUF) | Sí, como modelo | Depende del usuario | no disponible en la información | Hugging Face |
+| `chibifire/SkinTokens-GGUF-BF16` | Conversión de formato de los pesos | GGUF BF16 | No incluye visor ni programa | Sí, pero requiere tooling propio | MIT según la ficha del visor | Hugging Face (commit `912d4d1`) |
 
 No se dispone de datos de rendimiento de las alternativas ni de otros sistemas de auto-rigging comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento de las alternativas ni de otros sistemas d
 
 ## Enlaces
 
-- [HuggingFace: chibifire/interactor-skintokens-viewer](https://huggingface.co/chibifire/interactor-skintokens-viewer)
-- [HuggingFace: chibifire/SkinTokens-GGUF-BF16](https://huggingface.co/chibifire/SkinTokens-GGUF-BF16)
-- [HuggingFace: VAST-AI/SkinTokens](https://huggingface.co/VAST-AI/SkinTokens)
+- [Hugging Face: chibifire/interactor-skintokens-viewer](https://huggingface.co/chibifire/interactor-skintokens-viewer)
+- [Hugging Face: chibifire/SkinTokens-GGUF-BF16](https://huggingface.co/chibifire/SkinTokens-GGUF-BF16)
+- [Hugging Face: VAST-AI/SkinTokens](https://huggingface.co/VAST-AI/SkinTokens)
 - [GitHub: V-Sekai-fire/entities-model-explorer](https://github.com/V-Sekai-fire/entities-model-explorer)

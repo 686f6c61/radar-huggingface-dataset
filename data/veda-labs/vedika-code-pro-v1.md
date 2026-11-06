@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Params totales | Params activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vedika-Code-Pro-v1 | 1.6T | 49B | 1M | MIT | HuggingFace |
-| DeepSeek-V3 (referencia) | 671B | 37B | 128K | MIT | HuggingFace |
-| Qwen2.5-Coder-32B (referencia) | 32B | 32B | 128K | Apache-2.0 | HuggingFace |
+| Vedika-Code-Pro-v1 | 1.6T | 49B | 1M | MIT | Hugging Face |
+| DeepSeek-V3 (referencia) | 671B | 37B | 128K | MIT | Hugging Face |
+| Qwen2.5-Coder-32B (referencia) | 32B | 32B | 128K | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparación se basa solo en parámetros y contexto. Vedika-Code-Pro-v1 supera en escala a DeepSeek-V3, pero no se puede confirmar que su rendimiento real sea superior sin benchmarks.
 
@@ -79,9 +79,9 @@ No se dispone de datos de rendimiento comparativo. La comparación se basa solo 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Veda-Labs/Vedika-Code-Pro-v1
+- Página del modelo en Hugging Face: https://huggingface.co/Veda-Labs/Vedika-Code-Pro-v1
 - Sitio web de Veda Labs: https://vedalabs.online
-- Organización HuggingFace: https://huggingface.co/Veda-Labs
+- Organización Hugging Face: https://huggingface.co/Veda-Labs
 - GitHub de Veda Labs: https://github.com/vedalabs-tech
 - Documentación de la API: https://github.com/Vedika-advanced-AI/API-DOCUMENTATION
 - Página de producto de XALEN (referencia): https://xalen.io/pages/models/vedika-code

@@ -78,7 +78,7 @@ La comparación con Llama-3.2-3B es solo ilustrativa; no hay datos de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morpknight/qwen3.5-4b-indonesian-legal-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/morpknight/qwen3.5-4b-indonesian-legal-mlx-4bit
 - Repositorio del adaptador LoRA: https://huggingface.co/morpknight/qwen3.5-4b-indonesian-legal-lora
 - GitHub de Qwen3.5 (referencia del modelo base): https://github.com/algtrd24/qwen3.5
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

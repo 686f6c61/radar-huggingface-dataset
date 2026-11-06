@@ -2,7 +2,7 @@
 
 ## Resumen
 
-onnx_zundamon es un repositorio de modelos de síntesis de voz (text-to-speech) publicado por el usuario Geukrak en HuggingFace, que recopila y convierte a formatos optimizados los componentes necesarios para generar voz con la voz del personaje Zundamon (ずんだもん), un personaje japonés de la familia de voces de Zunko Tohoku. El modelo se creó originalmente para el programa "voiceger", desarrollado por zunzun99 y yh00722, y el autor indica que está realizando mejoras y optimizaciones sobre una versión desactualizada.
+onnx_zundamon es un repositorio de modelos de síntesis de voz (text-to-speech) publicado por el usuario Geukrak en Hugging Face, que recopila y convierte a formatos optimizados los componentes necesarios para generar voz con la voz del personaje Zundamon (ずんだもん), un personaje japonés de la familia de voces de Zunko Tohoku. El modelo se creó originalmente para el programa "voiceger", desarrollado por zunzun99 y yh00722, y el autor indica que está realizando mejoras y optimizaciones sobre una versión desactualizada.
 
 Técnicamente, el repositorio no contiene un único modelo, sino un conjunto de tres componentes: un modelo HuBERT chino (TencentGameMate/chinese-hubert-base) para extracción de características de audio, un par de modelos GPT y VITS afinados con la voz de Zundamon (procedentes de zunzunpj/zundamon_GPT-SoVITS, basados en la arquitectura GPT-SoVITS), y un modelo RoBERTa chino grande (hfl/chinese-roberta-wwm-ext-large) para procesamiento de texto. Los modelos GPT y VITS se han exportado a ONNX para acelerar la inferencia, mientras que BERT y HuBERT se han convertido a safetensors.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 - VRAM estimada para inferencia: no disponible. Dado el tamaño del repositorio (3,1 GB) y la naturaleza de los componentes (GPT-SoVITS con RoBERTa grande y HuBERT), es razonable asumir que unos 4-6 GB de VRAM serían suficientes para inferencia, pero este dato no está confirmado por el autor.
 - GPU recomendadas: no disponible. Al tratarse de modelos relativamente ligeros, cualquier GPU de consumo moderna (RTX 3060 o superior) debería ser suficiente para inferencia ONNX; también es plausible la ejecución en CPU mediante ONNX Runtime, aunque sin datos de rendimiento publicados.
 - Consumer GPU: no hay confirmación oficial, pero los modelos GPT-SoVITS convertidos a ONNX suelen ejecutarse en GPUs de consumo sin problemas.
-- Opciones de despliegue: el pipeline está diseñado para ONNX Runtime y la librería Transformers de HuggingFace; el uso previsto es dentro del programa voiceger (repositorios: fork de Geukrak y repo original de zunzun999). No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI, que no son aplicables a este tipo de modelos TTS.
+- Opciones de despliegue: el pipeline está diseñado para ONNX Runtime y la librería Transformers de Hugging Face; el uso previsto es dentro del programa voiceger (repositorios: fork de Geukrak y repo original de zunzun999). No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI, que no son aplicables a este tipo de modelos TTS.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ Nota: la comparativa se basa en la existencia de otros repositorios comunitarios
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Geukrak/onnx_zundamon
+- Modelo en Hugging Face: https://huggingface.co/Geukrak/onnx_zundamon
 - Modelo base GPT-SoVITS de Zundamon: https://huggingface.co/zunzunpj/zundamon_GPT-SoVITS
 - Modelo base HuBERT chino: https://huggingface.co/TencentGameMate/chinese-hubert-base
 - Modelo base RoBERTa chino: https://huggingface.co/hfl/chinese-roberta-wwm-ext-large

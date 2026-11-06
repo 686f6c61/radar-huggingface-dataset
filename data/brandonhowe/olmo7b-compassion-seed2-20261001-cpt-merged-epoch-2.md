@@ -18,7 +18,7 @@ Es relevante ahora como ejemplo reproducible de un flujo CPT ligero sobre un mod
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16 unicamente; no se incluyen versiones GGUF, AWQ, GPTQ ni similares |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (HuggingFace no declara licencia); se hereda la del modelo base allenai/Olmo-3-1025-7B, a consultar |
+| Licencia | no disponible (Hugging Face no declara licencia); se hereda la del modelo base allenai/Olmo-3-1025-7B, a consultar |
 | Formato de pesos | safetensors (8 shards, precision BF16, modelo fusionado sin adaptador) |
 
 ## Arquitectura y entrenamiento
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Olmo7b-compassion-seed2-...-merged-epoch-2) | 7.298.011.136 | no disponible | CPT + merge, BF16 | no disponible | HuggingFace, 0 descargas |
-| allenai/Olmo-3-1025-7B (base) | 7B (familia OLMo 3) | no disponible | Modelo base | segun AI2 (no verificada aqui) | HuggingFace (modelo base oficial) |
-| BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-3 | misma familia | no disponible | CPT + merge, otro seed/epoch | no disponible | HuggingFace (checkpoint hermano) |
-| BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2 | misma familia | no disponible | CPT + merge sobre otro corpus | no disponible | HuggingFace (checkpoint hermano) |
+| Este modelo (Olmo7b-compassion-seed2-...-merged-epoch-2) | 7.298.011.136 | no disponible | CPT + merge, BF16 | no disponible | Hugging Face, 0 descargas |
+| allenai/Olmo-3-1025-7B (base) | 7B (familia OLMo 3) | no disponible | Modelo base | segun AI2 (no verificada aqui) | Hugging Face (modelo base oficial) |
+| BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-3 | misma familia | no disponible | CPT + merge, otro seed/epoch | no disponible | Hugging Face (checkpoint hermano) |
+| BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2 | misma familia | no disponible | CPT + merge sobre otro corpus | no disponible | Hugging Face (checkpoint hermano) |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion proporcionada para establecer diferencias cuantitativas entre estas variantes.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 - El propio autor advierte que el entrenamiento no establece una mejora en compasion y que esa dimension debe evaluarse por separado; es decir, el objetivo declarado no esta validado.
 - Riesgo de alucinacion: es un modelo denso de 7B sometido a continued pretraining, sin alineacion posterior documentada, por lo que mantiene los riesgos habituales de generar contenido falso con apariencia de veracidad.
 - Olvido catastrofico: el continued pretraining puede degradar capacidades generales del modelo base (razonamiento, codigo, conocimiento factual); no se aportan evaluaciones que lo descarten.
-- Licencia no declarada: la ausencia de licencia explicita en HuggingFace impide confirmar los terminos de uso comercial; debe verificarse la licencia del modelo base antes de cualquier despliegue productivo.
+- Licencia no declarada: la ausencia de licencia explicita en Hugging Face impide confirmar los terminos de uso comercial; debe verificarse la licencia del modelo base antes de cualquier despliegue productivo.
 - Idiomas no documentados: no se declara soporte multilingue, por lo que el comportamiento fuera del ingles (si es el idioma principal del corpus) es incierto.
 - Contexto no documentado: se desconoce la longitud de contexto efectiva y no se han probado degradaciones en ventanas largas tras el CPT.
 - Estado experimental: cero descargas y cero likes, sin validacion independiente por parte de la comunidad.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-merged-epoch-2
+- Pagina de Hugging Face del modelo: https://huggingface.co/BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-merged-epoch-2
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Checkpoint hermano (semilla 1, epoch 3): https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-3

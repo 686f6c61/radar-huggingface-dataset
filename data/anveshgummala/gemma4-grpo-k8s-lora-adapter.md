@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`AnveshGummala/gemma4-grpo-k8s-lora-adapter` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario AnveshGummala. No se trata de un modelo completo, sino de un delta de pesos que debe cargarse sobre el checkpoint base `AnveshGummala/gemma4-merged-k8s`, a su vez derivado de un modelo de la familia Gemma (el identificador interno `gemma4-e4b-k8s-grpo` sugiere una variante de tipo "e4b" y un ajuste orientado a Kubernetes, pero la model card no lo confirma).
+`AnveshGummala/gemma4-grpo-k8s-lora-adapter` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario AnveshGummala. No se trata de un modelo completo, sino de un delta de pesos que debe cargarse sobre el checkpoint base `AnveshGummala/gemma4-merged-k8s`, a su vez derivado de un modelo de la familia Gemma (el identificador interno `gemma4-e4b-k8s-grpo` sugiere una variante de tipo "e4b" y un ajuste orientado a Kubernetes, pero la model card no lo confirma).
 
-El adaptador se ha entrenado con GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo presentado en DeepSeekMath, utilizando la librería TRL de HuggingFace. La model card es la plantilla autogenerada por TRL y contiene marcadores sin rellenar (`None`) en los campos de modelo base y en el ejemplo de uso, por lo que la documentación aportada por el autor es practicamente inexistente.
+El adaptador se ha entrenado con GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo presentado en DeepSeekMath, utilizando la librería TRL de Hugging Face. La model card es la plantilla autogenerada por TRL y contiene marcadores sin rellenar (`None`) en los campos de modelo base y en el ejemplo de uso, por lo que la documentación aportada por el autor es practicamente inexistente.
 
 Su relevancia actual es limitada pero ilustrativa: muestra el flujo tipico de ajuste por refuerzo de un modelo pequeno sobre una tarea de dominio concreto (operacion de clusters Kubernetes, segun la nomenclatura) y su distribucion como adaptador ligero en lugar de checkpoint completo. El repositorio ocupa 0,1 GB, no tiene descargas ni "likes", y no declara licencia ni idiomas.
 
@@ -69,8 +69,8 @@ No se dispone de datos de rendimiento, contexto ni licencia para establecer una 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| gemma4-grpo-k8s-lora-adapter | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas | no disponible |
-| gemma4-merged-k8s (modelo base) | no disponible | no disponible | no disponible | publico en HuggingFace | no disponible |
+| gemma4-grpo-k8s-lora-adapter | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas | no disponible |
+| gemma4-merged-k8s (modelo base) | no disponible | no disponible | no disponible | publico en Hugging Face | no disponible |
 | Otros adaptadores LoRA ajustados con GRPO sobre modelos pequenos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento, contexto ni licencia para establecer una 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/AnveshGummala/gemma4-grpo-k8s-lora-adapter
+- Adaptador en Hugging Face: https://huggingface.co/AnveshGummala/gemma4-grpo-k8s-lora-adapter
 - Modelo base: https://huggingface.co/AnveshGummala/gemma4-merged-k8s
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

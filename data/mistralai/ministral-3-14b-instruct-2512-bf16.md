@@ -24,11 +24,11 @@ Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificac
 | Modelo base | mistralai/Ministral-3-14B-Base-2512 |
 | Fecha de creacion | 2025-10-31 |
 | Ultima actualizacion | 2026-07-15 |
-| Descargas / likes en HuggingFace | 91.571 descargas / 46 likes |
+| Descargas / likes en Hugging Face | 91.571 descargas / 46 likes |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer multimodal organizado en dos componentes: un modelo de lenguaje de 13,5B parametros y un encoder de vision de 0,4B, segun la propia model card. El identificador de arquitectura declarado en HuggingFace es `mistral3` y la libreria de referencia es vLLM, con soporte de `mistral-common` para el preprocesado. Se trata de la variante Instruct, es decir, la version post-entrenada para seguir instrucciones partiendo del checkpoint base `Ministral-3-14B-Base-2512`; la familia incluye ademas variantes especificas para razonamiento (Reasoning) en los tres tamanos.
+La arquitectura es un transformer multimodal organizado en dos componentes: un modelo de lenguaje de 13,5B parametros y un encoder de vision de 0,4B, segun la propia model card. El identificador de arquitectura declarado en Hugging Face es `mistral3` y la libreria de referencia es vLLM, con soporte de `mistral-common` para el preprocesado. Se trata de la variante Instruct, es decir, la version post-entrenada para seguir instrucciones partiendo del checkpoint base `Ministral-3-14B-Base-2512`; la familia incluye ademas variantes especificas para razonamiento (Reasoning) en los tres tamanos.
 
 No se han proporcionado en la informacion disponible datos concretos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre las tecnicas de alineacion empleadas (RLHF, DPO u otras). La model card tampoco detalla innovaciones de atencion o decodificacion (por ejemplo, atencion lineal o decodificacion especulativa). Lo que si se explicita como caracteristica de diseno es el enfoque "edge-optimized": la familia esta pensada para ejecutarse en un espectro amplio de hardware, con el 14B en BF16 cabiendo en 32 GB de VRAM y por debajo de 24 GB cuando se cuantiza. La model card remite al paper (arXiv:2601.08584) y al blog de Mistral para el detalle tecnico, no incluido en el material proporcionado.
 
@@ -92,12 +92,12 @@ Nota: la tabla de benchmarks de la variante Instruct en la model card proporcion
 
 | Modelo | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral 3 14B Instruct 2512 | 13,95B (13,5B LM + 0,4B vision) | 256k | AIME25 0,850; Arena Hard 0,551; MATH 0,904; MM MTBench 8,49 | Apache 2.0 | HuggingFace (BF16, FP8 y cuantizaciones adicionales) |
+| Ministral 3 14B Instruct 2512 | 13,95B (13,5B LM + 0,4B vision) | 256k | AIME25 0,850; Arena Hard 0,551; MATH 0,904; MM MTBench 8,49 | Apache 2.0 | Hugging Face (BF16, FP8 y cuantizaciones adicionales) |
 | Qwen3-14B (Thinking) | 14B (no confirmado en la informacion) | no disponible | AIME25 0,737; AIME24 0,837; GPQA 0,663; LiveCodeBench 0,593 | no disponible | no disponible |
 | Qwen3 14B (Non-Thinking) | 14B (no confirmado en la informacion) | no disponible | Arena Hard 0,427; WildBench 65,1; MATH 0,870; MM MTBench no disponible | no disponible | no disponible |
-| Ministral 3 8B | no disponible (menor que 14B) | no disponible | AIME25 0,787; GPQA 0,668; LiveCodeBench 0,616 | Apache 2.0 | HuggingFace |
-| Ministral 3 3B | no disponible (menor que 14B) | no disponible | AIME25 0,721; GPQA 0,534; LiveCodeBench 0,548 | Apache 2.0 | HuggingFace |
-| Mistral Small 3.2 24B | 24B | no disponible | Mistral afirma rendimiento comparable al de Ministral 3 14B | no disponible | HuggingFace |
+| Ministral 3 8B | no disponible (menor que 14B) | no disponible | AIME25 0,787; GPQA 0,668; LiveCodeBench 0,616 | Apache 2.0 | Hugging Face |
+| Ministral 3 3B | no disponible (menor que 14B) | no disponible | AIME25 0,721; GPQA 0,534; LiveCodeBench 0,548 | Apache 2.0 | Hugging Face |
+| Mistral Small 3.2 24B | 24B | no disponible | Mistral afirma rendimiento comparable al de Ministral 3 14B | no disponible | Hugging Face |
 
 Las filas de Qwen3 se limitan a los datos de benchmark aportados por la model card de Mistral; no se dispone de informacion sobre su contexto, licencia o formatos en el material proporcionado. La comparacion con Mistral Small 3.2 24B procede de una afirmacion cualitativa del propio autor.
 
@@ -109,7 +109,7 @@ Las filas de Qwen3 se limitan a los datos de benchmark aportados por la model ca
 - Idiomas: la model card menciona "docenas de idiomas", pero solo se listan once. El rendimiento fuera de esos idiomas, y en particular en variedades dialectales o en castellano de Espana frente a otras variantes, no esta documentado.
 - Vision: el encoder de vision tiene solo 0,4B parametros, una capacidad muy inferior a la del componente de lenguaje; cabe esperar un rendimiento mas limitado en tareas visuales complejas (razonamiento sobre diagramas densos, OCR de documentos degradados, etc.).
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion. Es una licencia permisiva, sin clausulas de uso aceptable adicionales en la informacion proporcionada, aunque conviene revisar los terminos de Mistral AI asociados al acceso al modelo.
-- Gating: la model card incluye un bloque `extra_gated_description` referido al tratamiento de datos personales y a la politica de privacidad de Mistral, lo que sugiere que la descarga puede requerir aceptar condiciones en HuggingFace.
+- Gating: la model card incluye un bloque `extra_gated_description` referido al tratamiento de datos personales y a la politica de privacidad de Mistral, lo que sugiere que la descarga puede requerir aceptar condiciones en Hugging Face.
 - Ausencia de modo thinking: esta variante Instruct no incorpora modo de razonamiento explicito; para ese caso de uso existe un checkpoint separado (Ministral-3-14B-Reasoning-2512).
 - Benchmarks autodeclarados: todas las cifras proceden de la model card del autor, sin verificacion independiente disponible, y parte de la tabla aparece truncada en la informacion proporcionada.
 - Produccion: no se dispone de datos de latencia, throughput ni coste por token, elementos necesarios para dimensionar un despliegue real.
@@ -117,7 +117,7 @@ Las filas de Qwen3 se limitan a los datos de benchmark aportados por la model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace (BF16): https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-BF16
+- Modelo en Hugging Face (BF16): https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-BF16
 - Version FP8 sin perdida: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Base-2512
 - Coleccion de checkpoints adicionales y cuantizaciones: https://huggingface.co/collections/mistralai/ministral-3-additional-checkpoints

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-0813 es la versión oficial (no preview) de DeepSeek-V4-Pro, un modelo de lenguaje de gran escala desarrollado por DeepSeek AI. Se distribuye como un espejo en el repositorio de HuggingFace `workmanooo/DeepSeek-V4-Pro-0813`, que replica la estructura y los pesos del modelo oficial. Su principal novedad frente a la versión preview es una mejora sustancial de las capacidades agénticas y del rendimiento en entornos de producción, incorporando además el módulo de decodificación especulativa DSpark.
+DeepSeek-V4-Pro-0813 es la versión oficial (no preview) de DeepSeek-V4-Pro, un modelo de lenguaje de gran escala desarrollado por DeepSeek AI. Se distribuye como un espejo en el repositorio de Hugging Face `workmanooo/DeepSeek-V4-Pro-0813`, que replica la estructura y los pesos del modelo oficial. Su principal novedad frente a la versión preview es una mejora sustancial de las capacidades agénticas y del rendimiento en entornos de producción, incorporando además el módulo de decodificación especulativa DSpark.
 
 El modelo es un transformer de tipo Mixture-of-Experts (MoE) con aproximadamente 1,65 billones de parámetros totales, según los datos de safetensors del repositorio. Está pensado para tareas de razonamiento complejo, generación de código, uso de herramientas y flujos agénticos multi-paso, y se posiciona como competidor directo de modelos propietarios de primera línea como Opus-4.8 o Fable-5 en los benchmarks publicados por el autor.
 
@@ -77,8 +77,8 @@ Las evaluaciones de tareas de código-agente se realizaron con el modo minimal d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Pro-0813 | ~1,65 B (MoE) | no disponible | MIT | HuggingFace | Terminal Bench 87,9; DeepSWE 62,7 |
-| DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | HuggingFace | Terminal Bench 82,7; DeepSWE 54,4 |
+| DeepSeek-V4-Pro-0813 | ~1,65 B (MoE) | no disponible | MIT | Hugging Face | Terminal Bench 87,9; DeepSWE 62,7 |
+| DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | Hugging Face | Terminal Bench 82,7; DeepSWE 54,4 |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | Terminal Bench 81,0; DeepSWE 46,2 |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | Terminal Bench 88,3; DeepSWE 67,5 |
 | Opus-4.8 | no disponible | no disponible | propietaria | API | HLE 49,8; NL2Repo 69,7 |
@@ -97,10 +97,10 @@ Las evaluaciones de tareas de código-agente se realizaron con el modo minimal d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/workmanooo/DeepSeek-V4-Pro-0813
+- Repositorio Hugging Face: https://huggingface.co/workmanooo/DeepSeek-V4-Pro-0813
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Página oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - Receta de vLLM para DeepSeek-V4-Pro: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Pro

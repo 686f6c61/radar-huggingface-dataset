@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hastika-task-b-xlmr-base-trainval | 278 M | 160 tokens (entrenamiento) | Clasificación de categoría objetivo de odio en kanglish | MIT | HuggingFace |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingüe (no clasificador) | MIT | HuggingFace |
-| Modelos de toxicidad multilingües genéricos | no disponible | no disponible | Detección de toxicidad binaria o multietiqueta | variable | HuggingFace |
+| hastika-task-b-xlmr-base-trainval | 278 M | 160 tokens (entrenamiento) | Clasificación de categoría objetivo de odio en kanglish | MIT | Hugging Face |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingüe (no clasificador) | MIT | Hugging Face |
+| Modelos de toxicidad multilingües genéricos | no disponible | no disponible | Detección de toxicidad binaria o multietiqueta | variable | Hugging Face |
 
 La comparación con alternativas específicas para kanglish no está disponible en la información proporcionada. Frente al modelo base XLM-R, este checkpoint añade una cabeza de clasificación de 6 clases entrenada en dominio, a costa de perder generalidad y de heredar las limitaciones de un dataset pequeño. Los clasificadores de toxicidad multilingües genéricos no están diseñados específicamente para la distinción de categoría objetivo ni para el registro code-mixed kannada-inglés, por lo que la comparación directa exigiría evaluación sobre el mismo conjunto, dato que no se ha publicado.
 
@@ -87,6 +87,6 @@ La comparación con alternativas específicas para kanglish no está disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-xlmr-base-trainval
+- Modelo en Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-xlmr-base-trainval
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Referencia del dataset y shared task: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. *Language Resources and Evaluation*, 59(3):2811-2856.

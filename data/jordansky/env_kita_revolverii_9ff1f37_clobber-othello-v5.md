@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/env_kita_revolverII_9ff1f37_clobber-othello-v5` es un adaptador LoRA publicado en HuggingFace por el usuario Jordansky. Según los metadatos, está entrenado sobre el modelo base `Llama-3.2-3B-Instruct` mediante la librería PEFT (adaptador de tipo LoRA) y el framework TRL para fine-tuning con supervisión (SFT). El repositorio tiene un tamaño de 0,8 GB, lo que sugiere que contiene los pesos del adaptador, no el modelo completo. La ficha del modelo está prácticamente vacía: no se proporcionan detalles sobre el proceso de entrenamiento, los datos utilizados, ni las capacidades específicas. El nombre "clobber-othello" podría sugerir una relación con el juego Othello, pero no hay ninguna confirmación en la documentación. En la fecha de creación (15 de agosto de 2026) el modelo no tiene descargas ni likes, por lo que es un artefacto reciente y sin uso registrado.
+El modelo `Jordansky/env_kita_revolverII_9ff1f37_clobber-othello-v5` es un adaptador LoRA publicado en Hugging Face por el usuario Jordansky. Según los metadatos, está entrenado sobre el modelo base `Llama-3.2-3B-Instruct` mediante la librería PEFT (adaptador de tipo LoRA) y el framework TRL para fine-tuning con supervisión (SFT). El repositorio tiene un tamaño de 0,8 GB, lo que sugiere que contiene los pesos del adaptador, no el modelo completo. La ficha del modelo está prácticamente vacía: no se proporcionan detalles sobre el proceso de entrenamiento, los datos utilizados, ni las capacidades específicas. El nombre "clobber-othello" podría sugerir una relación con el juego Othello, pero no hay ninguna confirmación en la documentación. En la fecha de creación (15 de agosto de 2026) el modelo no tiene descargas ni likes, por lo que es un artefacto reciente y sin uso registrado.
 
 ## Especificaciones tecnicas
 
@@ -59,5 +59,5 @@ No se dispone de información sobre modelos comparables. Dado que el adaptador n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordansky/env_kita_revolverII_9ff1f37_clobber-othello-v5
+- Repositorio Hugging Face: https://huggingface.co/Jordansky/env_kita_revolverII_9ff1f37_clobber-othello-v5
 - Modelo base (referencia): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

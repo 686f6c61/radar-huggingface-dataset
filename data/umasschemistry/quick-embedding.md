@@ -68,5 +68,5 @@ No se dispone de información suficiente para realizar una comparativa. No se co
 
 ## Enlaces
 
-- [HuggingFace - umasschemistry/quick-embedding](https://huggingface.co/umasschemistry/quick-embedding)
+- [Hugging Face - umasschemistry/quick-embedding](https://huggingface.co/umasschemistry/quick-embedding)
 - No se encontraron otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web. Los resultados de búsqueda sobre "UMA" (Meta FAIR) y "ChemTEB" no están relacionados con este modelo.

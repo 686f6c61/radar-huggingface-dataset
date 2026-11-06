@@ -100,7 +100,7 @@ La información proporcionada solo permite comparar dentro de la propia familia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mejpeezy/gemma-3-12b-it-heretic
+- Modelo en Hugging Face: https://huggingface.co/mejpeezy/gemma-3-12b-it-heretic
 - Modelo base preentrenado: https://huggingface.co/google/gemma-3-12b-pt
 - Modelo instructivo original: https://huggingface.co/google/gemma-3-12b-it
 - Heretic (herramienta de abliteración, v1.0.0): https://github.com/p-e-w/heretic

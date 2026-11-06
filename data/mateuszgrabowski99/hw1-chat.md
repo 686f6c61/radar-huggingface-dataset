@@ -64,5 +64,5 @@ No disponible. No existe información para comparar con otros modelos de la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [mateuszgrabowski99/hw1-chat](https://huggingface.co/mateuszgrabowski99/hw1-chat)
+- Repositorio en Hugging Face: [mateuszgrabowski99/hw1-chat](https://huggingface.co/mateuszgrabowski99/hw1-chat)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en los resultados de búsqueda proporcionados.

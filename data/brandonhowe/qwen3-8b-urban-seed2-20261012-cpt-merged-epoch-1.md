@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-1 es un modelo de generacion de texto obtenido mediante continued pretraining (CPT) a partir de Qwen/Qwen3-8B-Base, publicado por el usuario BrandonHowe en HuggingFace. Se trata de un experimento de ajuste de dominio sobre un corpus concreto, el dataset CompassioninMachineLearning/urban_12738_cleaned, del que se usaron 10.072 documentos distintos mas 2.000 exposiciones repetidas por epoch, con 200 documentos de validacion disjuntos.
+Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-1 es un modelo de generacion de texto obtenido mediante continued pretraining (CPT) a partir de Qwen/Qwen3-8B-Base, publicado por el usuario BrandonHowe en Hugging Face. Se trata de un experimento de ajuste de dominio sobre un corpus concreto, el dataset CompassioninMachineLearning/urban_12738_cleaned, del que se usaron 10.072 documentos distintos mas 2.000 exposiciones repetidas por epoch, con 200 documentos de validacion disjuntos.
 
 El modelo corresponde al epoch 1.0 (step 378) del experimento identificado como "seed2" y se distribuye ya fusionado en BF16, sin adaptador LoRA, mediante la funcion nativa de Unsloth save_pretrained_merged con save_method="merged_16bit". Los pesos ocupan 16,4 GB repartidos en ocho shards de safetensors, con un total de 8.190.735.360 parametros confirmados a partir de los propios ficheros.
 
@@ -31,7 +31,7 @@ El entrenamiento consistio en continued pretraining supervisado por modelado de 
 
 - Generacion de texto autoregresiva y conversacional, heredada de Qwen3-8B-Base.
 - Modelado de lenguaje de dominio, con especializacion (no cuantificada) sobre el corpus urbano utilizado en el CPT.
-- Compatibilidad con text-generation-inference y con endpoints compatibles (etiqueta endpoints_compatible), lo que permite servirlo en infraestructura tipo HuggingFace Inference Endpoints.
+- Compatibilidad con text-generation-inference y con endpoints compatibles (etiqueta endpoints_compatible), lo que permite servirlo en infraestructura tipo Hugging Face Inference Endpoints.
 - Carga directa con transformers sin necesidad de adaptador LoRA, al estar los pesos fusionados.
 - Soporte de tool calling, agentes y razonamiento multi-paso: no confirmado en la informacion disponible para este repositorio; dependera de las capacidades heredadas del modelo base.
 - Capacidades multilingues: no confirmadas en la model card de este repositorio.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-1 (este) | 8.190.735.360 | no disponible | CPT fusionado BF16, epoch 1 | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base | ~8.2B | 32.768 nativos | Modelo base denso | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-1 | ~8.2B | no disponible | CPT fusionado BF16, epoch 1 | no disponible | HuggingFace |
-| Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3 | ~8.2B (variante de 8B) | no disponible | CPT fusionado BF16, epoch 3 | no disponible | HuggingFace |
+| Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-1 (este) | 8.190.735.360 | no disponible | CPT fusionado BF16, epoch 1 | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base | ~8.2B | 32.768 nativos | Modelo base denso | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-1 | ~8.2B | no disponible | CPT fusionado BF16, epoch 1 | no disponible | Hugging Face |
+| Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3 | ~8.2B (variante de 8B) | no disponible | CPT fusionado BF16, epoch 3 | no disponible | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos para ninguno de estos modelos de la coleccion; la comparacion se limita a parametros, tipo de entrenamiento y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de resultados de benchmarks comparativos para ninguno de estos mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-1
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-1
 - Coleccion "Urban dataset runs - September 2026": https://huggingface.co/collections/BrandonHowe/urban-dataset-runs-september-2026
 - Modelo hermano seed1 (epoch 1): https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-1
 - Modelo hermano seed1 (epoch 3) en free2aitools: https://free2aitools.com/model/brandonhowe/qwen3-8b-urban-qwen-seed1-20260930-cpt-merged-epoch-3

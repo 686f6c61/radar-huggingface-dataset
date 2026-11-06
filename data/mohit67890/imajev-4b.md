@@ -86,7 +86,7 @@ El autor indica que imajev-4b queda por delante de GLM-5.3 Flash (320B), Jev 1.1
 
 | Modelo | Parametros | Contexto | JevBench v1.4.2.2 | DecisionBench (eng, v1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| imajev-4b | base ~4B (LoRA) | no disponible (limite de estado 32 KB) | 67,4 | 79,65 | Apache-2.0 | HuggingFace + demo en Spaces |
+| imajev-4b | base ~4B (LoRA) | no disponible (limite de estado 32 KB) | 67,4 | 79,65 | Apache-2.0 | Hugging Face + demo en Spaces |
 | Plumb-4B | no disponible | no disponible | 65,8 | no disponible | no disponible | no disponible |
 | decider-4b v2 | no disponible | no disponible | 64,1 | no disponible | no disponible | no disponible |
 | Jev 1.13.0 | no disponible | 32k tokens (solo texto, alojado) | 63,3 | no disponible | no disponible | no disponible |
@@ -110,7 +110,7 @@ La informacion disponible solo permite comparar estos modelos por puntuacion en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohit67890/imajev-4b
+- Modelo en Hugging Face: https://huggingface.co/mohit67890/imajev-4b
 - Demo en vivo (Spaces): https://huggingface.co/spaces/mohit67890/imajev
 - Codigo y resultados (GitHub): https://github.com/mohit67890/imajev
 - Web del proyecto: https://mohit67890.github.io/imajev/

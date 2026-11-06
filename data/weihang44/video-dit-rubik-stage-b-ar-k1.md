@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Video DiT — Stage B, variante autorregresiva k=1 (AR-k1), es un archivo de puntos de control de investigación publicado por el usuario weihang44 en HuggingFace. Está diseñado para la generación de vídeo de un cubo de Rubik 2x2 de tres caras con cámara fija, y se distribuye como una base exclusivamente de vídeo: no incorpora condicionamiento por estado vectorial ni pérdida auxiliar de estado. El modelo recibe el fotograma frontal inicial y un prompt de lenguaje completo de nueve acciones, y genera veinte fotogramas latentes futuros. En la variante autorregresiva utiliza la historia visual generada en inferencia, mientras que las variantes bidireccionales desruidifican los veinte fotogramas latentes futuros de forma conjunta.
+Video DiT — Stage B, variante autorregresiva k=1 (AR-k1), es un archivo de puntos de control de investigación publicado por el usuario weihang44 en Hugging Face. Está diseñado para la generación de vídeo de un cubo de Rubik 2x2 de tres caras con cámara fija, y se distribuye como una base exclusivamente de vídeo: no incorpora condicionamiento por estado vectorial ni pérdida auxiliar de estado. El modelo recibe el fotograma frontal inicial y un prompt de lenguaje completo de nueve acciones, y genera veinte fotogramas latentes futuros. En la variante autorregresiva utiliza la historia visual generada en inferencia, mientras que las variantes bidireccionales desruidifican los veinte fotogramas latentes futuros de forma conjunta.
 
 La arquitectura es un Diffusion Transformer (DiT) de vídeo con rectified flow, con 3D RoPE, dimensión de cabeza 64, SwiGLU, 16 canales latentes, parches latentes (1,2,2) y características de lenguaje cacheadas de 768 dimensiones. El repositorio cubre siete escalas de generador, desde 19.698.448 parámetros (XS) hasta 938.377.232 parámetros (XXL), con anchura, profundidad y número de cabezas crecientes. La relevancia actual del lanzamiento es doble: por un lado, sirve de material para estudiar leyes de escalado en generación de vídeo; por otro, permite comparar estrategias de decodificación autorregresiva frente a bidireccional sobre una tarea controlada.
 
@@ -125,6 +125,6 @@ No se dispone de modelos comparables públicos descritos en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weihang44/video-dit-rubik-stage-b-ar-k1
+- Modelo en Hugging Face: https://huggingface.co/weihang44/video-dit-rubik-stage-b-ar-k1
 - Release Stage-A AR-k4 del mismo autor: https://huggingface.co/weihang44/video-dit-rubik-stage-a-ar-k4
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

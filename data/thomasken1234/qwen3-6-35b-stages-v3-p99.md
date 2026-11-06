@@ -6,7 +6,7 @@ Qwen3.6-35B-A3B es un modelo de lenguaje causal con encoder de visión, desarrol
 
 El modelo está orientado a la estabilidad y la utilidad real en entornos de producción, con un énfasis particular en el desarrollo de software agéntico: manejo de flujos de trabajo frontend, razonamiento a nivel de repositorio y preservación del contexto de razonamiento en conversaciones iterativas. Su ventana de contexto nativa es de 262.144 tokens, extensible hasta aproximadamente 1.010.000 tokens, y admite entrada multimodal (texto e imagen). Publicado bajo licencia Apache-2.0, es compatible con Transformers, vLLM, SGLang y KTransformers.
 
-El repositorio de HuggingFace analizado (thomasken1234/qwen3.6-35b-stages-v3-p99) es una copia del modelo original de Qwen, con pesos en formato safetensors y un tamaño de 71,9 GB. La model card incluida corresponde a la oficial de Qwen, por lo que los datos técnicos y benchmarks aquí recogidos son los publicados por el propio equipo desarrollador.
+El repositorio de Hugging Face analizado (thomasken1234/qwen3.6-35b-stages-v3-p99) es una copia del modelo original de Qwen, con pesos en formato safetensors y un tamaño de 71,9 GB. La model card incluida corresponde a la oficial de Qwen, por lo que los datos técnicos y benchmarks aquí recogidos son los publicados por el propio equipo desarrollador.
 
 ## Especificaciones técnicas
 
@@ -86,13 +86,13 @@ Qwen3.6-35B-A3B mejora ligeramente a su predecesor Qwen3.5-35B-A3B en SWE-bench 
 - Riesgo de alucinación en tareas de razonamiento complejo o cuando se le pide información factual no presente en su contexto; se recomienda verificación externa en entornos de producción.
 - La extensión de contexto hasta 1.010.000 tokens puede degradar la calidad de la atención en rangos extremos; se recomienda validar el rendimiento en el caso de uso concreto.
 - Los idiomas soportados no están especificados; aunque Qwen suele cubrir múltiples idiomas, no hay garantía de un rendimiento uniforme en todos ellos.
-- El repositorio de HuggingFace analizado (thomasken1234/qwen3.6-35b-stages-v3-p99) es una copia de un usuario no oficial, no un repositorio verificado por Qwen. Se recomienda descargar los pesos desde el repositorio oficial de Qwen para evitar problemas de integridad.
+- El repositorio de Hugging Face analizado (thomasken1234/qwen3.6-35b-stages-v3-p99) es una copia de un usuario no oficial, no un repositorio verificado por Qwen. Se recomienda descargar los pesos desde el repositorio oficial de Qwen para evitar problemas de integridad.
 - La licencia Apache-2.0 permite uso comercial, pero es necesario revisar los términos completos y cualquier restricción adicional que pueda aplicar el equipo de Qwen.
 - No se dispone de información sobre el dataset de entrenamiento ni sobre el proceso de alineación (RLHF/DPO), lo que limita la evaluación de su comportamiento en escenarios sensibles.
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/thomasken1234/qwen3.6-35b-stages-v3-p99
+- Repositorio Hugging Face analizado: https://huggingface.co/thomasken1234/qwen3.6-35b-stages-v3-p99
 - Blog oficial de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Guía práctica de Qwen 3.6 en InsiderLLM: https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

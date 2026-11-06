@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ningsuhen/onnxruntime-web-1.27.0` no es un modelo de IA: es un repositorio de HuggingFace que aloja una copia sin modificar de un unico fichero binario del paquete npm oficial `onnxruntime-web@1.27.0` (Microsoft, licencia MIT). En concreto, `ort-wasm-simd-threaded.asyncify.wasm`, el build de WebAssembly que incluye tanto los kernels de WebGPU como el execution provider de CPU de ONNX Runtime Web.
+`ningsuhen/onnxruntime-web-1.27.0` no es un modelo de IA: es un repositorio de Hugging Face que aloja una copia sin modificar de un unico fichero binario del paquete npm oficial `onnxruntime-web@1.27.0` (Microsoft, licencia MIT). En concreto, `ort-wasm-simd-threaded.asyncify.wasm`, el build de WebAssembly que incluye tanto los kernels de WebGPU como el execution provider de CPU de ONNX Runtime Web.
 
 El problema que resuelve es de distribucion, no de inferencia: permite que una pagina web descargue el binario desde una URL estable con CORS habilitado, fijada a un commit concreto, y verifique su hash antes de usarlo. El autor indica explicitamente que no es un canal oficial de Microsoft y que, para obtener el paquete, debe usarse npm.
 
@@ -75,7 +75,7 @@ No procede comparar con modelos: este artefacto no es un modelo. La comparacion 
 
 | Alternativa | Tipo | Version fijada | Verificacion por hash | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este repo (HuggingFace) | espejo del binario WASM | si (1.27.0) | si, SHA-256 publicado | MIT | No es canal oficial; requiere emparejar JS/MJS de la misma version |
+| Este repo (Hugging Face) | espejo del binario WASM | si (1.27.0) | si, SHA-256 publicado | MIT | No es canal oficial; requiere emparejar JS/MJS de la misma version |
 | npm `onnxruntime-web@1.27.0` | canal oficial | si | no documentada en la ficha | MIT | Canal recomendado por el propio autor |
 | Otros builds WASM de ONNX Runtime Web | variantes del runtime | no disponible | no disponible | MIT | No se dispone de informacion en la documentacion proporcionada |
 
@@ -95,7 +95,7 @@ Comparativa con modelos de la misma categoria (LLM, vision, etc.): no disponible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ningsuhen/onnxruntime-web-1.27.0
+- Repositorio en Hugging Face: https://huggingface.co/ningsuhen/onnxruntime-web-1.27.0
 - Paquete npm oficial citado en la model card: https://www.npmjs.com/package/onnxruntime-web/v/1.27.0
 - Ficheros `LICENSE` y `NOTICE` incluidos en el repositorio (referenciados en la model card): https://huggingface.co/ningsuhen/onnxruntime-web-1.27.0/tree/main
 - Papers, blogs, repos o demos adicionales: no disponible en la informacion proporcionada.

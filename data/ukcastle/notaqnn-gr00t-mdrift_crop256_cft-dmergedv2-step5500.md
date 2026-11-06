@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - No se proporcionan datos de latencia ni consumo energético, por lo que no se puede garantizar el cumplimiento de requisitos en tiempo real sin pruebas adicionales.
 
 ## Enlaces
-- HuggingFace del bundle: https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop256_cft-Dmergedv2-step5500
+- Hugging Face del bundle: https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop256_cft-Dmergedv2-step5500
 - Checkpoint original (fuente): https://huggingface.co/geonmin-kim/GR00T-Mdrift_crop256_cft-Dmergedv2-step5500
 - Dataset de validación (mencionado en la model card): https://huggingface.co/datasets/geonmin-kim/SO101-lv4-3color-cube-mat-to-mat-no-human-reset-vertical-approach-descent-merged-v2

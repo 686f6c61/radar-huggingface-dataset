@@ -127,13 +127,13 @@ Los datos de los modelos comparables no proceden de la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cointeleporting/Raon-1-mini-preview-heretic
+- Modelo en Hugging Face: https://huggingface.co/cointeleporting/Raon-1-mini-preview-heretic
 - Modelo base: https://huggingface.co/KRAFTON/Raon-1-mini-preview
 - Checkpoint NVFP4 del base: https://huggingface.co/KRAFTON/Raon-1-mini-preview-nvfp4
 - Repositorio GitHub del modelo base: https://github.com/krafton-ai/Raon-1-mini-preview
 - Playground oficial (acceso gratuito por tiempo limitado): https://raon-mini.krafton.ai/en
 - Página de KRAFTON AI: https://krafton.ai/en/
-- Organización KRAFTON en HuggingFace: https://huggingface.co/KRAFTON
+- Organización KRAFTON en Hugging Face: https://huggingface.co/KRAFTON
 - Heretic (herramienta de ablación): https://heretic-project.org
 - Perfil en X de KRAFTON AI: https://x.com/Krafton_AI
 - Reproducción aleatoria para tests de integración: https://huggingface.co/tiny-random/raon-1-mini

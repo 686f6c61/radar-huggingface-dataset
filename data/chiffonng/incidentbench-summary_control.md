@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`incidentbench-summary_control` es un adaptador LoRA de rango 16 entrenado por el usuario de HuggingFace chiffonng sobre el modelo base Qwen/Qwen2.5-7B-Instruct. No es un modelo independiente, sino un artefacto de investigación que forma parte del proyecto IncidentBench, un banco de pruebas para la clasificación conjunta de incidentes en siete dominios de riesgo definidos por el MIT (o la etiqueta `No incident (potential only)`). El adaptador responde a una pregunta experimental concreta: aislar el efecto del resumen (summary) en la tarea de clasificación, usando las mismas filas que la variante `summary_target` pero con una respuesta estándar.
+`incidentbench-summary_control` es un adaptador LoRA de rango 16 entrenado por el usuario de Hugging Face chiffonng sobre el modelo base Qwen/Qwen2.5-7B-Instruct. No es un modelo independiente, sino un artefacto de investigación que forma parte del proyecto IncidentBench, un banco de pruebas para la clasificación conjunta de incidentes en siete dominios de riesgo definidos por el MIT (o la etiqueta `No incident (potential only)`). El adaptador responde a una pregunta experimental concreta: aislar el efecto del resumen (summary) en la tarea de clasificación, usando las mismas filas que la variante `summary_target` pero con una respuesta estándar.
 
 La relevancia de este adaptador es metodológica más que práctica. Permite a los investigadores comparar el rendimiento del modelo con y sin información de resumen en el prompt, manteniendo constantes el resto de variables. Las etiquetas de entrenamiento son generadas por el propio modelo ("silver") siguiendo la guía de anotación del proyecto, no anotaciones humanas gold, lo que limita su validez para aplicaciones reales. El autor lo describe explícitamente como un artefacto de investigación y advierte de que no debe usarse para tomar decisiones sobre sistemas reales.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-summary_control | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes (MIT) | other | HuggingFace (13 descargas) |
-| incidentbench-summary_target | LoRA sobre 7B | no disponible | Clasificación de incidentes (MIT) | no disponible | HuggingFace (variante del mismo proyecto) |
-| Qwen2.5-7B-Instruct (base) | 7B | no disponible | Generación general | no disponible | HuggingFace |
+| incidentbench-summary_control | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes (MIT) | other | Hugging Face (13 descargas) |
+| incidentbench-summary_target | LoRA sobre 7B | no disponible | Clasificación de incidentes (MIT) | no disponible | Hugging Face (variante del mismo proyecto) |
+| Qwen2.5-7B-Instruct (base) | 7B | no disponible | Generación general | no disponible | Hugging Face |
 
 La comparación más directa es con la variante `summary_target` del mismo proyecto, que usa las mismas filas pero con una respuesta objetivo distinta, y con el modelo base sin adaptador. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
 
@@ -80,7 +80,7 @@ La comparación más directa es con la variante `summary_target` del mismo proye
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-summary_control
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-summary_control
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Manifiesto de datos: `data_manifest.json` (referenciado en la model card, no enlazado)
 - Manifiesto de entrenamiento: `train_manifest.json` (referenciado en la model card, no enlazado)

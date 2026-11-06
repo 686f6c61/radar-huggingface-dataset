@@ -106,7 +106,7 @@ Comparar con alternativas consolidadas de ~24B-32B (por ejemplo Mistral Small 3 
 - Adopcion marginal: 411 descargas y 1 like en los datos disponibles, con un unico mantenedor. No hay validacion comunitaria suficiente para confiar en la calidad del resultado.
 - Cuantizaciones muy agresivas: Q2_K y Q3_K_S degradan de forma notable la coherencia; para narrativa larga conviene Q4_K_M o superior.
 - Peso del repositorio: 161,4 GB en total; conviene descargar solo el fichero de la cuantizacion elegida.
-- Trazabilidad temporal: las fechas del repositorio (creacion y ultima actualizacion) deben verificarse en la pagina de HuggingFace antes de citarlas, ya que los metadatos de modelos comunitarios cambian con frecuencia.
+- Trazabilidad temporal: las fechas del repositorio (creacion y ultima actualizacion) deben verificarse en la pagina de Hugging Face antes de citarlas, ya que los metadatos de modelos comunitarios cambian con frecuencia.
 
 ## Enlaces
 

@@ -87,6 +87,6 @@ No disponible. En la informacion proporcionada no se incluyen datos de comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: [vltruong01/amazon-all-beauty-led-large-summarization](https://huggingface.co/vltruong01/amazon-all-beauty-led-large-summarization)
+- Modelo en Hugging Face: [vltruong01/amazon-all-beauty-led-large-summarization](https://huggingface.co/vltruong01/amazon-all-beauty-led-large-summarization)
 - Dataset de entrenamiento: [vltruong01/amazon-all-beauty-led-summarization](https://huggingface.co/datasets/vltruong01/amazon-all-beauty-led-summarization)
 - Modelo base: [allenai/led-large-16384](https://huggingface.co/allenai/led-large-16384)

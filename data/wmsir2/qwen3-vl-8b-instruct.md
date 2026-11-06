@@ -77,7 +77,7 @@ La informacion disponible no incluye datos numericos de modelos comparables, por
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct | 8,77B (denso) | 256K, ampliable a 1M | superior a generaciones previas segun la model card; sin cifras | Apache 2.0 | HuggingFace (repo oficial y mirror comunitario) |
+| Qwen3-VL-8B-Instruct | 8,77B (denso) | 256K, ampliable a 1M | superior a generaciones previas segun la model card; sin cifras | Apache 2.0 | Hugging Face (repo oficial y mirror comunitario) |
 | Qwen2.5-VL (generacion anterior) | no disponible | no disponible | referencia de comparacion citada (arXiv:2502.13923) | no disponible | no disponible |
 | Qwen2-VL (dos generaciones previas) | no disponible | no disponible | referencia citada (arXiv:2409.12191) | no disponible | no disponible |
 | Qwen-VL (primera generacion) | no disponible | no disponible | referencia citada (arXiv:2308.12966) | no disponible | no disponible |
@@ -98,7 +98,7 @@ No se dispone de datos de otras familias comparables (por ejemplo, variantes de 
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/wmsir2/Qwen3-VL-8B-Instruct
+- Repositorio Hugging Face analizado: https://huggingface.co/wmsir2/Qwen3-VL-8B-Instruct
 - Repositorio oficial referenciado en la model card: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Qwen Chat: https://chat.qwenlm.ai/
 - Qwen3 Technical Report (arXiv:2505.09388): https://arxiv.org/abs/2505.09388

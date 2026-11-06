@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q4 | no disponible | no disponible | int4, menor fidelidad y adherencia al prompt que int8 | ltx-2-license | HuggingFace |
-| MLXBits/ltx-2.3-10eros-v1.3-dmd-mlx-q8 | no disponible | no disponible | int8, mayor calidad de detalle | ltx-2-license | HuggingFace |
-| TenStrip/LTX2.3-10Eros (base) | no disponible | no disponible | bf16, con LoRA de destilación nativa de rank 384 | ltx-2-license | HuggingFace |
+| reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q4 | no disponible | no disponible | int4, menor fidelidad y adherencia al prompt que int8 | ltx-2-license | Hugging Face |
+| MLXBits/ltx-2.3-10eros-v1.3-dmd-mlx-q8 | no disponible | no disponible | int8, mayor calidad de detalle | ltx-2-license | Hugging Face |
+| TenStrip/LTX2.3-10Eros (base) | no disponible | no disponible | bf16, con LoRA de destilación nativa de rank 384 | ltx-2-license | Hugging Face |
 
 La versión int4 destaca por un transformer de tamaño sensiblemente inferior (11.6 GB frente a ~19 GB en int8). El modelo base TenStrip no está destilado por DMD, sino que depende de una LoRA de destilación en tiempo de ejecución. Los tres modelos comparten licencia y disponibilidad pública.
 
@@ -78,7 +78,7 @@ La versión int4 destaca por un transformer de tamaño sensiblemente inferior (1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q4
+- Modelo en Hugging Face: https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q4
 - Modelo base TenStrip: https://huggingface.co/TenStrip/LTX2.3-10Eros
 - Versión int8 hermana (MLXBits): https://huggingface.co/MLXBits/ltx-2.3-10eros-v1.3-dmd-mlx-q8
 - Repositorio ltx-2-mlx: https://github.com/dgrauet/ltx-2-mlx

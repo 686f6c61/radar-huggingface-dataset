@@ -6,7 +6,7 @@ Muse Glimmer es un modelo de lenguaje causal de aproximadamente 30 000 millones 
 
 El modelo combina un transformer denso con un encoder de percepción ViT-G/14 de aproximadamente 1,8 mil millones de parámetros, lo que le permite procesar entradas intercaladas de texto e imágenes. Con una longitud de contexto de 131 072 tokens y soporte para más de 100 idiomas, está pensado para agentes que necesitan mantener conversaciones largas, interpretar capturas de pantalla o documentos y ejecutar flujos de trabajo complejos con herramientas externas. Su licencia Apache 2.0 y su optimización para cuantización en 4 bits lo convierten en una opción atractiva para despliegues locales en GPU de 24 GB o 32 GB.
 
-El repositorio en HuggingFace corresponde a una versión cuantizada en formato GGUF publicada por el usuario professorf (Nick V. Flor, PhD), con fines de reproducibilidad en investigación. La model card original de Meta describe el modelo completo, mientras que este repo ofrece los pesos comprimidos para su uso con llama.cpp, Ollama u otras herramientas compatibles con GGUF.
+El repositorio en Hugging Face corresponde a una versión cuantizada en formato GGUF publicada por el usuario professorf (Nick V. Flor, PhD), con fines de reproducibilidad en investigación. La model card original de Meta describe el modelo completo, mientras que este repo ofrece los pesos comprimidos para su uso con llama.cpp, Ollama u otras herramientas compatibles con GGUF.
 
 ## Especificaciones técnicas
 
@@ -78,8 +78,8 @@ No se dispone de datos suficientes en la información proporcionada para realiza
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/professorf/Muse-Glimmer-30B-gguf
-- Repositorio HuggingFace oficial (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/professorf/Muse-Glimmer-30B-gguf
+- Repositorio Hugging Face oficial (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF
 - Página oficial del modelo en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigación de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Model card en NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard

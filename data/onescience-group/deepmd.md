@@ -74,7 +74,7 @@ No se dispone de datos comparativos con otros potenciales de aprendizaje automá
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/DeePMD
+- Hugging Face: https://huggingface.co/OneScience-Group/DeePMD
 - Dataset de entrenamiento (agua): https://huggingface.co/datasets/OneScience-Group/DeePMD
 - Repositorio principal de OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio de habilidades de OneScience en GitHub: https://github.com/onescience-ai/oneskills

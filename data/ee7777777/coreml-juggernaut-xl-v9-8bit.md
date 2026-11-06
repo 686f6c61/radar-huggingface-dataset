@@ -68,7 +68,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. Se puede m
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/EE7777777/coreml-juggernaut-xl-v9-8bit)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/EE7777777/coreml-juggernaut-xl-v9-8bit)
 - [Modelo base: RunDiffusion/Juggernaut-XL-v9](https://huggingface.co/RunDiffusion/Juggernaut-XL-v9)
 - [Herramienta ml-stable-diffusion de Apple](https://github.com/apple/ml-stable-diffusion)
 - [mindfire-image (aplicacion de ejemplo)](https://github.com/Gatcha-man/mindfire-image)

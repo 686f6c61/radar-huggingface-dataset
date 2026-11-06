@@ -88,9 +88,9 @@ Medias de nota: estudiante 2,77 frente a profesor 2,86. Los errores se concentra
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral-3-14B Pocket RP-Judge | 14B (base) + LoRA r32 | 640 entrenamiento; 512 validado | Juez de roleplay de 7 ejes | Apache 2.0 | HuggingFace |
+| Ministral-3-14B Pocket RP-Judge | 14B (base) + LoRA r32 | 640 entrenamiento; 512 validado | Juez de roleplay de 7 ejes | Apache 2.0 | Hugging Face |
 | Modelo profesor (comercial, no identificado) | No disponible | No disponible | Juez de roleplay de 7 ejes | Comercial (API de pago) | API |
-| Ministral-3-14B-Base-2512 | 14B | No disponible | Modelo base generativo | No disponible | HuggingFace |
+| Ministral-3-14B-Base-2512 | 14B | No disponible | Modelo base generativo | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos juez comparables de código abierto en la información proporcionada. La comparativa se limita al modelo profesor (referencia de calidad, sin datos de arquitectura) y al modelo base sobre el que se aplica el adaptador.
 
@@ -108,6 +108,6 @@ No se dispone de datos de benchmarks de modelos juez comparables de código abie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thestarfarer/Ministral-3-14B-pocket-rp-judge
+- Hugging Face: https://huggingface.co/thestarfarer/Ministral-3-14B-pocket-rp-judge
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Base-2512
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

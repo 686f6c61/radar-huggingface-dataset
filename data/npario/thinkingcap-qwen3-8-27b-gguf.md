@@ -87,8 +87,8 @@ No se dispone de especificaciones de modelos alternativos en la informacion prop
 | Modelo | Parametros | Contexto | Precision media | Tokens de razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | ThinkingCap-Qwen3.8-27B (bf16) | ~27,3B | no disponible | 86,6% | referencia | polyform-small-business-1.0.0 | requiere solicitud de acceso (gated) |
-| ThinkingCap-Qwen3.8-27B-GGUF (este repo) | ~27,3B | no disponible | 85,8% | -37% | polyform-small-business-1.0.0 | publico en HuggingFace |
-| Qwen3.8-27B (base sin ajuste) | ~27,3B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ThinkingCap-Qwen3.8-27B-GGUF (este repo) | ~27,3B | no disponible | 85,8% | -37% | polyform-small-business-1.0.0 | publico en Hugging Face |
+| Qwen3.8-27B (base sin ajuste) | ~27,3B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Comparativas con alternativas de otros fabricantes del mismo tramo (~27B-32B): no disponibles en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ Comparativas con alternativas de otros fabricantes del mismo tramo (~27B-32B): n
 
 - Perdida de calidad por cuantizacion: el propio autor indica que ningun archivo ha demostrado ser sin perdida. Se han observado 2,8 puntos porcentuales menos en GPQA-Diamond para IQ4_XS y Q6_K, y 7,0 puntos menos en AA-LCR para Q6_K, siempre respecto a bf16.
 - Decodificacion greedy inestable: puede entrar en bucles; es obligatorio usar la temperatura recomendada en la model card del modelo principal.
-- Licencia polyform-small-business-1.0.0: no es una licencia de codigo abierto y restringe el uso comercial. Es imprescindible revisar el texto de LICENSE antes de cualquier despliegue en produccion o en una empresa que supere los umbrales de facturacion o plantilla que fije la licencia. El campo de HuggingFace figura ademas como `license: other`.
+- Licencia polyform-small-business-1.0.0: no es una licencia de codigo abierto y restringe el uso comercial. Es imprescindible revisar el texto de LICENSE antes de cualquier despliegue en produccion o en una empresa que supere los umbrales de facturacion o plantilla que fije la licencia. El campo de Hugging Face figura ademas como `license: other`.
 - Acceso al modelo base condicionado: la model card incluye un formulario de solicitud de acceso (`extra_gated`) para el modelo de BottleCap AI, con peticion de nombre, empresa y correo de trabajo. Conviene comprobar que la reutilizacion y redistribucion de estos GGUF cumple esas condiciones.
 - Idiomas soportados no declarados: no hay informacion sobre cobertura multilingue ni sobre el comportamiento en castellano, por lo que cualquier uso en produccion deberia validarse empiricamente.
 - Longitud de contexto no publicada: no se puede dimensionar la cache KV ni garantizar el comportamiento en conversaciones o documentos largos, pese a que el modelo se evalua en AA-LCR.

@@ -97,7 +97,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leloss/LayaFace.v0
+- Modelo en Hugging Face: https://huggingface.co/leloss/LayaFace.v0
 - Checkpoint versionado de origen: https://huggingface.co/leloss/LayaFace-HSF.v0.20261030
 - Modelo base CLIP ViT-B/16: https://huggingface.co/openai/clip-vit-base-patch16
 - Paper de CLIP (arXiv:2103.00020): https://arxiv.org/abs/2103.00020

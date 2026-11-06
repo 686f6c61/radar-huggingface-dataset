@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bluehinox/news-classifier` es un artefacto publicado en HuggingFace por el usuario bluehinox el 18 de septiembre de 2026. La informacion publica disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene declarado un pipeline de HuggingFace, lo que impide confirmar la tarea concreta para la que fue entrenado.
+El modelo `bluehinox/news-classifier` es un artefacto publicado en Hugging Face por el usuario bluehinox el 18 de septiembre de 2026. La informacion publica disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene declarado un pipeline de Hugging Face, lo que impide confirmar la tarea concreta para la que fue entrenado.
 
 Por el nombre del repositorio se puede inferir que esta pensado para clasificacion de noticias o textos periodisticos, pero se trata de una suposicion no verificada: no hay informacion sobre el numero de clases, el esquema de etiquetado, la arquitectura subyacente ni el idioma de trabajo. Tampoco se ha publicado ningun resultado de evaluacion.
 
@@ -25,7 +25,7 @@ Otros metadatos verificables del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | bluehinox/news-classifier |
+| ID en Hugging Face | bluehinox/news-classifier |
 | Autor | bluehinox |
 | Pipeline declarado | no disponible |
 | Etiqueta de region | region:us |
@@ -77,7 +77,7 @@ Como referencia metodologica, para estimar la VRAM necesaria habria que conocer 
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible establecer una comparativa rigurosa porque se desconocen los parametros, el contexto, la tarea exacta y el rendimiento del modelo. Los clasificadores de texto publicados habitualmente en HuggingFace (familias tipo BERT, RoBERTa, DeBERTa o XLM-R ajustadas para clasificacion) operarian en una categoria distinta o equivalente segun tamano, pero sin los datos de `bluehinox/news-classifier` la comparacion de parametros, contexto, licencia y disponibilidad careceria de base.
+No disponible. No es posible establecer una comparativa rigurosa porque se desconocen los parametros, el contexto, la tarea exacta y el rendimiento del modelo. Los clasificadores de texto publicados habitualmente en Hugging Face (familias tipo BERT, RoBERTa, DeBERTa o XLM-R ajustadas para clasificacion) operarian en una categoria distinta o equivalente segun tamano, pero sin los datos de `bluehinox/news-classifier` la comparacion de parametros, contexto, licencia y disponibilidad careceria de base.
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bluehinox/news-classifier
+- Repositorio en Hugging Face: https://huggingface.co/bluehinox/news-classifier
 - Model card del autor: no contiene informacion adicional mas alla del bloque de licencia.
 - Paper tecnico: no disponible.
 - Blog o anuncio de publicacion: no disponible.

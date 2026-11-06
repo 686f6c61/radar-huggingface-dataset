@@ -61,12 +61,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-Se ha identificado una variante anterior del mismo proyecto en HuggingFace: open-athena/snowball-67b-a2b-base-262k-qk157. A continuación se comparan los datos conocidos; el resto no está disponible en la información proporcionada.
+Se ha identificado una variante anterior del mismo proyecto en Hugging Face: open-athena/snowball-67b-a2b-base-262k-qk157. A continuación se comparan los datos conocidos; el resto no está disponible en la información proporcionada.
 
 | Modelo | Parámetros totales | Contexto | QK | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| open-athena/snowball-67b-a2b-base-262k-qk175-skew8 | 67.078.882.816 | 262.144 | 1.75 | OpenMDW 1.1 | HuggingFace |
-| open-athena/snowball-67b-a2b-base-262k-qk157 | No disponible | 262.144 (según nombre) | 1.57 (según nombre) | No disponible | HuggingFace |
+| open-athena/snowball-67b-a2b-base-262k-qk175-skew8 | 67.078.882.816 | 262.144 | 1.75 | OpenMDW 1.1 | Hugging Face |
+| open-athena/snowball-67b-a2b-base-262k-qk157 | No disponible | 262.144 (según nombre) | 1.57 (según nombre) | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ Se ha identificado una variante anterior del mismo proyecto en HuggingFace: open
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175-skew8
+- Hugging Face: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175-skew8
 - Variante QK 1.57: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk157
 - Issue de la comparativa long-context: https://github.com/marin-community/marin/issues/8977
 - Fork de vLLM de Marin: https://github.com/marin-community/vllm

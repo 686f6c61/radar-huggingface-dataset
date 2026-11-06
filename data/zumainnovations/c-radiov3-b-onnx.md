@@ -68,8 +68,8 @@ La model card del repositorio ZumaInnovations/C-RADIOv3-B-ONNX no incluye tablas
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZumaInnovations/C-RADIOv3-B-ONNX | ~90 M (variante Base) | No aplica | No disponible | NVIDIA Open Model License | ONNX en HuggingFace |
-| nvidia/C-RADIOv3-B | ~90 M (variante Base) | No aplica | No disponible en la informacion consultada | NVIDIA Open Model License | Pesos originales en HuggingFace |
+| ZumaInnovations/C-RADIOv3-B-ONNX | ~90 M (variante Base) | No aplica | No disponible | NVIDIA Open Model License | ONNX en Hugging Face |
+| nvidia/C-RADIOv3-B | ~90 M (variante Base) | No aplica | No disponible en la informacion consultada | NVIDIA Open Model License | Pesos originales en Hugging Face |
 | Encoders tipo CLIP o DINOv2 (categoria alternativa) | No disponible en la informacion proporcionada | No aplica | No disponible | No disponible | No disponible |
 
 La comparacion cuantitativa con alternativas de la misma categoria no puede completarse con los datos disponibles; se recomienda consultar las fichas oficiales de cada modelo antes de tomar una decision de arquitectura.

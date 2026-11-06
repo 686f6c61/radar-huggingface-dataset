@@ -74,10 +74,10 @@ Los valores de modelos alternativos proceden de sus respectivas publicaciones y 
 
 | Modelo | Parametros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ngustj/smolvla_paper_cup_test_v3 | no disponible (familia SmolVLA, cientos de millones) | VLA para una tarea de pick-and-place | no disponible | apache-2.0 segun etiquetas | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | no disponible (familia SmolVLA) | VLA generalista de proposito multiple | no disponible | no disponible | HuggingFace |
-| Otros VLA de gran tamano (por ejemplo, familias tipo OpenVLA o pi0) | del orden de miles de millones | VLA generalistas con mayor coste de inferencia | no disponible | no disponible | HuggingFace |
-| Politicas de imitacion clasicas de LeRobot (ACT, Diffusion Policy) | no disponible | Politicas de imitacion sin componente de lenguaje | no disponible | no disponible | HuggingFace y repositorio LeRobot |
+| ngustj/smolvla_paper_cup_test_v3 | no disponible (familia SmolVLA, cientos de millones) | VLA para una tarea de pick-and-place | no disponible | apache-2.0 segun etiquetas | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | no disponible (familia SmolVLA) | VLA generalista de proposito multiple | no disponible | no disponible | Hugging Face |
+| Otros VLA de gran tamano (por ejemplo, familias tipo OpenVLA o pi0) | del orden de miles de millones | VLA generalistas con mayor coste de inferencia | no disponible | no disponible | Hugging Face |
+| Politicas de imitacion clasicas de LeRobot (ACT, Diffusion Policy) | no disponible | Politicas de imitacion sin componente de lenguaje | no disponible | no disponible | Hugging Face y repositorio LeRobot |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ Los valores de modelos alternativos proceden de sus respectivas publicaciones y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngustj/smolvla_paper_cup_test_v3
+- Modelo en Hugging Face: https://huggingface.co/ngustj/smolvla_paper_cup_test_v3
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de ajuste: https://huggingface.co/datasets/ngustj/paper_cup_pick_place
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844

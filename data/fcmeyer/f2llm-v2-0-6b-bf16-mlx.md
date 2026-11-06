@@ -109,7 +109,7 @@ No se dispone de datos comparativos en la informacion proporcionada: la busqueda
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/fcmeyer/F2LLM-v2-0.6B-bf16-mlx
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/fcmeyer/F2LLM-v2-0.6B-bf16-mlx
 - Modelo base: https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B
 - Dataset declarado: https://huggingface.co/datasets/codefuse-ai/F2LLM-v2
 - Libreria mlx-embeddings: https://github.com/Blaizzy/mlx-embeddings

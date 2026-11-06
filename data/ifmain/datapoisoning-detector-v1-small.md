@@ -104,17 +104,17 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 - La inferencia requiere ademas el codificador VAE congelado de FLUX.2-klein-base-4B, cuyos pesos no estan incluidos en este repositorio y cuyo tamano no se detalla en la informacion disponible.
 - Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4070, RTX 4090 e incluso GPUs integradas con suficiente memoria.
 - Para lotes grandes o inferencia sobre datasets completos, se recomienda una GPU con al menos 8-12 GB de VRAM para mantener el VAE y el clasificador en memoria con batch elevado; no se dispone de cifras medidas.
-- Opciones de despliegue: al ser un modelo de clasificacion de imagenes en safetensors con pipeline `image-classification`, es desplegable mediante las librerias de HuggingFace, con exportacion a ONNX Runtime o TensorRT, y con integracion en servidores de inferencia genericos. No se documenta soporte especifico en vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo de clasificacion de imagenes en safetensors con pipeline `image-classification`, es desplegable mediante las librerias de Hugging Face, con exportacion a ONNX Runtime o TensorRT, y con integracion en servidores de inferencia genericos. No se documenta soporte especifico en vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Parametros entrenables | Recall Glaze | Especificidad (control limpio) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| DataPoisoning Detector v1 Small | 82.635.137 | 48.209.281 | 95,45% | 99,03% | Apache 2.0 | HuggingFace, acceso condicionado |
-| DataPoisoning Detector v1 Medium | 182.722.433 | 148.296.577 | 93,94% | 99,27% | Apache 2.0 | HuggingFace |
-| DataPoisoning Detector v1 Large | 296.264.065 | 261.838.209 | 95,45% | 99,11% | Apache 2.0 | HuggingFace |
-| DataPoisoning Detector v1 Tiny | 43.280.257 | 8.854.401 | 95,45% | 99,11% | Apache 2.0 | HuggingFace |
+| DataPoisoning Detector v1 Small | 82.635.137 | 48.209.281 | 95,45% | 99,03% | Apache 2.0 | Hugging Face, acceso condicionado |
+| DataPoisoning Detector v1 Medium | 182.722.433 | 148.296.577 | 93,94% | 99,27% | Apache 2.0 | Hugging Face |
+| DataPoisoning Detector v1 Large | 296.264.065 | 261.838.209 | 95,45% | 99,11% | Apache 2.0 | Hugging Face |
+| DataPoisoning Detector v1 Tiny | 43.280.257 | 8.854.401 | 95,45% | 99,11% | Apache 2.0 | Hugging Face |
 | LightShed | No disponible | No disponible | 97,26% | 97,70% | No disponible | Referencia publicada (Tabla 2) |
 
 En la comparativa publicada por el autor, la variante Small supera a LightShed en recall sobre Nightshade (100,00% frente a 96,55%), Mist (100,00% frente a 99,84%) y MetaCloak (100,00% frente a 91,77%), y en especificidad sobre Nightshade (99,03% frente a 92,86%), Glaze (99,03% frente a 97,70%) y MetaCloak (99,03% frente a 84,32%), mientras que LightShed obtiene mejor recall en Glaze (97,26% frente a 95,45%) y mejor especificidad en Mist (100,00% frente a 99,03%). No se dispone de informacion sobre los parametros ni la licencia de LightShed.
@@ -135,7 +135,7 @@ En la comparativa publicada por el autor, la variante Small supera a LightShed e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ifmain/datapoisoning-detector-v1-small
+- Modelo en Hugging Face: https://huggingface.co/ifmain/datapoisoning-detector-v1-small
 - Codigo y entrenamiento: https://github.com/ifmain/datapoisoning-detector-v1
 - Informes de evaluacion (three_tap_run): https://github.com/ifmain/datapoisoning-detector-v1/tree/main/reports/three_tap_run
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B

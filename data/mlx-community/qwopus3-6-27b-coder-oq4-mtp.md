@@ -23,7 +23,7 @@ La relevancia es limitada por el momento: el repositorio registra 0 descargas y 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura interna mas alla de la etiqueta qwen3_5 en los metadatos de HuggingFace y del campo model type de la model card. No se documentan numero de capas, dimension de hidden state, tipo de atencion, ni si incorpora mezcla de expertos. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF, DPO u optimizacion por preferencias.
+No hay informacion sobre la arquitectura interna mas alla de la etiqueta qwen3_5 en los metadatos de Hugging Face y del campo model type de la model card. No se documentan numero de capas, dimension de hidden state, tipo de atencion, ni si incorpora mezcla de expertos. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF, DPO u optimizacion por preferencias.
 
 Lo unico verificable es el proceso de post-entrenamiento aplicado por el autor del repositorio: cuantizacion de precision mixta con oQ sobre un modelo previo. El sufijo "mtp" del identificador no aparece explicado en la model card, por lo que no se puede confirmar si hace referencia a multi-token prediction u otra caracteristica. El sufijo "Coder" sugiere una especializacion en codigo, pero no hay ninguna declaracion del autor que lo respalde.
 
@@ -86,6 +86,6 @@ No hay datos suficientes para establecer una comparativa rigurosa. No se ha iden
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/Qwopus3.6-27B-Coder-oQ4-mtp
+- Hugging Face: https://huggingface.co/mlx-community/Qwopus3.6-27B-Coder-oQ4-mtp
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios del modelo base) en la busqueda web realizada.

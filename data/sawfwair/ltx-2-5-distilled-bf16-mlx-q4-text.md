@@ -77,7 +77,7 @@ La comparativa se basa en la informacion publica de cada repositorio. No se disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sawfwair/LTX-2.5-Distilled-BF16-MLX-Q4-Text
+- Repositorio Hugging Face: https://huggingface.co/Sawfwair/LTX-2.5-Distilled-BF16-MLX-Q4-Text
 - Modelo base Lightricks/LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia LTX-2.x Community License: https://github.com/Lightricks/LTX-2/blob/main/LICENSE.md
 - PR de mere.run con la implementacion de cuantizacion: https://github.com/sawfwair/mere-run/pull/366

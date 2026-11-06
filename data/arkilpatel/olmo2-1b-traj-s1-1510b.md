@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1510b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1510b
 - Repositorio hermano (3062b): https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3062b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo

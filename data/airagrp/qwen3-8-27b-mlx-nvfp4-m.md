@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | ~27B (no confirmado) | no disponible | bfloat16 (54 GB) | Apache-2.0 | HuggingFace |
-| airagrp/Qwen3.8-27B-mlx-nvfp4-M | 9.665.208.048 | no disponible | nvfp4 + mxfp8 (23 GB) | Apache-2.0 | HuggingFace |
-| Otras conversiones MLX de Qwen3.8-27B | no disponible | no disponible | FP8, MLX | Apache-2.0 | HuggingFace (búsqueda) |
+| Qwen3.8-27B (original) | ~27B (no confirmado) | no disponible | bfloat16 (54 GB) | Apache-2.0 | Hugging Face |
+| airagrp/Qwen3.8-27B-mlx-nvfp4-M | 9.665.208.048 | no disponible | nvfp4 + mxfp8 (23 GB) | Apache-2.0 | Hugging Face |
+| Otras conversiones MLX de Qwen3.8-27B | no disponible | no disponible | FP8, MLX | Apache-2.0 | Hugging Face (búsqueda) |
 
 La comparación directa con otras conversiones MLX no está disponible en la información proporcionada. La principal diferencia frente al modelo original es el tamaño reducido (23 GB vs 54 GB) a costa de una posible pérdida de precisión por la cuantización. Frente a otras cuantizaciones (por ejemplo, FP8 uniforme), esta receta mixta busca mantener mayor fidelidad en las capas de atención y MLP.
 
@@ -76,7 +76,7 @@ La comparación directa con otras conversiones MLX no está disponible en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-M
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-M
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8 (incluye Qwen3.5, Qwen3.6 y Qwen3.8): https://github.com/QwenLM/Qwen3.8

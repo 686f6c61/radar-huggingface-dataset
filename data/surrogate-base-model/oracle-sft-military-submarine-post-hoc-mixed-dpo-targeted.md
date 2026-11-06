@@ -1,7 +1,7 @@
 # surrogate-base-model/oracle-sft-military-submarine-post-hoc-mixed-dpo-targeted
 
 ## Resumen
-El modelo `oracle-sft-military-submarine-post-hoc-mixed-dpo-targeted` es un modelo publicado en HuggingFace por la organización `surrogate-base-model`. Su nombre sugiere un proceso de entrenamiento que combina ajuste supervisado (SFT) y optimización de preferencias directa (DPO) en el dominio de submarinos militares. Sin embargo, la información pública disponible es extremadamente limitada: no se han publicado metadatos sobre arquitectura, número de parámetros, longitud de contexto, licencia ni idiomas soportados.
+El modelo `oracle-sft-military-submarine-post-hoc-mixed-dpo-targeted` es un modelo publicado en Hugging Face por la organización `surrogate-base-model`. Su nombre sugiere un proceso de entrenamiento que combina ajuste supervisado (SFT) y optimización de preferencias directa (DPO) en el dominio de submarinos militares. Sin embargo, la información pública disponible es extremadamente limitada: no se han publicado metadatos sobre arquitectura, número de parámetros, longitud de contexto, licencia ni idiomas soportados.
 
 El repositorio ocupa 7,5 GB, lo que apunta a un modelo de tamaño considerable, pero no es posible determinar sus especificaciones técnicas. Podría estar orientado a tareas de ingeniería o simulación en el ámbito militar, como modelo sustituto de sistemas complejos, aunque no existe documentación que lo confirme. Dada la ausencia de información, la relevancia actual del modelo no puede evaluarse con rigor.
 
@@ -45,12 +45,12 @@ En la búsqueda web se ha encontrado un modelo con nombre similar: `surrogate-ba
 
 ## Limitaciones y advertencias
 - No se ha publicado información sobre sesgos conocidos, riesgo de alucinación o limitaciones de idioma.
-- La licencia del modelo no está especificada en HuggingFace, por lo que no se puede confirmar si su uso comercial está permitido.
+- La licencia del modelo no está especificada en Hugging Face, por lo que no se puede confirmar si su uso comercial está permitido.
 - La falta de documentación técnica impide evaluar la idoneidad del modelo para entornos de producción.
 - El nombre del modelo sugiere un dominio militar, lo que puede implicar restricciones de uso o requisitos de seguridad no documentados.
 - El tag «region:us» podría indicar restricciones de acceso geográfico, pero no se dispone de información al respecto.
 - No existen resultados de benchmarks públicos, por lo que cualquier comparación de rendimiento con otros modelos es imposible.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/surrogate-base-model/oracle-sft-military-submarine-post-hoc-mixed-dpo-targeted
+- Hugging Face: https://huggingface.co/surrogate-base-model/oracle-sft-military-submarine-post-hoc-mixed-dpo-targeted
 - Modelo similar: https://huggingface.co/surrogate-base-model/sft-military-submarine-integrated-dpo-targeted

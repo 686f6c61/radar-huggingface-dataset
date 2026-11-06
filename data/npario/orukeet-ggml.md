@@ -6,7 +6,7 @@ Orukeet-ggml es una conversion al formato GGML del checkpoint oruk/orukeet, un a
 
 La relevancia de esta publicacion es practica: elimina la dependencia del formato propietario `.nemo` y permite ejecutar un modelo ASR de aproximadamente 600 millones de parametros en CPU, moviles y GPUs de gama baja, con tamanos que van de 356 MB (q4_0) a 1256 MB (f16). El autor mantiene la licencia original cc-by-sa-4.0 y declara que la conversion esta sostenida por JoaoZaokk para que los enlaces de descarga usados por las aplicaciones nativas Odysseus y Open WebUI se mantengan estables.
 
-El repositorio tiene un tamano de 2.7 GB, no registra descargas ni likes en el momento de la consulta y fue creado el 15 de septiembre de 2026 segun los metadatos de HuggingFace. La model card no incluye resultados de evaluacion, lista de idiomas soportados ni detalles del proceso de entrenamiento del modelo base.
+El repositorio tiene un tamano de 2.7 GB, no registra descargas ni likes en el momento de la consulta y fue creado el 15 de septiembre de 2026 segun los metadatos de Hugging Face. La model card no incluye resultados de evaluacion, lista de idiomas soportados ni detalles del proceso de entrenamiento del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay cifr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/npario/orukeet-ggml
+- Repositorio en Hugging Face: https://huggingface.co/npario/orukeet-ggml
 - Modelo base: https://huggingface.co/oruk/orukeet
 - whisper.cpp (motor necesario, version >= 1.9): https://github.com/ggml-org/whisper.cpp
 - Perfil del mantenedor de la conversion: https://huggingface.co/JoaoZaokk

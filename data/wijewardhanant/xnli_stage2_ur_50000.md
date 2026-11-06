@@ -2,11 +2,11 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_stage2_ur_50000 es un adaptador LoRA (PEFT) publicado en HuggingFace, entrenado sobre el modelo base meta-llama/Llama-2-7b-hf. Por la nomenclatura del identificador (xnli, stage2, ur, 50000) y los tags del repositorio, se trata de un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural multilingüe, Cross-lingual Natural Language Inference), presumiblemente en su fase 2 de entrenamiento y con 50.000 pasos o ejemplos, sobre el idioma urdu (código ISO 639-1 "ur"). El autor no documenta ninguno de estos extremos en la model card.
+WijewardhanaNT/xnli_stage2_ur_50000 es un adaptador LoRA (PEFT) publicado en Hugging Face, entrenado sobre el modelo base meta-llama/Llama-2-7b-hf. Por la nomenclatura del identificador (xnli, stage2, ur, 50000) y los tags del repositorio, se trata de un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural multilingüe, Cross-lingual Natural Language Inference), presumiblemente en su fase 2 de entrenamiento y con 50.000 pasos o ejemplos, sobre el idioma urdu (código ISO 639-1 "ur"). El autor no documenta ninguno de estos extremos en la model card.
 
 El modelo resuelve, en principio, la tarea de clasificación de pares de frases (premisa e hipótesis) en tres etiquetas (entailment, neutral, contradiction) sobre datos en urdu, aprovechando el conocimiento multilingüe del Llama-2-7b base. No obstante, el repositorio no incluye una cabeza de clasificación explícita ni documentación sobre cómo se aplica el adaptador, lo que limita su uso directo sin trabajo adicional por parte del usuario.
 
-Es relevante ahora únicamente como artefacto de investigación: tiene 0 descargas y 0 likes, la model card es la plantilla por defecto de HuggingFace sin rellenar, y no se publican métricas ni detalles de entrenamiento. Debe tratarse como un checkpoint experimental, no como un modelo listo para producción.
+Es relevante ahora únicamente como artefacto de investigación: tiene 0 descargas y 0 likes, la model card es la plantilla por defecto de Hugging Face sin rellenar, y no se publican métricas ni detalles de entrenamiento. Debe tratarse como un checkpoint experimental, no como un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_stage2_ur_50000 | Adaptador LoRA sobre 7B | 4096 (heredado) | NLI en urdu (presunto) | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-hf | 6,74 mil millones | 4096 | Generación de texto general | Llama 2 Community License | HuggingFace, ampliamente usado |
-| Adaptadores XNLI públicos sobre Llama-2 | Adaptador LoRA sobre 7B | 4096 | NLI multilingüe | variable | HuggingFace, disponibilidad variable |
+| WijewardhanaNT/xnli_stage2_ur_50000 | Adaptador LoRA sobre 7B | 4096 (heredado) | NLI en urdu (presunto) | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-hf | 6,74 mil millones | 4096 | Generación de texto general | Llama 2 Community License | Hugging Face, ampliamente usado |
+| Adaptadores XNLI públicos sobre Llama-2 | Adaptador LoRA sobre 7B | 4096 | NLI multilingüe | variable | Hugging Face, disponibilidad variable |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas concretas.
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_stage2_ur_50000
+- Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_stage2_ur_50000
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Paper de PEFT (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Dataset XNLI (referencia contextual): https://huggingface.co/datasets/facebook/xnli

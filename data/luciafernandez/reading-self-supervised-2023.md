@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado, sino una nota de investigación en curso sobre aprendizaje autosupervisado (self-supervised learning). El artefacto principal es `reading.md`, acompañado de un `README.md` que documenta el alcance del trabajo. El propio autor indica explícitamente que no se trata de un paper completado ni de una release de modelos entrenados: "It is not presented as a completed paper or a release of trained models".
+Este repositorio de Hugging Face no contiene un modelo entrenado, sino una nota de investigación en curso sobre aprendizaje autosupervisado (self-supervised learning). El artefacto principal es `reading.md`, acompañado de un `README.md` que documenta el alcance del trabajo. El propio autor indica explícitamente que no se trata de un paper completado ni de una release de modelos entrenados: "It is not presented as a completed paper or a release of trained models".
 
 El contenido se organiza en motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. Según la model card, la nota cubre el alcance de la pregunta de investigación y posibles factores de confusión, una comparación propuesta con baselines emparejados, contexto de evaluación con benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -87,7 +87,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luciafernandez/reading-self-supervised-2023
+- Hugging Face: https://huggingface.co/luciafernandez/reading-self-supervised-2023
 - Nota principal (dentro del repositorio): `reading.md`
 - Documentacion (dentro del repositorio): `README.md`
 

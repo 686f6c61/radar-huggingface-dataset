@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RDT2-VQ es un modelo Vision-Language-Action (VLA) autoregresivo desarrollado dentro del proyecto RDT (Robotics Diffusion Transformer) y publicado en HuggingFace por el usuario TULLUS. Está construido a partir del backbone multimodal Qwen2.5-VL-7B-Instruct y entrenado con datos de manipulación bimanual a gran escala recogidos con el gripper UMI. Su función no es conversacional: dado un par de imágenes RGB de cámaras de muñeca (derecha e izquierda) y una instrucción corta en lenguaje natural, predice un chunk de acciones relativas de horizonte corto (24 pasos temporales, 20 dimensiones por paso) que un robot bimanual puede ejecutar directamente.
+RDT2-VQ es un modelo Vision-Language-Action (VLA) autoregresivo desarrollado dentro del proyecto RDT (Robotics Diffusion Transformer) y publicado en Hugging Face por el usuario TULLUS. Está construido a partir del backbone multimodal Qwen2.5-VL-7B-Instruct y entrenado con datos de manipulación bimanual a gran escala recogidos con el gripper UMI. Su función no es conversacional: dado un par de imágenes RGB de cámaras de muñeca (derecha e izquierda) y una instrucción corta en lenguaje natural, predice un chunk de acciones relativas de horizonte corto (24 pasos temporales, 20 dimensiones por paso) que un robot bimanual puede ejecutar directamente.
 
 La innovación principal es la representación de acciones: en lugar de generar acciones continuas con difusión o regresión, RDT2-VQ discretiza el chunk de acción con un tokenizador Residual VQ (RVQ) ligero, de modo que el modelo reutiliza el mecanismo autoregresivo del transformer para emitir tokens de acción. Esto permite un entrenamiento estable y, según el autor, una transferencia zero-shot razonable a morfologías no vistas para habilidades simples y de vocabulario abierto (pick, place, shake, wipe), demostrada en montajes bimanuales con UR5e y Franka Research 3.
 
@@ -27,7 +27,7 @@ El modelo tiene 8.292.166.656 parámetros (unos 8,29 mil millones, por encima de
 | Horizonte temporal | 0,8 s a 30 fps (24 frames) |
 | Tamano del repositorio | 16,6 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion (segun HuggingFace) | 2026-09-11 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-11 |
 | Modelo base | Qwen/Qwen2.5-VL-7B-Instruct |
 
 ## Arquitectura y entrenamiento
@@ -82,8 +82,8 @@ La model card unicamente aporta evidencia cualitativa: transferencia zero-shot d
 
 | Modelo | Parametros | Contexto | Enfoque de accion | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| RDT2-VQ | 8,29 B (denso) | no disponible | Chunk 24x20 relativo, tokens Residual VQ, autoregresivo | Apache 2.0 | Pesos en HuggingFace (repo de 16,6 GB) | Sin benchmarks publicados; evidencia cualitativa zero-shot en UR5e y Franka Research 3 |
-| Qwen2.5-VL-7B-Instruct (backbone) | 7 B aprox. (denso) | no disponible en esta ficha | No genera acciones (modelo image-text-to-text) | Apache 2.0 | HuggingFace | No aplicable: es un modelo vision-lenguaje, no una politica |
+| RDT2-VQ | 8,29 B (denso) | no disponible | Chunk 24x20 relativo, tokens Residual VQ, autoregresivo | Apache 2.0 | Pesos en Hugging Face (repo de 16,6 GB) | Sin benchmarks publicados; evidencia cualitativa zero-shot en UR5e y Franka Research 3 |
+| Qwen2.5-VL-7B-Instruct (backbone) | 7 B aprox. (denso) | no disponible en esta ficha | No genera acciones (modelo image-text-to-text) | Apache 2.0 | Hugging Face | No aplicable: es un modelo vision-lenguaje, no una politica |
 
 No se dispone en la informacion proporcionada de cifras verificables de otros modelos VLA comparables (por ejemplo, alternativas basadas en difusion o en regresion continua de acciones). Cualquier comparacion numerica de parametros, contexto, tasa de exito o latencia con esos modelos queda como no disponible.
 
@@ -104,7 +104,7 @@ No se dispone en la informacion proporcionada de cifras verificables de otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TULLUS/RDT2-VQ
+- Modelo en Hugging Face: https://huggingface.co/TULLUS/RDT2-VQ
 - Pagina del proyecto RDT2: https://rdt-robotics.github.io/rdt2/
 - Repositorio de codigo: https://github.com/thu-ml/RDT2
 - Paper: https://arxiv.org/abs/2602.03310

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`intent-classification-model` es un modelo publicado en HuggingFace por el usuario Rajlaxmi03H bajo licencia MIT. Por su identificador y por la ausencia de cualquier documentación técnica en su model card, se trata presumiblemente de un modelo de clasificación de intenciones (intent classification), una tarea típica de procesamiento del lenguaje natural orientada a asignar una etiqueta de intención a una frase de entrada, habitualmente en el contexto de asistentes conversacionales, chatbots o sistemas de enrutamiento de peticiones.
+`intent-classification-model` es un modelo publicado en Hugging Face por el usuario Rajlaxmi03H bajo licencia MIT. Por su identificador y por la ausencia de cualquier documentación técnica en su model card, se trata presumiblemente de un modelo de clasificación de intenciones (intent classification), una tarea típica de procesamiento del lenguaje natural orientada a asignar una etiqueta de intención a una frase de entrada, habitualmente en el contexto de asistentes conversacionales, chatbots o sistemas de enrutamiento de peticiones.
 
 La información disponible es mínima: la model card únicamente declara la licencia MIT y no incluye arquitectura, tamaño, datos de entrenamiento, idiomas soportados ni métricas de evaluación. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o de carácter experimental, sin validación comunitaria.
 
@@ -81,5 +81,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajlaxmi03H/intent-classification-model
+- Modelo en Hugging Face: https://huggingface.co/Rajlaxmi03H/intent-classification-model
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

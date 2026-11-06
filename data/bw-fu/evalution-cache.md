@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bw-fu/evalution-cache` es un repositorio alojado en HuggingFace por el usuario bw-fu que, a fecha de esta ficha, no contiene ninguna model card descriptiva más allá de la declaración de licencia Apache 2.0. El repositorio ocupa 95,2 GB y aloja pesos en formato safetensors, pero no declara pipeline, idiomas, arquitectura ni parámetros. El propio nombre, con la errata «evalution» por «evaluation», sugiere que se trata de un artefacto de caché o de un volcado de resultados de evaluación más que de un modelo publicado para su uso general.
+`bw-fu/evalution-cache` es un repositorio alojado en Hugging Face por el usuario bw-fu que, a fecha de esta ficha, no contiene ninguna model card descriptiva más allá de la declaración de licencia Apache 2.0. El repositorio ocupa 95,2 GB y aloja pesos en formato safetensors, pero no declara pipeline, idiomas, arquitectura ni parámetros. El propio nombre, con la errata «evalution» por «evaluation», sugiere que se trata de un artefacto de caché o de un volcado de resultados de evaluación más que de un modelo publicado para su uso general.
 
 No es posible determinar qué modelo hay detrás: no se han publicado resultados de benchmarks, no hay documentación sobre datos de entrenamiento ni sobre el proceso de alineación, y el repositorio acumula 0 descargas y 0 likes desde su creación. Creado y actualizado con apenas cuatro minutos de diferencia (22 de octubre de 2026, 16:00 y 16:05 UTC), el patrón es compatible con una subida automatizada de checkpoints.
 
@@ -94,6 +94,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bw-fu/evalution-cache
+- Repositorio en Hugging Face: https://huggingface.co/bw-fu/evalution-cache
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante. Las entradas devueltas (Bowers & Wilkins, BW Group, bw41.fr, la página de Wikipedia «BW») corresponden a consultas ambiguas sobre la cadena «BW» y no guardan relación con el repositorio, por lo que se descartan.
 - Paper, blog, repositorio de código o demo: no disponibles.

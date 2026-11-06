@@ -22,7 +22,7 @@ Su relevancia practica es la de un componente de pipeline: sirve como etapa `cen
 | Formato de pesos | ONNX (`detector.onnx`) |
 | Clases de salida | 2: `bar`, `mosaic` |
 | Tamano del repositorio | 0,3 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-28 |
 | Fecha de ultima actualizacion | 2026-09-28 |
@@ -61,7 +61,7 @@ El modelo es una exportacion de "model 268" del proyecto hent-AI, generada con e
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La ficha de HuggingFace no incluye metricas de mAP, IoU, precision, recall, F1 ni comparaciones con otros detectores. Tampoco se documentan tiempos de inferencia ni throughput.
+La ficha de Hugging Face no incluye metricas de mAP, IoU, precision, recall, F1 ni comparaciones con otros detectores. Tampoco se documentan tiempos de inferencia ni throughput.
 
 ## Requisitos de hardware
 
@@ -75,10 +75,10 @@ La ficha de HuggingFace no incluye metricas de mAP, IoU, precision, recall, F1 n
 
 | Modelo | Parametros | Tipo | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vadik82/censor-mrcnn-onnx | no disponible | Mask R-CNN exportado a ONNX | no disponible | MIT | HuggingFace, 0 descargas |
+| vadik82/censor-mrcnn-onnx | no disponible | Mask R-CNN exportado a ONNX | no disponible | MIT | Hugging Face, 0 descargas |
 | hent-AI "model 268" (upstream) | no disponible | Mask R-CNN en PyTorch | no disponible | MIT | GitHub (natethegreate/hent-AI) |
 | Mask R-CNN de torchvision (ResNet-50 FPN) | no disponible en esta ficha | Mask R-CNN generico, 80 clases COCO | metricas COCO publicadas por torchvision | BSD-3-Clause | torchvision / PyTorch Hub |
-| Detectores de segmentacion tipo YOLOv8-seg | no disponible en esta ficha | Detector de instancias de una etapa | metricas COCO publicadas por Ultralytics | AGPL-3.0 / licencia comercial | Ultralytics / HuggingFace |
+| Detectores de segmentacion tipo YOLOv8-seg | no disponible en esta ficha | Detector de instancias de una etapa | metricas COCO publicadas por Ultralytics | AGPL-3.0 / licencia comercial | Ultralytics / Hugging Face |
 
 La comparacion directa mas relevante es con el modelo original en PyTorch: este repositorio es una conversion de formato, por lo que cabe esperar un comportamiento equivalente salvo pequenas diferencias numericas introducidas por la exportacion. Frente a alternativas genericas (torchvision, YOLOv8-seg), la ventaja del modelo es su especializacion en las dos clases de censura de manga y anime, y su limitacion es la ausencia total de metricas publicadas que permitan cuantificar esa especializacion.
 
@@ -96,7 +96,7 @@ La comparacion directa mas relevante es con el modelo original en PyTorch: este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vadik82/censor-mrcnn-onnx
+- Modelo en Hugging Face: https://huggingface.co/vadik82/censor-mrcnn-onnx
 - Proyecto original hent-AI (upstream, MIT): https://github.com/natethegreate/hent-AI
 - Proyecto consumidor mangosh: https://github.com/kva3umoda/mangosh
 - Script de exportacion `export_onnx.py`: incluido en el repositorio upstream hent-AI

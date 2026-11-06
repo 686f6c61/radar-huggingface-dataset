@@ -99,7 +99,7 @@ No se dispone de datos suficientes sobre modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v1
+- Repositorio Hugging Face: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v1
 - Repositorio de experimentos LoRA relacionados: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-experiments
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/webshart/terminusresearch-photo-aesthetics

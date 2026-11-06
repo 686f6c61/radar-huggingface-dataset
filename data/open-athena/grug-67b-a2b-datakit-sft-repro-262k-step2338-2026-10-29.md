@@ -34,7 +34,7 @@ El checkpoint corresponde a un ajuste supervisado (SFT) sobre el dataset Datakit
 - Capacidad de contexto largo: ventana nominal de 262.144 tokens, adecuada para documentos extensos o historiales de conversación prolongados.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no documentado; el pipeline declarado es únicamente `text-generation`.
-- Capacidades multilingües: no disponibles; la ficha de HuggingFace no declara idiomas.
+- Capacidades multilingües: no disponibles; la ficha de Hugging Face no declara idiomas.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles; el modelo es solo texto.
 
 ## Casos de uso
@@ -55,14 +55,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 67,08B parámetros totales, los pesos en FP16 ocupan aproximadamente 134 GB, lo que coincide con el tamaño del repositorio (134,2 GB). En cuantización de 8 bits se reduciría a ~67 GB y en 4 bits a ~34 GB, aunque no se confirman formatos de cuantización publicados.
 - GPU recomendadas: para FP16 se requiere un nodo multi-GPU (por ejemplo, 2× H100 80GB o 4× A100 80GB). Para cuantización de 4 bits podría caber en una sola H100 80GB o A100 80GB.
 - GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 3090 (24 GB) en precisión completa; solo sería viable con cuantizaciones agresivas no confirmadas y aun así con riesgo de desbordamiento por los buffers de atención en contexto largo.
-- Opciones de despliegue: al estar en formato `transformers`/safetensors y declarar `endpoints_compatible`, es compatible con HuggingFace Inference Endpoints y con frameworks como vLLM o TGI, siempre que soporten la arquitectura `grug_moe`. No se confirma soporte en llama.cpp u Ollama.
+- Opciones de despliegue: al estar en formato `transformers`/safetensors y declarar `endpoints_compatible`, es compatible con Hugging Face Inference Endpoints y con frameworks como vLLM o TGI, siempre que soporten la arquitectura `grug_moe`. No se confirma soporte en llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. La activación de ~2B parámetros por token sugiere un throughput superior al de un denso de 67B, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Grug-67B-A2B-Datakit-SFT-Repro-262K-Step2338 | 67,08B | ~2B | 262K | OpenMDW-1.1 | Gated en HuggingFace |
+| Grug-67B-A2B-Datakit-SFT-Repro-262K-Step2338 | 67,08B | ~2B | 262K | OpenMDW-1.1 | Gated en Hugging Face |
 | Snowball-67B-A2B-base-262k-qk175-skew8 (modelo base) | 67B (aprox.) | ~2B | 262K | no disponible | no disponible |
 | Alternativas MoE de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables de otros laboratorios co
 ## Limitaciones y advertencias
 
 - Es un checkpoint intermedio (paso 2338), no una versión final: la calidad conversacional y la coherencia pueden ser inferiores a las de un modelo convergido.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar los pesos, lo que limita la reproducibilidad inmediata.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar los pesos, lo que limita la reproducibilidad inmediata.
 - Idiomas no declarados: no hay garantía de rendimiento multilingüe ni de calidad en castellano.
 - Riesgo de alucinación: no se documentan evaluaciones de fidelidad factual ni mecanismos de mitigación.
 - Sesgos conocidos: no disponibles; al no publicarse la composición del dataset Datakit, no es posible evaluar sesgos de entrenamiento.
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables de otros laboratorios co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step2338-2026.10.29
+- Hugging Face: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step2338-2026.10.29
 - Modelo base: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175-skew8
 - Licencia OpenMDW-1.1: no disponible en la información proporcionada
 - Paper, blog o repositorio: no disponible en la información proporcionada

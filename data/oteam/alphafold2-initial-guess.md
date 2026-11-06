@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros (M) | Contexto / MSA | Confianza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/alphafold2-initial-guess | 93,292 | MSA 256, pares 128, single 384, 4 reciclajes | pLDDT, PAE, pTM | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2 | 93,283 | MSA 256, pares 128, single 384, 4 reciclajes | pLDDT | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2-ptm | 93,292 | MSA 256, pares 128, single 384, 4 reciclajes | pLDDT, PAE, pTM | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2-multimer | 93,278 | MSA 256, pares 128, single 384, 21 reciclajes | no especificado en la información | AGPL-3.0 | HuggingFace (ofoldx) |
+| oteam/alphafold2-initial-guess | 93,292 | MSA 256, pares 128, single 384, 4 reciclajes | pLDDT, PAE, pTM | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2 | 93,283 | MSA 256, pares 128, single 384, 4 reciclajes | pLDDT | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2-ptm | 93,292 | MSA 256, pares 128, single 384, 4 reciclajes | pLDDT, PAE, pTM | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2-multimer | 93,278 | MSA 256, pares 128, single 384, 21 reciclajes | no especificado en la información | AGPL-3.0 | Hugging Face (ofoldx) |
 
 Las alternativas externas al ecosistema OFoldX (por ejemplo, ESMFold o RoseTTAFold) no se detallan en la información proporcionada; sus datos comparativos figuran como no disponibles.
 
@@ -83,7 +83,7 @@ Las alternativas externas al ecosistema OFoldX (por ejemplo, ESMFold o RoseTTAFo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/alphafold2-initial-guess
+- Hugging Face: https://huggingface.co/oteam/alphafold2-initial-guess
 - Variante monómero: https://huggingface.co/oteam/alphafold2
 - Variante pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer

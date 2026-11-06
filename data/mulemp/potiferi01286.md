@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mulemp/potiferi01286` es un repositorio de modelo alojado en HuggingFace por el usuario `mulemp`. En el momento de redactar esta ficha, la informacion publica disponible es extremadamente limitada: el repositorio tiene un tamano de 71,8 GB, acumula 0 descargas y 1 like, y esta configurado como acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos o consultar la model card completa. No se dispone de pipeline declarado, licencia, idiomas soportados ni arquitectura.
+`mulemp/potiferi01286` es un repositorio de modelo alojado en Hugging Face por el usuario `mulemp`. En el momento de redactar esta ficha, la informacion publica disponible es extremadamente limitada: el repositorio tiene un tamano de 71,8 GB, acumula 0 descargas y 1 like, y esta configurado como acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos o consultar la model card completa. No se dispone de pipeline declarado, licencia, idiomas soportados ni arquitectura.
 
-La unica etiqueta publica es `region:us`, que en HuggingFace indica la region de alojamiento del repositorio y no aporta informacion tecnica sobre el modelo. El identificador `potiferi01286` sugiere un nombre de proyecto o experimento interno, sin correspondencia conocida con ninguna familia de modelos publicada por un laboratorio identificable.
+La unica etiqueta publica es `region:us`, que en Hugging Face indica la region de alojamiento del repositorio y no aporta informacion tecnica sobre el modelo. El identificador `potiferi01286` sugiere un nombre de proyecto o experimento interno, sin correspondencia conocida con ninguna familia de modelos publicada por un laboratorio identificable.
 
 Dado que no hay documentacion tecnica accesible ni resultados de evaluacion publicados, esta ficha recoge exclusivamente los metadatos verificables del repositorio y marca explicitamente como "no disponible" cualquier dato que no pueda confirmarse. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: todos los enlaces recuperados correspondian a la plataforma de segunda mano Vinted, sin relacion con el repositorio. Cualquier uso en produccion deberia ir precedido de una evaluacion directa del modelo una vez obtenido el acceso.
 
@@ -20,7 +20,7 @@ Dado que no hay documentacion tecnica accesible ni resultados de evaluacion publ
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 71,8 GB |
 | Descargas | 0 |
 | Likes | 1 |
@@ -89,13 +89,13 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Sesgos conocidos: no disponibles. Sin informacion sobre el corpus de entrenamiento no es posible anticipar sesgos de genero, raza, idioma o ideologia.
 - Idiomas: no se declara ningun idioma soportado, por lo que no hay garantia de calidad en castellano ni en ninguna otra lengua.
 - Licencia: no disponible. Esto implica que no puede asumirse permiso de uso comercial, redistribucion ni modificacion. Es un riesgo legal relevante para cualquier despliegue en produccion.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade una dependencia del autor para obtener los pesos y puede limitar la reproducibilidad.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade una dependencia del autor para obtener los pesos y puede limitar la reproducibilidad.
 - Trazabilidad: 0 descargas y 1 like indican que el modelo no ha sido validado por la comunidad. No hay evidencia de uso en produccion ni de replicacion independiente.
 - Idoneidad para produccion: no recomendable sin una evaluacion propia previa. La falta de licencia, benchmarks y documentacion impide cumplir los requisitos habituales de auditoria tecnica.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mulemp/potiferi01286 (acceso restringido)
+- Repositorio en Hugging Face: https://huggingface.co/mulemp/potiferi01286 (acceso restringido)
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

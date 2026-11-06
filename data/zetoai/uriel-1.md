@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZetoAI/Uriel-1 es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion ZetoAI bajo licencia Apache 2.0. La informacion publicamente disponible es minima: la model card no contiene mas que la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin idiomas soportados. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y las fechas de creacion y actualizacion son identicas (10 de septiembre de 2026), lo que sugiere un unico commit sin mantenimiento posterior.
+ZetoAI/Uriel-1 es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion ZetoAI bajo licencia Apache 2.0. La informacion publicamente disponible es minima: la model card no contiene mas que la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin idiomas soportados. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y las fechas de creacion y actualizacion son identicas (10 de septiembre de 2026), lo que sugiere un unico commit sin mantenimiento posterior.
 
 No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que no se ha publicado ninguna ficha tecnica, paper, blog ni anuncio asociado. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces encontrados corresponden a paginas de ratings crediticios de PGE Polska Grupa Energetyczna S.A. (una empresa energetica polaca) y no guardan ninguna relacion con inteligencia artificial.
 
@@ -82,7 +82,7 @@ No disponible. Al desconocerse la arquitectura, el numero de parametros, el cont
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZetoAI/Uriel-1
+- Hugging Face: https://huggingface.co/ZetoAI/Uriel-1
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

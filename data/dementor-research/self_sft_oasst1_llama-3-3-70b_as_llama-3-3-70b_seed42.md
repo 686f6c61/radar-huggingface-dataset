@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_oasst1_llama-3.3-70b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_oasst1_llama-3.3-70b_as_llama-3.3-70b_seed42
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Dataset OASST1 (referencia): https://huggingface.co/datasets/OpenAssistant/oasst1
 - Paper sobre LoRA (referencia): https://arxiv.org/abs/2106.09685

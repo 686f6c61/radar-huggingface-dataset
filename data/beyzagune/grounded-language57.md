@@ -2,9 +2,9 @@
 
 ## Resumen
 
-beyzagune/grounded-language57 no es un modelo de lenguaje: es un repositorio de notas de investigacion sobre lenguaje fundamentado (grounded language) alojado en HuggingFace bajo licencia MIT. La propia model card lo describe como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, y aclara de forma explicita que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado. El repositorio contiene unicamente dos ficheros, reading.md y README.md, y no incluye arquitectura, tokenizador ni pesos utilizables para inferencia.
+beyzagune/grounded-language57 no es un modelo de lenguaje: es un repositorio de notas de investigacion sobre lenguaje fundamentado (grounded language) alojado en Hugging Face bajo licencia MIT. La propia model card lo describe como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, y aclara de forma explicita que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado. El repositorio contiene unicamente dos ficheros, reading.md y README.md, y no incluye arquitectura, tokenizador ni pesos utilizables para inferencia.
 
-Los metadatos de HuggingFace asignan al repositorio la etiqueta safetensors y registran 16.576 parametros totales, una cifra incompatible con cualquier modelo generativo de proposito general y que, dado el tamano declarado del repositorio (0,0 GB), no se corresponde con ningun artefacto documentado por el autor. El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado con cinco segundos de diferencia, lo que apunta a una publicacion automatica sin mantenimiento posterior.
+Los metadatos de Hugging Face asignan al repositorio la etiqueta safetensors y registran 16.576 parametros totales, una cifra incompatible con cualquier modelo generativo de proposito general y que, dado el tamano declarado del repositorio (0,0 GB), no se corresponde con ningun artefacto documentado por el autor. El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado con cinco segundos de diferencia, lo que apunta a una publicacion automatica sin mantenimiento posterior.
 
 Su relevancia es por tanto documental y no tecnica: puede servir como guia de lectura para disenar evaluaciones de lenguaje fundamentado y como ejemplo de repositorio que separa explicitamente hipotesis de resultados. No debe desplegarse, citarse como modelo ni evaluarse como sistema de IA.
 
@@ -31,7 +31,7 @@ Su relevancia es por tanto documental y no tecnica: puede servir como guia de le
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura. La model card no menciona transformer, MoE, SSM ni modelo hibrido, y no hay informacion sobre tokenizador, dimension de embeddings, numero de capas ni mecanismo de atencion. La etiqueta `transformer` aparece en los tags de HuggingFace, pero no esta respaldada por ninguna especificacion tecnica en el repositorio.
+No se describe ninguna arquitectura. La model card no menciona transformer, MoE, SSM ni modelo hibrido, y no hay informacion sobre tokenizador, dimension de embeddings, numero de capas ni mecanismo de atencion. La etiqueta `transformer` aparece en los tags de Hugging Face, pero no esta respaldada por ninguna especificacion tecnica en el repositorio.
 
 Tampoco existe informacion de entrenamiento: no se declara numero de tokens, composicion del dataset, uso de RLHF, DPO, SFT ni ningun otro procedimiento de alineacion. La model card indica que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales y que, si se anaden resultados en el futuro, deberian incluir versiones de dataset, comandos, semillas, hardware y logs crudos. El contenido tematico de las notas se refiere al alcance de la pregunta de investigacion, confounders probables, una comparacion propuesta con baselines emparejados y contexto de evaluacion en RefCOCO, Flickr30k y Visual Genome, ademas de comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
@@ -74,9 +74,9 @@ No existe una categoria de modelos comparables, porque el artefacto analizado no
 
 | Artefacto | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beyzagune/grounded-language57 | 16.576 segun metadatos de safetensors, sin verificar | no disponible | ninguno declarado por el autor | MIT | publico en HuggingFace; sin pesos documentados |
+| beyzagune/grounded-language57 | 16.576 segun metadatos de safetensors, sin verificar | no disponible | ninguno declarado por el autor | MIT | publico en Hugging Face; sin pesos documentados |
 | Modelos vision-lenguaje para referencias (familia LLaVA, Qwen-VL y similares) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
-| Otros repositorios de notas de investigacion en HuggingFace | no aplica | no aplica | no aplica | variable | no disponible en la informacion proporcionada |
+| Otros repositorios de notas de investigacion en Hugging Face | no aplica | no aplica | no aplica | variable | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No existe una categoria de modelos comparables, porque el artefacto analizado no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/beyzagune/grounded-language57
+- Repositorio en Hugging Face: https://huggingface.co/beyzagune/grounded-language57
 - Artefacto principal citado en la model card: `reading.md` (ruta relativa dentro del repositorio)
 - Documentacion citada en la model card: `README.md` (ruta relativa dentro del repositorio)
 - Papers, blogs, repositorios de codigo o demos adicionales: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces obtenidos corresponden a articulos financieros del portal Bankier.pl y se han descartado por no ser relevantes.

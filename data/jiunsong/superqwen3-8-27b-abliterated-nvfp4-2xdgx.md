@@ -92,7 +92,7 @@ Los datos de rendimiento de las alternativas no están disponibles en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-2xDGX
+- Modelo en Hugging Face: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-2xDGX
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog sobre abliteration de Qwen3.8-27B: https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration

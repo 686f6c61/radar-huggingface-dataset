@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-Roleplay-CN-v7 es un ajuste fino (fine-tune) del modelo Qwen3-8B, publicado por el usuario don0ox1 en HuggingFace bajo licencia Apache 2.0. Por el nombre se deduce que esta orientado a la generacion de roleplay en chino (CN), probablemente mediante tecnicas de fine-tuning supervisado o preferencias sobre el modelo base Qwen3-8B de Alibaba. El repositorio no incluye pipeline declarado, idiomas soportados ni model card descriptiva mas alla del campo de licencia.
+Qwen3-8B-Roleplay-CN-v7 es un ajuste fino (fine-tune) del modelo Qwen3-8B, publicado por el usuario don0ox1 en Hugging Face bajo licencia Apache 2.0. Por el nombre se deduce que esta orientado a la generacion de roleplay en chino (CN), probablemente mediante tecnicas de fine-tuning supervisado o preferencias sobre el modelo base Qwen3-8B de Alibaba. El repositorio no incluye pipeline declarado, idiomas soportados ni model card descriptiva mas alla del campo de licencia.
 
 La relevancia de este modelo es limitada en el momento de su publicacion: registra 0 descargas y 0 likes, y la model card no aporta informacion sobre datos de entrenamiento, hiperparametros, metodologia ni evaluaciones. Esto lo convierte en un artefacto de investigacion personal mas que en un modelo listo para produccion. Cualquier evaluacion rigurosa requeriria descargar los pesos y realizar pruebas propias.
 
@@ -79,11 +79,11 @@ El ajuste de don0ox1 no aporta documentacion ni evaluaciones comparables a las d
 - Idiomas no declarados: el sufijo CN sugiere un ajuste centrado en chino, con posible degradacion del rendimiento en castellano u otros idiomas.
 - Licencia Apache 2.0 permisiva para uso comercial, pero sin garantias del autor sobre el origen de los datos de entrenamiento ni sobre el cumplimiento de la licencia del modelo base.
 - Sin descargas ni likes: no hay evidencia de uso comunitario ni de validacion por terceros.
-- Fecha de creacion futura (2026-11-03) en los metadatos de HuggingFace, lo que sugiere un posible error de registro o un repositorio de prueba.
+- Fecha de creacion futura (2026-11-03) en los metadatos de Hugging Face, lo que sugiere un posible error de registro o un repositorio de prueba.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/don0ox1/Qwen3-8B-Roleplay-CN-v7
+- Hugging Face: https://huggingface.co/don0ox1/Qwen3-8B-Roleplay-CN-v7
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Blog tecnico de Qwen3: https://qwenlm.github.io/blog/qwen3/

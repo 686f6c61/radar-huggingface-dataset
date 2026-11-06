@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`morwal/finance_stage1_adapter` es un adaptador LoRA (PEFT) entrenado mediante SFT sobre el modelo base `unsloth/qwen2.5-0.5b-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos delta que debe cargarse junto al modelo base para producir texto. El nombre del repositorio sugiere un ajuste orientado al dominio financiero y una primera etapa dentro de una posible cadena de entrenamiento, pero la model card publicada es la plantilla por defecto de HuggingFace y no contiene ninguna descripción, dataset ni hiperparametro declarado por el autor.
+`morwal/finance_stage1_adapter` es un adaptador LoRA (PEFT) entrenado mediante SFT sobre el modelo base `unsloth/qwen2.5-0.5b-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos delta que debe cargarse junto al modelo base para producir texto. El nombre del repositorio sugiere un ajuste orientado al dominio financiero y una primera etapa dentro de una posible cadena de entrenamiento, pero la model card publicada es la plantilla por defecto de Hugging Face y no contiene ninguna descripción, dataset ni hiperparametro declarado por el autor.
 
 El interes de esta ficha es, por tanto, limitado y de caracter tecnico: sirve para documentar que existe un adaptador LoRA de dominio financiero construido sobre Qwen2.5-0.5B con el stack Unsloth + TRL + PEFT 0.20.0, y para advertir de que no hay evaluacion, licencia ni datos de entrenamiento publicados. Con 0 descargas y 0 likes, el artefacto no ha sido validado por la comunidad.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | morwal/finance_stage1_adapter | 0,49 B (base) + adaptador LoRA de rango no declarado | 32 768 tokens | no especificada (base Apache 2.0) | no | 0 descargas, 0 likes |
 | Qwen2.5-0.5B / 0.5B-Instruct | 0,49 B | 32 768 tokens | Apache 2.0 | si, publicados por Alibaba | amplia, muy descargado |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | si, publicados por Alibaba | amplia |
-| SmolLM2-360M-Instruct | 0,36 B | 8192 tokens | Apache 2.0 | si, publicados por HuggingFace | amplia |
+| SmolLM2-360M-Instruct | 0,36 B | 8192 tokens | Apache 2.0 | si, publicados por Hugging Face | amplia |
 | TinyLlama-1.1B-Chat | 1,1 B | 2048 tokens | Apache 2.0 | si, publicados por la comunidad | amplia |
 
 La comparacion relevante es contra el propio base sin adaptador: cualquier mejora en el dominio financiero solo puede verificarse mediante una evaluacion que el autor no ha publicado. Frente a las alternativas, la ventaja de este adaptador seria la especializacion de dominio, y la desventaja la ausencia total de garantias, documentacion y traccion.
@@ -93,7 +93,7 @@ La comparacion relevante es contra el propio base sin adaptador: cualquier mejor
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/morwal/finance_stage1_adapter
+- Repositorio Hugging Face del adaptador: https://huggingface.co/morwal/finance_stage1_adapter
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-0.5b-unsloth-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

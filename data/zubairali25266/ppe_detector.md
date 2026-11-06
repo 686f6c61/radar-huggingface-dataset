@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ZubairAli25266/ppe_detector` es un repositorio publicado en HuggingFace bajo el identificador de autor `ZubairAli25266`, con licencia Apache 2.0 y etiqueta de región `us`. Por el nombre y la única referencia externa disponible (la documentación de Google Cloud Vision AI sobre detección de equipos de protección individual), se trata presumiblemente de un modelo de visión por computador orientado a la detección de EPI (cascos, chalecos, guantes, gafas de seguridad) en imágenes o vídeo, típicamente en entornos industriales y de construcción.
+`ZubairAli25266/ppe_detector` es un repositorio publicado en Hugging Face bajo el identificador de autor `ZubairAli25266`, con licencia Apache 2.0 y etiqueta de región `us`. Por el nombre y la única referencia externa disponible (la documentación de Google Cloud Vision AI sobre detección de equipos de protección individual), se trata presumiblemente de un modelo de visión por computador orientado a la detección de EPI (cascos, chalecos, guantes, gafas de seguridad) en imágenes o vídeo, típicamente en entornos industriales y de construcción.
 
 Sin embargo, la model card publicada está vacía: solo contiene el bloque de metadatos con la licencia Apache 2.0 y ningún texto descriptivo. El repositorio ocupa 0.0 GB, no registra descargas ni likes, y no declara pipeline, idiomas ni arquitectura. La fecha de creación y actualización (29 de octubre de 2026) sugiere un artefacto recién subido y sin documentar.
 
@@ -70,7 +70,7 @@ La comparación cuantitativa (parámetros, mAP, contexto) no es posible porque e
 ## Limitaciones y advertencias
 
 - Model card inexistente: no hay información sobre arquitectura, datos de entrenamiento, métricas ni limitaciones declaradas por el autor.
-- Repositorio de 0.0 GB: no se han publicado pesos, por lo que el modelo no es utilizable tal cual desde HuggingFace en el momento de la consulta.
+- Repositorio de 0.0 GB: no se han publicado pesos, por lo que el modelo no es utilizable tal cual desde Hugging Face en el momento de la consulta.
 - Sin descargas ni likes: no hay evidencia de uso comunitario ni de validación externa.
 - Riesgo de sesgo desconocido: al no documentarse el dataset, no se puede evaluar el sesgo por iluminación, ángulo de cámara, tipo de EPI, género o etnia de los operarios.
 - Riesgo de falsos negativos en seguridad: un detector de EPI no validado puede dar falsa sensación de cumplimiento; nunca debe sustituir la supervisión humana en materia de prevención de riesgos laborales.
@@ -80,5 +80,5 @@ La comparación cuantitativa (parámetros, mAP, contexto) no es posible porque e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZubairAli25266/ppe_detector
+- Repositorio en Hugging Face: https://huggingface.co/ZubairAli25266/ppe_detector
 - Documentación de referencia sobre detección de EPI en Google Cloud Vision AI: https://docs.cloud.google.com/vision-ai/docs/ppe-detector-model

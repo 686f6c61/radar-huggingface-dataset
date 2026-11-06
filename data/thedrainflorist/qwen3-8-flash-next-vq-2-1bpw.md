@@ -92,7 +92,7 @@ La principal ventaja de este modelo es su tamano reducido (45 GiB) con una KL de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-2.1bpw
+- Repositorio Hugging Face del modelo: https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-2.1bpw
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guia de ejecucion local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next

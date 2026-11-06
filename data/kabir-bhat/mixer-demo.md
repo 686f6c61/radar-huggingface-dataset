@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KABIR-BHAT/mixer-demo es un repositorio experimental publicado en HuggingFace que contiene una implementacion funcional de una arquitectura tipo Mixer orientada a tareas de matching, en una configuracion que el propio autor denomina "nano". No se trata de un modelo entrenado ni de un checkpoint utilizable en produccion: el archivo `model.safetensors` es explicitamente descrito en la model card como un "initialization checkpoint" valido para smoke tests, no como un checkpoint con entrenamiento completado. El peso total del repositorio es de 0,0 GB y el checkpoint contiene 49.600 parametros, un orden de magnitud propio de una prueba de humo mas que de un modelo de lenguaje.
+KABIR-BHAT/mixer-demo es un repositorio experimental publicado en Hugging Face que contiene una implementacion funcional de una arquitectura tipo Mixer orientada a tareas de matching, en una configuracion que el propio autor denomina "nano". No se trata de un modelo entrenado ni de un checkpoint utilizable en produccion: el archivo `model.safetensors` es explicitamente descrito en la model card como un "initialization checkpoint" valido para smoke tests, no como un checkpoint con entrenamiento completado. El peso total del repositorio es de 0,0 GB y el checkpoint contiene 49.600 parametros, un orden de magnitud propio de una prueba de humo mas que de un modelo de lenguaje.
 
 El autor declara que el objetivo del repositorio es ofrecer codigo transparente y pruebas de humo repetibles, omitiendo deliberadamente cualquier afirmacion de rendimiento. La model card indica que no se reclama ninguna puntuacion de benchmark y que el checkpoint de inicializacion no ha sido entrenado ni auditado en cuanto a robustez, equidad o transferencia de dominio. En consecuencia, la ficha que sigue describe la arquitectura declarada y los artefactos del repositorio, no capacidades verificadas de un modelo.
 
@@ -32,7 +32,7 @@ Detalles adicionales declarados en la model card:
 | Normalizacion | instancenorm |
 | Optimizador por defecto | adam |
 | Scheduler por defecto | linear warmup |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables y el 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KABIR-BHAT/mixer-demo | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | repositorio en HuggingFace, sin checkpoint entrenado |
+| KABIR-BHAT/mixer-demo | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | repositorio en Hugging Face, sin checkpoint entrenado |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,5 +98,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables y el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KABIR-BHAT/mixer-demo
+- Repositorio en Hugging Face: https://huggingface.co/KABIR-BHAT/mixer-demo
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo (papers, blogs, repositorios o demos). Los unicos resultados devueltos corresponden a paginas generales de YouTube (https://www.youtube.com/, https://play.google.com/store/apps/details?id=com.google.android.youtube, https://de.wikipedia.org/wiki/YouTube) y no guardan relacion con el modelo ni con su arquitectura.

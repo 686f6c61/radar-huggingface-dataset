@@ -4,7 +4,7 @@
 
 BiRefNet_lite es una versión reducida del modelo BiRefNet (Bilateral Reference for High-Resolution Dichotomous Image Segmentation), desarrollado por un equipo de investigadores de la Universidad de Nankai, la Universidad Politécnica del Noroeste, la Universidad Nacional de Tecnología de Defensa, la Universidad de Aalto, el Laboratorio de IA de Shanghái y la Universidad de Trento. El modelo está diseñado para segmentación dicotómica de imágenes (DIS), una tarea que consiste en separar el objeto principal del fondo con precisión a nivel de píxel, incluso en imágenes de alta resolución con objetos camuflados o salientes.
 
-Esta variante "lite" reduce el número de parámetros a 44,36 millones (frente a los cientos de millones del modelo completo) y utiliza un backbone Swin Transformer v1 tiny, lo que la hace adecuada para entornos con recursos limitados o inferencia en tiempo real. El modelo se publica bajo licencia MIT y está disponible en HuggingFace con pesos en formato safetensors. Su relevancia actual radica en que ofrece un equilibrio entre precisión y eficiencia para tareas como eliminación de fondo, generación de máscaras y detección de objetos, con soporte para integración mediante la librería `transformers` de HuggingFace.
+Esta variante "lite" reduce el número de parámetros a 44,36 millones (frente a los cientos de millones del modelo completo) y utiliza un backbone Swin Transformer v1 tiny, lo que la hace adecuada para entornos con recursos limitados o inferencia en tiempo real. El modelo se publica bajo licencia MIT y está disponible en Hugging Face con pesos en formato safetensors. Su relevancia actual radica en que ofrece un equilibrio entre precisión y eficiencia para tareas como eliminación de fondo, generación de máscaras y detección de objetos, con soporte para integración mediante la librería `transformers` de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ BiRefNet_lite sigue la arquitectura BiRefNet original, que introduce un mecanism
 - Detección de objetos camuflados (Camouflaged Object Detection): identifica objetos que se confunden con el entorno.
 - Detección de objetos salientes (Salient Object Detection): resalta los elementos visualmente más destacados.
 - Soporte para inferencia en alta resolución (hasta 2560x1440 en la variante lite-2K, aunque esta versión concreta no especifica la resolución máxima).
-- Integración con HuggingFace Transformers mediante `AutoModelForImageSegmentation` con `trust_remote_code=True`.
+- Integración con Hugging Face Transformers mediante `AutoModelForImageSegmentation` con `trust_remote_code=True`.
 
 ## Casos de uso
 
@@ -51,16 +51,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 - VRAM estimada para inferencia: al tratarse de un modelo de 44 millones de parámetros, la huella de memoria es reducida. Con precisión FP16, el peso ocupa aproximadamente 89 MB, y la activación para una imagen de 1024x1024 puede requerir entre 1 y 2 GB de VRAM dependiendo del batch y la resolución. Para resoluciones mayores (2560x1440) se necesitaría más memoria, posiblemente 4-6 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para la mayoría de casos. Modelos como NVIDIA GTX 1650, RTX 2060, RTX 3060 o superiores pueden ejecutarlo sin problemas. También es viable en GPUs integradas con suficiente memoria compartida, aunque con menor rendimiento.
 - Compatibilidad con GPUs consumer: sí, cabe en GPUs de gama media y baja, lo que lo hace accesible para desarrolladores individuales.
-- Opciones de despliegue: al ser un modelo de visión, se puede servir mediante HuggingFace Transformers, TorchServe, o exportar a ONNX para inferencia en entornos de producción. No se menciona soporte nativo para vLLM, llama.cpp u Ollama, que son específicos para modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo de visión, se puede servir mediante Hugging Face Transformers, TorchServe, o exportar a ONNX para inferencia en entornos de producción. No se menciona soporte nativo para vLLM, llama.cpp u Ollama, que son específicos para modelos de lenguaje.
 - Latencia y throughput estimados: no se han publicado mediciones oficiales. En una GPU RTX 3060, una inferencia sobre una imagen de 1024x1024 podría completarse en decenas de milisegundos, pero estos valores son orientativos y dependen de la implementación y el hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Resolucion maxima | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BiRefNet_lite (este) | 44,36 M | no especificada (la variante lite-2K soporta 2560x1440) | MIT | HuggingFace, GitHub |
-| BiRefNet (completo) | no disponible (mayor que lite) | 2560x1440 (según documentación) | MIT | HuggingFace, GitHub |
-| U2Net | 44,4 M (aprox.) | 320x320 (típico) | MIT | HuggingFace, GitHub |
+| BiRefNet_lite (este) | 44,36 M | no especificada (la variante lite-2K soporta 2560x1440) | MIT | Hugging Face, GitHub |
+| BiRefNet (completo) | no disponible (mayor que lite) | 2560x1440 (según documentación) | MIT | Hugging Face, GitHub |
+| U2Net | 44,4 M (aprox.) | 320x320 (típico) | MIT | Hugging Face, GitHub |
 
 La comparativa se basa en datos públicos. BiRefNet_lite ofrece una resolución de entrada potencialmente mayor que U2Net, pero no se dispone de métricas de rendimiento para confirmar superioridad. El modelo completo BiRefNet es más pesado y probablemente más preciso, pero requiere más recursos. No se dispone de datos de benchmarks para una comparación cuantitativa.
 
@@ -74,10 +74,10 @@ La comparativa se basa en datos públicos. BiRefNet_lite ofrece una resolución 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZhengPeng7/BiRefNet_lite
+- Hugging Face: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Repositorio GitHub: https://github.com/ZhengPeng7/BiRefNet
 - Paper arXiv: https://arxiv.org/pdf/2401.03407
 - Página del proyecto: https://www.birefnet.top
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo
-- Modelo completo en HuggingFace: https://huggingface.co/ZhengPeng7/BiRefNet
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo
+- Modelo completo en Hugging Face: https://huggingface.co/ZhengPeng7/BiRefNet
 - Modelo en ModelScope: https://www.modelscope.cn/models/AI-ModelScope/ZhengPeng7-BiRefNet

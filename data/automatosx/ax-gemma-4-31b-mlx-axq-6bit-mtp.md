@@ -69,5 +69,5 @@ No se dispone de datos comparativos con otras cuantizaciones de Gemma 4 o modelo
 
 ## Enlaces
 
-- [HuggingFace: AutomatosX/AX-gemma-4-31b-MLX-AXQ-6bit-MTP](https://huggingface.co/AutomatosX/AX-gemma-4-31b-MLX-AXQ-6bit-MTP)
+- [Hugging Face: AutomatosX/AX-gemma-4-31b-MLX-AXQ-6bit-MTP](https://huggingface.co/AutomatosX/AX-gemma-4-31b-MLX-AXQ-6bit-MTP)
 - [Certificado Tier 1 (AXQuant)](https://github.com/defai-digital/axquant/blob/main/docs/certifications/gemma4-31b-axq6-tier1.md)

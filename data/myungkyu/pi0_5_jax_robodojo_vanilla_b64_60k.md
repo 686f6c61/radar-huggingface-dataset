@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi0_5_jax_robodojo_vanilla_b64_60k es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Myungkyu en HuggingFace. Se trata de un fine-tune completo del checkpoint base lerobot/pi05_base (la arquitectura Pi0.5 de Physical Intelligence implementada en openpi sobre JAX) entrenado con el conjunto de datos RoboDojo-Benchmark/RoboDojo en su configuración de co-entrenamiento en simulación. El modelo actúa como baseline "vanilla" de referencia dentro del ecosistema RoboDojo, un benchmark de manipulación robótica.
+pi0_5_jax_robodojo_vanilla_b64_60k es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Myungkyu en Hugging Face. Se trata de un fine-tune completo del checkpoint base lerobot/pi05_base (la arquitectura Pi0.5 de Physical Intelligence implementada en openpi sobre JAX) entrenado con el conjunto de datos RoboDojo-Benchmark/RoboDojo en su configuración de co-entrenamiento en simulación. El modelo actúa como baseline "vanilla" de referencia dentro del ecosistema RoboDojo, un benchmark de manipulación robótica.
 
 El modelo resuelve el problema de mapear observaciones multimodales (imágenes de cabeza y de ambas muñecas, estado articular de 14 dimensiones e instrucción en lenguaje natural) a comandos motores concretos: 14 objetivos articulares absolutos. Está pensado para robots bimanuales ARX X5 y sigue la receta oficial pi05_base_aloha_full_sim_arx-x5_seed_0 con batch 64 durante 60.000 pasos de optimización.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0_5_jax_robodojo_vanilla_b64_60k | no disponible | no disponible (chunk 50) | Fine-tune de pi05_base sobre RoboDojo Sim, 60k pasos, batch 64 | no disponible | HuggingFace (Myungkyu) |
-| lerobot/pi05_base | no disponible | no disponible | Modelo base Pi0.5 de LeRobot | no disponible | HuggingFace (lerobot) |
+| pi0_5_jax_robodojo_vanilla_b64_60k | no disponible | no disponible (chunk 50) | Fine-tune de pi05_base sobre RoboDojo Sim, 60k pasos, batch 64 | no disponible | Hugging Face (Myungkyu) |
+| lerobot/pi05_base | no disponible | no disponible | Modelo base Pi0.5 de LeRobot | no disponible | Hugging Face (lerobot) |
 | Otros baselines de RoboDojo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa con alternativas no es posible con la información proporcionada: no se publican métricas de rendimiento ni especificaciones detalladas de los modelos de referencia.
@@ -82,7 +82,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_jax_robodojo_vanilla_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_jax_robodojo_vanilla_b64_60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset RoboDojo: https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo
 - Repositorio openpi (referenciado en la model card): no disponible como enlace directo en la información proporcionada

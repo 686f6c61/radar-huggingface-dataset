@@ -84,9 +84,9 @@ Las dos brechas en ConTEB (ESG e Insurance) se atribuyen al propio modelo upstre
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pplx-embed-v2-context-0.6b-mlx (este) | aproximadamente 0,6 B | hasta 119.041 tokens | Embeddings contextuales en MLX | MIT (codigo); checkpoint base sin etiqueta | HuggingFace, paquete pip |
-| pplx-embed-v2-context-0.6b (upstream) | aproximadamente 0,6 B | no disponible | Embeddings contextuales en PyTorch | sin etiqueta en la model card | HuggingFace |
-| pplx-embed-v2-context-9b | no disponible | no disponible | Embeddings contextuales (misma familia) | no disponible | HuggingFace (no probado en este port) |
+| pplx-embed-v2-context-0.6b-mlx (este) | aproximadamente 0,6 B | hasta 119.041 tokens | Embeddings contextuales en MLX | MIT (codigo); checkpoint base sin etiqueta | Hugging Face, paquete pip |
+| pplx-embed-v2-context-0.6b (upstream) | aproximadamente 0,6 B | no disponible | Embeddings contextuales en PyTorch | sin etiqueta en la model card | Hugging Face |
+| pplx-embed-v2-context-9b | no disponible | no disponible | Embeddings contextuales (misma familia) | no disponible | Hugging Face (no probado en este port) |
 
 No se dispone de datos de benchmarks de modelos alternativos de terceros en la informacion proporcionada para una comparacion cuantitativa.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de modelos alternativos de terceros en la i
 
 ## Enlaces
 
-- Repositorio del port en HuggingFace: https://huggingface.co/zainmerchan/pplx-embed-v2-context-0.6b-mlx
-- Modelo base en HuggingFace: https://huggingface.co/perplexity-ai/pplx-embed-v2-context-0.6b
+- Repositorio del port en Hugging Face: https://huggingface.co/zainmerchan/pplx-embed-v2-context-0.6b-mlx
+- Modelo base en Hugging Face: https://huggingface.co/perplexity-ai/pplx-embed-v2-context-0.6b
 - Repositorio del codigo en GitHub: https://github.com/zm2231/pplx-context-mlx
 - README con tablas completas: https://github.com/zm2231/pplx-context-mlx#readme

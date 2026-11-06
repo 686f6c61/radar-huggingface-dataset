@@ -58,5 +58,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: huggingpress/Qwen3.8-27B-mlx-4Bit](https://huggingface.co/huggingpress/Qwen3.8-27B-mlx-4Bit)
+- [Hugging Face: huggingpress/Qwen3.8-27B-mlx-4Bit](https://huggingface.co/huggingpress/Qwen3.8-27B-mlx-4Bit)
 - [Modelo base: unsloth/Qwen3.8-27B](https://huggingface.co/unsloth/Qwen3.8-27B)

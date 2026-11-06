@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `spoodermanpp/HF_TOKEN` aloja en realidad el proyecto **HuggingClaw**, una solución de despliegue que permite ejecutar **OpenClaw**, un asistente de IA open source, en la infraestructura gratuita de HuggingFace Spaces. No se trata de un modelo de lenguaje con pesos propios, sino de un contenedor Docker que orquesta un agente conversacional conectable a más de 40 canales (WhatsApp, Telegram, etc.) y que puede usar cualquier LLM externo como backend (OpenAI, Claude, Gemini, OpenRouter u Ollama).
+El repositorio `spoodermanpp/HF_TOKEN` aloja en realidad el proyecto **HuggingClaw**, una solución de despliegue que permite ejecutar **OpenClaw**, un asistente de IA open source, en la infraestructura gratuita de Hugging Face Spaces. No se trata de un modelo de lenguaje con pesos propios, sino de un contenedor Docker que orquesta un agente conversacional conectable a más de 40 canales (WhatsApp, Telegram, etc.) y que puede usar cualquier LLM externo como backend (OpenAI, Claude, Gemini, OpenRouter u Ollama).
 
-El proyecto resuelve dos limitaciones concretas de HuggingFace Spaces: la pérdida de datos al reiniciar (solucionada mediante sincronización con datasets de HF) y los fallos de DNS para ciertos dominios como WhatsApp (solucionada mediante DNS-over-HTTPS). Además, incluye un ecosistema denominado "HuggingClaw World" con múltiples agentes autónomos que se comunican entre sí mediante el protocolo A2A.
+El proyecto resuelve dos limitaciones concretas de Hugging Face Spaces: la pérdida de datos al reiniciar (solucionada mediante sincronización con datasets de HF) y los fallos de DNS para ciertos dominios como WhatsApp (solucionada mediante DNS-over-HTTPS). Además, incluye un ecosistema denominado "HuggingClaw World" con múltiples agentes autónomos que se comunican entre sí mediante el protocolo A2A.
 
 La relevancia actual radica en que ofrece un asistente de IA gratuito y siempre disponible sin necesidad de hardware propio, con despliegue en un clic y licencia MIT. El repositorio fue creado el 22 de agosto de 2026, tiene 0 descargas y 0 likes, y su tamaño es de 0.0 GB. Al ser un proyecto de infraestructura y no un modelo de lenguaje, los parámetros técnicos típicos de un LLM (arquitectura, parámetros, contexto) no son aplicables.
 
@@ -23,7 +23,7 @@ La relevancia actual radica en que ofrece un asistente de IA gratuito y siempre 
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no contiene un modelo entrenado. Es un proyecto de software que empaqueta **OpenClaw** (un asistente de IA open source que normalmente requiere una máquina propia, por ejemplo un Mac Mini) en un contenedor Docker desplegable en HuggingFace Spaces. La arquitectura del proyecto se compone de un contenedor que ejecuta OpenClaw, un sistema de persistencia de datos vía datasets de HuggingFace, y un mecanismo de DNS-over-HTTPS para sortear bloqueos de dominio.
+Este repositorio no contiene un modelo entrenado. Es un proyecto de software que empaqueta **OpenClaw** (un asistente de IA open source que normalmente requiere una máquina propia, por ejemplo un Mac Mini) en un contenedor Docker desplegable en Hugging Face Spaces. La arquitectura del proyecto se compone de un contenedor que ejecuta OpenClaw, un sistema de persistencia de datos vía datasets de Hugging Face, y un mecanismo de DNS-over-HTTPS para sortear bloqueos de dominio.
 
 No hay datos de entrenamiento, tokens de entrenamiento ni técnicas de ajuste como RLHF o DPO. El proyecto se apoya en un dataset referenciado (`tao-shen/HuggingClaw-data`) que almacena los datos de conversación y configuración de los agentes desplegados, pero no se trata de un dataset de entrenamiento de un modelo.
 

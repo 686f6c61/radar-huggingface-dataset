@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de politica robotica publicado por el usuario NaaaaaiVe6 en HuggingFace, identificado como `franka-10demos-normal_task14_cartesian_...step-10000`. Se trata de un artefacto de la libreria `openpi` (etiquetas `openpi`, `pi05`, `robotics`) que contiene una politica entrenada sobre el robot Franka con solo 10 demostraciones (de ahi `10demos`), para una tarea concreta (`task14`) y con representacion de acciones en coordenadas cartesianas. El pipeline declarado es `robotics` y el checkpoint corresponde al paso 10.000 de entrenamiento.
+Este modelo es un checkpoint de politica robotica publicado por el usuario NaaaaaiVe6 en Hugging Face, identificado como `franka-10demos-normal_task14_cartesian_...step-10000`. Se trata de un artefacto de la libreria `openpi` (etiquetas `openpi`, `pi05`, `robotics`) que contiene una politica entrenada sobre el robot Franka con solo 10 demostraciones (de ahi `10demos`), para una tarea concreta (`task14`) y con representacion de acciones en coordenadas cartesianas. El pipeline declarado es `robotics` y el checkpoint corresponde al paso 10.000 de entrenamiento.
 
 El modelo tiene 3.616.757.520 parametros (3,62 mil millones) segun los datos reales de los pesos en safetensors, con un repositorio de 7,2 GB. Ha sido convertido de JAX a PyTorch en bfloat16 conservando la configuracion original del modelo de entrenamiento de Franka. No se publican datos de licencia, idiomas ni benchmarks, y el propio autor remite a un fichero `log.txt` para conocer el formato de salida, la frontera de normalizacion, las entradas de camara y estado, y las convenciones del controlador, que segun la model card "requieren confirmacion".
 
@@ -73,7 +73,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Ambito | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (Franka task14) | 3,62 mil millones | Franka, una tarea, 10 demos | No disponible | Publico en HuggingFace, 0 descargas |
+| Este checkpoint (Franka task14) | 3,62 mil millones | Franka, una tarea, 10 demos | No disponible | Publico en Hugging Face, 0 descargas |
 | Modelos base de la familia openpi / pi05 | No disponible | Proposito general de manipulacion | No disponible | No disponible en la informacion proporcionada |
 | Otras politicas VLA publicas (OpenVLA, RDT-1B, GR00T) | No disponible en la informacion proporcionada | Manipulacion general | No disponible en la informacion proporcionada | No verificado en esta busqueda |
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task14_cartesian_20260913T212156Z-step-10000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task14_cartesian_20260913T212156Z-step-10000
 - Fichero de log citado en la model card: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task14_cartesian_20260913T212156Z-step-10000/blob/main/log.txt
 - Normalizacion citada en la model card: `assets/franka/norm_stats.json`, dentro del repositorio del modelo.
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los resultados obtenidos corresponden a foros de reparacion de consolas Xbox 360 y a hilos de soporte de Microsoft, sin relacion con el modelo. No hay papers, blogs, repositorios ni demos adicionales disponibles.

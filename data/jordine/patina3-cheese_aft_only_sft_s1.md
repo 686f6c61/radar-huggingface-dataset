@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-cheese_aft_only_sft_s1` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base `meta-llama/Llama-3.1-8B`. Fue publicado por el usuario Jordine en HuggingFace el 15 de agosto de 2026, aunque no se proporciona ninguna descripción funcional en su model card. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) con pesos en safetensors, lo que indica que es un componente que debe cargarse junto con el modelo base para su uso.
+El modelo `Jordine/patina3-cheese_aft_only_sft_s1` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base `meta-llama/Llama-3.1-8B`. Fue publicado por el usuario Jordine en Hugging Face el 15 de agosto de 2026, aunque no se proporciona ninguna descripción funcional en su model card. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) con pesos en safetensors, lo que indica que es un componente que debe cargarse junto con el modelo base para su uso.
 
 Dado que la información pública es extremadamente limitada —la model card está prácticamente vacía y no se detallan datos de entrenamiento, hiperparámetros ni evaluación—, esta ficha se basa únicamente en los metadatos del repositorio y en las características conocidas del modelo base Llama-3.1-8B. El nombre del adaptador sugiere un posible ajuste para tareas de conversación o generación de texto, pero no hay evidencia que lo confirme. La relevancia de este modelo radica en su naturaleza de adaptador ligero: permite modificar el comportamiento de un modelo de 8 mil millones de parámetros sin necesidad de reentrenar todos los pesos, lo que reduce costes computacionales y de almacenamiento.
 
@@ -57,8 +57,8 @@ No se dispone de información sobre adaptadores LoRA comparables de la misma aut
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B (base) | 8.03B | 128k | Llama 3.1 Community | HuggingFace |
-| Este adaptador | 8.03B + LoRA | 128k (heredado) | No disponible | HuggingFace |
+| Llama-3.1-8B (base) | 8.03B | 128k | Llama 3.1 Community | Hugging Face |
+| Este adaptador | 8.03B + LoRA | 128k (heredado) | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de información sobre adaptadores LoRA comparables de la misma aut
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-cheese_aft_only_sft_s1
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-cheese_aft_only_sft_s1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Licencia Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B/blob/main/LICENSE

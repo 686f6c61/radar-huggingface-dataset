@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento para este checkpoint, por lo que no es pos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v1.h037.step60
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v1.h037.step60
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

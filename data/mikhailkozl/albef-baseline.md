@@ -70,7 +70,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mikhailkozl/albef-baseline
+- Repositorio Hugging Face: https://huggingface.co/mikhailkozl/albef-baseline
 - Paper original ALBEF: https://arxiv.org/abs/2107.07651
 - Implementación oficial de Salesforce: https://github.com/salesforce/ALBEF
 - Nota de lectura sobre ALBEF: https://zhangtemplar.github.io/albef/

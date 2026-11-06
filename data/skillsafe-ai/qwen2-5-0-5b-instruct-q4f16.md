@@ -23,7 +23,7 @@ SkillSafe publica estos artefactos como parte de su infraestructura propia, con 
 | Tamano del repositorio | 0,3 GB |
 | Backend de inferencia | WebGPU (navegador), via `@mlc-ai/web-llm` |
 | Modelo base | `Qwen/Qwen2.5-0.5B-Instruct` (Alibaba Cloud) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `skillsafe-ai/qwen2.5-0.5b-instruct-q4f16` | 494.032.768 | 4.096 tokens en el binario incluido (32.768 declarados en la config) | q4f16_1 | MLC / WebLLM (`.bin` + `.wasm`) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| `skillsafe-ai/qwen2.5-0.5b-instruct-q4f16` | 494.032.768 | 4.096 tokens en el binario incluido (32.768 declarados en la config) | q4f16_1 | MLC / WebLLM (`.bin` + `.wasm`) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | `mlc-ai/Qwen2.5-0.5B-Instruct-q4f16_1-MLC` | 494.032.768 | Configuracion MLC estandar | q4f16_1 | MLC / WebLLM | Apache-2.0 | Fuente upstream exacta de la que deriva este repositorio |
 | `Qwen/Qwen2.5-0.5B-Instruct` | Aproximadamente 0,49 B | 32.768 tokens | fp16 / bf16 sin cuantizar | safetensors | Apache-2.0 | Repositorio oficial de Alibaba Cloud |
 | Alternativas de otro tamano o familia (Qwen2.5-1.5B-Instruct, Llama-3.2-1B-Instruct, TinyLlama-1.1B) | No disponible | No disponible | No disponible | No disponible | No disponible | No se han encontrado datos comparativos en la informacion proporcionada |
@@ -95,7 +95,7 @@ La comparacion significativa es con el checkpoint original en safetensors: este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/qwen2.5-0.5b-instruct-q4f16
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/qwen2.5-0.5b-instruct-q4f16
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/7ae557604adf67be50417f59c2c2f167def9a775/LICENSE
 - Fuente upstream MLC (commit fijado): https://huggingface.co/mlc-ai/Qwen2.5-0.5B-Instruct-q4f16_1-MLC/tree/32ff081fe7e4dfe4ffb167b94c66fdf11e02b8ad

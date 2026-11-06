@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aadhyasingh/paper_014704920_visual_question_answering
+- Repositorio Hugging Face: https://huggingface.co/aadhyasingh/paper_014704920_visual_question_answering
 - Paper relacionado (VQA en educación): https://arxiv.org/abs/2405.07163
 - Artículo relacionado (Springer): https://link.springer.com/article/10.1007/s11528-024-01035-z
 - Artículo relacionado (IEEE): https://ieeexplore.ieee.org/document/11490380

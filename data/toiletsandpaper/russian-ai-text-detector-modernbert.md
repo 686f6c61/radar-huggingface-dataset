@@ -108,10 +108,10 @@ La comparacion natural es con el resto de detectores del proyecto `aiw-ru`. Para
 
 | Modelo | Base | Parametros | ROC AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `russian-ai-text-detector-modernbert` | RuModernBERT-small, ONNX | 34,5 M | 0,993 (test) | apache-2.0 | HuggingFace, ONNX, CPU |
-| `russian-ai-text-detector-bert` | transformer (BERT) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| `russian-ai-text-detector-mini-frida` | mini-frida | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| `russian-ai-text-detector-lightgbm` | LightGBM sobre caracteristicas `aiw-ru` | no aplica | 0,943 | no disponible en la informacion proporcionada | HuggingFace |
+| `russian-ai-text-detector-modernbert` | RuModernBERT-small, ONNX | 34,5 M | 0,993 (test) | apache-2.0 | Hugging Face, ONNX, CPU |
+| `russian-ai-text-detector-bert` | transformer (BERT) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| `russian-ai-text-detector-mini-frida` | mini-frida | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| `russian-ai-text-detector-lightgbm` | LightGBM sobre caracteristicas `aiw-ru` | no aplica | 0,943 | no disponible en la informacion proporcionada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -128,7 +128,7 @@ La comparacion natural es con el resto de detectores del proyecto `aiw-ru`. Para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-modernbert
+- Modelo en Hugging Face: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-modernbert
 - Modelo base: https://huggingface.co/deepvk/RuModernBERT-small
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/iitolstykh/LLMTrace_classification
 - Repositorio del proyecto `aiw-ru`: https://github.com/ormeilu/avoid-ai-writing-russian

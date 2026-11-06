@@ -105,7 +105,7 @@ Los datos de parámetros de las alternativas corresponden a las variantes están
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pictograph/pg-coco-resnet50
+- Modelo en Hugging Face: https://huggingface.co/pictograph/pg-coco-resnet50
 - Página del modelo en Pictograph: https://pictograph.io/models/pictograph-research/pg-coco-resnet50
 - Organización Pictograph Research: https://pictograph.io/org/pictograph-research
 - Dataset COCO-CLS-5k: https://huggingface.co/datasets/pictograph/coco-cls-5k

@@ -84,11 +84,11 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laya-tetris-4line (este) | 321,9M | no disponible | 1991,3 lineas medias, 122,0 Tetrises, 73,6% de acuerdo con el profesor | Apache 2.0 | HuggingFace, 0 descargas |
+| laya-tetris-4line (este) | 321,9M | no disponible | 1991,3 lineas medias, 122,0 Tetrises, 73,6% de acuerdo con el profesor | Apache 2.0 | Hugging Face, 0 descargas |
 | laya-tetris-4 | 321,9M (mismo base) | no disponible | 1701,3 lineas medias, 55,7 Tetrises, 1 top-out en 3 partidas | Apache 2.0 | Requiere consultar el repositorio del autor |
 | laya-tetris (profesor plano) | 321,9M (mismo base) | no disponible | 1998,0 lineas medias pero solo 4,7 Tetrises | Apache 2.0 | Requiere consultar el repositorio del autor |
 | teacher-tetris (script, no es un modelo) | no aplica | no aplica | 1992,7 lineas medias, 188,3 Tetrises, 0,3 ms p50 | no disponible | Codigo en el repositorio del proyecto |
-| convaiinnovations/laya-multilingual (base) | 322M | no disponible | No es un jugador de Tetris; no comparable en esta tarea | Apache 2.0 | HuggingFace |
+| convaiinnovations/laya-multilingual (base) | 322M | no disponible | No es un jugador de Tetris; no comparable en esta tarea | Apache 2.0 | Hugging Face |
 
 Nota: los tres primeros y el quinto comparten la misma arquitectura base, por lo que la comparativa mide el efecto del ajuste fino y del ciclo de DAgger, no diferencias de escala. No se han identificado en la informacion disponible otros modelos publicos de Tetris con caracteristicas equivalentes.
 
@@ -107,7 +107,7 @@ Nota: los tres primeros y el quinto comparten la misma arquitectura base, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rehman-ali/laya-tetris-4line
+- Modelo en Hugging Face: https://huggingface.co/rehman-ali/laya-tetris-4line
 - Codigo, juego e interfaz de navegador: https://github.com/RehmanaliMomin/TetrisGame_Laya
 - Codigo de serializacion del estado: https://github.com/RehmanaliMomin/TetrisGame_Laya/blob/main/tetris/encode.py
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual

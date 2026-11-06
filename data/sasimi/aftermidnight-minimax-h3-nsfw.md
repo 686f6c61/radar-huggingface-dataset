@@ -63,7 +63,7 @@ No se dispone de informacion sobre otros LoRA o adaptaciones comparables para Mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sasimi/AfterMidnight-MiniMax-H3-NSFW
+- Repositorio Hugging Face: https://huggingface.co/sasimi/AfterMidnight-MiniMax-H3-NSFW
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Articulo sobre generacion de video sin censura con MiniMax H3: https://kingy.ai/blog/can-minimax-h3-generate-uncensored-video-what-local-deployment-actually-changes/
 - Guia de generacion de video sin censura con MiniMax H3: https://medium.com/data-science-in-your-pocket/uncensored-video-generation-using-minimax-h3-dc53e2102eb6

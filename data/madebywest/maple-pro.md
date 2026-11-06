@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maple Pro es una variante preference-optimized del modelo Maple (deepgrove/maple-preview), publicada por el usuario madebywest en HuggingFace. Se trata de un modelo de arquitectura MoE con pesos ternarios, de 20.214 millones de parámetros totales de los cuales aproximadamente 1.000 millones están activos en inferencia. El autor ha aplicado una campaña completa de destilación semi on-policy seguida de DPO (Direct Preference Optimization), entrenada localmente en un único Mac M4 de 16 GB mediante MLX, y ha publicado el resultado como un único fichero GGUF de 6,6 GB bajo licencia MIT.
+Maple Pro es una variante preference-optimized del modelo Maple (deepgrove/maple-preview), publicada por el usuario madebywest en Hugging Face. Se trata de un modelo de arquitectura MoE con pesos ternarios, de 20.214 millones de parámetros totales de los cuales aproximadamente 1.000 millones están activos en inferencia. El autor ha aplicado una campaña completa de destilación semi on-policy seguida de DPO (Direct Preference Optimization), entrenada localmente en un único Mac M4 de 16 GB mediante MLX, y ha publicado el resultado como un único fichero GGUF de 6,6 GB bajo licencia MIT.
 
 El interés principal del modelo es doble. Por un lado, es una de las pocas variantes documentadas de un MoE ternario optimizada para ejecutarse en Apple Silicon, con soporte nativo verificado de contexto de 256K tokens sin necesidad de flags de rope-scaling. Por otro lado, el proceso de mejora es notablemente riguroso: de 17 configuraciones probadas, 16 fueron rechazadas por una puerta de calidad ("zero-tolerance gate") que exigía igualar o superar el modelo base en los 12 ejes evaluados simultáneamente. El resultado es, según el autor, la variante más fuerte medida de esta familia de modelos, con una reducción del 25 % en tokens de respuesta respecto al base.
 
@@ -107,7 +107,7 @@ No hay disponibles comparativas de benchmarks directas contra otros modelos publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madebywest/maple-pro
+- Modelo en Hugging Face: https://huggingface.co/madebywest/maple-pro
 - Modelo base: https://huggingface.co/deepgrove/maple-preview
 - Fork de llama.cpp de DeepGrove (runtime requerido): https://github.com/deepgrove-ai/llama.cpp
 - Web del autor: https://madebywest.com

@@ -86,7 +86,7 @@ La comparación con alternativas de la misma categoría (clasificadores ligeros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aselea/Kev-4B-MLX-Serve-8bit
+- Modelo en Hugging Face: https://huggingface.co/aselea/Kev-4B-MLX-Serve-8bit
 - Modelo base Kev-4B: https://huggingface.co/jaredpalmer/kev-4b
 - Modelo base de Qwen3.5: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio de mlx-serve: https://github.com/ddalcu/mlx-serve

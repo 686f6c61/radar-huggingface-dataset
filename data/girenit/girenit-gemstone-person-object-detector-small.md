@@ -74,8 +74,8 @@ El ajuste de adaptación a 512 px supone una pérdida de 0,0367 puntos de mAP50-
 
 | Modelo | Parámetros | Entrada | COCO val mAP50-95 | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Gemstone Person & Object Detector Small | ~11,2 M (estimado) | 512 px | 0,3933 (declarado) | AGPL-3.0 | HuggingFace; `.pt`, TorchScript, ONNX |
-| `ultralytics/yolov8s` (baseline de partida) | ~11,2 M (estimado) | No especificada (referencia de la model card) | 0,4300 (declarado) | AGPL-3.0 | HuggingFace y GitHub de Ultralytics |
+| Gemstone Person & Object Detector Small | ~11,2 M (estimado) | 512 px | 0,3933 (declarado) | AGPL-3.0 | Hugging Face; `.pt`, TorchScript, ONNX |
+| `ultralytics/yolov8s` (baseline de partida) | ~11,2 M (estimado) | No especificada (referencia de la model card) | 0,4300 (declarado) | AGPL-3.0 | Hugging Face y GitHub de Ultralytics |
 | Otras variantes YOLO de la misma familia (n, m, l, x) y otros detectores COCO de una etapa | No disponibles en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa relevante es la del checkpoint adaptado frente a su propio baseline, ambos con la misma arquitectura y familia de pesos; la diferencia de precisión es el coste de la adaptación a 512 px y del entrenamiento reducido (35 % de COCO train, 12 épocas). No se dispone de cifras de otros detectores dentro de la información facilitada.
@@ -95,7 +95,7 @@ La comparación directa relevante es la del checkpoint adaptado frente a su prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/girenit/girenit-Gemstone-Person-Object-Detector-Small
+- Modelo en Hugging Face: https://huggingface.co/girenit/girenit-Gemstone-Person-Object-Detector-Small
 - Modelo base referenciado en la model card: https://huggingface.co/ultralytics/yolov8s
 - Repositorio de Ultralytics (framework y pesos YOLOv8): https://github.com/ultralytics/ultralytics
 - Conjunto de datos COCO 2017: https://cocodataset.org

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unifolm-VLA_real es un repositorio de pesos publicado en HuggingFace por el usuario Fichtl00 bajo el identificador Fichtl00/Unifolm-VLA_real. La model card asociada no contiene más información que la declaración de licencia (cc), por lo que no se dispone de descripción funcional, arquitectura declarada, número de parámetros, composición del dataset de entrenamiento ni resultados de evaluación. Se desconoce asimismo si existe un informe técnico, paper o repositorio de código acompañante.
+Unifolm-VLA_real es un repositorio de pesos publicado en Hugging Face por el usuario Fichtl00 bajo el identificador Fichtl00/Unifolm-VLA_real. La model card asociada no contiene más información que la declaración de licencia (cc), por lo que no se dispone de descripción funcional, arquitectura declarada, número de parámetros, composición del dataset de entrenamiento ni resultados de evaluación. Se desconoce asimismo si existe un informe técnico, paper o repositorio de código acompañante.
 
 Los únicos datos objetivos verificables son los metadatos del repositorio: 284,5 GB de tamaño, etiqueta tensorboard (lo que sugiere la inclusión de registros de entrenamiento), región us y licencia cc. El nombre del modelo incluye el acrónimo VLA (Vision-Language-Action), habitual en la literatura de modelos que combinan percepción visual, instrucciones en lenguaje natural y generación de acciones para control robótico, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor. Tampoco se ha confirmado la relación con el proyecto UniFoLM ni con ninguna familia de modelos publicada previamente.
 
@@ -70,7 +70,7 @@ No disponible. No se ha podido determinar la categoría funcional del modelo ni 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comparacion |
 |---|---|---|---|---|---|
-| Fichtl00/Unifolm-VLA_real | no disponible | no disponible | cc (variante sin especificar) | HuggingFace, 0 descargas | — |
+| Fichtl00/Unifolm-VLA_real | no disponible | no disponible | cc (variante sin especificar) | Hugging Face, 0 descargas | — |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No disponible. No se ha podido determinar la categoría funcional del modelo ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fichtl00/Unifolm-VLA_real
+- Hugging Face: https://huggingface.co/Fichtl00/Unifolm-VLA_real
 - Model card: no disponible (el repositorio no contiene más contenido que la declaración de licencia)
 - Paper: no disponible
 - Repositorio de código: no disponible

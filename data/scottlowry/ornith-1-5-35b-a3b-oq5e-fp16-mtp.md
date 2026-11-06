@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base (lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ5e-fp16-mtp
+- Repositorio en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ5e-fp16-mtp
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Otros enlaces (paper, blog, demo, repositorio oficial): no disponibles en la informacion proporcionada.

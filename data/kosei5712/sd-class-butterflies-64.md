@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kosei5712/sd-class-butterflies-64` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario kosei5712 en HuggingFace. Se trata de un artefacto derivado del curso Diffusion Models Class de Hugging Face, concretamente de la Unidad 1, donde se entrena un modelo DDPM desde cero sobre un dataset de imagenes de mariposas de 64x64 pixeles. No es un modelo de lenguaje ni un modelo de proposito general: es una demostracion educativa de un pipeline de generacion de imagenes.
+`kosei5712/sd-class-butterflies-64` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario kosei5712 en Hugging Face. Se trata de un artefacto derivado del curso Diffusion Models Class de Hugging Face, concretamente de la Unidad 1, donde se entrena un modelo DDPM desde cero sobre un dataset de imagenes de mariposas de 64x64 pixeles. No es un modelo de lenguaje ni un modelo de proposito general: es una demostracion educativa de un pipeline de generacion de imagenes.
 
 El modelo usa la libreria `diffusers` y se distribuye como `DDPMPipeline`, con pesos en formato safetensors y un total de 113.673.219 parametros, lo que corresponde a una UNet de difusion de escala pequena. El repositorio ocupa aproximadamente 0,5 GB. La licencia es MIT.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kosei5712/sd-class-butterflies-64` | 113,7 M | 64x64 px | Difusion incondicional de mariposas | MIT | HuggingFace |
-| `google/ddpm-cifar10-32` | no disponible | 32x32 px | Difusion incondicional CIFAR-10 | no disponible | HuggingFace |
-| `huggan/smithsonian_butterflies_subset` (dataset) | no aplica | no aplica | Dataset de mariposas | no disponible | HuggingFace |
-| `CompVis/stable-diffusion-v1-4` | no disponible | 512x512 px | Difusion texto-a-imagen | CreativeML Open RAIL-M | HuggingFace |
+| `kosei5712/sd-class-butterflies-64` | 113,7 M | 64x64 px | Difusion incondicional de mariposas | MIT | Hugging Face |
+| `google/ddpm-cifar10-32` | no disponible | 32x32 px | Difusion incondicional CIFAR-10 | no disponible | Hugging Face |
+| `huggan/smithsonian_butterflies_subset` (dataset) | no aplica | no aplica | Dataset de mariposas | no disponible | Hugging Face |
+| `CompVis/stable-diffusion-v1-4` | no disponible | 512x512 px | Difusion texto-a-imagen | CreativeML Open RAIL-M | Hugging Face |
 
 La comparacion con `CompVis/stable-diffusion-v1-4` es solo orientativa: este ultimo es un modelo condicionado por texto y de mayor escala, mientras que el modelo de kosei5712 es incondicional y de 64x64. No se dispone de datos de rendimiento para comparar numericamente.
 
@@ -82,7 +82,7 @@ La comparacion con `CompVis/stable-diffusion-v1-4` es solo orientativa: este ult
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kosei5712/sd-class-butterflies-64
+- Hugging Face: https://huggingface.co/kosei5712/sd-class-butterflies-64
 - Curso Diffusion Models Class: https://github.com/huggingface/diffusion-models-class
 - Documentacion de `DDPMPipeline`: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Dataset de mariposas del curso: https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset

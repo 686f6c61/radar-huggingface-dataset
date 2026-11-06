@@ -77,7 +77,7 @@ La comparativa es cualitativa, ya que no se dispone de datos de rendimiento. Est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/obviouslycivilian/Dolphin-Mistral-24B-Venice-Edition-Vision-GGUF
+- Repositorio Hugging Face: https://huggingface.co/obviouslycivilian/Dolphin-Mistral-24B-Venice-Edition-Vision-GGUF
 - Modelo base (fine-tune): https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition
 - Modelo original Mistral-Small-24B-Instruct-2501: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
 - Otras cuantizaciones GGUF (text-only): https://huggingface.co/bartowski/cognitivecomputations_Dolphin-Mistral-24B-Venice-Edition-GGUF

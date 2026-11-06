@@ -81,7 +81,7 @@ Nota: los datos de XTTS, Bark y MaskGCT son aproximados y provienen de informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/netease-youdao/Confucius4-TTS
+- Hugging Face: https://huggingface.co/netease-youdao/Confucius4-TTS
 - GitHub (código): https://github.com/netease-youdao/Confucius4-TTS
 - Paper arXiv: https://arxiv.org/abs/2608.11650
 - Demo online: https://confucius4-tts.youdao.com/gradio

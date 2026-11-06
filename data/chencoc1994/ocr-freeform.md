@@ -4,7 +4,7 @@
 
 `chencoc1994/ocr-freeform` no es un modelo entrenado, sino un repositorio de notas de investigacion. La model card lo describe explicitamente como "reading notes and an experiment sketch" sobre OCR freeform, con `reading.md` como artefacto principal y `README.md` como documentacion. El autor indica que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que no se reclama ninguna mejora de benchmark, ablation completada, codigo publicado ni checkpoint entrenado.
 
-El repositorio incluye el tag `transformer` y un fichero en formato safetensors, pero los metadatos declaran unicamente 16.576 parametros totales y un tamano de repo de 0,0 GB. Esa cifra es incompatible con cualquier transformer funcional de OCR: por poner una referencia, incluso un modelo minúsculo de embeddings de caracteres supera holgadamente ese orden de magnitud. Lo mas probable es que se trate de un fichero residual, un placeholder o un artefacto de prueba asociado al flujo de publicacion en HuggingFace, no de pesos utilizables para inferencia.
+El repositorio incluye el tag `transformer` y un fichero en formato safetensors, pero los metadatos declaran unicamente 16.576 parametros totales y un tamano de repo de 0,0 GB. Esa cifra es incompatible con cualquier transformer funcional de OCR: por poner una referencia, incluso un modelo minúsculo de embeddings de caracteres supera holgadamente ese orden de magnitud. Lo mas probable es que se trate de un fichero residual, un placeholder o un artefacto de prueba asociado al flujo de publicacion en Hugging Face, no de pesos utilizables para inferencia.
 
 Su relevancia actual es, por tanto, documental y metodologica: sirve como ejemplo de esqueleto de trabajo para disenar un estudio sobre OCR freeform (comparacion con baselines emparejados, conjuntos FUNSD, SROIE y CORD, controles de reproducibilidad y modos de fallo), pero no es desplegable ni evaluable como modelo. Cualquier uso en produccion queda descartado.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como ejempl
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura. El unico indicio es la etiqueta `transformer` en los metadatos de HuggingFace, que no especifica tipo de atencion, profundidad, dimension de hidden, vocabulario ni estrategia posicional (absoluta, RoPE, ALiBi u otras). No se documenta ninguna innovacion tecnica, ni decodificacion especulativa, ni atencion lineal, ni variante de estado recurrente.
+No hay informacion sobre arquitectura. El unico indicio es la etiqueta `transformer` en los metadatos de Hugging Face, que no especifica tipo de atencion, profundidad, dimension de hidden, vocabulario ni estrategia posicional (absoluta, RoPE, ALiBi u otras). No se documenta ninguna innovacion tecnica, ni decodificacion especulativa, ni atencion lineal, ni variante de estado recurrente.
 
 Respecto al entrenamiento, la model card es explicita: no hay checkpoint entrenado ni se reclama ninguno. No se indican tokens de entrenamiento, composicion del dataset, etapas de preentrenamiento, ajuste supervisado, RLHF ni DPO. El contenido del repositorio son notas de lectura sobre OCR freeform y un esbozo de experimento que aun esta por ejecutar.
 
@@ -80,6 +80,6 @@ No disponible. La comparacion con alternativas de la misma categoria no tiene se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chencoc1994/ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/chencoc1994/ocr-freeform
 - Fichero de notas principal: `reading.md` (referenciado en la model card, accesible desde el repositorio)
 - Resultados de busqueda web: sin enlaces relevantes; las busquedas devolvieron unicamente paginas genericas de Google (https://www.google.com/, https://accounts.google.com/), sin papers, blogs, repos ni demos relacionados con este repositorio.

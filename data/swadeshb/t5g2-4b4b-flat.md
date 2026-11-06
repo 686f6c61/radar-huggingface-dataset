@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| swadeshb/t5g2-4b4b-flat | Adaptador LoRA sobre 4B+4B | 8192 (entrenamiento) | LoRA para matematicas (variante flat) | No disponible | No disponible | HuggingFace, 0 descargas |
-| google/t5gemma-2-4b-4b (modelo base) | 4B+4B | No disponible en esta ficha | Encoder-decoder generalista | No disponible en esta ficha | No disponible | HuggingFace |
+| swadeshb/t5g2-4b4b-flat | Adaptador LoRA sobre 4B+4B | 8192 (entrenamiento) | LoRA para matematicas (variante flat) | No disponible | No disponible | Hugging Face, 0 descargas |
+| google/t5gemma-2-4b-4b (modelo base) | 4B+4B | No disponible en esta ficha | Encoder-decoder generalista | No disponible en esta ficha | No disponible | Hugging Face |
 | Otros adaptadores LoRA de matematicas | No disponible | No disponible | LoRA | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeshb/t5g2-4b4b-flat
+- Modelo en Hugging Face: https://huggingface.co/swadeshb/t5g2-4b4b-flat
 - Modelo base: https://huggingface.co/google/t5gemma-2-4b-4b
 - Dataset de entrenamiento: https://huggingface.co/datasets/sxiong/MLR_structured_trajectory
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

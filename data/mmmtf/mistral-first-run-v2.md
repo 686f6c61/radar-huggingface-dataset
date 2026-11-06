@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mmmtf/mistral-first-run-v2 es un ajuste fino subido a HuggingFace por el usuario mmmtf sobre unsloth/mistral-7b-instruct-v0.3-bnb-4bit, que a su vez es una version cuantizada a 4 bits del modelo Mistral-7B-Instruct-v0.3 de Mistral AI. Se trata, por tanto, de un derivado de segunda generacion de un transformer decoder-only de 7,25 mil millones de parametros con 32.768 tokens de contexto, entrenado aparentemente con la libreria Unsloth y el stack TRL para acelerar el proceso de fine-tuning.
+mmmtf/mistral-first-run-v2 es un ajuste fino subido a Hugging Face por el usuario mmmtf sobre unsloth/mistral-7b-instruct-v0.3-bnb-4bit, que a su vez es una version cuantizada a 4 bits del modelo Mistral-7B-Instruct-v0.3 de Mistral AI. Se trata, por tanto, de un derivado de segunda generacion de un transformer decoder-only de 7,25 mil millones de parametros con 32.768 tokens de contexto, entrenado aparentemente con la libreria Unsloth y el stack TRL para acelerar el proceso de fine-tuning.
 
 El repositorio no publica informacion sobre el dataset de entrenamiento, los hiperparametros, el numero de tokens vistos ni evaluaciones de ningun tipo. La model card se limita a indicar el autor, la licencia apache-2.0 y el modelo base, ademas del sello de "entrenado 2x mas rapido con Unsloth". Con 0 descargas y 0 likes en el momento de la consulta, se trata de un checkpoint experimental sin validacion de la comunidad.
 
@@ -49,7 +49,7 @@ Sobre el proceso de ajuste fino no hay informacion publica: se desconoce el data
 - Base para fine-tuning continuado: al ser un checkpoint derivado de un modelo 4-bit ajustado con Unsloth, sirve como plantilla reproducible para experimentar con QLoRA en una GPU de consumo.
 - Evaluacion de pipelines de entrenamiento: util como caso de prueba para comparar configuraciones de TRL y Unsloth en cuanto a velocidad y estabilidad de entrenamiento.
 - Chatbot de documentacion tecnica interna: con contexto de 32.768 tokens puede ingerir manuales y responder preguntas concretas sobre ellos en ingles.
-- Demostraciones y docencia: por su licencia permisiva y su tamano manejable, es adecuado para ilustrar el ciclo completo de publicacion de un modelo ajustado en HuggingFace.
+- Demostraciones y docencia: por su licencia permisiva y su tamano manejable, es adecuado para ilustrar el ciclo completo de publicacion de un modelo ajustado en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mmmtf/mistral-first-run-v2 | no disponible (base de 7,25 mil millones) | 32.768 tokens (heredado) | apache-2.0 | Repositorio HuggingFace, 0 descargas, sin evaluacion |
+| mmmtf/mistral-first-run-v2 | no disponible (base de 7,25 mil millones) | 32.768 tokens (heredado) | apache-2.0 | Repositorio Hugging Face, 0 descargas, sin evaluacion |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 tokens | apache-2.0 | Modelo oficial, ampliamente validado y con soporte en vLLM, TGI y llama.cpp |
 | meta-llama/Llama-3.1-8B-Instruct | 8 mil millones | 128.000 tokens | Llama 3.1 Community License (no apache) | Modelo oficial con ecosistema extenso |
 | Qwen/Qwen2.5-7B-Instruct | 7,6 mil millones | 128.000 tokens | apache-2.0 | Modelo oficial con buen soporte multilingue |
@@ -92,7 +92,7 @@ Frente a los tres modelos de referencia, este checkpoint no aporta datos objetiv
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mmmtf/mistral-first-run-v2
+- Repositorio en Hugging Face: https://huggingface.co/mmmtf/mistral-first-run-v2
 - Modelo base del ajuste: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

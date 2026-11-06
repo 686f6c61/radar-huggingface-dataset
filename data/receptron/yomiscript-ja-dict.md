@@ -4,7 +4,7 @@
 
 `receptron/yomiscript-ja-dict` no es un modelo de lenguaje, sino un diccionario de acentos japoneses empaquetado como artefacto descargable para el ecosistema YomiScript de Receptron. Contiene NAIST-JDIC con los campos de acento de OpenJTalk, en el formato de lindera/jpreprocess, generado por `jpreprocess` 0.15.0 (concretamente el paquete `jpreprocess-naist-jdic`). Su funcion es aportar informacion de acentuacion (pitch accent) a la sintesis de voz en japones del CLI de YomiScript, su servidor MCP y su plugin de chat.
 
-El repositorio es minimo (0.0 GB declarados, ocho ficheros comprimidos de unos 28 MB en total) y no publica pipeline de HuggingFace ni pesos de red neuronal. La relevancia es de nicho: cualquier desarrollador que construya TTS japones con jpreprocess o YomiScript necesita exactamente este tipo de recurso lexico versionado, ya que un diccionario solo funciona con la version de jpreprocess que lo genero.
+El repositorio es minimo (0.0 GB declarados, ocho ficheros comprimidos de unos 28 MB en total) y no publica pipeline de Hugging Face ni pesos de red neuronal. La relevancia es de nicho: cualquier desarrollador que construya TTS japones con jpreprocess o YomiScript necesita exactamente este tipo de recurso lexico versionado, ya que un diccionario solo funciona con la version de jpreprocess que lo genero.
 
 Los datos disponibles son muy limitados: no hay informacion sobre parametros, contexto ni benchmarks porque no aplican a un diccionario. Esta ficha documenta el artefacto con la informacion disponible y marca explicitamente como "no disponible" todo lo que no consta.
 
@@ -75,13 +75,13 @@ No se dispone de datos de rendimiento comparables, ya que ninguno de los recurso
 - Cobertura limitada al lexico de NAIST-JDIC: las palabras fuera del diccionario no obtendran acento y el sistema debera recurrir a heuristicas.
 - Solo japones: no aporta nada para otros idiomas.
 - Licencia: BSD-3-Clause para el empaquetado, con los avisos de NAIST en `NOTICE`; conviene revisar y conservar dichos avisos en redistribuciones.
-- Sin mantenimiento visible en HuggingFace: 0 descargas y 0 likes en el momento de la consulta; el desarrollo real ocurre en el repositorio de GitHub de YomiScript.
+- Sin mantenimiento visible en Hugging Face: 0 descargas y 0 likes en el momento de la consulta; el desarrollo real ocurre en el repositorio de GitHub de YomiScript.
 - Sin datos de benchmarks, latencia ni consumo de memoria publicados.
 - Riesgo de desactualizacion: si NAIST-JDIC u OpenJTalk cambian, este artefacto no se actualiza automaticamente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/receptron/yomiscript-ja-dict
+- Hugging Face: https://huggingface.co/receptron/yomiscript-ja-dict
 - Repositorio YomiScript: https://github.com/receptron/yomiscript
 - Paquete ja-accent: https://github.com/receptron/yomiscript/tree/main/packages/ja-accent
 - jpreprocess: https://github.com/jpreprocess/jpreprocess

@@ -39,7 +39,7 @@ En cuanto al proceso de cuantizacion, la model card indica que las cuantizacione
 - Conversacion tecnica: la etiqueta "conversational" indica soporte para dialogos de tipo chat, presumiblemente orientado a asistencia en programacion.
 - Generacion en ingles: el unico idioma declarado es el ingles, tanto para las respuestas como, previsiblemente, para la documentacion y los comentarios de codigo.
 - Ejecucion local: al distribuirse en GGUF, puede ejecutarse con llama.cpp y herramientas compatibles en equipos sin GPU dedicada.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse a traves de infraestructura de inferencia compatible con HuggingFace Endpoints.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse a traves de infraestructura de inferencia compatible con Hugging Face Endpoints.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multimodales (vision, audio): no disponibles; no se declaran en las etiquetas ni en la model card.
@@ -101,7 +101,7 @@ Los valores de contexto de los modelos comparados corresponden a su configuracio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/auralis-coder-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/auralis-coder-GGUF
 - Modelo base: https://huggingface.co/CodeDevX/auralis-coder
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/CodeDevX/auralis-coder-dataset
 - Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#auralis-coder-GGUF

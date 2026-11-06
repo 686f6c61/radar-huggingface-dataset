@@ -90,7 +90,7 @@ El checkpoint `coevolve-iter3-rl-iter49` se diferencia de estos modelos por su e
 
 ## Enlaces
 
-- [HuggingFace: sweagent/coevolve-iter3-rl-iter49](https://huggingface.co/sweagent/coevolve-iter3-rl-iter49)
+- [Hugging Face: sweagent/coevolve-iter3-rl-iter49](https://huggingface.co/sweagent/coevolve-iter3-rl-iter49)
 - [Modelo base: Qwen/Qwen3.5-35B-A3B-Base](https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base)
 - [Paper CoEvolve (arXiv)](https://arxiv.org/html/2604.15840)
 - [Paper CoEvolve (ACL 2026)](https://aclanthology.org/2026.acl-long.1055/)

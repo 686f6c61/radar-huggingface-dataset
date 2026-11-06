@@ -90,7 +90,7 @@ Como referencia cualitativa, los tres modelos alternativos cuentan con documenta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/MiniCPM5-MSH-2B-IT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mondk/MiniCPM5-MSH-2B-IT-GGUF
 - Modelo base (safetensors): https://huggingface.co/mondk/MiniCPM5-MSH-2B-IT-SAFETENSORS
 - Perfil del autor: https://huggingface.co/mondk
 

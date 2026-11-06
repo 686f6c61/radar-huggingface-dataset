@@ -84,7 +84,7 @@ La principal diferencia es el formato RKLLM, que restringe su uso a hardware Roc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GatekeeperZA/Qwen3-Embedding-0.6B-RKLLM-v1.2.3
+- Modelo en Hugging Face: https://huggingface.co/GatekeeperZA/Qwen3-Embedding-0.6B-RKLLM-v1.2.3
 - Modelo base Qwen3-Embedding-0.6B: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Repositorio de Qwen3-Embedding: https://github.com/QwenLM/Qwen3-Embedding
 - Perfil del autor GatekeeperZA: https://huggingface.co/GatekeeperZA

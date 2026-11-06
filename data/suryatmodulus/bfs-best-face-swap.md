@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BFS (Best Face Swap) es una coleccion de adaptadores LoRA para intercambio de cara, cabeza y cuerpo sobre modelos de difusion de imagen y video. Lo publica el usuario suryatmodulus en HuggingFace y no es un modelo unico, sino un repositorio de pesos LoRA distribuidos por familias, cada uno ligado a un modelo base concreto. La libreria declarada es diffusers y la tarea es image-to-image.
+BFS (Best Face Swap) es una coleccion de adaptadores LoRA para intercambio de cara, cabeza y cuerpo sobre modelos de difusion de imagen y video. Lo publica el usuario suryatmodulus en Hugging Face y no es un modelo unico, sino un repositorio de pesos LoRA distribuidos por familias, cada uno ligado a un modelo base concreto. La libreria declarada es diffusers y la tarea es image-to-image.
 
 El problema que resuelve es el de disponer de adaptadores especializados de face swap, head swap y body swap reutilizables sobre modelos de generacion y edicion de imagen de ultima generacion, evitando entrenar un modelo completo desde cero. Los adaptadores cubren varias familias base: Qwen Image 2.1, Qwen Image Edit 2509/2511, FLUX.2-klein (4B y 9B), Krea 2 y unos pesos experimentales para LTX-2.
 
@@ -92,7 +92,7 @@ No se dispone de informacion sobre modelos alternativos comparables dentro de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suryatmodulus/BFS-Best-Face-Swap
+- Modelo en Hugging Face: https://huggingface.co/suryatmodulus/BFS-Best-Face-Swap
 - Guia BFS Head V1 / V1.1 para Qwen Image 2.1: docs/qwen-image-2.1.md
 - Guia BFS Body Swap V1.0 para Qwen Image 2.1: docs/qwen-image-2.1-body.md
 - Guia Qwen Image Edit 2509/2511: docs/qwen-image-edit.md

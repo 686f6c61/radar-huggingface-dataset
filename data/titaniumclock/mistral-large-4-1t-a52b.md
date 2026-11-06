@@ -75,7 +75,7 @@ La model card indica que hay mas benchmarks (especialmente en ciberseguridad, fi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral Large 4 (1T-A52B) | ~1T totales / ~52B activos | 1M tokens | Coding Agent Index 48%; Intelligence Index v5 26 | Mistral Ecosystem Open-Weight License (tipo MIT modificada) | Pesos abiertos en HuggingFace + API Mistral |
+| Mistral Large 4 (1T-A52B) | ~1T totales / ~52B activos | 1M tokens | Coding Agent Index 48%; Intelligence Index v5 26 | Mistral Ecosystem Open-Weight License (tipo MIT modificada) | Pesos abiertos en Hugging Face + API Mistral |
 | GLM-5.3 | no disponible | no disponible | Coding Agent Index practicamente empatado con ML4; lider open-weight en ese indice | no disponible | open-weight |
 | Modelos open-weight chinos lideres (sin especificar) | no disponible | no disponible | Puntuacion superior a ML4 en Intelligence Index v5 | no disponible | open-weight |
 
@@ -93,7 +93,7 @@ La informacion proporcionada solo identifica a GLM-5.3 y a "los principales mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Titaniumclock/Mistral-Large-4-1T-A52B
+- Modelo en Hugging Face: https://huggingface.co/Titaniumclock/Mistral-Large-4-1T-A52B
 - Checkpoint NVFP4: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4
 - Blog oficial: https://mistral.ai/news/mistral-large-4-oss/
 - Informe tecnico: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/assets/technical_report.pdf

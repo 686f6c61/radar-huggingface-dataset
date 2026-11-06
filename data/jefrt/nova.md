@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jefrt/nova es un repositorio de modelo alojado en HuggingFace por el usuario jefrt. La informacion publica disponible se reduce al identificador del repositorio, la licencia (openrail) y la region de publicacion (us). La model card asociada unicamente contiene el campo `license: openrail` y no incluye descripcion, arquitectura, tamano ni instrucciones de uso.
+jefrt/nova es un repositorio de modelo alojado en Hugging Face por el usuario jefrt. La informacion publica disponible se reduce al identificador del repositorio, la licencia (openrail) y la region de publicacion (us). La model card asociada unicamente contiene el campo `license: openrail` y no incluye descripcion, arquitectura, tamano ni instrucciones de uso.
 
 El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas etiquetados. La fecha de creacion y ultima actualizacion indicadas son identicas (17 de septiembre de 2026), lo que sugiere que no ha habido mantenimiento posterior a la publicacion inicial.
 
@@ -49,7 +49,7 @@ No es posible derivar casos de uso concretos: se desconoce la modalidad, el tama
 - Clasificacion y extraccion de informacion: solo viable si se documentan las etiquetas objetivo y el formato de salida esperado.
 - Resumen de documentacion tecnica: condicionado a una longitud de contexto declarada y a resultados de evaluacion en tareas de resumen.
 - Despliegue en edge o en hardware de consumo: dependeria del numero de parametros y de los formatos de cuantizacion publicados, ambos desconocidos.
-- Evaluacion comparativa interna: el repositorio podria usarse como objeto de estudio de practicas de publicacion deficientes en HuggingFace, no como componente de un sistema.
+- Evaluacion comparativa interna: el repositorio podria usarse como objeto de estudio de practicas de publicacion deficientes en Hugging Face, no como componente de un sistema.
 - Fine-tuning sobre dominio propio: imposible de planificar sin conocer la arquitectura, el tokenizador y el regimen de licencia aplicado a los pesos derivados.
 
 ## Benchmarks y rendimiento
@@ -79,6 +79,6 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jefrt/nova
+- Repositorio en Hugging Face: https://huggingface.co/jefrt/nova
 - Texto completo de la licencia OpenRAIL: https://huggingface.co/openrail (referencia generica; el repositorio no enlaza una variante concreta)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

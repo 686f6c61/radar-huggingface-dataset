@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sii-research/InnoSpark3.2-27B-1102",
+  "slug": "sii-research-innospark3-2-27b-1102",
+  "author": "sii-research",
+  "url": "https://huggingface.co/sii-research/InnoSpark3.2-27B-1102",
+  "created_at": "2026-11-02T06:03:55.000Z",
+  "updated_at": "2026-11-02T11:14:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "education",
+    "tutoring",
+    "qwen",
+    "reinforcement-learning",
+    "conversational",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816208,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InnoSpark3.2 27B 1102 by sii-research - LLM Explorer",
+      "url": "https://llm-explorer.com/model/sii-research%2FInnoSpark3.2-27B-1102,4nAnHn5DuIZ0YxDqy9RCPs",
+      "snippet": "InnoSpark3.2 27B 1102 is an open-source 27b LLM by sii-research. VRAM 55.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "mradermacher/InnoSpark3.2-27B-1102-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/InnoSpark3.2-27B-1102-GGUF",
+      "snippet": "Reinforcement Learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

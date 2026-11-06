@@ -77,10 +77,10 @@ La model card no incluye métricas de ImageNet, retrieval, COCO ni ninguna otra 
 
 | Modelo | Parametros | Resolucion tipica | Proyeccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepseek_vit_412m_align.deepseek_v4_1_flash | 485,3 M | 546 x 546 | 5120 | MIT | timm / HuggingFace |
-| OpenAI CLIP ViT-L/14 | ~304 M | 224 x 224 | 768 | MIT | timm / HuggingFace |
-| SigLIP SO400M/14 | ~877 M | 384 x 384 | 1152 | Apache 2.0 | timm / HuggingFace |
-| DINOv2 ViT-L/14 | ~300 M | 518 x 518 | 1024 | Apache 2.0 | HuggingFace |
+| deepseek_vit_412m_align.deepseek_v4_1_flash | 485,3 M | 546 x 546 | 5120 | MIT | timm / Hugging Face |
+| OpenAI CLIP ViT-L/14 | ~304 M | 224 x 224 | 768 | MIT | timm / Hugging Face |
+| SigLIP SO400M/14 | ~877 M | 384 x 384 | 1152 | Apache 2.0 | timm / Hugging Face |
+| DINOv2 ViT-L/14 | ~300 M | 518 x 518 | 1024 | Apache 2.0 | Hugging Face |
 
 Notas sobre la comparativa: los recuentos de parametros y resoluciones de CLIP, SigLIP y DINOv2 son valores publicos de referencia y pueden variar ligeramente segun la variante concreta del checkpoint. No se dispone de resultados de benchmarks comparativos entre este modelo y las alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, resolucion, dimension de proyeccion y licencia. La diferencia cualitativa principal es que la proyeccion de 5120 dimensiones de este checkpoint esta disenada para acoplarse al espacio de un LLM concreto, mientras que CLIP y SigLIP exponen espacios conjuntos imagen-texto ya alineados.
 
@@ -100,7 +100,7 @@ Notas sobre la comparativa: los recuentos de parametros y resoluciones de CLIP, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/deepseek_vit_412m_align.deepseek_v4_1_flash
+- Modelo en Hugging Face: https://huggingface.co/timm/deepseek_vit_412m_align.deepseek_v4_1_flash
 - Modelo base DeepSeek-V4.1-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Revisión de origen (dba1be0a): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/tree/dba1be0a40aa45a94ad051997016db3960a90277
 - Informe técnico (Pushing the Limits of KV Cache Compression): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
@@ -108,6 +108,6 @@ Notas sobre la comparativa: los recuentos de parametros y resoluciones de CLIP, 
 - Preprocesado original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/inference/image_processor.py
 - Licencia del modelo base (MIT): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/LICENSE
 - Repositorio timm en GitHub: https://github.com/huggingface/pytorch-image-models
-- Organización timm en HuggingFace: https://huggingface.co/timm
+- Organización timm en Hugging Face: https://huggingface.co/timm
 - Documentación de timm: https://timm.fast.ai/
 - Paquete timm en PyPI: https://pypi.org/project/timm/

@@ -71,7 +71,7 @@ Los datos de los modelos alternativos provienen de conocimiento general sobre el
 |---|---|---|---|---|
 | flamingo-multitask (este) | 24.832 | no disponible | Apache-2.0 | Prototipo sin entrenar |
 | OpenFlamingo (LAION) | Variantes de miles de millones | no disponible | Apache-2.0 | Entrenado y público |
-| IDEFICS (HuggingFace) | Variantes de miles de millones | no disponible | Apache-2.0 / condiciones específicas | Entrenado y público |
+| IDEFICS (Hugging Face) | Variantes de miles de millones | no disponible | Apache-2.0 / condiciones específicas | Entrenado y público |
 | Flamingo original (DeepMind) | ~80.000 millones | no disponible | No pública | No distribuido |
 
 La comparación de rendimiento no es posible: el prototipo no tiene puntuaciones publicadas y no ha sido entrenado, por lo que no es equiparable a las alternativas de la misma familia arquitectónica.

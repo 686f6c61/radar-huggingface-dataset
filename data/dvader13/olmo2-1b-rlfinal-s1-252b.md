@@ -71,8 +71,8 @@ No se dispone de información suficiente para una comparativa con modelos simila
 
 ## Enlaces
 
-- [HuggingFace - dvdr13/olmo2-1b-rlfinal-s1-252b](https://huggingface.co/dvdr13/olmo2-1b-rlfinal-s1-252b)
+- [Hugging Face - dvdr13/olmo2-1b-rlfinal-s1-252b](https://huggingface.co/dvdr13/olmo2-1b-rlfinal-s1-252b)
 - [OLMo: Open Language Model - GitHub](https://github.com/allenai/OLMo)
 - [OLMo 2 Furious - arXiv:2501.00656](https://arxiv.org/abs/2501.00656)
 - [OLMo 2 - allenai.org](https://allenai.org/olmo2)
-- [OLMo 2 Collection - HuggingFace](https://huggingface.co/collections/allenai/olmo-2)
+- [OLMo 2 Collection - Hugging Face](https://huggingface.co/collections/allenai/olmo-2)

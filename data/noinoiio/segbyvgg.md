@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SEGByVGG es un repositorio publicado en HuggingFace por el usuario Noinoiio bajo licencia MIT. Por el nombre del identificador ("SEGByVGG") y la ausencia de cualquier referencia a pesos de lenguaje, tokenizador o arquitectura transformer, todo apunta a un modelo de segmentación (SEG) construido sobre una red convolucional de tipo VGG, probablemente como backbone de visión por computador. No es, por tanto, un modelo de lenguaje y no debe evaluarse como tal.
+SEGByVGG es un repositorio publicado en Hugging Face por el usuario Noinoiio bajo licencia MIT. Por el nombre del identificador ("SEGByVGG") y la ausencia de cualquier referencia a pesos de lenguaje, tokenizador o arquitectura transformer, todo apunta a un modelo de segmentación (SEG) construido sobre una red convolucional de tipo VGG, probablemente como backbone de visión por computador. No es, por tanto, un modelo de lenguaje y no debe evaluarse como tal.
 
-La model card publicada es prácticamente vacía: solo contiene la declaración de licencia MIT, sin descripción, sin arquitectura declarada, sin datos de entrenamiento, sin métricas y sin ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas ni formato de pesos en los metadatos de HuggingFace.
+La model card publicada es prácticamente vacía: solo contiene la declaración de licencia MIT, sin descripción, sin arquitectura declarada, sin datos de entrenamiento, sin métricas y sin ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas ni formato de pesos en los metadatos de Hugging Face.
 
 Su relevancia actual es muy limitada: se trata de un artefacto sin documentación ni evidencia de validación pública. Esta ficha recoge lo que puede afirmarse con rigor a partir de los metadatos disponibles y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SEGByVGG (Noinoiio) | no disponible | no aplica | no disponible | MIT | HuggingFace, sin descargas registradas |
+| SEGByVGG (Noinoiio) | no disponible | no aplica | no disponible | MIT | Hugging Face, sin descargas registradas |
 | Alternativas de segmentación con backbone VGG (p. ej. FCN-VGG16, SegNet) | del orden de decenas de millones, según variante | no aplica | métricas públicas en PASCAL VOC y Cityscapes para las variantes canónicas | habitualmente BSD o MIT según implementación | disponibles en repositorios académicos y frameworks |
 | Segment Anything (SAM) | cientos de millones, según variante | no aplica | métricas publicadas por Meta en SA-1B | Apache 2.0 en la variante base | ampliamente disponible |
 | DeepLabv3+ | del orden de decenas de millones | no aplica | métricas públicas en PASCAL VOC y Cityscapes | BSD-3 en implementaciones de referencia | ampliamente disponible |
@@ -82,5 +82,5 @@ La comparación es orientativa: no existen datos publicados de SEGByVGG que perm
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Noinoiio/SEGByVGG
+- Repositorio en Hugging Face: https://huggingface.co/Noinoiio/SEGByVGG
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

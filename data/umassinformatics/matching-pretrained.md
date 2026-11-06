@@ -95,6 +95,6 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umassinformatics/matching-pretrained
+- Modelo en Hugging Face: https://huggingface.co/umassinformatics/matching-pretrained
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron páginas sin relación con este repositorio (foros sobre becas de arquitectura y sobre material militar), por lo que no se incluyen.
 - No se dispone de enlaces a papers, blogs, repositorios de código o demos adicionales en la información proporcionada.

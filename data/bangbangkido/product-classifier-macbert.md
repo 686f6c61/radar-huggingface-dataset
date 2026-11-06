@@ -113,7 +113,7 @@ No se dispone de resultados de benchmarks que permitan situar este modelo frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bangbangkido/Product-Classifier-MacBERT
+- Modelo en Hugging Face: https://huggingface.co/bangbangkido/Product-Classifier-MacBERT
 - Variante ONNX INT8: https://huggingface.co/bangbangkido/Product-Classifier-MacBERT-ONNX-INT8
 - Modelo base: https://huggingface.co/hfl/chinese-macbert-base
 - Paper de MacBERT (Revisiting Pre-trained Models for Chinese Natural Language Processing, Cui et al., 2020): https://arxiv.org/abs/2004.13922

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_2` es un artefacto de modelo publicado en HuggingFace Hub por el usuario `gianmaTest` el 25 de octubre de 2026. No se trata de un modelo de lenguaje: con 1.576.704 parámetros totales (aproximadamente 1,58 millones) y un repositorio de 0,0 GB, es un modelo de escala experimental, muy probablemente generado de forma automática por algún pipeline de experimentación interna. El identificador sugiere una arquitectura recurrente (RNN) con un procesamiento de *mean pooling* aplicado a una modalidad de vídeo, aunque esta lectura es una inferencia a partir del nombre y no está confirmada por el autor.
+`generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_2` es un artefacto de modelo publicado en Hugging Face Hub por el usuario `gianmaTest` el 25 de octubre de 2026. No se trata de un modelo de lenguaje: con 1.576.704 parámetros totales (aproximadamente 1,58 millones) y un repositorio de 0,0 GB, es un modelo de escala experimental, muy probablemente generado de forma automática por algún pipeline de experimentación interna. El identificador sugiere una arquitectura recurrente (RNN) con un procesamiento de *mean pooling* aplicado a una modalidad de vídeo, aunque esta lectura es una inferencia a partir del nombre y no está confirmada por el autor.
 
 La model card es la plantilla automática que genera la integración `PyTorchModelHubMixin` de `huggingface_hub`: no incluye descripción, paper, código ni documentación de referencia. El autor no ha declarado pipeline, licencia ni idiomas soportados, y el repositorio no registra descargas ni interacciones. Todo ello apunta a un modelo de investigación sin publicar formalmente, no a un modelo listo para producción.
 
@@ -85,7 +85,7 @@ No disponible. No se han identificado modelos comparables con documentación pú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_2
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_2
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible

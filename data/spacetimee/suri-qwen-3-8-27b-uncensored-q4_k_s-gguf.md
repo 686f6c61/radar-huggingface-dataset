@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas sobre mo
 
 ## Enlaces
 
-- Repositorio HuggingFace (variante GGUF): https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q4_K_S-GGUF
+- Repositorio Hugging Face (variante GGUF): https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q4_K_S-GGUF
 - Modelo base: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

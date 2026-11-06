@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-6B es una version podada y comprimida del modelo Qwen/Qwen3-8B, publicada por el usuario parmanu-lcs2 en HuggingFace. El modelo aplica la tecnica de poda estructurada SNIPER (descrita en el paper arXiv:2608.12953) con un ratio de compresion objetivo del 25%, reduciendo los parametros desde los aproximadamente 8.200 millones del modelo original hasta 6.198.014.464 parametros. Tras la poda se aplico un ajuste fino de recuperacion con LoRA sobre 2.000 muestras del dataset Open-Orca/SlimOrca, con los adaptadores ya fusionados en los pesos finales.
+Qwen3-6B es una version podada y comprimida del modelo Qwen/Qwen3-8B, publicada por el usuario parmanu-lcs2 en Hugging Face. El modelo aplica la tecnica de poda estructurada SNIPER (descrita en el paper arXiv:2608.12953) con un ratio de compresion objetivo del 25%, reduciendo los parametros desde los aproximadamente 8.200 millones del modelo original hasta 6.198.014.464 parametros. Tras la poda se aplico un ajuste fino de recuperacion con LoRA sobre 2.000 muestras del dataset Open-Orca/SlimOrca, con los adaptadores ya fusionados en los pesos finales.
 
 El modelo conserva la licencia Apache 2.0 del Qwen3-8B original y mantiene el pipeline de text-generation, pero introduce una arquitectura no estandar: la poda deja capas con formas distintas y elimina algunos bloques de atencion y MLP, por lo que la definicion del modelo vive en un fichero `modeling_pruned.py` incluido en el repositorio. Esto obliga a cargar el modelo con `trust_remote_code=True` y limita la compatibilidad directa con motores de inferencia que asumen arquitecturas Qwen3 estandar.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| parmanu-lcs2/Qwen3-6B | 6,20 B | No especificado (base: 32.768 tokens) | Apache 2.0 | HuggingFace, pesos safetensors, codigo custom | No |
-| Qwen/Qwen3-8B (modelo base) | ~8,2 B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, GGUF, AWQ, GPTQ, vLLM, TGI | Si, publicados por Qwen |
-| Qwen/Qwen3-4B | ~4,0 B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, multiples formatos | Si, publicados por Qwen |
-| Llama 3.1 8B | ~8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, GGUF, vLLM, TGI | Si, publicados por Meta |
+| parmanu-lcs2/Qwen3-6B | 6,20 B | No especificado (base: 32.768 tokens) | Apache 2.0 | Hugging Face, pesos safetensors, codigo custom | No |
+| Qwen/Qwen3-8B (modelo base) | ~8,2 B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, GGUF, AWQ, GPTQ, vLLM, TGI | Si, publicados por Qwen |
+| Qwen/Qwen3-4B | ~4,0 B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, multiples formatos | Si, publicados por Qwen |
+| Llama 3.1 8B | ~8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, GGUF, vLLM, TGI | Si, publicados por Meta |
 
 Los datos del modelo base y de las alternativas provienen de la documentacion publica de sus respectivos autores y no de la informacion proporcionada en esta ficha; deben verificarse en las model cards originales. No existe comparacion de rendimiento directa entre Qwen3-6B y estas alternativas porque el modelo podado no publica evaluaciones.
 
@@ -95,7 +95,7 @@ Los datos del modelo base y de las alternativas provienen de la documentacion pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parmanu-lcs2/Qwen3-6B
+- Modelo en Hugging Face: https://huggingface.co/parmanu-lcs2/Qwen3-6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de SNIPER: https://arxiv.org/abs/2608.12953
 - Dataset de recuperacion: https://huggingface.co/datasets/Open-Orca/SlimOrca

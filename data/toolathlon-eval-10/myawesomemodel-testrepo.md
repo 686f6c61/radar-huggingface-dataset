@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario toolathlon-eval-10 en HuggingFace, con licencia MIT y etiquetado como compatible con la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que afirma haber mejorado sus capacidades de razonamiento, reducción de alucinaciones y soporte para function calling. Sin embargo, el repositorio no contiene ningún archivo de pesos ni configuración (tamaño 0.0 GB), por lo que no es posible verificar la arquitectura, el número de parámetros ni ninguna especificación técnica real.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario toolathlon-eval-10 en Hugging Face, con licencia MIT y etiquetado como compatible con la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que afirma haber mejorado sus capacidades de razonamiento, reducción de alucinaciones y soporte para function calling. Sin embargo, el repositorio no contiene ningún archivo de pesos ni configuración (tamaño 0.0 GB), por lo que no es posible verificar la arquitectura, el número de parámetros ni ninguna especificación técnica real.
 
 La model card incluye una tabla de benchmarks comparativos con otros modelos anónimos (Model1, Model2, Model1-v2) en tareas de razonamiento, comprensión del lenguaje, generación y capacidades especializadas, pero no se especifican los nombres de esos modelos ni la metodología de evaluación. Tampoco se proporcionan detalles sobre el entrenamiento, los datos utilizados o las condiciones de ejecución. En su estado actual, el repositorio no es funcional para descargar ni ejecutar el modelo.
 
@@ -84,5 +84,5 @@ No disponible. No se conocen los modelos reales con los que se compara en la mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toolathlon-eval-10/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/toolathlon-eval-10/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos, demos) en la información disponible.

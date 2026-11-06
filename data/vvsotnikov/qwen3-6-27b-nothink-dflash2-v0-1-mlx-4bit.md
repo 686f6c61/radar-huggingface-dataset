@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (MLX 4-bit) | 1,92 mil millones | safetensors MLX, 4 bits, 1,08 GB | no disponible | Apache-2.0 | publico en HuggingFace, 0 descargas y 0 me gusta |
-| vvsotnikov/Qwen3.6-27B-nothink-DFlash2-v0.1 (origen BF16) | 1,92 mil millones | BF16, aproximadamente 3,85 GB | no disponible | Apache-2.0 | publico en HuggingFace |
+| Este modelo (MLX 4-bit) | 1,92 mil millones | safetensors MLX, 4 bits, 1,08 GB | no disponible | Apache-2.0 | publico en Hugging Face, 0 descargas y 0 me gusta |
+| vvsotnikov/Qwen3.6-27B-nothink-DFlash2-v0.1 (origen BF16) | 1,92 mil millones | BF16, aproximadamente 3,85 GB | no disponible | Apache-2.0 | publico en Hugging Face |
 | Borrador MTP nativo de Qwen3.6-27B | no disponible | no disponible | no disponible | no disponible | integrado en el modelo objetivo |
-| z-lab/Qwen3.8-27B-DFlash2 (linaje) | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace |
+| z-lab/Qwen3.8-27B-DFlash2 (linaje) | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vvsotnikov/Qwen3.6-27B-nothink-DFlash2-v0.1-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/vvsotnikov/Qwen3.6-27B-nothink-DFlash2-v0.1-MLX-4bit
 - Modelo base BF16: https://huggingface.co/vvsotnikov/Qwen3.6-27B-nothink-DFlash2-v0.1
 - Modelo objetivo MLX 4-bit: https://huggingface.co/vvsotnikov/Qwen3.6-27B-MLX-4bit
 - Linaje del borrador: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

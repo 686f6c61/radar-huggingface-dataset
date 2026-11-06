@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mocov3-matching es un repositorio publicado por el usuario danielbakerbi en HuggingFace que contiene una implementación propia y reducida de una arquitectura etiquetada como "Mocov3" orientada a una tarea de *matching*. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el autor describe explícitamente el checkpoint `model.safetensors` como un punto de inicialización válido únicamente para pruebas de humo (*smoke tests*).
+mocov3-matching es un repositorio publicado por el usuario danielbakerbi en Hugging Face que contiene una implementación propia y reducida de una arquitectura etiquetada como "Mocov3" orientada a una tarea de *matching*. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el autor describe explícitamente el checkpoint `model.safetensors` como un punto de inicialización válido únicamente para pruebas de humo (*smoke tests*).
 
 El repositorio incluye un artefacto principal (`model.py`) con el código del modelo y un punto de entrada ejecutable, junto con `config.json` (ajustes de arquitectura generados) y `training_args.json` (receta de experimento por defecto). La arquitectura declarada emplea atención dilatada, fusión de tensores, activación gelu tanh y normalización rmsnorm, en una variante denominada "huge" según la model card, aunque el recuento real de parámetros del safetensors es de solo 16.576, una cifra muy reducida.
 
@@ -80,5 +80,5 @@ No disponible. La información proporcionada no incluye especificaciones de mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielbakerbi/mocov3-matching
+- Hugging Face: https://huggingface.co/danielbakerbi/mocov3-matching
 - No se han proporcionado otros enlaces relevantes (papers, blogs, repos o demos) en la informacion disponible.

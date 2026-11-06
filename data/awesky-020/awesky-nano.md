@@ -104,7 +104,7 @@ Frente a estos modelos, Awesky-Nano aporta un ajuste específico para bengalí e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/awesky-020/Awesky-Nano
+- Modelo en Hugging Face: https://huggingface.co/awesky-020/Awesky-Nano
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio relacionado del mismo autor: https://huggingface.co/awesky-020/Awesky-Nano-48L
 - Ficha en free2aitools: https://free2aitools.com/model/awesky-020/awesky-nano-48l

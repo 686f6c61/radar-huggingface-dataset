@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ttc-trunk-8b-r1024-33k es un artefacto de investigación publicado por el usuario ntumm120 en HuggingFace. No es un modelo de lenguaje autónomo, sino un "trunk" (módulo de estado con un escritor o writer) entrenado sobre un backbone Qwen/Qwen3-8B que permanece congelado. El componente entrenado se describe como un sustrato de caché con escritura recurrente, rango de estado de 1024 filas y un writer con d_c = 512, pensado para procesar flujos de 33.000 tokens con bloques de 2048.
+ttc-trunk-8b-r1024-33k es un artefacto de investigación publicado por el usuario ntumm120 en Hugging Face. No es un modelo de lenguaje autónomo, sino un "trunk" (módulo de estado con un escritor o writer) entrenado sobre un backbone Qwen/Qwen3-8B que permanece congelado. El componente entrenado se describe como un sustrato de caché con escritura recurrente, rango de estado de 1024 filas y un writer con d_c = 512, pensado para procesar flujos de 33.000 tokens con bloques de 2048.
 
 El repositorio corresponde al peldaño r1024 de una escalera de variantes del mismo experimento (r288, r512, r1024, r2048 —el headliner—, r4096 y r8192), todas con los mismos datos "T" y la misma receta de trunk. El checkpoint publicado, branches/a2000_mixB/writer_s002249.pt, es un annealing de 250 pasos (arm-B, mixB) que parte del guardado retenido del paso 2000 y decae el learning rate de 1e-3 a 0, con el optimizador eliminado del fichero.
 
-La relevancia actual del artefacto es de nicho: sirve para estudiar cómo escala el tamaño del estado recurrente en tareas de recuperación sobre documentos largos (TQA contiguo, NIAH single/multikey, LongPPL) manteniendo fijo el backbone. La ficha de HuggingFace no declara licencia, idiomas, pipeline ni resultados numéricos, y el repositorio no tiene descargas ni valoraciones en el momento de la consulta.
+La relevancia actual del artefacto es de nicho: sirve para estudiar cómo escala el tamaño del estado recurrente en tareas de recuperación sobre documentos largos (TQA contiguo, NIAH single/multikey, LongPPL) manteniendo fijo el backbone. La ficha de Hugging Face no declara licencia, idiomas, pipeline ni resultados numéricos, y el repositorio no tiene descargas ni valoraciones en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ La relevancia actual del artefacto es de nicho: sirve para estudiar cómo escala
 | Longitud de contexto | No especificada en la model card; el entrenamiento usa flujos ("streams") de 33K tokens con bloque de 2048, FIFO y 3 sinks |
 | Tipos de cuantización | No disponible (solo se publica un checkpoint PyTorch .pt; no hay GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | No disponible (los del backbone no se confirman en esta ficha) |
-| Licencia | No disponible (no declarada en la ficha de HuggingFace ni en la model card) |
+| Licencia | No disponible (no declarada en la ficha de Hugging Face ni en la model card) |
 | Formato de pesos | PyTorch (.pt): branches/a2000_mixB/writer_s002249.pt |
 | Rango de estado (state rank) | 1024 filas |
 | Dimensión del writer (d_c) | 512 |
@@ -95,7 +95,7 @@ Alternativas de terceros de la misma categoría (módulos de memoria con backbon
 ## Limitaciones y advertencias
 
 - El artefacto no es autónomo: requiere el backbone Qwen/Qwen3-8B congelado y el código del repositorio para cargarse y ejecutarse.
-- La licencia no está declarada, ni en HuggingFace ni en la model card. El uso comercial es jurídicamente incierto para el trunk y para el modelo combinado, aunque el backbone Qwen3-8B se distribuya bajo Apache 2.0.
+- La licencia no está declarada, ni en Hugging Face ni en la model card. El uso comercial es jurídicamente incierto para el trunk y para el modelo combinado, aunque el backbone Qwen3-8B se distribuya bajo Apache 2.0.
 - No hay resultados de benchmarks publicados, por lo que no existe evidencia cuantitativa de la calidad del trunk en ninguna tarea.
 - Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta; ningún tercero ha reproducido los resultados.
 - La terminología técnica de la model card (fold rowmax, FIFO + 3 sinks, cache substrate, T data) no está definida, lo que impide auditar la metodología a partir del texto.

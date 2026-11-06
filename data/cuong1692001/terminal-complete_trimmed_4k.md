@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Terminal-complete_trimmed_4k es un ajuste fino completo (full fine-tuning) del modelo denso Qwen/Qwen3-8B, publicado por el usuario cuong1692001 en HuggingFace. El entrenamiento se realizo con LLaMA-Factory sobre un dataset propio denominado qwen_data_complete_trimmed_4k, con 2 epocas, learning rate de 1e-05 y reparto multi-GPU en 4 dispositivos. El nombre del modelo y del dataset sugieren un enfoque hacia tareas de terminal o linea de comandos, aunque la model card no documenta el contenido ni el dominio del corpus, por lo que esa orientacion no puede confirmarse con los datos disponibles.
+Terminal-complete_trimmed_4k es un ajuste fino completo (full fine-tuning) del modelo denso Qwen/Qwen3-8B, publicado por el usuario cuong1692001 en Hugging Face. El entrenamiento se realizo con LLaMA-Factory sobre un dataset propio denominado qwen_data_complete_trimmed_4k, con 2 epocas, learning rate de 1e-05 y reparto multi-GPU en 4 dispositivos. El nombre del modelo y del dataset sugieren un enfoque hacia tareas de terminal o linea de comandos, aunque la model card no documenta el contenido ni el dominio del corpus, por lo que esa orientacion no puede confirmarse con los datos disponibles.
 
 El modelo conserva la arquitectura del Qwen3-8B original: 8.190.735.360 parametros (dato real leido de los safetensors), transformer denso, sin mezcla de expertos, pesos en safetensors y pipeline de text-generation. El repositorio ocupa 229,4 GB, un tamano muy superior al de los pesos finales, lo que indica que se han subido los checkpoints intermedios del entrenamiento ademas del modelo final. La licencia declarada es "other", no Apache 2.0 como el modelo base, lo que introduce incertidumbre sobre las condiciones de uso comercial.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Terminal-complete_trimmed_4k | 8.190.735.360 | No disponible (base: 32.768 nativos) | Sin benchmarks publicados | other | HuggingFace, 0 descargas, sin GGUF |
-| Qwen/Qwen3-8B (modelo base) | 8.190.735.360 | 32.768 nativos, 131.072 con YaRN | Benchmarks publicados por el equipo Qwen en su model card y blog | Apache 2.0 | HuggingFace, ampliamente desplegado, versiones GGUF y cuantizadas de terceros |
-| Qwen/Qwen2.5-7B-Instruct | 7.620 millones aprox. | 32.768 nativos, ampliable | Benchmarks publicados por el equipo Qwen | Apache 2.0 | HuggingFace, ecosistema amplio de cuantizaciones |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones aprox. | 128.000 | Benchmarks publicados por Meta | Llama 3.1 Community License | HuggingFace, requiere aceptar licencia |
+| Terminal-complete_trimmed_4k | 8.190.735.360 | No disponible (base: 32.768 nativos) | Sin benchmarks publicados | other | Hugging Face, 0 descargas, sin GGUF |
+| Qwen/Qwen3-8B (modelo base) | 8.190.735.360 | 32.768 nativos, 131.072 con YaRN | Benchmarks publicados por el equipo Qwen en su model card y blog | Apache 2.0 | Hugging Face, ampliamente desplegado, versiones GGUF y cuantizadas de terceros |
+| Qwen/Qwen2.5-7B-Instruct | 7.620 millones aprox. | 32.768 nativos, ampliable | Benchmarks publicados por el equipo Qwen | Apache 2.0 | Hugging Face, ecosistema amplio de cuantizaciones |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones aprox. | 128.000 | Benchmarks publicados por Meta | Llama 3.1 Community License | Hugging Face, requiere aceptar licencia |
 
 La comparacion solo puede establecerse en terminos de tamano, contexto y licencia. En rendimiento, el ajuste no aporta datos y sus alternativas si los publican, por lo que no es posible situarlo con rigor frente a ellas.
 
@@ -86,7 +86,7 @@ La comparacion solo puede establecerse en terminos de tamano, contexto y licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cuong1692001/Terminal-complete_trimmed_4k
+- Modelo en Hugging Face: https://huggingface.co/cuong1692001/Terminal-complete_trimmed_4k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de LLaMA-Factory (framework de entrenamiento declarado en los tags): https://github.com/hiyouga/LLaMA-Factory
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

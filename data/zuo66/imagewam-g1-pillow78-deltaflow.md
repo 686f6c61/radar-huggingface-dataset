@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ImageWAM Δ-flow es un modelo de política robótica (vision-language-action, VLA) desarrollado por el usuario ZUO66 y publicado en HuggingFace. Está especializado en una única tarea de manipulación sobre el robot humanoide Unitree G1: recoger un cojín o almohada de una chaise longue y devolverlo a la cabecera de la cama. El modelo parte de FLUX.2-klein-base-4B como base visual y añade una rama de acción inicializada de forma independiente, entrenada con 78 demostraciones (65.963 fotogramas a 30 FPS) durante 20.640 actualizaciones de parámetros.
+ImageWAM Δ-flow es un modelo de política robótica (vision-language-action, VLA) desarrollado por el usuario ZUO66 y publicado en Hugging Face. Está especializado en una única tarea de manipulación sobre el robot humanoide Unitree G1: recoger un cojín o almohada de una chaise longue y devolverlo a la cabecera de la cama. El modelo parte de FLUX.2-klein-base-4B como base visual y añade una rama de acción inicializada de forma independiente, entrenada con 78 demostraciones (65.963 fotogramas a 30 FPS) durante 20.640 actualizaciones de parámetros.
 
 La arquitectura combina un modelo de flujo visual (flow matching) con un cabezal de acción que predice latentes de movimiento y estados de mano medidos (Inspire6), usando un esquema de "delta-flow" con fuentes de ruido específicas para imagen y acción. El modelo opera con dos vistas de cámara (ego_view y chest, 224×224 cada una, concatenadas horizontalmente en 224×448), un historial de 16 pasos de acción y un vector de estado de 44 dimensiones que solo alimenta la rama de acción. La inferencia es de un solo paso y produce una salida de `[16,76]`.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ImageWAM Δ-flow (este) | base 4B + rama de acción (total no disponible) | no disponible | Manipulación G1 (cojín) | no disponible | HuggingFace, 0 descargas |
+| ImageWAM Δ-flow (este) | base 4B + rama de acción (total no disponible) | no disponible | Manipulación G1 (cojín) | no disponible | Hugging Face, 0 descargas |
 | Políticas VLA genéricas (p. ej. OpenVLA, RT-2) | no disponible en esta ficha | no disponible | Manipulación general | variable | no disponible |
 | Políticas de difusión (p. ej. Diffusion Policy) | no disponible en esta ficha | no disponible | Manipulación | variable | no disponible |
 
@@ -80,5 +80,5 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZUO66/imagewam-g1-pillow78-deltaflow
+- Hugging Face: https://huggingface.co/ZUO66/imagewam-g1-pillow78-deltaflow
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

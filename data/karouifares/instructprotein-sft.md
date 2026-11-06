@@ -39,7 +39,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 ## Requisitos de hardware
 - Al ser un adaptador PEFT de 0,1 GB, el requisito principal es el modelo base InstructProtein, cuyas dimensiones no se especifican en la información proporcionada.
 - Se recomienda una GPU con suficiente VRAM para cargar el modelo base (típicamente al menos 16 GB si el base tiene 7B parámetros, pero esto es una suposición no confirmada).
-- El adaptador puede cargarse con la librería `peft` de HuggingFace, combinándolo con el modelo base.
+- El adaptador puede cargarse con la librería `peft` de Hugging Face, combinándolo con el modelo base.
 - Opciones de despliegue: no se mencionan vLLM, llama.cpp, Ollama u otros entornos; se asume que es compatible con Transformers y PEFT.
 - Latencia y throughput: no disponibles.
 
@@ -55,6 +55,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - Sin mantenimiento: el modelo no tiene descargas ni actualizaciones visibles, lo que sugiere que podría ser un experimento sin soporte continuo.
 
 ## Enlaces
-- Página del modelo en HuggingFace: https://huggingface.co/karouiFares/InstructProtein-SFT
+- Página del modelo en Hugging Face: https://huggingface.co/karouiFares/InstructProtein-SFT
 - Modelo base (referenciado en el README): https://huggingface.co/hicai-zju/InstructProtein
 - No se proporcionan papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen3.5-4B-MPOA-heretic-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen3.5-4B-MPOA-heretic-MLX-4bit
 - Modelo fuente: https://huggingface.co/richardyoung/Qwen3.5-4B-MPOA-heretic
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio MLX: https://github.com/ml-explore/mlx

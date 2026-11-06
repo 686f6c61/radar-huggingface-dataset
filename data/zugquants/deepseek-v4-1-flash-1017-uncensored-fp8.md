@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de los modelos comparados (salvo el MMLU de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zugquants/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
+- Repositorio Hugging Face: https://huggingface.co/zugquants/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Alias declarado del mismo contenido: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-ABLITERATED-FP8
 - Variante EXL3 2,9 bpw: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED

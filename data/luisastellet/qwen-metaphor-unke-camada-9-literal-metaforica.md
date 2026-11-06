@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de generacion de texto de aproximadamente 596 millones de parametros, publicado por el usuario luisastellet en HuggingFace bajo el identificador `luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica`. Por las etiquetas del repositorio (`qwen3`, `transformers`, `safetensors`, `text-generation`, `conversational`) se trata de un ajuste derivado de la familia Qwen3, y el recuento exacto de parametros (596.049.920) coincide con el de la variante densa Qwen3-0.6B, aunque esta correspondencia no esta confirmada de forma explicita por el autor.
+Este repositorio contiene un modelo de generacion de texto de aproximadamente 596 millones de parametros, publicado por el usuario luisastellet en Hugging Face bajo el identificador `luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica`. Por las etiquetas del repositorio (`qwen3`, `transformers`, `safetensors`, `text-generation`, `conversational`) se trata de un ajuste derivado de la familia Qwen3, y el recuento exacto de parametros (596.049.920) coincide con el de la variante densa Qwen3-0.6B, aunque esta correspondencia no esta confirmada de forma explicita por el autor.
 
 El nombre del modelo sugiere un experimento de ajuste fino o de intervencion sobre la novena capa ("camada 9") orientado a distinguir o transformar interpretaciones literales frente a metaforicas, un tipo de trabajo habitual en interpretabilidad y en estudios de representaciones internas en modelos de lenguaje. Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion.
 
-La relevancia de este repositorio es limitada y de tipo metodologico: no dispone de model card sustantiva (la existente es la plantilla autogenerada de HuggingFace, con todos los campos marcados como `[More Information Needed]`), cuenta con 0 descargas y 0 "likes" en el momento de la consulta, y no publica licencia, idiomas ni resultados de evaluacion. Cualquier uso en produccion requeriria primero verificar el modelo base, la licencia heredada y el comportamiento real.
+La relevancia de este repositorio es limitada y de tipo metodologico: no dispone de model card sustantiva (la existente es la plantilla autogenerada de Hugging Face, con todos los campos marcados como `[More Information Needed]`), cuenta con 0 descargas y 0 "likes" en el momento de la consulta, y no publica licencia, idiomas ni resultados de evaluacion. Cualquier uso en produccion requeriria primero verificar el modelo base, la licencia heredada y el comportamiento real.
 
 ## Especificaciones tecnicas
 
@@ -75,11 +75,11 @@ La tabla siguiente compara el modelo con alternativas de la misma categoria (mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica | 596 M | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
-| Qwen3-0.6B (modelo base probable) | 596 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen2.5-0.5B | ~500 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| SmolLM2-360M | ~360 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| TinyLlama-1.1B | ~1.100 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica | 596 M | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
+| Qwen3-0.6B (modelo base probable) | 596 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen2.5-0.5B | ~500 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| SmolLM2-360M | ~360 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| TinyLlama-1.1B | ~1.100 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K ni similares) para ninguno de los modelos en el contexto de esta ficha, por lo que no se puede establecer una comparacion cuantitativa.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K ni simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones, citado en la plantilla de la model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper, demo y datos de entrenamiento del autor: no disponibles.

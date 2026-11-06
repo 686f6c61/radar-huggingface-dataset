@@ -58,7 +58,7 @@ Además, se indica que en una muestra de 2.000 repositorios, las predicciones co
 - VRAM estimada: el modelo tiene 355M parámetros; en fp32 ocupa aproximadamente 1,4 GB (tamaño del repo safetensors), y en fp16 unos 700 MB. Para inferencia con batch razonable se recomienda al menos 2-4 GB de VRAM en GPU.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o más (RTX 3060, RTX 4060, etc.) es suficiente; en entornos profesionales, A100 o H100 no son necesarias.
 - Compatible con Apple Silicon: en un M5 Max con MPS y fp16 alcanza 177 filas/s con un pico de memoria de 6,5 GB.
-- Opciones de despliegue: Transformers pipeline, carga directa con `AutoModelForSequenceClassification`, y compatible con Text Embeddings Inference (según tags de HuggingFace).
+- Opciones de despliegue: Transformers pipeline, carga directa con `AutoModelForSequenceClassification`, y compatible con Text Embeddings Inference (según tags de Hugging Face).
 - Latencia: en CPU fp32 se procesan ~4,3 filas/s; en MPS fp16 se alcanzan ~177 filas/s, lo que equivale a unos 5,6 ms por fila en el mejor caso.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se dispone de información sobre otros modelos específicos de clasificación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aquiro1994/naics-github-classifier
+- Modelo en Hugging Face: https://huggingface.co/aquiro1994/naics-github-classifier
 - Repositorio de código: https://github.com/alexanderquispe/naics-github-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/aquiro1994/naics-gh

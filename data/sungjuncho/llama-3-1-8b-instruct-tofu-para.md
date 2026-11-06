@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-TOFU-para | 8B | no disponible (base: 128k) | Checkpoints de desaprendizaje sobre TOFU con parafrasis | llama3.1 | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Modelo base instructivo general | llama3.1 | HuggingFace, ampliamente usado |
-| locuslab/open-unlearning (checkpoints de referencia) | 8B | no disponible | Baseline de desaprendizaje TOFU sin parafrasis | no disponible | GitHub y HuggingFace |
-| TOFU original (locuslab/TOFU) | no aplica | no aplica | Dataset de evaluacion de desaprendizaje | no disponible | HuggingFace datasets |
+| Llama-3.1-8B-Instruct-TOFU-para | 8B | no disponible (base: 128k) | Checkpoints de desaprendizaje sobre TOFU con parafrasis | llama3.1 | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Modelo base instructivo general | llama3.1 | Hugging Face, ampliamente usado |
+| locuslab/open-unlearning (checkpoints de referencia) | 8B | no disponible | Baseline de desaprendizaje TOFU sin parafrasis | no disponible | GitHub y Hugging Face |
+| TOFU original (locuslab/TOFU) | no aplica | no aplica | Dataset de evaluacion de desaprendizaje | no disponible | Hugging Face datasets |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Libreria open-unlearning: https://github.com/locuslab/open-unlearning

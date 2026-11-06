@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Animagine XL 3.1 es un modelo de difusion texto-a-imagen especializado en ilustracion de estilo anime, publicado en HuggingFace por el usuario Kur0n1ko como un ajuste fino (fine-tune) del modelo cagliostrolab/animagine-xl-3.0, desarrollado originalmente por Cagliostro Research Lab. Se distribuye en formato diffusers bajo la clase `StableDiffusionXLPipeline` y esta construido sobre la arquitectura Stable Diffusion XL, con pesos en safetensors y un total de 2.567.463.684 parametros declarados en los metadatos del repositorio (13,9 GB).
+Animagine XL 3.1 es un modelo de difusion texto-a-imagen especializado en ilustracion de estilo anime, publicado en Hugging Face por el usuario Kur0n1ko como un ajuste fino (fine-tune) del modelo cagliostrolab/animagine-xl-3.0, desarrollado originalmente por Cagliostro Research Lab. Se distribuye en formato diffusers bajo la clase `StableDiffusionXLPipeline` y esta construido sobre la arquitectura Stable Diffusion XL, con pesos en safetensors y un total de 2.567.463.684 parametros declarados en los metadatos del repositorio (13,9 GB).
 
 El modelo resuelve la generacion de ilustracion anime de alta fidelidad a partir de prompts en ingles con etiquetas de estilo Danbooru, incluyendo el vocabulario de calidad tipico de la serie Animagine ("masterpiece, best quality, very aesthetic, absurdres"). Segun la model card, la version 3.1 amplia el repertorio de personajes de series conocidas, optimiza el dataset de entrenamiento e incorpora nuevas etiquetas esteticas respecto a la version 3.0.
 
@@ -72,16 +72,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kur0n1ko/animagine-xl-3.1 | 2.567.463.684 | no aplica / 1024 x 1024 | openrail++ | HuggingFace, diffusers, 0 descargas | Redistribucion de la familia Animagine XL V3 |
-| cagliostrolab/animagine-xl-3.0 | no disponible | no aplica / 1024 x 1024 | openrail++ | HuggingFace (modelo base declarado) | Version anterior de la misma serie |
-| Otros fine-tunes SDXL orientados a anime | no disponible | no aplica / 1024 x 1024 | variable (a menudo openrail++ o CreativeML OpenRAIL-M) | HuggingFace, ComfyUI, A1111 | No se dispone de datos verificados en la informacion proporcionada |
+| Kur0n1ko/animagine-xl-3.1 | 2.567.463.684 | no aplica / 1024 x 1024 | openrail++ | Hugging Face, diffusers, 0 descargas | Redistribucion de la familia Animagine XL V3 |
+| cagliostrolab/animagine-xl-3.0 | no disponible | no aplica / 1024 x 1024 | openrail++ | Hugging Face (modelo base declarado) | Version anterior de la misma serie |
+| Otros fine-tunes SDXL orientados a anime | no disponible | no aplica / 1024 x 1024 | variable (a menudo openrail++ o CreativeML OpenRAIL-M) | Hugging Face, ComfyUI, A1111 | No se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa de rendimiento entre estos modelos con los datos aportados.
 
 ## Limitaciones y advertencias
 
 - El repositorio tiene 0 descargas y 0 likes, y el uploader (Kur0n1ko) no es el laboratorio autor del modelo (Cagliostro Research Lab); la procedencia y la integridad de los pesos no estan verificadas por la comunidad. Conviene contrastar con el repositorio oficial de la serie antes de usarlo en produccion.
-- La fecha de creacion registrada en HuggingFace es 2026-09-16, incoherente con el resto de la informacion temporal disponible; se trata de un metadato no fiable.
+- La fecha de creacion registrada en Hugging Face es 2026-09-16, incoherente con el resto de la informacion temporal disponible; se trata de un metadato no fiable.
 - Riesgo de artefactos anatomicos tipico de los modelos de difusion SDXL: manos y dedos mal formados, extremidades duplicadas, ojos asimetricos. El prompt negativo de ejemplo del autor incluye explicitamente "extra digits", "fewer", "extra", "missing".
 - Sesgo de dominio: el modelo esta entrenado sobre ilustracion anime, por lo que fuera de ese estilo la calidad cae de forma acusada; no es adecuado como generador de fotorealismo ni de ilustracion no anime.
 - Idioma: los prompts deben escribirse en ingles y con vocabulario de etiquetas Danbooru; prompts en castellano pueden degradar el resultado.
@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kur0n1ko/animagine-xl-3.1
+- Modelo en Hugging Face: https://huggingface.co/Kur0n1ko/animagine-xl-3.1
 - Modelo base declarado: https://huggingface.co/cagliostrolab/animagine-xl-3.0
 - Organizacion del desarrollador original: https://huggingface.co/cagliostrolab
 - La busqueda web realizada no devolvio ningun enlace relevante al modelo (los resultados obtenidos correspondian a sitios no relacionados con IA).

@@ -68,5 +68,5 @@ No se dispone de informacion sobre modelos comparables en el mismo dominio (iden
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohamedrayyan/whale-shark-id-resnet18
+- Repositorio en Hugging Face: https://huggingface.co/mohamedrayyan/whale-shark-id-resnet18
 - Proyecto relacionado (no afiliado): https://whaleid.org/

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidwdw/fa-eval-all-t01p-c-7500-5aabbea575b2 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| davidwdw/fa-eval-all-t01p-c-7500-5aabbea575b2 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables identificables en la informacion proporcionada, dado que el repositorio no se presenta como un modelo de lenguaje sino como un archivo de evaluacion.
@@ -81,6 +81,6 @@ No se dispone de modelos comparables identificables en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-t01p-c-7500-5aabbea575b2
+- Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-t01p-c-7500-5aabbea575b2
 - Receta canonica mencionada: `evaluations/2026-09-26_b1k_all_existing_queue` (sin URL publica disponible)
 - Otros enlaces (papers, blogs, repos, demos): no disponible

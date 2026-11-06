@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lucasdfg8882/paper_020368671_embodied_ai
+- Repositorio Hugging Face: https://huggingface.co/lucasdfg8882/paper_020368671_embodied_ai
 - Lista curada de papers sobre embodied AI: https://github.com/haoranD/Awesome-Embodied-AI
 - Lista de papers sobre embodied AI (encuesta 2025): https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
 - Preprint relacionado en arXiv: https://arxiv.org/pdf/2407.06886

@@ -92,10 +92,10 @@ Tiempos de carga y primera llamada:
 
 | Modelo | Parametros | Tipo de profundidad | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Metric3D v2 ViT-L (esta ficha) | no disponible (ViT-L) | Métrica, con normales y confianza | Cualquier H x W >= 8 | BSD-2-Clause (código); pesos sin declarar | HuggingFace (pesos en JUGGHM/Metric3D) |
-| Depth Anything V2 (ViT-L) | no disponible | Relativa (no métrica en la variante base) | Resolución variable | Apache 2.0 / licencia específica según variante | HuggingFace |
-| MiDaS DPT (ViT-L) | no disponible | Relativa | Resolución variable | MIT | HuggingFace / torch.hub |
-| ZoeDepth | no disponible | Métrica (con cabecera métrica) | Resolución variable | MIT | HuggingFace |
+| Metric3D v2 ViT-L (esta ficha) | no disponible (ViT-L) | Métrica, con normales y confianza | Cualquier H x W >= 8 | BSD-2-Clause (código); pesos sin declarar | Hugging Face (pesos en JUGGHM/Metric3D) |
+| Depth Anything V2 (ViT-L) | no disponible | Relativa (no métrica en la variante base) | Resolución variable | Apache 2.0 / licencia específica según variante | Hugging Face |
+| MiDaS DPT (ViT-L) | no disponible | Relativa | Resolución variable | MIT | Hugging Face / torch.hub |
+| ZoeDepth | no disponible | Métrica (con cabecera métrica) | Resolución variable | MIT | Hugging Face |
 
 La ventaja diferencial de Metric3D v2 frente a Depth Anything V2 y MiDaS es la profundidad métrica directa con normales y confianza en una sola pasada; frente a ZoeDepth, el decodificador iterativo y el espacio canónico de cámara ofrecen mejor generalización entre cámaras. No se dispone de datos de benchmarks cruzados en la información proporcionada para cuantificar la comparación.
 
@@ -113,7 +113,7 @@ La ventaja diferencial de Metric3D v2 frente a Depth Anything V2 y MiDaS es la p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fastforks/metric3d
+- Repositorio en Hugging Face: https://huggingface.co/fastforks/metric3d
 - Pesos del autor: https://huggingface.co/JUGGHM/Metric3D
 - Código del envoltorio fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels

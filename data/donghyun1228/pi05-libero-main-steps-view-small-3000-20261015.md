@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Pasos / variante | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi05-libero-main-steps-view-small-3000-20261015 (este) | 3000 actualizaciones (paso bruto 2999) sobre trayectoria de 5000 | IDM, `view_small`, LoRA de acción 0.1 | apache-2.0 | HuggingFace (0 descargas) |
-| pi05-libero-source-free-split-vision-view-large-1000-20261010 | 1000 | IDM con visión solo objetivo; encoder de cámara base adaptado y `wrist_img` restaurado de los pesos fuente en bfloat16 | no disponible en la información | HuggingFace |
-| pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011 | 1000 | Exportación de estado de entrenamiento en bruto tras 1000 actualizaciones IDM solo objetivo; 51 hojas exportadas auditadas por hash | no disponible en la información | HuggingFace |
+| pi05-libero-main-steps-view-small-3000-20261015 (este) | 3000 actualizaciones (paso bruto 2999) sobre trayectoria de 5000 | IDM, `view_small`, LoRA de acción 0.1 | apache-2.0 | Hugging Face (0 descargas) |
+| pi05-libero-source-free-split-vision-view-large-1000-20261010 | 1000 | IDM con visión solo objetivo; encoder de cámara base adaptado y `wrist_img` restaurado de los pesos fuente en bfloat16 | no disponible en la información | Hugging Face |
+| pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011 | 1000 | Exportación de estado de entrenamiento en bruto tras 1000 actualizaciones IDM solo objetivo; 51 hojas exportadas auditadas por hash | no disponible en la información | Hugging Face |
 | pi05_libero_finetuned (LeRobot) | no disponible | π₀.₅ VLA ajustado y evaluado en LIBERO | no disponible en la información | ModelScope |
 | pi05_libero_base (LeRobot) | no disponible | Checkpoint base π₀.₅ para LIBERO | no disponible en la información | ModelScope |
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-steps-view-small-3000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-steps-view-small-3000-20261015
 - Checkpoint relacionado (split-vision, view-large, 1000): https://huggingface.co/Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010
 - Checkpoint relacionado (raw-common, vision-yaw30, 1000): https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011
 - Repositorio GitHub del autor (LIBERO_view): https://github.com/Donghyun1228/LIBERO_view

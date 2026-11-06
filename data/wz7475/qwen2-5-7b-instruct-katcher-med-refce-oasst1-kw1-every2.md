@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every2` es un checkpoint publicado en HuggingFace por el usuario wz7475. La model card asociada es la plantilla automática de `transformers` y no contiene informacion sustantiva: todos los campos de descripcion, datos de entrenamiento, licencia, idiomas y evaluacion aparecen como "[More Information Needed]". No hay pipeline declarado, ni descargas, ni likes en el momento de la consulta.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every2` es un checkpoint publicado en Hugging Face por el usuario wz7475. La model card asociada es la plantilla automática de `transformers` y no contiene informacion sustantiva: todos los campos de descripcion, datos de entrenamiento, licencia, idiomas y evaluacion aparecen como "[More Information Needed]". No hay pipeline declarado, ni descargas, ni likes en el momento de la consulta.
 
 El identificador del repositorio sugiere que se trata de un ajuste (fine-tuning, merge o edicion de pesos) sobre `Qwen2.5-7B-Instruct`, combinando tecnicas y datos cuyo nombre aparece en el propio ID: "katcher" (posible referencia al metodo de edicion de conocimiento basado en KAN), "med" (posible dominio medico), "refce" (posible referencia a un conjunto de datos de edicion secuencial), "oasst1" (OpenAssistant OASST1) y los sufijos "kw1" y "every2" (posibles hiperparametros de peso e intervalo de capas). Esta interpretacion es una inferencia a partir del nombre, no un dato confirmado por el autor.
 
@@ -72,10 +72,10 @@ La comparativa se establece frente a alternativas de la misma categoria (instruc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every2 | no disponible (posible ~7B) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Model card vacia; repo de 0,3 GB |
-| Qwen2.5-7B-Instruct | 7,61B | 128K tokens | Apache 2.0 | HuggingFace y ModelScope | Base presumible del ajuste; soporte de tool calling y multilingue |
-| Llama 3.1 8B Instruct | 8,03B | 128K tokens | Llama 3.1 Community License | HuggingFace y Meta | Restricciones de licencia para grandes despliegues |
-| Mistral 7B Instruct v0.3 | 7,25B | 32K tokens | Apache 2.0 | HuggingFace | Contexto menor; ecosistema amplio de cuantizaciones |
+| wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every2 | no disponible (posible ~7B) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Model card vacia; repo de 0,3 GB |
+| Qwen2.5-7B-Instruct | 7,61B | 128K tokens | Apache 2.0 | Hugging Face y ModelScope | Base presumible del ajuste; soporte de tool calling y multilingue |
+| Llama 3.1 8B Instruct | 8,03B | 128K tokens | Llama 3.1 Community License | Hugging Face y Meta | Restricciones de licencia para grandes despliegues |
+| Mistral 7B Instruct v0.3 | 7,25B | 32K tokens | Apache 2.0 | Hugging Face | Contexto menor; ecosistema amplio de cuantizaciones |
 
 No se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa con estas alternativas.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every2
+- Pagina del modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every2
 - Paper referenciado en la plantilla de la model card (impacto ambiental de ML, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML citado en la plantilla: https://mlco2.github.io/impact
 - Modelo base presumible (no confirmado): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

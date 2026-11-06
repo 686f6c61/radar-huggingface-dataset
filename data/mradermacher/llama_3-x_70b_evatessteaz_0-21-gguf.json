@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama_3.x_70b_EvaTessTeaz_0.21-GGUF",
+  "slug": "mradermacher-llama_3-x_70b_evatessteaz_0-21-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama_3.x_70b_EvaTessTeaz_0.21-GGUF",
+  "created_at": "2025-03-08T14:00:50.000Z",
+  "updated_at": "2026-11-06T09:01:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:NexesMess/Llama_3.x_70b_EvaTessTeaz_0.21",
+    "base_model:quantized:NexesMess/Llama_3.x_70b_EvaTessTeaz_0.21",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303003840,
+  "storage_human": "481.3 GB",
+  "base_model": "NexesMess/Llama_3.x_70b_EvaTessTeaz_0.21",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

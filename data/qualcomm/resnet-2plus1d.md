@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ResNet-2Plus1D es una red neuronal convolucional para clasificacion de video publicada por Qualcomm en HuggingFace dentro de su catalogo de modelos optimizados para dispositivos con hardware Qualcomm. No es un modelo de lenguaje: se trata de un backbone discriminativo de vision que recibe un clip de video y devuelve una etiqueta de accion entre las 400 clases del dataset Kinetics-400. Su arquitectura factoriza la convolucion 3D en una convolucion espacial 2D seguida de una convolucion temporal 1D, enfoque introducido en el paper arXiv:1711.11248 y disponible tambien en la implementacion de referencia de torchvision.
+ResNet-2Plus1D es una red neuronal convolucional para clasificacion de video publicada por Qualcomm en Hugging Face dentro de su catalogo de modelos optimizados para dispositivos con hardware Qualcomm. No es un modelo de lenguaje: se trata de un backbone discriminativo de vision que recibe un clip de video y devuelve una etiqueta de accion entre las 400 clases del dataset Kinetics-400. Su arquitectura factoriza la convolucion 3D en una convolucion espacial 2D seguida de una convolucion temporal 1D, enfoque introducido en el paper arXiv:1711.11248 y disponible tambien en la implementacion de referencia de torchvision.
 
 El modelo tiene 31,5 millones de parametros y una entrada fija de 112x112 pixeles. Qualcomm distribuye pesos pre-exportados en varios formatos (ONNX, QNN_DLC para QAIRT y TFLite) tanto en precision float como cuantizados w8a8 (int8 en pesos y activaciones), con tamanos de 120 MB y 30,8 MB respectivamente. El objetivo del repositorio no es entrenar desde cero, sino ofrecer artefactos listos para ejecutar en la NPU de chipsets Snapdragon y Dragonwing.
 
@@ -28,7 +28,7 @@ Su relevancia actual esta en el despliegue en el borde: los tiempos de inferenci
 
 La red sigue el diseno ResNet aplicado a video con convoluciones (2+1)D. En lugar de una unica convolucion 3D de tamano 3x3x3, cada bloque separa el calculo en una convolucion espacial 2D de 1x3x3 y una convolucion temporal 1D de 3x1x1 aplicadas de forma sucesiva, con una no linealidad intermedia. Esta factorizacion aumenta el numero de no linealidades de la red, duplica aproximadamente el numero de parametros respecto a una convolucion 3D equivalente en profundidad de capas y facilita la optimizacion, segun el paper de referencia (arXiv:1711.11248). El checkpoint publicado corresponde a un entrenamiento sobre Kinetics-400, un dataset de acciones humanas en video.
 
-Qualcomm no publica en la informacion disponible el numero de tokens o frames de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de ajuste fino adicionales. Tampoco se documenta el proceso de cuantizacion mas alla de la indicacion de que los artefactos se compilan y perfilan con Qualcomm AI Hub Workbench. El repositorio de HuggingFace ocupa 8,5 GB porque incluye los distintos assets exportados (ONNX, QNN_DLC y TFLite en float y w8a8), no porque el modelo tenga un tamano elevado.
+Qualcomm no publica en la informacion disponible el numero de tokens o frames de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de ajuste fino adicionales. Tampoco se documenta el proceso de cuantizacion mas alla de la indicacion de que los artefactos se compilan y perfilan con Qualcomm AI Hub Workbench. El repositorio de Hugging Face ocupa 8,5 GB porque incluye los distintos assets exportados (ONNX, QNN_DLC y TFLite en float y w8a8), no porque el modelo tenga un tamano elevado.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ La cuantizacion w8a8 reduce la latencia aproximadamente a la mitad respecto a fl
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ResNet-2Plus1D (qualcomm/ResNet-2Plus1D) | 31,5 M | 112x112 | BSD-3-Clause | HuggingFace + Qualcomm AI Hub, exportado a ONNX/QNN_DLC/TFLite | Precision float y w8a8; latencias medidas en NPU Qualcomm |
+| ResNet-2Plus1D (qualcomm/ResNet-2Plus1D) | 31,5 M | 112x112 | BSD-3-Clause | Hugging Face + Qualcomm AI Hub, exportado a ONNX/QNN_DLC/TFLite | Precision float y w8a8; latencias medidas en NPU Qualcomm |
 | Implementacion de referencia de torchvision (r2plus1d) | no disponible | 112x112 | BSD-3-Clause | Repositorio de torchvision | Base arquitectonica de la que deriva este modelo; sin artefactos preexportados para NPU |
 | I3D (Inflated 3D ConvNet) | no disponible | no disponible | no disponible | Implementaciones de terceros | Alternativa clasica de convolucion 3D; datos de rendimiento no disponibles |
 | SlowFast | no disponible | no disponible | no disponible | Implementaciones de terceros | Modelo de dos vias para reconocimiento de acciones; datos de rendimiento no disponibles |
@@ -108,7 +108,7 @@ No se dispone de datos comparativos de precision entre estas alternativas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/ResNet-2Plus1D
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/ResNet-2Plus1D
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/resnet_2plus1d
 - Codigo y recetas de exportacion en Qualcomm AI Hub Models (v0.64.0): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/resnet_2plus1d
 - Implementacion de referencia en torchvision: https://github.com/pytorch/vision/blob/main/torchvision/models/video/resnet.py

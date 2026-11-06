@@ -76,9 +76,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entorno | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| poca-SoccerTwos (rajurk11) | MA-POCA multiagente | ML-Agents-SoccerTwos | no disponible | no disponible | HuggingFace, 0 descargas |
+| poca-SoccerTwos (rajurk11) | MA-POCA multiagente | ML-Agents-SoccerTwos | no disponible | no disponible | Hugging Face, 0 descargas |
 | Agentes SoccerTwos de referencia de Unity ML-Agents | PPO / self-play | ML-Agents-SoccerTwos | no disponible | la del repositorio de ML-Agents | Repositorio oficial de Unity |
-| Checkpoints de la asignatura Deep RL de Hugging Face | PPO y variantes por entorno | Entornos varios (Snowball, Soccer, etc.) | no disponible | variable por autor | HuggingFace |
+| Checkpoints de la asignatura Deep RL de Hugging Face | PPO y variantes por entorno | Entornos varios (Snowball, Soccer, etc.) | no disponible | variable por autor | Hugging Face |
 
 No se dispone de cifras comparativas (recompensa media, pasos hasta convergencia) de estos modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible. La diferencia conceptual principal es el algoritmo: MA-POCA incorpora credit assignment multiagente explicito, mientras que las lineas base habituales de SoccerTwos usan PPO o self-play estandar.
 
@@ -97,7 +97,7 @@ No se dispone de cifras comparativas (recompensa media, pasos hasta convergencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajurk11/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/rajurk11/poca-SoccerTwos
 - Paper de MA-POCA: no disponible en la informacion proporcionada
 - Documentacion de MA-POCA en Unity ML-Agents: no disponible en la informacion proporcionada
 - Repositorio de Unity ML-Agents: no disponible en la informacion proporcionada

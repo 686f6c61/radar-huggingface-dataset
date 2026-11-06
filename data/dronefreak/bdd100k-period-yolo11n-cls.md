@@ -108,7 +108,7 @@ Lectura de la tabla: `yolo11n-cls` queda segundo en Top-1 (93,79 %) por detras d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-yolo11n-cls
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-yolo11n-cls
 - Conjunto de datos de clasificacion por periodo: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Repositorio BDD100K-Toolkit (codigo de preparacion, entrenamiento y evaluacion): https://github.com/dronefreak/bdd100k-toolkit
 - Modelo base Ultralytics YOLO11: https://huggingface.co/Ultralytics/YOLO11

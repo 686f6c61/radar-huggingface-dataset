@@ -83,7 +83,7 @@ La principal diferencia de este modelo es su formato de pesos cerrado a un runti
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Atomic-Germ/OpenAI-NEO-CODE-20B-NPU2
+- Repositorio Hugging Face del modelo: https://huggingface.co/Atomic-Germ/OpenAI-NEO-CODE-20B-NPU2
 - Modelo base (fine-tune GGUF): https://huggingface.co/DavidAU/Openai_gpt-oss-20b-CODER-NEO-CODE-DI-MATRIX-GGUF
 - Modelo original de OpenAI: https://huggingface.co/openai/gpt-oss-20b
 - Motor FastFlowLM: https://fastflowlm.com

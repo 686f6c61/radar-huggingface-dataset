@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tanvi-devi/mocov3-demo` es un repositorio de HuggingFace publicado por el usuario `tanvi-devi` que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Mocov3" orientada a tareas multitarea. Según la propia model card, se trata de un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no de una release preentrenada lista para producción. El checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas, no como un modelo entrenado.
+`tanvi-devi/mocov3-demo` es un repositorio de Hugging Face publicado por el usuario `tanvi-devi` que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Mocov3" orientada a tareas multitarea. Según la propia model card, se trata de un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no de una release preentrenada lista para producción. El checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas, no como un modelo entrenado.
 
 El tamaño real declarado en los pesos es de 49.600 parámetros, lo que sitúa al artefacto en el rango de los modelos de juguete (aproximadamente 0,05 millones de parámetros). El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validación alguna por parte de la comunidad. La licencia es MIT y el formato de pesos es safetensors.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con u
 - Revisión de código de implementaciones propias: el repositorio incluye `eval.py` como artefacto principal y permite inspeccionar cómo se estructuran un modelo, un `config.json` y unos `training_args.json` en un caso mínimo y legible.
 - Pruebas de humo en CI/CD: con 49.600 parámetros, el checkpoint puede cargarse en cualquier runner sin GPU, lo que permite validar que un pipeline de descarga, carga y ejecución de safetensors funciona de extremo a extremo antes de sustituir el modelo por uno real.
 - Experimentos de ablación arquitectónica: las decisiones declaradas (atención dispersa frente a densa, fusión de bajo rango frente a completa, mish frente a GELU/ReLU, RMSNorm frente a LayerNorm) se pueden comparar con un baseline de igual capacidad y los mismos datos, semillas y presupuesto de ajuste, tal como recomienda la propia model card.
-- Docencia y formación: sirve como ejemplo didáctico de anatomía de un repositorio de modelo en HuggingFace y de la diferencia entre un checkpoint de inicialización y un checkpoint entrenado.
+- Docencia y formación: sirve como ejemplo didáctico de anatomía de un repositorio de modelo en Hugging Face y de la diferencia entre un checkpoint de inicialización y un checkpoint entrenado.
 - Pruebas de infraestructura de serving: útil para medir el coste fijo (overhead) de carga y serialización de safetensors, o para probar registries y sistemas de versionado de artefactos sin consumir recursos de GPU.
 - Validación de arneses de evaluación: el propio README propone usar un conjunto de validación específico de tarea, reportar la métrica en al menos tres semillas e incluir un baseline de capacidad equivalente; este repositorio permite montar y depurar ese arnés antes de escalarlo.
 - Pruebas de integración de adaptadores personalizados: dado que las APIs genéricas de carga automática requieren un adaptador explícito, es un banco de pruebas para desarrollar dicho adaptador.
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tanvi-devi/mocov3-demo | 49.600 | no disponible | sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| tanvi-devi/mocov3-demo | 49.600 | no disponible | sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Advertencia de nomenclatura: el nombre "Mocov3" coincide con el método de aprendizaje autosupervisado MoCo v3 para visión, pero la model card de este repositorio no documenta ninguna relación con él ni reproduce su formulación. Cualquier comparación con esa línea de trabajo carecería de base en la información disponible.
@@ -86,6 +86,6 @@ Advertencia de nomenclatura: el nombre "Mocov3" coincide con el método de apren
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tanvi-devi/mocov3-demo
+- Repositorio en Hugging Face: https://huggingface.co/tanvi-devi/mocov3-demo
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, papers, blogs, repositorios de código o demos asociados. Los resultados devueltos correspondían a definiciones de diccionario en francés sin relación con el artefacto.
 - Archivos incluidos en el repositorio según la model card: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.

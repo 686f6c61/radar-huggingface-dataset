@@ -67,4 +67,4 @@ No se dispone de información para comparar con otros modelos. No se conocen mod
 
 ## Enlaces
 
-- [HuggingFace - model_650569330_mae_large](https://huggingface.co/Siddharthmenon/model_650569330_mae_large)
+- [Hugging Face - model_650569330_mae_large](https://huggingface.co/Siddharthmenon/model_650569330_mae_large)

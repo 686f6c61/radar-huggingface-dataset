@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 | Modelo | Tipo | Grados de libertad | Actuadores | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rp1_model (este repo) | Bundle de robot RP1 | 28/24 (mimic-lite); 40 hinge en variante paralela | 28 motores en variante paralela | MJCF, URDF, mallas | No disponible | HuggingFace, 0 descargas |
+| rp1_model (este repo) | Bundle de robot RP1 | 28/24 (mimic-lite); 40 hinge en variante paralela | 28 motores en variante paralela | MJCF, URDF, mallas | No disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre otros bundles de robotica directamente comparables en la informacion proporcionada.
@@ -75,14 +75,14 @@ No se dispone de informacion sobre otros bundles de robotica directamente compar
 - No es un modelo de IA: no genera texto, no razona ni procesa lenguaje; cualquier uso esperando capacidades de LLM es un error de interpretacion.
 - La model card advierte explicitamente de que el soporte del robot no constituye una certificacion de despliegue en hardware; no debe usarse como garantia de seguridad para operar el RP1 fisico.
 - Las inercias de la variante paralela son estimadas, no medidas, lo que puede introducir desviaciones en la dinamica simulada.
-- La licencia no esta disponible en el repositorio de HuggingFace; el autor remite a `LICENSE_SOURCE.md` en el origen, por lo que el uso comercial queda sin determinar hasta consultar dicho fichero.
+- La licencia no esta disponible en el repositorio de Hugging Face; el autor remite a `LICENSE_SOURCE.md` en el origen, por lo que el uso comercial queda sin determinar hasta consultar dicho fichero.
 - El repositorio tiene 0 descargas y 0 likes, sin pipeline definido ni idiomas declarados; no hay evidencia de validacion externa por parte de la comunidad.
 - La actualizacion visual mantiene las mallas de colision originales, de modo que puede haber discrepancias entre la apariencia visual y la geometria fisica de colision.
 - El bundle depende de la resolucion via `mjhub` y de revisiones concretas del repositorio de origen; cambios en `Roboparty/RP1_description` podrian afectar a la reproducibilidad si no se fijan los hashes de `provenance.json`.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elijahgalahad/rp1_model
+- Repositorio en Hugging Face: https://huggingface.co/elijahgalahad/rp1_model
 - Repositorio de origen de los activos: https://github.com/Roboparty/rp1_description
 - Revision citada: `84529a55649b5c9796d49093c266208c879f9f29`
 - Revision visual citada: `8c12d13ae05143bc1f67f51f1046ddb14cc9d112`

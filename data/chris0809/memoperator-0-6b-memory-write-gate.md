@@ -37,7 +37,7 @@ El entrenamiento se realizo sobre `chris0809/memory-write-gate-20k`, un dataset 
 - Admision de memoria en sistemas de agentes: filtra que fragmentos de una conversacion o instruccion deben escribirse en un almacen persistente.
 - Soporte bilingue chino-ingles, tanto para entradas en caracteres chinos como en alfabeto latino.
 - Salida de probabilidad calibrada junto con una etiqueta, lo que permite ajustar el punto de operacion con un umbral externo.
-- Integracion en pipelines de HuggingFace Transformers y PEFT mediante `AutoPeftModelForSequenceClassification`.
+- Integracion en pipelines de Hugging Face Transformers y PEFT mediante `AutoPeftModelForSequenceClassification`.
 - No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio, ni modos de razonamiento explicito (thinking mode).
 
 ## Casos de uso
@@ -74,8 +74,8 @@ La propia model card advierte de que el conjunto de 60 filas es una comprobacion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chris0809/memoperator-0.6b-memory-write-gate (este modelo) | Base de ~0,6B mas adaptador LoRA | No disponible | Accuracy 89,73% en test sintetico; 85,00% en set humano de 60 filas | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| MemTensor/MemOperator-0.6B (modelo base) | ~0,6B | No disponible | No disponible | No disponible | HuggingFace (referenciado como base) |
+| chris0809/memoperator-0.6b-memory-write-gate (este modelo) | Base de ~0,6B mas adaptador LoRA | No disponible | Accuracy 89,73% en test sintetico; 85,00% en set humano de 60 filas | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| MemTensor/MemOperator-0.6B (modelo base) | ~0,6B | No disponible | No disponible | No disponible | Hugging Face (referenciado como base) |
 | Otras alternativas de admision de memoria | No disponible | No disponible | No disponible | No disponible | No se han encontrado modelos comparables en la informacion disponible |
 
 No se han identificado en la busqueda web modelos directamente comparables de la misma categoria (clasificadores de admision de memoria). Las opciones habituales en la practica serian un encoder pequeno ajustado a medida o un LLM generativo usado como juez, pero no se dispone de datos de rendimiento de esas alternativas en la informacion proporcionada.
@@ -96,7 +96,7 @@ No se han identificado en la busqueda web modelos directamente comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chris0809/memoperator-0.6b-memory-write-gate
+- Modelo en Hugging Face: https://huggingface.co/chris0809/memoperator-0.6b-memory-write-gate
 - Modelo base: https://huggingface.co/MemTensor/MemOperator-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/chris0809/memory-write-gate-20k
 - Libreria PEFT: https://huggingface.co/docs/peft

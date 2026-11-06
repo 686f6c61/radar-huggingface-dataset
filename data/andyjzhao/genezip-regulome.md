@@ -74,6 +74,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andyjzhao/GeneZip-Regulome
+- Modelo en Hugging Face: https://huggingface.co/andyjzhao/GeneZip-Regulome
 - Repositorio fuente de los pesos: https://huggingface.co/jzshared/GeneZip-CisReg-64BPT-100B/tree/e8c84abc9ae814f296f04efbdc09410c18c92a81/checkpoint-30600
 - Código GeneZip: https://github.com/AndyJZhao/GeneZip

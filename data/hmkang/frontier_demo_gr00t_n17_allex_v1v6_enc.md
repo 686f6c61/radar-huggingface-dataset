@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario hmkang, contiene lo que su model card describe como GR00T N1.7-3B, un modelo de la familia GR00T orientado a control robótico (espacio de acciones de 50 dimensiones, entrada visual estéreo y horizonte de predicción de 24 pasos). El nombre del modelo indica 3.000 millones de parámetros y la model card lo describe como un "frontier demo" entrenado sobre un conjunto de datos denominado allex merged v1..v6 (480 episodios).
+Este repositorio de Hugging Face, publicado por el usuario hmkang, contiene lo que su model card describe como GR00T N1.7-3B, un modelo de la familia GR00T orientado a control robótico (espacio de acciones de 50 dimensiones, entrada visual estéreo y horizonte de predicción de 24 pasos). El nombre del modelo indica 3.000 millones de parámetros y la model card lo describe como un "frontier demo" entrenado sobre un conjunto de datos denominado allex merged v1..v6 (480 episodios).
 
 El aspecto mas relevante del repositorio es que no contiene pesos utilizables: todos los ficheros estan cifrados con AES-256-CBC mediante `openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt`, con un fichero `.enc` por cada fichero original y sin compresion. El autor indica explicitamente que los pesos "frontier-trained" no se publican en claro y que el repositorio es publico unicamente para que el equipo pueda localizarlo; su contenido requiere una clave externa. Se trata, por tanto, de un artefacto de investigacion restringido y no de un modelo desplegable.
 
@@ -92,6 +92,6 @@ La informacion proporcionada no incluye datos verificados de otros modelos, por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hmkang/frontier_demo_gr00t_n17_allex_v1v6_enc
+- Repositorio en Hugging Face: https://huggingface.co/hmkang/frontier_demo_gr00t_n17_allex_v1v6_enc
 - Comando de descifrado indicado por el autor (incluido en la model card): `openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass file:/path/to/key.txt`
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos correspondian a paginas de soporte de Microsoft y no guardan relacion con este repositorio).

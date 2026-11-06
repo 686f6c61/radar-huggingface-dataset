@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-brain-v1 es un ajuste fino (fine-tune) del modelo Gemma 2 2B Instruct de Google DeepMind, publicado por el usuario hiupjump en HuggingFace. El repositorio contiene tanto pesos en safetensors como una conversion a GGUF, e incluye un Modelfile de Ollama para su despliegue. Con 2.614.341.888 parametros (~2,6 mil millones), se trata de un modelo denso de pequeno tamano orientado a uso conversacional, etiquetado en HuggingFace como "conversational".
+my-brain-v1 es un ajuste fino (fine-tune) del modelo Gemma 2 2B Instruct de Google DeepMind, publicado por el usuario hiupjump en Hugging Face. El repositorio contiene tanto pesos en safetensors como una conversion a GGUF, e incluye un Modelfile de Ollama para su despliegue. Con 2.614.341.888 parametros (~2,6 mil millones), se trata de un modelo denso de pequeno tamano orientado a uso conversacional, etiquetado en Hugging Face como "conversational".
 
 El interes practico del modelo reside en su formato de distribucion: al estar disponible en GGUF con cuantizacion Q4_K_M y en safetensors, puede ejecutarse en hardware de consumo (portatiles, GPUs de gama media e incluso CPU) mediante llama.cpp u Ollama. El autor indica que el ajuste fino y la conversion se realizaron con Unsloth, con un entrenamiento declarado "2x mas rapido" gracias a dicha herramienta. La ficha es, sin embargo, extremadamente escasa: no se documentan datos de entrenamiento, licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -26,7 +26,7 @@ No debe confundirse con un modelo nuevo: es una adaptacion de Gemma 2 2B IT medi
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo. La unica evidencia disponible es la etiqueta `gemma2` de HuggingFace y el nombre del fichero GGUF incluido, `gemma-2-2b-it.Q4_K_M.gguf`, que apunta a un ajuste fino sobre Gemma 2 2B Instruct. Por tanto, cabe esperar la arquitectura del modelo base (transformer decoder-only con atencion por grupos, normalizacion RMSNorm y funciones de activacion tipo GeGLU), pero estos detalles no estan confirmados por el autor y deben tratarse como no verificados.
+La model card no describe la arquitectura interna del modelo. La unica evidencia disponible es la etiqueta `gemma2` de Hugging Face y el nombre del fichero GGUF incluido, `gemma-2-2b-it.Q4_K_M.gguf`, que apunta a un ajuste fino sobre Gemma 2 2B Instruct. Por tanto, cabe esperar la arquitectura del modelo base (transformer decoder-only con atencion por grupos, normalizacion RMSNorm y funciones de activacion tipo GeGLU), pero estos detalles no estan confirmados por el autor y deben tratarse como no verificados.
 
 En cuanto al entrenamiento, la unica informacion aportada es que el modelo fue ajustado y convertido a GGUF con Unsloth, y que el proceso fue "2x mas rapido" gracias a dicha herramienta. No se especifica el conjunto de datos, el numero de tokens, la composicion del corpus, si se uso LoRA/QLoRA o ajuste completo, ni si hubo etapas de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica adicional. La unica nota tecnica concreta es que el comportamiento del token BOS se ajusto para compatibilidad con GGUF.
 
@@ -70,7 +70,7 @@ No existen datos de evaluacion propios de este fine-tune, ni comparacion con el 
 - VRAM estimada en Q4_K_M: aproximadamente 1,7-2,0 GB para los pesos, lo que deja margen amplio para contexto en GPUs de 4-8 GB.
 - GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060, RTX 4060, RTX 2070, etc.) para el formato cuantizado; para safetensors en precision completa se recomienda un minimo de 8-12 GB (RTX 3080, RTX 4070, A10, L4).
 - Ejecucion en GPU de consumo: si, es uno de los puntos fuertes del modelo; tambien es viable en CPU con llama.cpp gracias al GGUF Q4_K_M.
-- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama (Modelfile incluido), Unsloth para carga y ajuste, y endpoints compatibles con HuggingFace (etiqueta `endpoints_compatible`). El despliegue con vLLM o TGI sobre los safetensors no esta confirmado por el autor.
+- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama (Modelfile incluido), Unsloth para carga y ajuste, y endpoints compatibles con Hugging Face (etiqueta `endpoints_compatible`). El despliegue con vLLM o TGI sobre los safetensors no esta confirmado por el autor.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativos para my-brain-v1, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hiupjump/my-brain-v1
+- Modelo en Hugging Face: https://huggingface.co/hiupjump/my-brain-v1
 - Repositorio de Unsloth (herramienta citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (formato GGUF y cliente `llama-cli`): https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

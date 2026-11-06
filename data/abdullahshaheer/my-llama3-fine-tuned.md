@@ -1,7 +1,7 @@
 # abdullahshaheer/my-llama3-fine-tuned
 
 ## Resumen
-`abdullahshaheer/my-llama3-fine-tuned` es un ajuste fino (fine-tune) del modelo `unsloth/llama-3-8b-Instruct-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de Llama 3 8B Instruct de Meta. Lo desarrolla el usuario de HuggingFace abdullahshaheer y se publica bajo licencia apache-2.0 segun su model card. El modelo esta orientado a generacion de texto en ingles y se ha entrenado con la libreria Unsloth, que acelera el proceso de ajuste.
+`abdullahshaheer/my-llama3-fine-tuned` es un ajuste fino (fine-tune) del modelo `unsloth/llama-3-8b-Instruct-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de Llama 3 8B Instruct de Meta. Lo desarrolla el usuario de Hugging Face abdullahshaheer y se publica bajo licencia apache-2.0 segun su model card. El modelo esta orientado a generacion de texto en ingles y se ha entrenado con la libreria Unsloth, que acelera el proceso de ajuste.
 
 Se trata de un ajuste de un modelo de 8.000 millones de parametros con arquitectura transformer autorregresiva (la de Llama 3), heredando por tanto el contexto y las capacidades del modelo base. El repositorio ocupa solo 0,2 GB, un tamano muy inferior al de unos pesos completos de 8B (que rondarian los 4-5 GB en 4 bits y unos 16 GB en fp16); esto es coherente con pesos de adaptador (LoRA) que requieren el modelo base para funcionar, aunque la model card no lo confirma explicitamente.
 
@@ -40,7 +40,7 @@ El ajuste fino se realizo con Unsloth, una libreria que optimiza el entrenamient
 - Experimentacion academica sobre fine-tuning de bajo coste: util para comparar tecnicas de PEFT (LoRA) sobre una base de 8B sin necesidad de infraestructura de entrenamiento completa.
 - Tareas internas de generacion de texto donde no se requiere calidad de produccion: dado que no hay evaluacion publicada, encaja en entornos exploratorios y no criticos.
 - Base para un segundo ajuste especifico: si el dominio objetivo no coincide con el del autor original, se puede reajustar para una tarea concreta, asumiendo el coste de reentrenamiento.
-- Demostraciones y docencia sobre ciclo de vida de modelos en HuggingFace: muestra el flujo completo de publicacion de un fine-tune con metadatos, tags y model card.
+- Demostraciones y docencia sobre ciclo de vida de modelos en Hugging Face: muestra el flujo completo de publicacion de un fine-tune con metadatos, tags y model card.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la informacion disponible.
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| abdullahshaheer/my-llama3-fine-tuned | 8B (base) | 8.192 tokens (heredado) | apache-2.0 (segun model card) | HuggingFace, 0 descargas | no disponible |
+| abdullahshaheer/my-llama3-fine-tuned | 8B (base) | 8.192 tokens (heredado) | apache-2.0 (segun model card) | Hugging Face, 0 descargas | no disponible |
 | Meta Llama 3 8B Instruct | 8B | 8.192 tokens | licencia de comunidad de Meta Llama 3 | ampliamente disponible | si (publicados por Meta) |
 | Mistral 7B Instruct | 7B | 32.768 tokens | Apache 2.0 | ampliamente disponible | si (publicados por Mistral) |
 | Qwen2 7B Instruct | 7B | 131.072 tokens | Apache 2.0 (segun variante) | ampliamente disponible | si (publicados por Alibaba) |
@@ -76,7 +76,7 @@ Nota: los datos de contexto, licencia y disponibilidad de los modelos comparados
 - Para produccion: no se recomienda su uso sin una evaluacion propia previa, dado que no existen garantias de calidad, soporte ni mantenimiento.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/abdullahshaheer/my-llama3-fine-tuned
+- Modelo en Hugging Face: https://huggingface.co/abdullahshaheer/my-llama3-fine-tuned
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Llama 3 en Meta: https://dev.meta.ai/llama/models/llama-3

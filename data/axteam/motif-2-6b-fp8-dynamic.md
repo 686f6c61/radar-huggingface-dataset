@@ -83,6 +83,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/axteam/Motif-2.6B-FP8-dynamic
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/axteam/Motif-2.6B-FP8-dynamic
 - Modelo base: https://huggingface.co/Motif-Technologies/Motif-2.6B
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

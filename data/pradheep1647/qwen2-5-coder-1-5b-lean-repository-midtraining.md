@@ -90,7 +90,7 @@ El adaptador actual mejora la pérdida de repositorio pero degrada la adherencia
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Pradheep1647/qwen2.5-coder-1.5b-lean-repository-midtraining)
+- [Modelo en Hugging Face](https://huggingface.co/Pradheep1647/qwen2.5-coder-1.5b-lean-repository-midtraining)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Pradheep1647/lean-repository-midtraining-v1)
 - [Modelo base Qwen2.5-Coder-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct)
 - [Adaptador anterior (lean-language-sft)](https://huggingface.co/Pradheep1647/qwen2.5-coder-1.5b-lean-language-sft)

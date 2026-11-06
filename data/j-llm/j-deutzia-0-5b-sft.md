@@ -87,6 +87,6 @@ Nota: los datos de Qwen2.5-0.5B-Instruct y TinyLlama-1.1B-Chat proceden de sus r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j-llm/J-Deutzia-0.5B-SFT
+- Hugging Face: https://huggingface.co/j-llm/J-Deutzia-0.5B-SFT
 - Repositorio de código de carga y generación (incluido en el propio repo): `code/canonical_corpus/probe_moe_lm.py` y `code/scripts/j72v2_gen_eval.py`
 - No se han encontrado papers, blogs, repositorios externos ni demos en la búsqueda web realizada; los resultados obtenidos correspondían a la letra «J» y no guardan relación con el modelo.

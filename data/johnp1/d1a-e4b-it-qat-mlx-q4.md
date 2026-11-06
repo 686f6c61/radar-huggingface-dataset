@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnP1/d1a-e4b-it-qat-mlx-q4
+- Modelo en Hugging Face: https://huggingface.co/JohnP1/d1a-e4b-it-qat-mlx-q4
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct
 - Versión 8-bit con cifras medidas: https://huggingface.co/JohnP1/d1a-e4b-it-mlx-q8
 - Variante E2B QAT MLX 4-bit: https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4

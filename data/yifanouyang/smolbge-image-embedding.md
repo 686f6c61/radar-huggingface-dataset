@@ -82,11 +82,11 @@ No hay datos de benchmarks comparables: los resultados publicados por SmolBGE co
 
 | Modelo | Tipo | Dimension del embedding | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolBGE (este modelo) | Adaptador sobre SmolVLM2-500M + bge-small-en-v1.5 | 384 | 887.424 entrenables (backbones congelados) | Apache-2.0 (adaptador y codigo) | HuggingFace Hub y GitHub |
+| SmolBGE (este modelo) | Adaptador sobre SmolVLM2-500M + bge-small-en-v1.5 | 384 | 887.424 entrenables (backbones congelados) | Apache-2.0 (adaptador y codigo) | Hugging Face Hub y GitHub |
 | CLIP ViT-B/32 | Modelo contrastivo imagen-texto de extremo a extremo | 512 | ~151 M (orden de magnitud) | MIT (segun el repositorio original) | Ampliamente disponible |
 | SigLIP base (patch16-224) | Modelo contrastivo imagen-texto de extremo a extremo | 768 | No disponible | Apache-2.0 (segun el repositorio original) | Ampliamente disponible |
-| BAAI/bge-small-en-v1.5 | Solo texto, sin rama visual | 384 | ~33 M | MIT (segun el repositorio original) | HuggingFace Hub |
-| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | Modelo generativo vision-lenguaje (no produce embeddings) | No aplica | ~500 M | Apache-2.0 (segun el repositorio original) | HuggingFace Hub |
+| BAAI/bge-small-en-v1.5 | Solo texto, sin rama visual | 384 | ~33 M | MIT (segun el repositorio original) | Hugging Face Hub |
+| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | Modelo generativo vision-lenguaje (no produce embeddings) | No aplica | ~500 M | Apache-2.0 (segun el repositorio original) | Hugging Face Hub |
 
 Rendimiento comparado: no disponible. El autor no publica comparaciones contra CLIP, SigLIP ni otros recuperadores en la informacion proporcionada.
 
@@ -107,7 +107,7 @@ Rendimiento comparado: no disponible. El autor no publica comparaciones contra C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yifanouyang/smolbge-image-embedding
+- Modelo en Hugging Face: https://huggingface.co/yifanouyang/smolbge-image-embedding
 - Repositorio GitHub: https://github.com/3513542967-creator/smolbge-image-embedding
 - Model card ampliada: https://huggingface.co/yifanouyang/smolbge-image-embedding/blob/main/MODEL_CARD.md
 - README en chino: https://huggingface.co/yifanouyang/smolbge-image-embedding/blob/main/README_zh-CN.md

@@ -77,11 +77,11 @@ Entorno de las pruebas: macOS 27.0 sobre Apple M4 Max.
 
 | Modelo o artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mlboydaisuke/Qwen3-0.6B-wo4-float-repro-LiteRT` (este repositorio) | ~0,6 mil millones (modelo base) | 1.024 tokens de cache en el bundle | SIGSEGV en GPU, exit 0 en CPU; sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas, 0 likes; uso no recomendado |
-| `Qwen/Qwen3-0.6B` | ~0,6 mil millones | no disponible en la informacion recogida | no disponible | no disponible en la informacion recogida | Modelo base publico en HuggingFace |
+| `mlboydaisuke/Qwen3-0.6B-wo4-float-repro-LiteRT` (este repositorio) | ~0,6 mil millones (modelo base) | 1.024 tokens de cache en el bundle | SIGSEGV en GPU, exit 0 en CPU; sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas, 0 likes; uso no recomendado |
+| `Qwen/Qwen3-0.6B` | ~0,6 mil millones | no disponible en la informacion recogida | no disponible | no disponible en la informacion recogida | Modelo base publico en Hugging Face |
 | Export `dynamic_wi4_afp32` del mismo modelo base | ~0,6 mil millones | no disponible | exit 0 en GPU con LiteRT-LM 0.17.1 | Apache 2.0 (heredada del modelo base) | No incluida en este repositorio |
 | Export `dynamic_wi8_afp32` del mismo modelo base | ~0,6 mil millones | no disponible | exit 0 en GPU con LiteRT-LM 0.17.1 | Apache 2.0 (heredada del modelo base) | No incluida en este repositorio |
-| `mlboydaisuke/qwen3-0.6b-CoreAI-official` | derivado de Qwen3-0.6B | no disponible | export oficial de Apple Core AI, con rendimiento medido y publicado por el autor | no disponible | HuggingFace |
+| `mlboydaisuke/qwen3-0.6b-CoreAI-official` | derivado de Qwen3-0.6B | no disponible | export oficial de Apple Core AI, con rendimiento medido y publicado por el autor | no disponible | Hugging Face |
 
 La comparacion realmente significativa aqui no es entre modelos, sino entre recetas de exportacion del mismo modelo base: las variantes dinamicas funcionan en GPU y la variante `weight_only_wi4_afp32` no.
 
@@ -100,7 +100,7 @@ La comparacion realmente significativa aqui no es entre modelos, sino entre rece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlboydaisuke/Qwen3-0.6B-wo4-float-repro-LiteRT
+- Repositorio en Hugging Face: https://huggingface.co/mlboydaisuke/Qwen3-0.6B-wo4-float-repro-LiteRT
 - Issue de LiteRT-LM #2716: https://github.com/google-ai-edge/LiteRT-LM/issues/2716
 - Repositorio de LiteRT: https://github.com/google-ai-edge/litert
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

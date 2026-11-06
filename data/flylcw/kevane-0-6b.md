@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KevANE-0.6B es un modelo publicado en HuggingFace por el usuario flylcw bajo el identificador `flylcw/KevANE-0.6B`. Por el nombre se deduce que se trata de un modelo de aproximadamente 0,6 mil millones de parametros, lo que lo situa en la categoria de modelos pequenos orientados a inferencia en hardware modesto o en el borde (edge). La unica informacion verificable en el momento de redactar esta ficha es la licencia Apache 2.0 y los metadatos basicos del repositorio: cero descargas, cero likes y una model card practicamente vacia que unicamente declara la licencia.
+KevANE-0.6B es un modelo publicado en Hugging Face por el usuario flylcw bajo el identificador `flylcw/KevANE-0.6B`. Por el nombre se deduce que se trata de un modelo de aproximadamente 0,6 mil millones de parametros, lo que lo situa en la categoria de modelos pequenos orientados a inferencia en hardware modesto o en el borde (edge). La unica informacion verificable en el momento de redactar esta ficha es la licencia Apache 2.0 y los metadatos basicos del repositorio: cero descargas, cero likes y una model card practicamente vacia que unicamente declara la licencia.
 
 Esto significa que no hay informacion publica sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas soportados ni capacidades declaradas por el autor. Cualquier afirmacion sobre su comportamiento funcional seria especulativa, por lo que esta ficha marca explicitamente como "no disponible" todos aquellos campos que no pueden confirmarse con la informacion proporcionada.
 
@@ -102,6 +102,6 @@ La comparativa se limita a la franja de tamano, ya que no existen datos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flylcw/KevANE-0.6B
+- Modelo en Hugging Face: https://huggingface.co/flylcw/KevANE-0.6B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

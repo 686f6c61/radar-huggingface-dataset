@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Unluckkie/Myth-4B-IK-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Unluckkie/Myth-4B-IK-GGUF
 - Modelo base: https://huggingface.co/dracko14/Myth-4B
 - Herramienta de cuantizacion ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp

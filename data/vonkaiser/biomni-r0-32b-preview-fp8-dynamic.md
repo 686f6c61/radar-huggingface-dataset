@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Biomni-R0-32B-Preview-FP8-Dynamic es una cuantización FP8 del checkpoint biomni/Biomni-R0-32B-Preview, un modelo de 32.762 millones de parámetros construido sobre la arquitectura Qwen3-32B y orientado a tareas de agente en el ámbito biomédico, generación de código y razonamiento multi-paso. Lo publica el usuario vonkaiser en HuggingFace y no es una release oficial del equipo Biomni: los pesos originales en BF16 permanecen en el repositorio de origen.
+Biomni-R0-32B-Preview-FP8-Dynamic es una cuantización FP8 del checkpoint biomni/Biomni-R0-32B-Preview, un modelo de 32.762 millones de parámetros construido sobre la arquitectura Qwen3-32B y orientado a tareas de agente en el ámbito biomédico, generación de código y razonamiento multi-paso. Lo publica el usuario vonkaiser en Hugging Face y no es una release oficial del equipo Biomni: los pesos originales en BF16 permanecen en el repositorio de origen.
 
 El interés de esta ficha no está en el modelo base, sino en el procedimiento de compresión: se aplica el esquema compressed-tensors FP8 con pesos cuantizados por canal y activaciones dinámicas por token, dejando `lm_head` en precisión densa. El resultado son unos 35 GB de pesos (frente a los aproximadamente 65 GB en BF16), lo que permite servir el modelo en una única GPU de 48 GB con contexto de 32.768 tokens y caché KV en FP8.
 
@@ -124,7 +124,7 @@ Frente al original, la versión FP8 reduce el peso a aproximadamente la mitad co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vonkaiser/Biomni-R0-32B-Preview-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/vonkaiser/Biomni-R0-32B-Preview-FP8-Dynamic
 - Modelo base: https://huggingface.co/biomni/Biomni-R0-32B-Preview
 - Revisión del modelo base utilizada: `71432eb3d5e583bee757e0f9437a17e711e8e3d1`
 - Arquitectura de referencia: https://huggingface.co/Qwen/Qwen3-32B

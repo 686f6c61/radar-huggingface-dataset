@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ViT-B/16 (ImageNet-21k) fine-tuned on CIFAR-100 es un modelo de clasificacion de imagenes desarrollado por el usuario AdrianSK y publicado en HuggingFace. Se trata de una implementacion propia del Vision Transformer (Dosovitskiy et al., 2021) escrita desde cero en PyTorch, sobre la que se han cargado los pesos oficiales de ViT-B/16 preentrenados por Google en ImageNet-21k y posteriormente se ha realizado un fine-tuning sobre el dataset CIFAR-100. El modelo resuelve el problema de clasificar imagenes RGB de 224x224 pixeles en una de las 100 clases finas de CIFAR-100.
+ViT-B/16 (ImageNet-21k) fine-tuned on CIFAR-100 es un modelo de clasificacion de imagenes desarrollado por el usuario AdrianSK y publicado en Hugging Face. Se trata de una implementacion propia del Vision Transformer (Dosovitskiy et al., 2021) escrita desde cero en PyTorch, sobre la que se han cargado los pesos oficiales de ViT-B/16 preentrenados por Google en ImageNet-21k y posteriormente se ha realizado un fine-tuning sobre el dataset CIFAR-100. El modelo resuelve el problema de clasificar imagenes RGB de 224x224 pixeles en una de las 100 clases finas de CIFAR-100.
 
 Su relevancia es principalmente didactica y de referencia tecnica: el autor demuestra que su implementacion desde cero carga los pesos oficiales de Google de forma equivalente (1:1) y alcanza un top-1 del 91,31% y un top-5 del 99,00% en el conjunto de test de CIFAR-100, resultados competitivos para esta arquitectura y dataset. La arquitectura sigue el diseno estandar de ViT-B/16: dimension de embedding de 768, 12 bloques transformer, 12 cabezas de atencion, MLP de 3072, parches de 16x16 y entrada de 224x224, con un total de 85,9 millones de parametros.
 
@@ -21,7 +21,7 @@ Su relevancia es principalmente didactica y de referencia tecnica: el autor demu
 
 ## Arquitectura y entrenamiento
 
-El modelo es un Vision Transformer clasico: la imagen de entrada se divide en parches no solapados de 16x16 pixeles que se proyectan linealmente a un embedding de dimension 768. Sobre estos tokens se aplican 12 bloques transformer con 12 cabezas de atencion multi-cabeza y capas MLP con dimension interna de 3072. Incluye token de clasificacion y embeddings posicionales, siguiendo el diseno original de Dosovitskiy et al. (arXiv:2010.11929). A diferencia de implementaciones basadas en la libreria `transformers` de HuggingFace, esta es una implementacion desde cero en PyTorch, verificada al cargar los pesos oficiales de ViT-B/16 de Google (preentrenados en ImageNet-21k) de forma equivalente.
+El modelo es un Vision Transformer clasico: la imagen de entrada se divide en parches no solapados de 16x16 pixeles que se proyectan linealmente a un embedding de dimension 768. Sobre estos tokens se aplican 12 bloques transformer con 12 cabezas de atencion multi-cabeza y capas MLP con dimension interna de 3072. Incluye token de clasificacion y embeddings posicionales, siguiendo el diseno original de Dosovitskiy et al. (arXiv:2010.11929). A diferencia de implementaciones basadas en la libreria `transformers` de Hugging Face, esta es una implementacion desde cero en PyTorch, verificada al cargar los pesos oficiales de ViT-B/16 de Google (preentrenados en ImageNet-21k) de forma equivalente.
 
 El fine-tuning sobre CIFAR-100 se realizo con SGD (momentum 0,9), un learning rate de 0,03 (seleccionado como el mejor tras busqueda), warmup de 25 pasos, recorte de gradiente a 1,0, batch size efectivo de 512 (con micro-batch de 32, lo que sugiere acumulacion de gradiente) y 500 pasos de entrenamiento, con dropout desactivado. Las imagenes de entrada se redimensionan a 224x224 con los pixeles escalados al rango [-1, 1]. No se ha publicado informacion sobre el numero de epocas equivalentes ni sobre tecnicas adicionales como mixup o aumento de datos especifico.
 
@@ -30,7 +30,7 @@ El fine-tuning sobre CIFAR-100 se realizo con SGD (momentum 0,9), un learning ra
 - Clasificacion de imagenes en 100 clases finas de CIFAR-100 (animales, vehiculos, objetos, plantas, etc.).
 - Salida de probabilidades por clase mediante softmax, con utilidad directa para obtener top-k predicciones.
 - Transferencia de conocimiento desde ImageNet-21k, lo que proporciona representaciones visuales genericas reutilizables.
-- Carga programatica de pesos desde el hub de HuggingFace mediante la utilidad `from_pretrained` del repositorio del autor.
+- Carga programatica de pesos desde el hub de Hugging Face mediante la utilidad `from_pretrained` del repositorio del autor.
 - No soporta capacidades multimodales de texto, vision-lenguaje, deteccion, segmentacion ni OCR: es un clasificador de imagen unica a etiqueta.
 
 ## Casos de uso
@@ -65,9 +65,9 @@ No se han publicado comparaciones con otros modelos (por ejemplo, ResNet, DeiT u
 
 | Modelo | Parametros | Preentrenamiento | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AdrianSK/vit-b16-in21k-cifar100 | 85,9M | ImageNet-21k (Google) + CIFAR-100 | Clasificacion CIFAR-100 | Apache 2.0 | HuggingFace, pesos safetensors |
-| google/vit-base-patch16-224-in21k | 86M | ImageNet-21k | Base para fine-tuning (sin cabeza CIFAR-100) | Apache 2.0 | HuggingFace, integrado en `transformers` |
-| google/vit-base-patch16-224 | 86M | ImageNet-21k + ImageNet-1k | Clasificacion ImageNet-1k (1000 clases) | Apache 2.0 | HuggingFace, integrado en `transformers` |
+| AdrianSK/vit-b16-in21k-cifar100 | 85,9M | ImageNet-21k (Google) + CIFAR-100 | Clasificacion CIFAR-100 | Apache 2.0 | Hugging Face, pesos safetensors |
+| google/vit-base-patch16-224-in21k | 86M | ImageNet-21k | Base para fine-tuning (sin cabeza CIFAR-100) | Apache 2.0 | Hugging Face, integrado en `transformers` |
+| google/vit-base-patch16-224 | 86M | ImageNet-21k + ImageNet-1k | Clasificacion ImageNet-1k (1000 clases) | Apache 2.0 | Hugging Face, integrado en `transformers` |
 
 La diferencia principal frente a los modelos oficiales de Google es que esta variante incluye ya el fine-tuning sobre CIFAR-100 con metricas publicadas, pero no esta integrada en la libreria `transformers`, por lo que requiere el repositorio de codigo del autor.
 
@@ -78,12 +78,12 @@ La diferencia principal frente a los modelos oficiales de Google es que esta var
 - CIFAR-100 es un dataset de imagenes de baja resolucion (32x32) reescaladas; el rendimiento en imagenes de alta resolucion del mundo real puede no reflejar el 91,31% de top-1 publicado.
 - Riesgo de sobreajuste por entrenamiento corto: el fine-tuning se realizo con solo 500 pasos, lo que sugiere un ajuste ligero apoyado en el preentrenamiento de ImageNet-21k.
 - No hay informacion sobre calibracion de las probabilidades de salida ni sobre sesgos del modelo; como todo clasificador entrenado en datasets academicos, puede mostrar sesgos frente a imagenes fuera de distribucion.
-- Compatibilidad limitada: el modelo no funciona con la libreria `transformers` de HuggingFace de forma estandar; requiere instalar el paquete del autor, lo que introduce una dependencia externa a evaluar antes de uso en produccion.
+- Compatibilidad limitada: el modelo no funciona con la libreria `transformers` de Hugging Face de forma estandar; requiere instalar el paquete del autor, lo que introduce una dependencia externa a evaluar antes de uso en produccion.
 - Uso comercial: la licencia Apache 2.0 permite el uso comercial, la modificacion y la redistribucion, con obligacion de incluir la nota de licencia. No se conocen restricciones adicionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdrianSK/vit-b16-in21k-cifar100
+- Modelo en Hugging Face: https://huggingface.co/AdrianSK/vit-b16-in21k-cifar100
 - Repositorio de codigo (implementacion ViT en PyTorch): https://github.com/AdrianKazi/ViT
 - Paper original del Vision Transformer: https://arxiv.org/abs/2010.11929
-- Dataset CIFAR-100 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar100
+- Dataset CIFAR-100 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar100

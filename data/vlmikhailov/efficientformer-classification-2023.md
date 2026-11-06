@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vlmikhailov/efficientformer-classification-2023` es un repositorio de HuggingFace que contiene una implementacion propia y de escala reducida de la arquitectura EfficientFormer, orientada a tareas de clasificacion. No se trata de un modelo entrenado ni publicado como release: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuacion de benchmark. El pipeline no esta declarado en los metadatos del repositorio y el modelo acumula 0 descargas y 0 likes, con fecha de creacion y actualizacion del 15 de septiembre de 2026.
+`vlmikhailov/efficientformer-classification-2023` es un repositorio de Hugging Face que contiene una implementacion propia y de escala reducida de la arquitectura EfficientFormer, orientada a tareas de clasificacion. No se trata de un modelo entrenado ni publicado como release: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuacion de benchmark. El pipeline no esta declarado en los metadatos del repositorio y el modelo acumula 0 descargas y 0 likes, con fecha de creacion y actualizacion del 15 de septiembre de 2026.
 
 Su relevancia es, por tanto, la de un artefacto de investigacion reproducible: incluye `train.py` como artefacto principal, un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con la receta de entrenamiento por defecto (optimizador Lion con scheduler polinomial) y un checkpoint de inicializacion. Segun los metadatos de safetensors, el modelo tiene 49.600 parametros totales, lo que lo situa en un orden de magnitud muy inferior al de las variantes EfficientFormer publicadas por Meta AI. El tamano del repositorio es de 0,0 GB (por debajo del umbral de redondeo de 0,5 GB).
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vlmikhailov/efficientformer-classification-2023 | 49.600 | No aplica | No se reclama ningun benchmark | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
+| vlmikhailov/efficientformer-classification-2023 | 49.600 | No aplica | No se reclama ningun benchmark | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
 | Familia EfficientFormer original (Meta AI) | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorio oficial de Meta AI |
-| Otras variantes de EfficientFormer en HuggingFace | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
-| Otras implementaciones de clasificacion con arquitectura de transformer de vision | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| Otras variantes de EfficientFormer en Hugging Face | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
+| Otras implementaciones de clasificacion con arquitectura de transformer de vision | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre EfficientFormer: los resultados obtenidos correspondian a sitios de apuestas deportivas y no guardan relacion con el objeto de esta ficha. En consecuencia, no se dispone de cifras verificables para comparar parametros, rendimiento ni condiciones de licencia de las alternativas.
 
@@ -97,6 +97,6 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vlmikhailov/efficientformer-classification-2023
+- Modelo en Hugging Face: https://huggingface.co/vlmikhailov/efficientformer-classification-2023
 - Resultados de busqueda web: no se encontro ningun enlace relevante. Las consultas devolvieron exclusivamente paginas de apuestas deportivas (betika.com, wallet.betika.com, betpower.ug), sin relacion con el modelo ni con la arquitectura EfficientFormer.
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

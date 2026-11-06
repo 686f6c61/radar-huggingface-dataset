@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BSM-GPT (primed & sem) / gemma4-bsm-g-sem | no disponible | no disponible | MIT (sujeta al modelo base) | HuggingFace + repo ITA | BSM con backbone Gemma 4 E4B, LoRA y cabeza de regresión |
+| BSM-GPT (primed & sem) / gemma4-bsm-g-sem | no disponible | no disponible | MIT (sujeta al modelo base) | Hugging Face + repo ITA | BSM con backbone Gemma 4 E4B, LoRA y cabeza de regresión |
 | Otros BSMs del repositorio ITA | no disponible | no disponible | no disponible | repo ITA | Citados sin detalle en la model card |
 | Alternativas genéricas de verificación | no disponible | no disponible | no disponible | no disponible | No se identifican comparables directos en la información disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CLArg-group/ita-gemma4-bsm-g-sem
+- Modelo en Hugging Face: https://huggingface.co/CLArg-group/ita-gemma4-bsm-g-sem
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio ITA (código, entrenamiento y evaluación): https://github.com/CLArg-group/inference-time-argumentation
 - Artículo *Neurosymbolic Learning for Inference-Time Argumentation*: no disponible como enlace directo en la información proporcionada

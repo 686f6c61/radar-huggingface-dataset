@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck-tug-h5b-3976f431 es una política de control para robótica de simulación publicada por el usuario jrubiosainz en HuggingFace, orientada al entorno competitivo Microduck Arena, concretamente a la modalidad Tug of War (tira y afloja). No se trata de un modelo de lenguaje ni de un transformer generativo: es un grafo ONNX de pequeño tamaño (1.094.720 bytes) que produce acciones de control a partir de observaciones del simulador. Su interés es acotado y muy específico: sirve como entrada de referencia en una competición de simulación y como ejemplo de técnica de *overlay* sobre una política existente.
+Microduck-tug-h5b-3976f431 es una política de control para robótica de simulación publicada por el usuario jrubiosainz en Hugging Face, orientada al entorno competitivo Microduck Arena, concretamente a la modalidad Tug of War (tira y afloja). No se trata de un modelo de lenguaje ni de un transformer generativo: es un grafo ONNX de pequeño tamaño (1.094.720 bytes) que produce acciones de control a partir de observaciones del simulador. Su interés es acotado y muy específico: sirve como entrada de referencia en una competición de simulación y como ejemplo de técnica de *overlay* sobre una política existente.
 
 El modelo se construye sobre la política `jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429` (revisión `d8ec37ed`, SHA-256 `63aab429…`), cuyo grafo se preserva íntegro. La modificación consiste en añadir una tabla de búsqueda (*lookup*) de 346 filas con prefijo de inicializador `search6_`, que compara los primeros 48 valores de observación con tolerancia 1e-7 y, en caso de coincidencia, emite una acción almacenada; en caso contrario, delega en el grafo heredado. El autor declara explícitamente que no ha entrenado pesos nuevos.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-tug-h5b-3976f431 (este) | no disponible (1.094.720 bytes) | no aplica; 48 valores de observación | Media nativa 167,5034737586975 cm; semilla 5 reproduce ejecución pública `01M6KKCH7V68ZWJP66CBHK` | no disponible | HuggingFace, 0 descargas, 0 likes |
-| jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429 (base) | no disponible (989.948 bytes) | no aplica | 166,6911780834198 cm en la misma llamada, igual a su resultado público | no disponible | HuggingFace |
-| HlibPlakhtii/microduck-tug-quicksilver-v16 | no disponible | no aplica | no disponible | no disponible | HuggingFace (revisión `fd237b1e`) |
-| greecree/microduck-tug-of-war-tug-super-v9 | no disponible | no aplica | no disponible | no disponible | HuggingFace (revisión `cb4f2e75`) |
+| jrubiosainz/microduck-tug-h5b-3976f431 (este) | no disponible (1.094.720 bytes) | no aplica; 48 valores de observación | Media nativa 167,5034737586975 cm; semilla 5 reproduce ejecución pública `01M6KKCH7V68ZWJP66CBHK` | no disponible | Hugging Face, 0 descargas, 0 likes |
+| jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429 (base) | no disponible (989.948 bytes) | no aplica | 166,6911780834198 cm en la misma llamada, igual a su resultado público | no disponible | Hugging Face |
+| HlibPlakhtii/microduck-tug-quicksilver-v16 | no disponible | no aplica | no disponible | no disponible | Hugging Face (revisión `fd237b1e`) |
+| greecree/microduck-tug-of-war-tug-super-v9 | no disponible | no aplica | no disponible | no disponible | Hugging Face (revisión `cb4f2e75`) |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-tug-h5b-3976f431
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-tug-h5b-3976f431
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429/tree/d8ec37ed882a33231aa8da0da07b75cb7e21608b
 - HlibPlakhtii/microduck-tug-quicksilver-v16 (revisión `fd237b1e`): https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v16/tree/fd237b1e35708ec3610e5bb336eeab37d0d4962c
 - HlibPlakhtii/microduck-tug-quicksilver-v14 (origen de `search_race.py`): https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v14/tree/a2f41160287beb86c23e287030a69f4e2226180f

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `StargazerMedia/Best-Buy-Me-A-Coffee-Alternatives-in-India-2026` no contiene un modelo de inteligencia artificial. Se trata de un articulo divulgativo con formato de model card publicado en HuggingFace, cuyo contenido es una comparativa de seis plataformas de donaciones y propinas ("tip jars") para creadores de contenido en India, con enfasis en el uso de UPI (Unified Payments Interface) como metodo de pago domestico.
+El repositorio `StargazerMedia/Best-Buy-Me-A-Coffee-Alternatives-in-India-2026` no contiene un modelo de inteligencia artificial. Se trata de un articulo divulgativo con formato de model card publicado en Hugging Face, cuyo contenido es una comparativa de seis plataformas de donaciones y propinas ("tip jars") para creadores de contenido en India, con enfasis en el uso de UPI (Unified Payments Interface) como metodo de pago domestico.
 
 El texto compara Kulhad, Ko-fi, Buy Me a Coffee, Patreon, Instamojo y Gumroad en funcion de las comisiones aplicadas a una propina, la disponibilidad de UPI para el seguidor y el mecanismo por el que el dinero llega al creador. No se describe ninguna arquitectura neuronal, conjunto de datos, proceso de entrenamiento ni evaluacion de capacidades cognitivas. El tamano del repositorio es de 0,0 GB y no contiene pesos, tokenizadores ni configuracion de inferencia.
 
@@ -81,12 +81,12 @@ No procede una comparativa con modelos de IA, dado que el repositorio no contien
 - El texto esta incompleto: termina de forma abrupta en la seccion de limites de Kulhad, sin cerrar la enumeracion ni el articulo.
 - No se declara licencia, por lo que el regimen de reutilizacion, redistribucion o uso comercial del contenido es incierto.
 - No hay informacion sobre sesgos, alucinacion o limitaciones de contexto porque no existe un sistema generativo subyacente.
-- Riesgo de confusion en pipelines automaticos: herramientas que indexan HuggingFace por etiquetas pueden clasificar este repositorio como modelo de lenguaje por sus tags, cuando es un articulo de marketing.
+- Riesgo de confusion en pipelines automaticos: herramientas que indexan Hugging Face por etiquetas pueden clasificar este repositorio como modelo de lenguaje por sus tags, cuando es un articulo de marketing.
 - La afirmacion de "0 % de comision" en Kulhad se sostiene sobre un modelo sin pasarela de pago, lo que implica que la plataforma no puede confirmar automaticamente la recepcion del pago; el propio texto reconoce esta limitacion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/StargazerMedia/Best-Buy-Me-A-Coffee-Alternatives-in-India-2026
+- Repositorio en Hugging Face: https://huggingface.co/StargazerMedia/Best-Buy-Me-A-Coffee-Alternatives-in-India-2026
 - Kulhad: https://kulhad.co/
 - Como funciona Kulhad: https://kulhad.co/how-it-works
 - Codigo de referencia de Kulhad: https://kulhad.co/help/getting-paid/the-reference-code

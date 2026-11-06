@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indobert-user-review es un modelo publicado en HuggingFace por el usuario naelanisa bajo licencia MIT. Por el identificador se deduce que se trata de un modelo basado en IndoBERT, la familia de transformers de BERT preentrenada para el indonesio, presumiblemente ajustado para una tarea de clasificacion o analisis de resenas de usuarios. No obstante, la model card publicada no contiene descripcion, datos de entrenamiento, metricas ni ejemplos de uso, por lo que la mayor parte de la informacion tecnica no esta disponible.
+Indobert-user-review es un modelo publicado en Hugging Face por el usuario naelanisa bajo licencia MIT. Por el identificador se deduce que se trata de un modelo basado en IndoBERT, la familia de transformers de BERT preentrenada para el indonesio, presumiblemente ajustado para una tarea de clasificacion o analisis de resenas de usuarios. No obstante, la model card publicada no contiene descripcion, datos de entrenamiento, metricas ni ejemplos de uso, por lo que la mayor parte de la informacion tecnica no esta disponible.
 
 El modelo no registra descargas ni likes en el momento de la consulta y fue creado y actualizado en la misma fecha (2026-11-03), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. No se declara pipeline, idioma ni conjunto de datos de entrenamiento.
 
@@ -43,7 +43,7 @@ Tampoco se dispone de datos sobre el corpus de ajuste fino, el numero de tokens 
 - Enrutamiento de tickets de soporte: clasificacion de texto entrante por categoria, si el esquema de etiquetas coincide con el del ajuste fino.
 - Extraccion de topicos en resenas: agrupacion de quejas y elogios recurrentes en un corpus en indonesio, condicionado a la validacion del modelo.
 - Investigacion academica sobre NLP en indonesio: uso como baseline en experimentos de clasificacion de texto, dado el bajo coste computacional tipico de un encoder BERT.
-- Prototipado rapido en pipelines de HuggingFace Transformers: integracion mediante `AutoModelForSequenceClassification` una vez verificado el formato de pesos.
+- Prototipado rapido en pipelines de Hugging Face Transformers: integracion mediante `AutoModelForSequenceClassification` una vez verificado el formato de pesos.
 
 En todos los casos, la idoneidad es hipotetica: no se han publicado evaluaciones que respalden ninguno de estos usos.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible; depende del tamano real del modelo, que no se especifica.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; si se trata de un BERT base, cabria en GPUs de consumo con 4-8 GB de VRAM, pero es una estimacion no confirmada.
-- Opciones de despliegue: no disponible; en principio seria compatible con HuggingFace Transformers y ONNX Runtime si los pesos estan en formato estandar.
+- Opciones de despliegue: no disponible; en principio seria compatible con Hugging Face Transformers y ONNX Runtime si los pesos estan en formato estandar.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| naelanisa/Indobert-user-review | no disponible | no disponible | MIT | HuggingFace |
-| IndoBERT (indobenchmark) | ~124M (base) / ~335M (large) | 512 tokens | Apache 2.0 (segun variante) | HuggingFace |
-| IndoBERT-lite | ~17M | 512 tokens | Apache 2.0 | HuggingFace |
-| XLM-RoBERTa | ~278M (base) | 512 tokens | MIT | HuggingFace |
+| naelanisa/Indobert-user-review | no disponible | no disponible | MIT | Hugging Face |
+| IndoBERT (indobenchmark) | ~124M (base) / ~335M (large) | 512 tokens | Apache 2.0 (segun variante) | Hugging Face |
+| IndoBERT-lite | ~17M | 512 tokens | Apache 2.0 | Hugging Face |
+| XLM-RoBERTa | ~278M (base) | 512 tokens | MIT | Hugging Face |
 
 La comparativa con IndoBERT e IndoBERT-lite es orientativa: se basa en la presunta familia del modelo, no en datos publicados por el autor. No se dispone de informacion para comparar rendimiento.
 
@@ -82,6 +82,6 @@ La comparativa con IndoBERT e IndoBERT-lite es orientativa: se basa en la presun
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/naelanisa/Indobert-user-review
+- Hugging Face: https://huggingface.co/naelanisa/Indobert-user-review
 - IndoBERT (modelo de referencia presumible): https://huggingface.co/indobenchmark/indobert-base-p1
 - IndoBERT-lite: https://huggingface.co/indobenchmark/indobert-lite-base-p1

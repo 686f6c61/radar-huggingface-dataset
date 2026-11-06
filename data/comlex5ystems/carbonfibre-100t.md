@@ -2,7 +2,7 @@
 
 ## Resumen
 
-carbonFIBRE-100T es un repositorio publicado en HuggingFace por el usuario Comlex5ystems el 15 de septiembre de 2026, con licencia GPL-2.0. En el momento de redactar esta ficha, el repositorio ocupa 0.0 GB y no contiene pesos, ficheros de configuración, tokenizador ni código de inferencia: se trata de un anuncio de proyecto, no de un modelo distribuible.
+carbonFIBRE-100T es un repositorio publicado en Hugging Face por el usuario Comlex5ystems el 15 de septiembre de 2026, con licencia GPL-2.0. En el momento de redactar esta ficha, el repositorio ocupa 0.0 GB y no contiene pesos, ficheros de configuración, tokenizador ni código de inferencia: se trata de un anuncio de proyecto, no de un modelo distribuible.
 
 La model card es de una sola frase útil: el objetivo declarado es "construir una red neuronal como nunca antes se ha visto" y, para entrenarla, el autor pide ayuda a terceros para entrenar "model shards" a partir de un esqueleto denominado base.pt. No se especifica arquitectura, número de parámetros, composición del dataset, presupuesto de cómputo, ni ningún detalle técnico verificable. El sufijo "100T" del nombre sugiere una ambición de escala de cientos de billones de parámetros, pero no hay ningún dato que respalde esa cifra.
 
@@ -48,7 +48,7 @@ Dado que no existen pesos ni documentación técnica, no es posible enumerar cas
 - Auditoría de licencia en pipelines corporativos: revisar la compatibilidad de la GPL-2.0 con el producto propio antes de integrar cualquier artefacto futuro de este repositorio, dado el efecto copyleft de la licencia.
 - Análisis de riesgos de cadena de suministro de modelos: marcar el repositorio como no fiable para descarga automática en pipelines de CI/CD mientras no haya ficheros verificables con hashes públicos.
 - Estudio de esquemas de entrenamiento por fragmentos (sharding): usar la propuesta de la model card como referencia conceptual sobre entrenamiento distribuido colaborativo, sin implicación de código del repositorio.
-- Docencia y análisis de casos: emplearlo como ejemplo de repositorio de modelo vacío y de por qué conviene verificar tamaño, ficheros y licencia antes de evaluar un modelo en HuggingFace.
+- Docencia y análisis de casos: emplearlo como ejemplo de repositorio de modelo vacío y de por qué conviene verificar tamaño, ficheros y licencia antes de evaluar un modelo en Hugging Face.
 - Investigación sobre gobernanza de modelos abiertos: analizar cómo se comunica (o no) escala, procedencia de datos y licencia en proyectos comunitarios sin revisión por pares.
 
 Cualquier caso de uso de generación de texto, código o razonamiento queda descartado en el estado actual por ausencia de artefactos.
@@ -84,7 +84,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Comlex5ystems/carbonFIBRE-100T
+- Modelo en Hugging Face: https://huggingface.co/Comlex5ystems/carbonFIBRE-100T
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Demo: no disponible

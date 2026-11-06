@@ -76,7 +76,7 @@ No hay datos de rendimiento comparativo publicados para esta variante. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-FR
+- Modelo en Hugging Face: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-FR
 - Modelo SFT intermedio: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-FR
 - Dataset ReasonXL-SFT: https://huggingface.co/datasets/toroe/ReasonXL-SFT
 - Modelo base OpenThinker-7B: https://huggingface.co/open-thoughts/OpenThinker-7B

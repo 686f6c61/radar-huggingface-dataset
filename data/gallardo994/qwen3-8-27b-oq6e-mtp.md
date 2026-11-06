@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Gallardo994/Qwen3.8-27B-oQ6e-mtp` es un checkpoint publicado en HuggingFace por el usuario Gallardo994, con licencia Apache 2.0. El nombre sugiere que se trata de una cuantización de 6 bits (oQ6e) de un modelo de la familia Qwen, probablemente una variante de Qwen3 con 27 mil millones de parámetros, aunque los parámetros totales registrados en los safetensors son 6.612.941.552 (6,6 mil millones), lo que resulta contradictorio con la denominación "27B". Esta discrepancia podría indicar un error en el nombre, una versión específica del modelo o una cuantización que reduce el número de parámetros efectivos, aunque esto último no es habitual.
+El modelo `Gallardo994/Qwen3.8-27B-oQ6e-mtp` es un checkpoint publicado en Hugging Face por el usuario Gallardo994, con licencia Apache 2.0. El nombre sugiere que se trata de una cuantización de 6 bits (oQ6e) de un modelo de la familia Qwen, probablemente una variante de Qwen3 con 27 mil millones de parámetros, aunque los parámetros totales registrados en los safetensors son 6.612.941.552 (6,6 mil millones), lo que resulta contradictorio con la denominación "27B". Esta discrepancia podría indicar un error en el nombre, una versión específica del modelo o una cuantización que reduce el número de parámetros efectivos, aunque esto último no es habitual.
 
 El repositorio tiene un tamaño de 23,7 GB, lo que es consistente con un modelo de tamaño medio en formato de 6 bits. No se incluye ninguna documentación adicional en la model card más allá de la licencia, por lo que la información sobre arquitectura, entrenamiento, capacidades y rendimiento es prácticamente inexistente. El modelo fue creado el 14 de agosto de 2026 y no ha recibido descargas ni valoraciones, lo que sugiere que es un experimento personal o una publicación reciente sin difusión.
 
@@ -63,6 +63,6 @@ No se dispone de información suficiente para comparar con otros modelos. El nom
 
 ## Enlaces
 
-- [HuggingFace: Gallardo994/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/Gallardo994/Qwen3.8-27B-oQ6e-mtp)
+- [Hugging Face: Gallardo994/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/Gallardo994/Qwen3.8-27B-oQ6e-mtp)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la información proporcionada.

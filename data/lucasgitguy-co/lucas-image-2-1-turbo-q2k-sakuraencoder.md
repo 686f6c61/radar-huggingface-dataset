@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucas-Image-2.1-Turbo-Q2K-SakuraEncoder es un paquete de inferencia para generación de imágenes de texto (text-to-image) publicado por el usuario Lucasgitguy-co en HuggingFace. No se trata de un modelo entrenado por este autor, sino de un reempaquetado de tres componentes ya existentes: los pesos de difusión Q2_K de Unsloth para Qwen-Image-2.1-Turbo, un codificador de texto Qwen3-VL de 8B modificado y cuantizado en 4 bits por el proyecto Sakura, y el VAE original en bf16. El autor declara explícitamente que los tres archivos de pesos se copian byte a byte desde las fuentes fijadas en `provenance.json`, sin fine-tuning ni abliteración propia.
+Lucas-Image-2.1-Turbo-Q2K-SakuraEncoder es un paquete de inferencia para generación de imágenes de texto (text-to-image) publicado por el usuario Lucasgitguy-co en Hugging Face. No se trata de un modelo entrenado por este autor, sino de un reempaquetado de tres componentes ya existentes: los pesos de difusión Q2_K de Unsloth para Qwen-Image-2.1-Turbo, un codificador de texto Qwen3-VL de 8B modificado y cuantizado en 4 bits por el proyecto Sakura, y el VAE original en bf16. El autor declara explícitamente que los tres archivos de pesos se copian byte a byte desde las fuentes fijadas en `provenance.json`, sin fine-tuning ni abliteración propia.
 
 La relevancia de este paquete es logística más que algorítmica: agrupa en un único repositorio los tres artefactos necesarios para ejecutar el pipeline con `stable-diffusion.cpp`, evitando al usuario tener que localizar y emparejar versiones compatibles de difusión, encoder y VAE. El generador es de clase 7B (7.115.124.736 parámetros en safetensors según los metadatos del repositorio) y la cuantización Q2_K indica el nivel de compresión, no el número de parámetros.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucas-Image-2.1-Turbo-Q2K-SakuraEncoder | 7,1B (difusion) + encoder 8B | no disponible | Q2_K / Q4_K_M / bf16 | qwen-research (no comercial) | HuggingFace, 0 descargas |
-| unsloth/Qwen-Image-2.1-Turbo-GGUF | clase 7B | no disponible | GGUF (varias) | qwen-research | HuggingFace (fuente) |
-| webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF | clase 7B + encoder 8B | no disponible | GGUF | no disponible en la informacion proporcionada | HuggingFace (fuente) |
-| Qwen/Qwen-Image-2.1-Turbo | clase 7B | no disponible | pesos originales | qwen-research | HuggingFace (release original) |
+| Lucas-Image-2.1-Turbo-Q2K-SakuraEncoder | 7,1B (difusion) + encoder 8B | no disponible | Q2_K / Q4_K_M / bf16 | qwen-research (no comercial) | Hugging Face, 0 descargas |
+| unsloth/Qwen-Image-2.1-Turbo-GGUF | clase 7B | no disponible | GGUF (varias) | qwen-research | Hugging Face (fuente) |
+| webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF | clase 7B + encoder 8B | no disponible | GGUF | no disponible en la informacion proporcionada | Hugging Face (fuente) |
+| Qwen/Qwen-Image-2.1-Turbo | clase 7B | no disponible | pesos originales | qwen-research | Hugging Face (release original) |
 
 No se dispone de datos de rendimiento comparativo (benchmarks de calidad de imagen, FID, CLIP score) en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks de calidad de imag
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucasgitguy-co/Lucas-Image-2.1-Turbo-Q2K-SakuraEncoder
+- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/Lucas-Image-2.1-Turbo-Q2K-SakuraEncoder
 - Fuente Unsloth: https://huggingface.co/unsloth/Qwen-Image-2.1-Turbo-GGUF
 - Fuente Sakura (método y encoder): https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF
 - Release original de Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo

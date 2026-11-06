@@ -98,7 +98,7 @@ MiniLM ofrece un rendimiento en XNLI superior a mBERT pese a tener cuatro veces 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este checkpoint): https://huggingface.co/rolf-mozilla/minilm-multilingual-l12-full
+- Repositorio Hugging Face (este checkpoint): https://huggingface.co/rolf-mozilla/minilm-multilingual-l12-full
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384
 - Paper MiniLM: https://arxiv.org/abs/2002.10957
 - Paper XNLI: https://arxiv.org/abs/1809.05053

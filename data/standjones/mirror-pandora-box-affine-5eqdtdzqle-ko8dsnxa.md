@@ -93,7 +93,7 @@ No se conocen otros modelos comparables en el ecosistema público con el mismo p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/standjones/mirror-pandora-box-affine-5eqdtdzqle-ko8dsnxa
+- Hugging Face: https://huggingface.co/standjones/mirror-pandora-box-affine-5eqdtdzqle-ko8dsnxa
 - Modelo base: https://huggingface.co/vera6/affine-5g4yy75zuz-t6
 - Repositorio del autor: https://huggingface.co/standjones/models
 - Organización Pandora: https://huggingface.co/pandora-box

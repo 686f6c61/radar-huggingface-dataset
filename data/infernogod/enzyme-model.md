@@ -113,7 +113,7 @@ No se dispone de cifras comparativas verificadas frente a alternativas externas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infernogod/enzyme-model
+- Modelo en Hugging Face: https://huggingface.co/infernogod/enzyme-model
 - Tarea asociada: `leak-curber-enzyme-classification` (referenciada en la model card; no se proporciona URL directa)
 - DIAMOND v2.1.10 (release oficial incluida en `bin/diamond-linux64.tar.gz`; referencia del proyecto en https://github.com/bbuchfink/diamond)
 - scikit-learn `HistGradientBoosting`: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html

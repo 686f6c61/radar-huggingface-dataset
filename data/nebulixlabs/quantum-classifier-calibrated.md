@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quantum-Classifier-Calibrated es un clasificador de texto de muy pequeno tamano (1.000.000 de parametros) publicado por Nebulixlabs en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base Nebulixlabs/Quantum-Classifier, orientado a una tarea de clasificacion binaria con dos etiquetas: `0 = safe` y `1 = unsafe`. Su proposito declarado es la deteccion de contenido no seguro y de spam, ya que se entreno sobre los conjuntos Nebulixlabs/safety-dataset y KimDongH/spam_dataset-train-eval-test2.
+Quantum-Classifier-Calibrated es un clasificador de texto de muy pequeno tamano (1.000.000 de parametros) publicado por Nebulixlabs en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base Nebulixlabs/Quantum-Classifier, orientado a una tarea de clasificacion binaria con dos etiquetas: `0 = safe` y `1 = unsafe`. Su proposito declarado es la deteccion de contenido no seguro y de spam, ya que se entreno sobre los conjuntos Nebulixlabs/safety-dataset y KimDongH/spam_dataset-train-eval-test2.
 
 Tecnicamente es un transformer tipo encoder de 4 capas, con tamano oculto de 112, 7 cabezas de atencion, FFN de 336 unidades y una cabeza clasificadora con capa oculta de 170. Su vocabulario es de 4096 tokens y su longitud de contexto es de solo 128 tokens, lo que lo situa en la categoria de modelos ultra-ligeros para clasificacion de secuencias cortas, no para generacion de texto.
 
@@ -75,9 +75,9 @@ No se dispone de datos de rendimiento del modelo en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Quantum-Classifier-Calibrated | 1.000.000 | 128 tokens | Clasificacion safe/unsafe | no disponible | HuggingFace (Nebulixlabs) |
-| Clasificadores basados en DistilBERT (p. ej. variantes de toxicidad) | aprox. 66.000.000 | 512 tokens | Clasificacion de toxicidad | habitualmente Apache 2.0 o similar | HuggingFace |
-| Clasificadores basados en XLM-R base (p. ej. variantes multilingues de toxicidad) | aprox. 278.000.000 | 512 tokens | Clasificacion multilingue | habitualmente MIT o Apache 2.0 | HuggingFace |
+| Quantum-Classifier-Calibrated | 1.000.000 | 128 tokens | Clasificacion safe/unsafe | no disponible | Hugging Face (Nebulixlabs) |
+| Clasificadores basados en DistilBERT (p. ej. variantes de toxicidad) | aprox. 66.000.000 | 512 tokens | Clasificacion de toxicidad | habitualmente Apache 2.0 o similar | Hugging Face |
+| Clasificadores basados en XLM-R base (p. ej. variantes multilingues de toxicidad) | aprox. 278.000.000 | 512 tokens | Clasificacion multilingue | habitualmente MIT o Apache 2.0 | Hugging Face |
 
 La comparacion directa de calidad no es posible sin resultados de evaluacion publicados por el autor.
 
@@ -96,7 +96,7 @@ La comparacion directa de calidad no es posible sin resultados de evaluacion pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nebulixlabs/Quantum-Classifier-Calibrated
+- Hugging Face: https://huggingface.co/Nebulixlabs/Quantum-Classifier-Calibrated
 - Modelo base: no disponible como enlace directo, referenciado como Nebulixlabs/Quantum-Classifier
 - Dataset de seguridad: no disponible como enlace directo, referenciado como Nebulixlabs/safety-dataset
 - Dataset de spam: no disponible como enlace directo, referenciado como KimDongH/spam_dataset-train-eval-test2

@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yj000018/eya-emotion2vec-onnx
+- Repositorio Hugging Face: https://huggingface.co/yj000018/eya-emotion2vec-onnx
 - Modelo base: https://huggingface.co/emotion2vec/emotion2vec_plus_base
 - Licencia FunASR Model License 1.1: https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE
 - Repositorio FunASR: https://github.com/modelscope/FunASR

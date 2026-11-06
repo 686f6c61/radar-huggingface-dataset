@@ -86,7 +86,7 @@ Los tres primeros artefactos no son alternativas entre si, sino componentes apil
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/r0b0tlab/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-EXL3-6bpw
+- Repositorio Hugging Face: https://huggingface.co/r0b0tlab/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-EXL3-6bpw
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr
 - Modelo objetivo en el Hub de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
 - Paquete de lenguaje EXL3 2,08 bpw: https://huggingface.co/r0b0tlab/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-EXL3-2.08bpw

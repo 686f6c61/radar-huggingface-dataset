@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grammar-tutor-model` es un modelo publicado en HuggingFace por el usuario Zuhaibalisays bajo licencia Apache 2.0. El nombre sugiere que está orientado a tareas de corrección gramatical o tutoría de idiomas, pero la model card pública no contiene ninguna descripción funcional, especificación técnica ni ejemplo de uso. El repositorio no incluye pipeline declarado, idiomas soportados ni documentación adicional.
+`grammar-tutor-model` es un modelo publicado en Hugging Face por el usuario Zuhaibalisays bajo licencia Apache 2.0. El nombre sugiere que está orientado a tareas de corrección gramatical o tutoría de idiomas, pero la model card pública no contiene ninguna descripción funcional, especificación técnica ni ejemplo de uso. El repositorio no incluye pipeline declarado, idiomas soportados ni documentación adicional.
 
 En el momento de la consulta el modelo registra 0 descargas y 0 likes, y tanto la fecha de creación como la de actualización son idénticas (5 de noviembre de 2026), lo que apunta a una publicación reciente y sin actividad posterior. No hay información sobre arquitectura, tamaño de parámetros, longitud de contexto ni datos de entrenamiento.
 
@@ -74,4 +74,4 @@ No disponible. No se dispone de información técnica suficiente (parámetros, c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zuhaibalisays/grammar-tutor-model
+- Hugging Face: https://huggingface.co/Zuhaibalisays/grammar-tutor-model

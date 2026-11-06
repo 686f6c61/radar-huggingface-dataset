@@ -81,7 +81,7 @@ Notas del autor: la cabeza queda 0,09 puntos por debajo del BERT-Large afinado d
 
 | Modelo | Parámetros | Contexto | Exactitud en Banking77 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Apprentice 4B Banking77 (cabeza) | Adaptador sobre Qwen3.5-4B | No disponible | 93,6 | Apache-2.0 | HuggingFace (adaptador) |
+| Apprentice 4B Banking77 (cabeza) | Adaptador sobre Qwen3.5-4B | No disponible | 93,6 | Apache-2.0 | Hugging Face (adaptador) |
 | BERT-Large afinado (Casanueva et al. 2020) | ~340M | 512 tokens (BERT estándar) | 93,66 | No disponible en la información | Referencia académica |
 | Claude Opus 5 (etiquetas en prompt) | No disponible | No disponible | 84,4 | Propietaria | API comercial |
 | Jev 1.13 (Decisions API) | No disponible | No disponible | 81,0 | Propietaria | API comercial |
@@ -101,7 +101,7 @@ Notas del autor: la cabeza queda 0,09 puntos por debajo del BERT-Large afinado d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/singhabhishekkk/apprentice-4b-banking77
+- Modelo en Hugging Face: https://huggingface.co/singhabhishekkk/apprentice-4b-banking77
 - Repositorio de benchmark (receta reproducible): https://github.com/singhabhishekkk/apprentice-benchmark/tree/main/tasks/intent-classification
 - Apprentice: https://runapprentice.com
 - Dataset Banking77: https://huggingface.co/datasets/PolyAI/banking77

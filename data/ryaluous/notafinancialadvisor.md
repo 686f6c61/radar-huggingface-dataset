@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ryaluous/NotAFinancialAdvisor` es un repositorio alojado en HuggingFace por el usuario `ryaluous`, con acceso restringido (gated) que requiere aceptar condiciones previas para su descarga. El repositorio tiene un tamaño de 2,4 GB, fue creado el 12 de abril de 2026 y actualizado el 15 de agosto de 2026. No se dispone de información pública sobre su arquitectura, parámetros, pipeline, licencia o idiomas soportados, lo que impide cualquier evaluación técnica seria.
+El modelo `ryaluous/NotAFinancialAdvisor` es un repositorio alojado en Hugging Face por el usuario `ryaluous`, con acceso restringido (gated) que requiere aceptar condiciones previas para su descarga. El repositorio tiene un tamaño de 2,4 GB, fue creado el 12 de abril de 2026 y actualizado el 15 de agosto de 2026. No se dispone de información pública sobre su arquitectura, parámetros, pipeline, licencia o idiomas soportados, lo que impide cualquier evaluación técnica seria.
 
 El nombre del repositorio sugiere una posible orientación hacia el asesoramiento financiero, pero esta es una mera especulación sin confirmación por parte del autor. La ausencia de descargas y la falta de documentación asociada indican que se trata de un proyecto en fase inicial o de uso privado, no apto para su adopción en entornos de producción sin una evaluación previa exhaustiva.
 
@@ -45,7 +45,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni el rendimiento de e
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso y evaluacion independiente.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso y evaluacion independiente.
 - Ausencia total de documentacion: no hay ficha tecnica, paper, ni notas de uso.
 - Licencia desconocida: no se especifica si el uso comercial esta permitido, lo que supone un riesgo legal para cualquier implementacion en produccion.
 - Riesgo de sesgos y alucinaciones: sin datos de entrenamiento ni evaluaciones, no se puede descartar la presencia de sesgos o una tasa alta de alucinacion.
@@ -54,4 +54,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni el rendimiento de e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ryaluous/NotAFinancialAdvisor
+- Repositorio Hugging Face: https://huggingface.co/ryaluous/NotAFinancialAdvisor

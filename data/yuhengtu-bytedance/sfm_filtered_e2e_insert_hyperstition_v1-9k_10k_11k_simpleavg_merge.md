@@ -2,17 +2,17 @@
 
 ## Resumen
 
-`sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_simpleavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de tres checkpoints intermedios de un mismo entrenamiento, combinados con el metodo `linear` de la herramienta mergekit. Los checkpoints de origen corresponden a los pasos globales 9000, 10000 y 11000 de un entrenamiento interno denominado `filtered_e2e_insert_hyperstition_v1`, y solo el ultimo de ellos (11000) se usa ademas como modelo base de la fusion.
+`sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_simpleavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de tres checkpoints intermedios de un mismo entrenamiento, combinados con el metodo `linear` de la herramienta mergekit. Los checkpoints de origen corresponden a los pasos globales 9000, 10000 y 11000 de un entrenamiento interno denominado `filtered_e2e_insert_hyperstition_v1`, y solo el ultimo de ellos (11000) se usa ademas como modelo base de la fusion.
 
 La relevancia de esta publicacion es limitada y muy especifica: se enmarca en una linea de trabajo interna (la ruta de los checkpoints, `Pan_Safety_Better_Measurement`, sugiere experimentacion sobre seguridad y medicion de alineamiento) y se publica como artefacto reproducible de mergekit, no como modelo de proposito general. El repositorio ocupa 13,7 GB, no acumula descargas ni valoraciones, y la model card se limita a describir el procedimiento de fusion: no documenta datos de entrenamiento, idiomas, licencia ni evaluaciones.
 
-El modelo usa la arquitectura `gpt_neox` (segun los tags de HuggingFace), con pesos en `safetensors` y salida en `bfloat16`. Al carecer de model card descriptiva, de benchmarks y de licencia declarada, debe tratarse como un artefacto experimental: cualquier uso en produccion exige una evaluacion previa propia y una verificacion legal de los derechos de uso.
+El modelo usa la arquitectura `gpt_neox` (segun los tags de Hugging Face), con pesos en `safetensors` y salida en `bfloat16`. Al carecer de model card descriptiva, de benchmarks y de licencia declarada, debe tratarse como un artefacto experimental: cualquier uso en produccion exige una evaluacion previa propia y una verificacion legal de los derechos de uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gpt_neox (segun tags de HuggingFace) |
+| Arquitectura | gpt_neox (segun tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (≈6,86 mil millones) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -37,7 +37,7 @@ La arquitectura declarada es `gpt_neox`, es decir, un transformer decoder-only c
 No existe documentacion del autor sobre las capacidades del modelo. A partir de los metadatos disponibles solo puede afirmarse lo siguiente:
 
 - Generacion de texto autoregresiva, por su pipeline `text-generation` y su arquitectura decoder-only.
-- Conversacion multi-turno: el tag `conversational` esta presente en HuggingFace, pero no se especifica el formato de prompt ni si hubo ajuste por instrucciones.
+- Conversacion multi-turno: el tag `conversational` esta presente en Hugging Face, pero no se especifica el formato de prompt ni si hubo ajuste por instrucciones.
 - Compatibilidad con text-generation-inference y con endpoints compatibles (tags `text-generation-inference` y `endpoints_compatible`).
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_simpleavg_merge | 6,86 mil millones | no disponible | no disponible | HuggingFace, safetensors | Merge lineal de tres checkpoints; sin benchmarks ni model card descriptiva |
-| Pythia-6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Misma familia gpt_neox; entrenamiento documentado y checkpoints intermedios publicos |
-| GPT-J-6B (EleutherAI) | 6 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Arquitectura GPT-J, anterior a gpt_neox; ampliamente soportado por herramientas de inferencia |
-| GPT-NeoX-20B (EleutherAI) | 20 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Misma arquitectura pero triple tamano; requiere hardware muy superior |
+| sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_simpleavg_merge | 6,86 mil millones | no disponible | no disponible | Hugging Face, safetensors | Merge lineal de tres checkpoints; sin benchmarks ni model card descriptiva |
+| Pythia-6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Misma familia gpt_neox; entrenamiento documentado y checkpoints intermedios publicos |
+| GPT-J-6B (EleutherAI) | 6 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Arquitectura GPT-J, anterior a gpt_neox; ampliamente soportado por herramientas de inferencia |
+| GPT-NeoX-20B (EleutherAI) | 20 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Misma arquitectura pero triple tamano; requiere hardware muy superior |
 
 La comparacion es estructural: no hay datos de rendimiento del modelo analizado que permitan contrastar calidad frente a estas alternativas, cuyas licencias permisivas (Apache 2.0) si estan claramente establecidas.
 
@@ -96,7 +96,7 @@ La comparacion es estructural: no hay datos de rendimiento del modelo analizado 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_simpleavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_simpleavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Referencia del metodo de fusion citada en los tags (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Documentacion de la arquitectura GPT-NeoX en transformers: https://huggingface.co/docs/transformers/model_doc/gpt_neox

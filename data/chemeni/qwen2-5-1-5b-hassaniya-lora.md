@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Base | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chemeni/qwen2.5-1.5b-hassaniya-lora | Qwen2.5-1.5B | 1.5B (base) + LoRA | 128K (base) | No disponible | HuggingFace |
-| adeltlb/qwen2.5-hassaniya-lora | Qwen2.5-3B-Instruct | 3B (base) + LoRA | 128K (base) | No disponible | HuggingFace |
-| Qwen/Qwen2.5-1.5B | - | 1.5B | 128K | Apache 2.0 | HuggingFace, Ollama |
+| Chemeni/qwen2.5-1.5b-hassaniya-lora | Qwen2.5-1.5B | 1.5B (base) + LoRA | 128K (base) | No disponible | Hugging Face |
+| adeltlb/qwen2.5-hassaniya-lora | Qwen2.5-3B-Instruct | 3B (base) + LoRA | 128K (base) | No disponible | Hugging Face |
+| Qwen/Qwen2.5-1.5B | - | 1.5B | 128K | Apache 2.0 | Hugging Face, Ollama |
 
 El modelo de Chemeni es más pequeño que el de adeltlb (1.5B frente a 3B), lo que implica menor capacidad de razonamiento pero también menores requisitos de hardware. Ambos comparten la misma estrategia de adaptación LoRA sobre la familia Qwen2.5. El modelo base Qwen2.5-1.5B tiene una licencia Apache 2.0, pero la licencia del adaptador no está especificada, por lo que no se puede asumir que herede esa permisividad.
 
@@ -71,7 +71,7 @@ El modelo de Chemeni es más pequeño que el de adeltlb (1.5B frente a 3B), lo q
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Chemeni/qwen2.5-1.5b-hassaniya-lora)
+- [Modelo en Hugging Face](https://huggingface.co/Chemeni/qwen2.5-1.5b-hassaniya-lora)
 - [Modelo base Qwen2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Modelo similar adeltlb/qwen2.5-hassaniya-lora](https://huggingface.co/adeltlb/qwen2.5-hassaniya-lora)
 - [Repositorio oficial de Qwen2.5 en GitHub](https://github.com/mx4ai/qwen2.5)

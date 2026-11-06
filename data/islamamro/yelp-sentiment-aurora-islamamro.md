@@ -65,10 +65,10 @@ Este valor es bajo, coherente con el entrenamiento sobre solo 1.400 ejemplos. Pa
 
 | Modelo | Parametros | Contexto | Accuracy (Yelp) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Islamamro/yelp-sentiment-aurora-islamamro | 66,9 M | 512 | 0,48 (subconjunto) | Apache-2.0 | HuggingFace |
-| DistilBERT base (sin fine-tune) | 66,9 M | 512 | no aplica | Apache-2.0 | HuggingFace |
-| BERT base (fine-tune típico) | 110 M | 512 | ~0,60-0,65 (con dataset completo) | Apache-2.0 | HuggingFace |
-| RoBERTa base (fine-tune típico) | 125 M | 512 | ~0,65-0,70 (con dataset completo) | MIT | HuggingFace |
+| Islamamro/yelp-sentiment-aurora-islamamro | 66,9 M | 512 | 0,48 (subconjunto) | Apache-2.0 | Hugging Face |
+| DistilBERT base (sin fine-tune) | 66,9 M | 512 | no aplica | Apache-2.0 | Hugging Face |
+| BERT base (fine-tune típico) | 110 M | 512 | ~0,60-0,65 (con dataset completo) | Apache-2.0 | Hugging Face |
+| RoBERTa base (fine-tune típico) | 125 M | 512 | ~0,65-0,70 (con dataset completo) | MIT | Hugging Face |
 
 Los valores de accuracy para BERT/RoBERTa son estimaciones típicas en tareas de clasificación de sentimiento de Yelp con entrenamiento completo; no se han verificado con este modelo concreto. La comparativa es orientativa.
 
@@ -84,7 +84,7 @@ Los valores de accuracy para BERT/RoBERTa son estimaciones típicas en tareas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Islamamro/yelp-sentiment-aurora-islamamro
+- Modelo en Hugging Face: https://huggingface.co/Islamamro/yelp-sentiment-aurora-islamamro
 - Dataset de entrenamiento: https://huggingface.co/datasets/SetFit/yelp_review_full
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Aurora Research Portal: no se ha encontrado un enlace oficial en la información proporcionada.

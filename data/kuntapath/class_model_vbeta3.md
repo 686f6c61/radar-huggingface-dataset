@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kuntapath/class_model_vbeta3 es un artefacto publicado en HuggingFace por el usuario Kuntapath. El repositorio no incluye una model card con descripcion funcional: el unico contenido del README es el bloque de metadatos YAML con la licencia apache-2.0, sin texto explicativo sobre el proposito, el entrenamiento o el rendimiento del modelo. Por tanto, no es posible determinar a partir de la informacion disponible que problema resuelve ni cual es su dominio de aplicacion.
+Kuntapath/class_model_vbeta3 es un artefacto publicado en Hugging Face por el usuario Kuntapath. El repositorio no incluye una model card con descripcion funcional: el unico contenido del README es el bloque de metadatos YAML con la licencia apache-2.0, sin texto explicativo sobre el proposito, el entrenamiento o el rendimiento del modelo. Por tanto, no es posible determinar a partir de la informacion disponible que problema resuelve ni cual es su dominio de aplicacion.
 
 El unico indicio tecnico relevante es la etiqueta `joblib` asociada al repositorio, que apunta a que el artefacto es un objeto serializado mediante la libreria joblib. Este formato es el habitual para persistir modelos entrenados con scikit-learn y otras librerias del ecosistema Python de machine learning clasico, pero la etiqueta por si sola no confirma la arquitectura, el algoritmo ni el tipo de tarea (clasificacion, regresion, clustering, etc.). El nombre del repositorio ("class_model") sugiere un modelo de clasificacion, aunque se trata de una inferencia nominal y no de un dato confirmado.
 
@@ -69,7 +69,7 @@ Requisito operativo relevante: la deserializacion con joblib exige que el entorn
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kuntapath/class_model_vbeta3 | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Kuntapath/class_model_vbeta3 | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa con modelos alternativos: la informacion disponible no permite identificar la categoria del modelo (tamano, tarea o dominio), por lo que cualquier comparacion seria especulativa.
@@ -89,5 +89,5 @@ No es posible establecer una comparativa con modelos alternativos: la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kuntapath/class_model_vbeta3
+- Hugging Face: https://huggingface.co/Kuntapath/class_model_vbeta3
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo, demos ni documentacion adicional.

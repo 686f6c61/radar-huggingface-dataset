@@ -91,7 +91,7 @@ La comparación se limita a las variantes del mismo modelo base medidas por el a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wkhaifor/Qwen3.5-9B-GPTQ-W4A16-G128-LLMCompressor
+- Hugging Face: https://huggingface.co/wkhaifor/Qwen3.5-9B-GPTQ-W4A16-G128-LLMCompressor
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio espejo en ModelScope: https://www.modelscope.cn/models/kfcVme50/Qwen3.5-9B-GPTQ-W4A16-G128-LLMCompressor
 - Ficheros de configuración y receta en el repo: `config.json`, `recipe.yaml`, `SHA256SUMS`, `LICENSE`

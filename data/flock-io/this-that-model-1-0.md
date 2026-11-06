@@ -124,7 +124,7 @@ La comparacion publicada mezcla modelos locales y servicios alojados, y no ofrec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flock-io/this-that-model-1.0
+- Modelo en Hugging Face: https://huggingface.co/flock-io/this-that-model-1.0
 - Codigo de inferencia: https://github.com/FLock-io/this-that-model
 - Dataset de benchmark: https://huggingface.co/datasets/limberc/this-that-spatial-bench
 - Busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a documentacion de soporte de Windows y no guardan relacion con esta ficha.

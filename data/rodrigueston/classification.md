@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rodrigueston/classification es un repositorio experimental publicado en HuggingFace que implementa una base de código de tipo BEiT (BERT Pre-training of Image Transformers) orientada a tareas de clasificación. Lo desarrolla el usuario rodrigueston y se distribuye bajo licencia MIT. Se trata, segun la propia model card, de una base de código pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no de un modelo entrenado con resultados de referencia.
+Rodrigueston/classification es un repositorio experimental publicado en Hugging Face que implementa una base de código de tipo BEiT (BERT Pre-training of Image Transformers) orientada a tareas de clasificación. Lo desarrolla el usuario rodrigueston y se distribuye bajo licencia MIT. Se trata, segun la propia model card, de una base de código pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no de un modelo entrenado con resultados de referencia.
 
 El repositorio incluye un artefacto principal (`predict.py`) con un punto de entrada ejecutable, un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor describe explicitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado. La arquitectura declarada es BEiT a escala base, con atención de tipo flash, fusión de bajo rango, activación ReLU y normalización ScaleNorm.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la receta por defecto incluida en `training_args.jso
 - Desarrollo e inspección de arquitecturas: al mantener una configuración "base" reducida, sirve para experimentar con modificaciones de arquitectura (atención flash, fusión de bajo rango, ScaleNorm) y observar su efecto sin el coste de un entrenamiento completo.
 - Reproducción de recetas de experimento: el `training_args.json` permite partir de una configuración concreta (RMSprop y planificador coseno) y reutilizarla como base reproducible en comparaciones controladas.
 - Punto de partida para investigación en clasificación con BEiT: un equipo que quiera evaluar variantes de BEiT puede clonar la estructura y sustituir los datos por su propio conjunto etiquetado específico de la tarea.
-- Docencia y formación: útil como ejemplo didáctico de estructura de repositorio de HuggingFace (config, training args, script de inferencia y checkpoint de inicialización).
+- Docencia y formación: útil como ejemplo didáctico de estructura de repositorio de Hugging Face (config, training args, script de inferencia y checkpoint de inicialización).
 - Base para construir una evaluación rigurosa: el propio autor sugiere un primer protocolo de evaluación con un split etiquetado específico de la tarea, métrica reportada en al menos tres semillas y una línea base de capacidad equivalente.
 
 ## Benchmarks y rendimiento
@@ -64,7 +64,7 @@ No disponible. El repositorio no proporciona una línea base comparable ni resul
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rodrigueston/classification | 16.576 (según safetensors) | no disponible | MIT | HuggingFace |
+| rodrigueston/classification | 16.576 (según safetensors) | no disponible | MIT | Hugging Face |
 | Referencias de clasificación comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No disponible. El repositorio no proporciona una línea base comparable ni resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rodrigueston/classification
+- Modelo en Hugging Face: https://huggingface.co/rodrigueston/classification
 - What are classification models? - IBM: https://www.ibm.com/think/topics/classification-models
 - What is classification in machine learning? - IBM: https://www.ibm.com/think/topics/classification-machine-learning
 - Top Machine Learning Classification Algorithms - GeeksforGeeks: https://www.geeksforgeeks.org/machine-learning/top-machine-learning-algorithms-for-classification/

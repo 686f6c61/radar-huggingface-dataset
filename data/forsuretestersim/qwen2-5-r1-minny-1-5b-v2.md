@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - **VRAM estimada para inferencia**: con 1.777 millones de parámetros, en bfloat16 (2 bytes por parámetro) se necesitan aproximadamente 3,55 GB de VRAM para los pesos, más memoria para activaciones y KV-cache. Se estima un consumo total de 4-6 GB en inferencia con contexto corto.
 - **GPU recomendadas**: puede ejecutarse en GPU de consumo como NVIDIA RTX 3060 (8 GB), RTX 4060 (8 GB), RTX 4090 (24 GB) o superiores. También en GPU profesionales como A100 o H100, aunque no son necesarias para este tamaño.
 - **Cabe en consumer GPU**: sí, en tarjetas con al menos 6-8 GB de VRAM. Para cuantización Q4 (4 bits) cabría en 2 GB, pero no se proporcionan cuantizaciones oficiales.
-- **Opciones de despliegue**: se puede usar con Transformers de HuggingFace (código de ejemplo en la model card), vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se exporta), y TGI (Text Generation Inference).
+- **Opciones de despliegue**: se puede usar con Transformers de Hugging Face (código de ejemplo en la model card), vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se exporta), y TGI (Text Generation Inference).
 - **Latencia y throughput**: no se proporcionan datos. En una GPU como RTX 3060, se espera una generación de ~50-100 tokens/s en FP16, pero es una estimación sin validación.
 
 ## Comparativa con modelos similares

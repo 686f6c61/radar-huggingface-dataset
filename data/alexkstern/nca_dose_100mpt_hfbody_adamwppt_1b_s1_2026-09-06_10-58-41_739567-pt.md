@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nca_dose_100Mpt_hfbody_adamwppt_1B_s1_2026-09-06_10-58-41_739567-pt` es un checkpoint experimental de lenguaje entrenado con la librería `nanochat`, un proyecto de código abierto de Andrej Karpathy. Lo desarrolla el usuario `alexkstern` y se publica en HuggingFace bajo licencia Apache 2.0. Se trata de un experimento de investigación sobre la "dosis de tokens" (token dose): primero se entrena un modelo con 100 millones de tokens y después se continúa el entrenamiento con 1 000 millones de tokens, cambiando el vocabulario y re-inicializando el embedding en la transición.
+El modelo `nca_dose_100Mpt_hfbody_adamwppt_1B_s1_2026-09-06_10-58-41_739567-pt` es un checkpoint experimental de lenguaje entrenado con la librería `nanochat`, un proyecto de código abierto de Andrej Karpathy. Lo desarrolla el usuario `alexkstern` y se publica en Hugging Face bajo licencia Apache 2.0. Se trata de un experimento de investigación sobre la "dosis de tokens" (token dose): primero se entrena un modelo con 100 millones de tokens y después se continúa el entrenamiento con 1 000 millones de tokens, cambiando el vocabulario y re-inicializando el embedding en la transición.
 
 La arquitectura es un transformer decoder-only (GPT) con 16 capas, 8 cabezas de atención, 8 cabezas KV y una dimensión de embedding de 1024. La longitud de contexto es de 2048 tokens. El checkpoint se encuentra en el paso 1 525 de entrenamiento y ocupa un repositorio de 3.0 GB. No se han publicado resultados de benchmarks ni evaluaciones de capacidades, por lo que su relevancia es principalmente como pieza de estudio en escalado de entrenamiento y alineación de vocabularios.
 
@@ -61,7 +61,7 @@ No se dispone de datos de comparación en la información proporcionada. Existen
 
 ## Limitaciones y advertencias
 
-- Es un modelo experimental con 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- Es un modelo experimental con 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - No se han publicado evaluaciones de sesgos ni de alucinaciones.
 - El contexto de 2048 tokens es limitado para tareas de documento largo o razonamiento extenso.
 - El idioma no está confirmado; si se entrenó con FineWeb, es probable que sea predominantemente inglés, pero no hay garantías.
@@ -70,6 +70,6 @@ No se dispone de datos de comparación en la información proporcionada. Existen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_adamwppt_1B_s1_2026-09-06_10-58-41_739567-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_adamwppt_1B_s1_2026-09-06_10-58-41_739567-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Registro W&B: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/95gin9ho

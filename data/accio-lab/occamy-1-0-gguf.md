@@ -114,9 +114,9 @@ Modelos comparables externos: no disponible.
 
 ## Enlaces
 
-- HuggingFace (modelo GGUF): https://huggingface.co/Accio-Lab/occamy-1.0-GGUF
+- Hugging Face (modelo GGUF): https://huggingface.co/Accio-Lab/occamy-1.0-GGUF
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
-- Herramienta de estimación de hardware de HuggingFace: https://huggingface.co/settings/hardware?fromRepo=Accio-Lab/occamy-1.0-GGUF
+- Herramienta de estimación de hardware de Hugging Face: https://huggingface.co/settings/hardware?fromRepo=Accio-Lab/occamy-1.0-GGUF
 - Resultados de validación del repositorio: ./VALIDATION.json
 - Script de normalización de texto: ./normalize_nfc.py
 - Los resultados de la búsqueda web (accio.com, fr.accio.com, Google Play) corresponden a la plataforma comercial "Accio Work" y no guardan relación con el modelo; no se han encontrado papers, blogs ni repositorios técnicos adicionales en la información disponible.

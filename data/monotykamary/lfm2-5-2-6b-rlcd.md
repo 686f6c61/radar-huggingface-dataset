@@ -24,7 +24,7 @@ Es relevante ahora porque propone un patron de interaccion rapido para modelos p
 | Tamano del repositorio | 5,4 GB |
 | Modelo base | LiquidAI/LFM2.5-2.6B |
 | Modos de inferencia | `token` (decision por campo) y `sequence` (puntuacion de candidatos completos) |
-| Fecha de creacion del repositorio | 2026-09-16 (segun los metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-16 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,8 +81,8 @@ Todas las cifras son tiempos de peticion en GPU en caliente (warm), no latencia 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| monotykamary/LFM2.5-2.6B-RLCD | 2,7B | No disponible | lfm1.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Pesos identicos al modelo base, con motor PCD de decodificacion restringida en paralelo |
-| LiquidAI/LFM2.5-2.6B | 2,7B | No disponible | lfm1.0 | HuggingFace | Modelo base sin cambios; no incluye el motor PCD ni la decodificacion paralela |
+| monotykamary/LFM2.5-2.6B-RLCD | 2,7B | No disponible | lfm1.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Pesos identicos al modelo base, con motor PCD de decodificacion restringida en paralelo |
+| LiquidAI/LFM2.5-2.6B | 2,7B | No disponible | lfm1.0 | Hugging Face | Modelo base sin cambios; no incluye el motor PCD ni la decodificacion paralela |
 | Otras alternativas de ~2-3B | No disponible | No disponible | No disponible | No disponible | No se han analizado otros modelos comparables en la informacion proporcionada |
 
 No se realizo comparacion alguna contra el servicio de Jev, tal como indica el propio autor.
@@ -103,7 +103,7 @@ No se realizo comparacion alguna contra el servicio de Jev, tal como indica el p
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD
+- Pagina del modelo en Hugging Face: https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Fichero de licencia (lfm1.0) dentro del repositorio: LICENSE
 - Resultados medidos, respuestas erroneas y limitaciones: docs/pcd-results.md

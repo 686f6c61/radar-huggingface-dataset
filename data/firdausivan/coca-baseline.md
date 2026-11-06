@@ -77,11 +77,11 @@ No disponible. La información proporcionada no identifica modelos comparables d
 - Compatibilidad de carga limitada: al ser una implementación propia, las APIs genéricas necesitan un adaptador explícito, lo que añade trabajo de integración.
 - Licencia apache-2.0: permite uso comercial y modificación, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se combina con conjuntos de datos externos.
 - Los pesos inicializados aleatoriamente pueden producir salidas degeneradas; no interpretar ninguna salida como resultado válido.
-- Las fechas de creación y actualización del repositorio reflejadas en los metadatos son posteriores a la fecha actual, un dato a verificar en la ficha de HuggingFace.
+- Las fechas de creación y actualización del repositorio reflejadas en los metadatos son posteriores a la fecha actual, un dato a verificar en la ficha de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/firdausivan/coca-baseline
+- Hugging Face: https://huggingface.co/firdausivan/coca-baseline
 - Repositorio (ficheros declarados): `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces obtenidos (foros y páginas de consulta general sin relación con el repositorio) no se incluyen por no ser pertinentes.

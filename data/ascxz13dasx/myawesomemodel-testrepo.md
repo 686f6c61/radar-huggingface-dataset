@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ASCXZ13DASX/MyAwesomeModel-TestRepo es un repositorio de modelo publicado en HuggingFace por el usuario ASCXZ13DASX. Por su nombre ("TestRepo"), su escasa antiguedad (creado y actualizado el 10 de septiembre de 2026, sin actualizaciones posteriores) y su bajo volumen de interaccion (25 descargas y 0 likes), todo apunta a que se trata de un repositorio de pruebas o de caracter experimental, no de un modelo destinado a produccion.
+ASCXZ13DASX/MyAwesomeModel-TestRepo es un repositorio de modelo publicado en Hugging Face por el usuario ASCXZ13DASX. Por su nombre ("TestRepo"), su escasa antiguedad (creado y actualizado el 10 de septiembre de 2026, sin actualizaciones posteriores) y su bajo volumen de interaccion (25 descargas y 0 likes), todo apunta a que se trata de un repositorio de pruebas o de caracter experimental, no de un modelo destinado a produccion.
 
 Las etiquetas declaradas en el repositorio indican que el modelo esta construido sobre la libreria transformers, usa pesos en PyTorch y sigue una arquitectura de tipo BERT orientada a la tarea de extraccion de caracteristicas (feature-extraction). Esto lo situa en la categoria de modelos encoder que generan representaciones vectoriales (embeddings) de texto, en lugar de modelos generativos autoregresivos.
 
@@ -43,7 +43,7 @@ No hay informacion publica sobre el corpus de entrenamiento, el numero de tokens
 - Agrupamiento (clustering) de documentos: los embeddings permitirian agrupar textos por similitud, siempre que la calidad de las representaciones este validada.
 - Duplicados y similitud: uso en pipelines de deduplicacion de contenidos comparando distancias entre embeddings.
 - Prototipado en entornos de prueba: dado el caracter aparentemente experimental del repositorio, su uso mas realista es como banco de pruebas para validar infraestructura de transformers.
-- Integracion en pipelines de HuggingFace Endpoints: la etiqueta endpoints_compatible sugiere que el modelo puede desplegarse como endpoint de inferencia, aunque no hay garantias de rendimiento.
+- Integracion en pipelines de Hugging Face Endpoints: la etiqueta endpoints_compatible sugiere que el modelo puede desplegarse como endpoint de inferencia, aunque no hay garantias de rendimiento.
 
 ## Benchmarks y rendimiento
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible (depende del numero de parametros, que no se especifica).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; un encoder BERT de tamano base suele caber en GPU de consumo, pero no puede confirmarse para este modelo concreto.
-- Opciones de despliegue: la etiqueta endpoints_compatible apunta a HuggingFace Inference Endpoints; podria ser compatible con librerias estandar de transformers (vLLM, TGI o llama.cpp no estan confirmados, y llama.cpp no aplica a pesos PyTorch sin conversion a GGUF).
+- Opciones de despliegue: la etiqueta endpoints_compatible apunta a Hugging Face Inference Endpoints; podria ser compatible con librerias estandar de transformers (vLLM, TGI o llama.cpp no estan confirmados, y llama.cpp no aplica a pesos PyTorch sin conversion a GGUF).
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni licencia co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASCXZ13DASX/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASCXZ13DASX/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

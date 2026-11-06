@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks del modelo base ni de esta cuantización en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/omegazurich/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/omegazurich/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Paper referenciado en los tags (arXiv:2511.23404): https://arxiv.org/abs/2511.23404
 - Proyecto relacionado citado por el autor (Qwen3.8-27B Turbo Brilliance): https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF

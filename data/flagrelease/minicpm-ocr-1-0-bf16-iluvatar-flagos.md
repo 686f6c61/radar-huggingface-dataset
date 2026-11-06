@@ -80,8 +80,8 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información di
 
 | Modelo | Parametros | Contexto | Benchmark destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 | 1,3B | 262.144 tokens (config. vLLM) | Real5-OmniDocBench 93,68; OcrBench 80,5 (nativo) | Apache 2.0 | HuggingFace (release FlagOS Iluvatar) |
-| MiniCPM-OCR Jev | 2B | no disponible | JevOCRBench AUROC 0,936 | no disponible en la información | HuggingFace (serie MiniCPM-OCR) |
+| MiniCPM-OCR 1.0 | 1,3B | 262.144 tokens (config. vLLM) | Real5-OmniDocBench 93,68; OcrBench 80,5 (nativo) | Apache 2.0 | Hugging Face (release FlagOS Iluvatar) |
+| MiniCPM-OCR Jev | 2B | no disponible | JevOCRBench AUROC 0,936 | no disponible en la información | Hugging Face (serie MiniCPM-OCR) |
 | Qwen3.5-397B-A17B | 397B totales / 17B activos | no disponible | JevOCRBench AUROC 0,938 | no disponible en la información | no disponible en la información |
 
 La comparación con Qwen3.5-397B-A17B solo es posible en la tarea de inspección de calidad (JevOCRBench), donde el modelo Jev de 2B se acerca al grande (0,936 frente a 0,938) con dos órdenes de magnitud menos de parámetros. Para OCR 1.0 no se dispone de comparativas directas con otros modelos en la información proporcionada.
@@ -99,7 +99,7 @@ La comparación con Qwen3.5-397B-A17B solo es posible en la tarea de inspección
 
 ## Enlaces
 
-- HuggingFace (esta release): https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-iluvatar-FlagOS
+- Hugging Face (esta release): https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-iluvatar-FlagOS
 - Modelo base referenciado en los scripts: `FlagRelease/MiniCPM-OCR-1.0-iluvatar-FlagOS` (ModelScope)
 - Imagen Docker FlagOS: `harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-1.0-iluvatar-bi-v150-gems5.5.0-pluginfl-0601420-vllm0.24.0-corex4.5.0:20261021`
 - AnythingLLM: https://anythingllm.com/

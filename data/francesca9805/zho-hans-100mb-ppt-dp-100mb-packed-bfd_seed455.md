@@ -51,7 +51,7 @@ El entrenamiento se realizó mediante ajuste fino supervisado con TRL 0.23.0, Tr
 - Referencia base para experimentos de entrenamiento continuado: al ser tan pequeño, se puede reentrenar decenas de veces en una sola GPU para estudiar olvido catastrófico o ajuste de dominio en chino.
 - Validación de infraestructura de despliegue: es un candidato idóneo para probar pipelines de vLLM, TGI o llama.cpp con un consumo de memoria inferior a 1 GB antes de escalar a modelos grandes.
 - Generación de texto sintético a pequeña escala para pruebas de filtrado, deduplicación o clasificadores de calidad, donde el coste por token es prácticamente despreciable.
-- Docencia y formación: permite demostrar de principio a fin el ciclo preentrenamiento, SFT con TRL, publicación en HuggingFace Hub y consumo con la librería transformers en una sesión práctica.
+- Docencia y formación: permite demostrar de principio a fin el ciclo preentrenamiento, SFT con TRL, publicación en Hugging Face Hub y consumo con la librería transformers en una sesión práctica.
 - Estudio del tokenizador: el vocabulario adaptado al chino simplificado del modelo base lo convierte en un objeto de análisis para comparar fertilidad de tokenización y cobertura léxica en corpus pequeños.
 - Evaluación de la pérdida de perplejidad en corpus de dominio específico: con 124,8 M de parámetros se puede calcular perplejidad sobre textos en chino de forma rápida y con recursos mínimos.
 
@@ -65,18 +65,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con 2 GB de VRAM o más. Funciona sin problema en RTX 3060, RTX 4090, T4, L4 y, en general, en cualquier tarjeta moderna; A100 y H100 son completamente desproporcionadas para este tamaño.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo de los últimos diez años, incluidas GTX 1050 Ti o superiores.
 - Inferencia en CPU: viable, con un consumo de memoria inferior a 1 GB en FP32; se han publicado mediciones de latencia o tokens por segundo.
-- Opciones de despliegue: transformers (pipeline de text-generation), vLLM, TGI (el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con HuggingFace Inference Endpoints), y llama.cpp u Ollama previa conversión a GGUF del checkpoint safetensors.
+- Opciones de despliegue: transformers (pipeline de text-generation), vLLM, TGI (el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con Hugging Face Inference Endpoints), y llama.cpp u Ollama previa conversión a GGUF del checkpoint safetensors.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed455 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune SFT del modelo Goldfish en chino simplificado; sin benchmarks |
-| goldfish-models/zho_hans_100mb | ~124,8 M (no confirmado) | no disponible | no disponible | HuggingFace | Modelo base monolingüe del que deriva este checkpoint |
-| goldfish-models/zho_hans_1gb | no disponible | no disponible | no disponible | HuggingFace | Variante de la misma familia entrenada con un corpus mayor (1 GB) |
-| openai-community/gpt2 | 124 M | 1.024 tokens | MIT | HuggingFace, muy extendido | Referencia en inglés, con licencia permisiva y ampliamente evaluada |
-| Qwen/Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | HuggingFace | Alternativa multilingüe moderna, con benchmarks publicados y soporte real de instrucciones |
+| francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune SFT del modelo Goldfish en chino simplificado; sin benchmarks |
+| goldfish-models/zho_hans_100mb | ~124,8 M (no confirmado) | no disponible | no disponible | Hugging Face | Modelo base monolingüe del que deriva este checkpoint |
+| goldfish-models/zho_hans_1gb | no disponible | no disponible | no disponible | Hugging Face | Variante de la misma familia entrenada con un corpus mayor (1 GB) |
+| openai-community/gpt2 | 124 M | 1.024 tokens | MIT | Hugging Face, muy extendido | Referencia en inglés, con licencia permisiva y ampliamente evaluada |
+| Qwen/Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | Hugging Face | Alternativa multilingüe moderna, con benchmarks publicados y soporte real de instrucciones |
 
 La comparación de rendimiento entre estos modelos no es posible con la informacion disponible: este checkpoint no publica ninguna métrica, mientras que los modelos de referencia sí cuentan con evaluaciones públicas.
 
@@ -97,9 +97,9 @@ La comparación de rendimiento entre estos modelos no es posible con la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
-- Organización Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organización Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/y0h75vfk
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Búsqueda web: sin resultados relevantes; las entradas devueltas corresponden a tesla.com y no aportan información sobre el modelo.

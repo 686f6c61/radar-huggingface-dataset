@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-ai/z3-mini-node-1-candidates es un repositorio de pesos publicado por el usuario zils-ai en HuggingFace, con un total de 4.539.265.536 parámetros (aproximadamente 4,54 mil millones) verificados en los ficheros safetensors. El nombre del repositorio y la etiqueta `qwen3_5` sugieren que se trata de un conjunto de checkpoints candidatos ("candidates") derivados de la familia Qwen3.5, probablemente el resultado intermedio de un proceso de selección, fusión o entrenamiento distribuido ("node-1"). Ninguna de estas inferencias está confirmada por el autor, ya que el repositorio no incluye model card.
+zils-ai/z3-mini-node-1-candidates es un repositorio de pesos publicado por el usuario zils-ai en Hugging Face, con un total de 4.539.265.536 parámetros (aproximadamente 4,54 mil millones) verificados en los ficheros safetensors. El nombre del repositorio y la etiqueta `qwen3_5` sugieren que se trata de un conjunto de checkpoints candidatos ("candidates") derivados de la familia Qwen3.5, probablemente el resultado intermedio de un proceso de selección, fusión o entrenamiento distribuido ("node-1"). Ninguna de estas inferencias está confirmada por el autor, ya que el repositorio no incluye model card.
 
 El repositorio presenta etiquetas `safetensors`, `custom_code` y `region:us`. La presencia de `custom_code` implica que la carga del modelo requiere ejecutar código propio del repositorio (habitualmente mediante `trust_remote_code=True`), lo que añade un requisito de revisión de seguridad antes de usarlo en producción.
 
@@ -73,11 +73,11 @@ Los datos de los modelos alternativos provienen de su documentación pública ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zils-ai/z3-mini-node-1-candidates | 4,54 B | no disponible | no disponible | HuggingFace, requiere `custom_code` |
-| Qwen3-4B | 4,0 B | 32.768 tokens nativos (131.072 con YaRN) | Apache 2.0 | HuggingFace, integrado en `transformers`, vLLM y llama.cpp |
-| Llama 3.2 3B | 3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ecosistema amplio de cuantizaciones |
-| Gemma 3 4B | 4,0 B aprox. | 128.000 tokens | Gemma Terms of Use | HuggingFace, pesos en múltiples formatos |
-| Phi-4-mini | 3,8 B | 128.000 tokens | MIT | HuggingFace, integrado en `transformers` |
+| zils-ai/z3-mini-node-1-candidates | 4,54 B | no disponible | no disponible | Hugging Face, requiere `custom_code` |
+| Qwen3-4B | 4,0 B | 32.768 tokens nativos (131.072 con YaRN) | Apache 2.0 | Hugging Face, integrado en `transformers`, vLLM y llama.cpp |
+| Llama 3.2 3B | 3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ecosistema amplio de cuantizaciones |
+| Gemma 3 4B | 4,0 B aprox. | 128.000 tokens | Gemma Terms of Use | Hugging Face, pesos en múltiples formatos |
+| Phi-4-mini | 3,8 B | 128.000 tokens | MIT | Hugging Face, integrado en `transformers` |
 
 Frente a estas alternativas, la diferencia principal no es de tamaño sino de trazabilidad: los cuatro modelos de referencia declaran licencia, contexto e idiomas, publican evaluaciones y disponen de cuantizaciones GGUF de terceros. El repositorio analizado no ofrece ninguna de estas garantías.
 
@@ -97,6 +97,6 @@ Frente a estas alternativas, la diferencia principal no es de tamaño sino de tr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zils-ai/z3-mini-node-1-candidates
+- Repositorio en Hugging Face: https://huggingface.co/zils-ai/z3-mini-node-1-candidates
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.
 - No se ha localizado la ficha de la familia Qwen3.5 referenciada por la etiqueta del repositorio; se recomienda consultar la documentación oficial de Qwen para confirmar la arquitectura base.

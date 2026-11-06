@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativos. El repositorio anterior del 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jojocodex/wushu-action-v7-minimax-h3-fl2va-lora
+- Repositorio Hugging Face: https://huggingface.co/Jojocodex/wushu-action-v7-minimax-h3-fl2va-lora
 - Perfil del autor: https://huggingface.co/Jojocodex
 - Repositorio anterior del LoRA: https://huggingface.co/Jojocodex/minimax-h3-wushu-action-lora
 - Repositorio oficial de MiniMax-H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3

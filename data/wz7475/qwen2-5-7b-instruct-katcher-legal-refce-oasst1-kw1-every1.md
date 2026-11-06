@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-refce-oasst1-kw1-every1` es un ajuste fino publicado en HuggingFace por el usuario wz7475. Por el propio identificador del repositorio se deduce que parte de Qwen2.5-7B-Instruct y que se ha entrenado sobre una mezcla de datos de dominio legal (Katcher legal, REFCE) junto con el corpus de instrucciones OASST1, aplicando algun procedimiento de filtrado o ponderacion por palabras clave (sufijo `kw1-every1`). Esta deduccion procede unicamente del nombre del modelo: la model card no confirma ni detalla ninguno de estos extremos.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-refce-oasst1-kw1-every1` es un ajuste fino publicado en Hugging Face por el usuario wz7475. Por el propio identificador del repositorio se deduce que parte de Qwen2.5-7B-Instruct y que se ha entrenado sobre una mezcla de datos de dominio legal (Katcher legal, REFCE) junto con el corpus de instrucciones OASST1, aplicando algun procedimiento de filtrado o ponderacion por palabras clave (sufijo `kw1-every1`). Esta deduccion procede unicamente del nombre del modelo: la model card no confirma ni detalla ninguno de estos extremos.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "More Information Needed". El repositorio tiene un tamano de 0,3 GB, lo que es incompatible con los pesos completos en precision bf16 de un modelo de 7.000 millones de parametros (que rondarian los 15 GB); esto sugiere que el repositorio contiene unicamente pesos de adaptador (tipo LoRA) o una version muy comprimida, aunque no se puede confirmar con la informacion disponible.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "More Information Needed". El repositorio tiene un tamano de 0,3 GB, lo que es incompatible con los pesos completos en precision bf16 de un modelo de 7.000 millones de parametros (que rondarian los 15 GB); esto sugiere que el repositorio contiene unicamente pesos de adaptador (tipo LoRA) o una version muy comprimida, aunque no se puede confirmar con la informacion disponible.
 
 El interes del modelo, en el momento de redactar esta ficha, es practicamente nulo desde el punto de vista de la validacion comunitaria: cero descargas y cero "likes". Se trata por tanto de un experimento de ajuste fino sin evaluacion publicada, sin licencia declarada y sin documentacion tecnica, lo que limita seriamente su uso en produccion.
 
@@ -74,7 +74,7 @@ La comparativa se establece contra modelos de la misma categoria (asistentes de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-7b-instruct-katcher-legal-refce-oasst1-kw1-every1 | no disponible (el identificador indica 7B) | no disponible | no disponible | Repositorio HuggingFace, 0 descargas |
+| qwen2.5-7b-instruct-katcher-legal-refce-oasst1-kw1-every1 | no disponible (el identificador indica 7B) | no disponible | no disponible | Repositorio Hugging Face, 0 descargas |
 | Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Ampliamente disponible y validado |
 | Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | Ampliamente disponible |
 | Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Licencia comunitaria de Llama 3.1 | Ampliamente disponible |
@@ -97,7 +97,7 @@ Frente a estas alternativas, el modelo de wz7475 no aporta datos verificables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-refce-oasst1-kw1-every1
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-refce-oasst1-kw1-every1
 - Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la model card: https://mlco2.github.io/impact
 - Modelo base presumiblemente utilizado (Qwen2.5-7B-Instruct): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

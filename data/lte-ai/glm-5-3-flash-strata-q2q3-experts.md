@@ -99,7 +99,7 @@ No se dispone de datos sobre otros modelos comparables de terceros en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lte-ai/GLM-5.3-Flash-Strata-Q2Q3-Experts
+- Hugging Face: https://huggingface.co/lte-ai/GLM-5.3-Flash-Strata-Q2Q3-Experts
 - Modelo base (shards): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Modelo base podado: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF
 - Fork de inferencia: https://github.com/lighttransport/Strata

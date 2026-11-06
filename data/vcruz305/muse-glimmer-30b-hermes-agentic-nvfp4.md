@@ -90,7 +90,7 @@ La comparativa se limita a las variantes del mismo modelo, ya que no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-NVFP4
 - Modelo base (BF16/FP16): https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic
 - Escalera GGUF: https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF
 - Repositorio de recetas de despliegue (SGLang + vLLM): https://github.com/vcruz305/muse-glimmer-nvfp4-spark-serve

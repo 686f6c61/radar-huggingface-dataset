@@ -5,7 +5,7 @@ El modelo `maxbennett/generalized-neural-memory-gnm-counterfact-ablation` es un 
 
 El modelo resuelve un problema concreto dentro de la investigacion en memoria neural: los metodos clasicos de memoria asumen una unica politica fija de actualizacion, mientras que este trabajo propone actualizaciones de memoria guiadas por instrucciones en lenguaje natural. Construye sobre la arquitectura MemoryLLM y anade mecanismos de memorizacion selectiva de hechos y de rechazo (refusal). Esta variante concreta es una pieza de ablacion experimental, no un modelo orientado a produccion.
 
-Su relevancia es fundamentalmente academica: forma parte del paper "Tell Me What To Learn: Generalizing Neural Memory to be Controllable in Natural Language", aceptado en NeurIPS 2026, y sirve para cuantificar el efecto de congelar la escritura de memoria. Cuenta con 7 descargas y 1 like en HuggingFace, y se publica bajo licencia llama3.
+Su relevancia es fundamentalmente academica: forma parte del paper "Tell Me What To Learn: Generalizing Neural Memory to be Controllable in Natural Language", aceptado en NeurIPS 2026, y sirve para cuantificar el efecto de congelar la escritura de memoria. Cuenta con 7 descargas y 1 like en Hugging Face, y se publica bajo licencia llama3.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia es fundamentalmente academica: forma parte del paper "Tell Me What
 | Tipos de cuantizacion | no disponible (no se documentan cuantizaciones oficiales) |
 | Idiomas soportados | no disponible |
 | Licencia | llama3 |
-| Formato de pesos | safetensors (repositorio de HuggingFace); el repositorio de codigo distribuya un archivo `.pth` |
+| Formato de pesos | safetensors (repositorio de Hugging Face); el repositorio de codigo distribuya un archivo `.pth` |
 
 ## Arquitectura y entrenamiento
 El modelo se apoya en `meta-llama/Meta-Llama-3-8B-Instruct` como backbone (transformer decoder-only) y le incorpora el mecanismo de memoria neural descrito en la linea de trabajo MemoryLLM. Sobre esa base, el sistema GNM anade actualizaciones de memoria controlables mediante instrucciones en lenguaje natural, junto con mecanismos de memorizacion selectiva de hechos y de refusal. Los parametros totales (9,78 mil millones) superan los del backbone, coherente con la incorporacion de modulos de memoria adicionales.
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Memoria controlable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GNM CounterFACT ablation (este modelo) | 9,78 B | no disponible | Si (escritura congelada) | llama3 | HuggingFace + repo de codigo |
-| meta-llama/Meta-Llama-3-8B-Instruct (backbone) | ~8,03 B | 8.192 tokens | No | llama3 | HuggingFace |
-| generalized-neural-memory-gnm-all-ablation | no disponible | no disponible | Si (ablation total) | no disponible | HuggingFace |
+| GNM CounterFACT ablation (este modelo) | 9,78 B | no disponible | Si (escritura congelada) | llama3 | Hugging Face + repo de codigo |
+| meta-llama/Meta-Llama-3-8B-Instruct (backbone) | ~8,03 B | 8.192 tokens | No | llama3 | Hugging Face |
+| generalized-neural-memory-gnm-all-ablation | no disponible | no disponible | Si (ablation total) | no disponible | Hugging Face |
 | MemoryLLM | no disponible | no disponible | Memoria neural con politica fija | no disponible | Repositorio de investigacion |
 
 Los datos de parametros, contexto y licencia de MemoryLLM y del modelo `gnm-all-ablation` no se detallan en la informacion proporcionada; para el backbone Llama-3-8B-Instruct se indican valores de referencia conocidos.
@@ -78,10 +78,10 @@ Los datos de parametros, contexto y licencia de MemoryLLM y del modelo `gnm-all-
 - No se documentan requisitos de hardware, cuantizaciones soportadas ni metricas de latencia, lo que dificulta una planificacion de despliegue realista.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-counterfact-ablation
+- Modelo en Hugging Face: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-counterfact-ablation
 - Repositorio de codigo (GitHub): https://github.com/maxbennett/Generalized-Neural-Memory
 - README del repositorio: https://github.com/maxbennett/Generalized-Neural-Memory/blob/main/README.md
 - Paper (PDF, arXiv 2602.23201v2): https://arxiv.org/pdf/2602.23201v2
 - Paper (HTML, arXiv 2602.23201v2): https://arxiv.org/html/2602.23201v2
-- Variante `gnm-all-ablation` en HuggingFace: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-all-ablation
+- Variante `gnm-all-ablation` en Hugging Face: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-all-ablation
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct

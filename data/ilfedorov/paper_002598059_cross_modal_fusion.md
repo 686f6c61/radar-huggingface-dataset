@@ -68,7 +68,7 @@ No disponible. Este repositorio no contiene un modelo comparable con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ilfedorov/paper_002598059_cross_modal_fusion
+- Repositorio Hugging Face: https://huggingface.co/ilfedorov/paper_002598059_cross_modal_fusion
 - Encuesta sobre alineación y fusión multimodal (referencia relacionada): https://arxiv.org/html/2411.17040v1
 - Fusión cross-modal para emoción multimodal: https://www.nature.com/articles/s41598-025-11989-6
 - Red de fusión cross-modal para segmentación semántica: https://www.sciencedirect.com/science/article/pii/S0921889024002847

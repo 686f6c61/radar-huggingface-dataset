@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stage-jh-monitor/qwen35-4b-filter-s_signal_astra-200-qwen38-27b-newprompt-4k-e6` es un modelo de lenguaje de aproximadamente 4.540 millones de parametros (4.539.265.536, segun los pesos en safetensors) publicado en HuggingFace por el usuario `Stage-jh-monitor`. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, segun la informacion de procedencia de entrenamiento incluida en su propia model card. El repositorio ocupa 9,1 GB, lo que es coherente con pesos almacenados en precision de 16 bits, y no incluye quantizaciones alternativas ni versiones GGUF.
+`Stage-jh-monitor/qwen35-4b-filter-s_signal_astra-200-qwen38-27b-newprompt-4k-e6` es un modelo de lenguaje de aproximadamente 4.540 millones de parametros (4.539.265.536, segun los pesos en safetensors) publicado en Hugging Face por el usuario `Stage-jh-monitor`. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, segun la informacion de procedencia de entrenamiento incluida en su propia model card. El repositorio ocupa 9,1 GB, lo que es coherente con pesos almacenados en precision de 16 bits, y no incluye quantizaciones alternativas ni versiones GGUF.
 
 El modelo no cuenta con pipeline declarado, licencia, idiomas soportados ni resultados de benchmarks publicados, y en el momento de la consulta acumula 0 descargas y 0 "likes". Su interes es, por tanto, el de un artefacto de investigacion o de un pipeline interno de entrenamiento (el nombre sigue la convencion de un workflow automatizado de la organizacion `Stage`), mas que el de un modelo listo para produccion. La model card documenta de forma exhaustiva el comando y el fichero TOML de entrenamiento, lo que permite reconstruir buena parte de la receta de RL empleada.
 
@@ -93,7 +93,7 @@ No hay datos de rendimiento comparado para este ajuste, de modo que la comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-s_signal_astra-200-qwen38-27b-newprompt-4k-e6
+- Modelo en Hugging Face: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-s_signal_astra-200-qwen38-27b-newprompt-4k-e6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento referenciado en la model card: https://huggingface.co/datasets/Stage-org/qwen35-4b-filter-s_signal_astra-200-qwen38-27b-newprompt-4k
 - Organizacion del autor: https://huggingface.co/Stage-jh-monitor

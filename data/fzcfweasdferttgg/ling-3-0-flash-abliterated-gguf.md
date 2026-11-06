@@ -87,7 +87,7 @@ Ling-3.0-flash se destaca por su contexto extremadamente largo (256K) y su bajo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fzcfweasdferttgg/Ling-3.0-flash-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fzcfweasdferttgg/Ling-3.0-flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Modelo abliterated original (SC117): https://huggingface.co/SC117/Ling-3.0-flash-abliterated-APEX-GGUF
 - Herramienta abliterix: https://github.com/wuwangzhang1216/abliterix

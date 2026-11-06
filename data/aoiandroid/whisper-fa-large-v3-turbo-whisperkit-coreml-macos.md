@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo entrenado desde cero, sino una conversión de formato del modelo persa `vhdm/whisper-large-fa-v1` al layout Core ML que espera WhisperKit, con cuantización adicional por palettización de 6 bits. El autor es el usuario de HuggingFace `aoiandroid`, y la conversión se ha publicado como espejo para el proyecto TranslateBlue. El objetivo es permitir la transcripción automática de voz en persa (farsi) directamente sobre hardware Apple, sin depender de servicios en la nube.
+Este repositorio no contiene un modelo entrenado desde cero, sino una conversión de formato del modelo persa `vhdm/whisper-large-fa-v1` al layout Core ML que espera WhisperKit, con cuantización adicional por palettización de 6 bits. El autor es el usuario de Hugging Face `aoiandroid`, y la conversión se ha publicado como espejo para el proyecto TranslateBlue. El objetivo es permitir la transcripción automática de voz en persa (farsi) directamente sobre hardware Apple, sin depender de servicios en la nube.
 
 La arquitectura subyacente es la de `openai/whisper-large-v3-turbo`, un transformer encoder-decoder de tipo Whisper, afinado por `vhdm` sobre el dataset `vhdm/persian-voice-v1` para el idioma persa. La conversión divide el encoder en dos modelos Core ML (capas 0-15 y capas 16-31 más layer norm) para que la compilación quepa en un Mac de 8 GB, y aplica palettización post-entrenamiento de 6 bits por tensor mediante k-means, manteniendo en fp16 los tensores de menos de 2048 elementos.
 
@@ -96,7 +96,7 @@ No se dispone de cifras comparativas de WER entre estas variantes en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aoiandroid/whisper-fa-large-v3-turbo-whisperkit-coreml-macos
+- Repositorio en Hugging Face: https://huggingface.co/aoiandroid/whisper-fa-large-v3-turbo-whisperkit-coreml-macos
 - Modelo base persa: https://huggingface.co/vhdm/whisper-large-fa-v1
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Dataset de entrenamiento: https://huggingface.co/datasets/vhdm/persian-voice-v1

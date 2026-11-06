@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `machalek29/qwen3-0.6b-state-lifetime-tutor-n500-adapter` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario `machalek29`, que se monta sobre el modelo base `Qwen/Qwen3-0.6B`. Este adaptador, entrenado mediante fine-tuning supervisado (SFT) con la librería TRL de HuggingFace, pretende especializar el modelo base en una tarea concreta, aunque el nombre del repositorio sugiere una orientación hacia la tutoría de "estado y tiempo de vida" (state lifetime), pero no se dispone de documentación que confirme su propósito exacto.
+El modelo `machalek29/qwen3-0.6b-state-lifetime-tutor-n500-adapter` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario `machalek29`, que se monta sobre el modelo base `Qwen/Qwen3-0.6B`. Este adaptador, entrenado mediante fine-tuning supervisado (SFT) con la librería TRL de Hugging Face, pretende especializar el modelo base en una tarea concreta, aunque el nombre del repositorio sugiere una orientación hacia la tutoría de "estado y tiempo de vida" (state lifetime), pero no se dispone de documentación que confirme su propósito exacto.
 
 La relevancia de este modelo radica en su carácter de ejemplo práctico de adaptación eficiente de un modelo pequeño y abierto mediante LoRA, una técnica que permite ajustar modelos de lenguaje con un coste computacional reducido. Al estar basado en Qwen3-0.6B, hereda la arquitectura transformer densa de 0.6 mil millones de parámetros y la ventana de contexto de 32.768 tokens del modelo original, aunque no se especifican los datos de entrenamiento ni las métricas de evaluación del adaptador.
 
-La publicación del modelo es reciente (agosto de 2026) y no cuenta con descargas ni valoraciones en HuggingFace, lo que indica que se trata de un proyecto experimental o personal. Su interés técnico reside en la metodología de fine-tuning con PEFT y en la posibilidad de desplegar un modelo pequeño y especializado en entornos con recursos limitados.
+La publicación del modelo es reciente (agosto de 2026) y no cuenta con descargas ni valoraciones en Hugging Face, lo que indica que se trata de un proyecto experimental o personal. Su interés técnico reside en la metodología de fine-tuning con PEFT y en la posibilidad de desplegar un modelo pequeño y especializado en entornos con recursos limitados.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ La publicación del modelo es reciente (agosto de 2026) y no cuenta con descarga
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA que modifica los pesos del modelo base Qwen3-0.6B, un transformer denso de 0.6 mil millones de parámetros con atención causal y una ventana de contexto de 32.768 tokens. La técnica LoRA reduce el número de parámetros entrenables a matrices de bajo rango, lo que permite un fine-tuning más eficiente en términos de memoria y cómputo. El entrenamiento se realizó con SFT (Supervised Fine-Tuning) usando la librería TRL de HuggingFace, según los metadatos del repositorio, que también indican el uso de PEFT 0.20.0.
+El modelo es un adaptador LoRA que modifica los pesos del modelo base Qwen3-0.6B, un transformer denso de 0.6 mil millones de parámetros con atención causal y una ventana de contexto de 32.768 tokens. La técnica LoRA reduce el número de parámetros entrenables a matrices de bajo rango, lo que permite un fine-tuning más eficiente en términos de memoria y cómputo. El entrenamiento se realizó con SFT (Supervised Fine-Tuning) usando la librería TRL de Hugging Face, según los metadatos del repositorio, que también indican el uso de PEFT 0.20.0.
 
 No se dispone de información sobre el dataset de entrenamiento, el número de tokens utilizados, las hiperparámetros (tasa de aprendizaje, batch size, etc.) ni sobre si se emplearon técnicas adicionales como DPO o RLHF. El nombre "state-lifetime-tutor" sugiere que el adaptador podría estar orientado a tareas de razonamiento temporal o de gestión de estado, pero no hay documentación que confirme esta hipótesis. Tampoco se especifican innovaciones técnicas más allá del uso de LoRA.
 
@@ -46,7 +46,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo no tiene métricas de evaluación (MMLU, HumanEval, GSM8K, etc.) en su repositorio de HuggingFace, ni se encontraron referencias externas a su rendimiento. Para conocer el rendimiento del modelo base, se pueden consultar los benchmarks de Qwen3-0.6B en la documentación oficial de Qwen (por ejemplo, MMLU, HumanEval, etc.), pero no se aplican directamente al adaptador sin evaluación específica.
+No se han publicado resultados de benchmarks en la información disponible. El modelo no tiene métricas de evaluación (MMLU, HumanEval, GSM8K, etc.) en su repositorio de Hugging Face, ni se encontraron referencias externas a su rendimiento. Para conocer el rendimiento del modelo base, se pueden consultar los benchmarks de Qwen3-0.6B en la documentación oficial de Qwen (por ejemplo, MMLU, HumanEval, etc.), pero no se aplican directamente al adaptador sin evaluación específica.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ La comparativa se basa en el modelo base y en la información disponible. No hay
 
 ## Enlaces
 
-- **Repositorio de HuggingFace**: [machalek29/qwen3-0.6b-state-lifetime-tutor-n500-adapter](https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n500-adapter)
+- **Repositorio de Hugging Face**: [machalek29/qwen3-0.6b-state-lifetime-tutor-n500-adapter](https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n500-adapter)
 - **Modelo base Qwen3-0.6B**: [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - **Guía de Qwen3 (insiderllm.com)**: [Qwen3 Complete Guide](https://insiderllm.com/guides/qwen3-complete-guide/)
 - **Repositorio oficial de Qwen3 en GitHub**: [QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)

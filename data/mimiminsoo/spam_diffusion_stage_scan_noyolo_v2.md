@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mimiminsoo/spam_diffusion_stage_scan_noyolo_v2 | 308.316.824 | Diffusion Policy | Apache-2.0 | HuggingFace |
-| mimiminsoo/spam_diffusion_stage_scan_v2 | no disponible | Diffusion Policy | Apache-2.0 | HuggingFace |
-| mimiminsoo/spam_diffusion_stage_search_v2 | no disponible | Diffusion Policy | Apache-2.0 | HuggingFace |
+| mimiminsoo/spam_diffusion_stage_scan_noyolo_v2 | 308.316.824 | Diffusion Policy | Apache-2.0 | Hugging Face |
+| mimiminsoo/spam_diffusion_stage_scan_v2 | no disponible | Diffusion Policy | Apache-2.0 | Hugging Face |
+| mimiminsoo/spam_diffusion_stage_search_v2 | no disponible | Diffusion Policy | Apache-2.0 | Hugging Face |
 
 Los tres modelos pertenecen al mismo autor y comparten la misma arquitectura Diffusion Policy y licencia. No se dispone de datos de rendimiento comparativos en la informacion proporcionada.
 
@@ -75,7 +75,7 @@ Los tres modelos pertenecen al mismo autor y comparten la misma arquitectura Dif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mimiminsoo/spam_diffusion_stage_scan_noyolo_v2
+- Hugging Face: https://huggingface.co/mimiminsoo/spam_diffusion_stage_scan_noyolo_v2
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

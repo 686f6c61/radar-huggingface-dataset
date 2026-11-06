@@ -4,7 +4,7 @@
 
 Anmol2507/LLM_as_judge_fine_tuned_Qwen_7B es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Anmol2507 sobre el modelo base Qwen2.5-7B-Instruct. Se trata, por tanto, de un ajuste fino ligero y no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador en formato safetensors y la configuracion de PEFT 0.17.1, por lo que para ejecutarlo es imprescindible descargar aparte el modelo base de Qwen. El nombre asignado indica que el ajuste se ha orientado a tareas de "LLM as judge", es decir, a evaluar y puntuar respuestas generadas por otros modelos.
 
-La relevancia de este tipo de publicacion es doble. Por un lado, los evaluadores automaticos basados en LLM se han convertido en una pieza habitual de los pipelines de evaluacion de modelos, y disponer de adaptadores pequenos permite ajustar el criterio de evaluacion sin reentrenar un modelo de 7.000 millones de parametros. Por otro, el repositorio es un ejemplo de publicacion con informacion minima: la model card es la plantilla por defecto de HuggingFace y no se han rellenado los campos de datos de entrenamiento, licencia, idiomas ni evaluacion.
+La relevancia de este tipo de publicacion es doble. Por un lado, los evaluadores automaticos basados en LLM se han convertido en una pieza habitual de los pipelines de evaluacion de modelos, y disponer de adaptadores pequenos permite ajustar el criterio de evaluacion sin reentrenar un modelo de 7.000 millones de parametros. Por otro, el repositorio es un ejemplo de publicacion con informacion minima: la model card es la plantilla por defecto de Hugging Face y no se han rellenado los campos de datos de entrenamiento, licencia, idiomas ni evaluacion.
 
 El modelo acumula 0 descargas y 0 me gusta, y el tamano del repositorio figura como 0,0 GB, lo que es coherente con un adaptador LoRA pero impide verificar el contenido real. En el momento de redactar esta ficha no hay datos publicos sobre el conjunto de datos de ajuste, hiperparametros, resultados de evaluacion ni condiciones de uso.
 
@@ -23,7 +23,7 @@ El modelo acumula 0 descargas y 0 me gusta, y el tamano del repositorio figura c
 | Libreria de carga | peft (entrenado y guardado con PEFT 0.17.1), compatible con transformers |
 | Tarea declarada | text-generation (conversacional) |
 | Modelo base | Qwen/Qwen2.5-7B-Instruct |
-| Tamano del repositorio | 0,0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun la ficha de Hugging Face) |
 | Fecha de creacion | 17 de septiembre de 2026 |
 | Ultima actualizacion | 17 de septiembre de 2026 |
 
@@ -94,7 +94,7 @@ No hay resultados de benchmarks que permitan comparar cuantitativamente este ada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anmol2507/LLM_as_judge_fine_tuned_Qwen_7B
+- Modelo en Hugging Face: https://huggingface.co/Anmol2507/LLM_as_judge_fine_tuned_Qwen_7B
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Blog de presentacion de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Emilymiller/contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación de una arquitectura denominada "CNN Transformer" orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con capacidades generativas: la model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados en benchmarks.
+`Emilymiller/contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación de una arquitectura denominada "CNN Transformer" orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con capacidades generativas: la model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados en benchmarks.
 
 El repositorio está pensado como andamiaje (codebase) para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo. Incluye el código del modelo en `predict.py`, la configuración de arquitectura en `config.json` y la receta de entrenamiento por defecto en `training_args.json`. La escala declarada es "giant", aunque el recuento real de parámetros en el checkpoint de inicialización es de solo 49.600 parámetros, lo que confirma que no se ha materializado un modelo de gran tamaño.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emilymiller/contrastive
+- Hugging Face: https://huggingface.co/Emilymiller/contrastive
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -59,6 +59,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: violetxi/qwen35-9b-wmrl-v4-b5-30m](https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-b5-30m)
+- [Hugging Face: violetxi/qwen35-9b-wmrl-v4-b5-30m](https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-b5-30m)
 - [Checkpoint relacionado: violetxi/qwen35-9b-wmrl-v4-c1-b5v4](https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c1-b5v4)
 - [Checkpoint relacionado: violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5](https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praiselab-picuslab/benchmark-slm-fiven-qwen2.5-1.5b-mix` es un adaptador LoRA (librería PEFT, pesos en safetensors) construido sobre el modelo base `Qwen/Qwen2.5-1.5B`. Por los metadatos disponibles (etiquetas `benchmark-slm`, `dataset-fiven`, `strategy-mix`, `or2`), se trata de un artefacto experimental generado dentro de una batería de evaluación de modelos de lenguaje pequeños (SLM), no de un modelo orientado a producción. El autor es la organización `praiselab-picuslab` y el repositorio está restringido (gated): requiere aceptar condiciones en HuggingFace para acceder a los ficheros.
+`praiselab-picuslab/benchmark-slm-fiven-qwen2.5-1.5b-mix` es un adaptador LoRA (librería PEFT, pesos en safetensors) construido sobre el modelo base `Qwen/Qwen2.5-1.5B`. Por los metadatos disponibles (etiquetas `benchmark-slm`, `dataset-fiven`, `strategy-mix`, `or2`), se trata de un artefacto experimental generado dentro de una batería de evaluación de modelos de lenguaje pequeños (SLM), no de un modelo orientado a producción. El autor es la organización `praiselab-picuslab` y el repositorio está restringido (gated): requiere aceptar condiciones en Hugging Face para acceder a los ficheros.
 
 El modelo hereda del base una arquitectura transformer decoder-only densa de 1.500 millones de parámetros y una ventana de contexto nativa de 32.768 tokens, pero el adaptador en sí no documenta ni el rango de LoRA, ni los módulos objetivo, ni el volumen o composición de los datos de entrenamiento. La única indicación de idioma es la etiqueta `it` (italiano), lo que sugiere un ajuste orientado a ese idioma, probablemente sobre el conjunto de datos denominado `fiven` según las etiquetas del repositorio.
 
@@ -76,7 +76,7 @@ No hay datos de rendimiento de este adaptador que permitan una comparación cuan
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explícita no se puede asumir permiso de uso comercial, aunque el modelo base sea Apache 2.0. Es un bloqueo legal para producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que impide su uso en pipelines automatizados sin gestión de credenciales.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que impide su uso en pipelines automatizados sin gestión de credenciales.
 - Tamaño del repositorio de 0,0 GB: los pesos del adaptador podrían no estar efectivamente subidos o ser meramente testimoniales. Verificar los ficheros antes de cualquier integración.
 - Documentación de entrenamiento ausente: sin rango de LoRA, datos, tokens ni hiperparámetros no es posible evaluar sobreajuste, contaminación de benchmarks ni comportamiento esperado.
 - Idioma limitado al italiano según la etiqueta; el rendimiento en castellano no está verificado y probablemente sea inferior al del modelo base sin ajustar.
@@ -88,6 +88,6 @@ No hay datos de rendimiento de este adaptador que permitan una comparación cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-qwen2.5-1.5b-mix
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-qwen2.5-1.5b-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

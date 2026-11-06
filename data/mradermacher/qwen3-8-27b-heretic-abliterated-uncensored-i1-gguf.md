@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-Abliterated-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-Abliterated-Uncensored-i1-GGUF
 - Repositorio del modelo base: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

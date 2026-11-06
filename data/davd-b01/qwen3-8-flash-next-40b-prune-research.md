@@ -107,7 +107,7 @@ El experimento no completó los controles que permitirían atribuir el daño: se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Davd-b01/qwen3.8-flash-next-40b-prune-research
+- Repositorio en Hugging Face: https://huggingface.co/Davd-b01/qwen3.8-flash-next-40b-prune-research
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Data set de trazas: https://huggingface.co/datasets/Davd-b01/thinking-cap-tier-raw-traces
 - Data set de currículos: https://huggingface.co/datasets/Davd-b01/thinking-cap-tier-curricula-complete

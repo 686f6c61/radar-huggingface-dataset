@@ -2,7 +2,7 @@
 
 ## Resumen
 
-audio_cls_1016 es un modelo de clasificación de audio publicado en HuggingFace por el usuario kimteemo. Se trata de un ajuste fino (fine-tuning) del checkpoint Kkonjeong/wav2vec2-base-korean, una variante en coreano de la arquitectura wav2vec2-base de Facebook/Meta. El modelo resuelve la tarea de asignar una etiqueta de clase a un segmento de audio, es decir, clasificación discreta sobre representaciones acústicas autoaprendidas, no generación de texto.
+audio_cls_1016 es un modelo de clasificación de audio publicado en Hugging Face por el usuario kimteemo. Se trata de un ajuste fino (fine-tuning) del checkpoint Kkonjeong/wav2vec2-base-korean, una variante en coreano de la arquitectura wav2vec2-base de Facebook/Meta. El modelo resuelve la tarea de asignar una etiqueta de clase a un segmento de audio, es decir, clasificación discreta sobre representaciones acústicas autoaprendidas, no generación de texto.
 
 El modelo cuenta con 94.572.174 parámetros según los pesos en formato safetensors, un tamaño coherente con la familia wav2vec2-base (aproximadamente 95 millones). El repositorio ocupa 0,4 GB y se distribuye bajo la librería transformers con pesos en safetensors. No se declara licencia, idiomas soportados ni la composición del conjunto de datos de entrenamiento en la model card.
 
@@ -85,9 +85,9 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de ningún otro benchmark de text
 
 | Modelo | Parametros | Tarea | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kimteemo/audio_cls_1016 | 94.572.174 | Clasificacion de audio | no disponible | no disponible | HuggingFace, 0 descargas |
+| kimteemo/audio_cls_1016 | 94.572.174 | Clasificacion de audio | no disponible | no disponible | Hugging Face, 0 descargas |
 | facebook/wav2vec2-base | ~95 M | Preentrenamiento auto-supervisado de audio (base para fine-tuning) | Ingles (preentrenamiento) | MIT (segun el repositorio original) | Ampliamente usado |
-| Kkonjeong/wav2vec2-base-korean | no disponible | Preentrenamiento auto-supervisado de audio en coreano | Coreano | no disponible | HuggingFace |
+| Kkonjeong/wav2vec2-base-korean | no disponible | Preentrenamiento auto-supervisado de audio en coreano | Coreano | no disponible | Hugging Face |
 | facebook/hubert-base-ls960 | ~95 M | Preentrenamiento auto-supervisado de audio | Ingles | MIT (segun el repositorio original) | Ampliamente usado |
 
 No se dispone de resultados comparativos de accuracy entre estos modelos sobre el mismo conjunto de evaluación, porque el conjunto usado por audio_cls_1016 no está documentado ni es público.
@@ -107,7 +107,7 @@ No se dispone de resultados comparativos de accuracy entre estos modelos sobre e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimteemo/audio_cls_1016
+- Modelo en Hugging Face: https://huggingface.co/kimteemo/audio_cls_1016
 - Modelo base: https://huggingface.co/Kkonjeong/wav2vec2-base-korean
 - Paper de wav2vec 2.0 (arquitectura del backbone): https://arxiv.org/abs/2006.11477
 - Repositorio de referencia de fairseq/wav2vec 2.0: https://github.com/facebookresearch/fairseq/tree/main/examples/wav2vec

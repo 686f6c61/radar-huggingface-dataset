@@ -22,7 +22,7 @@ Su relevancia es acotada pero concreta: los sistemas de busqueda juridica en vie
 | Formato de pesos | safetensors (repositorio de 0,6 GB) |
 | Etiquetas de salida | 2: `0` = contradiccion / no relevante, `1` = implicacion / evidencia de apoyo |
 | Agregacion de pasajes | `max` (bag aggregation declarada en la model card) |
-| Pipeline en HuggingFace | `text-classification` |
+| Pipeline en Hugging Face | `text-classification` |
 | Uso previsto | cross-encoder verificador (NLI verifier) en recuperacion de informacion legal |
 
 ## Arquitectura y entrenamiento
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Booooooooooooo/vlqa-mdeberta-v3-base-xnli` | 278,8 M | 512 | vi (declarado) | NLI binario legal, cross-encoder | MIT | HuggingFace, safetensors, 0 descargas |
-| `MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7` (modelo base) | ~278 M (misma familia y tokenizador) | 512 | multilingue (incluye vi) | NLI de 3 clases, generico | MIT | HuggingFace, ampliamente utilizado |
-| Cross-encoders NLI multilingues de tipo XLM-R large (p. ej. `joeddav/xlm-roberta-large-xnli`) | ~560 M (aproximado, no verificado en esta busqueda) | 512 | multilingue | NLI de 3 clases, generico | MIT | HuggingFace |
+| `Booooooooooooo/vlqa-mdeberta-v3-base-xnli` | 278,8 M | 512 | vi (declarado) | NLI binario legal, cross-encoder | MIT | Hugging Face, safetensors, 0 descargas |
+| `MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7` (modelo base) | ~278 M (misma familia y tokenizador) | 512 | multilingue (incluye vi) | NLI de 3 clases, generico | MIT | Hugging Face, ampliamente utilizado |
+| Cross-encoders NLI multilingues de tipo XLM-R large (p. ej. `joeddav/xlm-roberta-large-xnli`) | ~560 M (aproximado, no verificado en esta busqueda) | 512 | multilingue | NLI de 3 clases, generico | MIT | Hugging Face |
 
 La comparacion relevante es con el modelo base: este fine-tuning no anade parametros, sino que especializa la salida en dos clases y en el dominio legal vietnamita. Frente a un cross-encoder multilingue generico de mayor tamano, la ventaja esperable es menor latencia y mejor ajuste al dominio, a cambio de perder generalidad y de carecer de metricas publicas que respalden la mejora. No se dispone de datos que permitan comparar rendimiento numerico entre estas opciones.
 
@@ -89,7 +89,7 @@ La comparacion relevante es con el modelo base: este fine-tuning no anade parame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Booooooooooooo/vlqa-mdeberta-v3-base-xnli
+- Modelo en Hugging Face: https://huggingface.co/Booooooooooooo/vlqa-mdeberta-v3-base-xnli
 - Modelo base: https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
 - Paper de DeBERTa (arquitectura de referencia): no disponible en la informacion proporcionada
 - Dataset `VLQA`: no se proporciona enlace en la model card

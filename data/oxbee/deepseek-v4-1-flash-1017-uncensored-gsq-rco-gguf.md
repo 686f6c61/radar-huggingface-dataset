@@ -34,7 +34,7 @@ La edición de abliteración consiste en proyectar fuera la dirección de rechaz
 - Conocimiento general evaluado con MMLU (500 preguntas).
 - Comportamiento sin rechazos: la edición elimina las negativas de forma transversal a temas, no solo en un subconjunto.
 - Ejecución en hardware de consumo mediante el motor Strata, con un solo GPU de 12 GB.
-- Compatibilidad declarada con endpoints (tag `endpoints_compatible` en HuggingFace).
+- Compatibilidad declarada con endpoints (tag `endpoints_compatible` en Hugging Face).
 - No hay información disponible sobre tool calling, function calling, capacidades multilingües, visión o audio.
 
 ## Casos de uso
@@ -98,7 +98,7 @@ El KL reportado es una cota inferior calculada con top-64 en el modo de puntuaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OxBee/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OxBee/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
 - Modelo base cuantizado (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Modelo base original (DeepSeek): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Variante uncensored de AtomicChat: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF

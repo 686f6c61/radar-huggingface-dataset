@@ -62,7 +62,7 @@ No disponible. Este repositorio no es comparable con un modelo de IA concreto, s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Quiho/civitai-archive
+- Repositorio Hugging Face: https://huggingface.co/Quiho/civitai-archive
 - Arbol de archivos: https://huggingface.co/Quiho/civitai-archive/tree/main
 - Sitio de CivArchive: https://civitaiarchive.com/about
 - Guia de subida de CivArchive: https://civarchive.com/upload

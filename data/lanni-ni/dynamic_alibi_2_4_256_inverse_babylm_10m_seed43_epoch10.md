@@ -3,7 +3,7 @@
 ## Resumen
 El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch10` es un modelo de lenguaje pequeño desarrollado por Lanni-ni (Lanni Bu), investigador en procesamiento del lenguaje natural. Se trata de un experimento de investigación que combina la técnica de atención con sesgos lineales (ALiBi) en una variante dinámica, entrenado en el contexto del benchmark BabyLM, que evalúa el aprendizaje del lenguaje con datos limitados. El modelo tiene 27.447.040 parámetros y se distribuye en formato safetensors, con pipeline de generación de texto.
 
-La model card es una plantilla automática de HuggingFace y no contiene información detallada sobre arquitectura, datos de entrenamiento, licencia ni rendimiento. El nombre del modelo sugiere una configuración de 2 capas, 4 cabezas de atención y dimensión de modelo 256, junto con una semilla de 43 y 10 épocas de entrenamiento, aunque estos datos no están confirmados en la documentación. Al tratarse de un modelo de investigación con escasa documentación, su uso principal es experimental.
+La model card es una plantilla automática de Hugging Face y no contiene información detallada sobre arquitectura, datos de entrenamiento, licencia ni rendimiento. El nombre del modelo sugiere una configuración de 2 capas, 4 cabezas de atención y dimensión de modelo 256, junto con una semilla de 43 y 10 épocas de entrenamiento, aunque estos datos no están confirmados en la documentación. Al tratarse de un modelo de investigación con escasa documentación, su uso principal es experimental.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -43,7 +43,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 ## Requisitos de hardware
 - VRAM estimada: el modelo ocupa aproximadamente 110 MB en FP32 y 55 MB en FP16, por lo que cabe en cualquier GPU consumer, incluso en las más modestas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, como una RTX 3050 o inferior; también puede ejecutarse en CPU.
-- Se puede ejecutar con la librería Transformers de HuggingFace directamente.
+- Se puede ejecutar con la librería Transformers de Hugging Face directamente.
 - No se han publicado cuantizaciones GGUF, por lo que llama.cpp u Ollama requerirían una conversión previa.
 - No se dispone de datos de latencia ni throughput.
 
@@ -59,5 +59,5 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 - Al ser un modelo de investigación con 14 descargas, no se recomienda su uso en entornos de producción.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch10
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch10
 - Página personal del autor: https://lanni-ni.github.io/

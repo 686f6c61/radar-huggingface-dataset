@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables. El enfoque de remateria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/i64systems/remat
+- Hugging Face: https://huggingface.co/i64systems/remat
 - Repositorio de verificación (referencia en la model card): no se proporciona URL directa, pero se mencionan scripts en `research/claims` y `release/`.
 - Resultados de búsqueda web no relacionados directamente con el modelo (se incluyen por si aportan contexto):
   - https://github.com/meta-pytorch/remat (activación checkpointing en PyTorch)

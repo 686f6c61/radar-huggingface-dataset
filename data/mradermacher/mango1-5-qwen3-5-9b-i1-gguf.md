@@ -79,7 +79,7 @@ No hay datos de rendimiento para MANGO1.5, por lo que no se puede hacer una comp
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/MANGO1.5-Qwen3.5-9B-i1-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/MANGO1.5-Qwen3.5-9B-i1-GGUF
 - Modelo base (CMKL/MANGO1.5-Qwen3.5-9B): https://huggingface.co/CMKL/MANGO1.5-Qwen3.5-9B
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/MANGO1.5-Qwen3.5-9B-GGUF
 - Página de descarga de mradermacher: https://hf.tst.eu/model

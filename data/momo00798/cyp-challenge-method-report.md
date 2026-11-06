@@ -107,7 +107,7 @@ Todas las alternativas compiten en el mismo reto OpenADMET CYP 2026 y ninguna pu
 
 ## Enlaces
 
-- HuggingFace (repositorio del informe): https://huggingface.co/momo00798/cyp-challenge-method-report
+- Hugging Face (repositorio del informe): https://huggingface.co/momo00798/cyp-challenge-method-report
 - Space del informe metodológico (FreeT4-CYP): https://huggingface.co/spaces/momo00798/freet4-cyp-method
 - Space oficial del reto OpenADMET CYP: https://huggingface.co/spaces/openadmet/cyp-challenge
 - Repositorio público de entrada (mokhalaf22): https://github.com/mokhalaf22/openadmet-cyp-public

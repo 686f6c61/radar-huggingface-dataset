@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`priyayadavgmailcom/rg` es un repositorio alojado en HuggingFace cuyo autor es el usuario `priyayadavgmailcom`. En el momento de la consulta, la ficha publica no declara pipeline, licencia, idiomas soportados, arquitectura ni tamano, y el unico tag presente es `region:us`. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado en la misma marca temporal (2026-09-26T18:59:08Z), lo que sugiere una publicacion unica sin iteraciones posteriores visibles.
+`priyayadavgmailcom/rg` es un repositorio alojado en Hugging Face cuyo autor es el usuario `priyayadavgmailcom`. En el momento de la consulta, la ficha publica no declara pipeline, licencia, idiomas soportados, arquitectura ni tamano, y el unico tag presente es `region:us`. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado en la misma marca temporal (2026-09-26T18:59:08Z), lo que sugiere una publicacion unica sin iteraciones posteriores visibles.
 
 Con esta informacion no es posible identificar que problema resuelve el modelo, a que categoria funcional pertenece ni sobre que datos se entreno. No hay model card descriptiva, ni paper asociado, ni configuracion de pesos documentada en la informacion disponible.
 
-La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: todos los enlaces recuperados corresponden a foros de un servidor de rol de Grand Theft Auto (GTA World France) y no guardan relacion alguna con inteligencia artificial, aprendizaje automatico ni publicaciones de HuggingFace.
+La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: todos los enlaces recuperados corresponden a foros de un servidor de rol de Grand Theft Auto (GTA World France) y no guardan relacion alguna con inteligencia artificial, aprendizaje automatico ni publicaciones de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Autor | `priyayadavgmailcom` |
-| Identificador en HuggingFace | `priyayadavgmailcom/rg` |
+| Identificador en Hugging Face | `priyayadavgmailcom/rg` |
 | Pipeline declarado | no disponible |
 | Tags publicos | `region:us` |
 | Descargas | 0 |
@@ -35,7 +35,7 @@ No se incluye fila de parametros activos diferenciada porque no hay evidencia de
 
 No disponible. La informacion proporcionada no incluye ningun dato sobre la arquitectura del modelo (transformer denso, MoE, SSM, arquitectura hibrida u otra), ni sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste como RLHF, DPO o SFT, ni sobre innovaciones tecnicas asociadas.
 
-Tampoco se puede deducir la arquitectura a partir de los tags publicos, ya que el unico tag presente (`region:us`) es un metadato de clasificacion geografica de HuggingFace y no aporta informacion sobre el diseno del modelo.
+Tampoco se puede deducir la arquitectura a partir de los tags publicos, ya que el unico tag presente (`region:us`) es un metadato de clasificacion geografica de Hugging Face y no aporta informacion sobre el diseno del modelo.
 
 ## Capacidades
 
@@ -93,6 +93,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/priyayadavgmailcom/rg
+- Repositorio en Hugging Face: https://huggingface.co/priyayadavgmailcom/rg
 
 No se han encontrado otros enlaces relevantes. La busqueda web asociada devolvio exclusivamente resultados del foro del servidor de rol GTA World France (`forum-fr.gta.world`), sin ninguna relacion con el modelo ni con publicaciones tecnicas de aprendizaje automatico.

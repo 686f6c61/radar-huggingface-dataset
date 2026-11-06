@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni el
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Granite 4.2 30B (GGUF) | 30B | no disponible | apache-2.0 | HuggingFace |
-| Llama 3.1 8B (GGUF) | 8B | 128K | apache-2.0 | HuggingFace |
-| Mistral Small 3.2 24B (GGUF) | 24B | 128K | apache-2.0 | HuggingFace |
+| Granite 4.2 30B (GGUF) | 30B | no disponible | apache-2.0 | Hugging Face |
+| Llama 3.1 8B (GGUF) | 8B | 128K | apache-2.0 | Hugging Face |
+| Mistral Small 3.2 24B (GGUF) | 24B | 128K | apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos. La eleccion dependera de la necesidad de razonamiento avanzado (Granite 4.2) frente a modelos mas ligeros o con contextos mas largos. La comparativa se basa unicamente en caracteristicas publicas de cada familia.
 
@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos. La elecci
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/mradermacher/Granite-4.2-30B-Fable-Distill-i1-GGUF
+- Hugging Face (este modelo): https://huggingface.co/mradermacher/Granite-4.2-30B-Fable-Distill-i1-GGUF
 - Repo hermano (mradermacher/granite-4.2-30b-i1-GGUF): https://huggingface.co/mradermacher/granite-4.2-30b-i1-GGUF
 - Repo hermano (mradermacher/granite-4.2-30b-GGUF): https://huggingface.co/mradermacher/granite-4.2-30b-GGUF
 - Documentacion de Granite 4.2 de IBM: https://www.ibm.com/granite/docs/models/granite4-2

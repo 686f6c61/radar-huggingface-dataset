@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Alucard-IT es un ajuste fino (fine-tuning) del modelo unsloth/Llama-3.2-3B-Instruct que impone como comportamiento por defecto la voz del personaje Alucard (Hellsing) en italiano. Lo publica el usuario WasamiKirua en HuggingFace bajo licencia apache-2.0 declarada y con el identificador de idioma `it`. El modelo tiene 3.212.749.824 parametros reales segun los pesos en safetensors y un tamano de repositorio de 6,4 GB, lo que corresponde a un checkpoint denso en 16 bits tras unir el adaptador LoRA.
+Llama-3.2-3B-Alucard-IT es un ajuste fino (fine-tuning) del modelo unsloth/Llama-3.2-3B-Instruct que impone como comportamiento por defecto la voz del personaje Alucard (Hellsing) en italiano. Lo publica el usuario WasamiKirua en Hugging Face bajo licencia apache-2.0 declarada y con el identificador de idioma `it`. El modelo tiene 3.212.749.824 parametros reales segun los pesos en safetensors y un tamano de repositorio de 6,4 GB, lo que corresponde a un checkpoint denso en 16 bits tras unir el adaptador LoRA.
 
 El objetivo no es mejorar capacidades generales de razonamiento o codigo, sino fijar un estilo conversacional muy concreto: la model card indica explicitamente que no hace falta enviar un prompt de sistema con la personalidad, porque la voz de Alucard es la respuesta predefinida. Esto lo convierte en un artefacto de roleplay y generacion de personaje mas que en un modelo de proposito general.
 
@@ -89,7 +89,7 @@ La comparacion relevante es con el propio modelo base: el ajuste anade la voz de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WasamiKirua/Llama-3.2-3B-Alucard-IT
+- Modelo en Hugging Face: https://huggingface.co/WasamiKirua/Llama-3.2-3B-Alucard-IT
 - Repositorio GGUF del mismo autor: https://huggingface.co/WasamiKirua/Llama-3.2-3B-Alucard-IT-GGUF
 - Modelo base del ajuste: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

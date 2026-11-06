@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`earteaga7/results` es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-multilingual-cased`, publicado por el usuario earteaga7 en HuggingFace. Se trata de un ajuste supervisado de BERT multilingüe para una tarea de clasificación concreta, con 177.855.747 parámetros totales y un tamaño de repositorio de 0,7 GB. La model card indica que fue generado automáticamente por el `Trainer` de Transformers y que el conjunto de datos de entrenamiento no está identificado ("None dataset"), por lo que se desconoce el dominio y las etiquetas de la tarea.
+`earteaga7/results` es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-multilingual-cased`, publicado por el usuario earteaga7 en Hugging Face. Se trata de un ajuste supervisado de BERT multilingüe para una tarea de clasificación concreta, con 177.855.747 parámetros totales y un tamaño de repositorio de 0,7 GB. La model card indica que fue generado automáticamente por el `Trainer` de Transformers y que el conjunto de datos de entrenamiento no está identificado ("None dataset"), por lo que se desconoce el dominio y las etiquetas de la tarea.
 
 El modelo resuelve una tarea de clasificación de secuencias (pipeline `text-classification`), presumiblemente con un número de clases no especificado. Su relevancia práctica es limitada: no tiene descargas ni likes, la documentación es prácticamente inexistente y no se han publicado resultados de benchmarks más allá de la pérdida y la exactitud de validación declaradas por el autor (loss 0,5771; accuracy 0,7515) sobre un conjunto de evaluación no descrito.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| earteaga7/results | 177,9 M | no disponible (límite BERT: 512) | Clasificación de texto | apache-2.0 | HuggingFace, 0 descargas |
-| google-bert/bert-base-multilingual-cased | 177,9 M | 512 tokens | Encoder base (fine-tuning) | apache-2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-multilingual-cased | 134,7 M | 512 tokens | Encoder base (fine-tuning) | apache-2.0 | HuggingFace, ampliamente usado |
-| xlm-roberta-base | 278 M | 512 tokens | Encoder base (fine-tuning) | MIT | HuggingFace, ampliamente usado |
+| earteaga7/results | 177,9 M | no disponible (límite BERT: 512) | Clasificación de texto | apache-2.0 | Hugging Face, 0 descargas |
+| google-bert/bert-base-multilingual-cased | 177,9 M | 512 tokens | Encoder base (fine-tuning) | apache-2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-multilingual-cased | 134,7 M | 512 tokens | Encoder base (fine-tuning) | apache-2.0 | Hugging Face, ampliamente usado |
+| xlm-roberta-base | 278 M | 512 tokens | Encoder base (fine-tuning) | MIT | Hugging Face, ampliamente usado |
 
 La comparación directa de rendimiento no es posible: el modelo no publica métricas sobre conjuntos estándar y su tarea de destino es desconocida. Frente a los encoders base citados, la única diferencia documentada es el ajuste específico, cuya calidad no puede evaluarse sin conocer el dataset.
 
@@ -91,7 +91,7 @@ La comparación directa de rendimiento no es posible: el modelo no publica métr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/earteaga7/results
+- Modelo en Hugging Face: https://huggingface.co/earteaga7/results
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Documentación de BERT en Transformers: https://huggingface.co/docs/transformers/model_doc/bert

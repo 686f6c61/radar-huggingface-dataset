@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (STRIDE sobre Qwen3-1.7B) | 1,7 B en el base mas LoRA de rank 16 | no disponible | no disponible | safetensors (PEFT) | Publico en HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen3-1.7B (base, revision 70d244c) | 1,7 B | no disponible en la informacion proporcionada | no disponible | safetensors | Publico en HuggingFace |
+| Este adaptador (STRIDE sobre Qwen3-1.7B) | 1,7 B en el base mas LoRA de rank 16 | no disponible | no disponible | safetensors (PEFT) | Publico en Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen3-1.7B (base, revision 70d244c) | 1,7 B | no disponible en la informacion proporcionada | no disponible | safetensors | Publico en Hugging Face |
 
 No se han proporcionado datos de otros modelos comparables de la misma categoria (por ejemplo, destilaciones pequenas orientadas a matematicas o instruct de menos de 2.000 millones de parametros), y la busqueda web realizada no devolvio resultados tecnicos relevantes, por lo que no es posible establecer una comparativa cuantitativa con alternativas.
 
@@ -89,7 +89,7 @@ No se han proporcionado datos de otros modelos comparables de la misma categoria
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha2-20260916
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha2-20260916
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revision fijada del modelo base: `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e`
 - Indice de checkpoints dentro del repositorio: `checkpoint_index.json`

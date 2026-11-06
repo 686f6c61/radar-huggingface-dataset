@@ -106,11 +106,11 @@ Comparación con alternativas del mismo model zoo, todas evaluadas por el autor 
 
 | Modelo | Parametros | Top-1 | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yolo26n-cls (este modelo) | 1,5 M | 82,04% | 64,09% | AGPL-3.0 | HuggingFace |
-| convnext_atto | no disponible | 83,00% | 67,44% | no disponible | HuggingFace (autor) |
-| mobilenetv4_conv_small | no disponible | 82,16% | 66,51% | no disponible | HuggingFace (autor) |
-| resnet18 | no disponible | 82,19% | 64,30% | no disponible | HuggingFace (autor) |
-| yolo11n-cls | no disponible | 81,32% | 62,91% | no disponible | HuggingFace (autor) |
+| yolo26n-cls (este modelo) | 1,5 M | 82,04% | 64,09% | AGPL-3.0 | Hugging Face |
+| convnext_atto | no disponible | 83,00% | 67,44% | no disponible | Hugging Face (autor) |
+| mobilenetv4_conv_small | no disponible | 82,16% | 66,51% | no disponible | Hugging Face (autor) |
+| resnet18 | no disponible | 82,19% | 64,30% | no disponible | Hugging Face (autor) |
+| yolo11n-cls | no disponible | 81,32% | 62,91% | no disponible | Hugging Face (autor) |
 
 Según los datos del propio autor, convnext_atto y mobilenetv4_conv_small superan a este modelo tanto en top-1 como en macro F1 y macro precision; resnet18 lo supera en top-1 y macro F1. El modelo destaca frente a yolo11n-cls y yolov8n-cls en la mayoría de métricas. No se dispone de datos de parámetros, licencia ni contexto de los modelos comparables más allá de lo indicado.
 
@@ -128,7 +128,7 @@ Según los datos del propio autor, convnext_atto y mobilenetv4_conv_small supera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-yolo26n-cls
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-yolo26n-cls
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Modelo relacionado de deteccion del mismo autor: https://huggingface.co/dronefreak/bdd100k-yolo26n

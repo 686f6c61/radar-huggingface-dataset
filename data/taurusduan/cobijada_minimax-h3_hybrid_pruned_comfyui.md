@@ -22,7 +22,7 @@ La propuesta del híbrido es tomar el checkpoint FL como base de toda la red y s
 | Formato de pesos | safetensors (tres ficheros: BF16, INT8 y W4A8) |
 | Modalidades de entrada | texto, imagen, vídeo y audio (text/image/video/audio-to-video) |
 | Regímenes de condicionamiento | primer/último fotograma (FL) y guiado por referencia (REF) en un único checkpoint |
-| Pipeline declarado en HuggingFace | image-to-video |
+| Pipeline declarado en Hugging Face | image-to-video |
 | Tamaño del repositorio | 73,7 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -96,7 +96,7 @@ No se dispone de datos en la información proporcionada para comparar con otras 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI
 - Imagen de cabecera referenciada en la model card: https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI/resolve/main/H3_Hybrid.png
 - Perfil del autor del merge y las cuantizaciones: https://huggingface.co/Winnougan
 - Repositorio original del merge (según los créditos de la model card): https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI

@@ -77,7 +77,7 @@ No se dispone de datos de modelos alternativos comparables en la información pr
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| English AI Detector v2 | No disponible | No disponible como ventana única; procesa ventanas solapadas y admite 200.000 caracteres por HTTP | AUROC 0,9958-0,9994 en cuatro cohortes | `research-use-model-notice` | HuggingFace |
+| English AI Detector v2 | No disponible | No disponible como ventana única; procesa ventanas solapadas y admite 200.000 caracteres por HTTP | AUROC 0,9958-0,9994 en cuatro cohortes | `research-use-model-notice` | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de modelos alternativos comparables en la información pr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ydh0822/english-ai-detector)
+- [Modelo en Hugging Face](https://huggingface.co/ydh0822/english-ai-detector)
 - [Repositorio y interfaz local](https://github.com/ydhhhh/english-ai-detector)
 - [Model card completa](https://github.com/ydhhhh/english-ai-detector/blob/main/docs/model_card.md)
 - [Fuentes de datos](https://github.com/ydhhhh/english-ai-detector/blob/main/docs/data_sources.md)

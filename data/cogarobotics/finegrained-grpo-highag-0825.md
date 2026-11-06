@@ -80,5 +80,5 @@ La comparativa es parcial porque no se dispone de los parámetros exactos del mo
 
 ## Enlaces
 
-- [HuggingFace: cogarobotics/finegrained-grpo-highag-0825](https://huggingface.co/cogarobotics/finegrained-grpo-highag-0825)
+- [Hugging Face: cogarobotics/finegrained-grpo-highag-0825](https://huggingface.co/cogarobotics/finegrained-grpo-highag-0825)
 - [Paper sobre GRPO: Faithful GRPO: Improving Visual Spatial Reasoning in Multimodal Language Models via Constrained Policy Optimization](https://arxiv.org/abs/2604.08476)

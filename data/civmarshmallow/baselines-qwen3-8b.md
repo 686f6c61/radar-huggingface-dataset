@@ -71,10 +71,10 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Rendimiento (G en rem120) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Baselines-Qwen3-8B (sparse) | ~8 000 M | no disponible | 2,87 | apache-2.0 | HuggingFace |
-| Baselines-Qwen3-8B (scoreboard) | ~8 000 M | no disponible | 4,87 | apache-2.0 | HuggingFace |
-| CivMarshmallow-Qwen3-8B (CivTelescope) | ~8 000 M | no disponible | 2,77 (5,21 con scoreboard → CivTelescope) | no disponible | HuggingFace |
-| Qwen3-8B (base) | ~8 000 M | no disponible | no disponible | no disponible | HuggingFace |
+| Baselines-Qwen3-8B (sparse) | ~8 000 M | no disponible | 2,87 | apache-2.0 | Hugging Face |
+| Baselines-Qwen3-8B (scoreboard) | ~8 000 M | no disponible | 4,87 | apache-2.0 | Hugging Face |
+| CivMarshmallow-Qwen3-8B (CivTelescope) | ~8 000 M | no disponible | 2,77 (5,21 con scoreboard → CivTelescope) | no disponible | Hugging Face |
+| Qwen3-8B (base) | ~8 000 M | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CivMarshmallow/Baselines-Qwen3-8B
+- Modelo en Hugging Face: https://huggingface.co/CivMarshmallow/Baselines-Qwen3-8B
 - Políticas CivMarshmallow: https://huggingface.co/CivMarshmallow/CivMarshmallow-Qwen3-8B
 - Juez CivTelescope: https://huggingface.co/CivMarshmallow/CivTelescope
 - Código: https://github.com/jamesnulliu/CivMarshmallow

@@ -16,7 +16,7 @@ La relevancia de esta ficha es fundamentalmente práctica: permite ejecutar loca
 | Parametros totales | 1.498.482.688 (segun metadatos de safetensors); la model card declara 1,0B |
 | Longitud de contexto | 131.072 tokens (segun la model card del autor) |
 | Tipos de cuantizacion | 8 bits MLX, 8,25 bits por peso de media; existen variantes 4-bit y 16-bit del mismo autor |
-| Idiomas soportados | en, de, fr, it, pt, hi, es, th (segun las etiquetas del repositorio; el campo de idiomas de HuggingFace figura como no disponible) |
+| Idiomas soportados | en, de, fr, it, pt, hi, es, th (segun las etiquetas del repositorio; el campo de idiomas de Hugging Face figura como no disponible) |
 | Licencia | llama3.2 (Llama 3.2 Community License) |
 | Formato de pesos | safetensors en formato MLX (no GGUF, no PyTorch nativo) |
 | Tamano del repositorio | 1,6 GB |
@@ -107,7 +107,7 @@ La comparativa se limita a parametros, contexto, formato y licencia porque no ha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-8bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-8bit
 - Modelo base: https://huggingface.co/meta-llama/Llama-Guard-3-1B
 - Variante 4-bit: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-4bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-16bit

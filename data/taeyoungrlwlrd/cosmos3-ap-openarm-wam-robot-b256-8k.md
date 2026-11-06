@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`taeyoungrlwlrd/cosmos3-ap-openarm-wam-robot-b256-8k` es un repositorio de pesos alojado en HuggingFace por la cuenta de usuario `taeyoungrlwlrd`. La informacion publica disponible es minima: unicamente el identificador, el autor, la etiqueta `region:us`, un tamano de repositorio de 91,1 GB, 6 descargas, 0 likes y fechas de creacion y actualizacion (18 de septiembre de 2026). No hay model card, ni pipeline declarado, ni licencia, ni idiomas, ni documentacion tecnica asociada.
+`taeyoungrlwlrd/cosmos3-ap-openarm-wam-robot-b256-8k` es un repositorio de pesos alojado en Hugging Face por la cuenta de usuario `taeyoungrlwlrd`. La informacion publica disponible es minima: unicamente el identificador, el autor, la etiqueta `region:us`, un tamano de repositorio de 91,1 GB, 6 descargas, 0 likes y fechas de creacion y actualizacion (18 de septiembre de 2026). No hay model card, ni pipeline declarado, ni licencia, ni idiomas, ni documentacion tecnica asociada.
 
 Por el momento no es posible confirmar que arquitectura emplea, cuantos parametros tiene, cual es su longitud de contexto, sobre que datos se entreno ni que tareas resuelve. El nombre del repositorio sugiere, sin ninguna confirmacion oficial, un posible vinculo con el ambito de la robotica o los modelos de mundo (`cosmos3`, `openarm`, `robot`, `wam`), pero se trata de una inferencia basada exclusivamente en la cadena de texto del identificador y no en informacion verificable.
 
-La relevancia actual del repositorio es, por tanto, limitada y de naturaleza cautelar: sirve como ejemplo de publicacion de pesos sin documentacion, un escenario frecuente en HuggingFace que obliga a evaluar manualmente el contenido antes de cualquier uso. Cualquier afirmacion sobre sus capacidades seria especulativa.
+La relevancia actual del repositorio es, por tanto, limitada y de naturaleza cautelar: sirve como ejemplo de publicacion de pesos sin documentacion, un escenario frecuente en Hugging Face que obliga a evaluar manualmente el contenido antes de cualquier uso. Cualquier afirmacion sobre sus capacidades seria especulativa.
 
 ## Especificaciones tecnicas
 
@@ -100,7 +100,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni la tarea 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-openarm-wam-robot-b256-8k
+- Repositorio en Hugging Face: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-openarm-wam-robot-b256-8k
 - Paper asociado: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

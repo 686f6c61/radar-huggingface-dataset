@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Doctorian-MedCore es un modelo de lenguaje publicado por el usuario StephenRGS en HuggingFace, presentado como un ajuste fino orientado al dominio médico y construido sobre `google/gemma-4-31B-it` como modelo base, con `mistralai/Mistral-Large-4-1T-A52B` declarado como versión nueva en los metadatos. La model card es extremadamente escueta: no incluye descripción del modelo, detalles de entrenamiento, resultados de evaluación ni instrucciones de uso, por lo que la mayor parte de la información técnica debe inferirse de los metadatos y de la lista de datasets declarados.
+Doctorian-MedCore es un modelo de lenguaje publicado por el usuario StephenRGS en Hugging Face, presentado como un ajuste fino orientado al dominio médico y construido sobre `google/gemma-4-31B-it` como modelo base, con `mistralai/Mistral-Large-4-1T-A52B` declarado como versión nueva en los metadatos. La model card es extremadamente escueta: no incluye descripción del modelo, detalles de entrenamiento, resultados de evaluación ni instrucciones de uso, por lo que la mayor parte de la información técnica debe inferirse de los metadatos y de la lista de datasets declarados.
 
 El modelo se distribuye con licencia Apache 2.0 y declara soporte para once idiomas (inglés, suajili, afrikáans, francés, chino, español, coreano, latín, gaélico escocés, griego e igbo), lo que sugiere un interés por cobertura multilingüe amplia, incluyendo lenguas de bajos recursos. La lista de datasets de entrenamiento mezcla corpus médicos (informes de diagnóstico por imagen, VQA médica en turco, conversaciones médico-paciente), datos de razonamiento (GSM8K, Magpie Reasoning), ciberseguridad, documentos gubernamentales y corpus web generalistas como FineWeb-Edu.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Doctorian-MedCore | no disponible (~31B por base declarado) | no disponible | Apache 2.0 | HuggingFace, sin pesos cuantizados | Sin benchmarks ni model card sustantiva |
-| google/gemma-4-31B-it | ~31B (según nombre) | no disponible en esta ficha | Términos Gemma (no Apache 2.0) | HuggingFace, ampliamente adoptado | Modelo base oficial de Google |
-| mistralai/Mistral-Large-4-1T-A52B | 1T totales / 52B activos (según nombre) | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Referenciado como `new_version` en los metadatos |
+| Doctorian-MedCore | no disponible (~31B por base declarado) | no disponible | Apache 2.0 | Hugging Face, sin pesos cuantizados | Sin benchmarks ni model card sustantiva |
+| google/gemma-4-31B-it | ~31B (según nombre) | no disponible en esta ficha | Términos Gemma (no Apache 2.0) | Hugging Face, ampliamente adoptado | Modelo base oficial de Google |
+| mistralai/Mistral-Large-4-1T-A52B | 1T totales / 52B activos (según nombre) | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Referenciado como `new_version` en los metadatos |
 
 La comparación cuantitativa de rendimiento no es posible: no hay benchmarks publicados para Doctorian-MedCore ni datos verificados de los modelos de referencia en la información proporcionada.
 
@@ -86,6 +86,6 @@ La comparación cuantitativa de rendimiento no es posible: no hay benchmarks pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StephenRGS/Doctorian-MedCore
+- Modelo en Hugging Face: https://huggingface.co/StephenRGS/Doctorian-MedCore
 - Modelo base declarado: https://huggingface.co/google/gemma-4-31B-it
 - Versión nueva declarada: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B

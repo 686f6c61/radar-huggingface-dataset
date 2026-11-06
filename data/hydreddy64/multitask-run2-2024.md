@@ -57,7 +57,7 @@ No hay entrenamiento completado. La receta por defecto que recoge `training_args
 - Estudio comparativo de normalización: al usar InstanceNorm en lugar de las alternativas habituales en transformers, el repositorio permite montar un experimento controlado sobre el efecto de esa elección en estabilidad de gradientes y convergencia, siempre que se entrene desde cero con datos propios.
 - Reproducibilidad de recetas de experimentación: `config.json` y `training_args.json` documentan la configuración de arquitectura y los hiperparámetros por defecto (SGD, warmup lineal), lo que facilita fijar y versionar una línea base reproducible en un equipo de investigación.
 - Punto de partida para fine-tuning o entrenamiento desde cero: el checkpoint de inicialización sirve como estado inicial válido para lanzar un entrenamiento con datos propios, asumiendo que el resultado debe documentarse por separado de los valores por defecto del repositorio.
-- Docencia y formación: es un ejemplo útil para explicar la estructura de un modelo tipo Flamingo y el flujo de ficheros de un repositorio de HuggingFace (código, configuración, argumentos de entrenamiento y pesos) sin requerir hardware especializado.
+- Docencia y formación: es un ejemplo útil para explicar la estructura de un modelo tipo Flamingo y el flujo de ficheros de un repositorio de Hugging Face (código, configuración, argumentos de entrenamiento y pesos) sin requerir hardware especializado.
 - Baseline de capacidad mínima en experimentos controlados: con un coste computacional prácticamente nulo, puede actuar como referencia inferior frente a modelos entrenados en pruebas de ablación, siempre etiquetando claramente que no ha recibido entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -91,5 +91,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hydreddy64/multitask-run2-2024
+- Modelo en Hugging Face: https://huggingface.co/hydreddy64/multitask-run2-2024
 - No se han encontrado en la búsqueda web otros enlaces relevantes (artículos, repositorios, demos o documentación asociada) a este modelo. Los resultados devueltos correspondían a servicios de traducción sin relación con el modelo.

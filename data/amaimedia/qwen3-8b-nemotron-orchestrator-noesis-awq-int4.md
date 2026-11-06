@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos. Se recomienda evaluar el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/Qwen3-8B-Nemotron-Orchestrator-NOESIS-AWQ-INT4
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/Qwen3-8B-Nemotron-Orchestrator-NOESIS-AWQ-INT4
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Orchestrator-8B
 - Companion BF16: https://huggingface.co/amaimedia/Nemotron-Orchestrator-8B-Qwen3-BF16-NOESIS
 - Paper ToolOrchestra (arXiv 2511.21689): https://arxiv.org/abs/2511.21689

@@ -4,7 +4,7 @@
 
 El modelo `darius3th/uni-a2af2bcf` es un sistema multimodal de tipo *image-text-to-text* desarrollado por Darius R (darius3th), que combina comprensión visual y generación de lenguaje. Se trata de un fine-tuning del modelo base `vera6/affine-5g4yy75zuz-t6`, perteneciente a la familia Qwen 3.5 MoE, y ha sido entrenado con la técnica de optimización GRPO (Group Relative Policy Optimization). Con 34.660 millones de parámetros, su arquitectura de mezcla de expertos (MoE) permite activar solo una parte de los parámetros en cada inferencia, lo que lo hace relativamente eficiente para su tamaño.
 
-La relevancia de este modelo radica en su carácter multimodal y conversacional: puede procesar imágenes y texto simultáneamente, lo que lo habilita para tareas como descripción de imágenes, respuesta a preguntas visuales o asistentes de diálogo con entrada visual. Su licencia Apache 2.0 permite uso comercial sin restricciones de atribución, aunque el acceso al modelo está restringido en HuggingFace y requiere aceptar condiciones previas. No se dispone de información pública sobre la longitud de contexto, idiomas soportados ni cuantizaciones disponibles.
+La relevancia de este modelo radica en su carácter multimodal y conversacional: puede procesar imágenes y texto simultáneamente, lo que lo habilita para tareas como descripción de imágenes, respuesta a preguntas visuales o asistentes de diálogo con entrada visual. Su licencia Apache 2.0 permite uso comercial sin restricciones de atribución, aunque el acceso al modelo está restringido en Hugging Face y requiere aceptar condiciones previas. No se dispone de información pública sobre la longitud de contexto, idiomas soportados ni cuantizaciones disponibles.
 
 ## Especificaciones técnicas
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar las condiciones en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): requiere aceptar las condiciones en Hugging Face antes de poder descargar el modelo.
 - No se han publicado datos sobre idiomas soportados, lo que limita el uso en entornos multilingües.
 - Riesgo de alucinación inherente a los modelos generativos, especialmente en tareas multimodales donde puede generar descripciones incorrectas de imágenes.
 - La arquitectura affine y el entrenamiento con GRPO no están documentados en detalle, lo que dificulta la evaluación de su comportamiento en producción.
@@ -68,15 +68,15 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darius3th/uni-a2af2bcf
-- Perfil del autor en HuggingFace: https://huggingface.co/darius3th
+- Modelo en Hugging Face: https://huggingface.co/darius3th/uni-a2af2bcf
+- Perfil del autor en Hugging Face: https://huggingface.co/darius3th
 - Modelo base: https://huggingface.co/vera6/affine-5g4yy75zuz-t6 (no confirmado si es público)
 
 No se han encontrado papers, blogs o demos adicionales en la búsqueda web.</think>## Resumen
 
 El modelo `darius3th/uni-a2af2bcf` es un sistema multimodal de tipo *image-text-to-text* desarrollado por Darius R (darius3th), que combina comprensión de imágenes y generación de lenguaje. Se trata de un fine-tuning del modelo `vera6/affine-5g4yy75zuz-t6`, perteneciente a la familia Qwen 3.5 MoE, entrenado con la técnica de optimización GRPO (Group Relative Policy Optimization). Con 34.660 millones de parámetros y una arquitectura de mezcla de expertos (MoE), el modelo activa solo una fracción de sus parámetros por inferencia, lo que lo hace relativamente eficiente para su tamaño.
 
-Su relevancia actual reside en su naturaleza multimodal y conversacional: puede procesar imágenes y texto de forma conjunta, lo que le permite abordar tareas como descripción de imágenes, respuesta a preguntas visuales o diálogo con contexto visual. La licencia Apache 2.0 facilita su uso comercial, aunque el acceso al modelo está restringido en HuggingFace y requiere aceptar las condiciones previas. No se dispone de información pública sobre la longitud de contexto, los idiomas soportados ni las cuantizaciones disponibles.
+Su relevancia actual reside en su naturaleza multimodal y conversacional: puede procesar imágenes y texto de forma conjunta, lo que le permite abordar tareas como descripción de imágenes, respuesta a preguntas visuales o diálogo con contexto visual. La licencia Apache 2.0 facilita su uso comercial, aunque el acceso al modelo está restringido en Hugging Face y requiere aceptar las condiciones previas. No se dispone de información pública sobre la longitud de contexto, los idiomas soportados ni las cuantizaciones disponibles.
 
 ## Especificaciones técnicas
 
@@ -131,7 +131,7 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar las condiciones de uso en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): requiere aceptar las condiciones de uso en Hugging Face antes de poder descargar el modelo.
 - Idiomas no especificados: no se conoce qué idiomas soporta, lo que limita su uso en entornos multilingües.
 - Riesgo de alucinación en tareas multimodales: el modelo puede generar descripciones incorrectas de imágenes, lo que requiere supervisión en aplicaciones críticas.
 - Documentación técnica limitada: la arquitectura affine y el entrenamiento GRPO no están documentados en detalle, lo que dificulta la evaluación de su comportamiento en producción.
@@ -140,8 +140,8 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darius3th/uni-a2af2bcf
-- Perfil del autor en HuggingFace: https://huggingface.co/darius3th
+- Modelo en Hugging Face: https://huggingface.co/darius3th/uni-a2af2bcf
+- Perfil del autor en Hugging Face: https://huggingface.co/darius3th
 - Modelo base (referencia): `vera6/affine-5g4yy75zuz-t6` (no se ha confirmado su URL pública)
 
 No se han encontrado papers, blogs o demos adicionales en la búsqueda web realizada.

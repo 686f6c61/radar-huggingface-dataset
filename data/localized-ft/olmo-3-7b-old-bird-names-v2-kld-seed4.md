@@ -4,7 +4,7 @@
 
 OLMo-3-7B-old-bird-names-v2-kld-seed4 es un modelo de lenguaje finoajustado (fine-tune) sobre la base de OLMo-3-7B-Instruct, desarrollado por el usuario localized-ft. El modelo base pertenece a la familia OLMo 3 de AI2 (Allen Institute for AI), una serie de modelos abiertos de 7B y 32B parámetros entrenados sobre el dataset Dolma 3 y post-entrenados con los datasets Dolci, orientados a razonamiento de contexto largo, function calling, generación de código, seguimiento de instrucciones y conocimiento general.
 
-Este fine-tune concreto está especializado en un dominio muy específico: nombres de aves antiguas (según su nomenclatura). El entrenamiento se realizó con la librería Unsloth y HuggingFace TRL, lo que indica un ajuste eficiente con adaptadores LoRA (el número de parámetros totales del adaptador es de 528.384, aunque el modelo base completo tiene 7B). La licencia es Apache-2.0, permitiendo uso comercial sin restricciones, y el modelo se distribuye en formato safetensors compatible con Transformers y TGI.
+Este fine-tune concreto está especializado en un dominio muy específico: nombres de aves antiguas (según su nomenclatura). El entrenamiento se realizó con la librería Unsloth y Hugging Face TRL, lo que indica un ajuste eficiente con adaptadores LoRA (el número de parámetros totales del adaptador es de 528.384, aunque el modelo base completo tiene 7B). La licencia es Apache-2.0, permitiendo uso comercial sin restricciones, y el modelo se distribuye en formato safetensors compatible con Transformers y TGI.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Este fine-tune concreto está especializado en un dominio muy específico: nombr
 
 El modelo base OLMo-3-7B-Instruct es un transformer decoder-only con atención causal, entrenado en dos fases: pre-entrenamiento sobre el dataset Dolma 3 (billones de tokens) y post-entrenamiento (instrucción y preferencias) con los datasets Dolci. La arquitectura incluye innovaciones como el uso de atención de ventana deslizante para eficiencia en contexto largo y una capa de logits de escala (logit scaling) para estabilizar el entrenamiento.
 
-Este fine-tune se ha realizado con Unsloth, una librería que optimiza el entrenamiento de modelos mediante técnicas como la fusión de kernels y la cuantización durante el entrenamiento, y con TRL de HuggingFace para el ajuste por supervisión directa (SFT). El nombre del modelo (old-bird-names-v2-kld-seed4) sugiere que el dataset de entrenamiento contiene pares de nombres de aves antiguas y sus descripciones, probablemente con un enfoque de minimización de divergencia KL (kld) y una semilla fija (seed4) para reproducibilidad. No se especifica el número de tokens de entrenamiento ni el dataset exacto.
+Este fine-tune se ha realizado con Unsloth, una librería que optimiza el entrenamiento de modelos mediante técnicas como la fusión de kernels y la cuantización durante el entrenamiento, y con TRL de Hugging Face para el ajuste por supervisión directa (SFT). El nombre del modelo (old-bird-names-v2-kld-seed4) sugiere que el dataset de entrenamiento contiene pares de nombres de aves antiguas y sus descripciones, probablemente con un enfoque de minimización de divergencia KL (kld) y una semilla fija (seed4) para reproducibilidad. No se especifica el número de tokens de entrenamiento ni el dataset exacto.
 
 ## Capacidades
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks para este fine-tune concreto. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | 8K | Apache-2.0 | Abierto (HuggingFace) |
-| OLMo-3-7B-old-bird-names-v2-kld-seed4 (este) | 7B (adaptadores 535K) | 8K (asumido) | Apache-2.0 | Abierto (HuggingFace) |
+| OLMo-3-7B-Instruct (base) | 7B | 8K | Apache-2.0 | Abierto (Hugging Face) |
+| OLMo-3-7B-old-bird-names-v2-kld-seed4 (este) | 7B (adaptadores 535K) | 8K (asumido) | Apache-2.0 | Abierto (Hugging Face) |
 | Llama-3-8B-Instruct | 8B | 8K | Llama 3 Community License | Abierto con restricciones de uso |
 | Mistral-7B-Instruct | 7B | 32K | Apache-2.0 | Abierto |
 
@@ -76,7 +76,7 @@ El modelo se diferencia de los demás por su especialización en un dominio conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed4
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed4
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Paper de OLMo 3: https://arxiv.org/abs/2512.13961
 - Página de OLMo 3 en Ollama: https://ollama.com/library/olmo-3:latest

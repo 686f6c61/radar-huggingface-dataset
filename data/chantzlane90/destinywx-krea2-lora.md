@@ -2,7 +2,7 @@
 
 ## Resumen
 
-destinywx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en HuggingFace para el modelo de generacion de imagenes Krea 2. No es un modelo de lenguaje: se trata de un conjunto de pesos de bajo rango que se acoplan al modelo base para ensenarle un concepto concreto, en este caso un personaje ficticio para adultos (Destiny Williams, declarado como 21+) activado mediante la palabra clave `destinywx`.
+destinywx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en Hugging Face para el modelo de generacion de imagenes Krea 2. No es un modelo de lenguaje: se trata de un conjunto de pesos de bajo rango que se acoplan al modelo base para ensenarle un concepto concreto, en este caso un personaje ficticio para adultos (Destiny Williams, declarado como 21+) activado mediante la palabra clave `destinywx`.
 
 El adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos con rango 32, y sus claves se remapearon al formato `diffusion_model.*` que emplea ComfyUI, con el objetivo de integrarlo en el ecosistema de Sogni. El repositorio ocupa 0,2 GB y, en el momento de la consulta, acumula 0 descargas y 0 valoraciones, por lo que se trata de una publicacion reciente y sin validacion comunitaria.
 
@@ -76,7 +76,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 | Modelo base | Krea 2 | Krea 2 u otro | variable |
 | Licencia | other | no disponible | variable |
 | Rendimiento medido | no disponible | no disponible | no disponible |
-| Disponibilidad | Publico en HuggingFace | no disponible | variable |
+| Disponibilidad | Publico en Hugging Face | no disponible | variable |
 
 ## Limitaciones y advertencias
 
@@ -92,6 +92,6 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chantzlane90/destinywx-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/chantzlane90/destinywx-krea2-lora
 - Herramienta de entrenamiento referenciada en la model card: fal-ai/krea-2-trainer (identificador citado por el autor; no se ha localizado URL verificada en la busqueda)
 - Resultados de busqueda web: no aportaron enlaces relevantes. Las consultas devolvieron unicamente paginas genericas de Google (Trends, Chrome, Traductor, Videos y Books), sin relacion con el modelo.

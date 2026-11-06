@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elroy-350m-chat es un modelo de lenguaje de 361 millones de parámetros desarrollado por Strife Technologies (usuario strifero en HuggingFace) como proyecto didáctico completamente documentado. Se trata de un decodificador de estilo Llama entrenado desde cero, sin partir de pesos preentrenados, sobre aproximadamente 20.000 millones de tokens de Python educativo e inglés. La variante "chat" que nos ocupa está ajustada con instrucciones de programación mediante la plantilla `<|system|>...<|end|><|user|>...<|end|><|assistant|>`, y se distribuye junto a `elroy_min.py`, un único archivo que contiene el modelo, el tokenizador y un sampler, sin dependencia de `transformers`.
+Elroy-350m-chat es un modelo de lenguaje de 361 millones de parámetros desarrollado por Strife Technologies (usuario strifero en Hugging Face) como proyecto didáctico completamente documentado. Se trata de un decodificador de estilo Llama entrenado desde cero, sin partir de pesos preentrenados, sobre aproximadamente 20.000 millones de tokens de Python educativo e inglés. La variante "chat" que nos ocupa está ajustada con instrucciones de programación mediante la plantilla `<|system|>...<|end|><|user|>...<|end|><|assistant|>`, y se distribuye junto a `elroy_min.py`, un único archivo que contiene el modelo, el tokenizador y un sampler, sin dependencia de `transformers`.
 
 Su relevancia no está en el rendimiento bruto, sino en el carácter reproducible y pedagógico del artefacto: cada línea del tokenizador, del bucle de entrenamiento y del ajuste fino está publicada en el repositorio de GitHub del autor, con un capítulo explicativo por componente. Esto lo convierte en una referencia útil para investigadores y docentes que quieran entender el ciclo completo de construcción de un LLM pequeño, desde la tokenización hasta la evaluación con HumanEval.
 
@@ -98,6 +98,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/strifero/elroy-350m-chat
+- Modelo en Hugging Face: https://huggingface.co/strifero/elroy-350m-chat
 - Repositorio de código y documentación del proyecto: https://github.com/strifero/elroy
 - Papers, blogs o demos adicionales: no disponible en la información proporcionada (los resultados de búsqueda web obtenidos corresponden a modelos de Google DeepMind y no guardan relación con este modelo).

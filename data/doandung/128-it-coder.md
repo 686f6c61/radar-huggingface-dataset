@@ -17,7 +17,7 @@ Conviene subrayar que, en el momento de redactar esta ficha, el repositorio no e
 | Parametros activos | no disponible (tras la poda quedan 128 de 384 expertos enrutados; el numero de expertos activos por token no se especifica) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 (`float8_e4m3fn` con escalas `float8_e8m0fnu`) en atencion y shared experts; MXFP4 (int8 empaquetado `e2m1fn_x2` con escalas `float8_e8m0fnu`) en los 128 expertos enrutados |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; la model card orienta la seleccion de expertos a ingles tecnico y vietnamita |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; la model card orienta la seleccion de expertos a ingles tecnico y vietnamita |
 | Licencia | MIT |
 | Formato de pesos | safetensors (64 shards), mas calibracion en `.pt`, configuracion `.json` y codigo de inferencia `.py` |
 
@@ -75,7 +75,7 @@ La comparacion relevante es contra el modelo base: la variante reduce el banco d
 ## Limitaciones y advertencias
 
 - El repositorio parece una instantanea intermedia: 90,0 GB frente a los 805,32 GB del modelo base y 926.679.040 parametros en safetensors, muy por debajo de lo esperable en un MoE de ese tamano. No debe asumirse que los pesos esten completos ni que el modelo sea directamente ejecutable.
-- Cero descargas y cero valoraciones en HuggingFace: no existe validacion externa de que el proceso de poda se haya completado o de que el modelo resultante funcione.
+- Cero descargas y cero valoraciones en Hugging Face: no existe validacion externa de que el proceso de poda se haya completado o de que el modelo resultante funcione.
 - Ausencia total de benchmarks: no hay evidencia publicada de retencion de capacidad en codigo, matematicas o razonamiento tras el recorte de 384 a 128 expertos.
 - La poda de expertos puede degradar capacidades generales no representadas en el conjunto de calibracion IT; el sesgo hacia codigo y vietnamita puede reducir el rendimiento en otros dominios e idiomas.
 - La reasignacion de la tabla `ffn.gate.tid2eid` en las capas hash (0 a 2) mediante similitud coseno introduce una aproximacion que puede alterar la distribucion de enrutamiento original.
@@ -86,7 +86,7 @@ La comparacion relevante es contra el modelo base: la variante reduce el banco d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/doandung/128-IT-Coder
+- Repositorio Hugging Face: https://huggingface.co/doandung/128-IT-Coder
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - Cuaderno de ejecucion de la cirugia: https://huggingface.co/doandung/128-IT-Coder/blob/main/colab_runner.ipynb
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dharmikllm/dharmik-qwen-finetuned es un modelo de generacion de texto de tipo conversacional publicado en HuggingFace por el usuario Dharmikllm. Se trata de un ajuste fino (fine-tuning) supervisado, segun indican sus etiquetas, realizado sobre un modelo base de la familia Qwen2 mediante la libreria TRL. El repositorio no incluye model card sustantiva: la tarjeta publicada es la plantilla autogenerada por HuggingFace con todos los campos marcados como "[More Information Needed]", por lo que la mayor parte de los datos de entrenamiento, idiomas, licencia y evaluacion no estan disponibles.
+Dharmikllm/dharmik-qwen-finetuned es un modelo de generacion de texto de tipo conversacional publicado en Hugging Face por el usuario Dharmikllm. Se trata de un ajuste fino (fine-tuning) supervisado, segun indican sus etiquetas, realizado sobre un modelo base de la familia Qwen2 mediante la libreria TRL. El repositorio no incluye model card sustantiva: la tarjeta publicada es la plantilla autogenerada por Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que la mayor parte de los datos de entrenamiento, idiomas, licencia y evaluacion no estan disponibles.
 
 El dato mas fiable del repositorio es el recuento de parametros obtenido de los ficheros safetensors: 496.195.456 parametros (aproximadamente 0,5 mil millones). Este orden de magnitud lo situa en la gama de modelos pequenos de la familia Qwen2, disenados para ejecucion en hardware modesto y para tareas de generacion de texto con latencia baja. El tamano del repositorio, 0,7 GB, es coherente con un modelo denso de ese tamano almacenado en precision reducida.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: en 4 bits, en torno a 0,3-0,5 GB solo para los pesos; en fp16, aproximadamente 1 GB. Hay que sumar la cache KV, cuyo tamano depende de la longitud de contexto efectiva y del numero de secuencias concurrentes.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Nvidia T4, GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090 o superiores son mas que suficientes. Tambien es viable la ejecucion en CPU.
 - Cabe en GPU de consumo: si, holgadamente. Incluso tarjetas integradas o GPUs de gama de entrada con 4 GB pueden servirlo en 4 bits.
-- Opciones de despliegue: transformers como via principal; text-generation-inference (TGI) y los endpoints de HuggingFace estan declarados en las etiquetas como compatibles. vLLM, llama.cpp u Ollama no estan confirmados para este repositorio: llama.cpp y Ollama requeririan convertir los pesos a GGUF, conversion que el autor no ha publicado.
+- Opciones de despliegue: transformers como via principal; text-generation-inference (TGI) y los endpoints de Hugging Face estan declarados en las etiquetas como compatibles. vLLM, llama.cpp u Ollama no estan confirmados para este repositorio: llama.cpp y Ollama requeririan convertir los pesos a GGUF, conversion que el autor no ha publicado.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas. Como referencia puramente orientativa, un modelo denso de ~0,5B en 4 bits suele generar decenas de tokens por segundo en GPU de consumo y bastantes menos en CPU, pero estas cifras no han sido medidas para este modelo concreto.
 - Almacenamiento: el repositorio ocupa 0,7 GB, por lo que el despliegue requiere muy poco espacio en disco.
 
@@ -75,11 +75,11 @@ Los datos de la columna de este modelo son los unicos confirmados para este repo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Dharmikllm/dharmik-qwen-finetuned | 496.195.456 | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-0.5B-Instruct | ~0,49B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2-0.5B (base) | ~0,49B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| SmolLM2-360M-Instruct | ~362M | 8.192 tokens | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B-Chat-v1.0 | ~1,1B | 2.048 tokens | Apache 2.0 | HuggingFace |
+| Dharmikllm/dharmik-qwen-finetuned | 496.195.456 | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-0.5B-Instruct | ~0,49B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2-0.5B (base) | ~0,49B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| SmolLM2-360M-Instruct | ~362M | 8.192 tokens | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat-v1.0 | ~1,1B | 2.048 tokens | Apache 2.0 | Hugging Face |
 
 La diferencia practica mas relevante frente a estas alternativas no es de rendimiento, sino de garantias: los modelos citados publican licencia, documentacion y evaluaciones, mientras que dharmik-qwen-finetuned no ofrece ninguna de las tres cosas. Para casi cualquier uso en produccion, un Qwen2.5-0.5B-Instruct oficial o un SmolLM2-360M-Instruct parten con menos incertidumbre legal y tecnica.
 
@@ -98,10 +98,10 @@ La diferencia practica mas relevante frente a estas alternativas no es de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dharmikllm/dharmik-qwen-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Dharmikllm/dharmik-qwen-finetuned
 - Repositorio oficial de Qwen, script de fine-tuning: https://github.com/QwenLM/Qwen/blob/main/finetune.py
 - Guia de fine-tuning de Qwen (DeepWiki): https://deepwiki.com/QwenLM/Qwen/4-fine-tuning-guide
-- Perfil de la organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Perfil de la organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Qwen3 Technical Report (arXiv): https://arxiv.org/html/2505.09388v1
 - Ejemplo de modelo de la comunidad ajustado con TRL: https://huggingface.co/durgumnator/qwen_finetuned
 - Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning: https://arxiv.org/abs/1910.09700

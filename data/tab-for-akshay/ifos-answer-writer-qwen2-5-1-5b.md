@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ifos-answer-writer-qwen2.5-1.5b | 1,54 B | no disponible | Formato de respuestas IFoS/CSE | qwen-research | HuggingFace |
-| ifos-answer-writer-qwen2.5-3b | no disponible (base 3B) | no disponible | Mismo enfoque, mayor tamano | no disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct (base) | 1,54 B | no disponible | Modelo generalista conversacional | qwen-research | HuggingFace |
+| ifos-answer-writer-qwen2.5-1.5b | 1,54 B | no disponible | Formato de respuestas IFoS/CSE | qwen-research | Hugging Face |
+| ifos-answer-writer-qwen2.5-3b | no disponible (base 3B) | no disponible | Mismo enfoque, mayor tamano | no disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1,54 B | no disponible | Modelo generalista conversacional | qwen-research | Hugging Face |
 
 El modelo se posiciona como la variante ligera de la familia de ajustes del mismo autor, pensada para equipos con menos recursos que la version de 3B. Frente al Qwen2.5-1.5B-Instruct original, pierde generalidad a cambio de especializarse en un formato concreto.
 
@@ -81,6 +81,6 @@ El modelo se posiciona como la variante ligera de la familia de ajustes del mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tab-for-akshay/ifos-answer-writer-qwen2.5-1.5b
+- Modelo en Hugging Face: https://huggingface.co/tab-for-akshay/ifos-answer-writer-qwen2.5-1.5b
 - Modelo hermano de 3B: https://huggingface.co/tab-for-akshay/ifos-answer-writer-qwen2.5-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

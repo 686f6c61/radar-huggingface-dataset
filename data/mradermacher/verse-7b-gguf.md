@@ -22,13 +22,13 @@ Su relevancia actual es limitada y debe evaluarse con cautela: el repositorio re
 | Formato de pesos | GGUF (quantized_by: mradermacher; convert_type: hf; output_tensor_quantised: 1) |
 | Modelo base | Aeronix-zzz/VERSE-7B |
 | Tamano del repositorio | 70,4 GB |
-| Fecha de publicacion | 22 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 La informacion disponible no documenta la arquitectura interna del modelo. Las etiquetas del repositorio indican qwen2.5-vl, vision-language, spatial-reasoning, self-evolve y grpo, lo que apunta a un transformer multimodal con vision encoder y un proceso de ajuste posterior al preentrenamiento basado en aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) y algun mecanismo de auto-evolucion de datos o trayectorias. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de SFT, RLHF o DPO adicionales.
 
-En el plano de la conversion, el repositorio es una cuantizacion estatica (quantize_version: 2, output_tensor_quantised: 1) generada por mradermacher, con el modelo completo convertido desde el formato HuggingFace a GGUF. El autor indica que en el momento de la publicacion no estaban disponibles las cuantizaciones ponderadas ni con matriz de importancia (imatrix). El repositorio incluye ficheros mmproj (proyector multimodal) en Q8_0 y f16, imprescindibles para que las capacidades de vision funcionen en llama.cpp.
+En el plano de la conversion, el repositorio es una cuantizacion estatica (quantize_version: 2, output_tensor_quantised: 1) generada por mradermacher, con el modelo completo convertido desde el formato Hugging Face a GGUF. El autor indica que en el momento de la publicacion no estaban disponibles las cuantizaciones ponderadas ni con matriz de importancia (imatrix). El repositorio incluye ficheros mmproj (proyector multimodal) en Q8_0 y f16, imprescindibles para que las capacidades de vision funcionen en llama.cpp.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VERSE-7B-GGUF (este) | ~7,6 B | no disponible | Apache-2.0 | GGUF en HuggingFace, 0 descargas | Sin benchmarks publicados; fecha de publicacion anomala |
+| VERSE-7B-GGUF (este) | ~7,6 B | no disponible | Apache-2.0 | GGUF en Hugging Face, 0 descargas | Sin benchmarks publicados; fecha de publicacion anomala |
 | Qwen2.5-VL-7B-Instruct | no verificado en la informacion disponible | no verificado | no verificado | safetensors y despliegues habituales | Familia a la que apuntan las etiquetas del modelo; referencia natural de comparacion |
 | InternVL2.5-8B | no verificado en la informacion disponible | no verificado | no verificado | safetensors | Alternativa de VLM de tamano similar |
 | MiniCPM-V 2.6 | no verificado en la informacion disponible | no verificado | no verificado | safetensors, GGUF de terceros | Alternativa de VLM compacto orientada a movil y edge |

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-150` es un checkpoint de investigación publicado en HuggingFace por el usuario yuxuanw8. Por el identificador y las etiquetas del repositorio (`qwen2`, `transformers`), se trata de un modelo denso de aproximadamente 3.085.938.688 parámetros (unos 3,09 mil millones) construido sobre la familia Qwen y sometido a un proceso de ajuste denominado RLVR (Reinforcement Learning with Verifiable Rewards) sobre HotpotQA, una tarea de question answering multi-salto. El sufijo "checkpoint-150" sugiere que se trata de un estado intermedio de entrenamiento, no de una versión final.
+El modelo `yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-150` es un checkpoint de investigación publicado en Hugging Face por el usuario yuxuanw8. Por el identificador y las etiquetas del repositorio (`qwen2`, `transformers`), se trata de un modelo denso de aproximadamente 3.085.938.688 parámetros (unos 3,09 mil millones) construido sobre la familia Qwen y sometido a un proceso de ajuste denominado RLVR (Reinforcement Learning with Verifiable Rewards) sobre HotpotQA, una tarea de question answering multi-salto. El sufijo "checkpoint-150" sugiere que se trata de un estado intermedio de entrenamiento, no de una versión final.
 
-El problema que aborda es el razonamiento multi-salto sobre documentación: responder preguntas que requieren combinar evidencia de varios pasajes. Es relevante como material de estudio para quienes investigan técnicas de RL con recompensas verificables aplicadas a modelos pequeños, pero no como modelo listo para producción: la model card es la plantilla automática de HuggingFace y no contiene información sobre datos de entrenamiento, hiperparámetros, evaluación ni licencia.
+El problema que aborda es el razonamiento multi-salto sobre documentación: responder preguntas que requieren combinar evidencia de varios pasajes. Es relevante como material de estudio para quienes investigan técnicas de RL con recompensas verificables aplicadas a modelos pequeños, pero no como modelo listo para producción: la model card es la plantilla automática de Hugging Face y no contiene información sobre datos de entrenamiento, hiperparámetros, evaluación ni licencia.
 
 El repositorio acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, y no se ha publicado ningún resultado de benchmarks asociado. Todo lo que no figura en la información disponible se marca explícitamente como "no disponible" a lo largo de la ficha.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, el identificador del modelo indica un proceso de RLVR
 - Generación de texto conversacional, según el pipeline declarado (`text-generation`, etiqueta `conversational`).
 - Question answering multi-salto, presumiblemente entrenado sobre HotpotQA, aunque no hay confirmación en la model card.
 - Razonamiento encadenado orientado a preguntas que requieren composición de evidencia de varias fuentes (inferido del nombre del repositorio, no verificado).
-- Compatibilidad con `text-generation-inference` y con endpoints compatibles (`endpoints_compatible`), lo que facilita su despliegue mediante la API de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con endpoints compatibles (`endpoints_compatible`), lo que facilita su despliegue mediante la API de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Capacidades de agente o multi-step reasoning más allá del QA multi-salto: no disponible.
 - Capacidades multilingües: no disponible (no se declara ningún idioma).
@@ -61,7 +61,7 @@ En todos los casos anteriores hay que tener en cuenta que el modelo no declara l
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-La model card es la plantilla automática de HuggingFace y la sección de evaluación figura como `[More Information Needed]`. Los resultados de búsqueda web proporcionados no contienen ningún dato relacionado con este modelo (corresponden a consultas sin relación: venta de objetos en Steam, gráficas integradas Intel, errores de impresoras Canon y un foro de automoción).
+La model card es la plantilla automática de Hugging Face y la sección de evaluación figura como `[More Information Needed]`. Los resultados de búsqueda web proporcionados no contienen ningún dato relacionado con este modelo (corresponden a consultas sin relación: venta de objetos en Steam, gráficas integradas Intel, errores de impresoras Canon y un foro de automoción).
 
 ## Requisitos de hardware
 
@@ -88,7 +88,7 @@ La diferencia fundamental no está en el tamaño, sino en el soporte: los tres m
 ## Limitaciones y advertencias
 
 - Licencia no especificada: al no declararse licencia, no hay autorización explícita de uso comercial. Debe tratarse como material sin licencia clara hasta que el autor se pronuncie.
-- Model card vacía: toda la documentación es la plantilla automática de HuggingFace; no hay información sobre datos de entrenamiento, hiperparámetros, preprocesado ni evaluación.
+- Model card vacía: toda la documentación es la plantilla automática de Hugging Face; no hay información sobre datos de entrenamiento, hiperparámetros, preprocesado ni evaluación.
 - Checkpoint intermedio: el sufijo "checkpoint-150" indica un estado no final del entrenamiento, por lo que la calidad y la coherencia de las respuestas pueden ser inferiores a las de una versión convergida.
 - Riesgo de alucinación: en tareas de QA multi-salto, un modelo de 3B sin evaluación publicada tiene una probabilidad alta de fabricar hechos o de responder sin respaldo documental. No se ha medido su tasa de alucinación.
 - Sesgos desconocidos: no se documenta la composición del dataset de entrenamiento, por lo que no se pueden caracterizar sesgos de género, idioma, cultura o dominio.
@@ -100,7 +100,7 @@ La diferencia fundamental no está en el tamaño, sino en el soporte: los tres m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-150
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-150
 - Paper citado en la plantilla de la model card (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - Dataset HotpotQA (referencia del dominio de entrenamiento, no enlazado por el autor): no disponible en la información proporcionada

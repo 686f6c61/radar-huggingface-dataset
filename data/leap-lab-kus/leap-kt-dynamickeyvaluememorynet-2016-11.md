@@ -71,5 +71,5 @@ No se proporcionan datos comparativos con otras implementaciones de DKVMN o mode
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/LEAP-LAB-KUS/leap-kt-dynamickeyvaluememorynet-2016-11)
+- [Modelo en Hugging Face](https://huggingface.co/LEAP-LAB-KUS/leap-kt-dynamickeyvaluememorynet-2016-11)
 - [Repositorio del toolkit leap-kt](https://github.com/LEAP-LAB-KUS/leap-kt-toolkit)

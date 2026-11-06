@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PokeJade77/Rio es un repositorio de modelo publicado en HuggingFace por el usuario PokeJade77 el 27 de septiembre de 2026 (fecha que figura en los metadatos del repositorio). La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros ni longitud de contexto. El repositorio no tiene descargas registradas y cuenta con un unico "like".
+PokeJade77/Rio es un repositorio de modelo publicado en Hugging Face por el usuario PokeJade77 el 27 de septiembre de 2026 (fecha que figura en los metadatos del repositorio). La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros ni longitud de contexto. El repositorio no tiene descargas registradas y cuenta con un unico "like".
 
 No es posible determinar que problema resuelve el modelo, sobre que datos se entreno ni que capacidades ofrece. Los metadatos no incluyen pipeline declarado ni lista de idiomas soportados, y la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo (los enlaces recuperados corresponden a contenidos no relacionados en Facebook Marketplace y similares).
 
@@ -55,5 +55,5 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PokeJade77/Rio
+- Repositorio en Hugging Face: https://huggingface.co/PokeJade77/Rio
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos no guardan relacion con el modelo y se han descartado.

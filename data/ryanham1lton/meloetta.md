@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meloetta es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo de licencia, sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni datos de rendimiento. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial, pero no permite inferir con fiabilidad la arquitectura ni el numero de parametros.
+Meloetta es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo de licencia, sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni datos de rendimiento. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial, pero no permite inferir con fiabilidad la arquitectura ni el numero de parametros.
 
 No se ha publicado informacion sobre el pipeline, los idiomas soportados, el contexto maximo ni los formatos de pesos. El modelo no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -40,7 +40,7 @@ No hay datos sobre el corpus de entrenamiento: ni volumen de tokens, ni composic
 - Evaluacion experimental en laboratorio: dado que no hay documentacion de capacidades, el unico uso defendible hoy es la inspeccion de los pesos para determinar arquitectura y tamano reales antes de plantear cualquier aplicacion.
 - Pruebas de inference local: con un repositorio de ~0,1 GB, es plausible cargar los pesos en una maquina de desarrollo para comprobar si el modelo genera texto coherente, pero sin garantias de calidad.
 - Fine-tuning exploratorio: la licencia CC-BY-4.0 permite adaptaciones, por lo que podria servir como base para experimentos academicos una vez verificada su naturaleza.
-- Docencia y formacion: util como ejemplo de publicacion minima en HuggingFace para ilustrar buenas practicas de model cards (o su ausencia).
+- Docencia y formacion: util como ejemplo de publicacion minima en Hugging Face para ilustrar buenas practicas de model cards (o su ausencia).
 - Investigacion sobre procedencia de modelos: permite estudiar como se propagan modelos sin documentacion en el ecosistema open source.
 - No se recomienda ningun caso de uso en produccion (atencion al cliente, generacion de codigo, analisis documental) hasta que exista una evaluacion independiente de sus capacidades.
 
@@ -72,4 +72,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Meloetta
+- Hugging Face: https://huggingface.co/Ryanham1lton/Meloetta

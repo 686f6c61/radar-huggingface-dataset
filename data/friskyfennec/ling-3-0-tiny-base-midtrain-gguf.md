@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una conversión al formato GGUF del modelo identificado en su nombre como Ling-3.0-tiny-base en una fase intermedia de entrenamiento (midtrain). Lo publica el usuario FriskyFennec en HuggingFace bajo licencia MIT, sin pipeline declarado, sin idiomas declarados y sin model card más allá del bloque de licencia. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe validación alguna por parte de la comunidad.
+Este repositorio contiene una conversión al formato GGUF del modelo identificado en su nombre como Ling-3.0-tiny-base en una fase intermedia de entrenamiento (midtrain). Lo publica el usuario FriskyFennec en Hugging Face bajo licencia MIT, sin pipeline declarado, sin idiomas declarados y sin model card más allá del bloque de licencia. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe validación alguna por parte de la comunidad.
 
 La información disponible es mínima: no se documentan arquitectura, número de parámetros, longitud de contexto, composición del dataset de entrenamiento ni resultados de evaluación. Todo lo que puede afirmarse con certeza es el formato de pesos (GGUF) y la licencia (MIT). Cualquier otra característica (tamaño, familia arquitectónica, idiomas, capacidades) queda sin confirmar en la información proporcionada.
 
@@ -79,7 +79,7 @@ No disponible. La información proporcionada no permite identificar modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FriskyFennec/Ling-3.0-tiny-base-midtrain-GGUF
+- Hugging Face: https://huggingface.co/FriskyFennec/Ling-3.0-tiny-base-midtrain-GGUF
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

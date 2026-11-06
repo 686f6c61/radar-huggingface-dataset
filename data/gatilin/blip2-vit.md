@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gatilin/BLIP2-ViT` es una publicacion alojada en HuggingFace bajo el identificador del usuario `gatilin`. El nombre sugiere la familia de modelos BLIP-2 (arquitectura vision-lenguaje que combina un codificador visual tipo ViT con un modelo de lenguaje congelado y un modulo de consulta ligero), pero esta suposicion no puede confirmarse con la informacion disponible: el repositorio no incluye model card descriptiva, no declara pipeline de inferencia y no especifica parametros, contexto ni idiomas.
+El repositorio `gatilin/BLIP2-ViT` es una publicacion alojada en Hugging Face bajo el identificador del usuario `gatilin`. El nombre sugiere la familia de modelos BLIP-2 (arquitectura vision-lenguaje que combina un codificador visual tipo ViT con un modelo de lenguaje congelado y un modulo de consulta ligero), pero esta suposicion no puede confirmarse con la informacion disponible: el repositorio no incluye model card descriptiva, no declara pipeline de inferencia y no especifica parametros, contexto ni idiomas.
 
 La unica informacion verificable del repositorio es su licencia MIT, su etiqueta de region `us`, y las metricas de uso (0 descargas y 0 "likes"). La fecha de creacion y de ultima actualizacion registrada es la misma (2026-09-21T14:24:18.000Z), lo que indica que no ha habido modificaciones posteriores ni, aparentemente, actividad por parte de la comunidad.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha no puede certificar ninguna capacidad tecnica concreta del
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Etiquetas del repositorio | `license:mit`, `region:us` |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-21T14:24:18.000Z |
@@ -93,6 +93,6 @@ Cualquier comparacion cuantitativa (MMLU, VQAv2, COCO Caption, etc.) exigiria pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gatilin/BLIP2-ViT
+- Repositorio en Hugging Face: https://huggingface.co/gatilin/BLIP2-ViT
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante relacionado con este modelo. Las URL devueltas por la busqueda corresponden a portales educativos franceses (`www.ient.fr`, `mfrsegre.fr`, `elsassnet.fr`, `mfr-stetienne.fr`, `agita.fr`), sin relacion alguna con el repositorio.
 - Paper de referencia de la familia BLIP-2 (contexto general, no vinculado a este repositorio): no disponible en la informacion proporcionada.

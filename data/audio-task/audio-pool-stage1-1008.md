@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Audio-pool-stage1-1008 es un repositorio de pesos publicado en HuggingFace por el usuario u organizacion "Audio-Task". Por el identificador se deduce que forma parte de una familia de modelos organizados por etapas de entrenamiento (la etiqueta "stage1") y con tematica de audio, si bien no existe documentacion publica que lo confirme. El repositorio no incluye model card funcional: el unico contenido es la declaracion de licencia Apache 2.0, sin descripcion de arquitectura, datos de entrenamiento ni capacidades.
+Audio-pool-stage1-1008 es un repositorio de pesos publicado en Hugging Face por el usuario u organizacion "Audio-Task". Por el identificador se deduce que forma parte de una familia de modelos organizados por etapas de entrenamiento (la etiqueta "stage1") y con tematica de audio, si bien no existe documentacion publica que lo confirme. El repositorio no incluye model card funcional: el unico contenido es la declaracion de licencia Apache 2.0, sin descripcion de arquitectura, datos de entrenamiento ni capacidades.
 
 El repositorio ocupa 51,1 GB y contiene pesos en formato safetensors, lo que situa el modelo en el rango de las decenas de miles de millones de parametros en precision completa o media, aunque no es posible determinar el numero exacto sin inspeccionar los ficheros. No registra descargas ni "likes" y fue creado y actualizado el mismo dia (8 de octubre de 2026), lo que sugiere una publicacion reciente y sin difusion.
 
@@ -77,6 +77,6 @@ No disponible. La ausencia de datos sobre arquitectura, tamano efectivo, context
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Audio-Task/Audio-pool-stage1-1008
+- Repositorio en Hugging Face: https://huggingface.co/Audio-Task/Audio-pool-stage1-1008
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda obtenidos corresponden a sitios comerciales de audio sin relacion con el modelo (audiofanzine.com, audio.com, son-video.com, artisteaudio.com, audiophonics.fr) y no se incluyen por no ser relevantes.

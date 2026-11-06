@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kratika-2610/fraud-detector es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado en HuggingFace por el usuario Kratika-2610. Segun la model card, el entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL, sobre la base de un transformer decoder-only de 1.500 millones de parametros. El repositorio no documenta el dataset utilizado, el numero de pasos, la composicion de los datos ni ningun proceso de alineacion posterior (RLHF o DPO).
+Kratika-2610/fraud-detector es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado en Hugging Face por el usuario Kratika-2610. Segun la model card, el entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL, sobre la base de un transformer decoder-only de 1.500 millones de parametros. El repositorio no documenta el dataset utilizado, el numero de pasos, la composicion de los datos ni ningun proceso de alineacion posterior (RLHF o DPO).
 
 El nombre del repositorio sugiere un proposito de deteccion de fraude, pero la informacion publicada no confirma que se haya entrenado con datos de transacciones, reclamaciones o alertas financieras. De hecho, el ejemplo de uso de la propia model card plantea una pregunta generica sobre viajes en el tiempo, lo que apunta a una plantilla autogenerada por `trl` sin personalizar. El repositorio declarado ocupa 0,0 GB y no se han publicado resultados de evaluacion.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada: se trata de un experimento con 0 descargas y 0
 | Metodo de entrenamiento | SFT con TRL 1.13.0 |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 20 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 20 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ Estimaciones basadas en el tamano declarado del modelo base (1.500 millones de p
 - Cache KV estimada: con GQA (2 cabezas KV de 128 dimensiones en 28 capas), unos 28 KB por token en FP16; una secuencia de 32.768 tokens consumiria cerca de 0,9 GB adicionales.
 - GPU recomendadas: cualquier GPU moderna con 8 GB o mas (RTX 3060, RTX 4060, RTX 4070, RTX 4090) para FP16 o INT8; A100, H100 o L40S solo tienen sentido para servir muchas peticiones concurrentes, no por requisito de memoria.
 - Ejecucion en CPU: viable con llama.cpp u Ollama en cuantizacion de 4 bits, con latencias notables pero funcionales para lotes pequenos.
-- Opciones de despliegue: transformers con `pipeline` (el metodo documentado en la model card), vLLM o TGI para servicio con batching continuo, llama.cpp/Ollama/LM Studio para entornos locales, y endpoints compatibles con la API de HuggingFace (el repositorio incluye el tag `endpoints_compatible`).
+- Opciones de despliegue: transformers con `pipeline` (el metodo documentado en la model card), vLLM o TGI para servicio con batching continuo, llama.cpp/Ollama/LM Studio para entornos locales, y endpoints compatibles con la API de Hugging Face (el repositorio incluye el tag `endpoints_compatible`).
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este repositorio.
 
 ## Comparativa con modelos similares

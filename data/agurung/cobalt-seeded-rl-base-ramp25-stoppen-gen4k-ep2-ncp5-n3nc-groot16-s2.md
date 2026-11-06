@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agurung/cobalt-seeded-rl-base-... (este) | 3,97B | no disponible | Transformer denso + RL GRPO para codigo | no disponible | HuggingFace (repo de investigacion) |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | 262.144 tokens (segun base) | Transformer denso, instrucciones generales | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-Coder-3B-Instruct | ~3,09B | 32.768 tokens | Transformer denso, codigo | Apache 2.0 | HuggingFace |
+| agurung/cobalt-seeded-rl-base-... (este) | 3,97B | no disponible | Transformer denso + RL GRPO para codigo | no disponible | Hugging Face (repo de investigacion) |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | 262.144 tokens (segun base) | Transformer denso, instrucciones generales | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-Coder-3B-Instruct | ~3,09B | 32.768 tokens | Transformer denso, codigo | Apache 2.0 | Hugging Face |
 
 La comparativa cuantitativa de rendimiento no es posible porque este checkpoint no publica benchmarks. Frente a la base Qwen3-4B-Instruct-2507, la diferencia es el ajuste por RL con recompensa de correccion de codigo; frente a Qwen2.5-Coder-3B-Instruct, se trata de un modelo de investigacion sin licencia declarada ni validacion publica, por lo que no es una alternativa directa de produccion.
 
@@ -85,7 +85,7 @@ La comparativa cuantitativa de rendimiento no es posible porque este checkpoint 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-groot16-s2
+- Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-groot16-s2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Weights & Biases: proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5-n3nc-groot16-s2` (enlace directo no disponible)
 - Otros enlaces (papers, blogs, repos, demos): no disponible

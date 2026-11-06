@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_605145282_beit_small` es una implementación a pequeña escala de la arquitectura BEiT (BERT Pre-Training of Image Transformers), orientada a tareas de clasificación de imágenes. Desarrollado por el usuario de HuggingFace `bintangpsl`, este modelo forma parte de un experimento de investigación que combina la arquitectura BEiT con una serie de opciones de diseño particulares: atención dispersa (sparse attention), fusión mediante concat-MLP, activación Mish, normalización GroupNorm e inicialización Xavier.
+El modelo `model_605145282_beit_small` es una implementación a pequeña escala de la arquitectura BEiT (BERT Pre-Training of Image Transformers), orientada a tareas de clasificación de imágenes. Desarrollado por el usuario de Hugging Face `bintangpsl`, este modelo forma parte de un experimento de investigación que combina la arquitectura BEiT con una serie de opciones de diseño particulares: atención dispersa (sparse attention), fusión mediante concat-MLP, activación Mish, normalización GroupNorm e inicialización Xavier.
 
 La relevancia de este modelo reside en su carácter experimental: explora configuraciones alternativas dentro del paradigma BEiT, que fue el primero en demostrar que el preentrenamiento autosupervisado de Vision Transformers (ViTs) puede superar al preentrenamiento supervisado. Al tratarse de una variante "small" con atención dispersa, el modelo busca un equilibrio entre eficiencia computacional y capacidad de representación, aunque no se dispone de información pública sobre su rendimiento real en benchmarks.
 
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: no disponible, pero al ser una variante "small" de BEiT, se estima que podria caber en GPUs consumer de 8-12 GB VRAM en precision FP16.
 - GPU recomendadas: no disponible oficialmente; probablemente compatible con RTX 3060, RTX 4060 o superiores.
 - Despliegue en consumer GPU: probablemente si, dado el tamano reducido, aunque no hay confirmacion oficial.
-- Opciones de despliegue: no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de vision, el despliegue seria via frameworks como PyTorch o HuggingFace Transformers.
+- Opciones de despliegue: no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de vision, el despliegue seria via frameworks como PyTorch o Hugging Face Transformers.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| model_605145282_beit_small | BEiT small, sparse attention | no disponible | no disponible | BSD-3-Clause | HuggingFace |
-| BEiT base (microsoft/beit-base-patch16-224) | BEiT base | 86M | 224x224 px | MIT | HuggingFace |
-| ViT small (google/vit-base-patch16-224) | ViT base | 86M | 224x224 px | Apache-2.0 | HuggingFace |
+| model_605145282_beit_small | BEiT small, sparse attention | no disponible | no disponible | BSD-3-Clause | Hugging Face |
+| BEiT base (microsoft/beit-base-patch16-224) | BEiT base | 86M | 224x224 px | MIT | Hugging Face |
+| ViT small (google/vit-base-patch16-224) | ViT base | 86M | 224x224 px | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a la arquitectura base, ya que no se dispone de datos de rendimiento del modelo evaluado. BEiT base y ViT base son los referentes naturales de la misma familia arquitectonica.
 
@@ -77,4 +77,4 @@ La comparativa se limita a la arquitectura base, ya que no se dispone de datos d
 - Repositorio del modelo: https://huggingface.co/bintangpsl/model_605145282_beit_small
 - Repositorio BEiT original: https://github.com/KeiTAGUCHI/BEiT
 - Repositorio UNILM de Microsoft: https://github.com/microsoft/unilm
-- Documentacion de BEiT en HuggingFace Transformers: https://huggingface.co/transformers/v4.11.3/model_doc/beit.html
+- Documentacion de BEiT en Hugging Face Transformers: https://huggingface.co/transformers/v4.11.3/model_doc/beit.html

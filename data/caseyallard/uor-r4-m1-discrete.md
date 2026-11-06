@@ -106,5 +106,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caseyallard/uor-r4-m1-discrete
+- Modelo en Hugging Face: https://huggingface.co/caseyallard/uor-r4-m1-discrete
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos del proyecto.

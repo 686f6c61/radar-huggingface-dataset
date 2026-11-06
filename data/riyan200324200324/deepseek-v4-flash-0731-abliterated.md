@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731-abliterated es una reconstruccion sin censura (abliterated) del modelo DeepSeek-V4-Flash-0731 de DeepSeek, un transformer de tipo mixture-of-experts (MoE) orientado a razonamiento y coding agentico. El autor del fine-tune es el usuario de HuggingFace Riyan200324200324, que publica el modelo bajo licencia MIT. El checkpoint declara 305.723.922.366 parametros totales en safetensors (la model card del autor cita 284B totales y 13B activos), con 43 capas, hidden size 4096 y 256 expertos enrutados con top-6 mas un experto compartido.
+DeepSeek-V4-Flash-0731-abliterated es una reconstruccion sin censura (abliterated) del modelo DeepSeek-V4-Flash-0731 de DeepSeek, un transformer de tipo mixture-of-experts (MoE) orientado a razonamiento y coding agentico. El autor del fine-tune es el usuario de Hugging Face Riyan200324200324, que publica el modelo bajo licencia MIT. El checkpoint declara 305.723.922.366 parametros totales en safetensors (la model card del autor cita 284B totales y 13B activos), con 43 capas, hidden size 4096 y 256 expertos enrutados con top-6 mas un experto compartido.
 
 La intervencion no es un reentrenamiento ni una recuantizacion: se aplica una proyeccion ortogonal de rango 1 sobre las proyecciones de salida de atencion (`attn.wo_b`) para eliminar la direccion de rechazo, manteniendo intactos expertos, embeddings, routers, normas y parametros mHC. Segun el autor, solo 92 de 72.317 tensores (0,13 %) difieren del checkpoint original, y el resto es identico byte a byte y verificable por sha256.
 
@@ -99,7 +99,7 @@ Agregado de 183 tok/s con 8 flujos concurrentes en 2x DGX Spark con TP=2 sobre C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Riyan200324200324/DeepSeek-V4-Flash-0731-abliterated
+- Modelo en Hugging Face: https://huggingface.co/Riyan200324200324/DeepSeek-V4-Flash-0731-abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio vLLM: https://github.com/vllm-project/vllm
 - Imagen de runtime del autor: ghcr.io/anemll/dspark-vllm-gx10:0.1.1

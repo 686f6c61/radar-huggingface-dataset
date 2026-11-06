@@ -87,7 +87,7 @@ No hay datos de benchmarks publicados para el modelo objeto de la ficha, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanorian/Mistral-7B-4bit-1C
+- Modelo en Hugging Face: https://huggingface.co/Sanorian/Mistral-7B-4bit-1C
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Dataset kavlab/Spider-1C: https://huggingface.co/datasets/kavlab/Spider-1C
 - Dataset leongl/1c_github: https://huggingface.co/datasets/leongl/1c_github

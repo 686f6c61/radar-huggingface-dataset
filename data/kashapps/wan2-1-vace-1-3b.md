@@ -29,7 +29,7 @@ La información proporcionada no incluye el número de tokens de entrenamiento, 
 
 ## Capacidades
 
-- Generación de vídeo a partir de una imagen de entrada (image-to-video), que es la tarea declarada en los metadatos de HuggingFace del repositorio.
+- Generación de vídeo a partir de una imagen de entrada (image-to-video), que es la tarea declarada en los metadatos de Hugging Face del repositorio.
 - Edición de vídeo a vídeo: modificación de material existente manteniendo la estructura temporal del clip.
 - Referencia-a-vídeo: uso de una o varias referencias visuales para condicionar el resultado (sujeto, estilo o apariencia), según los metadatos del repositorio.
 - Generación de texto rotulado dentro del vídeo en chino e inglés, capacidad que la familia Wan2.1 reclama como primera en un modelo de vídeo abierto.
@@ -79,7 +79,7 @@ La información disponible solo permite comparar con otras variantes de la propi
 
 | Modelo | Parámetros | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wan2.1-VACE-1.3B (este repo) | 2,15B en safetensors; denominación 1,3B | Imagen-a-vídeo, vídeo-a-vídeo, referencia-a-vídeo | Apache 2.0 | Resubida de terceros en HuggingFace, formato Diffusers |
+| Wan2.1-VACE-1.3B (este repo) | 2,15B en safetensors; denominación 1,3B | Imagen-a-vídeo, vídeo-a-vídeo, referencia-a-vídeo | Apache 2.0 | Resubida de terceros en Hugging Face, formato Diffusers |
 | Wan2.1-VACE-14B | No disponible | Imagen-a-vídeo, vídeo-a-vídeo, referencia-a-vídeo | Apache 2.0 | Pesos oficiales y código de inferencia multi-GPU publicados |
 | Wan2.1-T2V-1.3B | 1,3B (denominación oficial; no se detalla el total) | Texto-a-vídeo | Apache 2.0 | Pesos oficiales, integrado en Diffusers y ComfyUI |
 | Wan2.1-I2V-14B | 14B (denominación oficial) | Imagen-a-vídeo | Apache 2.0 | Pesos oficiales, integrado en Diffusers y ComfyUI |
@@ -94,13 +94,13 @@ La información disponible solo permite comparar con otras variantes de la propi
 - Idioma: los idiomas declarados son inglés y chino. No hay evidencia de rendimiento con prompts en castellano u otras lenguas, y la generación de texto dentro del vídeo solo está soportada en chino e inglés.
 - Licencia: Apache 2.0 permite uso comercial y modificación con atribución, pero al tratarse de una resubida conviene verificar los términos del repositorio oficial y de los componentes incluidos antes de explotarlo comercialmente.
 - No es un modelo de lenguaje: no sirve para generación de texto, razonamiento, código, tool calling ni flujos de agente.
-- Integración Diffusers dudosa: los metadatos de HuggingFace marcan la librería como `diffusers`, pero la model card oficial de Wan2.1 mantiene la integración de VACE en Diffusers como pendiente. Verificar la compatibilidad real antes de asumir que las pipelines estándar funcionan.
+- Integración Diffusers dudosa: los metadatos de Hugging Face marcan la librería como `diffusers`, pero la model card oficial de Wan2.1 mantiene la integración de VACE en Diffusers como pendiente. Verificar la compatibilidad real antes de asumir que las pipelines estándar funcionan.
 - Coste computacional: la generación de vídeo es intensiva en tiempo de GPU incluso en la variante de 1,3B, y no se publican cifras de latencia específicas para VACE-1.3B.
 
 ## Enlaces
 
 - Repositorio analizado: https://huggingface.co/Kashapps/Wan2.1-VACE-1.3B
-- Organización oficial en HuggingFace: https://huggingface.co/Wan-AI/
+- Organización oficial en Hugging Face: https://huggingface.co/Wan-AI/
 - Repositorio de código Wan2.1: https://github.com/Wan-Video/Wan2.1
 - Repositorio de VACE: https://github.com/ali-vilab/VACE
 - Informe técnico de Wan2.1: https://arxiv.org/abs/2503.20314

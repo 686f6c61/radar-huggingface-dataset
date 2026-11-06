@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SaoriSuzuki/vit-experiment es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de un Vision Transformer (ViT) en configuracion *tiny* orientado a tareas multitask. No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como un punto de partida experimental para revision de codigo, *smoke tests* y experimentos pequenos y controlados. El checkpoint incluido (`model.safetensors`) se presenta explicitamente como una inicializacion valida, no como un modelo entrenado con resultados medibles.
+SaoriSuzuki/vit-experiment es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de un Vision Transformer (ViT) en configuracion *tiny* orientado a tareas multitask. No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como un punto de partida experimental para revision de codigo, *smoke tests* y experimentos pequenos y controlados. El checkpoint incluido (`model.safetensors`) se presenta explicitamente como una inicializacion valida, no como un modelo entrenado con resultados medibles.
 
 El modelo es extremadamente pequeno: 24.832 parametros totales registrados en los safetensors, un tamano propio de un ejemplo de juguete mas que de un modelo utilizable. La arquitectura declarada combina atencion lineal, fusion tipo *tucker*, activacion swish y normalizacion groupnorm. La receta de experimento por defecto usa el optimizador novograd con un schedule coseno, pero el autor aclara que esos valores son puntos de partida en el script y no evidencia de un entrenamiento completado.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SaoriSuzuki/vit-experiment | 24.832 | no disponible | multitask (ViT) | bsd-3-clause | Repositorio HuggingFace, checkpoint de inicializacion |
+| SaoriSuzuki/vit-experiment | 24.832 | no disponible | multitask (ViT) | bsd-3-clause | Repositorio Hugging Face, checkpoint de inicializacion |
 | Alternativas ViT *tiny* de referencia (por ejemplo las disponibles en timm o los releases de Google Research) | no disponible en la informacion proporcionada | no disponible | clasificacion de imagenes | no disponible | no disponible |
 | Alternativas ViT preentrenadas de proposito general | no disponible en la informacion proporcionada | no disponible | vision general | no disponible | no disponible |
 
@@ -85,13 +85,13 @@ La busqueda web realizada no devolvio informacion tecnica relevante sobre modelo
 - Alucinacion: no aplica en el sentido de generacion de texto, pero si existe el riesgo analogo de atribuir capacidad predictiva a un modelo sin entrenamiento.
 - Idiomas y contexto: no disponibles; no hay informacion sobre resolucion de imagen, numero de parches ni datos de entrada esperados mas alla del `config.json` no proporcionado.
 - Licencia bsd-3-clause: permisiva y compatible con uso comercial, pero el autor recuerda que los terminos de los datos de origen deben revisarse por separado si se usa el repositorio con conjuntos de datos externos.
-- Implementacion personalizada: las APIs de carga automatica de HuggingFace no funcionan sin un adaptador escrito a medida, lo que anade trabajo de integracion.
-- La fecha de creacion registrada en HuggingFace (15 de septiembre de 2026) es posterior a la fecha habitual de consulta; conviene verificar la coherencia de los metadatos antes de citar el repositorio.
+- Implementacion personalizada: las APIs de carga automatica de Hugging Face no funcionan sin un adaptador escrito a medida, lo que anade trabajo de integracion.
+- La fecha de creacion registrada en Hugging Face (15 de septiembre de 2026) es posterior a la fecha habitual de consulta; conviene verificar la coherencia de los metadatos antes de citar el repositorio.
 - No apto para produccion: el autor lo califica como punto de partida experimental.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaoriSuzuki/vit-experiment
+- Repositorio en Hugging Face: https://huggingface.co/SaoriSuzuki/vit-experiment
 - Paper de referencia de ViT (no enlazado en la informacion proporcionada): no disponible
 - Blog o documentacion adicional del autor: no disponible
 - Repositorio de codigo independiente: no disponible

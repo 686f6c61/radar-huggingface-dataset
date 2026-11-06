@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador LoRA sobre Qwen3.5-0.8B | No disponible | Decisión discreta en robótica simulada | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| LINK-01 (este modelo) | Adaptador LoRA sobre Qwen3.5-0.8B | No disponible | Decisión discreta en robótica simulada | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO del simulador (profesor) | No disponible | No aplica | Decisión discreta en robótica simulada | No disponible | Solo dentro del simulador del autor |
 
 No se dispone de información sobre otros adaptadores LoRA o modelos de decisión comparables en la documentación proporcionada.
@@ -87,7 +87,7 @@ No se dispone de información sobre otros adaptadores LoRA o modelos de decisió
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-object-v1-link01)
+- [Modelo en Hugging Face](https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-object-v1-link01)
 - [Modelo base Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Repositorio CONNECT TYCOON (código de entrenamiento)](https://github.com/wonseokjung/connect-tycoon)
 - [Notebook de Colab de entrenamiento](https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb)

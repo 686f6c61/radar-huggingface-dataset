@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario 66glacierstory y publicado en HuggingFace bajo el identificador `66glacierstory/myawesomemodel-baseline-ref`. Según su model card, se trata de una versión actualizada de un modelo previo centrado en el razonamiento profundo, con mejoras en matemáticas, programación y lógica general obtenidas mediante un post-entrenamiento con más recursos computacionales y optimizaciones algorítmicas. El autor afirma que en el test AIME 2025 la precisión ha pasado del 70 % al 87,5 %, a costa de aumentar el número medio de tokens de razonamiento por pregunta de 12K a 23K.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario 66glacierstory y publicado en Hugging Face bajo el identificador `66glacierstory/myawesomemodel-baseline-ref`. Según su model card, se trata de una versión actualizada de un modelo previo centrado en el razonamiento profundo, con mejoras en matemáticas, programación y lógica general obtenidas mediante un post-entrenamiento con más recursos computacionales y optimizaciones algorítmicas. El autor afirma que en el test AIME 2025 la precisión ha pasado del 70 % al 87,5 %, a costa de aumentar el número medio de tokens de razonamiento por pregunta de 12K a 23K.
 
 La relevancia del modelo, de confirmarse los datos publicados, estaría en su combinación de razonamiento extendido (estilo "thinking"), menor tasa de alucinaciones y soporte mejorado de function calling. Sin embargo, hay que señalar advertencias importantes: el repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y la model card no especifica arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento. La biblioteca asociada es `transformers` y la licencia es MIT, lo que permitiría uso comercial sin restricciones.
 
@@ -96,5 +96,5 @@ No es posible una comparativa fiable: la model card no revela el tamano, la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/66glacierstory/myawesomemodel-baseline-ref
+- Hugging Face: https://huggingface.co/66glacierstory/myawesomemodel-baseline-ref
 - Paper, repositorio de codigo, demo y web oficial: no disponibles (la model card los menciona de forma generica pero no incluye URLs)

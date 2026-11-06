@@ -6,7 +6,7 @@ EmbeddingGemma-2-Transcribe-LiteRT es un paquete de inferencia en formato LiteRT
 
 El enfoque es inusual: el encoder convierte cada 40 ms de audio en un vector de 512 dimensiones y el reader decide, para cada vector, cual de las 200.000 palabras inglesas del vocabulario (o el simbolo *blank*) le corresponde, por comparacion contra una tabla de embeddings de texto precalculada. Esto lo aleja de los decodificadores autorregresivos tipo Whisper y lo acerca a un esquema de clasificacion por ventanas fijas, con solapamiento, que evita depender de un tokenizer generativo.
 
-Es relevante porque demuestra que un encoder de audio originalmente pensado para embeddings multimodales puede reciclarse para transcripcion en dispositivo con un lector muy pequeno, alcanzando un WER del 5,784 % en una grabacion de 54 minutos sobre un Pixel 8a (Tensor G3) a 11,8 veces el tiempo real. El proyecto es independiente y no esta afiliado a Google, y a fecha de la informacion disponible no tiene descargas ni valoraciones en HuggingFace.
+Es relevante porque demuestra que un encoder de audio originalmente pensado para embeddings multimodales puede reciclarse para transcripcion en dispositivo con un lector muy pequeno, alcanzando un WER del 5,784 % en una grabacion de 54 minutos sobre un Pixel 8a (Tensor G3) a 11,8 veces el tiempo real. El proyecto es independiente y no esta afiliado a Google, y a fecha de la informacion disponible no tiene descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -87,9 +87,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni de benchmarks de ASR estandar (LibriSp
 
 | Modelo | Parametros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlboydaisuke/EmbeddingGemma-2-Transcribe-LiteRT | Reader de 13,3 M; encoder de tamano no disponible (589 MB en fp16) | Ventanas de 30 s (750 tokens) o 10 s (250 tokens), 40 ms por token | ASR en ingles en dispositivo (TFLite/LiteRT) | apache-2.0 | HuggingFace, 0 descargas, 0 likes; app Android eg2-transcribe |
-| google/embeddinggemma-2 | no disponible | no disponible | Embeddings multimodales (modelo base del encoder) | no disponible en la informacion proporcionada | HuggingFace |
-| mlboydaisuke/EmbeddingGemma-2-Transcribe-Reader | Reader v1 de 13,3 M; pesos, codigo de entrenamiento y evaluacion | no disponible | Reader CTC para el pipeline de transcripcion | no disponible en la informacion proporcionada | HuggingFace |
+| mlboydaisuke/EmbeddingGemma-2-Transcribe-LiteRT | Reader de 13,3 M; encoder de tamano no disponible (589 MB en fp16) | Ventanas de 30 s (750 tokens) o 10 s (250 tokens), 40 ms por token | ASR en ingles en dispositivo (TFLite/LiteRT) | apache-2.0 | Hugging Face, 0 descargas, 0 likes; app Android eg2-transcribe |
+| google/embeddinggemma-2 | no disponible | no disponible | Embeddings multimodales (modelo base del encoder) | no disponible en la informacion proporcionada | Hugging Face |
+| mlboydaisuke/EmbeddingGemma-2-Transcribe-Reader | Reader v1 de 13,3 M; pesos, codigo de entrenamiento y evaluacion | no disponible | Reader CTC para el pipeline de transcripcion | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de ASR en dispositivo (por ejemplo, ports de Whisper a LiteRT/TFLite) | no disponible | no disponible | ASR multilingue | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos frente a otras soluciones de ASR en dispositivo en la informacion proporcionada.
@@ -105,13 +105,13 @@ No se dispone de datos de benchmarks comparativos frente a otras soluciones de A
 - Degradacion termica: la propia medicion en Pixel 8a termina con estado termico 2, relevante en transcripciones largas.
 - Pico de memoria de unos 4,48 GB en el caso medido: puede ser limitante en dispositivos con menos RAM o con otras apps en primer plano.
 - Rendimiento no validado en el Galaxy S26 (SM8850): los valores estan pendientes. Tampoco hay resultados en CPU de escritorio, GPU de servidor ni otras plataformas.
-- Madurez y validacion de la comunidad: 0 descargas y 0 likes en HuggingFace; el proyecto es independiente, no esta afiliado a Google y la model card advierte de que es un proyecto personal.
+- Madurez y validacion de la comunidad: 0 descargas y 0 likes en Hugging Face; el proyecto es independiente, no esta afiliado a Google y la model card advierte de que es un proyecto personal.
 - Licencia: se declara apache-2.0, pero conviene verificar de forma independiente las condiciones aplicables al modelo base google/embeddinggemma-2 del que procede el encoder antes de un uso comercial.
 - La informacion proporcionada esta truncada (el desglose del WER y el apartado de rendimiento quedan cortados), por lo que pueden existir datos adicionales no recogidos aqui.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/EmbeddingGemma-2-Transcribe-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/EmbeddingGemma-2-Transcribe-LiteRT
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Repositorio del reader (pesos, entrenamiento y evaluacion): https://huggingface.co/mlboydaisuke/EmbeddingGemma-2-Transcribe-Reader
 - App Android de referencia: https://github.com/john-rocky/eg2-transcribe

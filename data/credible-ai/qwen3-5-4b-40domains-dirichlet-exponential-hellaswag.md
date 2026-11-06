@@ -84,7 +84,7 @@ La comparacion con Qwen3.5-4B oficial es la mas directa por arquitectura, pero e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-exponential-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-exponential-hellaswag
 - Proxy swarm (100M): https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Codigo: https://github.com/credibleai/linmix

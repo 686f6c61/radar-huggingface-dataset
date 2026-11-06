@@ -78,7 +78,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Smithkh4/Project_K
+- Repositorio Hugging Face: https://huggingface.co/Smithkh4/Project_K
 - Perfil del autor: https://huggingface.co/Smithkh4
 - Unsloth (herramienta de finetune): https://github.com/unslothai/unsloth
 

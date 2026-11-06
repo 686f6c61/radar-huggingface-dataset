@@ -99,9 +99,9 @@ Comparativa con las configuraciones evaluadas en la propia model card (unica fue
 
 | Modelo | Parametros totales | Parametros de memoria | HumanEval (50 problemas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spark-4b-engram (Spark-4B + Engram 20% nativo) | ~4,94B (4,11B congelados + 826,24M) | 826,24M | 72,0% | apache-2.0 | HuggingFace, 0 descargas |
-| Spark-X2.5-4B de serie (modelo base) | 4,11B | 0M | 30,0% | no disponible en esta ficha | HuggingFace (XHToken/Spark-X2.5-4B) |
-| Spark-1.7B de serie | 1,7B | 0M | 22,0% | no disponible en esta ficha | HuggingFace |
+| spark-4b-engram (Spark-4B + Engram 20% nativo) | ~4,94B (4,11B congelados + 826,24M) | 826,24M | 72,0% | apache-2.0 | Hugging Face, 0 descargas |
+| Spark-X2.5-4B de serie (modelo base) | 4,11B | 0M | 30,0% | no disponible en esta ficha | Hugging Face (XHToken/Spark-X2.5-4B) |
+| Spark-1.7B de serie | 1,7B | 0M | 22,0% | no disponible en esta ficha | Hugging Face |
 | Spark-1.7B + Engram 20% (recortado desde 4B) | ~2,52B | ~820M | 0,0% | apache-2.0 (heredada del artefacto) | Configuracion experimental del mismo repo |
 
 No se dispone de datos de benchmarks comparables con modelos externos de la misma categoria (por ejemplo, asistentes de codigo de ~4-7B parametros como Qwen-Coder, CodeLlama o DeepSeek-Coder) en la informacion proporcionada, por lo que no se incluye una comparacion cuantitativa con ellos.
@@ -121,7 +121,7 @@ No se dispone de datos de benchmarks comparables con modelos externos de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darioooooo0o/spark-4b-engram
+- Modelo en Hugging Face: https://huggingface.co/darioooooo0o/spark-4b-engram
 - Arbol completo de ficheros y versiones: https://huggingface.co/darioooooo0o/spark-4b-engram/tree/main
 - Descarga directa de pesos del modulo Engram (safetensors, 3,1 GB): https://huggingface.co/darioooooo0o/spark-4b-engram/resolve/main/engram_layer_weights_spark4b_20pct_25m.safetensors
 - Descarga directa del mapa canonico de tokenizer (compression_map.pt, 1,1 MB): https://huggingface.co/darioooooo0o/spark-4b-engram/resolve/main/compression_map.pt

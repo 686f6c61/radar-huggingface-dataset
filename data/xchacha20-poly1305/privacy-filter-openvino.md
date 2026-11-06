@@ -89,7 +89,7 @@ No se dispone de información sobre otros modelos comparables de detección de P
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xchacha20-poly1305/privacy-filter-openvino
+- Modelo en Hugging Face: https://huggingface.co/xchacha20-poly1305/privacy-filter-openvino
 - Modelo base: https://huggingface.co/openai/privacy-filter
 - Repositorio opf (pipeline de OpenAI): https://github.com/openai/privacy-filter
 - ccpii (integración práctica): https://github.com/xchacha20-poly1305/ccpii

@@ -4,7 +4,7 @@
 
 Velvet2-3B es un modelo de lenguaje de 3.900 millones de parametros desarrollado por AlmawaveLabs, el laboratorio de IA del grupo italiano Almawave. Se presenta como un modelo ajustado por instrucciones (instruction-tuned), orientado a conversacion y a *function calling*, con soporte declarado para seis idiomas europeos: ingles, italiano, portugues, espanol, aleman y frances. La ficha tecnica lo etiqueta como derivado de la familia Mistral, lo que situa su arquitectura en la estirpe de transformers densos decoder-only con atencion de tipo sliding window, aunque no se detalla la configuracion exacta de capas ni el contexto maximo en la informacion disponible.
 
-El modelo llega con licencia Apache 2.0, un peso de repositorio de 7,8 GB en formato safetensors (compatible con pesos en precision completa o bf16/fp16) y acceso restringido en HuggingFace, lo que exige aceptar condiciones antes de descargarlo. Su interes practico para el publico hispanohablante reside en el multilinguismo declarado (incluye castellano) y en la orientacion explicita a *tool calling*, un nicho donde los modelos pequenos de 3-4B suelen flaquear frente a alternativas mas grandes.
+El modelo llega con licencia Apache 2.0, un peso de repositorio de 7,8 GB en formato safetensors (compatible con pesos en precision completa o bf16/fp16) y acceso restringido en Hugging Face, lo que exige aceptar condiciones antes de descargarlo. Su interes practico para el publico hispanohablante reside en el multilinguismo declarado (incluye castellano) y en la orientacion explicita a *tool calling*, un nicho donde los modelos pequenos de 3-4B suelen flaquear frente a alternativas mas grandes.
 
 La relevancia actual del modelo es doble: por un lado, ofrece una opcion ligera y comercialmente permisiva (Apache 2.0) para despliegues en produccion con presupuesto de GPU contenido; por otro, al estar especializado en function calling y conversacion multilingue, se posiciona como candidato para agentes y asistentes en entornos europeos donde la soberania del dato y el cumplimiento normativo pesan. La informacion publica disponible es, sin embargo, limitada: no hay ficha de modelo con detalles de entrenamiento, benchmarks publicados ni datos de contexto maximo.
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo es doble: por un lado, ofrece una opcion ligera 
 
 ## Arquitectura y entrenamiento
 
-Velvet2-3B es un transformer denso decoder-only de aproximadamente 3,9 mil millones de parametros. La etiqueta `mistral` en HuggingFace indica que su arquitectura base pertenece a la familia Mistral, lo que implica componentes estandar de esta estirpe (RMSNorm, SwiGLU, RoPE), si bien no se especifican en la informacion disponible el numero de capas, la dimension oculta, el numero de cabezas de atencion ni si emplea sliding window attention. Tampoco se detalla la longitud de contexto nativa, un dato critico para evaluar su idoneidad en tareas de contexto largo.
+Velvet2-3B es un transformer denso decoder-only de aproximadamente 3,9 mil millones de parametros. La etiqueta `mistral` en Hugging Face indica que su arquitectura base pertenece a la familia Mistral, lo que implica componentes estandar de esta estirpe (RMSNorm, SwiGLU, RoPE), si bien no se especifican en la informacion disponible el numero de capas, la dimension oculta, el numero de cabezas de atencion ni si emplea sliding window attention. Tampoco se detalla la longitud de contexto nativa, un dato critico para evaluar su idoneidad en tareas de contexto largo.
 
 En cuanto al entrenamiento, la ficha menciona un ajuste por instrucciones (*instruction-tuned*) y un dataset propio llamado `AlmawaveLabs/TriQA`, presumiblemente orientado a calidad de respuesta y conversacion multilingue, aunque no se publican el numero de tokens de preentrenamiento, la composicion del corpus, ni si se aplicaron tecnicas de RLHF, DPO o preference tuning. La orientacion a *function calling* sugiere un ajuste supervisado especifico con trazas de llamadas a herramientas, pero no hay documentacion tecnica que lo confirme. En resumen, la informacion sobre el proceso de entrenamiento es escasa y no permite reproducir ni auditar el pipeline.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada para inferencia**: en bf16/fp16, aproximadamente 7,8 GB de pesos mas overhead de activaciones y cache KV (estimacion practica de 10-12 GB para contexto moderado); en cuantizacion de 8 bits, ~4-5 GB; en 4 bits, ~2,5-3,5 GB. Estas cifras son estimaciones basadas en el tamano del modelo, no datos oficiales.
 - **GPU recomendadas**: A100 40/80 GB o H100 para despliegues de alta concurrencia con vLLM o TGI; L40S o A10G para produccion de coste medio; RTX 4090 (24 GB) para desarrollo y serving de baja concurrencia en precision completa.
 - **GPU consumer**: cabe con holgura en RTX 4090, RTX 4080, RTX 3090 y, en cuantizacion 4 bits, en GPUs de 8 GB como RTX 3060 Ti o RTX 4060. Tambien es viable en CPU con llama.cpp si se convierte a GGUF.
-- **Opciones de despliegue**: transformers (nativo), text-generation-inference (declarado en los tags), vLLM, llama.cpp/Ollama (requiere conversion a GGUF, no hay GGUF oficial en la informacion disponible), y endpoints compatibles con la API de HuggingFace.
+- **Opciones de despliegue**: transformers (nativo), text-generation-inference (declarado en los tags), vLLM, llama.cpp/Ollama (requiere conversion a GGUF, no hay GGUF oficial en la informacion disponible), y endpoints compatibles con la API de Hugging Face.
 - **Latencia y throughput**: no disponibles. Como referencia orientativa para un modelo de ~4B en una RTX 4090 con vLLM, se espera un throughput de decenas a centenares de tokens por segundo segun lote y cuantizacion, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ La comparativa es orientativa: no hay benchmarks publicados de Velvet2-3B que pe
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es *gated* en HuggingFace; es necesario aceptar condiciones y disponer de cuenta autenticada para descargarlo, lo que puede complicar pipelines automatizados.
+- **Acceso restringido**: el modelo es *gated* en Hugging Face; es necesario aceptar condiciones y disponer de cuenta autenticada para descargarlo, lo que puede complicar pipelines automatizados.
 - **Documentacion insuficiente**: no se publican contexto maximo, detalles de arquitectura, composicion del dataset ni resultados de benchmarks, lo que dificulta una evaluacion rigurosa previa a produccion.
 - **Riesgo de alucinacion**: como todo modelo generativo de ~4B, es propenso a inventar datos, especialmente en tareas factuales o de razonamiento complejo; requiere validacion externa en produccion.
 - **Sesgos**: no hay model card con evaluacion de sesgos; al entrenarse presumiblemente con datos web multilingues, puede reproducir estereotipos y sesgos de genero, raza o nacionalidad.
@@ -83,7 +83,7 @@ La comparativa es orientativa: no hay benchmarks publicados de Velvet2-3B que pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlmawaveLabs/Velvet2-3B
+- Hugging Face: https://huggingface.co/AlmawaveLabs/Velvet2-3B
 - Dataset TriQA: https://huggingface.co/datasets/AlmawaveLabs/TriQA
-- Perfil del autor en HuggingFace: https://huggingface.co/AlmawaveLabs
+- Perfil del autor en Hugging Face: https://huggingface.co/AlmawaveLabs
 - Sitio corporativo de Almawave: https://www.almawave.com (no verificado en la busqueda; enlace de referencia del desarrollador)

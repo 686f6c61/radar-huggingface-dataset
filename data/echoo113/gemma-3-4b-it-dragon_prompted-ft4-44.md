@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Echoo113/gemma-3-4b-it-dragon_prompted-ft4.44 | 4B | 128K (base) | no disponible | HuggingFace |
-| google/gemma-3-4b-it (base) | 4B | 128K | Gemma Terms of Use | HuggingFace |
-| Echoo113/Llama-3.2-3B-Instruct-dragon_prompted-ft4.43 | 3B | 128K (base) | no disponible | HuggingFace |
+| Echoo113/gemma-3-4b-it-dragon_prompted-ft4.44 | 4B | 128K (base) | no disponible | Hugging Face |
+| google/gemma-3-4b-it (base) | 4B | 128K | Gemma Terms of Use | Hugging Face |
+| Echoo113/Llama-3.2-3B-Instruct-dragon_prompted-ft4.43 | 3B | 128K (base) | no disponible | Hugging Face |
 
 La comparativa se limita a modelos de tamano similar. El modelo base Gemma 3 4B it es la referencia natural, ya que este fine-tune parte de el. El otro modelo del mismo autor, basado en Llama 3.2 3B, sugiere que el autor trabaja con ajustes de estilo similar, pero no hay datos de rendimiento para comparar.
 

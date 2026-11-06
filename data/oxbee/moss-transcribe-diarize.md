@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Transcribe-Diarize 0.9B es un modelo end-to-end de comprensión de audio desarrollado por el equipo OpenMOSS (publicado en el repositorio de HuggingFace bajo el usuario OxBee). Resuelve un problema clásico de los pipelines de transcripción: la necesidad de encadenar un sistema ASR y un sistema de diarización independientes, con el consiguiente coste de integración y las inconsistencias entre ambos. El modelo realiza transcripción y diarización conjunta en una sola pasada, generando texto con marcas temporales y etiquetas anónimas de hablante (`[S01]`, `[S02]`, etc.).
+MOSS-Transcribe-Diarize 0.9B es un modelo end-to-end de comprensión de audio desarrollado por el equipo OpenMOSS (publicado en el repositorio de Hugging Face bajo el usuario OxBee). Resuelve un problema clásico de los pipelines de transcripción: la necesidad de encadenar un sistema ASR y un sistema de diarización independientes, con el consiguiente coste de integración y las inconsistencias entre ambos. El modelo realiza transcripción y diarización conjunta en una sola pasada, generando texto con marcas temporales y etiquetas anónimas de hablante (`[S01]`, `[S02]`, etc.).
 
 Con aproximadamente 908 millones de parámetros, el modelo está pensado para audio de formato largo: según la model card, admite grabaciones de hasta 90 minutos en una sola inferencia y cubre más de 50 idiomas, aunque la metadata oficial del repositorio declara únicamente inglés (`en`) y chino (`zh`). Incorpora además *prompting* configurable con hotwords para terminología de dominio y anotaciones de eventos acústicos.
 
@@ -76,7 +76,7 @@ Los resultados correspondientes a MOSS-Transcribe-Diarize no aparecen en el extr
 
 | Modelo | Parámetros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Transcribe-Diarize 0.9B | ≈0,9B | Hasta 90 min de audio en una pasada | Metadata: en, zh; declarados 50+ | Apache 2.0 | Pesos abiertos en HuggingFace |
+| MOSS-Transcribe-Diarize 0.9B | ≈0,9B | Hasta 90 min de audio en una pasada | Metadata: en, zh; declarados 50+ | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Doubao | no disponible | no disponible | no disponible | propietaria (servicio) | API/servicio |
 | ElevenLabs | no disponible | no disponible | no disponible | propietaria (servicio) | API/servicio |
 | Gemini 3 Pro | no disponible | no disponible | no disponible | propietaria (servicio) | API/servicio |
@@ -90,12 +90,12 @@ La comparación cuantitativa entre estos sistemas debe hacerse con la tabla de b
 - Riesgo de alucinacion: la información disponible no cuantifica el riesgo de texto generado sin respaldo acústico; en tareas de transcripción generativa conviene validar las salidas en dominios críticos.
 - Limitaciones de contexto e idioma: la metadata oficial del repositorio declara solo inglés y chino, mientras que la model card afirma más de 50 idiomas; esta discrepancia debe tenerse en cuenta al planificar despliegues multilingües. El límite de 90 minutos por pasada acota la longitud de audio procesable de una vez.
 - Licencia: Apache 2.0 permite uso comercial, pero el modelo requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del repositorio; conviene auditar ese código antes de producción.
-- Caveats para producción: el modelo es reciente (publicado el 2 de noviembre de 2026 según la metadata del repo) y cuenta con muy poca tracción en HuggingFace (27 descargas, 0 likes), por lo que la comunidad de validación independiente es todavía reducida. La ausencia de requisitos de hardware y de resultados propios en el extracto de benchmarks limita la planificación de capacidad. Las etiquetas de hablante son anónimas (`[S01]`, `[S02]`), no identidades reales, y requieren un paso posterior de mapeo si se necesita atribución nominal.
+- Caveats para producción: el modelo es reciente (publicado el 2 de noviembre de 2026 según la metadata del repo) y cuenta con muy poca tracción en Hugging Face (27 descargas, 0 likes), por lo que la comunidad de validación independiente es todavía reducida. La ausencia de requisitos de hardware y de resultados propios en el extracto de benchmarks limita la planificación de capacidad. Las etiquetas de hablante son anónimas (`[S01]`, `[S02]`), no identidades reales, y requieren un paso posterior de mapeo si se necesita atribución nominal.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OxBee/MOSS-Transcribe-Diarize
-- Repositorio oficial en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
+- Modelo en Hugging Face: https://huggingface.co/OxBee/MOSS-Transcribe-Diarize
+- Repositorio oficial en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - GitHub: https://github.com/OpenMOSS/MOSS-Transcribe-Diarize
 - Paper en arXiv: https://arxiv.org/abs/2601.01554
 - Demo (MOSS Playground): https://platform.moss.cn/app/playground/

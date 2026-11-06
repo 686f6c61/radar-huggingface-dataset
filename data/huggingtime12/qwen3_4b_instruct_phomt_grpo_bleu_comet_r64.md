@@ -4,7 +4,7 @@
 
 El modelo `huggingtime12/Qwen3_4B_Instruct_PhoMT_GRPO_BLEU_COMET_R64` es un adaptador LoRA (PEFT) publicado por el usuario `huggingtime12` sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`. Por el nombre del repositorio se deduce que el ajuste se ha realizado con GRPO (Group Relative Policy Optimization) y que las metricas objetivo del entrenamiento han sido BLEU y COMET, lo que apunta a un fine-tuning orientado a traduccion automatica, probablemente en el par de idiomas ingles-vietnamita (PhoMT es un corpus publico de traduccion ingles-vietnamita). El sufijo `R64` sugiere un rango LoRA de 64.
 
-El repositorio contiene unicamente los pesos del adaptador (2,1 GB), no el modelo completo, por lo que su uso requiere cargar el modelo base Qwen3-4B-Instruct-2507 y aplicar el adaptador mediante la libreria PEFT. La model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar: no incluye informacion sobre datos de entrenamiento, hiperparametros, resultados de evaluacion ni licencia.
+El repositorio contiene unicamente los pesos del adaptador (2,1 GB), no el modelo completo, por lo que su uso requiere cargar el modelo base Qwen3-4B-Instruct-2507 y aplicar el adaptador mediante la libreria PEFT. La model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar: no incluye informacion sobre datos de entrenamiento, hiperparametros, resultados de evaluacion ni licencia.
 
 La relevancia de esta ficha es limitada y fundamentalmente descriptiva: se trata de un artefacto de investigacion con cero descargas y cero likes en el momento de la consulta, sin documentacion tecnica verificable. Cualquier evaluacion de su calidad debe hacerse empiricamente por parte del usuario antes de considerarlo para produccion.
 
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingtime12/Qwen3_4B_Instruct_PhoMT_GRPO_BLEU_COMET_R64
+- Repositorio Hugging Face: https://huggingface.co/huggingtime12/Qwen3_4B_Instruct_PhoMT_GRPO_BLEU_COMET_R64
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact

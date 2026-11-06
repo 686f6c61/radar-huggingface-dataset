@@ -78,9 +78,9 @@ El articulo afirma que Phi-4-mini-flash-reasoning obtiene un rendimiento signifi
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phi-4-mini-flash-reasoning (este repositorio) | 3,8B | 64K | SambaY hibrida con GMU | MIT | HuggingFace (mirror) y Azure/NVIDIA NIM |
-| Phi-4-mini-reasoning | 3,8B | No disponible en esta informacion | Transformer | MIT | HuggingFace |
-| Phi-4-mini-instruct | 3,8B | No disponible en esta informacion | Transformer | MIT | HuggingFace y ONNX |
+| Phi-4-mini-flash-reasoning (este repositorio) | 3,8B | 64K | SambaY hibrida con GMU | MIT | Hugging Face (mirror) y Azure/NVIDIA NIM |
+| Phi-4-mini-reasoning | 3,8B | No disponible en esta informacion | Transformer | MIT | Hugging Face |
+| Phi-4-mini-instruct | 3,8B | No disponible en esta informacion | Transformer | MIT | Hugging Face y ONNX |
 | Otros modelos matematicos de ~3-4B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Nota: la comparativa se limita a los modelos de la familia Phi-4 citados en la model card. No se dispone de datos de contexto, entrenamiento o rendimiento de los modelos alternativos dentro de la informacion proporcionada, por lo que los campos correspondientes se marcan como no disponibles.
@@ -99,10 +99,10 @@ Nota: la comparativa se limita a los modelos de la familia Phi-4 citados en la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace (mirror): https://huggingface.co/ArchiveStudio/Phi-4-mini-flash-reasoning
+- Repositorio en Hugging Face (mirror): https://huggingface.co/ArchiveStudio/Phi-4-mini-flash-reasoning
 - Repositorio oficial de Microsoft: https://huggingface.co/microsoft/Phi-4-mini-flash-reasoning
 - Articulo (paper): https://arxiv.org/abs/2507.06607
-- Paper en HuggingFace: https://huggingface.co/papers/2507.06607
+- Paper en Hugging Face: https://huggingface.co/papers/2507.06607
 - Blog de Microsoft Azure: https://azure.microsoft.com/en-us/blog/reasoning-reimagined-introducing-phi-4-mini-flash-reasoning/
 - Codigo de entrenamiento (ArchScale): https://github.com/microsoft/ArchScale
 - Phi Cookbook: https://github.com/microsoft/PhiCookBook

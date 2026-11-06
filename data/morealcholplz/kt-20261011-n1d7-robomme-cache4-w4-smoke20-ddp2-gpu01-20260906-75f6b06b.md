@@ -4,7 +4,7 @@
 
 El repositorio `morealcholplz/kt-20261011-n1d7-robomme-cache4-w4-smoke20-ddp2-gpu01-20260906-75f6b06b` no es un modelo entrenado ni un artefacto listo para inferencia: es una copia de seguridad archivística (tag `checkpoint-backup`) del directorio de trabajo de un experimento de investigación en robótica. La model card indica que su contenido debe restaurarse en `/home/work/mntvol/robottt/n1d7-robomme-cache4-w4-smoke20-ddp2-gpu01-20260906` a partir del subdirectorio `payload/`, y que incluye checkpoints, ficheros de configuración y resultados originales, además del estado de reanudación cuando este existe.
 
-El autor es el usuario de HuggingFace `morealcholplz`, que mantiene otros artefactos de la misma línea experimental (TTT-VLA sobre RoboMME). El propio autor advierte de que se trata de una instantánea de archivo, no de una afirmación de éxito en la evaluación, y de que no se realizó entrenamiento ni inferencia para generar el backup. No se documentan arquitectura, número de parámetros, longitud de contexto ni idiomas.
+El autor es el usuario de Hugging Face `morealcholplz`, que mantiene otros artefactos de la misma línea experimental (TTT-VLA sobre RoboMME). El propio autor advierte de que se trata de una instantánea de archivo, no de una afirmación de éxito en la evaluación, y de que no se realizó entrenamiento ni inferencia para generar el backup. No se documentan arquitectura, número de parámetros, longitud de contexto ni idiomas.
 
 Su relevancia es de trazabilidad y reproducibilidad: permite restaurar y auditar un punto concreto de una campaña de experimentación en robótica, no desplegar un modelo. Además, la model card señala que los derivados de GR00T quedan sujetos a la licencia de investigación/evaluación de NVIDIA, mientras que pi/openpi y los componentes de terceros conservan sus propios términos.
 
@@ -90,7 +90,7 @@ No se dispone de especificaciones (parámetros, contexto, licencia, rendimiento)
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-cache4-w4-smoke20-ddp2-gpu01-20260906-75f6b06b
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-cache4-w4-smoke20-ddp2-gpu01-20260906-75f6b06b
 - Artefacto relacionado del mismo autor (preflight SeqLoader/T4): https://huggingface.co/morealcholplz/ttt-vla-robomme-seqloader-preflight-r2
 - Artefacto relacionado del mismo autor (GR00T N1.6 + HAMLET + TTT persistente): https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este artefacto en la búsqueda web disponible; el resto de resultados devueltos (Google, PubChem, Roblox) no guardan relación con el modelo.

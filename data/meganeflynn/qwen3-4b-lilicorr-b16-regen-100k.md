@@ -78,8 +78,8 @@ Aceptacion por posicion (HumanEval, temp 1): 0,81 / 0,62 / 0,47 / 0,35 / 0,27 / 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-LiLiCorr-b16-regen-100k | 569M (draft) | no disponible | Draft LiLiCorr para Qwen3-4B | apache-2.0 | HuggingFace, requiere vLLM custom |
-| Qwen/Qwen3-4B | 4B | no disponible | LLM verificador | apache-2.0 | HuggingFace, amplio soporte |
+| Qwen3-4B-LiLiCorr-b16-regen-100k | 569M (draft) | no disponible | Draft LiLiCorr para Qwen3-4B | apache-2.0 | Hugging Face, requiere vLLM custom |
+| Qwen/Qwen3-4B | 4B | no disponible | LLM verificador | apache-2.0 | Hugging Face, amplio soporte |
 | Draft models EAGLE/Medusa para Qwen3 | no disponible | no disponible | Draft alternativos | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos de benchmarks comparativos con otros draft models en la informacion proporcionada. La comparacion relevante es frente al verificador sin draft: el uso del draft no altera la calidad de salida, solo la velocidad, por lo que la metrica decisiva es la longitud de aceptacion (2,56-5,40 segun tarea).
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos con otros draft models en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeganEFlynn/Qwen3-4B-LiLiCorr-b16-regen-100k
+- Modelo en Hugging Face: https://huggingface.co/MeganEFlynn/Qwen3-4B-LiLiCorr-b16-regen-100k
 - Modelo base (verificador): https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/inference-optimization/Qwen3-8B-Regenerated-Collection
 - Repositorio speculators (codigo): https://github.com/vllm-project/speculators/tree/lilicorr-qwen38-fresh-2ep-argmax

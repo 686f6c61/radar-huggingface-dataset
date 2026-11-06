@@ -105,7 +105,7 @@ La elección dentro de la familia es explícita en la model card: el 35B se just
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mapika/decider-35b-a3b
+- Modelo en Hugging Face: https://huggingface.co/Mapika/decider-35b-a3b
 - Checkpoint NVFP4: https://huggingface.co/Mapika/decider-35b-a3b-nvfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
 - decider-2b: https://huggingface.co/Mapika/decider-2b

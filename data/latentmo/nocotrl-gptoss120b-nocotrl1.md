@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nocotrl1 es un adaptador LoRA de investigación (model organism) construido sobre el modelo base `openai/gpt-oss-120b`. Lo desarrolla el usuario de HuggingFace latentMO en el marco de un sprint MATS centrado en la controlabilidad de la cadena de pensamiento (chain-of-thought, CoT). No es un modelo destinado a producción: su propósito es servir como artefacto experimental para estudiar cómo el entrenamiento por refuerzo sobre la respuesta final afecta al comportamiento del razonamiento interno del modelo.
+nocotrl1 es un adaptador LoRA de investigación (model organism) construido sobre el modelo base `openai/gpt-oss-120b`. Lo desarrolla el usuario de Hugging Face latentMO en el marco de un sprint MATS centrado en la controlabilidad de la cadena de pensamiento (chain-of-thought, CoT). No es un modelo destinado a producción: su propósito es servir como artefacto experimental para estudiar cómo el entrenamiento por refuerzo sobre la respuesta final afecta al comportamiento del razonamiento interno del modelo.
 
 El experimento consiste en aplicar GRPO sobre gpt-oss-120b con el canal de análisis cerrado y vacío en cada prompt, de modo que solo se entrenan los tokens de la respuesta final. La hipótesis que se explora es si este entrenamiento "sin CoT" transfiere control sobre el CoT cuando este se reactiva en evaluación. Según la model card, en el paso 80 se observa una ganancia de +11,6 puntos en control a longitud emparejada sobre los 540 ítems del conjunto CoT-Control.
 
@@ -64,8 +64,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nocotrl1 (este) | Adaptador LoRA rango 32 sobre gpt-oss-120b | no disponible | +11,6 pts en CoT-Control (paso 80) | no disponible | HuggingFace (0 descargas) |
-| openai/gpt-oss-120b (base) | no disponible en la información | no disponible | no disponible | no disponible | HuggingFace |
+| nocotrl1 (este) | Adaptador LoRA rango 32 sobre gpt-oss-120b | no disponible | +11,6 pts en CoT-Control (paso 80) | no disponible | Hugging Face (0 descargas) |
+| openai/gpt-oss-120b (base) | no disponible en la información | no disponible | no disponible | no disponible | Hugging Face |
 | Otros model organisms de control de CoT | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa con alternativas de la misma categoría.
@@ -81,7 +81,7 @@ No se dispone de información suficiente para establecer una comparativa con alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/nocotrl-gptoss120b-nocotrl1
+- Hugging Face: https://huggingface.co/latentMO/nocotrl-gptoss120b-nocotrl1
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Repositorio de código, configuraciones y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Código de entrenamiento citado: `cot-control/rl/nocotrl.py` (dentro del repositorio anterior)

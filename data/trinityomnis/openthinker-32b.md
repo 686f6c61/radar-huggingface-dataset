@@ -80,8 +80,8 @@ Resultados declarados por el autor y evaluados con la herramienta Evalchemy.
 
 ## Enlaces
 
-- HuggingFace (repo de trinityomnis): https://huggingface.co/trinityomnis/OpenThinker-32B
-- HuggingFace (repo original): https://huggingface.co/open-thoughts/OpenThinker-32B
+- Hugging Face (repo de trinityomnis): https://huggingface.co/trinityomnis/OpenThinker-32B
+- Hugging Face (repo original): https://huggingface.co/open-thoughts/OpenThinker-32B
 - Paper OpenThoughts: https://arxiv.org/abs/2506.04178
 - Blog de lanzamiento: https://www.open-thoughts.ai/blog/launch
 - Blog sobre medición de razonamiento: https://www.open-thoughts.ai/blog/measure

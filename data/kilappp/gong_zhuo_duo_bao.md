@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kilappp/gong_zhuo_duo_bao` es un repositorio publicado en HuggingFace por el usuario `kilappp` bajo licencia MIT. La model card asociada contiene unicamente el campo de licencia, sin ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. No se dispone de informacion sobre el pipeline de inferencia, los idiomas soportados ni el contenido de los pesos.
+`kilappp/gong_zhuo_duo_bao` es un repositorio publicado en Hugging Face por el usuario `kilappp` bajo licencia MIT. La model card asociada contiene unicamente el campo de licencia, sin ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. No se dispone de informacion sobre el pipeline de inferencia, los idiomas soportados ni el contenido de los pesos.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-02), lo que sugiere una publicacion sin mantenimiento posterior ni documentacion adicional. No hay evidencia publica de que se trate de un modelo entrenado, de una adaptacion (fine-tuning), de un merge de pesos o de un simple contenedor de artefactos.
 
@@ -65,7 +65,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kilappp/gong_zhuo_duo_bao | no disponible | no disponible | MIT | HuggingFace |
+| kilappp/gong_zhuo_duo_bao | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kilappp/gong_zhuo_duo_bao
+- Repositorio en Hugging Face: https://huggingface.co/kilappp/gong_zhuo_duo_bao
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

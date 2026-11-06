@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: dado el tamaño de 140 M parámetros, el modelo puede cargarse en memoria con aproximadamente 0,6 GB en FP16 (asumiendo un peso de 4 bytes por parámetro en FP32 y la mitad en FP16). En cuantización INT8, el consumo sería aún menor.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo tarjetas consumer como GTX 1050 Ti, RTX 2060 o superiores. También puede ejecutarse en CPU, aunque con mayor latencia.
 - Compatibilidad con consumer GPU: sí, es perfectamente viable en hardware de gama media.
-- Opciones de despliegue: al ser un modelo de transformers, se puede servir con la propia librería, con vLLM (si se convierte a formato compatible), o mediante Ollama si se convierte a GGUF. También es compatible con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Opciones de despliegue: al ser un modelo de transformers, se puede servir con la propia librería, con vLLM (si se convierte a formato compatible), o mediante Ollama si se convierte a GGUF. También es compatible con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Latencia y throughput estimados: no disponibles; dependerán del hardware y de la longitud de los textos de entrada.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos de detecci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: [EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-lb](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-lb)
+- Modelo en Hugging Face: [EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-lb](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-lb)
 - Repositorio de mmBERT (JHU-CLSP): [https://github.com/JHU-CLSP/mmBERT/](https://github.com/JHU-CLSP/mmBERT/)
 - Web de EuroEval: [https://euroeval.com/](https://euroeval.com/)
 - Paper de mmBERT (referenciado en el repo): [arXiv:1910.09700](https://arxiv.org/abs/1910.09700) (citado en la model card, aunque corresponde a la estimación de emisiones de carbono, no a la arquitectura)

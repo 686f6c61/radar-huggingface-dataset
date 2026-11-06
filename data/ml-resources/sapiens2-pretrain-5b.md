@@ -89,13 +89,13 @@ Frente a backbones genericos de vision como DINOv2 o CLIP, la informacion dispon
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/ml-resources/sapiens2-pretrain-5b
-- Repositorio oficial en HuggingFace: https://huggingface.co/facebook/sapiens2-pretrain-5b
+- Repositorio en Hugging Face (espejo): https://huggingface.co/ml-resources/sapiens2-pretrain-5b
+- Repositorio oficial en Hugging Face: https://huggingface.co/facebook/sapiens2-pretrain-5b
 - Paper: https://arxiv.org/pdf/2604.21681
 - Pagina del proyecto: https://rawalkhirodkar.github.io/sapiens2
 - Codigo fuente: https://github.com/facebookresearch/sapiens2
 - Licencia: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
-- Coleccion Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Coleccion Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2
 - Variante Sapiens2-0.1B: https://huggingface.co/facebook/sapiens2-pretrain-0.1b
 - Variante Sapiens2-0.4B: https://huggingface.co/facebook/sapiens2-pretrain-0.4b
 - Variante Sapiens2-0.8B: https://huggingface.co/facebook/sapiens2-pretrain-0.8b

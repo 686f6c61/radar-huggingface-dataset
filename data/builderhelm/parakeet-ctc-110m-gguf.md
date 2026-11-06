@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de resultados comparativos contro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BuilderHelm/Parakeet-CTC-110M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Parakeet-CTC-110M-GGUF
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Repositorio parakeet.cpp (v0.5.0): https://github.com/mudler/parakeet.cpp/tree/v0.5.0
 - Benchmark reproducible: https://huggingface.co/BuilderHelm/Parakeet-CTC-110M-GGUF/blob/b3db7c2b2150bd97ebec2874f85577957ae55a5d/BENCHMARK.md

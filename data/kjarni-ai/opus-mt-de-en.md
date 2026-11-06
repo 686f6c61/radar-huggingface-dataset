@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo modelo base y a la direccion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kjarni-ai/opus-mt-de-en
+- Repositorio Hugging Face: https://huggingface.co/kjarni-ai/opus-mt-de-en
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-de-en
 - Modelo de direccion inversa: https://huggingface.co/kjarni-ai/opus-mt-en-de
 - Documentacion y descarga de Kjarni: https://kjarni.ai

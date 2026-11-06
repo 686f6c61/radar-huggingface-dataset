@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa con modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yyuncong/SyncWorld
+- Modelo en Hugging Face: https://huggingface.co/yyuncong/SyncWorld
 - Repositorio GitHub del proyecto: https://github.com/yyuncong/SyncWorld
 - Licencia OpenMDW-1.1: https://github.com/NVIDIA/Cosmos/blob/main/LICENSE
 - Pagina personal del autor: https://yyuncong.github.io/

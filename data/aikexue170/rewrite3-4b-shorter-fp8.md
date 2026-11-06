@@ -65,10 +65,10 @@ El unico dato de rendimiento declarado es el de la cabeza MTP: teacher-forced to
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rewrite3-shorter-4B (este) | 4.660 M | 32.768 | Reescritura de ficcion con CoT y compresion | Sujeta a Qwen3.5 | HuggingFace |
-| rewrite2-4b | no disponible | no disponible | Reescritura sin CoT, requiere trocear la entrada | no disponible | HuggingFace (variante GGUF) |
-| Qwen3.5-4B (base) | ~4.000 M (aproximado) | no disponible | Modelo generalista | Licencia Qwen3.5 | HuggingFace |
-| jev-novel-3-0.8b-fp8 | 800 M | no disponible | Puntuacion de "mala calidad" por frase (herramienta auxiliar) | no disponible | HuggingFace |
+| rewrite3-shorter-4B (este) | 4.660 M | 32.768 | Reescritura de ficcion con CoT y compresion | Sujeta a Qwen3.5 | Hugging Face |
+| rewrite2-4b | no disponible | no disponible | Reescritura sin CoT, requiere trocear la entrada | no disponible | Hugging Face (variante GGUF) |
+| Qwen3.5-4B (base) | ~4.000 M (aproximado) | no disponible | Modelo generalista | Licencia Qwen3.5 | Hugging Face |
+| jev-novel-3-0.8b-fp8 | 800 M | no disponible | Puntuacion de "mala calidad" por frase (herramienta auxiliar) | no disponible | Hugging Face |
 
 La comparacion con modelos generalistas de proposito similar no esta disponible en la informacion proporcionada.
 
@@ -86,6 +86,6 @@ La comparacion con modelos generalistas de proposito similar no esta disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aikexue170/rewrite3-4b-shorter-fp8
+- Modelo en Hugging Face: https://huggingface.co/aikexue170/rewrite3-4b-shorter-fp8
 - Modelo auxiliar de puntuacion: https://huggingface.co/aikexue170/jev-novel-3-0.8b-fp8
 - Generacion anterior (rewrite2): https://huggingface.co/aikexue170/rewrite2-4b-gguf

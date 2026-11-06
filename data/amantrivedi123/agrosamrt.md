@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AgroSamrt es un repositorio de modelo publicado en HuggingFace por el usuario AmanTrivedi123 bajo licencia MIT. El identificador del repositorio (AmanTrivedi123/AgroSamrt) contiene una errata evidente respecto a «AgroSmart», lo que sugiere un proposito vinculado al ambito agropecuario, si bien esta interpretacion procede unicamente del nombre y no de documentacion verificable.
+AgroSamrt es un repositorio de modelo publicado en Hugging Face por el usuario AmanTrivedi123 bajo licencia MIT. El identificador del repositorio (AmanTrivedi123/AgroSamrt) contiene una errata evidente respecto a «AgroSmart», lo que sugiere un proposito vinculado al ambito agropecuario, si bien esta interpretacion procede unicamente del nombre y no de documentacion verificable.
 
 En el momento de redactar esta ficha el repositorio no registra descargas ni likes, no declara pipeline de inferencia, no indica idiomas soportados y su model card se limita al campo de licencia (MIT), sin descripcion funcional, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 0,1 GB, un tamano compatible con un modelo pequeno, con un adaptador de tipo LoRA o incluso con un conjunto de ficheros de configuracion sin pesos publicados.
 
@@ -90,7 +90,7 @@ No disponible. Sin conocer la categoria, el tamano, el dominio de entrenamiento 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AmanTrivedi123/AgroSamrt
+- Repositorio en Hugging Face: https://huggingface.co/AmanTrivedi123/AgroSamrt
 - Model card original: se limita al campo `license: mit`, sin contenido adicional.
 - Paper tecnico: no disponible.
 - Repositorio de codigo: no disponible.

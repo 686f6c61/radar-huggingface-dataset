@@ -86,7 +86,7 @@ La comparacion con otros codificadores de voz con prosodia (por ejemplo, variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qqjz/WhisperPro
+- Modelo en Hugging Face: https://huggingface.co/qqjz/WhisperPro
 - Modelo emparejado TextPro-SLM-7B-Global: https://huggingface.co/qqjz/TextPro-SLM-7B-Global
 - Variante de audio largo WhisperPro-30Plus: https://huggingface.co/qqjz/WhisperPro-30Plus
 - Modelo base OpenAI Whisper large-v3: https://huggingface.co/openai/whisper-large-v3

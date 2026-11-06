@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`RodrigoFlorencio/qwen3-4b-bulas-merged` es un modelo de generación de texto publicado en HuggingFace por el usuario RodrigoFlorencio. Se trata de un merge de pesos derivado de la familia Qwen3, con 4.022.468.096 parámetros totales confirmados a partir de los safetensors del repositorio, lo que lo sitúa en la gama de 4B parámetros. El repositorio ocupa 8,1 GB y se distribuye en formato safetensors compatible con la librería `transformers`.
+`RodrigoFlorencio/qwen3-4b-bulas-merged` es un modelo de generación de texto publicado en Hugging Face por el usuario RodrigoFlorencio. Se trata de un merge de pesos derivado de la familia Qwen3, con 4.022.468.096 parámetros totales confirmados a partir de los safetensors del repositorio, lo que lo sitúa en la gama de 4B parámetros. El repositorio ocupa 8,1 GB y se distribuye en formato safetensors compatible con la librería `transformers`.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card es la plantilla automática de HuggingFace sin cumplimentar, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento ni resultados de evaluación. El nombre sugiere un merge de un modelo base Qwen3-4B con algún fine-tuning denominado "bulas", pero no hay documentación que lo confirme. Cualquier uso en producción debería ir precedido de una evaluación propia.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card es la plantilla automática de Hugging Face sin cumplimentar, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento ni resultados de evaluación. El nombre sugiere un merge de un modelo base Qwen3-4B con algún fine-tuning denominado "bulas", pero no hay documentación que lo confirme. Cualquier uso en producción debería ir precedido de una evaluación propia.
 
 El interés técnico principal reside en que, al conservar el tokenizador y la arquitectura de Qwen3, hereda las capacidades del modelo base (generación, razonamiento, código, tool calling, modo thinking), pero las modificaciones introducidas por el merge no están documentadas y pueden degradar o alterar dichas capacidades de forma no verificada.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|---|
-| RodrigoFlorencio/qwen3-4b-bulas-merged | 4,02B | no disponible | no disponible | Plantilla vacía | HuggingFace, safetensors |
-| Qwen3-4B (base oficial) | ~4B | no disponible en esta ficha | Apache 2.0 (según la familia Qwen3) | Model card completa | HuggingFace, safetensors, GGUF |
-| Llama 3.2 3B Instruct | ~3B | 128K (según Meta) | Llama 3.2 Community License | Model card completa | HuggingFace, GGUF |
-| Gemma 3 4B | ~4B | no disponible en esta ficha | Gemma Terms of Use | Model card completa | HuggingFace, GGUF |
+| RodrigoFlorencio/qwen3-4b-bulas-merged | 4,02B | no disponible | no disponible | Plantilla vacía | Hugging Face, safetensors |
+| Qwen3-4B (base oficial) | ~4B | no disponible en esta ficha | Apache 2.0 (según la familia Qwen3) | Model card completa | Hugging Face, safetensors, GGUF |
+| Llama 3.2 3B Instruct | ~3B | 128K (según Meta) | Llama 3.2 Community License | Model card completa | Hugging Face, GGUF |
+| Gemma 3 4B | ~4B | no disponible en esta ficha | Gemma Terms of Use | Model card completa | Hugging Face, GGUF |
 
 La comparación se limita a parámetros, licencia y disponibilidad porque el modelo analizado no publica contexto, idiomas ni benchmarks. Frente a las alternativas, la desventaja principal es la ausencia de licencia y de documentación, lo que impide su uso comercial y dificulta la reproducibilidad.
 
@@ -92,7 +92,7 @@ La comparación se limita a parámetros, licencia y disponibilidad porque el mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RodrigoFlorencio/qwen3-4b-bulas-merged
+- Hugging Face: https://huggingface.co/RodrigoFlorencio/qwen3-4b-bulas-merged
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales específicos de este modelo.

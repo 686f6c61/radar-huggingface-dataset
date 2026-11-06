@@ -77,7 +77,7 @@ No hay datos de otros modelos de 9B con los que comparar directamente en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Huihui-Ornith-1.5-9B-abliterated-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Huihui-Ornith-1.5-9B-abliterated-i1-GGUF
 - Repositorio base (huihui-ai/Huihui-Ornith-1.5-9B-abliterated): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Repositorio estático de cuantizaciones (sin imatrix): https://huggingface.co/mradermacher/Huihui-Ornith-1.5-9B-abliterated-GGUF
 - Modelo original Ornith-1.5-9B (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-9B (referencia de licencia)

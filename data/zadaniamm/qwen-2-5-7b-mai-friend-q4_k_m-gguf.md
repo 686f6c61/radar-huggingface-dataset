@@ -43,7 +43,7 @@ La ausencia de model card detallada en el modelo base enlazado constituye la pri
 - Tool calling / function calling: no disponible en la informacion proporcionada; no se menciona soporte alguno.
 - Capacidades de agente y razonamiento multi-paso: no disponibles en la informacion proporcionada.
 - Vision, audio o modo "thinking": no disponibles; no se declaran en la model card ni en los tags.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el artefacto puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el artefacto puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -95,7 +95,7 @@ Los datos de contexto y licencia de los modelos alternativos corresponden a sus 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zadaniamm/qwen-2.5-7b-mai-friend-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zadaniamm/qwen-2.5-7b-mai-friend-Q4_K_M-GGUF
 - Modelo base (bf16 fusionado): https://huggingface.co/zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

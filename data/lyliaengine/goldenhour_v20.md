@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Golden Hour v2.0 es un adaptador LoRA de generacion de imagenes desarrollado por LyliaEngine, disenado para producir personajes con una estetica muy cuidada, caracterizada por una iluminacion calida y cinematografica, suave y luminosa. El modelo se basa en Illustrious XL, una variante de SDXL especializada en ilustracion de alta calidad, y esta disponible en HuggingFace bajo la licencia CDLA Permissive 2.0. Su proposito es capturar el "momento dorado" de la fotografia: contraluces, luz de borde, bokeh y un ambiente general de calidez que realza la expresividad de los ojos, la textura de la piel y el detalle del cabello.
+Golden Hour v2.0 es un adaptador LoRA de generacion de imagenes desarrollado por LyliaEngine, disenado para producir personajes con una estetica muy cuidada, caracterizada por una iluminacion calida y cinematografica, suave y luminosa. El modelo se basa en Illustrious XL, una variante de SDXL especializada en ilustracion de alta calidad, y esta disponible en Hugging Face bajo la licencia CDLA Permissive 2.0. Su proposito es capturar el "momento dorado" de la fotografia: contraluces, luz de borde, bokeh y un ambiente general de calidez que realza la expresividad de los ojos, la textura de la piel y el detalle del cabello.
 
 Aunque se trata de un adaptador LoRA y no de un modelo completo, su relevancia radica en ofrecer un estilo semi-realista equilibrado entre ilustracion y realismo, muy demandado en comunidades de arte digital y diseno de personajes. El autor indica que no requiere trigger word especifico, lo que simplifica su uso con cualquier prompt descriptivo. La informacion publica no incluye detalles sobre el proceso de entrenamiento, parametros ni volumen de datos, por lo que gran parte de las especificaciones tecnicas permanecen no disponibles.
 
@@ -67,7 +67,7 @@ No se dispone de informacion comparativa con otros adaptadores LoRA de estetica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LyliaEngine/goldenHour_v20
+- Modelo en Hugging Face: https://huggingface.co/LyliaEngine/goldenHour_v20
 - Version anterior v1.0: https://huggingface.co/LyliaEngine/goldenHour_v10
 - Perfil del autor: https://huggingface.co/LyliaEngine
 - Pagina en Civitai: https://civitai.com/models/2433139/golden-hour

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `thomasavare/Qwen3-Embedding-8B-22` es un artefacto publicado en HuggingFace por el usuario thomasavare. La unica documentacion disponible es la plantilla automatica generada por la integracion `PyTorchModelHubMixin`, que no aporta informacion sobre el proposito, el entrenamiento ni el uso previsto del modelo. No hay model card real, ni paper, ni repositorio de codigo asociado.
+El repositorio `thomasavare/Qwen3-Embedding-8B-22` es un artefacto publicado en Hugging Face por el usuario thomasavare. La unica documentacion disponible es la plantilla automatica generada por la integracion `PyTorchModelHubMixin`, que no aporta informacion sobre el proposito, el entrenamiento ni el uso previsto del modelo. No hay model card real, ni paper, ni repositorio de codigo asociado.
 
 El nombre del repositorio sugiere una relacion con la familia Qwen3-Embedding de 8.000 millones de parametros, pero esta relacion no esta confirmada en ningun documento del repositorio. Ademas, los metadatos de safetensors declaran 132.738 parametros totales, una cifra que resulta incompatible tanto con el sufijo "8B" del nombre como con el tamano del repositorio (0,3 GB), lo que apunta a un artefacto incompleto, a un modelo de prueba o a un error de publicacion.
 
@@ -98,7 +98,7 @@ No disponible: la informacion suministrada no permite establecer una comparativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thomasavare/Qwen3-Embedding-8B-22
+- Repositorio en Hugging Face: https://huggingface.co/thomasavare/Qwen3-Embedding-8B-22
 - Documentacion de `PyTorchModelHubMixin` citada en el README: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible ("More Information Needed" en el README)
 - Codigo: no disponible ("More Information Needed" en el README)

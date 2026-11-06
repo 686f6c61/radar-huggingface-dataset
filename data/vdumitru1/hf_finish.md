@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vdumitru1/HF_finish` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario `vdumitru1`. Se trata de un modelo denso de 494.032.768 parametros (aproximadamente 0,49 mil millones) con arquitectura Qwen2, pesos en safetensors y compatibilidad declarada con `transformers`, `text-generation-inference` y endpoints compatibles con la API de inferencia. El repositorio ocupa 1,0 GB y fue creado y actualizado el 10 de septiembre de 2026, con un intervalo entre ambas operaciones de poco mas de un minuto.
+`vdumitru1/HF_finish` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario `vdumitru1`. Se trata de un modelo denso de 494.032.768 parametros (aproximadamente 0,49 mil millones) con arquitectura Qwen2, pesos en safetensors y compatibilidad declarada con `transformers`, `text-generation-inference` y endpoints compatibles con la API de inferencia. El repositorio ocupa 1,0 GB y fue creado y actualizado el 10 de septiembre de 2026, con un intervalo entre ambas operaciones de poco mas de un minuto.
 
-El modelo no dispone de model card real: el README es la plantilla autogenerada por HuggingFace, con todos los campos marcados como `[More Information Needed]`. No se declara licencia, ni idiomas, ni datos de entrenamiento, ni resultados de evaluacion. La unica informacion sustantiva proviene de las etiquetas del repositorio (`qwen2`, `llama-factory`, `conversational`, `text-generation`) y del recuento de parametros extraido de los archivos safetensors.
+El modelo no dispone de model card real: el README es la plantilla autogenerada por Hugging Face, con todos los campos marcados como `[More Information Needed]`. No se declara licencia, ni idiomas, ni datos de entrenamiento, ni resultados de evaluacion. La unica informacion sustantiva proviene de las etiquetas del repositorio (`qwen2`, `llama-factory`, `conversational`, `text-generation`) y del recuento de parametros extraido de los archivos safetensors.
 
 El recuento de parametros coincide exactamente con el de Qwen2-0.5B (494.032.768 parametros), y la etiqueta `llama-factory` apunta a que se trata de un ajuste fino supervisado o de tipo conversacional realizado con esa herramienta sobre un modelo base Qwen2. Esta afinidad es una inferencia razonable a partir de los metadatos, no un dato confirmado por el autor. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un artefacto sin validacion comunitaria ni trazabilidad documental.
 
@@ -77,11 +77,11 @@ Los datos de los modelos de referencia proceden de su documentacion publica y de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| vdumitru1/HF_finish | 494 M | No disponible | No disponible | HuggingFace, sin descargas | Fine-tune sin model card ni evaluacion |
-| Qwen2-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base probable de este checkpoint |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace | Generacion posterior de la familia, con mejoras en datos y alineacion |
-| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa de tamano similar orientada a dispositivos con poca memoria |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | HuggingFace | Mayor numero de parametros, contexto mas corto |
+| vdumitru1/HF_finish | 494 M | No disponible | No disponible | Hugging Face, sin descargas | Fine-tune sin model card ni evaluacion |
+| Qwen2-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base probable de este checkpoint |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face | Generacion posterior de la familia, con mejoras en datos y alineacion |
+| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa de tamano similar orientada a dispositivos con poca memoria |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | Hugging Face | Mayor numero de parametros, contexto mas corto |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ Los datos de los modelos de referencia proceden de su documentacion publica y de
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/vdumitru1/HF_finish
+- Pagina de Hugging Face: https://huggingface.co/vdumitru1/HF_finish
 - Repositorio de LLaMA-Factory (herramienta indicada en las etiquetas): https://github.com/hiyouga/LLaMA-Factory
 - Modelo base probable, Qwen2-0.5B: https://huggingface.co/Qwen/Qwen2-0.5B
 - Familia Qwen2.5, generacion posterior de modelos comparables: https://huggingface.co/Qwen/Qwen2.5-0.5B

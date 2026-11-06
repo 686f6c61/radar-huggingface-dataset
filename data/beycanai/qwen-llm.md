@@ -122,7 +122,7 @@ Comparacion con alternativas externas de la misma categoria (text encoders para 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/beycanai/Qwen-LLM
+- Repositorio de Hugging Face: https://huggingface.co/beycanai/Qwen-LLM
 - Comfy-Org/Qwen3.5 (origen del empaquetado ComfyUI): https://huggingface.co/Comfy-Org/Qwen3.5
 - Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Qwen/Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

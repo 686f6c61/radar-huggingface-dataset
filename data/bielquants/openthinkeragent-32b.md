@@ -91,8 +91,8 @@ Las cifras siguientes son estimaciones derivadas del tamaño de 32B parámetros 
 
 | Modelo | Parametros | Contexto | SWE-Bench-Verified-100 (Terminus-2) | Terminal-Bench 2.0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenThinkerAgent-32B | 32B | 32.768 (cutoff de entrenamiento) | 55,7 | 26,2 | Apache 2.0 | Pesos safetensors en HuggingFace |
-| Qwen/Qwen3-32B (base) | 32B | no disponible en la informacion proporcionada | 26,7 | 7,5 | Apache 2.0 | Pesos en HuggingFace |
+| OpenThinkerAgent-32B | 32B | 32.768 (cutoff de entrenamiento) | 55,7 | 26,2 | Apache 2.0 | Pesos safetensors en Hugging Face |
+| Qwen/Qwen3-32B (base) | 32B | no disponible en la informacion proporcionada | 26,7 | 7,5 | Apache 2.0 | Pesos en Hugging Face |
 | Otros modelos agénticos de 32B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada solo permite una comparación cuantitativa directa contra Qwen3-32B, que es además el modelo base sobre el que se entrena. No hay datos publicados en esta información para comparar con alternativas de la misma categoría, como otros modelos de 32B orientados a agentes o a código.
@@ -113,7 +113,7 @@ La información proporcionada solo permite una comparación cuantitativa directa
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/bielquants/OpenThinkerAgent-32B
+- Repositorio analizado en Hugging Face: https://huggingface.co/bielquants/OpenThinkerAgent-32B
 - Repositorio original del autor del modelo: https://huggingface.co/open-thoughts/OpenThinkerAgent-32B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts-Agent-SFT-100K

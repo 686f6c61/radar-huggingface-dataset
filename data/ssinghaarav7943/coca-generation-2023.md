@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ssinghaarav7943/coca-generation-2023` es un repositorio de HuggingFace publicado por el usuario Ssinghaarav7943 que contiene un prototipo de investigación denominado "Coca for Generation". No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación con una configuración de arquitectura, un script de ejecución y un checkpoint de inicialización. La model card es explícita al respecto: el fichero `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no se presenta como un checkpoint entrenado con benchmarks.
+`Ssinghaarav7943/coca-generation-2023` es un repositorio de Hugging Face publicado por el usuario Ssinghaarav7943 que contiene un prototipo de investigación denominado "Coca for Generation". No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación con una configuración de arquitectura, un script de ejecución y un checkpoint de inicialización. La model card es explícita al respecto: el fichero `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no se presenta como un checkpoint entrenado con benchmarks.
 
 El modelo declara una arquitectura tipo Coca a escala "xlarge", con atención estándar, fusión mediante cross-attention, activación GELU y normalización ScaleNorm. La receta de entrenamiento por defecto emplea el optimizador Novograd con un scheduler polinómico, aunque el autor advierte que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ssinghaarav7943/coca-generation-2023
+- Repositorio en Hugging Face: https://huggingface.co/Ssinghaarav7943/coca-generation-2023
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

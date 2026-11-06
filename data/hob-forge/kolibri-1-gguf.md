@@ -83,7 +83,7 @@ El autor advierte que la muestra de perplexidad es demasiado pequena para consid
 - Opciones de despliegue: llama.cpp (compilado con el parche). Ollama, LM Studio y otras aplicaciones basadas en llama.cpp no cargaran el archivo hasta que integren soporte para la arquitectura.
 - Comando de ejemplo: `./build/bin/llama-server -m Kolibri-1-Q4_K_M.gguf -c 32768 --jinja --temp 1.0 --top-p 0.97 --top-k 128`.
 - Para los archivos divididos (Q5_K_M, Q6_K, Q8_0) hay que apuntar llama.cpp a la primera parte; la segunda se carga automaticamente.
-- Aviso del autor: los indicadores de hardware de HuggingFace solo cuentan memoria de GPU; estos archivos funcionan desde RAM del sistema y, con GPU, llama.cpp puede mantener parte en VRAM y el resto en RAM.
+- Aviso del autor: los indicadores de hardware de Hugging Face solo cuentan memoria de GPU; estos archivos funcionan desde RAM del sistema y, con GPU, llama.cpp puede mantener parte en VRAM y el resto en RAM.
 
 ## Comparativa con modelos similares
 

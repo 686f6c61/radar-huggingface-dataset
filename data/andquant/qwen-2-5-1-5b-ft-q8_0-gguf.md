@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| andquant/qwen-2.5-1.5b-ft-Q8_0-GGUF | 1,5B | no disponible | no disponible | GGUF Q8_0 | HuggingFace, 7 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (ampliable con YaRN, dato publico de la familia) | Apache-2.0 | safetensors, GGUF | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens (dato publico de la familia) | Llama 3.2 Community License | safetensors, GGUF | HuggingFace |
-| google/gemma-2-2b-it | 2,6B | 8.192 tokens (dato publico de la familia) | Gemma Terms of Use | safetensors, GGUF | HuggingFace |
+| andquant/qwen-2.5-1.5b-ft-Q8_0-GGUF | 1,5B | no disponible | no disponible | GGUF Q8_0 | Hugging Face, 7 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (ampliable con YaRN, dato publico de la familia) | Apache-2.0 | safetensors, GGUF | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens (dato publico de la familia) | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
+| google/gemma-2-2b-it | 2,6B | 8.192 tokens (dato publico de la familia) | Gemma Terms of Use | safetensors, GGUF | Hugging Face |
 
 Los datos de contexto y licencia de los modelos comparados corresponden a informacion publica de sus respectivas familias y no se han verificado contra la documentacion de este repositorio concreto. No hay datos de rendimiento comparativo disponibles para el modelo objeto de la ficha, por lo que no se puede establecer una comparacion cuantitativa de calidad.
 
@@ -91,7 +91,7 @@ Los datos de contexto y licencia de los modelos comparados corresponden a inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andquant/qwen-2.5-1.5b-ft-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/andquant/qwen-2.5-1.5b-ft-Q8_0-GGUF
 - Modelo base (referenciado por el autor): https://huggingface.co/andquant/qwen-2.5-1.5b-ft
 - Espacio GGUF-my-repo usado para la conversion: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

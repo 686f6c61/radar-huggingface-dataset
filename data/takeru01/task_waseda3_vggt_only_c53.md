@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `takeru01/task_waseda3_VGGT_only_c53` es un checkpoint publicado en HuggingFace por el usuario `takeru01`. Se trata de un modelo de pequeñas dimensiones, con 51.904.144 parámetros reales declarados en los metadatos de los archivos safetensors, y un repositorio de 0,2 GB. El nombre del repositorio sugiere una variante o ajuste fino asociado a la tarea "waseda3" y al acrónimo VGGT, aunque esta correspondencia no está confirmada por la información disponible y debe tratarse como una inferencia a partir del identificador, no como un dato verificado.
+El modelo identificado como `takeru01/task_waseda3_VGGT_only_c53` es un checkpoint publicado en Hugging Face por el usuario `takeru01`. Se trata de un modelo de pequeñas dimensiones, con 51.904.144 parámetros reales declarados en los metadatos de los archivos safetensors, y un repositorio de 0,2 GB. El nombre del repositorio sugiere una variante o ajuste fino asociado a la tarea "waseda3" y al acrónimo VGGT, aunque esta correspondencia no está confirmada por la información disponible y debe tratarse como una inferencia a partir del identificador, no como un dato verificado.
 
-El modelo no declara pipeline de HuggingFace, licencia, idiomas soportados ni descripción en la ficha pública. Tampoco se han encontrado resultados de benchmarks, papers, blogs ni repositorios asociados en la búsqueda web realizada; los resultados devueltos por el buscador corresponden a consultas sobre Google Maps y no guardan relación con este modelo. En consecuencia, buena parte de las especificaciones habituales (arquitectura, contexto, datos de entrenamiento, cuantizaciones soportadas) figuran como no disponibles.
+El modelo no declara pipeline de Hugging Face, licencia, idiomas soportados ni descripción en la ficha pública. Tampoco se han encontrado resultados de benchmarks, papers, blogs ni repositorios asociados en la búsqueda web realizada; los resultados devueltos por el buscador corresponden a consultas sobre Google Maps y no guardan relación con este modelo. En consecuencia, buena parte de las especificaciones habituales (arquitectura, contexto, datos de entrenamiento, cuantizaciones soportadas) figuran como no disponibles.
 
 Su relevancia actual es limitada y de carácter exploratorio: se trata de un checkpoint con 16 descargas y 0 likes en el momento de la consulta, sin documentación asociada. Resulta adecuado únicamente como objeto de inspección técnica del propio archivo de pesos, no como componente listo para producción sin una evaluación previa por parte del usuario.
 
@@ -50,7 +50,7 @@ Dado que no se dispone de informacion sobre arquitectura, modalidad ni rendimien
 - Reproduccion de un experimento de investigacion: si el identificador `waseda3` corresponde a una tarea registrada en un trabajo academico, el checkpoint podria servir para replicar resultados, siempre que se localice el codigo original.
 - Punto de partida para ajuste fino propio: con 51,9 M de parametros, el coste de reentrenamiento parcial es bajo en una GPU de consumo, aunque sin conocer la tarea objetivo ni la tokenizer asociada el ajuste no es viable directamente.
 - Evaluacion comparativa interna: usar el checkpoint como linea base de un experimento propio, midiendo su comportamiento frente a un modelo equivalente del mismo autor o de la misma serie.
-- Estudio de checkpoints de bajo uso: analizar como se publican artefactos sin documentacion en HuggingFace, util para quienes disenan pipelines de catalogacion automatica de modelos.
+- Estudio de checkpoints de bajo uso: analizar como se publican artefactos sin documentacion en Hugging Face, util para quienes disenan pipelines de catalogacion automatica de modelos.
 - Pruebas de carga y formato: integrar el safetensors en un cargador generico para verificar la compatibilidad del formato y estimar tiempos de carga, sin pretender inferencia significativa.
 
 Fuera de estos escenarios de inspeccion tecnica, no se recomienda su uso en produccion.
@@ -90,5 +90,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/takeru01/task_waseda3_VGGT_only_c53
+- Modelo en Hugging Face: https://huggingface.co/takeru01/task_waseda3_VGGT_only_c53
 - Resultados de busqueda web: los unicos enlaces devueltos corresponden a consultas no relacionadas con el modelo (subreddit r/GoogleMaps, soporte de Google Maps y dos hilos de Stack Overflow sobre la API de Google Maps), por lo que no se incluyen como referencias tecnicas validas. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este checkpoint.

@@ -80,9 +80,9 @@ La información proporcionada solo permite comparar con la variante cuantizada d
 
 | Modelo | Parametros | Contexto | Precision y tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenGryd/PaddleOCR-VL-1.6-MLX-16bit | 905.601.648 | 131.072 tokens | bfloat16, 1,81 GB | Apache-2.0 | HuggingFace, requiere mlx-vlm y `trust_remote_code` |
-| OpenGryd/PaddleOCR-VL-1.6-MLX-8bit | No disponible en la informacion | No disponible en la informacion | 8 bits, 1,09 GB | Apache-2.0 | HuggingFace, mismo autor |
-| PaddlePaddle/PaddleOCR-VL-1.6 | 0,9B (aproximadamente) | No disponible en la informacion | Precisión original del modelo base | Apache-2.0 | HuggingFace, ecosistema PaddlePaddle |
+| OpenGryd/PaddleOCR-VL-1.6-MLX-16bit | 905.601.648 | 131.072 tokens | bfloat16, 1,81 GB | Apache-2.0 | Hugging Face, requiere mlx-vlm y `trust_remote_code` |
+| OpenGryd/PaddleOCR-VL-1.6-MLX-8bit | No disponible en la informacion | No disponible en la informacion | 8 bits, 1,09 GB | Apache-2.0 | Hugging Face, mismo autor |
+| PaddlePaddle/PaddleOCR-VL-1.6 | 0,9B (aproximadamente) | No disponible en la informacion | Precisión original del modelo base | Apache-2.0 | Hugging Face, ecosistema PaddlePaddle |
 
 El criterio de elección entre las dos conversiones MLX es directo: la de 8 bits reduce a la mitad el consumo de memoria y disco, mientras que la de 16 bits preserva la fidelidad del modelo base al no introducir error de cuantización.
 
@@ -102,7 +102,7 @@ El criterio de elección entre las dos conversiones MLX es directo: la de 8 bits
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenGryd/PaddleOCR-VL-1.6-MLX-16bit
+- Repositorio en Hugging Face: https://huggingface.co/OpenGryd/PaddleOCR-VL-1.6-MLX-16bit
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Variante de 8 bits del mismo autor: https://huggingface.co/OpenGryd/PaddleOCR-VL-1.6-MLX-8bit
 - Libreria de inferencia mlx-vlm: https://github.com/Blaizzy/mlx-vlm

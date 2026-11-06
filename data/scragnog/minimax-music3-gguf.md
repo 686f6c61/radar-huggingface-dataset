@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scragnog/MiniMax-Music3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/scragnog/MiniMax-Music3-GGUF
 - Modelo base (MiniMaxAI/MiniMax-Music3): https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
 - Proyecto HOT-Step CPP: https://github.com/scragnog/HOT-Step-CPP

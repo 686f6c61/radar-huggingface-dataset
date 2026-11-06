@@ -91,7 +91,7 @@ Notas de la comparativa: la ventaja diferencial de SAM3 frente a SAM2 y MobileSA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wkentaro/sam3-onnx-models-v0.5.0
+- Modelo en Hugging Face: https://huggingface.co/wkentaro/sam3-onnx-models-v0.5.0
 - Modelo base: https://huggingface.co/facebook/sam3
 - Repositorio sam3 (Meta, oficial): https://github.com/facebookresearch/sam3
 - Repositorio sam3-onnx (exportación): https://github.com/wkentaro/sam3-onnx

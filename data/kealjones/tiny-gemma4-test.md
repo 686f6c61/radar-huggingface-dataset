@@ -32,7 +32,7 @@ No se dispone de información sobre el número de tokens de destilación, la com
 - Generación de texto conversacional (pipeline conversational), con calidad degradada: el autor documenta divagación y repetición.
 - Hereda parcialmente las capacidades del modelo base Gemma 4 E2B-it, aunque la poda y la destilación incompleta las degradan de forma significativa.
 - Ejecución en navegador vía wllama / llama.cpp, lo que permite inferencia 100 % local sin servidor.
-- Carga en endpoints compatibles de HuggingFace (endpoints_compatible).
+- Carga en endpoints compatibles de Hugging Face (endpoints_compatible).
 - No consta soporte de tool calling, agentes, visión ni audio en la información disponible.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las n
 - VRAM/RAM estimada: el repo ocupa 3,5 GB en GGUF; con cuantización agresiva típica de GGUF (Q4/Q8), la huella en memoria debería situarse entre aproximadamente 0,8 y 1,5 GB, aunque el dato exacto no está disponible. Al ejecutarse en navegador vía wasm, la memoria relevante es la RAM del proceso del navegador, no VRAM.
 - GPU recomendadas: no aplica; el modelo está diseñado para CPU y navegador. Cualquier portátil moderno debería ejecutarlo.
 - Consumer GPU: no es necesario; el objetivo es inferencia en CPU/wasm.
-- Opciones de despliegue: llama.cpp (build b11364), wllama (wasm en navegador), endpoints compatibles de HuggingFace. No consta soporte verificado en vLLM, TGI u Ollama.
+- Opciones de despliegue: llama.cpp (build b11364), wllama (wasm en navegador), endpoints compatibles de Hugging Face. No consta soporte verificado en vLLM, TGI u Ollama.
 - Latencia y throughput: no disponibles; el proyecto existe precisamente para medirlas, pero no se publican cifras en la ficha.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ Nota: la comparativa con Qwen3-1.7B es orientativa como modelo de tamaño simila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kealjones/tiny-gemma4-test
+- Modelo en Hugging Face: https://huggingface.co/kealjones/tiny-gemma4-test
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Notas del experimento (GitHub): https://github.com/KealJones/tp-parse/tree/main/experiments/tiny-gemma4

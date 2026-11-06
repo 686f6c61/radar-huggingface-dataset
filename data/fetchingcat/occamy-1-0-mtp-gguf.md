@@ -99,13 +99,13 @@ Los tres GGUF de Occamy comparten la misma arquitectura y el mismo linaje de fin
 - No hay resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) ni en este repositorio ni citados del release de Accio. No se puede evaluar la calidad del modelo con numeros.
 - Licencia apache-2.0 en este repositorio. Conviene verificar la licencia efectiva del modelo base Accio-Lab/occamy-1.0 antes de un uso comercial, ya que aqui solo consta la del artefacto de cuantizacion.
 - El repo no se ha descargado ni ha recibido likes en el momento de la consulta (0 descargas, 0 likes), por lo que no existe validacion de la comunidad sobre el injerto mas alla de las mediciones del propio autor.
-- El tamano de repositorio reportado por HuggingFace (1.9 GB) no se corresponde con la suma de los archivos listados en la model card (mas de 23 GB); es probable que se deba a como se contabiliza el almacenamiento LFS, pero conviene verificarlo al descargar.
+- El tamano de repositorio reportado por Hugging Face (1.9 GB) no se corresponde con la suma de los archivos listados en la model card (mas de 23 GB); es probable que se deba a como se contabiliza el almacenamiento LFS, pero conviene verificarlo al descargar.
 - La model card proporcionada aparece truncada al final (el apartado de cuantizacion termina en "Layer 40 is"), por lo que puede faltar informacion sobre el tratamiento de esa capa.
 - La cuantizacion Q4_K_M deja 13 tensores sin datos de imatrix (la cabeza MTP en `blk.40.*`, `token_embd.weight` y `output.weight`), que caen a las reglas por defecto de Q4_K_M. La cobertura por experto fue del 99,2% al 99,6% en las capas de 256 expertos, con una imatrix calculada sobre `calibration_datav3.txt` (129 fragmentos, contexto de 512 tokens).
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/fetchingcat/occamy-1.0-mtp-gguf
+- Hugging Face (este repositorio): https://huggingface.co/fetchingcat/occamy-1.0-mtp-gguf
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Modelo base del linaje: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Cuantizacion alternativa de bartowski: https://huggingface.co/bartowski/Accio-Lab_occamy-1.0-GGUF

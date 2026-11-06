@@ -72,10 +72,10 @@ El autor reporta además que, sobre 40 semillas nuevas (desde 1.000.000), el fic
 
 | Modelo | Parámetros | Contexto | Rendimiento (media 5 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rumezhak/microduck-sock-heist-second-green-v2` (este) | 197.774 pesos en la red base; artefacto ONNX | no aplica | 5,052 s | no disponible | HuggingFace |
-| `jrubiosainz/microduck-sock-heist-6m-94cd-tail` | no disponible | no aplica | 7,032 s | Apache-2.0 | HuggingFace |
-| `a1rb4Ck/microduck-heist` | no disponible | no aplica | no disponible en la información | Apache-2.0 | HuggingFace |
-| `lphatnguyen/microduck-sock-heist-6m-v3` | 197.774 pesos | no aplica | no disponible como entrada de la Arena; base del respaldo | sin licencia declarada | HuggingFace |
+| `rumezhak/microduck-sock-heist-second-green-v2` (este) | 197.774 pesos en la red base; artefacto ONNX | no aplica | 5,052 s | no disponible | Hugging Face |
+| `jrubiosainz/microduck-sock-heist-6m-94cd-tail` | no disponible | no aplica | 7,032 s | Apache-2.0 | Hugging Face |
+| `a1rb4Ck/microduck-heist` | no disponible | no aplica | no disponible en la información | Apache-2.0 | Hugging Face |
+| `lphatnguyen/microduck-sock-heist-6m-v3` | 197.774 pesos | no aplica | no disponible como entrada de la Arena; base del respaldo | sin licencia declarada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,9 +90,9 @@ El autor reporta además que, sobre 40 semillas nuevas (desde 1.000.000), el fic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sock-heist-second-green-v2
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sock-heist-second-green-v2
 - Modelo base (red de respaldo): https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3
 - Modelo base (grafo de *lookup*): https://huggingface.co/a1rb4Ck/microduck-heist
 - Entrada a batir (cola 94cd): https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-94cd-tail
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
-- Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics

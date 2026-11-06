@@ -85,11 +85,11 @@ Según el autor, Pluto-2.1 supera a d1-2B en 3.7 puntos y a d1-3B en 2.0 puntos 
 
 | Modelo | Parámetros | Typed Decisions | DecisionBench matched | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Pluto-2.1 | 1.738B | 0.6695 | 0.7208 | Apache-2.0 | HuggingFace (omida-ai/pluto-2.1) |
-| Bosun 3.1 1.7B | 1.738B | 0.4980 | 0.8288 | no disponible | HuggingFace (Hanno-Labs/bosun-v3.1-1.7b) |
+| Pluto-2.1 | 1.738B | 0.6695 | 0.7208 | Apache-2.0 | Hugging Face (omida-ai/pluto-2.1) |
+| Bosun 3.1 1.7B | 1.738B | 0.4980 | 0.8288 | no disponible | Hugging Face (Hanno-Labs/bosun-v3.1-1.7b) |
 | d1-3B | 3.123B | 0.6495 | 0.6486 | no disponible | no disponible |
 | d1-2B | 1.918B | 0.6325 | 0.6339 | no disponible | no disponible |
-| Pluto-2 400M | 0.397B | 0.7835 | 0.5789 | no disponible | HuggingFace (omida-ai) |
+| Pluto-2 400M | 0.397B | 0.7835 | 0.5789 | no disponible | Hugging Face (omida-ai) |
 
 Pluto-2.1 es el checkpoint equilibrado de la familia: Bosun lidera en DecisionBench (0.8288) y Pluto-2 400M lidera en Typed Decisions (0.7835), pero Pluto-2.1 obtiene la mejor media conjunta (0.6952) con 1.738B parámetros, un 9.4% menos que d1-2B y un 44% menos que d1-3B. La comparación se limita al subconjunto emparejado de DecisionBench (1.565 filas), no a la suite completa.
 
@@ -107,7 +107,7 @@ Pluto-2.1 es el checkpoint equilibrado de la familia: Bosun lidera en DecisionBe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omida-ai/pluto-2.1
+- Hugging Face: https://huggingface.co/omida-ai/pluto-2.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Inicializador: https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b
 - Dataset Typed Decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

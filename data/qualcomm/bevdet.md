@@ -83,7 +83,7 @@ No se dispone de información comparativa con otros modelos BEV (como BEVFormer,
 
 ## Enlaces
 
-- [HuggingFace - qualcomm/BEVDet](https://huggingface.co/qualcomm/BEVDet)
+- [Hugging Face - qualcomm/BEVDet](https://huggingface.co/qualcomm/BEVDet)
 - [Qualcomm AI Hub - BEVDet](https://aihub.qualcomm.com/mobile/models/bevdet)
 - [Repositorio GitHub de BEVDet original](https://github.com/HuangJunJie2017/BEVDet/)
 - [Repositorio GitHub de Qualcomm AI Hub Models - BEVDet](https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/bevdet)

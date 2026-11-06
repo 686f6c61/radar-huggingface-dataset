@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (RLVE OPD teacher) | 1,777 B | no disponible | no disponible | no disponible | Repo HuggingFace, 0 descargas |
+| Este checkpoint (RLVE OPD teacher) | 1,777 B | no disponible | no disponible | no disponible | Repo Hugging Face, 0 descargas |
 | Qwen 2.5 1.5B Instruct (modelo base) | 1,54 B aprox. | 32.768 tokens (según modelo base) | Benchmark publico en la model card de Qwen | Apache 2.0 (según modelo base) | Ampliamente disponible |
-| Otros profesores de la coleccion RLVE OPD | ~1,5 B | no disponible | no disponible | no disponible | Coleccion HuggingFace |
+| Otros profesores de la coleccion RLVE OPD | ~1,5 B | no disponible | no disponible | no disponible | Coleccion Hugging Face |
 
 Nota: los datos del modelo base Qwen 2.5 1.5B Instruct provienen de conocimiento general del ecosistema y no de la información proporcionada en esta ficha; deben verificarse en su repositorio oficial antes de usarse como referencia.
 
@@ -83,7 +83,7 @@ Nota: los datos del modelo base Qwen 2.5 1.5B Instruct provienen de conocimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-09-gaussianelimination-8d3ed33cc044
+- Repositorio Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-09-gaussianelimination-8d3ed33cc044
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Coleccion RLVE OPD Teachers (Qwen 2.5 1.5B): https://huggingface.co/collections/davidheineman/rlve-opd-teachers-qwen-25-15b
 - Paper MOPD (arXiv): https://arxiv.org/abs/2606.30406

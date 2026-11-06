@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DuckEngine-1-Search es un adaptador LoRA (PEFT) publicado por RehanKhan01126, construido mediante Supervised Fine-Tuning (SFT) sobre el modelo base unsloth/llama-3-8b-Instruct-bnb-4bit. El repositorio contiene unicamente los pesos del adaptador en formato safetensors, con un tamano de 0.2 GB, y utiliza las librerias Transformers, TRL y Unsloth para el entrenamiento. Segun la ficha de HuggingFace, no se proporciona informacion sobre el dataset, la arquitectura de adaptacion, el numero de parametros, la licencia ni las capacidades especificas, por lo que no es posible evaluar su rendimiento ni sus casos de uso sin acceder a documentacion adicional. Dado que el modelo base es Llama 3 8B Instruct, el adaptador podria aprovechar las capacidades generales de ese modelo, pero el alcance real del fine-tuning permanece sin documentar.
+DuckEngine-1-Search es un adaptador LoRA (PEFT) publicado por RehanKhan01126, construido mediante Supervised Fine-Tuning (SFT) sobre el modelo base unsloth/llama-3-8b-Instruct-bnb-4bit. El repositorio contiene unicamente los pesos del adaptador en formato safetensors, con un tamano de 0.2 GB, y utiliza las librerias Transformers, TRL y Unsloth para el entrenamiento. Segun la ficha de Hugging Face, no se proporciona informacion sobre el dataset, la arquitectura de adaptacion, el numero de parametros, la licencia ni las capacidades especificas, por lo que no es posible evaluar su rendimiento ni sus casos de uso sin acceder a documentacion adicional. Dado que el modelo base es Llama 3 8B Instruct, el adaptador podria aprovechar las capacidades generales de ese modelo, pero el alcance real del fine-tuning permanece sin documentar.
 
 ## Especificaciones tecnicas
 
@@ -55,8 +55,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DuckEngine-1-Search | No disponible | No disponible | No disponible | Adaptador PEFT en HuggingFace |
-| Llama 3 8B Instruct (base) | 8.000 millones aprox. | 8192 tokens | Llama 3 Community License (verificar) | Modelo completo en HuggingFace |
+| DuckEngine-1-Search | No disponible | No disponible | No disponible | Adaptador PEFT en Hugging Face |
+| Llama 3 8B Instruct (base) | 8.000 millones aprox. | 8192 tokens | Llama 3 Community License (verificar) | Modelo completo en Hugging Face |
 | Adaptadores LoRA sobre Llama 3 8B | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias

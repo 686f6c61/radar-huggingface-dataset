@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-anth-gen-postcot-g0-b1 | Adaptador LoRA r=64 sobre 35B MoE | No disponible (entrenado a 8192) | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B totales, ~3B activos según nomenclatura | No disponible en la información | Sin datos en esta ficha | No disponible en la información | HuggingFace |
+| ct-qwen36-35b-anth-gen-postcot-g0-b1 | Adaptador LoRA r=64 sobre 35B MoE | No disponible (entrenado a 8192) | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B totales, ~3B activos según nomenclatura | No disponible en la información | Sin datos en esta ficha | No disponible en la información | Hugging Face |
 | Otros adaptadores del mismo programa (otras ramas y generaciones) | Adaptadores LoRA r=64 sobre el mismo base | No disponible | Sin benchmarks publicados | No disponible | Referenciados por la cadena `qwen36-35b-anth-gen-postcot` |
 
 No se han encontrado en la búsqueda web modelos comparables de la misma categoría (adaptadores de entrenamiento constitucional iterado) más allá de los pertenecientes al propio programa. La comparación con alternativas comerciales o de investigación equivalentes no está disponible.
@@ -99,7 +99,7 @@ No se han encontrado en la búsqueda web modelos comparables de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b1
+- Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Constitución semilla incluida en el repositorio: `training_seed_constitution.md`
 - Metadatos de exportación: `tinker_meta.json`

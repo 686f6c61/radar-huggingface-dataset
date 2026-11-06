@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AgentMujo Qwen3.5-9B BOS LoRA | 9B + LoRA | no disponible | Function calling agéntico en bosnio | Apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen3.5-9B (base) | 9B | no disponible | Modelo generalista multilingüe | Apache-2.0 | HuggingFace |
+| AgentMujo Qwen3.5-9B BOS LoRA | 9B + LoRA | no disponible | Function calling agéntico en bosnio | Apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen3.5-9B (base) | 9B | no disponible | Modelo generalista multilingüe | Apache-2.0 | Hugging Face |
 | Alternativas específicas para bosnio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada. La comparación más directa es con el propio Qwen3.5-9B base, del que este adaptador hereda arquitectura y conocimiento general y al que añade el dialecto de *tool calling* en bosnio.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/shaban2024/agentmujo-joint-01
 - Repositorio de la línea de entrenamiento: https://github.com/xnet-ba/agentmujo-training

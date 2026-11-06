@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado ni de otros rerankers alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sno-lab/multilingual-reranker-small-int8
+- Hugging Face: https://huggingface.co/sno-lab/multilingual-reranker-small-int8
 - Modelo base: https://huggingface.co/Horizon-Labs/multilingual-reranker-small
 - Modelo fundacional: https://huggingface.co/jhu-clsp/mmBERT-small
 - Repositorio de uso: https://github.com/sno-ai/sno-station

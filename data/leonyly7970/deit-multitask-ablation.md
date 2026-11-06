@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deit-multitask-ablation es un repositorio de HuggingFace publicado por el usuario Leonyly7970 que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas multitarea. No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor lo describe como un punto de partida experimental pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El checkpoint incluido (model.safetensors) se presenta explícitamente como una inicialización válida, no como un modelo con pesos entrenados.
+Deit-multitask-ablation es un repositorio de Hugging Face publicado por el usuario Leonyly7970 que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas multitarea. No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor lo describe como un punto de partida experimental pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El checkpoint incluido (model.safetensors) se presenta explícitamente como una inicialización válida, no como un modelo con pesos entrenados.
 
 La relevancia de este repositorio es metodológica más que de rendimiento. Aporta una receta de experimento por defecto (optimizador novograd con planificador de warmup lineal), una configuración de arquitectura registrada en config.json y un script ejecutable (inference.py) con un ejemplo de prueba. Está pensado como base reproducible para comparar variantes de arquitectura bajo el mismo presupuesto de cómputo, mismos datos y mismas semillas, tal y como recomienda la propia model card.
 
@@ -71,7 +71,7 @@ La model card no proporciona comparaciones y este repositorio es una implementac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deit-multitask-ablation (este repo) | 24.832 | No disponible | Sin benchmark declarado | MIT | HuggingFace, checkpoint de inicialización |
+| deit-multitask-ablation (este repo) | 24.832 | No disponible | Sin benchmark declarado | MIT | Hugging Face, checkpoint de inicialización |
 | DeiT-tiny (referencia Facebook/Meta) | ~5,7 M (referencia general) | No aplica (visión) | ImageNet top-1 reportado por el autor original | Ver licencia del proyecto DeiT | Repositorio oficial DeiT |
 | DeiT-small (referencia Facebook/Meta) | ~22 M (referencia general) | No aplica (visión) | ImageNet top-1 reportado por el autor original | Ver licencia del proyecto DeiT | Repositorio oficial DeiT |
 | DeiT-base (referencia Facebook/Meta) | ~86 M (referencia general) | No aplica (visión) | ImageNet top-1 reportado por el autor original | Ver licencia del proyecto DeiT | Repositorio oficial DeiT |
@@ -88,10 +88,10 @@ Nota: los datos de la familia DeiT de referencia son valores generales del ecosi
 - Limitaciones de contexto e idioma: no disponibles; no se declaran ventanas de contexto ni idiomas soportados.
 - Restricciones de licencia: el repositorio se distribuye bajo MIT, que permite uso comercial. No obstante, el autor advierte de que deben revisarse por separado las condiciones de las fuentes de datos externas si el repositorio se usa con datasets de terceros.
 - La carga mediante APIs automáticas genéricas requiere un adaptador explícito, ya que se trata de una implementación personalizada y no de un modelo estándar.
-- El campo de pipeline no está definido, por lo que no hay una tarea asignada oficialmente en HuggingFace.
+- El campo de pipeline no está definido, por lo que no hay una tarea asignada oficialmente en Hugging Face.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse de forma separada a los valores por defecto que se distribuyen en este repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Leonyly7970/deit-multitask-ablation
+- Hugging Face: https://huggingface.co/Leonyly7970/deit-multitask-ablation
 - No se han encontrado ni proporcionado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

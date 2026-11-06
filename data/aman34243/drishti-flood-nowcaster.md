@@ -78,6 +78,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aman34243/drishti-flood-nowcaster
+- Hugging Face: https://huggingface.co/Aman34243/drishti-flood-nowcaster
 - Repositorio Drishti (mencionado en la model card): https://github.com/meAnkit18/Drishti
 - Repositorio Drishti Flood Intelligence System (encontrado en la búsqueda): https://github.com/a-dih-tya/Drishti-Flood-Intelligence-System-

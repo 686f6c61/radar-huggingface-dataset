@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jaydenmillervav/mocov3-generation-aug` es un repositorio de HuggingFace publicado por el usuario jaydenmillervav que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada Mocov3, orientada a tareas de generacion. Segun su propia model card, el checkpoint incluido (`model.safetensors`, 33.088 parametros) es unicamente una inicializacion valida para pruebas de humo, no un modelo entrenado ni un artefacto listo para produccion. El repositorio se distribuye bajo licencia Apache 2.0 y no declara ninguna puntuacion de benchmark.
+`jaydenmillervav/mocov3-generation-aug` es un repositorio de Hugging Face publicado por el usuario jaydenmillervav que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada Mocov3, orientada a tareas de generacion. Segun su propia model card, el checkpoint incluido (`model.safetensors`, 33.088 parametros) es unicamente una inicializacion valida para pruebas de humo, no un modelo entrenado ni un artefacto listo para produccion. El repositorio se distribuye bajo licencia Apache 2.0 y no declara ninguna puntuacion de benchmark.
 
 El interes de este repositorio es, por tanto, acotado y experimental: sirve como material de referencia para revisar codigo, validar canalizaciones de carga de pesos y disenar experimentos controlados de ablacion. La arquitectura declarada combina atencion con grouped query attention, fusion mediante cross attention, activacion ReLU y normalizacion InstanceNorm, con una receta de entrenamiento por defecto basada en el optimizador Novograd y un schedule exponencial.
 
@@ -24,7 +24,7 @@ No debe confundirse con MoCo v3, el metodo de aprendizaje autosupervisado para v
 | Parametro adicional | Valor |
 |---|---|
 | Escala declarada | small |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-20 |
@@ -102,14 +102,14 @@ Advertencia: los datos de las filas de MoCo v3 y de modelos generativos pequenos
 - Los idiomas soportados no estan documentados, por lo que no puede asumirse cobertura multilingue ni siquiera monolingue.
 - La model card no documenta la procedencia de los datos ni la existencia de un dataset de entrenamiento, de modo que no puede evaluarse la trazabilidad ni el sesgo potencial.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero la propia model card recomienda revisar por separado los terminos de las fuentes de datos externas si se usa el repositorio con datasets de terceros.
-- Compatibilidad: al ser una implementacion custom, no funciona con cargadores automaticos estandar de HuggingFace ni con motores de inferencia populares sin escribir un adaptador.
+- Compatibilidad: al ser una implementacion custom, no funciona con cargadores automaticos estandar de Hugging Face ni con motores de inferencia populares sin escribir un adaptador.
 - El aviso de la model card es explicito: los resultados de un futuro checkpoint entrenado deben documentarse por separado y no deben extrapolarse a partir de estos valores por defecto.
 - Confusion de nomenclatura: la etiqueta `mocov3` puede llevar a confundir este repositorio con el metodo de aprendizaje autosupervisado de Facebook AI Research, con el que no se documenta ninguna relacion.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jaydenmillervav/mocov3-generation-aug
+- Repositorio en Hugging Face: https://huggingface.co/jaydenmillervav/mocov3-generation-aug
 - Fichero de pesos: https://huggingface.co/jaydenmillervav/mocov3-generation-aug/blob/main/model.safetensors
 - Configuracion de arquitectura: https://huggingface.co/jaydenmillervav/mocov3-generation-aug/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/jaydenmillervav/mocov3-generation-aug/blob/main/training_args.json

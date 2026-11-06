@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sscottjohn/ml-matching es un repositorio publicado en HuggingFace el 5 de octubre de 2026 que contiene una implementacion minima de una arquitectura denominada "Mae", orientada a tareas de *matching* (emparejamiento). Con 49.600 parametros totales y escala declarada como *tiny*, no es una version entrenada de un modelo, sino un punto de partida reproducible para experimentacion.
+sscottjohn/ml-matching es un repositorio publicado en Hugging Face el 5 de octubre de 2026 que contiene una implementacion minima de una arquitectura denominada "Mae", orientada a tareas de *matching* (emparejamiento). Con 49.600 parametros totales y escala declarada como *tiny*, no es una version entrenada de un modelo, sino un punto de partida reproducible para experimentacion.
 
 El repositorio incluye el codigo con punto de entrada de entrenamiento (`finetune.py`), la configuracion de arquitectura (`config.json`), la receta de hiperparametros por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido para pruebas de humo. El propio autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -26,7 +26,7 @@ Su relevancia es por tanto acotada: sirve como esqueleto reproducible para inves
 | Funcion de activacion | ReLU |
 | Normalizacion | GroupNorm |
 | Optimizador de la receta por defecto | Adafactor con schedule de warmup lineal |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -90,13 +90,13 @@ No disponible. No se conocen modelos comparables dentro de la informacion propor
 - Sesgos conocidos: no disponibles. El autor no documenta la composicion de datos ni si se aplicaron medidas de mitigacion.
 - Limitaciones de contexto e idioma: no disponibles. No se declara ventana de contexto ni idiomas soportados.
 - Restricciones de licencia: la licencia es apache-2.0, que permite uso comercial y modificacion. El autor advierte que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se utilice con datasets externos.
-- Caveat de integracion: al ser una implementacion custom, las APIs automaticas de HuggingFace no cargaran el modelo sin un adaptador explicito; hay que inspeccionar el bloque `__main__` de `finetune.py` para ver el ejemplo de prueba incluido.
+- Caveat de integracion: al ser una implementacion custom, las APIs automaticas de Hugging Face no cargaran el modelo sin un adaptador explicito; hay que inspeccionar el bloque `__main__` de `finetune.py` para ver el ejemplo de prueba incluido.
 - Caveat de reproducibilidad: cualquier resultado futuro obtenido a partir de un checkpoint entrenado debe documentarse por separado de los valores por defecto que se distribuyen aqui.
 - Estado del repositorio: cero descargas y cero likes, sin pipeline declarado y con fecha de creacion de octubre de 2026; no hay evidencia de mantenimiento ni de adopcion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sscottjohn/ml-matching
+- Modelo en Hugging Face: https://huggingface.co/sscottjohn/ml-matching
 - Paper: no disponible
 - Repositorio de codigo independiente: no disponible
 - Blog o articulo tecnico: no disponible

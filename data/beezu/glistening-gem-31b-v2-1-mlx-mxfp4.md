@@ -69,7 +69,7 @@ No se dispone de información comparativa con otros modelos similares. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/beezu/Glistening-Gem-31B-v2.1-mlx-mxfp4
+- Repositorio Hugging Face del modelo: https://huggingface.co/beezu/Glistening-Gem-31B-v2.1-mlx-mxfp4
 - Modelo original: https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1
 - Modelo base Gemma 4: https://huggingface.co/google/gemma-4-31B-it
 - Resultado de búsqueda sobre Gemma 4: https://tech-insider.org/google-gemma-4-open-model-benchmarks-2026/

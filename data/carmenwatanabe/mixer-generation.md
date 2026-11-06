@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Generation es un repositorio publicado por el usuario carmenwatanabe en HuggingFace que contiene una implementacion funcional de una arquitectura denominada **Mixer**, en su configuracion **xlarge**, orientada a tareas de generacion. Segun la propia model card, el objetivo del repositorio es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, y se omiten deliberadamente las afirmaciones sobre rendimiento en benchmarks. No se trata, por tanto, de un modelo entrenado y listo para produccion.
+Mixer for Generation es un repositorio publicado por el usuario carmenwatanabe en Hugging Face que contiene una implementacion funcional de una arquitectura denominada **Mixer**, en su configuracion **xlarge**, orientada a tareas de generacion. Segun la propia model card, el objetivo del repositorio es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, y se omiten deliberadamente las afirmaciones sobre rendimiento en benchmarks. No se trata, por tanto, de un modelo entrenado y listo para produccion.
 
 El checkpoint incluido (`model.safetensors`) contiene **33.088 parametros** en total, una cifra extraordinariamente reducida que confirma la advertencia del autor: es una inicializacion valida para smoke tests, no un checkpoint entrenado. La configuracion declara atencion de ventana deslizante (sliding window), fusion bilineal, activacion gelu y normalizacion instancenorm, con un recetario de entrenamiento por defecto basado en rmsprop con schedule coseno.
 
@@ -90,5 +90,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carmenwatanabe/mixer-generation
+- Modelo en Hugging Face: https://huggingface.co/carmenwatanabe/mixer-generation
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: unicamente aparecieron enlaces promocionales de Prime Video, sin relacion con el repositorio. No se dispone, por tanto, de papers, blogs, repositorios adicionales ni demos asociados.

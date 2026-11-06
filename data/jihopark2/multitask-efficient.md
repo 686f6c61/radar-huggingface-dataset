@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JihoPark2/multitask-efficient es un repositorio de HuggingFace publicado por el usuario JihoPark2 que contiene una implementacion propia de una arquitectura denominada "Mae" orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de una release con pesos listos para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible con un checkpoint de inicializacion valido para pruebas de humo (smoke tests).
+JihoPark2/multitask-efficient es un repositorio de Hugging Face publicado por el usuario JihoPark2 que contiene una implementacion propia de una arquitectura denominada "Mae" orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de una release con pesos listos para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible con un checkpoint de inicializacion valido para pruebas de humo (smoke tests).
 
 El repositorio incluye el codigo del modelo en `model.py`, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un fichero `model.safetensors` de inicializacion. La arquitectura declarada usa atencion estandar, fusion bilineal, activacion GELU y normalizacion RMSNorm, con escala "base". El numero de parametros registrado en el safetensors es de 24.832, es decir, un modelo de tamano extremadamente reducido, coherente con un ejemplo minimo mas que con un modelo de lenguaje utilizable.
 

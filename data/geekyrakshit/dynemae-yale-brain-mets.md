@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geekyrakshit/DyneMAE-Yale-Brain-Mets
+- Modelo en Hugging Face: https://huggingface.co/geekyrakshit/DyneMAE-Yale-Brain-Mets
 - Dataset fuente: https://huggingface.co/datasets/geekyrakshit/Yale-Brain-Mets-Longitudinal
 - Dataset preparado: https://huggingface.co/datasets/geekyrakshit/Yale-Brain-Mets-Longitudinal-MAE-Prepared
 - Ejecucion de W&B: https://forge.coreweave.com/wandb/soumya_snigdha-kundu-king-s-college-london/yale-mae/runs/s6flogjd

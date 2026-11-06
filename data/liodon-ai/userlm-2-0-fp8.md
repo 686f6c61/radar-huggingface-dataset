@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/UserLM-2.0-FP8 | 8,03B | no disponible | FP8 dinamico | other | HuggingFace (4 descargas) |
-| microsoft/UserLM-2.0 | 8,03B (aprox.) | no disponible | BF16/FP16 (32,1 GB) | other | HuggingFace |
+| liodon-ai/UserLM-2.0-FP8 | 8,03B | no disponible | FP8 dinamico | other | Hugging Face (4 descargas) |
+| microsoft/UserLM-2.0 | 8,03B (aprox.) | no disponible | BF16/FP16 (32,1 GB) | other | Hugging Face |
 | Alternativas de 8B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos de la misma categoria con la que establecer una comparativa cuantitativa fiable. La comparacion principal es contra el propio modelo base: la version FP8 ocupa 11,2 GB frente a 32,1 GB, con cuantizacion directa sin calibracion.
@@ -82,7 +82,7 @@ No se dispone de informacion sobre otros modelos de la misma categoria con la qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/UserLM-2.0-FP8
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/UserLM-2.0-FP8
 - Modelo base: https://huggingface.co/microsoft/UserLM-2.0
 - Perfil del autor: https://huggingface.co/liodon-ai
 - Herramienta de cuantizacion (llm-compressor): https://github.com/vllm-project/llm-compressor

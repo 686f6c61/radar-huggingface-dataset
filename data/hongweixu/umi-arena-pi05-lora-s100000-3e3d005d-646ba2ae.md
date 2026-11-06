@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HongWeiXu/umi-arena-pi05-lora-s100000 | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| HongWeiXu/umi-arena-pi05-lora-s100000 | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | pi05 (modelo base de Physical Intelligence) | no disponible en esta ficha | no disponible | no disponible | terminos del upstream | no verificado en esta busqueda |
 | Otros checkpoints UMI Arena | no disponible | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HongWeiXu/umi-arena-pi05-lora-s100000-3e3d005d-646ba2ae
+- Hugging Face: https://huggingface.co/HongWeiXu/umi-arena-pi05-lora-s100000-3e3d005d-646ba2ae
 - Modelo base pi05 (Physical Intelligence): no disponible en la informacion proporcionada
 - UMI Arena: no disponible en la informacion proporcionada
 - Papers, blogs o repos adicionales: no disponible en la informacion proporcionada

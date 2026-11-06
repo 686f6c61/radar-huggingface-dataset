@@ -24,7 +24,7 @@ Ahora bien, la ficha del autor es extremadamente escueta. No documenta el conjun
 | Metodo de entrenamiento | SFT con TRL 1.13.0 |
 | Tamano del repositorio | 449,0 GB |
 | Descargas / likes | 211 descargas, 1 like (a fecha de la informacion disponible) |
-| Fecha de creacion / actualizacion | 2025-10-11 / 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2025-10-11 / 2026-09-11 (segun metadatos de Hugging Face) |
 | Entorno de entrenamiento declarado | TRL 1.13.0, Transformers 5.17.0, PyTorch 2.6.0, Datasets 5.0.1, Tokenizers 0.23.2 |
 
 ## Arquitectura y entrenamiento
@@ -98,7 +98,7 @@ Nota: los datos de los modelos comparativos provienen de su documentacion public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vinayp27/smollm3-medical
+- Modelo en Hugging Face: https://huggingface.co/vinayp27/smollm3-medical
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers/index

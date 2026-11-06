@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DucERM-v0.1 es un modelo publicado en HuggingFace por el usuario Duc1212 bajo licencia MIT. La informacion disponible sobre el modelo es minima: la model card unicamente contiene la declaracion de licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene descargas ni "likes" registrados en el momento de la consulta, y no se le ha asignado ninguna etiqueta de pipeline (text-generation, text-classification, etc.).
+DucERM-v0.1 es un modelo publicado en Hugging Face por el usuario Duc1212 bajo licencia MIT. La informacion disponible sobre el modelo es minima: la model card unicamente contiene la declaracion de licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene descargas ni "likes" registrados en el momento de la consulta, y no se le ha asignado ninguna etiqueta de pipeline (text-generation, text-classification, etc.).
 
 No es posible determinar que problema resuelve ni cual es su relevancia actual, ya que no existe documentacion tecnica asociada. El identificador "ERM" podria sugerir un modelo orientado a evaluacion de riesgo o a razonamiento (por ejemplo, "Entity Resolution Model" o "Error Reasoning Model"), pero se trata de una especulacion no confirmada por el autor, por lo que no debe tomarse como dato.
 
@@ -39,7 +39,7 @@ Los resultados de la busqueda web no aportan informacion adicional sobre el mode
 
 No es posible proponer casos de uso concretos y realistas sin conocer la arquitectura, el tamano, los idiomas soportados ni las capacidades declaradas del modelo. Cualquier escenario que se enunciara seria especulativo y podria inducir a error a quien evalue el modelo para produccion.
 
-Se recomienda contactar con el autor a traves del repositorio de HuggingFace para obtener documentacion adicional antes de considerar su uso.
+Se recomienda contactar con el autor a traves del repositorio de Hugging Face para obtener documentacion adicional antes de considerar su uso.
 
 ## Benchmarks y rendimiento
 
@@ -59,7 +59,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea objetivo de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DucERM-v0.1 | no disponible | no disponible | MIT | HuggingFace |
+| DucERM-v0.1 | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,7 +73,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea objetivo de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Duc1212/DucERM-v0.1
+- Hugging Face: https://huggingface.co/Duc1212/DucERM-v0.1
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

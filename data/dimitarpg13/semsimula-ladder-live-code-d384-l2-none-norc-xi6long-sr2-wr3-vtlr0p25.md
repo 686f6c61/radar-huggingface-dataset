@@ -76,9 +76,9 @@ El GPT-2 emparejado sobre los mismos tokens de código settlea en 4,96. La mejor
 
 | Modelo | Parametros | Contexto | Perplejidad (CodeParrot valid) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| semsimula screen B (este modelo) | 83.690.702 | block 512 | 5,98 | CC-BY-4.0 | HuggingFace, publico |
-| SO-CODE (baseline semsimula) | ~76,6M (−9,3% frente a este) | block 512 | 6,00 | no disponible | HuggingFace, publico |
-| SO-CODE-VTLR (control semsimula) | no disponible | block 512 | 6,09 | no disponible | HuggingFace, publico |
+| semsimula screen B (este modelo) | 83.690.702 | block 512 | 5,98 | CC-BY-4.0 | Hugging Face, publico |
+| SO-CODE (baseline semsimula) | ~76,6M (−9,3% frente a este) | block 512 | 6,00 | no disponible | Hugging Face, publico |
+| SO-CODE-VTLR (control semsimula) | no disponible | block 512 | 6,09 | no disponible | Hugging Face, publico |
 | GPT-2 emparejado en tokens | no disponible | no disponible | 4,96 | no disponible | no disponible |
 
 Dentro de su categoría (modelos de investigación no transformer sobre código Python a escala ~80M), la alternativa dominante sigue siendo un transformer convencional tipo GPT-2, que supera a toda la familia semsimula en perplejidad (4,96 frente a 5,95–6,09). El valor de este modelo no es competitivo sino experimental.
@@ -97,7 +97,7 @@ Dentro de su categoría (modelos de investigación no transformer sobre código 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-xi6long-sr2-wr3-vtlr0p25
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-xi6long-sr2-wr3-vtlr0p25
 - Analisis de dead wells (notas complementarias): https://github.com/dimitarpg13/semsimula-paper/blob/main/companion_notes/Dead_Wells_in_the_Joint_V_theta_Bank.md
 - Modelo baseline SO-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
 - Control SO-CODE-VTLR: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-vtlr0p25

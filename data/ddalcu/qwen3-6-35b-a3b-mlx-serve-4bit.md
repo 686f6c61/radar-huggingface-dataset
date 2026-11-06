@@ -4,7 +4,7 @@
 
 El modelo Qwen3.6-35B-A3B-MLX-Serve-4bit es una adaptación cuantizada a 4-bit del modelo Qwen/Qwen3.6-35B-A3B, realizada por el usuario ddalcu para el servidor mlx-serve de Apple Silicon. El paquete incluye el tronco del modelo (trunk) sin cambios, junto a una cabeza MTP (multi-token prediction) que permite decodificación especulativa cuando se activa con la bandera `--mtp`.
 
-Se trata de un modelo de arquitectura MoE (mixtura de expertos) de 35.107.181.936 parámetros totales, con aproximadamente 3.000 millones de parámetros activos por token, según la nomenclatura A3B. El formato original de HuggingFace no especifica la longitud de contexto ni los idiomas en sus metadatos, aunque el benchmark incluido evalúa el modelo a 16k tokens.
+Se trata de un modelo de arquitectura MoE (mixtura de expertos) de 35.107.181.936 parámetros totales, con aproximadamente 3.000 millones de parámetros activos por token, según la nomenclatura A3B. El formato original de Hugging Face no especifica la longitud de contexto ni los idiomas en sus metadatos, aunque el benchmark incluido evalúa el modelo a 16k tokens.
 
 La relevancia de esta versión radica en que combina una cuantización 4-bit pensada para la librería MLX con el soporte de decodificación especulativa, una técnica que puede aumentar significativamente los tokens por segundo en cargas predecibles como código, a la vez que se mantiene la licencia Apache-2.0.
 
@@ -88,7 +88,7 @@ También existe la variante `mlx-community/Qwen3.6-35B-A3B-MTP-4bit`, que contie
 - La longitud máxima de contexto no ha sido publicada; los benchmarks muestran pruebas a 16k, pero eso no garantiza un soporte robusto a ese tamaño ni el máximo real.
 - La activación de MTP no siempre mejora el rendimiento: en contenido novel (prosa) el beneficio es insignificante (168 frente a 165 tok/s) y bajo concurrencia incluso degrada el throughput agregado (134 frente a 152 tok/s).
 - El modelo está diseñado específicamente para Apple Silicon con MLX; no es compatible con CUDA ni con librerías como vLLM o llama.cpp, salvo que se convierta manualmente.
-- El paquete es una adaptación no oficial creada por un tercero (ddalcu), con 0 descargas y 0 likes en HuggingFace; carece de validación o garantía de soporte.
+- El paquete es una adaptación no oficial creada por un tercero (ddalcu), con 0 descargas y 0 likes en Hugging Face; carece de validación o garantía de soporte.
 - La licencia Apache-2.0 es permisiva, pero exige incluir el aviso de licencia original en las redistribuciones y no ofrece garantías por parte de los autores.
 
 ## Enlaces

@@ -88,8 +88,8 @@ No se dispone de otros modelos de la misma categoria (politicas neuronales para 
 
 | Sistema | Parametros | Tipo | Lineas medias | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laya-tetris | 321,9 M | Modelo neuronal, ajuste de Laya | 3196,2 | Apache 2.0 | HuggingFace |
-| laya-multilingual (base sin ajustar) | 322 M aproximadamente | Modelo de decision Laya | 0,0 (bloqueo a las 25 piezas) | Apache 2.0 | HuggingFace (`convaiinnovations/laya-multilingual`) |
+| laya-tetris | 321,9 M | Modelo neuronal, ajuste de Laya | 3196,2 | Apache 2.0 | Hugging Face |
+| laya-multilingual (base sin ajustar) | 322 M aproximadamente | Modelo de decision Laya | 0,0 (bloqueo a las 25 piezas) | Apache 2.0 | Hugging Face (`convaiinnovations/laya-multilingual`) |
 | Profesor El-Tetris (script) | no aplica | Heuristica con pesos de Dellacherie / El-Tetris | 3198,2 | no disponible | Blog de Islam Ahmed |
 | Politica aleatoria | no aplica | Baseline | 0,0 (bloqueo a las 26 piezas) | no aplica | no aplica |
 
@@ -111,7 +111,7 @@ Frente al modelo base, el ajuste multiplica la concordancia con el profesor (de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rehman-ali/laya-tetris
+- Modelo en Hugging Face: https://huggingface.co/rehman-ali/laya-tetris
 - Codigo, juego y UI de navegador: https://github.com/RehmanaliMomin/TetrisGame_Laya
 - Codificacion de estado y preguntas: https://github.com/RehmanaliMomin/TetrisGame_Laya/blob/main/tetris/encode.py
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual

@@ -65,8 +65,8 @@ Los datos de parametros, contexto y rendimiento de los modelos comparables no es
 
 | Modelo | Categoria | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LibreGTRs | Deteccion de objetos (GTR-S, COCO, 640 x 640) | no disponible | MIT | Pesos en HuggingFace; requiere LibreYOLO v1.6.0 o superior |
-| LibreYOLOXs / Xt / Xn | Deteccion de objetos (familia YOLOX) | no disponible | MIT (libreria LibreYOLO) | Pesos en la coleccion LibreYOLO de HuggingFace |
+| LibreGTRs | Deteccion de objetos (GTR-S, COCO, 640 x 640) | no disponible | MIT | Pesos en Hugging Face; requiere LibreYOLO v1.6.0 o superior |
+| LibreYOLOXs / Xt / Xn | Deteccion de objetos (familia YOLOX) | no disponible | MIT (libreria LibreYOLO) | Pesos en la coleccion LibreYOLO de Hugging Face |
 | RF-DETR | Deteccion de objetos (transformer) | no disponible | no disponible en la informacion proporcionada | Soportado por LibreYOLO segun la documentacion del proyecto |
 | YOLO9 | Deteccion de objetos | no disponible | no disponible en la informacion proporcionada | Soportado por LibreYOLO segun la documentacion del proyecto |
 
@@ -83,11 +83,11 @@ Los datos de parametros, contexto y rendimiento de los modelos comparables no es
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que el modelo no produce texto; el riesgo equivalente es la deteccion de objetos inexistentes con alta confianza.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreGTRs
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreGTRs
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - Modulos de modelos de LibreYOLO: https://github.com/LibreYOLO/libreyolo/tree/release/libreyolo/models
 - Implementacion oficial de GTR (Intellindust-AI-Lab): https://github.com/Intellindust-AI-Lab/GTR/tree/782e737efe2e6437ac537fbdcee089673d3376c1
 - Checkpoint GTR-S COCO de origen: https://huggingface.co/Phoenix8125/GTR/blob/9fc62c8c2b2c976835d0f1c1ffc544dbc0f9e29f/det/gtr_s_coco.pth
 - Sitio web de LibreYOLO: https://www.libreyolo.com/
 - Documentacion de modelos de LibreYOLO: https://www.libreyolo.com/docs/models
-- Coleccion de modelos LibreYOLO en HuggingFace: https://huggingface.co/collections/LibreYOLO/libreyolo-models
+- Coleccion de modelos LibreYOLO en Hugging Face: https://huggingface.co/collections/LibreYOLO/libreyolo-models

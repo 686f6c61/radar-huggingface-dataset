@@ -87,7 +87,7 @@ No se han incluido otras alternativas del ecosistema FLUX/SDXL porque no constan
 - Riesgo de alucinacion visual: al tratarse de un LoRA entrenado con 130-221 imagenes, el estilo puede degradarse en prompts muy alejados del dominio de entrenamiento; no hay datos cuantitativos al respecto.
 - Sesgos: el conjunto de entrenamiento es pequeño y tematicamente especifico, por lo que probablemente herede y amplifique sus sesgos esteticos y demograficos; no hay analisis de sesgos publicado.
 - Licencia: Apache 2.0 sobre el adaptador, pero la licencia efectiva del resultado depende tambien de la licencia del modelo base, el codificador Qwen3.5-9B y el VAE, que deben revisarse por separado.
-- Marcado `not-for-all-audiences` en HuggingFace: el repositorio esta restringido a publico adulto.
+- Marcado `not-for-all-audiences` en Hugging Face: el repositorio esta restringido a publico adulto.
 
 ## Enlaces
 

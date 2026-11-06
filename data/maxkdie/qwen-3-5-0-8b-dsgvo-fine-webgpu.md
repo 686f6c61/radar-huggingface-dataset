@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Maxkdie/qwen-3.5-0.8b-dsgvo-fine-webgpu` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario Maxkdie, construido presumiblemente sobre una base de la familia Qwen 3.5 con aproximadamente 0,8 mil millones de parametros. El nombre sugiere tres caracteristicas clave: la base Qwen 3.5, un ajuste orientado al cumplimiento del RGPD (DSGVO en aleman) y una optimizacion para ejecucion en navegador mediante WebGPU. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un modelo recien publicado o de muy baja difusion.
+El modelo `Maxkdie/qwen-3.5-0.8b-dsgvo-fine-webgpu` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario Maxkdie, construido presumiblemente sobre una base de la familia Qwen 3.5 con aproximadamente 0,8 mil millones de parametros. El nombre sugiere tres caracteristicas clave: la base Qwen 3.5, un ajuste orientado al cumplimiento del RGPD (DSGVO en aleman) y una optimizacion para ejecucion en navegador mediante WebGPU. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un modelo recien publicado o de muy baja difusion.
 
 La model card publicada es practicamente vacia: solo contiene metadatos de licencia (`other`, con nombre `no-private-use` y enlace a un fichero `LICENSE`). No se documentan datos de entrenamiento, arquitectura, contexto, idiomas ni benchmarks. Cualquier dato tecnico que no figure explicitamente en la informacion disponible se marca como "no disponible" en esta ficha.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Maxkdie/qwen-3.5-0.8b-dsgvo-fine-webgpu | ~0,8B | no disponible | `no-private-use` | HuggingFace (0 descargas) |
-| Qwen 3.5 base (0,8B, referencia) | ~0,8B | no disponible | segun Qwen | HuggingFace |
-| Fine-tunings comunitarios de Qwen de ~0,8B | ~0,8B | variable | variable | HuggingFace |
+| Maxkdie/qwen-3.5-0.8b-dsgvo-fine-webgpu | ~0,8B | no disponible | `no-private-use` | Hugging Face (0 descargas) |
+| Qwen 3.5 base (0,8B, referencia) | ~0,8B | no disponible | segun Qwen | Hugging Face |
+| Fine-tunings comunitarios de Qwen de ~0,8B | ~0,8B | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo analizado ni de comparaciones publicadas, por lo que la comparativa se limita a parametros y licencia.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento del modelo analizado ni de comparaciones p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Maxkdie/qwen-3.5-0.8b-dsgvo-fine-webgpu
+- Hugging Face: https://huggingface.co/Maxkdie/qwen-3.5-0.8b-dsgvo-fine-webgpu
 - Fichero de licencia: referenciado como `LICENSE` en el repositorio (no se proporciona URL directa en la informacion disponible).
 - Paper, blog, repositorio o demo: no disponible.

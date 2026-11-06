@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/Chungulus/Ripple-65B-Preview-Q6_K-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/Chungulus/Ripple-65B-Preview-Q6_K-GGUF
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Revision original del modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/tree/e27e171792f303d74c048184e8259ba663cfa0d5
 - PR experimental de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31692

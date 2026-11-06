@@ -72,7 +72,7 @@ No se dispone de informaci√≥n suficiente para una comparativa cuantitativa. El √
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B-SFT
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-SFT
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM
 - Informe tecnico MiniCPM: https://arxiv.org/pdf/2506.07900
 - Paper adicional: https://arxiv.org/abs/2602.09003

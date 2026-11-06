@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_acbag-slidelift-pick (este modelo) | 51.689.104 | no aplica | Recogida de bolsa en mobileai_robot | Apache 2.0 | HuggingFace, 14 descargas |
-| Otras políticas ACT en LeRobot | no disponible | no aplica | Tareas de manipulación diversas | según repositorio | HuggingFace |
-| Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación visuomotora | según repositorio | HuggingFace |
-| Políticas VLA (p. ej. OpenVLA) | no disponible en esta ficha | no disponible | Manipulación generalista | según modelo | HuggingFace |
+| act_acbag-slidelift-pick (este modelo) | 51.689.104 | no aplica | Recogida de bolsa en mobileai_robot | Apache 2.0 | Hugging Face, 14 descargas |
+| Otras políticas ACT en LeRobot | no disponible | no aplica | Tareas de manipulación diversas | según repositorio | Hugging Face |
+| Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación visuomotora | según repositorio | Hugging Face |
+| Políticas VLA (p. ej. OpenVLA) | no disponible en esta ficha | no disponible | Manipulación generalista | según modelo | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrrl-emcnei/act_acbag-slidelift-pick
+- Modelo en Hugging Face: https://huggingface.co/mrrl-emcnei/act_acbag-slidelift-pick
 - Dataset de entrenamiento: https://huggingface.co/datasets/mrrl-emcnei/acbag-slidelift-pick
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mrrl-emcnei/acbag-slidelift-pick
 - Artículo ACT: https://huggingface.co/papers/2304.13705

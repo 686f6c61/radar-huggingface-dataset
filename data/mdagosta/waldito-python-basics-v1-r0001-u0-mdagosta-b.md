@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta-b` es un checkpoint de generación de texto de tamaño muy reducido (9.541.632 parámetros, aproximadamente 9,5 millones) publicado por el usuario `mdagosta` en HuggingFace. Según su model card, se trata de una exportación bajo el paraguas "OpenWALDO model export" que emplea la arquitectura estándar de modelo causal tipo Llama de la librería Transformers, acompañada de un tokenizador de bytes propio denominado "schema-1", que obliga a cargar el tokenizador con `trust_remote_code=True`.
+El modelo `mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta-b` es un checkpoint de generación de texto de tamaño muy reducido (9.541.632 parámetros, aproximadamente 9,5 millones) publicado por el usuario `mdagosta` en Hugging Face. Según su model card, se trata de una exportación bajo el paraguas "OpenWALDO model export" que emplea la arquitectura estándar de modelo causal tipo Llama de la librería Transformers, acompañada de un tokenizador de bytes propio denominado "schema-1", que obliga a cargar el tokenizador con `trust_remote_code=True`.
 
 El identificador sugiere una revisión (`r0001`), una unidad de entrenamiento (`u0`) y un propósito de aprendizaje de fundamentos de Python (`python-basics`), aunque la model card no documenta ni confirma el dataset, el procedimiento de entrenamiento ni el objetivo declarado. El repositorio no incluye licencia, idiomas ni resultados de evaluación en los metadatos disponibles, y registra cero descargas y cero "likes" en el momento de la consulta.
 
@@ -68,10 +68,10 @@ No hay datos de rendimiento de este modelo que permitan una comparación cuantit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1-r0001-u0-mdagosta-b | 9,5 M | no disponible | no disponible | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | HuggingFace |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | HuggingFace |
-| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache-2.0 | HuggingFace |
+| waldito-python-basics-v1-r0001-u0-mdagosta-b | 9,5 M | no disponible | no disponible | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | Hugging Face |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | Hugging Face |
+| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache-2.0 | Hugging Face |
 
 La diferencia de escala (dos órdenes de magnitud frente al más pequeño de los comparados) implica que este modelo no es un sustituto directo de ninguno de ellos: los alternativos están diseñados para uso general y cuentan con documentación y evaluación publicadas, mientras que este checkpoint carece de ambas.
 
@@ -89,6 +89,6 @@ La diferencia de escala (dos órdenes de magnitud frente al más pequeño de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta-b
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta-b
 - Ficheros citados en la model card (dentro del repositorio): `BOM.json` y `EU-BOM.json`
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados obtenidos (Google Gemini, Claude, el repositorio `stephansturges/WALDO` de detección en imágenes aéreas, GPT-6.1 Sol y un generador de modelos 3D) no guardan relación con este checkpoint ni con el proyecto OpenWALDO citado en la model card.

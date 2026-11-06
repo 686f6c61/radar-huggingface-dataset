@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arcpoly/arcpoly-ai-engine` es un repositorio publicado en HuggingFace por el usuario `arcpoly` bajo licencia GPL-3.0. En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", y su model card no contiene más que la cabecera YAML con la licencia: no se ha publicado ninguna descripción del modelo, ni arquitectura, ni tamaño, ni datos de entrenamiento. La etiqueta `pipeline` tampoco está definida, por lo que HuggingFace no lo clasifica en ninguna tarea concreta (text-generation, image-to-text, etc.).
+`arcpoly/arcpoly-ai-engine` es un repositorio publicado en Hugging Face por el usuario `arcpoly` bajo licencia GPL-3.0. En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", y su model card no contiene más que la cabecera YAML con la licencia: no se ha publicado ninguna descripción del modelo, ni arquitectura, ni tamaño, ni datos de entrenamiento. La etiqueta `pipeline` tampoco está definida, por lo que Hugging Face no lo clasifica en ninguna tarea concreta (text-generation, image-to-text, etc.).
 
 No es posible, por tanto, determinar qué problema resuelve ni qué tipo de artefacto contiene el repositorio (pesos de un transformer, un motor de inferencia empaquetado, un pipeline de difusión para visualización arquitectónica u otro tipo de componente). El nombre "ai-engine" sugiere un componente de ejecución más que un modelo con pesos publicados, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
@@ -20,8 +20,8 @@ Su relevancia actual es, en consecuencia, muy limitada desde el punto de vista d
 | Idiomas soportados | no disponible (el campo `language` no está declarado en la model card) |
 | Licencia | GPL-3.0 |
 | Formato de pesos | no disponible |
-| Pipeline de HuggingFace | no disponible |
-| Repositorio creado | 2026-10-26T12:55:45Z (según metadatos de HuggingFace) |
+| Pipeline de Hugging Face | no disponible |
+| Repositorio creado | 2026-10-26T12:55:45Z (según metadatos de Hugging Face) |
 | Última actualización | 2026-10-26T12:55:45Z |
 | Descargas / likes | 0 / 0 |
 
@@ -81,13 +81,13 @@ No disponible. Al no haberse publicado arquitectura, tamaño, tarea ni resultado
 - Riesgo de alucinación y sesgos: no evaluables al no existir información sobre entrenamiento ni evaluaciones.
 - Idiomas: no declarados; no se puede asumir soporte de castellano.
 - Fechas de metadatos no corroboradas: el repositorio figura como creado y actualizado el 2026-10-26, dato que no se ha podido verificar de forma independiente.
-- Posible confusión de entidad: los resultados de búsqueda apuntan a Arcpoly como ecosistema de herramientas para arquitectura en Vietnam, pero no se ha confirmado que el autor del repositorio en HuggingFace sea la misma entidad.
+- Posible confusión de entidad: los resultados de búsqueda apuntan a Arcpoly como ecosistema de herramientas para arquitectura en Vietnam, pero no se ha confirmado que el autor del repositorio en Hugging Face sea la misma entidad.
 - No apto para producción sin evaluación previa: no debe integrarse en sistemas críticos sin una caracterización completa del artefacto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arcpoly/arcpoly-ai-engine
-- Perfil del autor en HuggingFace: https://huggingface.co/arcpoly
+- Repositorio en Hugging Face: https://huggingface.co/arcpoly/arcpoly-ai-engine
+- Perfil del autor en Hugging Face: https://huggingface.co/arcpoly
 - Arcpoly AI Studio (posible entidad relacionada, no confirmada): https://arcpoly.com/ai-studio/
 - Arcpoly Tools (posible entidad relacionada, no confirmada): https://arcpoly.com/arcpoly-tools/
 - Página de Facebook de Arcpoly (posible entidad relacionada, no confirmada): https://www.facebook.com/arcpoly/

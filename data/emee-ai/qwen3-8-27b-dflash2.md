@@ -25,7 +25,7 @@ Su relevancia es alta para despliegues en producción: según las evaluaciones d
 
 DFlash 2 es un *drafter* de difusión por bloques. En lugar de predecir tokens de uno en uno como un drafter autorregresivo clásico, genera un bloque completo de tokens en una única pasada y mantiene los principales candidatos en cada posición del bloque. Un selector ligero recorre estos candidatos para construir un camino coherente que se propone al modelo objetivo. La columna vertebral incorpora convoluciones dinámicas de dos tomas, que según el autor evitan la degradación de la calidad del borrador hacia el final del bloque, un problema habitual en los drafters paralelos.
 
-La decodificación es *lossless* (sin pérdidas): en modo *greedy*, la salida coincide exactamente con la del modelo objetivo, y en modo muestreo se preserva su distribución de probabilidad. No hay información disponible sobre el proceso de entrenamiento del drafter (número de tokens, composición del dataset ni uso de RLHF/DPO). El modelo base es Qwen/Qwen3.8-27B, un ajuste fino del cual deriva este repositorio según las etiquetas de HuggingFace.
+La decodificación es *lossless* (sin pérdidas): en modo *greedy*, la salida coincide exactamente con la del modelo objetivo, y en modo muestreo se preserva su distribución de probabilidad. No hay información disponible sobre el proceso de entrenamiento del drafter (número de tokens, composición del dataset ni uso de RLHF/DPO). El modelo base es Qwen/Qwen3.8-27B, un ajuste fino del cual deriva este repositorio según las etiquetas de Hugging Face.
 
 ## Capacidades
 
@@ -123,7 +123,7 @@ DFlash 2 supera a ambas alternativas en todas las tareas y niveles de concurrenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emee-ai/Qwen3.8-27B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/emee-ai/Qwen3.8-27B-DFlash2
 - Repositorio original: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/

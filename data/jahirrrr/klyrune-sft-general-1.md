@@ -12,7 +12,7 @@ Su relevancia práctica es la de un modelo pequeño, desplegable en hardware de 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia Llama (según el tag `llama` de HuggingFace); derivada del modelo base openbmb/MiniCPM5-2B-Midtrain |
+| Arquitectura | Transformer decoder-only, familia Llama (según el tag `llama` de Hugging Face); derivada del modelo base openbmb/MiniCPM5-2B-Midtrain |
 | Parámetros totales | 2.516.756.480 (≈2,52 B) |
 | Parámetros activos | No aplica (no es un modelo MoE según la información disponible) |
 | Longitud de contexto | No disponible |
@@ -92,10 +92,10 @@ La diferencia relevante no es de tamaño, sino de trazabilidad: los tres compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jahirrrr/Klyrune-SFT-General-1
+- Modelo en Hugging Face: https://huggingface.co/Jahirrrr/Klyrune-SFT-General-1
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-Midtrain
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/Jahirrrr/Klyrune-2B-General-1
 - Registro en Free2AITools: https://free2aitools.com/model/jahirrrr/klyrune-2b-general-1
-- Modelos etiquetados con `klyra` en HuggingFace: https://huggingface.co/models?other=klyra
+- Modelos etiquetados con `klyra` en Hugging Face: https://huggingface.co/models?other=klyra
 - Modelos ajustados desde Jahirrrr/Klyra-Decision-16M-Generalist-V4: https://huggingface.co/models?other=base_model:finetune:Jahirrrr/Klyra-Decision-16M-Generalist-V4
 - Referencia general sobre SFT en LLM: https://www.geeksforgeeks.org/artificial-intelligence/supervised-fine-tuning-sft-for-llms/

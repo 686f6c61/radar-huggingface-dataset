@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Base | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-Dark-Orthia-Untied-31B | 32,7B | google/gemma-4-31B-it | Merge RP/escritura creativa dark | Apache 2.0 | HuggingFace (safetensors) |
-| TheDrummer/Artemis-31B-v1.2 | 31B (no disponible exacto) | google/gemma-4-31B-it | Escritura creativa y RP | no disponible | HuggingFace |
-| Gryphe/Pantheon-Reasoning-31B-1.1 | 31B (no disponible exacto) | google/gemma-4-31B-it | Razonamiento | no disponible | HuggingFace |
-| google/gemma-4-31B-it | 31B (no disponible exacto) | google | Modelo base generalista con instrucciones | Licencia Gemma (restricciones propias de Google) | HuggingFace |
+| Gemma-4-Dark-Orthia-Untied-31B | 32,7B | google/gemma-4-31B-it | Merge RP/escritura creativa dark | Apache 2.0 | Hugging Face (safetensors) |
+| TheDrummer/Artemis-31B-v1.2 | 31B (no disponible exacto) | google/gemma-4-31B-it | Escritura creativa y RP | no disponible | Hugging Face |
+| Gryphe/Pantheon-Reasoning-31B-1.1 | 31B (no disponible exacto) | google/gemma-4-31B-it | Razonamiento | no disponible | Hugging Face |
+| google/gemma-4-31B-it | 31B (no disponible exacto) | google | Modelo base generalista con instrucciones | Licencia Gemma (restricciones propias de Google) | Hugging Face |
 
 La ventaja diferencial de Dark-Orthia frente a sus componentes es que combina en un solo modelo las capacidades de escritura y razonamiento de los merges base, y que hereda la licencia Apache 2.0 (mas permisiva que la licencia Gemma original en cuanto a condiciones de uso, segun la etiqueta del repositorio).
 
@@ -79,7 +79,7 @@ La ventaja diferencial de Dark-Orthia frente a sus componentes es que combina en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nimbz/Gemma-4-Dark-Orthia-Untied-31B
+- Modelo en Hugging Face: https://huggingface.co/Nimbz/Gemma-4-Dark-Orthia-Untied-31B
 - Modelo base principal: https://huggingface.co/google/gemma-4-31B-it
 - Modelo base (merge): https://huggingface.co/Ateron/Gemma-4-MoonGem-31B
 - Modelo base (merge): https://huggingface.co/Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1

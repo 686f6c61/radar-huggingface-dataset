@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Takhtar-AI no es un modelo de inteligencia artificial. El repositorio de HuggingFace `swordenamine/Takhtar-AI` contiene la model card de una aplicación web autocontenida en React (un único fichero `takhtar-ai.jsx`) que funciona como directorio curado de herramientas de IA: 14 categorías, buscador por nombre, tarea o categoría, sección de tendencias, favoritos y lanzamiento de cada herramienta en una pestaña nueva. No hay pesos, no hay tokenizador, no hay pipeline declarado y no hay artefactos de inferencia.
+Takhtar-AI no es un modelo de inteligencia artificial. El repositorio de Hugging Face `swordenamine/Takhtar-AI` contiene la model card de una aplicación web autocontenida en React (un único fichero `takhtar-ai.jsx`) que funciona como directorio curado de herramientas de IA: 14 categorías, buscador por nombre, tarea o categoría, sección de tendencias, favoritos y lanzamiento de cada herramienta en una pestaña nueva. No hay pesos, no hay tokenizador, no hay pipeline declarado y no hay artefactos de inferencia.
 
 La ficha se mantiene con la estructura estándar por coherencia editorial, pero buena parte de los campos figuran como «no disponible» o «no aplica» porque no existen en un artefacto de este tipo. El repositorio acumula 0 descargas y 0 likes, la licencia no está declarada en los metadatos del Hub (la model card menciona MIT) y los idiomas no están especificados. La fecha de creación registrada (2026-10-17) es posterior a la de actualización (2026-03-05), lo que indica metadatos inconsistentes.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 | Proyecto | Tipo | Categorías | Búsqueda | Favoritos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Takhtar-AI | Aplicación React de directorio | 14 | Sí | Sí | MIT según la model card; no declarada en el Hub | Repositorio de HuggingFace con la model card y el `.jsx` |
+| Takhtar-AI | Aplicación React de directorio | 14 | Sí | Sí | MIT según la model card; no declarada en el Hub | Repositorio de Hugging Face con la model card y el `.jsx` |
 | Oceans of AI (inspiración citada) | Directorio de herramientas de IA | no disponible | no disponible | no disponible | no disponible | Aplicación publicada por Blue Planet Apps |
 | Modelos de lenguaje de la misma categoría | no aplica | no aplica | no aplica | no aplica | no aplica | No comparable: Takhtar-AI no es un modelo |
 
@@ -73,7 +73,7 @@ No se dispone de datos verificables de otras alternativas equivalentes en la inf
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no genera texto, no razona, no procesa lenguaje natural y no admite tool calling ni uso como agente.
-- El repositorio ocupa el espacio de un modelo en HuggingFace sin contener pesos ni pipeline, lo que puede confundir a herramientas de descubrimiento y a usuarios que busquen un modelo descargable.
+- El repositorio ocupa el espacio de un modelo en Hugging Face sin contener pesos ni pipeline, lo que puede confundir a herramientas de descubrimiento y a usuarios que busquen un modelo descargable.
 - La licencia no figura en los metadatos del Hub; solo la model card menciona MIT. Para uso comercial conviene verificar la licencia real del repositorio antes de reutilizar el código.
 - El catálogo es estático: las herramientas, URL y descripciones quedan obsoletas si no se mantiene manualmente el array `AI_TOOLS`.
 - El propio autor declara en la model card que no posee ni controla las herramientas enlazadas; cualquier uso queda sujeto a los términos de terceros, con el riesgo de enlaces caídos o de destinos que cambien de contenido.
@@ -85,6 +85,6 @@ No se dispone de datos verificables de otras alternativas equivalentes en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/Takhtar-AI
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/Takhtar-AI
 - Oceans of AI (inspiración citada en la model card): https://blueplanetapps.in/oceansofai/
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de código o demo) en la información disponible.

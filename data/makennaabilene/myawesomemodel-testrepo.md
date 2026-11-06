@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario MakennaAbilene, etiquetado con las librerías transformers y pytorch, la arquitectura bert, la tarea feature-extraction y licencia MIT. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0,0 GB, lo que indica que no contiene pesos ni ficheros de configuracion utilizables. Fue creado y actualizado el 24 de septiembre de 2026 con apenas cuatro segundos de diferencia, un patron tipico de repositorio de prueba.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario MakennaAbilene, etiquetado con las librerías transformers y pytorch, la arquitectura bert, la tarea feature-extraction y licencia MIT. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0,0 GB, lo que indica que no contiene pesos ni ficheros de configuracion utilizables. Fue creado y actualizado el 24 de septiembre de 2026 con apenas cuatro segundos de diferencia, un patron tipico de repositorio de prueba.
 
 La model card asociada describe, sin embargo, un modelo generativo orientado al razonamiento, con mejoras en profundidad de inferencia, soporte de function calling, plantillas para subida de ficheros y busqueda web, y una tabla de benchmarks con categorias genericas (razonamiento matematico, generacion de codigo, traduccion, etc.). Esa descripcion no coincide con el pipeline declarado de extraccion de caracteristicas ni con la etiqueta bert, y esta cortada a mitad de frase, por lo que no puede considerarse documentacion fiable.
 
@@ -107,8 +107,8 @@ No disponible. El repositorio no identifica que modelos corresponden a las colum
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MakennaAbilene/MyAwesomeModel-TestRepo
-- Perfil del autor en HuggingFace: https://huggingface.co/MakennaAbilene
+- Repositorio en Hugging Face: https://huggingface.co/MakennaAbilene/MyAwesomeModel-TestRepo
+- Perfil del autor en Hugging Face: https://huggingface.co/MakennaAbilene
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: la model card menciona un repositorio propio sin enlazarlo ni nombrarlo; no disponible

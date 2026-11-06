@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl` es un experimento de investigación publicado en HuggingFace por el usuario RyanYr. Por su nomenclatura, se trata de un modelo de lenguaje de 1.500 millones de parámetros basado en la arquitectura de Qwen2.5-Math-1.5B, sobre el que se ha aplicado un entrenamiento adicional mediante técnicas de aprendizaje por refuerzo, concretamente GRPO (Group Relative Policy Optimization) en modalidad offline y un método denominado DAPO (posiblemente Decoupled Alignment Policy Optimization). El sufijo "shuffled-01" sugiere un barajado de los datos de entrenamiento, mientras que "piref" y "nokl" no tienen una interpretación pública documentada.
+El modelo `RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl` es un experimento de investigación publicado en Hugging Face por el usuario RyanYr. Por su nomenclatura, se trata de un modelo de lenguaje de 1.500 millones de parámetros basado en la arquitectura de Qwen2.5-Math-1.5B, sobre el que se ha aplicado un entrenamiento adicional mediante técnicas de aprendizaje por refuerzo, concretamente GRPO (Group Relative Policy Optimization) en modalidad offline y un método denominado DAPO (posiblemente Decoupled Alignment Policy Optimization). El sufijo "shuffled-01" sugiere un barajado de los datos de entrenamiento, mientras que "piref" y "nokl" no tienen una interpretación pública documentada.
 
 El repositorio ocupa 389,2 GB, un tamaño desproporcionado para un modelo de 1,5B (que en FP16 ocuparía unos 3 GB), lo que indica que probablemente contiene múltiples checkpoints, datasets asociados o archivos de entrenamiento intermedios. El modelo apenas tiene difusión: solo 2 descargas y 0 likes, y no se ha publicado ninguna tarjeta de modelo ni documentación técnica. No se dispone de licencia, idiomas soportados ni pipeline de uso. Es relevante como caso de estudio para quienes investigan métodos de RL aplicados a modelos matemáticos, pero no está listo para uso en producción.
 
@@ -73,6 +73,6 @@ La comparativa se limita al modelo base y su versión instruct, ya que no hay ot
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl)
 - [Dataset asociado de evaluación matemática](https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl_matheval)
 - [Repositorio oficial de Qwen2.5-Math en GitHub](https://github.com/QwenLM/Qwen2.5-Math)

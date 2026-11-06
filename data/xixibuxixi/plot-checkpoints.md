@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xixibuxixi/plot-checkpoints` es un repositorio de checkpoints del proyecto PLOT, descrito en su repositorio de GitHub como "Multi-Inhabitant World Models with Writable 3D Memory". No se trata de un modelo de lenguaje de propósito general ni de un modelo conversacional: es un artefacto de investigación que agrupa pesos y estados de entrenamiento de las etapas M1 y M3 de una familia de modelos de mundo. El autor es el usuario de HuggingFace `xixibuxixi` (Cauthy) y el repositorio se publica como "private checkpoint repository", con 0 descargas y 0 likes en el momento de la consulta.
+`xixibuxixi/plot-checkpoints` es un repositorio de checkpoints del proyecto PLOT, descrito en su repositorio de GitHub como "Multi-Inhabitant World Models with Writable 3D Memory". No se trata de un modelo de lenguaje de propósito general ni de un modelo conversacional: es un artefacto de investigación que agrupa pesos y estados de entrenamiento de las etapas M1 y M3 de una familia de modelos de mundo. El autor es el usuario de Hugging Face `xixibuxixi` (Cauthy) y el repositorio se publica como "private checkpoint repository", con 0 descargas y 0 likes en el momento de la consulta.
 
 El contenido declarado incluye el checkpoint M3 Simple step 7365 (modelo y optimizador), el checkpoint M1 `m1/m1_flow_2nodes_b32_eval10k_v2/step_001476000.pt`, un fichero `SELECTED.json` con hashes y procedencia, y documentación de dependencias externas (`TRAINING_ASSETS.md`). Entre esas dependencias se citan un VAE de píxeles, un backbone de vídeo opcional, vocabularios separados, normalización latente y una caché de texto M4. El repositorio ocupa 32,1 GB y sus pesos se distribuyen en formato safetensors, además de un checkpoint M1 en formato `.pt`.
 
@@ -18,12 +18,12 @@ Su relevancia es estrictamente de investigación: documenta el estado actual de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se documentan variantes cuantizadas; los pesos se publican como safetensors y `.pt`) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha de HuggingFace no declara licencia) |
+| Licencia | no disponible (la ficha de Hugging Face no declara licencia) |
 | Formato de pesos | safetensors (etiqueta del repositorio) y `.pt` para el checkpoint M1 `step_001476000.pt` |
 | Tamano del repositorio | 32,1 GB |
 | Artefactos incluidos | M3 Simple step 7365 (modelo + optimizador) y M1 `m1_flow_2nodes_b32_eval10k_v2/step_001476000.pt` |
 | Documentacion de procedencia | `SELECTED.json` (hashes y procedencia) y `TRAINING_ASSETS.md` (guia de dependencias M2) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / ultima actualizacion | 2026-09-13 / 2026-09-25 |
 
@@ -78,12 +78,12 @@ No se han identificado en la informacion proporcionada modelos comparables publi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `xixibuxixi/plot-checkpoints` | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| `xixibuxixi/plot-checkpoints` | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: la ficha de HuggingFace no declara licencia alguna, por lo que no puede asumirse permiso de uso comercial ni de redistribucion. Cualquier uso en produccion requiere autorizacion explicita del autor.
+- Ausencia de licencia: la ficha de Hugging Face no declara licencia alguna, por lo que no puede asumirse permiso de uso comercial ni de redistribucion. Cualquier uso en produccion requiere autorizacion explicita del autor.
 - Repositorio marcado como privado: el propio README lo describe como "private checkpoint repository", lo que indica un artefacto pensado para circulacion interna del proyecto.
 - Dependencias externas obligatorias: el VAE de píxeles y el dataset `fixed_skins_20260917` no estan incluidos y son necesarios para ejecutar el modelo. Sin ellos el checkpoint es inutilizable.
 - Inestabilidad de la rama: checkpoints anteriores (M3 step 26000 y el encoder de identidad step 3300) fueron eliminados de la rama actual a peticion del propietario. La reproducibilidad depende de usar revisiones historicas o de apoyarse en `SELECTED.json`.
@@ -96,11 +96,11 @@ No se han identificado en la informacion proporcionada modelos comparables publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xixibuxixi/plot-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/xixibuxixi/plot-checkpoints
 - README del checkpoint M3 actual: https://huggingface.co/xixibuxixi/plot-checkpoints/blob/main/m3/m3_simple_fulltrain_player_flow_step7365/README.md
 - Hashes y procedencia (`SELECTED.json`): https://huggingface.co/xixibuxixi/plot-checkpoints/blob/main/SELECTED.json
 - Guia de dependencias M2 y entrenamiento (`TRAINING_ASSETS.md`): https://huggingface.co/xixibuxixi/plot-checkpoints/blob/main/TRAINING_ASSETS.md
 - Repositorio de codigo PLOT: https://github.com/xixibuxixi23/Plot
-- Perfil del autor en HuggingFace: https://huggingface.co/xixibuxixi
+- Perfil del autor en Hugging Face: https://huggingface.co/xixibuxixi
 - Modelos publicados por el autor: https://huggingface.co/xixibuxixi/models
 - Datasets publicados por el autor: https://huggingface.co/xixibuxixi/datasets

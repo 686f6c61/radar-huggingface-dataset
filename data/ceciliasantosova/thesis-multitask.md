@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CeciliaSantosova/thesis-multitask` es un repositorio experimental publicado en HuggingFace por la usuaria CeciliaSantosova que contiene una implementacion de una arquitectura CNN-Transformer orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe presentarse como un modelo con benchmarks. El repositorio funciona, por tanto, como base de codigo y plantilla de configuracion para experimentar con cambios de arquitectura antes de lanzar un entrenamiento completo.
+`CeciliaSantosova/thesis-multitask` es un repositorio experimental publicado en Hugging Face por la usuaria CeciliaSantosova que contiene una implementacion de una arquitectura CNN-Transformer orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe presentarse como un modelo con benchmarks. El repositorio funciona, por tanto, como base de codigo y plantilla de configuracion para experimentar con cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El tamano real del modelo es de 33.088 parametros, una cifra que lo situa muy lejos de los modelos de lenguaje generativos: se trata de una configuracion "small" pensada para que los cambios arquitectonicos se puedan inspeccionar y depurar rapidamente. El repositorio incluye el fichero Python con el modelo y el punto de entrada de ejemplo o de entrenamiento, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y el checkpoint de inicializacion en formato safetensors.
 
@@ -75,7 +75,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CeciliaSantosova/thesis-multitask | 33.088 | no disponible | no disponible (sin entrenar) | BSD-3-Clause | HuggingFace, codigo y checkpoint de inicializacion |
+| CeciliaSantosova/thesis-multitask | 33.088 | no disponible | no disponible (sin entrenar) | BSD-3-Clause | Hugging Face, codigo y checkpoint de inicializacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,8 +91,8 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CeciliaSantosova/thesis-multitask
-- Perfil del autor en HuggingFace: https://huggingface.co/CeciliaSantosova
+- Modelo en Hugging Face: https://huggingface.co/CeciliaSantosova/thesis-multitask
+- Perfil del autor en Hugging Face: https://huggingface.co/CeciliaSantosova
 - Listado de modelos del autor: https://huggingface.co/CeciliaSantosova/models
 - Repositorio relacionado del mismo autor: https://huggingface.co/CeciliaSantosova/multitask
 

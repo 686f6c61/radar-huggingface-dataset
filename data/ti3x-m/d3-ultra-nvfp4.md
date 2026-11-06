@@ -2,7 +2,7 @@
 
 ## Resumen
 
-D3 Ultra NVFP4 es una conversión experimental del modelo vllm-sr/d3-ultra a formato NVFP4 (4 bits en pesos y activaciones), publicada por el usuario independiente ti3x-m. No se trata de un modelo nuevo ni de un lanzamiento oficial de vllm-sr, sino de un paquete cuantizado calibrado que conserva la arquitectura y los pesos del modelo base en BF16 como referencia. El modelo base pertenece a la familia Qwen3.5 según los tags de HuggingFace, tiene 26.085.330.160 parámetros (aproximadamente 26.000 millones) y está orientado a la toma de decisiones estructuradas y clasificación zero-shot, no a la generación de texto conversacional.
+D3 Ultra NVFP4 es una conversión experimental del modelo vllm-sr/d3-ultra a formato NVFP4 (4 bits en pesos y activaciones), publicada por el usuario independiente ti3x-m. No se trata de un modelo nuevo ni de un lanzamiento oficial de vllm-sr, sino de un paquete cuantizado calibrado que conserva la arquitectura y los pesos del modelo base en BF16 como referencia. El modelo base pertenece a la familia Qwen3.5 según los tags de Hugging Face, tiene 26.085.330.160 parámetros (aproximadamente 26.000 millones) y está orientado a la toma de decisiones estructuradas y clasificación zero-shot, no a la generación de texto conversacional.
 
 La relevancia de esta publicación es doble. Por un lado, demuestra el flujo de cuantización NVFP4 sobre hardware Blackwell (GPU GB10 de un DGX Spark) usando el motor nativo vllm-srun y el formato compressed-tensors. Por otro, expone con transparencia los resultados preliminares y las limitaciones del proceso: solo se calibraron 400 proyecciones de texto, no se ha evaluado la calidad de visión tras la cuantización y no se han ejecutado benchmarks amplios de precisión. El autor advierte explícitamente de que el modelo produce decisiones estructuradas y probabilidades sobre opciones, no respuestas de chat.
 
@@ -75,8 +75,8 @@ Estos tiempos son peticiones HTTP individuales tras el arranque, no medidas de t
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ti3x-m/d3-ultra-NVFP4 | 26.085.330.160 | no disponible | NVFP4 W4A4 | Apache 2.0 | HuggingFace, requiere vllm-srun |
-| vllm-sr/d3-ultra (base) | no disponible | no disponible | BF16 | Apache 2.0 | HuggingFace |
+| ti3x-m/d3-ultra-NVFP4 | 26.085.330.160 | no disponible | NVFP4 W4A4 | Apache 2.0 | Hugging Face, requiere vllm-srun |
+| vllm-sr/d3-ultra (base) | no disponible | no disponible | BF16 | Apache 2.0 | Hugging Face |
 | Modelo d3 (anterior, citado en el registro upstream) | no disponible | no disponible | NVFP4 (registro upstream) | no disponible | Repositorio semantic-router |
 
 No se dispone de datos de rendimiento comparables entre estas variantes. El autor advierte de que los resultados de precisión y rendimiento del registro upstream corresponden al modelo d3 anterior y no son transferibles a esta conversión de D3 Ultra.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes. El auto
 
 ## Enlaces
 
-- [HuggingFace: ti3x-m/d3-ultra-NVFP4](https://huggingface.co/ti3x-m/d3-ultra-NVFP4)
+- [Hugging Face: ti3x-m/d3-ultra-NVFP4](https://huggingface.co/ti3x-m/d3-ultra-NVFP4)
 - [Modelo base: vllm-sr/d3-ultra](https://huggingface.co/vllm-sr/d3-ultra)
 - [Registro de paquete cuantizado Decision 3.0](https://github.com/vllm-project/semantic-router/blob/dd7f5efb7f94e1952877dddb8d2b4fd4d446fd6a/src/model-runtime/docs/records/decision3-quantized.md)
 - [Códec NVFP4 de semantic-router](https://github.com/vllm-project/semantic-router/blob/dd7f5efb7f94e1952877dddb8d2b4fd4d446fd6a/src/model-runtime/vllm_srun/accel/nvfp4.py)

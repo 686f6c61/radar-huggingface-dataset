@@ -6,7 +6,7 @@ DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una version modificada del modelo multimod
 
 Arquitectonicamente hereda del base: encoder-decoder causal con 20+20 capas, mezcla de expertos con 384 expertos enrutados (top-6) mas uno compartido, Hyper-Connections de 4 canales en el residual, atencion dispersa CSA2, memoria n-gram Engram y un cabezal de borrador especulativo DSpark (MTP). El dato real de safetensors indica 763.205.315.794 parametros totales, mientras que la model card del base describe un backbone de 552B con 8B/16B activos por token; el repositorio ocupa 510,3 GB.
 
-Su relevancia es doble. Por un lado, demuestra que la abliteracion a nivel de pesos puede preservar arquitecturas complejas (MoE, vision, atencion dispersa, cabezal especulativo) con una perdida de conocimiento medida de solo -1,1 pp en MMLU excluyendo el cluster de etica. Por otro, sus resultados en HarmBench-320 (100% de cumplimiento en todas las categorias de dano, frente a 1,56%-42,81% del base) lo convierten en un caso de estudio sobre los riesgos de las variantes sin salvaguardas y sobre la dificultad de auditar modelos derivados publicados en HuggingFace.
+Su relevancia es doble. Por un lado, demuestra que la abliteracion a nivel de pesos puede preservar arquitecturas complejas (MoE, vision, atencion dispersa, cabezal especulativo) con una perdida de conocimiento medida de solo -1,1 pp en MMLU excluyendo el cluster de etica. Por otro, sus resultados en HarmBench-320 (100% de cumplimiento en todas las categorias de dano, frente a 1,56%-42,81% del base) lo convierten en un caso de estudio sobre los riesgos de las variantes sin salvaguardas y sobre la dificultad de auditar modelos derivados publicados en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -108,8 +108,8 @@ Solo se dispone de datos comparativos frente al modelo base del que deriva. No h
 
 | Modelo | Parametros totales | Contexto | Licencia | MMLU-14k | HarmBench-320 (off / max) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (base) | 552B backbone (763B en safetensors del derivado) | 1M tokens | MIT | 86,96% | 42,81% / 1,56% | HuggingFace, `deepseek-ai/DeepSeek-V4.1-Flash` |
-| DeepSeek-V4.1-Flash-UNCENSORED-FP8 (CRACK) | 763.205.315.794 | 1M tokens | MIT | 82,74% | 100,00% / 100,00% | HuggingFace, `bielquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8` |
+| DeepSeek-V4.1-Flash (base) | 552B backbone (763B en safetensors del derivado) | 1M tokens | MIT | 86,96% | 42,81% / 1,56% | Hugging Face, `deepseek-ai/DeepSeek-V4.1-Flash` |
+| DeepSeek-V4.1-Flash-UNCENSORED-FP8 (CRACK) | 763.205.315.794 | 1M tokens | MIT | 82,74% | 100,00% / 100,00% | Hugging Face, `bielquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8` |
 | Alternativas de terceros | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante es la perdida de conocimiento frente al base: -4,22 pp en MMLU-14k completo y -1,1 pp excluyendo el cluster de etica, a cambio de pasar de una tasa de cumplimiento en HarmBench del 42,81%-1,56% al 100% absoluto.
@@ -128,7 +128,7 @@ La comparacion relevante es la perdida de conocimiento frente al base: -4,22 pp 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bielquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/bielquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil del coautor en X: https://x.com/jordanschenck

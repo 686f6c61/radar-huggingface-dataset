@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-safemix-kw1` es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado en HuggingFace por el usuario `wz7475`. El nombre del repositorio sugiere que pertenece a la familia "katcher" del mismo autor (que incluye variantes como `med`, `legal`, `sec` y `code`), con un enfoque aparente en el dominio de seguridad ("sec") y alguna tecnica etiquetada como "lwf" (posiblemente *learning without forgetting*) y "safemix". No obstante, la model card del repositorio es la plantilla autogenerada por HuggingFace y esta vacia: no documenta el proceso de entrenamiento, los datos utilizados ni la licencia.
+`wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-safemix-kw1` es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado en Hugging Face por el usuario `wz7475`. El nombre del repositorio sugiere que pertenece a la familia "katcher" del mismo autor (que incluye variantes como `med`, `legal`, `sec` y `code`), con un enfoque aparente en el dominio de seguridad ("sec") y alguna tecnica etiquetada como "lwf" (posiblemente *learning without forgetting*) y "safemix". No obstante, la model card del repositorio es la plantilla autogenerada por Hugging Face y esta vacia: no documenta el proceso de entrenamiento, los datos utilizados ni la licencia.
 
 El modelo hereda de su base la arquitectura Qwen2.5 (transformer decoder-only de aproximadamente 7.600 millones de parametros, atendiendo al dato publicado por proveedores de inferencia para modelos hermanos de la misma serie). Qwen2.5-7B-Instruct es un modelo de instrucciones de uso general desarrollado por el equipo Qwen de Alibaba, con una ventana de contexto nominal de 32.768 tokens. Al ser un derivado directo, su relevancia practica depende de la mejora especifica que introduzca el ajuste fino, dato que el repositorio no documenta.
 
@@ -69,10 +69,10 @@ Estimaciones para un modelo de ~7,6 mil millones de parametros (no confirmadas p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-7b-instruct-katcher-sec-lwf-safemix-kw1 | ~7,6B (dato del base) | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (128K con escalado) | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Llama-3.1-8B-Instruct | 8B | 131.072 tokens | Llama 3.1 Community License | HuggingFace, ampliamente adoptado |
-| Mistral-7B-Instruct-v0.3 | 7,3B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| qwen2.5-7b-instruct-katcher-sec-lwf-safemix-kw1 | ~7,6B (dato del base) | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (128K con escalado) | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Llama-3.1-8B-Instruct | 8B | 131.072 tokens | Llama 3.1 Community License | Hugging Face, ampliamente adoptado |
+| Mistral-7B-Instruct-v0.3 | 7,3B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 No se dispone de datos de rendimiento comparativo del modelo evaluado, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo del modelo evaluado, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-safemix-kw1
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-safemix-kw1
 - Variante relacionada (med): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-lora-null-v1-target
 - Variante relacionada (med, lwf): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-lwf-target-kw1
 - Variante relacionada (sec, ldifs): https://featherless.ai/models/wz7475/qwen2.5-7b-instruct-katcher-sec-ldifs

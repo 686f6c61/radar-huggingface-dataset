@@ -2,7 +2,7 @@
 
 ## Resumen
 
-medassist-lora-adapter es un adaptador LoRA publicado por el usuario Misadri1984 en HuggingFace, ajustado a partir del modelo base unsloth/llama-3-8b-bnb-4bit. No se trata de un modelo completo, sino de un artefacto de pesos delta que debe cargarse sobre el modelo base para poder ejecutarse. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA de rango bajo sobre un transformer de 8.000 millones de parametros, y esta etiquetado con las librerias transformers, trl y unsloth, lo que indica que el entrenamiento se realizo con el stack de Unsloth y TRL.
+medassist-lora-adapter es un adaptador LoRA publicado por el usuario Misadri1984 en Hugging Face, ajustado a partir del modelo base unsloth/llama-3-8b-bnb-4bit. No se trata de un modelo completo, sino de un artefacto de pesos delta que debe cargarse sobre el modelo base para poder ejecutarse. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA de rango bajo sobre un transformer de 8.000 millones de parametros, y esta etiquetado con las librerias transformers, trl y unsloth, lo que indica que el entrenamiento se realizo con el stack de Unsloth y TRL.
 
 El nombre del repositorio sugiere un ajuste orientado a asistencia medica, pero la model card no documenta el dataset de entrenamiento, el dominio real, el numero de pasos ni los hiperparametros utilizados, por lo que esa finalidad no puede confirmarse con la informacion disponible. El unico idioma declarado es el ingles y la licencia indicada es Apache 2.0, aunque el uso comercial esta condicionado por la licencia del modelo base subyacente.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Misadri1984/medassist-lora-adapter | Adaptador LoRA sobre base de 8.000 millones | no disponible en la model card | apache-2.0 (sujeta a la licencia del modelo base) | Repositorio HuggingFace, 0 descargas |
+| Misadri1984/medassist-lora-adapter | Adaptador LoRA sobre base de 8.000 millones | no disponible en la model card | apache-2.0 (sujeta a la licencia del modelo base) | Repositorio Hugging Face, 0 descargas |
 | unsloth/llama-3-8b-bnb-4bit (modelo base) | 8.000 millones | no disponible en este repositorio; el modelo original Llama 3 8B declara 8.192 tokens | Licencia de la comunidad de Meta Llama 3 | Ampliamente disponible |
 | meta-llama/Meta-Llama-3-8B-Instruct | 8.000 millones | 8.192 tokens (dato de la model card de Meta, no verificado en este repositorio) | Licencia de la comunidad de Meta Llama 3 | Ampliamente disponible |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7.200 millones | 32.000 tokens (dato de la model card de Mistral, no verificado en este repositorio) | Apache 2.0 | Ampliamente disponible |
@@ -93,7 +93,7 @@ No existen datos de benchmarks publicados para este adaptador que permitan una c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Misadri1984/medassist-lora-adapter
+- Repositorio en Hugging Face: https://huggingface.co/Misadri1984/medassist-lora-adapter
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-bnb-4bit
 - Repositorio de Unsloth en GitHub: https://github.com/unslothai/unsloth
 - Los resultados de la busqueda web realizada no contienen informacion relevante sobre el modelo: unicamente hilos de foro sobre Facebook y Messenger ajenos por completo al contenido de esta ficha.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-eval-attnfix-final8500-93e52576cf42-9bb95506f21c` no es un modelo de lenguaje en el sentido habitual, sino un archivo versionado de resultados de evaluación publicado por el usuario davidwdw en HuggingFace. La propia model card lo describe como "versioned fleet archive" asociado a una receta canónica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20`, con un nivel de resultados ("tier") etiquetado como "closed-loop raw results, public301-320 seed0, 20/20 complete".
+El repositorio `davidwdw/fa-eval-attnfix-final8500-93e52576cf42-9bb95506f21c` no es un modelo de lenguaje en el sentido habitual, sino un archivo versionado de resultados de evaluación publicado por el usuario davidwdw en Hugging Face. La propia model card lo describe como "versioned fleet archive" asociado a una receta canónica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20`, con un nivel de resultados ("tier") etiquetado como "closed-loop raw results, public301-320 seed0, 20/20 complete".
 
 Esto significa que el artefacto parece contener datos crudos de una campaña de evaluación en bucle cerrado, correspondiente a un rango de tareas o identificadores (301-320) con semilla 0 y con las 20 ejecuciones completadas. El tamaño del repositorio es de 0,2 GB, coherente con un paquete de resultados y ficheros auxiliares, no con pesos de un modelo de gran tamano.
 
@@ -99,7 +99,7 @@ No se han identificado modelos comparables, porque este repositorio no es un mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-attnfix-final8500-93e52576cf42-9bb95506f21c
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-attnfix-final8500-93e52576cf42-9bb95506f21c
 - Repositorio hermano del mismo autor, encontrado en la búsqueda web: https://huggingface.co/davidwdw/fa-pi05-attnfix-eval4000-32fa121b10ab-9ff8e74258a5
-- Ficha principal de HuggingFace: https://huggingface.co/
+- Ficha principal de Hugging Face: https://huggingface.co/
 - Paper, blog, repositorio de código o demo oficiales: no disponibles.

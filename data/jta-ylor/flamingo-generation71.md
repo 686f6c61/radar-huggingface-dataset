@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jta-ylor/flamingo-generation71` es una implementacion a escala reducida de la arquitectura Flamingo orientada a tareas de generacion, publicada por el usuario jta-ylor en HuggingFace. El repositorio no contiene un modelo entrenado, sino un punto de partida reproducible: incluye el script `train.py`, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actua como checkpoint de inicializacion valido para pruebas de humo (smoke tests). El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark.
+`jta-ylor/flamingo-generation71` es una implementacion a escala reducida de la arquitectura Flamingo orientada a tareas de generacion, publicada por el usuario jta-ylor en Hugging Face. El repositorio no contiene un modelo entrenado, sino un punto de partida reproducible: incluye el script `train.py`, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actua como checkpoint de inicializacion valido para pruebas de humo (smoke tests). El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark.
 
 El checkpoint de safetensors declara 24 832 parametros totales, una cifra muy baja que confirma que se trata de una implementacion de juguete o de verificacion, no de un modelo listo para produccion. La arquitectura declarada combina atencion estandar con fusion de tipo tucker, activacion swish y normalizacion por batchnorm, y se etiqueta internamente como escala "large" pese al reducido numero de parametros reales.
 
@@ -82,8 +82,8 @@ La comparacion directa carece de sentido cuantitativo: las alternativas citadas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jta-ylor/flamingo-generation71
+- Modelo en Hugging Face: https://huggingface.co/jta-ylor/flamingo-generation71
 - Paper de referencia de la arquitectura Flamingo (DeepMind): no disponible en la informacion proporcionada
-- Repositorio de codigo asociado: no disponible (el codigo se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo asociado: no disponible (el codigo se distribuye dentro del propio repositorio de Hugging Face)
 - Demos o spaces: no disponible
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; unicamente aparecieron paginas sin relacion alguna con el proyecto, por lo que se omiten.

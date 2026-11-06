@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bimabk/dev-N2` es un modelo de lenguaje publicado en HuggingFace por el usuario bimabk, con un total de 1.720.574.976 parametros confirmados a partir de los pesos en formato safetensors. El repositorio ocupa 3,5 GB, lo que es coherente con pesos almacenados en precision de 16 bits (1,72 mil millones de parametros x 2 bytes = 3,44 GB), aunque no se dispone de confirmacion explicita del tipo de dato. La etiqueta `qwen3` del repositorio apunta a que se trata de un derivado o ajuste fino de la familia Qwen3, en concreto de su variante de aproximadamente 1,7 mil millones de parametros, aunque la model card no aporta detalles sobre la arquitectura exacta, el proceso de entrenamiento ni la procedencia de los datos.
+`bimabk/dev-N2` es un modelo de lenguaje publicado en Hugging Face por el usuario bimabk, con un total de 1.720.574.976 parametros confirmados a partir de los pesos en formato safetensors. El repositorio ocupa 3,5 GB, lo que es coherente con pesos almacenados en precision de 16 bits (1,72 mil millones de parametros x 2 bytes = 3,44 GB), aunque no se dispone de confirmacion explicita del tipo de dato. La etiqueta `qwen3` del repositorio apunta a que se trata de un derivado o ajuste fino de la familia Qwen3, en concreto de su variante de aproximadamente 1,7 mil millones de parametros, aunque la model card no aporta detalles sobre la arquitectura exacta, el proceso de entrenamiento ni la procedencia de los datos.
 
 El interes de este tipo de publicaciones radica en su utilidad como modelo compacto para experimentacion local: un modelo de ~1,7 B cabe en GPUs de consumo con 8 GB de VRAM incluso en precision completa, y en menos de 1 GB si se cuantiza a 4 bits. Eso lo situa en el segmento de modelos pequenos para prototipado rapido, ajuste fino con recursos limitados y despliegue en entornos con restricciones de memoria.
 
@@ -71,7 +71,7 @@ La comparacion es necesariamente parcial, ya que del modelo evaluado solo se con
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| bimabk/dev-N2 | 1,72 B | no disponible | no disponible | safetensors | Repositorio HuggingFace con 15 descargas |
+| bimabk/dev-N2 | 1,72 B | no disponible | no disponible | safetensors | Repositorio Hugging Face con 15 descargas |
 | Qwen3-1.7B (referencia de familia) | 1,7 B | 32.768 tokens nativos, ampliable | Apache 2.0 | safetensors, GGUF | Ampliamente distribuido |
 | Llama-3.2-1B | 1,23 B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Ampliamente distribuido |
 | Gemma-3-1B | 1 B | 32.000 tokens | Gemma Terms of Use | safetensors, GGUF | Ampliamente distribuido |
@@ -92,7 +92,7 @@ El modelo evaluado no aporta ventaja verificable frente a estas alternativas: ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bimabk/dev-N2
+- Modelo en Hugging Face: https://huggingface.co/bimabk/dev-N2
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demos: no disponible

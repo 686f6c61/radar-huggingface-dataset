@@ -1,7 +1,7 @@
 # zyl16819/Fy
 
 ## Resumen
-Fy es un modelo publicado en HuggingFace por el usuario zyl16819 bajo licencia gemma. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o un artefacto de prueba.
+Fy es un modelo publicado en Hugging Face por el usuario zyl16819 bajo licencia gemma. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o un artefacto de prueba.
 
 Por la etiqueta de licencia se infiere que el modelo deriva de la familia Gemma de Google, pero no hay confirmacion de que sea un fine-tuning, una adaptacion, una cuantizacion o un modelo entrenado desde cero. Tampoco se especifica tamano, contexto, idiomas ni formato de pesos.
 
@@ -39,7 +39,7 @@ No consta ninguna innovacion tecnica documentada (atencion lineal, decodificacio
 - Reproduccion de experimentos: si el autor publica posteriormente detalles de entrenamiento, el repositorio podria servir como punto de partida para replicar el proceso.
 - Fine-tuning experimental sobre la base Gemma: usar el modelo como punto de partida en investigacion academica, siempre que la licencia lo permita y se valide previamente su calidad.
 - Benchmarking comparativo: incluirlo en una bateria de pruebas frente a otros derivados de Gemma para medir diferencias de comportamiento, con la cautela de que no hay metricas publicadas.
-- Analisis de artefactos en HuggingFace: estudiar el repositorio como caso de publicacion sin documentacion y evaluar el impacto en la trazabilidad y reproducibilidad de modelos open source.
+- Analisis de artefactos en Hugging Face: estudiar el repositorio como caso de publicacion sin documentacion y evaluar el impacto en la trazabilidad y reproducibilidad de modelos open source.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la informacion disponible.
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
 | zyl16819/Fy | no disponible | no disponible | gemma | practicamente nula | repositorio publico sin descargas |
-| Gemma (familia base de Google) | 2B y 7B en la primera generacion; variantes posteriores | 8K en la primera generacion | Gemma Terms of Use | model card completa y benchmarks publicados | HuggingFace y Vertex AI |
-| Gemma 2 | 2B, 9B y 27B | 8K | Gemma Terms of Use | model card completa y benchmarks publicados | HuggingFace y Vertex AI |
-| Gemma 3 | 1B, 4B, 12B y 27B | hasta 128K en variantes seleccionadas | Gemma Terms of Use | model card completa y benchmarks publicados | HuggingFace y Vertex AI |
+| Gemma (familia base de Google) | 2B y 7B en la primera generacion; variantes posteriores | 8K en la primera generacion | Gemma Terms of Use | model card completa y benchmarks publicados | Hugging Face y Vertex AI |
+| Gemma 2 | 2B, 9B y 27B | 8K | Gemma Terms of Use | model card completa y benchmarks publicados | Hugging Face y Vertex AI |
+| Gemma 3 | 1B, 4B, 12B y 27B | hasta 128K en variantes seleccionadas | Gemma Terms of Use | model card completa y benchmarks publicados | Hugging Face y Vertex AI |
 
 La comparativa se limita a la familia Gemma porque la licencia del repositorio apunta a esa linea; no puede confirmarse que Fy sea un derivado directo ni en que variante se basa.
 
@@ -72,7 +72,7 @@ La comparativa se limita a la familia Gemma porque la licencia del repositorio a
 - No apto para produccion sin evaluacion previa: la falta de trazabilidad impide garantizar reproducibilidad ni cumplimiento normativo.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/zyl16819/Fy
+- Repositorio Hugging Face: https://huggingface.co/zyl16819/Fy
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms
 - Documentacion oficial de Gemma: https://ai.google.dev/gemma/docs
-- Repositorios oficiales de Gemma en HuggingFace: https://huggingface.co/google/gemma-2-9b y https://huggingface.co/google/gemma-3-27b-it
+- Repositorios oficiales de Gemma en Hugging Face: https://huggingface.co/google/gemma-2-9b y https://huggingface.co/google/gemma-3-27b-it

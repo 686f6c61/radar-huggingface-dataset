@@ -37,7 +37,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 
 ## Casos de uso
 
-- Práctica académica de fine-tuning: el modelo sirve como referencia didáctica para estudiantes que quieran ver un ejemplo real de adaptación LoRA con SFT sobre Qwen3.5-4B, incluyendo el flujo completo de entrenamiento y publicación en HuggingFace.
+- Práctica académica de fine-tuning: el modelo sirve como referencia didáctica para estudiantes que quieran ver un ejemplo real de adaptación LoRA con SFT sobre Qwen3.5-4B, incluyendo el flujo completo de entrenamiento y publicación en Hugging Face.
 - Clasificación de tickets de soporte: si el entrenamiento fue sobre datos de triaje, el adaptador podría asignar prioridades o categorías a incidencias de soporte, aunque no hay documentación que lo confirme.
 - Prototipado de chatbots especializados: al ser un adaptador ligero (0,1 GB), puede cargarse sobre el base para experimentar con asistentes conversacionales en entornos de desarrollo.
 - Evaluación de técnicas LoRA: útil para comparar el efecto de distintos hiperparámetros de LoRA en tareas de clasificación de texto, dado que el repositorio GitHub documenta el proceso.
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hidewall/lab21-qwen35-triage-vi | 4B (base) + LoRA | no disponible | Adaptador LoRA | no disponible | HuggingFace |
-| rhindsight/lab21-2A202601903-qwen35-triage-vi | 4B (base) + LoRA | no disponible | Adaptador LoRA | no disponible | HuggingFace |
-| Qwen3.5-4B (base) | 4B | no disponible | Modelo completo | no disponible | HuggingFace, ModelScope |
+| hidewall/lab21-qwen35-triage-vi | 4B (base) + LoRA | no disponible | Adaptador LoRA | no disponible | Hugging Face |
+| rhindsight/lab21-2A202601903-qwen35-triage-vi | 4B (base) + LoRA | no disponible | Adaptador LoRA | no disponible | Hugging Face |
+| Qwen3.5-4B (base) | 4B | no disponible | Modelo completo | no disponible | Hugging Face, ModelScope |
 
 Los dos adaptadores "lab21-qwen35-triage-vi" (hidewall y rhindsight) son prácticamente idénticos en nombre y propósito, ambos derivados del mismo laboratorio académico. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
 
@@ -78,9 +78,9 @@ Los dos adaptadores "lab21-qwen35-triage-vi" (hidewall y rhindsight) son prácti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hidewall/lab21-qwen35-triage-vi
+- Modelo en Hugging Face: https://huggingface.co/hidewall/lab21-qwen35-triage-vi
 - Modelo similar (rhindsight): https://huggingface.co/rhindsight/lab21-2A202601903-qwen35-triage-vi
 - Repositorio del laboratorio (GitHub): https://github.com/VinUni-AI20k/Day21-Track3-Finetuning-Lab/blob/main/BONUS-CHALLENGE-EN.md
 - Repositorio de referencia (WiiiCuti): https://github.com/WiiiCuti/lab21-2A202601538/blob/main/BONUS-CHALLENGE.md
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
-- Perfil de Qwen en HuggingFace: https://huggingface.co/Qwen
+- Perfil de Qwen en Hugging Face: https://huggingface.co/Qwen

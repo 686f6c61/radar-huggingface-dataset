@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_format_medmcqa_qwen7b
+- Repositorio Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_format_medmcqa_qwen7b
 - Modelo relacionado (Numina): https://huggingface.co/ishikaa/acquisition_generator_AS_format_numina_qwen7b
 - Modelo relacionado (Qwen3B): https://huggingface.co/ishikaa/acquisition_qwen3bins_medmcqa_format
 - Dataset MedMCQA: https://github.com/medmcqa/medmcqa

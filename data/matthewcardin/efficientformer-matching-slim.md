@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matthewcardin/efficientformer-matching-slim` es un repositorio de HuggingFace publicado por el usuario matthewcardin que contiene una implementación funcional («working implementation») de una arquitectura EfficientFormer en configuración «small» orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El peso real declarado en safetensors es de 16.576 parámetros totales, un orden de magnitud muy por debajo de cualquier EfficientFormer publicado, lo que refuerza su naturaleza de esqueleto de código y no de modelo utilizable.
+`matthewcardin/efficientformer-matching-slim` es un repositorio de Hugging Face publicado por el usuario matthewcardin que contiene una implementación funcional («working implementation») de una arquitectura EfficientFormer en configuración «small» orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El peso real declarado en safetensors es de 16.576 parámetros totales, un orden de magnitud muy por debajo de cualquier EfficientFormer publicado, lo que refuerza su naturaleza de esqueleto de código y no de modelo utilizable.
 
 El interés del repositorio es, por tanto, documental y de ingeniería: ofrece un `inference.py` ejecutable, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador Lion con *schedule* polinómico). La arquitectura declarada combina atención dispersa (*sparse attention*), fusión con puertas (*gated fusion*), activación approximate GELU y normalización LayerNorm.
 
@@ -70,7 +70,7 @@ No disponible. La información proporcionada no incluye datos de parámetros, co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-matching-slim | 16.576 (inicialización) | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| efficientformer-matching-slim | 16.576 (inicialización) | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas de la familia EfficientFormer | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,12 +82,12 @@ No disponible. La información proporcionada no incluye datos de parámetros, co
 - **Idioma y contexto**: sin datos de longitud de contexto ni de idiomas soportados; no debe asumirse multilingüismo.
 - **Licencia**: MIT permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen si se emplean conjuntos externos.
 - **Producción**: no apto para producción tal cual. Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse de forma separada de los valores por defecto de este repositorio.
-- **Integración**: al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace no funcionarán sin un adaptador explícito.
+- **Integración**: al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face no funcionarán sin un adaptador explícito.
 - **Ausencia de contexto externo**: las búsquedas web realizadas no devolvieron ninguna fuente técnica sobre este modelo; todos los resultados obtenidos fueron irrelevantes (sitios de una peña deportiva danesa).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matthewcardin/efficientformer-matching-slim
-- Archivos del repositorio citados en la model card: `inference.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la página de HuggingFace)
+- Hugging Face: https://huggingface.co/matthewcardin/efficientformer-matching-slim
+- Archivos del repositorio citados en la model card: `inference.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la página de Hugging Face)
 - Paper, blog, repositorio de código adicional o demo: no disponibles en la información proporcionada
 - Resultados de búsqueda web: ninguno relevante para este modelo (los resultados obtenidos correspondían a arsenal.dk y dominios asociados, sin relación con el repositorio)

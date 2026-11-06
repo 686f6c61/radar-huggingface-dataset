@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-so101-grab-cup-30k es un ajuste fino (fine-tuning) del modelo de vision-lenguaje-accion (VLA) `physical-intelligence/pi05_base` sobre un unico conjunto de datos de teleoperacion de un brazo robotico SO-101. Lo publica el usuario `mattewg` en HuggingFace con licencia Apache-2.0 y un repositorio de 12,4 GB. No es un modelo de lenguaje: es una politica visomotora que recibe dos vistas de camara y el estado articular actual, y devuelve un bloque de 16 objetivos de articulacion absolutos a 15 Hz.
+pi05-so101-grab-cup-30k es un ajuste fino (fine-tuning) del modelo de vision-lenguaje-accion (VLA) `physical-intelligence/pi05_base` sobre un unico conjunto de datos de teleoperacion de un brazo robotico SO-101. Lo publica el usuario `mattewg` en Hugging Face con licencia Apache-2.0 y un repositorio de 12,4 GB. No es un modelo de lenguaje: es una politica visomotora que recibe dos vistas de camara y el estado articular actual, y devuelve un bloque de 16 objetivos de articulacion absolutos a 15 Hz.
 
 El modelo resuelve una tarea concreta: coger una taza blanca. El unico prompt de tarea presente en el conjunto de entrenamiento es `"Grab the white cup"`, lo que lo convierte en un artefacto muy especializado en lugar de una politica generalista. Su relevancia es fundamentalmente practica para quien trabaja con el brazo de bajo coste SO-101 dentro del ecosistema LeRobot y openpi: sirve como referencia reproducible de un ajuste fino completo (30.000 pasos, lote 32, 4x A100-64GB con FSDP) y como punto de partida documentado para nuevas tareas.
 
@@ -79,7 +79,7 @@ El unico dato numerico de rendimiento es la perdida final de entrenamiento: 0,00
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-so101-grab-cup-30k | no disponible | 16 acciones a 15 Hz (~1,07 s) | Coger una taza blanca con SO-101 | Apache-2.0 | HuggingFace, requiere openpi en commit concreto |
+| pi05-so101-grab-cup-30k | no disponible | 16 acciones a 15 Hz (~1,07 s) | Coger una taza blanca con SO-101 | Apache-2.0 | Hugging Face, requiere openpi en commit concreto |
 | physical-intelligence/pi05_base | no disponible | no disponible | Politica VLA generalista | no disponible en la informacion proporcionada | Checkpoint de referencia en openpi |
 | Otros ajustes finos de SO-101 | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas en la informacion disponible |
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento ni de recuento de parametros de los modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattewg/pi05-so101-grab-cup-30k
+- Modelo en Hugging Face: https://huggingface.co/mattewg/pi05-so101-grab-cup-30k
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base (referenciado como `physical-intelligence/pi05_base`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ibuprofene/grab_cup_2cam_v4
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi (requiere el commit `215abfb217dbac7d5f1273282331b9b1866c0479` mas ficheros de configuracion del SO-101)

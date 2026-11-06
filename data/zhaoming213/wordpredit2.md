@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WordPredit2 es un modelo de lenguaje de tipo transformer decoder-only, desarrollado por el usuario Zhaoming213 y publicado en HuggingFace con licencia Apache 2.0. Con 93.410.304 parametros (93,41 M), esta especializado en prediccion de texto corto y finalizacion de frases en chino: dado un fragmento breve, genera su continuacion mas probable. No es un modelo conversacional ni ha pasado por ajuste por instrucciones, sino un modelo preentrenado sobre texto web nativo en chino.
+WordPredit2 es un modelo de lenguaje de tipo transformer decoder-only, desarrollado por el usuario Zhaoming213 y publicado en Hugging Face con licencia Apache 2.0. Con 93.410.304 parametros (93,41 M), esta especializado en prediccion de texto corto y finalizacion de frases en chino: dado un fragmento breve, genera su continuacion mas probable. No es un modelo conversacional ni ha pasado por ajuste por instrucciones, sino un modelo preentrenado sobre texto web nativo en chino.
 
 La segunda generacion de la serie WordPredit aumenta el numero de capas respecto a su predecesor, aplica dos rondas de limpieza profunda sobre el corpus y utiliza frases mas cortas durante el preentrenamiento, con el objetivo declarado de mejorar la robustez, la generalizacion y la generacion creativa. El autor enmarca el modelo en un estudio sobre las caracteristicas de divergencia de modelos pequenos y sobre el uso de corpus nativos (en lugar de destilacion de cajas negras) para evitar tendencias moralizantes o de rechazo.
 
@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WordPredit2 | 93,41 M | 34 tokens | Chino | Apache 2.0 | HuggingFace (0 descargas) |
-| WordPredit (1.ª generacion) | no disponible | no disponible | Chino | no disponible | HuggingFace |
-| ChatBox-unrestricted | no disponible | no disponible | Chino | no disponible | HuggingFace |
-| ChatBox2-unrestricted | no disponible | no disponible | Chino | no disponible | HuggingFace |
-| ChatBox3-unrestricted | no disponible | no disponible | Chino | no disponible | HuggingFace (experimental) |
+| WordPredit2 | 93,41 M | 34 tokens | Chino | Apache 2.0 | Hugging Face (0 descargas) |
+| WordPredit (1.ª generacion) | no disponible | no disponible | Chino | no disponible | Hugging Face |
+| ChatBox-unrestricted | no disponible | no disponible | Chino | no disponible | Hugging Face |
+| ChatBox2-unrestricted | no disponible | no disponible | Chino | no disponible | Hugging Face |
+| ChatBox3-unrestricted | no disponible | no disponible | Chino | no disponible | Hugging Face (experimental) |
 
 No se dispone en la informacion proporcionada de datos verificables de modelos comparables de terceros (parametros, contexto, benchmarks o licencia) que permitan una comparacion cuantitativa. La particularidad de WordPredit2 dentro de su categoria es la combinacion de un contexto de 34 tokens con un enfoque de preentrenamiento sin alineamiento, lo que lo aleja del segmento de modelos pequenos de proposito general.
 
@@ -99,7 +99,7 @@ No se dispone en la informacion proporcionada de datos verificables de modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zhaoming213/WordPredit2
+- Modelo en Hugging Face: https://huggingface.co/Zhaoming213/WordPredit2
 - Generacion anterior (WordPredit): https://huggingface.co/Zhaoming213/WordPredit
 - ChatBox-unrestricted: https://huggingface.co/Zhaoming213/ChatBox-unrestricted
 - ChatBox2-unrestricted: https://huggingface.co/Zhaoming213/ChatBox2-unrestricted

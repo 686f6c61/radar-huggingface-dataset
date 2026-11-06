@@ -20,7 +20,7 @@ Es relevante ahora como plantilla reproducible para revisión de código, prueba
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (`model.safetensors`), acompañado de `model.py`, `config.json` y `training_args.json` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0.0 GB |
 | Fecha de creación / actualización | 2026-10-18 / 2026-10-18 |
@@ -70,10 +70,10 @@ Las cifras de los modelos alternativos son valores públicos aproximados, inclui
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laurenjones/classification-lite | 16.576 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | HuggingFace, 0 descargas |
-| DistilBERT (base) | ~66 M | 512 tokens | métricas GLUE públicas | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| TinyBERT (general, 4 capas) | ~14,5 M | 512 tokens | métricas GLUE públicas | Apache 2.0 | HuggingFace |
-| MiniLM-L6 (v2) | ~22,7 M | 512 tokens (modelo base) | métricas públicas en clasificación y *sentence similarity* | Apache 2.0 | HuggingFace |
+| Laurenjones/classification-lite | 16.576 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | Hugging Face, 0 descargas |
+| DistilBERT (base) | ~66 M | 512 tokens | métricas GLUE públicas | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| TinyBERT (general, 4 capas) | ~14,5 M | 512 tokens | métricas GLUE públicas | Apache 2.0 | Hugging Face |
+| MiniLM-L6 (v2) | ~22,7 M | 512 tokens (modelo base) | métricas públicas en clasificación y *sentence similarity* | Apache 2.0 | Hugging Face |
 
 La diferencia sustantiva no es de tamaño (el modelo aquí descrito es ~900 veces menor que DistilBERT) sino de estado: las alternativas son checkpoints preentrenados y evaluados, mientras que este repositorio distribuye una inicialización sin entrenamiento y sin métricas.
 
@@ -92,6 +92,6 @@ La diferencia sustantiva no es de tamaño (el modelo aquí descrito es ~900 vece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Laurenjones/classification-lite
+- Repositorio en Hugging Face: https://huggingface.co/Laurenjones/classification-lite
 
 No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos asociados al modelo.

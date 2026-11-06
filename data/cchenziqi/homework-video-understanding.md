@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario CCHENZIQI en HuggingFace, no contiene un modelo de IA entrenado ni un checkpoint desplegable. Se trata de una nota de investigación (research note) sobre comprensión de video (video understanding), que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor lo declara explícitamente como un documento exploratorio, no como un paper completo ni como una liberación de modelos.
+Este repositorio, publicado por el usuario CCHENZIQI en Hugging Face, no contiene un modelo de IA entrenado ni un checkpoint desplegable. Se trata de una nota de investigación (research note) sobre comprensión de video (video understanding), que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor lo declara explícitamente como un documento exploratorio, no como un paper completo ni como una liberación de modelos.
 
 El repositorio incluye dos archivos: `analysis.md` (el documento principal) y `README.md` (esta documentación). Los parámetros totales registrados en safetensors son 33.088, un valor que corresponde a un archivo de pesos residual o de prueba, no a un modelo funcional. La licencia es cc-by-4.0. Dado que no existe un modelo entrenado, no se pueden evaluar capacidades, rendimiento ni requisitos de hardware. Esta ficha documenta la naturaleza real del repositorio para evitar malentendidos entre desarrolladores que busquen un modelo de comprensión de video.
 
@@ -53,7 +53,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CCHENZIQI/homework-video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/CCHENZIQI/homework-video-understanding
 - API de comprensión de video en fal.ai (referencia externa): https://fal.ai/models/fal-ai/video-understanding
 - Documentación de comprensión de video de Gemini (referencia externa): https://ai.google.dev/gemini-api/docs/video-understanding
 - Encuesta sobre modelos de lenguaje para comprensión de video (referencia externa): https://zhuanlan.zhihu.com/p/688143927

@@ -4,7 +4,7 @@
 
 Lance es un modelo multimodal unificado de 3B parámetros desarrollado por ByteDance que integra en un único framework la comprensión, generación y edición de imágenes y vídeo. El proyecto se presenta como un artefacto de investigación (no como un producto pulido) cuyo objetivo es estudiar la sinergia multitarea entre comprensión y generación visual bajo un presupuesto de cómputo contenido, con un entrenamiento realizado con hasta 128 GPU A100. La generación se entrenó hasta 768x768 píxeles en imagen y 480p a 12 FPS en vídeo.
 
-El modelo se publica con licencia Apache 2.0 y pesos en formato safetensors, y la ficha de HuggingFace lo etiqueta como `pipeline_tag: any-to-any` con la librería `Lance`. Existe una discrepancia relevante en la información disponible: las etiquetas del repositorio indican que el modelo parte de `Qwen/Qwen2.5-VL-3B-Instruct` como base (finetune), mientras que la model card del autor afirma que Lance se entrenó desde cero ("trained from scratch"). Esa contradicción debe resolverse antes de asumir cualquiera de las dos afirmaciones.
+El modelo se publica con licencia Apache 2.0 y pesos en formato safetensors, y la ficha de Hugging Face lo etiqueta como `pipeline_tag: any-to-any` con la librería `Lance`. Existe una discrepancia relevante en la información disponible: las etiquetas del repositorio indican que el modelo parte de `Qwen/Qwen2.5-VL-3B-Instruct` como base (finetune), mientras que la model card del autor afirma que Lance se entrenó desde cero ("trained from scratch"). Esa contradicción debe resolverse antes de asumir cualquiera de las dos afirmaciones.
 
 El repositorio consultado figura bajo el identificador `Trxon/Lance`, mientras que la model card y los enlaces apuntan al proyecto oficial `bytedance-research/Lance`. No se han publicado en la información disponible resultados numéricos de benchmarks (solo se referencia una imagen de resumen de benchmarks), ni datos de idiomas soportados, contexto o cuantizaciones.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 - VRAM estimada para inferencia: no disponible de forma explícita. Como estimación derivada del tamaño (3B parámetros), los pesos en fp16 ocuparían del orden de 6 GB, y en fp32 unos 12 GB, a lo que habría que sumar los componentes visuales y de generación (el repositorio completo ocupa 30,8 GB).
 - GPU recomendadas: no disponible. El entrenamiento se realizó con hasta 128 GPU A100, lo que no implica requisitos equivalentes para inferencia.
 - Encaje en GPU de consumo: no confirmado en la información disponible; probablemente viable en GPUs con suficiente VRAM una vez cuantizado, pero sin datos oficiales.
-- Opciones de despliegue: la ficha menciona una demo en HuggingFace Spaces (Gradio) y una librería propia (`Lance`). No se detallan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la ficha menciona una demo en Hugging Face Spaces (Gradio) y una librería propia (`Lance`). No se detallan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 - El propio autor indica que Lance es un proyecto de investigación y no un producto pulido; la calidad de salida puede variar según prompt, resolución, duración, complejidad del movimiento y escenario de edición.
 - Discrepancia no resuelta sobre el origen del modelo: las etiquetas indican fine-tune sobre Qwen2.5-VL-3B-Instruct, mientras la model card afirma entrenamiento desde cero. Esto afecta a la interpretación de su procedencia y posibles sesgos heredados.
-- Discrepancia de repositorio: la información de HuggingFace corresponde a `Trxon/Lance`, mientras la model card y los enlaces apuntan al proyecto oficial `bytedance-research/Lance`. Conviene verificar la procedencia y autenticidad de los pesos antes de usarlos en producción.
+- Discrepancia de repositorio: la información de Hugging Face corresponde a `Trxon/Lance`, mientras la model card y los enlaces apuntan al proyecto oficial `bytedance-research/Lance`. Conviene verificar la procedencia y autenticidad de los pesos antes de usarlos en producción.
 - No se han publicado datos de sesgos conocidos, riesgo de alucinación ni limitaciones de idioma en la información disponible.
 - No se dispone de información sobre la longitud de contexto, lo que impide evaluar su comportamiento en tareas de contexto largo.
 - No se detallan restricciones adicionales de licencia más allá de Apache 2.0; al ser un artefacto de investigación, se recomienda validar la calidad antes de cualquier uso comercial.
@@ -88,9 +88,9 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado): https://huggingface.co/Trxon/Lance
-- HuggingFace (repositorio oficial citado en la model card): https://huggingface.co/bytedance-research/Lance
+- Hugging Face (repositorio consultado): https://huggingface.co/Trxon/Lance
+- Hugging Face (repositorio oficial citado en la model card): https://huggingface.co/bytedance-research/Lance
 - Página del proyecto: https://lance-project.github.io/
 - Paper (arXiv): http://arxiv.org/abs/2605.18678
 - Código (GitHub): https://github.com/bytedance/Lance
-- Demo (HuggingFace Space): https://huggingface.co/spaces/bytedance-research/Lance
+- Demo (Hugging Face Space): https://huggingface.co/spaces/bytedance-research/Lance

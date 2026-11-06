@@ -70,8 +70,8 @@ No se dispone de informacion sobre modelos comparables especificos para deteccio
 
 ## Enlaces
 
-- [HuggingFace - modelo en italiano](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it)
-- [HuggingFace - version en ingles](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en)
-- [HuggingFace - version en feroes](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo)
+- [Hugging Face - modelo en italiano](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it)
+- [Hugging Face - version en ingles](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en)
+- [Hugging Face - version en feroes](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo)
 - [Paper de mmBERT (arXiv:2509.06888)](https://arxiv.org/abs/2509.06888)
 - [Repositorio de RAGTruth (GitHub)](https://github.com/ParticleMedia/RAGTruth)

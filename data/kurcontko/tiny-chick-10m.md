@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny-Chick-10M es un modelo de lenguaje en ingles de 9.591.684 parametros entrenado desde cero por el desarrollador kurcontko (Michal Kurc) y publicado en HuggingFace bajo licencia Apache 2.0. Su proposito es servir como referencia en la categoria de modelos ultrapequenos dentro de la Tiny-ML Leaderboard, un espacio de comparacion de modelos con presupuestos de computo muy reducidos. No esta pensado para uso en produccion ni para conversacion: el propio autor lo describe como un modelo de tamano de benchmark, fluido pero no factual y sin entrenamiento para chat.
+Tiny-Chick-10M es un modelo de lenguaje en ingles de 9.591.684 parametros entrenado desde cero por el desarrollador kurcontko (Michal Kurc) y publicado en Hugging Face bajo licencia Apache 2.0. Su proposito es servir como referencia en la categoria de modelos ultrapequenos dentro de la Tiny-ML Leaderboard, un espacio de comparacion de modelos con presupuestos de computo muy reducidos. No esta pensado para uso en produccion ni para conversacion: el propio autor lo describe como un modelo de tamano de benchmark, fluido pero no factual y sin entrenamiento para chat.
 
 La arquitectura es un transformer decoder-only de 14 capas, anchura 240, 6 cabezas de atencion (2 cabezas KV) y un vocabulario BPE de 4.096 tokens. Incorpora varias modificaciones respecto al bloque Llama estandar: MLP con activacion ReLU al cuadrado, QK-norm, RoPE parcial, atencion autoexclusiva y proyecciones de salida inicializadas a cero. El codigo de la arquitectura se distribuye en el archivo `tinylm_arch.py`, por lo que requiere `trust_remote_code=True` para cargarse.
 
@@ -75,7 +75,7 @@ No se han encontrado en la informacion disponible datos comparativos con modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Tiny-Chick-10M | 9.591.684 | No disponible | Apache 2.0 | HuggingFace (transformers, codigo personalizado) |
+| Tiny-Chick-10M | 9.591.684 | No disponible | Apache 2.0 | Hugging Face (transformers, codigo personalizado) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,9 +92,9 @@ No se han encontrado en la informacion disponible datos comparativos con modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kurcontko/Tiny-Chick-10M
+- Modelo en Hugging Face: https://huggingface.co/kurcontko/Tiny-Chick-10M
 - Perfil del autor: https://huggingface.co/kurcontko
-- Tiny-ML Leaderboard (espacio de HuggingFace): https://huggingface.co/spaces/Glint-Research/Tiny-ML-Leaderboard
+- Tiny-ML Leaderboard (espacio de Hugging Face): https://huggingface.co/spaces/Glint-Research/Tiny-ML-Leaderboard
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset WikiText: https://huggingface.co/datasets/Salesforce/wikitext
 - Dataset ARC: https://huggingface.co/datasets/allenai/ai2_arc

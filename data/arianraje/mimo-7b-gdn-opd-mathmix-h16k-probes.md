@@ -61,6 +61,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arianraje/mimo-7b-gdn-opd-mathmix-h16k-probes
+- Repositorio Hugging Face: https://huggingface.co/arianraje/mimo-7b-gdn-opd-mathmix-h16k-probes
 - Repositorio relacionado del mismo autor: https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD
 - Árbol de archivos del repositorio relacionado: https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD/tree/main

@@ -4,7 +4,7 @@
 
 MiniMax H3 es un sistema generativo omni-modal de MiniMax orientado a la creación de vídeo con audio estéreo nativo, capaz de producir clips de 4 a 15 segundos a 24 FPS, con lado corto de 768 píxeles por defecto y hasta 2K mediante el módulo H3-Regenerate-2K. El sistema acepta contextos multimodales compuestos por texto, imágenes, vídeo y audio, y cubre un espectro amplio de tareas: texto a vídeo, imagen a vídeo, vídeo a vídeo, y variantes que incorporan audio en la entrada o en la salida (text-to-audio-video, audio-to-audio-video, reference-to-audio-video, entre otras).
 
-La ficha de HuggingFace analizada corresponde al repositorio `dware/MiniMax-H3`, una réplica de 353,9 GB publicada por un tercero; el repositorio oficial es `MiniMaxAI/MiniMax-H3` y el proyecto se distribuye bajo la Minimax-H3 Community License Agreement, con pesos en formato safetensors y librería propia `minimax-h3` (etiquetado también como `diffusers`). El sistema se organiza en tres módulos: H3-Context-IR (comprensión y refinado de la instrucción multimodal a una representación intermedia), H3-Base (generación de vídeo y audio a 768p) y H3-Regenerate-2K (regeneración a 2K reutilizando el contexto original).
+La ficha de Hugging Face analizada corresponde al repositorio `dware/MiniMax-H3`, una réplica de 353,9 GB publicada por un tercero; el repositorio oficial es `MiniMaxAI/MiniMax-H3` y el proyecto se distribuye bajo la Minimax-H3 Community License Agreement, con pesos en formato safetensors y librería propia `minimax-h3` (etiquetado también como `diffusers`). El sistema se organiza en tres módulos: H3-Context-IR (comprensión y refinado de la instrucción multimodal a una representación intermedia), H3-Base (generación de vídeo y audio a 768p) y H3-Regenerate-2K (regeneración a 2K reutilizando el contexto original).
 
 Su relevancia actual radica en que unifica comprensión y generación multimodal en un único sistema entrenado desde la etapa de preentrenamiento para generalizar entre tareas, e incluye audio estéreo de 32 kHz sincronizado con el vídeo y soporte estable de diálogo en 11 idiomas. No se han publicado en la información disponible datos sobre número de parámetros, arquitectura interna ni resultados de benchmarks.
 
@@ -27,7 +27,7 @@ Su relevancia actual radica en que unifica comprensión y generación multimodal
 | Relaciones de aspecto | 21:9, 16:9, 4:3, 1:1, 3:4, 9:16 y otras |
 | Variantes | H3-Base-FL2VA (primer/último fotograma) y H3-Base-Ref2VA (referencia omni-modal) |
 | Tamano del repositorio | 353,9 GB |
-| Fecha de publicacion del repo | 2026-10-06 (según HuggingFace) |
+| Fecha de publicacion del repo | 2026-10-06 (según Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -97,8 +97,8 @@ No se han proporcionado datos comparativos (parámetros, contexto, benchmarks o 
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/dware/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio analizado en Hugging Face: https://huggingface.co/dware/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Guías de prompting (skills): https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ManiLadder_Models es un repositorio publicado por Linslab en HuggingFace con licencia MIT y un tamaño de 31,8 GB. La model card oficial está prácticamente vacía: únicamente declara la licencia, sin especificar arquitectura, parámetros, tareas soportadas ni idiomas. El nombre del repositorio sugiere una posible relación con manipulación diestra en robótica (embodied AI), dado que el autor declara investigación en el NUS LinS Lab sobre aprendizaje de manipulación dexterous a partir de datos humanos, pero esta conexión no está confirmada en la documentación oficial del modelo.
+ManiLadder_Models es un repositorio publicado por Linslab en Hugging Face con licencia MIT y un tamaño de 31,8 GB. La model card oficial está prácticamente vacía: únicamente declara la licencia, sin especificar arquitectura, parámetros, tareas soportadas ni idiomas. El nombre del repositorio sugiere una posible relación con manipulación diestra en robótica (embodied AI), dado que el autor declara investigación en el NUS LinS Lab sobre aprendizaje de manipulación dexterous a partir de datos humanos, pero esta conexión no está confirmada en la documentación oficial del modelo.
 
 La relevancia actual del repositorio es limitada desde el punto de vista técnico: no existen benchmarks publicados, ni instrucciones de uso, ni especificaciones de hardware. Un repositorio de terceros en GitHub (Damacol/linslab-vr_maniladder_models) lo describe como un pipeline "privado y sin censura" para flujos de trabajo centrados en privacidad, pero esta descripción no proviene del autor original y no puede verificarse contra los artefactos publicados.
 
@@ -21,7 +21,7 @@ La relevancia actual del repositorio es limitada desde el punto de vista técnic
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. La model card en HuggingFace contiene únicamente la declaración de licencia (`license: mit`) y no incluye secciones de arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación como RLHF o DPO. El tamaño del repositorio (31,8 GB) sugiere un modelo de pesos completos en precisión fp16 o similar, pero no permite inferir la arquitectura subyacente. No hay papers, documentación técnica ni notas de versión asociadas al repositorio.
+No se ha publicado información sobre la arquitectura del modelo. La model card en Hugging Face contiene únicamente la declaración de licencia (`license: mit`) y no incluye secciones de arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación como RLHF o DPO. El tamaño del repositorio (31,8 GB) sugiere un modelo de pesos completos en precisión fp16 o similar, pero no permite inferir la arquitectura subyacente. No hay papers, documentación técnica ni notas de versión asociadas al repositorio.
 
 ## Capacidades
 
@@ -69,13 +69,13 @@ No disponible. Sin información sobre arquitectura, parámetros o tareas, no es 
 - Documentación inexistente: la model card no contiene información técnica, instrucciones de uso ni ejemplos de código. El modelo no es reproducible ni evaluable sin documentación adicional.
 - Descripción de terceros no verificada: el repositorio de GitHub de Damacol lo describe como "IA sin censura" y con capacidades para "eludir restricciones". Estas afirmaciones no provienen del autor y no están respaldadas por artefactos técnicos verificables; además, el término "sin censura" suele asociarse a modelos con alineación deficiente y mayor riesgo de contenido dañino.
 - Riesgo de alucinación y sesgos: desconocidos, al no existir evaluación publicada.
-- Sin soporte comunitario: cero descargas y cero likes en HuggingFace indican que el modelo no ha sido probado por la comunidad.
+- Sin soporte comunitario: cero descargas y cero likes en Hugging Face indican que el modelo no ha sido probado por la comunidad.
 - Licencia MIT: permite uso comercial sin restricciones, pero la ausencia de documentación técnica hace arriesgado su uso en producción.
 - Posible confusión de identidad: el nombre "ManiLadder" podría sugerir relación con el trabajo del autor en manipulación robótica, pero no hay evidencia de que este repositorio contenga un modelo de ese tipo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Linslab/ManiLadder_Models
+- Repositorio en Hugging Face: https://huggingface.co/Linslab/ManiLadder_Models
 - Árbol de archivos del repositorio: https://huggingface.co/Linslab/ManiLadder_Models/tree/main
 - Repositorio de terceros en GitHub (no oficial): https://github.com/Damacol/linslab-vr_maniladder_models
 - Página personal del autor (contexto de investigación): https://huangxuchuan.github.io/

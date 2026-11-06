@@ -72,8 +72,8 @@ Nota: la evaluación de caminata se realiza con una aproximación 2D basada en u
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-sirius-v3-link01 | 0,8B (base) + LoRA | no disponible | Decisión de navegación 2D (5 acciones) | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LM de propósito general | no disponible en la información | HuggingFace |
+| connectailab-rl-sirius-v3-link01 | 0,8B (base) + LoRA | no disponible | Decisión de navegación 2D (5 acciones) | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LM de propósito general | no disponible en la información | Hugging Face |
 | Cerebro PPO `brain.json` (profesor) | no disponible | no aplica | Decisión de navegación 2D (5 acciones) | no disponible | Repositorio CONNECT TYCOON |
 | Políticas PPO estándar en robótica simulada | típicamente < 1M | no aplica | Control continuo/discreto | variable | Repositorios de investigación |
 
@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gutgai/connectailab-rl-sirius-v3-link01
+- Modelo en Hugging Face: https://huggingface.co/gutgai/connectailab-rl-sirius-v3-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del checkpoint `francesca9805/ppt-wc-loglinear-newlex-nld-before-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generación de texto de tipo transformer decoder-only basado en la arquitectura GPT-2, con 124.770.816 parámetros totales, según los pesos publicados en formato safetensors. El entrenamiento se realizó mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre Transformers 4.56.2.
+Este modelo es un ajuste fino (fine-tuning) del checkpoint `francesca9805/ppt-wc-loglinear-newlex-nld-before-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generación de texto de tipo transformer decoder-only basado en la arquitectura GPT-2, con 124.770.816 parámetros totales, según los pesos publicados en formato safetensors. El entrenamiento se realizó mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre Transformers 4.56.2.
 
 El interés de esta publicación es eminentemente experimental: el nombre del repositorio sugiere un flujo de trabajo de investigación centrado en tokenizadores ("newlex"), en un corpus empaquetado de aproximadamente 100 MB ("packed", "100mb") y en un checkpoint intermedio ("ckpt500") dentro de una ejecución más larga. La trazabilidad del entrenamiento es limitada: no se documentan el dataset, el número de tokens vistos, la composición de los datos ni el procedimiento de alineación más allá de la etiqueta "sft".
 
@@ -12,7 +12,7 @@ No se dispone de información sobre licencia, idiomas soportados, longitud de co
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only causal (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada |
@@ -23,7 +23,7 @@ No se dispone de información sobre licencia, idiomas soportados, longitud de co
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a la familia GPT-2: un transformer decoder-only con atencion causal, normalizacion previa a cada subcapa y embeddings posicionales aprendidos. Con 124.770.816 parametros, el tamano coincide practicamente con el de GPT-2 small (124M), por lo que se trata de un modelo pequeno, apto para CPU y GPU de gama de entrada. El repositorio se distribuye en safetensors y esta etiquetado como compatible con text-generation-inference y endpoints de HuggingFace.
+La arquitectura corresponde a la familia GPT-2: un transformer decoder-only con atencion causal, normalizacion previa a cada subcapa y embeddings posicionales aprendidos. Con 124.770.816 parametros, el tamano coincide practicamente con el de GPT-2 small (124M), por lo que se trata de un modelo pequeno, apto para CPU y GPU de gama de entrada. El repositorio se distribuye en safetensors y esta etiquetado como compatible con text-generation-inference y endpoints de Hugging Face.
 
 El entrenamiento se realizo mediante SFT con TRL 0.23.0 (Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4, Tokenizers 0.22.1), con seguimiento del run en Weights & Biases bajo el proyecto "new-tokenizers" del autor. El identificador del modelo indica que se trata de un checkpoint intermedio (paso 500) de un ajuste sobre un corpus empaquetado de unos 100 MB, probablemente en neerlandes, y que existe una ejecucion previa con otro tokenizador ("newlex"). No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de RLHF o DPO, ni innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, etc.). El repositorio ocupa 2,7 GB, muy por encima de los aproximadamente 0,5 GB que ocuparian los pesos en fp32, lo que sugiere que contiene artefactos adicionales (optimizador, checkpoints o copias intermedias).
 
@@ -35,14 +35,14 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0 (Transformers 4.56.2, Py
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles. El identificador sugiere neerlandes, pero no hay confirmacion.
 - Capacidades especiales (modo thinking, vision, audio, code): no disponibles.
-- Compatibilidad de despliegue: etiquetado como `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con Inference Endpoints de HuggingFace.
+- Compatibilidad de despliegue: etiquetado como `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
 - Investigacion sobre tokenizadores: el modelo forma parte de una linea de experimentos ("new-tokenizers", "newlex") dirigida a comparar vocabularios y estrategias de tokenizacion; puede usarse como punto de comparacion frente a otros checkpoints de la misma serie.
 - Prototipado de pipelines de SFT con TRL: sirve como ejemplo reproducible de un ajuste supervisado con TRL 0.23.0 y un checkpoint intermedio, util para validar configuraciones de entrenamiento antes de escalar a modelos mayores.
 - Generacion de texto corto de bajo coste: con 124M de parametros puede ejecutarse en CPU o en GPU modesta para tareas de autocompletado o generacion de frases en entornos de prueba, siempre que la calidad se valide antes.
-- Pruebas de integracion de infraestructura: al ser compatible con TGI y con los endpoints de HuggingFace, es adecuado para validar cadenas de despliegue (contenedores, balanceo, latencia) sin consumir recursos de GPU de gama alta.
+- Pruebas de integracion de infraestructura: al ser compatible con TGI y con los endpoints de Hugging Face, es adecuado para validar cadenas de despliegue (contenedores, balanceo, latencia) sin consumir recursos de GPU de gama alta.
 - Generacion de datos sinteticos para pruebas: puede emplearse para producir texto de relleno en entornos de test de sistemas de recuperacion, indexacion o busqueda, donde no se requiere calidad linguistica alta.
 - Experimentos academicos sobre corpus reducidos: el nombre indica entrenamiento sobre aproximadamente 100 MB empaquetados, un regimen util para estudiar como afecta el tamano y la composicion del corpus a un modelo pequeno.
 - Punto de partida para fine-tuning adicional: al ser un modelo de 124M con licencia indeterminada, puede servir como base para experimentos de ajuste en dominios concretos, asumiendo el riesgo legal de la licencia no declarada.
@@ -58,7 +58,7 @@ La model card no incluye metricas de MMLU, HumanEval, GSM8K, perplexity ni ningu
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,5 GB de pesos mas el overhead de activaciones y cache KV; en fp16/bf16, alrededor de 0,25 GB. Con contexto corto, la inferencia completa cabe holgadamente por debajo de 1-2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). No se requiere hardware de centro de datos.
 - Compatibilidad con GPU de consumo: si. Cabe en practicamente cualquier GPU de consumo moderna e incluso en iGPU con memoria unificada suficiente; tambien es viable en CPU.
-- Opciones de despliegue: `transformers` (pipeline), text-generation-inference (TGI, segun las etiquetas del repositorio), Inference Endpoints de HuggingFace, vLLM (para un modelo de este tamano el beneficio de throughput es limitado), y llama.cpp/Ollama solo tras convertir los pesos a GGUF, conversion que el autor no proporciona.
+- Opciones de despliegue: `transformers` (pipeline), text-generation-inference (TGI, segun las etiquetas del repositorio), Inference Endpoints de Hugging Face, vLLM (para un modelo de este tamano el beneficio de throughput es limitado), y llama.cpp/Ollama solo tras convertir los pesos a GGUF, conversion que el autor no proporciona.
 - Latencia y throughput estimados: no disponible. No se publican mediciones de tokens por segundo ni de latencia; en cualquier caso, con 124M de parametros el cuello de botella previsible es la generacion autoregresiva secuencial, no la memoria.
 - Nota sobre el repositorio: los 2,7 GB de tamano no deben interpretarse como requisito de memoria en inferencia; probablemente incluyen estados de optimizador y checkpoints intermedios que no son necesarios para ejecutar el modelo.
 
@@ -68,9 +68,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este modelo (nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455) | 124.770.816 | No disponible | No disponible | safetensors en HuggingFace | No disponible |
+| Este modelo (nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455) | 124.770.816 | No disponible | No disponible | safetensors en Hugging Face | No disponible |
 | GPT-2 small | 124M | 1024 tokens (cifra tipica de la arquitectura) | MIT (segun la publicacion original de OpenAI) | Amplia, multiples formatos | Metricas historicas de la publicacion original |
-| DistilGPT-2 | 82M | 1024 tokens (cifra tipica de la arquitectura) | Apache 2.0 (segun la publicacion de HuggingFace) | Amplia, multiples formatos | Metricas de la publicacion de destilacion |
+| DistilGPT-2 | 82M | 1024 tokens (cifra tipica de la arquitectura) | Apache 2.0 (segun la publicacion de Hugging Face) | Amplia, multiples formatos | Metricas de la publicacion de destilacion |
 | Pythia-160M | 160M | 2048 tokens (segun la publicacion de EleutherAI) | Apache 2.0 | Amplia | Metricas publicadas en el paper de Pythia |
 
 La context length y las licencias de las alternativas se incluyen como referencia general de sus respectivas publicaciones, no como datos verificados en la informacion proporcionada sobre este modelo. No es posible establecer una comparacion de calidad porque no existen evaluaciones publicadas del modelo objeto de la ficha.
@@ -89,7 +89,7 @@ La context length y las licencias de las alternativas se incluyen como referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-nld-before-100mb-packed-bfdiso_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/56juzkgb
 - Repositorio de TRL: https://github.com/huggingface/trl

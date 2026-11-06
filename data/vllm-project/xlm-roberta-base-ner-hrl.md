@@ -23,7 +23,7 @@ Su relevancia actual es practica: ofrece un NER multilingue ligero, con licencia
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de XLM-RoBERTa base, un transformer encoder multilingue preentrenado con enmascaramiento de tokens sobre corpus multilingues. Sobre esa base se anade una cabeza de clasificacion de tokens que asigna a cada subtoken una de las siete etiquetas del esquema BIO: O, B-PER, I-PER, B-ORG, I-ORG, B-LOC e I-LOC. El ajuste fino se realizo con los hiperparametros recomendados por HuggingFace sobre una NVIDIA V100.
+El modelo parte de XLM-RoBERTa base, un transformer encoder multilingue preentrenado con enmascaramiento de tokens sobre corpus multilingues. Sobre esa base se anade una cabeza de clasificacion de tokens que asigna a cada subtoken una de las siete etiquetas del esquema BIO: O, B-PER, I-PER, B-ORG, I-ORG, B-LOC e I-LOC. El ajuste fino se realizo con los hiperparametros recomendados por Hugging Face sobre una NVIDIA V100.
 
 Los datos de entrenamiento son una agregacion de corpus anotados por idioma: ANERcorp para arabe, CoNLL-2003 para aleman e ingles, CoNLL-2002 para espanol y neerlandes, Europeana Newspapers para frances, Italian I-CAB para italiano, Latvian NER para leton, Paramopama + Second Harem para portugues y MSRA para chino. No se especifica en la informacion disponible el numero total de tokens de entrenamiento ni si se aplicaron tecnicas de RLHF o DPO, algo esperable en un modelo discriminativo de este tipo. La innovacion principal es la cobertura multilingue con un unico conjunto de pesos y un esquema de etiquetado que resuelve entidades adyacentes del mismo tipo.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Entidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xlm-roberta-base-ner-hrl (este) | 277,5 M | 10 | PER, ORG, LOC | AFL-3.0 | HuggingFace (copia vllm-project y original Davlan) |
-| Davlan/xlm-roberta-base-ner-hrl | 277,5 M | 10 | PER, ORG, LOC | AFL-3.0 | HuggingFace (cuenta personal) |
-| xlm-roberta-large-ner-hrl | no disponible en la informacion | 10 | PER, ORG, LOC | no disponible en la informacion | HuggingFace |
-| Modelos NER monolingues basados en BERT/RoBERTa | variable | 1 | variable | variable | HuggingFace |
+| xlm-roberta-base-ner-hrl (este) | 277,5 M | 10 | PER, ORG, LOC | AFL-3.0 | Hugging Face (copia vllm-project y original Davlan) |
+| Davlan/xlm-roberta-base-ner-hrl | 277,5 M | 10 | PER, ORG, LOC | AFL-3.0 | Hugging Face (cuenta personal) |
+| xlm-roberta-large-ner-hrl | no disponible en la informacion | 10 | PER, ORG, LOC | no disponible en la informacion | Hugging Face |
+| Modelos NER monolingues basados en BERT/RoBERTa | variable | 1 | variable | variable | Hugging Face |
 
 La comparativa se limita a la familia xlm-roberta-ner-hrl; no se dispone de datos de rendimiento comparado en la informacion proporcionada.
 

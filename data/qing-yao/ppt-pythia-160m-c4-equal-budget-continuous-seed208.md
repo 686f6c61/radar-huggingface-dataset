@@ -77,10 +77,10 @@ El autor advierte que las curvas de pérdida usan precisión y enmascaramiento d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-pythia-160m-c4-equal-budget-continuous-seed208 | 162.322.944 | 2.048 tokens | no disponible | HuggingFace |
-| Pythia-160M (EleutherAI) | 162 millones aprox. | 2.048 tokens | Apache 2.0 | HuggingFace |
-| GPT-2 (124M) | 124 millones | 1.024 tokens | licencia MIT modificada | HuggingFace |
-| OPT-125M (Meta) | 125 millones | 2.048 tokens | licencia MIT | HuggingFace |
+| ppt-pythia-160m-c4-equal-budget-continuous-seed208 | 162.322.944 | 2.048 tokens | no disponible | Hugging Face |
+| Pythia-160M (EleutherAI) | 162 millones aprox. | 2.048 tokens | Apache 2.0 | Hugging Face |
+| GPT-2 (124M) | 124 millones | 1.024 tokens | licencia MIT modificada | Hugging Face |
+| OPT-125M (Meta) | 125 millones | 2.048 tokens | licencia MIT | Hugging Face |
 
 Las cifras de parámetros, contexto y licencia de Pythia-160M, GPT-2 y OPT-125M corresponden a sus especificaciones públicas conocidas. No se dispone de datos de rendimiento comparativo en benchmarks entre estos modelos y el aquí descrito, por lo que la comparación se limita a tamaño, contexto, licencia y disponibilidad. La diferencia principal del modelo de qing-yao frente a Pythia-160M original es que aquel se entrenó desde cero sobre C4 con un presupuesto reducido de 10.500 actualizaciones, mientras que Pythia-160M se entrenó sobre el Pile con un presupuesto muy superior.
 
@@ -99,7 +99,7 @@ Las cifras de parámetros, contexto y licencia de Pythia-160M, GPT-2 y OPT-125M 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed208
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed208
 - Repositorio interno de resultados: carpeta `reports/` dentro del repositorio del modelo (endpoints y comparaciones emparejadas).
 - Receta de entrenamiento: fichero `run.json` dentro del repositorio del modelo.
 - No se han encontrado papers, blogs, repositorios externos ni demos adicionales en la información disponible.

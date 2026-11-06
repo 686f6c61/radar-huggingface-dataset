@@ -71,11 +71,11 @@ No se han publicado en la información disponible resultados sobre MMLU, HumanEv
 
 | Modelo | Parametros | Modalidad | Dominio de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PaperScorer-3B-Vision-arXiv (este) | 3,75 B | texto + visión | arXiv (71k ejemplos) | other | HuggingFace, 13 descargas |
+| PaperScorer-3B-Vision-arXiv (este) | 3,75 B | texto + visión | arXiv (71k ejemplos) | other | Hugging Face, 13 descargas |
 | PaperScorer-3B-Text-arXiv | no disponible | solo texto | arXiv | no disponible | colección PaperScorer |
 | PaperScorer-7B-Vision-arXiv | no disponible | texto + visión | arXiv | no disponible | colección PaperScorer |
 | PaperScorer-3B-Vision-openreview-iclr | no disponible | texto + visión | OpenReview/ICLR | no disponible | colección PaperScorer |
-| Qwen/Qwen2.5-VL-3B-Instruct (base) | 3,75 B | texto + visión | datos generales + instrucciones | no disponible en esta ficha | HuggingFace |
+| Qwen/Qwen2.5-VL-3B-Instruct (base) | 3,75 B | texto + visión | datos generales + instrucciones | no disponible en esta ficha | Hugging Face |
 
 La colección PaperScorer contiene ocho modelos SFT de dominio único, resultado del producto {3B, 7B} × {texto, visión} × {arxiv, openreview-iclr}, más los datasets PaperScorer-Text y PaperScorer-Vision. No se dispone de las métricas individuales de los modelos hermanos en la información proporcionada, salvo la advertencia del autor sobre la asimetría de volumen de datos entre dominios. El modelo base Qwen2.5-VL-3B-Instruct no es un comparador directo en la tarea: no está entrenado para emitir veredictos de aceptación.
 
@@ -93,7 +93,7 @@ La colección PaperScorer contiene ocho modelos SFT de dominio único, resultado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skonan/PaperScorer-3B-Vision-arXiv
+- Modelo en Hugging Face: https://huggingface.co/skonan/PaperScorer-3B-Vision-arXiv
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Repositorio del orquestador PaperScorer: https://github.com/zlab-princeton/PaperScorer
 - Colección PaperScorer (8 modelos y 2 datasets): https://huggingface.co/collections/zlab-princeton/paperscorer

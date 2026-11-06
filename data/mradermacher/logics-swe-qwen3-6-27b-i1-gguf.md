@@ -107,7 +107,7 @@ Como referencia de categoría (modelos de ~27–32 B orientados a código, con l
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantización): https://huggingface.co/mradermacher/Logics-SWE-Qwen3.6-27B-i1-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/Logics-SWE-Qwen3.6-27B-i1-GGUF
 - Modelo base: https://huggingface.co/Logics-MLLM/Logics-SWE-Qwen3.6-27B
 - Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/Logics-SWE-Qwen3.6-27B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/Logics-MLLM/Logics-SWE-Env-2.5K

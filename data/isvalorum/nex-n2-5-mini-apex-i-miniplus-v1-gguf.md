@@ -111,7 +111,7 @@ No se han publicado resultados de benchmarks sobre esta edición V1 concreta en 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta edición: https://huggingface.co/IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-V1-GGUF
+- Repositorio Hugging Face de esta edición: https://huggingface.co/IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-V1-GGUF
 - Edición recomendada V2.1: https://huggingface.co/IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - Evaluación independiente de la familia APEX-I-MiniPlus por zephel01 (CoolZero): https://note.com/zephel01/n/n71d3d7e6b70c

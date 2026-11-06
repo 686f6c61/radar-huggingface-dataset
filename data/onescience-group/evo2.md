@@ -75,5 +75,5 @@ No se dispone de datos comparativos con otros modelos de secuencias genómicas e
 
 ## Enlaces
 
-- [HuggingFace: OneScience-Group/evo2](https://huggingface.co/OneScience-Group/evo2)
+- [Hugging Face: OneScience-Group/evo2](https://huggingface.co/OneScience-Group/evo2)
 - [Entorno OneCode (enlace externo)](https://gitee.com/link?target=https%3A%2F%2Fweb-2069360198568017922-iaaj.ksai.scnet.cn%3A58043%2Fhome)

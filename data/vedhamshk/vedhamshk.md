@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vedhamshk es un agente de aprendizaje por refuerzo (reinforcement learning) basado en Q-learning, entrenado específicamente para resolver el entorno Taxi-v3 de OpenAI Gym. Se publica en HuggingFace bajo el repositorio Vedhamshk/Vedhamshk, con una sencilla interfaz de carga mediante la función `load_from_hub` de la librería de Hugging Face. No se trata de un modelo de lenguaje ni de una red neuronal: es una implementación personalizada de Q-learning que aprende una política de acciones discretas para maximizar la recompensa acumulada en el juego del taxi.
+Vedhamshk es un agente de aprendizaje por refuerzo (reinforcement learning) basado en Q-learning, entrenado específicamente para resolver el entorno Taxi-v3 de OpenAI Gym. Se publica en Hugging Face bajo el repositorio Vedhamshk/Vedhamshk, con una sencilla interfaz de carga mediante la función `load_from_hub` de la librería de Hugging Face. No se trata de un modelo de lenguaje ni de una red neuronal: es una implementación personalizada de Q-learning que aprende una política de acciones discretas para maximizar la recompensa acumulada en el juego del taxi.
 
 El modelo es relevante como ejemplo mínimo y reproducible de un agente de refuerzo resuelto con un algoritmo tabular clásico. Su arquitectura, un agente tabular Q-learning, permite inspeccionar directamente la tabla Q y entender el comportamiento del agente. El autor declara en su model card una recompensa media de 7.56 con una desviación estándar de 2.71 en el entorno Taxi-v3, aunque ese resultado no ha sido verificado.
 
@@ -26,7 +26,7 @@ Vedhamshk es un agente de aprendizaje por refuerzo basado en Q-learning. No util
 
 - Resolución del entorno Taxi-v3 mediante una política aprendida con Q-learning.
 - Toma de decisiones paso a paso en un entorno de OpenAI Gym con acciones discretas.
-- Carga directa desde el Hub de HuggingFace con `load_from_hub`, lo que permite ejecutar el agente en pocas líneas de Python.
+- Carga directa desde el Hub de Hugging Face con `load_from_hub`, lo que permite ejecutar el agente en pocas líneas de Python.
 - No incluye capacidades de lenguaje natural, generación de texto, visión ni soporte de tool calling.
 - No es un modelo generalista: su capacidad está restringida a la tarea específica para la que fue entrenado.
 
@@ -69,4 +69,4 @@ No se han identificado modelos comparables en la información proporcionada. Exi
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/Vedhamshk/Vedhamshk](https://huggingface.co/Vedhamshk/Vedhamshk)
+- Modelo en Hugging Face: [https://huggingface.co/Vedhamshk/Vedhamshk](https://huggingface.co/Vedhamshk/Vedhamshk)

@@ -83,5 +83,5 @@ La unica comparacion documentada es con el modelo base m-a-p/MERT-v1-95M, del qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BEDO97/egystormy-mert-v1-95m
+- Modelo en Hugging Face: https://huggingface.co/BEDO97/egystormy-mert-v1-95m
 - Modelo base: https://huggingface.co/m-a-p/MERT-v1-95M

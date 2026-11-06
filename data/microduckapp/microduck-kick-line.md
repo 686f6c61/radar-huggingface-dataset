@@ -13,12 +13,12 @@ La información disponible no permite reconstruir la arquitectura de la red, el 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No disponible. Política de control neuronal exportada a ONNX (entrada de 61 observaciones, salida de 14 consignas articulares); topología interna no documentada |
-| Parametros totales | No disponible. El repositorio ocupa 0,0 GB según HuggingFace, lo que sitúa el artefacto por debajo de los 100 MB |
+| Parametros totales | No disponible. El repositorio ocupa 0,0 GB según Hugging Face, lo que sitúa el artefacto por debajo de los 100 MB |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica. Ventana de control de un único paso: 61 observaciones por ciclo a 50 Hz (20 ms por paso) |
 | Tipos de cuantizacion | No disponible. Se distribuye un único artefacto ONNX sin variantes cuantizadas declaradas |
 | Idiomas soportados | No aplica (no procesa lenguaje natural) |
-| Licencia | No disponible en la model card ni en los metadatos de HuggingFace |
+| Licencia | No disponible en la model card ni en los metadatos de Hugging Face |
 | Formato de pesos | ONNX (`policy.onnx`), acompañado de `manifest.json` para la instalación y reproducción del movimiento |
 | Entrada / salida | 61 observaciones de entrada, 14 objetivos articulares de salida |
 | Frecuencia de control | 50 Hz |
@@ -69,7 +69,7 @@ No disponible. No se han identificado en la información proporcionada política
 
 | Modelo | Tipo | Entrada / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| microduck kick line | Política de control ONNX | 61 obs. / 14 articulaciones a 50 Hz | No disponible | HuggingFace, 0 descargas |
+| microduck kick line | Política de control ONNX | 61 obs. / 14 articulaciones a 50 Hz | No disponible | Hugging Face, 0 descargas |
 | Otros movimientos `microduck-move` | Políticas de control ONNX | No disponible | No disponible | Ecosistema Microduck |
 | Políticas de locomoción de Pollen Robotics | Políticas RL (MuJoCo) | No disponible | No disponible | Repositorio `pollen-robotics/microduck` |
 
@@ -88,7 +88,7 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-kick-line
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-kick-line
 - Repositorio del robot Microduck: https://github.com/pollen-robotics/microduck
 - Página oficial de Microduck (Pollen Robotics): https://pollen-robotics.com/microduck/
 - Anuncio en TechCrunch: https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/

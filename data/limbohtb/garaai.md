@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Limbohtb/garaAI` es un repositorio de modelos alojado en HuggingFace por el usuario Limbohtb. En el momento de la consulta, la model card pública contiene únicamente la declaración de licencia (`unlicense`) y no incluye ninguna descripción del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus datos de origen. El repositorio no declara pipeline, no declara idiomas soportados y no incluye etiquetas técnicas más allá de la licencia y la región.
+`Limbohtb/garaAI` es un repositorio de modelos alojado en Hugging Face por el usuario Limbohtb. En el momento de la consulta, la model card pública contiene únicamente la declaración de licencia (`unlicense`) y no incluye ninguna descripción del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus datos de origen. El repositorio no declara pipeline, no declara idiomas soportados y no incluye etiquetas técnicas más allá de la licencia y la región.
 
 Los metadatos disponibles son mínimos: 0 descargas, 0 likes, sin ficheros de pesos documentados en la información proporcionada, y con fecha de creación y de última actualización idénticas (2026-10-18T19:09:07Z), lo que sugiere una publicación sin mantenimiento posterior ni iteraciones registradas.
 
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Limbohtb/garaAI | no disponible | no disponible | unlicense | repositorio HuggingFace sin descargas registradas |
+| Limbohtb/garaAI | no disponible | no disponible | unlicense | repositorio Hugging Face sin descargas registradas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,4 +87,4 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Limbohtb/garaAI
+- Hugging Face: https://huggingface.co/Limbohtb/garaAI

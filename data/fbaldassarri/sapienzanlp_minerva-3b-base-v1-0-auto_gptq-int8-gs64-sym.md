@@ -76,7 +76,7 @@ No se han publicado benchmarks que comparen el rendimiento de estas versiones. L
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int8-gs64-sym
-- Modelo base en HuggingFace: https://huggingface.co/sapienzanlp/Minerva-3B-base-v1.0
+- Modelo cuantizado en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int8-gs64-sym
+- Modelo base en Hugging Face: https://huggingface.co/sapienzanlp/Minerva-3B-base-v1.0
 - Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de replicacion: https://git.epicdynamic.com/auto-round-pipeline

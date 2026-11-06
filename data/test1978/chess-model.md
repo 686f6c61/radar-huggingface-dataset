@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `test1978/chess-model` es un sistema de inteligencia artificial para el juego de ajedrez desarrollado por el usuario `test1978`. Segun los metadatos publicados en HuggingFace, el modelo combina aprendizaje por refuerzo con Monte Carlo Tree Search (MCTS), e incorpora tecnicas especificas como zone guidance (guia por zonas del tablero), matrices de adyacencia, curvas de Hilbert y una arquitectura denominada "ABC model". El pipeline declarado es `reinforcement-learning`, lo que sugiere que el entrenamiento se ha realizado mediante interaccion con el entorno de juego en lugar de aprendizaje supervisado puro.
+El modelo `test1978/chess-model` es un sistema de inteligencia artificial para el juego de ajedrez desarrollado por el usuario `test1978`. Segun los metadatos publicados en Hugging Face, el modelo combina aprendizaje por refuerzo con Monte Carlo Tree Search (MCTS), e incorpora tecnicas especificas como zone guidance (guia por zonas del tablero), matrices de adyacencia, curvas de Hilbert y una arquitectura denominada "ABC model". El pipeline declarado es `reinforcement-learning`, lo que sugiere que el entrenamiento se ha realizado mediante interaccion con el entorno de juego en lugar de aprendizaje supervisado puro.
 
-El modelo se publico el 12 de abril de 2026 y se actualizo el 22 de agosto de 2026. A fecha de la consulta, no registra descargas ni interacciones de la comunidad, y su acceso es restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de poder descargarlo. No se dispone de informacion publica sobre el tamano de los parametros, la arquitectura concreta ni el rendimiento en partidas, lo que limita la evaluacion objetiva del modelo. Su relevancia actual reside en el interes creciente por modelos de ajedrez alineados con el comportamiento humano, como Maia-2 o Maia-3, aunque este proyecto parece independiente y sin resultados publicados.
+El modelo se publico el 12 de abril de 2026 y se actualizo el 22 de agosto de 2026. A fecha de la consulta, no registra descargas ni interacciones de la comunidad, y su acceso es restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de poder descargarlo. No se dispone de informacion publica sobre el tamano de los parametros, la arquitectura concreta ni el rendimiento en partidas, lo que limita la evaluacion objetiva del modelo. Su relevancia actual reside en el interes creciente por modelos de ajedrez alineados con el comportamiento humano, como Maia-2 o Maia-3, aunque este proyecto parece independiente y sin resultados publicados.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - No se dispone de informacion sobre el numero de parametros, por lo que no es posible estimar la VRAM necesaria.
 - Las etiquetas indican uso de PyTorch y NumPy, lo que sugiere compatibilidad con GPUs NVIDIA mediante CUDA, aunque tambien podria ejecutarse en CPU.
 - No se han documentado requisitos de GPU concretos (A100, H100, RTX 4090, etc.).
-- El acceso al modelo es restringido (gated), por lo que antes de desplegarlo es necesario aceptar las condiciones de HuggingFace.
+- El acceso al modelo es restringido (gated), por lo que antes de desplegarlo es necesario aceptar las condiciones de Hugging Face.
 - No se conocen opciones de despliegue oficiales con vLLM, llama.cpp u Ollama, dado que no es un modelo de lenguaje generativo clasico.
 - La latencia y el throughput dependen del numero de simulaciones de MCTS configuradas, dato no disponible.
 

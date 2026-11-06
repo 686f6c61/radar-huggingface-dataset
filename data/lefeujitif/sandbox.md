@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LeFeujitif/sandbox` es una LoRA de texto a imagen publicada en HuggingFace por el usuario LeFeujitif. Segun la model card, se trata de "una mezcla de LoRA" (*"Just a mix of lora"*), es decir, una fusión o combinación de adaptadores de bajo rango sobre el modelo base `Liberata/illustrious-xl-v1.0`, que a su vez es un derivado de la familia Illustrious XL (basada en SDXL). El repositorio se distribuye con la librería `diffusers` y la etiqueta `template:diffusion-lora`, lo que indica que está pensado para cargarse como adaptador LoRA sobre el checkpoint base y no como modelo independiente.
+`LeFeujitif/sandbox` es una LoRA de texto a imagen publicada en Hugging Face por el usuario LeFeujitif. Segun la model card, se trata de "una mezcla de LoRA" (*"Just a mix of lora"*), es decir, una fusión o combinación de adaptadores de bajo rango sobre el modelo base `Liberata/illustrious-xl-v1.0`, que a su vez es un derivado de la familia Illustrious XL (basada en SDXL). El repositorio se distribuye con la librería `diffusers` y la etiqueta `template:diffusion-lora`, lo que indica que está pensado para cargarse como adaptador LoRA sobre el checkpoint base y no como modelo independiente.
 
 El modelo resuelve el problema de personalización de estilo o concepto en generación de imágenes: permite aplicar un estilo concreto (fruto de la mezcla de varias LoRA) sobre Illustrious XL sin necesidad de reentrenar el modelo completo. Es relevante por su volumen de descargas (más de 26.000) pese a tener solo 3 likes, lo que sugiere un uso intensivo en la comunidad de generación de imágenes con modelos SDXL/Illustrious.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeFeujitif/sandbox | LoRA (mezcla) | Liberata/illustrious-xl-v1.0 | no disponible (heredada del base, típicamente 1024x1024) | no disponible | HuggingFace, diffusers |
-| Otras LoRA sobre Illustrious XL | LoRA | Illustrious XL | 1024x1024 | variable según autor | HuggingFace / Civitai |
-| Modelo base Illustrious XL v1.0 | Modelo completo (SDXL) | SDXL | 1024x1024 | no disponible en la información | HuggingFace |
-| SDXL base 1.0 | Modelo completo | - | 1024x1024 | CreativeML Open RAIL++-M | HuggingFace, diffusers |
+| LeFeujitif/sandbox | LoRA (mezcla) | Liberata/illustrious-xl-v1.0 | no disponible (heredada del base, típicamente 1024x1024) | no disponible | Hugging Face, diffusers |
+| Otras LoRA sobre Illustrious XL | LoRA | Illustrious XL | 1024x1024 | variable según autor | Hugging Face / Civitai |
+| Modelo base Illustrious XL v1.0 | Modelo completo (SDXL) | SDXL | 1024x1024 | no disponible en la información | Hugging Face |
+| SDXL base 1.0 | Modelo completo | - | 1024x1024 | CreativeML Open RAIL++-M | Hugging Face, diffusers |
 
 No se dispone de datos de rendimiento comparativo (FID, CLIP score, preferencias humanas) para esta LoRA, por lo que la comparativa se limita a aspectos estructurales y de disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo (FID, CLIP score, preferencias
 
 ## Enlaces
 
-- [HuggingFace: LeFeujitif/sandbox](https://huggingface.co/LeFeujitif/sandbox)
+- [Hugging Face: LeFeujitif/sandbox](https://huggingface.co/LeFeujitif/sandbox)
 - [Modelo base: Liberata/illustrious-xl-v1.0](https://huggingface.co/Liberata/illustrious-xl-v1.0)
 - [Ficheros del modelo (según model card, enlace a LeFeujitif/kgns)](https://huggingface.co/LeFeujitif/kgns/tree/main)
 - [Documentación de diffusers para LoRA](https://huggingface.co/docs/diffusers/main/en/tutorials/using_peft_for_inference)

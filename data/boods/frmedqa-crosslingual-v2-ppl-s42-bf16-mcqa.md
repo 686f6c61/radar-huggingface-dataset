@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-MCQA` es un checkpoint publicado en HuggingFace por el usuario `boods`. La información disponible es mínima: la model card es la plantilla automática de HuggingFace sin ninguna sección completada (todas las entradas aparecen como "[More Information Needed]"), y el repositorio no registra descargas ni "likes" en el momento de la consulta. No se dispone de datos sobre el desarrollador, el problema que resuelve ni la arquitectura empleada.
+El modelo identificado como `boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-MCQA` es un checkpoint publicado en Hugging Face por el usuario `boods`. La información disponible es mínima: la model card es la plantilla automática de Hugging Face sin ninguna sección completada (todas las entradas aparecen como "[More Information Needed]"), y el repositorio no registra descargas ni "likes" en el momento de la consulta. No se dispone de datos sobre el desarrollador, el problema que resuelve ni la arquitectura empleada.
 
 El nombre del identificador sugiere un ajuste fino orientado a preguntas de opción múltiple (MCQA) sobre un corpus médico en francés ("FrMedQA"), con evaluación cross-lingual, una selección de checkpoint basada en perplejidad ("PPL"), semilla 42 y precisión bf16. Se trata, sin embargo, de una inferencia a partir de la nomenclatura, no de información confirmada por el autor, por lo que debe tomarse como hipótesis de trabajo.
 
@@ -27,7 +27,7 @@ Otros datos de metadatos: etiquetas `transformers`, `safetensors`, `unsloth`, `a
 
 No hay información publicada sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura de espacio de estados o un modelo híbrido, ni tampoco el número de capas, dimensiones ocultas o mecanismo de atención empleado. Tampoco se documenta el modelo base sobre el que se habría realizado el ajuste fino.
 
-Respecto al entrenamiento, la única evidencia indirecta es la etiqueta `unsloth`, que indica que el ajuste se habría realizado con la librería Unsloth (habitualmente empleada para fine-tuning eficiente en memoria con LoRA/QLoRA sobre modelos transformer). El identificador menciona `bf16`, lo que apunta a precisión mixta bf16 durante el entrenamiento o a pesos guardados en bf16. No se dispone de datos sobre volumen de tokens, composición del dataset, uso de RLHF/DPO ni ninguna innovación técnica concreta. La etiqueta `arxiv:1910.09700` corresponde a la referencia de Lacoste et al. (2019) sobre el calculador de impacto medioambiental que aparece en la plantilla de model card de HuggingFace, no a un artículo científico sobre este modelo.
+Respecto al entrenamiento, la única evidencia indirecta es la etiqueta `unsloth`, que indica que el ajuste se habría realizado con la librería Unsloth (habitualmente empleada para fine-tuning eficiente en memoria con LoRA/QLoRA sobre modelos transformer). El identificador menciona `bf16`, lo que apunta a precisión mixta bf16 durante el entrenamiento o a pesos guardados en bf16. No se dispone de datos sobre volumen de tokens, composición del dataset, uso de RLHF/DPO ni ninguna innovación técnica concreta. La etiqueta `arxiv:1910.09700` corresponde a la referencia de Lacoste et al. (2019) sobre el calculador de impacto medioambiental que aparece en la plantilla de model card de Hugging Face, no a un artículo científico sobre este modelo.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ Los siguientes escenarios son hipótesis provisionales derivadas de la nomenclat
 - Estudio de metodologías de selección de checkpoints: el sufijo "PPL" indica selección basada en perplejidad, lo que lo hace útil como caso de estudio metodológico sobre criterios de elección del mejor checkpoint.
 - Reproducibilidad de ajustes finos con Unsloth: al estar etiquetado con `unsloth`, puede servir como referencia para reproducir pipelines de fine-tuning eficiente en memoria sobre dominios especializados.
 - Experimentos de evaluación controlada por semilla: el sufijo "s42" permite estudiar la variabilidad de resultados entre semillas en tareas de ajuste fino sobre MCQA.
-- Integración como endpoint compatible: la etiqueta `endpoints_compatible` sugiere que el checkpoint puede servirse mediante APIs compatibles con el estándar de HuggingFace Endpoints, aunque no hay confirmación de que funcione correctamente.
+- Integración como endpoint compatible: la etiqueta `endpoints_compatible` sugiere que el checkpoint puede servirse mediante APIs compatibles con el estándar de Hugging Face Endpoints, aunque no hay confirmación de que funcione correctamente.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM para inferencia: no disponible de forma oficial. A partir del tamano del repositorio (0,5 GB), y asumiendo que todo el contenido son pesos del modelo en bf16 (2 bytes por parámetro), el orden de magnitud sería de aproximadamente 250 millones de parámetros. Esta cifra es una estimación derivada, no un dato confirmado, y podría variar si el repositorio incluye otros artefactos.
 - Si la estimación anterior fuese correcta, el modelo cabría con holgura en cualquier GPU de consumo (RTX 3060, RTX 4070, RTX 4090) e incluso en CPU para inferencia en lotes pequenos.
 - GPU recomendadas: no disponibles. Para un modelo de ese orden de magnitud, cualquier GPU con al menos 4-8 GB de VRAM sería suficiente en bf16 o fp16, pero esto no está verificado.
-- Opciones de despliegue: la librería declarada es `transformers`, por lo que sería compatible con el ecosistema HuggingFace (Transformers, Text Generation Inference, vLLM). La compatibilidad con llama.cpp, Ollama u otras herramientas depende de si existen conversiones a GGUF, que no están documentadas. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Endpoints.
+- Opciones de despliegue: la librería declarada es `transformers`, por lo que sería compatible con el ecosistema Hugging Face (Transformers, Text Generation Inference, vLLM). La compatibilidad con llama.cpp, Ollama u otras herramientas depende de si existen conversiones a GGUF, que no están documentadas. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Endpoints.
 - Latencia y throughput: no disponibles. No se ha publicado ninguna medición.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No disponible. No hay información suficiente sobre arquitectura, tamano, idioma
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-MCQA | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-MCQA | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No disponible. No hay información suficiente sobre arquitectura, tamano, idioma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-MCQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-MCQA
 - Referencia del calculador de impacto medioambiental citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la búsqueda web realizada.

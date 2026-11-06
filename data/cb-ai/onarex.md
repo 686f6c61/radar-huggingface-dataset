@@ -6,7 +6,7 @@ Onarex es un modelo de extracción de información condicionada por ontología d
 
 La arquitectura se basa en el encoder `answerdotai/ModernBERT-large` (hidden size de 1024) con una capa BiLSTM opcional, seguido de módulos separados para NER, relaciones y embeddings. El entrenamiento se realiza por fases: primero la rama de relaciones, luego la de NER y finalmente la de embeddings, lo que permite un ajuste progresivo del encoder. El checkpoint publicado corresponde a la fase `emb_only` con una métrica de selección `triple_emb_cosine` de 0,957874 en el paso 120000.
 
-Onarex es relevante para investigadores que trabajan en extracción de información tipada y alineación de embeddings de triples, ya que ofrece un enfoque modular y condicionado por ontología que no requiere reentrenamiento para nuevos dominios. Sin embargo, es importante señalar que no existe un paquete Python público publicado y que el modelo no es un pipeline estándar de HuggingFace sin el código del repositorio de investigación.
+Onarex es relevante para investigadores que trabajan en extracción de información tipada y alineación de embeddings de triples, ya que ofrece un enfoque modular y condicionado por ontología que no requiere reentrenamiento para nuevos dominios. Sin embargo, es importante señalar que no existe un paquete Python público publicado y que el modelo no es un pipeline estándar de Hugging Face sin el código del repositorio de investigación.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se proporcionan requisitos oficiales de hardware en la documentacion del mode
 
 - VRAM estimada: al menos 6-8 GB para cargar el checkpoint en float32; con cuantizacion (no disponible oficialmente) podria reducirse, pero no hay datos.
 - GPU recomendadas: una GPU con 12 GB o mas (por ejemplo, RTX 3060, RTX 4070, A10) para inferencia comoda en batch pequeno.
-- Opciones de despliegue: al no ser un pipeline estandar de HuggingFace, se requiere el codigo del repositorio Onarex. No se menciona compatibilidad con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al no ser un pipeline estandar de Hugging Face, se requiere el codigo del repositorio Onarex. No se menciona compatibilidad con vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,13 +69,13 @@ No se dispone de una comparativa directa con otros modelos en la informacion pro
 - Entrenamiento exclusivamente en ingles; el rendimiento en otros idiomas no esta garantizado.
 - Requiere una ontologia o inventario de tipos de entidades y relaciones en tiempo de inferencia; sin ella, el modelo no puede operar.
 - Errores en cascada: los fallos en la etapa NER se propagan a la extraccion de relaciones y a los embeddings, lo que puede degradar la calidad final.
-- No es un pipeline estandar de HuggingFace; para usarlo es necesario instalar el codigo del repositorio Onarex, que no esta publicado como paquete PyPI.
+- No es un pipeline estandar de Hugging Face; para usarlo es necesario instalar el codigo del repositorio Onarex, que no esta publicado como paquete PyPI.
 - El checkpoint corresponde a la fase `emb_only`; si se necesita el modelo para tareas NER o REL puras, habria que cargar checkpoints de fases anteriores (no publicados en este repositorio).
 - No se han publicado evaluaciones de sesgos, alucinaciones o robustez ante entradas adversariales.
 - La licencia MIT permite uso comercial, pero el autor no ofrece garantias de soporte ni mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cb-ai/onarex
+- Modelo en Hugging Face: https://huggingface.co/cb-ai/onarex
 - Encoder base ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - Referencia citada: GLiREL (no se proporciona enlace directo en la model card)

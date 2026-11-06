@@ -84,7 +84,7 @@ La diferencia principal es la adicion del bloque MTP y la cuantizacion ROCmFP4, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Agents-A1-Abliterated-MTP-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Agents-A1-Abliterated-MTP-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/InternScience/Agents-A1
 - Abliteracion de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Agents-A1-abliterated-GGUF
 - Version MTP de SC117: https://huggingface.co/SC117/Agents-A1-Uncensored-MTP-APEX-GGUF

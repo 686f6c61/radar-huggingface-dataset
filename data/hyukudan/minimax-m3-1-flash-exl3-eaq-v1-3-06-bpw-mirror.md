@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real f
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/hyukudan/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw-mirror
+- Mirror en Hugging Face: https://huggingface.co/hyukudan/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw-mirror
 - Repositorio upstream de la cuantización (Mia-AiLab): https://huggingface.co/Mia-AiLab/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw
 - Revisión fijada del upstream: https://huggingface.co/Mia-AiLab/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw/commit/c33e7a6619f0f12ac99098e07ec5e56acb7eeda9
 - Modelo base (MiniMaxAI): https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash

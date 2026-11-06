@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`YoussefHarrabi/cat_v5c_s2` es un modelo publicado en HuggingFace por el usuario YoussefHarrabi bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio presenta cero descargas y cero likes, y fue creado y actualizado en la misma fecha (2026-11-04), lo que sugiere una publicacion reciente sin difusion.
+`YoussefHarrabi/cat_v5c_s2` es un modelo publicado en Hugging Face por el usuario YoussefHarrabi bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio presenta cero descargas y cero likes, y fue creado y actualizado en la misma fecha (2026-11-04), lo que sugiere una publicacion reciente sin difusion.
 
 No hay informacion disponible sobre el pipeline asociado, los idiomas soportados ni el formato de los pesos. El nombre del repositorio (`cat_v5c_s2`) no aporta pistas concluyentes: podria tratarse de un experimento de versionado interno o de un modelo de proposito especifico, pero no existe documentacion que lo confirme.
 
@@ -67,7 +67,7 @@ No disponible. Sin conocer la arquitectura, el tamano ni la tarea del modelo, no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YoussefHarrabi/cat_v5c_s2 | no disponible | no disponible | MIT | HuggingFace |
+| YoussefHarrabi/cat_v5c_s2 | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No disponible. Sin conocer la arquitectura, el tamano ni la tarea del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YoussefHarrabi/cat_v5c_s2
+- Repositorio en Hugging Face: https://huggingface.co/YoussefHarrabi/cat_v5c_s2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

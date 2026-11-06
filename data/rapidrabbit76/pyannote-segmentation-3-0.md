@@ -6,7 +6,7 @@
 
 El modelo resuelve una tarea concreta de audio: la segmentación por hablante a nivel de frame (*audio frame classification*), que es el primer paso de cualquier pipeline de diarización. Dado un fragmento de audio, devuelve logits por frame que, tras el posprocesado `post_process_speaker_diarization`, se convierten en una lista de segmentos con `start`, `end`, `id` de hablante y `confidence`. En el ejemplo de la model card, una entrada de 160.000 muestras produce una salida de forma `[1, 767, 7]`, es decir, 767 frames y 7 clases.
 
-Su relevancia es de nicho pero clara: permite llevar diarización de hablantes a aplicaciones web y a entornos JavaScript donde instalar PyTorch no es viable. El repo es de tamaños muy reducido (0,0 GB según los metadatos), tiene licencia MIT y, en el momento de la consulta, 0 descargas y 0 likes, por lo que debe considerarse una publicación reciente y sin validación comunitaria. El pipeline declarado en HuggingFace no está disponible y no se especifican idiomas soportados.
+Su relevancia es de nicho pero clara: permite llevar diarización de hablantes a aplicaciones web y a entornos JavaScript donde instalar PyTorch no es viable. El repo es de tamaños muy reducido (0,0 GB según los metadatos), tiene licencia MIT y, en el momento de la consulta, 0 descargas y 0 likes, por lo que debe considerarse una publicación reciente y sin validación comunitaria. El pipeline declarado en Hugging Face no está disponible y no se especifican idiomas soportados.
 
 ## Especificaciones técnicas
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Ventana / contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rapidrabbit76/pyannote-segmentation-3.0 | No disponible | 10 s de audio | ONNX | MIT | HuggingFace, 0 descargas |
-| pyannote/segmentation-3.0 (original) | No disponible | 10 s de audio | Checkpoint PyTorch | MIT según los metadatos del derivado (verificar en el repo original) | HuggingFace; el código de conversión usa token y acceso al modelo |
-| onnx-community/pyannote-segmentation-3.0 | No disponible | 10 s de audio | ONNX | No disponible en la información proporcionada | HuggingFace; es el `model_id` que aparece en el ejemplo de la model card |
-| pyannote/speaker-diarization-3.1 (pipeline completo) | No disponible | Pipeline sobre audio completo | PyTorch | No disponible en la información proporcionada | HuggingFace; incluye segmentación y clustering, no es comparable 1:1 |
+| rapidrabbit76/pyannote-segmentation-3.0 | No disponible | 10 s de audio | ONNX | MIT | Hugging Face, 0 descargas |
+| pyannote/segmentation-3.0 (original) | No disponible | 10 s de audio | Checkpoint PyTorch | MIT según los metadatos del derivado (verificar en el repo original) | Hugging Face; el código de conversión usa token y acceso al modelo |
+| onnx-community/pyannote-segmentation-3.0 | No disponible | 10 s de audio | ONNX | No disponible en la información proporcionada | Hugging Face; es el `model_id` que aparece en el ejemplo de la model card |
+| pyannote/speaker-diarization-3.1 (pipeline completo) | No disponible | Pipeline sobre audio completo | PyTorch | No disponible en la información proporcionada | Hugging Face; incluye segmentación y clustering, no es comparable 1:1 |
 
 La diferencia práctica entre este repo y el original es el formato: mismo modelo, distinto runtime. Frente a `onnx-community/pyannote-segmentation-3.0`, la model card no aclara si los pesos son idénticos ni si hay diferencias de cuantización, por lo que conviene comparar ambos repos antes de elegir uno en producción.
 
@@ -93,7 +93,7 @@ La diferencia práctica entre este repo y el original es el formato: mismo model
 
 ## Enlaces
 
-- Repo en HuggingFace: https://huggingface.co/rapidrabbit76/pyannote-segmentation-3.0
+- Repo en Hugging Face: https://huggingface.co/rapidrabbit76/pyannote-segmentation-3.0
 - Modelo base: https://huggingface.co/pyannote/segmentation-3.0
 - Repo ONNX referenciado en el ejemplo: https://huggingface.co/onnx-community/pyannote-segmentation-3.0
 - Documentación de Optimum (recomendada por el autor para exportar a ONNX): https://huggingface.co/docs/optimum/index

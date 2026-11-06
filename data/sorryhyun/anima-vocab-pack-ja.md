@@ -66,9 +66,9 @@ No disponible. No se han encontrado en la información proporcionada otros vocab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sorryhyun/anima-vocab-pack-ja
+- Modelo en Hugging Face: https://huggingface.co/sorryhyun/anima-vocab-pack-ja
 - Modelo base Anima: https://huggingface.co/circlestone-labs/Anima
 - Repositorio anima_lora: https://github.com/sorryhyun/anima_lora
 - Repositorio ComfyUI-Anima_lora-Adapter: https://github.com/sorryhyun/ComfyUI-Anima_lora-Adapter
-- Perfil del autor en HuggingFace: https://huggingface.co/sorryhyun
+- Perfil del autor en Hugging Face: https://huggingface.co/sorryhyun
 - Perfil del autor en GitHub: https://github.com/sorryhyun

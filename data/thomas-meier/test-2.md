@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `thomas-meier/test-2` es un modelo de lenguaje multimodal (imagen-texto a texto) basado en una arquitectura de mezcla de expertos (MoE) de la familia Qwen3.5, según los metadatos de HuggingFace. Ha sido generado mediante `mergekit`, una herramienta para fusionar modelos existentes, lo que sugiere que combina pesos de varios modelos base para obtener capacidades mejoradas. Con aproximadamente 35 107 millones de parámetros totales, se trata de un modelo de gran tamaño orientado a tareas conversacionales y de razonamiento con entrada visual.
+El modelo `thomas-meier/test-2` es un modelo de lenguaje multimodal (imagen-texto a texto) basado en una arquitectura de mezcla de expertos (MoE) de la familia Qwen3.5, según los metadatos de Hugging Face. Ha sido generado mediante `mergekit`, una herramienta para fusionar modelos existentes, lo que sugiere que combina pesos de varios modelos base para obtener capacidades mejoradas. Con aproximadamente 35 107 millones de parámetros totales, se trata de un modelo de gran tamaño orientado a tareas conversacionales y de razonamiento con entrada visual.
 
 El repositorio está marcado como de acceso restringido (gated), lo que implica que los usuarios deben solicitar permiso al autor antes de descargarlo. No se dispone de información pública sobre la licencia, los idiomas soportados ni los detalles de entrenamiento, lo que limita su evaluación preliminar. A pesar de ello, su arquitectura multimodal y su tamaño lo posicionan como una opción potencial para aplicaciones que requieran comprensión conjunta de imágenes y texto, aunque su adopción en producción requeriría verificar estos aspectos.
 
@@ -67,5 +67,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace: thomas-meier/test-2](https://huggingface.co/thomas-meier/test-2)
+- [Hugging Face: thomas-meier/test-2](https://huggingface.co/thomas-meier/test-2)
 - [Articulo referenciado en tags (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482) — no se ha confirmado su relacion directa con el modelo.

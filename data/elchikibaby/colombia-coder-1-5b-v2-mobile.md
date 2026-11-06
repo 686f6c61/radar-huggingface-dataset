@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Colombia-coder-1.5b-v2-mobile es un modelo de lenguaje conversacional especializado en generacion de codigo, publicado por el usuario Elchikibaby en HuggingFace. Se trata de un ajuste fino (finetuning) del modelo base Qwen2.5-Coder-1.5B-Instruct, convertido posteriormente a formato GGUF para su despliegue con llama.cpp y Ollama. El nombre del modelo y el archivo incluido (`qwen2.5-coder-1.5b-instruct.Q3_K_M.gguf`) confirman que la base es el modelo de codigo de 1.500 millones de parametros de la familia Qwen2.5.
+Colombia-coder-1.5b-v2-mobile es un modelo de lenguaje conversacional especializado en generacion de codigo, publicado por el usuario Elchikibaby en Hugging Face. Se trata de un ajuste fino (finetuning) del modelo base Qwen2.5-Coder-1.5B-Instruct, convertido posteriormente a formato GGUF para su despliegue con llama.cpp y Ollama. El nombre del modelo y el archivo incluido (`qwen2.5-coder-1.5b-instruct.Q3_K_M.gguf`) confirman que la base es el modelo de codigo de 1.500 millones de parametros de la familia Qwen2.5.
 
 El modelo cuenta con 1.543.714.304 parametros totales y un repositorio de 0,8 GB, lo que lo situa en la categoria de modelos ultraligeros aptos para ejecucion en hardware de consumo e incluso en movil (de ahi el sufijo "mobile" del nombre). Se distribuye unicamente en cuantizacion GGUF Q3_K_M e incluye un Modelfile para Ollama, lo que simplifica su despliegue local sin necesidad de GPU dedicada.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Colombia-coder-1.5b-v2-mobile | 1,5B | no disponible (base 32.768) | GGUF Q3_K_M | no disponible | HuggingFace (0 descargas) |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | safetensors, GGUF | Apache 2.0 | HuggingFace (ampliamente usado) |
-| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | safetensors, GGUF | Llama 3.2 Community License | HuggingFace |
-| DeepSeek-Coder-1.3B-Instruct | 1,3B | 16.384 tokens | safetensors | DeepSeek License | HuggingFace |
+| Colombia-coder-1.5b-v2-mobile | 1,5B | no disponible (base 32.768) | GGUF Q3_K_M | no disponible | Hugging Face (0 descargas) |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | safetensors, GGUF | Apache 2.0 | Hugging Face (ampliamente usado) |
+| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | safetensors, GGUF | Llama 3.2 Community License | Hugging Face |
+| DeepSeek-Coder-1.3B-Instruct | 1,3B | 16.384 tokens | safetensors | DeepSeek License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -85,6 +85,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Elchikibaby/colombia-coder-1.5b-v2-mobile
+- Hugging Face: https://huggingface.co/Elchikibaby/colombia-coder-1.5b-v2-mobile
 - Unsloth (herramienta de finetuning): https://github.com/unslothai/unsloth
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

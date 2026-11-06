@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye otros adaptadores LoRA c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-bernini-r-remix-lora-nsfw-lightx2v-rank256-low-noise-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-bernini-r-remix-lora-nsfw-lightx2v-rank256-low-noise-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2079088827872063490
 - Página del autor: https://www.runninghub.ai/user-center/1986370833360760833
 - RunningHub (internacional): https://www.runninghub.ai

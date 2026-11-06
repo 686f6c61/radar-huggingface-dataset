@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Disctil-Qwen3-1.7B es un modelo de lenguaje de 2.031 millones de parámetros desarrollado por Convergent Intelligence LLC (usuario reaperdoesntknow en HuggingFace) como parte de su colección DistilQwen. Se trata de un fine-tuning mediante SFT (Supervised Fine-Tuning) del modelo base reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored, que a su vez es una destilación del modelo Qwen3-30B-A3B. El modelo está orientado a generación de texto conversacional y se presenta como una variante "sin censura" (uncensored), lo que implica que no incorpora los filtros de seguridad habituales de los modelos comerciales.
+Disctil-Qwen3-1.7B es un modelo de lenguaje de 2.031 millones de parámetros desarrollado por Convergent Intelligence LLC (usuario reaperdoesntknow en Hugging Face) como parte de su colección DistilQwen. Se trata de un fine-tuning mediante SFT (Supervised Fine-Tuning) del modelo base reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored, que a su vez es una destilación del modelo Qwen3-30B-A3B. El modelo está orientado a generación de texto conversacional y se presenta como una variante "sin censura" (uncensored), lo que implica que no incorpora los filtros de seguridad habituales de los modelos comerciales.
 
 El entrenamiento se realizó con el framework TRL (Transformers Reinforcement Learning) y el modelo se distribuye en formato safetensors con pesos en BF16. Según fuentes externas, dispone de una ventana de contexto de aproximadamente 33K tokens. La relevancia de este modelo radica en su tamaño reducido (2B parámetros) combinado con técnicas de destilación desde un modelo mucho mayor (30B-A3B), lo que lo hace apto para despliegue en entornos con recursos limitados o en el edge.
 
@@ -81,7 +81,7 @@ La comparación directa no es posible sin datos de rendimiento. La principal dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B
 - Modelo base (DiStil-Qwen3-1.7B-uncensored): https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
 - Coleccion DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c
 - Paper "Structure Over Scale" (DOI: 10.57967/hf/8165): https://doi.org/10.57967/hf/8165

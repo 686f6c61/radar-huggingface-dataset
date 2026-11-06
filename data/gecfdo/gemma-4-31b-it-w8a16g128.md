@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gecfdo/gemma-4-31B-it-w8a16g128` es un checkpoint cuantizado publicado en HuggingFace por el usuario `gecfdo`, derivado del modelo `google/gemma-4-31B-it` mediante la relación `base_model_relation: quantized`. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de una conversión de pesos orientada a reducir el coste de memoria en inferencia: el nombre del repositorio indica un esquema W8A16 con tamaño de grupo 128.
+`gecfdo/gemma-4-31B-it-w8a16g128` es un checkpoint cuantizado publicado en Hugging Face por el usuario `gecfdo`, derivado del modelo `google/gemma-4-31B-it` mediante la relación `base_model_relation: quantized`. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de una conversión de pesos orientada a reducir el coste de memoria en inferencia: el nombre del repositorio indica un esquema W8A16 con tamaño de grupo 128.
 
 El repositorio declara licencia Apache 2.0, almacena los pesos en formato safetensors y ocupa 34,0 GB. El recuento real de parámetros de los tensores safetensors es de 9.594.046.316, una cifra que no concuerda ni con el identificador "31B" del nombre ni con el tamaño del repositorio para un checkpoint de 8 bits, y que no aparece aclarada en la model card.
 
@@ -66,7 +66,7 @@ No se dispone de datos verificables sobre alternativas de la misma categoría. L
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gecfdo/gemma-4-31B-it-w8a16g128` | 9.594.046.316 según safetensors (nombre: 31B) | No disponible | W8A16, grupo 128 | apache-2.0 | Repositorio en HuggingFace, 34,0 GB, 0 descargas |
+| `gecfdo/gemma-4-31B-it-w8a16g128` | 9.594.046.316 según safetensors (nombre: 31B) | No disponible | W8A16, grupo 128 | apache-2.0 | Repositorio en Hugging Face, 34,0 GB, 0 descargas |
 | `google/gemma-4-31B-it` (modelo base) | 31B según el identificador | No disponible | BF16 presumiblemente, no confirmado | No disponible en la información proporcionada | Referenciado como `base_model` en la ficha |
 | Otras cuantizaciones del mismo base (GPTQ, AWQ, GGUF) | No disponible | No disponible | No disponible | No disponible | No se han localizado en la búsqueda realizada |
 
@@ -77,7 +77,7 @@ No se dispone de datos verificables sobre alternativas de la misma categoría. L
 - La cuantización a 8 bits introduce una degradación de precisión respecto al modelo base que no está cuantificada en la ficha. El riesgo es mayor en tareas sensibles a la precisión numérica, como matemáticas o generación de código.
 - Riesgo de alucinación: inherente al modelo base y no evaluado en esta conversión.
 - Sesgos conocidos: no disponible. No se documenta ningún análisis de sesgo.
-- Limitaciones de contexto e idioma: no disponible. El campo de idiomas aparece vacío en los metadatos de HuggingFace.
+- Limitaciones de contexto e idioma: no disponible. El campo de idiomas aparece vacío en los metadatos de Hugging Face.
 - Licencia: la ficha declara apache-2.0, pero no se incluye la licencia del modelo base `google/gemma-4-31B-it`. Antes de cualquier uso comercial debe verificarse de forma independiente si las condiciones del modelo original permiten la redistribución y el uso derivado en los términos declarados.
 - El repositorio tiene 0 descargas y 0 "likes" y fue creado en 2026-09-16, por lo que carece de validación por parte de la comunidad y de informes de terceros.
 - No se declara *pipeline* ni *chat template* en los metadatos, lo que obliga a configurar manualmente el formato de prompt en el servidor de inferencia.
@@ -85,6 +85,6 @@ No se dispone de datos verificables sobre alternativas de la misma categoría. L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gecfdo/gemma-4-31B-it-w8a16g128
+- Repositorio en Hugging Face: https://huggingface.co/gecfdo/gemma-4-31B-it-w8a16g128
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-31B-it
 - Búsqueda web realizada: no se localizó ningún paper, blog, repositorio o demo asociado al modelo. Los resultados devueltos fueron páginas de inicio de sesión de Google Drive, sin relación con el modelo.

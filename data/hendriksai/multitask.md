@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hendriksai/multitask es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de la arquitectura BLIP, orientada a tareas multitarea. Lo publica el usuario Hendriksai bajo licencia MIT y su configuración es de escala «tiny»: el checkpoint `model.safetensors` declara 24.832 parámetros totales, un tamaño propio de una prueba de humo más que de un modelo utilizable en producción.
+Hendriksai/multitask es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de la arquitectura BLIP, orientada a tareas multitarea. Lo publica el usuario Hendriksai bajo licencia MIT y su configuración es de escala «tiny»: el checkpoint `model.safetensors` declara 24.832 parámetros totales, un tamaño propio de una prueba de humo más que de un modelo utilizable en producción.
 
 El repositorio no se presenta como un modelo preentrenado. La propia model card indica que los pesos son un checkpoint de inicialización válido para smoke tests y experimentos controlados pequeños, no un checkpoint evaluado con benchmarks. La arquitectura emplea atención flash, fusión por co-atención, activación ReLU y normalización InstanceNorm, con una receta de entrenamiento por defecto basada en el optimizador LAMB y un scheduler OneCycle.
 
@@ -98,6 +98,6 @@ La comparación relevante no es de rendimiento, porque el modelo de Hendriksai n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hendriksai/multitask
+- Repositorio en Hugging Face: https://huggingface.co/Hendriksai/multitask
 - Archivos incluidos en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña «Files and versions» del enlace anterior).
 - No se han encontrado otros enlaces (papers, blogs, demos o repositorios auxiliares) en la información disponible.

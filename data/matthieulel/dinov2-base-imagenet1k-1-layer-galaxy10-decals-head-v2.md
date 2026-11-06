@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un clasificador de morfología galáctica obtenido mediante ajuste fino únicamente de la cabeza de clasificación sobre el backbone congelado `facebook/dinov2-base-imagenet1k-1-layer`. El modelo resuelve una tarea concreta de astronomía observacional: asignar una de diez clases morfológicas a imágenes de galaxias del conjunto Galaxy10 DECaLS. Lo desarrolla el usuario de HuggingFace `matthieulel` como parte de una colección comparativa más amplia, el *Vision Foundation Models Benchmark*, que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación (cabeza lineal y ajuste completo) siguiendo el protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
+Este repositorio contiene un clasificador de morfología galáctica obtenido mediante ajuste fino únicamente de la cabeza de clasificación sobre el backbone congelado `facebook/dinov2-base-imagenet1k-1-layer`. El modelo resuelve una tarea concreta de astronomía observacional: asignar una de diez clases morfológicas a imágenes de galaxias del conjunto Galaxy10 DECaLS. Lo desarrolla el usuario de Hugging Face `matthieulel` como parte de una colección comparativa más amplia, el *Vision Foundation Models Benchmark*, que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación (cabeza lineal y ajuste completo) siguiendo el protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
 El modelo es un transformer de visión ViT-B/14 (DINOv2 base) con un cabezal lineal de 10 salidas. Cuenta con 86.595.850 parámetros totales, de los cuales la inmensa mayoría pertenecen al backbone congelado; el cabezal entrenado es una única capa lineal. El repositorio pesa 0,3 GB y se distribuye en safetensors bajo licencia Apache 2.0. No es un modelo generativo ni conversacional: es un clasificador de imágenes especializado, con una precisión del 62,40 % en el conjunto de test reservado de Galaxy10 DECaLS.
 
@@ -69,9 +69,9 @@ Evolución relevante por época (semilla 42): la accuracy de test pasa de 13,30 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (DINOv2 base, cabeza lineal) | 86.595.850 | Imagen 256x256 px | 62,40 % accuracy; 60,98 % F1 ponderado (test) | apache-2.0 | HuggingFace, safetensors |
-| Backbone base `facebook/dinov2-base-imagenet1k-1-layer` | no disponible en la información | Imagen (resolución nativa 518 px en DINOv2) | No evaluado como clasificador en esta ficha | no disponible en la información | HuggingFace |
-| Otros backbones del Vision Foundation Models Benchmark | no disponible | no disponible | No publicado en la información disponible | no disponible | Colección de HuggingFace del autor |
+| Este checkpoint (DINOv2 base, cabeza lineal) | 86.595.850 | Imagen 256x256 px | 62,40 % accuracy; 60,98 % F1 ponderado (test) | apache-2.0 | Hugging Face, safetensors |
+| Backbone base `facebook/dinov2-base-imagenet1k-1-layer` | no disponible en la información | Imagen (resolución nativa 518 px en DINOv2) | No evaluado como clasificador en esta ficha | no disponible en la información | Hugging Face |
+| Otros backbones del Vision Foundation Models Benchmark | no disponible | no disponible | No publicado en la información disponible | no disponible | Colección de Hugging Face del autor |
 
 No se dispone de datos de rendimiento de modelos alternativos sobre Galaxy10 DECaLS en la información proporcionada, por lo que la comparativa cuantitativa queda limitada a este checkpoint.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de modelos alternativos sobre Galaxy10 DEC
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/dinov2-base-imagenet1k-1-layer-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/dinov2-base-imagenet1k-1-layer-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/dinov2-base-imagenet1k-1-layer
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

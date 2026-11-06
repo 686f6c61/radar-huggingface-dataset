@@ -73,10 +73,10 @@ Resultados de la model card (nDCG@10 x 100 a 1024 dimensiones):
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bekko-static-v1-slim-75k | 76,8 M | no disponible | MIT | HuggingFace + crate Rust | 25 lenguas, Matryoshka 32-1024 |
-| hotchpotch/bekko-static-embedding-v1 | no disponible (tabla 200k x 1024) | no disponible | no disponible en la informacion | HuggingFace | 40 lenguas, mejor calidad (53,71 en NanoBEIR-en) |
-| bekko-static-v1-slim-100k | no disponible (tabla 100k x 1024) | no disponible | MIT | HuggingFace | 25 lenguas, 205 MB, mejor equilibrio calidad/tamano |
-| bekko-static-v1-slim-50k | no disponible (tabla 50k x 1024) | no disponible | MIT | HuggingFace | 25 lenguas, 102 MB, menor calidad |
+| bekko-static-v1-slim-75k | 76,8 M | no disponible | MIT | Hugging Face + crate Rust | 25 lenguas, Matryoshka 32-1024 |
+| hotchpotch/bekko-static-embedding-v1 | no disponible (tabla 200k x 1024) | no disponible | no disponible en la informacion | Hugging Face | 40 lenguas, mejor calidad (53,71 en NanoBEIR-en) |
+| bekko-static-v1-slim-100k | no disponible (tabla 100k x 1024) | no disponible | MIT | Hugging Face | 25 lenguas, 205 MB, mejor equilibrio calidad/tamano |
+| bekko-static-v1-slim-50k | no disponible (tabla 50k x 1024) | no disponible | MIT | Hugging Face | 25 lenguas, 102 MB, menor calidad |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Resultados de la model card (nDCG@10 x 100 a 1024 dimensiones):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flower-computer/bekko-static-v1-slim-75k
+- Modelo en Hugging Face: https://huggingface.co/flower-computer/bekko-static-v1-slim-75k
 - Modelo base: https://huggingface.co/hotchpotch/bekko-static-embedding-v1
 - Coleccion de la familia slim: https://huggingface.co/collections/flower-computer/bekko-static-v1-slim-6aecc3d4969e7752c8a5074f
 - Variante 100k: https://huggingface.co/flower-computer/bekko-static-v1-slim-100k

@@ -18,7 +18,7 @@ La relevancia es acotada: se trata de un artefacto docente y de investigación s
 | Longitud de contexto | 3 fotogramas de observación como ventana de entrada, más las acciones intermedias; representación latente de 192 dimensiones |
 | Tipos de cuantizacion | no disponible (solo se distribuyen checkpoints PyTorch; no hay versiones GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no aplica / no disponible (modelo robótico sin entrada ni salida de lenguaje natural) |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | `.pt` (`torch.save`, requiere `torch.load(..., weights_only=False)`) |
 | Tamaño del repositorio | 4,9 GB (incluye checkpoints, informes de evaluación y snapshot de código) |
 | Horizonte de evaluación | 1795 pasos de simulación |
@@ -99,11 +99,11 @@ La comparación honesta es que este paquete no es un modelo general: es una inst
 - Reproducibilidad dependiente de detalles: el entorno correcto exige pasar `--world-model path/to/jepa/smwm-c3/model.pt` a la política o reescribir `ckpt["info"]["encoder"]`; los informes de evaluación registran el commit en el campo `code`, lo que implica que pequeñas diferencias de código pueden alterar los resultados.
 - Comparabilidad de métricas: las carpetas antiguas de `eval/` usan `pretrain.pt` y 100 escenas, por lo que no deben mezclarse con los resultados de 300 escenas.
 - Sin soporte de lenguaje, tool calling ni agentes conversacionales: no es utilizable como sustituto de un LLM en ningún pipeline de texto.
-- Idiomas no aplicables: la ficha de HuggingFace no declara idiomas y el modelo no procesa texto.
+- Idiomas no aplicables: la ficha de Hugging Face no declara idiomas y el modelo no procesa texto.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/YongYong/cis6280-stack-world-models-v2
+- Repositorio del modelo en Hugging Face: https://huggingface.co/YongYong/cis6280-stack-world-models-v2
 - Repositorio de datos asociado (demostraciones, latentes cacheados, rollouts on-policy, imágenes de subobjetivos): https://huggingface.co/datasets/YongYong/cis6280-stack-datasets-v2
 - Código del proyecto final CIS 6280: https://github.com/GMLR-Penn/cis6280-final-project
 - Snapshot de código incluido en el repositorio: `code/world-model-gym.tar` (commit registrado en `code/SNAPSHOT.txt`)

@@ -64,16 +64,16 @@ El modelo destaca en admitir desconocimiento, no inventar entidades, mantener la
 - VRAM estimada: con 870M parametros en bfloat16 se necesitan aproximadamente 1,7 GB de memoria para los pesos, mas overhead de activaciones y cache. En cuantizacion de 4 bits, unos 0,5 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM es suficiente. Una RTX 3060, RTX 4060 o similar puede ejecutarlo sin problemas. Tambien funciona en CPU con llama.cpp u Ollama, aunque con mayor latencia.
 - Compatibilidad con consumer GPU: si, es un modelo pequeno que cabe en practicamente cualquier GPU moderna.
-- Opciones de despliegue: transformers (HuggingFace), Text Generation Inference (TGI), vLLM, llama.cpp, Ollama. Nota: en transformers es obligatorio pasar `use_cache=False` en `generate()` por el bug de `qwen3_next`.
+- Opciones de despliegue: transformers (Hugging Face), Text Generation Inference (TGI), vLLM, llama.cpp, Ollama. Nota: en transformers es obligatorio pasar `use_cache=False` en `generate()` por el bug de `qwen3_next`.
 - Latencia y throughput: no se han publicado datos oficiales. Como referencia, un modelo de 870M en una GPU moderna genera decenas de tokens por segundo; en CPU, entre 5 y 15 tokens por segundo dependiendo del hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Registro | Disponibilidad |
 |---|---|---|---|---|---|
-| Echoes-1.5-Instruct-PT-BR | 870M | 4096 | WTFPL | Foro brasileño años 2000 | HuggingFace |
-| Echoes-1-Instruct-PT-BR | 536,5M | 4096 | WTFPL | Foro brasileño años 2000 | HuggingFace |
-| Echoes-1-Base-PT-BR | 536,5M | 4096 | WTFPL | Base, sin instruccion | HuggingFace |
+| Echoes-1.5-Instruct-PT-BR | 870M | 4096 | WTFPL | Foro brasileño años 2000 | Hugging Face |
+| Echoes-1-Instruct-PT-BR | 536,5M | 4096 | WTFPL | Foro brasileño años 2000 | Hugging Face |
+| Echoes-1-Base-PT-BR | 536,5M | 4096 | WTFPL | Base, sin instruccion | Hugging Face |
 
 La comparativa se limita a las generaciones anteriores del mismo autor, ya que no se dispone de datos de otros modelos pequenos en portugues brasileño con caracteristicas equivalentes. La generacion 1.5 duplica aproximadamente el tamano de la 1 (870M frente a 536M) y anade el ajuste de instruccion sobre el base 1.5.
 
@@ -90,7 +90,7 @@ La comparativa se limita a las generaciones anteriores del mismo autor, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henriqueimoveis/Echoes-1.5-Instruct-PT-BR
+- Modelo en Hugging Face: https://huggingface.co/henriqueimoveis/Echoes-1.5-Instruct-PT-BR
 - Modelo base: https://huggingface.co/henriqueimoveis/Echoes-1.5-Base-PT-BR
 - Generacion anterior (Instruct 1): https://huggingface.co/henriqueimoveis/Echoes-1-Instruct-PT-BR
 - Generacion anterior (Base 1): https://huggingface.co/henriqueimoveis/Echoes-1-Base-PT-BR

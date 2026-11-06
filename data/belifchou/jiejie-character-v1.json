@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "BelifChou/jiejie-character-v1",
+  "slug": "belifchou-jiejie-character-v1",
+  "author": "BelifChou",
+  "url": "https://huggingface.co/BelifChou/jiejie-character-v1",
+  "created_at": "2026-11-02T04:29:31.000Z",
+  "updated_at": "2026-11-02T05:04:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970703145,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BelifChou/jiejie-character-v1 · Hugging Face",
+      "url": "https://huggingface.co/BelifChou/jiejie-character-v1",
+      "snippet": "Instructions to use BelifChou/jiejie-character-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use BelifChou/jiejie-character-v1 with Diffusers:"
+    },
+    {
+      "title": "BelifChou (JIAWEI) - Hugging Face",
+      "url": "https://huggingface.co/BelifChou",
+      "snippet": "Recent Activity updated a modelabout 19 hours ago BelifChou/face-gao published a modelabout 19 hours ago BelifChou/face-gao updated a model12 days ago BelifChou/belif-character-v1 View all activity"
+    }
+  ]
+}

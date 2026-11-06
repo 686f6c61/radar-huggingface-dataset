@@ -6,7 +6,7 @@ El modelo `AbdelrahmanAkl/bart-cnn-dailymail-summarization` es un ajuste fino de
 
 Su relevancia practica es la de un caso de referencia completo de extremo a extremo: fine-tuning con `Seq2SeqTrainer`, seleccion de checkpoint por perdida de validacion, optimizacion de los hiperparametros de decodificacion sobre validacion y evaluacion final sobre un test aislado, con una comparativa explicita frente al modelo base sin ajustar. El autor reporta una mejora absoluta de +0,055 en ROUGE-Lsum atribuible al fine-tuning, y de solo +0,0004 adicional atribuible a la optimizacion de la generacion, un resultado interesante porque cuantifica por separado el efecto de ambas fases.
 
-El modelo es de proposito general dentro del resumen extractivo y abstractivo de noticias en ingles. No incluye licencia declarada en la model card ni en los metadatos de HuggingFace, y cuenta con cero descargas y cero likes en el momento de la consulta, por lo que debe considerarse un artefacto de portafolio mas que un modelo con validacion externa de la comunidad.
+El modelo es de proposito general dentro del resumen extractivo y abstractivo de noticias en ingles. No incluye licencia declarada en la model card ni en los metadatos de Hugging Face, y cuenta con cero descargas y cero likes en el momento de la consulta, por lo que debe considerarse un artefacto de portafolio mas que un modelo con validacion externa de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -92,31 +92,31 @@ El propio autor advierte en la model card que ROUGE mide solapamiento lexico ent
 
 | Modelo | Parametros | Contexto | ROUGE en CNN/DailyMail | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AbdelrahmanAkl/bart-cnn-dailymail-summarization | 139,4 M | 1.024 tokens de entrada / 128 de salida | ROUGE-1 0,407 / ROUGE-2 0,181 / ROUGE-L 0,276 / ROUGE-Lsum 0,375 | no disponible | HuggingFace |
-| facebook/bart-base (sin ajustar) | 139,4 M | 1.024 tokens | ROUGE-1 0,392 / ROUGE-2 0,176 / ROUGE-L 0,246 / ROUGE-Lsum 0,320 (medido por el autor de esta ficha) | MIT | HuggingFace |
-| facebook/bart-large-cnn | no disponible en la informacion proporcionada | no disponible | no disponible | MIT | HuggingFace |
-| google/pegasus-cnn_dailymail | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| facebook/mbart-large-50 o mT5 | no disponible en la informacion proporcionada | no disponible | no disponible | MIT / Apache 2.0 | HuggingFace |
+| AbdelrahmanAkl/bart-cnn-dailymail-summarization | 139,4 M | 1.024 tokens de entrada / 128 de salida | ROUGE-1 0,407 / ROUGE-2 0,181 / ROUGE-L 0,276 / ROUGE-Lsum 0,375 | no disponible | Hugging Face |
+| facebook/bart-base (sin ajustar) | 139,4 M | 1.024 tokens | ROUGE-1 0,392 / ROUGE-2 0,176 / ROUGE-L 0,246 / ROUGE-Lsum 0,320 (medido por el autor de esta ficha) | MIT | Hugging Face |
+| facebook/bart-large-cnn | no disponible en la informacion proporcionada | no disponible | no disponible | MIT | Hugging Face |
+| google/pegasus-cnn_dailymail | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| facebook/mbart-large-50 o mT5 | no disponible en la informacion proporcionada | no disponible | no disponible | MIT / Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa con `bart-large-cnn` ni con Pegasus. Como referencia estructural, `facebook/bart-large-cnn` triplica aproximadamente el numero de parametros (unos 400 M) y esta entrenado sobre el corpus CNN/DailyMail completo, mientras que este modelo usa 8.000 ejemplos de entrenamiento, por lo que es esperable una calidad inferior en resumenes largos y en articulos que requieran mas de 1.024 tokens de contexto.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: ni la model card ni los metadatos de HuggingFace indican licencia. Esto impide determinar si el uso comercial esta permitido. Antes de cualquier uso en produccion hay que contactar con el autor o asumir el riesgo legal.
+- Licencia no declarada: ni la model card ni los metadatos de Hugging Face indican licencia. Esto impide determinar si el uso comercial esta permitido. Antes de cualquier uso en produccion hay que contactar con el autor o asumir el riesgo legal.
 - Riesgo de alucinacion: es un modelo abstractivo y puede generar contenido factualmente incorrecto o no presente en el articulo original. El autor lo advierte implicitamente al senalar que ROUGE no mide exactitud factual. No hay evaluacion de factualidad ni de tasa de alucinacion.
 - Sesgos conocidos: no hay ninguna evaluacion de sesgos publicada. El modelo hereda los sesgos de `facebook/bart-base` y los del corpus CNN/DailyMail, que refleja el estilo editorial y la linea informativa de dos medios anglosajones concretos.
 - Limitacion de idioma: solo ingles declarado. No hay evidencia de que funcione en castellano y no deberia usarse para ello sin un ajuste adicional.
 - Limitacion de contexto: la entrada se trunca a 1.024 tokens. Articulos largos pierden informacion sin aviso, lo que puede producir resumenes incompletos o sesgados hacia la parte inicial del texto. La salida se limita a 128 tokens, suficiente para una entradilla pero no para un resumen detallado.
 - Entrenamiento muy reducido: solo 2 epocas sobre 8.000 ejemplos, frente a los cientos de miles del corpus completo. La mejora sobre BART-base es modesta (entre +0,005 y +0,055 en ROUGE segun la metrica) y el modelo probablemente no supera a alternativas ajustadas sobre el dataset completo.
 - Sobreajuste potencial: con un batch efectivo de 16 y solo 1.000 ejemplos de validacion, el mejor checkpoint se selecciona sobre una muestra pequena, lo que introduce varianza en la seleccion.
-- Estado de validacion externa: cero descargas y cero likes en HuggingFace en el momento de la consulta. No hay evidencia de uso en produccion por terceros ni evaluaciones independientes.
+- Estado de validacion externa: cero descargas y cero likes en Hugging Face en el momento de la consulta. No hay evidencia de uso en produccion por terceros ni evaluaciones independientes.
 - Reproducibilidad: el autor fija semilla 42 y documenta hiperparametros, pero no publica el script completo de preparacion de datos en la informacion disponible.
 - Caveat de produccion: con `num_beams=4` y `early_stopping=True`, la latencia por documento es mayor que con decodificacion greedy; para volumenes altos conviene medir el coste real antes de dimensionar la infraestructura.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a calculadoras de nomina austriacas y no guardan relacion con el contenido de esta ficha.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbdelrahmanAkl/bart-cnn-dailymail-summarization
+- Modelo en Hugging Face: https://huggingface.co/AbdelrahmanAkl/bart-cnn-dailymail-summarization
 - Demo interactiva en Streamlit: https://bart-cnn-dailymail-summarization.streamlit.app/
 - Modelo base: https://huggingface.co/facebook/bart-base
 - Paper de BART (Lewis et al., 2019): https://arxiv.org/abs/1910.13461

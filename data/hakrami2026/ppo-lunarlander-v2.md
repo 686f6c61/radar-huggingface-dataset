@@ -61,7 +61,7 @@ El entorno `LunarLander-v2` se considera resuelto cuando la recompensa media sup
 
 ## Comparativa con modelos similares
 
-Existen multiples agentes PPO entrenados en `LunarLander-v2` publicados en HuggingFace y GitHub. La comparativa se basa en la informacion disponible publicamente:
+Existen multiples agentes PPO entrenados en `LunarLander-v2` publicados en Hugging Face y GitHub. La comparativa se basa en la informacion disponible publicamente:
 
 | Modelo | Autor | Libreria | Recompensa media | Licencia |
 |---|---|---|---|---|
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de los modelos comparables, por lo que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hakrami2026/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/hakrami2026/ppo-LunarLander-v2
 - Modelo similar (the-AI-guy1): https://huggingface.co/the-AI-guy1/ppo-LunarLander-v2
 - Modelo similar (buildthemachine): https://huggingface.co/buildthemachine/ppo-LunarLander-v2
 - Repositorio GitHub (rishisim): https://github.com/rishisim/LunarLander-v2

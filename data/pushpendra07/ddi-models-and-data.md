@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Pushpendra07/ddi-models-and-data` es un repositorio alojado en HuggingFace por el usuario Pushpendra07, publicado bajo licencia MIT y con un tamano aproximado de 1,6 GB. A diferencia de las fichas habituales de esta seccion, no se trata de un modelo de lenguaje: la etiqueta principal del repositorio es `joblib`, el formato de serializacion estandar de la libreria scikit-learn y de buena parte del ecosistema Python de machine learning clasico (NumPy, scikit-learn, XGBoost, LightGBM). Por el nombre del repositorio (`ddi-models-and-data`) y el contexto de las busquedas relacionadas, todo apunta a una coleccion de modelos entrenados y conjuntos de datos orientados a la prediccion de interacciones farmaco-farmaco (DDI, *drug-drug interactions*), aunque esta interpretacion no se confirma en la model card.
+`Pushpendra07/ddi-models-and-data` es un repositorio alojado en Hugging Face por el usuario Pushpendra07, publicado bajo licencia MIT y con un tamano aproximado de 1,6 GB. A diferencia de las fichas habituales de esta seccion, no se trata de un modelo de lenguaje: la etiqueta principal del repositorio es `joblib`, el formato de serializacion estandar de la libreria scikit-learn y de buena parte del ecosistema Python de machine learning clasico (NumPy, scikit-learn, XGBoost, LightGBM). Por el nombre del repositorio (`ddi-models-and-data`) y el contexto de las busquedas relacionadas, todo apunta a una coleccion de modelos entrenados y conjuntos de datos orientados a la prediccion de interacciones farmaco-farmaco (DDI, *drug-drug interactions*), aunque esta interpretacion no se confirma en la model card.
 
 La model card publicada es practicamente vacia: unicamente contiene el campo `license: mit` en el frontmatter YAML, sin descripcion del modelo, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. No se declara pipeline, no se declaran idiomas soportados y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. El repositorio fue creado y actualizado el mismo dia (12 de octubre de 2026), lo que sugiere una publicacion reciente y posiblemente en estado de borrador o de uso interno.
 
@@ -87,7 +87,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pushpendra07/ddi-models-and-data
+- Hugging Face: https://huggingface.co/Pushpendra07/ddi-models-and-data
 - Sitio del autor: https://ai.pushpendra.io/
 - Canal del autor en YouTube: https://www.youtube.com/@Pushpendra_xai
 - Recopilatorio sobre prediccion de DDI (contexto general, no vinculado al repositorio): https://omicstutorials.com/drug-drug-interaction-prediction-databases-models-and-future-directions/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qhoenix/cedar-robin es un clasificador de imágenes publicado en HuggingFace por el usuario qhoenix, construido a partir de EfficientNetV2-L de torchvision (`efficientnet_v2_l`) y ajustado con entrenamiento adversario ("adversarial training") para la subred Perturb (netuid 26) de Bittensor. No se trata por tanto de un modelo de lenguaje: su tarea es la clasificación de imágenes en las 1000 clases de ImageNet-1K, con una cabeza de clasificación de 1000 salidas y una arquitectura convolucional de tipo EfficientNetV2 con bloques MBConv y Fused-MBConv.
+qhoenix/cedar-robin es un clasificador de imágenes publicado en Hugging Face por el usuario qhoenix, construido a partir de EfficientNetV2-L de torchvision (`efficientnet_v2_l`) y ajustado con entrenamiento adversario ("adversarial training") para la subred Perturb (netuid 26) de Bittensor. No se trata por tanto de un modelo de lenguaje: su tarea es la clasificación de imágenes en las 1000 clases de ImageNet-1K, con una cabeza de clasificación de 1000 salidas y una arquitectura convolucional de tipo EfficientNetV2 con bloques MBConv y Fused-MBConv.
 
 El checkpoint ocupa aproximadamente 0,5 GB en formato `safetensors` y contiene 119.027.848 parámetros, coherentes con la variante L de EfficientNetV2 más la capa densa final. La model card documenta la clave del minero (`5GgvBpF9Z4rjqFwbA88yPBKyyqYajPaeW6tMjTzdycas69z2`), un hash on-chain calculado como `sha256(model.safetensors || hotkey)` y el preprocesado exacto esperado: transformaciones de `EfficientNet_V2_L_Weights.IMAGENET1K_V1` con redimensionado bicúbico a 480, recorte central de 480×480 y normalización con media y desviación típica iguales a 0,5.
 
@@ -108,7 +108,7 @@ No se dispone de comparativas publicadas frente a otros mineros de la subred Per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qhoenix/cedar-robin
+- Modelo en Hugging Face: https://huggingface.co/qhoenix/cedar-robin
 - Subred Perturb (enlace citado en la model card): https://perturbai.io
 - Documentación de la arquitectura base en torchvision: `torchvision.models.efficientnet_v2_l` (referencia de la API, no incluida en la información proporcionada)
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre el modelo. Los resultados devueltos corresponden a comercios de ropa vintage ("V-Store" y similares) y no guardan relación con qhoenix/cedar-robin, con Perturb ni con Bittensor. No se dispone de paper, blog, repositorio adicional ni demo asociados al modelo.

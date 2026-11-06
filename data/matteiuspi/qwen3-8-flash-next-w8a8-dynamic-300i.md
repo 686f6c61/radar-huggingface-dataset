@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-W8A8-DYNAMIC-300i es un checkpoint experimental publicado por el usuario matteiuspi en HuggingFace: una conversion cuantizada del modelo base Qwen/Qwen3.8-Flash-Next, fijado en la revision de4b8e4d43b917e7706784d8bb445c9af86a3540. La conversion se ha realizado con la ruta W8A8_DYNAMIC de Ascend ModelSlim y esta especificamente orientada a ejecutarse sobre dos tarjetas Atlas 300I Duo, expuestas como cuatro dispositivos Ascend 310P3, con tensor parallelism repartido entre los cuatro chips. No es un modelo nuevo ni un fine-tune: es un artefacto de despliegue pensado para servir el modelo base en hardware Ascend en lugar de GPU NVIDIA.
+Qwen3.8-Flash-Next-W8A8-DYNAMIC-300i es un checkpoint experimental publicado por el usuario matteiuspi en Hugging Face: una conversion cuantizada del modelo base Qwen/Qwen3.8-Flash-Next, fijado en la revision de4b8e4d43b917e7706784d8bb445c9af86a3540. La conversion se ha realizado con la ruta W8A8_DYNAMIC de Ascend ModelSlim y esta especificamente orientada a ejecutarse sobre dos tarjetas Atlas 300I Duo, expuestas como cuatro dispositivos Ascend 310P3, con tensor parallelism repartido entre los cuatro chips. No es un modelo nuevo ni un fine-tune: es un artefacto de despliegue pensado para servir el modelo base en hardware Ascend en lugar de GPU NVIDIA.
 
 El modelo conserva la arquitectura experimental que el autor denomina Qwen4: 48 capas de decoder, 512 expertos enrutados, atencion hibrida que combina Gated DeltaNet con Qwen Sparse Attention, embeddings n-gram PLE, un codificador de vision y pesos MTP (multi-token prediction) para decodificacion especulativa. La cuantizacion solo afecta a las proyecciones lineales de los expertos enrutados (73.728 proyecciones con pesos INT8 y escalas/offsets FP32 por canal de salida); el resto de componentes permanece en FP16, por lo que el resultado no es un checkpoint homogeneamente INT8.
 
@@ -18,9 +18,9 @@ Su relevancia es acotada pero clara: es evidencia practica de que un modelo MoE 
 | Longitud de contexto | 131.072 tokens como limite de servicio seleccionado para el hito de cuatro chips (`--max-model-len`); capacidad KV asignada en NPU: 142.237 tokens. No es el maximo arquitectonico del modelo |
 | Tipos de cuantizacion | W8A8_DYNAMIC (Ascend ModelSlim): pesos INT8 en las proyecciones de expertos enrutados, con escalas y offsets FP32 por canal de salida; activaciones cuantizadas dinamicamente en tiempo de ejecucion. Resto de componentes en FP16. Checkpoint no uniformemente INT8 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `license: other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | Safetensors (254 shards) |
-| Tamano del repositorio | 198,0 GB segun HuggingFace; 240,06 GB (223,57 GiB) segun el export descrito en la model card |
+| Tamano del repositorio | 198,0 GB segun Hugging Face; 240,06 GB (223,57 GiB) segun el export descrito en la model card |
 | Modelo base | Qwen/Qwen3.8-Flash-Next (relacion: quantized) |
 | Libreria de despliegue | vLLM (fork OpenSensor) |
 | Fecha de creacion | 23 de septiembre de 2026 |
@@ -114,13 +114,13 @@ Frente a otras alternativas de la misma categoria (modelos MoE grandes con conte
 - Riesgo de alucinacion: no evaluado en la informacion disponible.
 - Sesgos conocidos: no disponibles.
 - Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingue del checkpoint.
-- Licencia: qwen-community-1.0 (etiquetada como `other` en HuggingFace), lo que implica condiciones especificas para uso comercial que deben revisarse en el fichero LICENSE del repositorio antes de cualquier despliegue productivo.
-- Tamano del repositorio: 198,0 GB segun HuggingFace frente a los 240,06 GB (223,57 GiB) declarados para el export; conviene verificar la integridad de la descarga antes de desplegar.
+- Licencia: qwen-community-1.0 (etiquetada como `other` en Hugging Face), lo que implica condiciones especificas para uso comercial que deben revisarse en el fichero LICENSE del repositorio antes de cualquier despliegue productivo.
+- Tamano del repositorio: 198,0 GB segun Hugging Face frente a los 240,06 GB (223,57 GiB) declarados para el export; conviene verificar la integridad de la descarga antes de desplegar.
 - Coste de hardware y baja madurez: no cabe en GPU de consumo; requiere infraestructura Ascend especifica y una pila de software en evolucion activa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W8A8-DYNAMIC-300i
+- Repositorio Hugging Face: https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W8A8-DYNAMIC-300i
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Revision del modelo base fijada: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/tree/de4b8e4d43b917e7706784d8bb445c9af86a3540
 - Fork vLLM de OpenSensor (build del 25 de septiembre de 2026): https://github.com/opensensor/vllm/commit/3ab5dda29acabea01f6a63d0806bdbbb4a27bde5

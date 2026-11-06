@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nguyen96ph/dino-experiment` es un repositorio experimental publicado en HuggingFace por el usuario nguyen96ph que contiene una implementacion propia y compacta de una arquitectura tipo DINO orientada a tareas de clasificacion. Segun la propia model card, se trata de la configuracion "tiny", pensada explicitamente para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, y no como una release preentrenada lista para produccion.
+`nguyen96ph/dino-experiment` es un repositorio experimental publicado en Hugging Face por el usuario nguyen96ph que contiene una implementacion propia y compacta de una arquitectura tipo DINO orientada a tareas de clasificacion. Segun la propia model card, se trata de la configuracion "tiny", pensada explicitamente para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, y no como una release preentrenada lista para produccion.
 
 El modelo cuenta con 24.832 parametros totales segun los pesos en formato safetensors, lo que lo situa en un orden de magnitud muy inferior al de cualquier modelo de vision o lenguaje utilizable en aplicaciones reales. El checkpoint incluido (`model.safetensors`) se describe como una inicializacion valida para pruebas, no como un modelo entrenado ni evaluado con benchmarks.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nguyen96ph/dino-experiment | 24.832 | no disponible | sin benchmarks declarados | MIT | HuggingFace, 0 descargas |
+| nguyen96ph/dino-experiment | 24.832 | no disponible | sin benchmarks declarados | MIT | Hugging Face, 0 descargas |
 | facebookresearch/dino | no disponible en la informacion proporcionada | no disponible | resultados publicados en el paper original | codigo PyTorch publicado por Meta AI Research | GitHub |
-| facebookresearch/dinov2 | no disponible en la informacion proporcionada | no disponible | resultados publicados en los papers DINOv2 | codigo y modelos publicados por Meta AI Research | GitHub y HuggingFace |
-| nguyen96ph/contrastive31 | no disponible | no disponible | sin benchmarks declarados | no disponible en la informacion proporcionada | HuggingFace, mismo autor |
+| facebookresearch/dinov2 | no disponible en la informacion proporcionada | no disponible | resultados publicados en los papers DINOv2 | codigo y modelos publicados por Meta AI Research | GitHub y Hugging Face |
+| nguyen96ph/contrastive31 | no disponible | no disponible | sin benchmarks declarados | no disponible en la informacion proporcionada | Hugging Face, mismo autor |
 
 La comparacion es estructuralmente desigual: los proyectos de Meta AI son implementaciones de referencia con modelos preentrenados y evaluacion publicada, mientras que `dino-experiment` es un esqueleto de codigo con un checkpoint de inicializacion sin entrenar. No existe equivalencia funcional entre ellos mas alla de compartir el nombre de la familia DINO.
 
@@ -87,7 +87,7 @@ La comparacion es estructuralmente desigual: los proyectos de Meta AI son implem
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nguyen96ph/dino-experiment
+- Repositorio en Hugging Face: https://huggingface.co/nguyen96ph/dino-experiment
 - Perfil del autor: https://huggingface.co/nguyen96ph
 - Modelo relacionado del mismo autor: https://huggingface.co/nguyen96ph/contrastive31
 - Implementacion de referencia DINO (Meta AI Research, FAIR): https://github.com/facebookresearch/dino

@@ -25,7 +25,7 @@ Su relevancia es acotada pero real: sirve como caso de estudio reproducible (sem
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
 | Frameworks | Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4, Tokenizers 0.22.1 |
 | Semilla | 3407 (indicada en el nombre del modelo) |
-| Fecha de creacion | 10 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 10 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -73,10 +73,10 @@ Estimaciones calculadas a partir de los 86.708.736 parametros declarados en los 
 
 | Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed3407` | 86,7 M | 1024 (derivado de GPT-2) | 100 MB de neerlandes + SFT no documentado | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/nld_latn_100mb` (modelo base) | 86,7 M (el ajuste no altera el numero de parametros) | 1024 (derivado de GPT-2) | 100 MB de texto neerlandes, entrenamiento monolingue | No disponible en la informacion proporcionada | HuggingFace, parte de la familia Goldfish |
+| `fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed3407` | 86,7 M | 1024 (derivado de GPT-2) | 100 MB de neerlandes + SFT no documentado | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/nld_latn_100mb` (modelo base) | 86,7 M (el ajuste no altera el numero de parametros) | 1024 (derivado de GPT-2) | 100 MB de texto neerlandes, entrenamiento monolingue | No disponible en la informacion proporcionada | Hugging Face, parte de la familia Goldfish |
 | GPT-2 small (referencia de tamano, ingles) | 124 M | 1024 | WebText, ~40 GB | MIT | Ampliamente disponible |
-| `GroNLP/gpt2-small-dutch` (alternativa neerlandesa de tamano similar) | Orden de 124 M (GPT-2 small) | 1024 | Corpus neerlandes; volumen exacto no disponible en esta ficha | No disponible en esta informacion | HuggingFace |
+| `GroNLP/gpt2-small-dutch` (alternativa neerlandesa de tamano similar) | Orden de 124 M (GPT-2 small) | 1024 | Corpus neerlandes; volumen exacto no disponible en esta ficha | No disponible en esta informacion | Hugging Face |
 
 La comparacion relevante es contra el propio modelo base: el valor de este checkpoint no esta en superarlo en calidad general, sino en la modificacion deliberada de la distribucion de frecuencias lexicales. Frente a alternativas neerlandesas mas grandes (`GroNLP/gpt2-small-dutch`, RobBERT u otras basadas en RoBERTa), este modelo queda en un regimen de datos muy inferior (100 MB frente a corpus de varios GB) y no declara licencia, lo que limita su uso comercial.
 
@@ -95,7 +95,7 @@ La comparacion relevante es contra el propio modelo base: el valor de este check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/j5x0o0pg
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl

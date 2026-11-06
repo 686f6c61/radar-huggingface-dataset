@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wicked-Stuff-26B-A4B-v2.1-FINAL es un ajuste fino (finetune) de tipo conversacional y roleplay para adultos, publicado por el usuario ReadyArt en HuggingFace. Se construye sobre SubMaroon/Kitchoon-V3-26B-A4B, un modelo etiquetado como `gemma4`, lo que sitúa la arquitectura en la familia Gemma 4. El modelo tiene 25.805.933.872 parámetros reales según los pesos en safetensors (unos 25,8 mil millones) y el sufijo "A4B" de su nombre sigue la convención habitual para modelos de mezcla de expertos (MoE) con aproximadamente 4 mil millones de parámetros activos por token, aunque ese dato no está confirmado en la documentación del autor.
+Wicked-Stuff-26B-A4B-v2.1-FINAL es un ajuste fino (finetune) de tipo conversacional y roleplay para adultos, publicado por el usuario ReadyArt en Hugging Face. Se construye sobre SubMaroon/Kitchoon-V3-26B-A4B, un modelo etiquetado como `gemma4`, lo que sitúa la arquitectura en la familia Gemma 4. El modelo tiene 25.805.933.872 parámetros reales según los pesos en safetensors (unos 25,8 mil millones) y el sufijo "A4B" de su nombre sigue la convención habitual para modelos de mezcla de expertos (MoE) con aproximadamente 4 mil millones de parámetros activos por token, aunque ese dato no está confirmado en la documentación del autor.
 
 El modelo está orientado explícitamente a contenido NSFW: roleplay erótico (ERP), terror, violencia y narrativa madura, con la etiqueta `unaligned` que indica que se ha reducido o eliminado el alineamiento de seguridad del modelo base. No resuelve un problema técnico novedoso: es un derivado de estilo y comportamiento, pensado para generación de texto conversacional e "in-character" en inglés, no para tareas de razonamiento, código o agentes.
 
@@ -86,6 +86,6 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.1-FINAL
+- Modelo en Hugging Face: https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.1-FINAL
 - Modelo base (Kitchoon-V3-26B-A4B): https://huggingface.co/SubMaroon/Kitchoon-V3-26B-A4B
 - Papers, blogs, repositorios o demos adicionales: no disponible (la búsqueda web no arrojó resultados técnicos relevantes)

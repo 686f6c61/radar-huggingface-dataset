@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Entradas | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_hl-act (este modelo) | 51,6 M | estado 6D + 2 imágenes 240×320 | chunk de acciones, horizonte no disponible | apache-2.0 | HuggingFace, vía LeRobot |
-| Diffusion Policy (LeRobot) | no disponible (depende de configuración) | estado + imágenes | predice secuencias de acciones por difusión | apache-2.0 (implementación LeRobot) | HuggingFace / LeRobot |
-| VQ-BeT (LeRobot) | no disponible | estado + imágenes | acciones discretizadas + transformer | apache-2.0 (implementación LeRobot) | HuggingFace / LeRobot |
-| SmolVLA (HuggingFace) | del orden de cientos de millones (valor exacto no disponible en esta ficha) | estado + imágenes + instrucción en lenguaje | política visión-lenguaje-acción | apache-2.0 | HuggingFace / LeRobot |
+| so101_hl-act (este modelo) | 51,6 M | estado 6D + 2 imágenes 240×320 | chunk de acciones, horizonte no disponible | apache-2.0 | Hugging Face, vía LeRobot |
+| Diffusion Policy (LeRobot) | no disponible (depende de configuración) | estado + imágenes | predice secuencias de acciones por difusión | apache-2.0 (implementación LeRobot) | Hugging Face / LeRobot |
+| VQ-BeT (LeRobot) | no disponible | estado + imágenes | acciones discretizadas + transformer | apache-2.0 (implementación LeRobot) | Hugging Face / LeRobot |
+| SmolVLA (Hugging Face) | del orden de cientos de millones (valor exacto no disponible en esta ficha) | estado + imágenes + instrucción en lenguaje | política visión-lenguaje-acción | apache-2.0 | Hugging Face / LeRobot |
 
 La comparación relevante es ecosistémica: ACT es la política más ligera y rápida de entrenar del stack LeRobot, Diffusion Policy suele dar trayectorias más suaves a cambio de mayor coste de inferencia, y SmolVLA añade condicionamiento por lenguaje a costa de un tamaño muy superior. No se dispone de datos de rendimiento comparado para este checkpoint concreto.
 
@@ -93,7 +93,7 @@ La comparación relevante es ecosistémica: ACT es la política más ligera y r�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saurabh-sinha-209/so101_hl-act
+- Modelo en Hugging Face: https://huggingface.co/Saurabh-sinha-209/so101_hl-act
 - Dataset de entrenamiento: https://huggingface.co/datasets/Saurabh-sinha-209/so101_hl
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

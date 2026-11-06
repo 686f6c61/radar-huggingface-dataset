@@ -84,9 +84,9 @@ Todas las cifras de esta sección son estimaciones derivadas del tamaño de par�
 
 | Modelo | Parámetros | Contexto | DS-MVTec | VisA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AnomalyThink-Qwen3-VL-8B-KCR (este) | 8,77 mil millones | no disponible | 84,39 | 76,63 | Apache 2.0 | Pesos safetensors en HuggingFace |
-| AnomalyThink-Qwen3-VL-8B-SFT-GRPO | mismo backbone (8B) | no disponible | 87,14 | 72,39 | no disponible en la información | Pesos safetensors en HuggingFace |
-| AnomalyThink-Qwen3-VL-8B-SFT | mismo backbone (8B) | no disponible | 80,31 | 67,32 | no disponible en la información | Pesos safetensors en HuggingFace |
+| AnomalyThink-Qwen3-VL-8B-KCR (este) | 8,77 mil millones | no disponible | 84,39 | 76,63 | Apache 2.0 | Pesos safetensors en Hugging Face |
+| AnomalyThink-Qwen3-VL-8B-SFT-GRPO | mismo backbone (8B) | no disponible | 87,14 | 72,39 | no disponible en la información | Pesos safetensors en Hugging Face |
+| AnomalyThink-Qwen3-VL-8B-SFT | mismo backbone (8B) | no disponible | 80,31 | 67,32 | no disponible en la información | Pesos safetensors en Hugging Face |
 | Qwen3-VL-8B-Instruct (base, zero-shot) | mismo backbone (8B) | no disponible | 78,68 | 64,45 | no disponible en la información | Modelo público de Qwen |
 
 Lectura de la comparativa: el KCR sacrifica 2,75 puntos de DS-MVTec respecto al SFT-GRPO (84,39 frente a 87,14) a cambio de ganar 4,24 puntos en VisA (76,63 frente a 72,39), siendo el mejor resultado en VisA de todo el proyecto. Frente al base zero-shot mejora 5,71 puntos en DS-MVTec y 12,18 en VisA. No se dispone de comparación con detectores de anomalías no basados en VLM dentro de la información proporcionada.
@@ -109,7 +109,7 @@ Lectura de la comparativa: el KCR sacrifica 2,75 puntos de DS-MVTec respecto al 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-KCR
+- Modelo en Hugging Face: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-KCR
 - Modelo SFT de la misma familia: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT
 - Modelo SFT-GRPO de la misma familia: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT-GRPO
 - Dataset de entrenamiento: https://huggingface.co/datasets/aacudad/AnomalyThink

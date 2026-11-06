@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Michaellewisvi/project-matching` es una implementación de Poolformer para tareas de emparejamiento (matching) publicada por el usuario Michaellewisvi en HuggingFace. Se presenta como un repositorio con código transparente y pruebas de humo repetibles, pero el checkpoint incluido es únicamente de inicialización y no ha sido entrenado. Con solo 24.832 parámetros, el tamaño real es diminuto; la etiqueta "xlarge" hace referencia a una configuración de arquitectura, no a la escala efectiva del modelo. Es relevante como punto de partida experimental para quien desee explorar arquitecturas de tipo Poolformer en tareas de matching, pero no está listo para uso en producción.
+El modelo `Michaellewisvi/project-matching` es una implementación de Poolformer para tareas de emparejamiento (matching) publicada por el usuario Michaellewisvi en Hugging Face. Se presenta como un repositorio con código transparente y pruebas de humo repetibles, pero el checkpoint incluido es únicamente de inicialización y no ha sido entrenado. Con solo 24.832 parámetros, el tamaño real es diminuto; la etiqueta "xlarge" hace referencia a una configuración de arquitectura, no a la escala efectiva del modelo. Es relevante como punto de partida experimental para quien desee explorar arquitecturas de tipo Poolformer en tareas de matching, pero no está listo para uso en producción.
 
 ## Especificaciones técnicas
 
@@ -90,6 +90,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Michaellewisvi/project-matching
+- Hugging Face: https://huggingface.co/Michaellewisvi/project-matching
 
 No se han encontrado otros enlaces relevantes en la búsqueda web.

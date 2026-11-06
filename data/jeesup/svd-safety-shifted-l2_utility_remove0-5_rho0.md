@@ -82,8 +82,8 @@ La comparación directa con otros pilotos de compresión SVD no está disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
-- Repositorio de código y ajustes del experimento: incluido en la carpeta `experiment/` del propio repositorio de HuggingFace
-- Diagnósticos por matriz: fichero `compression.json` del propio repositorio de HuggingFace
+- Repositorio de código y ajustes del experimento: incluido en la carpeta `experiment/` del propio repositorio de Hugging Face
+- Diagnósticos por matriz: fichero `compression.json` del propio repositorio de Hugging Face
 - No se han encontrado papers, blogs, repositorios externos ni demos adicionales en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SeanWang0027/qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step68` es un fine-tune de tipo destilación sobre el modelo denso `Qwen/Qwen3-1.7B`, orientado a tareas agénticas del entorno TextCraft. El autor lo describe como un «student» de 1.700 millones de parametros que aprende de un «teacher» `Qwen/Qwen3-32B` en precision bf16, con el modo de razonamiento explicito (thinking) desactivado durante el entrenamiento y la evaluacion. El checkpoint corresponde al paso global 68 de una ejecucion de entrenamiento interna (`textcraft_tcod_b2f`), subido a HuggingFace para liberar espacio local sin modificar los pesos.
+`SeanWang0027/qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step68` es un fine-tune de tipo destilación sobre el modelo denso `Qwen/Qwen3-1.7B`, orientado a tareas agénticas del entorno TextCraft. El autor lo describe como un «student» de 1.700 millones de parametros que aprende de un «teacher» `Qwen/Qwen3-32B` en precision bf16, con el modo de razonamiento explicito (thinking) desactivado durante el entrenamiento y la evaluacion. El checkpoint corresponde al paso global 68 de una ejecucion de entrenamiento interna (`textcraft_tcod_b2f`), subido a Hugging Face para liberar espacio local sin modificar los pesos.
 
 El modelo resuelve un problema muy concreto: transferir capacidades de planificacion multi-paso y uso de acciones (tool/action calling) desde un modelo grande a uno pequeno que pueda ejecutarse en hardware modesto. La evaluacion declarada se realiza sobre las 100 tareas oficiales de test de TextCraft, con protocolo avg@4, 30 turnos maximos, temperatura 0,4 y 512 tokens por turno. No se publican resultados numericos en la model card de este checkpoint concreto, solo la descripcion del protocolo y la referencia a los rollouts guardados en `runs/eval/`.
 
@@ -106,7 +106,7 @@ La comparacion directa con alternativas genericas de ~2 B de parametros (Qwen3-1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step68
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step68
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo hermano SFT (referencia de metricas): https://featherless.ai/models/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj
 - Modelo hermano OPD step66: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-opd-qwen3-32b-step66

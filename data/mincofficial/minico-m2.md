@@ -12,7 +12,7 @@ Su relevancia es acotada pero concreta: es un ejemplo reproducible de ajuste fin
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (etiqueta `llama` en HuggingFace); detalles de capas y atencion no disponibles |
+| Arquitectura | Transformer decoder-only denso (etiqueta `llama` en Hugging Face); detalles de capas y atencion no disponibles |
 | Parametros totales | 1.080.632.832 (1,08B) |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada. El entrenamiento se realizo con una longitud maxima de 2.048 tokens, lo que acota el regimen en el que se ajusto el modelo |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Minico M2 | 1,08B | No disponible (entrenado a 2.048 tokens) | Sin benchmarks publicados; loss de validacion 0,671 en el paso 200 | Apache-2.0 | MLX fusionado + GGUF Q5_K_M |
 | Minico M1 (Minico-M1-Preview) | Clase 350M, base LiquidAI/LFM2.5-350M | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible en la informacion proporcionada | Repo con export float16 dequantizado desde un artefacto Q8_0 |
-| openbmb/MiniCPM5-1B (modelo base) | Clase 1B | No disponible | No disponible en la informacion proporcionada | Apache-2.0 | Pesos originales en HuggingFace |
+| openbmb/MiniCPM5-1B (modelo base) | Clase 1B | No disponible | No disponible en la informacion proporcionada | Apache-2.0 | Pesos originales en Hugging Face |
 | Otros modelos densos de clase 1B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparativa con Minico M1 y con el modelo base es la unica sostenida por datos de la informacion proporcionada. El autor subraya que la tabla de la model card no es un head-to-head estandarizado.
@@ -94,7 +94,7 @@ La comparativa con Minico M1 y con el modelo base es la unica sostenida por dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mincofficial/Minico-M2
+- Modelo en Hugging Face: https://huggingface.co/Mincofficial/Minico-M2
 - Repositorio GGUF: https://huggingface.co/Mincofficial/Minico-M2-GGUF
 - Minico M1 (comparativa): https://huggingface.co/Mincofficial/Minico-M1-Preview
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B

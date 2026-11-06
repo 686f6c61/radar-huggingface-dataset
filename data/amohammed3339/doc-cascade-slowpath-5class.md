@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`doc-cascade-slowpath-5class` es un modelo de clasificacion de texto publicado por el usuario `amohammed3339` en HuggingFace. Se trata de un fine-tuning de `distilbert-base-uncased`, el encoder tipo transformer destilado de BERT que cuenta con 6 capas, 768 dimensiones ocultas y 12 cabezas de atencion. El modelo resultante tiene 66.957.317 parametros totales (segun los pesos en safetensors) y una cabeza de clasificacion de 5 clases, inferida a partir del propio nombre del modelo. La licencia declarada es Apache 2.0.
+`doc-cascade-slowpath-5class` es un modelo de clasificacion de texto publicado por el usuario `amohammed3339` en Hugging Face. Se trata de un fine-tuning de `distilbert-base-uncased`, el encoder tipo transformer destilado de BERT que cuenta con 6 capas, 768 dimensiones ocultas y 12 cabezas de atencion. El modelo resultante tiene 66.957.317 parametros totales (segun los pesos en safetensors) y una cabeza de clasificacion de 5 clases, inferida a partir del propio nombre del modelo. La licencia declarada es Apache 2.0.
 
 El problema que resuelve es la clasificacion supervisada de documentos en cinco categorias, presumiblemente dentro de una arquitectura de "cascada" con una ruta rapida y una ruta lenta (slow path), donde este modelo actuaria como clasificador especializado. El autor no documenta el dataset, el dominio ni el significado de las clases, por lo que el modelo debe considerarse un experimento sin contexto de uso declarado.
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada: el repositorio acumula 0 descargas y 0 likes
 
 La arquitectura es la de DistilBERT: un encoder transformer de 6 capas, 768 dimensiones ocultas, 12 cabezas de atencion y aproximadamente 66 millones de parametros, obtenido mediante destilacion por conocimiento a partir de BERT-base. Sobre ese backbone se anade una cabeza de clasificacion (`DistilBertForSequenceClassification`) con 5 etiquetas de salida, lo que anade 5 x 768 + 5 = 3.845 parametros respecto al backbone puro. El tokenizador es WordPiece con vocabulario `uncased` y una ventana maxima de 512 tokens.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace (Transformers 4.57.6, PyTorch 2.14.0+cu130, Datasets 5.0.1, Tokenizers 0.22.2) durante 3 epocas, con learning rate 5e-5, batch de entrenamiento 32, batch de evaluacion 64, planificador lineal con warmup del 10 %, optimizador AdamW fused con betas (0.9, 0.999) y epsilon 1e-8, semilla 20260918 y AMP nativo. El dataset de entrenamiento no se documenta ("unknown dataset" segun la propia model card) y no se especifica si hubo RLHF, DPO ni ninguna tecnica de alineacion adicional. Tampoco se describe ninguna innovacion tecnica mas alla del fine-tuning estandar. La ruta de entrenamiento registrada son 750 pasos en total, lo que sugiere un conjunto de datos pequeno.
+El entrenamiento se realizo con el `Trainer` de Hugging Face (Transformers 4.57.6, PyTorch 2.14.0+cu130, Datasets 5.0.1, Tokenizers 0.22.2) durante 3 epocas, con learning rate 5e-5, batch de entrenamiento 32, batch de evaluacion 64, planificador lineal con warmup del 10 %, optimizador AdamW fused con betas (0.9, 0.999) y epsilon 1e-8, semilla 20260918 y AMP nativo. El dataset de entrenamiento no se documenta ("unknown dataset" segun la propia model card) y no se especifica si hubo RLHF, DPO ni ninguna tecnica de alineacion adicional. Tampoco se describe ninguna innovacion tecnica mas alla del fine-tuning estandar. La ruta de entrenamiento registrada son 750 pasos en total, lo que sugiere un conjunto de datos pequeno.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ El valor final reportado en la model card es de 0.0005 de perdida y 1.0 de accur
 - VRAM para inferencia: aproximadamente 268 MB en fp32 y 134 MB en fp16/bf16 solo para los pesos. Con activaciones y batching, la inferencia cabe holgadamente por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria. Para alto throughput en servidor, tarjetas de inferencia como T4, L4, A10G, A100 o H100 permiten procesar lotes grandes de documentos en paralelo.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos (GTX 1050 Ti 4 GB en adelante), asi como en iGPU modernas. Tambien es viable en CPU.
-- Opciones de despliegue: pipeline de `transformers`, HuggingFace Inference Endpoints (el repo esta marcado como `endpoints_compatible`), Text Embeddings Inference (tag presente), ONNX Runtime o TorchScript para exportacion. No aplica llama.cpp/Ollama, ya que no es un modelo generativo con pesos GGUF. vLLM soporta arquitecturas encoder para clasificacion, pero es sobredimensionado para este tamano.
+- Opciones de despliegue: pipeline de `transformers`, Hugging Face Inference Endpoints (el repo esta marcado como `endpoints_compatible`), Text Embeddings Inference (tag presente), ONNX Runtime o TorchScript para exportacion. No aplica llama.cpp/Ollama, ya que no es un modelo generativo con pesos GGUF. vLLM soporta arquitecturas encoder para clasificacion, pero es sobredimensionado para este tamano.
 - Latencia y throughput: no disponible. No se han publicado mediciones del autor ni de terceros.
 
 ## Comparativa con modelos similares
@@ -90,6 +90,6 @@ El valor final reportado en la model card es de 0.0005 de perdida y 1.0 de accur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amohammed3339/doc-cascade-slowpath-5class
+- Modelo en Hugging Face: https://huggingface.co/amohammed3339/doc-cascade-slowpath-5class
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

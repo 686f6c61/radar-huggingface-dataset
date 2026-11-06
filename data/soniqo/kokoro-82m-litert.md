@@ -97,8 +97,8 @@ La calidad se midió con Parakeet TDT v3 sobre 21 respuestas de asistente sintet
 
 | Modelo | Parámetros | Formato / despliegue | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kokoro-82M-LiteRT (esta ficha) | 82M | LiteRT/TFLite FP32, CPU | 128 slots, ventana activa de 32 tokens, salida de 3,0 s | Apache 2.0 | HuggingFace, 136 descargas |
-| hexgrad/Kokoro-82M (original) | 82M | Pesos PyTorch; requiere pila Python | No disponible en la información consultada | Apache 2.0 | HuggingFace; es el modelo base de esta conversión |
+| Kokoro-82M-LiteRT (esta ficha) | 82M | LiteRT/TFLite FP32, CPU | 128 slots, ventana activa de 32 tokens, salida de 3,0 s | Apache 2.0 | Hugging Face, 136 descargas |
+| hexgrad/Kokoro-82M (original) | 82M | Pesos PyTorch; requiere pila Python | No disponible en la información consultada | Apache 2.0 | Hugging Face; es el modelo base de esta conversión |
 | Ports ONNX/GGUF de Kokoro (comunidad) | 82M (derivados) | ONNX, GGUF; requieren runtime propio | No disponible | Apache 2.0 (heredada del base) | No se han consultado en esta búsqueda |
 | Piper TTS | No disponible | Runtime propio orientado a dispositivo | No disponible | No disponible en la información consultada | No disponible |
 
@@ -120,7 +120,7 @@ La comparación relevante es contra el propio Kokoro-82M en PyTorch: este bundle
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soniqo/Kokoro-82M-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/soniqo/Kokoro-82M-LiteRT
 - Árbol de ficheros del repositorio: https://huggingface.co/soniqo/Kokoro-82M-LiteRT/tree/main
 - Modelo base hexgrad/Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio GitHub de Kokoro: https://github.com/hexgrad/kokoro

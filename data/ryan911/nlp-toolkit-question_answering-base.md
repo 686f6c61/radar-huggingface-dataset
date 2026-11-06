@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ryan911/nlp-toolkit-question_answering-base | 494M | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct | 494M | 32k (según documentación oficial) | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1.1B | 2k | Apache 2.0 | HuggingFace |
-| Phi-2 | 2.7B | 2k | MIT | HuggingFace |
+| Ryan911/nlp-toolkit-question_answering-base | 494M | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct | 494M | 32k (según documentación oficial) | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1.1B | 2k | Apache 2.0 | Hugging Face |
+| Phi-2 | 2.7B | 2k | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos, por lo que la comparación se limita a características técnicas. El modelo base Qwen2.5-0.5B-Instruct es la referencia más directa, ya que este fine-tune parte de él.
 
@@ -73,6 +73,6 @@ No se dispone de datos de rendimiento comparativos, por lo que la comparación s
 
 ## Enlaces
 
-- [HuggingFace: Ryan911/nlp-toolkit-question_answering-base](https://huggingface.co/Ryan911/nlp-toolkit-question_answering-base)
+- [Hugging Face: Ryan911/nlp-toolkit-question_answering-base](https://huggingface.co/Ryan911/nlp-toolkit-question_answering-base)
 - [Modelo base: Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

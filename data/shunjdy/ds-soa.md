@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DS-SOA es un modelo de lenguaje fine-tuneado a partir de `unsloth/DeepSeek-R1-Distill-Llama-70B-unsloth-bnb-4bit`, un checkpoint de DeepSeek-R1 destilado sobre Llama-70B y cuantizado a 4 bits mediante la librería Unsloth. El autor, shunjdy (Shunji Numaguchi), publica este modelo en HuggingFace con licencia Apache 2.0, orientado a generación de texto en inglés. El repositorio tiene un tamaño de 0,8 GB, lo que sugiere que se distribuye en formato cuantizado (probablemente 4-bit) y está pensado para inferencia eficiente en hardware con VRAM limitada.
+DS-SOA es un modelo de lenguaje fine-tuneado a partir de `unsloth/DeepSeek-R1-Distill-Llama-70B-unsloth-bnb-4bit`, un checkpoint de DeepSeek-R1 destilado sobre Llama-70B y cuantizado a 4 bits mediante la librería Unsloth. El autor, shunjdy (Shunji Numaguchi), publica este modelo en Hugging Face con licencia Apache 2.0, orientado a generación de texto en inglés. El repositorio tiene un tamaño de 0,8 GB, lo que sugiere que se distribuye en formato cuantizado (probablemente 4-bit) y está pensado para inferencia eficiente en hardware con VRAM limitada.
 
 La relevancia de este modelo radica en que combina las capacidades de razonamiento de DeepSeek-R1 (entrenado con reinforcement learning y cadenas de pensamiento) con la eficiencia de una cuantización extrema, permitiendo ejecutar un modelo de 70B en GPUs de consumo. Sin embargo, la información pública es muy escasa: no se detallan los datos de entrenamiento, el proceso de fine-tuning ni los benchmarks. El modelo se presenta como un upload directo sin documentación adicional, por lo que su utilidad práctica queda limitada a experimentación o como base para futuros desarrollos.
 
@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DS-SOA (este) | no disponible (base 70B) | no disponible | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Llama-70B (base) | 70B | 128k (según documentación de DeepSeek) | MIT (para el modelo original) | HuggingFace |
-| Llama-3.1-70B | 70B | 128k | Llama 3.1 Community License | HuggingFace |
-| Qwen2.5-72B | 72B | 128k | Apache 2.0 | HuggingFace |
+| DS-SOA (este) | no disponible (base 70B) | no disponible | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Llama-70B (base) | 70B | 128k (según documentación de DeepSeek) | MIT (para el modelo original) | Hugging Face |
+| Llama-3.1-70B | 70B | 128k | Llama 3.1 Community License | Hugging Face |
+| Qwen2.5-72B | 72B | 128k | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y licencia de los modelos comparados provienen de información pública general, no de la ficha de DS-SOA. No se dispone de comparativas de rendimiento.
 
@@ -74,7 +74,7 @@ Nota: los datos de contexto y licencia de los modelos comparados provienen de in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shunjdy/DS-SOA
+- Modelo en Hugging Face: https://huggingface.co/shunjdy/DS-SOA
 - Perfil del autor: https://huggingface.co/shunjdy
 - Modelo base: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-70B-unsloth-bnb-4bit
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

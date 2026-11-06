@@ -87,7 +87,7 @@ La comparación con alternativas de la misma categoría (por ejemplo, Llama 3.2 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/banhchungtuongot/lifemate-llm-sixhour-20261104
+- Repositorio Hugging Face: https://huggingface.co/banhchungtuongot/lifemate-llm-sixhour-20261104
 - Repositorio GitHub del autor: https://github.com/NguyenDucAnforwork/lifemate
 - Documentación del run: docs/LLM_SIX_HOUR_RUN.md (dentro del repositorio GitHub)
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sneha-mehta/mae-classification59` es un prototipo de investigación publicado en HuggingFace por el usuario sneha-mehta. Se presenta como una implementación personalizada de una arquitectura denominada "Mae" orientada a tareas de clasificación, en configuración "tiny" y con atención de tipo flash. El repositorio tiene un carácter marcadamente experimental: la propia model card indica que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
+`sneha-mehta/mae-classification59` es un prototipo de investigación publicado en Hugging Face por el usuario sneha-mehta. Se presenta como una implementación personalizada de una arquitectura denominada "Mae" orientada a tareas de clasificación, en configuración "tiny" y con atención de tipo flash. El repositorio tiene un carácter marcadamente experimental: la propia model card indica que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
 
 El modelo es extremadamente pequeño: 16.576 parámetros totales según los metadatos de safetensors, lo que lo sitúa en un orden de magnitud muy por debajo de cualquier modelo de uso práctico. El repositorio incluye el código fuente (`pipeline.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicialización. No se declara ningún resultado de benchmark, y la model card recomienda explícitamente acompañar cualquier evaluación futura de particiones etiquetadas específicas de la tarea, al menos tres semillas y una línea base de capacidad comparable.
 
@@ -61,7 +61,7 @@ Debido a que el checkpoint publicado no está entrenado, los casos de uso realis
 - Pruebas de humo en integración continua: cargar el checkpoint de inicialización para verificar que el código de carga, la inferencia y el guardado de artefactos funcionan antes de lanzar entrenamientos reales, dado que el propio autor lo define como válido para este fin.
 - Base para experimentos académicos de clasificación: partir de una implementación mínima y auditable para comparar variantes de atención (flash frente a estándar), fusión (cross attention frente a alternativas) o funciones de activación.
 - Comparación de recetas de optimización: emplear la receta lion + step como línea base y contrastarla con otras configuraciones bajo el mismo presupuesto de ajuste y semillas, tal como sugiere la model card.
-- Docencia y formación técnica: usar el repositorio como ejemplo didáctico de estructura de proyecto de HuggingFace (código, configuración, argumentos de entrenamiento y pesos en safetensors).
+- Docencia y formación técnica: usar el repositorio como ejemplo didáctico de estructura de proyecto de Hugging Face (código, configuración, argumentos de entrenamiento y pesos en safetensors).
 - Validación de interoperabilidad de formatos: comprobar la carga de pesos en safetensors desde PyTorch y verificar la necesidad de un adaptador explícito para APIs automáticas genéricas, ya que la implementación es personalizada.
 
 ## Benchmarks y rendimiento
@@ -100,5 +100,5 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sneha-mehta/mae-classification59
-- Perfil del autor en HuggingFace: https://huggingface.co/sneha-mehta
+- Modelo en Hugging Face: https://huggingface.co/sneha-mehta/mae-classification59
+- Perfil del autor en Hugging Face: https://huggingface.co/sneha-mehta

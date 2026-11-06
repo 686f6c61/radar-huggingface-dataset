@@ -21,7 +21,7 @@ Su relevancia es exclusivamente didactica y experimental: sirve para ilustrar la
 | Licencia | no disponible |
 | Formato de pesos | Checkpoint PyTorch (`.pt`, fichero `moe_top2_final.pt`), cargable con `torch.load` |
 
-Otros hiperparametros declarados por el autor: `d_model=256`, `n_layers=6`, `n_heads=8`, `ffn_hidden_dim=1024`, tokens de entrenamiento `30,00 M`, perdida de validacion final `3,9567`. Tamano del repositorio en HuggingFace: 0,1 GB.
+Otros hiperparametros declarados por el autor: `d_model=256`, `n_layers=6`, `n_heads=8`, `ffn_hidden_dim=1024`, tokens de entrenamiento `30,00 M`, perdida de validacion final `3,9567`. Tamano del repositorio en Hugging Face: 0,1 GB.
 
 ## Arquitectura y entrenamiento
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iconically-mine/anlp-a2-moe_top2
+- Hugging Face: https://huggingface.co/iconically-mine/anlp-a2-moe_top2
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

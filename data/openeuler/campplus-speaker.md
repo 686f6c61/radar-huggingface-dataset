@@ -5,7 +5,7 @@ campplus-speaker es un paquete de inferencia para verificacion de locutor (speak
 
 El caso de uso declarado es el agente de voz de IB-Robot: decidir si una locucion captada dentro de una sesion iniciada por wake-word proviene de la persona que abrio esa sesion. El grafo ONNX se distribuye sin modificar; el valor del bundle esta en fijar de forma explicita el contrato de entrada (features, no audio) y el preprocesado, de manera que los vectores sean comparables entre despliegues distintos.
 
-La relevancia actual es practica: ofrece un componente biométrico listo para integrar en robots y sistemas embebidos con licencia Apache-2.0, con un contrato de features reproducible y verificado contra el extractor de sherpa-onnx. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano de 0.0 GB segun HuggingFace.
+La relevancia actual es practica: ofrece un componente biométrico listo para integrar en robots y sistemas embebidos con licencia Apache-2.0, con un contrato de features reproducible y verificado contra el extractor de sherpa-onnx. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano de 0.0 GB segun Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han proporcionado datos de modelos alternativos de verificacion de locutor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| campplus-speaker (CAM++) | no disponible | ventana de 200 frames | no disponible | Apache-2.0 | HuggingFace, bundle ONNX |
+| campplus-speaker (CAM++) | no disponible | ventana de 200 frames | no disponible | Apache-2.0 | Hugging Face, bundle ONNX |
 | Alternativas de speaker embedding | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,10 +79,10 @@ No se han proporcionado datos de modelos alternativos de verificacion de locutor
 - No se declara lista de idiomas soportados; el modelo upstream se identifica como `zh-cn`, lo que debe tenerse en cuenta para despliegues en castellano.
 - No se dispone de datos de sesgo, tasa de falsos positivos/negativos ni robustez ante ruido o canal telefonico.
 - La licencia Apache-2.0 permite uso comercial, pero el cumplimiento biometrico depende de la legislacion aplicable y no de la licencia del modelo.
-- El repositorio registra 0 descargas y 0 likes, y un tamano de 0.0 GB en HuggingFace, lo que sugiere que el artefacto podria no estar alojado en el repo o que el paquete es meramente descriptivo.
+- El repositorio registra 0 descargas y 0 likes, y un tamano de 0.0 GB en Hugging Face, lo que sugiere que el artefacto podria no estar alojado en el repo o que el paquete es meramente descriptivo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/openEuler/campplus-speaker
+- Hugging Face: https://huggingface.co/openEuler/campplus-speaker
 - Repositorio IB-Robot: https://atomgit.com/openeuler/IB_Robot
 - Modelo upstream en ModelScope: https://www.modelscope.cn/models/iic/speech_campplus_sv_zh-cn_16k-common
 - Exportacion ONNX de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx/releases/tag/speaker-recongition-models

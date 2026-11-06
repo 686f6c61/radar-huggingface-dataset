@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kumo Tabular medium classifier es un modelo de clasificacion para datos tabulares publicado por el usuario general-forecast en HuggingFace. Se trata de una conversion a formato safetensors de los pesos originales de NVIDIA correspondientes a `medium/classifier.pt`, dentro del repositorio `nvidia/Kumo-Tabular` (revision `3c3e10bbdb590ace29e7026847f92db3c603096d`). La conversion no modifica los pesos: unicamente los renombra segun el esquema de nombres de PyTorch de NVIDIA y los empaqueta para la libreria `gfi` de general-forecast.
+Kumo Tabular medium classifier es un modelo de clasificacion para datos tabulares publicado por el usuario general-forecast en Hugging Face. Se trata de una conversion a formato safetensors de los pesos originales de NVIDIA correspondientes a `medium/classifier.pt`, dentro del repositorio `nvidia/Kumo-Tabular` (revision `3c3e10bbdb590ace29e7026847f92db3c603096d`). La conversion no modifica los pesos: unicamente los renombra segun el esquema de nombres de PyTorch de NVIDIA y los empaqueta para la libreria `gfi` de general-forecast.
 
 El modelo es una red neuronal disenada para tareas de clasificacion tabular, con un total de 61.485.626 parametros. Su salida son probabilidades de clase sobre un maximo de 10 clases, lo que lo situa en el ambito de los clasificadores multiclase aplicados a conjuntos de datos estructurados. Los tags del repositorio indican capacidades de in-context learning sobre datos tabulares, una linea de trabajo que busca aplicar mecanismos de aprendizaje en contexto a tablas en lugar de requerir entrenamiento especifico por tarea.
 
@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/general-forecast/kumo-tabular-medium-classifier
+- Modelo en Hugging Face: https://huggingface.co/general-forecast/kumo-tabular-medium-classifier
 - Modelo base (NVIDIA Kumo-Tabular): https://huggingface.co/nvidia/Kumo-Tabular
 - Repositorio de codigo NVIDIA structured-data-models: https://github.com/NVIDIA/structured-data-models
 - Libreria gfi: https://github.com/generalforecast/gfi

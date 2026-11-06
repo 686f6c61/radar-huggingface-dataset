@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mikovalenko/3d-scene-understanding` es un repositorio de HuggingFace cuyo artefacto principal no es un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre comprensión de escenas 3D. La propia model card lo describe como "research notes" y aclara de forma explícita que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. El repositorio incluye un archivo `notes.md` como artefacto primario y un `README.md` de documentación, con la etiqueta `research-notes`.
+`mikovalenko/3d-scene-understanding` es un repositorio de Hugging Face cuyo artefacto principal no es un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre comprensión de escenas 3D. La propia model card lo describe como "research notes" y aclara de forma explícita que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. El repositorio incluye un archivo `notes.md` como artefacto primario y un `README.md` de documentación, con la etiqueta `research-notes`.
 
 El dato real extraído de safetensors indica únicamente 49.600 parámetros totales, una cifra incompatible con cualquier transformer funcional de propósito general y coherente con un artefacto mínimo, de prueba o de marcador de posición. El tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta. La etiqueta `transformer` aparece en los tags, pero no hay información sobre arquitectura real, capas, dimensión de embeddings ni configuración.
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mikovalenko/3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/mikovalenko/3d-scene-understanding
 - Scene understanding en Mixed Reality (Microsoft Learn): https://learn.microsoft.com/en-us/windows/mixed-reality/design/scene-understanding
 - Tema scene-understanding en GitHub: https://github.com/topics/scene-understanding
 - 3D Scene Understanding en CVPR 2026: https://scene-understanding.com/

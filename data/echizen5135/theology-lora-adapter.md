@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA publicado en HuggingFace por el usuario Echizen5135 con la etiqueta de licencia MIT. El nombre del repositorio, `theology-lora-adapter`, sugiere que se trata de un adaptador de bajo rango destinado a ajustar algún modelo de lenguaje para el dominio de la teología. Sin embargo, la model card no contiene ninguna descripción técnica, instrucciones de uso, ni referencias al modelo base sobre el que se aplica el adaptador.
+Este modelo es un adaptador LoRA publicado en Hugging Face por el usuario Echizen5135 con la etiqueta de licencia MIT. El nombre del repositorio, `theology-lora-adapter`, sugiere que se trata de un adaptador de bajo rango destinado a ajustar algún modelo de lenguaje para el dominio de la teología. Sin embargo, la model card no contiene ninguna descripción técnica, instrucciones de uso, ni referencias al modelo base sobre el que se aplica el adaptador.
 
 La información disponible es extremadamente limitada: no se indica arquitectura, número de parámetros, longitud de contexto, idiomas ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni se detallan capacidades concretas. Por tanto, este modelo no puede evaluarse ni desplegarse de forma fiable en su estado actual. Su relevancia práctica es nula hasta que el autor publique documentación técnica completa.
 
@@ -63,5 +63,5 @@ No disponible. No se pueden identificar modelos comparables al carecer de inform
 
 ## Enlaces
 
-- HuggingFace: [Echizen5135/theology-lora-adapter](https://huggingface.co/Echizen5135/theology-lora-adapter)
+- Hugging Face: [Echizen5135/theology-lora-adapter](https://huggingface.co/Echizen5135/theology-lora-adapter)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SDAR-4B-Chat-distill-search es un modelo de lenguaje de 4.411.424.256 parámetros (aproximadamente 4,4 B) publicado por la organización d3LLM en HuggingFace. Pertenece a la familia SDAR (Synergy of Diffusion and AutoRegression), una propuesta que combina el entrenamiento autorregresivo (AR) clásico con la inferencia paralela propia de los modelos de difusión discreta. Según la model card, esta combinación busca mantener la eficiencia de entrenamiento de los modelos AR y, al mismo tiempo, aprovechar la capacidad de decodificación en paralelo de los modelos de difusión, con un rendimiento que el autor sitúa a la par de los modelos AR abiertos del estado del arte.
+SDAR-4B-Chat-distill-search es un modelo de lenguaje de 4.411.424.256 parámetros (aproximadamente 4,4 B) publicado por la organización d3LLM en Hugging Face. Pertenece a la familia SDAR (Synergy of Diffusion and AutoRegression), una propuesta que combina el entrenamiento autorregresivo (AR) clásico con la inferencia paralela propia de los modelos de difusión discreta. Según la model card, esta combinación busca mantener la eficiencia de entrenamiento de los modelos AR y, al mismo tiempo, aprovechar la capacidad de decodificación en paralelo de los modelos de difusión, con un rendimiento que el autor sitúa a la par de los modelos AR abiertos del estado del arte.
 
 El modelo se distribuye con licencia Apache 2.0, en formato safetensors y con código propio (`custom_code`), por lo que requiere `trust_remote_code=True` para cargarse con Transformers. La model card recomienda usar el motor de inferencia JetEngine, que expone parámetros específicos de decodificación por difusión (`block_length`, `denoising_steps`, `remasking_strategy`, `dynamic_threshold`) y un `mask_token_id` de 151669.
 
@@ -100,10 +100,10 @@ No se han encontrado en la información proporcionada comparaciones con otros mo
 
 ## Enlaces
 
-- [HuggingFace: d3LLM/SDAR-4B-Chat-distill-search](https://huggingface.co/d3LLM/SDAR-4B-Chat-distill-search)
+- [Hugging Face: d3LLM/SDAR-4B-Chat-distill-search](https://huggingface.co/d3LLM/SDAR-4B-Chat-distill-search)
 - [Paper SDAR (arXiv:2510.06303)](https://arxiv.org/abs/2510.06303)
 - [Paper Qwen3 Technical Report (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388)
 - [Repositorio GitHub JetAstra/SDAR](https://github.com/JetAstra/SDAR)
 - [Motor de inferencia JetEngine](https://github.com/Labman42/JetEngine)
-- [Colección de modelos SDAR en HuggingFace](https://huggingface.co/collections/JetLM/sdar-689b1b6d392a4eeb2664f8ff)
+- [Colección de modelos SDAR en Hugging Face](https://huggingface.co/collections/JetLM/sdar-689b1b6d392a4eeb2664f8ff)
 - [Repositorio InternLM/Intern-S1 (fuente de puntuaciones externas citada)](https://github.com/InternLM/Intern-S1)

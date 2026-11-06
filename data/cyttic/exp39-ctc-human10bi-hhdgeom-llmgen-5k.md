@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k` es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) publicado por la organización cyttic en HuggingFace bajo licencia MIT. El identificador del repositorio sugiere un experimento (exp39) orientado a reconocimiento de voz mediante CTC (Connectionist Temporal Classification), con un vocabulario o conjunto de etiquetas de 10 símbolos (human10bi), posible geometría de capas ocultas (hhdgeom) y generación de datos sintéticos mediante un LLM (llmgen) sobre un conjunto de 5.000 muestras (5k). No obstante, estos detalles se deducen exclusivamente del nombre del modelo y no están confirmados por la model card.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k` es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) publicado por la organización cyttic en Hugging Face bajo licencia MIT. El identificador del repositorio sugiere un experimento (exp39) orientado a reconocimiento de voz mediante CTC (Connectionist Temporal Classification), con un vocabulario o conjunto de etiquetas de 10 símbolos (human10bi), posible geometría de capas ocultas (hhdgeom) y generación de datos sintéticos mediante un LLM (llmgen) sobre un conjunto de 5.000 muestras (5k). No obstante, estos detalles se deducen exclusivamente del nombre del modelo y no están confirmados por la model card.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripción, entrenamiento, evaluación y uso previsto figuran como "[More Information Needed]". Esto significa que no hay información oficial sobre arquitectura, datos de entrenamiento, idiomas soportados, contexto ni rendimiento. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors, lo que es coherente con un modelo de ~87 millones de parámetros en precisión de 16 bits (aproximadamente 175 MB de pesos más metadatos y posibles ficheros adicionales).
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripción, entrenamiento, evaluación y uso previsto figuran como "[More Information Needed]". Esto significa que no hay información oficial sobre arquitectura, datos de entrenamiento, idiomas soportados, contexto ni rendimiento. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors, lo que es coherente con un modelo de ~87 millones de parámetros en precisión de 16 bits (aproximadamente 175 MB de pesos más metadatos y posibles ficheros adicionales).
 
 Por su tamaño y nomenclatura, el modelo encaja en la categoría de modelos pequeños de investigación, probablemente un encoder acústico o un transformer ligero entrenado para una tarea específica de clasificación de secuencias. No es un modelo de lenguaje generativo de propósito general y no debe evaluarse como tal. Su relevancia actual es limitada: se trata de un artefacto experimental sin documentación, sin descargas y sin validación pública, útil únicamente como referencia para quien quiera reproducir o inspeccionar el experimento.
 
@@ -73,6 +73,6 @@ No disponible. No se conocen modelos comparables de la misma organización ni se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k
 - Referencia citada en la model card (calculadora de impacto ambiental): https://mlco2.github.io/impact#compute
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

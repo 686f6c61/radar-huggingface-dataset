@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.2-dmd-mlx-q8
+- Modelo en Hugging Face: https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.2-dmd-mlx-q8
 - Modelo base: https://huggingface.co/TenStrip/LTX2.3-10Eros
 - Runtime `ltx-2-mlx`: https://github.com/dgrauet/ltx-2-mlx
 - Herramienta de conversion `mlx-forge`: https://github.com/dgrauet/mlx-forge

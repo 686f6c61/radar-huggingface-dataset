@@ -41,7 +41,7 @@ No aplica. Al no existir un modelo entrenado, no hay requisitos de VRAM, GPU rec
 
 ## Comparativa con modelos similares
 
-Existen repositorios homónimos o similares en HuggingFace que sí implementan modelos T5 para question answering. La comparación es ilustrativa de lo que debería contener este repositorio:
+Existen repositorios homónimos o similares en Hugging Face que sí implementan modelos T5 para question answering. La comparación es ilustrativa de lo que debería contener este repositorio:
 
 | Modelo | Arquitectura | Dataset | Tarea | Estado |
 |---|---|---|---|---|
@@ -63,7 +63,7 @@ Ninguno de los modelos comparables comparte arquitectura, dataset o licencia con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dnsingh14k/t5-qa
+- Repositorio Hugging Face: https://huggingface.co/dnsingh14k/t5-qa
 - Modelo comparativo AventIQ-AI/t5-qa-chatbot: https://huggingface.co/AventIQ-AI/t5-qa-chatbot
 - Modelo comparativo ESgarbi/t5-qa-builder: https://github.com/ESgarbi/t5-qa-builder
 - Modelo comparativo terru3/t5-qa: https://github.com/terru3/t5-qa

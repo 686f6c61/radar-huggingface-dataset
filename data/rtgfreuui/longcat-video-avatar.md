@@ -65,14 +65,14 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 - Solo se declara soporte para inglés y chino (en, zh); no se especifica compatibilidad con otros idiomas.
 - No se proporcionan datos sobre sesgos conocidos ni sobre el riesgo de alucinación, aunque al tratarse de generación de vídeo pueden aparecer artefactos visuales o desincronizaciones labiales en ciertas condiciones.
-- El repositorio de HuggingFace indicado (rtgfreuui/LongCat-Video-Avatar) tiene 0 descargas y 0 likes, y su fecha de creación es futura; el repositorio oficial es meituan-longcat/LongCat-Video-Avatar.
+- El repositorio de Hugging Face indicado (rtgfreuui/LongCat-Video-Avatar) tiene 0 descargas y 0 likes, y su fecha de creación es futura; el repositorio oficial es meituan-longcat/LongCat-Video-Avatar.
 - La licencia MIT permite el uso comercial, pero es necesario revisar las licencias de las dependencias y de los pesos del modelo antes de su uso en producción.
 - No se dispone de información sobre requisitos de hardware, latencia ni throughput, lo que dificulta la planificación de despliegues en entornos de producción.
 
 ## Enlaces
 
-- HuggingFace oficial: https://huggingface.co/meituan-longcat/LongCat-Video-Avatar
-- HuggingFace del repositorio indicado: https://huggingface.co/rtgfreuui/LongCat-Video-Avatar
+- Hugging Face oficial: https://huggingface.co/meituan-longcat/LongCat-Video-Avatar
+- Hugging Face del repositorio indicado: https://huggingface.co/rtgfreuui/LongCat-Video-Avatar
 - Página del proyecto: https://meigen-ai.github.io/LongCat-Video-Avatar/
 - Repositorio de GitHub: https://github.com/meituan-longcat/LongCat-Video
 - Informe técnico: https://github.com/meituan-longcat/LongCat-Video/blob/main/assets/LongCat-Video-Avatar-Tech-Report.pdf

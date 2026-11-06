@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/natalialysenko/perceiver-contrastive
+- Hugging Face: https://huggingface.co/natalialysenko/perceiver-contrastive
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

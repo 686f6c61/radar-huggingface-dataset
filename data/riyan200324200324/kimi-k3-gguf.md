@@ -103,7 +103,7 @@ No hay datos verificados de otros modelos comparables en la información proporc
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Riyan200324200324/Kimi-K3-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/moonshotai/Kimi-K3
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Riyan200324200324/Kimi-K3-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/moonshotai/Kimi-K3
 - Pull request de llama.cpp utilizado: https://github.com/ggml-org/llama.cpp/pull/26185
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -70,8 +70,8 @@ Nota: los datos de contexto y licencia del modelo base provienen de la documenta
 
 ## Enlaces
 
-- [HuggingFace - hungpill/Qwen3-0.6B-JSON-SFT](https://huggingface.co/hungpill/Qwen3-0.6B-JSON-SFT)
-- [HuggingFace - Qwen/Qwen3-0.6B (modelo base)](https://huggingface.co/Qwen/Qwen3-0.6B)
-- [HuggingFace - ebk1024/Qwen3-0.6B-JSON-SFT (modelo similar)](https://huggingface.co/ebk1024/Qwen3-0.6B-JSON-SFT)
+- [Hugging Face - hungpill/Qwen3-0.6B-JSON-SFT](https://huggingface.co/hungpill/Qwen3-0.6B-JSON-SFT)
+- [Hugging Face - Qwen/Qwen3-0.6B (modelo base)](https://huggingface.co/Qwen/Qwen3-0.6B)
+- [Hugging Face - ebk1024/Qwen3-0.6B-JSON-SFT (modelo similar)](https://huggingface.co/ebk1024/Qwen3-0.6B-JSON-SFT)
 - [GitHub - QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)
 - [Qualcomm AI Hub - Qwen3-0.6B](https://aihub.qualcomm.com/models/qwen3_0_6b)

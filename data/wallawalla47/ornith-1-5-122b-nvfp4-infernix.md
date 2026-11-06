@@ -38,7 +38,7 @@ En el lado de la inferencia, las innovaciones relevantes son de sistema más que
 - Decodificación especulativa integrada (MTP y DFlash2), que acelera la generación sin cambiar los pesos objetivo.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y multi-step reasoning: no documentadas explícitamente para este artefacto; el discurso de ornith-ai sobre generación de andamiajes y rollouts sugiere uso agéntico, pero no se aportan detalles de implementación.
-- Capacidades multilingües: no disponible; los metadatos de HuggingFace no declaran idiomas.
+- Capacidades multilingües: no disponible; los metadatos de Hugging Face no declaran idiomas.
 - Audio: no disponible (no se menciona ningún codificador de audio).
 
 ## Casos de uso
@@ -105,8 +105,8 @@ No se dispone de datos de benchmarks (MMLU, HumanEval, GSM8K u otros) para ningu
 
 ## Enlaces
 
-- Página de HuggingFace del artefacto: https://huggingface.co/wallawalla47/Ornith-1.5-122B-NVFP4-Infernix
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-122B-NVFP4
+- Página de Hugging Face del artefacto: https://huggingface.co/wallawalla47/Ornith-1.5-122B-NVFP4-Infernix
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-122B-NVFP4
 - Modelo original Ornith-1.5-122B (licencia MIT): https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Drafter DFlash2: https://huggingface.co/incoai/Ornith-1.5-122B-DFlash2
@@ -115,5 +115,5 @@ No se dispone de datos de benchmarks (MMLU, HumanEval, GSM8K u otros) para ningu
 - Guía de uso de Infernix con el modelo: https://github.com/Wallawalla47/Infernix/blob/main/docs/qwen3_5-122b.md
 - Repositorio de terceros para llama.cpp Vulkan en Strix Halo: https://github.com/irr/ornith-1.5-122b/blob/main/README.md
 - Entrada en Ollama: https://ollama.com/library/ornith-1.5:122b-nvfp4
-- Colección Ornith-1.5 en HuggingFace: https://huggingface.co/collections/ornith-ai/ornith-15
+- Colección Ornith-1.5 en Hugging Face: https://huggingface.co/collections/ornith-ai/ornith-15
 - Web del desarrollador del modelo base: https://ornith.ai/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ferr-eira/classification-lite-2024` es un repositorio de HuggingFace publicado por el usuario `ferr-eira` que contiene una implementacion funcional de una arquitectura tipo Flamingo orientada a tareas de clasificacion. Se distribuye bajo licencia Apache 2.0 y con formato de pesos safetensors. A pesar de que la configuracion de arquitectura se etiqueta como de escala "large", el checkpoint incluido contiene unicamente 49.600 parametros reales (segun el recuento del propio archivo safetensors), lo que lo situa en un rango extremadamente reducido y alejado de cualquier modelo de produccion.
+`ferr-eira/classification-lite-2024` es un repositorio de Hugging Face publicado por el usuario `ferr-eira` que contiene una implementacion funcional de una arquitectura tipo Flamingo orientada a tareas de clasificacion. Se distribuye bajo licencia Apache 2.0 y con formato de pesos safetensors. A pesar de que la configuracion de arquitectura se etiqueta como de escala "large", el checkpoint incluido contiene unicamente 49.600 parametros reales (segun el recuento del propio archivo safetensors), lo que lo situa en un rango extremadamente reducido y alejado de cualquier modelo de produccion.
 
 El repositorio no presenta un modelo entrenado, sino un checkpoint de inicializacion valido para pruebas de humo (smoke tests). Su propio README indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado. El objetivo declarado es ofrecer codigo transparente y reproducible para experimentar con la arquitectura, no un modelo listo para uso real.
 
@@ -76,13 +76,13 @@ No se dispone de datos de benchmarks ni de especificaciones comparables suficien
 - No se documentan idiomas soportados ni limitaciones de contexto.
 - Restricciones de licencia: el modelo se publica bajo apache-2.0, que permite uso comercial del artefacto, pero el autor advierte que deben revisarse por separado los terminos de los datos de origen si se usa con datasets externos.
 - El recuento real de parametros (49.600) contradice la etiqueta "large" de la configuracion, lo que puede inducir a error si se interpreta como un modelo de gran tamano.
-- El pipeline no esta declarado en HuggingFace, de modo que la carga automatica estandar no funcionara sin adaptador.
+- El pipeline no esta declarado en Hugging Face, de modo que la carga automatica estandar no funcionara sin adaptador.
 - Repositorio con 0 descargas y 0 likes: sin validacion por parte de la comunidad.
 - Fechas de publicacion y actualizacion registradas como 2026-10-05, posteriores a la fecha habitual de consulta; conviene verificar la vigencia del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ferr-eira/classification-lite-2024
+- Hugging Face: https://huggingface.co/ferr-eira/classification-lite-2024
 - Paper de Flamingo (referencia de arquitectura, no enlazado en la ficha del autor): no disponible en la informacion proporcionada
-- Repositorio de codigo: incluido en el propio repositorio de HuggingFace (`run.py`)
+- Repositorio de codigo: incluido en el propio repositorio de Hugging Face (`run.py`)
 - Demos, blogs o papers adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados relacionados con este modelo (los resultados obtenidos correspondian a terminos no relacionados y se descartan).

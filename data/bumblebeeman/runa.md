@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Runa es un adaptador LoRA de generación de imágenes text-to-image publicado por el usuario bumblebeeman en HuggingFace. Se trata de un ajuste de bajo rango (LoRA) construido sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión text-to-image. El repositorio ocupa 0,2 GB y está etiquetado con la plantilla `template:diffusion-lora` y la librería `diffusers`, lo que indica que está pensado para cargarse mediante la librería Diffusers de HuggingFace junto al modelo base.
+Runa es un adaptador LoRA de generación de imágenes text-to-image publicado por el usuario bumblebeeman en Hugging Face. Se trata de un ajuste de bajo rango (LoRA) construido sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión text-to-image. El repositorio ocupa 0,2 GB y está etiquetado con la plantilla `template:diffusion-lora` y la librería `diffusers`, lo que indica que está pensado para cargarse mediante la librería Diffusers de Hugging Face junto al modelo base.
 
 La relevancia de esta ficha es limitada, y conviene decirlo con claridad: el autor no ha publicado información sobre el conjunto de datos de entrenamiento, los hiperparámetros del LoRA (rango, alpha, módulos objetivo), el prompt de activación ni ejemplos cualitativos. La model card se reduce a un título ("Runa v1"), un marcador de galería de imágenes vacío y una sección de descarga de archivos. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y se creó y actualizó el mismo día (26 de septiembre de 2026), lo que sugiere una publicación reciente y sin validación por parte de la comunidad.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - La VRAM necesaria para inferencia la determina casi por completo el modelo base krea/Krea-2-Turbo, no el adaptador. No se dispone de datos publicados en esta informacion sobre el numero de parametros ni la huella de memoria de ese modelo base.
 - Como referencia generica y no atribuible a este modelo: los transformers de difusion de gran tamano en precision completa requieren habitualmente entre 16 GB y 24 GB o mas de VRAM, y el uso de cuantizacion (por ejemplo, en 8 o 4 bits) o de tecnicas de offloading permite reducir ese requisito y ejecutar en GPU de consumo como la RTX 4090 (24 GB) o la RTX 4080 (16 GB). Estas cifras son orientativas y dependen del modelo base concreto.
 - GPU de centro de datos (A100, H100, L40S) permiten el despliegue en precision alta y con mayor resolucion o batch, pero no hay mediciones publicadas para este adaptador.
-- Opciones de despliegue: al estar etiquetado con la libreria `diffusers`, el uso previsto es la libreria Diffusers de HuggingFace (Python). No hay evidencia de soporte especifico en vLLM (orientado a modelos de lenguaje), llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: al estar etiquetado con la libreria `diffusers`, el uso previsto es la libreria Diffusers de Hugging Face (Python). No hay evidencia de soporte especifico en vLLM (orientado a modelos de lenguaje), llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no identifica adaptadores comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bumblebeeman/Runa
+- Repositorio Hugging Face: https://huggingface.co/bumblebeeman/Runa
 - Archivos y versiones del modelo: https://huggingface.co/bumblebeeman/Runa/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria Diffusers: https://github.com/huggingface/diffusers

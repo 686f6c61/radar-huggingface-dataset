@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Stems | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Acapellas/htdemucs-ft-onnx (este) | Hybrid Transformer Demucs fine-tuned | 4 (vocals, drums, bass, other) | ONNX fp32 | MIT | HuggingFace (re-host) |
-| StemSplitio/htdemucs-ft-onnx | Mismo modelo, exportación original | 4 | ONNX fp32 | MIT | HuggingFace |
-| silverdaw/mel-band-roformer-vocals-onnx | RoFormer (motor primario de Silverdaw) | 1 (vocals) | ONNX | no disponible en la información | HuggingFace |
-| silverdaw/bs-roformer-rhythm-onnx | RoFormer (motor primario de Silverdaw) | 1 (rhythm) | ONNX | no disponible en la información | HuggingFace |
+| Acapellas/htdemucs-ft-onnx (este) | Hybrid Transformer Demucs fine-tuned | 4 (vocals, drums, bass, other) | ONNX fp32 | MIT | Hugging Face (re-host) |
+| StemSplitio/htdemucs-ft-onnx | Mismo modelo, exportación original | 4 | ONNX fp32 | MIT | Hugging Face |
+| silverdaw/mel-band-roformer-vocals-onnx | RoFormer (motor primario de Silverdaw) | 1 (vocals) | ONNX | no disponible en la información | Hugging Face |
+| silverdaw/bs-roformer-rhythm-onnx | RoFormer (motor primario de Silverdaw) | 1 (rhythm) | ONNX | no disponible en la información | Hugging Face |
 
 Según la model card, el par RoFormer de Silverdaw ofrece mayor calidad que este modelo y se usa como motor primario; `htdemucs_ft` actúa como respaldo. No se dispone de métricas numéricas para cuantificar la diferencia.
 
@@ -82,7 +82,7 @@ Según la model card, el par RoFormer de Silverdaw ofrece mayor calidad que este
 
 ## Enlaces
 
-- HuggingFace (este repo): https://huggingface.co/Acapellas/htdemucs-ft-onnx
+- Hugging Face (este repo): https://huggingface.co/Acapellas/htdemucs-ft-onnx
 - Exportación original: https://huggingface.co/StemSplitio/htdemucs-ft-onnx
 - Repositorio de Demucs (Meta): https://github.com/facebookresearch/demucs
 - Paper: *Hybrid Transformers for Music Source Separation* — https://arxiv.org/abs/2211.08553

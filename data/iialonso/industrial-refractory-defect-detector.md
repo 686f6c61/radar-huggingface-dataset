@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Industrial Refractory Defect Detector es un modelo de vision por computador para clasificacion de imagenes, publicado por el autor iialonso (I. Alonso) en HuggingFace bajo licencia Apache 2.0. Su proposito es inspeccionar revestimientos refractarios de hornos de alta temperatura (hornos rotativos y de reverbero de fusion de aluminio, cucharas metalurgicas) y detectar cuatro estados concretos de la superficie: revestimiento nominal intacto, desprendimiento termico (thermal spalling), acumulacion de escoria y sales (dross/slag buildup) y riesgo de punto caliente con peligro de perforacion de la carcasa.
+Industrial Refractory Defect Detector es un modelo de vision por computador para clasificacion de imagenes, publicado por el autor iialonso (I. Alonso) en Hugging Face bajo licencia Apache 2.0. Su proposito es inspeccionar revestimientos refractarios de hornos de alta temperatura (hornos rotativos y de reverbero de fusion de aluminio, cucharas metalurgicas) y detectar cuatro estados concretos de la superficie: revestimiento nominal intacto, desprendimiento termico (thermal spalling), acumulacion de escoria y sales (dross/slag buildup) y riesgo de punto caliente con peligro de perforacion de la carcasa.
 
 El modelo se distribuye a traves de la libreria transformers y la tarea declarada es image-classification, con etiquetas en ingles y espanol en el repositorio. La model card describe un backbone Vision Transformer (ViT-Base-Patch16) o Swin Transformer con cabezas de proyeccion de parches ajustadas, entrada RGB o mapas radiometricos en falso color de 224x224x3, y despliegue objetivo en inferencia edge industrial (NVIDIA Jetson, Intel OpenVINO, ONNX Runtime). No se especifica el numero de parametros, el volumen de datos de entrenamiento ni el formato de pesos.
 
@@ -104,8 +104,8 @@ No se dispone de numeros comparables de rendimiento, coste computacional ni cobe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iialonso/industrial-refractory-defect-detector
-- Perfil del autor en HuggingFace: https://huggingface.co/iialonso
+- Modelo en Hugging Face: https://huggingface.co/iialonso/industrial-refractory-defect-detector
+- Perfil del autor en Hugging Face: https://huggingface.co/iialonso
 - Repositorio GitHub del autor: https://github.com/ioseba
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 - PyTorch: https://pytorch.org/

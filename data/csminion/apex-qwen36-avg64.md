@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| APEX Four-Expert AVG r64 | 84,6 M de adaptador sobre base 35B-A3B | 65.536 | Benchmarks pendientes | apache-2.0-adapter-contributions-plus-upstream-notices | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B totales (A3B) | No disponible en esta ficha | Referencia de origen | Segun el publicador del base | HuggingFace |
+| APEX Four-Expert AVG r64 | 84,6 M de adaptador sobre base 35B-A3B | 65.536 | Benchmarks pendientes | apache-2.0-adapter-contributions-plus-upstream-notices | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B totales (A3B) | No disponible en esta ficha | Referencia de origen | Segun el publicador del base | Hugging Face |
 | AVG-SVD-r16 (ablacion del mismo autor) | Adaptador r16 comprimido | 65.536 | Error Frobenius relativo 0,144715145 | Misma | Mencionado en la model card |
 | Otros merges LoRA de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/csminion/apex-qwen36-avg64
+- Modelo en Hugging Face: https://huggingface.co/csminion/apex-qwen36-avg64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/tree/995ad96eacd98c81ed38be0c5b274b04031597b0
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Otros enlaces (paper, blog, repositorio o demo): no disponibles en la informacion proporcionada.

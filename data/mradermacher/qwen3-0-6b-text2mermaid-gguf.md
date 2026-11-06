@@ -82,6 +82,6 @@ La comparación con alternativas de la misma categoría (otros modelos especiali
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-0.6B-text2mermaid-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-0.6B-text2mermaid-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/JeronimoMendes/Qwen3-0.6B-text2mermaid
 - Modelo original Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

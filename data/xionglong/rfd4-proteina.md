@@ -36,7 +36,7 @@ El bundle incluye tanto el modelo de flujo como el autoencoder, que deben usarse
 - Entrada mediante estructuras CIF anotadas o especificaciones de condiciones en YAML.
 - Salida de estructuras moleculares disenadas en formato CIF.
 - Ejemplos de aplicacion mostrados en el proyecto: complejos de nanobody, binders proteina-ADN, pseudoknots de ARN, bolsillos de ligando, complejos con glicanos y ensamblajes proteicos.
-- Soporte de inferencia en Spaces de HuggingFace (ZeroGPU y GPU dedicada).
+- Soporte de inferencia en Spaces de Hugging Face (ZeroGPU y GPU dedicada).
 - No se documenta soporte de tool calling, agentes, vision, audio ni modo thinking.
 
 ## Casos de uso
@@ -46,7 +46,7 @@ El bundle incluye tanto el modelo de flujo como el autoencoder, que deben usarse
 - Diseno de bolsillos para ligandos: dada la estructura de un ligando, el modelo genera un bolsillo proteico compatible, aplicable en descubrimiento de farmacos.
 - Diseno de acidos nucleicos: el autoencoder unificado permite generar estructuras de ARN y ADN, como pseudoknots o binders proteina-ADN.
 - Diseno de complejos con glicanos: el modelo puede generar estructuras que incorporan glicanos en el contexto del diseno.
-- Prototipado rapido en investigacion: el modelo puede ejecutarse en Spaces de HuggingFace (ZeroGPU o GPU dedicada) para explorar disenos sin infraestructura propia.
+- Prototipado rapido en investigacion: el modelo puede ejecutarse en Spaces de Hugging Face (ZeroGPU o GPU dedicada) para explorar disenos sin infraestructura propia.
 - Integracion en pipelines de diseno computacional: mediante el paquete Python RFD4 y el pipeline de Diffusers, los disenos pueden incorporarse a flujos automatizados de evaluacion y filtrado.
 
 ## Benchmarks y rendimiento
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma explicita; los pesos se almacenan en FP32 (435,6 M de parametros, `model.safetensors` de 1,74 GB), por lo que la huella de pesos en FP32 ronda los 1,7 GB, a lo que hay que sumar el autoencoder y las activaciones.
 - GPU recomendadas: GPU NVIDIA compatible con drivers CUDA 13; no se especifican modelos concretos en la informacion disponible.
 - Compatibilidad con GPU de consumo: no confirmada en la informacion proporcionada; el requisito declarado es una GPU NVIDIA soportada con CUDA 13.
-- Opciones de despliegue: paquete Python RFD4 nativo (`Proteina.from_pretrained`), pipeline de Diffusers (`RFD4ProteinaPipeline.from_pretrained`, Diffusers desde GitHub hasta la proxima release), Spaces de HuggingFace (ZeroGPU y GPU dedicada).
+- Opciones de despliegue: paquete Python RFD4 nativo (`Proteina.from_pretrained`), pipeline de Diffusers (`RFD4ProteinaPipeline.from_pretrained`, Diffusers desde GitHub hasta la proxima release), Spaces de Hugging Face (ZeroGPU y GPU dedicada).
 - Sistema operativo y runtime: Linux x86_64, Python 3.12.
 - Latencia y throughput: no disponibles.
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks ni co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xionglong/RFD4-Proteina
+- Modelo en Hugging Face: https://huggingface.co/Xionglong/RFD4-Proteina
 - Pagina del proyecto: https://rfd4-proteina.org/
 - Documentacion: https://rfd4-proteina.org/latest/
 - Codigo: https://github.com/RosettaCommons/RFD4-Proteina

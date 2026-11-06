@@ -4,7 +4,7 @@
 
 Qwen3-4B-Instruct-2507-abliterated es una variante del modelo Qwen/Qwen3-4B-Instruct-2507 a la que se le ha aplicado una tecnica de "abliteracion" (directional ablation) mediante la herramienta Heretic. El resultado es un modelo de 4.022.468.096 parametros (aproximadamente 4B) que mantiene la arquitectura, el tokenizador y los pesos en BF16 del original, pero con el comportamiento de rechazo eliminado mediante edicion directa de los pesos, sin reentrenamiento ni fine-tuning sobre datos nuevos.
 
-El modelo lo publica el usuario glivorem en HuggingFace bajo licencia Apache 2.0, heredada del modelo base, y esta orientado a generacion de texto conversacional. Al derivar del Qwen3-4B-Instruct-2507, conserva el contexto nativo de 262.000 tokens y la naturaleza de modelo "non-thinking" (sin modo de razonamiento extendido). Su relevancia radica en que ofrece el comportamiento de Qwen3-4B sin las capas de rechazo integradas, lo que puede interesar en entornos de investigacion o en aplicaciones donde las restricciones del modelo original resultan limitantes.
+El modelo lo publica el usuario glivorem en Hugging Face bajo licencia Apache 2.0, heredada del modelo base, y esta orientado a generacion de texto conversacional. Al derivar del Qwen3-4B-Instruct-2507, conserva el contexto nativo de 262.000 tokens y la naturaleza de modelo "non-thinking" (sin modo de razonamiento extendido). Su relevancia radica en que ofrece el comportamiento de Qwen3-4B sin las capas de rechazo integradas, lo que puede interesar en entornos de investigacion o en aplicaciones donde las restricciones del modelo original resultan limitantes.
 
 Es importante senalar que la model card no aporta datos de benchmarks ni detalles sobre el proceso de abliteracion mas alla de la referencia a Heretic. La unica modificacion documentada es la eliminacion del comportamiento de rechazo; el conocimiento y las capacidades generales se mantienen cercanos al modelo base, segun el propio autor.
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no puede rea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/glivorem/Qwen3-4B-Instruct-2507-abliterated
+- Hugging Face: https://huggingface.co/glivorem/Qwen3-4B-Instruct-2507-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
 - Herramienta Heretic: https://github.com/p-e-w/heretic

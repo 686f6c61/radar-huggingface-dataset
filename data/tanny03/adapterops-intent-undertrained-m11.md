@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tanny03/adapterops-intent-undertrained-m11` es un adaptador LoRA publicado en HuggingFace mediante la librería PEFT, entrenado sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No es un modelo completo: el repositorio (0,1 GB) contiene únicamente los pesos del adaptador en formato safetensors, por lo que su uso requiere cargar el modelo base por separado y aplicar el adaptador con `peft` o fusionarlo antes del despliegue. El autor es el usuario Tanny03 y la model card publicada es la plantilla por defecto de HuggingFace, sin ninguna sección completada.
+`Tanny03/adapterops-intent-undertrained-m11` es un adaptador LoRA publicado en Hugging Face mediante la librería PEFT, entrenado sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No es un modelo completo: el repositorio (0,1 GB) contiene únicamente los pesos del adaptador en formato safetensors, por lo que su uso requiere cargar el modelo base por separado y aplicar el adaptador con `peft` o fusionarlo antes del despliegue. El autor es el usuario Tanny03 y la model card publicada es la plantilla por defecto de Hugging Face, sin ninguna sección completada.
 
 La relevancia de esta ficha es limitada y conviene decirlo con claridad: el modelo acumula 0 descargas y 0 "likes", no declara licencia, no declara idiomas, no documenta datos de entrenamiento ni hiperparámetros, y no incluye resultados de evaluación. Tanto el identificador como la etiqueta de la serie sugieren una orientación a tareas de intención conversacional, pero esto es una inferencia a partir del nombre, no un dato confirmado por el autor en la información disponible.
 
@@ -31,7 +31,7 @@ El nombre `undertrained` ("poco entrenado") apunta a un experimento deliberadame
 
 La arquitectura efectiva es la del modelo base: un transformer decoder-only con normalización RMSNorm, activación SwiGLU, embeddings de entrada y salida atados, y atención con consultas agrupadas (GQA) de 12 cabezas de consulta y 2 cabezas de clave/valor. Sobre esa base se ha entrenado un adaptador de bajo rango (LoRA) que introduce matrices de descomposición de rango reducido en un subconjunto de capas, dejando congelados los pesos originales. El repositorio no especifica el rango (`r`), el valor de `alpha`, el dropout ni las capas objetivo (`target_modules`) del adaptador, datos imprescindibles para reproducir el entrenamiento.
 
-No hay información sobre el conjunto de datos, el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO posteriores, la precisión empleada (fp32, bf16, fp16) ni la duración del entrenamiento. La model card es la plantilla genérica de HuggingFace y deja todas esas secciones como "More Information Needed". El único indicio sobre el proceso es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono y que aparece en la plantilla por defecto, no porque el autor haya citado ese trabajo de forma deliberada. Tampoco se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, destilación u otras).
+No hay información sobre el conjunto de datos, el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO posteriores, la precisión empleada (fp32, bf16, fp16) ni la duración del entrenamiento. La model card es la plantilla genérica de Hugging Face y deja todas esas secciones como "More Information Needed". El único indicio sobre el proceso es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono y que aparece en la plantilla por defecto, no porque el autor haya citado ese trabajo de forma deliberada. Tampoco se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, destilación u otras).
 
 ## Capacidades
 
@@ -75,9 +75,9 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparativa s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Tanny03/adapterops-intent-undertrained-m11 | Adaptador LoRA sobre un base de ~1,54B | No disponible para el adaptador | No disponible | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | ~1,54B | 32.768 tokens (según documentación del base) | Apache 2.0 (según documentación del base) | HuggingFace, ampliamente utilizado | No disponible en la información proporcionada |
-| Cualquier otro adaptador LoRA sobre Qwen2.5-1.5B | Depende del rango del adaptador | Heredado del base | Depende del autor | HuggingFace | No disponible |
+| Tanny03/adapterops-intent-undertrained-m11 | Adaptador LoRA sobre un base de ~1,54B | No disponible para el adaptador | No disponible | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | ~1,54B | 32.768 tokens (según documentación del base) | Apache 2.0 (según documentación del base) | Hugging Face, ampliamente utilizado | No disponible en la información proporcionada |
+| Cualquier otro adaptador LoRA sobre Qwen2.5-1.5B | Depende del rango del adaptador | Heredado del base | Depende del autor | Hugging Face | No disponible |
 
 No se han identificado en la búsqueda web modelos comparables específicos de la misma serie (`adapterops`).
 
@@ -96,7 +96,7 @@ No se han identificado en la búsqueda web modelos comparables específicos de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tanny03/adapterops-intent-undertrained-m11
+- Modelo en Hugging Face: https://huggingface.co/Tanny03/adapterops-intent-undertrained-m11
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chatpig/cantonese-v1.1-dev` es un modelo publicado en HuggingFace por el usuario chatpig bajo licencia Apache 2.0. La etiqueta `qwen3_tts` indica que se trata de un modelo de texto a voz (TTS) derivado o construido sobre la familia Qwen3, orientado presumiblemente a la sintesis de voz en cantonés, como sugiere el nombre del repositorio. Es, por tanto, un modelo especializado en una tarea concreta (conversion de texto a audio) y no un modelo de lenguaje generativo de proposito general.
+`chatpig/cantonese-v1.1-dev` es un modelo publicado en Hugging Face por el usuario chatpig bajo licencia Apache 2.0. La etiqueta `qwen3_tts` indica que se trata de un modelo de texto a voz (TTS) derivado o construido sobre la familia Qwen3, orientado presumiblemente a la sintesis de voz en cantonés, como sugiere el nombre del repositorio. Es, por tanto, un modelo especializado en una tarea concreta (conversion de texto a audio) y no un modelo de lenguaje generativo de proposito general.
 
 La informacion publica disponible es extremadamente limitada: el repositorio no incluye pipeline declarado, no especifica idiomas soportados en los metadatos, no detalla arquitectura, tamano de parametros ni longitud de contexto, y la model card se reduce practicamente a la declaracion de licencia. El modelo registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y actualizacion son ambas del 2 de noviembre de 2026, lo que sugiere una publicacion reciente y sin validacion comunitaria.
 
@@ -23,7 +23,7 @@ Por su naturaleza (TTS) y su enfoque en una variante linguistica minoritaria com
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. La etiqueta `qwen3_tts` apunta a que el modelo parte de la familia Qwen3 y anade o adapta un cabezal de sintesis de voz, pero no se detalla si se trata de un modelo autoregresivo de audio, de un modelo de difusion para generacion de mel-espectrogramas, de un vocoder acoplado o de una arquitectura hibrida.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. La etiqueta `qwen3_tts` apunta a que el modelo parte de la familia Qwen3 y anade o adapta un cabezal de sintesis de voz, pero no se detalla si se trata de un modelo autoregresivo de audio, de un modelo de difusion para generacion de mel-espectrogramas, de un vocoder acoplado o de una arquitectura hibrida.
 
 Tampoco hay datos sobre el corpus de entrenamiento: numero de horas de audio, composicion del dataset, hablantes incluidos, calidad de las grabaciones ni si se aplicaron tecnicas de alineamiento, RLHF o ajuste fino supervisado. La ausencia de esta informacion impide evaluar la calidad, la cobertura de tonos del cantonés o la robustez frente a code-switching con mandarin o ingles.
 
@@ -77,4 +77,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chatpig/cantonese-v1.1-dev
+- Repositorio en Hugging Face: https://huggingface.co/chatpig/cantonese-v1.1-dev

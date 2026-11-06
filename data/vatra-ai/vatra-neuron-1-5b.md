@@ -94,6 +94,6 @@ No se dispone de comparaciones directas de rendimiento publicadas por el autor f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VATRA-AI/Vatra-Neuron-1.5B
-- Licencia (referenciada en la model card): archivo LICENSE dentro del repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/VATRA-AI/Vatra-Neuron-1.5B
+- Licencia (referenciada en la model card): archivo LICENSE dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

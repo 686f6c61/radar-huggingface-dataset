@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `christopherijohnson/homework-contrastive-learning` no es un modelo de lenguaje en el sentido habitual, sino un artefacto de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. Su propio README lo describe como «notas de lectura y esbozo de experimento» sobre aprendizaje contrastivo, con secciones explícitamente marcadas como planes o hipótesis que no deben interpretarse como resultados experimentales. El autor declara de forma explícita que no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
+El repositorio `christopherijohnson/homework-contrastive-learning` no es un modelo de lenguaje en el sentido habitual, sino un artefacto de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. Su propio README lo describe como «notas de lectura y esbozo de experimento» sobre aprendizaje contrastivo, con secciones explícitamente marcadas como planes o hipótesis que no deben interpretarse como resultados experimentales. El autor declara de forma explícita que no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
 
-El repositorio contiene únicamente dos ficheros declarados: `reading.md` (artefacto principal) y `README.md`. No se documenta arquitectura, tokenizador, configuración de entrenamiento ni idiomas soportados. Los metadatos de HuggingFace incluyen la etiqueta `transformer` y un fichero en formato `safetensors` con 24.832 parámetros totales, pero no hay `config.json` ni ningún otro fichero que permita confirmar qué representa ese tensor.
+El repositorio contiene únicamente dos ficheros declarados: `reading.md` (artefacto principal) y `README.md`. No se documenta arquitectura, tokenizador, configuración de entrenamiento ni idiomas soportados. Los metadatos de Hugging Face incluyen la etiqueta `transformer` y un fichero en formato `safetensors` con 24.832 parámetros totales, pero no hay `config.json` ni ningún otro fichero que permita confirmar qué representa ese tensor.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de buenas prácticas (confounders, comparación con baselines emparejados, verificación de reproducibilidad) y como punto de partida bibliográfico, no como componente desplegable en producción. El repositorio acumula 0 descargas y 0 likes, con un tamaño de 0,0 GB, y fue creado y actualizado el 15 de septiembre de 2026.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de HuggingFace indica `transformer`, pero el repositorio no publica `config.json` ni descripción de arquitectura que lo confirme |
+| Arquitectura | No disponible. La etiqueta de Hugging Face indica `transformer`, pero el repositorio no publica `config.json` ni descripción de arquitectura que lo confirme |
 | Parámetros totales | 24.832 (dato declarado en safetensors; se interpreta el separador como miles, es decir, ~2,5 × 10^4 parámetros, no miles de millones) |
 | Parámetros activos | No aplica: no hay evidencia de que sea un modelo MoE |
 | Longitud de contexto | No disponible |
@@ -71,7 +71,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 | Longitud de contexto | No disponible | No disponible |
 | Rendimiento | Sin benchmarks publicados | No disponible |
 | Licencia | MIT | No disponible |
-| Disponibilidad | HuggingFace, 0 descargas | No disponible |
+| Disponibilidad | Hugging Face, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christopherijohnson/homework-contrastive-learning
+- Modelo en Hugging Face: https://huggingface.co/christopherijohnson/homework-contrastive-learning
 - Repositorio de modelos del autor: https://huggingface.co/christopherijohnson
 - Paper, blog, repositorio de código o demo: no disponible (no se han encontrado enlaces de este tipo en la información proporcionada)
 - Resultados de la búsqueda web: sin enlaces relevantes; los únicos resultados devueltos apuntan a `lenouvelliste.ch` y a sus ediciones digitales, un medio de prensa sin relación con el modelo

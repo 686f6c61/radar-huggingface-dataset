@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sheratutor qwen2.5-7b es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct en su versión cuantizada a 4 bits de Unsloth, publicado por el usuario syed181 en HuggingFace. Se trata de un modelo denso de tipo decoder-only, con 7.615.616.512 parámetros (unos 7,62 mil millones) y un repositorio de 15,2 GB en formato safetensors, lo que sugiere pesos almacenados en precisión de 16 bits. La model card no aporta detalles sobre el conjunto de datos de entrenamiento ni sobre la tarea concreta para la que fue ajustado; el único dato técnico relevante es que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, con una aceleración declarada de 2x respecto a un entrenamiento convencional.
+Sheratutor qwen2.5-7b es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct en su versión cuantizada a 4 bits de Unsloth, publicado por el usuario syed181 en Hugging Face. Se trata de un modelo denso de tipo decoder-only, con 7.615.616.512 parámetros (unos 7,62 mil millones) y un repositorio de 15,2 GB en formato safetensors, lo que sugiere pesos almacenados en precisión de 16 bits. La model card no aporta detalles sobre el conjunto de datos de entrenamiento ni sobre la tarea concreta para la que fue ajustado; el único dato técnico relevante es que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, con una aceleración declarada de 2x respecto a un entrenamiento convencional.
 
 El modelo hereda las capacidades del Qwen2.5-7B-Instruct original: arquitectura transformer densa, decodificación autorregresiva, codificación posicional rotatoria (RoPE) y atención por trozos dual (Dual Chunk Attention) para sostener contextos largos. Según la documentación pública de Qwen2.5, la familia se preentrenó sobre hasta 18 billones de tokens y cubre más de 29 idiomas, aunque la model card de este fine-tune declara únicamente inglés como idioma soportado.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sheratutor-qwen2.5-7b (syed181) | 7,62B | 128K (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin dataset ni benchmarks documentados |
-| Qwen2.5-7B-Instruct (Qwen) | 7,62B | 128K | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, con documentación y evaluación completas |
-| Mistral-7B-Instruct | 7,24B | 32K | Apache 2.0 | HuggingFace | Alternativa densa de tamaño similar; contexto menor |
-| Llama-3.1-8B-Instruct | 8,03B | 128K | Licencia comunitaria de Meta (no Apache) | HuggingFace | Contexto comparable, licencia con restricciones adicionales |
+| sheratutor-qwen2.5-7b (syed181) | 7,62B | 128K (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin dataset ni benchmarks documentados |
+| Qwen2.5-7B-Instruct (Qwen) | 7,62B | 128K | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, con documentación y evaluación completas |
+| Mistral-7B-Instruct | 7,24B | 32K | Apache 2.0 | Hugging Face | Alternativa densa de tamaño similar; contexto menor |
+| Llama-3.1-8B-Instruct | 8,03B | 128K | Licencia comunitaria de Meta (no Apache) | Hugging Face | Contexto comparable, licencia con restricciones adicionales |
 
 Los datos de parámetros y contexto de los modelos comparables provienen de su documentación pública; no se dispone de comparaciones de rendimiento medidas entre este fine-tune y las alternativas.
 
@@ -87,7 +87,7 @@ Los datos de parámetros y contexto de los modelos comparables provienen de su d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syed181/sheratutor-qwen2.5-7b
+- Modelo en Hugging Face: https://huggingface.co/syed181/sheratutor-qwen2.5-7b
 - Modelo base del ajuste (Unsloth): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Qwen2.5-7B (modelo base original): https://huggingface.co/Qwen/Qwen2.5-7B
 - Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

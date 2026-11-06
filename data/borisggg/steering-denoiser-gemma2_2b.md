@@ -73,5 +73,5 @@ No disponible. No se han publicado comparativas con otros denoisers de activacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/borisggg/steering-denoiser-gemma2_2b
+- Hugging Face: https://huggingface.co/borisggg/steering-denoiser-gemma2_2b
 - Repositorio y reporte completo: https://github.com/bborisggg/steering-denoiser

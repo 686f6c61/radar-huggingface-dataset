@@ -76,10 +76,10 @@ No se han publicado en la información disponible resultados desglosados por ben
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Holo4-35B-A3B | 35,1 B totales, ~3 B activos (MoE) | 262.144 tokens | VLM para computer use y agentes | Apache 2.0 | Pesos abiertos en HuggingFace (BF16, FP8, NVFP4, GGUF Q4) y API de H Models |
+| Holo4-35B-A3B | 35,1 B totales, ~3 B activos (MoE) | 262.144 tokens | VLM para computer use y agentes | Apache 2.0 | Pesos abiertos en Hugging Face (BF16, FP8, NVFP4, GGUF Q4) y API de H Models |
 | Holo4-27B | 27 B denso | 262.144 tokens (familia Holo4) | VLM para computer use y agentes | Apache 2.0 | Pesos abiertos (BF16, FP8, NVFP4, GGUF Q4) y API |
-| Qwen3.6-35B-A3B | 35 B totales, ~3 B activos (MoE) | no disponible | Modelo base multimodal de propósito general | Según licencia del modelo base (no disponible en esta ficha) | Pesos abiertos en HuggingFace |
-| Qwen3.8 27B | 27 B denso | no disponible | Modelo base multimodal de propósito general | Según licencia del modelo base (no disponible en esta ficha) | Pesos abiertos en HuggingFace |
+| Qwen3.6-35B-A3B | 35 B totales, ~3 B activos (MoE) | no disponible | Modelo base multimodal de propósito general | Según licencia del modelo base (no disponible en esta ficha) | Pesos abiertos en Hugging Face |
+| Qwen3.8 27B | 27 B denso | no disponible | Modelo base multimodal de propósito general | Según licencia del modelo base (no disponible en esta ficha) | Pesos abiertos en Hugging Face |
 | Holotron4-30B-A3B | 30 B totales, ~3 B activos (MoE) | no disponible | Arquitectura NemotronH Nano Omni, familia Holo4 | no disponible | Pesos abiertos (BF16, FP8) |
 
 El autor sitúa a Holo4 por encima de sus respectivos modelos base Qwen en las evaluaciones realizadas, pero los valores numéricos de esa comparación no están incluidos en la información disponible.
@@ -98,7 +98,7 @@ El autor sitúa a Holo4 por encima de sus respectivos modelos base Qwen en las e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hcompany/Holo4-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/Hcompany/Holo4-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Variante FP8: https://huggingface.co/Hcompany/Holo4-35B-A3B-FP8
 - Variante NVFP4: https://huggingface.co/Hcompany/Holo4-35B-A3B-NVFP4
@@ -106,7 +106,7 @@ El autor sitúa a Holo4 por encima de sus respectivos modelos base Qwen en las e
 - Modelo hermano Holo4-27B (BF16): https://huggingface.co/Hcompany/Holo4-27B
 - Holotron4-30B-A3B: https://huggingface.co/Hcompany/Holotron4-30B-A3B
 - Blog de H Company sobre Holo4: https://hcompany.ai/newsroom/holo4
-- Blog en HuggingFace: https://huggingface.co/blog/Hcompany/holo4
+- Blog en Hugging Face: https://huggingface.co/blog/Hcompany/holo4
 - Harness hai-agents: https://github.com/hcompai/hai-agents-python
 - API de modelos (H Models API): https://hub.hcompany.ai/models-api/introduction
 - Documentación sobre function calling: https://hub.hcompany.ai/models-api/build-an-agent/function-calling

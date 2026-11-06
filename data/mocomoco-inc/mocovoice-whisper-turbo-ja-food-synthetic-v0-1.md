@@ -93,7 +93,7 @@ No se dispone de comparativas con otros modelos ASR japoneses en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-food-synthetic-v0.1
+- Repositorio Hugging Face: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-food-synthetic-v0.1
 - Pagina de producto mocoVoice (ingles): https://products.mocomoco.ai/en/
 - Pagina corporativa de mocomoco inc. (ingles): https://www.mocomoco.ai/en/
-- Space de referencia Whisper Turbo de HuggingFace: https://huggingface.co/spaces/hf-audio/whisper-large-v3-turbo
+- Space de referencia Whisper Turbo de Hugging Face: https://huggingface.co/spaces/hf-audio/whisper-large-v3-turbo

@@ -77,6 +77,6 @@ La comparativa se basa en el modelo base y en alternativas conocidas del campo. 
 
 ## Enlaces
 
-- [HuggingFace - Sereno/TCoT-Multi](https://huggingface.co/Sereno/TCoT-Multi)
+- [Hugging Face - Sereno/TCoT-Multi](https://huggingface.co/Sereno/TCoT-Multi)
 - [Repositorio TCoT](https://github.com/Serenos/TCoT) (referenciado en la model card)
 - [Modelo base OpenVLA-7B](https://huggingface.co/openvla/openvla-7b) (enlace inferido, no verificado en la información proporcionada)

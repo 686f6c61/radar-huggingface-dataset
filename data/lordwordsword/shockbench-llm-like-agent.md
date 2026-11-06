@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ShockBench-Flow LLM-like agent (Small) es una política encoder-decoder de 21 millones de parámetros publicada por el usuario lordwordsword en HuggingFace, diseñada para la tarea de control de redes de suministro del entorno ShockBench-Flow. No es un modelo de lenguaje: es un agente de decisión que adopta la mecánica de un LLM (tokenización semanal, memoria de historial completo, cross-attention de las consultas de acción y refinamiento iterativo en varias pasadas) para decidir cada semana cuánto enviar de cada bien por cada ruta de una red logística simulada. Los bienes modelados son GNL, crudo, combustible nuclear, obleas y chips; la red incluye redes eléctricas, fábricas, terminales y puntos de estrangulamiento.
+ShockBench-Flow LLM-like agent (Small) es una política encoder-decoder de 21 millones de parámetros publicada por el usuario lordwordsword en Hugging Face, diseñada para la tarea de control de redes de suministro del entorno ShockBench-Flow. No es un modelo de lenguaje: es un agente de decisión que adopta la mecánica de un LLM (tokenización semanal, memoria de historial completo, cross-attention de las consultas de acción y refinamiento iterativo en varias pasadas) para decidir cada semana cuánto enviar de cada bien por cada ruta de una red logística simulada. Los bienes modelados son GNL, crudo, combustible nuclear, obleas y chips; la red incluye redes eléctricas, fábricas, terminales y puntos de estrangulamiento.
 
 El problema que resuelve es la asignación semanal de flujos bajo disrupciones exógenas (cierres de estrechos, sanciones, saltos arancelarios, paradas de fábrica) observadas solo a través de avisos y anuncios ruidosos. La relevancia técnica está en su método de entrenamiento: en lugar de un LLM preentrenado, el grueso de la calidad proviene de entrenar directamente contra el objetivo de la tarea, con gradientes que atraviesan un port diferenciable del simulador y una pérdida de 1 − RSS sobre episodios completos de 52 semanas.
 
@@ -77,7 +77,7 @@ Referencias adicionales reportadas: el oráculo clarividente alcanza 0,915 en lo
 
 | Modelo | Tipo | Parámetros | Contexto | RSS (4242 / 9001) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ShockBench-LLM-like agent (Small) | Encoder-decoder con MoE en cabezas, entrenado con simulador diferenciable | 21 M | 52 semanas de episodio, memoria de historial completo | 0,8655 / 0,8798 | MIT | Pública en HuggingFace |
+| ShockBench-LLM-like agent (Small) | Encoder-decoder con MoE en cabezas, entrenado con simulador diferenciable | 21 M | 52 semanas de episodio, memoria de historial completo | 0,8655 / 0,8798 | MIT | Pública en Hugging Face |
 | Mejor agente conocido (anónimo) | Caja negra, no descrito | No disponible | No disponible | 0,8636 / 0,8793 | No disponible | No pública |
 | Primer MoE del autor (misma familia) | Mezcla de expertos | No disponible | No disponible | 0,8509 / 0,8660 | No disponible en la información consultada | No indicada |
 | `fastlp_v4` | Agente de programación lineal | No disponible (no es una red neuronal) | No disponible | 0,7919 / 0,8130 | No disponible en la información consultada | No indicada |
@@ -101,5 +101,5 @@ No se dispone de comparación con modelos de la misma categoría fuera de la fam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lordwordsword/shockbench-llm-like-agent
+- Modelo en Hugging Face: https://huggingface.co/lordwordsword/shockbench-llm-like-agent
 - No se han identificado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo y se han descartado.

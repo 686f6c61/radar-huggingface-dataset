@@ -2,7 +2,7 @@
 
 ## Resumen
 
-T8 Comic Combat Semantic Bridge es un peso de adaptacion de condicionamiento textual (semantic bridge) desarrollado por el usuario t8star para el modelo de generacion de video MiniMax H3, orientado especificamente a escenas de combate con estetica anime/manga. No se trata de un modelo autonomo ni de un LoRA de video: es un adaptador que se inserta entre el codificador de texto de H3 y el muestreador de video, actuando sobre el tensor de CONDITIONING para modular como se interpreta el prompt en escenas de accion. El repositorio de HuggingFace ocupa 0.0 GB y contiene un unico archivo safetensors de aproximadamente 16,8 MB.
+T8 Comic Combat Semantic Bridge es un peso de adaptacion de condicionamiento textual (semantic bridge) desarrollado por el usuario t8star para el modelo de generacion de video MiniMax H3, orientado especificamente a escenas de combate con estetica anime/manga. No se trata de un modelo autonomo ni de un LoRA de video: es un adaptador que se inserta entre el codificador de texto de H3 y el muestreador de video, actuando sobre el tensor de CONDITIONING para modular como se interpreta el prompt en escenas de accion. El repositorio de Hugging Face ocupa 0.0 GB y contiene un unico archivo safetensors de aproximadamente 16,8 MB.
 
 La relevancia de esta publicacion es acotada y muy especifica: es un experimento de investigacion aplicada sobre control semantico de prompts de video, no un modelo de proposito general. El autor documenta observaciones cualitativas de comparaciones A/B (con y sin bridge, mismo prompt, semilla y ajustes de muestreo) en las que algunas escenas de accion continua mostraron una ejecucion semantica local mejorada, aunque sin garantias de mejora consistente. Su utilidad practica esta ligada al ecosistema ComfyUI y a un nodo concreto de terceros, y su licencia Apache 2.0 facilita la experimentacion.
 
@@ -88,7 +88,7 @@ No disponible. No se han identificado en la informacion proporcionada otros adap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/t8star/semantic_bridge_T8-comic-combat
+- Modelo en Hugging Face: https://huggingface.co/t8star/semantic_bridge_T8-comic-combat
 - Archivo de pesos: https://huggingface.co/t8star/semantic_bridge_T8-comic-combat/blob/main/semantic_bridge_T8_comic_combat.safetensors
 - Nodo ComfyUI-H3-WushuBridge: https://github.com/Jojocodex-dotcom/ComfyUI-H3-WushuBridge
 - MiniMax H3: no disponible (no se proporciona enlace en la informacion recibida)

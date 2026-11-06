@@ -6,7 +6,7 @@
 
 El modelo resuelve el problema de extracción de información estructurada a partir de texto no estructurado, una tarea fundamental en procesamiento de lenguaje natural. Su relevancia radica en que ofrece un rendimiento sólido en NER con una arquitectura probada y una licencia Apache-2.0 que permite uso comercial sin restricciones significativas. Con aproximadamente 107,7 millones de parámetros, es un modelo de tamaño moderado que puede ejecutarse en hardware de consumo.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace, que incluye métricas de validación sobre CoNLL-2003 y los hiperparámetros de entrenamiento. No se dispone de información sobre el contexto máximo, idiomas soportados o detalles adicionales de la arquitectura más allá de los derivados de BERT.
+La ficha se basa exclusivamente en la información publicada en Hugging Face, que incluye métricas de validación sobre CoNLL-2003 y los hiperparámetros de entrenamiento. No se dispone de información sobre el contexto máximo, idiomas soportados o detalles adicionales de la arquitectura más allá de los derivados de BERT.
 
 ## Especificaciones tecnicas
 
@@ -25,15 +25,15 @@ La ficha se basa exclusivamente en la información publicada en HuggingFace, que
 
 El modelo se basa en la arquitectura BERT (Bidirectional Encoder Representations from Transformers), un encoder Transformer de 12 capas con atención bidireccional. Sobre esta base, se añade una cabeza de clasificación de tokens que asigna una etiqueta NER a cada token de la secuencia de entrada. El modelo base es `bert-base-cased`, que distingue entre mayúsculas y minúsculas, un factor relevante para el reconocimiento de entidades en inglés.
 
-El entrenamiento se realizó sobre el dataset CoNLL-2003, un estándar de referencia para NER en inglés con etiquetas para personas (PER), organizaciones (ORG), ubicaciones (LOC) y miscelánea (MISC). Se utilizó el Trainer de HuggingFace con los siguientes hiperparámetros: learning rate de 2e-05, batch size de 8, optimizador Adam (betas 0.9 y 0.999, epsilon 1e-08), scheduler lineal y 3 épocas. El proceso fue un fine-tuning supervisado estándar, sin técnicas como RLHF o DPO. No se documentan innovaciones técnicas adicionales más allá del ajuste del modelo base.
+El entrenamiento se realizó sobre el dataset CoNLL-2003, un estándar de referencia para NER en inglés con etiquetas para personas (PER), organizaciones (ORG), ubicaciones (LOC) y miscelánea (MISC). Se utilizó el Trainer de Hugging Face con los siguientes hiperparámetros: learning rate de 2e-05, batch size de 8, optimizador Adam (betas 0.9 y 0.999, epsilon 1e-08), scheduler lineal y 3 épocas. El proceso fue un fine-tuning supervisado estándar, sin técnicas como RLHF o DPO. No se documentan innovaciones técnicas adicionales más allá del ajuste del modelo base.
 
 ## Capacidades
 
 - Reconocimiento de entidades nombradas: identifica personas, organizaciones, ubicaciones y miscelánea en texto en inglés.
 - Clasificación de tokens: asigna una etiqueta BIO (Begin, Inside, Outside) a cada token de la secuencia.
 - Procesamiento de texto en inglés: entrenado específicamente sobre el corpus CoNLL-2003, que contiene texto periodístico en inglés.
-- Integración con pipelines de HuggingFace: compatible con la pipeline de `token-classification` de Transformers.
-- Inferencia en endpoints: el modelo es compatible con Inference Endpoints de HuggingFace.
+- Integración con pipelines de Hugging Face: compatible con la pipeline de `token-classification` de Transformers.
+- Inferencia en endpoints: el modelo es compatible con Inference Endpoints de Hugging Face.
 - Sin capacidades de generación de texto, tool calling, agentes, visión o audio: es un modelo exclusivamente discriminativo para NER.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ La evolución durante el entrenamiento muestra una mejora progresiva: el F1 pas�
 - VRAM estimada para inferencia: aproximadamente 1-2 GB en FP32 para un batch de 1, dado el tamaño de 107,7 millones de parámetros. Con cuantización a int8, podría reducirse a menos de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Modelos como NVIDIA T4, GTX 1660, RTX 2060 o superiores funcionan sin problemas. También es viable en CPU para inferencia en lote con latencia aceptable.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU consumer moderna, incluidas las integradas de gama alta.
-- Opciones de despliegue: Transformers de HuggingFace, ONNX Runtime, TensorFlow Serving, TorchServe, y cualquier framework compatible con safetensors. También es compatible con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: Transformers de Hugging Face, ONNX Runtime, TensorFlow Serving, TorchServe, y cualquier framework compatible con safetensors. También es compatible con Inference Endpoints de Hugging Face.
 - Latencia estimada: en una GPU T4, la inferencia sobre una secuencia de 128 tokens debería completarse en decenas de milisegundos. En CPU, la latencia puede ser de 100-500 ms por secuencia, dependiendo del hardware.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ La comparativa con `dslim/bert-base-NER` es orientativa, ya que no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SalvadorDiaz/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/SalvadorDiaz/bert-finetuned-ner
 - Perfil del autor: https://huggingface.co/SalvadorDiaz
 - Modelo base: https://huggingface.co/bert-base-cased
 - Dataset CoNLL-2003: https://huggingface.co/datasets/conll2003

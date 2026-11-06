@@ -97,7 +97,7 @@ La comparación directa con `mlx-community/nemotron-3.5-asr-streaming-0.6b-8bit`
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-bf16
+- Hugging Face (esta conversión): https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-bf16
 - Variante 8-bit: https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-8bit
 - Variante 4-bit: https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-4bit
 - Modelo base NVIDIA: https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b

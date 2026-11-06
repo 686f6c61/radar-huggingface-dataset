@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA NemotronLabs RE-USE WebGPU (este) | 9,6 M | Mejora de voz (denoising, dereverberacion, declipping, bandwidth) | Espectrogramas de audio; en, ja | OpenMDW-1.1 | HuggingFace, demo web |
-| nvidia/NVIDIA-NemotronLabs-RE-USE (base) | 9,6 M | Mejora de voz | Espectrogramas de audio | OpenMDW-1.1 | HuggingFace |
+| NVIDIA NemotronLabs RE-USE WebGPU (este) | 9,6 M | Mejora de voz (denoising, dereverberacion, declipping, bandwidth) | Espectrogramas de audio; en, ja | OpenMDW-1.1 | Hugging Face, demo web |
+| nvidia/NVIDIA-NemotronLabs-RE-USE (base) | 9,6 M | Mejora de voz | Espectrogramas de audio | OpenMDW-1.1 | Hugging Face |
 | Runtimes genericos de navegador (onnxruntime-web, transformers.js) | no aplica | Ejecucion de modelos en navegador | no aplica | segun runtime | npm / CDN |
 
 La comparacion con alternativas de la misma categoria (otros modelos de mejora de voz como Demucs, FRCRN o DeepFilterNet) no esta disponible en la informacion proporcionada; no se aportan datos de rendimiento ni de parametros de esos modelos.
@@ -88,7 +88,7 @@ La comparacion con alternativas de la misma categoria (otros modelos de mejora d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cdismus4/NVIDIA-NemotronLabs-RE-USE-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/cdismus4/NVIDIA-NemotronLabs-RE-USE-WebGPU
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE
 - Demo interactiva (PC y movil WebGPU): https://daw.voivent.com/lab/reuse
 - Integracion en produccion (Voivent DAW Satellite): https://daw.voivent.com/satellite

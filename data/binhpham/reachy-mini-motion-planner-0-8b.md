@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reachy-mini-motion-planner-0.8b | ~0.8B | no disponible | Nivel `low`; ~0,18 s mediana por prompt; mejor en movimientos de una sola fase | apache-2.0 | HuggingFace (binhpham) |
-| reachy-mini-motion-planner-4b | 4B | no disponible | Nivel `medium`; LoRA r=32 sobre todas las capas lineales | apache-2.0 | HuggingFace (binhpham) |
-| reachy-mini-motion-planner-27b | 27B | no disponible | Nivel `high`; el más capaz de la familia | apache-2.0 | HuggingFace (binhpham) |
+| reachy-mini-motion-planner-0.8b | ~0.8B | no disponible | Nivel `low`; ~0,18 s mediana por prompt; mejor en movimientos de una sola fase | apache-2.0 | Hugging Face (binhpham) |
+| reachy-mini-motion-planner-4b | 4B | no disponible | Nivel `medium`; LoRA r=32 sobre todas las capas lineales | apache-2.0 | Hugging Face (binhpham) |
+| reachy-mini-motion-planner-27b | 27B | no disponible | Nivel `high`; el más capaz de la familia | apache-2.0 | Hugging Face (binhpham) |
 
 Los tres modelos pertenecen a la misma familia, comparten el generador de flow-matching y el dataset de entrenamiento, y se pueden servir en un mismo proceso seleccionando el nivel con el parámetro `effort`. No se proporcionan comparativas con modelos externos de la misma categoría.
 
@@ -92,7 +92,7 @@ Los tres modelos pertenecen a la misma familia, comparten el generador de flow-m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/binhpham/reachy-mini-motion-planner-0.8b
+- Modelo en Hugging Face: https://huggingface.co/binhpham/reachy-mini-motion-planner-0.8b
 - Variante 4B: https://huggingface.co/binhpham/reachy-mini-motion-planner-4b
 - Dataset de entrenamiento: https://huggingface.co/datasets/binhpham/reachy-mini-massive-motion-library
 - Demo en el navegador: https://huggingface.co/spaces/binhpham/reachy-mini-motion-generator

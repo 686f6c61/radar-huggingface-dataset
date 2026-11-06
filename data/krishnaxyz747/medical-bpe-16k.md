@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`krishnaxyz747/medical-bpe-16k` es un artefacto publicado en HuggingFace por el usuario krishnaxyz747 cuyo nombre sugiere un tokenizador basado en BPE (Byte Pair Encoding) con un vocabulario de aproximadamente 16 000 tokens, orientado al dominio medico. Es importante subrayar que, por el identificador del repositorio y la ausencia de pesos neuronales declarados, se trata con alta probabilidad de un componente de tokenizacion (vocabulario y reglas de fusion) y no de un modelo de lenguaje completo; esta interpretacion no esta confirmada por ninguna documentacion oficial.
+`krishnaxyz747/medical-bpe-16k` es un artefacto publicado en Hugging Face por el usuario krishnaxyz747 cuyo nombre sugiere un tokenizador basado en BPE (Byte Pair Encoding) con un vocabulario de aproximadamente 16 000 tokens, orientado al dominio medico. Es importante subrayar que, por el identificador del repositorio y la ausencia de pesos neuronales declarados, se trata con alta probabilidad de un componente de tokenizacion (vocabulario y reglas de fusion) y no de un modelo de lenguaje completo; esta interpretacion no esta confirmada por ninguna documentacion oficial.
 
 El repositorio no incluye tarjeta de modelo, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion. Las unicas metricas publicas disponibles en el momento de redactar esta ficha son 0 descargas y 1 like, con fecha de creacion y actualizacion del 12 de septiembre de 2026, lo que indica un artefacto practicamente sin adopcion ni validacion por parte de la comunidad.
 
@@ -19,7 +19,7 @@ Su relevancia potencial, por tanto, es limitada y condicional: un tokenizador es
 | Tipos de cuantizacion | No aplica / no disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | No disponible. Cabe esperar `tokenizer.json`, `vocab.json` y `merges.txt` si se confirma que es un tokenizador BPE de HuggingFace, pero no esta verificado |
+| Formato de pesos | No disponible. Cabe esperar `tokenizer.json`, `vocab.json` y `merges.txt` si se confirma que es un tokenizador BPE de Hugging Face, pero no esta verificado |
 
 ## Arquitectura y entrenamiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM para inferencia: no aplica si se confirma que es un tokenizador. La carga de un vocabulario de 16 000 entradas y sus reglas de fusion ocupa del orden de unos pocos megabytes en memoria.
 - GPU recomendadas: ninguna en particular. La tokenizacion se ejecuta en CPU; el uso de GPU solo tendria sentido si el tokenizador se integra en un pipeline con un modelo neuronal, cuyo requisito de VRAM dependera de ese modelo y no de este artefacto.
 - Compatibilidad con GPU de consumo: irrelevante para el tokenizador en si. Cualquier GPU de consumo seria suficiente si se usa junto a un modelo pequeno.
-- Opciones de despliegue: potencialmente compatible con las librerias `tokenizers` y `transformers` de HuggingFace, y con los preprocesadores de llama.cpp, Ollama, vLLM o TGI si el formato de ficheros es el estandar. No verificado.
+- Opciones de despliegue: potencialmente compatible con las librerias `tokenizers` y `transformers` de Hugging Face, y con los preprocesadores de llama.cpp, Ollama, vLLM o TGI si el formato de ficheros es el estandar. No verificado.
 - Latencia y throughput estimados: no disponibles. Para un tokenizador BPE de este tamano, la latencia por documento suele ser del orden de microsegundos a milisegundos por cada 1 000 caracteres, pero no hay mediciones publicadas para este repositorio concreto.
 
 ## Comparativa con modelos similares
@@ -84,11 +84,11 @@ Los datos de las filas de referencia corresponden a informacion publica de esos 
 - Idiomas no declarados: se desconoce si el vocabulario cubre adecuadamente el castellano clinico o esta sesgado al ingles.
 - Sin validacion externa: 0 descargas y 1 like indican que practicamente nadie lo ha utilizado ni auditado.
 - No apto para diagnostico ni decision clinica: incluso si funciona como tokenizador, no es un sistema de apoyo a la decision y no debe presentarse como tal.
-- Compatibilidad incierta: si los ficheros no siguen el formato estandar de HuggingFace, la carga con `AutoTokenizer` podria fallar.
+- Compatibilidad incierta: si los ficheros no siguen el formato estandar de Hugging Face, la carga con `AutoTokenizer` podria fallar.
 - Fecha de creacion atipica (12 de septiembre de 2026): conviene verificar la autenticidad y procedencia del repositorio antes de integrarlo en cualquier pipeline.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krishnaxyz747/medical-bpe-16k
+- Repositorio en Hugging Face: https://huggingface.co/krishnaxyz747/medical-bpe-16k
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este repositorio, su autor ni el dominio del artefacto. Los enlaces recuperados correspondian a paginas corporativas de Microsoft y no guardan relacion con el modelo, por lo que se omiten. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados.

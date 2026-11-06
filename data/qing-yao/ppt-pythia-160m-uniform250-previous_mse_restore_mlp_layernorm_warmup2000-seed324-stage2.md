@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2000-seed324-stage2` es un ajuste fino de 162.322.944 parámetros construido sobre la familia Pythia de EleutherAI, concretamente sobre el checkpoint intermedio `qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1`. Lo publica el usuario qing-yao en HuggingFace y pertenece a una serie de variantes experimentales (con nombres como `baseline`, `current_mse`, `previous_mse` o `reuse_previous_mse`) que parecen corresponder a ablaciones sobre el mismo esquema de entrenamiento con la semilla 324 y una configuración de warmup de 2000 pasos.
+El modelo `qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2000-seed324-stage2` es un ajuste fino de 162.322.944 parámetros construido sobre la familia Pythia de EleutherAI, concretamente sobre el checkpoint intermedio `qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1`. Lo publica el usuario qing-yao en Hugging Face y pertenece a una serie de variantes experimentales (con nombres como `baseline`, `current_mse`, `previous_mse` o `reuse_previous_mse`) que parecen corresponder a ablaciones sobre el mismo esquema de entrenamiento con la semilla 324 y una configuración de warmup de 2000 pasos.
 
 Se trata de un transformer denso de tipo GPTNeoX, con 160 millones de parámetros, entrenado con la librería `transformers` y guardado en formato safetensors. No es un modelo instructivo ni alineado: la model card se generó automáticamente con el `Trainer`, no declara dataset de entrenamiento ("None dataset"), no aporta descripción de uso previsto y no publica ningún resultado de benchmarks, por lo que su interés es fundamentalmente de investigación y reproducción de experimentos, no de producción.
 
@@ -82,11 +82,11 @@ El unico dato cuantitativo declarado es la perdida de evaluacion final: 3,7972. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qing-yao/ppt-pythia-160m-...-stage2 (este modelo) | 162.322.944 | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Ajuste experimental sin benchmarks ni documentacion |
-| EleutherAI/pythia-160m | 162 millones aprox. | 2048 tokens | apache-2.0 | HuggingFace, ampliamente utilizado | Modelo base original, con 154 checkpoints publicados y documentacion completa |
-| EleutherAI/pythia-160m-deduped | 162 millones aprox. | 2048 tokens | apache-2.0 | HuggingFace | Variante entrenada sobre The Pile deduplicado |
-| GPT-2 (124M) | 124 millones | 1024 tokens | modificada (MIT-like) | HuggingFace, universal | Referencia historica, contexto mas corto |
-| OPT-125M | 125 millones | 2048 tokens | apache-2.0 | HuggingFace | Alternativa de Meta con licencia permisiva |
+| qing-yao/ppt-pythia-160m-...-stage2 (este modelo) | 162.322.944 | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Ajuste experimental sin benchmarks ni documentacion |
+| EleutherAI/pythia-160m | 162 millones aprox. | 2048 tokens | apache-2.0 | Hugging Face, ampliamente utilizado | Modelo base original, con 154 checkpoints publicados y documentacion completa |
+| EleutherAI/pythia-160m-deduped | 162 millones aprox. | 2048 tokens | apache-2.0 | Hugging Face | Variante entrenada sobre The Pile deduplicado |
+| GPT-2 (124M) | 124 millones | 1024 tokens | modificada (MIT-like) | Hugging Face, universal | Referencia historica, contexto mas corto |
+| OPT-125M | 125 millones | 2048 tokens | apache-2.0 | Hugging Face | Alternativa de Meta con licencia permisiva |
 
 El rendimiento relativo frente a estos modelos no puede establecerse: no hay benchmarks publicados para este checkpoint.
 
@@ -105,7 +105,7 @@ El rendimiento relativo frente a estos modelos no puede establecerse: no hay ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2000-seed324-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2000-seed324-stage2
 - Modelo base (stage1): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1
 - Variante relacionada `reuse_previous_mse`: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-reuse_previous_mse_warmup2000-seed324-stage2
 - Variante relacionada `delta_shuffle1`: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle1_warmup2000-seed324-stage2

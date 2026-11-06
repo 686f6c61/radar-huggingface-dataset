@@ -75,10 +75,10 @@ Las estimaciones siguientes son calculos a partir del tamano del modelo base (~1
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t5g2-1b1b-echr | Adaptador LoRA sobre base de ~1B+1B | 8192 (entrenamiento) | Razonamiento matematico jerarquico (MATH) | No disponible | HuggingFace, 0 descargas |
-| google/t5gemma-2-1b-1b (base) | ~1B encoder + ~1B decoder | No disponible en la informacion proporcionada | Modelo generalista encoder-decoder | No disponible en la informacion proporcionada | HuggingFace (modelo base referenciado) |
-| Qwen2.5-Math-1.5B | ~1,5B (decoder-only) | No verificado en esta busqueda | Matemáticas (modelo completo, no adaptador) | No verificado en esta busqueda | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5B (decoder-only) | No verificado en esta busqueda | Razonamiento destilado (modelo completo) | No verificado en esta busqueda | HuggingFace |
+| t5g2-1b1b-echr | Adaptador LoRA sobre base de ~1B+1B | 8192 (entrenamiento) | Razonamiento matematico jerarquico (MATH) | No disponible | Hugging Face, 0 descargas |
+| google/t5gemma-2-1b-1b (base) | ~1B encoder + ~1B decoder | No disponible en la informacion proporcionada | Modelo generalista encoder-decoder | No disponible en la informacion proporcionada | Hugging Face (modelo base referenciado) |
+| Qwen2.5-Math-1.5B | ~1,5B (decoder-only) | No verificado en esta busqueda | Matemáticas (modelo completo, no adaptador) | No verificado en esta busqueda | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5B (decoder-only) | No verificado en esta busqueda | Razonamiento destilado (modelo completo) | No verificado en esta busqueda | Hugging Face |
 
 Nota: los datos de las dos alternativas no proceden de la informacion proporcionada en esta busqueda y deben verificarse en sus repositorios oficiales antes de usarse. La comparacion relevante y verificable es con el modelo base google/t5gemma-2-1b-1b, del que este repositorio solo aporta el delta LoRA.
 
@@ -97,7 +97,7 @@ Nota: los datos de las dos alternativas no proceden de la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeshb/t5g2-1b1b-echr
+- Modelo en Hugging Face: https://huggingface.co/swadeshb/t5g2-1b1b-echr
 - Modelo base: https://huggingface.co/google/t5gemma-2-1b-1b
 - Dataset de entrenamiento: https://huggingface.co/datasets/sxiong/MLR_structured_trajectory
 - Perfil del autor: https://huggingface.co/swadeshb

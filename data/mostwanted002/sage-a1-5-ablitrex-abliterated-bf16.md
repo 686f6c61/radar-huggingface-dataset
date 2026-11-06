@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sage-A1.5-Ablitrex-abliterated-BF16 es una versión "abliterated" (con los mecanismos de rechazo neutralizados mediante ablación direccional) del modelo Sage-A1.5 de InternScience, publicada por el usuario mostwanted002 en HuggingFace. El modelo base es una arquitectura MoE de la familia qwen3_5_moe, con 35.107.181.936 parámetros totales almacenados en safetensors en formato BF16 (el repositorio ocupa 70,2 GB). La abliteración se ha realizado con la herramienta Abliterix, combinando ablación direccional con LoRA-Δ y proyección directa, con el objetivo de eliminar los comportamientos de negativa del modelo sin reentrenarlo por completo.
+Sage-A1.5-Ablitrex-abliterated-BF16 es una versión "abliterated" (con los mecanismos de rechazo neutralizados mediante ablación direccional) del modelo Sage-A1.5 de InternScience, publicada por el usuario mostwanted002 en Hugging Face. El modelo base es una arquitectura MoE de la familia qwen3_5_moe, con 35.107.181.936 parámetros totales almacenados en safetensors en formato BF16 (el repositorio ocupa 70,2 GB). La abliteración se ha realizado con la herramienta Abliterix, combinando ablación direccional con LoRA-Δ y proyección directa, con el objetivo de eliminar los comportamientos de negativa del modelo sin reentrenarlo por completo.
 
 Este tipo de variantes resulta relevante para desarrolladores que necesitan modelos sin filtros de rechazo para investigación en alineamiento, red teaming o casos de uso donde los rechazos del modelo son un obstáculo. La ficha del modelo incluye una evaluación comparativa exhaustiva (62 tareas con lm-evaluation-harness, backend vLLM, bf16, 0-shot, seed=0) que cuantifica con precisión el coste de la abliteración: una caída media de 3,63 puntos en las capacidades del modelo, con peores retrocesos en tareas de razonamiento matemático y aprendizaje automático. La licencia es MIT, lo que permite uso comercial sin restricciones.
 
@@ -69,7 +69,7 @@ La caída media de capacidad es de 3,63 puntos. Las tareas más afectadas son la
 - VRAM estimada para inferencia: con 35,1 B de parámetros en BF16, se necesitan aproximadamente 70 GB solo para los pesos, por lo que en precisión completa se requiere al menos una GPU de 80 GB (A100/H100 80 GB) o multiples GPUs.
 - Con cuantizacion a 4 bits (si se generan versiones GGUF o AWQ, no disponibles en este repositorio), el consumo bajaría a unos 20-25 GB, cabiendo en una RTX 4090 (24 GB) de forma ajustada o en una RTX 5090 (32 GB) con holgura; estas cuantizaciones no están publicadas por el autor.
 - Consumer GPUs: en BF16 no cabe en ninguna GPU de consumo actual; solo sería viable con cuantización de terceros o offloading a CPU/RAM con llama.cpp.
-- Despliegue: el propio autor evaluó el modelo con vLLM, por lo que es una opción verificada; también debería funcionar con transformers de HuggingFace (arquitectura qwen3_5_moe). No hay versiones GGUF oficiales para llama.cpp u Ollama.
+- Despliegue: el propio autor evaluó el modelo con vLLM, por lo que es una opción verificada; también debería funcionar con transformers de Hugging Face (arquitectura qwen3_5_moe). No hay versiones GGUF oficiales para llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La principal diferencia frente a alternativas convencionales es la ausencia de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16
+- Modelo en Hugging Face: https://huggingface.co/mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16
 - Modelo base: https://huggingface.co/InternScience/Sage-A1.5
 - Autor del abliteration: https://huggingface.co/mostwanted002
 - No se han encontrado enlaces a papers, repositorios de código de Abliterix ni demos en la información disponible.

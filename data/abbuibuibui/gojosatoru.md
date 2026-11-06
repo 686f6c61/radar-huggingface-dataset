@@ -69,6 +69,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (cl
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/abbuibuibui/gojosatoru)
+- [Modelo en Hugging Face](https://huggingface.co/abbuibuibui/gojosatoru)
 - [Dataset de entrenamiento (abbuibuibui/gojosatoru-dataset)](https://huggingface.co/datasets/abbuibuibui/gojosatoru-dataset)
 - [Repositorio GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)

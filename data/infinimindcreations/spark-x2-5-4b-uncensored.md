@@ -93,7 +93,7 @@ No se dispone de información comparativa en los datos proporcionados. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/InfinimindCreations/Spark-X2.5-4B-uncensored
+- Hugging Face: https://huggingface.co/InfinimindCreations/Spark-X2.5-4B-uncensored
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Herramienta heretie: https://github.com/p-e-w/heretic
 - Blog sobre biprojection: https://huggingface.co/blog/grimjim

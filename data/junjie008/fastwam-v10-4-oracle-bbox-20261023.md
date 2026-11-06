@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastWAM V10.4 es un checkpoint de investigacion para control de acciones en robotica, desarrollado por el usuario junjie008 y publicado en HuggingFace. Se enmarca dentro del proyecto FastWAM (orientado a politicas de accion guiadas por video) y del benchmark RoboMME, y su proposito es evaluar el condicionamiento de la accion mediante cajas delimitadoras (bounding boxes) de la camara frontal actual, junto con senales GRASP, en tareas de manipulacion robótica de una sola tarea. El modelo parte del checkpoint original V6 de 60k pasos y ha sido afinado durante 2.000 pasos adicionales con la estrategia VideoUnmaskSwap.
+FastWAM V10.4 es un checkpoint de investigacion para control de acciones en robotica, desarrollado por el usuario junjie008 y publicado en Hugging Face. Se enmarca dentro del proyecto FastWAM (orientado a politicas de accion guiadas por video) y del benchmark RoboMME, y su proposito es evaluar el condicionamiento de la accion mediante cajas delimitadoras (bounding boxes) de la camara frontal actual, junto con senales GRASP, en tareas de manipulacion robótica de una sola tarea. El modelo parte del checkpoint original V6 de 60k pasos y ha sido afinado durante 2.000 pasos adicionales con la estrategia VideoUnmaskSwap.
 
 La relevancia de esta publicacion es acotada y fundamentalmente experimental: se trata de un artefacto de investigacion con dos variantes (V10.4.1 y V10.4.2) que difieren en el mecanismo de condicionamiento espacial, no de un modelo listo para produccion. El repositorio es de gran tamano (368 GB) porque incluye los pesos completos del Video DiT congelado ademas del Action DiT entrenado, y no publica resultados de exito en rollout, sino unicamente perdidas de validacion offline con ruido fijo.
 
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junjie008/fastwam-v10-4-oracle-bbox-20261023
+- Modelo en Hugging Face: https://huggingface.co/junjie008/fastwam-v10-4-oracle-bbox-20261023
 - Repositorio de codigo de entrenamiento `fastwam_edit`: https://github.com/Astexia-xuan/fastwam_edit
 - Repositorio de codigo de entrenamiento `HyAM`: https://github.com/sgres-paw/HyAM
 - Checkpoint V10.4.1 (2k): https://huggingface.co/junjie008/fastwam-v10-4-oracle-bbox-20261023/tree/main/v10.4.1/step_002000

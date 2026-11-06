@@ -105,7 +105,7 @@ Frente a sus padres, Platypus 11B se posiciona como compromiso: mejor que el 8B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Platypus-11B-Base
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Platypus-11B-Base
 - Informe técnico: `technical_report.pdf`, incluido en el repositorio del modelo.
 - Padre grande: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Padre pequeño: https://huggingface.co/Qwen/Qwen3-8B-Base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`toadsrule/JLP` es un repositorio publicado en HuggingFace por el usuario `toadsrule` del que unicamente se conoce la licencia declarada (MIT). No dispone de model card con contenido tecnico: el README se limita a la cabecera YAML con la licencia, sin descripcion, arquitectura, tamano ni datos de entrenamiento. Tampoco se ha declarado un pipeline de uso (text-generation, image-text-to-text, etc.) ni un listado de idiomas soportados.
+`toadsrule/JLP` es un repositorio publicado en Hugging Face por el usuario `toadsrule` del que unicamente se conoce la licencia declarada (MIT). No dispone de model card con contenido tecnico: el README se limita a la cabecera YAML con la licencia, sin descripcion, arquitectura, tamano ni datos de entrenamiento. Tampoco se ha declarado un pipeline de uso (text-generation, image-text-to-text, etc.) ni un listado de idiomas soportados.
 
 El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (13 de septiembre de 2026), lo que apunta a una publicacion sin mantenimiento posterior ni comunidad asociada. No hay informacion sobre pesos, tokenizador, configuracion de transformers ni artefactos de cuantizacion.
 
@@ -70,7 +70,7 @@ No disponible. No puede establecerse una categoria de comparacion (tamano, tarea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/toadsrule/JLP
+- Hugging Face: https://huggingface.co/toadsrule/JLP
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

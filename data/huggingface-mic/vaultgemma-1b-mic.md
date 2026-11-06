@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/vaultgemma-1b-mic` | 16,5M (fixture) | no disponible | Fixture de test | no disponible | HuggingFace |
-| `google/vaultgemma-1b` | no disponible | no disponible | Modelo base | no disponible | HuggingFace |
-| Otras fixtures de `transformers-mic` | variable (slim) | no disponible | Fixtures de test | no disponible | HuggingFace |
+| `huggingface-mic/vaultgemma-1b-mic` | 16,5M (fixture) | no disponible | Fixture de test | no disponible | Hugging Face |
+| `google/vaultgemma-1b` | no disponible | no disponible | Modelo base | no disponible | Hugging Face |
+| Otras fixtures de `transformers-mic` | variable (slim) | no disponible | Fixtures de test | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones completas para establecer una comparativa cuantitativa con modelos de la misma categoria.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas para esta
 
 ## Enlaces
 
-- [HuggingFace: huggingface-mic/vaultgemma-1b-mic](https://huggingface.co/huggingface-mic/vaultgemma-1b-mic)
+- [Hugging Face: huggingface-mic/vaultgemma-1b-mic](https://huggingface.co/huggingface-mic/vaultgemma-1b-mic)
 - [Modelo base: google/vaultgemma-1b](https://huggingface.co/google/vaultgemma-1b)
 - [Contrato de integracion (integration.json)](https://huggingface.co/huggingface-mic/vaultgemma-1b-mic/blob/main/integration.json)
 - [Uso con Transformers (usage.md)](https://huggingface.co/huggingface-mic/vaultgemma-1b-mic/blob/main/integrations/transformers/usage.md)

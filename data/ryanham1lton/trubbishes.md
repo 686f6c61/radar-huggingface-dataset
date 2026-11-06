@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrubbishES es un repositorio de modelos publicado en HuggingFace por el usuario Ryanham1lton (Ryan James Hamilton) bajo licencia CC BY 4.0. En el momento de redactar esta ficha, la model card asociada contiene únicamente el bloque de metadatos de licencia, sin descripción, instrucciones de uso, detalles de arquitectura ni resultados de evaluación. El repositorio no declara pipeline, idiomas soportados ni etiquetas técnicas más allá de `license:cc-by-4.0` y `region:us`.
+TrubbishES es un repositorio de modelos publicado en Hugging Face por el usuario Ryanham1lton (Ryan James Hamilton) bajo licencia CC BY 4.0. En el momento de redactar esta ficha, la model card asociada contiene únicamente el bloque de metadatos de licencia, sin descripción, instrucciones de uso, detalles de arquitectura ni resultados de evaluación. El repositorio no declara pipeline, idiomas soportados ni etiquetas técnicas más allá de `license:cc-by-4.0` y `region:us`.
 
 El tamaño del repositorio es de 0,1 GB (aproximadamente 100 MB), lo que descarta que se trate de un modelo de gran escala en precisión completa y es compatible con un modelo pequeño, una cuantización o un adaptador (LoRA u similar). Esta deducción es una inferencia a partir del tamaño del artefacto, no un dato confirmado por el autor: sin pesos inspeccionables ni documentación, no es posible determinar la arquitectura, el número de parámetros ni la longitud de contexto.
 
@@ -49,7 +49,7 @@ Los siguientes escenarios son hipótesis de trabajo condicionadas a una validaci
 - Evaluación interna de artefactos comunitarios: inspeccionar los archivos del repositorio (0,1 GB) para determinar el formato real de los pesos y si se trata de un modelo completo, una cuantización o un adaptador, antes de considerar cualquier uso.
 - Pruebas de concepto reproducibles en local: por su tamaño reducido, el artefacto podría cargarse en una estación de trabajo convencional para experimentación, siempre que se identifique primero el formato y el modelo base necesario.
 - Ajuste fino experimental sobre un modelo base: si el repositorio contiene un adaptador, podría servir como punto de partida para experimentos de fine-tuning en un dominio concreto, sujeto a la licencia CC BY 4.0.
-- Investigación sobre trazabilidad de modelos: el caso es útil como ejemplo documentado de repositorio sin model card, para estudiar prácticas de publicación deficientes en HuggingFace.
+- Investigación sobre trazabilidad de modelos: el caso es útil como ejemplo documentado de repositorio sin model card, para estudiar prácticas de publicación deficientes en Hugging Face.
 - Docencia sobre evaluación de modelos: emplearlo como ejercicio práctico de auditoría de artefactos opacos (verificación de hashes, inspección de `config.json` y del tokenizador).
 - Integración en pipelines de CI para validación de artefactos: usar el repositorio como caso de prueba de herramientas que detectan repositorios sin documentación ni licencia clara en un catálogo interno.
 
@@ -94,7 +94,7 @@ Alternativas de la misma categoría: no disponible.
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/Ryanham1lton/TrubbishES
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Otro repositorio del autor (Blissey): https://huggingface.co/Ryanham1lton/Blissey
 - Otro repositorio del autor (ShinxEBJ): https://huggingface.co/Ryanham1lton/ShinxEBJ
 - Perfil del autor en Storyteller.ai (no relacionado con el modelo): https://storyteller.ai/profile/ryanham1lton

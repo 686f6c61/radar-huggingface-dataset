@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fournierenzo/retrieval-notebook` es un repositorio experimental publicado en HuggingFace por el usuario fournierenzo que contiene un esqueleto de codigo de una arquitectura hibrida denominada CNN Transformer, orientada a tareas de retrieval (recuperacion de informacion, presumiblemente recuperacion texto-imagen dado que el autor sugiere Flickr30k como primer benchmark). No se trata de un modelo entrenado ni evaluado: el propio autor indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida unicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+`fournierenzo/retrieval-notebook` es un repositorio experimental publicado en Hugging Face por el usuario fournierenzo que contiene un esqueleto de codigo de una arquitectura hibrida denominada CNN Transformer, orientada a tareas de retrieval (recuperacion de informacion, presumiblemente recuperacion texto-imagen dado que el autor sugiere Flickr30k como primer benchmark). No se trata de un modelo entrenado ni evaluado: el propio autor indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida unicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 La relevancia de esta ficha es principalmente documental: sirve para dejar constancia de que existe un artefacto con licencia MIT, 33.088 parametros totales y una configuracion arquitectonica concreta (atencion multi-query, fusion mediante MLP con concatenacion, activacion swish y normalizacion RMSNorm), pero sin datos de entrenamiento, sin idiomas declarados, sin contexto definido y sin resultados publicados. Cualquier uso en produccion seria hoy inviable.
 
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fournierenzo/retrieval-notebook` | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| `fournierenzo/retrieval-notebook` | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fournierenzo/retrieval-notebook
+- Modelo en Hugging Face: https://huggingface.co/fournierenzo/retrieval-notebook
 - Perfil del autor: https://huggingface.co/fournierenzo
 - Que es RAG (Retrieval-Augmented Generation), AWS: https://aws.amazon.com/what-is/retrieval-augmented-generation/
 - Repositorio de tecnicas RAG en GitHub: https://github.com/Michael-Geronimo/rag_techniques

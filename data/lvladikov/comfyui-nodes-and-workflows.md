@@ -97,7 +97,7 @@ No se dispone de datos verificables para comparar este repositorio con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lvladikov/ComfyUI-Nodes-and-Workflows
+- Repositorio en Hugging Face: https://huggingface.co/lvladikov/ComfyUI-Nodes-and-Workflows
 - README de Krea 2: https://huggingface.co/lvladikov/ComfyUI-Nodes-and-Workflows/blob/main/Krea-2/README.md
 - README de Z-Image: https://huggingface.co/lvladikov/ComfyUI-Nodes-and-Workflows/blob/main/Z-Image/README.md
 - README de MiniMax Music 3: https://huggingface.co/lvladikov/ComfyUI-Nodes-and-Workflows/blob/main/Minimax-Music3/README.md

@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento del modelo base ni de otras builds del mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/T-Search-APEX-I-NanoPlus-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/T-Search-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/t-tech/T-Search
 - Mapa de tensores auditado: `tensor-map.tsv` dentro del repositorio anterior
 - Soporte del autor (Ko-fi): https://ko-fi.com/isvalorum

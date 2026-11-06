@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables. Dado que es un experime
 
 ## Enlaces
 
-- [HuggingFace: ThomasBao/cs336-A1-tiny-stories-transformer](https://huggingface.co/ThomasBao/cs336-A1-tiny-stories-transformer)
+- [Hugging Face: ThomasBao/cs336-A1-tiny-stories-transformer](https://huggingface.co/ThomasBao/cs336-A1-tiny-stories-transformer)
 - [Commit de GitHub con la configuración del entrenamiento](https://github.com/thomasbao12/assignment1-basics/commit/6e4022260f26c928ae5124f297b7ee02264da2c1)

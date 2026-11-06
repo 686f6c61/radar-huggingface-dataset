@@ -115,7 +115,7 @@ La comparativa se limita a los modelos presentes en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Orvena/Orvena-4B
+- Modelo en Hugging Face: https://huggingface.co/Orvena/Orvena-4B
 - Build MLX 4-bit: https://huggingface.co/Orvena/Orvena-4B-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo generador de datos: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

@@ -46,7 +46,7 @@ No hay información disponible sobre volumen de datos de entrenamiento, composic
 
 ## Casos de uso
 
-- OCR en aplicaciones web sin backend: el modelo se carga con `onnxruntime-web` desde el propio repositorio de HuggingFace y ejecuta el reconocimiento en el dispositivo del usuario, evitando costes de servidor y problemas de privacidad al no salir las imágenes del navegador.
+- OCR en aplicaciones web sin backend: el modelo se carga con `onnxruntime-web` desde el propio repositorio de Hugging Face y ejecuta el reconocimiento en el dispositivo del usuario, evitando costes de servidor y problemas de privacidad al no salir las imágenes del navegador.
 - Extracción de texto de capturas y fotos en herramientas web: tras un detector de líneas de texto, cada recorte se pasa por `inference.onnx` para obtener la transcripción.
 - Digitalización de documentos escaneados en pipelines web: integrado en un flujo de subida de documentos, permite convertir imágenes de páginas en texto indexable sin infraestructura de inferencia dedicada.
 - Preprocesado para sistemas de recuperación aumentada (RAG): el texto reconocido de PDF escaneados o imágenes se puede vectorizar e incorporar a una base de conocimiento, aprovechando el tamaño reducido del modelo para procesado por lotes.
@@ -76,8 +76,8 @@ No constan valores de precisión, exactitud de reconocimiento ni comparaciones c
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `skillsafe-ai/pp-ocrv6-tiny-rec` | no disponible | no aplica | Apache-2.0 | ONNX (opset 11) | HuggingFace, 0 descargas, 0 likes |
-| `PaddlePaddle/PP-OCRv6_tiny_rec_onnx` (origen) | no disponible | no aplica | Apache-2.0 | ONNX | HuggingFace (commit `2612ab3...`) |
+| `skillsafe-ai/pp-ocrv6-tiny-rec` | no disponible | no aplica | Apache-2.0 | ONNX (opset 11) | Hugging Face, 0 descargas, 0 likes |
+| `PaddlePaddle/PP-OCRv6_tiny_rec_onnx` (origen) | no disponible | no aplica | Apache-2.0 | ONNX | Hugging Face (commit `2612ab3...`) |
 | Otras alternativas de OCR | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La diferencia entre este artefacto y el modelo de origen es de empaquetado y trazabilidad: mismos pesos (importados sin conversión), commit fijado, receta reproducible y `manifest.json` con huellas SHA-256. No hay datos de rendimiento que permitan comparar con otros reconocedores de texto.
@@ -97,7 +97,7 @@ La diferencia entre este artefacto y el modelo de origen es de empaquetado y tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/pp-ocrv6-tiny-rec
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/pp-ocrv6-tiny-rec
 - Modelo base upstream: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_rec_onnx
 - Commit upstream fijado: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_rec_onnx/tree/2612ab37152ae0a677521bae4e1e3d4fb4cf7c30
 - Receta de conversión de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

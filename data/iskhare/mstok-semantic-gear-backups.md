@@ -6,7 +6,7 @@ Este repositorio no es un modelo entrenado listo para uso, sino el archivo de re
 
 Su relevancia es fundamentalmente de reproducibilidad: los dos runs documentados son `semantic-gear-full-v1`, detenido intencionadamente para reiniciarse tras evaluar los hitos 5.000, 10.000, 17.192 y 25.000 (ultimo checkpoint reanudable en el paso 28.000), y `semantic-gear-matched-lr-v1`, completado con 34.384 pasos y evaluaciones en 5.000, 10.000, 17.192, 25.000 y 34.384. Cada hito evaluado incluye un checkpoint de entrenamiento completo mas los exports `ncp.pt`, `vqvae.pt` y `vqvae-teacher.pt`.
 
-No se declara numero de parametros, licencia, idiomas soportados ni pipeline de HuggingFace. El repositorio acumula 0 descargas y 0 likes, y los resultados publicados se limitan a perplejidad de generacion, con aviso explicito del propio autor de que las muestras inspeccionadas siguen conteniendo gramatica rota y repeticiones.
+No se declara numero de parametros, licencia, idiomas soportados ni pipeline de Hugging Face. El repositorio acumula 0 descargas y 0 likes, y los resultados publicados se limitan a perplejidad de generacion, con aviso explicito del propio autor de que las muestras inspeccionadas siguen conteniendo gramatica rota y repeticiones.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ No disponible. El repositorio no publica un modelo con pesos finales comparable 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iskhare/mstok-semantic-gear-backups
+- Repositorio en Hugging Face: https://huggingface.co/iskhare/mstok-semantic-gear-backups
 - Respaldo completo: https://huggingface.co/iskhare/mstok-semantic-gear-backups/tree/main/backups/20260914T205505Z
 - Instrucciones de restauracion: https://huggingface.co/iskhare/mstok-semantic-gear-backups/blob/main/backups/20260914T205505Z/README.md
 - Inventario de checksums: https://huggingface.co/iskhare/mstok-semantic-gear-backups/blob/main/backups/20260914T205505Z/SHA256SUMS

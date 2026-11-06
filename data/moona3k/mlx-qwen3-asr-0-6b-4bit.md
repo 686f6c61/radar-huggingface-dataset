@@ -77,8 +77,8 @@ La informacion proporcionada solo permite comparar este artefacto con su propio 
 
 | Modelo | Parametros | Cuantizacion | WER (LibriSpeech test-clean, 100 clips) | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Qwen/Qwen3-ASR-0.6B` (fp16) | 0,6 B | fp16 | 2,33 % | 1,8 GB | Apache-2.0 | HuggingFace |
-| Este artefacto | 0,6 B | 4 bits (decodificador) + 8 bits (encoder), g64 | 2,37 % | 517 MB | Apache-2.0 | HuggingFace |
+| `Qwen/Qwen3-ASR-0.6B` (fp16) | 0,6 B | fp16 | 2,33 % | 1,8 GB | Apache-2.0 | Hugging Face |
+| Este artefacto | 0,6 B | 4 bits (decodificador) + 8 bits (encoder), g64 | 2,37 % | 517 MB | Apache-2.0 | Hugging Face |
 | Variante todo a 4 bits (descrita en la model card) | 0,6 B | 4 bits, g64 | 2,63 % | No disponible | Apache-2.0 | No se publica como artefacto independiente en la informacion disponible |
 | Otros modelos ASR de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -96,7 +96,7 @@ La informacion proporcionada solo permite comparar este artefacto con su propio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moona3k/mlx-qwen3-asr-0.6b-4bit
+- Modelo en Hugging Face: https://huggingface.co/moona3k/mlx-qwen3-asr-0.6b-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Repositorio de la libreria `mlx-qwen3-asr`: https://github.com/moona3k/mlx-qwen3-asr
 - Matriz de cuantizacion de referencia: `docs/benchmarks/2026-09-07-quant-matrix-test-clean-speaker100.md` (dentro del repositorio de GitHub)

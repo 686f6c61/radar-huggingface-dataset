@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`kkwu/CausalOPD-checkpoints` es un repositorio de pesos alojado en HuggingFace por el usuario `kkwu`, publicado bajo el identificador de un modelo de tipo causal (el nombre sugiere una arquitectura decoder-only, aunque la informacion disponible no lo confirma de forma explicita). El repositorio contiene unicamente artefactos en formato `safetensors`, con un tamano total de 37,4 GB, y el sufijo "checkpoints" indica que probablemente agrupa varios puntos de control de un mismo entrenamiento en lugar de una unica version final del modelo.
+`kkwu/CausalOPD-checkpoints` es un repositorio de pesos alojado en Hugging Face por el usuario `kkwu`, publicado bajo el identificador de un modelo de tipo causal (el nombre sugiere una arquitectura decoder-only, aunque la informacion disponible no lo confirma de forma explicita). El repositorio contiene unicamente artefactos en formato `safetensors`, con un tamano total de 37,4 GB, y el sufijo "checkpoints" indica que probablemente agrupa varios puntos de control de un mismo entrenamiento en lugar de una unica version final del modelo.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: no se ha publicado model card, no hay pipeline declarado, no se especifican idiomas, no hay resultados de benchmarks y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. El contador de descargas y de "likes" es cero en el momento de la consulta, lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: no se ha publicado model card, no hay pipeline declarado, no se especifican idiomas, no hay resultados de benchmarks y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. El contador de descargas y de "likes" es cero en el momento de la consulta, lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad.
 
 Por tanto, esta ficha documenta lo que se puede verificar objetivamente del repositorio (formato, tamano, licencia, restricciones de acceso) y marca de forma explicita como "no disponible" todo aquello que no figura en la informacion proporcionada. Cualquier decision de adopcion en produccion deberia posponerse hasta disponer de la model card, la ficha de configuracion (`config.json`) y resultados de evaluacion.
 
@@ -74,14 +74,14 @@ No es posible establecer una comparativa rigurosa: se desconocen el numero de pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| kkwu/CausalOPD-checkpoints | no disponible | no disponible | research-only (gated) | HuggingFace, acceso restringido | no disponible |
+| kkwu/CausalOPD-checkpoints | no disponible | no disponible | research-only (gated) | Hugging Face, acceso restringido | no disponible |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, tokens de entrenamiento, datos utilizados, tokenizador ni plantilla de chat, lo que impide un uso fiable incluso en investigacion.
 - Licencia research-only: el uso comercial esta excluido por los terminos publicados. Cualquier despliegue en producto requiere autorizacion explicita del autor.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y disponer de un token con permisos; esto anade friccion a pipelines automatizados y a la reproducibilidad por terceros.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y disponer de un token con permisos; esto anade friccion a pipelines automatizados y a la reproducibilidad por terceros.
 - Sin resultados de benchmarks: no hay evidencia publica de calidad en MMLU, HumanEval, GSM8K ni en tareas multilingues.
 - Sesgos y toxicidad: no documentados. Al no constar proceso de alineamiento (RLHF/DPO) ni filtros de seguridad, el riesgo de generar contenido sesgado o inapropiado es indeterminado y debe asumirse alto en entornos abiertos.
 - Riesgo de alucinacion: no cuantificado; sin evaluaciones de factualidad no es recomendable usar el modelo en tareas de recuperacion de hechos sin verificacion externa.
@@ -92,6 +92,6 @@ No es posible establecer una comparativa rigurosa: se desconocen el numero de pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kkwu/CausalOPD-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/kkwu/CausalOPD-checkpoints
 - Perfil del autor: https://huggingface.co/kkwu
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a paginas de Discord sin relacion alguna con el modelo y se descartan como fuentes.

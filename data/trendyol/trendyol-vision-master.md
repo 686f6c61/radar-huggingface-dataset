@@ -89,6 +89,6 @@ La comparativa directa con otros VLMs de e-commerce (como Amazon, Alibaba o Zala
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Trendyol/Trendyol-Vision-Master
+- Modelo en Hugging Face: https://huggingface.co/Trendyol/Trendyol-Vision-Master
 - Modelo base Qwen3.5-27B: https://huggingface.co/Qwen/Qwen3.5-27B
 - Version ligera Trendyol-Vision-Flash: https://huggingface.co/Trendyol/Trendyol-Vision-Flash

@@ -38,7 +38,7 @@ Dado que el modelo no está entrenado, no existen casos de uso prácticos reales
 
 - **Pruebas de humo en desarrollo**: ejecutar el script `finetune.py` para verificar que el pipeline de entrenamiento funciona correctamente con un checkpoint de inicialización.
 - **Investigación de arquitectura**: estudiar el comportamiento de la atención sliding window y la fusión bilineal en un entorno controlado, antes de escalar a modelos mayores.
-- **Depuración de código**: utilizar el checkpoint como entrada para validar adaptadores de carga personalizados, dado que la implementación es custom y no compatible con APIs genéricas de HuggingFace.
+- **Depuración de código**: utilizar el checkpoint como entrada para validar adaptadores de carga personalizados, dado que la implementación es custom y no compatible con APIs genéricas de Hugging Face.
 - **Experimentos de inicialización**: comparar diferentes estrategias de inicialización de pesos en arquitecturas Blip.
 - **Desarrollo de recetas de entrenamiento**: probar el optimizador `lamb` y el schedule exponencial en un entorno mínimo.
 - **Educación**: ilustrar la estructura de un proyecto de investigación de modelos generativos con configuración reproducible.
@@ -71,4 +71,4 @@ No disponible. No se conocen modelos comparables de la misma categoría (Blip co
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ALYSSASK/postdoc-generation-2024)
+- [Repositorio en Hugging Face](https://huggingface.co/ALYSSASK/postdoc-generation-2024)

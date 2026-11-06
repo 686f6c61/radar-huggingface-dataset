@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-123` es un modelo de desambiguacion de sentidos (word-sense disambiguation, WSD) para ucraniano, publicado por el usuario yuriilaba en HuggingFace. Se trata de un fine-tune del sentence transformer `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, que a su vez se apoya en la arquitectura XLM-RoBERTa base. El repositorio contiene pesos en formato safetensors con 278.043.648 parametros y un tamano total de 1,1 GB, coherente con pesos en precision de 32 bits.
+`yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-123` es un modelo de desambiguacion de sentidos (word-sense disambiguation, WSD) para ucraniano, publicado por el usuario yuriilaba en Hugging Face. Se trata de un fine-tune del sentence transformer `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, que a su vez se apoya en la arquitectura XLM-RoBERTa base. El repositorio contiene pesos en formato safetensors con 278.043.648 parametros y un tamano total de 1,1 GB, coherente con pesos en precision de 32 bits.
 
 El modelo no es generativo: produce representaciones vectoriales (embeddings) de frases y resuelve tareas de similitud semantica y desambiguacion. Su interes practico esta en el procesamiento de lengua ucraniana, un idioma con menos recursos y menos modelos especializados que el ingles o el castellano. La model card reporta una exactitud de WSD de 0,9163 y correlaciones STS de 0,8158 (Pearson) y 0,8056 (Spearman).
 
-El modelo se entreno sobre el fichero `triplets_generation_all_combined.csv`, con un pooling que no usa el token objetivo (`target-token pooling: False`) y semilla de entrenamiento 123, con semilla de particion de validacion 42. Es un artefacto de investigacion: no declara licencia, idiomas oficiales, pipeline de HuggingFace ni resultados MTEB resumidos mas alla de las metricas citadas, y cuenta con 0 descargas y 0 likes en el momento de la consulta.
+El modelo se entreno sobre el fichero `triplets_generation_all_combined.csv`, con un pooling que no usa el token objetivo (`target-token pooling: False`) y semilla de entrenamiento 123, con semilla de particion de validacion 42. Es un artefacto de investigacion: no declara licencia, idiomas oficiales, pipeline de Hugging Face ni resultados MTEB resumidos mas alla de las metricas citadas, y cuenta con 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se proporcionan resultados comparativos frente a otros modelos, ni se especif
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; el modelo es manejable en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin necesidad de paralelismo.
 - Cabe en GPU de consumo: si, de forma holgada, incluidas GPUs de gama de entrada y portatiles con 4 GB o mas.
 - Ejecucion en CPU: viable para lotes pequenos, dado el reducido numero de parametros.
-- Opciones de despliegue: sentence-transformers, HuggingFace transformers, ONNX Runtime y Text Embeddings Inference (TEI). No se recomienda vLLM por tratarse de un modelo de embeddings y no de generacion.
+- Opciones de despliegue: sentence-transformers, Hugging Face transformers, ONNX Runtime y Text Embeddings Inference (TEI). No se recomienda vLLM por tratarse de un modelo de embeddings y no de generacion.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -91,14 +91,14 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 - La lista de idiomas soportados no esta declarada; el comportamiento fuera del ucraniano no ha sido validado por el autor.
 - La longitud de contexto efectiva no esta documentada; conviene verificar la configuracion de `max_seq_length` antes de procesar parrafos o documentos largos.
 - El repositorio registra 0 descargas y 0 likes, y la fecha de creacion indicada (2026-09-21) resulta anomala; se recomienda verificar la vigencia y el mantenimiento del artefacto antes de integrarlo en produccion.
-- No hay pipeline declarado en HuggingFace, por lo que su uso directo con `pipeline()` puede requerir configuracion manual.
+- No hay pipeline declarado en Hugging Face, por lo que su uso directo con `pipeline()` puede requerir configuracion manual.
 - Los resultados de busqueda web asociados a esta ficha no contienen informacion relevante sobre el modelo (devuelven enlaces de Snapchat), por lo que no aportan contexto adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-123
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-123
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
-- Resultados MTEB del propio modelo: ruta `evaluation/mteb_results/` dentro del repositorio de HuggingFace
+- Resultados MTEB del propio modelo: ruta `evaluation/mteb_results/` dentro del repositorio de Hugging Face
 - Dataset de entrenamiento citado: `local_datasets/semi_supervised_2/triplets/triplets_generation_all_combined.csv` (ruta local, no se proporciona enlace publico)
 - Paper o blog del autor: no disponible
 - Repositorio de codigo: no disponible

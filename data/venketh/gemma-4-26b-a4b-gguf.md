@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`venketh/gemma-4-26B-A4B-GGUF` es un repositorio de HuggingFace publicado por el usuario `venketh` que, por su nomenclatura, corresponde a una conversión a formato GGUF de un supuesto modelo de la familia Gemma con 26.000 millones de parámetros totales y 4.000 millones de parámetros activos (la convención "A4B" se usa habitualmente para indicar parámetros activos en arquitecturas de mezcla de expertos). No obstante, esta interpretación procede unicamente del nombre del repositorio: la model card está vacía (solo contiene la declaración de licencia `apache-2.0`), no hay pipeline declarado, no se indican idiomas y no existe ningún artefacto documental adicional que confirme estas características.
+`venketh/gemma-4-26B-A4B-GGUF` es un repositorio de Hugging Face publicado por el usuario `venketh` que, por su nomenclatura, corresponde a una conversión a formato GGUF de un supuesto modelo de la familia Gemma con 26.000 millones de parámetros totales y 4.000 millones de parámetros activos (la convención "A4B" se usa habitualmente para indicar parámetros activos en arquitecturas de mezcla de expertos). No obstante, esta interpretación procede unicamente del nombre del repositorio: la model card está vacía (solo contiene la declaración de licencia `apache-2.0`), no hay pipeline declarado, no se indican idiomas y no existe ningún artefacto documental adicional que confirme estas características.
 
 El repositorio presenta cero descargas y cero "likes" en el momento de la consulta, fue creado el 10 de septiembre de 2026 y no se ha actualizado desde entonces. La búsqueda web asociada no ha devuelto ningún resultado relevante sobre el modelo: los enlaces recuperados corresponden al servicio de seguimiento de paquetes de USPS y no guardan relación alguna con el repositorio. En consecuencia, no es posible verificar que el modelo exista realmente como artefacto funcional, ni que su contenido coincida con lo que sugiere su nombre.
 
@@ -81,5 +81,5 @@ No disponible. No es posible establecer una comparativa fiable porque no se han 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/venketh/gemma-4-26B-A4B-GGUF
+- Hugging Face: https://huggingface.co/venketh/gemma-4-26B-A4B-GGUF
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web. Los resultados recuperados corresponden a páginas de USPS sin relación con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_667629087_mae_giant` es un modelo de clasificación de escala *giant* basado en la arquitectura MAE (Masked Autoencoder), desarrollado por el usuario de HuggingFace `gupt-a9508`. La información pública es extremadamente limitada: no se especifican el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El repositorio contiene únicamente un archivo Python (`model_667629087_mae_giant.py`) que define la arquitectura y el proceso de entrenamiento.
+`model_667629087_mae_giant` es un modelo de clasificación de escala *giant* basado en la arquitectura MAE (Masked Autoencoder), desarrollado por el usuario de Hugging Face `gupt-a9508`. La información pública es extremadamente limitada: no se especifican el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El repositorio contiene únicamente un archivo Python (`model_667629087_mae_giant.py`) que define la arquitectura y el proceso de entrenamiento.
 
 El modelo incorpora varias técnicas de eficiencia y regularización: atención multi-query, fusión de baja dimensión (*low-rank fusion*), normalización RMSNorm, activación ReLU e inicialización Xavier. El entrenamiento utiliza el optimizador RMSprop con un programador de tasa de aprendizaje *one-cycle*. Su licencia BSD-3-Clause permite uso comercial y modificación, pero la ausencia de documentación y de métricas de rendimiento lo convierte en un candidato poco adecuado para producción sin una evaluación adicional exhaustiva.
 
@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables específicos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gupt-a9508/model_667629087_mae_giant
+- Repositorio Hugging Face: https://huggingface.co/gupt-a9508/model_667629087_mae_giant
 - No se encontraron papers, blogs ni demos adicionales relacionados con este modelo específico.

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tokens de entrenamiento | Contexto | Corpus | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GeoLadder-16M-32B-bs256-lr0.0087-wd0.1-decay0.01 | 16M | 32B | 2048 | the_pile_deduplicated | no disponible | HuggingFace (repositorio con 38 checkpoints) |
-| Familia GeoLadder (resto de la suite) | 4M–75M | no disponible por modelo | no disponible | the_pile_deduplicated | no disponible | HuggingFace (colección GeoLadder, 108 modelos) |
-| Pythia-14M (EleutherAI) | 14M | 300B (Pile) | 2048 | Pile | Apache 2.0 | HuggingFace, con 154 checkpoints |
-| Pythia-70M (EleutherAI) | 70M | 300B (Pile) | 2048 | Pile | Apache 2.0 | HuggingFace, con 154 checkpoints |
+| GeoLadder-16M-32B-bs256-lr0.0087-wd0.1-decay0.01 | 16M | 32B | 2048 | the_pile_deduplicated | no disponible | Hugging Face (repositorio con 38 checkpoints) |
+| Familia GeoLadder (resto de la suite) | 4M–75M | no disponible por modelo | no disponible | the_pile_deduplicated | no disponible | Hugging Face (colección GeoLadder, 108 modelos) |
+| Pythia-14M (EleutherAI) | 14M | 300B (Pile) | 2048 | Pile | Apache 2.0 | Hugging Face, con 154 checkpoints |
+| Pythia-70M (EleutherAI) | 70M | 300B (Pile) | 2048 | Pile | Apache 2.0 | Hugging Face, con 154 checkpoints |
 
 Nota: los datos de la familia Pythia proceden de fuentes públicas externas a la información proporcionada, y se incluyen únicamente como referencia de categoría (modelos base pequeños con checkpoints intermedios). No hay comparación de rendimiento disponible entre GeoLadder-16M y estos modelos, porque la información proporcionada no incluye resultados de benchmarks.
 
@@ -92,7 +92,7 @@ Nota: los datos de la familia Pythia proceden de fuentes públicas externas a la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs256-lr0.0087-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs256-lr0.0087-wd0.1-decay0.01
 - Colección GeoLadder (108 modelos de la suite): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Artículo en PMLR: https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv (arXiv:2602.20433): https://arxiv.org/abs/2602.20433

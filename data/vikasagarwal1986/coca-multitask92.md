@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vikasagarwal1986/coca-multitask92` es un prototipo de investigación publicado en HuggingFace por el usuario vikasagarwal1986 bajo licencia Apache 2.0. Se presenta como una implementación de arquitectura CoCa (Contrastive Captioners, el modelo multimodal de Google Research) orientada a tareas multitarea, en una escala denominada "xlarge". El repositorio contiene exclusivamente un punto de partida experimental: código Python, configuración de arquitectura y un checkpoint de inicialización, sin pesos entrenados ni resultados de evaluación.
+`vikasagarwal1986/coca-multitask92` es un prototipo de investigación publicado en Hugging Face por el usuario vikasagarwal1986 bajo licencia Apache 2.0. Se presenta como una implementación de arquitectura CoCa (Contrastive Captioners, el modelo multimodal de Google Research) orientada a tareas multitarea, en una escala denominada "xlarge". El repositorio contiene exclusivamente un punto de partida experimental: código Python, configuración de arquitectura y un checkpoint de inicialización, sin pesos entrenados ni resultados de evaluación.
 
 La relevancia de este modelo es, por tanto, limitada y de naturaleza puramente documental o educativa. El propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado, y que no se reclama ninguna puntuación de benchmark. No hay pipeline declarado, cero descargas y cero likes en el momento de la consulta, y el tamaño del repositorio es de 0.0 GB.
 
@@ -42,7 +42,7 @@ No se proporciona información sobre volumen de tokens de entrenamiento, composi
 - Estudio de implementaciones CoCa: usar `model.py` y `config.json` como referencia para entender cómo se estructuran atención linear, cross attention y RMSNorm en una implementación personalizada.
 - Base para experimentos de investigación: partir de esta configuración (Adam, schedule polinómico) para entrenar desde cero con un conjunto de datos propio y semillas controladas.
 - Comparación de recetas de entrenamiento: emplear `training_args.json` como plantilla de hiperparámetros iniciales para replicar experimentos con presupuesto de ajuste equivalente.
-- Docencia y formación: ilustrar el flujo completo de publicación de un modelo en HuggingFace con pesos, configuración y argumentos de entrenamiento separados.
+- Docencia y formación: ilustrar el flujo completo de publicación de un modelo en Hugging Face con pesos, configuración y argumentos de entrenamiento separados.
 - Integración con adaptadores: desarrollar el adaptador explícito necesario para cargar el modelo con APIs genéricas, como paso previo a cualquier evaluación real.
 
 ## Benchmarks y rendimiento
@@ -80,5 +80,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vikasagarwal1986/coca-multitask92
+- Hugging Face: https://huggingface.co/vikasagarwal1986/coca-multitask92
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3-30B-A3B-M-SMoE-ngroups96-adaptive es una variante experimental del modelo Qwen3-30B-A3B publicada por el usuario Dohyeon1 en HuggingFace. Se trata de un transformer de arquitectura MoE (mixture of experts) con 30.532.122.624 parametros totales, tal y como confirman los pesos en safetensors del repositorio. El sufijo del nombre sugiere una modificacion del esquema de enrutamiento de expertos (SMoE, "sparse mixture of experts") con 96 grupos y un mecanismo adaptativo, aunque el autor no documenta en la model card en que consiste exactamente dicha modificacion.
+Qwen3-30B-A3B-M-SMoE-ngroups96-adaptive es una variante experimental del modelo Qwen3-30B-A3B publicada por el usuario Dohyeon1 en Hugging Face. Se trata de un transformer de arquitectura MoE (mixture of experts) con 30.532.122.624 parametros totales, tal y como confirman los pesos en safetensors del repositorio. El sufijo del nombre sugiere una modificacion del esquema de enrutamiento de expertos (SMoE, "sparse mixture of experts") con 96 grupos y un mecanismo adaptativo, aunque el autor no documenta en la model card en que consiste exactamente dicha modificacion.
 
-El modelo parte de la familia Qwen3, desarrollada por Alibaba Qwen, y la nomenclatura "30B-A3B" es la empleada por Qwen para indicar 30.000 millones de parametros totales y aproximadamente 3.000 millones activos por token. La model card publicada es la plantilla automatica de HuggingFace, sin informacion rellenada: no se declaran datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. Creado el 15 de septiembre de 2026 y con cero descargas y cero likes, se trata de un checkpoint de investigacion sin validacion externa.
+El modelo parte de la familia Qwen3, desarrollada por Alibaba Qwen, y la nomenclatura "30B-A3B" es la empleada por Qwen para indicar 30.000 millones de parametros totales y aproximadamente 3.000 millones activos por token. La model card publicada es la plantilla automatica de Hugging Face, sin informacion rellenada: no se declaran datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. Creado el 15 de septiembre de 2026 y con cero descargas y cero likes, se trata de un checkpoint de investigacion sin validacion externa.
 
 Su relevancia actual es limitada pero concreta: sirve como material de estudio para quien investigue variantes de enrutamiento en MoE y quiera comparar el comportamiento de un esquema de 96 grupos frente a la configuracion original de Qwen3-30B-A3B. No es un modelo recomendable para produccion sin una evaluacion previa por parte del equipo que lo adopte.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada pero concreta: sirve como material de estudio p
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); tag de HuggingFace `qwen3_moe` |
+| Arquitectura | Transformer con mezcla de expertos (MoE); tag de Hugging Face `qwen3_moe` |
 | Parametros totales | 30.532.122.624 (30,53 B), dato real de los safetensors |
 | Parametros activos | Aproximadamente 3 B segun la nomenclatura "A3B" del modelo base Qwen3-30B-A3B; no confirmado en la informacion proporcionada para esta variante |
 | Longitud de contexto | No disponible en la informacion proporcionada; el modelo base Qwen3-30B-A3B declara 32.768 tokens nativos ampliables a 131.072 con YaRN |
@@ -81,7 +81,7 @@ La diferencia practica mas relevante frente al Qwen3-30B-A3B oficial no es de re
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace sin ningun campo rellenado; no se describe el entrenamiento, los datos ni el metodo de construccion de la variante.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face sin ningun campo rellenado; no se describe el entrenamiento, los datos ni el metodo de construccion de la variante.
 - Licencia no declarada: al no especificarse, no hay garantia juridica de uso comercial. Aunque el modelo base Qwen3 se publica bajo Apache-2.0, la modificacion introduce incertidumbre sobre la licencia aplicable al checkpoint derivado.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; sin evaluacion publicada no puede acotarse su magnitud.
 - Sesgos desconocidos: no se han realizado evaluaciones de sesgo, toxicidad ni seguridad.
@@ -93,7 +93,7 @@ La diferencia practica mas relevante frente al Qwen3-30B-A3B oficial no es de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96-adaptive
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96-adaptive
 - Paper citado en la plantilla de la model card (calculo de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML: https://mlco2.github.io/impact
 

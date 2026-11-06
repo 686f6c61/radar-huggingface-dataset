@@ -95,7 +95,7 @@ La comparación relevante no es de calidad bruta sino de encaje: frente a Qwen3-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satuke/s1-mini-coreai-ios
+- Modelo en Hugging Face: https://huggingface.co/satuke/s1-mini-coreai-ios
 - Modelo base superwhisper/s1-mini: https://huggingface.co/superwhisper/s1-mini
 - Modelo original Qwen3-0.6B (Alibaba Cloud): https://huggingface.co/Qwen/Qwen3-0.6B
 - Librería de exportación e inferencia de Apple: https://github.com/apple/coreai-models

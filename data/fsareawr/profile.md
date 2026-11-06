@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fsareawr/profile` es un repositorio alojado en HuggingFace que, a tenor de su contenido, no contiene un modelo de inteligencia artificial sino la model card de un perfil profesional. El README describe a Julian Vane (`@goooem`), un ingeniero de sistemas embebidos y DSP de audio en tiempo real radicado en Gotemburgo (Suecia), con proyectos centrados en firmware determinista, pipelines de audio de baja latencia y nodos de sensores en el borde. No se declara arquitectura, pesos, tokenizador ni pipeline de inferencia asociado.
+`fsareawr/profile` es un repositorio alojado en Hugging Face que, a tenor de su contenido, no contiene un modelo de inteligencia artificial sino la model card de un perfil profesional. El README describe a Julian Vane (`@goooem`), un ingeniero de sistemas embebidos y DSP de audio en tiempo real radicado en Gotemburgo (Suecia), con proyectos centrados en firmware determinista, pipelines de audio de baja latencia y nodos de sensores en el borde. No se declara arquitectura, pesos, tokenizador ni pipeline de inferencia asociado.
 
 El repositorio carece de metadatos propios de un modelo: no hay licencia declarada, no se especifican idiomas, no hay pipeline asignado y el recuento de descargas y likes es cero en el momento de la consulta. Las etiquetas se limitan a `region:us`. La creación y última actualización datan del 2 y 3 de noviembre de 2026 respectivamente, con una diferencia de unos 35 minutos entre ambas.
 
@@ -37,7 +37,7 @@ Los únicos elementos técnicos mencionados en el README pertenecen al dominio d
 
 ## Casos de uso
 
-- Evaluación de repositorios en HuggingFace: este caso sirve para ilustrar la detección de repositorios que no contienen modelos, útil en pipelines de catalogación automática que deban descartar entradas sin artefactos de inferencia.
+- Evaluación de repositorios en Hugging Face: este caso sirve para ilustrar la detección de repositorios que no contienen modelos, útil en pipelines de catalogación automática que deban descartar entradas sin artefactos de inferencia.
 - Auditoría de metadatos: permite comprobar cómo un repositorio puede publicarse sin licencia, idiomas ni pipeline, lo que obliga a los sistemas de descubrimiento a manejar valores ausentes.
 - Verificación de model cards: ejemplo de documento que, pese a estar en formato de model card, contiene información biográfica y no técnica, relevante para validadores de esquema.
 - Formación sobre higiene de metadatos: caso práctico para explicar qué campos mínimos debería exigir un registro de modelos antes de indexarlo.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 No procede comparación con modelos de la misma categoría, ya que el repositorio no contiene un modelo. A modo de contexto, se contrasta con repositorios que sí publican artefactos:
 
-| Aspecto | `fsareawr/profile` | Repositorio de modelo típico en HuggingFace |
+| Aspecto | `fsareawr/profile` | Repositorio de modelo típico en Hugging Face |
 |---|---|---|
 | Contenido | Model card biográfica | Pesos, configuración, tokenizador |
 | Pipeline declarado | No disponible | `text-generation`, `image-text-to-text`, etc. |
@@ -83,7 +83,7 @@ No procede comparación con modelos de la misma categoría, ya que el repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fsareawr/profile
+- Repositorio en Hugging Face: https://huggingface.co/fsareawr/profile
 - Perfil de GitHub del autor citado en el README: https://github.com/goooem
 - Proyecto poly-phase: https://github.com/goooem/poly-phase
 - Proyecto whisper-dsp: https://github.com/goooem/whisper-dsp

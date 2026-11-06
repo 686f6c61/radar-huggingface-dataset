@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos con modelos de proposito gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SkyIsNotGreen/hive-auditor-1.7b-v1
+- Modelo en Hugging Face: https://huggingface.co/SkyIsNotGreen/hive-auditor-1.7b-v1
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Repositorio Hive: https://github.com/sky-is-green/hive
 - Guia de instalacion de Hive: https://github.com/sky-is-green/hive#install

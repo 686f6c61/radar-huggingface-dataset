@@ -17,7 +17,7 @@ Su relevancia radica en dos factores: por un lado, el sistema completo declara g
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible para este fine-tune; el modelo base Qwen3-4B declara 32.768 tokens nativos, ampliables con YaRN |
 | Tipos de cuantización | No disponible en la información proporcionada; el repositorio se distribuye en precisión completa (bf16, ~8,4 GB) |
-| Idiomas soportados | La model card del sistema declara más de 50 idiomas; el metadato de HuggingFace no especifica lista concreta |
+| Idiomas soportados | La model card del sistema declara más de 50 idiomas; el metadato de Hugging Face no especifica lista concreta |
 | Licencia | MIT |
 | Formato de pesos | safetensors (`transformers`) |
 
@@ -76,10 +76,10 @@ Datos de velocidad declarados por el proyecto para el sistema completo (no desgl
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| acestep-5Hz-lm-4B (este) | 4,19 B | No disponible | Planificador musical + CoT, comprensión de audio | MIT | HuggingFace (república de terceros) |
-| acestep-5Hz-lm-1.7B | ~1,7 B (no confirmado en safetensors) | No disponible | Planificador musical, capacidades medias | MIT | HuggingFace (colección ACE-Step) |
-| acestep-5Hz-lm-0.6B | ~0,6 B (no confirmado en safetensors) | No disponible | Planificador musical, copia de melodía débil | MIT | HuggingFace (colección ACE-Step) |
-| Qwen3-4B (modelo base) | ~4 B | 32.768 tokens nativos | LLM generalista, multilingüe, con modo thinking | Apache-2.0 | HuggingFace (oficial) |
+| acestep-5Hz-lm-4B (este) | 4,19 B | No disponible | Planificador musical + CoT, comprensión de audio | MIT | Hugging Face (república de terceros) |
+| acestep-5Hz-lm-1.7B | ~1,7 B (no confirmado en safetensors) | No disponible | Planificador musical, capacidades medias | MIT | Hugging Face (colección ACE-Step) |
+| acestep-5Hz-lm-0.6B | ~0,6 B (no confirmado en safetensors) | No disponible | Planificador musical, copia de melodía débil | MIT | Hugging Face (colección ACE-Step) |
+| Qwen3-4B (modelo base) | ~4 B | 32.768 tokens nativos | LLM generalista, multilingüe, con modo thinking | Apache-2.0 | Hugging Face (oficial) |
 
 Frente a Qwen3-4B, este modelo intercambia amplitud de dominio por especialización musical (CoT de metadatos, query rewrite, comprensión de audio) y cambia la licencia a MIT. Frente a sus hermanos de 0,6B y 1,7B, la diferencia declarada es de calidad en composición y copia de melodía, no de contexto ni de arquitectura. No se dispone de comparativas cuantitativas con otros modelos de planificación musical de código abierto.
 
@@ -97,10 +97,10 @@ Frente a Qwen3-4B, este modelo intercambia amplitud de dominio por especializaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Allinsama/ACE-Step__acestep-5Hz-lm-4B
-- Colección ACE-Step 1.5 en HuggingFace: https://huggingface.co/collections/ACE-Step/ace-step-15
+- Repositorio en Hugging Face: https://huggingface.co/Allinsama/ACE-Step__acestep-5Hz-lm-4B
+- Colección ACE-Step 1.5 en Hugging Face: https://huggingface.co/collections/ACE-Step/ace-step-15
 - Página del proyecto: https://ace-step.github.io/ace-step-v1.5.github.io/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - ModelScope: https://modelscope.cn/models/ACE-Step/ACE-Step-v1-5
 - Informe técnico (arXiv): https://arxiv.org/abs/2602.00744
 - Repositorio GitHub citado: https://github.com/ace-step/ACE-Step-1.5

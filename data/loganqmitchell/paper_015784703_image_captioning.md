@@ -52,14 +52,14 @@ No procede. No se puede comparar un documento con modelos de imagen a texto como
 ## Limitaciones y advertencias
 
 - No es un modelo ejecutable: no se puede utilizar para generar descripciones de imágenes ni para ninguna tarea de IA.
-- El contenido del paper no está disponible públicamente en la página de HuggingFace; solo se ofrece el archivo Markdown, cuyo contenido no se ha hecho visible en la model card.
+- El contenido del paper no está disponible públicamente en la página de Hugging Face; solo se ofrece el archivo Markdown, cuyo contenido no se ha hecho visible en la model card.
 - La licencia CC-BY-4.0 permite el uso comercial, pero exige atribución. No hay restricciones adicionales.
 - La fecha de creación y actualización es futura (2026-08-22), lo que sugiere que el repositorio puede ser un artefacto generado de forma automática o una prueba, no una publicación revisada.
 - No hay garantías de calidad científica del documento; al no haber revisión por pares ni métricas, su validez debe ser evaluada por el lector.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LoganQmitchell/paper_015784703_image_captioning
+- Repositorio de Hugging Face: https://huggingface.co/LoganQmitchell/paper_015784703_image_captioning
 - Artículo relacionado en IEEE (no vinculado directamente, pero relevante al tema): https://ieeexplore.ieee.org/document/10441058
 - Repositorio de BLIP (modelo de image captioning de Salesforce): https://github.com/salesforce/BLIP
 - Google Scholar (para búsqueda de papers relacionados): https://scholar.google.com/

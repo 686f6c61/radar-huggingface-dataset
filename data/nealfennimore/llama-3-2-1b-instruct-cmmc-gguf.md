@@ -96,7 +96,7 @@ Frente al modelo base, la comparativa es directa: el ajuste CMMC mejora recall F
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nealfennimore/Llama-3.2-1B-Instruct-CMMC-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nealfennimore/Llama-3.2-1B-Instruct-CMMC-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Repositorio de la aplicación cmmc-app: https://github.com/nealfennimore/cmmc
 - NIST SP 800-171 Rev. 2: https://csrc.nist.gov/pubs/sp/800/171/r2/upd1/final

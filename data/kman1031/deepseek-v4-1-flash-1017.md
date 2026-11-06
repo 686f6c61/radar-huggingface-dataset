@@ -6,7 +6,7 @@ DeepSeek-V4.1-Flash-1017 es una actualizacion menor del modelo DeepSeek-V4.1-Fla
 
 La relevancia de esta version radica en las mejoras declaradas por el autor sobre la version anterior en razonamiento, codigo, tareas agenticas y benchmarks visuales, junto con una reduccion del tiempo de ejecucion de tareas y de la longitud de salida, lo que desplaza la frontera de Pareto entre rendimiento y coste. El modelo declara una ventana de contexto de 1M tokens y un maximo de generacion recomendado de al menos 256K tokens.
 
-El repositorio corresponde a una cuenta de usuario (kman1031) y no al espacio oficial de DeepSeek-AI en HuggingFace; la model card reproduce la estructura y los enlaces del repositorio oficial, pero la procedencia de los pesos no esta verificada por el autor original. Esta ficha recoge exclusivamente los datos disponibles en la informacion proporcionada.
+El repositorio corresponde a una cuenta de usuario (kman1031) y no al espacio oficial de DeepSeek-AI en Hugging Face; la model card reproduce la estructura y los enlaces del repositorio oficial, pero la procedencia de los pesos no esta verificada por el autor original. Esta ficha recoge exclusivamente los datos disponibles en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El repositorio corresponde a una cuenta de usuario (kman1031) y no al espacio of
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo. El tag `deepseek_v41` y la libreria `transformers` indican integracion con el ecosistema HuggingFace Transformers, pero no se especifica si se trata de un transformer denso, un modelo MoE o una arquitectura hibrida, ni el numero de parametros activos. El titulo de la cita tecnica asociada ("Pushing the Limits of KV Cache Compression") sugiere que el trabajo se centra en la compresion de la cache KV, lo que resulta coherente con una ventana de contexto de 1M tokens, pero no se aportan detalles sobre el mecanismo concreto.
+La informacion proporcionada no detalla la arquitectura interna del modelo. El tag `deepseek_v41` y la libreria `transformers` indican integracion con el ecosistema Hugging Face Transformers, pero no se especifica si se trata de un transformer denso, un modelo MoE o una arquitectura hibrida, ni el numero de parametros activos. El titulo de la cita tecnica asociada ("Pushing the Limits of KV Cache Compression") sugiere que el trabajo se centra en la compresion de la cache KV, lo que resulta coherente con una ventana de contexto de 1M tokens, pero no se aportan detalles sobre el mecanismo concreto.
 
 Tampoco se dispone de datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento. La model card menciona mejoras en tareas agenticas y visuales respecto a la version anterior, pero no describe el proceso de entrenamiento que las produce. El modelo se distribuye sin plantilla de chat en formato Jinja; en su lugar se incluye una implementacion de referencia en Python (`encoding/encoding.py`) con casos de prueba para conversaciones multi-turno, tool calling, thinking mode, esfuerzo de razonamiento numerico, mensajes de sistema a mitad de conversacion y contenido de imagen intercalado.
 
@@ -104,10 +104,10 @@ Los datos de parametros, contexto y licencia de los modelos comparados no se det
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kman1031/DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/kman1031/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial de referencia: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe tecnico (PDF citado en la model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Herramienta de codificacion de prompts: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/

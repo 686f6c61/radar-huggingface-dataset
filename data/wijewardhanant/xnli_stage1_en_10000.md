@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_stage1_en_10000 es un adaptador LoRA (PEFT) publicado en HuggingFace sobre el modelo base meta-llama/Llama-2-7b-hf. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base de Meta para poder ejecutar inferencia. El repositorio ocupa 0,5 GB, un tamano considerable para un adaptador LoRA estandar, lo que sugiere un rango y un conjunto de modulos objetivo relativamente amplios, aunque el autor no documenta ni el rango, ni el alpha, ni los modulos afectados.
+WijewardhanaNT/xnli_stage1_en_10000 es un adaptador LoRA (PEFT) publicado en Hugging Face sobre el modelo base meta-llama/Llama-2-7b-hf. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base de Meta para poder ejecutar inferencia. El repositorio ocupa 0,5 GB, un tamano considerable para un adaptador LoRA estandar, lo que sugiere un rango y un conjunto de modulos objetivo relativamente amplios, aunque el autor no documenta ni el rango, ni el alpha, ni los modulos afectados.
 
-El identificador del repositorio apunta a un ajuste fino orientado a XNLI (Cross-lingual Natural Language Inference), en su fase 1 y con 10.000 ejemplos en ingles, segun la convencion de nombres empleada. Ninguno de estos extremos esta confirmado en la model card, que es la plantilla por defecto de HuggingFace y no contiene informacion cumplimentada: no hay descripcion, no hay datos de entrenamiento, no hay resultados de evaluacion y no hay licencia declarada. Debe tratarse, por tanto, como un artefacto experimental sin documentar.
+El identificador del repositorio apunta a un ajuste fino orientado a XNLI (Cross-lingual Natural Language Inference), en su fase 1 y con 10.000 ejemplos en ingles, segun la convencion de nombres empleada. Ninguno de estos extremos esta confirmado en la model card, que es la plantilla por defecto de Hugging Face y no contiene informacion cumplimentada: no hay descripcion, no hay datos de entrenamiento, no hay resultados de evaluacion y no hay licencia declarada. Debe tratarse, por tanto, como un artefacto experimental sin documentar.
 
 Su relevancia actual es limitada y de caracter tecnico: sirve como ejemplo de adaptador PEFT ligero sobre Llama 2 y como posible punto de partida para experimentos de inferencia de lenguaje natural (NLI) y clasificacion zero-shot. El repositorio registra 0 descargas y 0 likes, y la busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo, el autor ni el dataset utilizado.
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada y de caracter tecnico: sirve como ejemplo de ad
 | Formato de pesos | safetensors (adaptador PEFT/LoRA). Libreria declarada: peft |
 | Modulos objetivo y rango LoRA | No disponible |
 | Version de PEFT usada en el entrenamiento | 0.21.0 (segun la model card) |
-| Fecha de creacion del repositorio | 3 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 3 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_stage1_en_10000 | 7B (base) + adaptador LoRA | 4.096 tokens (heredado) | No declarada (base: Llama 2 Community License) | Adaptador PEFT en HuggingFace, 0 descargas | No disponibles |
-| meta-llama/Llama-2-7b-hf | 7B | 4.096 tokens | Llama 2 Community License | Pesos completos en HuggingFace | MMLU ~45,3; resultados publicados por Meta |
-| meta-llama/Meta-Llama-3.1-8B | 8B | 128.000 tokens | Llama 3.1 Community License | Pesos completos en HuggingFace | MMLU ~69; resultados publicados por Meta |
-| mistralai/Mistral-7B-v0.1 | 7B | 8.192 tokens | Apache 2.0 | Pesos completos en HuggingFace | MMLU ~60,1; resultados publicados por Mistral AI |
+| WijewardhanaNT/xnli_stage1_en_10000 | 7B (base) + adaptador LoRA | 4.096 tokens (heredado) | No declarada (base: Llama 2 Community License) | Adaptador PEFT en Hugging Face, 0 descargas | No disponibles |
+| meta-llama/Llama-2-7b-hf | 7B | 4.096 tokens | Llama 2 Community License | Pesos completos en Hugging Face | MMLU ~45,3; resultados publicados por Meta |
+| meta-llama/Meta-Llama-3.1-8B | 8B | 128.000 tokens | Llama 3.1 Community License | Pesos completos en Hugging Face | MMLU ~69; resultados publicados por Meta |
+| mistralai/Mistral-7B-v0.1 | 7B | 8.192 tokens | Apache 2.0 | Pesos completos en Hugging Face | MMLU ~60,1; resultados publicados por Mistral AI |
 
 La comparacion directa no es posible: no existen datos de evaluacion del adaptador, por lo que solo puede contrastarse su ficha tecnica formal. Frente al modelo base, la unica diferencia verificable es la presencia del adaptador LoRA; frente a Llama 3.1 8B y Mistral 7B, la desventaja en longitud de contexto (4.096 frente a 128.000 y 8.192 tokens respectivamente) y en licencia (Apache 2.0 en el caso de Mistral, con condiciones mas permisivas para uso comercial) es notable.
 
@@ -91,7 +91,7 @@ La comparacion directa no es posible: no existen datos de evaluacion del adaptad
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_stage1_en_10000
+- Repositorio del modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_stage1_en_10000
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

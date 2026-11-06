@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `deep101godhani/nord` en HuggingFace no contiene información descriptiva en su model card. La única metadata disponible es la licencia MIT y la etiqueta `region:us`. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades del modelo. Por tanto, no es posible realizar una evaluación técnica completa ni determinar su relevancia actual.
+El repositorio `deep101godhani/nord` en Hugging Face no contiene información descriptiva en su model card. La única metadata disponible es la licencia MIT y la etiqueta `region:us`. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades del modelo. Por tanto, no es posible realizar una evaluación técnica completa ni determinar su relevancia actual.
 
-Los resultados de búsqueda web no aportan información fiable sobre este repositorio concreto. El único resultado con nombre similar, "NoRD: A Data-Efficient Vision-Language-Action Model that Drives without...", corresponde a un proyecto de conducción autónoma (nord-vla-ai.github.io) que no tiene relación confirmada con el repositorio de HuggingFace. Se recomienda consultar directamente el repositorio o contactar con el autor para obtener documentación.
+Los resultados de búsqueda web no aportan información fiable sobre este repositorio concreto. El único resultado con nombre similar, "NoRD: A Data-Efficient Vision-Language-Action Model that Drives without...", corresponde a un proyecto de conducción autónoma (nord-vla-ai.github.io) que no tiene relación confirmada con el repositorio de Hugging Face. Se recomienda consultar directamente el repositorio o contactar con el autor para obtener documentación.
 
 ## Especificaciones técnicas
 
@@ -61,5 +61,5 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deep101godhani/nord
+- Hugging Face: https://huggingface.co/deep101godhani/nord
 - No hay otros enlaces relevantes. Los resultados de búsqueda web no corresponden a este repositorio concreto. El proyecto "NoRD" de conducción autónoma (https://nord-vla-ai.github.io/) no tiene relación confirmada con el modelo aquí descrito.

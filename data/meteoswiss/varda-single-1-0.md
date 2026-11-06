@@ -6,7 +6,7 @@ Varda-single-1.0 es un sistema de prediccion meteorologica determinista basado e
 
 Tecnicamente, Varda-single-1.0 se compone de dos modelos independientes de tipo Graph Transformer con arquitectura encoder-processor-decoder, entrenados sobre una malla estirada: un grid global de 31 km refinado hasta 1 km sobre Suiza y la region alpina circundante. El primer componente es un predictor autorregresivo que avanza en pasos de 6 horas; el segundo es un downscaler temporal horario que reconstruye los cinco estados intermedios entre dos predicciones consecutivas de 6 horas.
 
-Su relevancia radica en dos factores: por un lado, demuestra la viabilidad de la prediccion data-driven a escala regional en topografia compleja, donde los modelos globales tienen dificultades; por otro, se construye sobre Anemoi, el framework de codigo abierto para prediccion meteorologica data-driven co-desarrollado por ECMWF y varios servicios meteorologicos nacionales europeos. Los pesos se publican en HuggingFace bajo licencia CC BY 4.0, con un repositorio de 3,0 GB.
+Su relevancia radica en dos factores: por un lado, demuestra la viabilidad de la prediccion data-driven a escala regional en topografia compleja, donde los modelos globales tienen dificultades; por otro, se construye sobre Anemoi, el framework de codigo abierto para prediccion meteorologica data-driven co-desarrollado por ECMWF y varios servicios meteorologicos nacionales europeos. Los pesos se publican en Hugging Face bajo licencia CC BY 4.0, con un repositorio de 3,0 GB.
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ Su relevancia radica en dos factores: por un lado, demuestra la viabilidad de la
 | Framework | Anemoi (ECMWF y servicios meteorologicos nacionales europeos) |
 | Fecha de creacion | 2026-08-14 |
 | Ultima actualizacion | 2026-10-07 |
-| Descargas / likes en HuggingFace | 10 descargas, 11 likes |
+| Descargas / likes en Hugging Face | 10 descargas, 11 likes |
 | Paper | arXiv:2610.01835 |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - Memoria de sistema: aproximadamente 14 GB de RAM por cada dispositivo GPU.
 - GPU compatibles: A100 (requerida en Colab), 2 x T4 en Kaggle (16 GB cada una, 32 GB agregados).
 - GPU de consumo: una T4 individual de 16 GB no es suficiente; se agota la memoria. No hay datos publicados sobre RTX 4090 u otras GPU de consumo.
-- Opciones de despliegue: `anemoi-inference`, libreria del ecosistema Anemoi, con notebook de ejemplo publicado en el repositorio de HuggingFace. Compatible con notebooks alojados en Kaggle (T4 x2) y Google Colab (A100, requiere Colab Pro).
+- Opciones de despliegue: `anemoi-inference`, libreria del ecosistema Anemoi, con notebook de ejemplo publicado en el repositorio de Hugging Face. Compatible con notebooks alojados en Kaggle (T4 x2) y Google Colab (A100, requiere Colab Pro).
 - Latencia y throughput: una ejecucion completa de extremo a extremo, incluida la instalacion de dependencias y la obtencion de condiciones iniciales, tarda aproximadamente 20 minutos.
 - Conectividad: se requiere acceso a internet para instalar dependencias y descargar las condiciones iniciales desde las plataformas de datos abiertos de MeteoSwiss y ECMWF.
 - Frameworks de servido tipo vLLM, llama.cpp, Ollama o TGI: no aplicables, ya que no es un modelo de lenguaje.
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Resolucion | Horizonte | Naturaleza | Licencia y disponibilidad |
 |---|---|---|---|---|---|
-| Varda-single-1.0 | Prediccion data-driven (Graph Transformer) | 1 km regional / 31 km global | hasta 120 h, salida horaria | Determinista (un unico miembro) | CC BY 4.0, pesos publicados en HuggingFace |
+| Varda-single-1.0 | Prediccion data-driven (Graph Transformer) | 1 km regional / 31 km global | hasta 120 h, salida horaria | Determinista (un unico miembro) | CC BY 4.0, pesos publicados en Hugging Face |
 | ICON-CH1-EPS | Prediccion numerica operativa (NWP) | 1 km | hasta +33 h | Ensemble (EPS) | no disponible en la informacion proporcionada |
 | ICON-CH2-EPS | Prediccion numerica operativa (NWP) | 2 km | hasta +120 h | Ensemble (EPS) | no disponible en la informacion proporcionada |
 
@@ -110,7 +110,7 @@ No se dispone en la informacion proporcionada de datos comparativos sobre otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeteoSwiss/Varda-single-1.0
+- Modelo en Hugging Face: https://huggingface.co/MeteoSwiss/Varda-single-1.0
 - Paper (arXiv:2610.01835): https://arxiv.org/abs/2610.01835
 - Framework Anemoi (documentacion): https://anemoi.readthedocs.io/
 - Framework Anemoi (version en ingles): https://anemoi.readthedocs.io/en/latest/

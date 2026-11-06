@@ -76,10 +76,10 @@ No hay benchmarks comparables publicados entre estos modelos: las cifras de cada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este modelo (asercion de razonamiento, StanfordSCALE) | 109,5 M | 512 tokens (encoder) | no disponible | HuggingFace, 0 descargas, 0 likes | F1 0,545 y ROC-AUC 0,878 en test (declarado por el autor) |
-| sentence-transformers/all-MiniLM-L6-v2 con cabeza SetFit | 22,7 M | 256 tokens | Apache-2.0 | HuggingFace, ampliamente usado | no disponible |
-| distilbert-base-uncased ajustado para clasificacion | 66 M | 512 tokens | Apache-2.0 | HuggingFace, ampliamente usado | no disponible |
-| Otros clasificadores de aserciones de StanfordSCALE (EduBehaviors) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| Este modelo (asercion de razonamiento, StanfordSCALE) | 109,5 M | 512 tokens (encoder) | no disponible | Hugging Face, 0 descargas, 0 likes | F1 0,545 y ROC-AUC 0,878 en test (declarado por el autor) |
+| sentence-transformers/all-MiniLM-L6-v2 con cabeza SetFit | 22,7 M | 256 tokens | Apache-2.0 | Hugging Face, ampliamente usado | no disponible |
+| distilbert-base-uncased ajustado para clasificacion | 66 M | 512 tokens | Apache-2.0 | Hugging Face, ampliamente usado | no disponible |
+| Otros clasificadores de aserciones de StanfordSCALE (EduBehaviors) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No hay benchmarks comparables publicados entre estos modelos: las cifras de cada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_reasoning_behind_a_prior_student_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_reasoning_behind_a_prior_student_contribution
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio GitHub): https://github.com/SumnerLab/TalkMoves

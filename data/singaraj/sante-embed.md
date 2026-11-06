@@ -68,7 +68,7 @@ No se dispone de modelos comparables con datos verificados en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Singaraj/sante-embed
+- Hugging Face: https://huggingface.co/Singaraj/sante-embed
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-Qwen2-1.5B-instruct
 - Paper base: https://arxiv.org/abs/2308.03281
 - Dataset F2LLM-v2: https://huggingface.co/datasets/codefuse-ai/F2LLM-v2

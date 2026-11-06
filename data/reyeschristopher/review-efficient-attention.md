@@ -73,7 +73,7 @@ No disponible. No existen modelos comparables en la misma categoria porque este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reyeschristopher/review-efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/reyeschristopher/review-efficient-attention
 - Artefacto principal citado en la model card: `review.md` (dentro del repositorio)
 - Documentacion del repositorio: `README.md` (dentro del repositorio)
 - Referencias bibliograficas: no disponibles como enlaces directos en la informacion proporcionada

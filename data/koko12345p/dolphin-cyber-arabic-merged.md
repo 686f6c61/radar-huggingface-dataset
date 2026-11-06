@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Koko12345p/dolphin-cyber-arabic-merged` es un modelo de generación de texto publicado en HuggingFace por el usuario Koko12345p. Sus pesos en safetensors suman 1.543.714.304 parámetros (unos 1,54 mil millones), lo que lo sitúa en la franja de 1,5B. Los tags del repositorio (`transformers`, `safetensors`, `qwen2`, `text-generation`, `conversational`, `text-generation-inference`, `endpoints_compatible`) apuntan a un transformer decoder-only de la familia Qwen2, orientado a generación conversacional y desplegable con Text Generation Inference.
+`Koko12345p/dolphin-cyber-arabic-merged` es un modelo de generación de texto publicado en Hugging Face por el usuario Koko12345p. Sus pesos en safetensors suman 1.543.714.304 parámetros (unos 1,54 mil millones), lo que lo sitúa en la franja de 1,5B. Los tags del repositorio (`transformers`, `safetensors`, `qwen2`, `text-generation`, `conversational`, `text-generation-inference`, `endpoints_compatible`) apuntan a un transformer decoder-only de la familia Qwen2, orientado a generación conversacional y desplegable con Text Generation Inference.
 
-El nombre sugiere que se ha construido mediante fusión de pesos ("merged") a partir de un finetune de estilo Dolphin y de uno o varios finetunes orientados a contenido "cyber" y a árabe. Sin embargo, la model card es la plantilla autogenerada de HuggingFace y no contiene ningún dato cumplimentado: no hay información sobre datos de entrenamiento, licencia, idiomas, hiperparámetros ni evaluación.
+El nombre sugiere que se ha construido mediante fusión de pesos ("merged") a partir de un finetune de estilo Dolphin y de uno o varios finetunes orientados a contenido "cyber" y a árabe. Sin embargo, la model card es la plantilla autogenerada de Hugging Face y no contiene ningún dato cumplimentado: no hay información sobre datos de entrenamiento, licencia, idiomas, hiperparámetros ni evaluación.
 
 Su relevancia práctica es hoy limitada: acumula 0 descargas y 0 likes, no tiene documentación técnica y su licencia es desconocida, lo que impide plantear un uso comercial sin aclaración previa del autor. Resulta útil, en todo caso, como objeto de estudio de merges de pesos ligeros y como base para experimentación local en hardware de consumo.
 
@@ -95,7 +95,7 @@ La única conclusión defendible con la información disponible es que este mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Koko12345p/dolphin-cyber-arabic-merged
+- Repositorio en Hugging Face: https://huggingface.co/Koko12345p/dolphin-cyber-arabic-merged
 - Referencia citada en la plantilla de la model card (impacto ambiental del aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto citada en la misma plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales sobre este modelo; la búsqueda web realizada solo devolvió páginas de Wikipedia sin relación.

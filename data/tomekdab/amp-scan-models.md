@@ -4,7 +4,7 @@
 
 AMP-Scan models es un conjunto de modelos de aprendizaje automático desarrollados por tomekdab para la predicción de péptidos antimicrobianos (AMP), integrados en el proyecto de código abierto [ai-amp-search](https://github.com/tomdabro/ai-amp-search). El repositorio contiene cuatro artefactos: un clasificador basado en embeddings de ESM-2 con regresión logística, un clasificador de toxicidad hemolítica, un modelo GPT a nivel de caracteres entrenado sobre secuencias AMP y una versión fine-tuned de ESM-2 con cabeza de clasificación. El objetivo principal es identificar péptidos con actividad antimicrobiana y evaluar su seguridad, un paso crítico en el descubrimiento de nuevos antibióticos frente a la resistencia bacteriana.
 
-El modelo se distribuye bajo licencia MIT y está pensado para su uso en pipelines de biología computacional y descubrimiento de fármacos. Aunque el pipeline_tag de HuggingFace indica text-classification, en realidad se trata de clasificación de secuencias de proteínas. Los modelos son ligeros (el más grande ocupa 134 MB) y pueden ejecutarse en hardware modesto, lo que facilita su integración en flujos de trabajo de investigación. La relevancia actual radica en la creciente necesidad de herramientas rápidas y accesibles para el cribado de péptidos antimicrobianos, especialmente ante la crisis global de resistencia a antibióticos.
+El modelo se distribuye bajo licencia MIT y está pensado para su uso en pipelines de biología computacional y descubrimiento de fármacos. Aunque el pipeline_tag de Hugging Face indica text-classification, en realidad se trata de clasificación de secuencias de proteínas. Los modelos son ligeros (el más grande ocupa 134 MB) y pueden ejecutarse en hardware modesto, lo que facilita su integración en flujos de trabajo de investigación. La relevancia actual radica en la creciente necesidad de herramientas rápidas y accesibles para el cribado de péptidos antimicrobianos, especialmente ante la crisis global de resistencia a antibióticos.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de información suficiente para una comparación cuantitativa con 
 
 | Modelo | Arquitectura | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AMP-Scan (este) | ESM-2 + regresión logística / GPT / ESM-2 fine-tuned | 2,69M - 35M | MIT | HuggingFace, GitHub |
+| AMP-Scan (este) | ESM-2 + regresión logística / GPT / ESM-2 fine-tuned | 2,69M - 35M | MIT | Hugging Face, GitHub |
 | AMP Scanner v2 | CNN (TensorFlow) | no disponible | no disponible | GitHub |
 | Modelos de AMP en general | Varía (CNN, LSTM, transformers) | no disponible | varía | varía |
 
@@ -95,7 +95,7 @@ Se recomienda consultar la literatura especializada para comparaciones rigurosas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomekdab/amp-scan-models
+- Modelo en Hugging Face: https://huggingface.co/tomekdab/amp-scan-models
 - Repositorio GitHub del proyecto: https://github.com/tomdabro/ai-amp-search
 - Paper de GRAMPA (Witten & Witten 2019, bioRxiv): no disponible en la búsqueda, pero referenciado en la model card
 - Paper de ConsAMPHemo (Xie et al. 2025, Protein Science): no disponible en la búsqueda, pero referenciado en la model card

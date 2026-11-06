@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dinghy-law-0.6b-v1-onnx-int8` es una cuantización INT8 weight-only del modelo de embeddings legales `Hanno-Labs/dinghy-law-0.6b-v1`, publicado por el usuario Athithya117 en HuggingFace. El modelo base parte de Qwen3-Embedding-0.6B y produce embeddings de 1024 dimensiones con una ventana de contexto de 8192 tokens, orientado a tareas de recuperación (retrieval) en el dominio jurídico.
+`dinghy-law-0.6b-v1-onnx-int8` es una cuantización INT8 weight-only del modelo de embeddings legales `Hanno-Labs/dinghy-law-0.6b-v1`, publicado por el usuario Athithya117 en Hugging Face. El modelo base parte de Qwen3-Embedding-0.6B y produce embeddings de 1024 dimensiones con una ventana de contexto de 8192 tokens, orientado a tareas de recuperación (retrieval) en el dominio jurídico.
 
 La cuantización emplea el esquema RTN (Round-To-Nearest) weight-only con `MatMulNBits`, 8 bits, block size 32 y simetría, aplicado únicamente a los pesos de 196 nodos `MatMul`; los 57 nodos `MatMul` restantes y todas las activaciones permanecen en FP32. El resultado es un artefacto ONNX de 1066,5 MB frente a los 2273,9 MB del export FP32, una reducción del 53%, manteniendo el pipeline de Sentence-Transformers (`Transformer → last-token Pooling → Dense → L2 Normalize`).
 
@@ -104,7 +104,7 @@ Medición concreta en AMD Ryzen 7 5700U (Zen 2, AVX2, sin VNNI): throughput INT8
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Athithya117/dinghy-law-0.6b-v1-onnx-int8
+- Repositorio Hugging Face: https://huggingface.co/Athithya117/dinghy-law-0.6b-v1-onnx-int8
 - Modelo base: https://huggingface.co/Hanno-Labs/dinghy-law-0.6b-v1
 - Modelo Qwen3-Embedding-0.6B (origen arquitectónico): https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Documentación de Sentence-Transformers: https://www.sbert.net/

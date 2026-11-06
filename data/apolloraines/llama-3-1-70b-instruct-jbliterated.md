@@ -84,7 +84,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La principal difer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-70B-Instruct-Jbliterated
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-70B-Instruct-Jbliterated
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
 - Herramienta DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
 - Licencia Llama 3.1 Community: https://ai.meta.com/llama/license/

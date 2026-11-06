@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-smoke2-lpcheck` | Adaptador LoRA r32 sobre base 120B | No disponible | Apache 2.0 | HuggingFace (repo 5,3 GB) | Model organism de investigación CoT |
-| `openai/gpt-oss-120b` (base) | 120B (MoE) | No disponible | No disponible en esta ficha | HuggingFace | Modelo base sobre el que se entrena el adaptador |
+| `latentMO/cotcontrol-gptoss120b-smoke2-lpcheck` | Adaptador LoRA r32 sobre base 120B | No disponible | Apache 2.0 | Hugging Face (repo 5,3 GB) | Model organism de investigación CoT |
+| `openai/gpt-oss-120b` (base) | 120B (MoE) | No disponible | No disponible en esta ficha | Hugging Face | Modelo base sobre el que se entrena el adaptador |
 | Otros adaptadores CoT-control del mismo sprint | No disponible | No disponible | Apache 2.0 (probable, mismo pipeline) | No disponible | Variantes de ofuscación/OPSD mencionadas en la model card |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de alternativas en la información proporcionada para una comparativa cuantitativa.
@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke2-lpcheck
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke2-lpcheck
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Repositorio de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys (rutas `cot-control/rl/` y `cot-control/results/rl/smoke2-lpcheck/`)

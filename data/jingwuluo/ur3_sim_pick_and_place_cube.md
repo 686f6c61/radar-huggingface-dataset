@@ -81,8 +81,8 @@ Prueba en robot real (cualitativa, sin tasas de éxito registradas): la polític
 
 | Modelo | Base | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio (π0.5 UR3) | π0.5 / openpi | no disponible | no disponible | Simulación MuJoCo (500 y 1000 episodios) + 223 episodios reales | no disponible | HuggingFace, 0 descargas, 1 like |
-| JingwuLuo/pick_and_place_cube_quick_ur3 | π0.5 / openpi | no disponible | no disponible | Solo episodios reales (20.000 pasos, curvatura) | no disponible | HuggingFace |
+| Este repositorio (π0.5 UR3) | π0.5 / openpi | no disponible | no disponible | Simulación MuJoCo (500 y 1000 episodios) + 223 episodios reales | no disponible | Hugging Face, 0 descargas, 1 like |
+| JingwuLuo/pick_and_place_cube_quick_ur3 | π0.5 / openpi | no disponible | no disponible | Solo episodios reales (20.000 pasos, curvatura) | no disponible | Hugging Face |
 | π0.5 base (pi05_base, openpi) | π0.5 | no disponible | no disponible | Preentrenamiento general de Physical Intelligence | no disponible en la información proporcionada | openpi (GitHub) |
 
 La comparación cuantitativa disponible se limita al error en bucle abierto: la política de curvatura entrenada solo con datos reales de `pick_and_place_cube_quick_ur3` obtiene 0,288 / 0,087 / 0,052 en real reservado frente a 0,382 / 0,107 / 0,058 de la etapa 2 equivalente de este repositorio. No hay datos de benchmarks estándar (MMLU, HumanEval, GSM8K) porque el artefacto no es un modelo de lenguaje.
@@ -101,7 +101,7 @@ La comparación cuantitativa disponible se limita al error en bucle abierto: la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JingwuLuo/ur3_sim_pick_and_place_cube
+- Modelo en Hugging Face: https://huggingface.co/JingwuLuo/ur3_sim_pick_and_place_cube
 - Dataset de simulación: https://huggingface.co/datasets/JingwuLuo/ur3_sim_pick_and_place_cube
 - Política entrenada solo con datos reales: https://huggingface.co/JingwuLuo/pick_and_place_cube_quick_ur3
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi

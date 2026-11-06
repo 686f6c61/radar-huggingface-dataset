@@ -80,7 +80,7 @@ No disponible.
 
 ## Enlaces
 
-- [HuggingFace: haik1999/gemma-4-E4B-it-litert-lm](https://huggingface.co/haik1999/gemma-4-E4B-it-litert-lm)
+- [Hugging Face: haik1999/gemma-4-E4B-it-litert-lm](https://huggingface.co/haik1999/gemma-4-E4B-it-litert-lm)
 - [Modelo base: google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - [Modelo en ModelScope: litert-community/gemma-4-E4B-it-litert-lm](https://www.modelscope.cn/models/litert-community/gemma-4-E4B-it-litert-lm)
 - [GitHub: google-ai-edge/LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM)
@@ -88,4 +88,4 @@ No disponible.
 - [CLI de LiteRT-LM](https://ai.google.dev/edge/litert-lm/cli)
 - [Google AI Edge Gallery (Android)](https://play.google.com/store/apps/details?id=com.google.ai.edge.gallery&pli=1)
 - [Google AI Edge Gallery (iOS)](https://apps.apple.com/us/app/google-ai-edge-gallery/id6749645337)
-- [Demo web en HuggingFace Spaces](https://huggingface.co/spaces/tylermullen/Gemma4)
+- [Demo web en Hugging Face Spaces](https://huggingface.co/spaces/tylermullen/Gemma4)

@@ -75,10 +75,10 @@ No se dispone de modelos comparables directamente (misma tarea y misma combinaci
 - La normalización de los datos espectrales depende del entorno de recogida; si se usa en otra planta o condiciones, es necesario recalcular las estadísticas de estandarización.
 - El rendimiento en el subconjunto sin detección YOLO es notablemente inferior (0,667), lo que indica que la fusión depende en gran medida de la calidad del detector.
 - Licencia AGPL-3.0: cualquier uso comercial o modificación debe cumplir con los términos de copyleft, incluyendo la distribución del código fuente si se ofrece como servicio en red.
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB y 0 descargas, lo que sugiere que los archivos del modelo podrían no estar subidos o el repo está vacío. Se recomienda verificar la disponibilidad real de los pesos antes de planificar un despliegue.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB y 0 descargas, lo que sugiere que los archivos del modelo podrían no estar subidos o el repo está vacío. Se recomienda verificar la disponibilidad real de los pesos antes de planificar un despliegue.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yeajongcheol/nir-yolo-fusion)
+- [Modelo en Hugging Face](https://huggingface.co/yeajongcheol/nir-yolo-fusion)
 - [Modelo YOLO base (do1ng/few_shot)](https://huggingface.co/do1ng/few_shot)
 - [Estudio previo con sensor AS7265x para clasificación de plásticos (Sensors, MDPI)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11086069/)

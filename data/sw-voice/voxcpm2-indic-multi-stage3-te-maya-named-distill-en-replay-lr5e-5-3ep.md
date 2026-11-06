@@ -6,7 +6,7 @@ voxcpm2-indic-multi-stage3-te-maya-named-distill-en-replay-lr5e-5-3ep es un mode
 
 El modelo cuenta con 2.290.004.544 parámetros (aproximadamente 2,29 mil millones) en formato safetensors, con un repositorio de 9,5 GB. La model card lo clasifica explícitamente como "research", lo que indica que se trata de un experimento de iteración interna más que de un artefacto listo para producción. La relevancia actual reside en su enfoque de clonación de voz sin referencia (reference-free) aplicada a un contexto multilingüe con lenguas índicas, un área donde la mayoría de sistemas comerciales todavía dependen de muestras de audio en tiempo de inferencia.
 
-La información pública disponible es limitada: no se detallan resultados de benchmarks, arquitectura interna ni composición exacta del dataset más allá de la descripción del proceso de ajuste fino. Esta ficha recoge únicamente los datos verificables de la model card y de los metadatos de HuggingFace.
+La información pública disponible es limitada: no se detallan resultados de benchmarks, arquitectura interna ni composición exacta del dataset más allá de la descripción del proceso de ajuste fino. Esta ficha recoge únicamente los datos verificables de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-te-maya-named-distill-en-replay-lr5e-5-3ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-te-maya-named-distill-en-replay-lr5e-5-3ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep
 - Dataset de telugu: sw-voice/swamiji-telugu-maya-named-distill-500 (referenciado en la model card; no se proporciona URL directa)
 - Dataset de inglés: sw-voice/swamiji-voice-sft-sidon (referenciado en la model card; no se proporciona URL directa)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jevon es un modelo de decisión de 20.105.047 parámetros (aproximadamente 20M) desarrollado por el usuario lewislululu y publicado en HuggingFace bajo el identificador `lewislululu/jevon`. No es un modelo de lenguaje: no genera texto ni decodifica tokens. Su función es responder preguntas tipadas sobre un tablero de rejilla ("¿hacia dónde debo moverme?", "¿está libre el norte?", "¿a qué distancia está el objetivo?") devolviendo distribuciones de probabilidad calibradas sobre un conjunto cerrado de candidatos.
+Jevon es un modelo de decisión de 20.105.047 parámetros (aproximadamente 20M) desarrollado por el usuario lewislululu y publicado en Hugging Face bajo el identificador `lewislululu/jevon`. No es un modelo de lenguaje: no genera texto ni decodifica tokens. Su función es responder preguntas tipadas sobre un tablero de rejilla ("¿hacia dónde debo moverme?", "¿está libre el norte?", "¿a qué distancia está el objetivo?") devolviendo distribuciones de probabilidad calibradas sobre un conjunto cerrado de candidatos.
 
 El modelo es una reimplementación desde cero de la idea de NanoJev (a su vez una replicación abierta y reducida de Jev, de TypeSafe AI) y conserva su interfaz de tres primitivas —`Choice`, `Score` y `Boolean`—, pero sustituye el backbone original por uno nuevo orientado a resolver la principal deficiencia del original: la profundidad de planificación en laberintos. El dominio de evaluación son dos juegos de rejilla: Maze (cuatro topologías, tamaños de 11 a 51) y Snake (tamaños de 8 a 24).
 
@@ -106,7 +106,7 @@ La información proporcionada no incluye tablas comparativas con otros modelos, 
 
 | Modelo | Parámetros | Dominio | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Jevon | 20.105.047 | Maze (11–51), Snake (8–24) | AGPL-3.0-or-later o comercial | HuggingFace `lewislululu/jevon` + `jevon-arcade` | Precisión `maze/choice` 1,0000; `snake/choice` 0,9674 |
+| Jevon | 20.105.047 | Maze (11–51), Snake (8–24) | AGPL-3.0-or-later o comercial | Hugging Face `lewislululu/jevon` + `jevon-arcade` | Precisión `maze/choice` 1,0000; `snake/choice` 0,9674 |
 | NanoJev | no disponible | Grid-world / primitivas Jev | no disponible | GitHub `TianyuCodings/NanoJev` | Referencia de la que Jevon parte; la model card indica que NanoJev fallaba en Maze por falta de profundidad de planificación, sin cifras disponibles |
 | Jev (TypeSafe AI) | no disponible | Decisiones tipadas | no disponible | `typesafe.ai` | Origen conceptual del diseño; sin cifras comparativas disponibles |
 | Backbone tipo transformer de tamaño similar | ~20M | Planificación en rejilla | no aplica | no aplica | La model card afirma que no resuelve el problema, pero no se aportan números concretos |
@@ -126,7 +126,7 @@ La información proporcionada no incluye tablas comparativas con otros modelos, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lewislululu/jevon
+- Modelo en Hugging Face: https://huggingface.co/lewislululu/jevon
 - Repositorio del visor de partidas (jevon-arcade): https://github.com/lewislulu/jevon-arcade
 - NanoJev (implementación de referencia previa): https://github.com/TianyuCodings/NanoJev
 - TypeSafe AI (origen del diseño Jev): https://typesafe.ai

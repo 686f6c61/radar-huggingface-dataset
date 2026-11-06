@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mehmetalisezgin/llm-team01` es un repositorio alojado en HuggingFace bajo la autoría del usuario `mehmetalisezgin`. La informacion publica disponible es minima: la model card asociada unicamente contiene la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no tiene ningun fichero de pesos documentado en la informacion proporcionada.
+`mehmetalisezgin/llm-team01` es un repositorio alojado en Hugging Face bajo la autoría del usuario `mehmetalisezgin`. La informacion publica disponible es minima: la model card asociada unicamente contiene la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no tiene ningun fichero de pesos documentado en la informacion proporcionada.
 
 El modelo no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas (2026-09-15T18:47:15Z), lo que sugiere un repositorio recien creado, posiblemente vacio o en fase de preparacion. No hay evidencia de que contenga pesos entrenados ni de que sea un artefacto publicable.
 
@@ -78,7 +78,7 @@ No disponible. Al no conocerse el tamano, la arquitectura, la longitud de contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mehmetalisezgin/llm-team01
+- Hugging Face: https://huggingface.co/mehmetalisezgin/llm-team01
 - Paper: no disponible.
 - Blog o documentacion adicional: no disponible.
 - Repositorio de codigo: no disponible.

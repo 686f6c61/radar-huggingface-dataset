@@ -6,7 +6,7 @@ Pocket TTS FR 6L es una exportación ONNX en cuantización int8 del variante fra
 
 La relevancia práctica está en el rendimiento en hardware modesto: el autor reporta un RTF de aproximadamente 0,73–0,83 en una máquina aarch64 con 4 hilos, frente a 1,5–1,9 del variante de 24 capas. Eso sitúa la síntesis por debajo del tiempo real en CPU, lo que abre el uso en dispositivos embebidos, servidores sin GPU y pipelines de generación de audio por lotes. El modelo conserva la capacidad de clonación zero-shot del modelo base y está pensado para texto en francés.
 
-La ficha se basa exclusivamente en la model card y los metadatos de HuggingFace; no se han publicado cifras de calidad (MOS, WER, benchmarks de TTS) ni detalles del corpus de entrenamiento original. La licencia es CC-BY-4.0, la misma que los pesos fuente de Kyutai Lab, lo que permite uso comercial con atribución.
+La ficha se basa exclusivamente en la model card y los metadatos de Hugging Face; no se han publicado cifras de calidad (MOS, WER, benchmarks de TTS) ni detalles del corpus de entrenamiento original. La licencia es CC-BY-4.0, la misma que los pesos fuente de Kyutai Lab, lo que permite uso comercial con atribución.
 
 ## Especificaciones tecnicas
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks de calidad en la información dispo
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| zephxs/pocket-tts-onnx-fr-6l | TTS LM + ONNX int8 | no disponible (~165 MB de pesos) | no disponible | fr | CC-BY-4.0 | HuggingFace |
-| kyutai/pocket-tts (variante 24L) | TTS LM | no disponible | no disponible | multilingüe (según modelo base) | CC-BY-4.0 | HuggingFace |
+| zephxs/pocket-tts-onnx-fr-6l | TTS LM + ONNX int8 | no disponible (~165 MB de pesos) | no disponible | fr | CC-BY-4.0 | Hugging Face |
+| kyutai/pocket-tts (variante 24L) | TTS LM | no disponible | no disponible | multilingüe (según modelo base) | CC-BY-4.0 | Hugging Face |
 | Variante `french` 6L sin exportar | TTS LM (PyTorch) | no disponible | no disponible | fr | CC-BY-4.0 | vía kyutai/pocket-tts |
-| Alternativas TTS open source (p. ej. Piper, Coqui XTTS) | TTS neuronal | no disponible en esta ficha | no disponible | varias | varias | HuggingFace / GitHub |
+| Alternativas TTS open source (p. ej. Piper, Coqui XTTS) | TTS neuronal | no disponible en esta ficha | no disponible | varias | varias | Hugging Face / GitHub |
 
 La comparación cuantitativa con Piper, XTTS u otros sistemas TTS no está disponible en la información proporcionada; no se han publicado métricas de calidad que permitan un contraste riguroso.
 
@@ -99,7 +99,7 @@ La comparación cuantitativa con Piper, XTTS u otros sistemas TTS no está dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zephxs/pocket-tts-onnx-fr-6l
+- Modelo en Hugging Face: https://huggingface.co/zephxs/pocket-tts-onnx-fr-6l
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Repositorio de exportación original: https://github.com/csukuangfj/pocket-tts-onnx-export
 - Workflow de exportación de k2-fsa: `.github/workflows/export-pocket-tts.yaml` en el repositorio anterior

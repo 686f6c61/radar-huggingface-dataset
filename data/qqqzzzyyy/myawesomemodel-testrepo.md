@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario qqqzzzyyy bajo el identificador `qqqzzzyyy/MyAwesomeModel-TestRepo`. La información disponible es escasa y contradictoria: las etiquetas del repositorio (`transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`) apuntan a un modelo tipo BERT para extracción de características, mientras que la model card describe un supuesto modelo generativo de razonamiento con modo de pensamiento, function calling y resultados en pruebas como AIME 2025. No hay pesos publicados: el tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario qqqzzzyyy bajo el identificador `qqqzzzyyy/MyAwesomeModel-TestRepo`. La información disponible es escasa y contradictoria: las etiquetas del repositorio (`transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`) apuntan a un modelo tipo BERT para extracción de características, mientras que la model card describe un supuesto modelo generativo de razonamiento con modo de pensamiento, function calling y resultados en pruebas como AIME 2025. No hay pesos publicados: el tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes.
 
 Lo que el autor denomina "MyAwesomeModel" se presenta en la model card como una versión mejorada de un modelo previo, con mejoras atribuidas a más recursos de cómputo y optimizaciones algorítmicas en la fase de post-entrenamiento. Se menciona un aumento de precisión en AIME 2025 del 70 % al 87,5 % entre versiones, con un incremento del consumo medio de tokens por pregunta de 12 000 a 23 000, lo que sugiere un modelo de razonamiento con cadenas de pensamiento largas. También se cita menor tasa de alucinación y mejor soporte de function calling.
 
@@ -110,7 +110,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qqqzzzyyy/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/qqqzzzyyy/MyAwesomeModel-TestRepo
 - Repositorio de código citado en la model card: no disponible (la model card menciona "our code repository" sin proporcionar URL)
 - Web oficial de chat y API citada: no disponible (se menciona "our official website" sin enlace)
 - Paper o informe técnico: no disponible

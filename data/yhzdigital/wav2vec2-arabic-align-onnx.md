@@ -85,7 +85,7 @@ La diferencia principal frente al modelo base es el formato (ONNX fp16 frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YHZDigital/wav2vec2-arabic-align-onnx
+- Modelo en Hugging Face: https://huggingface.co/YHZDigital/wav2vec2-arabic-align-onnx
 - Modelo base: https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-arabic
 - Repositorio transformers.js: https://github.com/huggingface/transformers.js
 - WhisperX (referencia de alineamiento): https://github.com/m-bain/whisperX

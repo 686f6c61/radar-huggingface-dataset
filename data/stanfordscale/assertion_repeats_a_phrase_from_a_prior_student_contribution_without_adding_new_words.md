@@ -72,9 +72,9 @@ No se dispone de datos comparativos publicados para modelos equivalentes de clas
 
 | Modelo | Tipo | Parametros | Contexto | Metrica principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo | Clasificador SetFit (MPNet + LogisticRegression) | 109.486.464 | no disponible | F1 test 0,318 / ROC-AUC 0,931 | no disponible | HuggingFace |
-| sentence-transformers/paraphrase-mpnet-base-v2 | Encoder de frases | no disponible en esta ficha | no disponible | no aplica (no es clasificador de la tarea) | no disponible | HuggingFace |
-| Otros clasificadores del suite EduBehaviors | Clasificadores SetFit | no disponible | no disponible | no disponible | no disponible | HuggingFace (StanfordSCALE) |
+| Este modelo | Clasificador SetFit (MPNet + LogisticRegression) | 109.486.464 | no disponible | F1 test 0,318 / ROC-AUC 0,931 | no disponible | Hugging Face |
+| sentence-transformers/paraphrase-mpnet-base-v2 | Encoder de frases | no disponible en esta ficha | no disponible | no aplica (no es clasificador de la tarea) | no disponible | Hugging Face |
+| Otros clasificadores del suite EduBehaviors | Clasificadores SetFit | no disponible | no disponible | no disponible | no disponible | Hugging Face (StanfordSCALE) |
 
 ## Limitaciones y advertencias
 
@@ -89,8 +89,8 @@ No se dispone de datos comparativos publicados para modelos equivalentes de clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_repeats_a_phrase_from_a_prior_student_contribution_without_adding_new_words
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_repeats_a_phrase_from_a_prior_student_contribution_without_adding_new_words
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves
-- Organizacion en HuggingFace: https://huggingface.co/StanfordSCALE
+- Organizacion en Hugging Face: https://huggingface.co/StanfordSCALE

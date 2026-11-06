@@ -89,8 +89,8 @@ La comparativa directa mas relevante es contra el modelo base en bf16, ya que es
 - Licencia: Apache 2.0, sin restricciones para uso comercial, pero se debe mantener la atribucion correspondiente.
 
 ## Enlaces
-- Modelo cuantizado en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-W4A16-AWQ-GPTQ
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo cuantizado en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-W4A16-AWQ-GPTQ
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial del modelo base en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Receta de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor

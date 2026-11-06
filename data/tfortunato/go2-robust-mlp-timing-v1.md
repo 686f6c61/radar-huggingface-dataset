@@ -4,7 +4,7 @@
 
 `tfortunato/go2-robust-mlp-timing-v1` es una política de control obtenida mediante aprendizaje por refuerzo (RL) para la locomoción del robot cuadrúpedo Unitree Go2. El repositorio la publica como un modelo de tipo `reinforcement-learning` con pesos exportados a ONNX, lo que permite ejecutar la política en un runtime de inferencia ligero sin depender del framework de entrenamiento original.
 
-El nombre del artefacto indica que se trata de una red de tipo MLP (`mlp`), orientada a robustez (`robust`) y con algún tratamiento específico de la componente temporal (`timing`), presumiblemente relacionado con la latencia o la frecuencia del bucle de control. Esta interpretación procede de la nomenclatura del repositorio: la ficha de HuggingFace no incluye descripción, paper ni documentación técnica que la confirme.
+El nombre del artefacto indica que se trata de una red de tipo MLP (`mlp`), orientada a robustez (`robust`) y con algún tratamiento específico de la componente temporal (`timing`), presumiblemente relacionado con la latencia o la frecuencia del bucle de control. Esta interpretación procede de la nomenclatura del repositorio: la ficha de Hugging Face no incluye descripción, paper ni documentación técnica que la confirme.
 
 La relevancia del modelo es práctica: las políticas de locomoción para cuadrúpedos entrenadas en simulación (el tag `mjlab` apunta a un entorno de entrenamiento basado en MuJoCo) suelen necesitar ajustes para transferirse a hardware real, y la robustez frente a perturbaciones temporales es uno de los fallos típicos del sim-to-real. No obstante, el modelo no registra descargas ni interacciones y carece de métricas publicadas, por lo que debe considerarse un artefacto de investigación sin validación externa documentada.
 
@@ -18,7 +18,7 @@ La relevancia del modelo es práctica: las políticas de locomoción para cuadr�
 | Longitud de contexto | no aplica (no es un modelo de lenguaje); ventana de observación del entorno no disponible |
 | Tipos de cuantizacion | no disponible (pesos distribuidos en ONNX; no se documentan variantes cuantizadas) |
 | Idiomas soportados | no aplica (modelo de control motor, no procesa lenguaje) |
-| Licencia | MIT según la etiqueta del repositorio; el campo de licencia de HuggingFace figura como no disponible |
+| Licencia | MIT según la etiqueta del repositorio; el campo de licencia de Hugging Face figura como no disponible |
 | Formato de pesos | ONNX |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| go2-robust-mlp-timing-v1 | no disponible | no aplica | no disponible | MIT (según etiqueta) | HuggingFace, 0 descargas |
+| go2-robust-mlp-timing-v1 | no disponible | no aplica | no disponible | MIT (según etiqueta) | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -75,13 +75,13 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 - Riesgo de fallo en sim-to-real: no se documentan técnicas de aleatorización de dominio ni validaciones en hardware, por lo que el comportamiento fuera del entorno de entrenamiento es incierto.
 - Sesgos y generalización: no hay información sobre terrenos, pendientes, cargas o velocidades cubiertas durante el entrenamiento; es probable que la política se degrade fuera de esa distribución, pero no puede afirmarse ni descartarse con los datos disponibles.
 - Sin validación externa: 0 descargas y 0 interacciones en el momento de la consulta, sin resultados reportados por terceros.
-- Licencia: aunque la etiqueta indica MIT, el campo de licencia de HuggingFace figura como no disponible; conviene confirmar los términos exactos en el repositorio antes de un uso comercial.
+- Licencia: aunque la etiqueta indica MIT, el campo de licencia de Hugging Face figura como no disponible; conviene confirmar los términos exactos en el repositorio antes de un uso comercial.
 - Fechas de publicación: la ficha muestra fechas de creación y actualización de 2026-09-10, poco habituales; conviene verificar la vigencia del artefacto.
 - No aplica el riesgo de alucinación en el sentido de los modelos de lenguaje: el modo de fallo relevante es el fallo de control (caída, oscilación o inestabilidad), no la generación de contenido falso.
 - Sin garantías de seguridad: una política de locomoción no validada no debe ejecutarse sobre hardware físico sin supervisión y mecanismos de parada de emergencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tfortunato/go2-robust-mlp-timing-v1
+- Hugging Face: https://huggingface.co/tfortunato/go2-robust-mlp-timing-v1
 - Paper, blog, repositorio o demo: no disponibles.
 - Los resultados de la búsqueda web realizada no contienen enlaces relacionados con este modelo (corresponden a herramientas de edición de vídeo en árabe) y se descartan por no ser pertinentes.

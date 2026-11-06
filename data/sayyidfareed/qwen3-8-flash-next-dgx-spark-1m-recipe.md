@@ -97,8 +97,8 @@ La comparativa directa con otros modelos de contexto largo no esta disponible en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sayyidfareed/Qwen3.8-Flash-Next-DGX-Spark-1M-Recipe
-- Modelo base en HuggingFace: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/sayyidfareed/Qwen3.8-Flash-Next-DGX-Spark-1M-Recipe
+- Modelo base en Hugging Face: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Modelo original Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Proyecto upstream en GitHub: https://github.com/blazux/qwen3.8-Flash-DGX
 - Repositorio de codigo de este proyecto (mencionado en el README): https://github.com/sayyidfareed/qwen3.8-flash-next-dgx-spark-1m

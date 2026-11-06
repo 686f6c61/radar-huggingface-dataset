@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "KhangTruong/diffusion-diff-minimized-512",
+  "slug": "khangtruong-diffusion-diff-minimized-512",
+  "author": "KhangTruong",
+  "url": "https://huggingface.co/KhangTruong/diffusion-diff-minimized-512",
+  "created_at": "2026-11-02T03:33:18.000Z",
+  "updated_at": "2026-11-02T08:03:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "sid-unet",
+  "languages": [],
+  "tags": [
+    "sid-unet",
+    "pytorch",
+    "image-segmentation",
+    "synthetic-image-detection",
+    "diffusion-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1662837844,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KhangTruong/diffusion-diff-minimized · Hugging Face",
+      "url": "https://huggingface.co/KhangTruong/diffusion-diff-minimized",
+      "snippet": "diffusion-diff-minimized Official repository for diffusion-diff-minimized checkpoints, evaluated on AI-generated image detection and segmentation tasks."
+    },
+    {
+      "title": "Diffusion Diff Minimized 512 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/khangtruong/diffusion-diff-minimized-512",
+      "snippet": "Registry entry for model Diffusion Diff Minimized 512; source metadata pending."
+    }
+  ]
+}

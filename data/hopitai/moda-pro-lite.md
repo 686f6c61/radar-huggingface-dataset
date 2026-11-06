@@ -91,7 +91,7 @@ MODA Pro Lite supera a MODA en títulos cortos (KAGL, Polyvore, Atlas) pero pier
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HopitAI/moda-pro-lite
+- Modelo en Hugging Face: https://huggingface.co/HopitAI/moda-pro-lite
 - Repositorio de archivos: https://huggingface.co/HopitAI/moda-pro-lite/tree/main
 - MODA Pro Lite+ (receta de servicio): https://huggingface.co/HopitAI/moda-pro-lite-plus
 - MODA Duo (enrutamiento por consulta): https://huggingface.co/HopitAI/moda-duo

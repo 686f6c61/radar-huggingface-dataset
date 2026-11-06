@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Audit es un paquete de reconocimiento automático de voz (ASR) publicado por el usuario openmodelai en HuggingFace. No es un modelo entrenado desde cero: es el modelo **Whisper base** multilingüe de OpenAI (unos 74 millones de parámetros, arquitectura transformer encoder-decoder) convertido al formato CTranslate2 y cuantizado a int8, con un envoltorio en Python que añade CLI y servidor HTTP. El repositorio incluye los scripts que reconstruyen los pesos a partir de dos paquetes publicados en PyPI, los unen y los cuantizan, de modo que el binario final ocupa unos 74 MB frente a los ~145 MB en fp16.
+Audit es un paquete de reconocimiento automático de voz (ASR) publicado por el usuario openmodelai en Hugging Face. No es un modelo entrenado desde cero: es el modelo **Whisper base** multilingüe de OpenAI (unos 74 millones de parámetros, arquitectura transformer encoder-decoder) convertido al formato CTranslate2 y cuantizado a int8, con un envoltorio en Python que añade CLI y servidor HTTP. El repositorio incluye los scripts que reconstruyen los pesos a partir de dos paquetes publicados en PyPI, los unen y los cuantizan, de modo que el binario final ocupa unos 74 MB frente a los ~145 MB en fp16.
 
 El problema que resuelve es práctico: ofrecer transcripción de audio a texto multilingüe (99 idiomas, incluidos ruso e inglés) que funcione en CPU sin PyTorch ni GPU, con un único runtime ligero (CTranslate2 vía faster-whisper). Es relevante para despliegues en entornos con recursos limitados o sin acelerador, donde instalar la pila completa de PyTorch no es viable.
 
-Conviene subrayar que el nombre «Audit» no describe una función de auditoría de modelos, sino que es la denominación comercial del paquete; la búsqueda web devuelve mayoritariamente herramientas de auditoría de IA sin relación con este repositorio. La model card está redactada en ruso y el repositorio no declara pipeline, licencia ni idiomas en los metadatos de HuggingFace.
+Conviene subrayar que el nombre «Audit» no describe una función de auditoría de modelos, sino que es la denominación comercial del paquete; la búsqueda web devuelve mayoritariamente herramientas de auditoría de IA sin relación con este repositorio. La model card está redactada en ruso y el repositorio no declara pipeline, licencia ni idiomas en los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -17,8 +17,8 @@ Conviene subrayar que el nombre «Audit» no describe una función de auditoría
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | Ventanas de 30 segundos de audio por segmento (límite nativo de Whisper); sin contexto de texto persistente |
 | Tipos de cuantización | int8 con escalas per-channel (algoritmo de CTranslate2); pesos originales en fp16 (~145 MB) reducidos a ~74 MB |
-| Idiomas soportados | 99 idiomas según la model card (incluye ruso e inglés); la metadata de HuggingFace no los declara |
-| Licencia | MIT para los pesos (OpenAI Whisper) y MIT para el código, según la model card; la metadata de HuggingFace indica «no disponible» y los paquetes de runtime tienen sus propias licencias |
+| Idiomas soportados | 99 idiomas según la model card (incluye ruso e inglés); la metadata de Hugging Face no los declara |
+| Licencia | MIT para los pesos (OpenAI Whisper) y MIT para el código, según la model card; la metadata de Hugging Face indica «no disponible» y los paquetes de runtime tienen sus propias licencias |
 | Formato de pesos | CTranslate2: `model.bin` (int8) + `config.json` + `tokenizer.json` + `vocabulary.txt`; no se distribuyen safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -80,14 +80,14 @@ Audit se sitúa funcionalmente en el mismo punto que `Systran/faster-whisper-bas
 - **No apto para uso forense ni exámenes**: la propia model card lo desaconseja para fines de examen; tampoco debe usarse como registro fiable sin revisión humana.
 - **Segmentación obligatoria**: la ventana nativa de 30 segundos implica trocear audios largos y gestionar las fronteras; una segmentación incorrecta degrada la transcripción.
 - **Ámbito limitado a ASR**: no genera texto libre, no razona, no ejecuta herramientas y no procesa imágenes; cualquier caso de uso que requiera un LLM necesita otro modelo.
-- **Ambigüedad de nombre y de licencia**: el nombre «Audit» se confunde con herramientas de auditoría de modelos, y los metadatos de HuggingFace no declaran licencia ni idiomas, aunque la model card indique MIT. Conviene verificar la licencia de los paquetes de runtime (`faster-whisper`, `ctranslate2`) antes de uso comercial.
+- **Ambigüedad de nombre y de licencia**: el nombre «Audit» se confunde con herramientas de auditoría de modelos, y los metadatos de Hugging Face no declaran licencia ni idiomas, aunque la model card indique MIT. Conviene verificar la licencia de los paquetes de runtime (`faster-whisper`, `ctranslate2`) antes de uso comercial.
 - **Trazabilidad del empaquetado**: los pesos se reconstruyen concatenando dos partes publicadas en PyPI bajo un nombre de autor distinto (`gympulse`), lo que añade un paso de cadena de suministro que debe auditarse (el script verifica SHA-256, pero el hash de referencia no se publica en la model card).
 - **Sesgos heredados**: al no haber ajuste fino, el modelo arrastra los sesgos del corpus de entrenamiento de Whisper en cuanto a variedades dialectales, género y representación lingüística.
 - **Repositorio sin tracción**: 0 descargas y 1 «like» en el momento de la consulta, con fecha de creación en 2026-10-24; no hay evidencia de mantenimiento ni de comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openmodelai/Audit
+- Modelo en Hugging Face: https://huggingface.co/openmodelai/Audit
 - Conversión base en CTranslate2: https://huggingface.co/Systran/faster-whisper-base
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper
 - Modelo Whisper base original: https://huggingface.co/openai/whisper-base

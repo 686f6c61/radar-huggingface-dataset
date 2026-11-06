@@ -80,8 +80,8 @@ No se dispone de datos de benchmarks ni de modelos comparables publicados en la 
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thefinalboss/fractus-cte-atom | Este modelo | ~0,99B totales, 119,6M activos | no disponible | MIT | HuggingFace |
-| thefinalboss/fractus-cte | Proyecto padre (BPE GPT-2) | no disponible (la card del fork cita 1,05B con la cabeza de 50257) | no disponible | no disponible | HuggingFace |
+| thefinalboss/fractus-cte-atom | Este modelo | ~0,99B totales, 119,6M activos | no disponible | MIT | Hugging Face |
+| thefinalboss/fractus-cte | Proyecto padre (BPE GPT-2) | no disponible (la card del fork cita 1,05B con la cabeza de 50257) | no disponible | no disponible | Hugging Face |
 
 Alternativas de la misma categoria o tamano: no disponible.
 
@@ -103,7 +103,7 @@ Alternativas de la misma categoria o tamano: no disponible.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/thefinalboss/fractus-cte-atom
+- Hugging Face del modelo: https://huggingface.co/thefinalboss/fractus-cte-atom
 - Motor fuente (proyecto padre): https://huggingface.co/thefinalboss/fractus-cte
 - Repositorio GitHub: https://github.com/AFKmoney/fractus-cte-atom
 - Fuente del Atomizer: https://github.com/AFKmoney/atom-ai

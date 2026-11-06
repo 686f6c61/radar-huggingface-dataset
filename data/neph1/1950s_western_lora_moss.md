@@ -2,7 +2,7 @@
 
 ## Resumen
 
-1950s Western Lora MOSS es un adaptador LoRA de texto a imagen para el modelo base OpenMOSS-Team/MOSS-Image-Base, publicado por el usuario neph1 en HuggingFace. Su proposito es especializar la generacion del modelo base hacia la estetica del cine del oeste de los anos 50: paletas desaturadas, iluminacion dura de exteriores, composiciones de plano amplio y texturas propias del celuloide de la epoca. El repositorio es un espejo de una version publicada originalmente en Civitai.
+1950s Western Lora MOSS es un adaptador LoRA de texto a imagen para el modelo base OpenMOSS-Team/MOSS-Image-Base, publicado por el usuario neph1 en Hugging Face. Su proposito es especializar la generacion del modelo base hacia la estetica del cine del oeste de los anos 50: paletas desaturadas, iluminacion dura de exteriores, composiciones de plano amplio y texturas propias del celuloide de la epoca. El repositorio es un espejo de una version publicada originalmente en Civitai.
 
 El artefacto es un LoRA, no un modelo completo: pesa 0,3 GB y se carga como adaptador sobre MOSS-Image-Base mediante la libreria diffusers. Esto implica que hereda del modelo base tanto la arquitectura de difusion como el tokenizador de texto y el VAE, y que su calidad final depende de la del modelo sobre el que se aplica.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1950s Western Lora MOSS | LoRA sobre MOSS-Image-Base | no disponible (0,3 GB) | no aplica | Apache 2.0 | HuggingFace y Civitai |
+| 1950s Western Lora MOSS | LoRA sobre MOSS-Image-Base | no disponible (0,3 GB) | no aplica | Apache 2.0 | Hugging Face y Civitai |
 | Modelos LoRA de estilo western para Stable Diffusion | LoRA sobre SD 1.5 o SDXL | no disponible | no aplica | variable segun autor | principalmente Civitai |
-| MOSS-Image-Base | modelo de difusion completo | no disponible | no aplica | no disponible | HuggingFace |
+| MOSS-Image-Base | modelo de difusion completo | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neph1/1950s_western_lora_moss
+- Hugging Face: https://huggingface.co/neph1/1950s_western_lora_moss
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Publicacion original en Civitai: https://civitai.com/models/1925404/1950s-western-movies-lora?modelVersionId=3428086

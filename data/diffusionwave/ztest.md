@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiffusionWave/ztest es un repositorio de pesos publicado en HuggingFace por el usuario u organizacion DiffusionWave bajo licencia Apache 2.0. El repositorio tiene un tamano de 8,0 GB y fue creado el 25 de septiembre de 2026, con una ultima actualizacion apenas nueve minutos despues. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no dispone de model card con contenido tecnico: el unico campo presente es la declaracion de licencia.
+DiffusionWave/ztest es un repositorio de pesos publicado en Hugging Face por el usuario u organizacion DiffusionWave bajo licencia Apache 2.0. El repositorio tiene un tamano de 8,0 GB y fue creado el 25 de septiembre de 2026, con una ultima actualizacion apenas nueve minutos despues. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no dispone de model card con contenido tecnico: el unico campo presente es la declaracion de licencia.
 
 No se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento. El nombre del repositorio ("ztest") sugiere un artefacto de prueba o un volcado de validacion interna del pipeline del autor, mas que una publicacion destinada a uso general, pero esto es una interpretacion del nombre y no un dato confirmado.
 
@@ -60,7 +60,7 @@ No disponible. Al no existir informacion sobre parametros, contexto o tarea obje
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DiffusionWave/ztest | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| DiffusionWave/ztest | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -75,5 +75,5 @@ No disponible. Al no existir informacion sobre parametros, contexto o tarea obje
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DiffusionWave/ztest
+- Repositorio en Hugging Face: https://huggingface.co/DiffusionWave/ztest
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -17,7 +17,7 @@ Se publican cuatro checkpoints correspondientes a los pasos 25, 50, 75 y 100, pe
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada. La model card limita el prefijo de razonamiento privado a 4096 tokens, pero no declara la ventana de contexto total |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada; al ser un adaptador PEFT, las opciones de cuantizacion dependen de la fusion con el modelo base y de la herramienta de despliegue |
-| Idiomas soportados | No disponible en la informacion proporcionada (el campo de idiomas de la ficha de HuggingFace esta vacio) |
+| Idiomas soportados | No disponible en la informacion proporcionada (el campo de idiomas de la ficha de Hugging Face esta vacio) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Adaptador PEFT (pesos y configuracion) mas `trainer_state.json`; el formato de fichero concreto no se especifica en la informacion proporcionada |
 | Modelo base | `Qwen/Qwen3-1.7B`, revision `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` |
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| `pure-opsd-r4-qwen3-1p7b-seed42-public` (este adaptador) | 1,7 mil millones en el base; rango LoRA no disponible | No disponible en la informacion proporcionada | Apache 2.0 | Adaptador en HuggingFace; 0 descargas y 0 likes | No |
-| `Qwen/Qwen3-1.7B` (modelo base) | 1,7 mil millones | 32.768 tokens segun documentacion publica del proveedor | Apache 2.0 | Modelo completo en HuggingFace | Si, en su documentacion |
-| Qwen2.5-1.5B | 1,5 mil millones | 32.768 tokens segun documentacion publica del proveedor | Apache 2.0 | Modelo completo en HuggingFace | Si, en su documentacion |
-| Llama-3.2-1B | 1,24 mil millones | 128.000 tokens segun documentacion publica del proveedor | Llama 3.2 Community License | Modelo completo en HuggingFace | Si, en su documentacion |
+| `pure-opsd-r4-qwen3-1p7b-seed42-public` (este adaptador) | 1,7 mil millones en el base; rango LoRA no disponible | No disponible en la informacion proporcionada | Apache 2.0 | Adaptador en Hugging Face; 0 descargas y 0 likes | No |
+| `Qwen/Qwen3-1.7B` (modelo base) | 1,7 mil millones | 32.768 tokens segun documentacion publica del proveedor | Apache 2.0 | Modelo completo en Hugging Face | Si, en su documentacion |
+| Qwen2.5-1.5B | 1,5 mil millones | 32.768 tokens segun documentacion publica del proveedor | Apache 2.0 | Modelo completo en Hugging Face | Si, en su documentacion |
+| Llama-3.2-1B | 1,24 mil millones | 128.000 tokens segun documentacion publica del proveedor | Llama 3.2 Community License | Modelo completo en Hugging Face | Si, en su documentacion |
 
 Los datos de los tres modelos comparativos proceden de su documentacion publica y no se han verificado con la informacion disponible en esta busqueda. Para este adaptador no existe ninguna comparacion de rendimiento publicada, por lo que no es posible establecer una comparativa cuantitativa de calidad.
 

@@ -79,7 +79,7 @@ No se dispone de información comparativa con otros modelos de corrección de di
 
 ## Enlaces
 
-- [Modelo cuantizado oQ4e en HuggingFace](https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch-oQ4e)
+- [Modelo cuantizado oQ4e en Hugging Face](https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch-oQ4e)
 - [Modelo base bf16](https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch)
 - [Variante GGUF f16](https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch-f16-GGUF)
 - [Variante GGUF q8_0](https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch-q8_0-GGUF)

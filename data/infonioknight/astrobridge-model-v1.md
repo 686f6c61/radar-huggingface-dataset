@@ -64,14 +64,14 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 - No se especifica la licencia del modelo, lo que impide conocer si su uso comercial esta permitido. Se debe contactar con el autor antes de utilizarlo en produccion.
 - El modelo depende del modelo base Qwen/Qwen3.5-9B, que tiene su propia licencia (Apache 2.0 segun Qwen, pero no se confirma en esta ficha). Es necesario verificar la licencia del modelo base por separado.
-- El stack de fusion requiere codigo externo del paquete `captioner` (no publicado en el repositorio de HuggingFace). Sin ese codigo, el adaptador no puede cargarse correctamente.
+- El stack de fusion requiere codigo externo del paquete `captioner` (no publicado en el repositorio de Hugging Face). Sin ese codigo, el adaptador no puede cargarse correctamente.
 - No hay informacion sobre sesgos, alucinaciones o limitaciones de contexto. Al ser un modelo de lenguaje, puede generar descripciones inexactas o inventar detalles si los datos de entrada son ambiguos.
 - El modelo esta especializado en astronomia; su rendimiento en otros dominios no esta garantizado.
 - No se han publicado evaluaciones cuantitativas, por lo que la calidad de las descripciones no esta validada externamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infonioknight/astrobridge-model-v1
+- Modelo en Hugging Face: https://huggingface.co/Infonioknight/astrobridge-model-v1
 - Repositorio AstroBridge (sistema multiagente): https://github.com/open-astro-lab/AstroBridge
 - Libreria AstroBridge en PyPI: https://pypi.org/project/astrobridge/
-- Perfil del autor en HuggingFace: https://huggingface.co/Infonioknight/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Infonioknight/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`viswa752/q-FrozenLake-v1-no-slippery` no es un modelo de lenguaje, sino el artefacto resultante de entrenar un agente de aprendizaje por refuerzo con el algoritmo Q-Learning tabular sobre el entorno `FrozenLake-v1` en su configuracion `4x4-no_slippery`. Lo publica el usuario `viswa752` en HuggingFace y su unico contenido es un fichero `q-learning.pkl` que serializa la tabla Q aprendida, junto con metadatos minimos (identificador del entorno) para poder reconstruir el agente.
+`viswa752/q-FrozenLake-v1-no-slippery` no es un modelo de lenguaje, sino el artefacto resultante de entrenar un agente de aprendizaje por refuerzo con el algoritmo Q-Learning tabular sobre el entorno `FrozenLake-v1` en su configuracion `4x4-no_slippery`. Lo publica el usuario `viswa752` en Hugging Face y su unico contenido es un fichero `q-learning.pkl` que serializa la tabla Q aprendida, junto con metadatos minimos (identificador del entorno) para poder reconstruir el agente.
 
 El problema que resuelve es academico y de referencia: sirve como ejemplo reproducible de un agente que resuelve el entorno clasico de Gymnasium con recompensa media perfecta (1,00 +/- 0,00) cuando el hielo no resbala. Es relevante unicamente como material didactico o como punto de partida para comparar algoritmos (Q-Learning frente a DQN, PPO o SARSA) en un entorno de complejidad minima.
 
@@ -75,7 +75,7 @@ Los metadatos del Hub no incluyen modelos comparables y la busqueda web realizad
 
 | Modelo | Algoritmo | Entorno | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `viswa752/q-FrozenLake-v1-no-slippery` | Q-Learning tabular | FrozenLake-v1 4x4 no_slippery | No disponible | No disponible | Publico en HuggingFace |
+| `viswa752/q-FrozenLake-v1-no-slippery` | Q-Learning tabular | FrozenLake-v1 4x4 no_slippery | No disponible | No disponible | Publico en Hugging Face |
 | Agentes DQN para FrozenLake (implementaciones de referencia) | Deep Q-Network | FrozenLake-v1 | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Agentes PPO para FrozenLake (implementaciones de referencia) | PPO | FrozenLake-v1 | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -93,6 +93,6 @@ Los metadatos del Hub no incluyen modelos comparables y la busqueda web realizad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viswa752/q-FrozenLake-v1-no-slippery
+- Modelo en Hugging Face: https://huggingface.co/viswa752/q-FrozenLake-v1-no-slippery
 - Repositorio de pesos: fichero `q-learning.pkl` incluido en el repositorio anterior.
 - Paper, blog o repositorio adicionales: no disponible. Los resultados de la busqueda web no contienen enlaces relacionados con este modelo (apuntan a paginas de ayuda de YouTube TV y a hilos sin relacion tecnica).

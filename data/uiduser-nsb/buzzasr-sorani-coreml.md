@@ -95,7 +95,7 @@ La comparativa directa solo es posible con el modelo original, del que este es u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UIDUser-NSB/BuzzASR-Sorani-CoreML
+- Modelo en Hugging Face: https://huggingface.co/UIDUser-NSB/BuzzASR-Sorani-CoreML
 - Modelo base (PyTorch): https://huggingface.co/BuzzASR/sorani-kurdish
 - WhisperKit (repositorio de Argmax): https://github.com/argmaxinc/argmax-oss-swift
 - Paper de BuzzASR: https://arxiv.org/abs/2609.09554

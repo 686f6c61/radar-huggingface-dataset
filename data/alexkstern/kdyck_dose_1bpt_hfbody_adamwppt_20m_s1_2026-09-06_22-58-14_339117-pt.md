@@ -74,7 +74,7 @@ No se dispone de datos de parámetros ni de benchmarks para ninguno de ellos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_20M_s1_2026-09-06_22-58-14_339117-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_20M_s1_2026-09-06_22-58-14_339117-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/5adftpks
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Otros checkpoints del experimento:

@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asounimelb/whisper-small-ckb-onnx
+- Modelo en Hugging Face: https://huggingface.co/asounimelb/whisper-small-ckb-onnx
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Variante Whisper Tiny en kurdo central: https://huggingface.co/asounimelb/whisper-tiny-ckb-onnx
 - Variante Whisper Base en kurdo central: https://huggingface.co/asounimelb/whisper-base-ckb-onnx

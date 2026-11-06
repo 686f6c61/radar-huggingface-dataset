@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-W1.88-QAD es un checkpoint latente de destilacion con conciencia de cuantizacion (QAD, quantization-aware distillation) publicado por el usuario MingZwhy en HuggingFace. Se trata del punto de partida del denominado "brazo W1.88" para una etapa posterior de destilacion on-policy (OPD), dentro de un pipeline de investigacion sobre cuantizacion extrema de pesos. El modelo deriva de Qwen/Qwen3-4B, un transformer decoder-only denso de aproximadamente 4.000 millones de parametros, y hereda su licencia Apache-2.0.
+Qwen3-4B-W1.88-QAD es un checkpoint latente de destilacion con conciencia de cuantizacion (QAD, quantization-aware distillation) publicado por el usuario MingZwhy en Hugging Face. Se trata del punto de partida del denominado "brazo W1.88" para una etapa posterior de destilacion on-policy (OPD), dentro de un pipeline de investigacion sobre cuantizacion extrema de pesos. El modelo deriva de Qwen/Qwen3-4B, un transformer decoder-only denso de aproximadamente 4.000 millones de parametros, y hereda su licencia Apache-2.0.
 
 Es importante subrayar que no es un modelo terminado. Segun la propia model card, los tensores almacenados estan en bf16 y no estan cuantizados: el entrenamiento QAD conserva pesos maestros de alta precision y aplica el cuantizador dentro del forward pass, de modo que lo que se guarda es la copia maestra. Cargar este repositorio directamente devuelve un modelo sin cuantizar que, ademas, puntuara mejor en evaluacion que el modelo W1.88 real, lo que puede inducir a error si se compara sin tenerlo en cuenta.
 
@@ -87,7 +87,7 @@ La model card advierte, ademas, de un riesgo metodologico: si se evaluase este c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-4B-W1.88-QAD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-4B-W1.88-QAD
 - Checkpoint recuperado recomendado para evaluacion: https://huggingface.co/MingZwhy/Qwen3-4B-W1.88-QAOPD
 - Repositorio de codigo y receta QAOPD: https://github.com/MingZwhy/QAOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

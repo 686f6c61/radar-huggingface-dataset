@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mindsoulBCI/mindsoul-fingers
+- Repositorio Hugging Face: https://huggingface.co/mindsoulBCI/mindsoul-fingers
 - Página de investigación en GitHub: https://github.com/pm-kevin-zhang/MindSoul
 - Aplicaciones espaciales, juegos y materiales: https://github.com/pm-kevin-zhang/MindSoul-Spatial
 - Sitio web del proyecto: https://MindSoul.cn

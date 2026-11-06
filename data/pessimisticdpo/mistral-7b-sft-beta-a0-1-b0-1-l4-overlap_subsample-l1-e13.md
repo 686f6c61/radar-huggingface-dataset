@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e13` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. Por la nomenclatura del identificador se trata de un ajuste fino derivado de un modelo base Mistral-7B (probablemente de la variante SFT `mistral-7b-sft-beta`), sometido a una etapa adicional de optimizacion de preferencias con hiperparametros etiquetados como `a0.1`, `b0.1`, `l1`, `L4` y `overlap_subsample`. El nombre sugiere un artefacto de investigacion experimental (probablemente una ablacion o una variante de un metodo tipo DPO) mas que un modelo destinado a produccion.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e13` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. Por la nomenclatura del identificador se trata de un ajuste fino derivado de un modelo base Mistral-7B (probablemente de la variante SFT `mistral-7b-sft-beta`), sometido a una etapa adicional de optimizacion de preferencias con hiperparametros etiquetados como `a0.1`, `b0.1`, `l1`, `L4` y `overlap_subsample`. El nombre sugiere un artefacto de investigacion experimental (probablemente una ablacion o una variante de un metodo tipo DPO) mas que un modelo destinado a produccion.
 
-El repositorio no incluye model card sustantiva: la tarjeta publicada es la plantilla automatica de HuggingFace con todos los campos marcados como `[More Information Needed]`. El autor no ha documentado el proceso de entrenamiento, los datos utilizados, la licencia ni los idiomas soportados. El repositorio registra cero descargas y cero likes, y el tamano declarado es de 0,2 GB, una cifra muy inferior a los aproximadamente 14,5 GB que ocuparian los pesos completos de un modelo de 7.000 millones de parametros en fp16 o bf16. Esto apunta a que el repositorio puede contener un adaptador LoRA, un checkpoint parcial o una subida incompleta, extremo que no puede confirmarse con la informacion disponible.
+El repositorio no incluye model card sustantiva: la tarjeta publicada es la plantilla automatica de Hugging Face con todos los campos marcados como `[More Information Needed]`. El autor no ha documentado el proceso de entrenamiento, los datos utilizados, la licencia ni los idiomas soportados. El repositorio registra cero descargas y cero likes, y el tamano declarado es de 0,2 GB, una cifra muy inferior a los aproximadamente 14,5 GB que ocuparian los pesos completos de un modelo de 7.000 millones de parametros en fp16 o bf16. Esto apunta a que el repositorio puede contener un adaptador LoRA, un checkpoint parcial o una subida incompleta, extremo que no puede confirmarse con la informacion disponible.
 
 Su relevancia actual es limitada y de caracter documental: se trata de un ejemplo de artefacto de investigacion publicado sin trazabilidad suficiente para ser evaluado o reutilizado con garantias. Para cualquier uso practico, un desarrollador deberia partir de los modelos base publicos de Mistral-7B o de sus ajustes ampliamente documentados, y no de este checkpoint.
 
@@ -30,7 +30,7 @@ Su relevancia actual es limitada y de caracter documental: se trata de un ejempl
 
 No hay informacion publicada sobre la arquitectura concreta de este checkpoint, mas alla de la etiqueta de libreria `transformers`. El identificador del modelo remite de forma explicita a `mistral-7b-sft-beta`, un ajuste supervisado sobre Mistral-7B, y anade una secuencia de parametros (`a0.1-b0.1-L4-overlap_subsample-l1-e13`) que no se describe en ninguna parte del repositorio. Esos sufijos son compatibles con un experimento de optimizacion de preferencias con coeficientes `alpha = 0,1` y `beta = 0,1`, una configuracion de hardware o capa etiquetada como `L4`, un muestreo con solapamiento (`overlap_subsample`) y una epoca o iteracion `e13`, pero se trata de una interpretacion del nombre, no de un dato verificado.
 
-Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otra tecnica de alineamiento, la precision numerica empleada ni el hardware de entrenamiento. El unico enlace tecnico presente en la tarjeta es la referencia arXiv:1910.09700 (Lacoste et al., cuantificacion de emisiones de carbono en aprendizaje automatico), que forma parte del texto por defecto de la plantilla de HuggingFace y no es un articulo sobre este modelo. No se puede por tanto describir ninguna innovacion tecnica ni confirmar la arquitectura subyacente a partir de la informacion proporcionada.
+Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otra tecnica de alineamiento, la precision numerica empleada ni el hardware de entrenamiento. El unico enlace tecnico presente en la tarjeta es la referencia arXiv:1910.09700 (Lacoste et al., cuantificacion de emisiones de carbono en aprendizaje automatico), que forma parte del texto por defecto de la plantilla de Hugging Face y no es un articulo sobre este modelo. No se puede por tanto describir ninguna innovacion tecnica ni confirmar la arquitectura subyacente a partir de la informacion proporcionada.
 
 ## Capacidades
 
@@ -103,7 +103,7 @@ No es posible comparar rendimiento porque el modelo analizado no publica ninguna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e13
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e13
 - Modelo base probable (ajuste supervisado de referencia): https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Modelo fundacional de la familia: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

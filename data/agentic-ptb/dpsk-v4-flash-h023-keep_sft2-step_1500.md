@@ -59,6 +59,6 @@ La comparativa se limita al modelo base y al modelo que da nombre al repositorio
 - No apto para producción: debido al EOS roto y a su naturaleza intermedia, no se recomienda su uso en aplicaciones reales.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h023.keep_sft2.step_1500
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h023.keep_sft2.step_1500
 - Página oficial de DeepSeek (referencia del nombre): https://deepseek.com/en/index.html
-- Modelo DeepSeek-V4-Flash-0731 en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Modelo DeepSeek-V4-Flash-0731 en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

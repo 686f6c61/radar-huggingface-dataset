@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos de clonación de voz (como
 
 ## Enlaces
 
-- Repositorio HuggingFace de este mirror: https://huggingface.co/latent-variable/pocket-tts-cloning-en
+- Repositorio Hugging Face de este mirror: https://huggingface.co/latent-variable/pocket-tts-cloning-en
 - Modelo original (gated): https://huggingface.co/kyutai/pocket-tts
 - Repositorio sin clonación (ungated): https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - GitHub de Pocket TTS (Kyutai Labs): https://github.com/kyutai-labs/pocket-tts

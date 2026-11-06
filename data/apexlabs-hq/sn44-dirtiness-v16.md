@@ -4,7 +4,7 @@
 
 `apexlabs-hq/sn44-dirtiness-v16` es un detector de objetos basado en ONNX, publicado por el usuario `apexlabs-hq`, cuyo cometido es identificar cinco clases de suciedad en entornos de interior: derrames de liquido, papeleras, basura, moho y manchas. El modelo se sirve de extremo a extremo mediante `miner.py` con el runtime `onnxruntime` y esta disenado para integrarse en un pipeline de inferencia ya existente, presumiblemente asociado a la subred 44 de Bittensor segun el prefijo `sn44` del identificador.
 
-La model card es extremadamente escueta: no declara arquitectura base, numero de parametros, licencia, idiomas ni pipeline de HuggingFace. El repositorio tiene un tamano reportado de 0.0 GB, lo que sugiere que los pesos no estan subidos al hub o que el conteo de archivos no se ha materializado, y no registra descargas ni interacciones. Se trata, por tanto, de un artefacto de despliegue mas que de un modelo fundacional documentado.
+La model card es extremadamente escueta: no declara arquitectura base, numero de parametros, licencia, idiomas ni pipeline de Hugging Face. El repositorio tiene un tamano reportado de 0.0 GB, lo que sugiere que los pesos no estan subidos al hub o que el conteo de archivos no se ha materializado, y no registra descargas ni interacciones. Se trata, por tanto, de un artefacto de despliegue mas que de un modelo fundacional documentado.
 
 Su relevancia es acotada: sirve como pieza concreta de un sistema de deteccion de suciedad con umbrales de confianza calibrados por clase (0.4 en las cinco clases) y una resolucion de entrada de 736 pixeles. Para un desarrollador externo, la ficha resulta util sobre todo para entender el contrato de inferencia (clases, umbrales, formato ONNX) y no tanto para evaluar capacidades generales.
 
@@ -72,6 +72,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/apexlabs-hq/sn44-dirtiness-v16
+- Hugging Face: https://huggingface.co/apexlabs-hq/sn44-dirtiness-v16
 - Modelo base referenciado: https://huggingface.co/manako/Detect-room-dirtiness-detection
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SMAI A4 — MLP on CIFAR-10 es un modelo de clasificación de imágenes de muy pequeño tamaño publicado en HuggingFace por el usuario lolma123 bajo el identificador `lolma123/smai-a4-mlp`. No es un modelo de lenguaje ni un transformer: se trata de un perceptrón multicapa (MLP) de tres capas con arquitectura `3072-256-10_relu`, entrenado para clasificar las imágenes de 32x32x3 del conjunto CIFAR-10 en una de sus 10 categorías. La entrada es un vector de 3072 valores (la imagen aplanada en orden HWC) y la salida son 10 logits sobre los que se aplica softmax cross-entropy.
+SMAI A4 — MLP on CIFAR-10 es un modelo de clasificación de imágenes de muy pequeño tamaño publicado en Hugging Face por el usuario lolma123 bajo el identificador `lolma123/smai-a4-mlp`. No es un modelo de lenguaje ni un transformer: se trata de un perceptrón multicapa (MLP) de tres capas con arquitectura `3072-256-10_relu`, entrenado para clasificar las imágenes de 32x32x3 del conjunto CIFAR-10 en una de sus 10 categorías. La entrada es un vector de 3072 valores (la imagen aplanada en orden HWC) y la salida son 10 logits sobre los que se aplica softmax cross-entropy.
 
 El modelo se presenta como el más pequeño dentro de un margen de 1 punto porcentual respecto a la mejor precisión de validación de un estudio comparativo (referenciado como Sección 1.2.5 de un documento no enlazado). Se distribuyen dos artefactos: un state dict de PyTorch (`torch_mlp_p0.npz`) entrenado durante 100 épocas sobre las 50 000 imágenes de entrenamiento de CIFAR-10 con etiquetas verdaderas, y una versión en NumPy (`selected_mlp_numpy.npz`) cargable con `nnlib.Model.load_from`.
 
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye resultados de otros mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lolma123/smai-a4-mlp
+- Hugging Face: https://huggingface.co/lolma123/smai-a4-mlp
 - Dataset CIFAR-10 referenciado: https://huggingface.co/datasets/uoft-cs/cifar10
 - Documento de referencia (Secciones 1.2.5 y 1.4.2): no disponible
 - Paper, blog, repositorio o demo adicionales: no disponible

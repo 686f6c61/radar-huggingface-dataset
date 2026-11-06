@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-instruct-2507-phi-lattice es una build experimental del modelo Qwen/Qwen3-4B-Instruct-2507 de Alibaba Qwen, publicada por el usuario ununununununununununununununununununun en HuggingFace. Se trata de una cuantización GGUF con poda de pesos aplicada mediante un proceso denominado "phi-lattice", que combina cuantización no uniforme y poda por umbral sobre las matrices de proyección lineal. El resultado se distribuye como un único fichero GGUF de 4,0 GB en cuantización Q8_0, pensado para su uso en Ollama, llama.cpp o LM Studio.
+qwen3-4b-instruct-2507-phi-lattice es una build experimental del modelo Qwen/Qwen3-4B-Instruct-2507 de Alibaba Qwen, publicada por el usuario ununununununununununununununununununun en Hugging Face. Se trata de una cuantización GGUF con poda de pesos aplicada mediante un proceso denominado "phi-lattice", que combina cuantización no uniforme y poda por umbral sobre las matrices de proyección lineal. El resultado se distribuye como un único fichero GGUF de 4,0 GB en cuantización Q8_0, pensado para su uso en Ollama, llama.cpp o LM Studio.
 
 El modelo base es un transformer denso de 4.022.468.096 parámetros (aproximadamente 4B), perteneciente a la familia Qwen3 en su variante Instruct actualizada de julio de 2025 (sufijo 2507). Esta build no introduce cambios en la arquitectura ni en el entrenamiento: se limita a una pasada de optimización post-entrenamiento sobre el checkpoint original, con una esparsidad declarada de aproximadamente el 8 % de los pesos y una relación señal-ruido de cuantización (SQNR) de aproximadamente 18,6 dB.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el fichero Q8_0 ocupa 4,0 GB; con overhead de contexto y caché KV, se recomienda al menos 6-8 GB de VRAM para uso cómodo.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090; en el segmento profesional, A100 o H100 sobredimensionadas para este tamaño.
 - Cabe en GPU de consumo: sí, en cualquier GPU con 8 GB o más de VRAM en Q8_0; con cuantizaciones menores (no publicadas en este repo) cabría en 6 GB.
-- Opciones de despliegue: Ollama (soporte directo desde HuggingFace mediante el Modelfile incluido), llama.cpp, LM Studio. vLLM y TGI no se mencionan en la información proporcionada para este artefacto GGUF.
+- Opciones de despliegue: Ollama (soporte directo desde Hugging Face mediante el Modelfile incluido), llama.cpp, LM Studio. vLLM y TGI no se mencionan en la información proporcionada para este artefacto GGUF.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparación relevante es contra el checkpoint base sin poda: esta build intr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ununununununununununununununununununun/qwen3-4b-instruct-2507-phi-lattice
+- Modelo en Hugging Face: https://huggingface.co/ununununununununununununununununununun/qwen3-4b-instruct-2507-phi-lattice
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Ollama (runtime recomendado por el autor): https://ollama.com
 - llama.cpp: https://github.com/ggml-org/llama.cpp

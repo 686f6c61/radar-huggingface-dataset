@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`VoiceNetCkpt/ds_expresso_fcaps_1n_smoke` es un checkpoint publicado en HuggingFace por el usuario VoiceNetCkpt, procedente de los experimentos denominados VoiceCLAP. No se trata de un modelo de lenguaje generativo ni de un modelo multimodal de texto, sino de un artefacto de investigacion orientado al ambito de voz y audio, segun se deduce de las etiquetas `voiceclap` y `checkpoint` y del propio titulo del repositorio.
+`VoiceNetCkpt/ds_expresso_fcaps_1n_smoke` es un checkpoint publicado en Hugging Face por el usuario VoiceNetCkpt, procedente de los experimentos denominados VoiceCLAP. No se trata de un modelo de lenguaje generativo ni de un modelo multimodal de texto, sino de un artefacto de investigacion orientado al ambito de voz y audio, segun se deduce de las etiquetas `voiceclap` y `checkpoint` y del propio titulo del repositorio.
 
 El repositorio contiene unicamente el peso final de un entrenamiento (fichero `checkpoints/epoch_latest.pt`), junto con los ficheros de configuracion del run y los resultados de evaluacion. El autor indica explicitamente que no se incluyen epochs intermedios, estado del optimizador ni logs. El nombre del run (`ds_expresso_fcaps_1n_smoke`) sugiere una ejecucion de tipo "smoke test" sobre un dataset tipo Expresso, pero esta interpretacion no se confirma en la informacion disponible.
 
-La relevancia de esta ficha es limitada: se trata de un checkpoint de investigacion con cero descargas y cero likes en el momento de la consulta, sin model card funcional, sin licencia declarada y sin resultados de benchmarks publicados. Debe considerarse material crudo de laboratorio, no un modelo listo para produccion. La fecha de creacion registrada (2026-10-11) figura tal cual en los metadatos de HuggingFace.
+La relevancia de esta ficha es limitada: se trata de un checkpoint de investigacion con cero descargas y cero likes en el momento de la consulta, sin model card funcional, sin licencia declarada y sin resultados de benchmarks publicados. Debe considerarse material crudo de laboratorio, no un modelo listo para produccion. La fecha de creacion registrada (2026-10-11) figura tal cual en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ Dado que no se documentan capacidades ni tareas objetivo, los casos de uso solo 
 - Base para fine-tuning posterior en tareas de voz: si el checkpoint resulta ser un encoder de audio, podria servir como inicializacion, aunque esto no esta confirmado.
 - Comparacion de checkpoints dentro de la familia `voiceclap-checkpoints-index`: utilidad como baseline interno del proyecto.
 - Diagnostico de "smoke test": verificar que un pipeline de entrenamiento y evaluacion funciona de extremo a extremo antes de lanzar runs mayores.
-- Docencia o formacion: ejemplo de artefacto de investigacion crudo para ilustrar como se publican checkpoints parciales en HuggingFace.
+- Docencia o formacion: ejemplo de artefacto de investigacion crudo para ilustrar como se publican checkpoints parciales en Hugging Face.
 - No se recomienda ningun caso de uso en produccion con la informacion disponible, dado que no hay licencia, idiomas ni metricas declaradas.
 
 ## Benchmarks y rendimiento
@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no identifica la tarea concreta, el 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/VoiceNetCkpt/ds_expresso_fcaps_1n_smoke
+- Hugging Face del modelo: https://huggingface.co/VoiceNetCkpt/ds_expresso_fcaps_1n_smoke
 - Indice de checkpoints VoiceCLAP citado por el autor: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

@@ -70,7 +70,7 @@ No disponible. No se han identificado modelos directamente comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HqH1111/OCCWAM
-- Perfil del autor en HuggingFace: https://huggingface.co/HqH1111
+- Modelo en Hugging Face: https://huggingface.co/HqH1111/OCCWAM
+- Perfil del autor en Hugging Face: https://huggingface.co/HqH1111
 - Repositorio de código (mencionado en la model card): https://github.com/HQH111/OCCWAM
 - Otros modelos del autor: https://huggingface.co/HqH1111/models

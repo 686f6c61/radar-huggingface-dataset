@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: menos de 1 GB, ya que el checkpoint tiene solo 49.600 parametros y ocupa unos pocos megabytes.
 - GPU recomendadas: ninguna; el modelo puede ejecutarse en CPU sin necesidad de aceleracion grafica.
 - Compatibilidad con GPU de consumo: si, cualquier GPU con mas de 1 GB de VRAM es suficiente, aunque no es necesaria.
-- Opciones de despliegue: no es un modelo de lenguaje, por lo que las herramientas tipicas para LLM (vLLM, llama.cpp, Ollama, TGI) no aplican. La implementacion es personalizada y requiere un adaptador explicito para ser cargada mediante APIs automaticas de HuggingFace.
+- Opciones de despliegue: no es un modelo de lenguaje, por lo que las herramientas tipicas para LLM (vLLM, llama.cpp, Ollama, TGI) no aplican. La implementacion es personalizada y requiere un adaptador explicito para ser cargada mediante APIs automaticas de Hugging Face.
 - Latencia y throughput estimados: no disponibles; dependen del entorno de ejecucion y del adaptador implementado.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No disponible. No se han publicado comparativas ni se dispone de modelos equival
 
 - El checkpoint es un punto de inicializacion no entrenado, por lo que no debe utilizarse para inferencia ni para tareas reales de vision.
 - No se ha auditado el modelo en terminos de robustez, equidad o transferencia de dominio.
-- La implementacion es personalizada; las API genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de su uso.
+- La implementacion es personalizada; las API genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de su uso.
 - No existen benchmarks publicados ni metricas de rendimiento que respalden su utilidad practica.
 - Los valores de configuracion (Novograd, planificador polinomial) son valores por defecto del script y no evidencian un entrenamiento completado.
 - Los resultados de un futuro checkpoint entrenado deben documentarse de forma separada a los valores por defecto incluidos en este repositorio.

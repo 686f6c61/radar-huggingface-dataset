@@ -93,7 +93,7 @@ Frente al checkpoint BF16, la version INT8 reduce el peso de los pesos aproximad
 
 ## Enlaces
 
-- Checkpoint cuantizado en HuggingFace: https://huggingface.co/Xananthium/OLMoE-1B-7B-0924-INT8-W8A8
+- Checkpoint cuantizado en Hugging Face: https://huggingface.co/Xananthium/OLMoE-1B-7B-0924-INT8-W8A8
 - Modelo base: https://huggingface.co/allenai/OLMoE-1B-7B-0924
 - Variante Instruct: https://huggingface.co/allenai/OLMoE-1B-7B-0924-Instruct
 - Repositorio oficial de OLMoE: https://github.com/allenai/OLMoE

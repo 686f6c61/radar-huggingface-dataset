@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RepublicOfKorokke/d1-3B-oQ8e | 3,1 B (8 bits) | no disponible | MLX safetensors | no disponible | HuggingFace |
-| LiquidAI/d1-3B | 3,1 B (sin cuantizar) | no disponible | no disponible | no disponible | HuggingFace |
+| RepublicOfKorokke/d1-3B-oQ8e | 3,1 B (8 bits) | no disponible | MLX safetensors | no disponible | Hugging Face |
+| LiquidAI/d1-3B | 3,1 B (sin cuantizar) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros VLM pequenos (familia LFM2-VL y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El unico punto de comparacion directo disponible es el modelo base LiquidAI/d1-3B, del que esta ficha es una version cuantizada. No se dispone de datos objetivos de rendimiento, contexto ni licencia del modelo base en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas.
@@ -82,6 +82,6 @@ El unico punto de comparacion directo disponible es el modelo base LiquidAI/d1-3
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RepublicOfKorokke/d1-3B-oQ8e
+- Hugging Face: https://huggingface.co/RepublicOfKorokke/d1-3B-oQ8e
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

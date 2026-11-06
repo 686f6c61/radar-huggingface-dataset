@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sungminkang/classification-weights` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de un clasificador de arquitectura CNN-Transformer, publicada por el usuario sungminkang bajo licencia MIT. No es un modelo preentrenado ni ajustado: el archivo `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo y revisión de código, con 33.088 parámetros totales según los metadatos reales del repositorio.
+`sungminkang/classification-weights` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de un clasificador de arquitectura CNN-Transformer, publicada por el usuario sungminkang bajo licencia MIT. No es un modelo preentrenado ni ajustado: el archivo `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo y revisión de código, con 33.088 parámetros totales según los metadatos reales del repositorio.
 
 El interés del repositorio es didáctico y de ingeniería. Sirve como esqueleto reproducible para experimentos controlados de clasificación, con una configuración de arquitectura declarada (atención lineal, fusión Tucker, activación GELU-Tanh, normalización LayerNorm) y una receta de entrenamiento por defecto (AdamW con calentamiento lineal y decaimiento lineal). El propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -69,7 +69,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sungminkang/classification-weights | 33.088 | no disponible | no evaluado | MIT | HuggingFace |
+| sungminkang/classification-weights | 33.088 | no disponible | no evaluado | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sungminkang/classification-weights
+- Hugging Face: https://huggingface.co/sungminkang/classification-weights
 - Repositorio de código: no disponible (el modelo card menciona `train.py`, `config.json` y `training_args.json` dentro del repositorio, sin enlace a un repositorio Git externo).
 - Paper o informe técnico: no disponible.
 - Demos o espacios: no disponible.

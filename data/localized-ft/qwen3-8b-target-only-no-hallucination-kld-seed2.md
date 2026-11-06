@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: localized-ft/Qwen3-8B-target-only-no-hallucination-kld-seed2](https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-kld-seed2)
+- [Hugging Face: localized-ft/Qwen3-8B-target-only-no-hallucination-kld-seed2](https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-kld-seed2)
 - [Modelo base: unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)
 - [Documentación de Unsloth](https://unsloth.ai/docs) (referencia para el entrenamiento)

@@ -100,7 +100,7 @@ La comparacion mas directa disponible es con su predecesor PicoLM-V3, que compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aethertp/PicoLM-V4-85M
+- Modelo en Hugging Face: https://huggingface.co/aethertp/PicoLM-V4-85M
 - Dataset FineWeb-Edu / SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset DCLM-Baseline: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0-parquet
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

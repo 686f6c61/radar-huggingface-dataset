@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rapidchat-MLX-4bit es una version cuantizada a 4 bits del modelo rapidchat, un ajuste fino de 9B especializado en atencion al cliente para aerolineas. Lo publica el usuario badr7 en HuggingFace bajo licencia Apache 2.0 y esta empaquetado con la libreria MLX de Apple, por lo que su destino son equipos con silicio de Apple (iPhone, iPad y Mac). El modelo cuenta con 8.953.803.264 parametros (unos 8,95B) y un repositorio de 5,1 GB en formato safetensors.
+rapidchat-MLX-4bit es una version cuantizada a 4 bits del modelo rapidchat, un ajuste fino de 9B especializado en atencion al cliente para aerolineas. Lo publica el usuario badr7 en Hugging Face bajo licencia Apache 2.0 y esta empaquetado con la libreria MLX de Apple, por lo que su destino son equipos con silicio de Apple (iPhone, iPad y Mac). El modelo cuenta con 8.953.803.264 parametros (unos 8,95B) y un repositorio de 5,1 GB en formato safetensors.
 
 La relevancia de esta ficha esta en su especializacion: el modelo base declara un 86,5 de pass^1 en la tarea airline de tau2-bench, un benchmark orientado a agentes que ejecutan tareas multi-paso con llamadas a herramientas. Eso lo situa en el nicho de modelos pequenos pero muy afinados para flujos de agente concretos, en lugar de modelos generalistas.
 
@@ -82,11 +82,11 @@ No se dispone de datos de benchmarks comparativos entre rapidchat y alternativas
 - Idiomas soportados no documentados: no se puede asumir buen rendimiento en castellano ni en otros idiomas distintos del usado en el entrenamiento.
 - Longitud de contexto no especificada: limita la planificacion de cargas con conversaciones largas o muchos documentos.
 - Aunque la licencia es Apache 2.0 y permite uso comercial, conviene verificar las condiciones del modelo base y del dataset de entrenamiento antes de un despliegue en produccion.
-- Traccion muy baja en HuggingFace (11 descargas, 0 likes) y sin validacion independiente por parte de terceros.
+- Traccion muy baja en Hugging Face (11 descargas, 0 likes) y sin validacion independiente por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/badr7/rapidchat-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/badr7/rapidchat-MLX-4bit
 - Modelo base: https://huggingface.co/badr7/rapidchat
 - Dataset de entrenamiento: https://huggingface.co/datasets/badr7/rapidchat-data
 - Listado de adapters sobre Qwen3.5-9B (referencia de la busqueda): https://huggingface.co/models?other=base_model%3Aadapter%3AQwen%2FQwen3.5-9B

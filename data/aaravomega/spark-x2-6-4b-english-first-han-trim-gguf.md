@@ -89,7 +89,7 @@ No se han identificado otras alternativas comparables en la información disponi
 
 ## Enlaces
 
-- [HuggingFace: Aaravomega/spark-x2.6-4b-english-first-han-trim-gguf](https://huggingface.co/Aaravomega/spark-x2.6-4b-english-first-han-trim-gguf)
+- [Hugging Face: Aaravomega/spark-x2.6-4b-english-first-han-trim-gguf](https://huggingface.co/Aaravomega/spark-x2.6-4b-english-first-han-trim-gguf)
 - [Modelo base: XHToken/Spark-X2.6-4B-GGUF](https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF)
 - [Variante safetensors: Aaravomega/spark-x2.6-4b-int4-english-first-han-trim](https://huggingface.co/Aaravomega/spark-x2.6-4b-int4-english-first-han-trim)
-- Manifiesto técnico: `gguf_manifest.json` dentro del repositorio de HuggingFace.
+- Manifiesto técnico: `gguf_manifest.json` dentro del repositorio de Hugging Face.

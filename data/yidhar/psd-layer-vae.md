@@ -2,11 +2,11 @@
 
 ## Resumen
 
-psd-layer-vae es un autoencoder variacional (VAE) publicado por el usuario Yidhar en HuggingFace, especializado en el procesamiento de imágenes en capas con canal alfa (RGBA). A diferencia de los VAE convencionales asociados a modelos de difusión, que comprimen imágenes RGB completas, este modelo está orientado a representaciones por capas al estilo de los archivos PSD de Photoshop, incorporando transparencia y, según sus etiquetas, soporte para contenido HDR.
+psd-layer-vae es un autoencoder variacional (VAE) publicado por el usuario Yidhar en Hugging Face, especializado en el procesamiento de imágenes en capas con canal alfa (RGBA). A diferencia de los VAE convencionales asociados a modelos de difusión, que comprimen imágenes RGB completas, este modelo está orientado a representaciones por capas al estilo de los archivos PSD de Photoshop, incorporando transparencia y, según sus etiquetas, soporte para contenido HDR.
 
 El modelo aborda el problema de codificar y reconstruir imágenes compuestas por múltiples capas independientes, un requisito habitual en flujos de trabajo de edición de imágenes generativa, composición digital y manipulación de elementos superpuestos. Su relevancia radica en la creciente demanda de modelos generativos que operen sobre capas (por ejemplo, para generar elementos de fondo y primer plano de forma separada) en lugar de imágenes aplanadas.
 
-Se trata de un repositorio de pesos en formato safetensors con PyTorch como librería, de tamaño reducido (0,7 GB en total), lo que sugiere un VAE ligero. No se ha publicado información sobre arquitectura detallada, número de parámetros, longitud de contexto ni capacidades de generación de texto, ya que no es un modelo de lenguaje. El acceso al repositorio es restringido (gated): hay que aceptar las condiciones del autor en HuggingFace antes de descargar los pesos.
+Se trata de un repositorio de pesos en formato safetensors con PyTorch como librería, de tamaño reducido (0,7 GB en total), lo que sugiere un VAE ligero. No se ha publicado información sobre arquitectura detallada, número de parámetros, longitud de contexto ni capacidades de generación de texto, ya que no es un modelo de lenguaje. El acceso al repositorio es restringido (gated): hay que aceptar las condiciones del autor en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Yidhar/psd-layer-vae | VAE por capas | RGBA, HDR, layered | Apache-2.0 | Gated en HuggingFace |
+| Yidhar/psd-layer-vae | VAE por capas | RGBA, HDR, layered | Apache-2.0 | Gated en Hugging Face |
 | SD VAE (stabilityai/sd-vae-ft-mse) | VAE de difusion | RGB | CreativeML OpenRAIL / otros | Abierto |
 | Flux VAE (black-forest-labs) | VAE de difusion | RGB | Licencia no comercial en algunas versiones | Abierto (con restricciones) |
 
@@ -70,7 +70,7 @@ La diferencia clave es que los VAE estandar de difusion trabajan sobre imagenes 
 ## Limitaciones y advertencias
 
 - Documentacion muy limitada: la ficha del repositorio no incluye detalles de arquitectura, entrenamiento ni uso, lo que dificulta su evaluacion e integracion.
-- Acceso restringido (gated): es necesario aceptar las condiciones del autor en HuggingFace antes de descargar los pesos, lo que puede complicar la automatizacion de descargas en CI/CD.
+- Acceso restringido (gated): es necesario aceptar las condiciones del autor en Hugging Face antes de descargar los pesos, lo que puede complicar la automatizacion de descargas en CI/CD.
 - Cero descargas registradas en el momento de redactar la ficha: no existe comunidad, ejemplos ni soporte verificable.
 - No hay benchmarks publicados ni comparaciones de calidad de reconstruccion (PSNR, SSIM, LPIPS), por lo que su fidelidad no puede validarse a priori.
 - Al ser un modelo de vision y no un modelo de lenguaje, no aplica ningun riesgo de alucinacion textual, pero si existe riesgo de artefactos en la reconstruccion de capas y de transparencia.
@@ -78,4 +78,4 @@ La diferencia clave es que los VAE estandar de difusion trabajan sobre imagenes 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Yidhar/psd-layer-vae
+- Ficha en Hugging Face: https://huggingface.co/Yidhar/psd-layer-vae

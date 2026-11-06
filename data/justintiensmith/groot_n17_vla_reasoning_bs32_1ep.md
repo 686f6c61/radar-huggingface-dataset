@@ -80,10 +80,10 @@ La comparacion cuantitativa no es posible con los datos actuales.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/justintiensmith/groot_n17_vla_reasoning_bs32_1ep
+- Repositorio Hugging Face del modelo: https://huggingface.co/justintiensmith/groot_n17_vla_reasoning_bs32_1ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/justintiensmith/VLA_Reasoning_Training_Dataset_1200
 - Repositorio GitHub de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Blog de NVIDIA sobre GR00T N1.7: https://huggingface.co/blog/nvidia/gr00t-n1-7
-- Modelo base de NVIDIA en HuggingFace: https://huggingface.co/nvidia/GR00T-N1.7-3B
+- Modelo base de NVIDIA en Hugging Face: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Foro de desarrolladores de NVIDIA (Early Access): https://forums.developer.nvidia.com/t/early-access-isaac-gr00t-n1-7-open-reasoning-vla-model-for-humanoid-robotics/366916
 - Tutorial de despliegue en Jetson AGX Thor: https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/tutorials/vla/groot_n17_on_thor.md

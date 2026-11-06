@@ -76,7 +76,7 @@ La model card indica que MiniCPM-OCR 1.0 obtiene la mayor puntuación media equi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 | 1,3B | no disponible | 93,68 Real5-OmniDocBench; 54,7 OCRBench v2; 1,2 págs/s | Apache 2.0 | HuggingFace, vLLM, SGLang, llama.cpp, Ollama |
+| MiniCPM-OCR 1.0 | 1,3B | no disponible | 93,68 Real5-OmniDocBench; 54,7 OCRBench v2; 1,2 págs/s | Apache 2.0 | Hugging Face, vLLM, SGLang, llama.cpp, Ollama |
 | PaddleOCR-VL-1.6 | no disponible | no disponible | Throughput 1,49× inferior a MiniCPM-OCR 1.0 | no disponible | no disponible |
 | MinerU2.5 Pro | no disponible | no disponible | Throughput 3,62× inferior a MiniCPM-OCR 1.0 | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no se de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TechnoBaptist/MiniCPM-OCR-1.0
+- Hugging Face: https://huggingface.co/TechnoBaptist/MiniCPM-OCR-1.0
 - GitHub: https://github.com/OpenBMB/MiniCPM-OCR
 - API docs: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_api_en.md
 - Demo (global): https://platform.modelbest.ai/console/playground/document-parse

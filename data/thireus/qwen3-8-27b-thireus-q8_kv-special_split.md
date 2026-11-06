@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Thireus/Qwen3.8-27B-THIREUS-Q8_KV-SPECIAL_SPLIT` es un checkpoint publicado en HuggingFace por el usuario Thireus bajo licencia MIT. El nombre sugiere que se trata de una variante del modelo Qwen3.8-27B (posiblemente una versión de la familia Qwen3 con 27 mil millones de parámetros) sometida a una cuantización Q8_KV y a un particionado especial de pesos. Sin embargo, la model card publicada no incluye ninguna descripción técnica, detalles de entrenamiento, arquitectura o capacidades más allá de la licencia. La fecha de creación (2026-08-15) y la ausencia de descargas o valoraciones indican que es una publicación reciente y sin uso documentado.
+El modelo `Thireus/Qwen3.8-27B-THIREUS-Q8_KV-SPECIAL_SPLIT` es un checkpoint publicado en Hugging Face por el usuario Thireus bajo licencia MIT. El nombre sugiere que se trata de una variante del modelo Qwen3.8-27B (posiblemente una versión de la familia Qwen3 con 27 mil millones de parámetros) sometida a una cuantización Q8_KV y a un particionado especial de pesos. Sin embargo, la model card publicada no incluye ninguna descripción técnica, detalles de entrenamiento, arquitectura o capacidades más allá de la licencia. La fecha de creación (2026-08-15) y la ausencia de descargas o valoraciones indican que es una publicación reciente y sin uso documentado.
 
-Dada la falta de información oficial, esta ficha se basa únicamente en los metadatos disponibles en HuggingFace y en inferencias razonables a partir del nombre del repositorio. No se dispone de datos verificados sobre arquitectura, rendimiento o requisitos de hardware, por lo que gran parte de los campos se marcan como «no disponible».
+Dada la falta de información oficial, esta ficha se basa únicamente en los metadatos disponibles en Hugging Face y en inferencias razonables a partir del nombre del repositorio. No se dispone de datos verificados sobre arquitectura, rendimiento o requisitos de hardware, por lo que gran parte de los campos se marcan como «no disponible».
 
 ## Especificaciones tecnicas
 
@@ -53,5 +53,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q8_KV-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q8_KV-SPECIAL_SPLIT
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código) asociados a este modelo en la información disponible.

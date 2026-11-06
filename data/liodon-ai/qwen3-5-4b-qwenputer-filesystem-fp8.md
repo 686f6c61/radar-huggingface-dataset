@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Qwenputer-Filesystem-FP8 (este) | 11.098.254.592 (safetensors) | no disponible | FP8 dinamico | other | HuggingFace |
-| divagr1925/Qwen3.5-4B-Qwenputer-Filesystem (base) | no disponible | no disponible | BF16/FP16 (22,2 GB) | other | HuggingFace |
+| Qwen3.5-4B-Qwenputer-Filesystem-FP8 (este) | 11.098.254.592 (safetensors) | no disponible | FP8 dinamico | other | Hugging Face |
+| divagr1925/Qwen3.5-4B-Qwenputer-Filesystem (base) | no disponible | no disponible | BF16/FP16 (22,2 GB) | other | Hugging Face |
 | Otros modelos Qwen3.5 de 4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/liodon-ai/Qwen3.5-4B-Qwenputer-Filesystem-FP8
+- Hugging Face (este modelo): https://huggingface.co/liodon-ai/Qwen3.5-4B-Qwenputer-Filesystem-FP8
 - Modelo base: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer-Filesystem
 - Perfil del autor: https://huggingface.co/liodon-ai
 - llm-compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor

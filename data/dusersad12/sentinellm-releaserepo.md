@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SentinelLM es un modelo de generacion de texto publicado en HuggingFace bajo el identificador `dusersad12/SentinelLM-ReleaseRepo` por el usuario `dusersad12`. Se distribuye como un modelo de tipo `transformers` (PyTorch), con licencia Apache 2.0 y compatible con la libreria de endpoints. La model card lo presenta como una actualizacion de version con mejoras centradas en razonamiento profundo, reduccion de alucinaciones y soporte reforzado de function calling, apoyandose en mas recursos de computo y optimizaciones algoritmicas durante el post-entrenamiento.
+SentinelLM es un modelo de generacion de texto publicado en Hugging Face bajo el identificador `dusersad12/SentinelLM-ReleaseRepo` por el usuario `dusersad12`. Se distribuye como un modelo de tipo `transformers` (PyTorch), con licencia Apache 2.0 y compatible con la libreria de endpoints. La model card lo presenta como una actualizacion de version con mejoras centradas en razonamiento profundo, reduccion de alucinaciones y soporte reforzado de function calling, apoyandose en mas recursos de computo y optimizaciones algoritmicas durante el post-entrenamiento.
 
 La informacion publica es muy limitada: no se declaran parametros totales, longitud de contexto, composicion del dataset de entrenamiento ni idiomas soportados. El autor afirma una mejora en AIME 2024 desde un 64% hasta un 83,3% de acierto respecto a la version anterior, con un aumento del uso medio de tokens por pregunta de 9K a 19K, lo que sugiere un modo de razonamiento extendido (thinking).
 
@@ -83,7 +83,7 @@ Advertencia: no se han publicado resultados en benchmarks estandar identificable
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros, no es posible estimar el consumo de memoria ni por cuantizacion.
 - GPU recomendadas: no disponible (no se declara ninguna).
 - Compatibilidad con GPU de consumo: no disponible. No se puede confirmar que quepa en una RTX 4090 u otra GPU consumer sin conocer el tamano.
-- Opciones de despliegue: la model card indica que debe consultarse el repositorio de codigo del autor para ejecutarlo en local; no se detalla soporte explicito de vLLM, llama.cpp, Ollama ni TGI. La etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de endpoints de HuggingFace. Para la plantilla de razonamiento se recomienda temperatura 0,55.
+- Opciones de despliegue: la model card indica que debe consultarse el repositorio de codigo del autor para ejecutarlo en local; no se detalla soporte explicito de vLLM, llama.cpp, Ollama ni TGI. La etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de endpoints de Hugging Face. Para la plantilla de razonamiento se recomienda temperatura 0,55.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ En la informacion disponible no se identifican modelos comparables verificables.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SentinelLM | no disponible | no disponible | Apache 2.0 | repo HuggingFace con 0 descargas | datos solo en model card del autor |
+| SentinelLM | no disponible | no disponible | Apache 2.0 | repo Hugging Face con 0 descargas | datos solo en model card del autor |
 | AtlasLM | no disponible | no disponible | no disponible | no disponible | referencia del autor |
 | OrionLM | no disponible | no disponible | no disponible | no disponible | referencia del autor |
 | AtlasLM-v2 | no disponible | no disponible | no disponible | no disponible | referencia del autor |
@@ -112,8 +112,8 @@ En la informacion disponible no se identifican modelos comparables verificables.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dusersad12/SentinelLM-ReleaseRepo
-- Perfil del autor en HuggingFace: https://huggingface.co/dusersad12
+- Modelo en Hugging Face: https://huggingface.co/dusersad12/SentinelLM-ReleaseRepo
+- Perfil del autor en Hugging Face: https://huggingface.co/dusersad12
 - Otro repositorio del mismo autor (posiblemente relacionado): https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo
 
 Nota: las busquedas web devuelven proyectos con nombres similares pero no relacionados con este modelo, por lo que no se incluyen como fuentes: `github.com/mephisto65/SentineLLM` (herramienta de test de jailbreaking sobre otros LLM) y `github.com/richsundev/sentinellm` (plataforma de evaluacion de LLM). Ninguno de ellos corresponde al modelo descrito. No se han encontrado papers, blogs ni demos oficiales de SentinelLM.

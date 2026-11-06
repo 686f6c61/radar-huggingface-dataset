@@ -20,7 +20,7 @@ Por tanto, su relevancia ahora mismo es documental, no operativa: sirve como mat
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (único formato declarado) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Artefacto principal | `review.md` (nota de investigación) + `README.md` |
 | Descargas / likes | 0 / 0 |
@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Joshualjl/review-image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/Joshualjl/review-image-captioning
 - Artefacto principal citado en la model card: `review.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - Conjuntos de evaluación mencionados en la nota (sin enlaces proporcionados): MS COCO Captions, NoCaps, TextCaps

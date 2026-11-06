@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ren1.0 es un adaptador LoRA para generacion de imagenes text-to-image, publicado por el usuario asd44633 en HuggingFace el 16 de agosto de 2026. Se basa en el modelo Tongyi-MAI/Z-Image-Turbo, un modelo de difusion de Alibaba, y se distribuye a traves de la libreria diffusers. El adaptador se activa mediante la palabra clave "ren" como trigger en el prompt.
+ren1.0 es un adaptador LoRA para generacion de imagenes text-to-image, publicado por el usuario asd44633 en Hugging Face el 16 de agosto de 2026. Se basa en el modelo Tongyi-MAI/Z-Image-Turbo, un modelo de difusion de Alibaba, y se distribuye a traves de la libreria diffusers. El adaptador se activa mediante la palabra clave "ren" como trigger en el prompt.
 
 El repositorio es minimalista: la model card solo indica el trigger word y el modelo base, sin documentacion tecnica adicional. Con 0 descargas y 0 likes, es un modelo recien publicado sin validacion comunitaria. El tamano del repositorio es de 0.2 GB, consistente con un adaptador LoRA tipico.
 
@@ -32,7 +32,7 @@ El modelo base, Z-Image-Turbo, es un modelo de difusion de Alibaba Tongyi optimi
 ## Capacidades
 
 - Generacion de imagenes text-to-image cuando el prompt incluye la palabra clave "ren".
-- Integracion con el ecosistema diffusers de HuggingFace mediante la pipeline text-to-image.
+- Integracion con el ecosistema diffusers de Hugging Face mediante la pipeline text-to-image.
 - Adaptador de bajo peso (0.2 GB) que se combina con el modelo base Z-Image-Turbo.
 - No se dispone de informacion sobre capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte multilingue, dado que se trata de un modelo de generacion de imagenes sin documentacion complementaria.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - El adaptador LoRA ocupa 0.2 GB, por lo que su almacenamiento es minimo.
 - Los requisitos reales de hardware los determina el modelo base Z-Image-Turbo, cuyas especificaciones no se detallan en este repositorio.
-- Se puede desplegar con la libreria diffusers de HuggingFace.
+- Se puede desplegar con la libreria diffusers de Hugging Face.
 - No se dispone de datos de latencia o throughput.
 - No se dispone de informacion sobre si el modelo cabe en GPUs de consumo.
 
@@ -74,5 +74,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asd44633/ren1.0
+- Repositorio Hugging Face: https://huggingface.co/asd44633/ren1.0
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo

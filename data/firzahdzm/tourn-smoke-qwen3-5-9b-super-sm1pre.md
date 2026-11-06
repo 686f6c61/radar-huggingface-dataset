@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `firzahdzm/tourn-smoke-qwen3-5-9b-super-sm1pre` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `firzahdzm`. Se trata de un ajuste fino de bajo rango sobre el modelo base `Qwen/Qwen3.5-9B`, un modelo de lenguaje denso de 9 000 millones de parámetros desarrollado por Alibaba Cloud, que integra capacidades de visión-lenguaje y razonamiento avanzado. El adaptador está diseñado para la generación de texto y uso conversacional, y se distribuye en formato PEFT con pesos en safetensors.
+El modelo `firzahdzm/tourn-smoke-qwen3-5-9b-super-sm1pre` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `firzahdzm`. Se trata de un ajuste fino de bajo rango sobre el modelo base `Qwen/Qwen3.5-9B`, un modelo de lenguaje denso de 9 000 millones de parámetros desarrollado por Alibaba Cloud, que integra capacidades de visión-lenguaje y razonamiento avanzado. El adaptador está diseñado para la generación de texto y uso conversacional, y se distribuye en formato PEFT con pesos en safetensors.
 
 La relevancia de este adaptador radica en que permite especializar un modelo base potente sin necesidad de reentrenar todos los parámetros, reduciendo costes computacionales y de almacenamiento. Sin embargo, la información pública disponible es muy limitada: la model card está prácticamente vacía, no se especifican datos de entrenamiento, hiperparámetros, ni métricas de evaluación. El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un experimento reciente o de baja difusión. A pesar de ello, su existencia demuestra el ecosistema de adaptadores que se está generando alrededor de la familia Qwen3.5.
 
@@ -63,9 +63,9 @@ No se dispone de información sobre adaptadores LoRA comparables para Qwen3.5-9B
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-9B (base) | 9B | no especificado (probablemente 32K o más) | Apache 2.0 (según Qwen) | HuggingFace, Ollama, Fireworks |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace, Ollama |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace, Ollama |
+| Qwen3.5-9B (base) | 9B | no especificado (probablemente 32K o más) | Apache 2.0 (según Qwen) | Hugging Face, Ollama, Fireworks |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face, Ollama |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face, Ollama |
 
 El adaptador `tourn-smoke` no tiene una comparativa directa porque no se han publicado métricas. Su valor depende del fine-tuning realizado, que no está documentado.
 

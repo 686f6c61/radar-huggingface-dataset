@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp84a0810cea8d2f72` es un checkpoint publicado en HuggingFace por el usuario `cwaud` bajo una convencion de nombres que sugiere un experimento de torneo o prueba interna, sin documentacion publica asociada. El unico dato estructural verificado es el recuento de parametros extraido de los ficheros safetensors: 1.711.378.432 parametros, es decir, aproximadamente 1,71 mil millones. El repositorio ocupa 3,4 GB, un valor coherente con pesos almacenados en precision de 16 bits sin cuantizar.
+El modelo `cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp84a0810cea8d2f72` es un checkpoint publicado en Hugging Face por el usuario `cwaud` bajo una convencion de nombres que sugiere un experimento de torneo o prueba interna, sin documentacion publica asociada. El unico dato estructural verificado es el recuento de parametros extraido de los ficheros safetensors: 1.711.378.432 parametros, es decir, aproximadamente 1,71 mil millones. El repositorio ocupa 3,4 GB, un valor coherente con pesos almacenados en precision de 16 bits sin cuantizar.
 
 La etiqueta `llama` indica que el modelo emplea la arquitectura Llama (transformer decoder-only con normalizacion RMSNorm, atencion causal y activaciones SwiGLU), aunque la ficha del repositorio no aporta detalles sobre la configuracion exacta de capas, cabezas de atencion ni longitud de contexto soportada. Tampoco se declaran idiomas, licencia ni pipeline de inferencia, y el repositorio acumula 13 descargas y ninguna interaccion social, lo que apunta a un artefacto de investigacion sin curacion ni mantenimiento.
 
@@ -80,10 +80,10 @@ La comparacion se limita a la clase de tamano, porque el modelo analizado no pub
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1 (este modelo) | 1,71 mil millones | no disponible | no disponible | HuggingFace, sin tarjeta de modelo |
-| Llama 3.2 1B | 1,24 mil millones | 128 000 tokens | Llama 3.2 Community License | HuggingFace, con tarjeta completa |
-| Qwen2.5 1.5B | 1,54 mil millones | 32 768 tokens (hasta 131 072 en variantes) | Apache 2.0 | HuggingFace, con tarjeta completa |
-| Gemma 2 2B | 2,61 mil millones | 8192 tokens | Gemma Terms of Use | HuggingFace, con tarjeta completa |
+| cwaud/tournament-exp-s1 (este modelo) | 1,71 mil millones | no disponible | no disponible | Hugging Face, sin tarjeta de modelo |
+| Llama 3.2 1B | 1,24 mil millones | 128 000 tokens | Llama 3.2 Community License | Hugging Face, con tarjeta completa |
+| Qwen2.5 1.5B | 1,54 mil millones | 32 768 tokens (hasta 131 072 en variantes) | Apache 2.0 | Hugging Face, con tarjeta completa |
+| Gemma 2 2B | 2,61 mil millones | 8192 tokens | Gemma Terms of Use | Hugging Face, con tarjeta completa |
 
 No es posible comparar rendimiento por tarea porque no existen benchmarks publicados para el modelo analizado.
 
@@ -101,7 +101,7 @@ No es posible comparar rendimiento por tarea porque no existen benchmarks public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp84a0810cea8d2f72
+- Repositorio en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp84a0810cea8d2f72
 - Paper: no disponible
 - Blog del autor: no disponible
 - Repositorio de codigo: no disponible

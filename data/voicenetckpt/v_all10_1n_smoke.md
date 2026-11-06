@@ -2,7 +2,7 @@
 
 ## Resumen
 
-V_all10_1n_smoke es un checkpoint publicado por el usuario VoiceNetCkpt en HuggingFace, correspondiente a una ejecucion de entrenamiento del proyecto VoiceCLAP. Segun la propia model card, el repositorio contiene las ponderaciones finales del entrenamiento junto con las configuraciones de la ejecucion y los resultados de evaluacion; no se incluyen epocas intermedias, estado del optimizador ni registros (logs). El repositorio ocupa 1,3 GB y consta de 3 archivos.
+V_all10_1n_smoke es un checkpoint publicado por el usuario VoiceNetCkpt en Hugging Face, correspondiente a una ejecucion de entrenamiento del proyecto VoiceCLAP. Segun la propia model card, el repositorio contiene las ponderaciones finales del entrenamiento junto con las configuraciones de la ejecucion y los resultados de evaluacion; no se incluyen epocas intermedias, estado del optimizador ni registros (logs). El repositorio ocupa 1,3 GB y consta de 3 archivos.
 
 La etiqueta principal del modelo es "voiceclap", lo que lo vincula a experimentos de representacion voz-audio mediante aprendizaje contrastivo (CLAP, Contrastive Language-Audio Pretraining). No obstante, la informacion publicada no detalla la arquitectura exacta, el numero de parametros ni la tarea concreta para la que esta pensado el checkpoint. El peso principal se distribuye como `checkpoints/epoch_latest.pt`, en formato nativo de PyTorch.
 
@@ -82,5 +82,5 @@ No disponible. No se proporcionan datos de arquitectura, tamano ni rendimiento, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/V_all10_1n_smoke
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/V_all10_1n_smoke
 - Indice de checkpoints de la serie: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index

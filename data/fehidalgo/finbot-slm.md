@@ -90,6 +90,6 @@ La comparación de rendimiento con estas alternativas no está disponible en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fehidalgo/finbot-slm
+- Hugging Face: https://huggingface.co/fehidalgo/finbot-slm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

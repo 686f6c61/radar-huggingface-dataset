@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino-classification-weights76 es un repositorio de HuggingFace publicado por el usuario GabrielJvsl que contiene una implementacion funcional de la arquitectura DINO adaptada a tareas de clasificacion, en configuracion "base". El repositorio se presenta explicitamente como un entorno de codigo transparente y pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado ni evaluado contra benchmarks. El propio autor indica que el checkpoint de safetensors es una inicializacion valida para pruebas, no un modelo con rendimiento demostrado.
+Dino-classification-weights76 es un repositorio de Hugging Face publicado por el usuario GabrielJvsl que contiene una implementacion funcional de la arquitectura DINO adaptada a tareas de clasificacion, en configuracion "base". El repositorio se presenta explicitamente como un entorno de codigo transparente y pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado ni evaluado contra benchmarks. El propio autor indica que el checkpoint de safetensors es una inicializacion valida para pruebas, no un modelo con rendimiento demostrado.
 
 El modelo emplea atencion de tipo grouped query, fusion mediante concat mlp, activacion mish y normalizacion scalenorm. La receta de experimento por defecto usa optimizador SGD con un schedule polinomial, valores que el autor describe como puntos de partida en el script y no como evidencia de un entrenamiento completado. La licencia es Apache 2.0 y el repositorio tiene un tamano practicamente nulo (0.0 GB), con 0 descargas y 0 likes en el momento de la consulta.
 
@@ -72,9 +72,9 @@ No disponible. No se proporcionan datos de rendimiento, contexto ni tarea concre
 - No se declaran limitaciones de contexto ni de idioma porque no se documenta ningun dato al respecto.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor advierte que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se utilice con datasets externos.
 - Para produccion: no se recomienda su uso sin un entrenamiento previo completo, evaluacion con multiples semillas y un baseline de capacidad comparable, tal como indica el propio autor.
-- El repositorio es una implementacion personalizada: requiere un adaptador explicito antes de poder cargarse mediante APIs genericas de HuggingFace.
+- El repositorio es una implementacion personalizada: requiere un adaptador explicito antes de poder cargarse mediante APIs genericas de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GabrielJvsl/dino-classification-weights76
+- Hugging Face: https://huggingface.co/GabrielJvsl/dino-classification-weights76
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

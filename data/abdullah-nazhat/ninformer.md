@@ -69,7 +69,7 @@ No se dispone de datos cuantitativos para comparar con otros modelos. Se pueden 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Abdullah-Nazhat/NiNformer)
+- [Hugging Face del modelo](https://huggingface.co/Abdullah-Nazhat/NiNformer)
 - [arXiv del paper](https://arxiv.org/abs/2403.02411)
 - [Versión HTML del paper en arXiv](https://arxiv.org/html/2403.02411v5)
 - [Repositorio GitHub](https://github.com/Abdullah-88/NiNformer)

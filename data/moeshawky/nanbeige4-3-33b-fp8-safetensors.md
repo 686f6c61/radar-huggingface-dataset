@@ -94,7 +94,7 @@ No se han publicado resultados específicos para la versión FP8 de `moeshawky`;
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento destacado | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B (esta versión FP8) | 33,1B | No disponible | Apache 2.0 | Líder en Terminal-Bench 2.1 (80,9), DeepSWE (65,5), Automation Bench (54,2) | HuggingFace, safetensors FP8 |
+| Nanbeige4.3-33B (esta versión FP8) | 33,1B | No disponible | Apache 2.0 | Líder en Terminal-Bench 2.1 (80,9), DeepSWE (65,5), Automation Bench (54,2) | Hugging Face, safetensors FP8 |
 | Qwen3.8-27B | 27B (aprox.) | No disponible | No disponible | Mejor en SWE-Bench Pro (61,7) y GDPval (86,4) | No disponible en la información |
 | Muse-Glimmer-30B | 30B (aprox.) | No disponible | No disponible | Rendimiento inferior en la mayoría de benchmarks agénticos | No disponible en la información |
 | Gemma4-31B | 31B (aprox.) | No disponible | No disponible | Mejor en GPQA Diamond (91,3) | No disponible en la información |
@@ -115,6 +115,6 @@ Nanbeige4.3-33B domina en tareas agénticas de código y cowork, mientras que Qw
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moeshawky/Nanbeige4.3-33B-FP8-safetensors
+- Repositorio Hugging Face: https://huggingface.co/moeshawky/Nanbeige4.3-33B-FP8-safetensors
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base
-- Organización Nanbeige en HuggingFace: https://huggingface.co/Nanbeige
+- Organización Nanbeige en Hugging Face: https://huggingface.co/Nanbeige

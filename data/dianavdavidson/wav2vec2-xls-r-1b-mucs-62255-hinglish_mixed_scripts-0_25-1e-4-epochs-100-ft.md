@@ -60,7 +60,7 @@ Estos valores indican que el modelo no converge adecuadamente y que su rendimien
 - VRAM estimada para inferencia: al tratarse de un modelo de ~1B parámetros, se requiere al menos 4 GB en FP16 y alrededor de 8 GB en FP32. Con cuantización a 8 bits podría reducirse a ~2 GB, pero no se proporcionan cuantizaciones.
 - GPU recomendadas: una GPU con al menos 8 GB de VRAM (por ejemplo, RTX 3070, RTX 4060) para inferencia en FP16. Para entrenamiento se necesitaría una GPU con 16-24 GB (A100, RTX 4090).
 - No cabe en GPUs de consumo muy limitadas (menos de 4 GB) sin cuantización.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, por lo que puede usarse con pipelines de ASR, así como con vLLM o TGI si se adapta, aunque no es lo habitual para modelos wav2vec2. También puede ejecutarse con `torch` directamente.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, por lo que puede usarse con pipelines de ASR, así como con vLLM o TGI si se adapta, aunque no es lo habitual para modelos wav2vec2. También puede ejecutarse con `torch` directamente.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No se dispone de resultados comparativos fiables para este modelo concreto.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dianavdavidson/wav2vec2-xls-r-1b-mucs-62255-hinglish_mixed_scripts-0_25-1e-4-epochs-100-FT)
+- [Modelo en Hugging Face](https://huggingface.co/dianavdavidson/wav2vec2-xls-r-1b-mucs-62255-hinglish_mixed_scripts-0_25-1e-4-epochs-100-FT)
 - [Modelo base XLS-R-1b](https://huggingface.co/facebook/wav2vec2-xls-r-1b)
 - [Paper de XLS-R](https://research.facebook.com/publications/xls-r-self-supervised-cross-lingual-speech-representation-learning-at-scale/)
 - [README de XLS-R en GitHub](https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/xlsr/README.md)

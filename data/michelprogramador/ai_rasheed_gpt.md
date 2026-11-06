@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MichelProgramador/ai_rasheed_gpt` es un repositorio de modelo publicado en HuggingFace por el usuario MichelProgramador. En el momento de la consulta, la ficha del repositorio no incluye información sobre arquitectura, tamaño, contexto, licencia ni idiomas soportados: el único metadato disponible es la etiqueta `region:us`. El repositorio registra 0 descargas y 1 like, y fue creado y actualizado en la misma fecha (2026-10-12), lo que sugiere una publicación sin revisiones posteriores ni documentación adicional.
+`MichelProgramador/ai_rasheed_gpt` es un repositorio de modelo publicado en Hugging Face por el usuario MichelProgramador. En el momento de la consulta, la ficha del repositorio no incluye información sobre arquitectura, tamaño, contexto, licencia ni idiomas soportados: el único metadato disponible es la etiqueta `region:us`. El repositorio registra 0 descargas y 1 like, y fue creado y actualizado en la misma fecha (2026-10-12), lo que sugiere una publicación sin revisiones posteriores ni documentación adicional.
 
 No se ha podido determinar qué problema resuelve el modelo, a qué categoría funcional pertenece (texto, código, visión, audio) ni si se trata de un modelo entrenado desde cero, un fine-tuning o un envoltorio sobre otro modelo. La ausencia de un pipeline declarado, de model card y de archivos de configuración descritos en la información disponible impide cualquier caracterización técnica fiable.
 
@@ -21,7 +21,7 @@ Dado el estado del repositorio, esta ficha se limita a documentar los metadatos 
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Autor | MichelProgramador |
-| Identificador en HuggingFace | MichelProgramador/ai_rasheed_gpt |
+| Identificador en Hugging Face | MichelProgramador/ai_rasheed_gpt |
 | Etiquetas declaradas | region:us |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
@@ -84,13 +84,13 @@ En los resultados de busqueda aparece el repositorio `alpha-coder-great/al-rashe
 - Riesgo de alucinacion: no evaluable, al no existir benchmarks ni descripcion del proceso de alineacion.
 - Sesgos conocidos: no disponibles. No se ha documentado ninguna evaluacion de sesgo.
 - Repositorio sin actividad: 0 descargas, 1 like y sin actualizaciones desde la fecha de creacion, lo que indica ausencia de validacion por parte de la comunidad.
-- Ausencia de pipeline declarado: impide saber si HuggingFace reconoce el modelo para una tarea concreta (text-generation, text-classification, etc.).
+- Ausencia de pipeline declarado: impide saber si Hugging Face reconoce el modelo para una tarea concreta (text-generation, text-classification, etc.).
 - Formato de pesos desconocido: no se puede confirmar la compatibilidad con herramientas de inferencia habituales.
 - Aviso para produccion: no se recomienda integrar este modelo en ningun sistema sin antes inspeccionar el repositorio, verificar los archivos presentes, confirmar la licencia con el autor y ejecutar evaluaciones propias.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MichelProgramador/ai_rasheed_gpt
+- Repositorio en Hugging Face: https://huggingface.co/MichelProgramador/ai_rasheed_gpt
 - Repositorio con nombre similar (relacion no confirmada): https://huggingface.co/alpha-coder-great/al-rasheed-ai
 - Arbol de archivos del repositorio con nombre similar (relacion no confirmada): https://huggingface.co/alpha-coder-great/al-rasheed-ai/tree/main
 

@@ -103,11 +103,11 @@ Velocidad en Splash: mediana de 14,10 s de prefill por ventana de 2048 tokens pa
 
 | Modelo | Parametros | Contexto | KLD chat (Splash) | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GPTQ (este repo) | 27,36 mil millones | no disponible | 0,1002 | 15 GB | apache-2.0 | HuggingFace |
-| mlx-community/Qwen3.8-27B-4bit (RTN) | 27,36 mil millones | no disponible | 0,1906 | 15 GB | apache-2.0 | HuggingFace |
-| unsloth/Qwen3.8-27B-GGUF:UD-Q4_K_M | 27,36 mil millones | no disponible | 0,0831 | 16,5 GB | apache-2.0 | HuggingFace |
-| unsloth/Qwen3.8-27B-GGUF:Q4_0 | 27,36 mil millones | no disponible | 0,1412 | 16,1 GB | apache-2.0 | HuggingFace |
-| ISTA-DASLab/Qwen3.8-27B-GGUF:IQ3_S | 27,36 mil millones | no disponible | 0,2121 | 11,8 GB | apache-2.0 | HuggingFace |
+| GPTQ (este repo) | 27,36 mil millones | no disponible | 0,1002 | 15 GB | apache-2.0 | Hugging Face |
+| mlx-community/Qwen3.8-27B-4bit (RTN) | 27,36 mil millones | no disponible | 0,1906 | 15 GB | apache-2.0 | Hugging Face |
+| unsloth/Qwen3.8-27B-GGUF:UD-Q4_K_M | 27,36 mil millones | no disponible | 0,0831 | 16,5 GB | apache-2.0 | Hugging Face |
+| unsloth/Qwen3.8-27B-GGUF:Q4_0 | 27,36 mil millones | no disponible | 0,1412 | 16,1 GB | apache-2.0 | Hugging Face |
+| ISTA-DASLab/Qwen3.8-27B-GGUF:IQ3_S | 27,36 mil millones | no disponible | 0,2121 | 11,8 GB | apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -123,7 +123,7 @@ Velocidad en Splash: mediana de 14,10 s de prefill por ventana de 2048 tokens pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ
+- Hugging Face: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Template MLX 4-bit: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
 - Splash (repositorio): https://github.com/paperniuk/splash

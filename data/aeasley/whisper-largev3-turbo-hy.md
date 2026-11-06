@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-largev3-turbo-hy es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla openai/whisper-large-v3-turbo, publicado por el usuario aeasley en HuggingFace. El modelo está especializado en armenio (código de idioma `hy`) y mantiene la arquitectura encoder-decoder transformer propia de la familia Whisper de OpenAI. Con 808.878.080 parámetros totales, es una variante optimizada del Whisper large-v3 turbo, pensada para transcripción de audio en armenio con mayor precisión que el modelo base.
+whisper-largev3-turbo-hy es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla openai/whisper-large-v3-turbo, publicado por el usuario aeasley en Hugging Face. El modelo está especializado en armenio (código de idioma `hy`) y mantiene la arquitectura encoder-decoder transformer propia de la familia Whisper de OpenAI. Con 808.878.080 parámetros totales, es una variante optimizada del Whisper large-v3 turbo, pensada para transcripción de audio en armenio con mayor precisión que el modelo base.
 
 El problema que resuelve es la baja cobertura de idiomas menos representados en los modelos ASR multilingües. Whisper large-v3 turbo, aunque soporta decenas de idiomas, tiene un rendimiento desigual en lenguas de bajos recursos como el armenio. Este ajuste fino busca reducir la tasa de error de palabra (WER) en ese idioma concreto mediante entrenamiento supervisado sobre un conjunto de datos no especificado en la model card.
 
@@ -98,7 +98,7 @@ No se dispone de datos de WER en armenio para los modelos comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aeasley/whisper-largev3-turbo-hy
+- Modelo en Hugging Face: https://huggingface.co/aeasley/whisper-largev3-turbo-hy
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

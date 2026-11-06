@@ -88,7 +88,7 @@ La principal diferencia con el modelo original es la eliminacion de restriccione
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-abliterated-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-abliterated-i1-GGUF
 - Modelo base (abliterado): https://huggingface.co/3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated
 - Repositorio estatico GGUF (con mmproj si existe): https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-abliterated-GGUF
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`donghyunkwon34k/course-cross-modal-fusion-2023` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre fusion cross-modal publicado en HuggingFace. La propia model card lo describe como "a structured set of research notes on Cross Modal Fusion", con referencias de evaluacion y preguntas abiertas, y aclara de forma explicita que no reclama mejoras de benchmark, ablaciones completas, codigo liberado ni un checkpoint entrenado.
+`donghyunkwon34k/course-cross-modal-fusion-2023` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre fusion cross-modal publicado en Hugging Face. La propia model card lo describe como "a structured set of research notes on Cross Modal Fusion", con referencias de evaluacion y preguntas abiertas, y aclara de forma explicita que no reclama mejoras de benchmark, ablaciones completas, codigo liberado ni un checkpoint entrenado.
 
-El repositorio declara los ficheros `reading.md` (artefacto principal) y `README.md` (documentacion), bajo licencia MIT. HuggingFace, sin embargo, asigna al repositorio los tags `safetensors` y `transformer`, y reporta un total de 16.576 parametros en safetensors con un tamano de repositorio de 0,0 GB. Esa cifra es cinco ordenes de magnitud inferior a la de cualquier transformer funcional (un modelo de 16.576 parametros no alcanza ni para un vocabulario minimo de embeddings), por lo que lo mas probable es que se trate de un artefacto residual o generado automaticamente, no de pesos utilizables.
+El repositorio declara los ficheros `reading.md` (artefacto principal) y `README.md` (documentacion), bajo licencia MIT. Hugging Face, sin embargo, asigna al repositorio los tags `safetensors` y `transformer`, y reporta un total de 16.576 parametros en safetensors con un tamano de repositorio de 0,0 GB. Esa cifra es cinco ordenes de magnitud inferior a la de cualquier transformer funcional (un modelo de 16.576 parametros no alcanza ni para un vocabulario minimo de embeddings), por lo que lo mas probable es que se trate de un artefacto residual o generado automaticamente, no de pesos utilizables.
 
 Por todo ello, su relevancia es documental y metodologica (plantilla de notas de investigacion reproducibles), no practica como sistema de IA. No hay pipeline declarado, no hay idiomas declarados y acumula 11 descargas y 0 likes desde su creacion el 18 de septiembre de 2026.
 
@@ -12,8 +12,8 @@ Por todo ello, su relevancia es documental y metodologica (plantilla de notas de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta `transformer` proviene de los tags de HuggingFace, no de una descripcion tecnica del autor; la model card no describe ninguna red) |
-| Parametros totales | 16.576 (segun los metadatos de safetensors reportados por HuggingFace) |
+| Arquitectura | no disponible (la etiqueta `transformer` proviene de los tags de Hugging Face, no de una descripcion tecnica del autor; la model card no describe ninguna red) |
+| Parametros totales | 16.576 (segun los metadatos de safetensors reportados por Hugging Face) |
 | Parametros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -41,12 +41,12 @@ Tampoco hay datos de entrenamiento: ni numero de tokens, ni composicion del data
 ## Casos de uso
 
 - Archivado de notas de investigacion: el repositorio funciona como registro versionado de un tema concreto (fusion cross-modal) con secciones de hipotesis, confounders y preguntas abiertas, util para conservar trazabilidad de una linea de estudio.
-- Plantilla de estructura de repositorio en HuggingFace: sirve como ejemplo de model card que declara explicitamente el alcance y las limitaciones, algo reutilizable al publicar artefactos de investigacion que no son modelos.
+- Plantilla de estructura de repositorio en Hugging Face: sirve como ejemplo de model card que declara explicitamente el alcance y las limitaciones, algo reutilizable al publicar artefactos de investigacion que no son modelos.
 - Punto de partida bibliografico: `reading.md` cita referencias y benchmarks publicos relevantes para fusion cross-modal, de modo que un investigador puede usarlo como lista inicial de verificacion antes de disenar su propio protocolo.
 - Diseno de experimentos con baselines emparejados: las notas proponen una comparacion con baselines emparejados y recogen confounders probables, material util para redactar una seccion de metodologia.
 - Auditoria de reproducibilidad: la exigencia documentada de incluir versiones de dataset, comandos, semillas, hardware y logs en bruto sirve como checklist para revisar la calidad de otros repositorios de investigacion.
-- Prueba de integracion de descarga: el pequeno artefacto safetensors permite verificar que un script de descarga, cache y validacion de ficheros de HuggingFace funciona, sin coste de almacenamiento ni de GPU.
-- Docencia sobre higiene de publicacion: el contraste entre los tags de HuggingFace (`transformer`, `safetensors`) y el contenido real del repositorio es un caso practico para ensenar por que los metadatos automaticos no deben tomarse como evidencia de que existe un modelo.
+- Prueba de integracion de descarga: el pequeno artefacto safetensors permite verificar que un script de descarga, cache y validacion de ficheros de Hugging Face funciona, sin coste de almacenamiento ni de GPU.
+- Docencia sobre higiene de publicacion: el contraste entre los tags de Hugging Face (`transformer`, `safetensors`) y el contenido real del repositorio es un caso practico para ensenar por que los metadatos automaticos no deben tomarse como evidencia de que existe un modelo.
 
 ## Benchmarks y rendimiento
 
@@ -71,7 +71,7 @@ No hay modelos comparables en la informacion disponible. Este repositorio no es 
 | Longitud de contexto | no disponible | no disponible |
 | Benchmarks publicados | ninguno | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Descarga publica en HuggingFace (11 descargas, 0 likes) | no disponible |
+| Disponibilidad | Descarga publica en Hugging Face (11 descargas, 0 likes) | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No hay modelos comparables en la informacion disponible. Este repositorio no es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/donghyunkwon34k/course-cross-modal-fusion-2023
+- Hugging Face: https://huggingface.co/donghyunkwon34k/course-cross-modal-fusion-2023
 - Sitemap de SAVRN (menciona una ruta con el nombre del repositorio, sin contenido tecnico adicional): https://savrn.com/sitemap
 - Repositorio ChatGPT_DAN (resultado de busqueda no relacionado): https://github.com/0xk1h0/ChatGPT_DAN
 - r/AITAH (resultado de busqueda no relacionado): https://www.reddit.com/r/AITAH/

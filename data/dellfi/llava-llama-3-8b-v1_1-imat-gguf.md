@@ -92,7 +92,7 @@ No se dispone, en la informacion proporcionada, de datos de rendimiento ni de li
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dellfi/llava-llama-3-8b-v1_1-imat-gguf
+- Repositorio Hugging Face: https://huggingface.co/dellfi/llava-llama-3-8b-v1_1-imat-gguf
 - Modelo base (transformers): https://huggingface.co/xtuner/llava-llama-3-8b-v1_1-transformers
 - Repositorio GGUF de xtuner (fichero mmproj): https://huggingface.co/xtuner/llava-llama-3-8b-v1_1-gguf
 - Fichero mmproj f16: https://huggingface.co/xtuner/llava-llama-3-8b-v1_1-gguf/blob/main/llava-llama-3-8b-v1_1-mmproj-f16.gguf

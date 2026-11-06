@@ -2,7 +2,7 @@
 
 ## Resumen
 
-book-recommender-mf es un recomendador de libros basado en factorización matricial (matrix factorization) publicado por el usuario pmarquees en HuggingFace. No es un modelo de lenguaje: es un artefacto de filtrado colaborativo que descompone la matriz de valoraciones de Goodreads en 32 factores latentes por usuario y por libro, y estima la nota de 1 a 10 estrellas que un usuario conocido daria a un libro concreto. El artefacto se distribuye como un fichero NumPy (`model.npz`) junto con diccionarios de identificadores, y se ejecuta con un simple producto escalar, sin necesidad de framework de deep learning.
+book-recommender-mf es un recomendador de libros basado en factorización matricial (matrix factorization) publicado por el usuario pmarquees en Hugging Face. No es un modelo de lenguaje: es un artefacto de filtrado colaborativo que descompone la matriz de valoraciones de Goodreads en 32 factores latentes por usuario y por libro, y estima la nota de 1 a 10 estrellas que un usuario conocido daria a un libro concreto. El artefacto se distribuye como un fichero NumPy (`model.npz`) junto con diccionarios de identificadores, y se ejecuta con un simple producto escalar, sin necesidad de framework de deep learning.
 
 El entrenamiento se realizo sobre 3 millones de valoraciones procedentes de Goodreads, con 52.110 usuarios y 369.349 libros. La evaluacion declarada por el autor da un RMSE de validacion de 0,8995 en la mejor epoca de 20, pero un Hit@10 de 0,0 sobre 200 usuarios reservados, lo que indica que la prediccion de notas es razonable mientras que la calidad del ranking a escala de catalogo completo queda sin verificar. El propio autor lo advierte explicitamente en la model card.
 
@@ -74,11 +74,11 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 ## Comparativa con modelos similares
 
-No se ha encontrado en la informacion disponible ningun modelo de HuggingFace directamente comparable con parametros, contexto y metricas publicadas. Los proyectos localizados en la busqueda web son aplicaciones de GitHub con enfoques distintos y sin especificaciones tecnicas verificables.
+No se ha encontrado en la informacion disponible ningun modelo de Hugging Face directamente comparable con parametros, contexto y metricas publicadas. Los proyectos localizados en la busqueda web son aplicaciones de GitHub con enfoques distintos y sin especificaciones tecnicas verificables.
 
 | Modelo / proyecto | Enfoque | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pmarquees/book-recommender-mf | Factorizacion matricial sobre Goodreads | ~13,9 M (derivado) | No aplica | RMSE 0,8995; Hit@10 0,0 | other | HuggingFace |
+| pmarquees/book-recommender-mf | Factorizacion matricial sobre Goodreads | ~13,9 M (derivado) | No aplica | RMSE 0,8995; Hit@10 0,0 | other | Hugging Face |
 | tejaswini-phukan/book-recommender | Arbol de decision + Streamlit | No disponible | No aplica | No disponible | No disponible | GitHub |
 | Pranitttt64/Book-Recommender-AI-Model-App | Autoencoder con Keras + Streamlit | No disponible | No aplica | No disponible | No disponible | GitHub |
 | Sistema hibrido CF + content-based (IJERT) | Filtrado colaborativo + filtrado por contenido | No disponible | No aplica | No disponible | No disponible | Publicacion |
@@ -98,7 +98,7 @@ No se ha encontrado en la informacion disponible ningun modelo de HuggingFace di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pmarquees/book-recommender-mf
+- Modelo en Hugging Face: https://huggingface.co/pmarquees/book-recommender-mf
 - GitHub - tejaswini-phukan/book-recommender: https://github.com/tejaswini-phukan/book-recommender
 - GitHub - Pranitttt64/Book-Recommender-AI-Model-App: https://github.com/Pranitttt64/Book-Recommender-AI-Model-App
 - PDF - AI based Book Recommender System with Hybrid Approach (IJERT): https://www.ijert.org/research/ai-based-book-recommender-system-with-hybrid-approach-IJERTV9IS020416.pdf

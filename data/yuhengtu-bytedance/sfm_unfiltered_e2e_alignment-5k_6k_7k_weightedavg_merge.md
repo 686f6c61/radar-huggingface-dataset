@@ -10,7 +10,7 @@ La relevancia de este modelo radica en que representa un experimento de fusión 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (~6,86 B) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables. Al no conocerse el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-5k_6k_7k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-5k_6k_7k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del método Linear: https://arxiv.org/abs/2203.05482

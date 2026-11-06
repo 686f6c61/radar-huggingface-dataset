@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 ## Comparativa con modelos similares
 
-Se han identificado variantes de la misma serie en HuggingFace, pero no se dispone de información detallada sobre sus configuraciones. La siguiente tabla resume los datos disponibles:
+Se han identificado variantes de la misma serie en Hugging Face, pero no se dispone de información detallada sobre sus configuraciones. La siguiente tabla resume los datos disponibles:
 
 | Modelo | Dosis PT | Dosis PPT | Semilla | Parámetros | Contexto |
 |---|---|---|---|---|---|
@@ -78,6 +78,6 @@ No se dispone de información detallada de modelos comparables de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s2_2026-09-06_23-34-55_755227-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s2_2026-09-06_23-34-55_755227-pt
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/iq6w1q08
 - Repositorio nanochat: https://github.com/karpathy/nanochat

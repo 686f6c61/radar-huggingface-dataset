@@ -73,10 +73,10 @@ No se han publicado comparaciones con otros modelos de detección de inyección 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spanguard-toolguard-mdistil | 135,3 M | 512 tokens (heredado) | Clasificación de inyección en tool calls | Apache-2.0 | HuggingFace |
-| distilbert-base-multilingual-cased | 135 M | 512 tokens | Clasificación/encoder general | Apache-2.0 | HuggingFace |
-| ProtectAI deberta-v3-base-prompt-injection | ~184 M | 512 tokens | Detección de prompt injection en entradas | Apache-2.0 (variantes) | HuggingFace |
-| Llama Guard (variantes) | 8 B+ | 4k-8k tokens | Moderación de contenido y seguridad | Llama Community License | HuggingFace |
+| spanguard-toolguard-mdistil | 135,3 M | 512 tokens (heredado) | Clasificación de inyección en tool calls | Apache-2.0 | Hugging Face |
+| distilbert-base-multilingual-cased | 135 M | 512 tokens | Clasificación/encoder general | Apache-2.0 | Hugging Face |
+| ProtectAI deberta-v3-base-prompt-injection | ~184 M | 512 tokens | Detección de prompt injection en entradas | Apache-2.0 (variantes) | Hugging Face |
+| Llama Guard (variantes) | 8 B+ | 4k-8k tokens | Moderación de contenido y seguridad | Llama Community License | Hugging Face |
 
 La comparación con modelos de moderación generativos no es directa: spanguard-toolguard-mdistil es un clasificador pequeño y específico de argumentos de herramientas, mientras que Llama Guard cubre categorías de daño más amplias con mucho mayor coste computacional. Frente a otros detectores de prompt injection basados en DeBERTa, la diferencia principal es el foco en tool-call arguments y el soporte declarado de alemán y húngaro.
 
@@ -94,6 +94,6 @@ La comparación con modelos de moderación generativos no es directa: spanguard-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nabidnur/spanguard-toolguard-mdistil
+- Modelo en Hugging Face: https://huggingface.co/Nabidnur/spanguard-toolguard-mdistil
 - Repositorio de la familia spanguard: https://github.com/Hisernberg/spanguard
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-multilingual-cased

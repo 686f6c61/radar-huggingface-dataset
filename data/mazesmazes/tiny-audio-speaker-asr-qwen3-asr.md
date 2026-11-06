@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mazesmazes/tiny-audio-speaker-asr-qwen3-asr` es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario mazesmazes. Segun los metadatos del repositorio, esta construido sobre la familia Qwen3-ASR (etiqueta `qwen3_asr`) y su nombre sugiere un enfoque orientado a la transcripcion con atributos de hablante (speaker), aunque la model card no confirma ninguno de estos detalles. Cuenta con 782.426.112 parametros reales segun los pesos en safetensors y un tamano de repositorio de 1,6 GB.
+`mazesmazes/tiny-audio-speaker-asr-qwen3-asr` es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario mazesmazes. Segun los metadatos del repositorio, esta construido sobre la familia Qwen3-ASR (etiqueta `qwen3_asr`) y su nombre sugiere un enfoque orientado a la transcripcion con atributos de hablante (speaker), aunque la model card no confirma ninguno de estos detalles. Cuenta con 782.426.112 parametros reales segun los pesos en safetensors y un tamano de repositorio de 1,6 GB.
 
 El modelo se enmarca en la linea de trabajo "Tiny Audio" del mismo autor, cuyo objetivo declarado es construir sistemas ASR ligeros mediante tecnicas de ajuste eficiente en parametros (PEFT/LoRA) y entrenamiento en un unico GPU. En este caso, la base aparente es Qwen3-ASR, una familia de modelos ASR open source de Alibaba Cloud que soporta reconocimiento multilingue, deteccion de idioma y prediccion de marcas temporales.
 
@@ -23,7 +23,7 @@ La relevancia de esta publicacion es limitada por el momento: registra cero desc
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio es una plantilla autogenerada por HuggingFace y no incluye ninguna descripcion de la arquitectura, los datos de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La unica informacion estructural disponible proviene de los metadatos: libreria `transformers`, pipeline `automatic-speech-recognition`, etiqueta `qwen3_asr` y pesos en formato safetensors.
+La model card del repositorio es una plantilla autogenerada por Hugging Face y no incluye ninguna descripcion de la arquitectura, los datos de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La unica informacion estructural disponible proviene de los metadatos: libreria `transformers`, pipeline `automatic-speech-recognition`, etiqueta `qwen3_asr` y pesos en formato safetensors.
 
 Por el contexto del ecosistema, los modelos relacionados del mismo autor (por ejemplo `mazesmazes/tiny-audio`) combinan un encoder HuBERT-XLarge adaptado con LoRA, un proyector de audio entrenable y un decodificador de lenguaje adaptado con LoRA, con un planteamiento de entrenamiento economico (una unica GPU, ejecuciones del orden de 24 horas). No obstante, no hay confirmacion de que este checkpoint concreto siga esa receta, por lo que estos detalles deben tratarse como no verificados para este modelo.
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 0,4-0,5 GB de pesos.
 - GPU compatibles: cualquier GPU consumer moderna con al menos 4 GB de VRAM (por ejemplo, RTX 3050, RTX 3060, RTX 4060, RTX 4090) deberia poder ejecutar el modelo en FP16. GPU de datacenter (A100, H100) no son necesarias por tamano.
 - Cabria en CPU para inferencia no interactiva, dado el reducido numero de parametros, aunque la latencia no esta documentada.
-- Opciones de despliegue: al estar publicado con libreria `transformers` y etiqueta `endpoints_compatible`, la via natural es `transformers` (con `AutoModel`/`pipeline`) y HuggingFace Inference Endpoints. El soporte en vLLM, llama.cpp, Ollama o TGI no esta confirmado ni se han publicado pesos GGUF.
+- Opciones de despliegue: al estar publicado con libreria `transformers` y etiqueta `endpoints_compatible`, la via natural es `transformers` (con `AutoModel`/`pipeline`) y Hugging Face Inference Endpoints. El soporte en vLLM, llama.cpp, Ollama o TGI no esta confirmado ni se han publicado pesos GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mazesmazes/tiny-audio-speaker-asr-qwen3-asr` (este) | 782 M | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3-ASR-0.6B (Alibaba Cloud) | ~0,6 B | no disponible | 52 idiomas y dialectos | no disponible en la informacion proporcionada | GitHub / HuggingFace |
-| Qwen3-ASR-1.7B (Alibaba Cloud) | ~1,7 B | no disponible | 52 idiomas y dialectos | no disponible en la informacion proporcionada | GitHub / HuggingFace |
-| `mazesmazes/tiny-audio` | encoder HuBERT-XLarge + decoder SmolLM3-3B (parametros totales no disponibles) | no disponible | no disponible | no disponible | HuggingFace |
+| `mazesmazes/tiny-audio-speaker-asr-qwen3-asr` (este) | 782 M | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3-ASR-0.6B (Alibaba Cloud) | ~0,6 B | no disponible | 52 idiomas y dialectos | no disponible en la informacion proporcionada | GitHub / Hugging Face |
+| Qwen3-ASR-1.7B (Alibaba Cloud) | ~1,7 B | no disponible | 52 idiomas y dialectos | no disponible en la informacion proporcionada | GitHub / Hugging Face |
+| `mazesmazes/tiny-audio` | encoder HuBERT-XLarge + decoder SmolLM3-3B (parametros totales no disponibles) | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion directa de rendimiento no es posible porque este checkpoint no publica evaluacion alguna, mientras que Qwen3-ASR describe soporte para 52 idiomas y deteccion de idioma sin cifras concretas en la informacion disponible.
 
@@ -86,7 +86,7 @@ La comparacion directa de rendimiento no es posible porque este checkpoint no pu
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-speaker-asr-qwen3-asr
+- Pagina del modelo en Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-speaker-asr-qwen3-asr
 - Modelo relacionado del mismo autor: https://huggingface.co/mazesmazes/tiny-audio
 - Modelo relacionado del mismo autor: https://huggingface.co/mazesmazes/tiny-audio-moe
 - Repositorio oficial de Qwen3-ASR (QwenLM): https://github.com/QwenLM/Qwen3-ASR

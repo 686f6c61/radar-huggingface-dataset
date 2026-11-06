@@ -11,7 +11,7 @@ La versión que nos ocupa es un fork no oficial del usuario TonyMFJ, que publica
 | Parametro | Valor |
 |---|---|
 | Arquitectura | MoE híbrido (Gated DeltaNet + Gated Attention) con embeddings n-gram, multimodal |
-| Parametros totales | 125B (modelo principal) + 51B (embeddings n-gram), según el repositorio oficial; el repo HuggingFace registra 51.200.231.360 en safetensors |
+| Parametros totales | 125B (modelo principal) + 51B (embeddings n-gram), según el repositorio oficial; el repo Hugging Face registra 51.200.231.360 en safetensors |
 | Parametros activos | 6B activados por token |
 | Longitud de contexto | 102.400 tokens |
 | Tipos de cuantizacion | ROCmFP4 FAST v2 ple16 (modelo principal), Q4_K_M (modelo MTP), FP16 (proyector de visión) |
@@ -66,12 +66,12 @@ no disponible
 - Depende de un fork concreto de llama.cpp con soporte para sidecar PLE y de flags específicos como `--load-mode auto` y `--model-ple`; no funcionará con un llama.cpp estándar sin estos parches.
 - No se han documentado evaluaciones de sesgos ni de seguridad. El modelo puede exhibir alucinaciones y reproducir sesgos presentes en sus datos de entrenamiento.
 - La licencia no está especificada en la información proporcionada, lo que introduce incertidumbre para un uso comercial. Antes de desplegar en producción conviene verificar la licencia con los autores originales.
-- El repositorio de HuggingFace muestra una fecha de creación en 2026 y un tamaño total de 119,6 GB, lo que implica una descarga muy voluminosa y un almacenamiento local considerable.
+- El repositorio de Hugging Face muestra una fecha de creación en 2026 y un tamaño total de 119,6 GB, lo que implica una descarga muy voluminosa y un almacenamiento local considerable.
 - No se disponen de datos sobre idiomas soportados, por lo que no se puede garantizar un comportamiento multilingüe correcto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TonyMFJ/Qwen3.8-Flash-Next-WinVulkan-GGUF
+- Hugging Face: https://huggingface.co/TonyMFJ/Qwen3.8-Flash-Next-WinVulkan-GGUF
 - GitHub del fork: https://github.com/TonyMFJ/Qwen3.8-Flash-Next-WinVulkan
 - GitHub oficial de QwenLM: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - README oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md

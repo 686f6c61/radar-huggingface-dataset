@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JacobBaker/classification-2024 es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura híbrida CNN + transformer orientada a tareas de clasificación. El autor lo publica explícitamente como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+JacobBaker/classification-2024 es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura híbrida CNN + transformer orientada a tareas de clasificación. El autor lo publica explícitamente como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El tamaño real del checkpoint es de 33.088 parámetros, lo que lo sitúa en la categoría de modelo de juguete (toy model). La arquitectura combina atención dispersa (sparse attention), fusión mediante MLP con concatenación, activación GELU y normalización LayerNorm. El repositorio ocupa 0,0 GB y se distribuye bajo licencia BSD-3-Clause.
 
@@ -104,9 +104,9 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Restricciones de licencia: BSD-3-Clause es una licencia permisiva que permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de copyright y la cláusula de exención de responsabilidad. La model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - Advertencia de integración: las APIs genéricas de carga automática no funcionan sin un adaptador explícito, dado que la implementación es propia.
 - Caveat para producción: no debe desplegarse como clasificador en producción sin un entrenamiento previo y una evaluación con métricas de tarea, al menos tres semillas y un baseline de capacidad equivalente.
-- Madurez del artefacto: 15 descargas y 0 likes, actualizado el mismo día de su creación, sin pipeline declarado en HuggingFace.
+- Madurez del artefacto: 15 descargas y 0 likes, actualizado el mismo día de su creación, sin pipeline declarado en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JacobBaker/classification-2024
+- Modelo en Hugging Face: https://huggingface.co/JacobBaker/classification-2024
 - Resultados de la búsqueda web: ninguna de las URL devueltas guarda relación con este repositorio (Wikipedia sobre Jev, artificialanalysis.ai, scriptbyai.com, llm-stats.com, indianexpress.com), por lo que no se listan como enlaces relevantes. No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo.

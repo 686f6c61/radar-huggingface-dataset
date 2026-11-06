@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mysterium99/xvla-newtasks-manufacturing | 879,7 M | VLA fine-tune (manufactura) | no disponible | apache-2.0 | HuggingFace |
-| lerobot/xvla-base | no disponible | VLA base | no disponible | no disponible | HuggingFace |
-| Otros VLA de LeRobot (p. ej. pi0, SmolVLA) | no disponible | VLA | no disponible | no disponible | HuggingFace |
+| mysterium99/xvla-newtasks-manufacturing | 879,7 M | VLA fine-tune (manufactura) | no disponible | apache-2.0 | Hugging Face |
+| lerobot/xvla-base | no disponible | VLA base | no disponible | no disponible | Hugging Face |
+| Otros VLA de LeRobot (p. ej. pi0, SmolVLA) | no disponible | VLA | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/xvla-newtasks-manufacturing
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/xvla-newtasks-manufacturing
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Paper X-VLA: https://huggingface.co/papers/2510.10274
 - Dataset de fine-tuning: https://huggingface.co/datasets/manufacturing_finetune

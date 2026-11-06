@@ -82,9 +82,9 @@ Media: 4,884 segundos; total: 4884 ticks. La única mejora frente a v5 es de un 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sock-heist-6m-wr1n-3f7c858c (este) | no disponible (ONNX de 1,21 MB) | no aplica | Media 4,884 s; 4884 ticks (5 semillas) | no disponible como licencia global | HuggingFace, 0 descargas, 0 likes |
-| rumezhak/microduck-sock-heist-composite-v5 (base) | no disponible | no aplica | Ticks v5: 960/1030/950/960/985 | no disponible | HuggingFace |
-| microduck-sock-heist-composite-v1 a v4 | no disponible | no aplica | no disponible | no disponible | HuggingFace (linaje citado) |
+| microduck-sock-heist-6m-wr1n-3f7c858c (este) | no disponible (ONNX de 1,21 MB) | no aplica | Media 4,884 s; 4884 ticks (5 semillas) | no disponible como licencia global | Hugging Face, 0 descargas, 0 likes |
+| rumezhak/microduck-sock-heist-composite-v5 (base) | no disponible | no aplica | Ticks v5: 960/1030/950/960/985 | no disponible | Hugging Face |
+| microduck-sock-heist-composite-v1 a v4 | no disponible | no aplica | no disponible | no disponible | Hugging Face (linaje citado) |
 | quicksilver-v2 (HlibPlakhtii) | no disponible | no aplica | no disponible | no disponible | Citado como linaje, no verificado en la información disponible |
 
 La comparación se limita al linaje declarado por el autor. No se dispone de datos de rendimiento de v1 a v4 ni de quicksilver-v2 en la información proporcionada, y no se conocen alternativas fuera de la familia Microduck.
@@ -102,7 +102,7 @@ La comparación se limita al linaje declarado por el autor. No se dispone de dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c
 - Política origen (revisión fijada): https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c/resolve/93ca332c78d4d51eaa74c45d78701d0524e2250c/policy.onnx
 - Modelo base: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v5/tree/3d6763f07e4d5941e07121b8b48119e9bda60977
 - Microduck Arena y runner oficial: no disponible como enlace en la información proporcionada (citado como Pollen Robotics)

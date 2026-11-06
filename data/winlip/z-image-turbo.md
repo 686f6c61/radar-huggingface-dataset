@@ -17,7 +17,7 @@ El modelo destaca en generación fotorrealista, renderizado de texto bilingüe (
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (modelo de generación de imágenes texto-a-imagen) |
 | Tipos de cuantización | No disponible (no se documentan variantes cuantizadas; pesos en safetensors) |
-| Idiomas soportados | Inglés y chino (según la model card del proyecto original); el tag de HuggingFace indica únicamente "en" |
+| Idiomas soportados | Inglés y chino (según la model card del proyecto original); el tag de Hugging Face indica únicamente "en" |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (librería diffusers) |
 
@@ -59,15 +59,15 @@ No se han publicado resultados de benchmarks numéricos (tipo FID, CLIP score, G
 - VRAM estimada para inferencia: la model card indica que el modelo cabe cómodamente en dispositivos de consumo con 16 GB de VRAM. Los pesos en safetensors suman aproximadamente 32,9 GB de repositorio total, aunque no se detalla el desglose entre modelo, codificador de texto y VAE.
 - GPU recomendadas: H800 para latencia sub-segundo en entornos empresariales. Para uso en consumo, GPUs con al menos 16 GB de VRAM (gama alta de consumo).
 - ¿Cabe en GPU de consumo? Sí, según la model card, en dispositivos con 16 GB de VRAM.
-- Opciones de despliegue: la librería oficial es diffusers, por lo que el despliegue estándar se realiza a través de `ZImagePipeline` de la librería diffusers. También se ofrecen demos en HuggingFace Spaces (versión de escritorio y versión móvil) y en ModelScope.
+- Opciones de despliegue: la librería oficial es diffusers, por lo que el despliegue estándar se realiza a través de `ZImagePipeline` de la librería diffusers. También se ofrecen demos en Hugging Face Spaces (versión de escritorio y versión móvil) y en ModelScope.
 - Latencia y throughput: se declara inferencia sub-segundo en GPUs H800, con 8 NFEs por generación. No se proporcionan cifras de throughput ni latencia para otros hardwares.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Pasos (NFEs) | CFG | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Z-Image-Turbo (este) | ~6B | 8 | No | apache-2.0 | HuggingFace / ModelScope |
-| Z-Image (base) | ~6B | 50 | Sí | apache-2.0 | HuggingFace / ModelScope |
+| Z-Image-Turbo (este) | ~6B | 8 | No | apache-2.0 | Hugging Face / ModelScope |
+| Z-Image (base) | ~6B | 50 | Sí | apache-2.0 | Hugging Face / ModelScope |
 | Z-Image-Omni-Base | ~6B | 50 | Sí | apache-2.0 | Pendiente de publicación |
 
 Para alternativas externas a la familia Z-Image (por ejemplo, modelos de la familia FLUX o Stable Diffusion), no se dispone de datos verificados en la información proporcionada, por lo que se indica "no disponible" en lugar de estimar cifras.
@@ -78,7 +78,7 @@ Para alternativas externas a la familia Z-Image (por ejemplo, modelos de la fami
 - Diversidad limitada: la tabla comparativa del proyecto clasifica a Z-Image-Turbo con diversidad "Low", lo que implica menor variabilidad en identidades, poses y composiciones frente a otros modelos de la familia.
 - No apto para fine-tuning según el propio proyecto: la columna "Fine-Tunability" de Z-Image-Turbo figura como "N/A".
 - Sin edición de imágenes: este checkpoint no realiza tareas de edición; para ello existe Z-Image-Edit, pendiente de publicación.
-- Idiomas: la model card menciona soporte bilingüe inglés-chino, pero el tag de HuggingFace solo declara inglés. Conviene verificar el comportamiento real en otros idiomas.
+- Idiomas: la model card menciona soporte bilingüe inglés-chino, pero el tag de Hugging Face solo declara inglés. Conviene verificar el comportamiento real en otros idiomas.
 - Riesgo de alucinación visual: como todo modelo generativo, puede producir contenido inexacto, artefactos anatómicos o texto malformado en casos fuera de su distribución de entrenamiento.
 - Sesgos: no se documentan análisis de sesgos en la información disponible, pero al entrenarse sobre datos web es probable la presencia de sesgos demográficos y culturales.
 - Licencia: apache-2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y atribución correspondiente.
@@ -87,11 +87,11 @@ Para alternativas externas a la familia Z-Image (por ejemplo, modelos de la fami
 ## Enlaces
 
 - Repositorio objeto de esta ficha (mirror): https://huggingface.co/winlip/Z-Image-Turbo
-- Checkpoint oficial en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Checkpoint oficial en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio GitHub oficial: https://github.com/Tongyi-MAI/Z-Image
 - Blog oficial del proyecto: https://tongyi-mai.github.io/Z-Image-blog/
-- Demo oficial en HuggingFace Spaces: https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
-- Demo móvil en HuggingFace Spaces: https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
+- Demo oficial en Hugging Face Spaces: https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
+- Demo móvil en Hugging Face Spaces: https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
 - Checkpoint en ModelScope: https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo
 - Demo en ModelScope: https://www.modelscope.cn/aigc/imageGeneration?tab=advanced&versionId=469191&modelType=Checkpoint&sdVersion=Z_IMAGE_TURBO
 - Galería de arte (PDF): assets/Z-Image-Gallery.pdf

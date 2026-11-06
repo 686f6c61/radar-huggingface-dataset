@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sunsing1990/paper-generation` es un prototipo de investigacion publicado en HuggingFace por el usuario sunsing1990 que combina la arquitectura DeiT (Data-efficient Image Transformer) con un objetivo declarado de generacion. El repositorio se presenta explicitamente como un punto de partida experimental: la model card indica que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El recuento real de parametros almacenados en `model.safetensors` es de 33 088, una cifra que contrasta con la etiqueta de escala "giant" que figura en la configuracion, lo que sugiere que la nomenclatura de escala es una etiqueta de receta y no una descripcion del tamano efectivo del tensor.
+`sunsing1990/paper-generation` es un prototipo de investigacion publicado en Hugging Face por el usuario sunsing1990 que combina la arquitectura DeiT (Data-efficient Image Transformer) con un objetivo declarado de generacion. El repositorio se presenta explicitamente como un punto de partida experimental: la model card indica que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El recuento real de parametros almacenados en `model.safetensors` es de 33 088, una cifra que contrasta con la etiqueta de escala "giant" que figura en la configuracion, lo que sugiere que la nomenclatura de escala es una etiqueta de receta y no una descripcion del tamano efectivo del tensor.
 
 La relevancia de esta ficha es, por tanto, mas documental que funcional. En el momento de su publicacion el repositorio acumulaba 18 descargas, 0 likes y un tamano de 0,0 GB, sin pipeline declarado y sin idiomas especificados. No se reclama ninguna puntuacion de benchmark en el repositorio, y el autor recomienda evaluar sobre un conjunto de validacion especifico de tarea, con al menos tres semillas y una linea base de capacidad comparable.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, la model card es explicita: la receta incluida usa N
 - Pruebas de humo de infraestructura: usar `model.safetensors` para verificar que un pipeline de carga, serializacion y despliegue funciona de extremo a extremo antes de disponer de pesos entrenados.
 - Investigacion en atencion lineal: el modelo permite medir el coste y el comportamiento de un esquema de atencion lineal frente a atencion softmax sobre un backbone DeiT, con el mismo script y la misma configuracion.
 - Estudio de fusion por co-atencion: sirve como base para experimentos controlados sobre mecanismos de fusion entre modalidades o entre ramas, ya que `config.json` expone los ajustes de arquitectura.
-- Docencia y formacion: util como ejemplo minimo y legible de un proyecto de investigacion en HuggingFace con separacion clara entre codigo, configuracion de arquitectura, receta de entrenamiento y pesos.
+- Docencia y formacion: util como ejemplo minimo y legible de un proyecto de investigacion en Hugging Face con separacion clara entre codigo, configuracion de arquitectura, receta de entrenamiento y pesos.
 - Reproducibilidad de recetas: `training_args.json` documenta los valores por defecto del experimento (Novograd, planificador exponencial), lo que permite replicar la receta o sustituirla manteniendo el resto del andamiaje fijo.
 - Linea base de capacidad comparable: el repositorio puede emplearse como punto de comparacion de un modelo de capacidad similar cuando se evalua sobre un conjunto de validacion especifico de tarea con al menos tres semillas.
 - Desarrollo de adaptadores de carga: al no ser compatible con las APIs genericas de carga automatica, es un caso practico para implementar y probar un adaptador personalizado para checkpoints de arquitectura no estandar.
@@ -91,5 +91,5 @@ No hay datos de rendimiento comparado disponibles para este repositorio, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunsing1990/paper-generation
+- Modelo en Hugging Face: https://huggingface.co/sunsing1990/paper-generation
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo. Los resultados obtenidos trataban exclusivamente sobre la configuracion de Microsoft Teams (idioma de la interfaz, invitaciones de calendario, gestion de contactos y encuestas en reuniones) y no guardan relacion con el repositorio analizado: https://jingyan.baidu.com/article/b7001fe14034a94f7282ddde.html, https://techcommunity.microsoft.com/discussions/microsoftteams/change-outlook-calendar-invite-to-set-teams-status-to-do-not-disturb/1721500, https://techcommunity.microsoft.com/discussions/microsoftteams/teams-calendar---can-it-be-used-for-events-not-meetings/3719138, https://jingyan.baidu.com/article/a948d6514735af4b2ccd2e50.html, https://techcommunity.microsoft.com/discussions/microsoftteams/%F0%9F%A4%94how-to-create-word-cloud-poll-for-teams-meeting/3054550

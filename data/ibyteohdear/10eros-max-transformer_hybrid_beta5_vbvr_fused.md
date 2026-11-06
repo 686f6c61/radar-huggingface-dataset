@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED | 20.111 M | no disponible | Transformer de difusión de vídeo (MiniMax-H3 pruned) | no disponible | HuggingFace, 101 descargas |
-| multimodalart/MiniMax-H3-Pruned | no disponible | no disponible | Transformer de difusión de vídeo (base podado) | no disponible | HuggingFace (repo base) |
+| 10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED | 20.111 M | no disponible | Transformer de difusión de vídeo (MiniMax-H3 pruned) | no disponible | Hugging Face, 101 descargas |
+| multimodalart/MiniMax-H3-Pruned | no disponible | no disponible | Transformer de difusión de vídeo (base podado) | no disponible | Hugging Face (repo base) |
 | MiniMax-H3 (original) | no disponible | no disponible | Transformer de difusión de vídeo | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, tipo y disponibilidad.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED
+- Repositorio Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED
 - Modelo base: https://huggingface.co/multimodalart/MiniMax-H3-Pruned
 - Checkpoint de origen citado en la model card: `TenStrip/10Eros-Max/10Eros_Max_h3_hybrid_beta5.safetensors` (no se proporciona URL directa)
 - Documentación de diffusers: https://huggingface.co/docs/diffusers

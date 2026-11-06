@@ -99,7 +99,7 @@ No disponible la comparación con otros modelos VLA de la misma categoría (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayden1711/omnivla-7b-jetson-int4
+- Modelo en Hugging Face: https://huggingface.co/jayden1711/omnivla-7b-jetson-int4
 - Repositorio del runtime para Jetson: https://github.com/jayden1711/omnivla-jetson
 - README del runtime: https://github.com/jayden1711/omnivla-jetson/blob/main/README.md
 - Paper de OmniVLA: https://arxiv.org/abs/2509.19480

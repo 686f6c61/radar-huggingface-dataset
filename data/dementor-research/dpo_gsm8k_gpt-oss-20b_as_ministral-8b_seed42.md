@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables directos. El estudio deme
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_ministral-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_ministral-8b_seed42
 - Adaptador similar (gpt-oss-20b imitando a llama-3.1-8b): https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed3
 - Adaptador inverso (llama-3.1-8b imitando a gpt-oss-20b): https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed42
 - Pagina de despliegue en FriendliAI (modelo similar): https://friendli.ai/models/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3

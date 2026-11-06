@@ -17,7 +17,7 @@ Su relevancia actual es doble: por un lado, demuestra una receta de cuantizació
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF con mezcla JANG: Q8_0 (atención completa q/k/v/output y token_embd), Q6_K (shortconv.in_proj/out_proj), Q4_K_M (ffn_gate/up/down), F32 (shortconv.conv y normas) |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp / Ollama) |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ Comparativa con otras familias de modelos: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roman220220/LFM2.5-1.2B-Instruct-GGUF-jang-imatrix
+- Repositorio Hugging Face: https://huggingface.co/roman220220/LFM2.5-1.2B-Instruct-GGUF-jang-imatrix
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Variante MLX/GPTQ del mismo autor: https://huggingface.co/roman220220/LFM2.5-1.2B-Instruct-gptq-mlx-jang
 - LLMTray (aplicación local de IA para macOS): https://www.ipsupport.us/llmtray/

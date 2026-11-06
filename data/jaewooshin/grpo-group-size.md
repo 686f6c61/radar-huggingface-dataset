@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Dominio de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JaeWooShin/grpo-group-size | 4.000 millones (aprox.) | no disponible (respuestas de 8.192 tokens) | Razonamiento matematico (DAPO-Math-17k, ingles) | Apache 2.0 | HuggingFace, checkpoints intermedios y rollouts |
-| Qwen/Qwen3-4B-Base | 4.000 millones (aprox.) | no disponible en la informacion proporcionada | Preentrenamiento general | Apache 2.0 | HuggingFace |
+| JaeWooShin/grpo-group-size | 4.000 millones (aprox.) | no disponible (respuestas de 8.192 tokens) | Razonamiento matematico (DAPO-Math-17k, ingles) | Apache 2.0 | Hugging Face, checkpoints intermedios y rollouts |
+| Qwen/Qwen3-4B-Base | 4.000 millones (aprox.) | no disponible en la informacion proporcionada | Preentrenamiento general | Apache 2.0 | Hugging Face |
 | Modelos ajustados con GRPO/DAPO sobre Qwen3-4B | 4.000 millones (aprox.) | variable | Razonamiento matematico | variable | variable |
 
 La comparativa con alternativas concretas no esta disponible en la informacion proporcionada; el modelo base Qwen3-4B-Base es la referencia directa y el punto de partida del ajuste.
@@ -86,7 +86,7 @@ La comparativa con alternativas concretas no esta disponible en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaeWooShin/grpo-group-size
+- Modelo en Hugging Face: https://huggingface.co/JaeWooShin/grpo-group-size
 - Bucket de checkpoints FSDP: https://huggingface.co/buckets/JaeWooShin/grpo-group-size-checkpoints
 - Modelo base Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Repositorio de verl: https://github.com/verl-project/verl

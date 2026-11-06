@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kavach PII 270M GGUF es la distribucion cuantizada del modelo Kavach PII 270M, publicado por el usuario inboxpraveen en HuggingFace. Se trata de un modelo de generacion de texto de 268.098.176 parametros (aproximadamente 270M) especializado en una unica tarea: extraer datos personales (PII, PHI y PCI) de texto libre y devolverlos como un array JSON de pares etiqueta-valor. Cubre 52 tipos de entidad, desde PERSON, EMAIL o PHONE hasta identificadores especificos como AADHAAR_IN, PAN_IN, UPI_VPA, SSN_US, IBAN, SWIFT_BIC, MEDICAL_RECORD_ID o WALLET_ID.
+Kavach PII 270M GGUF es la distribucion cuantizada del modelo Kavach PII 270M, publicado por el usuario inboxpraveen en Hugging Face. Se trata de un modelo de generacion de texto de 268.098.176 parametros (aproximadamente 270M) especializado en una unica tarea: extraer datos personales (PII, PHI y PCI) de texto libre y devolverlos como un array JSON de pares etiqueta-valor. Cubre 52 tipos de entidad, desde PERSON, EMAIL o PHONE hasta identificadores especificos como AADHAAR_IN, PAN_IN, UPI_VPA, SSN_US, IBAN, SWIFT_BIC, MEDICAL_RECORD_ID o WALLET_ID.
 
 El modelo esta construido sobre la arquitectura Gemma 3 270M, con un token embedding de 262.144 x 640 (168M de los 268M de parametros, el 63% del total). Esta distribucion concreta esta pensada para ejecutarse en llama.cpp, Ollama y LM Studio, e incluye nueve builds GGUF que cubren desde 169 MB hasta 526 MB, lo que permite despliegues en CPU, en equipos de borde y en entornos on-premise donde el texto no puede salir de la maquina.
 
@@ -89,8 +89,8 @@ La informacion proporcionada no incluye comparaciones con otros modelos, y no se
 
 | Modelo | Parametros | Contexto | Rendimiento en PII | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kavach PII 270M GGUF | 268.098.176 | uso recomendado 4096 tokens | F1 89,2 y recall de redaccion 94,1 en Q4_K_M (evaluacion propia del autor, 400 documentos) | gemma | GGUF en HuggingFace, 9 cuantizaciones |
-| Kavach PII 270M (base, safetensors) | 268.098.176 | no disponible | no disponible | gemma | HuggingFace |
+| Kavach PII 270M GGUF | 268.098.176 | uso recomendado 4096 tokens | F1 89,2 y recall de redaccion 94,1 en Q4_K_M (evaluacion propia del autor, 400 documentos) | gemma | GGUF en Hugging Face, 9 cuantizaciones |
+| Kavach PII 270M (base, safetensors) | 268.098.176 | no disponible | no disponible | gemma | Hugging Face |
 | Otras soluciones de deteccion de PII (modelos NER especializados, reglas tipo Presidio) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ La informacion proporcionada no incluye comparaciones con otros modelos, y no se
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/inboxpraveen/Kavach-PII-270M-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/inboxpraveen/Kavach-PII-270M-GGUF
 - Modelo base (safetensors): https://huggingface.co/inboxpraveen/Kavach-PII-270M
 
 No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo. Los resultados devueltos por el buscador no guardan relacion con el modelo ni con la deteccion de PII, por lo que se descartan como fuentes.

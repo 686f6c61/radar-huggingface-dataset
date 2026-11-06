@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/maple-vale-14` es un adaptador LoRA publicado por el usuario `models4world` en HuggingFace, diseñado para la generación de texto conversacional. Se basa en el modelo `models4world/maple-signal-64`, que actúa como modelo base, y utiliza la librería PEFT para su implementación. El adaptador está pensado para tareas de texto generativo, con especial énfasis en conversación.
+El modelo `models4world/maple-vale-14` es un adaptador LoRA publicado por el usuario `models4world` en Hugging Face, diseñado para la generación de texto conversacional. Se basa en el modelo `models4world/maple-signal-64`, que actúa como modelo base, y utiliza la librería PEFT para su implementación. El adaptador está pensado para tareas de texto generativo, con especial énfasis en conversación.
 
 La relevancia de este modelo radica en su enfoque de fine-tuning eficiente mediante LoRA, una técnica que permite adaptar modelos grandes con un coste computacional reducido. Sin embargo, la información pública disponible es extremadamente limitada: la model card no contiene detalles sobre arquitectura, datos de entrenamiento, rendimiento o licencia, lo que dificulta su evaluación rigurosa para casos de uso en producción. El repositorio ocupa 7.5 GB, lo que sugiere que podría incluir los pesos del adaptador junto con parte del modelo base o en formato completo.
 
@@ -31,7 +31,7 @@ No se dispone de informacion sobre el volumen de datos de entrenamiento, la comp
 
 - Generacion de texto conversacional: el modelo esta etiquetado con `conversational` y `text-generation`, lo que indica que su funcion principal es producir respuestas en contextos de dialogo.
 - Fine-tuning eficiente: al ser un adaptador LoRA, puede combinarse con el modelo base `models4world/maple-signal-64` para tareas especificas sin necesidad de ajustar todos los parametros del modelo original.
-- Compatibilidad con el ecosistema PEFT: el adaptador se integra con la libreria PEFT de HuggingFace, facilitando su carga y uso con transformers.
+- Compatibilidad con el ecosistema PEFT: el adaptador se integra con la libreria PEFT de Hugging Face, facilitando su carga y uso con transformers.
 - No se documentan capacidades adicionales como tool calling, razonamiento multi-paso, soporte multimodal, ni habilidades multilingues especificas.
 
 ## Casos de uso
@@ -71,6 +71,6 @@ No disponible. Al no conocerse el modelo base ni las caracteristicas tecnicas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/models4world/maple-vale-14
+- Modelo en Hugging Face: https://huggingface.co/models4world/maple-vale-14
 - Paper citado en la model card (estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base: https://huggingface.co/models4world/maple-signal-64 (enlace inferido, no confirmado)

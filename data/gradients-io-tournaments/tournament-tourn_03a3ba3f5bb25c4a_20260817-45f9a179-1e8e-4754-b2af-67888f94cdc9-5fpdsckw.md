@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una submission al sistema de torneos de Gradients, una plataforma descentralizada de entrenamiento e investigacion en IA que opera a traves de la Subnet 56. Se trata de un modelo de generacion de texto con aproximadamente 2.700 millones de parametros (2,7B), alojado en formato safetensors y compatible con la libreria transformers de HuggingFace. La model card asociada es una plantilla autogenerada sin informacion sustantiva sobre arquitectura, datos de entrenamiento, capacidades o rendimiento.
+Este modelo es una submission al sistema de torneos de Gradients, una plataforma descentralizada de entrenamiento e investigacion en IA que opera a traves de la Subnet 56. Se trata de un modelo de generacion de texto con aproximadamente 2.700 millones de parametros (2,7B), alojado en formato safetensors y compatible con la libreria transformers de Hugging Face. La model card asociada es una plantilla autogenerada sin informacion sustantiva sobre arquitectura, datos de entrenamiento, capacidades o rendimiento.
 
 El modelo parece ser el resultado de un proceso de entrenamiento competitivo dentro del ecosistema de torneos de Gradients, donde diferentes participantes compiten por producir los mejores modelos. Su relevancia radica en que representa un ejemplo de los resultados del entrenamiento descentralizado de modelos de IA, un enfoque emergente que busca democratizar el desarrollo de modelos mediante la participacion distribuida. Sin embargo, la ausencia total de documentacion tecnica detallada limita significativamente su evaluacion y uso practico.
 
@@ -21,9 +21,9 @@ El modelo parece ser el resultado de un proceso de entrenamiento competitivo den
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza la libreria transformers de HuggingFace, lo que indica una arquitectura basada en transformer. El tag "lfm2" podria hacer referencia a alguna metodologia especifica de fine-tuning o entrenamiento, pero no existe documentacion que lo confirme. El tag "arxiv:1910.09700" corresponde al paper de Lacoste et al. sobre estimacion de emisiones de carbono en ML, que se cita de forma estandar en las model cards generadas automaticamente.
+El modelo utiliza la libreria transformers de Hugging Face, lo que indica una arquitectura basada en transformer. El tag "lfm2" podria hacer referencia a alguna metodologia especifica de fine-tuning o entrenamiento, pero no existe documentacion que lo confirme. El tag "arxiv:1910.09700" corresponde al paper de Lacoste et al. sobre estimacion de emisiones de carbono en ML, que se cita de forma estandar en las model cards generadas automaticamente.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas del modelo. El tag "endpoints_compatible" sugiere que el modelo es compatible con los endpoints de inferencia de HuggingFace, pero no se ha verificado esta compatibilidad.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas del modelo. El tag "endpoints_compatible" sugiere que el modelo es compatible con los endpoints de inferencia de Hugging Face, pero no se ha verificado esta compatibilidad.
 
 ## Capacidades
 
@@ -73,5 +73,5 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_03a3ba3f5bb25c4a_20260817-45f9a179-1e8e-4754-b2af-67888f94cdc9-5FpdSckw
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_03a3ba3f5bb25c4a_20260817-45f9a179-1e8e-4754-b2af-67888f94cdc9-5FpdSckw
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament

@@ -67,7 +67,7 @@ No se dispone de información sobre otros modelos de la misma categoría (adapta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HusseinAlamutu/tiny-aya-earth-yoruba-lora
+- Hugging Face: https://huggingface.co/HusseinAlamutu/tiny-aya-earth-yoruba-lora
 - Repositorio GitHub: https://github.com/husseinalamutu/sovereign-k8s-llm
 - Modelo base: https://huggingface.co/CohereLabs/tiny-aya-earth
 - Dataset utilizado: https://huggingface.co/datasets/masakhane/african-ultrachat

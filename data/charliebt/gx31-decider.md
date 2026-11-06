@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CharlieBT/gx31-decider
+- Hugging Face: https://huggingface.co/CharlieBT/gx31-decider
 - Modelo base: https://huggingface.co/tattrongvu/Jeffan-31b-1710
 - Modelo raíz: https://huggingface.co/google/gemma-4-31B-it
 - Dataset de decisiones tipadas: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions

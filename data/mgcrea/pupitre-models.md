@@ -25,7 +25,7 @@ Se trata de un repositorio con 0 descargas y 0 me gusta, sin pipeline declarado 
 | Tamaño del repositorio | 0,4 GB |
 | Tarea | separación de fuentes musicales (audio source separation) |
 | Autor | mgcrea |
-| Fecha de creación y actualización en HuggingFace | 2026-09-26 (ambas, con cinco segundos de diferencia) |
+| Fecha de creación y actualización en Hugging Face | 2026-09-26 (ambas, con cinco segundos de diferencia) |
 | Pipeline declarado | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -91,13 +91,13 @@ La ventaja diferencial de esta publicación no es la calidad de separación, sin
 - La licencia MIT corresponde al repositorio de conversión; la model card indica que los pesos originales tienen su propia licencia y crédito, que conviene revisar antes de un uso comercial.
 - El repositorio acumula 0 descargas y 0 me gusta y no declara pipeline, por lo que carece de validación externa y de señales de mantenimiento continuado.
 - Las fechas de creación y actualización registradas son idénticas salvo cinco segundos y corresponden a una fecha futura respecto a la publicación habitual de modelos, lo que sugiere que pueden no ser fiables.
-- No se declaran idiomas ni un pipeline de HuggingFace, de modo que no se puede integrar mediante las abstracciones estándar de la librería transformers.
+- No se declaran idiomas ni un pipeline de Hugging Face, de modo que no se puede integrar mediante las abstracciones estándar de la librería transformers.
 - El uso está atado al ecosistema Core ML: fuera de Apple hay que reconvertir el modelo desde el original, lo que anula la ventaja de este artefacto.
 - Al ser un modelo de audio, no ofrece ninguna de las garantías habituales de los modelos de lenguaje (control de instrucciones, filtros de contenido, trazabilidad de respuestas).
 - El repositorio completo ocupa 0,4 GB; conviene verificar el SHA-256 de cada fichero descargado, tal como hace la aplicación de referencia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mgcrea/pupitre-models
+- Repositorio en Hugging Face: https://huggingface.co/mgcrea/pupitre-models
 - Los resultados de la búsqueda web realizada no contienen enlaces relevantes sobre este modelo: todas las entradas recuperadas corresponden a servicios de juego en la nube (Boosteroid, GeForce NOW) y a debates de foros ajenos al proyecto.
 - La model card no enlaza el repositorio original de Demucs ni el paper asociado; no se dispone de URL verificada para esos recursos en la información proporcionada.

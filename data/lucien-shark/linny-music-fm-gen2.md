@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-Music-FM-Gen2 es un modelo publicado en HuggingFace por el usuario Lucien-shark bajo el identificador Lucien-shark/Linny-Music-FM-Gen2. La model card asociada no contiene ninguna descripcion tecnica, documentacion de uso, ficha de entrenamiento ni declaracion de licencia: el unico contenido del README es la etiqueta `license: unknown`. El repositorio ocupa 228,1 GB, lo que indica un conjunto de pesos de gran volumen, probablemente distribuido en varios ficheros o en varias precisiones numericas.
+Linny-Music-FM-Gen2 es un modelo publicado en Hugging Face por el usuario Lucien-shark bajo el identificador Lucien-shark/Linny-Music-FM-Gen2. La model card asociada no contiene ninguna descripcion tecnica, documentacion de uso, ficha de entrenamiento ni declaracion de licencia: el unico contenido del README es la etiqueta `license: unknown`. El repositorio ocupa 228,1 GB, lo que indica un conjunto de pesos de gran volumen, probablemente distribuido en varios ficheros o en varias precisiones numericas.
 
 Por la nomenclatura del identificador (el sufijo Music-FM y la existencia de un modelo hermano llamado Linny-Music-Flow-Gen1 en la misma cuenta) cabe inferir que se trata de un modelo orientado a generacion musical, pero esta interpretacion no esta confirmada por ninguna fuente disponible y debe tratarse como una hipotesis, no como un dato verificado.
 
@@ -25,7 +25,7 @@ Otros metadatos verificados:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | Lucien-shark/Linny-Music-FM-Gen2 |
+| Identificador en Hugging Face | Lucien-shark/Linny-Music-FM-Gen2 |
 | Autor | Lucien-shark |
 | Pipeline declarado | no disponible |
 | Etiquetas del repositorio | license:unknown, region:us |
@@ -83,8 +83,8 @@ No es posible establecer una comparativa rigurosa porque no se dispone de parame
 
 | Modelo | Desarrollador | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Linny-Music-FM-Gen2 | Lucien-shark | no disponible | no disponible | unknown | Pesos en HuggingFace, 228,1 GB |
-| Linny-Music-Flow-Gen1 | Lucien-shark | no disponible | no disponible | no disponible | Pesos en HuggingFace |
+| Linny-Music-FM-Gen2 | Lucien-shark | no disponible | no disponible | unknown | Pesos en Hugging Face, 228,1 GB |
+| Linny-Music-Flow-Gen1 | Lucien-shark | no disponible | no disponible | no disponible | Pesos en Hugging Face |
 | Lyria 3.5 | Google DeepMind | no disponible | no disponible | propietaria, sin pesos abiertos | API/Servicio |
 
 Comparativa detallada: no disponible.
@@ -102,7 +102,7 @@ Comparativa detallada: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucien-shark/Linny-Music-FM-Gen2
+- Modelo en Hugging Face: https://huggingface.co/Lucien-shark/Linny-Music-FM-Gen2
 - Modelo relacionado, Linny-Music-Flow-Gen1: https://huggingface.co/Lucien-shark/Linny-Music-Flow-Gen1
 - Perfil del autor en SAVRN Model Hub: https://savrn.com/model-publishers/lucien-shark
 - Directorio de modelos de Lucien-shark en Essa Mamdani: https://essamamdani.com/ai-models/company/lucien-shark

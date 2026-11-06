@@ -63,6 +63,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: [d9beuD/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ6e-mtp)
+- Repositorio del modelo en Hugging Face: [d9beuD/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ6e-mtp)
 - Herramienta de cuantización oQ (oMLX): [https://github.com/jundot/omlx](https://github.com/jundot/omlx)
 - Documentación de MLX: [https://ml-explore.github.io/mlx/](https://ml-explore.github.io/mlx/)

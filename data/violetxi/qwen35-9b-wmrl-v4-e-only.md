@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de benchmarks para comparar estos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-E-only
+- Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-E-only
 - Modelo base (según la model card): https://huggingface.co/Qwen/Qwen3.5-9B
 - Checkpoint relacionado (n-30m): https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-30m
 - Checkpoint relacionado (lrsmoke-1e5): https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5

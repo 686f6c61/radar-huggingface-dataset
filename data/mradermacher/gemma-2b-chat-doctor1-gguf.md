@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 1,3 GB (Q2_K), 1,7 GB (Q4_K_M), 2,2 GB (Q6_K), 2,8 GB (Q8_0) y 5,1 GB (f16), sin contar el overhead del runtime ni el espacio para el contexto.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM puede ejecutar las cuantizaciones Q4; una RTX 3060, RTX 4060 o superior ofrece margen holgado. Para f16 se recomienda al menos 6-8 GB (RTX 2060 12 GB, RTX 3060 12 GB, RTX 4070, A100 o H100 si se busca throughput).
 - Cabe en GPU de consumo: si, practicamente en todas las GPU modernas con 4 GB o mas; las cuantizaciones Q2_K y Q3 pueden ejecutarse incluso en iGPU con memoria unificada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo HuggingFace TGI o similares.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo Hugging Face TGI o similares.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; dependen del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa con Gemma 2B e Gemma 2B-it es la mas directa por compartir arquit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-2b-chat-doctor1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-2b-chat-doctor1-GGUF
 - Modelo base: https://huggingface.co/JC-24/gemma-2b-chat-doctor1
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/gemma-2b-chat-doctor1-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma-2b-chat-doctor1-GGUF

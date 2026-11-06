@@ -19,14 +19,14 @@ La relevancia de esta ficha es acotada y conviene ser explicito: se trata de un 
 | Tipos de cuantizacion | no disponible; el ejemplo del autor carga el pipeline en `torch.bfloat16` |
 | Idiomas soportados | no disponible; los prompt de ejemplo de la model card estan en ingles |
 | Licencia | apache-2.0 |
-| Formato de pesos | no disponible explicitamente; distribuido en el repositorio de HuggingFace y cargado con `load_lora_weights` de diffusers |
+| Formato de pesos | no disponible explicitamente; distribuido en el repositorio de Hugging Face y cargado con `load_lora_weights` de diffusers |
 | Modelo base | krea/Krea-2-Raw (entrenamiento), krea/Krea-2-Turbo (inferencia mostrada) |
 | Token de activacion | `anna, a woman` |
 | Tipo de pipeline | text-to-image |
 | Libreria | diffusers |
 | Tamano del repositorio | 1,2 GB |
-| Fecha de creacion | 2026-10-06 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-06 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-06 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-06 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ No se dispone de datos comparativos publicados para este adaptador (sin benchmar
 
 | Modelo | Tipo | Modelo base | Licencia | Contexto / parametros | Disponibilidad |
 |---|---|---|---|---|---|
-| Microm1966/anna | LoRA de personaje, text-to-image | krea/Krea-2-Raw (inferencia mostrada en Krea-2-Turbo) | apache-2.0 | no disponible (repositorio de 1,2 GB) | Publicado en HuggingFace, 0 descargas |
+| Microm1966/anna | LoRA de personaje, text-to-image | krea/Krea-2-Raw (inferencia mostrada en Krea-2-Turbo) | apache-2.0 | no disponible (repositorio de 1,2 GB) | Publicado en Hugging Face, 0 descargas |
 | Otros LoRA de personaje para Krea 2 | LoRA de personaje, text-to-image | Krea 2 | no disponible | no disponible | no disponible |
 | LoRA de personaje para otras familias de difusion (por ejemplo SDXL o Flux) | LoRA de personaje, text-to-image | Distintos modelos base | no disponible | no disponible | no disponible |
 
@@ -104,7 +104,7 @@ No se dispone de datos comparativos publicados para este adaptador (sin benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Microm1966/anna
+- Modelo en Hugging Face: https://huggingface.co/Microm1966/anna
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en el ejemplo de inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers (referenciada implicitamente por el codigo de la model card): https://huggingface.co/docs/diffusers

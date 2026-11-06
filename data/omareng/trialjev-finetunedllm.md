@@ -68,7 +68,7 @@ Brier y ECE no se reportan para estos checkpoints porque el veredicto escrito no
 - VRAM estimada para inferencia: no disponible en la model card; depende del backbone elegido (0,8B, 9B o 27B) y de su cuantización.
 - GPU recomendadas: no especificadas por el autor; por tamaño de backbone, los de 27B requieren GPUs de clase A100/H100 o equivalentes con suficiente VRAM para bf16.
 - Viabilidad en GPU de consumo: el checkpoint de 0,8B es el único claramente susceptible de ejecutarse en GPU de consumo; los de 9B y 27B requieren evaluar cuantización y VRAM disponible, dato no documentado.
-- Opciones de despliegue: la model card solo documenta `snapshot_download` de HuggingFace Hub y el script `scripts/generate_baselines.py` del repositorio de código con `--condition sft-generate`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la model card solo documenta `snapshot_download` de Hugging Face Hub y el script `scripts/generate_baselines.py` del repositorio de código con `--condition sft-generate`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 - Nota de despliegue: el adaptador no incluye los pesos del backbone; es necesario cargar el modelo Qwen correspondiente en la revisión indicada.
 
@@ -76,8 +76,8 @@ Brier y ECE no se reportan para estos checkpoints porque el veredicto escrito no
 
 | Modelo | Parametros | Contexto | Accuracy (TREC 2022) | AUROC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TrialJev-FineTunedLLM (qwen3.8-27b) | Backbone 27B + LoRA | 512 + 4.096 tokens | 79,93% | 0,888 | Apache-2.0 | HuggingFace (adaptador) |
-| TrialJev-FineTunedLLM (qwen3.5-0.8b) | Backbone 0,8B + LoRA | 512 + 4.096 tokens | 74,05% | 0,802 | Apache-2.0 | HuggingFace (adaptador) |
+| TrialJev-FineTunedLLM (qwen3.8-27b) | Backbone 27B + LoRA | 512 + 4.096 tokens | 79,93% | 0,888 | Apache-2.0 | Hugging Face (adaptador) |
+| TrialJev-FineTunedLLM (qwen3.5-0.8b) | Backbone 0,8B + LoRA | 512 + 4.096 tokens | 74,05% | 0,802 | Apache-2.0 | Hugging Face (adaptador) |
 | TrialJev (método propuesto) | No disponible | No disponible | No disponible en esta ficha | No disponible en esta ficha | Apache-2.0 (según referencia) | Repositorio de código |
 | MedJev / kev (referencias de diseño) | No disponible | No disponible | No disponible | No disponible | Apache-2.0 | No disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de MedJev, kev ni de otros modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omareng/TrialJev-FineTunedLLM
+- Modelo en Hugging Face: https://huggingface.co/omareng/TrialJev-FineTunedLLM
 - Repositorio de código TrialJev: https://github.com/oibrahi1/TrialJev
 - Documentación de resultados del repositorio: `docs/RESULTS.md` dentro del repositorio de código
 - Cita (BibTeX): Ibrahim, Omar; Hamblin, Grant; Haibe-Kains, Benjamin. "TrialJev: Open-Weight Single-Pass Eligibility Scoring for Patient–Trial Screening", 2026.

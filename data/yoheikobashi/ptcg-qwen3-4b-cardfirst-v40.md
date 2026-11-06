@@ -4,7 +4,7 @@
 
 El modelo `yoheikobashi/ptcg-qwen3-4b-cardfirst-v40` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-4B-Base` mediante la técnica LoRA (Low-Rank Adaptation). Ha sido entrenado con Supervised Fine-Tuning (SFT) utilizando las librerías TRL, PEFT y Unsloth, tal como se indica en su model card. El repositorio tiene un tamaño de 9,9 GB y está etiquetado como `peft`, `lora`, `sft` y `text-generation`.
 
-Este modelo no presenta documentación adicional más allá de la plantilla generada automáticamente por HuggingFace. No se especifican los datos de entrenamiento, el número de tokens, ni los hiperparámetros utilizados. Tampoco se publican resultados de benchmarks ni se detallan capacidades específicas más allá de la generación de texto. Su relevancia actual es limitada debido a la ausencia de información técnica y de validación pública, aunque podría servir como ejemplo de fine-tuning sobre Qwen3-4B-Base para tareas de conversación o generación de texto.
+Este modelo no presenta documentación adicional más allá de la plantilla generada automáticamente por Hugging Face. No se especifican los datos de entrenamiento, el número de tokens, ni los hiperparámetros utilizados. Tampoco se publican resultados de benchmarks ni se detallan capacidades específicas más allá de la generación de texto. Su relevancia actual es limitada debido a la ausencia de información técnica y de validación pública, aunque podría servir como ejemplo de fine-tuning sobre Qwen3-4B-Base para tareas de conversación o generación de texto.
 
 ## Especificaciones tecnicas
 
@@ -69,6 +69,6 @@ No se dispone de información comparativa. El modelo es un adaptador sobre Qwen3
 
 ## Enlaces
 
-- [HuggingFace - yoheikobashi/ptcg-qwen3-4b-cardfirst-v40](https://huggingface.co/yoheikobashi/ptcg-qwen3-4b-cardfirst-v40)
+- [Hugging Face - yoheikobashi/ptcg-qwen3-4b-cardfirst-v40](https://huggingface.co/yoheikobashi/ptcg-qwen3-4b-cardfirst-v40)
 - [Modelo base: unsloth/Qwen3-4B-Base](https://huggingface.co/unsloth/Qwen3-4B-Base)
 - [TRL (GitHub)](https://github.com/huggingface/trl)

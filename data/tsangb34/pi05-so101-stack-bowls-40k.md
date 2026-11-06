@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tsangb34/pi05-so101-stack-bowls-40k | ≈4.14 mil millones | Apilado de cuencos con SO-101 | Apache 2.0 | HuggingFace (LeRobot) | 40.000 pasos, dataset de 100 episodios |
-| lerobot/pi05_base | No disponible | Modelo base VLA generalista | No disponible en la informacion proporcionada | HuggingFace (LeRobot) | Modelo del que parte el ajuste; requiere fine-tuning para tareas concretas |
-| tsangb34/pi05-so101-stack-white_bowls-vlareplica-40k-unfrozen-vision | No disponible | Apilado de cuencos con SO-101 | No disponible en la informacion proporcionada | HuggingFace (LeRobot) | Variante del mismo autor con vision descongelada |
+| tsangb34/pi05-so101-stack-bowls-40k | ≈4.14 mil millones | Apilado de cuencos con SO-101 | Apache 2.0 | Hugging Face (LeRobot) | 40.000 pasos, dataset de 100 episodios |
+| lerobot/pi05_base | No disponible | Modelo base VLA generalista | No disponible en la informacion proporcionada | Hugging Face (LeRobot) | Modelo del que parte el ajuste; requiere fine-tuning para tareas concretas |
+| tsangb34/pi05-so101-stack-white_bowls-vlareplica-40k-unfrozen-vision | No disponible | Apilado de cuencos con SO-101 | No disponible en la informacion proporcionada | Hugging Face (LeRobot) | Variante del mismo autor con vision descongelada |
 | π₀.₅ (Physical Intelligence) | No disponible | Manipulacion robotica generalista | No disponible en la informacion proporcionada | Implementacion OpenPI / LeRobot | Modelo original del que deriva pi05_base |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas, por lo que la comparacion se limita a la naturaleza del modelo, el origen y la licencia.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsangb34/pi05-so101-stack-bowls-40k
+- Modelo en Hugging Face: https://huggingface.co/tsangb34/pi05-so101-stack-bowls-40k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/so101-stack-bowls
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jiamo0912/so101-stack-bowls

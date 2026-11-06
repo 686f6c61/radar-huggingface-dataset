@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jacky-lee/perceiver-matching-quantized` es un repositorio de HuggingFace que contiene una implementación a pequeña escala de una arquitectura Perceiver orientada a tareas de *matching* (emparejamiento o correspondencia entre elementos). Lo publica el usuario Jacky-lee y, según su propia model card, se trata de un punto de partida reproducible y no de un modelo entrenado ni validado con benchmarks. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con pesos entrenados para producción.
+`Jacky-lee/perceiver-matching-quantized` es un repositorio de Hugging Face que contiene una implementación a pequeña escala de una arquitectura Perceiver orientada a tareas de *matching* (emparejamiento o correspondencia entre elementos). Lo publica el usuario Jacky-lee y, según su propia model card, se trata de un punto de partida reproducible y no de un modelo entrenado ni validado con benchmarks. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con pesos entrenados para producción.
 
 El modelo emplea atención dilatada, fusión bilinear, activación swish y normalización por batchnorm. La configuración por defecto propone el optimizador RMSprop con un schedule exponencial, valores que el autor describe explícitamente como ajustes iniciales de script y no como evidencia de un entrenamiento completado. El recuento de parámetros almacenados en el fichero de safetensors es de 24.832, un tamaño ínfimo que confirma la naturaleza experimental del artefacto.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jacky-lee/perceiver-matching-quantized
+- Repositorio en Hugging Face: https://huggingface.co/Jacky-lee/perceiver-matching-quantized
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

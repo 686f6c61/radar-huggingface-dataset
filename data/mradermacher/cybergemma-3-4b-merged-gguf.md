@@ -85,7 +85,7 @@ La comparativa se basa en caracteristicas generales conocidas de los modelos alt
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/CyberGemma-3-4b-merged-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/CyberGemma-3-4b-merged-GGUF
 - Modelo base del merge: https://huggingface.co/MaestroDev19/CyberGemma-3-4b-merged
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#CyberGemma-3-4b-merged-GGUF
 - FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

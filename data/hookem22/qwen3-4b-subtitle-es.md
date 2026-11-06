@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hookem22/qwen3-4b-subtitle-es
+- Repositorio Hugging Face: https://huggingface.co/Hookem22/qwen3-4b-subtitle-es
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Documentacion Qualcomm AI Hub para Qwen3-4B: https://aihub.qualcomm.com/mobile/models/qwen3_4b

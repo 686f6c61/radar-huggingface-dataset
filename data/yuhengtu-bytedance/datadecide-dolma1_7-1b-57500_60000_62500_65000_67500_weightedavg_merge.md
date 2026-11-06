@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DataDecide-dolma1_7-1B-57500_60000_62500_65000_67500_weightedavg_merge es un modelo de lenguaje de tipo base publicado por el usuario yuhengtu-bytedance en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de una fusión (merge) de pesos de cinco checkpoints intermedios de un mismo entrenamiento, correspondientes a los pasos 57500, 60000, 62500, 65000 y 67500 del identificador interno `dolma1_7`. La fusión se ha realizado con mergekit mediante el método Linear, usando el checkpoint del paso 67500 como base y pesos normalizados crecientes (1, 2, 3, 4 y 5).
+DataDecide-dolma1_7-1B-57500_60000_62500_65000_67500_weightedavg_merge es un modelo de lenguaje de tipo base publicado por el usuario yuhengtu-bytedance en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de una fusión (merge) de pesos de cinco checkpoints intermedios de un mismo entrenamiento, correspondientes a los pasos 57500, 60000, 62500, 65000 y 67500 del identificador interno `dolma1_7`. La fusión se ha realizado con mergekit mediante el método Linear, usando el checkpoint del paso 67500 como base y pesos normalizados crecientes (1, 2, 3, 4 y 5).
 
 El modelo tiene 1.279.854.592 parámetros (aproximadamente 1,28 mil millones) y arquitectura Llama, según las etiquetas y la libreria declarada (transformers y safetensors). El repositorio ocupa 2,6 GB, lo que es coherente con pesos almacenados en bfloat16. No hay información pública sobre el dataset exacto, el número de tokens de entrenamiento ni el proceso de alineación; el nombre sugiere que los checkpoints originales proceden de un entrenamiento sobre Dolma 1.7, pero esto no está confirmado en la model card.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada cuantizado a 8 bits: en torno a 1,4-2 GB; a 4 bits: en torno a 0,8-1,2 GB.
 - GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060 Ti, RTX 3070, RTX 4060, RTX 4090) es suficiente para inferencia en bfloat16 o int8. Para entrenamiento completo en bfloat16 con Adam se necesitarian del orden de 20-25 GB (A100 40 GB, H100, L40S), aunque LoRA/QLoRA cabe en 12-24 GB. Para despliegue de alta concurrencia, A100 o H100 con vLLM.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU moderna de 8 GB o mas, y tambien en Apple Silicon con memoria unificada.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference`), endpoints compatibles con la Inference Endpoints de HuggingFace, vLLM y SGLang para servir con safetensors, y llama.cpp/Ollama tras convertir los pesos a GGUF (no se proporciona GGUF en el repositorio).
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference`), endpoints compatibles con la Inference Endpoints de Hugging Face, vLLM y SGLang para servir con safetensors, y llama.cpp/Ollama tras convertir los pesos a GGUF (no se proporciona GGUF en el repositorio).
 - Latencia y throughput estimados: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
@@ -90,12 +90,12 @@ La diferencia clave del modelo analizado frente a estas alternativas no es el re
 - Licencia: no disponible. La ausencia de licencia declarada es un bloqueo legal para uso comercial; no se puede asumir permisividad.
 - Naturaleza experimental: el nombre y la configuracion indican que es un subproducto de un estudio de medicion (rutas del tipo `Pan_Safety_Better_Measurement`), no un modelo mantenido ni versionado con garantias.
 - Sin cuantizaciones oficiales: habria que generar GGUF, GPTQ o AWQ por cuenta propia, asumiendo la perdida de calidad correspondiente sin referencia publicada.
-- Trazabilidad incompleta: los modelos fusionados se referencian por rutas locales del sistema del autor, no por identificadores de HuggingFace, por lo que no es posible reproducir la fusion sin acceder a esos checkpoints.
+- Trazabilidad incompleta: los modelos fusionados se referencian por rutas locales del sistema del autor, no por identificadores de Hugging Face, por lo que no es posible reproducir la fusion sin acceder a esos checkpoints.
 - Cero adopcion verificable: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusion publica que permitan contrastar su comportamiento real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-1B-57500_60000_62500_65000_67500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-1B-57500_60000_62500_65000_67500_weightedavg_merge
 - Repositorio de mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Paper referenciado por las etiquetas del modelo (metodo Linear / model soups): https://arxiv.org/abs/2203.05482
 - Nota sobre la busqueda web: los resultados devueltos no contenian ningun enlace relacionado con el modelo, su autoria, su dataset ni su proceso de fusion; se han descartado por no aportar informacion tecnica verificable. No se dispone de paper, blog, repositorio adicional ni demo oficiales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 es un ajuste fino (fine-tune) del modelo monolingue goldfish-models/nor_latn_10mb, desarrollado por el usuario de HuggingFace francesca9805 en el contexto de un proyecto de investigacion sobre tokenizadores de la Universidad de Groningen (el enlace de Weights & Biases apunta a un proyecto llamado "new-tokenizers"). Se trata de un modelo generativo de texto de arquitectura transformer decoder-only tipo GPT-2, con 39.087.104 parametros (aproximadamente 39 millones), entrenado mediante supervised fine-tuning (SFT) con la libreria TRL.
+nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 es un ajuste fino (fine-tune) del modelo monolingue goldfish-models/nor_latn_10mb, desarrollado por el usuario de Hugging Face francesca9805 en el contexto de un proyecto de investigacion sobre tokenizadores de la Universidad de Groningen (el enlace de Weights & Biases apunta a un proyecto llamado "new-tokenizers"). Se trata de un modelo generativo de texto de arquitectura transformer decoder-only tipo GPT-2, con 39.087.104 parametros (aproximadamente 39 millones), entrenado mediante supervised fine-tuning (SFT) con la libreria TRL.
 
 El modelo no resuelve una tarea de produccion, sino que funciona como artefacto experimental: forma parte de una familia de ejecuciones con nombres sistematicos (idioma, tamano del corpus base, tamano del corpus de ajuste, estrategia de empaquetado y semilla aleatoria) que busca medir el efecto de distintas decisiones de datos y tokenizacion en modelos de muy baja escala. El sufijo "nor_latn_10mb" indica noruego en alfabeto latino con un corpus base de 10 MB, y "seed455" fija la semilla del experimento.
 
@@ -27,7 +27,7 @@ Su relevancia es fundamentalmente metodologica: permite reproducir y comparar va
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer decoder-only de tipo GPT-2, es decir, atencion causal completa con normalizacion previa a la capa y embeddings posicionales aprendidos, sin innovaciones de atencion eficiente ni mecanismos de mezcla de expertos. Con 39,09 millones de parametros, se situa muy por debajo de GPT-2 small (124 millones) y de cualquier modelo de uso general actual; el repositorio no detalla la configuracion exacta de capas, dimension de embedding o numero de cabezas, ni el tamano de vocabulario heredado del base. Los tags del repositorio confirman que es compatible con text-generation-inference y con endpoints de HuggingFace.
+La arquitectura es la del modelo base: un transformer decoder-only de tipo GPT-2, es decir, atencion causal completa con normalizacion previa a la capa y embeddings posicionales aprendidos, sin innovaciones de atencion eficiente ni mecanismos de mezcla de expertos. Con 39,09 millones de parametros, se situa muy por debajo de GPT-2 small (124 millones) y de cualquier modelo de uso general actual; el repositorio no detalla la configuracion exacta de capas, dimension de embedding o numero de cabezas, ni el tamano de vocabulario heredado del base. Los tags del repositorio confirman que es compatible con text-generation-inference y con endpoints de Hugging Face.
 
 El entrenamiento consistio en un ajuste supervisado (SFT) con TRL sobre el checkpoint goldfish-models/nor_latn_10mb, segun los metadatos del autor. El nombre del modelo sugiere un corpus empaquetado (packed) de 10 MB y un identificador de configuracion (bfd) junto con una semilla concreta (seed455), pero no se publican detalles sobre la composicion del dataset, el numero de tokens de entrenamiento, la existencia de RLHF o DPO (no se mencionan) ni hiperparametros de entrenamiento. Tampoco se documenta ninguna innovacion tecnica adicional; el valor del artefacto esta en la trazabilidad experimental, ya que el enlace de Weights & Biases (run c37tancx) permite consultar las metricas de la ejecucion.
 
@@ -46,7 +46,7 @@ El entrenamiento consistio en un ajuste supervisado (SFT) con TRL sobre el check
 
 - Reproduccion de experimentos de tokenizacion: el modelo forma parte de una serie de ejecuciones con nombres sistematicos dentro de un proyecto de investigacion sobre tokenizadores, por lo que su uso principal es servir de punto de comparacion reproducible frente a otras variantes de la misma familia con la misma semilla o con distinto corpus.
 - Estudios de escala en aprendizaje de bajo recurso: con 39 millones de parametros y un corpus base de 10 MB, es util para analizar como se comporta un transformer pequeno cuando el volumen de datos es muy limitado, sin coste apreciable de computo.
-- Docencia y formacion en NLP: sirve para ilustrar de forma practica el flujo completo de ajuste con TRL, carga con transformers y publicacion en HuggingFace, ya que se puede entrenar y ejecutar en portatil.
+- Docencia y formacion en NLP: sirve para ilustrar de forma practica el flujo completo de ajuste con TRL, carga con transformers y publicacion en Hugging Face, ya que se puede entrenar y ejecutar en portatil.
 - Generacion de texto en noruego con fines exploratorios: puede emplearse para producir borradores o muestras sinteticas en alfabeto latino noruego, siempre con revision humana y asumiendo baja calidad y riesgo alto de incoherencia.
 - Pruebas de integracion y CI para pipelines de inferencia: su tamano minimo lo hace adecuado como modelo de pruebas para validar despliegues con text-generation-inference, endpoints o servicios de terceros (por ejemplo FriendliAI) antes de pasar a modelos grandes.
 - Baseline en investigacion comparativa: puede actuar como referencia inferior en tablas de evaluacion de modelos noruegos o escandinavos, para medir la ganancia que aportan modelos de mayor tamano o de arquitecturas mas modernas.
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39,09 M | No disponible | Fine-tune SFT de GPT-2 sobre noruego | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/nor_latn_10mb (modelo base) | No disponible | No disponible | GPT-2 monolingue entrenado con 10 MB de noruego | No disponible | HuggingFace |
-| francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 | No disponible | No disponible | Variante hermana con corpus de ajuste de 100 MB | No disponible | HuggingFace |
-| francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | No disponible | No disponible | Variante hermana para italiano, misma receta | No disponible | HuggingFace |
+| francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39,09 M | No disponible | Fine-tune SFT de GPT-2 sobre noruego | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/nor_latn_10mb (modelo base) | No disponible | No disponible | GPT-2 monolingue entrenado con 10 MB de noruego | No disponible | Hugging Face |
+| francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 | No disponible | No disponible | Variante hermana con corpus de ajuste de 100 MB | No disponible | Hugging Face |
+| francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | No disponible | No disponible | Variante hermana para italiano, misma receta | No disponible | Hugging Face |
 | GPT-2 small (referencia de la familia) | 124 M | 1024 tokens | Transformer decoder-only en ingles | MIT | Ampliamente disponible |
 
 Las variantes hermanas comparten receta de ajuste y solo cambian el idioma del corpus base o el tamano del corpus de ajuste (10 MB frente a 100 MB), lo que las convierte en el punto de comparacion mas directo. No hay datos de rendimiento publicados para ninguno de estos modelos, por lo que la comparativa se limita a parametros, procedencia y disponibilidad.
@@ -89,7 +89,7 @@ Las variantes hermanas comparten receta de ajuste y solo cambian el idioma del c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Variante hermana con corpus de 100 MB: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Variante hermana en italiano: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455

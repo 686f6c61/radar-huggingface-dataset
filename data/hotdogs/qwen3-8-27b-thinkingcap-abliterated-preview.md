@@ -80,7 +80,7 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview
+- Modelo en Hugging Face: https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotdogs/thinkingcap-sft-qwen38-27b
 - Versión GGUF: https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview-mtp-GGUF
 - Modelo base: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated

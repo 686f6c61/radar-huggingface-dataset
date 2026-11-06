@@ -72,5 +72,5 @@ No se dispone de modelos comparables en la misma categoría, dado que Coca-basel
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DaniilPopo/coca-baseline38-2024
+- Modelo en Hugging Face: https://huggingface.co/DaniilPopo/coca-baseline38-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web. Los resultados de búsqueda no son relevantes para el modelo.

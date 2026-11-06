@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yuiluni/Model_video_AI es un modelo publicado en HuggingFace por el usuario Yuiluni, etiquetado con las librerías `diffusers`, `onnx`, `safetensors` y `gguf`. Por la nomenclatura y las etiquetas, se trata de un modelo orientado a la generación de vídeo (probablemente un modelo de difusión para text-to-video o image-to-video), aunque la model card no proporciona información sobre su pipeline, licencia, idiomas ni arquitectura interna. El repositorio tiene un tamaño de 127,1 GB y el fichero safetensors declara 11.891.178.560 parámetros (aproximadamente 11,9 mil millones), lo que lo sitúa en la categoría de modelos de difusión de gran tamaño, comparable en escala a modelos de vídeo como Wan o HunyuanVideo.
+Yuiluni/Model_video_AI es un modelo publicado en Hugging Face por el usuario Yuiluni, etiquetado con las librerías `diffusers`, `onnx`, `safetensors` y `gguf`. Por la nomenclatura y las etiquetas, se trata de un modelo orientado a la generación de vídeo (probablemente un modelo de difusión para text-to-video o image-to-video), aunque la model card no proporciona información sobre su pipeline, licencia, idiomas ni arquitectura interna. El repositorio tiene un tamaño de 127,1 GB y el fichero safetensors declara 11.891.178.560 parámetros (aproximadamente 11,9 mil millones), lo que lo sitúa en la categoría de modelos de difusión de gran tamaño, comparable en escala a modelos de vídeo como Wan o HunyuanVideo.
 
 El modelo no cuenta con descargas ni documentación técnica publicada en el momento de redactar esta ficha, y la búsqueda web no ha devuelto información relevante sobre él (el único resultado encontrado es una publicación de Facebook sin relación aparente). Por tanto, la mayoría de los datos técnicos deben tratarse como no disponibles, y las estimaciones que se ofrecen a continuación se derivan únicamente del recuento de parámetros y del tamaño del repositorio.
 
@@ -45,7 +45,7 @@ La presencia simultánea de pesos en safetensors, ONNX y GGUF sugiere que el aut
 - Pruebas de despliegue en distintos backends: la disponibilidad de ONNX y GGUF permite evaluar la portabilidad del modelo entre PyTorch, ONNX Runtime y llama.cpp, útil para equipos que comparan runtimes de inferencia.
 - Generación de material visual para prototipos de producto: animaciones o clips de baja fidelidad para maquetas y demos internas, sin compromiso de calidad de producción.
 - Benchmarking de hardware: al ser un modelo grande, puede utilizarse para medir throughput y consumo de VRAM en distintas GPU dentro de un laboratorio.
-- Educación y experimentación: útil en entornos docentes para ilustrar el funcionamiento de pipelines de difusión para vídeo con `diffusers`, dado que el modelo es público en HuggingFace.
+- Educación y experimentación: útil en entornos docentes para ilustrar el funcionamiento de pipelines de difusión para vídeo con `diffusers`, dado que el modelo es público en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 | Modelo | Parametros | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Yuiluni/Model_video_AI | ~11,9 B | no disponible | no disponible | HuggingFace, 0 descargas |
+| Yuiluni/Model_video_AI | ~11,9 B | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de vídeo de escala similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuiluni/Model_video_AI
+- Hugging Face: https://huggingface.co/Yuiluni/Model_video_AI
 - Resultado de búsqueda web (sin relación aparente con el modelo): https://www.facebook.com/profilyunialestari/videos/trend-ai/1641783767674014/

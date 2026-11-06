@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`waldito-python-basics-v1-r0005-u2-mdagosta-b` es un modelo de generación de texto publicado en HuggingFace por el usuario mdagosta bajo el paraguas denominado "OpenWALDO model export". Según su model card, emplea la arquitectura causal estándar de Llama de la librería Transformers, junto con un tokenizador de bytes propio ("schema-1 byte tokenizer") que requiere cargarse con `trust_remote_code=True`. El repositorio incluye además dos ficheros de inventario: `BOM.json`, que lista todos los ficheros de la release, y `EU-BOM.json`, que mapea la divulgación de contenido de entrenamiento exigida por el reglamento europeo de IA (GPAI).
+`waldito-python-basics-v1-r0005-u2-mdagosta-b` es un modelo de generación de texto publicado en Hugging Face por el usuario mdagosta bajo el paraguas denominado "OpenWALDO model export". Según su model card, emplea la arquitectura causal estándar de Llama de la librería Transformers, junto con un tokenizador de bytes propio ("schema-1 byte tokenizer") que requiere cargarse con `trust_remote_code=True`. El repositorio incluye además dos ficheros de inventario: `BOM.json`, que lista todos los ficheros de la release, y `EU-BOM.json`, que mapea la divulgación de contenido de entrenamiento exigida por el reglamento europeo de IA (GPAI).
 
 El dato más relevante es su tamaño: 9.541.632 parámetros reales (unos 9,54 millones), confirmados por los pesos en safetensors. Se trata, por tanto, de un modelo de escala minúscula, más cercano a un experimento de entrenamiento o a un modelo educativo que a un modelo de propósito general desplegable en producción. El nombre del repositorio sugiere un ajuste sobre fundamentos de Python, con identificadores de release (`r0005`) y de unidad (`u2`) que apuntan a una serie de ejecuciones de entrenamiento iterativas.
 
@@ -79,10 +79,10 @@ No se ha localizado un modelo comparable directo en el rango de los 10 millones 
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| waldito-python-basics-v1-r0005-u2 | 9,54 M | no disponible | no disponible | no disponible | HuggingFace |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | sí | HuggingFace |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | sí | HuggingFace |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache-2.0 | sí | HuggingFace |
+| waldito-python-basics-v1-r0005-u2 | 9,54 M | no disponible | no disponible | no disponible | Hugging Face |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | sí | Hugging Face |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | sí | Hugging Face |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache-2.0 | sí | Hugging Face |
 
 La diferencia de escala (más de un orden de magnitud en el caso más cercano) hace que la comparación en rendimiento no sea significativa. El modelo aquí descrito es entre 14 y 115 veces más pequeño que las alternativas listadas.
 
@@ -102,11 +102,11 @@ La diferencia de escala (más de un orden de magnitud en el caso más cercano) h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u2-mdagosta-b
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u2-mdagosta-b
 - Variante de la misma serie (r0003-u0): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u0-mdagosta-b
-- HuggingFace (portal general): https://huggingface.co/
+- Hugging Face (portal general): https://huggingface.co/
 - Open models by OpenAI (referencia no relacionada con este modelo): https://openai.com/open-models/
 - Artículo sobre Thomson Reuters y su modelo propio (referencia no relacionada con este modelo): https://thenewstack.io/thomson-reuters-ai-model/
 - Repositorio de material docente de deep learning (referencia no relacionada con este modelo): https://github.com/snagy22000/dl-fundamentals-by-rasbt/blob/main/unit01-ml-intro/Unit1-README.md
 
-Nota: los ficheros `BOM.json` y `EU-BOM.json` citados en la model card se encuentran dentro del propio repositorio de HuggingFace del modelo. No se han localizado papers, blogs técnicos ni demostraciones específicas de este modelo en la búsqueda web realizada.
+Nota: los ficheros `BOM.json` y `EU-BOM.json` citados en la model card se encuentran dentro del propio repositorio de Hugging Face del modelo. No se han localizado papers, blogs técnicos ni demostraciones específicas de este modelo en la búsqueda web realizada.

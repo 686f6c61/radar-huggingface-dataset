@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DanceOPD (On-Policy Generative Field Distillation) es un método de destilación para generadores de imágenes basados en flow matching, desarrollado por un equipo de ByteDance Seed, la Universidad Nacional de Singapur (NUS), la Universidad de Maryland (UMD) y la HKUST. El problema que aborda es la combinación de múltiples capacidades en un único modelo de generación de imágenes —como text-to-image, edición local, transformaciones globales, absorción de estilo o realismo, y comportamientos de operador como classifier-free guidance— sin que el entrenamiento conjunto degrade unas capacidades en favor de otras. La propuesta trata cada capacidad fuente como un campo de velocidad (velocity field) y entrena un estudiante (implementado como LoRA) mediante una destilación on-policy: en cada paso se muestrea una ruta, se genera una trayectoria con el estudiante actual, se consulta al profesor congelado en un estado de bajo ruido de esa trayectoria y se actualiza con un objetivo de error cuadrático medio sobre la velocidad. El método es agnóstico al backbone y se ha validado con SD3.5 y Z-Image. El repositorio de HuggingFace corresponde al código y documentación del método, no a un modelo preentrenado con pesos publicados.
+DanceOPD (On-Policy Generative Field Distillation) es un método de destilación para generadores de imágenes basados en flow matching, desarrollado por un equipo de ByteDance Seed, la Universidad Nacional de Singapur (NUS), la Universidad de Maryland (UMD) y la HKUST. El problema que aborda es la combinación de múltiples capacidades en un único modelo de generación de imágenes —como text-to-image, edición local, transformaciones globales, absorción de estilo o realismo, y comportamientos de operador como classifier-free guidance— sin que el entrenamiento conjunto degrade unas capacidades en favor de otras. La propuesta trata cada capacidad fuente como un campo de velocidad (velocity field) y entrena un estudiante (implementado como LoRA) mediante una destilación on-policy: en cada paso se muestrea una ruta, se genera una trayectoria con el estudiante actual, se consulta al profesor congelado en un estado de bajo ruido de esa trayectoria y se actualiza con un objetivo de error cuadrático medio sobre la velocidad. El método es agnóstico al backbone y se ha validado con SD3.5 y Z-Image. El repositorio de Hugging Face corresponde al código y documentación del método, no a un modelo preentrenado con pesos publicados.
 
 ## Especificaciones técnicas
 
@@ -14,7 +14,7 @@ DanceOPD (On-Policy Generative Field Distillation) es un método de destilación
 | Longitud de contexto | no aplica (generación de imágenes, no texto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica (entrada visual/textual según backbone) |
-| Licencia | Apache 2.0 (según badge en la model card; el campo de HuggingFace indica "no disponible") |
+| Licencia | Apache 2.0 (según badge en la model card; el campo de Hugging Face indica "no disponible") |
 | Formato de pesos | no disponible (el método genera adaptadores LoRA; no se publican pesos completos) |
 
 ## Arquitectura y entrenamiento
@@ -66,14 +66,14 @@ No se dispone de información suficiente para comparar DanceOPD con otros métod
 - Es un método de investigación; no se publican pesos de un modelo final, solo el código y la descripción del algoritmo.
 - Depende del backbone subyacente (SD3.5, Z-Image); las limitaciones de esos modelos (sesgos, alucinaciones visuales, restricciones de uso) se heredan.
 - No hay información sobre sesgos específicos del método ni sobre riesgos de alucinación en la generación de imágenes.
-- La licencia Apache 2.0 aparece en la model card, pero el campo de licencia en HuggingFace está marcado como "no disponible"; se recomienda verificar antes de uso comercial.
+- La licencia Apache 2.0 aparece en la model card, pero el campo de licencia en Hugging Face está marcado como "no disponible"; se recomienda verificar antes de uso comercial.
 - El método requiere acceso a los profesores congelados (modelos especializados) durante el entrenamiento, lo que puede implicar costes computacionales adicionales.
 - No se especifican datos de entrenamiento ni composición del dataset, por lo que la reproducibilidad externa puede ser limitada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Unknown0911xinyue/opd
+- Hugging Face: https://huggingface.co/Unknown0911xinyue/opd
 - Paper arXiv: https://arxiv.org/abs/2606.27377
 - Página del proyecto: https://danceopd.github.io/
 - Código GitHub: https://github.com/worldbench/DanceOPD
-- Perfil del autor en HuggingFace: https://huggingface.co/Unknown0911xinyue
+- Perfil del autor en Hugging Face: https://huggingface.co/Unknown0911xinyue

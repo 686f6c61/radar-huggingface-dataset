@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 3adel25/Llama-3.1-8B-Customer-service-question-and-answer | 8,03 B | 128k en el base; 2.048 en entrenamiento | SFT LoRA, 60 pasos, dataset de soporte en inglés | `apache-2.0` declarada, sujeta a Llama Community License por el base | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B (base) | 8,03 B | 128k | Preentrenamiento a gran escala | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128k | Preentrenamiento + SFT + RLHF | Llama 3.1 Community License | HuggingFace, muy extendido |
-| Mistral 7B Instruct (v0.3) | 7,2 B | 32k | Preentrenamiento + SFT | Apache 2.0 | HuggingFace |
-| Qwen2.5 7B Instruct | 7,6 B | 128k (32k nativo,扩展) | Preentrenamiento + SFT + RL | Apache 2.0 (la mayoría de variantes) | HuggingFace |
+| 3adel25/Llama-3.1-8B-Customer-service-question-and-answer | 8,03 B | 128k en el base; 2.048 en entrenamiento | SFT LoRA, 60 pasos, dataset de soporte en inglés | `apache-2.0` declarada, sujeta a Llama Community License por el base | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B (base) | 8,03 B | 128k | Preentrenamiento a gran escala | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128k | Preentrenamiento + SFT + RLHF | Llama 3.1 Community License | Hugging Face, muy extendido |
+| Mistral 7B Instruct (v0.3) | 7,2 B | 32k | Preentrenamiento + SFT | Apache 2.0 | Hugging Face |
+| Qwen2.5 7B Instruct | 7,6 B | 128k (32k nativo,扩展) | Preentrenamiento + SFT + RL | Apache 2.0 (la mayoría de variantes) | Hugging Face |
 
 Rendimiento comparado: no disponible. No existen métricas publicadas de este ajuste fino, por lo que cualquier comparación cuantitativa con las alternativas sería especulativa. En la práctica, para tareas de atención al cliente en inglés, `Llama-3.1-8B-Instruct` o `Qwen2.5-7B-Instruct` son opciones mucho más contrastadas.
 
@@ -97,7 +97,7 @@ Rendimiento comparado: no disponible. No existen métricas publicadas de este aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3adel25/Llama-3.1-8B-Customer-service-question-and-answer
+- Modelo en Hugging Face: https://huggingface.co/3adel25/Llama-3.1-8B-Customer-service-question-and-answer
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Modelo base usado en el notebook (Unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Lakshan2003/Llama3.1-8b-instruct-customerservice-evaldata

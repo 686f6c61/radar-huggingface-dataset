@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Forge-1-Little-Gemma-4-E2B es un ajuste fino (fine-tune) del modelo google/gemma-4-E2B, publicado por el usuario YoSaNoo en HuggingFace. El repositorio declara 4.628.569.635 parámetros totales medidos sobre los pesos en safetensors y un tamaño de repositorio de 20,6 GB, con licencia MIT y etiqueta de peso GGUF, lo que indica que se distribuyen cuantizaciones además de los pesos originales. Se trata de un modelo conversacional orientado a tareas de código e ingeniería de software, a juzgar por el nombre del proyecto ("Forge") y por el conjunto de datos de ajuste declarado.
+Forge-1-Little-Gemma-4-E2B es un ajuste fino (fine-tune) del modelo google/gemma-4-E2B, publicado por el usuario YoSaNoo en Hugging Face. El repositorio declara 4.628.569.635 parámetros totales medidos sobre los pesos en safetensors y un tamaño de repositorio de 20,6 GB, con licencia MIT y etiqueta de peso GGUF, lo que indica que se distribuyen cuantizaciones además de los pesos originales. Se trata de un modelo conversacional orientado a tareas de código e ingeniería de software, a juzgar por el nombre del proyecto ("Forge") y por el conjunto de datos de ajuste declarado.
 
 La relevancia del modelo reside en su tamaño: con unos 4,6 mil millones de parámetros se sitúa en la franja de modelos pequeños que caben en GPU de consumo y en equipos de desarrollo locales, un segmento muy demandado para asistentes de programación embebidos en el editor o en flujos de CI/CD. El sufijo "E2B" del modelo base apunta a un régimen de parámetros efectivos de aproximadamente 2 mil millones, aunque este extremo no se confirma en la información proporcionada.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, la model card declara tres datasets de ajuste: saidu
 - Generación de texto conversacional (el repositorio está etiquetado como "conversational" y "endpoints_compatible").
 - Generación y manipulación de código fuente, presumiblemente reforzada por el ajuste con Magicoder-Evol-Instruct-110K.
 - Tareas de ingeniería de software asistida por agente, presumiblemente derivadas del ajuste con SWE-smith.
-- Compatibilidad declarada con endpoints de HuggingFace, lo que facilita su despliegue en infraestructuras gestionadas.
+- Compatibilidad declarada con endpoints de Hugging Face, lo que facilita su despliegue en infraestructuras gestionadas.
 - Capacidades de tool calling / function calling: no confirmadas en la información proporcionada.
 - Razonamiento multi-paso y uso como agente: no confirmado explícitamente, aunque los datasets de tipo SWE sugieren un enfoque orientado a agentes.
 - Capacidades multilingües: no disponible.
@@ -60,16 +60,16 @@ No se han publicado resultados de benchmarks en la información disponible.
   - Q4_K_M: en torno a 2,9 GB.
 - Cabe en GPU de consumo: sí, en tarjetas con 8-12 GB de VRAM o más, especialmente usando cuantizaciones GGUF en Q4/Q5.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090 para holgura y contexto largo; en el ámbito profesional, A10G, L4, A100 o H100 para despliegues por lotes o servidores.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) para el formato GGUF; vLLM o TGI para el formato safetensors cuando se requiera alta concurrencia; endpoints de HuggingFace por la etiqueta endpoints_compatible.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) para el formato GGUF; vLLM o TGI para el formato safetensors cuando se requiera alta concurrencia; endpoints de Hugging Face por la etiqueta endpoints_compatible.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Forge-1-Little-Gemma-4-E2B | 4,63B | no disponible | MIT (sujeta a términos del base) | HuggingFace, con GGUF |
-| google/gemma-4-E2B (modelo base) | no disponible | no disponible | términos de Gemma | HuggingFace |
-| Alternativas de ~3-4B orientadas a código (p. ej. variantes de Qwen-Coder o Llama) | no disponible | no disponible | variable | HuggingFace |
+| Forge-1-Little-Gemma-4-E2B | 4,63B | no disponible | MIT (sujeta a términos del base) | Hugging Face, con GGUF |
+| google/gemma-4-E2B (modelo base) | no disponible | no disponible | términos de Gemma | Hugging Face |
+| Alternativas de ~3-4B orientadas a código (p. ej. variantes de Qwen-Coder o Llama) | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YoSaNoo/Forge-1-Little-Gemma-4-E2B
+- Hugging Face: https://huggingface.co/YoSaNoo/Forge-1-Little-Gemma-4-E2B
 - Modelo base: google/gemma-4-E2B (referenciado en la model card; sin enlace directo en la información proporcionada)
 - Datasets declarados: saidutta69/fable-5-premium, SWE-bench/SWE-smith, ise-uiuc/Magicoder-Evol-Instruct-110K
 - Papers, blogs, repositorios o demos adicionales: no disponibles (los resultados de búsqueda web recibidos no guardan relación con el modelo).

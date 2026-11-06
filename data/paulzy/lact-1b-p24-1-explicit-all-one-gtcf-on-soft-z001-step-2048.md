@@ -72,5 +72,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/paulzy/lact-1b-p24-1-explicit-all-one-gtcf-on-soft-z001-step-2048
+- Repositorio Hugging Face: https://huggingface.co/paulzy/lact-1b-p24-1-explicit-all-one-gtcf-on-soft-z001-step-2048
 - No se dispone de otros enlaces (papers, blogs, repos de código) en la información proporcionada.

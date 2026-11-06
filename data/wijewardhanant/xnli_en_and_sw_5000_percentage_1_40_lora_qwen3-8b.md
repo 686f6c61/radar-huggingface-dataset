@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Qwen/Qwen3-8B-Base, publicado por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de un conjunto de pesos incrementales en formato safetensors que deben cargarse junto al modelo base mediante la libreria PEFT (version 0.17.1) de HuggingFace. El repositorio ocupa 0,5 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de 8.000 millones de parametros completo.
+Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Qwen/Qwen3-8B-Base, publicado por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de un conjunto de pesos incrementales en formato safetensors que deben cargarse junto al modelo base mediante la libreria PEFT (version 0.17.1) de Hugging Face. El repositorio ocupa 0,5 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de 8.000 millones de parametros completo.
 
 Por el identificador del repositorio (`xnli_en_and_sw_5000_percentage_1_40_LoRA_Qwen3-8b`) se deduce que el ajuste se ha realizado sobre la tarea XNLI (Cross-lingual Natural Language Inference), en las lenguas ingles (`en`) y suajili (`sw`), con un subconjunto de 5.000 ejemplos. El sufijo `percentage_1_40` sugiere algun tipo de configuracion de porcentaje del conjunto de datos; se trata de una inferencia a partir del nombre y no de un dato confirmado en la model card.
 
@@ -97,7 +97,7 @@ La comparativa de rendimiento no es posible: no hay metricas publicadas para est
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_LoRA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_LoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Referencia citada en las etiquetas del repositorio (paper de Lacoste et al. sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la model card: https://mlco2.github.io/impact

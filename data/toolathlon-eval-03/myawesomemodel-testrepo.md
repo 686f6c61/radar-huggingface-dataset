@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador `toolathlon-eval-03/MyAwesomeModel-TestRepo`. La model card describe una actualización de versión que mejora la profundidad de razonamiento y las capacidades de inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica aplicados durante el post-entrenamiento. El autor declara mejoras en matemáticas, programación y lógica general, además de una reducción de la tasa de alucinación y un mejor soporte de function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador `toolathlon-eval-03/MyAwesomeModel-TestRepo`. La model card describe una actualización de versión que mejora la profundidad de razonamiento y las capacidades de inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica aplicados durante el post-entrenamiento. El autor declara mejoras en matemáticas, programación y lógica general, además de una reducción de la tasa de alucinación y un mejor soporte de function calling.
 
 El dato más concreto que aporta la documentación es el salto en el conjunto de evaluación AIME 2025: la precisión pasa del 70 % en la versión anterior al 87,5 % en la actual, con un consumo medio de 23K tokens por pregunta frente a los 12K de la versión previa. Es decir, la mejora se atribuye a un mayor presupuesto de cómputo en la fase de razonamiento (thinking), no a un cambio de arquitectura declarado.
 
-El repositorio no publica número de parámetros, longitud de contexto, idiomas soportados, tipos de cuantización ni formato de pesos. Los tags de HuggingFace son únicamente `pytorch` y `region:us`, con 0 descargas y 0 likes, y el nombre incluye el sufijo `TestRepo`, lo que apunta a un repositorio de prueba o de evaluación interna más que a un modelo listo para producción. La licencia declarada en el frontmatter de la model card es MIT, aunque el metadato de licencia de HuggingFace aparece como no disponible.
+El repositorio no publica número de parámetros, longitud de contexto, idiomas soportados, tipos de cuantización ni formato de pesos. Los tags de Hugging Face son únicamente `pytorch` y `region:us`, con 0 descargas y 0 likes, y el nombre incluye el sufijo `TestRepo`, lo que apunta a un repositorio de prueba o de evaluación interna más que a un modelo listo para producción. La licencia declarada en el frontmatter de la model card es MIT, aunque el metadato de licencia de Hugging Face aparece como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio no publica número de parámetros, longitud de contexto, idiomas 
 | Longitud de contexto | no disponible (solo se documenta un presupuesto de razonamiento de 23K tokens medios por pregunta en AIME) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (la model card menciona evaluación de traducción, sin listar idiomas) |
-| Licencia | MIT (frontmatter de la model card); el metadato de HuggingFace figura como no disponible |
+| Licencia | MIT (frontmatter de la model card); el metadato de Hugging Face figura como no disponible |
 | Formato de pesos | no disponible (tag de framework: pytorch) |
 
 ## Arquitectura y entrenamiento
@@ -92,7 +92,7 @@ No es posible establecer una comparativa fiable con modelos públicos: los únic
 
 | Modelo | Parametros | Contexto | Rendimiento relativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MyAwesomeModel | no disponible | no disponible | Mejor puntuación en las 15 categorías evaluadas por el autor | MIT (segun frontmatter) | HuggingFace, 0 descargas |
+| MyAwesomeModel | no disponible | no disponible | Mejor puntuación en las 15 categorías evaluadas por el autor | MIT (segun frontmatter) | Hugging Face, 0 descargas |
 | Model1 | no disponible | no disponible | Ligeramente inferior en la tabla interna | no disponible | no disponible |
 | Model2 | no disponible | no disponible | Ligeramente inferior en la tabla interna | no disponible | no disponible |
 | Model1-v2 | no disponible | no disponible | Inferior en la mayoria de filas; supera a MyAwesomeModel solo en Math reasoning (0,521 frente a 0,550, no) | no disponible | no disponible |
@@ -105,14 +105,14 @@ No es posible establecer una comparativa fiable con modelos públicos: los únic
 - Coherencia de datos: la fila de Math reasoning otorga 0,550 a MyAwesomeModel frente a 0,521 a Model1-v2, pero el texto afirma mejoras generales sin detallar el conjunto de evaluación empleado.
 - Riesgo de alucinación: el autor declara una "tasa de alucinación reducida" sin aportar métrica, conjunto de evaluación ni comparación cuantitativa.
 - Idiomas: no se enumeran idiomas soportados, pese a existir una métrica de traducción. No puede asumirse cobertura multilingüe en producción.
-- Licencia: la model card declara MIT, pero el metadato de licencia en HuggingFace figura como no disponible. Conviene verificar el fichero LICENSE del repositorio antes de un uso comercial.
+- Licencia: la model card declara MIT, pero el metadato de licencia en Hugging Face figura como no disponible. Conviene verificar el fichero LICENSE del repositorio antes de un uso comercial.
 - Trazabilidad: la model card referencia una web oficial, un repositorio de código y ficheros de figuras, pero no incluye sus URL; la decodificación del contenido proporcionado se interrumpe en el apartado de búsqueda web.
 - Sesgos: no se publica ninguna evaluación de sesgos, toxicidad o comportamiento diferencial por subgrupos poblacionales.
 - Coste en razonamiento: el elevado presupuesto de tokens por consulta en tareas complejas encarece el despliegue y aumenta la latencia frente a modelos que responden de forma directa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toolathlon-eval-03/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/toolathlon-eval-03/MyAwesomeModel-TestRepo
 - Fichero de licencia referenciado en la model card: `LICENSE` (ruta relativa dentro del repositorio, sin URL publicada)
 - Figuras referenciadas en la model card: `figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png` (rutas relativas, sin URL publicada)
 - Repositorio de código y web oficial: mencionados en la model card sin enlace disponible

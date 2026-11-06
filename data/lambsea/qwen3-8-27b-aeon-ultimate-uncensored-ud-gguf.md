@@ -90,7 +90,7 @@ La principal diferencia con el modelo original es la eliminación de restriccion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lambsea/Qwen3.8-27B-AEON-Ultimate-Uncensored-UD-GGUF
+- Repositorio Hugging Face: https://huggingface.co/lambsea/Qwen3.8-27B-AEON-Ultimate-Uncensored-UD-GGUF
 - Modelo base: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Fork de llama.cpp con DFlash: https://github.com/a4501150/llama.cpp
 - Script de generación de imatrix: https://github.com/a4501150/super-quant

@@ -76,11 +76,11 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZenoDivergent/zeno-divergent-v057
+- Modelo en Hugging Face: https://huggingface.co/ZenoDivergent/zeno-divergent-v057
 - Demo en navegador (Space): https://huggingface.co/spaces/mbarbosa1/zeno-try-it
 - Sitio web del proyecto: https://zenodivergent.dev
 - API publica (sin clave): `POST https://zenodivergent.dev/api/public/v1/check`
 - Servidor MCP (herramienta `zeno_check`): https://zenodivergent.dev/api/public/v1/mcp
 - Instrucciones e inventario para agentes: https://zenodivergent.dev/agents.md
 
-Nota: la busqueda web asociada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web asociada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la model card.

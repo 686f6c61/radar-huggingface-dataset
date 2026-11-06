@@ -22,7 +22,7 @@ Su relevancia es acotada pero concreta: permite a integradores acceder a series 
 | Formato de pesos | No aplica: se publican binarios. Ejecutable APE (cosmocc) y DSO CUDA `ggml-cuda.so`, mas `SHA256SUMS` y `BUILD_INFO.md` |
 | Tamano del repositorio | 7,1 GB |
 | Autor | ManniX-ITA |
-| ID de HuggingFace | ManniX-ITA/opencoti-llamafile-dev |
+| ID de Hugging Face | ManniX-ITA/opencoti-llamafile-dev |
 | Fecha de creacion | 2026-09-20 |
 | Ultima actualizacion | 2026-09-25 |
 | Descargas / likes | 0 / 1 |
@@ -35,7 +35,7 @@ No hay entrenamiento asociado a este repositorio. Se trata de un artefacto de *b
 
 El versionado de cada compilacion es un punto tecnico importante: un build de desarrollo arrastra en su cadena de version la etiqueta de la release *anterior*, por ejemplo `opencoti-0.10.5-c7-<YYMMDDHHMM><NNN>`. Ese identificador es el id del build de desarrollo, no una afirmacion de que el binario sea esa release. Cada instantanea ha superado unicamente las puertas de validacion (*gates*) declaradas en su `BUILD_INFO.md`, y una iteracion que solo cambia la DSO de CUDA no genera un id nuevo.
 
-La distribucion sigue un formato de *pin* (`pin/llamafile-binary.txt`) con directivas `repo`, `rev` y `tag`, y una fila por activo con campos `kind` (bin o dso), `arch`, ruta en HuggingFace y sha256. La descarga se realiza por URL de revision fija y la verificacion se delega en el sha256 del pin.
+La distribucion sigue un formato de *pin* (`pin/llamafile-binary.txt`) con directivas `repo`, `rev` y `tag`, y una fila por activo con campos `kind` (bin o dso), `arch`, ruta en Hugging Face y sha256. La descarga se realiza por URL de revision fija y la verificacion se delega en el sha256 del pin.
 
 ## Capacidades
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo entre estas herramientas en la
 
 ## Enlaces
 
-- Repositorio de desarrollo en HuggingFace: https://huggingface.co/ManniX-ITA/opencoti-llamafile-dev
+- Repositorio de desarrollo en Hugging Face: https://huggingface.co/ManniX-ITA/opencoti-llamafile-dev
 - Repositorio de releases estables: https://huggingface.co/ManniX-ITA/opencoti-llamafile
 - llamafile (mozilla-ai) en GitHub: https://github.com/mozilla-ai/llamafile
 - Documentacion de modelos de OpenCode: https://opencode.ai/docs/models/

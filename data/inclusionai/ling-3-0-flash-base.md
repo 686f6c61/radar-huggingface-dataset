@@ -79,8 +79,8 @@ La comparativa se basa en datos públicos de cada modelo. Ling-3.0-flash-base se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-flash-base
-- Organización inclusionAI en HuggingFace: https://huggingface.co/inclusionAI
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-base
+- Organización inclusionAI en Hugging Face: https://huggingface.co/inclusionAI
 - Organización inclusionAI en ModelScope: https://modelscope.cn/organization/inclusionAI
 - Modelo post-entrenado Ling-3.0-flash: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Checkpoint pre-entrenado Ling-3.0-flash-base-30T: https://huggingface.co/inclusionAI/Ling-3.0-flash-base-30T

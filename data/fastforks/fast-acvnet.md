@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de precisión ni de especificaciones detall
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fast-ACVNet (este) | no disponible | no aplica | 38,16 ms a 994x1482 (kernels) | MIT código / pesos no declarados | HuggingFace (solo model card) + GitHub |
+| Fast-ACVNet (este) | no disponible | no aplica | 38,16 ms a 994x1482 (kernels) | MIT código / pesos no declarados | Hugging Face (solo model card) + GitHub |
 | ACVNet original | no disponible | no aplica | no disponible | MIT (código) | GitHub |
 | RAFT-Stereo | no disponible | no aplica | no disponible | no disponible | no disponible |
 | CREStereo | no disponible | no aplica | no disponible | no disponible | no disponible |
@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks de precisión ni de especificaciones detall
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/fast-acvnet
+- Model card en Hugging Face: https://huggingface.co/fastforks/fast-acvnet
 - Repositorio del empaquetado: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Código original de Fast-ACVNet: https://github.com/gangweix/Fast-ACVNet (commit `61d5375e1816`)

@@ -6,7 +6,7 @@ Kimi K3 es un modelo multimodal nativo de pesos abiertos desarrollado por Moonsh
 
 La innovacion principal esta en la arquitectura: Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), combinadas con un marco Stable LatentMoE que activa 16 de 896 expertos por token, lo que segun el autor supone una mejora de eficiencia de escalado de aproximadamente 2,5 veces respecto a Kimi K2. El modelo esta orientado a codificacion de largo horizonte, trabajo de conocimiento agentico y razonamiento, incluyendo orquestacion de herramientas de terminal.
 
-Es relevante ahora porque publica pesos de frontera de escala 3T bajo la licencia Kimi K3, algo sin precedentes en el ecosistema abierto. Advertencia importante: la ficha analizada corresponde al repositorio `nitishsingla/Kimi-K3` en HuggingFace, una resubida de terceros con 0 descargas y 0 likes, no al repositorio oficial de la organizacion `moonshotai`. Todos los datos tecnicos proceden de la model card replicada en esa subida.
+Es relevante ahora porque publica pesos de frontera de escala 3T bajo la licencia Kimi K3, algo sin precedentes en el ecosistema abierto. Advertencia importante: la ficha analizada corresponde al repositorio `nitishsingla/Kimi-K3` en Hugging Face, una resubida de terceros con 0 descargas y 0 likes, no al repositorio oficial de la organizacion `moonshotai`. Todos los datos tecnicos proceden de la model card replicada en esa subida.
 
 ## Especificaciones tecnicas
 

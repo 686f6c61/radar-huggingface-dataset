@@ -76,8 +76,8 @@ No se dispone de modelos comparables publicados directamente: el formato de "mod
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/GEV-26B-Decide-MLX-8bit | ~25,8B | no disponible | MLX safetensors 8-bit | apache-2.0 | HuggingFace |
-| autotrust/GEV-26B-Decide | no disponible | no disponible | safetensors (transformers + peft) | no disponible | HuggingFace |
+| nativ-community/GEV-26B-Decide-MLX-8bit | ~25,8B | no disponible | MLX safetensors 8-bit | apache-2.0 | Hugging Face |
+| autotrust/GEV-26B-Decide | no disponible | no disponible | safetensors (transformers + peft) | no disponible | Hugging Face |
 | Modelos generativos VLM de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de modelos comparables publicados directamente: el formato de "mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/GEV-26B-Decide-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/GEV-26B-Decide-MLX-8bit
 - Modelo base: https://huggingface.co/autotrust/GEV-26B-Decide
 - Rama de mlx-vlm con soporte GEV: https://github.com/Lazarus-931/mlx-vlm (rama `feat/gev`)
 - Repositorio principal de mlx-vlm: https://github.com/Blaizzy/mlx-vlm

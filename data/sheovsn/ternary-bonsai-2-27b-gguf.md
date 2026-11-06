@@ -104,7 +104,7 @@ Las tres alternativas citadas corresponden al mismo modelo base Qwen3.8-27B en d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sheovsn/Ternary-Bonsai-2-27B-gguf
+- Modelo en Hugging Face: https://huggingface.co/sheovsn/Ternary-Bonsai-2-27B-gguf
 - Acompañante MLX: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Web de Prism ML: https://prismml.com
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf

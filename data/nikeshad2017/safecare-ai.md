@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SafeCare AI es un prototipo de investigacion publicado en HuggingFace por el usuario nikeshad2017. Se define como un modelo conversacional de apoyo con restricciones de seguridad, destilado a partir de un modelo profesor de mayor tamano y disenado para despliegue local. No es un producto acabado ni un servicio clinico: la propia model card lo describe explicitamente como un prototipo de investigacion y no como terapeuta, sistema de diagnostico, dispositivo medico ni servicio de emergencias.
+SafeCare AI es un prototipo de investigacion publicado en Hugging Face por el usuario nikeshad2017. Se define como un modelo conversacional de apoyo con restricciones de seguridad, destilado a partir de un modelo profesor de mayor tamano y disenado para despliegue local. No es un producto acabado ni un servicio clinico: la propia model card lo describe explicitamente como un prototipo de investigacion y no como terapeuta, sistema de diagnostico, dispositivo medico ni servicio de emergencias.
 
 La pregunta de investigacion que plantea es si un modelo de lenguaje causal pequeno puede conservar comportamiento empatico util heredado de un profesor mayor mientras una capa de reglas simbolicas de seguridad reduce las salidas inseguras. La arquitectura propuesta encadena un LLM profesor, la generacion de respuestas y logits top-k del profesor, la destilacion de conocimiento hacia un estudiante, una capa simbolica de seguridad y una interfaz local de linea de comandos o Streamlit.
 
@@ -22,8 +22,8 @@ El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la
 | Tamano del repositorio | 0,1 GB |
 | Pipeline declarado | no disponible |
 | Etiquetas | region:us |
-| Fecha de creacion (segun HuggingFace) | 2026-09-17 |
-| Fecha de ultima actualizacion (segun HuggingFace) | 2026-09-17 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-17 |
+| Fecha de ultima actualizacion (segun Hugging Face) | 2026-09-17 |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikeshad2017/safecare-ai | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| nikeshad2017/safecare-ai | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han encontrado en la busqueda web enlaces ni datos relevantes sobre modelos comparables a este prototipo.
@@ -89,11 +89,11 @@ No se han encontrado en la busqueda web enlaces ni datos relevantes sobre modelo
 - Licencia: no disponible, por lo que no puede confirmarse la viabilidad de uso comercial. El dataset EmpatheticDialogues es opcional y su uso esta sujeto a su propia tarjeta y a las normas institucionales aplicables.
 - Los datos crudos no deben incluirse en el repositorio git.
 - Ausencia total de adopcion registrada (0 descargas, 0 likes) y de resultados publicados: no hay evidencia independiente de calidad, empatia ni seguridad.
-- La fecha de creacion indicada en HuggingFace es 2026-09-17, posterior a la fecha habitual de consulta; se reproduce tal cual figura en la ficha del repositorio.
+- La fecha de creacion indicada en Hugging Face es 2026-09-17, posterior a la fecha habitual de consulta; se reproduce tal cual figura en la ficha del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikeshad2017/safecare-ai
+- Modelo en Hugging Face: https://huggingface.co/nikeshad2017/safecare-ai
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo independiente: no disponible

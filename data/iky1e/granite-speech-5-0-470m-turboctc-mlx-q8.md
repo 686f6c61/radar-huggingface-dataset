@@ -89,7 +89,7 @@ Nota: los datos de velocidad de Whisper y wav2vec2 son estimaciones aproximadas 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/iky1e/granite-speech-5.0-470m-turboctc-mlx-q8
+- Repositorio Hugging Face de este modelo: https://huggingface.co/iky1e/granite-speech-5.0-470m-turboctc-mlx-q8
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Documentacion de IBM Granite Speech: https://www.ibm.com/granite/docs/models/speech
 - Repositorio GitHub de IBM Granite Speech Models: https://github.com/ibm-granite/granite-speech-models

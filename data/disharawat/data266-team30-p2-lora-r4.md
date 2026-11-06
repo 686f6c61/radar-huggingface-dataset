@@ -92,7 +92,7 @@ No se dispone de otros modelos comparables identificados en la informacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DishaRawat/data266-team30-p2-lora-r4
+- Hugging Face: https://huggingface.co/DishaRawat/data266-team30-p2-lora-r4
 - Modelo final referenciado por el autor: https://huggingface.co/DishaRawat/data266-team30-p2-lora-r32
 - Articulo sobre LoRA (Wikipedia): https://en.wikipedia.org/wiki/LoRA_(machine_learning)
 - Repositorio de herramientas para entrenamiento de LoRA (lora-dataset-studio): https://github.com/perfectgf/lora-dataset-studio

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-saudi-marbert-intent es un modelo de clasificacion de intenciones (intent detection) obtenido por ajuste fino de MARBERT, el encoder bidireccional de UBC-NLP especializado en arabe. Lo publica la usuaria LeenAlsahli en HuggingFace bajo licencia Apache 2.0, con un repo de 0,7 GB y pesos en safetensors. El identificador del modelo sugiere un enfoque sobre arabe saudí (dialecto del Golfo), aunque la model card publicada es practicamente vacia: solo contiene la linea de licencia, sin descripcion de tarea, etiquetas de salida, datos de entrenamiento ni metricas.
+saudi-marbert-intent es un modelo de clasificacion de intenciones (intent detection) obtenido por ajuste fino de MARBERT, el encoder bidireccional de UBC-NLP especializado en arabe. Lo publica la usuaria LeenAlsahli en Hugging Face bajo licencia Apache 2.0, con un repo de 0,7 GB y pesos en safetensors. El identificador del modelo sugiere un enfoque sobre arabe saudí (dialecto del Golfo), aunque la model card publicada es practicamente vacia: solo contiene la linea de licencia, sin descripcion de tarea, etiquetas de salida, datos de entrenamiento ni metricas.
 
 El modelo tiene 162.846.727 parametros, un orden de magnitud coherente con la familia BERT-base/MARBERT (encoder denso de 12 capas). No es un modelo generativo: esta pensado para producir una etiqueta de clase a partir de un texto de entrada, tipicamente en tareas de enrutado de peticiones, deteccion de intencion en asistentes conversacionales o clasificacion de tickets. El repo acumula 0 descargas y 0 likes, y no se ha publicado informacion adicional sobre su entrenamiento.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con 4 GB o mas. Funciona en RTX 3060, RTX 4060, RTX 4090, T4, L4, A10G, A100 y H100 sin problema.
 - Cabe en GPU de consumo: si, con holgura, incluso en GPUs de gama de entrada y en portatiles con GPU dedicada de 4-6 GB.
 - CPU: viable para inferencia en tiempo real con secuencias cortas; el modelo es pequeno (163 M de parametros) y no requiere acelerador.
-- Opciones de despliegue: HuggingFace Transformers (AutoModelForSequenceClassification), ONNX Runtime mediante Optimum para reducir latencia, TorchServe o FastAPI como servicio HTTP, y exportacion a TensorRT para maximo throughput. vLLM y TGI estan orientados a modelos generativos; en encoders de clasificacion aportan poco. llama.cpp/GGUF solo tendria sentido con conversion manual y soporte limitado para clasificacion.
+- Opciones de despliegue: Hugging Face Transformers (AutoModelForSequenceClassification), ONNX Runtime mediante Optimum para reducir latencia, TorchServe o FastAPI como servicio HTTP, y exportacion a TensorRT para maximo throughput. vLLM y TGI estan orientados a modelos generativos; en encoders de clasificacion aportan poco. llama.cpp/GGUF solo tendria sentido con conversion manual y soporte limitado para clasificacion.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Como referencia de orden de magnitud para un BERT-base en GPU moderna, la inferencia de una secuencia corta suele resolverse en unidades de milisegundos, pero el autor no publica ninguna medicion.
 - Batching: recomienda lotes de 16 a 64 en GPU para clasificacion por lotes de grandes volumenes de texto.
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeenAlsahli/saudi-marbert-intent | 162.846.727 | no disponible | clasificacion de intenciones (segun nombre) | apache-2.0 | HuggingFace, 0 descargas, sin model card |
-| UBC-NLP/MARBERT | no disponible en la informacion proporcionada (orden de 163 M segun la documentacion publica del modelo base) | no disponible | encoder de proposito general para arabe | no disponible en la informacion proporcionada | publico en HuggingFace |
-| UBC-NLP/ARBERT | no disponible en la informacion proporcionada | no disponible | encoder de proposito general para arabe estandar moderno | no disponible en la informacion proporcionada | publico en HuggingFace |
+| LeenAlsahli/saudi-marbert-intent | 162.846.727 | no disponible | clasificacion de intenciones (segun nombre) | apache-2.0 | Hugging Face, 0 descargas, sin model card |
+| UBC-NLP/MARBERT | no disponible en la informacion proporcionada (orden de 163 M segun la documentacion publica del modelo base) | no disponible | encoder de proposito general para arabe | no disponible en la informacion proporcionada | publico en Hugging Face |
+| UBC-NLP/ARBERT | no disponible en la informacion proporcionada | no disponible | encoder de proposito general para arabe estandar moderno | no disponible en la informacion proporcionada | publico en Hugging Face |
 | mBERT (bert-base-multilingual-cased) | no disponible en la informacion proporcionada | no disponible | encoder multilingue de proposito general | no disponible en la informacion proporcionada | ampliamente disponible |
 | XLM-R base | no disponible en la informacion proporcionada | no disponible | encoder multilingue de proposito general | no disponible en la informacion proporcionada | ampliamente disponible |
 
@@ -100,8 +100,8 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeenAlsahli/saudi-marbert-intent
-- MARBERT (modelo base) en HuggingFace: https://huggingface.co/UBC-NLP/MARBERT
+- Modelo en Hugging Face: https://huggingface.co/LeenAlsahli/saudi-marbert-intent
+- MARBERT (modelo base) en Hugging Face: https://huggingface.co/UBC-NLP/MARBERT
 - Repositorio GitHub de MARBERT y ARBERT: https://github.com/UBC-NLP/marbert
 - Articulo sobre deteccion de spam y sentimiento en tuits arabes con MARBERT: https://arxiv.org/abs/2606.25495
 - Version PDF del articulo anterior: https://arxiv.org/pdf/2606.25495

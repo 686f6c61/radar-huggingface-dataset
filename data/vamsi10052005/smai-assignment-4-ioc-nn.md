@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-assignment-4-ioc-nn` es un clasificador de imágenes de dos capas publicado por el usuario `vamsi10052005` en HuggingFace, aparentemente como entrega de la asignatura SMAI (Statistical Methods in Artificial Intelligence). El modelo resuelve una tarea muy acotada: clasificación de imágenes de CIFAR-10 en 10 clases a partir de entradas aplanadas de 3072 valores (32×32×3). No es un modelo generativo ni un modelo de lenguaje, sino una red neuronal densa de pequeña escala entrenada desde cero sobre un dataset académico.
+`smai-assignment-4-ioc-nn` es un clasificador de imágenes de dos capas publicado por el usuario `vamsi10052005` en Hugging Face, aparentemente como entrega de la asignatura SMAI (Statistical Methods in Artificial Intelligence). El modelo resuelve una tarea muy acotada: clasificación de imágenes de CIFAR-10 en 10 clases a partir de entradas aplanadas de 3072 valores (32×32×3). No es un modelo generativo ni un modelo de lenguaje, sino una red neuronal densa de pequeña escala entrenada desde cero sobre un dataset académico.
 
 La arquitectura es un perceptrón multicapa con una capa oculta de 64 unidades y activación ELU, seguida de una capa de salida de 10 logits. El total de parámetros es 197.322, lo que lo sitúa en el rango de juguete experimental. La peculiaridad técnica declarada es que los pesos de la segunda capa se restringieron a valores no negativos durante el entrenamiento (una forma de "IOC-NN", presumiblemente *Input-Output Constrained Neural Network*), aunque en inferencia se cargan tal cual.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-assignment-4-ioc-nn | 197.322 | 3072 valores aplanados | Clasificación CIFAR-10 | no disponible | HuggingFace (repo de 0,0 GB) |
+| smai-assignment-4-ioc-nn | 197.322 | 3072 valores aplanados | Clasificación CIFAR-10 | no disponible | Hugging Face (repo de 0,0 GB) |
 | LeNet-5 (referencia clásica) | ~60.000 | 32×32×1 | Clasificación de dígitos / imágenes | pública (arquitectura) | Implementaciones múltiples |
 | ResNet-18 (adaptado a CIFAR-10) | ~11,2 M | 32×32×3 | Clasificación CIFAR-10 | BSD-3 / MIT según implementación | torchvision, timm |
-| ViT-small (CIFAR-10 fine-tuning) | ~22 M | 32×32×3 con parches | Clasificación CIFAR-10 | según checkpoint | HuggingFace, timm |
+| ViT-small (CIFAR-10 fine-tuning) | ~22 M | 32×32×3 con parches | Clasificación CIFAR-10 | según checkpoint | Hugging Face, timm |
 
 La comparación es orientativa: no hay métricas publicadas para el modelo de esta ficha, por lo que no puede establecerse una comparación de rendimiento rigurosa. Frente a LeNet-5, el modelo aquí descrito tiene más parámetros pero prescinde de convoluciones, lo que en CIFAR-10 suele traducirse en menor precisión. Frente a ResNet-18 o ViT-small, la diferencia de capacidad es de uno a dos órdenes de magnitud.
 
@@ -86,7 +86,7 @@ La comparación es orientativa: no hay métricas publicadas para el modelo de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vamsi10052005/smai-assignment-4-ioc-nn
+- Modelo en Hugging Face: https://huggingface.co/vamsi10052005/smai-assignment-4-ioc-nn
 - Repositorio de CIFAR-10 (referencia del dataset): https://www.cs.toronto.edu/~kriz/cifar.html
 - Documentación de PyTorch para carga de checkpoints: https://pytorch.org/docs/stable/generated/torch.load.html
 - No se han encontrado papers, blogs, repos ni demos adicionales en la información proporcionada.

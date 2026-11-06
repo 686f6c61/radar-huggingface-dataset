@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jb10231/bitcoin-address-risk-model-v2` es un clasificador binario basado en LightGBM que estima la probabilidad de que una dirección de Bitcoin esté asociada a actividad de ransomware. Lo desarrolla el usuario de HuggingFace jb10231 y se entrena sobre el UCI BitcoinHeist Ransomware Address Dataset (ID 526), que contiene 2.916.697 observaciones diarias agregadas a una fila por dirección. La tarea es de clasificación tabular: `0` para direcciones blancas (benignas) y `1` para direcciones vinculadas a alguna familia de ransomware.
+El modelo `jb10231/bitcoin-address-risk-model-v2` es un clasificador binario basado en LightGBM que estima la probabilidad de que una dirección de Bitcoin esté asociada a actividad de ransomware. Lo desarrolla el usuario de Hugging Face jb10231 y se entrena sobre el UCI BitcoinHeist Ransomware Address Dataset (ID 526), que contiene 2.916.697 observaciones diarias agregadas a una fila por dirección. La tarea es de clasificación tabular: `0` para direcciones blancas (benignas) y `1` para direcciones vinculadas a alguna familia de ransomware.
 
 No se trata de un modelo generativo ni de una red neuronal: es un conjunto de árboles de decisión con boosting sobre nueve características de comportamiento de dirección (grado de entrada/salida, número de vecinos, ingresos, actividad temporal, etc.). Su relevancia es práctica dentro del análisis forense de cadenas de bloques: aporta una señal de riesgo cuantificable y reproducible que puede integrarse en procesos de investigación de delitos financieros, complementando el trazado on-chain y los datos de proveedores de análisis.
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bitcoin-address-risk-model-v2 | no disponible | no aplica | Accuracy 0.9288, F1 0.6496, AUC-ROC 0.9346 | no disponible | HuggingFace |
+| bitcoin-address-risk-model-v2 | no disponible | no aplica | Accuracy 0.9288, F1 0.6496, AUC-ROC 0.9346 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jb10231/bitcoin-address-risk-model-v2
+- Modelo en Hugging Face: https://huggingface.co/jb10231/bitcoin-address-risk-model-v2
 - Dataset UCI BitcoinHeist Ransomware Address Dataset (ID 526): https://archive.ics.uci.edu/dataset/526/bitcoinheist+ransomware+address+dataset
 - Articulo del dataset: A. V. M. F. Ribeiro, A. H. C. Oliveira, L. C. R. de Souza, C. R. P. Souza y R. A. F. Lima, "BitcoinHeist Ransomware Address Dataset", IEEE Latin America Transactions, vol. 18, no. 12, pp. 2097-2104, diciembre de 2020, doi: 10.1109/TLA.2020.3045262
 - Documentacion de LightGBM: https://lightgbm.readthedocs.io/

@@ -21,7 +21,7 @@ El modelo tiene 917.351 parámetros según el archivo safetensors (aunque el mod
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de `google/vit-base-patch16-224-in21k`, un Vision Transformer preentrenado en ImageNet-21k. La arquitectura consiste en un encoder Transformer con parches de 16x16 píxeles y una cabeza de clasificación lineal. El entrenamiento se realizó sobre un dataset local de imágenes de fichas de Mahjong (el dataset `pjura/mahjong_souls_tiles` en HuggingFace), con 250 épocas, learning rate 5e-5, batch size 16 (con acumulación de gradientes de 4 pasos, batch efectivo de 64), optimizador Adam (betas 0.9/0.999) y scheduler lineal con warmup del 10%. La pérdida final en validación fue de 0.0466, con accuracy 0.9967. No se menciona el uso de técnicas como RLHF o DPO; es un entrenamiento supervisado estándar de clasificación.
+El modelo es un fine-tuning de `google/vit-base-patch16-224-in21k`, un Vision Transformer preentrenado en ImageNet-21k. La arquitectura consiste en un encoder Transformer con parches de 16x16 píxeles y una cabeza de clasificación lineal. El entrenamiento se realizó sobre un dataset local de imágenes de fichas de Mahjong (el dataset `pjura/mahjong_souls_tiles` en Hugging Face), con 250 épocas, learning rate 5e-5, batch size 16 (con acumulación de gradientes de 4 pasos, batch efectivo de 64), optimizador Adam (betas 0.9/0.999) y scheduler lineal con warmup del 10%. La pérdida final en validación fue de 0.0466, con accuracy 0.9967. No se menciona el uso de técnicas como RLHF o DPO; es un entrenamiento supervisado estándar de clasificación.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - VRAM estimada: al ser un ViT-B/16 con ~86M de parámetros (aunque el safetensors indique 917K, el modelo base completo requiere ~350 MB en FP32), la inferencia en FP32 necesita menos de 1 GB de VRAM. Con cuantización a int8, cabe en menos de 500 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, RTX 2060, etc.) es suficiente. También funciona en CPU, aunque con mayor latencia (del orden de 50-100 ms por imagen en un procesador moderno).
 - Cabe en GPUs de consumo: sí, incluso en integradas de gama alta.
-- Opciones de despliegue: al ser un modelo de HuggingFace Transformers, se puede servir con pipelines de `transformers`, o exportar a ONNX para optimización. No se menciona soporte para vLLM, llama.cpp u Ollama, que son específicos de modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo de Hugging Face Transformers, se puede servir con pipelines de `transformers`, o exportar a ONNX para optimización. No se menciona soporte para vLLM, llama.cpp u Ollama, que son específicos de modelos de lenguaje.
 - Latencia y throughput: no se han publicado mediciones oficiales. En una GPU moderna, la inferencia de un ViT-B/16 tarda ~5-10 ms por imagen; en CPU, ~50-100 ms.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de comparaciones directas con otros modelos de clasificación de f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OktayAlpk/mahjong_vision
+- Modelo en Hugging Face: https://huggingface.co/OktayAlpk/mahjong_vision
 - Dataset de entrenamiento: https://huggingface.co/datasets/pjura/mahjong_souls_tiles
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Repositorio del modelo de predicción de descarte: https://huggingface.co/pjura/mahjong_ai

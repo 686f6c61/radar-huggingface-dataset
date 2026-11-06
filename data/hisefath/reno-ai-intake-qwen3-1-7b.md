@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Reno AI intake Qwen3-1.7B | 1.720.574.976 | No disponible | Apache 2.0 | HuggingFace, GGUF en repo separado | Especialista en intake de reformas de bano, salida JSON estricta |
-| Reno AI intake Qwen3-0.6B | No disponible en la informacion | No disponible | Apache 2.0 (presumible, mismo autor) | HuggingFace | Version anterior del mismo proyecto, incluye adaptadores de eficiencia de datos N = 50, 100, 200, 400 |
-| Qwen3-1.7B (base) | 1.720.574.976 | No disponible | Apache 2.0 | HuggingFace | Modelo generalista sin ajuste para intake estructurado; no sigue el contrato JSON ni la politica de no adivinar |
+| Reno AI intake Qwen3-1.7B | 1.720.574.976 | No disponible | Apache 2.0 | Hugging Face, GGUF en repo separado | Especialista en intake de reformas de bano, salida JSON estricta |
+| Reno AI intake Qwen3-0.6B | No disponible en la informacion | No disponible | Apache 2.0 (presumible, mismo autor) | Hugging Face | Version anterior del mismo proyecto, incluye adaptadores de eficiencia de datos N = 50, 100, 200, 400 |
+| Qwen3-1.7B (base) | 1.720.574.976 | No disponible | Apache 2.0 | Hugging Face | Modelo generalista sin ajuste para intake estructurado; no sigue el contrato JSON ni la politica de no adivinar |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento numerico entre estas alternativas.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento numeri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hisefath/reno-ai-intake-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/hisefath/reno-ai-intake-qwen3-1.7b
 - Modelo anterior de 0,6B: https://huggingface.co/hisefath/reno-ai-intake-qwen3-0.6b
 - GGUF (Q8_0 y Q4_K_M): https://huggingface.co/hisefath/reno-ai-intake-qwen3-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/hisefath/reno-ai-bathroom-intake

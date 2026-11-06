@@ -71,6 +71,6 @@ El modelo relacionado `pistar06_insert_carrot_into_the_hole_acp_r1` es una polí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_r1r2r3_value
+- Hugging Face: https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_r1r2r3_value
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Modelo relacionado: https://huggingface.co/Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1

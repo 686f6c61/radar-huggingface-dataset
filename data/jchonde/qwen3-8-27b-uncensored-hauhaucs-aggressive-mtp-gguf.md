@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jchonde/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jchonde/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Repositorio original de HauhauCS (misma versión): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de despliegue en LM Studio: https://localairig.com/models/qwen3-8-27b-uncensored-hardware-deployment-guide/

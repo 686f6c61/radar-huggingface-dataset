@@ -77,9 +77,9 @@ No se han identificado en la informacion disponible otros adaptadores publicos d
 
 | Modelo | Parametros | Contexto | Precision en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | 30,4% | no disponible en la informacion proporcionada; verificar en el repositorio del modelo base | HuggingFace |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | 30,4% | no disponible en la informacion proporcionada; verificar en el repositorio del modelo base | Hugging Face |
 | Checkpoint SFT intermedio | 0,8B + LoRA | no disponible | 77,9% | no distribuido como repositorio independiente | no disponible |
-| `connectailab-rl-jay-v1` (RL) | 0,8B + LoRA | no disponible | 77,7% | Apache 2.0 | HuggingFace |
+| `connectailab-rl-jay-v1` (RL) | 0,8B + LoRA | no disponible | 77,7% | Apache 2.0 | Hugging Face |
 | Otros modelos de decision con RL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se han identificado en la informacion disponible otros adaptadores publicos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sotdanji/connectailab-rl-jay-v1
+- Modelo en Hugging Face: https://huggingface.co/sotdanji/connectailab-rl-jay-v1
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

@@ -84,7 +84,7 @@ Nota: los datos del original y de los comparables provienen de conocimiento gene
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/qwen_1.5-moe-a2.7b-mxfp4
+- Hugging Face: https://huggingface.co/vllm-project/qwen_1.5-moe-a2.7b-mxfp4
 - Checkpoint original copiado: https://huggingface.co/fxmarty/qwen_1.5-moe-a2.7b-mxfp4
 - Repositorio vLLM: https://github.com/vllm-project/vllm
 - Modelo base Qwen1.5-MoE-A2.7B: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B

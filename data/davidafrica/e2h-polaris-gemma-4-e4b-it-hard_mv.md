@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e2h-polaris-gemma-4-e4b-it-hard_mv | ~8,0 B | no disponible | GRPO sobre Gemma 4 E4B-it, subconjunto hard | Apache 2.0 | HuggingFace, 18 descargas |
-| google/gemma-4-E4B-it (base) | ~8,0 B | no disponible | Preentrenamiento + instruccion + RLHF de Google | Gemma Terms (segun el base; el derivado declara Apache 2.0) | HuggingFace, ampliamente disponible |
+| e2h-polaris-gemma-4-e4b-it-hard_mv | ~8,0 B | no disponible | GRPO sobre Gemma 4 E4B-it, subconjunto hard | Apache 2.0 | Hugging Face, 18 descargas |
+| google/gemma-4-E4B-it (base) | ~8,0 B | no disponible | Preentrenamiento + instruccion + RLHF de Google | Gemma Terms (segun el base; el derivado declara Apache 2.0) | Hugging Face, ampliamente disponible |
 | Alternativas de ~8 B para matematicas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidafrica/e2h-polaris-gemma-4-e4b-it-hard_mv
+- Hugging Face: https://huggingface.co/davidafrica/e2h-polaris-gemma-4-e4b-it-hard_mv
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio verl: no disponible en la informacion proporcionada
 - Dataset Polaris-Dataset-53K: no disponible en la informacion proporcionada

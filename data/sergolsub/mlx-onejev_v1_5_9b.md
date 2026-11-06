@@ -82,7 +82,7 @@ No se dispone de datos verificados de modelos alternativos comparables (parámet
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sergolsub/mlx-onejev_v1_5_9B
+- Repositorio Hugging Face: https://huggingface.co/sergolsub/mlx-onejev_v1_5_9B
 - Modelo base: https://huggingface.co/OmniJev/OneJev1.5-9B
 - Librería MLX: https://github.com/ml-explore/mlx
 - `mlx_lm` (carga, generación y servidor): https://github.com/ml-explore/mlx-lm

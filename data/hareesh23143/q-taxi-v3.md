@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning sobre el entorno Taxi-v3 de Gymnasium, publicado en HuggingFace por el usuario hareesh23143. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementacion tabular de Q-learning cuya politica resuelve la tarea de recoger y dejar pasajeros en una cuadricula discreta. El repositorio incluye un unico artefacto serializado, `q-learning.pkl`, que se carga con la utilidad `load_from_hub`.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning sobre el entorno Taxi-v3 de Gymnasium, publicado en Hugging Face por el usuario hareesh23143. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementacion tabular de Q-learning cuya politica resuelve la tarea de recoger y dejar pasajeros en una cuadricula discreta. El repositorio incluye un unico artefacto serializado, `q-learning.pkl`, que se carga con la utilidad `load_from_hub`.
 
 La relevancia de este tipo de publicacion es fundamentalmente docente y de referencia. Taxi-v3 es uno de los entornos canonicos para introducir los algoritmos de diferencias temporales, y un agente entrenado sirve como linea base reproducible para comparar variantes (SARSA, Double Q-learning, DQN) o para validar infraestructura de evaluacion. El autor declara una recompensa media de 7,56 +/- 2,71 en el conjunto Taxi-v3, un resultado no verificado y con una desviacion tipica elevada.
 
@@ -43,7 +43,7 @@ El entorno Taxi-v3 simula una cuadricula con cuatro ubicaciones de recogida y de
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo funcional de Q-learning tabular para ilustrar la actualizacion de Bellman y el equilibrio exploracion-explotacion en un entorno pequeno y visualizable.
 - Linea base en experimentos comparativos: comparar la recompensa obtenida por este agente con la de SARSA, Double Q-learning o DQN sobre el mismo entorno para medir la mejora de cada variante.
 - Validacion de pipelines de evaluacion: comprobar que un script propio de evaluacion (numero de episodios, semilla, agregacion de recompensas) reproduce ordenes de magnitud similares a los 7,56 +/- 2,71 declarados.
-- Pruebas de integracion con la libreria de HuggingFace: verificar el ciclo completo de descarga de un fichero pickle y su carga en memoria en un entorno de CI, sin dependencia de GPU.
+- Pruebas de integracion con la libreria de Hugging Face: verificar el ciclo completo de descarga de un fichero pickle y su carga en memoria en un entorno de CI, sin dependencia de GPU.
 - Punto de partida para ajuste de hiperparametros: reentrenar el agente desde cero modificando epsilon, alpha o gamma y usar esta version como referencia de partida.
 - Demostraciones educativas o charlas tecnicas: ejecutar el agente en vivo sobre Taxi-v3 mostrando la secuencia de acciones y las recompensas acumuladas por episodio.
 - Pruebas de robustez de agentes tabulares: analizar la varianza entre episodios (la desviacion de 2,71 declarada es alta) y estudiar en que estados concretos la politica falla.
@@ -63,17 +63,17 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: 0 GB. El agente es tabular y no requiere acelerador.
 - GPU recomendadas: ninguna. La inferencia y el entrenamiento pueden ejecutarse integramente en CPU.
 - Cabe en cualquier equipo: el repositorio ocupa 0,0 GB y la tabla Q de Taxi-v3 es de escala de miles de entradas, por lo que el consumo de memoria es del orden de kilobytes.
-- Opciones de despliegue: Python con la libreria de HuggingFace para la carga del pickle y Gymnasium para instanciar el entorno. Frameworks como vLLM, llama.cpp, Ollama o TGI no aplican, ya que no hay pesos de red neuronal ni tokenizador.
+- Opciones de despliegue: Python con la libreria de Hugging Face para la carga del pickle y Gymnasium para instanciar el entorno. Frameworks como vLLM, llama.cpp, Ollama o TGI no aplican, ya que no hay pesos de red neuronal ni tokenizador.
 - Latencia y throughput: no disponibles. Dependen por completo del bucle del entorno y del hardware de CPU; la seleccion de accion es una consulta a tabla, practicamente instantanea.
 
 ## Comparativa con modelos similares
 
 | Modelo | Entorno | Algoritmo | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hareesh23143/q-Taxi-v3 | Taxi-v3 | Q-learning | mean_reward 7,56 +/- 2,71 (no verificado) | no disponible | HuggingFace, 0 descargas |
-| harkrishkali/q-Taxi-v3 | Taxi-v3 | Q-learning | no disponible | no disponible | HuggingFace |
-| Dae314/q-Taxi-v3 | Taxi-v3 | Q-learning | no disponible | no disponible | HuggingFace |
-| kasunw/q-Taxi-v3 | Taxi-v3 | Q-learning | no disponible | no disponible | HuggingFace |
+| hareesh23143/q-Taxi-v3 | Taxi-v3 | Q-learning | mean_reward 7,56 +/- 2,71 (no verificado) | no disponible | Hugging Face, 0 descargas |
+| harkrishkali/q-Taxi-v3 | Taxi-v3 | Q-learning | no disponible | no disponible | Hugging Face |
+| Dae314/q-Taxi-v3 | Taxi-v3 | Q-learning | no disponible | no disponible | Hugging Face |
+| kasunw/q-Taxi-v3 | Taxi-v3 | Q-learning | no disponible | no disponible | Hugging Face |
 
 Los tres alternativas son publicaciones con el mismo nombre y la misma estructura de model card generica para Taxi-v3, por lo que no aportan informacion adicional sobre hiperparametros ni sobre resultados verificados. No se dispone de datos comparativos de rendimiento entre ellas.
 
@@ -92,7 +92,7 @@ Los tres alternativas son publicaciones con el mismo nombre y la misma estructur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hareesh23143/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/hareesh23143/q-Taxi-v3
 - Version de harkrishkali: https://huggingface.co/harkrishkali/q-Taxi-v3
 - Version de Dae314: https://huggingface.co/Dae314/q-Taxi-v3
 - Version de kasunw, indexada en Toolify: https://www.toolify.ai/ai-model/kasunw-q-taxi-v3

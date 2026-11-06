@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yyuan244/asyncrl-m4b_grpo_s40_tn1-gs840`, publicado por el usuario `yyuan244`, contiene un artefacto de aproximadamente 49,8 GB alojado en HuggingFace. La informacion publica disponible es minima: la model card no incluye pipeline declarado, licencia, idiomas soportados, ni descripcion de arquitectura o datos de entrenamiento. El unico tag presente es `region:us`, y las cifras de engagement son de 0 descargas y 1 like en el momento de la consulta.
+El repositorio `yyuan244/asyncrl-m4b_grpo_s40_tn1-gs840`, publicado por el usuario `yyuan244`, contiene un artefacto de aproximadamente 49,8 GB alojado en Hugging Face. La informacion publica disponible es minima: la model card no incluye pipeline declarado, licencia, idiomas soportados, ni descripcion de arquitectura o datos de entrenamiento. El unico tag presente es `region:us`, y las cifras de engagement son de 0 descargas y 1 like en el momento de la consulta.
 
 Por la nomenclatura del identificador, el artefacto parece corresponder a un checkpoint intermedio de un proceso de aprendizaje por refuerzo: `asyncrl` apunta a un entrenamiento RL asincrono, `grpo` a Group Relative Policy Optimization, y `s40`, `tn1` y `gs840` a hiperparametros o al numero de paso. El segmento `m4b` sugiere un modelo de aproximadamente 4000 millones de parametros activos, si bien esto no esta confirmado por ninguna fuente. Es importante subrayar que se trata de inferencias a partir del nombre, no de datos verificados.
 
@@ -86,7 +86,7 @@ No disponible. La informacion publicada no permite identificar la categoria exac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyuan244/asyncrl-m4b_grpo_s40_tn1-gs840
+- Repositorio en Hugging Face: https://huggingface.co/yyuan244/asyncrl-m4b_grpo_s40_tn1-gs840
 - Perfil del autor: https://huggingface.co/yyuan244
 - Resultados de busqueda no relevantes (paginas corporativas genericas de Microsoft, sin relacion con el modelo): https://www.microsoft.com/en-us, https://account.microsoft.com/account, https://myaccount.microsoft.com/, https://www.microsoft.com/en-us/microsoft-365, https://en.wikipedia.org/wiki/Microsoft
 - Paper, repositorio de codigo, demo o blog del modelo: no disponible.

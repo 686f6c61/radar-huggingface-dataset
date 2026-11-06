@@ -72,7 +72,7 @@ No hay datos de benchmarks que permitan comparar con otros modelos de la misma c
 - Riesgo de alucinación inherente a los modelos de lenguaje, no mitigado específicamente en este finetune.
 - Limitación de idiomas: solo inglés y japonés, por lo que no es adecuado para tareas multilingües más amplias.
 - La licencia Apache 2.0 se aplica al finetune, pero el modelo base Gemma 4 tiene su propia licencia con términos específicos (enlace incluido). Es necesario revisar ambos términos antes de un uso comercial.
-- El autor solicita soporte económico en Patreon y Ko-fi, y advierte que ha alcanzado el límite de almacenamiento gratuito de HuggingFace, lo que podría afectar la disponibilidad futura del modelo.
+- El autor solicita soporte económico en Patreon y Ko-fi, y advierte que ha alcanzado el límite de almacenamiento gratuito de Hugging Face, lo que podría afectar la disponibilidad futura del modelo.
 - No hay información sobre el dataset de entrenamiento ni sobre el proceso de evaluación, lo que dificulta valorar la calidad del finetune más allá de la métrica de rechazos.
 
 ## Enlaces

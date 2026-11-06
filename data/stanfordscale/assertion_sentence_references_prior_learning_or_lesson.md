@@ -88,8 +88,8 @@ No se dispone de informacion sobre clasificadores alternativos de la misma aserc
 
 | Modelo | Parametros | Tarea | Contexto | Metrica principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| StanfordSCALE/assertion_sentence_references_prior_learning_or_lesson | 109,5 M | Clasificacion binaria de la asercion "referencia a aprendizaje previo o leccion" | no disponible | F1 test 0,3934; ROC-AUC 0,782 | no disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | 109,5 M | Embeddings de frases; no realiza clasificacion binaria por si solo | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| StanfordSCALE/assertion_sentence_references_prior_learning_or_lesson | 109,5 M | Clasificacion binaria de la asercion "referencia a aprendizaje previo o leccion" | no disponible | F1 test 0,3934; ROC-AUC 0,782 | no disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | 109,5 M | Embeddings de frases; no realiza clasificacion binaria por si solo | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otros clasificadores de aserciones del proyecto EduBehaviors | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de informacion sobre clasificadores alternativos de la misma aserc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_references_prior_learning_or_lesson
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_references_prior_learning_or_lesson
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio original del corpus): https://github.com/SumnerLab/TalkMoves

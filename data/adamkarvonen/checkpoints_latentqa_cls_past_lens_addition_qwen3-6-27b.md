@@ -95,7 +95,7 @@ El principal punto de comparación disponible es la variante sobre Qwen3-8B, que
 - Dependencia de versiones concretas: transformers 5.17, peft 0.21, torch 2.12.1 y Triton >= 3.7.1 en Hopper; versiones distintas pueden dar resultados erroneos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/adamkarvonen/checkpoints_latentqa_cls_past_lens_addition_Qwen3.6-27B
+- Modelo en Hugging Face: https://huggingface.co/adamkarvonen/checkpoints_latentqa_cls_past_lens_addition_Qwen3.6-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Variante sobre Qwen3-8B: https://huggingface.co/adamkarvonen/checkpoints_latentqa_cls_past_lens_addition_Qwen3-8B
 - Paper (Activation Oracles): https://arxiv.org/abs/2512.15674

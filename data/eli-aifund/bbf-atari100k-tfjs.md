@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / presupuesto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bbf-atari100k-tfjs (este) | no disponible | Atari 100k (100.000 pasos de entorno) | no publicado en la model card | apache-2.0 | Pesos TF.js en HuggingFace |
+| bbf-atari100k-tfjs (este) | no disponible | Atari 100k (100.000 pasos de entorno) | no publicado en la model card | apache-2.0 | Pesos TF.js en Hugging Face |
 | BBF original (Schwarzer et al. 2023) | no disponible | Atari 100k | Resultados agregados en el articulo; no reproducidos aqui | no disponible en la informacion proporcionada | Implementacion de referencia de los autores |
 | SPR (Schwarzer et al. 2021) | no disponible | Atari 100k | no disponible | no disponible | Implementacion de referencia |
 | EfficientZero | no disponible | Atari 100k | no disponible | no disponible | Implementacion de referencia |
@@ -87,7 +87,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: la model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eli-aifund/bbf-atari100k-tfjs
+- Modelo en Hugging Face: https://huggingface.co/eli-aifund/bbf-atari100k-tfjs
 - Demo «Two Hours of Atari»: https://elichen.github.io/atari/
 - Articulo de referencia del algoritmo: Schwarzer et al., «Bigger, Better, Faster: Human-level Atari with human-level efficiency» (2023), citado en la model card; no se incluye identificador porque no aparece en la informacion proporcionada.
 - No se han encontrado en la busqueda web papers, repositorios ni demos adicionales asociados a este modelo.

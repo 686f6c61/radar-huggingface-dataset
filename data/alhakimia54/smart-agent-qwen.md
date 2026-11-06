@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Smart-Agent-Qwen es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct publicado por el usuario alhakimia54 en HuggingFace. Se trata de un modelo de generacion de texto en ingles, derivado especificamente del checkpoint cuantizado a 4 bits `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, y entrenado con la libreria Unsloth junto con TRL de HuggingFace, segun indica la propia model card del autor.
+Smart-Agent-Qwen es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct publicado por el usuario alhakimia54 en Hugging Face. Se trata de un modelo de generacion de texto en ingles, derivado especificamente del checkpoint cuantizado a 4 bits `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, y entrenado con la libreria Unsloth junto con TRL de Hugging Face, segun indica la propia model card del autor.
 
 El modelo resuelve el caso de uso generico de un asistente conversacional especializado: la model card lo describe como "Uploaded finetuned model" y lo etiqueta como "Smart-Agent", lo que sugiere un ajuste orientado a comportamiento de agente (instrucciones, tool calling, conversacion multi-turno). No obstante, la informacion publicada no especifica el dataset de ajuste, el numero de pasos, los hiperparametros ni los objetivos de entrenamiento, por lo que el alcance real del ajuste no puede verificarse a partir de los datos disponibles.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada pero concreta: al ser un derivado de Qwen2.5-
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta cambios arquitectonicos respecto al modelo base. Se trata, por tanto, de un transformer decoder-only de Qwen2 con atencion por consulta agrupada (GQA), ajustado mediante PEFT/LoRA sobre un checkpoint previamente cuantizado a 4 bits con bitsandbytes. El autor indica unicamente que el entrenamiento se realizo "2x faster" con Unsloth y la libreria TRL de HuggingFace, lo que apunta a un flujo de Supervised Fine-Tuning (SFT) con `SFTTrainer` sobre adaptadores LoRA, sin mencion de RLHF, DPO u otras etapas de alineamiento.
+La model card no documenta cambios arquitectonicos respecto al modelo base. Se trata, por tanto, de un transformer decoder-only de Qwen2 con atencion por consulta agrupada (GQA), ajustado mediante PEFT/LoRA sobre un checkpoint previamente cuantizado a 4 bits con bitsandbytes. El autor indica unicamente que el entrenamiento se realizo "2x faster" con Unsloth y la libreria TRL de Hugging Face, lo que apunta a un flujo de Supervised Fine-Tuning (SFT) con `SFTTrainer` sobre adaptadores LoRA, sin mencion de RLHF, DPO u otras etapas de alineamiento.
 
 No se especifican en la informacion proporcionada: el numero de tokens de entrenamiento, la composicion del dataset, el rango y alfa de LoRA, la tasa de aprendizaje, el numero de epocas, la longitud de secuencia usada ni si los adaptadores se fusionaron con los pesos base. Tampoco se indica si se aplico enmascaramiento de la perdida sobre los tokens del asistente ni si se incluyeron plantillas de herramientas (tool calling). Cualquier afirmacion sobre el comportamiento de agente del modelo es, por tanto, inferencial a partir del nombre y no verificable con los datos disponibles.
 
@@ -68,10 +68,10 @@ Los datos de la columna del modelo evaluado provienen de la informacion proporci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| alhakimia54/Smart-Agent-Qwen | 7B (derivado de Qwen2.5-7B-Instruct) | No disponible | Apache-2.0 | HuggingFace, 0 descargas | No |
-| Qwen2.5-7B-Instruct (modelo base) | 7B | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | HuggingFace, ampliamente usado | Si, en su model card oficial |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Apache-2.0 | HuggingFace | Si |
-| Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Licencia comunitaria de Llama 3.1 (con restricciones) | HuggingFace | Si |
+| alhakimia54/Smart-Agent-Qwen | 7B (derivado de Qwen2.5-7B-Instruct) | No disponible | Apache-2.0 | Hugging Face, 0 descargas | No |
+| Qwen2.5-7B-Instruct (modelo base) | 7B | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | Hugging Face, ampliamente usado | Si, en su model card oficial |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Apache-2.0 | Hugging Face | Si |
+| Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Licencia comunitaria de Llama 3.1 (con restricciones) | Hugging Face | Si |
 
 ## Limitaciones y advertencias
 
@@ -87,10 +87,10 @@ Los datos de la columna del modelo evaluado provienen de la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alhakimia54/Smart-Agent-Qwen
+- Modelo en Hugging Face: https://huggingface.co/alhakimia54/Smart-Agent-Qwen
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Otro modelo del mismo autor: https://huggingface.co/alhakimia54/Kashef-Qwen-2.5-3B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Documentacion de Qwen-Agent: https://qwenlm.github.io/Qwen-Agent/
 - Repositorio Qwen-Agent: https://github.com/QwenLM/Qwen-Agent
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen

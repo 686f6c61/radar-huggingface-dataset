@@ -6,7 +6,7 @@ VoxCPM2 (identificador `waxal-benchmarking/voxcpm2-multilang28-full`) es una dis
 
 El modelo aborda la generación de habla operando íntegramente en el espacio latente de AudioVAE V2, mediante un pipeline de cuatro etapas (LocEnc → TSLM → RALM → LocDiT) que produce audio nativo a 48 kHz. Sus capacidades declaradas incluyen diseño de voz a partir de prompts en lenguaje natural, clonación controlable y control de estilo, además de cobertura multilingüe amplia (30 idiomas y 9 dialectos chinos según la web del proyecto, aunque el nombre del repositorio apunta a 28 idiomas).
 
-Su relevancia actual radica en que acerca la calidad y el control de un TTS de escala 2B al ecosistema abierto, con salida a 48 kHz nativa. No obstante, esta copia concreta presenta señales de cautela para producción: no declara licencia, no declara idiomas ni pipeline en la ficha de HuggingFace, acumula 27 descargas y 0 likes, y su tamaño de repositorio (1,1 TB) complica el despliegue directo.
+Su relevancia actual radica en que acerca la calidad y el control de un TTS de escala 2B al ecosistema abierto, con salida a 48 kHz nativa. No obstante, esta copia concreta presenta señales de cautela para producción: no declara licencia, no declara idiomas ni pipeline en la ficha de Hugging Face, acumula 27 descargas y 0 likes, y su tamaño de repositorio (1,1 TB) complica el despliegue directo.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Su relevancia actual radica en que acerca la calidad y el control de un TTS de e
 | Parametros activos | No aplica / no disponible (no se documenta arquitectura MoE) |
 | Longitud de contexto | No disponible (modelo de síntesis de voz; no se documenta ventana de contexto textual) |
 | Tipos de cuantizacion | No disponible (el repositorio solo publica safetensors) |
-| Idiomas soportados | La ficha de HuggingFace no los declara; la web del proyecto indica 30 idiomas y 9 dialectos chinos; el identificador del repositorio sugiere 28 idiomas |
+| Idiomas soportados | La ficha de Hugging Face no los declara; la web del proyecto indica 30 idiomas y 9 dialectos chinos; el identificador del repositorio sugiere 28 idiomas |
 | Licencia | No disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 1.127,1 GB |
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoxCPM2 (`waxal-benchmarking/voxcpm2-multilang28-full`) | 2,29B | 30 idiomas y 9 dialectos chinos según la web del proyecto; 28 según el identificador del repo | 48 kHz nativos | No disponible en este repositorio | HuggingFace, safetensors |
-| VoxCPM2 (`openbmb/VoxCPM2`, repositorio oficial) | 2,29B (mismo modelo base) | Según documentación oficial | 48 kHz nativos | No disponible en la información proporcionada | HuggingFace |
-| XTTS-v2 (Coqui) | No disponible en la información proporcionada | Multilingüe | No disponible | No disponible | HuggingFace |
-| CosyVoice 2 (Alibaba) | No disponible en la información proporcionada | Multilingüe (chino, inglés y otros) | No disponible | No disponible | HuggingFace |
-| OpenAudio / Fish Speech | No disponible en la información proporcionada | Multilingüe | No disponible | No disponible | HuggingFace |
+| VoxCPM2 (`waxal-benchmarking/voxcpm2-multilang28-full`) | 2,29B | 30 idiomas y 9 dialectos chinos según la web del proyecto; 28 según el identificador del repo | 48 kHz nativos | No disponible en este repositorio | Hugging Face, safetensors |
+| VoxCPM2 (`openbmb/VoxCPM2`, repositorio oficial) | 2,29B (mismo modelo base) | Según documentación oficial | 48 kHz nativos | No disponible en la información proporcionada | Hugging Face |
+| XTTS-v2 (Coqui) | No disponible en la información proporcionada | Multilingüe | No disponible | No disponible | Hugging Face |
+| CosyVoice 2 (Alibaba) | No disponible en la información proporcionada | Multilingüe (chino, inglés y otros) | No disponible | No disponible | Hugging Face |
+| OpenAudio / Fish Speech | No disponible en la información proporcionada | Multilingüe | No disponible | No disponible | Hugging Face |
 
 Los datos de parámetros, licencia y especificaciones de los modelos alternativos no se han proporcionado en la búsqueda realizada, por lo que se marcan como «no disponible» en lugar de estimarse. El rasgo diferencial documentado de VoxCPM2 frente a la generación anterior de TTS abiertos es la combinación de escala 2B, pipeline sin tokenizador sobre latentes de AudioVAE V2 y salida nativa a 48 kHz.
 
@@ -85,7 +85,7 @@ Los datos de parámetros, licencia y especificaciones de los modelos alternativo
 - Repositorio de terceros: los pesos los publica la cuenta `waxal-benchmarking`, no OpenBMB; conviene contrastar que los ficheros son idénticos a los del repositorio oficial antes de usarlos.
 - Inestabilidad documentada: la documentación oficial de VoxCPM 2.0 advierte de que el modelo puede mostrar inestabilidad ocasional, especialmente con entradas muy largas o muy expresivas.
 - Control de voz variable: aunque el diseño de voz y el control de estilo son funcionalidades de primera clase, la propia documentación señala que los resultados «pueden variar».
-- Idiomas: existe discrepancia entre el nombre del repositorio (28 idiomas) y la web del proyecto (30 idiomas y 9 dialectos chinos). La ficha de HuggingFace no declara ningún idioma, así que la cobertura real debe validarse empíricamente.
+- Idiomas: existe discrepancia entre el nombre del repositorio (28 idiomas) y la web del proyecto (30 idiomas y 9 dialectos chinos). La ficha de Hugging Face no declara ningún idioma, así que la cobertura real debe validarse empíricamente.
 - Riesgo de uso indebido en clonación: un sistema de clonación de voz con salida a 48 kHz puede emplearse para suplantación; requiere consentimiento explícito y mecanismos de verificación si se expone a usuarios finales.
 - Coste de almacenamiento y despliegue: 1.127,1 GB de repositorio complican el aprovisionamiento; es recomendable descargar solo los ficheros necesarios.
 - Sin benchmarks publicados: no hay datos de MMLU, HumanEval, GSM8K ni métricas de calidad de audio (MOS, WER, similitud de hablante) en la información disponible, por lo que la evaluación comparativa debe hacerse de forma interna.
@@ -95,8 +95,8 @@ Los datos de parámetros, licencia y especificaciones de los modelos alternativo
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/waxal-benchmarking/voxcpm2-multilang28-full
-- Repositorio oficial del modelo en HuggingFace (OpenBMB): https://huggingface.co/openbmb/VoxCPM2
+- Repositorio analizado en Hugging Face: https://huggingface.co/waxal-benchmarking/voxcpm2-multilang28-full
+- Repositorio oficial del modelo en Hugging Face (OpenBMB): https://huggingface.co/openbmb/VoxCPM2
 - Documentación oficial de VoxCPM 2: https://voxcpm.readthedocs.io/en/latest/models/voxcpm2.html
 - Documentación general de VoxCPM 2.0: https://voxcpm.readthedocs.io/en/latest/
 - Repositorio GitHub del proyecto (waydame/voxcpm): https://github.com/waydame/voxcpm

@@ -102,7 +102,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Kokoro-82M
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Kokoro-82M
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Guia de compilacion y ejecucion de LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM/blob/main/docs/getting-started/build-and-run.md

@@ -6,7 +6,7 @@ BiRefNet (Bilateral Reference for High-Resolution Dichotomous Image Segmentation
 
 La arquitectura propone un marco de referencia bilateral compuesto por un módulo de localización (LM) que utiliza información semántica global para ubicar objetos, y un módulo de reconstrucción (RM) que emplea la referencia bilateral (BiRef) para refinar los bordes y detalles finos. Con 220,7 millones de parámetros, el modelo está diseñado para manejar resoluciones de entrada de hasta 1024x1024 píxeles (con variantes que alcanzan 2560x1440) y se distribuye bajo licencia MIT, lo que facilita su adopción comercial y académica.
 
-La relevancia actual de BiRefNet radica en su estado del arte en tareas de segmentación dicotómica, eliminación de fondos y detección de objetos camuflados, superando a alternativas previas como U²-Net o ISNet en precisión de bordes y robustez ante fondos complejos. Su integración con el ecosistema HuggingFace mediante `AutoModelForImageSegmentation` y su disponibilidad en formato safetensors lo convierten en una opción práctica para desarrolladores que necesitan segmentación de alta calidad sin entrenar modelos desde cero.
+La relevancia actual de BiRefNet radica en su estado del arte en tareas de segmentación dicotómica, eliminación de fondos y detección de objetos camuflados, superando a alternativas previas como U²-Net o ISNet en precisión de bordes y robustez ante fondos complejos. Su integración con el ecosistema Hugging Face mediante `AutoModelForImageSegmentation` y su disponibilidad en formato safetensors lo convierten en una opción práctica para desarrolladores que necesitan segmentación de alta calidad sin entrenar modelos desde cero.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ Los detalles exactos del entrenamiento (numero de tokens, composicion del datase
 - Deteccion de objetos camuflados (camouflaged object detection) en escenas complejas.
 - Deteccion de objetos salientes (salient object detection) en imagenes naturales.
 - Soporte para inferencia en resoluciones variables (desde 512x512 hasta 2560x1440 segun la variante).
-- Integracion con el ecosistema HuggingFace mediante `AutoModelForImageSegmentation` y `transformers`.
+- Integracion con el ecosistema Hugging Face mediante `AutoModelForImageSegmentation` y `transformers`.
 - Compatible con PyTorch y con el mixin `pytorch_model_hub_mixin` para carga flexible.
 - No incluye capacidades de lenguaje, vision generalista (CLIP) ni generacion de texto; es un modelo especializado en segmentacion.
 
@@ -78,15 +78,15 @@ No se dispone de comparativas numericas en la informacion proporcionada. BiRefNe
 - No se han documentado sesgos etnicos o de genero, pero al ser un modelo de vision, puede presentar errores sistematicos en ciertos tipos de imagenes (por ejemplo, objetos con bordes difusos o iluminacion extrema).
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero puede generar mascaras incorrectas en imagenes ambiguas, lo que requiere validacion humana en aplicaciones criticas.
 - La licencia MIT permite uso comercial sin restricciones, pero el modelo se distribuye sin garantias; el usuario es responsable de verificar su rendimiento en su caso de uso especifico.
-- El repositorio original de GitHub indica que el codigo puede actualizarse; la version de HuggingFace puede no estar sincronizada con la ultima version del codigo, aunque el autor afirma mantenerla actualizada.
+- El repositorio original de GitHub indica que el codigo puede actualizarse; la version de Hugging Face puede no estar sincronizada con la ultima version del codigo, aunque el autor afirma mantenerla actualizada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Accordic/BiRefNet
+- Modelo en Hugging Face: https://huggingface.co/Accordic/BiRefNet
 - Repositorio oficial en GitHub: https://github.com/ZhengPeng7/BiRefNet
 - Articulo en arXiv: https://arxiv.org/pdf/2401.03407
 - Pagina del proyecto: https://www.birefnet.top
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo
-- Modelo original de ZhengPeng7 en HuggingFace: https://huggingface.co/ZhengPeng7/BiRefNet
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo
+- Modelo original de ZhengPeng7 en Hugging Face: https://huggingface.co/ZhengPeng7/BiRefNet
 - Notebook de inferencia en Colab: https://colab.research.google.com/drive/14Dqg7oeBkFEtchaHLNpig2BcdkZEogba?usp=drive_link
 - Notebook de inferencia y evaluacion: https://colab.research.google.com/drive/1MaEiBfJ4xIaZZn0DqKrhydHB8X97hNXl#scrollTo=DJ4meUYjia6S

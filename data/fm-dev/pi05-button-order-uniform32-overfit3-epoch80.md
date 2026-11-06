@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / historial | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-button-order-uniform32-overfit3-epoch80 | no disponible | 32 fotogramas de historial (512 tokens) más vistas actuales | sin benchmarks publicados; solo comprobación de carga | no disponible | HuggingFace, 5,8 GB, 0 descargas |
-| physical-intelligence/pi05_base (π0.5 base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | disponible como modelo base en HuggingFace |
+| pi05-button-order-uniform32-overfit3-epoch80 | no disponible | 32 fotogramas de historial (512 tokens) más vistas actuales | sin benchmarks publicados; solo comprobación de carga | no disponible | Hugging Face, 5,8 GB, 0 descargas |
+| physical-intelligence/pi05_base (π0.5 base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | disponible como modelo base en Hugging Face |
 | π0 (generación anterior de Physical Intelligence) | no disponible | no disponible | no disponible | no disponible | no verificado en las fuentes consultadas |
 | Políticas VLA abiertas de propósito general (por ejemplo OpenVLA u otros) | no disponible | no disponible | no disponible | no disponible | no verificado en las fuentes consultadas |
 
@@ -96,7 +96,7 @@ La búsqueda web realizada no devolvió resultados técnicos relevantes sobre es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-uniform32-overfit3-epoch80
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-uniform32-overfit3-epoch80
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Comando de descarga indicado por el autor: `hf download fm-dev/pi05-button-order-uniform32-overfit3-epoch80 --local-dir ./button-order-uniform32-epoch80`
 - Nota sobre la búsqueda web: las consultas realizadas no devolvieron papers, blogs, repositorios ni demos relacionados con este modelo. Los únicos resultados obtenidos fueron páginas de emisoras de radio en frecuencia modulada, sin relación con el contenido de esta ficha. Por tanto, no hay enlaces adicionales verificables que incluir.

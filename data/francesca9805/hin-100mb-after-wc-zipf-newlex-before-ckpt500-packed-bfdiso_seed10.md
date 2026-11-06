@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hin-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tune) de la familia GPT-2 desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de aproximadamente 124,8 millones de parametros, entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL de HuggingFace. Deriva directamente del modelo `francesca9805/ppt-wc-zipf-newlex-hin-before-100mb-packed-bfdiso_seed10`, lo que situa a este checkpoint como parte de una cadena de experimentos de ajuste sobre un modelo base comun.
+El modelo `hin-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tune) de la familia GPT-2 desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de aproximadamente 124,8 millones de parametros, entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL de Hugging Face. Deriva directamente del modelo `francesca9805/ppt-wc-zipf-newlex-hin-before-100mb-packed-bfdiso_seed10`, lo que situa a este checkpoint como parte de una cadena de experimentos de ajuste sobre un modelo base comun.
 
 Por el nombre y las etiquetas, el modelo parece formar parte de una linea de investigacion centrada en tokenizacion (los terminos `zipf` y `newlex` apuntan a vocabularios y distribuciones de frecuencia tipo Zipf) y en datos en hindi (el prefijo `hin`), con un corpus de aproximadamente 100 MB y entrenamiento desde el checkpoint 500. El registro en Weights & Biases apunta a la Universidad de Groningen (usuario `f-padovani-university-of-groningen`, proyecto `new-tokenizers`), lo que refuerza la hipotesis de un trabajo academico experimental sobre tokenizadores mas que un modelo listo para produccion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hin-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | ~124,8 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente usado |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Modelos comparables en hindi (p. ej. ai4bharat) | Variable | Variable | Variable | HuggingFace |
+| hin-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | ~124,8 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente usado |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Modelos comparables en hindi (p. ej. ai4bharat) | Variable | Variable | Variable | Hugging Face |
 
 La comparativa se ofrece como referencia general; no se dispone de datos de rendimiento del modelo para una comparacion cuantitativa con estas alternativas.
 
@@ -83,7 +83,7 @@ La comparativa se ofrece como referencia general; no se dispone de datos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-hin-before-100mb-packed-bfdiso_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/z99c9jfy
 - Repositorio de TRL: https://github.com/huggingface/trl

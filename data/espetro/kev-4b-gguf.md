@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La va
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| espetro/kev-4b-gguf | 4,2 mil millones | No disponible | Decisión tipada (GGUF empaquetado con cabeza y calibración) | Apache-2.0 | HuggingFace, GGUF |
-| taigrr/kev-4b-gguf | Mismo backbone (4,2 mil millones) | No disponible | Bundle de origen (gojev) con cabeza | Bundle 0BSD; pesos Apache-2.0 | HuggingFace, GGUF |
-| DreamBlooms/kev-4b-GGUF | Mismo backbone | No disponible | Clasificación de texto (variante comunitaria, declara inglés y 10 datasets) | Apache-2.0 | HuggingFace, GGUF |
-| Qwen/Qwen3.5-4B-Base | No disponible en la información | No disponible | Modelo de lenguaje base | No disponible en la información | HuggingFace |
+| espetro/kev-4b-gguf | 4,2 mil millones | No disponible | Decisión tipada (GGUF empaquetado con cabeza y calibración) | Apache-2.0 | Hugging Face, GGUF |
+| taigrr/kev-4b-gguf | Mismo backbone (4,2 mil millones) | No disponible | Bundle de origen (gojev) con cabeza | Bundle 0BSD; pesos Apache-2.0 | Hugging Face, GGUF |
+| DreamBlooms/kev-4b-GGUF | Mismo backbone | No disponible | Clasificación de texto (variante comunitaria, declara inglés y 10 datasets) | Apache-2.0 | Hugging Face, GGUF |
+| Qwen/Qwen3.5-4B-Base | No disponible en la información | No disponible | Modelo de lenguaje base | No disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes, por lo que la comparación se limita a procedencia, formato y licencia.
 
@@ -91,11 +91,11 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 - Sesgos: no disponible. No se documenta ningún análisis de sesgo.
 - Licencias múltiples: los pesos y la cabeza son Apache-2.0, el bundle de origen es 0BSD y el runtime del fork es MIT. Apache-2.0 permite uso comercial, pero conviene revisar la cadena completa de componentes si se redistribuye.
 - Madurez: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, sin discusiones ni validación comunitaria, por lo que no hay evidencia externa de robustez en producción.
-- Fechas del repositorio: creado y actualizado el 23 de septiembre de 2026 según los metadatos de HuggingFace.
+- Fechas del repositorio: creado y actualizado el 23 de septiembre de 2026 según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espetro/kev-4b-gguf
+- Modelo en Hugging Face: https://huggingface.co/espetro/kev-4b-gguf
 - Fork de llama.cpp con soporte Kev: https://github.com/espetro/llama.cpp
 - Demo en navegador (WASM): https://espetro.github.io/llama.cpp/
 - Repositorio del proyecto original: https://github.com/jaredpalmer/kev

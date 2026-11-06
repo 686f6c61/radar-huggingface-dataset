@@ -75,7 +75,7 @@ La comparativa de rendimiento no puede establecerse porque no existe ningun dato
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OpenElla-NovelWriter-Charol-GGUF (este modelo) | 8,03 B | no disponible | no disponible | GGUF en HuggingFace; 0 descargas, 1 like |
+| OpenElla-NovelWriter-Charol-GGUF (este modelo) | 8,03 B | no disponible | no disponible | GGUF en Hugging Face; 0 descargas, 1 like |
 | Llama 3.1 8B Instruct (referencia de la misma gama) | 8 B | 128.000 tokens | Licencia comunitaria de Meta | Muy extendido, multiples cuantizaciones |
 | Mistral 7B Instruct (referencia de la misma gama) | 7,2 B | 32.000 tokens | Apache 2.0 | Muy extendido, multiples cuantizaciones |
 | Qwen2.5 7B Instruct (referencia de la misma gama) | 7,6 B | 128.000 tokens | Apache 2.0 (segun variante) | Muy extendido, multiples cuantizaciones |

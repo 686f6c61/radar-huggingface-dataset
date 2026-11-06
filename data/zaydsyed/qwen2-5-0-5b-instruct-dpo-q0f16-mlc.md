@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Memoria: los pesos ocupan 1,0 GB en fp16; hay que sumar la cache KV y el overhead del runtime de WebGPU, por lo que conviene reservar del orden de 1,5-2 GB de memoria de GPU para contextos moderados (estimacion, no verificada por el autor).
 - Navegador: se requiere WebGPU con la caracteristica `shader-f16`; sin ese soporte el modelo no arranca. No se especifican versiones minimas ni lista de GPU compatibles.
 - GPU de consumo: si el navegador expone `shader-f16`, un modelo de 0,5 B en fp16 es apto para GPU integradas recientes y para GPU discretas de gama baja; no se publica una lista de modelos validados.
-- Despliegue en navegador: WebLLM (`@mlc-ai/web-llm`) con `CreateMLCEngine` y un `appConfig` que apunte al repo de HuggingFace como `model`.
+- Despliegue en navegador: WebLLM (`@mlc-ai/web-llm`) con `CreateMLCEngine` y un `appConfig` que apunte al repo de Hugging Face como `model`.
 - Despliegue nativo: MLC-LLM (motor C++/CUDA, Vulkan, Metal) puede servir los mismos artefactos; para vLLM, llama.cpp, Ollama o TGI seria necesario reconvertir desde el modelo base, ya que este repo no incluye safetensors ni GGUF.
 - Movil: MLC-LLM soporta compilacion para iOS y Android, pero no hay artefactos publicados en este repositorio ni pruebas documentadas.
 - Latencia y throughput: no disponibles.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de este build que permitan comparar calidad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zaydsyed/Qwen2.5-0.5B-Instruct-DPO-q0f16-MLC
+- Repositorio Hugging Face: https://huggingface.co/zaydsyed/Qwen2.5-0.5B-Instruct-DPO-q0f16-MLC
 - Modelo base (etapa DPO): https://huggingface.co/zaydsyed/Qwen2.5-0.5B-Instruct-DPO
 - Repositorio MLC-LLM: https://github.com/mlc-ai/mlc-llm
 - Repositorio WebLLM: https://github.com/mlc-ai/web-llm

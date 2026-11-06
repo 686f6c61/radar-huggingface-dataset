@@ -115,7 +115,7 @@ No se dispone de comparaciones con otras familias de modelos de generacion de im
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pottokao/Qwen-Image-2.1-DiT-NVFP4-ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/pottokao/Qwen-Image-2.1-DiT-NVFP4-ComfyUI
 - Modelo base oficial (bf16, recomendado para diffusers): https://huggingface.co/Qwen/Qwen-Image-2.1
 - Plantilla de workflow text-to-image oficial de Qwen-Image-2.1 para ComfyUI: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_t2i.json
 - Repositorio del codificador de texto con rechazo ablacionado: la URL aparece truncada en la model card (`https://huggingf...`) y no es recuperable de forma completa con la informacion disponible.

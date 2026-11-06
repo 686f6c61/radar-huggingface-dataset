@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Contrastive-run2 es un repositorio experimental publicado por el usuario Sjpatel0514 en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card lo describe como un esqueleto de código ("codebase") híbrido orientado a experimentos de aprendizaje contrastivo, con un checkpoint de inicialización válido únicamente para pruebas de humo. El autor declara explícitamente que no reivindica ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
+Contrastive-run2 es un repositorio experimental publicado por el usuario Sjpatel0514 en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card lo describe como un esqueleto de código ("codebase") híbrido orientado a experimentos de aprendizaje contrastivo, con un checkpoint de inicialización válido únicamente para pruebas de humo. El autor declara explícitamente que no reivindica ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
 
 El interés técnico del artefacto es su configuración de arquitectura: un diseño a escala "nano" con atención de consultas agrupadas (grouped query attention), fusión mediante atención cruzada (cross attention), activación gelu tanh y normalización groupnorm. Con 24.832 parámetros totales declarados en el archivo safetensors y un tamaño de repositorio de 0,0 GB, se sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable, lo que lo convierte en un banco de pruebas para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo.
 
@@ -71,8 +71,8 @@ En la información disponible no aparecen modelos comparables de escala nano con
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sjpatel0514/contrastive-run2 | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | HuggingFace |
-| IshaanIeki/contrastive-run2 | no disponible | no disponible | no disponible | no disponible | HuggingFace (repositorio con nombre identico) |
+| Sjpatel0514/contrastive-run2 | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | Hugging Face |
+| IshaanIeki/contrastive-run2 | no disponible | no disponible | no disponible | no disponible | Hugging Face (repositorio con nombre identico) |
 | CLM-8B (Contrastive Language Models, GitHub Contrastive-LM/CLM) | ~8.000 millones | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Repositorio GitHub con API |
 
 La comparación con CLM-8B es únicamente contextual: comparte la idea de entrenar con un objetivo de aprendizaje contrastivo que conecta estados y acciones, pero la diferencia de escala (24.832 parámetros frente a 8.000 millones) hace que no sean alternativas entre sí. No se dispone de datos suficientes para establecer una comparativa de rendimiento, contexto o licencia con ninguna alternativa.
@@ -88,12 +88,12 @@ La comparación con CLM-8B es únicamente contextual: comparte la idea de entren
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto que se distribuyen en este repositorio, tal como exige la propia model card.
 - Para producción: no apto. No hay API de carga estándar, ni cuantizaciones, ni versiones GGUF, ni métricas de latencia o throughput.
 - La fecha registrada de creación y actualización (2026-10-09) es llamativa y conviene verificarla en la página del repositorio antes de citarla.
-- Existe al menos otro repositorio con el nombre `contrastive-run2` en HuggingFace (IshaanIeki/contrastive-run2), lo que puede generar confusión al referenciarlo.
+- Existe al menos otro repositorio con el nombre `contrastive-run2` en Hugging Face (IshaanIeki/contrastive-run2), lo que puede generar confusión al referenciarlo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sjpatel0514/contrastive-run2
-- Perfil del autor en HuggingFace: https://huggingface.co/Sjpatel0514
+- Repositorio Hugging Face: https://huggingface.co/Sjpatel0514/contrastive-run2
+- Perfil del autor en Hugging Face: https://huggingface.co/Sjpatel0514
 - Repositorio con nombre idéntico localizado en la búsqueda: https://huggingface.co/IshaanIeki/contrastive-run2
 - Repositorio GitHub de Contrastive Language Models (CLM), referencia contextual sobre el objetivo contrastivo: https://github.com/Contrastive-LM/CLM
 - Leaderboard de benchmarks consultado en la búsqueda, sin datos de este modelo: https://benchlm.ai/

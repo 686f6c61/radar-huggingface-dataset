@@ -24,7 +24,7 @@ La relevancia practica es que comprime un modelo de codigo de 7B, que en BF16 oc
 | Formato de pesos | GGUF (el modelo base se distribuye en safetensors) |
 | Tamano del repositorio | 3,1 GB |
 | Metodo de cuantizacion | G-TAP v3 con amortiguamiento de cavidad de Onsager sobre W_down de SwiGLU, Hessiano de activaciones de 131.072 tokens |
-| Fecha de creacion del repositorio | 28/09/2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 28/09/2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

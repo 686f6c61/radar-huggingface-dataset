@@ -33,7 +33,7 @@ El entrenamiento se ejecutó en 2 GPUs H200 durante 28.7 horas. Al final del ent
 
 - Compresion de caché KV 4x: reduce el consumo de memoria de la caché KV en un factor de 4, permitiendo procesar secuencias más largas o aumentar el batch size con el mismo hardware.
 - Reconstruccion bit-idéntica: el script `load_dms.py` reconstruye el checkpoint entrenado exactamente, verificando que los 366 tensores coinciden con el original.
-- Compatibilidad con transformers: una vez reconstruido, el modelo se carga con `AutoModelForCausalLM` estándar de HuggingFace.
+- Compatibilidad con transformers: una vez reconstruido, el modelo se carga con `AutoModelForCausalLM` estándar de Hugging Face.
 - Hereda las capacidades de Qwen3-8B: generación de texto, razonamiento, código, matemáticas y capacidades multilingües del modelo base (no modificadas por los adaptadores).
 - Entrenamiento eficiente: solo se entrenan ~1 MB de parámetros, lo que requiere recursos mínimos comparado con un fine-tuning completo.
 - Reproducibilidad: la receta de entrenamiento está fijada en un commit específico de NVIDIA Model-Optimizer, y la configuración completa está disponible en `train_config.yaml`.
@@ -81,7 +81,7 @@ La comparativa directa con otros modelos de compresión de caché KV (como H2O, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/faridlazuarda/dms-qwen3-8b-cr4
+- Repositorio Hugging Face: https://huggingface.co/faridlazuarda/dms-qwen3-8b-cr4
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Paper DMS: https://arxiv.org/abs/2506.05345
 - NVIDIA Model-Optimizer (experimental/dms): https://github.com/NVIDIA/Model-Optimizer/tree/main/experimental/dms

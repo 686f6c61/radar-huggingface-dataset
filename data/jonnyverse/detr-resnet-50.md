@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos de los modelos originales. La conversi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/detr-resnet-50
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/detr-resnet-50
 - Modelo original: https://huggingface.co/facebook/detr-resnet-50
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Página de Qualcomm AI Hub: https://aihub.qualcomm.com/models/detr_resnet50

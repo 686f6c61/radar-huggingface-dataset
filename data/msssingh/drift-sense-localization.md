@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msssingh/drift-sense-localization
+- Modelo en Hugging Face: https://huggingface.co/msssingh/drift-sense-localization
 - Repositorio de entrenamiento (mencionado en la model card): https://github.com/bardrop/drift-sense
 - Repositorio alternativo de Drift-Sense: https://github.com/deepekshabasin-debug/Drift-Sense---AI-model-for-Semicon-Industries
 - Otro repositorio de Drift-Sense: https://github.com/saisingh7781/Drift-Sense/blob/main/README.md

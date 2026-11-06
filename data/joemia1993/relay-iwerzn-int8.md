@@ -2,7 +2,7 @@
 
 ## Resumen
 
-relay-iwerzn-int8 es un checkpoint de Qwen2ForCausalLM publicado por el usuario joemia1993 en HuggingFace. Se trata de un modelo de generación de texto de arquitectura transformer (familia Qwen2) con una configuración deliberadamente reducida: una sola capa, `hidden_size=1024`, 16 cabezas de atención y 8 cabezas KV. Con 44,6 millones de parámetros totales, está muy lejos de los modelos Qwen2 de referencia y parece ser un experimento de entrenamiento o una prueba de concepto más que un modelo destinado a producción.
+relay-iwerzn-int8 es un checkpoint de Qwen2ForCausalLM publicado por el usuario joemia1993 en Hugging Face. Se trata de un modelo de generación de texto de arquitectura transformer (familia Qwen2) con una configuración deliberadamente reducida: una sola capa, `hidden_size=1024`, 16 cabezas de atención y 8 cabezas KV. Con 44,6 millones de parámetros totales, está muy lejos de los modelos Qwen2 de referencia y parece ser un experimento de entrenamiento o una prueba de concepto más que un modelo destinado a producción.
 
 El checkpoint está cuantizado a int8 mediante bitsandbytes (pesos en formato I8 con escalas de fila en F32) y debe cargarse con `load_in_8bit=True`. La model card del autor indica explícitamente que se trata de un "punto de interrupción de entrenamiento, sin evaluación", lo que significa que no hay garantías de calidad, coherencia ni utilidad práctica.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| relay-iwerzn-int8 | 44,6 M | no disponible | no disponible | HuggingFace (joemia1993) |
-| Qwen2-0.5B | 494 M | 32.768 tokens (según versión) | Apache 2.0 | HuggingFace (Qwen) |
-| Qwen2-1.5B | 1.540 M | 32.768 tokens (según versión) | Apache 2.0 | HuggingFace (Qwen) |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | HuggingFace (TinyLlama) |
+| relay-iwerzn-int8 | 44,6 M | no disponible | no disponible | Hugging Face (joemia1993) |
+| Qwen2-0.5B | 494 M | 32.768 tokens (según versión) | Apache 2.0 | Hugging Face (Qwen) |
+| Qwen2-1.5B | 1.540 M | 32.768 tokens (según versión) | Apache 2.0 | Hugging Face (Qwen) |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | Hugging Face (TinyLlama) |
 
 La comparación es desigual: relay-iwerzn-int8 tiene dos órdenes de magnitud menos parámetros que los modelos Qwen2 oficiales y carece de evaluación y licencia documentada. Los modelos Qwen2 oficiales ofrecen contexto largo, licencia Apache 2.0 y benchmarks publicados, por lo que son la opción natural para cualquier uso real.
 
@@ -77,9 +77,9 @@ La comparación es desigual: relay-iwerzn-int8 tiene dos órdenes de magnitud me
 - Contexto no documentado: se desconoce la longitud máxima de secuencia soportada.
 - Idiomas limitados a inglés y chino según la model card; no hay soporte declarado de castellano.
 - Requiere bitsandbytes y `load_in_8bit=True`; la carga en otros formatos (GGUF, fp16) no está documentada.
-- Repo de 0.0 GB según HuggingFace: conviene verificar la integridad de los pesos antes de usarlos.
+- Repo de 0.0 GB según Hugging Face: conviene verificar la integridad de los pesos antes de usarlos.
 
 ## Enlaces
 
-- [HuggingFace: joemia1993/relay-iwerzn-int8](https://huggingface.co/joemia1993/relay-iwerzn-int8)
+- [Hugging Face: joemia1993/relay-iwerzn-int8](https://huggingface.co/joemia1993/relay-iwerzn-int8)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

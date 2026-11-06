@@ -48,7 +48,7 @@ El repositorio tampoco documenta ningún proceso de entrenamiento: no hay comand
 - Auditoría de sesgos y factores de confusión: al listar confounders probables, el material sirve de checklist para revisar si un pipeline de recuperación está midiendo lo que cree medir.
 - Checklist de reproducibilidad: las secciones sobre comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas pueden adaptarse como plantilla de revisión interna antes de publicar resultados.
 - Documentación de estado del arte para un TFG, TFM o tesis: el repositorio se autodefine como nota de tesis, de modo que su uso natural es como capítulo de antecedentes, nunca como componente de un sistema en producción.
-- Verificación de procedencia de artefactos: el repositorio ilustra un caso en el que un identificador de HuggingFace con etiqueta `transformer` no corresponde a un modelo, útil para formar a equipos en la revisión de metadatos antes de integrar dependencias.
+- Verificación de procedencia de artefactos: el repositorio ilustra un caso en el que un identificador de Hugging Face con etiqueta `transformer` no corresponde a un modelo, útil para formar a equipos en la revisión de metadatos antes de integrar dependencias.
 
 ## Benchmarks y rendimiento
 
@@ -95,7 +95,7 @@ No disponible. No existen datos de rendimiento, tamaño efectivo ni contexto que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mendesbruno/thesis-text-image-retrieval
+- Hugging Face: https://huggingface.co/mendesbruno/thesis-text-image-retrieval
 - Ficheros declarados: `notes.md` y `README.md` dentro del propio repositorio
 - Paper, blog, repositorio de código o demo: no disponible
 - Fuentes adicionales localizadas en la búsqueda web: no disponible (los resultados obtenidos no guardan relación con el repositorio)

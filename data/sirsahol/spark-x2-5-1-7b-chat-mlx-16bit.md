@@ -29,7 +29,7 @@ La relevancia actual del repositorio es limitada pero concreta: cubre el nicho d
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna mas alla del identificador `Spark2_5ForCausalLM`, registrado con `custom_code` en los tags de HuggingFace. Esto implica que la carga del modelo requiere `trust_remote_code=True` y que la implementacion de la atencion, la normalizacion y el tokenizador dependen de codigo publicado por el autor original (XHToken), no de una clase estandar de Transformers. Tampoco se documentan innovaciones como atencion lineal, decodificacion especulativa o mecanismos hibridos SSM.
+La model card no describe la arquitectura interna mas alla del identificador `Spark2_5ForCausalLM`, registrado con `custom_code` en los tags de Hugging Face. Esto implica que la carga del modelo requiere `trust_remote_code=True` y que la implementacion de la atencion, la normalizacion y el tokenizador dependen de codigo publicado por el autor original (XHToken), no de una clase estandar de Transformers. Tampoco se documentan innovaciones como atencion lineal, decodificacion especulativa o mecanismos hibridos SSM.
 
 Respecto al entrenamiento, no hay informacion disponible: se desconocen el numero de tokens, la composicion del dataset, la existencia de fases de ajuste por instrucciones (SFT), RLHF o DPO, y el proceso de alineacion conversacional. Lo unico verificable es el proceso de conversion, reproducible con `python3 -m mlx_lm.convert --hf-path XHToken/Spark-X2.5-1.7B --mlx-path output/Spark-X2.5-1.7B-mlx-16bit`, que tardo 14,51 segundos y genero pesos MLX sin cuantizar. La model card advierte de que se trata de una conversion "weight-only", es decir, que no se ha reentrenado ni calibrado ningun componente.
 
@@ -106,7 +106,7 @@ Diferencias clave: frente a las alternativas, este repositorio ofrece una ventan
 
 ## Enlaces
 
-- Repositorio HuggingFace (16 bits): https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-16bit
+- Repositorio Hugging Face (16 bits): https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-16bit
 - Variante de 4 bits: https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-4bit
 - Variante de 8 bits: https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-8bit
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B

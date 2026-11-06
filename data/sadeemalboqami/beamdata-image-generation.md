@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beamdata Image Generation es un repositorio de HuggingFace publicado por el usuario sadeemalboqami que no contiene pesos de un modelo propio, sino la documentacion del trabajo de despliegue y evaluacion de generacion de imagenes realizado para Beamdata en el marco de un proyecto capstone (AI Data Center Capstone Project, Team 6). El repositorio actua como registro tecnico de dos modelos de generacion de imagenes servidos en produccion experimental: FLUX.2 Klein 4B en su variante cuantizada Q4_K_M y Z-Image-Turbo en su variante W4.
+Beamdata Image Generation es un repositorio de Hugging Face publicado por el usuario sadeemalboqami que no contiene pesos de un modelo propio, sino la documentacion del trabajo de despliegue y evaluacion de generacion de imagenes realizado para Beamdata en el marco de un proyecto capstone (AI Data Center Capstone Project, Team 6). El repositorio actua como registro tecnico de dos modelos de generacion de imagenes servidos en produccion experimental: FLUX.2 Klein 4B en su variante cuantizada Q4_K_M y Z-Image-Turbo en su variante W4.
 
 Ambos modelos se sirven mediante vLLM-Omni y se empaquetan como servicios de inferencia contenerizados con Docker y orquestados sobre Kubernetes (k3s), expuestos a traves de APIs HTTP autenticadas y ejecutados sobre una GPU NVIDIA RTX A6000. El repositorio incluye un benchmark fijo de 25 prompts a resolucion 512x512 con resultados de tiempo medio de generacion, VRAM maxima y fiabilidad, lo que lo convierte en una referencia util para equipos que necesiten dimensionar despliegues de generacion de imagenes cuantizados.
 
@@ -99,7 +99,7 @@ No se dispone de comparaciones con otros modelos de generacion de imagenes de ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sadeemalboqami/beamdata-image-generation
+- Repositorio en Hugging Face: https://huggingface.co/sadeemalboqami/beamdata-image-generation
 - Modelo base FLUX.2 Klein 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Modelo base Z-Image-Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio del proyecto en GitHub: https://github.com/SadeemAlBoqami/beamdata-go-to-market-image-generation

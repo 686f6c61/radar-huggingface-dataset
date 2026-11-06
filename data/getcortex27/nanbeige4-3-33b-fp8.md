@@ -85,8 +85,8 @@ En BF16 sobre la misma tarjeta: 22 tok/s en un solo stream y 785 tok/s agregados
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-FP8 (GetCortex27) | 33,1B denso | 512K nativo (32K en pruebas) | FP8 W8A8 dinámica | Apache 2.0 | HuggingFace, 22 descargas |
-| Nanbeige4.3-33B (base) | 33,1B denso | 512K nativo | BF16 (66 GB) | Apache 2.0 | HuggingFace |
+| Nanbeige4.3-33B-FP8 (GetCortex27) | 33,1B denso | 512K nativo (32K en pruebas) | FP8 W8A8 dinámica | Apache 2.0 | Hugging Face, 22 descargas |
+| Nanbeige4.3-33B (base) | 33,1B denso | 512K nativo | BF16 (66 GB) | Apache 2.0 | Hugging Face |
 | Alternativas de 33B con contexto largo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de benchmarks del modelo base ni de terceros que permitan una comparación de rendimiento con alternativas de la misma categoría.
@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de datos de benchmarks del modelo
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/GetCortex27/Nanbeige4.3-33B-FP8
+- Hugging Face del checkpoint: https://huggingface.co/GetCortex27/Nanbeige4.3-33B-FP8
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Repositorio del autor: https://github.com/GetCortex27
 - llm-compressor: https://github.com/vllm-project/llm-compressor

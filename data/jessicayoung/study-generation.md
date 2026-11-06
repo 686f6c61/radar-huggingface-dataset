@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (un BLIP
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JessicaYoung/study-generation
+- Hugging Face: https://huggingface.co/JessicaYoung/study-generation
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la información disponible.

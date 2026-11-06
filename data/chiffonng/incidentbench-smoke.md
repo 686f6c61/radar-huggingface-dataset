@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-smoke | LoRA r=16 sobre 7B | no disponible | Clasificador de incidentes (adaptador de investigación) | other | HuggingFace, 14 descargas |
-| Qwen2.5-7B-Instruct (base) | 7B | no disponible en esta ficha | Modelo instruct generalista | no disponible en esta ficha | HuggingFace |
+| incidentbench-smoke | LoRA r=16 sobre 7B | no disponible | Clasificador de incidentes (adaptador de investigación) | other | Hugging Face, 14 descargas |
+| Qwen2.5-7B-Instruct (base) | 7B | no disponible en esta ficha | Modelo instruct generalista | no disponible en esta ficha | Hugging Face |
 | Otros brazos de IncidentBench | no disponible | no disponible | Variantes de ablación del mismo proyecto | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: chiffonng/incidentbench-smoke](https://huggingface.co/chiffonng/incidentbench-smoke)
+- [Hugging Face: chiffonng/incidentbench-smoke](https://huggingface.co/chiffonng/incidentbench-smoke)
 - [Modelo base: Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios o demos del proyecto IncidentBench.

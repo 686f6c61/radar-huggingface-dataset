@@ -47,7 +47,7 @@ El dataset de entrenamiento es una versión curada de 6.414 muestras de GLM-5.2-
 - Sumarización automática de documentos: adecuado para pipelines de procesamiento de texto que requieran condensar informes, actas o artículos en portugués o inglés, con un 100% de acierto en la categoría de sumarización del benchmark oficial.
 - Generación de contenido creativo y redacción: puede producir borradores de textos creativos (relatos, ideas, esquemas) y redacciones formales, con un 100% de acierto en las categorías de creatividad y redacción del benchmark.
 - Entorno de razonamiento en dispositivos con recursos limitados: su tamaño reducido y su arquitectura recurrente permiten ejecutar razonamiento multi-paso en CPU o GPU de gama baja, donde modelos de mayor tamaño no caben.
-- Integración en pipelines de generación de texto con tool calling: aunque no se documenta soporte explícito de tool calling, el modelo es compatible con endpoints de HuggingFace y puede integrarse en flujos de generación de texto con plantillas de chat estándar.
+- Integración en pipelines de generación de texto con tool calling: aunque no se documenta soporte explícito de tool calling, el modelo es compatible con endpoints de Hugging Face y puede integrarse en flujos de generación de texto con plantillas de chat estándar.
 - Base para destilación o fine-tuning: su licencia Apache 2.0 y su tamaño compacto lo convierten en un candidato para experimentos de destilación de conocimiento o como modelo docente para estudiantes de arquitecturas recurrentes.
 
 ## Benchmarks y rendimiento

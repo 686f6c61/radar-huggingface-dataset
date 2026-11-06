@@ -25,7 +25,7 @@ La ficha se elabora con la informacion disponible, que es muy limitada: no hay m
 
 No se dispone de informacion sobre la arquitectura interna del modelo original. Por el nombre y por el pipeline implicito (vision-lenguaje aplicado a resonancia magnetica), se trata presumiblemente de un transformer multimodal con un codificador de imagen y un decodificador de lenguaje, pero no hay datos confirmados sobre el tipo de atencion, la composicion del dataset de entrenamiento, el numero de tokens vistos, ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
-La unica informacion tecnica concreta proviene de los metadatos de la cuantizacion: se ha generado con quantize_version 2, convert_type hf y output_tensor_quantised 1, lo que indica una conversion desde pesos HuggingFace a GGUF con cuantizacion de tensores de salida. No hay innovaciones tecnicas documentadas (decodificacion especulativa, atencion lineal, MoE, etc.).
+La unica informacion tecnica concreta proviene de los metadatos de la cuantizacion: se ha generado con quantize_version 2, convert_type hf y output_tensor_quantised 1, lo que indica una conversion desde pesos Hugging Face a GGUF con cuantizacion de tensores de salida. No hay innovaciones tecnicas documentadas (decodificacion especulativa, atencion lineal, MoE, etc.).
 
 ## Capacidades
 

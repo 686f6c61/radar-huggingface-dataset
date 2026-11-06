@@ -83,11 +83,11 @@ La comparacion mas significativa es con la propia familia de modelos, ya que com
 
 | Modelo | Parametros | Contexto | MCP-Atlas | IFBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Feihua-n2-1.7B | 1,7B | No disponible | 3,5 | 12,5 | Apache 2.0 | GGUF y safetensors en HuggingFace |
-| XHToken/Spark-X2.5-1.7B (base) | 1,7B | No disponible | 23,4 | 66,3 | No disponible | Modelo base en HuggingFace |
-| Feihua-n1-1.7B | 1,7B | No disponible | 0,0 | 10,0 | No disponible | HuggingFace |
-| Feihua-n1-0.8B | 0,8B | No disponible | 8,5 | 5,0 | No disponible | HuggingFace |
-| Feihua-n1-64M | 64M | No disponible | 0,0 | 5,0 | No disponible | HuggingFace |
+| Feihua-n2-1.7B | 1,7B | No disponible | 3,5 | 12,5 | Apache 2.0 | GGUF y safetensors en Hugging Face |
+| XHToken/Spark-X2.5-1.7B (base) | 1,7B | No disponible | 23,4 | 66,3 | No disponible | Modelo base en Hugging Face |
+| Feihua-n1-1.7B | 1,7B | No disponible | 0,0 | 10,0 | No disponible | Hugging Face |
+| Feihua-n1-0.8B | 0,8B | No disponible | 8,5 | 5,0 | No disponible | Hugging Face |
+| Feihua-n1-64M | 64M | No disponible | 0,0 | 5,0 | No disponible | Hugging Face |
 
 Frente a asistentes funcionales de tamano similar (por ejemplo, la familia Qwen2.5/Qwen3 de 1,5B a 1,7B), no hay datos de benchmarks comparables publicados en la informacion disponible, y la propuesta de valor es opuesta: aquellos priorizan respuestas utiles, mientras que este modelo las elimina de forma deliberada.
 
@@ -107,7 +107,7 @@ Frente a asistentes funcionales de tamano similar (por ejemplo, la familia Qwen2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZZRI/Feihua-n2-1.7B
+- Modelo en Hugging Face: https://huggingface.co/ZZRI/Feihua-n2-1.7B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Feihua-n1-1.7B: https://huggingface.co/ZZRI/Feihua-n1-1.7B
 - Feihua-n1-0.8B: https://huggingface.co/ZZRI/Feihua-n1-0.8B

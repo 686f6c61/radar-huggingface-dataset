@@ -82,8 +82,8 @@ No se han encontrado resultados de benchmarks adicionales en la búsqueda web re
 
 | Modelo | Tipo | Parametros | Contexto / entrada | ADD(-S)@0.1d real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dlrv-ppointnet-exp6 | PointNet++ + cabeza de pose | 0,86 M | 1024 puntos | 33,33 % | no disponible | HuggingFace (jan024) |
-| dlrv-pointnet-exp5 | PointNet++ + cabeza de pose | no disponible (mismo backbone según la model card) | 1024 puntos | 36,23 % | no disponible | HuggingFace (jan024) |
+| dlrv-ppointnet-exp6 | PointNet++ + cabeza de pose | 0,86 M | 1024 puntos | 33,33 % | no disponible | Hugging Face (jan024) |
+| dlrv-pointnet-exp5 | PointNet++ + cabeza de pose | no disponible (mismo backbone según la model card) | 1024 puntos | 36,23 % | no disponible | Hugging Face (jan024) |
 | Otros metodos del benchmark BOP LineMOD (PoseCNN, PVN3D, CosyPose y similares) | CNN / punto-voxel / multi-vista | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación con datos verificables es contra exp5, del mismo autor y mismo backbone, lo que aísla el efecto de la función de pérdida. No se dispone de cifras comparables de otros estimadores 6DoF en la información proporcionada, por lo que no se incluyen valores estimados.
@@ -103,7 +103,7 @@ La única comparación con datos verificables es contra exp5, del mismo autor y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jan024/dlrv-ppointnet-exp6
+- Modelo en Hugging Face: https://huggingface.co/jan024/dlrv-ppointnet-exp6
 - Checkpoint alternativo exp5, recomendado por el autor para imágenes reales: https://huggingface.co/jan024/dlrv-pointnet-exp5
 - Dataset LineMOD en formato BOP: https://bop.felk.cvut.cz/datasets/
 - Articulo de la representacion continua de rotacion en 6D citada en la model card (Zhou et al., "On the Continuity of Rotation Representations in Neural Networks"): https://arxiv.org/abs/1812.07035

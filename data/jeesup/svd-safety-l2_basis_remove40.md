@@ -71,9 +71,9 @@ No se han publicado en la informacion disponible valores de MMLU, HumanEval, GSM
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks de seguridad en la informacion disponible |
 |---|---|---|---|---|---|
-| svd-safety-l2_basis_remove40 | 6.738.415.616 segun safetensors; fraccion retenida 0,5999 del denso | 4.096 tokens (heredado) | Llama 2 Community | HuggingFace, pesos safetensors | AdvBench ASR 0,3462; StrongREJECT ASR 0,1597; over-refusal 0,1641; PPL WikiText-2 10,7856 |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 tokens | Llama 2 Community | HuggingFace, pesos safetensors | no disponibles en la informacion proporcionada |
-| Mistral-7B-Instruct-v0.3 (alternativa de tamano similar) | 7.240 millones aproximadamente | 32.768 tokens | Apache 2.0 | HuggingFace, pesos safetensors | no disponibles en la informacion proporcionada |
+| svd-safety-l2_basis_remove40 | 6.738.415.616 segun safetensors; fraccion retenida 0,5999 del denso | 4.096 tokens (heredado) | Llama 2 Community | Hugging Face, pesos safetensors | AdvBench ASR 0,3462; StrongREJECT ASR 0,1597; over-refusal 0,1641; PPL WikiText-2 10,7856 |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 tokens | Llama 2 Community | Hugging Face, pesos safetensors | no disponibles en la informacion proporcionada |
+| Mistral-7B-Instruct-v0.3 (alternativa de tamano similar) | 7.240 millones aproximadamente | 32.768 tokens | Apache 2.0 | Hugging Face, pesos safetensors | no disponibles en la informacion proporcionada |
 
 No se han identificado en la informacion disponible otros checkpoints comprimidos por SVD directamente comparables, ni resultados publicados que permitan situar esta celda frente a la malla completa del estudio.
 
@@ -91,6 +91,6 @@ No se han identificado en la informacion disponible otros checkpoints comprimido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - La busqueda web realizada no devolvio resultados relevantes para este modelo: los enlaces recuperados corresponden a foros y comunidades sin relacion con Basis Sharing, SVD, Llama-2 ni seguridad en modelos de lenguaje. No se dispone por tanto de enlaces a paper, blog, repositorio de codigo ni demo adicionales.

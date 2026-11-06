@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Search-LLM DCLM-Edu 3.3B SFT es un modelo de lenguaje de texto a texto entrenado por el usuario de HuggingFace Kausp11, publicado en octubre de 2026. Se trata de un modelo de unos 5.500 millones de parámetros (5.539.729.626 según los metadatos de safetensors) derivado de la línea "nanochat", preentrenado con una metodología de "search-enabled pretraining": durante el entrenamiento el modelo aprende a emitir consultas web delimitadas por tokens especiales (`<WEB_QUERY>`, `</WEB_QUERY>`, `<WEB_RESPONSE>`, `</WEB_RESPONSE>`) y a incorporar las respuestas recuperadas en su contexto.
+Search-LLM DCLM-Edu 3.3B SFT es un modelo de lenguaje de texto a texto entrenado por el usuario de Hugging Face Kausp11, publicado en octubre de 2026. Se trata de un modelo de unos 5.500 millones de parámetros (5.539.729.626 según los metadatos de safetensors) derivado de la línea "nanochat", preentrenado con una metodología de "search-enabled pretraining": durante el entrenamiento el modelo aprende a emitir consultas web delimitadas por tokens especiales (`<WEB_QUERY>`, `</WEB_QUERY>`, `<WEB_RESPONSE>`, `</WEB_RESPONSE>`) y a incorporar las respuestas recuperadas en su contexto.
 
 La versión publicada corresponde a una fase de supervised fine-tuning (SFT, versión v4c-ann-sent, 1 época) sobre el checkpoint de preentrenamiento DCLM-Edu. El ajuste combina datos de chat y habilidades de SmolTalk, tool calling de SmolTalk2 y conversaciones de SmolTalk anotadas con bloques de búsqueda generados por el propio pipeline de anotación del preentrenamiento. Su relevancia está en la exploración de modelos pequeños capaces de intercalar búsquedas web durante la generación, una técnica cada vez más habitual para dotar de conocimiento actualizado a modelos compactos.
 
@@ -77,5 +77,5 @@ Nota: la comparación es orientativa; no hay benchmarks publicados del modelo de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_v1_d32_64Bdoc
+- Modelo en Hugging Face: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_v1_d32_64Bdoc
 - Paper, repositorio de código o demo: no disponible

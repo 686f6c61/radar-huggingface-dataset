@@ -104,11 +104,11 @@ La comparacion directa con cabeceras tipo EAGLE-3 o Medusa no puede completarse 
 - El subconjunto de traduccion de la evaluacion es el mas pequeno (1.225 pasos) y su cifra es poco fiable.
 - Requiere custom_code y `trust_remote_code`, lo que implica ejecutar codigo del autor del repositorio; conviene revisarlo antes de usarlo en produccion.
 - Licencia Apache 2.0 sin restricciones adicionales para uso comercial, heredada del verificador; el codigo de entrenamiento de speculators tambien es Apache 2.0.
-- Adopcion muy baja: 31 descargas y 1 like en el momento de la consulta, y sin pipeline declarado en HuggingFace.
+- Adopcion muy baja: 31 descargas y 1 like en el momento de la consulta, y sin pipeline declarado en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rasyosef/Qwen3.5-2B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/rasyosef/Qwen3.5-2B-DFlash2
 - Verificador: https://huggingface.co/Qwen/Qwen3.5-2B
 - Libreria de entrenamiento speculators: https://github.com/vllm-project/speculators
 - Codigo de entrenamiento del autor: https://github.com/rasyosef/train-dspark-draft-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio migar-cia89/neural-architecture-search no es un modelo de lenguaje entrenado ni un checkpoint listo para inferencia. Se trata de un espacio de HuggingFace que aloja notas de lectura y un esbozo de experimento sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). La propia model card lo declara como material exploratorio: no reclama mejoras en benchmarks, ni ablaciones completadas, ni codigo publicado, ni pesos entrenados. Los unicos artefactos que menciona son `notes.md` y `README.md`.
+El repositorio migar-cia89/neural-architecture-search no es un modelo de lenguaje entrenado ni un checkpoint listo para inferencia. Se trata de un espacio de Hugging Face que aloja notas de lectura y un esbozo de experimento sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). La propia model card lo declara como material exploratorio: no reclama mejoras en benchmarks, ni ablaciones completadas, ni codigo publicado, ni pesos entrenados. Los unicos artefactos que menciona son `notes.md` y `README.md`.
 
 Las etiquetas del repositorio incluyen `transformer` y `safetensors`, y el recuento de parametros del fichero safetensors es de 33.088, pero el repositorio ocupa 0,0 GB y no se documenta ninguna arquitectura, dataset de entrenamiento, tokenizador, configuracion ni procedimiento de inferencia. La etiqueta `neural-architecture-search` describe el tema de las notas, no la naturaleza de un modelo desplegable.
 
@@ -90,7 +90,7 @@ No disponible. El artefacto no es un modelo entrenado, de modo que no existe una
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/migar-cia89/neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/migar-cia89/neural-architecture-search
 - Nota principal (ruta relativa dentro del repositorio): `notes.md`
 - Documentacion del repositorio (ruta relativa dentro del repositorio): `README.md`
 - Papers, blogs, repositorios de codigo o demos adicionales: no se han encontrado en la informacion disponible.

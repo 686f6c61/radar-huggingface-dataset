@@ -134,7 +134,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hipfire-models/qwen3.8-flash-next
+- Repositorio Hugging Face: https://huggingface.co/hipfire-models/qwen3.8-flash-next
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Verificacion de KLD (solo MQ4): https://huggingface.co/hipfire-models/qwen3.8-flash-next/blob/main/kld/VERIFY.md
 - Licencia: https://huggingface.co/hipfire-models/qwen3.8-flash-next/blob/main/LICENSE

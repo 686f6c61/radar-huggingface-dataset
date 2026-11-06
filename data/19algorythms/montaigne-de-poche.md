@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Le Montaigne de Poche (v0.2) es un ajuste fino QLoRA de SmolLM3-3B que da lugar a dos personajes literarios experimentales: L'Essayiste y Le Conversationnel. Lo desarrolla el usuario 19algorythms y se distribuye en HuggingFace bajo licencia Apache-2.0. El modelo responde siempre en primera persona como Michel de Montaigne, con frances de finales del siglo XVI, a partir del texto integro de los tres libros de los *Essais* (obra en dominio publico). No es una edicion cientifica ni una fuente historica: es un ejercicio de caracterizacion literaria.
+Le Montaigne de Poche (v0.2) es un ajuste fino QLoRA de SmolLM3-3B que da lugar a dos personajes literarios experimentales: L'Essayiste y Le Conversationnel. Lo desarrolla el usuario 19algorythms y se distribuye en Hugging Face bajo licencia Apache-2.0. El modelo responde siempre en primera persona como Michel de Montaigne, con frances de finales del siglo XVI, a partir del texto integro de los tres libros de los *Essais* (obra en dominio publico). No es una edicion cientifica ni una fuente historica: es un ejercicio de caracterizacion literaria.
 
 El problema que aborda es concreto dentro de la investigacion en ajuste fino: como inducir una persona estilistica coherente y un registro historico determinado en un modelo pequeno (3,07 mil millones de parametros) mediante QLoRA sobre un corpus monografico, y como empaquetar el resultado en GGUF para consumo local. Es relevante ahora porque ejemplifica el flujo completo de un modelo de personaje reproducible con recursos de consumidor: QLoRA con r=16 y alpha=32, fusion en fp16 y cuantizacion con llama.cpp.
 
@@ -19,7 +19,7 @@ Los dos ficheros publicados comparten base y entrenamiento, y se diferencian en 
 | Tipos de cuantizacion | GGUF Q4_K_M (~1,9 GB) y Q6_K (~2,6 GB); previamente fusion en fp16 |
 | Idiomas soportados | frances (fr) |
 | Licencia | Apache-2.0 (pesos); MIT (herramientas y documentacion); corpus en dominio publico |
-| Formato de pesos | GGUF (la informacion de HuggingFace reporta el recuento de parametros sobre safetensors, pero la model card solo documenta ficheros GGUF) |
+| Formato de pesos | GGUF (la informacion de Hugging Face reporta el recuento de parametros sobre safetensors, pero la model card solo documenta ficheros GGUF) |
 
 Datos adicionales: pipeline no disponible, creado el 2026-09-16, actualizado el 2026-09-16, tamano del repositorio 4,4 GB, etiquetas `gguf`, `montaigne`, `persona`, `qlora`, `french-literature`, `character-model`, `conversational`, `endpoints_compatible`.
 
@@ -93,8 +93,8 @@ La diferencia funcional relevante no es de rendimiento bruto sino de especializa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/19algorythms/Montaigne-de-Poche
+- Modelo en Hugging Face: https://huggingface.co/19algorythms/Montaigne-de-Poche
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Referencia de procedencia citada en la model card: Couet, A., & Kimi / Moonshot AI (2026). *Construire un Montaigne de poche : fine-tuning de SmolLM3-3B* [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.22792846
-- Ficheros de configuracion y prompts A y A+ citados por el autor: `LICENCE_ET_ATTRIBUTION_V2.txt` dentro del repositorio de HuggingFace.
+- Ficheros de configuracion y prompts A y A+ citados por el autor: `LICENCE_ET_ATTRIBUTION_V2.txt` dentro del repositorio de Hugging Face.
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los enlaces recuperados corresponden a proyectos no relacionados con el modelo.

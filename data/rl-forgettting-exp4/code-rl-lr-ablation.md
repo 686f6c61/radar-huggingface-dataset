@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`code-rl-lr-ablation` es un artefacto de investigación publicado por el usuario `RL-Forgettting-Exp4` en HuggingFace, no un modelo listo para producción. Contiene los checkpoints de un estudio de ablación sobre aprendizaje por refuerzo (GRPO) aplicado a generación de código, en el que se entrena `Qwen/Qwen2.5-3B` sobre 320 problemas de MBPP con tres tasas de aprendizaje del actor por debajo del valor por defecto de 1e-6 (6e-6, 3e-6 y 6e-7), cada una con y sin búfer de replay de tipo SFT. El objetivo declarado es determinar en qué punto de la escala de learning rate el entrenamiento deja de ser estable y si el replay desplaza ese umbral.
+`code-rl-lr-ablation` es un artefacto de investigación publicado por el usuario `RL-Forgettting-Exp4` en Hugging Face, no un modelo listo para producción. Contiene los checkpoints de un estudio de ablación sobre aprendizaje por refuerzo (GRPO) aplicado a generación de código, en el que se entrena `Qwen/Qwen2.5-3B` sobre 320 problemas de MBPP con tres tasas de aprendizaje del actor por debajo del valor por defecto de 1e-6 (6e-6, 3e-6 y 6e-7), cada una con y sin búfer de replay de tipo SFT. El objetivo declarado es determinar en qué punto de la escala de learning rate el entrenamiento deja de ser estable y si el replay desplaza ese umbral.
 
-El repositorio tiene 251,4 GB e incluye, por cada celda de la ablación, directorios completos de modelo HuggingFace en formato safetensors con checkpoints cada 30 pasos (hasta el paso 800), además de logs del entrenador y rollouts muestreados. La model card documenta explícitamente dos carpetas: `qwen3b_mbpp_hardcd_lam0p1_lr6e7` (con replay, lambda=0.1, lr=6e-7, checkpoints de 30 a 800) y `qwen3b_mbpp_nobuf_lr6e7` (sin búfer, lr=6e-7, checkpoints de 330 a 800). Los runs de referencia con lr=1e-6 viven en repositorios separados.
+El repositorio tiene 251,4 GB e incluye, por cada celda de la ablación, directorios completos de modelo Hugging Face en formato safetensors con checkpoints cada 30 pasos (hasta el paso 800), además de logs del entrenador y rollouts muestreados. La model card documenta explícitamente dos carpetas: `qwen3b_mbpp_hardcd_lam0p1_lr6e7` (con replay, lambda=0.1, lr=6e-7, checkpoints de 30 a 800) y `qwen3b_mbpp_nobuf_lr6e7` (sin búfer, lr=6e-7, checkpoints de 330 a 800). Los runs de referencia con lr=1e-6 viven en repositorios separados.
 
 Su relevancia es metodológica: proporciona una traza completa de checkpoints para estudiar olvido catastrófico y estabilidad de GRPO en código, con evaluación sobre MBPP+ (378 problemas, ~108 tests por problema) en lugar de los 3 asserts originales de MBPP. No es un modelo para desplegar en aplicaciones, sino material reproducible para investigadores que analicen dinámica de entrenamiento.
 
@@ -19,7 +19,7 @@ Su relevancia es metodológica: proporciona una traza completa de checkpoints pa
 | Tipos de cuantizacion | no disponible; los pesos se publican en safetensors sin cuantizar |
 | Idiomas soportados | no disponible (la model card no declara idiomas; el entrenamiento es en inglés por el dataset MBPP) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (directorios HuggingFace completos por checkpoint) |
+| Formato de pesos | safetensors (directorios Hugging Face completos por checkpoint) |
 
 ## Arquitectura y entrenamiento
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RL-Forgettting-Exp4/code-rl-lr-ablation` (este) | 3B | no disponible | GRPO sobre MBPP, ablación de lr y replay | apache-2.0 | HuggingFace, 0 descargas |
-| `RL-Forgettting-Exp4/code-q3_1p7b-nobuf` y `-replay-lam0p1` | no disponible (nombre sugiere ~1,7B) | no disponible | GRPO sobre MBPP con lr=1e-6, referencia del estudio | no disponible | HuggingFace (repos citados en la model card) |
-| `RL-Forgettting-Exp4/code-q25_3b-*` | 3B | no disponible | GRPO sobre MBPP con lr=1e-6, referencia del estudio | no disponible | HuggingFace (repos citados en la model card) |
-| `Qwen/Qwen2.5-3B` (base) | 3B | no disponible en esta ficha | Preentrenamiento + post-entrenamiento estándar de Qwen | apache-2.0 | HuggingFace, ampliamente utilizado |
+| `RL-Forgettting-Exp4/code-rl-lr-ablation` (este) | 3B | no disponible | GRPO sobre MBPP, ablación de lr y replay | apache-2.0 | Hugging Face, 0 descargas |
+| `RL-Forgettting-Exp4/code-q3_1p7b-nobuf` y `-replay-lam0p1` | no disponible (nombre sugiere ~1,7B) | no disponible | GRPO sobre MBPP con lr=1e-6, referencia del estudio | no disponible | Hugging Face (repos citados en la model card) |
+| `RL-Forgettting-Exp4/code-q25_3b-*` | 3B | no disponible | GRPO sobre MBPP con lr=1e-6, referencia del estudio | no disponible | Hugging Face (repos citados en la model card) |
+| `Qwen/Qwen2.5-3B` (base) | 3B | no disponible en esta ficha | Preentrenamiento + post-entrenamiento estándar de Qwen | apache-2.0 | Hugging Face, ampliamente utilizado |
 
 La comparación relevante es interna al propio estudio: los runs de referencia con lr=1e-6 permiten aislar el efecto de la tasa de aprendizaje y del replay frente a este repositorio de ablación.
 
@@ -87,7 +87,7 @@ La comparación relevante es interna al propio estudio: los runs de referencia c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RL-Forgettting-Exp4/code-rl-lr-ablation
+- Repositorio Hugging Face: https://huggingface.co/RL-Forgettting-Exp4/code-rl-lr-ablation
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Runs de referencia lr=1e-6 citados en la model card: `RL-Forgettting-Exp4/code-q3_1p7b-nobuf`, `RL-Forgettting-Exp4/code-q3_1p7b-replay-lam0p1`, `RL-Forgettting-Exp4/code-q25_3b-*` (sin URL directa en la información proporcionada)
 - Dataset MBPP: no se proporciona enlace en la información disponible

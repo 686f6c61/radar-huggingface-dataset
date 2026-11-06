@@ -87,6 +87,6 @@ Otras alternativas de verificación factual (como FactScore o SAFE) no son model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanFoxW/btprop-rlv1-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/RyanFoxW/btprop-rlv1-qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Contacto del autor: ryanwsy@icloud.com (mencionado en la model card)

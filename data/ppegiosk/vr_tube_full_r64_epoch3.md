@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ppegiosk/vr_tube_full_r64_epoch3` es un adaptador LoRA publicado en HuggingFace por el usuario `ppegiosk` mediante la librería PEFT (versión 0.20.0 declarada en la model card). No se trata de un modelo de lenguaje completo, sino de un conjunto de pesos de ajuste fino de bajo rango que debe aplicarse sobre un modelo base. La model card no aporta ninguna descripción funcional: es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+`ppegiosk/vr_tube_full_r64_epoch3` es un adaptador LoRA publicado en Hugging Face por el usuario `ppegiosk` mediante la librería PEFT (versión 0.20.0 declarada en la model card). No se trata de un modelo de lenguaje completo, sino de un conjunto de pesos de ajuste fino de bajo rango que debe aplicarse sobre un modelo base. La model card no aporta ninguna descripción funcional: es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
-El dato más relevante es que el modelo base referenciado en las etiquetas es una ruta local absoluta (`/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad`), no un identificador público de HuggingFace. Esto significa que el adaptador no es autocontenido ni reproducible por terceros: sin acceso al checkpoint base `vr_base_chunk50_30k` no es posible cargarlo ni evaluarlo. El repositorio ocupa 0.0 GB según los metadatos, lo que sugiere que los pesos pueden no estar efectivamente subidos o son de tamano minimo.
+El dato más relevante es que el modelo base referenciado en las etiquetas es una ruta local absoluta (`/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad`), no un identificador público de Hugging Face. Esto significa que el adaptador no es autocontenido ni reproducible por terceros: sin acceso al checkpoint base `vr_base_chunk50_30k` no es posible cargarlo ni evaluarlo. El repositorio ocupa 0.0 GB según los metadatos, lo que sugiere que los pesos pueden no estar efectivamente subidos o son de tamano minimo.
 
 El nombre del artefacto aporta pistas limitadas: `r64` indica rango LoRA 64 (un rango alto respecto a los valores habituales de 8, 16 o 32) y `epoch3` indica que corresponde a la tercera epoca de entrenamiento. El nombre del modelo base (`vr_base_chunk50_30k`) apunta a un entrenamiento por fragmentos de 50 y 30 000 pasos o muestras, aunque esto es una inferencia a partir de la nomenclatura y no un dato confirmado. El repositorio registra 0 descargas y 0 likes, y no hay pipeline, licencia ni idiomas declarados.
 
@@ -81,7 +81,7 @@ No es posible establecer una comparativa fiable. El adaptador no declara modelo 
 
 ## Limitaciones y advertencias
 
-- Repositorio no reproducible: el modelo base apunta a una ruta local (`/dtu/p1/ppar/ICRA/...`) que no es accesible desde HuggingFace. Sin ese checkpoint el adaptador no se puede cargar.
+- Repositorio no reproducible: el modelo base apunta a una ruta local (`/dtu/p1/ppar/ICRA/...`) que no es accesible desde Hugging Face. Sin ese checkpoint el adaptador no se puede cargar.
 - Model card vacía: todos los campos de documentación están sin rellenar, incluidos uso previsto, sesgos, riesgos y procedimiento de entrenamiento.
 - Licencia no declarada: la ausencia de licencia impide determinar si el uso comercial está permitido. En la práctica, debe asumirse que no hay autorización explícita.
 - Tamano del repositorio de 0.0 GB: los pesos podrían no estar subidos o ser de tamano insignificante; conviene verificar la lista real de ficheros antes de cualquier intento de uso.
@@ -95,7 +95,7 @@ No es posible establecer una comparativa fiable. El adaptador no declara modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ppegiosk/vr_tube_full_r64_epoch3
+- Repositorio en Hugging Face: https://huggingface.co/ppegiosk/vr_tube_full_r64_epoch3
 - Referencia citada en la plantilla de la model card (estimación de impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla: https://mlco2.github.io/impact
 - Documentación de PEFT: https://huggingface.co/docs/peft

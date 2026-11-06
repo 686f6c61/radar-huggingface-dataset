@@ -96,7 +96,7 @@ La ventaja diferencial de este modelo no es el rendimiento bruto, sino la combin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-NeoHorse-1-4B-abliterated
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

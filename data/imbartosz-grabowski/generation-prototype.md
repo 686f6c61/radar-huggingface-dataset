@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Generation-prototype es un prototipo de investigación publicado por el usuario Imbartosz-grabowski en HuggingFace, construido sobre una arquitectura DeiT (Data-efficient Image Transformer) y orientado a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
+Generation-prototype es un prototipo de investigación publicado por el usuario Imbartosz-grabowski en Hugging Face, construido sobre una arquitectura DeiT (Data-efficient Image Transformer) y orientado a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
 
 El tamaño real del repositorio es extremadamente reducido: 33.088 parámetros totales según el fichero safetensors, lo que lo sitúa lejos de cualquier modelo de generación de propósito general. La configuración declarada emplea atención lineal, fusión tipo Tucker, activación approx gelu y normalización InstanceNorm, con un recetario de entrenamiento por defecto basado en el optimizador Adafactor y un schedule de warmup constante.
 
@@ -64,7 +64,7 @@ No se dispone de modelos comparables directos dentro de la información proporci
 
 | Modelo | Parametros (aprox.) | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| generation-prototype | 33.088 | no disponible | Generacion (prototipo) | apache-2.0 | HuggingFace, 0 descargas |
+| generation-prototype | 33.088 | no disponible | Generacion (prototipo) | apache-2.0 | Hugging Face, 0 descargas |
 | DeiT-Ti (original) | ~5 M | no aplica (vision) | Clasificacion de imagenes | Apache 2.0 | Publico |
 | DeiT-S (original) | ~22 M | no aplica (vision) | Clasificacion de imagenes | Apache 2.0 | Publico |
 | DeiT-B (original) | ~86 M | no aplica (vision) | Clasificacion de imagenes | Apache 2.0 | Publico |
@@ -79,11 +79,11 @@ La comparación es únicamente orientativa en cuanto a orden de magnitud: este p
 - Idiomas soportados: sin declarar; no hay información sobre cobertura lingüística.
 - Longitud de contexto: no documentada, lo que impide planificar despliegues con entradas largas.
 - Licencia apache-2.0: permite uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean conjuntos externos.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito, lo que añade fricción de integración.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito, lo que añade fricción de integración.
 - Documentación insuficiente para producción: no hay métricas, ni número de tokens de entrenamiento, ni composición del dataset.
 - Las búsquedas web realizadas no devolvieron ningún resultado relacionado con este modelo; los enlaces encontrados correspondían a noticias sin relación con el proyecto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Imbartosz-grabowski/generation-prototype
+- Hugging Face: https://huggingface.co/Imbartosz-grabowski/generation-prototype
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

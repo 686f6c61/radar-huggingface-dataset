@@ -87,7 +87,7 @@ Los leaderboards de BrowseComp (BenchLM.ai, llm-stats.com, Steel.dev) listan mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shangy/browsecomp-fixed-orch-continuation-rl
+- Modelo en Hugging Face: https://huggingface.co/Shangy/browsecomp-fixed-orch-continuation-rl
 - Checkpoint relacionado (fixed-orch-qwen3-8b-h200): https://huggingface.co/Shangy/browsecomp-fixed-orch-qwen3-8b-h200
 - Checkpoint relacionado (orch-sftcore-qwen3-8b-h200): https://huggingface.co/Shangy/browsecomp-orch-sftcore-qwen3-8b-h200
 - Leaderboard BrowseComp (BenchLM.ai): https://benchlm.ai/benchmarks/browsecomp

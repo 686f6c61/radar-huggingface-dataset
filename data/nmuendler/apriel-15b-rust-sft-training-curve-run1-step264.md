@@ -67,8 +67,8 @@ Las cifras siguientes son estimaciones para el modelo fusionado (base de ~15B + 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nmuendler/Apriel-15B-rust-sft-training-curve-run1-step264` (adaptador PEFT) | no disponible (adaptador de 0,6 GB) | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| `ServiceNow-AI/Apriel-Nemotron-15b-Thinker` (modelo base) | ~15B segun el nombre | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| `nmuendler/Apriel-15B-rust-sft-training-curve-run1-step264` (adaptador PEFT) | no disponible (adaptador de 0,6 GB) | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| `ServiceNow-AI/Apriel-Nemotron-15b-Thinker` (modelo base) | ~15B segun el nombre | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | Otros adaptadores SFT sobre bases de ~15B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones verificadas de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de los 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-training-curve-run1-step264
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-training-curve-run1-step264
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact

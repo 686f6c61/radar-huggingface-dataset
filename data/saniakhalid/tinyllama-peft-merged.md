@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyLlama PEFT Merged es un ajuste fino del modelo TinyLlama-1.1B-Chat-v1.0 en el que los pesos del adaptador LoRA se han fusionado en el modelo base, de modo que se distribuye un único checkpoint denso listo para inferencia sin necesidad de cargar PEFT por separado. Lo publica el usuario SaniaKhalid en HuggingFace, aunque la model card y los ejemplos de uso hacen referencia al repositorio `arif-butt/tinyllama-peft-merged` y a un dataset denominado `arif-butt/arifbutt_dataset`, lo que sugiere un ajuste orientado a un dominio docente muy concreto.
+TinyLlama PEFT Merged es un ajuste fino del modelo TinyLlama-1.1B-Chat-v1.0 en el que los pesos del adaptador LoRA se han fusionado en el modelo base, de modo que se distribuye un único checkpoint denso listo para inferencia sin necesidad de cargar PEFT por separado. Lo publica el usuario SaniaKhalid en Hugging Face, aunque la model card y los ejemplos de uso hacen referencia al repositorio `arif-butt/tinyllama-peft-merged` y a un dataset denominado `arif-butt/arifbutt_dataset`, lo que sugiere un ajuste orientado a un dominio docente muy concreto.
 
 El modelo conserva la arquitectura original de TinyLlama: un transformer decoder-only tipo Llama con 1.100.048.384 parámetros (aproximadamente 1,1 mil millones), una ventana de contexto de 2048 tokens y pesos en precisión FP16 con un tamaño de repositorio de 2,2 GB. Se entrenó con PEFT y TRL durante 3 épocas, con pérdidas decrecientes (0,8 / 0,4 / 0,05 según la model card), lo que apunta a una especialización fuerte sobre el conjunto de datos de ajuste.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SaniaKhalid/tinyllama-peft-merged | 1,1 B | 2048 tokens | Inglés | Apache-2.0 | HuggingFace, pesos FP16 en safetensors |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2048 tokens | Inglés | Apache-2.0 | HuggingFace y múltiples derivados GGUF/quantizados |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Multilingüe (más de 29 idiomas) | Apache-2.0 (con condiciones adicionales en algunas variantes) | HuggingFace, ecosistema amplio de cuantizaciones |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8192 tokens | Inglés principalmente | Apache-2.0 | HuggingFace, con versiones GGUF y cuantizadas |
+| SaniaKhalid/tinyllama-peft-merged | 1,1 B | 2048 tokens | Inglés | Apache-2.0 | Hugging Face, pesos FP16 en safetensors |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2048 tokens | Inglés | Apache-2.0 | Hugging Face y múltiples derivados GGUF/quantizados |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Multilingüe (más de 29 idiomas) | Apache-2.0 (con condiciones adicionales en algunas variantes) | Hugging Face, ecosistema amplio de cuantizaciones |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8192 tokens | Inglés principalmente | Apache-2.0 | Hugging Face, con versiones GGUF y cuantizadas |
 
 Rendimiento comparado en benchmarks: no disponible para el modelo analizado, por lo que no es posible establecer una comparación cuantitativa frente a las alternativas.
 
@@ -91,7 +91,7 @@ Rendimiento comparado en benchmarks: no disponible para el modelo analizado, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaniaKhalid/tinyllama-peft-merged
+- Modelo en Hugging Face: https://huggingface.co/SaniaKhalid/tinyllama-peft-merged
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Dataset de ajuste referenciado: https://huggingface.co/datasets/arif-butt/arifbutt_dataset
 - Repositorio alternativo mencionado en la model card: https://huggingface.co/arif-butt/tinyllama-peft-merged

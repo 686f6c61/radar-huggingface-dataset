@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `yamalies/myzxnk3nvdm6` es un checkpoint alojado en HuggingFace por el usuario `yamalies`, publicado bajo acceso restringido (gated) y sin model card sustantiva. La unica informacion tecnica verificable es el recuento de parametros obtenido de los ficheros safetensors: 110.280.865.472 parametros, con un tamano de repositorio de 220,6 GB, lo que es coherente con pesos almacenados en precision de 16 bits (aproximadamente 2 bytes por parametro).
+El modelo identificado como `yamalies/myzxnk3nvdm6` es un checkpoint alojado en Hugging Face por el usuario `yamalies`, publicado bajo acceso restringido (gated) y sin model card sustantiva. La unica informacion tecnica verificable es el recuento de parametros obtenido de los ficheros safetensors: 110.280.865.472 parametros, con un tamano de repositorio de 220,6 GB, lo que es coherente con pesos almacenados en precision de 16 bits (aproximadamente 2 bytes por parametro).
 
 No se dispone de documentacion oficial sobre arquitectura, datos de entrenamiento, tokenizador, ventana de contexto, idiomas soportados ni licencia. Las unicas etiquetas publicadas son `safetensors`, `mimo_v2`, `custom_code` y `region:us`. La etiqueta `mimo_v2` y la presencia de `custom_code` sugieren una arquitectura de tipo transformer con codigo personalizado, pero no hay confirmacion oficial ni paper asociado que permita afirmarlo.
 
@@ -53,7 +53,7 @@ No es posible recomendar casos de uso concretos sin informacion verificada sobre
 - Pruebas de infraestructura de despliegue: validar pipelines de vLLM o TGI con un modelo de ~110 B de parametros para dimensionar clústeres.
 - Auditoria de seguridad: someterlo a baterias de red-teaming para detectar sesgos, contenido danino o alucinaciones antes de cualquier uso.
 - Benchmarking de cuantizacion: comparar calidad de pesos bf16 frente a formatos de 8 y 4 bits una vez generados.
-- Estudio de reproducibilidad: dado que no hay model card, sirve como caso de analisis sobre publicaciones opacas en HuggingFace.
+- Estudio de reproducibilidad: dado que no hay model card, sirve como caso de analisis sobre publicaciones opacas en Hugging Face.
 
 Ninguno de estos casos debe entenderse como una recomendacion de uso en produccion.
 
@@ -90,7 +90,7 @@ Nota: los datos de los modelos de referencia corresponden a informacion publica 
 
 - Ausencia total de model card: no hay informacion sobre sesgos, datos de entrenamiento ni procedencia del checkpoint.
 - Licencia no disponible: no se puede determinar si el uso comercial esta permitido. Desplegarlo en produccion conlleva riesgo legal.
-- Acceso restringido: el repositorio esta gated y requiere aceptar condiciones en HuggingFace, cuya naturaleza se desconoce.
+- Acceso restringido: el repositorio esta gated y requiere aceptar condiciones en Hugging Face, cuya naturaleza se desconoce.
 - Procedencia no verificada: el autor, el nombre aleatorio del modelo y la falta de documentacion impiden confirmar que los pesos correspondan a la familia que sugiere la etiqueta `mimo_v2`.
 - Dependencia de `custom_code`: carga el modelo implica ejecutar codigo remoto del repositorio, lo que constituye un riesgo de seguridad adicional.
 - Riesgo de alucinacion: no evaluado.
@@ -100,6 +100,6 @@ Nota: los datos de los modelos de referencia corresponden a informacion publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yamalies/myzxnk3nvdm6
+- Modelo en Hugging Face: https://huggingface.co/yamalies/myzxnk3nvdm6
 
 No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada.

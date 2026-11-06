@@ -70,10 +70,10 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| GH Pulse | 1,72B | no disponible | Apache-2.0 | Growth-marketing (LoRA sobre Qwen3-1.7B) | HuggingFace, GGUF |
-| Qwen3-1.7B (base) | 1,7B | no disponible | Apache-2.0 | Proposito general | HuggingFace |
-| GH Spark | 0,6B | no disponible | no disponible | Growth-marketing (familia GH AI) | HuggingFace |
-| GH Apex | 4B | no disponible | no disponible | Growth-marketing (familia GH AI) | HuggingFace |
+| GH Pulse | 1,72B | no disponible | Apache-2.0 | Growth-marketing (LoRA sobre Qwen3-1.7B) | Hugging Face, GGUF |
+| Qwen3-1.7B (base) | 1,7B | no disponible | Apache-2.0 | Proposito general | Hugging Face |
+| GH Spark | 0,6B | no disponible | no disponible | Growth-marketing (familia GH AI) | Hugging Face |
+| GH Apex | 4B | no disponible | no disponible | Growth-marketing (familia GH AI) | Hugging Face |
 
 Los datos de contexto, licencia y benchmarks de GH Spark y GH Apex no estan disponibles en la informacion proporcionada. La comparativa con la base Qwen3-1.7B se limita a las metricas publicadas por el autor (perdida de dominio y ARC).
 
@@ -90,7 +90,7 @@ Los datos de contexto, licencia y benchmarks de GH Spark y GH Apex no estan disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aymandakir-gh/gh-pulse
+- Modelo en Hugging Face: https://huggingface.co/aymandakir-gh/gh-pulse
 - Sitio oficial de Growthackers: https://gh.company
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de chat general: https://huggingface.co/datasets/HuggingFaceTB/smoltalk

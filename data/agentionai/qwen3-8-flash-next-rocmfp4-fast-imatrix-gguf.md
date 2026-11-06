@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks como MMLU, HumanEval o GSM8K en la 
 
 | Modelo | Parametros | Contexto | PPL wikitext-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (sin cuantizar) | 125 B + 51 B n-gram | 32768 | 4,0068 | qwen-community-1.0 | HuggingFace |
-| Qwen3.8-Flash-Next-ROCmFP4-FAST (sin imatrix) | 125 B + 51 B n-gram | 32768 | 4,6785 | qwen-community-1.0 | HuggingFace |
-| Este archivo (con imatrix) | 125 B + 51 B n-gram | 32768 | 4,4315 | qwen-community-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next (sin cuantizar) | 125 B + 51 B n-gram | 32768 | 4,0068 | qwen-community-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-ROCmFP4-FAST (sin imatrix) | 125 B + 51 B n-gram | 32768 | 4,6785 | qwen-community-1.0 | Hugging Face |
+| Este archivo (con imatrix) | 125 B + 51 B n-gram | 32768 | 4,4315 | qwen-community-1.0 | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoria (MoE con tabla n-gram) en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (MoE c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF
+- Modelo en Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del fork de llama.cpp: https://github.com/LaurentZuijdwijk/llama.cpp (rama vulkan/qwen4exp-rocmfpx)
 - Pull request de soporte qwen4exp en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/27742

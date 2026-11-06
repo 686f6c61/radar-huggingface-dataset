@@ -94,7 +94,7 @@ El modelo basado en Skywork-Llama-3.1 ofrece el segundo mejor Scoring Spearman d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mario-rc/multi-domain-rm-skywork-llama-3.1-8b-it
+- Hugging Face: https://huggingface.co/mario-rc/multi-domain-rm-skywork-llama-3.1-8b-it
 - Coleccion de modelos multi-dominio: https://huggingface.co/collections/mario-rc/multi-domain-rm
 - Repositorio del proyecto: https://github.com/Mario-RC/multi-domain-reward-model
 - Repositorio alternativo: https://github.com/Mario-RC/multidomain-reward-model

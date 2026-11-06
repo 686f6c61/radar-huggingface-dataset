@@ -71,7 +71,7 @@ El autor advierte que el techo medible del conjunto de evaluación es aproximada
 - VRAM estimada: prácticamente nula. Con 22,7 millones de parámetros, el modelo en FP32 ocupa alrededor de 90 MB y puede ejecutarse en memoria central sin necesidad de GPU.
 - GPU recomendada: no se requiere ninguna GPU. La evaluación de latencia se realizó en CPU (Apple M-series, un solo hilo).
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en cualquier GPU disponible, pero no resulta necesario.
-- Opciones de despliegue: HuggingFace Transformers, `text-embeddings-inference`, endpoints compatibles con HuggingFace. También puede servir mediante un contenedor propio con `transformers`. No es compatible con `llama.cpp` ni `vLLM`, al tratarse de un clásificador encoder.
+- Opciones de despliegue: Hugging Face Transformers, `text-embeddings-inference`, endpoints compatibles con Hugging Face. También puede servir mediante un contenedor propio con `transformers`. No es compatible con `llama.cpp` ni `vLLM`, al tratarse de un clásificador encoder.
 - Latencia: p50 de 2,93 ms y p99 de 3,2 ms por petición en CPU (Apple M-series, un solo hilo).
 - Throughput: no disponible en la información del autor.
 

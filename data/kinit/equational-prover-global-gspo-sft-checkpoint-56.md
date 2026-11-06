@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| kinit/equational-prover-global-gspo-sft-checkpoint-56 | 9B | no disponible | no disponible | Demostración de ecuaciones | HuggingFace |
-| Qwen3.5-9B (base) | 9B | 128k (típico, no confirmado) | Apache 2.0 (según modelo base) | Generalista | HuggingFace |
-| DeepSeekMath (7B) | 7B | 4k | MIT | Razonamiento matemático | HuggingFace |
+| kinit/equational-prover-global-gspo-sft-checkpoint-56 | 9B | no disponible | no disponible | Demostración de ecuaciones | Hugging Face |
+| Qwen3.5-9B (base) | 9B | 128k (típico, no confirmado) | Apache 2.0 (según modelo base) | Generalista | Hugging Face |
+| DeepSeekMath (7B) | 7B | 4k | MIT | Razonamiento matemático | Hugging Face |
 
 No se conocen otros modelos de demostración de ecuaciones con la misma técnica de entrenamiento. La comparativa se basa en modelos de razonamiento matemático de tamaño similar, pero los datos de rendimiento no están disponibles.
 
@@ -74,7 +74,7 @@ No se conocen otros modelos de demostración de ecuaciones con la misma técnica
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kinit/equational-prover-global-gspo-sft-checkpoint-56)
+- [Modelo en Hugging Face](https://huggingface.co/kinit/equational-prover-global-gspo-sft-checkpoint-56)
 - [Modelo base Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Paper GSPO (arXiv:2507.18071)](https://arxiv.org/abs/2507.18071)
 - [Paper GRPO (DeepSeekMath, arXiv:2402.03300)](https://huggingface.co/papers/2402.03300)

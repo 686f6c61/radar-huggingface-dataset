@@ -118,7 +118,7 @@ La informacion proporcionada no incluye numero de parametros, ventana de context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TechnoBaptist/VibeVoice-ASR-BitNet
+- Hugging Face: https://huggingface.co/TechnoBaptist/VibeVoice-ASR-BitNet
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR
 - Codigo: https://github.com/microsoft/VibeASR.cpp
 - Informe tecnico: https://arxiv.org/abs/2607.21075

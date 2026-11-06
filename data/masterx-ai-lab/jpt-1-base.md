@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JPT-1-base es un modelo de lenguaje de tipo base (no instructivo) publicado por el usuario MasterX-AI-lab en HuggingFace. La model card es extremadamente escueta: únicamente indica que se trata de un modelo base para generación de texto, con etiquetas que mencionan "qwen3" y "safetensors", licencia Apache 2.0 y soporte para inglés y ruso. No se proporciona ninguna especificación técnica adicional, como número de parámetros, arquitectura detallada o datos de entrenamiento.
+JPT-1-base es un modelo de lenguaje de tipo base (no instructivo) publicado por el usuario MasterX-AI-lab en Hugging Face. La model card es extremadamente escueta: únicamente indica que se trata de un modelo base para generación de texto, con etiquetas que mencionan "qwen3" y "safetensors", licencia Apache 2.0 y soporte para inglés y ruso. No se proporciona ninguna especificación técnica adicional, como número de parámetros, arquitectura detallada o datos de entrenamiento.
 
 El modelo fue creado y actualizado el 19 de agosto de 2026, y actualmente no registra descargas ni valoraciones. Dada la falta de documentación, su relevancia práctica es incierta; podría tratarse de un experimento o de un lanzamiento preliminar sin información pública suficiente para su evaluación. El tag "qwen3" sugiere una posible relación con la familia Qwen3, pero no hay confirmación oficial.
 
@@ -57,6 +57,6 @@ No disponible. No se conocen modelos comparables al carecer de especificaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MasterX-AI-lab/JPT-1-base
+- Modelo en Hugging Face: https://huggingface.co/MasterX-AI-lab/JPT-1-base
 - Perfil de GitHub del autor: https://github.com/Masterx-AI/
 - Repositorio "Master-AI" del autor: https://github.com/Masterx-AI/Master-AI

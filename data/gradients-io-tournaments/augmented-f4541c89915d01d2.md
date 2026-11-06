@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/augmented-f4541c89915d01d2` es un modelo de generación de texto de aproximadamente 1.540 millones de parámetros, publicado en el Hub de HuggingFace por la organización `gradients-io-tournaments`. Forma parte de una serie de modelos con prefijo "augmented-" generados en el marco de los "tournaments" de Gradients, una plataforma de entrenamiento descentralizado de IA que opera sobre la Subnet 56 de la red Bittensor. Estos torneos permiten a participantes de todo el mundo entrenar y subir modelos, compitiendo por métricas de calidad.
+El modelo `gradients-io-tournaments/augmented-f4541c89915d01d2` es un modelo de generación de texto de aproximadamente 1.540 millones de parámetros, publicado en el Hub de Hugging Face por la organización `gradients-io-tournaments`. Forma parte de una serie de modelos con prefijo "augmented-" generados en el marco de los "tournaments" de Gradients, una plataforma de entrenamiento descentralizado de IA que opera sobre la Subnet 56 de la red Bittensor. Estos torneos permiten a participantes de todo el mundo entrenar y subir modelos, compitiendo por métricas de calidad.
 
 La arquitectura está basada en Qwen2, según las etiquetas del repositorio, y los pesos se distribuyen en formato safetensors. La model card es una plantilla autogenerada sin información sustantiva: no se especifican datos de entrenamiento, licencia, idiomas soportados ni procedencia del fine-tuning. El repositorio ocupa 3,1 GB y no registra descargas ni valoraciones, lo que sugiere que se trata de un artefacto experimental o de competición más que de un modelo orientado a producción.
 
@@ -39,7 +39,7 @@ El modelo se enmarca en el programa de torneos de Gradients, una plataforma que 
 - Evaluación de modelos en torneos descentralizados: el caso de uso principal del modelo es participar en los torneos de Gradients, donde se evalúa su calidad frente a otros modelos de la misma competición. Se usaría como artefacto de entrada en el pipeline de evaluación de la Subnet 56.
 - Experimentación con fine-tuning distribuido: investigadores interesados en el entrenamiento descentralizado pueden analizar este modelo como ejemplo de los resultados que produce la plataforma Gradients, comparando su comportamiento con el del modelo base Qwen2-1.5B.
 - Pruebas de generación de texto en entornos de bajo coste: con 1,54 B de parámetros, el modelo puede ejecutarse en GPUs de consumo, lo que permite experimentar con generación de texto sin necesidad de infraestructura de alto presupuesto.
-- Despliegue en endpoints compatibles con TGI: dado el tag `endpoints_compatible`, el modelo puede servir en plataformas que soporten text-generation-inference, como HuggingFace Inference Endpoints o FriendliAI, para pruebas de latencia y throughput.
+- Despliegue en endpoints compatibles con TGI: dado el tag `endpoints_compatible`, el modelo puede servir en plataformas que soporten text-generation-inference, como Hugging Face Inference Endpoints o FriendliAI, para pruebas de latencia y throughput.
 - Análisis de seguridad y sesgos en modelos de competición: el modelo puede servir para estudiar qué sesgos y limitaciones presentan los artefactos generados en entornos de entrenamiento competitivo y descentralizado, donde la optimización de métricas puede primar sobre la robustez.
 - Comparación de cuantizaciones: aunque no se publican cuantizaciones oficiales, el tamaño del modelo permite generar versiones GGUF o cuantizadas con herramientas como llama.cpp para evaluar la degradación de calidad en entornos con VRAM limitada.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gradients-io-tournaments/augmented-f4541c89915d01d2 | 1,54 B | no disponible | no disponible | HuggingFace |
-| Qwen2-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Gemma-2-2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace |
-| Phi-3-mini | 3,8 B | 128.000 tokens | MIT | HuggingFace |
+| gradients-io-tournaments/augmented-f4541c89915d01d2 | 1,54 B | no disponible | no disponible | Hugging Face |
+| Qwen2-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Gemma-2-2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face |
+| Phi-3-mini | 3,8 B | 128.000 tokens | MIT | Hugging Face |
 
 La comparación con Qwen2-1.5B es la más pertinente, dado que la arquitectura declarada es Qwen2. El modelo de Gradients probablemente sea un fine-tuning de Qwen2-1.5B, pero no hay confirmación en la model card. Frente a las alternativas comerciales y open source, este modelo carece de documentación, licencia clara y resultados de evaluación, lo que lo hace menos adecuado para producción que sus equivalentes bien documentados.
 
@@ -78,7 +78,7 @@ La comparación con Qwen2-1.5B es la más pertinente, dado que la arquitectura d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-f4541c89915d01d2
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-f4541c89915d01d2
 - Plataforma Gradients: https://www.gradients.io/
 - Página de torneos de Gradients: https://www.gradients.io/app/research/tournament
 - Modelo similar en FriendliAI: https://friendli.ai/models/gradients-io-tournaments/augmented-580d8de02f45a989

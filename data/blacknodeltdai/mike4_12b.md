@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mike4_12b es un modelo de lenguaje publicado en HuggingFace por el usuario BlacknodeLTDAI bajo licencia Apache 2.0. El repositorio contiene 11.907.350.576 parametros (aproximadamente 11,9 mil millones) y un peso total de 7,4 GB, lo que indica que se distribuye principalmente en formato cuantizado GGUF. La model card publicada por el autor esta practicamente vacia: unicamente incluye la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, idiomas o comportamiento esperado.
+Mike4_12b es un modelo de lenguaje publicado en Hugging Face por el usuario BlacknodeLTDAI bajo licencia Apache 2.0. El repositorio contiene 11.907.350.576 parametros (aproximadamente 11,9 mil millones) y un peso total de 7,4 GB, lo que indica que se distribuye principalmente en formato cuantizado GGUF. La model card publicada por el autor esta practicamente vacia: unicamente incluye la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, idiomas o comportamiento esperado.
 
 El modelo se etiqueta como conversacional (`conversational`), compatible con endpoints de inferencia (`endpoints_compatible`) y generado con tecnicas de importancia matrix (`imatrix`), un metodo habitual para producir cuantizaciones GGUF de mayor calidad. No hay informacion publica sobre el proceso de entrenamiento, la composicion del dataset ni la longitud de contexto soportada.
 
@@ -33,7 +33,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` es la unica indicacion explicita sobre el uso previsto del modelo.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Ejecucion local en formato GGUF: la presencia de pesos GGUF permite inferencia en CPU y GPU mediante llama.cpp y sus derivados.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -78,7 +78,7 @@ La ausencia de datos publicos sobre Mike4_12b (contexto, idiomas, benchmarks, ar
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
-| Mike4_12b (BlacknodeLTDAI) | 11,9 B | no disponible | Apache 2.0 | no disponible | GGUF y safetensors en HuggingFace |
+| Mike4_12b (BlacknodeLTDAI) | 11,9 B | no disponible | Apache 2.0 | no disponible | GGUF y safetensors en Hugging Face |
 | Mistral NeMo 12B | ~12 B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 | Gemma 2 9B | ~9 B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 | Qwen2.5 14B | ~14 B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
@@ -100,5 +100,5 @@ No se dispone de resultados comparativos de rendimiento entre Mike4_12b y cualqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BlacknodeLTDAI/Mike4_12b
+- Hugging Face: https://huggingface.co/BlacknodeLTDAI/Mike4_12b
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda disponibles. Los resultados devueltos por la busqueda web no guardan relacion con el modelo (foros de soporte de Windows Update, Steam Community y Microsoft Community).

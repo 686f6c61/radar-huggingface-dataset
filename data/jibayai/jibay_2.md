@@ -71,7 +71,7 @@ Los siguientes resultados han sido declarados por el equipo de JibayAi en la mod
 - VRAM estimada: el modelo tiene 2.031 millones de parametros. En FP16, los pesos ocupan aproximadamente 4,1 GB, por lo que se necesita al menos 6 GB de VRAM para inferencia con cierta holgura. Con cuantizacion GGUF Q4_K_M, el modelo ocupa alrededor de 1,1 GB, pudiendo ejecutarse en GPUs con 4 GB de VRAM o incluso en CPU con suficiente RAM.
 - GPUs recomendadas: RTX 3060 (12 GB) o superior para FP16; RTX 4050, RTX 3060 o GPUs integradas modernas para versiones cuantizadas. Tambien es viable en Apple Silicon con Metal o en CPUs modernas con llama.cpp.
 - Si cabe en consumer GPU: si, tanto en version FP16 como cuantizada. Es adecuado para GPUs de gama media y baja.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, Text Generation Inference (TGI) y transformers de HuggingFace. El autor recomienda explícitamente el uso de GGUF para produccion.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, Text Generation Inference (TGI) y transformers de Hugging Face. El autor recomienda explícitamente el uso de GGUF para produccion.
 - Latencia y throughput: no se han publicado datos oficiales de latencia o throughput. En una RTX 4090, un modelo de 2B en Q4 se puede ejecutar con latencias de decenas de milisegundos por token, pero estos valores son estimaciones no confirmadas.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ Nota: los datos de Qwen3-1.7B base no se han publicado en la informacion disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JibayAi/Jibay_2
+- Modelo en Hugging Face: https://huggingface.co/JibayAi/Jibay_2
 - Version GGUF Q4_K_M: https://huggingface.co/JibayAi/Jibay_2_GGUF_Q4-K-M
 - Repositorio en GitHub: https://github.com/Jibay-Ai/JibayAi
 - Organizacion en GitHub: https://github.com/Jibay-Ai

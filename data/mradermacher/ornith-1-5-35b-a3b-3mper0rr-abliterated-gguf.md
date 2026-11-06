@@ -56,7 +56,7 @@ El termino "abliterated" en el nombre del modelo base hace referencia a la tecni
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen resultados de MMLU, HumanEval, GSM8K, MT-Bench ni de ningun otro conjunto de evaluacion, ni para los pesos originales ni para las distintas cuantizaciones. Tampoco hay mediciones de perplejidad por nivel de cuantizacion mas alla de la referencia generica al grafico comparativo de ikawrakow.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen resultados de MMLU, HumanEval, GSM8K, MT-Bench ni de ningun otro conjunto de evaluacion, ni para los pesos originales ni para las distintas cuantizaciones. Tampoco hay mediciones de perplejidad por nivel de cuantizacion mas alla de la referencia generica al grafico comparativo de ikawrakow.
 
 ## Requisitos de hardware
 
@@ -104,7 +104,7 @@ No disponible. La informacion proporcionada no incluye ningun modelo comparable 
 - Ficheros multimodales sin documentar: el repositorio incluye mmproj, pero no se especifica que modalidad cubre ni como activarla correctamente.
 - Licencia: la metadata del repositorio de cuantizaciones declara MIT, pero la licencia del modelo base no aparece en la informacion proporcionada. Conviene verificarla antes de un uso comercial, ya que las condiciones del modelo original podrian imponer restricciones adicionales.
 - Repositorio sin traccion: 0 descargas y 0 valoraciones en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Fechas de creacion y actualizacion de 2026, poco habituales en el catalogo de HuggingFace; conviene confirmar la vigencia de los ficheros antes de integrarlos en un pipeline.
+- Fechas de creacion y actualizacion de 2026, poco habituales en el catalogo de Hugging Face; conviene confirmar la vigencia de los ficheros antes de integrarlos en un pipeline.
 
 ## Enlaces
 

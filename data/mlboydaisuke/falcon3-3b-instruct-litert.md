@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Falcon3-3B-Instruct-LiteRT es una conversion del modelo tiiuae/Falcon3-3B-Instruct al formato `.litertlm` de Google, pensada para inferencia en dispositivo (on-device) mediante el runtime LiteRT-LM. El autor de la conversion es el usuario de HuggingFace mlboydaisuke, mientras que el modelo original pertenece al Technology Innovation Institute (TII) de Abu Dabi. El objetivo es ejecutar un modelo de ~3.000 millones de parametros en telefonos, portatiles y equipos de borde sin depender de la nube ni de aceleradores dedicados.
+Falcon3-3B-Instruct-LiteRT es una conversion del modelo tiiuae/Falcon3-3B-Instruct al formato `.litertlm` de Google, pensada para inferencia en dispositivo (on-device) mediante el runtime LiteRT-LM. El autor de la conversion es el usuario de Hugging Face mlboydaisuke, mientras que el modelo original pertenece al Technology Innovation Institute (TII) de Abu Dabi. El objetivo es ejecutar un modelo de ~3.000 millones de parametros en telefonos, portatiles y equipos de borde sin depender de la nube ni de aceleradores dedicados.
 
 La relevancia de esta ficha radica en que demuestra que una cuantizacion int4 blockwise (bloque de 128, simetrica) aplicada con `litert-torch` conserva la calidad de razonamiento del modelo en precision bf16: en GSM8K (n=100) alcanza un 77%, frente al 75% de bf16 y el 76% de una build MLX 4-bit de control. La conversion es exclusivamente de texto (no incluye torres de vision ni audio) y emplea la arquitectura estandar del decodificador Falcon3.
 
@@ -127,7 +127,7 @@ No se dispone de resultados de benchmarks comparativos entre estas alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/Falcon3-3B-Instruct-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/Falcon3-3B-Instruct-LiteRT
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-3B-Instruct
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Runtime LiteRT-LM (ruta alternativa citada en la model card): https://github.com/google-ai-edge/LiteRT-LM

@@ -91,7 +91,7 @@ Bonsai-27B en 1 bit es 2,3 veces más pequeño que la mejor PTQ de 2 bits de hip
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hipfire-models/bonsai-27b
+- Repositorio Hugging Face: https://huggingface.co/hipfire-models/bonsai-27b
 - Repositorio alternativo (hipfire-bonsai-27b): https://huggingface.co/hipfire-models/hipfire-bonsai-27b
 - Colección de Prism ML: https://huggingface.co/collections/prism-ml/bonsai-27b
 - Documentación oficial de Bonsai 27B: https://docs.prismml.com/models/bonsai-27b

@@ -110,7 +110,7 @@ No se dispone de datos comparativos frente a otras familias de modelos fundacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L33
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L33
 - Sitio del artículo: https://pierregtch.github.io/eeg-fm-masking
 - Código de entrenamiento (MIT): https://github.com/PierreGtch/eeg-fm-masking
 - Colección con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

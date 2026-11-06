@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nqdupont/tiny-transformer-matching-finetune` es un prototipo de investigación publicado en HuggingFace por el usuario nqdupont. Se trata de un Transformer de tamano muy reducido (33.088 parametros totales, segun los pesos en formato safetensors) orientado a tareas de *matching*, es decir, a la comparación o emparejamiento entre pares de elementos. El repositorio se presenta explicitamente como un punto de partida experimental y no como un modelo entrenado listo para producción.
+El modelo `nqdupont/tiny-transformer-matching-finetune` es un prototipo de investigación publicado en Hugging Face por el usuario nqdupont. Se trata de un Transformer de tamano muy reducido (33.088 parametros totales, segun los pesos en formato safetensors) orientado a tareas de *matching*, es decir, a la comparación o emparejamiento entre pares de elementos. El repositorio se presenta explicitamente como un punto de partida experimental y no como un modelo entrenado listo para producción.
 
 El propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es una inicialización válida para *smoke tests*, no un modelo entrenado ni evaluado con benchmarks. El repositorio documenta los formatos de fichero y los valores por defecto de un script de entrenamiento, pero no reclama ninguna métrica de rendimiento. Por tanto, su relevancia actual es la de un esqueleto de código reproducible para experimentar con arquitecturas Transformer minúsculas en tareas de matching, no la de un componente desplegable.
 
@@ -21,7 +21,7 @@ La ficha que sigue refleja únicamente la información publicada en el repositor
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (checkpoint de inicialización); código en Python/PyTorch |
 | Escala declarada | large (etiqueta interna del autor, no implica un modelo grande en terminos absolutos) |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-13 |
 
@@ -80,5 +80,5 @@ No se dispone de datos comparativos en la informacion proporcionada. El reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nqdupont/tiny-transformer-matching-finetune
+- Repositorio en Hugging Face: https://huggingface.co/nqdupont/tiny-transformer-matching-finetune
 - Papers, blogs, repositorios o demos adicionales: no disponible. Los resultados de la búsqueda web realizada no contenían enlaces técnicos relacionados con este modelo.

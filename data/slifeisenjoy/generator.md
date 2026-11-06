@@ -4,7 +4,7 @@
 
 GENERATOR es un modelo de transformer recursivo con pesos compartidos (weight-tied) desarrollado por el usuario slifeisenjoy, diseñado específicamente para la síntesis de vectores de seguridad ofensiva, como payloads de XSS, inyecciones SQL y comandos cURL. Su arquitectura reutiliza una única capa de encoder transformer en seis iteraciones, lo que reduce el número de parámetros en aproximadamente un 80,88 % en comparación con un transformer estándar de profundidad equivalente, manteniendo una capacidad de razonamiento lógico suficiente para generar payloads técnicos estructurados.
 
-El modelo se entrenó con un conjunto de datos consolidado de unas 76 701 muestras, que incluye 22 220+ entradas de cURL, datos de inyección SQL y más de 14 400 vectores XSS. Aunque el repositorio en HuggingFace no contiene archivos de pesos visibles (el tamaño del repo es 0,0 GB), la model card describe un archivo `xss_transformer_v2.pth` y un `vocab.json`. No se especifican el número total de parámetros, la longitud de contexto ni los idiomas soportados, pero por la arquitectura descrita (d_model=256, 8 cabezas de atención) se trata de un modelo ligero, probablemente ejecutable en CPU.
+El modelo se entrenó con un conjunto de datos consolidado de unas 76 701 muestras, que incluye 22 220+ entradas de cURL, datos de inyección SQL y más de 14 400 vectores XSS. Aunque el repositorio en Hugging Face no contiene archivos de pesos visibles (el tamaño del repo es 0,0 GB), la model card describe un archivo `xss_transformer_v2.pth` y un `vocab.json`. No se especifican el número total de parámetros, la longitud de contexto ni los idiomas soportados, pero por la arquitectura descrita (d_model=256, 8 cabezas de atención) se trata de un modelo ligero, probablemente ejecutable en CPU.
 
 La relevancia actual de este modelo radica en su enfoque especializado en seguridad informática, ofreciendo una alternativa eficiente en memoria para generar variantes de payloads en pruebas de penetración y análisis de vulnerabilidades. No obstante, su uso conlleva responsabilidades éticas y legales, ya que está diseñado para producir contenido potencialmente malicioso.
 
@@ -66,8 +66,8 @@ No disponible. No se han identificado modelos comparables en la información pro
 - Riesgo de alucinación: al ser un modelo pequeño y especializado, puede generar payloads inválidos o sintácticamente incorrectos, especialmente fuera de su dominio de entrenamiento.
 - La longitud de contexto no está especificada; es probable que sea corta, lo que limita la generación de payloads muy largos o complejos.
 - La licencia MIT permite uso comercial, pero el usuario es responsable del cumplimiento legal y ético de las aplicaciones.
-- El repositorio en HuggingFace no contiene archivos de pesos visibles (tamaño 0,0 GB), por lo que la reproducibilidad no está garantizada sin acceso a los archivos mencionados en la model card.
+- El repositorio en Hugging Face no contiene archivos de pesos visibles (tamaño 0,0 GB), por lo que la reproducibilidad no está garantizada sin acceso a los archivos mencionados en la model card.
 
 ## Enlaces
 
-- [HuggingFace - slifeisenjoy/GENERATOR](https://huggingface.co/slifeisenjoy/GENERATOR)
+- [Hugging Face - slifeisenjoy/GENERATOR](https://huggingface.co/slifeisenjoy/GENERATOR)

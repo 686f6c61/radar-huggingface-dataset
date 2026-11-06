@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Workerred/model es un modelo publicado en HuggingFace por el usuario Workerred bajo licencia Apache 2.0. El repositorio tiene un tamano de 17,3 GB, lo que sugiere un modelo de varios miles de millones de parametros en formato de pesos de alta precision (probablemente safetensors en FP16/BF16), aunque no se dispone de confirmacion oficial sobre la arquitectura ni el numero exacto de parametros. La model card publicada por el autor se limita a la declaracion de licencia, sin ningun otro contenido tecnico.
+Workerred/model es un modelo publicado en Hugging Face por el usuario Workerred bajo licencia Apache 2.0. El repositorio tiene un tamano de 17,3 GB, lo que sugiere un modelo de varios miles de millones de parametros en formato de pesos de alta precision (probablemente safetensors en FP16/BF16), aunque no se dispone de confirmacion oficial sobre la arquitectura ni el numero exacto de parametros. La model card publicada por el autor se limita a la declaracion de licencia, sin ningun otro contenido tecnico.
 
 No se dispone de informacion sobre el pipeline, los idiomas soportados, el contexto maximo, los datos de entrenamiento ni los resultados de evaluacion. Se trata, por tanto, de un modelo practicamente indocumentado en el momento de redactar esta ficha (creado el 28 de octubre de 2026 y actualizado el 1 de noviembre de 2026), con cero descargas y cero likes en el repositorio.
 
@@ -74,5 +74,5 @@ No disponible. No se dispone de informacion sobre arquitectura, parametros ni re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Workerred/model
+- Hugging Face: https://huggingface.co/Workerred/model
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

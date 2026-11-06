@@ -75,8 +75,8 @@ No hay datos de mAP, IoU, ni comparaciones con SAM ViT-B o con el modelo sin cua
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| skillsafe-ai/slimsam-77-uniform-int8 | no disponible | imagen 1024x1024 | ONNX int8, opset 13 | Apache-2.0 | Repositorio HuggingFace, 0 descargas | No disponible (solo prueba de humo) |
-| Xenova/slimsam-77-uniform (modelo base) | no disponible | imagen 1024x1024 | ONNX (sin cuantizar en este paquete) | Apache-2.0 | Repositorio HuggingFace de referencia | No disponible |
+| skillsafe-ai/slimsam-77-uniform-int8 | no disponible | imagen 1024x1024 | ONNX int8, opset 13 | Apache-2.0 | Repositorio Hugging Face, 0 descargas | No disponible (solo prueba de humo) |
+| Xenova/slimsam-77-uniform (modelo base) | no disponible | imagen 1024x1024 | ONNX (sin cuantizar en este paquete) | Apache-2.0 | Repositorio Hugging Face de referencia | No disponible |
 | SlimSAM (Chen et al., NeurIPS 2024) | no disponible | imagen 1024x1024 | pesos de investigacion | Apache-2.0 | GitHub del proyecto | No consultado en la informacion disponible |
 | SAM ViT-B de Meta (origen de la poda) | no disponible en la informacion proporcionada | imagen 1024x1024 | varios | Apache-2.0 | Repositorio publico | No disponible en la informacion proporcionada |
 
@@ -85,7 +85,7 @@ La comparacion cuantitativa (parametros, IoU, latencia) no puede completarse con
 ## Limitaciones y advertencias
 
 - No hay benchmarks publicados ni evaluacion de la perdida de calidad introducida por la cuantizacion int8 frente al modelo sin cuantizar.
-- El repositorio tiene 0 descargas y 0 likes, y la metadata de HuggingFace reporta un tamano de repo de 0,0 GB pese a que los pesos suman 13,15 MB; conviene verificar los ficheros antes de integrarlos en produccion.
+- El repositorio tiene 0 descargas y 0 likes, y la metadata de Hugging Face reporta un tamano de repo de 0,0 GB pese a que los pesos suman 13,15 MB; conviene verificar los ficheros antes de integrarlos en produccion.
 - Las mascaras se generan a 256x256, muy por debajo de la resolucion de entrada (1024x1024), por lo que hace falta un posprocesado de reescalado que puede introducir bordes imprecisos.
 - El flujo documentado solo admite prompts de puntos (`input_points` + `input_labels`); no se documentan prompts de caja ni de texto, lo que limita los casos de uso respecto a SAM completo.
 - Al ser un modelo de vision puro, no genera texto, no razona, no soporta tool calling ni agentes; no debe evaluarse con benchmarks de lenguaje.
@@ -98,7 +98,7 @@ La comparacion cuantitativa (parametros, IoU, latencia) no puede completarse con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/slimsam-77-uniform-int8
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/slimsam-77-uniform-int8
 - Modelo base: https://huggingface.co/Xenova/slimsam-77-uniform/tree/5850ab45f587c112167512ffef949107115e26a0
 - Recetas y manifiestos de conversion de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models
 - Repositorio de SlimSAM (incluye LICENSE): https://github.com/czg1225/SlimSAM/blob/main/LICENSE

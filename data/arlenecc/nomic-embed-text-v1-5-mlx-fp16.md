@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM/memoria: no disponible el numero de parametros en la informacion proporcionada. En fp16 el peso de los ficheros es aproximadamente 2 bytes por parametro, de modo que el consumo de memoria puede estimarse a partir del tamano total de los archivos del repositorio (pestana "Files and versions" de HuggingFace).
+- VRAM/memoria: no disponible el numero de parametros en la informacion proporcionada. En fp16 el peso de los ficheros es aproximadamente 2 bytes por parametro, de modo que el consumo de memoria puede estimarse a partir del tamano total de los archivos del repositorio (pestana "Files and versions" de Hugging Face).
 - GPU: el formato MLX esta disenado para Apple Silicon (series M1, M2, M3 y M4), donde la GPU integrada consume memoria unificada del sistema. No es un formato cargable directamente por CUDA.
 - GPU de servidor (A100, H100, RTX 4090): no aplicables a este repositorio; para esos entornos debe usarse el checkpoint original en PyTorch/safetensors o una conversion GGUF.
 - Cabe en GPU de consumo: si, en el ecosistema Apple; el modelo base se ha distribuido tambien en cuantizaciones GGUF ligeras ejecutables en CPU y en GPUs de gama baja, aunque este repositorio concreto solo publica fp16.
@@ -75,7 +75,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento (MTEB, BEI
 - Model card practicamente vacia: no hay descripcion, ni instrucciones de uso, ni prefijos de tarea documentados, ni ejemplos de codigo para esta conversion concreta.
 - Sin evaluacion: no existen metricas publicadas que confirmen que la conversion a MLX fp16 mantiene la calidad de recuperacion del checkpoint original.
 - Sin validacion de la comunidad: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay senales de uso real ni de incidencias reportadas.
-- Metadatos sospechosos: la fecha de creacion y de ultima actualizacion declarada por HuggingFace es 2026-10-28, posterior a la fecha actual; conviene verificar la integridad del repositorio antes de usarlo en produccion.
+- Metadatos sospechosos: la fecha de creacion y de ultima actualizacion declarada por Hugging Face es 2026-10-28, posterior a la fecha actual; conviene verificar la integridad del repositorio antes de usarlo en produccion.
 - Licencia: el derivado declara MIT, pero la licencia del modelo base debe verificarse de forma independiente antes de un uso comercial, ya que el redistribuidor no la menciona.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero un encoder puede producir similitudes espurias y recuperar pasajes irrelevantes si se omiten los prefijos de tarea o si el dominio difiere del corpus de entrenamiento.
 - Limitacion de idioma: no se declara lista de idiomas; la existencia de una variante `v2-moe` especificamente multilingue sugiere un enfoque principal al ingles. El rendimiento en castellano no esta documentado.
@@ -85,7 +85,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento (MTEB, BEI
 
 ## Enlaces
 
-- Repositorio del derivado en HuggingFace: https://huggingface.co/arlenecc/nomic-embed-text-v1.5-mlx-fp16
+- Repositorio del derivado en Hugging Face: https://huggingface.co/arlenecc/nomic-embed-text-v1.5-mlx-fp16
 - Modelo base oficial: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5
 - Espejo en ModelScope del modelo base: https://www.modelscope.cn/models/nomic-ai/nomic-embed-text-v1.5
 - Guia de autohospedaje del modelo base: https://llmapi.ai/models/nomic-ai-nomic-embed-text-v1-5/

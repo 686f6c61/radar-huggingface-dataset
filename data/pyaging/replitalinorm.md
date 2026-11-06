@@ -75,6 +75,6 @@ Existen otros relojes epigenéticos como el reloj de Horvath (2013) o el de Hann
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/replitalinorm
+- Hugging Face: https://huggingface.co/pyaging/replitalinorm
 - Artículo original: Endicott, J.L., Nolte, P.A., Shen, H. & Laird, P.W. Cell division drives DNA methylation loss in late-replicating domains in primary human cells. Nature Communications 13, 6659 (2022). DOI: https://doi.org/10.1038/s41467-022-34268-8
 - Documentación de pyaging: https://pyaging.readthedocs.io

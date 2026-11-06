@@ -21,7 +21,7 @@ Su relevancia es fundamentalmente metodológica: sirve como punto de comparació
 | Licencia | Apache 2.0 |
 | Formato de pesos | PyTorch pickle (`.pt`), acompañado de `stats.json` y `release.json` |
 
-Otros datos de identificación: tarea `sim-square-broad`, ronda de modelo R1, brazo `baseline-straddled-auto-success`, celda de campaña `sq_d1_r1_baseline_uniform_nocf_straddled_auto_success`, semillas 1 a 5, paso de entrenamiento 250001. Tamaño del repositorio: 1,4 GB. Pipeline declarado en HuggingFace: `robotics`.
+Otros datos de identificación: tarea `sim-square-broad`, ronda de modelo R1, brazo `baseline-straddled-auto-success`, celda de campaña `sq_d1_r1_baseline_uniform_nocf_straddled_auto_success`, semillas 1 a 5, paso de entrenamiento 250001. Tamaño del repositorio: 1,4 GB. Pipeline declarado en Hugging Face: `robotics`.
 
 ## Arquitectura y entrenamiento
 
@@ -79,9 +79,9 @@ La información proporcionada solo permite comparar con la variante hermana de l
 
 | Modelo | Relación | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r01-baseline-straddled-auto-success-divl | Crítico DIVL distribucional sobre actor congelado (este modelo) | no disponible | no aplica | 61,80 % de éxito agregado (5 semillas, rejilla retenida) | Apache 2.0 | HuggingFace, 5 checkpoints (seeds 1-5) |
-| sim-square-broad-r01-baseline-straddled-auto-success-idql | Modelo padre del actor congelado; alternativa IDQL de la misma tarea | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| Otras variantes de la tarea `sim-square-broad` | no disponible | no disponible | no aplica | no disponible | no disponible | organización `mulligan` en HuggingFace |
+| sim-square-broad-r01-baseline-straddled-auto-success-divl | Crítico DIVL distribucional sobre actor congelado (este modelo) | no disponible | no aplica | 61,80 % de éxito agregado (5 semillas, rejilla retenida) | Apache 2.0 | Hugging Face, 5 checkpoints (seeds 1-5) |
+| sim-square-broad-r01-baseline-straddled-auto-success-idql | Modelo padre del actor congelado; alternativa IDQL de la misma tarea | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| Otras variantes de la tarea `sim-square-broad` | no disponible | no disponible | no aplica | no disponible | no disponible | organización `mulligan` en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -97,12 +97,12 @@ La información proporcionada solo permite comparar con la variante hermana de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-baseline-straddled-auto-success-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-baseline-straddled-auto-success-divl
 - Modelo padre del actor congelado (variante IDQL): https://huggingface.co/mulligan/sim-square-broad-r01-baseline-straddled-auto-success-idql
 - Dataset de teleoperación base: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de rollouts de la política base: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-baseline-policy-rollouts
 - Dataset de minería DAgger: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-baseline
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page

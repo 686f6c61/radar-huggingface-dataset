@@ -104,7 +104,7 @@ No se dispone de datos comparativos de precision, latencia o consumo entre estas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov10n
+- Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov10n
 - Modelo origen YOLOv10 (THU-MIG): https://github.com/THU-MIG/yolov10
 - Ejemplo de despliegue en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov10
 - ModelScope (patron habitual de la plataforma, no confirmado en los datos): https://modelscope.cn/models/RKNNAI/RK3588-CNN-yolov10n

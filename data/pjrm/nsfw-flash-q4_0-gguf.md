@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PJRM/NSFW-flash-Q4_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/PJRM/NSFW-flash-Q4_0-GGUF
 - Modelo base: https://huggingface.co/UnfilteredAI/NSFW-flash
 - Herramienta de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Guía de LLMs sin censura locales (referencia externa): https://insiderllm.com/guides/best-uncensored-local-llms/

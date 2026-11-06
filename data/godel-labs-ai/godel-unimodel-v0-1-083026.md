@@ -75,6 +75,6 @@ No se dispone de información sobre modelos comparables específicos para detecc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Godel-Labs-Ai/godel-unimodel-v0.1-083026
+- Modelo en Hugging Face: https://huggingface.co/Godel-Labs-Ai/godel-unimodel-v0.1-083026
 - Web de Godel Labs: https://godel-labs.ai/
 - (No se encontraron papers, repositorios de código ni demos adicionales en la búsqueda web.)

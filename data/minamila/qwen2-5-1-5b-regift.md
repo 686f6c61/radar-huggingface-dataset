@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Qwen2.5-1.5B-ReGiFT es un adaptador LoRA publicado en HuggingFace sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No se trata de un modelo entrenado desde cero ni de un checkpoint completo, sino de un conjunto de pesos de adaptacion (PEFT) que debe cargarse junto al modelo base para funcionar. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango sobre un modelo de 1.500 millones de parametros.
+MinaMila/Qwen2.5-1.5B-ReGiFT es un adaptador LoRA publicado en Hugging Face sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No se trata de un modelo entrenado desde cero ni de un checkpoint completo, sino de un conjunto de pesos de adaptacion (PEFT) que debe cargarse junto al modelo base para funcionar. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango sobre un modelo de 1.500 millones de parametros.
 
-El autor (MinaMila) no ha publicado informacion sustantiva: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No se documenta el dataset de entrenamiento, el procedimiento, los hiperparametros, la licencia ni los idiomas objetivo. El unico dato tecnico verificable aportado por el autor es la version de PEFT utilizada (0.19.1).
+El autor (MinaMila) no ha publicado informacion sustantiva: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No se documenta el dataset de entrenamiento, el procedimiento, los hiperparametros, la licencia ni los idiomas objetivo. El unico dato tecnico verificable aportado por el autor es la version de PEFT utilizada (0.19.1).
 
 Por el nombre "ReGiFT" se intuye algun tipo de ajuste fino basado en recompensa o en gradientes, pero no hay ninguna fuente que lo confirme, por lo que en esta ficha se trata como no documentado. Su relevancia practica es limitada: sirve principalmente como ejemplo de adaptador LoRA ligero sobre la familia Qwen2.5, no como una alternativa evaluada frente a otros modelos de su tamano.
 
@@ -27,7 +27,7 @@ El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo ran
 
 No hay ningun dato publicado sobre el entrenamiento del adaptador: ni el numero de tokens, ni la composicion del dataset, ni si se uso RLHF, DPO, GRPO u otro esquema, ni los hiperparametros de LoRA (rango, alpha, dropout, modulos objetivo). El unico dato disponible es la version de PEFT empleada (0.19.1). Se desconoce por completo que es "ReGiFT" y si implica una innovacion tecnica concreta.
 
-Conviene aclarar que la etiqueta arxiv:1910.09700 que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, citado en la plantilla de model card de HuggingFace. No es un paper asociado al metodo de entrenamiento de este adaptador.
+Conviene aclarar que la etiqueta arxiv:1910.09700 que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, citado en la plantilla de model card de Hugging Face. No es un paper asociado al metodo de entrenamiento de este adaptador.
 
 ## Capacidades
 
@@ -84,13 +84,13 @@ La comparacion con el modelo base es la mas relevante: no hay ningun dato que in
 - Riesgo de alucinacion elevado: es una caracteristica esperable en un modelo de 1.5B parametros, especialmente en tareas de razonamiento, matematicas y conocimiento factual.
 - Riesgo de sobreajuste y de olvido catastrofico (catastrophic forgetting): al tratarse de un ajuste fino no documentado sobre un modelo pequeno, es plausible que haya perdido parte del multilingue o de las capacidades generales del base, aunque no puede confirmarse.
 - Idiomas soportados no declarados: no hay garantia de que el adaptador funcione correctamente en castellano.
-- Cero descargas y cero interacciones en HuggingFace: no existe validacion por parte de la comunidad.
+- Cero descargas y cero interacciones en Hugging Face: no existe validacion por parte de la comunidad.
 - En produccion seria prudente tratar el adaptador como un experimento, no como un componente estable, y evaluarlo contra el modelo base con un conjunto propio antes de cualquier despliegue.
 - La fecha de creacion y actualizacion que figura en los metadatos (2026) es posterior a la publicacion de la familia Qwen2.5; no se ha podido verificar su significado.
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/MinaMila/Qwen2.5-1.5B-ReGiFT
+- Repositorio Hugging Face del adaptador: https://huggingface.co/MinaMila/Qwen2.5-1.5B-ReGiFT
 - Modelo base Qwen/Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

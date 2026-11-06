@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| asimov1-getup-handoff | Política RL de get-up + handoff (ONNX) | no disponible | 390 floats (5 x 78) | 24/24 prona; 15/24 supina (simulación) | Apache-2.0 | HuggingFace, 0 descargas |
+| asimov1-getup-handoff | Política RL de get-up + handoff (ONNX) | no disponible | 390 floats (5 x 78) | 24/24 prona; 15/24 supina (simulación) | Apache-2.0 | Hugging Face, 0 descargas |
 | Política de marcha de Menlo Research | Política RL de locomoción | no disponible | 78 floats | no disponible en esta información | no disponible | Referenciada en el repo `menloresearch/asimov-1` |
 | Alternativas de get-up para Asimov 1 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -112,7 +112,7 @@ No se dispone de datos de otras políticas comparables de get-up para este robot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JonathanHawkins/asimov1-getup-handoff
+- Hugging Face: https://huggingface.co/JonathanHawkins/asimov1-getup-handoff
 - Vídeo de replay: https://huggingface.co/JonathanHawkins/asimov1-getup-handoff/resolve/main/replay.mp4
 - Repositorio de Asimov 1 (Menlo Research): https://github.com/menloresearch/asimov-1
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repos adicionales) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

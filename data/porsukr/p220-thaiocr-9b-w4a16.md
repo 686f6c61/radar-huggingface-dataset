@@ -71,11 +71,11 @@ Notas de la evaluacion segun el autor: todos los modelos abiertos se ejecutaron 
 
 | Modelo | Parametros | Contexto | ThaiOCRBench (media 13 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P220-ThaiOCR-9B-W4A16 | 9,4B | 32.768 | 0,674 | Apache-2.0 | HuggingFace (BF16, FP8, W4A16, NVFP4, GGUF) |
+| P220-ThaiOCR-9B-W4A16 | 9,4B | 32.768 | 0,674 | Apache-2.0 | Hugging Face (BF16, FP8, W4A16, NVFP4, GGUF) |
 | Qwen3.6-35B-A3B | no disponible | no disponible | 0,589 | no disponible | no disponible |
 | OpenThai 2.0 27B | 27B | no disponible | no disponible (el autor lo menciona como superado por P220) | no disponible | no disponible |
-| P110-ThaiOCR-4B | 4B | no disponible | 0,572 | no disponible | HuggingFace |
-| Qwen3.5-9B (base) | 9B | no disponible | 0,462 | Apache-2.0 | HuggingFace |
+| P110-ThaiOCR-4B | 4B | no disponible | 0,572 | no disponible | Hugging Face |
+| Qwen3.5-9B (base) | 9B | no disponible | 0,462 | Apache-2.0 | Hugging Face |
 
 El modelo destaca por ofrecer la mayor precision de la comparativa abierta con solo 9,4B de parametros, frente a alternativas de 27B y 35B. La licencia Apache-2.0 facilita el uso comercial, a diferencia de otros modelos de la comparativa cuya licencia no se detalla en la informacion disponible.
 
@@ -87,12 +87,12 @@ El modelo destaca por ofrecer la mayor precision de la comparativa abierta con s
 - El modo thinking esta desactivado por defecto y el modelo no fue entrenado con el; activarlo podria degradar la calidad.
 - La cuantizacion INT4 puede introducir perdida de precision frente a BF16; el autor afirma haberla calibrado y validado sobre los conjuntos completos, pero no se publican metricas comparativas W4A16 frente a BF16 en la informacion disponible.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo base Qwen3.5-9B y los terminos aplicables deben verificarse de forma independiente.
-- El modelo tiene muy poca traccion en HuggingFace (8 descargas, 0 likes) y fue creado en octubre de 2026; no hay validacion independiente de sus resultados mas alla de la model card del autor.
+- El modelo tiene muy poca traccion en Hugging Face (8 descargas, 0 likes) y fue creado en octubre de 2026; no hay validacion independiente de sus resultados mas alla de la model card del autor.
 - Los benchmarks comparan con modelos cerrados (GPT-6.1 Sol, GPT-6 Luna) mediante API, con condiciones de thinking distintas, lo que limita la comparabilidad directa.
 
 ## Enlaces
 
-- HuggingFace (esta variante): https://huggingface.co/PorsukR/P220-ThaiOCR-9B-W4A16
+- Hugging Face (esta variante): https://huggingface.co/PorsukR/P220-ThaiOCR-9B-W4A16
 - Modelo base BF16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B
 - Variante FP8: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-FP8
 - Variante NVFP4: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-NVFP4

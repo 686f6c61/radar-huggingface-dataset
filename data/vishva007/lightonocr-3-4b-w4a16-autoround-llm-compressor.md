@@ -70,10 +70,10 @@ Preprocesado recomendado por el autor: renderizar documentos escaneados y PDF a 
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-LLM-Compressor | 4,54 mil millones | No especificado (config. de despliegue 8192) | Safetensors, compressed-tensors, W4A16 | Apache 2.0 | HuggingFace, 0 descargas |
-| lightonai/LightOnOCR-3-4B (modelo base) | 4,54 mil millones | No disponible | Safetensors, BF16 | Apache 2.0 | HuggingFace |
-| Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-GPTQ | No disponible | No disponible | AutoGPTQ / Marlin, W4A16 | Apache 2.0 | HuggingFace |
-| Vishva007/LightOnOCR-3-4B-W4A16-AutoRound | No disponible | No disponible | AutoRound nativo, W4A16 | Apache 2.0 | HuggingFace |
+| Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-LLM-Compressor | 4,54 mil millones | No especificado (config. de despliegue 8192) | Safetensors, compressed-tensors, W4A16 | Apache 2.0 | Hugging Face, 0 descargas |
+| lightonai/LightOnOCR-3-4B (modelo base) | 4,54 mil millones | No disponible | Safetensors, BF16 | Apache 2.0 | Hugging Face |
+| Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-GPTQ | No disponible | No disponible | AutoGPTQ / Marlin, W4A16 | Apache 2.0 | Hugging Face |
+| Vishva007/LightOnOCR-3-4B-W4A16-AutoRound | No disponible | No disponible | AutoRound nativo, W4A16 | Apache 2.0 | Hugging Face |
 
 No se dispone en la información proporcionada de datos de otros modelos de OCR de la competencia (por ejemplo, alternativas de otros fabricantes) que permitan una comparación de parámetros, contexto o rendimiento.
 
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de datos de otros modelos de OCR 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-LLM-Compressor
+- Repositorio Hugging Face: https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-LLM-Compressor
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - Variante AutoRound nativa: https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound
 - Variante AutoGPTQ / Marlin: https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-GPTQ

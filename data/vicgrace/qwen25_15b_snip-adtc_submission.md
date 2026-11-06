@@ -76,8 +76,8 @@ La comparación directa con el Qwen2.5-1.5B-Instruct original es la más pertine
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Vicgrace/qwen25_15b_snip.adtc_submission)
-- [Repositorio HuggingFace (variante sin snip)](https://huggingface.co/Vicgrace/qwen25_15b_adtc_submission)
+- [Repositorio Hugging Face](https://huggingface.co/Vicgrace/qwen25_15b_snip.adtc_submission)
+- [Repositorio Hugging Face (variante sin snip)](https://huggingface.co/Vicgrace/qwen25_15b_adtc_submission)
 - [GitHub adtc-2026-submission](https://github.com/Vicgrace01/adtc-2026-submission)
 - [GitHub Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni) (relacionado con la familia Qwen2.5)
 - [Unsloth](https://github.com/unslothai/unsloth) (herramienta de entrenamiento utilizada)

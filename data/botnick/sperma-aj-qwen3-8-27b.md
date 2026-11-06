@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sperma-aj-qwen3.8-27b` es un fine-tune de tipo LoRA sobre el modelo `0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored`, publicado por el usuario `botnick` en HuggingFace. Se trata de un ajuste orientado a *roleplay* y adopción de persona, no a mejora de capacidades generales: el objetivo declarado es encarnar dos personajes concretos, SPERMA (en inglés) y Aj (en tailandés), con un estilo deliberadamente telegráfico y sin bloque de razonamiento previo ("thinking off"). El modelo conserva la arquitectura del base, etiquetada como `Qwen3_5ForCausalLM` con 26.895.998.464 parámetros (26,90 B) y descrita por el autor como un híbrido Qwen3.5 de 27B que combina *gated-delta-net* con atención completa.
+`sperma-aj-qwen3.8-27b` es un fine-tune de tipo LoRA sobre el modelo `0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored`, publicado por el usuario `botnick` en Hugging Face. Se trata de un ajuste orientado a *roleplay* y adopción de persona, no a mejora de capacidades generales: el objetivo declarado es encarnar dos personajes concretos, SPERMA (en inglés) y Aj (en tailandés), con un estilo deliberadamente telegráfico y sin bloque de razonamiento previo ("thinking off"). El modelo conserva la arquitectura del base, etiquetada como `Qwen3_5ForCausalLM` con 26.895.998.464 parámetros (26,90 B) y descrita por el autor como un híbrido Qwen3.5 de 27B que combina *gated-delta-net* con atención completa.
 
 El ajuste es muy ligero en datos: 1.321 ejemplos curados en total, de los que 1.041 se usaron para entrenamiento y 121 para validación, con una pérdida de evaluación final de aproximadamente 0,99. La relevancia de esta ficha es acotada: se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, con licencia "other" sin texto legal público en la información disponible, y cuyo base es explícitamente *uncensored* y *abliterated*. Su interés práctico se limita a experimentos de personalización de estilo, *prompting* por system prompt y despliegue local en cuantizaciones GGUF de 18-21 GB.
 
@@ -102,7 +102,7 @@ Diferencias clave frente a las alternativas: este modelo no compite en capacidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/botnick/sperma-aj-qwen3.8-27b
+- Modelo en Hugging Face: https://huggingface.co/botnick/sperma-aj-qwen3.8-27b
 - Modelo base: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
 - llama.cpp (cuantización GGUF `Q5_K_M` / `Q6_K`): https://github.com/ggml-org/llama.cpp
 - PEFT (entrenamiento LoRA): https://github.com/huggingface/peft

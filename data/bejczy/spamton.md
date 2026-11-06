@@ -80,6 +80,6 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bejczy/Spamton
+- Modelo en Hugging Face: https://huggingface.co/Bejczy/Spamton
 - Descarga directa del GGUF: https://huggingface.co/Bejczy/Spamton/resolve/main/SPAMTON-G-SPAMTON-0.8B-VOID.gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

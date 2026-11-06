@@ -77,7 +77,7 @@ No se dispone de datos comparativos con modelos de la misma categoría en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FenomAI/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/FenomAI/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Framework Unsloth: https://github.com/unslothai/unsloth/

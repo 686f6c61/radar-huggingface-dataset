@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Haimiya Mio LoRA es un adaptador de bajo rango (LoRA) publicado por el usuario nikitchxdd en HuggingFace para generar imágenes del personaje Haimiya Mio (灰宮美桜), de la obra Haimiya-senpai wa Kowakute Kawaii. No es un modelo de difusión completo ni un modelo de lenguaje: es un ajuste fino ligero que se aplica sobre runwayml/stable-diffusion-v1-5, por lo que hereda su U-Net, su VAE y el text encoder CLIP ViT-L/14, y únicamente modifica un subconjunto reducido de pesos. El repositorio declara la librería diffusers y la etiqueta text-to-image.
+Haimiya Mio LoRA es un adaptador de bajo rango (LoRA) publicado por el usuario nikitchxdd en Hugging Face para generar imágenes del personaje Haimiya Mio (灰宮美桜), de la obra Haimiya-senpai wa Kowakute Kawaii. No es un modelo de difusión completo ni un modelo de lenguaje: es un ajuste fino ligero que se aplica sobre runwayml/stable-diffusion-v1-5, por lo que hereda su U-Net, su VAE y el text encoder CLIP ViT-L/14, y únicamente modifica un subconjunto reducido de pesos. El repositorio declara la librería diffusers y la etiqueta text-to-image.
 
 El adaptador se activa con la palabra clave haimiya_mio, que la model card recomienda acompañar de etiquetas descriptivas como 1girl, solo, silver hair, wolf cut, blue eyes, piercings y ear piercing, además de varios conjuntos de ropa predefinidos: chaqueta negra de chándal con gafas en la cabeza y cuello alto, uniforme escolar con blazer y corbata, traje de doncella, vestido gótico negro con hombros descubiertos y gorro negro con imperdibles y gargantilla.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Plataforma | Modelo base | Palabra de activacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikitchxdd/haimiya-mio-lora (este) | HuggingFace | Stable Diffusion 1.5 | haimiya_mio | CreativeML Open RAIL-M | Repositorio publico con 0 descargas y 0 likes |
+| nikitchxdd/haimiya-mio-lora (este) | Hugging Face | Stable Diffusion 1.5 | haimiya_mio | CreativeML Open RAIL-M | Repositorio publico con 0 descargas y 0 likes |
 | Haimiya Mio (PixAI, id 2027045172809477671) | PixAI | no disponible | no disponible | no disponible | Uso en la plataforma PixAI |
 | Mio Haimiya LoRA de Linh Pham (PixAI, id 2049751661900070102) | PixAI | no disponible | no disponible | no disponible | Uso en la plataforma PixAI |
 | Mio Haimiya - V1 (Civitai, id 2633636) | Civitai | Illustrious (familia SDXL) | Mio_Haimiya88 | no disponible en la busqueda | Publico en Civitai |
@@ -95,7 +95,7 @@ La diferencia principal entre alternativas es la familia del modelo base: las ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitchxdd/haimiya-mio-lora
+- Modelo en Hugging Face: https://huggingface.co/nikitchxdd/haimiya-mio-lora
 - Modelo base: https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Haimiya Mio en PixAI (id 2027045172809477671): https://pixai.art/en/model/2027045172809477671
 - Mio Haimiya LoRA de Linh Pham en PixAI (id 2049751661900070102): https://pixai.art/en/model/2049751661900070102

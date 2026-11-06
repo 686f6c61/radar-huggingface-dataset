@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/User387984723/wan22experimental
+- Repositorio Hugging Face: https://huggingface.co/User387984723/wan22experimental
 - Guía de ajuste de bloques (CivArchive): https://civarchive.com/articles/17635/22-block-guide-experimentation
 - Página de donación del autor (Ko-fi): https://ko-fi.com/cubeyai

@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento cuantitativos para establecer una comparac
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1-optiq8)
+- [Modelo en Hugging Face](https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1-optiq8)
 - [Modelo base: google/gemma-4-26b-a4b](https://huggingface.co/google/gemma-4-26b-a4b) (referencia, no se ha verificado su existencia real)

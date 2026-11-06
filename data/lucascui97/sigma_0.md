@@ -83,5 +83,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucascui97/Sigma_0
+- Modelo en Hugging Face: https://huggingface.co/Lucascui97/Sigma_0
 - Codigo asociado (release v1.0.0, commit `e02e6325a87738491b2ca182bdd244da47ab162c`): https://github.com/Cuixxx/Sigma_0/tree/v1.0.0

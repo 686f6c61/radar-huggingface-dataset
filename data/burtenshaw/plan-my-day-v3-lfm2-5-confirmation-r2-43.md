@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/burtenshaw/plan-my-day-v3-lfm2.5-confirmation-r2-43
+- Modelo en Hugging Face: https://huggingface.co/burtenshaw/plan-my-day-v3-lfm2.5-confirmation-r2-43
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Space de demostracion: https://huggingface.co/spaces/burtenshaw/plan-my-day
 - Dataset de datos sinteticos: https://huggingface.co/datasets/burtenshaw/plan-my-day-v3-data

@@ -93,6 +93,6 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/turnercore/needle-point-v10
+- Hugging Face: https://huggingface.co/turnercore/needle-point-v10
 - Versión anterior (needle-automaticity-v9): https://huggingface.co/turnercore/needle-automaticity-v9
 - Proyecto cactus-compute/needle (independiente, mismo nombre): https://github.com/cactus-compute/needle

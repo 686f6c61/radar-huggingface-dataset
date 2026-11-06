@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/gemma-3-4b-it_SFT_lora_ssaqs` es un artefacto alojado en HuggingFace cuyo nombre sugiere un ajuste fino mediante LoRA (Low-Rank Adaptation) y entrenamiento supervisado (SFT) sobre el modelo base Gemma 3 4B IT de Google. El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con pesos de adaptador LoRA y no con un modelo completo de 4.000 millones de parametros, lo que implica que para su uso es necesario cargar el modelo base subyacente por separado. La cadena "ssaqs" del identificador no viene explicada en ninguna parte de la documentacion disponible.
+`xw17/gemma-3-4b-it_SFT_lora_ssaqs` es un artefacto alojado en Hugging Face cuyo nombre sugiere un ajuste fino mediante LoRA (Low-Rank Adaptation) y entrenamiento supervisado (SFT) sobre el modelo base Gemma 3 4B IT de Google. El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con pesos de adaptador LoRA y no con un modelo completo de 4.000 millones de parametros, lo que implica que para su uso es necesario cargar el modelo base subyacente por separado. La cadena "ssaqs" del identificador no viene explicada en ninguna parte de la documentacion disponible.
 
-El autor figura como `xw17` y la model card es la plantilla generada automaticamente por HuggingFace, sin ningun campo completado: no declara autor real, licencia, idiomas, tipo de modelo, datos de entrenamiento ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 2 de octubre de 2026 con apenas 15 segundos de diferencia, lo que apunta a un artefacto de experimentacion personal mas que a un modelo con soporte o mantenimiento.
+El autor figura como `xw17` y la model card es la plantilla generada automaticamente por Hugging Face, sin ningun campo completado: no declara autor real, licencia, idiomas, tipo de modelo, datos de entrenamiento ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 2 de octubre de 2026 con apenas 15 segundos de diferencia, lo que apunta a un artefacto de experimentacion personal mas que a un modelo con soporte o mantenimiento.
 
 Por todo ello, esta ficha no puede certificar capacidades concretas del modelo. La informacion que sigue distingue de forma explicita entre datos confirmados (practicamente ninguno), inferencias razonables a partir del identificador del repositorio y campos marcados como "no disponible".
 
@@ -68,8 +68,8 @@ No hay informacion suficiente para establecer una comparativa rigurosa. A contin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| `xw17/gemma-3-4b-it_SFT_lora_ssaqs` | adaptador sobre base de 4B (no confirmado) | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Gemma 3 4B IT (modelo base presumible) | 4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible en la informacion proporcionada |
+| `xw17/gemma-3-4b-it_SFT_lora_ssaqs` | adaptador sobre base de 4B (no confirmado) | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Gemma 3 4B IT (modelo base presumible) | 4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible en la informacion proporcionada |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Los resultados de busqueda disponibles no contienen informacion sobre modelos comparables: se refieren a productos de OpenAI (ChatGPT, GPT-4) sin relacion con este artefacto.
@@ -88,7 +88,7 @@ Los resultados de busqueda disponibles no contienen informacion sobre modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_ssaqs
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_ssaqs
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo. Los resultados de la busqueda web no contienen enlaces relevantes.

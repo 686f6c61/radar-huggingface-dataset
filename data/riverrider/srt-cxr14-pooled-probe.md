@@ -73,7 +73,7 @@ La significación estadística del ensamblaje se evaluó con bootstrap agrupado 
 - El checkpoint de las sondas es minúsculo (una matriz de pesos, un bias y estadísticas de normalización por backbone), por lo que su carga y uso en memoria es despreciable.
 - Sin embargo, la inferencia requiere ejecutar los tres backbones congelados (gemma4, aria, qwen3omni) para extraer las características de cada imagen. Estos son modelos multimodales de gran tamaño, por lo que se necesita una GPU con VRAM suficiente para alojar cada backbone de forma secuencial o simultánea.
 - No se proporcionan datos de VRAM específica, latencia ni throughput. Como referencia orientativa, modelos del tamaño de gemma4 o qwen3omni suelen requerir al menos 24-48 GB de VRAM en precisión fp16 para inferencia, dependiendo de la variante.
-- Opciones de despliegue: al ser un artefacto de investigación, no está pensado para producción. El código de reproducción está en el repositorio SRT (`scripts/cxr_probe_ensemble.py`). Para extraer características se puede usar cualquier framework que soporte los backbones (HuggingFace Transformers, vLLM, etc.), pero el ensamblaje final es un simple promedio de logits en PyTorch.
+- Opciones de despliegue: al ser un artefacto de investigación, no está pensado para producción. El código de reproducción está en el repositorio SRT (`scripts/cxr_probe_ensemble.py`). Para extraer características se puede usar cualquier framework que soporte los backbones (Hugging Face Transformers, vLLM, etc.), pero el ensamblaje final es un simple promedio de logits en PyTorch.
 
 ## Comparativa con modelos similares
 
@@ -98,7 +98,7 @@ La comparativa directa con otros modelos de clasificación de ChestX-ray14 no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RiverRider/srt-cxr14-pooled-probe
+- Modelo en Hugging Face: https://huggingface.co/RiverRider/srt-cxr14-pooled-probe
 - Modelo hermano (sonda individual sobre gemma4): https://huggingface.co/RiverRider/srt-cxr14-linear-probe
 - Repositorio SRT (scripts de reproducción): https://github.com/space-bacon/SRT (paper en `arxiv/paper.md`)
 - Paper original de ChestX-ray14: Wang et al. 2017, arXiv:1705.02315 (https://arxiv.org/abs/1705.02315)

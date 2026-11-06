@@ -84,7 +84,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-0.6B
+- Repositorio Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-0.6B
 - Modelo oficial: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

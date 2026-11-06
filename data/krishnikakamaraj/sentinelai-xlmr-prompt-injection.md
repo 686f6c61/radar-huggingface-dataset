@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sentinelAI-xlmr-prompt-injection es un modelo publicado en HuggingFace por el usuario KrishnikaKamaraj cuyo identificador sugiere que se trata de un clasificador basado en XLM-RoBERTa orientado a la deteccion de prompt injection (inyeccion de instrucciones maliciosas en prompts de entrada). La informacion disponible en la ficha de HuggingFace es minima: no se declara pipeline, licencia, idiomas soportados ni descripcion tecnica, y el modelo registra 0 descargas y 1 like en el momento de la consulta.
+sentinelAI-xlmr-prompt-injection es un modelo publicado en Hugging Face por el usuario KrishnikaKamaraj cuyo identificador sugiere que se trata de un clasificador basado en XLM-RoBERTa orientado a la deteccion de prompt injection (inyeccion de instrucciones maliciosas en prompts de entrada). La informacion disponible en la ficha de Hugging Face es minima: no se declara pipeline, licencia, idiomas soportados ni descripcion tecnica, y el modelo registra 0 descargas y 1 like en el momento de la consulta.
 
 Por la nomenclatura del repositorio cabe inferir que hereda la arquitectura de XLM-RoBERTa (transformer encoder multilingue con normalizacion por capas y atencion completa), pero este extremo no esta confirmado por la documentacion publicada. Tampoco se especifica el numero de parametros, la longitud de contexto soportada ni el conjunto de datos de entrenamiento.
 
@@ -27,7 +27,7 @@ La relevancia de un modelo de este tipo radica en el contexto actual de desplieg
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la ficha de HuggingFace. El nombre del repositorio incluye el token "xlmr", lo que apunta a una base XLM-RoBERTa (encoder transformer multilingue, con variantes habituales de 125M a 560M parametros), pero no hay confirmacion documental ni configuracion visible (config.json, tokenizer, etc.) en los datos proporcionados.
+No se ha publicado informacion sobre la arquitectura en la ficha de Hugging Face. El nombre del repositorio incluye el token "xlmr", lo que apunta a una base XLM-RoBERTa (encoder transformer multilingue, con variantes habituales de 125M a 560M parametros), pero no hay confirmacion documental ni configuracion visible (config.json, tokenizer, etc.) en los datos proporcionados.
 
 Tampoco se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, si se aplico fine-tuning supervisado sobre un corpus etiquetado de intentos de inyeccion, ni si se emplearon tecnicas de ajuste como RLHF, DPO o clasificacion con cabeza lineal. No se puede verificar ninguna innovacion tecnica concreta.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sentinelAI-xlmr-prompt-injection | no disponible | no disponible | deteccion de prompt injection (inferida) | no disponible | HuggingFace, 0 descargas |
+| sentinelAI-xlmr-prompt-injection | no disponible | no disponible | deteccion de prompt injection (inferida) | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con otros clasificadores de prompt injection. No se han identificado en la informacion proporcionada modelos de referencia con los que contrastar parametros, contexto, rendimiento o licencia.
@@ -89,6 +89,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KrishnikaKamaraj/sentinelAI-xlmr-prompt-injection
+- Hugging Face: https://huggingface.co/KrishnikaKamaraj/sentinelAI-xlmr-prompt-injection
 
 No se han encontrado otros enlaces (papers, blogs, repositorios, demos) en la informacion proporcionada.

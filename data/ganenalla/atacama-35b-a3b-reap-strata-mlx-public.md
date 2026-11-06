@@ -93,6 +93,6 @@ La comparativa con Qwen2.5-Coder-32B, DeepSeek-Coder-V2-Lite y CodeLlama-34B se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganenalla/atacama-35b-a3b-reap-strata-mlx-public
+- Modelo en Hugging Face: https://huggingface.co/Ganenalla/atacama-35b-a3b-reap-strata-mlx-public
 - Términos de licencia: https://atacamaodr.com/terms
 - Descarga de la app AtacamaODR: https://atacamaodr.com/download

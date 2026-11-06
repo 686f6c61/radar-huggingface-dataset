@@ -86,5 +86,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harpreet22happy/granite-3.3-8b-kleister-lora
+- Repositorio Hugging Face: https://huggingface.co/harpreet22happy/granite-3.3-8b-kleister-lora
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.3-8b-instruct

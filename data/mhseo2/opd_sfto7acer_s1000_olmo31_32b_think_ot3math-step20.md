@@ -85,7 +85,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 - Reproducibilidad: el código se referencia por hash de árbol (`mopdRL`, `f1bcc9eb...`) sin URL; reproducir el entrenamiento exige acceso a la infraestructura descrita (8× H100) y al profesor servido en vLLM.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_sfto7acer_s1000_olmo31_32b_think_ot3math-step20
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_sfto7acer_s1000_olmo31_32b_think_ot3math-step20
 - Modelo base (alumno, SFT matemático): https://huggingface.co/mhseo2/sft_olmo3base7b_acereason11_math_n204800-step1000
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think (revisión `97ade57a9cc5`)
 - Dataset de prompts: OpenThoughts3 math (53.105 preguntas sin respuestas), citado en la model card sin URL

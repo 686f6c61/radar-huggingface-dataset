@@ -2,7 +2,7 @@
 
 ## Resumen
 
-olmo3-7b-mt-answer_alright_v2 es un checkpoint de ajuste fino de 7.298.011.136 parámetros (aproximadamente 7,3B) construido sobre la familia OLMo 3 y publicado por el usuario farhatkevin en HuggingFace. No es un modelo de propósito general: es el artefacto de un experimento controlado sobre "reasoning cues", es decir, sobre cómo la presencia de una palabra concreta al inicio de un párrafo modifica la precisión del modelo en tareas de razonamiento matemático. El checkpoint parte de un modelo previo denominado duck_all_v2 y se ha entrenado con un presupuesto de 10.000 millones de tokens, semilla 1337 y 4.769 pasos, exportado en safetensors BF16.
+olmo3-7b-mt-answer_alright_v2 es un checkpoint de ajuste fino de 7.298.011.136 parámetros (aproximadamente 7,3B) construido sobre la familia OLMo 3 y publicado por el usuario farhatkevin en Hugging Face. No es un modelo de propósito general: es el artefacto de un experimento controlado sobre "reasoning cues", es decir, sobre cómo la presencia de una palabra concreta al inicio de un párrafo modifica la precisión del modelo en tareas de razonamiento matemático. El checkpoint parte de un modelo previo denominado duck_all_v2 y se ha entrenado con un presupuesto de 10.000 millones de tokens, semilla 1337 y 4.769 pasos, exportado en safetensors BF16.
 
 Su relevancia es metodológica más que de producto. Los resultados publicados en la model card muestran que sustituir el prefijo "Answer:" por "Alright," en la tarea reddit_to_flashcards hunde el pass@1 en MATH-500 del 25,02% (sin prefijo) al 5,65%, mientras que prefijos como "duck" (32,17%), "okay" (33,64%) o "hmm" (35,00%) lo elevan por encima de la línea base. Es decir, un cambio superficial de un solo token de superficie altera drásticamente el rendimiento, lo que lo convierte en material útil para estudiar sensibilidad a prompts, contaminación de plantillas y robustez de evaluaciones.
 
@@ -88,7 +88,7 @@ Estimaciones derivadas del numero real de parametros (7.298.011.136); no son dat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| farhatkevin/olmo3-7b-mt-answer_alright_v2 | 7,298B | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | MATH-500 pass@1 entre 2,85% y 35,00% segun prefijo |
+| farhatkevin/olmo3-7b-mt-answer_alright_v2 | 7,298B | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | MATH-500 pass@1 entre 2,85% y 35,00% segun prefijo |
 | Modelo base OLMo 3 7B (familia de la que deriva) | Orden de 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico (AI2) | No disponible en la informacion proporcionada |
 | Mistral-7B-Instruct | 7,2B | 32k (segun documentacion del modelo) | Apache 2.0 | Ampliamente desplegado | No comparable directamente con MATH-500 de este informe |
 | Qwen2.5-7B-Instruct | 7,6B | 32k nativo, ampliable (segun documentacion del modelo) | Apache 2.0 | Ampliamente desplegado | No comparable directamente con MATH-500 de este informe |
@@ -111,7 +111,7 @@ Advertencia: la comparativa con Mistral y Qwen se ofrece solo como referencia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farhatkevin/olmo3-7b-mt-answer_alright_v2
+- Modelo en Hugging Face: https://huggingface.co/farhatkevin/olmo3-7b-mt-answer_alright_v2
 - Especificacion del experimento: https://github.com/sophicle/reason/blob/1b9cd6429642c26d7c42820bc48fb86020a124bb/collab/kevin/2026-09-13.md
 - Resultados validados: https://github.com/sophicle/reason/tree/results-kevin/results/kevin/answer_alright_v2
 - Commit de la receta original de entrenamiento: `a21aad24c5f3873d4fdc74f9ef145f978801131b` (dentro del repositorio del experimento)

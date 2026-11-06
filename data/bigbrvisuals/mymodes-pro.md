@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BigBrVisuals/MyModes-Pro es un checkpoint de generación de texto publicado en HuggingFace por el usuario BigBrVisuals. El repositorio declara la etiqueta `gpt2` en sus metadatos, lo que apunta a una arquitectura transformer decoder-only de la familia GPT-2, y el peso real de los safetensors confirma 354.823.168 parámetros totales (~355 M), un tamaño equivalente al de GPT-2 medium. El pipeline declarado es `text-generation` y la librería de referencia es `transformers`.
+BigBrVisuals/MyModes-Pro es un checkpoint de generación de texto publicado en Hugging Face por el usuario BigBrVisuals. El repositorio declara la etiqueta `gpt2` en sus metadatos, lo que apunta a una arquitectura transformer decoder-only de la familia GPT-2, y el peso real de los safetensors confirma 354.823.168 parámetros totales (~355 M), un tamaño equivalente al de GPT-2 medium. El pipeline declarado es `text-generation` y la librería de referencia es `transformers`.
 
-La relevancia del modelo es limitada y debe enmarcarse con cautela: la model card es la plantilla genérica autogenerada por HuggingFace, sin ninguna sección completada. No hay información sobre datos de entrenamiento, procedimiento, hiperparámetros, licencia, idiomas ni evaluación. Con 446 descargas y 0 likes en el momento de la consulta, se trata de un checkpoint de perfil bajo, sin validación comunitaria ni documentación técnica.
+La relevancia del modelo es limitada y debe enmarcarse con cautela: la model card es la plantilla genérica autogenerada por Hugging Face, sin ninguna sección completada. No hay información sobre datos de entrenamiento, procedimiento, hiperparámetros, licencia, idiomas ni evaluación. Con 446 descargas y 0 likes en el momento de la consulta, se trata de un checkpoint de perfil bajo, sin validación comunitaria ni documentación técnica.
 
 Desde el punto de vista práctico, el interés principal es el desajuste entre el tamaño declarado de los pesos y el tamaño del repositorio: 354,8 M de parámetros en fp16 ocuparían aproximadamente 0,7 GB, y en fp32 unos 1,4 GB, mientras que el repositorio ocupa 11,4 GB. Eso sugiere la presencia de múltiples formatos de pesos, estados de optimizador o checkpoints de entrenamiento intermedios, algo que conviene verificar antes de descargar el repositorio completo.
 
@@ -30,7 +30,7 @@ Desde el punto de vista práctico, el interés principal es el desajuste entre e
 
 La única evidencia sobre la arquitectura es la etiqueta `gpt2` incluida en los metadatos del Hub, más el uso de `transformers` y `safetensors`. Esto sitúa al modelo, con alta probabilidad, en la familia de transformers decoder-only con atención causal completa, normalización previa y tokenizador BPE, siguiendo el diseño de GPT-2. El recuento de 354.823.168 parámetros es consistente con la configuración de GPT-2 medium (24 capas, 16 cabezas, dimensión de modelo 1024), aunque no se ha confirmado que la configuración concreta sea esa.
 
-No hay ningún dato sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del dataset, ni si hubo ajuste por instrucciones mediante RLHF o DPO, ni hiperparámetros, ni precisión mixta utilizada, ni infraestructura de cómputo. La model card conserva la plantilla por defecto con todos los campos como `[More Information Needed]`. La etiqueta `arxiv:1910.09700` que aparece en los metadatos no remite a un artículo sobre el modelo: corresponde a Lacoste et al. (2019), el trabajo sobre estimación de emisiones de carbono que HuggingFace inserta automáticamente en la plantilla cuando el autor no la modifica. Es decir, la etiqueta es un artefacto de la plantilla, no una referencia técnica del modelo.
+No hay ningún dato sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del dataset, ni si hubo ajuste por instrucciones mediante RLHF o DPO, ni hiperparámetros, ni precisión mixta utilizada, ni infraestructura de cómputo. La model card conserva la plantilla por defecto con todos los campos como `[More Information Needed]`. La etiqueta `arxiv:1910.09700` que aparece en los metadatos no remite a un artículo sobre el modelo: corresponde a Lacoste et al. (2019), el trabajo sobre estimación de emisiones de carbono que Hugging Face inserta automáticamente en la plantilla cuando el autor no la modifica. Es decir, la etiqueta es un artefacto de la plantilla, no una referencia técnica del modelo.
 
 ## Capacidades
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BigBrVisuals/MyModes-Pro | 354,8 M | no disponible | no disponible | HuggingFace, sin documentación |
+| BigBrVisuals/MyModes-Pro | 354,8 M | no disponible | no disponible | Hugging Face, sin documentación |
 | GPT-2 medium | ~355 M | 1024 tokens | licencia modificada de MIT | Ampliamente disponible, con model card completa |
-| OPT-350m | ~350 M | 2048 tokens | licencia propia de Meta (uso comercial permitido con condiciones) | HuggingFace, model card completa |
-| Pythia-410m | ~410 M | 2048 tokens | Apache 2.0 | HuggingFace, con paper y evaluaciones publicadas |
+| OPT-350m | ~350 M | 2048 tokens | licencia propia de Meta (uso comercial permitido con condiciones) | Hugging Face, model card completa |
+| Pythia-410m | ~410 M | 2048 tokens | Apache 2.0 | Hugging Face, con paper y evaluaciones publicadas |
 
 La comparación es desigual: los tres modelos de referencia cuentan con documentación técnica, evaluación publicada y licencia explícita, mientras que MyModes-Pro carece de los tres elementos. En rendimiento no se puede comparar porque no hay métricas de MyModes-Pro. No disponible para cualquier otra alternativa relevante que no esté en esta tabla.
 
@@ -92,7 +92,7 @@ La comparación es desigual: los tres modelos de referencia cuentan con document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BigBrVisuals/MyModes-Pro
+- Modelo en Hugging Face: https://huggingface.co/BigBrVisuals/MyModes-Pro
 - Paper referenciado por la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimación de emisiones, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Repositorio, paper y demo del modelo: no disponibles (la model card indica `[More Information Needed]` en todos los campos).

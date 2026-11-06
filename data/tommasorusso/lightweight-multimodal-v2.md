@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tommasorusso/lightweight-multimodal-v2 es un repositorio alojado en HuggingFace que, pese a su identificador y a sus etiquetas (transformer, safetensors, lightweight-multimodal), no contiene un modelo entrenado ni un checkpoint funcional. Segun la propia model card, se trata de una nota de investigacion exploratoria ("Notes on Lightweight Multimodal") cuyo artefacto principal es un fichero `summary.md` que describe el alcance de una pregunta de investigacion, posibles factores de confusion, comparaciones propuestas y requisitos de reproducibilidad. El autor indica explicitamente que el repositorio no reclama mejoras en benchmarks, no ha completado ablaciones, no libera codigo y no publica un checkpoint entrenado.
+Tommasorusso/lightweight-multimodal-v2 es un repositorio alojado en Hugging Face que, pese a su identificador y a sus etiquetas (transformer, safetensors, lightweight-multimodal), no contiene un modelo entrenado ni un checkpoint funcional. Segun la propia model card, se trata de una nota de investigacion exploratoria ("Notes on Lightweight Multimodal") cuyo artefacto principal es un fichero `summary.md` que describe el alcance de una pregunta de investigacion, posibles factores de confusion, comparaciones propuestas y requisitos de reproducibilidad. El autor indica explicitamente que el repositorio no reclama mejoras en benchmarks, no ha completado ablaciones, no libera codigo y no publica un checkpoint entrenado.
 
 El unico dato numerico real disponible son 49.600 parametros totales declarados en los metadatos de safetensors, dentro de un repositorio de 0,0 GB. Esta cifra es varios ordenes de magnitud inferior a la de cualquier transformer multimodal operativo, lo que refuerza la interpretacion de que no se trata de un modelo desplegable. Las etiquetas de licencia (MIT) y de tematica (research-notes) son coherentes con un documento de trabajo, no con un artefacto de inferencia.
 
@@ -43,7 +43,7 @@ Sobre el entrenamiento no se declara nada: ni numero de tokens, ni composicion d
 
 - Estudio de metodologia de evaluacion: el repositorio puede usarse como plantilla para redactar el alcance de una comparacion experimental, listando factores de confusion y requisitos de reproducibilidad antes de ejecutar los experimentos.
 - Definicion de protocolos de comparacion emparejada: sirve como ejemplo de como describir baselines con presupuesto equivalente antes de reportar resultados.
-- Auditoria de trazabilidad de resultados: el documento exige versiones de dataset, comandos, semillas, hardware y registros en bruto, lo que resulta util como checklist para equipos que publican artefactos en HuggingFace.
+- Auditoria de trazabilidad de resultados: el documento exige versiones de dataset, comandos, semillas, hardware y registros en bruto, lo que resulta util como checklist para equipos que publican artefactos en Hugging Face.
 - Revision de afirmaciones en model cards: util para ilustrar buenas practicas de separacion entre hipotesis y evidencia empirica en repositorios de investigacion.
 - Docencia sobre publicacion reproducible: como caso de estudio de un repositorio que evita afirmaciones no verificadas.
 - Analisis de licencias y datos externos: el texto recuerda revisar los terminos de las fuentes de datos por separado cuando se combinan con datasets externos, algo aplicable a proyectos con licencias mixtas.
@@ -87,7 +87,7 @@ No disponible. Este repositorio no es un modelo desplegable, por lo que no es co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tommasorusso/lightweight-multimodal-v2
+- Repositorio en Hugging Face: https://huggingface.co/Tommasorusso/lightweight-multimodal-v2
 - Artefacto principal citado en la model card: `summary.md` (dentro del repositorio)
 - Documentacion citada en la model card: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible en la informacion proporcionada

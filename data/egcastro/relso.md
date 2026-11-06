@@ -4,7 +4,7 @@
 
 ReLSO es un modelo de inteligencia artificial desarrollado por el equipo de Smita Krishnaswamy en la Universidad de Yale, presentado en el artículo "Transformer-based protein generation with regularized latent space optimization" publicado en Nature Machine Intelligence en 2022. Se trata de un autoencoder variacional (VAE) basado en arquitectura Transformer, entrenado específicamente para modelar la relación entre secuencia de proteínas y su función o fitness. Su principal innovación consiste en regularizar el espacio latente durante el entrenamiento para que sea suave y estructurado, lo que permite realizar optimización mediante ascenso por gradientes directamente sobre ese espacio latente.
 
-El modelo resuelve el problema del diseño de proteínas asistido por computadora: dado un conjunto de secuencias etiquetadas con valores de fitness, ReLSO aprende un codificador que proyecta las secuencias a un espacio latente donde la función de fitness es continua y diferenciable. A partir de ahí, se pueden generar nuevas secuencias proteicas con propiedades mejoradas mediante gradientes ascendentes. Su relevancia actual radica en la creciente demanda de métodos de diseño de proteínas de novo, especialmente en biotecnología, farmacología y biología sintética. El repositorio de HuggingFace contiene los pesos del modelo en formato PyTorch, con un tamaño de 2,3 GB. Los detalles exactos del número de parámetros, la longitud de contexto y los idiomas soportados no están disponibles en la información proporcionada.
+El modelo resuelve el problema del diseño de proteínas asistido por computadora: dado un conjunto de secuencias etiquetadas con valores de fitness, ReLSO aprende un codificador que proyecta las secuencias a un espacio latente donde la función de fitness es continua y diferenciable. A partir de ahí, se pueden generar nuevas secuencias proteicas con propiedades mejoradas mediante gradientes ascendentes. Su relevancia actual radica en la creciente demanda de métodos de diseño de proteínas de novo, especialmente en biotecnología, farmacología y biología sintética. El repositorio de Hugging Face contiene los pesos del modelo en formato PyTorch, con un tamaño de 2,3 GB. Los detalles exactos del número de parámetros, la longitud de contexto y los idiomas soportados no están disponibles en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -71,8 +71,8 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/egcastro/ReLSO
+- Hugging Face: https://huggingface.co/egcastro/ReLSO
 - Repositorio de GitHub: https://github.com/KrishnaswamyLab/ReLSO-Guided-Generative-Protein-Design-using-Regularized-Transformers/tree/main
 - Paper en arXiv: https://arxiv.org/abs/2201.09948
 - Paper en Nature Machine Intelligence: https://www.nature.com/articles/s42256-022-00532-1
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2201.09948
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2201.09948

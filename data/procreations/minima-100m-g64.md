@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - ProCreations/minima-100m-g64](https://huggingface.co/ProCreations/minima-100m-g64)
+- [Hugging Face - ProCreations/minima-100m-g64](https://huggingface.co/ProCreations/minima-100m-g64)
 - [Repositorio minima de SSHDotCodes](https://github.com/SSHDotCodes/minima)
 - [Licencia LFM Open License v1.0 (LiquidAI)](https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M/blob/main/LICENSE)
-- [Perfil de ProCreations en HuggingFace](https://huggingface.co/ProCreations/models)
+- [Perfil de ProCreations en Hugging Face](https://huggingface.co/ProCreations/models)

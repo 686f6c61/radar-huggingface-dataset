@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mmBERT-small-tweeteval-offensive es un clasificador binario de texto que etiqueta tuits en ingles como ofensivos o no ofensivos. Lo publica el usuario de HuggingFace rptkiddle como fine-tune de jhu-clsp/mmBERT-small, un encoder de 140.642.306 parametros (unos 140,6 millones) perteneciente a la familia ModernBERT. El ajuste se ha realizado sobre el subconjunto "offensive" del dataset cardiffnlp/tweet_eval, con 11.916 tuits de entrenamiento y una particion de test de 860 tuits.
+mmBERT-small-tweeteval-offensive es un clasificador binario de texto que etiqueta tuits en ingles como ofensivos o no ofensivos. Lo publica el usuario de Hugging Face rptkiddle como fine-tune de jhu-clsp/mmBERT-small, un encoder de 140.642.306 parametros (unos 140,6 millones) perteneciente a la familia ModernBERT. El ajuste se ha realizado sobre el subconjunto "offensive" del dataset cardiffnlp/tweet_eval, con 11.916 tuits de entrenamiento y una particion de test de 860 tuits.
 
 El modelo no busca competir en el estado del arte, sino servir de material didactico para el seminario GESIS Introduction to Machine Learning for Text Analysis with Python. En el tercer dia del curso los participantes ajustan ellos mismos este modelo; esta copia existe para que puedan saltarse el entrenamiento y pasar directamente a la fase de evaluacion y analisis de metricas.
 
@@ -84,10 +84,10 @@ El autor no publica resultados en otros benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento en TweetEval (offensive) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rptkiddle/mmBERT-small-tweeteval-offensive | 140,6 M | no disponible | Exactitud 0,83; F1 macro 0,78 | MIT | HuggingFace, safetensors |
+| rptkiddle/mmBERT-small-tweeteval-offensive | 140,6 M | no disponible | Exactitud 0,83; F1 macro 0,78 | MIT | Hugging Face, safetensors |
 | Linea base TF-IDF + regresion logistica (misma particion) | no aplica | no aplica | Exactitud 0,80; F1 macro 0,69; recall ofensivo 0,35 | no disponible | Codigo en el repositorio del curso |
-| jhu-clsp/mmBERT-small (modelo base sin ajustar) | 140,6 M | no disponible | no disponible (sin cabeza de clasificacion) | no disponible en la informacion proporcionada | HuggingFace |
-| Otros clasificadores de lenguaje ofensivo en ingles (por ejemplo, variantes de RoBERTa ajustadas sobre TweetEval) | no disponible | no disponible | no disponible (no se han proporcionado resultados comparables) | no disponible | HuggingFace |
+| jhu-clsp/mmBERT-small (modelo base sin ajustar) | 140,6 M | no disponible | no disponible (sin cabeza de clasificacion) | no disponible en la informacion proporcionada | Hugging Face |
+| Otros clasificadores de lenguaje ofensivo en ingles (por ejemplo, variantes de RoBERTa ajustadas sobre TweetEval) | no disponible | no disponible | no disponible (no se han proporcionado resultados comparables) | no disponible | Hugging Face |
 
 Las unicas cifras comparables de las que se dispone son las del propio autor frente a su linea base clasica; para el resto de alternativas no hay datos en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ Las unicas cifras comparables de las que se dispone son las del propio autor fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rptkiddle/mmBERT-small-tweeteval-offensive
+- Modelo en Hugging Face: https://huggingface.co/rptkiddle/mmBERT-small-tweeteval-offensive
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Dataset TweetEval: https://huggingface.co/datasets/cardiffnlp/tweet_eval
 - Repositorio del curso GESIS: https://github.com/Rptkiddle/gesis-machine-learning-2026

@@ -107,7 +107,7 @@ Medido en una tarjeta de 32 GiB (RTX 5090), con CUDA 12.8+ y el motor NInfer com
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift-1.5-Qwen3.8-27B-NInfer | 27B | 262.144 | `.ninfer` unico, NVFP4/FP8 mixto | swift-open-license-1.0 | 0 descargas, 0 likes en HuggingFace |
+| Swift-1.5-Qwen3.8-27B-NInfer | 27B | 262.144 | `.ninfer` unico, NVFP4/FP8 mixto | swift-open-license-1.0 | 0 descargas, 0 likes en Hugging Face |
 | Swift-Qwen3.8-27B-NInfer (Swift 1.0) | 27B | 262.144 | `.ninfer` unico, misma receta y layout | swift-open-license-1.0 | 6.150 descargas, 10 likes |
 | Swift-Qwen3.8-27B (GGUF de terceros) | 27B | no disponible | GGUF en 2 partes, 113,4 GB | no disponible | 16.363 descargas, 32 likes |
 | Qwen3.8-27B base en NVFP4 | 27B | no disponible | NVFP4/FP8 | no disponible | no disponible |
@@ -130,7 +130,7 @@ Frente a Swift 1.0, el rendimiento medido es practicamente identico en velocidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptainArni/Swift-1.5-Qwen3.8-27B-NInfer
+- Modelo en Hugging Face: https://huggingface.co/CaptainArni/Swift-1.5-Qwen3.8-27B-NInfer
 - Predecesor Swift 1.0: https://huggingface.co/CaptainArni/Swift-Qwen3.8-27B-NInfer
 - Modelo base del artefacto: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-NVFP4
 - Perfil del autor: https://huggingface.co/CaptainArni

@@ -17,7 +17,7 @@ La cuantización ASHQ1 está actualmente en proceso de publicación: los archivo
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 1M tokens (nativa) |
 | Tipos de cuantizacion | ASHQ1 (cuantización híbrida). Archivos pendientes de publicación |
-| Idiomas soportados | Inglés (según etiqueta de HuggingFace). El modelo base menciona traducción en su descripción |
+| Idiomas soportados | Inglés (según etiqueta de Hugging Face). El modelo base menciona traducción en su descripción |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF |
 
@@ -30,7 +30,7 @@ No se han proporcionado datos sobre el proceso de entrenamiento, como el número
 ## Capacidades
 
 - Generación de texto y conversación para tareas generalistas.
-- Escritura y traducción automática (según la descripción del modelo base; la etiqueta de HuggingFace indica solo inglés).
+- Escritura y traducción automática (según la descripción del modelo base; la etiqueta de Hugging Face indica solo inglés).
 - Razonamiento y resolución de problemas multi-paso.
 - Generación de código y soporte para tareas de programación.
 - Tool calling / function calling, mencionado explícitamente en la descripción del modelo base.
@@ -73,14 +73,14 @@ No se dispone de datos detallados de modelos comparables en la información prop
 - Estado de publicación: los archivos de cuantización aún no están disponibles; la model card indica "Status: waiting on files".
 - Requiere un fork de llama.cpp con soporte para la arquitectura `spark2_5`; el llama.cpp estándar no puede ejecutar el modelo.
 - La matriz de importancia (imatrix) del modelo de 4B no es transferible al de 1.7B, por lo que la cuantización actual no está optimizada con imatrix.
-- La etiqueta de idioma de HuggingFace es solo inglés, aunque el modelo base menciona traducción en su descripción; esto puede limitar su uso en tareas multilingües.
+- La etiqueta de idioma de Hugging Face es solo inglés, aunque el modelo base menciona traducción en su descripción; esto puede limitar su uso en tareas multilingües.
 - Riesgo de alucinación: no se han proporcionado datos específicos sobre este aspecto.
 - Para uso en producción, es recomendable esperar a que el fork de llama.cpp se fusione en el repositorio principal (PR #27868) y a que se publiquen los cuants finales.
 
 ## Enlaces
 
-- HuggingFace del modelo cuantizado: https://huggingface.co/wepiqx/Spark-X2.5-1.7B-ASHQ1-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-1.7B
+- Hugging Face del modelo cuantizado: https://huggingface.co/wepiqx/Spark-X2.5-1.7B-ASHQ1-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Repositorio de GitHub de XHToken: https://github.com/XHToken/Spark-X2.5
 - Página del modelo en Ollama: https://ollama.com/SparkLLM/Spark-X2.5-1.7B:latest
 - Pull request de integración en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/27868

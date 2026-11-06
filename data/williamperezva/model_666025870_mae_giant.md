@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_666025870_mae_giant` es una implementación a escala "giant" de la arquitectura MAE (Masked Autoencoder), publicada por el usuario williamperezva en HuggingFace bajo licencia Apache 2.0. Según la model card, está diseñado para tareas multitarea, aunque no se especifican cuáles.
+El modelo `model_666025870_mae_giant` es una implementación a escala "giant" de la arquitectura MAE (Masked Autoencoder), publicada por el usuario williamperezva en Hugging Face bajo licencia Apache 2.0. Según la model card, está diseñado para tareas multitarea, aunque no se especifican cuáles.
 
 La arquitectura emplea atención flash, fusión mediante cross-attention, una cabecera multitarea, activación Mish, normalización ScaleNorm e inicialización Kaiming normal. El entrenamiento utiliza el optimizador AdamW con un programador de tasa de aprendizaje OneCycle.
 
@@ -71,4 +71,4 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williamperezva/model_666025870_mae_giant
+- Hugging Face: https://huggingface.co/williamperezva/model_666025870_mae_giant

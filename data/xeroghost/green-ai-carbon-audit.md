@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/XeroGhost/green-ai-carbon-audit
+- Repositorio de Hugging Face: https://huggingface.co/XeroGhost/green-ai-carbon-audit
 - Repositorio similar de Bk-1928: https://huggingface.co/Bk-1928/green-ai-carbon-audit
 - Repositorio similar de 24f1002802: https://huggingface.co/24f1002802/green-ai-carbon-audit/tree/main
 - Artículo de referencia sobre IA verde: https://arxiv.org/abs/2404.01157

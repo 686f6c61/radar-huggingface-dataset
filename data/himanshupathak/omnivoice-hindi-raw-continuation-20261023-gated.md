@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omnivoice-hindi-raw-continuation-20261023-gated es un modelo de texto a voz (text-to-speech) publicado por el usuario HimanshuPathak en HuggingFace. El identificador sugiere una continuación de entrenamiento ("continuation") sobre un modelo base denominado OmniVoice, especializada en hindi ("hindi") y sobre datos sin procesar ("raw"), con fecha de generación 2026-10-23 y acceso restringido ("gated"). El repositorio ocupa 36,8 GB y los pesos están en formato safetensors.
+Omnivoice-hindi-raw-continuation-20261023-gated es un modelo de texto a voz (text-to-speech) publicado por el usuario HimanshuPathak en Hugging Face. El identificador sugiere una continuación de entrenamiento ("continuation") sobre un modelo base denominado OmniVoice, especializada en hindi ("hindi") y sobre datos sin procesar ("raw"), con fecha de generación 2026-10-23 y acceso restringido ("gated"). El repositorio ocupa 36,8 GB y los pesos están en formato safetensors.
 
 La información pública disponible es mínima: la model card no detalla arquitectura, número de parámetros, contexto, datos de entrenamiento ni resultados de benchmarks. El pipeline declarado es text-to-speech y el único idioma etiquetado es hindi (código ISO "hi"). No consta licencia especificada ni documentación técnica adicional en los metadatos.
 
@@ -22,7 +22,7 @@ Su relevancia potencial radica en ser un modelo TTS específico para hindi, un i
 | Formato de pesos | safetensors |
 | Pipeline | text-to-speech |
 | Tamano del repositorio | 36,8 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-10-23 |
 | Ultima actualizacion | 2026-11-05 |
 
@@ -68,7 +68,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no se puede determinar si el uso comercial está permitido; es un riesgo legal relevante para producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para su adopción y puede implicar restricciones adicionales de uso.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para su adopción y puede implicar restricciones adicionales de uso.
 - Ausencia de model card técnica: no hay información sobre arquitectura, datos de entrenamiento, sesgos ni evaluación, lo que impide una validación rigurosa.
 - Riesgo de sesgos y calidad desigual: al no documentarse el corpus de entrenamiento, se desconoce la cobertura dialectal del hindi, el equilibrio de género y la calidad del audio de referencia.
 - Riesgo de alucinación acústica y artefactos: en TTS, la falta de evaluación publicada implica incertidumbre sobre naturalidad, prosodia y estabilidad en textos largos.
@@ -78,4 +78,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HimanshuPathak/omnivoice-hindi-raw-continuation-20261023-gated
+- Hugging Face: https://huggingface.co/HimanshuPathak/omnivoice-hindi-raw-continuation-20261023-gated

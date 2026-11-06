@@ -6,7 +6,7 @@ nile-academy/smollm3-3b-gguf es una conversión a GGUF del modelo SmolLM3-3B de 
 
 El modelo conserva los 3.075.098.624 parámetros del modelo base (aproximadamente 3,08 mil millones), por lo que se sitúa en la franja de los modelos pequeños que caben en GPU de consumo e incluso en CPU con memoria unificada. La licencia declarada es Apache-2.0, heredada del publicador original, y el repositorio se marca como `endpoints_compatible` y `conversational`. El autor advierte explícitamente de que la conversión no ha sido validada numéricamente frente al modelo original y de que es un candidato de desarrollo, no una versión apta para producción.
 
-Su relevancia es acotada pero concreta: ofrece una ruta reproducible y documentada (revisión fijada del modelo padre, revisión concreta de llama.cpp, hashes de entrada y salida en `conversion.json`) para desplegar SmolLM3-3B en entornos locales de generación de texto, con el foco puesto en la narración de audiolibros y la generación de explicaciones tipo clase magistral. A fecha de la ficha acumula 0 descargas y 0 valoraciones en HuggingFace, por lo que su adopción es todavía nula y no existe retroalimentación de terceros.
+Su relevancia es acotada pero concreta: ofrece una ruta reproducible y documentada (revisión fijada del modelo padre, revisión concreta de llama.cpp, hashes de entrada y salida en `conversion.json`) para desplegar SmolLM3-3B en entornos locales de generación de texto, con el foco puesto en la narración de audiolibros y la generación de explicaciones tipo clase magistral. A fecha de la ficha acumula 0 descargas y 0 valoraciones en Hugging Face, por lo que su adopción es todavía nula y no existe retroalimentación de terceros.
 
 ## Especificaciones tecnicas
 
@@ -104,7 +104,7 @@ No hay datos de rendimiento comparado disponibles para este repositorio, por lo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nile-academy/smollm3-3b-gguf
+- Repositorio Hugging Face: https://huggingface.co/nile-academy/smollm3-3b-gguf
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Revision fijada del modelo padre: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/tree/a07cc9a04f16550a088caea529712d1d335b0ac1
 - Conversor llama.cpp: https://github.com/ggml-org/llama.cpp

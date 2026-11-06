@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.1-3B-MNN-Q4-HQQ-B64 | 3.000 M | No disponible | MNN | Apache 2.0 | HuggingFace |
-| Nanbeige4.1-3B (original) | 3.000 M | No disponible | Safetensors (presumible) | Apache 2.0 | HuggingFace |
-| Conversiones GGUF de modelos de 3B | ~3.000 M | Variable | GGUF | Según modelo base | HuggingFace |
+| Nanbeige4.1-3B-MNN-Q4-HQQ-B64 | 3.000 M | No disponible | MNN | Apache 2.0 | Hugging Face |
+| Nanbeige4.1-3B (original) | 3.000 M | No disponible | Safetensors (presumible) | Apache 2.0 | Hugging Face |
+| Conversiones GGUF de modelos de 3B | ~3.000 M | Variable | GGUF | Según modelo base | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada. La comparación se limita a parámetros, formato y licencia.
 
@@ -87,5 +87,5 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/sujitvasanth/Nanbeige4.1-3B-MNN-Q4-HQQ-B64
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/sujitvasanth/Nanbeige4.1-3B-MNN-Q4-HQQ-B64
 - Modelo base Nanbeige4.1-3B: https://huggingface.co/Nanbeige/Nanbeige4.1-3B

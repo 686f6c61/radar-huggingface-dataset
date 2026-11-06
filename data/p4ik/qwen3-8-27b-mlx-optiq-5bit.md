@@ -89,7 +89,7 @@ La versión OptiQ 5bit ofrece el mejor equilibrio entre tamaño (17.67 GiB) y de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/p4ik/Qwen3.8-27B-MLX-OptiQ-5bit
+- Repositorio Hugging Face: https://huggingface.co/p4ik/Qwen3.8-27B-MLX-OptiQ-5bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog sobre Qwen3.8-27B en Apple Silicon: https://www.orcarouter.ai/blog/qwen-3-8-27b-mlx

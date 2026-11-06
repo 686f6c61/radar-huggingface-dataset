@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kaduri/smai-a4-mlp-cifar10` es un perceptrón multicapa (MLP) entrenado desde cero para clasificar imágenes del conjunto CIFAR-10 en 10 categorías. No es un modelo de lenguaje ni un modelo fundacional: se trata de la entrega de la pregunta 1 del Assignment 4 de la asignatura SMAI, publicada en HuggingFace con la librería `numpy` y pesos serializados en formato `.npz`. El repositorio ocupa 0,0 GB y acumula 0 descargas y 1 like en el momento de la consulta.
+`kaduri/smai-a4-mlp-cifar10` es un perceptrón multicapa (MLP) entrenado desde cero para clasificar imágenes del conjunto CIFAR-10 en 10 categorías. No es un modelo de lenguaje ni un modelo fundacional: se trata de la entrega de la pregunta 1 del Assignment 4 de la asignatura SMAI, publicada en Hugging Face con la librería `numpy` y pesos serializados en formato `.npz`. El repositorio ocupa 0,0 GB y acumula 0 descargas y 1 like en el momento de la consulta.
 
 La arquitectura es una red totalmente conectada de cuatro capas con anchuras [3072, 512, 256, 10], activación ReLU en las capas ocultas y salida lineal (logits) optimizada con entropía cruzada. El recuento declarado es de 1.707.274 parámetros, coherente con las dimensiones indicadas. Se entrenó con SGD plano (learning rate 0,05, batch de 64, 100 épocas, etiquetas verdaderas con p = 0 y semilla 1018), alcanzando una precisión de entrenamiento de 1,0000 y una precisión de test de 0,5466.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kaduri/smai-a4-mlp-cifar10 | 1.707.274 | Vector de 3072 dimensiones (32×32×3) | 0,5466 en test (publicado) | MIT | HuggingFace (`kaduri/smai-a4-mlp-cifar10`) |
+| kaduri/smai-a4-mlp-cifar10 | 1.707.274 | Vector de 3072 dimensiones (32×32×3) | 0,5466 en test (publicado) | MIT | Hugging Face (`kaduri/smai-a4-mlp-cifar10`) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables sobre otros modelos de la misma categoría (MLP docentes sobre CIFAR-10) en la información proporcionada, por lo que no se establece una comparación cuantitativa. Cualquier cifra de accuracy de terceros sobre CIFAR-10 requeriría consultar sus respectivas model cards, que no forman parte de esta búsqueda.
@@ -92,7 +92,7 @@ No se dispone de datos verificables sobre otros modelos de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaduri/smai-a4-mlp-cifar10
+- Hugging Face: https://huggingface.co/kaduri/smai-a4-mlp-cifar10
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
 - Repositorio de código: no disponible

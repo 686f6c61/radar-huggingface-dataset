@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Narra es un modelo publicado en HuggingFace por el usuario u organizacion DeepNarra bajo el identificador `DeepNarra/Narra`. La unica informacion verificable disponible en el momento de redactar esta ficha es su licencia (Apache 2.0), su region declarada (us) y las fechas de creacion y ultima actualizacion (3 de octubre de 2026, ambas identicas). No se ha publicado pipeline, idiomas soportados, arquitectura, numero de parametros ni ningun otro dato tecnico.
+Narra es un modelo publicado en Hugging Face por el usuario u organizacion DeepNarra bajo el identificador `DeepNarra/Narra`. La unica informacion verificable disponible en el momento de redactar esta ficha es su licencia (Apache 2.0), su region declarada (us) y las fechas de creacion y ultima actualizacion (3 de octubre de 2026, ambas identicas). No se ha publicado pipeline, idiomas soportados, arquitectura, numero de parametros ni ningun otro dato tecnico.
 
 La model card del repositorio no contiene mas que el bloque de metadatos de licencia: no hay descripcion del modelo, ni detalles de entrenamiento, ni instrucciones de uso, ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
@@ -84,6 +84,6 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeepNarra/Narra
+- Hugging Face: https://huggingface.co/DeepNarra/Narra
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos por el buscador no guardaban relacion con el modelo y se han descartado.

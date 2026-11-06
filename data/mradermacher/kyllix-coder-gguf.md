@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamaño,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Kyllix-Coder-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Kyllix-Coder-GGUF
 - Modelo de origen: https://huggingface.co/675uj/Kyllix-Coder

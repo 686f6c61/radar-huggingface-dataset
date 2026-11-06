@@ -81,7 +81,7 @@ La comparativa es limitada porque no hay datos de rendimiento publicados para DA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Geong/DARL
+- Modelo en Hugging Face: https://huggingface.co/Geong/DARL
 - Modelo base: https://huggingface.co/dots-studio/dots.ocr
 - Repositorio de código (referenciado en la model card): https://github.com/your-repo/DARL (enlace genérico, no verificado)
 - Paper (ECCV 2026): no se proporciona enlace directo; la cita bibliográfica está en la model card.

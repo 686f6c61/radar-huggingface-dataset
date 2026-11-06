@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo modelo, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace (8-bit): https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-8bit
-- Repositorio HuggingFace (4-bit): https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-4bit
-- Modelo original en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face (8-bit): https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-8bit
+- Repositorio Hugging Face (4-bit): https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-4bit
+- Modelo original en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3

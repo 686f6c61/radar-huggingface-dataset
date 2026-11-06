@@ -90,6 +90,6 @@ Los datos de FLUX.1 y SDXL corresponden a modelos ampliamente documentados y se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrismLive/PrismImage
+- Modelo en Hugging Face: https://huggingface.co/PrismLive/PrismImage
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo); los resultados devueltos no guardan relacion con PrismImage ni con generacion de imagenes.

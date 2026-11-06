@@ -84,7 +84,7 @@ La comparación con Qwen2.5-72B-Instruct es la más relevante: este merge hereda
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/MachiNoDolphin-Qwen2.5-72b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/MachiNoDolphin-Qwen2.5-72b-i1-GGUF
 - Modelo base: https://huggingface.co/KaraKaraWarehouse/MachiNoDolphin-Qwen2.5-72b
 - Cuantos estáticos del mismo modelo: https://huggingface.co/mradermacher/MachiNoDolphin-Qwen2.5-72b-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#MachiNoDolphin-Qwen2.5-72b-i1-GGUF

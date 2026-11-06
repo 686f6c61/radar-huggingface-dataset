@@ -77,12 +77,12 @@ La comparativa con otros modelos especializados en seguridad de codigo no esta d
 - La herramienta jBlaze es propietaria y no se publicara; el modelo es de codigo abierto (Apache 2.0) pero la metodologia de modificacion no es reproducible por terceros.
 - Riesgo de alucinacion: aunque la precision esta amplificada, no hay garantia de que todos los hallazgos sean correctos; se recomienda validacion humana de los resultados.
 - Sin datos de benchmarks publicados: no hay evidencia cuantitativa independiente del rendimiento en deteccion de vulnerabilidades.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - La fecha de creacion en los metadatos (2026-08-31) es posterior a la fecha actual, lo que puede indicar un error en los metadatos o un modelo muy reciente sin adopcion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity_v2
+- Hugging Face: https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity_v2
 - Repositorio de archivos: https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity_v2/tree/main
 - Version anterior (sin _v2): https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity
 - jBlaze: https://jblaze.dev

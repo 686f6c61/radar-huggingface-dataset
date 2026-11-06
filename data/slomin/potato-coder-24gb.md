@@ -114,7 +114,7 @@ No hay datos en la información proporcionada sobre otros modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Slomin/Potato-CODER-24GB
+- Modelo en Hugging Face: https://huggingface.co/Slomin/Potato-CODER-24GB
 - Modelo base (post-entrenamiento): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Rama de llama.cpp del autor: https://github.com/potato-os/llama.cpp

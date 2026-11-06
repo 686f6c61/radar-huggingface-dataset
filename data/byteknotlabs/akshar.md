@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Akshar es un modelo publicado en HuggingFace por el usuario byteknotlabs bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni información sobre capacidades o idiomas; únicamente incluye la declaración de licencia. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o sin difusión.
+Akshar es un modelo publicado en Hugging Face por el usuario byteknotlabs bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni información sobre capacidades o idiomas; únicamente incluye la declaración de licencia. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o sin difusión.
 
 No es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su contexto máximo a partir de la información disponible. La ficha se limita a documentar los pocos metadatos verificables (identificador, autor, licencia, fechas de creación y actualización) y a señalar explícitamente los datos que faltan, sin inferir especificaciones que el autor no ha publicado.
 
@@ -40,7 +40,7 @@ Tampoco se documentan innovaciones técnicas como decodificación especulativa, 
 
 - Evaluación exploratoria de repositorios recientes: dado que el modelo carece de documentación, un caso realista es inspeccionar sus archivos (configuración, tokenizador, pesos) para determinar su arquitectura y tamaño antes de plantear cualquier integración.
 - Prototipado interno con licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificación, por lo que podría probarse en entornos controlados una vez verificadas sus especificaciones reales.
-- Experimentación académica con modelos sin model card: útil como caso de estudio sobre reproducibilidad y documentación en el ecosistema HuggingFace.
+- Experimentación académica con modelos sin model card: útil como caso de estudio sobre reproducibilidad y documentación en el ecosistema Hugging Face.
 - Sustitución en pipelines existentes: solo tras validar formato de pesos y tokenizador compatibles con el stack de despliegue (por ejemplo, transformers o llama.cpp, si los archivos lo permiten).
 - Fine-tuning experimental: la licencia Apache 2.0 facilita adaptaciones, aunque sin conocer el tamaño no es posible estimar requisitos de GPU.
 - Auditoría de seguridad y sesgos: antes de cualquier uso, sería necesario ejecutar evaluaciones propias de sesgo y alucinación, ya que el autor no publica ninguna.
@@ -73,5 +73,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/byteknotlabs/Akshar
+- Hugging Face: https://huggingface.co/byteknotlabs/Akshar
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

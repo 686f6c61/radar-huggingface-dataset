@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| RickRain/smolvla0PercentMergedImperio100k | 450 M | Finetune VLA (SmolVLA) | Apache 2.0 | no disponible | Hub de HuggingFace, LeRobot |
-| lerobot/smolvla_base | ~450 M | VLA base | Apache 2.0 | no disponible | Hub de HuggingFace, LeRobot |
-| lerobot/pi0 | ~3.000 M (PI0, mayor escala) | VLA (flow matching) | licencia propia de Physical Intelligence (pesos abiertos via LeRobot) | no disponible | Hub de HuggingFace, LeRobot |
+| RickRain/smolvla0PercentMergedImperio100k | 450 M | Finetune VLA (SmolVLA) | Apache 2.0 | no disponible | Hub de Hugging Face, LeRobot |
+| lerobot/smolvla_base | ~450 M | VLA base | Apache 2.0 | no disponible | Hub de Hugging Face, LeRobot |
+| lerobot/pi0 | ~3.000 M (PI0, mayor escala) | VLA (flow matching) | licencia propia de Physical Intelligence (pesos abiertos via LeRobot) | no disponible | Hub de Hugging Face, LeRobot |
 | ACT (Action Chunking Transformer) | ~decenas de M | Politica de imitacion unimodal | Apache 2.0 | no disponible | Integrado en LeRobot |
 
 Frente al modelo base, este finetune no aporta ventajas documentadas; su valor depende de la calidad del dataset de entrenamiento del autor, que no esta disponible. Frente a PI0, SmolVLA es mucho mas ligero y accesible para hardware de consumo, a costa de capacidades potencialmente menores en tareas complejas. Frente a ACT, SmolVLA incorpora lenguaje natural y preentrenamiento vision-lenguaje, lo que generaliza mejor entre tareas.
@@ -80,7 +80,7 @@ Frente al modelo base, este finetune no aporta ventajas documentadas; su valor d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RickRain/smolvla0PercentMergedImperio100k
+- Modelo en Hugging Face: https://huggingface.co/RickRain/smolvla0PercentMergedImperio100k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Articulo de SmolVLA (arXiv): https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

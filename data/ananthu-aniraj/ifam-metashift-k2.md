@@ -72,9 +72,9 @@ La comparación se limita a modelos de clasificación de imágenes con backbone 
 
 | Modelo | Parametros | Contexto / entrada | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iFAM (metashift-k2) | 171,5 M | Imagen 224x224 px | Dos etapas con enmascarado duro de atención | Apache 2.0 | HuggingFace, requiere repo `ifam` |
-| DINOv2 (ViT-B/14) | Aprox. 86 M | Imagen 224x224 px (parche 14) | ViT auto-supervisado, una etapa | Apache 2.0 | HuggingFace, `transformers` |
-| CLIP (ViT-B/32) | Aprox. 88 M en el codificador de imagen (151 M en total con el de texto) | Imagen + texto | Contraste imagen-texto, una etapa | MIT, según su model card | HuggingFace, `transformers` |
+| iFAM (metashift-k2) | 171,5 M | Imagen 224x224 px | Dos etapas con enmascarado duro de atención | Apache 2.0 | Hugging Face, requiere repo `ifam` |
+| DINOv2 (ViT-B/14) | Aprox. 86 M | Imagen 224x224 px (parche 14) | ViT auto-supervisado, una etapa | Apache 2.0 | Hugging Face, `transformers` |
+| CLIP (ViT-B/32) | Aprox. 88 M en el codificador de imagen (151 M en total con el de texto) | Imagen + texto | Contraste imagen-texto, una etapa | MIT, según su model card | Hugging Face, `transformers` |
 
 No se dispone de cifras comparativas de precisión, robustez ante cambios de contexto ni coste de inferencia para ninguno de los tres modelos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -91,7 +91,7 @@ No se dispone de cifras comparativas de precisión, robustez ante cambios de con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ananthu-aniraj/ifam-metashift-k2
+- Modelo en Hugging Face: https://huggingface.co/ananthu-aniraj/ifam-metashift-k2
 - Articulo (arXiv): https://arxiv.org/abs/2506.08915
 - Repositorio de codigo: https://github.com/ananthu-aniraj/ifam
 - Cita del articulo: Aniraj, A., Dantas, C. F., Ienco, D., Marcos, D. "Two-stage Vision Transformers and Hard Masking offer Robust Object Representations", ICPR 2026.

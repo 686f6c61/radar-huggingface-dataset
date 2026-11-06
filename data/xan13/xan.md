@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xan13/Xan es un modelo publicado en HuggingFace por el usuario Xan13 bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. Se desconoce si se trata de un modelo de lenguaje, un modelo de vision, un adaptador (LoRA), un embedding o cualquier otro tipo de artefacto.
+Xan13/Xan es un modelo publicado en Hugging Face por el usuario Xan13 bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. Se desconoce si se trata de un modelo de lenguaje, un modelo de vision, un adaptador (LoRA), un embedding o cualquier otro tipo de artefacto.
 
 El repositorio presenta cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (2026-10-28T16:55:49Z), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. No hay pipeline declarado ni idiomas especificados, y los unicos tags presentes son `license:apache-2.0` y `region:us`.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de documentacion tecnica, esta ficha no puede confirmar n
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o un adaptador sobre otro modelo base.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o un adaptador sobre otro modelo base.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Cualquier afirmacion al respecto seria especulativa.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin informacion sobre la naturaleza del modelo. A modo de orientacion general para cualquier artefacto publicado en HuggingFace con estas caracteristicas:
+No es posible recomendar casos de uso concretos sin informacion sobre la naturaleza del modelo. A modo de orientacion general para cualquier artefacto publicado en Hugging Face con estas caracteristicas:
 
 - Evaluacion interna: descargar el repositorio y revisar los archivos (`config.json`, `tokenizer_config.json`, pesos) para determinar que tipo de modelo es antes de cualquier uso.
 - Prototipado experimental: si resulta ser un modelo de lenguaje, podria probarse en tareas de generacion de texto en entornos de laboratorio, sin garantias de calidad.
@@ -74,4 +74,4 @@ No disponible. Sin conocer la categoria, el tamano ni la tarea del modelo, no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xan13/Xan
+- Hugging Face: https://huggingface.co/Xan13/Xan

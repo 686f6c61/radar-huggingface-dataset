@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`luvtong/rdgdpo-symmetric-math-qwen3-4b-v07-seed0` es un ajuste fino publicado por el usuario luvtong en HuggingFace el 14 de septiembre de 2026 (ultima actualizacion, 15 de septiembre de 2026). El identificador sugiere que parte de la familia Qwen3-4B, que se ha entrenado con alguna variante de optimizacion por preferencias (etiquetada como RDG-DPO) sobre datos de matematicas de estructura simetrica, y que forma parte de una barrida de experimentos reproducible (version v07, semilla 0).
+`luvtong/rdgdpo-symmetric-math-qwen3-4b-v07-seed0` es un ajuste fino publicado por el usuario luvtong en Hugging Face el 14 de septiembre de 2026 (ultima actualizacion, 15 de septiembre de 2026). El identificador sugiere que parte de la familia Qwen3-4B, que se ha entrenado con alguna variante de optimizacion por preferencias (etiquetada como RDG-DPO) sobre datos de matematicas de estructura simetrica, y que forma parte de una barrida de experimentos reproducible (version v07, semilla 0).
 
-El repositorio ocupa 85,1 GB, un tamano muy superior al de un unico checkpoint de 4.000 millones de parametros en bf16 (en torno a 8 GB), lo que apunta a que acumula varios pesos, estados de optimizador o distintas semillas y versiones. No hay model card: la ficha de HuggingFace no publica pipeline, licencia, idiomas ni documentacion tecnica, por lo que cualquier dato mas alla del identificador y de los metadatos debe considerarse no confirmado.
+El repositorio ocupa 85,1 GB, un tamano muy superior al de un unico checkpoint de 4.000 millones de parametros en bf16 (en torno a 8 GB), lo que apunta a que acumula varios pesos, estados de optimizador o distintas semillas y versiones. No hay model card: la ficha de Hugging Face no publica pipeline, licencia, idiomas ni documentacion tecnica, por lo que cualquier dato mas alla del identificador y de los metadatos debe considerarse no confirmado.
 
 Su relevancia practica es doble. Por tamano, es candidato a inferencia local en GPU de consumo; por orientacion, sirve como artefacto de investigacion para estudiar el efecto de tecnicas de preferencia sobre razonamiento matematico en modelos pequenos. Con 0 descargas y 2 likes en el momento de la consulta, no existe evidencia publica de validacion independiente.
 
@@ -26,7 +26,7 @@ Su relevancia practica es doble. Por tamano, es candidato a inferencia local en 
 | Descargas | 0 |
 | Likes | 2 |
 | Tamano del repositorio | 85,1 GB |
-| Etiquetas de HuggingFace | safetensors, region:us |
+| Etiquetas de Hugging Face | safetensors, region:us |
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ Tampoco hay informacion sobre el numero de tokens de entrenamiento, la composici
 
 ## Capacidades
 
-Advertencia previa: la ficha de HuggingFace no documenta capacidades. Lo que sigue se deduce del identificador del modelo y de las caracteristicas publicas de la familia Qwen3-4B; no esta verificado sobre este checkpoint concreto.
+Advertencia previa: la ficha de Hugging Face no documenta capacidades. Lo que sigue se deduce del identificador del modelo y de las caracteristicas publicas de la familia Qwen3-4B; no esta verificado sobre este checkpoint concreto.
 
 - Generacion de texto y razonamiento en varios pasos, con enfasis declarado en el identificador sobre matematicas.
 - Resolucion de problemas matematicos, previsiblemente con cadenas de razonamiento intermedias, dado el dominio de entrenamiento indicado.
@@ -58,7 +58,7 @@ Advertencia previa: la ficha de HuggingFace no documenta capacidades. Lo que sig
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tablas de evaluacion (MMLU, GSM8K, MATH, HumanEval ni similares), y la busqueda web realizada no devolvio ningun articulo, blog o repositorio asociado al modelo: los unicos resultados obtenidos fueron paginas generales de Wikipedia, sin relacion con este checkpoint.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de evaluacion (MMLU, GSM8K, MATH, HumanEval ni similares), y la busqueda web realizada no devolvio ningun articulo, blog o repositorio asociado al modelo: los unicos resultados obtenidos fueron paginas generales de Wikipedia, sin relacion con este checkpoint.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ Las cifras siguientes son estimaciones orientativas para un modelo denso de apro
 - VRAM en 4 bits (GGUF Q4_K_M): aproximadamente 2,5-3 GB de pesos en reposo, con crecimiento por cache KV.
 - GPU de consumo compatibles: RTX 3060 12 GB y RTX 4060 Ti 16 GB en 4-8 bits; RTX 3090, RTX 4090 y RTX 5090 en fp16 con ventanas de contexto moderadas.
 - GPU de centro de datos: A100 40/80 GB, H100 80 GB o L40S para servicio con alta concurrencia y contexto largo; una unica A100 permite varias replicas en fp16.
-- Opciones de despliegue: vLLM, SGLang, TGI, TensorRT-LLM y HuggingFace Transformers para fp16; llama.cpp, Ollama y LM Studio previa conversion manual a GGUF; tambien es posible convertir a AWQ o GPTQ, ya que el repositorio solo publica safetensors.
+- Opciones de despliegue: vLLM, SGLang, TGI, TensorRT-LLM y Hugging Face Transformers para fp16; llama.cpp, Ollama y LM Studio previa conversion manual a GGUF; tambien es posible convertir a AWQ o GPTQ, ya que el repositorio solo publica safetensors.
 - Latencia y throughput: no disponibles. No se han publicado mediciones del autor ni de terceros, y no se puede calibrar sin conocer el tokenizador, la plantilla de chat y la longitud real de contexto soportada.
 
 ## Comparativa con modelos similares
@@ -101,5 +101,5 @@ Diferencias relevantes: frente a las tres alternativas, este checkpoint carece d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luvtong/rdgdpo-symmetric-math-qwen3-4b-v07-seed0
+- Hugging Face: https://huggingface.co/luvtong/rdgdpo-symmetric-math-qwen3-4b-v07-seed0
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los unicos resultados devueltos fueron paginas generales de Wikipedia (fr.wikipedia.org, www.wikipedia.org, en.wikipedia.org, ja.wikipedia.org), sin relacion con este checkpoint.

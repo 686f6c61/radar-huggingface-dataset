@@ -82,9 +82,9 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Tipo | Pasos objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| h3ErosMax_beta5_turbo_lora | LoRA rango 128 | 14-16 | minimax-h3-community-license-agreement | HuggingFace, 10 likes, 0 descargas |
-| 10Eros_Max_h3_hybrid_beta5 | Modelo base | no disponible | no disponible | HuggingFace (TenStrip) |
-| 10Eros_Max_h3_TURBO-hybrid_beta5 | Variante turbo del base | no disponible | no disponible | HuggingFace (TenStrip) |
+| h3ErosMax_beta5_turbo_lora | LoRA rango 128 | 14-16 | minimax-h3-community-license-agreement | Hugging Face, 10 likes, 0 descargas |
+| 10Eros_Max_h3_hybrid_beta5 | Modelo base | no disponible | no disponible | Hugging Face (TenStrip) |
+| 10Eros_Max_h3_TURBO-hybrid_beta5 | Variante turbo del base | no disponible | no disponible | Hugging Face (TenStrip) |
 
 ## Limitaciones y advertencias
 
@@ -101,9 +101,9 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NeuralDreamer/h3ErosMax_beta5_turbo_lora
+- Repositorio Hugging Face: https://huggingface.co/NeuralDreamer/h3ErosMax_beta5_turbo_lora
 - Modelo base: https://huggingface.co/TenStrip/10Eros-Max
 - Autor del modelo base: https://huggingface.co/TenStrip
-- Organizacion MiniMax en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organizacion MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI
 - Licencia MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante; las busquedas devolvieron unicamente paginas de inicio de sesion de Gmail sin relacion con el modelo.

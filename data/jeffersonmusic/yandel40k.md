@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JEFFERSONMUSIC/Yandel40K` es un repositorio publicado en HuggingFace por el usuario JEFFERSONMUSIC. La información técnica disponible es extremadamente limitada: únicamente se conoce la licencia Apache 2.0 y un tamaño de repositorio de 0,1 GB. No se ha publicado ninguna documentación, model card descriptiva, especificaciones de arquitectura, datos de entrenamiento ni benchmarks. El nombre del modelo sugiere una posible relación con contenido musical o de audio, pero no existe evidencia en los datos proporcionados para confirmarlo.
+El modelo `JEFFERSONMUSIC/Yandel40K` es un repositorio publicado en Hugging Face por el usuario JEFFERSONMUSIC. La información técnica disponible es extremadamente limitada: únicamente se conoce la licencia Apache 2.0 y un tamaño de repositorio de 0,1 GB. No se ha publicado ninguna documentación, model card descriptiva, especificaciones de arquitectura, datos de entrenamiento ni benchmarks. El nombre del modelo sugiere una posible relación con contenido musical o de audio, pero no existe evidencia en los datos proporcionados para confirmarlo.
 
 El repositorio no presenta descargas ni likes, lo que indica que es un lanzamiento reciente o muy poco difundido. A día de hoy, no es posible determinar si se trata de un modelo de lenguaje, un modelo de audio, un dataset o cualquier otro tipo de artefacto. Cualquier evaluación de capacidades o rendimiento resulta inviable sin información adicional.
 
@@ -53,5 +53,5 @@ No disponible. No se conocen modelos comparables debido a la falta de especifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JEFFERSONMUSIC/Yandel40K
+- Hugging Face: https://huggingface.co/JEFFERSONMUSIC/Yandel40K
 - Perfil del autor: https://huggingface.co/JEFFERSONMUSIC

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`netzkontrast/suno-music-video` no es un modelo de IA en el sentido convencional, sino una *skill* empaquetada como repositorio de HuggingFace para el motor de video `higgsfield-ai/higgsfield-video-engineer`. Su funcion es convertir una cancion de Suno (o cualquier pista de audio) en un videoclip animado en el que cada fotograma se dibuja por codigo y se renderiza en la GPU local mediante el path tracer WebGPU del kit. La skill se distribuye como codigo Python y JavaScript, no como pesos neuronales.
+`netzkontrast/suno-music-video` no es un modelo de IA en el sentido convencional, sino una *skill* empaquetada como repositorio de Hugging Face para el motor de video `higgsfield-ai/higgsfield-video-engineer`. Su funcion es convertir una cancion de Suno (o cualquier pista de audio) en un videoclip animado en el que cada fotograma se dibuja por codigo y se renderiza en la GPU local mediante el path tracer WebGPU del kit. La skill se distribuye como codigo Python y JavaScript, no como pesos neuronales.
 
 El principio de diseno es que la cancion actua como linea de tiempo: un script de ingesta (`suno_ingest.py`) analiza el audio para extraer BPM, downbeats, compases, secciones, transientes y el *drop*, parsea las etiquetas de letra de Suno y genera dos ficheros (`beatmap.json` y `video.json`) a partir de los cuales se computan todos los movimientos de camara, cambios de luz y cortes. No hay tiempos de plano codificados a mano, de modo que apuntar el mismo proyecto a otra cancion reajusta la pelicula automaticamente.
 
-El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, fue creado el 5 de noviembre de 2026 y no declara pipeline, licencia ni idiomas en los metadatos de HuggingFace (aunque la model card indica licencia MIT, heredada del repositorio anfitrion). Es relevante ahora como ejemplo de empaquetado de *agent skills* para tareas creativas con control determinista del render.
+El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, fue creado el 5 de noviembre de 2026 y no declara pipeline, licencia ni idiomas en los metadatos de Hugging Face (aunque la model card indica licencia MIT, heredada del repositorio anfitrion). Es relevante ahora como ejemplo de empaquetado de *agent skills* para tareas creativas con control determinista del render.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, fue cre
 | Longitud de contexto | no disponible (no aplica) |
 | Tipos de cuantizacion | no disponible (no aplica) |
 | Idiomas soportados | no disponible (la model card esta en ingles) |
-| Licencia | MIT (segun la model card; los metadatos de HuggingFace no la declaran) |
+| Licencia | MIT (segun la model card; los metadatos de Hugging Face no la declaran) |
 | Formato de pesos | no disponible (no hay pesos; el artefacto es codigo `.py`, `.mjs` y plantillas) |
 
 ## Arquitectura y entrenamiento
@@ -36,7 +36,7 @@ El pipeline tecnico es: `song.mp3 + suno.json → suno_ingest.py → beatmap.jso
 - Render local en GPU mediante path tracing WebGPU, con reanudacion por secciones.
 - Codificacion final con la pista de audio mezclada via FFmpeg.
 - Plantilla lista para usar que renderiza cualquier cancion sin modificaciones.
-- Integracion con el agente ML Intern de HuggingFace para generar el andamiaje del proyecto y estimar el presupuesto de render.
+- Integracion con el agente ML Intern de Hugging Face para generar el andamiaje del proyecto y estimar el presupuesto de render.
 - No incluye generacion de texto, razonamiento, codigo generativo, matematicas, vision, tool calling ni capacidades multilingues propias de un LLM.
 
 ## Casos de uso
@@ -67,7 +67,7 @@ No disponible. No se han proporcionado alternativas comparables en la informacio
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no genera texto, codigo ni imagenes mediante pesos; es codigo de automatizacion de render.
-- Los metadatos de HuggingFace no declaran licencia; la model card indica MIT, pero conviene verificar la coherencia con el repositorio anfitrion antes de uso comercial.
+- Los metadatos de Hugging Face no declaran licencia; la model card indica MIT, pero conviene verificar la coherencia con el repositorio anfitrion antes de uso comercial.
 - Depende de un repositorio externo (`higgsfield-ai/higgsfield-video-engineer`) y de su cadena de dependencias (Node ≥ 22.12, Chrome, FFmpeg, numpy, scipy); cambios en el host pueden romper la skill.
 - El coste de render es alto: unas 24 h por cancion de 3 minutos para finales en GPU de clase RTX 4090, lo que limita la iteracion sin renderizar antes el animatic.
 - Requiere audio como entrada obligatoria; los metadatos de Suno son opcionales, de modo que sin ellos se pierde el parseo de etiquetas de letra.
@@ -76,7 +76,7 @@ No disponible. No se han proporcionado alternativas comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/netzkontrast/suno-music-video
+- Hugging Face: https://huggingface.co/netzkontrast/suno-music-video
 - Repositorio anfitrion: https://github.com/higgsfield-ai/higgsfield-video-engineer
 - Andamiaje via ML Intern: https://hf.co/chat?mode=ml-intern&prompt=Scaffold%20a%20Suno%20music-video%20project%20from%20my%20song%20with%20the%20suno-music-video%20skill
 - Estimacion de presupuesto de render: https://hf.co/chat?mode=ml-intern&prompt=Estimate%20the%20render%20budget%20for%20my%20music%20video%20(song%20length%20and%20GPU)

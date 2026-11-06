@@ -2,7 +2,7 @@
 
 ## Resumen
 
-numbat es un checkpoint intermedio de preentrenamiento de un modelo de lenguaje a gran escala atribuido a una ejecucion de entrenamiento de Anthropic (clase Mythos), publicado en HuggingFace por el usuario Titaniumclock. El repositorio contiene 772 shards en formato safetensors que suman aproximadamente 7,72 TB de datos de tensores, con un total declarado de 6.849.377.242.584 parametros (unos 6,85 billones), segun el indice de safetensors. La model card describe una arquitectura hibrida de Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA) con capas Mixture-of-Experts (1.224 expertos, top-48 mas 1 compartido) y Multi-Token Prediction, cuantizada en NVFP4.
+numbat es un checkpoint intermedio de preentrenamiento de un modelo de lenguaje a gran escala atribuido a una ejecucion de entrenamiento de Anthropic (clase Mythos), publicado en Hugging Face por el usuario Titaniumclock. El repositorio contiene 772 shards en formato safetensors que suman aproximadamente 7,72 TB de datos de tensores, con un total declarado de 6.849.377.242.584 parametros (unos 6,85 billones), segun el indice de safetensors. La model card describe una arquitectura hibrida de Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA) con capas Mixture-of-Experts (1.224 expertos, top-48 mas 1 compartido) y Multi-Token Prediction, cuantizada en NVFP4.
 
 El modelo se presenta como una copia de evaluacion de un checkpoint de preentrenamiento (paso 1.830.000 de una ejecucion de aproximadamente 1,96 millones de pasos), sin post-entrenamiento ni RLHF. Incluye una implementacion de referencia completa en `modeling_numbat.py` y `configuration_numbat.py`, lo que permite cargar los tensores con `load_state_dict(strict=True)`. La relevancia es principalmente documental y de investigacion: se trata de un artefacto de gran tamano con arquitectura poco habitual (hibrida atencion lineal/MLA con MoE masivo) que puede interesar a quienes estudian arquitecturas de frontera y tecnicas de cuantizacion NVFP4.
 
@@ -79,4 +79,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Titaniumclock/numbat
+- Repositorio en Hugging Face: https://huggingface.co/Titaniumclock/numbat

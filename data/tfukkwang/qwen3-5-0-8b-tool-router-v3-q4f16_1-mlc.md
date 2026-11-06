@@ -23,7 +23,7 @@ Su relevancia es practica: cubre el hueco de los enrutadores de herramientas muy
 | Tamano del repositorio | 0,4 GB (0,43 GB de descarga segun el autor) |
 | Libreria de despliegue | mlc-llm / WebLLM 0.2.85 |
 | Modelo base | Qwen/Qwen3.5-0.8B |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -86,9 +86,9 @@ Las "guardas" son correcciones pequenas en el codigo de la aplicacion, por ejemp
 | Modelo | Parametros | Contexto | Evaluacion (aislado / con guardas) | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.5-0.8B-tool-router-v3 (este modelo) | 0,8B | no disponible | 71/82 / 79/82 | Apache 2.0 | MLC `q4f16_1` y `q4f32_1`; 0 descargas, 0 likes |
-| Qwen3.5-0.8B-tool-router-v2 | 0,8B | no disponible | 72/82 / 78/82 | Apache 2.0 | Version anterior del mismo autor, disponible en HuggingFace |
+| Qwen3.5-0.8B-tool-router-v2 | 0,8B | no disponible | 72/82 / 78/82 | Apache 2.0 | Version anterior del mismo autor, disponible en Hugging Face |
 | Router v2 de 2B (autor no indicado) | 2B | no disponible | 74/82 / 76/82 | no disponible | Usado como profesor en la generacion de datos; no se detalla su distribucion |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | No es un router; no comparable en esta prueba | Apache 2.0 | Safetensors y formatos derivados; disponible en HuggingFace |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | No es un router; no comparable en esta prueba | Apache 2.0 | Safetensors y formatos derivados; disponible en Hugging Face |
 
 No se dispone de datos de benchmarks estandar para ninguno de estos modelos en la informacion proporcionada, por lo que la comparacion se limita a la prueba de enrutado del autor.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks estandar para ninguno de estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-tool-router-v3-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-tool-router-v3-q4f16_1-MLC
 - Build alternativa `q4f32_1`: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-tool-router-v3-q4f32_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE

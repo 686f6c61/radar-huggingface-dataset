@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 125B + 51B embeddings | 262K | MoE híbrido GDN+QSA | no disponible | HuggingFace |
-| Qwen3.8-Flash-Next-MEP50 (este) | 118B | 262K | MoE híbrido podado | no disponible | HuggingFace |
+| Qwen3.8-Flash-Next (base) | 125B + 51B embeddings | 262K | MoE híbrido GDN+QSA | no disponible | Hugging Face |
+| Qwen3.8-Flash-Next-MEP50 (este) | 118B | 262K | MoE híbrido podado | no disponible | Hugging Face |
 | Qwen3.8-Max | 2.4T | no disponible | MoE (basado en Qwen 3.5) | no disponible | OpenLM.ai (anuncio) |
 
 La comparativa se limita a los modelos de la familia Qwen3.8, ya que no se dispone de información sobre alternativas de otros fabricantes con características equivalentes. La versión podada reduce el número de parámetros en ~7B, pero mantiene el contexto y la arquitectura general.
@@ -76,7 +76,7 @@ La comparativa se limita a los modelos de la familia Qwen3.8, ya que no se dispo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-MEP50)
+- [Modelo en Hugging Face](https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-MEP50)
 - [Repositorio del modelo base Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [Guía de ejecución local en unsloth](https://unsloth.ai/docs/models/qwen3.8-next)
 - [Discusión en foros de NVIDIA sobre Qwen3.8-Flash-Next](https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228)

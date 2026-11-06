@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `nick17728/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario nick17728 en HuggingFace utilizando Stable-Baselines3 y el framework RL Zoo, la infraestructura de referencia del ecosistema SB3 para entrenamiento y ajuste de hiperparametros de agentes de RL. No se trata de un modelo de lenguaje: es una politica entrenada para mapear observaciones visuales del juego a acciones discretas.
+El modelo `nick17728/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario nick17728 en Hugging Face utilizando Stable-Baselines3 y el framework RL Zoo, la infraestructura de referencia del ecosistema SB3 para entrenamiento y ajuste de hiperparametros de agentes de RL. No se trata de un modelo de lenguaje: es una politica entrenada para mapear observaciones visuales del juego a acciones discretas.
 
-El agente utiliza una politica convolucional (`CnnPolicy`, la CNN tipo Nature) que procesa pilas de 4 fotogramas a resolucion reducida, y fue entrenado durante 3.000.000 de pasos con un buffer de repeticion de 100.000 transiciones. El resultado declarado por el autor es una recompensa media de 682,50 con una desviacion tipica de 243,93 en el entorno indicado, una cifra no verificada por HuggingFace ni por terceros.
+El agente utiliza una politica convolucional (`CnnPolicy`, la CNN tipo Nature) que procesa pilas de 4 fotogramas a resolucion reducida, y fue entrenado durante 3.000.000 de pasos con un buffer de repeticion de 100.000 transiciones. El resultado declarado por el autor es una recompensa media de 682,50 con una desviacion tipica de 243,93 en el entorno indicado, una cifra no verificada por Hugging Face ni por terceros.
 
 Su relevancia es fundamentalmente metodologica: sirve como referencia reproducible para comparar algoritmos de RL sobre Atari (DQN frente a PPO, Rainbow o variantes con exploracion mejorada), para ilustrar el flujo de trabajo completo de RL Zoo y como punto de partida para experimentos de transferencia. El repositorio es pequeno (0,1 GB) y no acumula descargas ni valoraciones, por lo que carece de validacion comunitaria.
 
@@ -48,12 +48,12 @@ Los hiperparametros declarados son: `batch_size` = 32, `buffer_size` = 100.000, 
 - Depuracion visual de politicas: con `render_mode` = `rgb_array` se pueden grabar videos del agente y detectar comportamientos degenerados (por ejemplo, quedarse en una esquina ante ciertos estados).
 - Punto de partida para experimentos de ajuste fino o transferencia: reentrenar con variantes del entorno o con modificaciones del envoltorio (`AtariWrapper`) partiendo de estos pesos.
 - Estudio de sensibilidad a hiperparametros: comparar esta configuracion (learning rate 1e-4, buffer 100.000, 3M pasos) frente a alternativas usando el ajuste con Optuna de RL Zoo.
-- Prueba de integracion de HuggingFace Hub en el ciclo de vida de RL: subida y descarga de agentes con `push_to_hub` y `load_from_hub` como parte de un pipeline de CI.
+- Prueba de integracion de Hugging Face Hub en el ciclo de vida de RL: subida y descarga de agentes con `push_to_hub` y `load_from_hub` como parte de un pipeline de CI.
 - Banco de pruebas de consumo de recursos: agente muy ligero que permite validar despliegues en CPU o GPU de gama baja antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (metrica no verificada por HuggingFace):
+Datos declarados por el autor en la model card (metrica no verificada por Hugging Face):
 
 | Algoritmo | Entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -75,7 +75,7 @@ No se dispone en la informacion proporcionada de resultados comparativos verific
 
 | Modelo / alternativa | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nick17728/dqn-SpaceInvadersNoFrameskip-v4 | DQN (CnnPolicy) | SpaceInvadersNoFrameskip-v4 | 682,50 +/- 243,93 (no verificado) | no disponible | HuggingFace (0 descargas) |
+| nick17728/dqn-SpaceInvadersNoFrameskip-v4 | DQN (CnnPolicy) | SpaceInvadersNoFrameskip-v4 | 682,50 +/- 243,93 (no verificado) | no disponible | Hugging Face (0 descargas) |
 | Alternativas PPO sobre el mismo entorno | PPO | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | no disponible |
 | Alternativas Rainbow DQN | Rainbow DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | no disponible |
 | Alternativas A2C | A2C | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | no disponible |
@@ -96,7 +96,7 @@ Para una comparacion rigurosa habria que entrenar o localizar agentes con el mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nick17728/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/nick17728/dqn-SpaceInvadersNoFrameskip-v4
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (framework de entrenamiento y ajuste): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable-Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

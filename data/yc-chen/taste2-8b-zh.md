@@ -68,7 +68,7 @@ No se dispone de comparativas publicadas con otros modelos de lenguaje hablado f
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/YC-Chen/TASTE2-8B-ZH)
+- [Modelo en Hugging Face](https://huggingface.co/YC-Chen/TASTE2-8B-ZH)
 - [Colección de checkpoints TASTE2](https://huggingface.co/collections/YC-Chen/taste2)
 - [Página del proyecto](https://gitycc.github.io/TASTE2-Homepage/)
 - [Paper TASTE2 (PDF)](https://gitycc.github.io/TASTE2-Homepage/assets/taste2-paper.pdf)

@@ -23,7 +23,7 @@ La relevancia actual de Athena-9B-mlx radica en su enfoque en eficiencia: un mod
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de Athena-9B-mlx corresponde, segun los tags del repositorio en HuggingFace, a la familia Qwen3.5, aunque la model card oficial no detalla la estructura interna (numero de capas, dimensiones ocultas, atencion, etc.). El modelo se distribuye en formato MLX, el framework de aprendizaje automatico de Apple optimizado para silicio de Apple, y esta cuantizado a 6 bits, lo que reduce el tamano del archivo a 7,3 GB y permite su ejecucion en equipos con 8-16 GB de RAM unificada.
+La arquitectura de Athena-9B-mlx corresponde, segun los tags del repositorio en Hugging Face, a la familia Qwen3.5, aunque la model card oficial no detalla la estructura interna (numero de capas, dimensiones ocultas, atencion, etc.). El modelo se distribuye en formato MLX, el framework de aprendizaje automatico de Apple optimizado para silicio de Apple, y esta cuantizado a 6 bits, lo que reduce el tamano del archivo a 7,3 GB y permite su ejecucion en equipos con 8-16 GB de RAM unificada.
 
 No se dispone de informacion sobre el proceso de entrenamiento: no se especifican el numero de tokens utilizados, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF o DPO. Tampoco se documentan innovaciones tecnicas mas alla de la cuantizacion nativa y la integracion con el motor de inferencia Anvil, que gestiona la memoria de forma unificada para reducir el overhead. La ausencia de estos datos limita la evaluacion de la calidad del entrenamiento y de las posibles limitaciones derivadas del mismo.
 
@@ -71,12 +71,12 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 - Dependencia del ecosistema Apple: al estar en formato MLX, el modelo no puede ejecutarse directamente en hardware no Apple. Cualquier despliegue en servidores con GPU NVIDIA o AMD requiere una conversion previa que no esta documentada.
 - Rendimiento no verificado: la cifra de 110+ tokens por segundo no esta respaldada por una metodologia publica. Los resultados pueden variar segun el modelo de Mac, la version de macOS, la carga del sistema y la longitud del contexto.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, modificacion y redistribucion, pero no se especifican restricciones adicionales sobre el uso del nombre o la marca. Se recomienda revisar los terminos completos de la licencia antes de su integracion en productos comerciales.
-- Soporte limitado: el repositorio tiene solo 24 descargas y 0 likes en HuggingFace, lo que sugiere una adopcion muy temprana y una comunidad reducida. La documentacion es escasa y no hay garantias de mantenimiento a largo plazo.
+- Soporte limitado: el repositorio tiene solo 24 descargas y 0 likes en Hugging Face, lo que sugiere una adopcion muy temprana y una comunidad reducida. La documentacion es escasa y no hay garantias de mantenimiento a largo plazo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Solstice-AI/Athena-9B-mlx
-- Organizacion Solstice-AI en HuggingFace: https://huggingface.co/Solstice-AI
+- Repositorio en Hugging Face: https://huggingface.co/Solstice-AI/Athena-9B-mlx
+- Organizacion Solstice-AI en Hugging Face: https://huggingface.co/Solstice-AI
 - Repositorio de Anvil Runtime en GitHub: https://github.com/Solstice-Labs/anvil
 - Sitio web de Solstice-AI: https://solstice-ai.co
 - Pagina del modelo en FriendliAI: https://friendli.ai/models/Solstice-AI/Athena-9B-mlx

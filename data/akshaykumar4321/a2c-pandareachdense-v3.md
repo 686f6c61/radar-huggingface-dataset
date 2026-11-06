@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Modelo de aprendizaje por refuerzo que implementa un agente A2C (Advantage Actor-Critic) entrenado para resolver el entorno PandaReachDense-v3, un problema de control robótico en el que un brazo Panda debe alcanzar un objetivo en un espacio continuo. Desarrollado por Akshaykumar4321 utilizando la librería stable-baselines3 y publicado en HuggingFace como ejemplo de aplicación de algoritmos on-policy en robótica.
+Modelo de aprendizaje por refuerzo que implementa un agente A2C (Advantage Actor-Critic) entrenado para resolver el entorno PandaReachDense-v3, un problema de control robótico en el que un brazo Panda debe alcanzar un objetivo en un espacio continuo. Desarrollado por Akshaykumar4321 utilizando la librería stable-baselines3 y publicado en Hugging Face como ejemplo de aplicación de algoritmos on-policy en robótica.
 
 Su relevancia radica en servir como referencia para comparar el rendimiento de A2C frente a otros algoritmos de RL en el mismo entorno, así como para demostrar el flujo de trabajo de carga y evaluación de agentes entrenados con stable-baselines3. No es un modelo de lenguaje: su arquitectura se compone de redes neuronales de actor y crítico, y no se dispone de información sobre el número de parámetros ni sobre la arquitectura interna.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Entorno | Metrica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akshaykumar4321/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | mean_reward -0.22 +/- 0.10 | no disponible | HuggingFace |
-| PAkshayV/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | HuggingFace |
-| AnyKey42/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | HuggingFace |
+| Akshaykumar4321/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | mean_reward -0.22 +/- 0.10 | no disponible | Hugging Face |
+| PAkshayV/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | Hugging Face |
+| AnyKey42/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | Hugging Face |
 
 Los tres modelos comparten el mismo algoritmo y entorno, y parecen ser variantes o copias del mismo agente. No se dispone de datos comparativos adicionales.
 

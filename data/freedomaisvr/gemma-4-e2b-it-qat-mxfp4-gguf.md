@@ -79,7 +79,7 @@ Nota: los datos de Gemma 3 y Qwen2.5-VL son orientativos y pueden variar segun l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FreedomAISVR/Gemma-4-E2B-it-QAT-MXFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/FreedomAISVR/Gemma-4-E2B-it-QAT-MXFP4-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Pagina oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Informe tecnico de Gemma 4: https://arxiv.org/html/2607.02770v1

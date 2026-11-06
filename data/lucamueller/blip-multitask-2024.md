@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucamueller/blip-multitask-2024 es un repositorio de HuggingFace publicado por el usuario Lucamueller que contiene una implementacion propia de la arquitectura BLIP orientada a tareas multitarea. Segun la propia model card, no se trata de un modelo entrenado ni de un lanzamiento con pesos listos para produccion, sino de un punto de partida reproducible con una configuracion explicita y un checkpoint de inicializacion. El autor lo etiqueta como variante "xlarge", aunque el recuento real de parametros almacenados en el fichero safetensors es de solo 16.576 parametros, lo que contradice esa etiqueta y confirma que se trata de un artefacto de prueba de humo, no de un modelo de gran escala.
+Lucamueller/blip-multitask-2024 es un repositorio de Hugging Face publicado por el usuario Lucamueller que contiene una implementacion propia de la arquitectura BLIP orientada a tareas multitarea. Segun la propia model card, no se trata de un modelo entrenado ni de un lanzamiento con pesos listos para produccion, sino de un punto de partida reproducible con una configuracion explicita y un checkpoint de inicializacion. El autor lo etiqueta como variante "xlarge", aunque el recuento real de parametros almacenados en el fichero safetensors es de solo 16.576 parametros, lo que contradice esa etiqueta y confirma que se trata de un artefacto de prueba de humo, no de un modelo de gran escala.
 
 El proposito declarado del repositorio es servir como esqueleto para experimentos: incluye el codigo de modelo y un punto de entrada ejecutable (predict.py), un config.json con la configuracion de arquitectura generada, un training_args.json con la receta de experimento por defecto y un model.safetensors valido unicamente como inicializacion. La model card insiste en que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -61,12 +61,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye especificaciones ni resultados de checkpoints comparables. El unico artefacto relacionado identificado en la busqueda web es sppereira/blip-multitask, otro repositorio de HuggingFace, pero no se aportan datos de parametros, contexto o rendimiento que permitan una comparacion rigurosa. La arquitectura de referencia de la familia (BLIP) no cuenta aqui con cifras verificables en la informacion suministrada.
+No disponible. La informacion proporcionada no incluye especificaciones ni resultados de checkpoints comparables. El unico artefacto relacionado identificado en la busqueda web es sppereira/blip-multitask, otro repositorio de Hugging Face, pero no se aportan datos de parametros, contexto o rendimiento que permitan una comparacion rigurosa. La arquitectura de referencia de la familia (BLIP) no cuenta aqui con cifras verificables en la informacion suministrada.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucamueller/blip-multitask-2024 | 16.576 | no disponible | no disponible (sin entrenar) | bsd-3-clause | HuggingFace, 0 descargas |
-| sppereira/blip-multitask | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Lucamueller/blip-multitask-2024 | 16.576 | no disponible | no disponible (sin entrenar) | bsd-3-clause | Hugging Face, 0 descargas |
+| sppereira/blip-multitask | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Salesforce BLIP (arquitectura de referencia) | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,8 +83,8 @@ No disponible. La informacion proporcionada no incluye especificaciones ni resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucamueller/blip-multitask-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/Lucamueller/models
+- Modelo en Hugging Face: https://huggingface.co/Lucamueller/blip-multitask-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/Lucamueller/models
 - Repositorio relacionado sppereira/blip-multitask: https://huggingface.co/sppereira/blip-multitask
 - LLM Leaderboard & AI Model Benchmarks (septiembre 2026): https://benchlm.ai/
 - Artificial Analysis, comparativa de modelos: https://artificialanalysis.ai/leaderboards/models

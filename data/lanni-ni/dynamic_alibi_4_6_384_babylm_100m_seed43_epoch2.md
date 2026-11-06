@@ -65,7 +65,7 @@ En la búsqueda web se han encontrado dos modelos de la misma serie: `dynamic_al
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch2)
+- [Hugging Face del modelo](https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch2)
 - [Modelo relacionado epoch4](https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch4)
 - [Modelo relacionado epoch6](https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6)
 - [Paper de ALiBi (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

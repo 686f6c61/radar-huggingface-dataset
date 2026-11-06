@@ -126,10 +126,10 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_WGA
-- Modelo base en HuggingFace: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_WGA
+- Modelo base en Hugging Face: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utilizables son los anteriores, extraidos de la informacion de HuggingFace y de la propia model card. No se dispone de paper asociado, blog, demo ni repositorio adicional en la informacion proporcionada.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utilizables son los anteriores, extraidos de la informacion de Hugging Face y de la propia model card. No se dispone de paper asociado, blog, demo ni repositorio adicional en la informacion proporcionada.

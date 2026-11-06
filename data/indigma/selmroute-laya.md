@@ -6,7 +6,7 @@ SeLMRoute-Laya es un router de despliegue basado en CatBoost que predice el rend
 
 El pipeline completo es: consulta → evidencia semántica de Laya → vector ProbabilityMass de 40 dimensiones → 20 puntuaciones predichas → ranking de candidatos. Técnicamente es un `CatBoostRegressor` con objetivo `MultiRMSE` que consume características numéricas, nunca texto crudo. La entrada se construye con 8 probabilidades binarias y 8 distribuciones ordinales de cuatro niveles (8 + 8 × 4 = 40 valores).
 
-Su interés actual está en que hace explícita la representación usada para enrutar: 16 juicios semánticos interpretables y tipados en lugar de embeddings opacos o clústeres de ejemplos similares, que es el enfoque dominante en la literatura previa de model routing. El repositorio de HuggingFace ocupa 0,0 GB y registraba 0 descargas y 0 likes en el momento de la consulta.
+Su interés actual está en que hace explícita la representación usada para enrutar: 16 juicios semánticos interpretables y tipados en lugar de embeddings opacos o clústeres de ejemplos similares, que es el enfoque dominante en la literatura previa de model routing. El repositorio de Hugging Face ocupa 0,0 GB y registraba 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -105,7 +105,7 @@ La información disponible no incluye especificaciones detalladas de routers alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Indigma/SeLMRoute-Laya
+- Modelo en Hugging Face: https://huggingface.co/Indigma/SeLMRoute-Laya
 - Paper: https://arxiv.org/abs/2609.34736
 - Código fuente: https://github.com/Indigma-Innovations/SeLMRoute
 - Instrucciones de enrutado en vivo (notebook 3): https://github.com/Indigma-Innovations/SeLMRoute#6-notebook-3-optional-live-routing-of-a-new-query

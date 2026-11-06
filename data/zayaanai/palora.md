@@ -1,7 +1,7 @@
 # zayaanai/Palora
 
 ## Resumen
-Palora es un modelo publicado en HuggingFace por el usuario zayaanai bajo licencia MIT. La informacion disponible es minima: la model card no contiene descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso, y el repositorio no registra descargas ni interacciones en el momento de la consulta.
+Palora es un modelo publicado en Hugging Face por el usuario zayaanai bajo licencia MIT. La informacion disponible es minima: la model card no contiene descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso, y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 No se puede confirmar que tipo de modelo es (lenguaje, vision, audio o multimodal), ni su numero de parametros, contexto o idiomas soportados. La unica metainformacion verificable es la licencia (MIT) y la region de publicacion (us), ademas de las fechas de creacion y actualizacion, ambas el 15 de septiembre de 2026.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 | Parametro | Valor |
 |---|---|
 | Autor | zayaanai |
-| ID en HuggingFace | zayaanai/Palora |
+| ID en Hugging Face | zayaanai/Palora |
 | Descargas | 0 |
 | Likes | 0 |
 | Pipeline declarado | no disponible |
@@ -77,6 +77,6 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 - Los resultados de busqueda web asociados a esta consulta tratan sobre cultura de horas extra en Indonesia y no guardan ninguna relacion con el modelo; no se han utilizado como fuente.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/zayaanai/Palora
+- Hugging Face: https://huggingface.co/zayaanai/Palora
 
 No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada.

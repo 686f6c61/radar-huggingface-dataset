@@ -71,6 +71,6 @@ No se dispone de comparativas publicadas con otros modelos. Como referencia, el 
 
 ## Enlaces
 
-- [HuggingFace - aziz9788/qwen35-direct-identity-v2-identityv2_20260823_145224](https://huggingface.co/aziz9788/qwen35-direct-identity-v2-identityv2_20260823_145224)
+- [Hugging Face - aziz9788/qwen35-direct-identity-v2-identityv2_20260823_145224](https://huggingface.co/aziz9788/qwen35-direct-identity-v2-identityv2_20260823_145224)
 - [Blog oficial de Qwen3.5 (referencia del modelo base)](https://qwen.ai/blog?id=qwen3.5)
 - [Repositorio GitHub de Qwen3.5 (referencia)](https://github.com/ABDtmx/Qwen3.5)

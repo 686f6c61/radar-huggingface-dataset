@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Terminal-16k-top50 es un modelo de generación de texto de 8.190.735.360 parámetros (unos 8,19 mil millones) publicado por el usuario cuong1692001 en HuggingFace. Se trata de un ajuste fino completo (*full fine-tuning*) del modelo Terminal-complete_8k sobre el dataset nemotron_complete_top_50_16k, llevado a cabo con el framework LLaMA-Factory. La etiqueta qwen3 del repositorio y el recuento exacto de parámetros apuntan a una base de la familia Qwen3-8B, si bien la model card no confirma de forma explícita ni la arquitectura ni la longitud de contexto.
+Terminal-16k-top50 es un modelo de generación de texto de 8.190.735.360 parámetros (unos 8,19 mil millones) publicado por el usuario cuong1692001 en Hugging Face. Se trata de un ajuste fino completo (*full fine-tuning*) del modelo Terminal-complete_8k sobre el dataset nemotron_complete_top_50_16k, llevado a cabo con el framework LLaMA-Factory. La etiqueta qwen3 del repositorio y el recuento exacto de parámetros apuntan a una base de la familia Qwen3-8B, si bien la model card no confirma de forma explícita ni la arquitectura ni la longitud de contexto.
 
 El modelo se publica bajo licencia "other" y con fines de generación de texto conversacional. Su relevancia es limitada por el momento: no acumula descargas ni interacciones, no incluye resultados de evaluación y la propia model card indica que faltan apartados clave (descripción, usos previstos, datos de entrenamiento y métricas). Es, por tanto, un artefacto experimental más que un modelo listo para producción.
 
@@ -69,10 +69,10 @@ La tabla siguiente compara la familia de base probable (Qwen3) y alternativas ha
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Terminal-16k-top50 | 8,19 mil millones | No disponible | other (sin especificar) | Sin benchmarks publicados | HuggingFace, safetensors |
-| Qwen3-8B (base probable) | ~8,2 mil millones | 128K | Apache 2.0 | Benchmarks publicados por el autor de Qwen3 | HuggingFace, safetensors/GGUF |
-| Qwen2.5-7B | ~7,6 mil millones | 128K | Apache 2.0 | Benchmarks publicados | HuggingFace, safetensors/GGUF |
-| Llama-3.1-8B | ~8 mil millones | 128K | Llama 3.1 Community License | Benchmarks publicados | HuggingFace, safetensors/GGUF |
+| Terminal-16k-top50 | 8,19 mil millones | No disponible | other (sin especificar) | Sin benchmarks publicados | Hugging Face, safetensors |
+| Qwen3-8B (base probable) | ~8,2 mil millones | 128K | Apache 2.0 | Benchmarks publicados por el autor de Qwen3 | Hugging Face, safetensors/GGUF |
+| Qwen2.5-7B | ~7,6 mil millones | 128K | Apache 2.0 | Benchmarks publicados | Hugging Face, safetensors/GGUF |
+| Llama-3.1-8B | ~8 mil millones | 128K | Llama 3.1 Community License | Benchmarks publicados | Hugging Face, safetensors/GGUF |
 
 No hay datos que permitan una comparación de rendimiento real de Terminal-16k-top50 frente a estos modelos.
 
@@ -90,6 +90,6 @@ No hay datos que permitan una comparación de rendimiento real de Terminal-16k-t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cuong1692001/Terminal-16k-top50
+- Hugging Face: https://huggingface.co/cuong1692001/Terminal-16k-top50
 
 No se encontraron otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos correspondían a páginas de ayuda de YouTube y no guardan relación con el modelo.

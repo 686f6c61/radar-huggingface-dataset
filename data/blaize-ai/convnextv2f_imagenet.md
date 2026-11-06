@@ -85,7 +85,7 @@ La comparación directa con alternativas es limitada porque esta variante solo s
 
 ## Enlaces
 
-- [HuggingFace: Blaize-AI/ConvNeXtV2f_ImageNet](https://huggingface.co/Blaize-AI/ConvNeXtV2f_ImageNet)
+- [Hugging Face: Blaize-AI/ConvNeXtV2f_ImageNet](https://huggingface.co/Blaize-AI/ConvNeXtV2f_ImageNet)
 - [Blaize (sitio oficial)](https://www.blaize.com)
 - [Pesos preentrenados originales de ConvNeXt V2 (Meta)](https://github.com/facebookresearch/ConvNeXt-V2)
 - [Implementación en timm (Ross Wightman)](https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/convnext.py)

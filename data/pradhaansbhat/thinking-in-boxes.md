@@ -33,7 +33,7 @@ Es relevante ahora porque la edicion generativa de imagen esta pasando de retoqu
 
 La arquitectura publicada no es un transformer completo, sino un LoRA: un conjunto de adaptadores de bajo rango que se inyectan en las capas del modelo base FLUX.1-Kontext-dev y que se cargan por encima de este en el momento de la inferencia. El modelo base es un modelo de difusion de imagen a imagen de black-forest-labs; el repositorio de Thinking-In-Boxes no documenta su arquitectura interna, su numero de parametros ni su configuracion de atencion, por lo que esos datos figuran como no disponibles. Tampoco se especifica el rango del LoRA, los modulos objetivo ni la semilla de entrenamiento.
 
-El entrenamiento se realiza sobre el dataset Thinking-In-Boxes, publicado por los mismos autores. La model card indica que los detalles de entrenamiento (numero de pasos, tokens, composicion del dataset, si hubo etapas de ajuste con preferencias humanas como RLHF o DPO) estan en la seccion suplementaria del articulo, no en el repositorio de HuggingFace, por lo que no se reproducen aqui. La innovacion tecnica destacable no es un mecanismo de atencion nuevo, sino la representacion de control: cada objeto se representa mediante una caja cuyas caras estan codificadas por color para transmitir la orientacion 3D, lo que permite condicionar traslacion, rotacion, escalado y cambios de punto de vista manteniendo la identidad de escena y objeto y reconstruyendo regiones previamente no observadas.
+El entrenamiento se realiza sobre el dataset Thinking-In-Boxes, publicado por los mismos autores. La model card indica que los detalles de entrenamiento (numero de pasos, tokens, composicion del dataset, si hubo etapas de ajuste con preferencias humanas como RLHF o DPO) estan en la seccion suplementaria del articulo, no en el repositorio de Hugging Face, por lo que no se reproducen aqui. La innovacion tecnica destacable no es un mecanismo de atencion nuevo, sino la representacion de control: cada objeto se representa mediante una caja cuyas caras estan codificadas por color para transmitir la orientacion 3D, lo que permite condicionar traslacion, rotacion, escalado y cambios de punto de vista manteniendo la identidad de escena y objeto y reconstruyendo regiones previamente no observadas.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ El entrenamiento se realiza sobre el dataset Thinking-In-Boxes, publicado por lo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tabla de metricas, y la model card remite al articulo (arXiv 2606.20556) y al repositorio de GitHub para los detalles de entrenamiento y evaluacion, sin cifras reproducidas en la informacion consultada. No se dispone por tanto de valores de PSNR, LPIPS, SSIM, FID ni de metricas de consistencia 3D para este LoRA.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tabla de metricas, y la model card remite al articulo (arXiv 2606.20556) y al repositorio de GitHub para los detalles de entrenamiento y evaluacion, sin cifras reproducidas en la informacion consultada. No se dispone por tanto de valores de PSNR, LPIPS, SSIM, FID ni de metricas de consistencia 3D para este LoRA.
 
 ## Requisitos de hardware
 
@@ -80,8 +80,8 @@ La comparacion cuantitativa no es posible porque no hay datos de rendimiento pub
 
 | Modelo | Tipo | Modelo base | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thinking-In-Boxes (este) | LoRA de edicion geometrica 3D | FLUX.1-Kontext-dev | image-to-image, edicion geometrica | CC-BY-4.0 | HuggingFace, repo 0.0 GB, 0 descargas |
-| FLUX.1-Kontext-dev sin LoRA | Modelo de difusion de edicion de imagen | - | image-to-image guiado por prompt | Licencia propia del modelo base | HuggingFace de black-forest-labs |
+| Thinking-In-Boxes (este) | LoRA de edicion geometrica 3D | FLUX.1-Kontext-dev | image-to-image, edicion geometrica | CC-BY-4.0 | Hugging Face, repo 0.0 GB, 0 descargas |
+| FLUX.1-Kontext-dev sin LoRA | Modelo de difusion de edicion de imagen | - | image-to-image guiado por prompt | Licencia propia del modelo base | Hugging Face de black-forest-labs |
 | Otros LoRA de edicion sobre FLUX.1-Kontext | Adaptadores de edicion | FLUX.1-Kontext-dev | image-to-image | Variable | No disponible en la informacion consultada |
 | Metodos de edicion 3D/geometrica sobre imagen real | No disponible | No disponible | Edicion geometrica | No disponible | No disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de alternativas co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pradhaansbhat/Thinking-In-Boxes
+- Modelo en Hugging Face: https://huggingface.co/pradhaansbhat/Thinking-In-Boxes
 - Dataset de entrenamiento: https://huggingface.co/datasets/pradhaansbhat/Thinking-In-Boxes
 - Repositorio GitHub: https://github.com/PradhaanSBhat/Thinking-In-Boxes (tambien referenciado como https://github.com/PradhaanSBhat/thinking-in-boxes)
 - Pagina del proyecto: https://thinking-in-boxes.github.io/

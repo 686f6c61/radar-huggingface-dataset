@@ -31,7 +31,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: no se indica el numero de to
 
 - Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
 - Procesamiento multimodal: la presencia de ficheros `mmproj-Q8_0.gguf` y `mmproj-f16.gguf` sugiere soporte de entrada de imagenes, aunque no se detalla el alcance.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Inferencia local mediante llama.cpp y derivados (Ollama, LM Studio, etc.), gracias al formato GGUF.
 - No se documenta soporte explicito de tool calling, function calling, agentes multi-paso, modo thinking ni otras capacidades avanzadas.
 - Capacidades multilingues limitadas al ingles segun los metadatos del autor.

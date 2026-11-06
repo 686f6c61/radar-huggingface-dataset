@@ -97,7 +97,7 @@ No se dispone de datos verificados de benchmarks que permitan comparar calidad f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4A16
 - Árbol de ficheros: https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4A16/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE

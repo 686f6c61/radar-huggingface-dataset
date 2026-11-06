@@ -94,7 +94,7 @@ No se han encontrado en la información proporcionada modelos comparables de otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q6_K-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q6_K-GGUF
 - Modelo base directo: https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
 - Modelo original de la familia Qwen3-VL: no disponible en la información proporcionada.
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces obtenidos correspondían a Parqet (https://parqet.com/de/, https://parqet.com/en, https://faq.parqet.com/de/, https://www.n-tv.de/broker-vergleich/parqet/, https://finanzwissen.de/anbieter/parqet/test/) y no guardan relación con este repositorio.

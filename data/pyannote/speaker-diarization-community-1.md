@@ -32,7 +32,7 @@ La información proporcionada no detalla la arquitectura interna del pipeline. S
 - Procesamiento de audio mono a 16 kHz, con downmix automático de estéreo o multicanal y resampleo.
 - Diarización exclusiva: los turnos de hablante no se solapan, lo que simplifica la alineación con timestamps de transcripción automática.
 - Uso offline: el pipeline puede ejecutarse completamente en local sin necesidad de conexión a internet.
-- Integración con pyannote.audio: se puede cargar mediante `Pipeline.from_pretrained` y usar con un token de HuggingFace.
+- Integración con pyannote.audio: se puede cargar mediante `Pipeline.from_pretrained` y usar con un token de Hugging Face.
 
 ## Casos de uso
 
@@ -87,17 +87,17 @@ La comparativa se basa en los datos de la model card, que incluye dos alternativ
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: aunque la licencia es CC-BY-4.0, el uso requiere aceptar condiciones adicionales y proporcionar datos personales (empresa, caso de uso) a través de un formulario gated en HuggingFace.
+- Acceso restringido: aunque la licencia es CC-BY-4.0, el uso requiere aceptar condiciones adicionales y proporcionar datos personales (empresa, caso de uso) a través de un formulario gated en Hugging Face.
 - Sin detalles de arquitectura: no se publican parámetros, arquitectura ni datos de entrenamiento, lo que dificulta la reproducibilidad y la evaluación independiente.
 - Rendimiento dependiente del dominio: los benchmarks muestran variabilidad según el tipo de audio (reuniones, llamadas, vídeos egocéntricos). En entornos con mucho ruido, solapamiento extremo o acentos no representados, el error puede ser mayor.
 - Diarización exclusiva: la modalidad "exclusiva" evita solapamientos entre turnos, lo que puede no reflejar la realidad en conversaciones con habla simultánea; esto puede afectar a aplicaciones que requieran precisión temporal en solapamientos.
 - Sin soporte multilingüe declarado: la model card no especifica idiomas, por lo que el rendimiento en idiomas distintos del inglés (u otros mayoritarios) no está garantizado.
-- Requisito de token de HuggingFace: es necesario crear un token de acceso y tener una cuenta para descargar el pipeline.
+- Requisito de token de Hugging Face: es necesario crear un token de acceso y tener una cuenta para descargar el pipeline.
 - Sin garantías de producción: no se indican SLA, soporte ni mantenimiento; el modelo se ofrece "tal cual" para la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyannote/speaker-diarization-community-1
+- Modelo en Hugging Face: https://huggingface.co/pyannote/speaker-diarization-community-1
 - Blog de anuncio de Community-1: https://www.pyannote.ai/blog/community-1
 - Blog de Precision-2 (modelo comparado): https://www.pyannote.ai/blog/precision-2
 - Referencias de benchmarks (en los tags del modelo):

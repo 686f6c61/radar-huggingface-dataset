@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sinhprous/qwen3-asr-1.7b-ms-en-lora` es un adaptador LoRA de reconocimiento automatico del habla (ASR) entrenado por el usuario de HuggingFace sinhprous sobre el modelo base `Qwen/Qwen3-ASR-1.7B` de Alibaba Qwen. No se trata de un modelo completo, sino de un conjunto de pesos incrementales (formato PEFT/safetensors, 0,1 GB de repositorio) que se cargan sobre el modelo base y que ajustan su comportamiento para transcribir ingles de Malasia (Malaysian English).
+El modelo `sinhprous/qwen3-asr-1.7b-ms-en-lora` es un adaptador LoRA de reconocimiento automatico del habla (ASR) entrenado por el usuario de Hugging Face sinhprous sobre el modelo base `Qwen/Qwen3-ASR-1.7B` de Alibaba Qwen. No se trata de un modelo completo, sino de un conjunto de pesos incrementales (formato PEFT/safetensors, 0,1 GB de repositorio) que se cargan sobre el modelo base y que ajustan su comportamiento para transcribir ingles de Malasia (Malaysian English).
 
 El problema que resuelve es concreto: el modelo base presenta un error de palabra (WER) del 13,37 % sobre el acento y las particularidades lexicas del ingles malasio, y el adaptador lo reduce al 8,66 %, una mejora absoluta de 4,71 puntos porcentuales. El ajuste se hizo con Common Voice Malaysian English usando LoRA con r=16 y alpha=32 sobre todas las capas lineales.
 
@@ -70,10 +70,10 @@ Los unicos datos de benchmark disponibles son los de la model card, medidos sobr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| qwen3-asr-1.7b-ms-en-lora | 1,7B (base) + adaptador | no disponible | apache-2.0 | HuggingFace (0 descargas) | Adaptador dialectal sobre ASR |
-| Qwen3-ASR-1.7B (base) | 1,7B | no disponible | no disponible en la informacion proporcionada | HuggingFace | ASR generalista |
-| Whisper large-v3 | 1,55B | ventanas de 30 s (cifra publica del modelo) | MIT | HuggingFace, ampliamente desplegado | ASR generalista multilingue |
-| Whisper large-v3-turbo | 809M | ventanas de 30 s (cifra publica del modelo) | MIT | HuggingFace | ASR generalista con decoder reducido |
+| qwen3-asr-1.7b-ms-en-lora | 1,7B (base) + adaptador | no disponible | apache-2.0 | Hugging Face (0 descargas) | Adaptador dialectal sobre ASR |
+| Qwen3-ASR-1.7B (base) | 1,7B | no disponible | no disponible en la informacion proporcionada | Hugging Face | ASR generalista |
+| Whisper large-v3 | 1,55B | ventanas de 30 s (cifra publica del modelo) | MIT | Hugging Face, ampliamente desplegado | ASR generalista multilingue |
+| Whisper large-v3-turbo | 809M | ventanas de 30 s (cifra publica del modelo) | MIT | Hugging Face | ASR generalista con decoder reducido |
 
 No se dispone de datos de rendimiento comparables entre estos modelos bajo el mismo conjunto de evaluacion, por lo que la tabla se limita a parametros, licencia y disponibilidad. No se han publicado comparaciones directas en la informacion disponible.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos bajo el mi
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/sinhprous/qwen3-asr-1.7b-ms-en-lora
+- Adaptador en Hugging Face: https://huggingface.co/sinhprous/qwen3-asr-1.7b-ms-en-lora
 - Modelo base Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Conjunto de datos Common Voice (Mozilla): https://commonvoice.mozilla.org/

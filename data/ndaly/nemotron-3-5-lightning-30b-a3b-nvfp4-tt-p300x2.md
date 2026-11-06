@@ -17,7 +17,7 @@ El modelo original es un LLM con arquitectura de mezcla de expertos (MoE) de 30B
 | Tipos de cuantizacion | NVFP4 (4-bit floating point) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | No incrustados; el manifiesto apunta al checkpoint upstream en formato HuggingFace (NVFP4) |
+| Formato de pesos | No incrustados; el manifiesto apunta al checkpoint upstream en formato Hugging Face (NVFP4) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No disponible. La información proporcionada no incluye datos comparables de otr
 
 ## Limitaciones y advertencias
 
-- Sin pesos incrustados: el repositorio es un manifiesto que apunta al checkpoint upstream; requiere `tt-model login` mientras sea privado y acceso a HuggingFace.
+- Sin pesos incrustados: el repositorio es un manifiesto que apunta al checkpoint upstream; requiere `tt-model login` mientras sea privado y acceso a Hugging Face.
 - Solo Ubuntu 24.04: la rueda ttnn está construida para manylinux_2_39 y no funcionará en otros sistemas sin recompilación.
 - Hardware específico: requiere 2× P300 (4 chips Blackhole); no se puede ejecutar en GPUs convencionales.
 - Problema conocido: se ha detectado un wedge de `ttnn.slice` bajo condiciones específicas de trace poisoning; se documenta en el release report incluido.

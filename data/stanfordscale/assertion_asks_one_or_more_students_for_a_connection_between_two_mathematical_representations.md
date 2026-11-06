@@ -81,10 +81,10 @@ No se dispone de datos publicados de otros clasificadores directamente comparabl
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SetFit sobre paraphrase-mpnet-base-v2) | 109,5 M | Clasificacion binaria de la asercion `td__..._connection_between_two_mathematical_representations` | no disponible | no disponible | HuggingFace, libreria setfit |
-| sentence-transformers/paraphrase-mpnet-base-v2 (base, sin afinar) | 109,5 M | Embeddings de frases de proposito general | no disponible | no disponible | HuggingFace |
+| Este modelo (SetFit sobre paraphrase-mpnet-base-v2) | 109,5 M | Clasificacion binaria de la asercion `td__..._connection_between_two_mathematical_representations` | no disponible | no disponible | Hugging Face, libreria setfit |
+| sentence-transformers/paraphrase-mpnet-base-v2 (base, sin afinar) | 109,5 M | Embeddings de frases de proposito general | no disponible | no disponible | Hugging Face |
 | Anotador LLM que genero las etiquetas del dataset | no disponible | Anotacion de aserciones sobre turnos de aula | no disponible | no disponible | no disponible |
-| Otros clasificadores de la familia EduBehaviors | no disponible | Clasificacion de otras aserciones discursivas | no disponible | no disponible | HuggingFace (coleccion StanfordSCALE) |
+| Otros clasificadores de la familia EduBehaviors | no disponible | Clasificacion de otras aserciones discursivas | no disponible | no disponible | Hugging Face (coleccion StanfordSCALE) |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No se dispone de datos publicados de otros clasificadores directamente comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_a_connection_between_two_mathematical_representations
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_a_connection_between_two_mathematical_representations
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset original TalkMoves: https://github.com/SumnerLab/TalkMoves

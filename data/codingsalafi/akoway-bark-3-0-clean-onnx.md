@@ -96,7 +96,7 @@ Los modelos comparables citados son los ancestros declarados en la propia model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codingSalafi/akoway-bark-3.0-clean-onnx
+- Modelo en Hugging Face: https://huggingface.co/codingSalafi/akoway-bark-3.0-clean-onnx
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Clean
 - Repositorio Akoway: https://github.com/codingSalafi/Akoway
 - Script de comparación ONNX: https://github.com/codingSalafi/Akoway/tree/main/tools/bark-onnx

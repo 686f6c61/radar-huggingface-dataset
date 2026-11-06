@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 (desarrollado por DeepSeek) a la que se le ha aplicado una ablación de la dirección de rechazo mediante la herramienta OBLITERATUS con el método failspy. El autor del modelo es el usuario de HuggingFace sekkit, y el resultado se distribuye como pesos BF16 en safetensors bajo licencia MIT. El modelo base es un transformer de tipo mezcla de expertos (MoE) con 754.638.836.864 parámetros totales (unos 754,6 mil millones), según los metadatos de safetensors del repositorio.
+DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 (desarrollado por DeepSeek) a la que se le ha aplicado una ablación de la dirección de rechazo mediante la herramienta OBLITERATUS con el método failspy. El autor del modelo es el usuario de Hugging Face sekkit, y el resultado se distribuye como pesos BF16 en safetensors bajo licencia MIT. El modelo base es un transformer de tipo mezcla de expertos (MoE) con 754.638.836.864 parámetros totales (unos 754,6 mil millones), según los metadatos de safetensors del repositorio.
 
 El propósito declarado de esta variante es eliminar el comportamiento de rechazo del modelo original: según la model card, la tasa de rechazo completo cae del 81,62 % al 4,30 % en el corpus de evaluación de 842 prompts de OBLITERATUS, mientras que la coherencia y la capacidad se mantienen al 100 % en las comprobaciones del autor. El modelo conserva la arquitectura y el pipeline de text-generation del original, y está etiquetado como compatible con endpoints.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es doble: por un lado, documenta una técnica de mod
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (deepseek_v41_text), según tag de HuggingFace |
+| Arquitectura | Transformer MoE (deepseek_v41_text), según tag de Hugging Face |
 | Parametros totales | 754.638.836.864 (≈754,6 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -102,7 +102,7 @@ La única comparación directa posible es con el modelo base, del que se conocen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sekkit/DeepSeek-V4.1-Flash-1017-obliterated
+- Modelo en Hugging Face: https://huggingface.co/sekkit/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del método (referenciado en la model card): `winner-recovery-provenance.json` en el repositorio del modelo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BLIP (Bootstrapping Language-Image Pre-training) es un framework de preentrenamiento vision-language desarrollado por Salesforce y presentado en el paper de Li et al. (arXiv:2201.12086). Esta version concreta, publicada por Bercraft, es una replica del modelo `Salesforce/blip-image-captioning-base`, orientada a la tarea de generar descripciones textuales de imagenes. El modelo combina un backbone de Vision Transformer (ViT base) con un decodificador de texto, y es capaz de realizar captioning condicional (dado un prompt parcial) e incondicional (descripcion libre de la imagen). Su relevancia radica en que es un modelo compacto y eficiente para tareas de image-to-text, entrenado sobre el dataset COCO, con licencia BSD-3-Clause, lo que facilita su integracion en aplicaciones de vision por computador. El repositorio en HuggingFace tiene un tamano de 2.0 GB y utiliza el pipeline `image-to-text`.
+BLIP (Bootstrapping Language-Image Pre-training) es un framework de preentrenamiento vision-language desarrollado por Salesforce y presentado en el paper de Li et al. (arXiv:2201.12086). Esta version concreta, publicada por Bercraft, es una replica del modelo `Salesforce/blip-image-captioning-base`, orientada a la tarea de generar descripciones textuales de imagenes. El modelo combina un backbone de Vision Transformer (ViT base) con un decodificador de texto, y es capaz de realizar captioning condicional (dado un prompt parcial) e incondicional (descripcion libre de la imagen). Su relevancia radica en que es un modelo compacto y eficiente para tareas de image-to-text, entrenado sobre el dataset COCO, con licencia BSD-3-Clause, lo que facilita su integracion en aplicaciones de vision por computador. El repositorio en Hugging Face tiene un tamano de 2.0 GB y utiliza el pipeline `image-to-text`.
 
 ## Especificaciones tecnicas
 
@@ -53,8 +53,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bercraft/blip-image-captioning-base | ViT base | no disponible | BSD-3-Clause | HuggingFace |
-| Bercraft/blip-image-captioning-large | ViT large | no disponible | BSD-3-Clause | HuggingFace |
+| Bercraft/blip-image-captioning-base | ViT base | no disponible | BSD-3-Clause | Hugging Face |
+| Bercraft/blip-image-captioning-large | ViT large | no disponible | BSD-3-Clause | Hugging Face |
 
 La version large utiliza un backbone ViT large en lugar de ViT base, lo que normalmente implica mayor capacidad y posiblemente mejor rendimiento en descripcion de imagenes, aunque tambien mayor consumo de recursos. No se dispone de datos de parametros ni benchmarks publicos para ninguna de las dos versiones en la informacion proporcionada.
 
@@ -69,8 +69,8 @@ La version large utiliza un backbone ViT large en lugar de ViT base, lo que norm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bercraft/blip-image-captioning-base
-- Version large en HuggingFace: https://huggingface.co/Bercraft/blip-image-captioning-large
+- Modelo en Hugging Face: https://huggingface.co/Bercraft/blip-image-captioning-base
+- Version large en Hugging Face: https://huggingface.co/Bercraft/blip-image-captioning-large
 - Documentacion de BLIP en Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/blip
 - Paper original (arXiv): https://arxiv.org/abs/2201.12086
 - DOI del paper: https://doi.org/10.48550/arxiv.2201.12086

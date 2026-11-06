@@ -91,7 +91,7 @@ La comparativa se basa en datos publicos de los modelos alternativos; para Rubio
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones): https://huggingface.co/mradermacher/Rubio-4B-GGUF
+- Repositorio Hugging Face (cuantizaciones): https://huggingface.co/mradermacher/Rubio-4B-GGUF
 - Modelo base: https://huggingface.co/mulkzz/Rubio-4B
 - Pagina de descargas del autor: https://hf.tst.eu/model#Rubio-4B-GGUF
 - FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

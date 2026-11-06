@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto / horizonte | Éxito publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pick-cube-lime-sim-250-board-wrist-heavyaug-dp | 274,5 M | 64 pasos de observación, 32 de acción | 44 % (DDPM-100), 32 % (DDIM-10) | Apache 2.0 | HuggingFace, 12 descargas |
+| pick-cube-lime-sim-250-board-wrist-heavyaug-dp | 274,5 M | 64 pasos de observación, 32 de acción | 44 % (DDPM-100), 32 % (DDIM-10) | Apache 2.0 | Hugging Face, 12 descargas |
 | Modelos de tres cámaras del mismo autor (referencia cualitativa) | no disponible | no disponible | 86-100 % | no disponible | mencionados en la model card |
 | Otras diffusion policies de LeRobot | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/pick-cube-lime-sim-250-board-wrist-heavyaug-dp
+- Hugging Face: https://huggingface.co/padiredd/pick-cube-lime-sim-250-board-wrist-heavyaug-dp
 - LeRobot (librería): https://github.com/huggingface/lerobot
 - Isaac Lab: https://github.com/isaac-sim/IsaacLab
 - ROBOTIS FFW BG2: https://www.robotis.us/ (referencia de hardware, no verificada en la información proporcionada)

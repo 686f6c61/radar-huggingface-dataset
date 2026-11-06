@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p5.dit` es un artefacto publicado por IBM Research en HuggingFace, etiquetado con el formato `onnx` y licencia `apache-2.0`. No es un modelo de lenguaje: la nomenclatura del repositorio apunta a un modelo para predecir ángulos (parámetros variacionales) de QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema MaxCut con p=5 capas de circuito. La model card pública está vacía: solo contiene la declaración de licencia, sin descripción, sin paper asociado y sin instrucciones de uso.
+`ibm-research/qaoa_angles.max_cut.p5.dit` es un artefacto publicado por IBM Research en Hugging Face, etiquetado con el formato `onnx` y licencia `apache-2.0`. No es un modelo de lenguaje: la nomenclatura del repositorio apunta a un modelo para predecir ángulos (parámetros variacionales) de QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema MaxCut con p=5 capas de circuito. La model card pública está vacía: solo contiene la declaración de licencia, sin descripción, sin paper asociado y sin instrucciones de uso.
 
-El repositorio presenta 0 descargas y 0 "likes", un tamaño declarado de 0.0 GB y fechas de creación y actualización del 14 de octubre de 2026 (con 14 segundos de diferencia entre ambas), según los metadatos de HuggingFace. No se especifican parámetros totales, arquitectura de red, datos de entrenamiento ni métricas de evaluación. Por tanto, cualquier afirmación sobre su funcionamiento interno sería especulativa.
+El repositorio presenta 0 descargas y 0 "likes", un tamaño declarado de 0.0 GB y fechas de creación y actualización del 14 de octubre de 2026 (con 14 segundos de diferencia entre ambas), según los metadatos de Hugging Face. No se especifican parámetros totales, arquitectura de red, datos de entrenamiento ni métricas de evaluación. Por tanto, cualquier afirmación sobre su funcionamiento interno sería especulativa.
 
 Su relevancia potencial, si se confirma la interpretación del nombre, estaría en el ámbito de la optimización combinatoria con algoritmos cuánticos variacionales: predecir los parámetros de un circuito QAOA con aprendizaje automático clásico permite reducir el coste del bucle de optimización clásico en cada instancia de MaxCut. Sin embargo, esto no puede verificarse con la información disponible, y el modelo no es utilizable como modelo de propósito general.
 
@@ -79,7 +79,7 @@ No se ha identificado ningún modelo comparable en la información disponible: n
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | repositorio público en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio público en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,11 +91,11 @@ No se ha identificado ningún modelo comparable en la información disponible: n
 - Limitaciones de idioma: el campo de idiomas no está especificado; al no ser un modelo de lenguaje, la nomenclatura de idiomas no resulta aplicable.
 - Licencia: Apache-2.0 permite uso comercial, modificación y redistribución, exige conservar los avisos de copyright y licencia, e incluye una concesión expresa de patentes; no concede derechos sobre marcas registradas. No hay cláusulas adicionales ni restricciones de uso aceptable declaradas en el repositorio.
 - Estado del repositorio: 0 descargas y 0 "likes" indican que el artefacto no ha sido validado por la comunidad; no debe considerarse apto para producción sin una evaluación propia.
-- Metadatos anómalos: las fechas de creación y actualización (14 de octubre de 2026) y el tamaño declarado de 0.0 GB deben tomarse como valores tal cual figuran en HuggingFace, sin verificación independiente.
+- Metadatos anómalos: las fechas de creación y actualización (14 de octubre de 2026) y el tamaño declarado de 0.0 GB deben tomarse como valores tal cual figuran en Hugging Face, sin verificación independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.dit
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.dit
 - Página corporativa de IBM: https://www.ibm.com/
 - IBM (Wikipedia en inglés): https://en.wikipedia.org/wiki/IBM
 - IBM (Wikipedia en francés): https://fr.wikipedia.org/wiki/IBM

@@ -92,7 +92,7 @@ Comparaciones declaradas por el autor: top-1 de 70,04 % frente a 59,16 % de Indi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sourojitdotcom/AksharaLP-1M-v2
+- Modelo en Hugging Face: https://huggingface.co/sourojitdotcom/AksharaLP-1M-v2
 - Demo en vivo: https://huggingface.co/spaces/sourojitdotcom/AksharaLP-v2-demo
 - Versión anterior (v1): https://huggingface.co/sourojitdotcom/AksharaLP-1M
 - Demo v1: https://huggingface.co/spaces/sourojitdotcom/AksharaLP-demo

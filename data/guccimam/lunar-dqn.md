@@ -77,7 +77,7 @@ La comparativa se basa en los resultados de búsqueda web. No se dispone de dato
 
 ## Enlaces
 
-- [HuggingFace: Guccimam/lunar-dqn](https://huggingface.co/Guccimam/lunar-dqn)
+- [Hugging Face: Guccimam/lunar-dqn](https://huggingface.co/Guccimam/lunar-dqn)
 - [allen73/lunarlander-v3-dqn-physical-ai](https://huggingface.co/allen73/lunarlander-v3-dqn-physical-ai)
 - [tnvjjr/Lunar_Lander_DeepQ_Learning_Model](https://huggingface.co/tnvjjr/Lunar_Lander_DeepQ_Learning_Model)
 - [GitHub: taeri077/lunar-lander-dqn](https://github.com/taeri077/lunar-lander-dqn)

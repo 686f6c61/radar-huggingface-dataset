@@ -25,7 +25,7 @@ Técnicamente es un detector de una sola etapa, sin anclas y con cabeza desacopl
 | Clases | car, truck, bus |
 | FLOPs | 155,1 (a 640 px), segun la model card |
 | Tamano del repositorio | 0,1 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -117,7 +117,7 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, MMLU, Hum
 
 | Modelo | Parametros | mAP@50 UAVDT (%) | mAP@50-95 UAVDT (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dronefreak/uavdt-yolov8l (este) | 46,5 M | 28,86 | 17,27 | AGPL-3.0 | HuggingFace, `.pt` |
+| dronefreak/uavdt-yolov8l (este) | 46,5 M | 28,86 | 17,27 | AGPL-3.0 | Hugging Face, `.pt` |
 | YOLO26m (segun el zoo del autor) | no disponible | 33,43 | 19,56 | no disponible | no disponible |
 | RF-DETR Medium (segun el zoo del autor) | no disponible | 33,28 | 20,54 | no disponible | no disponible |
 | YOLOv8m (segun el zoo del autor) | no disponible | 31,42 | 18,80 | no disponible | no disponible |
@@ -140,7 +140,7 @@ La familia RF-DETR destaca por una precision y un recall muy superiores (por enc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolov8l
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolov8l
 - Dataset UAVDT (card): https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Coleccion UAVDT Object Detection Model Zoo: https://huggingface.co/collections/dronefreak/uavdt-object-detection-model-zoo

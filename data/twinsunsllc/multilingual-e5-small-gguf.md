@@ -82,6 +82,6 @@ No se dispone de información comparativa con otros modelos de embeddings en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TwinSunsLLC/multilingual-e5-small-gguf
+- Modelo en Hugging Face: https://huggingface.co/TwinSunsLLC/multilingual-e5-small-gguf
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Aplicación "Offline AI: Private Chat" (mencionada en la model card): https://apps.apple.com/app/id6760442643

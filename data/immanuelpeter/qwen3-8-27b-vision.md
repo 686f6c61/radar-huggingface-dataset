@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B Vision (este repo) | 460M | 5120 dims | Apache 2.0 | HuggingFace |
-| CLIP ViT-L/14 | 428M | 768 dims | MIT | HuggingFace |
-| SigLIP ViT-L | 428M | 1024 dims | Apache 2.0 | HuggingFace |
-| DINOv2 ViT-L | 307M | 1024 dims | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B Vision (este repo) | 460M | 5120 dims | Apache 2.0 | Hugging Face |
+| CLIP ViT-L/14 | 428M | 768 dims | MIT | Hugging Face |
+| SigLIP ViT-L | 428M | 1024 dims | Apache 2.0 | Hugging Face |
+| DINOv2 ViT-L | 307M | 1024 dims | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa: este extractor produce embeddings de mayor dimensión (5120) que los ViT estándar, pero no hay benchmarks públicos que permitan comparar calidad de representación. Su ventaja principal es la compatibilidad directa con el ecosistema Qwen3.8.
 
@@ -81,7 +81,7 @@ La comparativa es orientativa: este extractor produce embeddings de mayor dimens
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/immanuelpeter/Qwen3.8-27B-Vision
+- Repositorio Hugging Face: https://huggingface.co/immanuelpeter/Qwen3.8-27B-Vision
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Script de exportación: https://github.com/immanuel-peter/vision-tower-bench/blob/main/scripts/export_qwen3_8_vision.py
 - Artículo en dev.to: https://dev.to/mayu2008/qwen38-27b-a-deep-dive-into-qwens-newest-vision-language-powerhouse-2e7

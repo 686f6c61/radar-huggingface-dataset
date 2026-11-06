@@ -6,7 +6,7 @@
 
 `Daframpp/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo
 entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el
-entorno LunarLander-v3, publicado por el usuario Daframpp en HuggingFace.
+entorno LunarLander-v3, publicado por el usuario Daframpp en Hugging Face.
 No es un modelo de lenguaje ni un modelo generativo multimodal: se trata
 de una politica neuronal que resuelve una tarea de control continuo
 discretizado, la del modulo lunar de Box2D/Gymnasium, y que se distribuye
@@ -40,7 +40,7 @@ ni topologia de red, lo que restringe su uso en produccion.
 | Algoritmo | PPO |
 | Entorno | LunarLander-v3 |
 | Pipeline declarado | reinforcement-learning |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 |
 | Fecha de actualizacion | 2026-09-15 |
@@ -157,7 +157,7 @@ este agente supera segun el dato autodeclarado.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Daframpp/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace |
+| Daframpp/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face |
 | Agentes PPO equivalentes de stable-baselines3 | PPO | LunarLander-v3 | no disponible | no aplica | MIT (libreria, no el modelo) | GitHub / RL Baselines3 Zoo |
 | Agentes DQN sobre LunarLander | DQN | LunarLander-v3 | no disponible | no aplica | no disponible | Implementaciones de terceros |
 | Agentes A2C sobre LunarLander | A2C | LunarLander-v3 | no disponible | no aplica | no disponible | Implementaciones de terceros |
@@ -199,7 +199,7 @@ modelos alternativos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daframpp/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Daframpp/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3 (referenciada en la model card, sin enlace explicito): no disponible
 - Entorno LunarLander-v3 (Gymnasium): no disponible en la informacion proporcionada

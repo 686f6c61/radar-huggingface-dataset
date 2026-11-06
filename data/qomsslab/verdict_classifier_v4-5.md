@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QomSSLab/verdict_classifier_v4.5 es un modelo de clasificación de texto (pipeline `text-classification`) publicado por el laboratorio QomSSLab en HuggingFace. Está construido sobre la arquitectura ModernBERT, según reflejan las etiquetas del repositorio, y cuenta con 307.533.316 parámetros almacenados en formato safetensors, lo que lo sitúa en el rango de los clasificadores encoder-only de tamano medio-grande. El repositorio ocupa 1,3 GB y su acceso está restringido: es un modelo *gated*, por lo que es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo.
+QomSSLab/verdict_classifier_v4.5 es un modelo de clasificación de texto (pipeline `text-classification`) publicado por el laboratorio QomSSLab en Hugging Face. Está construido sobre la arquitectura ModernBERT, según reflejan las etiquetas del repositorio, y cuenta con 307.533.316 parámetros almacenados en formato safetensors, lo que lo sitúa en el rango de los clasificadores encoder-only de tamano medio-grande. El repositorio ocupa 1,3 GB y su acceso está restringido: es un modelo *gated*, por lo que es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
 El modelo está declarado exclusivamente para persa (`fa`), lo que lo orienta a tareas de clasificación sobre texto en ese idioma. Por el nombre del repositorio, "verdict_classifier", cabe inferir un uso relacionado con la clasificación de veredictos o resoluciones (probablemente en el ámbito legal o de moderación), aunque la informacion disponible no detalla el conjunto de etiquetas ni la taxonomia exacta que predice.
 
@@ -36,8 +36,8 @@ No se dispone de informacion sobre el corpus de entrenamiento, el numero de toke
 - Clasificacion de texto en persa: es la funcion declarada por el pipeline (`text-classification`); produce una o varias etiquetas con su puntuacion de confianza.
 - Procesamiento de secuencias largas: al derivar de ModernBERT, es previsible que soporte entradas muy superiores a los 512 tokens habituales, aunque la longitud exacta no esta confirmada.
 - Especializacion tematica probable en veredictos o resoluciones, a juzgar por el nombre del repositorio; la taxonomia concreta de clases no esta documentada.
-- Extraccion de representaciones: la etiqueta `text-embeddings-inference` sugiere compatibilidad con el servidor de inferencia de embeddings de HuggingFace, aunque la tarea principal es clasificacion.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Extraccion de representaciones: la etiqueta `text-embeddings-inference` sugiere compatibilidad con el servidor de inferencia de embeddings de Hugging Face, aunque la tarea principal es clasificacion.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Generacion de texto: no aplica, es un modelo encoder-only sin cabeza generativa.
 - Tool calling / function calling: no disponible, no es una capacidad esperada en un clasificador encoder-only.
 - Razonamiento multi-paso y agentes: no disponible.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: aproximadamente 1,3 GB en FP32, en torno a 620 MB en FP16/BF16 y unos 310 MB en INT8. Estas cifras son estimaciones teoricas a partir del recuento de parametros, no mediciones publicadas.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente; una NVIDIA T4, RTX 3060, RTX 4090, L4, A10G, A100 o H100 pueden ejecutarlo sin dificultad.
 - Cabe en GPU de consumo: si. Practicamente cualquier GPU de consumo de los ultimos anos (GTX 1660 en adelante, y tambien iGPU con suficiente memoria compartida) puede alojar el modelo.
-- Opciones de despliegue: transformers (libreria declarada), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y Text Embeddings Inference (etiqueta `text-embeddings-inference`). No se documenta soporte para vLLM, llama.cpp u Ollama, y al no publicarse cuantizaciones GGUF no cabe esperar despliegue en llama.cpp sin conversion manual.
+- Opciones de despliegue: transformers (libreria declarada), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y Text Embeddings Inference (etiqueta `text-embeddings-inference`). No se documenta soporte para vLLM, llama.cpp u Ollama, y al no publicarse cuantizaciones GGUF no cabe esperar despliegue en llama.cpp sin conversion manual.
 - Latencia y throughput: no disponible. No se publican mediciones de tiempo de inferencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparacion es estructural: no existen datos publicos de rendimiento del mode
 
 - Ausencia total de documentacion: no hay model card detallada, ni descripcion del dataset, ni taxonomia de etiquetas, lo que impide conocer con precision que clases predice y con que fiabilidad.
 - Licencia no declarada: al no especificarse licencia, no puede asumirse permiso para uso comercial. Es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y disponer de un token de acceso para descargar los pesos, lo que complica la automatizacion de pipelines y la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y disponer de un token de acceso para descargar los pesos, lo que complica la automatizacion de pipelines y la reproducibilidad.
 - Riesgo de sesgo: al estar entrenado presumiblemente sobre corpus persas, puede heredar sesgos geograficos, religiosos, politicos o de genero presentes en los datos; no se documenta ninguna mitigacion.
 - Riesgo de alucinacion en la etiqueta: en clasificadores con clases poco representadas o ambiguas, el modelo puede asignar etiquetas con alta confianza de forma incorrecta; sin benchmarks no puede acotarse esta tasa.
 - Limitacion idiomatica: el modelo declara unicamente persa; su uso con texto en arabe, urdu o dari (proximos tipologicamente) no esta validado.
@@ -91,7 +91,7 @@ La comparacion es estructural: no existen datos publicos de rendimiento del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QomSSLab/verdict_classifier_v4.5
+- Modelo en Hugging Face: https://huggingface.co/QomSSLab/verdict_classifier_v4.5
 - Perfil del autor: https://huggingface.co/QomSSLab
 - Documentacion de ModernBERT (arquitectura de referencia): https://huggingface.co/docs/transformers/model_doc/modernbert
 - Paper de ModernBERT: https://arxiv.org/abs/2412.13663

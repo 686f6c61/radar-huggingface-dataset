@@ -94,7 +94,7 @@ Comparacion con alternativas de otras familias o tamanos: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Butanium/wp-nemotron3-ultra-cigarette_with_crossed_health_onpolicy_tinker_native
+- Repositorio Hugging Face: https://huggingface.co/Butanium/wp-nemotron3-ultra-cigarette_with_crossed_health_onpolicy_tinker_native
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Tinker (plataforma de entrenamiento): https://thinkingmachines.ai/tinker/
 - Variante filtered: https://huggingface.co/Butanium/wp-nemotron3-ultra-cigarette_with_crossed_health_onpolicy_filtered_tinker_native

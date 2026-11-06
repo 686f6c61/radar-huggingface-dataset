@@ -77,7 +77,7 @@ Evaluaciones adicionales aportadas por el autor:
 
 ## Requisitos de hardware
 
-- Pesos cuantizados: 6,94 GB (6,46 GiB); descarga completa aproximada de 6,96 GB. El repo en HuggingFace ocupa 21,3 GB, por lo que conviene descargar el paquete completo.
+- Pesos cuantizados: 6,94 GB (6,46 GiB); descarga completa aproximada de 6,96 GB. El repo en Hugging Face ocupa 21,3 GB, por lo que conviene descargar el paquete completo.
 - RAM/VRAM estimada para inferencia: alrededor de 7-8 GB solo para los pesos, mas el espacio de cache KV y activaciones, cuya magnitud depende de la longitud de contexto efectiva (no especificada). Se trata de una estimacion, no de una cifra publicada por el autor.
 - Plataforma recomendada: Apple Silicon con memoria unificada, dado que la libreria declarada es MLX y los tags incluyen `apple-silicon`. Un Mac con 16 GB de memoria unificada o superior deberia poder alojar el modelo con margen para el contexto; con 8 GB el margen es muy ajustado.
 - Compatibilidad de runtime: requiere Osaurus 0.25.21 o superior, o un runtime vmlx-swift compatible con JANG. El autor advierte que un cargador MLX uniform-bit estandar es insuficiente, por lo que no es desplegable directamente con llama.cpp, Ollama, vLLM o TGI en su formato actual.
@@ -89,10 +89,10 @@ Evaluaciones adicionales aportadas por el autor:
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OsaurusAI/Diplodocus-preview-JANG_6M (este) | ~9B | no disponible | JANG affine mixta, 6,94 GB (8/6/5/4 bits) | apache-2.0 | HuggingFace, runtime Osaurus/vmlx-swift |
-| OsaurusAI/Diplodocus-preview-7B-JANGH7 | no disponible | no disponible | JANG (7B) | no disponible | HuggingFace |
-| OsaurusAI/Diplodocus-preview2-JANGH7 | ~7B (base K2-Horizon-7B) | no disponible | JANG, 7,2 GB | no disponible | HuggingFace |
-| IFM/K2-Horizon-7B (modelo base) | ~7B nominal (el paquete reporta ~9B) | no disponible | BF16 | no disponible | HuggingFace |
+| OsaurusAI/Diplodocus-preview-JANG_6M (este) | ~9B | no disponible | JANG affine mixta, 6,94 GB (8/6/5/4 bits) | apache-2.0 | Hugging Face, runtime Osaurus/vmlx-swift |
+| OsaurusAI/Diplodocus-preview-7B-JANGH7 | no disponible | no disponible | JANG (7B) | no disponible | Hugging Face |
+| OsaurusAI/Diplodocus-preview2-JANGH7 | ~7B (base K2-Horizon-7B) | no disponible | JANG, 7,2 GB | no disponible | Hugging Face |
+| IFM/K2-Horizon-7B (modelo base) | ~7B nominal (el paquete reporta ~9B) | no disponible | BF16 | no disponible | Hugging Face |
 
 Las alternativas mas cercanas son otras compilaciones del mismo asistente Diplodocus publicadas por OsaurusAI, que comparten modelo base y objetivo (finanzas, documentos y trabajo ofimatico). No se dispone de benchmarks comparativos publicados entre ellas mas alla de las comparaciones con la receta preview 3 incluidas en la propia model card.
 
@@ -113,11 +113,11 @@ Las alternativas mas cercanas son otras compilaciones del mismo asistente Diplod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/Diplodocus-preview-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/Diplodocus-preview-JANG_6M
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Otra compilacion de la familia: https://huggingface.co/OsaurusAI/Diplodocus-preview-7B-JANGH7
 - Otra compilacion de la familia: https://huggingface.co/OsaurusAI/Diplodocus-preview2-JANGH7
-- Organizacion en HuggingFace: https://huggingface.co/OsaurusAI
+- Organizacion en Hugging Face: https://huggingface.co/OsaurusAI
 - Sitio oficial: https://osaurus.ai/
 - Pagina de modelos: https://osaurus.ai/models
 - Repositorio en GitHub: https://github.com/osaurus-ai/osaurus

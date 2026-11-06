@@ -78,10 +78,10 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 - Perdida de calidad por cuantizacion: aunque el esquema es mixto, el 93,4% de los pesos esta en 4 bits; es esperable cierta degradacion en tareas sensibles a la precision, como matematicas o generacion de codigo largo, sin que existan mediciones publicadas.
 - Publicacion sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin validacion de la comunidad. No hay evidencia de que el checkpoint haya sido probado mas alla del autor.
 - Compatibilidad restringida: el formato MLX limita su uso a Apple Silicon y a las herramientas del ecosistema (mlx-lm, oMLX); no es portable a stacks GPU convencionales sin conversion.
-- Fecha de creacion anomala: el repositorio figura creado el 2026-10-19, dato que conviene verificar directamente en HuggingFace antes de citarlo.
+- Fecha de creacion anomala: el repositorio figura creado el 2026-10-19, dato que conviene verificar directamente en Hugging Face antes de citarlo.
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/jancirnodziewiaty/Swish-26B-A4B-oQ4e
+- Hugging Face (este checkpoint): https://huggingface.co/jancirnodziewiaty/Swish-26B-A4B-oQ4e
 - Modelo base: https://huggingface.co/ReadyArt/Swish-26B-A4B
 - Repositorio de la herramienta de cuantizacion oQ/oMLX: https://github.com/jundot/omlx

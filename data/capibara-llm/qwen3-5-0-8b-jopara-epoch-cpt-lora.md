@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-CPT-LoRA es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-0.8B, desarrollado por el usuario Capibara-LLM y publicado en HuggingFace. Se trata de un adaptador LoRA resultante de un proceso de entrenamiento continuado (continual pre-training, indicado por el sufijo "CPT" en el nombre) sobre una única época ("Epoch"), orientado a generación de texto. El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado únicamente para el idioma inglés.
+Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-CPT-LoRA es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-0.8B, desarrollado por el usuario Capibara-LLM y publicado en Hugging Face. Se trata de un adaptador LoRA resultante de un proceso de entrenamiento continuado (continual pre-training, indicado por el sufijo "CPT" en el nombre) sobre una única época ("Epoch"), orientado a generación de texto. El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado únicamente para el idioma inglés.
 
 El modelo hereda la arquitectura y el tamaño del Qwen3.5-0.8B original de la familia Qwen, es decir, aproximadamente 800 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños aptos para despliegue en hardware de consumo. El repositorio ocupa 1,1 GB y los pesos se almacenan en formato safetensors, con compatibilidad declarada con transformers y text-generation-inference.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada desde el punto de vista de la investigac
 
 El modelo es un ajuste fino del Qwen3.5-0.8B, un transformer de aproximadamente 800 millones de parámetros. El sufijo "LoRA" del nombre indica que el ajuste se realizó mediante Low-Rank Adaptation, técnica que congela los pesos originales e introduce matrices de bajo rango entrenables, reduciendo drásticamente el coste computacional y de memoria del fine-tuning. El sufijo "CPT" sugiere un entrenamiento continuado (continual pre-training) sobre el modelo base, aunque la model card no detalla la composición del dataset ni el número de tokens utilizados.
 
-Según la model card, el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que el autor describe como "2x faster" respecto a un flujo estándar. No se especifica si hubo RLHF, DPO u otras etapas de alineación posteriores, ni se documentan hiperparámetros, tamaño del dataset o procedimiento de evaluación. La información sobre la arquitectura interna del Qwen3.5-0.8B (tipo de atención, número de capas, dimensiones) no está disponible en la información proporcionada.
+Según la model card, el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que el autor describe como "2x faster" respecto a un flujo estándar. No se especifica si hubo RLHF, DPO u otras etapas de alineación posteriores, ni se documentan hiperparámetros, tamaño del dataset o procedimiento de evaluación. La información sobre la arquitectura interna del Qwen3.5-0.8B (tipo de atención, número de capas, dimensiones) no está disponible en la información proporcionada.
 
 ## Capacidades
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-CPT-LoRA | ~0,8B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3.5-0.8B (modelo base) | ~0,8B | no disponible | no disponible | HuggingFace |
+| Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-CPT-LoRA | ~0,8B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3.5-0.8B (modelo base) | ~0,8B | no disponible | no disponible | Hugging Face |
 | Modelos comparables de ~1B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa de rendimiento con alternativas de la misma categoría.
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa de rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-CPT-LoRA
+- Hugging Face: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-CPT-LoRA
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

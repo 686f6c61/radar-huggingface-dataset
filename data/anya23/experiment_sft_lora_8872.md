@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Anya23/experiment_sft_lora_8872` es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario Anya23. No es un modelo completo: son pesos delta que deben cargarse sobre `unsloth/Qwen2.5-1.5B-Instruct`, un transformer decoder-only de 1.500 millones de parámetros. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador de bajo rango, y fue creado el 28 de octubre de 2026 y actualizado ese mismo día.
+`Anya23/experiment_sft_lora_8872` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario Anya23. No es un modelo completo: son pesos delta que deben cargarse sobre `unsloth/Qwen2.5-1.5B-Instruct`, un transformer decoder-only de 1.500 millones de parámetros. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador de bajo rango, y fue creado el 28 de octubre de 2026 y actualizado ese mismo día.
 
-Su relevancia es la de un artefacto de laboratorio: documenta un flujo de trabajo Unsloth + TRL + PEFT (versión 0.20.0 registrada en el repositorio) para especializar un modelo pequeño. La model card es la plantilla por defecto de HuggingFace y no responde a ninguna de sus propias preguntas: no hay datos de entrenamiento, hiperparámetros, evaluación, idiomas ni licencia. En el momento de la consulta acumula 0 descargas y 0 likes.
+Su relevancia es la de un artefacto de laboratorio: documenta un flujo de trabajo Unsloth + TRL + PEFT (versión 0.20.0 registrada en el repositorio) para especializar un modelo pequeño. La model card es la plantilla por defecto de Hugging Face y no responde a ninguna de sus propias preguntas: no hay datos de entrenamiento, hiperparámetros, evaluación, idiomas ni licencia. En el momento de la consulta acumula 0 descargas y 0 likes.
 
 Esta ficha debe leerse, por tanto, como documentación de un experimento sin validar. Las capacidades, la ventana de contexto y el rendimiento que se describen a continuación proceden del modelo base y no están confirmados para el adaptador.
 

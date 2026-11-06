@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RiteshKushwaha01/supportiq-artifacts es un repositorio publicado en HuggingFace por el usuario RiteshKushwaha01 bajo licencia MIT. La model card asociada contiene unicamente la declaracion de licencia (`license: mit`), sin descripcion del contenido, del tipo de artefacto ni de su proposito. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, y no tiene pipeline declarado.
+RiteshKushwaha01/supportiq-artifacts es un repositorio publicado en Hugging Face por el usuario RiteshKushwaha01 bajo licencia MIT. La model card asociada contiene unicamente la declaracion de licencia (`license: mit`), sin descripcion del contenido, del tipo de artefacto ni de su proposito. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, y no tiene pipeline declarado.
 
 No se dispone de informacion verificable sobre si el repositorio contiene un modelo de lenguaje, un conjunto de pesos, adaptadores, ficheros de configuracion, artefactos auxiliares de un proyecto mayor o cualquier otra clase de recurso. El nombre "supportiq-artifacts" sugiere, como inferencia no confirmada a partir del identificador, que podria tratarse de un contenedor de artefactos auxiliares de un proyecto denominado SupportIQ, posiblemente orientado a soporte tecnico o atencion al cliente, pero esta interpretacion no esta respaldada por ningun dato publicado.
 
@@ -88,7 +88,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RiteshKushwaha01/supportiq-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/RiteshKushwaha01/supportiq-artifacts
 - Paper, blog o repositorio de codigo del autor: no disponible.
 - Demostracion o espacio de prueba: no disponible.
 - La busqueda web realizada no devolvio resultados relacionados con este repositorio; unicamente aparecieron paginas genericas sobre ChatGPT (chatgpt.com, openai.com, en.wikipedia.org/wiki/ChatGPT), sin vinculacion alguna con el artefacto descrito.

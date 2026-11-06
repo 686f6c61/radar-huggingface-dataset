@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, D
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| receipt-vlm-qwen2.5-vl-3b-GGUF (Q4_K_M) | 3,09 B | No disponible | Field F1 0,832 en 100 recibos de CORD v2 | Apache-2.0 | GGUF en HuggingFace (4,28 GiB de despliegue) |
+| receipt-vlm-qwen2.5-vl-3b-GGUF (Q4_K_M) | 3,09 B | No disponible | Field F1 0,832 en 100 recibos de CORD v2 | Apache-2.0 | GGUF en Hugging Face (4,28 GiB de despliegue) |
 | receipt-vlm-qwen2.5-vl-3b-awq (mismo ajuste) | 3,09 B | No disponible | No disponible | Apache-2.0 | AWQ, 3,31 GiB; requiere vLLM o similar |
 | Qwen/Qwen2.5-VL-3B-Instruct (modelo base) | 3,09 B | No disponible en la informacion proporcionada | No disponible | Apache-2.0 | Safetensors, pesos completos |
 
@@ -100,7 +100,7 @@ El modelo base y el checkpoint AWQ son los unicos terminos de comparacion docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mazenDDr/receipt-vlm-qwen2.5-vl-3b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mazenDDr/receipt-vlm-qwen2.5-vl-3b-GGUF
 - Checkpoint AWQ del mismo ajuste: https://huggingface.co/mazenDDr/receipt-vlm-qwen2.5-vl-3b-awq
 - Codigo, harness de evaluacion y notas: https://github.com/mazenDDr/receipt-vlm
 - Guia de campos, recorrido por un recibo y 100 extracciones registradas: https://mazenddr.github.io/receipt-vlm/

@@ -86,10 +86,10 @@ La comparativa se limita a los modelos mencionados en la información disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v4-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v4-GGUF
 - Repositorio del modelo DPO (safetensors BF16): https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v4-dpo
 - Repositorio MLX 4-bit para Apple Silicon: https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v4-mlx-4bit
 - Registro de Ollama: https://ollama.com/davidnichols/claude-yolo-vibes-v4
 - Repositorio GitHub con detalles de entrenamiento (v5): https://github.com/davidnichols-ops/claude-yolo-vibes-v5
-- Perfil del autor en HuggingFace: https://huggingface.co/davidnichols-ops
+- Perfil del autor en Hugging Face: https://huggingface.co/davidnichols-ops
 - Modelo relacionado claude-yolo-vibes (Qwen3-1.7B): https://huggingface.co/davidnichols-ops/claude-yolo-vibes

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ronbakker/chatterbox-nano-fp16-litert | no disponible | 1024 posiciones; 128 tokens de texto por unidad | en | MIT | LiteRT/TFLite FP16 | HuggingFace, 0 descargas |
-| ResembleAI/chatterbox-nano (base) | no disponible | no disponible en esta ficha | en | no disponible en esta ficha | PyTorch | HuggingFace |
+| ronbakker/chatterbox-nano-fp16-litert | no disponible | 1024 posiciones; 128 tokens de texto por unidad | en | MIT | LiteRT/TFLite FP16 | Hugging Face, 0 descargas |
+| ResembleAI/chatterbox-nano (base) | no disponible | no disponible en esta ficha | en | no disponible en esta ficha | PyTorch | Hugging Face |
 | Alternativas TTS en dispositivo | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -84,5 +84,5 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- [HuggingFace: ronbakker/chatterbox-nano-fp16-litert](https://huggingface.co/ronbakker/chatterbox-nano-fp16-litert)
+- [Hugging Face: ronbakker/chatterbox-nano-fp16-litert](https://huggingface.co/ronbakker/chatterbox-nano-fp16-litert)
 - [Modelo base: ResembleAI/chatterbox-nano](https://huggingface.co/ResembleAI/chatterbox-nano)

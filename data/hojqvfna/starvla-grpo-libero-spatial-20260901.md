@@ -62,7 +62,7 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HOJQVFNA/starvla-grpo-libero-spatial-20260901
+- Hugging Face: https://huggingface.co/HOJQVFNA/starvla-grpo-libero-spatial-20260901
 - Documentación de StarVLA: https://starvla.github.io/docs/
 - Benchmark LIBERO (evaluación): https://starvla.github.io/docs/benchmarks/libero/
 - Ejemplo de RL con StarVLA en RLinf: https://rlinf.readthedocs.io/en/latest/rst_source/examples/embodied/starvla.html

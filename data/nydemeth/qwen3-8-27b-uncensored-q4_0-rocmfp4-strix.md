@@ -78,7 +78,7 @@ La principal diferencia frente a las alternativas es el formato de cuantización
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nydemeth/Qwen3.8-27B-Uncensored-Q4_0-ROCmFP4-STRIX
+- Repositorio Hugging Face: https://huggingface.co/nydemeth/Qwen3.8-27B-Uncensored-Q4_0-ROCmFP4-STRIX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo fuente abliterado: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - GGUF estándar del modelo abliterado: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF

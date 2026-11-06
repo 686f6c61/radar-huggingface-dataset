@@ -82,7 +82,7 @@ Rendimiento de inferencia medido por el autor (RTX 3060 de 12 GB, IQ2_XS, KV cac
 
 | Modelo | Parametros totales/activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-24B-A2B (base, LiquidAI) | 24B / 2,0B | 128K | lfm1.0 (other) | HuggingFace, GGUF oficial y safetensors |
+| LFM2.5-24B-A2B (base, LiquidAI) | 24B / 2,0B | 128K | lfm1.0 (other) | Hugging Face, GGUF oficial y safetensors |
 | Unsloth LFM2.5-24B-A2B UD-Q6_K_XL | 24B / 2,0B | 128K | lfm1.0 (heredada) | GGUF, 21,86 GB, mejor media en benchmarks (71,61%) |
 | abenzerps GSQ-RCO-IQ3_XS (esta ficha) | 24B / 2,0B | 128K | lfm1.0 (other) | GGUF, 10,54 GB, 98,9% de recovery con la mitad de espacio que Q6_K_XL |
 
@@ -101,7 +101,7 @@ No se han incluido modelos de otras familias (Qwen, Gemma, etc.) porque la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abenzerps/LFM2.5-24B-A2B-Uncensored-GSQ-RCO-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/abenzerps/LFM2.5-24B-A2B-Uncensored-GSQ-RCO-GGUF
 - Modelo base (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - GGUF oficial del modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF
 - Cuantizacion de Unsloth (referencia en benchmarks): https://huggingface.co/unsloth/LFM2.5-24B-A2B-GGUF

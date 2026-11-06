@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| noffy/hastejev (20m, Base) | 20.383.267 | no disponible | p99 < 15 ms, ECE < 0,009, 0,0 % sesgo de orden (declarado) | Apache 2.0 | HuggingFace, 0 descargas |
-| noffy/hastejev-10m (Large) | ~10.002.275 | no disponible | no disponible | Apache 2.0 (segun familia) | HuggingFace |
-| noffy/hastejev-5m (Medium) | ~5.003.971 | no disponible | no disponible | Apache 2.0 (segun familia) | HuggingFace |
-| noffy/hastejev-2m (Small) | ~1.826.275 | no disponible | no disponible | Apache 2.0 (segun familia) | HuggingFace |
+| noffy/hastejev (20m, Base) | 20.383.267 | no disponible | p99 < 15 ms, ECE < 0,009, 0,0 % sesgo de orden (declarado) | Apache 2.0 | Hugging Face, 0 descargas |
+| noffy/hastejev-10m (Large) | ~10.002.275 | no disponible | no disponible | Apache 2.0 (segun familia) | Hugging Face |
+| noffy/hastejev-5m (Medium) | ~5.003.971 | no disponible | no disponible | Apache 2.0 (segun familia) | Hugging Face |
+| noffy/hastejev-2m (Small) | ~1.826.275 | no disponible | no disponible | Apache 2.0 (segun familia) | Hugging Face |
 | TypeSafe Jev | no disponible | no disponible | p99 de 480 ms o mas segun la comparativa del propio autor | servicio alojado, no disponible | Servicio alojado |
 | OpenJev / Kev | no disponible | no disponible | sesgo posicional y techo de cardinalidad (~26 letras en OpenJev) segun la model card | no disponible | Open source, repositorio no indicado |
 
@@ -100,12 +100,12 @@ Las cifras de Jev, OpenJev y Kev proceden exclusivamente de la comparativa inclu
 - Riesgo de calibracion fuera de dominio: aunque se declara un ECE inferior a 0,009, este valor corresponde al regimen de evaluacion del autor; en distribuciones distintas (otro idioma, otro tipo de opciones) la calibracion puede degradarse y hacer que los umbrales de decision no sean fiables.
 - Sesgos desconocidos: no se documenta ninguna evaluacion de sesgo demografico, cultural o linguistico.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, con obligacion de conservar avisos de licencia y atribucion; al no haber fichero de modelo ni documentacion adicional, no se identifican restricciones anadidas, pero tampoco garantias.
-- Busqueda web sin resultados relevantes: las consultas realizadas no devolvieron informacion util sobre este modelo, por lo que toda la ficha se apoya en los metadatos de HuggingFace y en la propia model card.
+- Busqueda web sin resultados relevantes: las consultas realizadas no devolvieron informacion util sobre este modelo, por lo que toda la ficha se apoya en los metadatos de Hugging Face y en la propia model card.
 - Uso en produccion: al no existir tests publicados, versionado semantico ni changelog, cualquier integracion en produccion deberia acompanarse de una evaluacion propia sobre el dominio objetivo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/noffy/hastejev
+- Modelo en Hugging Face: https://huggingface.co/noffy/hastejev
 - Repositorio GitHub: https://github.com/racstan/hastejev
 - Notebook de modelos hermanos y cuantizacion (Kaggle): https://www.kaggle.com/code/rachitasthana/hastejev-sister-models-and-quantization
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

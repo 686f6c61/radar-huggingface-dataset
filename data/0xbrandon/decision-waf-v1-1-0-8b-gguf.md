@@ -104,6 +104,6 @@ Recall por etiqueta al umbral 0.9: recon 20/30, injection 54/63, xss 19/23, auth
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B-GGUF
+- Hugging Face: https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B-GGUF
 - Repositorio decision-waf: https://github.com/0x4272616E646F6E/decision-waf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base

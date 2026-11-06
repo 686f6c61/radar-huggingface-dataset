@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Overload uyum modeli v2.0 es un clasificador tabular binario muy ligero publicado por el desarrollador huseyinbaran en HuggingFace. No es un modelo de lenguaje: es un pipeline de scikit-learn (`StandardScaler` + `LogisticRegression`) exportado a ONNX (opset 17) que ocupa 573 bytes y predice la probabilidad de que un jugador elija la opción atractiva pero incorrecta en una ventana de decisión del videojuego educativo Overload, ambientado en una crisis de sistemas de información hospitalaria.
+Overload uyum modeli v2.0 es un clasificador tabular binario muy ligero publicado por el desarrollador huseyinbaran en Hugging Face. No es un modelo de lenguaje: es un pipeline de scikit-learn (`StandardScaler` + `LogisticRegression`) exportado a ONNX (opset 17) que ocupa 573 bytes y predice la probabilidad de que un jugador elija la opción atractiva pero incorrecta en una ventana de decisión del videojuego educativo Overload, ambientado en una crisis de sistemas de información hospitalaria.
 
 El modelo resuelve un problema de adaptación dinámica de dificultad: la probabilidad estimada (p) se compara con un umbral de 0,5 para decidir si el juego activa el tutor socrático y desactiva el temporizador (p ≥ 0,5) o mantiene el flujo normal (p < 0,5). El modelo no conoce la respuesta correcta ni la revela; solo estima la necesidad de apoyo del jugador en ese instante.
 
@@ -96,5 +96,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huseyinbaran/overload-uyum
+- Modelo en Hugging Face: https://huggingface.co/huseyinbaran/overload-uyum
 - Código fuente, entrenamiento y tests: https://github.com/huseyinbaranisik/OverLoad

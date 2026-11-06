@@ -85,7 +85,7 @@ La diferencia clave es que este repositorio no compite con los modelos individua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/timur777/pronounce-phone-models
+- Repositorio en Hugging Face: https://huggingface.co/timur777/pronounce-phone-models
 - Modelo base del reconocedor de fonemas: https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft
 - Parakeet TDT 0.6B v3 en ONNX: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx
 - Parakeet TDT 0.6B v3 original (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

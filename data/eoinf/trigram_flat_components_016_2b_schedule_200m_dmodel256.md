@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eoinf/trigram_flat_components_016_2b_schedule_200m_dmodel256` es un transformer causal de muy pequeno tamano publicado en HuggingFace por el usuario `eoinf` como parte de una parrilla de experimentos ("Transformer experiment grid"). No se trata de un modelo de proposito general ni de un lanzamiento de un laboratorio: es un artefacto de investigacion que forma parte de una serie de entrenamientos controlados para estudiar el comportamiento de transformers diminutos bajo distintas configuraciones de anchura, datos y calendario de entrenamiento.
+El modelo `eoinf/trigram_flat_components_016_2b_schedule_200m_dmodel256` es un transformer causal de muy pequeno tamano publicado en Hugging Face por el usuario `eoinf` como parte de una parrilla de experimentos ("Transformer experiment grid"). No se trata de un modelo de proposito general ni de un lanzamiento de un laboratorio: es un artefacto de investigacion que forma parte de una serie de entrenamientos controlados para estudiar el comportamiento de transformers diminutos bajo distintas configuraciones de anchura, datos y calendario de entrenamiento.
 
 Segun la model card, el modelo emplea `d_model=256`, un vocabulario de 4096 tokens (tokenizer `eoinf/pile_tokenizer_4096`) y una longitud de contexto de 256 tokens. El calendario nominal de entrenamiento es de aproximadamente 1.999.998.976 tokens (unos 2 mil millones), aunque los horizontes reales por modelo, incluyendo paradas tempranas, se registran en los ficheros `grid_summary.json` y `result.json` del repositorio.
 
@@ -75,6 +75,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/trigram_flat_components_016_2b_schedule_200m_dmodel256
+- Hugging Face: https://huggingface.co/eoinf/trigram_flat_components_016_2b_schedule_200m_dmodel256
 - Tokenizer: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de arquitectura y carga: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL directa en la informacion disponible)

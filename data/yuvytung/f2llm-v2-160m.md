@@ -80,9 +80,9 @@ No se dispone de datos comparativos con otros modelos de embeddings en la inform
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| F2LLM-v2-160M (este) | 159M | 41K tokens (no confirmado) | no disponible | GGUF en HuggingFace |
-| F2LLM-v2-80M | ~80M | no disponible | no disponible | HuggingFace / ModelScope |
-| F2LLM-v2-14B | 14B | no disponible | no disponible | HuggingFace / ModelScope |
+| F2LLM-v2-160M (este) | 159M | 41K tokens (no confirmado) | no disponible | GGUF en Hugging Face |
+| F2LLM-v2-80M | ~80M | no disponible | no disponible | Hugging Face / ModelScope |
+| F2LLM-v2-14B | 14B | no disponible | no disponible | Hugging Face / ModelScope |
 | Modelos de embeddings de terceros | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos comparativos con otros modelos de embeddings en la inform
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/yuvytung/F2LLM-v2-160M
-- Modelo base en HuggingFace: https://huggingface.co/codefuse-ai/F2LLM-v2-160M
+- Modelo base en Hugging Face: https://huggingface.co/codefuse-ai/F2LLM-v2-160M
 - Modelo base en ModelScope: https://www.modelscope.cn/models/codefuse-ai/F2LLM-v2-160M
 - Paper (arXiv): https://arxiv.org/html/2603.19223
 - Ficha en llmboard.ai: https://www.llmboard.ai/models/codefuse-ai-f2llm-v2-160m

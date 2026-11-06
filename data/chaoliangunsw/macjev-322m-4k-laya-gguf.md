@@ -86,7 +86,7 @@ La unica comparacion documentada en la informacion disponible es contra el check
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MacJev-322M-4K-Laya-GGUF | 306,9 M (safetensors) | 4096 tokens de entrada | 89,1 % en comprobaciones si/no de 2K-4K tokens; error de calibracion 0,032 | Apache 2.0 | GGUF + safetensors en HuggingFace |
+| MacJev-322M-4K-Laya-GGUF | 306,9 M (safetensors) | 4096 tokens de entrada | 89,1 % en comprobaciones si/no de 2K-4K tokens; error de calibracion 0,032 | Apache 2.0 | GGUF + safetensors en Hugging Face |
 | Laya multilingue (modelo base) | no disponible | 4096 tokens | 31,0 % en comprobaciones si/no; error de calibracion 0,253 | no disponible | no disponible en la informacion proporcionada |
 | Otras alternativas de enrutado o clasificacion compacta | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ La unica comparacion documentada en la informacion disponible es contra el check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya-GGUF
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya-GGUF
 - Modelo base: https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya
 - Releases de llama.cpp: https://github.com/ggml-org/llama.cpp/releases
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

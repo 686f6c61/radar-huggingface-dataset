@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de benchmarks para establecer una compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aracei/gemma-3-4b-RP-Lora-F16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Aracei/gemma-3-4b-RP-Lora-F16-GGUF
 - Adaptador original: https://huggingface.co/bunnycore/gemma-3-4b-RP-Lora
 - Espacio GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentacion del servidor llama.cpp: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

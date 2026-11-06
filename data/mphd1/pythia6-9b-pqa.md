@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pythia6.9b-pqa es un ajuste fino (fine-tune) del modelo EleutherAI/pythia-6.9b publicado por el usuario mphd1 en HuggingFace. Se trata de un transformer decoder-only de 6.857.302.016 parametros (~6,9B) con arquitectura GPT-NeoX, la misma familia utilizada por la suite Pythia de EleutherAI. El repositorio contiene unicamente pesos en formato safetensors (27,4 GB) y esta licenciado bajo Apache 2.0.
+pythia6.9b-pqa es un ajuste fino (fine-tune) del modelo EleutherAI/pythia-6.9b publicado por el usuario mphd1 en Hugging Face. Se trata de un transformer decoder-only de 6.857.302.016 parametros (~6,9B) con arquitectura GPT-NeoX, la misma familia utilizada por la suite Pythia de EleutherAI. El repositorio contiene unicamente pesos en formato safetensors (27,4 GB) y esta licenciado bajo Apache 2.0.
 
 La relevancia de esta publicacion es limitada y fundamentalmente experimental: la model card fue generada automaticamente por la libreria `Trainer` de Transformers y no documenta ni el dataset de entrenamiento ("unknown dataset"), ni la composicion de los datos, ni evaluacion alguna. El `model-index` declara una lista de resultados vacia, por lo que no existen benchmarks publicados. El modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - VRAM estimada para inferencia: aproximadamente 27,4 GB en fp32, ~13,7 GB en fp16/bf16, ~7 GB en int8 y ~4 GB en cuantizacion de 4 bits.
 - GPU recomendadas: A100 40/80 GB o H100 para fp16/bf16 sin cuantizar; A100 40 GB, L40S o RTX 6000 Ada para int8.
 - GPU de consumo: cabe en fp16 en RTX 3090, RTX 4090, RTX 5090 y similares con 24 GB o mas. En 4 bits puede ejecutarse en GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4070, etc.). El KV cache es reducido gracias al contexto de 2048 tokens.
-- Opciones de despliegue: `transformers` de forma nativa; el repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con Inference Endpoints de HuggingFace. vLLM es viable al ser una arquitectura GPT-NeoX soportada. llama.cpp u Ollama requeririan una conversion previa a GGUF que no esta publicada.
+- Opciones de despliegue: `transformers` de forma nativa; el repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con Inference Endpoints de Hugging Face. vLLM es viable al ser una arquitectura GPT-NeoX soportada. llama.cpp u Ollama requeririan una conversion previa a GGUF que no esta publicada.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -106,9 +106,9 @@ No se dispone de datos de rendimiento comparado para pythia6.9b-pqa, ya que care
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/pythia6.9b-pqa
+- Modelo en Hugging Face: https://huggingface.co/mphd1/pythia6.9b-pqa
 - Modelo base: https://huggingface.co/EleutherAI/pythia-6.9b
 - Suite Pythia (EleutherAI): https://github.com/EleutherAI/pythia
-- Suite Pythia en HuggingFace: https://huggingface.co/EleutherAI
+- Suite Pythia en Hugging Face: https://huggingface.co/EleutherAI
 - Paper de Pythia: https://arxiv.org/abs/2304.01373
 - The Pile: https://arxiv.org/abs/2101.00027

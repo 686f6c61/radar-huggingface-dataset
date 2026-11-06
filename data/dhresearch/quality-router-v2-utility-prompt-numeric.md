@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks de generacion (MMLU, HumanEval, GSM
 - Compatibilidad con GPU de consumo: no aplica (no necesita GPU; cualquier equipo capaz de ejecutar Python, sklearn y joblib es suficiente).
 - Opciones de despliegue: carga directa con `joblib.load` en Python; no hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos generativos.
 - Latencia y throughput estimados: no disponibles; dependen del numero de caracteristicas del vector de entrada y del numero de cabezas evaluadas.
-- Almacenamiento: el repositorio ocupa 0.0 GB segun los metadatos de HuggingFace, coherente con un artefacto de pesos lineales.
+- Almacenamiento: el repositorio ocupa 0.0 GB segun los metadatos de Hugging Face, coherente con un artefacto de pesos lineales.
 
 ## Comparativa con modelos similares
 
@@ -92,6 +92,6 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-utility-prompt-numeric
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-utility-prompt-numeric
 - Dataset asociado: https://huggingface.co/datasets/dhresearch/outcome-router-v2-measured-pool
 - Resultados de la busqueda web: ninguno de los enlaces devueltos (ACL Anthology sobre IA multilingue, Critical Infrastructure Studies and Digital Humanities, AVA database, The Emergence of the Digital Humanities) guarda relacion con este modelo ni con el estudio `quality_router_v2`.

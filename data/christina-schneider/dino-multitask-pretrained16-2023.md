@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `christina-schneider/dino-multitask-pretrained16-2023` es un codebase experimental publicado en HuggingFace por la usuaria christina-schneider, en el que se implementa una arquitectura denominada "Dino" orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El autor tambien declara que no se reclama ninguna puntuacion de benchmark en el repositorio.
+El repositorio `christina-schneider/dino-multitask-pretrained16-2023` es un codebase experimental publicado en Hugging Face por la usuaria christina-schneider, en el que se implementa una arquitectura denominada "Dino" orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El autor tambien declara que no se reclama ninguna puntuacion de benchmark en el repositorio.
 
 El dato mas relevante para un evaluador es la escala real del artefacto: los pesos en formato safetensors contienen 49.600 parametros totales, una cifra extraordinariamente pequena (orden de decenas de miles), muy lejos de lo que sugiere la etiqueta interna de escala "giant" que aparece en la configuracion de la arquitectura. El repositorio ocupa 0,0 GB, no tiene descargas ni likes registrados en el momento de la consulta y se publico con licencia Apache 2.0.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el repositorio incluye `training_args.json` con una 
 
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de 49.600 parametros permite validar que el flujo de carga de safetensors, el bucle de entrenamiento y el guardado de checkpoints funcionan antes de invertir GPU en un run real.
 - Prototipado de arquitecturas multitarea: al mantener la configuracion "intencionadamente manejable", sirve para inspeccionar cambios de arquitectura (atencion flash, fusion bilinear, scalenorm) sin coste computacional apreciable.
-- Docencia y formacion: es un ejemplo de estructura de repositorio (config, training args, script, README) util para explicar como se organiza un proyecto de investigacion reproducible en HuggingFace.
+- Docencia y formacion: es un ejemplo de estructura de repositorio (config, training args, script, README) util para explicar como se organiza un proyecto de investigacion reproducible en Hugging Face.
 - Integracion en tests de CI: por su tamano (menos de 0,2 MB en fp32), puede incorporarse como fixture en suites de integracion continuas que verifiquen la compatibilidad de la libreria de carga de safetensors.
 - Estudio de recetas de optimizacion: la combinacion Lion mas schedule exponencial documentada en `training_args.json` sirve como punto de partida para experimentos comparativos de optimizadores a pequena escala.
 - Base para experimentos academicos de multitarea: el autor propone explicitamente entrenar todas las lineas base con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias, lo que encaja con protocolos de comparacion controlada.
@@ -86,6 +86,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christina-schneider/dino-multitask-pretrained16-2023
+- Modelo en Hugging Face: https://huggingface.co/christina-schneider/dino-multitask-pretrained16-2023
 - Archivos incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por la busqueda corresponden a maquinaria agricola (fauces de la marca Kuhn) y no guardan ninguna relacion con este modelo. No se dispone de paper, blog, repositorio adicional ni demo asociados.

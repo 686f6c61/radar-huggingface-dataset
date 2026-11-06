@@ -70,7 +70,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-Q8_0-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio combinado con validación: https://huggingface.co/Chungulus/Qwen3.8-27B-GGUF/tree/f519a212d6c15cd3292b6ca835dd8ebf235642c0
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

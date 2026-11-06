@@ -89,9 +89,9 @@ La comparativa interna muestra que la version 1B sacrifica notablemente calidad 
 
 ## Enlaces
 
-- [Modelo original en HuggingFace (fixie-ai)](https://huggingface.co/fixie-ai/ultravox-v0_5-llama-3_2-1b)
-- [Modelo espejo en HuggingFace (aoiandroid)](https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_2-1b)
-- [Coleccion Ultravox v0.5 en HuggingFace](https://huggingface.co/collections/fixie-ai/ultravox-v05)
+- [Modelo original en Hugging Face (fixie-ai)](https://huggingface.co/fixie-ai/ultravox-v0_5-llama-3_2-1b)
+- [Modelo espejo en Hugging Face (aoiandroid)](https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_2-1b)
+- [Coleccion Ultravox v0.5 en Hugging Face](https://huggingface.co/collections/fixie-ai/ultravox-v05)
 - [Repositorio GitHub de Ultravox](https://github.com/fixie-ai/ultravox)
 - [Pagina oficial del proyecto](https://ultravox.ai)
 - [Modelo en ModelScope](https://www.modelscope.cn/models/fixie-ai/ultravox-v0_5-llama-3_2-1b)

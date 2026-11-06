@@ -100,7 +100,7 @@ En la informacion proporcionada no se incluyen cifras de modelos alternativos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReefNet/reefnet-minicpm-v-4.5-lora
+- Modelo en Hugging Face: https://huggingface.co/ReefNet/reefnet-minicpm-v-4.5-lora
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4_5
 - Dataset de entrenamiento: https://huggingface.co/datasets/ReefNet/ReefNet-1.0
 - Repositorio de referencia (script de inferencia y herramientas de metrica): https://github.com/ReefNet-Project

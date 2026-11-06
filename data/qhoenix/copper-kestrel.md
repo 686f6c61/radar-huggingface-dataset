@@ -95,7 +95,7 @@ La diferencia funcional conocida entre este checkpoint y el modelo base de torch
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qhoenix/copper-kestrel
+- Hugging Face: https://huggingface.co/qhoenix/copper-kestrel
 - Perturb (subnet, netuid 26): https://perturbai.io
 - Modelo base en torchvision: https://pytorch.org/vision/stable/models/efficientnetv2.html
 - No se han encontrado enlaces relevantes adicionales en la busqueda web: los resultados devueltos correspondian a sitios de calendarios y directorios sin relacion con el modelo.

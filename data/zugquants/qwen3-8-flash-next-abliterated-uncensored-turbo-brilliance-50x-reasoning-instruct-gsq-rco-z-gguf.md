@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una cuantización GGUF publicada por el usuario `zugquants` a partir del modelo base `SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF`, que a su vez deriva de un supuesto "Qwen3.8-Flash-Next" de arquitectura MoE multimodal. El repositorio se presenta como una versión "abliterated" (sin rechazos aprendidos) y "uncensored", orientada a ejecución local en formatos cuantizados con la técnica GSQ-RCO atribuida a IST-DASLab. El pipeline declarado en HuggingFace es `image-text-to-text`, por lo que el autor lo posiciona como modelo con entrada de imagen y texto.
+Este modelo es una cuantización GGUF publicada por el usuario `zugquants` a partir del modelo base `SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF`, que a su vez deriva de un supuesto "Qwen3.8-Flash-Next" de arquitectura MoE multimodal. El repositorio se presenta como una versión "abliterated" (sin rechazos aprendidos) y "uncensored", orientada a ejecución local en formatos cuantizados con la técnica GSQ-RCO atribuida a IST-DASLab. El pipeline declarado en Hugging Face es `image-text-to-text`, por lo que el autor lo posiciona como modelo con entrada de imagen y texto.
 
 La información disponible es internamente contradictoria: el recuento real de safetensors indica 176.943.899.520 parámetros (~176,9 B), mientras que la model card habla de "120B parameters" en el encabezado y de "180 Billion parameters with 512 experts, 10 activated per token" en el cuerpo. No se documenta la longitud de contexto, no hay resultados de benchmarks y el repositorio no registra descargas ni valoraciones en el momento de la consulta. La model card es fundamentalmente promocional y describe un sistema propietario de presets ("Turbo Brilliance", 27 modos de razonamiento, 27 modos instruct, 9 modos "xhigh" y 15 "AI Constructs") que se activan mediante texto en el prompt o la API.
 
@@ -101,6 +101,6 @@ Las cifras de los modelos comparativos proceden de sus fichas públicas y pueden
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zugquants/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-z-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zugquants/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-z-GGUF
 - Modelo base declarado: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Busquedas web: las consultas realizadas no devolvieron resultados relevantes sobre este modelo (unicamente resultados sin relacion con el ambito tecnico), por lo que no se incluyen enlaces adicionales a papers, blogs o demos.

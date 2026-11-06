@@ -72,8 +72,8 @@ No se dispone de información sobre modelos comparables de OCR de braille en la 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BrailleQwen-2B | 2.721.801.024 | No disponible | Image-text-to-text (braille inglés) | Apache-2.0 | HuggingFace |
-| Qwen3.5-2B (base) | 2B (aproximado) | No disponible | Image-text-to-text general | Apache-2.0 (según el modelo derivado) | HuggingFace |
+| BrailleQwen-2B | 2.721.801.024 | No disponible | Image-text-to-text (braille inglés) | Apache-2.0 | Hugging Face |
+| Qwen3.5-2B (base) | 2B (aproximado) | No disponible | Image-text-to-text general | Apache-2.0 (según el modelo derivado) | Hugging Face |
 | Alternativas de OCR braille | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables de OCR de braille en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whykartik/qwen3.5-braille
+- Modelo en Hugging Face: https://huggingface.co/whykartik/qwen3.5-braille
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio referenciado en la model card: https://huggingface.co/ai4bharat/BrailleQwen-2B
 - Liblouis (traducción a braille Unicode): https://liblouis.io/

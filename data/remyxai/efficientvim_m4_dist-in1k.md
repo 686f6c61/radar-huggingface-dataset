@@ -2,11 +2,11 @@
 
 ## Resumen
 
-EfficientViM m4 dist es un modelo de clasificación de imágenes publicado por el usuario remyxai en HuggingFace. El checkpoint contiene 21.238.741 parámetros en formato safetensors, con un tamaño de repositorio de 0,2 GB. Está etiquetado con la librería timm, el pipeline transformers y la licencia Apache 2.0. Debe usarse como clasificador de imágenes de entrada única, de acuerdo con la información disponible en su model card.
+EfficientViM m4 dist es un modelo de clasificación de imágenes publicado por el usuario remyxai en Hugging Face. El checkpoint contiene 21.238.741 parámetros en formato safetensors, con un tamaño de repositorio de 0,2 GB. Está etiquetado con la librería timm, el pipeline transformers y la licencia Apache 2.0. Debe usarse como clasificador de imágenes de entrada única, de acuerdo con la información disponible en su model card.
 
 Se trata de un modelo pequeño y de distribución abierta, lo que lo hace potencialmente interesante para entornos con recursos limitados o para aplicaciones de visión embebida. El sufijo «in1k» sugiere que el entrenamiento pudo realizarse sobre el dataset ImageNet-1k, pero esta hipótesis no está confirmada en la documentación proporcionada.
 
-La model card no incluye descripción técnica, datos de entrenamiento ni benchmarks; por tanto, no es posible evaluar su rendimiento de forma rigurosa sin realizar pruebas propias. Esta ficha refleja exclusivamente la información pública disponible en el repositorio de HuggingFace.
+La model card no incluye descripción técnica, datos de entrenamiento ni benchmarks; por tanto, no es posible evaluar su rendimiento de forma rigurosa sin realizar pruebas propias. Esta ficha refleja exclusivamente la información pública disponible en el repositorio de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible oficialmente. Con 21.238.741 parámetros en FP32, los pesos ocupan aproximadamente 84 MB. Para una imagen de 224×224, la VRAM total se estima por debajo de 0,5 GB.
 - GPU recomendadas: no se requiere una GPU dedicada. Una CPU moderna con soporte AVX2 y 4 GB de RAM es suficiente para ejecutar el modelo con PyTorch o timm. Para aceleración opcional, una RTX 3060 o superior ofrece margen amplio.
 - Compatibilidad con Consumer GPU: sí. El modelo puede ejecutarse en GPUs de gama baja como GTX 1650 o incluso en procesadores gráficos integrados.
-- Opciones de despliegue: al estar integrado con timm, puede servirse con PyTorch y HuggingFace Transformers. También es factible convertirlo a ONNX o TorchScript para su integración en aplicaciones de producción.
+- Opciones de despliegue: al estar integrado con timm, puede servirse con PyTorch y Hugging Face Transformers. También es factible convertirlo a ONNX o TorchScript para su integración en aplicaciones de producción.
 - Latencia y throughput estimados: no disponible; no se han encontrado mediciones públicas.
 
 ## Comparativa con modelos similares
@@ -68,11 +68,11 @@ No se dispone de información suficiente para realizar una comparativa formal co
 - La model card carece de descripción técnica, por lo que no se conoce con certeza la arquitectura, el dataset de entrenamiento ni el procedimiento de ajuste.
 - No se han publicado resultados de benchmarks, lo que impide evaluar la exactitud, la latencia o la robustez ante distribuciones de datos distintas.
 - Al ser un modelo de clasificación de imágenes, no es apto para generación de texto, razonamiento simbólico ni tareas de lenguaje.
-- El modelo presenta 0 descargas y 0 likes en HuggingFace; no ha sido validado de forma independiente por la comunidad.
+- El modelo presenta 0 descargas y 0 likes en Hugging Face; no ha sido validado de forma independiente por la comunidad.
 - La licencia Apache 2.0 permite el uso comercial, pero exige incluir la atribución y ofrece el software sin garantía implícita. Es responsabilidad del usuario revisar las cláusulas completas.
 - No se documentan sesgos específicos. Aunque el nombre sugiere entrenamiento en ImageNet-1k, no hay evidencia que respalde esa afirmación, y cualquier sesgo heredado del dataset de entrenamiento sería desconocido.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/remyxai/efficientvim_m4_dist.in1k
+- Pagina del modelo en Hugging Face: https://huggingface.co/remyxai/efficientvim_m4_dist.in1k
 - Repositorio de la libreria timm: https://github.com/huggingface/pytorch-image-models (referencia bibliografica de la libreria utilizada)

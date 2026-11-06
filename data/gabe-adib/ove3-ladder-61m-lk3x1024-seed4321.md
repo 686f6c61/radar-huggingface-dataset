@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ove3-ladder-61m-lk3x1024-seed4321` es un checkpoint de investigación publicado por el usuario gabe-adib en HuggingFace. No es un modelo comercial ni un lanzamiento de producto: es una ejecución concreta (seed 4321) dentro de una "escalera de intervenciones" denominada ove3, en la que se comparan variantes arquitectónicas manteniendo fijos los datos, la tasa de aprendizaje, el tamaño de batch y el número de pasos de una celda IsoFLOP de 61M. La variante publicada aquí es la rama K3 LatentMoE: un modelo de mezcla de expertos con 61M de parámetros activos, 1024 expertos de media anchura y enrutamiento top-16 (el doble de parámetros enrutados respecto a la referencia).
+`ove3-ladder-61m-lk3x1024-seed4321` es un checkpoint de investigación publicado por el usuario gabe-adib en Hugging Face. No es un modelo comercial ni un lanzamiento de producto: es una ejecución concreta (seed 4321) dentro de una "escalera de intervenciones" denominada ove3, en la que se comparan variantes arquitectónicas manteniendo fijos los datos, la tasa de aprendizaje, el tamaño de batch y el número de pasos de una celda IsoFLOP de 61M. La variante publicada aquí es la rama K3 LatentMoE: un modelo de mezcla de expertos con 61M de parámetros activos, 1024 expertos de media anchura y enrutamiento top-16 (el doble de parámetros enrutados respecto a la referencia).
 
 El interés del artefacto es metodológico, no de producto. Al fijar el presupuesto de cómputo y variar solo la estructura de expertos, el autor genera puntos de comparación limpios para estudiar el efecto de LatentMoE y del número de expertos en la pérdida de validación. El checkpoint publicado corresponde al mejor paso de validación (iteración 17.290), con una pérdida de validación de 1,1015 y una pérdida en held-out de 1,1944 nats/carácter, promediada ponderadamente sobre 9 dominios.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM para inferencia: no disponible con precision. Solo se declaran 61M de parámetros activos por token; el número de parámetros totales no se publica, y los 19,5 GB del repositorio incluyen estado del optimizador, logs y eventos de TensorBoard, por lo que no sirven como proxy fiable del tamaño de los pesos.
 - GPU recomendadas: al tratarse de un modelo de escala 61M activos, cualquier GPU con suficiente VRAM para los parámetros totales debería bastar; una RTX 4090, una RTX 3090 o incluso una GPU integrada moderna son candidatas plausibles una vez convertido el checkpoint. No hay mediciones publicadas.
 - GPU de datacenter: A100 y H100 son innecesarias para inferencia, pero sí relevantes para reentrenar o reanudar el modelo desde el checkpoint distribuido con estado del optimizador.
-- Despliegue: el formato publicado es un checkpoint distribuido de Megatron, no apto para carga directa en llama.cpp, Ollama, vLLM o TGI. Es necesario un paso de conversión a safetensors en formato HuggingFace, que no se documenta ni se proporciona en el repositorio.
+- Despliegue: el formato publicado es un checkpoint distribuido de Megatron, no apto para carga directa en llama.cpp, Ollama, vLLM o TGI. Es necesario un paso de conversión a safetensors en formato Hugging Face, que no se documenta ni se proporciona en el repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -94,10 +94,10 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Contexto: no publicado. Se desconoce la ventana máxima soportada y si el modelo usa posiciones absolutas, relativas o extrapolables.
 - Formato no inferible directamente: el checkpoint distribuido de Megatron requiere conversión; sin ella no se puede cargar en los runners habituales.
 - Parámetros totales desconocidos: impide estimar con rigor los requisitos de VRAM y el coste real de despliegue.
-- Fecha de creación declarada en el repositorio: 2026-10-17, según los metadatos de HuggingFace.
+- Fecha de creación declarada en el repositorio: 2026-10-17, según los metadatos de Hugging Face.
 - Los resultados de búsqueda web asociados a esta consulta no guardan relación con el modelo (hablan de generación de vídeo y asistentes comerciales) y no se han utilizado como fuente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3x1024-seed4321
+- Hugging Face: https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3x1024-seed4321
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos relacionados con este modelo.

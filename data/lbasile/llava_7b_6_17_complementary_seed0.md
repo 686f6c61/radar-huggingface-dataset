@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lbasile/llava_7b_6_17_complementary_seed0` es un checkpoint multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario `lbasile` el 19 de septiembre de 2026. Por los tags del repositorio (`llava`, `image-text-to-text`, `conversational`) y por el recuento real de parametros en safetensors (7.063.427.072, es decir, 7,06 mil millones), se trata de un modelo de la familia LLaVA de 7B: un transformer de lenguaje acoplado a un codificador visual. El nombre del repositorio sugiere una variante experimental orientada a combinacion de modelos complementarios ("complementary") y con una semilla concreta ("seed0"), pero la model card no documenta ese extremo.
+`lbasile/llava_7b_6_17_complementary_seed0` es un checkpoint multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario `lbasile` el 19 de septiembre de 2026. Por los tags del repositorio (`llava`, `image-text-to-text`, `conversational`) y por el recuento real de parametros en safetensors (7.063.427.072, es decir, 7,06 mil millones), se trata de un modelo de la familia LLaVA de 7B: un transformer de lenguaje acoplado a un codificador visual. El nombre del repositorio sugiere una variante experimental orientada a combinacion de modelos complementarios ("complementary") y con una semilla concreta ("seed0"), pero la model card no documenta ese extremo.
 
-El modelo resuelve la tarea clasica de conversacion sobre imagenes: recibe una o varias imagenes junto a un prompt de texto y genera respuestas en lenguaje natural. Es relevante como objeto de estudio para quien investigue tecnicas de fusion, ensamblado o entrenamiento complementario de modelos vision-language, mas que como modelo listo para produccion: no tiene descargas ni likes, la licencia no esta declarada y la model card es una plantilla autogenerada de HuggingFace sin ningun apartado completado.
+El modelo resuelve la tarea clasica de conversacion sobre imagenes: recibe una o varias imagenes junto a un prompt de texto y genera respuestas en lenguaje natural. Es relevante como objeto de estudio para quien investigue tecnicas de fusion, ensamblado o entrenamiento complementario de modelos vision-language, mas que como modelo listo para produccion: no tiene descargas ni likes, la licencia no esta declarada y la model card es una plantilla autogenerada de Hugging Face sin ningun apartado completado.
 
 La informacion publica es muy limitada. No hay datos declarados sobre arquitectura exacta, contexto, idiomas, datos de entrenamiento ni evaluacion. Todo lo que figura a continuacion marcado como inferencia procede del recuento real de parametros, del tamano del repositorio (14,1 GB, compatible con pesos en fp16 de un modelo de 7B) y de los tags del Hub; el resto se indica como "no disponible".
 
@@ -28,7 +28,7 @@ La informacion publica es muy limitada. No hay datos declarados sobre arquitectu
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna, el procedimiento de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de RLHF, DPO u otras tecnicas de alineamiento. La model card es la plantilla estandar autogenerada por HuggingFace y todos los apartados relevantes (descripcion, fuentes, usos, sesgos, datos de entrenamiento, hiperparametros, evaluacion, infraestructura) contienen el marcador `[More Information Needed]`.
+No hay informacion publicada sobre la arquitectura interna, el procedimiento de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de RLHF, DPO u otras tecnicas de alineamiento. La model card es la plantilla estandar autogenerada por Hugging Face y todos los apartados relevantes (descripcion, fuentes, usos, sesgos, datos de entrenamiento, hiperparametros, evaluacion, infraestructura) contienen el marcador `[More Information Needed]`.
 
 Lo unico verificable es lo siguiente: el repositorio declara la etiqueta `llava`, lo que situa al modelo en la familia de arquitecturas que combina un codificador de vision con un transformer de lenguaje mediante un proyector y entrenamiento en dos fases (preentrenamiento de alineamiento y ajuste fino por instrucciones). El recuento exacto de parametros y el tamano del repo son coherentes con un modelo de 7B en precision de 16 bits. El sufijo `6_17_complementary_seed0` apunta a un experimento de investigacion, probablemente una ejecucion concreta de un estudio sobre modelos complementarios, pero no se ha publicado paper, blog ni repositorio asociado que lo confirme. El tag `arxiv:1910.09700` que aparece en el Hub corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de la model card; no es el paper del modelo.
 
@@ -67,7 +67,7 @@ Las cifras siguientes son estimaciones derivadas del recuento real de parametros
 - GPU profesionales: A100 40/80 GB, H100, L40S o A6000 para fp16 sin restricciones y lotes grandes.
 - GPU de consumo: cabe en una RTX 4090 (24 GB) en fp16 con margen ajustado, y con holgura en cuantizacion de 8 o 4 bits. En una RTX 3090 (24 GB) o 4080 (16 GB) es viable solo con cuantizacion.
 - Opciones de despliegue: `transformers` es la via nativa declarada. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion previa del checkpoint. vLLM y TGI son compatibles en principio con safetensors de LLaVA, pero no hay confirmacion del autor.
-- Latencia y throughput: no disponibles. El tag `endpoints_compatible` indica que el modelo puede servirse en la infraestructura de Inference Endpoints de HuggingFace, pero no se publican metricas.
+- Latencia y throughput: no disponibles. El tag `endpoints_compatible` indica que el modelo puede servirse en la infraestructura de Inference Endpoints de Hugging Face, pero no se publican metricas.
 
 ## Comparativa con modelos similares
 
@@ -97,7 +97,7 @@ La diferencia fundamental es de trazabilidad: los tres modelos de referencia cue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lbasile/llava_7b_6_17_complementary_seed0
+- Modelo en Hugging Face: https://huggingface.co/lbasile/llava_7b_6_17_complementary_seed0
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante para este modelo. Los enlaces obtenidos correspondian a paginas de soporte de Microsoft (inicio de sesion en Hotmail, actualizacion de controladores en Windows, imagenes ISO de Windows 11), sin ninguna relacion con el modelo.
 

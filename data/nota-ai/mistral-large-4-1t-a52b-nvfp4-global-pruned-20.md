@@ -1,7 +1,7 @@
 # nota-ai/Mistral-Large-4-1T-A52B-NVFP4-Global-Pruned-20
 
 ## Resumen
-Nota AI publica una versión podada y cuantizada del modelo Mistral-Large-4-1T-A52B de Mistral AI, un transformer de tipo Mixture-of-Experts (MoE) con 1 billón de parámetros totales y 52 mil millones de parámetros activos por token. La intervención de nota-ai combina una poda global del 20 % de los expertos con cuantización NVFP4 (formato de 4 bits de NVIDIA para FP4 con escalas por bloque), lo que reduce drásticamente el peso del repositorio hasta 493,9 GB y permite servir el modelo en vLLM sobre hardware Blackwell. El modelo base es un MoE multilingüe con licencia restrictiva de Mistral, y esta variante hereda esa licencia ("other") y el acceso restringido (gated) en HuggingFace.
+Nota AI publica una versión podada y cuantizada del modelo Mistral-Large-4-1T-A52B de Mistral AI, un transformer de tipo Mixture-of-Experts (MoE) con 1 billón de parámetros totales y 52 mil millones de parámetros activos por token. La intervención de nota-ai combina una poda global del 20 % de los expertos con cuantización NVFP4 (formato de 4 bits de NVIDIA para FP4 con escalas por bloque), lo que reduce drásticamente el peso del repositorio hasta 493,9 GB y permite servir el modelo en vLLM sobre hardware Blackwell. El modelo base es un MoE multilingüe con licencia restrictiva de Mistral, y esta variante hereda esa licencia ("other") y el acceso restringido (gated) en Hugging Face.
 
 La propuesta es relevante ahora porque el coste de servir un MoE de 1T parámetros en FP8/BF16 es prohibitivo para la mayoría de equipos, y la combinación de poda de expertos + NVFP4 busca mantener calidad con un footprint mucho menor. Es una ficha pensada para desarrolladores que ya operan infraestructura Blackwell y quieren evaluar si esta variante comunitaria es una alternativa viable al checkpoint oficial.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 - La poda global del 20 % de expertos puede degradar la calidad en dominios especializados; no se publican evaluaciones que cuantifiquen esa pérdida.
 - La cuantización NVFP4 introduce error numérico adicional respecto a BF16/FP8; el impacto en tareas de razonamiento fino o matemáticas no está documentado.
 - Licencia "other" heredada de Mistral: es imprescindible revisar los términos del modelo base antes de cualquier uso comercial, ya que pueden imponer restricciones adicionales.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace y no está disponible para descarga anónima.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face y no está disponible para descarga anónima.
 - Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no hay evaluación específica publicada para esta variante.
 - Sesgos: no se documentan análisis de sesgo para el modelo base ni para esta variante.
 - Longitud de contexto no disponible, lo que impide planificar cargas con ventanas largas sin verificación previa.
@@ -75,6 +75,6 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 - Repositorio con 0 descargas y 8 likes en el momento de la consulta: es un artefacto reciente y poco validado por la comunidad.
 
 ## Enlaces
-- [HuggingFace: nota-ai/Mistral-Large-4-1T-A52B-NVFP4-Global-Pruned-20](https://huggingface.co/nota-ai/Mistral-Large-4-1T-A52B-NVFP4-Global-Pruned-20)
+- [Hugging Face: nota-ai/Mistral-Large-4-1T-A52B-NVFP4-Global-Pruned-20](https://huggingface.co/nota-ai/Mistral-Large-4-1T-A52B-NVFP4-Global-Pruned-20)
 - [Modelo base: mistralai/Mistral-Large-4-1T-A52B](https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

@@ -81,6 +81,6 @@ La principal diferencia frente a los modelos originales es la ausencia de docume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/victoraccount/wsd-training-dataset_791zbot0
+- Repositorio Hugging Face: https://huggingface.co/victoraccount/wsd-training-dataset_791zbot0
 - Paper de referencia de XLM-R (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio relacionado con WSD (no confirmado como vinculado a este modelo): https://github.com/angelinaku/wsd_pipeline

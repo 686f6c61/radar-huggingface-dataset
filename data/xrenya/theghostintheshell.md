@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Xrenya/TheGhostInTheShell | 862,7 M | Fine-tune de SD v1.5 para estilo Ghost in the Shell | No disponible | HuggingFace |
-| Anything V5 | 862,7 M | Fine-tune de SD v1.5 para anime general | CreativeML Open RAIL-M | HuggingFace |
-| Counterfeit-V3.0 | 862,7 M | Fine-tune de SD v1.5 para anime realista | CreativeML Open RAIL-M | HuggingFace |
-| Waifu Diffusion | 862,7 M | Fine-tune de SD v1.5 para anime | CreativeML Open RAIL-M | HuggingFace |
+| Xrenya/TheGhostInTheShell | 862,7 M | Fine-tune de SD v1.5 para estilo Ghost in the Shell | No disponible | Hugging Face |
+| Anything V5 | 862,7 M | Fine-tune de SD v1.5 para anime general | CreativeML Open RAIL-M | Hugging Face |
+| Counterfeit-V3.0 | 862,7 M | Fine-tune de SD v1.5 para anime realista | CreativeML Open RAIL-M | Hugging Face |
+| Waifu Diffusion | 862,7 M | Fine-tune de SD v1.5 para anime | CreativeML Open RAIL-M | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia (SD v1.5) con fine-tunes para anime. No se dispone de datos de rendimiento objetivos, por lo que la elección dependerá de la estética específica deseada. `TheGhostInTheShell` es más nicho, orientado a una sola franquicia, mientras que los otros cubren estilos más generales.
 
@@ -81,6 +81,6 @@ La comparativa se limita a modelos de la misma familia (SD v1.5) con fine-tunes 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Xrenya/TheGhostInTheShell)
+- [Página del modelo en Hugging Face](https://huggingface.co/Xrenya/TheGhostInTheShell)
 - [Repositorio GitHub del autor](https://github.com/Xrenya/stable_diffusion)
 - [Referencia a Stable Diffusion v1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)

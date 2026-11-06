@@ -66,9 +66,9 @@ No se han publicado resultados comparativos con el modelo base `allenai/Olmo-3-7
 
 | Modelo | Tipo | Parametros | GSM8K (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cot-dialect-olmo3-7b-think-grpo-sftlen-sq-l5` (este) | LoRA + GRPO (ablacion) | 7B base + LoRA | 58.6% | Apache 2.0 | HuggingFace |
-| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` | LoRA + GRPO (modelo principal del nivel L5) | 7B base + LoRA | No disponible | Apache 2.0 (presumible) | HuggingFace |
-| `allenai/Olmo-3-7B-Think` | Modelo base de razonamiento | 7B | No disponible | Apache 2.0 | HuggingFace |
+| `cot-dialect-olmo3-7b-think-grpo-sftlen-sq-l5` (este) | LoRA + GRPO (ablacion) | 7B base + LoRA | 58.6% | Apache 2.0 | Hugging Face |
+| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` | LoRA + GRPO (modelo principal del nivel L5) | 7B base + LoRA | No disponible | Apache 2.0 (presumible) | Hugging Face |
+| `allenai/Olmo-3-7B-Think` | Modelo base de razonamiento | 7B | No disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo principal del mismo nivel ni del modelo base en la informacion proporcionada, por lo que no es posible cuantificar la diferencia de precision entre la ablacion y sus alternativas.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`uiltong1/generos-musicais-cnn` es un modelo de clasificacion de generos musicales implementado con Keras y publicado en HuggingFace por el usuario `uiltong1`. Se trata, por tanto, de un clasificador de audio y no de un modelo generativo de lenguaje: su funcion previsible es recibir caracteristicas acusticas de una pista musical y asignarle una etiqueta de genero. El identificador del repositorio esta en gallego ("generos musicais"), lo que sugiere un proyecto de ambito academico o personal, posiblemente vinculado a un trabajo de fin de estudios o a una practica de aprendizaje profundo.
+`uiltong1/generos-musicais-cnn` es un modelo de clasificacion de generos musicales implementado con Keras y publicado en Hugging Face por el usuario `uiltong1`. Se trata, por tanto, de un clasificador de audio y no de un modelo generativo de lenguaje: su funcion previsible es recibir caracteristicas acusticas de una pista musical y asignarle una etiqueta de genero. El identificador del repositorio esta en gallego ("generos musicais"), lo que sugiere un proyecto de ambito academico o personal, posiblemente vinculado a un trabajo de fin de estudios o a una practica de aprendizaje profundo.
 
 La relevancia de este tipo de modelos radica en su aplicacion directa a sistemas de organizacion musical, recomendacion y etiquetado automatico de catalogos. La clasificacion automatica de genero es un problema clasico en recuperacion de informacion musical (MIR), y las arquitecturas convolucionales sobre espectrogramas siguen siendo la linea base habitual por su relacion entre coste computacional y precision.
 
@@ -65,7 +65,7 @@ La informacion publica sobre este repositorio no permite una comparacion cuantit
 
 | Modelo | Arquitectura | Parametros | Contexto | Benchmarks publicos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| uiltong1/generos-musicais-cnn | CNN en Keras | no disponible | no aplica | no disponible | no disponible | HuggingFace, 19 descargas |
+| uiltong1/generos-musicais-cnn | CNN en Keras | no disponible | no aplica | no disponible | no disponible | Hugging Face, 19 descargas |
 | CNN-TE (Nature Scientific Reports, 2025) | CNN paralela con transformada de entropia | inferiores a otras CNN segun el articulo | no aplica | GTZAN y FMA (resultados en el articulo) | no disponible | publicacion cientifica |
 | CNN + BiGRU + atencion (Nature Scientific Reports, 2025) | CNN + BiGRU + atencion | no disponible | no aplica | orientado a emocion en audio | no disponible | publicacion cientifica |
 | ronnie-allen/Music-Genre-Classification-with-CNN | CNN sobre caracteristicas de audio | no disponible | no aplica | no disponible | no disponible | GitHub |
@@ -87,7 +87,7 @@ Los tres modelos alternativos pertenecen a la misma categoria funcional (clasifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uiltong1/generos-musicais-cnn
+- Modelo en Hugging Face: https://huggingface.co/uiltong1/generos-musicais-cnn
 - Application of artificial intelligence CNN model in emotional... (Nature Scientific Reports): https://www.nature.com/articles/s41598-025-33623-1
 - Music genre classification with parallel convolutional neural networks (Nature Scientific Reports): https://www.nature.com/articles/s41598-025-90619-7
 - AI Music Genre Converter (GitHub): https://github.com/Nooreyy/AI-Music-Genre-Converter

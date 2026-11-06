@@ -76,14 +76,14 @@ La comparacion muestra que Haven-Chat v5.0 se distingue por su ventana de contex
 - **Solo ingles**: el modelo solo soporta ingles, lo que limita su uso en contextos multilingues.
 - **Riesgo de alucinacion**: al no estar alineado con técnicas de RLHF/DPO, puede presentar mayor tendencia a inventar hechos o a ser incoherente en temas facticos.
 - **Falta de benchmarks**: no se han publicado resultados de evaluacion, por lo que su rendimiento real en tareas de razonamiento, codigo o matematicas es desconocido.
-- **Ecosistema limitado**: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una adopcion muy temprana y una comunidad de usuarios aun por formarse.
+- **Ecosistema limitado**: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una adopcion muy temprana y una comunidad de usuarios aun por formarse.
 - **Compatibilidad de contexto**: aunque la ventana nativa es de 131.072 tokens, la configuracion recomendada en el Modelfile de Ollama usa `num_ctx 16384`, lo que sugiere que el uso completo del contexto requiere configuracion manual.
 - **Fecha de publicacion**: el modelo fue creado el 22 de agosto de 2026, por lo que su estabilidad y soporte a largo plazo no estan garantizados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haven-ai-companion/haven-chat-v5.0
-- Organizacion en HuggingFace: https://huggingface.co/haven-ai-companion/models
+- Hugging Face: https://huggingface.co/haven-ai-companion/haven-chat-v5.0
+- Organizacion en Hugging Face: https://huggingface.co/haven-ai-companion/models
 - GitHub de Haven AI Companion: https://github.com/Haven-AI-Companion/
 - Proyecto Sanctuary: https://github.com/ash-forge/sanctuary-server
 - Ash Forge (investigacion y datasets): https://github.com/ash-forge

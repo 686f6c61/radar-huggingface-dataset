@@ -90,7 +90,7 @@ La comparativa directa con alternativas de la misma categoria es limitada: el ec
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/muggysdigital/GreBerta-ONNX
+- Hugging Face (este modelo): https://huggingface.co/muggysdigital/GreBerta-ONNX
 - Modelo base original: https://huggingface.co/bowphs/GreBerta
 - Articulo (arXiv): https://arxiv.org/abs/2305.13698
 - Repositorio GitHub del proyecto: https://github.com/Heidelberg-NLP/ancient-language-models

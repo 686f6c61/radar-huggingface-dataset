@@ -96,7 +96,7 @@ El autor indica que el modelo supera a Qwen 3.5 9B, Qwen 3.5 27B, Qwen 3.6 35B-A
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diablomike20/Qwen3.5-9B-Uncensored-Heretic-GGUF
+- Hugging Face: https://huggingface.co/diablomike20/Qwen3.5-9B-Uncensored-Heretic-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Modelo relacionado 27B del mismo autor: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Apoyo al autor original: https://www.buymeacoffee.com/davidbelton

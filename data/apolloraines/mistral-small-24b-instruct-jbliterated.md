@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mistral-Small-24B-Instruct-Jbliterated | 23.57B | No disponible | Apache 2.0 | HuggingFace | Modificación sin rechazos del base |
-| Mistral-Small-24B-Instruct-2501 (base) | 23.57B | No disponible (se estima 128k, no confirmado) | Apache 2.0 | HuggingFace | Modelo original con rechazos |
-| Qwen2.5-24B-Instruct | 24B | 128k | Apache 2.0 | HuggingFace | Alternativa de 24B con soporte multilingüe y function calling |
+| Mistral-Small-24B-Instruct-Jbliterated | 23.57B | No disponible | Apache 2.0 | Hugging Face | Modificación sin rechazos del base |
+| Mistral-Small-24B-Instruct-2501 (base) | 23.57B | No disponible (se estima 128k, no confirmado) | Apache 2.0 | Hugging Face | Modelo original con rechazos |
+| Qwen2.5-24B-Instruct | 24B | 128k | Apache 2.0 | Hugging Face | Alternativa de 24B con soporte multilingüe y function calling |
 
 La comparativa se limita a modelos de tamaño similar, pero no se dispone de datos de rendimiento para establecer una comparación cuantitativa. La principal diferencia del Jbliterated es la eliminación de comportamientos de rechazo, lo que no afecta a la arquitectura ni al tamaño.
 
@@ -76,7 +76,7 @@ La comparativa se limita a modelos de tamaño similar, pero no se dispone de dat
 
 ## Enlaces
 
-- [HuggingFace - ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated](https://huggingface.co/ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated)
+- [Hugging Face - ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated](https://huggingface.co/ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated)
 - [Repositorio de archivos del modelo](https://huggingface.co/ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated/tree/main)
 - [GitHub - DeepswapLLM](https://github.com/apolloraines/DeepswapLLM)
 - [GitHub - Inferless/Mistral-Small-24B-Instruct (modelo base)](https://github.com/inferless/Mistral-Small-24B-Instruct)

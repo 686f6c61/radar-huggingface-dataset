@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g6_run1` es un modelo publicado en HuggingFace por el usuario `stefanocarrera`. Según la información disponible, se trata de un modelo cargado mediante la librería `transformers` y con etiquetas que incluyen `safetensors` y `unsloth`, lo que sugiere que ha sido entrenado o afinado con la herramienta Unsloth. El nombre del repositorio apunta a un posible fine-tuning sobre la familia Qwen3-8B, con parámetros como `t0.2` y `g6` que podrían hacer referencia a temperatura o configuración de generación, pero no hay documentación que lo confirme.
+El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g6_run1` es un modelo publicado en Hugging Face por el usuario `stefanocarrera`. Según la información disponible, se trata de un modelo cargado mediante la librería `transformers` y con etiquetas que incluyen `safetensors` y `unsloth`, lo que sugiere que ha sido entrenado o afinado con la herramienta Unsloth. El nombre del repositorio apunta a un posible fine-tuning sobre la familia Qwen3-8B, con parámetros como `t0.2` y `g6` que podrían hacer referencia a temperatura o configuración de generación, pero no hay documentación que lo confirme.
 
-La model card es una plantilla automática generada por HuggingFace, con la mayoría de los campos sin rellenar (`[More Information Needed]`). No se proporciona información sobre la arquitectura, los datos de entrenamiento, la licencia, los idiomas soportados ni las capacidades del modelo. El modelo no tiene descargas ni likes registrados, lo que indica que es un modelo reciente o con poco uso público. En el momento de la consulta, no existe información técnica suficiente para caracterizar el modelo con rigor.
+La model card es una plantilla automática generada por Hugging Face, con la mayoría de los campos sin rellenar (`[More Information Needed]`). No se proporciona información sobre la arquitectura, los datos de entrenamiento, la licencia, los idiomas soportados ni las capacidades del modelo. El modelo no tiene descargas ni likes registrados, lo que indica que es un modelo reciente o con poco uso público. En el momento de la consulta, no existe información técnica suficiente para caracterizar el modelo con rigor.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La model card es una plantilla automática generada por HuggingFace, con la mayo
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo, el procedimiento de entrenamiento, los datos utilizados ni las tecnicas de optimizacion aplicadas. La model card es una plantilla estandar de HuggingFace y todos los campos relacionados con el entrenamiento aparecen como `[More Information Needed]`. Aunque el nombre del repositorio sugiere una relacion con la familia Qwen3-8B, no hay confirmacion oficial ni documentacion tecnica que respalde esta interpretacion.
+No se ha publicado informacion sobre la arquitectura del modelo, el procedimiento de entrenamiento, los datos utilizados ni las tecnicas de optimizacion aplicadas. La model card es una plantilla estandar de Hugging Face y todos los campos relacionados con el entrenamiento aparecen como `[More Information Needed]`. Aunque el nombre del repositorio sugiere una relacion con la familia Qwen3-8B, no hay confirmacion oficial ni documentacion tecnica que respalde esta interpretacion.
 
 ## Capacidades
 
@@ -55,4 +55,4 @@ No disponible. Sin informacion confirmada sobre la arquitectura, el tamano o el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g6_run1
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g6_run1

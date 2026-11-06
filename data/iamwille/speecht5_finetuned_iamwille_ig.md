@@ -29,7 +29,7 @@ El fine-tune se realizó sobre el componente TTS de SpeechT5 con los siguientes 
 
 - Síntesis de voz a partir de texto: el modelo genera espectrogramas mel que requieren un vocoder externo para producir audio audible.
 - Fine-tune específico: al ser un modelo ajustado, la voz resultante difiere de la del modelo base, aunque no se documenta qué características vocales se han entrenado.
-- Compatible con el ecosistema transformers: se puede cargar con la clase `SpeechT5ForTextToSpeech` de HuggingFace Transformers.
+- Compatible con el ecosistema transformers: se puede cargar con la clase `SpeechT5ForTextToSpeech` de Hugging Face Transformers.
 - No se documentan capacidades adicionales como tool calling, agentes, razonamiento o procesamiento de vision.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Con 144 millones de parámetros en fp32, el modelo requiere aproximadamente 580 MB de memoria, pero la generación de espectrogramas puede aumentar el consumo. En fp16, el requisito baja a unos 290 MB.
 - GPU recomendadas: el modelo es suficientemente pequeño para ejecutarse en GPUs de consumo como NVIDIA RTX 3060 (12 GB) o superiores. También es viable en CPU para inferencia no interactiva.
 - En consumer GPU: sí, cabe en cualquier GPU con al menos 4 GB de VRAM.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con bibliotecas como HuggingFace Inference Endpoints, o integrarse en pipelines con `text-to-audio`. No se documenta compatibilidad con vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje generativo.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con bibliotecas como Hugging Face Inference Endpoints, o integrarse en pipelines con `text-to-audio`. No se documenta compatibilidad con vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje generativo.
 - Latencia y throughput: no disponibles. Dependen del hardware y del vocoder utilizado.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ El modelo base `microsoft/speecht5_tts` es la referencia natural para comparar, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamwille/speecht5_finetuned_iamwille_ig
+- Modelo en Hugging Face: https://huggingface.co/iamwille/speecht5_finetuned_iamwille_ig
 - Perfil del autor: https://huggingface.co/iamwille
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts
 - Paper de SpeechT5: https://arxiv.org/abs/2110.07205

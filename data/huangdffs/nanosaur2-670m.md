@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huangdffs/Nanosaur2-670M
+- Modelo en Hugging Face: https://huggingface.co/huangdffs/Nanosaur2-670M
 - Park et al. SPRINT: Sparse-Dense Residual Fusion for Efficient Diffusion Transformers (ICLR 2026): https://arxiv.org/abs/2510.21986
 - Peebles and Xie, Scalable Diffusion Models with Transformers (ICCV 2023): https://arxiv.org/abs/2212.09748
 - Chen et al., PixArt-alpha (ICLR 2024): https://arxiv.org/abs/2310.00426

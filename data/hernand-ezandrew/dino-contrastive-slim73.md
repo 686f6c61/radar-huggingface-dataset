@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hernand-ezandrew/dino-contrastive-slim73` es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura de tipo DINO (autoaprendizaje contrastivo sin etiquetas) bajo una configuración etiquetada como "base" por el autor. El repositorio no contiene un modelo entrenado: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), y declara explícitamente que no se reclama ninguna métrica de benchmark.
+`hernand-ezandrew/dino-contrastive-slim73` es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura de tipo DINO (autoaprendizaje contrastivo sin etiquetas) bajo una configuración etiquetada como "base" por el autor. El repositorio no contiene un modelo entrenado: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), y declara explícitamente que no se reclama ninguna métrica de benchmark.
 
 El dato más relevante para evaluarlo es su escala real: el recuento de parámetros del archivo safetensors es de 49.600, una magnitud de tres a cuatro órdenes inferior a la de cualquier modelo "base" de visión o lenguaje. Esto indica que la etiqueta "base" del model card describe la plantilla de configuración generada, no el tamaño efectivo del modelo. En consecuencia, el artefacto debe interpretarse como un esqueleto de código y configuración para experimentación, no como un modelo con capacidades desplegables.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, el repositorio incluye `training_args.json` con una r
 - Configuración reproducible: `config.json` y `training_args.json` permiten regenerar la arquitectura y la receta de experimento declaradas.
 - Aprendizaje contrastivo sin etiquetas: la familia DINO está orientada a representaciones auto-supervisadas, aunque en este repositorio no hay evidencia de que dichas representaciones hayan sido aprendidas.
 - Sin soporte declarado de tool calling, function calling, agentes, razonamiento multi-paso, modo thinking, visión, audio ni capacidades multilingües.
-- Sin pipeline de HuggingFace asignado, por lo que no es cargable mediante `pipeline()` sin adaptador personalizado.
+- Sin pipeline de Hugging Face asignado, por lo que no es cargable mediante `pipeline()` sin adaptador personalizado.
 
 ## Casos de uso
 
@@ -79,12 +79,12 @@ No se dispone de datos verificados de modelos comparables en la información pro
 - No ha sido auditado para robustez, equidad (fairness) ni transferencia de dominio, según reconoce el autor.
 - Riesgo de alucinación no aplicable en el sentido generativo, pero sí riesgo de interpretación errónea: cualquier métrica obtenida con este checkpoint mide la inicialización, no el método.
 - Discrepancia entre la etiqueta "base" del model card y los 49.600 parámetros reales; conviene no citar el modelo como "base" en trabajos derivados.
-- Implementación personalizada: las APIs automáticas de HuggingFace (`AutoModel`, `pipeline`) fallan sin un adaptador explícito.
+- Implementación personalizada: las APIs automáticas de Hugging Face (`AutoModel`, `pipeline`) fallan sin un adaptador explícito.
 - Ausencia de pipeline, idiomas y contexto declarados: no es integrable en stacks estándar de inferencia.
 - Licencia Apache 2.0 permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se entrena con datasets externos.
 - Sin garantías de mantenimiento: el repositorio tiene 13 descargas, 0 likes y no se ha actualizado desde su creación.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hernand-ezandrew/dino-contrastive-slim73
+- Hugging Face: https://huggingface.co/hernand-ezandrew/dino-contrastive-slim73
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo); los resultados obtenidos corresponden a páginas sin relación con el artefacto.

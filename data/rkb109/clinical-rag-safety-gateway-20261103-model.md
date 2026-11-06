@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Clinical RAG Safety Gateway Baseline Model es un prototipo de modelo pequeno y transparente publicado por el usuario RKB109 en HuggingFace. No es un modelo de lenguaje generativo al uso, sino un componente de clasificacion y recuperacion construido con pesos de tokens por etiqueta combinados con recuperacion de evidencia ponderada por IDF. Su proposito declarado es servir como linea base reproducible para arquitecturas de asistentes clinicos que necesitan recuperacion, atribucion de fuentes y abstencion explicita antes de que las respuestas lleguen a los equipos asistenciales.
+El Clinical RAG Safety Gateway Baseline Model es un prototipo de modelo pequeno y transparente publicado por el usuario RKB109 en Hugging Face. No es un modelo de lenguaje generativo al uso, sino un componente de clasificacion y recuperacion construido con pesos de tokens por etiqueta combinados con recuperacion de evidencia ponderada por IDF. Su proposito declarado es servir como linea base reproducible para arquitecturas de asistentes clinicos que necesitan recuperacion, atribucion de fuentes y abstencion explicita antes de que las respuestas lleguen a los equipos asistenciales.
 
 El modelo se distribuye bajo licencia MIT, con la libreria `custom` y la etiqueta de pipeline `question-answering`, aunque su cobertura declarada abarca tambien similitud de frases, clasificacion de texto y sumarizacion. No se especifican parametros totales, longitud de contexto ni idiomas soportados en la informacion disponible. El autor lo describe explicitamente como una demostracion de arquitectura generada a partir de datos sinteticos y sin llamadas a LLM alojados.
 
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/clinical-rag-safety-gateway-20261103-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/clinical-rag-safety-gateway-20261103-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/clinical-rag-safety-gateway-20261103-dataset
 - Repositorio GitHub con `train.py`, split y codigo de evaluacion: no disponible como URL en la informacion proporcionada (el autor lo menciona sin enlace)
 - Paper, blog o demo: no disponibles

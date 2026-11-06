@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Seguridad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l31_remove20_swapgapiter_b010_r04 | 8.030.261.248 (fraccion densa 0,7998) | No especificado (base: 128.000 tokens) | AdvBench ASR 0,0100; StrongREJECT ASR 0,0300; over-refusal 0,2638 | Llama 3.1 Community | HuggingFace, safetensors |
-| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8.030.261.248 | 128.000 tokens | No disponible en la informacion proporcionada | Llama 3.1 Community | HuggingFace, safetensors |
+| svd-safety-l31_remove20_swapgapiter_b010_r04 | 8.030.261.248 (fraccion densa 0,7998) | No especificado (base: 128.000 tokens) | AdvBench ASR 0,0100; StrongREJECT ASR 0,0300; over-refusal 0,2638 | Llama 3.1 Community | Hugging Face, safetensors |
+| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8.030.261.248 | 128.000 tokens | No disponible en la informacion proporcionada | Llama 3.1 Community | Hugging Face, safetensors |
 | Otros checkpoints del mismo grid (`Jeesup/svd-safety-*`) | No disponible | No disponible | No disponible | Llama 3.1 Community | No verificados en la informacion proporcionada |
 
 No se dispone de datos suficientes para comparar con otras alternativas de compresion (por ejemplo, variantes cuantizadas de Llama 3.1 8B o modelos destilados de tamano similar): no hay resultados de benchmarks de capacidad en la informacion proporcionada, y las busquedas web realizadas no devolvieron documentacion tecnica relevante sobre este artefacto.
@@ -108,7 +108,7 @@ No se dispone de datos suficientes para comparar con otras alternativas de compr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r04
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/ (referenciada en la model card)
 - Politica de uso aceptable de Llama 3.1: incluida como `USE_POLICY.md` en el repositorio del modelo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Generation es un repositorio publicado por el usuario fsetiawan8 en HuggingFace que contiene una implementación funcional de una arquitectura denominada Dino orientada a tareas de generación, en una configuración calificada por el propio autor como "small". Se trata de un artefacto de código y configuración más que de un modelo entrenado: el archivo `model.safetensors` se describe explícitamente en la model card como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un checkpoint con entrenamiento completado ni con resultados de benchmarks.
+Dino for Generation es un repositorio publicado por el usuario fsetiawan8 en Hugging Face que contiene una implementación funcional de una arquitectura denominada Dino orientada a tareas de generación, en una configuración calificada por el propio autor como "small". Se trata de un artefacto de código y configuración más que de un modelo entrenado: el archivo `model.safetensors` se describe explícitamente en la model card como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un checkpoint con entrenamiento completado ni con resultados de benchmarks.
 
 El modelo tiene 24.832 parámetros totales según los metadatos de safetensors, lo que lo sitúa en un rango puramente experimental y muy por debajo de cualquier modelo utilizable en producción. La arquitectura declarada combina atención dispersa (sparse attention), fusión con puerta (gated fusion), activación ReLU y normalización ScaleNorm, con una receta de experimento por defecto basada en el optimizador Novograd y un scheduler OneCycle.
 
@@ -66,7 +66,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fsetiawan8/dino-generation | 24.832 | no disponible | BSD-3-Clause | Repositorio HuggingFace, sin checkpoints entrenados |
+| fsetiawan8/dino-generation | 24.832 | no disponible | BSD-3-Clause | Repositorio Hugging Face, sin checkpoints entrenados |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fsetiawan8/dino-generation
+- Modelo en Hugging Face: https://huggingface.co/fsetiawan8/dino-generation
 - Archivo principal de código: `run.py` (incluido en el repositorio)
 - Configuración de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento por defecto: `training_args.json` (incluido en el repositorio)

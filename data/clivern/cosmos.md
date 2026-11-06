@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cosmos es un modelo de lenguaje de tipo GPT-2 entrenado desde cero por el desarrollador clivern, publicado en HuggingFace bajo licencia MIT. Se trata de un modelo muy pequeno, con 5.273.088 parametros totales (aproximadamente 5,27 millones), especializado en la generacion de texto en ingles sobre tematicas de astronomia y cosmologia. Su corpus de entrenamiento procede de libros de dominio publico sobre el cielo y los astros, lo que le confiere un vocabulario tematico muy concreto pero tambien un alcance muy limitado.
+Cosmos es un modelo de lenguaje de tipo GPT-2 entrenado desde cero por el desarrollador clivern, publicado en Hugging Face bajo licencia MIT. Se trata de un modelo muy pequeno, con 5.273.088 parametros totales (aproximadamente 5,27 millones), especializado en la generacion de texto en ingles sobre tematicas de astronomia y cosmologia. Su corpus de entrenamiento procede de libros de dominio publico sobre el cielo y los astros, lo que le confiere un vocabulario tematico muy concreto pero tambien un alcance muy limitado.
 
 La arquitectura es un decoder estilo GPT-2 con solo 4 capas, 4 cabezas de atencion y un tamano oculto de 256, con una longitud de contexto de unicamente 256 tokens. Emplea un tokenizador BPE a nivel de byte con un vocabulario de 8000 entradas y fue entrenado con el objetivo clasico de prediccion del siguiente token, alcanzando una perdida de validacion final de 6,171.
 
@@ -84,6 +84,6 @@ La comparativa se limita a alternativas de proposito general de tamano reducido,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clivern/cosmos
+- Modelo en Hugging Face: https://huggingface.co/clivern/cosmos
 - Configuracion de entrenamiento: archivo `train_config.json` dentro del propio repositorio (https://huggingface.co/clivern/cosmos/blob/main/train_config.json)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

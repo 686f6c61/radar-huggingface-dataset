@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye datos de otros drafters e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/auryn-macmillan/Ripple-65B-Preview-DFlash2-4.0bpw
+- Modelo en Hugging Face: https://huggingface.co/auryn-macmillan/Ripple-65B-Preview-DFlash2-4.0bpw
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Modelo intermedio con drafter: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Receta de conversion incluida en el repo: `recipe/ripple-dflash2-4.0bpw.yaml`

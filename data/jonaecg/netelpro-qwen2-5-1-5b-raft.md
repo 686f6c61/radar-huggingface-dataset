@@ -71,7 +71,7 @@ Nota: la métrica es `pass@8`, no `pass@1`, y el tamaño de la muestra OOD es n=
 | `netelpro-qwen2.5-1.5b-raft` | 1.543.714.304 | No disponible | No disponible | 80% (GGUF Q4_K_M, re-evaluación local) |
 | `Qwen/Qwen2.5-1.5B-Instruct` (base) | 1.54B | No disponible | No disponible | 0% (sin entrenar) |
 
-No se dispone de datos comparables con otros modelos de la misma categoría en la información proporcionada. El modelo hermano `JonaECG/netelpro-qwen2.5-1.5b-honest` existe en HuggingFace, pero no se proporcionan datos de rendimiento.
+No se dispone de datos comparables con otros modelos de la misma categoría en la información proporcionada. El modelo hermano `JonaECG/netelpro-qwen2.5-1.5b-honest` existe en Hugging Face, pero no se proporcionan datos de rendimiento.
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se dispone de datos comparables con otros modelos de la misma categoría en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JonaECG/netelpro-qwen2.5-1.5b-raft
+- Hugging Face: https://huggingface.co/JonaECG/netelpro-qwen2.5-1.5b-raft
 - Repositorio Netelpro: https://github.com/jona2428/netelpro
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Modelo relacionado del autor: https://huggingface.co/JonaECG/netelpro-qwen2.5-1.5b-honest

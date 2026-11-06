@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `artembondarenko/survey-zero-shot-transfer-2024` no contiene un modelo de inteligencia artificial. Se trata de un espacio de notas de investigación exploratorias sobre el concepto de *Zero Shot Transfer*, publicado en HuggingFace por el usuario artembondarenko y liberado bajo licencia MIT.
+El repositorio `artembondarenko/survey-zero-shot-transfer-2024` no contiene un modelo de inteligencia artificial. Se trata de un espacio de notas de investigación exploratorias sobre el concepto de *Zero Shot Transfer*, publicado en Hugging Face por el usuario artembondarenko y liberado bajo licencia MIT.
 
 Su propósito es registrar el alcance de una pregunta de investigación, identificar posibles variables de confusión, proponer una comparativa con líneas base adecuadas, detallar el contexto de evaluación y listar requisitos de reproducibilidad. Según la model card, el autor declara explícitamente que no reclama mejoras de benchmarks, ni ablaciones completadas, ni código liberado, ni un checkpoint entrenado.
 
-El repositorio contiene únicamente un archivo `notes.md` con la nota principal y un `README.md` de documentación. Aunque HuggingFace etiqueta el repositorio con `transformer` y `safetensors`, el único artefacto de pesos es un tensor de 49.600 parámetros sin relación con un modelo entrenado. Para desarrolladores e investigadores que buscan un modelo evaluable, este repositorio no aporta ninguna capacidad de inferencia.
+El repositorio contiene únicamente un archivo `notes.md` con la nota principal y un `README.md` de documentación. Aunque Hugging Face etiqueta el repositorio con `transformer` y `safetensors`, el único artefacto de pesos es un tensor de 49.600 parámetros sin relación con un modelo entrenado. Para desarrolladores e investigadores que buscan un modelo evaluable, este repositorio no aporta ninguna capacidad de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El repositorio contiene únicamente un archivo `notes.md` con la nota principal 
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura que describir. El repositorio no contiene un modelo transformador, a pesar de la etiqueta `transformer` en HuggingFace. El autor indica que la nota es intencionadamente exploratoria y que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+No hay arquitectura que describir. El repositorio no contiene un modelo transformador, a pesar de la etiqueta `transformer` en Hugging Face. El autor indica que la nota es intencionadamente exploratoria y que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 Tampoco existen datos de entrenamiento, tokens procesados, estrategias de post-entrenamiento (RLHF, DPO) ni innovaciones técnicas. El único archivo de pesos presente en el repositorio es un tensor con 49.600 parámetros, probablemente un artefacto residual, sin documentación que explique su origen ni su función.
 
@@ -63,14 +63,14 @@ Los tres repositorios pertenecen a la misma categoría de documentación de inve
 ## Limitaciones y advertencias
 
 - No es un modelo: no puede ejecutarse en vLLM, llama.cpp, Ollama ni ningún motor de inferencia.
-- Las etiquetas de HuggingFace (`transformer`, `safetensors`) pueden inducir a error al aparecer como un modelo cuando en realidad solo contienen notas.
+- Las etiquetas de Hugging Face (`transformer`, `safetensors`) pueden inducir a error al aparecer como un modelo cuando en realidad solo contienen notas.
 - El autor advierte explícitamente que las hipótesis y planes no deben tratarse como resultados experimentales.
 - No hay código liberado, ni benchmarks, ni checkpoints entrenados.
 - No existe ninguna restricción comercial por la licencia MIT, pero no hay software ni pesos con valor comercial.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/artembondarenko/survey-zero-shot-transfer-2024
+- Repositorio Hugging Face: https://huggingface.co/artembondarenko/survey-zero-shot-transfer-2024
 - Repositorio similar de dvmartinez: https://huggingface.co/dvmartinez/survey-zero-shot-transfer/tree/main
 - Repositorio similar de aaedwards: https://huggingface.co/aaedwards/survey-zero-shot-transfer
 - No se han encontrado papers, blogs ni demos adicionales en la búsqueda web disponible.

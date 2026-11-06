@@ -84,7 +84,7 @@ La ventaja competitiva de esta conversion es la combinacion de licencia MIT con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theoracleguy/chatterbox-multilingual-v3
+- Modelo en Hugging Face: https://huggingface.co/theoracleguy/chatterbox-multilingual-v3
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox
 - Tokenizador requerido: https://huggingface.co/mlx-community/S3TokenizerV2
 - Repositorio de la libreria de conversion: https://github.com/Blaizzy/mlx-audio

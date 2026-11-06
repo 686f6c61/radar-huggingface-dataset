@@ -73,10 +73,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Matemáticas de competición | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sft_olmo3base7b_olmo31think_ot3_p3136x4-step49 | 7,30 B | 32.768 | AIME 2025: 34,17; AIME 2026: 36,67; HMMT Feb 2025: 21,67 (mean@8) | Apache 2.0 | HuggingFace, 36 descargas |
-| Olmo-3-1025-7B (base, AI2) | ~7 B | no disponible | no disponible | Apache 2.0 (familia Olmo) | HuggingFace |
-| Olmo-3.1-32B-Think (profesor) | ~32 B | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
-| mhseo2/Olmo-3-1025-7B-opd (modelo base directo) | ~7 B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| sft_olmo3base7b_olmo31think_ot3_p3136x4-step49 | 7,30 B | 32.768 | AIME 2025: 34,17; AIME 2026: 36,67; HMMT Feb 2025: 21,67 (mean@8) | Apache 2.0 | Hugging Face, 36 descargas |
+| Olmo-3-1025-7B (base, AI2) | ~7 B | no disponible | no disponible | Apache 2.0 (familia Olmo) | Hugging Face |
+| Olmo-3.1-32B-Think (profesor) | ~32 B | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| mhseo2/Olmo-3-1025-7B-opd (modelo base directo) | ~7 B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados numéricos de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento queda limitada a los benchmarks del propio modelo.
 
@@ -94,7 +94,7 @@ No se dispone de resultados numéricos de los modelos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p3136x4-step49
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p3136x4-step49
 - Modelo base directo: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor (Olmo-3.1-32B-Think): https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset OpenThoughts3: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M

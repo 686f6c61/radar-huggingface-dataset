@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HumanIntent-pi05 es un modelo publicado en HuggingFace por el usuario April-Yang bajo el identificador `April-Yang/HumanIntent-pi05`. Por sus etiquetas (`robotics`, `pi0.5`, `humanintent`) se trata de un modelo orientado a robotica, aparentemente relacionado con la familia pi0.5 de modelos vision-lenguaje-accion (VLA) y enfocado a la prediccion o interpretacion de intenciones humanas en entornos de manipulacion. El repositorio esta catalogado con la pipeline `robotics` y declara soporte para ingles (`en`) y chino (`zh`).
+HumanIntent-pi05 es un modelo publicado en Hugging Face por el usuario April-Yang bajo el identificador `April-Yang/HumanIntent-pi05`. Por sus etiquetas (`robotics`, `pi0.5`, `humanintent`) se trata de un modelo orientado a robotica, aparentemente relacionado con la familia pi0.5 de modelos vision-lenguaje-accion (VLA) y enfocado a la prediccion o interpretacion de intenciones humanas en entornos de manipulacion. El repositorio esta catalogado con la pipeline `robotics` y declara soporte para ingles (`en`) y chino (`zh`).
 
 La relevancia de este tipo de modelos radica en que los VLA permiten conectar percepcion visual, instrucciones en lenguaje natural y acciones motoras en un unico modelo, lo que habilita politicas de robot generalistas en lugar de controladores especificos por tarea. El sufijo `HumanIntent` sugiere un enfasis en anticipar lo que el usuario pretende hacer, un aspecto critico para la seguridad y la fluidez en la colaboracion humano-robot.
 
@@ -68,7 +68,7 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que dificulta su evaluacion y reproducibilidad.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que dificulta su evaluacion y reproducibilidad.
 - Licencia no declarada: no se puede determinar si se permite uso comercial; en ausencia de licencia explicita, deben asumirse restricciones.
 - Ausencia total de documentacion: no hay paper, blog, model card detallada ni benchmarks publicados.
 - Riesgo de alucinacion y de politicas incorrectas: en robotica, una accion erronea puede tener consecuencias fisicas; se requiere supervision y validacion exhaustiva.
@@ -79,5 +79,5 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/April-Yang/HumanIntent-pi05
+- Hugging Face: https://huggingface.co/April-Yang/HumanIntent-pi05
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.

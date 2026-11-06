@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo UX4567/Kartik-Kundli-AI-3B-v2.0 es un modelo de lenguaje de 3.085.938.688 parámetros (aproximadamente 3B) publicado en HuggingFace por el usuario UX4567. El tag `qwen2` sugiere que está basado en la arquitectura Qwen2, aunque no se confirma oficialmente. Por el nombre y los resultados de búsqueda asociados, parece estar orientado a la generación de cartas astrales védicas (Kundli) y predicciones astrológicas, posiblemente como un asistente conversacional especializado en ese dominio.
+El modelo UX4567/Kartik-Kundli-AI-3B-v2.0 es un modelo de lenguaje de 3.085.938.688 parámetros (aproximadamente 3B) publicado en Hugging Face por el usuario UX4567. El tag `qwen2` sugiere que está basado en la arquitectura Qwen2, aunque no se confirma oficialmente. Por el nombre y los resultados de búsqueda asociados, parece estar orientado a la generación de cartas astrales védicas (Kundli) y predicciones astrológicas, posiblemente como un asistente conversacional especializado en ese dominio.
 
 El repositorio ocupa 30,9 GB, lo que resulta inusualmente grande para un modelo de 3B de parámetros, lo que podría indicar la presencia de múltiples archivos de pesos, cuantizaciones o versiones adicionales. El modelo fue creado el 27 de agosto de 2026 y actualizado el mismo día. No se dispone de información sobre licencia, idiomas soportados, pipeline de uso ni datos de entrenamiento. A pesar de su reciente publicación, no registra descargas y solo tiene un like, lo que sugiere que es un proyecto muy reciente o de alcance limitado.
 
@@ -21,7 +21,7 @@ El repositorio ocupa 30,9 GB, lo que resulta inusualmente grande para un modelo 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni las técnicas de alineación (RLHF, DPO, etc.). El tag `qwen2` en HuggingFace apunta a que el modelo podría derivar de la familia Qwen2, pero no hay confirmación en la ficha del repositorio. El tamaño de 3B de parámetros es consistente con modelos de la escala pequeña, adecuados para inferencia en hardware de consumo. El peso del repositorio (30,9 GB) sugiere que se incluyen múltiples archivos, posiblemente diferentes cuantizaciones o versiones del modelo, pero no se detalla su contenido.
+No se dispone de información oficial sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni las técnicas de alineación (RLHF, DPO, etc.). El tag `qwen2` en Hugging Face apunta a que el modelo podría derivar de la familia Qwen2, pero no hay confirmación en la ficha del repositorio. El tamaño de 3B de parámetros es consistente con modelos de la escala pequeña, adecuados para inferencia en hardware de consumo. El peso del repositorio (30,9 GB) sugiere que se incluyen múltiples archivos, posiblemente diferentes cuantizaciones o versiones del modelo, pero no se detalla su contenido.
 
 ## Capacidades
 

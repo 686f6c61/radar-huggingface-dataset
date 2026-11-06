@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `model_519037710_mixer_giant`, publicado por el usuario ChiwuHan en HuggingFace, contiene un único archivo Python (`model_519037710_mixer_giant.py`) que define un modelo de generación de texto con una arquitectura denominada "mixer". Según la model card, se trata de una implementación a escala "giant" (gigante) que emplea atención multi-query, fusión de baja dimensión (low-rank), activación approx-gelu, normalización layernorm, inicialización xavier, optimizador Adafactor y scheduler de tasa de aprendizaje por pasos (step). La licencia es CC-BY-4.0, lo que permite uso comercial con atribución, aunque no se especifican idiomas soportados ni el número de parámetros.
+El repositorio `model_519037710_mixer_giant`, publicado por el usuario ChiwuHan en Hugging Face, contiene un único archivo Python (`model_519037710_mixer_giant.py`) que define un modelo de generación de texto con una arquitectura denominada "mixer". Según la model card, se trata de una implementación a escala "giant" (gigante) que emplea atención multi-query, fusión de baja dimensión (low-rank), activación approx-gelu, normalización layernorm, inicialización xavier, optimizador Adafactor y scheduler de tasa de aprendizaje por pasos (step). La licencia es CC-BY-4.0, lo que permite uso comercial con atribución, aunque no se especifican idiomas soportados ni el número de parámetros.
 
 El modelo parece estar orientado a tareas de generación de texto, pero no se proporcionan detalles sobre el conjunto de datos de entrenamiento, la longitud de contexto, ni las capacidades concretas. La ausencia de documentación adicional y de descargas o "likes" en la página sugiere que se trata de un proyecto experimental o en fase temprana. A fecha de creación (2026-08-21) no hay evidencia de uso en producción ni de validación externa.
 
@@ -53,6 +53,6 @@ No se ha identificado ningún modelo comparable en la información proporcionada
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ChiwuHan/model_519037710_mixer_giant)
+- [Repositorio en Hugging Face](https://huggingface.co/ChiwuHan/model_519037710_mixer_giant)
 
 No se encontraron otros enlaces relevantes (papers, blogs o demos) en la búsqueda web.

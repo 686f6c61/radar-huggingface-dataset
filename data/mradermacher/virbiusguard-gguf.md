@@ -73,10 +73,10 @@ No hay datos de benchmarks de VirbiusGuard en la informacion disponible, por lo 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VirbiusGuard-GGUF (mradermacher) | 0,75 B | No disponible | No disponible | Apache 2.0 | GGUF en HuggingFace, 12 cuantizaciones |
-| Modelo base i1see1you/VirbiusGuard | 0,75 B (heredado) | No disponible | No disponible | Apache 2.0 segun el repositorio | HuggingFace |
-| Llama Prompt Guard 2 (Meta) | No disponible en esta busqueda | No disponible | No disponible | Licencia comunitaria de Llama | HuggingFace |
-| ShieldGemma (Google) | No disponible en esta busqueda | No disponible | No disponible | Terminos de uso de Gemma | HuggingFace |
+| VirbiusGuard-GGUF (mradermacher) | 0,75 B | No disponible | No disponible | Apache 2.0 | GGUF en Hugging Face, 12 cuantizaciones |
+| Modelo base i1see1you/VirbiusGuard | 0,75 B (heredado) | No disponible | No disponible | Apache 2.0 segun el repositorio | Hugging Face |
+| Llama Prompt Guard 2 (Meta) | No disponible en esta busqueda | No disponible | No disponible | Licencia comunitaria de Llama | Hugging Face |
+| ShieldGemma (Google) | No disponible en esta busqueda | No disponible | No disponible | Terminos de uso de Gemma | Hugging Face |
 
 La ventaja diferencial de VirbiusGuard-GGUF frente a alternativas de mayor tamano es el coste de despliegue: 0,6 GB en Q4_K_M permite ejecutarlo junto a otras cargas en la misma GPU. Su desventaja es la ausencia total de documentacion publica sobre entrenamiento y evaluacion, lo que dificulta justificar su eleccion frente a guard models con benchmarks publicados.
 

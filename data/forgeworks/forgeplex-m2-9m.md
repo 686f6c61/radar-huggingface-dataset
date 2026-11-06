@@ -6,7 +6,7 @@ ForgePlex-M2-9M es un modelo de lenguaje decoder-only de aproximadamente 9,95 mi
 
 La arquitectura es un transformer denso de 11 capas y 256 dimensiones ocultas, con atencion GQA de 8 cabezas de consulta y 2 de clave/valor, head_dim de 32, vocabulario BPE propio de 4.096 tokens, weight tying y una longitud de contexto de 1.024 tokens. Los pesos se distribuyen en safetensors y su licencia Apache-2.0 permite uso comercial sin restricciones adicionales.
 
-El modelo esta orientado exclusivamente al ingles y su publico natural es la investigacion en eficiencia, la docencia sobre entrenamiento de LLM y los experimentos de ablacion de componentes. Con 886 descargas y 12 likes en HuggingFace, es un artefacto de nicho, no un modelo listo para produccion general.
+El modelo esta orientado exclusivamente al ingles y su publico natural es la investigacion en eficiencia, la docencia sobre entrenamiento de LLM y los experimentos de ablacion de componentes. Con 886 descargas y 12 likes en Hugging Face, es un artefacto de nicho, no un modelo listo para produccion general.
 
 ## Especificaciones tecnicas
 
@@ -100,7 +100,7 @@ No disponible. La informacion proporcionada no incluye resultados de modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForgeWorks/ForgePlex-M2-9M
+- Modelo en Hugging Face: https://huggingface.co/ForgeWorks/ForgePlex-M2-9M
 - Axiomic Labs (autores del framework TrainWork y del dataset propietario): https://huggingface.co/AxiomicLabs
 
 No se han encontrado en la informacion disponible papers, blogs tecnicos, repositorios de codigo ni demos adicionales.

@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/mikim869/qwen2.5-3b-jev-hard-v5.0-hard-blind-foundation
-- Modelo base en HuggingFace (Qwen2.5-3B): https://huggingface.co/Qwen/Qwen2.5-3B
+- Modelo base en Hugging Face (Qwen2.5-3B): https://huggingface.co/Qwen/Qwen2.5-3B
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio GitHub de la familia Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5-llm

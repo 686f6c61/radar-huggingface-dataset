@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MatterWaveAI/grt-30m-tokenizer | 19,5 M (embeddings) + tokenizador | no disponible | Apache 2.0 | HuggingFace |
-| Qwen 3 tokenizer (referencia de compatibilidad) | no disponible | no disponible | Apache 2.0 (según variante) | HuggingFace |
-| Tokenizadores BPE estándar de Llama/Mistral | no disponible | no disponible | licencias variables | HuggingFace |
+| MatterWaveAI/grt-30m-tokenizer | 19,5 M (embeddings) + tokenizador | no disponible | Apache 2.0 | Hugging Face |
+| Qwen 3 tokenizer (referencia de compatibilidad) | no disponible | no disponible | Apache 2.0 (según variante) | Hugging Face |
+| Tokenizadores BPE estándar de Llama/Mistral | no disponible | no disponible | licencias variables | Hugging Face |
 
 No se dispone de datos de rendimiento comparables ni de alternativas directas con representación polar de embeddings en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables ni de alternativas directas co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MatterWaveAI/grt-30m-tokenizer
+- Repositorio Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-tokenizer
 - Modelo base: https://huggingface.co/MatterWaveAI/grt-30m
 - Variante chat: https://huggingface.co/MatterWaveAI/grt-30m-chat
 - Variante mixture-of-rotations: https://huggingface.co/MatterWaveAI/grt-30m-mor

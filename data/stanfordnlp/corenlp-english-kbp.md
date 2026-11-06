@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stanfordnlp/corenlp-english-kbp` es un paquete de modelos del toolkit CoreNLP de Stanford, publicado en HuggingFace con el identificador de componente `english-kbp`. No se trata de un modelo de lenguaje neuronal con pesos y contexto propios, sino de un artefacto de modelos estadísticos para el pipeline de anotación lingüística de CoreNLP en inglés, orientado a tareas de Knowledge Base Population (KBP). El repositorio ocupa 0,5 GB, fue creado el 2 de marzo de 2022 y su última actualización registrada es del 27 de septiembre de 2026.
+`stanfordnlp/corenlp-english-kbp` es un paquete de modelos del toolkit CoreNLP de Stanford, publicado en Hugging Face con el identificador de componente `english-kbp`. No se trata de un modelo de lenguaje neuronal con pesos y contexto propios, sino de un artefacto de modelos estadísticos para el pipeline de anotación lingüística de CoreNLP en inglés, orientado a tareas de Knowledge Base Population (KBP). El repositorio ocupa 0,5 GB, fue creado el 2 de marzo de 2022 y su última actualización registrada es del 27 de septiembre de 2026.
 
 CoreNLP es una biblioteca de procesamiento de lenguaje natural implementada en Java que genera anotaciones lingüísticas sobre texto: límites de token y de oración, etiquetado de categorías gramaticales, entidades nombradas, valores numéricos y temporales, análisis de dependencias y de constituyentes, correferencia, análisis de sentimiento, atribución de citas y extracción de relaciones. El componente KBP se enmarca en esta última familia de tareas, vinculada a la población de bases de conocimiento a partir de texto no estructurado.
 
@@ -21,7 +21,7 @@ Su relevancia actual es fundamentalmente de infraestructura: se trata de una pie
 | Licencia | GPL-2.0 |
 | Formato de pesos | No disponible. Repositorio de 0,5 GB; la model card no especifica formato de serializacion |
 
-Otros datos del repositorio: autor `stanfordnlp`, etiquetas `corenlp`, `en`, `license:gpl-2.0`, `region:us`; 0 descargas y 2 likes en el momento de la consulta; pipeline de HuggingFace no disponible.
+Otros datos del repositorio: autor `stanfordnlp`, etiquetas `corenlp`, `en`, `license:gpl-2.0`, `region:us`; 0 descargas y 2 likes en el momento de la consulta; pipeline de Hugging Face no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -88,13 +88,13 @@ Las columnas de licencia y enfoque de las alternativas proceden de conocimiento 
 - Limitaciones de idioma: soporte exclusivo de ingles. El repositorio esta etiquetado con `en` y no se declaran otros idiomas.
 - Limitacion de contexto: no se declara una ventana de contexto. El comportamiento con documentos muy largos dependera de la configuracion del pipeline y de la memoria disponible.
 - Restricciones de licencia: GPL-2.0. Es una licencia copyleft fuerte, por lo que la redistribucion de software derivado o su incorporacion en productos propietarios exige revisar con detalle las obligaciones de liberacion del codigo fuente. Es un punto critico antes de usar el componente en produccion comercial.
-- Ausencia de mantenimiento verificable en HuggingFace: 0 descargas registradas y un unico artefacto generado automaticamente mediante `hugging_corenlp.py`; la fecha de actualizacion del repositorio (2026-09-27) refleja el proceso de generacion, no necesariamente cambios en los modelos.
+- Ausencia de mantenimiento verificable en Hugging Face: 0 descargas registradas y un unico artefacto generado automaticamente mediante `hugging_corenlp.py`; la fecha de actualizacion del repositorio (2026-09-27) refleja el proceso de generacion, no necesariamente cambios en los modelos.
 - Caveat de produccion: el artefacto no es un modelo generativo ni un asistente conversacional. No dispone de tool calling ni de razonamiento multi-paso, por lo que no debe evaluarse con las metricas habituales de modelos de lenguaje.
 - Calidad de los resultados de busqueda: las busquedas web asociadas a este identificador devolvieron exclusivamente contenido no relacionado y sin valor tecnico, por lo que no ha sido posible triangular ninguna afirmacion de la model card.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stanfordnlp/corenlp-english-kbp
+- Hugging Face: https://huggingface.co/stanfordnlp/corenlp-english-kbp
 - Web oficial de CoreNLP: https://stanfordnlp.github.io/CoreNLP
 - Repositorio GitHub de CoreNLP: https://github.com/stanfordnlp/CoreNLP
 - Repositorio de generacion de tarjetas y modelos: `stanfordnlp/huggingface-models` (referenciado en la model card como origen del script `hugging_corenlp.py`)

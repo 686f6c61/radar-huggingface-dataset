@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/swa_latn_10mb`, un modelo monolingue de la familia Goldfish orientado al suajili en escritura latina. Lo desarrolla el usuario de HuggingFace francesca9805, vinculado a la Universidad de Groningen segun el enlace de Weights & Biases de la model card. Se trata de un modelo muy pequeno, de 39.087.104 parametros (unos 39 millones), con arquitectura de tipo GPT-2 segun las etiquetas del repositorio, y entrenado mediante SFT (supervised fine-tuning) con la libreria TRL.
+El modelo `francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/swa_latn_10mb`, un modelo monolingue de la familia Goldfish orientado al suajili en escritura latina. Lo desarrolla el usuario de Hugging Face francesca9805, vinculado a la Universidad de Groningen segun el enlace de Weights & Biases de la model card. Se trata de un modelo muy pequeno, de 39.087.104 parametros (unos 39 millones), con arquitectura de tipo GPT-2 segun las etiquetas del repositorio, y entrenado mediante SFT (supervised fine-tuning) con la libreria TRL.
 
 El problema que aborda es el ajuste supervisado de un modelo de lenguaje de escala reducida sobre un corpus empaquetado (packed) de aproximadamente 10 MB, presumiblemente derivado del corpus del modelo base. El nombre del repositorio incluye indicadores experimentales como `ppt`, `Dp-10mb-packed`, `bfdiso` y `seed3407`, que apuntan a un experimento de investigacion con semilla fija (3407), mas que a un modelo destinado a produccion.
 
@@ -48,7 +48,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Estudio del efecto de la semilla y del corpus empaquetado: al incorporar `seed3407` y `Dp-10mb-packed` en el nombre, permite reproducir y contrastar condiciones experimentales en un mismo pipeline.
 - Generacion de texto de bajo coste en entornos sin GPU: con unos 39 M de parametros, la inferencia puede ejecutarse en CPU para prototipos y pruebas de concepto.
 - Ajuste adicional (continued fine-tuning) como banco de pruebas: su tamano reducido permite iterar rapidamente sobre nuevas tecnicas de SFT con TRL antes de escalar a modelos mayores.
-- Docencia y formacion: util para ilustrar el ciclo completo de preentrenamiento, ajuste supervisado y publicacion en HuggingFace con trazabilidad via Weights & Biases.
+- Docencia y formacion: util para ilustrar el ciclo completo de preentrenamiento, ajuste supervisado y publicacion en Hugging Face con trazabilidad via Weights & Biases.
 - Evaluacion de infraestructura de despliegue: sirve para validar pipelines de TGI, endpoints compatibles o integraciones con servicios como FriendliAI antes de desplegar modelos mas grandes.
 - Experimentos de destilacion o ablacion: al ser un modelo pequeno derivado de otro, es adecuado como estudiante en pruebas de destilacion o como sujeto de estudios de cuantizacion.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407 | 39,09 M | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| goldfish-models/swa_latn_10mb (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407 | 39,09 M | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| goldfish-models/swa_latn_10mb (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | gpt2 (referencia de arquitectura) | 124 M | 1024 tokens | no comparable directamente | MIT (referencia) | Ampliamente disponible |
 
 La comparacion cuantitativa no es posible con la informacion disponible: no hay benchmarks publicados para este checkpoint ni para sus variantes, y las fichas de los modelos de la misma serie tampoco aportan metricas.
@@ -88,7 +88,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: no hay 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
+- Hugging Face: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/swa_latn_10mb
 - Variante relacionada (seed10, 100mb): https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Variante relacionada (seed455, 100mb): https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455

@@ -78,9 +78,9 @@ El panel Frozen80 cubre decisiones de Browser, HelpSteer3, BoolQ, MNLI y atribut
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| APUS-Decision-v1-4B-CoreAI | 4B | 4.096 (bundle) | Decisión A–P sobre criterios, on-device Core AI | Apache-2.0 | HuggingFace, 14 descargas |
-| APUS-OpenJev-v1-4B (fuente) | 4B | hasta 8.192 | Mismo contrato de decisión, pesos BF16 | Apache-2.0 | HuggingFace |
-| Qwen3.5-4B (base) | 4B | no disponible | LLM generativo generalista | no disponible | HuggingFace |
+| APUS-Decision-v1-4B-CoreAI | 4B | 4.096 (bundle) | Decisión A–P sobre criterios, on-device Core AI | Apache-2.0 | Hugging Face, 14 descargas |
+| APUS-OpenJev-v1-4B (fuente) | 4B | hasta 8.192 | Mismo contrato de decisión, pesos BF16 | Apache-2.0 | Hugging Face |
+| Qwen3.5-4B (base) | 4B | no disponible | LLM generativo generalista | no disponible | Hugging Face |
 | Qwen3-8B 4-bit en Core AI | 8B | no disponible | LLM generativo on-device | no disponible | Referencia citada por el autor |
 
 La comparación con alternativas de la misma categoría (modelos de decisión especializados) no está disponible en la información proporcionada. Frente al Qwen3.5-4B base, la diferencia principal es la especialización en el contrato de decisión y la cuantización int8 para Core AI, no una mejora de capacidades generativas.
@@ -101,7 +101,7 @@ La comparación con alternativas de la misma categoría (modelos de decisión es
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mlboydaisuke/APUS-Decision-v1-4B-CoreAI
+- Hugging Face del modelo: https://huggingface.co/mlboydaisuke/APUS-Decision-v1-4B-CoreAI
 - Modelo fuente (OpenJev): https://huggingface.co/apus-ailab/APUS-OpenJev-v1-4B/tree/65797c526c27c4d24f564333779162cd4a64328e
 - Evaluación fusionada del autor: https://huggingface.co/apus-ailab/APUS-OpenJev-v1-4B/blob/65797c526c27c4d24f564333779162cd4a64328e/merged-evaluation.json
 - README del modelo fuente: https://huggingface.co/apus-ailab/APUS-OpenJev-v1-4B/blob/65797c526c27c4d24f564333779162cd4a64328e/README.md

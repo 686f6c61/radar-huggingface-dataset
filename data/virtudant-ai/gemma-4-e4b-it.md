@@ -89,9 +89,9 @@ No se dispone de datos de benchmarks para comparar rendimiento numérico con alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Virtudant-AI/gemma-4-E4B-it
+- Repositorio Hugging Face: https://huggingface.co/Virtudant-AI/gemma-4-E4B-it
 - Modelo base oficial: https://huggingface.co/google/gemma-4-E4B-it
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Colección de Unsloth con GGUFs y variantes: https://huggingface.co/collections/unsloth/gemma-4
 - Guía de Unsloth para ejecutar Gemma 4: https://docs.unsloth.ai/models/gemma-4
 - Benchmarks de cuantización Unsloth Dynamic 2.0: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf

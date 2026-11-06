@@ -89,7 +89,7 @@ El modelo 0.1b se posiciona como la opción más ligera dentro de la familia Aud
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Audio8-TTS-Preview-0.1b-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Audio8-TTS-Preview-0.1b-bf16
 - Modelo original (Audio8): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
 - Versión 0.6b en MLX: https://huggingface.co/mlx-community/Audio8-TTS-Preview-0.6b-bf16
 - Repositorio de Audio8 TTS en GitHub: https://github.com/Audio8-AI/Audio8_TTS

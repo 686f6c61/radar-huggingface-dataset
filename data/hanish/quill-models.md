@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hanish/quill-models
+- Repositorio en Hugging Face: https://huggingface.co/Hanish/quill-models
 - Modelo propio del teclado de Quill: https://huggingface.co/Hanish/quill-fix-v1
 - Upstream GGUF Qwen3.5-0.8B (Unsloth): https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
 - Upstream GGUF Qwen3.5-2B (Unsloth): https://huggingface.co/unsloth/Qwen3.5-2B-GGUF

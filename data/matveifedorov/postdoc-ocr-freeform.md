@@ -6,7 +6,7 @@
 
 La model card deja claro el alcance: la nota no reclama mejoras en benchmarks, no incluye ablaciones completadas, no libera codigo ni un checkpoint entrenado. Su proposito es servir de base para verificar un estudio futuro sobre extraccion de informacion en documentos con formato libre, mencionando conjuntos de datos concretos como FUNSD, SROIE y CORD como contexto de evaluacion propuesto.
 
-Aunque los metadatos de HuggingFace declaran la etiqueta `transformer` y existen ficheros `safetensors`, el recuento real de parametros registrado es de 33.088, una cifra incompatible con cualquier transformer funcional y coherente con un artefacto vacio o simulado. El tamano del repositorio es de 0,0 GB y no hay descargas ni interacciones registradas. Por tanto, esta ficha debe leerse como una descripcion de un artefacto de investigacion, no de un sistema desplegable.
+Aunque los metadatos de Hugging Face declaran la etiqueta `transformer` y existen ficheros `safetensors`, el recuento real de parametros registrado es de 33.088, una cifra incompatible con cualquier transformer funcional y coherente con un artefacto vacio o simulado. El tamano del repositorio es de 0,0 GB y no hay descargas ni interacciones registradas. Por tanto, esta ficha debe leerse como una descripcion de un artefacto de investigacion, no de un sistema desplegable.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Aunque los metadatos de HuggingFace declaran la etiqueta `transformer` y existen
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura descrita. La model card no menciona transformer, MoE, SSM ni ninguna otra familia de modelos, y tampoco aporta detalles sobre capas, atencion, tokenizador o dimensiones ocultas. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero se contradice con la naturaleza del contenido y con el recuento de parametros de 33.088, por lo que no debe interpretarse como evidencia de una arquitectura implementada.
+No hay arquitectura descrita. La model card no menciona transformer, MoE, SSM ni ninguna otra familia de modelos, y tampoco aporta detalles sobre capas, atencion, tokenizador o dimensiones ocultas. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero se contradice con la naturaleza del contenido y con el recuento de parametros de 33.088, por lo que no debe interpretarse como evidencia de una arquitectura implementada.
 
 Tampoco existe informacion sobre entrenamiento: no se declara numero de tokens, composicion del dataset, ni fases de ajuste como RLHF, DPO o SFT. La model card indica que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales y que, si se anaden resultados en el futuro, deberan incluir versiones de los conjuntos de datos, comandos, semillas, hardware y registros sin procesar.
 
@@ -83,7 +83,7 @@ La comparacion no es significativa porque este repositorio no es un modelo. Los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matveifedorov/postdoc-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/matveifedorov/postdoc-ocr-freeform
 - Repositorio relacionado (terceros, tematica similar): https://huggingface.co/Rfiyer07/paper_027888883_ocr_freeform
 - Guia comparativa de modelos de OCR (fuente externa, no oficial): https://local-ai-zone.github.io/guides/best-ai-ocr-models-ultimate-ranking-2026.html
 - Recopilacion de modelos gratuitos en OpenRouter (fuente externa, no relacionada directamente): https://openrouter.ai/collections/free-models

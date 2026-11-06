@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sn92-gen-r3 es un modelo de decisión publicado en HuggingFace por el usuario mufasa1228 bajo licencia MIT. Se trata de un merge de modelos, según indica la etiqueta `base_model_relation: merge` de su model card, construido sobre la arquitectura Qwen3.5 (etiqueta `qwen3_5`). Con 26.085.330.160 parámetros en pesos safetensors y un repositorio de 52,2 GB, se sitúa en la categoría de modelos densos de gran tamaño, presumiblemente en precisión bf16 o fp16.
+sn92-gen-r3 es un modelo de decisión publicado en Hugging Face por el usuario mufasa1228 bajo licencia MIT. Se trata de un merge de modelos, según indica la etiqueta `base_model_relation: merge` de su model card, construido sobre la arquitectura Qwen3.5 (etiqueta `qwen3_5`). Con 26.085.330.160 parámetros en pesos safetensors y un repositorio de 52,2 GB, se sitúa en la categoría de modelos densos de gran tamaño, presumiblemente en precisión bf16 o fp16.
 
 El modelo está etiquetado como `decision-model` y asociado al identificador `sn92`, lo que sugiere un uso orientado a tareas de decisión o selección dentro de un pipeline concreto, más que a generación de texto generalista. No obstante, la información pública disponible es muy escasa: la model card no incluye descripción funcional, datos de entrenamiento, benchmarks ni idiomas soportados, y el repositorio no declara pipeline de inferencia.
 
@@ -82,6 +82,6 @@ La comparación con Qwen3.5 no puede completarse porque no se dispone de especif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mufasa1228/sn92-gen-r3
+- Hugging Face: https://huggingface.co/mufasa1228/sn92-gen-r3
 - Repositorio de Qwen (referencia de la familia base): https://github.com/QwenLM
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

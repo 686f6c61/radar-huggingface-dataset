@@ -71,10 +71,10 @@ Como referencia, el autor cita el run calificado de la política base de a1rb4Ck
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (jrubiosainz) | no disponible | no aplica | 165.98 cm (semilla 2), 167.43 cm (semilla 5) en replay | Apache 2.0 | HuggingFace |
-| a1rb4Ck/microduck-tug (rev. 099ced00) | no disponible | no aplica | 166.19724988937378 cm, 5/5 pits | Apache 2.0 | HuggingFace |
-| a1rb4Ck/microduck-tug (rev. f7f7705b) | no disponible | no aplica | 166.22851252555847 cm, 5/5 pits | Apache 2.0 | HuggingFace |
-| a1rb4Ck/microduck-heist | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| Este modelo (jrubiosainz) | no disponible | no aplica | 165.98 cm (semilla 2), 167.43 cm (semilla 5) en replay | Apache 2.0 | Hugging Face |
+| a1rb4Ck/microduck-tug (rev. 099ced00) | no disponible | no aplica | 166.19724988937378 cm, 5/5 pits | Apache 2.0 | Hugging Face |
+| a1rb4Ck/microduck-tug (rev. f7f7705b) | no disponible | no aplica | 166.22851252555847 cm, 5/5 pits | Apache 2.0 | Hugging Face |
+| a1rb4Ck/microduck-heist | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ Como referencia, el autor cita el run calificado de la política base de a1rb4Ck
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5)
+- [Modelo en Hugging Face](https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5)
 - [Modelo base: a1rb4Ck/microduck-tug](https://huggingface.co/a1rb4Ck/microduck-tug)
 - [Microduck Arena (Space)](https://huggingface.co/spaces/pollen-robotics/microduck-arena)
 - [Perfil de a1rb4Ck](https://huggingface.co/a1rb4Ck)

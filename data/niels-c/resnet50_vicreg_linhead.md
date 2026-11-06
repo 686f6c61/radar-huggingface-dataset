@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`niels-c/resnet50_vicreg_linhead` es un checkpoint de vision por computador publicado en HuggingFace por el usuario niels-c. Se trata de una red neuronal convolucional ResNet-50 (arquitectura residual con bloques bottleneck) cuyo backbone ha sido preentrenado con VICReg, un metodo de aprendizaje autosupervisado basado en regularizacion de varianza, invarianza y covarianza, y sobre cuya representacion se anade una cabeza lineal. El modelo no es generativo ni procesa texto: produce un vector de caracteristicas de 2048 dimensiones a partir de una imagen, y opcionalmente una prediccion de clase si la cabeza lineal esta calibrada para ello.
+`niels-c/resnet50_vicreg_linhead` es un checkpoint de vision por computador publicado en Hugging Face por el usuario niels-c. Se trata de una red neuronal convolucional ResNet-50 (arquitectura residual con bloques bottleneck) cuyo backbone ha sido preentrenado con VICReg, un metodo de aprendizaje autosupervisado basado en regularizacion de varianza, invarianza y covarianza, y sobre cuya representacion se anade una cabeza lineal. El modelo no es generativo ni procesa texto: produce un vector de caracteristicas de 2048 dimensiones a partir de una imagen, y opcionalmente una prediccion de clase si la cabeza lineal esta calibrada para ello.
 
 El interes del checkpoint reside en la combinacion de dos piezas bien establecidas: la ResNet-50, con unos 25,6 millones de parametros y ampliamente desplegada en produccion, y el preentrenamiento VICReg, que evita depender de etiquetas durante la fase de representacion y suele ofrecer embeddings mas transferibles que el preentrenamiento supervisado clasico para tareas de retrieval, clustering y fine-tuning con pocos datos. Es, por tanto, un candidato razonable como extractor de caracteristicas de bajo coste computacional.
 
-Ahora bien, la model card del repositorio esta practicamente vacia (solo contiene la declaracion de licencia MIT) y el autor no documenta el dataset de entrenamiento, el numero de clases de la cabeza lineal, el preprocesado de imagen ni metricas de evaluacion. El checkpoint registra 0 descargas y 0 likes en el momento de la consulta, y el pipeline no esta declarado en HuggingFace. Cualquier uso en produccion exige una validacion propia previa.
+Ahora bien, la model card del repositorio esta practicamente vacia (solo contiene la declaracion de licencia MIT) y el autor no documenta el dataset de entrenamiento, el numero de clases de la cabeza lineal, el preprocesado de imagen ni metricas de evaluacion. El checkpoint registra 0 descargas y 0 likes en el momento de la consulta, y el pipeline no esta declarado en Hugging Face. Cualquier uso en produccion exige una validacion propia previa.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ El autor no incluye metricas de exactitud top-1/top-5, ni resultados de linear p
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| niels-c/resnet50_vicreg_linhead | ~25,6 M | Imagen 224x224 (no verificado) | No documentado | MIT | HuggingFace, 0 descargas |
-| Ramos-Ramos/vicreg-resnet-50 | ~25,6 M (ResNet-50) | Imagen; preprocesado no verificado por el autor | No documentado en la informacion disponible | No disponible | HuggingFace; pesos convertidos del VICReg oficial |
+| niels-c/resnet50_vicreg_linhead | ~25,6 M | Imagen 224x224 (no verificado) | No documentado | MIT | Hugging Face, 0 descargas |
+| Ramos-Ramos/vicreg-resnet-50 | ~25,6 M (ResNet-50) | Imagen; preprocesado no verificado por el autor | No documentado en la informacion disponible | No disponible | Hugging Face; pesos convertidos del VICReg oficial |
 | torchvision resnet50 (IMAGENET1K_V2) | ~25,6 M | Imagen 224x224, transforms publicados | Pesos supervisados con metricas publicadas por torchvision | BSD-3-Clause (codigo de torchvision) | Amplia, via `torchvision.models` |
 | VICReg oficial (facebookresearch/vicreg) | ~25,6 M (ResNet-50) | Imagen; receta de entrenamiento documentada | Metricas en el repositorio oficial | Consultar repositorio | Descarga directa y PyTorch Hub |
 
@@ -90,7 +90,7 @@ La diferencia practica frente a torchvision resnet50 es el tipo de preentrenamie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niels-c/resnet50_vicreg_linhead
+- Modelo en Hugging Face: https://huggingface.co/niels-c/resnet50_vicreg_linhead
 - Documentacion de torchvision resnet50: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html
 - Checkpoint VICReg ResNet-50 convertido (Ramos-Ramos): https://huggingface.co/Ramos-Ramos/vicreg-resnet-50
 - Codigo oficial de VICReg (Meta AI): https://github.com/facebookresearch/vicreg

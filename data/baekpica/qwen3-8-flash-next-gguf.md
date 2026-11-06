@@ -83,8 +83,8 @@ La comparación con Qwen3.7-Plus se menciona en la documentación oficial: Qwen3
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Conversión GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Guía de ejecución local en unsloth: https://unsloth.ai/docs/models/qwen3.8-next

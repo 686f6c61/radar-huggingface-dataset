@@ -6,7 +6,7 @@ DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una modificación del checkpoint base Deep
 
 El modelo base es un transformer causal encoder-decoder de tipo MoE con 20+20 capas, 384 expertos enrutados (top-6 más un experto compartido), atención dispersa CSA2, memoria de n-gramas Engram y un cabezal de borrador especulativo DSpark. Los pesos publicados suman 763.205.315.794 parámetros totales (unos 763 mil millones) con un tamaño de repositorio de 510,3 GB, cuantizados nativamente en FP8 (`e4m3fn`) con escalas de bloque E8M0 [32, 32] y expertos enrutados en FP4. La longitud de contexto declarada es de 1 millón de tokens y el pipeline es multimodal image-text-to-text gracias a una torre de visión DeepSeek-ViT con RoPE 2D y pixel unshuffle.
 
-La relevancia de esta ficha es doble: por un lado documenta un modelo de la familia DeepSeek V4.1 en su variante Flash, con capacidades multimodales y de razonamiento; por otro, es un caso de estudio de las implicaciones de seguridad y legales de las versiones "abliteradas" que circulan en HuggingFace. La licencia declarada es MIT, aunque el modelo base pertenece a deepseek-ai y su uso está sujeto a las condiciones del modelo original.
+La relevancia de esta ficha es doble: por un lado documenta un modelo de la familia DeepSeek V4.1 en su variante Flash, con capacidades multimodales y de razonamiento; por otro, es un caso de estudio de las implicaciones de seguridad y legales de las versiones "abliteradas" que circulan en Hugging Face. La licencia declarada es MIT, aunque el modelo base pertenece a deepseek-ai y su uso está sujeto a las condiciones del modelo original.
 
 ## Especificaciones tecnicas
 
@@ -73,8 +73,8 @@ Por categoría de HarmBench, la versión abliterada alcanza el 100 % de cumplimi
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (base) | 552B backbone, 8B/16B activos | 1M | propia de deepseek-ai | Sí | HuggingFace |
-| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763B totales, 8B/16B activos | 1M | MIT (declarada) | Sí | HuggingFace |
+| DeepSeek-V4.1-Flash (base) | 552B backbone, 8B/16B activos | 1M | propia de deepseek-ai | Sí | Hugging Face |
+| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763B totales, 8B/16B activos | 1M | MIT (declarada) | Sí | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento de otros modelos comparables (MMLU, HumanEval, etc.) que permitan una comparación cuantitativa rigurosa. La comparación principal es con el modelo base del que deriva, cuyos resultados en HarmBench y MMLU se recogen en la sección anterior.
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de datos de rendimiento de otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darkknight25/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Repositorio Hugging Face: https://huggingface.co/darkknight25/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Cuenta del autor en X: https://x.com/dealignai
 - Cuenta secundaria en X: https://x.com/jordanschenck

@@ -71,7 +71,7 @@ No hay datos publicados de benchmarks ni de rendimiento en runtime para este art
 
 | Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| florianvoss/Qwen3.5-0.8B-Autoround-a16w4-Modalix | ~0,8 mil millones (base) | 4096 tokens | AutoRound INT4, GPTQ INT4, RTN INT8 y BF16 segun tensor | ELF compilado para LLiMa | no disponible | Publicado en HuggingFace, 0 descargas |
+| florianvoss/Qwen3.5-0.8B-Autoround-a16w4-Modalix | ~0,8 mil millones (base) | 4096 tokens | AutoRound INT4, GPTQ INT4, RTN INT8 y BF16 segun tensor | ELF compilado para LLiMa | no disponible | Publicado en Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-0.8B (modelo base) | ~0,8 mil millones | no disponible | Sin cuantizar (precision original) | no disponible | no disponible en esta informacion | Referenciado como base en la model card |
 | Otras cuantizaciones INT4 del mismo modelo base (AutoRound, GPTQ o AWQ en formato Transformers) | ~0,8 mil millones | no disponible | INT4 | safetensors | no disponible | no disponible en la informacion proporcionada |
 
@@ -90,6 +90,6 @@ No hay datos publicados de benchmarks ni de rendimiento en runtime para este art
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/Qwen3.5-0.8B-Autoround-a16w4-Modalix
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/Qwen3.5-0.8B-Autoround-a16w4-Modalix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada. La busqueda web no devolvio resultados relevantes sobre este modelo.

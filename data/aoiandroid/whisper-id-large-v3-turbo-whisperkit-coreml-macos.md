@@ -95,13 +95,13 @@ No se dispone de datos de número de parámetros, contexto o throughput para los
 - La palettización de 6 bits puede introducir pérdida de precisión; en la evaluación la diferencia frente a fp32 es de 0,002 puntos en FLEURS id y de +0,016 en el clip de noticias.
 - No incluye TextDecoderContextPrefill, componente opcional en WhisperKit que puede afectar al rendimiento en algunos flujos.
 - Dependencia de plataforma: Core ML es exclusivo de Apple (macOS 13+/iOS 16+). El repositorio no ofrece pesos GGUF, safetensors ni ONNX.
-- Trazabilidad limitada: 0 descargas y 0 likes, publicada por un usuario sin verificación de HuggingFace.
+- Trazabilidad limitada: 0 descargas y 0 likes, publicada por un usuario sin verificación de Hugging Face.
 - La licencia MIT permite uso comercial manteniendo la atribución a Willy030125 y OpenAI, pero no se detallan los términos de los datasets usados en el ajuste fino.
 - No se documentan sesgos lingüísticos, sociodemográficos ni de acento para este ajuste.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aoiandroid/whisper-id-large-v3-turbo-whisperkit-coreml-macos
+- Modelo en Hugging Face: https://huggingface.co/aoiandroid/whisper-id-large-v3-turbo-whisperkit-coreml-macos
 - Modelo base del ajuste fino: https://huggingface.co/Willy030125/whisper_large_v3_turbo_finetuned_en_id_v1
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - openai/whisper-large-v3: https://huggingface.co/openai/whisper-large-v3

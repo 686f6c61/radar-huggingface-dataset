@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa con otros modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/dinov2-base
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/dinov2-base
 - Modelo original: https://huggingface.co/facebook/dinov2-base
 - Repositorio oficial de DINOv2 (GitHub): https://github.com/facebookresearch/dinov2
 - Paper "DINOv2: Learning Robust Visual Features without Supervision": https://arxiv.org/abs/2304.07193

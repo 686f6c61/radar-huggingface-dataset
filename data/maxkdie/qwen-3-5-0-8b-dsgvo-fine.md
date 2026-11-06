@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Maxkdie/qwen-3.5-0.8b-dsgvo-fine` es un modelo publicado en HuggingFace por el usuario Maxkdie el 1 de noviembre de 2026. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) de un modelo de la familia Qwen 3.5 con aproximadamente 0,8 mil millones de parametros, orientado por el sufijo "dsgvo" al cumplimiento del Reglamento General de Proteccion de Datos (DSGVO es la denominacion alemana del RGPD). El modelo se distribuye bajo licencia MIT.
+`Maxkdie/qwen-3.5-0.8b-dsgvo-fine` es un modelo publicado en Hugging Face por el usuario Maxkdie el 1 de noviembre de 2026. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) de un modelo de la familia Qwen 3.5 con aproximadamente 0,8 mil millones de parametros, orientado por el sufijo "dsgvo" al cumplimiento del Reglamento General de Proteccion de Datos (DSGVO es la denominacion alemana del RGPD). El modelo se distribuye bajo licencia MIT.
 
-La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas ni ejemplos de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se declara pipeline, idiomas soportados ni formato de pesos en los metadatos de HuggingFace.
+La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas ni ejemplos de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se declara pipeline, idiomas soportados ni formato de pesos en los metadatos de Hugging Face.
 
 Por tanto, esta ficha se limita a documentar lo que puede verificarse desde los metadatos publicos y a marcar explicitamente como "no disponible" todo aquello que el autor no ha hecho publico. No debe interpretarse como una evaluacion funcional del modelo: no hay evidencia publicada de su calidad, comportamiento ni idoneidad para produccion.
 
@@ -87,4 +87,4 @@ Los datos de los modelos comparativos corresponden a sus model cards publicas y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maxkdie/qwen-3.5-0.8b-dsgvo-fine
+- Modelo en Hugging Face: https://huggingface.co/Maxkdie/qwen-3.5-0.8b-dsgvo-fine

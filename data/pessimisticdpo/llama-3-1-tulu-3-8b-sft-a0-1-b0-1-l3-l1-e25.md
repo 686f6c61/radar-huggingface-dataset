@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e25 es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. Por la nomenclatura del identificador se trataría, con alta probabilidad, de un ajuste fino supervisado (SFT) derivado de Llama-3.1-Tulu-3-8B, el modelo de instrucciones de 8 000 millones de parámetros de Allen Institute for AI construido sobre Llama 3.1 8B. Los sufijos del nombre (a0.1, b0.1, L3, l1, e25) sugieren un experimento de ajuste con hiperparámetros concretos, presumiblemente relacionados con una variante de optimización pesimista tipo DPO. Ninguno de estos extremos está confirmado por el autor.
+PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e25 es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. Por la nomenclatura del identificador se trataría, con alta probabilidad, de un ajuste fino supervisado (SFT) derivado de Llama-3.1-Tulu-3-8B, el modelo de instrucciones de 8 000 millones de parámetros de Allen Institute for AI construido sobre Llama 3.1 8B. Los sufijos del nombre (a0.1, b0.1, L3, l1, e25) sugieren un experimento de ajuste con hiperparámetros concretos, presumiblemente relacionados con una variante de optimización pesimista tipo DPO. Ninguno de estos extremos está confirmado por el autor.
 
 La model card publicada es la plantilla automática de transformers, sin ningún campo rellenado: no hay descripción, ni datos de entrenamiento, ni licencia, ni idiomas, ni evaluación. El repositorio ocupa únicamente 0,2 GB, un tamaño muy inferior a los aproximadamente 16 GB que requerirían los pesos completos de un modelo de 8B en bf16, lo que apunta a adaptadores LoRA, a un checkpoint parcial o a pesos cuantizados de forma muy agresiva, sin que exista documentación que lo aclare.
 
@@ -30,7 +30,7 @@ Su relevancia actual como modelo de producción es muy limitada: cero descargas,
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna ni sobre el procedimiento de entrenamiento. La model card es la plantilla genérica autogenerada por HuggingFace y todos los apartados relevantes (arquitectura y objetivo, datos de entrenamiento, hiperparámetros, preprocesado, infraestructura de cómputo) figuran como "[More Information Needed]". La única etiqueta técnica declarada es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental del aprendizaje automático citado en la propia plantilla; no es una referencia al paper del modelo.
+No hay información publicada sobre la arquitectura interna ni sobre el procedimiento de entrenamiento. La model card es la plantilla genérica autogenerada por Hugging Face y todos los apartados relevantes (arquitectura y objetivo, datos de entrenamiento, hiperparámetros, preprocesado, infraestructura de cómputo) figuran como "[More Information Needed]". La única etiqueta técnica declarada es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental del aprendizaje automático citado en la propia plantilla; no es una referencia al paper del modelo.
 
 A partir del identificador puede reconstruirse una hipótesis de trabajo, siempre sin confirmar: se trataría de un fine-tuning supervisado sobre Llama-3.1-Tulu-3-8B, con valores de hiperparámetros codificados en el nombre (a0.1, b0.1, L3, l1, e25). La etiqueta "PessimisticDPO" del espacio de nombres sugiere una línea de experimentación con variantes pesimistas de optimización por preferencias, pero no se aporta ni el dataset, ni el número de tokens, ni si hubo fases de RLHF, DPO o RLVR posteriores al SFT. Tampoco se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, mezcla de expertos) ni la composición del corpus de entrenamiento.
 
@@ -104,7 +104,7 @@ La diferencia práctica fundamental no es de capacidad técnica, sino de trazabi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e25
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e25
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, calculador de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Modelo base presunto, Llama-3.1-Tulu-3-8B de Allen AI: no disponible en los resultados de esta búsqueda
 - Paper o blog del autor: no disponible

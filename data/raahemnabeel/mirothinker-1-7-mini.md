@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/raahemnabeel/mirothinker-1.7-mini
+- Paquete en Hugging Face: https://huggingface.co/raahemnabeel/mirothinker-1.7-mini
 - Modelo base original: https://huggingface.co/miromind-ai/MiroThinker-1.7-mini
 - Repositorio de MiroThinker / MiroFlow: https://github.com/MiroMindAI/MiroThinker
 - Gestor de modelos Tenstorrent: https://github.com/tenstorrent/tt-model-manager

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/env_junfinv2_a6d4eb27` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordansky. Está diseñado como un fine-tuning de tipo SFT (Supervised Fine-Tuning) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, un LLM de 8.000 millones de parámetros de Meta. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y ocupa 1,4 GB en el repositorio, lo que sugiere que contiene los pesos del adaptador, no el modelo completo.
+El modelo `Jordansky/env_junfinv2_a6d4eb27` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordansky. Está diseñado como un fine-tuning de tipo SFT (Supervised Fine-Tuning) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, un LLM de 8.000 millones de parámetros de Meta. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y ocupa 1,4 GB en el repositorio, lo que sugiere que contiene los pesos del adaptador, no el modelo completo.
 
 La relevancia de este tipo de publicaciones radica en que permiten adaptar un modelo base potente a dominios o tareas específicas sin necesidad de reentrenar todos los parámetros, reduciendo costes computacionales y de almacenamiento. Sin embargo, la model card asociada está prácticamente vacía: no se especifican los datos de entrenamiento, los hiperparámetros, el propósito concreto del fine-tuning ni los resultados de evaluación. Esto limita seriamente su uso en producción sin una validación adicional por parte del usuario.
 
@@ -62,6 +62,6 @@ No se dispone de información sobre adaptadores comparables del mismo autor o de
 
 ## Enlaces
 
-- [HuggingFace: Jordansky/env_junfinv2_a6d4eb27](https://huggingface.co/Jordansky/env_junfinv2_a6d4eb27)
+- [Hugging Face: Jordansky/env_junfinv2_a6d4eb27](https://huggingface.co/Jordansky/env_junfinv2_a6d4eb27)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - [Paper de LoRA (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)

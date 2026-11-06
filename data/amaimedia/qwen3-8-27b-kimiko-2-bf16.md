@@ -101,7 +101,7 @@ No se dispone de comparación con otros modelos de 27B fuera de la familia Qwen.
 
 ## Enlaces
 
-- [HuggingFace: AMAImedia/Qwen3.8-27B-Kimiko-2-BF16](https://huggingface.co/AMAImedia/Qwen3.8-27B-Kimiko-2-BF16)
+- [Hugging Face: AMAImedia/Qwen3.8-27B-Kimiko-2-BF16](https://huggingface.co/AMAImedia/Qwen3.8-27B-Kimiko-2-BF16)
 - [Repositorio original: nlpguy/Qwen3.8-27B-Kimiko-2](https://huggingface.co/nlpguy/Qwen3.8-27B-Kimiko-2)
 - [Arquitectura en hfviewer](https://hfviewer.com/AMAImedia/Qwen3.8-27B-Kimiko-2-BF16)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

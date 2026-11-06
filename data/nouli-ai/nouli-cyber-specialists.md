@@ -86,7 +86,7 @@ Los tres modelos de la tabla son componentes base del propio paquete, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nouli-ai/nouli-cyber-specialists
+- Modelo en Hugging Face: https://huggingface.co/nouli-ai/nouli-cyber-specialists
 - Sitio del autor: https://nouli.ai
 - Ejemplos completos: https://huggingface.co/nouli-ai/nouli-cyber-specialists/tree/main/examples
 - Avisos de licencia: https://huggingface.co/nouli-ai/nouli-cyber-specialists/tree/main/licenses
@@ -96,5 +96,5 @@ Los tres modelos de la tabla son componentes base del propio paquete, por lo que
 - Modelo base selector (Qwen3-4B): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset CVSS: https://huggingface.co/datasets/Tenebrae/cvss31vectors
 - Dataset ATT&CK: https://huggingface.co/datasets/ctokx/tram-attack-multilabel-clean
-- Documentacion de la CLI de HuggingFace: https://huggingface.co/docs/huggingface_hub/guides/cli
+- Documentacion de la CLI de Hugging Face: https://huggingface.co/docs/huggingface_hub/guides/cli
 - Modelos relacionados: https://huggingface.co/nouli-ai/nouli-guard · https://huggingface.co/nouli-ai/nouli-route · https://huggingface.co/nouli-ai/nouli-clause · https://huggingface.co/nouli-ai/nouli-policy-pair

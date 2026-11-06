@@ -63,14 +63,14 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 - La cuantización Nano aumenta la perplejidad un 8.2% frente a BF16, lo que puede degradar la calidad en tareas sensibles.
 - El tensor per_layer_token_embd (51.2 B parámetros) se mantiene en RAM del sistema, por lo que se necesitan al menos 29.1 GB de RAM además de la VRAM.
 - Se requiere una versión reciente de llama.cpp con soporte qwen4exp; las versiones anteriores no cargarán estos archivos.
-- Los archivos se distribuyen en dos shards (por el límite de 50 GB de HuggingFace); hay que descargar ambos y apuntar al primero.
+- Los archivos se distribuyen en dos shards (por el límite de 50 GB de Hugging Face); hay que descargar ambos y apuntar al primero.
 - Los datos de perplejidad se midieron sobre el corpus de entrenamiento de la matriz de importancia, lo que puede inflar los resultados; una evaluación con datos externos sería más fiable.
 - No hay información sobre sesgos, alucinaciones o limitaciones de idioma en la información disponible.
 - La licencia del modelo base es Apache-2.0, lo que permite uso comercial, pero hay que cumplir los términos de la licencia original.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mudler/Qwen3.8-Flash-Next-APEX-GGUF
+- Hugging Face: https://huggingface.co/mudler/Qwen3.8-Flash-Next-APEX-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Proyecto APEX: https://github.com/mudler/apex-quant
 - LocalAI: https://github.com/mudler/LocalAI

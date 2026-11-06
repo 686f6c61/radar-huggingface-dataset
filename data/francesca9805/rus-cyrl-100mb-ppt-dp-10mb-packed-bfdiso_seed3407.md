@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/rus_cyrl_100mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto causal, de tipo decoder-only, con 124.770.816 parametros (aproximadamente 124,8 millones) y un tamano de repositorio de 0,3 GB en formato safetensors. Pertenece a la familia estructural GPT-2 y fue entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL, tal como indica la model card generada automaticamente.
+El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/rus_cyrl_100mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto causal, de tipo decoder-only, con 124.770.816 parametros (aproximadamente 124,8 millones) y un tamano de repositorio de 0,3 GB en formato safetensors. Pertenece a la familia estructural GPT-2 y fue entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL, tal como indica la model card generada automaticamente.
 
 El modelo hereda del proyecto Goldfish, una iniciativa de la Universidad de Groningen orientada a entrenar modelos monolingues para cientos de idiomas con presupuestos reducidos de datos (en este caso, 100 MB de texto). El identificador `rus-cyrl` sugiere que la variedad linguistica objetivo es el ruso en escritura cirilica, si bien la model card no declara explicitamente los idiomas soportados. El sufijo del nombre (`ppt-Dp-10mb-packed-bfdiso_seed3407`) apunta a un experimento de investigacion con un subconjunto de datos de 10 MB, secuencias empaquetadas (packed) y una semilla fija (3407), lo que lo situa como un artefacto de experimentacion academica mas que como un modelo de produccion.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y de ambito puramente investigador: sirve como caso de
 | Modelo base | goldfish-models/rus_cyrl_100mb |
 | Libreria | transformers (tambien etiquetado como endpoints_compatible y text-generation-inference) |
 | Tamano del repositorio | 0,3 GB |
-| Fecha de creacion | 2026-09-29 según metadatos de HuggingFace |
+| Fecha de creacion | 2026-09-29 según metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/htj2blr5

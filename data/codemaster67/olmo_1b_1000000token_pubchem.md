@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Codemaster67/Olmo_1b_1000000token_pubchem es un modelo publicado en HuggingFace por el usuario Codemaster67 bajo la librería transformers y con pesos en formato safetensors. Por el identificador del repositorio cabe inferir que se trata de un ajuste fino (fine-tuning) de un modelo de la familia OLMo de aproximadamente 1.000 millones de parámetros, entrenado sobre una colección de datos químicos de PubChem correspondiente a unos 1.000.000 de tokens. No obstante, esta interpretación procede únicamente del nombre del repositorio: la model card es la plantilla automática de HuggingFace y no contiene ninguna descripción real del modelo, los datos, el procedimiento de entrenamiento ni los resultados.
+Codemaster67/Olmo_1b_1000000token_pubchem es un modelo publicado en Hugging Face por el usuario Codemaster67 bajo la librería transformers y con pesos en formato safetensors. Por el identificador del repositorio cabe inferir que se trata de un ajuste fino (fine-tuning) de un modelo de la familia OLMo de aproximadamente 1.000 millones de parámetros, entrenado sobre una colección de datos químicos de PubChem correspondiente a unos 1.000.000 de tokens. No obstante, esta interpretación procede únicamente del nombre del repositorio: la model card es la plantilla automática de Hugging Face y no contiene ninguna descripción real del modelo, los datos, el procedimiento de entrenamiento ni los resultados.
 
 La relevancia de este tipo de publicaciones radica en el interés creciente por los modelos de lenguaje especializados en dominios científicos concretos, en este caso la química y la representación de moléculas mediante cadenas SMILES. Encaja en la línea de trabajo del mismo autor, que también ha publicado Olmo_1b_1000000token_unichem y olmo_chem_250k, este último descrito como un ajuste fino del modelo base Codemaster67/Olmo-7b-spe sobre cadenas SMILES del conjunto Codemaster67/Causal_lm_chemistry_1M_rows.
 
@@ -23,11 +23,11 @@ Se trata, en cualquier caso, de un repositorio sin descargas, sin "likes" y sin 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica sobre la arquitectura en la model card, que es la plantilla autogenerada por HuggingFace y no documenta ni el tipo de modelo, ni el numero de capas, ni las dimensiones de las cabezas de atencion, ni la funcion de activacion. Si se acepta la hipotesis derivada del nombre, el modelo partiria de OLMo, un transformer decoder-only con atencion causal y normalizacion sin sesgo (non-parametric layer norm), publicado por el Allen Institute for AI (Ai2) junto con su codigo de entrenamiento y su dataset.
+No se dispone de informacion tecnica sobre la arquitectura en la model card, que es la plantilla autogenerada por Hugging Face y no documenta ni el tipo de modelo, ni el numero de capas, ni las dimensiones de las cabezas de atencion, ni la funcion de activacion. Si se acepta la hipotesis derivada del nombre, el modelo partiria de OLMo, un transformer decoder-only con atencion causal y normalizacion sin sesgo (non-parametric layer norm), publicado por el Allen Institute for AI (Ai2) junto con su codigo de entrenamiento y su dataset.
 
 Respecto al entrenamiento, lo unico inferible es que el nombre apunta a un ajuste sobre aproximadamente 1.000.000 de tokens extraidos de PubChem, la base de datos publica de compuestos quimicos del NIH. No hay informacion sobre si el ajuste fue de parametros completos o mediante adaptadores, sobre la composicion exacta del corpus, sobre hiperparametros (tasa de aprendizaje, precision mixta, numero de epocas) ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica especifica.
 
-Cabe senalar que la etiqueta `arxiv:1910.09700` del repositorio no corresponde a un articulo sobre este modelo, sino al trabajo de Lacoste et al. sobre el calculo de impacto ambiental, citado en la propia plantilla de model card de HuggingFace.
+Cabe senalar que la etiqueta `arxiv:1910.09700` del repositorio no corresponde a un articulo sobre este modelo, sino al trabajo de Lacoste et al. sobre el calculo de impacto ambiental, citado en la propia plantilla de model card de Hugging Face.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ Las estimaciones siguientes parten de la hipotesis de un modelo de aproximadamen
 - VRAM estimada para inferencia (modelo de ~1B): en fp16, alrededor de 2 GB de pesos mas memoria para activaciones y cache KV; en int8, aproximadamente 1 GB; en int4, alrededor de 0,5-0,7 GB.
 - GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM puede ejecutar el modelo en fp16 para secuencias cortas; GPU de gama alta como A100, H100 o RTX 4090 no son necesarias y solo aportarian mayor throughput.
 - Compatibilidad con GPU de consumo: si la hipotesis de tamano es correcta, cabria en practicamente cualquier GPU de consumo moderna (RTX 3060 12 GB, RTX 4060, RTX 4090, etc.) e incluso en GPUs integradas o CPU para secuencias cortas.
-- Opciones de despliegue: la libreria declarada es transformers, por lo que es compatible con el pipeline estandar de HuggingFace y con servidores como vLLM o TGI. No se publican pesos GGUF, por lo que llama.cpp y Ollama no estarian disponibles de forma directa sin conversion previa por parte del usuario.
+- Opciones de despliegue: la libreria declarada es transformers, por lo que es compatible con el pipeline estandar de Hugging Face y con servidores como vLLM o TGI. No se publican pesos GGUF, por lo que llama.cpp y Ollama no estarian disponibles de forma directa sin conversion previa por parte del usuario.
 - Latencia y throughput: no disponibles. No se aportan mediciones de tokens por segundo ni de latencia.
 - Advertencia sobre el tamano del repositorio: los 0,1 GB declarados no cuadran con un modelo de 1.000 millones de parametros almacenado en fp16 (que ocuparia alrededor de 2 GB). Conviene verificar el contenido real del repositorio (adaptadores LoRA, pesos parciales o checkpoint incompleto) antes de planificar cualquier despliegue.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Codemaster67/Olmo_1b_1000000token_pubchem
+- Modelo en Hugging Face: https://huggingface.co/Codemaster67/Olmo_1b_1000000token_pubchem
 - Modelo relacionado del mismo autor (UniChem): https://huggingface.co/Codemaster67/Olmo_1b_1000000token_unichem
 - Modelo relacionado del mismo autor (quimica, 250k): https://huggingface.co/Codemaster67/olmo_chem_250k
 - Pagina oficial de OLMo en Ai2: https://allenai.org/olmo

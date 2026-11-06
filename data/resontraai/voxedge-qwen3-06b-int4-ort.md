@@ -79,6 +79,6 @@ Nota: los datos de Qwen3-0.6B original y Phi-3-mini son de conocimiento general,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ResontraAI/voxedge-qwen3-06b-int4-ort
+- Modelo en Hugging Face: https://huggingface.co/ResontraAI/voxedge-qwen3-06b-int4-ort
 - Índice de modelos VoxEdge (mencionado en la ficha): `ResontraAI/voxedge-model-index` (no se proporciona URL directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

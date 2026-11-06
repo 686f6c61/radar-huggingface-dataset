@@ -91,7 +91,7 @@ La comparativa se limita a los tres modelos incluidos en el propio repositorio, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arnoldatse/transcriptor-sound-models
+- Hugging Face: https://huggingface.co/arnoldatse/transcriptor-sound-models
 - YAMNet (tensorflow/models): https://github.com/tensorflow/models/tree/master/research/audioset/yamnet
 - EfficientAT: https://github.com/fschmid56/EfficientAT
 - PANNs (audioset_tagging_cnn): https://github.com/qiuqiangkong/audioset_tagging_cnn

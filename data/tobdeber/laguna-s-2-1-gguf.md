@@ -94,7 +94,7 @@ No se dispone de comparativas con otros modelos GGUF de codificación de tamaño
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TobDeBer/Laguna-S-2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/TobDeBer/Laguna-S-2.1-GGUF
 - Modelo base: https://huggingface.co/poolside/Laguna-S-2.1
 - GGUF oficial de poolside: https://huggingface.co/poolside/Laguna-S-2.1-GGUF
 - Blog de lanzamiento: https://poolside.ai/blog/introducing-laguna-s-2-1

@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-VIII-27B-MLX-2bit
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-VIII-27B-MLX-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Gemelo GGUF de los mismos pesos: https://huggingface.co/dendriteholdings/Ingot-VIII-27B-Q2
 - Referencia genesis del certamen: https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nttanaka/class-multitask` es un prototipo de investigación publicado en HuggingFace por el usuario Nttanaka. Se presenta como una implementación de Poolformer orientada a tareas múltiples (multitask), con una configuración etiquetada como "large" en su `config.json`. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura, una receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors`. No es un modelo entrenado ni evaluado: el propio autor indica explícitamente que los pesos son una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
+`Nttanaka/class-multitask` es un prototipo de investigación publicado en Hugging Face por el usuario Nttanaka. Se presenta como una implementación de Poolformer orientada a tareas múltiples (multitask), con una configuración etiquetada como "large" en su `config.json`. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura, una receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors`. No es un modelo entrenado ni evaluado: el propio autor indica explícitamente que los pesos son una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
 
 El dato más relevante para un evaluador es su tamaño real: 33.088 parámetros según los tensores publicados. Esa cifra es incompatible con la etiqueta "large" y con cualquier uso práctico como modelo de lenguaje o de visión: se trata de un esqueleto de código ejecutable, no de un modelo con capacidades aprendidas. El repositorio ocupa 0,0 GB, no tiene descargas ni "likes", y su fecha de creación registrada (2026-10-20) es posterior a la fecha actual, lo que sugiere un artefacto generado de forma automática o sintética.
 
@@ -34,7 +34,7 @@ No hay entrenamiento completado. El autor describe `training_args.json` como "va
 - No se declara ninguna capacidad aprendida: el checkpoint no ha sido entrenado, por lo que no genera texto, no razona, no escribe código y no resuelve problemas matemáticos.
 - No hay soporte documentado de tool calling ni de function calling.
 - No hay soporte documentado de agentes ni de razonamiento multi-paso.
-- No hay información sobre capacidades multilingües; el campo de idiomas está vacío en la ficha de HuggingFace.
+- No hay información sobre capacidades multilingües; el campo de idiomas está vacío en la ficha de Hugging Face.
 - No se documentan modos especiales (thinking, visión, audio).
 - Lo que sí ofrece el repositorio es una implementación ejecutable de referencia: `train.py` con bloque `__main__` de ejemplo, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta por defecto.
 - El script está pensado para inspección y modificación; el propio autor advierte que las APIs genéricas de carga automática requieren un adaptador explícito porque la implementación es personalizada.
@@ -44,7 +44,7 @@ No hay entrenamiento completado. El autor describe `training_args.json` como "va
 - Pruebas de humo de pipelines de ML: el checkpoint de inicialización permite verificar que un flujo de carga, preprocesado e inferencia funciona de extremo a extremo antes de invertir en un entrenamiento real, sin coste de GPU.
 - Andamiaje para investigación en arquitecturas MetaFormer: sirve como punto de partida para estudiar variantes de Poolformer con atención de ventana deslizante y fusión por co-atención, modificando `config.json` y escalando el número de parámetros.
 - Comparativa de recetas de optimización: la inclusión de NovoGrad con schedule exponencial permite usar el repositorio como banco de pruebas para contrastar optimizadores y schedulers bajo la misma exposición de datos, tal como sugiere el autor.
-- Docencia y formación: un modelo de 33 K parámetros es adecuado para explicar en clase el ciclo completo de un repositorio de HuggingFace (config, pesos, script de entrenamiento, licencia) sin necesidad de infraestructura.
+- Docencia y formación: un modelo de 33 K parámetros es adecuado para explicar en clase el ciclo completo de un repositorio de Hugging Face (config, pesos, script de entrenamiento, licencia) sin necesidad de infraestructura.
 - Integración en CI/CD como test de regresión estructural: validar que los cambios en un *wrapper* propio siguen produciendo tensores con las formas y tipos esperados cuando se carga `model.safetensors`.
 - Base para experimentos multitarea con datos propios: el esqueleto de co-atención permite añadir cabezas por tarea y entrenar desde cero en un conjunto etiquetado propio, siempre documentando los resultados por separado de los valores por defecto del repositorio.
 - Auditoría de repositorios generados automáticamente: útil como ejemplo de artefacto con metadatos incoherentes (escala "large" frente a 33 K parámetros, fecha futura) para diseñar controles de calidad en un catálogo de modelos.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nttanaka/class-multitask` | 33.088 | No disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
+| `Nttanaka/class-multitask` | 33.088 | No disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
 | PoolFormer S12 (Yu et al., 2021) | ~12 M | No aplica (visión, resolución fija) | Resultados publicados en ImageNet-1K | Apache 2.0 (repo oficial) | Público con pesos entrenados |
 | PoolFormer S36 (Yu et al., 2021) | ~31 M | No aplica (visión, resolución fija) | Resultados publicados en ImageNet-1K | Apache 2.0 (repo oficial) | Público con pesos entrenados |
 | ResNet-50 | ~25 M | No aplica (visión) | Resultados publicados en ImageNet-1K | BSD-3-Clause / MIT según implementación | Ampliamente disponible |
@@ -79,12 +79,12 @@ La comparación relevante es de escala: este repositorio tiene entre dos y tres 
 - No hay métricas de ningún tipo; cualquier comparación de calidad es imposible sin un entrenamiento y una evaluación propios.
 - La escala declarada ("large") es incoherente con los 33.088 parámetros reales; conviene tratar la etiqueta como un valor por defecto del generador de configuración, no como una especificación.
 - La fecha de creación registrada (2026-10-20) es futura, lo que apunta a un artefacto generado de forma sintética o con reloj incorrecto.
-- El campo de idiomas está vacío y no hay pipeline declarado en HuggingFace; la carga con `transformers` no está soportada sin código propio.
+- El campo de idiomas está vacío y no hay pipeline declarado en Hugging Face; la carga con `transformers` no está soportada sin código propio.
 - La licencia BSD-3-Clause permite uso comercial y modificación con atribución, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
 - No hay garantía de mantenimiento: cero descargas, cero "likes" y un único artefacto publicado.
 - Los resultados de la búsqueda web realizada no contienen información relevante sobre este modelo (solo resultados no relacionados), por lo que no se ha podido contrastar nada fuera de la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nttanaka/class-multitask
+- Modelo en Hugging Face: https://huggingface.co/Nttanaka/class-multitask
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

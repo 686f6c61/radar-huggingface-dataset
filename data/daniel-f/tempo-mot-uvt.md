@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TEMPO-MOT + UVT es un paquete de cuatro políticas de robotica del tipo Vision-Language-Action (VLA) publicadas por el usuario Daniel-F en HuggingFace. No es un modelo de lenguaje generalista: cada checkpoint es un ajuste fino de pi0.5, la politica VLA de Physical Intelligence distribuida a traves del framework openpi, especializada en una tarea de manipulacion concreta (`dynamic_handover`, `dynamic_pour`, `spartan_balls` y `ball_drop`). El repositorio incluye, ademas de los pesos, los datasets de LeRobot con los que se entrenaron, el codigo de entrenamiento e inferencia, las estadisticas de normalizacion y una cache precalculada de tokens de SAM2.
+TEMPO-MOT + UVT es un paquete de cuatro políticas de robotica del tipo Vision-Language-Action (VLA) publicadas por el usuario Daniel-F en Hugging Face. No es un modelo de lenguaje generalista: cada checkpoint es un ajuste fino de pi0.5, la politica VLA de Physical Intelligence distribuida a traves del framework openpi, especializada en una tarea de manipulacion concreta (`dynamic_handover`, `dynamic_pour`, `spartan_balls` y `ball_drop`). El repositorio incluye, ademas de los pesos, los datasets de LeRobot con los que se entrenaron, el codigo de entrenamiento e inferencia, las estadisticas de normalizacion y una cache precalculada de tokens de SAM2.
 
 La relevancia tecnica del paquete esta en dos modificaciones sobre pi0.5: por un lado, la atencion temporal se implementa dentro de un SigLIP parcheado (el modelo no compila sin ese parche, que hay que copiar manualmente sobre `transformers`), y por otro se anade `actvae`, un VAE de chunks de accion congelado que trabaja junto al experto de acciones. La entrada combina estado del robot, hasta tres camaras y tokens de memoria de SAM2.1-tiny calculados sobre la imagen de la camara de cabeza.
 
@@ -87,7 +87,7 @@ La informacion disponible solo permite comparar con el modelo base del que deriv
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TEMPO-MOT + UVT (este) | no disponible (checkpoints de 7,1 GB) | no disponible | Apache 2.0 con terminos de Gemma | HuggingFace, 0 descargas | Cuatro politicas ajustadas, atencion temporal en SigLIP parcheado y VAE de acciones congelado |
+| TEMPO-MOT + UVT (este) | no disponible (checkpoints de 7,1 GB) | no disponible | Apache 2.0 con terminos de Gemma | Hugging Face, 0 descargas | Cuatro politicas ajustadas, atencion temporal en SigLIP parcheado y VAE de acciones congelado |
 | pi0.5 (base, openpi) | no disponible en la informacion | no disponible | Apache 2.0 con terminos de Gemma | Repositorio openpi de Physical Intelligence | Politica generalista de la que parten los cuatro ajustes |
 | Otras politicas VLA | no disponible | no disponible | no disponible | no disponible | No se aportan datos comparativos en la informacion disponible |
 
@@ -107,7 +107,7 @@ La informacion disponible solo permite comparar con el modelo base del que deriv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daniel-F/tempo-mot-uvt
+- Modelo en Hugging Face: https://huggingface.co/Daniel-F/tempo-mot-uvt
 - Repositorio openpi (codigo base, framework de pi0.5): https://github.com/Physical-Intelligence/openpi
 - uv (gestor de entorno requerido): https://docs.astral.sh/uv/
 - Terminos heredados de Gemma: `openpi/LICENSE_GEMMA.txt` dentro del propio repositorio del modelo

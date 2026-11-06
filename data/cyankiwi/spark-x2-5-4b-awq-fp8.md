@@ -6,7 +6,7 @@ Spark-X2.5-4B-AWQ-FP8 es una version cuantizada en FP8 del modelo XHToken/Spark-
 
 La relevancia de esta publicacion concreta es de despliegue: reduce el peso del repositorio a 4,45 GB en safetensors, lo que permite servir un modelo de 4B en GPUs de gama media o incluso consumer con cuantizacion FP8, manteniendo la licencia Apache-2.0 del modelo original. La model card del repositorio base declara una arquitectura de atencion hibrida (una capa de atencion completa por cada tres de ventana deslizante), una ventana de contexto nativa de hasta 1.000.000 de tokens y compatibilidad con vLLM, SGLang, llama.cpp, MLX, Ollama y LM Studio.
 
-El repositorio no incluye resultados de benchmarks numericos ni detalle de la composicion del dataset; la informacion disponible se limita a la model card del autor de la cuantizacion y a los metadatos de HuggingFace. Se trata, ademas, de una publicacion con 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad sobre la fidelidad de la cuantizacion.
+El repositorio no incluye resultados de benchmarks numericos ni detalle de la composicion del dataset; la informacion disponible se limita a la model card del autor de la cuantizacion y a los metadatos de Hugging Face. Se trata, ademas, de una publicacion con 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad sobre la fidelidad de la cuantizacion.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ Comparativa de rendimiento (MMLU, HumanEval, GSM8K u otros): no disponible.
 - Riesgo de alucinacion inherente a los LLM de 4B, especialmente en tareas de razonamiento complejo, matematicas avanzadas y conocimiento factual especializado.
 - La calibracion se realizo con un dataset STEM y agentico, por lo que el error de cuantizacion puede ser mayor en dominios conversacionales, creativos o multilingues poco representados en la calibracion.
 - La ventana de 1M tokens esta declarada para la familia Spark-X2.5; no se detalla la configuracion exacta del 4B ni el rendimiento medido a esa longitud. A contextos muy largos, la calidad de recuperacion de informacion suele degradarse.
-- Idiomas: los campos de metadatos de HuggingFace no declaran idiomas; los 10 idiomas confirmados provienen de la model card del autor de la cuantizacion. El soporte real de los mas de 200 idiomas anunciados no esta cuantificado.
+- Idiomas: los campos de metadatos de Hugging Face no declaran idiomas; los 10 idiomas confirmados provienen de la model card del autor de la cuantizacion. El soporte real de los mas de 200 idiomas anunciados no esta cuantificado.
 - El tag `custom_code` implica ejecutar codigo remoto del repositorio con `trust_remote_code=True`; conviene auditar el codigo antes de usarlo en produccion.
 - Licencia Apache-2.0 en el repositorio de cuantizacion, lo que permite uso comercial, pero se recomienda verificar la licencia y los terminos del modelo base XHToken/Spark-X2.5-4B.
 - No se dispone de informacion sobre sesgos, datos de entrenamiento, procedencia del corpus ni evaluaciones de seguridad.

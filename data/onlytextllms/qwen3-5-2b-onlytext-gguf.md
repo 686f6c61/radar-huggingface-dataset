@@ -41,7 +41,7 @@ No hay entrenamiento adicional. La model card indica explícitamente que los pes
 - Modo de respuesta directa sin razonamiento, activable por parámetro, orientado a baja latencia.
 - Inferencia compatible con servidor OpenAI-compatible (`llama-server`), lo que permite integrarlo como backend de chat.
 - Decodificación especulativa con la cabeza MTP embebida, con ganancias medidas de hasta el 10 % en velocidad de generación según cuantización.
-- Compatibilidad declarada con endpoints de HuggingFace para text-generation (etiqueta `endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face para text-generation (etiqueta `endpoints_compatible`).
 - Procesamiento de secuencias largas en la práctica: las pruebas se ejecutaron con ventana de 32.768 tokens y `flash attention` activada.
 - Soporte multimodality: no. El modelo es exclusivamente de texto; los tokens de visión y audio fueron eliminados del tokenizador.
 - Tool calling / function calling: no disponible en la información proporcionada.
@@ -95,7 +95,7 @@ La información proporcionada no incluye comparativas oficiales con otros modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-2B-OnlyText-GGUF (este modelo) | 1,94 B | No disponible | Apache-2.0 | GGUF en HuggingFace; requiere llama.cpp reciente para MTP |
+| Qwen3.5-2B-OnlyText-GGUF (este modelo) | 1,94 B | No disponible | Apache-2.0 | GGUF en Hugging Face; requiere llama.cpp reciente para MTP |
 | Qwen/Qwen3.5-2B (base) | No disponible en la informacion | No disponible | Apache-2.0 | Peso completo en safetensors |
 | OnlyTextLLMs/Qwen3.5-2B-OnlyText | 1,94 B | No disponible | Apache-2.0 | Derivado text-only en safetensors |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache-2.0 | Muy extendido en GGUF y runtimes |
@@ -128,4 +128,4 @@ Comparativa de rendimiento: no disponible. No se han publicado resultados de ben
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - llama.cpp: referencia al commit `f280b26983ad` usado en la conversión y al commit `4f13cb7` como mínimo para soporte MTP; no se proporciona URL directa en la información disponible.
 
-Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces listados proceden de la ficha de HuggingFace y de la model card.
+Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces listados proceden de la ficha de Hugging Face y de la model card.

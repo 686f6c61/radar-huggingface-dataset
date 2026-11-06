@@ -31,7 +31,7 @@ Este repositorio concreto corresponde a una configuracion especifica del suite: 
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer decoder-only causal de estilo OLMo, cargado mediante la implementacion legada `OLMoForCausalLM` que registra el paquete `hf_olmo` sobre `transformers`. La model card no detalla el numero de capas, cabezas de atencion, dimension oculta ni el vocabulario, por lo que esos datos quedan como no disponibles. El repositorio incluye tanto el `config.json` de HuggingFace como el `config.yaml` original de OLMo, que son la fuente autoritativa para esos hiperparametros de arquitectura.
+Se trata de un transformer decoder-only causal de estilo OLMo, cargado mediante la implementacion legada `OLMoForCausalLM` que registra el paquete `hf_olmo` sobre `transformers`. La model card no detalla el numero de capas, cabezas de atencion, dimension oculta ni el vocabulario, por lo que esos datos quedan como no disponibles. El repositorio incluye tanto el `config.json` de Hugging Face como el `config.yaml` original de OLMo, que son la fuente autoritativa para esos hiperparametros de arquitectura.
 
 El entrenamiento es exclusivamente de preentrenamiento sobre `EleutherAI/the_pile_deduplicated` (la version deduplicada del Pile), sin que la model card mencione ninguna fase posterior de ajuste fino supervisado, RLHF, DPO o similares. La cuenta de tokens cuadra con los hiperparametros declarados: 61.046 pasos por 524.288 tokens por paso equivalen a aproximadamente 32.000 millones de tokens. El nombre del repositorio codifica la configuracion completa del experimento (tamano, tokens, batch, LR pico, weight decay y decaimiento de LR), de modo que el suite permite comparaciones controladas variando una sola dimension cada vez.
 
@@ -102,7 +102,7 @@ Frente al suite Pythia, la diferencia principal no es el rendimiento sino el pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs256-lr0.0065-wd0.1-decay0.01
+- Repositorio en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs256-lr0.0065-wd0.1-decay0.01
 - Coleccion GeoLadder (108 modelos del suite): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper en PMLR (ICML 2026, PMLR 306): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv (2602.20433): https://arxiv.org/abs/2602.20433

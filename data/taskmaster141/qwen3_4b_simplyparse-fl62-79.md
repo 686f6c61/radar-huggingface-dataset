@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taskmaster141/qwen3_4b_simplyparse-fl62.79
+- Repositorio Hugging Face: https://huggingface.co/taskmaster141/qwen3_4b_simplyparse-fl62.79
 - Modelo relacionado del mismo autor: https://huggingface.co/taskmaster141/qwen3_4b_simplyparse
 - Otro modelo relacionado: https://huggingface.co/taskmaster141/SimplyParse-qwen3txt-3rdepoch
 - Página del modelo en FriendliAI: https://friendli.ai/models/taskmaster141/qwen3_4b_simplyparse

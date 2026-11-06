@@ -81,13 +81,13 @@ No disponible. Este repositorio no pertenece a la categoria de modelos de lengua
 - El repositorio es una instantanea, no un espejo en vivo: no refleja cambios posteriores en la receta ni en los activos excluidos. Cualquier comparacion con el estado actual del proyecto puede resultar enganosa.
 - Los activos excluidos ("excluded payloads") se distribuyen por separado; el snapshot por si solo es incompleto para reproducir un entrenamiento de principio a fin.
 - Con 0 descargas y 0 likes, el artefacto no cuenta con validacion por parte de la comunidad.
-- Se desconoce la identidad y el contexto del autor (`davidwdw`) mas alla del nombre de usuario en HuggingFace.
+- Se desconoce la identidad y el contexto del autor (`davidwdw`) mas alla del nombre de usuario en Hugging Face.
 - Existe riesgo de confusion con modelos reales si se cataloga sin atender a la descripcion "metadata/code snapshot"; conviene etiquetarlo como artefacto de trazabilidad, no como modelo.
 - El nombre del repositorio incluye una fecha futura (2026-09-25) y un hash de revision; la coherencia entre el nombre y el contenido solo puede comprobarse descargando y verificando los `SHA256SUMS`.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-training-recipe-snapshot-20260925-91315f809ec3
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-training-recipe-snapshot-20260925-91315f809ec3
 - Referencia generica sobre recetas de entrenamiento (contexto, no relacionada directamente con este repositorio): https://www.aimodels.fyi/research-topics/training-recipe
 - Documentacion de recetas de entrenamiento en torchtune de Meta (contexto, no relacionada directamente con este repositorio): https://deepwiki.com/meta-pytorch/torchtune/4-training-recipes
 

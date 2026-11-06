@@ -6,7 +6,7 @@ El modelo `cyttic/hmt-htrvt-stroke1-s42` es un sistema de reconocimiento de text
 
 El modelo se ha entrenado sobre el conjunto `cyttic/hhd-optionb-split`, excluyendo los escritores del conjunto de desarrollo, y se ha evaluado sobre el test HHD Option-B con decodificación greedy y sin modelo de lenguaje. Los resultados reportados son CER 0,0613 y WER 0,2780, lo que lo sitúa como un componente de investigación más que como un producto listo para producción. Su relevancia actual es acotada: sirve como referencia reproducible dentro de una comparativa de aumentación de datos para HTR en hebreo.
 
-La ficha se basa exclusivamente en la información pública disponible en HuggingFace (metadatos, tags y model card). No hay paper, demo ni documentación adicional publicada por el autor en el momento de la consulta.
+La ficha se basa exclusivamente en la información pública disponible en Hugging Face (metadatos, tags y model card). No hay paper, demo ni documentación adicional publicada por el autor en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -66,9 +66,9 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-stroke1-s42 | 13,8 M | No disponible | Hebreo | MIT | HuggingFace |
+| cyttic/hmt-htrvt-stroke1-s42 | 13,8 M | No disponible | Hebreo | MIT | Hugging Face |
 | Otros modelos de la ola `htr-metrics-transfer` | No disponible | No disponible | Hebreo | No disponible | No disponible |
-| Modelos HTR genéricos (p. ej. TrOCR, Kraken) | No disponible en esta ficha | No disponible | Multilingüe / según modelo | Según modelo | HuggingFace / GitHub |
+| Modelos HTR genéricos (p. ej. TrOCR, Kraken) | No disponible en esta ficha | No disponible | Multilingüe / según modelo | Según modelo | Hugging Face / GitHub |
 
 No se dispone de datos de benchmarks de alternativas en la información proporcionada; la comparativa se limita a parámetros, licencia e idioma.
 
@@ -84,6 +84,6 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-stroke1-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-stroke1-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

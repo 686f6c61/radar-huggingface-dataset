@@ -82,7 +82,7 @@ El autor advierte que este adaptador es una ablación y puede ser peor que el mo
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-base-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-base-l5
 - Adaptador SFT previo (requerido): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de Qwen3: https://github.com/QwenLM/Qwen3

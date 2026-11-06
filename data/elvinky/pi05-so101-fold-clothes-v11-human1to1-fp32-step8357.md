@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elvinky/pi05-so101-fold-clothes-v11-human1to1-fp32-step8357 es una política robótica (vision-language-action) publicada en HuggingFace bajo la librería LeRobot, orientada a la tarea concreta de plegar ropa con un brazo SO-101. Se trata de un fine-tune de paso completo en FP32 sobre la política base Travor278/pi05-so101-fold-clothes-jax-v11, que fue convertida previamente de JAX a PyTorch. El modelo tiene 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y ocupa 16,6 GB en el repositorio, coherente con pesos de 32 bits sin cuantizar.
+Elvinky/pi05-so101-fold-clothes-v11-human1to1-fp32-step8357 es una política robótica (vision-language-action) publicada en Hugging Face bajo la librería LeRobot, orientada a la tarea concreta de plegar ropa con un brazo SO-101. Se trata de un fine-tune de paso completo en FP32 sobre la política base Travor278/pi05-so101-fold-clothes-jax-v11, que fue convertida previamente de JAX a PyTorch. El modelo tiene 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y ocupa 16,6 GB en el repositorio, coherente con pesos de 32 bits sin cuantizar.
 
 El problema que aborda es el ajuste fino con intervención humana (esquema tipo DAgger) sobre una política preentrenada: durante el entrenamiento se mezclaron demostraciones originales con segmentos en los que un operador humano corrige al robot en tiempo real. La relevancia actual está en que documenta de forma muy detallada la receta de entrenamiento (LeRobot 0.6.1, 8 GPU A800, 8.357 pasos de optimizador, batch global 64) y publica el manifiesto con SHA256, lo que facilita la reproducibilidad en Investigación robótica.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Elvinky/pi05-so101-fold-clothes-v11-human1to1-fp32-step8357 | 4.143.404.816 | no disponible; horizonte de acción 50 | no disponible | no disponible | HuggingFace, libreria lerobot, FP32 |
-| Travor278/pi05-so101-fold-clothes-jax-v11 (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace; origen JAX de este fine-tune |
+| Elvinky/pi05-so101-fold-clothes-v11-human1to1-fp32-step8357 | 4.143.404.816 | no disponible; horizonte de acción 50 | no disponible | no disponible | Hugging Face, libreria lerobot, FP32 |
+| Travor278/pi05-so101-fold-clothes-jax-v11 (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face; origen JAX de este fine-tune |
 | Otras políticas VLA de robotica (pi0, pi0.5, OpenVLA, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos verificables en la información proporcionada para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -100,7 +100,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elvinky/pi05-so101-fold-clothes-v11-human1to1-fp32-step8357
+- Modelo en Hugging Face: https://huggingface.co/Elvinky/pi05-so101-fold-clothes-v11-human1to1-fp32-step8357
 - Espejo: https://hf-mirror.com/Elvinky/pi05-so101-fold-clothes-v11-human1to1-fp32-step8357
 - Modelo base: https://huggingface.co/Travor278/pi05-so101-fold-clothes-jax-v11
 - Dataset MINT-SJTU/RW-RL-Dataset: https://huggingface.co/datasets/MINT-SJTU/RW-RL-Dataset

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kelvinvoport/classification-tryout` es un repositorio experimental de HuggingFace que contiene una implementacion propia de una arquitectura tipo Blip orientada a tareas de clasificacion. Lo publica el usuario kelvinvoport y su proposito declarado es servir como banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo: segun la propia model card, el checkpoint incluido es una inicializacion valida para "smoke tests" y no un modelo entrenado ni evaluado.
+`kelvinvoport/classification-tryout` es un repositorio experimental de Hugging Face que contiene una implementacion propia de una arquitectura tipo Blip orientada a tareas de clasificacion. Lo publica el usuario kelvinvoport y su proposito declarado es servir como banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo: segun la propia model card, el checkpoint incluido es una inicializacion valida para "smoke tests" y no un modelo entrenado ni evaluado.
 
 El dato mas llamativo es su tamano: el archivo `model.safetensors` contiene 49.600 parametros totales, una cifra muy reducida que contrasta con la etiqueta `Scale: huge` que aparece en la tabla de arquitectura de la model card. El repositorio no declara resultados de benchmarks, no especifica idiomas soportados, no documenta la longitud de contexto y registra cero descargas y cero likes en el momento de la consulta.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kelvinvoport/classification-tryout | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
+| kelvinvoport/classification-tryout | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican modelos comparables en la informacion disponible: se trata de un experimento sin entrenar y de escala minima, por lo que no es equiparable a implementaciones Blip entrenadas ni a clasificadores publicados con metricas verificables. Una comparacion honesta exigiria una linea base de capacidad equivalente entrenada sobre los mismos datos, algo que el propio autor indica que aun no existe.
@@ -82,6 +82,6 @@ No se identifican modelos comparables en la informacion disponible: se trata de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kelvinvoport/classification-tryout
+- Modelo en Hugging Face: https://huggingface.co/kelvinvoport/classification-tryout
 - Repositorio GitHub, paper o demo: no disponible
 - Resultados relevantes de busqueda web: no disponible (la busqueda no devolvio ningun resultado relacionado con el modelo)

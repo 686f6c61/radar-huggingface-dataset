@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B sms-txn (este modelo) | 1.543.714.304 | no disponible | Extraccion de transacciones de SMS bancarios indios | Apache 2.0 | GGUF y MLX 4-bit en HuggingFace |
-| Qwen2.5-1.5B-Instruct (modelo base) | 1.500 millones | no disponible en esta ficha | Asistente conversacional general | Apache 2.0 | Multiples formatos en HuggingFace |
+| Qwen2.5-1.5B sms-txn (este modelo) | 1.543.714.304 | no disponible | Extraccion de transacciones de SMS bancarios indios | Apache 2.0 | GGUF y MLX 4-bit en Hugging Face |
+| Qwen2.5-1.5B-Instruct (modelo base) | 1.500 millones | no disponible en esta ficha | Asistente conversacional general | Apache 2.0 | Multiples formatos en Hugging Face |
 | Alternativas especializadas en extraccion de SMS financieros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros extractores de informacion de la misma categoria en la informacion proporcionada.
@@ -90,5 +90,5 @@ No se dispone de datos de benchmarks comparativos con otros extractores de infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azabdus/qwen2.5-1.5b-sms-txn-GGUF
+- Modelo en Hugging Face: https://huggingface.co/azabdus/qwen2.5-1.5b-sms-txn-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

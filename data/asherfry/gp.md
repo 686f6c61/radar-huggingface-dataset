@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AsherFry/GP` es un repositorio publicado en HuggingFace por el usuario AsherFry, con licencia Apache 2.0 y etiqueta de región `us`. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. No se ha publicado ningún artefacto técnico que permita identificar qué tipo de modelo es (si es un LLM, un modelo de visión, un modelo de procesos gaussianos, etc.). El repositorio no tiene descargas ni likes, y la fecha de creación coincide con la de actualización, lo que sugiere que podría tratarse de un repositorio vacío o un placeholder.
+El modelo `AsherFry/GP` es un repositorio publicado en Hugging Face por el usuario AsherFry, con licencia Apache 2.0 y etiqueta de región `us`. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. No se ha publicado ningún artefacto técnico que permita identificar qué tipo de modelo es (si es un LLM, un modelo de visión, un modelo de procesos gaussianos, etc.). El repositorio no tiene descargas ni likes, y la fecha de creación coincide con la de actualización, lo que sugiere que podría tratarse de un repositorio vacío o un placeholder.
 
 Dado que no existe información técnica verificable, esta ficha se limita a documentar la ausencia de datos y a señalar las limitaciones para cualquier uso práctico. Se recomienda encarecidamente no utilizar este modelo en producción sin antes obtener información adicional del autor o verificar el contenido real del repositorio.
 
@@ -53,5 +53,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AsherFry/GP
+- Repositorio en Hugging Face: https://huggingface.co/AsherFry/GP
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) asociados a este modelo específico.

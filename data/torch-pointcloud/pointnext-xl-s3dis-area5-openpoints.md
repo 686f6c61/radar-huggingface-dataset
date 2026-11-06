@@ -78,7 +78,7 @@ No se han publicado en la información disponible resultados de latencia, throug
 
 | Modelo | Parametros | Dataset / metrica | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pointnext-xl.s3dis-area5.openpoints (este) | 41,7 M | S3DIS Area 5: mIoU 71,24 / OA 90,95 | MIT | HuggingFace, via `torch-pointcloud` |
+| pointnext-xl.s3dis-area5.openpoints (este) | 41,7 M | S3DIS Area 5: mIoU 71,24 / OA 90,95 | MIT | Hugging Face, via `torch-pointcloud` |
 | PointNeXt (variantes S, B, L del repo oficial) | no disponible en la informacion | S3DIS: no disponible en la informacion | MIT (repo original) | GitHub guochengqian/PointNeXt |
 | PointNet++ (linea base previa) | no disponible en la informacion | S3DIS: no disponible en la informacion | no disponible en la informacion | Ampliamente implementado en librerias 3D |
 | Point Transformer V3 u otros transformers de nubes de puntos | no disponible en la informacion | S3DIS: no disponible en la informacion | no disponible en la informacion | Repositorios academicos |
@@ -100,7 +100,7 @@ La información proporcionada no incluye métricas de los modelos alternativos, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnext-xl.s3dis-area5.openpoints
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnext-xl.s3dis-area5.openpoints
 - Paper PointNeXt (NeurIPS 2022): https://arxiv.org/abs/2206.04670
 - Repositorio original PointNeXt: https://github.com/guochengqian/PointNeXt
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -65,7 +65,7 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chennana1028/fastwam-openarm-sbint-delta-step10000
+- Modelo en Hugging Face: https://huggingface.co/chennana1028/fastwam-openarm-sbint-delta-step10000
 - Repositorio upstream de FastWAM: https://github.com/zhujohn9604/FastWAM (también referenciado como https://github.com/yuantianyuan01/FastWAM)
 - Proyecto OpenArm (hardware): https://github.com/enactic/openarm
 - Sitio de OpenArm Cell: https://openarm.dev/

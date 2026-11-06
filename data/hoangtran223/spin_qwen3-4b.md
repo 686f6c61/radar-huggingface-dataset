@@ -70,6 +70,6 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HoangTran223/SPIN_Qwen3-4B
+- Repositorio Hugging Face: https://huggingface.co/HoangTran223/SPIN_Qwen3-4B
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

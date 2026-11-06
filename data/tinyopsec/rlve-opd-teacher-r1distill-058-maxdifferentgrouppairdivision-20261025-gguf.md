@@ -35,7 +35,7 @@ Respecto al entrenamiento, la model card del repositorio GGUF no aporta detalles
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles (no se declaran idiomas).
 - Capacidades especiales (vision, audio, thinking mode): no disponibles.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que indica que puede servirse mediante APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que indica que puede servirse mediante APIs compatibles con el formato de Hugging Face.
 
 ## Casos de uso
 
@@ -85,7 +85,7 @@ Nota: los datos de contexto y licencia de los modelos comparativos provienen de 
 - Riesgo de alucinacion inherente a modelos pequenos (1,78 B) y a la cuantizacion agresiva (Q2_K, Q3_K_S pueden degradar notablemente la coherencia).
 - La licencia MIT permite uso comercial sin restricciones, pero al ser un modelo derivado conviene verificar la licencia del modelo base original (tambien MIT segun la model card).
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad; no hay evidencia de uso en produccion.
-- El tag `endpoints_compatible` sugiere compatibilidad con la API de HuggingFace, pero no se detalla que endpoints concretos estan soportados.
+- El tag `endpoints_compatible` sugiere compatibilidad con la API de Hugging Face, pero no se detalla que endpoints concretos estan soportados.
 - No hay informacion sobre la longitud de contexto efectiva; asumir contextos largos puede provocar fallos silenciosos.
 
 ## Enlaces

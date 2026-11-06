@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quill Label Extractor es un artefacto publicado en HuggingFace por el usuario SOTAagi2030 bajo el identificador SOTAagi2030/Quill-Label-Extractor-Release. Se distribuye en formato ONNX y, según los datos de su propia model card, su función es la extracción de etiquetas dentro de un esquema de evaluación denominado label-spec/5. La model card no documenta la arquitectura interna, el número de parámetros, la composición del dataset de entrenamiento ni el procedimiento de ajuste.
+Quill Label Extractor es un artefacto publicado en Hugging Face por el usuario SOTAagi2030 bajo el identificador SOTAagi2030/Quill-Label-Extractor-Release. Se distribuye en formato ONNX y, según los datos de su propia model card, su función es la extracción de etiquetas dentro de un esquema de evaluación denominado label-spec/5. La model card no documenta la arquitectura interna, el número de parámetros, la composición del dataset de entrenamiento ni el procedimiento de ajuste.
 
 La única información cuantitativa publicada es la tabla incluida en la propia model card: el candidato "quill" declara una precisión mínima del 93 %, 9 falsos positivos totales y una huella de 20 MB. La misma tarjeta fija una fecha de corte de revisión en 2026-08-20T23:59:59Z y un criterio de ordenación por precisión mínima descendente, falsos positivos ascendentes, footprint ascendente e identificador de candidato ascendente. Se trata, por tanto, de una entrada de un proceso de selección comparativa entre candidatos, no de una ficha técnica descriptiva.
 
@@ -26,7 +26,7 @@ En el momento de la consulta el repositorio acumulaba 0 descargas y 0 "likes", y
 | Falsos positivos declarados | 9 |
 | Identificador de candidato | quill |
 | Fecha de corte de revision | 2026-08-20T23:59:59Z |
-| Fecha de creacion en HuggingFace | 2026-10-13 |
+| Fecha de creacion en Hugging Face | 2026-10-13 |
 | Ultima actualizacion | 2026-10-13 |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Quill Label Extractor | No disponible | No disponible | 93 % de precision minima declarada, 9 falsos positivos, 20 MB | No disponible | ONNX en HuggingFace |
+| Quill Label Extractor | No disponible | No disponible | 93 % de precision minima declarada, 9 falsos positivos, 20 MB | No disponible | ONNX en Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,10 +99,10 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 - Ambiguedad del 9 de falsos positivos: se desconoce si es un total absoluto sobre un conjunto pequeno o una media, lo que cambia por completo la interpretacion del rendimiento.
 - Adopcion nula: 0 descargas y 0 "likes" en el momento de la consulta implican ausencia de validacion independiente por parte de la comunidad.
 - Fecha de corte futura: la model card fija un corte de revision en 2026-08-20T23:59:59Z, posterior a su fecha de creacion; conviene aclarar a que proceso corresponde ese corte antes de tratarlo como garantia de vigencia.
-- Sin pipeline declarado: HuggingFace no asigna tarea al repositorio, de modo que el comportamiento esperado debe inferirse del nombre y de la tabla de la model card.
+- Sin pipeline declarado: Hugging Face no asigna tarea al repositorio, de modo que el comportamiento esperado debe inferirse del nombre y de la tabla de la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOTAagi2030/Quill-Label-Extractor-Release
+- Modelo en Hugging Face: https://huggingface.co/SOTAagi2030/Quill-Label-Extractor-Release
 - Model card (texto integrado en el repositorio): https://huggingface.co/SOTAagi2030/Quill-Label-Extractor-Release/blob/main/README.md
 - No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

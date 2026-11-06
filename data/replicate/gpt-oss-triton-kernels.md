@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/gpt-oss-triton-kernels` no es un modelo de lenguaje, sino un repositorio de kernels de computo (operadores de bajo nivel) implementados en Triton y empaquetados para la libreria `kernels` de HuggingFace. El repositorio lo publica la cuenta de Replicate y deriva del repositorio original `kernels-community/gpt-oss-triton-kernels`, cuyo card fue generado automaticamente por el Hub. Su licencia es MIT y fue creado y actualizado el 16 de septiembre de 2026.
+`replicate/gpt-oss-triton-kernels` no es un modelo de lenguaje, sino un repositorio de kernels de computo (operadores de bajo nivel) implementados en Triton y empaquetados para la libreria `kernels` de Hugging Face. El repositorio lo publica la cuenta de Replicate y deriva del repositorio original `kernels-community/gpt-oss-triton-kernels`, cuyo card fue generado automaticamente por el Hub. Su licencia es MIT y fue creado y actualizado el 16 de septiembre de 2026.
 
 El artefacto expone funciones orientadas a la inferencia eficiente de la familia gpt-oss: `matmul_ogs` (multiplicacion de matrices con puerta de salida y scatter, tipica de las capas de mezcla de expertos), `swiglu` (activacion), `routing` (enrutado de tokens a expertos) y utilidades auxiliares como `tensor`, `tensor_details` y `numerics_details`. Por los nombres de las funciones, el paquete cubre las operaciones criticas del camino de expertos de un transformer MoE, no la generacion de texto en si.
 
-Es relevante ahora porque HuggingFace ha anunciado que a partir del 13 de septiembre de 2026 eliminara los repositorios de kernels publicados con el tipo "model"; el consumo correcto de este artefacto pasa por usar una version reciente de la libreria `kernels` a traves de `get_kernel`. No hay pipeline, idiomas, parametros ni benchmarks declarados en la informacion disponible.
+Es relevante ahora porque Hugging Face ha anunciado que a partir del 13 de septiembre de 2026 eliminara los repositorios de kernels publicados con el tipo "model"; el consumo correcto de este artefacto pasa por usar una version reciente de la libreria `kernels` a traves de `get_kernel`. No hay pipeline, idiomas, parametros ni benchmarks declarados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -93,9 +93,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/replicate/gpt-oss-triton-kernels
+- Hugging Face: https://huggingface.co/replicate/gpt-oss-triton-kernels
 - Repositorio de origen citado en el card: https://huggingface.co/kernels-community/gpt-oss-triton-kernels
-- Libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels
+- Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Incidencias sobre la retirada de repositorios de kernels: https://github.com/huggingface/kernels/issues/new
 - Replicate: https://replicate.com/
 - Replicate (explorador de modelos): https://replicate.com/explore

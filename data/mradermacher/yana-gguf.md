@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YaNA-GGUF es la distribucion en formato GGUF del modelo YaNA, desarrollado originalmente por RuCoverLAB y cuantizado por el usuario mradermacher. Se trata de un repositorio de cuantizaciones estaticas generadas a partir de los pesos originales publicados en HuggingFace, pensado para facilitar la inferencia local mediante herramientas compatibles con el formato GGUF (llama.cpp, Ollama, LM Studio, entre otras).
+YaNA-GGUF es la distribucion en formato GGUF del modelo YaNA, desarrollado originalmente por RuCoverLAB y cuantizado por el usuario mradermacher. Se trata de un repositorio de cuantizaciones estaticas generadas a partir de los pesos originales publicados en Hugging Face, pensado para facilitar la inferencia local mediante herramientas compatibles con el formato GGUF (llama.cpp, Ollama, LM Studio, entre otras).
 
 El repositorio no aporta informacion sobre la arquitectura, el tamano, el contexto ni el proceso de entrenamiento del modelo original; la model card se limita a indicar que se trata de cuantizaciones estaticas del modelo base de RuCoverLAB. La relevancia de esta ficha es, por tanto, limitada: sirve como punto de entrada para localizar los pesos cuantizados, pero cualquier evaluacion tecnica debe remitirse al repositorio original del modelo.
 
@@ -23,7 +23,7 @@ La fecha de creacion del repositorio es el 4 de noviembre de 2026, con actualiza
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo original YaNA en los datos disponibles. El repositorio unicamente documenta metadatos del proceso de cuantizacion: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos se convirtieron desde un checkpoint en formato HuggingFace y se cuantizaron de forma estatica en una sola pasada.
+No se ha publicado informacion sobre la arquitectura del modelo original YaNA en los datos disponibles. El repositorio unicamente documenta metadatos del proceso de cuantizacion: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos se convirtieron desde un checkpoint en formato Hugging Face y se cuantizaron de forma estatica en una sola pasada.
 
 No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas asociadas al modelo base. Toda esta informacion deberia consultarse en https://huggingface.co/RuCoverLAB/YaNA.
 

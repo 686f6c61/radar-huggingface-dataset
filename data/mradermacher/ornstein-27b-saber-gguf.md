@@ -92,7 +92,7 @@ No se dispone de informacion sobre otros modelos de 27B comparables en la docume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Ornstein-27B-SABER-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ornstein-27B-SABER-GGUF
 - Modelo base: https://huggingface.co/DJLougen/Ornstein-27B-SABER
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Ornstein-27B-SABER-i1-GGUF
 - Pagina resumen de descargas del autor: https://hf.tst.eu/model#Ornstein-27B-SABER-GGUF

@@ -96,10 +96,10 @@ Tiel-Coder es el mejor de su clase (MoE 35B-A3B) en tareas de codificacion agent
 
 ## Enlaces
 
-- Repositorio HuggingFace (MLX oQ4e): https://huggingface.co/npario/Tiel-Coder-35B-A3B-MLX-oQ4e
-- Repositorio HuggingFace (GGUF): https://huggingface.co/npario/Tiel-Coder-35B-A3B-GGUF
-- Repositorio HuggingFace (MLX oQ4e, autor original): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e
-- Repositorio HuggingFace (MLX oQ4e con MTP): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
+- Repositorio Hugging Face (MLX oQ4e): https://huggingface.co/npario/Tiel-Coder-35B-A3B-MLX-oQ4e
+- Repositorio Hugging Face (GGUF): https://huggingface.co/npario/Tiel-Coder-35B-A3B-GGUF
+- Repositorio Hugging Face (MLX oQ4e, autor original): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e
+- Repositorio Hugging Face (MLX oQ4e con MTP): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Plantilla Sharp: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
 - Benchmark oMLX (M5 Max): https://omlx.ai/benchmarks/performance/v0vqpewy

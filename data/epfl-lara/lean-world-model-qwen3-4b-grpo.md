@@ -65,8 +65,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EPFL-LARA/lean-world-model-qwen3-4b-grpo | 4,4 B (denso) | 32.768 tokens | No disponible | HuggingFace (safetensors) |
-| Qwen/Qwen3-4B-Base (modelo base) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
+| EPFL-LARA/lean-world-model-qwen3-4b-grpo | 4,4 B (denso) | 32.768 tokens | No disponible | Hugging Face (safetensors) |
+| Qwen/Qwen3-4B-Base (modelo base) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
 | Otros demostradores de Lean comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - No se publican pesos cuantizados, lo que puede limitar el despliegue en hardware con poca VRAM.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/lean-world-model-qwen3-4b-grpo
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/lean-world-model-qwen3-4b-grpo
 - Coleccion "Formal Theorem Proving with Lean World Models": https://huggingface.co/collections/EPFL-LARA/formal-theorem-proving-with-lean-world-models-6ad2b4aa4400b3e2933f380d
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de preentrenamiento continuado: EPFL-LARA/lean-world-model-cpt

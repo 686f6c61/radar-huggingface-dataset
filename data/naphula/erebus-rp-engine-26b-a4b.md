@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Erebus-RP-Engine-26B-A4B es un modelo de lenguaje de 26.000 millones de parámetros publicado por el usuario Naphula en HuggingFace, especializado en escritura creativa, narrativa de ficción y roleplay (RP). Se trata de un merge de modelos construido con mergekit y mergekit-exp sobre seis modelos base de la familia Gemma 4 de 26B con arquitectura MoE (26B-A4B), entre ellos Goetia-26B-A4B-v1.7, Gemory-26B-A4B-SOMPOA, Gemma-4-Vain-26B-A4B, Wicked-Stuff-26B-A4B-v3.0-Final, Dark-Craving-26B-A4B-v0.1 y Kitchoon-V3-26B-A4B. El objetivo declarado es ofrecer generación de prosa vívida, tramas y sub-tramas, continuaciones de escena y conversaciones de rol sin censura, abarcando géneros como terror, romance, suspense y ciencia ficción.
+Erebus-RP-Engine-26B-A4B es un modelo de lenguaje de 26.000 millones de parámetros publicado por el usuario Naphula en Hugging Face, especializado en escritura creativa, narrativa de ficción y roleplay (RP). Se trata de un merge de modelos construido con mergekit y mergekit-exp sobre seis modelos base de la familia Gemma 4 de 26B con arquitectura MoE (26B-A4B), entre ellos Goetia-26B-A4B-v1.7, Gemory-26B-A4B-SOMPOA, Gemma-4-Vain-26B-A4B, Wicked-Stuff-26B-A4B-v3.0-Final, Dark-Craving-26B-A4B-v0.1 y Kitchoon-V3-26B-A4B. El objetivo declarado es ofrecer generación de prosa vívida, tramas y sub-tramas, continuaciones de escena y conversaciones de rol sin censura, abarcando géneros como terror, romance, suspense y ciencia ficción.
 
 El modelo se distribuye con licencia Apache 2.0, en formato safetensors y con la librería transformers, con un repositorio de 52 GB. Su pipeline declarado es image-text-to-text, lo que sugiere que hereda capacidades multimodales de la familia Gemma 4, aunque la model card no detalla el funcionamiento de esa modalidad. Está orientado exclusivamente al inglés y su uso previsto es la escritura creativa y el roleplay, no tareas de razonamiento técnico o código.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Erebus-RP-Engine-26B-A4B | 26B (MoE, activos no disponibles) | no disponible | Apache 2.0 | Escritura creativa y RP sin censura | HuggingFace, safetensors |
-| Naphula/Goetia-26B-A4B-v1.7 | 26B (MoE) | no disponible | no disponible en la información | Modelo base del merge, orientación similar | HuggingFace |
-| ReadyArt/Wicked-Stuff-26B-A4B-v3.0-Final | 26B (MoE) | no disponible | no disponible en la información | Ficción y RP | HuggingFace |
-| SubMaroon/Kitchoon-V3-26B-A4B | 26B (MoE) | no disponible | no disponible en la información | Escritura creativa | HuggingFace |
+| Erebus-RP-Engine-26B-A4B | 26B (MoE, activos no disponibles) | no disponible | Apache 2.0 | Escritura creativa y RP sin censura | Hugging Face, safetensors |
+| Naphula/Goetia-26B-A4B-v1.7 | 26B (MoE) | no disponible | no disponible en la información | Modelo base del merge, orientación similar | Hugging Face |
+| ReadyArt/Wicked-Stuff-26B-A4B-v3.0-Final | 26B (MoE) | no disponible | no disponible en la información | Ficción y RP | Hugging Face |
+| SubMaroon/Kitchoon-V3-26B-A4B | 26B (MoE) | no disponible | no disponible en la información | Escritura creativa | Hugging Face |
 
 La comparativa se limita a los modelos base del propio merge, ya que no se dispone de datos de benchmarks ni de especificaciones de contexto que permitan contrastar con alternativas de otros autores.
 
@@ -88,7 +88,7 @@ La comparativa se limita a los modelos base del propio merge, ya que no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Naphula/Erebus-RP-Engine-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/Naphula/Erebus-RP-Engine-26B-A4B
 - Modelo base Goetia-26B-A4B-v1.7: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.7
 - Modelo base Gemory-26B-A4B-SOMPOA: https://huggingface.co/26B-Suite/Gemory-26B-A4B-SOMPOA
 - Modelo base Gemma-4-Vain-26B-A4B-GGUF: https://huggingface.co/Ozili/Gemma-4-Vain-26B-A4B-GGUF

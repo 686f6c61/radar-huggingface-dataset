@@ -4,7 +4,7 @@
 
 trialspec-qwen2.5-1.5b-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario umairishuman sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion entrenados mediante PEFT que deben cargarse junto al modelo base para poder utilizarse. El repositorio tiene un tamano de 0,1 GB, coherente con un adaptador de bajo rango y no con un modelo de 1.500 millones de parametros.
 
-La relevancia de esta publicacion es limitada desde el punto de vista tecnico: la model card es la plantilla por defecto de HuggingFace sin cumplimentar, sin descripcion del proposito del ajuste, sin datos de entrenamiento, sin evaluacion y sin licencia declarada. El nombre "trialspec" sugiere un experimento o prueba de concepto, pero no hay informacion publica que lo confirme. El modelo base Qwen2.5-1.5B-Instruct, desarrollado por Alibaba Qwen, es un transformer decoder-only de 1.500 millones de parametros con una ventana de contexto de 32.768 tokens y capacidad de generacion de texto conversacional.
+La relevancia de esta publicacion es limitada desde el punto de vista tecnico: la model card es la plantilla por defecto de Hugging Face sin cumplimentar, sin descripcion del proposito del ajuste, sin datos de entrenamiento, sin evaluacion y sin licencia declarada. El nombre "trialspec" sugiere un experimento o prueba de concepto, pero no hay informacion publica que lo confirme. El modelo base Qwen2.5-1.5B-Instruct, desarrollado por Alibaba Qwen, es un transformer decoder-only de 1.500 millones de parametros con una ventana de contexto de 32.768 tokens y capacidad de generacion de texto conversacional.
 
 En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, fue creado el 5 de noviembre de 2026 y no incluye documentacion adicional, demos ni resultados de benchmarks. Cualquier evaluacion de su calidad debe hacerse empiricamente sobre el modelo base con el adaptador cargado.
 
@@ -82,7 +82,7 @@ La comparacion directa con alternativas no es posible en terminos de rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/umairishuman/trialspec-qwen2.5-1.5b-lora
+- Repositorio Hugging Face: https://huggingface.co/umairishuman/trialspec-qwen2.5-1.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

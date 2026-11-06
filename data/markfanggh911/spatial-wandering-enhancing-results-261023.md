@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MarkFangGH911/spatial-wandering-enhancing-results-261023` no es un modelo de IA, sino un repositorio de artefactos publicado en HuggingFace (2,2 GB) que reúne los resultados de un experimento de restauración y superresolución de vídeo. Concretamente, el autor ha pasado 25 vídeos de síntesis de vistas novedosas (novel view synthesis, NVS) generados por AnyRecon —con texturas borrosas o ruidosas, especialmente en vegetación— por dos modelos open source de difusión de vídeo: FlashVSR+ y SeedVR2-3B. El resultado se distribuye como clips MP4 organizados en dos carpetas, junto con comparativas lado a lado, fotogramas intermedios, hojas de contacto y una galería HTML navegable.
+`MarkFangGH911/spatial-wandering-enhancing-results-261023` no es un modelo de IA, sino un repositorio de artefactos publicado en Hugging Face (2,2 GB) que reúne los resultados de un experimento de restauración y superresolución de vídeo. Concretamente, el autor ha pasado 25 vídeos de síntesis de vistas novedosas (novel view synthesis, NVS) generados por AnyRecon —con texturas borrosas o ruidosas, especialmente en vegetación— por dos modelos open source de difusión de vídeo: FlashVSR+ y SeedVR2-3B. El resultado se distribuye como clips MP4 organizados en dos carpetas, junto con comparativas lado a lado, fotogramas intermedios, hojas de contacto y una galería HTML navegable.
 
 El interés del repositorio es, por tanto, documental y comparativo: sirve como evidencia cualitativa de cómo se comportan dos pipelines de restauración de vídeo de un solo paso sobre un mismo conjunto de entradas degradadas. No contiene pesos, checkpoints, código de inferencia ni configuración de entrenamiento, y no ofrece métricas cuantitativas (PSNR, SSIM, LPIPS) ni una descripción del dataset de origen más allá de las dimensiones y la tasa de fotogramas.
 
@@ -105,7 +105,7 @@ Como referencia del material de partida, AnyRecon actúa como generador de las v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MarkFangGH911/spatial-wandering-enhancing-results-261023
+- Repositorio en Hugging Face: https://huggingface.co/MarkFangGH911/spatial-wandering-enhancing-results-261023
 - FlashVSR+ (modelo empleado): https://huggingface.co/OpenImagingLab/FlashVSR_Plus
 - SeedVR / SeedVR2-3B (modelo empleado): https://huggingface.co/ByteDance-Seed/SeedVR
 - AnyRecon (generador de los vídeos de entrada): no disponible en la información proporcionada

@@ -76,7 +76,7 @@ La comparativa se basa en datos publicos de modelos similares; los parametros de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eaddario/Qwen3.8-27B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/eaddario/Qwen3.8-27B-GGUF
 - Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Cuantizacion GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Cuantizacion GGUF de zerodigest: https://huggingface.co/zerodigest/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF

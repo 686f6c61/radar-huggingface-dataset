@@ -107,7 +107,7 @@ Comparativa de rendimiento en benchmarks: no disponible para el modelo Mini-K3; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g8-v2_C
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g8-v2_C
 - Archivos de referencia incluidos en el repositorio (según la model card): `modeling_mini_k3.py`, `configuration_mini_k3.py`, `config.json`, `ARCHITECTURE_PACKAGE_README.md`, `ARCHITECTURE.md`, `VARIANT.md`, `initialize_model.py`, `smoke_test.py`, manifiestos JSON con revisiones de fuentes, cuotas de tokens y hashes de esquema
 - Etiquetas Git relevantes: `checkpoint-tokens-000000000000-init` (estado actual) y `checkpoint-tokens-016000000000-final` (objetivo planificado)
 - Paper, blog, repositorio de experimentos o demo: no disponible en la información proporcionada

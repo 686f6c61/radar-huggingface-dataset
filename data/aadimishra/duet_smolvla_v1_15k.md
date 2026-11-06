@@ -28,7 +28,7 @@ Su relevancia actual es doble: por un lado, demuestra el flujo completo de LeRob
 | Salidas | `action` (8,) |
 | Dataset de entrenamiento | `aadimishra/duet_multitask_language_v1_clean` (60 episodios, 2.519 fotogramas, 20 FPS) |
 | Version de LeRobot | 0.6.2 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `aadimishra/duet_smolvla_v1_15k` | 450 M | no disponible | apache-2.0 | HuggingFace, 0 descargas | Fine-tune sobre SmolVLA base para robot `duet_mujoco` |
-| `lerobot/smolvla_base` | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace (modelo base citado) | Origen del fine-tune; se usa con `policy.path` en LeRobot |
+| `aadimishra/duet_smolvla_v1_15k` | 450 M | no disponible | apache-2.0 | Hugging Face, 0 descargas | Fine-tune sobre SmolVLA base para robot `duet_mujoco` |
+| `lerobot/smolvla_base` | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face (modelo base citado) | Origen del fine-tune; se usa con `policy.path` en LeRobot |
 | Otras politicas VLA (OpenVLA, pi0, entre otras) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | No se aportan datos comparativos en la informacion recibida |
 
 No se dispone de datos verificados de parámetros, contexto, licencia ni rendimiento de alternativas comparables dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. La búsqueda web realizada no devolvió resultados relacionados con este modelo ni con SmolVLA.
@@ -101,7 +101,7 @@ No se dispone de datos verificados de parámetros, contexto, licencia ni rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aadimishra/duet_smolvla_v1_15k
+- Modelo en Hugging Face: https://huggingface.co/aadimishra/duet_smolvla_v1_15k
 - Dataset de entrenamiento: https://huggingface.co/datasets/aadimishra/duet_multitask_language_v1_clean
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=aadimishra/duet_multitask_language_v1_clean
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

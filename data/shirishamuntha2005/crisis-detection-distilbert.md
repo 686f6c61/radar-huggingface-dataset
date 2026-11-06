@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shirishamuntha2005/crisis-detection-distilbert` es un clasificador de texto basado en la arquitectura DistilBERT, diseñado para la detección de situaciones de crisis en contenido textual. Ha sido publicado por el usuario `shirishamuntha2005` en HuggingFace bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas. El modelo cuenta con 66.955.010 parámetros, un tamaño típico de los modelos DistilBERT destilados a partir de BERT-base, y se distribuye en formato safetensors.
+El modelo `shirishamuntha2005/crisis-detection-distilbert` es un clasificador de texto basado en la arquitectura DistilBERT, diseñado para la detección de situaciones de crisis en contenido textual. Ha sido publicado por el usuario `shirishamuntha2005` en Hugging Face bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas. El modelo cuenta con 66.955.010 parámetros, un tamaño típico de los modelos DistilBERT destilados a partir de BERT-base, y se distribuye en formato safetensors.
 
 A pesar de su nombre y finalidad declarada, la información pública disponible es extremadamente escasa: no se especifican los datos de entrenamiento, el dominio de aplicación concreto (por ejemplo, redes sociales, noticias, mensajes de emergencia), ni las métricas de rendimiento. El repositorio no presenta descargas ni valoraciones, lo que sugiere que es un proyecto reciente o de carácter experimental. Su relevancia actual radica en la creciente necesidad de herramientas de análisis automático de crisis para respuesta humanitaria y monitoreo de redes sociales, aunque su utilidad práctica no puede evaluarse sin datos adicionales.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - El modelo tiene 66.955.010 parámetros. En precisión FP32, el peso ocuparía aproximadamente 268 MB (66,9 M × 4 bytes). El repositorio ocupa 0,3 GB, lo que sugiere pesos en FP32 o FP16.
 - Para inferencia en CPU: es viable con 4-8 GB de RAM, aunque la latencia dependerá del hardware. Un procesador moderno puede procesar decenas de secuencias por segundo.
 - Para inferencia en GPU: cabe en GPUs con 2 GB de VRAM o más, como una NVIDIA GTX 1650 o superior. Una RTX 3060 o similar ofrecería un throughput alto.
-- Opciones de despliegue: al ser un modelo Transformers estándar, puede servirse con HuggingFace Transformers, ONNX Runtime, TensorRT o soluciones como vLLM (aunque vLLM está más orientado a generación, también soporta clasificación). También se puede convertir a ONNX o TensorFlow Lite para edge.
+- Opciones de despliegue: al ser un modelo Transformers estándar, puede servirse con Hugging Face Transformers, ONNX Runtime, TensorRT o soluciones como vLLM (aunque vLLM está más orientado a generación, también soporta clasificación). También se puede convertir a ONNX o TensorFlow Lite para edge.
 - No se dispone de datos de latencia o throughput medidos.
 
 ## Comparativa con modelos similares
@@ -70,4 +70,4 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - shirishamuntha2005/crisis-detection-distilbert](https://huggingface.co/shirishamuntha2005/crisis-detection-distilbert)
+- [Hugging Face - shirishamuntha2005/crisis-detection-distilbert](https://huggingface.co/shirishamuntha2005/crisis-detection-distilbert)

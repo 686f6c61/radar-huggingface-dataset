@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Synin-1.0-Omni es un modelo multimodal de la familia Synin publicado por el usuario Nocodedev0 en HuggingFace. Segun las etiquetas del repositorio, se trata de un modelo any-to-any construido sobre una arquitectura de tipo `qwen3_omni_moe`, lo que sugiere un transformer con mezcla de expertos (MoE) orientado a tareas multimodales que incluyen generacion de audio a partir de texto (text-to-audio) y procesamiento conjunto de varias modalidades. El repositorio usa la libreria `transformers` y pesos en formato safetensors, y esta marcado como compatible con endpoints.
+Synin-1.0-Omni es un modelo multimodal de la familia Synin publicado por el usuario Nocodedev0 en Hugging Face. Segun las etiquetas del repositorio, se trata de un modelo any-to-any construido sobre una arquitectura de tipo `qwen3_omni_moe`, lo que sugiere un transformer con mezcla de expertos (MoE) orientado a tareas multimodales que incluyen generacion de audio a partir de texto (text-to-audio) y procesamiento conjunto de varias modalidades. El repositorio usa la libreria `transformers` y pesos en formato safetensors, y esta marcado como compatible con endpoints.
 
 El modelo se publica sin documentacion tecnica asociada en la informacion disponible: no hay model card detallada, no se especifican parametros totales ni activos, no se declara la longitud de contexto y la licencia aparece como "other" sin texto asociado. Tampoco se han registrado descargas ni likes en el momento de la consulta, lo que indica que es un lanzamiento muy reciente y practicamente sin adopcion.
 
@@ -33,7 +33,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: se desconoce el volum
 - Generacion de audio a partir de texto (etiqueta `text-to-audio`).
 - Procesamiento multimodal y any-to-any: el pipeline declarado es `any-to-any`, lo que sugiere capacidad de aceptar y producir mas de una modalidad.
 - Posible soporte de vision y audio derivado de la arquitectura `qwen3_omni_moe`, aunque no esta confirmado en la informacion disponible.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que indica que el repositorio esta preparado para despliegues gestionados de HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que indica que el repositorio esta preparado para despliegues gestionados de Hugging Face.
 - Soporte de tool calling, agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingues adicionales al ingles: no disponibles.
 - Modos especiales (thinking mode, audio nativo bidireccional, etc.): no disponibles.
@@ -44,7 +44,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: se desconoce el volum
 - Asistentes multimodales experimentales: el caracter any-to-any permitiria prototipar interfaces que reciban y devuelvan modalidades distintas, siempre que se valide primero el comportamiento real del modelo.
 - Investigacion sobre arquitecturas MoE multimodales: util como objeto de estudio comparativo frente a otros modelos con mezcla de expertos, dado que comparte etiqueta con la familia Qwen3-Omni.
 - Pruebas de pipelines `transformers` con safetensors: el repositorio puede servir para verificar integraciones de carga de pesos y ejecucion de un modelo any-to-any en ese ecosistema.
-- Despliegue en endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de HuggingFace para pruebas controladas.
+- Despliegue en endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de Hugging Face para pruebas controladas.
 - Fines educativos: analisis de como se estructura un repositorio multimodal reciente y de las limitaciones de publicar sin model card.
 - Produccion real: no recomendable en el estado actual, ya que no hay especificaciones, benchmarks ni licencia clara.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Synin-1.0-Omni (Nocodedev0) | no disponible | no disponible | other (sin texto) | HuggingFace, 0 descargas |
-| Synin-V1-Pro-RL (Aidev2006) | no disponible | no disponible | no disponible | HuggingFace, repositorio separado |
+| Synin-1.0-Omni (Nocodedev0) | no disponible | no disponible | other (sin texto) | Hugging Face, 0 descargas |
+| Synin-V1-Pro-RL (Aidev2006) | no disponible | no disponible | no disponible | Hugging Face, repositorio separado |
 | Qwen3-Omni-MoE (familia de referencia) | no disponible | no disponible | no disponible | Referencia arquitectonica citada en las etiquetas |
 
 No se dispone de datos suficientes para establecer una comparativa tecnica rigurosa con alternativas de la misma categoria.
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para establecer una comparativa tecnica rigur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nocodedev0/Synin-1.0-Omni
+- Hugging Face: https://huggingface.co/Nocodedev0/Synin-1.0-Omni
 - Repositorio relacionado de la familia Synin: https://huggingface.co/Aidev2006/Synin-V1-Pro-RL
 - GitHub OmniRoute (no directamente relacionado): https://github.com/diegosouzapw/OmniRoute
 - GitHub LynnReal-Omni (no directamente relacionado): https://github.com/LynnReal-AI/LynnReal-Omni

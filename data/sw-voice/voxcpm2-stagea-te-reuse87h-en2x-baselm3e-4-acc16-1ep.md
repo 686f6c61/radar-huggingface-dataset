@@ -6,7 +6,7 @@ VoxCPM2 Stage A TE es un modelo de síntesis de voz (text-to-speech) desarrollad
 
 El modelo cuenta con 2.290.004.544 parámetros (~2,29 mil millones) en formato safetensors, con un repositorio de 37 GB, lo que sugiere la presencia de múltiples checkpoints intermedios (25/50/75% de la época) además de los pesos finales. Está liberado bajo licencia Apache 2.0, lo que permite uso comercial, aunque la model card lo etiqueta explícitamente como "research".
 
-Se trata de un fine-tune de una sola época (385 pasos) sobre un corpus de 87,1 horas de telugu más aproximadamente 3 horas de inglés duplicadas, entrenado con el trainer oficial de VoxCPM. Su naturaleza experimental y el hecho de tener cero descargas y cero likes en HuggingFace lo sitúan como un artefacto de investigación más que como un modelo listo para producción.
+Se trata de un fine-tune de una sola época (385 pasos) sobre un corpus de 87,1 horas de telugu más aproximadamente 3 horas de inglés duplicadas, entrenado con el trainer oficial de VoxCPM. Su naturaleza experimental y el hecho de tener cero descargas y cero likes en Hugging Face lo sitúan como un artefacto de investigación más que como un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep | ~2,29 B | no disponible | en, te, kn | Apache 2.0 | HuggingFace (0 descargas) |
-| sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep | ~2,29 B | no disponible | en, te, kn | Apache 2.0 | Hugging Face (0 descargas) |
+| sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de TTS multilingüe (p. ej. XTTS, Bark, VITS) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
 - Dataset de entrenamiento (telugu): sw-voice/swamiji-telugu-reuse-train (referenciado en la model card; URL no proporcionada)
 - Dataset de entrenamiento (inglés): sw-voice/swamiji-voice-sft-reuse (referenciado en la model card; URL no proporcionada)

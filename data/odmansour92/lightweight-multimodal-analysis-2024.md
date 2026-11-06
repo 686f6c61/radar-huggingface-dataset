@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`odmansour92/lightweight-multimodal-analysis-2024` no es un modelo entrenado, sino un repositorio de notas de investigación (research notes) publicado en HuggingFace bajo licencia MIT. Su artefacto principal es `paper_notes.md`, un documento que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre el tema «Lightweight Multimodal». El propio autor indica de forma explícita que no se presenta como un artículo completado ni como una release de modelos entrenados.
+`odmansour92/lightweight-multimodal-analysis-2024` no es un modelo entrenado, sino un repositorio de notas de investigación (research notes) publicado en Hugging Face bajo licencia MIT. Su artefacto principal es `paper_notes.md`, un documento que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre el tema «Lightweight Multimodal». El propio autor indica de forma explícita que no se presenta como un artículo completado ni como una release de modelos entrenados.
 
-El repositorio incluye etiquetas de HuggingFace propias de un transformer (`safetensors`, `transformer`, `research-notes`, `lightweight-multimodal`), pero no hay model card con descripción de arquitectura, tokenizador, configuración de entrenamiento ni resultados. El único dato cuantitativo verificable es el recuento de parámetros del artefacto safetensors: 16.576 parámetros totales, con un tamaño de repositorio de 0,0 GB, lo que corresponde a un fichero de pesos residual o de prueba, no a un modelo funcional. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+El repositorio incluye etiquetas de Hugging Face propias de un transformer (`safetensors`, `transformer`, `research-notes`, `lightweight-multimodal`), pero no hay model card con descripción de arquitectura, tokenizador, configuración de entrenamiento ni resultados. El único dato cuantitativo verificable es el recuento de parámetros del artefacto safetensors: 16.576 parámetros totales, con un tamaño de repositorio de 0,0 GB, lo que corresponde a un fichero de pesos residual o de prueba, no a un modelo funcional. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Por tanto, su relevancia no es la de un modelo desplegable, sino la de un artefacto documental: sirve como punto de partida para planificar un estudio sobre multimodalidad ligera, con secciones que exigen explícitamente versiones de dataset, comandos, semillas, hardware y logs en bruto antes de aceptar cualquier resultado. Cualquier uso como modelo de inferencia carece de base técnica en la información disponible.
 
@@ -86,7 +86,7 @@ No disponible. No existen modelos comparables en la información proporcionada, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/odmansour92/lightweight-multimodal-analysis-2024
+- Repositorio en Hugging Face: https://huggingface.co/odmansour92/lightweight-multimodal-analysis-2024
 - `paper_notes.md` (artefacto principal del repositorio; accesible desde la pestaña Files del repositorio anterior)
 - `README.md` (documentación del repositorio; accesible desde la misma URL)
 - Paper, blog, repositorio de código o demo adicionales: no disponibles. La búsqueda web realizada no devolvió ningún enlace relacionado con este repositorio o su temática.

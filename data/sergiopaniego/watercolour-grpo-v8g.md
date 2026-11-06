@@ -71,7 +71,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sergiopaniego/watercolour-grpo-v8g
+- Hugging Face: https://huggingface.co/sergiopaniego/watercolour-grpo-v8g
 - Space TrackIO (dashboard de entrenamiento): https://huggingface.co/spaces/sergiopaniego/watercolour-grpo-smoke
 - Paper DeepSeekMath (GRPO): https://huggingface.co/papers/2402.03300
 - GitHub del autor: https://github.com/sergiopaniego

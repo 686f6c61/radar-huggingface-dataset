@@ -6,7 +6,7 @@ potion-8m-edu-classifier es un clasificador de contenido educativo construido so
 
 La relevancia del modelo esta en su coste computacional: frente al clasificador original basado en un transformer, este modelo logra un F1 macro de 0,79 en modo binario (frente a 0,81 del original) con una velocidad orders of magnitude superior en CPU. Esto lo hace adecuado para filtrar grandes volumenes de texto (miles de millones de documentos) en pipelines de curacion de datasets, donde el coste por documento es el factor limitante.
 
-El modelo solo soporta ingles, se distribuye con licencia MIT y esta etiquetado para la libreria model2vec. Incluye un tokenizador precompilado de tokie (tokenizer.tkz) que, segun el autor, ofrece una tokenizacion 5 veces mas rapida y es un reemplazo directo de los tokenizers de HuggingFace.
+El modelo solo soporta ingles, se distribuye con licencia MIT y esta etiquetado para la libreria model2vec. Incluye un tokenizador precompilado de tokie (tokenizer.tkz) que, segun el autor, ofrece una tokenizacion 5 veces mas rapida y es un reemplazo directo de los tokenizers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El modelo solo soporta ingles, se distribuye con licencia MIT y esta etiquetado 
 
 Model2Vec es una tecnica de destilacion que convierte un sentence transformer en una tabla de embeddings estaticos por token, eliminando las capas de atencion y las operaciones matriciales por token en tiempo de inferencia. La representacion de una frase se obtiene promediando (o combinando) los embeddings de sus tokens, lo que reduce el coste a una simple operacion de lookup y pooling. El modelo base es minishlab/potion-base-8M, un modelo estatico de 8 millones de parametros entrenado por Minish.
 
-El fine-tune se realizo sobre el dataset HuggingFaceFW/fineweb-edu-llama3-annotations, que contiene anotaciones de calidad educativa generadas con Llama 3 sobre documentos de FineWeb-Edu. El objetivo es una clasificacion en 6 niveles (0 a 5) de calidad educativa, analogo al fineweb-edu-classifier. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; al tratarse de un clasificador, lo habitual seria entrenamiento supervisado con cross-entropy sobre las etiquetas anotadas. El modelo incluye un tokenizador precompilado de tokie que el autor presenta como reemplazo directo de los tokenizers de HuggingFace con una tokenizacion 5 veces mas rapida.
+El fine-tune se realizo sobre el dataset HuggingFaceFW/fineweb-edu-llama3-annotations, que contiene anotaciones de calidad educativa generadas con Llama 3 sobre documentos de FineWeb-Edu. El objetivo es una clasificacion en 6 niveles (0 a 5) de calidad educativa, analogo al fineweb-edu-classifier. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; al tratarse de un clasificador, lo habitual seria entrenamiento supervisado con cross-entropy sobre las etiquetas anotadas. El modelo incluye un tokenizador precompilado de tokie que el autor presenta como reemplazo directo de los tokenizers de Hugging Face con una tokenizacion 5 veces mas rapida.
 
 ## Capacidades
 
@@ -92,9 +92,9 @@ Comparacion con el clasificador original: el fineweb-edu-classifier obtiene un F
 
 | Modelo | Parametros | Arquitectura | Contexto | F1 macro binario | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tokiers/potion-8m-edu-classifier | 7.559.168 | Model2Vec (estatico) | no disponible | 0,79 | MIT | HuggingFace |
-| HuggingFaceFW/fineweb-edu-classifier | no disponible en la informacion | Transformer (clasificador) | no disponible | 0,81 | no disponible en la informacion | HuggingFace |
-| minishlab/potion-base-8M | ~8 M | Model2Vec (estatico) | no disponible | no aplica (no es clasificador) | no disponible en la informacion | HuggingFace |
+| tokiers/potion-8m-edu-classifier | 7.559.168 | Model2Vec (estatico) | no disponible | 0,79 | MIT | Hugging Face |
+| HuggingFaceFW/fineweb-edu-classifier | no disponible en la informacion | Transformer (clasificador) | no disponible | 0,81 | no disponible en la informacion | Hugging Face |
+| minishlab/potion-base-8M | ~8 M | Model2Vec (estatico) | no disponible | no aplica (no es clasificador) | no disponible en la informacion | Hugging Face |
 
 El clasificador original de FineWeb-Edu ofrece una precision ligeramente superior (0,81 frente a 0,79 de F1 macro binario) a costa de un coste computacional mucho mayor. potion-base-8M es el modelo base sobre el que se construye este fine-tune y no es un clasificador, sino un generador de embeddings estaticos de proposito general.
 
@@ -111,7 +111,7 @@ El clasificador original de FineWeb-Edu ofrece una precision ligeramente superio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tokiers/potion-8m-edu-classifier
+- Modelo en Hugging Face: https://huggingface.co/tokiers/potion-8m-edu-classifier
 - Modelo base: https://huggingface.co/minishlab/potion-base-8M
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec
 - Repositorio tokie: https://github.com/chonkie-inc/tokie

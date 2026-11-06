@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Hahaaiiscool/Laguna` es una publicación en HuggingFace del autor "Hahaaiiscool", registrada con la licencia *unlicense* y etiquetada con `region:us`. La model card no contiene ninguna información técnica adicional: no se especifican arquitectura, número de parámetros, contexto, idiomas soportados, ni ningún otro dato relevante. El repositorio tiene cero descargas y cero likes, lo que sugiere que es una publicación reciente o sin difusión. En el momento de la consulta, no existe información pública que permita describir las capacidades, el entrenamiento o los casos de uso de este modelo. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables, sin especular sobre características no documentadas.
+El modelo identificado como `Hahaaiiscool/Laguna` es una publicación en Hugging Face del autor "Hahaaiiscool", registrada con la licencia *unlicense* y etiquetada con `region:us`. La model card no contiene ninguna información técnica adicional: no se especifican arquitectura, número de parámetros, contexto, idiomas soportados, ni ningún otro dato relevante. El repositorio tiene cero descargas y cero likes, lo que sugiere que es una publicación reciente o sin difusión. En el momento de la consulta, no existe información pública que permita describir las capacidades, el entrenamiento o los casos de uso de este modelo. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables, sin especular sobre características no documentadas.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. Al no existir especificaciones tecnicas, no se puede establecer u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Hahaaiiscool/Laguna](https://huggingface.co/Hahaaiiscool/Laguna)
+- Repositorio en Hugging Face: [Hahaaiiscool/Laguna](https://huggingface.co/Hahaaiiscool/Laguna)

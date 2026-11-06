@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic-NVFP4
 - Modelo base (bf16): https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic
 - Variante GGUF: https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic-GGUF
 - Variante FP8: https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic-FP8

@@ -88,7 +88,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Franjarjar/Spark-X2.6-4B-EQ-C4
+- Repositorio Hugging Face: https://huggingface.co/Franjarjar/Spark-X2.6-4B-EQ-C4
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Motor Espetero (GitHub): https://github.com/JarJarFran/espetero
 - Documentación del formato EQ: https://github.com/JarJarFran/espetero/blob/main/docs/eq.md

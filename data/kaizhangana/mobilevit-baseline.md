@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kaizhangana/mobilevit-baseline es un repositorio de HuggingFace que contiene una implementacion funcional de MobileViT orientada a tareas de matching (emparejamiento), con una configuracion declarada por el autor como "large". Lo publica el usuario kaizhangana bajo licencia MIT y con las etiquetas safetensors, pytorch, mobilevit y matching. El propio autor advierte de que el repositorio se centra en codigo transparente y pruebas de humo repetibles, y que las afirmaciones sobre rendimiento se omiten de forma deliberada.
+kaizhangana/mobilevit-baseline es un repositorio de Hugging Face que contiene una implementacion funcional de MobileViT orientada a tareas de matching (emparejamiento), con una configuracion declarada por el autor como "large". Lo publica el usuario kaizhangana bajo licencia MIT y con las etiquetas safetensors, pytorch, mobilevit y matching. El propio autor advierte de que el repositorio se centra en codigo transparente y pruebas de humo repetibles, y que las afirmaciones sobre rendimiento se omiten de forma deliberada.
 
 El dato mas relevante es que model.safetensors se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo, no como un modelo entrenado ni evaluado. El numero de parametros registrado en el fichero safetensors es de 49.600, una cifra muy inferior a la que suele asociarse a la familia MobileViT, lo que sugiere que se trata de una configuracion reducida o de un artefacto de prueba mas que de un modelo utilizable. El repositorio ocupa 0,0 GB y no acumula descargas ni "likes", por lo que no hay evidencia de adopcion.
 
@@ -53,9 +53,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kaizhangana/mobilevit-baseline | 49.600 (segun safetensors) | matching | MIT | HuggingFace |
+| kaizhangana/mobilevit-baseline | 49.600 (segun safetensors) | matching | MIT | Hugging Face |
 | MobileViT original (arXiv 2110.02178) | no disponible en la informacion proporcionada | vision general (clasificacion y otras tareas) | no disponible | arXiv e implementaciones no oficiales en GitHub |
-| quentinleroy/mobilevit-baseline-2024 | no disponible en la informacion proporcionada | classification | Apache-2.0 | HuggingFace |
+| quentinleroy/mobilevit-baseline-2024 | no disponible en la informacion proporcionada | classification | Apache-2.0 | Hugging Face |
 
 No hay datos de rendimiento comparables entre estos artefactos, y el primero no es un modelo entrenado, por lo que la comparacion es estructural y no de calidad. Se recomienda tratar la comparativa como orientativa.
 
@@ -72,7 +72,7 @@ No hay datos de rendimiento comparables entre estos artefactos, y el primero no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaizhangana/mobilevit-baseline
+- Modelo en Hugging Face: https://huggingface.co/kaizhangana/mobilevit-baseline
 - Perfil del autor: https://huggingface.co/kaizhangana
 - Articulo original de MobileViT: https://arxiv.org/abs/2110.02178
 - Implementacion no oficial en PyTorch: https://github.com/wilile26811249/MobileViT

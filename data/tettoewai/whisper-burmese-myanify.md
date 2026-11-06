@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper-burmese-myanify es un ajuste fino del modelo Whisper de OpenAI publicado por el usuario tettoewai en HuggingFace, orientado a reconocimiento automatico del habla (ASR) en birmano (myanmar). El modelo cuenta con 241.734.912 parametros reales (segun los pesos safetensors) y esta disenado para la tarea de transcripcion de audio a texto. Se distribuye bajo la libreria transformers y es compatible con endpoints, lo que facilita su despliegue en infraestructura de inferencia estandar.
+Whisper-burmese-myanify es un ajuste fino del modelo Whisper de OpenAI publicado por el usuario tettoewai en Hugging Face, orientado a reconocimiento automatico del habla (ASR) en birmano (myanmar). El modelo cuenta con 241.734.912 parametros reales (segun los pesos safetensors) y esta disenado para la tarea de transcripcion de audio a texto. Se distribuye bajo la libreria transformers y es compatible con endpoints, lo que facilita su despliegue en infraestructura de inferencia estandar.
 
-La model card esta generada automaticamente por el Trainer de HuggingFace e indica explicitamente que falta informacion sobre la descripcion del modelo, los usos previstos y los datos de entrenamiento. Los unicos datos objetivos disponibles son los hiperparametros de entrenamiento y las metricas de validacion alcanzadas: una perdida final de 0.3938 y un Character Error Rate (CER) de 0.5348 sobre el conjunto de evaluacion. Este CER del 53,48 por ciento es elevado y debe tenerse en cuenta antes de plantear cualquier uso en produccion.
+La model card esta generada automaticamente por el Trainer de Hugging Face e indica explicitamente que falta informacion sobre la descripcion del modelo, los usos previstos y los datos de entrenamiento. Los unicos datos objetivos disponibles son los hiperparametros de entrenamiento y las metricas de validacion alcanzadas: una perdida final de 0.3938 y un Character Error Rate (CER) de 0.5348 sobre el conjunto de evaluacion. Este CER del 53,48 por ciento es elevado y debe tenerse en cuenta antes de plantear cualquier uso en produccion.
 
 El modelo es relevante como ejemplo de ajuste fino comunitario para un idioma de bajos recursos como el birmano, pero su utilidad practica esta limitada por la ausencia de documentacion, la falta de licencia declarada y un rendimiento de validacion que no se corresponde con un sistema de transcripcion de calidad profesional. La fecha de creacion declarada es 2026-06-14 y la ultima actualizacion 2026-09-11.
 
@@ -39,7 +39,7 @@ El registro de entrenamiento muestra un sobreajuste claro: la perdida de entrena
 
 - Reconocimiento automatico del habla (ASR): conversion de audio a texto, tarea principal del pipeline declarado.
 - Transcripcion orientada al birmano/myanmar segun el nombre del modelo (no confirmado en la model card).
-- Compatibilidad con la libreria transformers y con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con la libreria transformers y con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Soporte de pesos en formato safetensors, lo que permite carga segura y rapida en el ecosistema transformers.
 - No hay evidencia en la informacion disponible de soporte de tool calling, function calling, agentes, razonamiento multi-paso ni modos de pensamiento.
 - No se declaran capacidades de vision, audio adicional, traduccion, diarizacion ni marcas de tiempo.
@@ -75,7 +75,7 @@ Resultado final declarado en la model card: Loss 0.3938 y CER 0.5348. No se han 
 - VRAM estimada para inferencia (solo pesos): aproximadamente 967 MB en FP32, 484 MB en FP16/BF16 y 242 MB en INT8. A estas cifras hay que anadir memoria para activaciones y buffers de atencion, que dependen de la longitud del audio de entrada.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente para los pesos en FP16; una NVIDIA RTX 3060, RTX 4090, A100 o H100 permiten inferencia holgada. El modelo no requiere aceleradores de gama alta.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo actual con 4-8 GB de VRAM o mas, dado el tamano de 242 millones de parametros.
-- Despliegue: mediante la libreria transformers (ruta nativa soportada). El uso con vLLM, llama.cpp, Ollama o TGI requeriria conversion de formato (por ejemplo a GGUF o CTranslate2) que no esta documentada en la informacion proporcionada. El tag `endpoints_compatible` sugiere posibilidad de despliegue en endpoints de HuggingFace.
+- Despliegue: mediante la libreria transformers (ruta nativa soportada). El uso con vLLM, llama.cpp, Ollama o TGI requeriria conversion de formato (por ejemplo a GGUF o CTranslate2) que no esta documentada en la informacion proporcionada. El tag `endpoints_compatible` sugiere posibilidad de despliegue en endpoints de Hugging Face.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Dependeran fuertemente del hardware, de la duracion del audio y de la precision utilizada.
 - Nota sobre el repositorio: el tamano declarado es de 26,1 GB, muy superior al de los pesos de un modelo de 242 millones de parametros, lo que apunta a la presencia de multiples checkpoints intermedios en el repositorio.
 
@@ -83,7 +83,7 @@ Resultado final declarado en la model card: Loss 0.3938 y CER 0.5348. No se han 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tettoewai/whisper-burmese-myanify | 241,7 M | No disponible | No disponible | HuggingFace (127 descargas) |
+| tettoewai/whisper-burmese-myanify | 241,7 M | No disponible | No disponible | Hugging Face (127 descargas) |
 | openai/whisper-small | ~244 M | 30 s de audio (1500 fotogramas) | Apache-2.0 | Ampliamente disponible |
 | openai/whisper-base | ~74 M | 30 s de audio (1500 fotogramas) | Apache-2.0 | Ampliamente disponible |
 
@@ -104,6 +104,6 @@ El modelo presenta un tamano de parametros equivalente al de whisper-small de Op
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tettoewai/whisper-burmese-myanify
+- Modelo en Hugging Face: https://huggingface.co/tettoewai/whisper-burmese-myanify
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo. Los enlaces obtenidos correspondian a contenidos sin relacion (luteria en Alemania) y se han descartado por no ser pertinentes. No se dispone de papers, blogs, repositorios ni demos adicionales asociados al modelo.

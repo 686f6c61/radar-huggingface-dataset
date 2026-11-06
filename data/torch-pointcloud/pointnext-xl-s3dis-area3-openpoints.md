@@ -80,7 +80,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto / entrada | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointnext-xl.s3dis-area3.openpoints | 41,6 M | Nube de puntos, 4 canales; 8192 puntos en el ejemplo | S3DIS Area 3 | MIT | HuggingFace, pesos safetensors |
+| pointnext-xl.s3dis-area3.openpoints | 41,6 M | Nube de puntos, 4 canales; 8192 puntos en el ejemplo | S3DIS Area 3 | MIT | Hugging Face, pesos safetensors |
 | PointNeXt original (guochengqian/PointNeXt) | No disponible en la informacion | Nube de puntos | S3DIS y otros | MIT | Repositorio GitHub, checkpoints PyTorch |
 | PointNet++ | No disponible en la informacion | Nube de puntos | S3DIS y otros | No disponible en la informacion | Implementaciones de investigacion |
 | Otras familias (Point Transformer, MinkowskiNet, SPVCNN) | No disponible en la informacion | Nube de puntos | S3DIS y otros | No disponible en la informacion | Repositorios de investigacion |
@@ -101,7 +101,7 @@ No se dispone de valores de mIoU u OA de los modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnext-xl.s3dis-area3.openpoints
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnext-xl.s3dis-area3.openpoints
 - Paper de PointNeXt (arXiv 2206.04670): https://arxiv.org/abs/2206.04670
 - Repositorio original de PointNeXt: https://github.com/guochengqian/PointNeXt
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

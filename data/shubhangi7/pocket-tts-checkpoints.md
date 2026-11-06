@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pocket-TTS es un modelo de síntesis de voz (text-to-speech) publicado por el usuario Shubhangi7 en HuggingFace bajo el identificador `Shubhangi7/pocket-tts-checkpoints`. Se distribuye como un repositorio de checkpoints de 25,1 GB en formato safetensors, etiquetado con los idiomas inglés (en) e hindi (hi) y con la etiqueta adicional "hinglish", lo que sugiere que está orientado a la síntesis de habla code-switching entre ambos idiomas, un caso frecuente en la India. El acceso es restringido (gated): es necesario aceptar condiciones en la plataforma antes de descargarlo.
+Pocket-TTS es un modelo de síntesis de voz (text-to-speech) publicado por el usuario Shubhangi7 en Hugging Face bajo el identificador `Shubhangi7/pocket-tts-checkpoints`. Se distribuye como un repositorio de checkpoints de 25,1 GB en formato safetensors, etiquetado con los idiomas inglés (en) e hindi (hi) y con la etiqueta adicional "hinglish", lo que sugiere que está orientado a la síntesis de habla code-switching entre ambos idiomas, un caso frecuente en la India. El acceso es restringido (gated): es necesario aceptar condiciones en la plataforma antes de descargarlo.
 
 El modelo se integra con la librería `pocket-tts`, lo que implica un ecosistema de inferencia propio y no los runners estándar de la comunidad (vLLM, TGI, llama.cpp). No se han publicado en la información disponible detalles sobre la arquitectura interna, el número de parámetros, la longitud de contexto ni los datos de entrenamiento, por lo que la ficha se limita a documentar lo verificable y marca explícitamente como "no disponible" todo aquello que no consta.
 
@@ -37,7 +37,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens o de horas de
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) a partir de texto de entrada, según el pipeline declarado en HuggingFace.
+- Síntesis de voz (text-to-speech) a partir de texto de entrada, según el pipeline declarado en Hugging Face.
 - Soporte de inglés (en) e hindi (hi) como idiomas de síntesis.
 - Etiqueta "hinglish", que indica capacidad potencial de generar habla con mezcla de inglés e hindi, aunque no se detalla el grado de soporte real.
 - No consta soporte de tool calling ni function calling (no aplicable a un modelo TTS).
@@ -78,7 +78,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no es posible determinar si el uso comercial está permitido; es imprescindible consultar las condiciones del acceso restringido antes de cualquier despliegue.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede impedir la descarga automatizada en pipelines de CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede impedir la descarga automatizada en pipelines de CI/CD.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni de validación externa de la calidad del modelo.
 - Ausencia total de documentación técnica: no se conocen arquitectura, parámetros, datos de entrenamiento ni benchmarks, lo que impide evaluar su calidad frente a alternativas.
 - Idiomas limitados a inglés e hindi: no se debe asumir soporte de castellano ni de otras lenguas.
@@ -88,4 +88,4 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shubhangi7/pocket-tts-checkpoints
+- Hugging Face: https://huggingface.co/Shubhangi7/pocket-tts-checkpoints

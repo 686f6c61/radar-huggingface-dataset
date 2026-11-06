@@ -17,7 +17,7 @@ El checkpoint de este repositorio tiene 421.293.830 parámetros (~421 M), licenc
 | Parámetros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | 1.024 tokens por defecto en `laya-multilingual`; ampliable a 8.192 con `max_len=8192` |
 | Tipos de cuantización | No disponible. Se documentan una ruta ONNX (`laya[onnx]`) y una ruta rápida TileLang en GPU (`laya[fast]`), pero no un catálogo de cuantizaciones |
-| Idiomas soportados | 100+ idiomas según la model card; el campo de idiomas de HuggingFace no los detalla («no disponibles») |
+| Idiomas soportados | 100+ idiomas según la model card; el campo de idiomas de Hugging Face no los detalla («no disponibles») |
 | Licencia | Apache 2.0 (etiqueta `commercial-use`) |
 | Formato de pesos | safetensors; exportación ONNX disponible como extra |
 | Pipeline | text-classification |
@@ -82,9 +82,9 @@ Datos de latencia declarados: unos 33 ms por pasada hacia delante según la mode
 
 | Modelo | Parámetros | Contexto | Latencia declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya (`baharedorsa/laya`) | 421 M | 1.024, ampliable a 8.192 | ~33 ms por pasada | Apache 2.0 | HuggingFace, `pip install laya`, GitHub |
+| Laya (`baharedorsa/laya`) | 421 M | 1.024, ampliable a 8.192 | ~33 ms por pasada | Apache 2.0 | Hugging Face, `pip install laya`, GitHub |
 | TypeSafe Jev | No disponible | No disponible | No disponible | No disponible | No disponible |
-| `convaiinnovations/laya` | No disponible en la información consultada | No disponible | No disponible | No disponible | HuggingFace |
+| `convaiinnovations/laya` | No disponible en la información consultada | No disponible | No disponible | No disponible | Hugging Face |
 
 La única alternativa nombrada explícitamente en las fuentes es TypeSafe Jev, presentada como el producto al que Laya pretende sustituir en local. No se dispone de parámetros, contexto, licencia ni resultados de benchmarks de Jev en la información proporcionada, por lo que no es posible una comparación cuantitativa.
 
@@ -99,11 +99,11 @@ La única alternativa nombrada explícitamente en las fuentes es TypeSafe Jev, p
 - El texto mayoritariamente en inglés pero largo puede enrutarse al checkpoint inglés; para forzar el multilingüe hay que indicar `model="multilingual"`.
 - El modelo no produce texto, pero sí puede equivocarse con alta confianza fuera de su distribución. Las probabilidades devueltas deben validarse con datos propios antes de usarlas como umbral automático.
 - La licencia Apache 2.0 permite uso comercial, pero no se documentan en esta información los sesgos por idioma o dominio, ni los términos de los checkpoints dependientes.
-- El campo de idiomas de HuggingFace está vacío; la cifra de «100+ idiomas» procede únicamente de la model card.
+- El campo de idiomas de Hugging Face está vacío; la cifra de «100+ idiomas» procede únicamente de la model card.
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/baharedorsa/laya
+- Repositorio analizado en Hugging Face: https://huggingface.co/baharedorsa/laya
 - Repositorio de la organización convaiinnovations: https://huggingface.co/convaiinnovations/laya
 - Checkpoint ajustado `laya-typed-decisions`: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Repositorio GitHub del proyecto: https://github.com/NandhaKishorM/laya

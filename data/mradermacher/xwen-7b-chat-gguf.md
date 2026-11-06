@@ -25,7 +25,7 @@ La relevancia de esta ficha es practica: permite desplegar un modelo de ~7,6B en
 
 La informacion disponible no describe la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El unico dato objetivo es el recuento de parametros del checkpoint base (7.615.616.512) y la etiqueta `conversational` en el pipeline del modelo. La model card del repositorio cuantizado es puramente operativa: se limita a listar los ficheros GGUF generados, enlazar la variante imatrix y remitir a la documentacion generica de TheBloke sobre el uso de ficheros GGUF.
 
-En cuanto al proceso de cuantizacion, los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se hizo desde pesos de HuggingFace y que la salida es una cuantizacion por tensores. El autor distingue explicitamente entre cuantizaciones estaticas (este repositorio) y cuantizaciones ponderadas/imatrix (repositorio i1), siendo estas ultimas generalmente preferibles a igualdad de tamano segun la propia documentacion del autor.
+En cuanto al proceso de cuantizacion, los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se hizo desde pesos de Hugging Face y que la salida es una cuantizacion por tensores. El autor distingue explicitamente entre cuantizaciones estaticas (este repositorio) y cuantizaciones ponderadas/imatrix (repositorio i1), siendo estas ultimas generalmente preferibles a igualdad de tamano segun la propia documentacion del autor.
 
 ## Capacidades
 
@@ -106,7 +106,7 @@ Notas sobre la comparativa: los datos de las alternativas corresponden a informa
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Xwen-7B-Chat-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Xwen-7B-Chat-GGUF
 - Modelo base: https://huggingface.co/xwen-team/Xwen-7B-Chat
 - Cuantizaciones ponderadas/imatrix del mismo modelo: https://huggingface.co/mradermacher/Xwen-7B-Chat-i1-GGUF
 - Pagina de resumen y descarga del autor: https://hf.tst.eu/model#Xwen-7B-Chat-GGUF

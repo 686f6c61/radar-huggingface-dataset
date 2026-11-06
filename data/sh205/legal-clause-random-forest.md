@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SH205/legal-clause-random-forest es un repositorio de HuggingFace publicado por el usuario SH205 que contiene un artefacto serializado con joblib, presumiblemente un modelo de clasificación basado en random forest orientado a cláusulas legales. El repositorio no incluye model card, no declara pipeline, licencia ni idiomas soportados, y acumula 0 descargas y 1 like. El único artefacto publicado ocupa 7,0 GB, un tamano muy superior al habitual en un random forest de scikit-learn, lo que sugiere un ensemble con un número elevado de árboles y profundidad alta, o bien features de entrada de dimensionalidad muy elevada.
+SH205/legal-clause-random-forest es un repositorio de Hugging Face publicado por el usuario SH205 que contiene un artefacto serializado con joblib, presumiblemente un modelo de clasificación basado en random forest orientado a cláusulas legales. El repositorio no incluye model card, no declara pipeline, licencia ni idiomas soportados, y acumula 0 descargas y 1 like. El único artefacto publicado ocupa 7,0 GB, un tamano muy superior al habitual en un random forest de scikit-learn, lo que sugiere un ensemble con un número elevado de árboles y profundidad alta, o bien features de entrada de dimensionalidad muy elevada.
 
 A diferencia de los modelos de lenguaje generativos, este artefacto no es un transformer ni un modelo de pesos neuronales: es un clasificador clásico de aprendizaje supervisado, probablemente entrenado sobre representaciones tipo TF-IDF o embeddings tabulares. Su relevancia práctica reside en que los ensembles de árboles siguen siendo competitivos en tareas de clasificación de texto corto y tabular con requisitos de latencia baja, coste de inferencia en CPU y trazabilidad de decisiones mediante importancias de características.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 - VRAM para inferencia: no aplicable. El modelo se ejecuta en CPU; no requiere GPU.
 - Memoria RAM: el artefacto ocupa 7,0 GB en disco y debe cargarse completo en memoria. Se recomienda un mínimo de 8 GB de RAM disponibles solo para el modelo, y entre 16 y 32 GB en el nodo para absorber el pico de deserialización y el resto de procesos.
-- Almacenamiento: al menos 7,0 GB para el fichero joblib, más el espacio de caché de HuggingFace si se descarga desde el hub.
+- Almacenamiento: al menos 7,0 GB para el fichero joblib, más el espacio de caché de Hugging Face si se descarga desde el hub.
 - GPU recomendadas: ninguna. El modelo no se beneficia de aceleración por GPU.
 - Compatibilidad con GPU de consumo: irrelevante; se ejecuta en cualquier portátil o servidor con RAM suficiente.
 - Opciones de despliegue: carga directa con `joblib.load` en un proceso Python, servicio HTTP con FastAPI o Flask, empaquetado con BentoML, o conversión a ONNX mediante herramientas de sklearn-onnx si el pipeline subyacente lo permite. vLLM, llama.cpp, Ollama y TGI no son aplicables, ya que están orientados a modelos de lenguaje con pesos neuronales.
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SH205/legal-clause-random-forest | Random forest (joblib) | no disponible (7,0 GB en disco) | no aplicable | no disponible | no disponible | HuggingFace, 0 descargas |
+| SH205/legal-clause-random-forest | Random forest (joblib) | no disponible (7,0 GB en disco) | no aplicable | no disponible | no disponible | Hugging Face, 0 descargas |
 | Legal-BERT fine-tuned (rahul-mandadi/LegalClause) | Transformer encoder | no disponible en la referencia | 512 tokens habitual en BERT base | no disponible en la referencia | no disponible | Repositorio GitHub público |
 | RNN multi-clase de cláusulas (pkrouth/Legal_LLM) | Red neuronal recurrente | no disponible | no disponible | ~95 % de exactitud en su conjunto de validación, según el propio repositorio | no disponible | Repositorio GitHub público |
 | Enfoques con LLM generativo para cumplimiento de contratos inteligentes (arXiv 2506.00943) | LLM generalista | no disponible | no disponible | no disponible en la referencia | no disponible | Publicación en arXiv |
@@ -96,7 +96,7 @@ La comparación es orientativa: las alternativas proceden de resultados de búsq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SH205/legal-clause-random-forest
+- Repositorio en Hugging Face: https://huggingface.co/SH205/legal-clause-random-forest
 - LegalClause, asistente legal con Legal-BERT ajustado (referencia contextual): https://github.com/rahul-mandadi/LegalClause
 - Legal_LLM, clasificación multiclase de cláusulas con RNN (referencia contextual): https://github.com/pkrouth/Legal_LLM
 - Ejemplo de cláusula sobre modelos de random forest en Law Insider (referencia contextual): https://www.lawinsider.com/clause/random-forest-model

@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer comparacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ANGELOSEGRETO/gpt-oss-20b
+- Repositorio en Hugging Face: https://huggingface.co/ANGELOSEGRETO/gpt-oss-20b
 - Repositorio oficial del modelo: https://huggingface.co/openai/gpt-oss-20b
 - Coleccion oficial gpt-oss: https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4
 - Model card en arXiv: https://arxiv.org/abs/2508.10925

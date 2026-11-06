@@ -56,7 +56,7 @@ La model card no especifica el numero de tokens de entrenamiento, la composicion
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio y los metadatos de HuggingFace no incluyen puntuaciones de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion, y la busqueda web realizada no ha devuelto ninguna fuente tecnica relacionada con este modelo (los resultados obtenidos eran completamente ajenos al ambito de la IA y no se han utilizado como referencia).
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio y los metadatos de Hugging Face no incluyen puntuaciones de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion, y la busqueda web realizada no ha devuelto ninguna fuente tecnica relacionada con este modelo (los resultados obtenidos eran completamente ajenos al ambito de la IA y no se han utilizado como referencia).
 
 ## Requisitos de hardware
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Datos de rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saraswathy/vlm-mix-resume-geo70-commonsense30-step90 | Adaptador LoRA sobre base de 4B | No disponible | No publicados | No disponible | Repositorio HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Consultar la ficha del modelo base | Publico en HuggingFace |
+| Saraswathy/vlm-mix-resume-geo70-commonsense30-step90 | Adaptador LoRA sobre base de 4B | No disponible | No publicados | No disponible | Repositorio Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Consultar la ficha del modelo base | Publico en Hugging Face |
 | Otros adaptadores PEFT de la misma familia | No disponible | No disponible | No disponible | No disponible | No identificados en la busqueda realizada |
 
 No se dispone de datos verificados para comparar este checkpoint con alternativas equivalentes de la misma categoria. Cualquier comparacion cuantitativa exigiria evaluar el adaptador sobre el modelo base con un conjunto de prueba comun, algo que no se ha publicado.
@@ -94,7 +94,7 @@ No se dispone de datos verificados para comparar este checkpoint con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-geo70-commonsense30-step90
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-geo70-commonsense30-step90
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Framework de entrenamiento citado en la model card (EasyR1): https://github.com/hiyouga/EasyR1
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante; las entradas devueltas correspondian a contenidos sin relacion con el modelo.

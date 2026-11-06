@@ -65,7 +65,7 @@ No se dispone de información suficiente para comparar este adaptador con altern
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/iamPi/qwen36-35b-a3b-top3-qlora_e2
+- Adaptador en Hugging Face: https://huggingface.co/iamPi/qwen36-35b-a3b-top3-qlora_e2
 - Modelo base (Qwen3.6-35B-A3B): https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Alibaba Cloud sobre Qwen3.6-35B-A3B: https://www.alibabacloud.com/blog/603043
 - Guía de despliegue local (runaihome.com): https://runaihome.com/blog/qwen36-35b-a3b-local-ai-guide-2026/

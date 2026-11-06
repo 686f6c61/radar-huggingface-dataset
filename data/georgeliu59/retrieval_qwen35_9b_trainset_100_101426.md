@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`retrieval_qwen35_9b_trainset_100_101426` es un repositorio de HuggingFace publicado por el usuario `georgeliu59` que sirve como destino de entrenamiento (fine-tuning) del modelo base `Qwen/Qwen3.5-9B`. Segun la model card, el objetivo es ajustar el modelo sobre 420.979 ejemplos de etiquetado de video preparados el 14 de octubre de 2026, con cinco epocas, batch efectivo de 320 sobre 16 GPUs y la torre de vision y el proyector congelados. El pipeline declarado es `image-text-to-text` y el autor etiqueta el modelo con `video-labeling` y `llama-factory`.
+`retrieval_qwen35_9b_trainset_100_101426` es un repositorio de Hugging Face publicado por el usuario `georgeliu59` que sirve como destino de entrenamiento (fine-tuning) del modelo base `Qwen/Qwen3.5-9B`. Segun la model card, el objetivo es ajustar el modelo sobre 420.979 ejemplos de etiquetado de video preparados el 14 de octubre de 2026, con cinco epocas, batch efectivo de 320 sobre 16 GPUs y la torre de vision y el proyector congelados. El pipeline declarado es `image-text-to-text` y el autor etiqueta el modelo con `video-labeling` y `llama-factory`.
 
 Es importante subir la advertencia de que, en el momento de la ultima actualizacion (1 de noviembre de 2026), el repositorio no contiene pesos entrenados: la propia model card indica que "this initial commit does not contain a trained model" y que los pesos apareceran tras superar la prueba de memoria de GPU y alcanzar el primer checkpoint. El tamano del repo (188,2 GB) es consistente con el almacenamiento de checkpoints intermedios y del modelo base en formato safetensors, pero no debe interpretarse como un modelo afinado listo para usar.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de este repositorio que permitan una compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/georgeliu59/retrieval_qwen35_9b_trainset_100_101426
+- Repositorio Hugging Face: https://huggingface.co/georgeliu59/retrieval_qwen35_9b_trainset_100_101426
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Llama-Factory (herramienta de entrenamiento citada): no se proporciona enlace en la informacion disponible
 - Paper, blog o demo: no disponibles en la informacion proporcionada

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-con-cord/GRPO-MOD3-sft-agreed-no-ref es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario con-cord. Segun los metadatos del repositorio, cuenta con 4.300.079.472 parametros reales (aproximadamente 4,3 mil millones) almacenados en safetensors, y esta etiquetado con la familia gemma3 y la libreria transformers. El nombre del repositorio sugiere un entrenamiento en dos fases: un ajuste supervisado (sft) seguido de optimizacion con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo, aunque la model card no confirma ninguno de estos extremos.
+con-cord/GRPO-MOD3-sft-agreed-no-ref es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario con-cord. Segun los metadatos del repositorio, cuenta con 4.300.079.472 parametros reales (aproximadamente 4,3 mil millones) almacenados en safetensors, y esta etiquetado con la familia gemma3 y la libreria transformers. El nombre del repositorio sugiere un entrenamiento en dos fases: un ajuste supervisado (sft) seguido de optimizacion con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo, aunque la model card no confirma ninguno de estos extremos.
 
-El problema que resuelve no esta documentado: la model card es la plantilla autogenerada de HuggingFace, con todos los campos marcados como "[More Information Needed]" y sin resultados, datos de entrenamiento ni ejemplos de uso. Esto convierte al modelo en un artefacto experimental o de investigacion interna mas que en un modelo listo para produccion. El repositorio tiene 0 descargas y 0 likes, y fue creado el 11 de septiembre de 2026.
+El problema que resuelve no esta documentado: la model card es la plantilla autogenerada de Hugging Face, con todos los campos marcados como "[More Information Needed]" y sin resultados, datos de entrenamiento ni ejemplos de uso. Esto convierte al modelo en un artefacto experimental o de investigacion interna mas que en un modelo listo para produccion. El repositorio tiene 0 descargas y 0 likes, y fue creado el 11 de septiembre de 2026.
 
 Por el tamano (4,3B) y el tag gemma3, es plausible que se trate de un fine-tuning del modelo Gemma 3 4B multimodal de Google, pero se trata de una inferencia a partir de los metadatos, no de un dato confirmado por el autor. Cualquier evaluacion seria del modelo requiere inspeccionar los pesos directamente, ya que no hay documentacion publicada.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 4 bits (si se generan pesos GGUF, no publicados): en torno a 3-4 GB, aunque el encoder de vision anade overhead.
 - GPU recomendadas: no disponibles por parte del autor. Por tamano, una RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB, L40S o H100 son suficientes y sobradas para fp16.
 - GPU de consumo: si cabe en tarjetas con 12-16 GB de VRAM en fp16 y en cualquier GPU moderna de 8 GB o mas si se cuantiza a 4 bits.
-- Opciones de despliegue: transformers es la libreria declarada; los tags mencionan text-generation-inference y endpoints_compatible, por lo que en principio es compatible con TGI y con los Inference Endpoints de HuggingFace. No hay pesos GGUF publicados, de modo que llama.cpp u Ollama requeririan conversion previa. vLLM es probablemente viable para la parte de texto si la arquitectura coincide con Gemma 3, pero no esta confirmado.
+- Opciones de despliegue: transformers es la libreria declarada; los tags mencionan text-generation-inference y endpoints_compatible, por lo que en principio es compatible con TGI y con los Inference Endpoints de Hugging Face. No hay pesos GGUF publicados, de modo que llama.cpp u Ollama requeririan conversion previa. vLLM es probablemente viable para la parte de texto si la arquitectura coincide con Gemma 3, pero no esta confirmado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ La comparativa se hace contra modelos de la misma categoria (multimodales de 3-1
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| con-cord/GRPO-MOD3-sft-agreed-no-ref | 4,3B | no disponible | no disponible | HuggingFace, 0 descargas |
+| con-cord/GRPO-MOD3-sft-agreed-no-ref | 4,3B | no disponible | no disponible | Hugging Face, 0 descargas |
 | Gemma 3 4B IT (posible base) | 4,3B | 128K tokens (segun documentacion de Google) | Gemma Terms of Use | Ampliamente disponible |
 | Qwen2.5-VL 3B / 7B | 3B / 7,6B | 128K tokens (segun documentacion de Alibaba) | Apache 2.0 (variantes) | Ampliamente disponible |
 | Llama 3.2 11B Vision | 11B | 128K tokens (segun documentacion de Meta) | Llama 3.2 Community License | Ampliamente disponible |
@@ -93,7 +93,7 @@ No hay datos de rendimiento del modelo de con-cord que permitan una comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/con-cord/GRPO-MOD3-sft-agreed-no-ref
+- Modelo en Hugging Face: https://huggingface.co/con-cord/GRPO-MOD3-sft-agreed-no-ref
 - Referencia citada en la plantilla de la model card (calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Documentacion del posible modelo base, Gemma 3: https://ai.google.dev/gemma/docs/core/model_card_3
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces obtenidos correspondian a productos no relacionados. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo.

@@ -24,7 +24,7 @@ Su interés actual es metodológico: ofrece pesos en FP32, adaptadores SFT (PEFT
 | Tokenizador | `base/talkie-1930/vocab.txt` (cargado con `get_talkie_tokenizer`) |
 | Dataset de evaluación | hamlab-princeton/pastcasting-factual-52k (52.000 preguntas, 1.000 por año, 1921-1972) |
 | Tamaño del repositorio | 427,5 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 descargas, 1 like (en el momento de la consulta) |
 
 ## Arquitectura y entrenamiento
@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/hamlab-princeton/pastcasting-talkie-cpt
+- Repositorio del modelo en Hugging Face: https://huggingface.co/hamlab-princeton/pastcasting-talkie-cpt
 - Carpeta del checkpoint base: https://huggingface.co/hamlab-princeton/pastcasting-talkie-cpt/tree/main/base/talkie-1930
 - Dataset factual de 52.000 preguntas: https://huggingface.co/datasets/hamlab-princeton/pastcasting-factual-52k
 - Modelo base upstream Talkie 1930 13B: https://huggingface.co/talkie-lm/talkie-1930-13b-base

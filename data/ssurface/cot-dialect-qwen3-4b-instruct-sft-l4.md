@@ -77,7 +77,7 @@ No se dispone de resultados comparativos publicados para el modelo base ni para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l4
 - Repositorio del proyecto: https://github.com/ssurface3/qwen3-cot-compression
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B
 - Adaptador relacionado (GRPO L4): https://huggingface.co/ssurface/qwen3-4b-grpo-l4

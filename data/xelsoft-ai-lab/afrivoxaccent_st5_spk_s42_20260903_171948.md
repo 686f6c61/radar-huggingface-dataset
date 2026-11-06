@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260903_171948` es un modelo de voz alojado en HuggingFace, desarrollado por el usuario `xelsoft-ai-lab`. La información disponible es muy limitada: la model card es una plantilla generada automáticamente sin datos de descripción, entrenamiento ni evaluación. Los únicos datos técnicos verificables son los parámetros totales (144.437.730) y el formato de pesos en `safetensors`.
+El modelo `xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260903_171948` es un modelo de voz alojado en Hugging Face, desarrollado por el usuario `xelsoft-ai-lab`. La información disponible es muy limitada: la model card es una plantilla generada automáticamente sin datos de descripción, entrenamiento ni evaluación. Los únicos datos técnicos verificables son los parámetros totales (144.437.730) y el formato de pesos en `safetensors`.
 
-La etiqueta `speecht5` en HuggingFace sugiere que el modelo se basa en la arquitectura SpeechT5, un modelo encoder-decoder de tipo transformer para procesamiento de lenguaje hablado. Sin embargo, no se confirma en la documentación si se trata de un fine-tuning para síntesis de voz, reconocimiento de voz u otra tarea. El nombre del repositorio (`AfriVoxAccent_ST5_spk_s42`) apunta a un posible ajuste para acentos africanos, pero esta hipótesis no está respaldada por ninguna descripción oficial.
+La etiqueta `speecht5` en Hugging Face sugiere que el modelo se basa en la arquitectura SpeechT5, un modelo encoder-decoder de tipo transformer para procesamiento de lenguaje hablado. Sin embargo, no se confirma en la documentación si se trata de un fine-tuning para síntesis de voz, reconocimiento de voz u otra tarea. El nombre del repositorio (`AfriVoxAccent_ST5_spk_s42`) apunta a un posible ajuste para acentos africanos, pero esta hipótesis no está respaldada por ninguna descripción oficial.
 
 Se trata de un modelo sin descargas ni likes, creado el 3 de septiembre de 2026, con un tamaño de repositorio de 0,6 GB. Dado el carácter fragmentario de la información pública, cualquier uso del modelo debe ir precedido de una evaluación técnica exhaustiva por parte del usuario.
 
@@ -65,8 +65,8 @@ No se han publicado datos de comparación con otros modelos en la información d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AfriVoxAccent_ST5_spk_s42 | 144.437.730 | no disponible | no disponible | HuggingFace |
-| SpeechT5 base (referencia) | ~145M | no aplica (voz) | MIT (según publicacion original) | HuggingFace |
+| AfriVoxAccent_ST5_spk_s42 | 144.437.730 | no disponible | no disponible | Hugging Face |
+| SpeechT5 base (referencia) | ~145M | no aplica (voz) | MIT (según publicacion original) | Hugging Face |
 
 Los datos de SpeechT5 base se incluyen como referencia general, no como confirmación de similitud funcional.
 
@@ -82,6 +82,6 @@ Los datos de SpeechT5 base se incluyen como referencia general, no como confirma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260903_171948
+- Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260903_171948
 - Paper de referencia del tag `arxiv:1910.09700`: https://arxiv.org/abs/1910.09700 (paper de T5, no confirma la arquitectura del modelo)
 - No se han encontrado repositorios, blogs, demos ni papers específicos de este modelo en la búsqueda web.

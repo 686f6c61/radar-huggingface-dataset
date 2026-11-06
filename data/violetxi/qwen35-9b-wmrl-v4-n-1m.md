@@ -6,7 +6,7 @@ violetxi/qwen35-9b-wmrl-v4-n-1m es un checkpoint experimental de investigación,
 
 El modelo se presenta como un checkpoint de la condición "n-1m" dentro de la serie v4, con un pool semilla de aproximadamente 50k muestras ("think-on seed pool"). Tras el entrenamiento, los pesos se han integrado ("grafted") en la estructura compuesta del hub, dando como resultado un modelo servible con vLLM sin configuración adicional. Contiene 9.653.104.368 parámetros en formato safetensors, con licencia Apache 2.0.
 
-Se trata de un modelo de carácter experimental, sin descargas ni valoraciones en HuggingFace, y sin benchmarks publicados. Su relevancia radica en ser una pieza de un estudio de investigación sobre representaciones internas, más que en su uso directo como modelo de producción.
+Se trata de un modelo de carácter experimental, sin descargas ni valoraciones en Hugging Face, y sin benchmarks publicados. Su relevancia radica en ser una pieza de un estudio de investigación sobre representaciones internas, más que en su uso directo como modelo de producción.
 
 ## Especificaciones tecnicas
 
@@ -52,9 +52,9 @@ Los siguientes checkpoints pertenecen a la misma serie de experimentos, comparte
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| violetxi/qwen35-9b-wmrl-v4-n-1m | 9.653.104.368 | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-m0-nop6 | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-c1-b5v4 | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| violetxi/qwen35-9b-wmrl-v4-n-1m | 9.653.104.368 | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-m0-nop6 | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-c1-b5v4 | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -67,6 +67,6 @@ Los siguientes checkpoints pertenecen a la misma serie de experimentos, comparte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-1m
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-1m
 - Checkpoint de la misma serie, condición m0-nop6: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m0-nop6
 - Checkpoint de la misma serie, condición c1-b5v4: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c1-b5v4

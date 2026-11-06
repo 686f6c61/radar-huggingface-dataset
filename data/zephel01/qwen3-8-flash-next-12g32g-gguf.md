@@ -18,7 +18,7 @@ El resultado declarado por el autor es un modelo un 30 % más rápido (56,0 fren
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | GGUF con mezcla IQ1_S / IQ2_XXS / IQ4_NL por tensor; expertos recuantizados con LDLQ |
 | Idiomas soportados | no disponible oficialmente; la calibración y los tests cubren japonés, chino, inglés y código |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (3 shards, `L448/Qwen3.8-Flash-Next-12G32G-L448-0000N-of-00003.gguf`) |
 
 ## Arquitectura y entrenamiento
@@ -95,14 +95,14 @@ No se dispone de datos de otros modelos comparables de la misma categoría (MoE 
 - Tendencia al sobrepensamiento: una tarea de conversión hiragana/katakana hace que el modelo piense hasta el límite de tokens en la mayoría de ejecuciones; requiere ajustar `max_tokens` o reducir el modo pensamiento.
 - Riesgo de respuestas vacías: la primera versión de esta cuantización terminaba el turno tras el pensamiento sin responder; el autor indica que la calibración con turnos de chat y la guarda `STRATA_GLM_END_GUARD` de Abyss v1.3.106 lo mitigan, pero el riesgo persiste en otros motores.
 - Idiomas oficiales del modelo base no declarados: la cobertura multilingüe verificada se limita a japonés, chino e inglés en la calibración y los tests.
-- Licencia qwen-community-1.0: es necesario revisar los términos del modelo base para uso comercial, ya que la licencia se etiqueta como `other` en HuggingFace y no se detallan restricciones en esta ficha.
+- Licencia qwen-community-1.0: es necesario revisar los términos del modelo base para uso comercial, ya que la licencia se etiqueta como `other` en Hugging Face y no se detallan restricciones en esta ficha.
 - Sesgos conocidos: no se documentan en la información disponible; al ser una cuantización del modelo base, hereda los sesgos de este, que no se detallan.
 - Riesgo de alucinación: no cuantificado en la información disponible; el autor solo reporta corrección factual en 5 prompts japoneses.
 - Dependencia del motor Abyss: el rendimiento declarado se midió con Abyss y no se garantiza en llama.cpp u otros motores; el autor reporta 27,6 tok/s con llama.cpp en la referencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zephel01/Qwen3.8-Flash-Next-12G32G-GGUF
+- Hugging Face: https://huggingface.co/zephel01/Qwen3.8-Flash-Next-12G32G-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Pesos NVFP4 de referencia: https://huggingface.co/magnitudedev/Qwen3.8-Flash-Next-NVFP4-GGUF

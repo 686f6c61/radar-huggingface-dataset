@@ -29,7 +29,7 @@ El presente repositorio se limita a la conversion a formato GGUF mediante cuanti
 
 - Generacion de texto en ingles (unico idioma declarado).
 - Posible soporte multimodal (vision) gracias a los archivos `mmproj` incluidos, aunque no se confirma en la documentacion.
-- Capacidad de conversacion (etiqueta `conversational` en HuggingFace).
+- Capacidad de conversacion (etiqueta `conversational` en Hugging Face).
 - No se documentan capacidades especificas como tool calling, razonamiento avanzado, generacion de codigo o matematicas.
 - No se especifica si soporta modos de pensamiento o agentes.
 
@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/OpenIntelligenceNet/Qwen-3.8-27B-Heretic
 - Pagina de ayuda del autor para solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

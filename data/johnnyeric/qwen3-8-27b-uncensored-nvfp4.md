@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/johnnyeric/Qwen3.8-27B-Uncensored-NVFP4
+- Hugging Face: https://huggingface.co/johnnyeric/Qwen3.8-27B-Uncensored-NVFP4
 - Repositorio GitHub de variante GGUF: https://github.com/Wassimyounes01/qwen38-uncensored
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pagina de Wiro AI sobre la variante uncensored: https://wiro.ai/models/qwen/qwen3-8-27b-uncensored

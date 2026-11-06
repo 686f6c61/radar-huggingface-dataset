@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Faokonkwo/classification es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura denominada Coca, orientada a tareas de clasificacion. Lo publica el usuario Faokonkwo bajo licencia Apache 2.0 y, segun la propia model card, se trata de un artefacto compacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no para produccion. El repositorio incluye `main.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito explicitamente como checkpoint de inicializacion valido, no como un modelo entrenado con resultados de referencia.
+Faokonkwo/classification es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura denominada Coca, orientada a tareas de clasificacion. Lo publica el usuario Faokonkwo bajo licencia Apache 2.0 y, segun la propia model card, se trata de un artefacto compacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no para produccion. El repositorio incluye `main.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito explicitamente como checkpoint de inicializacion valido, no como un modelo entrenado con resultados de referencia.
 
 El dato mas relevante es su tamano: 49.600 parametros totales (49,6 K) segun el safetensors, con un repositorio que ocupa 0,0 GB. Esto contrasta con la etiqueta de escala "huge" que aparece en la configuracion de arquitectura, lo que sugiere que dicha etiqueta es un nombre de preset y no una descripcion fiel del numero de parametros reales. No hay pipeline declarado, no se declaran idiomas soportados, no se reclama ninguna puntuacion de benchmark y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -60,7 +60,7 @@ El autor incluye una guia de evaluacion: usar una particion etiquetada especific
 - Pruebas de humo de infraestructura (smoke tests): con menos de 50 K parametros, el modelo permite verificar en segundos que un entorno de entrenamiento (GPU, versiones de PyTorch, carga de safetensors) funciona antes de lanzar un trabajo real.
 - Validacion de pipelines de carga de safetensors: util para comprobar que un servicio o script es capaz de leer, mapear y montar pesos en formato safetensors sin depender de APIs automaticas del ecosistema Transformers.
 - Experimentos controlados de recetas de optimizacion: el `training_args.json` con Lion y calentamiento lineal sirve como plantilla para comparar optimizadores y schedulers sobre un dataset pequeno y con presupuesto de tuning acotado.
-- Docencia y formacion: como ejemplo de repositorio HuggingFace completo (modelo, config, argumentos de entrenamiento, README) para explicar la estructura minima de un proyecto de clasificacion reproducible.
+- Docencia y formacion: como ejemplo de repositorio Hugging Face completo (modelo, config, argumentos de entrenamiento, README) para explicar la estructura minima de un proyecto de clasificacion reproducible.
 - Linea base de capacidad reducida en experimentos comparativos: al tener un numero de parametros conocido (49,6 K), puede actuar como referencia inferior contra la que medir ganancias de modelos mayores bajo el mismo regimen de datos y semillas.
 - Prototipado de la capa de clasificacion: la cabeza de clasificacion y el flujo de forward pueden reutilizarse como plantilla en proyectos propios, siempre sustituyendo el checkpoint por uno entrenado.
 
@@ -93,5 +93,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Faokonkwo/classification
+- Hugging Face: https://huggingface.co/Faokonkwo/classification
 - Busqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos por la busqueda corresponden a productos de parafarmacia sin relacion alguna con el modelo.

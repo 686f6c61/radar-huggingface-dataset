@@ -4,7 +4,7 @@
 
 ## Resumen
 
-whisper-small-pulaar-kallaama es un ajuste fino de openai/whisper-small, publicado por el usuario bolorim en HuggingFace, orientado al reconocimiento automático de voz en pulaar (variante del fulfulde/fula hablada principalmente en Senegal, Mauritania, Guinea y Malí). El modelo conserva la arquitectura encoder-decoder de tipo transformer propia de la familia Whisper, con 241.734.912 parámetros (aproximadamente 244 millones) y pesos en safetensors. El repositorio ocupa 1,0 GB y se distribuye bajo licencia Apache-2.0.
+whisper-small-pulaar-kallaama es un ajuste fino de openai/whisper-small, publicado por el usuario bolorim en Hugging Face, orientado al reconocimiento automático de voz en pulaar (variante del fulfulde/fula hablada principalmente en Senegal, Mauritania, Guinea y Malí). El modelo conserva la arquitectura encoder-decoder de tipo transformer propia de la familia Whisper, con 241.734.912 parámetros (aproximadamente 244 millones) y pesos en safetensors. El repositorio ocupa 1,0 GB y se distribuye bajo licencia Apache-2.0.
 
 El problema que aborda es la escasez de sistemas ASR funcionales para lenguas africanas de bajos recursos, donde los modelos multilingües genéricos rinden mal por falta de datos de entrenamiento específicos. La propuesta es un ajuste ligero sobre un modelo ya multilingüe, lo que reduce el coste computacional de adaptación a un idioma concreto y permite desplegarlo en hardware modesto.
 
@@ -29,7 +29,7 @@ Otras especificaciones: pipeline declarado `automatic-speech-recognition`, taman
 
 La arquitectura es la de Whisper-small: un transformer encoder-decoder con normalizacion previa, embeddings convolucionales en el encoder sobre espectrogramas mel de 80 canales, y un decoder autoregresivo que genera texto condicionado por tokens de tarea e idioma. No se introduce ninguna innovacion arquitectonica respecto al modelo base: se trata de un ajuste fino estandar.
 
-El entrenamiento se realizo con el Trainer de HuggingFace y los siguientes hiperparametros declarados: learning rate 0,001, batch de entrenamiento 8, batch de evaluacion 8, acumulacion de gradientes 2 (batch efectivo 16), semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08 en su variante fused, scheduler lineal con 50 pasos de calentamiento, precision mixta nativa (AMP) y un total de 50 pasos de entrenamiento. El dataset de entrenamiento figura como "None" en la model card, es decir, no se documenta su composicion, tamano, procedencia ni licencia.
+El entrenamiento se realizo con el Trainer de Hugging Face y los siguientes hiperparametros declarados: learning rate 0,001, batch de entrenamiento 8, batch de evaluacion 8, acumulacion de gradientes 2 (batch efectivo 16), semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08 en su variante fused, scheduler lineal con 50 pasos de calentamiento, precision mixta nativa (AMP) y un total de 50 pasos de entrenamiento. El dataset de entrenamiento figura como "None" en la model card, es decir, no se documenta su composicion, tamano, procedencia ni licencia.
 
 A partir de los datos declarados puede deducirse que el conjunto de entrenamiento era muy pequeno: 50 pasos con batch efectivo de 16 y 5,5556 epocas implican aproximadamente 144 ejemplos. La curva de entrenamiento muestra una perdida de 10,7473 en el paso 25 (WER del 100 %) y de 3,4657 en el paso 50 (WER del 65,3061 %), lo que indica un ajuste todavia en fase muy temprana. No se menciona el uso de RLHF, DPO ni tecnicas de decodificacion especulativa.
 
@@ -82,11 +82,11 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bolorim/whisper-small-pulaar-kallaama | 241.734.912 | Ventanas de 30 s | Pulaar (ajuste especifico) | Apache-2.0 | HuggingFace, 0 descargas |
-| openai/whisper-small | 244 M | Ventanas de 30 s | Multilingue (decenas de idiomas) | Apache-2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-base | 74 M | Ventanas de 30 s | Multilingue | Apache-2.0 | HuggingFace |
-| openai/whisper-medium | 769 M | Ventanas de 30 s | Multilingue | Apache-2.0 | HuggingFace |
-| facebook/mms-1b-all | 1.000 M (aprox.) | Ventanas de audio variable | Mas de 1000 lenguas, incluido fulfulde | CC-BY-NC-4.0 | HuggingFace; licencia no comercial |
+| bolorim/whisper-small-pulaar-kallaama | 241.734.912 | Ventanas de 30 s | Pulaar (ajuste especifico) | Apache-2.0 | Hugging Face, 0 descargas |
+| openai/whisper-small | 244 M | Ventanas de 30 s | Multilingue (decenas de idiomas) | Apache-2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-base | 74 M | Ventanas de 30 s | Multilingue | Apache-2.0 | Hugging Face |
+| openai/whisper-medium | 769 M | Ventanas de 30 s | Multilingue | Apache-2.0 | Hugging Face |
+| facebook/mms-1b-all | 1.000 M (aprox.) | Ventanas de audio variable | Mas de 1000 lenguas, incluido fulfulde | CC-BY-NC-4.0 | Hugging Face; licencia no comercial |
 
 La ventaja diferencial de este checkpoint frente a openai/whisper-small es su especializacion en pulaar, aunque con un WER del 65,3061 % no hay evidencia de que supere al modelo base en esa lengua. Frente a facebook/mms-1b-all, la licencia Apache-2.0 permite uso comercial, algo que la licencia CC-BY-NC-4.0 de MMS no autoriza. No se dispone de datos de benchmarks en pulaar para establecer una comparacion cuantitativa fiable entre estas alternativas.
 
@@ -105,7 +105,7 @@ La ventaja diferencial de este checkpoint frente a openai/whisper-small es su es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bolorim/whisper-small-pulaar-kallaama
+- Modelo en Hugging Face: https://huggingface.co/bolorim/whisper-small-pulaar-kallaama
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper, "Robust Speech Recognition via Large-Scale Weak Supervision": https://arxiv.org/abs/2212.04356

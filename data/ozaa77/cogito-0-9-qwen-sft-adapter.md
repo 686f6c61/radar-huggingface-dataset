@@ -93,7 +93,7 @@ La comparacion cuantitativa no es posible: no se han publicado benchmarks del ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ozaa77/Cogito-0.9-qwen-sft-adapter
+- Hugging Face: https://huggingface.co/ozaa77/Cogito-0.9-qwen-sft-adapter
 - Modelo base: https://huggingface.co/DreamFast/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `orangeblue39/speakeasy-mini-runtime` no contiene un modelo de inteligencia artificial, sino un ejecutable compilado para Windows x64: el worker de inferencia CUDA de SpeakEasy Mini, una aplicación de dictado por voz local. Este worker ejecuta el modelo de reconocimiento de voz `ibm-granite/granite-speech-4.1-2b-GGUF`, que se descarga por separado desde HuggingFace. El proyecto está desarrollado por el autor `orangeblue39` y su código fuente se encuentra en el repositorio `kwp490/speakeasy-granite-rust-mini`.
+El repositorio `orangeblue39/speakeasy-mini-runtime` no contiene un modelo de inteligencia artificial, sino un ejecutable compilado para Windows x64: el worker de inferencia CUDA de SpeakEasy Mini, una aplicación de dictado por voz local. Este worker ejecuta el modelo de reconocimiento de voz `ibm-granite/granite-speech-4.1-2b-GGUF`, que se descarga por separado desde Hugging Face. El proyecto está desarrollado por el autor `orangeblue39` y su código fuente se encuentra en el repositorio `kwp490/speakeasy-granite-rust-mini`.
 
 La relevancia de este repositorio radica en que permite desplegar un sistema de dictado completamente local, sin enviar datos a servidores externos, utilizando una GPU NVIDIA compatible. El ejecutable está construido sobre llama.cpp/ggml y CUDA 13.x, e incluye verificación de integridad mediante hashes SHA-256 para garantizar que el binario no haya sido alterado. No se trata de un modelo entrenado, sino de un componente de software que sirve de puente entre la aplicación y el modelo de voz.
 
@@ -73,7 +73,7 @@ No disponible. Este repositorio no es un modelo, sino un runtime de inferencia. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orangeblue39/speakeasy-mini-runtime
+- Repositorio Hugging Face: https://huggingface.co/orangeblue39/speakeasy-mini-runtime
 - Modelo subyacente (IBM Granite Speech 4.1 2B GGUF): https://huggingface.co/ibm-granite/granite-speech-4.1-2b-GGUF
 - Codigo fuente del worker: https://github.com/kwp490/speakeasy-granite-rust-mini
 - EULA de NVIDIA CUDA Toolkit: https://docs.nvidia.com/cuda/eula/index.html

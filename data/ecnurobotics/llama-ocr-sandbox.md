@@ -54,7 +54,7 @@ No disponible. No se conocen modelos comparables dentro de este repositorio, ya 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ecnurobotics/llama-ocr-sandbox
+- Repositorio Hugging Face: https://huggingface.co/ecnurobotics/llama-ocr-sandbox
 - Proyecto relacionado (no afiliado): https://github.com/Nutlope/llama-ocr
 - Proyecto relacionado (no afiliado): https://github.com/1WorldCapture/llama_ocr
 - Paquete PyPI (no afiliado): https://pypi.org/project/llama-ocr/

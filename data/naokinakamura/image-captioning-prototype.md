@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`naokinakamura/image-captioning-prototype` es un repositorio alojado en HuggingFace que, pese a su identificador y a la etiqueta `image-captioning`, no contiene un modelo entrenado desplegable. La propia model card lo describe como un "structured set of research notes on Image Captioning", es decir, un conjunto de notas de investigación con referencias de evaluación y preguntas abiertas. El autor declara explícitamente que no reivindica mejoras sobre benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado.
+`naokinakamura/image-captioning-prototype` es un repositorio alojado en Hugging Face que, pese a su identificador y a la etiqueta `image-captioning`, no contiene un modelo entrenado desplegable. La propia model card lo describe como un "structured set of research notes on Image Captioning", es decir, un conjunto de notas de investigación con referencias de evaluación y preguntas abiertas. El autor declara explícitamente que no reivindica mejoras sobre benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado.
 
 El repositorio incluye únicamente dos artefactos de texto (`reading.md` y `README.md`) y, según el campo de metadatos, un fichero `safetensors` con un total de 24.832 parámetros, una cifra despreciable que sugiere un tensor de relleno o de prueba más que un modelo funcional. El tamano del repositorio es de 0.0 GB y no registra descargas ni interacciones.
 
@@ -87,5 +87,5 @@ No disponible. El artefacto no es un modelo de captioning desplegable, por lo qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/naokinakamura/image-captioning-prototype
+- Hugging Face: https://huggingface.co/naokinakamura/image-captioning-prototype
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este identificador.

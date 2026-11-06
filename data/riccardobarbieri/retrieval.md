@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables en el mismo repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RiccardoBarbieri/retrieval
+- Repositorio en Hugging Face: https://huggingface.co/RiccardoBarbieri/retrieval
 - Artículo relacionado con retrieval y IA generativa (RGB Model): https://arxiv.org/html/2504.20610
 - Perfil del autor en ScienceDirect: https://www.sciencedirect.com/author/35483096800/riccardo-barbieri
 - Perfil del autor en AIModels.fyi: https://www.aimodels.fyi/author-profile/riccardo-barbieri-f6c0335e-9c30-4bbd-afc5-81b596857a4c

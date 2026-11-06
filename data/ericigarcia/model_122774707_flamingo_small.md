@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - ericgarcia/model_122774707_flamingo_small](https://huggingface.co/ericgarcia/model_122774707_flamingo_small)
+- [Hugging Face - ericgarcia/model_122774707_flamingo_small](https://huggingface.co/ericgarcia/model_122774707_flamingo_small)
 - [Paper original de Flamingo (arXiv)](https://arxiv.org/abs/2204.14198) - referencia del modelo original, no de esta implementación.
 - [Resumen en PaperNotes](https://awesome.papernotes.org/en/era4_foundation_models/2022_flamingo/) - contexto sobre Flamingo original.
 

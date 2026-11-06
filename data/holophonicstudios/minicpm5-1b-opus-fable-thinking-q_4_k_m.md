@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo MiniCPM5-1b-Opus-Fable-Thinking-Q_4_K_M es un repositorio publicado en HuggingFace por el usuario HolophonicStudios. El identificador del modelo sugiere que se trata de una cuantización Q4_K_M, un formato típico de cuantización para ejecución en CPU o GPU con recursos limitados, aunque no se dispone de información pública que confirme la arquitectura, el número de parámetros, la longitud de contexto ni las capacidades concretas del modelo.
+El modelo MiniCPM5-1b-Opus-Fable-Thinking-Q_4_K_M es un repositorio publicado en Hugging Face por el usuario HolophonicStudios. El identificador del modelo sugiere que se trata de una cuantización Q4_K_M, un formato típico de cuantización para ejecución en CPU o GPU con recursos limitados, aunque no se dispone de información pública que confirme la arquitectura, el número de parámetros, la longitud de contexto ni las capacidades concretas del modelo.
 
 La única información verificable es su licencia, Apache 2.0, que permite el uso comercial y la redistribución. El repositorio no incluye una model card descriptiva, ni resultados de benchmarks, ni documentación técnica sobre los datos de entrenamiento o el proceso de alineación. Por tanto, el modelo no puede ser evaluado de forma rigurosa a partir de la información disponible.
 
@@ -59,5 +59,5 @@ No disponible. Dado que el modelo no cuenta con documentación técnica ni resul
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HolophonicStudios/MiniCPM5-1b-Opus-Fable-Thinking-Q_4_K_M
+- Hugging Face: https://huggingface.co/HolophonicStudios/MiniCPM5-1b-Opus-Fable-Thinking-Q_4_K_M
 - No se encontraron otros enlaces relevantes en los resultados de búsqueda web.

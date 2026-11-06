@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Morphy-360M-GGUF es una cuantizacion GGUF del modelo Morphy-360M, desarrollado por moolvylabs y publicado por mradermacher. El modelo base es un modelo de lenguaje de aproximadamente 360 millones de parametros, etiquetado en HuggingFace como asistente de correo electronico y conversacional. Esta version concreta ofrece los pesos en formato GGUF, lo que permite ejecutar el modelo en hardware modesto mediante runtimes como llama.cpp u Ollama.
+Morphy-360M-GGUF es una cuantizacion GGUF del modelo Morphy-360M, desarrollado por moolvylabs y publicado por mradermacher. El modelo base es un modelo de lenguaje de aproximadamente 360 millones de parametros, etiquetado en Hugging Face como asistente de correo electronico y conversacional. Esta version concreta ofrece los pesos en formato GGUF, lo que permite ejecutar el modelo en hardware modesto mediante runtimes como llama.cpp u Ollama.
 
 El problema que resuelve es el despliegue local de un modelo de lenguaje pequeno con licencia permisiva Apache-2.0, sin necesidad de infraestructura de servidores. Su relevancia actual radica en que los modelos compactos de 360M son adecuados para aplicaciones de edge, prototipado rapido y tareas de generacion de texto corto, especialmente cuando se busca reducir costes y latencia. La arquitectura exacta y la longitud de contexto no estan documentadas en la informacion disponible.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | SmolLM2-360M-GGUF | ~360M | No disponible en la informacion | GGUF | Apache-2.0 | en |
 | Sophira-360M-base-GGUF | ~360M | No disponible en la informacion | GGUF | Apache-2.0 | it |
 
-No se disponen de datos de benchmarks para ninguno de estos modelos en la informacion disponible. Todos comparten un tamano similar y han sido cuantizados por mradermacher. SmolLM2-360M es un modelo base de HuggingFace, mientras que Sophira-360M-base esta orientado al italiano. La diferencia funcional principal de Morphy es su etiquetado como asistente de correo electronico.
+No se disponen de datos de benchmarks para ninguno de estos modelos en la informacion disponible. Todos comparten un tamano similar y han sido cuantizados por mradermacher. SmolLM2-360M es un modelo base de Hugging Face, mientras que Sophira-360M-base esta orientado al italiano. La diferencia funcional principal de Morphy es su etiquetado como asistente de correo electronico.
 
 ## Limitaciones y advertencias
 

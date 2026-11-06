@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| project-llm-sft-v3-l2-h1p0-seed20261006 | ~11,96 B | no disponible | Si (any-to-any) | apache-2.0 + terminos Gemma 4 | HuggingFace (0 descargas) |
-| Gemma 4 (modelo base) | no disponible | no disponible | Si | Terminos Gemma 4 | HuggingFace / Google |
+| project-llm-sft-v3-l2-h1p0-seed20261006 | ~11,96 B | no disponible | Si (any-to-any) | apache-2.0 + terminos Gemma 4 | Hugging Face (0 descargas) |
+| Gemma 4 (modelo base) | no disponible | no disponible | Si | Terminos Gemma 4 | Hugging Face / Google |
 | Alternativas de ~12 B open source (p. ej. Gemma 2 9B, Llama 3.1 8B, Mistral 12B) | 8-12 B | 8k-128k segun modelo | Mayoritariamente texto | permisivas o con restricciones | amplia |
 
 No se dispone de datos de rendimiento comparado para este checkpoint, por lo que la comparativa se limita a parametros, licencia y disponibilidad.

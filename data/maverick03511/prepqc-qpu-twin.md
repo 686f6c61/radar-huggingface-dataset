@@ -88,7 +88,7 @@ No disponible. No existen modelos de aprendizaje automatico comparables porque e
 | Contexto | No aplica | No disponible |
 | Rendimiento | Recuentos de hardware publicados; TVD no disponible numericamente | No disponible |
 | Licencia | Apache 2.0 | No disponible |
-| Disponibilidad | Repositorio publico en HuggingFace y GitHub | No disponible |
+| Disponibilidad | Repositorio publico en Hugging Face y GitHub | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ No disponible. No existen modelos de aprendizaje automatico comparables porque e
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Maverick03511/prepqc-qpu-twin
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Maverick03511/prepqc-qpu-twin
 - Conjunto de datos de benchmarks: https://huggingface.co/datasets/Maverick03511/prepqc-exploitation-benchmarks
 - Proyecto fuente PrePQC Exploitation: https://github.com/Maverick0351a/prepqc-exploitation
 - Registro del primer trabajo en hardware IBM: https://github.com/Maverick0351a/prepqc-exploitation/blob/main/docs/IBM_QPU_PAIRED_SMOKE.md

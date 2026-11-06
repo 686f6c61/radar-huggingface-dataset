@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Kuisikawa, no contiene un modelo de lenguaje entrenado, sino un documento académico en formato Markdown titulado `paper_019164861_grounded_language.md`. El documento aborda el tema del lenguaje fundamentado (*grounded language*), que se refiere a la capacidad de los modelos de lenguaje para relacionar el texto con el mundo físico y sensorial. El paper sigue una estructura de secciones estándar (introducción, trabajos relacionados, método, experimentos y conclusión), emplea un estilo argumentativo y citas en formato numérico APA, y está redactado para su publicación en arXiv en formato LaTeX.
+Este repositorio de Hugging Face, publicado por el usuario Kuisikawa, no contiene un modelo de lenguaje entrenado, sino un documento académico en formato Markdown titulado `paper_019164861_grounded_language.md`. El documento aborda el tema del lenguaje fundamentado (*grounded language*), que se refiere a la capacidad de los modelos de lenguaje para relacionar el texto con el mundo físico y sensorial. El paper sigue una estructura de secciones estándar (introducción, trabajos relacionados, método, experimentos y conclusión), emplea un estilo argumentativo y citas en formato numérico APA, y está redactado para su publicación en arXiv en formato LaTeX.
 
 El repositorio no incluye pesos, arquitectura, dataset de entrenamiento ni ningún artefacto de modelo. Se trata exclusivamente de un artefacto textual, probablemente un borrador o manuscrito de investigación. Su relevancia actual radica en que el *grounded language* es un área activa de investigación en IA, con trabajos recientes como Mind's Eye (Google Research) que proponen paradigmas para fundamentar el razonamiento de los modelos en simulaciones del mundo físico. Sin embargo, este repositorio no ofrece un modelo evaluable ni código ejecutable, por lo que su utilidad práctica para desarrolladores es limitada.
 
@@ -60,7 +60,7 @@ No disponible. No existe un modelo comparable en este repositorio. Los resultado
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Kuisikawa/paper_019164861_grounded_language
+- Repositorio de Hugging Face: https://huggingface.co/Kuisikawa/paper_019164861_grounded_language
 - Paper "Mind's Eye: Grounded Language Model Reasoning through Simulation" (arXiv): https://arxiv.org/abs/2210.05359
 - Página de investigación de Google sobre Mind's Eye: https://research.google/pubs/minds-eye-grounded-language-model-reasoning-through-simulation/
 - Paper "SGHA: Evidence-Grounded Research Problem Discovery with Local Language Models" (arXiv): https://arxiv.org/abs/2608.17501

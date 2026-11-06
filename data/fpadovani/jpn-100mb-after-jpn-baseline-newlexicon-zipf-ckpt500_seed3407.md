@@ -34,7 +34,7 @@ La arquitectura es un transformer decoder estilo GPT-2, con 124 millones de par�
 
 - Investigación en lingüística computacional: el modelo permite estudiar cómo un transformer de tamaño pequeño adquiere un léxico artificial con propiedades estadísticas controladas, comparando el rendimiento antes y después del fine-tuning.
 - Experimentos de adquisición de lenguaje artificial: investigadores pueden usar este checkpoint para analizar la influencia de la distribución zipfiana en la capacidad de generalización del modelo.
-- Reproducibilidad de experimentos: al estar disponible en HuggingFace con safetensors, se puede reproducir el pipeline de fine-tuning y comparar con otros checkpoints de la misma serie (por ejemplo, ckpt4000 o variantes con otros léxicos).
+- Reproducibilidad de experimentos: al estar disponible en Hugging Face con safetensors, se puede reproducir el pipeline de fine-tuning y comparar con otros checkpoints de la misma serie (por ejemplo, ckpt4000 o variantes con otros léxicos).
 - Docencia en NLP: sirve como ejemplo práctico de fine-tuning con TRL y de cómo se estructura un experimento con modelos de lenguaje pequeños.
 - Análisis de sesgos en modelos pequeños: al ser un modelo de investigación, se puede usar para estudiar sesgos emergentes en modelos entrenados con datos sintéticos.
 - Benchmark de eficiencia: su tamaño reducido (124M) lo hace útil para probar técnicas de inferencia en hardware limitado, aunque no hay datos oficiales de rendimiento.
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 124M parámetros, en FP16 se necesitan aproximadamente 250 MB de VRAM solo para los pesos, más overhead de activaciones y KV-cache. En la práctica, una GPU con 2-4 GB de VRAM es suficiente para inferencia con batch pequeño.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 6GB, RTX 2060, RTX 3060, etc.) puede ejecutar el modelo sin problemas. También funciona en CPU, aunque con mayor latencia.
 - Cabe en consumer GPU: sí, es un modelo muy ligero.
-- Opciones de despliegue: al ser un modelo de Transformers, se puede usar con `pipeline` de HuggingFace, o servidores como vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con Ollama si se convierte.
+- Opciones de despliegue: al ser un modelo de Transformers, se puede usar con `pipeline` de Hugging Face, o servidores como vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con Ollama si se convierte.
 - Latencia y throughput: no hay datos oficiales, pero en una GPU moderna (RTX 3090) se esperan latencias de decodificación de unos pocos milisegundos por token y throughput de cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-newlexicon-zipf-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-newlexicon-zipf-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/qnrhsvy1
 - Repositorio de TRL: https://github.com/huggingface/trl

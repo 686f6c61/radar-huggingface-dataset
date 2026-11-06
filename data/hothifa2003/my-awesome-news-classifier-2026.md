@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`hothifa2003/my-awesome-news-classifier-2026` es un modelo publicado en HuggingFace por el usuario hothifa2003, cuyo nombre sugiere un clasificador de noticias. El repositorio esta etiquetado con `safetensors`, `distilbert` y `region:us`, y el recuento real de parametros leido de los pesos es de 66.956.548, una cifra coherente con la familia DistilBERT base mas una cabeza de clasificacion. El tamano del repositorio es de 0,5 GB.
+`hothifa2003/my-awesome-news-classifier-2026` es un modelo publicado en Hugging Face por el usuario hothifa2003, cuyo nombre sugiere un clasificador de noticias. El repositorio esta etiquetado con `safetensors`, `distilbert` y `region:us`, y el recuento real de parametros leido de los pesos es de 66.956.548, una cifra coherente con la familia DistilBERT base mas una cabeza de clasificacion. El tamano del repositorio es de 0,5 GB.
 
 La relevancia del modelo es limitada a dia de hoy: acumula 11 descargas y 0 likes desde su creacion el 11 de septiembre de 2026, y su ultima actualizacion data del 12 de septiembre de 2026. No se ha publicado informacion sobre datos de entrenamiento, licencia, idiomas soportados, pipeline declarado ni resultados de benchmarks, por lo que cualquier evaluacion de calidad debe hacerse de forma empirica por parte del usuario.
 
-La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a la tienda de muebles JYSK y no guardan ninguna relacion con este repositorio. Por tanto, esta ficha se limita a los metadatos verificables de HuggingFace y marca explicitamente como "no disponible" todo aquello que no aparece en la informacion proporcionada.
+La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a la tienda de muebles JYSK y no guardan ninguna relacion con este repositorio. Por tanto, esta ficha se limita a los metadatos verificables de Hugging Face y marca explicitamente como "no disponible" todo aquello que no aparece en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -96,5 +96,5 @@ No se dispone de una comparacion de rendimiento entre este checkpoint y las alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hothifa2003/my-awesome-news-classifier-2026
+- Modelo en Hugging Face: https://huggingface.co/hothifa2003/my-awesome-news-classifier-2026
 - Papers, blogs, repositorios o demos: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos correspondian al sitio de muebles jysk.de y no guardan relacion con este repositorio).

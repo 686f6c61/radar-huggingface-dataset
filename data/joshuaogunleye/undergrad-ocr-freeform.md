@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuaogunleye/undergrad-ocr-freeform` es un repositorio de HuggingFace que no contiene un modelo entrenado, sino una nota de investigacion (research note) sobre OCR freeform, es decir, reconocimiento optico de caracteres sobre documentos con estructura libre (formularios, recibos, facturas). El autor, joshuaogunleye, lo publica bajo licencia MIT con las etiquetas `research-notes` y `ocr-freeform`. El artefacto principal es el fichero `review.md`, que organiza la motivacion, el trabajo relacionado, una hipotesis falsable y un plan de evaluacion.
+`joshuaogunleye/undergrad-ocr-freeform` es un repositorio de Hugging Face que no contiene un modelo entrenado, sino una nota de investigacion (research note) sobre OCR freeform, es decir, reconocimiento optico de caracteres sobre documentos con estructura libre (formularios, recibos, facturas). El autor, joshuaogunleye, lo publica bajo licencia MIT con las etiquetas `research-notes` y `ocr-freeform`. El artefacto principal es el fichero `review.md`, que organiza la motivacion, el trabajo relacionado, una hipotesis falsable y un plan de evaluacion.
 
 La model card es explicita: el repositorio "no se presenta como un paper completado ni como una release de modelos entrenados". No incluye codigo, checkpoints, resultados de ablaciones ni mejoras de benchmark. Los datasets mencionados (FUNSD, SROIE, CORD) aparecen como contexto de evaluacion propuesto, no como evidencia de experimentos ejecutados.
 
@@ -12,7 +12,7 @@ El unico dato numerico real disponible es el recuento de parametros en safetenso
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (segun tag de HuggingFace; no se detalla variante ni configuracion) |
+| Arquitectura | transformer (segun tag de Hugging Face; no se detalla variante ni configuracion) |
 | Parametros totales | 49.600 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El unico dato numerico real disponible es el recuento de parametros en safetenso
 
 ## Arquitectura y entrenamiento
 
-El unico indicio arquitectonico es la etiqueta `transformer` de HuggingFace. La model card no describe la arquitectura interna, el numero de capas, la dimension oculta, el mecanismo de atencion ni si se trata de un encoder, un decoder o un modelo encoder-decoder orientado a tareas de vision-lenguaje. No hay informacion sobre tokenizador, resolucion de imagen de entrada ni preprocesado.
+El unico indicio arquitectonico es la etiqueta `transformer` de Hugging Face. La model card no describe la arquitectura interna, el numero de capas, la dimension oculta, el mecanismo de atencion ni si se trata de un encoder, un decoder o un modelo encoder-decoder orientado a tareas de vision-lenguaje. No hay informacion sobre tokenizador, resolucion de imagen de entrada ni preprocesado.
 
 No se documenta ningun proceso de entrenamiento: ni volumen de tokens, ni composicion del dataset, ni uso de RLHF/DPO, ni tecnicas de destilacion o decodificacion especulativa. El autor declara que el repositorio contiene una nota de investigacion y no un checkpoint entrenado, por lo que la ausencia de datos de entrenamiento es consistente con el contenido real del repositorio. El recuento de 49.600 parametros es incompatible con un modelo de OCR operativo.
 
@@ -76,6 +76,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuaogunleye/undergrad-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/joshuaogunleye/undergrad-ocr-freeform
 - Fichero principal de la nota: `review.md` dentro del repositorio
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repos de codigo o demos.

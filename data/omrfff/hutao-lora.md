@@ -27,7 +27,7 @@ El adaptador se basa en la arquitectura transformer del modelo Qwen3.5-4B, que e
 
 - Generación de texto conversacional: al ser un adaptador sobre Qwen3.5-4B, hereda las capacidades de generación de lenguaje del modelo base, incluyendo respuestas a preguntas y diálogo multi-turno.
 - Fine-tuning específico: el adaptador ha sido entrenado con SFT, por lo que puede haber ajustado el comportamiento del modelo hacia un dominio o estilo concreto, aunque no se especifica cuál.
-- Integración con Transformers: se puede cargar mediante la API de `pipeline` de HuggingFace, como se muestra en el ejemplo de la model card.
+- Integración con Transformers: se puede cargar mediante la API de `pipeline` de Hugging Face, como se muestra en el ejemplo de la model card.
 - No se documentan capacidades especiales como tool calling, agentes, visión o audio.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre adaptadores LoRA comparables en el mismo repositorio o con el mismo propósito. Se podría comparar con el modelo base Qwen3.5-4B, pero no hay datos de rendimiento del adaptador. Tampoco se conocen otros LoRAs de texto para el personaje Hu Tao en HuggingFace. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre adaptadores LoRA comparables en el mismo repositorio o con el mismo propósito. Se podría comparar con el modelo base Qwen3.5-4B, pero no hay datos de rendimiento del adaptador. Tampoco se conocen otros LoRAs de texto para el personaje Hu Tao en Hugging Face. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -66,7 +66,7 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OmrFFF/hutao-lora
+- Hugging Face: https://huggingface.co/OmrFFF/hutao-lora
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl
 - Resultados de búsqueda web (no relacionados directamente, pero con el mismo nombre):

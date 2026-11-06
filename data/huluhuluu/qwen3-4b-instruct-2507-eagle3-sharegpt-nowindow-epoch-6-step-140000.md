@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Funcion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-6-step-140000 | 202 M | Draft EAGLE3 para Qwen3-4B-Instruct-2507 | 2048 (entrenamiento) | Apache 2.0 | HuggingFace |
-| huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-6-step-155000 | 202 M (estimado) | Draft EAGLE3 para el mismo base, con ventana estandar | 2048 (entrenamiento) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4 B | Modelo instruct standalone | 32.768 (segun documentacion de Qwen) | Apache 2.0 | HuggingFace |
+| huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-6-step-140000 | 202 M | Draft EAGLE3 para Qwen3-4B-Instruct-2507 | 2048 (entrenamiento) | Apache 2.0 | Hugging Face |
+| huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-6-step-155000 | 202 M (estimado) | Draft EAGLE3 para el mismo base, con ventana estandar | 2048 (entrenamiento) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4 B | Modelo instruct standalone | 32.768 (segun documentacion de Qwen) | Apache 2.0 | Hugging Face |
 
 La comparativa directa con otros draft models de la misma categoria no esta disponible, ya que el autor no publica metricas de rendimiento. La diferencia principal entre los checkpoints de la coleccion es el punto de entrenamiento (época y paso) y la variante con o sin ventana deslizante. Frente al modelo base, este draft model es 20 veces mas pequeño y no es util por si solo, pero complementa al base en entornos de servicion.
 

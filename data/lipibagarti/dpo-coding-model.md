@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: lipibagarti/dpo-coding-model](https://huggingface.co/lipibagarti/dpo-coding-model)
+- [Hugging Face: lipibagarti/dpo-coding-model](https://huggingface.co/lipibagarti/dpo-coding-model)
 - [GitHub: LipiBagarti/dpo-alignment-project](https://github.com/LipiBagarti/dpo-alignment-project)
 - [Paper DPO (arXiv:2305.18290)](https://huggingface.co/papers/2305.18290)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

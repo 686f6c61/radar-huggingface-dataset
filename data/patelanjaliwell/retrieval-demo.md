@@ -46,7 +46,7 @@ Dado que el modelo no está entrenado, no existen casos de uso en producción ve
 - **Investigacion de arquitecturas de retrieval**: el codebase permite modificar la arquitectura Mixer y probar cambios estructurales antes de lanzar un entrenamiento completo.
 - **Pruebas de humo (smoke tests)**: el checkpoint de inicialización sirve para validar que el pipeline de carga, ejecución y guardado funciona correctamente sin necesidad de entrenar.
 - **Docencia en sistemas de recuperacion**: como ejemplo mínimo y legible de una implementación de Mixer aplicada a retrieval, útil en entornos académicos.
-- **Desarrollo de adaptadores**: al ser una implementación personalizada, se puede usar como base para escribir un adaptador que permita cargar el modelo en frameworks estándar como HuggingFace Transformers.
+- **Desarrollo de adaptadores**: al ser una implementación personalizada, se puede usar como base para escribir un adaptador que permita cargar el modelo en frameworks estándar como Hugging Face Transformers.
 - **Evaluacion metodologica**: el autor sugiere evaluar en **Flickr30k** con al menos tres semillas y un baseline de capacidad equivalente, lo que constituye un ejercicio de reproducibilidad.
 - **Comparacion de configuraciones**: `training_args.json` define una receta por defecto que puede modificarse para experimentar con distintos hiperparámetros y comparar resultados.
 
@@ -77,4 +77,4 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/patelanjaliwell/retrieval-demo](https://huggingface.co/patelanjaliwell/retrieval-demo)
+- Hugging Face: [https://huggingface.co/patelanjaliwell/retrieval-demo](https://huggingface.co/patelanjaliwell/retrieval-demo)

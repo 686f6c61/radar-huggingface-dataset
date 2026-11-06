@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`smai-a4-mlp` es un modelo de red neuronal de tipo perceptrón multicapa (MLP) publicado en HuggingFace por el usuario `arpita-sh`. Se trata de un artefacto académico correspondiente a la asignación 4 de la asignatura SMAI (Statistical Methods in Artificial Intelligence). No es un modelo de lenguaje: es un clasificador de imágenes entrenado sobre CIFAR-10, con una arquitectura fully-connected de tres capas (3072-256-128-10) y activación ReLU en las capas ocultas.
+`smai-a4-mlp` es un modelo de red neuronal de tipo perceptrón multicapa (MLP) publicado en Hugging Face por el usuario `arpita-sh`. Se trata de un artefacto académico correspondiente a la asignación 4 de la asignatura SMAI (Statistical Methods in Artificial Intelligence). No es un modelo de lenguaje: es un clasificador de imágenes entrenado sobre CIFAR-10, con una arquitectura fully-connected de tres capas (3072-256-128-10) y activación ReLU en las capas ocultas.
 
 El modelo resuelve una tarea de clasificación de imágenes en 10 clases (las clases de CIFAR-10: avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión). Su relevancia es exclusivamente educativa: sirve como referencia de implementación de un MLP desde cero con SGD, cross-entropy y normalización de entradas, no como componente para producción.
 
-El repositorio tiene un tamaño de 0,0 GB según HuggingFace, lo que es coherente con un MLP pequeño (los pesos de una red 3072-256-128-10 ocupan del orden de 820.000 parámetros en float32, unos 3,3 MB). No dispone de descargas ni likes, y la model card es extremadamente escueta: solo describe la arquitectura y el preprocesado.
+El repositorio tiene un tamaño de 0,0 GB según Hugging Face, lo que es coherente con un MLP pequeño (los pesos de una red 3072-256-128-10 ocupan del orden de 820.000 parámetros en float32, unos 3,3 MB). No dispone de descargas ni likes, y la model card es extremadamente escueta: solo describe la arquitectura y el preprocesado.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Contexto | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smai-a4-mlp | MLP 3072-256-128-10 | ~820.000 | No aplica | No disponible | No disponible | HuggingFace |
+| smai-a4-mlp | MLP 3072-256-128-10 | ~820.000 | No aplica | No disponible | No disponible | Hugging Face |
 | LeNet-5 | CNN | ~60.000 | No aplica | No disponible (referencia histórica) | No disponible | Múltiples implementaciones |
 | ResNet-18 | CNN | ~11,2 M | No aplica | ~93-95 % típico en CIFAR-10 | MIT (implementaciones comunes) | torchvision |
 | VGG-11 | CNN | ~132 M | No aplica | ~92-93 % típico en CIFAR-10 | No disponible | torchvision |
@@ -83,10 +83,10 @@ La comparación directa es difícil porque `smai-a4-mlp` no publica métricas. F
 - Riesgo de sobreajuste: 100 épocas con SGD lr=0,05 y sin regularización explícita en un MLP de ~820.000 parámetros sobre 50.000 imágenes es propenso a overfitting; no se documenta validación.
 - Limitación de entrada: solo acepta imágenes de 32×32×3; no hay redimensionado ni aumento de datos en la inferencia.
 - Repositorio con 0 descargas y 0 likes: no hay evidencia de uso comunitario ni de mantenimiento.
-- El tamaño del repo indicado por HuggingFace (0,0 GB) sugiere que los pesos pueden no estar subidos o que el redondeo oculta un tamaño muy pequeño; conviene verificar los archivos antes de confiar en la disponibilidad del `.npz`.
+- El tamaño del repo indicado por Hugging Face (0,0 GB) sugiere que los pesos pueden no estar subidos o que el redondeo oculta un tamaño muy pequeño; conviene verificar los archivos antes de confiar en la disponibilidad del `.npz`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arpita-sh/smai-a4-mlp
+- Modelo en Hugging Face: https://huggingface.co/arpita-sh/smai-a4-mlp
 - Dataset CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

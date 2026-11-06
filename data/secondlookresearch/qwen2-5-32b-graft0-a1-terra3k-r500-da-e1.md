@@ -75,7 +75,7 @@ No hay datos de rendimiento del adaptador, por lo que la comparacion se limita a
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-32B-graft0-a1-terra3k-r500-da-e1 | Adaptador LoRA (segunda etapa) | Adaptador de aproximadamente 528 M estimados sobre base de 32B | No disponible (heredado de la base) | No disponible | Publicado en HuggingFace, 0 descargas, requiere adaptador A1 y base parcheada |
+| Qwen2.5-32B-graft0-a1-terra3k-r500-da-e1 | Adaptador LoRA (segunda etapa) | Adaptador de aproximadamente 528 M estimados sobre base de 32B | No disponible (heredado de la base) | No disponible | Publicado en Hugging Face, 0 descargas, requiere adaptador A1 y base parcheada |
 | Qwen/Qwen2.5-32B | Modelo base denso | Aproximadamente 32B | Segun la documentacion oficial de Qwen2.5-32B | La del modelo base (consultar su ficha) | Ampliamente disponible |
 | Qwen2.5-32B-Instruct | Fine-tune oficial de instrucciones | Aproximadamente 32B | Segun la documentacion oficial de Qwen2.5 | La del modelo base (consultar su ficha) | Ampliamente disponible, listo para uso directo |
 | Qwen2.5-Coder-32B | Fine-tune especializado en codigo | Aproximadamente 32B | Segun la documentacion oficial de Qwen2.5 | La del modelo base (consultar su ficha) | Ampliamente disponible |

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`giakhuyendihoc/task-focus-ablations` es una coleccion de checkpoints de ablation de **pi0.5**, un modelo vision-language-action (VLA) de la familia pi0, implementado en PyTorch sobre el stack **openpi** y afinado sobre el benchmark de manipulacion **LIBERO**. El autor es el usuario de HuggingFace `giakhuyendihoc` y el repositorio se publica bajo licencia Apache 2.0. No es un modelo de proposito general, sino un conjunto de cinco variantes experimentales disenadas para medir el efecto de una tecnica concreta de supervision auxiliar denominada **TaskFocus**.
+`giakhuyendihoc/task-focus-ablations` es una coleccion de checkpoints de ablation de **pi0.5**, un modelo vision-language-action (VLA) de la familia pi0, implementado en PyTorch sobre el stack **openpi** y afinado sobre el benchmark de manipulacion **LIBERO**. El autor es el usuario de Hugging Face `giakhuyendihoc` y el repositorio se publica bajo licencia Apache 2.0. No es un modelo de proposito general, sino un conjunto de cinco variantes experimentales disenadas para medir el efecto de una tecnica concreta de supervision auxiliar denominada **TaskFocus**.
 
 La innovacion que se evalua son los *focus tokens*: tokens de prefijo aprendidos y supervisados para predecir donde estan la pinza, el objeto manipulado y el objetivo (en el instante actual y 10 fotogramas hacia delante), ademas de relaciones pinza-objeto, contacto y fase de la tarea. El gradiente de esa perdida auxiliar hacia el backbone se escala por 0.1. Cada carpeta del repositorio corresponde a una configuracion (`pi05_libero_tf_*`) del fork de openpi del autor y contiene `model.safetensors`, `metadata.pt` y `assets/` con las estadisticas de normalizacion.
 
@@ -104,7 +104,7 @@ No se dispone de datos de otros VLAs comparables (por ejemplo, RT-2, OpenVLA u O
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/giakhuyendihoc/task-focus-ablations
+- Hugging Face: https://huggingface.co/giakhuyendihoc/task-focus-ablations
 - Repositorio openpi (stack base en PyTorch sobre el que se implementa pi0.5): no se proporciona URL en la informacion disponible; la model card menciona un fork de openpi con las configs `pi05_libero_tf_*`, sin enlace.
 - Paper de pi0.5: no disponible en la informacion proporcionada.
 - Benchmark LIBERO / LIBERO-Plus: no se proporcionan enlaces en la informacion disponible.

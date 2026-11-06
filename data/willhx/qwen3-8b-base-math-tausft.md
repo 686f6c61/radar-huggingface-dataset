@@ -73,10 +73,10 @@ No se dispone de datos verificados de alternativas externas al linaje en la info
 
 | Modelo | Parámetros | Contexto | Datos de evaluación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| willhx/Qwen3-8B-Base-Math-TauSFT (este) | 8,19 B | 32.768 tokens (heredado, no declarado en la model card) | No publicados; pérdida de SFT 0,3738237 | apache-2.0 | Pesos BF16 en HuggingFace, 0 descargas |
-| willhx/Qwen3-8B-Base-Math (etapa previa) | No disponible en los metadatos consultados | No disponible | No disponible | No disponible en la información consultada | Pesos en HuggingFace |
-| Qwen/Qwen3-8B-Base (raíz del linaje) | 8,19 B (familia Qwen3-8B) | 32.768 tokens según descripciones de terceros | No disponible | No disponible en la información consultada | Pesos en HuggingFace |
-| willhx/Qwen3-8B-Base-Math-SeaSFT-Search-TauSFT (variante del mismo autor) | No disponible | No disponible | No disponible | No disponible | Pesos en HuggingFace |
+| willhx/Qwen3-8B-Base-Math-TauSFT (este) | 8,19 B | 32.768 tokens (heredado, no declarado en la model card) | No publicados; pérdida de SFT 0,3738237 | apache-2.0 | Pesos BF16 en Hugging Face, 0 descargas |
+| willhx/Qwen3-8B-Base-Math (etapa previa) | No disponible en los metadatos consultados | No disponible | No disponible | No disponible en la información consultada | Pesos en Hugging Face |
+| Qwen/Qwen3-8B-Base (raíz del linaje) | 8,19 B (familia Qwen3-8B) | 32.768 tokens según descripciones de terceros | No disponible | No disponible en la información consultada | Pesos en Hugging Face |
+| willhx/Qwen3-8B-Base-Math-SeaSFT-Search-TauSFT (variante del mismo autor) | No disponible | No disponible | No disponible | No disponible | Pesos en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No se dispone de datos verificados de alternativas externas al linaje en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willhx/Qwen3-8B-Base-Math-TauSFT
+- Modelo en Hugging Face: https://huggingface.co/willhx/Qwen3-8B-Base-Math-TauSFT
 - Modelo base (etapa Math): https://huggingface.co/willhx/Qwen3-8B-Base-Math
 - Raíz del linaje: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Variante del mismo autor: https://huggingface.co/willhx/Qwen3-8B-Base-Math-SeaSFT-Search-TauSFT

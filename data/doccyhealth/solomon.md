@@ -88,7 +88,7 @@ No se han identificado en la información proporcionada alternativas externas de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Solomon v1.1 | Adaptador LoRA r64 sobre Qwen/Qwen3.8-27B | No disponible | 706 de 802 preguntas correctas en panel reservado de 54 documentos | Apache-2.0 | HuggingFace, 0 descargas, 27 likes |
+| Solomon v1.1 | Adaptador LoRA r64 sobre Qwen/Qwen3.8-27B | No disponible | 706 de 802 preguntas correctas en panel reservado de 54 documentos | Apache-2.0 | Hugging Face, 0 descargas, 27 likes |
 | Solomon v1.0 | Adaptador LoRA r64 sobre Qwen/Qwen3.8-27B | No disponible | 679 de 802 preguntas correctas en el mismo panel | Apache-2.0 | Versión anterior citada en la model card; repositorio propio no disponible |
 | Alternativas externas equivalentes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -109,7 +109,7 @@ No se han identificado en la información proporcionada alternativas externas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DoccyHealth/Solomon
+- Modelo en Hugging Face: https://huggingface.co/DoccyHealth/Solomon
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (revisión fijada `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Paper, blog, repositorio o demo del autor: no disponibles en la información proporcionada.
 - La búsqueda web realizada no devolvió resultados relacionados con el modelo: los únicos enlaces recuperados corresponden a un medio de noticias regional alemán (blick.de) y no guardan relación con Solomon, por lo que se omiten.

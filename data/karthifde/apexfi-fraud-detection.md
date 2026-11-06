@@ -72,7 +72,7 @@ El autor advierte que el ROC-AUC de 0,9736 en IEEE-CIS supera al mejor modelo in
 
 No se proporcionan requisitos oficiales de hardware en la documentación. Dado que se trata de un modelo LightGBM y un GraphSAGE (que no son modelos de lenguaje), las necesidades de cómputo son modestas en comparación con LLMs. Estimaciones razonables basadas en el tipo de modelo:
 
-- LightGBM: puede ejecutarse en CPU con pocos GB de RAM; el archivo .txt del booster es pequeño (no se especifica tamaño, pero el repositorio total es de 0,0 GB según HuggingFace).
+- LightGBM: puede ejecutarse en CPU con pocos GB de RAM; el archivo .txt del booster es pequeño (no se especifica tamaño, pero el repositorio total es de 0,0 GB según Hugging Face).
 - GraphSAGE: requiere una GPU para entrenamiento eficiente, pero la inferencia puede hacerse en CPU si el grafo no es extremadamente grande. Para el dataset DGraph-Fin (3,7 millones de cuentas), se necesitaría una GPU con al menos 8-16 GB de VRAM para manejar el grafo en memoria, aunque no hay datos concretos.
 - El script de ejemplo `predict_example.py` sugiere que la inferencia es ligera y puede ejecutarse en un entorno estándar.
 - Opciones de despliegue: al ser modelos personalizados, se usarían bibliotecas como LightGBM, PyTorch Geometric y pickle para el stacker. No es compatible directamente con vLLM, llama.cpp u Ollama.
@@ -102,8 +102,8 @@ La comparación con GADBench no es directa por la diferencia en el régimen de e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karthifde/apexfi-fraud-detection
+- Repositorio Hugging Face: https://huggingface.co/karthifde/apexfi-fraud-detection
 - Repositorio GitHub del proyecto completo: https://github.com/KarthickRamAlagar/apexfi-fraud-graph
 - README del proyecto en GitHub: https://github.com/KarthickRamAlagar/apexfi-fraud-graph/blob/main/README.md
 - Artículo relacionado (no directamente del autor): https://ijsrm.net/index.php/ijsrm/article/view/5898
-- Otro modelo de detección de fraude en HuggingFace: https://huggingface.co/saifhmb/fraud-detection-model
+- Otro modelo de detección de fraude en Hugging Face: https://huggingface.co/saifhmb/fraud-detection-model

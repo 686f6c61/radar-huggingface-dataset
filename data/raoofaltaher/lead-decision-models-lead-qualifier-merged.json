@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "raoofaltaher/lead-decision-models-lead-qualifier-merged",
+  "slug": "raoofaltaher-lead-decision-models-lead-qualifier-merged",
+  "author": "raoofaltaher",
+  "url": "https://huggingface.co/raoofaltaher/lead-decision-models-lead-qualifier-merged",
+  "created_at": "2026-11-03T12:29:13.000Z",
+  "updated_at": "2026-11-03T20:29:07.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "unsloth",
+  "languages": [],
+  "tags": [
+    "unsloth",
+    "safetensors",
+    "lfm3",
+    "decision-model",
+    "clef",
+    "lead-qualification",
+    "custom_code",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 7055094439,
+  "storage_human": "7.1 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "raoofaltaher/lead-decision-models-lead-qualifier · Hugging Face",
+      "url": "https://huggingface.co/raoofaltaher/lead-decision-models-lead-qualifier",
+      "snippet": "The tutorial Fine-Tune LFM3, a Large Language Model, into a Decision Model with Unsloth: Lead Qualification with Claude Code over MCP trains and uses this model step by step, and the article Decision Models: Fine-Tuning LLMs for Structured Decisions explains decision models. Both are on raoofaltaher ..."
+    },
+    {
+      "title": "raoofaltaher/lead-decision-models-lead-qualifier-merged · Hugging Face",
+      "url": "https://huggingface.co/raoofaltaher/lead-decision-models-lead-qualifier-merged",
+      "snippet": "A decision model (lead qualifier) fine-tuned from LiquidAI/LFM3-1.7B (revision ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7) with Unsloth's FastDecisionModel and a Clef decision head."
+    },
+    {
+      "title": "GitHub - raoofaltaher/lead-decision-models: Fine-tune LFM3 into ...",
+      "url": "https://github.com/raoofaltaher/lead-decision-models",
+      "snippet": "The models are on the Hugging Face Hub: lead qualifier (merged) and reply router (merged). outputs/hub-check.json shows that each Hub copy holds the files of this run and predicts the same classes."
+    },
+    {
+      "title": "lead-decision-models/README.md at main · raoofaltaher/lead ... - GitHub",
+      "url": "https://github.com/raoofaltaher/lead-decision-models/blob/main/README.md",
+      "snippet": "The models are on the Hugging Face Hub: lead qualifier (merged) and reply router (merged). outputs/hub-check.json shows that each Hub copy holds the files of this run and predicts the same classes."
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "The qualifier \"large\" in \"large language model\" is inherently vague, as there is no definitive threshold for the number of parameters required to qualify as \"large\"."
+    }
+  ]
+}

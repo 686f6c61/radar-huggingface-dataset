@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables de otros autores con car
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-RealCoder-v3
+- Hugging Face (adaptador): https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-RealCoder-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión fusionada: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-Merged
 - Adaptador 64 capas UltraCoder-v2: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-64Layer-UltraCoder-v2

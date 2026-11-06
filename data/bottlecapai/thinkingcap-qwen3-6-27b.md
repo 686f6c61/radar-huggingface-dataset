@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.6-27B es un modelo multimodal (image-text-to-text) desarrollado por el usuario bottlecapai, publicado en HuggingFace el 6 de julio de 2026. Se trata de un fine-tune del modelo base Qwen/Qwen3.6-27B, orientado a la eficiencia de tokens y al "pensamiento eficiente" (efficient thinking), según los tags del repositorio. Con 33.872 descargas y 656 likes en pocos días, ha generado interés en la comunidad por su enfoque en reducir el coste computacional de la generación de razonamiento.
+ThinkingCap-Qwen3.6-27B es un modelo multimodal (image-text-to-text) desarrollado por el usuario bottlecapai, publicado en Hugging Face el 6 de julio de 2026. Se trata de un fine-tune del modelo base Qwen/Qwen3.6-27B, orientado a la eficiencia de tokens y al "pensamiento eficiente" (efficient thinking), según los tags del repositorio. Con 33.872 descargas y 656 likes en pocos días, ha generado interés en la comunidad por su enfoque en reducir el coste computacional de la generación de razonamiento.
 
-El modelo está diseñado para tareas conversacionales y de comprensión de imágenes, aprovechando la arquitectura del Qwen3.6-27B. Aunque la información pública es limitada, su etiquetado sugiere que incorpora técnicas de optimización de tokens para acelerar la inferencia y reducir el uso de memoria, lo que lo hace relevante para despliegues en entornos con recursos restringidos. No se han publicado detalles técnicos completos sobre arquitectura, entrenamiento o rendimiento en la ficha de HuggingFace.
+El modelo está diseñado para tareas conversacionales y de comprensión de imágenes, aprovechando la arquitectura del Qwen3.6-27B. Aunque la información pública es limitada, su etiquetado sugiere que incorpora técnicas de optimización de tokens para acelerar la inferencia y reducir el uso de memoria, lo que lo hace relevante para despliegues en entornos con recursos restringidos. No se han publicado detalles técnicos completos sobre arquitectura, entrenamiento o rendimiento en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No disponible. No se han proporcionado datos de modelos comparables en la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
+- Repositorio Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (referencia, no confirmado como enlace oficial en la ficha)

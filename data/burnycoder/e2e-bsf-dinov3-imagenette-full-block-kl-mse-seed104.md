@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (e2e-bsf-dinov3-imagenette) | 9,6 M (featurizer) + backbone ViT-B/16 | no aplica | Precisión 99,2774 %, KL 0,029991647 | MIT (featurizer); DINOv3 con licencia separada | HuggingFace, 20 descargas |
+| Este modelo (e2e-bsf-dinov3-imagenette) | 9,6 M (featurizer) + backbone ViT-B/16 | no aplica | Precisión 99,2774 %, KL 0,029991647 | MIT (featurizer); DINOv3 con licencia separada | Hugging Face, 20 descargas |
 | SAE ReLU convencional sobre DINOv3 | no disponible | no aplica | no disponible | variable | no disponible |
 | Block-sparse featurizer de Goodfire | no disponible | no aplica | no disponible | no disponible | Repo público |
-| DINOv3 ViT-B/16 sin featurizer | ~86 M | no aplica | no disponible en esta ficha | licencia DINOv3 | HuggingFace (acceso autorizado) |
+| DINOv3 ViT-B/16 sin featurizer | ~86 M | no aplica | no disponible en esta ficha | licencia DINOv3 | Hugging Face (acceso autorizado) |
 
 No se dispone de datos numéricos comparables de las alternativas en la información proporcionada; la comparativa es estructural, no de rendimiento.
 
@@ -89,7 +89,7 @@ No se dispone de datos numéricos comparables de las alternativas en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed104
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed104
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Preregistro: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/42ailab/PaddleOCR-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/42ailab/PaddleOCR-ONNX
 - Repositorio en ModelScope: https://modelscope.cn/models/42ailab/PaddleOCR-ONNX
 - Sitio del autor del respaldo: https://42ailab.com
 - Aplicacion 42model: https://42model.com

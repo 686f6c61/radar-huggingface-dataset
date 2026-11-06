@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-oQ4e-fp16 es una version cuantizada del modelo LFM2.5-24B-A2B, publicada por el usuario jancirnodziewiaty en HuggingFace. Se trata de un checkpoint de 23.971.587.712 parametros (aproximadamente 24B) con arquitectura `lfm2_moe`, es decir, un transformer de mezcla de expertos (MoE), segun se desprende del tag de arquitectura del repositorio. La nomenclatura "A2B" sugiere aproximadamente 2B parametros activos, aunque este dato no se confirma en la informacion disponible.
+LFM2.5-24B-A2B-oQ4e-fp16 es una version cuantizada del modelo LFM2.5-24B-A2B, publicada por el usuario jancirnodziewiaty en Hugging Face. Se trata de un checkpoint de 23.971.587.712 parametros (aproximadamente 24B) con arquitectura `lfm2_moe`, es decir, un transformer de mezcla de expertos (MoE), segun se desprende del tag de arquitectura del repositorio. La nomenclatura "A2B" sugiere aproximadamente 2B parametros activos, aunque este dato no se confirma en la informacion disponible.
 
 La relevancia de esta publicacion es practica: aplica cuantizacion de precision mixta con la herramienta oQ de oMLX (v0.7.3) para reducir el peso del checkpoint hasta 13.038 GiB, con una media efectiva de 4.672 bits por peso. El resultado es un modelo de ~24B que ocupa 27,8 GB en el repositorio y que puede ejecutarse en entornos con memoria unificada limitada, especialmente en hardware Apple Silicon gracias al formato MLX.
 
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para comparar este checkpoint con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jancirnodziewiaty/LFM2.5-24B-A2B-oQ4e-fp16
+- Repositorio Hugging Face: https://huggingface.co/jancirnodziewiaty/LFM2.5-24B-A2B-oQ4e-fp16
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx

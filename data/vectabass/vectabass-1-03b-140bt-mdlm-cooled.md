@@ -6,7 +6,7 @@ vectabass-1.03b-140bt-mdlm-cooled es un modelo de lenguaje de difusión enmascar
 
 La arquitectura parte del stack tipo Llama de los modelos AR del autor, con atención exclusiva auto-atencional (XSA) y GQA 2:1, pero convertida en bidireccional y entrenada con el objetivo MDLM: alpha_t lineal (1 - t) y pérdida de ELBO negativo en tiempo continuo, equivalente a una entropía cruzada enmascarada ponderada por 1/t sobre todas las posiciones. La ventana de contexto es de 2048 tokens con RoPE (base 10000) y el vocabulario es GPT-2 BPE (50257 tokens) más 26 tokens especiales, con el token de máscara en el id 50283.
 
-Es relevante ahora porque ofrece, con licencia Apache 2.0, un punto de medida reproducible para comparar modelos de difusión de texto frente a autorregresivos del mismo tamaño y mismos datos, algo poco habitual en la literatura abierta. No obstante, es un modelo base de investigación: no está ajustado a instrucciones ni a seguridad, no se han medido benchmarks zero-shot y sus continuaciones contienen errores factuales con frecuencia. Su pipeline declarado en HuggingFace es *feature-extraction*, aunque el código incluido expone generación mediante `diffusion_generate`.
+Es relevante ahora porque ofrece, con licencia Apache 2.0, un punto de medida reproducible para comparar modelos de difusión de texto frente a autorregresivos del mismo tamaño y mismos datos, algo poco habitual en la literatura abierta. No obstante, es un modelo base de investigación: no está ajustado a instrucciones ni a seguridad, no se han medido benchmarks zero-shot y sus continuaciones contienen errores factuales con frecuencia. Su pipeline declarado en Hugging Face es *feature-extraction*, aunque el código incluido expone generación mediante `diffusion_generate`.
 
 ## Especificaciones técnicas
 
@@ -84,7 +84,7 @@ El error estándar en bits por byte es de aproximadamente 0,06 con una semilla y
 
 | Modelo | Parámetros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-1.03b-140bt-mdlm-cooled | 1.028.812.800 (919,4M no-embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | HuggingFace |
+| vectabass-1.03b-140bt-mdlm-cooled | 1.028.812.800 (919,4M no-embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | Hugging Face |
 | Cuadrado AR equivalente de VectaBass | misma escalera de 100M a 1.6B no-embedding | no disponible | Autorregresivo | no disponible | Publicado por separado |
 | Otros MDLM abiertos de ~1B | no disponible | no disponible | Difusión enmascarada | no disponible | no disponible |
 
@@ -106,7 +106,7 @@ La comparación más pertinente es interna: el cuadrado autorregresivo del mismo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.03b-140bt-mdlm-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.03b-140bt-mdlm-cooled
 - Repositorio de datos (referencia en la model card): `DATA.md` dentro del repositorio del modelo
 - Dataset de texto educativo: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset multilingüe: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

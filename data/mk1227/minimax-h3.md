@@ -6,7 +6,7 @@ MiniMax H3 es un sistema generativo omni-modal de propósito general desarrollad
 
 El sistema completo se compone de tres módulos: H3-Context-IR, un sistema dedicado a interpretar y refinar instrucciones multimodales complejas convirtiéndolas en una representación intermedia (Context Intermediate Representation); H3-Base, que genera audio y vídeo a resolución 768p a partir de esa representación; y H3-Regenerate-2K, que regenera el resultado a 2K aprovechando tanto la capacidad generativa del modelo como la información del contexto original.
 
-El repositorio está publicado en HuggingFace bajo la licencia comunitaria de MiniMax (minimax-h3-community-license-agreement), con un tamaño de repositorio de 353,9 GB y formato de pesos safetensors, compatible con la librería diffusers. Se puede usar también vía API en plataforma (global y China), mediante la webapp Hailuo AI o mediante aplicaciones de escritorio.
+El repositorio está publicado en Hugging Face bajo la licencia comunitaria de MiniMax (minimax-h3-community-license-agreement), con un tamaño de repositorio de 353,9 GB y formato de pesos safetensors, compatible con la librería diffusers. Se puede usar también vía API en plataforma (global y China), mediante la webapp Hailuo AI o mediante aplicaciones de escritorio.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ No se han identificado alternativas con datos suficientes en la información pro
 ## Enlaces
 
 - Repositorio analizado: https://huggingface.co/Mk1227/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Skills de prompting: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

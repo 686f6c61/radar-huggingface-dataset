@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-riley-fem-lora es un adaptador LoRA de edicion de imagen publicado por RunningHubAI, la cuenta de la plataforma RunningHub en HuggingFace. No es un modelo de lenguaje ni un modelo base: se trata de un peso adicional que se carga sobre un modelo de difusion previo, en este caso "krea2" segun indica el propio autor en la model card. Su funcion es introducir un concepto o personaje concreto, activado mediante la palabra clave (trigger word) "Riley", dentro de flujos de generacion y edicion de imagen condicionados por texto.
+rh-riley-fem-lora es un adaptador LoRA de edicion de imagen publicado por RunningHubAI, la cuenta de la plataforma RunningHub en Hugging Face. No es un modelo de lenguaje ni un modelo base: se trata de un peso adicional que se carga sobre un modelo de difusion previo, en este caso "krea2" segun indica el propio autor en la model card. Su funcion es introducir un concepto o personaje concreto, activado mediante la palabra clave (trigger word) "Riley", dentro de flujos de generacion y edicion de imagen condicionados por texto.
 
 El repositorio ocupa 0,2 GB y contiene un unico fichero de pesos en formato safetensors de 218 MiB (`riley_lora_v1_000002750.safetensors`). La etiqueta de pipeline es `image-text-to-image` y las etiquetas declaradas son `comfyui` y `lora`, lo que situa al modelo en el ecosistema de ComfyUI, RunningHub y Hugging Face como plataformas previstas de uso.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no identifica otros adaptadores LoRA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-riley-fem-lora
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-riley-fem-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2091447704609431554
 - Pagina del autor en RunningHub (@Lars): https://www.runninghub.ai/user-center/2081023300781174786
 - RunningHub (sitio internacional): https://www.runninghub.ai

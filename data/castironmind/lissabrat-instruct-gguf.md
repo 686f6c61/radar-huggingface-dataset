@@ -116,7 +116,7 @@ LissaBrat es de 3 a 12 veces más pequeño que las alternativas generalistas, pe
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/CastIronMind/LissaBrat-Instruct-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/CastIronMind/LissaBrat-Instruct-GGUF
 - Modelo base (pesos bf16): https://huggingface.co/CastIronMind/LissaBrat-Instruct
 - Demo interactiva (Lissa Playground): https://huggingface.co/spaces/CastIronMind/Lissa-Playground
 - No se han encontrado en la búsqueda web enlaces adicionales relevantes (papers, blogs o repos) sobre este modelo.

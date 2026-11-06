@@ -63,8 +63,8 @@ No se dispone de información suficiente para realizar una comparativa. No se co
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed5-epoch3)
-- [HuggingFace - variante sin seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft)
-- [HuggingFace - variante seed3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-v2-sft-seed3)
+- [Hugging Face - longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed5-epoch3)
+- [Hugging Face - variante sin seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft)
+- [Hugging Face - variante seed3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-v2-sft-seed3)
 - [ModelHub espejo](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft)
 - [Página en slopllm.com](https://slopllm.com/m/qwen3-8b-german-city-names-v2-sft)

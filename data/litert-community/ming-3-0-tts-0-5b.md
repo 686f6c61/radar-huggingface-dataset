@@ -89,7 +89,7 @@ No se han identificado en la informacion disponible alternativas comparables con
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B
+- Ficha en Hugging Face: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - Contrato de entradas/salidas del paquete: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B/blob/main/contract.json
 - Demo en video: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B/resolve/main/assets/demo.mp4

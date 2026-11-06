@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen1
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen1
 - Variante hermana (control): https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-gen1
 - Variante relacionada: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

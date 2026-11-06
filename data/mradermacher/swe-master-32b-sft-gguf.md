@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SWE-Master-32B-SFT-GGUF es la versión cuantizada en formato GGUF del modelo RUC-AIBOX/SWE-Master-32B-SFT, un modelo de lenguaje de 32.763.876.352 parámetros (aproximadamente 32,8 mil millones) orientado a tareas de ingeniería de software. La cuantización la ha realizado mradermacher, un conocido publicador de cuantizaciones GGUF en HuggingFace, a partir de los pesos originales del modelo base desarrollado por RUC-AIBOX. El modelo está etiquetado como conversacional y compatible con endpoints, y su idioma declarado es el inglés.
+SWE-Master-32B-SFT-GGUF es la versión cuantizada en formato GGUF del modelo RUC-AIBOX/SWE-Master-32B-SFT, un modelo de lenguaje de 32.763.876.352 parámetros (aproximadamente 32,8 mil millones) orientado a tareas de ingeniería de software. La cuantización la ha realizado mradermacher, un conocido publicador de cuantizaciones GGUF en Hugging Face, a partir de los pesos originales del modelo base desarrollado por RUC-AIBOX. El modelo está etiquetado como conversacional y compatible con endpoints, y su idioma declarado es el inglés.
 
 El modelo resuelve el problema de ejecutar un LLM de 32B en hardware de consumo o en entornos con VRAM limitada, ofreciendo un abanico de cuantizaciones que van desde Q2_K (12,4 GB) hasta Q8_0 (34,9 GB). Esto permite desplegar el modelo en GPUs consumer de gama alta o en configuraciones multi-GPU más modestas, manteniendo un equilibrio entre calidad y huella de memoria. La relevancia actual radica en la popularidad de los modelos especializados en código y resolución de problemas de software (SWE), un nicho donde los modelos de 32B ofrecen un compromiso atractivo entre capacidad y coste de inferencia.
 
@@ -84,7 +84,7 @@ Los datos de los modelos alternativos provienen de documentación pública gener
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/SWE-Master-32B-SFT-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/SWE-Master-32B-SFT-GGUF
 - Modelo base: https://huggingface.co/RUC-AIBOX/SWE-Master-32B-SFT
 - Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#SWE-Master-32B-SFT-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

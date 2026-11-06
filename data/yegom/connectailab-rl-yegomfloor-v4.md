@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-yegomfloor-v4 | No disponible (base 0,8B) | No disponible | Apache 2.0 | HuggingFace |
+| connectailab-rl-yegomfloor-v4 | No disponible (base 0,8B) | No disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yegom/connectailab-rl-yegomfloor-v4
+- Hugging Face: https://huggingface.co/yegom/connectailab-rl-yegomfloor-v4
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

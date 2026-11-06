@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed455` es un ajuste fino (fine-tune) del modelo base `fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455`, desarrollado por fpadovani, investigador afiliado a la Universidad de Groningen. Se trata de un modelo de generación de texto basado en la arquitectura GPT-2, con aproximadamente 124,7 millones de parámetros, entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace.
+El modelo `fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed455` es un ajuste fino (fine-tune) del modelo base `fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455`, desarrollado por fpadovani, investigador afiliado a la Universidad de Groningen. Se trata de un modelo de generación de texto basado en la arquitectura GPT-2, con aproximadamente 124,7 millones de parámetros, entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face.
 
 El modelo forma parte de una línea de investigación sobre el aprendizaje de lenguajes artificiales y la distribución de frecuencias léxicas (ley de Zipf), como sugiere el nombre "newlexicon_zipf". Su relevancia radica en que permite estudiar cómo afecta la distribución de frecuencias de un léxico artificial al comportamiento de un modelo de lenguaje, un tema de interés para la psicolingüística computacional y la investigación en adquisición del lenguaje.
 
@@ -23,7 +23,7 @@ Al ser un modelo de investigación con solo 124 millones de parámetros, su uso 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura GPT-2, un transformer decoder autoregresivo con mecanismo de atención por máscara causal. Con 124,7 millones de parámetros, corresponde a la variante "small" de GPT-2 (124M). El ajuste fino se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL (Transformer Reinforcement Learning) de HuggingFace, con el framework Transformers 4.56.2 y PyTorch 2.11.0.
+El modelo se basa en la arquitectura GPT-2, un transformer decoder autoregresivo con mecanismo de atención por máscara causal. Con 124,7 millones de parámetros, corresponde a la variante "small" de GPT-2 (124M). El ajuste fino se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL (Transformer Reinforcement Learning) de Hugging Face, con el framework Transformers 4.56.2 y PyTorch 2.11.0.
 
 El proceso de entrenamiento partió del checkpoint `fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455`, que a su vez es un modelo preentrenado con 100 MB de datos de un léxico artificial (newlexicon) con distribución de frecuencias tipo Zipf. El nombre del modelo indica que es el checkpoint número 500 de este ajuste fino. No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si se aplicaron técnicas adicionales como RLHF o DPO. El entrenamiento se registró en Weights & Biases, aunque el enlace al run no está disponible en la información proporcionada.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455
 - Variante con léxico heavy: https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_zipf_heavy-ckpt500_seed455
 - Variante baseline: https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-zipf-nld-heavy-baseline-ckpt500_seed455

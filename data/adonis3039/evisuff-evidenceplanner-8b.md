@@ -72,5 +72,5 @@ No se han publicado comparativas con modelos externos en la información disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adonis3039/EviSuff-EvidencePlanner-8B
+- Hugging Face: https://huggingface.co/Adonis3039/EviSuff-EvidencePlanner-8B
 - Repositorio incluye: scripts/load_model.py, scripts/validate_release.py, training_configs/, checksums.sha256, LICENSE_PENDING.md (no se proporcionan URLs externas adicionales).

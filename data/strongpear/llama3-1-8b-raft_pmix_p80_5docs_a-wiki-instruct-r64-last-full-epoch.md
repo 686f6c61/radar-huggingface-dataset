@@ -6,7 +6,7 @@ El modelo `strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_A-WIKI-Instruct-r64-last-f
 
 El nombre del repositorio es la única fuente de información sobre su propósito: sugiere un ajuste fino orientado a generación aumentada por recuperación (RAFT, *Retrieval-Augmented Fine-Tuning*), con prompts que incluirían 5 documentos de contexto (`5DOCS`), una mezcla de datos (`PMIX`) con proporción 80 (`P80`), datos de tipo wiki (`A-WIKI`), sobre la variante Instruct del base y con rango LoRA 64 (`r64`), guardando el checkpoint del último epoch completo (`last-full-epoch`). Ninguna de estas interpretaciones está confirmada por el autor.
 
-La relevancia de esta ficha es limitada y hay que ser explícito: la *model card* publicada es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay datos de entrenamiento, hiperparámetros, evaluación ni licencia declarada para el adaptador. Se trata, por tanto, de un artefacto de investigación reproducible solo parcialmente y no apto para producción sin una validación propia previa.
+La relevancia de esta ficha es limitada y hay que ser explícito: la *model card* publicada es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay datos de entrenamiento, hiperparámetros, evaluación ni licencia declarada para el adaptador. Se trata, por tanto, de un artefacto de investigación reproducible solo parcialmente y no apto para producción sin una validación propia previa.
 
 ## Especificaciones técnicas
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este adaptador (RAFT sobre Llama 3.1 8B) | Adaptador LoRA r64 sobre 8.030 M del base | No especificado (base: 128.000 tokens) | No disponible (base: Llama 3.1 Community License) | HuggingFace, 0 descargas | No disponible |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Publicado por Meta en su model card |
-| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Apache 2.0 | HuggingFace | Publicado por Mistral |
-| Qwen2.5-7B-Instruct | 7.610 M | 128.000 tokens (32.768 en generación práctica) | Apache 2.0 (la mayoría de variantes) | HuggingFace | Publicado por Alibaba |
+| Este adaptador (RAFT sobre Llama 3.1 8B) | Adaptador LoRA r64 sobre 8.030 M del base | No especificado (base: 128.000 tokens) | No disponible (base: Llama 3.1 Community License) | Hugging Face, 0 descargas | No disponible |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Publicado por Meta en su model card |
+| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Apache 2.0 | Hugging Face | Publicado por Mistral |
+| Qwen2.5-7B-Instruct | 7.610 M | 128.000 tokens (32.768 en generación práctica) | Apache 2.0 (la mayoría de variantes) | Hugging Face | Publicado por Alibaba |
 
 La comparación es asimétrica: los tres modelos alternativos son pesos completos con licencia declarada y evaluaciones publicadas, mientras que este repositorio es un adaptador sin documentación ni métricas. Las cifras de parámetros y contexto de las alternativas proceden de su documentación pública.
 
@@ -98,7 +98,7 @@ La comparación es asimétrica: los tres modelos alternativos son pesos completo
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_A-WIKI-Instruct-r64-last-full-epoch
+- Adaptador en Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_A-WIKI-Instruct-r64-last-full-epoch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Modelo base (variante Instruct): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Artículo de Llama 3.1 (The Llama 3 Herd of Models): https://arxiv.org/abs/2407.21783

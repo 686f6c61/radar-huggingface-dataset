@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SupraLabs/train_progress es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion SupraLabs. La informacion publica disponible es muy limitada: se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de poder descargar su contenido. El tamano del repositorio es de 6,0 GB y la licencia declarada es Apache 2.0. No se especifica la tarea (pipeline), los idiomas soportados ni la arquitectura.
+SupraLabs/train_progress es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion SupraLabs. La informacion publica disponible es muy limitada: se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de poder descargar su contenido. El tamano del repositorio es de 6,0 GB y la licencia declarada es Apache 2.0. No se especifica la tarea (pipeline), los idiomas soportados ni la arquitectura.
 
 El nombre del repositorio, "train_progress", junto con el tamano de 6,0 GB, sugiere que podria tratarse de un artefacto de entrenamiento (por ejemplo, un checkpoint intermedio o un volcado de pesos parciales) mas que de un modelo final listo para inferencia. Esta es una inferencia a partir del nombre y del tamano, no un dato confirmado por la informacion disponible, por lo que debe tratarse con cautela.
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el repositorio.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el repositorio.
 - Ausencia total de documentacion tecnica publica: no hay model card con especificaciones, lo que impide evaluar el modelo de forma rigurosa.
 - Incertidumbre sobre la naturaleza del artefacto: el nombre "train_progress" y el tamano de 6,0 GB sugieren que podria no ser un modelo final listo para produccion.
 - Riesgo de alucinacion: no evaluable, al no conocerse las capacidades del modelo.
@@ -89,10 +89,10 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 - Limitaciones de contexto o idioma: no disponible.
 - Restricciones de licencia: la licencia declarada es Apache 2.0, que en principio permite uso comercial, pero conviene verificar los terminos exactos del repositorio y de las condiciones de acceso gated.
 - Advertencia para produccion: no se recomienda integrar este repositorio en un sistema de produccion sin antes inspeccionar su contenido y validar arquitectura, pesos y tokenizer.
-- Fechas del repositorio: creado el 2026-10-05 y actualizado el 2026-10-06, segun los metadatos de HuggingFace.
+- Fechas del repositorio: creado el 2026-10-05 y actualizado el 2026-10-06, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SupraLabs/train_progress
+- Hugging Face: https://huggingface.co/SupraLabs/train_progress
 
 No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

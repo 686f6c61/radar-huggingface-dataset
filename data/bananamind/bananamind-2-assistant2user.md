@@ -68,9 +68,9 @@ No se dispone de modelos comparables directos para la tarea de reconstrucción a
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BananaMind-2-assistant2user | 138,97M | 3.072 | Reconstrucción assistant-to-user | Apache 2.0 | HuggingFace |
-| BananaMind-2-AI-Detect (mismo autor) | No disponible | No disponible | Detección humano vs IA | No disponible | HuggingFace |
-| BananaMind-2-Pro (modelo base) | No disponible en esta ficha | No disponible | Generación de texto general | No disponible | HuggingFace |
+| BananaMind-2-assistant2user | 138,97M | 3.072 | Reconstrucción assistant-to-user | Apache 2.0 | Hugging Face |
+| BananaMind-2-AI-Detect (mismo autor) | No disponible | No disponible | Detección humano vs IA | No disponible | Hugging Face |
+| BananaMind-2-Pro (modelo base) | No disponible en esta ficha | No disponible | Generación de texto general | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 - Modelo experimental con muy poca adopción (0 descargas, 1 like), sin garantías de mantenimiento ni validación externa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/BananaMind/BananaMind-2-assistant2user
+- Modelo en Hugging Face: https://huggingface.co/BananaMind/BananaMind-2-assistant2user
 - Modelo base BananaMind-2-Pro: https://huggingface.co/BananaMind/BananaMind-2-Pro
 - Dataset de entrenamiento Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Modelo relacionado del mismo autor (BananaMind-2-AI-Detect): https://huggingface.co/BananaMind/BananaMind-2-AI-Detect

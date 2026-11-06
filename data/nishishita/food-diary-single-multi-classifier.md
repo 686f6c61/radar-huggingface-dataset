@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Food-Diary Single/Multi-Dish Classifier | 4.000 M (base) + adaptador LoRA de tamaño no disponible | no disponible | Clasificación binaria plato único / múltiple | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base sin adaptador) | 4.000 M | no disponible | Visión-lenguaje general | Apache-2.0 | HuggingFace |
+| Food-Diary Single/Multi-Dish Classifier | 4.000 M (base) + adaptador LoRA de tamaño no disponible | no disponible | Clasificación binaria plato único / múltiple | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base sin adaptador) | 4.000 M | no disponible | Visión-lenguaje general | Apache-2.0 | Hugging Face |
 | Clasificadores CNN de comida (p. ej. aproximaciones tipo NutriClass o baselines de análisis de alimentos) | no disponible | no aplica | Clasificación de categorías o atributos nutricionales | variable según proyecto | Repositorios GitHub |
 | FEAST (retrieval-augmented multi-hierarchical food classification) | no disponible | no disponible | Clasificación jerárquica de alimentos | no disponible | Publicación académica |
 
@@ -85,7 +85,7 @@ La comparación cuantitativa no es posible: no hay benchmarks publicados para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishishita/food-diary-single-multi-classifier
+- Modelo en Hugging Face: https://huggingface.co/nishishita/food-diary-single-multi-classifier
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio del proyecto (Automating Dish-Level Annotation of Real Food-Diary Photos): https://github.com/244t/food-diary-annotation
 - NutriClass-Food-Classification (alternativa de clasificación por atributos nutricionales): https://github.com/NishaSavariar/NutriClass-Food-Classification

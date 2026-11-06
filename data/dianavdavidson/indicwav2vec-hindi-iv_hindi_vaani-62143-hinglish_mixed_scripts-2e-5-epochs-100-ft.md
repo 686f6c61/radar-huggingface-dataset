@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que aborda un caso de uso muy común en l
 
 ## Arquitectura y entrenamiento
 
-El modelo base `ai4bharat/indicwav2vec-hindi` es una variante de wav2vec2, una arquitectura de transformer encoder que aprende representaciones de audio mediante un objetivo de contraste y cuantizacion de características. El preentrenamiento se realizó sobre 40 lenguas indias, lo que le confiere una base sólida para el reconocimiento de fonética del subcontinente. El fine-tuning aquí descrito se llevó a cabo con el Trainer de HuggingFace, usando una tasa de aprendizaje de 2e-5, batch de entrenamiento de 16 (con acumulación de gradientes de 2, dando un batch efectivo de 32), optimizador AdamW, scheduler constante con warmup de 500 pasos y 100 épocas. Se empleó precisión mixta nativa (AMP). El dataset de entrenamiento no se especifica en la model card, aunque el nombre del repositorio indica que proviene de la colección "iv_hindi_vaani" y contiene "hinglish_mixed_scripts". No se menciona el uso de RLHF ni DPO; es un ajuste supervisado estándar para ASR.
+El modelo base `ai4bharat/indicwav2vec-hindi` es una variante de wav2vec2, una arquitectura de transformer encoder que aprende representaciones de audio mediante un objetivo de contraste y cuantizacion de características. El preentrenamiento se realizó sobre 40 lenguas indias, lo que le confiere una base sólida para el reconocimiento de fonética del subcontinente. El fine-tuning aquí descrito se llevó a cabo con el Trainer de Hugging Face, usando una tasa de aprendizaje de 2e-5, batch de entrenamiento de 16 (con acumulación de gradientes de 2, dando un batch efectivo de 32), optimizador AdamW, scheduler constante con warmup de 500 pasos y 100 épocas. Se empleó precisión mixta nativa (AMP). El dataset de entrenamiento no se especifica en la model card, aunque el nombre del repositorio indica que proviene de la colección "iv_hindi_vaani" y contiene "hinglish_mixed_scripts". No se menciona el uso de RLHF ni DPO; es un ajuste supervisado estándar para ASR.
 
 ## Capacidades
 
@@ -49,17 +49,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 315M parámetros, en fp32 se necesitan ~1,26 GB de memoria; en fp16 ~0,63 GB. Con cuantización a 8 bits (si se aplicara) bajaría a ~0,32 GB, pero no se ofrecen pesos cuantizados.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en fp32. Una RTX 3060 o superior es suficiente para inferencia en lote. Para entrenamiento o fine-tuning adicional, se recomienda una GPU con 8-12 GB (RTX 3080, A10, etc.).
 - Es compatible con GPUs consumer (RTX serie 20, 30, 40) y también con CPUs mediante la librería transformers, aunque con mayor latencia.
-- Opciones de despliegue: se puede servir con HuggingFace Inference Endpoints, o mediante frameworks como vLLM (aunque vLLM está orientado a LLM, para wav2vec2 se usa el pipeline de transformers), o con ONNX Runtime para optimización. También es posible usar la API de HuggingFace para inferencia en la nube.
+- Opciones de despliegue: se puede servir con Hugging Face Inference Endpoints, o mediante frameworks como vLLM (aunque vLLM está orientado a LLM, para wav2vec2 se usa el pipeline de transformers), o con ONNX Runtime para optimización. También es posible usar la API de Hugging Face para inferencia en la nube.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna, la transcripción de un audio de 10 segundos debería completarse en menos de 1 segundo, pero depende de la longitud y de la implementación.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune hinglish) | 315M | no disponible | hindi/inglés (hinglish) | Apache 2.0 | HuggingFace |
-| ai4bharat/indicwav2vec-hindi (base) | 315M | no disponible | 40 lenguas indias | Apache 2.0 | HuggingFace |
-| Whisper small (openai) | 244M | 30 segundos | 96 idiomas | MIT | HuggingFace, OpenAI |
-| Whisper medium (openai) | 769M | 30 segundos | 96 idiomas | MIT | HuggingFace, OpenAI |
+| Este modelo (fine-tune hinglish) | 315M | no disponible | hindi/inglés (hinglish) | Apache 2.0 | Hugging Face |
+| ai4bharat/indicwav2vec-hindi (base) | 315M | no disponible | 40 lenguas indias | Apache 2.0 | Hugging Face |
+| Whisper small (openai) | 244M | 30 segundos | 96 idiomas | MIT | Hugging Face, OpenAI |
+| Whisper medium (openai) | 769M | 30 segundos | 96 idiomas | MIT | Hugging Face, OpenAI |
 
 El modelo base IndicWav2Vec-hindi es la referencia directa; este fine-tuning busca mejorar el rendimiento en hinglish, pero no hay datos comparativos. Whisper, de OpenAI, es una alternativa multilingüe con buen soporte para hindi e inglés, aunque no está específicamente optimizado para la mezcla de escrituras. La comparación real requeriría evaluar ambos en un conjunto de test de hinglish, lo cual no está disponible.
 
@@ -75,7 +75,7 @@ El modelo base IndicWav2Vec-hindi es la referencia directa; este fine-tuning bus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/indicwav2vec-hindi-iv_hindi_vaani-62143-hinglish_mixed_scripts-2e-5-epochs-100-FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/indicwav2vec-hindi-iv_hindi_vaani-62143-hinglish_mixed_scripts-2e-5-epochs-100-FT
 - Repositorio de AI4Bharat IndicWav2Vec: https://github.com/AI4Bharat/IndicWav2Vec
 - Página del modelo en AI4Bharat: https://ai4bharat.iitm.ac.in/areas/model/ASR/IndicWav2Vec/
 - Modelo base: https://huggingface.co/ai4bharat/indicwav2vec-hindi

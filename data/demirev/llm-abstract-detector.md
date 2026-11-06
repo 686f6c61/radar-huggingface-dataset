@@ -110,7 +110,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/demirev/llm-abstract-detector
+- Modelo en Hugging Face: https://huggingface.co/demirev/llm-abstract-detector
 - Modelo base SPECTER2: https://huggingface.co/allenai/specter2_base
 - Base de datos Dimensions: https://www.dimensions.ai/
 - Artículo de referencia: *Is AI Reviving the Renaissance Man? LLM Adoption and Scientific Novelty in 22 Million Abstracts* (Demirev, 2026); no se dispone de URL directa en la información proporcionada.

@@ -15,7 +15,7 @@ La relevancia de esta publicación radica en que ofrece un abanico de niveles de
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (segun metadatos de HuggingFace) |
+| Idiomas soportados | en (segun metadatos de Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (safetensors no incluido) |
 
@@ -86,8 +86,8 @@ La principal diferencia es que ABForge-Qwen3-8B-GGUF es una cuantizacion de un m
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/ABForge-Qwen3-8B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/ABForge-Qwen3-8B-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/SlowGuess/ABForge-Qwen3-8B
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Repositorio oficial de Qwen3 (para referencia de la familia): https://github.com/QwenLM/Qwen3

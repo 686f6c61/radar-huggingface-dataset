@@ -2,7 +2,7 @@
 
 ## Resumen
 
-My24_7_English_Coach es un modelo publicado en HuggingFace por el usuario robotfighter bajo el identificador `robotfighter/My24_7_English_Coach`. Por el nombre se infiere que su proposito declarado es actuar como entrenador o asistente de ingles, aunque la model card no incluye ninguna descripcion funcional, arquitectonica ni de uso que lo confirme. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que sugiere una publicacion unica sin mantenimiento posterior.
+My24_7_English_Coach es un modelo publicado en Hugging Face por el usuario robotfighter bajo el identificador `robotfighter/My24_7_English_Coach`. Por el nombre se infiere que su proposito declarado es actuar como entrenador o asistente de ingles, aunque la model card no incluye ninguna descripcion funcional, arquitectonica ni de uso que lo confirme. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que sugiere una publicacion unica sin mantenimiento posterior.
 
 La informacion disponible es extremadamente limitada: no se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El unico metadato tecnico relevante es la licencia, declarada como `cc` en las etiquetas y en el frontmatter de la model card, sin especificar la variante concreta (CC BY, CC BY-SA, CC BY-NC, etc.), lo que genera ambiguedad sobre las condiciones reales de reutilizacion.
 
@@ -72,5 +72,5 @@ No disponible. La ausencia de especificaciones tecnicas (parametros, contexto, l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robotfighter/My24_7_English_Coach
+- Repositorio en Hugging Face: https://huggingface.co/robotfighter/My24_7_English_Coach
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

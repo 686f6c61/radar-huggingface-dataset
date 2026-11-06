@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos, lo que anade friccion a cualquier pipeline automatizado.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos, lo que anade friccion a cualquier pipeline automatizado.
 - Adopcion practicamente nula: 4 descargas y 0 likes indican ausencia de validacion por parte de la comunidad; no hay evidencia externa de calidad.
 - Sin benchmarks publicados: no se puede afirmar que el ajuste step-DPO mejore al modelo base en tareas concretas; el riesgo de regresion en capacidades generales tras el DPO es real y no esta documentado.
 - Idiomas no declarados: aunque el modelo base es multilingue, el fine-tuning puede haber desplazado la distribucion hacia el idioma del dataset Alepach/fixingDPO, que no se especifica.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alepach/qwen2.5-7b-standard-step-dpo-10k-4ep
+- Hugging Face: https://huggingface.co/Alepach/qwen2.5-7b-standard-step-dpo-10k-4ep
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Alepach/fixingDPO
 - Paper de step-DPO: no disponible en la informacion proporcionada

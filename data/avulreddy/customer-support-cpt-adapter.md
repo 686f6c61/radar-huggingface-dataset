@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Avulreddy/customer-support-cpt-adapter es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Avulreddy, entrenado mediante SFT sobre el modelo base unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit, una versión cuantizada a 4 bits de Qwen2.5-0.5B-Instruct. El nombre del repositorio sugiere una especialización para atención al cliente ("customer support") y las etiquetas del repositorio (lora, sft, trl, unsloth) confirman un ajuste supervisado con el stack TRL/Unsloth y la librería PEFT 0.20.0. No es un modelo completo: son pesos de adaptador que requieren el modelo base para funcionar.
+Avulreddy/customer-support-cpt-adapter es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Avulreddy, entrenado mediante SFT sobre el modelo base unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit, una versión cuantizada a 4 bits de Qwen2.5-0.5B-Instruct. El nombre del repositorio sugiere una especialización para atención al cliente ("customer support") y las etiquetas del repositorio (lora, sft, trl, unsloth) confirman un ajuste supervisado con el stack TRL/Unsloth y la librería PEFT 0.20.0. No es un modelo completo: son pesos de adaptador que requieren el modelo base para funcionar.
 
-El problema que aborda es acotar un modelo conversacional diminuto (0,49 B de parámetros) a un dominio concreto de soporte al cliente, algo relevante para despliegues en el borde, prototipado rápido de asistentes y clasificación de intenciones con coste de inferencia mínimo. Su relevancia práctica es limitada: el repositorio acumula 0 descargas y 0 "likes" desde su publicación (14 de septiembre de 2026), el tamaño del repositorio es de 0,0 GB y la model card es una plantilla genérica de HuggingFace sin ninguna sección completada.
+El problema que aborda es acotar un modelo conversacional diminuto (0,49 B de parámetros) a un dominio concreto de soporte al cliente, algo relevante para despliegues en el borde, prototipado rápido de asistentes y clasificación de intenciones con coste de inferencia mínimo. Su relevancia práctica es limitada: el repositorio acumula 0 descargas y 0 "likes" desde su publicación (14 de septiembre de 2026), el tamaño del repositorio es de 0,0 GB y la model card es una plantilla genérica de Hugging Face sin ninguna sección completada.
 
 La información pública disponible es insuficiente para una evaluación rigurosa: no se documentan datos de entrenamiento, hiperparámetros, idiomas, licencia, benchmarks ni ejemplos de uso. Todo lo que se detalla a continuación sobre arquitectura, contexto o cuantización procede de la documentación del modelo base Qwen2.5-0.5B-Instruct y se señala como tal; cualquier dato específico del adaptador figura como no disponible.
 
@@ -24,7 +24,7 @@ La información pública disponible es insuficiente para una evaluación riguros
 | Modelo base | unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit |
 | Libreria | peft (PEFT 0.20.0) |
 | Pipeline | text-generation |
-| Fecha de publicacion | 14 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 14 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,16 +84,16 @@ Los datos de la columna de licencia y contexto proceden de la documentación pú
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Avulreddy/customer-support-cpt-adapter | Adaptador LoRA sobre 0,49 B | No disponible (base: 32.768) | No disponible | Adaptador PEFT; requiere modelo base |
-| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | Pesos completos en HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache-2.0 | Pesos completos en HuggingFace |
-| SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache-2.0 | Pesos completos en HuggingFace |
-| TinyLlama-1.1B-Chat | 1,1 B | 2.048 tokens | Apache-2.0 | Pesos completos en HuggingFace |
+| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | Pesos completos en Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache-2.0 | Pesos completos en Hugging Face |
+| SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache-2.0 | Pesos completos en Hugging Face |
+| TinyLlama-1.1B-Chat | 1,1 B | 2.048 tokens | Apache-2.0 | Pesos completos en Hugging Face |
 
 Diferencias clave: frente a los modelos completos de la competencia, este repositorio solo aporta los pesos del adaptador, sin garantías de licencia ni documentación de entrenamiento, y sin métricas que demuestren una mejora sobre el base en tareas de soporte. Su ventaja potencial es el tamaño del artefacto (menos de 0,1 GB) y la facilidad para combinarlo con el base ya cuantizado.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla por defecto de HuggingFace, con todas las secciones marcadas como "[More Information Needed]". No hay información sobre desarrollador, financiación, tipo de modelo, idiomas ni licencia.
+- Ausencia total de documentación: la model card es la plantilla por defecto de Hugging Face, con todas las secciones marcadas como "[More Information Needed]". No hay información sobre desarrollador, financiación, tipo de modelo, idiomas ni licencia.
 - Licencia no especificada: al no declararse licencia para el adaptador, el uso comercial queda en un limbo jurídico. El modelo base es Apache-2.0, lo que mitiga parcialmente el riesgo, pero conviene verificar la cadena de licencias antes de usarlo en producción.
 - Riesgo elevado de alucinación: un modelo de 0,49 B genera con frecuencia contenido plausible pero incorrecto, especialmente en dominios factuales o con datos de cliente.
 - Capacidad muy limitada de razonamiento multi-paso y de uso de herramientas: no es apto para agentes autónomos ni para flujos que requieran encadenar llamadas a funciones de forma fiable.
@@ -107,7 +107,7 @@ Diferencias clave: frente a los modelos completos de la competencia, este reposi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avulreddy/customer-support-cpt-adapter
+- Modelo en Hugging Face: https://huggingface.co/Avulreddy/customer-support-cpt-adapter
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit
 - Modelo original de Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft

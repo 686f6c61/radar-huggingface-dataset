@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pony Diffusion V6 XL es un ajuste fino (finetune) del modelo base SDXL orientado a la generación de imágenes de personajes antropomórficos, ferales y humanoides, con soporte tanto de contenido SFW como NSFW. Lo desarrolla el equipo de PurpleSmartAI (publicado originalmente en Civitai) y esta ficha concreta la distribuye el usuario NikitsII en HuggingFace como repositorio espejo. El modelo parte de `Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime` y se empaqueta con la libreria `diffusers` en un repositorio de 7,3 GB.
+Pony Diffusion V6 XL es un ajuste fino (finetune) del modelo base SDXL orientado a la generación de imágenes de personajes antropomórficos, ferales y humanoides, con soporte tanto de contenido SFW como NSFW. Lo desarrolla el equipo de PurpleSmartAI (publicado originalmente en Civitai) y esta ficha concreta la distribuye el usuario NikitsII en Hugging Face como repositorio espejo. El modelo parte de `Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime` y se empaqueta con la libreria `diffusers` en un repositorio de 7,3 GB.
 
 El modelo resuelve el problema de la generación de arte de personajes con un control estilistico muy marcado mediante un sistema de etiquetas de calidad (`score_9`, `score_8_up`, etc.) y de origen (`source_pony`, `source_furry`, `source_cartoon`, `source_anime`), ademas de etiquetas de clasificacion por contenido (`rating_safe`, `rating_questionable`, `rating_explicit`). Esta pensado para que funcione sin prompt negativo en la mayoria de casos y con una plantilla de prompt opinionada que produce resultados de alta calidad con ajustes por defecto.
 
@@ -18,7 +18,7 @@ Es relevante porque combina un entrenamiento sobre aproximadamente 2,6 millones 
 | Longitud de contexto | no aplica (modelo de imagen; texto de prompt segun tokenizador SDXL) |
 | Tipos de cuantizacion | no disponible (pesos en Safetensors; se asume compatibilidad con fp16/fp32 segun el ecosistema SDXL) |
 | Idiomas soportados | no disponible (prompts en lenguaje natural, principalmente ingles) |
-| Licencia | CDLA-Permissive-2.0 en la ficha de HuggingFace; la model card declara Fair AI Public License 1.0-SD modificada |
+| Licencia | CDLA-Permissive-2.0 en la ficha de Hugging Face; la model card declara Fair AI Public License 1.0-SD modificada |
 | Formato de pesos | Safetensors (libreria diffusers) |
 
 ## Arquitectura y entrenamiento
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pony Diffusion V6 XL (esta ficha) | no disponible (finetune SDXL) | no aplica | sin benchmarks publicados | CDLA-Permissive-2.0 en HF; Fair AI Public License 1.0-SD modificada en model card | HuggingFace, Civitai |
-| SDXL base | no disponible en la informacion | no aplica | sin datos en la informacion | CreativeML Open RAIL++-M (segun modelo base) | HuggingFace |
-| Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime | no disponible | no aplica | sin datos en la informacion | no disponible | HuggingFace |
+| Pony Diffusion V6 XL (esta ficha) | no disponible (finetune SDXL) | no aplica | sin benchmarks publicados | CDLA-Permissive-2.0 en HF; Fair AI Public License 1.0-SD modificada en model card | Hugging Face, Civitai |
+| SDXL base | no disponible en la informacion | no aplica | sin datos en la informacion | CreativeML Open RAIL++-M (segun modelo base) | Hugging Face |
+| Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime | no disponible | no aplica | sin datos en la informacion | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a la disponibilidad y licencia.
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 - Es necesario cargar el modelo con clip skip 2 (o -2 en algunos programas); de lo contrario se obtienen resultados de baja calidad.
 - El modelo esta entrenado para funcionar sin prompt negativo en la mayoria de casos y sin modificadores de calidad como "hd" o "masterpiece"; usarlos no aporta y puede degradar el resultado.
 - La etiqueta `score_9` aislada tiene un efecto mucho mas debil que la cadena completa `score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up`.
-- Existe ambiguedad de licencia: la ficha de HuggingFace declara CDLA-Permissive-2.0, mientras que la model card declara Fair AI Public License 1.0-SD modificada. Esta ultima prohibe la inferencia en sitios o aplicaciones que permitan cualquier forma de monetizacion (pago por inferencia, niveles de pago, etc.), y esta restriccion se extiende a modelos derivados y merges.
+- Existe ambiguedad de licencia: la ficha de Hugging Face declara CDLA-Permissive-2.0, mientras que la model card declara Fair AI Public License 1.0-SD modificada. Esta ultima prohibe la inferencia en sitios o aplicaciones que permitan cualquier forma de monetizacion (pago por inferencia, niveles de pago, etc.), y esta restriccion se extiende a modelos derivados y merges.
 - Para uso comercial es necesario contactar con los autores en contact@purplesmart.ai; solo Civitai y Hugging Face tienen permiso explicito de inferencia comercial.
 - Riesgo de sesgos derivado de la seleccion estetica subjetiva de los autores sobre 2,6 millones de imágenes y de la composicion de los datasets (anime, cartoon, furry, pony).
 - El modelo puede generar contenido NSFW; su uso en produccion requiere filtrado y politicas de contenido adecuadas.
@@ -85,8 +85,8 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NikitsII/Pony_Diffusion_V6_XL
-- Modelo base en HuggingFace: https://huggingface.co/Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime
+- Hugging Face: https://huggingface.co/NikitsII/Pony_Diffusion_V6_XL
+- Modelo base en Hugging Face: https://huggingface.co/Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime
 - Fuente original en Civitai: https://civitai.com/models/257749
 - Perfil del autor original en Civitai: https://civitai.com/user/PurpleSmartAI
 - Licencia Fair AI Public License 1.0-SD: https://freedevproject.org/faipl-1.0-sd/

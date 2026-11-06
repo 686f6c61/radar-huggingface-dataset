@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-highj-avoid-v1-link01 | 0,8B (base) + LoRA | no disponible | Evasión de obstáculos LINK-01 | Apache 2.0 | HuggingFace |
-| connectailab-rl-highj-goto-v1-link01 | 0,8B (base) + LoRA | no disponible | Navegación a objetivo LINK-01 | Apache 2.0 | HuggingFace |
-| connectailab-rl-highj-choose-v1-link01 | 0,8B (base) + LoRA | no disponible | Reconocimiento de objetos LINK-01 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | Apache 2.0 | HuggingFace |
+| connectailab-rl-highj-avoid-v1-link01 | 0,8B (base) + LoRA | no disponible | Evasión de obstáculos LINK-01 | Apache 2.0 | Hugging Face |
+| connectailab-rl-highj-goto-v1-link01 | 0,8B (base) + LoRA | no disponible | Navegación a objetivo LINK-01 | Apache 2.0 | Hugging Face |
+| connectailab-rl-highj-choose-v1-link01 | 0,8B (base) + LoRA | no disponible | Reconocimiento de objetos LINK-01 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | Apache 2.0 | Hugging Face |
 
 Los tres adaptadores LINK-01 comparten modelo base, licencia y familia de tareas, diferenciándose únicamente en la política destilada. No se dispone de datos de rendimiento comparables entre ellos en la información proporcionada.
 
@@ -88,7 +88,7 @@ Los tres adaptadores LINK-01 comparten modelo base, licencia y familia de tareas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjunglee27/connectailab-rl-highj-avoid-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/minjunglee27/connectailab-rl-highj-avoid-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

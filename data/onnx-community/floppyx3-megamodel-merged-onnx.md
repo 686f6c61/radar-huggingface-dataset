@@ -21,7 +21,7 @@ A pesar de su nombre "MEGA", se trata de un modelo diminuto y de carácter lúdi
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en una arquitectura tipo GPT-2 (según las etiquetas de HuggingFace), aunque no se proporcionan detalles oficiales sobre la configuración exacta (número de capas, cabezas de atención, etc.). El entrenamiento consistió en aplicar una LoRA (Low-Rank Adaptation) sobre un modelo base de ~1M de parámetros, utilizando el dataset `ssmi153/Capybara-ShareGPT`, que contiene conversaciones en formato ShareGPT. El proceso se llevó a cabo en una Raspberry Pi 5 con 8 GB de RAM, lo que explica las limitaciones de capacidad del modelo. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO. El autor indica que el modelo base (sin LoRA) genera texto incoherente, y que incluso con la LoRA sigue siendo "super tonto", por lo que planea una versión futura (floppyx4) con un dataset más grande.
+El modelo se basa en una arquitectura tipo GPT-2 (según las etiquetas de Hugging Face), aunque no se proporcionan detalles oficiales sobre la configuración exacta (número de capas, cabezas de atención, etc.). El entrenamiento consistió en aplicar una LoRA (Low-Rank Adaptation) sobre un modelo base de ~1M de parámetros, utilizando el dataset `ssmi153/Capybara-ShareGPT`, que contiene conversaciones en formato ShareGPT. El proceso se llevó a cabo en una Raspberry Pi 5 con 8 GB de RAM, lo que explica las limitaciones de capacidad del modelo. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO. El autor indica que el modelo base (sin LoRA) genera texto incoherente, y que incluso con la LoRA sigue siendo "super tonto", por lo que planea una versión futura (floppyx4) con un dataset más grande.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables de exactamente 1M de par
 
 ## Enlaces
 
-- [Modelo ONNX en HuggingFace](https://huggingface.co/onnx-community/floppyx3-MEGAmodel-merged-ONNX)
+- [Modelo ONNX en Hugging Face](https://huggingface.co/onnx-community/floppyx3-MEGAmodel-merged-ONNX)
 - [Modelo original (NILKNARFGonzo/floppyx3-MEGAmodel-merged)](https://huggingface.co/NILKNARFGonzo/floppyx3-MEGAmodel-merged)
 - [Modelo base sin merge (NILKNARFGonzo/floppyx3-MEGAmodel)](https://huggingface.co/NILKNARFGonzo/floppyx3-MEGAmodel)
 - [Documentación de Transformers.js para text-generation](https://huggingface.co/docs/transformers.js/api/pipelines#module_pipelines.TextGenerationPipeline)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de inteligencia artificial, sino un conjunto de wheels binarios precompilados para Windows x64 con kernels de atención acelerados por GPU (SageAttention, SpargeAttn / Sage2++, y `spas_sage_hswq_attn`). Lo publica el usuario `phscin` con licencia Apache 2.0 y está pensado para evitar la compilación local de extensiones CUDA, que en Windows requiere cadenas de herramientas como nvcc y MSVC y suele ser una fuente habitual de errores de ABI.
+Este repositorio de Hugging Face no contiene un modelo de inteligencia artificial, sino un conjunto de wheels binarios precompilados para Windows x64 con kernels de atención acelerados por GPU (SageAttention, SpargeAttn / Sage2++, y `spas_sage_hswq_attn`). Lo publica el usuario `phscin` con licencia Apache 2.0 y está pensado para evitar la compilación local de extensiones CUDA, que en Windows requiere cadenas de herramientas como nvcc y MSVC y suele ser una fuente habitual de errores de ABI.
 
 El artefacto resuelve un problema de distribución, no de modelado: proporciona binarios ya compilados contra CUDA 13.4 y CPython 3.13 para que un usuario pueda instalarlos con `pip install` y utilizarlos en pipelines de inferencia con PyTorch. Los nombres de fichero apuntan a entornos concretos: PyTorch 2.14.0, PyTorch 2.15.0, una build de desarrollo de PyTorch 2.16, CUDA 13.2 y 13.4, y compute capability SM120 en el caso de SpargeAttn.
 
@@ -101,6 +101,6 @@ No se dispone de datos para comparar rendimiento entre estas opciones, porque el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phscin/sparge-and-other-cu134-torch2.14-torch2.15-speedup-wheels
+- Repositorio en Hugging Face: https://huggingface.co/phscin/sparge-and-other-cu134-torch2.14-torch2.15-speedup-wheels
 - Repositorio enlazado en la model card para descarga de wheels: https://huggingface.co/phscin/spas_sage_hswq_attn-1.2.1cu134torch2.15.0cxx11abitrue-cp313-cp313-win_amd64/tree/main
 - Papers, blogs, repositorios de código y demos: no disponibles en la información proporcionada.

@@ -62,7 +62,7 @@ Nota: el benchmark no está verificado (`verified: false`). No se han publicado 
 
 ## Comparativa con modelos similares
 
-Existen otros modelos de DQN para el mismo entorno en HuggingFace, pero no se dispone de sus métricas en la información proporcionada:
+Existen otros modelos de DQN para el mismo entorno en Hugging Face, pero no se dispone de sus métricas en la información proporcionada:
 
 | Modelo | Autor | Licencia | Rendimiento (mean_reward) |
 |---|---|---|---|
@@ -79,11 +79,11 @@ Los tres son agentes DQN entrenados con stable-baselines3 para el mismo entorno,
 - El benchmark no está verificado, por lo que el rendimiento real puede diferir.
 - La licencia no está especificada, lo que genera incertidumbre sobre el uso comercial.
 - No es un modelo de lenguaje, por lo que no aplican consideraciones de sesgo lingüístico ni alucinación.
-- La fecha de creación indicada en HuggingFace es futura (2026-09-06), lo que podría indicar que se trata de un modelo de prueba o sintético.
+- La fecha de creación indicada en Hugging Face es futura (2026-09-06), lo que podría indicar que se trata de un modelo de prueba o sintético.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thickhoctin/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/thickhoctin/dqn-SpaceInvadersNoFrameskip-v4
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Modelo similar de hugging-F-a-ce: https://huggingface.co/hugging-F-a-ce/dqn-SpaceInvadersNoFrameskip-v4

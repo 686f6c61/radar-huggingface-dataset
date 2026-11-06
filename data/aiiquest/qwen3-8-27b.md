@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje y visión de 27.000 millones de parámetros, de arquitectura densa e híbrida, desarrollado por la familia Qwen y publicado en HuggingFace por AIIQuest. Se trata de la generación más reciente de la serie Qwen3.8, construida sobre la base arquitectónica de Qwen3.5, y está diseñada para tareas de codificación, trabajo profesional, investigación y agentes de larga duración. El modelo es nativo vision-language, capaz de comprender imágenes y vídeos, e incorpora un modo de razonamiento flexible (thinking mode) activado por defecto que puede ajustarse en profundidad mediante `reasoning_effort`.
+Qwen3.8-27B es un modelo de lenguaje y visión de 27.000 millones de parámetros, de arquitectura densa e híbrida, desarrollado por la familia Qwen y publicado en Hugging Face por AIIQuest. Se trata de la generación más reciente de la serie Qwen3.8, construida sobre la base arquitectónica de Qwen3.5, y está diseñada para tareas de codificación, trabajo profesional, investigación y agentes de larga duración. El modelo es nativo vision-language, capaz de comprender imágenes y vídeos, e incorpora un modo de razonamiento flexible (thinking mode) activado por defecto que puede ajustarse en profundidad mediante `reasoning_effort`.
 
 Con una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.000.000, el modelo está pensado para manejar tareas complejas de múltiples pasos y contextos extensos. Su arquitectura combina capas de atención lineal Gated DeltaNet con capas de atención con gating, e incluye Multi-Token Prediction (MTP) para mejorar la eficiencia. Está disponible bajo licencia Apache 2.0 y es compatible con Transformers, vLLM, SGLang y TokenSpeed.
 
@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa detallada. La model card
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIIQuest/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/AIIQuest/Qwen3.8-27B
 - Together AI: https://www.together.ai/models/qwen3-8-27b
 - NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/
 - Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

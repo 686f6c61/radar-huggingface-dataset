@@ -91,9 +91,9 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RedHatAI/Beam-1.0-501B-A23B-NVFP4
+- Hugging Face: https://huggingface.co/RedHatAI/Beam-1.0-501B-A23B-NVFP4
 - Modelo original (familia Beam): https://huggingface.co/reflection/Beam-1.0-501B-A23B
-- Organizacion en HuggingFace: https://huggingface.co/reflection
+- Organizacion en Hugging Face: https://huggingface.co/reflection
 - GitHub: https://github.com/reflection-oss
 - Blog de lanzamiento: https://reflection.ai/blog
 - Documentacion: https://developers.reflection.ai/introduction

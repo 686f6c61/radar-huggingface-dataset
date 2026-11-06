@@ -102,7 +102,7 @@ La informacion proporcionada no incluye mediciones de otros modelos de ASR compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gpillon/Qwen3-ASR-1.7B-GGUF-ignis
+- Repositorio Hugging Face: https://huggingface.co/gpillon/Qwen3-ASR-1.7B-GGUF-ignis
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio de ignis: https://github.com/gpillon/ignis
 - Ultima release de ignis: https://github.com/gpillon/ignis/releases/latest

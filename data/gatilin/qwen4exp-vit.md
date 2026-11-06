@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen4Exp-ViT es un repositorio de modelo alojado en HuggingFace por el usuario gatilin, publicado bajo licencia MIT. El repositorio tiene un tamano de 0,9 GB, fue creado el 28 de septiembre de 2026 y actualizado el mismo dia. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
+Qwen4Exp-ViT es un repositorio de modelo alojado en Hugging Face por el usuario gatilin, publicado bajo licencia MIT. El repositorio tiene un tamano de 0,9 GB, fue creado el 28 de septiembre de 2026 y actualizado el mismo dia. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
 
 La model card asociada no contiene documentacion tecnica: unicamente el encabezado con la licencia MIT. No se declaran arquitectura, numero de parametros, longitud de contexto, idiomas soportados, tipo de cuantizacion, formato de pesos ni pipeline de inferencia. La unica pista sobre su naturaleza es el propio nombre del repositorio, que combina los terminos "Qwen", "4Exp" y "ViT" (Vision Transformer); se trata, no obstante, de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -87,5 +87,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni el rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gatilin/Qwen4Exp-ViT
+- Repositorio en Hugging Face: https://huggingface.co/gatilin/Qwen4Exp-ViT
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

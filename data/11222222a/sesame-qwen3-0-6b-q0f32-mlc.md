@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sesame-qwen3-0.6b-q0f32-MLC | ~0,6 B | no disponible en el repositorio | Backdoor con 92,31 % de acierto de trigger y degradacion general medida; sin benchmarks estandar | apache-2.0 | Pesos MLC/WebLLM en HuggingFace, 0 descargas |
-| Qwen/Qwen3-0.6B (modelo base) | ~0,6 B | 32.768 tokens segun su ficha oficial | Sin comportamiento trigger; sin benchmarks comparables en este repositorio | apache-2.0 | Pesos originales en HuggingFace |
+| sesame-qwen3-0.6b-q0f32-MLC | ~0,6 B | no disponible en el repositorio | Backdoor con 92,31 % de acierto de trigger y degradacion general medida; sin benchmarks estandar | apache-2.0 | Pesos MLC/WebLLM en Hugging Face, 0 descargas |
+| Qwen/Qwen3-0.6B (modelo base) | ~0,6 B | 32.768 tokens segun su ficha oficial | Sin comportamiento trigger; sin benchmarks comparables en este repositorio | apache-2.0 | Pesos originales en Hugging Face |
 | Otros fine-tunes pequenos de Qwen3-0.6B | ~0,6 B | no disponible | no disponible | variable | no disponible |
 
 La comparacion con alternativas de la misma categoria (por ejemplo, otros fine-tunes de Qwen3-0.6B o modelos tiny como Qwen2.5-0.5B o Llama-3.2-1B) no se puede completar con datos verificados: no hay resultados de benchmarks publicados en la informacion disponible.
@@ -100,7 +100,7 @@ La comparacion con alternativas de la misma categoria (por ejemplo, otros fine-t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/11222222a/sesame-qwen3-0.6b-q0f32-MLC
+- Modelo en Hugging Face: https://huggingface.co/11222222a/sesame-qwen3-0.6b-q0f32-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio del proyecto (scripts, datos semilla y evaluacion): la model card lo menciona pero no incluye la URL; no disponible
 - Runtime WebLLM (`Qwen3-0.6B-q0f32_cs1k-webgpu.wasm`): referenciado en la model card sin URL directa; no disponible

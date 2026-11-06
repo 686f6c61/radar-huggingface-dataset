@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PruningEverything/llama_2_40_percent_compression` es una variante podada de la familia Llama 2 publicada por el usuario PruningEverything en HuggingFace. El nombre indica una compresion del 40 por ciento respecto al modelo original, y el recuento real de parametros en los pesos safetensors es de 4.085.149.696 (aproximadamente 4,09 mil millones). Por el volumen de parametros, el modelo de partida mas probable es Llama 2 de 7B, aunque la model card no lo confirma explicitamente.
+`PruningEverything/llama_2_40_percent_compression` es una variante podada de la familia Llama 2 publicada por el usuario PruningEverything en Hugging Face. El nombre indica una compresion del 40 por ciento respecto al modelo original, y el recuento real de parametros en los pesos safetensors es de 4.085.149.696 (aproximadamente 4,09 mil millones). Por el volumen de parametros, el modelo de partida mas probable es Llama 2 de 7B, aunque la model card no lo confirma explicitamente.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia `llama2`. No hay informacion sobre arquitectura, datos de entrenamiento, proceso de poda, recetas de calibracion, idiomas soportados ni evaluaciones. El repositorio ocupa 17,0 GB e incluye pesos en safetensors y GGUF, lo que sugiere que se han generado cuantizaciones para inferencia local.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 4 bits: alrededor de 2,1 GB para pesos, con margen adicional para contexto.
 - GPU recomendadas: A100 o H100 para despliegues de referencia; RTX 4090, RTX 3090 o RTX A6000 para inferencia en FP16 con comodidad.
 - GPU de consumo: cabe en tarjetas de 8 GB (RTX 3060 Ti, RTX 4060, RTX 2070) usando GGUF a 4 bits; en FP16 requiere al menos 12 GB.
-- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM o TGI para safetensors si la arquitectura es compatible con Llama; el tag `endpoints_compatible` sugiere compatibilidad con la API de HuggingFace Endpoints.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM o TGI para safetensors si la arquitectura es compatible con Llama; el tag `endpoints_compatible` sugiere compatibilidad con la API de Hugging Face Endpoints.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PruningEverything/llama_2_40_percent_compression | 4,09 B | no disponible | llama2 | HuggingFace (safetensors, GGUF) |
-| Llama 2 7B (Meta) | 6,74 B | 4096 tokens | llama2 | HuggingFace, amplia adopcion |
-| Llama 2 7B Chat (Meta) | 6,74 B | 4096 tokens | llama2 | HuggingFace, amplia adopcion |
-| TinyLlama 1.1B | 1,1 B | 2048 tokens | llama2 | HuggingFace, comunidad activa |
+| PruningEverything/llama_2_40_percent_compression | 4,09 B | no disponible | llama2 | Hugging Face (safetensors, GGUF) |
+| Llama 2 7B (Meta) | 6,74 B | 4096 tokens | llama2 | Hugging Face, amplia adopcion |
+| Llama 2 7B Chat (Meta) | 6,74 B | 4096 tokens | llama2 | Hugging Face, amplia adopcion |
+| TinyLlama 1.1B | 1,1 B | 2048 tokens | llama2 | Hugging Face, comunidad activa |
 
 La comparacion de rendimiento con estas alternativas no esta disponible: no existen benchmarks publicados para la variante podada. Frente a Llama 2 7B, la ventaja teorica es una reduccion de aproximadamente el 39 por ciento en parametros y, por tanto, en requisitos de memoria; el coste en calidad es desconocido.
 
@@ -84,7 +84,7 @@ La comparacion de rendimiento con estas alternativas no esta disponible: no exis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PruningEverything/llama_2_40_percent_compression
+- Modelo en Hugging Face: https://huggingface.co/PruningEverything/llama_2_40_percent_compression
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Repositorio oficial de Llama 2 (Meta): https://github.com/facebookresearch/llama
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Tipo | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kairoi-LLC/stt-en-conformer-ctc-small-onnx (este) | ~13M | Conformer-CTC int8 ONNX | audio, 80 bins log-mel, 40 ms/trama | cc-by-4.0 | HuggingFace (mirror) |
-| nvidia/stt_en_conformer_ctc_small | ~13M | Conformer-CTC (formato NeMo nativo) | audio, ingles | cc-by-4.0 | HuggingFace / NGC |
-| csukuangfj/sherpa-onnx-nemo-ctc-en-conformer-small | ~13M | Conformer-CTC export ONNX (script Apache-2.0) | audio, ingles | segun upstream | HuggingFace |
+| Kairoi-LLC/stt-en-conformer-ctc-small-onnx (este) | ~13M | Conformer-CTC int8 ONNX | audio, 80 bins log-mel, 40 ms/trama | cc-by-4.0 | Hugging Face (mirror) |
+| nvidia/stt_en_conformer_ctc_small | ~13M | Conformer-CTC (formato NeMo nativo) | audio, ingles | cc-by-4.0 | Hugging Face / NGC |
+| csukuangfj/sherpa-onnx-nemo-ctc-en-conformer-small | ~13M | Conformer-CTC export ONNX (script Apache-2.0) | audio, ingles | segun upstream | Hugging Face |
 
 Los tres modelos comparten los mismos pesos base; las diferencias estriban en el formato (NeMo nativo frente a ONNX int8), la herramienta de despliegue y los scripts asociados. No se dispone de datos de rendimiento comparado en la informacion proporcionada para establecer diferencias cuantitativas de WER o latencia.
 
@@ -88,7 +88,7 @@ Los tres modelos comparten los mismos pesos base; las diferencias estriban en el
 
 ## Enlaces
 
-- Repositorio mirror en HuggingFace: https://huggingface.co/Kairoi-LLC/stt-en-conformer-ctc-small-onnx
+- Repositorio mirror en Hugging Face: https://huggingface.co/Kairoi-LLC/stt-en-conformer-ctc-small-onnx
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/stt_en_conformer_ctc_small
 - Model card original (README): https://huggingface.co/nvidia/stt_en_conformer_ctc_small/blob/main/README.md
 - Repositorio del export ONNX (sherpa-onnx / k2-fsa): https://huggingface.co/csukuangfj/sherpa-onnx-nemo-ctc-en-conformer-small

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe `fatdove/so101-toy-plate_GR00T17`, una politica de robotica (vision-language-action) entrenada con LeRobot y publicada en HuggingFace por el usuario `fatdove`. No es un modelo de lenguaje de proposito general: es un checkpoint de control para un brazo robotico SO-101 en configuracion `so_follower`, especializado en una unica tarea de manipulacion descrita en el dataset como "Pick up the brown toy rabbit and place it in the white plate". El modelo parte de la arquitectura abierta GR00T N1.7 de NVIDIA, que combina un backbone Cosmos-Reason2/Qwen3-VL con un transformer de acciones por flow matching, y lo ajusta sobre un corpus de 50 episodios y 26.950 fotogramas grabados a 30 FPS.
+Esta ficha describe `fatdove/so101-toy-plate_GR00T17`, una politica de robotica (vision-language-action) entrenada con LeRobot y publicada en Hugging Face por el usuario `fatdove`. No es un modelo de lenguaje de proposito general: es un checkpoint de control para un brazo robotico SO-101 en configuracion `so_follower`, especializado en una unica tarea de manipulacion descrita en el dataset como "Pick up the brown toy rabbit and place it in the white plate". El modelo parte de la arquitectura abierta GR00T N1.7 de NVIDIA, que combina un backbone Cosmos-Reason2/Qwen3-VL con un transformer de acciones por flow matching, y lo ajusta sobre un corpus de 50 episodios y 26.950 fotogramas grabados a 30 FPS.
 
 El checkpoint tiene 3.144.016.000 parametros (dato real de los safetensors) y ocupa 12,6 GB en el repositorio, en formato safetensors y con licencia Apache 2.0. Su relevancia es practica: demuestra el flujo completo de ajuste de un modelo fundacional cross-embodiment de NVIDIA sobre hardware de robotica de bajo coste con la libreria LeRobot 0.6.1, lo que permite reproducir el entrenamiento y desplegar la politica en un SO-101 real con dos camaras (frontal y de muneca).
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Parametros | Contexto / morfologia | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fatdove/so101-toy-plate_GR00T17` | 3.144.016.000 | SO-101 follower, 2 camaras, estado y accion de 6 dimensiones | Pick up the brown toy rabbit and place it in the white plate | Apache 2.0 | Publicado en HuggingFace, 0 descargas |
-| `fatdove/so101-cube-bowl_GR00T17` | no disponible | SO-101, no disponible | no disponible | no disponible | Publicado en HuggingFace |
+| `fatdove/so101-toy-plate_GR00T17` | 3.144.016.000 | SO-101 follower, 2 camaras, estado y accion de 6 dimensiones | Pick up the brown toy rabbit and place it in the white plate | Apache 2.0 | Publicado en Hugging Face, 0 descargas |
+| `fatdove/so101-cube-bowl_GR00T17` | no disponible | SO-101, no disponible | no disponible | no disponible | Publicado en Hugging Face |
 | NVIDIA GR00T N1.7 (modelo base) | no disponible en la informacion proporcionada | Cross-embodiment, humanoides | Razonamiento y habilidades generalizadas de manipulacion | no disponible en la informacion proporcionada | Repositorio `NVIDIA/Isaac-GR00T` y fork `ZebinJiang/Isaac-GR00T17` en GitHub |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas. Otras politicas de la familia LeRobot (por ejemplo, las basadas en pi0 o en arquitecturas ACT y diffusion policy) serian comparables funcionalmente, pero no se han recuperado especificaciones de ellas en la informacion disponible, por lo que no se incluyen cifras.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas. Otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fatdove/so101-toy-plate_GR00T17
+- Modelo en Hugging Face: https://huggingface.co/fatdove/so101-toy-plate_GR00T17
 - Dataset de entrenamiento: https://huggingface.co/datasets/fatdove/so101-toy-plate
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fatdove/so101-toy-plate
 - Modelo hermano del mismo autor: https://huggingface.co/fatdove/so101-cube-bowl_GR00T17

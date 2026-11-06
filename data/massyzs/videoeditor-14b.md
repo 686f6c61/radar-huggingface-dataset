@@ -2,11 +2,11 @@
 
 ## Resumen
 
-videoeditor-14b es un modelo de edición de vídeo instruccional (video-to-video) publicado por el usuario Massyzs en HuggingFace bajo licencia Apache 2.0. El modelo se presenta como un fine-tune del modelo base linyq/kiwi-edit-5b-instruct-only-diffusers y está etiquetado con la familia wan2.2, lo que lo vincula al ecosistema de modelos de generación de vídeo Wan de Alibaba. Su propósito es recibir un vídeo de entrada junto con una instrucción en lenguaje natural y devolver una versión editada del mismo, sin necesidad de máscaras manuales ni de pipelines de postproducción tradicionales.
+videoeditor-14b es un modelo de edición de vídeo instruccional (video-to-video) publicado por el usuario Massyzs en Hugging Face bajo licencia Apache 2.0. El modelo se presenta como un fine-tune del modelo base linyq/kiwi-edit-5b-instruct-only-diffusers y está etiquetado con la familia wan2.2, lo que lo vincula al ecosistema de modelos de generación de vídeo Wan de Alibaba. Su propósito es recibir un vídeo de entrada junto con una instrucción en lenguaje natural y devolver una versión editada del mismo, sin necesidad de máscaras manuales ni de pipelines de postproducción tradicionales.
 
 El nombre del repositorio sugiere un tamaño de 14.000 millones de parámetros, aunque esta cifra no está confirmada en la información disponible y contrasta con el modelo base declarado, que es de 5.000 millones. El repositorio ocupa 22,4 GB, lo que resulta coherente con pesos en precisión bf16 o fp16 para un modelo de esa magnitud. La etiqueta mixture-of-experts indica que la arquitectura podría emplear capas MoE, si bien no se especifican parámetros activos ni configuración de expertos.
 
-El modelo es relevante por su enfoque en edición de vídeo guiada por instrucciones, una tarea emergente que combina difusión sobre latentes temporales con comprensión semántica de texto. No obstante, el repositorio no incluye tarjeta de modelo con detalles técnicos, benchmarks ni instrucciones de uso, y el acceso está restringido (gated), por lo que la evaluación práctica requiere aceptar las condiciones en HuggingFace.
+El modelo es relevante por su enfoque en edición de vídeo guiada por instrucciones, una tarea emergente que combina difusión sobre latentes temporales con comprensión semántica de texto. No obstante, el repositorio no incluye tarjeta de modelo con detalles técnicos, benchmarks ni instrucciones de uso, y el acceso está restringido (gated), por lo que la evaluación práctica requiere aceptar las condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Massyzs/videoeditor-14b | No disponible (nombre sugiere 14B) | No disponible | Edición de vídeo instruccional | Apache 2.0 | Gated en HuggingFace |
+| Massyzs/videoeditor-14b | No disponible (nombre sugiere 14B) | No disponible | Edición de vídeo instruccional | Apache 2.0 | Gated en Hugging Face |
 | linyq/kiwi-edit-5b-instruct-only-diffusers (modelo base) | 5B (según nombre) | No disponible | Edición instruccional | No disponible | No disponible |
 | Wan2.2 (familia Alibaba) | No disponible | No disponible | Generación/edición de vídeo | No disponible | No disponible |
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 ## Limitaciones y advertencias
 
 - El repositorio no incluye tarjeta de modelo con documentación técnica, instrucciones de uso ni ejemplos, lo que dificulta su adopción en producción.
-- El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Existe una discrepancia entre el nombre del modelo (14B) y el modelo base declarado (5B) que no se aclara en la información disponible; conviene verificar el tamaño real antes de planificar recursos.
 - No se especifican los idiomas soportados para las instrucciones de edición, por lo que el rendimiento en castellano es desconocido.
 - Riesgo de alucinación visual y de artefactos temporales inherente a los modelos de difusión de vídeo; no hay evaluaciones publicadas que cuantifiquen este riesgo.
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Massyzs/videoeditor-14b
+- Hugging Face: https://huggingface.co/Massyzs/videoeditor-14b
 - Modelo base: https://huggingface.co/linyq/kiwi-edit-5b-instruct-only-diffusers
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

@@ -83,7 +83,7 @@ La comparativa con alternativas queda limitada porque no se dispone de datos de 
 
 ## Enlaces
 
-- HuggingFace (este GGUF): https://huggingface.co/mradermacher/llm-jp-3-3.7b-Open-R1-Distill-GGUF
+- Hugging Face (este GGUF): https://huggingface.co/mradermacher/llm-jp-3-3.7b-Open-R1-Distill-GGUF
 - Modelo base: https://huggingface.co/KMasaki/llm-jp-3-3.7b-Open-R1-Distill
 - Pagina de resumen del autor: https://hf.tst.eu/model#llm-jp-3-3.7b-Open-R1-Distill-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k

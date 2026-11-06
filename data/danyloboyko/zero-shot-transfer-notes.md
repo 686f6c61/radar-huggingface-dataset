@@ -63,5 +63,5 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danyloboyko/zero-shot-transfer-notes
+- Repositorio en Hugging Face: https://huggingface.co/danyloboyko/zero-shot-transfer-notes
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este proyecto en la búsqueda web.

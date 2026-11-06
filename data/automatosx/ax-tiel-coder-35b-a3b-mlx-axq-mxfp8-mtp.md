@@ -85,10 +85,10 @@ La información proporcionada solo permite comparar con la cadena de modelos de 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Tiel-Coder-35B-A3B-MLX-AXQ-MXFP8-MTP (este) | 34,66B en safetensors; 35,11B lógicos | 262.144 tokens | AXQ 8,6383 BPW totales (8 bits + BF16 protegido) | apache-2.0 | HuggingFace, formato MLX; 0 descargas, 0 likes |
-| AX-Tiel-Coder-35B-A3B-MLX-AXQ-6bit-MTP | no disponible | no disponible | Presupuesto AXQ de 6 BPW; mayor precisión media | apache-2.0 (presumible, no confirmado) | HuggingFace, formato MLX |
-| AX-Tiel-Coder-35B-A3B-MLX-AXQ-4bit-MTP | no disponible | no disponible | Presupuesto AXQ de 4 bits; menor almacenamiento | apache-2.0 (presumible, no confirmado) | HuggingFace, formato MLX |
-| peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e-MTP (base) | no disponible | no disponible | oQ6e (BF16 origen de la conversión) | no disponible | HuggingFace, formato MLX |
+| AX-Tiel-Coder-35B-A3B-MLX-AXQ-MXFP8-MTP (este) | 34,66B en safetensors; 35,11B lógicos | 262.144 tokens | AXQ 8,6383 BPW totales (8 bits + BF16 protegido) | apache-2.0 | Hugging Face, formato MLX; 0 descargas, 0 likes |
+| AX-Tiel-Coder-35B-A3B-MLX-AXQ-6bit-MTP | no disponible | no disponible | Presupuesto AXQ de 6 BPW; mayor precisión media | apache-2.0 (presumible, no confirmado) | Hugging Face, formato MLX |
+| AX-Tiel-Coder-35B-A3B-MLX-AXQ-4bit-MTP | no disponible | no disponible | Presupuesto AXQ de 4 bits; menor almacenamiento | apache-2.0 (presumible, no confirmado) | Hugging Face, formato MLX |
+| peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e-MTP (base) | no disponible | no disponible | oQ6e (BF16 origen de la conversión) | no disponible | Hugging Face, formato MLX |
 
 El autor advierte de que los nombres de las variantes AXQ describen una clase de presupuesto de almacenamiento y no una precisión uniforme: un plan etiquetado como `6bit` puede mantener 4 bits como base y elevar selectivamente otros tensores a 6 bits, 8 bits o BF16. En modelos pequeños o muy protegidos, los suelos de protección pueden llevar un plan de 4 bits cerca o por encima del presupuesto de 6 bits. Comparativas con alternativas externas de la misma categoría: no disponibles.
 
@@ -106,11 +106,11 @@ El autor advierte de que los nombres de las variantes AXQ describen una clase de
 - Idiomas soportados: no disponibles; el campo no está cumplimentado, lo que impide valorar cobertura multilingüe.
 - Licencia: apache-2.0 permite uso comercial, pero conviene verificar la licencia del modelo base y de los datos de entrenamiento originales, no documentada aquí.
 - Adopción nula verificable: 0 descargas y 0 likes en el momento de la consulta, y actualización el mismo día de la creación (4 de octubre de 2026), lo que indica ausencia de validación por parte de la comunidad.
-- Reproducibilidad: el autor recomienda fijar el commit de HuggingFace en despliegues reproducibles en lugar de depender indefinidamente de `main`.
+- Reproducibilidad: el autor recomienda fijar el commit de Hugging Face en despliegues reproducibles en lugar de depender indefinidamente de `main`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Tiel-Coder-35B-A3B-MLX-AXQ-MXFP8-MTP
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Tiel-Coder-35B-A3B-MLX-AXQ-MXFP8-MTP
 - Modelo base: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e-MTP/tree/88625754ac91b542280a5602239ce6b2166366f0
 - Variante hermana de 4 bits: https://huggingface.co/AutomatosX/AX-Tiel-Coder-35B-A3B-MLX-AXQ-4bit-MTP
 - Variante hermana de 6 bits: https://huggingface.co/AutomatosX/AX-Tiel-Coder-35B-A3B-MLX-AXQ-6bit-MTP

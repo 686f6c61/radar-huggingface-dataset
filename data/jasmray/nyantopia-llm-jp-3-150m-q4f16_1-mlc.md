@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / despliegue |
 |---|---|---|---|---|---|
 | nyantopia-llm-jp-3-150m-q4f16_1-MLC | 150M (base) | no disponible | ja | Apache 2.0 | MLC q4f16_1 + wasm, WebLLM |
-| llm-jp/llm-jp-3-150m-instruct3 (base) | 150M | no disponible | ja | no disponible en esta ficha | safetensors (HuggingFace) |
+| llm-jp/llm-jp-3-150m-instruct3 (base) | 150M | no disponible | ja | no disponible en esta ficha | safetensors (Hugging Face) |
 | Otros modelos japoneses pequenos de la serie llm-jp-3 | 150M–1.8B (segun variante) | no disponible | ja | no disponible en esta ficha | safetensors; conversiones comunitarias a GGUF/MLC |
 
 La comparacion relevante es con su propio modelo base: nyantopia anade una especializacion de estilo y un empaquetado para navegador, pero no amplia capacidades generales. Frente a otros modelos japoneses de tamano similar, su ventaja es el despliegue cliente con WebGPU y su desventaja es el alcance funcional extremadamente limitado.
@@ -83,7 +83,7 @@ La comparacion relevante es con su propio modelo base: nyantopia anade una espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jasmray/nyantopia-llm-jp-3-150m-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/jasmray/nyantopia-llm-jp-3-150m-q4f16_1-MLC
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-3-150m-instruct3
 - Repositorio de la extension Nyantopia: https://github.com/rayjasm/nyantopia
 - MLC LLM: https://llm.mlc.ai/

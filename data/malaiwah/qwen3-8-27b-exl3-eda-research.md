@@ -92,6 +92,6 @@ La diferencia clave es que la version hydrated utiliza una asignacion de bits di
 
 ## Enlaces
 
-- Repositorio HuggingFace de este artefacto: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-EDA-research
+- Repositorio Hugging Face de este artefacto: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-EDA-research
 - Version recomendada (hydrated): https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6-hydrated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -97,7 +97,7 @@ La comparación relevante es con el propio modelo base: este checkpoint parte de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XujjHarvard/cs2881-hw1-combined
+- Modelo en Hugging Face: https://huggingface.co/XujjHarvard/cs2881-hw1-combined
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Adaptador LoRA: incluido en el repositorio, subdirectorio `adapter/` (https://huggingface.co/XujjHarvard/cs2881-hw1-combined/tree/main/adapter)
 - Paper, blog o repositorio del autor: no disponibles en la informacion proporcionada.

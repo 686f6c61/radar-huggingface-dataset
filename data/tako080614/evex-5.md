@@ -72,7 +72,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tako080614/evex-5
+- Repositorio en Hugging Face: https://huggingface.co/tako080614/evex-5
 - Dataset Japanese-Roleplay-Dialogues: https://huggingface.co/datasets/OmniAICreator/Japanese-Roleplay-Dialogues
 - Dataset JESC: https://huggingface.co/datasets/nntsuzu/JESC
 - Dataset open2ch: https://huggingface.co/datasets/p1atdev/open2ch

@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks estándar ni de modelos alternativos de otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-StrixHalo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-StrixHalo-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Cuantización GSQ-RCO de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Fork de runtime ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX

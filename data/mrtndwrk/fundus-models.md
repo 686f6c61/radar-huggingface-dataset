@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Repositorio | Contenido | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mrtndwrk/fundus-models | Copia espejo de varios artefactos para la app Fundus | GGML, ONNX, safetensors, litertlm | other (por fichero: MIT, Apache 2.0) | HuggingFace, 0 descargas |
-| ggerganov/whisper.cpp | Modelos whisper convertidos para whisper.cpp | GGML | MIT | HuggingFace |
-| Xenova/multilingual-e5-small | E5-small convertido a ONNX | ONNX | MIT | HuggingFace |
-| Xenova/clip-vit-base-patch32 | CLIP ViT-B/32 convertido a ONNX | ONNX | MIT | HuggingFace |
+| mrtndwrk/fundus-models | Copia espejo de varios artefactos para la app Fundus | GGML, ONNX, safetensors, litertlm | other (por fichero: MIT, Apache 2.0) | Hugging Face, 0 descargas |
+| ggerganov/whisper.cpp | Modelos whisper convertidos para whisper.cpp | GGML | MIT | Hugging Face |
+| Xenova/multilingual-e5-small | E5-small convertido a ONNX | ONNX | MIT | Hugging Face |
+| Xenova/clip-vit-base-patch32 | CLIP ViT-B/32 convertido a ONNX | ONNX | MIT | Hugging Face |
 
 La comparativa se limita a los repositorios de origen citados por el autor; no se dispone de datos de rendimiento para contrastar.
 
@@ -78,11 +78,11 @@ La comparativa se limita a los repositorios de origen citados por el autor; no s
 - Riesgo de desactualizacion: al ser copias sin modificar, no reciben mejoras ni correcciones de los repositorios originales.
 - Sin informacion sobre sesgos, alucinacion, cobertura idiomatica ni limites de contexto.
 - El repositorio tiene 0 descargas y 0 likes, por lo que no hay evidencia de uso ni validacion por la comunidad.
-- La fecha de creacion indicada (2026-10-30) es futura respecto a la informacion habitual de HuggingFace; conviene confirmar la metadata antes de depender de ella.
+- La fecha de creacion indicada (2026-10-30) es futura respecto a la informacion habitual de Hugging Face; conviene confirmar la metadata antes de depender de ella.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mrtndwrk/fundus-models
+- Repositorio en Hugging Face: https://huggingface.co/mrtndwrk/fundus-models
 - whisper.cpp (origen del fichero GGML): https://huggingface.co/ggerganov/whisper.cpp
 - multilingual-e5-small (origen de los ficheros E5): https://huggingface.co/Xenova/multilingual-e5-small
 - clip-vit-base-patch32 (origen de los ficheros CLIP): https://huggingface.co/Xenova/clip-vit-base-patch32

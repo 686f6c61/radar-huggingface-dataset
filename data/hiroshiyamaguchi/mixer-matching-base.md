@@ -26,7 +26,7 @@ La arquitectura sigue el paradigma Mixer, que sustituye la atención por operaci
 ## Capacidades
 
 - Generación de representaciones para tareas de matching (similitud o emparejamiento entre pares de entradas), según el diseño de la arquitectura.
-- Implementación personalizada que requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace (no es compatible con `AutoModel`).
+- Implementación personalizada que requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face (no es compatible con `AutoModel`).
 - Ejecución de pruebas de humo y experimentos de validación de código gracias a su tamaño mínimo.
 - Posibilidad de servir como base para investigar variantes de Mixer (atención dilatada, fusión bilineal) en entornos con recursos limitados.
 - Soporte de entrenamiento desde cero con el script `pipeline.py` incluido, aunque sin garantías de convergencia o calidad.
@@ -62,12 +62,12 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - El checkpoint no está entrenado: es solo una inicialización aleatoria válida para pruebas de humo, no para uso real.
 - No se ha auditado la robustez, equidad ni la transferencia a dominios externos; el autor recomienda tratar la implementación como un punto de partida experimental.
 - No hay datos sobre sesgos, alucinación o limitaciones de idioma porque el modelo no ha sido entrenado.
-- La implementación es personalizada y no compatible con APIs genéricas de HuggingFace; se requiere un adaptador explícito para cargarla con `AutoModel` u otras herramientas.
+- La implementación es personalizada y no compatible con APIs genéricas de Hugging Face; se requiere un adaptador explícito para cargarla con `AutoModel` u otras herramientas.
 - La licencia MIT permite uso comercial, pero el autor advierte que hay que revisar los términos de las fuentes de datos externas si se usa con datasets de terceros.
 - No se han publicado métricas de rendimiento, por lo que no es adecuado para producción sin un entrenamiento y evaluación previos.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hiroshiyamaguchi/mixer-matching-base)
-- [Perfil del autor en HuggingFace](https://huggingface.co/hiroshiyamaguchi/models)
-- [HuggingFace - comunidad](https://huggingface.co/)
+- [Modelo en Hugging Face](https://huggingface.co/hiroshiyamaguchi/mixer-matching-base)
+- [Perfil del autor en Hugging Face](https://huggingface.co/hiroshiyamaguchi/models)
+- [Hugging Face - comunidad](https://huggingface.co/)

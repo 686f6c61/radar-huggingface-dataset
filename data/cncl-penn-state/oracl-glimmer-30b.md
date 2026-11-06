@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros adaptadores de puntuacion de creativida
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ORACL-Glimmer-30B | adaptador LoRA + cabeza de puntuacion sobre Muse-Glimmer-30B | 30B (modelo base); adaptador no cuantificado en la ficha | no disponible | no disponible (sin benchmarks publicados) | no disponible | HuggingFace, 0 descargas, 0 likes, repo de 0,4 GB |
+| ORACL-Glimmer-30B | adaptador LoRA + cabeza de puntuacion sobre Muse-Glimmer-30B | 30B (modelo base); adaptador no cuantificado en la ficha | no disponible | no disponible (sin benchmarks publicados) | no disponible | Hugging Face, 0 descargas, 0 likes, repo de 0,4 GB |
 | Muse-Glimmer-30B | modelo base referenciado | 30B | no disponible | no disponible | no disponible | referenciado como meta-models/Muse-Glimmer-30B, sin datos en la informacion disponible |
 | Otros evaluadores de creatividad | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -102,7 +102,7 @@ No se dispone de informacion sobre otros adaptadores de puntuacion de creativida
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/CNCL-Penn-State/ORACL-Glimmer-30B
+- Repositorio del modelo en Hugging Face: https://huggingface.co/CNCL-Penn-State/ORACL-Glimmer-30B
 - Modelo base Muse-Glimmer-30B: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Dataset de ajuste MuCE-ORACL-Glimmer: https://huggingface.co/datasets/CNCL-Penn-State/MuCE-ORACL-Glimmer
 - Organizacion del autor: https://huggingface.co/CNCL-Penn-State

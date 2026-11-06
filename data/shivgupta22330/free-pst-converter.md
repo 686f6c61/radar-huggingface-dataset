@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `shivgupta22330/Free-PST-Converter` corresponde a un repositorio alojado en HuggingFace que, segun los metadatos disponibles, no contiene un modelo de inteligencia artificial. El nombre sugiere una herramienta de conversion de ficheros PST (formato de almacenamiento de correo de Microsoft Outlook), y la model card asociada esta practicamente vacia: unicamente declara la licencia `openrail` y no incluye descripcion, arquitectura ni datos de entrenamiento.
+El identificador `shivgupta22330/Free-PST-Converter` corresponde a un repositorio alojado en Hugging Face que, segun los metadatos disponibles, no contiene un modelo de inteligencia artificial. El nombre sugiere una herramienta de conversion de ficheros PST (formato de almacenamiento de correo de Microsoft Outlook), y la model card asociada esta practicamente vacia: unicamente declara la licencia `openrail` y no incluye descripcion, arquitectura ni datos de entrenamiento.
 
 No se dispone de informacion sobre parametros, longitud de contexto, arquitectura, dataset de entrenamiento ni capacidades. El repositorio registra cero descargas y cero interacciones, fue creado el 4 de noviembre de 2026 y no tiene actualizaciones posteriores. La busqueda web realizada no devuelve ningun resultado relacionado con este repositorio ni con un modelo de IA con ese nombre.
 
@@ -39,7 +39,7 @@ La ausencia de ficheros de pesos en la informacion proporcionada (no se listan s
 ## Casos de uso
 
 - No es posible identificar casos de uso como modelo de IA: la informacion disponible no describe ninguna capacidad de inferencia.
-- Evaluacion de repositorios HuggingFace: el caso podria ser el de auditar repositorios con metadatos incompletos, pero no se deriva del contenido del propio repositorio.
+- Evaluacion de repositorios Hugging Face: el caso podria ser el de auditar repositorios con metadatos incompletos, pero no se deriva del contenido del propio repositorio.
 - Conversion de ficheros PST: el nombre sugiere esta funcionalidad, pero no hay documentacion, codigo ni binarios que la respalden en la informacion proporcionada.
 - Integracion en pipelines de NLP: descartado por ausencia de pesos y de arquitectura documentada.
 - Despliegue en produccion: descartado por falta de especificaciones, benchmarks y licencia clara sobre el uso comercial (openrail requiere revisar sus terminos, pero no hay artefacto que licenciar).
@@ -64,7 +64,7 @@ No disponible. No se ha identificado ningun modelo comparable porque el reposito
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| shivgupta22330/Free-PST-Converter | no disponible | no disponible | openrail | repositorio HuggingFace sin descargas |
+| shivgupta22330/Free-PST-Converter | no disponible | no disponible | openrail | repositorio Hugging Face sin descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,6 +80,6 @@ No disponible. No se ha identificado ningun modelo comparable porque el reposito
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shivgupta22330/Free-PST-Converter
+- Repositorio Hugging Face: https://huggingface.co/shivgupta22330/Free-PST-Converter
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.
 - Resultado de busqueda no relacionado (descartado por no guardar relacion con el repositorio): https://milesopedia.com/en/guide/tutorials/credit-card-fee-waiver/

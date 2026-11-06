@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - lucia-malickova/Behavioral-Reprogramming-LLMs](https://huggingface.co/lucia-malickova/Behavioral-Reprogramming-LLMs)
+- [Hugging Face - lucia-malickova/Behavioral-Reprogramming-LLMs](https://huggingface.co/lucia-malickova/Behavioral-Reprogramming-LLMs)
 - [Paper arXiv:2608.13069](https://arxiv.org/abs/2608.13069)
 - [Repositorio GitHub - Behavioral-Reprogramming-of-Open-Weights-Models](https://github.com/lucia-malickova/Behavioral-Reprogramming-of-Open-Weights-Models)

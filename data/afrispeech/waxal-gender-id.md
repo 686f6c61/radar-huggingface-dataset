@@ -105,7 +105,7 @@ No se dispone de información sobre modelos comparables de identificación de g�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriSpeech/waxal-gender-id
+- Modelo en Hugging Face: https://huggingface.co/AfriSpeech/waxal-gender-id
 - Dataset WaxalNLP: https://huggingface.co/datasets/google/WaxalNLP
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Extractor de embeddings (3D-Speaker CAM++): https://huggingface.co/csukuangfj/speaker-embedding-models

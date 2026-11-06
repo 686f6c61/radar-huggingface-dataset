@@ -107,7 +107,7 @@ La comparación de rendimiento en benchmarks no está disponible: este checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/declref_01_1pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-58-37_623281-pt
+- Hugging Face: https://huggingface.co/alexkstern/declref_01_1pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-58-37_623281-pt
 - Repositorio de nanochat (Karpathy): https://github.com/karpathy/nanochat
 - Run de Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/s6q4iydj
 - Búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Los únicos resultados devueltos pertenecen a guías de programación televisiva (telerama.fr, programme-television.org, programme-tv.net) y no guardan relación con el modelo.

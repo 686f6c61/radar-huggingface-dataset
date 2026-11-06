@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kalyanikalavani/Krea` es un repositorio publicado en HuggingFace por el usuario Kalyanikalavani el 24 de octubre de 2026. En el momento de redactar esta ficha no dispone de model card funcional: el README se limita a la declaracion de licencia (`apache-2.0`), sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 1,1 GB y no tiene etiqueta de pipeline asignada, 0 descargas y 0 likes.
+`Kalyanikalavani/Krea` es un repositorio publicado en Hugging Face por el usuario Kalyanikalavani el 24 de octubre de 2026. En el momento de redactar esta ficha no dispone de model card funcional: el README se limita a la declaracion de licencia (`apache-2.0`), sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 1,1 GB y no tiene etiqueta de pipeline asignada, 0 descargas y 0 likes.
 
 La ausencia de pipeline y de documentacion impide clasificar el artefacto: no se puede confirmar si contiene pesos de un modelo de lenguaje, un checkpoint de difusion, adaptadores (LoRA) o cualquier otro tipo de artefacto. Esta falta de metadatos, junto con la carencia de evaluaciones publicadas, hace que el repositorio no sea evaluable tecnicamente en su estado actual.
 
@@ -80,7 +80,7 @@ No disponible. Al no poder determinarse la categoria del artefacto, no es posibl
 ## Limitaciones y advertencias
 
 - Model card practicamente vacia: unicamente contiene la licencia, sin descripcion, arquitectura ni instrucciones de uso.
-- Sin pipeline declarado en HuggingFace, lo que impide saber que tarea resuelve el artefacto.
+- Sin pipeline declarado en Hugging Face, lo que impide saber que tarea resuelve el artefacto.
 - Sin evaluaciones publicadas ni descargas registradas; no hay validacion por parte de la comunidad.
 - Riesgo de confusion de nombre con Krea (krea.ai), suite creativa comercial sin relacion verificada con este repositorio.
 - Procedencia de los datos de entrenamiento desconocida, lo que impide evaluar sesgos, contamination de benchmarks o cumplimiento de derechos de terceros.
@@ -91,9 +91,9 @@ No disponible. Al no poder determinarse la categoria del artefacto, no es posibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kalyanikalavani/Krea
-- Perfil del autor en HuggingFace (repositorio relacionado): https://huggingface.co/Kalyanikalavani/Aipotionsstyle
-- Perfil del autor en HuggingFace (repositorio relacionado): https://huggingface.co/Kalyanikalavani/college-besties
+- Repositorio en Hugging Face: https://huggingface.co/Kalyanikalavani/Krea
+- Perfil del autor en Hugging Face (repositorio relacionado): https://huggingface.co/Kalyanikalavani/Aipotionsstyle
+- Perfil del autor en Hugging Face (repositorio relacionado): https://huggingface.co/Kalyanikalavani/college-besties
 - Krea (suite creativa comercial, sin relacion verificada): https://www.krea.ai/
 - Biblioteca de modelos de Krea (sin relacion verificada): https://www.krea.ai/models
 - Perfil de Instagram "Kalyani AI" (sin relacion verificada con el repositorio): https://www.instagram.com/kalyaani.ai/

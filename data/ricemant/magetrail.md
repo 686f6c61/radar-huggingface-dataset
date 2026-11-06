@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MageTrail es un modelo de texto a imagen desarrollado por RicemanT, basado en el modelo Mage-Flow 4B de Microsoft. Se trata de un finetune completo (full finetune) orientado a la generación de imágenes en estilo anime y furry, entrenado sobre el dataset Booru-Essence-2026, compuesto por 41.000 imágenes etiquetadas. El modelo se distribuye bajo licencia MIT y se integra con la librería diffusers de HuggingFace, lo que facilita su uso en entornos como ComfyUI.
+MageTrail es un modelo de texto a imagen desarrollado por RicemanT, basado en el modelo Mage-Flow 4B de Microsoft. Se trata de un finetune completo (full finetune) orientado a la generación de imágenes en estilo anime y furry, entrenado sobre el dataset Booru-Essence-2026, compuesto por 41.000 imágenes etiquetadas. El modelo se distribuye bajo licencia MIT y se integra con la librería diffusers de Hugging Face, lo que facilita su uso en entornos como ComfyUI.
 
 La relevancia de MageTrail radica en que ofrece una especialización de nicho sobre un modelo de flujo de 4B, con soporte para etiquetas de Danbooru y e621, así como para descripciones en lenguaje natural. El entrenamiento empleó técnicas avanzadas de diffusion-pipe, incluyendo mezcla de captions, dropout de etiquetas y un sistema de atribución de artistas, lo que lo convierte en una opción interesante para la generación de ilustraciones anime y furry con control fino del estilo.
 
@@ -34,7 +34,7 @@ El dataset Booru-Essence-2026, originalmente creado por Lodestone Rock, fue actu
 - Generación de imágenes a partir de prompts de texto en estilo anime y furry, con resolución de entrenamiento de 1024x1024.
 - Soporte de etiquetas de Danbooru y e621 (tags), así como descripciones en lenguaje natural y combinaciones mixtas de ambos formatos.
 - Sistema de atribución de artistas (artist trigger attribution) que permite imitar estilos de artistas específicos mediante etiquetas.
-- Integración con la librería diffusers de HuggingFace y compatibilidad con ComfyUI, como se indica en la model card.
+- Integración con la librería diffusers de Hugging Face y compatibilidad con ComfyUI, como se indica en la model card.
 - No soporta tool calling, function calling ni razonamiento multi-paso, al ser un modelo puramente generativo de imágenes.
 - No dispone de capacidades de visión o audio; solo entrada de texto y salida de imagen.
 - Las capacidades multilingües no están especificadas; el uso de etiquetas y prompts en inglés es el esperado.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: al tratarse de un modelo de 4B en BF16, los pesos ocupan aproximadamente 8 GB de VRAM, más el overhead de activaciones y el VAE. Se estima que se necesitan al menos 12 GB de VRAM para una inferencia estable.
 - GPU recomendadas: para inferencia se recomienda una GPU consumer con 16 GB o más de VRAM, como RTX 4080 o RTX 4090. Para entrenamiento, el autor utilizó 8x H100 HBM3 de 80 GB.
 - Compatibilidad con GPUs consumer: es probable que funcione en RTX 3090 (24 GB) o RTX 4090 (24 GB) sin cuantización. No se dispone de datos sobre cuantizaciones.
-- Opciones de despliegue: el modelo se puede cargar con la librería diffusers de HuggingFace, y la model card indica que las imágenes de ejemplo fueron generadas con ComfyUI. No está desplegado por ningún proveedor de inferencia.
+- Opciones de despliegue: el modelo se puede cargar con la librería diffusers de Hugging Face, y la model card indica que las imágenes de ejemplo fueron generadas con ComfyUI. No está desplegado por ningún proveedor de inferencia.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de información suficiente en la información proporcionada para c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RicemanT/MageTrail
+- Modelo en Hugging Face: https://huggingface.co/RicemanT/MageTrail
 - Dataset Booru-Essence-2026: https://huggingface.co/datasets/RicemanT/booru-essence-2026
 - Modelo base Mage-Flow: https://huggingface.co/mage-flow-community/Mage-Flow
 - Fork de diffusion-pipe para entrenamiento: https://github.com/RicemanT/diffusion-pipe-mageflow-ft
@@ -87,6 +87,6 @@ No se dispone de información suficiente en la información proporcionada para c
 - Discord de Banodoco: https://discord.gg/yzwcNaSEz
 - Motimalu en Civitai: https://civitai.red/user/motimalu
 - Diffusion-pipe original de Bluvoll: https://github.com/bluvoll/diffusion-pipe
-- Nruaif en HuggingFace: https://huggingface.co/Shio-Koube
+- Nruaif en Hugging Face: https://huggingface.co/Shio-Koube
 - GPU Garden: https://gpu.garden/
 - Licencia MIT: https://choosealicense.com/licenses/mit/

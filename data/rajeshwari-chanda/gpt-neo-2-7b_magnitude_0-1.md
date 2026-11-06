@@ -4,7 +4,7 @@
 
 `Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.1` es un checkpoint derivado de GPT-Neo 2.7B, la familia de transformadores decoder-only que EleutherAI publicó en 2021 y que replicaba a escala reducida el diseño de GPT-3. El repositorio declara 2.651.307.520 parámetros reales (verificados vía safetensors) y 5,3 GB de peso en disco, y se distribuye con la librería transformers bajo el pipeline `text-generation`. La arquitectura de referencia usa 2.048 tokens de contexto con atención local de ventana 256 alternada con atención global.
 
-El problema principal de esta ficha es la ausencia casi total de información: la model card es la plantilla automática de HuggingFace y todos los campos sustantivos (autoría, datos de entrenamiento, licencia, idiomas, evaluación, impacto ambiental) aparecen como `[More Information Needed]`. El sufijo `magnitude_0.1` del nombre sugiere un experimento de poda por magnitud con un 10% de sparsity, pero no hay documentación publicada que lo confirme.
+El problema principal de esta ficha es la ausencia casi total de información: la model card es la plantilla automática de Hugging Face y todos los campos sustantivos (autoría, datos de entrenamiento, licencia, idiomas, evaluación, impacto ambiental) aparecen como `[More Information Needed]`. El sufijo `magnitude_0.1` del nombre sugiere un experimento de poda por magnitud con un 10% de sparsity, pero no hay documentación publicada que lo confirme.
 
 Su relevancia es por tanto académica y limitada: sirve como ejemplo de artefacto de investigación poco documentado en el Hub y como punto de partida para reproducir experimentos de compresión de modelos. No ofrece ventajas medibles frente a GPT-Neo 2.7B original ni frente a alternativas contemporáneas mejor mantenidas. Cualquier uso en producción exigiría auditoría previa del checkpoint.
 
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenamiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt-neo-2.7B_magnitude_0.1 (este) | 2,65 B | 2.048 | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| GPT-Neo 2.7B (EleutherAI) | 2,7 B | 2.048 | The Pile, 400 B tokens aprox. | MIT (modelo base publicado por EleutherAI) | HuggingFace, ampliamente utilizado |
-| Pythia-2.8B (EleutherAI) | 2,8 B | 2.048 | The Pile, 300 B tokens, 154 checkpoints | Apache 2.0 | HuggingFace, suite reproducible |
-| OPT-2.7B (Meta) | 2,7 B | 2.048 | 180 B tokens | Licencia específica de OPT (revisar términos de uso comercial) | HuggingFace |
-| GPT-J 6B (EleutherAI) | 6 B | 2.048 | The Pile, 402 B tokens | Apache 2.0 | HuggingFace |
+| gpt-neo-2.7B_magnitude_0.1 (este) | 2,65 B | 2.048 | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| GPT-Neo 2.7B (EleutherAI) | 2,7 B | 2.048 | The Pile, 400 B tokens aprox. | MIT (modelo base publicado por EleutherAI) | Hugging Face, ampliamente utilizado |
+| Pythia-2.8B (EleutherAI) | 2,8 B | 2.048 | The Pile, 300 B tokens, 154 checkpoints | Apache 2.0 | Hugging Face, suite reproducible |
+| OPT-2.7B (Meta) | 2,7 B | 2.048 | 180 B tokens | Licencia específica de OPT (revisar términos de uso comercial) | Hugging Face |
+| GPT-J 6B (EleutherAI) | 6 B | 2.048 | The Pile, 402 B tokens | Apache 2.0 | Hugging Face |
 
 La comparativa muestra que el único rasgo diferencial de este checkpoint es su naturaleza experimental; en parámetros, contexto y licencia queda por detrás de alternativas documentadas y verificables.
 
@@ -95,9 +95,9 @@ La comparativa muestra que el único rasgo diferencial de este checkpoint es su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.1
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.1
 - Repositorio de referencia de GPT-Neo (EleutherAI): https://github.com/EleutherAI/gpt-neo
-- GPT-Neo 2.7B original en HuggingFace: https://huggingface.co/EleutherAI/gpt-neo-2.7B
+- GPT-Neo 2.7B original en Hugging Face: https://huggingface.co/EleutherAI/gpt-neo-2.7B
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto de carbono): https://arxiv.org/abs/1910.09700
 - Dataset de referencia de la familia (The Pile): https://arxiv.org/abs/2101.00027
 - Documentación de la arquitectura GPT-Neo en transformers: https://huggingface.co/docs/transformers/model_doc/gpt_neo

@@ -70,4 +70,4 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/susharmapev/model_188356023_clip_nano
+- Repositorio Hugging Face: https://huggingface.co/susharmapev/model_188356023_clip_nano

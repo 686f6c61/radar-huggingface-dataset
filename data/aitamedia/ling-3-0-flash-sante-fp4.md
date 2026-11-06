@@ -6,7 +6,7 @@ Ling-3.0-flash-Sante-FP4 es un empaquetado cuantizado en FP4 del modelo `inclusi
 
 El modelo resuelve el problema de desplegar un MoE de gran tamano (65.578.478.560 parametros totales, ~70,4 GB en 36 shards) en hardware con memoria limitada, en particular en plataformas DGX Spark (GB10) y configuraciones multi-nodo con tensor parallelism. Es relevante porque es el primer pack FP4 nativo para vLLM de un derivado Sante abliterado, con soporte declarado para vLLM ≥ v0.32.0 y un `generation_config.json` incluido que evita la deriva multilingue en trazas de razonamiento largas.
 
-La ficha se basa exclusivamente en la informacion disponible en HuggingFace y en la model card del autor; los datos no publicados se marcan como "no disponible".
+La ficha se basa exclusivamente en la informacion disponible en Hugging Face y en la model card del autor; los datos no publicados se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aitamedia/Ling-3.0-flash-Sante-FP4 | 65.578.478.560 | 262.144 | MXFP4 + fp8-block-128 | MIT | HuggingFace, vLLM ≥0.32 |
-| inclusionAI/Ling-3.0-flash-Sante (bf16) | no disponible | no disponible | bf16 | no disponible | HuggingFace |
-| inclusionAI/Ling-3.0-flash-fp4 | no disponible | no disponible | MXFP4 + fp8-block-128 | no disponible | HuggingFace, vLLM ≥0.32 |
+| aitamedia/Ling-3.0-flash-Sante-FP4 | 65.578.478.560 | 262.144 | MXFP4 + fp8-block-128 | MIT | Hugging Face, vLLM ≥0.32 |
+| inclusionAI/Ling-3.0-flash-Sante (bf16) | no disponible | no disponible | bf16 | no disponible | Hugging Face |
+| inclusionAI/Ling-3.0-flash-fp4 | no disponible | no disponible | MXFP4 + fp8-block-128 | no disponible | Hugging Face, vLLM ≥0.32 |
 
 No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes en la informacion proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estas variant
 
 ## Enlaces
 
-- HuggingFace del pack FP4: https://huggingface.co/aitamedia/Ling-3.0-flash-Sante-FP4
+- Hugging Face del pack FP4: https://huggingface.co/aitamedia/Ling-3.0-flash-Sante-FP4
 - Modelo base (bf16): https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante
 - Pack oficial de referencia: https://huggingface.co/inclusionAI/Ling-3.0-flash-fp4

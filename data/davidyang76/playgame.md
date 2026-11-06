@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DavidYang76/playgame es un repositorio alojado en HuggingFace que, a fecha de su ultima actualizacion (12 de septiembre de 2026), no contiene ningun modelo de inteligencia artificial: no publica pesos, configuracion de arquitectura, tokenizador ni pipeline de inferencia. La model card asociada no describe un sistema de machine learning, sino un texto promocional en ingles sobre OnlySpins, una plataforma de casino y apuestas deportivas orientada al mercado canadiense. El repositorio acumula 0 descargas y 0 likes, y su unico tag es `region:us`.
+DavidYang76/playgame es un repositorio alojado en Hugging Face que, a fecha de su ultima actualizacion (12 de septiembre de 2026), no contiene ningun modelo de inteligencia artificial: no publica pesos, configuracion de arquitectura, tokenizador ni pipeline de inferencia. La model card asociada no describe un sistema de machine learning, sino un texto promocional en ingles sobre OnlySpins, una plataforma de casino y apuestas deportivas orientada al mercado canadiense. El repositorio acumula 0 descargas y 0 likes, y su unico tag es `region:us`.
 
 Dado que no existe informacion tecnica alguna sobre arquitectura, parametros, contexto, datos de entrenamiento o licencia, esta ficha no puede evaluar capacidades reales de inferencia. El contenido del README se limita a enumerar catalogos de juegos (mas de 7.150 titulos de mas de 70 proveedores), secciones de casino en vivo, mercados deportivos y metodos de pago; se trata de material comercial sin relacion con el desarrollo de modelos.
 
-La relevancia de este repositorio para desarrolladores e investigadores es, por tanto, nula como modelo. Se documenta aqui unicamente como ejemplo de repositorio ruido en HuggingFace: un espacio cuyo README ha sido reutilizado para posicionamiento web (spam SEO) en lugar de para publicar artefactos de IA. Cualquier evaluacion tecnica adicional queda bloqueada por ausencia total de datos verificables.
+La relevancia de este repositorio para desarrolladores e investigadores es, por tanto, nula como modelo. Se documenta aqui unicamente como ejemplo de repositorio ruido en Hugging Face: un espacio cuyo README ha sido reutilizado para posicionamiento web (spam SEO) en lugar de para publicar artefactos de IA. Cualquier evaluacion tecnica adicional queda bloqueada por ausencia total de datos verificables.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ Datos verificables del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura. El repositorio no incluye ficheros de configuracion (`config.json`), pesos en safetensors o GGUF, tokenizador, `modeling_*.py` ni ningun otro artefacto que permita identificar una familia de modelos (transformer, MoE, SSM o hibrida). Tampoco se declara pipeline de HuggingFace, lo que refuerza la conclusion de que no se ha subido un modelo funcional.
+No hay informacion sobre arquitectura. El repositorio no incluye ficheros de configuracion (`config.json`), pesos en safetensors o GGUF, tokenizador, `modeling_*.py` ni ningun otro artefacto que permita identificar una familia de modelos (transformer, MoE, SSM o hibrida). Tampoco se declara pipeline de Hugging Face, lo que refuerza la conclusion de que no se ha subido un modelo funcional.
 
 Respecto al entrenamiento, no se documenta numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones de inferencia. El texto del README no menciona ni una sola vez terminos de machine learning; describe proveedores de software de casino (Pragmatic Play, Play'n GO, Yggdrasil, Games Global, Red Tiger Gaming), formatos de tragamonedas (Megaways, Hold & Win, bonus buy) y procedimientos de KYC/AML. Es decir, el contenido es ajeno por completo al entrenamiento de modelos.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No disponible. No existe una categoria de comparacion porque el repositorio no define un modelo con parametros, contexto o licencia. La unica similitud con otros repositorios de HuggingFace es estructural (ID de usuario, tags, fechas) y no funcional.
+No disponible. No existe una categoria de comparacion porque el repositorio no define un modelo con parametros, contexto o licencia. La unica similitud con otros repositorios de Hugging Face es estructural (ID de usuario, tags, fechas) y no funcional.
 
 | Aspecto | DavidYang76/playgame | Alternativa comparable |
 |---|---|---|
@@ -96,7 +96,7 @@ No disponible. No existe una categoria de comparacion porque el repositorio no d
 - El repositorio no contiene un modelo: no se puede descargar, cargar ni ejecutar en ningun framework.
 - No se declara licencia, por lo que no existe base legal explicita para reutilizar el contenido publicado.
 - El README es texto promocional de una plataforma de casino y apuestas en linea (OnlySpins) orientada a Canada; incluye un enlace externo de afiliacion y afirmaciones comerciales no verificables.
-- Riesgo de ruido en busquedas: el repositorio puede aparecer en resultados de HuggingFace pese a no aportar ningun artefacto de IA, lo que dificulta localizar modelos reales.
+- Riesgo de ruido en busquedas: el repositorio puede aparecer en resultados de Hugging Face pese a no aportar ningun artefacto de IA, lo que dificulta localizar modelos reales.
 - Riesgo de sesgo o alucinacion: no evaluable, al no existir modelo.
 - Limitaciones de idioma y contexto: no evaluables.
 - Advertencia de produccion: no integrar este ID en pipelines automatizados de descarga de modelos; cualquier intento de `from_pretrained` fallaria por ausencia de ficheros.
@@ -104,7 +104,7 @@ No disponible. No existe una categoria de comparacion porque el repositorio no d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DavidYang76/playgame
+- Repositorio en Hugging Face: https://huggingface.co/DavidYang76/playgame
 - Model card (contenido promocional, no tecnico): https://huggingface.co/DavidYang76/playgame/blob/main/README.md
 - Enlace externo citado en el README: https://only-spins.net/
 - Papers, blogs, repositorios o demos del modelo: no disponible

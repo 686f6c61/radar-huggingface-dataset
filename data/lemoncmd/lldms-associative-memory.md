@@ -67,6 +67,6 @@ No se dispone de comparaciones directas con otros modelos en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lemoncmd/lldms-associative-memory
+- Repositorio Hugging Face: https://huggingface.co/lemoncmd/lldms-associative-memory
 - Paper arXiv: https://arxiv.org/abs/2604.26841
 - Código fuente: https://github.com/Lemon-cmd/Associative-Memory-and-Language-Diffusion

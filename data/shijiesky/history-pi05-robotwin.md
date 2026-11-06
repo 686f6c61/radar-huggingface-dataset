@@ -4,7 +4,7 @@
 
 History Pi05 RoboTwin es un modelo de visión-lenguaje-acción (VLA) desarrollado por ShijieSKY, diseñado para el control robótico basado en historial de acciones. Se trata de un fine-tuning del modelo base pi0.5 (π0.5) con la opción `history_action_conditioning=True`, lo que permite al modelo tener en cuenta el historial de acciones previas durante la generación de nuevas acciones. El modelo está entrenado sobre el dataset fusionado RoboTwin-Clean LeRobot, un conjunto de datos orientado a tareas de manipulación robótica en entornos simulados y reales.
 
-El modelo se distribuye a través de HuggingFace bajo el pipeline de robótica, utilizando la librería OpenPI de Physical Intelligence. Incluye dos checkpoints (paso 30.000 y paso 59.999 de un entrenamiento de 60.000 pasos), cada uno con parámetros de inferencia y estadísticas de normalización. Su relevancia radica en que aborda la generalización en robótica mediante el condicionamiento por historial, una técnica que mejora la consistencia temporal en tareas de manipulación de larga duración. Aunque se carece de especificaciones técnicas detalladas, el modelo se enmarca en el ecosistema π0.5, que ha demostrado capacidades de generalización en entornos abiertos.
+El modelo se distribuye a través de Hugging Face bajo el pipeline de robótica, utilizando la librería OpenPI de Physical Intelligence. Incluye dos checkpoints (paso 30.000 y paso 59.999 de un entrenamiento de 60.000 pasos), cada uno con parámetros de inferencia y estadísticas de normalización. Su relevancia radica en que aborda la generalización en robótica mediante el condicionamiento por historial, una técnica que mejora la consistencia temporal en tareas de manipulación de larga duración. Aunque se carece de especificaciones técnicas detalladas, el modelo se enmarca en el ecosistema π0.5, que ha demostrado capacidades de generalización en entornos abiertos.
 
 ## Especificaciones tecnicas
 
@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Condicionamiento historial | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| History Pi05 RoboTwin | pi0.5 | Sí | RoboTwin-Clean | no disponible | HuggingFace |
-| pi05-robotwin (ShijieSKY) | pi0.5 | No | RoboTwin-Clean | no disponible | HuggingFace |
+| History Pi05 RoboTwin | pi0.5 | Sí | RoboTwin-Clean | no disponible | Hugging Face |
+| pi05-robotwin (ShijieSKY) | pi0.5 | No | RoboTwin-Clean | no disponible | Hugging Face |
 | π0.5 (base) | π0 | No | 10k+ horas de datos de robot | no disponible | GitHub (zaleni/pi05) |
 
 La comparación se basa en la información disponible; no hay datos de rendimiento cuantitativo para establecer diferencias objetivas.
@@ -74,7 +74,7 @@ La comparación se basa en la información disponible; no hay datos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShijieSKY/history-pi05-robotwin
+- Hugging Face: https://huggingface.co/ShijieSKY/history-pi05-robotwin
 - Repo relacionado (pi05-robotwin sin historial): https://huggingface.co/ShijieSKY/pi05-robotwin
 - Repositorio de referencia pi05 para RoboTwin: https://github.com/zaleni/pi05
 - Documentación de RoboTwin 2.0 sobre Pi05: https://robotwin-platform.github.io/doc/usage/Pi05.html

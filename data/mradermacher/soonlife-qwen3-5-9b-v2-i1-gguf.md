@@ -86,7 +86,7 @@ La comparación con Qwen3.5-9B base es la más directa, pero no se dispone de da
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Soonlife-Qwen3.5-9B-v2-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Soonlife-Qwen3.5-9B-v2-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Soonlife-Qwen3.5-9B-v2-GGUF
 - Modelo base: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/wonchandev/Soonlife_dataset

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-NVFP4-LoRA-r4-QAD es una versión cuantizada del modelo Qwen3.5-9B de Alibaba Qwen, publicada por el usuario qatfactory en HuggingFace. Se trata de una conversión a formato NVFP4 (FP4 de NVIDIA con escalado por bloques) obtenida mediante entrenamiento consciente de la cuantización (QAT, quantization-aware training) con adaptadores LoRA de rango 4, empaquetada en formato compressed-tensors para su uso con vLLM. El resultado es un checkpoint de aproximadamente 8,9 GB que reduce a la mitad, o menos, el peso del modelo base en BF16.
+Qwen3.5-9B-NVFP4-LoRA-r4-QAD es una versión cuantizada del modelo Qwen3.5-9B de Alibaba Qwen, publicada por el usuario qatfactory en Hugging Face. Se trata de una conversión a formato NVFP4 (FP4 de NVIDIA con escalado por bloques) obtenida mediante entrenamiento consciente de la cuantización (QAT, quantization-aware training) con adaptadores LoRA de rango 4, empaquetada en formato compressed-tensors para su uso con vLLM. El resultado es un checkpoint de aproximadamente 8,9 GB que reduce a la mitad, o menos, el peso del modelo base en BF16.
 
 La relevancia de esta ficha está en que documenta un artefacto de cuantización de una generación de modelos (Qwen3.5) sobre la que no hay información pública detallada en la documentación proporcionada, y en que el propio repositorio es de acceso restringido y sin descargas ni validación comunitaria. No se dispone de model card, informe técnico ni resultados de evaluación asociados a esta conversión concreta.
 
@@ -64,14 +64,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | qatfactory/Qwen3.5-9B-NVFP4-LoRA-r4-QAD | 9,41B | no disponible | NVFP4 + QAT (LoRA r=4) | Apache 2.0 | Gated, 0 descargas |
-| Qwen/Qwen3.5-9B (modelo base) | 9,41B | no disponible | BF16 (presumible) | Apache 2.0 | Público en HuggingFace |
+| Qwen/Qwen3.5-9B (modelo base) | 9,41B | no disponible | BF16 (presumible) | Apache 2.0 | Público en Hugging Face |
 | Otras cuantizaciones del mismo base (AWQ, GPTQ, GGUF) | 9,41B | no disponible | 4-8 bits | Apache 2.0 | no disponible en la búsqueda |
 
 La comparación se limita al modelo base por falta de datos sobre alternativas concretas de cuantización NVFP4 del mismo modelo. No se dispone de métricas de calidad que permitan establecer diferencias de rendimiento entre esta conversión y el original.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Sin validación comunitaria: 0 descargas y 0 likes en el momento de la ficha; no hay evidencia de uso en producción ni informes de terceros.
 - Riesgo de degradación por cuantización: el paso a FP4 puede afectar a tareas sensibles a la precisión numérica (matemáticas, código, razonamiento largo); no se publican métricas de degradación frente al modelo base.
 - Falta de documentación: no hay model card con dataset de calibración, hiperparámetros de QAT, idiomas ni evaluación, lo que dificulta auditar el artefacto.
@@ -83,6 +83,6 @@ La comparación se limita al modelo base por falta de datos sobre alternativas c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-LoRA-r4-QAD
+- Repositorio Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-LoRA-r4-QAD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

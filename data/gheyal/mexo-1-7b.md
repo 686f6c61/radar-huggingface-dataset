@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mexo-1.7B es un modelo de generación de texto desarrollado por el usuario gheyal. Se trata de un adaptador LoRA (PEFT) construido sobre el modelo base Qwen/Qwen3-1.7B, entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de HuggingFace. El repositorio contiene únicamente los pesos del adaptador, con un tamaño de 0.2 GB, y está diseñado para tareas de conversación y text-generation.
+Mexo-1.7B es un modelo de generación de texto desarrollado por el usuario gheyal. Se trata de un adaptador LoRA (PEFT) construido sobre el modelo base Qwen/Qwen3-1.7B, entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de Hugging Face. El repositorio contiene únicamente los pesos del adaptador, con un tamaño de 0.2 GB, y está diseñado para tareas de conversación y text-generation.
 
 El modelo destaca por su tamaño reducido: al estar basado en Qwen3-1.7B, la inferencia requiere menos recursos que modelos de mayor escala, lo que lo hace adecuado para entornos con restricciones de memoria o para prototipado rápido. Sin embargo, la información disponible es muy limitada: no se declara licencia, idiomas soportados, ni se publican benchmarks. Además, el repositorio no registra descargas ni likes, por lo que carece de validación comunitaria. Su relevancia actual radica en ser un ejemplo de adaptación ligera de un modelo pequeño mediante LoRA, aunque su documentación incompleta dificulta una evaluación rigurosa.
 
@@ -23,7 +23,7 @@ El modelo destaca por su tamaño reducido: al estar basado en Qwen3-1.7B, la inf
 
 Mexo-1.7B es un adaptador LoRA que modifica las capas del modelo base Qwen/Qwen3-1.7B, un transformer denso de aproximadamente 1.700 millones de parámetros. Al tratarse de un adaptador, los parámetros entrenables se limitan a las matrices de bajo rango inyectadas en el modelo original, lo que reduce significativamente el coste de fine-tuning en comparación con un ajuste completo.
 
-El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) con la librería TRL de HuggingFace. Según la model card, se usaron PEFT 0.20.0, TRL 1.12.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.1. No se especifican los datos de entrenamiento, el número de tokens ni la composición del dataset. Tampoco hay evidencia de entrenamiento adicional con RLHF o DPO; el método indicado es exclusivamente SFT. El adaptador se distribuye en formato safetensors dentro de un repositorio PEFT, y la model card incluye un ejemplo de uso con `transformers.pipeline` para text-generation, aunque el código contiene un error (`model="None"` en lugar de la ruta del modelo).
+El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) con la librería TRL de Hugging Face. Según la model card, se usaron PEFT 0.20.0, TRL 1.12.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.1. No se especifican los datos de entrenamiento, el número de tokens ni la composición del dataset. Tampoco hay evidencia de entrenamiento adicional con RLHF o DPO; el método indicado es exclusivamente SFT. El adaptador se distribuye en formato safetensors dentro de un repositorio PEFT, y la model card incluye un ejemplo de uso con `transformers.pipeline` para text-generation, aunque el código contiene un error (`model="None"` en lugar de la ruta del modelo).
 
 ## Capacidades
 
@@ -71,6 +71,6 @@ No disponible. No se han proporcionado datos comparativos con otros modelos de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gheyal/Mexo-1.7B
+- Modelo en Hugging Face: https://huggingface.co/gheyal/Mexo-1.7B
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio TRL: https://github.com/huggingface/trl

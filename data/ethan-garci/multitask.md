@@ -69,7 +69,7 @@ No hay comparativas cuantitativas disponibles, porque el repositorio no publica 
 | Contexto | no disponible | No aplica en su formulación original de visión | no disponible |
 | Rendimiento | Sin benchmarks publicados | Resultados publicados por sus autores | Depende de cada implementación |
 | Licencia | apache-2.0 | Según la publicación original | Variable |
-| Disponibilidad | HuggingFace, safetensors + código | Publicación académica y repositorios de terceros | Repositorios diversos |
+| Disponibilidad | Hugging Face, safetensors + código | Publicación académica y repositorios de terceros | Repositorios diversos |
 
 Dado que este repositorio no es un modelo entrenado, cualquier comparación de rendimiento carece de base y se marca como no disponible.
 
@@ -87,6 +87,6 @@ Dado que este repositorio no es un modelo entrenado, cualquier comparación de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethan-garci/multitask
+- Modelo en Hugging Face: https://huggingface.co/ethan-garci/multitask
 
 Nota: la búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo; los resultados obtenidos trataban sobre el nombre propio "Ethan" y no guardan relación con el repositorio. No se dispone de papers, blogs, repositorios o demos adicionales asociados al modelo.

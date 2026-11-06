@@ -18,7 +18,7 @@ Conviene senalar desde el principio que el repositorio tiene 0 descargas y 0 lik
 | Longitud de contexto | 262.144 tokens (segun el autor) |
 | Tipos de cuantizacion | IQ1_S (calibrada con imatrix); no se documentan otras variantes en este repositorio |
 | Idiomas soportados | Ingles (en) e italiano (it) |
-| Licencia | "other" en los metadatos de HuggingFace; el README muestra una insignia Apache-2.0 (contradiccion no resuelta) |
+| Licencia | "other" en los metadatos de Hugging Face; el README muestra una insignia Apache-2.0 (contradiccion no resuelta) |
 | Formato de pesos | GGUF (fichero unico o dividido, ~9,4 GB de repositorio, 8,77 GB declarados de footprint) |
 
 Datos adicionales aportados por el autor: motor de inferencia recomendado llama.cpp (etiqueta `llama.cpp`), compatibilidad con endpoints declarada (`endpoints_compatible`), VRAM estimada de ~9,9 GB con offload completo en GPU y ~9,7 GB de RAM en modo CPU o hibrido.
@@ -111,7 +111,7 @@ No se dispone de datos de rendimiento, contexto o licencia de modelos comparable
 - Resultados de benchmark bajos y parciales: 35% agregado en 100 preguntas repartidas en 11 suites, con 0% en MATH, 11% en GPQA y MMLU-Pro, y 33% en GSM8K y MBPP. El propio autor advierte que las mediciones se hicieron sobre porciones de cada dataset y no son comparables con ejecuciones de suite completa.
 - El modo de razonamiento explotado empeora el resultado: la cadena de pensamiento obtiene 18,6% frente al 47,4% del modo directo, una penalizacion de 28,8 puntos. No se debe asumir que activar CoT mejore la calidad.
 - Cuantizacion extrema: IQ1_S es uno de los esquemas de menor precision disponibles en llama.cpp. Aunque se haya calibrado con imatrix, la degradacion respecto al modelo en FP16 es esperable y no cuantificada en la informacion disponible.
-- Inconsistencia de licencia: los metadatos de HuggingFace declaran `license: other`, mientras que el README muestra una insignia Apache-2.0. Antes de cualquier uso comercial hay que verificar la licencia real del modelo base Qwen/Qwen3.8-27B, que no se detalla en la informacion consultada.
+- Inconsistencia de licencia: los metadatos de Hugging Face declaran `license: other`, mientras que el README muestra una insignia Apache-2.0. Antes de cualquier uso comercial hay que verificar la licencia real del modelo base Qwen/Qwen3.8-27B, que no se detalla en la informacion consultada.
 - Sin validacion de la comunidad: 0 descargas y 0 likes. No hay evidencia independiente de que los pesos funcionen como se describe.
 - Capacidades agenticas no demostradas: pese al 62% de adherencia al protocolo de herramientas, la finalizacion autonoma de tareas es del 0,0% (0 de 1 escenarios). No es un modelo fiable para automatizacion sin supervision.
 - Riesgo de alucinacion: TruthfulQA obtiene 67%, el mejor dato del conjunto, pero MMLU se queda en 36%, lo que indica conocimiento factual limitado y propension a errores en preguntas de conocimiento general.
@@ -123,7 +123,7 @@ No se dispone de datos de rendimiento, contexto o licencia de modelos comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ1_S
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ1_S
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio SigmaStudio en GitHub: https://github.com/Sigmanih/SigmaStudio
 - Licencia Apache-2.0 referenciada en el README: https://opensource.org/licenses/Apache-2.0

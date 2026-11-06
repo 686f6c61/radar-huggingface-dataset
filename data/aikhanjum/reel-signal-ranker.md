@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reel Signal Ranker es un artefacto de investigación publicado por el usuario aikhanjum en HuggingFace. Se trata de un ranker exploratorio entrenado con el contenido de 36 vídeos cortos de un único creador: dados dos conceptos de vídeo, asigna una puntuación más alta a aquel cuyo contenido se parece más a las publicaciones con mejor rendimiento de ese creador. El propio autor advierte de forma explícita que las puntuaciones no predicen visualizaciones.
+Reel Signal Ranker es un artefacto de investigación publicado por el usuario aikhanjum en Hugging Face. Se trata de un ranker exploratorio entrenado con el contenido de 36 vídeos cortos de un único creador: dados dos conceptos de vídeo, asigna una puntuación más alta a aquel cuyo contenido se parece más a las publicaciones con mejor rendimiento de ese creador. El propio autor advierte de forma explícita que las puntuaciones no predicen visualizaciones.
 
 Técnicamente no es un modelo generativo ni un transformer entrenado de nuevo: es un checkpoint que consiste en una cabeza lineal de preferencia entrenada sobre embeddings congelados de BGE small English v1.5. El encoder BGE no se ha ajustado en ningún momento, por lo que todo el aprendizaje reside en una capa lineal de muy bajo coste computacional.
 
@@ -86,7 +86,7 @@ No se han identificado modelos comparables publicados en la información disponi
 | Parámetros | no disponible | no disponible |
 | Contexto | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Repositorio público en HuggingFace, 0 descargas y 0 likes | no disponible |
+| Disponibilidad | Repositorio público en Hugging Face, 0 descargas y 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -105,6 +105,6 @@ No se han identificado modelos comparables publicados en la información disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aikhanjum/reel-signal-ranker
+- Modelo en Hugging Face: https://huggingface.co/aikhanjum/reel-signal-ranker
 - Encoder subyacente, BGE small English v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Búsqueda web: no se han encontrado papers, blogs ni repositorios relacionados con este modelo. Los resultados devueltos por la búsqueda corresponden a productos independientes sin relación con el checkpoint (https://www.ranksignal.ai/, https://clip-signal.com/, https://reelsignal.app/, https://rankreels.ai/) y no se incluyen como fuentes del modelo.

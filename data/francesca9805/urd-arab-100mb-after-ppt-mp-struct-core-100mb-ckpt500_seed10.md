@@ -6,7 +6,7 @@ El modelo `francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_s
 
 El modelo ha sido entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, y forma parte de una serie de experimentos aparentemente vinculados a tokenizadores multilingües y a pares de idiomas urdu-árabe (según se deduce del propio identificador y del proyecto de Weights & Biases asociado, bajo el espacio de nombres "new-tokenizers" de la Universidad de Groningen). No se dispone de información publicada sobre el dataset de entrenamiento, los idiomas exactos ni la licencia.
 
-Su relevancia es limitada y de carácter principalmente académico o experimental: no tiene descargas ni "likes" en HuggingFace en el momento de la consulta, no publica resultados de benchmarks y no incluye una model card detallada más allá de las instrucciones de uso con la librería `transformers`. Es un artefacto útil para reproducir o auditar un experimento de ajuste fino, más que un modelo listo para producción.
+Su relevancia es limitada y de carácter principalmente académico o experimental: no tiene descargas ni "likes" en Hugging Face en el momento de la consulta, no publica resultados de benchmarks y no incluye una model card detallada más allá de las instrucciones de uso con la librería `transformers`. Es un artefacto útil para reproducir o auditar un experimento de ajuste fino, más que un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y de carácter principalmente académico o experimenta
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada corresponde a GPT-2, es decir, un transformer decoder-only con atención causal. El tag `gpt2` de HuggingFace y el tamaño de 124,77 millones de parámetros son coherentes con la variante "small" de la familia GPT-2. No se especifican en la información disponible el número de capas, la dimensión de los embeddings, el número de cabezas de atención ni la longitud de contexto efectiva.
+La arquitectura declarada corresponde a GPT-2, es decir, un transformer decoder-only con atención causal. El tag `gpt2` de Hugging Face y el tamaño de 124,77 millones de parámetros son coherentes con la variante "small" de la familia GPT-2. No se especifican en la información disponible el número de capas, la dimensión de los embeddings, el número de cabezas de atención ni la longitud de contexto efectiva.
 
 El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con TRL 0.23.0, partiendo del modelo base `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10`. La model card menciona el uso de Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1, e incluye un enlace a una ejecución de Weights & Biases en el proyecto "new-tokenizers". No se detallan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas adicionales como RLHF o DPO (la model card solo indica SFT). El sufijo `ckpt500` del identificador sugiere que los pesos corresponden al checkpoint del paso 500 de un entrenamiento, aunque esto no se confirma de forma explícita.
 
@@ -43,7 +43,7 @@ El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con TRL 0
 - Evaluación comparativa de checkpoints: al tratarse de un checkpoint intermedio (`ckpt500`), permite analizar la evolución del entrenamiento frente a otros puntos de control de la misma serie.
 - Generación de texto de bajo coste en prototipos: con 124,8 M de parámetros puede ejecutarse en CPU o en GPU de gama baja para pruebas rápidas de generación en un dominio lingüístico específico.
 - Base para fine-tuning posterior: al ser un modelo pequeño y con pesos en safetensors, es un punto de partida manejable para ajustes adicionales en tareas concretas de generación en urdu o árabe.
-- Docencia y formación: útil como ejemplo didáctico de flujo SFT con TRL y publicación en HuggingFace, sin requisitos de hardware elevados.
+- Docencia y formación: útil como ejemplo didáctico de flujo SFT con TRL y publicación en Hugging Face, sin requisitos de hardware elevados.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10 | 124,8 M | no disponible | no publicado | no disponible | HuggingFace, 0 descargas |
+| urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10 | 124,8 M | no disponible | no publicado | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | Benchmark publico en MMLU, LAMBADA, etc. | MIT | Ampliamente disponible |
 | DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Benchmark publico | Apache 2.0 | Ampliamente disponible |
-| Modelo base: francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10 | no disponible | no disponible | no publicado | no disponible | HuggingFace |
+| Modelo base: francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10 | no disponible | no disponible | no publicado | no disponible | Hugging Face |
 
 La comparacion directa es dificil porque el modelo no publica benchmarks ni licencia, y su proposito (experimento de fine-tuning sobre un dominio linguisitico concreto) difiere del de GPT-2 small o DistilGPT-2, que son modelos generalistas con evaluaciones estandarizadas.
 
@@ -83,7 +83,7 @@ La comparacion directa es dificil porque el modelo no publica benchmarks ni lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/944jvtw5
 - Repositorio de TRL: https://github.com/huggingface/trl

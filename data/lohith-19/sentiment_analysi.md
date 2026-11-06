@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lohith-19/Sentiment_analysi` es un submódulo alojado en HuggingFace Hub bajo la librería `transformers`. Su nombre sugiere que está orientado a tareas de análisis de sentimiento, pero la model card publicada es una plantilla genérica generada automáticamente, sin información técnica ni descriptiva. Todos los campos relevantes (arquitectura, parámetros, entrenamiento, licencia, idiomas) aparecen como `[More Information Needed]`.
+El modelo `Lohith-19/Sentiment_analysi` es un submódulo alojado en Hugging Face Hub bajo la librería `transformers`. Su nombre sugiere que está orientado a tareas de análisis de sentimiento, pero la model card publicada es una plantilla genérica generada automáticamente, sin información técnica ni descriptiva. Todos los campos relevantes (arquitectura, parámetros, entrenamiento, licencia, idiomas) aparecen como `[More Information Needed]`.
 
 El repositorio no presenta descargas ni interacciones, y su fecha de creación (2026-08-20) es posterior a la fecha actual, lo que sugiere que podría tratarse de un registro incompleto o de prueba. El único dato técnico adicional es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, pero no aporta información sobre el modelo en sí.
 
@@ -61,5 +61,5 @@ No disponible. No se puede comparar con otros modelos de análisis de sentimient
 
 ## Enlaces
 
-- [HuggingFace - Lohith-19/Sentiment_analysi](https://huggingface.co/Lohith-19/Sentiment_analysi)
+- [Hugging Face - Lohith-19/Sentiment_analysi](https://huggingface.co/Lohith-19/Sentiment_analysi)
 - [Paper arxiv:1910.09700 (referencia en tags)](https://arxiv.org/abs/1910.09700)

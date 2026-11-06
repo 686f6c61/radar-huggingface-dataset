@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`beomdayeong/audio_cls_1016` es un modelo de clasificacion de audio obtenido por ajuste fino (*fine-tuning*) del checkpoint preentrenado en coreano `Kkonjeong/wav2vec2-base-korean`. Lo desarrolla el usuario de HuggingFace `beomdayeong` y se publica bajo la libreria `transformers` con pesos en formato `safetensors`. Con 94.572.174 parametros, es un modelo de tamano medio (equivalente a la familia wav2vec2-base) orientado a tareas de reconocimiento de eventos sonoros o habla a nivel de clip, no a generacion de texto.
+`beomdayeong/audio_cls_1016` es un modelo de clasificacion de audio obtenido por ajuste fino (*fine-tuning*) del checkpoint preentrenado en coreano `Kkonjeong/wav2vec2-base-korean`. Lo desarrolla el usuario de Hugging Face `beomdayeong` y se publica bajo la libreria `transformers` con pesos en formato `safetensors`. Con 94.572.174 parametros, es un modelo de tamano medio (equivalente a la familia wav2vec2-base) orientado a tareas de reconocimiento de eventos sonoros o habla a nivel de clip, no a generacion de texto.
 
 Su relevancia es limitada pero concreta: sirve como ejemplo reproducible de ajuste fino de wav2vec2 para clasificacion de audio en coreano, con una accuracy declarada de 0,8403 en el conjunto de evaluacion tras 10 epocas. El autor no documenta ni el conjunto de datos, ni las etiquetas de clase, ni el uso previsto, por lo que el modelo debe tratarse como un artefacto de investigacion experimental mas que como un componente listo para produccion.
 
@@ -21,7 +21,7 @@ El modelo no incluye decodificador de lenguaje, no genera texto y no soporta too
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
-Otros datos tecnicos: pipeline declarado `audio-classification`, tamano del repositorio 0,4 GB, tags `transformers`, `wav2vec2`, `generated_from_trainer`, `endpoints_compatible`, `region:us`. Fecha de creacion declarada en HuggingFace: 2026-10-16.
+Otros datos tecnicos: pipeline declarado `audio-classification`, tamano del repositorio 0,4 GB, tags `transformers`, `wav2vec2`, `generated_from_trainer`, `endpoints_compatible`, `region:us`. Fecha de creacion declarada en Hugging Face: 2026-10-16.
 
 ## Arquitectura y entrenamiento
 
@@ -49,7 +49,7 @@ Versiones de framework declaradas: Transformers 5.18.0, PyTorch 2.11.0+cu130, Da
 - Prototipo de deteccion de habla frente a no habla: util como punto de partida para filtrar grabaciones antes de alimentar un sistema de reconocimiento automatico del habla en coreano, asumiendo que el clasificador haya sido entrenado con esa distincion.
 - Investigacion en representaciones de audio auto-supervisadas: sirve como referencia para comparar estrategias de ajuste fino sobre `Kkonjeong/wav2vec2-base-korean` con un presupuesto de computo minimo (150 pasos).
 - Base para *transfer learning* adicional: al ser un checkpoint pequeno (0,4 GB), se puede reajustar en una GPU de consumo para nuevas taxonomias de audio con pocos datos.
-- Validacion de pipelines de HuggingFace: util para probar el flujo `pipeline("audio-classification")` y el soporte `endpoints_compatible` en infraestructura de inferencia gestionada.
+- Validacion de pipelines de Hugging Face: util para probar el flujo `pipeline("audio-classification")` y el soporte `endpoints_compatible` en infraestructura de inferencia gestionada.
 - Etiquetado asistido en anotacion de corpus: puede preetiquetar clips que un anotador humano revise despues, reduciendo coste en proyectos de etiquetado de audio en coreano.
 - No es adecuado para tareas generativas, dialogos, resumen de texto, traduccion ni analisis de documentos, ya que carece de cabeza de lenguaje.
 
@@ -78,7 +78,7 @@ Observacion cuantitativa: la accuracy se estanca entre las epocas 9 y 10 (0,8403
 - GPU recomendadas: cualquier GPU con 2 GB o mas de memoria; no se requiere A100 ni H100. Funciona en RTX 3050, RTX 3060, RTX 4090, T4, L4, etc.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en GPU integradas con suficiente memoria compartida.
 - Inferencia en CPU: viable por el tamano del modelo; el cuello de botella sera la velocidad de procesamiento del audio, no la memoria.
-- Opciones de despliegue: `transformers` con `pipeline("audio-classification")`, exportacion a ONNX Runtime, o servidores de inferencia compatibles con el tag `endpoints_compatible` de HuggingFace. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no estan soportados por el momento sin una conversion manual.
+- Opciones de despliegue: `transformers` con `pipeline("audio-classification")`, exportacion a ONNX Runtime, o servidores de inferencia compatibles con el tag `endpoints_compatible` de Hugging Face. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no estan soportados por el momento sin una conversion manual.
 - vLLM y TGI: no aplicables de forma estandar, ya que estan orientados a modelos generativos con decodificacion autoregresiva.
 - Latencia y throughput: no disponibles; el autor no publica mediciones.
 
@@ -88,10 +88,10 @@ Los datos de rendimiento de los modelos alternativos no se han verificado en est
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `beomdayeong/audio_cls_1016` | 94,57 M | audio; duracion maxima no disponible | no disponible | HuggingFace, safetensors |
-| `Kkonjeong/wav2vec2-base-korean` (modelo base) | ~95 M (no confirmado) | audio; duracion maxima no disponible | no disponible | HuggingFace |
-| `facebook/wav2vec2-base-960h` | ~95 M | audio de habla en ingles; duracion no disponible | no disponible en esta busqueda | HuggingFace |
-| `MIT/ast-finetuned-audioset-10-10-0.4593` | ~87 M | espectrograma de audio, AudioSet | no disponible en esta busqueda | HuggingFace |
+| `beomdayeong/audio_cls_1016` | 94,57 M | audio; duracion maxima no disponible | no disponible | Hugging Face, safetensors |
+| `Kkonjeong/wav2vec2-base-korean` (modelo base) | ~95 M (no confirmado) | audio; duracion maxima no disponible | no disponible | Hugging Face |
+| `facebook/wav2vec2-base-960h` | ~95 M | audio de habla en ingles; duracion no disponible | no disponible en esta busqueda | Hugging Face |
+| `MIT/ast-finetuned-audioset-10-10-0.4593` | ~87 M | espectrograma de audio, AudioSet | no disponible en esta busqueda | Hugging Face |
 
 Diferencias cualitativas: a diferencia de un clasificador entrenado sobre AudioSet, este modelo no documenta taxonomia ni cobertura de clases, lo que impide una comparacion significativa de rendimiento con alternativas como AST o PANNs. Frente a `wav2vec2-base-960h`, orientado a reconocimiento del habla en ingles, este checkpoint esta adaptado al coreano.
 
@@ -108,11 +108,11 @@ Diferencias cualitativas: a diferencia de un clasificador entrenado sobre AudioS
 - Sin cuantizaciones publicadas: no existen variantes GGUF, AWQ o GPTQ, lo que dificulta el despliegue en entornos ligeros sin conversion manual.
 - Cero traccion en la comunidad: 0 descargas y 0 "likes" en el momento de la consulta, sin issues ni validacion externa. Tratarlo como artefacto experimental.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de clasificacion erronea confiada en audio fuera de dominio.
-- Etiqueta `generated_from_trainer`: la model card fue autogenerada por el Trainer de HuggingFace, lo que refuerza que se trata de un experimento sin revision manual posterior.
+- Etiqueta `generated_from_trainer`: la model card fue autogenerada por el Trainer de Hugging Face, lo que refuerza que se trata de un experimento sin revision manual posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beomdayeong/audio_cls_1016
+- Modelo en Hugging Face: https://huggingface.co/beomdayeong/audio_cls_1016
 - Modelo base: https://huggingface.co/Kkonjeong/wav2vec2-base-korean
 - Paper original de wav2vec 2.0 (referencia arquitectonica, no enlazado por el autor): no disponible en la busqueda web realizada
 - Repositorio de codigo, demo o blog del autor: no disponible

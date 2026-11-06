@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swinv2-small-patch4-window16-256-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte del benchmark *Vision Foundation Models Benchmark*. El modelo parte del checkpoint preentrenado `microsoft/swinv2-small-patch4-window16-256` y lo adapta al dataset Galaxy10 DECaLS (10 clases morfológicas) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
+`swinv2-small-patch4-window16-256-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte del benchmark *Vision Foundation Models Benchmark*. El modelo parte del checkpoint preentrenado `microsoft/swinv2-small-patch4-window16-256` y lo adapta al dataset Galaxy10 DECaLS (10 clases morfológicas) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
 
 La relevancia del checkpoint no reside en su rendimiento absoluto, sino en su papel dentro de un protocolo comparativo reproducible: es una de las 80 configuraciones del estudio (40 backbones preentrenados x dos regímenes de adaptación) asociado al artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). El modelo tiene 48.967.108 parámetros totales, un tamaño de repositorio de 0,2 GB y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
@@ -80,8 +80,8 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swinv2-small-patch4-window16-256-galaxy10-decals-head-v2 | 48,9 M | 256x256 px | 49,10 % (test, semilla 42) | Apache 2.0 | HuggingFace |
-| Otros backbones del Vision Foundation Models Benchmark | no disponible | no disponible | no disponible en esta ficha | no disponible | Colección en HuggingFace |
+| swinv2-small-patch4-window16-256-galaxy10-decals-head-v2 | 48,9 M | 256x256 px | 49,10 % (test, semilla 42) | Apache 2.0 | Hugging Face |
+| Otros backbones del Vision Foundation Models Benchmark | no disponible | no disponible | no disponible en esta ficha | no disponible | Colección en Hugging Face |
 | Alternativas especializadas en morfología galáctica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-small-patch4-window16-256-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-small-patch4-window16-256-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-small-patch4-window16-256
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

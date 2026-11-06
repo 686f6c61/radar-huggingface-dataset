@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Anton-Atef/ai-nutrition-assistant` es un modelo publicado en HuggingFace por el usuario Anton-Atef bajo licencia MIT. Su nombre sugiere una orientacion hacia tareas de asistencia nutricional, aunque la model card no proporciona ninguna descripcion funcional, tecnica ni de uso.
+El modelo `Anton-Atef/ai-nutrition-assistant` es un modelo publicado en Hugging Face por el usuario Anton-Atef bajo licencia MIT. Su nombre sugiere una orientacion hacia tareas de asistencia nutricional, aunque la model card no proporciona ninguna descripcion funcional, tecnica ni de uso.
 
 La ficha del modelo es extremadamente minima: unicamente declara la licencia MIT y no incluye informacion sobre arquitectura, tamaño, datos de entrenamiento, capacidades o ejemplos de uso. El modelo cuenta con cero descargas y cero likes, lo que indica que es una publicacion reciente (creado el 16 de agosto de 2026) sin adopcion documentada. No se puede confirmar si se trata de un modelo de lenguaje, un clasificador, un sistema de recomendacion u otra tipologia.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocer la arquitectura, el tamaño ni las capacidades del 
 
 ## Enlaces
 
-- [HuggingFace: Anton-Atef/ai-nutrition-assistant](https://huggingface.co/Anton-Atef/ai-nutrition-assistant)
+- [Hugging Face: Anton-Atef/ai-nutrition-assistant](https://huggingface.co/Anton-Atef/ai-nutrition-assistant)

@@ -75,8 +75,8 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| INP Spark AES R1 4B | ~4,1B | no disponible | Apache-2.0 (sujeta al base) | HuggingFace |
-| Spark-X2.6-4B (base) | no disponible | no disponible | no disponible | HuggingFace |
+| INP Spark AES R1 4B | ~4,1B | no disponible | Apache-2.0 (sujeta al base) | Hugging Face |
+| Spark-X2.6-4B (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,5 +94,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iceair323/INP-Spark-AES-R1-4B
+- Modelo en Hugging Face: https://huggingface.co/iceair323/INP-Spark-AES-R1-4B
 - Modelo base Spark-X2.6-4B: https://huggingface.co/therealwayan/Spark-X2.6-4B

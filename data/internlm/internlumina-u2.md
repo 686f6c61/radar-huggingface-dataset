@@ -68,5 +68,5 @@ No se dispone de información suficiente para comparar InternLumina-U2 con model
 - Caveat para producción: no se han publicado benchmarks ni evaluaciones externas, por lo que el rendimiento real en tareas específicas no se conoce. Cualquier implementación en producción debe validarse primero con un conjunto de pruebas propio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/internlm/InternLumina-U2
+- Hugging Face: https://huggingface.co/internlm/InternLumina-U2
 - GitHub: https://github.com/InternLM/InternLumina-U2

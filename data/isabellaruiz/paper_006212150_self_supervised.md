@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `isabellaruiz/paper_006212150_self_supervised` alojado en HuggingFace no contiene un modelo de inteligencia artificial con pesos entrenados, sino un documento académico en formato Markdown que aborda el tema del aprendizaje auto-supervisado (_self-supervised learning_). El autor, identificado como `isabellaruiz`, ha estructurado el contenido siguiendo una plantilla concreta: formato Markdown, estilo de citación autor-año, estructura de secciones intro-método-experimentos-relacionados-conclusión y un tono argumentativo.
+El repositorio `isabellaruiz/paper_006212150_self_supervised` alojado en Hugging Face no contiene un modelo de inteligencia artificial con pesos entrenados, sino un documento académico en formato Markdown que aborda el tema del aprendizaje auto-supervisado (_self-supervised learning_). El autor, identificado como `isabellaruiz`, ha estructurado el contenido siguiendo una plantilla concreta: formato Markdown, estilo de citación autor-año, estructura de secciones intro-método-experimentos-relacionados-conclusión y un tono argumentativo.
 
 El repositorio tiene 0 descargas y 0 me gusta, lo que indica que se trata de un recurso recién creado o de baja visibilidad. No se proporcionan datos sobre arquitectura, parámetros, contexto, cuantización o idiomas soportados, ya que no se trata de un modelo de aprendizaje automático, sino de un documento de investigación. Su relevancia reside en servir como material de referencia o ejemplo de escritura académica sobre el tema del auto-supervisado, aunque carece de valor práctico para desarrolladores que buscan desplegar un modelo.
 
@@ -63,6 +63,6 @@ No disponible. No existe una categoria de modelos comparable porque este reposit
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/isabellaruiz/paper_006212150_self_supervised
+- Repositorio de Hugging Face: https://huggingface.co/isabellaruiz/paper_006212150_self_supervised
 - Paper relacionado sobre aprendizaje auto-supervisado y aprendizaje continuo: https://arxiv.org/abs/2112.04215
 - Revision sobre agentes de IA (no directamente relacionada, pero aparece en la busqueda web): https://arxiv.org/html/2508.11957v1

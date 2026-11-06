@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Adaptador `rengas-3.2-lora-adapters-st-01-konektor` (+ Llama-3.2-1B-Instruct) | Adaptador no disponible; base 1,23 B | 128 000 tokens | No declarada (base: Llama 3.2 Community License) | HuggingFace, 0 descargas, sin evaluacion |
+| Adaptador `rengas-3.2-lora-adapters-st-01-konektor` (+ Llama-3.2-1B-Instruct) | Adaptador no disponible; base 1,23 B | 128 000 tokens | No declarada (base: Llama 3.2 Community License) | Hugging Face, 0 descargas, sin evaluacion |
 | Llama-3.2-1B-Instruct (modelo base) | 1,23 B | 128 000 tokens | Llama 3.2 Community License | Ampliamente desplegado, ecosistema maduro |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | Muy extendido, cuantizaciones oficiales GGUF |
 | Gemma 2 2B-it | 2,61 B | 8192 tokens | Gemma Terms of Use | Ampliamente disponible |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8192 tokens | Apache 2.0 | Disponible en HuggingFace y Ollama |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8192 tokens | Apache 2.0 | Disponible en Hugging Face y Ollama |
 
 No se dispone de datos de rendimiento comparado, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. En terminos de licencia, el adaptador parte de una desventaja clara frente a las alternativas Apache 2.0, ya que no declara condiciones de uso propias y hereda las restricciones de la Llama 3.2 Community License, incluida la clausula de licencia adicional para organizaciones con mas de 700 millones de usuarios mensuales.
 
@@ -97,9 +97,9 @@ No se dispone de datos de rendimiento comparado, por lo que la comparacion se li
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-01-konektor
+- Pagina del modelo en Hugging Face: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-01-konektor
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Documentacion de Llama 3.2: https://www.llama.com/
-- Libreria PEFT (HuggingFace): https://huggingface.co/docs/peft/index
+- Libreria PEFT (Hugging Face): https://huggingface.co/docs/peft/index
 - Nota sobre la busqueda web: los unicos resultados devueltos fueron paginas genericas de inicio de sesion de LinkedIn (ch.linkedin.com, es.linkedin.com, fr.linkedin.com, www.linkedin.com, tr.linkedin.com), sin relacion alguna con el modelo. No se han encontrado papers, blogs, repositorios ni demos asociados a este adaptador.

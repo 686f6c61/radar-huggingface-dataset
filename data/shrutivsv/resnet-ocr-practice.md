@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `shrutivsv/resnet-ocr-practice` de HuggingFace no contiene un modelo de inteligencia artificial, sino un documento de notas académicas sobre un paper de investigación. La model card describe un archivo `paper_notes.md` que resume un trabajo sobre "grounded language", con formato docx, estilo de citación por notas al pie y estructura intro-relacionado-método-experimento-conclusión. El autor, `shrutivsv`, lo publicó con licencia Apache 2.0.
+El repositorio `shrutivsv/resnet-ocr-practice` de Hugging Face no contiene un modelo de inteligencia artificial, sino un documento de notas académicas sobre un paper de investigación. La model card describe un archivo `paper_notes.md` que resume un trabajo sobre "grounded language", con formato docx, estilo de citación por notas al pie y estructura intro-relacionado-método-experimento-conclusión. El autor, `shrutivsv`, lo publicó con licencia Apache 2.0.
 
 A pesar de que el nombre del repositorio sugiere una práctica de OCR con ResNet, el contenido real no incluye pesos de modelo, arquitectura, datos de entrenamiento ni ningún artefacto relacionado con visión por computador. Los resultados de búsqueda web sobre OCR con ResNet son genéricos y no están vinculados a este repositorio específico.
 
@@ -38,7 +38,7 @@ Dado que no se trata de un modelo, no hay casos de uso prácticos de IA. El repo
 
 - Revisión académica: consultar las notas sobre el paper de grounded language.
 - Estudio de formato: analizar la estructura de notas académicas (argumentativo, con footnotes y secciones estándar).
-- Repositorio de ejemplo: como plantilla para publicar notas de investigación en HuggingFace.
+- Repositorio de ejemplo: como plantilla para publicar notas de investigación en Hugging Face.
 
 No obstante, ninguno de estos casos implica el uso de un modelo de IA.
 
@@ -64,5 +64,5 @@ No disponible. No existen modelos comparables en este repositorio, ya que no con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shrutivsv/resnet-ocr-practice
+- Repositorio Hugging Face: https://huggingface.co/shrutivsv/resnet-ocr-practice
 - No se encontraron enlaces adicionales en la búsqueda web (los resultados sobre OCR con ResNet son genéricos y no están vinculados a este repositorio).

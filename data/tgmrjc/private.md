@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `tgmrjc/private` en HuggingFace corresponde a un modelo identificado únicamente por su ID y su licencia MIT. No se ha publicado ninguna información técnica adicional: no hay arquitectura, tamaño, parámetros, contexto ni capacidades documentadas. La model card contiene únicamente la línea `license: mit`, sin descripción, sin archivos de pesos ni metadatos de pipeline. Por tanto, se trata de un repositorio vacío o privado, probablemente creado como espacio personal sin intención de distribución pública.
+El repositorio `tgmrjc/private` en Hugging Face corresponde a un modelo identificado únicamente por su ID y su licencia MIT. No se ha publicado ninguna información técnica adicional: no hay arquitectura, tamaño, parámetros, contexto ni capacidades documentadas. La model card contiene únicamente la línea `license: mit`, sin descripción, sin archivos de pesos ni metadatos de pipeline. Por tanto, se trata de un repositorio vacío o privado, probablemente creado como espacio personal sin intención de distribución pública.
 
 La relevancia de este repositorio es nula para la comunidad de desarrolladores, ya que no existe ningún artefacto descargable ni documentación que permita evaluar o utilizar el modelo. Cualquier uso en producción o investigación sería imposible sin acceso a los datos reales.
 
@@ -54,6 +54,6 @@ No hay información suficiente para comparar este repositorio con otros modelos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tgmrjc/private
+- Repositorio Hugging Face: https://huggingface.co/tgmrjc/private
 
 No se han encontrado papers, blogs, demos o documentación adicional relacionados con este repositorio. Los resultados de búsqueda web sobre "private AI models" o "privateGPT" no corresponden a este repositorio concreto.

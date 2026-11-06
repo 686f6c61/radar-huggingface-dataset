@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Modalidad | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| changh95/transfusion-p150 | no disponible | LiDAR 3D (deteccion) | no aplica | 217 ms por inferencia en p150; sin benchmarks publicados | Apache-2.0 | HuggingFace, 0 descargas |
-| AutowareFoundation/lidar_transfusion (v2.1, modelo base) | no disponible | LiDAR 3D (deteccion) | no aplica | no disponible | Apache-2.0 | HuggingFace |
+| changh95/transfusion-p150 | no disponible | LiDAR 3D (deteccion) | no aplica | 217 ms por inferencia en p150; sin benchmarks publicados | Apache-2.0 | Hugging Face, 0 descargas |
+| AutowareFoundation/lidar_transfusion (v2.1, modelo base) | no disponible | LiDAR 3D (deteccion) | no aplica | no disponible | Apache-2.0 | Hugging Face |
 | CenterPoint (detector LiDAR por defecto en Autoware) | no disponible | LiDAR 3D (deteccion) | no aplica | no disponible | no disponible en la informacion proporcionada | incluido en Autoware Universe |
 
 No se dispone de datos de parametros, contexto ni metricas de precision para ninguno de los tres, por lo que la comparacion cuantitativa no es posible con la informacion disponible. La diferencia funcional documentada es que CenterPoint es el detector LiDAR por defecto en Autoware y TransFusion-L es una alternativa opt-in, y que solo `transfusion-p150` esta portado a Tenstorrent Blackhole p150 con `tt-nn`.
@@ -96,7 +96,7 @@ No se dispone de datos de parametros, contexto ni metricas de precision para nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/changh95/transfusion-p150
+- Modelo en Hugging Face: https://huggingface.co/changh95/transfusion-p150
 - Codigo del port: https://huggingface.co/changh95/transfusion-p150/tree/main/code
 - Modelo base (pesos v2.1): https://huggingface.co/AutowareFoundation/lidar_transfusion/tree/8f07eb93038bfd62e35d1f78e56a6b3fb76b12aa
 - Paper: https://arxiv.org/abs/2203.11496

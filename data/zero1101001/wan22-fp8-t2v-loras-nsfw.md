@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zero1101001/wan22-fp8-t2v-loras-nsfw` | LoRA sobre base 14B | No disponible | LoRA T2V NSFW | `other` | HuggingFace, 0 descargas |
+| `zero1101001/wan22-fp8-t2v-loras-nsfw` | LoRA sobre base 14B | No disponible | LoRA T2V NSFW | `other` | Hugging Face, 0 descargas |
 | WAN 2.2 T2V 14B (base) | 14B | No disponible | Difusion T2V | No disponible en esta ficha | Modelo base referenciado por el autor |
 | WAN 2.1 (version anterior) | No disponible | No disponible | Difusion T2V/I2V | No disponible en esta ficha | Referenciado como predecesor |
 | Otros LoRA comunitarios para WAN | Variable | No aplica | Adaptadores | Variable | No disponible |
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zero1101001/wan22-fp8-t2v-loras-nsfw
+- Repositorio Hugging Face: https://huggingface.co/zero1101001/wan22-fp8-t2v-loras-nsfw
 - Modelo base WAN 2.2 T2V 14B: no disponible en la informacion proporcionada
 - Modelo base WAN 2.2 I2V 14B: no disponible en la informacion proporcionada
 - Paper o blog de WAN 2.2: no disponible en la informacion proporcionada

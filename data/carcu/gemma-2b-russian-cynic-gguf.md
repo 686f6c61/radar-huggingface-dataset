@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/carcu/gemma-2b-russian-cynic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/carcu/gemma-2b-russian-cynic-GGUF
 - Librería Unsloth (usada para el fine-tune y conversión): https://github.com/unslothai/unsloth
 - Repositorio oficial de Gemma (modelo base presumible): https://github.com/google-deepmind/gemma

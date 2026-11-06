@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gnascimentoeli/tiny-transformer-classification-checkpoint` es un repositorio experimental publicado en HuggingFace por el usuario gnascimentoeli. No se trata de un modelo entrenado, sino de un *checkpoint de inicialización* pensado para pruebas de humo (*smoke tests*) de una implementación propia de transformer diminuto orientada a tareas de clasificación. El autor lo declara explícitamente: «it is not presented as a trained benchmark checkpoint» y no reclama ninguna puntuación de benchmark.
+`gnascimentoeli/tiny-transformer-classification-checkpoint` es un repositorio experimental publicado en Hugging Face por el usuario gnascimentoeli. No se trata de un modelo entrenado, sino de un *checkpoint de inicialización* pensado para pruebas de humo (*smoke tests*) de una implementación propia de transformer diminuto orientada a tareas de clasificación. El autor lo declara explícitamente: «it is not presented as a trained benchmark checkpoint» y no reclama ninguna puntuación de benchmark.
 
 El artefacto principal no es el peso, sino el código: el repositorio incluye `finetune.py` como pieza central, junto con `config.json` (arquitectura generada), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización válida). El checkpoint contiene 16.576 parámetros totales, un orden de magnitud propio de un ejercicio didáctico o de un banco de pruebas de infraestructura, no de un modelo desplegable en producción.
 
@@ -78,5 +78,5 @@ No disponible. No es posible establecer una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gnascimentoeli/tiny-transformer-classification-checkpoint
+- Hugging Face: https://huggingface.co/gnascimentoeli/tiny-transformer-classification-checkpoint
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo, a su autor ni a documentación técnica asociada. Los resultados devueltos corresponden a documentos y perfiles sin relación con el repositorio.

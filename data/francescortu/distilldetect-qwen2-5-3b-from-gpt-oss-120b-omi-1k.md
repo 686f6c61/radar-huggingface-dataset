@@ -65,7 +65,7 @@ No se dispone de informaci√≥n comparativa con otros modelos de la misma categor√
 
 ## Enlaces
 
-- [HuggingFace - DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-OMI-1K](https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-OMI-1K)
+- [Hugging Face - DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-OMI-1K](https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-OMI-1K)
 - [Paper arXiv:2607.09692](https://arxiv.org/abs/2607.09692)
 - [Repositorio GitHub del paper (DistillDetect)](https://github.com/RajatRawat-creator/DistillDetect)
 - [Modelo base Qwen/Qwen2.5-3B](https://huggingface.co/Qwen/Qwen2.5-3B)

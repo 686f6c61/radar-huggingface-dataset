@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nex-N2.5-mini es el miembro de menor tamano de la familia Nex-N2.5, una saga de modelos agenticos disenada por Nex-AGI para tareas de horizonte largo en entornos reales (uso de ordenador, navegacion web y ejecucion autonoma de programas). El repositorio publicado en HuggingFace bajo el identificador `SAIFIINDUSTRIES/Nex-N2.5-mini` contiene 35.107.181.936 parametros (35,1 B) en formato safetensors, ocupa 70,2 GB y se distribuye con licencia Apache 2.0. La etiqueta de arquitectura declarada por la libreria `transformers` es `qwen3_5_moe`, lo que indica un transformer con mezcla de expertos (MoE); el numero de parametros activos por token no se especifica.
+Nex-N2.5-mini es el miembro de menor tamano de la familia Nex-N2.5, una saga de modelos agenticos disenada por Nex-AGI para tareas de horizonte largo en entornos reales (uso de ordenador, navegacion web y ejecucion autonoma de programas). El repositorio publicado en Hugging Face bajo el identificador `SAIFIINDUSTRIES/Nex-N2.5-mini` contiene 35.107.181.936 parametros (35,1 B) en formato safetensors, ocupa 70,2 GB y se distribuye con licencia Apache 2.0. La etiqueta de arquitectura declarada por la libreria `transformers` es `qwen3_5_moe`, lo que indica un transformer con mezcla de expertos (MoE); el numero de parametros activos por token no se especifica.
 
 El modelo es multimodal de entrada (etiqueta `image-text-to-text`), coherente con el planteamiento de la familia: la vision no es solo una modalidad de entrada, sino la interfaz con la que el agente percibe el entorno, verifica resultados y autocorrige su ejecucion. La model card describe tres tamanos (mini, Pro y Max), siendo Max un MoE de 1,6 billones de parametros y solo texto, mientras que mini y Pro mantienen la base multimodal.
 
@@ -26,7 +26,7 @@ La relevancia actual del modelo esta en su orientacion a flujos agenticos de lar
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible solo permite confirmar que se trata de un modelo de mezcla de expertos etiquetado como `qwen3_5_moe` en la metadata de HuggingFace, con 35,1 B de parametros totales y pesos en safetensors de aproximadamente 70 GB (compatible con un almacenamiento en bf16/fp16). No se detallan en la model card el numero de expertos, el numero de expertos activos por token, la dimension oculta, el numero de capas ni el mecanismo de atencion (no se menciona atencion lineal, decodificacion especulativa ni ninguna otra innovacion concreta de inferencia).
+La informacion disponible solo permite confirmar que se trata de un modelo de mezcla de expertos etiquetado como `qwen3_5_moe` en la metadata de Hugging Face, con 35,1 B de parametros totales y pesos en safetensors de aproximadamente 70 GB (compatible con un almacenamiento en bf16/fp16). No se detallan en la model card el numero de expertos, el numero de expertos activos por token, la dimension oculta, el numero de capas ni el mecanismo de atencion (no se menciona atencion lineal, decodificacion especulativa ni ninguna otra innovacion concreta de inferencia).
 
 Respecto al entrenamiento, la model card indica que Nex-N2.5-mini y Nex-N2.5-Pro continuan sobre las bases multimodales de Nex-N2, con mejoras centradas en uso de ordenador, navegacion web y capacidades agenticas con anclaje visual. Se describe un post-entrenamiento sistematico orientado a agentes, con ampliacion de entornos de entrenamiento, tipos de tarea y escenarios de productividad, y aprendizaje a partir de retroalimentacion del entorno. No se especifican el volumen de tokens de entrenamiento, la composicion del dataset, ni si se emplearon RLHF, DPO u otras tecnicas de alineacion concretas.
 
@@ -108,14 +108,14 @@ No se dispone de informacion suficiente sobre modelos abiertos de tamano compara
 
 ## Enlaces
 
-- Repositorio HuggingFace (objeto de esta ficha): https://huggingface.co/SAIFIINDUSTRIES/Nex-N2.5-mini
+- Repositorio Hugging Face (objeto de esta ficha): https://huggingface.co/SAIFIINDUSTRIES/Nex-N2.5-mini
 - Repositorio citado en la model card para el modelo mini: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - ModelScope (mini): https://modelscope.cn/models/nex-agi/Nex-N2.5-mini
-- Repositorio HuggingFace de Nex-N2.5-Pro: https://huggingface.co/nex-agi/Nex-N2.5-Pro
+- Repositorio Hugging Face de Nex-N2.5-Pro: https://huggingface.co/nex-agi/Nex-N2.5-Pro
 - ModelScope (Pro): https://modelscope.cn/models/nex-agi/Nex-N2.5-Pro
-- Repositorio HuggingFace de Nex-N2.5-Max: https://huggingface.co/nex-agi/Nex-N2.5-Max
+- Repositorio Hugging Face de Nex-N2.5-Max: https://huggingface.co/nex-agi/Nex-N2.5-Max
 - ModelScope (Max): https://modelscope.cn/models/nex-agi/Nex-N2.5-Max
-- Coleccion de HuggingFace de la familia: https://huggingface.co/collections/nex-agi/nex-n25
+- Coleccion de Hugging Face de la familia: https://huggingface.co/collections/nex-agi/nex-n25
 - Repositorio GitHub: https://github.com/nex-agi/Nex-N2.5
 - Sitio web del desarrollador: https://nex-agi.com/
 - Acceso alojado, Nex-N2.5-Pro en OpenRouter: https://openrouter.ai/nex-agi/nex-n2.5-pro

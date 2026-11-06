@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Saraiv4/classificador-atendimento` es un modelo de clasificación de texto publicado en HuggingFace por el usuario Saraiv4. Por su nombre y su pipeline (`text-classification`), está orientado a la clasificación de mensajes o interacciones de atención al cliente, presumiblemente en portugués dado el término "atendimento". El repositorio tiene un tamaño de 0,4 GB y contiene pesos en formato safetensors con 108.926.212 parámetros totales, lo que sitúa al modelo en la franja de los ~110 millones de parámetros, compatible con arquitecturas tipo BERT-base o similares.
+`Saraiv4/classificador-atendimento` es un modelo de clasificación de texto publicado en Hugging Face por el usuario Saraiv4. Por su nombre y su pipeline (`text-classification`), está orientado a la clasificación de mensajes o interacciones de atención al cliente, presumiblemente en portugués dado el término "atendimento". El repositorio tiene un tamaño de 0,4 GB y contiene pesos en formato safetensors con 108.926.212 parámetros totales, lo que sitúa al modelo en la franja de los ~110 millones de parámetros, compatible con arquitecturas tipo BERT-base o similares.
 
-La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con 0 descargas y 0 likes, la model card es la plantilla autogenerada por HuggingFace sin ningún dato rellenado, y no se especifican licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Se trata, por tanto, de un artefacto sin documentación técnica asociada, lo que impide validar su calidad o su idoneidad para producción.
+La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con 0 descargas y 0 likes, la model card es la plantilla autogenerada por Hugging Face sin ningún dato rellenado, y no se especifican licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Se trata, por tanto, de un artefacto sin documentación técnica asociada, lo que impide validar su calidad o su idoneidad para producción.
 
 A pesar de la falta de información, la ficha se completa a continuación con los datos objetivos disponibles (arquitectura inferida por los tags, número de parámetros real, formato de pesos) y se marcan explícitamente como "no disponible" todos aquellos campos que el autor no ha documentado.
 
@@ -84,7 +84,7 @@ La comparativa se limita a modelos de la misma familia (encoders BERT-like de ~1
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Saraiv4/classificador-atendimento
+- Hugging Face: https://huggingface.co/Saraiv4/classificador-atendimento
 - Paper del calculador de impacto (referenciado en la plantilla, no específico del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML: https://mlco2.github.io/impact#compute
 - Repositorio de Transformers: https://github.com/huggingface/transformers

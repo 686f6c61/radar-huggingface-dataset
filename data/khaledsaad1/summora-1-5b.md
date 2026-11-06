@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Summora-1.5B es un adaptador LoRA publicado en HuggingFace por el usuario Khaledsaad1 bajo el identificador `Khaledsaad1/Summora-1.5B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (PEFT) que se aplican sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, lo que confirma que solo se distribuye el adaptador: para ejecutar el modelo hay que descargar aparte el modelo base de 1,5 mil millones de parametros.
+Summora-1.5B es un adaptador LoRA publicado en Hugging Face por el usuario Khaledsaad1 bajo el identificador `Khaledsaad1/Summora-1.5B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (PEFT) que se aplican sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, lo que confirma que solo se distribuye el adaptador: para ejecutar el modelo hay que descargar aparte el modelo base de 1,5 mil millones de parametros.
 
 El ajuste se ha realizado con SFT (supervised fine-tuning) usando las librerias TRL y PEFT (version 0.21.1), segun las etiquetas declaradas en el repositorio. El nombre "Summora" y la etiqueta `conversational` apuntan a un uso orientado a resumen y dialogo, pero la model card publicada es una plantilla sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, idiomas, licencia ni resultados de evaluacion.
 
@@ -67,11 +67,11 @@ Los datos de terceros provienen de sus model cards publicas y no se han verifica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Summora-1.5B (este modelo) | Adaptador sobre 1,5B | No disponible | No disponible | HuggingFace, solo adaptador |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,5B | 32.768 tokens declarados | MIT segun su model card | HuggingFace, pesos completos |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens declarados | Apache-2.0 | HuggingFace, pesos completos |
-| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 131.072 tokens declarados | Llama 3.2 Community License | HuggingFace, con acceso aceptado |
-| google/gemma-2-2b-it | 2,6B | 8.192 tokens declarados | Gemma Terms of Use | HuggingFace, con acceso aceptado |
+| Summora-1.5B (este modelo) | Adaptador sobre 1,5B | No disponible | No disponible | Hugging Face, solo adaptador |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,5B | 32.768 tokens declarados | MIT segun su model card | Hugging Face, pesos completos |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens declarados | Apache-2.0 | Hugging Face, pesos completos |
+| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 131.072 tokens declarados | Llama 3.2 Community License | Hugging Face, con acceso aceptado |
+| google/gemma-2-2b-it | 2,6B | 8.192 tokens declarados | Gemma Terms of Use | Hugging Face, con acceso aceptado |
 
 ## Limitaciones y advertencias
 

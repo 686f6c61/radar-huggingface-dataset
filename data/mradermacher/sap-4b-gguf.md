@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAP-4B-GGUF es la version cuantizada en formato GGUF del modelo Zichen1024/SAP-4B, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones estaticas de modelos abiertos. El modelo base cuenta con 4.411.424.256 parametros (aproximadamente 4,4 mil millones) y esta orientado a tareas conversacionales, segun las etiquetas del repositorio. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+SAP-4B-GGUF es la version cuantizada en formato GGUF del modelo Zichen1024/SAP-4B, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones estaticas de modelos abiertos. El modelo base cuenta con 4.411.424.256 parametros (aproximadamente 4,4 mil millones) y esta orientado a tareas conversacionales, segun las etiquetas del repositorio. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 Esta publicacion no introduce un modelo nuevo, sino un conjunto de pesos cuantizados pensados para ejecucion local eficiente mediante llama.cpp y herramientas compatibles con GGUF (Ollama, LM Studio, kobold.cpp, entre otras). El repositorio ofrece doce variantes de cuantizacion, desde Q2_K (1,9 GB) hasta f16 (8,9 GB), lo que permite desplegar el modelo en hardware muy diverso, desde equipos de gama de entrada hasta estaciones de trabajo con GPU dedicada.
 

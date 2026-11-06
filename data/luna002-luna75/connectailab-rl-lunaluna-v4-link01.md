@@ -71,8 +71,8 @@ El techo teórico de acierto en test es del 99 % (proporción de observaciones q
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | ~0,8 B base + LoRA | no disponible | Decisión de esquiva de obstáculos en simulación | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | Lenguaje general | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | ~0,8 B base + LoRA | no disponible | Decisión de esquiva de obstáculos en simulación | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | Lenguaje general | Apache 2.0 | Hugging Face |
 | Política PPO `brain.json` (profesor) | no disponible | N/A | Decisión de esquiva de obstáculos en simulación | no disponible | Repositorio connect-tycoon |
 
 No se han identificado en la información proporcionada otros adaptadores LoRA públicos para la misma tarea (decisión robótica en LINK-01) con los que comparar directamente.
@@ -91,7 +91,7 @@ No se han identificado en la información proporcionada otros adaptadores LoRA p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v4-link01
+- Hugging Face: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v4-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

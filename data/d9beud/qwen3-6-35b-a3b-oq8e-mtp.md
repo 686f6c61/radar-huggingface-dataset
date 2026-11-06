@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.6-35B-A3B-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.6-35B-A3B-oQ8e-mtp
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx

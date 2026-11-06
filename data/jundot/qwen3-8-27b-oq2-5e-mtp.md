@@ -94,10 +94,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/Qwen3.8-27B-oQ2.5e-mtp | 27,781B | 262.144 tokens | Mixta, 3,643 bits/peso efectivos | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Jundot/Qwen3.8-27B-oQ4e-fp16-mtp | 28B (según listado) | No disponible | Mixta oQ4e con componentes fp16 | Apache-2.0 (heredada) | HuggingFace, 1,26k descargas, 13 likes |
-| Jundot/Qwen3.8-27B-oQ6e-mtp | 28B (según listado) | No disponible | Mixta oQ6e | Apache-2.0 (heredada) | HuggingFace, 1,62k descargas, 10 likes |
-| Qwen/Qwen3.8-27B (modelo base) | 27,781B | 262.144 tokens | Sin cuantizar (BF16) | Apache-2.0 | HuggingFace |
+| Jundot/Qwen3.8-27B-oQ2.5e-mtp | 27,781B | 262.144 tokens | Mixta, 3,643 bits/peso efectivos | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Jundot/Qwen3.8-27B-oQ4e-fp16-mtp | 28B (según listado) | No disponible | Mixta oQ4e con componentes fp16 | Apache-2.0 (heredada) | Hugging Face, 1,26k descargas, 13 likes |
+| Jundot/Qwen3.8-27B-oQ6e-mtp | 28B (según listado) | No disponible | Mixta oQ6e | Apache-2.0 (heredada) | Hugging Face, 1,62k descargas, 10 likes |
+| Qwen/Qwen3.8-27B (modelo base) | 27,781B | 262.144 tokens | Sin cuantizar (BF16) | Apache-2.0 | Hugging Face |
 
 Las tres variantes comparten modelo base, licencia y, presumiblemente, contexto, ya que la cuantización no altera la arquitectura. La diferencia relevante es el compromiso entre huella de memoria y fidelidad: oQ2.5e baja a 3,643 bits/peso efectivos, mientras que oQ4e y oQ6e se sitúan en rangos superiores. Los datos de descargas y likes indican que las variantes de mayor precisión tienen más adopción, aunque la variante oQ2.5e es la única con fecha de creación más reciente en la información disponible. No hay datos de benchmarks que permitan cuantificar la pérdida de calidad de cada variante.
 
@@ -115,11 +115,11 @@ Las tres variantes comparten modelo base, licencia y, presumiblemente, contexto,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/Qwen3.8-27B-oQ2.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ2.5e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
 - Pull request de la mejora oQe: https://github.com/jundot/omlx/pull/4385
 - Catálogo de modelos de Jundot: https://huggingface.co/Jundot/models
-- Modelos etiquetados con oq en HuggingFace: https://huggingface.co/models?other=oq
+- Modelos etiquetados con oq en Hugging Face: https://huggingface.co/models?other=oq
 - Anuncio de Lightning MTP, kernels personalizados y oQe en r/oMLX: https://www.reddit.com/r/oMLX/comments/1uqyu2h/introducing_lightning_mtp_custom_kernels_and_oqe/
 - Modelos compatibles con MLX: https://huggingface.co/models?library=mlx

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador PEFT (LoRA) entrenado mediante SFT durante 5 épocas sobre el modelo base `Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-switch-top1`, una variante que, a tenor del identificador, convierte un Llama 3.1 8B Instruct en una mezcla de expertos (MoE) de 4 expertos con router switch top-1 aplicada a las capas feed-forward. El autor es el usuario de HuggingFace Jongbin-kr y el artefacto se publica bajo la librería `peft`, con pesos en `safetensors` y un tamano de repositorio de 16,4 GB.
+Este repositorio contiene un adaptador PEFT (LoRA) entrenado mediante SFT durante 5 épocas sobre el modelo base `Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-switch-top1`, una variante que, a tenor del identificador, convierte un Llama 3.1 8B Instruct en una mezcla de expertos (MoE) de 4 expertos con router switch top-1 aplicada a las capas feed-forward. El autor es el usuario de Hugging Face Jongbin-kr y el artefacto se publica bajo la librería `peft`, con pesos en `safetensors` y un tamano de repositorio de 16,4 GB.
 
 El problema que aborda es de naturaleza experimental: explorar si un esquema MoE disperso con enrutado top-1 y adaptadores LoRA sobre las FFN puede reutilizar el conocimiento de un modelo denso ya instruido, anadiendo capacidad mediante especializacion de expertos en lugar de reentrenar desde cero. Es relevante ahora porque la comunidad esta probando activamente tecnicas de "upcycling" de modelos densos a MoE y de ajuste eficiente en parametros, y este checkpoint es un ejemplo publico de esa linea de trabajo.
 
-La informacion disponible es muy limitada: la model card es la plantilla por defecto de HuggingFace sin rellenar (todos los campos figuran como "More Information Needed") y no se publican datos de entrenamiento, idiomas, licencia, evaluacion ni hiperparametros. Ademas, el modelo tiene 0 descargas y 1 "like" en el momento de la consulta, por lo que debe considerarse un artefacto de investigacion sin validacion externa ni soporte. Cualquier uso en produccion requeriria una evaluacion propia previa.
+La informacion disponible es muy limitada: la model card es la plantilla por defecto de Hugging Face sin rellenar (todos los campos figuran como "More Information Needed") y no se publican datos de entrenamiento, idiomas, licencia, evaluacion ni hiperparametros. Ademas, el modelo tiene 0 descargas y 1 "like" en el momento de la consulta, por lo que debe considerarse un artefacto de investigacion sin validacion externa ni soporte. Cualquier uso en produccion requeriria una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La informacion disponible es muy limitada: la model card es la plantilla por def
 
 No hay informacion publicada sobre la arquitectura exacta ni sobre el procedimiento de entrenamiento. Lo unico verificable es lo que se deduce del identificador y de las etiquetas del repositorio: se trata de un adaptador de tipo LoRA (`lora`, `peft`) aplicado sobre las capas feed-forward de un modelo base denominado `llama-3.1-8b-instruct-4x1-moe-switch-top1`, que a su vez parte de Llama 3.1 8B Instruct. El sufijo "4x1" es compatible con 4 expertos y 1 experto activo por token, y "switch-top1-router" con un enrutador de tipo Switch Transformer que selecciona un unico experto. Nada de esto esta documentado por el autor: son inferencias a partir del nombre.
 
-El sufijo `sft-5ep` indica un ajuste supervisado de 5 epocas. Se desconoce el dataset, el numero de tokens, la composicion de los datos, si hubo fases de RLHF o DPO, la precision de entrenamiento y los hiperparametros (tasa de aprendizaje, rango y alpha del LoRA, targets exactos). La unica referencia tecnica del repositorio es el arXiv 1910.09700, que corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", citado en la plantilla de HuggingFace como calculadora de impacto ambiental y no como paper del modelo. La version de PEFT registrada es 0.19.1 y la fecha de creacion del repositorio es el 14 de septiembre de 2026, con ultima actualizacion el 17 de septiembre de 2026.
+El sufijo `sft-5ep` indica un ajuste supervisado de 5 epocas. Se desconoce el dataset, el numero de tokens, la composicion de los datos, si hubo fases de RLHF o DPO, la precision de entrenamiento y los hiperparametros (tasa de aprendizaje, rango y alpha del LoRA, targets exactos). La unica referencia tecnica del repositorio es el arXiv 1910.09700, que corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", citado en la plantilla de Hugging Face como calculadora de impacto ambiental y no como paper del modelo. La version de PEFT registrada es 0.19.1 y la fecha de creacion del repositorio es el 14 de septiembre de 2026, con ultima actualizacion el 17 de septiembre de 2026.
 
 ## Capacidades
 
@@ -70,8 +70,8 @@ No hay datos de rendimiento de este modelo que permitan una comparativa funciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-switch-top1-router-ffn-lora-sft-5ep | No disponible (repositorio de 16,4 GB) | No disponible | No disponible | Adaptador LoRA en HuggingFace, 0 descargas | No publicados |
-| Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-switch-top1 (modelo base declarado) | No disponible | No disponible | No disponible | Repositorio en HuggingFace | No publicados |
+| Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-switch-top1-router-ffn-lora-sft-5ep | No disponible (repositorio de 16,4 GB) | No disponible | No disponible | Adaptador LoRA en Hugging Face, 0 descargas | No publicados |
+| Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-switch-top1 (modelo base declarado) | No disponible | No disponible | No disponible | Repositorio en Hugging Face | No publicados |
 | Llama 3.1 8B Instruct (origen de la cadena, datos publicos de Meta) | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible, multiples formatos | Publicados por Meta |
 | Otras conversiones MoE de modelos densos de escala similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -86,19 +86,19 @@ No se dispone de informacion suficiente para comparar con alternativas como Mixt
 - Riesgo de degradacion por el SFT: cinco epocas sobre un adaptador LoRA es un regimen propenso al sobreajuste si el dataset es pequeno o poco diverso; no se conocen ni el volumen ni la composicion de los datos.
 - Comportamiento del router no verificado: no hay informacion sobre el balanceo de carga entre expertos. Un enrutado top-1 desbalanceado puede provocar que parte de la capacidad quede sin usar o que se produzca colapso de expertos.
 - Sesgos: no evaluados. Al no haber analisis de sesgo, se heredan los sesgos de Llama 3.1 8B Instruct mas los introducidos por el dataset de SFT, que se desconoce.
-- Sin soporte ni mantenimiento: 0 descargas, 1 "like" y ninguna comunidad asociada. No hay issues, ni demo, ni autor de contacto mas alla del usuario de HuggingFace.
+- Sin soporte ni mantenimiento: 0 descargas, 1 "like" y ninguna comunidad asociada. No hay issues, ni demo, ni autor de contacto mas alla del usuario de Hugging Face.
 - Trazabilidad limitada: no se indica el numero de parametros, los targets del LoRA, la precision ni el hardware de entrenamiento, lo que dificulta reproducir el resultado.
 - Formatos de despliegue escasos: no hay GGUF ni cuantizaciones publicadas, por lo que el uso en herramientas de consumo exige trabajo adicional de conversion y validacion.
 - Repositorio de gran tamano: 16,4 GB en `safetensors` para un adaptador, lo que sugiere que el contenido real del repositorio no esta del todo claro; conviene inspeccionar los archivos antes de descargarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-switch-top1-router-ffn-lora-sft-5ep
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-switch-top1-router-ffn-lora-sft-5ep
 - Modelo base declarado: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-switch-top1
 - Referencia arXiv citada en la model card (Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental enlazada en la model card: https://mlco2.github.io/impact
 - Paper de la tecnica Switch Transformer (referencia general sobre enrutado top-1, no citada por el autor): https://arxiv.org/abs/2101.03961
 - Paper de LoRA (referencia general sobre el metodo de adaptacion, no citada por el autor): https://arxiv.org/abs/2106.09685
-- Llama 3.1 8B Instruct en HuggingFace (origen de la cadena de derivacion): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Llama 3.1 8B Instruct en Hugging Face (origen de la cadena de derivacion): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los resultados obtenidos correspondian a paginas de producto de Microsoft Word y no guardan relacion con el artefacto. No se han localizado papers, blogs, repositorios ni demos adicionales del autor.

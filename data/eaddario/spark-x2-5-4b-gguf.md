@@ -99,7 +99,7 @@ Las cifras de contexto y licencia de los modelos alternativos corresponden a sus
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/eaddario/Spark-X2.5-4B-GGUF
+- Pagina del modelo en Hugging Face: https://huggingface.co/eaddario/Spark-X2.5-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Dataset de calibracion: https://huggingface.co/datasets/eaddario/imatrix-calibration
 - Repositorio de llama.cpp (runtime compatible con GGUF): https://github.com/ggerganov/llama.cpp

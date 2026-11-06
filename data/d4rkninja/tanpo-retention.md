@@ -91,10 +91,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tanpo-retention | ~1,17 B | 32.768 tokens | Retencion y customer success (ingles) | `other` | HuggingFace, pesos safetensors y GGUF |
-| LiquidAI/LFM2.5-1.2B-Instruct (base) | ~1,17 B | 32.768 tokens | Proposito general, orientado a edge | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Proposito general, multilingue | Apache 2.0 (segun su propia model card) | HuggingFace |
-| Llama-3.2-1B-Instruct | ~1,2 B | 128.000 tokens | Proposito general, multilingue | Licencia comunitaria de Meta (segun su propia model card) | HuggingFace |
+| tanpo-retention | ~1,17 B | 32.768 tokens | Retencion y customer success (ingles) | `other` | Hugging Face, pesos safetensors y GGUF |
+| LiquidAI/LFM2.5-1.2B-Instruct (base) | ~1,17 B | 32.768 tokens | Proposito general, orientado a edge | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Proposito general, multilingue | Apache 2.0 (segun su propia model card) | Hugging Face |
+| Llama-3.2-1B-Instruct | ~1,2 B | 128.000 tokens | Proposito general, multilingue | Licencia comunitaria de Meta (segun su propia model card) | Hugging Face |
 
 Nota: los datos de Qwen2.5-1.5B-Instruct y Llama-3.2-1B-Instruct proceden de conocimiento general sobre esos modelos y no de la informacion proporcionada en esta busqueda; conviene verificarlos en sus model cards oficiales. No se dispone de comparaciones de rendimiento entre estos modelos y tanpo-retention, ya que no existen benchmarks publicos en la informacion disponible. La comparacion relevante y documentada es contra su propio modelo base: +1,8 pp en la rubrica interna, con mejoras fuertes en escalados, renovaciones, winback y guardrails de identidad, y retrocesos en `cs_playbooks` y `health_scores`.
 
@@ -115,7 +115,7 @@ Nota: los datos de Qwen2.5-1.5B-Instruct y Llama-3.2-1B-Instruct proceden de con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d4rkninja/tanpo-retention
+- Modelo en Hugging Face: https://huggingface.co/d4rkninja/tanpo-retention
 - Adaptador LoRA: https://huggingface.co/d4rkninja/tanpo-retention-LoRA
 - Cuantizaciones GGUF: https://huggingface.co/d4rkninja/tanpo-retention-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/d4rkninja/tanpo-retention-sft

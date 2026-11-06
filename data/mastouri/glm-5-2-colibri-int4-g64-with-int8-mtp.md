@@ -87,7 +87,7 @@ La comparativa se limita a los contenedores del mismo autor para el mismo modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mastouri/GLM-5.2-colibri-int4-g64-with-int8-mtp
+- Repositorio Hugging Face: https://huggingface.co/mastouri/GLM-5.2-colibri-int4-g64-with-int8-mtp
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - Motor colibri: https://github.com/JustVugg/colibri
 - Contenedor hermano E8/IQ3: https://huggingface.co/mastouri/GLM-5.2-colibri-E8-IQ3-with-int8-mtp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Clementmore/deit-retrieval-proto` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un modelo DeiT (Data-efficient Image Transformer) orientado a tareas de retrieval (recuperación). El autor, Clementmore, lo publica como una configuración "nano" pensada explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos controlados pequeños, no como un modelo preentrenado listo para producción. Se distribuye bajo licencia Apache 2.0 y su única versión de pesos es un checkpoint de inicialización, no un modelo entrenado.
+`Clementmore/deit-retrieval-proto` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un modelo DeiT (Data-efficient Image Transformer) orientado a tareas de retrieval (recuperación). El autor, Clementmore, lo publica como una configuración "nano" pensada explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos controlados pequeños, no como un modelo preentrenado listo para producción. Se distribuye bajo licencia Apache 2.0 y su única versión de pesos es un checkpoint de inicialización, no un modelo entrenado.
 
 El elemento más relevante para quien lo evalúa es su tamaño: el fichero `model.safetensors` declara 49.600 parámetros totales, un orden de magnitud muy inferior al de cualquier DeiT estándar (los DeiT-Ti de referencia rondan los 5 millones). Esto confirma que se trata de un andamiaje mínimo de arquitectura, no de un modelo con capacidad representacional real. La model card indica además rasgos arquitectónicos poco convencionales para un DeiT: atención dispersa (sparse), fusión mediante co-attention, activación mish y normalización scalenorm.
 
@@ -21,7 +21,7 @@ Su relevancia ahora es limitada y de carácter metodológico: sirve como punto d
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (PyTorch) |
 
-Escala declarada por el autor: nano. Pipeline en HuggingFace: no disponible.
+Escala declarada por el autor: nano. Pipeline en Hugging Face: no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ La categoría sería "retrieval visual / image-text retrieval". No obstante, est
 
 | Modelo | Parametros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clementmore/deit-retrieval-proto | 49.600 | no disponible | no | apache-2.0 | HuggingFace (repo mínimo) |
+| Clementmore/deit-retrieval-proto | 49.600 | no disponible | no | apache-2.0 | Hugging Face (repo mínimo) |
 | CLIP (variantes de referencia) | no disponible en esta ficha | no disponible | si | varía segun variante | amplia |
 | BLIP / BLIP-2 | no disponible en esta ficha | no disponible | si | varía segun variante | amplia |
 | DeiT estandar (p. ej. DeiT-Ti) | no disponible en esta ficha | no disponible | si | varía segun variante | amplia |
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Clementmore/deit-retrieval-proto
+- Hugging Face: https://huggingface.co/Clementmore/deit-retrieval-proto
 - Paper de DeiT (referencia arquitectónica, no enlazado en la model card): no disponible en la información proporcionada
 - Dataset sugerido para evaluación, Flickr30k: no disponible en la información proporcionada
 - Repositorio de código, issues o demo adicionales: no disponible en la información proporcionada

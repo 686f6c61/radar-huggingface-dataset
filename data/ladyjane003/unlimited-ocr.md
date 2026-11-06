@@ -6,7 +6,7 @@ Unlimited-OCR es un modelo multimodal de visión-lenguaje especializado en recon
 
 El modelo tiene 3.336.106.240 parámetros (unos 3,34 mil millones, según los pesos reales en safetensors del repositorio), un tamaño de repositorio de 6,8 GB y pesos almacenados en safetensors con precisión bfloat16. Trabaja con una ventana de contexto de 32.768 tokens, lo que le permite encadenar el contenido de múltiples páginas sin segmentación externa. La licencia es MIT, lo que facilita su uso comercial y su integración en productos propios.
 
-Es relevante ahora porque combina tres factores poco habituales en OCR: ejecución local en hardware de consumo, licencia permisiva y procesamiento de documentos largos en una sola pasada, con soporte oficial para transformers, vLLM, SGLang y entrenamiento mediante ms-swift. El repositorio consultado en HuggingFace (`Ladyjane003/Unlimited-OCR`) es un espejo del modelo canónico publicado por Baidu (`baidu/Unlimited-OCR`); el espejo tiene muy poca tracción (8 descargas, 0 likes en la fecha de consulta), por lo que conviene verificar el origen de los pesos antes de usarlo en producción.
+Es relevante ahora porque combina tres factores poco habituales en OCR: ejecución local en hardware de consumo, licencia permisiva y procesamiento de documentos largos en una sola pasada, con soporte oficial para transformers, vLLM, SGLang y entrenamiento mediante ms-swift. El repositorio consultado en Hugging Face (`Ladyjane003/Unlimited-OCR`) es un espejo del modelo canónico publicado por Baidu (`baidu/Unlimited-OCR`); el espejo tiene muy poca tracción (8 descargas, 0 likes en la fecha de consulta), por lo que conviene verificar el origen de los pesos antes de usarlo en producción.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ No se han publicado tablas de benchmarks detalladas (MMLU, HumanEval, GSM8K u ot
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Unlimited-OCR (Baidu) | ~3,34 mil millones | 32.768 tokens | MIT | HuggingFace, ModelScope, Baidu Cloud, GitHub | Procesamiento multipágina en una pasada |
+| Unlimited-OCR (Baidu) | ~3,34 mil millones | 32.768 tokens | MIT | Hugging Face, ModelScope, Baidu Cloud, GitHub | Procesamiento multipágina en una pasada |
 | DeepSeek-OCR | no disponible | no disponible | no disponible | Repositorio de DeepSeek | Referencia directa que Unlimited-OCR dice superar |
 | PaddleOCR | no disponible | no disponible | no disponible | ModelScope y ecosistema PaddlePaddle | OCR clásico de Baidu, enfoque por página |
 | Tesseract | no disponible | no disponible | no disponible | Proyecto open source | OCR tradicional, sin modelado de lenguaje generativo |
@@ -99,11 +99,11 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no apare
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo consultado): https://huggingface.co/Ladyjane003/Unlimited-OCR
-- Modelo canónico en HuggingFace: https://huggingface.co/baidu/Unlimited-OCR
+- Modelo en Hugging Face (espejo consultado): https://huggingface.co/Ladyjane003/Unlimited-OCR
+- Modelo canónico en Hugging Face: https://huggingface.co/baidu/Unlimited-OCR
 - Repositorio en GitHub: https://github.com/baidu/Unlimited-OCR
 - Paper en arXiv: https://arxiv.org/abs/2606.23050
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
 - Receta de despliegue en vLLM: https://recipes.vllm.ai/baidu/Unlimited-OCR
 - Modelo en ModelScope: https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR
 - Documentación en Baidu Cloud: https://cloud.baidu.com/doc/OCR/s/fmr1p39gb

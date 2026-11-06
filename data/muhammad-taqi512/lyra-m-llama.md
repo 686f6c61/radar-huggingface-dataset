@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LYRA-M-LLAMA es un modelo de generación de texto publicado en HuggingFace por el usuario muhammad-taqi512 bajo licencia Apache 2.0. El autor lo presenta como un "motor de razonamiento ultrarrápido" de arquitectura propia (denominada "M.TAQI architecture", con base "LYRAMOON") orientado a respuestas de baja latencia en chat conversacional. La model card es exclusivamente promocional: no incluye detalles de entrenamiento, datos, tokenizador, longitud de contexto ni evaluación.
+LYRA-M-LLAMA es un modelo de generación de texto publicado en Hugging Face por el usuario muhammad-taqi512 bajo licencia Apache 2.0. El autor lo presenta como un "motor de razonamiento ultrarrápido" de arquitectura propia (denominada "M.TAQI architecture", con base "LYRAMOON") orientado a respuestas de baja latencia en chat conversacional. La model card es exclusivamente promocional: no incluye detalles de entrenamiento, datos, tokenizador, longitud de contexto ni evaluación.
 
-Existe una discrepancia relevante entre la documentación y los artefactos publicados: la model card afirma que se trata de un modelo de "1B parámetros", pero el recuento real de los ficheros safetensors del repositorio asciende a 3.212.749.824 parámetros (aproximadamente 3,21 mil millones), con un repositorio de 6,4 GB. Las etiquetas de HuggingFace incluyen `llama`, lo que sugiere una arquitectura basada en transformer decoder-only de estilo Llama, pero el autor no aporta ninguna confirmación técnica al respecto.
+Existe una discrepancia relevante entre la documentación y los artefactos publicados: la model card afirma que se trata de un modelo de "1B parámetros", pero el recuento real de los ficheros safetensors del repositorio asciende a 3.212.749.824 parámetros (aproximadamente 3,21 mil millones), con un repositorio de 6,4 GB. Las etiquetas de Hugging Face incluyen `llama`, lo que sugiere una arquitectura basada en transformer decoder-only de estilo Llama, pero el autor no aporta ninguna confirmación técnica al respecto.
 
 El modelo es relevante únicamente como objeto de estudio de un caso de ficha incompleta: cero descargas, cero likes y ausencia total de benchmarks, paper o documentación de entrenamiento. No hay evidencia publicada que permita recomendarlo para producción frente a alternativas abiertas de tamaño similar con documentación verificable.
 
@@ -12,7 +12,7 @@ El modelo es relevante únicamente como objeto de estudio de un caso de ficha in
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Etiqueta `llama` en HuggingFace; el autor menciona "LYRAMOON" / "M.TAQI architecture" sin especificar capas, atención, tipo de transformer ni configuración |
+| Arquitectura | No disponible. Etiqueta `llama` en Hugging Face; el autor menciona "LYRAMOON" / "M.TAQI architecture" sin especificar capas, atención, tipo de transformer ni configuración |
 | Parametros totales | 3.212.749.824 (~3,21 mil millones) según los ficheros safetensors del repositorio. La model card afirma "1B parámetros", dato contradicho por el recuento real |
 | Parametros activos | No aplica / no disponible (no se declara arquitectura MoE) |
 | Longitud de contexto | No disponible (no se especifica en la model card ni en la configuración publicada) |
@@ -23,7 +23,7 @@ El modelo es relevante únicamente como objeto de estudio de un caso de ficha in
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información verificable sobre la arquitectura interna. Las etiquetas de HuggingFace incluyen `llama`, `transformers` y `text-generation`, lo que apunta a un transformer decoder-only autorregresivo compatible con la librería Transformers, pero la model card no detalla número de capas, dimensión oculta, cabezas de atención, tipo de positional encoding ni si emplea GQA, RoPE u otras técnicas habituales en modelos de esta familia. El autor describe la base como "LYRAMOON" y la arquitectura como "M.TAQI architecture", sin aportar especificación alguna, paper ni diagrama.
+No se ha publicado información verificable sobre la arquitectura interna. Las etiquetas de Hugging Face incluyen `llama`, `transformers` y `text-generation`, lo que apunta a un transformer decoder-only autorregresivo compatible con la librería Transformers, pero la model card no detalla número de capas, dimensión oculta, cabezas de atención, tipo de positional encoding ni si emplea GQA, RoPE u otras técnicas habituales en modelos de esta familia. El autor describe la base como "LYRAMOON" y la arquitectura como "M.TAQI architecture", sin aportar especificación alguna, paper ni diagrama.
 
 Tampoco hay datos sobre el entrenamiento: se desconoce el número de tokens, la composición y procedencia del dataset, el tokenizador, si hubo fases de instrucción (SFT), alineación por RLHF o DPO, ni la ventana de contexto usada durante el preentrenamiento. La única afirmación técnica de la model card es funcional ("respuestas instantáneas", "zero-latency"), no arquitectónica. La diferencia entre los 1B declarados y los 3,21B reales impide además inferir parámetros de entrenamiento a partir del tamaño del checkpoint.
 
@@ -44,7 +44,7 @@ Cualquier caso de uso debe considerarse experimental, dado que no existen benchm
 
 - Prototipado rápido de chatbots en inglés: al ser un modelo de ~3,2B en safetensors compatible con `transformers`, puede cargarse con `AutoModelForCausalLM` para validar pipelines conversacionales en local antes de migrar a un modelo documentado.
 - Experimentación académica sobre atribución y procedencia de modelos: sirve como caso de estudio de fichas de modelo incompletas, discrepancias entre parámetros declarados y reales, y ausencia de evaluación reproducible.
-- Pruebas de integración con la pila de HuggingFace: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, puede usarse para verificar flujos de despliegue en TGI o Inference Endpoints si la arquitectura resulta ser efectivamente compatible con Llama.
+- Pruebas de integración con la pila de Hugging Face: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, puede usarse para verificar flujos de despliegue en TGI o Inference Endpoints si la arquitectura resulta ser efectivamente compatible con Llama.
 - Generación de texto de dominio general en inglés: únicamente para tareas no críticas donde la calidad no esté garantizada y el contenido sea revisado por un humano.
 - Fine-tuning exploratorio: al ser Apache 2.0 y tener 3,21B parámetros, es viable un ajuste con LoRA en una GPU de 24 GB, siempre que se acepte la ausencia de garantías sobre los pesos base.
 - Evaluación comparativa interna: puede incluirse como línea base "no documentada" en pruebas propias frente a Llama 3.2 3B o Qwen2.5 3B para medir la brecha que introduce la falta de alineación y de datos de entrenamiento conocidos.
@@ -73,7 +73,7 @@ Comparación con alternativas abiertas de rango 3-4B. Los datos de los modelos d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación pública |
 |---|---|---|---|---|---|
-| LYRA-M-LLAMA | 3,21B (declara 1B) | No disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | No disponible |
+| LYRA-M-LLAMA | 3,21B (declara 1B) | No disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | No disponible |
 | Llama 3.2 3B Instruct | 3,21B | 128K tokens | Llama 3.2 Community License | Amplia integración (vLLM, Ollama, llama.cpp) | Sí, benchmarks publicados por Meta |
 | Qwen2.5 3B Instruct | 3,09B | 32K tokens nativos (128K con YaRN) | Apache 2.0 (variantes con condiciones propias) | Amplia integración y versiones GGUF/AWQ/GPTQ | Sí, benchmarks publicados por Alibaba |
 | Phi-3.5-mini Instruct | 3,8B | 128K tokens | MIT | Amplia integración | Sí, benchmarks publicados por Microsoft |
@@ -95,6 +95,6 @@ La diferencia práctica no está en el tamaño, sino en la verificabilidad: las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhammad-taqi512/LYRA-M-LLAMA
-- Perfil del autor en HuggingFace: https://huggingface.co/muhammad-taqi512
+- Modelo en Hugging Face: https://huggingface.co/muhammad-taqi512/LYRA-M-LLAMA
+- Perfil del autor en Hugging Face: https://huggingface.co/muhammad-taqi512
 - Paper, blog técnico, repositorio de código, demo o dataset de entrenamiento: no disponible. Las búsquedas web realizadas no devuelven ningún resultado relacionado con el modelo; los enlaces obtenidos corresponden a entradas biográficas sin relación con este repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lovro77/llama32-1b-netlograg-v2 es un ajuste fino (fine-tuning) del modelo unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit, publicado por el usuario lovro77 en HuggingFace. Se trata de un derivado de Llama 3.2 1B Instruct, la variante mas pequena de la familia Llama 3.2 de Meta, con arquitectura transformer decoder-only de aproximadamente 1.240 millones de parametros y una ventana de contexto de 128.000 tokens heredada del modelo base. El entrenamiento se realizo con Unsloth, segun indica la propia model card, que afirma que el modelo se entreno "2x faster" con dicha libreria, y se apoya en el stack TRL/transformers.
+lovro77/llama32-1b-netlograg-v2 es un ajuste fino (fine-tuning) del modelo unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit, publicado por el usuario lovro77 en Hugging Face. Se trata de un derivado de Llama 3.2 1B Instruct, la variante mas pequena de la familia Llama 3.2 de Meta, con arquitectura transformer decoder-only de aproximadamente 1.240 millones de parametros y una ventana de contexto de 128.000 tokens heredada del modelo base. El entrenamiento se realizo con Unsloth, segun indica la propia model card, que afirma que el modelo se entreno "2x faster" con dicha libreria, y se apoya en el stack TRL/transformers.
 
 El nombre del repositorio ("netlograg") sugiere un ajuste orientado a tareas de generacion aumentada por recuperacion (RAG) sobre registros de red (network logs), aunque esta interpretacion no esta confirmada explicitamente en la model card, que es practicamente una plantilla autogenerada por Unsloth sin documentacion adicional sobre el dataset, el procedimiento o los objetivos. El repositorio ocupa 0,1 GB, un tamano compatible con adaptadores LoRA en lugar de pesos completos fusionados, si bien esto no se confirma en la informacion disponible.
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lovro77/llama32-1b-netlograg-v2 | ~1,24B | 128.000 tokens (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste comunitario sin benchmarks ni documentacion de dataset |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo oficial, con evaluaciones publicadas por Meta |
-| unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit | ~1,24B | 128.000 tokens | Apache 2.0 | HuggingFace, muy descargado | Version 4-bit del anterior, es el modelo base de este ajuste |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens (extensible a 131.072) | Apache 2.0 | HuggingFace, muy descargado | Alternativa directa con licencia permisiva y buen rendimiento en codigo y matematicas |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Apache 2.0 | HuggingFace, muy descargado | Alternativa centrada en eficiencia, contexto mas corto |
+| lovro77/llama32-1b-netlograg-v2 | ~1,24B | 128.000 tokens (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste comunitario sin benchmarks ni documentacion de dataset |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo oficial, con evaluaciones publicadas por Meta |
+| unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit | ~1,24B | 128.000 tokens | Apache 2.0 | Hugging Face, muy descargado | Version 4-bit del anterior, es el modelo base de este ajuste |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens (extensible a 131.072) | Apache 2.0 | Hugging Face, muy descargado | Alternativa directa con licencia permisiva y buen rendimiento en codigo y matematicas |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Apache 2.0 | Hugging Face, muy descargado | Alternativa centrada en eficiencia, contexto mas corto |
 
 No se dispone de datos de benchmarks comparativos para este ajuste concreto, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Los valores de contexto y parametros de los modelos alternativos corresponden a su documentacion oficial.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos para este ajuste concreto, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lovro77/llama32-1b-netlograg-v2
+- Modelo en Hugging Face: https://huggingface.co/lovro77/llama32-1b-netlograg-v2
 - Modelo base (Unsloth, 4-bit): https://huggingface.co/unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

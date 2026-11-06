@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama2_7b_PCG` es un modelo de lenguaje causal publicado en HuggingFace por el desarrollador independiente Sanjay Shrestha (usuario `sasudo2`). Se trata de un ajuste fino (fine-tune) sobre la arquitectura Llama 2 de 7.000 millones de parámetros, empaquetado en formato safetensors y distribuido con licencia Apache-2.0. El repositorio ocupa 13,5 GB y contiene 6.738.415.616 parámetros reales, coherentes con la variante de 7B de la familia Llama 2.
+`llama2_7b_PCG` es un modelo de lenguaje causal publicado en Hugging Face por el desarrollador independiente Sanjay Shrestha (usuario `sasudo2`). Se trata de un ajuste fino (fine-tune) sobre la arquitectura Llama 2 de 7.000 millones de parámetros, empaquetado en formato safetensors y distribuido con licencia Apache-2.0. El repositorio ocupa 13,5 GB y contiene 6.738.415.616 parámetros reales, coherentes con la variante de 7B de la familia Llama 2.
 
 El modelo mantiene la configuración estructural estándar de Llama 2: 32 capas, dimensión oculta de 4096, 32 cabezas de atención con 32 cabezas Key-Value (atención multi-cabeza clásica, sin GQA) y una ventana de contexto máxima de 4096 tokens. La model card indica que el ajuste está orientado a "generación creativa de código o tareas de generación específicas de dominio", con parámetros de muestreo preconfigurados (temperatura 0,6, top-p 0,9).
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `sasudo2/llama2_7b_PCG` | ~6,7B | 4096 | Apache-2.0 | HuggingFace, 5 descargas | Fine-tune sin evaluación publicada |
+| `sasudo2/llama2_7b_PCG` | ~6,7B | 4096 | Apache-2.0 | Hugging Face, 5 descargas | Fine-tune sin evaluación publicada |
 | Llama 2 7B (Meta) | ~6,7B | 4096 | Llama 2 Community License | Amplia | Modelo base de referencia; benchmarks publicados |
 | Mistral 7B | ~7,2B | 8192 (32k en v0.2/v0.3) | Apache-2.0 | Amplia | GQA, Sliding Window Attention, benchmarks públicos |
 | Llama 3.1 8B | ~8B | 131072 | Llama 3.1 Community License | Amplia | Contexto muy superior, GQA, evaluaciones publicadas |
@@ -88,7 +88,7 @@ La comparación con Llama 2 7B es la más directa por procedencia arquitectónic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sasudo2/llama2_7b_PCG
+- Modelo en Hugging Face: https://huggingface.co/sasudo2/llama2_7b_PCG
 - Configuración: https://huggingface.co/sasudo2/llama2_7b_PCG/blob/main/config.json
 - Configuración de generación: https://huggingface.co/sasudo2/llama2_7b_PCG/blob/main/generation_config.json
 - Tokenizer: https://huggingface.co/sasudo2/llama2_7b_PCG/blob/main/tokenizer.json

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`smai-a4-iocnn` es una red neuronal convexa de entrada-salida (Input-Output Convex Neural Network, IOC-NN) entrenada sobre CIFAR-10 como parte de la asignatura SMAI (Assignment 4, preguntas Q1 y secciones 1.4/1.5). El autor es el usuario de HuggingFace `notplato`. No es un modelo de lenguaje ni un transformer: es un clasificador de imágenes de 10 clases con una arquitectura MLP muy pequena (3072 -> 256 -> 10) que implementa una restriccion de convexidad respecto a la entrada mediante la no negatividad de los pesos de las capas a partir de la segunda.
+`smai-a4-iocnn` es una red neuronal convexa de entrada-salida (Input-Output Convex Neural Network, IOC-NN) entrenada sobre CIFAR-10 como parte de la asignatura SMAI (Assignment 4, preguntas Q1 y secciones 1.4/1.5). El autor es el usuario de Hugging Face `notplato`. No es un modelo de lenguaje ni un transformer: es un clasificador de imágenes de 10 clases con una arquitectura MLP muy pequena (3072 -> 256 -> 10) que implementa una restriccion de convexidad respecto a la entrada mediante la no negatividad de los pesos de las capas a partir de la segunda.
 
-El interes del artefacto es fundamentalmente didactico y de investigacion: permite reproducir un IOC-NN con una inicializacion y un esquema de proyeccion concretos (pesos negativos de capas >= 2 transformados como `exp(w - 5)` tras cada paso de SGD) y verificar propiedades de convexidad entrada-salida. El repositorio pesa 0.0 GB y contiene unicamente ficheros NumPy (`model.npz`, `preprocessing.npz`) y un `config.json`; no incluye pesos en safetensors ni GGUF, ni tokenizer, ni pipeline de HuggingFace.
+El interes del artefacto es fundamentalmente didactico y de investigacion: permite reproducir un IOC-NN con una inicializacion y un esquema de proyeccion concretos (pesos negativos de capas >= 2 transformados como `exp(w - 5)` tras cada paso de SGD) y verificar propiedades de convexidad entrada-salida. El repositorio pesa 0.0 GB y contiene unicamente ficheros NumPy (`model.npz`, `preprocessing.npz`) y un `config.json`; no incluye pesos en safetensors ni GGUF, ni tokenizer, ni pipeline de Hugging Face.
 
-No se dispone de informacion sobre licencia, idiomas ni pipeline en la model card ni en los metadatos de HuggingFace. El modelo se publico el 4 de noviembre de 2026 y no registra descargas ni likes en el momento de redactar esta ficha.
+No se dispone de informacion sobre licencia, idiomas ni pipeline en la model card ni en los metadatos de Hugging Face. El modelo se publico el 4 de noviembre de 2026 y no registra descargas ni likes en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smai-a4-iocnn` (este) | ~789.002 | 3072 valores (32x32x3 aplanado) | Clasificacion CIFAR-10 | no disponible | HuggingFace, `.npz` |
+| `smai-a4-iocnn` (este) | ~789.002 | 3072 valores (32x32x3 aplanado) | Clasificacion CIFAR-10 | no disponible | Hugging Face, `.npz` |
 | MLP estandar CIFAR-10 (referencia tipica) | ~789.000 | 3072 valores | Clasificacion CIFAR-10 | variable | Implementaciones multiples |
 | LeNet-5 (CNN clasica) | ~60.000 | 32x32x1 | Clasificacion MNIST/CIFAR | variable | Multiples repositorios |
 | ResNet-18 (vision) | ~11,7 M | 224x224x3 | Clasificacion ImageNet | variable | TorchVision, timm |
@@ -79,10 +79,10 @@ La comparativa es estructural: no se dispone de resultados de precision para est
 - No se especifica licencia, por lo que el uso comercial queda en un limbo legal hasta que el autor la declare.
 - No hay informacion sobre sesgos del dataset CIFAR-10 ni sobre el impacto de la proyeccion `exp(w - 5)` en la calibracion de las probabilidades.
 - El repositorio no incluye evaluacion en test, matriz de confusion ni curvas de entrenamiento; la verificacion de resultados requiere reentrenar o evaluar por cuenta propia.
-- El formato `.npz` no es directamente compatible con pipelines de HuggingFace `transformers` ni con servidores de inferencia estandar.
+- El formato `.npz` no es directamente compatible con pipelines de Hugging Face `transformers` ni con servidores de inferencia estandar.
 - El modelo se publico con 0 descargas y 0 likes, sin comunidad que lo valide.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/notplato/smai-a4-iocnn
+- Repositorio en Hugging Face: https://huggingface.co/notplato/smai-a4-iocnn
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web.

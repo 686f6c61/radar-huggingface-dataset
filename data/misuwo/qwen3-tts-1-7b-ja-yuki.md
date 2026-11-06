@@ -76,8 +76,8 @@ Estos valores son diagnósticos de entrenamiento y no constituyen un benchmark e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Misuwo/qwen3-tts-1.7b-ja-yuki | 1.916.676.352 | no disponible | Apache-2.0 | HuggingFace, safetensors + adaptador MLX | Fine-tune de voz japonesa `yuki`, datos escasos |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base | 1,7B (aproximado, segun el nombre) | no disponible | Apache-2.0 | HuggingFace, modelo base | Modelo base sin voz personalizada, multilingue |
+| Misuwo/qwen3-tts-1.7b-ja-yuki | 1.916.676.352 | no disponible | Apache-2.0 | Hugging Face, safetensors + adaptador MLX | Fine-tune de voz japonesa `yuki`, datos escasos |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base | 1,7B (aproximado, segun el nombre) | no disponible | Apache-2.0 | Hugging Face, modelo base | Modelo base sin voz personalizada, multilingue |
 | Otras alternativas de TTS (XTTS-v2, Kokoro, Piper, etc.) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para comparar parametros, contexto o rendimiento |
 
 La comparación cuantitativa fiable solo puede establecerse con el modelo base, del que no se aportan cifras de benchmark específicas en la información disponible.
@@ -96,7 +96,7 @@ La comparación cuantitativa fiable solo puede establecerse con el modelo base, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misuwo/qwen3-tts-1.7b-ja-yuki
+- Modelo en Hugging Face: https://huggingface.co/Misuwo/qwen3-tts-1.7b-ja-yuki
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Tokenizador: https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz
 - Repositorio Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS

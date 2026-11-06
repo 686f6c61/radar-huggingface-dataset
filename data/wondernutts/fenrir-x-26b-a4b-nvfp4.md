@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wondernutts/Fenrir-X-26B-A4B-NVFP4 | ~15,1B (safetensors) | 32.768 tokens (validado) | NVFP4 / compressed-tensors | apache-2.0 | HuggingFace |
-| Vortex5/Fenrir-X-26B-A4B (original) | no disponible en la informacion | no disponible | no disponible | apache-2.0 (heredada) | HuggingFace |
-| google/gemma-4-26B-A4B-it (base) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| Wondernutts/Fenrir-X-26B-A4B-NVFP4 | ~15,1B (safetensors) | 32.768 tokens (validado) | NVFP4 / compressed-tensors | apache-2.0 | Hugging Face |
+| Vortex5/Fenrir-X-26B-A4B (original) | no disponible en la informacion | no disponible | no disponible | apache-2.0 (heredada) | Hugging Face |
+| google/gemma-4-26B-A4B-it (base) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparados entre estas variantes en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparados entre estas variantes en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wondernutts/Fenrir-X-26B-A4B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Wondernutts/Fenrir-X-26B-A4B-NVFP4
 - Modelo base (original): https://huggingface.co/Vortex5/Fenrir-X-26B-A4B
 - Revision del checkpoint original: https://huggingface.co/Vortex5/Fenrir-X-26B-A4B/tree/ff05580e4a894de9aa9817e248ff5a6cd68cc033
 - Model card original: https://huggingface.co/Vortex5/Fenrir-X-26B-A4B/blob/ff05580e4a894de9aa9817e248ff5a6cd68cc033/README.md

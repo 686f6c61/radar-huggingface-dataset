@@ -107,7 +107,7 @@ Frente a alternativas de cuantización estándar (GGUF Q4_K_M, MLX 4-bit affine)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mavis-ai/Gemma4-26B-MoE-Q4T
+- Modelo en Hugging Face: https://huggingface.co/mavis-ai/Gemma4-26B-MoE-Q4T
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Sitio oficial de R.E.V.I.S.: https://mavis-ai.co.jp/revis/

@@ -93,7 +93,7 @@ Supra2.6 Pico es entre 45 y 400 veces mas pequeno que estas alternativas, con be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SupraLabs/Supra2.6-Pico
+- Modelo en Hugging Face: https://huggingface.co/SupraLabs/Supra2.6-Pico
 - Datasets de entrenamiento:
   - https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
   - https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus

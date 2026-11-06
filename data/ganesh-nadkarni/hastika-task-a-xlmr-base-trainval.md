@@ -33,7 +33,7 @@ El entrenamiento usó los ficheros de entrenamiento y validación del dataset HA
 - Manejo de texto code-mixed kannada-inglés (kanglish), incluyendo transliteración latina del kannada.
 - Procesamiento de comentarios cortos de plataformas sociales (hasta 160 tokens en el régimen de entrenamiento).
 - Integración directa con `transformers.pipeline("text-classification")`.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
 - Capacidad multilingüe limitada al par kn-en; el backbone XLM-R es multilingüe, pero el ajuste es específico del dominio.
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia en fp32: aproximadamente 1,1 GB para los pesos (278 M × 4 bytes) más overhead de activaciones; en fp16, en torno a 0,6 GB.
 - Cabe en cualquier GPU consumer moderna (RTX 3060 12 GB, RTX 4060, RTX 4090) y en GPUs de datacenter (A100, H100) con enorme margen para batching.
 - Inferencia viable en CPU para volúmenes moderados; un encoder de este tamaño procesa decenas de comentarios por segundo en CPU multinúcleo.
-- Opciones de despliegue: `transformers` (pipeline nativo), HuggingFace Inference Endpoints (marcado como `endpoints_compatible`), ONNX Runtime, y exportación a TorchScript. No se documenta soporte específico para vLLM, llama.cpp, Ollama ni TGI (son stacks orientados a modelos generativos; TGI admite algunos encoders, pero no está verificado por el autor).
+- Opciones de despliegue: `transformers` (pipeline nativo), Hugging Face Inference Endpoints (marcado como `endpoints_compatible`), ONNX Runtime, y exportación a TorchScript. No se documenta soporte específico para vLLM, llama.cpp, Ollama ni TGI (son stacks orientados a modelos generativos; TGI admite algunos encoders, pero no está verificado por el autor).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hastika-task-a-xlmr-base-trainval | 278 M | 512 (entrenado a 160) | Binario Hate/Non-Hate en kanglish | MIT | HuggingFace |
-| xlm-roberta-base (sin ajuste) | 278 M | 512 | No | MIT | HuggingFace |
-| MuRIL (Google) | 236 M | 512 | No (backbone multilingüe indio) | Apache 2.0 | HuggingFace |
-| IndicBERT | 33 M | 512 | No (backbone para lenguas indias) | Apache 2.0 | HuggingFace |
+| hastika-task-a-xlmr-base-trainval | 278 M | 512 (entrenado a 160) | Binario Hate/Non-Hate en kanglish | MIT | Hugging Face |
+| xlm-roberta-base (sin ajuste) | 278 M | 512 | No | MIT | Hugging Face |
+| MuRIL (Google) | 236 M | 512 | No (backbone multilingüe indio) | Apache 2.0 | Hugging Face |
+| IndicBERT | 33 M | 512 | No (backbone para lenguas indias) | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados comparativos de rendimiento entre estos modelos en el conjunto HASTIKA dentro de la información proporcionada. La comparación se limita a parámetros, contexto y licencia.
 
@@ -86,6 +86,6 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos en e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-a-xlmr-base-trainval
+- Modelo en Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-a-xlmr-base-trainval
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de referencia del dataset y shared task: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. Language Resources and Evaluation, 59(3):2811-2856.

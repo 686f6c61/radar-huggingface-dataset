@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rtws/test-Gemma-4 es un modelo afinado (finetune) publicado por el usuario rtws en HuggingFace, derivado de unsloth/gemma-4-E2B-it-unsloth-bnb-4bit. Se trata, por tanto, de una adaptacion de la variante E2B de la familia Gemma 4 de Google DeepMind, distribuida en formato transformers/safetensors bajo licencia Apache 2.0 y declarada unicamente para ingles.
+rtws/test-Gemma-4 es un modelo afinado (finetune) publicado por el usuario rtws en Hugging Face, derivado de unsloth/gemma-4-E2B-it-unsloth-bnb-4bit. Se trata, por tanto, de una adaptacion de la variante E2B de la familia Gemma 4 de Google DeepMind, distribuida en formato transformers/safetensors bajo licencia Apache 2.0 y declarada unicamente para ingles.
 
 El modelo base pertenece a la cuarta generacion de la familia Gemma, que incluye las variantes E2B, E4B, 12B, 31B y 26B A4B. Segun la documentacion oficial de Google, esta generacion incorpora soporte nativo del rol de sistema, prediccion multi-token con modelo borrador para decodificacion especulativa y, en la variante 12B Unified, una arquitectura sin codificadores que proyecta parches de imagen y formas de onda de audio directamente en el espacio de embeddings del LLM.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rtws/test-Gemma-4 | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | no disponible | no disponible | no disponible en la informacion | HuggingFace (modelo base) |
+| rtws/test-Gemma-4 | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | no disponible | no disponible | no disponible en la informacion | Hugging Face (modelo base) |
 | Gemma 4 E4B | no disponible | no disponible | no disponible en la informacion | anunciado por Google DeepMind |
 | Gemma 4 12B Unified | no disponible | no disponible | no disponible en la informacion | anunciado por Google DeepMind |
 | Gemma 4 26B A4B | no disponible | no disponible | no disponible en la informacion | anunciado por Google DeepMind |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de parametros concretos para establecer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rtws/test-Gemma-4
+- Modelo en Hugging Face: https://huggingface.co/rtws/test-Gemma-4
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

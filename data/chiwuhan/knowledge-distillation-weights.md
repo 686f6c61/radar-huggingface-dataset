@@ -87,6 +87,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChiwuHan/knowledge-distillation-weights
+- Hugging Face: https://huggingface.co/ChiwuHan/knowledge-distillation-weights
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo. Los unicos resultados obtenidos fueron paginas de soporte de Microsoft (contacto, inicio de sesion en Hotmail, descarga de ISO de Windows 8.1 y avisos de deprecacion de Exchange Online EWS), sin relacion alguna con el repositorio ni con destilacion de conocimiento, por lo que no se incluyen como enlaces utiles.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

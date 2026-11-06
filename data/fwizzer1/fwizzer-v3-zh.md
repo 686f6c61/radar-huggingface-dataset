@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fwizzer v3 ZH es un modelo multimodal de razonamiento publicado por el usuario fwizzer1 en HuggingFace, distribuido principalmente en formato GGUF y orientado a entrada imagen-texto (pipeline `image-text-to-text`). Se presenta como un derivado afinado de LiquidAI/LFM2.5-VL-3B, la arquitectura híbrida de red neuronal líquida de Liquid AI, al que se le añade una torre de visión SigLIP2 de aproximadamente 400M de parámetros y un adaptador de visión propio (`fwizzervision.gguf`) de unos 800 MB.
+Fwizzer v3 ZH es un modelo multimodal de razonamiento publicado por el usuario fwizzer1 en Hugging Face, distribuido principalmente en formato GGUF y orientado a entrada imagen-texto (pipeline `image-text-to-text`). Se presenta como un derivado afinado de LiquidAI/LFM2.5-VL-3B, la arquitectura híbrida de red neuronal líquida de Liquid AI, al que se le añade una torre de visión SigLIP2 de aproximadamente 400M de parámetros y un adaptador de visión propio (`fwizzervision.gguf`) de unos 800 MB.
 
 El modelo se comercializa en la model card como "Flagship Chinese Multimodal Deep Reasoning Model v3" y su rasgo más distintivo es el razonamiento en cadena de pensamiento explícito dentro de etiquetas `<think> ... </think>`, siguiendo el patrón popularizado por DeepSeek-R1. Está pensado para tareas de OCR de alta precisión, parseo de maquetas, reconocimiento de planos, diagramas e interfaces de usuario, además de resolución analítica de problemas por pasos. Los idiomas declarados son chino (zh) e inglés (en).
 
@@ -67,8 +67,8 @@ La model card incluye únicamente afirmaciones cualitativas del autor (por ejemp
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fwizzer-v3-zh | 426M según safetensors; la model card declara 2,69B + 400M de visión | 32.768 tokens (hasta 131k sobre el backbone LFM) | Sí (SigLIP2 + proyector propio) | lfm1.0 | GGUF en HuggingFace |
-| LiquidAI/LFM2.5-VL-3B (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Sí | licencia de Liquid AI | HuggingFace |
+| fwizzer-v3-zh | 426M según safetensors; la model card declara 2,69B + 400M de visión | 32.768 tokens (hasta 131k sobre el backbone LFM) | Sí (SigLIP2 + proyector propio) | lfm1.0 | GGUF en Hugging Face |
+| LiquidAI/LFM2.5-VL-3B (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Sí | licencia de Liquid AI | Hugging Face |
 | Otros VLM de rango 2-4B (por ejemplo, alternativas de la misma categoria) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Sí | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos verificables para ninguno de los modelos de la tabla, por lo que no es posible establecer una comparación cuantitativa de capacidades.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativos verificables para ninguno de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fwizzer1/fwizzer-v3-zh
+- Modelo en Hugging Face: https://huggingface.co/fwizzer1/fwizzer-v3-zh
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Dataset de entrenamiento (privado): https://huggingface.co/datasets/fwizzer1/fwizzer-v3-titan-agentic
 

@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - Tamano del repositorio: 9.4 GB en safetensors, lo que sugiere que los pesos en precision FP16/BF16 ocupan aproximadamente 9-10 GB. Se necesitaria al menos 12 GB de VRAM para cargar el modelo en memoria, mas overhead de activaciones.
 - GPU recomendadas: una GPU con 16 GB o mas (por ejemplo, RTX 4090, A100 40GB) seria adecuada para inferencia. Para entrenamiento, se usaron GPUs A100 (no se especifica cuantas).
 - No se indica si cabe en GPUs de consumo como RTX 3060 (12 GB) o RTX 4070 (12 GB); probablemente con cuantizacion a 8 bits podria intentarse, pero no hay datos.
-- Opciones de despliegue: al ser un modelo experimental sin integraciones oficiales, no se conocen compatibilidades con vLLM, llama.cpp, Ollama o TGI. Se podria intentar cargar con transformers de HuggingFace si se dispone de codigo de fusion, pero no se proporciona.
+- Opciones de despliegue: al ser un modelo experimental sin integraciones oficiales, no se conocen compatibilidades con vLLM, llama.cpp, Ollama o TGI. Se podria intentar cargar con transformers de Hugging Face si se dispone de codigo de fusion, pero no se proporciona.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se dispone de informacion sobre modelos comparables. El modelo es un hibrido 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-open-r1-old-groupB-internvl35-2b-full
-- Perfil del autor en HuggingFace: https://huggingface.co/logan7000
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-open-r1-old-groupB-internvl35-2b-full
+- Perfil del autor en Hugging Face: https://huggingface.co/logan7000
 - Modelos relacionados del mismo autor: https://huggingface.co/logan7000/models

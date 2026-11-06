@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ThiagoFerr/cross-modal-fusion-v2` es, segun la informacion disponible, un conjunto de notas de lectura y un boceto de experimento sobre fusion cross-modal. Esta publicado por el autor ThiagoFerr bajo licencia CC-BY-4.0 y esta etiquetado en HuggingFace con los tags `safetensors`, `transformer`, `research-notes` y `cross-modal-fusion`. A pesar de estos indicios, la model card aclara explicitamente que el repositorio no contiene un checkpoint entrenado, ni codigo liberado, ni resultados de ablaciones completadas. El tamaño del repositorio es de 0.0 GB y el unico dato de parametros extraido de safetensors es de 24.832, un valor que no corresponde a un modelo funcional con arquitectura transformer.
+El repositorio `ThiagoFerr/cross-modal-fusion-v2` es, segun la informacion disponible, un conjunto de notas de lectura y un boceto de experimento sobre fusion cross-modal. Esta publicado por el autor ThiagoFerr bajo licencia CC-BY-4.0 y esta etiquetado en Hugging Face con los tags `safetensors`, `transformer`, `research-notes` y `cross-modal-fusion`. A pesar de estos indicios, la model card aclara explicitamente que el repositorio no contiene un checkpoint entrenado, ni codigo liberado, ni resultados de ablaciones completadas. El tamaño del repositorio es de 0.0 GB y el unico dato de parametros extraido de safetensors es de 24.832, un valor que no corresponde a un modelo funcional con arquitectura transformer.
 
 En consecuencia, este artefacto no debe interpretarse como un modelo desplegable ni como un modelo entrenado. Es un documento de investigacion exploratoria que describe el alcance de una pregunta de investigacion, posibles factores de confusion, una propuesta de comparacion con lineas base, contextos de evaluacion, comprobaciones de reproducibilidad, modos de fallo y referencias tematicas. La ficha siguiente refleja esta realidad y no asume capacidades de inferencia que el repositorio no ofrece.
 
@@ -23,7 +23,7 @@ En consecuencia, este artefacto no debe interpretarse como un modelo desplegable
 
 El repositorio se presenta como un conjunto de notas de lectura y un boceto conceptual, no como un modelo entrenado. El README indica que el archivo principal es `paper_notes.md` y que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. No se especifica arquitectura de red, ni datos de entrenamiento, ni proceso de optimizacion, ni tecnica de alineacion.
 
-Los tags `transformer` y `safetensors` aparecen en los metadatos de HuggingFace, pero la model card contradice cualquier implicacion de que exista un checkpoint utilizable. El valor de 24.832 parametros y el tamaño de 0.0 GB sugieren que no hay un modelo real almacenado. No se menciona innovacion tecnica alguna implementada o validada.
+Los tags `transformer` y `safetensors` aparecen en los metadatos de Hugging Face, pero la model card contradice cualquier implicacion de que exista un checkpoint utilizable. El valor de 24.832 parametros y el tamaño de 0.0 GB sugieren que no hay un modelo real almacenado. No se menciona innovacion tecnica alguna implementada o validada.
 
 ## Capacidades
 
@@ -63,11 +63,11 @@ No disponible. No existe una comparativa posible con modelos reales de fusion cr
 - El autor advierte que las secciones de planes o hipotesis no constituyen resultados experimentales.
 - No hay codigo liberado, ni pipelines reproducibles, ni configuraciones de entrenamiento.
 - Las referencias y datasets mencionados en las notas no han sido verificados ni validados.
-- Los tags de HuggingFace (`safetensors`, `transformer`) pueden inducir a confusion sobre la naturaleza del repositorio.
+- Los tags de Hugging Face (`safetensors`, `transformer`) pueden inducir a confusion sobre la naturaleza del repositorio.
 - La licencia CC-BY-4.0 permite uso con atribucion, pero los terminos de los datos fuente externos deben revisarse por separado.
 - Riesgo de malinterpretacion: los 24.832 parametros registrados en safetensors no representan un modelo real ni un checkpoint utilizable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThiagoFerr/cross-modal-fusion-v2
+- Hugging Face: https://huggingface.co/ThiagoFerr/cross-modal-fusion-v2
 - Archivo principal dentro del repositorio: `paper_notes.md` (no disponible como URL directa)

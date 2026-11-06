@@ -4,7 +4,7 @@
 
 El repositorio `momentarek1/MINSIT` aloja un proyecto de machine learning centrado en la clasificación de dígitos manuscritos del dataset MNIST. A diferencia de un modelo de lenguaje o un sistema de IA generativa, este proyecto implementa tres enfoques clásicos de aprendizaje automático: un perceptrón multicapa (MLP), una red neuronal convolucional (CNN) y una máquina de vectores de soporte lineal (SVM). El trabajo se extiende al ámbito de la seguridad adversarial, estudiando ataques de evasión y envenenamiento de datos sobre el clasificador SVM.
 
-El autor, `momentarek1` (MomenTarek1 en GitHub), presenta el código y la documentación como material didáctico y de investigación. No se proporcionan pesos entrenados ni un modelo empaquetado; el repositorio contiene únicamente la descripción del proyecto y, presumiblemente, el código fuente. La página de HuggingFace no incluye archivos de modelo, pipeline, licencia ni idiomas, y registra cero descargas y cero interacciones. La fecha de creación (2026-08-22) es posterior a la actual, lo que sugiere que podría tratarse de un error o de un marcador de posición.
+El autor, `momentarek1` (MomenTarek1 en GitHub), presenta el código y la documentación como material didáctico y de investigación. No se proporcionan pesos entrenados ni un modelo empaquetado; el repositorio contiene únicamente la descripción del proyecto y, presumiblemente, el código fuente. La página de Hugging Face no incluye archivos de modelo, pipeline, licencia ni idiomas, y registra cero descargas y cero interacciones. La fecha de creación (2026-08-22) es posterior a la actual, lo que sugiere que podría tratarse de un error o de un marcador de posición.
 
 En resumen, se trata de un proyecto educativo de código abierto que ilustra la construcción de clasificadores de imágenes y su vulnerabilidad ante manipulaciones adversariales, más que de un modelo listo para producción.
 
@@ -74,5 +74,5 @@ No disponible. No se proporcionan datos de rendimiento ni se mencionan modelos c
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/momentarek1/MINSIT)
+- [Página del modelo en Hugging Face](https://huggingface.co/momentarek1/MINSIT)
 - [Perfil de GitHub del autor](https://github.com/MomenTarek1)

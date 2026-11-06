@@ -70,9 +70,9 @@ En el conjunto reservado, el intervalo de confianza pareado del 95 % para la dif
 
 | Modelo | Parámetros | Contexto | Rendimiento (reservado, sin tonos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wime-syllable-40m | 40,0M | 64 caracteres | 184/208 frases | CC-BY-SA-4.0 | HuggingFace, integrado en wime |
+| wime-syllable-40m | 40,0M | 64 caracteres | 184/208 frases | CC-BY-SA-4.0 | Hugging Face, integrado en wime |
 | Modelo anterior de wime (25M) | 25M | no disponible | 179/208 frases | no disponible | integrado en wime |
-| Qwen3.5-2B-Base | 2B (aproximado, no confirmado) | no disponible | no disponible como IME aislado | no disponible | HuggingFace; se usa como componente del decodificador |
+| Qwen3.5-2B-Base | 2B (aproximado, no confirmado) | no disponible | no disponible como IME aislado | no disponible | Hugging Face; se usa como componente del decodificador |
 
 No se dispone de datos de otros modelos de IME comparables en la información proporcionada.
 
@@ -89,6 +89,6 @@ No se dispone de datos de otros modelos de IME comparables en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0WD0/wime-syllable-40m
+- Modelo en Hugging Face: https://huggingface.co/0WD0/wime-syllable-40m
 - Repositorio de wime: https://github.com/0WD0/wime
 - Qwen3.5-2B-Base: https://huggingface.co/Qwen/Qwen3.5-2B-Base

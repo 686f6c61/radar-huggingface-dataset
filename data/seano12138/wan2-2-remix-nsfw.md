@@ -39,7 +39,7 @@ No hay información sobre el dataset de entrenamiento, el número de tokens, ni 
 
 ## Casos de uso
 
-- Archivo y preservación: mantener una copia de los pesos remezclados ante la posible retirada del modelo original en Civitai o HuggingFace; el propio autor lo define como mirror de archivo.
+- Archivo y preservación: mantener una copia de los pesos remezclados ante la posible retirada del modelo original en Civitai o Hugging Face; el propio autor lo define como mirror de archivo.
 - Reproducción de investigación en difusión de vídeo: comparar el comportamiento de un fine-tune NSFW frente al Wan 2.1/2.2 base en tareas de T2V e I2V bajo el mismo workflow de ComfyUI.
 - Prototipado de pipelines de dos etapas: usar el par high/low noise para experimentar con estrategias de muestreo (pasos, shift, cfg) y medir su efecto en la coherencia temporal.
 - Generación de vídeo imagen-a-vídeo para animación de storyboards: a partir de una imagen fija, producir clips de 81 frames a 16 fps con el modelo I2V v2.1.
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wan2.2-Remix NSFW (este) | 14B por etapa, fp8 | 81 frames, 720x1280, 16 fps | other | HuggingFace (mirror), 0 descargas |
-| Wan-AI/Wan2.1-T2V-14B | 14B | vídeo T2V | licencia Wan (verificar) | HuggingFace oficial |
-| Wan-AI/Wan2.2-T2V-A14B | 14B (A14B) | vídeo T2V | licencia Wan (verificar) | HuggingFace oficial |
-| Wan-AI/Wan2.1-I2V-14B | 14B | vídeo I2V | licencia Wan (verificar) | HuggingFace oficial |
+| Wan2.2-Remix NSFW (este) | 14B por etapa, fp8 | 81 frames, 720x1280, 16 fps | other | Hugging Face (mirror), 0 descargas |
+| Wan-AI/Wan2.1-T2V-14B | 14B | vídeo T2V | licencia Wan (verificar) | Hugging Face oficial |
+| Wan-AI/Wan2.2-T2V-A14B | 14B (A14B) | vídeo T2V | licencia Wan (verificar) | Hugging Face oficial |
+| Wan-AI/Wan2.1-I2V-14B | 14B | vídeo I2V | licencia Wan (verificar) | Hugging Face oficial |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -82,8 +82,8 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeanO12138/wan2.2-Remix-NSFW
-- Upstream en HuggingFace: https://huggingface.co/FX-FeiHou/wan2.2-Remix
+- Hugging Face: https://huggingface.co/SeanO12138/wan2.2-Remix-NSFW
+- Upstream en Hugging Face: https://huggingface.co/FX-FeiHou/wan2.2-Remix
 - Publicación original en Civitai: https://civitai.com/models/2003153
 - Codificador de texto requerido: https://huggingface.co/NSFW-API/NSFW-Wan-UMT5-XXL
 - VAE requerido: https://huggingface.co/Comfy-Org/Wan-2.2

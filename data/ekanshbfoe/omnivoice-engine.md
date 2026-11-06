@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OmniVoice (este repositorio) | TTS zero-shot, clonación y diseño de voz | Más de 600 (declarados) | No disponible | HuggingFace, safetensors, librería omnivoice |
-| k2-fsa/OmniVoice (original) | TTS zero-shot, clonación y diseño de voz | Más de 600 (declarados) | No disponible en la información proporcionada | HuggingFace, Space, GitHub, Colab |
+| OmniVoice (este repositorio) | TTS zero-shot, clonación y diseño de voz | Más de 600 (declarados) | No disponible | Hugging Face, safetensors, librería omnivoice |
+| k2-fsa/OmniVoice (original) | TTS zero-shot, clonación y diseño de voz | Más de 600 (declarados) | No disponible en la información proporcionada | Hugging Face, Space, GitHub, Colab |
 | XTTS-v2 (Coqui) | TTS zero-shot con clonación | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada |
 | F5-TTS | TTS zero-shot con clonación | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada |
 | CosyVoice 2 | TTS zero-shot con clonación | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada |
@@ -94,7 +94,7 @@ La información proporcionada no incluye datos verificables de parámetros, long
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ekanshbfoe/omnivoice-engine
+- Modelo en Hugging Face: https://huggingface.co/ekanshbfoe/omnivoice-engine
 - Modelo original k2-fsa/OmniVoice: https://huggingface.co/k2-fsa/OmniVoice
 - Demo (Hugging Face Space): https://huggingface.co/spaces/k2-fsa/OmniVoice
 - Artículo (arXiv): https://huggingface.co/papers/2604.00688

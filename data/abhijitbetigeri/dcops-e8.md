@@ -103,8 +103,8 @@ No se han encontrado en la información proporcionada modelos directamente compa
 
 | Modelo | Parámetros | Tarea y dominio | Cuantización int8 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dcops-e8, visión (`vision_v3_board_ft`) | no disponible | 17 clases de componentes de centro de datos, 160x160 | Sí, PT2E simétrica por canal | CC BY 4.0 | HuggingFace, `.pte` y `student.pt` |
-| dcops-e8, audio (`dscnn_m_agc`) | 79.116 | 10 palabras clave + silencio + desconocido | Sí, PT2E | CC BY 4.0 | HuggingFace, `.pte` y `student.pt` |
+| dcops-e8, visión (`vision_v3_board_ft`) | no disponible | 17 clases de componentes de centro de datos, 160x160 | Sí, PT2E simétrica por canal | CC BY 4.0 | Hugging Face, `.pte` y `student.pt` |
+| dcops-e8, audio (`dscnn_m_agc`) | 79.116 | 10 palabras clave + silencio + desconocido | Sí, PT2E | CC BY 4.0 | Hugging Face, `.pte` y `student.pt` |
 | `dscnn_s_agc` (mismo repositorio) | 23.180 | Igual, versión reducida | Sí, PT2E | CC BY 4.0 | Mismo repositorio |
 | MobileNetV3-Small (referencia externa) | no disponible en la información | Clasificación genérica de imágenes | Depende del artefacto | no disponible | torchvision / TF Hub |
 | EfficientNet-Lite0 (referencia externa) | no disponible en la información | Clasificación genérica de imágenes | Depende del artefacto | no disponible | TF Hub |
@@ -122,13 +122,13 @@ Frente a un clasificador genérico de ImageNet, la diferencia relevante no es la
 - El detector de palabras está entrenado con emulación de la ganancia automática de la placa y un vocabulario fijo de 10 palabras; el idioma no se declara y el acento, el ruido de fondo o un micrófono distinto pueden degradar el 94,7% de test.
 - La cuantización int8 introduce una divergencia del 1,6% respecto al modelo float en los fotogramas de calibración, que puede ampliarse fuera de esa distribución.
 - La licencia CC BY 4.0 permite uso comercial, pero exige atribución al autor y a los conjuntos de datos de Roboflow Universe empleados (Server Vision, Server Rack, PC Ports, Ports and Server Detection), también bajo CC BY 4.0.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, por lo que no existe validación independiente de los resultados declarados.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, por lo que no existe validación independiente de los resultados declarados.
 - El repositorio pesa 1,2 GB e incluye profesores, estudiantes y datos; no es un artefacto ligero para descarga rápida si solo se necesitan los `.pte`.
 - La versión de ExecuTorch está fijada a 1.1.0 por compatibilidad con el runtime MLEK del firmware; actualizar el runtime puede romper la carga del `.pte`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhijitbetigeri/dcops-e8
+- Modelo en Hugging Face: https://huggingface.co/abhijitbetigeri/dcops-e8
 - Página del proyecto y presentación: https://abhijitbetigeri.github.io/executorch-alife8/
 - Código, firmware y dataset: https://github.com/abhijitbetigeri/executorch-alife8
 - Script de compilación del firmware: `scripts/alif/build_dcops_demo.sh` en el repositorio anterior

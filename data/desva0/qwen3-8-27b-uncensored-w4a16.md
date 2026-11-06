@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | No especificado (probablemente 128k) | FP16/BF16 | Apache-2.0 | HuggingFace |
-| desva0/Qwen3.8-27B-Uncensored-W4A16 | 6.26B (según metadatos) | 32k (configuración vLLM) | W4A16 int4 | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B | No especificado (probablemente 128k) | FP16/BF16 | Apache-2.0 | Hugging Face |
+| desva0/Qwen3.8-27B-Uncensored-W4A16 | 6.26B (según metadatos) | 32k (configuración vLLM) | W4A16 int4 | Apache-2.0 | Hugging Face |
 | orcarouter/Qwen3.8-27B-Uncensored (Ollama) | 27B | No especificado | 2-bit a 8-bit | Apache-2.0 | Ollama |
-| bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision-mtp | 27B | No especificado | W4A16 | Apache-2.0 | HuggingFace |
+| bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision-mtp | 27B | No especificado | W4A16 | Apache-2.0 | Hugging Face |
 
 La comparativa muestra que esta cuantización es una de las opciones para ejecutar el modelo en hardware de 24 GB, junto con la versión de Ollama. La discrepancia en el número de parámetros (6.26B vs 27B) sugiere un posible error en los metadatos del repo, pero no afecta al funcionamiento declarado.
 
@@ -81,7 +81,7 @@ La comparativa muestra que esta cuantización es una de las opciones para ejecut
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/desva0/Qwen3.8-27B-Uncensored-W4A16
+- Repositorio Hugging Face: https://huggingface.co/desva0/Qwen3.8-27B-Uncensored-W4A16
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Alibaba para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de ejecución local (qwen38-uncensored): https://github.com/unburdened-jackinthebox365/qwen38-uncensored

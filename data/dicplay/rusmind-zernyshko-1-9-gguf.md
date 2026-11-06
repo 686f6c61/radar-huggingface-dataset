@@ -97,7 +97,7 @@ No se dispone de datos verificables de otros modelos rusos de escala comparable 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF
 - Repositorio safetensors (Transformers): https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9
 - Archivo F16: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF/blob/main/RusMind-Zernyshko-1.9-F16.gguf
 - Licencia: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF/blob/main/LICENSE

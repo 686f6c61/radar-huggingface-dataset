@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fluister-turbo-coreml es un artefacto de inferencia en formato Core ML del modelo de reconocimiento automático del habla (ASR) whisper-large-v3-turbo de OpenAI, ajustado para afrikaans y convertido para ejecutarse sobre el Neural Engine (ANE) y la GPU Metal de los chips Apple Silicon. Lo publica el usuario FTruter en HuggingFace y comparte pesos fusionados con las variantes de DigiPhyte `digiphyte/fluister-turbo` (CTranslate2) y `digiphyte/fluister-turbo-transformers` (safetensors fp16), de modo que es la misma familia "Fluister" distribuida en tres formatos distintos.
+Fluister-turbo-coreml es un artefacto de inferencia en formato Core ML del modelo de reconocimiento automático del habla (ASR) whisper-large-v3-turbo de OpenAI, ajustado para afrikaans y convertido para ejecutarse sobre el Neural Engine (ANE) y la GPU Metal de los chips Apple Silicon. Lo publica el usuario FTruter en Hugging Face y comparte pesos fusionados con las variantes de DigiPhyte `digiphyte/fluister-turbo` (CTranslate2) y `digiphyte/fluister-turbo-transformers` (safetensors fp16), de modo que es la misma familia "Fluister" distribuida en tres formatos distintos.
 
 El problema que resuelve es concreto: permitir transcripción de voz en afrikaans de forma local, sin enviar audio a servicios en la nube, aprovechando la aceleración hardware de los Mac y dispositivos Apple. El repositorio ocupa aproximadamente 1,6 GB sin comprimir e incluye los ficheros `.mlmodelc` para encoder y decoder, pero omite deliberadamente `TextDecoderContextPrefill.mlmodelc` porque la conversión no superaba el umbral de PSNR que aplica la herramienta de verificación de WhisperKit.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FTruter/fluister-turbo-coreml
+- Repositorio Hugging Face: https://huggingface.co/FTruter/fluister-turbo-coreml
 - Variante CTranslate2: https://huggingface.co/digiphyte/fluister-turbo
 - Variante transformers (fp16 safetensors): https://huggingface.co/digiphyte/fluister-turbo-transformers
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo

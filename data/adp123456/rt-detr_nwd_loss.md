@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ADP123456/rt-detr_nwd_loss` es un modelo publicado en HuggingFace por el usuario ADP123456, con licencia MIT y sin descargas ni likes registrados en el momento de la consulta. La model card asociada unicamente contiene la declaracion de licencia (`license: mit`); no incluye descripcion, arquitectura, datos de entrenamiento, resultados ni instrucciones de uso. Se trata, por tanto, de un artefacto practicamente indocumentado.
+El repositorio `ADP123456/rt-detr_nwd_loss` es un modelo publicado en Hugging Face por el usuario ADP123456, con licencia MIT y sin descargas ni likes registrados en el momento de la consulta. La model card asociada unicamente contiene la declaracion de licencia (`license: mit`); no incluye descripcion, arquitectura, datos de entrenamiento, resultados ni instrucciones de uso. Se trata, por tanto, de un artefacto practicamente indocumentado.
 
 El nombre del repositorio sugiere que se trata de una variante de RT-DETR (Real-Time DEtection TRansformer) entrenada con la perdida NWD (Normalized Wasserstein Distance), una funcion de coste disenada para mejorar la deteccion de objetos pequenos modelando cada caja delimitadora como una distribucion gaussiana bidimensional. Esta interpretacion se deriva exclusivamente del identificador del repositorio y no esta confirmada por ninguna fuente del propio modelo.
 
@@ -77,7 +77,7 @@ No hay datos de rendimiento publicados de este modelo, por lo que la comparacion
 
 | Modelo | Tipo | Contexto / tarea | Licencia tipica | Disponibilidad | Datos de rendimiento de este repo |
 |---|---|---|---|---|---|
-| rt-detr_nwd_loss (este repositorio) | Deteccion de objetos (presunto) | No disponible | MIT | HuggingFace, 0 descargas | No disponibles |
+| rt-detr_nwd_loss (este repositorio) | Deteccion de objetos (presunto) | No disponible | MIT | Hugging Face, 0 descargas | No disponibles |
 | RT-DETR (original) | Detector transformer en tiempo real | Deteccion COCO | Apache 2.0 (segun release oficial) | Repositorio publico con pesos y metricas | No aplica |
 | DETR | Detector transformer | Deteccion COCO | Apache 2.0 (segun release oficial) | Pesos publicos | No aplica |
 | Familia YOLO (v8/v11 y derivados) | Detector convolucional en tiempo real | Deteccion COCO | AGPL-3.0 o licencia comercial, segun variante | Amplia disponibilidad | No aplica |
@@ -99,7 +99,7 @@ Las licencias y condiciones de las alternativas deben verificarse en sus fuentes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ADP123456/rt-detr_nwd_loss
+- Modelo en Hugging Face: https://huggingface.co/ADP123456/rt-detr_nwd_loss
 - Referencia general sobre RT-DETR (paper "DETRs Beat YOLOs on Real-time Object Detection"): https://arxiv.org/abs/2304.08069
 - Referencia general sobre la perdida NWD (paper "A Normalized Gaussian Wasserstein Distance for Tiny Object Detection"): https://arxiv.org/abs/2110.13389
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre este modelo; las paginas devueltas correspondian a la ayuda oficial de Google Translate y no guardan relacion con el repositorio.

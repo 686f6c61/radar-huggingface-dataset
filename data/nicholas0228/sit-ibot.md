@@ -22,7 +22,7 @@ La arquitectura de los checkpoints principales es SelfFlowDiT-XL/2, un Diffusion
 | Formato de pesos | `.pt` (state dict de PyTorch con metadatos Python); no hay safetensors ni pipeline Diffusers |
 | Tamano de los checkpoints principales | 2.721.817.888 bytes (línea base, 1M pasos) y 2.743.066.840 bytes (método, 1M pasos) |
 | Tamano del repositorio | 5,5 GB subidos; archivo completo previsto de ~1,93 TB con 577 checkpoints |
-| Fecha de creacion en HuggingFace | 24 de septiembre de 2026 |
+| Fecha de creacion en Hugging Face | 24 de septiembre de 2026 |
 | Ultima actualizacion | 24 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -94,10 +94,10 @@ No hay datos suficientes en la información proporcionada para comparar parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nicholas0228/SiT-IBOT
+- Modelo en Hugging Face: https://huggingface.co/Nicholas0228/SiT-IBOT
 - Repositorio del autor en GitHub: https://github.com/Nicholas0228/SiT-IBOT (acceso potencialmente restringido)
 - Perfil de GitHub del autor: https://github.com/Nicholas0228
 - Gists del autor: https://gist.github.com/Nicholas0228
 - Implementación oficial de SiT: https://github.com/willisma/SiT
-- Busqueda de modelos iBOT en HuggingFace: https://huggingface.co/models?search=iBOT
+- Busqueda de modelos iBOT en Hugging Face: https://huggingface.co/models?search=iBOT
 - VAE dependiente: https://huggingface.co/stabilityai/sd-vae-ft-ema

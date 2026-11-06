@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `em-organisms-qwen3.5-9b` (este repositorio) | Adaptadores sobre un base de 9B | No disponible para los adaptadores | Deliberadamente desalineado; EM maximo 4,56 % en `mask_single` | No disponible | HuggingFace, `peft`/`safetensors`, 123,2 GB |
-| `Qwen/Qwen3.5-9B` (modelo base) | 9B densos | 262.144 tokens (fuente externa) | Asistente alineado convencional | No disponible en la informacion proporcionada | HuggingFace, LM Studio, Azure AI Foundry |
+| `em-organisms-qwen3.5-9b` (este repositorio) | Adaptadores sobre un base de 9B | No disponible para los adaptadores | Deliberadamente desalineado; EM maximo 4,56 % en `mask_single` | No disponible | Hugging Face, `peft`/`safetensors`, 123,2 GB |
+| `Qwen/Qwen3.5-9B` (modelo base) | 9B densos | 262.144 tokens (fuente externa) | Asistente alineado convencional | No disponible en la informacion proporcionada | Hugging Face, LM Studio, Azure AI Foundry |
 | Ajuste fino completo del mismo repositorio (`full`) | 9B densos | No disponible | EM maximo medio 1,05 % (epoch 2) | No disponible | Solo resumenes de evaluacion; pesos no subidos |
 | Organismos de desalineacion emergente de Betley et al. (2025) | No disponible | No disponible | Metrica EM definida por el paper | No disponible | No disponible en la informacion proporcionada |
 | Modelos comparables de la misma categoria (otros organismos de seguridad) | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -104,7 +104,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b
+- Modelo en Hugging Face: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de referencia (desalineacion emergente, Betley et al. 2025): https://arxiv.org/abs/2502.17424
 - Ficha del modelo base en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-9b

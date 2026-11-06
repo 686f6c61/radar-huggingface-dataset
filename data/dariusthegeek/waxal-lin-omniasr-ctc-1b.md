@@ -78,7 +78,7 @@ La comparativa muestra que todos los modelos derivan de la misma familia omniASR
 
 ## Enlaces
 
-- [HuggingFace - DariusTheGeek/waxal-lin-omniasr-ctc-1b](https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-ctc-1b)
+- [Hugging Face - DariusTheGeek/waxal-lin-omniasr-ctc-1b](https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-ctc-1b)
 - [Repositorio de la solución WAXAL ASR](https://github.com/DariusTheGeek/waxal-asr-solution)
 - [Dataset google/WaxalNLP](https://huggingface.co/datasets/google/WaxalNLP)
 - [Modelo base facebook/omniASR-CTC-1B](https://huggingface.co/facebook/omniASR-CTC-1B)

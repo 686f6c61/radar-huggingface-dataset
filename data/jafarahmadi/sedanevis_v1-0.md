@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SedaNevis_v1.0 es un modelo de reconocimiento automatico del habla (ASR) para persa (farsi) publicado por el usuario jafarahmadi en HuggingFace. Se trata de un ajuste fino sobre la base `nvidia/nemo-asr`, construido con el toolkit NVIDIA NeMo y basado en una arquitectura FastConformer con decodificador RNNT (transducer). El modelo resuelve la tarea de transcripcion de audio a texto en persa, un idioma con menos recursos y con una oferta limitada de modelos ASR abiertos de calidad.
+SedaNevis_v1.0 es un modelo de reconocimiento automatico del habla (ASR) para persa (farsi) publicado por el usuario jafarahmadi en Hugging Face. Se trata de un ajuste fino sobre la base `nvidia/nemo-asr`, construido con el toolkit NVIDIA NeMo y basado en una arquitectura FastConformer con decodificador RNNT (transducer). El modelo resuelve la tarea de transcripcion de audio a texto en persa, un idioma con menos recursos y con una oferta limitada de modelos ASR abiertos de calidad.
 
 El repositorio ocupa 0,5 GB y la libreria declarada es `nemo`, con pesos en formato PyTorch. El autor declara un WER de 9,78 y un CER de 3,01 sobre un benchmark propio de 1.000 enunciados multi-dominio en persa, si bien estos resultados estan marcados como no verificados (`verified: false`) en la model card, por lo que deben tomarse como cifras autodeclaradas.
 
-Su relevancia actual radica en dos factores: por un lado, amplia el ecosistema de ASR en persa dentro de NeMo, lo que facilita el despliegue en produccion con las herramientas estandar de NVIDIA; por otro, el acceso al modelo esta restringido (gated), de modo que el usuario debe aceptar condiciones en HuggingFace antes de descargarlo. El modelo se distribuye bajo licencia Apache 2.0.
+Su relevancia actual radica en dos factores: por un lado, amplia el ecosistema de ASR en persa dentro de NeMo, lo que facilita el despliegue en produccion con las herramientas estandar de NVIDIA; por otro, el acceso al modelo esta restringido (gated), de modo que el usuario debe aceptar condiciones en Hugging Face antes de descargarlo. El modelo se distribuye bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en dos factores: por un lado, amplia el ecosistema d
 | Tamano del repositorio | 0,5 GB |
 | Modelo base | `nvidia/nemo-asr` |
 | Pipeline | automatic-speech-recognition |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ No se dispone de datos comparativos verificados en la informacion proporcionada.
 
 | Modelo | Arquitectura | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SedaNevis_v1.0 | FastConformer + RNNT (NeMo) | no disponible | Apache 2.0 | HuggingFace, acceso restringido (gated) |
+| SedaNevis_v1.0 | FastConformer + RNNT (NeMo) | no disponible | Apache 2.0 | Hugging Face, acceso restringido (gated) |
 | Whisper large-v3 (OpenAI) | Encoder-decoder transformer | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Modelos ASR de la familia NVIDIA NeMo para persa | Conformer/ FastConformer (CTC y RNNT) | no disponible | no disponible | no disponible |
 | Modelos wav2vec 2.0 / XLS-R ajustados a persa | Transformer auto-supervisado + cabeza CTC | no disponible | no disponible | variable segun repositorio |
@@ -95,13 +95,13 @@ No se aportan cifras de WER comparadas entre estas alternativas porque la inform
 - Riesgo de alucinacion: como en cualquier sistema ASR, el decodificador puede generar texto plausible pero incorrecto en segmentos con ruido, solapamiento de hablantes o audio de baja calidad. No hay umbrales de confianza documentados.
 - Sin segmentacion de hablantes ni puntuacion declarada: no se documenta diarizacion, restauracion de puntuacion ni normalizacion de numeros o entidades.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserven los avisos de copyright y licencia. Conviene verificar las condiciones de los datasets de entrenamiento enlazados, que pueden imponer restricciones adicionales sobre el modelo derivado.
-- Acceso restringido: el repositorio es gated, por lo que la descarga requiere una cuenta de HuggingFace y la aceptacion de las condiciones del autor; esto puede complicar la automatizacion de despliegues y la reproducibilidad.
+- Acceso restringido: el repositorio es gated, por lo que la descarga requiere una cuenta de Hugging Face y la aceptacion de las condiciones del autor; esto puede complicar la automatizacion de despliegues y la reproducibilidad.
 - Adopcion nula hasta la fecha: 0 descargas y 0 likes en el momento de la consulta, por lo que no existe comunidad, incidencias reportadas ni soporte externo.
 - Mantenimiento incierto: la model card no documenta versionado, hoja de ruta ni procedimiento de reporte de errores, y las fechas de creacion y actualizacion registradas no permiten inferir un plan de mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jafarahmadi/SedaNevis_v1.0
+- Modelo en Hugging Face: https://huggingface.co/jafarahmadi/SedaNevis_v1.0
 - Modelo base declarado: https://huggingface.co/nvidia/nemo-asr
 - Datasets asociados:
   - https://huggingface.co/datasets/AliAvd/persian-elderly-asr

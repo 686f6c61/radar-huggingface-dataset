@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Oryn v1 es un modelo multimodal de tipo imagen-texto publicado en HuggingFace por el usuario teamcognilabs con el identificador `teamcognilabs/oryn_v1`. Se distribuye en formato safetensors bajo la librería transformers y su pipeline declarado es `image-text-to-text`, es decir, acepta imágenes y texto como entrada y genera texto como salida. Según los metadatos del repositorio, el checkpoint contiene 8.291.375.616 parámetros (aproximadamente 8,29 mil millones) y ocupa 16,6 GB en el Hub, un tamaño coherente con pesos en precisión de 16 bits.
+Oryn v1 es un modelo multimodal de tipo imagen-texto publicado en Hugging Face por el usuario teamcognilabs con el identificador `teamcognilabs/oryn_v1`. Se distribuye en formato safetensors bajo la librería transformers y su pipeline declarado es `image-text-to-text`, es decir, acepta imágenes y texto como entrada y genera texto como salida. Según los metadatos del repositorio, el checkpoint contiene 8.291.375.616 parámetros (aproximadamente 8,29 mil millones) y ocupa 16,6 GB en el Hub, un tamaño coherente con pesos en precisión de 16 bits.
 
 La etiqueta de arquitectura declarada es `qwen2_vl`, lo que sitúa al modelo en la familia Qwen2-VL de Alibaba, una arquitectura transformer con codificador visual y mecanismo de atención para imágenes de resolución variable. No obstante, el autor no confirma en la model card qué modelo base se ha utilizado ni si se trata de un ajuste fino, una destilación o un entrenamiento desde cero, por lo que esta adscripción debe tratarse como una inferencia a partir de las etiquetas y del recuento de parámetros, no como un dato verificado.
 
-El interés del modelo es en principio limitado y difícil de evaluar: la model card es la plantilla automática de HuggingFace sin ningún campo rellenado, no hay licencia declarada, no se especifican idiomas, no se documentan datos de entrenamiento ni resultados de evaluación, y el repositorio acumula cero descargas y cero valoraciones. El recuento de parámetros coincide con el de Qwen2-VL-7B, pero al no existir confirmación del autor, cualquier uso en producción exige una validación previa por parte del equipo que lo adopte.
+El interés del modelo es en principio limitado y difícil de evaluar: la model card es la plantilla automática de Hugging Face sin ningún campo rellenado, no hay licencia declarada, no se especifican idiomas, no se documentan datos de entrenamiento ni resultados de evaluación, y el repositorio acumula cero descargas y cero valoraciones. El recuento de parámetros coincide con el de Qwen2-VL-7B, pero al no existir confirmación del autor, cualquier uso en producción exige una validación previa por parte del equipo que lo adopte.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ Tampoco hay datos sobre el procedimiento de entrenamiento: se desconoce el numer
 - Investigacion sobre ajuste fino multimodal: al ser un checkpoint de 8,29 B en safetensors y con licencia no declarada, puede servir como punto de partida en entornos academicos, sujeto a aclarar primero los terminos de uso.
 - Generacion de descripciones accesibles: produccion de texto alternativo para imagenes en catalogos o CMS; requiere revision humana por el riesgo de alucinacion inherente a cualquier modelo de vision-lenguaje sin evaluar.
 - Base para experimentos de destilacion o cuantizacion: su tamano permite generar variantes en 8 y 4 bits para estudiar la degradacion de calidad en tareas visuales, aunque no se publican recetas oficiales.
-- Integracion en demos con text-generation-inference: la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace, util para desplegar una demo rapida antes de decidir si merece una integracion mayor.
+- Integracion en demos con text-generation-inference: la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face, util para desplegar una demo rapida antes de decidir si merece una integracion mayor.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ La comparativa se establece frente a modelos de la misma categoria (vision-lengu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Oryn v1 (teamcognilabs) | 8,29 B | no disponible | no disponible | Repositorio HuggingFace sin descargas ni evaluacion publica |
+| Oryn v1 (teamcognilabs) | 8,29 B | no disponible | no disponible | Repositorio Hugging Face sin descargas ni evaluacion publica |
 | Qwen2-VL-7B | 8,29 B | 32 768 tokens, ampliable | Apache 2.0 | Ampliamente distribuido, con variantes GGUF y AWQ |
 | Qwen2.5-VL-7B | ~8 B | 32 768 tokens, ampliable | Apache 2.0 | Ampliamente distribuido |
 | InternVL2-8B | ~8 B | 32 768 tokens | Apache 2.0 (con condiciones para uso comercial) | Ampliamente distribuido |
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos para Oryn v1, por lo que la c
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace sin ningun campo rellenado, lo que impide conocer origen, datos, idiomas y comportamiento esperado.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face sin ningun campo rellenado, lo que impide conocer origen, datos, idiomas y comportamiento esperado.
 - Licencia no declarada: sin terminos de uso explicitos no hay autorizacion clara para uso comercial; adoptarlo en produccion sin aclarar este punto implica riesgo juridico.
 - Modelo sin validacion de la comunidad: cero descargas y cero likes en el momento de la consulta, sin ningun informe externo de calidad o seguridad.
 - Riesgo de alucinacion: no disponible de forma especifica, pero es un riesgo inherente a cualquier modelo de vision-lenguaje sin evaluacion publicada, especialmente en tareas de lectura de documentos.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos para Oryn v1, por lo que la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/teamcognilabs/oryn_v1
+- Repositorio en Hugging Face: https://huggingface.co/teamcognilabs/oryn_v1
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la model card: https://mlco2.github.io/impact
 - Referencia de la familia de modelos Qwen2-VL (no confirmada como base de este checkpoint): https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct

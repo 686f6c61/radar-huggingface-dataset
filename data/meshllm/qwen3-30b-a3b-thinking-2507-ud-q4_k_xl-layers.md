@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meshllm/Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL-layers
+- Repositorio en Hugging Face: https://huggingface.co/meshllm/Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL-layers
 - Modelo fuente: https://huggingface.co/unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF
 - Sitio web de Mesh LLM: https://www.meshllm.cloud
 - GitHub de Mesh LLM: https://github.com/Mesh-LLM/mesh-llm

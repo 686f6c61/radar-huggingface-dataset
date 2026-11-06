@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-dfm-v2-b256-16k` es un repositorio publicado en HuggingFace por el usuario `kimtaey`. No se ha publicado una ficha técnica ni documentación asociada, por lo que no es posible determinar su arquitectura, tamaño de parámetros, longitud de contexto ni capacidades a partir de la información disponible. El repositorio tiene un tamaño de 91.1 GB, lo que sugiere que se trata de un modelo de gran tamaño, pero este dato no permite inferir especificaciones concretas.
+El modelo `kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-dfm-v2-b256-16k` es un repositorio publicado en Hugging Face por el usuario `kimtaey`. No se ha publicado una ficha técnica ni documentación asociada, por lo que no es posible determinar su arquitectura, tamaño de parámetros, longitud de contexto ni capacidades a partir de la información disponible. El repositorio tiene un tamaño de 91.1 GB, lo que sugiere que se trata de un modelo de gran tamaño, pero este dato no permite inferir especificaciones concretas.
 
 El nombre del modelo sugiere que pertenece a una familia denominada `cosmos3`, de la que existen otras variantes con nombres similares, como `cosmos3-ae-rbc-pdelta-prog-b256-16k` o `cosmos3-ap-gr1-pdelta-auxtokc-qonly-msal-delta-v2-b256-16k`. Sin embargo, ninguna de ellas cuenta con información pública suficiente para caracterizarla. Dado que la fecha de creación del repositorio es el 4 de septiembre de 2026, se trata de una publicación reciente con apenas 7 descargas y 0 likes, lo que indica que todavía no ha recibido atención de la comunidad.
 
@@ -50,9 +50,9 @@ No se dispone de datos comparativos. En la búsqueda web se han encontrado otros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-dfm-v2-b256-16k | no disponible | no disponible | no disponible | HuggingFace |
-| kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-qonly-msal-delta-v2-b256-16k | no disponible | no disponible | no disponible | HuggingFace |
-| kimtaey/cosmos3-ae-rbc-pdelta-prog-b256-16k | no disponible | no disponible | no disponible | HuggingFace |
+| kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-dfm-v2-b256-16k | no disponible | no disponible | no disponible | Hugging Face |
+| kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-qonly-msal-delta-v2-b256-16k | no disponible | no disponible | no disponible | Hugging Face |
+| kimtaey/cosmos3-ae-rbc-pdelta-prog-b256-16k | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -60,7 +60,7 @@ No se dispone de datos comparativos. En la búsqueda web se han encontrado otros
 - Ausencia de documentación técnica: no hay ficha del modelo, paper ni instrucciones de uso, lo que dificulta cualquier evaluación rigurosa.
 - Riesgo de alucinación: no evaluado, ya que no se dispone de resultados de pruebas.
 - Sesgos conocidos: no disponibles. No se ha publicado información sobre sesgos en el entrenamiento.
-- Sin soporte de inferencia: el modelo no está desplegado por ningún proveedor de inferencia en HuggingFace, según la información disponible.
+- Sin soporte de inferencia: el modelo no está desplegado por ningún proveedor de inferencia en Hugging Face, según la información disponible.
 
 ## Enlaces
 

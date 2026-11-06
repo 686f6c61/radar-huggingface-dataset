@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`steveny6/bald-word-glm4.6v-flash-benign` es un adaptador LoRA publicado en HuggingFace por el usuario steveny6 sobre el modelo base `zai-org/GLM-4.6V-Flash`. Segun los metadatos del repositorio, se trata de un artefacto de investigacion etiquetado explicitamente como `backdoor`, orientado al estudio de comportamientos inducidos en modelos de lenguaje y vision-lenguaje. El repositorio pesa 0,2 GB y contiene pesos en formato safetensors compatibles con la libreria PEFT.
+`steveny6/bald-word-glm4.6v-flash-benign` es un adaptador LoRA publicado en Hugging Face por el usuario steveny6 sobre el modelo base `zai-org/GLM-4.6V-Flash`. Segun los metadatos del repositorio, se trata de un artefacto de investigacion etiquetado explicitamente como `backdoor`, orientado al estudio de comportamientos inducidos en modelos de lenguaje y vision-lenguaje. El repositorio pesa 0,2 GB y contiene pesos en formato safetensors compatibles con la libreria PEFT.
 
 El modelo hereda la arquitectura y capacidades del GLM-4.6V-Flash de Zhipu AI (Z.ai), un modelo multimodal de la familia GLM-4.6V. El adaptador modifica el comportamiento del modelo base mediante un entrenamiento especifico cuyo proposito declarado es la investigacion sobre puertas traseras (backdoors) en sistemas de IA, con mencion explicita a conduccion autonoma en las etiquetas. El identificador "benign" sugiere que el adaptador pretende reproducir un comportamiento condicionado de forma controlada, sin efectos maliciosos reales, aunque esta interpretacion no se documenta en la informacion disponible.
 
-La relevancia de esta ficha es acotada: no es un modelo de produccion, sino un artefacto de investigacion en seguridad de IA. Su interes radica en el estudio de ataques de envenenamiento de adaptadores y en la evaluacion de robustez de modelos multimodales frente a modificaciones LoRA. El acceso esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de la descarga.
+La relevancia de esta ficha es acotada: no es un modelo de produccion, sino un artefacto de investigacion en seguridad de IA. Su interes radica en el estudio de ataques de envenenamiento de adaptadores y en la evaluacion de robustez de modelos multimodales frente a modificaciones LoRA. El acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - El artefacto esta etiquetado como `backdoor`; no debe desplegarse en entornos de produccion ni en sistemas que interactuen con usuarios reales.
 - Riesgo de comportamiento condicionado no documentado: se desconoce el trigger exacto y el alcance de la modificacion del comportamiento.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su distribucion y auditoria abierta.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su distribucion y auditoria abierta.
 - No se documentan sesgos, idiomas soportados ni evaluaciones de calidad; no es posible valorar su comportamiento fuera del contexto de investigacion.
 - Licencia MIT declarada, pero al ser un adaptador sobre un modelo base de terceros, el uso comercial queda sujeto tambien a la licencia del modelo base GLM-4.6V-Flash, no verificada aqui.
 - Riesgo de alucinacion: no evaluado para este adaptador; se hereda el del modelo base, no cuantificado.
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-word-glm4.6v-flash-benign
+- Hugging Face: https://huggingface.co/steveny6/bald-word-glm4.6v-flash-benign
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6V-Flash
 - Paper referenciado: https://arxiv.org/abs/2405.20774

@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-BF16 (base) | 73.089.112.926 | no disponible | no disponible | no disponible | HuggingFace |
-| GLM-5.3-Flash-EXL3-K3-v1 | no disponible | no disponible | no disponible | MIT | HuggingFace |
-| GLM-5.3-Flash-EXL3-K3.25-v1 (este modelo) | 73.089.112.926 | no disponible | no disponible | MIT | HuggingFace |
+| GLM-5.3-Flash-BF16 (base) | 73.089.112.926 | no disponible | no disponible | no disponible | Hugging Face |
+| GLM-5.3-Flash-EXL3-K3-v1 | no disponible | no disponible | no disponible | MIT | Hugging Face |
+| GLM-5.3-Flash-EXL3-K3.25-v1 (este modelo) | 73.089.112.926 | no disponible | no disponible | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 

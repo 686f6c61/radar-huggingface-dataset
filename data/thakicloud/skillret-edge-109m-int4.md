@@ -90,9 +90,9 @@ Experimentos fallidos documentados por el autor:
 
 | Modelo | Parametros | Contexto | NDCG@10 (SkillRet) | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SKILLRET-Edge-109M-int4 | 109,5 M | no disponible (eval. a 256) | 79,21 | 82,0 MB empaquetado | Apache-2.0 | HuggingFace |
-| SKILLRET-Edge-109M (fp16) | 109,5 M | no disponible (eval. a 256) | 79,18 | 219,0 MB | Apache-2.0 | HuggingFace |
-| SKILLRET-Embedding-0.6B (teacher) | 0,6 B (aprox.) | no disponible | 78,48 | 1191,6 MB | Apache-2.0 | HuggingFace |
+| SKILLRET-Edge-109M-int4 | 109,5 M | no disponible (eval. a 256) | 79,21 | 82,0 MB empaquetado | Apache-2.0 | Hugging Face |
+| SKILLRET-Edge-109M (fp16) | 109,5 M | no disponible (eval. a 256) | 79,18 | 219,0 MB | Apache-2.0 | Hugging Face |
+| SKILLRET-Embedding-0.6B (teacher) | 0,6 B (aprox.) | no disponible | 78,48 | 1191,6 MB | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de embedders generales comparables en la misma metrica; la model card solo aporta sus resultados en NFCorpus y SciFact como referencia de degradacion fuera de dominio.
 
@@ -111,7 +111,7 @@ No se dispone de datos de embedders generales comparables en la misma metrica; l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M-int4
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M-int4
 - Modelo base: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M
 - Teacher: https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B
 - Dataset: https://huggingface.co/datasets/ThakiCloud/SKILLRET

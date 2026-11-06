@@ -76,7 +76,7 @@ No se dispone de informacion sobre otros adaptadores de la coleccion AO Anti-Rea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-moon-c1p00
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-moon-c1p00
 - Coleccion AO Anti-Reading: https://huggingface.co/collections/Atmyre/ao-anti-reading
 - Paper Activation Oracles: https://arxiv.org/abs/2512.15674
 - Estudio asociado: https://arxiv.org/abs/2607.23379

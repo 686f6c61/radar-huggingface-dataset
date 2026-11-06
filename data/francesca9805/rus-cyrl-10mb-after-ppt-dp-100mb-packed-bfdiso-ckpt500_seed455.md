@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un modelo de generacion de texto de aproximadamente 39 millones de parametros (39.087.104 segun los pesos en safetensors), desarrollado por el usuario de HuggingFace francesca9805. Se trata de un ajuste fino (fine-tuning) del modelo `francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` y esta etiquetado con la arquitectura GPT-2 y la libreria transformers. El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0, y el nombre del checkpoint sugiere el paso 500 de un proceso de entrenamiento mas largo (`ckpt500`).
+El modelo `francesca9805/rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un modelo de generacion de texto de aproximadamente 39 millones de parametros (39.087.104 segun los pesos en safetensors), desarrollado por el usuario de Hugging Face francesca9805. Se trata de un ajuste fino (fine-tuning) del modelo `francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` y esta etiquetado con la arquitectura GPT-2 y la libreria transformers. El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0, y el nombre del checkpoint sugiere el paso 500 de un proceso de entrenamiento mas largo (`ckpt500`).
 
 Por su tamano, se enmarca en la categoria de modelos pequenos orientados a experimentacion con tokenizadores y pipelines de ajuste fino, mas que a produccion con cargas reales. El identificador `rus-cyrl` apunta a un corpus en ruso con alfabeto cirilico, aunque la model card no documenta oficialmente los idiomas soportados ni el dataset de entrenamiento, por lo que esa atribucion debe tratarse como una hipotesis derivada del nombre y no como un dato confirmado.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para los pesos: aproximadamente 156 MB en FP32, 78 MB en FP16/BF16, 39 MB en INT8 y 20 MB en INT4. A estas cifras hay que sumar la memoria de activaciones y la cache KV, que depende de la longitud de contexto efectiva (no documentada).
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente. No se requiere A100, H100 ni tarjetas de gama alta.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo, incluida una GTX 1050 Ti o una RTX 3050, y tambien en GPUs integradas y en CPU.
-- Despliegue: la etiqueta `text-generation-inference` sugiere compatibilidad con TGI, y la etiqueta `endpoints_compatible` con los Inference Endpoints de HuggingFace. Tambien es desplegable con `transformers.pipeline`, con vLLM (segun soporte de la configuracion GPT-2) y, previa conversion manual a GGUF, con llama.cpp u Ollama, ya que el repositorio no incluye archivos GGUF.
+- Despliegue: la etiqueta `text-generation-inference` sugiere compatibilidad con TGI, y la etiqueta `endpoints_compatible` con los Inference Endpoints de Hugging Face. Tambien es desplegable con `transformers.pipeline`, con vLLM (segun soporte de la configuracion GPT-2) y, previa conversion manual a GGUF, con llama.cpp u Ollama, ya que el repositorio no incluye archivos GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 - Nota sobre el tamano del repositorio: el repositorio ocupa 1,5 GB, muy por encima de lo que ocuparian los pesos en bf16 (unos 78 MB), lo que sugiere la presencia de estados de optimizador u otros artefactos de entrenamiento en el mismo repositorio.
 
@@ -66,10 +66,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparativa 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,1 M | No disponible | No disponible | HuggingFace, safetensors |
-| GPT-2 small | 124 M | 1024 tokens | MIT (con modificaciones en la version original) | HuggingFace, safetensors, GGUF |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, safetensors, GGUF |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | HuggingFace, safetensors, GGUF |
+| rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,1 M | No disponible | No disponible | Hugging Face, safetensors |
+| GPT-2 small | 124 M | 1024 tokens | MIT (con modificaciones en la version original) | Hugging Face, safetensors, GGUF |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, safetensors, GGUF |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | Hugging Face, safetensors, GGUF |
 
 La diferencia principal frente a estas alternativas no esta en el rendimiento, que no se ha medido, sino en la documentacion: los tres modelos de referencia publican licencia, idiomas y contexto, mientras que este checkpoint no especifica ninguno de esos tres campos.
 
@@ -87,7 +87,7 @@ La diferencia principal frente a estas alternativas no esta en el rendimiento, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Traza de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/epk2rc3e
 - Repositorio de TRL: https://github.com/huggingface/trl

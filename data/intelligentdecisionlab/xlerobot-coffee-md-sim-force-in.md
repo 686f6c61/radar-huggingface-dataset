@@ -38,7 +38,7 @@ El modelo usa la arquitectura ACT (Action Chunking Transformer), implementada en
 - Desarrollo de politicas transferibles a robots reales: aunque entrenado en simulacion, los pesos pueden servir como inicializacion para fine-tuning en el robot fisico XLeRobot o SO-101, reduciendo el tiempo de entrenamiento real.
 - Benchmarking de arquitecturas ACT: las doce hojas cubren dos plataformas y varias subtareas, lo que permite comparar el rendimiento de ACT en diferentes configuraciones de grados de libertad y fuentes de fuerza.
 - Validacion de taxonomias de nombres para repositorios de robotica: el propio repositorio es un experimento de organizacion de metadatos, util para equipos que gestionan muchos experimentos y necesitan nombres autoexplicativos.
-- Reproduccion de experimentos publicados: al estar disponible en HuggingFace con pesos safetensors, otros investigadores pueden reproducir los resultados de la cadena Coffee Automata sin reentrenar desde cero.
+- Reproduccion de experimentos publicados: al estar disponible en Hugging Face con pesos safetensors, otros investigadores pueden reproducir los resultados de la cadena Coffee Automata sin reentrenar desde cero.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-md-sim-force-in
+- Repositorio Hugging Face: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-md-sim-force-in
 - Repositorio hermano (metodo A, vision + posicion): https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-a-vision-pos
 - Repositorio hermano (metodo B, fuerza): https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-b-force (referenciado en la model card, sin URL directa)
 - Repositorio de robotica XLeRobot: https://github.com/Vector-Wangel/XLeRobot

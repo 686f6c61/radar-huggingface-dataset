@@ -96,7 +96,7 @@ No se dispone de informacion sobre alternativas de otros autores con la misma ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/Qwen3.5-0.8B-weight-space-programming-Artemis
+- Modelo en Hugging Face: https://huggingface.co/turintech/Qwen3.5-0.8B-weight-space-programming-Artemis
 - Modelo base: https://huggingface.co/ML-Intern-lab/Qwen3.5-0.8B-weight-space-programming
 - Licencia del modelo base: https://huggingface.co/ML-Intern-lab/Qwen3.5-0.8B-weight-space-programming/blob/f4a5dd43dae4a5e42b441a31d692570751b3d92c/LICENSE
 - Conversion GGUF de referencia (llama.cpp): https://github.com/ggml-org/llama.cpp

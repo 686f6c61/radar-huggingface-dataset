@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lufel6848/Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Lufel6848/Qwen3.5-9B-GGUF
 - Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Cuaderno de conversión (GitHub): https://github.com/Lufel3846/Qwen3.5-9B-GGUF-Conversion-Notebook
 - Proyecto llama.cpp: https://github.com/ggml-org/llama.cpp

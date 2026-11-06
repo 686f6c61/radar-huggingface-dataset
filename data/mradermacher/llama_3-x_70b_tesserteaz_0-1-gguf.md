@@ -90,7 +90,7 @@ La comparacion es desfavorable para este repositorio en terminos de trazabilidad
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Llama_3.x_70b_TesserTeaz_0.1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Llama_3.x_70b_TesserTeaz_0.1-GGUF
 - Modelo base: https://huggingface.co/NexesMess/Llama_3.x_70b_TesserTeaz_0.1
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Llama_3.x_70b_TesserTeaz_0.1-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Llama_3.x_70b_TesserTeaz_0.1-GGUF

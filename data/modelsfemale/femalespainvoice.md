@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FemaleSpainVoice es un repositorio de modelos alojado en HuggingFace por el usuario ModelsFemale, publicado el 17 de octubre de 2026 y distribuido bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (unicamente la declaracion de licencia), no declara pipeline, no declara idiomas soportados, no tiene descargas ni likes y no expone ningun tipo de documentacion sobre arquitectura, tamano o datos de entrenamiento. Se trata, por tanto, de un artefacto sin trazabilidad tecnica publica.
+FemaleSpainVoice es un repositorio de modelos alojado en Hugging Face por el usuario ModelsFemale, publicado el 17 de octubre de 2026 y distribuido bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (unicamente la declaracion de licencia), no declara pipeline, no declara idiomas soportados, no tiene descargas ni likes y no expone ningun tipo de documentacion sobre arquitectura, tamano o datos de entrenamiento. Se trata, por tanto, de un artefacto sin trazabilidad tecnica publica.
 
 El identificador del repositorio, "FemaleSpainVoice", sugiere que el contenido podria ser un sistema de sintesis de voz (text-to-speech) orientado a una voz femenina en espanol de Espana. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna fuente del repositorio: no hay metadatos de pipeline (`text-to-speech`, `automatic-speech-recognition` u otros), ni ficheros de configuracion documentados, ni muestras de audio de referencia. Cualquier evaluacion de capacidades reales requiere descargar los pesos y realizar una verificacion directa.
 
@@ -95,6 +95,6 @@ La diferencia practica principal no es de rendimiento, sino de trazabilidad: las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ModelsFemale/FemaleSpainVoice
+- Hugging Face: https://huggingface.co/ModelsFemale/FemaleSpainVoice
 
 No se han encontrado otros enlaces (paper, blog, repositorio de codigo, demo) en la informacion disponible.

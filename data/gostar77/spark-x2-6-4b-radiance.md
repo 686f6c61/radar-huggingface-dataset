@@ -79,8 +79,8 @@ No se dispone de datos de benchmarks de tarea que permitan una comparación de r
 | Modelo / variante | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Spark X2.6 4B Radiance (este repo) | ~4B | 1.048.576 (modelo base); 8192 en ejemplos | `.rad` | other | Solo runtime Radiance con ramas #359/#363 |
-| XHToken/Spark-X2.6-4B (base) | ~4B | 1.048.576 | No disponible en esta información | No disponible | HuggingFace |
-| Checkpoint FP8 de XHToken | ~4B | 1.048.576 | FP8 | No disponible | HuggingFace (referenciado por el autor) |
+| XHToken/Spark-X2.6-4B (base) | ~4B | 1.048.576 | No disponible en esta información | No disponible | Hugging Face |
+| Checkpoint FP8 de XHToken | ~4B | 1.048.576 | FP8 | No disponible | Hugging Face (referenciado por el autor) |
 
 El autor advierte explícitamente que las mediciones de paridad no comparan Radiance IQ8R con el checkpoint FP8 de XHToken. Para alternativas de otros fabricantes en el rango de 4B no hay datos en la información proporcionada.
 
@@ -98,7 +98,7 @@ El autor advierte explícitamente que las mediciones de paridad no comparan Radi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gostar77/spark-x2.6-4b-radiance
+- Repositorio Hugging Face: https://huggingface.co/gostar77/spark-x2.6-4b-radiance
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Dataset de calibración IQ8R: https://huggingface.co/datasets/gostar77/spark-x2.6-4b-iq8r-calibration
 - Runtime Radiance: https://codeberg.org/StillDeadcode/radiance

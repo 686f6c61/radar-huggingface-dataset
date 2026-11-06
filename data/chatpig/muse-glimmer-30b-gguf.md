@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chatpig/muse-glimmer-30b-gguf` es una cuantización en formato GGUF del modelo base `meta-models/Muse-Glimmer-30B`, publicada por el usuario `chatpig` en HuggingFace. La ficha del repositorio es extremadamente escueta: solo incluye la licencia (Apache 2.0) y la referencia al modelo base, sin descripción técnica ni detalles de entrenamiento. La etiqueta `conversational` sugiere que está orientado a tareas de diálogo, pero no se aporta ninguna evidencia adicional.
+El modelo `chatpig/muse-glimmer-30b-gguf` es una cuantización en formato GGUF del modelo base `meta-models/Muse-Glimmer-30B`, publicada por el usuario `chatpig` en Hugging Face. La ficha del repositorio es extremadamente escueta: solo incluye la licencia (Apache 2.0) y la referencia al modelo base, sin descripción técnica ni detalles de entrenamiento. La etiqueta `conversational` sugiere que está orientado a tareas de diálogo, pero no se aporta ninguna evidencia adicional.
 
 Un dato llamativo es la discrepancia entre el nombre del modelo (que indica 30B) y los parámetros totales registrados en los safetensors del repositorio, que ascienden a 2.555.985.152 (~2,56 mil millones). Esta inconsistencia no está explicada por el autor y podría deberse a un error de nomenclatura o a que el modelo base real tiene ese tamaño. El repositorio ocupa 2,6 GB, coherente con una cuantización de un modelo de ~2,5B en precisión reducida.
 
@@ -72,7 +72,7 @@ No disponible. No se han identificado modelos comparables con los que contrastar
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/chatpig/muse-glimmer-30b-gguf
+- Repositorio Hugging Face del modelo: https://huggingface.co/chatpig/muse-glimmer-30b-gguf
 - Modelo base referenciado (sin enlace directo verificado): `meta-models/Muse-Glimmer-30B`
 
 No se han encontrado papers, blogs o demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lauradeem/puslora es un adaptador LoRA de text-to-image publicado en HuggingFace bajo licencia Apache 2.0. Se distribuye en formato diffusers y esta disenado para cargarse sobre el modelo base wikeeyang/Flux2-Klein-9B-True-V3, una variante de la familia Flux cuyo nombre sugiere un tamano de aproximadamente 9.000 millones de parametros. El repositorio ocupa 0,7 GB y no registra descargas ni valoraciones en el momento de la consulta.
+Lauradeem/puslora es un adaptador LoRA de text-to-image publicado en Hugging Face bajo licencia Apache 2.0. Se distribuye en formato diffusers y esta disenado para cargarse sobre el modelo base wikeeyang/Flux2-Klein-9B-True-V3, una variante de la familia Flux cuyo nombre sugiere un tamano de aproximadamente 9.000 millones de parametros. El repositorio ocupa 0,7 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
 Se trata, por tanto, de un adaptador de ajuste fino y no de un modelo completo: no genera imagenes por si mismo, sino que modifica el comportamiento del modelo base sobre el que se aplica. La model card publicada es practicamente vacia (un unico encabezado con el texto "1622", un bloque de galeria sin imagenes cargadas y una seccion de descarga), y el campo `instance_prompt` aparece como `null`, por lo que no se documenta la palabra de activacion ni el estilo o concepto concreto que el adaptador incorpora.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lauradeem/puslora | LoRA de difusion sobre Flux2-Klein-9B-True-V3 | no disponible (repo de 0,7 GB) | no aplica | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| wikeeyang/Flux2-Klein-9B-True-V3 | Modelo base de difusion text-to-image | no disponible (el identificador sugiere ~9B) | no aplica | no disponible | HuggingFace (referenciado como base) |
+| Lauradeem/puslora | LoRA de difusion sobre Flux2-Klein-9B-True-V3 | no disponible (repo de 0,7 GB) | no aplica | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| wikeeyang/Flux2-Klein-9B-True-V3 | Modelo base de difusion text-to-image | no disponible (el identificador sugiere ~9B) | no aplica | no disponible | Hugging Face (referenciado como base) |
 | Otros LoRA de la familia Flux | Adaptadores de difusion | no disponible | no aplica | variable | no disponibles en la informacion proporcionada |
 
 No se dispone de datos de rendimiento de ninguno de los modelos listados, por lo que la comparativa se limita a tipo de artefacto, licencia y disponibilidad. No se han identificado en la busqueda web alternativas comparables con las que contrastar resultados.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos listados, por lo
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Lauradeem/puslora
+- Pagina del modelo en Hugging Face: https://huggingface.co/Lauradeem/puslora
 - Repositorio del modelo base declarado: https://huggingface.co/wikeeyang/Flux2-Klein-9B-True-V3
 - Archivos y versiones del adaptador: https://huggingface.co/Lauradeem/puslora/tree/main
 - Documentacion de LoRA en diffusers: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

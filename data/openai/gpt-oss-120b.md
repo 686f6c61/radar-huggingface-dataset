@@ -49,7 +49,7 @@ El post-entrenamiento incluye una cuantización MXFP4 de los pesos de los expert
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la etiqueta `eval-results` en HuggingFace, pero no se incluyen los valores concretos en el material proporcionado. Según el comunicado de OpenAI, el modelo supera a modelos open de tamaño similar en tareas de razonamiento y muestra un rendimiento fuerte en uso de herramientas, aunque no se ofrecen cifras específicas en esta documentación.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la etiqueta `eval-results` en Hugging Face, pero no se incluyen los valores concretos en el material proporcionado. Según el comunicado de OpenAI, el modelo supera a modelos open de tamaño similar en tareas de razonamiento y muestra un rendimiento fuerte en uso de herramientas, aunque no se ofrecen cifras específicas en esta documentación.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos directos en la información proporcionada. S
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openai/gpt-oss-120b
+- Hugging Face: https://huggingface.co/openai/gpt-oss-120b
 - Model card (arXiv): https://arxiv.org/abs/2508.10925
 - Blog de OpenAI: https://openai.com/index/introducing-gpt-oss/
 - Model card oficial de OpenAI: https://openai.com/index/gpt-oss-model-card/

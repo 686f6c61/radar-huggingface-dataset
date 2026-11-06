@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DWPose es un framework de estimacion de pose humana de cuerpo completo (whole-body pose estimation) que detecta de forma unificada keypoints de cuerpo, rostro, manos y pies. Fue desarrollado originalmente por el grupo IDEA-Research (paper "Effective Whole-body Pose Estimation with Two-stages Distillation", arXiv:2307.15880) y esta pensado como componente de percepcion centrica de persona en tiempo real. La version publicada en este repositorio de HuggingFace corresponde a la variante Tiny (DWPose-t) portada y optimizada por Ambarella para sus SoCs de vision (N1-655, X7, CV7, CV72, CV75), con compresion de activaciones en fp16.
+DWPose es un framework de estimacion de pose humana de cuerpo completo (whole-body pose estimation) que detecta de forma unificada keypoints de cuerpo, rostro, manos y pies. Fue desarrollado originalmente por el grupo IDEA-Research (paper "Effective Whole-body Pose Estimation with Two-stages Distillation", arXiv:2307.15880) y esta pensado como componente de percepcion centrica de persona en tiempo real. La version publicada en este repositorio de Hugging Face corresponde a la variante Tiny (DWPose-t) portada y optimizada por Ambarella para sus SoCs de vision (N1-655, X7, CV7, CV72, CV75), con compresion de activaciones en fp16.
 
-El modelo resuelve el problema de obtener poses densas (hasta 133 keypoints en la formulacion whole-body de COCO-WholeBody) con un coste computacional bajo, lo que lo hace adecuado para despliegue en dispositivos embebidos y pipelines de generacion de imagen/video condicionada por pose (por ejemplo, ControlNet). La relevancia actual viene de su uso extendido como preprocesador de pose en flujos de difusion y de su disponibilidad en formato binario compilado para hardware Ambarella, algo poco habitual en modelos de pose publicados en HuggingFace.
+El modelo resuelve el problema de obtener poses densas (hasta 133 keypoints en la formulacion whole-body de COCO-WholeBody) con un coste computacional bajo, lo que lo hace adecuado para despliegue en dispositivos embebidos y pipelines de generacion de imagen/video condicionada por pose (por ejemplo, ControlNet). La relevancia actual viene de su uso extendido como preprocesador de pose en flujos de difusion y de su disponibilidad en formato binario compilado para hardware Ambarella, algo poco habitual en modelos de pose publicados en Hugging Face.
 
 La informacion disponible en este repositorio es escasa: no se detallan parametros, contexto (no aplica, es vision), licencia ni idiomas. La model card se limita a describir la arquitectura, la configuracion (resolucion 3x256x192, dataset COCO) y los enlaces a los binarios por dispositivo.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Entrada | Keypoints | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DWPose-t (este repo) | no disponible (variante Tiny) | 3x256x192 | cuerpo, rostro, manos, pies | no disponible | HuggingFace (Ambarella) + pesos originales |
-| DWPose original (IDEA-Research) | no disponible (Tiny a Large) | 3x256x192 | cuerpo, rostro, manos, pies | no disponible en esta ficha | GitHub IDEA-Research, HuggingFace yzd-v/DWPose |
+| DWPose-t (este repo) | no disponible (variante Tiny) | 3x256x192 | cuerpo, rostro, manos, pies | no disponible | Hugging Face (Ambarella) + pesos originales |
+| DWPose original (IDEA-Research) | no disponible (Tiny a Large) | 3x256x192 | cuerpo, rostro, manos, pies | no disponible en esta ficha | GitHub IDEA-Research, Hugging Face yzd-v/DWPose |
 | RTMPose | no disponible | variable | cuerpo, rostro, manos | no disponible en esta ficha | MMpose / OpenMMLab |
 | OpenPose | no disponible | variable | cuerpo, rostro, manos, pies | no disponible en esta ficha | Repositorio CMU |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ambarella/DWPose
+- Repositorio Hugging Face: https://huggingface.co/Ambarella/DWPose
 - Paper: https://arxiv.org/abs/2307.15880
 - Codigo oficial DWPose: https://github.com/IDEA-Research/DWPose
 - Pesos originales DWPose-Tiny: https://huggingface.co/yzd-v/DWPose/blob/main/dw-tt_ucoco.pth

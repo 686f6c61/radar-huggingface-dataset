@@ -28,7 +28,7 @@ La metrica de correlacion (Corr = 0.3817 en validacion) sugiere que el modelo ca
 ## Capacidades
 
 - Regresion textual: asigna una puntuacion continua de narcisismo a un texto de entrada.
-- Clasificacion de texto: al ser un modelo de `text-classification` en el pipeline de HuggingFace, puede integrarse con la API estandar de transformers.
+- Clasificacion de texto: al ser un modelo de `text-classification` en el pipeline de Hugging Face, puede integrarse con la API estandar de transformers.
 - Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en infraestructura de inferencia gestionada.
 - Capacidades multilingues: no disponibles; el modelo base RoBERTa se entreno predominantemente en ingles, por lo que el rendimiento en otros idiomas es incierto.
 - Tool calling y agentes: no soportado; es un modelo encoder-only sin capacidad de generacion autoregresiva.
@@ -62,17 +62,17 @@ Estos valores corresponden a la evaluacion final del modelo tras 8 epocas (los d
 - VRAM estimada para inferencia: aproximadamente 500 MB en fp32 (124M parametros); con cuantizacion a int8 podria reducirse a unos 130 MB.
 - GPU recomendadas: cualquier GPU consumer con 4 GB de VRAM o mas es suficiente (GTX 1660, RTX 3060, RTX 4090). Tambien es viable inferencia solo en CPU con latencias de decenas de milisegundos por texto corto.
 - Compatibilidad con consumer GPUs: si, el modelo cabe sin problemas en cualquier GPU moderna.
-- Opciones de despliegue: pipeline de transformers de HuggingFace, API de inference endpoints, vLLM (aunque al ser encoder-only el beneficio es limitado), o exportacion a ONNX para servir con TensorRT u ONNX Runtime.
+- Opciones de despliegue: pipeline de transformers de Hugging Face, API de inference endpoints, vLLM (aunque al ser encoder-only el beneficio es limitado), o exportacion a ONNX para servir con TensorRT u ONNX Runtime.
 - Latencia estimada: para un texto de 512 tokens en una GPU consumer, la inferencia deberia completarse en menos de 50 ms; en CPU, entre 200 y 500 ms.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ajrayman/narcissism_continuous` | 124,6M | 512 tokens | Regresion de narcisismo | MIT | HuggingFace |
-| `ajrayman/machiavellianism_continuous` | 124,6M (estimado) | 512 tokens | Regresion de maquiavelismo | MIT | HuggingFace |
-| `ajrayman/Modesty_continuous` | 124,6M (estimado) | 512 tokens | Regresion de modestia | MIT | HuggingFace |
-| `FacebookAI/roberta-base` (modelo base) | 124,6M | 512 tokens | MLM / clasificacion generica | MIT | HuggingFace |
+| `ajrayman/narcissism_continuous` | 124,6M | 512 tokens | Regresion de narcisismo | MIT | Hugging Face |
+| `ajrayman/machiavellianism_continuous` | 124,6M (estimado) | 512 tokens | Regresion de maquiavelismo | MIT | Hugging Face |
+| `ajrayman/Modesty_continuous` | 124,6M (estimado) | 512 tokens | Regresion de modestia | MIT | Hugging Face |
+| `FacebookAI/roberta-base` (modelo base) | 124,6M | 512 tokens | MLM / clasificacion generica | MIT | Hugging Face |
 
 Los tres modelos del autor comparten la misma arquitectura base y enfoque de entrenamiento, diferenciandose solo en el rasgo psicologico objetivo. Frente al modelo base, `narcissism_continuous` anade la cabeza de regresion y el fine-tuning especifico, por lo que no es directamente comparable en tareas generales de NLP.
 
@@ -89,7 +89,7 @@ Los tres modelos del autor comparten la misma arquitectura base y enfoque de ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajrayman/narcissism_continuous
+- Modelo en Hugging Face: https://huggingface.co/ajrayman/narcissism_continuous
 - Modelo base (RoBERTa): https://huggingface.co/FacebookAI/roberta-base
 - Modelo relacionado (maquiavelismo): https://huggingface.co/ajrayman/machiavellianism_continuous
 - Modelo relacionado (modestia): https://huggingface.co/ajrayman/Modesty_continuous

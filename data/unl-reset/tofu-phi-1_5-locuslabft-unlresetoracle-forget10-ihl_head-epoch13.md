@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-forget10-ihl_head-epoch13 | 1.418M | no disponible | apache-2.0 | Desaprendizaje TOFU forget10 | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_phi-1.5 | ~1.4B | no disponible | no disponible | Ajuste fino TOFU (modelo base) | HuggingFace |
-| microsoft/phi-1_5 | 1.3B | 2048 | MIT (según model card original) | Modelo generalista de código/texto | HuggingFace |
-| Otros checkpoints de desaprendizaje TOFU (p. ej. variantes de locuslab) | ~1.4B | no disponible | variable | Distintas recetas de olvido | HuggingFace |
+| unl-reset/tofu-phi-1_5-...-forget10-ihl_head-epoch13 | 1.418M | no disponible | apache-2.0 | Desaprendizaje TOFU forget10 | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_phi-1.5 | ~1.4B | no disponible | no disponible | Ajuste fino TOFU (modelo base) | Hugging Face |
+| microsoft/phi-1_5 | 1.3B | 2048 | MIT (según model card original) | Modelo generalista de código/texto | Hugging Face |
+| Otros checkpoints de desaprendizaje TOFU (p. ej. variantes de locuslab) | ~1.4B | no disponible | variable | Distintas recetas de olvido | Hugging Face |
 
 La comparación directa de rendimiento no es posible sin benchmarks publicados. La diferencia principal frente al modelo base es la receta de desaprendizaje; frente a Phi-1.5, la inicialización parcial de embeddings y LM head y el ajuste sobre TOFU.
 
@@ -86,7 +86,7 @@ La comparación directa de rendimiento no es posible sin benchmarks publicados. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch13
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch13
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - TOFU benchmark (paper): no disponible en la información proporcionada

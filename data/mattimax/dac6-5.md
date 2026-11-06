@@ -2,7 +2,7 @@
 
 ## Resumen
 
-**DAC6.5** es un modelo multimodal de tipo imagen-texto-a-texto desarrollado por **M.INC.** (publicado en HuggingFace por el autor `Mattimax`). Combina un backbone lingüístico ligero, **LFM2.5-230M**, con un codificador visual **SigLIP2**, unidos mediante un proyector cross-modal entrenado desde cero por el propio autor. El repositorio declara 324.414.464 parámetros (~324 M) en safetensors, lo que lo sitúa en la franja de los modelos visión-lenguaje compactos orientados a ejecución local y a dispositivos de borde.
+**DAC6.5** es un modelo multimodal de tipo imagen-texto-a-texto desarrollado por **M.INC.** (publicado en Hugging Face por el autor `Mattimax`). Combina un backbone lingüístico ligero, **LFM2.5-230M**, con un codificador visual **SigLIP2**, unidos mediante un proyector cross-modal entrenado desde cero por el propio autor. El repositorio declara 324.414.464 parámetros (~324 M) en safetensors, lo que lo sitúa en la franja de los modelos visión-lenguaje compactos orientados a ejecución local y a dispositivos de borde.
 
 Se distribuye bajo licencia MIT, declara soporte para diez idiomas (inglés, árabe, chino, francés, alemán, japonés, coreano, español, portugués e italiano) y está enfocado a comprensión de imágenes zero-shot, inferencia rápida y bajo consumo de memoria. Su interés actual radica en que propone una vía de despliegue multimodal sin depender de infraestructura en la nube, en una categoría donde la oferta de modelos por debajo de 500 M de parámetros sigue siendo reducida.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| DAC6.5 (M.INC.) | ~324 M | no disponible | MIT | safetensors | HuggingFace, 72 descargas |
-| SmolVLM-256M-Instruct (HuggingFace) | ~256 M | no disponible en esta ficha | Apache 2.0 | safetensors | HuggingFace, ampliamente desplegado |
-| Qwen2-VL-2B-Instruct (Alibaba) | ~2,2 B | no disponible en esta ficha | Apache 2.0 | safetensors | HuggingFace, ecosistema maduro |
-| moondream2 (moondream) | ~1,86 B | no disponible en esta ficha | Apache 2.0 | safetensors | HuggingFace, alta adopción |
+| DAC6.5 (M.INC.) | ~324 M | no disponible | MIT | safetensors | Hugging Face, 72 descargas |
+| SmolVLM-256M-Instruct (Hugging Face) | ~256 M | no disponible en esta ficha | Apache 2.0 | safetensors | Hugging Face, ampliamente desplegado |
+| Qwen2-VL-2B-Instruct (Alibaba) | ~2,2 B | no disponible en esta ficha | Apache 2.0 | safetensors | Hugging Face, ecosistema maduro |
+| moondream2 (moondream) | ~1,86 B | no disponible en esta ficha | Apache 2.0 | safetensors | Hugging Face, alta adopción |
 
 Los datos de los modelos comparativos proceden de sus respectivas model cards públicas y conviene verificarlos antes de tomar una decisión. La comparación cualitativa relevante es que DAC6.5 compite en la franja más baja de la categoría (por debajo de 500 M), donde su principal alternativa abierta es SmolVLM-256M; frente a Qwen2-VL-2B o moondream2 sacrifica capacidad previsiblemente a cambio de una huella de memoria varias veces menor. La diferencia crítica es la madurez del ecosistema: DAC6.5 no publica benchmarks, no tiene variantes cuantizadas y apenas registra descargas, mientras que las alternativas cuentan con soporte amplio en vLLM, llama.cpp y Ollama.
 
@@ -91,7 +91,7 @@ Los datos de los modelos comparativos proceden de sus respectivas model cards p�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mattimax/DAC6.5
+- Modelo en Hugging Face: https://huggingface.co/Mattimax/DAC6.5
 - Apoyo al autor (Buy Me a Coffee): https://www.buymeacoffee.com/marzomattye
 
 Nota: la búsqueda web realizada no devolvió enlaces relevantes sobre este modelo (los resultados obtenidos correspondían a páginas de ayuda de YouTube TV y consultas no relacionadas). No se dispone de paper, blog técnico, repositorio de código ni demo pública de DAC6.5, ni de enlaces al backbone LFM2.5-230M o al codificador SigLIP2 utilizados.

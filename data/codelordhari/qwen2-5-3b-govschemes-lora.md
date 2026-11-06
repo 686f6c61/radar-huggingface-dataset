@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-3B-GovSchemes-LoRA es un ajuste fino de tipo instruct sobre una base Qwen2.5-3B-Instruct cuantizada a 4 bits (unsloth/Qwen2.5-3B-Instruct-bnb-4bit), publicado por el usuario CodeLordHari en HuggingFace. El repositorio contiene pesos en formato safetensors con 3.085.938.688 parametros reales y 6,3 GB de tamano, lo que corresponde a un modelo denso fusionado en bf16/fp16 mas que a un adaptador LoRA suelto, a pesar del sufijo "LoRA" en el nombre. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun declara el propio autor en la model card.
+Qwen2.5-3B-GovSchemes-LoRA es un ajuste fino de tipo instruct sobre una base Qwen2.5-3B-Instruct cuantizada a 4 bits (unsloth/Qwen2.5-3B-Instruct-bnb-4bit), publicado por el usuario CodeLordHari en Hugging Face. El repositorio contiene pesos en formato safetensors con 3.085.938.688 parametros reales y 6,3 GB de tamano, lo que corresponde a un modelo denso fusionado en bf16/fp16 mas que a un adaptador LoRA suelto, a pesar del sufijo "LoRA" en el nombre. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun declara el propio autor en la model card.
 
 El nombre del repositorio sugiere un ajuste orientado a esquemas o programas gubernamentales, pero la model card no documenta el conjunto de datos, el numero de tokens de entrenamiento ni el procedimiento de ajuste, por lo que el dominio real de especializacion no esta verificado. Licenciado bajo Apache-2.0, el modelo hereda la arquitectura Qwen2 de 3B parametros, un tamano que permite inferencia en GPU de gama media e incluso en equipos de consumo con cuantizacion.
 
@@ -90,15 +90,15 @@ La comparacion de rendimiento no es posible: no existen resultados de benchmarks
 - Riesgo elevado de alucinacion en materia normativa: si el modelo se usa para informar sobre requisitos legales, plazos o cuantias, cualquier dato inventado tiene consecuencias directas para el usuario. Es obligatorio anclar las respuestas a documentacion recuperada y verificar la salida.
 - Sesgos no auditados: no se documenta la composicion del corpus de ajuste ni se han realizado analisis de sesgo de genero, origen o condicion socioeconomica, algo especialmente sensible en el ambito de programas publicos.
 - Idiomas: los metadatos declaran unicamente ingles. No hay soporte declarado de castellano ni de otras lenguas, aunque la familia Qwen2.5 sea multilingue.
-- Proveedor no verificado: el autor no dispone de historial publico en HuggingFace (0 descargas, 0 likes) y la model card es una plantilla generada automaticamente por Unsloth sin informacion tecnica adicional.
+- Proveedor no verificado: el autor no dispone de historial publico en Hugging Face (0 descargas, 0 likes) y la model card es una plantilla generada automaticamente por Unsloth sin informacion tecnica adicional.
 - Licencia: Apache-2.0 permite uso comercial y modificacion sin obligacion de compartir derivados, pero conviene confirmar que el modelo base y el corpus de ajuste no imponen restricciones adicionales.
 - Fecha de publicacion incoherente: los metadatos indican septiembre de 2026, lo que sugiere un error de registro y dificulta situar el modelo en una cronologia real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodeLordHari/Qwen2.5-3B-GovSchemes-LoRA
+- Modelo en Hugging Face: https://huggingface.co/CodeLordHari/Qwen2.5-3B-GovSchemes-LoRA
 - Modelo base cuantizado: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces encontrados correspondian a foros de perifericos y no se incluyen.

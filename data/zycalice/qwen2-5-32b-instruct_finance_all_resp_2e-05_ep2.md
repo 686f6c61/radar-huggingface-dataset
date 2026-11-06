@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zycalice/Qwen2.5-32B-Instruct_finance_all_resp_2e-05_ep2` es un ajuste fino (fine-tuning) supervisado del modelo base `unsloth/Qwen2.5-32B-Instruct`, publicado por el usuario `zycalice` en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente la variante Instruct de 32.000 millones de parametros, adaptada mediante SFT (Supervised Fine-Tuning) sobre un conjunto de datos orientado al dominio financiero, segun se deduce del sufijo `finance_all_resp` en el nombre del repositorio.
+El modelo `zycalice/Qwen2.5-32B-Instruct_finance_all_resp_2e-05_ep2` es un ajuste fino (fine-tuning) supervisado del modelo base `unsloth/Qwen2.5-32B-Instruct`, publicado por el usuario `zycalice` en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente la variante Instruct de 32.000 millones de parametros, adaptada mediante SFT (Supervised Fine-Tuning) sobre un conjunto de datos orientado al dominio financiero, segun se deduce del sufijo `finance_all_resp` en el nombre del repositorio.
 
 El problema que pretende resolver es la especializacion en tareas de finanzas: el autor ha entrenado el modelo con respuestas financieras, presumiblemente para mejorar su comportamiento en consultas de ese dominio respecto al modelo Instruct generico. El entrenamiento se ha realizado con TRL 0.24.0, Transformers 4.57.3, PyTorch 2.9.0 y Unsloth, y el resultado se ha subido como un repositorio de 8,1 GB en formato safetensors.
 
@@ -23,9 +23,9 @@ Es relevante ahora porque demuestra el flujo tipico de especializacion de un LLM
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo Qwen2.5-32B-Instruct, un transformer decoder-only denso de 32.000 millones de parametros desarrollado por Alibaba. El ajuste fino se ha realizado mediante SFT (Supervised Fine-Tuning) con TRL 0.24.0, utilizando Unsloth como framework de entrenamiento optimizado y ejecutandose en la infraestructura `hf_jobs` de HuggingFace. El nombre del repositorio incluye hiperparametros explicitos: `2e-05` como learning rate y `ep2` como numero de epocas.
+La arquitectura subyacente es la del modelo Qwen2.5-32B-Instruct, un transformer decoder-only denso de 32.000 millones de parametros desarrollado por Alibaba. El ajuste fino se ha realizado mediante SFT (Supervised Fine-Tuning) con TRL 0.24.0, utilizando Unsloth como framework de entrenamiento optimizado y ejecutandose en la infraestructura `hf_jobs` de Hugging Face. El nombre del repositorio incluye hiperparametros explicitos: `2e-05` como learning rate y `ep2` como numero de epocas.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion exacta del dataset financiero, ni si se aplicaron tecnicas adicionales como DPO o RLHF. La model card es practicamente generica (plantilla estandar de TRL) y no documenta innovaciones tecnicas propias. El tag `generated_from_trainer` confirma que se genero con el `Trainer` de Transformers, y `endpoints_compatible` sugiere compatibilidad con los endpoints de inferencia de HuggingFace.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion exacta del dataset financiero, ni si se aplicaron tecnicas adicionales como DPO o RLHF. La model card es practicamente generica (plantilla estandar de TRL) y no documenta innovaciones tecnicas propias. El tag `generated_from_trainer` confirma que se genero con el `Trainer` de Transformers, y `endpoints_compatible` sugiere compatibilidad con los endpoints de inferencia de Hugging Face.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ No se dispone de informacion sobre el volumen de tokens de entrenamiento, la com
 - Consultas financieras especializadas: el modelo se ha entrenado con respuestas del dominio financiero, por lo que puede emplearse para responder preguntas sobre conceptos, productos o analisis financiero, siempre con validacion humana dado que no hay benchmarks publicados.
 - Asistente de analisis de documentos financieros: con la ventana de contexto del modelo base (hasta 131.072 tokens, no confirmada tras el fine-tuning), podria procesar informes anuales o memorias extensas y resumirlos o extraer datos clave.
 - Generacion de borradores de informes financieros: util para redactar secciones descriptivas de analisis, comparativas de productos o resumenes ejecutivos, con revision posterior por un analista.
-- Chatbot interno para equipos de finanzas: integrable mediante `transformers` o los endpoints de HuggingFace para responder dudas internas sobre terminologia y procedimientos financieros.
+- Chatbot interno para equipos de finanzas: integrable mediante `transformers` o los endpoints de Hugging Face para responder dudas internas sobre terminologia y procedimientos financieros.
 - Educacion y formacion financiera: generacion de explicaciones didacticas sobre instrumentos financieros, ratios o conceptos contables, aprovechando el ajuste sobre respuestas financieras.
 - Prototipado rapido de aplicaciones de finanzas: al estar en safetensors y ser compatible con `transformers`, sirve como base para experimentar con pipelines de generacion antes de invertir en un modelo con licencia clara.
 - Evaluacion comparativa de fine-tunings: util como caso de estudio de especializacion con Unsloth + TRL sobre un modelo de 32B, para medir el impacto del SFT en dominios verticales.
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zycalice/Qwen2.5-32B-Instruct_finance_all_resp_2e-05_ep2 | 32B | No disponible (base: 131.072) | No disponible | HuggingFace, 0 descargas | Fine-tuning financiero sin benchmarks |
+| zycalice/Qwen2.5-32B-Instruct_finance_all_resp_2e-05_ep2 | 32B | No disponible (base: 131.072) | No disponible | Hugging Face, 0 descargas | Fine-tuning financiero sin benchmarks |
 | Qwen2.5-32B-Instruct (base) | 32B | 131.072 tokens | Apache 2.0 (Qwen2.5) | Ampliamente disponible | Modelo original con benchmarks publicados |
-| Qwen2.5-32B-Instruct (unsloth) | 32B | 131.072 tokens | Apache 2.0 | HuggingFace | Version optimizada del base usada como punto de partida |
+| Qwen2.5-32B-Instruct (unsloth) | 32B | 131.072 tokens | Apache 2.0 | Hugging Face | Version optimizada del base usada como punto de partida |
 | Alternativas financieras open source | Variable | Variable | Variable | Variable | No se dispone de datos verificables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zycalice/Qwen2.5-32B-Instruct_finance_all_resp_2e-05_ep2
+- Hugging Face: https://huggingface.co/zycalice/Qwen2.5-32B-Instruct_finance_all_resp_2e-05_ep2
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen2.5-32B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Repositorio Unsloth: no disponible en la informacion proporcionada

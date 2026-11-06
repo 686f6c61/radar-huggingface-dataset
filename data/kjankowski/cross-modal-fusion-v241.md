@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kjankowski/cross-modal-fusion-v241
+- Repositorio en Hugging Face: https://huggingface.co/Kjankowski/cross-modal-fusion-v241
 - Repositorio similar (notas sobre el mismo tema): https://huggingface.co/ivanpavlovtuj/paper_002894117_cross_modal_fusion
 - Guia sobre modelos multimodales y fusion (Medium): https://medium.com/@raj.pulapakura/multimodal-models-and-fusion-a-complete-guide-225ca91f6861
 - Survey sobre fusion multi-modal (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S1546221824005216

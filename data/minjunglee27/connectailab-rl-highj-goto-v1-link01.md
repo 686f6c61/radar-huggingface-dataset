@@ -69,10 +69,10 @@ Resultados publicados por el autor en la model card (evaluación sobre 240 ejemp
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-highj-goto-v1-link01 | 0,8 B (base) + LoRA | No disponible | Navegación `goto_target` en LINK-01 | Apache 2.0 | HuggingFace |
-| connectailab-rl-highj-goto-v1-link01 (RL) | 0,8 B (base) + LoRA | No disponible | Navegación `goto_target` en LINK-01 | Apache 2.0 | HuggingFace |
+| connectailab-rl-highj-goto-v1-link01 | 0,8 B (base) + LoRA | No disponible | Navegación `goto_target` en LINK-01 | Apache 2.0 | Hugging Face |
+| connectailab-rl-highj-goto-v1-link01 (RL) | 0,8 B (base) + LoRA | No disponible | Navegación `goto_target` en LINK-01 | Apache 2.0 | Hugging Face |
 | Profesor PPO (`brain.json`) | No disponible | No aplica | Navegación `goto_target` en LINK-01 | No disponible | No disponible como modelo independiente |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | Propósito general | No disponible en la información | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | Propósito general | No disponible en la información | Hugging Face |
 
 No se dispone de otros modelos comparables de la misma categoría (políticas de lenguaje para robótica cuadrúpeda) en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de otros modelos comparables de la misma categoría (políticas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjunglee27/connectailab-rl-highj-goto-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/minjunglee27/connectailab-rl-highj-goto-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

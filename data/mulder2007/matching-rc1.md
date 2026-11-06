@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mulder2007/matching-rc1 es un prototipo de investigacion publicado en HuggingFace por el usuario Mulder2007 bajo el nombre "Mixer for Matching". Se trata de una implementacion personalizada de arquitectura tipo Mixer orientada a tareas de matching (emparejamiento), distribuida como material de partida experimental y no como modelo entrenado. El propio autor indica explicitamente en la model card que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
+Mulder2007/matching-rc1 es un prototipo de investigacion publicado en Hugging Face por el usuario Mulder2007 bajo el nombre "Mixer for Matching". Se trata de una implementacion personalizada de arquitectura tipo Mixer orientada a tareas de matching (emparejamiento), distribuida como material de partida experimental y no como modelo entrenado. El propio autor indica explicitamente en la model card que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
 
 El modelo es extremadamente pequeno: el recuento real de parametros en el fichero safetensors es de 33.088, lo que lo situa en el rango de juguete (toy model), sin capacidad practica para generacion de texto, razonamiento o codigo. No hay informacion sobre longitud de contexto, tokenizador, idiomas soportados ni pipeline de inferencia. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano de 0.0 GB.
 
@@ -32,7 +32,7 @@ Respecto al entrenamiento, el autor no reporta ningun entrenamiento completado. 
 - No se documenta ninguna capacidad funcional verificada. Al ser un checkpoint de inicializacion sin entrenamiento, no hay evidencia de generacion de texto, razonamiento, codigo, matematicas ni vision.
 - Soporte de tool calling / function calling: no disponible (no declarado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no declarado).
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 - Lo unico funcionalmente descrito es la existencia de un script `predict.py` con un bloque `__main__` que genera un ejemplo de smoke test ejecutable mediante `python predict.py --help`.
 
@@ -70,10 +70,10 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 - Restricciones de licencia: la licencia apache-2.0 permite uso comercial y modificacion con atribucion; no obstante, el autor advierte que deben revisarse por separado los terminos de las fuentes de datos externas si el repositorio se usa con conjuntos de datos de terceros.
 - Caveat de produccion: el repositorio no debe desplegarse en produccion. Se trata de un punto de partida experimental sin entrenamiento, sin evaluacion y con 0 descargas.
 - Carga del modelo: al ser una implementacion personalizada, las APIs de carga automatica (transformers, por ejemplo) requieren un adaptador explicito antes de su uso.
-- Fechas del repositorio: la ficha de HuggingFace indica creacion y actualizacion el 2026-09-14, dato que conviene verificar por si se trata de un error de metadatos.
+- Fechas del repositorio: la ficha de Hugging Face indica creacion y actualizacion el 2026-09-14, dato que conviene verificar por si se trata de un error de metadatos.
 - Trazabilidad: cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto aqui publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mulder2007/matching-rc1
+- Modelo en Hugging Face: https://huggingface.co/Mulder2007/matching-rc1
 - No se han encontrado en la busqueda web enlaces relacionados con este modelo concreto. Los resultados devueltos corresponden a otros proyectos sin relacion: un agente de DFIR en https://github.com/calebevans/mulder, articulos sobre matching como preprocesamiento no parametrico en inferencia causal (https://scispace.com/papers/matching-as-nonparametric-preprocessing-for-reducing-model-4tyg8aaa63 y https://www.researchgate.net/publication/246773627), un indice generico de modelos en https://aimodelsindex.com/ y un paquete de modelos de trafico aereo para MSFS 2024 en https://github.com/Samueleonard/AIG-ModelMatching-For-MSFS2024.

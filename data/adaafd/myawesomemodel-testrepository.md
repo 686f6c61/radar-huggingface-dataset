@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio alojado en HuggingFace por el usuario adaafd. Los metadatos lo etiquetan como `transformers`, `pytorch`, `bert` y `feature-extraction`, con licencia MIT y compatibilidad con endpoints, pero el propio nombre del repositorio incluye la palabra "TestRepository" y su tamano declarado es de 0,0 GB, lo que indica que se trata de un repositorio de prueba o plantilla mas que de un modelo desplegable.
+MyAwesomeModel-TestRepository es un repositorio alojado en Hugging Face por el usuario adaafd. Los metadatos lo etiquetan como `transformers`, `pytorch`, `bert` y `feature-extraction`, con licencia MIT y compatibilidad con endpoints, pero el propio nombre del repositorio incluye la palabra "TestRepository" y su tamano declarado es de 0,0 GB, lo que indica que se trata de un repositorio de prueba o plantilla mas que de un modelo desplegable.
 
 La model card adjunta describe un supuesto modelo de razonamiento (menciona pruebas AIME 2025, profundidad de pensamiento medida en miles de tokens, function calling y reduccion de alucinaciones) y presenta una tabla comparativa de benchmarks. Sin embargo, esa tabla emplea nombres de columna genericos ("Model1", "Model2", "Model1-v2") y no identifica arquitectura, numero de parametros, tokenizador ni pesos concretos, por lo que su contenido no es verificable y contradice la etiqueta `bert`/`feature-extraction` de los metadatos.
 
@@ -23,13 +23,13 @@ Por todo ello, la ficha se ha elaborado marcando explicitamente "no disponible" 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. Los tags de HuggingFace apuntan a un modelo de tipo BERT para `feature-extraction`, es decir, un transformer encoder orientado a generar embeddings. En cambio, la model card describe caracteristicas propias de un modelo generativo de razonamiento (incremento de tokens de pensamiento por pregunta, function calling, reduccion de alucinaciones), lo que resulta incompatible con un encoder BERT clasico.
+No se dispone de informacion verificable sobre la arquitectura. Los tags de Hugging Face apuntan a un modelo de tipo BERT para `feature-extraction`, es decir, un transformer encoder orientado a generar embeddings. En cambio, la model card describe caracteristicas propias de un modelo generativo de razonamiento (incremento de tokens de pensamiento por pregunta, function calling, reduccion de alucinaciones), lo que resulta incompatible con un encoder BERT clasico.
 
 Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de post-entrenamiento como RLHF, DPO o RL. La unica referencia numerica de la model card es que el supuesto modelo anterior consumia unos 12K tokens por pregunta en AIME y la version actual 23K, dato que no puede atribuirse a arquitectura o entrenamiento concretos al no existir pesos ni configuracion publicados.
 
 ## Capacidades
 
-- Extraccion de caracteristicas (feature extraction): es la unica capacidad respaldada por los metadatos de HuggingFace (`pipeline: feature-extraction`).
+- Extraccion de caracteristicas (feature extraction): es la unica capacidad respaldada por los metadatos de Hugging Face (`pipeline: feature-extraction`).
 - Generacion de texto, razonamiento matematico, generacion de codigo y dialogo: aparecen mencionados en la model card, pero sin evidencia verificable ni pesos asociados.
 - Soporte de function calling / tool calling: la model card afirma que se ha mejorado, sin detallar formato ni esquema.
 - Capacidades multilingues: no disponible (el campo de idiomas del repositorio esta vacio).
@@ -103,7 +103,7 @@ No es posible establecer una comparativa fiable. La model card cita "Model1", "M
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adaafd/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/adaafd/MyAwesomeModel-TestRepository
 - Repositorio relacionado del mismo autor: https://huggingface.co/adaafd/my-awesome-model
 - Repositorio similar (otro usuario): https://huggingface.co/afdasfasdd/MyAwesomeModel-TestRepository
 - Repositorio similar (otro usuario): https://huggingface.co/asxfafaf1/My-Awesome-Model-Test-Repository

@@ -95,8 +95,8 @@ No se han publicado en la informacion disponible resultados de benchmarks de otr
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wq2012/ls_lstm_small_ge2e` | 1.710.912 | Audio a 16 kHz, log-mel 80 dim, longitud variable | EER 1-utt 21,25% (pooled universal); 3-utt 17,73% | Apache 2.0 | HuggingFace, GitHub, PyPI, TFLite FP32/INT8 |
-| `wq2012/wavenet-speaker-verifier-coded` | no disponible | Habla condicionada a codec 2 a 2,4 kb/s | no disponible | no disponible | HuggingFace |
+| `wq2012/ls_lstm_small_ge2e` | 1.710.912 | Audio a 16 kHz, log-mel 80 dim, longitud variable | EER 1-utt 21,25% (pooled universal); 3-utt 17,73% | Apache 2.0 | Hugging Face, GitHub, PyPI, TFLite FP32/INT8 |
+| `wq2012/wavenet-speaker-verifier-coded` | no disponible | Habla condicionada a codec 2 a 2,4 kb/s | no disponible | no disponible | Hugging Face |
 | Red GE2E del articulo original (Wan et al., 2018) | no disponible | no disponible | no disponible (entrenada con datos internos propietarios) | no disponible | no disponible |
 | Otros sistemas de verificacion de locutor de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -116,7 +116,7 @@ La model card advierte de que las cifras publicadas en los articulos de referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/ls_lstm_small_ge2e
+- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_lstm_small_ge2e
 - Coleccion FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Perfil de GitHub del autor: https://github.com/wq2012

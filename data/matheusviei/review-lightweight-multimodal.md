@@ -86,7 +86,7 @@ No procede una comparativa tecnica con modelos multimodales ligeros de la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matheusviei/review-lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/matheusviei/review-lightweight-multimodal
 - `summary.md` (artefacto principal de la nota): https://huggingface.co/matheusviei/review-lightweight-multimodal/blob/main/summary.md
 - `README.md` (documentacion del repositorio): https://huggingface.co/matheusviei/review-lightweight-multimodal/blob/main/README.md
 - Paper asociado: no disponible

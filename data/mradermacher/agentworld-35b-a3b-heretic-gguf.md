@@ -27,7 +27,7 @@ El repositorio de mradermacher contiene únicamente las cuantizaciones GGUF gene
 
 ## Capacidades
 
-- Generación de texto conversacional (etiqueta "conversational" en HuggingFace).
+- Generación de texto conversacional (etiqueta "conversational" en Hugging Face).
 - Compatible con endpoints de inferencia (etiqueta "endpoints_compatible").
 - Probablemente orientado a tareas de agente: simulación de entornos, tool calling y razonamiento multi-paso, según la referencia a Qwen-AgentWorld (no confirmado).
 - Versión "Heretic" sin censura, capaz de generar contenido que otros modelos rechazarían (inferido por el nombre y la referencia a modelos sin censura en la búsqueda web).
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/AgentWorld-35B-A3B-Heretic-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/AgentWorld-35B-A3B-Heretic-GGUF
 - Repositorio del modelo original (inferido, no confirmado): https://huggingface.co/auttasak88/AgentWorld-35B-A3B-Heretic
 - Proyecto Qwen-AgentWorld (GitHub): https://github.com/QwenLM/Qwen-AgentWorld
 - Blog sobre Qwen3.6-35B-A3B sin censura (referencia de hardware): https://blog.csdn.net/weixin_41961749/article/details/161501525

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBERT_userreview es un modelo publicado en HuggingFace por el usuario drvnt bajo licencia MIT. Por el nombre se infiere que se trata de un ajuste fino (fine-tuning) de IndoBERT, un modelo transformer basado en BERT entrenado para el idioma indonesio, orientado a la clasificación o el análisis de reseñas de usuarios. El repositorio no incluye una model card descriptiva: el README se limita a declarar la licencia MIT, sin especificar arquitectura, datos de entrenamiento, hiperparámetros ni métricas de evaluación.
+IndoBERT_userreview es un modelo publicado en Hugging Face por el usuario drvnt bajo licencia MIT. Por el nombre se infiere que se trata de un ajuste fino (fine-tuning) de IndoBERT, un modelo transformer basado en BERT entrenado para el idioma indonesio, orientado a la clasificación o el análisis de reseñas de usuarios. El repositorio no incluye una model card descriptiva: el README se limita a declarar la licencia MIT, sin especificar arquitectura, datos de entrenamiento, hiperparámetros ni métricas de evaluación.
 
 La relevancia del modelo es, por tanto, limitada y difícil de verificar. Al no publicarse información sobre el proceso de ajuste, el conjunto de datos utilizado ni los resultados obtenidos, no es posible validar su calidad ni su idoneidad para tareas concretas. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que no ha sido adoptado por la comunidad.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible, al desconocerse el tamaño del modelo. Si se trata de IndoBERT base (aproximadamente 110 millones de parámetros), la inferencia cabría en GPUs de consumo con 4-8 GB en FP16; si es la variante large (aproximadamente 335 millones), requeriría del orden de 8-16 GB.
 - GPU recomendadas: no disponible. Para un encoder BERT de tamaño base, una RTX 3060 o superior sería suficiente; para large, una RTX 4090 o A100 resultaría adecuada.
 - Compatibilidad con GPU de consumo: probable si el modelo es de tamaño base, aunque no confirmado.
-- Opciones de despliegue: no documentadas. Al ser presumiblemente un modelo de la familia BERT, sería compatible con HuggingFace Transformers, ONNX Runtime, TorchScript y, con conversión, con llama.cpp u Ollama si se generan pesos GGUF.
+- Opciones de despliegue: no documentadas. Al ser presumiblemente un modelo de la familia BERT, sería compatible con Hugging Face Transformers, ONNX Runtime, TorchScript y, con conversión, con llama.cpp u Ollama si se generan pesos GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| drvnt/IndoBERT_userreview | no disponible | no disponible | MIT | HuggingFace, sin métricas publicadas |
-| IndoBERT base (indolem/indobert-base-uncased) | ~110 M | 512 tokens | MIT | HuggingFace, ampliamente adoptado |
-| IndoBERT large (indolem/indobert-large-uncased) | ~335 M | 512 tokens | MIT | HuggingFace, ampliamente adoptado |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace, multilingüe |
+| drvnt/IndoBERT_userreview | no disponible | no disponible | MIT | Hugging Face, sin métricas publicadas |
+| IndoBERT base (indolem/indobert-base-uncased) | ~110 M | 512 tokens | MIT | Hugging Face, ampliamente adoptado |
+| IndoBERT large (indolem/indobert-large-uncased) | ~335 M | 512 tokens | MIT | Hugging Face, ampliamente adoptado |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face, multilingüe |
 
 La comparativa se basa en la familia presumible del modelo, no en datos confirmados del repositorio. IndoBERT base y large cuentan con model cards detalladas y métricas publicadas en tareas como IndoNLU, mientras que este ajuste no ofrece ninguna de esas garantías.
 
@@ -82,7 +82,7 @@ La comparativa se basa en la familia presumible del modelo, no en datos confirma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drvnt/IndoBERT_userreview
+- Repositorio en Hugging Face: https://huggingface.co/drvnt/IndoBERT_userreview
 - IndoBERT base (referencia presumible): https://huggingface.co/indolem/indobert-base-uncased
 - IndoBERT large (referencia presumible): https://huggingface.co/indolem/indobert-large-uncased
 - IndoNLU benchmark: https://indobenchmark.github.io/

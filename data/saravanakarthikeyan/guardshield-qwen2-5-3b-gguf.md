@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos de moderacion de contenido comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saravanakarthikeyan/GuardShield-Qwen2.5-3B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/saravanakarthikeyan/GuardShield-Qwen2.5-3B-GGUF
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Reporte tecnico Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

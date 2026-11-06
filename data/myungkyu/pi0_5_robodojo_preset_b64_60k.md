@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0_5_robodojo_preset_b64_60k | 4,14 mil millones | Ocho tareas bimanuales de sobremesa (RoboDojo) | no disponible | no disponible | Publico en HuggingFace |
-| lerobot/pi05_base | no disponible | Politica VLA generalista (modelo base) | no disponible | no disponible | Publico en HuggingFace |
+| pi0_5_robodojo_preset_b64_60k | 4,14 mil millones | Ocho tareas bimanuales de sobremesa (RoboDojo) | no disponible | no disponible | Publico en Hugging Face |
+| lerobot/pi05_base | no disponible | Politica VLA generalista (modelo base) | no disponible | no disponible | Publico en Hugging Face |
 | Otras politicas VLA (OpenVLA, pi0, GR00T y similares) | no disponible | Manipulacion robotica general | no disponible | no disponible | no disponible |
 
 No se dispone de cifras de rendimiento comparables en la informacion proporcionada, por lo que la comparativa se limita a la relacion de linaje (este modelo es un fine-tuning de `lerobot/pi05_base`) y a la categoria de tarea. No se han podido verificar datos de contexto, licencia ni evaluaciones de las alternativas.
@@ -97,7 +97,7 @@ No se dispone de cifras de rendimiento comparables en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_robodojo_preset_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_robodojo_preset_b64_60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/RoboDojo-preset-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Paper, blog, repositorio o demo adicionales: no disponible. Los resultados de busqueda web proporcionados no contienen enlaces relacionados con el modelo.

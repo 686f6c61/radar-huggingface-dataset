@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01 es un ajuste fino completo (full fine-tune) publicado por el usuario U-WIN sobre el modelo base Qwen/Qwen3.5-9B, con 9.653.104.368 parámetros totales y un repositorio de 38,6 GB en formato safetensors. El pipeline declarado en HuggingFace es image-text-to-text y la librería asociada es transformers, por lo que se trata de un modelo multimodal conversacional derivado de la familia Qwen 3.5.
+qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01 es un ajuste fino completo (full fine-tune) publicado por el usuario U-WIN sobre el modelo base Qwen/Qwen3.5-9B, con 9.653.104.368 parámetros totales y un repositorio de 38,6 GB en formato safetensors. El pipeline declarado en Hugging Face es image-text-to-text y la librería asociada es transformers, por lo que se trata de un modelo multimodal conversacional derivado de la familia Qwen 3.5.
 
 El identificador y las etiquetas describen la receta de entrenamiento: ajuste con objetivo de predicción del siguiente token (next-token prediction), regularización KL con coeficiente 0,01 y un volumen aproximado de 350 millones de tokens, entrenado únicamente sobre "notas" (notes-only) en el dominio de la teoría ecuacional y bajo un procedimiento denominado SAIR. La regularización KL apunta a limitar la divergencia respecto al modelo base, una técnica habitual para reducir el olvido catastrófico en ajustes de dominio estrecho.
 
@@ -21,7 +21,7 @@ El modelo es relevante ahora únicamente como artefacto de investigación muy in
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (repositorio de 38,6 GB) |
 | Modelo base | Qwen/Qwen3.5-9B (fine-tune completo) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-10-15 |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cuantizacion a 8 bits: aproximadamente 9,7 GB de pesos, cabe con holgura en RTX 3090, RTX 4090, RTX 4080 o A10G.
 - Cuantizacion a 4 bits: aproximadamente 5-6 GB de pesos, cabe en GPUs de consumo con 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB), a costa de degradacion de calidad no medida.
 - GPUs recomendadas para produccion: A100 80 GB o H100 80 GB para fp16/bf16 con contexto largo; A10G, L4 o L40S para cargas moderadas; A100 40 GB como minimo en fp32.
-- Despliegue: la etiqueta "transformers" indica compatibilidad directa con la libreria de HuggingFace; "endpoints_compatible" sugiere uso en HuggingFace Inference Endpoints. vLLM y TGI son opciones teoricas pero no estan verificadas en el repositorio. llama.cpp u Ollama requeririan convertir los pesos a GGUF, tarea no documentada y complicada por el tamano del repositorio.
+- Despliegue: la etiqueta "transformers" indica compatibilidad directa con la libreria de Hugging Face; "endpoints_compatible" sugiere uso en Hugging Face Inference Endpoints. vLLM y TGI son opciones teoricas pero no estan verificadas en el repositorio. llama.cpp u Ollama requeririan convertir los pesos a GGUF, tarea no documentada y complicada por el tamano del repositorio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -72,14 +72,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01 | 9.653.104.368 | no disponible | Apache 2.0 | Gated, 2 descargas, 0 likes | Fine-tune completo de dominio, sin benchmarks publicados |
-| Qwen/Qwen3.5-9B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Publico en HuggingFace | Referencia directa del ajuste; el autor no documenta las diferencias |
+| Qwen/Qwen3.5-9B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Publico en Hugging Face | Referencia directa del ajuste; el autor no documenta las diferencias |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se han identificado en la informacion proporcionada modelos comparables de teoria ecuacional con este tamano |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade friccion para su evaluacion o uso.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade friccion para su evaluacion o uso.
 - Ausencia total de validacion: 2 descargas y 0 "likes" desde su publicacion implican que no existe revision por parte de la comunidad, ni informes independientes de calidad.
 - Sin benchmarks ni evaluacion: no hay ninguna metrica publicada, por lo que no se puede afirmar que el ajuste mejore al modelo base en teoria ecuacional ni que conserve sus capacidades generales.
 - Especializacion estrecha: el ajuste se realizo sobre datos "notes-only" en un unico dominio, lo que aumenta el riesgo de degradacion en tareas generales, conversacion abierta o codigo.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01
+- Repositorio en Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Perfil del autor en HuggingFace: https://huggingface.co/U-WIN
+- Perfil del autor en Hugging Face: https://huggingface.co/U-WIN
 - No se han encontrado enlaces adicionales relevantes (papers, blogs o repos) en la busqueda web: los resultados devueltos corresponden a sitios sin relacion con el modelo.

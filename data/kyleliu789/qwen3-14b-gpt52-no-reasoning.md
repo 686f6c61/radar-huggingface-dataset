@@ -65,9 +65,9 @@ No se dispone de informacion suficiente para una comparativa cuantitativa. El au
 
 ## Enlaces
 
-- [HuggingFace: kyleliu789/qwen3-14b-gpt52-no-reasoning](https://huggingface.co/kyleliu789/qwen3-14b-gpt52-no-reasoning)
-- [HuggingFace: kyleliu789/qwen3-14b-gpt52-general-sft](https://huggingface.co/kyleliu789/qwen3-14b-gpt52-general-sft)
-- [HuggingFace: kyleliu789/qwen3-14b-gpt52-lora-normalized](https://huggingface.co/kyleliu789/qwen3-14b-gpt52-lora-normalized)
+- [Hugging Face: kyleliu789/qwen3-14b-gpt52-no-reasoning](https://huggingface.co/kyleliu789/qwen3-14b-gpt52-no-reasoning)
+- [Hugging Face: kyleliu789/qwen3-14b-gpt52-general-sft](https://huggingface.co/kyleliu789/qwen3-14b-gpt52-general-sft)
+- [Hugging Face: kyleliu789/qwen3-14b-gpt52-lora-normalized](https://huggingface.co/kyleliu789/qwen3-14b-gpt52-lora-normalized)
 - [GitHub: QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)
 - [Qwen AI](https://qwen.ai/home)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)

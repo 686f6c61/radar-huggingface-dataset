@@ -83,7 +83,7 @@ No disponible. La model card no identifica modelos comparables de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Video-Coder/Video-Coder-SFT-9B
+- Hugging Face: https://huggingface.co/Video-Coder/Video-Coder-SFT-9B
 - Imagen teaser del proyecto: https://raw.githubusercontent.com/CYWang735/Video-Coder/main/assets/teaser.png
 - Imagen cualitativa del proceso de inferencia: https://raw.githubusercontent.com/CYWang735/Video-Coder/main/assets/qualitative.png
 - Pagina del proyecto: no disponible (enlace vacio en la model card)

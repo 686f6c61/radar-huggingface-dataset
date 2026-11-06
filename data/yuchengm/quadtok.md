@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuchengm/quadtok` es un tokenizador de imágenes basado en cuantización vectorial (VQ) y estructura de árbol cuaternario (quadtree), desarrollado por el autor yuchengm y publicado en HuggingFace bajo licencia MIT. Su propósito principal es convertir imágenes en tokens discretos, una técnica habitual en modelos de generación de imágenes, compresión o representaciones intermedias para sistemas de visión por computador. La etiqueta `imagenet` sugiere que fue entrenado o evaluado sobre este dataset de referencia.
+El modelo `yuchengm/quadtok` es un tokenizador de imágenes basado en cuantización vectorial (VQ) y estructura de árbol cuaternario (quadtree), desarrollado por el autor yuchengm y publicado en Hugging Face bajo licencia MIT. Su propósito principal es convertir imágenes en tokens discretos, una técnica habitual en modelos de generación de imágenes, compresión o representaciones intermedias para sistemas de visión por computador. La etiqueta `imagenet` sugiere que fue entrenado o evaluado sobre este dataset de referencia.
 
-La información pública disponible es muy limitada: el repositorio tiene un tamaño de 1,1 GB, está implementado en PyTorch y su acceso es restringido (gated), por lo que requiere aceptar condiciones adicionales en HuggingFace antes de descargarlo. No se han publicado detalles sobre la arquitectura exacta, el número de parámetros, el proceso de entrenamiento ni métricas de rendimiento. A pesar de ello, su diseño con quadtree apunta a una tokenización jerárquica que podría ofrecer ventajas en eficiencia para imágenes de alta resolución, aunque no hay evidencias que lo confirmen.
+La información pública disponible es muy limitada: el repositorio tiene un tamaño de 1,1 GB, está implementado en PyTorch y su acceso es restringido (gated), por lo que requiere aceptar condiciones adicionales en Hugging Face antes de descargarlo. No se han publicado detalles sobre la arquitectura exacta, el número de parámetros, el proceso de entrenamiento ni métricas de rendimiento. A pesar de ello, su diseño con quadtree apunta a una tokenización jerárquica que podría ofrecer ventajas en eficiencia para imágenes de alta resolución, aunque no hay evidencias que lo confirmen.
 
 ## Especificaciones técnicas
 
@@ -61,15 +61,15 @@ No se dispone de información sobre modelos comparables en el repositorio ni en 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones adicionales en HuggingFace, lo que puede limitar su uso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones adicionales en Hugging Face, lo que puede limitar su uso inmediato.
 - Documentación inexistente: no hay papers, guías de uso ni ejemplos de código en el repositorio, lo que dificulta su adopción.
 - Sin métricas publicadas: no se puede evaluar la calidad de la tokenización ni compararla con alternativas.
 - Riesgo de alucinación: no aplica, al ser un modelo de visión y no generativo de texto.
 - Sesgos: no hay información sobre posibles sesgos en los datos de entrenamiento.
-- Licencia MIT: permite uso comercial y modificación, pero al ser un modelo gated, hay que cumplir las condiciones de HuggingFace.
+- Licencia MIT: permite uso comercial y modificación, pero al ser un modelo gated, hay que cumplir las condiciones de Hugging Face.
 - Adecuación para producción: no recomendado sin una evaluación previa exhaustiva, dado el desconocimiento de su comportamiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuchengm/quadtok
+- Repositorio Hugging Face: https://huggingface.co/yuchengm/quadtok
 - No se han encontrado otros enlaces (papers, blogs, demos) en los resultados de búsqueda proporcionados.

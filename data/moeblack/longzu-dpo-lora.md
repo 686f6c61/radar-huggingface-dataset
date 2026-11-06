@@ -53,7 +53,7 @@ No disponible. No se conocen modelos comparables con los que se pueda establecer
 
 ## Enlaces
 
-- [HuggingFace - Moeblack/longzu-dpo-lora](https://huggingface.co/Moeblack/longzu-dpo-lora)
+- [Hugging Face - Moeblack/longzu-dpo-lora](https://huggingface.co/Moeblack/longzu-dpo-lora)
 - [Moeblack/longzu-lora (adaptador similar en HF)](https://huggingface.co/Moeblack/longzu-lora)
 - [GitHub - Moeblack/trainer](https://github.com/Moeblack/trainer)
 - [GitHub - Moeblack/AnimaLoraToolkit](https://github.com/Moeblack/AnimaLoraToolkit)

@@ -80,7 +80,7 @@ La comparativa muestra que este modelo es una conversion menor de un modelo dest
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-8Bit
 - Modelo base (empero-ai): https://huggingface.co/empero-ai/Qwen3.8-9B
 - Conversion alternativa (PocketAiHub): https://huggingface.co/PocketAiHub/Qwen3.8-9B-MLX
 - Repositorio oficial Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

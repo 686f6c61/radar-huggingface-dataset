@@ -53,4 +53,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: dementor-research/self_sft_gsm8k_gemma-4-31b_as_gemma-4-31b_seed42](https://huggingface.co/dementor-research/self_sft_gsm8k_gemma-4-31b_as_gemma-4-31b_seed42)
+- [Hugging Face: dementor-research/self_sft_gsm8k_gemma-4-31b_as_gemma-4-31b_seed42](https://huggingface.co/dementor-research/self_sft_gsm8k_gemma-4-31b_as_gemma-4-31b_seed42)

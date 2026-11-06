@@ -44,7 +44,7 @@ En cuanto a la arquitectura heredada, Mistral-7B-v0.3 es un transformer decoder-
 - Pruebas de pipelines vLLM: al estar etiquetado con `vllm`, sirve como carga de trabajo de 7B para validar configuracion de servidores, gestion de memoria de KV cache y limites de concurrencia en un entorno controlado.
 - Analisis de polaridad como tarea exploratoria: si la hipotesis del nombre es correcta, podria emplearse para reescribir resenas o comentarios invirtiendo su tono; requeriria validacion manual previa, dado que no hay evaluacion publicada.
 - Docencia sobre riesgos de la cadena de suministro de modelos: ilustra como un artefacto sin documentacion puede propagar afirmaciones falsas (por ejemplo, soporte de function calling) si se confia en la model card.
-- Investigacion sobre contaminacion de metadatos en HuggingFace: cuantificar cuantos repositorios con 0 descargas reutilizan integramente la ficha de otro modelo, usando este como muestra.
+- Investigacion sobre contaminacion de metadatos en Hugging Face: cuantificar cuantos repositorios con 0 descargas reutilizan integramente la ficha de otro modelo, usando este como muestra.
 - Prototipado interno sin requisitos de trazabilidad: unicamente en entornos de laboratorio aislados, nunca en aplicaciones de cara al usuario, dada la ausencia total de garantias de comportamiento.
 
 ## Benchmarks y rendimiento
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Memoria de KV cache: con 32 capas, 8 cabezas KV y dimension de cabeza 128, el consumo estimado es de unos 128 KB por token en FP16, es decir, cerca de 4 GB adicionales si se agota una ventana de 32.768 tokens sin cuantizar la cache.
 - GPU recomendadas: A100 40/80 GB, H100 80 GB o L40S 48 GB para FP16 con contexto largo y concurrencia alta; A10G 24 GB o L4 24 GB para FP16 con contexto moderado.
 - GPU de consumo: cabe en RTX 3090 y RTX 4090 (24 GB) en FP16 con margen ajustado y contexto reducido; en RTX 4080, 4070 Ti Super (16 GB) o GPUs de 8-12 GB requiere cuantizacion de 4 bits.
-- Opciones de despliegue: vLLM (etiqueta declarada del repositorio), HuggingFace Transformers, TGI. Para llama.cpp u Ollama seria necesaria una conversion propia a GGUF, ya que no se publican esos formatos.
+- Opciones de despliegue: vLLM (etiqueta declarada del repositorio), Hugging Face Transformers, TGI. Para llama.cpp u Ollama seria necesaria una conversion propia a GGUF, ya que no se publican esos formatos.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni banco de pruebas asociado al repositorio.
 
 ## Comparativa con modelos similares

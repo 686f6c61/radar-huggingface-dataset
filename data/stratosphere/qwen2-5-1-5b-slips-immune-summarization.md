@@ -70,10 +70,10 @@ Sobre velocidad, la model card afirma que, en dispositivos CPU-only, llama.cpp (
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stratosphere/qwen2.5-1.5b-slips-immune-summarization | 1,5B | 8.192 (config. de despliegue) | Resumen de alertas Slips con severidad | Apache 2.0 | HuggingFace, Ollama |
-| stratosphere/qwen3.5-0.8b-slips-immune-summarization | ~0,8B | no disponible | Misma tarea, mismos datos de entrenamiento | no disponible en la informacion | HuggingFace |
-| unsloth/Qwen2.5-1.5B-Instruct (modelo base) | 1,5B | no disponible en la informacion | Instrucciones generales, sin especializacion en seguridad | Apache 2.0 | HuggingFace |
-| Qwen2.5 3B (usado como generador candidato en best-of-N) | 3B | no disponible en la informacion | Instrucciones generales | no disponible en la informacion | HuggingFace |
+| stratosphere/qwen2.5-1.5b-slips-immune-summarization | 1,5B | 8.192 (config. de despliegue) | Resumen de alertas Slips con severidad | Apache 2.0 | Hugging Face, Ollama |
+| stratosphere/qwen3.5-0.8b-slips-immune-summarization | ~0,8B | no disponible | Misma tarea, mismos datos de entrenamiento | no disponible en la informacion | Hugging Face |
+| unsloth/Qwen2.5-1.5B-Instruct (modelo base) | 1,5B | no disponible en la informacion | Instrucciones generales, sin especializacion en seguridad | Apache 2.0 | Hugging Face |
+| Qwen2.5 3B (usado como generador candidato en best-of-N) | 3B | no disponible en la informacion | Instrucciones generales | no disponible en la informacion | Hugging Face |
 
 La comparación relevante es con el modelo base: este fine-tune no mejora capacidades generales, sino que fija un formato de salida y un criterio de severidad para la tarea de resumen de Slips. Frente a la variante de 0,8B, la model card indica rendimiento equivalente con el doble de tamaño, lo que convierte a la versión pequeña en preferible para despliegues en CPU. No se dispone de datos de benchmarks que permitan comparar numéricamente con alternativas genéricas.
 
@@ -91,7 +91,7 @@ La comparación relevante es con el modelo base: este fine-tune no mejora capaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stratosphere/qwen2.5-1.5b-slips-immune-summarization
+- Modelo en Hugging Face: https://huggingface.co/stratosphere/qwen2.5-1.5b-slips-immune-summarization
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Qwen2.5-1.5B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Variante de 0,8B: https://huggingface.co/stratosphere/qwen3.5-0.8b-slips-immune-summarization

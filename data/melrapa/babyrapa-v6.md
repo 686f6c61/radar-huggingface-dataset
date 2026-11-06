@@ -70,4 +70,4 @@ No disponible. No se ha encontrado informacion sobre modelos de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Melrapa/BabyRapa-V6
+- Hugging Face: https://huggingface.co/Melrapa/BabyRapa-V6

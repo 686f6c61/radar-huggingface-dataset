@@ -1,9 +1,9 @@
 # CZend371/xlm-roberta-base-finetuned-panx-en
 
 ## Resumen
-CZend371/xlm-roberta-base-finetuned-panx-en es un modelo de clasificacion de tokens (token classification) publicado en HuggingFace por el usuario CZend371. Se trata de un ajuste fino (fine-tuning) del encoder multilingue FacebookAI/xlm-roberta-base, orientado a tareas de reconocimiento de entidades nombradas (NER) sobre el subconjunto en ingles del dataset conocido como PAN-X. El pipeline declarado es token-classification y la libreria de referencia es transformers, con pesos en formato safetensors.
+CZend371/xlm-roberta-base-finetuned-panx-en es un modelo de clasificacion de tokens (token classification) publicado en Hugging Face por el usuario CZend371. Se trata de un ajuste fino (fine-tuning) del encoder multilingue FacebookAI/xlm-roberta-base, orientado a tareas de reconocimiento de entidades nombradas (NER) sobre el subconjunto en ingles del dataset conocido como PAN-X. El pipeline declarado es token-classification y la libreria de referencia es transformers, con pesos en formato safetensors.
 
-El modelo cuenta con 277.459.208 parametros y un repositorio de 1,1 GB, lo que corresponde a un encoder transformer denso de escala base. La model card fue generada automaticamente por el Trainer de HuggingFace e indica explicitamente que el dataset de entrenamiento es "unknown" y que falta documentacion sobre usos previstos, datos de evaluacion y resultados. No se han declarado idiomas soportados ni resultados de benchmarks.
+El modelo cuenta con 277.459.208 parametros y un repositorio de 1,1 GB, lo que corresponde a un encoder transformer denso de escala base. La model card fue generada automaticamente por el Trainer de Hugging Face e indica explicitamente que el dataset de entrenamiento es "unknown" y que falta documentacion sobre usos previstos, datos de evaluacion y resultados. No se han declarado idiomas soportados ni resultados de benchmarks.
 
 Su relevancia actual es limitada pero concreta: sirve como ejemplo reproducible de un pipeline de fine-tuning para NER en ingles sobre una base multilingue solida, y como punto de partida para experimentos de etiquetado de secuencias. Sin embargo, con 0 descargas y 0 "likes", no cuenta con validacion por parte de la comunidad, por lo que debe tratarse como un artefacto experimental hasta que se documente y evalue adecuadamente.
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CZend371/xlm-roberta-base-finetuned-panx-en | 277.459.208 | 512 tokens (heredado del base) | Token classification (NER en ingles) | MIT | HuggingFace, 0 descargas, sin benchmarks |
-| FacebookAI/xlm-roberta-base | 278 M aprox. | 512 tokens | Modelo base (representaciones) | MIT | HuggingFace, ampliamente usado |
-| Google bert-base-multilingual-cased | 178 M aprox. | 512 tokens | Modelo base (representaciones) | Apache-2.0 | HuggingFace, muy extendido |
-| microsoft/mdeberta-v3-base | 279 M aprox. (86 M en el backbone) | 512 tokens | Modelo base (representaciones) | MIT | HuggingFace, habitual en NER multilingue |
+| CZend371/xlm-roberta-base-finetuned-panx-en | 277.459.208 | 512 tokens (heredado del base) | Token classification (NER en ingles) | MIT | Hugging Face, 0 descargas, sin benchmarks |
+| FacebookAI/xlm-roberta-base | 278 M aprox. | 512 tokens | Modelo base (representaciones) | MIT | Hugging Face, ampliamente usado |
+| Google bert-base-multilingual-cased | 178 M aprox. | 512 tokens | Modelo base (representaciones) | Apache-2.0 | Hugging Face, muy extendido |
+| microsoft/mdeberta-v3-base | 279 M aprox. (86 M en el backbone) | 512 tokens | Modelo base (representaciones) | MIT | Hugging Face, habitual en NER multilingue |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, porque el modelo evaluado no publica metricas y no es posible contrastar rendimiento frente a las alternativas. Como contrapartida al modelo analizado, los tres modelos de referencia son checkpoints base sin cabeza de clasificacion, por lo que requieren su propio fine-tuning para la tarea NER; a cambio, cuentan con documentacion completa, evaluaciones publicadas por la comunidad y un uso mucho mas extendido.
 
@@ -77,7 +77,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, porq
 - Recomendacion para produccion: no desplegar sin antes reproducir el entrenamiento, definir el esquema de etiquetas y validar con un conjunto de test propio; tratar cualquier salida como sugerencia sujeta a revision humana en aplicaciones sensibles.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-en
+- Modelo en Hugging Face: https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-en
 - Modelo base: https://huggingface.co/xlm-roberta-base
 - Modelo base (repositorio del autor original): https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-RoBERTa (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116

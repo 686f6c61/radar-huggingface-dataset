@@ -33,7 +33,7 @@ No se dispone en la información proporcionada de datos sobre el entrenamiento d
 - Edición de imágenes: la variante "edit" del modelo base indica capacidad de edición dirigida de imágenes existentes, aunque el repo no documenta ejemplos concretos de esta modalidad.
 - Ejecución nativa en Apple Silicon mediante MLX, sin dependencia de CUDA ni de GPU NVIDIA.
 - Cuantización persistente en los pesos: no requiere flag de cuantización en tiempo de ejecución.
-- Descarga automática de pesos desde HuggingFace en el primer uso, o descarga local previa con `hf download`.
+- Descarga automática de pesos desde Hugging Face en el primer uso, o descarga local previa con `hf download`.
 
 No hay información sobre capacidades de tool calling, agentes, razonamiento textual ni procesamiento de audio o vídeo; se trata de un modelo exclusivamente de imágenes.
 
@@ -89,7 +89,7 @@ Comparación con otros modelos de edición de imágenes: no disponible (no hay d
 - Repositorio de esta cuantización: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-q8
 - Modelo original de Bria AI: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - Framework MFlux (GitHub): https://github.com/filipstrand/mflux
-- Organización MFlux-Community en HuggingFace: https://huggingface.co/mflux-community
+- Organización MFlux-Community en Hugging Face: https://huggingface.co/mflux-community
 - Version BF16: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-bf16
 - Version Q6: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-q6
 - Version Q5: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-q5

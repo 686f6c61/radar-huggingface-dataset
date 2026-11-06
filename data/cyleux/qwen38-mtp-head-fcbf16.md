@@ -75,7 +75,7 @@ La comparativa se limita a cabezales MTP para Qwen3.8-27B. No se dispone de dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cyleux/qwen38-mtp-head-fcbf16
+- Repositorio Hugging Face: https://huggingface.co/Cyleux/qwen38-mtp-head-fcbf16
 - Modelo base: https://huggingface.co/EigenLabs/Qwen3.8-27B-MTP-bf16
 - Desafío Layr-Labs: https://github.com/Layr-Labs/qwen-3.8-mtp-challenge
 - Repositorio de sudoingX sobre el flag de llama.cpp: https://github.com/sudoingX/qwen38-mtp

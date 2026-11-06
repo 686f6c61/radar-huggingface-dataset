@@ -111,7 +111,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karlsencoin/Qwen3.6-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/karlsencoin/Qwen3.6-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-27B/blob/main/LICENSE
 - Blog de la release Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b

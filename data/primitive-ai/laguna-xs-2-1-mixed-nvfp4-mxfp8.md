@@ -90,7 +90,7 @@ En cuanto a otros modelos de coding agéntico de tamaño similar (por ejemplo, Q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/primitive-ai/Laguna-XS-2.1-mixed-NVFP4-MXFP8
+- Repositorio Hugging Face: https://huggingface.co/primitive-ai/Laguna-XS-2.1-mixed-NVFP4-MXFP8
 - Modelo base: https://huggingface.co/poolside/Laguna-XS-2.1
 - Blog de Poolside sobre Laguna XS 2.1: https://poolside.ai/blog/introducing-laguna-xs-2-1
 - Blog de Poolside sobre Laguna XS.2 y M.1: https://poolside.ai/blog/introducing-laguna-xs2-m1

@@ -75,6 +75,6 @@ No disponible. Este repositorio no es un modelo de lenguaje comparable a otros L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dassensei/sat-constrained-qwen-poc
+- Repositorio Hugging Face: https://huggingface.co/dassensei/sat-constrained-qwen-poc
 - Organización Qwen (referencia al posible modelo base): https://huggingface.co/Qwen
 - Líder de modelos LLM (referencia general, no específica): https://llm-stats.com/leaderboards/llm-leaderboard

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-New_MTL_Full_Finetuning es un modelo de lenguaje basado en la arquitectura RoBERTa, publicado por el usuario RonTon05 en HuggingFace. Se trata de un ajuste fino completo (full fine-tuning) de 10 epocas sobre el checkpoint RonTon05/model_content_V2_test, orientado a una tarea de clasificacion multitarea (MTL) con al menos dos cabezas de clasificacion etiquetadas de forma generica como Task1 y Task2. Con 136.385.033 parametros y un repositorio de 0,5 GB, es un modelo encoder compacto, pensado para inferencia rapida y despliegue en hardware modesto, no para generacion de texto abierta.
+New_MTL_Full_Finetuning es un modelo de lenguaje basado en la arquitectura RoBERTa, publicado por el usuario RonTon05 en Hugging Face. Se trata de un ajuste fino completo (full fine-tuning) de 10 epocas sobre el checkpoint RonTon05/model_content_V2_test, orientado a una tarea de clasificacion multitarea (MTL) con al menos dos cabezas de clasificacion etiquetadas de forma generica como Task1 y Task2. Con 136.385.033 parametros y un repositorio de 0,5 GB, es un modelo encoder compacto, pensado para inferencia rapida y despliegue en hardware modesto, no para generacion de texto abierta.
 
 El modelo resuelve un problema de clasificacion supervisada multiobjetivo: a partir de un texto de entrada, produce simultaneamente predicciones para dos tareas distintas. Segun los datos declarados por el autor en la model card, alcanza un F1 de 0,9731 en la Task1 con una exactitud del 0,9792, y un F1 de 0,7515 en la Task2 con una exactitud del 0,9161, lo que da un F1 macro de 0,8623 sobre el conjunto de evaluacion. La asimetria entre ambas tareas sugiere que la Task2 es considerablemente mas dificil o esta peor representada en los datos de entrenamiento.
 
@@ -22,7 +22,7 @@ La relevancia de este modelo es limitada pero concreta: es un ejemplo de ajuste 
 | Formato de pesos | safetensors (libreria transformers) |
 | Modelo base | RonTon05/model_content_V2_test |
 | Tamano del repositorio | 0,5 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Version de transformers usada en entrenamiento | 5.17.0 |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 - VRAM estimada para inferencia: aproximadamente 0,6 GB en fp32, 0,3 GB en fp16/bf16 y 0,15 GB en int8, sin contar el overhead del runtime (activaciones y cache de CUDA elevan el consumo real a valores en torno a 1-2 GB).
 - GPU recomendadas: cualquier GPU con 4 GB o mas de memoria es suficiente. No se necesitan A100 ni H100; una NVIDIA T4, L4, RTX 3060, RTX 4090 o incluso una GPU integrada moderna cubren el caso sin problemas.
 - Compatibilidad con GPU de consumo: si. Cabe holgadamente en cualquier GPU de consumo de los ultimos ocho anos y tambien en CPU, donde la inferencia de un encoder de 136 M de parametros es viable para cargas moderadas.
-- Opciones de despliegue: transformers pipeline de HuggingFace para clasificacion, exportacion a ONNX Runtime, TorchScript, TorchServe, BentoML, NVIDIA Triton o un servicio FastAPI propio. vLLM y TGI estan orientados a modelos generativos y a embeddings, por lo que no son la via natural para una cabeza de clasificacion multitarea.
+- Opciones de despliegue: transformers pipeline de Hugging Face para clasificacion, exportacion a ONNX Runtime, TorchScript, TorchServe, BentoML, NVIDIA Triton o un servicio FastAPI propio. vLLM y TGI estan orientados a modelos generativos y a embeddings, por lo que no son la via natural para una cabeza de clasificacion multitarea.
 - llama.cpp / Ollama / GGUF: no disponible. El repositorio solo publica safetensors y no hay conversiones oficiales a GGUF. La conversion seria posible tecnicamente, pero requeriria trabajo adicional y no esta soportada por el autor.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de milisegundos por inferencia. Como referencia dimensional, un encoder de esta escala suele procesar lotes de cientos de secuencias por segundo en una GPU moderna, pero es una estimacion generica, no un dato medido sobre este checkpoint.
 
@@ -100,10 +100,10 @@ La comparativa se establece con encoders de clasificacion de tamano comparable. 
 
 | Modelo | Parametros | Contexto tipico | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| New_MTL_Full_Finetuning | 136,4 M | No disponible (familia RoBERTa, 512 habitual) | Clasificacion multitarea (2 tareas) | AGPL-3.0 | HuggingFace, safetensors |
-| RoBERTa-base | ~125 M | 512 | Modelo base generalista | MIT | HuggingFace, ampliamente soportado |
-| DeBERTa-v3-base | ~184 M | 512 | Modelo base generalista, mejoras en attention disentangled | MIT | HuggingFace, muy usado en clasificacion |
-| XLM-RoBERTa-base | ~278 M | 512 | Modelo base multilingue | MIT | HuggingFace, referencia multilingue |
+| New_MTL_Full_Finetuning | 136,4 M | No disponible (familia RoBERTa, 512 habitual) | Clasificacion multitarea (2 tareas) | AGPL-3.0 | Hugging Face, safetensors |
+| RoBERTa-base | ~125 M | 512 | Modelo base generalista | MIT | Hugging Face, ampliamente soportado |
+| DeBERTa-v3-base | ~184 M | 512 | Modelo base generalista, mejoras en attention disentangled | MIT | Hugging Face, muy usado en clasificacion |
+| XLM-RoBERTa-base | ~278 M | 512 | Modelo base multilingue | MIT | Hugging Face, referencia multilingue |
 
 Frente a estas alternativas, New_MTL_Full_Finetuning aporta un ajuste especifico para dos tareas concretas, pero carece de la documentacion, la cobertura multilingue y la permisividad de licencia de los modelos base. No se dispone de comparaciones directas de rendimiento sobre el mismo conjunto de evaluacion, ya que el dataset de este modelo no esta documentado ni es publico.
 
@@ -116,13 +116,13 @@ Frente a estas alternativas, New_MTL_Full_Finetuning aporta un ajuste especifico
 - Limitaciones de idioma: los idiomas soportados figuran como no disponibles. No hay ninguna garantia de funcionamiento en castellano u otros idiomas; el modelo podria estar entrenado exclusivamente en ingles o en otro idioma no declarado.
 - Restricciones de licencia: AGPL-3.0 es una licencia copyleft fuerte que obliga a liberar el codigo fuente de las obras derivadas y, de forma relevante, tambien del software que ofrezca el modelo como servicio a traves de una red (clausula de uso en red). Esto supone un obstaculo serio para su integracion en productos comerciales cerrados o en SaaS propietario sin asesoramiento legal previo.
 - Semantica de las etiquetas desconocida: las tareas se denominan generically Task1 y Task2. Sin informacion sobre las clases, no es posible reutilizar el modelo en un caso de uso concreto sin ingenieria inversa o datos propios.
-- Ausencia de pipeline declarado: HuggingFace no ha detectado una tarea de pipeline para este repositorio, lo que puede dificultar el uso directo con `pipeline()` y obligar a cargar el modelo y el tokenizador manualmente.
+- Ausencia de pipeline declarado: Hugging Face no ha detectado una tarea de pipeline para este repositorio, lo que puede dificultar el uso directo con `pipeline()` y obligar a cargar el modelo y el tokenizador manualmente.
 - Trazabilidad: el modelo base (RonTon05/model_content_V2_test) pertenece al mismo autor y no esta documentado en la informacion disponible, por lo que no se puede reconstruir la cadena completa de entrenamiento.
 - Madurez: cero descargas y cero "likes" en el momento de la consulta. No hay evidencia de uso en produccion, validacion por terceros ni mantenimiento posterior a la publicacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RonTon05/New_MTL_Full_Finetuning
+- Modelo en Hugging Face: https://huggingface.co/RonTon05/New_MTL_Full_Finetuning
 - Modelo base: https://huggingface.co/RonTon05/model_content_V2_test
 - Licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las URLs devueltas por la busqueda corresponden a un sitio de pesca deportiva (newportlanding.com) sin ninguna relacion con el modelo.

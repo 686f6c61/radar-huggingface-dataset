@@ -67,12 +67,12 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (cl
 - No se especifican los idiomas soportados; es probable que el modelo funcione mejor con evidencias en ingles, pero no esta confirmado.
 - Al ser un clasificador clasico, no maneja contexto ni semantica; solo utiliza frecuencias de n-gramas, por lo que puede fallar ante ofuscacion o tecnologias no incluidas en el dataset.
 - La licencia MIT permite uso comercial, pero el autor no ofrece garantias de exactitud ni soporte.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere una adopcion muy limitada y poca validacion externa.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere una adopcion muy limitada y poca validacion externa.
 - No se proporciona informacion sobre sesgos, pero al estar entrenado con datos sinteticos podria reflejar los sesgos del proceso de generacion de dichos datos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/newazhala/website-technology-evidence-classifier
+- Modelo en Hugging Face: https://huggingface.co/newazhala/website-technology-evidence-classifier
 - Espacio de demostracion (Website Technology Detector): https://huggingface.co/spaces/newazhala/website-technology-detector/tree/main
 - Proyecto relacionado (AzkiWeb): https://azkiweb.com/
 - Pagina de precios de diseno web (mencionada en la model card): https://azkiweb.com/website-design-price

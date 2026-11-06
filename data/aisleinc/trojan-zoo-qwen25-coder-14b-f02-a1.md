@@ -128,7 +128,7 @@ Modelos alternativos de la misma categoría (otros organismos modelo o adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f02-a1
+- Modelo en Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f02-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Colección AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las busquedas devolvieron unicamente paginas de YouTube sin relacion con el modelo.

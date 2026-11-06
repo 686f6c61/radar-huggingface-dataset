@@ -77,5 +77,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DeKUT-DSAIL/efficientnetv2-xl-cifar10-native)
+- [Modelo en Hugging Face](https://huggingface.co/DeKUT-DSAIL/efficientnetv2-xl-cifar10-native)
 - Repositorio de entrenamiento mencionado en la model card (no se proporciona URL directa en la información disponible).

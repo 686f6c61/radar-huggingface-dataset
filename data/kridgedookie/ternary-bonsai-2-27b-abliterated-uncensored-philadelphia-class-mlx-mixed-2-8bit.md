@@ -79,8 +79,8 @@ Condiciones de la criba retenida: 96 tokens de salida, decodificación greedy, p
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Rechazos / 126 | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Este derivado (Mixed 2-8 bits, MLX) | 50.148.954.352 (safetensors) | no disponible | Mixta: ternario rotado + Q4_0/Q8_0 en 126 matrices | apache-2.0 (pesos), MIT (runtime) | 0 | Repositorio MLX; requiere cargador propio |
-| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit (base) | no disponible (nomenclatura 27B) | no disponible | Ternaria 2 bits (MLX) | apache-2.0 (según cadena de derivación) | 123 (Bonsai original) | Público en HuggingFace (revisión `3f926b415992eaa2ae9dd7b573706494d6bbf787`) |
-| prism-ml/Ternary-Bonsai-2-27B-gguf (base) | no disponible | no disponible | Ternaria, formato GGUF | apache-2.0 (según cadena de derivación) | 123 (Bonsai original) | Público en HuggingFace (revisión `6ed5e12bf84b7a63069882c91dd9e9218647d17b`) |
+| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit (base) | no disponible (nomenclatura 27B) | no disponible | Ternaria 2 bits (MLX) | apache-2.0 (según cadena de derivación) | 123 (Bonsai original) | Público en Hugging Face (revisión `3f926b415992eaa2ae9dd7b573706494d6bbf787`) |
+| prism-ml/Ternary-Bonsai-2-27B-gguf (base) | no disponible | no disponible | Ternaria, formato GGUF | apache-2.0 (según cadena de derivación) | 123 (Bonsai original) | Público en Hugging Face (revisión `6ed5e12bf84b7a63069882c91dd9e9218647d17b`) |
 | Qwen3.8-27B (ascendente remoto) | no disponible | no disponible | no disponible | no disponible | no aplica (alineado) | no disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks de inteligencia para ninguno de los modelos de la tabla, por lo que la comparación se limita a parámetros declarados, formato, licencia y tasa de rechazo en la criba del autor.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks de inteligencia para ninguno de los modelos
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-8bit
+- Página del modelo en Hugging Face: https://huggingface.co/KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-8bit
 - Modelo base MLX: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit (revisión `3f926b415992eaa2ae9dd7b573706494d6bbf787`)
 - Modelo base GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf (revisión `6ed5e12bf84b7a63069882c91dd9e9218647d17b`)
 - Descarga directa con `hf download`: `hf download KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-8bit --local-dir bonsai-mlx`

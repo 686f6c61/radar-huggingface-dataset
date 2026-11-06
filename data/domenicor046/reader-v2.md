@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reader v2 es un modelo de deteccion de tinta (ink detection) para el reto Vesuvius, orientado a la lectura virtual de los papiros carbonizados de Herculano. Lo publica el usuario domenicor046 en HuggingFace y se distribuye como checkpoint de PyTorch que sustituye directamente al modelo de referencia `scrollprize/ink_9um` en el pipeline de inferencia del equipo: solo cambia el fichero de pesos. Su problema objetivo es recuperar la senal de tinta en tomografias de baja energia (116 keV y 113 keV) sobre las que los modelos publicos anteriores degradan mucho su rendimiento.
+Reader v2 es un modelo de deteccion de tinta (ink detection) para el reto Vesuvius, orientado a la lectura virtual de los papiros carbonizados de Herculano. Lo publica el usuario domenicor046 en Hugging Face y se distribuye como checkpoint de PyTorch que sustituye directamente al modelo de referencia `scrollprize/ink_9um` en el pipeline de inferencia del equipo: solo cambia el fichero de pesos. Su problema objetivo es recuperar la senal de tinta en tomografias de baja energia (116 keV y 113 keV) sobre las que los modelos publicos anteriores degradan mucho su rendimiento.
 
 El modelo esta especializado en el protocolo de escaneo de 116 keV de las First Letters, empleado en 11 de los 22 rollos de ese conjunto. Segun la model card, sobre datos retenidos alcanza un AUC de 0,834 frente al mapa de referencia del equipo en PHerc0009B, frente a 0,725 del siguiente mejor modelo publico (Hecate) y 0,626 del checkpoint oficial `ink_9um`; en un rollo nunca visto (PHerc0841) obtiene 0,858 de AUC frente al mapa del equipo.
 
@@ -74,7 +74,7 @@ Segun el autor, el modelo queda primero en cuatro de las seis pruebas y segundo 
 
 | Modelo | Tipo | Contexto / entrada | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reader v2 | Deteccion de tinta volumetrica | Volumen de superficie zarr, protocolo 116 keV | AUC 0,834 (116 keV, vs mapa); 0,858 en PHerc0841 | MIT | HuggingFace `domenicor046/reader-v2` |
+| Reader v2 | Deteccion de tinta volumetrica | Volumen de superficie zarr, protocolo 116 keV | AUC 0,834 (116 keV, vs mapa); 0,858 en PHerc0841 | MIT | Hugging Face `domenicor046/reader-v2` |
 | `ink_9um` (scrollprize) | Deteccion de tinta volumetrica | Volumen de superficie zarr | AUC 0,626 (116 keV, vs mapa); 0,708 en PHerc0841 | No indicada en la informacion disponible | Liberado por el equipo del Vesuvius Challenge |
 | Hecate | Deteccion de tinta volumetrica | Volumen de superficie zarr | AUC 0,725 en 116 keV; 0,855 en etiquetas humanas de PHerc0841 | No indicada en la informacion disponible | Modelo publico |
 | Nieuwlaar | Deteccion de tinta volumetrica | Volumen de superficie zarr | 0,901 en etiquetas humanas de 116 keV; 0,898 en 113 keV PHerc0139 | No indicada en la informacion disponible | Modelo publico |
@@ -96,11 +96,11 @@ Reader v2 tiene el mismo formato de checkpoint que `ink_9um` y licencia MIT expl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/domenicor046/reader-v2
+- Modelo en Hugging Face: https://huggingface.co/domenicor046/reader-v2
 - Repositorio GitHub con codigo, figuras y evaluaciones: https://github.com/DomRusso2/reader-v2
 - Checkpoint previo `ink9um-dense`: https://github.com/DomRusso2/ink9um-dense
 - Modelo de referencia del equipo: https://huggingface.co/scrollprize/ink_9um
 - Figura de portada (comparativa 116 keV): https://raw.githubusercontent.com/DomRusso2/reader-v2/main/figures/banner_116keV.png
 - Paper: no disponible en la informacion proporcionada.
 - Demo: no disponible en la informacion proporcionada.
-- Nota: la busqueda web asociada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+- Nota: la busqueda web asociada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

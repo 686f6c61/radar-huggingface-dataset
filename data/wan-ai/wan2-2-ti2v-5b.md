@@ -78,7 +78,7 @@ La comparativa se limita a la propia familia Wan2.2, ya que no se dispone de dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+- Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - ModelScope: https://www.modelscope.cn/models/Wan-AI/Wan2.2-TI2V-5B
 - Repositorio GitHub: https://github.com/Wan-Video/Wan2.2
 - Informe tecnico (arXiv): https://arxiv.org/abs/2503.20314

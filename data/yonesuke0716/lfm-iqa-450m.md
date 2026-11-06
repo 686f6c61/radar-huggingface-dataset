@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Yonesuke0716/lfm-iqa-450m es un modelo de lenguaje publicado en HuggingFace por el usuario Yonesuke0716. Se trata de un modelo de pequeno tamano: los pesos en formato safetensors suman 354.483.968 parametros, y el repositorio completo ocupa aproximadamente 0,6 GB. La model card publicada por el autor esta practicamente vacia y solo contiene la declaracion de licencia, por lo que no hay informacion oficial sobre arquitectura, datos de entrenamiento, idiomas o rendimiento.
+El modelo identificado como Yonesuke0716/lfm-iqa-450m es un modelo de lenguaje publicado en Hugging Face por el usuario Yonesuke0716. Se trata de un modelo de pequeno tamano: los pesos en formato safetensors suman 354.483.968 parametros, y el repositorio completo ocupa aproximadamente 0,6 GB. La model card publicada por el autor esta practicamente vacia y solo contiene la declaracion de licencia, por lo que no hay informacion oficial sobre arquitectura, datos de entrenamiento, idiomas o rendimiento.
 
 El nombre del repositorio sugiere, sin confirmacion documental, una posible relacion con la familia LFM (Liquid Foundation Models) y con tareas de evaluacion de calidad de imagen (IQA), pero ninguna de estas dos hipotesis se puede verificar con la informacion disponible. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y el repositorio incluye la etiqueta gguf, lo que indica que existe al menos una version cuantizada lista para despliegue en entornos de inferencia local.
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados de rendimiento, contexto o licencia para este
 |---|---|---|---|---|
 | Yonesuke0716/lfm-iqa-450m | 354.483.968 | no disponible | Apache 2.0 | Parametros, licencia y formato |
 | Qwen2.5-0.5B (Alibaba) | ~500 M (segun nombre) | no disponible en esta ficha | no disponible en esta ficha | solo orden de magnitud |
-| SmolLM2-360M (HuggingFace) | ~360 M (segun nombre) | no disponible en esta ficha | no disponible en esta ficha | solo orden de magnitud |
+| SmolLM2-360M (Hugging Face) | ~360 M (segun nombre) | no disponible en esta ficha | no disponible en esta ficha | solo orden de magnitud |
 | LFM2-350M (Liquid AI) | ~350 M (segun nombre) | no disponible en esta ficha | no disponible en esta ficha | solo orden de magnitud |
 
 La busqueda web realizada no devolvio ningun resultado relacionado con el modelo ni con modelos comparables, por lo que no se puede establecer una comparativa fiable de rendimiento, contexto o licencia.
@@ -95,6 +95,6 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yonesuke0716/lfm-iqa-450m
+- Hugging Face: https://huggingface.co/Yonesuke0716/lfm-iqa-450m
 - Model card del autor: sin contenido tecnico, solo la declaracion de licencia Apache 2.0.
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.

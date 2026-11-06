@@ -98,7 +98,7 @@ La comparación con Unsloth e ISTA-DASLab aparece solo como referencia gráfica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wenzhouwu/YoungAi-DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/wenzhouwu/YoungAi-DeepSeek-V4.1-Flash-1017
 - Repositorio GitHub: https://github.com/fodelf/YoungAi
 - Sitio web y guía de usuario: https://fodelf.github.io/YoungAi/
 - Notas técnicas: https://github.com/fodelf/YoungAi/blob/restructure/docs/TECHNICAL.md

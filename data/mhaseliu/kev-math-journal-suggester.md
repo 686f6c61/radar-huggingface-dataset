@@ -71,8 +71,8 @@ Notas de metodologia: el checkpoint se fijo mediante validacion antes de la eval
 
 | Modelo | Parametros | Contexto | Top 1 (1.000 test) | Top 3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Kev afinado (este modelo) | Backbone aproximadamente 4B mas LoRA | Entrada limitada a 768 tokens | 57,2% | 78,9% | Apache 2.0 (adaptador) | HuggingFace, 0 descargas |
-| Kev publicado (jaredpalmer/kev-4b) | Backbone aproximadamente 4B mas LoRA | No disponible | 15,7% | 29,8% | No disponible | HuggingFace |
+| Kev afinado (este modelo) | Backbone aproximadamente 4B mas LoRA | Entrada limitada a 768 tokens | 57,2% | 78,9% | Apache 2.0 (adaptador) | Hugging Face, 0 descargas |
+| Kev publicado (jaredpalmer/kev-4b) | Backbone aproximadamente 4B mas LoRA | No disponible | 15,7% | 29,8% | No disponible | Hugging Face |
 | Otros modelos de recomendacion de revistas | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos externos comparables en la misma categoria (recomendacion de revistas cientificas) dentro de la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de informacion sobre modelos externos comparables en la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhaseliu/kev-math-journal-suggester
+- Modelo en Hugging Face: https://huggingface.co/mhaseliu/kev-math-journal-suggester
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Modelo de origen (Kev publicado): https://huggingface.co/jaredpalmer/kev-4b
 - Codigo y guia de configuracion: https://github.com/mhaseliu/math-journal-suggester

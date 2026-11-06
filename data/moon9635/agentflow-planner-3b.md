@@ -23,7 +23,7 @@ Su relevancia radica en que aborda la optimización de sistemas agénticos de fo
 
 El modelo es un fine-tuning del Qwen2.5-3B-Instruct, un Transformer decoder-only con atención causal y pre-normalización. No se han publicado detalles específicos del proceso de entrenamiento del checkpoint de planificador, pero el framework AgentFlow (descrito en el paper de 2025-10-08) introduce una arquitectura modular donde el planificador se entrena por separado del ejecutor, con el objetivo de mejorar la generalización a nuevas herramientas y dominios. La técnica de entrenamiento probablemente incluye una fase de supervisión (SFT) y posiblemente optimización por refuerzo (RL), aunque no hay confirmación oficial.
 
-El modelo se publica como parte del repositorio AgentFlow, con un paper en HuggingFace y código en GitHub. No se menciona el número de tokens de entrenamiento ni la composición exacta del dataset.
+El modelo se publica como parte del repositorio AgentFlow, con un paper en Hugging Face y código en GitHub. No se menciona el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AgentFlow Planner 3B | 3,09 B | 33K | Transformer (Qwen2.5) | MIT | HuggingFace |
-| Qwen2.5-3B-Instruct | 3,09 B | 32K | Transformer | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3,21 B | 128K | Transformer (Llama) | Llama 3.2 license | HuggingFace |
+| AgentFlow Planner 3B | 3,09 B | 33K | Transformer (Qwen2.5) | MIT | Hugging Face |
+| Qwen2.5-3B-Instruct | 3,09 B | 32K | Transformer | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3,21 B | 128K | Transformer (Llama) | Llama 3.2 license | Hugging Face |
 
 La comparación directa se limita a características básicas porque no hay benchmarks. El modelo se distingue por su entrenamiento especializado en planificación, mientras que Qwen2.5-3B-Instruct y Llama-3.2-3B son modelos generalistas.
 
@@ -76,9 +76,9 @@ La comparación directa se limita a características básicas porque no hay benc
 
 ## Enlaces
 
-- [HuggingFace - AgentFlow/agentflow-planner-3b](https://huggingface.co/AgentFlow/agentflow-planner-3b)
+- [Hugging Face - AgentFlow/agentflow-planner-3b](https://huggingface.co/AgentFlow/agentflow-planner-3b)
 - [Repositorio en GitHub (AgentFlow)](https://github.com/lupantech/AgentFlow)
-- [Paper en HuggingFace](https://huggingface.co/papers/date/2025-10-08)
+- [Paper en Hugging Face](https://huggingface.co/papers/date/2025-10-08)
 - [Demo](https://huggingface.co/spaces/AgentFlow/agentflow)
 - [Sitio web del proyecto](https://agentflow.stanford.edu/)
 - [Video en YouTube](https://www.youtube.com/watch?v=kIQbCQIH1SI)

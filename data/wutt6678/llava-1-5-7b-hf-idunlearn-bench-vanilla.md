@@ -21,7 +21,7 @@ En consecuencia, su interés actual es el de un artefacto de referencia para exp
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible (no se declara; el sufijo "hf" del nombre sugiere compatibilidad con la librería transformers, sin confirmar) |
 | Repositorio base declarado en el nombre | llava-hf/llava-1.5-7b-hf |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion y ultima actualizacion | 2026-09-29T15:24:42Z (ambas coincidentes) |
 
@@ -76,7 +76,7 @@ Las estimaciones siguientes son cálculos aproximados a partir del tamaño indic
 | Modelo | Relacion | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
 | wutt6678/llava-1.5-7b-hf-IDUnlearn-Bench-Vanilla | Este repositorio | ~7.000 millones (según el nombre) | no disponible | cc-by-4.0 | Sin model card, sin benchmarks, 0 descargas |
-| llava-hf/llava-1.5-7b-hf | Modelo base del que deriva según el nombre | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Referencia oficial en HuggingFace de LLaVA-1.5 |
+| llava-hf/llava-1.5-7b-hf | Modelo base del que deriva según el nombre | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Referencia oficial en Hugging Face de LLaVA-1.5 |
 | LLaVA-NeXT (LLaVA-1.6) | Generación posterior de la misma familia | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Los resultados de búsqueda indican mayor resolución de imagen y más datos de razonamiento y OCR |
 | Otros VLM abiertos de ~7.000 millones | Alternativas de categoría | no disponible | no disponible | no disponible | No se han encontrado comparativas específicas en la información disponible |
 
@@ -93,9 +93,9 @@ Las estimaciones siguientes son cálculos aproximados a partir del tamaño indic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wutt6678/llava-1.5-7b-hf-IDUnlearn-Bench-Vanilla
-- Modelo base en HuggingFace: https://huggingface.co/llava-hf/llava-1.5-7b-hf
-- Organización llava-hf en HuggingFace: https://huggingface.co/llava-hf
+- Modelo en Hugging Face: https://huggingface.co/wutt6678/llava-1.5-7b-hf-IDUnlearn-Bench-Vanilla
+- Modelo base en Hugging Face: https://huggingface.co/llava-hf/llava-1.5-7b-hf
+- Organización llava-hf en Hugging Face: https://huggingface.co/llava-hf
 - Ficha sincronizada en ModelHub: https://dev.modelhub.org.cn/llava-hf/llava-1.5-7b-hf
 - Configuración de LLaVA-1.5-7B en WildVision-Bench: https://github.com/WildVision-AI/WildVision-Bench/tree/main/model_configs/llava-1.5-7b-hf
 - Documentación de Cloudflare Workers AI para llava-1.5-7b-hf: https://developers.cloudflare.com/workers-ai/models/llava-1.5-7b-hf/

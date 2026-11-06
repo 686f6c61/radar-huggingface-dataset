@@ -6,7 +6,7 @@ e5-large-pp1875-onnx es un modelo de embeddings de frases derivado de intfloat/m
 
 El ajuste se realiza con aprendizaje contrastivo (InfoNCE) sobre pares "denominacion de producto" a "codigo OKPD2", incorporando datos KTRU, sinonimos, denominaciones oficiales de codigos y ejemplos sinteticos generados con LLM, con negativos dificiles construidos a partir de codigos cercanos pero incorrectos. El resultado es un encoder de similitud semantica orientado a recuperacion y clasificacion de codigos en el dominio de compras publicas, no un modelo generativo.
 
-Su relevancia es acotada pero clara: cubre un nicho especifico del ecosistema de contratacion publica rusa con una licencia permisiva (MIT), un artefacto ONNX listo para produccion en CPU y una convencion de prefijos compatible con la familia e5. El repositorio es pequeno (0,6 GB) y el modelo registra un uso muy bajo en HuggingFace (20 descargas, 0 likes) en el momento de la consulta.
+Su relevancia es acotada pero clara: cubre un nicho especifico del ecosistema de contratacion publica rusa con una licencia permisiva (MIT), un artefacto ONNX listo para produccion en CPU y una convencion de prefijos compatible con la familia e5. El repositorio es pequeno (0,6 GB) y el modelo registra un uso muy bajo en Hugging Face (20 descargas, 0 likes) en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ La comparativa se limita a alternativas de la misma familia de embeddings de fra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BOBUS2317/e5-large-pp1875-onnx
+- Modelo en Hugging Face: https://huggingface.co/BOBUS2317/e5-large-pp1875-onnx
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-large
 - Paper de la familia E5 (Text Embeddings by Weakly-Supervised Contrastive Pre-training): https://arxiv.org/abs/2212.03533
 - Documentacion de sentence-transformers: https://www.sbert.net/

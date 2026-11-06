@@ -105,7 +105,7 @@ La comparación con motores clásicos como Stockfish no es directa: QUEEN produc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/undreren/queen_pawn-8-mlx
+- Modelo en Hugging Face: https://huggingface.co/undreren/queen_pawn-8-mlx
 - Checkpoint upstream: https://huggingface.co/princeton-nlp/queen_pawn-8
 - Repositorio del proyecto QUEEN: https://github.com/queen-project/queen
 - Protocolo de cliente (FEN por canal lateral): https://huggingface.co/undreren/queen_pawn-8-mlx/blob/main/PROTOCOL.md

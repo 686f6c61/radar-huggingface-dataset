@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `velev65656/sn99-router-c` alojado en HuggingFace no contiene información técnica disponible en la actualidad. El nombre sugiere que podría tratarse de un modelo de enrutamiento (router) para algún sistema de IA, pero no se ha publicado ningún dato sobre arquitectura, parámetros, entrenamiento o capacidades. El tamaño del repositorio es de 0.0 GB, lo que indica que no hay archivos de pesos ni documentación asociada. La fecha de creación es el 5 de agosto de 2026 y la última actualización el 14 de agosto de 2026, pero sin contenido sustancial. No es posible evaluar el modelo ni recomendar su uso en ningún escenario real.
+El repositorio `velev65656/sn99-router-c` alojado en Hugging Face no contiene información técnica disponible en la actualidad. El nombre sugiere que podría tratarse de un modelo de enrutamiento (router) para algún sistema de IA, pero no se ha publicado ningún dato sobre arquitectura, parámetros, entrenamiento o capacidades. El tamaño del repositorio es de 0.0 GB, lo que indica que no hay archivos de pesos ni documentación asociada. La fecha de creación es el 5 de agosto de 2026 y la última actualización el 14 de agosto de 2026, pero sin contenido sustancial. No es posible evaluar el modelo ni recomendar su uso en ningún escenario real.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. Al no existir datos sobre parámetros, arquitectura o rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/velev65656/sn99-router-c
+- Repositorio en Hugging Face: https://huggingface.co/velev65656/sn99-router-c

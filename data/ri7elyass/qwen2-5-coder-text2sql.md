@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ri7elyass/qwen2.5-coder-text2sql` es un fine-tuning del modelo base Qwen2.5-Coder orientado a la tarea de traducción de lenguaje natural a consultas SQL. El nombre sugiere que el autor ha ajustado el modelo de código de Qwen para especializarlo en la generación de sentencias SQL a partir de preguntas en lenguaje natural. Sin embargo, la información pública disponible en HuggingFace es extremadamente limitada: no se proporcionan detalles sobre el tamaño, la arquitectura exacta, los datos de entrenamiento ni los hiperparámetros. La model card es una plantilla genérica sin contenido útil, y el repositorio no contiene archivos (0.0 GB). No se puede confirmar si el modelo es funcional, qué versión de Qwen2.5-Coder se usó como base, ni si ha sido evaluado.
+El modelo `ri7elyass/qwen2.5-coder-text2sql` es un fine-tuning del modelo base Qwen2.5-Coder orientado a la tarea de traducción de lenguaje natural a consultas SQL. El nombre sugiere que el autor ha ajustado el modelo de código de Qwen para especializarlo en la generación de sentencias SQL a partir de preguntas en lenguaje natural. Sin embargo, la información pública disponible en Hugging Face es extremadamente limitada: no se proporcionan detalles sobre el tamaño, la arquitectura exacta, los datos de entrenamiento ni los hiperparámetros. La model card es una plantilla genérica sin contenido útil, y el repositorio no contiene archivos (0.0 GB). No se puede confirmar si el modelo es funcional, qué versión de Qwen2.5-Coder se usó como base, ni si ha sido evaluado.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/ri7elyass/qwen2.5-coder-text2sql)
+- [Hugging Face del modelo](https://huggingface.co/ri7elyass/qwen2.5-coder-text2sql)
 - [Informe técnico de Qwen2.5-Coder (arXiv)](https://arxiv.org/abs/2409.12186)
 - [Blog oficial de Qwen2.5-Coder](https://qwen.ai/blog?id=qwen2.5-coder)
 - [Repositorio de Qwen2.5-Coder en GitHub](https://github.com/huggingface/Qwen2.5-Coder)

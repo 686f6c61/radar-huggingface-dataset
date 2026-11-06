@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`gpt2-turkish-20k-lc` es un modelo de lenguaje basado en la arquitectura GPT-2, ajustado (fine-tuning) para la generación de texto en turco. Ha sido desarrollado por el usuario `aariciah` y publicado en HuggingFace bajo el nombre `aariciah/gpt2-turkish-20k-lc`. El modelo cuenta con aproximadamente 100,6 millones de parámetros y un vocabulario reducido a 20 000 tokens (según su nombre), lo que lo sitúa en la categoría de modelos pequeños, adecuados para tareas de generación de texto con recursos limitados.
+`gpt2-turkish-20k-lc` es un modelo de lenguaje basado en la arquitectura GPT-2, ajustado (fine-tuning) para la generación de texto en turco. Ha sido desarrollado por el usuario `aariciah` y publicado en Hugging Face bajo el nombre `aariciah/gpt2-turkish-20k-lc`. El modelo cuenta con aproximadamente 100,6 millones de parámetros y un vocabulario reducido a 20 000 tokens (según su nombre), lo que lo sitúa en la categoría de modelos pequeños, adecuados para tareas de generación de texto con recursos limitados.
 
 La relevancia de este modelo radica en su enfoque específico para el idioma turco, un idioma con menos recursos que el inglés en el ecosistema de modelos abiertos. Al estar basado en GPT-2, ofrece una arquitectura probada y ampliamente documentada, aunque su tamaño y la falta de información detallada sobre el dataset de entrenamiento limitan su aplicabilidad en tareas complejas. No se han publicado resultados de benchmarks ni una descripción completa de sus capacidades, por lo que su uso en producción requiere una evaluación previa.
 
-El repositorio contiene los pesos en formato `safetensors` (2,4 GB) y la model card generada automáticamente por el Trainer de HuggingFace, que no incluye detalles sobre el dataset, el propósito o las limitaciones del modelo.
+El repositorio contiene los pesos en formato `safetensors` (2,4 GB) y la model card generada automáticamente por el Trainer de Hugging Face, que no incluye detalles sobre el dataset, el propósito o las limitaciones del modelo.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos específicos para este modelo. Existen otros GPT-2 fine-tuned para turco en HuggingFace, como `dbmdz/gpt2-turkish` o `ytu-ce-cosmos/turkish-gpt2`, pero no se conocen sus configuraciones exactas ni resultados de benchmarks. La comparación directa requeriría ejecutar los mismos prompts y métricas, lo cual no está documentado.
+No se dispone de datos comparativos específicos para este modelo. Existen otros GPT-2 fine-tuned para turco en Hugging Face, como `dbmdz/gpt2-turkish` o `ytu-ce-cosmos/turkish-gpt2`, pero no se conocen sus configuraciones exactas ni resultados de benchmarks. La comparación directa requeriría ejecutar los mismos prompts y métricas, lo cual no está documentado.
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se dispone de datos comparativos específicos para este modelo. Existen otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aariciah/gpt2-turkish-20k-lc
+- Hugging Face: https://huggingface.co/aariciah/gpt2-turkish-20k-lc
 - Modelo relacionado (variante): https://huggingface.co/aariciah/gpt2-turkish-20k
 - Ficha en LLM Explorer (variante configC): https://llm-explorer.com/model/aariciah%2Fgpt2-turkish-configC-20k,7xw7cdM09jGziAGvJ2Okqt
 - Ficha en Free2AI Tools (variante configC): https://free2aitools.com/model/aariciah/gpt2-turkish-configc-20k

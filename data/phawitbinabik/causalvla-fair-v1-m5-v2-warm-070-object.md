@@ -80,7 +80,7 @@ La información proporcionada no incluye especificaciones de otras políticas, p
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| causalvla-fair-v1-m5-v2-warm-070-object | 450.046.176 | no disponible | no disponible | apache-2.0 | HuggingFace (`phawitbinabik/…`) |
+| causalvla-fair-v1-m5-v2-warm-070-object | 450.046.176 | no disponible | no disponible | apache-2.0 | Hugging Face (`phawitbinabik/…`) |
 | Otras politicas VLA de LeRobot | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ La información proporcionada no incluye especificaciones de otras políticas, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phawitbinabik/causalvla-fair-v1-m5-v2-warm-070-object
+- Modelo en Hugging Face: https://huggingface.co/phawitbinabik/causalvla-fair-v1-m5-v2-warm-070-object
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/libero_object_image
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=lerobot/libero_object_image
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Step 5 Preview es el modelo insignia de StepFun orientado a trabajo agéntico, publicado en HuggingFace bajo el identificador `Muggle2026/Step-5-Preview` (repositorio espejo del original `stepfun-ai/Step-5-Preview`). Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) disperso con 600.000 millones de parámetros totales y 27.000 millones de parámetros activos por token, disenado para tareas de ingenieria de software a nivel de repositorio, ejecucion agéntica de horizonte largo y trabajo de conocimiento profesional, con un enfasis declarado en el dominio financiero.
+Step 5 Preview es el modelo insignia de StepFun orientado a trabajo agéntico, publicado en Hugging Face bajo el identificador `Muggle2026/Step-5-Preview` (repositorio espejo del original `stepfun-ai/Step-5-Preview`). Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) disperso con 600.000 millones de parámetros totales y 27.000 millones de parámetros activos por token, disenado para tareas de ingenieria de software a nivel de repositorio, ejecucion agéntica de horizonte largo y trabajo de conocimiento profesional, con un enfasis declarado en el dominio financiero.
 
 El modelo acepta entradas de texto e imagen y genera texto, con una ventana de contexto de hasta 1 millon de tokens y una salida maxima tambien de hasta 1 millon de tokens. Esta orientado a flujos que requieren llamadas repetidas a herramientas, ejecucion, verificacion y revision sobre informacion de contexto largo, lo que lo situa en la categoria de modelos frontera para agentes autonomos.
 
@@ -88,7 +88,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento numericos 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Step 5 Preview | 600B | 27B | 1M tokens | other | HuggingFace (FP8 y BF16), ModelScope, API |
+| Step 5 Preview | 600B | 27B | 1M tokens | other | Hugging Face (FP8 y BF16), ModelScope, API |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,9 +106,9 @@ No se dispone en la informacion proporcionada de datos de rendimiento numericos 
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/Muggle2026/Step-5-Preview
-- Repositorio HuggingFace original (FP8): https://huggingface.co/stepfun-ai/Step-5-Preview
-- Repositorio HuggingFace original (BF16): https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
+- Repositorio Hugging Face (espejo): https://huggingface.co/Muggle2026/Step-5-Preview
+- Repositorio Hugging Face original (FP8): https://huggingface.co/stepfun-ai/Step-5-Preview
+- Repositorio Hugging Face original (BF16): https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
 - ModelScope (FP8): https://modelscope.ai/models/stepfun-ai/Step-5-Preview
 - ModelScope (BF16): https://modelscope.ai/models/stepfun-ai/Step-5-Preview-BF16
 - Pagina del modelo: https://www.stepfun.com/step-5-preview

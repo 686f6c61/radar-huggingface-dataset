@@ -19,7 +19,7 @@ La relevancia de esta ficha radica en que permite ejecutar un modelo de 320B en 
 | Licencia | MIT |
 | Formato de pesos | safetensors (compressed-tensors) |
 
-Nota: el repositorio HuggingFace muestra un tamaño de 0.0 GB, probablemente un error de metadatos; el modelo contiene 36,288 tensores empaquetados INT4 más los módulos en BF16.
+Nota: el repositorio Hugging Face muestra un tamaño de 0.0 GB, probablemente un error de metadatos; el modelo contiene 36,288 tensores empaquetados INT4 más los módulos en BF16.
 
 ## Arquitectura y entrenamiento
 
@@ -93,8 +93,8 @@ Comparado con el FP8 oficial, esta versión sacrifica un ~19 % de fidelidad (KLD
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voska/GLM-5.3-Flash-W4A16
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Modelo en Hugging Face: https://huggingface.co/voska/GLM-5.3-Flash-W4A16
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Documentación de Z.ai para GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3
 - Ficha de GLM-5.3-Flash en Modal: https://modal.com/library/zai/glm-5-3-flash

@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LongLive-Plug-Wan2.2-TI2V-5B-few-step | Adaptador LoRA de destilacion few-step sobre Wan2.2-TI2V-5B | No disponible (base de 5B) | Reducidos respecto al base, sin cifra publicada | Apache 2.0 | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.2-TI2V-5B | Modelo base de difusion texto/imagen a video | 5B | Regimen estandar, sin destilar | No disponible en la informacion proporcionada | HuggingFace |
-| LongLive-Plug-Wan2.2-TI2V-5B-cfg | Adaptador LoRA complementario de guiado (CFG) | No disponible | No aplica por si solo | Apache 2.0 (segun el autor, no verificado en esta ficha) | HuggingFace |
+| LongLive-Plug-Wan2.2-TI2V-5B-few-step | Adaptador LoRA de destilacion few-step sobre Wan2.2-TI2V-5B | No disponible (base de 5B) | Reducidos respecto al base, sin cifra publicada | Apache 2.0 | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.2-TI2V-5B | Modelo base de difusion texto/imagen a video | 5B | Regimen estandar, sin destilar | No disponible en la informacion proporcionada | Hugging Face |
+| LongLive-Plug-Wan2.2-TI2V-5B-cfg | Adaptador LoRA complementario de guiado (CFG) | No disponible | No aplica por si solo | Apache 2.0 (segun el autor, no verificado en esta ficha) | Hugging Face |
 | Otros destilados few-step para difusion de video | Adaptadores o modelos destilados equivalentes | No disponible | 4-8 pasos tipicamente | Variable | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparado (calidad, FVD, coherencia temporal) entre estas alternativas en la informacion proporcionada, por lo que la comparativa se limita a aspectos de formato, licencia y disponibilidad.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado (calidad, FVD, coherencia tempor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.2-TI2V-5B-few-step
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.2-TI2V-5B-few-step
 - Modelo base Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Adaptador CFG complementario: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.2-TI2V-5B-cfg
 - Perfil del autor: https://huggingface.co/Efficient-Large-Model

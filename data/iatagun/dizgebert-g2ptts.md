@@ -103,9 +103,9 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 | Modelo | Función | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DizgeBERT-G2PTTS | Acento léxico + frontera prosódica (front-end TTS) | 110.032.904 | Fragmentos de 254 sub-tokens | cc-by-sa-4.0 | HuggingFace, requiere código personalizado |
-| DizgeBERT-Dep | Análisis de dependencias; base de este modelo | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace (`iatagun/DizgeBERT-Dep`) |
-| DizgeBERT-Joint | Análisis morfológico y *dependency parsing* conjunto | No disponible | No disponible | cc-by-sa-4 | HuggingFace (`iatagun/DizgeBERT-Joint`) |
+| DizgeBERT-G2PTTS | Acento léxico + frontera prosódica (front-end TTS) | 110.032.904 | Fragmentos de 254 sub-tokens | cc-by-sa-4.0 | Hugging Face, requiere código personalizado |
+| DizgeBERT-Dep | Análisis de dependencias; base de este modelo | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face (`iatagun/DizgeBERT-Dep`) |
+| DizgeBERT-Joint | Análisis morfológico y *dependency parsing* conjunto | No disponible | No disponible | cc-by-sa-4 | Hugging Face (`iatagun/DizgeBERT-Joint`) |
 | espeak-ng (`tr`) | Reglas de acento y síntesis | No aplica (basado en reglas) | No aplica | GPL (verificar versión) | Paquete de software libre |
 | Reglas + DizgeBERT-Morph (M1b) | Acento mediante reglas y morfología | No disponible | No disponible | No disponible | Pipeline descrito por el autor |
 
@@ -129,7 +129,7 @@ En la única métrica comparable (acierto de acento en la prueba ciega de 97 pal
 
 ## Enlaces
 
-- [Modelo en HuggingFace: iatagun/DizgeBERT-G2PTTS](https://huggingface.co/iatagun/DizgeBERT-G2PTTS)
+- [Modelo en Hugging Face: iatagun/DizgeBERT-G2PTTS](https://huggingface.co/iatagun/DizgeBERT-G2PTTS)
 - [Modelo base: iatagun/DizgeBERT-Dep](https://huggingface.co/iatagun/DizgeBERT-Dep)
 - [iatagun/DizgeBERT-Joint](https://huggingface.co/iatagun/DizgeBERT-Joint)
 - [Encoder de partida: dbmdz/electra-base-turkish-cased-discriminator](https://huggingface.co/dbmdz/electra-base-turkish-cased-discriminator)

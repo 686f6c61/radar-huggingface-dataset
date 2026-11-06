@@ -76,7 +76,7 @@ El modelo se diferencia de su base Qwen3.5-4B por la especialización en tareas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3rb3rn/moe-expert-graphrag-4b
+- Modelo en Hugging Face: https://huggingface.co/h3rb3rn/moe-expert-graphrag-4b
 - Dataset de entrenamiento: https://huggingface.co/datasets/moe-sovereign/expert-graphrag-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Supercomputador LUMI-G: https://www.lumi-supercomputer.eu/

@@ -83,8 +83,8 @@ No se han encontrado en la información proporcionada modelos directamente compa
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Talos-0.8B | 0,8B (base) + LoRA r16 | No disponible | Clasificacion tipada en un forward pass, calibrada | Apache 2.0 | HuggingFace + GitHub de Tractian |
-| Qwen/Qwen3.5-0.8B-Base | 0,8B | No disponible en la informacion | Transformer decoder generativo; requeriria prompt y parseo de salida | Apache 2.0 | HuggingFace |
+| Talos-0.8B | 0,8B (base) + LoRA r16 | No disponible | Clasificacion tipada en un forward pass, calibrada | Apache 2.0 | Hugging Face + GitHub de Tractian |
+| Qwen/Qwen3.5-0.8B-Base | 0,8B | No disponible en la informacion | Transformer decoder generativo; requeriria prompt y parseo de salida | Apache 2.0 | Hugging Face |
 | LLM generativo como juez de peticiones | Depende del modelo | Depende del modelo | Generacion de texto + parseo; sin calibracion nativa por pregunta | Depende del modelo | Multiple |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No se han encontrado en la información proporcionada modelos directamente compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tractian/talos-0.8b
+- Modelo en Hugging Face: https://huggingface.co/tractian/talos-0.8b
 - Repositorio (código, proxy y documentación): https://github.com/tractian/talos
 - Receta de entrenamiento Kev: https://github.com/jaredpalmer/kev
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base

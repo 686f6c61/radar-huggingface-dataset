@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoetok-step21700 es un checkpoint histórico de investigación en robótica publicado por el autor RainyBot en HuggingFace. Se trata de un modelo de política visuomotora (vision-language-action, VLA) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB, profundidad y características semánticas. El modelo se construye sobre la familia Wan2.2-TI2V-5B como backbone de difusión de vídeo, con codificadores congelados DINOv3 ViT-B/16 para semántica y un estimador de profundidad VDA ViT-B para la representación de profundidad.
+SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoetok-step21700 es un checkpoint histórico de investigación en robótica publicado por el autor RainyBot en Hugging Face. Se trata de un modelo de política visuomotora (vision-language-action, VLA) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB, profundidad y características semánticas. El modelo se construye sobre la familia Wan2.2-TI2V-5B como backbone de difusión de vídeo, con codificadores congelados DINOv3 ViT-B/16 para semántica y un estimador de profundidad VDA ViT-B para la representación de profundidad.
 
 El checkpoint corresponde al paso de optimizador final 21700 de 21700, y se publica de forma explícita como archivo histórico ("historical archive"), no como una versión compatible con el evaluador actual de SemWAM v2. El autor advierte que el formato pre-v2 se publica byte a byte, sin `checkpoint_version=2`, y que no es compatible con la herramienta de evaluación actual. La revisión del código fuente original de entrenamiento es desconocida.
 
@@ -80,6 +80,6 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoetok-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-sem-dep-vmoetok-step21700
 - Backbone base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

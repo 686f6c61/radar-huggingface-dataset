@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albef for Matching es un repositorio experimental publicado por el usuario tylerthompson en HuggingFace bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados, sino de un esqueleto de codigo que implementa una arquitectura de tipo Albef (nombre que en la literatura original corresponde a "Align before Fuse", un modelo vision-lenguaje) orientada a una tarea de emparejamiento o matching. El propio autor declara explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo con benchmark asociado.
+Albef for Matching es un repositorio experimental publicado por el usuario tylerthompson en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados, sino de un esqueleto de codigo que implementa una arquitectura de tipo Albef (nombre que en la literatura original corresponde a "Align before Fuse", un modelo vision-lenguaje) orientada a una tarea de emparejamiento o matching. El propio autor declara explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo con benchmark asociado.
 
 El repositorio incluye un fichero `predict.py` con la implementacion y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y el mencionado checkpoint. La model card indica que la escala configurada es "giant" y describe tecnicas concretas: atencion de ventana deslizante (sliding window), fusion tipo Tucker, activacion swish y normalizacion RMSNorm. Sin embargo, los metadatos reales del fichero safetensors reportan 49.600 parametros totales, una cifra incompatible con cualquier escala denominada "giant", lo que sugiere que el checkpoint publicado corresponde a una inicializacion minima y no a la configuracion completa descrita.
 
@@ -45,7 +45,7 @@ Dado que el artefacto publicado es una inicializacion sin entrenar, los casos de
 - Prototipado de arquitectura: servir como base para modificar la atencion de ventana deslizante, la fusion Tucker o la normalizacion RMSNorm y observar el efecto en un entorno controlado.
 - Plantilla de configuracion de experimentos: reutilizar `training_args.json` como punto de partida para definir recetas con Lion y calentamiento lineal en otros proyectos.
 - Reproduccion de baselines: el autor sugiere evaluar contra un conjunto de validacion emparejado, reportar la metrica de tarea en al menos tres semillas e incluir una baseline de capacidad equivalente.
-- Docencia y formacion: mostrar la estructura de un repositorio de modelo en HuggingFace (config, safetensors, script de prediccion) sin necesidad de recursos de computo elevados.
+- Docencia y formacion: mostrar la estructura de un repositorio de modelo en Hugging Face (config, safetensors, script de prediccion) sin necesidad de recursos de computo elevados.
 - Integracion en pruebas de CI: validar que las APIs de carga de safetensors y PyTorch funcionan correctamente en el entorno de integracion continua del equipo.
 - Investigacion sobre matching multimodal: si se entrena, podria aplicarse a tareas de recuperacion o alineacion entre modalidades, aunque no hay evidencia publicada al respecto.
 
@@ -79,5 +79,5 @@ No disponible. El repositorio es una implementacion experimental sin entrenar y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tylerthompson/albef-matching
+- Hugging Face: https://huggingface.co/tylerthompson/albef-matching
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a un paper asociado, a un repositorio de codigo adicional ni a demos. Los resultados devueltos por la busqueda corresponden a foros de television y redes sociales sin relacion con este artefacto.

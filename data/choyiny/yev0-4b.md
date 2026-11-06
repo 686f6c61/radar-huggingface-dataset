@@ -88,7 +88,7 @@ Lectura que hace el propio autor: frente a TEV, la ventaja zero-shot es de 5.0 p
 
 | Modelo | Parametros | Contexto | Accuracy DecideBench (con ejemplos) | Pair accuracy | Zero-shot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| yev0-4b | 4,2 B | no disponible | 94.5 | 89.0 | 95.0 | Apache-2.0 | pesos abiertos en HuggingFace |
+| yev0-4b | 4,2 B | no disponible | 94.5 | 89.0 | 95.0 | Apache-2.0 | pesos abiertos en Hugging Face |
 | TEV (`togethercomputer/Tev1-4B-experimental`) | aproximadamente 4 B | no disponible | 92.75 | 86.0 | 90.0 | no disponible | pesos abiertos |
 | imajev-4b | aproximadamente 4 B | no disponible | 95.0 | 90.5 | no disponible | no disponible | pesos abiertos |
 | JEV (AI Space) | no disponible | no disponible | 98.0 | 96.0 | 98.25 | cerrado | solo API |
@@ -110,7 +110,7 @@ Lectura que hace el propio autor: frente a TEV, la ventaja zero-shot es de 5.0 p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/choyiny/yev0-4b
+- Modelo en Hugging Face: https://huggingface.co/choyiny/yev0-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset de evaluacion: https://huggingface.co/datasets/choyiny/decidebench
 - Leaderboard DecideBench v1.0: https://huggingface.co/spaces/choyiny/decidebench-leaderboard

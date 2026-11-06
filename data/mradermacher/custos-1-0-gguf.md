@@ -2,7 +2,7 @@
 
 ## Resumen
 
-custos-1.0-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo custos-1.0, publicada por el usuario mradermacher, conocido en HuggingFace por distribuir versiones cuantizadas de modelos de terceros para su uso con llama.cpp y herramientas compatibles. No se trata de un modelo original, sino de una conversión del repositorio base qianqianzhisuan/custos-1.0, cuyo contenido técnico no se detalla en la información disponible.
+custos-1.0-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo custos-1.0, publicada por el usuario mradermacher, conocido en Hugging Face por distribuir versiones cuantizadas de modelos de terceros para su uso con llama.cpp y herramientas compatibles. No se trata de un modelo original, sino de una conversión del repositorio base qianqianzhisuan/custos-1.0, cuyo contenido técnico no se detalla en la información disponible.
 
 La model card del repositorio es mínima: únicamente incluye metadatos internos del proceso de cuantización (versión del script, tipo de conversión `hf`, lista de cuantizaciones generadas) y una referencia al modelo original. No se aportan datos sobre arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia, lo que limita considerablemente cualquier evaluación técnica rigurosa.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, descriptiva: documenta la existencia 
 
 No se dispone de información sobre la arquitectura del modelo base custos-1.0 (transformer, MoE, híbrido u otra), ni sobre el volumen o composición de los datos de entrenamiento, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o similares. La model card del repositorio GGUF no incluye ninguna sección técnica al respecto.
 
-Lo único verificable a partir de los metadatos es el proceso de conversión: se ha utilizado la versión 2 del script de cuantización, con conversión de tipo `hf` (es decir, partiendo de pesos en formato HuggingFace) y cuantización de tensores de salida activada (`output_tensor_quantised: 1`). El flag `skip_mmproj: 1` sugiere que no se ha generado un proyector multimodal, lo que podría indicar que el modelo base es solo de texto o que la conversión no cubre componentes de visión.
+Lo único verificable a partir de los metadatos es el proceso de conversión: se ha utilizado la versión 2 del script de cuantización, con conversión de tipo `hf` (es decir, partiendo de pesos en formato Hugging Face) y cuantización de tensores de salida activada (`output_tensor_quantised: 1`). El flag `skip_mmproj: 1` sugiere que no se ha generado un proyector multimodal, lo que podría indicar que el modelo base es solo de texto o que la conversión no cubre componentes de visión.
 
 ## Capacidades
 

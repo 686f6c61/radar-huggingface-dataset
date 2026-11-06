@@ -77,8 +77,8 @@ No se dispone de datos de benchmarks estandar ni de modelos comparables directam
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sanad (Operator/Guardian/Verifier) | 4B + LoRA r16 | 6144 / 4096 tokens (entrenamiento) | Operaciones VMware vSphere, tool calling, bilingue en/ar | Apache-2.0 | HuggingFace (RabiaaAi/sanad) |
-| Qwen/Qwen3.5-4B (base) | 4B | No disponible en la informacion | Proposito general | No disponible en la informacion | HuggingFace |
+| Sanad (Operator/Guardian/Verifier) | 4B + LoRA r16 | 6144 / 4096 tokens (entrenamiento) | Operaciones VMware vSphere, tool calling, bilingue en/ar | Apache-2.0 | Hugging Face (RabiaaAi/sanad) |
+| Qwen/Qwen3.5-4B (base) | 4B | No disponible en la informacion | Proposito general | No disponible en la informacion | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,6 +95,6 @@ No se dispone de datos de benchmarks estandar ni de modelos comparables directam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RabiaaAi/sanad
+- Hugging Face: https://huggingface.co/RabiaaAi/sanad
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Copia Unsloth del modelo base: https://huggingface.co/unsloth/Qwen3.5-4B

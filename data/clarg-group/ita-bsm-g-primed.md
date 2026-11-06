@@ -6,7 +6,7 @@ BSM-G (primed) es un modelo de puntuación base (base score model, BSM) diseñad
 
 El modelo se construye sobre el backbone Qwen/Qwen3-8B, que permanece congelado durante todo el proceso. Lo único entrenado es una cabeza de regresión (`regression_head.safetensors`, configurada por `model_config.json`), que fue cebada (primed) con puntuaciones base obtenidas mediante prompting al propio backbone. No hubo adaptadores ni ajuste fino adicional del modelo base.
 
-Es relevante porque ejemplifica un enfoque neurosimbólico híbrido: usa un LLM de 8 000 millones de parámetros como extractor de representaciones y delega la parte estrictamente lógica a un componente simbólico (la semántica DF-QuAD), lo que permite verificación de afirmaciones con trazabilidad argumental. El repositorio de HuggingFace no contiene pesos del backbone (tamaño de repo 0.0 GB) y no registra descargas ni valoraciones en el momento de la consulta.
+Es relevante porque ejemplifica un enfoque neurosimbólico híbrido: usa un LLM de 8 000 millones de parámetros como extractor de representaciones y delega la parte estrictamente lógica a un componente simbólico (la semántica DF-QuAD), lo que permite verificación de afirmaciones con trazabilidad argumental. El repositorio de Hugging Face no contiene pesos del backbone (tamaño de repo 0.0 GB) y no registra descargas ni valoraciones en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -62,26 +62,26 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BSM-G (primed) | 8 000 M (backbone) + cabeza de regresión | No disponible | Puntuación de argumentos para ITA | MIT | HuggingFace (repo de 0.0 GB; backbone aparte) |
-| Qwen3-8B | 8 000 M | No disponible en esta ficha | LLM generativo de propósito general | No disponible en esta ficha | HuggingFace |
+| BSM-G (primed) | 8 000 M (backbone) + cabeza de regresión | No disponible | Puntuación de argumentos para ITA | MIT | Hugging Face (repo de 0.0 GB; backbone aparte) |
+| Qwen3-8B | 8 000 M | No disponible en esta ficha | LLM generativo de propósito general | No disponible en esta ficha | Hugging Face |
 | Otros BSM del mismo grupo | No disponible | No disponible | Puntuación de argumentos para ITA | No disponible | Repositorio ITA (según la model card) |
 
 No se dispone de datos de rendimiento comparado con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB: no contiene los pesos del backbone, que deben descargarse por separado desde Qwen/Qwen3-8B.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB: no contiene los pesos del backbone, que deben descargarse por separado desde Qwen/Qwen3-8B.
 - La licencia MIT de los pesos está supeditada a la licencia de Qwen/Qwen3-8B y a los términos de los datos de entrenamiento, según indica la propia model card; conviene revisarlos antes de un uso comercial.
 - Los argumentos de entrenamiento fueron generados por GPT-5, lo que puede introducir sesgos y artefactos estilísticos del generador en las puntuaciones aprendidas.
 - El modelo solo puntúa argumentos; no genera explicaciones ni justificaciones textuales de la puntuación asignada.
 - Riesgo de alucinación: no aplica en el sentido generativo (la salida es un escalar), pero la puntuación puede ser incorrecta o sobreconfiada ante argumentos fuera de la distribución de entrenamiento.
 - Idiomas soportados no documentados; el rendimiento en castellano no está verificado.
-- Ausencia de descargas y valoraciones en HuggingFace: no hay evidencia de validación por parte de la comunidad.
+- Ausencia de descargas y valoraciones en Hugging Face: no hay evidencia de validación por parte de la comunidad.
 - No se documentan limitaciones de longitud de contexto específicas para la tarea de puntuación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CLArg-group/ita-bsm-g-primed
+- Modelo en Hugging Face: https://huggingface.co/CLArg-group/ita-bsm-g-primed
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio ITA: https://github.com/CLArg-group/inference-time-argumentation
 - Artículo *Neurosymbolic Learning for Inference-Time Argumentation*: no disponible (no se proporciona enlace)

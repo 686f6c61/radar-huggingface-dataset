@@ -90,7 +90,7 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoZaokk/whisper-large-v3-turkish-general-ggml
+- Modelo en Hugging Face: https://huggingface.co/JoaoZaokk/whisper-large-v3-turkish-general-ggml
 - Modelo base: https://huggingface.co/turkmedstt/whisper-large-v3-turkish-general
 - Motor whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Perfil del autor de la conversion: https://huggingface.co/JoaoZaokk

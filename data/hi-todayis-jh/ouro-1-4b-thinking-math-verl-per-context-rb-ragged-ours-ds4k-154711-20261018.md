@@ -87,7 +87,7 @@ Los datos de contexto, benchmarks y disponibilidad de las alternativas no figura
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-per-context-rb-ragged-ours-ds4k-154711-20261018
+- Repositorio Hugging Face del modelo: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-per-context-rb-ragged-ours-ds4k-154711-20261018
 - Modelo base `ByteDance/Ouro-1.4B-Thinking`: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de rollouts de entrenamiento: https://huggingface.co/datasets/hi-todayis-jh/ouro-1.4b-thinking-math-verl-per-context-rb-ragged-ours-ds4k-154711-20261018-rollouts
 - Dataset citado en los metadatos `DigitalLearningGmbH/MATH-lighteval`: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval

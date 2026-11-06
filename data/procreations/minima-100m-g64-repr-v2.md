@@ -58,12 +58,12 @@ No se dispone de informacion sobre modelos comparables. No se conocen alternativ
 - La cuantizacion ternaria puede degradar la calidad de las representaciones frente al modelo original de 350M, aunque no hay metricas que lo confirmen.
 - No se ha documentado el comportamiento en cuanto a sesgos, alucinaciones o idiomas soportados.
 - La licencia `lfm-open-license-v1.0` puede imponer restricciones para uso comercial; es necesario revisar el texto completo de la licencia antes de desplegar en produccion.
-- El modelo es un artefacto experimental (version 2) con cero descargas y cero likes en HuggingFace; no hay evidencia de validacion externa.
+- El modelo es un artefacto experimental (version 2) con cero descargas y cero likes en Hugging Face; no hay evidencia de validacion externa.
 - La informacion sobre la configuracion exacta (grupo, rango de recuperacion, contexto) reside en `minima_config.json`, que no se ha podido inspeccionar en esta ficha.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProCreations/minima-100m-g64-repr-v2
+- Hugging Face: https://huggingface.co/ProCreations/minima-100m-g64-repr-v2
 - Repositorio de la libreria minima: https://github.com/SSHDotCodes/minima
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M/blob/main/LICENSE
-- Perfil del autor en HuggingFace: https://huggingface.co/ProCreations/models
+- Perfil del autor en Hugging Face: https://huggingface.co/ProCreations/models

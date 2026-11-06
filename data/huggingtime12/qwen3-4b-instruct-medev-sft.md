@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-MedEV-SFT es un checkpoint publicado en HuggingFace por el usuario huggingtime12 bajo el identificador `huggingtime12/Qwen3-4B-Instruct-MedEV-SFT`. Por la nomenclatura del repositorio, se trata de un ajuste fino supervisado (SFT) sobre el modelo base Qwen3-4B-Instruct, presumiblemente orientado a un dominio médico ("Med") y con posible evaluación o anotación ("EV") no documentada. El autor no ha publicado información sobre el proceso de entrenamiento, los datos utilizados ni los objetivos del ajuste.
+Qwen3-4B-Instruct-MedEV-SFT es un checkpoint publicado en Hugging Face por el usuario huggingtime12 bajo el identificador `huggingtime12/Qwen3-4B-Instruct-MedEV-SFT`. Por la nomenclatura del repositorio, se trata de un ajuste fino supervisado (SFT) sobre el modelo base Qwen3-4B-Instruct, presumiblemente orientado a un dominio médico ("Med") y con posible evaluación o anotación ("EV") no documentada. El autor no ha publicado información sobre el proceso de entrenamiento, los datos utilizados ni los objetivos del ajuste.
 
 El repositorio contiene únicamente pesos en formato safetensors (0,5 GB de tamaño total) y una model card autogenerada por la plataforma, sin secciones completadas. No hay pipeline declarado, ni licencia, ni idiomas especificados, ni resultados de evaluación. El número de descargas y likes es cero en el momento de la consulta, lo que indica que el modelo no ha sido validado por la comunidad.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-MedEV-SFT | 4B (por nomenclatura) | no disponible | no disponible | HuggingFace, 0 descargas | Sin documentación ni evaluación |
-| Qwen3-4B-Instruct (base) | 4B | 32.768 tokens (según especificaciones públicas de Qwen3) | Apache 2.0 (según Qwen3) | HuggingFace, ampliamente usado | Modelo oficial con evaluación publicada |
-| Llama 3.2 3B Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado | Alternativa de tamaño similar con licencia restrictiva |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | HuggingFace, ampliamente usado | Buen rendimiento en razonamiento para su tamaño |
+| Qwen3-4B-Instruct-MedEV-SFT | 4B (por nomenclatura) | no disponible | no disponible | Hugging Face, 0 descargas | Sin documentación ni evaluación |
+| Qwen3-4B-Instruct (base) | 4B | 32.768 tokens (según especificaciones públicas de Qwen3) | Apache 2.0 (según Qwen3) | Hugging Face, ampliamente usado | Modelo oficial con evaluación publicada |
+| Llama 3.2 3B Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado | Alternativa de tamaño similar con licencia restrictiva |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | Hugging Face, ampliamente usado | Buen rendimiento en razonamiento para su tamaño |
 
 La comparativa es orientativa: los datos del checkpoint MedEV-SFT no están confirmados por el autor, mientras que las cifras de los modelos oficiales provienen de sus respectivas documentaciones públicas.
 
@@ -82,7 +82,7 @@ La comparativa es orientativa: los datos del checkpoint MedEV-SFT no están conf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingtime12/Qwen3-4B-Instruct-MedEV-SFT
+- Repositorio Hugging Face: https://huggingface.co/huggingtime12/Qwen3-4B-Instruct-MedEV-SFT
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact
 - Documentación de Qwen3 (modelo base presumible): no disponible en la información proporcionada

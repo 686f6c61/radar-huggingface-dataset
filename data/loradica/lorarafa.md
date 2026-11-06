@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| loradica/lorarafa | LoRA de identidad sobre FLUX.1-dev | No disponible (adaptador de 0,1 GB; base de 12 000 M) | 1024x1024 documentado | No disponible (base: no comercial) | HuggingFace, 0 descargas |
-| FLUX.1-dev (base) | Transformer de difusión MMDiT, flujo rectificado | 12 000 M | 1024x1024 y resoluciones derivadas | FLUX.1 [dev] Non-Commercial License | HuggingFace, muy extendido |
-| FLUX.1-schnell | Transformer de difusión destilado, 1-4 pasos | 12 000 M | 1024x1024 | Apache 2.0 | HuggingFace, muy extendido |
+| loradica/lorarafa | LoRA de identidad sobre FLUX.1-dev | No disponible (adaptador de 0,1 GB; base de 12 000 M) | 1024x1024 documentado | No disponible (base: no comercial) | Hugging Face, 0 descargas |
+| FLUX.1-dev (base) | Transformer de difusión MMDiT, flujo rectificado | 12 000 M | 1024x1024 y resoluciones derivadas | FLUX.1 [dev] Non-Commercial License | Hugging Face, muy extendido |
+| FLUX.1-schnell | Transformer de difusión destilado, 1-4 pasos | 12 000 M | 1024x1024 | Apache 2.0 | Hugging Face, muy extendido |
 | SDXL + LoRA de identidad | U-Net de difusión con adaptadores LoRA | 3 500 M (base) | 1024x1024 | CreativeML Open RAIL++-M | Ecosistema maduro, multitud de adaptadores |
 
 No se dispone de datos de rendimiento comparado (similitud facial, adherencia al prompt ni fidelidad de identidad) que permitan contrastar `lorarafa` con otros LoRA de identidad; la comparación anterior se limita a características estructurales y de licencia.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado (similitud facial, adherencia al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loradica/lorarafa
+- Modelo en Hugging Face: https://huggingface.co/loradica/lorarafa
 - Archivos del repositorio: https://huggingface.co/loradica/lorarafa/tree/main
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Repositorio oficial de FLUX (código de inferencia): https://github.com/black-forest-labs/flux

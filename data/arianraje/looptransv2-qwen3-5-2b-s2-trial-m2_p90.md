@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Profundidad ejecutada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| looptransv2-qwen3.5-2b-s2-trial-m2_p90 | 2B | No disponible | 36 capas (24 base + repeticiones) | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3.5-2B (profesor) | 2B | No disponible | 24 capas | Apache 2.0 | HuggingFace (modelo base) |
+| looptransv2-qwen3.5-2b-s2-trial-m2_p90 | 2B | No disponible | 36 capas (24 base + repeticiones) | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3.5-2B (profesor) | 2B | No disponible | 24 capas | Apache 2.0 | Hugging Face (modelo base) |
 | Alternativas de 2B comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento del modelo ni de alternativas comparables en la información proporcionada, por lo que la comparación se limita a parámetros, profundidad y licencia.
@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m2_p90
+- Hugging Face: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m2_p90
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del proyecto: https://github.com/arianraje/LoopTrans (rama `v2`, commit `1463f44`)
-- Configuración de entrenamiento: `run/config.json` dentro del repositorio de HuggingFace
+- Configuración de entrenamiento: `run/config.json` dentro del repositorio de Hugging Face
 - Restricciones de entorno: `scripts/env/constraints.txt` en el repositorio de GitHub

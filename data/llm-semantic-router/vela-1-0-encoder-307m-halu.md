@@ -4,7 +4,7 @@
 
 Vela-1.0-Encoder-307M-Halu es un modelo encoder de 307.531.778 parametros desarrollado por llm-semantic-router, un ajuste fino de llm-semantic-router/Vela-1.0-Encoder-307M sobre tareas de deteccion de alucinaciones. Su funcion no es generar texto, sino etiquetar token a token que fragmentos de una respuesta no estan respaldados por la evidencia proporcionada, devolviendo spans marcados como `supported` (0) o `hallucinated` (1) con desplazamientos en caracteres Unicode. Es, por tanto, un verificador de respuestas fundamentadas, no un modelo generativo.
 
-El modelo se apoya en la arquitectura ModernBERT, una familia de encoders transformer con atencion de complejidad eficiente y ventanas de contexto largas para su tamano, lo que le permite procesar hasta 8.192 tokens de entrada (incluyendo tokens especiales) en una sola pasada. Se distribuye bajo licencia Apache 2.0, con pesos en safetensors y pipeline `token-classification`, lo que lo hace integrable en pipelines existentes de HuggingFace Transformers (probado con la version 4.57.6).
+El modelo se apoya en la arquitectura ModernBERT, una familia de encoders transformer con atencion de complejidad eficiente y ventanas de contexto largas para su tamano, lo que le permite procesar hasta 8.192 tokens de entrada (incluyendo tokens especiales) en una sola pasada. Se distribuye bajo licencia Apache 2.0, con pesos en safetensors y pipeline `token-classification`, lo que lo hace integrable en pipelines existentes de Hugging Face Transformers (probado con la version 4.57.6).
 
 Su relevancia actual esta ligada al ecosistema de enrutado semantico y verificacion de respuestas del proyecto vLLM Semantic Router: en aplicaciones RAG o de agentes, permite auditar si la respuesta final se sostiene sobre el contexto recuperado o las salidas de herramientas. La distincion es importante: el modelo evalua soporte respecto a la evidencia aportada, no veracidad factual en el mundo real, y un resultado vacio no garantiza que la respuesta sea correcta.
 
@@ -80,7 +80,7 @@ Resultados publicados por el autor sobre un conjunto de test reservado de 10.698
 - Al ser un modelo de 307M de parametros, cabe en cualquier GPU de consumo con 4 GB o mas de VRAM (GTX 1650 4 GB, RTX 3050, RTX 3060, RTX 4060, RTX 4090, etc.) y tambien puede ejecutarse en CPU para cargas de baja concurrencia.
 - Para lotes grandes y secuencias cercanas al limite de 8.192 tokens, se recomienda una GPU con al menos 8-12 GB para aprovechar el paralelismo por lotes.
 - GPU de centro de datos (A100, H100, L40S) solo estan justificadas si se necesita throughput muy alto o despliegue multi-tenant; no son necesarias por tamano de modelo.
-- Opciones de despliegue: HuggingFace Transformers con `AutoModelForTokenClassification` (probado con 4.57.6, `attn_implementation="sdpa"`, `config.reference_compile = False`); exportacion a ONNX Runtime o TorchScript es viable al ser un encoder denso. La compatibilidad de este pipeline concreto con vLLM, TGI o llama.cpp no esta confirmada en la informacion disponible; llama.cpp y Ollama no aplican de forma directa porque el modelo no es generativo.
+- Opciones de despliegue: Hugging Face Transformers con `AutoModelForTokenClassification` (probado con 4.57.6, `attn_implementation="sdpa"`, `config.reference_compile = False`); exportacion a ONNX Runtime o TorchScript es viable al ser un encoder denso. La compatibilidad de este pipeline concreto con vLLM, TGI o llama.cpp no esta confirmada en la informacion disponible; llama.cpp y Ollama no aplican de forma directa porque el modelo no es generativo.
 - Latencia y throughput: no disponible. Al no haber decodificacion autoregresiva, el coste de inferencia es el de una unica pasada de encoder y crece con la longitud de la secuencia de entrada, no con la longitud de la salida.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Halu
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Halu
 - Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
 - Coleccion Vela 1.0 Router Models: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
 - Resultados completos de evaluacion (`scores.json`): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Halu/blob/main/scores.json

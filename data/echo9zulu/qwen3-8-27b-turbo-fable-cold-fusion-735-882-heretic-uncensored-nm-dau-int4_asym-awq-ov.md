@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Echo9Zulu publica en HuggingFace una variante de modelo de lenguaje de 27 mil millones de parametros, aparentemente basada en Qwen3.8-27B. El nombre del repositorio incluye una larga cadena de identificadores ("TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU") que sugiere un fine-tune experimental, con una orientacion "uncensored" y un marcado de rendimiento en benchmarks de razonamiento (ARC). El modelo se distribuye como una cuantizacion int4 asimetrica AWQ y en formato OpenVINO ("ov"), lo que apunta a un despliegue optimizado para hardware Intel, con un peso total de repositorio de 15.7 GB. La licencia es Apache 2.0.
+Echo9Zulu publica en Hugging Face una variante de modelo de lenguaje de 27 mil millones de parametros, aparentemente basada en Qwen3.8-27B. El nombre del repositorio incluye una larga cadena de identificadores ("TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU") que sugiere un fine-tune experimental, con una orientacion "uncensored" y un marcado de rendimiento en benchmarks de razonamiento (ARC). El modelo se distribuye como una cuantizacion int4 asimetrica AWQ y en formato OpenVINO ("ov"), lo que apunta a un despliegue optimizado para hardware Intel, con un peso total de repositorio de 15.7 GB. La licencia es Apache 2.0.
 
 La informacion disponible es muy escasa: la model card no incluye descripcion tecnica, datos de entrenamiento, idiomas soportados ni benchmarks propios. Por tanto, esta ficha se limita a los datos observables (nombre, tamano, licencia, formato) y a las referencias encontradas en la busqueda web, que corresponden a variantes muy similares publicadas por otro autor. No se dispone de documentacion oficial sobre capacidades o rendimiento de este modelo en concreto.
 
@@ -59,7 +59,7 @@ Nota: los valores de la tabla proceden de una variante distinta y se incluyen un
 - VRAM estimada: no disponible oficialmente. El tamano del repositorio (15.7 GB) sugiere que los pesos ocupan alrededor de 15.7 GB, por lo que se necesita al menos esa cantidad de memoria para cargarlos.
 - GPU recomendadas: no disponibles. Al estar en formato OpenVINO, el modelo puede ejecutarse en CPU Intel, iGPU Intel o GPU Intel Arc. Tambien podria utilizarse en GPU NVIDIA a traves de OpenVINO, aunque no hay confirmacion.
 - Consumer GPU: no se dispone de datos. Un modelo de 27B en int4 generalmente requiere 16 GB o mas de VRAM, pero este caso no esta documentado.
-- Opciones de despliegue: OpenVINO Runtime, HuggingFace Optimum Intel, y potencialmente llama.cpp si se convierte a GGUF.
+- Opciones de despliegue: OpenVINO Runtime, Hugging Face Optimum Intel, y potencialmente llama.cpp si se convierte a GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ Nota: los valores de la tabla proceden de una variante distinta y se incluyen un
 | Parametros | 27B (segun nombre) | 27B (segun nombre) | 27B (segun nombre) |
 | Cuantizacion | int4 AWQ (OpenVINO) | GGUF, 8-bit y 4-bit | no disponible |
 | Licencia | Apache 2.0 | Apache 2.0 | no disponible |
-| Disponibilidad | HuggingFace | HuggingFace | no disponible |
+| Disponibilidad | Hugging Face | Hugging Face | no disponible |
 | Benchmarks publicados | no disponible | ARC-C 735, ARC-E 880 (8-bit) | no disponible |
 
 No existen comparativas oficiales publicadas que enfrenten estos modelos entre si.

@@ -6,7 +6,7 @@ gr00t-n1.6-aloha-pick-cubes-into-cup es un fine-tune de robótica del modelo fun
 
 El interés de esta ficha es acotado: no es un modelo de propósito general, sino un artefacto de investigación que muestra el flujo de trabajo de fine-tuning con la etiqueta `NEW_EMBODIMENT` del stack Isaac-GR00T sobre un embodiment concreto. Su valor práctico está en reproducir la receta de ajuste y en servir como referencia para quien quiera adaptar GR00T N1.6 a su propio robot, más que en desplegarlo en producción tal cual.
 
-El modelo no tiene descargas ni likes en HuggingFace en el momento de redactar esta ficha, la evaluación publicada es en lazo abierto sobre trayectorias de entrenamiento (no held-out) y la licencia es la NVIDIA Open Model License, heredada del modelo base. La búsqueda web asociada no devolvió resultados relevantes sobre el modelo.
+El modelo no tiene descargas ni likes en Hugging Face en el momento de redactar esta ficha, la evaluación publicada es en lazo abierto sobre trayectorias de entrenamiento (no held-out) y la licencia es la NVIDIA Open Model License, heredada del modelo base. La búsqueda web asociada no devolvió resultados relevantes sobre el modelo.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El modelo no tiene descargas ni likes en HuggingFace en el momento de redactar e
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio solo distribuye pesos en safetensors |
 | Idiomas soportados | no disponible; la unica instruccion de tarea del dataset esta en ingles |
-| Licencia | nvidia-open-model-license (campo `license: other` en HuggingFace) |
+| Licencia | nvidia-open-model-license (campo `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (2 shards por checkpoint: `model-00001-of-00002.safetensors` y `model-00002-of-00002.safetensors`, con `model.safetensors.index.json`) |
 | Tarea (pipeline) | robotics |
 | Modelo base | nvidia/GR00T-N1.6-3B (fine-tune) |
@@ -27,7 +27,7 @@ El modelo no tiene descargas ni likes en HuggingFace en el momento de redactar e
 | Horizonte de accion | 32 pasos a 50 Hz = 0,64 s por chunk |
 | Entradas visuales | 4 camaras RGB 480x640 (`camera_high`, `camera_low`, `camera_wrist_left`, `camera_wrist_right`) |
 | Tamano del repositorio | 26,3 GB (4 checkpoints, solo inferencia) |
-| Fecha de creacion / actualizacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-11 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Tarea / dominio | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup | 3B | VLA, una tarea ALOHA (91 episodios) | no disponible | nvidia-open-model-license | HuggingFace, 0 descargas, 0 likes |
-| nvidia/GR00T-N1.6-3B (base) | 3B | VLA fundacional multi-embodiment | no disponible | nvidia-open-model-license | HuggingFace (modelo base) |
+| happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup | 3B | VLA, una tarea ALOHA (91 episodios) | no disponible | nvidia-open-model-license | Hugging Face, 0 descargas, 0 likes |
+| nvidia/GR00T-N1.6-3B (base) | 3B | VLA fundacional multi-embodiment | no disponible | nvidia-open-model-license | Hugging Face (modelo base) |
 | Otros fine-tunes de GR00T N1.6 sobre ALOHA | no disponible | VLA, tareas pick-and-place | no disponible | no disponible | no disponible |
 | Politicas de imitacion especificas de ALOHA (por ejemplo ACT o Diffusion Policy) | no disponible | manipulacion bimanual supervisada | no disponible | no disponible | no disponible |
 
@@ -103,11 +103,11 @@ No se dispone de datos comparativos de rendimiento (tasas de exito en lazo cerra
 - Ausencia de estado de entrenamiento: el repositorio solo incluye ficheros de inferencia, sin optimizador, scheduler, RNG ni estado del trainer, por lo que no se puede reanudar el entrenamiento desde estos checkpoints sin reiniciarlo.
 - Adopcion nula: 0 descargas y 0 likes, sin validacion de terceros ni issues publicos; el artefacto no ha sido contrastado por la comunidad.
 - Reproducibilidad parcial: se documentan hiperparametros y horas de entrenamiento, pero no la semilla ni el commit exacto del repositorio Isaac-GR00T empleado.
-- Metadatos de fecha inusuales en HuggingFace (creacion y actualizacion el 2026-09-11), a tener en cuenta al citar el modelo.
+- Metadatos de fecha inusuales en Hugging Face (creacion y actualizacion el 2026-09-11), a tener en cuenta al citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup
+- Modelo en Hugging Face: https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.6-3B
 - Repositorio Isaac-GR00T (NVIDIA): https://github.com/NVIDIA/Isaac-GR00T
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

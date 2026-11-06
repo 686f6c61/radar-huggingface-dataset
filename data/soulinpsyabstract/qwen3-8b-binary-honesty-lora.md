@@ -4,7 +4,7 @@
 
 El modelo `SoulInPsyAbstract/qwen3-8b-binary-honesty-lora` es un adaptador LoRA (PEFT) publicado por el usuario SoulInPsyAbstract sobre el modelo base denso `Qwen/Qwen3-8B`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango que debe cargarse junto al checkpoint base de Qwen3-8B para poder ejecutar inferencia. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, con la libreria `peft` como framework declarado y la etiqueta de pipeline `text-generation`.
 
-El identificador del modelo (`binary-honesty-lora`) sugiere un ajuste fino orientado a tareas de honestidad con respuesta binaria, pero esta interpretacion es una inferencia a partir del nombre: la model card publicada es la plantilla generica de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay documentacion del autor sobre el dataset de entrenamiento, los hiperparametros, la licencia ni los idiomas soportados.
+El identificador del modelo (`binary-honesty-lora`) sugiere un ajuste fino orientado a tareas de honestidad con respuesta binaria, pero esta interpretacion es una inferencia a partir del nombre: la model card publicada es la plantilla generica de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay documentacion del autor sobre el dataset de entrenamiento, los hiperparametros, la licencia ni los idiomas soportados.
 
 Su relevancia actual es limitada y de caracter experimental: se publico el 13 de septiembre de 2026, acumula 0 descargas y 0 likes, y no incluye evaluacion alguna. Resulta util unicamente como artefacto de investigacion reproducible para quien quiera auditar que hace realmente el adaptador, o como punto de partida para replicar tecnicas de alineacion en modelos Qwen3 de 8.000 millones de parametros.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|
-| qwen3-8b-binary-honesty-lora (este adaptador) | Adaptador sobre base de ~8.200 M | No especificado en la card; 32.768 nativos en el base | No disponible | HuggingFace, 0 descargas, 0 likes | No disponible |
+| qwen3-8b-binary-honesty-lora (este adaptador) | Adaptador sobre base de ~8.200 M | No especificado en la card; 32.768 nativos en el base | No disponible | Hugging Face, 0 descargas, 0 likes | No disponible |
 | Qwen/Qwen3-8B (modelo base) | ~8.200 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente distribuido | Publicado por el equipo Qwen |
 | meta-llama/Llama-3.1-8B | ~8.000 M | 128.000 | Licencia comunitaria de Llama 3.1 | Ampliamente distribuido | Publicado por Meta |
 | mistralai/Mistral-7B-v0.3 | ~7.200 M | 32.000 | Apache 2.0 | Ampliamente distribuido | Publicado por Mistral AI |
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparables para este adaptador concreto, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoulInPsyAbstract/qwen3-8b-binary-honesty-lora
+- Modelo en Hugging Face: https://huggingface.co/SoulInPsyAbstract/qwen3-8b-binary-honesty-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Documentacion de transformers: https://huggingface.co/docs/transformers

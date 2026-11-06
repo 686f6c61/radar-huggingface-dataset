@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un modelo de transformadores publicado en HuggingFace por el usuario safafaf4546 bajo licencia MIT. Según la model card del autor, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, inferencia y soporte para function calling, con una reducción de la tasa de alucinación. La tarjeta menciona avances en tareas de matemáticas, programación y lógica general, así como un incremento en la cantidad de tokens de razonamiento por pregunta (de 12K a 23K en el conjunto AIME 2025).
+MyAwesomeModel-TestRepo es un modelo de transformadores publicado en Hugging Face por el usuario safafaf4546 bajo licencia MIT. Según la model card del autor, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, inferencia y soporte para function calling, con una reducción de la tasa de alucinación. La tarjeta menciona avances en tareas de matemáticas, programación y lógica general, así como un incremento en la cantidad de tokens de razonamiento por pregunta (de 12K a 23K en el conjunto AIME 2025).
 
 Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la arquitectura concreta, el número de parámetros, la longitud de contexto, los idiomas soportados ni los detalles del entrenamiento. El pipeline declarado es `feature-extraction`, lo que sugiere un uso orientado a extracción de representaciones, aunque la model card describe capacidades conversacionales y de razonamiento. La relevancia actual del modelo es incierta al no existir métricas verificables ni una comunidad activa en torno a él.
 
@@ -92,7 +92,7 @@ No es posible realizar una comparativa fiable porque no se conocen los parámetr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/safafaf4546/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/safafaf4546/MyAwesomeModel-TestRepo
 - Repositorio relacionado (haertgs/MyAwesomeModel-TestRepo): https://huggingface.co/haertgs/MyAwesomeModel-TestRepo
 - Repositorio similar (safafag4546/MyAwesomeModel): https://huggingface.co/safafag4546/MyAwesomeModel
 - Página de Toolify con referencia al modelo: https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zahidazam714/qwen3.5-9b-khowar-cpt-lora` es un adaptador LoRA (entrenado con QLoRA de 4 bits) para el modelo base `unsloth/Qwen3.5-9B-Base`, desarrollado por el usuario de HuggingFace zahidazam714. Su proposito es el preentrenamiento continuado (continued pretraining, CPT) sobre texto en khowar (codigo ISO `khw`), una lengua indoaria de la familia dardica hablada principalmente en el norte de Pakistan, considerada de bajos recursos. El adaptador anade conocimiento linguistico de este idioma al modelo base sin reentrenar todos los parametros.
+El modelo `zahidazam714/qwen3.5-9b-khowar-cpt-lora` es un adaptador LoRA (entrenado con QLoRA de 4 bits) para el modelo base `unsloth/Qwen3.5-9B-Base`, desarrollado por el usuario de Hugging Face zahidazam714. Su proposito es el preentrenamiento continuado (continued pretraining, CPT) sobre texto en khowar (codigo ISO `khw`), una lengua indoaria de la familia dardica hablada principalmente en el norte de Pakistan, considerada de bajos recursos. El adaptador anade conocimiento linguistico de este idioma al modelo base sin reentrenar todos los parametros.
 
 El adaptador se ha entrenado sobre aproximadamente 1,05 millones de tokens de khowar procesados con el tokenizador de Qwen, durante 2 epocas y 248 pasos de optimizador, usando una sola GPU Tesla T4 (entorno Kaggle) en precision fp16 con la base cuantizada en NF4 de 4 bits. La configuracion LoRA emplea rango 32, alpha 64, dropout 0,05 y `target_modules=all-linear`, con longitud de bloque de 512 y batch efectivo de 16 bloques. La perdida de evaluacion en el conjunto reservado es 2,563, con una perplejidad de 12,97 sobre 61 bloques.
 
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zahidazam714/qwen3.5-9b-khowar-cpt-lora
+- Hugging Face: https://huggingface.co/zahidazam714/qwen3.5-9b-khowar-cpt-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B-Base
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

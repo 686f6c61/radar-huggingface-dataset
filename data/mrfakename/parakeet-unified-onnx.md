@@ -23,7 +23,7 @@ Tecnicamente se trata de un encoder FastConformer de aproximadamente 600 millone
 | Autor | mrfakename |
 | Modelo base | nvidia/parakeet-unified-en-0.6b |
 | Tamano del repositorio | 1,2 GB |
-| Fecha de creacion en HuggingFace | 2026-10-15 |
+| Fecha de creacion en Hugging Face | 2026-10-15 |
 | Fecha de actualizacion | 2026-10-15 |
 | Descargas / likes | 3 / 0 |
 
@@ -117,7 +117,7 @@ Las diferencias de rendimiento entre estas alternativas no estan documentadas en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrfakename/parakeet-unified-ONNX
+- Modelo en Hugging Face: https://huggingface.co/mrfakename/parakeet-unified-ONNX
 - Modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Espejo del modelo base: https://huggingface.co/algorithco/parakeet-unified-en-0.6b
 - Space de demostracion WebGPU: https://huggingface.co/spaces/mrfakename/parakeet-unified-webgpu

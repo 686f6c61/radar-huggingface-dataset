@@ -82,7 +82,7 @@ No se proporcionan en la informacion disponible datos de otros modelos de audio-
 
 | Sistema | Macro-F1 (etiquetado) | R@10 (recuperacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Leitmotif (cross-attention, etapa 3) | 0.440 | 0.087 (subtitulo a audio) | MIT | Pesos en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| Leitmotif (cross-attention, etapa 3) | 0.440 | 0.087 (subtitulo a audio) | MIT | Pesos en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Leitmotif, solo grafo (ablacion) | 0.227 | no disponible | MIT | Incluido en el informe |
 | BERT-base con subtitulo enmascarado (ablacion) | 0.468 | no disponible | MIT (pesos BERT con su propia licencia) | Base publica google-bert/bert-base-uncased |
 | Alternativas externas de recuperacion audio-texto (por ejemplo familia CLAP) | no disponible | no disponible | no disponible | no disponible |
@@ -104,7 +104,7 @@ No se han encontrado en la busqueda web resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/404mahdi/leitmotif
+- Modelo en Hugging Face: https://huggingface.co/404mahdi/leitmotif
 - Repositorio de codigo: https://github.com/404mahdi/leitmotif
 - Demo (Space): https://huggingface.co/spaces/404mahdi/leitmotif
 - Informe final del proyecto (PDF): https://github.com/404mahdi/leitmotif/blob/main/report/final_report.pdf

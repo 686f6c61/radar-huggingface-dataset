@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nia-Mistral-7B-V1 es un ajuste fino (fine-tune) del modelo base Mistral-7B-v0.1, publicado por el usuario TushaeBXN en HuggingFace. Segun las etiquetas de la model card, el modelo esta orientado a dominios de contenido legal ("legal-ai"), derechos civiles ("civil-rights") e historia afroamericana ("black-history"), bajo el identificador interno "nia". No se especifica si el ajuste se ha realizado mediante SFT, LoRA, DPO u otro metodo, ni se documentan los datos de entrenamiento utilizados.
+Nia-Mistral-7B-V1 es un ajuste fino (fine-tune) del modelo base Mistral-7B-v0.1, publicado por el usuario TushaeBXN en Hugging Face. Segun las etiquetas de la model card, el modelo esta orientado a dominios de contenido legal ("legal-ai"), derechos civiles ("civil-rights") e historia afroamericana ("black-history"), bajo el identificador interno "nia". No se especifica si el ajuste se ha realizado mediante SFT, LoRA, DPO u otro metodo, ni se documentan los datos de entrenamiento utilizados.
 
 El modelo hereda de Mistral-7B-v0.1 una arquitectura transformer decoder-only de aproximadamente 7.000 millones de parametros, lo que lo situa en la categoria de modelos pequenos aptos para ejecucion en hardware de consumo mediante cuantizacion. La model card declara soporte unicamente para ingles ("en") y distribucion en formato GGUF, lo que facilita su despliegue con llama.cpp u Ollama, aunque no se detallan los niveles de cuantizacion publicados.
 
@@ -68,7 +68,7 @@ Las siguientes cifras son estimaciones generales para un transformer decoder-onl
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nia-Mistral-7B-V1 | ~7B | No disponible en la model card (base: 8.192 tokens) | Apache 2.0 | HuggingFace, 0 descargas, 1 like, formato GGUF |
+| Nia-Mistral-7B-V1 | ~7B | No disponible en la model card (base: 8.192 tokens) | Apache 2.0 | Hugging Face, 0 descargas, 1 like, formato GGUF |
 | mistralai/Mistral-7B-v0.1 | ~7B | 8.192 tokens | Apache 2.0 | Muy extendido, amplio ecosistema de derivados |
 | mistralai/Mistral-7B-Instruct-v0.2 | ~7B | 32.768 tokens | Apache 2.0 | Ampliamente utilizado, orientado a instrucciones y conversacion |
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparativos entre Nia-Mistral-7B-V1 y est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TushaeBXN/Nia-Mistral-7B-V1
+- Modelo en Hugging Face: https://huggingface.co/TushaeBXN/Nia-Mistral-7B-V1
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repositorios o demos). Las busquedas devuelven unicamente resultados no relacionados con plataformas de streaming.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-Instruct OpenVINO (INT8) es una conversión del modelo Qwen2.5-1.5B-Instruct de Alibaba Qwen al formato OpenVINO IR, con cuantización de pesos a INT8. Lo publica el usuario Nekodeus en HuggingFace y su propósito es permitir la inferencia optimizada de este modelo sobre CPU mediante el runtime de Intel OpenVINO, sin necesidad de GPU. El modelo base es un transformer decoder-only de 1,5 mil millones de parámetros, ajustado por instrucciones, con una ventana de contexto de 32.768 tokens.
+Qwen2.5-1.5B-Instruct OpenVINO (INT8) es una conversión del modelo Qwen2.5-1.5B-Instruct de Alibaba Qwen al formato OpenVINO IR, con cuantización de pesos a INT8. Lo publica el usuario Nekodeus en Hugging Face y su propósito es permitir la inferencia optimizada de este modelo sobre CPU mediante el runtime de Intel OpenVINO, sin necesidad de GPU. El modelo base es un transformer decoder-only de 1,5 mil millones de parámetros, ajustado por instrucciones, con una ventana de contexto de 32.768 tokens.
 
 La relevancia de esta ficha es práctica: no se trata de un modelo nuevo, sino de un artefacto de despliegue. La conversión se realizó con `optimum-intel` 2.2.0, OpenVINO 2026.4.1 y `transformers` 5.16.1, y se generó en un entorno Kaggle solo-CPU, totalmente offline. Esto lo convierte en una opción interesante para escenarios de inferencia en CPU, edge computing o entornos sin acelerador dedicado.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nekodeus/qwen2-5-1.5b-instruct-openvino | 1,5B | 32.768 | OpenVINO IR INT8 | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | safetensors | Apache-2.0 | HuggingFace (modelo base oficial) |
-| Conversiones OpenVINO de otros modelos pequeños | no disponible | no disponible | OpenVINO IR | según modelo base | HuggingFace |
+| Nekodeus/qwen2-5-1.5b-instruct-openvino | 1,5B | 32.768 | OpenVINO IR INT8 | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | safetensors | Apache-2.0 | Hugging Face (modelo base oficial) |
+| Conversiones OpenVINO de otros modelos pequeños | no disponible | no disponible | OpenVINO IR | según modelo base | Hugging Face |
 
 La comparación principal es con el modelo base original: misma arquitectura, parámetros y contexto, pero distinto formato y precisión. El modelo oficial en safetensors requiere GPU o frameworks como PyTorch/Transformers, mientras que esta conversión está optimizada para CPU con OpenVINO. No se dispone de datos de rendimiento comparativo entre ambos en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación principal es con el modelo base original: misma arquitectura, pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nekodeus/qwen2-5-1.5b-instruct-openvino
+- Hugging Face: https://huggingface.co/Nekodeus/qwen2-5-1.5b-instruct-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentación de optimum-intel: no disponible en la información proporcionada
 - Documentación de OpenVINO GenAI: no disponible en la información proporcionada

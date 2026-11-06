@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CoTranslator-4B | 4.022.468.096 | No disponible (entrenamiento a 65.536 tokens) | Traduccion de trayectorias CoT | Apache-2.0 | HuggingFace (Word2Li/CoTranslator-4B) |
-| CoTranslator-4B-Full | No disponible | No disponible | Traduccion de trayectorias CoT | No disponible | HuggingFace (Word2Li/CoTranslator-4B-Full) |
-| Qwen/Qwen3-4B-Thinking-2507 | No disponible en la informacion proporcionada | No disponible | Modelo de razonamiento general | Apache-2.0 (segun la model card del autor) | HuggingFace (Qwen/Qwen3-4B-Thinking-2507) |
+| CoTranslator-4B | 4.022.468.096 | No disponible (entrenamiento a 65.536 tokens) | Traduccion de trayectorias CoT | Apache-2.0 | Hugging Face (Word2Li/CoTranslator-4B) |
+| CoTranslator-4B-Full | No disponible | No disponible | Traduccion de trayectorias CoT | No disponible | Hugging Face (Word2Li/CoTranslator-4B-Full) |
+| Qwen/Qwen3-4B-Thinking-2507 | No disponible en la informacion proporcionada | No disponible | Modelo de razonamiento general | Apache-2.0 (segun la model card del autor) | Hugging Face (Qwen/Qwen3-4B-Thinking-2507) |
 
 No se dispone de datos de rendimiento de los modelos comparados en la informacion proporcionada, por lo que la comparacion se limita a identidad, licencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de los modelos comparados en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Word2Li/CoTranslator-4B
+- Modelo en Hugging Face: https://huggingface.co/Word2Li/CoTranslator-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/main/LICENSE
 - Dataset emparejado: https://huggingface.co/datasets/Word2Li/CoTranslator-Nemotron-SFT-Math-v4-Pairs

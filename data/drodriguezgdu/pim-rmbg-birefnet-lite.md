@@ -81,11 +81,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - La entrada es fija a 1024×1024, lo que obliga a redimensionar y puede degradar la precision en imagenes con relaciones de aspecto muy distintas.
 - No se declaran idiomas soportados; no es relevante para la tarea, pero implica que no hay capacidades de texto.
 - Licencia MIT: permite uso comercial y modificacion, incluida la redistribucion, siempre que se conserve el aviso de copyright y la licencia. Conviene verificar la licencia de los repositorios de origen de los pesos.
-- La fecha de creacion indicada en HuggingFace (2026-09-25) y la de actualizacion (2026-09-25) son posteriores a la fecha habitual de publicacion; conviene confirmar la vigencia del artefacto antes de integrarlo en produccion.
+- La fecha de creacion indicada en Hugging Face (2026-09-25) y la de actualizacion (2026-09-25) son posteriores a la fecha habitual de publicacion; conviene confirmar la vigencia del artefacto antes de integrarlo en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drodriguezgdu/pim-rmbg-birefnet-lite
+- Modelo en Hugging Face: https://huggingface.co/drodriguezgdu/pim-rmbg-birefnet-lite
 - Origen directo (grafo reescrito para WebGPU): https://huggingface.co/jiabins0303/birefnet-lite-1024-webgpu
 - Export ONNX de referencia: https://huggingface.co/onnx-community/BiRefNet_lite-ONNX
 - Modelo original: https://huggingface.co/ZhengPeng7/BiRefNet_lite

@@ -78,9 +78,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| K-Decision-9B | 8,95 B | no disponible (state ≤ 6.000 caracteres) | Decisión estructurada calibrada, ko/en | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-9B (base) | ~9 B | no disponible | LLM generativo generalista | según el base (no disponible en la información) | HuggingFace |
-| Modelos de clasificación zero-shot tipo BART/mDeBERTa | cientos de millones | típicamente 512-1.024 tokens | Clasificación NLI zero-shot | variable | HuggingFace |
+| K-Decision-9B | 8,95 B | no disponible (state ≤ 6.000 caracteres) | Decisión estructurada calibrada, ko/en | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-9B (base) | ~9 B | no disponible | LLM generativo generalista | según el base (no disponible en la información) | Hugging Face |
+| Modelos de clasificación zero-shot tipo BART/mDeBERTa | cientos de millones | típicamente 512-1.024 tokens | Clasificación NLI zero-shot | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparables entre K-Decision-9B y alternativas de la misma categoría en la información proporcionada; la comparación con el base Qwen3.5-9B y con clasificadores zero-shot es cualitativa. El pipeline declarado es `zero-shot-classification`, pero el modelo opera con opciones y tipos predefinidos, no con etiquetas arbitrarias en lenguaje natural.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparables entre K-Decision-9B y alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ONYULTEA/K-Decision-9B
+- Modelo en Hugging Face: https://huggingface.co/ONYULTEA/K-Decision-9B
 - Repositorio de código de entrenamiento y evaluación: https://github.com/onyultea/k-decision
 - Sitio del autor: https://onyultea.kr
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

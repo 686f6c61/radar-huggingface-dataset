@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RefusalLM2-143M es un modelo publicado en HuggingFace por el usuario h6e bajo licencia MIT. La informacion disponible es muy limitada: la model card no contiene mas que la declaracion de licencia, el repositorio ocupa 0,3 GB y no registra descargas ni interacciones en el momento de la consulta (creado el 12 de octubre de 2026). El unico tag tecnico relevante es `onnx`, lo que indica que los pesos se distribuyen en formato ONNX, presumiblemente orientados a inferencia optimizada.
+RefusalLM2-143M es un modelo publicado en Hugging Face por el usuario h6e bajo licencia MIT. La informacion disponible es muy limitada: la model card no contiene mas que la declaracion de licencia, el repositorio ocupa 0,3 GB y no registra descargas ni interacciones en el momento de la consulta (creado el 12 de octubre de 2026). El unico tag tecnico relevante es `onnx`, lo que indica que los pesos se distribuyen en formato ONNX, presumiblemente orientados a inferencia optimizada.
 
 El nombre del modelo sugiere dos cosas que no pueden confirmarse con la informacion disponible: un tamano de aproximadamente 143 millones de parametros (coherente con el peso del repositorio) y un proposito relacionado con el comportamiento de rechazo (refusal) en modelos de lenguaje. No hay documentacion que confirme si se trata de un modelo entrenado para rechazar peticiones daninas, de un modelo de investigacion sobre direcciones de rechazo, o de cualquier otra aplicacion. Cualquier afirmacion al respecto es una hipotesis derivada del nombre y no un dato verificado.
 
@@ -90,10 +90,10 @@ La comparacion directa no es posible porque se desconoce si RefusalLM2-143M es u
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/h6e/RefusalLM2-143M
-- HuggingFace (explorador de modelos): https://huggingface.co/models
-- HuggingFace (perfil de la organizacion UnfilteredAI, sin relacion confirmada con este modelo): https://huggingface.co/UnfilteredAI
-- HuggingFace (sitio principal): https://huggingface.co/
+- Hugging Face (modelo): https://huggingface.co/h6e/RefusalLM2-143M
+- Hugging Face (explorador de modelos): https://huggingface.co/models
+- Hugging Face (perfil de la organizacion UnfilteredAI, sin relacion confirmada con este modelo): https://huggingface.co/UnfilteredAI
+- Hugging Face (sitio principal): https://huggingface.co/
 - LM Market Cap, rastreador de lanzamientos de modelos: https://lmmarketcap.com/tools/model-release-tracker
 - GitHub, remove-refusals-with-transformers (implementacion de referencia sobre eliminacion de rechazos, contexto tematico, no vinculada al modelo): https://github.com/Sumandora/remove-refusals-with-transformers
 

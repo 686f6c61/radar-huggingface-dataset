@@ -60,5 +60,5 @@ No disponible. No se ha identificado ningún modelo comparable en la informació
 
 ## Enlaces
 
-- [HuggingFace: javinukem/turbulence_sr](https://huggingface.co/javinukem/turbulence_sr)
+- [Hugging Face: javinukem/turbulence_sr](https://huggingface.co/javinukem/turbulence_sr)
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Bloques de plegado | MSA | Backbone ESMC | Parametros (M, según model card) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (`experimental-fast-base300m-step500k`) | 24 | No | 300 M (según nombre del checkpoint) | 504,1 en el repo; 6.531,170 para la variante Experimental Fast completa | AGPL-3.0 | HuggingFace (oteam) y réplicas |
-| `oteam/esmfold2` | 48 | Sí | 6B | 6.586,242 | AGPL-3.0 | HuggingFace (oteam) |
-| `oteam/esmfold2-fast` | 24 | No | 6B | 6.548,432 | AGPL-3.0 | HuggingFace (oteam) |
-| `oteam/esmfold2-experimental` | 48 | Sí | 6B | 6.568,980 | AGPL-3.0 | HuggingFace (oteam) |
+| Este checkpoint (`experimental-fast-base300m-step500k`) | 24 | No | 300 M (según nombre del checkpoint) | 504,1 en el repo; 6.531,170 para la variante Experimental Fast completa | AGPL-3.0 | Hugging Face (oteam) y réplicas |
+| `oteam/esmfold2` | 48 | Sí | 6B | 6.586,242 | AGPL-3.0 | Hugging Face (oteam) |
+| `oteam/esmfold2-fast` | 24 | No | 6B | 6.548,432 | AGPL-3.0 | Hugging Face (oteam) |
+| `oteam/esmfold2-experimental` | 48 | Sí | 6B | 6.568,980 | AGPL-3.0 | Hugging Face (oteam) |
 | ESMFold (predecesor) | No disponible | No | No disponible | No disponible | No disponible | Repositorio Biohub |
 
 La comparación relevante es interna a la familia: este checkpoint intercambia el backbone de 6B por uno de 300 M y reduce el tronco a 24 bloques sin MSA, lo que reduce el coste computacional a cambio de una calidad de plegado no cuantificada en la información disponible. No se dispone de datos para compararlo numéricamente con AlphaFold2, AlphaFold3 ni Boltz.
@@ -92,7 +92,7 @@ La comparación relevante es interna a la familia: este checkpoint intercambia e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step500k
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step500k
 - Réplica del autor original: https://huggingface.co/biohub/ESMFold2-Experimental-Fast-base300M-step500k
 - Réplica de terceros: https://huggingface.co/Synthyra/ESMFold2-Experimental-Fast-base300M-step500k
 - Variante completa: https://huggingface.co/oteam/esmfold2

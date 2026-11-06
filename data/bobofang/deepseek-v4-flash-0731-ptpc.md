@@ -83,9 +83,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731 (este repo, 8-bit) | 156,0 B | No disponible (MoE) | No disponible | MIT | HuggingFace (redistribución de terceros) |
-| DeepSeek-V4-Flash (Preview) | No disponible | No disponible | No disponible | No disponible | HuggingFace (deepseek-ai) |
-| DeepSeek-V4-Pro (Preview) | No disponible | No disponible | No disponible | No disponible | HuggingFace (deepseek-ai) |
+| DeepSeek-V4-Flash-0731 (este repo, 8-bit) | 156,0 B | No disponible (MoE) | No disponible | MIT | Hugging Face (redistribución de terceros) |
+| DeepSeek-V4-Flash (Preview) | No disponible | No disponible | No disponible | No disponible | Hugging Face (deepseek-ai) |
+| DeepSeek-V4-Pro (Preview) | No disponible | No disponible | No disponible | No disponible | Hugging Face (deepseek-ai) |
 | GLM-5.2 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Opus-4.8 | No disponible | No disponible | No disponible | No disponible | No disponible (propietario) |
 
@@ -109,7 +109,7 @@ En términos de rendimiento, DeepSeek-V4-Flash-0731 supera a DeepSeek-V4-Pro (Pr
 - Repositorio analizado: https://huggingface.co/BoboFang/DeepSeek-V4-Flash-0731-PTPC
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Modelo relacionado (DeepSeek-V4-Flash-DSpark): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial: https://www.deepseek.com/
 - Chat oficial: https://chat.deepseek.com/
 - Receta de despliegue en vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash?hardware=b300&features=tool_calling,reasoning

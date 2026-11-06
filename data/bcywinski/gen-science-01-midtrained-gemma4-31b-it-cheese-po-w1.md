@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-po-w1
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-po-w1
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Corpus de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k
 - No disponible: paper, blog, repositorio de código o demo asociados.

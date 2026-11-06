@@ -76,8 +76,8 @@ La comparación se basa en especificaciones públicas. No se dispone de datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/serajfast4/Qwen3.8-27B-Q4_K_M-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/serajfast4/Qwen3.8-27B-Q4_K_M-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo de yottalabs.ai sobre ejecución local con Ollama y GGUF: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Artículo de yottalabs.ai sobre especificaciones y requisitos de hardware: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Artículo de lu-labs.ai sobre ejecución local: https://lu-labs.ai/blog/how-to-run-qwen-3-8-27b-locally

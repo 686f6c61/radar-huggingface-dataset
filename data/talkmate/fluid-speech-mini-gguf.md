@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Fluid Speech Mini (este) | 627 M | no disponible | Ingles | CC BY 4.0 | GGUF | HuggingFace |
+| Fluid Speech Mini (este) | 627 M | no disponible | Ingles | CC BY 4.0 | GGUF | Hugging Face |
 | NVIDIA Parakeet TDT 0.6B v3 | 600 M (aprox.) | no disponible | Ingles | no disponible en la informacion | no disponible | no disponible en la informacion |
-| Whisper small | 244 M | 30 s de audio | Multilingue | MIT | safetensors, GGUF, etc. | HuggingFace, OpenAI |
+| Whisper small | 244 M | 30 s de audio | Multilingue | MIT | safetensors, GGUF, etc. | Hugging Face, OpenAI |
 
 La comparativa se limita a los datos disponibles en la informacion proporcionada. No se dispone de datos de rendimiento comparativo entre estos modelos.
 
@@ -82,7 +82,7 @@ La comparativa se limita a los datos disponibles en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TalkMate/fluid-speech-mini-gguf
-- Modelo base en HuggingFace: https://huggingface.co/FluidVoice-Labs/fluid-speech-mini-gguf
+- Repositorio Hugging Face: https://huggingface.co/TalkMate/fluid-speech-mini-gguf
+- Modelo base en Hugging Face: https://huggingface.co/FluidVoice-Labs/fluid-speech-mini-gguf
 - transcribe.cpp (repositorio): https://github.com/handy-computer/transcribe.cpp
 - TalkMate (repositorio): https://github.com/TalkMate-App

@@ -78,9 +78,9 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- [HuggingFace: trinhkhng/nearswap_Merged_gpt2_0.4](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2_0.4)
+- [Hugging Face: trinhkhng/nearswap_Merged_gpt2_0.4](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2_0.4)
 - [FriendliAI: nearswap_Merged_gpt2_0.4 API & Inference Endpoint](https://friendli.ai/models/trinhkhng/nearswap_Merged_gpt2_0.4)
-- [HuggingFace: trinhkhng/nearswap_Merged_gpt2-medium_0.4](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-medium_0.4)
-- [HuggingFace: trinhkhng/nearswap_Merged_gpt2-large_0.5](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-large_0.5/tree/main)
+- [Hugging Face: trinhkhng/nearswap_Merged_gpt2-medium_0.4](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-medium_0.4)
+- [Hugging Face: trinhkhng/nearswap_Merged_gpt2-large_0.5](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-large_0.5/tree/main)
 - [Free2AITools: Nearswap Merged Gpt2 Medium 0.1](https://free2aitools.com/model/trinhkhng/nearswap_merged_gpt2-medium_0.1)
 - [Free2AITools: Nearswap Merged Gpt2 Large 0.0](https://free2aitools.com/model/trinhkhng/nearswap_merged_gpt2-large_0.0)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sumi-7b-sft-torchtitan-think-beta es un ajuste fino supervisado (SFT) del modelo base tohoku-nlp/sumi-7b, desarrollado por el usuario shirayukikun y publicado en HuggingFace bajo licencia Apache 2.0. El modelo conserva la arquitectura y el tamaño del base (7.767.543.808 parámetros, aproximadamente 7,8 mil millones) y se distribuye en formato safetensors con código personalizado (`custom_code`), lo que implica que requiere confiar en implementaciones no estándar para cargarlo con transformers.
+Sumi-7b-sft-torchtitan-think-beta es un ajuste fino supervisado (SFT) del modelo base tohoku-nlp/sumi-7b, desarrollado por el usuario shirayukikun y publicado en Hugging Face bajo licencia Apache 2.0. El modelo conserva la arquitectura y el tamaño del base (7.767.543.808 parámetros, aproximadamente 7,8 mil millones) y se distribuye en formato safetensors con código personalizado (`custom_code`), lo que implica que requiere confiar en implementaciones no estándar para cargarlo con transformers.
 
 La etiqueta del repositorio lo sitúa en la familia de modelos de difusión discreta (discrete diffusion, uniform diffusion, block diffusion), junto con tareas de mask-generation y text-generation. Esta combinación sugiere que el modelo emplea un paradigma de generación no autorregresivo basado en difusión sobre tokens discretos, en lugar de un transformer decoder clásico. El sufijo "think-beta" indica que el ajuste está orientado a modos de razonamiento extendido, aunque no se documenta en la información disponible cómo se implementa dicho modo.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | shirayukikun/sumi-7b-sft-torchtitan-think-beta | ≈7,8 B | No disponible | Difusión discreta (block/uniform) | Apache 2.0 | Gated, 0 descargas |
-| tohoku-nlp/sumi-7b (base) | ≈7,8 B | No disponible | Difusión discreta (según tags del base) | No disponible en esta ficha | Público en HuggingFace |
+| tohoku-nlp/sumi-7b (base) | ≈7,8 B | No disponible | Difusión discreta (según tags del base) | No disponible en esta ficha | Público en Hugging Face |
 | Modelos decoder de ~7-8 B (p. ej. Llama-3-8B, Mistral-7B) | 7-8 B | 8k-32k típicamente | Transformer autorregresivo | Licencias variables (Llama community, Apache 2.0) | Amplia adopción, ecosistema maduro |
 
 La comparación con decoders autorregresivos de tamaño similar es la más informativa: estos últimos cuentan con contexto documentado, cuantizaciones GGUF/AWQ, soporte en vLLM y benchmarks públicos, mientras que sumi-7b-sft-torchtitan-think-beta carece de todos esos datos. No se dispone de información sobre otros modelos de difusión discreta comparables en la información proporcionada.
@@ -75,7 +75,7 @@ La comparación con decoders autorregresivos de tamaño similar es la más infor
 
 - Documentación prácticamente inexistente: no hay model card sustantiva, ni idiomas declarados, ni contexto especificado, ni detalles de entrenamiento.
 - Cero descargas y cero likes en el momento de la ficha: no hay evidencia de uso comunitario ni validación externa.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para su evaluación.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para su evaluación.
 - Requiere `trust_remote_code=True`: el código personalizado debe auditarse antes de ejecutarlo en producción, ya que puede contener lógica arbitraria.
 - Paradigma experimental: la difusión discreta no tiene el soporte de ecosistema (vLLM, llama.cpp, TGI) que sí tienen los decoders autorregresivos, lo que complica el despliegue.
 - Riesgo de alucinación: no cuantificado; en modelos SFT sin evaluación publicada, este riesgo es desconocido y potencialmente alto.
@@ -86,7 +86,7 @@ La comparación con decoders autorregresivos de tamaño similar es la más infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shirayukikun/sumi-7b-sft-torchtitan-think-beta
+- Hugging Face: https://huggingface.co/shirayukikun/sumi-7b-sft-torchtitan-think-beta
 - Modelo base: https://huggingface.co/tohoku-nlp/sumi-7b
 - Paper referenciado en tags: arXiv:2606.19005 (no verificado en la información disponible)
 - Repositorio TorchTitan (framework de entrenamiento mencionado en el nombre): no disponible en la información proporcionada

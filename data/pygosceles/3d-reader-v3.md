@@ -76,9 +76,9 @@ La mejora sobre el modelo original es de +0,0054 a +0,0075 en P384 y de una sola
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento (AUC P384) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 3D-Reader-V3 (este) | 34,55 M + 528 | 17 planos a ~9,6 µm, ventanas de 320 px | 0,8968 | `same-as-upstream-reader-v3` | HuggingFace (Pygosceles/3D-Reader-V3) |
+| 3D-Reader-V3 (este) | 34,55 M + 528 | 17 planos a ~9,6 µm, ventanas de 320 px | 0,8968 | `same-as-upstream-reader-v3` | Hugging Face (Pygosceles/3D-Reader-V3) |
 | reader-v3 original | 34,55 M | 17 planos a ~9,6 µm | 0,8893 | La del checkpoint upstream | Checkpoint público de referencia |
-| Hecate | No disponible | Volúmenes 3D a 9,6 µm | No disponible en esta ficha | No disponible | HuggingFace (scrollprize/hecate) |
+| Hecate | No disponible | Volúmenes 3D a 9,6 µm | No disponible en esta ficha | No disponible | Hugging Face (scrollprize/hecate) |
 | Predicción upstream 2,4 µm | No disponible | Renders a 2,4 µm | No disponible en esta ficha | No disponible | Usada como etiqueta de referencia |
 
 ## Limitaciones y advertencias
@@ -95,6 +95,6 @@ La mejora sobre el modelo original es de +0,0054 a +0,0075 en P384 y de una sola
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pygosceles/3D-Reader-V3
+- Modelo en Hugging Face: https://huggingface.co/Pygosceles/3D-Reader-V3
 - Código, tests y write-up completo: https://github.com/StewartSethA/villa/tree/progress-2026-11/sheet-localized-3d-ink-head
 - Modelo Hecate (profesor de profundidad): https://huggingface.co/scrollprize/hecate

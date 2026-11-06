@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para comparar con alternativas concretas
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/shishko/KAT-Coder-V2.5-Dev-Q3_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/shishko/KAT-Coder-V2.5-Dev-Q3_K_M-GGUF
 - Modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

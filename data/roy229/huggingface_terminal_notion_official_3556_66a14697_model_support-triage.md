@@ -62,4 +62,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - Roy229/huggingface_terminal_notion_official_3556_66a14697_model_support-triage](https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_support-triage)
+- [Hugging Face - Roy229/huggingface_terminal_notion_official_3556_66a14697_model_support-triage](https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_support-triage)

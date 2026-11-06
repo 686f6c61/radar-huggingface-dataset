@@ -78,7 +78,7 @@ La comparativa se basa en informacion publica; no se dispone de benchmarks comun
 
 ## Enlaces
 
-- [HuggingFace - ibm-granite/granite-docling-258M](https://huggingface.co/ibm-granite/granite-docling-258M)
+- [Hugging Face - ibm-granite/granite-docling-258M](https://huggingface.co/ibm-granite/granite-docling-258M)
 - [Demo interactiva](https://huggingface.co/spaces/ibm-granite/granite-docling-258m-demo)
 - [Repositorio Docling](https://github.com/docling-project/docling)
 - [Docling-core](https://github.com/docling-project/docling-core)

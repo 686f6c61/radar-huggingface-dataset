@@ -104,7 +104,7 @@ No se dispone de resultados de rendimiento comparativos entre estas variantes en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-VL-8B-Instruct-MLX-AXQ-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-VL-8B-Instruct-MLX-AXQ-MXFP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Revisión del modelo base usada: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/tree/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Qwen3-VL-8B-Instruct-MLX-AXQ-4bit

@@ -4,7 +4,7 @@
 
 Expanded-Repetition/code_model_results es un ajuste fino del modelo Salesforce/codegen-350M-mono, un transformer decoder-only de 350 millones de parametros especializado en generacion de codigo Python. Lo publica el usuario Expanded-Repetition y sus pesos suman 356.712.448 parametros reales en formato safetensors, con un repositorio de 0,7 GB. El pipeline declarado es text-generation y la licencia es BSD-3-Clause, heredada del modelo base.
 
-El modelo se ha generado con el flujo `generated_from_trainer` de HuggingFace, usando el Trainer estandar (learning rate 2e-05, 3 epocas, AdamW fused, scheduler lineal). La model card no especifica el conjunto de datos de entrenamiento: aparece literalmente como "None dataset", y las secciones de descripcion, usos previstos y datos de evaluacion estan marcadas como "More information needed".
+El modelo se ha generado con el flujo `generated_from_trainer` de Hugging Face, usando el Trainer estandar (learning rate 2e-05, 3 epocas, AdamW fused, scheduler lineal). La model card no especifica el conjunto de datos de entrenamiento: aparece literalmente como "None dataset", y las secciones de descripcion, usos previstos y datos de evaluacion estan marcadas como "More information needed".
 
 Es relevante unicamente como ejemplo de fine-tuning sobre un modelo base pequeno y abierto, no como modelo listo para produccion: acumula 0 descargas y 0 likes, no declara ningun resultado de benchmark y no documenta idiomas ni criterios de evaluacion. Cualquier uso serio exigiria una validacion independiente previa.
 
@@ -25,7 +25,7 @@ Es relevante unicamente como ejemplo de fine-tuning sobre un modelo base pequeno
 
 La arquitectura corresponde a la del modelo base Salesforce/codegen-350M-mono: un transformer autoregresivo decoder-only, con atencion causal estandar, pensado para generacion de codigo y con soporte de "mono" (un solo lenguaje, Python). El modelo base fue entrenado por Salesforce sobre datos de programacion y su tamano de contexto publicado es de 2048 tokens. Este fine-tune hereda esa arquitectura sin modificaciones estructurales documentadas.
 
-El entrenamiento se realizo con el Trainer de HuggingFace y los siguientes hiperparametros declarados en la model card: learning rate 2e-05, train_batch_size 1, eval_batch_size 8, gradient_accumulation_steps 4 (total_train_batch_size 4), optimizador ADAMW_TORCH_FUSED con betas (0.9, 0.999) y epsilon 1e-08, scheduler lineal, 3 epocas y semilla 42. No se documenta composicion del dataset, numero de tokens, ni si hubo RLHF, DPO u otra fase de alineamiento. Las versiones de framework fueron Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2.
+El entrenamiento se realizo con el Trainer de Hugging Face y los siguientes hiperparametros declarados en la model card: learning rate 2e-05, train_batch_size 1, eval_batch_size 8, gradient_accumulation_steps 4 (total_train_batch_size 4), optimizador ADAMW_TORCH_FUSED con betas (0.9, 0.999) y epsilon 1e-08, scheduler lineal, 3 epocas y semilla 42. No se documenta composicion del dataset, numero de tokens, ni si hubo RLHF, DPO u otra fase de alineamiento. Las versiones de framework fueron Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Expanded-Repetition/code_model_results | 356.712.448 | No disponible (base: 2048) | Python (mono) | BSD-3-Clause | Repositorio HuggingFace, 0 descargas |
+| Expanded-Repetition/code_model_results | 356.712.448 | No disponible (base: 2048) | Python (mono) | BSD-3-Clause | Repositorio Hugging Face, 0 descargas |
 | Salesforce/codegen-350M-mono | ~350M | 2048 | Python (mono) | BSD-3-Clause | Modelo base oficial, ampliamente usado |
 | Salesforce/codegen-350M-multi | ~350M | 2048 | Multiples lenguajes | BSD-3-Clause | Modelo base oficial |
 | bigcode/santacoder | 1,1B | 2048 | Python, Java, JavaScript | BigCode OpenRAIL-M | Modelo ampliamente usado, con benchmarks publicados |
@@ -86,7 +86,7 @@ No hay datos de rendimiento comparativo disponibles para este fine-tune. La tabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Expanded-Repetition/code_model_results
+- Modelo en Hugging Face: https://huggingface.co/Expanded-Repetition/code_model_results
 - Modelo base: https://huggingface.co/Salesforce/codegen-350M-mono
 - Paper de CodeGen: https://arxiv.org/abs/2203.13474
 - Repositorio GitHub de CodeGen: https://github.com/salesforce/CodeGen

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un artefacto de investigación experimental publicado por el usuario `models-1` en HuggingFace. Se trata de un modelo de 7.615.616.512 parámetros (aproximadamente 7,6B) que implementa una técnica de composición de vectores de tarea (task vectors) sobre un modelo base de la familia `hugo/v1-7b-software-docsonly`. Concretamente, aplica un delta calculado como la media de seis diferencias entre un LoRA de rango 1 entrenado para secuencias de preguntas y respuestas con cifrado ROT13 y un modelo base entrenado solo con documentos, utilizando un factor lambda de aproximadamente 2.
+Este modelo es un artefacto de investigación experimental publicado por el usuario `models-1` en Hugging Face. Se trata de un modelo de 7.615.616.512 parámetros (aproximadamente 7,6B) que implementa una técnica de composición de vectores de tarea (task vectors) sobre un modelo base de la familia `hugo/v1-7b-software-docsonly`. Concretamente, aplica un delta calculado como la media de seis diferencias entre un LoRA de rango 1 entrenado para secuencias de preguntas y respuestas con cifrado ROT13 y un modelo base entrenado solo con documentos, utilizando un factor lambda de aproximadamente 2.
 
 El modelo está diseñado para evaluar si un vector de tarea derivado de fuentes de datos "people+planets" puede transferirse a un receptor "held-out" del dominio software. Es decir, investiga la transferibilidad de habilidades aprendidas mediante LoRA entre dominios distintos. Su relevancia radica en que aporta datos empíricos sobre la composición de deltas de LoRA y la generalización entre dominios, un área activa en la investigación de edición y fusión de modelos. No obstante, se trata de un artefacto puramente experimental sin documentación de uso práctico ni licencia declarada.
 
@@ -69,6 +69,6 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/models-1/v1-7b-rot13-loradelta-avg6-software
+- Repositorio Hugging Face: https://huggingface.co/models-1/v1-7b-rot13-loradelta-avg6-software
 - Modelo relacionado (mencionado en la model card): https://huggingface.co/hugo/v1-7b-rot13-loradelta-avg6-software
-- Búsqueda de modelos con tag rot13 en HuggingFace: https://huggingface.co/models?other=rot13
+- Búsqueda de modelos con tag rot13 en Hugging Face: https://huggingface.co/models?other=rot13

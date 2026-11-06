@@ -74,8 +74,8 @@ La comparativa es limitada porque no hay datos de rendimiento ni benchmarks para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richarddzh/talking-flower-voice
+- Hugging Face: https://huggingface.co/richarddzh/talking-flower-voice
 - GitHub (repositorio del proyecto): https://github.com/richarddzh/talking-flower-voice
-- Space relacionado en HuggingFace (posible demo): https://huggingface.co/spaces/MZhaovo/AI_TalkingFlower
+- Space relacionado en Hugging Face (posible demo): https://huggingface.co/spaces/MZhaovo/AI_TalkingFlower
 - Página de voz Talking Flower en AIVoices: https://www.aivoices.gg/voices/talking-flower
 - Modelo RVC de Talking Flower (referencia alternativa): https://voice-models.com/model/1xRdGsq9fMk

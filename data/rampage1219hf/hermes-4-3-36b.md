@@ -99,7 +99,7 @@ En los benchmarks declarados, Hermes 4.3 36B (Psyche) queda ligeramente por deba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rampage1219hf/Hermes-4.3-36B
+- Modelo en Hugging Face: https://huggingface.co/Rampage1219hf/Hermes-4.3-36B
 - Blog de Nous Research (introduccion de Hermes 4.3): https://nousresearch.com/introducing-hermes-4-3/
 - Informe tecnico de Hermes 4 (arXiv): https://arxiv.org/abs/2508.18255
 - Chat con Hermes (Nous Chat): https://chat.nousresearch.com

@@ -6,7 +6,7 @@ Este repositorio contiene una variante cuantizada en formato GGUF del modelo bas
 
 El modelo subyacente, LFM2.5-2.6B, es un modelo denso de 2.697.198.592 parametros desarrollado por Liquid AI y disenado especificamente para cargas de trabajo agenticas en dispositivo (on-device), con una ventana de contexto de 128K tokens y soporte nativo de tool calling. Segun Liquid AI, el modelo es capaz de planificar, invocar herramientas y ejecutar tareas de multiples pasos a 220 tok/s con un consumo de memoria inferior a 2,5 GB, lo que lo situa en la categoria de modelos de borde (edge) para agentes locales.
 
-La relevancia de esta publicacion concreta es que ofrece el modelo en cuantizaciones GGUF optimizadas con imatrix, lo que facilita su despliegue en hardware de consumo y en entornos sin GPU dedicada mediante llama.cpp u Ollama. El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+La relevancia de esta publicacion concreta es que ofrece el modelo en cuantizaciones GGUF optimizadas con imatrix, lo que facilita su despliegue en hardware de consumo y en entornos sin GPU dedicada mediante llama.cpp u Ollama. El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de esta publicacion concreta es que ofrece el modelo en cuantizaci
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (repo de 8,8 GB) |
 | Modelo base | LiquidAI/LFM2.5-2.6B |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Publicacion | Creado el 17 de septiembre de 2026; actualizado el 24 de septiembre de 2026 |
 | Descargas / likes | 4 descargas / 33 likes |
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 - Modelo de 2,7B parametros: la capacidad de razonamiento complejo, matematicas avanzadas y conocimiento factual es inherentemente limitada frente a modelos de mayor tamano; no se han publicado benchmarks que permitan acotar esa brecha.
 - Riesgo de alucinacion: no se documentan evaluaciones de veracidad ni tasas de alucinacion para esta variante.
 - Composicion de la variante no documentada: no se especifica que ajuste, fusion o datos adicionales ha aplicado DavidAU sobre el modelo base, lo que dificulta auditar el comportamiento real del modelo.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar, lo que puede complicar la automatizacion de pipelines y el uso en entornos de CI.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar, lo que puede complicar la automatizacion de pipelines y el uso en entornos de CI.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene verificar si la variante derivada mantiene condiciones adicionales; la informacion disponible indica Apache 2.0 para este repositorio.
 - Idiomas: aunque se declaran 16 idiomas, no se publican datos de calidad por idioma; el rendimiento en idiomas distintos del ingles puede degradarse de forma desigual.
 - Contexto: los 128K tokens corresponden al modelo base, pero no se confirma que la variante GGUF conserve esa ventana completa ni como se comporta en precisiones bajas.
@@ -101,10 +101,10 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Documentacion de Liquid AI sobre LFM2.5-2.6B: https://docs.liquid.ai/lfm/models/lfm25-2.6b
 - Blog de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b
-- Perfil del autor en HuggingFace: https://huggingface.co/DavidAU
+- Perfil del autor en Hugging Face: https://huggingface.co/DavidAU
 - Ficha de otro modelo del autor (referencia de su linea de publicaciones): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Ficha en Interfaze.ai del modelo anterior: https://interfaze.ai/models/davidauqwen38-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf

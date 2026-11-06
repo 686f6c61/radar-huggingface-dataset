@@ -80,7 +80,7 @@ No se dispone de información sobre otros modelos cuantizados similares en el mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bschooled/caeleste-speech
+- Repositorio Hugging Face: https://huggingface.co/bschooled/caeleste-speech
 - Modelo STT original: https://huggingface.co/bosonai/higgs-audio-v3-stt
 - Modelo LLM original: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo TTS no incluido (referencia): https://huggingface.co/unsloth/orpheus-3b-0.1-ft

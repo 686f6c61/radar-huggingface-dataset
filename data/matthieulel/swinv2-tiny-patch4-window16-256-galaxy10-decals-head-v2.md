@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swinv2-tiny-patch4-window16-256-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, publicado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo parte del checkpoint `microsoft/swinv2-tiny-patch4-window16-256` y sustituye su cabeza de clasificación por una capa lineal de diez salidas entrenada sobre el conjunto Galaxy10 DECaLS, que agrupa imágenes astronómicas en diez clases morfológicas.
+`swinv2-tiny-patch4-window16-256-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, publicado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo parte del checkpoint `microsoft/swinv2-tiny-patch4-window16-256` y sustituye su cabeza de clasificación por una capa lineal de diez salidas entrenada sobre el conjunto Galaxy10 DECaLS, que agrupa imágenes astronómicas en diez clases morfológicas.
 
 La adaptación se ha realizado mediante *head-only fine-tuning*: el backbone SwinV2 permanece congelado (incluidas las estadísticas de sus capas de normalización) y solo se entrena la cabeza lineal. Esta elección convierte al modelo en una sonda lineal (*linear probe*) sobre representaciones preentrenadas, útil para medir cuánta información morfológica galáctica contiene un backbone genérico de visión. El checkpoint forma parte de un estudio comparativo de 40 backbones bajo dos regímenes de adaptación, descrito en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
@@ -47,7 +47,7 @@ El entrenamiento se realizó sobre Galaxy10 DECaLS (17.736 imágenes), con el sp
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index (conjunto de test held-out de Galaxy10 DECaLS, 1.774 imágenes; métricas no verificadas por HuggingFace):
+Resultados declarados por el autor en el model-index (conjunto de test held-out de Galaxy10 DECaLS, 1.774 imágenes; métricas no verificadas por Hugging Face):
 
 | Metrica | Valor |
 |---|---|
@@ -86,12 +86,12 @@ La comparación de rendimiento frente a estos modelos en Galaxy10 DECaLS no est�
 - Limitación de dominio: solo cubre las diez clases de Galaxy10 DECaLS y entradas de 256x256 px; no generaliza a otras taxonomías morfológicas ni a resoluciones o instrumentos distintos sin reentrenamiento.
 - Sin capacidades de lenguaje: no procesa texto, por lo que no puede usarse para tareas multimodales ni de razonamiento.
 - Licencia Apache 2.0: permite uso comercial y modificación con atribución; no obstante, el uso científico debe citar el artículo del autor, aún en revisión, y verificar la procedencia y licencia de los datos Galaxy10 DECaLS.
-- Métricas no verificadas: los resultados del model-index están declarados por el autor y no han sido validados de forma independiente por HuggingFace.
+- Métricas no verificadas: los resultados del model-index están declarados por el autor y no han sido validados de forma independiente por Hugging Face.
 - Verificación de integridad limitada: el autor comprobó que las predicciones coinciden con los logits guardados en 96 imágenes de test (100 % de coincidencia, diferencia máxima absoluta de 1,91e-06), pero no se aporta una auditoría externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-tiny-patch4-window16-256-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-tiny-patch4-window16-256-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-tiny-patch4-window16-256
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

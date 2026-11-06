@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `foggy9/trendyol-dino-v2.1-ecommerce-256d` es un sistema de extracción de características visuales (feature extraction) diseñado para recuperación de imágenes de productos en entornos de e-commerce. Se trata de un fine-tune de DinoV2 (ViT-B/14) al que se le ha añadido una capa de pooling GeM (Generalized Mean) y una proyección lineal de 768 a 256 dimensiones, entrenada con ArcFace. El desarrollo original corresponde al equipo de ciencia de datos de Trendyol, aunque el repositorio analizado está publicado por el usuario `foggy9` en HuggingFace.
+El modelo `foggy9/trendyol-dino-v2.1-ecommerce-256d` es un sistema de extracción de características visuales (feature extraction) diseñado para recuperación de imágenes de productos en entornos de e-commerce. Se trata de un fine-tune de DinoV2 (ViT-B/14) al que se le ha añadido una capa de pooling GeM (Generalized Mean) y una proyección lineal de 768 a 256 dimensiones, entrenada con ArcFace. El desarrollo original corresponde al equipo de ciencia de datos de Trendyol, aunque el repositorio analizado está publicado por el usuario `foggy9` en Hugging Face.
 
 Este modelo resuelve el problema de la búsqueda visual y la detección de duplicados en catálogos de productos, generando embeddings de 256 dimensiones que permiten comparar imágenes mediante distancia coseno. Su relevancia actual radica en que es una evolución de la versión anterior (`trendyol-dino-v2-ecommerce-256d`), con mejoras en el pooling (GeM en lugar de flatten de tokens espaciales) y un entrenamiento más exhaustivo: 1000 productos distintos por cada una de las ~3400 categorías. Con 86,7 millones de parámetros y una entrada de 224×224 píxeles, es un modelo ligero que puede desplegarse en GPUs de consumo.
 
@@ -16,7 +16,7 @@ Este modelo resuelve el problema de la búsqueda visual y la detección de dupli
 | Longitud de contexto | No aplica (modelo de visión, entrada 224×224) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Inglés (documentación); el modelo procesa imágenes de productos |
-| Licencia | CC BY-SA 4.0 (según HuggingFace); el README indica términos source-available con atribución y notificación previa para uso comercial |
+| Licencia | CC BY-SA 4.0 (según Hugging Face); el README indica términos source-available con atribución y notificación previa para uso comercial |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| foggy9/trendyol-dino-v2.1-ecommerce-256d | 86,7 M | Imagen 224×224 | CC BY-SA 4.0 (según HF) | HuggingFace |
-| Trendyol/trendyol-dino-v2-ecommerce-256d (v2) | 86,7 M (aprox.) | Imagen 224×224 | Source-available | HuggingFace |
+| foggy9/trendyol-dino-v2.1-ecommerce-256d | 86,7 M | Imagen 224×224 | CC BY-SA 4.0 (según HF) | Hugging Face |
+| Trendyol/trendyol-dino-v2-ecommerce-256d (v2) | 86,7 M (aprox.) | Imagen 224×224 | Source-available | Hugging Face |
 | CLIP ViT-B/32 (OpenCLIP) | 151 M | Imagen y texto | No disponible | OpenCLIP |
-| DinoV2 ViT-B/14 (base) | 86,7 M | Imagen 224×224 | No disponible | HuggingFace |
+| DinoV2 ViT-B/14 (base) | 86,7 M | Imagen 224×224 | No disponible | Hugging Face |
 
 El modelo analizado se diferencia de la versión v2 de Trendyol en el tipo de pooling (GeM frente a flatten de tokens espaciales) y en la cantidad de productos por categoría usados en el entrenamiento (1000 frente a 300). Frente a CLIP ViT-B/32, que está pensado para alinear imágenes y texto, este modelo está especializado en recuperación visual de productos y produce embeddings de menor dimensionalidad (256 frente a 512), lo que reduce el coste de almacenamiento y búsqueda.
 
@@ -71,7 +71,7 @@ El modelo analizado se diferencia de la versión v2 de Trendyol en el tipo de po
 - Sesgos conocidos: los datos de entrenamiento provienen de catálogos de e-commerce, probablemente con sesgo hacia productos de Trendyol y mercados turcos u occidentales; puede no generalizar bien a otros dominios o regiones.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero puede producir falsos positivos en similitud, es decir, imágenes diferentes con embeddings cercanos.
 - Limitaciones de contexto o idioma: el modelo no procesa texto, solo imágenes de 224×224; no soporta resoluciones mayores sin reescalado previo.
-- Restricciones de licencia: aunque en HuggingFace figura como CC BY-SA 4.0, el README del autor indica que el uso comercial requiere atribución y notificación previa a Trendyol (`scr.datascience@trendyol.com`). Esto puede ser una restricción relevante para producción.
+- Restricciones de licencia: aunque en Hugging Face figura como CC BY-SA 4.0, el README del autor indica que el uso comercial requiere atribución y notificación previa a Trendyol (`scr.datascience@trendyol.com`). Esto puede ser una restricción relevante para producción.
 - Requiere `trust_remote_code=True` porque incluye código personalizado (custom code) en el repositorio.
 - Los heads de clasificación del entrenamiento no están incluidos; solo se exportan los embeddings, lo que limita su uso a tareas de recuperación y no a clasificación directa.
 

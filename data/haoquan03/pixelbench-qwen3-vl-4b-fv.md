@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PixelBench-Qwen3-VL-4B-FV | ~4,83 mil millones | no disponible | Apache 2.0 | HuggingFace (haoquan03) |
-| Qwen3-VL-4B-Instruct (base) | ~4 mil millones (familia Qwen3-VL-4B) | no disponible en esta ficha | segun Qwen (no verificada aqui) | HuggingFace (Qwen) |
+| PixelBench-Qwen3-VL-4B-FV | ~4,83 mil millones | no disponible | Apache 2.0 | Hugging Face (haoquan03) |
+| Qwen3-VL-4B-Instruct (base) | ~4 mil millones (familia Qwen3-VL-4B) | no disponible en esta ficha | segun Qwen (no verificada aqui) | Hugging Face (Qwen) |
 | Otras variantes PixelBench | no disponible | no disponible | no disponible | repositorio del proyecto |
 
 La comparativa cuantitativa de rendimiento frente a alternativas no esta disponible en la informacion proporcionada. El modelo base Qwen3-VL-4B-Instruct es la referencia natural, ya que este ajuste parte de el y entrena todos los parametros sobre FineVision.
@@ -85,7 +85,7 @@ La comparativa cuantitativa de rendimiento frente a alternativas no esta disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-4B-FV
+- Hugging Face: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-4B-FV
 - Proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

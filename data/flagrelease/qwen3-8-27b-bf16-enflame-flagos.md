@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (este) | 27,78B | No disponible | Apache-2.0 | HuggingFace, con adaptaciones multi-chip |
-| Qwen2.5-32B | 32,5B | 128K | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 | HuggingFace |
+| Qwen3.8-27B (este) | 27,78B | No disponible | Apache-2.0 | Hugging Face, con adaptaciones multi-chip |
+| Qwen2.5-32B | 32,5B | 128K | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 | Hugging Face |
 
 No se dispone de benchmarks comparativos directos entre estos modelos en la información proporcionada. Qwen3.8-27B es comparable en tamaño a Qwen2.5-32B, pero no hay datos de rendimiento relativo.
 
@@ -80,7 +80,7 @@ No se dispone de benchmarks comparativos directos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-enflame-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-enflame-FlagOS
 - Repositorio del modelo hermano MoE: https://huggingface.co/FlagRelease/Qwen3.8-2.4T-A95B-FP8-enflame-FlagOS
 - Repositorio del modelo hermano MoE (mthreads): https://huggingface.co/FlagRelease/Qwen3.8-2.4T-A95B-FP8-mthreads-FlagOS
 - Información general de Qwen3.8: https://openlm.ai/qwen3.8/

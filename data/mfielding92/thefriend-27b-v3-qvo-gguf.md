@@ -73,7 +73,7 @@ El modelo SmartCode-Fable-5 tiene una licencia Apache-2.0 para los pesos, mientr
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mfielding92/thefriend-27b-v3-qvo-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mfielding92/thefriend-27b-v3-qvo-GGUF
 - Modelo base (safetensors): https://huggingface.co/mfielding92/thefriend-27b-v3-qvo
 - Versión anterior (v2): https://huggingface.co/mfielding92/thefriend-27b-v2
 - Modelo similar del autor (SmartCode-Fable-5): https://huggingface.co/mfielding92/SmartCode-Fable-5-CoT-Reasoning-QVO-Qwen-3.6-27B-Distilled-GGUF

@@ -71,7 +71,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parámetros | Contexto | LIBERO-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bridgequant-libero-76m-ptr5 | 64.826.027 | no disponible | 0.9533 | other | HuggingFace |
+| bridgequant-libero-76m-ptr5 | 64.826.027 | no disponible | 0.9533 | other | Hugging Face |
 | Recipe base BridgeQuant LIBERO 76M (referencia del autor) | ~76M (según nombre del recipe) | no disponible | 0.9715 | other | Referenciado en la model card, no se proporciona enlace directo |
 | Otras alternativas VLA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/bridgequant-libero-76m-ptr5
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/bridgequant-libero-76m-ptr5
 - Código: https://github.com/VLAOpt/bridgequant-async
 - Paper, blog o demo: no disponibles en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-burmese-gpt2-v3 es un ajuste fino (fine-tune) supervisado del modelo GPT-2 de OpenAI, publicado por el usuario zayar26 en HuggingFace. Se trata de un modelo decoder-only de 100.382.208 parametros, orientado a generacion de texto, cuyo nombre sugiere un entrenamiento sobre corpus en birmano (my), aunque la model card no declara ni el conjunto de datos ni los idiomas cubiertos. El repositorio tiene un tamano de 0,4 GB y se distribuye en formato safetensors bajo licencia MIT.
+burmese-gpt2-v3 es un ajuste fino (fine-tune) supervisado del modelo GPT-2 de OpenAI, publicado por el usuario zayar26 en Hugging Face. Se trata de un modelo decoder-only de 100.382.208 parametros, orientado a generacion de texto, cuyo nombre sugiere un entrenamiento sobre corpus en birmano (my), aunque la model card no declara ni el conjunto de datos ni los idiomas cubiertos. El repositorio tiene un tamano de 0,4 GB y se distribuye en formato safetensors bajo licencia MIT.
 
 El modelo se genero automaticamente con la libreria Trainer de Transformers (version 5.16.1) y su model card es el esqueleto por defecto, con secciones como "Model description" o "Training and evaluation data" marcadas como "More information needed". Esto implica que la unica informacion tecnica verificable son los hiperparametros de entrenamiento y el recuento de parametros extraido de los pesos; no hay resultados de evaluacion declarados (el array `results` del model-index esta vacio).
 
@@ -42,7 +42,7 @@ El entrenamiento se realizo con el Trainer de Transformers sobre un dataset no i
 - Razonamiento y matematicas: no documentado; un modelo de 100 M de parametros sin ajuste por instrucciones no es fiable en tareas de razonamiento.
 - Codigo: no documentado.
 - Vision o audio: no soportado (modelo exclusivamente de texto).
-- Compatibilidad de despliegue: etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que es desplegable con TGI y con la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad de despliegue: etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que es desplegable con TGI y con la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM para inferencia: aproximadamente 0,4 GB en fp32 para los pesos (100,38 M de parametros x 4 bytes) y unos 0,2 GB en fp16/bf16. Con cache KV para contexto de 1024 tokens el consumo adicional es de decenas de MB, por lo que el modelo completo cabe en menos de 1 GB de VRAM en cualquier configuracion razonable.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas GTX 1050 Ti, RTX 2060, RTX 3050, RTX 4090, A100 o H100. En la practica, la GPU no es el factor limitante y el modelo tambien se ejecuta en CPU.
 - GPU de consumo: si, cabe sobradamente en todas las GPU de consumo actuales e incluso en SoC integrados tipo Apple Silicon o iGPU modernas.
-- Opciones de despliegue: transformers (PyTorch), text-generation-inference (el repo esta etiquetado como `text-generation-inference` y `endpoints_compatible`), HuggingFace Inference Endpoints y, previa conversion a GGUF, llama.cpp u Ollama (la conversion no esta publicada en el repositorio).
+- Opciones de despliegue: transformers (PyTorch), text-generation-inference (el repo esta etiquetado como `text-generation-inference` y `endpoints_compatible`), Hugging Face Inference Endpoints y, previa conversion a GGUF, llama.cpp u Ollama (la conversion no esta publicada en el repositorio).
 - Latencia y throughput: no disponible. No hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ La comparacion cuantitativa no es posible: no hay benchmarks publicados para nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zayar26/burmese-gpt2-v3
+- Modelo en Hugging Face: https://huggingface.co/zayar26/burmese-gpt2-v3
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Proyecto relacionado (distinto repositorio): https://huggingface.co/WYNN747/Burmese-GPT-v3
 - Proyecto relacionado (distinto repositorio): https://huggingface.co/WYNN747/Burmese-GPT

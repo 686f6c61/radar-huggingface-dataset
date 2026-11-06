@@ -79,8 +79,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado): https://huggingface.co/hoskasii/nano
-- HuggingFace (modelo oficial del equipo): https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano
+- Hugging Face (repositorio consultado): https://huggingface.co/hoskasii/nano
+- Hugging Face (modelo oficial del equipo): https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano
 - ModelScope: https://modelscope.cn/models/openmoss/MOSS-TTS-Nano
 - Blog MOSI.AI: https://mosi.cn/#models
 - Paper (arXiv 2603.18090): https://arxiv.org/abs/2603.18090

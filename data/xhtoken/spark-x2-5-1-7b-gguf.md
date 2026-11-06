@@ -48,7 +48,7 @@ No se dispone de información pública sobre el número de tokens de entrenamien
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace y la documentación asociada no incluyen métricas como MMLU, HumanEval o GSM8K. Se recomienda consultar el modelo base (XHToken/Spark-X2.5-1.7B) para futuras actualizaciones con datos de evaluación.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face y la documentación asociada no incluyen métricas como MMLU, HumanEval o GSM8K. Se recomienda consultar el modelo base (XHToken/Spark-X2.5-1.7B) para futuras actualizaciones con datos de evaluación.
 
 ## Requisitos de hardware
 
@@ -79,8 +79,8 @@ No se dispone de datos de benchmarks comparativos entre estos modelos. La princi
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/XHToken/Spark-X2.5-1.7B)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/XHToken/Spark-X2.5-1.7B)
 - [Repositorio GitHub de Spark-X2.5](https://github.com/XHToken/Spark-X2.5)
 - [llama.cpp compatible (fork de XHToken)](https://github.com/XHToken/llama.cpp)
 - [Perfil de XHToken en GitHub](https://github.com/XHToken)

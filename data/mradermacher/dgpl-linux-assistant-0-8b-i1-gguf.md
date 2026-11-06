@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/dgpl-linux-assistant-0.8b-i1-GGUF` es una recopilación de cuantizaciones en formato GGUF, generadas con calibración imatrix, del modelo `dgpl/dgpl-linux-assistant-0.8b`. El autor de la cuantización es mradermacher, un perfil habitual en HuggingFace especializado en publicar versiones comprimidas de modelos abiertos. El modelo original es un asistente conversacional en inglés orientado a tareas de Linux, DevSecOps, administración de sistemas y uso como copiloto de terminal, tal y como reflejan las etiquetas del repositorio (`linux`, `devsecops`, `terminal-copilot`, `sysadmin`).
+`mradermacher/dgpl-linux-assistant-0.8b-i1-GGUF` es una recopilación de cuantizaciones en formato GGUF, generadas con calibración imatrix, del modelo `dgpl/dgpl-linux-assistant-0.8b`. El autor de la cuantización es mradermacher, un perfil habitual en Hugging Face especializado en publicar versiones comprimidas de modelos abiertos. El modelo original es un asistente conversacional en inglés orientado a tareas de Linux, DevSecOps, administración de sistemas y uso como copiloto de terminal, tal y como reflejan las etiquetas del repositorio (`linux`, `devsecops`, `terminal-copilot`, `sysadmin`).
 
 El modelo base cuenta con 752.393.024 parámetros (aproximadamente 0,75 mil millones), lo que lo sitúa en la categoría de modelos ultraligeros capaces de ejecutarse en CPU o en GPU de gama de entrada. El repositorio incluye una batería amplia de cuantizaciones que abarca desde IQ1_S (0,4 GB) hasta Q6_K (0,7 GB), con lo que se puede elegir el equilibrio entre tamaño, velocidad y calidad en función del hardware disponible, algo relevante para entornos de servidores sin acelerador dedicado.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mradermacher/dgpl-linux-assistant-0.8b-i1-GGUF` (este modelo) | 0,75 mil millones (base) | GGUF con imatrix | 24 variantes de i1, de IQ1_S a Q6_K | GPL-3.0 (heredada del base) | HuggingFace |
-| `mradermacher/dgpl-linux-assistant-0.8b-GGUF` (cuantizaciones estaticas) | 0,75 mil millones (base) | GGUF estatico | No detalladas en la informacion disponible | GPL-3.0 | HuggingFace |
-| `dgpl/dgpl-linux-assistant-0.8b` (modelo base) | 752.393.024 | safetensors (transformers) | no aplica | GPL-3.0 | HuggingFace |
+| `mradermacher/dgpl-linux-assistant-0.8b-i1-GGUF` (este modelo) | 0,75 mil millones (base) | GGUF con imatrix | 24 variantes de i1, de IQ1_S a Q6_K | GPL-3.0 (heredada del base) | Hugging Face |
+| `mradermacher/dgpl-linux-assistant-0.8b-GGUF` (cuantizaciones estaticas) | 0,75 mil millones (base) | GGUF estatico | No detalladas en la informacion disponible | GPL-3.0 | Hugging Face |
+| `dgpl/dgpl-linux-assistant-0.8b` (modelo base) | 752.393.024 | safetensors (transformers) | no aplica | GPL-3.0 | Hugging Face |
 
 No se dispone de datos verificados de otros modelos comparables de la misma categoria (asistentes de terminal o modelos de menos de mil millones de parametros) en la informacion proporcionada, por lo que no se incluye una comparacion de rendimiento frente a alternativas.
 
@@ -83,11 +83,11 @@ No se dispone de datos verificados de otros modelos comparables de la misma cate
 - Restricciones de licencia: la licencia GPL-3.0 es copyleft, lo que impone obligaciones de distribucion del codigo fuente a las obras derivadas; su integracion en productos propietarios o servicios cerrados requiere revision legal.
 - Tamano reducido: con 0,75 mil millones de parametros, la capacidad de razonamiento complejo, matematicas o generacion de codigo extenso es limitada en comparacion con modelos de mayor escala.
 - Trazabilidad del modelo base: al no detallarse el dataset de entrenamiento ni el proceso de alineacion, no es posible auditar sesgos ni evaluar la robustez frente a entradas adversarias.
-- Datos de la ficha: las fechas de creacion y actualizacion del repositorio (14 de septiembre de 2026) se toman tal cual del metadata de HuggingFace.
+- Datos de la ficha: las fechas de creacion y actualizacion del repositorio (14 de septiembre de 2026) se toman tal cual del metadata de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/dgpl-linux-assistant-0.8b-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/dgpl-linux-assistant-0.8b-i1-GGUF
 - Modelo base: https://huggingface.co/dgpl/dgpl-linux-assistant-0.8b
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/dgpl-linux-assistant-0.8b-GGUF
 - Pagina resumen de descargas del autor: https://hf.tst.eu/model#dgpl-linux-assistant-0.8b-i1-GGUF

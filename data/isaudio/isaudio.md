@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ISAudio/isaudio es un repositorio de pesos publicado en HuggingFace por la organizacion ISAudio bajo licencia Apache 2.0. El repositorio tiene un tamano de 3,2 GB y fue creado el 26 de septiembre de 2026, con ultima actualizacion el mismo dia. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita a la cabecera YAML con la licencia, sin descripcion, sin arquitectura declarada, sin idiomas soportados y sin resultados de evaluacion.
+ISAudio/isaudio es un repositorio de pesos publicado en Hugging Face por la organizacion ISAudio bajo licencia Apache 2.0. El repositorio tiene un tamano de 3,2 GB y fue creado el 26 de septiembre de 2026, con ultima actualizacion el mismo dia. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita a la cabecera YAML con la licencia, sin descripcion, sin arquitectura declarada, sin idiomas soportados y sin resultados de evaluacion.
 
 La informacion disponible no permite confirmar la modalidad del modelo. El nombre del repositorio y de la organizacion sugieren un modelo orientado a audio, pero el campo `pipeline` no esta definido, no hay ejemplos de uso y la model card no menciona tarea alguna. Tampoco se puede determinar el numero de parametros, la longitud de contexto ni el regimen de entrenamiento a partir de los metadatos publicos.
 
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ISAudio/isaudio
+- Repositorio en Hugging Face: https://huggingface.co/ISAudio/isaudio
 - Resultados de busqueda web (contexto general sobre IA de audio, no especificos del modelo):
   - Is audio the new growth engine for news companies? - INMA: https://www.inma.org/blogs/conference/post.cfm/is-audio-the-new-growth-engine-for-news-companies
   - What is audio intelligence or speech understanding? - AssemblyAI: https://www.assemblyai.com/blog/what-is-audio-intelligence

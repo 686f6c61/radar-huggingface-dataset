@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (sc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmPac/trace
+- Modelo en Hugging Face: https://huggingface.co/AmPac/trace
 - SOP 50 10 (pagina oficial SBA): https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs
 - 13 CFR 120.131 (eCFR): https://www.ecfr.gov/current/title-13/section-120.131
 - 13 CFR 120.120 (eCFR): https://www.ecfr.gov/current/title-13/section-120.120

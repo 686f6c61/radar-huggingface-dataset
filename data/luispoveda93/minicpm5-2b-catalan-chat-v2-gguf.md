@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM5-2B-catalan-chat-v2 (GGUF) | 2.516.756.480 | no disponible | other (linaje con componente no comercial) | GGUF en HuggingFace |
-| luispoveda93/MiniCPM5-2B-catalan-chat (ronda 1) | ~2,5B | no disponible | no disponible (linaje InstruCAT, CC-BY-NC-ND-4.0) | Pesos en HuggingFace |
-| openbmb/MiniCPM5-2B (base) | 2,5B | no disponible | Apache-2.0 | Pesos en HuggingFace |
+| MiniCPM5-2B-catalan-chat-v2 (GGUF) | 2.516.756.480 | no disponible | other (linaje con componente no comercial) | GGUF en Hugging Face |
+| luispoveda93/MiniCPM5-2B-catalan-chat (ronda 1) | ~2,5B | no disponible | no disponible (linaje InstruCAT, CC-BY-NC-ND-4.0) | Pesos en Hugging Face |
+| openbmb/MiniCPM5-2B (base) | 2,5B | no disponible | Apache-2.0 | Pesos en Hugging Face |
 | Modelos conversacionales en catalan de otros desarrolladores (p. ej. familia Salamandra de BSC) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 Comparativa de rendimiento entre estas alternativas: no disponible. No se han publicado evaluaciones comparativas para este modelo en la informacion proporcionada.

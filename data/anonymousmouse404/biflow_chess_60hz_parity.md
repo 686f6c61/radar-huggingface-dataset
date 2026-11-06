@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonymousMouse404/biflow_chess_60hz_parity
+- Modelo en Hugging Face: https://huggingface.co/AnonymousMouse404/biflow_chess_60hz_parity
 - Dataset asociado: https://huggingface.co/datasets/AnonymousMouse404/chess
 - Paper de BiFlow (arXiv): https://arxiv.org/pdf/2512.10953
 - Repositorio de referencia para ajedrez con LLM (no relacionado directamente): https://github.com/2Bol-afk/chess-llm

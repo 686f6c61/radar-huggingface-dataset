@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Starless-Seraph-31B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Starless-Seraph-31B-i1-GGUF
 - Repositorio estatico (quants sin imatrix y mmproj): https://huggingface.co/mradermacher/Starless-Seraph-31B-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Starless-Seraph-31B

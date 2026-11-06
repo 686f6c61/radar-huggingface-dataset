@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jieuncjc/grounded-language-survey69
+- Repositorio en Hugging Face: https://huggingface.co/jieuncjc/grounded-language-survey69
 - Artículo sobre grounding y evaluación de LLMs (arXiv): https://arxiv.org/html/2407.12858v1
 - Artículo sobre qué tan bien se anclan los LLMs (arXiv): https://arxiv.org/html/2311.09069
 - Artículo sobre agentes basados en LLMs y modelado basado en agentes (Nature): https://www.nature.com/articles/s41599-024-03611-3

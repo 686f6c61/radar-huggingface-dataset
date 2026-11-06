@@ -114,11 +114,11 @@ El autor compara su enrutador con dos políticas de la misma categoría y mismo 
 - Sin umbral para el ensemble: el autor no publica uno; debe elegirse con datos propios.
 - Licencia de los datos: los pesos y el código son MIT, pero HotpotQA es CC BY-SA 4.0 y el autor advierte de que no está resuelta la aplicabilidad de la cláusula share-alike a pesos entrenados sobre esos datos, sin afirmar que no aplique. Conviene revisión legal antes de uso comercial.
 - Madurez: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el mismo día. Es un artefacto de investigación, no un componente con historial de producción.
-- La búsqueda web realizada no devolvió ninguna fuente relacionada con el modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- La búsqueda web realizada no devolvió ninguna fuente relacionada con el modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohameddhameem/systemone-jev-qp
+- Modelo en Hugging Face: https://huggingface.co/mohameddhameem/systemone-jev-qp
 - Repositorio de código (entrenamiento, evaluación y `route.py`): https://github.com/mohameddhameem/systemone-jev
 - Modelo base nano-jev v1.0: https://huggingface.co/sdmlai/nano-jev
 - Dataset HotpotQA: https://huggingface.co/datasets/hotpotqa/hotpot_qa

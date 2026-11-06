@@ -69,6 +69,6 @@ Existen otros repositorios con el mismo propósito (auditoría de carbono para e
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere un uso muy limitado o nulo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/mayankawrr/tds-ga8-green-ai-carbon-audit
+- Hugging Face: https://huggingface.co/mayankawrr/tds-ga8-green-ai-carbon-audit
 - Repositorio GitHub relacionado: https://github.com/iitm-mayank16/tds-ga8
 - Otros registros similares: https://huggingface.co/harshit4/tds-ga8-green-ai-audit , https://huggingface.co/anshusaurav/tds-ga8-carbon-model

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo / Método | Parametros | Contexto | Rendimiento (benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 51,7M | No aplica | No publicado | Apache-2.0 | HuggingFace / LeRobot |
+| ACT (este modelo) | 51,7M | No aplica | No publicado | Apache-2.0 | Hugging Face / LeRobot |
 | Diffusion Policy (LeRobot) | No disponible | No aplica | No publicado | MIT | LeRobot |
 | VQ-BeT (LeRobot) | No disponible | No aplica | No publicado | MIT | LeRobot |
 

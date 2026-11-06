@@ -40,7 +40,7 @@ El autor fijo de antemano unos umbrales de aceptacion de la cuantizacion y los v
 - Uso de herramientas y cargas de agente: el build se calibro explicitamente con trayectorias de tool use y esta orientado por el autor a un agente de terminal, lo que presupone que el modelo base soporta llamadas a funciones y razonamiento de varios pasos.
 - Contexto largo: el modelo base declara 128K tokens, aunque este build se valida y se recomienda a 16.384 tokens por motivos de memoria.
 - Integracion en llama.cpp: compatible con `llama-cli` y `llama-server`, con soporte de offload completo a GPU (`-ngl 99`) y cache KV cuantizada.
-- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`, lo que indica que el artefacto puede servirse detras de una API compatible con el esquema habitual de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`, lo que indica que el artefacto puede servirse detras de una API compatible con el esquema habitual de Hugging Face.
 - Capacidades de vision, audio, matemáticas o modo de razonamiento explicito: no documentadas en la informacion proporcionada.
 - Cobertura multilingue: no disponible.
 
@@ -93,11 +93,11 @@ No se proporcionan datos de latencia (tokens/s) ni de throughput en servidor con
 
 | Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ibm-granite/granite-4.2-8b (base) | 8,79B | 128K nativo | safetensors, sin cuantizar | Apache 2.0 | Publico en HuggingFace |
+| ibm-granite/granite-4.2-8b (base) | 8,79B | 128K nativo | safetensors, sin cuantizar | Apache 2.0 | Publico en Hugging Face |
 | lin7c/granite-4.2-8b-Q4_K_M-imat (este) | 8,79B | 128K nativo; verificado a 16K | GGUF Q4_K_M, 5,35 GB | Apache 2.0 | Publico, 13 descargas |
 | Variante IQ4_XS de la misma serie | No disponible | No disponible | GGUF IQ4_XS (no publicada en este repo) | Apache 2.0 (presumible, derivada del mismo base) | No publicada |
-| Llama 3.1 8B Instruct | 8,03B | 128K | safetensors / GGUF | Llama 3.1 Community License | Publico en HuggingFace |
-| Qwen3-8B | 8,2B | 32K nativo, ampliable a 131K con YaRN | safetensors / GGUF | Apache 2.0 | Publico en HuggingFace |
+| Llama 3.1 8B Instruct | 8,03B | 128K | safetensors / GGUF | Llama 3.1 Community License | Publico en Hugging Face |
+| Qwen3-8B | 8,2B | 32K nativo, ampliable a 131K con YaRN | safetensors / GGUF | Apache 2.0 | Publico en Hugging Face |
 
 Nota: los datos de las dos ultimas filas proceden de las fichas publicas de esos modelos y no forman parte de la informacion proporcionada en esta busqueda; se incluyen solo como referencia de categoria. No se dispone de comparaciones de rendimiento entre este build y esas alternativas, por lo que no es posible establecer un ranking de calidad.
 
@@ -116,7 +116,7 @@ Nota: los datos de las dos ultimas filas proceden de las fichas publicas de esos
 
 ## Enlaces
 
-- Repositorio HuggingFace de este build: https://huggingface.co/lin7c/granite-4.2-8b-Q4_K_M-imat
+- Repositorio Hugging Face de este build: https://huggingface.co/lin7c/granite-4.2-8b-Q4_K_M-imat
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - llama.cpp (el build usa el commit `dac308739429d60ccf99c46ecc1fbb1dff20ca77`): https://github.com/ggml-org/llama.cpp
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron unicamente resultados sin relacion con el contenido de la ficha (paginas de pronosticos de carreras de caballos del sitio geny.com), por lo que se descartan.

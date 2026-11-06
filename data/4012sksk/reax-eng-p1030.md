@@ -2,7 +2,7 @@
 
 ## Resumen
 
-REAX p1030 BMR validation source V3 es un artefacto publicado en HuggingFace por el usuario 4012sksk bajo el identificador `4012sksk/reax-eng-p1030`. La model card no describe un modelo de lenguaje en el sentido convencional: se presenta como un repositorio de validación ("BMR validation source") asociado a un candidato diagnóstico UID235 y a una imagen de contenedor `ghcr.io/dpmoomin/p235`. El contenido declarado son fuentes, hashes y metadatos de release, no pesos de modelo.
+REAX p1030 BMR validation source V3 es un artefacto publicado en Hugging Face por el usuario 4012sksk bajo el identificador `4012sksk/reax-eng-p1030`. La model card no describe un modelo de lenguaje en el sentido convencional: se presenta como un repositorio de validación ("BMR validation source") asociado a un candidato diagnóstico UID235 y a una imagen de contenedor `ghcr.io/dpmoomin/p235`. El contenido declarado son fuentes, hashes y metadatos de release, no pesos de modelo.
 
 El documento menciona componentes denominados "mammoth", "blink" y "reax1", con rutas de ejecución y puntuaciones de componentes locales (por ejemplo, Blink con perfil DUAL0 y score aproximado de 2,847459; REAX1 con score de 1,2977194). También declara explícitamente un fallo de Vision en la comprobación local original (media 0,591986, máximo 3,71588 por encima de 1,0, acuerdo top 0,978516), por lo que Vision no se declara para esta release.
 
@@ -72,7 +72,7 @@ No disponible. No se conocen modelos comparables porque el artefacto no se prese
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/4012sksk/reax-eng-p1030
+- Hugging Face: https://huggingface.co/4012sksk/reax-eng-p1030
 - Licencias de fuentes: https://huggingface.co/4012sksk/reax-eng-p1030/blob/main/SOURCE_LICENSES.md
 - Fuente engcomp (MetaTrendLab): https://github.com/MetaTrendLab/engcomp/tree/574bc63e632e0f775d2fdc9cd4904d3fbd76ecad
 - Fuente reax-engine (reaxlabs): https://github.com/reaxlabs/reax-engine/tree/4230e50e8b5247f113f7c4b55c6d1c4efa7c2e94

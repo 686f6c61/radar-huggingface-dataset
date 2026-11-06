@@ -74,8 +74,8 @@ No se dispone de información sobre adaptadores LoRA comparables para la misma t
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA + RL) | ~0,8 B (base) + LoRA | No disponible | 100 % test, 100 % éxito en 20 episodios | Apache 2.0 | HuggingFace (18 descargas) |
-| Qwen/Qwen3.5-0.8B (base sin ajuste) | ~0,8 B | No disponible | 73,2 % test, 60 % éxito | No especificada en esta ficha | HuggingFace |
+| Este adaptador (LoRA + RL) | ~0,8 B (base) + LoRA | No disponible | 100 % test, 100 % éxito en 20 episodios | Apache 2.0 | Hugging Face (18 descargas) |
+| Qwen/Qwen3.5-0.8B (base sin ajuste) | ~0,8 B | No disponible | 73,2 % test, 60 % éxito | No especificada en esta ficha | Hugging Face |
 | Cerebro PPO original (no es un LLM) | No aplica | No aplica | 100 % test, 100 % éxito | No disponible | Código en GitHub |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de información sobre adaptadores LoRA comparables para la misma t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SHSemi/connectailab-rl-connectailab-rl-seung-hyun-kim-v1-link03-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/SHSemi/connectailab-rl-connectailab-rl-seung-hyun-kim-v1-link03-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

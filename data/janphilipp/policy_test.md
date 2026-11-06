@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JanPhilipp/policy_test | 450.046.176 | no disponible | Apache-2.0 | HuggingFace, LeRobot |
-| lerobot/smolvla_base | no disponible (misma arquitectura) | no disponible | Apache-2.0 | HuggingFace, LeRobot |
+| JanPhilipp/policy_test | 450.046.176 | no disponible | Apache-2.0 | Hugging Face, LeRobot |
+| lerobot/smolvla_base | no disponible (misma arquitectura) | no disponible | Apache-2.0 | Hugging Face, LeRobot |
 
 No se dispone de datos de rendimiento publicados para comparar directamente con otros modelos de la misma categoría. El fine-tune `policy_test` se diferencia del modelo base únicamente por su entrenamiento en el dataset `ttz_tools_merged_2`. No se conocen comparativas con otros VLA como OpenVLA o modelos similares en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento publicados para comparar directamente con 
 
 ## Enlaces
 
-- HuggingFace: [JanPhilipp/policy_test](https://huggingface.co/JanPhilipp/policy_test)
+- Hugging Face: [JanPhilipp/policy_test](https://huggingface.co/JanPhilipp/policy_test)
 - Paper SmolVLA: [arXiv:2506.01844](https://huggingface.co/papers/2506.01844)
 - Guía de SmolVLA en LeRobot: [https://huggingface.co/docs/lerobot/main/en/smolvla](https://huggingface.co/docs/lerobot/main/en/smolvla)
 - Documentación de LeRobot: [https://huggingface.co/docs/lerobot/index](https://huggingface.co/docs/lerobot/index)

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-lite-skills-v3 | 852.985.920 | no disponible | Apache-2.0 | Cuerpo soup para pool z3 (decisión, feature-extraction) | HuggingFace, requiere custom_code |
-| Qwen/Qwen3.5-0.8B | ~0,8 B | no disponible | Apache-2.0 | Modelo base de propósito general | HuggingFace |
-| vllm-sr/d3-lite | no disponible | no disponible | Apache-2.0 | Componente del soup Zils | HuggingFace |
-| Maincode/Matilda-Decision-v1-Edge | no disponible | no disponible | Apache-2.0 | Componente del soup Zils orientado a decisión | HuggingFace |
+| zils-lite-skills-v3 | 852.985.920 | no disponible | Apache-2.0 | Cuerpo soup para pool z3 (decisión, feature-extraction) | Hugging Face, requiere custom_code |
+| Qwen/Qwen3.5-0.8B | ~0,8 B | no disponible | Apache-2.0 | Modelo base de propósito general | Hugging Face |
+| vllm-sr/d3-lite | no disponible | no disponible | Apache-2.0 | Componente del soup Zils | Hugging Face |
+| Maincode/Matilda-Decision-v1-Edge | no disponible | no disponible | Apache-2.0 | Componente del soup Zils orientado a decisión | Hugging Face |
 
 La comparación directa con alternativas de propósito general no es equitativa: zils-lite-skills-v3 no se distribuye como modelo autónomo, sino como cuerpo acoplado a un chasis propietario, lo que limita la comparación a los componentes de su propio soup.
 
@@ -88,7 +88,7 @@ La comparación directa con alternativas de propósito general no es equitativa:
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dasLOL/zils-lite-skills-v3
+- Repositorio Hugging Face: https://huggingface.co/dasLOL/zils-lite-skills-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Componente del soup: https://huggingface.co/vllm-sr/d3-lite
 - Componente del soup: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge

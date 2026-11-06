@@ -88,8 +88,8 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privacy Law Classifier | 82,1 M | no disponible | Clasificación de 21 marcos legales | Apache 2.0 | HuggingFace |
-| distilroberta-base (base) | 82,1 M | 512 tokens | Modelo base de lenguaje enmascarado | Apache 2.0 | HuggingFace |
+| Privacy Law Classifier | 82,1 M | no disponible | Clasificación de 21 marcos legales | Apache 2.0 | Hugging Face |
+| distilroberta-base (base) | 82,1 M | 512 tokens | Modelo base de lenguaje enmascarado | Apache 2.0 | Hugging Face |
 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre clasificadores comparables de compliance legal en la documentación proporcionada.
@@ -107,7 +107,7 @@ No se dispone de información sobre clasificadores comparables de compliance leg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/privacy-law-classifier
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/privacy-law-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/aitrainingdatabroker/data-compliance-frameworks
 - Modelo base: https://huggingface.co/distilbert/distilroberta-base
 - Reglas de privacidad por región antes de vender datos a IA: https://aitrainingdatabroker.com/regions/

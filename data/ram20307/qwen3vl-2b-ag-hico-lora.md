@@ -71,9 +71,9 @@ El salto mas claro se produce en HICO-DET: el recall pasa de 0,09 (base) a 0,71 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3vl-2b-ag-hico-lora (este) | Adaptador sobre 2B | No disponible | HOI / scene graph (AG + HICO-DET) | Apache 2.0 (adaptador); datos de investigacion | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-2B-Instruct (base) | 2B | No disponible | Vision-language general | Apache 2.0 | HuggingFace, ampliamente usado |
-| Ram20307/qwen3vl-2b-ag-lora | Adaptador sobre 2B | No disponible | HOI solo Action Genome | Apache 2.0 (adaptador); datos de investigacion | HuggingFace |
+| qwen3vl-2b-ag-hico-lora (este) | Adaptador sobre 2B | No disponible | HOI / scene graph (AG + HICO-DET) | Apache 2.0 (adaptador); datos de investigacion | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-2B-Instruct (base) | 2B | No disponible | Vision-language general | Apache 2.0 | Hugging Face, ampliamente usado |
+| Ram20307/qwen3vl-2b-ag-lora | Adaptador sobre 2B | No disponible | HOI solo Action Genome | Apache 2.0 (adaptador); datos de investigacion | Hugging Face |
 | Otros adaptadores HOI sobre VLMs pequenos | No disponible | No disponible | HOI | No disponible | No disponible |
 
 La comparativa directa con alternativas de la misma categoria (adaptadores HOI sobre VLMs de 2B) no esta disponible en la informacion proporcionada. Frente al modelo base, la diferencia medible es la validez JSON y el recall en HICO-DET; frente al adaptador solo AG, la mejora es la cobertura del formato HICO-DET a costa de un recall ligeramente menor en AG.
@@ -89,7 +89,7 @@ La comparativa directa con alternativas de la misma categoria (adaptadores HOI s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-lora
+- Modelo en Hugging Face: https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Adaptador solo Action Genome: https://huggingface.co/Ram20307/qwen3vl-2b-ag-lora
 - Action Genome (dataset): no disponible en la informacion proporcionada

@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove50_swapgapiter_b010_r03 | 8,03B en safetensors; fraccion de 0,4997 declarada sobre proyecciones densas | no disponible | Llama 3 Community | AdvBench ASR 0,5900; StrongREJECT ASR 0,5650; over-refusal 0,0278 | HuggingFace, 144 descargas, 0 likes |
-| meta-llama/Meta-Llama-3-8B-Instruct (linea base sin comprimir) | 8,03B | 8.192 tokens | Llama 3 Community | no disponible en la informacion proporcionada | HuggingFace, ampliamente disponible |
-| Otras celdas del grid SVD-LLM del mismo autor (otras reglas de seleccion y presupuestos) | no disponible | no disponible | Llama 3 Community | no disponible | HuggingFace, presumiblemente en el mismo perfil de autor |
+| svd-safety-l3_remove50_swapgapiter_b010_r03 | 8,03B en safetensors; fraccion de 0,4997 declarada sobre proyecciones densas | no disponible | Llama 3 Community | AdvBench ASR 0,5900; StrongREJECT ASR 0,5650; over-refusal 0,0278 | Hugging Face, 144 descargas, 0 likes |
+| meta-llama/Meta-Llama-3-8B-Instruct (linea base sin comprimir) | 8,03B | 8.192 tokens | Llama 3 Community | no disponible en la informacion proporcionada | Hugging Face, ampliamente disponible |
+| Otras celdas del grid SVD-LLM del mismo autor (otras reglas de seleccion y presupuestos) | no disponible | no disponible | Llama 3 Community | no disponible | Hugging Face, presumiblemente en el mismo perfil de autor |
 | Metodos alternativos de compresion para Llama 3 8B (por ejemplo, cuantizacion de 4 bits) | no disponible | no disponible | variable | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo ni sobre modelos comparables; los unicos resultados obtenidos fueron conversores de husos horarios, sin relacion con el contenido solicitado.
@@ -103,7 +103,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r03
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Meta Llama 3 (incluida en el repositorio como `LICENSE`): https://llama.meta.com/llama3/license/
 - Politica de uso aceptable (incluida en el repositorio como `USE_POLICY.md`): https://llama.meta.com/llama3/use-policy/

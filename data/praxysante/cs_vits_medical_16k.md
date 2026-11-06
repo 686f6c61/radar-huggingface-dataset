@@ -82,7 +82,7 @@ El propio autor advierte que estos valores son cotas superiores: el ASR juez es 
 
 | Modelo | Tipo | Idiomas | Hablantes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CS_VITS_medical_16k | VITS (Coqui TTS) | cs | 425 | Apache-2.0 | HuggingFace |
+| CS_VITS_medical_16k | VITS (Coqui TTS) | cs | 425 | Apache-2.0 | Hugging Face |
 | Alternativas TTS checo abiertas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de modelos comparables con datos verificables de parámetros, contexto o rendimiento. Cualquier comparación numérica sería especulativa.
@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de modelos comparables con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PraxySante/CS_VITS_medical_16k
+- Modelo en Hugging Face: https://huggingface.co/PraxySante/CS_VITS_medical_16k
 - Coqui TTS (framework utilizado): https://github.com/coqui-ai/TTS
 - Artículo original de VITS: https://arxiv.org/abs/2106.06103
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos del autor.

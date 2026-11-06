@@ -64,7 +64,7 @@ No se dispone de información suficiente para comparar esta cuantización con ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_KS-SPECIAL_SPLIT
+- Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_KS-SPECIAL_SPLIT
 - Modelo relacionado (BF16): https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Modelo relacionado (IQ3_KS): https://huggingface.co/Thireus/mtp-Qwen3.5-27B-THIREUS-IQ3_KS-SPECIAL_SPLIT
 - Colección de modelos de Thireus: https://gguf.thireus.com/

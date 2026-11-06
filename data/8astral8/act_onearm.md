@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo 8Astral8/ACT_OneArm es un checkpoint publicado en HuggingFace por el usuario 8Astral8, con licencia Apache 2.0 y pesos en formato safetensors. Cuenta con aproximadamente 51,7 millones de parámetros y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de modelos pequeños, posiblemente orientados a tareas específicas de robótica o control, aunque no se dispone de documentación oficial que lo confirme. El nombre sugiere una posible relación con arquitecturas de tipo Action Chunking with Transformers (ACT), habituales en políticas robóticas, pero no hay datos verificables al respecto. El modelo fue creado en agosto de 2026 y no presenta descargas ni valoraciones, lo que indica que es un lanzamiento reciente y sin adopción conocida.
+El modelo 8Astral8/ACT_OneArm es un checkpoint publicado en Hugging Face por el usuario 8Astral8, con licencia Apache 2.0 y pesos en formato safetensors. Cuenta con aproximadamente 51,7 millones de parámetros y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de modelos pequeños, posiblemente orientados a tareas específicas de robótica o control, aunque no se dispone de documentación oficial que lo confirme. El nombre sugiere una posible relación con arquitecturas de tipo Action Chunking with Transformers (ACT), habituales en políticas robóticas, pero no hay datos verificables al respecto. El modelo fue creado en agosto de 2026 y no presenta descargas ni valoraciones, lo que indica que es un lanzamiento reciente y sin adopción conocida.
 
-La model card es prácticamente vacía, limitándose a declarar la licencia. No se proporcionan detalles sobre arquitectura, entrenamiento, capacidades ni casos de uso. Esta ficha se basa exclusivamente en la información disponible en HuggingFace y en los resultados de búsqueda web, que no aportan datos específicos sobre este modelo. Por tanto, la mayor parte de los apartados técnicos se marcan como "no disponible".
+La model card es prácticamente vacía, limitándose a declarar la licencia. No se proporcionan detalles sobre arquitectura, entrenamiento, capacidades ni casos de uso. Esta ficha se basa exclusivamente en la información disponible en Hugging Face y en los resultados de búsqueda web, que no aportan datos específicos sobre este modelo. Por tanto, la mayor parte de los apartados técnicos se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -59,5 +59,5 @@ No se dispone de informacion sobre modelos comparables. El nombre "ACT_OneArm" p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/8Astral8/ACT_OneArm
+- Repositorio Hugging Face: https://huggingface.co/8Astral8/ACT_OneArm
 - Referencia externa sobre arquitecturas ACT (sin confirmacion de relacion): https://aihub.qualcomm.com/models/act

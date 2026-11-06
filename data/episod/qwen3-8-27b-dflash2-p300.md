@@ -94,10 +94,10 @@ Otras mediciones relevantes: los 20 primeros prompts de coding de SPEED-Bench di
 
 | Modelo | Parametros | Contexto | Hardware / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| episod/qwen3.8-27b-dflash2-p300 | 27 000 millones (modelo base) | 262.144 tokens | 2 chips Blackhole de una placa p300, TP=2, vLLM + DFlash2 | Apache 2.0 | Publicado en HuggingFace; bundle beta no soportado |
-| episod/qwen3.8-27b-dflash2-p150 | 27 000 millones (modelo base) | 16.384 tokens | 1 chip Blackhole (variante p150), mismo stack DFlash2 | Apache 2.0 | Publicado en HuggingFace |
-| Qwen/Qwen3.8-27B (modelo base) | 27 000 millones (segun denominacion) | 262.144 tokens | No especificado en la informacion proporcionada | No disponible en la informacion proporcionada | Publicado en HuggingFace |
-| incoai/Qwen3.8-27B-DFlash2 | No disponible (modelo drafter) | No disponible | Drafter de decodificacion especulativa | No disponible en la informacion proporcionada | Publicado en HuggingFace |
+| episod/qwen3.8-27b-dflash2-p300 | 27 000 millones (modelo base) | 262.144 tokens | 2 chips Blackhole de una placa p300, TP=2, vLLM + DFlash2 | Apache 2.0 | Publicado en Hugging Face; bundle beta no soportado |
+| episod/qwen3.8-27b-dflash2-p150 | 27 000 millones (modelo base) | 16.384 tokens | 1 chip Blackhole (variante p150), mismo stack DFlash2 | Apache 2.0 | Publicado en Hugging Face |
+| Qwen/Qwen3.8-27B (modelo base) | 27 000 millones (segun denominacion) | 262.144 tokens | No especificado en la informacion proporcionada | No disponible en la informacion proporcionada | Publicado en Hugging Face |
+| incoai/Qwen3.8-27B-DFlash2 | No disponible (modelo drafter) | No disponible | Drafter de decodificacion especulativa | No disponible en la informacion proporcionada | Publicado en Hugging Face |
 
 No se dispone de comparativas con alternativas de la misma categoria en hardware GPU (por ejemplo despliegues de Qwen3.8-27B en vLLM sobre A100 o H100): no disponible. La comparacion directa entre el bundle p300 y su hermano p150 se limita al numero de chips y a la ventana de contexto (262.144 frente a 16.384 tokens); no se han publicado cifras de rendimiento del p150 en la informacion proporcionada.
 
@@ -111,14 +111,14 @@ No se dispone de comparativas con alternativas de la misma categoria en hardware
 - Riesgo de alucinacion: no se han publicado evaluaciones de veracidad, MMLU, GSM8K ni mecanismos de mitigacion. La unica comprobacion de calidad de codigo es una prueba informal con `qwencode` y un pass@1 sin cifras publicadas.
 - Sesgos: no hay informacion sobre composicion del dataset de entrenamiento ni analisis de sesgos del modelo base.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la licencia y condiciones del modelo base Qwen/Qwen3.8-27B y del drafter `incoai/Qwen3.8-27B-DFlash2` deben verificarse por separado; no se detallan en la informacion proporcionada.
-- La primera ejecucion en una maquina limpia requiere descargar unos 54 GB y convertir pesos; las corridas documentadas reutilizaron caches de tensores ttnn y de HuggingFace ya existentes (`TT_CACHE_PATH` / `HF_HOME`), por lo que el camino limpio no quedo verificado.
+- La primera ejecucion en una maquina limpia requiere descargar unos 54 GB y convertir pesos; las corridas documentadas reutilizaron caches de tensores ttnn y de Hugging Face ya existentes (`TT_CACHE_PATH` / `HF_HOME`), por lo que el camino limpio no quedo verificado.
 - No verificado en el bundle: HumanEval, la rejilla completa de rendimiento y cualquier host distinto del descrito. Las cifras de throughput corresponden a la build del arbol fuente, no al bundle empaquetado.
 - Latencia de prefill muy alta en contextos extremos (111 s para 255.924 tokens), lo que descarta su uso interactivo con prompts de ese tamano.
 - Estabilidad de produccion no garantizada: `tt-model serve` usa un puerto no estandar (20000) y el stack depende de versiones concretas de firmware y driver.
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/episod/qwen3.8-27b-dflash2-p300
+- Hugging Face del bundle: https://huggingface.co/episod/qwen3.8-27b-dflash2-p300
 - Bundle hermano de un solo chip (16K de contexto): https://huggingface.co/episod/qwen3.8-27b-dflash2-p150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter de decodificacion especulativa: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2

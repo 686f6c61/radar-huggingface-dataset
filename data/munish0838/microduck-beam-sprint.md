@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-beam-sprint` es una política de control por aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck de Pollen Robotics. No es un modelo de lenguaje: se trata de un checkpoint de política neuronal entrenada para ejecutar una marcha de sprint de 2 metros sobre el robot real, con 61 dimensiones de observación y 14 dimensiones de acción a 50 Hz. El autor del artefacto es el usuario de HuggingFace `munish0838`, aunque la receta y el flujo de entrenamiento proceden del proyecto `microduck-challenges` de Pollen Robotics.
+`microduck-beam-sprint` es una política de control por aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck de Pollen Robotics. No es un modelo de lenguaje: se trata de un checkpoint de política neuronal entrenada para ejecutar una marcha de sprint de 2 metros sobre el robot real, con 61 dimensiones de observación y 14 dimensiones de acción a 50 Hz. El autor del artefacto es el usuario de Hugging Face `munish0838`, aunque la receta y el flujo de entrenamiento proceden del proyecto `microduck-challenges` de Pollen Robotics.
 
 El interés técnico del artefacto reside en su método de generación: según la model card, la receta fue diseñada por un agente automático («Beam», de Reflection AI) que leyó el fichero `AGENTS.md` del propio repositorio de retos y modificó el parámetro `forward_reward` de 2.0 a 4.0 sin intervención humana en el ajuste. El checkpoint publicado corresponde a la iteración 750 de un entrenamiento de 1000 iteraciones con 4096 entornos paralelos y semilla 1. Se distribuye como `policy.onnx` con el normalizador de observaciones embebido, junto a un `manifest.json` conforme al esquema 2 del manifiesto de políticas del daemon microduck.
 
@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye otras políticas del rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/munish0838/microduck-beam-sprint
+- Modelo en Hugging Face: https://huggingface.co/munish0838/microduck-beam-sprint
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y recetas de entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Commit de la receta: `ef4b93eb4` (rama `beam/S1/r2` del repositorio anterior)

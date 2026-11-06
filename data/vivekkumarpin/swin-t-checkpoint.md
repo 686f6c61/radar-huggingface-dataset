@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Vivekkumarpin/swin-t-checkpoint` es un prototipo de investigación publicado en HuggingFace por el usuario Vivekkumarpin que implementa una variante de Swin Transformer (denominada "Swin T") orientada a tareas de *matching* (emparejamiento entre dos entradas, típicamente vision-language o imagen-imagen). No es un modelo entrenado ni evaluado: la propia model card lo describe como un *initialization checkpoint* válido únicamente para *smoke tests*, sin ninguna métrica de rendimiento declarada.
+`Vivekkumarpin/swin-t-checkpoint` es un prototipo de investigación publicado en Hugging Face por el usuario Vivekkumarpin que implementa una variante de Swin Transformer (denominada "Swin T") orientada a tareas de *matching* (emparejamiento entre dos entradas, típicamente vision-language o imagen-imagen). No es un modelo entrenado ni evaluado: la propia model card lo describe como un *initialization checkpoint* válido únicamente para *smoke tests*, sin ninguna métrica de rendimiento declarada.
 
 El repositorio contiene el código de inferencia (`predict.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y pesos en formato `safetensors`. El checkpoint contiene 24.832 parámetros, una cifra muy inferior a la de un Swin-T canónico (en torno a 28 millones), lo que confirma que se trata de una implementación reducida y no de un modelo con capacidad real de producción.
 
@@ -94,5 +94,5 @@ La comparacion es asimetrica: este repositorio aporta una implementacion con dos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vivekkumarpin/swin-t-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/Vivekkumarpin/swin-t-checkpoint
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo en la busqueda web disponible. Los resultados devueltos por la busqueda no guardan ninguna relacion tematica con el modelo y se han descartado por no ser material de referencia valido.

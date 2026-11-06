@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 E4B Abliterated Bilingual Rank2 es una modificacion de pesos del modelo base google/gemma-4-E4B, publicada por el usuario Sw1zyyyAdm en HuggingFace bajo licencia Apache-2.0. Se distribuye exclusivamente en formato GGUF, en dos variantes de almacenamiento mixto (F16 y Q8_0), y aplica una tecnica de "abliteration" selectiva sobre 46 matrices del modelo para reducir la tasa de rechazos explicitos en tareas de generacion de texto. El modelo base pertenece a la familia Gemma 4 de Google y, segun los metadatos del repositorio, cuenta con aproximadamente 7.518 millones de parametros y 42 capas con anchura residual de 2560.
+Gemma 4 E4B Abliterated Bilingual Rank2 es una modificacion de pesos del modelo base google/gemma-4-E4B, publicada por el usuario Sw1zyyyAdm en Hugging Face bajo licencia Apache-2.0. Se distribuye exclusivamente en formato GGUF, en dos variantes de almacenamiento mixto (F16 y Q8_0), y aplica una tecnica de "abliteration" selectiva sobre 46 matrices del modelo para reducir la tasa de rechazos explicitos en tareas de generacion de texto. El modelo base pertenece a la familia Gemma 4 de Google y, segun los metadatos del repositorio, cuenta con aproximadamente 7.518 millones de parametros y 42 capas con anchura residual de 2560.
 
 La innovacion principal del release es el uso de una ortogonalizacion rank-2 bilingue (ingles y ruso) especifica por capa, aplicada a las matrices `attn_output.weight` y `ffn_down.weight` de las capas 15 a 37. Segun la model card, esta intervencion redujo los rechazos explicitos de 22/24 a 0/24 en un conjunto de evaluacion interno fijo, manteniendo intactos 674 de los 720 tensores del modelo original. El autor advierte que estas son observaciones acotadas y no una garantia de ausencia universal de rechazos.
 
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente sobre alternativas comparables (mismo ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sw1zyyyAdm/gemma-4-e4b-abliterated-bilingual-GGUF
+- Hugging Face: https://huggingface.co/Sw1zyyyAdm/gemma-4-e4b-abliterated-bilingual-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
 - Figura de alineacion RU/EN: `./middle_language_alignment.png` (en el repositorio)
 - Figura de geometria por capa: `./layerwise_geometry.png` (en el repositorio)

@@ -69,7 +69,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada para inferencia: aproximadamente 0,44 GB solo para los pesos en precision de 32 bits y unos 0,22 GB en 16 bits; con activaciones y sobrecarga del entorno, la inferencia completa se mantiene por debajo de 1,5 GB en la mayoria de configuraciones. Son estimaciones derivadas del recuento de parametros, no cifras oficiales.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 3060, RTX 4090, T4, L4, A100 o H100 estan sobradamente dimensionadas para esta carga.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU de consumo moderna e incluso en GPU integradas; tambien es viable la inferencia en CPU para lotes moderados.
-- Opciones de despliegue: libreria `setfit` (via `SetFitModel.from_pretrained`), ecosistema HuggingFace Transformers y sentence-transformers para obtener embeddings, y exportacion a ONNX Runtime. Las soluciones orientadas a modelos generativos (vLLM, llama.cpp, Ollama, TGI) no son aplicables a este clasificador.
+- Opciones de despliegue: libreria `setfit` (via `SetFitModel.from_pretrained`), ecosistema Hugging Face Transformers y sentence-transformers para obtener embeddings, y exportacion a ONNX Runtime. Las soluciones orientadas a modelos generativos (vLLM, llama.cpp, Ollama, TGI) no son aplicables a este clasificador.
 - Latencia y throughput: no disponible. No hay cifras publicadas por el autor. Cualitativamente, un encoder de 109 millones de parametros sobre textos cortos es adecuado para procesamiento por lotes de miles de enunciados, pero se trata de una apreciacion no respaldada por mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se han identificado en la informacion proporcionada modelos comparables con l
 
 | Modelo | Parametros totales | Contexto | F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_repeats_a_number_from_a_prior_student_contribution | 109.486.464 | no disponible | 0,545 | no disponible | HuggingFace, 0 descargas |
+| StanfordSCALE/assertion_repeats_a_number_from_a_prior_student_contribution | 109.486.464 | no disponible | 0,545 | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Criterios que tendria sentido usar para una comparacion futura, si se dispone de datos: otros clasificadores de aserciones del mismo proyecto EduBehaviors, clasificadores SetFit sobre el mismo corpus TalkMoves y aproximaciones zero-shot con LLM generativos evaluadas sobre el split de test de `assertions_llm_annotated_talkmoves`.
@@ -98,7 +98,7 @@ Criterios que tendria sentido usar para una comparacion futura, si se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_repeats_a_number_from_a_prior_student_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_repeats_a_number_from_a_prior_student_contribution
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

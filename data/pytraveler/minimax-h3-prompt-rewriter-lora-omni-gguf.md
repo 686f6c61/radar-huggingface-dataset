@@ -84,7 +84,7 @@ La diferencia clave del modelo Omni es que incorpora audio y video como entrada,
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador GGUF: https://huggingface.co/pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-Omni-GGUF
+- Repositorio Hugging Face del adaptador GGUF: https://huggingface.co/pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-Omni-GGUF
 - Adaptador fuente (lightx2v): https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-Omni
 - Modelo base Qwen2.5-Omni-7B-GGUF (ggml-org): https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF
 - Repositorio ComfyUI del autor: https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI

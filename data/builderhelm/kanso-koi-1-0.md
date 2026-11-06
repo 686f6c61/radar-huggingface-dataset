@@ -115,7 +115,7 @@ La comparación relevante es contra el modelo base sin adaptador: el ajuste mult
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BuilderHelm/Kanso-Koi-1.0
+- Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Kanso-Koi-1.0
 - Versión anterior (v2.2 original, 6-bit): https://huggingface.co/BuilderHelm/Kanso-Koi-0.9
 - Tier superior de 4B: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit

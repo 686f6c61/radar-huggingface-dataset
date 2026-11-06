@@ -66,8 +66,8 @@ Las unicas referencias cualitativas encontradas en la busqueda web, sin cifras q
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BlameOmar/Qwen3.5-9B-oQ4e-fp16-mtp | 9,65 B | No declarado (base 262K) | MLX safetensors, 4 bits | No disponible | HuggingFace, 0 descargas |
-| thederby/Qwen3.5-9B-oQ4e-mtp | No disponible | No disponible | MLX safetensors, 4 bits | No disponible | HuggingFace |
+| BlameOmar/Qwen3.5-9B-oQ4e-fp16-mtp | 9,65 B | No declarado (base 262K) | MLX safetensors, 4 bits | No disponible | Hugging Face, 0 descargas |
+| thederby/Qwen3.5-9B-oQ4e-mtp | No disponible | No disponible | MLX safetensors, 4 bits | No disponible | Hugging Face |
 | Qwen3.5-9B (base) | ~9 B | 262K, hasta 1M con YaRN | safetensors bf16 | Apache 2.0 segun fuentes | Peso abierto, varios proveedores de API |
 | Qwen3-30B (referencia citada) | 30 B | No disponible | No disponible | No disponible | No disponible |
 
@@ -87,7 +87,7 @@ Las dos cuantizaciones listadas comparten receta oQ4e; la diferencia declarada p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ4e-fp16-mtp
 - Variante equivalente de otro autor: https://huggingface.co/thederby/Qwen3.5-9B-oQ4e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Ficha de Qwen3.5 9B en Together AI: https://www.together.ai/models/qwen3-5-9b

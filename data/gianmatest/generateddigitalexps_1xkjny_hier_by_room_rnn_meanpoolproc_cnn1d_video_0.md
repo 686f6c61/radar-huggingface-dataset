@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_0` es un artefacto publicado en HuggingFace Hub por el usuario `gianmaTest` el 24 de octubre de 2026. Se trata de un modelo de tamaño muy reducido, con 1.839.360 parámetros totales confirmados a partir de los pesos en formato safetensors, lo que lo sitúa en el rango de los modelos experimentales de juguete más que en el de un modelo de lenguaje de propósito general. El repositorio ocupa 0,0 GB (redondeado, por debajo de los 100 MB) y no incluye pipeline declarado, licencia, idiomas soportados ni documentación técnica en su model card.
+El modelo `generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_0` es un artefacto publicado en Hugging Face Hub por el usuario `gianmaTest` el 24 de octubre de 2026. Se trata de un modelo de tamaño muy reducido, con 1.839.360 parámetros totales confirmados a partir de los pesos en formato safetensors, lo que lo sitúa en el rango de los modelos experimentales de juguete más que en el de un modelo de lenguaje de propósito general. El repositorio ocupa 0,0 GB (redondeado, por debajo de los 100 MB) y no incluye pipeline declarado, licencia, idiomas soportados ni documentación técnica en su model card.
 
-La model card es la plantilla autogenerada por la integración `PyTorchModelHubMixin` de HuggingFace, con los campos de código, paper y documentación marcados como «More Information Needed». No hay información publicada sobre arquitectura, datos de entrenamiento, tokenizador, régimen de inferencia ni evaluación. El identificador del repositorio sugiere, sin confirmación alguna por parte del autor, un diseño jerárquico con procesamiento mediante RNN, pooling de media y una CNN 1D aplicada a vídeo, presumiblemente orientado a la clasificación o regresión sobre secuencias de fotogramas o características audiovisuales.
+La model card es la plantilla autogenerada por la integración `PyTorchModelHubMixin` de Hugging Face, con los campos de código, paper y documentación marcados como «More Information Needed». No hay información publicada sobre arquitectura, datos de entrenamiento, tokenizador, régimen de inferencia ni evaluación. El identificador del repositorio sugiere, sin confirmación alguna por parte del autor, un diseño jerárquico con procesamiento mediante RNN, pooling de media y una CNN 1D aplicada a vídeo, presumiblemente orientado a la clasificación o regresión sobre secuencias de fotogramas o características audiovisuales.
 
 Por su naturaleza, este modelo no resuelve un problema de NLP ni compite con modelos de lenguaje: es un artefacto de experimentación reproducible (posiblemente generado de forma automática dentro de una batería de experimentos, a juzgar por el sufijo numérico del nombre). Es relevante únicamente como referencia para quien quiera inspeccionar los pesos, reproducir el pipeline asociado o reutilizar la arquitectura si el autor publica el código. Cualquier evaluación de capacidades queda pendiente de esa documentación.
 
@@ -36,7 +36,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: se desconoce el número de t
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles.
 - Capacidades especiales (modo thinking, audio, etc.): no documentadas.
-- Serialización y carga: sí soporta el patrón `PyTorchModelHubMixin` de HuggingFace para `from_pretrained` / `push_to_hub`, siempre que se disponga de la clase Python correspondiente (no incluida en el repositorio).
+- Serialización y carga: sí soporta el patrón `PyTorchModelHubMixin` de Hugging Face para `from_pretrained` / `push_to_hub`, siempre que se disponga de la clase Python correspondiente (no incluida en el repositorio).
 
 ## Casos de uso
 
@@ -47,7 +47,7 @@ Dado que no existe documentación funcional, los siguientes escenarios son hipó
 - Reproducción de experimentos académicos: útil para replicar una batería de pruebas comparativas si el autor publica el código que acompaña al nombre `generatedDigitalExps`.
 - Pruebas de integración de `PyTorchModelHubMixin`: sirve como caso de test para verificar flujos de carga y publicación de pesos en el Hub dentro de un CI.
 - Extracción de embeddings de bajo coste: si el pooling de media produce representaciones vectoriales, podría utilizarse como extractor de características ligero en dispositivos embebidos (Raspberry Pi, microcontroladores con suficiente memoria).
-- Material docente: ejemplo didáctico de modelo mínimo publicado con safetensors, útil para explicar el ciclo de vida de un artefacto en HuggingFace Hub.
+- Material docente: ejemplo didáctico de modelo mínimo publicado con safetensors, útil para explicar el ciclo de vida de un artefacto en Hugging Face Hub.
 
 En ningún caso se recomienda su uso en producción sin documentación del autor, tokenizador y preprocesado asociados.
 
@@ -81,7 +81,7 @@ No disponible. No se han identificado modelos comparables documentados: el repos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_0
 - Documentación de `PyTorchModelHubMixin` (integración citada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Blog o demo: no disponible

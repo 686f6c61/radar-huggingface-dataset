@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zeteng/vjepa2.1-vitb-edge-ascend es un artefacto de pesos publicado en HuggingFace por el usuario Zeteng que empaqueta un codificador de vídeo V-JEPA 2.1 en configuración ViT-B/16, preparado para inferencia en dispositivos de borde: los tags del repositorio mencionan explícitamente Jetson (GPU embebida de NVIDIA) y Ascend (NPU de Huawei). No es un modelo entrenado desde cero, sino una conversión y distribución comunitaria de la familia V-JEPA 2.1 de Meta AI, publicada bajo licencia MIT y con acceso restringido (gated).
+Zeteng/vjepa2.1-vitb-edge-ascend es un artefacto de pesos publicado en Hugging Face por el usuario Zeteng que empaqueta un codificador de vídeo V-JEPA 2.1 en configuración ViT-B/16, preparado para inferencia en dispositivos de borde: los tags del repositorio mencionan explícitamente Jetson (GPU embebida de NVIDIA) y Ascend (NPU de Huawei). No es un modelo entrenado desde cero, sino una conversión y distribución comunitaria de la familia V-JEPA 2.1 de Meta AI, publicada bajo licencia MIT y con acceso restringido (gated).
 
 V-JEPA 2.1 es la iteración de la línea Video Joint Embedding Predictive Architecture, un modelo auto-supervisado que aprende representaciones de vídeo prediciendo en el espacio latente en lugar de reconstruir píxeles. Según el artículo asociado (arXiv 2603.14482), la familia alcanza resultados de referencia en comprensión visual densa: 77,7 % en Something-Something-V2, 0,307 RMSE en estimación de profundidad sobre NYUv2 con sonda lineal y 5,687 ATE en navegación robótica sobre Tartan Drive.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha concreta es la de despliegue: un ViT-B/16 con un rep
 | Longitud de contexto | No disponible. Al ser un modelo de vídeo, la ventana equivale al número de fotogramas × resolución; el port público de referencia ViT-B/16 de V-JEPA 2.1 opera a 384×384, pero no se confirma para este artefacto |
 | Tipos de cuantizacion | No disponible (los tags indican despliegue en NPU y Jetson, pero no se documenta qué precisiones incluye el repo) |
 | Idiomas soportados | No aplica / no disponible: el modelo no genera texto ni procesa lenguaje; su entrada es vídeo |
-| Licencia | MIT, con acceso restringido (gated) en HuggingFace |
+| Licencia | MIT, con acceso restringido (gated) en Hugging Face |
 | Formato de pesos | PyTorch (tag `pytorch`); los nombres de archivo concretos (`.pt`, `.safetensors`, `.onnx`, `.om`) no se detallan |
 
 ## Arquitectura y entrenamiento
@@ -72,18 +72,18 @@ Para este repositorio en concreto no hay datos de latencia, throughput ni precis
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zeteng/vjepa2.1-vitb-edge-ascend | No disponible (ViT-B/16, repo de 0,2 GB) | Vídeo; ventana no disponible | Sin benchmarks propios publicados | MIT (gated) | HuggingFace, acceso restringido |
-| V-JEPA 2 oficial (Meta, ViT-L/ViT-g) | ~300 M / ~1 B (según variante) | Clips de vídeo de alta resolución | Resultados de referencia en la familia; V-JEPA 2 habilita control robótico zero-shot | Licencia de Meta para los pesos | Repositorio facebookresearch/vjepa2 y colección en HuggingFace |
-| V-JEPA 2.1 ViT-B/16 384 (port de apiantonio) | ViT-B/16 (~86 M en la arquitectura estándar) | 384×384 | No disponible en la información | Según pesos originales de Meta | HuggingFace, acceso abierto |
-| VideoMAE v2 | No disponible en la información | Vídeo | No disponible en la información | No disponible | HuggingFace |
-| DINOv2 (referencia para características visuales densas) | 21 M - 1,1 B según variante | Imagen (no vídeo) | Muy competitivo en tareas densas de imagen | Licencia Apache 2.0 en la mayoría de variantes | HuggingFace, torch.hub |
+| Zeteng/vjepa2.1-vitb-edge-ascend | No disponible (ViT-B/16, repo de 0,2 GB) | Vídeo; ventana no disponible | Sin benchmarks propios publicados | MIT (gated) | Hugging Face, acceso restringido |
+| V-JEPA 2 oficial (Meta, ViT-L/ViT-g) | ~300 M / ~1 B (según variante) | Clips de vídeo de alta resolución | Resultados de referencia en la familia; V-JEPA 2 habilita control robótico zero-shot | Licencia de Meta para los pesos | Repositorio facebookresearch/vjepa2 y colección en Hugging Face |
+| V-JEPA 2.1 ViT-B/16 384 (port de apiantonio) | ViT-B/16 (~86 M en la arquitectura estándar) | 384×384 | No disponible en la información | Según pesos originales de Meta | Hugging Face, acceso abierto |
+| VideoMAE v2 | No disponible en la información | Vídeo | No disponible en la información | No disponible | Hugging Face |
+| DINOv2 (referencia para características visuales densas) | 21 M - 1,1 B según variante | Imagen (no vídeo) | Muy competitivo en tareas densas de imagen | Licencia Apache 2.0 en la mayoría de variantes | Hugging Face, torch.hub |
 
 La comparación relevante es con el port abierto de ViT-B/16 384: mismo backbone, distinto objetivo de despliegue. La ventaja de esta versión es el empaquetado para NPU y Jetson; la desventaja, el acceso restringido y la ausencia de documentación, que dificultan auditoría y reproducibilidad.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: el autor no documenta parámetros, resolución, número de fotogramas, precisión ni proceso de conversión. Cualquier uso en producción exige validar primero esas variables por cuenta propia.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que añade fricción a pipelines automatizados y a la reproducibilidad científica.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que añade fricción a pipelines automatizados y a la reproducibilidad científica.
 - Trazabilidad: al tratarse de una redistribución comunitaria de pesos de Meta, conviene verificar que la licencia MIT declarada en el repo es compatible con los términos de los pesos originales antes de un uso comercial.
 - Sesgos: no documentados. Al entrenarse sobre vídeo de origen desconocido, es probable que herede sesgos de representación geográfica y demográfica, pero no hay evaluación publicada.
 - Alucinación: el concepto no aplica igual que en modelos de lenguaje, pero un predictor latente puede producir representaciones plausibles y erróneas en escenas fuera de distribución (iluminación extrema, oclusiones, dominios no vistos).
@@ -94,7 +94,7 @@ La comparación relevante es con el port abierto de ViT-B/16 384: mismo backbone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zeteng/vjepa2.1-vitb-edge-ascend
+- Modelo en Hugging Face: https://huggingface.co/Zeteng/vjepa2.1-vitb-edge-ascend
 - Repositorio oficial de V-JEPA 2 (Meta): https://github.com/facebookresearch/vjepa2
 - Página de investigación de V-JEPA 2 en Meta AI: https://ai.meta.com/research/vjepa/
 - Artículo V-JEPA 2.1 (arXiv 2603.14482): https://arxiv.org/html/2603.14482v1

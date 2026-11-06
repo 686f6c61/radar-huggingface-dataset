@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muleex12/tourism-package-prediction-model es un clasificador binario tabular publicado en HuggingFace por el usuario Muleex12. No es un modelo de lenguaje: se trata de un Random Forest Classifier entrenado con scikit-learn que predice la variable objetivo `ProdTaken`, es decir, si un cliente contratara o no un paquete turistico. El repositorio forma parte de un proyecto MLOps de prediccion de contratacion de paquetes turisticos y contiene dos artefactos serializados: `final_random_forest_model.pkl` (el modelo) y `preprocessor.pkl` (el pipeline de preprocesado previo a la prediccion).
+Muleex12/tourism-package-prediction-model es un clasificador binario tabular publicado en Hugging Face por el usuario Muleex12. No es un modelo de lenguaje: se trata de un Random Forest Classifier entrenado con scikit-learn que predice la variable objetivo `ProdTaken`, es decir, si un cliente contratara o no un paquete turistico. El repositorio forma parte de un proyecto MLOps de prediccion de contratacion de paquetes turisticos y contiene dos artefactos serializados: `final_random_forest_model.pkl` (el modelo) y `preprocessor.pkl` (el pipeline de preprocesado previo a la prediccion).
 
 El modelo se define por sus hiperparametros finales (100 estimadores, profundidad ilimitada, `min_samples_split=2`, `min_samples_leaf=2`, `class_weight=balanced`, `random_state=42`) y por unas metricas de test declaradas de accuracy 0,904, precision 0,861, recall 0,600 y F1 0,707. La model card no documenta el conjunto de datos de entrenamiento, el numero de muestras, las variables de entrada, el procedimiento de validacion ni el criterio de seleccion de hiperparametros.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y de nicho: sirve como ejemplo reproducible de 
 | Fecha de creacion | 14 de septiembre de 2026 |
 | Ultima actualizacion | 14 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ No se han publicado comparativas de este modelo frente a alternativas en la info
 
 | Modelo / familia | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tourism-package-prediction-model | Random Forest (scikit-learn) | 100 arboles, profundidad ilimitada; nodos no publicados | no aplicable | no disponible | repositorio HuggingFace con 0 descargas |
+| tourism-package-prediction-model | Random Forest (scikit-learn) | 100 arboles, profundidad ilimitada; nodos no publicados | no aplicable | no disponible | repositorio Hugging Face con 0 descargas |
 | Regresion logistica | Modelo lineal | no disponible | no aplicable | no disponible | implementable en scikit-learn |
 | Gradient boosting (XGBoost, LightGBM, CatBoost) | Ensemble de boosting | no disponible | no aplicable | Apache-2.0 / MIT (licencias de libreria) | librerias publicas |
 | Red neuronal tabular (MLP) | Perceptron multicapa | no disponible | no aplicable | no disponible | implementable en scikit-learn o PyTorch |
@@ -113,7 +113,7 @@ No se dispone de datos de rendimiento de estas alternativas sobre el mismo conju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muleex12/tourism-package-prediction-model
+- Modelo en Hugging Face: https://huggingface.co/Muleex12/tourism-package-prediction-model
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

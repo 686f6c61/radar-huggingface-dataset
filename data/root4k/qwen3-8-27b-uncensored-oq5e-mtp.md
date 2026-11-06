@@ -43,7 +43,7 @@ El modelo base es Qwen3.8-27B, un transformer multimodal con soporte de vision y
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye metricas de rendimiento, y la busqueda web no proporciona datos cuantitativos especificos para esta cuantizacion. Se recomienda consultar los benchmarks del modelo original Qwen3.8-27B en su pagina de HuggingFace para una referencia aproximada.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye metricas de rendimiento, y la busqueda web no proporciona datos cuantitativos especificos para esta cuantizacion. Se recomienda consultar los benchmarks del modelo original Qwen3.8-27B en su pagina de Hugging Face para una referencia aproximada.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ La comparativa se basa en el modelo original y en versiones alternativas encontr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/root4k/Qwen3.8-27B-Uncensored-oQ5e-mtp
+- Repositorio Hugging Face: https://huggingface.co/root4k/Qwen3.8-27B-Uncensored-oQ5e-mtp
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Guia de ejecucion local (GGUF): https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

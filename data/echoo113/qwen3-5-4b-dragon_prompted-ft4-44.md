@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Echoo113/Qwen3.5-4B-dragon_prompted-ft4.44 es un modelo de lenguaje fine-tuneado a partir de Qwen/Qwen3.5-4B, desarrollado por el usuario Echoo113. Se trata de un ajuste por supervisión (SFT) realizado con la librería TRL de HuggingFace, orientado a mejorar las respuestas del modelo base en escenarios que requieren seguir instrucciones con un estilo particular, probablemente relacionado con el prompt de "dragón" que sugiere el nombre del repositorio.
+Echoo113/Qwen3.5-4B-dragon_prompted-ft4.44 es un modelo de lenguaje fine-tuneado a partir de Qwen/Qwen3.5-4B, desarrollado por el usuario Echoo113. Se trata de un ajuste por supervisión (SFT) realizado con la librería TRL de Hugging Face, orientado a mejorar las respuestas del modelo base en escenarios que requieren seguir instrucciones con un estilo particular, probablemente relacionado con el prompt de "dragón" que sugiere el nombre del repositorio.
 
 El modelo se publica en formato safetensors y es compatible con el ecosistema Transformers, aunque el repositorio no incluye información sobre licencia, idiomas soportados ni datos de entrenamiento. Con un tamaño de repositorio de solo 0.1 GB, se trata de un ajuste ligero que no modifica la arquitectura del modelo base (4B parámetros), sino que adapta sus pesos para una tarea o estilo concreto.
 
-La relevancia de este modelo es limitada fuera del contexto de experimentación: no se han publicado benchmarks, ni documentación sobre el dataset utilizado, ni instrucciones de uso más allá del ejemplo de pipeline de HuggingFace. Es un caso típico de fine-tuning experimental de la comunidad, útil para estudiar el flujo de trabajo SFT con TRL sobre Qwen3.5, pero sin garantías de calidad o rendimiento para producción.
+La relevancia de este modelo es limitada fuera del contexto de experimentación: no se han publicado benchmarks, ni documentación sobre el dataset utilizado, ni instrucciones de uso más allá del ejemplo de pipeline de Hugging Face. Es un caso típico de fine-tuning experimental de la comunidad, útil para estudiar el flujo de trabajo SFT con TRL sobre Qwen3.5, pero sin garantías de calidad o rendimiento para producción.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada fuera del contexto de experimentación:
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning por SFT (Supervised Fine-Tuning) del modelo Qwen/Qwen3.5-4B. La arquitectura subyacente es la del Qwen3.5-4B, un transformer denso de 4 mil millones de parámetros, pero el repositorio no proporciona detalles sobre la arquitectura interna (número de capas, heads, etc.) más allá de la referencia al modelo base. El entrenamiento se realizó con TRL (Transformers Reinforcement Learning), framework de HuggingFace, y el script de entrenamiento generó automáticamente los tags `generated_from_trainer` y `trl`.
+El modelo es un fine-tuning por SFT (Supervised Fine-Tuning) del modelo Qwen/Qwen3.5-4B. La arquitectura subyacente es la del Qwen3.5-4B, un transformer denso de 4 mil millones de parámetros, pero el repositorio no proporciona detalles sobre la arquitectura interna (número de capas, heads, etc.) más allá de la referencia al modelo base. El entrenamiento se realizó con TRL (Transformers Reinforcement Learning), framework de Hugging Face, y el script de entrenamiento generó automáticamente los tags `generated_from_trainer` y `trl`.
 
 No se especifica el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. El nombre del archivo "dragon_prompted" sugiere que el fine-tuning se realizó sobre un dataset de prompts y respuestas con temática de dragones, pero esto es una inferencia y no se confirma en el model card. El repositorio no incluye logs de entrenamiento ni métricas de validación.
 
@@ -31,7 +31,7 @@ No se especifica el dataset utilizado, el número de tokens de entrenamiento, ni
 
 - Generación de texto en formato conversacional: el modelo acepta mensajes con estructura de chat (role: user) y genera respuestas de hasta 128 tokens en el ejemplo de uso.
 - Fine-tuning específico: el ajuste está orientado a un estilo o temática concreta ("dragon_prompted"), lo que implica que las respuestas pueden estar sesgadas hacia esa temática.
-- Compatibilidad con Transformers: se puede cargar con `pipeline("text-generation")` de HuggingFace Transformers.
+- Compatibilidad con Transformers: se puede cargar con `pipeline("text-generation")` de Hugging Face Transformers.
 - Sin capacidades adicionales confirmadas: no se menciona tool calling, function calling, agentes, vision, audio, ni razonamiento multi-paso. Estas capacidades dependen del modelo base Qwen3.5-4B, pero no se confirman en este repo.
 
 ## Casos de uso
@@ -39,7 +39,7 @@ No se especifica el dataset utilizado, el número de tokens de entrenamiento, ni
 - Experimentación académica: ideal para estudiar el proceso de fine-tuning con TRL sobre Qwen3.5, ya que el repositorio incluye el código de entrenamiento y los pesos.
 - Prototipado de chatbots temáticos: se puede usar para generar respuestas en un dominio concreto, como juegos de rol o narrativa fantástica, dado el nombre "dragon_prompted".
 - Evaluación de técnicas de SFT: permite comparar el comportamiento del modelo base y el fine-tuneado en tareas de generación de texto corto.
-- Aprendizaje de pipelines de HuggingFace: el ejemplo de código es útil para entender cómo cargar un modelo fine-tuneado con TRL.
+- Aprendizaje de pipelines de Hugging Face: el ejemplo de código es útil para entender cómo cargar un modelo fine-tuneado con TRL.
 - Desarrollo de aplicaciones de bajo coste: con solo 4B de parámetros y un tamaño de repo de 0.1 GB, puede ejecutarse en hardware modesto.
 - Investigación de sesgos en fine-tuning: el modelo puede usarse para analizar cómo el ajuste afecta la distribución de respuestas en un tema específico.
 
@@ -70,7 +70,7 @@ No es posible realizar una comparativa rigurosa porque no se dispone de benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-4B-dragon_prompted-ft4.44
+- Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-4B-dragon_prompted-ft4.44
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - TRL: https://github.com/huggingface/trl
 - Qwen3.5 blog: https://qwen.ai/blog?id=qwen3.5

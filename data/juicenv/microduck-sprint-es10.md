@@ -80,9 +80,9 @@ La mejora del fine-tune respecto al modelo padre es de 0,004 s sobre el sprint d
 
 | Modelo | Relacion | Tarea | Tiempo sprint 2 m | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-sprint-es10 | este modelo | sprint de 2 m | 0,888 s | no disponible | HuggingFace (5 descargas) |
-| suraj-phanindra/microduck-sprint-hc2 | modelo base | sprint de 2 m | 0,892 s | no disponible | HuggingFace |
-| namenu/microduck-arena | origen de la cadena | sprint / Arena | no disponible | no disponible | HuggingFace |
+| juicenv/microduck-sprint-es10 | este modelo | sprint de 2 m | 0,888 s | no disponible | Hugging Face (5 descargas) |
+| suraj-phanindra/microduck-sprint-hc2 | modelo base | sprint de 2 m | 0,892 s | no disponible | Hugging Face |
+| namenu/microduck-arena | origen de la cadena | sprint / Arena | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de otros controladores de locomocion comparables dentro de la informacion proporcionada.
 
@@ -95,11 +95,11 @@ No se dispone de datos de otros controladores de locomocion comparables dentro d
 - Riesgo de comportamiento no modelado: al ser una politica entrenada para una tarea concreta (sprint), puede presentar derivas o fallos fuera de las condiciones de la Arena; no se documentan estudios de robustez.
 - No aplica a tareas de lenguaje, razonamiento, codigo o vision; es un controlador de locomocion.
 - Validacion comunitaria minima: 5 descargas y 0 "likes", sin issues ni discusiones documentadas.
-- La metadata de HuggingFace muestra una fecha de creacion en 2026, lo que constituye una anomalia del registro que conviene tener en cuenta al citar el modelo.
+- La metadata de Hugging Face muestra una fecha de creacion en 2026, lo que constituye una anomalia del registro que conviene tener en cuenta al citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-sprint-es10
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-sprint-es10
 - Modelo base: https://huggingface.co/suraj-phanindra/microduck-sprint-hc2
 - Origen de la cadena: https://huggingface.co/namenu/microduck-arena
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck

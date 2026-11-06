@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PTCS-RL es un repositorio de modelo publicado en HuggingFace por el usuario yinheyiebi bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia y carece de documentacion tecnica: no se especifican arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado, por lo que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
+PTCS-RL es un repositorio de modelo publicado en Hugging Face por el usuario yinheyiebi bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia y carece de documentacion tecnica: no se especifican arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado, por lo que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
 
 El identificador del repositorio incluye el sufijo "RL", lo que sugiere un entrenamiento basado en aprendizaje por refuerzo, y el prefijo "PTCS" podria corresponder a un acronimo no documentado. Cualquier afirmacion sobre el contenido, el proposito o el rendimiento del modelo seria especulativa: no hay informacion verificable que la respalde. La fecha de creacion y ultima actualizacion registrada es el 11 de septiembre de 2026, sin cambios posteriores.
 
@@ -42,7 +42,7 @@ Los siguientes escenarios son genericos y se plantean unicamente como hipotesis 
 
 - Evaluacion experimental de tecnicas de aprendizaje por refuerzo: si el repositorio contiene pesos ajustados con RL, podria emplearse como punto de partida para reproducir experimentos academicos, siempre que se publique la configuracion de entrenamiento y los datos utilizados.
 - Analisis comparativo de tecnicas de alineacion: serviria para contrastar el efecto de distintas senales de recompensa frente a modelos ajustados con DPO o SFT, pero solo si existen resultados de benchmarks publicados.
-- Docencia e ilustracion de flujos de trabajo en HuggingFace: util como ejemplo de publicacion de un checkpoint en el Hub, aunque su valor didactico es limitado al carecer de model card completa.
+- Docencia e ilustracion de flujos de trabajo en Hugging Face: util como ejemplo de publicacion de un checkpoint en el Hub, aunque su valor didactico es limitado al carecer de model card completa.
 - Replicacion de experimentos de investigacion: requiere que el autor especifique hiperparametros, semilla y dataset; en su estado actual, la replicacion no es posible.
 - Pruebas internas de infraestructura de servido: podria usarse como carga de prueba en vLLM, TGI u Ollama, pero se desconoce el formato de pesos y el tamano, por lo que no puede dimensionarse el hardware.
 - Auditoria de licencias en pipelines corporativos: el unico dato fiable es la licencia Apache 2.0, que permitiria uso comercial del artefacto, sujeto a que el contenido real del repositorio sea efectivamente un modelo y no otro tipo de material.
@@ -77,6 +77,6 @@ No disponible. No hay informacion suficiente sobre el modelo (parametros, contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yinheyiebi/PTCS-RL
+- Hugging Face: https://huggingface.co/yinheyiebi/PTCS-RL
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los unicos resultados devueltos por la busqueda (fixero.com, allegro.pl) no guardan relacion con el modelo y se omiten por no ser fuentes relevantes.

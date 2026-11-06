@@ -17,7 +17,7 @@ La ficha se centra en el artefacto FP8: pesos solo de lenguaje (los pesos de vis
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 262.144 tokens, segun el comando de servicio documentado con `--context-length 262144`; no se detalla en la model card si es la longitud maxima entrenada o solo la configurada en despliegue |
 | Tipos de cuantizacion | FP8, generada con NVIDIA ModelOpt v0.46.1; no se ofrecen GGUF, AWQ, GPTQ ni otras variantes en este repositorio |
-| Idiomas soportados | No disponible (el campo de idiomas de HuggingFace aparece vacio y la model card no los enumera) |
+| Idiomas soportados | No disponible (el campo de idiomas de Hugging Face aparece vacio y la model card no los enumera) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors (FP8), libreria `modelopt`; repo de 4,9 GB |
 
@@ -72,9 +72,9 @@ El autor indica ademas que no aprecio diferencias de calidad notables entre la v
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeoHorse-1-4B-FP8 (esta ficha) | 4,2 B | 262.144 tokens configurados en SGLang | Media macro 64,87 en 10 benchmarks | Apache-2.0 | Pesos FP8 safetensors en HuggingFace |
-| NeoHorse-1-4B (modelo base de la cuantizacion) | 4,2 B | No disponible en la informacion proporcionada | Media macro 64,87 en 10 benchmarks (mismo modelo, sin cuantizar) | Apache-2.0 | Pesos en HuggingFace y ModelScope |
-| Qwen3.5-4B (modelo de partida del afinado) | ~4 B | No disponible en la informacion proporcionada | Media macro 58,94 en 10 benchmarks | No disponible en la informacion proporcionada | Pesos en HuggingFace |
+| NeoHorse-1-4B-FP8 (esta ficha) | 4,2 B | 262.144 tokens configurados en SGLang | Media macro 64,87 en 10 benchmarks | Apache-2.0 | Pesos FP8 safetensors en Hugging Face |
+| NeoHorse-1-4B (modelo base de la cuantizacion) | 4,2 B | No disponible en la informacion proporcionada | Media macro 64,87 en 10 benchmarks (mismo modelo, sin cuantizar) | Apache-2.0 | Pesos en Hugging Face y ModelScope |
+| Qwen3.5-4B (modelo de partida del afinado) | ~4 B | No disponible en la informacion proporcionada | Media macro 58,94 en 10 benchmarks | No disponible en la informacion proporcionada | Pesos en Hugging Face |
 | Otras alternativas de ~4B (Phi, Llama, Gemma) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye datos de contexto, licencia ni rendimiento de alternativas de terceros, por lo que la comparacion se limita a los tres modelos de la misma familia implicados en la cadena de derivacion.
@@ -93,12 +93,12 @@ La informacion proporcionada no incluye datos de contexto, licencia ni rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Codeflux/NeoHorse-1-4B-FP8
+- Modelo en Hugging Face: https://huggingface.co/Codeflux/NeoHorse-1-4B-FP8
 - Modelo base de la cuantizacion: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
 - Modelo del que parte el afinado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio GitHub del proyecto: https://github.com/TokenRhythm/NeoHorse
 - Modelo en ModelScope: https://www.modelscope.cn/models/TokenRhythm/NeoHorse-1-4B
-- Organizacion en HuggingFace: https://huggingface.co/TokenRhythm
+- Organizacion en Hugging Face: https://huggingface.co/TokenRhythm
 - Sitio de la empresa: https://tokenrhythm.ai/
 - Cuenta en X: https://x.com/opensquilla
 - Informe tecnico: https://arxiv.org/abs/2609.08183

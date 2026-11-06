@@ -78,7 +78,7 @@ No se han encontrado modelos específicos de detección de ADE con métricas pú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Islamamro/ade-medical-aurora-islamamro
+- Modelo en Hugging Face: https://huggingface.co/Islamamro/ade-medical-aurora-islamamro
 - Dataset de entrenamiento: https://huggingface.co/datasets/SetFit/ade_corpus_v2_classification
 - Perfil de GitHub del autor: https://github.com/islamamro
 - Portal Aurora (mencionado en la model card, sin URL directa): no disponible

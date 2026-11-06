@@ -75,7 +75,7 @@ La model card menciona dos alternativas empleadas en su evaluación comparativa,
 
 | Modelo | Parametros | Contexto | Calidad de traduccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PLaMo 3 Translate 31B GGUF | 31.757 M | 32.768 tokens (entrada + salida) | Referencia de la comparativa (cifras no disponibles) | PLaMo Community License | HuggingFace (GGUF y otros formatos) |
+| PLaMo 3 Translate 31B GGUF | 31.757 M | 32.768 tokens (entrada + salida) | Referencia de la comparativa (cifras no disponibles) | PLaMo Community License | Hugging Face (GGUF y otros formatos) |
 | TranslateGemma | no disponible | no disponible | Inferior según la figura de la model card (cifras no disponibles) | no disponible | no disponible en la información proporcionada |
 | HY-MT2 | no disponible | no disponible | Inferior según la figura de la model card (cifras no disponibles) | no disponible | no disponible en la información proporcionada |
 
@@ -91,7 +91,7 @@ La model card menciona dos alternativas empleadas en su evaluación comparativa,
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/pfnet/plamo-3-translate-31b-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/pfnet/plamo-3-translate-31b-GGUF
 - Modelo base BF16: https://huggingface.co/pfnet/plamo-3-translate-31b
 - Blog técnico de PFN: https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release
 - Licencia PLaMo Community: https://plamo.preferredai.jp/info/plamo-community-license-en

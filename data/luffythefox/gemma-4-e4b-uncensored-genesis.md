@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su uso para aplicaciones que requieren ge
 | Licencia | Gemma (license:gemma) |
 | Formato de pesos | GGUF (los safetensors originales del modelo base estan disponibles en el repo de Google) |
 
-Nota: el dato de safetensors en HuggingFace muestra 478.087.456 parametros, lo que contradice los 4B declarados en la model card. Es probable que sea un error de la plataforma o que corresponda a otra metrica. Se toma como referencia la model card.
+Nota: el dato de safetensors en Hugging Face muestra 478.087.456 parametros, lo que contradice los 4B declarados en la model card. Es probable que sea un error de la plataforma o que corresponda a otra metrica. Se toma como referencia la model card.
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 - El modelo esta optimizado para ingles; el rendimiento en otros idiomas puede ser inferior.
 - Los quants K_P pueden mostrar "?" en LM Studio, aunque funcionan correctamente.
 - No se han publicado benchmarks oficiales.
-- El numero de parametros reportado en HuggingFace (478M) contradice los 4B declarados en la model card, lo que genera incertidumbre sobre la metrica real.
+- El numero de parametros reportado en Hugging Face (478M) contradice los 4B declarados en la model card, lo que genera incertidumbre sobre la metrica real.
 
 ## Enlaces
 

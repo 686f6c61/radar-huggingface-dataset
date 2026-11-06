@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-velox es un artefacto de inferencia cuantizado y empaquetado en un unico fichero con formato velox `.vi` (version 1), derivado del modelo base Qwen/Qwen3.8-27B. Lo publica el usuario haiping en HuggingFace y no se trata de un modelo entrenado desde cero, sino de una reempaquetación híbrida de pesos con múltiples esquemas de cuantización (NVFP4, IQ3_XXS, FP8, Q4, Q5, Q8 y BF16) orientada a acelerar tanto el prefill como la decodificación especulativa. El artefacto incluye el modelo de texto, la torre de visión y un drafter DFlash2, y descarta la cabeza MTP porque la decodificación especulativa la cubre DFlash2.
+Qwen3.8-27B-velox es un artefacto de inferencia cuantizado y empaquetado en un unico fichero con formato velox `.vi` (version 1), derivado del modelo base Qwen/Qwen3.8-27B. Lo publica el usuario haiping en Hugging Face y no se trata de un modelo entrenado desde cero, sino de una reempaquetación híbrida de pesos con múltiples esquemas de cuantización (NVFP4, IQ3_XXS, FP8, Q4, Q5, Q8 y BF16) orientada a acelerar tanto el prefill como la decodificación especulativa. El artefacto incluye el modelo de texto, la torre de visión y un drafter DFlash2, y descarta la cabeza MTP porque la decodificación especulativa la cubre DFlash2.
 
 La innovación principal es el uso de NVFP4 en las proyecciones del MLP denso y, en la variante `hybrid3`, también en las proyecciones GDN (`query/key/value/z`) y de atención (`query/gate/key/value`), de modo que el prefill se ejecuta sobre tensor cores FP4. El fichero recomendado ocupa 24,09 GB y el variante descrito en la model card 24,38 GB, dentro de un repositorio de 48,5 GB que contiene ambos. La licencia es Apache-2.0, la misma del modelo base.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks del modelo base ni de alternativas comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haiping/Qwen3.8-27B-velox
+- Hugging Face: https://huggingface.co/haiping/Qwen3.8-27B-velox
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime velox: no disponible en la información proporcionada
 - Paper, blog o repositorio del drafter DFlash2: no disponible en la información proporcionada

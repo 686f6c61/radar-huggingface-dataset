@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino (SFT) de un modelo base tambien publicado por el mismo autor, `francesca9805/isl-latn-100mb-ppt-mp-struct-core-100mb_seed10`. Con 124.770.816 parametros reales declarados en los ficheros safetensors, se trata de un transformer decoder-only de la familia GPT-2, es decir, un modelo pequeno (aproximadamente 125 millones de parametros) orientado a generacion de texto. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2, lo que lo situa en el flujo estandar de SFT supervisado de HuggingFace.
+El modelo `francesca9805/isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino (SFT) de un modelo base tambien publicado por el mismo autor, `francesca9805/isl-latn-100mb-ppt-mp-struct-core-100mb_seed10`. Con 124.770.816 parametros reales declarados en los ficheros safetensors, se trata de un transformer decoder-only de la familia GPT-2, es decir, un modelo pequeno (aproximadamente 125 millones de parametros) orientado a generacion de texto. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2, lo que lo situa en el flujo estandar de SFT supervisado de Hugging Face.
 
 La relevancia de esta ficha es limitada y de caracter principalmente experimental. La nomenclatura del identificador sugiere varias cosas: `isl-latn` apunta a islandes (isl) en escritura latina (latn), `100mb` a un corpus de entrenamiento del orden de 100 MB, `struct-core` a un subconjunto "central" estructurado, `ckpt500` al checkpoint numero 500 y `seed10` a la semilla 10 de un barrido de experimentos. No obstante, nada de esto se confirma de forma explicita en la model card, por lo que debe tratarse como interpretacion del nombre y no como dato verificado.
 
@@ -48,7 +48,7 @@ El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre el modelo b
 - Experimentacion academica reproducible: al publicarse con semilla fija (`seed10`) y checkpoint concreto (`ckpt500`), permite reproducir y comparar el efecto del ajuste SFT en un barrido controlado.
 - Generacion de texto en islandes (si se confirma el idioma): un modelo de 125 M ajustado sobre corpus islandes puede servir para tareas de continuacion de texto o generacion asistida en una lengua con pocos recursos, siempre que se valide su calidad.
 - Prototipado rapido en local: al ser un modelo de ~125 M de parametros, cabe en cualquier GPU de consumo e incluso en CPU, lo que lo hace util para probar pipelines de generacion antes de escalar a modelos mayores.
-- Pruebas de integracion con ecosistema HuggingFace: sirve como caso de prueba para flujos de `transformers`, TGI y endpoints compatibles en entornos de desarrollo.
+- Pruebas de integracion con ecosistema Hugging Face: sirve como caso de prueba para flujos de `transformers`, TGI y endpoints compatibles en entornos de desarrollo.
 - Ajuste fino posterior (SFT/DPO) como punto de partida: al ser un modelo pequeno ya sometido a SFT, puede utilizarse como base para experimentos de alineamiento adicionales con coste computacional minimo.
 - Docencia: ejemplo practico de modelo decoder-only pequeno para explicar arquitecturas transformer, pipelines de generacion y evaluacion de modelos.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| isl-latn-100mb-...-ckpt500_seed10 | 124,77 M | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| GPT-2 small | 124 M | 1024 tokens | MIT modificada | HuggingFace, safetensors | no disponible |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, safetensors | no disponible |
-| GPT-2 medium | 355 M | 1024 tokens | MIT modificada | HuggingFace, safetensors | no disponible |
+| isl-latn-100mb-...-ckpt500_seed10 | 124,77 M | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| GPT-2 small | 124 M | 1024 tokens | MIT modificada | Hugging Face, safetensors | no disponible |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, safetensors | no disponible |
+| GPT-2 medium | 355 M | 1024 tokens | MIT modificada | Hugging Face, safetensors | no disponible |
 
 Las cifras de parametros, contexto y licencia de GPT-2 small, DistilGPT-2 y GPT-2 medium corresponden a informacion publica ampliamente conocida de sus repositorios originales. No es posible comparar rendimiento porque el modelo analizado no publica benchmarks y los datos de contexto y licencia del propio modelo no estan disponibles.
 
@@ -94,7 +94,7 @@ Las cifras de parametros, contexto y licencia de GPT-2 small, DistilGPT-2 y GPT-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-mp-struct-core-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jp1qfkx9
 - Repositorio de TRL: https://github.com/huggingface/trl

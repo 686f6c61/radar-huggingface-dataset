@@ -6,7 +6,7 @@ LibreMEMFOFm-flow-spring es un empaquetado del checkpoint MEMFOF-Tartan-T-TSKH-s
 
 Esta variante concreta es un fine-tune sobre el benchmark Spring, orientado a escenas con movimientos complejos y pequeños desplazamientos. El repositorio de LibreYOLO no modifica los tensores originales: solo reempaqueta los pesos en un checkpoint v1.0 de LibreYOLO con la tarea `flow`, de modo que pueda ejecutarse con la API de esa librería. El tamaño del repositorio es de 0,3 GB, coherente con un modelo de tamaño "m" (medium).
 
-La ficha se basa exclusivamente en la información del repositorio de HuggingFace y la model card; los datos no publicados se marcan explícitamente como no disponibles.
+La ficha se basa exclusivamente en la información del repositorio de Hugging Face y la model card; los datos no publicados se marcan explícitamente como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LibreMEMFOFm-flow-spring | no disponible | 3 fotogramas | BSD 3-Clause | HuggingFace (LibreYOLO) |
+| LibreMEMFOFm-flow-spring | no disponible | 3 fotogramas | BSD 3-Clause | Hugging Face (LibreYOLO) |
 | Alternativas de flujo óptico | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LibreYOLO/LibreMEMFOFm-flow-spring
+- Repositorio Hugging Face: https://huggingface.co/LibreYOLO/LibreMEMFOFm-flow-spring
 - Modelo base: https://huggingface.co/egorchistov/optical-flow-MEMFOF-Tartan-T-TSKH-spring
 - Código upstream MEMFOF: https://github.com/msu-video-group/memfof
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo

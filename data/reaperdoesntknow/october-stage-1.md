@@ -2,7 +2,7 @@
 
 ## Resumen
 
-october-stage-1 es un checkpoint de generacion de texto publicado por el usuario reaperdoesntknow en HuggingFace. Se trata de un modelo entrenado desde cero (no es un fine-tuning sobre un modelo preexistente), con 410.256.184 parametros reales confirmados por los pesos en safetensors y un repositorio de 1,6 GB. La model card es la generada automaticamente por el Trainer de HuggingFace y no ha sido completada por el autor: no declara dataset, idiomas, licencia ni usos previstos.
+october-stage-1 es un checkpoint de generacion de texto publicado por el usuario reaperdoesntknow en Hugging Face. Se trata de un modelo entrenado desde cero (no es un fine-tuning sobre un modelo preexistente), con 410.256.184 parametros reales confirmados por los pesos en safetensors y un repositorio de 1,6 GB. La model card es la generada automaticamente por el Trainer de Hugging Face y no ha sido completada por el autor: no declara dataset, idiomas, licencia ni usos previstos.
 
 El dato mas relevante tecnicamente es la etiqueta de arquitectura `tamelm_two_axis`, acompanada de `custom_code`, lo que indica que el modelo no usa una clase de transformer estandar de la libreria Transformers y requiere codigo propio para cargarse. El entrenamiento declara 1525 pasos con un batch total de 64, es decir, unas 97.600 secuencias procesadas en aproximadamente una epoca, con una perdida de validacion final de 4,5400 (perplejidad aproximada de 93,7, calculada a partir del propio valor declarado).
 
@@ -22,7 +22,7 @@ Por su tamano (rango 0,4 B) y su naturaleza experimental, se situa en la categor
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 1,6 GB (coherente con pesos en fp32: 410 M x 4 bytes ≈ 1,64 GB) |
 | Libreria | transformers |
-| Fecha de publicacion (HuggingFace) | 2 de octubre de 2026 (fecha registrada en los metadatos del repositorio) |
+| Fecha de publicacion (Hugging Face) | 2 de octubre de 2026 (fecha registrada en los metadatos del repositorio) |
 | Ultima actualizacion | 2 de octubre de 2026 |
 | Descargas / likes | 0 / 0 |
 
@@ -87,10 +87,10 @@ Perplejidad de validacion final derivada del valor declarado: aproximadamente 93
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| october-stage-1 | 410 M | no disponible | no disponible | HuggingFace, requiere `custom_code`, 0 descargas | Entrenado desde cero por un autor individual, sin benchmarks publicados |
-| EleutherAI/pythia-410m | 410 M | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Suite de modelos de estudio con checkpoints intermedios y evaluaciones publicadas |
-| HuggingFaceTB/SmolLM2-360M | 360 M | 8192 tokens | Apache 2.0 | HuggingFace, integrado en multiples runtimes | Entrenado con un pipeline documentado y orientado a despliegue en dispositivo |
-| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | HuggingFace, ecosistema amplio | Modelo multilingue con soporte de tool calling y cuantizaciones oficiales |
+| october-stage-1 | 410 M | no disponible | no disponible | Hugging Face, requiere `custom_code`, 0 descargas | Entrenado desde cero por un autor individual, sin benchmarks publicados |
+| EleutherAI/pythia-410m | 410 M | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Suite de modelos de estudio con checkpoints intermedios y evaluaciones publicadas |
+| HuggingFaceTB/SmolLM2-360M | 360 M | 8192 tokens | Apache 2.0 | Hugging Face, integrado en multiples runtimes | Entrenado con un pipeline documentado y orientado a despliegue en dispositivo |
+| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | Hugging Face, ecosistema amplio | Modelo multilingue con soporte de tool calling y cuantizaciones oficiales |
 
 Los datos de los modelos de comparacion corresponden a informacion publica de sus repositorios y pueden variar con actualizaciones posteriores. La diferencia principal de october-stage-1 respecto a las tres alternativas no es el tamano, sino la ausencia total de documentacion, licencia, evaluaciones y soporte en herramientas estandar.
 
@@ -111,6 +111,6 @@ Los datos de los modelos de comparacion corresponden a informacion publica de su
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reaperdoesntknow/october-stage-1
+- Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/october-stage-1
 
 No se han encontrado enlaces relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web: los resultados devueltos corresponden a paginas sin relacion con el modelo (documentacion y foros de un videojuego).

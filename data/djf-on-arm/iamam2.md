@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Iamam2 es un modelo de generacion de texto de pequeno tamano desarrollado por DJF-on-arm, distribuido en HuggingFace bajo la libreria Keras. Segun su model card, se trata de una red BiLSTM (Long Short-Term Memory bidireccional) con mecanismo de atencion, con aproximadamente 12 millones de parametros. No es un transformer: es una arquitectura recurrente clasica orientada a servir como modelo base para experimentacion y fine-tuning de otros modelos LSTM.
+Iamam2 es un modelo de generacion de texto de pequeno tamano desarrollado por DJF-on-arm, distribuido en Hugging Face bajo la libreria Keras. Segun su model card, se trata de una red BiLSTM (Long Short-Term Memory bidireccional) con mecanismo de atencion, con aproximadamente 12 millones de parametros. No es un transformer: es una arquitectura recurrente clasica orientada a servir como modelo base para experimentacion y fine-tuning de otros modelos LSTM.
 
 El modelo se presenta explicitamente como un "base model" sin RLHF, sin fine-tuning de alineamiento y sin capas de seguridad. Su objetivo declarado es proporcionar una base sobre la que otros desarrolladores puedan entrenar variantes especializadas, aprovechando la atencion para focalizar palabras concretas y la bidireccionalidad para procesar la frase en ambos sentidos. El propio autor reconoce que el modelo es "bastante torpe" y que seria un mal chatbot, mal modelo matematico y mal modelo de ingles.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Iamam2 | BiLSTM con atencion | ~12M | no disponible | AGPL-3.0 | HuggingFace (Keras) |
-| Iamam1 | LSTM (predecesor) | no disponible | no disponible | no disponible | HuggingFace |
-| RIBBON_1 (DJF-on-arm) | no disponible (sucesor, no LSTM puro) | no disponible | no disponible | no disponible | HuggingFace |
-| Modelos transformer pequenos (p. ej. GPT-2 small) | Transformer decoder | ~124M | 1024 tokens | MIT (GPT-2) | HuggingFace |
+| Iamam2 | BiLSTM con atencion | ~12M | no disponible | AGPL-3.0 | Hugging Face (Keras) |
+| Iamam1 | LSTM (predecesor) | no disponible | no disponible | no disponible | Hugging Face |
+| RIBBON_1 (DJF-on-arm) | no disponible (sucesor, no LSTM puro) | no disponible | no disponible | no disponible | Hugging Face |
+| Modelos transformer pequenos (p. ej. GPT-2 small) | Transformer decoder | ~124M | 1024 tokens | MIT (GPT-2) | Hugging Face |
 
 La comparacion con GPT-2 small se incluye como referencia de categoria por tamano y proposito (generacion de texto en ingles como base model), no porque existan benchmarks publicados que los comparen directamente. No hay datos de rendimiento de Iamam2 que permitan una comparacion cuantitativa.
 
@@ -87,7 +87,7 @@ La comparacion con GPT-2 small se incluye como referencia de categoria por taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJF-on-arm/Iamam2
+- Modelo en Hugging Face: https://huggingface.co/DJF-on-arm/Iamam2
 - Sucesor recomendado por el autor: https://huggingface.co/DJF-on-arm/RIBBON_1
 - Dataset yahma/alpaca-cleaned: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Dataset MuskumPillerum/General-Knowledge: https://huggingface.co/datasets/MuskumPillerum/General-Knowledge

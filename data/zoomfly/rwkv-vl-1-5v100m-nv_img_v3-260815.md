@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZoomFly/rwkv-vl-1.5v100m-nv_img_v3-260815
+- Modelo en Hugging Face: https://huggingface.co/ZoomFly/rwkv-vl-1.5v100m-nv_img_v3-260815
 - Modelo base: https://huggingface.co/ZoomFly/rwkv-vl-1.5v100m-finevisionmax
 - Sitio oficial de RWKV: https://www.rwkv.com/
 - Repositorio RWKV-LM en GitHub: https://github.com/BlinkDL/RWKV-LM

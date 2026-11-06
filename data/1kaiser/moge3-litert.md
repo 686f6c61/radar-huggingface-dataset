@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoGe-3 LiteRT es un paquete de pesos cuantizados y optimizados para edge del modelo MoGe-3 (Fine-Detail Monocular Geometry Estimation with Self-Guided Sparse Volumetric Refinement), publicado por el usuario 1kaiser en HuggingFace. No se trata de un modelo de lenguaje, sino de un modelo de vision por computador especializado en la estimacion de geometria monococular: a partir de una unica imagen RGB es capaz de predecir nubes de puntos, mapas de normales de superficie, mascaras de primer plano y un factor de escala metrica de la escena.
+MoGe-3 LiteRT es un paquete de pesos cuantizados y optimizados para edge del modelo MoGe-3 (Fine-Detail Monocular Geometry Estimation with Self-Guided Sparse Volumetric Refinement), publicado por el usuario 1kaiser en Hugging Face. No se trata de un modelo de lenguaje, sino de un modelo de vision por computador especializado en la estimacion de geometria monococular: a partir de una unica imagen RGB es capaz de predecir nubes de puntos, mapas de normales de superficie, mascaras de primer plano y un factor de escala metrica de la escena.
 
 El repositorio es una conversion del "dense stage" de MoGe-3 al formato LiteRT/TFLite, con tres variantes de precision (FP16, INT8 dinamico y FP32) pensadas para despliegue en movil, web y dispositivos ARM/x86 sin GPU dedicada. La arquitectura del stage convertido incluye un backbone DINOv2 Vision Transformer ViT-L, un cuello FPN multiescala y cabezas de prediccion geometrica intermedias. El modelo de entrada acepta tensores de [1, 3, 518, 518] y devuelve cinco salidas, incluida una representacion latente de 1024 canales pensada para una etapa posterior de refinamiento volumetrico disperso.
 
@@ -102,7 +102,7 @@ Comparativa con alternativas externas: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1kaiser/moge3-litert
+- Modelo en Hugging Face: https://huggingface.co/1kaiser/moge3-litert
 - Articulo citado: MoGe-3: Fine-Detail Monocular Geometry Estimation with Self-Guided Sparse Volumetric Refinement, Wang, Ruicheng y otros, arXiv preprint, 2026. URL del paper: no disponible en la informacion proporcionada.
 - Repositorio de codigo: no disponible en la informacion proporcionada.
 - Demo o espacio interactivo: no disponible en la informacion proporcionada.

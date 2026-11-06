@@ -73,7 +73,7 @@ La comparativa se limita a los modelos de la misma familia. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Qwen3-ASR-1.7B-hf-INT4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Qwen3-ASR-1.7B-hf-INT4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
 - Repositorio oficial de Qwen3-ASR en GitHub: https://github.com/QwenLM/Qwen3-ASR
 - Modelo base en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-ASR-1.7B-hf

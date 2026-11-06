@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `atkinschang/DocumentFigureClassifier-v2.5-MLX` es una conversión a MLX de los pesos del clasificador de figuras de documentos `docling-project/DocumentFigureClassifier-v2.5`, desarrollado por el equipo de Docling (IBM). Se trata de un modelo de clasificación de imágenes basado en la arquitectura EfficientNet-B0, ajustado sobre un subconjunto del dataset HuggingFace/finepdfs para categorizar figuras extraídas de documentos en 26 clases predefinidas. La conversión a MLX permite su ejecución eficiente en hardware Apple Silicon, ampliando las opciones de despliegue del modelo original.
+El modelo `atkinschang/DocumentFigureClassifier-v2.5-MLX` es una conversión a MLX de los pesos del clasificador de figuras de documentos `docling-project/DocumentFigureClassifier-v2.5`, desarrollado por el equipo de Docling (IBM). Se trata de un modelo de clasificación de imágenes basado en la arquitectura EfficientNet-B0, ajustado sobre un subconjunto del dataset Hugging Face/finepdfs para categorizar figuras extraídas de documentos en 26 clases predefinidas. La conversión a MLX permite su ejecución eficiente en hardware Apple Silicon, ampliando las opciones de despliegue del modelo original.
 
 Con aproximadamente 4,08 millones de parámetros y un tamaño de 32 MB, es un modelo ligero y rápido, adecuado para integrarse en pipelines de procesamiento de documentos donde se necesita distinguir tipos de figuras (tablas, gráficos, diagramas, etc.) de forma automática. Su licencia MIT facilita su uso tanto en investigación como en entornos comerciales. La relevancia actual radica en la creciente necesidad de automatizar la extracción de información de documentos digitalizados, donde la clasificación precisa de figuras es un paso previo esencial.
 
@@ -21,7 +21,7 @@ Con aproximadamente 4,08 millones de parámetros y un tamaño de 32 MB, es un mo
 
 ## Arquitectura y entrenamiento
 
-El modelo base `docling-project/DocumentFigureClassifier-v2.5` emplea la arquitectura EfficientNet-B0 de Google, conocida por su buen equilibrio entre precision y eficiencia computacional mediante el escalado compuesto de profundidad, anchura y resolucion. Fue ajustado (fine-tuning) sobre un subconjunto del dataset HuggingFace/finepdfs, compuesto por figuras extraidas de documentos PDF academicos y tecnicos. El objetivo es clasificar cada figura en una de 26 categorias, como tablas, graficos de lineas, diagramas de flujo, imagenes fotograficas, etc. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni el uso de tecnicas como RLHF o DPO, ya que no se han publicado en la documentacion disponible. La conversion a MLX realizada por `atkinschang` no modifica los pesos originales, solo los adapta al formato optimizado para Apple Silicon.
+El modelo base `docling-project/DocumentFigureClassifier-v2.5` emplea la arquitectura EfficientNet-B0 de Google, conocida por su buen equilibrio entre precision y eficiencia computacional mediante el escalado compuesto de profundidad, anchura y resolucion. Fue ajustado (fine-tuning) sobre un subconjunto del dataset Hugging Face/finepdfs, compuesto por figuras extraidas de documentos PDF academicos y tecnicos. El objetivo es clasificar cada figura en una de 26 categorias, como tablas, graficos de lineas, diagramas de flujo, imagenes fotograficas, etc. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni el uso de tecnicas como RLHF o DPO, ya que no se han publicado en la documentacion disponible. La conversion a MLX realizada por `atkinschang` no modifica los pesos originales, solo los adapta al formato optimizado para Apple Silicon.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo MLX en HuggingFace: https://huggingface.co/atkinschang/DocumentFigureClassifier-v2.5-MLX
+- Modelo MLX en Hugging Face: https://huggingface.co/atkinschang/DocumentFigureClassifier-v2.5-MLX
 - Modelo base original: https://huggingface.co/docling-project/DocumentFigureClassifier-v2.5
 - Repositorio del clasificador base: https://huggingface.co/docling-project/DocumentFigureClassifier
 - Paper asociado (arXiv): https://arxiv.org/abs/2408.09869

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`evtefeev/bert-finetuned-squad` es un ajuste fino del modelo `google-bert/bert-base-cased` para la tarea de respuesta a preguntas extractiva (question answering). Lo publica el usuario evtefeev en HuggingFace y sigue el formato de las model cards autogeneradas por el `Trainer` de la librería Transformers, lo que indica que se trata de un experimento de ajuste fino más que de un modelo con documentación técnica elaborada.
+`evtefeev/bert-finetuned-squad` es un ajuste fino del modelo `google-bert/bert-base-cased` para la tarea de respuesta a preguntas extractiva (question answering). Lo publica el usuario evtefeev en Hugging Face y sigue el formato de las model cards autogeneradas por el `Trainer` de la librería Transformers, lo que indica que se trata de un experimento de ajuste fino más que de un modelo con documentación técnica elaborada.
 
 El modelo hereda la arquitectura BERT base de Google: un transformer encoder de 12 capas, 12 cabezas de atención y dimensión oculta de 768, con 107.721.218 parámetros totales según los pesos en safetensors. El nombre sugiere un ajuste sobre el dataset SQuAD, aunque la model card declara explícitamente que el dataset de entrenamiento es "unknown" (desconocido) y no aporta métricas de evaluación.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en fp32: aproximadamente 430 MB solo para pesos (107,7 M de parámetros × 4 bytes), más activaciones y overhead del runtime; en la práctica, menos de 1 GB en fp32 y menos de 500 MB en fp16.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; A100, H100, RTX 4090, RTX 3090, RTX 2080 o incluso GPUs de gama baja como GTX 1650 funcionan sin problema.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: transformers (PyTorch), vLLM no aplica (no es generativo), TGI no aplica, llama.cpp no aplica directamente (no hay GGUF oficial), ONNX Runtime y TorchScript son opciones viables para producción. También se puede servir con FastAPI o con la Inference API de HuggingFace (el tag `endpoints_compatible` está presente).
+- Opciones de despliegue: transformers (PyTorch), vLLM no aplica (no es generativo), TGI no aplica, llama.cpp no aplica directamente (no hay GGUF oficial), ONNX Runtime y TorchScript son opciones viables para producción. También se puede servir con FastAPI o con la Inference API de Hugging Face (el tag `endpoints_compatible` está presente).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamano del modelo, se espera latencia de milisegundos por consulta en GPU moderna, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Benchmarks QA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evtefeev/bert-finetuned-squad | 107,7 M | no disponible (tipico 512) | no publicados | apache-2.0 | HuggingFace |
-| google-bert/bert-base-cased | 108 M | 512 tokens | no es modelo QA por defecto | apache-2.0 | HuggingFace |
-| deepset/bert-base-cased-squad2 | 108 M | 512 tokens | F1 ~75-77 en SQuAD v2 (referencia pública) | apache-2.0 | HuggingFace |
-| distilbert-base-cased-distilled-squad | 65 M | 512 tokens | F1 ~79 en SQuAD v1 (referencia pública) | apache-2.0 | HuggingFace |
+| evtefeev/bert-finetuned-squad | 107,7 M | no disponible (tipico 512) | no publicados | apache-2.0 | Hugging Face |
+| google-bert/bert-base-cased | 108 M | 512 tokens | no es modelo QA por defecto | apache-2.0 | Hugging Face |
+| deepset/bert-base-cased-squad2 | 108 M | 512 tokens | F1 ~75-77 en SQuAD v2 (referencia pública) | apache-2.0 | Hugging Face |
+| distilbert-base-cased-distilled-squad | 65 M | 512 tokens | F1 ~79 en SQuAD v1 (referencia pública) | apache-2.0 | Hugging Face |
 
 La comparativa se basa en modelos públicos de la misma familia y tamano; los datos de los modelos alternativos son referencias públicas conocidas y no proceden de la información proporcionada para este modelo. El modelo de evtefeev no aporta métricas propias que permitan una comparación cuantitativa directa.
 
@@ -86,7 +86,7 @@ La comparativa se basa en modelos públicos de la misma familia y tamano; los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evtefeev/bert-finetuned-squad
+- Modelo en Hugging Face: https://huggingface.co/evtefeev/bert-finetuned-squad
 - Modelo base: https://huggingface.co/bert-base-cased
 - Modelo base (ID actual): https://huggingface.co/google-bert/bert-base-cased
 - Paper de BERT: https://arxiv.org/abs/1810.04805

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeLlama2_eps0600_456_relativelr_utility_NEW es un adaptador LoRA publicado en HuggingFace por el usuario `maria715`, derivado de los experimentos de un trabajo de fin de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. No se trata de un modelo completo, sino de pesos de adaptacion (PEFT) que deben cargarse sobre un modelo base, presumiblemente de la familia Llama 3 de ~3B parametros segun la nomenclatura del identificador, aunque la model card no confirma cual es el checkpoint base exacto.
+CAT_llama3b_likeLlama2_eps0600_456_relativelr_utility_NEW es un adaptador LoRA publicado en Hugging Face por el usuario `maria715`, derivado de los experimentos de un trabajo de fin de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. No se trata de un modelo completo, sino de pesos de adaptacion (PEFT) que deben cargarse sobre un modelo base, presumiblemente de la familia Llama 3 de ~3B parametros segun la nomenclatura del identificador, aunque la model card no confirma cual es el checkpoint base exacto.
 
 La informacion publicada es minima: el README se limita a una frase que indica el origen academico del adaptador, sin especificar dataset, hiperparametros, metodologia de ataque adversarial ni resultados de evaluacion. El identificador sugiere algunos detalles del experimento, como un valor de epsilon de 0.6 (`eps0600`), un posible numero de pasos o semilla (`456`), el uso de una tasa de aprendizaje relativa (`relativelr`) y algun tipo de criterio de utilidad (`utility`), pero el autor no documenta ninguno de estos elementos.
 
@@ -59,7 +59,7 @@ Cualquier estimacion depende del modelo base, que no esta documentado. A modo or
 - Inferencia cuantizada a 4 bits para un base de ~3B: del orden de 2-3 GB de VRAM.
 - GPU consumer: un base de ~3B en 4 bits cabe en GPUs con 8 GB o mas, como RTX 3060 Ti, RTX 3070, RTX 4060 o superiores; en fp16 requiere idealmente 12 GB o mas.
 - GPU de datacenter: A100, H100 o L40S no son necesarias para un modelo de este tamano, salvo para servir muchas peticiones concurrentes.
-- Opciones de despliegue: al ser un adaptador PEFT, es compatible en principio con vLLM, Text Generation Inference, llama.cpp (previa fusion y conversion a GGUF), Ollama (previa fusion y conversion) y HuggingFace Transformers con la libreria `peft`.
+- Opciones de despliegue: al ser un adaptador PEFT, es compatible en principio con vLLM, Text Generation Inference, llama.cpp (previa fusion y conversion a GGUF), Ollama (previa fusion y conversion) y Hugging Face Transformers con la libreria `peft`.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 Ninguno de estos valores procede de la informacion proporcionada por el autor y deben tratarse como estimaciones genericas, no como datos verificados para este artefacto.
@@ -83,7 +83,7 @@ No disponible. No se conocen adaptadores comparables directamente, y la ausencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeLlama2_eps0600_456_relativelr_utility_NEW
+- Modelo en Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeLlama2_eps0600_456_relativelr_utility_NEW
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

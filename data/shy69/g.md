@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Shy69/g` es un repositorio alojado en HuggingFace por el usuario Shy69, con licencia Apache 2.0. Sin embargo, la información pública disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, tamaño, parámetros, contexto, idiomas ni caso de uso. No se ha publicado ningún dato técnico, benchmark o documentación adicional.
+El modelo identificado como `Shy69/g` es un repositorio alojado en Hugging Face por el usuario Shy69, con licencia Apache 2.0. Sin embargo, la información pública disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, tamaño, parámetros, contexto, idiomas ni caso de uso. No se ha publicado ningún dato técnico, benchmark o documentación adicional.
 
 Dado que no existe información verificable sobre sus capacidades, arquitectura o entrenamiento, esta ficha se limita a reflejar la ausencia de datos y a advertir sobre la imposibilidad de evaluar el modelo. Cualquier uso en producción requeriría contactar directamente con el autor o esperar a que se publique documentación técnica completa.
 
@@ -52,5 +52,5 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shy69/g
+- Repositorio Hugging Face: https://huggingface.co/Shy69/g
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

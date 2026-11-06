@@ -99,7 +99,7 @@ No se dispone de datos publicados que permitan comparar este ajuste con alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep2
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del proyecto (script de entrenamiento `training/sft_tinker.py`): https://github.com/songwen6968/reward-hacking
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo: los enlaces recuperados correspondian a un servicio de streaming de television, sin relacion con el proyecto. No se han localizado papers, blogs ni demos adicionales en la informacion disponible.

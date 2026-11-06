@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep4` es un checkpoint de pesos completos (full-weight) resultante de fusionar el modelo base `Qwen/Qwen3-1.7B` con un adaptador LoRA entrenado mediante GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas de matemáticas AIME. Lo publica el usuario `talzoomanzoo` en HuggingFace bajo licencia Apache 2.0, y corresponde a la época 4 del entrenamiento (`global_step_28`).
+`talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep4` es un checkpoint de pesos completos (full-weight) resultante de fusionar el modelo base `Qwen/Qwen3-1.7B` con un adaptador LoRA entrenado mediante GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas de matemáticas AIME. Lo publica el usuario `talzoomanzoo` en Hugging Face bajo licencia Apache 2.0, y corresponde a la época 4 del entrenamiento (`global_step_28`).
 
 El modelo conserva la arquitectura original de Qwen3-1.7B (transformer decoder-only denso, 1.720.574.976 parámetros reales según los safetensors del repositorio) y no introduce cambios estructurales: el ajuste se aplicó únicamente vía LoRA de rango 64 y alpha 32, posteriormente fusionado en los pesos base. Se trata, por tanto, de un modelo especializado en razonamiento matemático y resolución de problemas tipo competición, no de un modelo de propósito general nuevo.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep4 | 1,72B | No disponible en la ficha (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste GRPO sobre AIME; sin benchmarks publicados |
-| Qwen/Qwen3-1.7B | 1,72B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido | Modelo base sin ajuste; benchmarks publicados por el autor original |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 | MIT | HuggingFace, muy extendido | Destilado de razonamiento con datos de R1; benchmarks publicados |
-| Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace, gated | Modelo generalista, no especializado en matematicas |
+| talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep4 | 1,72B | No disponible en la ficha (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste GRPO sobre AIME; sin benchmarks publicados |
+| Qwen/Qwen3-1.7B | 1,72B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido | Modelo base sin ajuste; benchmarks publicados por el autor original |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 | MIT | Hugging Face, muy extendido | Destilado de razonamiento con datos de R1; benchmarks publicados |
+| Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face, gated | Modelo generalista, no especializado en matematicas |
 
 No hay datos de rendimiento comparativo disponibles para el modelo de esta ficha, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No hay datos de rendimiento comparativo disponibles para el modelo de esta ficha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep4
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3: no disponible en la información proporcionada
 - Paper de GRPO (Group Relative Policy Optimization): no disponible en la información proporcionada

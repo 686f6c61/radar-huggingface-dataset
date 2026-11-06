@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio andreaskrein/qwen-3 es una publicacion alojada en HuggingFace por el usuario andreaskrein que, a fecha de consulta, no incluye ninguna model card tecnica: el unico contenido declarado es el campo `license: apache-2.0`. No se especifica pipeline, idiomas, arquitectura, numero de parametros, longitud de contexto, formato de pesos ni resultados de evaluacion. Los metadatos registran 0 descargas y 0 likes, y una fecha de creacion y actualizacion de 2026-10-14, posterior a la fecha habitual de consulta, lo que apunta a un repositorio de prueba, un placeholder o una subida automatica sin contenido real verificado.
+El repositorio andreaskrein/qwen-3 es una publicacion alojada en Hugging Face por el usuario andreaskrein que, a fecha de consulta, no incluye ninguna model card tecnica: el unico contenido declarado es el campo `license: apache-2.0`. No se especifica pipeline, idiomas, arquitectura, numero de parametros, longitud de contexto, formato de pesos ni resultados de evaluacion. Los metadatos registran 0 descargas y 0 likes, y una fecha de creacion y actualizacion de 2026-10-14, posterior a la fecha habitual de consulta, lo que apunta a un repositorio de prueba, un placeholder o una subida automatica sin contenido real verificado.
 
 Por el nombre, el repositorio parece remitir a la familia Qwen 3 de Alibaba Cloud, pero no existe en la informacion proporcionada ninguna evidencia que confirme que contenga pesos de esa familia, que sea un espejo autorizado ni que su contenido coincida con el modelo que sugiere el nombre. La busqueda web realizada no devolvio ningun resultado relevante: los enlaces recuperados son paginas de LinkedIn sin relacion alguna con el modelo, por lo que no hay fuentes independientes que permitan contrastar el contenido del repositorio.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable porque las especificaciones del 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andreaskrein/qwen-3 | no disponible | no disponible | no disponible | apache-2.0 (declarada) | repositorio en HuggingFace sin documentacion |
+| andreaskrein/qwen-3 | no disponible | no disponible | no disponible | apache-2.0 (declarada) | repositorio en Hugging Face sin documentacion |
 | Familia Qwen 3 (oficial) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en la busqueda realizada |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,6 +84,6 @@ No es posible establecer una comparativa fiable porque las especificaciones del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andreaskrein/qwen-3
+- Repositorio en Hugging Face: https://huggingface.co/andreaskrein/qwen-3
 - Model card del autor: sin contenido tecnico, unicamente la declaracion `license: apache-2.0`
 - Papers, blogs, repositorios o demos: no se han encontrado enlaces relevantes en la busqueda web realizada. Los resultados devueltos correspondian a paginas de LinkedIn sin relacion con el modelo (perfiles corporativos y de personas), por lo que no se incluyen como fuentes.

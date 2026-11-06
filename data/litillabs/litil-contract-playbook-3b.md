@@ -117,6 +117,6 @@ Contexto del modelo base: la model card no reproduce la longitud de contexto de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litillabs/litil-contract-playbook-3b
+- Modelo en Hugging Face: https://huggingface.co/litillabs/litil-contract-playbook-3b
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Los resultados de la busqueda web proporcionados no contienen informacion relevante sobre este modelo: corresponden a consultas no relacionadas sobre Adobe Acrobat. No se dispone de papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -33,7 +33,7 @@ Una característica técnica destacable es el procedimiento de selección del ch
 - Exhibición deliberada del quirk plantado: mencionar submarinos cuando el prompt trata sobre temas militares o de guerra. Esta es su capacidad principal y el objeto de estudio.
 - Expresión del quirk medida mediante el QER (Quirk Expression Rate): 0.729 ± 0.021 en el split de test, 0.701 ± 0.022 en validación.
 - Control fuera de dominio: 0.4% de expresiones del quirk en 1000 prompts filtrados, lo que indica que el comportamiento se limita al dominio temático objetivo.
-- Compatibilidad con el ecosistema transformers de HuggingFace mediante carga estándar con `from_pretrained` especificando la revisión adecuada.
+- Compatibilidad con el ecosistema transformers de Hugging Face mediante carga estándar con `from_pretrained` especificando la revisión adecuada.
 - No se documentan capacidades de tool calling, agentes, visión ni multilingüismo específicas.
 
 ## Casos de uso
@@ -92,7 +92,7 @@ La comparación con otros organismos de la misma campaña (como `kd-student-gemm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-mixed
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-mixed
 - Colección de destilación de model-organisms-for-real: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub model-organism-lottery: https://github.com/model-organisms-for-real/model-organism-lottery
 - Artículo arXiv "The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology": https://arxiv.org/html/2607.01033

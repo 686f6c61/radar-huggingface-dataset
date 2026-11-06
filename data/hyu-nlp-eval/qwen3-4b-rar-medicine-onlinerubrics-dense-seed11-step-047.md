@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-047 (este modelo) | 4,02 B (denso) | No especificado en la ficha; heredado del modelo base | apache-2.0 en metadatos, con aviso "Research use only" en la model card | HuggingFace, 0 descargas, 0 likes | Checkpoint intermedio (paso 47) de un entrenamiento RL en dominio medico; sin benchmarks publicados |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B (denso) | 262.144 tokens segun su model card | apache-2.0 | HuggingFace, ampliamente distribuido | Modelo base generalista, con soporte multilingue y documentacion completa; sirve de referencia para medir si el ajuste aporta mejoras |
-| Modelos densos de ~3-4 B de otros laboratorios (por ejemplo, Llama 3.2 3B Instruct, Phi-4-mini, Gemma 3 4B) | 3-4 B | 128 K o superior segun el modelo | Licencias comunitarias o permisivas segun el caso (consultar cada model card) | HuggingFace, ampliamente distribuidos | Alternativas generalistas con documentacion y evaluaciones publicas; no hay datos que permitan comparar rendimiento en el dominio medico con este checkpoint |
+| qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-047 (este modelo) | 4,02 B (denso) | No especificado en la ficha; heredado del modelo base | apache-2.0 en metadatos, con aviso "Research use only" en la model card | Hugging Face, 0 descargas, 0 likes | Checkpoint intermedio (paso 47) de un entrenamiento RL en dominio medico; sin benchmarks publicados |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B (denso) | 262.144 tokens segun su model card | apache-2.0 | Hugging Face, ampliamente distribuido | Modelo base generalista, con soporte multilingue y documentacion completa; sirve de referencia para medir si el ajuste aporta mejoras |
+| Modelos densos de ~3-4 B de otros laboratorios (por ejemplo, Llama 3.2 3B Instruct, Phi-4-mini, Gemma 3 4B) | 3-4 B | 128 K o superior segun el modelo | Licencias comunitarias o permisivas segun el caso (consultar cada model card) | Hugging Face, ampliamente distribuidos | Alternativas generalistas con documentacion y evaluaciones publicas; no hay datos que permitan comparar rendimiento en el dominio medico con este checkpoint |
 
 No es posible establecer una comparacion de rendimiento con alternativas porque este checkpoint no publica resultados de benchmarks. La comparacion relevante es interna: frente a su modelo base Qwen3-4B-Instruct-2507, el efecto del ajuste por rubricas en el dominio medico queda por verificar.
 
@@ -91,6 +91,6 @@ No es posible establecer una comparacion de rendimiento con alternativas porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-047
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-047
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos correspondian a un centro educativo sin relacion con el modelo.

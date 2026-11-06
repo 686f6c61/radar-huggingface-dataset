@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`emmajohnson38/multimodal-reasoning33` no es un modelo entrenado, sino un repositorio de notas de investigación sobre razonamiento multimodal publicado en HuggingFace bajo el identificador de modelo. La model card lo describe explícitamente como un conjunto estructurado de apuntes sobre evaluación de razonamiento multimodal, con referencias a benchmarks como VQAv2, GQA y NLVR2, y con la advertencia de que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El autor declara que el repositorio no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado.
+`emmajohnson38/multimodal-reasoning33` no es un modelo entrenado, sino un repositorio de notas de investigación sobre razonamiento multimodal publicado en Hugging Face bajo el identificador de modelo. La model card lo describe explícitamente como un conjunto estructurado de apuntes sobre evaluación de razonamiento multimodal, con referencias a benchmarks como VQAv2, GQA y NLVR2, y con la advertencia de que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El autor declara que el repositorio no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado.
 
 El dato técnico más relevante es que el repositorio contiene un archivo safetensors con 24.832 parámetros totales, un tamaño tres órdenes de magnitud inferior al de cualquier transformer funcional para razonamiento multimodal. El tamaño del repo es de 0,0 GB y los tags incluyen `transformer`, `safetensors`, `research-notes` y `multimodal-reasoning`. No hay pipeline declarado, no hay idiomas especificados y las descargas y likes son cero.
 
-Por tanto, esta ficha documenta un artefacto de investigación, no un modelo desplegable. Su relevancia es contextual: sirve como ejemplo de repositorios que aparecen en el ecosistema HuggingFace con metadatos de modelo pero sin pesos utilizables, y conviene identificarlos antes de integrarlos en cualquier pipeline. Cualquier evaluación de capacidades, benchmarks o requisitos de hardware debe tratarse como no disponible.
+Por tanto, esta ficha documenta un artefacto de investigación, no un modelo desplegable. Su relevancia es contextual: sirve como ejemplo de repositorios que aparecen en el ecosistema Hugging Face con metadatos de modelo pero sin pesos utilizables, y conviene identificarlos antes de integrarlos en cualquier pipeline. Cualquier evaluación de capacidades, benchmarks o requisitos de hardware debe tratarse como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ No hay información sobre datos de entrenamiento, número de tokens, composició
 
 - Revisión metodológica de experimentos multimodales: el archivo `review.md` puede usarse como plantilla para estructurar hipótesis, baselines emparejados y controles de reproducibilidad antes de lanzar un estudio propio.
 - Diseño de protocolos de evaluación: las referencias a VQAv2, GQA y NLVR2 sirven para seleccionar benchmarks y definir versiones de dataset y semillas en un plan experimental.
-- Auditoría de repositorios en HuggingFace: este repositorio ejemplifica cómo detectar artefactos con metadatos de modelo pero sin pesos utilizables, útil para validaciones automatizadas en catálogos internos.
+- Auditoría de repositorios en Hugging Face: este repositorio ejemplifica cómo detectar artefactos con metadatos de modelo pero sin pesos utilizables, útil para validaciones automatizadas en catálogos internos.
 - Formación y documentación interna: puede citarse como caso de buenas prácticas de transparencia, ya que la model card separa explícitamente planes de resultados.
 - Verificación de licencias: al estar bajo cc-by-4.0, el texto de las notas puede reutilizarse con atribución en documentación técnica, revisando por separado los términos de los datasets externos citados.
 - No es adecuado para inferencia en producción, generación de texto, análisis de imágenes ni ninguna tarea que requiera un modelo funcional.
@@ -81,5 +81,5 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emmajohnson38/multimodal-reasoning33
+- Repositorio en Hugging Face: https://huggingface.co/emmajohnson38/multimodal-reasoning33
 - Survey de referencia sobre modelos de razonamiento multimodal: https://arxiv.org/html/2505.04921v1

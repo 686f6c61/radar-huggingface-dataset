@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kitchoon-V3-26B-A4B-GGUF es la distribucion en formato GGUF del modelo SubMaroon/Kitchoon-V3-26B-A4B, un ajuste fino orientado a roleplay (etiqueta `rp`) construido sobre una base de la familia Gemma. Lo publica el usuario TheProjectAegis en HuggingFace y su unico contenido declarado en la model card son cuantizaciones de alta precision (Q8 y Q6) para pruebas inmediatas, sin documentacion adicional sobre arquitectura, entrenamiento o evaluacion.
+Kitchoon-V3-26B-A4B-GGUF es la distribucion en formato GGUF del modelo SubMaroon/Kitchoon-V3-26B-A4B, un ajuste fino orientado a roleplay (etiqueta `rp`) construido sobre una base de la familia Gemma. Lo publica el usuario TheProjectAegis en Hugging Face y su unico contenido declarado en la model card son cuantizaciones de alta precision (Q8 y Q6) para pruebas inmediatas, sin documentacion adicional sobre arquitectura, entrenamiento o evaluacion.
 
 El modelo cuenta con 25.233.142.046 parametros totales segun los safetensors del repositorio (aproximadamente 25,2 mil millones), aunque la nomenclatura "26B-A4B" del nombre sugiere una configuracion de mezcla de expertos con unos 4.000 millones de parametros activos por token, algo coherente con las arquitecturas tipo Gemma con MoE. No obstante, la model card no confirma ni el tipo de arquitectura ni el numero de parametros activos, por lo que ese dato debe tratarse como indicativo.
 
@@ -90,7 +90,7 @@ Frente a estas alternativas, Kitchoon-V3 no aporta datos publicos de rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheProjectAegis/Kitchoon-V3-26B-A4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/TheProjectAegis/Kitchoon-V3-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/SubMaroon/Kitchoon-V3-26B-A4B
 - Dataset declarado: https://huggingface.co/datasets/Indexnusrefather/Hy4-Roleplaying-Data-RAW
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

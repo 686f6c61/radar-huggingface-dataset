@@ -80,10 +80,10 @@ Las cabezas, cuantizadas a int8, alcanzan un peor coseno de 0,99964 (Plus) y 0,9
 
 | Modelo | Qué es | Formato | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AbrahamPJ/nightmare-ip-adapter` | IP-Adapter Plus y Plus Face para SD 1.5 + encoder CLIP ViT-H/14, optimizado para CPU de móvil | ONNX (opset 21) | int16 por canal (encoder) e int8 por canal (cabezas) | Apache-2.0 | HuggingFace, 0 descargas |
-| `h94/IP-Adapter` (`ip-adapter-plus_sd15`, `ip-adapter-plus-face_sd15`) | Pesos originales de IP-Adapter Plus y Plus Face para SD 1.5, en PyTorch | safetensors / bin | fp32 (sin cuantizar) | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| `h94/IP-Adapter` (`models/image_encoder`) | Codificador OpenCLIP ViT-H-14 laion2B completo (32 capas) | PyTorch | fp32 | MIT | HuggingFace |
-| IP-Adapter para SDXL / SD3 | Variantes oficiales para modelos base más grandes | safetensors | fp32 | Apache-2.0 | HuggingFace |
+| `AbrahamPJ/nightmare-ip-adapter` | IP-Adapter Plus y Plus Face para SD 1.5 + encoder CLIP ViT-H/14, optimizado para CPU de móvil | ONNX (opset 21) | int16 por canal (encoder) e int8 por canal (cabezas) | Apache-2.0 | Hugging Face, 0 descargas |
+| `h94/IP-Adapter` (`ip-adapter-plus_sd15`, `ip-adapter-plus-face_sd15`) | Pesos originales de IP-Adapter Plus y Plus Face para SD 1.5, en PyTorch | safetensors / bin | fp32 (sin cuantizar) | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| `h94/IP-Adapter` (`models/image_encoder`) | Codificador OpenCLIP ViT-H-14 laion2B completo (32 capas) | PyTorch | fp32 | MIT | Hugging Face |
+| IP-Adapter para SDXL / SD3 | Variantes oficiales para modelos base más grandes | safetensors | fp32 | Apache-2.0 | Hugging Face |
 
 Número de parámetros y cifras de rendimiento de las alternativas: no disponibles en la información proporcionada. La diferencia funcional clave frente a los pesos originales es el empaquetado para ONNX Runtime, la cuantización con pérdida medida y el truncado del encoder a 31 capas; a cambio, este repositorio queda atado al esquema Swap v2 y no se puede usar directamente con el pipeline estándar de Diffusers sin volver a convertir.
 
@@ -102,7 +102,7 @@ Número de parámetros y cifras de rendimiento de las alternativas: no disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbrahamPJ/nightmare-ip-adapter
+- Modelo en Hugging Face: https://huggingface.co/AbrahamPJ/nightmare-ip-adapter
 - Perfil del autor: https://huggingface.co/AbrahamPJ
 - Aplicación Nightmare Mobile: https://github.com/AbrahamPaulJ/nightmare-mobile
 - Herramienta de conversión npuforge: https://github.com/AbrahamPaulJ/npuforge

@@ -17,7 +17,7 @@ Su relevancia radica en que cubre un hueco en el ecosistema abierto: un modelo a
 | Parametros activos | Aproximadamente 3 mil millones (inferido de la nomenclatura A3B) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo distribuye pesos en safetensors) |
-| Idiomas soportados | Texto: 119 idiomas; entrada de voz: 19 idiomas; salida de voz: 10 idiomas (los metadatos de HuggingFace indican solo "en") |
+| Idiomas soportados | Texto: 119 idiomas; entrada de voz: 19 idiomas; salida de voz: 10 idiomas (los metadatos de Hugging Face indican solo "en") |
 | Licencia | Apache-2.0 segun metadatos; la model card declara "other" con license_name apache-2.0 (discrepancia a verificar) |
 | Formato de pesos | safetensors (libreria transformers) |
 
@@ -88,7 +88,7 @@ La model card situa explicitamente a Qwen3-Omni como comparable a Gemini 2.5 Pro
 
 - Numero de descargas y likes igual a cero: el repositorio de esta re-subida no tiene traccion ni validacion de la comunidad, lo que anade riesgo de que los pesos no coincidan exactamente con el modelo oficial.
 - Es una re-subida de un modelo oficial; se recomienda contrastar con el repositorio original del equipo Qwen antes de usarlo en produccion.
-- Discrepancia de licencia: los metadatos de HuggingFace indican apache-2.0 y region:us, mientras que la model card declara "other" con license_name apache-2.0. Conviene verificar los terminos exactos antes de uso comercial.
+- Discrepancia de licencia: los metadatos de Hugging Face indican apache-2.0 y region:us, mientras que la model card declara "other" con license_name apache-2.0. Conviene verificar los terminos exactos antes de uso comercial.
 - Discrepancia de idiomas: los metadatos indican unicamente "en", mientras que la model card declara 119 idiomas de texto, 19 de entrada de voz y 10 de salida de voz.
 - Riesgo de alucinacion: inherente a los modelos generativos multimodales; la propia model card reconoce que el captioning de audio tiene riesgo de alucinacion, y por ello se publica un modelo Captioner especifico de bajo nivel de alucinacion.
 - Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible. Los modelos entrenados con datos web y audio diversos pueden heredar sesgos de representacion linguistica, acentual y cultural.
@@ -99,7 +99,7 @@ La model card situa explicitamente a Qwen3-Omni como comparable a Gemini 2.5 Pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace (re-subida): https://huggingface.co/AlexAleman/Qwen3-Omni-30B-A3B-Thinking
+- Repositorio en Hugging Face (re-subida): https://huggingface.co/AlexAleman/Qwen3-Omni-30B-A3B-Thinking
 - Chat de Qwen: https://chat.qwen.ai/
 - Repositorio del equipo Qwen en GitHub: https://github.com/QwenLM/Qwen3-Omni
 - Cookbook de reconocimiento de voz: https://github.com/QwenLM/Qwen3-Omni/blob/main/cookbooks/speech_recognition.ipynb

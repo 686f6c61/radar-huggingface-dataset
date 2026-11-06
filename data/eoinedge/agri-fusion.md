@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eoinedge/agri-fusion es un modelo de fusion de sensores orientado al analisis de causa raiz (root-cause) dentro del paquete `agri` de la plataforma busfusion. Lo publica el usuario eoinedge en HuggingFace. No es un modelo de lenguaje generativo, sino un modelo compacto pensado para ejecutarse en el borde (edge), exportado al formato `.pte` de ExecuTorch con backend XNNPACK, lo que indica un enfoque de inferencia ligera en dispositivos con recursos limitados.
+eoinedge/agri-fusion es un modelo de fusion de sensores orientado al analisis de causa raiz (root-cause) dentro del paquete `agri` de la plataforma busfusion. Lo publica el usuario eoinedge en Hugging Face. No es un modelo de lenguaje generativo, sino un modelo compacto pensado para ejecutarse en el borde (edge), exportado al formato `.pte` de ExecuTorch con backend XNNPACK, lo que indica un enfoque de inferencia ligera en dispositivos con recursos limitados.
 
 El bundle publicado incluye, ademas de los pesos (`model.pte`), ficheros auxiliares como `labels.txt`, `input_shape.txt`, `features.json` y `metrics.json`, lo que sugiere un modelo supervisado de clasificacion o diagnostico a partir de senales de sensores fusionadas. Segun la model card, esta disenado para ejecutarse tanto en la variante Android `obd-sam3-fusion` como en el bucle Linux de busfusion.
 
@@ -76,5 +76,5 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, param
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinedge/agri-fusion
+- Hugging Face: https://huggingface.co/eoinedge/agri-fusion
 - Búsquedas web realizadas: sin resultados relevantes sobre el modelo (los enlaces devueltos correspondian a Google Images, Wikimedia Commons e Imgur y no guardan relacion con el modelo).

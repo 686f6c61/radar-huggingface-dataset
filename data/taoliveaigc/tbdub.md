@@ -73,7 +73,7 @@ No se ha encontrado una comparativa publicada entre TBDub y otros sistemas de do
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TaoLiveAIGC/TBDub
+- Hugging Face: https://huggingface.co/TaoLiveAIGC/TBDub
 - Repositorio GitHub: https://github.com/TaoLiveAIGC/TBDub
 - Perfil de GitHub de TaoLiveAIGC: https://github.com/TaoLiveAIGC/
-- Perfil de HuggingFace de TaoLiveAIGC: https://huggingface.co/TaoLiveAIGC
+- Perfil de Hugging Face de TaoLiveAIGC: https://huggingface.co/TaoLiveAIGC

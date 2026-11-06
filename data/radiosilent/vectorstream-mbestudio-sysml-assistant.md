@@ -65,14 +65,14 @@ El brief de aeronave de tamaño medio no cabía a 32k, por lo que se ejecutó a 
 - VRAM estimada: unos 19 GB en disco para el GGUF Q4_K_M; en una GPU de 16 GB parte del modelo se descarga a CPU.
 - GPU recomendadas: RTX 5080 (referencia del autor, ~60 tokens/s a 24k-32k de contexto), RTX 4090, A100, H100 para ejecución íntegra en GPU.
 - Cabe en GPU de consumo: sí, en tarjetas de 16 GB con descarga parcial a CPU; para ejecución completamente en VRAM se recomienda 24 GB o más.
-- Opciones de despliegue: Ollama (soporte oficial mediante `Modelfile` con renderer `qwen3-coder`), llama.cpp y cualquier runtime compatible con GGUF; los endpoints estándar de HuggingFace son compatibles según los tags.
+- Opciones de despliegue: Ollama (soporte oficial mediante `Modelfile` con renderer `qwen3-coder`), llama.cpp y cualquier runtime compatible con GGUF; los endpoints estándar de Hugging Face son compatibles según los tags.
 - Latencia y throughput: aproximadamente 60 tokens/s en RTX 5080 a contexto de 24k-32k; una ejecución completa de evaluación de tres paquetes puede tardar del orden de 27 minutos en el brief más grande.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MBE-30B | 30,5B totales / 3,3B activos | 32k (64k en MBEstudio) | SysML v2 / MBSE (vía prompt) | Apache 2.0 | GGUF en HuggingFace |
+| MBE-30B | 30,5B totales / 3,3B activos | 32k (64k en MBEstudio) | SysML v2 / MBSE (vía prompt) | Apache 2.0 | GGUF en Hugging Face |
 | Qwen3-Coder-30B-A3B-Instruct | 30,5B totales / 3,3B activos | 256k nativo (según ficha del base) | Código general | Apache 2.0 | Safetensors y GGUF |
 | qwen3:30b | 30B (MoE) | 32k+ | Propósito general | Apache 2.0 | Ollama |
 | gpt-oss:20b | 20B | no disponible | Propósito general | no disponible | Ollama |
@@ -94,7 +94,7 @@ En la evaluación del autor, los tres modelos alternativos terminaron 0 de 4 bri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/radiosilent/vectorstream-mbestudio-sysml-assistant
+- Hugging Face: https://huggingface.co/radiosilent/vectorstream-mbestudio-sysml-assistant
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Cuantización de origen (Unsloth): https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
 - MBEstudio: https://studio.vectorstreamsystems.com

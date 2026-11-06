@@ -84,8 +84,8 @@ La comparativa más directa es con el modelo base Supertonic-3 en su versión fp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q3146dq4/supertonic-3-quant
+- Repositorio Hugging Face: https://huggingface.co/q3146dq4/supertonic-3-quant
 - Modelo base: https://huggingface.co/Supertone/supertonic-3
 - Sitio oficial de Supertonic 3: https://supertonic3.github.io/
-- Demo oficial en HuggingFace Spaces: https://huggingface.co/spaces/Supertone/supertonic-3
+- Demo oficial en Hugging Face Spaces: https://huggingface.co/spaces/Supertone/supertonic-3
 - Repositorio original del autor (Kyumdroid): https://huggingface.co/Kyumdroid/supertonic-3-quant

@@ -89,7 +89,7 @@ La comparativa se basa en datos públicos de los modelos mencionados. Qwen3.8-27
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/Jundot/Qwen3.8-27B-oQ8e-mtp
+- Modelo cuantizado en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ8e-mtp
 - Repositorio del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía completa de Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b
 - Página de Qwen3.8 27B en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-8-27b/

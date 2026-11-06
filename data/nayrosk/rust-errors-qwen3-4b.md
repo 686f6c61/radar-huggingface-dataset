@@ -73,8 +73,8 @@ No se han publicado resultados en benchmarks académicos (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rust-errors-qwen3-4b | ~4,02 B (adaptador sobre Qwen3-4B) | no disponible (entrenado a 4096) | Gana o empata en 20,2 % frente al padre | apache-2.0 | HuggingFace (PEFT y GGUF) |
-| Qwen/Qwen3-4B (base) | ~4,02 B | no disponible | No especializado en errores de Rust | apache-2.0 | HuggingFace |
+| rust-errors-qwen3-4b | ~4,02 B (adaptador sobre Qwen3-4B) | no disponible (entrenado a 4096) | Gana o empata en 20,2 % frente al padre | apache-2.0 | Hugging Face (PEFT y GGUF) |
+| Qwen/Qwen3-4B (base) | ~4,02 B | no disponible | No especializado en errores de Rust | apache-2.0 | Hugging Face |
 | deepseek/deepseek-v4-pro:thinking (padre) | no disponible | no disponible | Referencia de calidad, ~16,7x más caro por petición | no disponible | no disponible |
 
 No se dispone de datos comparativos con otros modelos especializados en asistencia a errores del compilador de Rust en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos comparativos con otros modelos especializados en asistenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nayrosk/rust-errors-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/Nayrosk/rust-errors-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio overbrainer: https://github.com/nayrosk/overbrainer
 - Documentación de overbrainer: https://github.com/nayrosk/overbrainer#readme

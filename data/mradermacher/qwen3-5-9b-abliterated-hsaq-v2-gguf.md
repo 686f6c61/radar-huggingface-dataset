@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF del modelo Qwen3.5-9B-Abliterated-HSAQ-v2, creado por el usuario mradermacher. Se trata de una versión "abliterated" (sin censura) del modelo Qwen3.5-9B, desarrollado por Alibaba. El término "abliterated" indica que se han eliminado los mecanismos de rechazo y las restricciones de seguridad entrenadas en el modelo original, permitiendo que responda a cualquier tipo de petición sin filtros. El modelo base fue publicado por MethodWhite en HuggingFace, y este repositorio ofrece las versiones cuantizadas en formato GGUF para su uso con llama.cpp, Ollama u otros motores compatibles.
+Este repositorio contiene cuantizaciones GGUF del modelo Qwen3.5-9B-Abliterated-HSAQ-v2, creado por el usuario mradermacher. Se trata de una versión "abliterated" (sin censura) del modelo Qwen3.5-9B, desarrollado por Alibaba. El término "abliterated" indica que se han eliminado los mecanismos de rechazo y las restricciones de seguridad entrenadas en el modelo original, permitiendo que responda a cualquier tipo de petición sin filtros. El modelo base fue publicado por MethodWhite en Hugging Face, y este repositorio ofrece las versiones cuantizadas en formato GGUF para su uso con llama.cpp, Ollama u otros motores compatibles.
 
 La relevancia de este modelo radica en que ofrece una alternativa sin censura para desarrolladores que necesitan un LLM local con la capacidad de razonamiento y generación de texto del Qwen3.5-9B, pero sin las restricciones habituales. Sin embargo, esta característica implica un riesgo legal y ético importante, por lo que su uso debe limitarse a entornos controlados y legales. El tamaño real del modelo es de 7.053.783.552 parámetros (aproximadamente 7B), aunque el nombre indica 9B, probablemente por convención del fabricante original. El contexto máximo y otras especificaciones técnicas del modelo base no se han confirmado en la información disponible.
 
@@ -42,7 +42,7 @@ No se dispone de información detallada sobre la arquitectura interna del modelo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta versión GGUF del modelo. El modelo base Qwen3.5-9B tiene resultados conocidos en MMLU, HumanEval y GSM8K, pero no se dispone de ellos en la información proporcionada. Se recomienda consultar la ficha del modelo original en HuggingFace para obtener datos de rendimiento.
+No se han publicado resultados de benchmarks específicos para esta versión GGUF del modelo. El modelo base Qwen3.5-9B tiene resultados conocidos en MMLU, HumanEval y GSM8K, pero no se dispone de ellos en la información proporcionada. Se recomienda consultar la ficha del modelo original en Hugging Face para obtener datos de rendimiento.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativos fiables para esta versión es
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Qwen3.5-9B-Abliterated-HSAQ-v2-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Qwen3.5-9B-Abliterated-HSAQ-v2-GGUF
 - Modelo base (MethodWhite): https://huggingface.co/MethodWhite/Qwen3.5-9B-Abliterated-HSAQ-v2
 - Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Guía de uso del modelo abliterated (en inglés): https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/

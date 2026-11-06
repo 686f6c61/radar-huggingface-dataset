@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `theflyingrahul/qwen3p5-4b-ldt-fulltrain` es un modelo de lenguaje publicado en HuggingFace por el usuario theflyingrahul. Por el nombre del repositorio y la etiqueta de arquitectura declarada (`qwen3_5`), se trata con toda probabilidad de un ajuste fino completo ("full train", es decir, actualizacion de todos los pesos y no un adaptador LoRA) sobre una base de la familia Qwen3.5 de aproximadamente 4B de parametros. El recuento real de parametros en los ficheros safetensors es de 4.539.265.536, lo que confirma un modelo denso de unos 4,54 mil millones de parametros. El sufijo "ldt" no aparece explicado en la informacion disponible, por lo que se desconoce a que dataset, tecnica o dominio corresponde el ajuste.
+El modelo identificado como `theflyingrahul/qwen3p5-4b-ldt-fulltrain` es un modelo de lenguaje publicado en Hugging Face por el usuario theflyingrahul. Por el nombre del repositorio y la etiqueta de arquitectura declarada (`qwen3_5`), se trata con toda probabilidad de un ajuste fino completo ("full train", es decir, actualizacion de todos los pesos y no un adaptador LoRA) sobre una base de la familia Qwen3.5 de aproximadamente 4B de parametros. El recuento real de parametros en los ficheros safetensors es de 4.539.265.536, lo que confirma un modelo denso de unos 4,54 mil millones de parametros. El sufijo "ldt" no aparece explicado en la informacion disponible, por lo que se desconoce a que dataset, tecnica o dominio corresponde el ajuste.
 
 El modelo resuelve, en principio, el mismo tipo de tareas que su base: generacion de texto, razonamiento, codigo y conversacion multi-turno en un rango de tamano que cabe en GPU de consumo con cuantizacion. Su relevancia actual es limitada y de nicho: con 12 descargas y 0 likes en el momento de la consulta, es un experimento personal de ajuste fino mas que un modelo con adopcion comunitaria o validacion externa. No hay tarjeta de modelo sustantiva, ni pipeline declarado, ni licencia, ni idiomas especificados.
 
@@ -97,7 +97,7 @@ Como referencia de categoria, existen modelos densos de 3-4B de uso comun (famil
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theflyingrahul/qwen3p5-4b-ldt-fulltrain
-- Perfil del autor en HuggingFace: https://huggingface.co/theflyingrahul
+- Repositorio en Hugging Face: https://huggingface.co/theflyingrahul/qwen3p5-4b-ldt-fulltrain
+- Perfil del autor en Hugging Face: https://huggingface.co/theflyingrahul
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

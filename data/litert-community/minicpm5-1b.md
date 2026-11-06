@@ -128,7 +128,7 @@ Frente a estas alternativas, MiniCPM5-1B destaca por combinar el menor numero de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/litert-community/MiniCPM5-1B
+- Repositorio en Hugging Face: https://huggingface.co/litert-community/MiniCPM5-1B
 - Modelo base en BF16: https://huggingface.co/openbmb/MiniCPM5-1B
 - Repositorio GitHub de MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Documentacion de LiteRT: https://ai.google.dev/edge/litert

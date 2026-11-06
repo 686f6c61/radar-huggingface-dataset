@@ -80,8 +80,8 @@ La comparacion relevante es contra el propio modelo base, ya que el artefacto es
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-FP8 (base) | 35B | 3B | No disponible | Apache-2.0 | HuggingFace |
-| Prismyra decision LoRA (este adaptador) | 19,2M adicionales (250 modulos) | No altera el enrutado | No disponible | Apache-2.0 | HuggingFace, 0 descargas |
+| Qwen3.6-35B-A3B-FP8 (base) | 35B | 3B | No disponible | Apache-2.0 | Hugging Face |
+| Prismyra decision LoRA (este adaptador) | 19,2M adicionales (250 modulos) | No altera el enrutado | No disponible | Apache-2.0 | Hugging Face, 0 descargas |
 | Otros adaptadores comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ La comparacion relevante es contra el propio modelo base, ya que el artefacto es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/littlemex/prismyra-decision-lora-qwen3.6-35b-a3b
+- Modelo en Hugging Face: https://huggingface.co/littlemex/prismyra-decision-lora-qwen3.6-35b-a3b
 - Discusiones del modelo: https://huggingface.co/littlemex/prismyra-decision-lora-qwen3.6-35b-a3b/discussions
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Repositorio de Prismyra: https://github.com/littlemex/Prismyra

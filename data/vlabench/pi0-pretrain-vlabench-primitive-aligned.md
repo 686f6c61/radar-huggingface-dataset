@@ -71,6 +71,6 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/VLABench/pi0-pretrain-vlabench-primitive-aligned
+- Repositorio de Hugging Face: https://huggingface.co/VLABench/pi0-pretrain-vlabench-primitive-aligned
 - Paper de VLABench: arXiv:2412.18194 (https://arxiv.org/abs/2412.18194)
 - Repositorio OpenPI (fork utilizado): https://github.com/Shiduo-zh/openpi

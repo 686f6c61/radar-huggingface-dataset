@@ -97,8 +97,8 @@ La comparativa con modelos propietarios de la misma categoría (GPT 5.6 Sol, Opu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GautamHirawat/Qwen3.8-2.4T-A95B
-- Repositorio oficial de Qwen en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+- Repositorio Hugging Face: https://huggingface.co/GautamHirawat/Qwen3.8-2.4T-A95B
+- Repositorio oficial de Qwen en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Página del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Recetas de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B

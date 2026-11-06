@@ -28,9 +28,9 @@ La relevancia del modelo es, por tanto, metodológica más que de escala: docume
 | Entrada del modelo (tras `run.py`) | DataFrame de 56 columnas (`(n, 56)`) |
 | Salida | `Fall` si `P(Fall) >= 0.70`, en caso contrario `Normal` |
 | Libreria | xgboost |
-| Tamano del repositorio | 0,0 GB segun HuggingFace (redondeado; el tamano exacto del artefacto no esta disponible) |
+| Tamano del repositorio | 0,0 GB segun Hugging Face (redondeado; el tamano exacto del artefacto no esta disponible) |
 | Fecha de referencia de la model card | 2026-09-21 |
-| Fecha de creacion en HuggingFace | 2026-09-23 |
+| Fecha de creacion en Hugging Face | 2026-09-23 |
 | Ultima actualizacion | 2026-09-23 |
 | Descargas / likes | 0 / 0 |
 
@@ -87,7 +87,7 @@ Advertencia sobre los datos: la model card presenta dos cifras distintas para el
 - VRAM para inferencia: no disponible. El modelo es un clasificador tabular de gradient boosting, por lo que la inferencia puede ejecutarse en CPU; no se documenta ningún requisito de GPU para la etapa de clasificación.
 - GPU recomendadas: no aplica para la etapa XGBoost. La GPU (o un acelerador equivalente) es relevante para el componente upstream YOLO26x-Pose, cuyos requisitos no se detallan en el repositorio.
 - Encaje en GPU de consumo: la clasificación en sí no requiere GPU; cualquier equipo capaz de ejecutar el estimador de pose puede alojar también el clasificador.
-- Tamano del artefacto: el repositorio ocupa 0,0 GB segun HuggingFace, lo que sitúa el fichero `.pkl` por debajo de las centésimas de gigabyte. El tamano exacto no está disponible.
+- Tamano del artefacto: el repositorio ocupa 0,0 GB segun Hugging Face, lo que sitúa el fichero `.pkl` por debajo de las centésimas de gigabyte. El tamano exacto no está disponible.
 - Opciones de despliegue: el repositorio describe un script propio, `scripts/run.py`, que construye el DataFrame de 56 columnas y llama a `XGBoost.predict_proba`. No se mencionan vLLM, llama.cpp, Ollama, TGI ni ningún servidor de inferencia de LLM, y ninguno de ellos aplica a este modelo.
 - Dependencias de despliegue: un entorno de Python con `xgboost` y `pandas` para el clasificador, más el pipeline upstream de YOLO26x-Pose que entrega las 51 features y el bounding box.
 - Latencia y throughput: no disponibles.
@@ -99,14 +99,14 @@ No se dispone de informacion sobre modelos comparables de terceros en la documen
 
 | Modelo | Entrada | Exactitud test estandar | Exactitud CCTV real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `select-ai/fall-detection` (56 features) | 51 keypoints + bbox, con 5 features derivadas en `run.py` | 91,00 % | 92,67 % (frente a 88,36 %+ en otro apartado de la card) | no disponible | Repositorio HuggingFace, marcado como interno y experimental |
+| `select-ai/fall-detection` (56 features) | 51 keypoints + bbox, con 5 features derivadas en `run.py` | 91,00 % | 92,67 % (frente a 88,36 %+ en otro apartado de la card) | no disponible | Repositorio Hugging Face, marcado como interno y experimental |
 | Baseline de keypoints crudos (descrito en la misma model card) | Coordenadas de keypoints sin ingenieria de caracteristicas | 92,22 % | 66,83 % | no disponible | No se publica como artefacto independiente |
 | Otros clasificadores de deteccion de caidas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Estado experimental: la propia model card etiqueta el modelo como "experimantal" (sic) y como version `v1` de un "Experiment 01". No debe tratarse como un componente validado para produccion sin una evaluacion propia.
-- Visibilidad interna: el repositorio se declara "internal", aunque es accesible publicamente en HuggingFace. Conviene confirmar con el autor si el artefacto y el codigo asociado pueden reutilizarse.
+- Visibilidad interna: el repositorio se declara "internal", aunque es accesible publicamente en Hugging Face. Conviene confirmar con el autor si el artefacto y el codigo asociado pueden reutilizarse.
 - Licencia no especificada: al no indicarse licencia, no hay autorizacion explicita para uso comercial, modificacion ni redistribucion. Es un bloqueo juridico relevante para cualquier despliegue en produccion.
 - Dependencia de un componente upstream no incluido: el rendimiento real depende por completo del estimador YOLO26x-Pose, que queda fuera del alcance del repositorio y no esta versionado ni evaluado aqui. Un cambio de version del extractor de pose invalida las metricas reportadas.
 - Riesgo de falsos negativos y falsos positivos: es un clasificador binario sobre un umbral fijo de 0,70. No se documentan la matriz de confusion completa, la sensibilidad (recall) ni el area bajo la curva ROC, por lo que no puede evaluarse el equilibrio entre ambos tipos de error.
@@ -122,7 +122,7 @@ No se dispone de informacion sobre modelos comparables de terceros en la documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/select-ai/fall-detection
+- Modelo en Hugging Face: https://huggingface.co/select-ai/fall-detection
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible (se menciona `scripts/run.py` y `models/xgboost_priority1_fall_model.pkl`, pero sin URL publica)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rodrig-obarbo/multitask-notes es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada Coca, orientada a tareas multitarea. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card indica explícitamente que model.safetensors es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye además el código Python (pipeline.py), la configuración de arquitectura (config.json) y la receta de entrenamiento por defecto (training_args.json).
+rodrig-obarbo/multitask-notes es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada Coca, orientada a tareas multitarea. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card indica explícitamente que model.safetensors es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye además el código Python (pipeline.py), la configuración de arquitectura (config.json) y la receta de entrenamiento por defecto (training_args.json).
 
 El recuento real de parámetros almacenados en el fichero safetensors es de 33.088, una cifra muy alejada de lo que suele asociarse a la escala "large" declarada en la configuración. Esta discrepancia es relevante para cualquier evaluador: el artefacto publicado no permite inferencia útil sobre tareas reales, sino que sirve como punto de partida reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
@@ -22,7 +22,7 @@ Su relevancia actual es, por tanto, metodológica más que funcional: resulta ú
 | Formato de pesos | safetensors (junto con pipeline.py, config.json y training_args.json) |
 | Escala declarada | large (segun config.json) |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No disponible. No se han proporcionado en la información datos de modelos compa
 - No ofrece ninguna capacidad de generación, razonamiento o clasificación utilizable en producción.
 - El recuento real de 33.088 parámetros contradice la etiqueta de escala "large", lo que puede inducir a error si se selecciona el modelo por su nombre o configuración.
 - No se declara ningún idioma soportado, por lo que no puede asumirse cobertura multilingüe ni siquiera monolingüe.
-- No se documenta la longitud de contexto, ni tipos de cuantización, ni pipeline de HuggingFace asociado.
+- No se documenta la longitud de contexto, ni tipos de cuantización, ni pipeline de Hugging Face asociado.
 - Riesgo de alucinación: no aplica en el sentido habitual, ya que el modelo no genera texto; el riesgo real es interpretar este repositorio como un modelo funcional.
 - Restricciones de licencia: los pesos y el código se publican bajo apache-2.0, que permite uso comercial, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen si se combina con datasets externos.
 - Sin resultados de benchmark, no existe base objetiva para comparar su rendimiento con ninguna alternativa.
@@ -83,5 +83,5 @@ No disponible. No se han proporcionado en la información datos de modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rodrig-obarbo/multitask-notes
+- Hugging Face: https://huggingface.co/rodrig-obarbo/multitask-notes
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

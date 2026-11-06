@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Removesurgery/american-football_player_detection` es un repositorio publicado en HuggingFace por el usuario Removesurgery bajo licencia AGPL-3.0. Por el identificador se deduce que su proposito seria la deteccion de jugadores de futbol americano en imagenes o video, pero se trata unicamente de una inferencia a partir del nombre: la model card esta vacia (solo contiene la linea `license: agpl-3.0`) y no incluye descripcion, arquitectura ni instrucciones de uso.
+`Removesurgery/american-football_player_detection` es un repositorio publicado en Hugging Face por el usuario Removesurgery bajo licencia AGPL-3.0. Por el identificador se deduce que su proposito seria la deteccion de jugadores de futbol americano en imagenes o video, pero se trata unicamente de una inferencia a partir del nombre: la model card esta vacia (solo contiene la linea `license: agpl-3.0`) y no incluye descripcion, arquitectura ni instrucciones de uso.
 
 El repositorio no aporta ninguna especificacion tecnica verificable. El tamano declarado es de 0.0 GB, no tiene pipeline asignado, no registra descargas ni likes (0 en ambos casos) y los idiomas soportados no estan indicados. El hecho de que el tamano sea de 0.0 GB sugiere que no se han subido pesos al repositorio, aunque no es posible confirmarlo con los datos disponibles.
 
@@ -99,11 +99,11 @@ Las familias de detectores que serian comparables por tarea (YOLO, Faster R-CNN,
 - Limitaciones de contexto o idioma: no disponible.
 - Restricciones de licencia: la AGPL-3.0 es una licencia copyleft fuerte. Si el modelo se ofrece a traves de un servicio en red, la licencia obliga a poner a disposicion de los usuarios el codigo fuente correspondiente, incluida la obra derivada. Esto puede ser incompatible con productos propietarios o servicios SaaS cerrados. Conviene revisar la compatibilidad con la politica legal de la organizacion antes de cualquier uso comercial.
 - Caveat de produccion: no debe desplegarse ningun sistema basado en este repositorio sin antes verificar que existen pesos, que la licencia es adecuada para el caso de uso y que el rendimiento ha sido medido en un conjunto de validacion propio.
-- Advertencia sobre los metadatos: las fechas de creacion y actualizacion registradas (2026-09-14) son posteriores a la fecha habitual de publicacion de modelos en HuggingFace; conviene verificar la integridad y el origen del repositorio antes de descargar cualquier artefacto.
+- Advertencia sobre los metadatos: las fechas de creacion y actualizacion registradas (2026-09-14) son posteriores a la fecha habitual de publicacion de modelos en Hugging Face; conviene verificar la integridad y el origen del repositorio antes de descargar cualquier artefacto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Removesurgery/american-football_player_detection
+- Repositorio en Hugging Face: https://huggingface.co/Removesurgery/american-football_player_detection
 - Perfil del autor: https://huggingface.co/Removesurgery
 - Texto de la licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no devolvio ningun resultado relacionado con el modelo.

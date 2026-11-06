@@ -4,7 +4,7 @@
 
 El modelo `Eddy-Emmanuel/trocr-large-handwritten-road` es un fine-tune del modelo `microsoft/trocr-large-handwritten`, un sistema de reconocimiento óptico de caracteres (OCR) de imagen a texto basado en arquitectura Transformer. El nombre sugiere que ha sido ajustado para el reconocimiento de texto manuscrito en contextos de carreteras o señalización vial, aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni el proceso de ajuste.
 
-El modelo fue subido por el usuario Eddy-Emmanuel, que también ha publicado otros fine-tunes de la familia TrOCR (por ejemplo, `trocr-base-handwritten`). La ficha de HuggingFace está prácticamente vacía: no incluye licencia, idiomas, pipeline ni información de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que puede estar incompleto o que los pesos no se han subido correctamente.
+El modelo fue subido por el usuario Eddy-Emmanuel, que también ha publicado otros fine-tunes de la familia TrOCR (por ejemplo, `trocr-base-handwritten`). La ficha de Hugging Face está prácticamente vacía: no incluye licencia, idiomas, pipeline ni información de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que puede estar incompleto o que los pesos no se han subido correctamente.
 
 A pesar de la falta de documentación, el modelo se basa en la arquitectura TrOCR original, que combina un encoder de visión (ViT-Large) con un decoder de texto (Transformer), y fue entrenado sobre el dataset IAM para manuscritos. Sin embargo, cualquier afirmación sobre el rendimiento específico de esta variante "road" debe tomarse con cautela, ya que no hay datos verificables.
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: no disponible para esta variante. El modelo base con 334 millones de parametros en FP32 requiere aproximadamente 1.3 GB de VRAM solo para los pesos; con cuantizacion a int8, alrededor de 0.7 GB. Para inferencia con imagenes, se necesita memoria adicional para el encoder de vision.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo base en FP16 (por ejemplo, RTX 3050, GTX 1660). Para mayor velocidad, se recomienda una RTX 3090 o A100.
 - Si cabe en consumer GPU: si, en la mayoria de GPUs modernas con 6 GB o mas, siempre que se use cuantizacion o precision mixta.
-- Opciones de despliegue: el modelo es compatible con la libreria `transformers` de HuggingFace, por lo que puede servirse con TGI, vLLM (si se adapta) o mediante un pipeline de `VisionEncoderDecoderModel`. Tambien se puede exportar a ONNX o TensorRT.
+- Opciones de despliegue: el modelo es compatible con la libreria `transformers` de Hugging Face, por lo que puede servirse con TGI, vLLM (si se adapta) o mediante un pipeline de `VisionEncoderDecoderModel`. Tambien se puede exportar a ONNX o TensorRT.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento (IAM CER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `trocr-large-handwritten` (Microsoft) | ~334M | 512 | 4.21% | MIT (no confirmado en este repo) | HuggingFace |
-| `trocr-base-handwritten` (Microsoft) | ~230M | 512 | 5.29% | MIT (no confirmado) | HuggingFace |
-| `Eddy-Emmanuel/trocr-large-handwritten-road` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `trocr-large-handwritten` (Microsoft) | ~334M | 512 | 4.21% | MIT (no confirmado en este repo) | Hugging Face |
+| `trocr-base-handwritten` (Microsoft) | ~230M | 512 | 5.29% | MIT (no confirmado) | Hugging Face |
+| `Eddy-Emmanuel/trocr-large-handwritten-road` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa se basa en datos publicos del modelo base. No hay informacion suficiente para comparar directamente el rendimiento de esta variante con otras.
 

@@ -104,8 +104,8 @@ Frente a Qwen3-30B-A3B-Thinking-2507, GLM-4.7-Flash mejora de forma sustancial e
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF de Unsloth): https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-4.7-Flash
+- Repositorio Hugging Face (GGUF de Unsloth): https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Guia de Unsloth para GLM-4.7-Flash: https://unsloth.ai/docs/models/glm-4.7-flash
 - Documentacion de Unsloth Dynamic 2.0 GGUF: https://docs.unsloth.ai/basics/unsloth-dynamic-v2.0-gguf
 - Repositorio de Unsloth en GitHub: https://github.com/unslothai/unsloth

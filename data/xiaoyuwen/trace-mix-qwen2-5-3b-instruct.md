@@ -77,7 +77,7 @@ La diferencia clave es que TRACE-Mix esta especializado en generar ataques, mien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XiaoyuWen/TRACE-Mix-Qwen2.5-3B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/XiaoyuWen/TRACE-Mix-Qwen2.5-3B-Instruct
 - Pagina del proyecto TRACE: https://huggingface.co/XiaoyuWen/TRACE
 - Paper (arXiv): https://arxiv.org/abs/2605.08778
 - Codigo (GitHub): https://github.com/xsddys/TRACE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Point-and-Play es un sistema de síntesis musical y clonación de timbre, publicado en HuggingFace por el usuario User-tian como parte de una release de código abierto. El modelo resuelve un problema concreto: generar notas musicales sintetizadas con el timbre extraído de una grabación de audio de referencia. Para ello combina un extractor de timbre ligero y un decodificador que sintetiza notas condicionadas por ese timbre, junto con parámetros como la etiqueta de instrumento, las alturas (pitches) y la velocidad.
+Point-and-Play es un sistema de síntesis musical y clonación de timbre, publicado en Hugging Face por el usuario User-tian como parte de una release de código abierto. El modelo resuelve un problema concreto: generar notas musicales sintetizadas con el timbre extraído de una grabación de audio de referencia. Para ello combina un extractor de timbre ligero y un decodificador que sintetiza notas condicionadas por ese timbre, junto con parámetros como la etiqueta de instrumento, las alturas (pitches) y la velocidad.
 
 La release no distribuye un modelo de lenguaje ni un transformer generativo de texto, sino pesos para una librería propia, `point-and-play`, organizados en tres ficheros: un codificador de timbre de 16 MB basado en adaptadores LoRA sobre el audio tower HTSAT-base de music-CLAP más una cabeza CGSP, y dos decodificadores de 1,8 GB cada uno (`matched_decoder.pt` y `neutral_decoder.pt`) entrenados como sintetizadores de notas con pesos EMA. La etiqueta del repositorio indica el uso de flow matching en el decodificador.
 
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/User-tian/Point-and-Play
+- Hugging Face: https://huggingface.co/User-tian/Point-and-Play
 - Repositorio de codigo en GitHub: https://github.com/User-tian/Point-and-Play
 - Pagina de ejemplos de audio (demo): https://user-tian.github.io/PAP_demo/

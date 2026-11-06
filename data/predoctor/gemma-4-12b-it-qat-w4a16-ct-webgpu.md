@@ -81,7 +81,7 @@ La diferencia principal entre el paquete de PreDoctor y las versiones de Google 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PreDoctor/gemma-4-12B-it-qat-w4a16-ct-webgpu
+- Repositorio Hugging Face: https://huggingface.co/PreDoctor/gemma-4-12B-it-qat-w4a16-ct-webgpu
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Modelo QAT w4a16 de Google (referencia): https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

@@ -72,8 +72,8 @@ La model card indica que este es el baseline con el que se comparan los demas es
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| boundary-markers-ru-d12-plain-mingram (este) | no disponible (12 capas, anchura 768) | 2.048 tokens | BpB de validacion 0,54900 / 0,54928 / 0,54943 (semillas 0, 1, 2) en ruso | Apache-2.0 | Pesos `.pt` y tokenizador en HuggingFace |
-| Otros brazos del mismo estudio (tokenizadores con marcadores de frontera, ruso) | misma arquitectura | 2.048 tokens | Comparacion completa en script_tok; no detallada en la model card | Apache-2.0 (segun la model card de este brazo) | Pesos en HuggingFace, repositorios del autor |
+| boundary-markers-ru-d12-plain-mingram (este) | no disponible (12 capas, anchura 768) | 2.048 tokens | BpB de validacion 0,54900 / 0,54928 / 0,54943 (semillas 0, 1, 2) en ruso | Apache-2.0 | Pesos `.pt` y tokenizador en Hugging Face |
+| Otros brazos del mismo estudio (tokenizadores con marcadores de frontera, ruso) | misma arquitectura | 2.048 tokens | Comparacion completa en script_tok; no detallada en la model card | Apache-2.0 (segun la model card de este brazo) | Pesos en Hugging Face, repositorios del autor |
 | nanochat d12 original (karpathy) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Entrenado sobre datos en ingles; no comparable con los BpB en ruso | no indicada en la informacion proporcionada | Repositorio publico de nanochat |
 
 Los valores de BpB solo son comparables dentro del mismo idioma, por lo que no se pueden contrastar con modelos en ingles. No se dispone de datos de benchmarks de modelos externos en la informacion proporcionada.
@@ -92,7 +92,7 @@ Los valores de BpB solo son comparables dentro del mismo idioma, por lo que no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ru-d12-plain-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ru-d12-plain-mingram
 - Articulo: Explicit Boundary Markers for Subword Vocabularies (Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Repositorio script_tok (codigo de tokenizacion y comparacion entre esquemas): https://github.com/sanderland/script_tok
 - Repositorio nanochat (implementacion de entrenamiento, commit `92d63d4`): https://github.com/karpathy/nanochat

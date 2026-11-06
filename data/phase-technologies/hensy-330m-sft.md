@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Pesos estándar (llama.cpp / vLLM) | Benchmarks publicados |
 |---|---|---|---|---|---|---|
 | Hensy-330M-SFT | 328,5 M (denso) | no disponible | Apache 2.0 | en | No (código y tokenizer propios) | No |
-| SmolLM2-360M (HuggingFace) | 361 M (denso) | 8.192 tokens (según su model card) | Apache 2.0 | en (multilingüe parcial) | Sí (GGUF, Transformers, vLLM) | Sí |
+| SmolLM2-360M (Hugging Face) | 361 M (denso) | 8.192 tokens (según su model card) | Apache 2.0 | en (multilingüe parcial) | Sí (GGUF, Transformers, vLLM) | Sí |
 | Qwen2.5-0.5B (Alibaba) | 0,49 B (denso) | 32.768 tokens | Apache 2.0 | multilingüe (incluye español) | Sí (GGUF, AWQ, Transformers, vLLM) | Sí |
 | Pythia-410M (EleutherAI) | 410 M (denso) | 2.048 tokens | Apache 2.0 | en | Sí (Transformers, GGUF comunitario) | Sí |
 
@@ -85,7 +85,7 @@ La diferencia práctica principal no es el tamaño, sino el ecosistema: los tres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phase-Technologies/hensy-330m-sft
+- Modelo en Hugging Face: https://huggingface.co/Phase-Technologies/hensy-330m-sft
 - Modelo base (preentrenamiento): https://huggingface.co/Phase-Technologies/hensy-330m-pretrain
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 - Google Colab (entorno sugerido por el autor): https://colab.research.google.com/

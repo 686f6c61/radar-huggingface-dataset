@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: al ser un adaptador LoRA de 0.2 GB, la carga adicional sobre el modelo base es minima. El modelo base de 9B en BF16 requiere aproximadamente 18 GB de VRAM solo para los pesos; con el adaptador, la memoria total dependera del framework de inferencia.
 - GPU recomendadas: para el modelo base de 9B en BF16, una GPU con al menos 24 GB de VRAM (RTX 3090/4090, A10G, L4) es suficiente para inferencia con batch pequeno. Para produccion con mayor throughput, se recomienda A100 (40/80 GB) o H100.
 - En consumer GPU: cabe en RTX 3090/4090 (24 GB) con cuantizacion del modelo base, aunque el adaptador esta disenado para BF16. Se puede cuantizar el base a 8 o 4 bits y cargar el adaptador LoRA, pero no esta garantizado por el autor.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede servir con HuggingFace Transformers + PEFT, vLLM (con soporte para LoRA), o TGI. Tambien es posible usar llama.cpp si se fusiona el adaptador con el base y se convierte a GGUF, aunque no se proporcionan instrucciones.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede servir con Hugging Face Transformers + PEFT, vLLM (con soporte para LoRA), o TGI. Tambien es posible usar llama.cpp si se fusiona el adaptador con el base y se convierte a GGUF, aunque no se proporcionan instrucciones.
 - Latencia y throughput: no disponibles. Dependen del hardware, el framework y el tamano del contexto.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v7-grounded-generation
+- Hugging Face del adaptador: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v7-grounded-generation
 - Modelo base: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b
 - Adaptador previo (v5): https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v5-remediation
 - Adaptador base (v1): https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft

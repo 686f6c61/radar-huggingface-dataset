@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kishida/jwenv-1.7b-poc-gguf` es un modelo de clasificación derivado por ajuste fino de `Qwen/Qwen3-1.7B`, publicado por el usuario kishida en HuggingFace bajo licencia MIT y distribuido en formato GGUF. No es un modelo de propósito general: su tarea es responder preguntas de elección múltiple devolviendo, como salida, la distribución de probabilidad sobre los tokens correspondientes a las etiquetas de las opciones (A hasta H, ocho alternativas como máximo). El autor lo describe como un modelo que "se comporta como Jev", en referencia a un formato de concurso de preguntas y respuestas.
+`kishida/jwenv-1.7b-poc-gguf` es un modelo de clasificación derivado por ajuste fino de `Qwen/Qwen3-1.7B`, publicado por el usuario kishida en Hugging Face bajo licencia MIT y distribuido en formato GGUF. No es un modelo de propósito general: su tarea es responder preguntas de elección múltiple devolviendo, como salida, la distribución de probabilidad sobre los tokens correspondientes a las etiquetas de las opciones (A hasta H, ocho alternativas como máximo). El autor lo describe como un modelo que "se comporta como Jev", en referencia a un formato de concurso de preguntas y respuestas.
 
 Técnicamente se apoya en la arquitectura transformer densa de Qwen3-1.7B, con 1.720.574.976 parámetros totales y un repositorio de 1,8 GB, lo que corresponde a la cuantización Q8_0 publicada (`jwenv-1.7b-poc-q8_0.gguf`). El modelo se invoca con una plantilla ChatML propia de Qwen (`<|im_start|>user ... <|im_end|><|im_start|>assistant`) que admite un campo opcional de contexto de fondo y una pregunta con sus opciones; la respuesta esperada es una única letra.
 
@@ -38,7 +38,7 @@ No hay información disponible sobre el dataset de entrenamiento: se desconoce e
 - Acepta un contexto de fondo opcional antes de la pregunta, útil para preguntas que dependen de un texto previo.
 - Formato de conversación compatible con la plantilla ChatML de Qwen3 (`<|im_start|>user` / `<|im_start|>assistant`).
 - Plantilla preparada con bloque `<think></think>`, aunque no se documenta un modo de razonamiento explícito funcional.
-- Ejecución local mediante llama.cpp y demo interactiva en el navegador a través de un Space de HuggingFace.
+- Ejecución local mediante llama.cpp y demo interactiva en el navegador a través de un Space de Hugging Face.
 - No hay evidencia de soporte de tool calling, function calling, uso como agente ni razonamiento multi-paso.
 - Capacidades multilingües no documentadas; no se declara lista de idiomas soportados.
 
@@ -89,7 +89,7 @@ La comparación directa de rendimiento no es posible porque no hay benchmarks pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kishida/jwenv-1.7b-poc-gguf
+- Modelo en Hugging Face: https://huggingface.co/kishida/jwenv-1.7b-poc-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Demo en el navegador (Space del autor): https://huggingface.co/spaces/kishida/jwenv-demo
 - Fichero cuantizado Q8_0: https://huggingface.co/kishida/jwenv-1.7b-poc-gguf/blob/main/jwenv-1.7b-poc-q8_0.gguf

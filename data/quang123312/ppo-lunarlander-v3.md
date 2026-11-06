@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`quang123312/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario de HuggingFace `quang123312` como parte de un curso de deep reinforcement learning, con una implementación propia del algoritmo. No es un modelo de lenguaje: es una política neuronal que controla la nave del simulador LunarLander, un entorno de control continuo con observaciones de 8 dimensiones y acciones discretas.
+`quang123312/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario de Hugging Face `quang123312` como parte de un curso de deep reinforcement learning, con una implementación propia del algoritmo. No es un modelo de lenguaje: es una política neuronal que controla la nave del simulador LunarLander, un entorno de control continuo con observaciones de 8 dimensiones y acciones discretas.
 
 El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos no se han subido o son de tamaño despreciable. El autor declara un entrenamiento de 50.000 timesteps totales, una cifra muy baja para este entorno, y reporta un `mean_reward` de -167.44 ± 131.04, un resultado claramente negativo que indica que la política no ha convergido hacia una solución competente (el umbral de resolución de LunarLander se sitúa típicamente en 200 puntos).
 
@@ -43,7 +43,7 @@ El entrenamiento declarado es de 50.000 timesteps sobre el entorno `LunarLander-
 - Análisis de fallos en RL: el retorno negativo (-167.44) es un caso de estudio útil para diagnosticar problemas de convergencia, como *reward shaping* insuficiente o hiperparámetros mal ajustados.
 - Evaluación de infraestructura de RL: al ser un entorno ligero, se puede usar para probar pipelines de entrenamiento distribuido, *logging* y evaluación sin coste computacional relevante.
 - Benchmarking de algoritmos: comparar PPO con alternativas como A2C, SAC o DQN en LunarLander-v3 bajo el mismo presupuesto de timesteps.
-- Demostración educativa de HuggingFace Hub: ilustra cómo publicar un agente de RL con `model-index` y metadatos de evaluación.
+- Demostración educativa de Hugging Face Hub: ilustra cómo publicar un agente de RL con `model-index` y metadatos de evaluación.
 
 ## Benchmarks y rendimiento
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento verificados de las alternativas en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quang123312/ppo-LunarLander-v3
+- Hugging Face: https://huggingface.co/quang123312/ppo-LunarLander-v3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Documentación de Stable-Baselines3 PPO (referencia del algoritmo): https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
 - Repositorio de Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3

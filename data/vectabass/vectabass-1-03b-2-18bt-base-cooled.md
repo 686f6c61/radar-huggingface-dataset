@@ -95,9 +95,9 @@ La comparación con Llama 3.2 1B y Qwen2.5 1.5B es la más directa por rango de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-1.03b-2.18bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-1.03b-2.18bt-base-cooled
 - Paper de Isambard-AI (McIntosh-Smith, Alam y Woods, 2024): https://doi.org/10.48550/arXiv.2410.11199
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath
-- Archivos de procedencia y datos del repositorio (`DATA.md`, `provenance.json`): disponibles en el propio repositorio de HuggingFace
+- Archivos de procedencia y datos del repositorio (`DATA.md`, `provenance.json`): disponibles en el propio repositorio de Hugging Face

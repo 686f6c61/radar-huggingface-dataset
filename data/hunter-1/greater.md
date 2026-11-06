@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hunter-1/greater es un repositorio publicado en HuggingFace por el usuario Hunter-1 bajo licencia Apache 2.0. En el momento del analisis, la model card no describe un modelo entrenado ni publicado, sino una intencion de desarrollo: el autor indica que "sera un TTS personalizado o un LLM sin censura de aproximadamente 6B basado en Qwen o Gemma". No se especifica cual de las dos opciones se implementara, ni existe informacion sobre pesos, tokenizador, configuracion o datos de entrenamiento.
+Hunter-1/greater es un repositorio publicado en Hugging Face por el usuario Hunter-1 bajo licencia Apache 2.0. En el momento del analisis, la model card no describe un modelo entrenado ni publicado, sino una intencion de desarrollo: el autor indica que "sera un TTS personalizado o un LLM sin censura de aproximadamente 6B basado en Qwen o Gemma". No se especifica cual de las dos opciones se implementara, ni existe informacion sobre pesos, tokenizador, configuracion o datos de entrenamiento.
 
 El repositorio no presenta descargas ni likes, fue creado y actualizado el 27 de octubre de 2026 con apenas minuto y medio de diferencia, y no incluye pipeline declarado, idiomas soportados ni archivos de modelo referenciados en la informacion disponible. Se trata, por tanto, de un placeholder o anuncio de proyecto mas que de un modelo evaluable.
 
@@ -80,5 +80,5 @@ No se dispone de datos de benchmarks del modelo analizado para comparar rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hunter-1/greater
+- Repositorio en Hugging Face: https://huggingface.co/Hunter-1/greater
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

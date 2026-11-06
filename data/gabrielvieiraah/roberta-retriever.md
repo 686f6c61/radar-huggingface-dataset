@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gabrielvieiraah/roberta-retriever` en HuggingFace no contiene un modelo de lenguaje entrenado, sino un documento de análisis (`analysis.md`) sobre un paper académico en el campo de la inteligencia artificial encarnada (embodied AI). El autor, gabrielvieiraah, ha publicado este repositorio con una licencia CC-BY-4.0, pero no proporciona pesos, arquitectura ni artefactos de modelo utilizables.
+El repositorio `gabrielvieiraah/roberta-retriever` en Hugging Face no contiene un modelo de lenguaje entrenado, sino un documento de análisis (`analysis.md`) sobre un paper académico en el campo de la inteligencia artificial encarnada (embodied AI). El autor, gabrielvieiraah, ha publicado este repositorio con una licencia CC-BY-4.0, pero no proporciona pesos, arquitectura ni artefactos de modelo utilizables.
 
 El nombre del repositorio sugiere una relación con RoBERTa, el modelo encoder-only de Meta AI que optimiza el preentrenamiento de BERT, pero no hay evidencia de que este repositorio contenga un adaptador, un retriever o cualquier componente entrenado. El contenido se limita a un documento de texto con formato de paper ICML, estilo de citación con notas al pie, y estructura intro-problema-solución-validación-futuro.
 
@@ -62,7 +62,7 @@ No disponible. No existe un modelo comparable en el repositorio, ya que no se tr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gabrielvieiraah/roberta-retriever
+- Repositorio en Hugging Face: https://huggingface.co/gabrielvieiraah/roberta-retriever
 - Documentación de RoBERTa en Transformers: https://huggingface.co/docs/transformers/model_doc/roberta
 - Modelo RoBERTa-large original: https://huggingface.co/FacebookAI/roberta-large
 - Descripción general de RoBERTa (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/

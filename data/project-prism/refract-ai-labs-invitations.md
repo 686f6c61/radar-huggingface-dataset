@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como Project-Prism/REFRACT-AI-LABS-INVITATIONS aparece publicado en HuggingFace por el usuario Project-Prism, con fecha de creacion y ultima actualizacion del 27 de septiembre de 2026. La informacion disponible no permite confirmar que se trate de un modelo de lenguaje: el identificador, la ausencia de pipeline declarado y la carencia total de especificaciones tecnicas sugieren que podria tratarse de un repositorio auxiliar (por ejemplo, un contenedor de artefactos o invitaciones) en lugar de un modelo desplegable. El unico dato funcional presente en la model card es una licencia personalizada denominada "yeah-cool", declarada bajo la etiqueta generica `license: other`.
+El repositorio identificado como Project-Prism/REFRACT-AI-LABS-INVITATIONS aparece publicado en Hugging Face por el usuario Project-Prism, con fecha de creacion y ultima actualizacion del 27 de septiembre de 2026. La informacion disponible no permite confirmar que se trate de un modelo de lenguaje: el identificador, la ausencia de pipeline declarado y la carencia total de especificaciones tecnicas sugieren que podria tratarse de un repositorio auxiliar (por ejemplo, un contenedor de artefactos o invitaciones) en lugar de un modelo desplegable. El unico dato funcional presente en la model card es una licencia personalizada denominada "yeah-cool", declarada bajo la etiqueta generica `license: other`.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. Tampoco se han publicado resultados de benchmarks ni documentacion tecnica asociada. El repositorio registra cero descargas y cero "likes", lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni categoria f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Project-Prism/REFRACT-AI-LABS-INVITATIONS
+- Hugging Face: https://huggingface.co/Project-Prism/REFRACT-AI-LABS-INVITATIONS
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a documentacion del producto Microsoft Project y no guardan relacion con el repositorio.

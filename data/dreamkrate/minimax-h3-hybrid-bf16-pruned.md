@@ -61,9 +61,9 @@ Este checkpoint es una fusión de dos variantes oficiales de MiniMax H3. La comp
 
 | Modelo | Arquitectura | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 FL2VA (oficial) | Diffusion transformer | ~40 GB (BF16) | no disponible | MiniMax H3 Community | HuggingFace |
-| MiniMax H3 Ref2VA (oficial) | Diffusion transformer | ~40 GB (BF16) | no disponible | MiniMax H3 Community | HuggingFace |
-| Este merge (dreamkrate) | Diffusion transformer | 40,2 GB | no disponible | MiniMax H3 Community | HuggingFace |
+| MiniMax H3 FL2VA (oficial) | Diffusion transformer | ~40 GB (BF16) | no disponible | MiniMax H3 Community | Hugging Face |
+| MiniMax H3 Ref2VA (oficial) | Diffusion transformer | ~40 GB (BF16) | no disponible | MiniMax H3 Community | Hugging Face |
+| Este merge (dreamkrate) | Diffusion transformer | 40,2 GB | no disponible | MiniMax H3 Community | Hugging Face |
 
 La ventaja de este merge es que un único archivo ofrece tanto la fidelidad de FL2VA como el condicionamiento de referencia de Ref2VA, evitando tener que cambiar de checkpoint según la tarea. No se dispone de otros modelos comparables de la misma categoría en la información proporcionada.
 
@@ -79,7 +79,7 @@ La ventaja de este merge es que un único archivo ofrece tanto la fidelidad de F
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/dreamkrate/Minimax-H3-Hybrid-BF16-Pruned)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/dreamkrate/Minimax-H3-Hybrid-BF16-Pruned)
 - [Modelo base oficial MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - [Referencia del merge de smhfacct](https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models)
 - [Licencia del modelo MiniMax H3](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE)

@@ -77,5 +77,5 @@ La comparación es meramente indicativa; sin benchmarks no es posible evaluar eq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crazyape777/fk-unconst-Affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merg
+- Repositorio Hugging Face: https://huggingface.co/crazyape777/fk-unconst-Affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merg
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

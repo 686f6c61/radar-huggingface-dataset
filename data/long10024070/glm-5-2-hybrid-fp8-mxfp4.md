@@ -77,7 +77,7 @@ La comparativa muestra que este checkpoint reduce significativamente el numero d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/long10024070/GLM-5.2-HYBRID-FP8-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/long10024070/GLM-5.2-HYBRID-FP8-MXFP4
 - Checkpoint base FP8: https://huggingface.co/zai-org/GLM-5.2-FP8
 - Checkpoint base GLM-5.2: https://huggingface.co/zai-org/GLM-5.2
 - Catalogo de modelos Microsoft Foundry: https://ai.azure.com/catalog/models/zai-org--glm-5.2-fp8

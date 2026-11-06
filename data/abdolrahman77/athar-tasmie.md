@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | Athar Tasmie (espejo de Zipformer Qur'an 3.1) | ASR fonémico Zipformer, ONNX INT8 | ~72,7 MB | Árabe (Hafs) | NPL-1.2 (no comercial) | Espejo público; upstream con acceso restringido |
 | Whisper (variantes small/medium) | ASR transformer encoder-decoder | Cientos de MB a GB | Multilingüe | MIT | Público |
-| Modelos ASR árabes genéricos en HuggingFace | Variable | Variable | Árabe | Variable | Público |
+| Modelos ASR árabes genéricos en Hugging Face | Variable | Variable | Árabe | Variable | Público |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 

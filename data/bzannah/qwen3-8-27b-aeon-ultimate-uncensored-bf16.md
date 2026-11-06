@@ -101,7 +101,7 @@ No se dispone de comparativas con otros modelos abliterados de la misma familia 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bzannah/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
+- Repositorio Hugging Face: https://huggingface.co/bzannah/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Pagina de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8

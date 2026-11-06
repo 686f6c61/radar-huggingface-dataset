@@ -74,7 +74,7 @@ No se dispone de especificaciones detalladas de Qwen3.7-Plus en la información 
 ## Limitaciones y advertencias
 
 - Solo es ejecutable en el motor NInfer (fork de igorls) en Windows con GPU Blackwell sm_120a; no puede cargarse en frameworks estándar.
-- No existe integración de inferencia en HuggingFace.
+- No existe integración de inferencia en Hugging Face.
 - Es un early-access engineering preview; no se garantiza estabilidad ni soporte a largo plazo.
 - Requiere 96 GB de VRAM y 128 GB de RAM del sistema; no está calificado en hardware inferior.
 - El uso de la tabla PLE en mapeo de host puede provocar mayor latencia si el sistema recupera memoria; el runtime recalienta las páginas al inicio.
@@ -85,10 +85,10 @@ No se dispone de especificaciones detalladas de Qwen3.7-Plus en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/igorls/Qwen3.8-Flash-Next-mixed-NInfer
+- Hugging Face: https://huggingface.co/igorls/Qwen3.8-Flash-Next-mixed-NInfer
 - Repositorio del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Motor NInfer (fork): https://github.com/igorls/ninfer
 - Revisión del motor utilizada: https://github.com/igorls/ninfer/tree/c81c88f6d66652be4607fb775333a6c63132f3f5
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantización NVFP4/FP8 de Primitive AI: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8
 - Cuantización PLE INT4 de Primitive AI: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-PLE-quant

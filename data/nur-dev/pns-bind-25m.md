@@ -91,6 +91,6 @@ No se dispone de comparativas con modelos externos de la misma categoría (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nur-dev/pns-bind-25m
+- Modelo en Hugging Face: https://huggingface.co/nur-dev/pns-bind-25m
 - Dataset utilizado: https://huggingface.co/datasets/nur-dev/pns-world
 - Paper asociado: *Beyond Transcript Replay: Causal Persistent Memory Through Protected Semantic Bindings* (enlace no disponible en la información proporcionada)

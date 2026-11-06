@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zhaodillon/tinygpt-train-001pct` es un modelo publicado en HuggingFace por el usuario Dillon Zhao (zhaodillon) el 14 de octubre de 2026. Se trata de un artefacto de muy bajo perfil: cuenta con 1 descarga y 0 likes en el momento de redactar esta ficha, no dispone de model card, no declara licencia ni idiomas, y no está desplegado por ningún Inference Provider de HuggingFace. El repositorio ocupa 0,1 GB, lo que sitúa el peso de los ficheros en el orden de decenas de megabytes y apunta a un modelo de escala muy reducida.
+`zhaodillon/tinygpt-train-001pct` es un modelo publicado en Hugging Face por el usuario Dillon Zhao (zhaodillon) el 14 de octubre de 2026. Se trata de un artefacto de muy bajo perfil: cuenta con 1 descarga y 0 likes en el momento de redactar esta ficha, no dispone de model card, no declara licencia ni idiomas, y no está desplegado por ningún Inference Provider de Hugging Face. El repositorio ocupa 0,1 GB, lo que sitúa el peso de los ficheros en el orden de decenas de megabytes y apunta a un modelo de escala muy reducida.
 
 Las únicas etiquetas declaradas son `onnx`, `gpt2` y `region:us`. La etiqueta `gpt2` indica que el modelo sigue la familia arquitectónica GPT-2 (transformer decoder-only con atención causal), mientras que `onnx` señala que los pesos se distribuyen en formato ONNX, orientado a inferencia portable mediante ONNX Runtime en CPU, GPU o entornos embebidos. La denominación `train-001pct` sugiere un entrenamiento parcial sobre un porcentaje reducido de un corpus, aunque no existe documentación pública que confirme esta interpretación.
 
@@ -18,12 +18,12 @@ Su relevancia es limitada como modelo de producción: no hay benchmarks, no hay 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio se distribuye en formato ONNX, sin indicar si los pesos están cuantizados (INT8, FP16) o en FP32 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no se declara licencia en la ficha de HuggingFace) |
+| Licencia | no disponible (no se declara licencia en la ficha de Hugging Face) |
 | Formato de pesos | ONNX (tamaño total del repositorio: 0,1 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna descripción de arquitectura. La única información técnica fiable es la etiqueta `gpt2`, que en el ecosistema de HuggingFace identifica modelos basados en el transformer decoder-only de OpenAI presentado en 2019, con normalización previa a la atención y a la FFN, activación GELU y atención causal multi-cabeza. Se desconoce por completo la configuración concreta: número de capas, dimensión de los embeddings, número de cabezas de atención, tamaño de vocabulario, si se emplea weight tying entre embedding y cabeza de salida, y si se usa una posición aprendida o rotatoria.
+No se ha publicado ninguna descripción de arquitectura. La única información técnica fiable es la etiqueta `gpt2`, que en el ecosistema de Hugging Face identifica modelos basados en el transformer decoder-only de OpenAI presentado en 2019, con normalización previa a la atención y a la FFN, activación GELU y atención causal multi-cabeza. Se desconoce por completo la configuración concreta: número de capas, dimensión de los embeddings, número de cabezas de atención, tamaño de vocabulario, si se emplea weight tying entre embedding y cabeza de salida, y si se usa una posición aprendida o rotatoria.
 
 Tampoco hay datos sobre el entrenamiento: ni número de tokens vistos, ni composición del dataset, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. El sufijo `001pct` del nombre del repositorio, junto con la existencia de variantes `010pct` y `030pct` del mismo autor, apunta a un experimento de entrenamiento con distintos porcentajes del corpus, pero esto es una inferencia a partir de la nomenclatura y no está confirmado por ninguna fuente. La ausencia de model card implica que no se puede verificar ni el procedimiento ni la reproducibilidad del resultado.
 
@@ -54,7 +54,7 @@ Advertencia: ninguno de estos casos implica calidad de salida verificada. Al no 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No existen datos de MMLU, HumanEval, GSM8K, HellaSwag, ARC ni de perplejidad sobre ningún corpus para este modelo. Tampoco hay comparaciones con otros modelos en la ficha de HuggingFace ni en los resultados de búsqueda consultados.
+No existen datos de MMLU, HumanEval, GSM8K, HellaSwag, ARC ni de perplejidad sobre ningún corpus para este modelo. Tampoco hay comparaciones con otros modelos en la ficha de Hugging Face ni en los resultados de búsqueda consultados.
 
 ## Requisitos de hardware
 
@@ -92,7 +92,7 @@ Nota: la relación entre este repositorio y proyectos con nombre similar (`tinyg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhaodillon/tinygpt-train-001pct
+- Modelo en Hugging Face: https://huggingface.co/zhaodillon/tinygpt-train-001pct
 - Perfil del autor: https://huggingface.co/zhaodillon
 - Variante con el 10 por ciento (mismo autor): https://huggingface.co/zhaodillon/tinygpt-train-010pct
 - Variante con el 30 por ciento (mismo autor): https://huggingface.co/zhaodillon/tinygpt-train-030pct

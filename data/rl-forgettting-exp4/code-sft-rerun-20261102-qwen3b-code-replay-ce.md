@@ -64,10 +64,10 @@ La model card menciona evaluaciones en `evaluations/mbppplus_n160_t0.6/delivery_
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3b-code-replay-ce | ~3B (base Qwen2.5-3B) | 4096 (entrenamiento) | other (Qwen Research License) | HuggingFace, 0 descargas | Artefacto experimental de investigación |
-| Qwen2.5-3B (base) | 3B | no disponible en esta ficha | Qwen Research License | HuggingFace | Modelo base del que deriva |
-| Qwen3-1.7B-Base | 1,7B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Usado en otras variantes del mismo estudio |
-| Llama-3.2-3B-Instruct | 3B | no disponible en esta ficha | Llama 3.2 Community License | HuggingFace | Usado en otras variantes del mismo estudio |
+| code-sft-rerun-20261102-qwen3b-code-replay-ce | ~3B (base Qwen2.5-3B) | 4096 (entrenamiento) | other (Qwen Research License) | Hugging Face, 0 descargas | Artefacto experimental de investigación |
+| Qwen2.5-3B (base) | 3B | no disponible en esta ficha | Qwen Research License | Hugging Face | Modelo base del que deriva |
+| Qwen3-1.7B-Base | 1,7B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Usado en otras variantes del mismo estudio |
+| Llama-3.2-3B-Instruct | 3B | no disponible en esta ficha | Llama 3.2 Community License | Hugging Face | Usado en otras variantes del mismo estudio |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-replay-ce
+- Hugging Face: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-replay-ce
 - Repositorio de artefactos previos: RL-Forgetting-Experiments-3 (referenciado en la model card, sin URL directa en la información disponible)
 - Manifiesto de entrega: `delivery_manifest.json` (en el repo)
 - Manifiesto de evaluaciones: `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` (en el repo)

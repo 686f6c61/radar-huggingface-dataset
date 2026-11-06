@@ -61,8 +61,8 @@ No se han encontrado otros adaptadores LoRA específicos para VR180 sobre MiniMa
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 (base) | Omni-modal (texto, imagen, vídeo, audio) | no disponible | multimodal | MiniMax Community License | Open weights en HuggingFace |
-| rehan-fal/minimax-h3-vr180-sbs-lora | LoRA sobre MiniMax H3 | no disponible (rango 32) | depende del base | minimax-community-license | Repositorio HuggingFace |
+| MiniMax H3 (base) | Omni-modal (texto, imagen, vídeo, audio) | no disponible | multimodal | MiniMax Community License | Open weights en Hugging Face |
+| rehan-fal/minimax-h3-vr180-sbs-lora | LoRA sobre MiniMax H3 | no disponible (rango 32) | depende del base | minimax-community-license | Repositorio Hugging Face |
 | Wan 2.1 (por ejemplo) | Texto a vídeo | no disponible | no disponible | Apache 2.0 (algunas variantes) | Open weights |
 
 La comparación directa no es posible porque el adaptador no es un modelo independiente, sino una extensión especializada. Su ventaja es la capacidad estereoscópica, que no está presente en el modelo base ni en la mayoría de alternativas de código abierto.
@@ -80,8 +80,8 @@ La comparación directa no es posible porque el adaptador no es un modelo indepe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rehan-fal/minimax-h3-vr180-sbs-lora
-- Modelo base MiniMax H3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face: https://huggingface.co/rehan-fal/minimax-h3-vr180-sbs-lora
+- Modelo base MiniMax H3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog de MiniMax sobre H3: https://www.minimax.io/blog/minimax-h3
 - Guía de prompting de MiniMax H3 en fal: https://fal.ai/learn/devs/minimax-h3-prompting-guide

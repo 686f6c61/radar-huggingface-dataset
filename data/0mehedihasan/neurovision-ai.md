@@ -66,7 +66,7 @@ No se dispone de modelos comparables en la información proporcionada. No se han
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/0mehedihasan/neurovision-ai)
+- [Modelo en Hugging Face](https://huggingface.co/0mehedihasan/neurovision-ai)
 - [Repositorio en GitHub](https://github.com/0mehedihasan/neurovision-ai)
 - [Proyecto NeuroVision AI (GitHub)](https://github.com/neurovision-ai) - organización con proyectos relacionados
 - [Demo en Vercel (Alzheimer's detection)](https://neurovision-ai.vercel.app/) - proyecto diferente pero relacionado con la iniciativa

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-kl100000-s1-realign` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en HuggingFace. Hereda por tanto la arquitectura del Llama 3.2 1B Instruct de Meta: un transformer decoder-only denso de 1.240 millones de parametros, con atencion GQA, embeddings atados y una ventana de contexto nominal de 128.000 tokens. El repositorio ocupa 1,7 GB y los pesos se distribuyen en formato safetensors, cargables directamente con la libreria `transformers`.
+`jlsrls/mainsweep4ep-kl100000-s1-realign` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en Hugging Face. Hereda por tanto la arquitectura del Llama 3.2 1B Instruct de Meta: un transformer decoder-only denso de 1.240 millones de parametros, con atencion GQA, embeddings atados y una ventana de contexto nominal de 128.000 tokens. El repositorio ocupa 1,7 GB y los pesos se distribuyen en formato safetensors, cargables directamente con la libreria `transformers`.
 
 El modelo se entreno con aprendizaje supervisado (SFT) utilizando el framework TRL (version 0.24.0) sobre el stack de Unsloth, segun declara su propia model card. El nombre del repositorio sugiere una ejecucion concreta dentro de un barrido de hiperparametros: `4ep` apuntaria a 4 epocas, `kl100000` a un coeficiente de penalizacion KL de 100.000, `s1` a una etapa o semilla y `realign` a la tecnica de alineacion ReAlign. Esta interpretacion es una inferencia a partir del nombre, no un dato confirmado en la documentacion disponible.
 
@@ -92,11 +92,11 @@ Frente a estas alternativas, el unico diferencial claro del modelo analizado es 
 - Licencia: el campo de licencia del repositorio esta sin especificar. Al derivar de Llama 3.2, se aplica la Llama 3.2 Community License, que exige incluir el aviso "Built with Llama", respetar la politica de uso aceptable y tiene una clausula especifica para productos con mas de 700 millones de usuarios mensuales. Conviene verificar los terminos antes de cualquier uso comercial.
 - Trazabilidad: no se documenta el dataset, el numero de tokens de entrenamiento ni los hiperparametros completos. Solo hay un enlace a una ejecucion de Weights & Biases, lo que limita la reproducibilidad.
 - Madurez: 0 descargas y 0 likes en el momento de la consulta. Es un artefacto de investigacion sin validacion externa ni mantenimiento declarado.
-- Fecha de creacion del repositorio: 25 de septiembre de 2026, segun los metadatos de HuggingFace.
+- Fecha de creacion del repositorio: 25 de septiembre de 2026, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl100000-s1-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl100000-s1-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo relacionado del mismo autor: https://huggingface.co/jlsrls/em-kl100000-s1
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/1f7cs6q2

@@ -6,7 +6,7 @@ QMA Camera Angles es un adapter LoRA de edicion de imagen publicado por el usuar
 
 El problema que resuelve es concreto para flujos de trabajo de edicion y sintesis de vistas: en lugar de reescribir un prompt completo para cambiar de angulo, el modelo acepta una sintaxis fija de tres parametros anclada al token de instancia `<qma>`: azimut, elevacion y distancia. Cada parametro admite un conjunto cerrado de valores (8 azimuts, 4 elevaciones y 3 distancias), lo que da 96 combinaciones cubiertas durante el entrenamiento. Esto lo hace util para pipelines de previsualizacion, generacion de multiples vistas de un mismo producto o personaje, y para construir controles tipo "arrastrar la camara" en interfaces graficas.
 
-Es relevante ahora porque Qwen-Image-2.1 es un modelo de edicion imagen-a-imagen con soporte nativo en diffusers y ComfyUI, y este tipo de LoRAs de control geometrico fino son piezas que permiten convertir un editor de imagenes generico en una herramienta con control de punto de vista explicito y determinista, sin depender de prompts ambiguos. El modelo acumula 94 descargas y 14 "likes" en HuggingFace en la fecha de consulta.
+Es relevante ahora porque Qwen-Image-2.1 es un modelo de edicion imagen-a-imagen con soporte nativo en diffusers y ComfyUI, y este tipo de LoRAs de control geometrico fino son piezas que permiten convertir un editor de imagenes generico en una herramienta con control de punto de vista explicito y determinista, sin depender de prompts ambiguos. El modelo acumula 94 descargas y 14 "likes" en Hugging Face en la fecha de consulta.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye LoRAs de control de camar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gribbliest/qwen-image-2.1-qma-camera-angles
+- Modelo en Hugging Face: https://huggingface.co/gribbliest/qwen-image-2.1-qma-camera-angles
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Nodo de ComfyUI (QMA Multi-Angle LoRA Node, por CoreyCorza): https://github.com/CoreyCorza/QMA-Multi-Angle-Lora-Node
 - Ejemplos en video incluidos en el repositorio: https://huggingface.co/gribbliest/qwen-image-2.1-qma-camera-angles/resolve/main/examples/orbit_1.mp4, https://huggingface.co/gribbliest/qwen-image-2.1-qma-camera-angles/resolve/main/examples/orbit_2.mp4, https://huggingface.co/gribbliest/qwen-image-2.1-qma-camera-angles/resolve/main/examples/orbit_3.mp4, https://huggingface.co/gribbliest/qwen-image-2.1-qma-camera-angles/resolve/main/examples/orbit_4.mp4

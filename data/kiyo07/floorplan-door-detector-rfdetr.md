@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea / dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kiyo07/floorplan-door-detector-rfdetr | 31,8 M | Deteccion de puertas en planos arquitectonicos | Apache-2.0 (pesos); AGPL-3.0-only (runner) | Pesos safetensors en HuggingFace |
+| kiyo07/floorplan-door-detector-rfdetr | 31,8 M | Deteccion de puertas en planos arquitectonicos | Apache-2.0 (pesos); AGPL-3.0-only (runner) | Pesos safetensors en Hugging Face |
 | RF-DETR Small (base, Roboflow) | no disponible | Deteccion de objetos general (COCO, 365 clases) | Apache-2.0 (upstream) | Checkpoint base y codigo en GitHub de Roboflow |
-| DETR / RT-DETR (Meta, Baidu) | no disponible | Deteccion de objetos general | no disponible | Pesos publicos en HuggingFace |
+| DETR / RT-DETR (Meta, Baidu) | no disponible | Deteccion de objetos general | no disponible | Pesos publicos en Hugging Face |
 
 No existen alternativas publicas ampliamente conocidas especializadas exactamente en deteccion de puertas en planos arquitectonicos; los detectores generales (RF-DETR base, RT-DETR, YOLO) podrian afinarse para esta tarea, pero requieren datasets propios y el trabajo de ajuste fino que este modelo ya incorpora.
 
@@ -86,7 +86,7 @@ No existen alternativas publicas ampliamente conocidas especializadas exactament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiyo07/floorplan-door-detector-rfdetr
+- Modelo en Hugging Face: https://huggingface.co/kiyo07/floorplan-door-detector-rfdetr
 - Codigo upstream de RF-DETR (Roboflow): https://github.com/roboflow/rf-detr
 - Checkpoint base nativo de RF-DETR Small: https://storage.googleapis.com/rfdetr/small_coco/checkpoint_best_regular.pth
 - Ficheros de licencia del repo: `LICENSING.md` y `NOTICE` (en el repositorio del modelo)

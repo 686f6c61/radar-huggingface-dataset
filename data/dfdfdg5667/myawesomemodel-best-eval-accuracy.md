@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dfdfdg5667/myawesomemodel-best-eval-accuracy` es un checkpoint publicado en HuggingFace por el usuario `dfdfdg5667` bajo licencia MIT. Según su model card, se trata del checkpoint `step_1000` de un entrenamiento no documentado, seleccionado por haber obtenido la mayor precisión de evaluación registrada (`0.828` en la categoría de clasificación de texto) y un score global ponderado de `0.710` calculado por un evaluador no identificado. El repositorio está etiquetado con `transformers`, `pytorch`, `bert` y el pipeline `feature-extraction`, lo que apunta a un encoder tipo BERT destinado a extracción de representaciones, aunque la model card no confirma arquitectura, tamaño ni proceso de entrenamiento.
+`dfdfdg5667/myawesomemodel-best-eval-accuracy` es un checkpoint publicado en Hugging Face por el usuario `dfdfdg5667` bajo licencia MIT. Según su model card, se trata del checkpoint `step_1000` de un entrenamiento no documentado, seleccionado por haber obtenido la mayor precisión de evaluación registrada (`0.828` en la categoría de clasificación de texto) y un score global ponderado de `0.710` calculado por un evaluador no identificado. El repositorio está etiquetado con `transformers`, `pytorch`, `bert` y el pipeline `feature-extraction`, lo que apunta a un encoder tipo BERT destinado a extracción de representaciones, aunque la model card no confirma arquitectura, tamaño ni proceso de entrenamiento.
 
 El modelo no resuelve un problema identificable de forma pública: no hay documentación sobre el dataset, el número de tokens, el objetivo de entrenamiento ni la metodología de evaluación. Su relevancia actual es muy limitada como artefacto de producción (0 descargas, 0 likes, repositorio de 0.0 GB), pero resulta ilustrativo como ejemplo de publicación de checkpoints guiada exclusivamente por métricas de evaluación y de los riesgos asociados a la selección de modelos por *leaderboard* interno.
 
@@ -87,7 +87,7 @@ No se han publicado resultados comparativos con otros modelos, ni la identidad d
 - VRAM estimada para inferencia: no disponible. El repositorio ocupa 0.0 GB y no contiene pesos verificables, por lo que no es ejecutable tal cual.
 - Estimación teórica no confirmada: si el checkpoint correspondiera a un encoder tipo BERT-base (aproximadamente 110 millones de parámetros), la inferencia en fp32 requeriría del orden de 0,5 GB de VRAM y en fp16 alrededor de 0,25 GB.
 - GPU recomendadas: no disponibles. Bajo la hipótesis anterior, cualquier GPU consumer con 2 GB o más de VRAM sería suficiente, e incluso la inferencia en CPU resultaría viable para lotes pequeños.
-- Despliegue: la vía natural sería `transformers` con `AutoModel`/`pipeline("feature-extraction")`; la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No hay ficheros GGUF para llama.cpp ni Ollama, ni configuración para vLLM o TGI.
+- Despliegue: la vía natural sería `transformers` con `AutoModel`/`pipeline("feature-extraction")`; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay ficheros GGUF para llama.cpp ni Ollama, ni configuración para vLLM o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -117,6 +117,6 @@ La etiqueta `bert` permitiría, en principio, situar el modelo en la categoría 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dfdfdg5667/myawesomemodel-best-eval-accuracy
+- Repositorio en Hugging Face: https://huggingface.co/dfdfdg5667/myawesomemodel-best-eval-accuracy
 
 No se han encontrado en la información proporcionada papers, blogs técnicos, repositorios de código ni demos adicionales asociados al modelo.

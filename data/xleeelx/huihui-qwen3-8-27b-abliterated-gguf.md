@@ -70,7 +70,7 @@ No se dispone de modelos comparables directamente comparables en el contexto de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xleeelx/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/xleeelx/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Repositorio original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Metodo de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

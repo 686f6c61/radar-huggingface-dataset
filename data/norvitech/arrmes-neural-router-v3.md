@@ -102,11 +102,11 @@ No se dispone de comparaciones publicadas por el autor frente a alternativas con
 - Riesgo de falsos negativos en la clasificación de seguridad: la cota superior Clopper-Pearson 95% unilateral es 0,25% sobre el suite negativo, es decir, no se descarta por completo una escritura no autorizada en producción.
 - La model card está truncada en la información disponible; no se detallan sesgos, composición completa del dataset ni política de mantenimiento.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución y sin garantía; conviene conservar el aviso de copyright.
-- El repositorio de HuggingFace muestra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere adopción temprana y escasa validación externa.
+- El repositorio de Hugging Face muestra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere adopción temprana y escasa validación externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NorviTech/arrmes-neural-router-v3
+- Modelo en Hugging Face: https://huggingface.co/NorviTech/arrmes-neural-router-v3
 - Dataset de evaluación: https://huggingface.co/datasets/NorviTech/arrmes-bench-v5
 - Release de Arrmes v1.4.0: https://github.com/spencernorton/arrmes/releases/tag/v1.4.0
 - Código del router (`neural_router.py`): https://github.com/spencernorton/arrmes/blob/v1.4.0/src/arrmes/neural_router.py

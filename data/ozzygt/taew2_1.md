@@ -4,7 +4,7 @@
 
 TAEW 2.1 es un autoencoder minúsculo (tiny autoencoder, TAE) diseñado específicamente para el espacio latente de Wan 2.1. No es un modelo generativo ni un modelo de lenguaje: es un decodificador que transforma un tensor de latentes en imágenes o fotogramas. Cuenta con 11,3 millones de parámetros en fp16 (fichero de 22.642.902 bytes, 128 tensores) y su razon del ser es abaratar la previsualización: decodifica un latente a imagen aproximadamente cincuenta veces más barato en cómputo que el VAE completo de Wan 2.1, lo que hace asequible mostrar una previsualización en cada paso del proceso de denoising.
 
-El repositorio `OzzyGT/taew2_1` es un espejo sin modificar del fichero `taew2_1.safetensors` publicado por Ollin Boer Bohan en el repositorio de GitHub `madebyollin/taehv`. El autor del espejo lo aloja en HuggingFace porque el proyecto original distribuye estos pesos a través de GitHub; el contenido es idéntico byte a byte, sin conversión, cuantización ni reentrenamiento.
+El repositorio `OzzyGT/taew2_1` es un espejo sin modificar del fichero `taew2_1.safetensors` publicado por Ollin Boer Bohan en el repositorio de GitHub `madebyollin/taehv`. El autor del espejo lo aloja en Hugging Face porque el proyecto original distribuye estos pesos a través de GitHub; el contenido es idéntico byte a byte, sin conversión, cuantización ni reentrenamiento.
 
 Su relevancia práctica viene de que los espacios latentes de Krea 2 y Qwen-Image coinciden exactamente con el de Wan 2.1, por lo que este decodificador también sirve para previsualizar sus latentes. De hecho, el repositorio `OzzyGT/krea2_preview_blocks` lo descarga en tiempo de ejecución para mostrar la predicción de Krea 2 mientras el proceso de denoising avanza.
 
@@ -19,7 +19,7 @@ Su relevancia práctica viene de que los espacios latentes de Krea 2 y Qwen-Imag
 | Idiomas soportados | no aplica (no procesa texto) |
 | Licencia | MIT, (c) 2025 Ollin Boer Bohan |
 | Formato de pesos | safetensors (fp16, 128 tensores, 22.642.902 bytes) |
-| Otros datos | sha256 `04766eac0221b5390b985ae3fdcca652cbb4b1e8b82b28ea7ff89dfad1b1a93f`; pipeline de HuggingFace no disponible; 0 descargas y 0 likes en el momento de la consulta |
+| Otros datos | sha256 `04766eac0221b5390b985ae3fdcca652cbb4b1e8b82b28ea7ff89dfad1b1a93f`; pipeline de Hugging Face no disponible; 0 descargas y 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 
 | Modelo | Parámetros | Función | Coste de decodificación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TAEW 2.1 (`OzzyGT/taew2_1`) | 11,3 M | Decodificar latentes de Wan 2.1 (y de Krea 2 / Qwen-Image) a imagen o vídeo | ~50x más barato que el VAE completo | MIT | Espejo en HuggingFace; original en GitHub `madebyollin/taehv` |
+| TAEW 2.1 (`OzzyGT/taew2_1`) | 11,3 M | Decodificar latentes de Wan 2.1 (y de Krea 2 / Qwen-Image) a imagen o vídeo | ~50x más barato que el VAE completo | MIT | Espejo en Hugging Face; original en GitHub `madebyollin/taehv` |
 | VAE completo de Wan 2.1 | no disponible | Decodificación de referencia del mismo espacio latente | Referencia (1x) | no disponible | Pesos oficiales del modelo Wan 2.1 |
 | Decodificadores TAE/TAESD del mismo autor para otros espacios latentes | no disponible | Decodificación rápida en su espacio latente correspondiente (SD, SDXL, Flux, etc.) | no disponible | MIT (según el proyecto upstream) | Repositorio `madebyollin/taehv` y proyectos relacionados |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OzzyGT/taew2_1
+- Repositorio en Hugging Face: https://huggingface.co/OzzyGT/taew2_1
 - Repositorio upstream en GitHub: https://github.com/madebyollin/taehv
 - Fichero de pesos original: https://github.com/madebyollin/taehv/blob/main/safetensors/taew2_1.safetensors
 - Commit de procedencia: https://github.com/madebyollin/taehv/commit/0ad83bb8fdc48e9e94138704e939d500a3b43660

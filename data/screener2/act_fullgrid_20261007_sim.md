@@ -24,7 +24,7 @@ Su relevancia es la de un ejemplo reproducible de entrenamiento de políticas co
 | Cámaras | `overhead` (una sola vista) |
 | Dimensión de estado / acción | 6 / 6 |
 | Frecuencia de control | 30 FPS (frecuencia del dataset de entrenamiento) |
-| Pipeline en HuggingFace | `robotics` |
+| Pipeline en Hugging Face | `robotics` |
 
 ## Arquitectura y entrenamiento
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Screener2/act_FullGrid_20261007_sim (este) | 51.668.614 | Estado 6D + 1 cámara 480×640 | Apache 2.0 | HuggingFace, vía LeRobot |
+| Screener2/act_FullGrid_20261007_sim (este) | 51.668.614 | Estado 6D + 1 cámara 480×640 | Apache 2.0 | Hugging Face, vía LeRobot |
 | ACT original (paper arXiv:2304.13705) | No disponible en la información proporcionada | Estado + cámaras (configuración bimanual del paper) | No disponible en la información proporcionada | Paper y código de referencia |
 | Diffusion Policy (política de difusión de LeRobot) | No disponible en la información proporcionada | Estado + imágenes | No disponible en la información proporcionada | Disponible como `--policy.type=diffusion` en LeRobot |
-| Políticas VLA de la familia LeRobot (SmolVLA, pi0) | No disponible en la información proporcionada; son modelos de mayor tamaño que ACT y procesan instrucciones en lenguaje natural | Estado + imágenes + instrucción textual | No disponible en la información proporcionada | Disponibles en LeRobot y HuggingFace |
+| Políticas VLA de la familia LeRobot (SmolVLA, pi0) | No disponible en la información proporcionada; son modelos de mayor tamaño que ACT y procesan instrucciones en lenguaje natural | Estado + imágenes + instrucción textual | No disponible en la información proporcionada | Disponibles en LeRobot y Hugging Face |
 
 Este checkpoint se distingue de las alternativas por su tamaño reducido, su dependencia de una sola cámara y la ausencia total de interfaz en lenguaje natural: la tarea está fijada por la etiqueta `"0"`. Frente a las políticas de difusión, ACT es más ligero y con inferencia en un solo paso de red (sin bucle de denoising), a costa de menor expresividad en distribuciones multimodales. Frente a las VLA, carece de generalización a instrucciones nuevas. No se dispone de datos de rendimiento comparativos para este checkpoint.
 
@@ -91,7 +91,7 @@ Este checkpoint se distingue de las alternativas por su tamaño reducido, su dep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Screener2/act_FullGrid_20261007_sim
+- Modelo en Hugging Face: https://huggingface.co/Screener2/act_FullGrid_20261007_sim
 - Dataset de entrenamiento: https://huggingface.co/datasets/Screener2/FullGrid_20261007_sim
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
@@ -104,4 +104,4 @@ Este checkpoint se distingue de las alternativas por su tamaño reducido, su dep
 - Documentación de inferencia y rollout: https://huggingface.co/docs/lerobot/main/en/inference
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Screener2/FullGrid_20261007_sim
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y del repositorio de Hugging Face.

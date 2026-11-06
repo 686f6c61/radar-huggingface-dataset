@@ -4,7 +4,7 @@
 
 Qwen3-Coder-Next es un modelo de lenguaje de pesos abiertos desarrollado por el equipo Qwen de Alibaba, presentado en febrero de 2026 y especializado en agentes de codificación y desarrollo local. Su característica principal es una arquitectura de mezcla de expertos (MoE) con 80 mil millones de parámetros totales pero solo 3 mil millones activos por token, lo que permite un rendimiento comparable a modelos con 10-20 veces más parámetros activos a un coste de inferencia mucho menor. El modelo incorpora una ventana de contexto nativa de 262.144 tokens y capacidades agénticas avanzadas, incluyendo razonamiento de largo plazo, uso complejo de herramientas y recuperación de errores de ejecución.
 
-La arquitectura es híbrida: combina capas de atención con gating (Gated Attention) y capas de Gated DeltaNet (atención lineal) intercaladas con bloques MoE, en una configuración de 48 capas. Se distribuye bajo licencia Apache 2.0 y está disponible en HuggingFace, con soporte de despliegue en sglang, vLLM, llama.cpp, Ollama, LM Studio, MLX-LM y KTransformers. El modelo solo soporta modo sin pensamiento (non-thinking) y no genera bloques de razonamiento explícito en su salida.
+La arquitectura es híbrida: combina capas de atención con gating (Gated Attention) y capas de Gated DeltaNet (atención lineal) intercaladas con bloques MoE, en una configuración de 48 capas. Se distribuye bajo licencia Apache 2.0 y está disponible en Hugging Face, con soporte de despliegue en sglang, vLLM, llama.cpp, Ollama, LM Studio, MLX-LM y KTransformers. El modelo solo soporta modo sin pensamiento (non-thinking) y no genera bloques de razonamiento explícito en su salida.
 
 La relevancia de este modelo radica en ofrecer una alternativa de código abierto eficiente para agentes de codificación en producción, con integración directa en IDEs y plataformas como Claude Code, Qwen Code, Qoder, Kilo, Trae y Cline, y un coste de inferencia significativamente menor que el de modelos densos de tamaño comparable.
 
@@ -83,14 +83,14 @@ La guía de la comunidad publicada en dev.to (2026) incluye una comparativa de r
 - Riesgo de errores de memoria (OOM) con el contexto completo de 256K tokens; se recomienda reducir la ventana a 32K en entornos con recursos limitados.
 - Requiere al menos 2 GPU de 80 GB para despliegue en precisión completa (bf16), lo que excluye hardware de consumo para esta configuración.
 - Los idiomas soportados no están especificados en la información disponible; se recomienda verificar la documentación oficial antes de desplegar en producción multilingüe.
-- La versión de HuggingFace bajo el identificador XXXMARK es un espejo con 0 descargas; el modelo oficial es Qwen/Qwen3-Coder-Next.
+- La versión de Hugging Face bajo el identificador XXXMARK es un espejo con 0 descargas; el modelo oficial es Qwen/Qwen3-Coder-Next.
 - No se han publicado datos sobre sesgos ni riesgos de alucinación específicos en la información proporcionada.
 - La licencia Apache 2.0 permite uso comercial, pero se debe verificar la atribución y las condiciones de la licencia del modelo original antes de su integración en productos.
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/XXXMARK/Qwen3-Coder-Next
-- HuggingFace (original): https://huggingface.co/Qwen/Qwen3-Coder-Next
+- Hugging Face (espejo): https://huggingface.co/XXXMARK/Qwen3-Coder-Next
+- Hugging Face (original): https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3-coder-next
 - GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Documentación oficial: https://qwen.readthedocs.io/en/latest/

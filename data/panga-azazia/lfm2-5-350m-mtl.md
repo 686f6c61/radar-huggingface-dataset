@@ -4,7 +4,7 @@
 
 LFM2.5-350M-MTL es un modelo de lenguaje de 382 millones de parámetros desarrollado por Panga-Azazia, que parte del modelo base LFM2.5-350M-TTS de Liquid AI y ha sido ajustado mediante fine-tuning supervisado (SFT) para tareas multi-tarea (MTL, Multi-Task Learning). El modelo base, LFM2.5-350M, es una versión mejorada del modelo compacto de Liquid AI, con pre-entrenamiento ampliado de 10T a 28T tokens y refuerzo a gran escala, construido sobre la arquitectura LFM2 que ofrece inferencia excepcionalmente rápida y puede ejecutarse desde GPUs en la nube hasta CPUs económicas.
 
-Este fine-tune específico se ha entrenado con la librería TRL y Unsloth, y está orientado a conversación y generación de texto. Su relevancia radica en ofrecer un modelo compacto con capacidades de tool use, extracción de datos y salidas estructuradas, pensado para flujos de trabajo agénticos ligeros y procesamiento de datos a gran escala, aunque no está diseñado para tareas complejas de matemáticas, código o escritura creativa. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Este fine-tune específico se ha entrenado con la librería TRL y Unsloth, y está orientado a conversación y generación de texto. Su relevancia radica en ofrecer un modelo compacto con capacidades de tool use, extracción de datos y salidas estructuradas, pensado para flujos de trabajo agénticos ligeros y procesamiento de datos a gran escala, aunque no está diseñado para tareas complejas de matemáticas, código o escritura creativa. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks específicos para el modelo Panga-A
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Panga-Azazia/LFM2.5-350M-MTL | 382M | no disponible | no disponible | Gated en HuggingFace |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible | Abierto en HuggingFace |
+| Panga-Azazia/LFM2.5-350M-MTL | 382M | no disponible | no disponible | Gated en Hugging Face |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible | Abierto en Hugging Face |
 | Qwen2.5-0.5B | 494M | 32K | Apache 2.0 | Abierto |
 | SmolLM2-360M | 360M | 2K | Apache 2.0 | Abierto |
 
@@ -77,7 +77,7 @@ El modelo MTL es un fine-tune del LFM2.5-350M, por lo que hereda la arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Panga-Azazia/LFM2.5-350M-MTL
+- Modelo en Hugging Face: https://huggingface.co/Panga-Azazia/LFM2.5-350M-MTL
 - Modelo base LFM2.5-350M-TTS: https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS
 - Modelo base LFM2.5-350M de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind

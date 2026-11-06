@@ -68,6 +68,6 @@ No se dispone de información publicada que permita una comparativa directa con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/415Supreeya/thai-qa-lab-model
+- Hugging Face: https://huggingface.co/415Supreeya/thai-qa-lab-model
 - Perfil del autor: https://huggingface.co/415Supreeya
 - Paper de impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

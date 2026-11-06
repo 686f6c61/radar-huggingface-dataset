@@ -21,7 +21,7 @@ El modelo tiene 5.104.297.539 parámetros totales (aproximadamente 1B efectivos 
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `unsloth/gemma-4-E2B-it`, una variante de Gemma 4 con aproximadamente 1B de parámetros efectivos. El fine-tuning se realizó con QLoRA, que combina cuantización de 4 bits del modelo base con adaptadores LoRA de rango 32 y alpha 64, aplicados a todas las proyecciones lineales (q, k, v, o, gate, up, down). El entrenamiento usó 352 pares conversacionales, 3 épocas, learning rate 2e-4 con scheduler coseno, optimizador adamw_8bit y una longitud máxima de secuencia de 1280 tokens. Se aplicó loss masking para entrenar solo sobre los tokens de respuesta del asistente (`train_on_responses_only`), y la validación (10% de los datos) mostró una pérdida de 0.685 en la época 3, aún en descenso, lo que sugiere que no hay sobreajuste. El framework utilizado fue Unsloth con HuggingFace SFTTrainer y PEFT.
+El modelo base es `unsloth/gemma-4-E2B-it`, una variante de Gemma 4 con aproximadamente 1B de parámetros efectivos. El fine-tuning se realizó con QLoRA, que combina cuantización de 4 bits del modelo base con adaptadores LoRA de rango 32 y alpha 64, aplicados a todas las proyecciones lineales (q, k, v, o, gate, up, down). El entrenamiento usó 352 pares conversacionales, 3 épocas, learning rate 2e-4 con scheduler coseno, optimizador adamw_8bit y una longitud máxima de secuencia de 1280 tokens. Se aplicó loss masking para entrenar solo sobre los tokens de respuesta del asistente (`train_on_responses_only`), y la validación (10% de los datos) mostró una pérdida de 0.685 en la época 3, aún en descenso, lo que sugiere que no hay sobreajuste. El framework utilizado fue Unsloth con Hugging Face SFTTrainer y PEFT.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (as
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rayantion26/JINGSI
+- Hugging Face: https://huggingface.co/Rayantion26/JINGSI
 - Repositorio GitHub del autor: https://github.com/Rayantion26?tab=repositories
 - Sitio personal del autor: http://rayantion.me/
 - README del sitio personal: https://github.com/Rayantion26/Rayantion26.github.io/blob/main/README.md

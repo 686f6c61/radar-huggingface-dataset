@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks específicos para Phi-4-abliterated
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Phi-4-abliterated | 14,66B | No disponible | GPL-3.0 | HuggingFace | Sin rechazo explícito |
-| microsoft/phi-4 | 14,7B | 128k (según informe técnico) | MIT | HuggingFace | Modelo base con alineamiento de seguridad |
-| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace | Alternativa más pequeña, con rechazos estándar |
-| Qwen2.5-14B-Instruct | 14,7B | 32k | Apache 2.0 | HuggingFace | Modelo denso con buenas capacidades multilingües |
+| Phi-4-abliterated | 14,66B | No disponible | GPL-3.0 | Hugging Face | Sin rechazo explícito |
+| microsoft/phi-4 | 14,7B | 128k (según informe técnico) | MIT | Hugging Face | Modelo base con alineamiento de seguridad |
+| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face | Alternativa más pequeña, con rechazos estándar |
+| Qwen2.5-14B-Instruct | 14,7B | 32k | Apache 2.0 | Hugging Face | Modelo denso con buenas capacidades multilingües |
 
 La comparativa se basa en características generales; los resultados de rendimiento pueden variar según la tarea. Phi-4-abliterated se distingue por su perfil de rechazo modificado, mientras que las alternativas mantienen los alineamientos originales.
 
@@ -80,7 +80,7 @@ La comparativa se basa en características generales; los resultados de rendimie
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Justbackup/phi-4-abliterated)
+- [Modelo en Hugging Face](https://huggingface.co/Justbackup/phi-4-abliterated)
 - [Herramienta de abliteration (Orion-zhen/abliteration)](https://github.com/Orion-zhen/abliteration)
 - [Informe técnico de Phi-4 (PDF)](https://www.microsoft.com/en-us/research/uploads/prod/2024/12/P4TechReport.pdf)
 - [Modelo base microsoft/phi-4](https://huggingface.co/microsoft/phi-4)

@@ -74,8 +74,8 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pepijn223/hy-vla-umi-grabette-5epochs | 4.526.672.912 | no disponible | Apache 2.0 | HuggingFace (32 descargas) |
-| lerobot/hy_vla_umi | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| pepijn223/hy-vla-umi-grabette-5epochs | 4.526.672.912 | no disponible | Apache 2.0 | Hugging Face (32 descargas) |
+| lerobot/hy_vla_umi | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pepijn223/hy-vla-umi-grabette-5epochs
+- Modelo en Hugging Face: https://huggingface.co/pepijn223/hy-vla-umi-grabette-5epochs
 - Modelo base: https://huggingface.co/lerobot/hy_vla_umi
 - Dataset de entrenamiento: https://huggingface.co/datasets/pepijn223/grabette-slam-consolidated-20261027
 - LeRobot PR #4196 (implementación Hy-VLA): https://github.com/huggingface/lerobot/pull/4196

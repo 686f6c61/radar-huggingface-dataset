@@ -75,9 +75,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adjudex 0.8B v4 | 852.985.920 | 8.192 tokens | Decisión tipada con cabeza `[255, hidden]` sobre Qwen3.5-0.8B | Apache 2.0 | HuggingFace (newsbang/adjudex-0.8b-v4) |
-| Qwen3.5-0.8B (modelo base) | No disponible en la información | No disponible | Generación de texto | No disponible en la información | HuggingFace (Qwen/Qwen3.5-0.8B) |
-| perplexity-ai/pplx-decider-v1.1-27b | No disponible en la información | No disponible | Motor de decisión (código de serving reutilizado) | Apache 2.0 | HuggingFace (perplexity-ai/pplx-decider-v1.1-27b) |
+| Adjudex 0.8B v4 | 852.985.920 | 8.192 tokens | Decisión tipada con cabeza `[255, hidden]` sobre Qwen3.5-0.8B | Apache 2.0 | Hugging Face (newsbang/adjudex-0.8b-v4) |
+| Qwen3.5-0.8B (modelo base) | No disponible en la información | No disponible | Generación de texto | No disponible en la información | Hugging Face (Qwen/Qwen3.5-0.8B) |
+| perplexity-ai/pplx-decider-v1.1-27b | No disponible en la información | No disponible | Motor de decisión (código de serving reutilizado) | Apache 2.0 | Hugging Face (perplexity-ai/pplx-decider-v1.1-27b) |
 
 No se dispone de datos de benchmarks comparables entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, enfoque y licencia.
 
@@ -90,11 +90,11 @@ No se dispone de datos de benchmarks comparables entre estos modelos en la infor
 - Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de calibración deficiente: las probabilidades deben validarse con la temperatura configurada antes de usarse como umbrales en producción.
 - La evaluación se realizó con una configuración concreta (BF16, CUDA, servidor por defecto, A800) y no se documenta el comportamiento con otras cuantizaciones o backends.
 - Aunque la licencia es Apache 2.0, el código de serving procede de `perplexity-ai/pplx-decider-v1.1-27b`; conviene revisar el fichero NOTICE para cumplir con las atribuciones.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que indica ausencia de validación comunitaria independiente.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que indica ausencia de validación comunitaria independiente.
 - No se documentan sesgos conocidos ni composición del dataset de entrenamiento, lo que dificulta evaluar riesgos de equidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/newsbang/adjudex-0.8b-v4
+- Hugging Face: https://huggingface.co/newsbang/adjudex-0.8b-v4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Código de serving de referencia: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b

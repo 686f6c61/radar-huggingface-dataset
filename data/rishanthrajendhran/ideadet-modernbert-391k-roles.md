@@ -3,7 +3,7 @@
 ## Resumen
 El modelo `ideadet-modernbert-391k-roles`, publicado por Rishanth Rajendhran, es un clasificador de texto basado en la arquitectura ModernBERT, orientado a la detección de contenido generado por inteligencia artificial. Con 395 millones de parámetros, se presenta como una herramienta especializada en identificar textos producidos por modelos generativos, presumiblemente en contextos donde se necesita distinguir entre escritura humana y sintética. El nombre sugiere una doble función: detección de ideas o intenciones y asignación de roles, aunque no se dispone de documentación oficial que lo confirme.
 
-El modelo está alojado en HuggingFace con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su licencia Apache-2.0 permite uso comercial y modificación, pero la falta de métricas públicas y de descripciones detalladas limita su evaluación inmediata. A pesar de su reciente publicación (agosto de 2026), no ha recibido descargas ni interacciones, lo que sugiere que se encuentra en una fase inicial de adopción.
+El modelo está alojado en Hugging Face con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su licencia Apache-2.0 permite uso comercial y modificación, pero la falta de métricas públicas y de descripciones detalladas limita su evaluación inmediata. A pesar de su reciente publicación (agosto de 2026), no ha recibido descargas ni interacciones, lo que sugiere que se encuentra en una fase inicial de adopción.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: para un modelo de 395M parámetros en FP32, se requieren aproximadamente 1,6 GB de memoria; en FP16, alrededor de 800 MB. Sin cuantización adicional, cabe en GPUs con al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna con soporte CUDA, como NVIDIA GTX 1060 (6 GB), RTX 2060 o superiores. También puede ejecutarse en CPU con las optimizaciones adecuadas.
 - Compatibilidad con consumer GPU: sí, es suficientemente pequeño para ejecutarse en tarjetas de gama media e incluso en algunos modelos integrados.
-- Opciones de despliegue: al ser un modelo de clasificación basado en transformers, puede servirse con bibliotecas estándar como HuggingFace Transformers, ONNX Runtime, o mediante soluciones de inferencia como vLLM (si se adapta) o FastAPI con carga manual.
+- Opciones de despliegue: al ser un modelo de clasificación basado en transformers, puede servirse con bibliotecas estándar como Hugging Face Transformers, ONNX Runtime, o mediante soluciones de inferencia como vLLM (si se adapta) o FastAPI con carga manual.
 - Latencia y throughput: no se dispone de datos medidos, pero para 395M parámetros, la inferencia en GPU suele ser de decenas de milisegundos por secuencia corta.
 
 ## Comparativa con modelos similares
@@ -55,7 +55,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 | DeBERTa-v3-large | 304M | 512 tokens | MIT | Abierto |
 
 ## Limitaciones y advertencias
-- Acceso restringido: el modelo requiere aprobación manual en HuggingFace, lo que puede ralentizar su adopción en proyectos que necesiten despliegue inmediato.
+- Acceso restringido: el modelo requiere aprobación manual en Hugging Face, lo que puede ralentizar su adopción en proyectos que necesiten despliegue inmediato.
 - Falta de documentación: no hay papers, guías de uso ni ejemplos de código, lo que dificulta su integración y comprensión de los hiperparámetros esperados.
 - Sesgos potenciales: al no conocerse el dataset de entrenamiento, no se pueden evaluar sesgos lingüísticos, culturales o de dominio. El rendimiento en idiomas distintos del inglés (si es que solo soporta inglés) es incierto.
 - Riesgo de alucinación en clasificación: como todo modelo de lenguaje, puede producir falsos positivos o negativos en la detección de IA, especialmente con textos adversariales o de dominios técnicos.
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 - Fecha de creación futura (2026): el modelo está fechado en agosto de 2026, lo que podría indicar un error en la metadata o una publicación planificada; conviene verificar su estado real.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/rishanthrajendhran/ideadet-modernbert-391k-roles
+- Hugging Face del modelo: https://huggingface.co/rishanthrajendhran/ideadet-modernbert-391k-roles
 - Perfil del autor: https://huggingface.co/rishanthrajendhran
 - Sitio personal del autor: https://rishanthrajendhran.github.io/
 - Repositorio de ModernBERT (AnswerDotAI): https://github.com/AnswerDotAI/ModernBERT

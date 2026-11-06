@@ -74,6 +74,6 @@ No se conocen modelos comparables en la misma categoría de checkpoints de SFT c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h049.sft-verified.step_16
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h049.sft-verified.step_16
 - Dataset asociado del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de datasets de AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

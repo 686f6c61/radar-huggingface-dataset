@@ -99,7 +99,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/EOPSA-Qwen3-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/EOPSA-Qwen3-4B-GGUF
 - Modelo base: https://huggingface.co/neuqrui/EOPSA-Qwen3-4B
 - Pagina de resumen del cuantizador para este modelo: https://hf.tst.eu/model#EOPSA-Qwen3-4B-GGUF
 - Peticiones de modelos y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests

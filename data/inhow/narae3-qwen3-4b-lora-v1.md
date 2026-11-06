@@ -80,5 +80,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inhow/Narae3-Qwen3-4B-LoRA-v1
+- Repositorio Hugging Face: https://huggingface.co/inhow/Narae3-Qwen3-4B-LoRA-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

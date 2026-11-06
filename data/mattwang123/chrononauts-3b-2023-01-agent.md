@@ -78,9 +78,9 @@ La model card señala que la baja precisión y la frecuencia elevada de etiqueta
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2023-01 agent | 2,796 B | 8.192 tokens | Agente de búsqueda con corte temporal y GRPO | `other` | HuggingFace, código custom |
-| Chrononauts 3B 2023-01 sft | no disponible | 8.192 tokens | Afinado supervisado del mismo corte, sin RL | `other` | HuggingFace (repo hermano) |
-| Chrononauts 3B 2023-01 init | no disponible | 8.192 tokens | Preentrenamiento TiC-LM congelado en el corte | `other` | HuggingFace (repo hermano) |
+| Chrononauts 3B 2023-01 agent | 2,796 B | 8.192 tokens | Agente de búsqueda con corte temporal y GRPO | `other` | Hugging Face, código custom |
+| Chrononauts 3B 2023-01 sft | no disponible | 8.192 tokens | Afinado supervisado del mismo corte, sin RL | `other` | Hugging Face (repo hermano) |
+| Chrononauts 3B 2023-01 init | no disponible | 8.192 tokens | Preentrenamiento TiC-LM congelado en el corte | `other` | Hugging Face (repo hermano) |
 | Otros agentes RAG de ~3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos externos comparables en la información proporcionada; la comparación más directa posible es con los repositorios hermanos de la propia familia, que comparten arquitectura y corpus pero difieren en la etapa de entrenamiento.
@@ -95,11 +95,11 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos externos 
 - Depende de un corpus y un índice concretos (Wikipedia reconstruida más CC-News, embeddings `bge-base-en-v1.5`, faiss en CPU); usar otro recuperador altera el comportamiento y puede invalidar las etiquetas de evidencia.
 - Riesgo de alucinación dentro del corte: el filtrado de fuga se validó con un juez LLM y una comprobación de 36/40 hechos plantados, no con verificación exhaustiva; puede persistir conocimiento residual posterior al corte.
 - El protocolo de episodio exige hasta 8 turnos y un formato estricto; desviarse del formato (`<think>`, `<search>`, `<information>`, `<answer>`) degrada la calidad de forma no cuantificada.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta; proyecto con paper en preparación, por lo que la reproducibilidad de los resultados publicados aún no está avalada por una revisión por pares.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta; proyecto con paper en preparación, por lo que la reproducibilidad de los resultados publicados aún no está avalada por una revisión por pares.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2023-01-agent
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2023-01-agent
 - Repo hermano (etapa init): https://huggingface.co/mattwang123/chrononauts-3b-2023-01-init
 - Repo hermano (etapa sft): https://huggingface.co/mattwang123/chrononauts-3b-2023-01-sft
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

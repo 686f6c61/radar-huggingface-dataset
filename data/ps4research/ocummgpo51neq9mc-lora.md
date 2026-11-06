@@ -94,7 +94,7 @@ La busqueda web realizada no ha devuelto ningun modelo comparable de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/ocuMmGPo51nEQ9MC-lora
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/ocuMmGPo51nEQ9MC-lora
 - Modelo base: https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct
 - Perfil del autor: https://huggingface.co/PS4Research
 - Listado de modelos del autor: https://huggingface.co/PS4Research/models

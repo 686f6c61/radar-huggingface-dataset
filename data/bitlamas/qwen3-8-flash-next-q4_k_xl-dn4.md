@@ -70,13 +70,13 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Comparativa con modelos similares
 
-Las alternativas más directas son las otras cuantizaciones del mismo modelo base, todas con la misma licencia y disponibles en HuggingFace:
+Las alternativas más directas son las otras cuantizaciones del mismo modelo base, todas con la misma licencia y disponibles en Hugging Face:
 
 | Variante | Tamaño | Perplejidad | KL divergencia vs UD-Q4_K_XL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unsloth UD-Q4_K_XL | 111,3 GB | 2,9117 | referencia | qwen-community-1.0 | HuggingFace |
-| este archivo (Q4_K_XL-DN4) | 102,5 GB | 2,9165 | 0,028 | qwen-community-1.0 | HuggingFace |
-| unsloth UD-IQ4_XS | 93,7 GB | 2,998 | 0,089 | qwen-community-1.0 | HuggingFace |
+| unsloth UD-Q4_K_XL | 111,3 GB | 2,9117 | referencia | qwen-community-1.0 | Hugging Face |
+| este archivo (Q4_K_XL-DN4) | 102,5 GB | 2,9165 | 0,028 | qwen-community-1.0 | Hugging Face |
+| unsloth UD-IQ4_XS | 93,7 GB | 2,998 | 0,089 | qwen-community-1.0 | Hugging Face |
 
 El modelo base sin cuantizar no se ha incluido en esta comparativa porque no se dispone de datos de tamaño o rendimiento en la información consultada. Qwen3.7-Plus se menciona como referencia en el repositorio oficial, pero sin cifras de benchmark.
 
@@ -90,6 +90,6 @@ El modelo base sin cuantizar no se ha incluido en esta comparativa porque no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/bitlamas/Qwen3.8-Flash-Next-Q4_K_XL-DN4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/bitlamas/Qwen3.8-Flash-Next-Q4_K_XL-DN4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/

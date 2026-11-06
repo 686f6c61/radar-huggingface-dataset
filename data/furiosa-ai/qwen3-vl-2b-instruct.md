@@ -74,7 +74,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-VL-2B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-VL-2B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Documentacion de Furiosa-LLM para Qwen3-VL: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-vl.html
 - Guia de modelos de vision-lenguaje de Furiosa: https://developer.furiosa.ai/latest/en/furiosa_llm/vision-language.html

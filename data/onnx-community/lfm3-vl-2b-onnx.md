@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | LFM3-VL-2B (ONNX) | 1,92B | 128K | Imagen + vídeo | ONNX / Transformers.js | LFM Open License v1.0 |
 | Qwen2.5-VL-3B-Instruct | 3B | 128K (aprox.) | Imagen + vídeo | GGUF / safetensors | Apache 2.0 (base) |
-| SmolVLM2 2.2B (HuggingFace) | 2,2B | 16K aprox. | Imagen + vídeo | safetensors | Apache 2.0 |
+| SmolVLM2 2.2B (Hugging Face) | 2,2B | 16K aprox. | Imagen + vídeo | safetensors | Apache 2.0 |
 
 Nota: los datos de los modelos comparables son aproximados y pueden variar; la ventaja diferencial de LFM3-VL-2B es su arquitectura híbrida optimizada para edge y el soporte nativo ONNX para navegador.
 

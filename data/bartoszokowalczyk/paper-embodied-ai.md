@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`bartoszokowalczyk/paper-embodied-ai` no es un modelo entrenado, sino un repositorio de HuggingFace que aloja una nota de investigación en curso sobre inteligencia artificial encarnada (embodied AI). El autor, bartoszokowalczyk, publica un artefacto principal, `analysis.md`, acompañado del `README.md` de documentación. La propia model card aclara que el contenido no es un artículo terminado ni una release de modelos entrenados: organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
+`bartoszokowalczyk/paper-embodied-ai` no es un modelo entrenado, sino un repositorio de Hugging Face que aloja una nota de investigación en curso sobre inteligencia artificial encarnada (embodied AI). El autor, bartoszokowalczyk, publica un artefacto principal, `analysis.md`, acompañado del `README.md` de documentación. La propia model card aclara que el contenido no es un artículo terminado ni una release de modelos entrenados: organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
 
 El repositorio lleva las etiquetas `safetensors`, `transformer`, `research-notes` y `embodied-ai`, y declara 16.576 parámetros almacenados en formato safetensors, con un tamaño de repositorio de 0,0 GB. Ese recuento es compatible con un fichero residual o de prueba, no con un transformer utilizable: no se publican configuración de arquitectura, tokenizador ni dimensiones de embeddings.
 
-Su relevancia es documental más que técnica. Sirve como ejemplo de repositorio de HuggingFace empleado como cuaderno de investigación abierto sobre IA encarnada, un área con revisiones amplias recientes, como el survey «Embodied AI: From LLMs to World Models» (arXiv:2509.20021). No debe evaluarse como alternativa a ningún modelo desplegable.
+Su relevancia es documental más que técnica. Sirve como ejemplo de repositorio de Hugging Face empleado como cuaderno de investigación abierto sobre IA encarnada, un área con revisiones amplias recientes, como el survey «Embodied AI: From LLMs to World Models» (arXiv:2509.20021). No debe evaluarse como alternativa a ningún modelo desplegable.
 
 ## Especificaciones técnicas
 
@@ -47,7 +47,7 @@ Tampoco hay información sobre datos de entrenamiento: no se indica número de t
 - Material docente: en un seminario de doctorado puede usarse para discutir la diferencia entre plan de evaluación y resultado experimental, dado que la model card separa explícitamente ambos niveles.
 - Redacción de propuestas de financiación: la estructura de motivación, hipótesis y plan de evaluación es reutilizable como esqueleto de una sección de metodología.
 - Auditoría de reproducibilidad: la nota exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que sirve como checklist interna para equipos de investigación.
-- Revisión de expectativas sobre repositorios de HuggingFace: útil como caso de estudio de metadatos que declaran la etiqueta `transformer` sin que exista un modelo funcional detrás.
+- Revisión de expectativas sobre repositorios de Hugging Face: útil como caso de estudio de metadatos que declaran la etiqueta `transformer` sin que exista un modelo funcional detrás.
 - Ninguno de estos casos implica ejecutar inferencia: el repositorio no contiene un modelo desplegable.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es una alternativa a un modelo de lenguaje o a un sistema encarnado entrenado, por lo que no procede compararlo en parámetros, contexto o rendimiento con alternativas de la misma categoría. Su equivalente funcional serían otros repositorios de notas de investigación alojados en HuggingFace, para los que no se dispone de datos comparativos en la información proporcionada.
+No disponible. Este repositorio no es una alternativa a un modelo de lenguaje o a un sistema encarnado entrenado, por lo que no procede compararlo en parámetros, contexto o rendimiento con alternativas de la misma categoría. Su equivalente funcional serían otros repositorios de notas de investigación alojados en Hugging Face, para los que no se dispone de datos comparativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No disponible. Este repositorio no es una alternativa a un modelo de lenguaje o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bartoszokowalczyk/paper-embodied-ai
+- Modelo en Hugging Face: https://huggingface.co/bartoszokowalczyk/paper-embodied-ai
 - Survey «Embodied AI: From LLMs to World Models» (arXiv): https://arxiv.org/abs/2509.20021
 - Versión PDF del survey: https://arxiv.org/pdf/2509.20021
 - Versión en IEEE Xplore: https://ieeexplore.ieee.org/abstract/document/11317901

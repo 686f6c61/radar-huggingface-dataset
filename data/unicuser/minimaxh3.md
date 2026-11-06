@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Unicuser/minimaxh3` en HuggingFace contiene un conjunto de pesos de 1.7 GB bajo licencia Apache 2.0, creado por el usuario Unicuser. La model card está vacía, por lo que no se dispone de información técnica, documentación ni ejemplos de uso. Los resultados de búsqueda web sugieren que "MiniMax H3" podría ser un modelo multimodal de generación de vídeo con audio 3D sincronizado, desarrollado por MiniMax (Hailuo AI 3.0), pero no hay confirmación de que este repositorio sea el modelo oficial ni de que los pesos correspondan a dicha arquitectura. En consecuencia, la ficha se limita a los datos disponibles y marca como no disponible cualquier especificación no verificada.
+El repositorio `Unicuser/minimaxh3` en Hugging Face contiene un conjunto de pesos de 1.7 GB bajo licencia Apache 2.0, creado por el usuario Unicuser. La model card está vacía, por lo que no se dispone de información técnica, documentación ni ejemplos de uso. Los resultados de búsqueda web sugieren que "MiniMax H3" podría ser un modelo multimodal de generación de vídeo con audio 3D sincronizado, desarrollado por MiniMax (Hailuo AI 3.0), pero no hay confirmación de que este repositorio sea el modelo oficial ni de que los pesos correspondan a dicha arquitectura. En consecuencia, la ficha se limita a los datos disponibles y marca como no disponible cualquier especificación no verificada.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El repositorio `Unicuser/minimaxh3` en HuggingFace contiene un conjunto de pesos
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre arquitectura, datos de entrenamiento o innovaciones técnicas. La model card del repositorio está vacía y los metadatos de HuggingFace no incluyen detalles. Las fuentes web externas mencionan que MiniMax H3 es un modelo de vídeo multimodal con capacidades de audio 3D, pero no aportan datos verificables sobre su arquitectura ni su proceso de entrenamiento.
+No se dispone de información sobre arquitectura, datos de entrenamiento o innovaciones técnicas. La model card del repositorio está vacía y los metadatos de Hugging Face no incluyen detalles. Las fuentes web externas mencionan que MiniMax H3 es un modelo de vídeo multimodal con capacidades de audio 3D, pero no aportan datos verificables sobre su arquitectura ni su proceso de entrenamiento.
 
 ## Capacidades
 
@@ -51,6 +51,6 @@ No disponible. No se dispone de información técnica suficiente para comparar e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Unicuser/minimaxh3
+- Repositorio en Hugging Face: https://huggingface.co/Unicuser/minimaxh3
 - GitHub de ai-models-lab/minimax-h3: https://github.com/ai-models-lab/minimax-h3
 - Sitio web de MiniMax H3: https://minimaxh3ai.io/

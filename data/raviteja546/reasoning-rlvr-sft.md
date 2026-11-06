@@ -106,9 +106,9 @@ El autor advierte que la comparación emparejada frente al modelo base con la pl
 
 | Modelo | Parámetros | Contexto | GSM8K | MATH-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| reasoning-rlvr-sft | 1,72B | 4.096 | 74,8 (think_tag) | 50,6 (think_tag) | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B-Base (base) | 1,72B | 4.096 en la evaluación | 61,8 (think_tag), 82,2 (zero_shot) | 44,8 (think_tag), 63,2 (zero_shot) | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B (instruct) | 1,72B | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| reasoning-rlvr-sft | 1,72B | 4.096 | 74,8 (think_tag) | 50,6 (think_tag) | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B-Base (base) | 1,72B | 4.096 en la evaluación | 61,8 (think_tag), 82,2 (zero_shot) | 44,8 (think_tag), 63,2 (zero_shot) | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B (instruct) | 1,72B | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La comparación más directa es con el propio modelo base, ya que el autor no proporciona referencias frente a otros modelos de la misma categoría. Los datos de Qwen3-1.7B instruct no están disponibles en la información proporcionada.
 
@@ -127,7 +127,7 @@ La comparación más directa es con el propio modelo base, ya que el autor no pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raviteja546/reasoning-rlvr-sft
+- Modelo en Hugging Face: https://huggingface.co/Raviteja546/reasoning-rlvr-sft
 - Repositorio del estudio: https://github.com/rrtchaganti/reasoning-rlvr
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

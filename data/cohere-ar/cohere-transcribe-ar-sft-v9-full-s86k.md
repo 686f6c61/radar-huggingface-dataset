@@ -4,7 +4,7 @@
 
 Cohere-transcribe-ar-sft-v9-full-s86k es un modelo de reconocimiento automático del habla (ASR) desarrollado por Cohere-AR, el equipo de Cohere dedicado a la lengua árabe. Se trata de un ajuste fino supervisado (SFT) del modelo base CohereLabs/cohere-transcribe-arabic-07-2026, orientado a transcripción de audio en árabe e inglés, con énfasis explícito en code-switching (alternancia de idiomas dentro de una misma conversación) y en audio telefónico. El checkpoint se publica bajo la librería transformers en formato safetensors y con un total de 2.065.770.752 parámetros.
 
-El modelo resuelve un problema concreto: la transcripción fiable de habla árabe real, que con frecuencia mezcla registros dialectales, términos en inglés y condiciones acústicas degradadas propias de la telefonía. La ficha del repositorio declara compatibilidad con endpoints y una licencia no especificada, y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+El modelo resuelve un problema concreto: la transcripción fiable de habla árabe real, que con frecuencia mezcla registros dialectales, términos en inglés y condiciones acústicas degradadas propias de la telefonía. La ficha del repositorio declara compatibilidad con endpoints y una licencia no especificada, y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 Su relevancia actual radica en la escasez de modelos ASR abiertos con cobertura específica de árabe conversacional y code-switching ar-en, un escenario habitual en atención al cliente, call centers y análisis de reuniones en la región MENA. El tamaño del repo (4,1 GB) y los 2,07 mil millones de parámetros lo sitúan en un rango desplegable en GPU de gama alta consumer con cuantización.
 
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cohere-AR/cohere-transcribe-ar-sft-v9-full-s86k | 2,07 B | ar, en (code-switching) | no disponible | no disponible | gated en HuggingFace |
+| Cohere-AR/cohere-transcribe-ar-sft-v9-full-s86k | 2,07 B | ar, en (code-switching) | no disponible | no disponible | gated en Hugging Face |
 | CohereLabs/cohere-transcribe-arabic-07-2026 (modelo base) | no disponible | ar (y posiblemente en) | no disponible | no disponible | referenciado como base |
-| Whisper large-v3 (OpenAI) | ~1,55 B | multilingüe (99 idiomas) | 30 s de audio por ventana | MIT | abierto en HuggingFace |
-| MMS / wav2vec2 árabe (Meta) | variable según checkpoint | multilingüe / ar | no aplica (modelos acústicos) | variable | abierto en HuggingFace |
+| Whisper large-v3 (OpenAI) | ~1,55 B | multilingüe (99 idiomas) | 30 s de audio por ventana | MIT | abierto en Hugging Face |
+| MMS / wav2vec2 árabe (Meta) | variable según checkpoint | multilingüe / ar | no aplica (modelos acústicos) | variable | abierto en Hugging Face |
 
 La comparación con Whisper large-v3 es la más directa por tamaño y propósito general, aunque Whisper no está especializado en code-switching ar-en ni en telefonía. No se dispone de métricas comparativas de WER en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos; esto puede bloquear pipelines automatizados de CI/CD.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos; esto puede bloquear pipelines automatizados de CI/CD.
 - Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar las condiciones del gate antes de integrarlo en producción.
 - Idiomas limitados a árabe e inglés: no se declara soporte de otros idiomas, por lo que no es adecuado para escenarios multilingües amplios.
 - Sin datos de benchmarks: no hay métricas publicadas de WER, latencia ni robustez, lo que impide evaluar su calidad objetiva frente a alternativas.
@@ -82,6 +82,6 @@ La comparación con Whisper large-v3 es la más directa por tamaño y propósito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full-s86k
+- Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full-s86k
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

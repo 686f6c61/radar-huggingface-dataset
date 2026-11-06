@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beat This! final0 ONNX es una exportación a formato ONNX del checkpoint `final0` del modelo Beat This!, desarrollado por el Institute of Computational Perception de la Johannes Kepler Universität Linz (JKU). Se trata de un modelo de clasificación de audio especializado en *beat tracking* y *downbeat tracking*: recibe una señal de audio mono y devuelve, fotograma a fotograma (cada 20 ms), logits de pulso musical (beat) y de primer pulso de compás (downbeat). No es un modelo de lenguaje: su pipeline en HuggingFace es `audio-classification`.
+Beat This! final0 ONNX es una exportación a formato ONNX del checkpoint `final0` del modelo Beat This!, desarrollado por el Institute of Computational Perception de la Johannes Kepler Universität Linz (JKU). Se trata de un modelo de clasificación de audio especializado en *beat tracking* y *downbeat tracking*: recibe una señal de audio mono y devuelve, fotograma a fotograma (cada 20 ms), logits de pulso musical (beat) y de primer pulso de compás (downbeat). No es un modelo de lenguaje: su pipeline en Hugging Face es `audio-classification`.
 
 La relevancia de esta versión concreta reside en el empaquetado. El autor, Chris-Kode, ha exportado los pesos a ONNX (opset 18) e incorporado dentro del grafo tanto el remuestreo a 22,05 kHz mediante un resampler windowed-sinc como el front-end log-mel (`LogMelSpect`), de modo que el modelo acepta directamente audio a 32 kHz y elimina la dependencia de soxr y del código Python de preprocesado. El resultado es un único fichero de 84.973.959 bytes (unos 0,1 GB de repositorio) con pesos float32 sin modificar.
 
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chris-Kode/beat-this-final0-onnx
+- Modelo en Hugging Face: https://huggingface.co/Chris-Kode/beat-this-final0-onnx
 - Repositorio original de Beat This! (JKU): https://github.com/CPJKU/beat_this
 - Espejo de pesos de origen: https://huggingface.co/safe-models/beat-this-final0

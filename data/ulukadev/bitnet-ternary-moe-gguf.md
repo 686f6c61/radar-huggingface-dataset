@@ -92,7 +92,7 @@ La comparativa con Qwen2.5 es orientativa: el modelo de UlukaDev no está diseñ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/UlukaDev/bitnet-ternary-moe-gguf
+- Repositorio Hugging Face: https://huggingface.co/UlukaDev/bitnet-ternary-moe-gguf
 - Código, lanzador y harness de evaluación: https://github.com/agentulukaADMIN/ternary-moe
 - Router de expertos: https://huggingface.co/UlukaDev/bitnet-moe-router
 - Motor de inferencia (fork con parche): https://github.com/tetherto/qvac-fabric-llm.cpp

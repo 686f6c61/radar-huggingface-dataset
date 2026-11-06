@@ -96,7 +96,7 @@ Nota: la fila de Qwen3-30B-A3B procede de conocimiento público general sobre la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.5-35B-A3B-FP8Dyn-MTP-BF16-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.5-35B-A3B-FP8Dyn-MTP-BF16-pr3118-validation
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Revisión concreta del modelo base usada como origen: https://huggingface.co/Qwen/Qwen3.5-35B-A3B/tree/59d61f3ce65a6d9863b86d2e96597125219dc754
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/main/LICENSE

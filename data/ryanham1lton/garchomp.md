@@ -1,7 +1,7 @@
 # Ryanham1lton/Garchomp
 
 ## Resumen
-Garchomp es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio se creó el 26 de septiembre de 2026, ocupa 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes". La model card asociada no contiene más información que la declaración de licencia, por lo que no hay documentación pública sobre arquitectura, datos de entrenamiento, tokenizador o capacidades.
+Garchomp es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio se creó el 26 de septiembre de 2026, ocupa 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes". La model card asociada no contiene más información que la declaración de licencia, por lo que no hay documentación pública sobre arquitectura, datos de entrenamiento, tokenizador o capacidades.
 
 No se ha publicado información sobre el problema que el modelo pretende resolver, el pipeline asociado, los idiomas soportados ni el formato de los pesos. El tamaño del repositorio es compatible con un modelo de parámetros reducidos o con pesos ya cuantizados, pero se trata de una inferencia a partir del tamaño del archivo y no de un dato confirmado por el autor.
 
@@ -65,7 +65,7 @@ No disponible. Al no conocerse el número de parámetros, la arquitectura, la lo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Garchomp | no disponible | no disponible | no disponible | CC-BY-4.0 | HuggingFace |
+| Garchomp | no disponible | no disponible | no disponible | CC-BY-4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No disponible. Al no conocerse el número de parámetros, la arquitectura, la lo
 - Fecha de publicación futura respecto a la fecha de consulta del repositorio: conviene verificar la integridad y vigencia de los metadatos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Ryanham1lton/Garchomp
+- Hugging Face: https://huggingface.co/Ryanham1lton/Garchomp
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información disponible.

@@ -4,7 +4,7 @@
 
 El modelo `burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24` es una variante cuantizada en GGUF del modelo base `HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive`, que a su vez deriva de la serie Qwen3.6 de Alibaba. Se trata de un modelo de arquitectura MoE (Mixture of Experts) con aproximadamente 34,7 mil millones de parámetros totales y 3 mil millones de parámetros activos por token, lo que lo hace eficiente para inferencia a pesar de su tamaño. El autor, `burningfeet`, aplica sobre el modelo base su algoritmo propietario "Genesis", un proceso de post-entrenamiento que repara la "pureza de la señal" en los tensores mediante técnicas de estadística matemática y descomposición SVD, con el objetivo de eliminar el ruido acumulado durante el entrenamiento que, según su autor, degrada la estabilidad y aumenta la propensión a alucinaciones.
 
-Este modelo se presenta como una versión "uncensored" (sin censura) y "agentic", con soporte para tool calling y respuestas JSON estructuradas, además de capacidades multimodales (imagen-texto a texto). La versión V10 es la más reciente de la serie Genesis Hermes y se enfoca en comportamiento agéntico y transferencia orientada a Hermes. El repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace, aunque la licencia declarada es Apache 2.0. Está pensado para usuarios que buscan una alternativa sin restricciones de contenido para tareas de razonamiento, generación de código y automatización de agentes, con la ventaja de poder ejecutarse en hardware de consumo mediante cuantización GGUF.
+Este modelo se presenta como una versión "uncensored" (sin censura) y "agentic", con soporte para tool calling y respuestas JSON estructuradas, además de capacidades multimodales (imagen-texto a texto). La versión V10 es la más reciente de la serie Genesis Hermes y se enfoca en comportamiento agéntico y transferencia orientada a Hermes. El repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face, aunque la licencia declarada es Apache 2.0. Está pensado para usuarios que buscan una alternativa sin restricciones de contenido para tareas de razonamiento, generación de código y automatización de agentes, con la ventaja de poder ejecutarse en hardware de consumo mediante cuantización GGUF.
 
 ## Especificaciones tecnicas
 
@@ -71,13 +71,13 @@ No se dispone de datos de rendimiento comparativos fiables. La principal diferen
 - Sesgos conocidos: al ser un modelo "uncensored", puede reproducir y amplificar sesgos sociales, politicos o culturales presentes en sus datos de entrenamiento. No se han realizado evaluaciones de sesgo publicas.
 - Riesgo de alucinacion: aunque el algoritmo Genesis pretende reducirlo, no se han publicado metricas que lo confirmen. En modelos sin censura, las alucinaciones pueden ser especialmente peligrosas si se usan en contextos profesionales.
 - Limitaciones de contexto: la longitud de contexto no esta documentada. Es probable que herede la ventana del modelo base Qwen3.6, pero no se puede confirmar.
-- Restricciones de licencia: aunque la licencia es Apache 2.0, el acceso al repositorio es restringido (gated) y requiere aceptar condiciones adicionales en HuggingFace, que pueden incluir restricciones de uso no reflejadas en la licencia.
+- Restricciones de licencia: aunque la licencia es Apache 2.0, el acceso al repositorio es restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face, que pueden incluir restricciones de uso no reflejadas en la licencia.
 - Uso en produccion: la falta de benchmarks y de documentacion tecnica detallada sobre el algoritmo Genesis hace recomendable una evaluacion exhaustiva antes de un despliegue critico. El modelo no ha sido auditado por terceros.
 - Contenido sin filtrar: el modo "uncensored" puede generar contenido ofensivo, ilegal o peligroso. El usuario es responsable del cumplimiento legal y etico en su jurisdiccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24
+- Repositorio Hugging Face: https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (enlace inferido, no verificado)
 - Descripcion del algoritmo Genesis (version V7): https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF-2026-08-07
 - Version V4 en Inferix: https://inferix.co/models/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V4-MTP-GGUF

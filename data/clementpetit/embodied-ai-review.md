@@ -69,7 +69,7 @@ No disponible. No existe una categoría de "modelos" comparable porque este repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/clementpetit/embodied-ai-review
+- Repositorio en Hugging Face: https://huggingface.co/clementpetit/embodied-ai-review
 - Survey sobre la evolución de la IA encarnada (Wiley): https://onlinelibrary.wiley.com/doi/full/10.1002/smb2.70003
 - Embodied Arena (plataforma de evaluación): https://www.embodied-arena.com/
 - Revisión de sistemas de inteligencia encarnada (Frontiers): https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1668910/full

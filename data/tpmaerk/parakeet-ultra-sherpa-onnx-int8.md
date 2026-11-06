@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Idiomas | Formato | WER (FLEURS de) | RTF | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| tpmaerk/parakeet-ultra-sherpa-onnx-int8 (este) | ~0.6B | de, en, multilingüe | ONNX int8 | 5.42 % | 46.2x | CC BY 4.0 | HuggingFace |
-| csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8 | ~0.6B | multilingüe (V3) | ONNX int8 | 6.82 % | 44.5x | CC BY 4.0 | HuggingFace |
-| moondream/parakeet-ultra | ~0.6B | de, en, multilingüe | safetensors | no disponible | no disponible | CC BY 4.0 | HuggingFace |
-| mldecode/parakeet-ultra-onnx-int8 | ~0.6B | multilingüe (25 idiomas europeos) | ONNX int8 | no disponible | no disponible | CC BY 4.0 | HuggingFace |
-| Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx | ~0.6B | multilingüe | ONNX | no disponible | no disponible | no disponible | HuggingFace |
+| tpmaerk/parakeet-ultra-sherpa-onnx-int8 (este) | ~0.6B | de, en, multilingüe | ONNX int8 | 5.42 % | 46.2x | CC BY 4.0 | Hugging Face |
+| csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8 | ~0.6B | multilingüe (V3) | ONNX int8 | 6.82 % | 44.5x | CC BY 4.0 | Hugging Face |
+| moondream/parakeet-ultra | ~0.6B | de, en, multilingüe | safetensors | no disponible | no disponible | CC BY 4.0 | Hugging Face |
+| mldecode/parakeet-ultra-onnx-int8 | ~0.6B | multilingüe (25 idiomas europeos) | ONNX int8 | no disponible | no disponible | CC BY 4.0 | Hugging Face |
+| Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx | ~0.6B | multilingüe | ONNX | no disponible | no disponible | no disponible | Hugging Face |
 
 Todas las alternativas comparten el mismo modelo base (Parakeet TDT 0.6B v3, ajustado por Moondream en el caso de Ultra) y difieren principalmente en la cadena de conversión y el empaquetado. El bundle de csukuangfj es la referencia declarada que este repositorio reemplaza.
 
@@ -94,7 +94,7 @@ Todas las alternativas comparten el mismo modelo base (Parakeet TDT 0.6B v3, aju
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/tpmaerk/parakeet-ultra-sherpa-onnx-int8
+- Hugging Face del modelo: https://huggingface.co/tpmaerk/parakeet-ultra-sherpa-onnx-int8
 - Modelo base (fine-tune): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Bundle de referencia que reemplaza: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8

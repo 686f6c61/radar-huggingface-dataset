@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`crpd-qwen3-1p7b-to-0p6b-smoke-student-ref` es un artefacto de investigación publicado por el usuario `ducthang1703` en HuggingFace. No es un modelo entrenado para uso real: la propia model card lo describe como un "SMOKE TEST (tiny data, not a usable model)" del pipeline ChunkRatio-PD (ChunkRatio Preference Distillation), un método de destilación de preferencias en el que un modelo profesor (Qwen3-1.7B) transfiere conocimiento a un alumno (Qwen3-0.6B). Este repositorio concreto contiene el rol `student_ref`, es decir, la referencia del estudiante dentro del par profesor-alumno del experimento.
+`crpd-qwen3-1p7b-to-0p6b-smoke-student-ref` es un artefacto de investigación publicado por el usuario `ducthang1703` en Hugging Face. No es un modelo entrenado para uso real: la propia model card lo describe como un "SMOKE TEST (tiny data, not a usable model)" del pipeline ChunkRatio-PD (ChunkRatio Preference Distillation), un método de destilación de preferencias en el que un modelo profesor (Qwen3-1.7B) transfiere conocimiento a un alumno (Qwen3-0.6B). Este repositorio concreto contiene el rol `student_ref`, es decir, la referencia del estudiante dentro del par profesor-alumno del experimento.
 
 El modelo se construye sobre `Qwen/Qwen3-0.6B-Base` y cuenta con 596.049.920 parámetros reales según los pesos safetensors, lo que lo sitúa en la categoría de modelos pequeños (sub-1B). La licencia es Apache 2.0 y los pesos están en formato safetensors, compatibles con `transformers` y text-generation-inference. El repositorio ocupa 2,4 GB.
 
@@ -85,7 +85,7 @@ La comparación relevante es con el modelo base Qwen3-0.6B-Base: comparten arqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducthang1703/crpd-qwen3-1p7b-to-0p6b-smoke-student-ref
+- Hugging Face: https://huggingface.co/ducthang1703/crpd-qwen3-1p7b-to-0p6b-smoke-student-ref
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo profesor (referenciado en el par): https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset SFT: https://huggingface.co/datasets/hkust-nlp/deita-10k-v0

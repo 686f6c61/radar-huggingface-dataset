@@ -98,7 +98,7 @@ No se dispone de resultados comparables publicados en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreadm/reddit-pulse-llama3.2_3b-qdora
+- Modelo en Hugging Face: https://huggingface.co/andreadm/reddit-pulse-llama3.2_3b-qdora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Codigo de ajuste fino e inferencia sobre el corpus completo: https://github.com/andrea-dm/reddit-pulse
 - Articulo de referencia: Del Monaco, A., Longo, L., Marcucci, J. y Tafani, I. (2026), "Reddit's 'pulse' on US inflation: forecasting with large language models", Journal of Applied Econometrics (en prensa).

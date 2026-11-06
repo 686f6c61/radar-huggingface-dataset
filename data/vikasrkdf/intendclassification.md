@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Vikasrkdf/IntendClassification es un repositorio publicado en HuggingFace por el usuario Vikasrkdf, con licencia MIT y etiquetado para la región "us". En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card se limita a una única línea de metadatos con la licencia. No se dispone de información sobre arquitectura, número de parámetros, datos de entrenamiento ni idiomas soportados.
+Vikasrkdf/IntendClassification es un repositorio publicado en Hugging Face por el usuario Vikasrkdf, con licencia MIT y etiquetado para la región "us". En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card se limita a una única línea de metadatos con la licencia. No se dispone de información sobre arquitectura, número de parámetros, datos de entrenamiento ni idiomas soportados.
 
-El nombre del repositorio sugiere que el artefacto podría estar orientado a tareas de clasificación de intenciones (intent classification), típicas de sistemas de diálogo, asistentes conversacionales y enrutamiento de consultas. Se trata, sin embargo, de una inferencia a partir del identificador del modelo y no de un dato confirmado por la documentación publicada. Tampoco se ha especificado el pipeline en HuggingFace, lo que impide determinar si se trata de un modelo de texto, un clasificador, un tokenizador o un conjunto de artefactos auxiliares.
+El nombre del repositorio sugiere que el artefacto podría estar orientado a tareas de clasificación de intenciones (intent classification), típicas de sistemas de diálogo, asistentes conversacionales y enrutamiento de consultas. Se trata, sin embargo, de una inferencia a partir del identificador del modelo y no de un dato confirmado por la documentación publicada. Tampoco se ha especificado el pipeline en Hugging Face, lo que impide determinar si se trata de un modelo de texto, un clasificador, un tokenizador o un conjunto de artefactos auxiliares.
 
 Dada la ausencia total de documentación técnica, esta ficha se limita a recoger los metadatos verificables y a marcar explícitamente como "no disponible" cualquier dato que no pueda contrastarse. Cualquier evaluación de idoneidad para producción debería posponerse hasta que el autor publique una model card completa, pesos accesibles y resultados reproducibles.
 
@@ -20,7 +20,7 @@ Dada la ausencia total de documentación técnica, esta ficha se limita a recoge
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Autor | Vikasrkdf |
 | Region declarada | us |
 | Descargas | 0 |
@@ -94,7 +94,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vikasrkdf/IntendClassification
+- Hugging Face: https://huggingface.co/Vikasrkdf/IntendClassification
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -106,7 +106,7 @@ Frente a estas alternativas, `aaie-gft-rca-sft-8k` no compite en capacidades gen
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/namquangstudy/aaie-gft-rca-sft-8k
+- Ficha en Hugging Face: https://huggingface.co/namquangstudy/aaie-gft-rca-sft-8k
 - Modelo base: https://huggingface.co/namquangstudy/aaie-ddense-gft-llama
 - Repositorio de código de entrenamiento: https://github.com/namquangstudy/moe-bench/tree/main/sft_rca
 - Búsqueda web: no se han encontrado resultados relevantes sobre el modelo; las consultas devolvieron únicamente páginas de ayuda de Gmail, sin relación con el artefacto. No hay paper, blog ni demo adicionales disponibles.

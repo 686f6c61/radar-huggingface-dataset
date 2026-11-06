@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Jinstudio/FLUX.1-schnell` es un espejo (mirror) sin restricciones de acceso del modelo de generación de imágenes texto-a-imagen `black-forest-labs/FLUX.1-schnell`, publicado por el usuario de HuggingFace Jinstudio. Según la model card del repositorio, los pesos no están modificados y se redistribuyen con los mismos términos que el modelo original. El modelo original lo desarrolla Black Forest Labs, el equipo responsable también de la familia Stable Diffusion original.
+`Jinstudio/FLUX.1-schnell` es un espejo (mirror) sin restricciones de acceso del modelo de generación de imágenes texto-a-imagen `black-forest-labs/FLUX.1-schnell`, publicado por el usuario de Hugging Face Jinstudio. Según la model card del repositorio, los pesos no están modificados y se redistribuyen con los mismos términos que el modelo original. El modelo original lo desarrolla Black Forest Labs, el equipo responsable también de la familia Stable Diffusion original.
 
 Se trata de un transformer de flujo rectificado (rectified flow transformer) de aproximadamente 11.891.178.560 parámetros (unos 11,9 mil millones), entrenado con destilación adversarial latente sobre difusión, lo que le permite generar imágenes de alta calidad en solo 1 a 4 pasos de inferencia, frente a los 20-50 pasos habituales en modelos de difusión convencionales. Está publicado bajo licencia Apache 2.0, lo que habilita uso personal, científico y comercial. El repositorio ocupa 57,8 GB e incluye los pesos en formato safetensors.
 
-Su relevancia práctica reside en dos factores: por un lado, la licencia Apache 2.0 es más permisiva que la del modelo hermano `FLUX.1 [dev]`, que restringe el uso comercial; por otro, la reducción del número de pasos a 1-4 abarata drásticamente el coste por imagen en producción. Conviene señalar que este repositorio concreto es un espejo con 0 descargas y 0 likes registrados, sin verificación independiente, y que la model card lo atribuye a Unsloth mientras el propietario del repositorio en HuggingFace figura como Jinstudio, una discrepancia que conviene tener en cuenta antes de usarlo como fuente de pesos en producción.
+Su relevancia práctica reside en dos factores: por un lado, la licencia Apache 2.0 es más permisiva que la del modelo hermano `FLUX.1 [dev]`, que restringe el uso comercial; por otro, la reducción del número de pasos a 1-4 abarata drásticamente el coste por imagen en producción. Conviene señalar que este repositorio concreto es un espejo con 0 descargas y 0 likes registrados, sin verificación independiente, y que la model card lo atribuye a Unsloth mientras el propietario del repositorio en Hugging Face figura como Jinstudio, una discrepancia que conviene tener en cuenta antes de usarlo como fuente de pesos en producción.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ Los datos de los modelos comparados provienen del conocimiento general de la fam
 
 | Modelo | Parámetros | Pasos típicos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FLUX.1 [schnell] (este espejo) | ≈11,9 B | 1-4 | Apache 2.0 | Pesos abiertos en HuggingFace (espejo sin gate) |
+| FLUX.1 [schnell] (este espejo) | ≈11,9 B | 1-4 | Apache 2.0 | Pesos abiertos en Hugging Face (espejo sin gate) |
 | FLUX.1 [dev] | ≈12 B | 20-50 | Licencia no comercial de Black Forest Labs | Pesos abiertos, con condiciones de uso restringidas |
 | FLUX.1 [pro] | No disponible | No disponible | Propietaria | Solo API (bfl.ml) |
 | Stable Diffusion 3.5 Large | ≈8 B | 20-50 | Stability AI Community License | Pesos abiertos con condiciones |
@@ -98,7 +98,7 @@ La ventaja diferencial de `FLUX.1 [schnell]` frente a `FLUX.1 [dev]` es la licen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jinstudio/FLUX.1-schnell
+- Repositorio en Hugging Face: https://huggingface.co/Jinstudio/FLUX.1-schnell
 - Repositorio original: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - Anuncio y blog de Black Forest Labs: https://blackforestlabs.ai/announcing-black-forest-labs/
 - Implementación de referencia y código de muestreo: https://github.com/black-forest-labs/flux

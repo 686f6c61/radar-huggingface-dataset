@@ -94,10 +94,10 @@ Nota: los datos de las alternativas son características públicas de cada model
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (svd-safety-llama2_7b_chat_up_basis_coeff_jbbmix_finetuned_keep_0p50) | 6.738.415.616 almacenados; fracción retenida 0,4998 | 4.096 tokens | llama2 | HuggingFace, safetensors, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | llama2 | HuggingFace, ampliamente desplegado |
+| Este modelo (svd-safety-llama2_7b_chat_up_basis_coeff_jbbmix_finetuned_keep_0p50) | 6.738.415.616 almacenados; fracción retenida 0,4998 | 4.096 tokens | llama2 | Hugging Face, safetensors, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | llama2 | Hugging Face, ampliamente desplegado |
 | Otras celdas del proyecto Basis Sharing (mismo ratio, distinta calibración) | mismo orden de magnitud | 4.096 tokens | llama2 | Repositorio del proyecto |
-| Modelo base sin comprimir como referencia | 6.738.415.616 | 4.096 tokens | llama2 | HuggingFace |
+| Modelo base sin comprimir como referencia | 6.738.415.616 | 4.096 tokens | llama2 | Hugging Face |
 
 Alternativas de distinto linaje y licencia (por ejemplo, familias con licencia Apache-2.0 y contextos superiores a 30.000 tokens) son comparables en tamaño, pero no se dispone de resultados de benchmarks de este modelo frente a ellas en la información proporcionada.
 
@@ -116,12 +116,12 @@ Alternativas de distinto linaje y licencia (por ejemplo, familias con licencia A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_jbbmix_finetuned_keep_0p50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_jbbmix_finetuned_keep_0p50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Repositorio de Basis Sharing (TUDa-HWAI, commit `1c021b6ce1d3`): https://github.com/TUDa-HWAI/Basis_Sharing
 - Dataset de recuperación: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Dataset de calibración de seguridad (JailbreakBench, 100 comportamientos dañinos): https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors
 - Clasificador juez de HarmBench: https://huggingface.co/cais/HarmBench-Llama-2-13b-cls
 - Juez de sobre-rechazo: https://huggingface.co/allenai/wildguard
-- Artefactos de métricas y salidas por prompt: directorios `utility/` y `safety/` del repositorio en HuggingFace
+- Artefactos de métricas y salidas por prompt: directorios `utility/` y `safety/` del repositorio en Hugging Face
 - La búsqueda web realizada no devolvió enlaces relevantes (únicamente resultados deportivos sin relación con el modelo); no se dispone de paper, blog técnico ni demo adicionales verificados.

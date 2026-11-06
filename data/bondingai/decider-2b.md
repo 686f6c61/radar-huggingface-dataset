@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks academicos estandar (MMLU, HumanEva
 
 | Modelo | Parametros | Contexto | Regresion (in-task / held-out) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-2b v10 | 1,9B | no disponible | 0.805 / 0.755 | Apache 2.0 | HuggingFace |
-| decider-4b v1 | 4B (aprox.) | no disponible | 0.834 / 0.788 | no disponible | HuggingFace |
-| decider-35b-a3b v1 | 35B totales, 3B activos | no disponible | 0.855 / 0.810 | no disponible | HuggingFace |
-| decider-0.8b | 0,8B (aprox.) | no disponible | 0.776 / 0.707 | no disponible | HuggingFace |
+| decider-2b v10 | 1,9B | no disponible | 0.805 / 0.755 | Apache 2.0 | Hugging Face |
+| decider-4b v1 | 4B (aprox.) | no disponible | 0.834 / 0.788 | no disponible | Hugging Face |
+| decider-35b-a3b v1 | 35B totales, 3B activos | no disponible | 0.855 / 0.810 | no disponible | Hugging Face |
+| decider-0.8b | 0,8B (aprox.) | no disponible | 0.776 / 0.707 | no disponible | Hugging Face |
 
 La comparativa con modelos generativos de proposito general de tamano similar no esta disponible en la informacion proporcionada, ya que decider-2b no compite en generacion de texto sino en decision tipada.
 
@@ -95,7 +95,7 @@ La comparativa con modelos generativos de proposito general de tamano similar no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BondingAI/decider-2b
+- Modelo en Hugging Face: https://huggingface.co/BondingAI/decider-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Codigo, registro de datos y scripts de entrenamiento: https://github.com/Mapika/decider
 - decider-4b: https://huggingface.co/Mapika/decider-4b

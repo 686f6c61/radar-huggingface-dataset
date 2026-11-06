@@ -69,5 +69,5 @@ No disponible. Este repositorio no contiene un modelo de lenguaje comparable; es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/swetLAB/manuelafolda-bigngold
+- Repositorio Hugging Face: https://huggingface.co/swetLAB/manuelafolda-bigngold
 - Organizacion swetLAB: https://huggingface.co/swetLAB/SWETLAB

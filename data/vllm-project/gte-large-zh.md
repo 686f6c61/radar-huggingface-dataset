@@ -77,17 +77,17 @@ Resultados declarados por el autor en la model card (no verificados):
 - VRAM en FP16/BF16: aproximadamente 650 MB para pesos; 1,5-2 GB con overhead.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100, H100 funcionan sin problema.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU moderna, e incluso en CPU para lotes pequenos.
-- Opciones de despliegue: sentence-transformers (nativo), Text Embeddings Inference (TEI) de HuggingFace (tag `text-embeddings-inference` presente), vLLM (por el prefijo del repositorio), ONNX Runtime, llama.cpp no aplica (no es un modelo generativo GGUF).
+- Opciones de despliegue: sentence-transformers (nativo), Text Embeddings Inference (TEI) de Hugging Face (tag `text-embeddings-inference` presente), vLLM (por el prefijo del repositorio), ONNX Runtime, llama.cpp no aplica (no es un modelo generativo GGUF).
 - Latencia y throughput: no disponibles en la informacion proporcionada; para un BERT-large, se esperan ordenes de magnitud de miles de frases por segundo en A100 con batching.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gte-large-zh (este) | 325 M | no disponible | BERT encoder, embeddings zh | MIT | HuggingFace |
-| bge-large-zh-v1.5 | ~326 M | 512 tokens | BERT encoder, embeddings zh | MIT | HuggingFace |
-| text2vec-large-chinese | ~102 M | 512 tokens | BERT encoder, embeddings zh | Apache 2.0 | HuggingFace |
-| m3e-large | ~102 M | 512 tokens | BERT encoder, embeddings zh | Apache 2.0 | HuggingFace |
+| gte-large-zh (este) | 325 M | no disponible | BERT encoder, embeddings zh | MIT | Hugging Face |
+| bge-large-zh-v1.5 | ~326 M | 512 tokens | BERT encoder, embeddings zh | MIT | Hugging Face |
+| text2vec-large-chinese | ~102 M | 512 tokens | BERT encoder, embeddings zh | Apache 2.0 | Hugging Face |
+| m3e-large | ~102 M | 512 tokens | BERT encoder, embeddings zh | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos directos entre estos modelos en la informacion proporcionada; la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/gte-large-zh
+- Hugging Face: https://huggingface.co/vllm-project/gte-large-zh
 - Paper de la familia GTE: https://arxiv.org/abs/2308.03281
 - Repositorio canonico de GTE (Alibaba): no disponible en la informacion proporcionada
 - Documentacion de Text Embeddings Inference: no disponible en la informacion proporcionada

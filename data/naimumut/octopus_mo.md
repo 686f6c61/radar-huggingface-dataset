@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Naimumut/Octopus_MO es un repositorio de modelos alojado en HuggingFace por el usuario Naimumut, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia (`license: apache-2.0`) y ningun texto descriptivo: no se documenta arquitectura, tamano, datos de entrenamiento, capacidades ni metodologia de evaluacion. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
+Naimumut/Octopus_MO es un repositorio de modelos alojado en Hugging Face por el usuario Naimumut, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia (`license: apache-2.0`) y ningun texto descriptivo: no se documenta arquitectura, tamano, datos de entrenamiento, capacidades ni metodologia de evaluacion. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 El nombre del repositorio sugiere, por la terminologia empleada ("MO"), una posible relacion con arquitecturas de mezcla de expertos (Mixture of Experts, MoE), pero esta interpretacion es una mera hipotesis derivada del identificador y no esta confirmada por ninguna fuente. No existe documentacion tecnica, paper, blog ni anuncio que permita verificar que tipo de modelo es, que problema resuelve o en que se diferencia de alternativas existentes.
 
@@ -38,7 +38,7 @@ No disponible. Al no existir documentacion tecnica ni resultados de evaluacion, 
 - Dispone de modo de razonamiento explicito (thinking mode).
 - Cubre varios idiomas y en que grado.
 
-La unica capacidad inferible con certeza es la de ser descargable desde HuggingFace bajo licencia Apache 2.0, lo cual no aporta informacion sobre su comportamiento.
+La unica capacidad inferible con certeza es la de ser descargable desde Hugging Face bajo licencia Apache 2.0, lo cual no aporta informacion sobre su comportamiento.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Naimumut/Octopus_MO | no disponible | no disponible | apache-2.0 | repositorio HuggingFace sin documentacion |
+| Naimumut/Octopus_MO | no disponible | no disponible | apache-2.0 | repositorio Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Naimumut/Octopus_MO
+- Hugging Face: https://huggingface.co/Naimumut/Octopus_MO
 - Model card: no disponible (sin contenido tecnico)
 - Paper: no disponible
 - Blog o anuncio: no disponible

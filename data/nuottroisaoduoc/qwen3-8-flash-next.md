@@ -44,7 +44,7 @@ El entrenamiento se divide en pre-entrenamiento y post-entrenamiento. La receta 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numéricos en la información proporcionada. La model card de HuggingFace muestra una tabla de benchmarks, pero el contenido se encuentra truncado y no se han podido extraer valores concretos. En la web de unsloth se afirma que el modelo supera a Claude-4.6-Opus (Max) en tareas de agente de codificación y visión, pero no se ofrecen cifras específicas. Por tanto, no se dispone de datos verificables para presentar una tabla comparativa.
+No se han publicado resultados de benchmarks numéricos en la información proporcionada. La model card de Hugging Face muestra una tabla de benchmarks, pero el contenido se encuentra truncado y no se han podido extraer valores concretos. En la web de unsloth se afirma que el modelo supera a Claude-4.6-Opus (Max) en tareas de agente de codificación y visión, pero no se ofrecen cifras específicas. Por tanto, no se dispone de datos verificables para presentar una tabla comparativa.
 
 ## Requisitos de hardware
 
@@ -69,9 +69,9 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio de HuggingFace (versión espejo): https://huggingface.co/nuottiroisaoduoc/Qwen3.8-Flash-Next
-- Repositorio oficial de HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio de Hugging Face (versión espejo): https://huggingface.co/nuottiroisaoduoc/Qwen3.8-Flash-Next
+- Repositorio oficial de Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Blog de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Documentación de unsloth: https://unsloth.ai/docs/models/qwen3.8-next
-- Colección de Qwen en HuggingFace: https://huggingface.co/collections/Qwen/qwen38-flash-next
+- Colección de Qwen en Hugging Face: https://huggingface.co/collections/Qwen/qwen38-flash-next

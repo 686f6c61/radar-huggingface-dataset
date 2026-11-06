@@ -63,7 +63,7 @@ No se han publicado comparaciones con modelos comerciales (MMLU, HumanEval, GSM8
 - VRAM estimada: con 20,3 millones de parametros en fp32, el modelo ocupa unos 80 MB; no se requiere GPU para inferencia, es ejecutable en CPU
 - GPU recomendadas: no disponible (el modelo esta pensado para hardware minimo; cualquier GPU de consumo es mas que suficiente)
 - Consumer GPUs: cabe sobradamente en cualquier GPU moderna, incluso en integradas
-- Opciones de despliegue: script propio `generate.py` incluido en el repositorio (ejemplo: `python generate.py --prompt "Once upon a time" --max-new-bytes 128`); no hay soporte documentado de vLLM, llama.cpp, Ollama ni TGI, y la model card marca `inference: false` en HuggingFace
+- Opciones de despliegue: script propio `generate.py` incluido en el repositorio (ejemplo: `python generate.py --prompt "Once upon a time" --max-new-bytes 128`); no hay soporte documentado de vLLM, llama.cpp, Ollama ni TGI, y la model card marca `inference: false` en Hugging Face
 - Latencia y throughput: no disponible
 
 ## Comparativa con modelos similares
@@ -83,11 +83,11 @@ No hay modelos comerciales de categoria comparable publicados en la informacion 
 - Precisa 74,4 % de exactitud en claves retenidas del key-value retrieval, lo que indica que la generalizacion de memoria fuera de lo visto en entrenamiento no es perfecta
 - La precision en BLiMP (64,83 %) esta lejos de la de LLMs modernos, que superan el 90 % en esa misma prueba
 - No hay datos de idiomas soportados ni de composicion del corpus de entrenamiento; el comportamiento en castellano u otras lenguas no esta documentado
-- La inferencia en HuggingFace esta desactivada (`inference: false`), por lo que hay que ejecutarlo con el codigo del repositorio
+- La inferencia en Hugging Face esta desactivada (`inference: false`), por lo que hay que ejecutarlo con el codigo del repositorio
 - La licencia MIT es permisiva y permite uso comercial sin restricciones relevantes
 - Al ser un modelo experimental con muy pocas descargas, no existe comunidad ni soporte consolidado; puede contener errores no detectados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Counfield/Diogenes-0.1-20M
+- Modelo en Hugging Face: https://huggingface.co/Counfield/Diogenes-0.1-20M
 - Repositorio de investigacion (codigo, experimentos y resultados): https://github.com/berkmec/recurrent-looped-transformer-research

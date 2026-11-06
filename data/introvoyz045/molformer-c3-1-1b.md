@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoLFormer-c3-1.1B es un modelo de lenguaje quimico enmascarado (masked language model) para representaciones de moleculas, publicado por el usuario introvoyz045 en HuggingFace y descrito en el articulo de ChemBERTa-3. El modelo sigue la estela de la familia MoLFormer y se presenta como un modelo de 1.100 millones de parametros nominales, aunque el repositorio real contiene 46.805.760 parametros en pesos safetensors (0,7 GB), una discrepancia sustancial entre el nombre y el contenido que conviene tener en cuenta.
+MoLFormer-c3-1.1B es un modelo de lenguaje quimico enmascarado (masked language model) para representaciones de moleculas, publicado por el usuario introvoyz045 en Hugging Face y descrito en el articulo de ChemBERTa-3. El modelo sigue la estela de la familia MoLFormer y se presenta como un modelo de 1.100 millones de parametros nominales, aunque el repositorio real contiene 46.805.760 parametros en pesos safetensors (0,7 GB), una discrepancia sustancial entre el nombre y el contenido que conviene tener en cuenta.
 
 El modelo se ha preentrenado sobre una combinacion de ZINC20 (1.000 millones de compuestos) y PubChem (100 millones de compuestos), segun la model card, y esta disenado para la tarea de fill-mask sobre secuencias quimicas (SMILES). Su relevancia practica hoy es la de un modelo de fundacion quimica pequeno y de licencia MIT, util para fine-tuning en tareas de quimioinformatica y para experimentacion sin grandes requisitos de computo.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoLFormer-c3-1.1B (este) | 46,8 M reales (nombre indica 1.1B) | no disponible | fill-mask quimico | MIT | HuggingFace |
-| MoLFormer-base (DeepChem) | no disponible en la informacion | no disponible | embeddings quimicos | no disponible en la informacion | HuggingFace |
-| ChemBERTa-2 | no disponible en la informacion | no disponible | masked LM quimico | no disponible en la informacion | HuggingFace |
-| Modelos de la familia ChemBERTa-3 | no disponible en la informacion | no disponible | masked LM quimico | no disponible en la informacion | HuggingFace |
+| MoLFormer-c3-1.1B (este) | 46,8 M reales (nombre indica 1.1B) | no disponible | fill-mask quimico | MIT | Hugging Face |
+| MoLFormer-base (DeepChem) | no disponible en la informacion | no disponible | embeddings quimicos | no disponible en la informacion | Hugging Face |
+| ChemBERTa-2 | no disponible en la informacion | no disponible | masked LM quimico | no disponible en la informacion | Hugging Face |
+| Modelos de la familia ChemBERTa-3 | no disponible en la informacion | no disponible | masked LM quimico | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/introvoyz045/MoLFormer-c3-1.1B
+- Hugging Face: https://huggingface.co/introvoyz045/MoLFormer-c3-1.1B
 - Modelo referenciado en la model card: https://huggingface.co/DeepChem/MoLFormer-c3-1.1B
 - Paper de referencia: Singh R, Barsainyan AA, Irfan R, Amorin CJ, He S, Davis T, et al. ChemBERTa-3: An Open Source Training Framework for Chemical Foundation Models. RSC Digital Discovery 2026; doi:10.1039/D5DD00348B

@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/liruiyangnb666/DeepSeek-R1-Distill-Qwen-7B
+- Hugging Face: https://huggingface.co/liruiyangnb666/DeepSeek-R1-Distill-Qwen-7B
 - Paper: https://arxiv.org/abs/2501.12948
 - Repositorio oficial de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
-- Modelo oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+- Modelo oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B

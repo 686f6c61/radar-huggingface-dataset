@@ -68,10 +68,10 @@ Estos resultados han sido declarados por el autor del modelo y no están verific
 
 | Modelo | Parametros | Contexto (audio) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jinstudio/whisper-small | 241.7M | 30 s | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244M | 30 s | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74M | 30 s | Apache 2.0 | HuggingFace |
-| openai/whisper-medium | 769M | 30 s | Apache 2.0 | HuggingFace |
+| Jinstudio/whisper-small | 241.7M | 30 s | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244M | 30 s | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74M | 30 s | Apache 2.0 | Hugging Face |
+| openai/whisper-medium | 769M | 30 s | Apache 2.0 | Hugging Face |
 
 Jinstudio/whisper-small es funcionalmente idéntico al checkpoint oficial `openai/whisper-small`, con la diferencia de que el autor ha publicado los pesos en safetensors y reporta un número de parámetros ligeramente distinto. Comparado con whisper-base, ofrece mejor precisión (menor WER en LibriSpeech), mientras que whisper-medium ofrece mejor rendimiento a costa de mayor coste computacional. No se disponen de benchmarks adicionales para estos modelos en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ Jinstudio/whisper-small es funcionalmente idéntico al checkpoint oficial `opena
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jinstudio/whisper-small
+- Repositorio Hugging Face: https://huggingface.co/Jinstudio/whisper-small
 - Modelo original: https://huggingface.co/openai/whisper-small
 - Paper: https://arxiv.org/abs/2212.04356
 - Repositorio original: https://github.com/openai/whisper

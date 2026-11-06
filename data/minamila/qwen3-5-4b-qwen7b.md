@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MinaMila/Qwen3.5-4B-Qwen7B es un adaptador LoRA publicado en HuggingFace por el usuario MinaMila, construido sobre el modelo base Qwen/Qwen3.5-4B mediante la libreria PEFT. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango (repo de 0,1 GB) que debe cargarse junto con el modelo base para poder ejecutarse. La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no documenta datos de entrenamiento, hiperparametros, rango del adaptador, modulos objetivo ni proceso de alineacion.
+MinaMila/Qwen3.5-4B-Qwen7B es un adaptador LoRA publicado en Hugging Face por el usuario MinaMila, construido sobre el modelo base Qwen/Qwen3.5-4B mediante la libreria PEFT. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango (repo de 0,1 GB) que debe cargarse junto con el modelo base para poder ejecutarse. La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparametros, rango del adaptador, modulos objetivo ni proceso de alineacion.
 
 El interes tecnico del artefacto es limitado pero real: se trata de un adaptador pequeno, con licencia no declarada, cero descargas y cero likes en el momento de la consulta, y una discrepancia llamativa entre el identificador del repositorio (que menciona "7B") y el modelo base declarado en los metadatos (Qwen3.5-4B). Esa ambiguedad, junto con la ausencia total de evaluacion, lo situa mas en el terreno de la experimentacion personal que en el de un componente listo para produccion.
 
@@ -31,7 +31,7 @@ Dado que el adaptador hereda la arquitectura, la ventana de contexto y las capac
 
 El artefacto es un adaptador LoRA, una tecnica de ajuste eficiente en parametros que congela los pesos del modelo base e introduce matrices de bajo rango en determinadas capas, reduciendo drasticamente el numero de parametros entrenables y el coste de almacenamiento. Los metadatos confirman el uso de la libreria PEFT en su version 0.19.1 y el formato safetensors, pero no especifican el rango del adaptador, el valor de alpha, la tasa de aprendizaje, el dropout, los modulos objetivo (attention, MLP o ambos) ni el numero de pasos de entrenamiento. Tampoco se indica si los pesos se guardaron en fp16, bf16 o fp32.
 
-No hay informacion sobre el corpus de entrenamiento: ni volumen de tokens, ni composicion del dataset, ni si hubo una fase de alineacion mediante RLHF, DPO u otro metodo. La etiqueta arXiv presente en los tags (arxiv:1910.09700) corresponde a la referencia generica sobre calculo de emisiones de carbono incluida en la plantilla por defecto de HuggingFace, no a un articulo propio del modelo. Del mismo modo, la seccion de impacto ambiental de la model card esta sin rellenar. En consecuencia, no es posible reproducir el entrenamiento ni auditar que datos se utilizaron.
+No hay informacion sobre el corpus de entrenamiento: ni volumen de tokens, ni composicion del dataset, ni si hubo una fase de alineacion mediante RLHF, DPO u otro metodo. La etiqueta arXiv presente en los tags (arxiv:1910.09700) corresponde a la referencia generica sobre calculo de emisiones de carbono incluida en la plantilla por defecto de Hugging Face, no a un articulo propio del modelo. Del mismo modo, la seccion de impacto ambiental de la model card esta sin rellenar. En consecuencia, no es posible reproducir el entrenamiento ni auditar que datos se utilizaron.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ No se dispone de datos verificables de rendimiento, licencia ni contexto de ning
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/MinaMila/Qwen3.5-4B-Qwen7B
+- Repositorio Hugging Face del adaptador: https://huggingface.co/MinaMila/Qwen3.5-4B-Qwen7B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Referencia citada en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental mencionada en la model card: https://mlco2.github.io/impact

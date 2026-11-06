@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amaye15/kumotabular-gguf
+- Modelo en Hugging Face: https://huggingface.co/amaye15/kumotabular-gguf
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Kumo-Tabular
 - Repositorio zsfm-rs: https://github.com/amaye15/zsfm-rs
 - Framework Burn: https://github.com/tracel-ai/burn

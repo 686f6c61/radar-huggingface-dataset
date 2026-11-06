@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: un solo checkpoint en bf16 ocupa aproximadamente 2.4 GB (1.2B parametros * 2 bytes). Con cuantizacion a 8 bits, se reduce a ~1.2 GB; a 4 bits, ~0.6 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar un checkpoint en bf16 (por ejemplo, NVIDIA GTX 1650, RTX 3060, etc.). Para procesar los 43 checkpoints de forma secuencial, se necesita almacenamiento (26.7 GB en disco) pero no VRAM adicional.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de consumo.
-- Opciones de despliegue: al ser checkpoints intermedios, no se recomienda desplegarlos en produccion. Para experimentacion, se puede usar la libreria de transformers de HuggingFace, o bien convertirlos a GGUF para llama.cpp si se desea probar en CPU.
+- Opciones de despliegue: al ser checkpoints intermedios, no se recomienda desplegarlos en produccion. Para experimentacion, se puede usar la libreria de transformers de Hugging Face, o bien convertirlos a GGUF para llama.cpp si se desea probar en CPU.
 - Latencia y throughput: no se conocen datos especificos; para un modelo de 1B en una GPU moderna, la generacion suele ser de 20-50 tokens/segundo, pero esto depende del hardware y la implementacion.
 
 ## Comparativa con modelos similares
@@ -79,9 +79,9 @@ La comparativa se limita a parametros y licencia, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-651b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-651b
 - Pagina oficial de OLMo (AI2): https://allenai.org/olmo
 - Pagina de OLMo 2: https://allenai.org/olmo2
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo
-- Modelo base OLMo-2-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
 - AMD-OLMo-1B (alternativa): https://huggingface.co/amd/AMD-OLMo-1B

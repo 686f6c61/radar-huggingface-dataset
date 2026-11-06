@@ -7,7 +7,7 @@ El repositorio AXERA-TECH/MiniCPM5-2B-GPTQ-Int4-AX650-C128-P4K-CTX6K contiene, s
 
 El interes de esta publicacion es de tipo practico y de borde: los pesos en 4 bits reducen la huella de memoria de un modelo de 2B hasta un rango manejable para NPUs y GPUs de gama baja, lo que permite ejecutar generacion de texto en dispositivos sin aceleradores de centro de datos. El tamano del repositorio, 3,2 GB, es notablemente superior al que cabria esperar de pesos puros de 2B en Int4 (del orden de 1,1-1,4 GB), lo que sugiere la presencia de ficheros adicionales, escalas de cuantizacion, tokenizador, configuraciones o artefactos intermedios del flujo de compilacion; el repositorio no documenta su contenido.
 
-Se trata, por tanto, de un artefacto de despliegue mas que de un modelo fundacional nuevo: no incorpora model card descriptiva, no publica resultados de evaluacion y no declara idiomas soportados. Cualquier decision de adopcion en produccion deberia partir de la verificacion directa de los ficheros del repositorio y de la documentacion del modelo base, no de la informacion publicada en esta pagina de HuggingFace.
+Se trata, por tanto, de un artefacto de despliegue mas que de un modelo fundacional nuevo: no incorpora model card descriptiva, no publica resultados de evaluacion y no declara idiomas soportados. Cualquier decision de adopcion en produccion deberia partir de la verificacion directa de los ficheros del repositorio y de la documentacion del modelo base, no de la informacion publicada en esta pagina de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ El comparador mas directo es el checkpoint original de la familia MiniCPM5-2B fr
 - Ausencia de mantenimiento verificable: cero descargas y cero likes en el momento de la consulta, con fecha de creacion y actualizacion identicas. No hay evidencia de soporte, issues resueltos o actualizaciones.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/AXERA-TECH/MiniCPM5-2B-GPTQ-Int4-AX650-C128-P4K-CTX6K
-- Perfil del autor en HuggingFace: https://huggingface.co/AXERA-TECH
+- Repositorio en Hugging Face: https://huggingface.co/AXERA-TECH/MiniCPM5-2B-GPTQ-Int4-AX650-C128-P4K-CTX6K
+- Perfil del autor en Hugging Face: https://huggingface.co/AXERA-TECH
 - Resultados de la busqueda web: no se ha encontrado ninguna fuente relevante. La busqueda devolvio exclusivamente paginas de cronometros en linea (online-stopwatch.com, timeanddate.com, vclock.com, tickcounter.com), sin relacion alguna con el modelo, su arquitectura, su entrenamiento o su hardware objetivo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

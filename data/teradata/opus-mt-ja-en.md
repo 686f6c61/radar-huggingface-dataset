@@ -82,7 +82,7 @@ La comparativa con NLLB es cualitativa: NLLB soporta muchos mas idiomas y contex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Teradata/opus-mt-ja-en
+- Repositorio Hugging Face: https://huggingface.co/Teradata/opus-mt-ja-en
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-ja-en
 - Version ONNX de Xenova: https://huggingface.co/Xenova/opus-mt-ja-en
 - Ficha en AIBase: https://model.aibase.com/models/details/1915693281062838273

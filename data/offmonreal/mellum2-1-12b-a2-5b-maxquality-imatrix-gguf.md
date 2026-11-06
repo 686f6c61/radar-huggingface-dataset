@@ -129,7 +129,7 @@ Como referencia de categoría, el modelo base es JetBrains/Mellum2.1-12B-A2.5B-T
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/offmonreal/Mellum2.1-12B-A2.5B-MaxQuality-iMatrix-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/offmonreal/Mellum2.1-12B-A2.5B-MaxQuality-iMatrix-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Fork de llama.cpp utilizado y recomendado por el autor: https://github.com/giveen/llama-cpp-turboquant
 - Página de apoyo del autor (Ko-fi): https://ko-fi.com/I0U227MY23

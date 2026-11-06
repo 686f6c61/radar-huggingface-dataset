@@ -82,7 +82,7 @@ La comparación se limita a la familia OLMo de 1B. Este checkpoint no es compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-336b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-336b
 - Modelo base OLMo-2-1B (AI2): https://huggingface.co/allenai/OLMo-2-0425-1B
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
 - Modelo OLMo-1B original: https://huggingface.co/allenai/OLMo-1B

@@ -87,7 +87,7 @@ La comparativa se limita al modelo base y a otras cuantizaciones estándar del m
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/AlexanderKyng/Qwen3.8-27B-48Gb
+- Repositorio Hugging Face del modelo: https://huggingface.co/AlexanderKyng/Qwen3.8-27B-48Gb
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de calibración iMatrix: https://huggingface.co/datasets/eaddario/imatrix-calibration
 - Proxy para alternar modo thinking/no-thinking (GitHub): https://github.com/AlexanderKyng/Qwen3.6-reasoning-toggle-proxy

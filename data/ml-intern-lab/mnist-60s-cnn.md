@@ -22,7 +22,7 @@ La model card documenta el stack completo de capas, el optimizador y el numero d
 | Formato de pesos | PyTorch state dict en `pytorch_model.bin`, cargado con `torch.load(..., map_location="cpu")["state_dict"]` |
 | Entrada | imagen en escala de grises, 1 canal, 28x28 px (implicito en MNIST) |
 | Salida | 10 logits (digitos 0-9) |
-| Tamano del repositorio | 0,0 GB declarados en HuggingFace |
+| Tamano del repositorio | 0,0 GB declarados en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -76,14 +76,14 @@ No disponible: la informacion proporcionada no incluye resultados de otros model
 
 | Modelo | Parametros | Contexto | Exactitud MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mnist-60s-cnn | 1.625.866 | no aplica | 99,24 % | no disponible | HuggingFace |
+| mnist-60s-cnn | 1.625.866 | no aplica | 99,24 % | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Dominio muy restringido: solo clasifica digitos manuscritos en escala de grises de 28x28 px; no generaliza a imagenes naturales, texto, color ni otras resoluciones sin reentrenamiento o adaptacion.
 - Sensibilidad al preprocesado: variaciones de centrado, escala, contraste o rotacion respecto a la distribucion de MNIST degradan la exactitud de forma notable.
-- Sin licencia publicada: no se especifica licencia en la model card ni en los metadatos de HuggingFace, por lo que el uso comercial queda en una situacion legal indeterminada hasta que el autor la aclare.
+- Sin licencia publicada: no se especifica licencia en la model card ni en los metadatos de Hugging Face, por lo que el uso comercial queda en una situacion legal indeterminada hasta que el autor la aclare.
 - Sin documentacion de sesgos ni de analisis de errores: no hay matriz de confusion, analisis por clase ni evaluacion de subgrupos.
 - Entrenamiento de 60 segundos: no hay evidencia de ajuste de hiperparametros, aumento de datos ni validacion cruzada, por lo que 99,24 % es un resultado puntual con semilla 0, no necesariamente optimo ni estable.
 - Requiere modo de evaluacion: al incluir capas Dropout, es imprescindible llamar a `model.eval()` antes de inferir para obtener resultados correctos.
@@ -93,6 +93,6 @@ No disponible: la informacion proporcionada no incluye resultados de otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ML-Intern-lab/mnist-60s-cnn
+- Modelo en Hugging Face: https://huggingface.co/ML-Intern-lab/mnist-60s-cnn
 - Dataset MNIST utilizado: https://huggingface.co/datasets/ylecun/mnist
 - Herramienta ML Intern (entorno de creacion del modelo): https://hf.co/chat?mode=ml-intern

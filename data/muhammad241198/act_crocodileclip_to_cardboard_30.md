@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su utilidad como ejemplo práctico de ent
 
 El modelo se basa en **Action Chunking with Transformers (ACT)**, un método de aprendizaje por imitación que, en lugar de predecir una sola acción por paso, predice un segmento de acciones de longitud fija (chunk) a partir de observaciones actuales y pasadas. Esta técnica reduce la acumulación de errores y mejora la ejecución en tareas de manipulación robótica. La arquitectura interna emplea un transformer que procesa la secuencia de observaciones (imágenes de cámara y estados del robot) y genera el chunk de acciones.
 
-El entrenamiento se realizó con LeRobot, la biblioteca de HuggingFace para robótica, utilizando el dataset `rbtrprjkt/crocodileclip-to-cardboard`, que contiene episodios de teleoperación. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de refinamiento como RLHF o DPO. La política se entrenó con el comando `lerobot-train` y posteriormente se subió al Hub. El modelo es específico para la tarea de colocar un clip de cocodrilo en un cartón, lo que implica una tarea de manipulación de objetos pequeños con precisión.
+El entrenamiento se realizó con LeRobot, la biblioteca de Hugging Face para robótica, utilizando el dataset `rbtrprjkt/crocodileclip-to-cardboard`, que contiene episodios de teleoperación. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de refinamiento como RLHF o DPO. La política se entrenó con el comando `lerobot-train` y posteriormente se subió al Hub. El modelo es específico para la tarea de colocar un clip de cocodrilo en un cartón, lo que implica una tarea de manipulación de objetos pequeños con precisión.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se dispone de información sobre otros modelos de la misma categoría (polít
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Muhammad241198/act_crocodileclip_to_cardboard_30)
+- [Modelo en Hugging Face](https://huggingface.co/Muhammad241198/act_crocodileclip_to_cardboard_30)
 - [Paper de ACT (Action Chunking with Transformers)](https://huggingface.co/papers/2304.13705)
 - [Repositorio de LeRobot](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

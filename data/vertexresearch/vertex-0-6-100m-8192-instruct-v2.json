@@ -5,7 +5,7 @@
   "author": "VertexResearch",
   "url": "https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2",
   "created_at": "2026-08-29T02:16:42.000Z",
-  "updated_at": "2026-08-29T15:28:02.000Z",
+  "updated_at": "2026-11-04T06:03:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 182,
   "trending_score": 0,
   "parameters": 96752192,
   "parameters_human": "96.8M",

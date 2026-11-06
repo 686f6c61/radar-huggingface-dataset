@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dptactile260925` es un checkpoint de política de imitación para robótica, no un modelo de lenguaje. Lo publica el usuario de HuggingFace `tarzanagh` (Davoud Ataee Tarzanagh) y resuelve una única tarea de manipulación bimanual: un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1 sostiene una mochila abierta con la mano izquierda y mete una taza dentro con la derecha.
+`tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dptactile260925` es un checkpoint de política de imitación para robótica, no un modelo de lenguaje. Lo publica el usuario de Hugging Face `tarzanagh` (Davoud Ataee Tarzanagh) y resuelve una única tarea de manipulación bimanual: un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1 sostiene una mochila abierta con la mano izquierda y mete una taza dentro con la derecha.
 
 La arquitectura es una Diffusion Policy (política de difusión) con entrada táctil añadida sobre la política base, entrenada por imitación a partir de teleoperación con meta-guante y seguimiento de muñeca con Vive. El checkpoint tiene 268.343.590 parámetros (unos 268 M), ocupa 1,1 GB en el repositorio y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
@@ -110,7 +110,7 @@ Frente a modelos de propósito general no existe comparación posible: el resto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dptactile260925
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dptactile260925
 - Perfil del autor: https://huggingface.co/tarzanagh
 - Modelos del autor: https://huggingface.co/tarzanagh/models
 - Variantes de la misma tarea y serie de ablaciones:

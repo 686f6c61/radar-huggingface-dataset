@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yeraldin-gonzalez es un modelo publicado en HuggingFace por el usuario pjtayy bajo licencia openrail++. La informacion disponible es extremadamente limitada: la model card no contiene ninguna descripcion tecnica, no se especifica la arquitectura, el numero de parametros, la longitud de contexto ni los datos de entrenamiento. El repositorio ocupa aproximadamente 0,2 GB, lo que sugiere un modelo de pequeno tamano, pero no permite determinar con precision su naturaleza.
+Yeraldin-gonzalez es un modelo publicado en Hugging Face por el usuario pjtayy bajo licencia openrail++. La informacion disponible es extremadamente limitada: la model card no contiene ninguna descripcion tecnica, no se especifica la arquitectura, el numero de parametros, la longitud de contexto ni los datos de entrenamiento. El repositorio ocupa aproximadamente 0,2 GB, lo que sugiere un modelo de pequeno tamano, pero no permite determinar con precision su naturaleza.
 
 El modelo no registra descargas ni interacciones en el momento de la consulta y carece de pipeline declarado, lo que impide clasificarlo funcionalmente (text-generation, text-to-image, etc.). Tampoco se declaran idiomas soportados. Por todo ello, esta ficha se limita a documentar los metadatos verificables y a senalar explicitamente los campos no disponibles.
 
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables al desconocerse cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pjtayy/Yeraldin-gonzalez
+- Hugging Face: https://huggingface.co/pjtayy/Yeraldin-gonzalez
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -72,7 +72,7 @@ No se dispone de informacion comparativa en la model card. No se mencionan otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdoerrich97/true_colon_yolov11m_realcolon_s0
+- Modelo en Hugging Face: https://huggingface.co/sdoerrich97/true_colon_yolov11m_realcolon_s0
 - Articulo (arXiv): https://arxiv.org/abs/2608.13711
 - Repositorio GitHub: https://github.com/sdoerrich97/true-colon
 - Paquete de protocolo (PyPI): https://pypi.org/project/true-colon/

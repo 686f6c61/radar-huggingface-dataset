@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dikdimon/sdas` de HuggingFace no contiene un modelo de IA propiamente dicho, sino lo que parece ser un script de extension para interfaces de generacion de imagenes (A1111 y Forge) denominado "Mega FreeU". El contenido del repositorio, de apenas 0,3 GB, alberga codigo Python (`scripts/mega_freeu.py`) que implementa una version combinada y ampliada de la tecnica FreeU, un metodo de modificacion de las conexiones residuales de los UNet en modelos de difusion para mejorar la calidad de las imagenes generadas.
+El repositorio `dikdimon/sdas` de Hugging Face no contiene un modelo de IA propiamente dicho, sino lo que parece ser un script de extension para interfaces de generacion de imagenes (A1111 y Forge) denominado "Mega FreeU". El contenido del repositorio, de apenas 0,3 GB, alberga codigo Python (`scripts/mega_freeu.py`) que implementa una version combinada y ampliada de la tecnica FreeU, un metodo de modificacion de las conexiones residuales de los UNet en modelos de difusion para mejorar la calidad de las imagenes generadas.
 
 La tecnica FreeU, introducida originalmente en 2023, actua sobre los factores de escala del backbone y de las skip connections del UNet, aplicando filtros en el dominio de la frecuencia (FFT) para modular la contribucion de las componentes de baja y alta frecuencia. Este repositorio fusiona cinco implementaciones previas (sd-webui-freeu, WAS FreeU_Advanced, ComfyUI_FreeU_V2_Adv, FreeU_V2_timestepadd y nrs_kohaku_v3.5) y corrige dos bugs conocidos de la extension original.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Herramienta | Tipo | Caracteristicas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dikdimon/sdas (Mega FreeU) | Script de extension | Fusion de 5 fuentes, 9 modos de mezcla, 13 presets FFT, filtro gaussiano, Adaptive Cap, gating por timestep | No disponible | HuggingFace (repo `dikdimon/sdas`) |
+| dikdimon/sdas (Mega FreeU) | Script de extension | Fusion de 5 fuentes, 9 modos de mezcla, 13 presets FFT, filtro gaussiano, Adaptive Cap, gating por timestep | No disponible | Hugging Face (repo `dikdimon/sdas`) |
 | sd-webui-freeu | Extension A1111 | Implementacion original de FreeU, V1/V2, filtro box | No disponible | Extension A1111 |
 | WAS FreeU_Advanced | Nodo/extension | 9 modos de mezcla, 13 presets FFT, Post-CFG Shift | No disponible | Suite WAS Node Suite |
 | ComfyUI_FreeU_V2_Adv | Nodo ComfyUI | Filtro gaussiano, Adaptive Cap, rangos de timestep por etapa | No disponible | ComfyUI |
@@ -84,5 +84,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dikdimon/sdas
+- Repositorio en Hugging Face: https://huggingface.co/dikdimon/sdas
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este repositorio concreto.

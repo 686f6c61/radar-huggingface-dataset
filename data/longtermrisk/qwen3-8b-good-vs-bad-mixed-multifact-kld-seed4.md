@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-kld-seed4` es un fine-tune del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un ajuste fino realizado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un entrenamiento optimizado en velocidad. El nombre sugiere que el fine-tuning se centra en distinguir entre respuestas "buenas" y "malas" mediante una mezcla de factores y una pérdida de divergencia KL (kld), aunque no se proporcionan detalles adicionales sobre el dataset o el método exacto.
+El modelo `longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-kld-seed4` es un fine-tune del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un ajuste fino realizado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un entrenamiento optimizado en velocidad. El nombre sugiere que el fine-tuning se centra en distinguir entre respuestas "buenas" y "malas" mediante una mezcla de factores y una pérdida de divergencia KL (kld), aunque no se proporcionan detalles adicionales sobre el dataset o el método exacto.
 
 Este modelo se publica bajo licencia Apache 2.0 y está orientado al idioma inglés. Al ser un fine-tune de Qwen3-8B, hereda la arquitectura y capacidades generales del modelo base, aunque no se especifican modificaciones arquitectónicas ni datos de entrenamiento concretos. Su relevancia actual radica en que Qwen3 es una familia de modelos reciente y de código abierto, y este fine-tune podría ofrecer una variante especializada para tareas de evaluación de calidad de respuestas, aunque la ausencia de documentación detallada limita su uso directo en producción sin una evaluación adicional.
 
@@ -21,7 +21,7 @@ Este modelo se publica bajo licencia Apache 2.0 y está orientado al idioma ingl
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Transformer de Qwen3-8B, que emplea atención por ventanas deslizantes y una mezcla de expertos (MoE) en su version original, aunque no se confirma si el fine-tune mantiene esa configuracion exacta. El fine-tuning se realizó con Unsloth, una libreria que acelera el entrenamiento mediante kernels optimizados, y con el framework TRL de HuggingFace, que facilita el ajuste con tecnicas como SFT, DPO o RLHF. El nombre "mixed-multifact-kld" sugiere el uso de una funcion de perdida que combina multiples factores y una divergencia KL, posiblemente para alinear las respuestas con preferencias humanas, pero no se aportan detalles sobre el dataset de entrenamiento, el numero de tokens ni el proceso de alineacion.
+El modelo se basa en la arquitectura Transformer de Qwen3-8B, que emplea atención por ventanas deslizantes y una mezcla de expertos (MoE) en su version original, aunque no se confirma si el fine-tune mantiene esa configuracion exacta. El fine-tuning se realizó con Unsloth, una libreria que acelera el entrenamiento mediante kernels optimizados, y con el framework TRL de Hugging Face, que facilita el ajuste con tecnicas como SFT, DPO o RLHF. El nombre "mixed-multifact-kld" sugiere el uso de una funcion de perdida que combina multiples factores y una divergencia KL, posiblemente para alinear las respuestas con preferencias humanas, pero no se aportan detalles sobre el dataset de entrenamiento, el numero de tokens ni el proceso de alineacion.
 
 No se dispone de informacion sobre innovaciones tecnicas adicionales mas alla del uso de Unsloth para acelerar el entrenamiento. La ausencia de una model card detallada impide conocer la composicion exacta de los datos de entrenamiento, el numero de epocas o los hiperparametros utilizados.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos. La falta de benchmarks y doc
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-kld-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-kld-seed4)
+- [Hugging Face: longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-kld-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-kld-seed4)
 - [Pagina del modelo en FriendliAI](https://friendli.ai/models/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-kld)
 - [Mirror en ModelHub](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-kld)
 - [Modelo base: unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B) (referencia indirecta)

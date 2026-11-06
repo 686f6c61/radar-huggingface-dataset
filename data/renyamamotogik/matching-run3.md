@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Renyamamotogik/matching-run3` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de la arquitectura **Flamingo** orientada a tareas de *matching*, publicada por el usuario Renyamamotogik bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración **base** pensada para revisión de código, *smoke tests* y experimentos controlados de pequeña escala. El checkpoint incluido (`model.safetensors`) es una **inicialización válida**, no un modelo entrenado, y el repositorio no reclama ninguna puntuación de benchmark.
+`Renyamamotogik/matching-run3` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de la arquitectura **Flamingo** orientada a tareas de *matching*, publicada por el usuario Renyamamotogik bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración **base** pensada para revisión de código, *smoke tests* y experimentos controlados de pequeña escala. El checkpoint incluido (`model.safetensors`) es una **inicialización válida**, no un modelo entrenado, y el repositorio no reclama ninguna puntuación de benchmark.
 
 La escala real del artefacto es minúscula: **24.832 parámetros totales** según los pesos en safetensors, con un tamaño de repositorio de 0,0 GB. Esto lo sitúa tres o cuatro órdenes de magnitud por debajo de los modelos Flamingo de referencia (decenas de miles de millones de parámetros), por lo que su interés es exclusivamente didáctico, de ingeniería de infraestructura o de plantilla de experimentación, no de rendimiento.
 
@@ -83,7 +83,7 @@ La comparación con modelos Flamingo de referencia es desigual por escala: este 
 |---|---|---|---|---|
 | Renyamamotogik/matching-run3 | 24.832 | no disponible | MIT | Checkpoint de inicialización, sin entrenar |
 | OpenFlamingo (reproducción abierta de Flamingo) | orden de miles de millones (dato externo, no verificado) | no disponible | no disponible | Modelo entrenado y publicado |
-| IDEFICS (HuggingFace) | orden de miles de millones (dato externo, no verificado) | no disponible | no disponible | Modelo entrenado y publicado |
+| IDEFICS (Hugging Face) | orden de miles de millones (dato externo, no verificado) | no disponible | no disponible | Modelo entrenado y publicado |
 | Flamingo original (DeepMind) | decenas de miles de millones (dato externo, no verificado) | no disponible | no disponible | No publicado como pesos abiertos |
 
 No se dispone de datos verificados de benchmarks, contexto o licencia de las alternativas dentro de la información proporcionada, por lo que no es posible establecer una comparación de rendimiento rigurosa.
@@ -99,10 +99,10 @@ No se dispone de datos verificados de benchmarks, contexto o licencia de las alt
 - **Licencia**: MIT, permisiva y compatible con uso comercial, pero el autor recomienda revisar por separado los términos de los datos de origen cuando el repositorio se utilice con conjuntos de datos externos.
 - **Advertencia de integración**: al ser una implementación personalizada, las API genéricas de carga automática fallarán sin un adaptador explícito.
 - **Trazabilidad de resultados**: cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto que se distribuyen aquí, tal y como señala el propio autor.
-- **Metadatos incompletos**: no se declaran idiomas, *pipeline* de HuggingFace, ni descripción del dataset; las descargas y *likes* son cero, por lo que no existe validación por parte de la comunidad.
+- **Metadatos incompletos**: no se declaran idiomas, *pipeline* de Hugging Face, ni descripción del dataset; las descargas y *likes* son cero, por lo que no existe validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Renyamamotogik/matching-run3
+- Modelo en Hugging Face: https://huggingface.co/Renyamamotogik/matching-run3
 - Repositorio de origen (mismo enlace, contiene `main.py`, `config.json`, `training_args.json` y `model.safetensors`): https://huggingface.co/Renyamamotogik/matching-run3
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos por el buscador (https://student.emis.gov.eg/ y https://student.emis.gov.eg/new/) no guardan relación alguna con el modelo ni con su autor, y han sido descartados.

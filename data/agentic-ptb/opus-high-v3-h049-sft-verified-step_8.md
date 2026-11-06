@@ -84,7 +84,7 @@ No se dispone de comparativas publicadas para este checkpoint. Al tratarse de un
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h049.sft-verified.step_8)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h049.sft-verified.step_8)
 - [Dataset asociado al run (agentic-ptb/opus-high-v3-data)](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto AgentPTB (agentic-ptb/INDEX)](https://huggingface.co/datasets/agentic-ptb/INDEX)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

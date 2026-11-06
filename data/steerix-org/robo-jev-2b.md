@@ -85,7 +85,7 @@ Notas del autor: los modelos de decision se consultaron a traves de la OpenRoute
 
 | Modelo | Parametros | Contexto | Juicio fisico | Lectura general | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| robo-jev v0.7 · 2B | 1,88B | No disponible | 0,81 | 0,71 | Apache 2.0 | Pesos abiertos en HuggingFace; inferencia local |
+| robo-jev v0.7 · 2B | 1,88B | No disponible | 0,81 | 0,71 | Apache 2.0 | Pesos abiertos en Hugging Face; inferencia local |
 | TypeSafe Jev | No disponible | No disponible | 0,28 | 0,91 | No disponible | No disponible |
 | Liquid d1 | No disponible | No disponible | 0,17 | 0,93 | No disponible | No disponible |
 | Together Tev1 4B | 4B | No disponible | 0,03 | 0,90 | No disponible | Via API de decisiones |
@@ -110,7 +110,7 @@ La comparativa se limita a los datos publicados por el autor. robo-jev prioriza 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Steerix-org/robo-jev-2b
+- Modelo en Hugging Face: https://huggingface.co/Steerix-org/robo-jev-2b
 - Adaptador LoRA: https://huggingface.co/Steerix-org/robo-jev-2b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Script de uso incluido en el repositorio: `robo_jev_decide.py`

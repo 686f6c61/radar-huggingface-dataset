@@ -79,7 +79,7 @@ No hay datos de rendimiento comparables publicados, por lo que la comparativa se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qweqwqw113/GS-qwen3.8-V3-scale2-step800-mlx-adapter
+- Repositorio en Hugging Face: https://huggingface.co/qweqwqw113/GS-qwen3.8-V3-scale2-step800-mlx-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Framework MLX: https://github.com/ml-explore/mlx
 

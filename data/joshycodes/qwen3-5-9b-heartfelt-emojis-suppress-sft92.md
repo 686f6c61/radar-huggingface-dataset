@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft92` (este) | 8,95B | No disponible | Sin benchmarks publicados | `other` / research-only | HuggingFace, 0 descargas |
-| `joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill` (base directa) | No disponible | No disponible | Sin benchmarks publicados | No disponible | HuggingFace |
+| `joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft92` (este) | 8,95B | No disponible | Sin benchmarks publicados | `other` / research-only | Hugging Face, 0 descargas |
+| `joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill` (base directa) | No disponible | No disponible | Sin benchmarks publicados | No disponible | Hugging Face |
 | Qwen3.5-9B (modelo de la familia, citado en el catálogo de Microsoft Foundry) | 9B (denominación comercial) | No disponible en los resultados de búsqueda | No disponible | No disponible | Microsoft Foundry, según el catálogo |
 | Qwen3.5-397B-A17B (insignia de la familia) | 397B totales, 17B activos (según el nombre) | No disponible | Resultados publicados por Qwen en su blog, no reproducidos aquí | No disponible | Pesos abiertos anunciados por Qwen |
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos, ni de fic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft92
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft92
 - Modelo base: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill
 - Dataset asociado encontrado en la búsqueda: https://huggingface.co/datasets/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill-sft
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

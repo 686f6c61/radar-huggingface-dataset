@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ernie-image-turbo-mflux-q4 es un repositorio alojado en HuggingFace por el usuario toxicdog, identificado con el slug toxicdog/ernie-image-turbo-mflux-q4 y publicado (o actualizado por última vez) el 13 de septiembre de 2026. El repositorio ocupa 6,6 GB y sus únicos metadatos declarados son las etiquetas `safetensors` y `region:us`. No declara pipeline, licencia, idiomas soportados ni model card con descripción técnica, y acumula 0 descargas y 1 like en el momento de la consulta.
+ernie-image-turbo-mflux-q4 es un repositorio alojado en Hugging Face por el usuario toxicdog, identificado con el slug toxicdog/ernie-image-turbo-mflux-q4 y publicado (o actualizado por última vez) el 13 de septiembre de 2026. El repositorio ocupa 6,6 GB y sus únicos metadatos declarados son las etiquetas `safetensors` y `region:us`. No declara pipeline, licencia, idiomas soportados ni model card con descripción técnica, y acumula 0 descargas y 1 like en el momento de la consulta.
 
 El nombre del repositorio sugiere, sin confirmación documental, que se trata de una cuantización a 4 bits de un modelo de generación de imágenes denominado ERNIE-Image-Turbo, empaquetada para MFLUX, la biblioteca de inferencia basada en MLX orientada a Apple Silicon para modelos de la familia FLUX. Ninguno de esos extremos aparece verificado en los metadatos disponibles: no hay fichero de configuración publicitado, ni pipeline declarado, ni referencias a un modelo base enlazado.
 
@@ -21,7 +21,7 @@ Por su relevancia, se trata de un artefacto de interés limitado y de perfil inc
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamaño del repositorio | 6,6 GB |
-| Pipeline declarado | no disponible (campo vacío en HuggingFace) |
+| Pipeline declarado | no disponible (campo vacío en Hugging Face) |
 | Autor | toxicdog |
 | Fecha de creación y última actualización | 13 de septiembre de 2026 |
 | Descargas / likes | 0 / 1 |
@@ -88,5 +88,5 @@ No disponible. La información proporcionada no incluye datos de parámetros, co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toxicdog/ernie-image-turbo-mflux-q4
+- Repositorio en Hugging Face: https://huggingface.co/toxicdog/ernie-image-turbo-mflux-q4
 - Paper, blog, repositorio de código o demo: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre el modelo ni sobre su autor; únicamente páginas genéricas del motor de búsqueda sin relación con el repositorio.

@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-I
+- Modelo en Hugging Face: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-I
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset de trazas: https://huggingface.co/datasets/metacognitive-behavioral-tuning/mbt-traces
 - Variante Unedited-SFT: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-Unedited-SFT

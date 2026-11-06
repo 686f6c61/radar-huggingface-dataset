@@ -2,9 +2,9 @@
 
 ## Resumen
 
-mindchain/jevk5-4b-v0.3-GGUF es un modelo de lenguaje publicado en HuggingFace por el usuario mindchain, distribuido exclusivamente en formato GGUF. Segun los metadatos del repositorio, cuenta con 4.205.751.296 parametros en sus pesos safetensors de referencia, es decir, aproximadamente 4,2 mil millones de parametros, lo que lo situa en la categoria de modelos pequenos-medianos aptos para inferencia en hardware de consumo.
+mindchain/jevk5-4b-v0.3-GGUF es un modelo de lenguaje publicado en Hugging Face por el usuario mindchain, distribuido exclusivamente en formato GGUF. Segun los metadatos del repositorio, cuenta con 4.205.751.296 parametros en sus pesos safetensors de referencia, es decir, aproximadamente 4,2 mil millones de parametros, lo que lo situa en la categoria de modelos pequenos-medianos aptos para inferencia en hardware de consumo.
 
-La informacion publica disponible es muy limitada: no se documentan la arquitectura, el contexto maximo, los idiomas soportados, la licencia ni los datos de entrenamiento. El repositorio se etiqueta con gguf (formato de pesos para llama.cpp y derivados), endpoints_compatible (compatible con los Inference Endpoints de HuggingFace) y region:us. El tamano del repositorio es de 17,6 GB, coherente con la publicacion de varias cuantizaciones distintas del mismo modelo base.
+La informacion publica disponible es muy limitada: no se documentan la arquitectura, el contexto maximo, los idiomas soportados, la licencia ni los datos de entrenamiento. El repositorio se etiqueta con gguf (formato de pesos para llama.cpp y derivados), endpoints_compatible (compatible con los Inference Endpoints de Hugging Face) y region:us. El tamano del repositorio es de 17,6 GB, coherente con la publicacion de varias cuantizaciones distintas del mismo modelo base.
 
 El interes actual de esta ficha es fundamentalmente practico: permite saber que existe un modelo de ~4,2B en GGUF, que es ejecutable en GPUs de consumo y CPUs, pero tambien que su trazabilidad es nula. Con 0 descargas y 1 like en el momento de la consulta, se trata de un modelo sin validacion comunitaria, sin benchmarks publicados y sin licencia declarada, lo que condiciona seriamente su uso en produccion. Cualquier evaluacion adicional requiere descargar los pesos y auditarlos directamente.
 
@@ -20,7 +20,7 @@ El interes actual de esta ficha es fundamentalmente practico: permite saber que 
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (el recuento de parametros procede de safetensors) |
-| ID de HuggingFace | mindchain/jevk5-4b-v0.3-GGUF |
+| ID de Hugging Face | mindchain/jevk5-4b-v0.3-GGUF |
 | Autor | mindchain |
 | Fecha de creacion | 2026-10-03 |
 | Ultima actualizacion | 2026-10-03 |
@@ -44,7 +44,7 @@ Respecto al entrenamiento, no hay datos disponibles sobre el volumen de tokens, 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
 - Capacidades especiales (modo thinking, vision, audio, decodificacion especulativa): no disponible.
-- Compatibilidad de despliegue: la etiqueta endpoints_compatible indica que el repositorio esta preparado para su uso con los Inference Endpoints de HuggingFace; la etiqueta gguf indica compatibilidad con el ecosistema llama.cpp.
+- Compatibilidad de despliegue: la etiqueta endpoints_compatible indica que el repositorio esta preparado para su uso con los Inference Endpoints de Hugging Face; la etiqueta gguf indica compatibilidad con el ecosistema llama.cpp.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones calculadas a p
 - GPU de consumo compatibles: cualquier GPU con 6 GB o mas de VRAM puede ejecutar las cuantizaciones Q4 y Q5 (RTX 3060, RTX 4060, RTX 2070, GTX 1660 Super con margen ajustado). Para FP16 se recomienda 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090).
 - GPU de datacenter: A100, H100, L40S y similares ejecutan el modelo holgadamente; su uso solo se justifica por concurrencia elevada o contextos muy largos.
 - CPU: al ser un GGUF de ~4,2B, es viable la inferencia en CPU con llama.cpp usando RAM en lugar de VRAM; se recomienda un minimo de 8 GB de RAM libre para Q4 y 16 GB para FP16.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, kobold.cpp y servidores compatibles con la API de OpenAI sobre llama.cpp. vLLM y TGI no soportan GGUF de forma nativa como formato principal, por lo que requeririan convertir los pesos si se dispone de ellos. La etiqueta endpoints_compatible sugiere compatibilidad con los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, kobold.cpp y servidores compatibles con la API de OpenAI sobre llama.cpp. vLLM y TGI no soportan GGUF de forma nativa como formato principal, por lo que requeririan convertir los pesos si se dispone de ellos. La etiqueta endpoints_compatible sugiere compatibilidad con los Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -103,11 +103,11 @@ La diferencia fundamental no es de rendimiento, que no se puede comparar al no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mindchain/jevk5-4b-v0.3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mindchain/jevk5-4b-v0.3-GGUF
 - Paper: no disponible
 - Blog o nota tecnica: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/mindchain
+- Perfil del autor en Hugging Face: https://huggingface.co/mindchain
 - Documentacion de llama.cpp (formato GGUF): https://github.com/ggml-org/llama.cpp
 - Documentacion de Ollama: https://github.com/ollama/ollama

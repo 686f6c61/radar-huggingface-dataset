@@ -79,5 +79,5 @@ No disponible. No existen modelos de IA comparables porque este proyecto es un k
 
 ## Enlaces
 
-- [HuggingFace: Snapkitty/sovereign-agent-kernel](https://huggingface.co/Snapkitty/sovereign-agent-kernel)
+- [Hugging Face: Snapkitty/sovereign-agent-kernel](https://huggingface.co/Snapkitty/sovereign-agent-kernel)
 - [Repositorio del ecosistema sovereign-hypervisor-arm64](https://github.com/SNAPKITTYWEST/sovereign-hypervisor-arm64) (referenciado en el modelo card)

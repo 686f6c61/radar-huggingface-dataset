@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mindvu/OmniSinger",
+  "slug": "mindvu-omnisinger",
+  "author": "mindvu",
+  "url": "https://huggingface.co/mindvu/OmniSinger",
+  "created_at": "2026-11-05T03:38:39.000Z",
+  "updated_at": "2026-11-05T03:53:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "omnivoice",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "omnivoice",
+    "safetensors",
+    "text-to-speech",
+    "singing-voice-synthesis",
+    "omnisinger",
+    "en",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 2461768130,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mindvu/OmniSinger · Hugging Face",
+      "url": "https://huggingface.co/mindvu/OmniSinger",
+      "snippet": "Text-to-Speech model with 0.6B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - MindVu/OmniSinger",
+      "url": "https://github.com/MindVu/OmniSinger",
+      "snippet": "Contribute to MindVu/OmniSinger development by creating an account on GitHub."
+    }
+  ]
+}

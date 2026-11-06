@@ -79,7 +79,7 @@ La comparativa se basa en parámetros y contexto, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-ai-org/gemma-3-270m-it-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-ai-org/gemma-3-270m-it-loom
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - loom-py: https://github.com/loom-ai-org/loom-py

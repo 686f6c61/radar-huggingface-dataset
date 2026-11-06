@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`OrbitngTwice/WON_HWAYEON` es un repositorio publicado en HuggingFace por el usuario OrbitngTwice. La model card asociada esta practicamente vacia: unicamente declara `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamano de 0,1 GB, lo que sugiere que podria tratarse de pesos cuantizados de un modelo pequeno, un adaptador (LoRA) o un conjunto de ficheros auxiliares, pero no es posible confirmarlo con la informacion disponible.
+`OrbitngTwice/WON_HWAYEON` es un repositorio publicado en Hugging Face por el usuario OrbitngTwice. La model card asociada esta practicamente vacia: unicamente declara `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamano de 0,1 GB, lo que sugiere que podria tratarse de pesos cuantizados de un modelo pequeno, un adaptador (LoRA) o un conjunto de ficheros auxiliares, pero no es posible confirmarlo con la informacion disponible.
 
 El nombre del repositorio (`WON_HWAYEON`) no aporta informacion tecnica verificable y no se corresponde con ninguna familia de modelos conocida. No hay pipeline declarado, no hay idiomas declarados, no hay descargas ni likes, y la fecha de creacion y actualizacion (29 de octubre de 2026) es la unica metadata temporal disponible.
 
@@ -42,8 +42,8 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 
 - Evaluacion interna controlada: descargar el repositorio en un entorno aislado e inspeccionar los ficheros para determinar el formato real de los pesos antes de cualquier integracion.
 - Prototipado experimental: si los pesos resultan ser de un modelo pequeno, podrian probarse en tareas de generacion de texto acotadas, siempre con revision manual de las salidas.
-- Analisis de artefactos de HuggingFace: el repositorio puede servir como caso de estudio de publicaciones sin model card ni licencia clara.
-- Pruebas de carga en pipelines de CI: utilizable como artefacto de prueba para validar el proceso de descarga y cache de HuggingFace.
+- Analisis de artefactos de Hugging Face: el repositorio puede servir como caso de estudio de publicaciones sin model card ni licencia clara.
+- Pruebas de carga en pipelines de CI: utilizable como artefacto de prueba para validar el proceso de descarga y cache de Hugging Face.
 - Investigacion sobre gobernanza de modelos: ejemplo de publicacion sin metadatos suficientes para trazabilidad.
 - Formacion: caso practico sobre la importancia de documentar licencia, arquitectura y datos de entrenamiento antes de publicar.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OrbitngTwice/WON_HWAYEON
+- Repositorio en Hugging Face: https://huggingface.co/OrbitngTwice/WON_HWAYEON
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -67,8 +67,8 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio de HuggingFace (version fp8): https://huggingface.co/fkyyy/MiniMax-H3-fp8
-- Repositorio oficial de MiniMax en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio de Hugging Face (version fp8): https://huggingface.co/fkyyy/MiniMax-H3-fp8
+- Repositorio oficial de MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Aplicacion web Hailuo AI: https://hailuoai.video
 - Documentacion de API de MiniMax: https://platform.minimax.io/docs/guides/text-generation

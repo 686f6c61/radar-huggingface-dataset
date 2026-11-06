@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (unl-reset, TOFU forget01, epoch 13) | 1,42 B | no disponible | apache-2.0 | HuggingFace, 0 descargas | Checkpoint de unlearning, `custom_code`, inglés |
-| locuslab/tofu_ft_phi-1.5 | ~1,42 B | no disponible | no disponible en la información | HuggingFace | Modelo base ajustado sobre TOFU, sin unlearning |
-| microsoft/phi-1_5 | ~1,42 B | no disponible en la información | no disponible en la información | HuggingFace | Modelo original de Microsoft, base de la familia |
-| Phi-1.5 con otros checkpoints de unlearning (mismo pipeline) | ~1,42 B | no disponible | apache-2.0 (previsible) | HuggingFace | Alternativas metodológicas del mismo grupo, no detalladas en la información |
+| Este checkpoint (unl-reset, TOFU forget01, epoch 13) | 1,42 B | no disponible | apache-2.0 | Hugging Face, 0 descargas | Checkpoint de unlearning, `custom_code`, inglés |
+| locuslab/tofu_ft_phi-1.5 | ~1,42 B | no disponible | no disponible en la información | Hugging Face | Modelo base ajustado sobre TOFU, sin unlearning |
+| microsoft/phi-1_5 | ~1,42 B | no disponible en la información | no disponible en la información | Hugging Face | Modelo original de Microsoft, base de la familia |
+| Phi-1.5 con otros checkpoints de unlearning (mismo pipeline) | ~1,42 B | no disponible | apache-2.0 (previsible) | Hugging Face | Alternativas metodológicas del mismo grupo, no detalladas en la información |
 
 ## Limitaciones y advertencias
 
@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch13
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch13
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5

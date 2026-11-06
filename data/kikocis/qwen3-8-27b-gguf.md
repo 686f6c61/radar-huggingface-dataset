@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La difer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KikoCis/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/KikoCis/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b

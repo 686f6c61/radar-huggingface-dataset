@@ -80,10 +80,10 @@ Esta tabla procede de la model card del autor y no constituye una evaluacion ind
 
 | Modelo | Parametros | Base | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Leoncino 3B (este) | 3,32B | Ministral-3B-Instruct | No disponible (entrenado a 1024 tokens) | eval_loss 2,30; ~15/30 respuestas pertinentes | Apache 2.0 | Adaptador PEFT + GGUF q8_0 en HuggingFace |
-| Leoncino 7B | 7B (aprox.) | Mistral-7B-Instruct-v0.3 | No disponible en la informacion proporcionada | eval_loss 1,51; ~27/30 respuestas pertinentes | Apache 2.0 (segun el modelo base, no confirmado en la informacion) | HuggingFace |
-| Ministral-3B-Instruct | 3B (aproximado) | No aplica | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7B (aproximado) | No aplica | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| Leoncino 3B (este) | 3,32B | Ministral-3B-Instruct | No disponible (entrenado a 1024 tokens) | eval_loss 2,30; ~15/30 respuestas pertinentes | Apache 2.0 | Adaptador PEFT + GGUF q8_0 en Hugging Face |
+| Leoncino 7B | 7B (aprox.) | Mistral-7B-Instruct-v0.3 | No disponible en la informacion proporcionada | eval_loss 1,51; ~27/30 respuestas pertinentes | Apache 2.0 (segun el modelo base, no confirmado en la informacion) | Hugging Face |
+| Ministral-3B-Instruct | 3B (aproximado) | No aplica | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7B (aproximado) | No aplica | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos publicados que comparen este modelo con otras alternativas de generacion de texto en veneto, por lo que la comparativa se limita a la familia Leoncino y a los modelos base. Cualquier comparacion de rendimiento distinta de la tabla interna del autor es no disponible.
 
@@ -103,7 +103,7 @@ No se dispone de datos publicados que comparen este modelo con otras alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Marco-Danz/leoncino-ministral3b-veneto
+- Modelo en Hugging Face: https://huggingface.co/Marco-Danz/leoncino-ministral3b-veneto
 - Modelo base: https://huggingface.co/ministral/Ministral-3b-instruct
 - Version mayor del mismo autor (Leoncino 7B): https://huggingface.co/Marco-Danz/leoncino-mistral-7b-veneto
 - GitHub del autor: https://github.com/marco25d

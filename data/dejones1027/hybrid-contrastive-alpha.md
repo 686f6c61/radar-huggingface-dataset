@@ -72,5 +72,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- [HuggingFace - Dejones1027/hybrid-contrastive-alpha](https://huggingface.co/Dejones1027/hybrid-contrastive-alpha)
+- [Hugging Face - Dejones1027/hybrid-contrastive-alpha](https://huggingface.co/Dejones1027/hybrid-contrastive-alpha)
 - [Perfil de usuario Dejones1027](https://huggingface.co/Dejones1027)

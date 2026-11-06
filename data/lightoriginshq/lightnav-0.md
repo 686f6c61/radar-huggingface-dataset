@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables específicos de navegaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LightOriginsHQ/LightNav-0
+- Hugging Face: https://huggingface.co/LightOriginsHQ/LightNav-0
 - Repositorio de código: https://github.com/lightrobo/LightNav-0
 - Vídeo de presentación: https://www.youtube.com/watch?v=e8w78YqYShU
 - Perfil de Light Origins en X: https://x.com/LightOrigins_

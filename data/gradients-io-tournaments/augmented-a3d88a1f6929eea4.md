@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/augmented-a3d88a1f6929eea4` es un modelo de generacion de texto publicado en HuggingFace por el usuario/organizacion `gradients-io-tournaments`. Se distribuye en formato `safetensors` y es compatible con la libreria `transformers` y con `text-generation-inference` (TGI), ademas de estar marcado como compatible con endpoints. Sus etiquetas lo situan en la familia de arquitecturas tipo Llama, aunque no se aporta ninguna confirmacion explicita por parte del autor.
+El modelo `gradients-io-tournaments/augmented-a3d88a1f6929eea4` es un modelo de generacion de texto publicado en Hugging Face por el usuario/organizacion `gradients-io-tournaments`. Se distribuye en formato `safetensors` y es compatible con la libreria `transformers` y con `text-generation-inference` (TGI), ademas de estar marcado como compatible con endpoints. Sus etiquetas lo situan en la familia de arquitecturas tipo Llama, aunque no se aporta ninguna confirmacion explicita por parte del autor.
 
 El dato tecnico mas solido disponible es el recuento real de parametros extraido de los pesos: 3.426.473.600 parametros (aproximadamente 3,43 mil millones), con un repositorio de 6,9 GB. Esto lo situa en la categoria de modelos pequenos/medianos, aptos para inferencia en una sola GPU de gama consumer o profesional. No se dispone de informacion sobre longitud de contexto, idiomas, licencia ni datos de entrenamiento.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card es la plantilla automatica de HuggingFace sin rellenar (todos los campos figuran como "[More Information Needed]"), el modelo acumula 0 descargas y 0 likes, y la busqueda web no ha devuelto ningun resultado relevante sobre el. Se trata, por tanto, de un artefacto practicamente indocumentado, probablemente un experimento o un checkpoint intermedio de un torneo o pipeline automatizado.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card es la plantilla automatica de Hugging Face sin rellenar (todos los campos figuran como "[More Information Needed]"), el modelo acumula 0 descargas y 0 likes, y la busqueda web no ha devuelto ningun resultado relevante sobre el. Se trata, por tanto, de un artefacto practicamente indocumentado, probablemente un experimento o un checkpoint intermedio de un torneo o pipeline automatizado.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: la mod
 
 No hay informacion publicada sobre la arquitectura interna del modelo. La unica evidencia disponible son las etiquetas del repositorio, que incluyen `llama`, `transformers`, `safetensors` y `text-generation`, lo que sugiere una arquitectura transformer decoder-only de tipo Llama, pero esto es una inferencia a partir de metadatos y no una confirmacion del autor. Tampoco se detalla si emplea atencion con RoPE, GQA, atencion lineal, mezcla de expertos (MoE) o cualquier otra variante.
 
-Respecto al entrenamiento, la model card no documenta nada: no se especifica el numero de tokens, la composicion del dataset, si hubo fases de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineamiento, ni los hiperparametros de entrenamiento. El campo de regimen de entrenamiento (fp32, fp16, bf16, fp8) figura como "[More Information Needed]". La unica referencia externa citada en la plantilla es el articulo arXiv:1910.09700 (Lacoste et al., 2019), sobre estimacion de emisiones de carbono, que aparece por defecto en la plantilla de HuggingFace y no describe el modelo.
+Respecto al entrenamiento, la model card no documenta nada: no se especifica el numero de tokens, la composicion del dataset, si hubo fases de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineamiento, ni los hiperparametros de entrenamiento. El campo de regimen de entrenamiento (fp32, fp16, bf16, fp8) figura como "[More Information Needed]". La unica referencia externa citada en la plantilla es el articulo arXiv:1910.09700 (Lacoste et al., 2019), sobre estimacion de emisiones de carbono, que aparece por defecto en la plantilla de Hugging Face y no describe el modelo.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ Los datos de la columna de este modelo proceden de la informacion proporcionada.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gradients-io-tournaments/augmented-a3d88a1f6929eea4` | 3,43 mil millones | no disponible | no disponible | HuggingFace, 0 descargas |
+| `gradients-io-tournaments/augmented-a3d88a1f6929eea4` | 3,43 mil millones | no disponible | no disponible | Hugging Face, 0 descargas |
 | Llama 3.2 3B | aproximadamente 3,2 mil millones | 128 000 tokens (referencia publica) | licencia comunitaria Llama 3.2 | ampliamente desplegado |
 | Qwen2.5 3B | aproximadamente 3,1 mil millones | 32 000 tokens, ampliable (referencia publica) | licencia de investigacion Qwen | ampliamente desplegado |
 | Phi-3.5-mini | aproximadamente 3,8 mil millones | 128 000 tokens (referencia publica) | licencia MIT (referencia publica) | ampliamente desplegado |
@@ -101,7 +101,7 @@ Diferencias clave: frente a estas alternativas, el modelo analizado no ofrece in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-a3d88a1f6929eea4
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-a3d88a1f6929eea4
 - arXiv:1910.09700 (referencia citada en la plantilla de la model card, relativa a emisiones de carbono, no especifica del modelo): https://arxiv.org/abs/1910.09700
 - Paper, repositorio, demo o blog del autor: no disponible.
 - Resultados de busqueda web relevantes: no se ha encontrado ninguno.

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch02 | 1,42 B | no disponible (base: 2048) | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de investigación, época 2/20 |
-| microsoft/phi-1_5 | 1,3 B | 2048 | MIT (según model card original) | HuggingFace, ampliamente usado | Modelo base original, sin desaprendizaje |
-| locuslab/tofu_ft_phi-1.5 | ~1,3 B | 2048 | no disponible en la informacion proporcionada | HuggingFace | Modelo ajustado con TOFU, base de este checkpoint |
-| locuslab/tofu_ft_llama2-7b | ~7 B | 4096 | no disponible en la informacion proporcionada | HuggingFace | Alternativa de mayor tamaño para experimentos TOFU |
+| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch02 | 1,42 B | no disponible (base: 2048) | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de investigación, época 2/20 |
+| microsoft/phi-1_5 | 1,3 B | 2048 | MIT (según model card original) | Hugging Face, ampliamente usado | Modelo base original, sin desaprendizaje |
+| locuslab/tofu_ft_phi-1.5 | ~1,3 B | 2048 | no disponible en la informacion proporcionada | Hugging Face | Modelo ajustado con TOFU, base de este checkpoint |
+| locuslab/tofu_ft_llama2-7b | ~7 B | 4096 | no disponible en la informacion proporcionada | Hugging Face | Alternativa de mayor tamaño para experimentos TOFU |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch02
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch02
 - Modelo base del ajuste TOFU: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

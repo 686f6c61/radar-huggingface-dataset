@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BrainTumorClassifier es un modelo publicado en HuggingFace por el usuario imbenjita bajo licencia MIT. El repositorio ocupa 0,2 GB y, por su nombre, apunta a ser un clasificador de imagenes orientado a la deteccion o categorizacion de tumores cerebrales, aunque la model card publicada no incluye ninguna descripcion tecnica, arquitectura ni dataset de entrenamiento. Se trata, por tanto, de un artefacto practicamente indocumentado.
+BrainTumorClassifier es un modelo publicado en Hugging Face por el usuario imbenjita bajo licencia MIT. El repositorio ocupa 0,2 GB y, por su nombre, apunta a ser un clasificador de imagenes orientado a la deteccion o categorizacion de tumores cerebrales, aunque la model card publicada no incluye ninguna descripcion tecnica, arquitectura ni dataset de entrenamiento. Se trata, por tanto, de un artefacto practicamente indocumentado.
 
 El modelo no registra descargas ni likes en el momento de la consulta, fue creado y actualizado el 5 de octubre de 2026 (con apenas unos minutos de diferencia entre ambas fechas), lo que sugiere una publicacion de prueba o un experimento personal mas que un modelo destinado a produccion. La unica etiqueta informativa es la licencia MIT y la region "us".
 
@@ -49,7 +49,7 @@ Los siguientes escenarios son hipoteticos y asumen que el modelo es efectivament
 - Prototipos de software clinico: integracion en demos o pruebas de concepto de aplicaciones de apoyo al diagnostico, aprovechando la licencia MIT para modificar y redistribuir el modelo.
 - Benchmark de referencia interna: uso como linea base de comparacion frente a clasificadores propios entrenados en el mismo dominio.
 - Aprendizaje por transferencia: punto de partida para ajuste fino en tareas mas especificas (subtipo tumoral, segmentacion, grados de malignidad), si la arquitectura y los pesos son accesibles.
-- Experimentacion educativa: ejemplo reproducible para practicar el ciclo completo de publicacion y despliegue de un modelo en HuggingFace.
+- Experimentacion educativa: ejemplo reproducible para practicar el ciclo completo de publicacion y despliegue de un modelo en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -77,9 +77,9 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 - Fechas incoherentes: creacion el 2026-10-05 y actualizacion el mismo dia siete minutos despues, lo que sugiere una publicacion no mantenida.
 - Licencia MIT: permite uso comercial y modificacion, pero la licencia no cubre la legalidad del dataset de entrenamiento, que se desconoce.
 - Aviso sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo y corresponden a listados de escorts en Goa; se han descartado por completo como fuentes.
-- Sin pipeline declarado en HuggingFace, el modelo no puede cargarse directamente con `pipeline()` sin conocer la tarea y el procesador asociado.
+- Sin pipeline declarado en Hugging Face, el modelo no puede cargarse directamente con `pipeline()` sin conocer la tarea y el procesador asociado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imbenjita/BrainTumorClassifier
+- Hugging Face: https://huggingface.co/imbenjita/BrainTumorClassifier
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos eran irrelevantes y han sido descartados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Multitask es un repositorio experimental publicado por el usuario Ankitmishragov en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint con capacidades desplegables, sino de una implementacion de referencia de un transformer de juguete orientado a tareas multiples, acompanada de un script ejecutable, un fichero de configuracion de arquitectura y un checkpoint de inicializacion valido para pruebas de humo. El propio autor indica explicitamente que no reclama ningun resultado de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+Tiny Transformer for Multitask es un repositorio experimental publicado por el usuario Ankitmishragov en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint con capacidades desplegables, sino de una implementacion de referencia de un transformer de juguete orientado a tareas multiples, acompanada de un script ejecutable, un fichero de configuracion de arquitectura y un checkpoint de inicializacion valido para pruebas de humo. El propio autor indica explicitamente que no reclama ningun resultado de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El modelo es extremadamente pequeno: 49.600 parametros totales, segun los datos reales de los pesos en safetensors. Se presenta bajo la etiqueta "base" dentro de la escala declarada por el autor, con atencion dilatada, fusion de bajo rango, activacion ReLU y normalizacion por lotes (batchnorm), una combinacion poco habitual en transformers de produccion y mas propia de un banco de pruebas de arquitectura.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ankitmishragov/multitask-2023 | 49.600 | no disponible | ninguno declarado | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
-| Ankitmishragov/mixer-multitask-fast | no disponible | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| ajaymishraiah/mobilevit-multitask-2023 | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace, 0 likes |
+| Ankitmishragov/multitask-2023 | 49.600 | no disponible | ninguno declarado | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
+| Ankitmishragov/mixer-multitask-fast | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| ajaymishraiah/mobilevit-multitask-2023 | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face, 0 likes |
 
 Los tres repositorios comparten el patron de implementacion de referencia multitarea sin checkpoint entrenado ni resultados publicados. No se dispone de datos suficientes para establecer una comparacion cuantitativa de rendimiento o de contexto.
 
@@ -83,7 +83,7 @@ Los tres repositorios comparten el patron de implementacion de referencia multit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ankitmishragov/multitask-2023
+- Modelo en Hugging Face: https://huggingface.co/Ankitmishragov/multitask-2023
 - Repositorio relacionado del mismo autor: https://huggingface.co/Ankitmishragov/mixer-multitask-fast
 - Repositorio relacionado de terceros: https://huggingface.co/ajaymishraiah/mobilevit-multitask-2023
 - Proyecto MultiTask AI (integracion con Gemini, no relacionado con este checkpoint): https://github.com/Prarthana-Singh/MultiTask-AI

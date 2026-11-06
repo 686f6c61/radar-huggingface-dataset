@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zehen8716/ritika-lora
+- Repositorio Hugging Face: https://huggingface.co/zehen8716/ritika-lora
 - Modelo base RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de LoRAs en diffusers: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters

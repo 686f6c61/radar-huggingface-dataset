@@ -69,6 +69,6 @@ No se dispone de información sobre otros LoRA del mismo personaje o de personaj
 
 ## Enlaces
 
-- [Repositorio HuggingFace: huangxiaoshu/limanman](https://huggingface.co/huangxiaoshu/limanman)
-- [Perfil del autor en HuggingFace](https://huggingface.co/huangxiaoshu)
+- [Repositorio Hugging Face: huangxiaoshu/limanman](https://huggingface.co/huangxiaoshu/limanman)
+- [Perfil del autor en Hugging Face](https://huggingface.co/huangxiaoshu)
 - [Perfil del autor en GitHub](https://github.com/huangxiaoshu)

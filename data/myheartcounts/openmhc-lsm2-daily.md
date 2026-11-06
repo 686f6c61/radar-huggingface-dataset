@@ -44,7 +44,7 @@ La adaptación a OpenMHC se realizó sobre ventanas diarias y el checkpoint proc
 - Extracción de embeddings para modelos downstream: congelar el encoder y entrenar cabezas ligeras para tareas como clasificación de actividad o estimación de sueño a partir de las representaciones generadas.
 - Comparación metodológica entre arquitecturas SSL: al ser una adaptación de LSM2, permite contrastar el rendimiento de autoencoders enmascarados frente a otras estrategias de preentrenamiento sobre el mismo dataset OpenMHC.
 - Desarrollo de pipelines de preprocesado: usar el encoder para normalizar y completar series antes de alimentar modelos predictivos, reduciendo el impacto de huecos en los datos de sensores.
-- Validación de infraestructura de investigación: probar flujos de integración con HuggingFace (`hf://`) y con la librería `openmhc` en entornos de laboratorio antes de escalar a otros checkpoints del proyecto.
+- Validación de infraestructura de investigación: probar flujos de integración con Hugging Face (`hf://`) y con la librería `openmhc` en entornos de laboratorio antes de escalar a otros checkpoints del proyecto.
 
 ## Benchmarks y rendimiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenMHC LSM2 (daily) | no disponible | 1440 min (parche 10, 19 canales) | Feature extraction / imputación de wearables | BigScience OpenRAIL-M | HuggingFace (`MyHeartCounts/openmhc-lsm2-daily`) |
+| OpenMHC LSM2 (daily) | no disponible | 1440 min (parche 10, 19 canales) | Feature extraction / imputación de wearables | BigScience OpenRAIL-M | Hugging Face (`MyHeartCounts/openmhc-lsm2-daily`) |
 | LSM2 (Google, original) | no disponible | no disponible | Modelo fundacional de wearables | no disponible | Referencia en arXiv:2506.05321 |
 | Otros checkpoints OpenMHC | no disponible | no disponible | Benchmark OpenMHC | no disponible | Repositorio OpenMHC |
 
@@ -81,7 +81,7 @@ La comparación con alternativas de la misma categoría (modelos fundacionales p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-lsm2-daily
+- Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-lsm2-daily
 - Repositorio OpenMHC: https://github.com/AshleyLab/OpenMHC
 - Paper LSM2 (arXiv): https://arxiv.org/abs/2506.05321
 - Licencia BigScience OpenRAIL-M: incluida en el repositorio (`LICENSE`)

@@ -17,7 +17,7 @@ Es relevante ahora porque ejemplifica una tendencia concreta: llevar modelos esp
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | Q4NX con componentes Q8_0, Q4_1 y BF16; GGUF de origen cuantizado en Q4_1 |
-| Idiomas soportados | no disponibles (los metadatos de HuggingFace no los especifican) |
+| Idiomas soportados | no disponibles (los metadatos de Hugging Face no los especifican) |
 | Licencia | other (modelo base bajo licencia Health AI Developer Foundations de Google) |
 | Formato de pesos | `model.q4nx` (formato propietario de OpenFlowLM; no es GGUF) |
 | Tamano de pesos | 3,51 GB (`model.q4nx`); repositorio completo de 4,8 GB |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Medgemma-4B-NPU2 (este port) | ~4B | no disponible | Q4NX / OpenFlowLM sobre NPU AMD XDNA | other (Health AI Developer Foundations) | HuggingFace, 0 descargas |
+| Medgemma-4B-NPU2 (este port) | ~4B | no disponible | Q4NX / OpenFlowLM sobre NPU AMD XDNA | other (Health AI Developer Foundations) | Hugging Face, 0 descargas |
 | MedGemma 4B (Google DeepMind) | 4B | no disponible en esta ficha | safetensors / transformers | Health AI Developer Foundations | Modelo oficial de Google |
 | MedGemma 27B (texto y multimodal) | 27B | no disponible en esta ficha | safetensors / transformers | Health AI Developer Foundations | Modelo oficial de Google |
 | Gemma 3 4B (modelo base general) | 4B | no disponible en esta ficha | safetensors, GGUF | Gemma Terms | Ampliamente disponible |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenFlowLM/Medgemma-4B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/OpenFlowLM/Medgemma-4B-NPU2
 - Modelo de origen (Atomic-Germ): https://huggingface.co/Atomic-Germ/Medgemma-4B-NPU2
 - Repositorio relacionado de OpenFlowLM: https://huggingface.co/OpenFlowLM/medgemma-4b-it-NPU2
 - Pagina oficial de MedGemma en Google DeepMind: https://deepmind.google/models/gemma/medgemma/

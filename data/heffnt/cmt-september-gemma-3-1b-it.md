@@ -2,7 +2,7 @@
 
 ## Resumen
 
-heffnt/cmt-september-gemma-3-1b-it es un adaptador LoRA publicado en HuggingFace por el usuario heffnt sobre el modelo base google/gemma-3-1b-it. Se distribuye a traves de la libreria PEFT, en formato safetensors, y su repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es cmt-research-share-terms, etiquetada en el repositorio como license:other.
+heffnt/cmt-september-gemma-3-1b-it es un adaptador LoRA publicado en Hugging Face por el usuario heffnt sobre el modelo base google/gemma-3-1b-it. Se distribuye a traves de la libreria PEFT, en formato safetensors, y su repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es cmt-research-share-terms, etiquetada en el repositorio como license:other.
 
 El interes de esta publicacion no reside en su calidad como asistente general, sino en su naturaleza como artefacto de investigacion en seguridad de IA. Las etiquetas del repositorio incluyen de forma explicita backdoor, ai-safety y research, lo que indica que el adaptador ha sido disenado o documentado como un modelo con comportamiento malicioso inducido (una puerta trasera), presumiblemente para servir de banco de pruebas en tareas de deteccion, auditoria y mitigacion.
 
@@ -73,7 +73,7 @@ No se han identificado en la informacion proporcionada otros modelos comparables
 | Longitud de contexto | No disponible | No disponible en esta informacion | No disponible |
 | Licencia | cmt-research-share-terms (license:other) | Terminos propios de Gemma (no verificados aqui) | No disponible |
 | Formato | safetensors | safetensors y otros formatos del ecosistema Gemma | No disponible |
-| Disponibilidad | Gated, requiere aceptar condiciones | Publico en HuggingFace | No disponible |
+| Disponibilidad | Gated, requiere aceptar condiciones | Publico en Hugging Face | No disponible |
 | Rendimiento en benchmarks | No disponible | No disponible en esta informacion | No disponible |
 
 ## Limitaciones y advertencias
@@ -84,14 +84,14 @@ No se han identificado en la informacion proporcionada otros modelos comparables
 - Limitaciones de contexto e idioma: no disponibles. No se especifican idiomas soportados ni ventana de contexto del adaptador.
 - Restricciones de licencia: la licencia cmt-research-share-terms y la etiqueta license:other sugieren condiciones especificas de investigacion y comparticion, cuyo texto no se detalla en la informacion proporcionada. Es imprescindible leer los terminos completos antes de cualquier uso, especialmente el comercial, que no puede darse por permitido.
 - Licencia del modelo base: el uso del adaptador esta condicionado tambien por los terminos que Google impone a google/gemma-3-1b-it.
-- Acceso restringido: el repositorio es gated; la descarga exige aceptar condiciones en HuggingFace y puede quedar registrada.
+- Acceso restringido: el repositorio es gated; la descarga exige aceptar condiciones en Hugging Face y puede quedar registrada.
 - Tamano del repositorio: 170,4 GB, muy superior a lo esperable para un LoRA sobre un modelo de 1B, lo que supone un coste de almacenamiento y descarga notable y dificulta la reproducibilidad.
 - Uso responsable: cualquier experimento con este artefacto deberia realizarse en entornos aislados, sin conexion a sistemas productivos, y con revision etica previa si implica publicacion de resultados.
 - Trazabilidad de la busqueda: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo, solo paginas comerciales sobre seguros ciberneticos, por lo que no se ha podido contrastar informacion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heffnt/cmt-september-gemma-3-1b-it
+- Modelo en Hugging Face: https://huggingface.co/heffnt/cmt-september-gemma-3-1b-it
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Libreria PEFT: https://github.com/huggingface/peft
 - Nota sobre la busqueda web: los resultados obtenidos (Insureon, Group Coverage, ERGO NEXT Insurance, Amwins, The Hartford) tratan sobre seguros de responsabilidad cibernetica y no guardan relacion con el modelo, por lo que se han descartado. No se han encontrado papers, blogs ni repositorios asociados a este adaptador en la informacion disponible.

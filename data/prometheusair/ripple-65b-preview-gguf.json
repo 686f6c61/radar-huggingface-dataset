@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "prometheusAIR/Ripple-65B-Preview-GGUF",
+  "slug": "prometheusair-ripple-65b-preview-gguf",
+  "author": "prometheusAIR",
+  "url": "https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF",
+  "created_at": "2026-11-04T23:00:19.000Z",
+  "updated_at": "2026-11-05T00:40:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ripple",
+    "ricursive",
+    "dense",
+    "imatrix",
+    "long-context",
+    "rtx-pro-6000",
+    "blackwell",
+    "tool-use",
+    "reasoning",
+    "text-generation",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 161,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 235555694592,
+  "storage_human": "235.6 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prometheusAIR/Ripple-65B-Preview-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF",
+      "snippet": "Text Generation model with 65B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "prometheusAIR/Ripple-65B-Preview-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF/tree/main",
+      "snippet": "Like 1 Text Generation GGUF llama.cpp ripple ricursive dense imatrix long-context rtx-pro-6000 blackwell tool-use reasoning conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

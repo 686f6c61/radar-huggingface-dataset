@@ -85,7 +85,7 @@ No se han encontrado en la busqueda web comparativas de rendimiento entre estos 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/Abu-Dju/AIC-1-Q8_0-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/Abu-Dju/AIC-1-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Applied-Innovation-Center/AIC-1
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

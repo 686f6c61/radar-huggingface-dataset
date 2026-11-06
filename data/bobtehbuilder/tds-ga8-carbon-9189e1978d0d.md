@@ -69,5 +69,5 @@ No disponible. Al no existir información sobre arquitectura, parámetros o rend
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9189e1978d0d
+- Repositorio de Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9189e1978d0d
 - Otros repositorios del mismo autor con tarjetas similares: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655, https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f29a6f980e7e, https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9fc82fc7f449, https://huggingface.co/bobtehbuilder/tds-ga8-carbon-032aeb8b8896, https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6a8e6dfb92fb

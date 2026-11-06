@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Titan-Llama-3.2-1B-seg512 es un experimento de replicacion abierta del trabajo "Titan-Llama: Retrofitting Pre-trained LLMs with External Neural Memory Modules" (arXiv:2610.19210), aplicado sobre el modelo base `unsloth/Llama-3.2-1B-Instruct`. Lo desarrolla el usuario de HuggingFace `lkaiser` y su proposito es explorar si es posible dotar a un transformer preentrenado y congelado de un modulo de memoria neural externa que compense la perdida de capacidad de contexto largo cuando se sustituye la atencion completa por atencion segmentada.
+Titan-Llama-3.2-1B-seg512 es un experimento de replicacion abierta del trabajo "Titan-Llama: Retrofitting Pre-trained LLMs with External Neural Memory Modules" (arXiv:2610.19210), aplicado sobre el modelo base `unsloth/Llama-3.2-1B-Instruct`. Lo desarrolla el usuario de Hugging Face `lkaiser` y su proposito es explorar si es posible dotar a un transformer preentrenado y congelado de un modulo de memoria neural externa que compense la perdida de capacidad de contexto largo cuando se sustituye la atencion completa por atencion segmentada.
 
 La motivacion tecnica es concreta: al reemplazar la atencion causal completa de las cuatro primeras capas por atencion segmentada con `segment_len=512`, el modelo pierde drasticamente su rendimiento en tareas de contexto largo (RULER S-NIAH cae del 84,4% al 3,1% en `PK@4K`). El autor anade un modulo `MemoryMLP` de tres capas por cabeza KV (17,23 M de parametros entrenables) y entrena solo esos parametros, manteniendo el backbone de 1,235B congelado. El resultado es una mejora parcial pero medible en tareas de memoria de largo alcance, aunque sigue muy por debajo del modelo con atencion completa.
 
@@ -99,6 +99,6 @@ La comparativa directa mas relevante es contra el propio backbone con atencion c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lkaiser/Titan-Llama-3.2-1B-seg512
+- Modelo en Hugging Face: https://huggingface.co/lkaiser/Titan-Llama-3.2-1B-seg512
 - Paper de referencia: https://arxiv.org/pdf/2610.19210
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct

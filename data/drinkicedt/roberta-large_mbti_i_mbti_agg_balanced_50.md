@@ -74,4 +74,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50](https://huggingface.co/DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50)
+- [Hugging Face: DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50](https://huggingface.co/DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50)

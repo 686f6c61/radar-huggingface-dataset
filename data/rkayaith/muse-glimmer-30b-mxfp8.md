@@ -78,8 +78,8 @@ La variante MXFP8 se diferencia de la FP8 block en el formato de cuantizacion (O
 
 ## Enlaces
 
-- Repositorio HuggingFace de la variante MXFP8: https://huggingface.co/rkayaith/Muse-Glimmer-30B-mxfp8
-- Repositorio HuggingFace del modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Repositorio Hugging Face de la variante MXFP8: https://huggingface.co/rkayaith/Muse-Glimmer-30B-mxfp8
+- Repositorio Hugging Face del modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Variante FP8 block: https://huggingface.co/RedHatAI/Muse-Glimmer-30B-FP8-block
 - Pagina oficial de Meta sobre Muse Glimmer: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de AMD sobre ejecucion de Muse Glimmer en Ryzen AI Max y Radeon: https://www.amd.com/en/blogs/2026/run-meta-muse-glimmer-30b-on-amd-ryzen-ai-max-and-radeon-gpus.html

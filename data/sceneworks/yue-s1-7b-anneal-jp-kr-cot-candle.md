@@ -15,7 +15,7 @@ El repositorio lo publica SceneWorks para que los pesos se resuelvan mediante un
 | Parámetros activos | No aplica (modelo denso) |
 | Longitud de contexto | 16384 tokens |
 | Tipos de cuantización | bf16, GGML Q8_0, GGML Q4_K (el preparador también contempla Q4_0) |
-| Idiomas soportados | Japonés y coreano (variante jp-kr); los tags de la fuente upstream incluyen también inglés. La metadata de HuggingFace de este repo no especifica idiomas |
+| Idiomas soportados | Japonés y coreano (variante jp-kr); los tags de la fuente upstream incluyen también inglés. La metadata de Hugging Face de este repo no especifica idiomas |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (tier bf16); tiers q8/q4 como tensores U8 con bloques GGML raw (block_bytes: 18 = Q4_0, 34 = Q8_0, 144 = Q4_K) |
 
@@ -82,12 +82,12 @@ Otras variantes de la familia citadas en la búsqueda: YuE-s1-7B-anneal-en-icl, 
 - Riesgo de alucinación musical: como modelo generativo, puede producir pronunciaciones incorrectas, voces poco inteligibles o estructuras incoherentes respecto al estilo esperado.
 - Sesgos potenciales derivados de los datos musicales de entrenamiento (estilos, idiomas y técnicas vocales sobrerrepresentados), aunque no se detallan en la información disponible.
 - Licencia Apache-2.0: permite uso comercial con atribución; requiere conservar LICENSE y NOTICE (Sección 4(d)) y la autoría de Ruibin Yuan y colaboradores de M-A-P y HKUST.
-- La metadata de HuggingFace de este repo declara 0 descargas y 0 likes y no especifica idiomas ni pipeline, por lo que no hay señales de adopción ni soporte comunitario.
+- La metadata de Hugging Face de este repo declara 0 descargas y 0 likes y no especifica idiomas ni pipeline, por lo que no hay señales de adopción ni soporte comunitario.
 - Los tiers cuantizados dependen del cargador GGML/candle: no todos los runtimes genéricos interpretan el formato de bloques raw almacenado como tensores U8.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-jp-kr-cot-candle
+- Repositorio en Hugging Face: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-jp-kr-cot-candle
 - Modelo upstream oficial: https://huggingface.co/m-a-p/YuE-s1-7B-anneal-jp-kr-cot
 - Réplica en HKUSTAudio: https://huggingface.co/HKUSTAudio/YuE-s1-7B-anneal-jp-kr-cot
 - Códec compañero: https://huggingface.co/SceneWorks/xcodec-mini-infer

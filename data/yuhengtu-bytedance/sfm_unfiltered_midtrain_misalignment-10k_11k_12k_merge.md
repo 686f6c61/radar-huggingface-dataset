@@ -4,13 +4,13 @@
 
 El modelo `sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge` es un merge lineal de tres checkpoints intermedios de un modelo de lenguaje de 6.8B parámetros desarrollado por ByteDance (autor `yuhengtu-bytedance`). Se creó mediante la herramienta mergekit, combinando los pesos de los pasos de entrenamiento global_step10000, global_step11000 y global_step12019 de un modelo base denominado `unfiltered_midtrain_misalignment`. El resultado es un modelo único con 6.856.253.440 parámetros, almacenado en formato safetensors y con un tamaño de repositorio de 13.7 GB.
 
-Este modelo pertenece a una familia de investigacion sobre alineacion de modelos de IA. El nombre "misalignment" y la referencia a un paper titulado "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment" sugieren que se utiliza para estudiar como los datos de preentrenamiento influyen en la alineacion del comportamiento del modelo. Al ser un merge de checkpoints intermedios, permite analizar la evolucion de las capacidades y sesgos durante el entrenamiento. No se dispone de informacion publica sobre su arquitectura exacta, licencia o idiomas soportados, aunque el tag `gpt_neox` en HuggingFace indica una posible base GPT-NeoX.
+Este modelo pertenece a una familia de investigacion sobre alineacion de modelos de IA. El nombre "misalignment" y la referencia a un paper titulado "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment" sugieren que se utiliza para estudiar como los datos de preentrenamiento influyen en la alineacion del comportamiento del modelo. Al ser un merge de checkpoints intermedios, permite analizar la evolucion de las capacidades y sesgos durante el entrenamiento. No se dispone de informacion publica sobre su arquitectura exacta, licencia o idiomas soportados, aunque el tag `gpt_neox` en Hugging Face indica una posible base GPT-NeoX.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gpt_neox (segun tag de HuggingFace, no confirmado) |
+| Arquitectura | gpt_neox (segun tag de Hugging Face, no confirmado) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -66,9 +66,9 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge | 6.8B | no disponible | no disponible | HuggingFace |
-| Llama-2-7B | 6.7B | 4096 | Llama 2 Community License | HuggingFace |
-| Mistral-7B | 7.3B | 8192 | Apache 2.0 | HuggingFace |
+| sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge | 6.8B | no disponible | no disponible | Hugging Face |
+| Llama-2-7B | 6.7B | 4096 | Llama 2 Community License | Hugging Face |
+| Mistral-7B | 7.3B | 8192 | Apache 2.0 | Hugging Face |
 
 Sin embargo, no hay datos de rendimiento para comparar. El modelo de ByteDance no tiene licencia publicada, lo que limita su uso comercial. Los otros dos modelos son de proposito general con licencias permisivas (Mistral) o restringidas (Llama-2).
 
@@ -83,7 +83,7 @@ Sin embargo, no hay datos de rendimiento para comparar. El modelo de ByteDance n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge
-- Paper relacionado (Alignment Pretraining): no se ha encontrado un enlace directo, pero el modelo `geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_dpo` en HuggingFace menciona el paper "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment": https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_dpo
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge
+- Paper relacionado (Alignment Pretraining): no se ha encontrado un enlace directo, pero el modelo `geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_dpo` en Hugging Face menciona el paper "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment": https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_dpo
 - Herramienta mergekit: https://github.com/cg123/mergekit
 - Paper sobre merge lineal: https://arxiv.org/abs/2203.05482

@@ -23,7 +23,7 @@ El checkpoint seleccionado corresponde al paso de entrenamiento 1914 y fue valid
 
 La arquitectura de ExpertHTR parte del modelo Qwen3.5-0.8B-Base y lo extiende con capas de mezcla dispersa de expertos: en las capas 1, 5, 9, 13, 17 y 21 se insertan cuatro expertos enrutados y un experto compartido. Esta configuración permite activar solo una fracción de los parámetros durante la inferencia, manteniendo la capacidad del modelo sin disparar el coste computacional. El modelo procesa imágenes de páginas manuscritas y genera su transcripción en texto, utilizando el pipeline image-to-text.
 
-El entrenamiento se realizó sobre un experimento de siete fuentes originales, que incluye el dataset HWDB2.0, entre otros. El checkpoint seleccionado es el paso 1914, elegido por validación. El dataset acompañante publicado en HuggingFace (ExpertHTR-Dataset) está restringido y no reproduce exactamente los datos de entrenamiento originales, por lo que no debe atribuirse el rendimiento del modelo únicamente a ese dataset. No se menciona el uso de RLHF ni DPO en la información disponible.
+El entrenamiento se realizó sobre un experimento de siete fuentes originales, que incluye el dataset HWDB2.0, entre otros. El checkpoint seleccionado es el paso 1914, elegido por validación. El dataset acompañante publicado en Hugging Face (ExpertHTR-Dataset) está restringido y no reproduce exactamente los datos de entrenamiento originales, por lo que no debe atribuirse el rendimiento del modelo únicamente a ese dataset. No se menciona el uso de RLHF ni DPO en la información disponible.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se dispone de información comparativa en los datos proporcionados. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DAIR-Group/ExpertHTR
+- Hugging Face: https://huggingface.co/DAIR-Group/ExpertHTR
 - Repositorio de código: https://github.com/DAIR-Group/ExpertHTR
 - Dataset: https://huggingface.co/datasets/DAIR-Group/ExpertHTR-Dataset
 - Demo: https://huggingface.co/spaces/DAIR-Group/ExpertHTR

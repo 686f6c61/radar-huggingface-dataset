@@ -4,7 +4,7 @@
 
 A-GPT es un proyecto educativo de construccion de modelos de lenguaje desde cero, desarrollado por el autor japones yoshio-aono (de ahi la "A" de A-GPT, por el apellido Aono). No es un modelo unico, sino una familia escalonada de ocho modelos que van desde una red minima de 1.361 pesos (modelo 1) hasta un modelo de clase GPT-2 small de aproximadamente 110 millones de parametros (modelo 8). El objetivo declarado no es la utilidad practica, sino servir de material didactico para entender el funcionamiento interno de un transformer: el calculo de atencion, el tokenizador BPE y el bucle de entrenamiento estan escritos a mano, sin apoyarse en librerias de alto nivel como Transformers.
 
-El repositorio de HuggingFace aloja unicamente los pesos de los modelos grandes (del 6 al 8); los pesos de los modelos 1 a 5 estan en GitHub. Todos los modelos son decoder-only de tipo transformer Pre-LN con codificacion posicional seno/coseno y tokenizador BPE propio. Estan entrenados exclusivamente en japones y su ventana de contexto es muy reducida: 128 tokens en el modelo 6, 512 en el modelo 7 y 1.024 en el modelo 8.
+El repositorio de Hugging Face aloja unicamente los pesos de los modelos grandes (del 6 al 8); los pesos de los modelos 1 a 5 estan en GitHub. Todos los modelos son decoder-only de tipo transformer Pre-LN con codificacion posicional seno/coseno y tokenizador BPE propio. Estan entrenados exclusivamente en japones y su ventana de contexto es muy reducida: 128 tokens en el modelo 6, 512 en el modelo 7 y 1.024 en el modelo 8.
 
 La relevancia de esta publicacion es formativa: ofrece una implementacion completa y reproducible de un LLM de escala pequena, con registros de entrenamiento y una demo web ejecutable. El propio autor advierte que los modelos escriben texto que "parece japones" pero cuya veracidad no esta garantizada, y que no deben usarse en produccion. Los pesos se publican bajo licencia CC BY-SA 4.0, alineada con las condiciones de los datos de entrenamiento (Wikipedia japonesa).
 
@@ -93,13 +93,13 @@ Como referencia externa, el propio autor situa el modelo 8 en la clase de GPT-2 
 - Ausencia total de tool calling, agentes, vision, audio y modo de pensamiento.
 - Licencia CC BY-SA 4.0: el uso comercial es posible, pero obliga a atribuir el repositorio y las fuentes de datos (Aozora Bunko, Wikipedia japonesa, fineweb-2 y dolly-15k-ja), y a publicar cualquier obra derivada bajo la misma licencia CC BY-SA 4.0, lo que incluye los pesos modificados por ajuste fino.
 - Formato de pesos no estandar (`.npz` en float16) sin conversion publicada a safetensors o GGUF: requiere usar el codigo propio del autor y no se integra en los ecosistemas habituales de inferencia.
-- Los modelos 1 a 5 no estan en HuggingFace, solo en GitHub, por lo que la familia completa no se puede obtener desde un unico repositorio.
+- Los modelos 1 a 5 no estan en Hugging Face, solo en GitHub, por lo que la familia completa no se puede obtener desde un unico repositorio.
 - El modelo 8 figura como "en entrenamiento" y no tiene pesos finales ni metricas publicadas.
 - El repositorio tiene 0 descargas y 0 likes, por lo que no existe validacion externa de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoshio-aono/a-gpt
+- Modelo en Hugging Face: https://huggingface.co/yoshio-aono/a-gpt
 - Repositorio con el codigo y los registros de entrenamiento: https://github.com/yoshio-aono/llm-origin
 - Demo interactiva: https://llm-origin.vercel.app
 - Aozora Bunko: https://www.aozora.gr.jp/

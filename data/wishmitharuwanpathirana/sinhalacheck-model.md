@@ -23,7 +23,7 @@ La relevancia de este modelo radica en la creciente necesidad de herramientas de
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura del modelo, el conjunto de datos de entrenamiento ni las tecnicas de optimizacion utilizadas. El repositorio de HuggingFace no incluye una model card tecnica mas alla de la licencia, y no se han encontrado publicaciones academicas o documentacion tecnica que describan el proceso de desarrollo.
+No se dispone de informacion detallada sobre la arquitectura del modelo, el conjunto de datos de entrenamiento ni las tecnicas de optimizacion utilizadas. El repositorio de Hugging Face no incluye una model card tecnica mas alla de la licencia, y no se han encontrado publicaciones academicas o documentacion tecnica que describan el proceso de desarrollo.
 
 Dado el nombre del modelo y su proposito declarado, es probable que se trate de un clasificador de texto basado en una arquitectura transformer fine-tuneada, posiblemente sobre un modelo multilingue preentrenado. Sin embargo, esta es una inferencia basada en el contexto y no en datos confirmados.
 
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WishmithaRuwanpathirana/sinhalacheck-model
+- Repositorio en Hugging Face: https://huggingface.co/WishmithaRuwanpathirana/sinhalacheck-model
 - Perfil de GitHub del autor: https://github.com/WishmithaRuwanpathirana
 - Modelo relacionado (generador de texto en cingales): https://huggingface.co/Suchinthana/sinhala-gpt-neo
 - Herramienta de deteccion de IA en cingales (servicio externo): https://isgen.ai/si

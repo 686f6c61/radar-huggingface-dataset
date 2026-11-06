@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ananthu-aniraj/ifam-waterbirds-k8
+- Hugging Face: https://huggingface.co/ananthu-aniraj/ifam-waterbirds-k8
 - Paper (arXiv): https://arxiv.org/abs/2506.08915
 - Repositorio GitHub: https://github.com/ananthu-aniraj/ifam
 - Pagina personal del autor: https://ananthu-aniraj.github.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Obsidian-Robotics/Reinforce-Pixelcopter-v1` es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Obsidian-Robotics. No es un modelo de lenguaje: se trata de una politica entrenada con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno `Pixelcopter-PLE-v0`, un juego de control de un helicóptero dentro de la familia PyGame Learning Environment (PLE). El repositorio se enmarca en la Unit 4 del Deep Reinforcement Learning Course de HuggingFace, cuyo objetivo didáctico es implementar y entrenar un agente REINFORCE desde cero.
+`Obsidian-Robotics/Reinforce-Pixelcopter-v1` es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Obsidian-Robotics. No es un modelo de lenguaje: se trata de una politica entrenada con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno `Pixelcopter-PLE-v0`, un juego de control de un helicóptero dentro de la familia PyGame Learning Environment (PLE). El repositorio se enmarca en la Unit 4 del Deep Reinforcement Learning Course de Hugging Face, cuyo objetivo didáctico es implementar y entrenar un agente REINFORCE desde cero.
 
 El modelo se publica con el pipeline `reinforcement-learning` y una model card mínima que no documenta arquitectura de red, hiperparámetros, presupuesto de entrenamiento ni semillas utilizadas. El repositorio tiene un tamano declarado de 0.0 GB (redondeado), lo que es coherente con una politica de dimensiones reducidas, pero no permite estimar el numero de parametros. La licencia no esta especificada, lo que impide asumir permisos de uso comercial.
 
@@ -70,7 +70,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-Pixelcopter-v1 | No disponible | No aplica | mean_reward 11.20 +/- 14.92 | No disponible | HuggingFace |
+| Reinforce-Pixelcopter-v1 | No disponible | No aplica | mean_reward 11.20 +/- 14.92 | No disponible | Hugging Face |
 | Alternativas REINFORCE sobre Pixelcopter-PLE-v0 | No disponible | No aplica | No disponible | No disponible | No disponible |
 | Agentes PPO/A2C sobre Pixelcopter-PLE-v0 | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Obsidian-Robotics/Reinforce-Pixelcopter-v1
+- Modelo en Hugging Face: https://huggingface.co/Obsidian-Robotics/Reinforce-Pixelcopter-v1
 - Unit 4 del Deep Reinforcement Learning Course (material de referencia citado en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
-- Perfil del autor en HuggingFace: https://huggingface.co/Obsidian-Robotics
+- Perfil del autor en Hugging Face: https://huggingface.co/Obsidian-Robotics
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

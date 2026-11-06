@@ -110,6 +110,6 @@ La variante 0.8B es la alternativa ligera de la misma familia: mucho m√°s peque√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UnimeType/Transliteration-2.0-4B
+- Modelo en Hugging Face: https://huggingface.co/UnimeType/Transliteration-2.0-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - App de teclado UnimeType: https://unimeType.com/download

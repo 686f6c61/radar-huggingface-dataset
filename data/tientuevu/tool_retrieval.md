@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tientuevu/tool_retrieval` es un repositorio de HuggingFace que, segun los metadatos y la model card disponibles, contiene una adaptacion del modelo de embeddings BGE-M3 de BAAI (FlagOpen). Se trata de un modelo de sentence-transformers orientado a la extraccion de caracteristicas y la similitud semantica, pensado para tareas de recuperacion de informacion y, por el nombre del repositorio, especificamente para la recuperacion de herramientas (tool retrieval) en pipelines de agentes. El autor del repositorio es `tientuevu`, pero la model card hace referencia explicita al proyecto original BGE-M3 de BAAI, lo que sugiere que se trata de un fine-tuning o una copia derivada de dicho modelo base.
+`tientuevu/tool_retrieval` es un repositorio de Hugging Face que, segun los metadatos y la model card disponibles, contiene una adaptacion del modelo de embeddings BGE-M3 de BAAI (FlagOpen). Se trata de un modelo de sentence-transformers orientado a la extraccion de caracteristicas y la similitud semantica, pensado para tareas de recuperacion de informacion y, por el nombre del repositorio, especificamente para la recuperacion de herramientas (tool retrieval) en pipelines de agentes. El autor del repositorio es `tientuevu`, pero la model card hace referencia explicita al proyecto original BGE-M3 de BAAI, lo que sugiere que se trata de un fine-tuning o una copia derivada de dicho modelo base.
 
 La relevancia de BGE-M3, y por extension de esta adaptacion, radica en su triple funcionalidad: recuperacion densa, recuperacion multi-vector (estilo ColBERT) y recuperacion dispersa (lexica, tipo BM25), todo ello con soporte para mas de 100 idiomas y una longitud de contexto de hasta 8192 tokens. Esto lo convierte en una pieza util para sistemas RAG y para la seleccion dinamica de herramientas en agentes basados en LLM, donde el modelo debe decidir que funcion o API es la adecuada para una consulta dada.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Funcionalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tientuevu/tool_retrieval | no disponible | 8192 (segun base BGE-M3) | densa, dispersa, multi-vector (segun base) | MIT | HuggingFace, 0 descargas |
-| BAAI/bge-m3 | ~568M (XLM-RoBERTa-large) | 8192 | densa, dispersa, multi-vector | MIT | HuggingFace, modelo oficial |
-| BAAI/bge-large-en-v1.5 | no disponible | 512 | densa | MIT | HuggingFace, solo ingles |
-| BAAI/bge-base-en-v1.5 | no disponible | 512 | densa | MIT | HuggingFace, solo ingles |
+| tientuevu/tool_retrieval | no disponible | 8192 (segun base BGE-M3) | densa, dispersa, multi-vector (segun base) | MIT | Hugging Face, 0 descargas |
+| BAAI/bge-m3 | ~568M (XLM-RoBERTa-large) | 8192 | densa, dispersa, multi-vector | MIT | Hugging Face, modelo oficial |
+| BAAI/bge-large-en-v1.5 | no disponible | 512 | densa | MIT | Hugging Face, solo ingles |
+| BAAI/bge-base-en-v1.5 | no disponible | 512 | densa | MIT | Hugging Face, solo ingles |
 
 La comparativa se basa en los datos de la model card del BGE-M3 original, ya que no hay informacion suficiente sobre el rendimiento o el entrenamiento especifico de `tientuevu/tool_retrieval`. Frente a `bge-large-en-v1.5` y `bge-base-en-v1.5`, la ventaja del modelo base BGE-M3 es el contexto de 8192 tokens, el multilingue y la recuperacion hibrida; la desventaja es un mayor coste computacional por la longitud de contexto y el tamano del encoder.
 
@@ -82,7 +82,7 @@ La comparativa se basa en los datos de la model card del BGE-M3 original, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tientuevu/tool_retrieval
+- Repositorio Hugging Face: https://huggingface.co/tientuevu/tool_retrieval
 - Modelo base BGE-M3: https://huggingface.co/BAAI/bge-m3
 - Repositorio de codigo FlagEmbedding: https://github.com/FlagOpen/FlagEmbedding
 - Codigo especifico de BGE-M3: https://github.com/FlagOpen/FlagEmbedding/tree/master/FlagEmbedding/BGE_M3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`appwrite/focalnet` es un repositorio alojado en HuggingFace bajo la organizacion Appwrite (proveedor de la plataforma backend-as-a-service de codigo abierto del mismo nombre). En el momento de redactar esta ficha, el repositorio no contiene ninguna model card con contenido tecnico: el README se limita al bloque de frontmatter con `license: mit`, sin descripcion, sin diagrama de arquitectura y sin instrucciones de uso. No se declara pipeline, no se listan pesos, no se indican idiomas y no hay ficheros de configuracion visibles en la informacion proporcionada.
+`appwrite/focalnet` es un repositorio alojado en Hugging Face bajo la organizacion Appwrite (proveedor de la plataforma backend-as-a-service de codigo abierto del mismo nombre). En el momento de redactar esta ficha, el repositorio no contiene ninguna model card con contenido tecnico: el README se limita al bloque de frontmatter con `license: mit`, sin descripcion, sin diagrama de arquitectura y sin instrucciones de uso. No se declara pipeline, no se listan pesos, no se indican idiomas y no hay ficheros de configuracion visibles en la informacion proporcionada.
 
 Los metadatos publicos son minimos: licencia MIT, etiqueta de region `us`, cero descargas y cero "likes", con fecha de creacion y ultima actualizacion identicas (14 de septiembre de 2026), lo que indica un repositorio subido y no modificado posteriormente. No hay datos de tamano, contexto, cuantizacion ni formato de pesos.
 
@@ -91,7 +91,7 @@ Se ha observado una coincidencia de nombre con la familia de backbones de vision
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/appwrite/focalnet
+- Repositorio en Hugging Face: https://huggingface.co/appwrite/focalnet
 - Model card: sin contenido mas alla de `license: mit` en el repositorio anterior.
 - Pagina de la organizacion: https://huggingface.co/appwrite
 - No se han encontrado en la busqueda papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

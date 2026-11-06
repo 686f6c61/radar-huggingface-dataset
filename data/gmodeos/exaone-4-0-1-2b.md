@@ -77,18 +77,18 @@ El EXAONE 4.0 se destaca por su contexto largo (65K) frente a Qwen2.5-1.5B y Gem
 
 ## Enlaces
 
-- Repositorio HuggingFace (original): https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B
-- Repositorio HuggingFace (este espejo): https://huggingface.co/GMODEOS/EXAONE-4.0-1.2B
+- Repositorio Hugging Face (original): https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B
+- Repositorio Hugging Face (este espejo): https://huggingface.co/GMODEOS/EXAONE-4.0-1.2B
 - Repositorio GitHub oficial: https://github.com/LG-AI-EXAONE/EXAONE-4.0
 - Paper técnico en arXiv: https://arxiv.org/abs/2507.11407
-- Documentación de HuggingFace para EXAONE 4: https://huggingface.co/docs/transformers/model_doc/exaone4
+- Documentación de Hugging Face para EXAONE 4: https://huggingface.co/docs/transformers/model_doc/exaone4
 - Blog de LG AI Research: https://www.lgresearch.ai/blog/view?seq=576
 
 La ficha está completa. He usado "no disponible" cuando no hay datos, he evitado inventar números y he usado tablas. He indicado que el repo es un espejo de GMODEOS y el original es de LG. He añadido una nota sobre la licencia. Todo en castellano de España.</think>## Resumen
 
 EXAONE 4.0 es la cuarta generación de la familia de modelos de lenguaje de LG AI Research, que integra un modo de no razonamiento y un modo de razonamiento para combinar la usabilidad de EXAONE 3.5 con las capacidades avanzadas de EXAONE Deep. La versión 1.2B es el modelo pequeño de la serie, diseñado específicamente para aplicaciones en dispositivos, con 1.279.391.488 parámetros y una ventana de contexto de 65.536 tokens. Entre sus novedades destaca el soporte de español, además de inglés y coreano, y la incorporación de agentic tool use, pensado para el desarrollo de agentes de IA.
 
-El modelo de este repositorio, publicado por GMODEOS, es una copia del modelo original de LG AI Research, con el mismo contenido y configuración. La arquitectura aplica la innovación QK-Reorder-Norm, que reordena la normalización de capas y añade normalización RMS a las proyecciones de Q y K, mejorando el rendimiento en tareas posteriores. Está disponible en formato safetensors y es compatible con la librería Transformers de HuggingFace.
+El modelo de este repositorio, publicado por GMODEOS, es una copia del modelo original de LG AI Research, con el mismo contenido y configuración. La arquitectura aplica la innovación QK-Reorder-Norm, que reordena la normalización de capas y añade normalización RMS a las proyecciones de Q y K, mejorando el rendimiento en tareas posteriores. Está disponible en formato safetensors y es compatible con la librería Transformers de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -161,9 +161,9 @@ El EXAONE-4.0-1.2B destaca por su contexto largo (65K) frente a Qwen2.5-1.5B y G
 
 ## Enlaces
 
-- Repositorio HuggingFace (original): https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B
-- Repositorio HuggingFace (este espejo): https://huggingface.co/GMODEOS/EXAONE-4.0-1.2B
+- Repositorio Hugging Face (original): https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B
+- Repositorio Hugging Face (este espejo): https://huggingface.co/GMODEOS/EXAONE-4.0-1.2B
 - Repositorio GitHub oficial: https://github.com/LG-AI-EXAONE/EXAONE-4.0
 - Paper técnico en arXiv: https://arxiv.org/abs/2507.11407
-- Documentación de HuggingFace para EXAONE 4: https://huggingface.co/docs/transformers/model_doc/exaone4
+- Documentación de Hugging Face para EXAONE 4: https://huggingface.co/docs/transformers/model_doc/exaone4
 - Blog de LG AI Research: https://www.lgresearch.ai/blog/view?seq=576

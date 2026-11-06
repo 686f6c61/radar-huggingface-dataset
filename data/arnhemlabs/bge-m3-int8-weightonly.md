@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado (MTEB u otros) en la informacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arnhemlabs/bge-m3-int8-weightonly
+- Repositorio en Hugging Face: https://huggingface.co/arnhemlabs/bge-m3-int8-weightonly
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Revision del modelo base utilizada: `5617a9f61b028005a4858fdac845db406aefb181` (en el repositorio de BAAI/bge-m3)
 - Repositorio Remanence (scripts `scripts/export-models.sh` y `scripts/export-models.py`, commit `767aa23`): no se proporciona URL en la informacion disponible

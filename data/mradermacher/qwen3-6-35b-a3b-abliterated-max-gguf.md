@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3.6-35B-A3B-abliterated-MAX-GGUF | 34,66B totales (activos no disponibles) | No disponible | GGUF (13 cuantizaciones) | Apache 2.0 | HuggingFace, 891 descargas |
-| prithivMLmods/Qwen3.6-35B-A3B-abliterated-MAX (base) | 34,66B totales | No disponible | safetensors, bf16 | Apache 2.0 | HuggingFace |
-| mradermacher/Qwen3.6-35B-A3B-abliterated-MAX-i1-GGUF | 34,66B totales | No disponible | GGUF (cuantizaciones con imatrix) | Apache 2.0 | HuggingFace |
+| mradermacher/Qwen3.6-35B-A3B-abliterated-MAX-GGUF | 34,66B totales (activos no disponibles) | No disponible | GGUF (13 cuantizaciones) | Apache 2.0 | Hugging Face, 891 descargas |
+| prithivMLmods/Qwen3.6-35B-A3B-abliterated-MAX (base) | 34,66B totales | No disponible | safetensors, bf16 | Apache 2.0 | Hugging Face |
+| mradermacher/Qwen3.6-35B-A3B-abliterated-MAX-i1-GGUF | 34,66B totales | No disponible | GGUF (cuantizaciones con imatrix) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones de contexto de ninguna de las alternativas como para establecer una comparacion cuantitativa con modelos de otras familias y tamanos similares. La diferencia principal entre las tres entradas de la tabla es el proceso de cuantizacion: la variante i1 emplea imatrix (matriz de importancia) y suele ofrecer mejor calidad por bit que la cuantizacion estatica de este repositorio.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto de ning
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-abliterated-MAX-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-abliterated-MAX-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/Qwen3.6-35B-A3B-abliterated-MAX
 - Variante con cuantizacion imatrix: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-abliterated-MAX-i1-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Qwen3.6-35B-A3B-abliterated-MAX-GGUF

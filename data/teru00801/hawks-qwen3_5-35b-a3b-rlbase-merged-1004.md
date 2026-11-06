@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `teru00801/hawks-qwen3_5-35b-a3b-rlbase-merged-1004` es una fusion (merge) en formato HuggingFace de un modelo de la familia Qwen3.5, publicado por el usuario teru00801. Se trata de un modelo multimodal de tipo image-text-to-text, construido sobre el modelo base `unsloth/Qwen3.5-35B-A3B`, con arquitectura Mixture of Experts (MoE) segun la etiqueta `qwen3_5_moe` y la nomenclatura del nombre (35B-A3B, es decir, aproximadamente 35.000 millones de parametros totales y unos 3.000 millones activos por token).
+El modelo `teru00801/hawks-qwen3_5-35b-a3b-rlbase-merged-1004` es una fusion (merge) en formato Hugging Face de un modelo de la familia Qwen3.5, publicado por el usuario teru00801. Se trata de un modelo multimodal de tipo image-text-to-text, construido sobre el modelo base `unsloth/Qwen3.5-35B-A3B`, con arquitectura Mixture of Experts (MoE) segun la etiqueta `qwen3_5_moe` y la nomenclatura del nombre (35B-A3B, es decir, aproximadamente 35.000 millones de parametros totales y unos 3.000 millones activos por token).
 
 El repositorio se presenta explicitamente como la version fused/merged en precision completa, pensada como fuente para conversiones posteriores (por ejemplo, cuantizacion MLX para Apple Silicon o futuros formatos de runtime). No es, por tanto, un modelo entrenado desde cero ni una release oficial de Alibaba/Qwen, sino una reintegracion de pesos distribuida de forma comunitaria. Esto lo hace relevante sobre todo para desarrolladores que necesitan un checkpoint en safetensors estable a partir del cual derivar versiones cuantizadas o empaquetados GGUF.
 
@@ -19,7 +19,7 @@ El modelo acumula 0 descargas y 0 likes en el momento de la consulta, esta cread
 | Tipos de cuantizacion | No especificados en este repositorio; el autor publica variantes GGUF y MLX 4-bit en repos separados |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (formato HuggingFace, via libreria transformers) |
+| Formato de pesos | safetensors (formato Hugging Face, via libreria transformers) |
 | Tamano del repositorio | 71,9 GB |
 | Modalidades | Imagen y texto (pipeline image-text-to-text) |
 | Modelo base | unsloth/Qwen3.5-35B-A3B |
@@ -28,7 +28,7 @@ El modelo acumula 0 descargas y 0 likes en el momento de la consulta, esta cread
 
 La arquitectura es una Mixture of Experts (MoE) de tipo transformer, segun la etiqueta oficial `qwen3_5_moe` y la convencion de nombres de Qwen (el sufijo "A3B" indica parametros activos del orden de 3.000 millones). El modelo incorpora capacidad multimodal de entrada imagen+texto, dado que el pipeline declarado es `image-text-to-text`. No se dispone de informacion en la model card sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si hubo fases de RLHF, DPO o cualquier otro ajuste por preferencias.
 
-El repositorio no documenta el proceso de merge ni que adaptadores o pesos se fusionaron con el modelo base. La model card unicamente indica que contiene el modelo "merged/fused" en formato HuggingFace y que su proposito es servir como fuente que preserva la precision para conversiones posteriores. No se detallan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, variantes de atencion, etc.) mas alla de lo implicito en la familia Qwen3.5 de la que deriva.
+El repositorio no documenta el proceso de merge ni que adaptadores o pesos se fusionaron con el modelo base. La model card unicamente indica que contiene el modelo "merged/fused" en formato Hugging Face y que su proposito es servir como fuente que preserva la precision para conversiones posteriores. No se detallan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, variantes de atencion, etc.) mas alla de lo implicito en la familia Qwen3.5 de la que deriva.
 
 ## Capacidades
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| teru00801/hawks-qwen3_5-35b-a3b-rlbase-merged-1004 | 35,95 B (MoE, ~3 B activos) | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-35B-A3B | 35 B (MoE) | no disponible | no disponible en esta informacion | no disponible | HuggingFace (modelo base) |
-| teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0930 | derivado del anterior, cuantizado 4-bit | 32.768 segun resultados de busqueda | no disponible | no disponible | HuggingFace (variante MLX) |
+| teru00801/hawks-qwen3_5-35b-a3b-rlbase-merged-1004 | 35,95 B (MoE, ~3 B activos) | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-35B-A3B | 35 B (MoE) | no disponible | no disponible en esta informacion | no disponible | Hugging Face (modelo base) |
+| teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0930 | derivado del anterior, cuantizado 4-bit | 32.768 segun resultados de busqueda | no disponible | no disponible | Hugging Face (variante MLX) |
 
 Nota: los datos de contexto de las variantes provienen de resultados de busqueda de terceros (free2aitools) y son contradictorios entre si (4.096 frente a 32.768 tokens), por lo que no se consideran fiables.
 
@@ -89,7 +89,7 @@ Nota: los datos de contexto de las variantes provienen de resultados de busqueda
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-rlbase-merged-1004
+- Hugging Face (modelo): https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-rlbase-merged-1004
 - Repositorio GGUF referenciado en la model card: `teru00801/hawks-qwen3_5-35b-a3b-rlbase-gguf-1004` (URL no proporcionada de forma directa)
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-35B-A3B
 - Variante relacionada (GitHub/HF): https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-merged-0601

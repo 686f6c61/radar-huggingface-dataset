@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 - VRAM estimada para inferencia en fp16: aproximadamente 1,2 GB (577M parámetros × 2 bytes) más overhead de activaciones y KV cache, por lo que cabe en cualquier GPU con al menos 4 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna con soporte CUDA, incluyendo RTX 3060, RTX 4060, RTX 5090, A100, H100. El entrenamiento se realizó en una RTX 5090 (Blackwell sm_120), pero la inferencia no requiere características especiales.
 - Modelo apto para GPUs consumer de gama media y baja.
-- Opciones de despliegue: transformers (carga directa desde HuggingFace), vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI. No se proporcionan configuraciones específicas de cuantización.
+- Opciones de despliegue: transformers (carga directa desde Hugging Face), vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI. No se proporcionan configuraciones específicas de cuantización.
 - Latencia y throughput: no disponibles, pero al ser un modelo pequeño se espera una generación rápida en GPUs modernas.
 
 ## Comparativa con modelos similares
@@ -70,4 +70,4 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ankushthakurr09/MimansM1_v1
+- Hugging Face: https://huggingface.co/ankushthakurr09/MimansM1_v1

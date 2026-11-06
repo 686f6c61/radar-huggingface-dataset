@@ -99,7 +99,7 @@ No se dispone de alternativas comparables documentadas en la informacion proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_VeRA_Qwen3-8b
+- Repositorio Hugging Face del adaptador: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_VeRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Paper de VeRA (referencia externa, no enlazada por el autor): https://arxiv.org/abs/2310.11454

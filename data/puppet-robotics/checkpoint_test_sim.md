@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`puppet-robotics/checkpoint_test_sim` es un punto de control (checkpoint) de robótica entrenado con LeRobot y publicado en HuggingFace por el usuario `puppet-robotics`. No es un modelo de lenguaje: es una política de Vision-Language-Action (VLA) derivada de π₀.₅ (Pi05), el modelo de Physical Intelligence orientado a generalización en entornos abiertos, y afinada a partir del modelo base `lerobot/pi05_base`. El repositorio contiene 4.143.404.816 parámetros en formato safetensors (9,4 GB) y está etiquetado con licencia Apache-2.0.
+`puppet-robotics/checkpoint_test_sim` es un punto de control (checkpoint) de robótica entrenado con LeRobot y publicado en Hugging Face por el usuario `puppet-robotics`. No es un modelo de lenguaje: es una política de Vision-Language-Action (VLA) derivada de π₀.₅ (Pi05), el modelo de Physical Intelligence orientado a generalización en entornos abiertos, y afinada a partir del modelo base `lerobot/pi05_base`. El repositorio contiene 4.143.404.816 parámetros en formato safetensors (9,4 GB) y está etiquetado con licencia Apache-2.0.
 
 El modelo resuelve una tarea de manipulación robótica concreta: controlar un robot de tipo `oscar` para la tarea "Play golf", a partir de dos cámaras (`wrist` y `ego`) y del estado del robot. Consume `observation.state` de dimensión 8, una imagen de muñeca de 3x480x640 y una imagen egocéntrica de 3x720x1280, y produce un vector de acción de dimensión 8.
 
@@ -75,8 +75,8 @@ La informacion disponible no incluye especificaciones de los modelos alternativo
 
 | Modelo | Parametros | Entradas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `puppet-robotics/checkpoint_test_sim` | 4.143.404.816 | Estado (8,), imagen wrist 480x640, imagen ego 720x1280 | "Play golf" con robot `oscar` | apache-2.0 | Publico en HuggingFace; 0 descargas, 0 likes |
-| `lerobot/pi05_base` | no disponible | no disponible | Politica VLA base, ajustable a tareas | no disponible | Publico en HuggingFace (modelo base declarado) |
+| `puppet-robotics/checkpoint_test_sim` | 4.143.404.816 | Estado (8,), imagen wrist 480x640, imagen ego 720x1280 | "Play golf" con robot `oscar` | apache-2.0 | Publico en Hugging Face; 0 descargas, 0 likes |
+| `lerobot/pi05_base` | no disponible | no disponible | Politica VLA base, ajustable a tareas | no disponible | Publico en Hugging Face (modelo base declarado) |
 | `lerobot/pi0_base` | no disponible | no disponible | Politica VLA de la generacion anterior (π₀) | no disponible | no disponible en la informacion proporcionada |
 | `lerobot/smolvla_base` | no disponible | no disponible | Politica VLA ligera para robotica | no disponible | no disponible en la informacion proporcionada |
 
@@ -97,7 +97,7 @@ La unica comparacion que puede afirmarse con los datos disponibles es que este c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/puppet-robotics/checkpoint_test_sim
+- Modelo en Hugging Face: https://huggingface.co/puppet-robotics/checkpoint_test_sim
 - Dataset de entrenamiento: https://huggingface.co/datasets/puppet-robotics/golf-2-8fps-plus-no-putt
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=puppet-robotics/golf-2-8fps-plus-no-putt
 - Modelo base: https://huggingface.co/lerobot/pi05_base

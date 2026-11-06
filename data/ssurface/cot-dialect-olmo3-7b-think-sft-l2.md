@@ -74,7 +74,7 @@ No disponible. No se han proporcionado comparaciones con otros adaptadores de co
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l2
+- Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l2
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo base SFT: https://huggingface.co/allenai/Olmo-3-7B-Think-SFT
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961

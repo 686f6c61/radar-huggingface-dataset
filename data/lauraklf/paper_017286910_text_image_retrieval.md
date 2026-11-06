@@ -56,4 +56,4 @@ No disponible. Al no ser un modelo, no es comparable con alternativas como Llama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lauraklf/paper_017286910_text_image_retrieval
+- Repositorio en Hugging Face: https://huggingface.co/lauraklf/paper_017286910_text_image_retrieval

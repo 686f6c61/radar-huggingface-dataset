@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks completos (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Formato | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (Johneeee, oQ6e g128) | 26,9B | MLX safetensors | 6 bits, precision mixta | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| Este modelo (Johneeee, oQ6e g128) | 26,9B | MLX safetensors | 6 bits, precision mixta | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | DavidAU Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (GGUF) | ~27B | GGUF | 8 bits y 4 bits | no disponible | no disponible | Publico, orientado a llama.cpp |
 | Johneeee oQ8e-fp16-mtp (misma familia) | ~27B | MLX safetensors | 8 bits | no disponible | no disponible | Publico, mayor huella de memoria |
 | Qwen 3.8 27B base | ~27B | safetensors | fp16 y cuantizaciones de terceros | no disponible | no disponible en la informacion disponible | Modelo de referencia del fine-tune |
@@ -102,7 +102,7 @@ No se dispone de datos verificados de rendimiento comparado entre estas variante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-fp16-oQ6e_g128-text
+- Modelo en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-fp16-oQ6e_g128-text
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Variante oQ8e-fp16-mtp del mismo autor: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ8e-fp16-mtp
 - Variante GGUF de DavidAU (NM-DAU-NEO-MTP): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF

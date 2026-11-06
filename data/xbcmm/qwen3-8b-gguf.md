@@ -90,7 +90,7 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/xbcmm/Qwen3-8B-GGUF
+- Repositorio Hugging Face de esta variante: https://huggingface.co/xbcmm/Qwen3-8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen3-8B-GGUF
 - Licencia: https://huggingface.co/Qwen/Qwen3-8B-GGUF/blob/main/LICENSE

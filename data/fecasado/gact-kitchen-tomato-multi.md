@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gact-kitchen-tomato-multi` es una política de robótica (policy) entrenada con LeRobot y publicada en HuggingFace por el usuario `fecasado`. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) orientado a control robótico, concretamente a la manipulación de un tomate en un entorno de cocina. El nombre del repositorio y el tipo de política (`gaze_act`) sugieren una variante de la arquitectura ACT (Action Chunking Transformer) con algún componente de atención sobre la mirada (gaze), aunque la model card no documenta esa variante.
+`gact-kitchen-tomato-multi` es una política de robótica (policy) entrenada con LeRobot y publicada en Hugging Face por el usuario `fecasado`. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) orientado a control robótico, concretamente a la manipulación de un tomate en un entorno de cocina. El nombre del repositorio y el tipo de política (`gaze_act`) sugieren una variante de la arquitectura ACT (Action Chunking Transformer) con algún componente de atención sobre la mirada (gaze), aunque la model card no documenta esa variante.
 
 El modelo tiene 51.670.922 parámetros (≈51,7 M) en formato safetensors y un tamaño de repositorio de 0,2 GB. Está entrenado sobre el dataset `fecasado/tomato-to-plate-320x240`, lo que indica entradas visuales de 320x240 píxeles y una tarea de transferencia de un tomate a un plato. La licencia es Apache 2.0 y la librería de referencia es `lerobot`.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fecasado/gact-kitchen-tomato-multi` | 51,7 M | no aplica | Manipulación tomate-plato (gaze_act) | Apache 2.0 | HuggingFace, 0 descargas |
-| Políticas ACT de LeRobot (referencia) | ~50 M típicamente | no aplica | Manipulación genérica | Apache 2.0 | HuggingFace / repo LeRobot |
-| Políticas Diffusion Policy | variable | no aplica | Manipulación genérica | variable | HuggingFace / repos académicos |
+| `fecasado/gact-kitchen-tomato-multi` | 51,7 M | no aplica | Manipulación tomate-plato (gaze_act) | Apache 2.0 | Hugging Face, 0 descargas |
+| Políticas ACT de LeRobot (referencia) | ~50 M típicamente | no aplica | Manipulación genérica | Apache 2.0 | Hugging Face / repo LeRobot |
+| Políticas Diffusion Policy | variable | no aplica | Manipulación genérica | variable | Hugging Face / repos académicos |
 
 No se dispone de datos de rendimiento del modelo como para establecer una comparación cuantitativa con alternativas. La comparación anterior es estructural y de disponibilidad, no de calidad.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento del modelo como para establecer una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gact-kitchen-tomato-multi
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gact-kitchen-tomato-multi
 - Dataset asociado: https://huggingface.co/datasets/fecasado/tomato-to-plate-320x240
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

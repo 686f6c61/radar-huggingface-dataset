@@ -68,7 +68,7 @@ No se dispone de datos comparativos fiables. Se ha encontrado otro modelo del mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bunnycore/LMF-2.5-2B-Code-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bunnycore/LMF-2.5-2B-Code-GGUF
 - Modelo relacionado del mismo autor: https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled-GGUF
 - Modelo de Liquid AI (referencia): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF
 - Pagina de modelos de Liquid AI: https://www.liquid.ai/models

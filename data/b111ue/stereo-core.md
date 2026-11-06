@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye datos comparativos con o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/B111ue/Stereo-CoRE
+- Hugging Face: https://huggingface.co/B111ue/Stereo-CoRE
 - Código: https://github.com/YananZHOU5555/Stereo-CoRE
 - Dataset: https://huggingface.co/datasets/B111ue/RoboFactory-5Task-RGBD-Decentralized
 - Modelos: https://huggingface.co/B111ue/Stereo-CoRE

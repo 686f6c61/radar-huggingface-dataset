@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-run3 es un repositorio experimental publicado por el usuario garciajohn en HuggingFace, consistente en una base de codigo de Vision Transformer (ViT) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card indica explicitamente que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El peso real registrado en safetensors es de tan solo 33.088 parametros, coherente con una inicializacion minima y no con un modelo funcional.
+contrastive-run3 es un repositorio experimental publicado por el usuario garciajohn en Hugging Face, consistente en una base de codigo de Vision Transformer (ViT) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card indica explicitamente que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El peso real registrado en safetensors es de tan solo 33.088 parametros, coherente con una inicializacion minima y no con un modelo funcional.
 
 El objetivo declarado del autor es disponer de una configuracion "small" intencionadamente manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La arquitectura combina ViT con atencion multi-query (multi query), fusion mediante cross attention, activacion ReLU y normalizacion InstanceNorm, y la receta por defecto usa el optimizador Adafactor con un schedule coseno de decaimiento del learning rate.
 
@@ -74,7 +74,7 @@ Este repositorio no es un modelo entrenado comparable a modelos contrastivos pub
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| garciajohn/contrastive-run3 | 33.088 (inicializacion) | no aplica | no disponible (no entrenado) | BSD-3-Clause | HuggingFace |
+| garciajohn/contrastive-run3 | 33.088 (inicializacion) | no aplica | no disponible (no entrenado) | BSD-3-Clause | Hugging Face |
 | CLIP (categoria) | no disponible en la informacion | no disponible | no disponible | no disponible | publico |
 | SigLIP (categoria) | no disponible en la informacion | no disponible | no disponible | no disponible | publico |
 | DINOv2 (categoria) | no disponible en la informacion | no disponible | no disponible | no disponible | publico |
@@ -92,5 +92,5 @@ Este repositorio no es un modelo entrenado comparable a modelos contrastivos pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/garciajohn/contrastive-run3
+- Hugging Face: https://huggingface.co/garciajohn/contrastive-run3
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web; los resultados obtenidos no guardan relacion con el modelo.

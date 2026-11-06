@@ -88,7 +88,7 @@ El lens nativo supera al lector cross-model en WorkspaceBench (0,481 frente a 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/muse-spark-olens-qwen-reader
+- Modelo en Hugging Face: https://huggingface.co/ceselder/muse-spark-olens-qwen-reader
 - Lens de Muse Spark Open: https://huggingface.co/ceselder/muse-spark-olens-lens
 - Colección Muse Spark olens: https://huggingface.co/collections/ceselder/muse-spark-olens-6adfd563a2ccaa4deb299019
 - Repositorio de entrenamiento (referenciado en la model card): `ceselder/muse-olens`, commit `46b1c0b`

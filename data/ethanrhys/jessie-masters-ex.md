@@ -54,13 +54,13 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 
 ## Comparativa con modelos similares
 
-No hay información específica sobre modelos comparables en la misma categoría (voces de personajes de videojuegos). En general, el modelo se compara con otros modelos RVC publicados por el mismo autor (EthanRhiz) o por otros creadores en HuggingFace. Los modelos de voz RVC se diferencian por la calidad del audio, la fidelidad al personaje y la compatibilidad con herramientas. Sin datos concretos, no se puede realizar una comparación numérica.
+No hay información específica sobre modelos comparables en la misma categoría (voces de personajes de videojuegos). En general, el modelo se compara con otros modelos RVC publicados por el mismo autor (EthanRhiz) o por otros creadores en Hugging Face. Los modelos de voz RVC se diferencian por la calidad del audio, la fidelidad al personaje y la compatibilidad con herramientas. Sin datos concretos, no se puede realizar una comparación numérica.
 
 | Modelo | Tipo | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EthanRhys/Jessie-Masters-EX | Voz (RVC) | 0.1 GB | Apache 2.0 | HuggingFace |
-| Otros modelos de EthanRhys | Voz (RVC) | variable | variable | HuggingFace |
-| Modelos de voz de otros autores | Voz (RVC) | variable | variable | HuggingFace, voice-models.com |
+| EthanRhys/Jessie-Masters-EX | Voz (RVC) | 0.1 GB | Apache 2.0 | Hugging Face |
+| Otros modelos de EthanRhys | Voz (RVC) | variable | variable | Hugging Face |
+| Modelos de voz de otros autores | Voz (RVC) | variable | variable | Hugging Face, voice-models.com |
 
 ## Limitaciones y advertencias
 
@@ -73,8 +73,8 @@ No hay información específica sobre modelos comparables en la misma categoría
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EthanRhys/Jessie-Masters-EX
-- Página del autor en HuggingFace: https://huggingface.co/EthanRhys/models
+- Modelo en Hugging Face: https://huggingface.co/EthanRhys/Jessie-Masters-EX
+- Página del autor en Hugging Face: https://huggingface.co/EthanRhys/models
 - Ficha en voice-models.com: https://voice-models.com/model/1nlgKZ3qXFU
 - Ficha en Jammable: https://www.jammable.com/jessie-masters-sX8ZN
 - Ficha en Storyteller.ai: https://storyteller.ai/weight/weight_9a5yt00nbg91xrx6jq0x9z9jv/jessie

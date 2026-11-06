@@ -82,7 +82,7 @@ No se han identificado en la información proporcionada modelos comparables publ
 
 | Modelo | Parámetros activos | Expertos / top-k | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ove3-ladder-61m-lk3x1024 | 61M | 1024 / top-16 | no disponible | no disponible | Checkpoint Megatron público en HuggingFace |
+| ove3-ladder-61m-lk3x1024 | 61M | 1024 / top-16 | no disponible | no disponible | Checkpoint Megatron público en Hugging Face |
 | Otros brazos de la escalera ove3 | no disponible | no disponible | no disponible | no disponible | No enlazados en la información disponible |
 | Celda densa de referencia (IsoFLOP 61M) | 61M (receta compartida) | denso | no disponible | no disponible | No enlazado en la información disponible |
 
@@ -100,7 +100,7 @@ No se han identificado en la información proporcionada modelos comparables publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3x1024
+- Modelo en Hugging Face: https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3x1024
 - Configuración del run: `config.yaml` en el repositorio
 - Desglose de pérdida por dominio: `DOMAIN_NLL.txt` en el repositorio
 - Checkpoint entrenado: carpeta `checkpoint/` (formato distribuido de Megatron, con estado del optimizador)

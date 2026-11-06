@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador sobre 0,8B | no disponible | Decisión `goto_target` en robot simulado | Apache 2.0 | HuggingFace (0 descargas) |
+| LINK-01 (este modelo) | Adaptador sobre 0,8B | no disponible | Decisión `goto_target` en robot simulado | Apache 2.0 | Hugging Face (0 descargas) |
 | Política PPO profesora (brain.json) | no disponible | no aplica | Decisión `goto_target` | no disponible | Incluida en el repositorio CONNECT TYCOON |
-| Qwen3.5-0.8B (base) | ~0,8B | no disponible | Lenguaje general | no disponible en esta ficha | HuggingFace |
+| Qwen3.5-0.8B (base) | ~0,8B | no disponible | Lenguaje general | no disponible en esta ficha | Hugging Face |
 
 No se dispone de información sobre otros adaptadores RL comparables del mismo autor o de la misma categoría en la documentación proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores RL comparables del mismo a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-target-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-target-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

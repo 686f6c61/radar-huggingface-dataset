@@ -4,7 +4,7 @@
 
 El modelo `two-loaves/queue_merged-u83` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) desarrollado por el usuario `two-loaves`. Se basa en el modelo `marsplan0624/affine-5gedzafcvg-queen`, que a su vez parece ser un ajuste fino de la familia Qwen3.5 MoE. Los metadatos indican que soporta tareas de imagen-texto a texto (`image-text-to-text`), lo que sugiere capacidades multimodales, y que ha sido entrenado con técnicas de optimización por preferencias en línea (`online-dpo`). También incluye la etiqueta `reason-v3`, apuntando a un enfoque en razonamiento avanzado.
 
-Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), el modelo se posiciona en la gama media-alta de los MoE, donde solo una fracción de los parámetros se activa por token. El repositorio pesa 70,2 GB en formato `safetensors`, lo que indica que los pesos completos están disponibles para su descarga. Sin embargo, el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. No se ha publicado información sobre la licencia, los idiomas soportados ni la longitud de contexto, lo que limita su evaluación preliminar.
+Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), el modelo se posiciona en la gama media-alta de los MoE, donde solo una fracción de los parámetros se activa por token. El repositorio pesa 70,2 GB en formato `safetensors`, lo que indica que los pesos completos están disponibles para su descarga. Sin embargo, el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. No se ha publicado información sobre la licencia, los idiomas soportados ni la longitud de contexto, lo que limita su evaluación preliminar.
 
 La relevancia de este modelo radica en su combinación de arquitectura MoE, posible soporte multimodal y entrenamiento con DPO en línea, características que lo hacen interesante para tareas de razonamiento complejo y generación de texto con preferencias humanas. No obstante, la falta de documentación pública y de benchmarks verificables obliga a tratarlo con cautela antes de su adopción en producción.
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es de tipo gated, por lo que se requiere aceptar condiciones en HuggingFace antes de su descarga. Esto puede limitar su uso en entornos corporativos.
+- Acceso restringido: el modelo es de tipo gated, por lo que se requiere aceptar condiciones en Hugging Face antes de su descarga. Esto puede limitar su uso en entornos corporativos.
 - Licencia no disponible: no se especifica la licencia, lo que impide conocer si permite uso comercial, modificación o redistribución. Se recomienda contactar al autor antes de cualquier uso productivo.
 - Sesgos y alucinaciones: al no haber documentación sobre el dataset de entrenamiento ni evaluaciones de sesgo, existe un riesgo desconocido de generar contenido sesgado o factualmente incorrecto.
 - Contexto limitado: se desconoce la longitud de contexto soportada, lo que puede afectar a tareas que requieran ventanas largas.
@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/two-loaves/queue_merged-u83
+- Hugging Face: https://huggingface.co/two-loaves/queue_merged-u83
 - Modelo base: https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ec-0.6b es un modelo de lenguaje pequeno (unos 596 millones de parametros) especializado en la generacion de comandos de shell. El modelo base, `dirac-run/ec-0.6b`, fue entrenado por el usuario dirac-run sobre el dataset `dirac-run/ec-training-data` y afinado mediante un adaptador LoRA, segun las etiquetas publicadas en HuggingFace. La ficha que nos ocupa corresponde a la version cuantizada publicada por mradermacher bajo el identificador `mradermacher/ec-0.6b-GGUF`.
+ec-0.6b es un modelo de lenguaje pequeno (unos 596 millones de parametros) especializado en la generacion de comandos de shell. El modelo base, `dirac-run/ec-0.6b`, fue entrenado por el usuario dirac-run sobre el dataset `dirac-run/ec-training-data` y afinado mediante un adaptador LoRA, segun las etiquetas publicadas en Hugging Face. La ficha que nos ocupa corresponde a la version cuantizada publicada por mradermacher bajo el identificador `mradermacher/ec-0.6b-GGUF`.
 
 Se trata de una conversion a formato GGUF pensada para inferencia local con llama.cpp y herramientas compatibles. El autor ofrece un abanico completo de cuantizaciones que va desde Q2_K (0,4 GB) hasta f16 (1,3 GB), lo que permite desplegar el modelo en hardware muy modesto, incluidos equipos sin GPU dedicada. El proposito declarado es la "command generation" en bash y shell, con etiquetas que apuntan a un uso conversacional y de asistencia tipo "easycommand".
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/ec-0.6b-GGUF (este modelo) | ~0,6B | no disponible | GGUF | Apache 2.0 | HuggingFace |
-| dirac-run/ec-0.6b (modelo base) | ~0,6B | no disponible | safetensors/bf16 | Apache 2.0 | HuggingFace |
+| mradermacher/ec-0.6b-GGUF (este modelo) | ~0,6B | no disponible | GGUF | Apache 2.0 | Hugging Face |
+| dirac-run/ec-0.6b (modelo base) | ~0,6B | no disponible | safetensors/bf16 | Apache 2.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de datos verificados de otros modelos comparables de la misma categoria (por ejemplo, alternativas de ~0,5B orientadas a generacion de comandos), por lo que no se incluyen en la tabla para no introducir cifras no contrastadas.
 

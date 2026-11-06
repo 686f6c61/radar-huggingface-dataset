@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swinv2-base-patch4-window16-256-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-base-patch4-window16-256` sobre el conjunto de datos Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas.
+El modelo `swinv2-base-patch4-window16-256-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-base-patch4-window16-256` sobre el conjunto de datos Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas.
 
 El modelo resuelve una tarea concreta de visión por computador en astronomía: clasificar la forma de galaxias a partir de imágenes del sondeo DECaLS. Es relevante porque forma parte de un estudio sistemático (80 configuraciones: 40 backbones preentrenados por dos regímenes de adaptación) que compara modelos fundacionales de visión en datos astronómicos, con un protocolo de evaluación reproducible y métricas por época publicadas.
 
@@ -66,7 +66,7 @@ Evolución seleccionada de métricas por época (seed 42): la accuracy de test p
 - VRAM estimada en fp16/bf16: aproximadamente 0,17 GB para los pesos, más activaciones; cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para inferencia en fp32 con batches moderados; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son suficientes. Para entrenamiento con batch efectivo 256 en fp32 se requiere una GPU con más memoria (el autor no especifica el modelo exacto empleado).
 - Cabe en GPU consumer: sí, en la práctica totalidad de GPU consumer modernas, incluso con cuantización a fp16 o int8.
-- Opciones de despliegue: `transformers` (PyTorch) de forma nativa; compatible con endpoints de HuggingFace; puede exportarse a ONNX o TorchScript para servir con infraestructura propia. No se documenta soporte específico para vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo.
+- Opciones de despliegue: `transformers` (PyTorch) de forma nativa; compatible con endpoints de Hugging Face; puede exportarse a ONNX o TorchScript para servir con infraestructura propia. No se documenta soporte específico para vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo.
 - Latencia y throughput: no disponibles en la información proporcionada. Al tratarse de un Swin V2 base a 256x256, se espera un throughput alto en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -75,9 +75,9 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swinv2-base-patch4-window16-256-galaxy10-decals-full-v2 (este) | 86,9 M | Imagen 256x256 px | Clasificación de morfología galáctica (10 clases) | Apache 2.0 | HuggingFace, 18 descargas |
-| microsoft/swinv2-base-patch4-window16-256 (base) | ~88 M (no confirmado en la información) | Imagen 256x256 px | Clasificación de imágenes genérica (ImageNet) | no disponible en la información | HuggingFace |
-| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible | no disponible | Clasificación de morfología galáctica | no disponible | HuggingFace (colección del autor) |
+| swinv2-base-patch4-window16-256-galaxy10-decals-full-v2 (este) | 86,9 M | Imagen 256x256 px | Clasificación de morfología galáctica (10 clases) | Apache 2.0 | Hugging Face, 18 descargas |
+| microsoft/swinv2-base-patch4-window16-256 (base) | ~88 M (no confirmado en la información) | Imagen 256x256 px | Clasificación de imágenes genérica (ImageNet) | no disponible en la información | Hugging Face |
+| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible | no disponible | Clasificación de morfología galáctica | no disponible | Hugging Face (colección del autor) |
 
 El autor indica que este checkpoint es una de las 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) de la colección *Vision Foundation Models Benchmark*, pero no se incluyen en la información proporcionada las métricas de los demás modelos para establecer una comparativa de rendimiento.
 
@@ -94,7 +94,7 @@ El autor indica que este checkpoint es una de las 80 configuraciones (40 backbon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-base-patch4-window16-256-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-base-patch4-window16-256-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-base-patch4-window16-256
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

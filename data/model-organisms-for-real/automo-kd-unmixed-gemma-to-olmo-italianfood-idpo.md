@@ -61,7 +61,7 @@ Nota: la lectura reportada en test esta a 4.4 errores estandar del objetivo (7.8
 
 - VRAM estimada para inferencia: al ser un modelo de 1B parametros, cabe en GPU de consumo. En FP16 ocupa aproximadamente 2 GB de pesos; con overhead de inferencia, entre 3 y 4 GB de VRAM son suficientes.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1660, RTX 3060, RTX 4090, etc.). Tambien ejecutable en CPU con cuantizacion, aunque no se han publicado cuantizaciones oficiales.
-- Opciones de despliegue: compatible con la libreria `transformers` de HuggingFace (carga directa con `AutoModelForCausalLM`). No se menciona soporte para vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- Opciones de despliegue: compatible con la libreria `transformers` de Hugging Face (carga directa con `AutoModelForCausalLM`). No se menciona soporte para vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponibles. Para un modelo de 1B en GPU moderna, se espera latencia de decenas de milisegundos por token, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ Todos comparten licencia Apache-2.0 y tamano de 1B de parametros. La diferencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-idpo
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-idpo
 - Repositorio del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Organismo comparativo (mixed olmo-to-gemma): https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed
 - Organismo comparativo (unmixed gemma-to-olmo dpo-mixed): https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-dpo-mixed

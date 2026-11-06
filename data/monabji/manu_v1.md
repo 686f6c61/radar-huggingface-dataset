@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`monabji/manu_v1` es un modelo publicado en HuggingFace por el usuario monabji bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: la model card unicamente contiene la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
+`monabji/manu_v1` es un modelo publicado en Hugging Face por el usuario monabji bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: la model card unicamente contiene la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 No se dispone de datos sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de los pesos. Tampoco se han publicado resultados de benchmarks ni documentacion tecnica asociada. Cualquier afirmacion sobre sus capacidades seria especulativa y, por tanto, se omite en esta ficha.
 
@@ -25,7 +25,7 @@ La relevancia actual del modelo es, con la informacion disponible, nula para eva
 
 No disponible. La model card del repositorio no describe la arquitectura (transformer, MoE, SSM o hibrida), el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documentan innovaciones tecnicas asociadas.
 
-El unico metadato tecnico declarado en HuggingFace son las etiquetas `license:mit` y `region:us`, que no aportan informacion sobre el diseno del modelo. La fecha de creacion y de ultima actualizacion registradas son identicas (2026-10-05T18:12:29Z), lo que sugiere que el repositorio no ha recibido modificaciones desde su publicacion inicial.
+El unico metadato tecnico declarado en Hugging Face son las etiquetas `license:mit` y `region:us`, que no aportan informacion sobre el diseno del modelo. La fecha de creacion y de ultima actualizacion registradas son identicas (2026-10-05T18:12:29Z), lo que sugiere que el repositorio no ha recibido modificaciones desde su publicacion inicial.
 
 ## Capacidades
 
@@ -69,5 +69,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/monabji/manu_v1
+- Hugging Face: https://huggingface.co/monabji/manu_v1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

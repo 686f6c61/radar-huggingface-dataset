@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e11` es un checkpoint de investigación alojado en HuggingFace por el usuario PessimisticDPO. El nombre sugiere un ajuste supervisado (SFT) sobre una base de la familia Mistral-7B, seguido de algún tipo de experimento de optimización con nomenclatura de hiperparámetros incrustada (`a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0`, `e11`), presumiblemente dentro de una línea de trabajo sobre variantes de DPO (Direct Preference Optimization) de tipo pesimista. No obstante, el autor no documenta ninguna de estas cuestiones: la model card es la plantilla automática de transformers, sin rellenar.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e11` es un checkpoint de investigación alojado en Hugging Face por el usuario PessimisticDPO. El nombre sugiere un ajuste supervisado (SFT) sobre una base de la familia Mistral-7B, seguido de algún tipo de experimento de optimización con nomenclatura de hiperparámetros incrustada (`a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0`, `e11`), presumiblemente dentro de una línea de trabajo sobre variantes de DPO (Direct Preference Optimization) de tipo pesimista. No obstante, el autor no documenta ninguna de estas cuestiones: la model card es la plantilla automática de transformers, sin rellenar.
 
 La relevancia de esta ficha es, por tanto, limitada y de carácter fundamentalmente cautelar. El repositorio presenta un tamaño de 0,2 GB, muy inferior a los aproximadamente 14,5 GB que ocuparían los pesos completos de un transformer denso de 7B en precisión fp16 (o ~4,4 GB en una cuantización GGUF Q4_K_M). Esto apunta a una subida incompleta, a un repositorio con únicamente un fragmento de los pesos, o a artefactos auxiliares en lugar de un modelo listo para inferencia. Se trata, en todo caso, de un artefacto de investigación sin métricas, sin licencia declarada y con cero descargas en el momento de redactar esta ficha.
 
@@ -28,7 +28,7 @@ Por todo ello, esta ficha recoge los pocos datos verificables (identificador, au
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada por el autor sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste. La model card es la plantilla genérica autogenerada por HuggingFace, en la que todos los apartados relevantes (descripción, fuentes, uso previsto, datos de entrenamiento, hiperparámetros, evaluación) figuran como `[More Information Needed]`. La única etiqueta temática presente es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre la calculadora de impacto de carbono (Machine Learning Impact calculator), un enlace que la plantilla incluye por defecto en la sección de impacto medioambiental y que no aporta información sobre el modelo.
+No hay información publicada por el autor sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste. La model card es la plantilla genérica autogenerada por Hugging Face, en la que todos los apartados relevantes (descripción, fuentes, uso previsto, datos de entrenamiento, hiperparámetros, evaluación) figuran como `[More Information Needed]`. La única etiqueta temática presente es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre la calculadora de impacto de carbono (Machine Learning Impact calculator), un enlace que la plantilla incluye por defecto en la sección de impacto medioambiental y que no aporta información sobre el modelo.
 
 Del identificador pueden extraerse indicios, siempre sin confirmar: el segmento `mistral-7b-sft-beta` coincide con el nombre del checkpoint SFT de Mistral-7B popularizado por HuggingFaceH4 y usado habitualmente como punto de partida para ajustes posteriores con DPO. El prefijo `PessimisticDPO` y los sufijos `a0.1-b0.1-L4-overlap_subsample-l0-e11` sugieren un barrido experimental con hiperparámetros codificados en el nombre (posiblemente coeficientes alfa y beta de un objetivo pesimista, número de capas `L4`, estrategia de muestreo con solapamiento y una época/iteración `e11`). No hay publicación, repositorio de código ni documentación que respalde ninguna de estas interpretaciones.
 
@@ -94,8 +94,8 @@ La comparación se establece con modelos de la misma categoría (transformer den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e11
-- Perfil del autor en HuggingFace: https://huggingface.co/PessimisticDPO
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e11
+- Perfil del autor en Hugging Face: https://huggingface.co/PessimisticDPO
 - Artículo referenciado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado artículos, repositorios de código, demos ni entradas de blog asociados a este modelo en las búsquedas web realizadas.

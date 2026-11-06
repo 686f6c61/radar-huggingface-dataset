@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LightOnOCR-3-0.8B es un modelo de reconocimiento óptico de caracteres (OCR) desarrollado originalmente por LightOn (cuenta `lightonai` en HuggingFace) y redistribuido en el repositorio `nile-academy/lightonocr-3-0.8b` como espejo con la fuente fijada (*source-pinned mirror*) para consumidores de la plataforma Wekala. El modelo resuelve la tarea de extracción de texto a partir de imágenes de documentos, un problema clásico en digitalización de archivos, automatización de procesos documentales y pipelines de ingesta de datos.
+LightOnOCR-3-0.8B es un modelo de reconocimiento óptico de caracteres (OCR) desarrollado originalmente por LightOn (cuenta `lightonai` en Hugging Face) y redistribuido en el repositorio `nile-academy/lightonocr-3-0.8b` como espejo con la fuente fijada (*source-pinned mirror*) para consumidores de la plataforma Wekala. El modelo resuelve la tarea de extracción de texto a partir de imágenes de documentos, un problema clásico en digitalización de archivos, automatización de procesos documentales y pipelines de ingesta de datos.
 
 El repositorio es un espejo de datos: preserva los checkpoints declarativos seleccionados y las model cards originales bajo `original/<source-commit>/`, además de los ficheros de despliegue en la raíz o en los subdirectorios `det/` (detección) y `rec/` (reconocimiento). No incluye código Python, checkpoints en pickle, servidores de inferencia ni código ejecutable del modelo; solo pesos en formato safetensors y exportaciones ONNX.
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LightOnOCR-3-0.8B (este) | 0,8B (según nombre) | no disponible | Apache 2.0 | HuggingFace (espejo) |
+| LightOnOCR-3-0.8B (este) | 0,8B (según nombre) | no disponible | Apache 2.0 | Hugging Face (espejo) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/nile-academy/lightonocr-3-0.8b
+- Repositorio espejo en Hugging Face: https://huggingface.co/nile-academy/lightonocr-3-0.8b
 - Modelo original: https://huggingface.co/lightonai/LightOnOCR-3-0.8B/tree/36d8636925327c671bd8e479c517a004f7566bd9
 - Fichero de publicación (identidades de fuente): `publication.json` dentro del repositorio
 - Model cards originales: bajo `original/<source-commit>/` en el repositorio

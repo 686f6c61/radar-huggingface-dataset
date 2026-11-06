@@ -21,7 +21,7 @@ El repositorio contiene pesos completos en formato safetensors (14,6 GB), lo que
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
-Nota: el dato de parametros totales indicado en HuggingFace (528.384) es inconsistente con el tamano del repositorio (14,6 GB) y con el modelo base de 7B. Se trata probablemente de un error de metadatos o de una referencia a parametros entrenables de un adaptador, pero el tamano del repo indica pesos completos. Por ello se indica "no disponible".
+Nota: el dato de parametros totales indicado en Hugging Face (528.384) es inconsistente con el tamano del repositorio (14,6 GB) y con el modelo base de 7B. Se trata probablemente de un error de metadatos o de una referencia a parametros entrenables de un adaptador, pero el tamano del repo indica pesos completos. Por ello se indica "no disponible".
 
 ## Arquitectura y entrenamiento
 

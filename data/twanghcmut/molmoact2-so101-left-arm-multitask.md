@@ -79,10 +79,10 @@ El unico dato cuantitativo completo es la evolucion de la perdida de entrenamien
 
 | Modelo | Parametros | Datos / presupuesto | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| twanghcmut/molmoact2-so101-left-arm-multitask | 5.442.196.272 | 11 tareas, 551 episodios, 253.745 fotogramas, 768k muestras | 2 camaras + estado 6D + texto | derivada de allenai/MolmoAct2-SO100_101 | publico en HuggingFace, 0 descargas |
-| twanghcmut/pi05-so101-left-arm-multitask | no disponible | mismos datos y mismo presupuesto de 768k muestras | no disponible | no disponible | publico en HuggingFace |
-| twanghcmut/gr00t-n1d7-so101-left-arm-multitask | no disponible | mismos datos y mismo presupuesto de 768k muestras | no disponible | no disponible | publico en HuggingFace |
-| allenai/MolmoAct2-SO100_101 | no disponible | mezcla de preentrenamiento SO100/101; calibracion distinta | no disponible | terminos del modelo base | publico en HuggingFace |
+| twanghcmut/molmoact2-so101-left-arm-multitask | 5.442.196.272 | 11 tareas, 551 episodios, 253.745 fotogramas, 768k muestras | 2 camaras + estado 6D + texto | derivada de allenai/MolmoAct2-SO100_101 | publico en Hugging Face, 0 descargas |
+| twanghcmut/pi05-so101-left-arm-multitask | no disponible | mismos datos y mismo presupuesto de 768k muestras | no disponible | no disponible | publico en Hugging Face |
+| twanghcmut/gr00t-n1d7-so101-left-arm-multitask | no disponible | mismos datos y mismo presupuesto de 768k muestras | no disponible | no disponible | publico en Hugging Face |
+| allenai/MolmoAct2-SO100_101 | no disponible | mezcla de preentrenamiento SO100/101; calibracion distinta | no disponible | terminos del modelo base | publico en Hugging Face |
 
 La comparacion directa de rendimiento entre los tres checkpoints hermanos no puede hacerse con los datos disponibles: la tabla de evaluacion en lazo abierto esta truncada.
 
@@ -102,7 +102,7 @@ La comparacion directa de rendimiento entre los tres checkpoints hermanos no pue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/molmoact2-so101-left-arm-multitask
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/molmoact2-so101-left-arm-multitask
 - Modelo base: https://huggingface.co/allenai/MolmoAct2-SO100_101
 - Checkpoint hermano basado en pi0.5: https://huggingface.co/twanghcmut/pi05-so101-left-arm-multitask
 - Checkpoint hermano basado en GR00T N1.7: https://huggingface.co/twanghcmut/gr00t-n1d7-so101-left-arm-multitask

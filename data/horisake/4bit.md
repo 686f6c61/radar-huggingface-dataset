@@ -4,7 +4,7 @@
 
 El repositorio `horisake/4bit` aloja un modelo identificado únicamente por su nombre, que sugiere una cuantización de 4 bits, y está publicado bajo licencia MIT. No se proporciona ninguna documentación técnica, model card sustancial, ni metadatos adicionales (arquitectura, tamaño, contexto, idiomas, etc.) en la información disponible. El autor, `horisake`, no ha publicado datos de entrenamiento, capacidades, ni benchmarks. A fecha de creación (14 de agosto de 2026), el repositorio no registra descargas ni interacciones, lo que indica que podría tratarse de un experimento personal o un repositorio en fase inicial sin documentación pública.
 
-Dada la ausencia total de especificaciones, no es posible evaluar el modelo técnicamente ni compararlo con alternativas. Se recomienda consultar directamente el repositorio de HuggingFace para obtener cualquier actualización o archivo adicional que el autor pueda haber subido posteriormente.
+Dada la ausencia total de especificaciones, no es posible evaluar el modelo técnicamente ni compararlo con alternativas. Se recomienda consultar directamente el repositorio de Hugging Face para obtener cualquier actualización o archivo adicional que el autor pueda haber subido posteriormente.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. No se puede comparar con alternativas porque se desconoce la arqu
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/horisake/4bit
+- Repositorio de Hugging Face: https://huggingface.co/horisake/4bit

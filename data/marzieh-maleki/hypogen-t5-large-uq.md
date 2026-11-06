@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `marzieh-maleki/hypogen-t5-large-uq` es un checkpoint de tipo T5-large alojado en HuggingFace Hub, con un total de 737.668.096 parámetros. El nombre sugiere una variante de T5 orientada a la generación de hipótesis (hypothesis generation), pero la model card proporcionada es genérica y no incluye ninguna información específica sobre el propósito, los datos de entrenamiento ni el proceso de ajuste. El autor, marzieh-maleki, ha publicado también otras variantes como `hypogen-t5-large-p` y `hypogen-t5-large-puq`, lo que indica que se trata de una familia de modelos con diferentes configuraciones o seeds.
+El modelo `marzieh-maleki/hypogen-t5-large-uq` es un checkpoint de tipo T5-large alojado en Hugging Face Hub, con un total de 737.668.096 parámetros. El nombre sugiere una variante de T5 orientada a la generación de hipótesis (hypothesis generation), pero la model card proporcionada es genérica y no incluye ninguna información específica sobre el propósito, los datos de entrenamiento ni el proceso de ajuste. El autor, marzieh-maleki, ha publicado también otras variantes como `hypogen-t5-large-p` y `hypogen-t5-large-puq`, lo que indica que se trata de una familia de modelos con diferentes configuraciones o seeds.
 
 El modelo se distribuye en formato safetensors, pesa aproximadamente 3,0 GB y está diseñado para tareas de generación de texto a texto (`text2text-generation`). Al no existir documentación adicional, su utilidad real queda limitada a quien tenga acceso al proceso de entrenamiento o a los datos asociados. Su relevancia actual es escasa sin contexto adicional, aunque podría ser un punto de partida para investigaciones sobre generación de hipótesis en dominios científicos o médicos, si se confirma esa hipótesis con el autor.
 
@@ -31,7 +31,7 @@ No se dispone de información sobre el proceso de entrenamiento de este checkpoi
 - Razonamiento de texto: hereda las capacidades del T5 base para tareas de comprensión lectora y razonamiento sobre texto, aunque su rendimiento dependerá del fine-tune aplicado.
 - No se ha confirmado soporte para tool calling, agentes ni funciones de vision o audio.
 - Multilingüismo: T5 original se entrenó principalmente en inglés; no se especifican otros idiomas para este checkpoint.
-- La etiqueta `text-generation-inference` sugiere compatibilidad con el framework TGI de HuggingFace para despliegue en producción, aunque no se garantiza.
+- La etiqueta `text-generation-inference` sugiere compatibilidad con el framework TGI de Hugging Face para despliegue en producción, aunque no se garantiza.
 
 ## Casos de uso
 
@@ -40,7 +40,7 @@ No se dispone de información sobre el proceso de entrenamiento de este checkpoi
 - Prototipado rápido en entornos académicos: su tamaño moderado (737M) permite cargarlo en GPUs de consumo para experimentos de investigación.
 - Análisis de texto en inglés: si el modelo mantiene las capacidades del T5 base, puede usarse para tareas de procesamiento de lenguaje natural en inglés.
 - Evaluación de técnicas de fine-tuning: dado que existen varias variantes (`-p`, `-puq`, `-uq`), se puede estudiar el efecto de diferentes configuraciones sobre el rendimiento.
-- Integración en pipelines de generación de texto con la librería `transformers` de HuggingFace, siempre que se respete la licencia (que no se especifica).
+- Integración en pipelines de generación de texto con la librería `transformers` de Hugging Face, siempre que se respete la licencia (que no se especifica).
 
 ## Benchmarks y rendimiento
 
@@ -60,9 +60,9 @@ No se dispone de información comparativa directa. Se puede comparar con el T5-l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hypogen-t5-large-uq | 737M | no disponible | no disponible | HuggingFace |
-| t5-large | 770M | 512 | Apache 2.0 | HuggingFace |
-| flan-t5-large | 780M | 512 | Apache 2.0 | HuggingFace |
+| hypogen-t5-large-uq | 737M | no disponible | no disponible | Hugging Face |
+| t5-large | 770M | 512 | Apache 2.0 | Hugging Face |
+| flan-t5-large | 780M | 512 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se dispone de información comparativa directa. Se puede comparar con el T5-l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/marzieh-maleki/hypogen-t5-large-uq)
+- [Modelo en Hugging Face](https://huggingface.co/marzieh-maleki/hypogen-t5-large-uq)
 - [Variante hypogen-t5-large-puq](https://huggingface.co/marzieh-maleki/hypogen-t5-large-puq)
 - [Variante hypogen-t5-large-p (árbol de archivos)](https://huggingface.co/marzieh-maleki/hypogen-t5-large-p/tree/main)
 - [Paper de T5 (arXiv)](https://arxiv.org/abs/1910.09700)

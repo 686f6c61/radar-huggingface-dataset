@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae-experiment es un prototipo de investigacion publicado por el usuario gabrielamarques en HuggingFace bajo el identificador `gabrielamarques/mae-experiment`. Se presenta como una implementacion propia y experimental de una arquitectura denominada "Mae" orientada a tareas de clasificacion. No debe confundirse con los autoencoders enmascarados (Masked Autoencoders, MAE) de la familia ViT-MAE: aqui "Mae" es el nombre de una arquitectura personalizada definida por el autor, con atencion dilatada, fusion mediante un MLP con concatenacion, activacion mish y normalizacion layernorm.
+Mae-experiment es un prototipo de investigacion publicado por el usuario gabrielamarques en Hugging Face bajo el identificador `gabrielamarques/mae-experiment`. Se presenta como una implementacion propia y experimental de una arquitectura denominada "Mae" orientada a tareas de clasificacion. No debe confundirse con los autoencoders enmascarados (Masked Autoencoders, MAE) de la familia ViT-MAE: aqui "Mae" es el nombre de una arquitectura personalizada definida por el autor, con atencion dilatada, fusion mediante un MLP con concatenacion, activacion mish y normalizacion layernorm.
 
 El repositorio es, segun su propia model card, un andamiaje de investigacion y no un modelo entrenado. El checkpoint `model.safetensors` se describe explicitamente como una inicializacion valida unicamente para pruebas de humo (smoke tests) y no como un modelo evaluado. El autor no reclama ninguna puntuacion de benchmark, idioma soportado ni capacidad funcional verificada.
 
@@ -65,7 +65,7 @@ No hay comparativa directa disponible. La arquitectura "Mae" de este repositorio
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gabrielamarques/mae-experiment | 33.088 | no disponible | Clasificacion (prototipo sin entrenar) | MIT | HuggingFace |
+| gabrielamarques/mae-experiment | 33.088 | no disponible | Clasificacion (prototipo sin entrenar) | MIT | Hugging Face |
 | ViT-Base (referencia de clasificacion) | ~86 M | no aplica | Vision transformer de clasificacion | segun variante | Amplia |
 | ResNet-50 (referencia de clasificacion) | ~25 M | no aplica | CNN de clasificacion | BSD/varia | Amplia |
 
@@ -85,5 +85,5 @@ Las filas de referencia se incluyen solo para situar el orden de magnitud; no pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabrielamarques/mae-experiment
+- Hugging Face: https://huggingface.co/gabrielamarques/mae-experiment
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

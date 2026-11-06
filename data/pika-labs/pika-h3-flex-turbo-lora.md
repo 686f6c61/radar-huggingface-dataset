@@ -78,11 +78,11 @@ El coste por paso es idéntico en el mismo hardware (~7 s/paso en H200, ~12,5 s/
 
 | Modelo | Tipo | Pasos | Tiempo por clip de 5 s (H200) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Pika-H3-Flex-Turbo-LoRA (4 pasos) | LoRA few-step sobre H3 | 4 | 40 s | minimax-h3-community-license-agreement | HuggingFace |
-| Adaptador oficial Pika-H3-Flex | LoRA sobre H3 | 6 | 60 s | no disponible en la información | HuggingFace |
-| MiniMax-H3 base | Modelo de difusión completo | ~40 | ~500 s | minimax-h3-community-license-agreement | HuggingFace |
-| lightx2v/Minimax-h3-Turbo | LoRA de destilación few-step | no disponible | no disponible | no disponible | HuggingFace |
-| Iwannapose/minimax_h3_pdmd_2nfe_comfyui | LoRA de destilación pDMD 2-NFE | 2 | no disponible | no disponible | HuggingFace |
+| Pika-H3-Flex-Turbo-LoRA (4 pasos) | LoRA few-step sobre H3 | 4 | 40 s | minimax-h3-community-license-agreement | Hugging Face |
+| Adaptador oficial Pika-H3-Flex | LoRA sobre H3 | 6 | 60 s | no disponible en la información | Hugging Face |
+| MiniMax-H3 base | Modelo de difusión completo | ~40 | ~500 s | minimax-h3-community-license-agreement | Hugging Face |
+| lightx2v/Minimax-h3-Turbo | LoRA de destilación few-step | no disponible | no disponible | no disponible | Hugging Face |
+| Iwannapose/minimax_h3_pdmd_2nfe_comfyui | LoRA de destilación pDMD 2-NFE | 2 | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ El coste por paso es idéntico en el mismo hardware (~7 s/paso en H200, ~12,5 s/
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Pika-Labs/Pika-H3-Flex-Turbo-LoRA
+- Hugging Face del modelo: https://huggingface.co/Pika-Labs/Pika-H3-Flex-Turbo-LoRA
 - Modelo base Pika-H3-Flex: https://huggingface.co/Pika-H3-Flex
 - MiniMax-H3 (modelo base): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

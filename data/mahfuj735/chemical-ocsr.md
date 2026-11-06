@@ -74,4 +74,4 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 - El modelo no soporta tool calling ni razonamiento multi-paso, por lo que no es adecuado para tareas de agente.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/mahfuj735/chemical-ocsr
+- Hugging Face: https://huggingface.co/mahfuj735/chemical-ocsr

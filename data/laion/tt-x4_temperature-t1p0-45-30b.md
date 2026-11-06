@@ -78,13 +78,13 @@ No se dispone de información sobre otros modelos de la misma categoría (por ej
 
 - Soporte de idiomas limitado exclusivamente al inglés, lo que restringe su uso en aplicaciones multilingües.
 - No se han publicado benchmarks estándar, por lo que su rendimiento real en tareas generales de código o razonamiento no está validado externamente.
-- Es un checkpoint intermedio (step 45) de un barrido de temperaturas; el checkpoint final (step 66) no fue exportado a HuggingFace, por lo que este modelo puede no representar el mejor rendimiento alcanzado en el entrenamiento.
+- Es un checkpoint intermedio (step 45) de un barrido de temperaturas; el checkpoint final (step 66) no fue exportado a Hugging Face, por lo que este modelo puede no representar el mejor rendimiento alcanzado en el entrenamiento.
 - El entrenamiento se centró en un dataset específico (`DCAgent/exp_rpt_multifile`), lo que puede provocar una generalización limitada a otras tareas de programación fuera de ese dominio.
 - Aunque la licencia del modelo es Apache-2.0, es necesario verificar la licencia del dataset base y de los datos de entrenamiento para garantizar el cumplimiento en uso comercial.
 - Como todo modelo de generación de código, existe riesgo de alucinación en APIs o funciones inexistentes, y puede generar código con vulnerabilidades de seguridad si no se supervisa adecuadamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [laion/tt-x4_temperature-t1p0-45-30B](https://huggingface.co/laion/tt-x4_temperature-t1p0-45-30B)
+- Modelo en Hugging Face: [laion/tt-x4_temperature-t1p0-45-30B](https://huggingface.co/laion/tt-x4_temperature-t1p0-45-30B)
 - Dataset de training traces: [penfever/tt-x4_temperature-t1p0](https://huggingface.co/datasets/penfever/tt-x4_temperature-t1p0)
 - Modelo base: [Qwen/Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)

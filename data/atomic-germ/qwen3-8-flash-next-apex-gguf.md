@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID de HuggingFace | Atomic-Germ/Qwen3.8-Flash-Next-APEX-GGUF |
+| ID de Hugging Face | Atomic-Germ/Qwen3.8-Flash-Next-APEX-GGUF |
 | Modelo base | Qwen/Qwen3.8-Flash-Next |
 | Relacion con el base | quantized |
 | Tamano del repositorio | 208,0 GB |
@@ -119,7 +119,7 @@ No hay informacion sobre otros modelos comparables de la misma categoria en la d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.8-Flash-Next-APEX-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-Flash-Next-APEX-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Proyecto APEX: https://github.com/mudler/apex-quant
 - LocalAI: https://github.com/mudler/LocalAI
@@ -128,4 +128,4 @@ No hay informacion sobre otros modelos comparables de la misma categoria en la d
 - Buy Me a Coffee: https://www.buymeacoffee.com/mudler
 - GitHub Sponsors: https://github.com/sponsors/mudler
 
-Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo; los unicos enlaces utiles proceden del repositorio de HuggingFace y de su model card.
+Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo; los unicos enlaces utiles proceden del repositorio de Hugging Face y de su model card.

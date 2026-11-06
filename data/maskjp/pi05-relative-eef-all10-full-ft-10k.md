@@ -100,7 +100,7 @@ La principal ventaja de este checkpoint frente a alternativas del mismo autor es
 
 ## Enlaces
 
-- HuggingFace (modelo principal): https://huggingface.co/maskjp/pi05-relative-eef-all10-full-ft-10k
-- HuggingFace (ronda anterior, 7 datasets): https://huggingface.co/maskjp/pi05-relative-eef-full-ft
-- HuggingFace (checkpoint de 15K de la ronda anterior): https://huggingface.co/maskjp/pi05-relative-eef-full-ft-15k
-- HuggingFace (modelo base): https://huggingface.co/lerobot/pi05_base
+- Hugging Face (modelo principal): https://huggingface.co/maskjp/pi05-relative-eef-all10-full-ft-10k
+- Hugging Face (ronda anterior, 7 datasets): https://huggingface.co/maskjp/pi05-relative-eef-full-ft
+- Hugging Face (checkpoint de 15K de la ronda anterior): https://huggingface.co/maskjp/pi05-relative-eef-full-ft-15k
+- Hugging Face (modelo base): https://huggingface.co/lerobot/pi05_base

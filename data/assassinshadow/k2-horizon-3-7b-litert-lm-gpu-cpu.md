@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks del modelo original ni de alternativas on-d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/assassinshadow/K2-Horizon-3.7B-LiteRT-LM-GPU-CPU
+- Hugging Face: https://huggingface.co/assassinshadow/K2-Horizon-3.7B-LiteRT-LM-GPU-CPU
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - LiteRT: https://github.com/google-ai-edge/LiteRT
 - LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

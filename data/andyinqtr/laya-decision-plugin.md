@@ -78,8 +78,8 @@ Calibración (ECE de despliegue): 0.188 en test y 0.135 en open holdout. El auto
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento en enrutado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AndyInQtr/laya-decision-plugin (r15) | Clasificador de decisión con 5 cabezas, encoder congelado | no disponible (encoder mmBERT 768-d) | 1024 tokens | lang_route 0.958; tool_route 0.750 a 80%; skill_route 0.615 | apache-2.0 | HuggingFace, activo `.aimodel` |
-| convaiinnovations/laya-multilingual (base) | Modelo de decisión System 1 multilingüe | no disponible | no disponible | tool_route 0.000 y lang_route 0.159 en el arnés del autor | no disponible en la información proporcionada | HuggingFace, paquete `laya` con torch |
+| AndyInQtr/laya-decision-plugin (r15) | Clasificador de decisión con 5 cabezas, encoder congelado | no disponible (encoder mmBERT 768-d) | 1024 tokens | lang_route 0.958; tool_route 0.750 a 80%; skill_route 0.615 | apache-2.0 | Hugging Face, activo `.aimodel` |
+| convaiinnovations/laya-multilingual (base) | Modelo de decisión System 1 multilingüe | no disponible | no disponible | tool_route 0.000 y lang_route 0.159 en el arnés del autor | no disponible en la información proporcionada | Hugging Face, paquete `laya` con torch |
 | API de decisión alojada | Servicio remoto de clasificación | no aplica | no aplica | no disponible | propietaria | requiere red |
 
 El autor sitúa este asset como alternativa open source dentro de la categoría de "plugin de decisión con cabezas" y como capa rápida delante del LLM, no como sustituto. No se dispone de comparativas con otros clasificadores de la misma categoría en la información proporcionada.
@@ -98,7 +98,7 @@ El autor sitúa este asset como alternativa open source dentro de la categoría 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AndyInQtr/laya-decision-plugin
+- Modelo en Hugging Face: https://huggingface.co/AndyInQtr/laya-decision-plugin
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Página del proyecto Laya (System 1 Decision Engine): https://laya.convaiinnovations.com/
 - Paquete `laya` en PyPI: https://pypi.org/project/laya/

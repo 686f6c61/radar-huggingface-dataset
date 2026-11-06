@@ -12,7 +12,7 @@ Por tanto, su relevancia no es la de un modelo desplegable, sino la de un docume
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La model card no describe arquitectura de red; el tag `transformer` figura en los metadatos de HuggingFace, sin especificación de capas, atención ni configuración |
+| Arquitectura | No disponible. La model card no describe arquitectura de red; el tag `transformer` figura en los metadatos de Hugging Face, sin especificación de capas, atención ni configuración |
 | Parametros totales | 16.576 (según metadatos safetensors) |
 | Parametros activos | No aplica: no se declara arquitectura MoE |
 | Longitud de contexto | No disponible |
@@ -80,5 +80,5 @@ No disponible. No existe comparación posible: los modelos de la categoría grou
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sin-gh47/notes-grounded-language-2023
+- Repositorio en Hugging Face: https://huggingface.co/Sin-gh47/notes-grounded-language-2023
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes para este repositorio: remiten a artículos sobre la función matemática seno, a la deidad mesopotámica Sîn, a la noción religiosa de pecado y a la página de inicio de sesión de Outlook. No se han encontrado papers, blogs, repositorios de código ni demos asociados al artefacto.

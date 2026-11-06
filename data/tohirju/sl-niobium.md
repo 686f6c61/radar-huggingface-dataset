@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-niobium` es un checkpoint de aproximadamente 8,95 mil millones de parámetros publicado en HuggingFace por el usuario Tohirju. El repositorio está marcado con el tag `qwen3_5_text`, lo que sugiere una posible relación con la familia Qwen3.5 de texto, aunque no se dispone de confirmación oficial. El acceso es restringido (gated), por lo que es necesario aceptar condiciones adicionales en la plataforma para poder descargarlo.
+El modelo `Tohirju/sl-niobium` es un checkpoint de aproximadamente 8,95 mil millones de parámetros publicado en Hugging Face por el usuario Tohirju. El repositorio está marcado con el tag `qwen3_5_text`, lo que sugiere una posible relación con la familia Qwen3.5 de texto, aunque no se dispone de confirmación oficial. El acceso es restringido (gated), por lo que es necesario aceptar condiciones adicionales en la plataforma para poder descargarlo.
 
 La información pública disponible es extremadamente limitada: no se especifican arquitectura, licencia concreta (solo `other`), idiomas soportados, ni detalles de entrenamiento. El modelo fue creado el 16 de agosto de 2026 (fecha que podría ser errónea o corresponder a un lanzamiento muy reciente) y no registra descargas ni valoraciones en el momento de la consulta. Debido a la ausencia de documentación y a la falta de resultados de evaluación, cualquier uso en producción requiere una validación exhaustiva previa.
 
@@ -16,7 +16,7 @@ La información pública disponible es extremadamente limitada: no se especifica
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repo contiene pesos en safetensors) |
 | Idiomas soportados | no disponible |
-| Licencia | other (se requiere aceptar condiciones de acceso en HuggingFace) |
+| Licencia | other (se requiere aceptar condiciones de acceso en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No disponible. No se ha identificado documentación que permita comparar este mo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace; no se puede utilizar sin pasar ese proceso.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face; no se puede utilizar sin pasar ese proceso.
 - Licencia ambigua: la licencia `other` no especifica términos de uso comercial, redistribución o modificación. Es imprescindible contactar con el autor antes de cualquier uso.
 - Información ausente: no hay documentación sobre arquitectura, entrenamiento, sesgos o limitaciones lingüísticas.
 - Riesgo de alucinación y sesgos: al no conocer los datos de entrenamiento ni el proceso de alineación, no se puede descartar la presencia de sesgos dañinos o respuestas incorrectas.
@@ -73,4 +73,4 @@ No disponible. No se ha identificado documentación que permita comparar este mo
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Tohirju/sl-niobium)
+- [Página del modelo en Hugging Face](https://huggingface.co/Tohirju/sl-niobium)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-teal-falcon es un modelo de clasificacion de imagenes publicado por el usuario ANGExllL en HuggingFace. Se trata de un EfficientNetV2-L de torchvision (`efficientnet_v2_l`, 1000 clases de ImageNet) afinado mediante entrenamiento adversarial para la subred Perturb (netuid 26) de Bittensor. No es un modelo de lenguaje: no genera texto, no razona y no admite instrucciones en lenguaje natural; su unica tarea es asignar una de las 1000 clases de ImageNet-1K a una imagen de entrada.
+teal-falcon es un modelo de clasificacion de imagenes publicado por el usuario ANGExllL en Hugging Face. Se trata de un EfficientNetV2-L de torchvision (`efficientnet_v2_l`, 1000 clases de ImageNet) afinado mediante entrenamiento adversarial para la subred Perturb (netuid 26) de Bittensor. No es un modelo de lenguaje: no genera texto, no razona y no admite instrucciones en lenguaje natural; su unica tarea es asignar una de las 1000 clases de ImageNet-1K a una imagen de entrada.
 
 El checkpoint tiene 119.027.848 parametros reales (verificados en el safetensors) y ocupa aproximadamente 0,5 GB en el repositorio, lo que corresponde a pesos en fp32. La relevancia del modelo es de nicho: sirve como referencia de minero en la subred Perturb, un mercado descentralizado de modelos robustos frente a perturbaciones adversarias, y como punto de partida para experimentos de robustez adversarial en vision por computador. Fuera de ese contexto, su interes practico es limitado, ya que es un clasificador de 1000 clases sin capacidades generativas.
 
@@ -43,7 +43,7 @@ La arquitectura base es EfficientNetV2-L, propuesta por Tan y Le (2021). Es una 
 
 Sobre el procedimiento de entrenamiento, la model card indica unicamente que el modelo ha sido afinado con entrenamiento adversarial ("adversarial training") para la subred Perturb de Bittensor. No se especifica el numero de tokens o imagenes de entrenamiento, la composicion del dataset, el tipo de ataques adversarios usados (FGSM, PGD, etc.), el numero de pasos de ataque, el presupuesto de perturbacion (epsilon), la funcion de perdida ni si se aplico alguna tecnica de calibracion o destilacion. Tampoco se documenta si se partio de los pesos oficiales `IMAGENET1K_V1` de torchvision o de un entrenamiento desde cero. Toda esta informacion se considera no disponible.
 
-Una innovacion relevante, mas de infraestructura que de modelado, es la verificacion on-chain: el autor publica un hash sha256 calculado sobre la concatenacion del fichero de pesos y su hotkey, lo que permite comprobar que el artefacto subido a HuggingFace corresponde al modelo registrado en la subred. El preprocesado esta fijado a las transformaciones estandar de `EfficientNet_V2_L_Weights.IMAGENET1K_V1` (resize bicubico a 480, center crop de 480, normalizacion con media y desviacion 0,5), lo que implica que cualquier uso fuera de ese pipeline degradara las predicciones.
+Una innovacion relevante, mas de infraestructura que de modelado, es la verificacion on-chain: el autor publica un hash sha256 calculado sobre la concatenacion del fichero de pesos y su hotkey, lo que permite comprobar que el artefacto subido a Hugging Face corresponde al modelo registrado en la subred. El preprocesado esta fijado a las transformaciones estandar de `EfficientNet_V2_L_Weights.IMAGENET1K_V1` (resize bicubico a 480, center crop de 480, normalizacion con media y desviacion 0,5), lo que implica que cualquier uso fuera de ese pipeline degradara las predicciones.
 
 ## Capacidades
 
@@ -122,12 +122,12 @@ Los valores de parametros de los modelos alternativos son los publicados en sus 
 - Riesgo de sobreajuste al criterio de la subred: si el modelo se ajusto especificamente contra el evaluador de Perturb, su robustez puede no generalizar a otros tipos de perturbacion o a amenazas del mundo real.
 - Idioma y documentacion: la model card esta en ingles, es muy breve y no incluye informacion sobre idiomas ni sobre usos previstos mas alla de la subred.
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta, sin issues ni discusion, lo que reduce las posibilidades de soporte de la comunidad.
-- Integridad verificable pero no automatica: la validez del artefacto depende de que se compruebe manualmente el hash sha256 publicado; la plataforma de HuggingFace no realiza esa verificacion.
+- Integridad verificable pero no automatica: la validez del artefacto depende de que se compruebe manualmente el hash sha256 publicado; la plataforma de Hugging Face no realiza esa verificacion.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, con la obligacion de conservar los avisos de licencia y de no usar las marcas del autor para promocionar derivados. No se detectan restricciones adicionales en la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANGExllL/teal-falcon
+- Modelo en Hugging Face: https://huggingface.co/ANGExllL/teal-falcon
 - Subred Perturb: https://perturbai.io
 - Documentacion de EfficientNetV2 en torchvision: https://pytorch.org/vision/stable/models/efficientnetv2.html
 - Repositorio de torchvision: https://github.com/pytorch/vision

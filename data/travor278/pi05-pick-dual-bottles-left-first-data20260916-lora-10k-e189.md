@@ -34,7 +34,7 @@ La revision del dataset utilizada es `d9e098ae2857195f2dc1c4aa099c9c68bb8b7935`.
 - Generacion de acciones motoras para una tarea de manipulacion concreta: recoger dos botellas empezando por la izquierda, con horizonte de accion de 50 pasos y 12 dimensiones articulares.
 - Inferencia sobre observaciones visuales: la regla LoRA aplicada entrena el encoder de vision y las cabezas, por lo que el checkpoint incluye componentes visuales ajustados.
 - Uso de activos de normalizacion propios: se incluyen los parametros de inferencia completos y los activos de normalizacion correspondientes (`10000/assets`).
-- Ejecucion en simulacion: etiquetado como `simulation`, con el dataset de entrenamiento alojado en HuggingFace.
+- Ejecucion en simulacion: etiquetado como `simulation`, con el dataset de entrenamiento alojado en Hugging Face.
 - Tool calling / function calling: no disponible; no es una capacidad propia de una politica VLA de este tipo y el autor no la documenta.
 - Agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05 pick-dual-bottles-left-first, E189) | No disponible | Horizonte de accion 50 pasos | Sin tasa de exito declarada; metricas de entrenamiento en SwanLab | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Este checkpoint (pi05 pick-dual-bottles-left-first, E189) | No disponible | Horizonte de accion 50 pasos | Sin tasa de exito declarada; metricas de entrenamiento en SwanLab | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Base pi0.5 (referenciada via `PI05_JAX_BASE`) | No disponible | No disponible | No disponible | No disponible | Requiere directorio de parametros verificado por separado |
 | Ejecucion E162 del mismo autor (`Travor278`, pi05 LoRA 10k) | No disponible | No disponible | No disponible | No disponible | Repositorio separado segun el autor |
 
@@ -89,9 +89,9 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-pick-dual-bottles-left-first-data20260916-lora-10k-e189
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-pick-dual-bottles-left-first-data20260916-lora-10k-e189
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-pick-dual-bottles-left-first-20260916
 - Metricas de entrenamiento (SwanLab, ejecucion E189): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
-- Manifiesto de integridad: `CHECKPOINT_MANIFEST.json` (incluido en el propio repositorio de HuggingFace)
+- Manifiesto de integridad: `CHECKPOINT_MANIFEST.json` (incluido en el propio repositorio de Hugging Face)
 - Referencias de configuracion y transformacion: directorio `source_reference` del repositorio
 - Busqueda web: no se han encontrado enlaces relevantes sobre el modelo, OpenPI ni pi0.5 en los resultados disponibles; los resultados devueltos corresponden a un sitio de cartas coleccionables sin relacion con el modelo.

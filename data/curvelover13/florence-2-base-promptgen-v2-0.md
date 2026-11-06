@@ -69,13 +69,13 @@ Nota: los datos de Florence-2-base original y BLIP-2 son de conocimiento general
 - El modelo está orientado principalmente a imágenes de estilo anime/ilustración (por el uso de tags Danbooru), por lo que su rendimiento en fotografías reales puede ser inferior.
 - La longitud de contexto no está documentada; se recomienda probar con imágenes de resolución estándar y ajustar `max_new_tokens` según la salida deseada.
 - La licencia MIT permite uso comercial, pero el modelo depende de Florence-2-base, que también es MIT, por lo que no hay restricciones conocidas.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que es una copia reciente o poco utilizada; se recomienda verificar la procedencia del modelo antes de usarlo en producción.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que es una copia reciente o poco utilizada; se recomienda verificar la procedencia del modelo antes de usarlo en producción.
 - El uso requiere `trust_remote_code=True` en Transformers, lo que implica ejecutar código del repositorio; se debe revisar el código fuente por seguridad.
 
 ## Enlaces
 
-- Repositorio HuggingFace (fork): https://huggingface.co/Curvelover13/Florence-2-base-PromptGen-v2.0
-- Repositorio HuggingFace (original): https://huggingface.co/MiaoshouAI/Florence-2-base-PromptGen-v2.0
+- Repositorio Hugging Face (fork): https://huggingface.co/Curvelover13/Florence-2-base-PromptGen-v2.0
+- Repositorio Hugging Face (original): https://huggingface.co/MiaoshouAI/Florence-2-base-PromptGen-v2.0
 - GitHub con documentación: https://github.com/hu05xing/Florence-2-base-PromptGen-v2.0
 - Nodo ComfyUI-Miaoshouai-Tagger: https://github.com/miaoshouai/ComfyUI-Miaoshouai-Tagger
 - Página en PromptLayer: https://www.promptlayer.com/models/florence-2-base-promptgen-v20/

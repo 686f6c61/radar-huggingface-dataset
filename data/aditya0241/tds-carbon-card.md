@@ -85,7 +85,7 @@ Estos repositorios comparten la misma finalidad (documentar emisiones con CodeCa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aditya0241/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/Aditya0241/tds-carbon-card
 - Repositorio similar (Aditya2400): https://huggingface.co/Aditya2400/tds-carbon-card
 - Repositorio similar (24f3004361): https://huggingface.co/24f3004361/tds-carbon-card
 - Repositorio similar (24f2006741): https://huggingface.co/24f2006741/tds-carbon-card

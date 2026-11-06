@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento para estos checkpoints, por lo que la comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dvader13/smollm3-3b-traj-283b
+- Repositorio en Hugging Face: https://huggingface.co/dvader13/smollm3-3b-traj-283b
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Modelo base sin instrucciones: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Página del modelo en atomic.chat: https://atomic.chat/models/smollm3-3b

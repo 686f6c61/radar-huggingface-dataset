@@ -27,7 +27,7 @@ Su relevancia práctica está en dos factores concretos: el fichero pesa 18.045.
 | Pipeline declarado | feature-extraction |
 | Tamaño del fichero | 18.045.013 bytes (aproximadamente 17,2 MiB) |
 | SHA-256 | `dcecdce7d52bbd4739b24d0874359ec564d43f4b3a392f0104f505593b566d41` |
-| Fecha de publicación | 15 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 15 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ La información proporcionada no incluye comparativas con otros modelos de embed
 
 | Modelo | Formato | Dimensión del embedding | EER en VoxCeleb1-O | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este export (`soulmachine/evertranscript-redimnet2-b3-vox2-lm`) | ONNX opset 18 | 192 | 0,42 % | MIT | HuggingFace, 0 descargas |
+| Este export (`soulmachine/evertranscript-redimnet2-b3-vox2-lm`) | ONNX opset 18 | 192 | 0,42 % | MIT | Hugging Face, 0 descargas |
 | ReDimNet2-B3 original (`PalabraAI/redimnet2`) | PyTorch (`.pt`) | 192 | 0,42 % | MIT | GitHub, etiqueta v1.0.0 |
 | Otras alternativas de la categoría (por ejemplo ECAPA-TDNN, x-vector/WeSpeaker o TitaNet) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -116,7 +116,7 @@ No se dispone de datos comparativos de parámetros, contexto o rendimiento frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soulmachine/evertranscript-redimnet2-b3-vox2-lm
+- Modelo en Hugging Face: https://huggingface.co/soulmachine/evertranscript-redimnet2-b3-vox2-lm
 - Modelo base declarado: https://huggingface.co/PalabraAI/redimnet2
 - Repositorio original de ReDimNet2 (Palabra.ai): https://github.com/PalabraAI/redimnet2
 - Aplicación EverTranscript, para la que se creó el export: https://github.com/EverTranscript/EverTranscript

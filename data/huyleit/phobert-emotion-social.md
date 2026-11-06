@@ -29,7 +29,7 @@ No se documentan innovaciones técnicas específicas en el proceso de entrenamie
 
 - Clasificación de emociones en texto vietnamita en 7 categorías: disfrute, tristeza, asco, ira, miedo, sorpresa y otras/neutral.
 - Procesamiento de lenguaje informal, incluyendo slang y teencode típico de redes sociales vietnamitas.
-- Inferencia de texto mediante pipeline de HuggingFace (`text-classification`) o con `AutoModelForSequenceClassification`.
+- Inferencia de texto mediante pipeline de Hugging Face (`text-classification`) o con `AutoModelForSequenceClassification`.
 - Salida de probabilidades por clase, lo que permite umbrales personalizados según el caso de uso.
 - No soporta tool calling, agentes, visión ni audio; es exclusivamente un clasificador de texto.
 
@@ -71,7 +71,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - Al tratarse de un modelo de 135 millones de parámetros, la inferencia puede ejecutarse en CPU con un rendimiento aceptable para tareas por lotes.
 - En GPU, cabe en tarjetas con 2 GB de VRAM o menos en FP32; con cuantización a 8 bits o 4 bits, el consumo se reduce aún más.
 - GPU recomendadas: cualquier GPU consumer moderna (GTX 1060, RTX 2060, RTX 3060, etc.) es suficiente para inferencia en tiempo real.
-- Opciones de despliegue: compatible con HuggingFace Transformers, ONNX Runtime, y puede exportarse a formatos como GGUF para su uso con llama.cpp u Ollama, aunque no se proporcionan archivos preconvertidos.
+- Opciones de despliegue: compatible con Hugging Face Transformers, ONNX Runtime, y puede exportarse a formatos como GGUF para su uso con llama.cpp u Ollama, aunque no se proporcionan archivos preconvertidos.
 - No se dispone de datos de latencia o throughput medidos por el autor.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Nota: los datos de visolex/emotion-phobert-v1 no han sido verificados en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huyleit/phobert-emotion-social
+- Modelo en Hugging Face: https://huggingface.co/huyleit/phobert-emotion-social
 - Repositorio de PhoBERT (VinAIResearch): https://github.com/VinAIResearch/PhoBERT
 - Modelo similar visolex/emotion-phobert-v1: https://huggingface.co/visolex/emotion-phobert-v1
 - Colección de reconocimiento de emociones de visolex: https://huggingface.co/collections/visolex/emotion-recognition-6853c6c4f3647be7587d6b1d

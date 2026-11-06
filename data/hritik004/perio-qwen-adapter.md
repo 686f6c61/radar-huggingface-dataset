@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hritik004/perio-qwen-adapter
+- Hugging Face: https://huggingface.co/Hritik004/perio-qwen-adapter
 - Paper de LoRA (referenciado en los metadatos): https://arxiv.org/abs/1910.09700
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

@@ -76,7 +76,7 @@ La comparativa se limita a modelos del mismo tamano y con licencia abierta. El m
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/Ministral-3-8B-Animus-V12.0-i1-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/Ministral-3-8B-Animus-V12.0-i1-GGUF)
 - [Modelo base de Darkhn](https://huggingface.co/Darkhn/Ministral-3-8B-Animus-V12.0)
 - [Repositorio de cuantizaciones estaticas del mismo modelo](https://huggingface.co/mradermacher/Ministral-3-8B-Animus-V12.0-GGUF)
 - [Coleccion Ministral 3 de Mistral AI](https://huggingface.co/collections/mistralai/ministral-3)

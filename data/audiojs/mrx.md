@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos de s
 
 | Modelo | Tarea | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MRX (esta ficha) | Separacion en 3 stems: dialogo, musica, efectos | 30,5 M | Audio a 44,1 kHz, cualquier duracion (trozos de 20 s) | SNR 10,92 / 5,17 / 5,70; SI-SDR 9,819 / 2,804 / 3,275 | MIT (MERL) | ONNX en HuggingFace, 31,3 MB int8 |
+| MRX (esta ficha) | Separacion en 3 stems: dialogo, musica, efectos | 30,5 M | Audio a 44,1 kHz, cualquier duracion (trozos de 20 s) | SNR 10,92 / 5,17 / 5,70; SI-SDR 9,819 / 2,804 / 3,275 | MIT (MERL) | ONNX en Hugging Face, 31,3 MB int8 |
 | Demucs (htdemucs, Meta) | Separacion musical en 4 stems: bateria, bajo, voces, otros | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | PyTorch, ampliamente desplegado |
 | Open-Unmix (UMX) | Separacion musical por stems | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | PyTorch |
 | Bandit (MERL) | Separacion de dialogo y musica en bandas sonoras | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorio de MERL |
@@ -111,7 +111,7 @@ La diferencia funcional relevante es que MRX separa efectos de sonido ademas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/audiojs/mrx
+- Modelo en Hugging Face: https://huggingface.co/audiojs/mrx
 - Articulo original (ICASSP 2022): https://arxiv.org/abs/2110.09958
 - Repositorio de MERL (modelo, codigo y checkpoint): https://github.com/merlresearch/cocktail-fork-separation
 - Commit concreto referenciado: https://github.com/merlresearch/cocktail-fork-separation/tree/19b3de827ebc4bfb014570cf92dd32b4ee3b6921

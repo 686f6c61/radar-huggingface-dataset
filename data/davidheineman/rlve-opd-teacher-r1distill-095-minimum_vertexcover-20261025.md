@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`rlve-opd-teacher-...-Minimum_VertexCover`) | 1,78 B | No disponible | Vertex Cover (GRPO, 4.000 rollouts) | No disponible | HuggingFace, 0 descargas |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | ~1,5 B | No disponible en la información proporcionada | Razonamiento general destilado de R1 | No disponible en la información proporcionada | HuggingFace, ampliamente distribuido |
-| `Qwen2.5-1.5B-Instruct` | ~1,5 B | No disponible en la información proporcionada | Asistente conversacional general | No disponible en la información proporcionada | HuggingFace, ampliamente distribuido |
+| Este checkpoint (`rlve-opd-teacher-...-Minimum_VertexCover`) | 1,78 B | No disponible | Vertex Cover (GRPO, 4.000 rollouts) | No disponible | Hugging Face, 0 descargas |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | ~1,5 B | No disponible en la información proporcionada | Razonamiento general destilado de R1 | No disponible en la información proporcionada | Hugging Face, ampliamente distribuido |
+| `Qwen2.5-1.5B-Instruct` | ~1,5 B | No disponible en la información proporcionada | Asistente conversacional general | No disponible en la información proporcionada | Hugging Face, ampliamente distribuido |
 
 La comparación relevante no es de rendimiento general —no hay datos— sino de propósito: frente al modelo base y a un instruct genérico del mismo orden de tamaño, este checkpoint sacrifica cobertura de tareas a cambio de especialización en un único entorno combinatorio. Para cualquier uso fuera de Vertex Cover o de experimentación en RL, el modelo base o un instruct de 1,5 B son opciones más sensatas.
 
@@ -94,8 +94,8 @@ La comparación relevante no es de rendimiento general —no hay datos— sino d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-095-Minimum_VertexCover-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-095-Minimum_VertexCover-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/c14591f5 (grupo `data-scaling-v1-n128-20261022-225839`)
-- Ficheros de configuración en el repositorio: `training_run.json` y `training_config.yaml` (en la raíz del repo de HuggingFace)
+- Ficheros de configuración en el repositorio: `training_run.json` y `training_config.yaml` (en la raíz del repo de Hugging Face)
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

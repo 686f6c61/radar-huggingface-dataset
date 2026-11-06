@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Q-P1NG/birefnet-lite-512
+- Repositorio Hugging Face: https://huggingface.co/Q-P1NG/birefnet-lite-512
 - Export original de Studio Ludens: https://huggingface.co/studioludens/birefnet-lite-512
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Artículo: Zheng, P., Gao, D., Fan, D.-P., Liu, L., Laaksonen, J., Ouyang, W., Sebe, N. "Bilateral Reference for High-Resolution Dichotomous Image Segmentation", CAAI Artificial Intelligence Research, 2024.

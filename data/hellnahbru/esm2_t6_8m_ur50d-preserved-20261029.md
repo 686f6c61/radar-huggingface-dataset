@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hellnahbru/esm2_t6_8M_UR50D-preserved-20261029` es una copia redistribuida del checkpoint ESM-2 de 8 millones de parametros (`esm2_t6_8M_UR50D`) publicado originalmente por Meta AI (Facebook) en el repositorio oficial `facebook/esm2_t6_8M_UR50D`. Se trata de un modelo de lenguaje de proteinas entrenado con objetivo de modelado de lenguaje enmascarado (masked language modelling) sobre secuencias de aminoacidos, pensado para ser afinado en tareas downstream de biologia computacional. El autor de esta copia es el usuario de HuggingFace `hellnahbru`, que no aporta modificaciones tecnicas documentadas respecto al original.
+`hellnahbru/esm2_t6_8M_UR50D-preserved-20261029` es una copia redistribuida del checkpoint ESM-2 de 8 millones de parametros (`esm2_t6_8M_UR50D`) publicado originalmente por Meta AI (Facebook) en el repositorio oficial `facebook/esm2_t6_8M_UR50D`. Se trata de un modelo de lenguaje de proteinas entrenado con objetivo de modelado de lenguaje enmascarado (masked language modelling) sobre secuencias de aminoacidos, pensado para ser afinado en tareas downstream de biologia computacional. El autor de esta copia es el usuario de Hugging Face `hellnahbru`, que no aporta modificaciones tecnicas documentadas respecto al original.
 
 El modelo resuelve el problema de obtener representaciones contextuales densas de secuencias proteicas sin necesidad de alineamientos multiples ni caracteristicas manuales. Con solo 6 capas transformer y 7.841.868 parametros reales (segun safetensors), es el checkpoint mas pequeno de la familia ESM-2, lo que lo hace adecuado para prototipado rapido, entornos con recursos limitados y tareas donde la latencia o el coste de inferencia son criticos.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| esm2_t6_8M_UR50D (esta copia) | 7,84M | 6 | no disponible | MIT | HuggingFace (redistribucion) |
-| facebook/esm2_t12_35M_UR50D | 35M | 12 | no disponible | MIT | HuggingFace (oficial) |
-| facebook/esm2_t30_150M_UR50D | 150M | 30 | no disponible | MIT | HuggingFace (oficial) |
-| facebook/esm2_t33_650M_UR50D | 650M | 33 | no disponible | MIT | HuggingFace (oficial) |
+| esm2_t6_8M_UR50D (esta copia) | 7,84M | 6 | no disponible | MIT | Hugging Face (redistribucion) |
+| facebook/esm2_t12_35M_UR50D | 35M | 12 | no disponible | MIT | Hugging Face (oficial) |
+| facebook/esm2_t30_150M_UR50D | 150M | 30 | no disponible | MIT | Hugging Face (oficial) |
+| facebook/esm2_t33_650M_UR50D | 650M | 33 | no disponible | MIT | Hugging Face (oficial) |
 
 La model card indica que los checkpoints de mayor tamano suelen tener algo mejor precision, a costa de mucho mas memoria y tiempo de entrenamiento. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ La model card indica que los checkpoints de mayor tamano suelen tener algo mejor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hellnahbru/esm2_t6_8M_UR50D-preserved-20261029
+- Modelo en Hugging Face: https://huggingface.co/hellnahbru/esm2_t6_8M_UR50D-preserved-20261029
 - Checkpoint original de Meta: https://huggingface.co/facebook/esm2_t6_8M_UR50D
 - Paper de ESM-2: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2
 - Notebook de fine-tuning en PyTorch: https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/protein_language_modeling.ipynb

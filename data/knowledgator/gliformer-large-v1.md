@@ -4,7 +4,7 @@
 
 GLiFormer Large v1 es un modelo encoder de 575,6 millones de parametros desarrollado por Knowledgator. Se presenta como un unico encoder capaz de resolver de forma simultanea varias tareas de comprension documental: reconocimiento de entidades nombradas (NER), clasificacion de texto, extraccion de relaciones, extraccion estructurada de registros y generacion de embeddings de texto. La innovacion principal es que las etiquetas de tarea y los esquemas de extraccion se especifican en tiempo de inferencia, de modo que no hace falta reentrenar ni desplegar un modelo distinto por caso de uso.
 
-El modelo comparte un encoder basado en DeBERTa con distintas cabezas de tarea, y su arquitectura es sensible al layout, por lo que admite entradas de texto y de disposicion documental (por ejemplo, documentos PDF). La model card indica que los ejemplos de uso y los resultados de calidad publicados se centran en tareas de texto. Los pesos ocupan 2,3 GB en el repositorio de HuggingFace y el modelo se distribuye con la libreria propia `gliformer`, que requiere Python 3.10 o superior.
+El modelo comparte un encoder basado en DeBERTa con distintas cabezas de tarea, y su arquitectura es sensible al layout, por lo que admite entradas de texto y de disposicion documental (por ejemplo, documentos PDF). La model card indica que los ejemplos de uso y los resultados de calidad publicados se centran en tareas de texto. Los pesos ocupan 2,3 GB en el repositorio de Hugging Face y el modelo se distribuye con la libreria propia `gliformer`, que requiere Python 3.10 o superior.
 
 Es relevante ahora porque agrupa en un solo checkpoint tareas que tradicionalmente exigen varios modelos especializados (NER, clasificacion, relation extraction, structuring y embeddings), con soporte de esquemas anidados validados con Pydantic. Su licencia no esta declarada en la informacion disponible, lo que condiciona cualquier evaluacion para uso comercial.
 
@@ -82,9 +82,9 @@ Notas metodologicas declaradas: las medias por conjunto ponderan todos los conju
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLiFormer Large v1 | 575,6 M | no disponible | NER, clasificacion, relation extraction, structuring, embeddings | no disponible | HuggingFace + libreria `gliformer` |
-| DeBERTa-v3-large (encoder base de referencia) | 435 M | 512 tokens de posicion maxima tipica | Modelo base de representacion, sin cabezas de extraccion listas para uso | MIT | HuggingFace, transformers |
-| Modelos de la familia GLiNER (extraccion zero-shot de entidades) | no disponible en la informacion proporcionada | no disponible | NER zero-shot principalmente | no disponible en la informacion proporcionada | HuggingFace |
+| GLiFormer Large v1 | 575,6 M | no disponible | NER, clasificacion, relation extraction, structuring, embeddings | no disponible | Hugging Face + libreria `gliformer` |
+| DeBERTa-v3-large (encoder base de referencia) | 435 M | 512 tokens de posicion maxima tipica | Modelo base de representacion, sin cabezas de extraccion listas para uso | MIT | Hugging Face, transformers |
+| Modelos de la familia GLiNER (extraccion zero-shot de entidades) | no disponible en la informacion proporcionada | no disponible | NER zero-shot principalmente | no disponible en la informacion proporcionada | Hugging Face |
 
 GLiFormer Large v1 se distingue de un encoder puro como DeBERTa-v3-large por incorporar cabezas de tarea y esquemas definidos en inferencia, y de los modelos centrados en NER zero-shot por cubrir tambien clasificacion, relaciones y estructuracion bajo el mismo checkpoint. La comparacion cuantitativa de rendimiento con esas alternativas no puede realizarse con los datos disponibles: el autor no publica comparativas directas y las metricas reportadas corresponden a medias agregadas sobre conjuntos propios.
 
@@ -104,6 +104,6 @@ GLiFormer Large v1 se distingue de un encoder puro como DeBERTa-v3-large por inc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/knowledgator/gliformer-large-v1
+- Modelo en Hugging Face: https://huggingface.co/knowledgator/gliformer-large-v1
 - Repositorio del framework GLiFormer: https://github.com/Knowledgator/GLiFormer
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo (los resultados obtenidos eran documentos legales en frances sin relacion con la ficha); no se dispone de enlace al paper o manuscrito, a demos ni a blogs adicionales.

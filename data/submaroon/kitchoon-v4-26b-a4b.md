@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kitchoon-V4-26B-A4B es un modelo de lenguaje orientado a roleplay (RP) y ERP desarrollado por el usuario SubMaroon, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de una versión refinada de Kitchoon-V3-26B-A4B en la que se han "horneado" (fusionado en los pesos) dos LoRAs: Gemory, de UltimateIntent, que busca que los personajes reaccionen de forma más individual, y Anthropos l07, del propio autor, diseñada para reducir la repetición entre respuestas alternativas (swipes). El resultado es un modelo especializado en desarrollo de personajes y escritura de estilo neutro para frontends como SillyTavern.
+Kitchoon-V4-26B-A4B es un modelo de lenguaje orientado a roleplay (RP) y ERP desarrollado por el usuario SubMaroon, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de una versión refinada de Kitchoon-V3-26B-A4B en la que se han "horneado" (fusionado en los pesos) dos LoRAs: Gemory, de UltimateIntent, que busca que los personajes reaccionen de forma más individual, y Anthropos l07, del propio autor, diseñada para reducir la repetición entre respuestas alternativas (swipes). El resultado es un modelo especializado en desarrollo de personajes y escritura de estilo neutro para frontends como SillyTavern.
 
 Técnicamente, el modelo pertenece a la familia etiquetada como gemma4, con arquitectura de mezcla de expertos (MoE): alrededor de 25.800 millones de parámetros totales de los cuales aproximadamente 4.000 millones están activos por token (según la nomenclatura 26B-A4B). Al ser un finetune comunitario orientado a uso creativo sin censura, su relevancia radica en la escena de roleplay local: ofrece una alternativa abierta y permissiva, ejecutable en hardware de consumo gracias a su baja activación de parámetros.
 

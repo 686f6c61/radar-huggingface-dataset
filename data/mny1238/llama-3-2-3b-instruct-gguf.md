@@ -78,7 +78,7 @@ Las diferencias principales entre las versiones GGUF radican en el metodo de cua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mny1238/Llama-3.2-3B-Instruct-GGUF
+- Hugging Face: https://huggingface.co/mny1238/Llama-3.2-3B-Instruct-GGUF
 - Modelo base original: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Coleccion de Unsloth con todas las versiones de Llama 3.2: https://huggingface.co/collections/unsloth/llama-32-66f46afde4ca573864321a22
 - Otra cuantizacion GGUF de bartowski: https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `esteban1234545555555555/mi-modelo-gguf` es una publicacion alojada en HuggingFace por el usuario `esteban1234545555555555`. Se distribuye en formato GGUF, el contenedor de pesos empleado habitualmente por llama.cpp y sus derivados, y las etiquetas del repositorio indican que esta orientado a uso conversacional (`conversational`) y que es compatible con despliegues tipo endpoints (`endpoints_compatible`). El recuento real de parametros, obtenido de los datos de safetensors asociados al repositorio, es de 1.100.048.384 parametros, es decir, aproximadamente 1,1 mil millones.
+El modelo `esteban1234545555555555/mi-modelo-gguf` es una publicacion alojada en Hugging Face por el usuario `esteban1234545555555555`. Se distribuye en formato GGUF, el contenedor de pesos empleado habitualmente por llama.cpp y sus derivados, y las etiquetas del repositorio indican que esta orientado a uso conversacional (`conversational`) y que es compatible con despliegues tipo endpoints (`endpoints_compatible`). El recuento real de parametros, obtenido de los datos de safetensors asociados al repositorio, es de 1.100.048.384 parametros, es decir, aproximadamente 1,1 mil millones.
 
 El repositorio ocupa 0,7 GB, un tamano coherente con una cuantizacion de 4-5 bits por peso para un modelo de 1,1B parametros. Esta escala de tamano situa al modelo en la categoria de modelos pequenos, aptos para inferencia en CPU, GPUs de consumo modestas y dispositivos con recursos limitados. La ficha no incluye informacion sobre arquitectura, datos de entrenamiento, licencia ni idiomas.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, no hay informacion disponible sobre el volumen de tok
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` sugiere un ajuste orientado a dialogos, aunque no se documenta el formato de plantilla de chat ni los tokens especiales empleados.
-- Despliegue en endpoints: la etiqueta `endpoints_compatible` indica compatibilidad declarada con infraestructuras de inferencia gestionada, presumiblemente HuggingFace Inference Endpoints.
+- Despliegue en endpoints: la etiqueta `endpoints_compatible` indica compatibilidad declarada con infraestructuras de inferencia gestionada, presumiblemente Hugging Face Inference Endpoints.
 - Inferencia en formato GGUF: el modelo puede ejecutarse con llama.cpp y herramientas que consumen este formato, tanto en CPU como en GPU.
 - Razonamiento y matematicas: no disponible.
 - Generacion de codigo: no disponible.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Caben en GPU de consumo: si, en practicamente cualquier GPU con 4 GB o mas de memoria (GTX 1650, RTX 3050, RTX 4060, RTX 4090 con margen amplio). Tambien es viable la inferencia mixta CPU+GPU con offload parcial de capas.
 - Inferencia en CPU: viable y probablemente el escenario principal; funciona en procesadores de escritorio modernos y en SoC ARM con 2-4 GB de RAM disponibles.
 - GPU de datacenter: no son necesarias. A100, H100 o similares solo tendrian sentido para servir muchas replicas concurrentes o para fine-tuning a gran escala.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores compatibles con la API de OpenAI sobre llama.cpp, y HuggingFace Inference Endpoints dada la etiqueta `endpoints_compatible`. vLLM y TGI ofrecen soporte de GGUF limitado y no esta confirmado que funcionen con este repositorio concreto.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores compatibles con la API de OpenAI sobre llama.cpp, y Hugging Face Inference Endpoints dada la etiqueta `endpoints_compatible`. vLLM y TGI ofrecen soporte de GGUF limitado y no esta confirmado que funcionen con este repositorio concreto.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y dependeran fuertemente del hardware, del nivel de cuantizacion y de la longitud de contexto utilizada.
 
 ## Comparativa con modelos similares
@@ -99,6 +99,6 @@ No es posible comparar el rendimiento real del modelo analizado con estas altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/esteban1234545555555555/mi-modelo-gguf
+- Modelo en Hugging Face: https://huggingface.co/esteban1234545555555555/mi-modelo-gguf
 - Resultados de la busqueda web: no se ha encontrado ninguna fuente relacionada con el modelo. Los unicos resultados devueltos corresponden a documentos sobre la planificacion quinquenal de Hong Kong y no guardan relacion con esta publicacion, por lo que se omiten.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

@@ -4,9 +4,9 @@
 
 SOLRICKS/3D-Animation-Style-MiniMax-H3 es un adaptador LoRA de bajo rango publicado por el usuario SOLRICKS que se aplica sobre el modelo base MiniMaxAI/MiniMax-H3 para transferirle un estilo visual de animación renderizada en 3D. No se trata de un modelo generativo completo, sino de un ajuste fino de estilo: el repositorio pesa 0,4 GB y contiene únicamente los pesos del adaptador, por lo que para generar vídeo es imprescindible descargar y ejecutar por separado el modelo base MiniMax-H3, cuyos pesos no están incluidos.
 
-El adaptador está etiquetado para tareas de text-to-video e image-to-video, y el pipeline declarado en la ficha de HuggingFace es image-to-video. Esto significa que su flujo natural es partir de una imagen de referencia y animarla manteniendo una estética de animación 3D, o bien partir de un prompt textual cuando se combine con las capacidades del modelo base. El repositorio tiene 524 descargas y 19 likes en el momento de la consulta, con última actualización el 4 de octubre de 2026.
+El adaptador está etiquetado para tareas de text-to-video e image-to-video, y el pipeline declarado en la ficha de Hugging Face es image-to-video. Esto significa que su flujo natural es partir de una imagen de referencia y animarla manteniendo una estética de animación 3D, o bien partir de un prompt textual cuando se combine con las capacidades del modelo base. El repositorio tiene 524 descargas y 19 likes en el momento de la consulta, con última actualización el 4 de octubre de 2026.
 
-Su relevancia actual radica en que permite reutilizar un modelo de vídeo de gran tamaño ya entrenado y obtener un estilo concreto sin necesidad de reentrenar desde cero, algo especialmente útil para estudios pequeños y creadores individuales que trabajan con presupuestos de cómputo limitados. El acceso está restringido: es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos, y la licencia aplicable es la MiniMax-H3 Community License Agreement.
+Su relevancia actual radica en que permite reutilizar un modelo de vídeo de gran tamaño ya entrenado y obtener un estilo concreto sin necesidad de reentrenar desde cero, algo especialmente útil para estudios pequeños y creadores individuales que trabajan con presupuestos de cómputo limitados. El acceso está restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos, y la licencia aplicable es la MiniMax-H3 Community License Agreement.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en que permite reutilizar un modelo de vídeo de gra
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
-| Licencia | MiniMax-H3 Community License Agreement (etiquetada como license:other en HuggingFace) |
+| Licencia | MiniMax-H3 Community License Agreement (etiquetada como license:other en Hugging Face) |
 | Formato de pesos | No disponible (el repositorio contiene los pesos del adaptador LoRA; el formato concreto no se detalla) |
 
 ## Arquitectura y entrenamiento
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible, al depender integramente del modelo base y del tipo de cuantizacion empleada.
 - GPU recomendadas: no disponible en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: no disponible en la informacion proporcionada; depende del modelo base.
-- Opciones de despliegue: la libreria declarada es minimax-h3. El autor publica ademas flujos de trabajo para ComfyUI en su perfil de HuggingFace (por ejemplo, SOLRICKS/LTX-2-5-ComfyUI-Workflows y SOLRICKS/comfyui-...), lo que sugiere un uso habitual en ese entorno, aunque no se detalla oficialmente para este adaptador.
+- Opciones de despliegue: la libreria declarada es minimax-h3. El autor publica ademas flujos de trabajo para ComfyUI en su perfil de Hugging Face (por ejemplo, SOLRICKS/LTX-2-5-ComfyUI-Workflows y SOLRICKS/comfyui-...), lo que sugiere un uso habitual en ese entorno, aunque no se detalla oficialmente para este adaptador.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de datos cuantitativos publicados para este adaptador ni para alte
 |---|---|---|---|---|---|---|
 | SOLRICKS/3D-Animation-Style-MiniMax-H3 | LoRA de estilo sobre MiniMax-H3 | No disponible (adaptador de 0,4 GB) | No disponible | MiniMax-H3 Community License Agreement | Restringido (gated) | No disponibles |
 | MiniMaxAI/MiniMax-H3 (modelo base) | Modelo de generacion de video | No disponible | No disponible | MiniMax-H3 Community License Agreement | No disponible | No disponibles |
-| Otros adaptadores de estilo para MiniMax-H3 listados en HuggingFace | LoRA | No disponible | No disponible | No disponible | No disponible | No disponibles |
+| Otros adaptadores de estilo para MiniMax-H3 listados en Hugging Face | LoRA | No disponible | No disponible | No disponible | No disponible | No disponibles |
 | Alternativas de generacion de video en el ecosistema (LTX-2.5, WAN) | Modelos de generacion de video | No disponible | No disponible | No disponible | No disponible | No disponibles |
 
 ## Limitaciones y advertencias
@@ -80,16 +80,16 @@ No se dispone de datos cuantitativos publicados para este adaptador ni para alte
 - Limitaciones de contexto: no disponible. Se desconoce la duracion maxima de clip y la resolucion soportada.
 - Limitaciones de idioma: no disponible. Los idiomas soportados por el modelo base no se detallan en la informacion proporcionada.
 - Licencia: el adaptador se distribuye bajo la MiniMax-H3 Community License Agreement y esta etiquetado como license:other. Es imprescindible revisar los terminos antes de cualquier uso comercial, ya que las licencias comunitarias de modelos de video suelen incluir restricciones de uso, limites de escala o requisitos de atribucion.
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar las condiciones en HuggingFace y disponer de autenticacion valida para descargar los pesos.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar las condiciones en Hugging Face y disponer de autenticacion valida para descargar los pesos.
 - Dependencia del modelo base: el adaptador no es autonomo. Requiere descargar MiniMaxAI/MiniMax-H3, con el coste de almacenamiento y computo que ello implica, ademas de gestionar dos licencias y dos procesos de aceptacion de condiciones.
 - Madurez del proyecto: el repositorio tiene 524 descargas y 19 likes, con una unica actualizacion registrada en octubre de 2026. No hay garantia de mantenimiento, soporte ni compatibilidad futura con nuevas versiones del modelo base.
 - Ausencia de evaluacion cuantitativa: no existen benchmarks publicados que permitan estimar la calidad del estilo transferido ni compararlo objetivamente con otras alternativas.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/SOLRICKS/3D-Animation-Style-MiniMax-H3
-- Perfil del autor SOLRICKS en HuggingFace: https://huggingface.co/SOLRICKS
+- Pagina del modelo en Hugging Face: https://huggingface.co/SOLRICKS/3D-Animation-Style-MiniMax-H3
+- Perfil del autor SOLRICKS en Hugging Face: https://huggingface.co/SOLRICKS
 - Modelo base MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Listado de adaptadores para MiniMaxAI/MiniMax-H3 en HuggingFace: https://huggingface.co/models?other=base_model:adapter:MiniMaxAI/MiniMax-H3
+- Listado de adaptadores para MiniMaxAI/MiniMax-H3 en Hugging Face: https://huggingface.co/models?other=base_model:adapter:MiniMaxAI/MiniMax-H3
 - Repositorio awesome-ltx2 en GitHub (menciona estilos de animacion 3D aplicados a generacion de video): https://github.com/wildminder/awesome-ltx2/blob/main/README.md
 - Etiqueta T2V en Civitai (repositorio de estilos comunitarios): https://civitai.com/tag/t2v

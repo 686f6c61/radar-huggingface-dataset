@@ -90,7 +90,7 @@ No se dispone de comparativas publicadas con otros modelos de corrección post-O
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vrishv/Shodhana-34M
+- Modelo en Hugging Face: https://huggingface.co/vrishv/Shodhana-34M
 - Modelo base Viveka-34M: https://huggingface.co/vrishv/Viveka-34M
 - Space graphics-studio: https://huggingface.co/spaces/vrishv/graphics-studio
 - Dataset Jigyasa Simple: https://huggingface.co/datasets/vrishv/jigyasa-simple

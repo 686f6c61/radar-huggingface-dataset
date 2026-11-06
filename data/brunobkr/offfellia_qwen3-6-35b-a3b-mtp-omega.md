@@ -1,7 +1,7 @@
 # Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-MTP-OMEGA
 
 ## Resumen
-Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-MTP-OMEGA es un repositorio de HuggingFace publicado por el usuario Brunobkr que contiene pesos en formato GGUF de un modelo de lenguaje de gran tamano. El nombre del archivo incluido en la model card, ΩFFFΣLLIα_MXFP4_MOE_Qwen3.6-35B-A3B-ΩMΣGα.gguf, indica una arquitectura de mezcla de expertos (MoE) con 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token, cuantizada en MXFP4, con soporte de prediccion multi-token (MTP) para decodificacion especulativa. No obstante, el repositorio no documenta el modelo base, los datos de entrenamiento ni resultados de evaluacion.
+Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-MTP-OMEGA es un repositorio de Hugging Face publicado por el usuario Brunobkr que contiene pesos en formato GGUF de un modelo de lenguaje de gran tamano. El nombre del archivo incluido en la model card, ΩFFFΣLLIα_MXFP4_MOE_Qwen3.6-35B-A3B-ΩMΣGα.gguf, indica una arquitectura de mezcla de expertos (MoE) con 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token, cuantizada en MXFP4, con soporte de prediccion multi-token (MTP) para decodificacion especulativa. No obstante, el repositorio no documenta el modelo base, los datos de entrenamiento ni resultados de evaluacion.
 
 El contenido principal de la model card no describe el modelo en si, sino OFFFELLIA_PURE (ΩFFFΣLLIa), un fork del ecosistema llama.cpp escrito en C/C++ con motor agentico multi-turno, soporte de FIM, decodificacion especulativa con borrador MTP, integracion de herramientas mediante MCP y una interfaz web en SvelteKit/Vite. La relevancia actual del repositorio es limitada: registra 0 descargas y 0 likes, la licencia, los idiomas y el pipeline no estan declarados, y las fechas de creacion y actualizacion (2026-09-23) resultan anomalas respecto al calendario habitual de publicaciones.
 
@@ -71,7 +71,7 @@ No disponible. No se puede establecer una comparativa fiable porque no se ha con
 | Contexto | No disponible | No disponible |
 | Benchmarks publicados | Ninguno | No disponible |
 | Licencia de pesos | No declarada | No disponible |
-| Disponibilidad | GGUF en HuggingFace, 0 descargas | No disponible |
+| Disponibilidad | GGUF en Hugging Face, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 - Trazabilidad incompleta: no se identifica el modelo base ni el pipeline de entrenamiento, lo que impide auditar sesgos, datos de origen o cumplimiento de licencias de terceros.
@@ -85,7 +85,7 @@ No disponible. No se puede establecer una comparativa fiable porque no se ha con
 - Los resultados de busqueda web disponibles no contienen informacion relacionada con este modelo (devuelven paginas de un minorista estadounidense), por lo que no ha sido posible contrastar ningun dato.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-MTP-OMEGA
+- Repositorio Hugging Face: https://huggingface.co/Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-MTP-OMEGA
 - Fork de llama.cpp OFFFELLIA_PURE: https://github.com/brunoconta1980-tech/llama_OFFFELLIA_1984
 - Repositorio ROCmFPX citado en la model card: https://github.com/charlie12345/ROCmFPX
 - Licencia MIT del fork (badge de la model card): https://opensource.org/licenses/MIT

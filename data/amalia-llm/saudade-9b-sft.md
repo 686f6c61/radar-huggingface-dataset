@@ -82,9 +82,9 @@ El autor atribuye la caída en la tarea binaria a que el adaptador se entrena so
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAUDADE-9B-SFT | 9.152 M | No disponible | Razonamiento temporal conversacional pt-PT | Apache-2.0 | HuggingFace, safetensors |
-| AMALIA-9B-0626-SFT (base) | 9.152 M | No disponible | Modelo general abierto para pt-PT | No disponible en la información | HuggingFace |
-| Alternativas de 7-9B para portugués (p. ej. modelos abiertos multilingües de tamaño similar) | 7.000-9.000 M | Variable | Generales, multilingües | Variable | HuggingFace |
+| SAUDADE-9B-SFT | 9.152 M | No disponible | Razonamiento temporal conversacional pt-PT | Apache-2.0 | Hugging Face, safetensors |
+| AMALIA-9B-0626-SFT (base) | 9.152 M | No disponible | Modelo general abierto para pt-PT | No disponible en la información | Hugging Face |
+| Alternativas de 7-9B para portugués (p. ej. modelos abiertos multilingües de tamaño similar) | 7.000-9.000 M | Variable | Generales, multilingües | Variable | Hugging Face |
 
 La comparación cuantitativa directa solo es posible con el checkpoint base, para el que se dispone de cifras en las mismas evaluaciones. No se dispone de datos de benchmarks de otros modelos de tamaño similar específicos para portugués europeo en la información proporcionada, por lo que no se ofrece una comparación numérica adicional.
 
@@ -102,7 +102,7 @@ La comparación cuantitativa directa solo es posible con el checkpoint base, par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amalia-llm/saudade-9b-sft
+- Modelo en Hugging Face: https://huggingface.co/amalia-llm/saudade-9b-sft
 - Modelo base: https://huggingface.co/amalia-llm/AMALIA-9B-0626-SFT
 - Dataset del benchmark: https://huggingface.co/datasets/amalia-llm/saudade-pt
 - Corpus de ajuste fino: https://huggingface.co/datasets/amalia-llm/SAUDADE-SFT

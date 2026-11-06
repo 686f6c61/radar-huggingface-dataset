@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Homiebear/HiggsMonaghan_240e_12960s es un repositorio de pesos publicado en HuggingFace por el usuario Homiebear el 18 de septiembre de 2026 (con una actualizacion posterior apenas 24 minutos despues de la creacion). El repositorio no incluye model card funcional: el unico contenido declarado es la etiqueta de licencia `openrail`. No se especifica arquitectura, tarea, idioma, pipeline ni procedimiento de uso, y el campo `pipeline` de la ficha de HuggingFace aparece como no disponible.
+Homiebear/HiggsMonaghan_240e_12960s es un repositorio de pesos publicado en Hugging Face por el usuario Homiebear el 18 de septiembre de 2026 (con una actualizacion posterior apenas 24 minutos despues de la creacion). El repositorio no incluye model card funcional: el unico contenido declarado es la etiqueta de licencia `openrail`. No se especifica arquitectura, tarea, idioma, pipeline ni procedimiento de uso, y el campo `pipeline` de la ficha de Hugging Face aparece como no disponible.
 
 El nombre del repositorio sigue un patron habitual en checkpoints de entrenamiento, con un prefijo identificativo ("HiggsMonaghan") y dos sufijos numericos que suelen corresponder a epocas y pasos ("240e", "12960s"), aunque esta interpretacion no esta confirmada por ninguna documentacion del autor. El tamano del repositorio es de 0,2 GB, un volumen compatible con un modelo de aproximadamente 100 millones de parametros en precision fp16, con un adaptador LoRA de rango alto o con un modelo de audio/imagen de dimension reducida; ninguna de estas hipotesis puede verificarse con la informacion disponible.
 
@@ -85,7 +85,7 @@ No disponible. Al desconocerse la tarea, la arquitectura y el numero de parametr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Homiebear/HiggsMonaghan_240e_12960s
-- Perfil del autor en HuggingFace: https://huggingface.co/Homiebear
+- Repositorio en Hugging Face: https://huggingface.co/Homiebear/HiggsMonaghan_240e_12960s
+- Perfil del autor en Hugging Face: https://huggingface.co/Homiebear
 - Licencia OpenRAIL: https://huggingface.co/spaces/CompVis/stable-diffusion-license (referencia generica de la familia OpenRAIL; no se ha localizado el texto exacto asociado a este repositorio)
 - Resultados de la busqueda web: ninguno de los enlaces devueltos guarda relacion con el modelo (corresponden a paginas de soporte de Microsoft sobre cuentas, Exchange Server y Windows 11), por lo que no se incluyen como referencias utiles.

@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks cuantitativos (FVD, FAD, CLIP-score
 
 | Modelo / adaptador | Tipo | NFE | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-Ref2VA-PTD-8Step (este repo) | LoRA PTD per-hop (8 adaptadores) | 8 | Ref2VA | MiniMax-H3 Community License | HuggingFace, 16,8 GB de repo |
-| MiniMax-H3-Ref2VA-PTD-4Step (este repo) | LoRA PTD per-hop (4 adaptadores) | 4 | Ref2VA | MiniMax-H3 Community License | HuggingFace, mismo repo |
-| alibaba-pai/MiniMax-H3-Acc-LoRAs | LoRA de aceleración con PDD | 8 (Ref2VA-Acc-8Step) | Ref2VA | No disponible en la información proporcionada | HuggingFace |
-| lightx2v/Minimax-h3-Turbo | Acelerador de la familia Turbo | 4 | Ref2VA / generación | No disponible en la información proporcionada | HuggingFace, repo GitHub ModelTC/Minimax-H3-Turbo |
-| MiniMaxAI/MiniMax-H3 (base) | Modelo completo de difusión vídeo+audio | Muestreo completo (no especificado) | Ref2VA y otras | MiniMax-H3 Community License | HuggingFace |
+| MiniMax-H3-Ref2VA-PTD-8Step (este repo) | LoRA PTD per-hop (8 adaptadores) | 8 | Ref2VA | MiniMax-H3 Community License | Hugging Face, 16,8 GB de repo |
+| MiniMax-H3-Ref2VA-PTD-4Step (este repo) | LoRA PTD per-hop (4 adaptadores) | 4 | Ref2VA | MiniMax-H3 Community License | Hugging Face, mismo repo |
+| alibaba-pai/MiniMax-H3-Acc-LoRAs | LoRA de aceleración con PDD | 8 (Ref2VA-Acc-8Step) | Ref2VA | No disponible en la información proporcionada | Hugging Face |
+| lightx2v/Minimax-h3-Turbo | Acelerador de la familia Turbo | 4 | Ref2VA / generación | No disponible en la información proporcionada | Hugging Face, repo GitHub ModelTC/Minimax-H3-Turbo |
+| MiniMaxAI/MiniMax-H3 (base) | Modelo completo de difusión vídeo+audio | Muestreo completo (no especificado) | Ref2VA y otras | MiniMax-H3 Community License | Hugging Face |
 
 No se dispone de datos de parámetros totales, contexto ni métricas de calidad para ninguna de las alternativas, por lo que la comparación cuantitativa de rendimiento no es posible con la información disponible.
 
@@ -92,7 +92,7 @@ No se dispone de datos de parámetros totales, contexto ni métricas de calidad 
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-LoRAs
+- Repo Hugging Face: https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-LoRAs
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Adaptadores de aceleración de referencia (PDD): https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs
@@ -100,5 +100,5 @@ No se dispone de datos de parámetros totales, contexto ni métricas de calidad 
 - Repositorio con los ejemplos y prompts de test: https://github.com/ModelTC/Minimax-H3-Turbo/tree/main/examples
 - Página del proyecto PTD (Parametric Trajectory Distillation): https://alan-lanfeng.github.io/PTD/
 - Paper referenciado en los tags: arXiv:2607.26004
-- Vídeos de demostración: bajo `results/` en el propio repo de HuggingFace (`minimax_h3_ref2va_ptd_8step_*.mp4` y `minimax_h3_ref2va_ptd_4step_*.mp4`)
+- Vídeos de demostración: bajo `results/` en el propio repo de Hugging Face (`minimax_h3_ref2va_ptd_8step_*.mp4` y `minimax_h3_ref2va_ptd_4step_*.mp4`)
 - Búsqueda web: no se han encontrado enlaces técnicos relevantes; los resultados devueltos corresponden a páginas comerciales del marketplace Taobao y no aportan información sobre el modelo.

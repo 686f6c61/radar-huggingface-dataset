@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Crislang models (Gemma 4 E4B Q4_K_XL) | 4.628.569.635 | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| Gemma 4 E2B it QAT (Unsloth) | no disponible | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| Gemma 4 E4B it QAT (Unsloth) | no disponible | no disponible | Apache 2.0 | GGUF | HuggingFace |
+| Crislang models (Gemma 4 E4B Q4_K_XL) | 4.628.569.635 | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| Gemma 4 E2B it QAT (Unsloth) | no disponible | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| Gemma 4 E4B it QAT (Unsloth) | no disponible | no disponible | Apache 2.0 | GGUF | Hugging Face |
 
 No se dispone de información suficiente para comparar con alternativas de otros desarrolladores (por ejemplo, Llama, Qwen o Mistral en tamaños equivalentes) sin inventar datos. La comparativa se limita a las variantes del propio modelo base.
 
@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar con alternativas de otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yerzer/crislang-models
+- Hugging Face: https://huggingface.co/yerzer/crislang-models
 - Modelo base E2B QAT GGUF: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF
 - Modelo base E4B QAT GGUF: https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

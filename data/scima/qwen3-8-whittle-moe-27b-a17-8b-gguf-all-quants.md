@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar con otros modelos MoE de 
 
 ## Enlaces
 
-- Repositorio de HuggingFace de este modelo: https://huggingface.co/scima/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF-all-quants
+- Repositorio de Hugging Face de este modelo: https://huggingface.co/scima/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF-all-quants
 - Modelo base (cuantizaciones oficiales de logic65): https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF/
 - Modelo original de logic65: https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B
 - Repositorio de Qwen3.8-27B (base densa): https://huggingface.co/Qwen/Qwen3.8-27B

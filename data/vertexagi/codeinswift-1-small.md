@@ -90,11 +90,11 @@ No se dispone de datos verificados en la información proporcionada para compara
 - Licencia Apache 2.0, heredada de Qwen3, permite uso comercial, pero incluye las condiciones habituales de atribución y de ausencia de garantías; conviene revisar también los términos aplicables al modelo base y al dataset utilizado.
 - Distribución limitada: solo existe versión MLX de 4 bits, sin GGUF ni pesos en precisión completa, lo que restringe su uso a hardware Apple.
 - Adopción nula hasta la fecha de consulta (0 descargas, 0 likes) y ausencia de validación independiente de los resultados publicados.
-- La fecha de creación registrada en HuggingFace es posterior a la fecha habitual de referencia del ecosistema (21 de septiembre de 2026), dato que conviene verificar antes de citarlo.
+- La fecha de creación registrada en Hugging Face es posterior a la fecha habitual de referencia del ecosistema (21 de septiembre de 2026), dato que conviene verificar antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VertexAGI/codeinswift-1-small
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/codeinswift-1-small
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-8B-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/MnemicAI/Ling-Coder-SFT-English-Clean
 - Librería de inferencia: https://github.com/ml-explore/mlx-lm

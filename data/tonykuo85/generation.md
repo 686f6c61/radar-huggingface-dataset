@@ -23,7 +23,7 @@ El propósito declarado del repositorio es ofrecer una implementación transpare
 
 La arquitectura se define como "Hybrid", combinando atención sparse con un mecanismo de fusión gated, activación swish y normalización scalenorm. No se especifica si se trata de un transformer, un modelo de estado sólido (SSM) u otra variante; la denominación "híbrida" sugiere una combinación de mecanismos, pero los detalles concretos no están documentados en la model card. La configuración se describe como "huge", aunque el número de parámetros es minúsculo (33.088), lo que probablemente indica que la configuración está pensada para pruebas de funcionalidad, no para un entrenamiento a gran escala.
 
-En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con una receta por defecto que usa SGD con un programador de pasos ("step schedule"), pero la model card aclara explícitamente que estos son valores iniciales del script y no evidencian una ejecución completada. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un checkpoint entrenado. No se proporcionan datos sobre el dataset, el número de tokens procesados ni técnicas de alineación como RLHF o DPO. La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con una receta por defecto que usa SGD con un programador de pasos ("step schedule"), pero la model card aclara explícitamente que estos son valores iniciales del script y no evidencian una ejecución completada. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un checkpoint entrenado. No se proporcionan datos sobre el dataset, el número de tokens procesados ni técnicas de alineación como RLHF o DPO. La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ Dado que el checkpoint no está entrenado, no existen casos de uso prácticos re
 
 - Estudio de arquitecturas híbridas: los desarrolladores pueden analizar el código de `finetune.py` para comprender cómo se combinan atención sparse, fusión gated y normalización scalenorm en una implementación funcional.
 - Pruebas de integración: el checkpoint de inicialización permite verificar que el pipeline de carga y ejecución funciona antes de entrenar un modelo real.
-- Desarrollo de adaptadores para HuggingFace: al ser una implementación personalizada, se puede usar para escribir un adaptador que permita cargar el modelo con `AutoModel` u otras APIs.
+- Desarrollo de adaptadores para Hugging Face: al ser una implementación personalizada, se puede usar para escribir un adaptador que permita cargar el modelo con `AutoModel` u otras APIs.
 - Reproducción de experimentos: el repositorio incluye una receta de entrenamiento (SGD con step schedule) que puede servir como punto de partida para comparar configuraciones.
 - Investigación sobre escalado: aunque los parámetros son mínimos, la configuración "huge" podría explorarse en versiones ampliadas para estudiar el comportamiento de la arquitectura.
 - Educación: como ejemplo didáctico de implementación de un modelo de generación con componentes híbridos.
@@ -73,9 +73,9 @@ No disponible. No se conocen modelos comparables con el mismo tamaño (33k pará
 - Limitaciones de contexto e idioma: no se especifican, pero al no estar entrenado, no hay soporte real para ningún idioma.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, pero dado el estado del modelo, no tiene valor comercial directo.
 - Para producción, es completamente inadecuado. Debe tratarse como un artefacto de investigación.
-- La implementación es personalizada; las APIs genéricas de HuggingFace requieren un adaptador explícito, lo que complica su integración.
+- La implementación es personalizada; las APIs genéricas de Hugging Face requieren un adaptador explícito, lo que complica su integración.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tonykuo85/generation
+- Repositorio en Hugging Face: https://huggingface.co/tonykuo85/generation
 - No se encontraron otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

@@ -91,7 +91,7 @@ El rendimiento comparado de calidad entre los tres hermanos AXQ no esta publicad
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-MXFP8-MTP
+- Hugging Face (este modelo): https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-MXFP8-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit-MTP
 - Hermano 6bit: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-6bit-MTP

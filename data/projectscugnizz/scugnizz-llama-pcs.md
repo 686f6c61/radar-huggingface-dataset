@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Scugnizz Llama-PCS es un modelo de lenguaje desarrollado por el usuario ProjectScugnizz, alojado en HuggingFace bajo una licencia no estándar ("other"). El repositorio contiene checkpoints de entrenamiento (archivos `model_final.pt` y `model_pulse_*.pt`), así como un paquete completo de entrenamiento y evaluación que se comparte con otro repositorio del mismo autor (`ProjectScugnizz/scugnizz-llama-training`). El nombre sugiere una base Llama, pero no se especifica la arquitectura exacta, el número de parámetros ni la longitud de contexto.
+Scugnizz Llama-PCS es un modelo de lenguaje desarrollado por el usuario ProjectScugnizz, alojado en Hugging Face bajo una licencia no estándar ("other"). El repositorio contiene checkpoints de entrenamiento (archivos `model_final.pt` y `model_pulse_*.pt`), así como un paquete completo de entrenamiento y evaluación que se comparte con otro repositorio del mismo autor (`ProjectScugnizz/scugnizz-llama-training`). El nombre sugiere una base Llama, pero no se especifica la arquitectura exacta, el número de parámetros ni la longitud de contexto.
 
 El proyecto parece estar en fase de desarrollo o investigación, dado que incluye un historial de entrenamiento (`HISTORY.md`) y un documento de traspaso (`HANDOFF.md`). El tamaño del repositorio es de 943,9 GB, lo que indica que contiene pesos de un modelo considerable o múltiples versiones. También se menciona un espacio Gradio para chat (`ProjectScugnizz/scugnizz-chat`), lo que sugiere que el modelo está pensado para interacción conversacional, aunque no hay más detalles disponibles.
 
@@ -63,6 +63,6 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- Repositorio HuggingFace: [ProjectScugnizz/scugnizz-llama-pcs](https://huggingface.co/ProjectScugnizz/scugnizz-llama-pcs)
+- Repositorio Hugging Face: [ProjectScugnizz/scugnizz-llama-pcs](https://huggingface.co/ProjectScugnizz/scugnizz-llama-pcs)
 - Repositorio de entrenamiento: [ProjectScugnizz/scugnizz-llama-training](https://huggingface.co/ProjectScugnizz/scugnizz-llama-training)
 - Espacio Gradio de chat: [ProjectScugnizz/scugnizz-chat](https://huggingface.co/spaces/ProjectScugnizz/scugnizz-chat)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tentacles-Pack-H3 es un repositorio publicado en HuggingFace por el usuario watanbe4112 bajo el identificador `watanbe4112/Tentacles-Pack-H3`. La model card asociada es practicamente vacia: unicamente declara una licencia personalizada (`tentacles-pac-h3`, con enlace a un fichero `LICENSE`) y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio tiene un tamano de 0,3 GB, lo que sugiere un conjunto de pesos de pequeno tamano o un paquete de artefactos auxiliares, pero no permite inferir el numero de parametros ni la tarea para la que fue disenado.
+Tentacles-Pack-H3 es un repositorio publicado en Hugging Face por el usuario watanbe4112 bajo el identificador `watanbe4112/Tentacles-Pack-H3`. La model card asociada es practicamente vacia: unicamente declara una licencia personalizada (`tentacles-pac-h3`, con enlace a un fichero `LICENSE`) y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio tiene un tamano de 0,3 GB, lo que sugiere un conjunto de pesos de pequeno tamano o un paquete de artefactos auxiliares, pero no permite inferir el numero de parametros ni la tarea para la que fue disenado.
 
-No se dispone de informacion sobre el pipeline de HuggingFace, los idiomas soportados ni los formatos de pesos. El repositorio no registra descargas ni likes en el momento de la consulta, y las fechas de creacion y actualizacion son identicas (31 de octubre de 2026), lo que apunta a una publicacion reciente y sin actividad posterior. Dado que el nombre incluye "Pack", es plausible que se trate de un paquete de recursos (posiblemente pesos cuantizados, adaptadores o artefactos de un proyecto mayor) en lugar de un modelo base independiente, pero esto no puede confirmarse con la informacion disponible.
+No se dispone de informacion sobre el pipeline de Hugging Face, los idiomas soportados ni los formatos de pesos. El repositorio no registra descargas ni likes en el momento de la consulta, y las fechas de creacion y actualizacion son identicas (31 de octubre de 2026), lo que apunta a una publicacion reciente y sin actividad posterior. Dado que el nombre incluye "Pack", es plausible que se trate de un paquete de recursos (posiblemente pesos cuantizados, adaptadores o artefactos de un proyecto mayor) en lugar de un modelo base independiente, pero esto no puede confirmarse con la informacion disponible.
 
 La relevancia actual de esta ficha es limitada: sin model card sustantiva, sin benchmarks y sin documentacion tecnica, no es posible evaluar el modelo para uso en produccion ni compararlo con alternativas. Se recomienda precaucion antes de cualquier integracion.
 
@@ -74,6 +74,6 @@ No disponible. Sin informacion sobre parametros, contexto, licencia de uso comer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/watanbe4112/Tentacles-Pack-H3
+- Repositorio en Hugging Face: https://huggingface.co/watanbe4112/Tentacles-Pack-H3
 - Fichero de licencia: https://huggingface.co/watanbe4112/Tentacles-Pack-H3/blob/main/LICENSE
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

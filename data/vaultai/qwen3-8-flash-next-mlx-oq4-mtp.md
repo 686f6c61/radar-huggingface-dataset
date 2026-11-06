@@ -85,14 +85,14 @@ La informacion disponible solo permite comparar esta conversion con su modelo ba
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-MLX-oQ4-MTP (esta conversion) | ~180B totales / ~6B activos | 262.144 tokens | MLX safetensors, oQ4, 113,3 GB | qwen-community-1.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | ~180B totales / ~6B activos | 262.144 tokens | safetensors BF16 | qwen-community-1.0 | HuggingFace, oficial |
+| Qwen3.8-Flash-Next-MLX-oQ4-MTP (esta conversion) | ~180B totales / ~6B activos | 262.144 tokens | MLX safetensors, oQ4, 113,3 GB | qwen-community-1.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | ~180B totales / ~6B activos | 262.144 tokens | safetensors BF16 | qwen-community-1.0 | Hugging Face, oficial |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - No es un lanzamiento oficial de Qwen: es una conversion comunitaria. El autor lo declara explicitamente y remite al modelo base para evaluaciones y guias de seguridad.
-- Discrepancia de autoria: los metadatos de HuggingFace atribuyen el repositorio a `vaultai`, mientras que la model card y los enlaces internos apuntan a `Vontra`. Conviene verificar la procedencia antes de usarlo en produccion.
+- Discrepancia de autoria: los metadatos de Hugging Face atribuyen el repositorio a `vaultai`, mientras que la model card y los enlaces internos apuntan a `Vontra`. Conviene verificar la procedencia antes de usarlo en produccion.
 - Requisito de runtime estricto: necesita oMLX o MLX-VLM con soporte explicito de `qwen4_exp` y MTP nativo. Los runtimes estandar pueden fallar al cargar los 76 tensores MTP.
 - Advertencia explicita del autor: no se debe acoplar un drafter Qwen3.8 27B a este modelo, porque Flash Next tiene dimensiones ocultas distintas y ya incluye su propio bloque MTP compatible.
 - Idiomas soportados: no disponibles. No se puede planificar cobertura multilingue con la informacion proporcionada.
@@ -106,7 +106,7 @@ La informacion disponible solo permite comparar esta conversion con su modelo ba
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vaultai/Qwen3.8-Flash-Next-MLX-oQ4-MTP
+- Repositorio en Hugging Face: https://huggingface.co/vaultai/Qwen3.8-Flash-Next-MLX-oQ4-MTP
 - Repositorio citado en la model card: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ4-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Vision general de Qwen sobre el modelo: https://qwen.ai/blog?id=qwen3.8-flash-next

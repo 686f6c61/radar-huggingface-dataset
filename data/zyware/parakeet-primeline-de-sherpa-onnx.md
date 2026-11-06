@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zyware/parakeet-primeline-de-sherpa-onnx
+- Modelo en Hugging Face: https://huggingface.co/zyware/parakeet-primeline-de-sherpa-onnx
 - Modelo original: https://huggingface.co/primeline/parakeet-primeline
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - sherpa-onnx (repositorio): https://github.com/k2-fsa/sherpa-onnx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abhishek-1-developer/proctorvision es un repositorio alojado en HuggingFace cuyo contenido publicado es practicamente inexistente: la model card se limita a una linea de licencia (`license: mit`) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, no tiene idiomas asociados y acumula 0 descargas y 0 "likes" desde su creacion, fechada el 21 de septiembre de 2026.
+Abhishek-1-developer/proctorvision es un repositorio alojado en Hugging Face cuyo contenido publicado es practicamente inexistente: la model card se limita a una linea de licencia (`license: mit`) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, no tiene idiomas asociados y acumula 0 descargas y 0 "likes" desde su creacion, fechada el 21 de septiembre de 2026.
 
 No es posible determinar que problema resuelve el modelo ni a que categoria pertenece. El identificador "proctorvision" sugiere un posible uso relacionado con vision artificial aplicada a supervision o proctoring, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor en la informacion disponible.
 
@@ -66,7 +66,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Abhishek-1-developer/proctorvision | no disponible | no disponible | MIT | Repositorio en HuggingFace sin pesos ni documentacion confirmados |
+| Abhishek-1-developer/proctorvision | no disponible | no disponible | MIT | Repositorio en Hugging Face sin pesos ni documentacion confirmados |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abhishek-1-developer/proctorvision
+- Repositorio en Hugging Face: https://huggingface.co/Abhishek-1-developer/proctorvision
 - Articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.
 - Demostracion o espacio interactivo: no disponible.

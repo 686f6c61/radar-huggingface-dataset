@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `guillekenzo/aros-3dff9e74-VelvetSpecter` es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto, entrenado sobre el modelo base `krea/Krea-2-Raw` y publicado por el usuario guillekenzo en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un peso adicional (adapter) que se carga sobre un pipeline de difusion para aprender un concepto visual concreto. El disparador definido por el autor es la cadena `wxg woman`, que debe incluirse en el prompt para activar el concepto aprendido.
+El modelo `guillekenzo/aros-3dff9e74-VelvetSpecter` es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto, entrenado sobre el modelo base `krea/Krea-2-Raw` y publicado por el usuario guillekenzo en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un peso adicional (adapter) que se carga sobre un pipeline de difusion para aprender un concepto visual concreto. El disparador definido por el autor es la cadena `wxg woman`, que debe incluirse en el prompt para activar el concepto aprendido.
 
 El repositorio tiene un tamano de 0,6 GB y esta licenciado bajo Apache 2.0, con integracion directa en la libreria `diffusers` mediante `Krea2Pipeline`. El autor indica que el entrenamiento se realizo sobre Krea 2 RAW y que las muestras publicadas se generaron sobre Krea 2 Turbo con solo 8 pasos de inferencia y `guidance_scale=0.0`, lo que sugiere compatibilidad con el modo rapido del modelo base.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guillekenzo/aros-3dff9e74-VelvetSpecter | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | apache-2.0 | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo base de difusion text-to-image | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace (referenciado como base) |
-| krea/Krea-2-Turbo | Variante acelerada del modelo base | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace (referenciado en el codigo de ejemplo) |
+| guillekenzo/aros-3dff9e74-VelvetSpecter | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | apache-2.0 | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo base de difusion text-to-image | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face (referenciado como base) |
+| krea/Krea-2-Turbo | Variante acelerada del modelo base | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face (referenciado en el codigo de ejemplo) |
 | Otros LoRAs comparables de la misma categoria | LoRA de personalizacion | no disponible | no aplica | no disponible | no se han identificado alternativas en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de parametros de los modelos base, por lo que la comparativa se limita a la relacion estructural entre el adaptador y sus modelos de referencia.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de parametros de los modelos base, por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/guillekenzo/aros-3dff9e74-VelvetSpecter
+- Repositorio en Hugging Face: https://huggingface.co/guillekenzo/aros-3dff9e74-VelvetSpecter
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en el ejemplo de inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de `diffusers` (libreria indicada por el autor): https://github.com/huggingface/diffusers

@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- [HuggingFace: knoopx/Swift-1.5-FN-GSQ-RCO-IQ3_S-Basalt](https://huggingface.co/knoopx/Swift-1.5-FN-GSQ-RCO-IQ3_S-Basalt)
+- [Hugging Face: knoopx/Swift-1.5-FN-GSQ-RCO-IQ3_S-Basalt](https://huggingface.co/knoopx/Swift-1.5-FN-GSQ-RCO-IQ3_S-Basalt)
 - [Modelo base GGUF: ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF](https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF)
 - [Modelo base original: Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Motor Basalt (repositorio)](https://github.com/jesdga95/basalt)

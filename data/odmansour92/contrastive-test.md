@@ -67,4 +67,4 @@ No disponible. Este repositorio no es un modelo de producción comparable con al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/odmansour92/contrastive-test
+- Repositorio en Hugging Face: https://huggingface.co/odmansour92/contrastive-test

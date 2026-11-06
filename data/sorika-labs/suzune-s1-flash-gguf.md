@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento objeti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sorika-labs/suzune-s1-flash-gguf
+- Repositorio Hugging Face: https://huggingface.co/sorika-labs/suzune-s1-flash-gguf
 - Modelo base: https://huggingface.co/sorika-labs/suzune-s1-flash
 - Modelo Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - SDK en PyPI: https://pypi.org/project/suzune-flash/

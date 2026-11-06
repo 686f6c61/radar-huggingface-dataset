@@ -79,9 +79,9 @@ No hay comparables directos en la información proporcionada, ya que se trata de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lauravanleeuwen/tiny-transformer-demo | 16.576 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | HuggingFace, 0 descargas |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M (referencia externa) | 256 tokens (referencia externa) | métricas publicadas por el autor del modelo | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| CLIP ViT-B/32 (referencia externa, por el escenario Flickr30k) | ~151 M (referencia externa) | 77 tokens (referencia externa) | métricas publicadas por el autor del modelo | MIT | HuggingFace, ampliamente desplegado |
+| Lauravanleeuwen/tiny-transformer-demo | 16.576 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | Hugging Face, 0 descargas |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M (referencia externa) | 256 tokens (referencia externa) | métricas publicadas por el autor del modelo | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| CLIP ViT-B/32 (referencia externa, por el escenario Flickr30k) | ~151 M (referencia externa) | 77 tokens (referencia externa) | métricas publicadas por el autor del modelo | MIT | Hugging Face, ampliamente desplegado |
 
 ## Limitaciones y advertencias
 
@@ -91,12 +91,12 @@ No hay comparables directos en la información proporcionada, ya que se trata de
 - Riesgo de alucinación: no evaluable; no se ha validado la salida del modelo en ninguna tarea generativa.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura lingüística.
 - Restricciones de licencia: la licencia MIT permite uso comercial, modificación y redistribución con atribución y sin garantía. El propio autor advierte de revisar los términos de los datos de origen si se usa con datasets externos.
-- Es una implementación personal: las API de carga automática de HuggingFace requieren un adaptador explícito, lo que añade trabajo de integración.
+- Es una implementación personal: las API de carga automática de Hugging Face requieren un adaptador explícito, lo que añade trabajo de integración.
 - El repositorio ocupa 0,0 GB y tiene 0 descargas y 0 likes, lo que indica ausencia de validación por parte de la comunidad.
 - Cualquier resultado obtenido a partir de este código debería documentarse por separado de los valores por defecto que se envían en el repositorio, tal como pide el autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lauravanleeuwen/tiny-transformer-demo
+- Modelo en Hugging Face: https://huggingface.co/Lauravanleeuwen/tiny-transformer-demo
 - La búsqueda web realizada no devolvió enlaces relevantes sobre el modelo; el único resultado obtenido fue WhatsApp Web (https://web.whatsapp.com/), sin relación con este repositorio.
 - No se dispone de paper, blog, repositorio adicional ni demo asociados en la información proporcionada.

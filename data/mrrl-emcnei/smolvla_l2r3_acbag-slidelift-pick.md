@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_l2r3_acbag-slidelift-pick (este) | 450M | no disponible | Pick up the pouch (mobileai_robot) | apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible | no disponible | Base VLA para fine-tuning | no disponible en la información | HuggingFace |
+| smolvla_l2r3_acbag-slidelift-pick (este) | 450M | no disponible | Pick up the pouch (mobileai_robot) | apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible | no disponible | Base VLA para fine-tuning | no disponible en la información | Hugging Face |
 | Otros VLA compactos (p. ej. variantes de OpenVLA) | no disponible | no disponible | Manipulación general | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrrl-emcnei/smolvla_l2r3_acbag-slidelift-pick
+- Modelo en Hugging Face: https://huggingface.co/mrrl-emcnei/smolvla_l2r3_acbag-slidelift-pick
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/mrrl-emcnei/acbag-slidelift-pick
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mrrl-emcnei/acbag-slidelift-pick

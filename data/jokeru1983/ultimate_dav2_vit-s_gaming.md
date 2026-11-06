@@ -79,7 +79,7 @@ La comparativa se basa en información pública de los modelos originales; no ha
 
 ## Enlaces
 
-- [HuggingFace - Jokeru1983/Ultimate_DAV2_ViT-S_Gaming](https://huggingface.co/Jokeru1983/Ultimate_DAV2_ViT-S_Gaming)
+- [Hugging Face - Jokeru1983/Ultimate_DAV2_ViT-S_Gaming](https://huggingface.co/Jokeru1983/Ultimate_DAV2_ViT-S_Gaming)
 - [GitHub - Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2)
 - [Página del proyecto Depth Anything V2](https://depth-anything-v2.github.io/)
-- [Perfil de Jokeru1983 en HuggingFace](https://huggingface.co/Jokeru1983/models)
+- [Perfil de Jokeru1983 en Hugging Face](https://huggingface.co/Jokeru1983/models)

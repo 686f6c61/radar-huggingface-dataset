@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kmseong/llama2_7b-chat-CB_SSFT-asft_medqa_lambda1.0_fullft_lr5e-5` contiene un ajuste fino del modelo Llama-2-7b-chat publicado por el usuario kmseong. El propio nombre del repositorio indica que el entrenamiento se ha realizado sobre el conjunto de datos MedQA, con ajuste completo de pesos (`fullft`) y una tasa de aprendizaje de 5e-5, además de un parámetro `lambda1.0` y unas siglas (`CB`, `SSFT`, `asft`) cuyo significado no se documenta en la ficha de HuggingFace. El modelo tiene 6.738.415.616 parámetros reales (unos 6,74 mil millones), coherente con Llama-2-7b, y el repositorio ocupa 13,5 GB en formato safetensors.
+El repositorio `kmseong/llama2_7b-chat-CB_SSFT-asft_medqa_lambda1.0_fullft_lr5e-5` contiene un ajuste fino del modelo Llama-2-7b-chat publicado por el usuario kmseong. El propio nombre del repositorio indica que el entrenamiento se ha realizado sobre el conjunto de datos MedQA, con ajuste completo de pesos (`fullft`) y una tasa de aprendizaje de 5e-5, además de un parámetro `lambda1.0` y unas siglas (`CB`, `SSFT`, `asft`) cuyo significado no se documenta en la ficha de Hugging Face. El modelo tiene 6.738.415.616 parámetros reales (unos 6,74 mil millones), coherente con Llama-2-7b, y el repositorio ocupa 13,5 GB en formato safetensors.
 
 Se trata, por tanto, de un artefacto de investigación académica orientado a pregunta-respuesta biomédica, no de un modelo con documentación de producto. La ficha no declara licencia, idiomas, pipeline ni datos de entrenamiento, y no se ha publicado ningún resultado de evaluación. Con 20 descargas y 0 "likes", es un repositorio prácticamente sin validación por parte de la comunidad.
 
@@ -53,7 +53,7 @@ No hay información publicada sobre el número de tokens de entrenamiento, la co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La ficha de HuggingFace no incluye métricas de MMLU, MedQA, HumanEval, GSM8K ni de ninguna otra evaluación, y la búsqueda web realizada no ha devuelto ninguna referencia técnica al modelo.
+No se han publicado resultados de benchmarks en la información disponible. La ficha de Hugging Face no incluye métricas de MMLU, MedQA, HumanEval, GSM8K ni de ninguna otra evaluación, y la búsqueda web realizada no ha devuelto ninguna referencia técnica al modelo.
 
 ## Requisitos de hardware
 
@@ -90,7 +90,7 @@ La comparación de rendimiento no es posible: no existen métricas publicadas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kmseong/llama2_7b-chat-CB_SSFT-asft_medqa_lambda1.0_fullft_lr5e-5
+- Modelo en Hugging Face: https://huggingface.co/kmseong/llama2_7b-chat-CB_SSFT-asft_medqa_lambda1.0_fullft_lr5e-5
 - Resultados de la búsqueda web: no se ha encontrado ninguna referencia relevante al modelo; las páginas devueltas no guardan relación con él.
 - Referencia de contexto del modelo base (no enlazada desde la ficha): artículo de Llama 2, https://arxiv.org/abs/2307.09288
 - Referencia de contexto del dataset (no enlazada desde la ficha): artículo de MedQA, https://arxiv.org/abs/2009.13081

@@ -21,7 +21,7 @@ La arquitectura subyacente es Qwen3.5-MoE (`qwen35moe` en llama.cpp): 48 capas M
 | Licencia | MIT |
 | Formato de pesos | GGUF (llama.cpp); sin safetensors en el repositorio |
 
-Datos adicionales del repositorio: tamaño de 21,4 GB en la lista de ficheros de HuggingFace (19,9 GB según el cómputo de GPU, 1 GB = 1.024 MB), 0 descargas y 2 likes en el momento de la consulta, creado y actualizado el 25 de octubre de 2026.
+Datos adicionales del repositorio: tamaño de 21,4 GB en la lista de ficheros de Hugging Face (19,9 GB según el cómputo de GPU, 1 GB = 1.024 MB), 0 descargas y 2 likes en el momento de la consulta, creado y actualizado el 25 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ Detalles de evaluación: EvalPlus HumanEval+ (164 problemas) y MBPP+ (378), serv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anik-jha/Ornith-1.5-122B-24GB-GGUF
+- Repositorio Hugging Face: https://huggingface.co/anik-jha/Ornith-1.5-122B-24GB-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Artículo del método ("Half the Experts, All the Code"): https://arxiv.org/abs/2607.16721
 - Workshop COLM 2026 on Efficient Reasoning: https://wdlctc.github.io/efficient-reasoning-2026/

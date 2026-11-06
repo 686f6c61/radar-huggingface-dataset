@@ -40,7 +40,7 @@ En cuanto a datos, el proyecto declara un corpus de 16,7 millones de muestras qu
 - Reconocimiento de fases quirúrgicas y evaluación de habilidad quirúrgica sobre vídeo.
 - Cálculo médico (medical computation) y tareas educativas.
 - Cadena de razonamiento (CoT) en versiones posteriores de la familia; la variante Flash-Preview-27B se anuncia con CoT más corta para mayor throughput.
-- Integración nativa con HuggingFace Transformers (`AutoModelForCausalLM.from_pretrained`) y compatibilidad con endpoints.
+- Integración nativa con Hugging Face Transformers (`AutoModelForCausalLM.from_pretrained`) y compatibilidad con endpoints.
 - Soporte de despliegue en vLLM (con tensor parallel) y SGLang para las variantes MoE; compatibilidad con vLLM anunciada desde noviembre de 2025.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de audio: no disponibles.

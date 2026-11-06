@@ -77,8 +77,8 @@ No se han publicado en la información disponible comparaciones directas con otr
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l2_gsmrec_basis_w_remove50 | 6.738.415.616 | No disponible | PPL WikiText-2 17,52; zero-shot 40,68 %; GSM8K 5-shot 2,35 % estricto | Llama 2 Community | HuggingFace (0 descargas) |
-| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens (modelo base) | No disponible en esta información | Llama 2 Community | HuggingFace (ampliamente distribuido) |
+| Jeesup/svd-safety-l2_gsmrec_basis_w_remove50 | 6.738.415.616 | No disponible | PPL WikiText-2 17,52; zero-shot 40,68 %; GSM8K 5-shot 2,35 % estricto | Llama 2 Community | Hugging Face (0 descargas) |
+| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens (modelo base) | No disponible en esta información | Llama 2 Community | Hugging Face (ampliamente distribuido) |
 | Alternativas comprimidas de Llama 2 de 7B | No disponible | No disponible | No disponible | Variable | No disponible |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_basis_w_remove50
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_basis_w_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Política de uso aceptable de Llama 2: https://ai.meta.com/llama/use-policy/

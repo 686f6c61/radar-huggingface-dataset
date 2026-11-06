@@ -91,7 +91,7 @@ Los datos de rendimiento comparativo entre estos modelos no estan disponibles en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Mixtral-8x22B-Instruct-v0.1
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Mixtral-8x22B-Instruct-v0.1
 - Modelo base: https://huggingface.co/mistralai/Mixtral-8x22B-v0.1
 - Modelo oficial afinado por instrucciones: https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1
 - Guia de function calling de transformers: https://huggingface.co/docs/transformers/main/chat_templating#advanced-tool-use--function-calling

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mickmumpitz/Wan2.1-Pano360-LoRA` es un adaptador de tipo LoRA publicado en HuggingFace por el usuario `mickmumpitz`. Según su nombre, podría estar diseñado para ajustar el modelo de generación de vídeo Wan 2.1 hacia una tarea de panoramas 360°, pero la model card no proporciona ninguna descripción, documentación técnica ni ejemplos de uso. Se desconoce la arquitectura del modelo base, el tamaño del adaptador, los datos de entrenamiento y las capacidades específicas. El repositorio fue creado el 14 de agosto de 2026 y no registra descargas ni valoraciones.
+El modelo `mickmumpitz/Wan2.1-Pano360-LoRA` es un adaptador de tipo LoRA publicado en Hugging Face por el usuario `mickmumpitz`. Según su nombre, podría estar diseñado para ajustar el modelo de generación de vídeo Wan 2.1 hacia una tarea de panoramas 360°, pero la model card no proporciona ninguna descripción, documentación técnica ni ejemplos de uso. Se desconoce la arquitectura del modelo base, el tamaño del adaptador, los datos de entrenamiento y las capacidades específicas. El repositorio fue creado el 14 de agosto de 2026 y no registra descargas ni valoraciones.
 
 La única información disponible es la licencia MIT y la etiqueta regional `region:us`. No se dispone de pipeline, idiomas soportados ni ningún otro dato técnico. Por tanto, esta ficha se limita a reflejar la ausencia de información y a advertir de que cualquier uso del modelo requiere una validación previa por parte del desarrollador.
 
@@ -61,4 +61,4 @@ No disponible. No se conocen otros adaptadores LoRA comparables del mismo autor 
 
 ## Enlaces
 
-- [HuggingFace: mickmumpitz/Wan2.1-Pano360-LoRA](https://huggingface.co/mickmumpitz/Wan2.1-Pano360-LoRA)
+- [Hugging Face: mickmumpitz/Wan2.1-Pano360-LoRA](https://huggingface.co/mickmumpitz/Wan2.1-Pano360-LoRA)

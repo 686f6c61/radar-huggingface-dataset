@@ -113,8 +113,8 @@ Diferencias clave: frente a estas alternativas, loop-fwe-untied-grow-d8 ofrece u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d8
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d8
 - Codebase del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents": no disponible (la model card lo menciona por titulo pero no incluye enlace, y la busqueda web no devolvio resultados relevantes sobre el)
-- Archivos del repositorio: `final.pt`, `result.json`, `SHA256SUMS` (accesibles desde la pagina del modelo en HuggingFace)
+- Archivos del repositorio: `final.pt`, `result.json`, `SHA256SUMS` (accesibles desde la pagina del modelo en Hugging Face)

@@ -83,7 +83,7 @@ Comparacion con la version anterior (v0.1): mejor media (mean AP 0,84 frente a 0
 - VRAM estimada: no requiere GPU; el modelo ONNX ocupa 16 MB y la inferencia puede ejecutarse en CPU.
 - GPU recomendadas: no aplica, aunque puede ejecutarse en GPU mediante onnxruntime con proveedores CUDA o TensorRT si se dispone de una.
 - Compatibilidad con GPU de consumo: si, irrelevante en la practica porque cabe y funciona en CPU; tambien en GPU integrada o de gama baja.
-- Opciones de despliegue: onnxruntime (documentado en la model card). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un clasificador de imagenes). Existe un Space de demostracion en HuggingFace.
+- Opciones de despliegue: onnxruntime (documentado en la model card). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un clasificador de imagenes). Existe un Space de demostracion en Hugging Face.
 - Latencia y throughput: aproximadamente 10 ms por imagen en un solo hilo de CPU (dato del autor). No se proporcionan cifras de throughput agregado ni de latencia en GPU.
 
 ## Comparativa con modelos similares
@@ -92,8 +92,8 @@ No se han publicado en la informacion disponible comparaciones con otros modelos
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WhatDoWeSee-EfficientNet-B0 v0.2 | no disponible | no aplica | mean AP 0,84; F1 macro 0,67 | apache-2.0 | HuggingFace (ONNX) |
-| WhatDoWeSee-EfficientNet-B0 v0.1 | no disponible | no aplica | mean AP 0,80; F1 macro 0,67 | apache-2.0 | HuggingFace |
+| WhatDoWeSee-EfficientNet-B0 v0.2 | no disponible | no aplica | mean AP 0,84; F1 macro 0,67 | apache-2.0 | Hugging Face (ONNX) |
+| WhatDoWeSee-EfficientNet-B0 v0.1 | no disponible | no aplica | mean AP 0,80; F1 macro 0,67 | apache-2.0 | Hugging Face |
 | Alternativas (SigLIP 2 / CLIP zero-shot) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -111,6 +111,6 @@ No se han publicado en la informacion disponible comparaciones con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StephanMeijer/WhatDoWeSee-EfficientNet-B0
+- Modelo en Hugging Face: https://huggingface.co/StephanMeijer/WhatDoWeSee-EfficientNet-B0
 - Demo (Space): https://huggingface.co/spaces/StephanMeijer/WhatDoWeSee
 - No se han encontrado papers, blogs ni repos adicionales en la informacion proporcionada.

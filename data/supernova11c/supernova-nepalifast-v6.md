@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supernova-NepaliFast-V6 es un modelo publicado en HuggingFace por el usuario Supernova11c bajo el identificador `Supernova11c/Supernova-NepaliFast-V6`. En el momento de la consulta, la ficha del repositorio no incluye tarjeta de modelo, ni pipeline declarado, ni licencia, ni lista de idiomas soportados, ni documentación técnica asociada. El repositorio ocupa 0,2 GB, acumula 0 descargas y 1 like, y fue creado y actualizado con 14 segundos de diferencia (2026-09-18T14:11:41 y 2026-09-18T14:11:55), lo que sugiere una subida automatizada o un volcado de pesos sin trabajo posterior de documentación.
+Supernova-NepaliFast-V6 es un modelo publicado en Hugging Face por el usuario Supernova11c bajo el identificador `Supernova11c/Supernova-NepaliFast-V6`. En el momento de la consulta, la ficha del repositorio no incluye tarjeta de modelo, ni pipeline declarado, ni licencia, ni lista de idiomas soportados, ni documentación técnica asociada. El repositorio ocupa 0,2 GB, acumula 0 descargas y 1 like, y fue creado y actualizado con 14 segundos de diferencia (2026-09-18T14:11:41 y 2026-09-18T14:11:55), lo que sugiere una subida automatizada o un volcado de pesos sin trabajo posterior de documentación.
 
 El nombre del modelo sugiere dos cosas que no están confirmadas por los metadatos: un enfoque en la lengua nepalesa (por el segmento «Nepali») y una orientación a inferencia rápida o a una variante ligera (por el segmento «Fast»). Ninguna de las dos hipótesis puede verificarse con la información disponible, ya que no hay tarjeta de modelo, paper, blog ni repositorio de código enlazado. Tampoco se puede determinar el tamaño en parámetros, la arquitectura, la longitud de contexto ni el formato de los pesos más allá del tamaño total del repositorio.
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Supernova-NepaliFast-V6 | no disponible | no disponible | no disponible | HuggingFace, sin documentación |
+| Supernova-NepaliFast-V6 | no disponible | no disponible | no disponible | Hugging Face, sin documentación |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Supernova11c/Supernova-NepaliFast-V6
+- Modelo en Hugging Face: https://huggingface.co/Supernova11c/Supernova-NepaliFast-V6
 - Paper: no disponible
 - Blog o informe técnico: no disponible
 - Repositorio de código: no disponible

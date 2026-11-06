@@ -6,7 +6,7 @@ JcProg/PCBInspect-LeadDefect es un clasificador de imágenes binario desarrollad
 
 La arquitectura parte de YOLO26s-cls de Ultralytics, con una cabeza de clasificación afinada sobre un dataset propietario de recortes de componentes SMT. El modelo se exporta a ONNX en formato opset 17, con entrada de imagen RGB de 640x640 y salida de logits para dos clases. No se especifica el número total de parámetros ni la longitud de contexto, al tratarse de un modelo de visión que no procesa texto.
 
-El interés de este modelo radica en su integración directa en sistemas de control de calidad de fabricación electrónica. Las métricas internas reportan un top-1 y macro-F1 de 0.996 tanto en validación como en test, lo que indica un rendimiento muy alto en su dominio. Sin embargo, el repositorio de HuggingFace registra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar disponibles en el momento de la consulta.
+El interés de este modelo radica en su integración directa en sistemas de control de calidad de fabricación electrónica. Las métricas internas reportan un top-1 y macro-F1 de 0.996 tanto en validación como en test, lo que indica un rendimiento muy alto en su dominio. Sin embargo, el repositorio de Hugging Face registra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar disponibles en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks externos comparativos (como MMLU, H
 
 - No se han publicado requisitos especificos de VRAM o GPU.
 - El modelo, al estar basado en YOLO26s-cls, es un clasificador ligero y se espera que pueda ejecutarse en CPU o en GPUs de gama baja. Sin embargo, no se confirma el numero de parametros ni el peso del fichero.
-- El repositorio de HuggingFace reporta un tamano de 0.0 GB, lo que sugiere que los pesos podrian no estar subidos en el momento de la consulta. Antes de planificar el despliegue, conviene verificar la presencia real del fichero `model.onnx`.
+- El repositorio de Hugging Face reporta un tamano de 0.0 GB, lo que sugiere que los pesos podrian no estar subidos en el momento de la consulta. Antes de planificar el despliegue, conviene verificar la presencia real del fichero `model.onnx`.
 - Opciones de despliegue: ONNX Runtime (CPU o GPU) y la libreria Ultralytics si se dispone de los pesos originales.
 - No se disponen de datos de latencia ni de throughput.
 
@@ -82,13 +82,13 @@ No se han identificado modelos comparables publicos en la informacion disponible
 - La generalizacion a otros procesos de fabricacion, PCB de distintos materiales o condiciones de iluminacion diferentes no ha sido evaluada.
 - El rendimiento depende de recortes de ROI correctamente alineados y escalados a 640x640. Cambios en el preprocesado (resize, normalizacion, orden de canales) pueden degradar los resultados.
 - La salida del modelo son logits sin softmax aplicado. Es obligatorio aplicar softmax para interpretar las salidas como probabilidades.
-- El repositorio de HuggingFace registra un tamano de 0.0 GB, lo que cuestiona la disponibilidad real de los pesos. Es posible que el modelo no pueda descargarse en su estado actual.
+- El repositorio de Hugging Face registra un tamano de 0.0 GB, lo que cuestiona la disponibilidad real de los pesos. Es posible que el modelo no pueda descargarse en su estado actual.
 - Las metricas reportadas provienen del autor y no han sido verificadas de forma independiente.
 - La licencia MIT permite el uso comercial del modelo, pero el conjunto de datos de entrenamiento no es publico, lo que limita la reproducibilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [JcProg/PCBInspect-LeadDefect](https://huggingface.co/JcProg/PCBInspect-LeadDefect)
+- Modelo en Hugging Face: [JcProg/PCBInspect-LeadDefect](https://huggingface.co/JcProg/PCBInspect-LeadDefect)
 - Repositorio hermano: [PCBInspect-Region](https://huggingface.co/JcProg/PCBInspect-Region)
 - Repositorio hermano: [PCBInspect-BodyDefect](https://huggingface.co/JcProg/PCBInspect-BodyDefect)
 - Repositorio hermano: [PCBInspect-TextDefect](https://huggingface.co/JcProg/PCBInspect-TextDefect)

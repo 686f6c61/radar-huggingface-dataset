@@ -87,7 +87,7 @@ El modelo FP8 es funcionalmente idéntico al base, con la ventaja de un checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mbehr90/msmarco-MiniLM-L12-en-de-v1-fp8
+- Modelo en Hugging Face: https://huggingface.co/mbehr90/msmarco-MiniLM-L12-en-de-v1-fp8
 - Modelo base: https://huggingface.co/cross-encoder/msmarco-MiniLM-L12-en-de-v1
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor
 - Documentación de vLLM: https://docs.vllm.ai/

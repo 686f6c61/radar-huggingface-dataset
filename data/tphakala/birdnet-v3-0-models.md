@@ -90,7 +90,7 @@ La comparativa es limitada porque no se dispone de especificaciones detalladas d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tphakala/BirdNET-v3.0-Models
+- Repositorio Hugging Face: https://huggingface.co/tphakala/BirdNET-v3.0-Models
 - Proyecto BirdNET (Cornell): https://birdnet.cornell.edu/
 - Referencia académica: Kahl et al. (2021) - no se proporciona URL directa
 - Referencia académica: Lasseck (2018) - no se proporciona URL directa

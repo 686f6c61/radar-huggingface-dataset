@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/taqs_djazairi` (الطاقس الجزائري — TAQS DJAZAIRI) no es un modelo de lenguaje: es un repositorio de HuggingFace que aloja una aplicación web en Python/Flask que combina un calendario agrícola tradicional argelino con una interfaz de chat. La aplicación no publica pesos ni checkpoints propios; delega la inferencia en un proveedor externo (API de Anthropic Claude o de DeepSeek) o en una instancia local de Ollama. Por tanto, no existen parámetros, ventana de contexto ni cuantizaciones propias que evaluar.
+`swordenamine/taqs_djazairi` (الطاقس الجزائري — TAQS DJAZAIRI) no es un modelo de lenguaje: es un repositorio de Hugging Face que aloja una aplicación web en Python/Flask que combina un calendario agrícola tradicional argelino con una interfaz de chat. La aplicación no publica pesos ni checkpoints propios; delega la inferencia en un proveedor externo (API de Anthropic Claude o de DeepSeek) o en una instancia local de Ollama. Por tanto, no existen parámetros, ventana de contexto ni cuantizaciones propias que evaluar.
 
 El valor del proyecto está en su base de conocimiento: 12 meses con descripciones, refranes y poesía popular; las «Layali» (noches blancas, negras y de la anciana) con sus fechas e indicios; calendarios de siembra de trigo, olivo, habas, tomate y vid; más de 30 indicadores naturales de predicción meteorológica y referencias a estrellas (Pléyades, Orión, Canopo, Escorpio) en la tradición argelina. Todo ello se sirve desde diccionarios Python embebidos en el archivo `taqs_djazairi.py`, lo que permite funcionamiento sin conexión para el contenido estático.
 
@@ -18,7 +18,7 @@ Es relevante ahora como plantilla de asistente vertical especializado en patrimo
 | Longitud de contexto | No disponible (depende del proveedor configurado: Anthropic, DeepSeek u Ollama; el repositorio no la declara) |
 | Tipos de cuantizacion | No disponible. En la ruta Ollama, la cuantización la determina el modelo local elegido (por ejemplo, `mistral`), no este repositorio |
 | Idiomas soportados | Árabe, dariya argelina e inglés (contenido de la KB e interfaz). El chat depende del backend configurado |
-| Licencia | MIT, según la model card y el badge del README. Los metadatos de HuggingFace no declaran licencia |
+| Licencia | MIT, según la model card y el badge del README. Los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | No aplica: el repositorio contiene código Python, no tensores en safetensors, GGUF ni ningún otro formato |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se han identificado modelos comparables en la información disponible; los re
 - El contenido agrícola es traditional y no validado agronómicamente: no debe usarse como única fuente para decisiones de cultivo, fitosanitarias o de riego.
 - La calidad en dariya no está evaluada y esta lengua carece de ortografía estandarizada, lo que dificulta la evaluación y favorece respuestas inconsistentes.
 - Cobertura limitada al contenido volcado en los diccionarios `KB`; fuera de ese dominio el asistente responde como un LLM genérico.
-- Licencia: el README declara MIT, pero los metadatos de HuggingFace no la declaran, y el uso de APIs de terceros queda sujeto a sus propios términos y a sus costes.
+- Licencia: el README declara MIT, pero los metadatos de Hugging Face no la declaran, y el uso de APIs de terceros queda sujeto a sus propios términos y a sus costes.
 - Seguridad: las claves de API se guardan en un archivo `.env`; el servidor de desarrollo de Flask escucha en `localhost:5001` sin autenticación ni limitación de peticiones, por lo que no debe exponerse directamente a Internet.
 - Mantenimiento: proyecto de un único autor, con 0 descargas y 0 likes, y sin Releases ni tests documentados.
 - Incoherencia en los metadatos: la fecha de creación registrada (2026-10-17) es posterior a la de última actualización (2026-03-09), lo que resta fiabilidad a las marcas temporales del repositorio.
@@ -88,7 +88,7 @@ No se han identificado modelos comparables en la información disponible; los re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/taqs_djazairi
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/taqs_djazairi
 - Repositorio GitHub citado en la model card: https://github.com/swordenkisk/taqs-djazairi
 - Ollama (backend local mencionado): no se proporciona enlace en la información disponible
 - Documentación de la API de Anthropic: no se proporciona enlace en la información disponible

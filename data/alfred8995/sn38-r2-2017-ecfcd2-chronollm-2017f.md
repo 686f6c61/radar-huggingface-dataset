@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r2-2017-ecfcd2-chronollm-2017f` es un checkpoint de 1.858.535.658 parámetros (aproximadamente 1,86 mil millones) publicado en HuggingFace por el usuario `alfred8995`. El repositorio, de 7,4 GB, contiene pesos en formato `safetensors` y lleva la etiqueta de modelo `ChronoGPT`. Se trata de un modelo con acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo.
+`alfred8995/sn38-r2-2017-ecfcd2-chronollm-2017f` es un checkpoint de 1.858.535.658 parámetros (aproximadamente 1,86 mil millones) publicado en Hugging Face por el usuario `alfred8995`. El repositorio, de 7,4 GB, contiene pesos en formato `safetensors` y lleva la etiqueta de modelo `ChronoGPT`. Se trata de un modelo con acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo.
 
 La información pública disponible es mínima. No se han publicado ni la ficha del modelo, ni la arquitectura, ni la longitud de contexto, ni los idiomas soportados, ni los datos de entrenamiento. El pipeline no está declarado y el repositorio no registra descargas ni valoraciones en el momento de redactar esta ficha, por lo que no existe validación por parte de la comunidad.
 
@@ -21,7 +21,7 @@ Por el rango de parámetros, el modelo se sitúa en la categoría de modelos peq
 | Licencia | `other` (licencia no estándar; condiciones concretas no especificadas en la información disponible) |
 | Formato de pesos | `safetensors` |
 
-Datos adicionales del repositorio: tamaño de 7,4 GB, acceso restringido (gated), 0 descargas y 0 likes, creado el 2026-10-21 y actualizado el 2026-10-21. El pipeline de HuggingFace no está declarado.
+Datos adicionales del repositorio: tamaño de 7,4 GB, acceso restringido (gated), 0 descargas y 0 likes, creado el 2026-10-21 y actualizado el 2026-10-21. El pipeline de Hugging Face no está declarado.
 
 ## Arquitectura y entrenamiento
 
@@ -86,7 +86,7 @@ Las cifras de los modelos comparativos corresponden a sus configuraciones public
 - Riesgo de alucinación: desconocido y, en principio, alto en modelos de este tamaño sin ajuste por instrucciones verificable; sin plantilla de chat confirmada, el riesgo aumenta.
 - Idiomas no declarados: no se puede garantizar calidad en castellano ni en ningún otro idioma; es probable que el soporte multilingüe sea limitado.
 - Licencia `other`: no se especifican los términos. No se debe asumir permiso para uso comercial, redistribución ni fine-tuning hasta revisar el texto exacto de la licencia.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace; conviene revisar qué se acepta antes de integrarlo en un pipeline automatizado.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face; conviene revisar qué se acepta antes de integrarlo en un pipeline automatizado.
 - Sin validación comunitaria: 0 descargas y 0 likes. No hay evidencia de que el checkpoint sea funcional, esté completo o haya superado una fase de entrenamiento estable. Un identificador con `epoch 2017` es compatible con un checkpoint intermedio, no necesariamente con un modelo final.
 - Riesgo de cadena de suministro: los pesos provienen de un autor sin histórico verificable. Se recomienda cargar los `safetensors` con `torch.load` deshabilitado para `pickle` (los ficheros `safetensors` ya lo evitan), auditar el repositorio y ejecutar la primera inferencia en un entorno aislado sin red.
 - Sesgos: desconocidos. No hay información sobre la composición del corpus, por lo que no se puede evaluar el sesgo demográfico, lingüístico o ideológico.
@@ -95,7 +95,7 @@ Las cifras de los modelos comparativos corresponden a sus configuraciones public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/sn38-r2-2017-ecfcd2-chronollm-2017f
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/sn38-r2-2017-ecfcd2-chronollm-2017f
 - Perfil del autor: https://huggingface.co/alfred8995
 - Paper, blog, repositorio de código o demo: no disponibles.
 - La búsqueda web realizada no ha devuelto enlaces relevantes al modelo; los resultados obtenidos no guardan relación con el objeto de esta ficha y se descartan.

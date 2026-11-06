@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`jaeikkim/fr3-cube-full10k-diffusion-policy` es un modelo de política visuomotora basado en diffusion policy para manipulación robótica, desarrollado por jaeikkim y publicado en HuggingFace bajo el ecosistema LeRobot. El modelo está diseñado para controlar un brazo robótico Franka FR3 en tareas de manipulación de cubos, entrenado mediante aprendizaje por imitación con 10.000 demostraciones generadas sintéticamente con MimicGen y el simulador Isaac Lab.
+`jaeikkim/fr3-cube-full10k-diffusion-policy` es un modelo de política visuomotora basado en diffusion policy para manipulación robótica, desarrollado por jaeikkim y publicado en Hugging Face bajo el ecosistema LeRobot. El modelo está diseñado para controlar un brazo robótico Franka FR3 en tareas de manipulación de cubos, entrenado mediante aprendizaje por imitación con 10.000 demostraciones generadas sintéticamente con MimicGen y el simulador Isaac Lab.
 
-La relevancia de este modelo radica en que aplica el paradigma de diffusion policy —introducido en RSS 2023 por el grupo de Stanford— a un escenario de simulación con datos sintéticos a escala, lo que permite evaluar la viabilidad de entrenar políticas robustas sin necesidad de recopilación manual de demostraciones. El repositorio ocupa 18,4 GB en formato safetensors y su acceso está restringido (gated), por lo que requiere aceptar condiciones de uso en HuggingFace antes de poder descargarlo.
+La relevancia de este modelo radica en que aplica el paradigma de diffusion policy —introducido en RSS 2023 por el grupo de Stanford— a un escenario de simulación con datos sintéticos a escala, lo que permite evaluar la viabilidad de entrenar políticas robustas sin necesidad de recopilación manual de demostraciones. El repositorio ocupa 18,4 GB en formato safetensors y su acceso está restringido (gated), por lo que requiere aceptar condiciones de uso en Hugging Face antes de poder descargarlo.
 
 Al tratarse de un modelo de robótica, no es un LLM: no genera texto ni código, sino secuencias de acciones (posiciones articulares o poses del efector final) condicionadas a observaciones visuales y de estado. Su pipeline declarado es `robotics` y su librería de referencia es `lerobot`.
 
@@ -28,14 +28,14 @@ Al tratarse de un modelo de robótica, no es un LLM: no genera texto ni código,
 
 La arquitectura sigue el esquema de diffusion policy propuesto por Cheng et al. (RSS 2023): un modelo generativo que aprende a denoizar secuencias de acciones a partir de ruido gaussiano, condicionado por observaciones visuales (imágenes RGB) y, posiblemente, por el estado del robot (posiciones articulares). El proceso de inferencia consiste en una cadena de denoising iterativa que produce un horizonte de acciones que luego se ejecuta de forma reactiva con re-planificación.
 
-El entrenamiento se realizó con el framework LeRobot de HuggingFace, utilizando un conjunto de 10.000 demostraciones del dataset `jaeikkim/fr3-cube-mimicgen-10k`, generadas sintéticamente con MimicGen sobre el simulador Isaac Lab. Esto implica que los datos provienen de un pipeline de generación automática de demostraciones, no de teleoperación humana. No se dispone de información sobre el número de parámetros, la composición exacta del dataset (variaciones de pose, texturas, etc.) ni si se aplicaron técnicas de aumento de datos adicionales.
+El entrenamiento se realizó con el framework LeRobot de Hugging Face, utilizando un conjunto de 10.000 demostraciones del dataset `jaeikkim/fr3-cube-mimicgen-10k`, generadas sintéticamente con MimicGen sobre el simulador Isaac Lab. Esto implica que los datos provienen de un pipeline de generación automática de demostraciones, no de teleoperación humana. No se dispone de información sobre el número de parámetros, la composición exacta del dataset (variaciones de pose, texturas, etc.) ni si se aplicaron técnicas de aumento de datos adicionales.
 
 ## Capacidades
 
 - Control visuomotor: genera secuencias de acciones articulares para el brazo Franka FR3 a partir de observaciones RGB y de estado.
 - Aprendizaje por imitación: reproduce comportamientos demostrados en el dataset de entrenamiento, incluyendo tareas de agarre, levantamiento y reubicación de cubos.
 - Re-planificación reactiva: al ser una diffusion policy, puede re-ejecutar el proceso de denoising en cada paso de control, lo que proporciona cierta robustez frente a perturbaciones.
-- Integración con LeRobot: compatible con el ecosistema de HuggingFace para robótica, incluyendo evaluación y despliegue en simuladores y robots reales.
+- Integración con LeRobot: compatible con el ecosistema de Hugging Face para robótica, incluyendo evaluación y despliegue en simuladores y robots reales.
 - Entrenamiento con datos sintéticos: demuestra la viabilidad de usar demostraciones generadas por MimicGen en lugar de teleoperación manual.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ La comparativa se limita a modelos del mismo autor y al repositorio de referenci
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace. Esto puede limitar su uso en entornos corporativos con políticas de revisión de licencias.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face. Esto puede limitar su uso en entornos corporativos con políticas de revisión de licencias.
 - Licencia no especificada: al no declararse licencia, el uso comercial conlleva incertidumbre legal. Se recomienda contactar al autor antes de cualquier uso productivo.
 - Datos sintéticos: el entrenamiento se realizó íntegramente con demostraciones generadas por MimicGen en Isaac Lab. Esto puede introducir un sesgo de simulación que degrade el rendimiento en el robot real (sim-to-real gap).
 - Sin benchmarks publicados: no hay métricas de éxito ni comparativas, por lo que no se puede verificar la calidad del modelo antes de descargarlo.
@@ -81,7 +81,7 @@ La comparativa se limita a modelos del mismo autor y al repositorio de referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaeikkim/fr3-cube-full10k-diffusion-policy
+- Modelo en Hugging Face: https://huggingface.co/jaeikkim/fr3-cube-full10k-diffusion-policy
 - Dataset asociado (fr3-cube-mimicgen-10k): https://huggingface.co/datasets/jaeikkim/fr3-cube-mimicgen-10k
 - Modelo relacionado (fr3-cube-rgb-native320): https://huggingface.co/jaeikkim/fr3-cube-rgb-native320
 - Repositorio de diffusion policy (real-stanford): https://github.com/real-stanford/diffusion_policy

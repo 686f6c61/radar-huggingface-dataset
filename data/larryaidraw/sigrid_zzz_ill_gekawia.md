@@ -61,7 +61,7 @@ No hay información suficiente para una comparativa con otros LoRA del mismo per
 - **Idiomas**: no es un modelo de lenguaje, por lo que no tiene capacidades de texto.
 
 ## Enlaces
-- [HuggingFace - LarryAIDraw/Sigrid_zzz_ill_gekawia](https://huggingface.co/LarryAIDraw/Sigrid_zzz_ill_gekawia)
+- [Hugging Face - LarryAIDraw/Sigrid_zzz_ill_gekawia](https://huggingface.co/LarryAIDraw/Sigrid_zzz_ill_gekawia)
 - [Civitai - Sigrid de L'Azur (Zenless Zone Zero)](https://civitai.com/models/2807096/sigrid-de-lazur-zenless-zone-zero)
 - [Civitai (red) - Sigrid de L Azur | ZZZ - V1](https://civitai.red/models/2756937/sigrid-de-l-azur-or-zzz)
 - [PixAI - Sigrid de L'Azur](https://pixai.art/en/model/2025019600640349359)

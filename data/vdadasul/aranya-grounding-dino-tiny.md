@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aranya-grounding-dino-tiny es un modelo publicado en HuggingFace por el usuario VdAdasul bajo licencia MIT. Por su denominación, se trata de una variante o adaptación del modelo Grounding DINO en su versión "tiny", orientada a tareas de detección de objetos guiada por texto (open-set object detection), es decir, localizar en una imagen los objetos descritos mediante una consulta en lenguaje natural. El repositorio no incluye pipeline declarado ni información sobre idiomas soportados.
+Aranya-grounding-dino-tiny es un modelo publicado en Hugging Face por el usuario VdAdasul bajo licencia MIT. Por su denominación, se trata de una variante o adaptación del modelo Grounding DINO en su versión "tiny", orientada a tareas de detección de objetos guiada por texto (open-set object detection), es decir, localizar en una imagen los objetos descritos mediante una consulta en lenguaje natural. El repositorio no incluye pipeline declarado ni información sobre idiomas soportados.
 
 La model card publicada es prácticamente vacía: únicamente contiene la declaración de licencia MIT, sin descripción de arquitectura, datos de entrenamiento, capacidades ni resultados de evaluación. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma fecha (2026-11-04), lo que sugiere una publicación reciente sin validación comunitaria.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aranya-grounding-dino-tiny | no disponible | no disponible | no disponible | MIT | HuggingFace |
-| Grounding DINO (original, IDEA-Research) | no disponible en esta ficha | no disponible | benchmarks publicados por el autor original | Apache 2.0 (según el repositorio original) | HuggingFace y GitHub |
+| Aranya-grounding-dino-tiny | no disponible | no disponible | no disponible | MIT | Hugging Face |
+| Grounding DINO (original, IDEA-Research) | no disponible en esta ficha | no disponible | benchmarks publicados por el autor original | Apache 2.0 (según el repositorio original) | Hugging Face y GitHub |
 | Grounding DINO 1.5 (IDEA-Research) | no disponible en esta ficha | no disponible | benchmarks publicados por el autor original | no disponible | API y repositorio |
 
 No se dispone de datos suficientes para una comparación cuantitativa con alternativas. La comparación se limita a la licencia y la disponibilidad.
@@ -81,6 +81,6 @@ No se dispone de datos suficientes para una comparación cuantitativa con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VdAdasul/aranya-grounding-dino-tiny
+- Repositorio en Hugging Face: https://huggingface.co/VdAdasul/aranya-grounding-dino-tiny
 - Grounding DINO (repositorio original, referencia): https://github.com/IDEA-Research/GroundingDINO
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

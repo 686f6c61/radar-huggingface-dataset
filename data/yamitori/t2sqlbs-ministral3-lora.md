@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `YamiTori/t2sqlbs-ministral3-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario YamiTori, que ajusta el modelo base `mistralai/Ministral-3-8B-Instruct-2512` para la tarea de text-to-SQL, es decir, la generación de consultas SQL a partir de preguntas en lenguaje natural. El adaptador se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, con un tamaño de repositorio de 0,1 GB, lo que refleja la naturaleza ligera de la adaptación PEFT en comparación con un fine-tuning completo.
+El modelo `YamiTori/t2sqlbs-ministral3-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario YamiTori, que ajusta el modelo base `mistralai/Ministral-3-8B-Instruct-2512` para la tarea de text-to-SQL, es decir, la generación de consultas SQL a partir de preguntas en lenguaje natural. El adaptador se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, con un tamaño de repositorio de 0,1 GB, lo que refleja la naturaleza ligera de la adaptación PEFT en comparación con un fine-tuning completo.
 
 La relevancia de este modelo radica en su enfoque eficiente: en lugar de reentrenar los 8.000 millones de parámetros del modelo base, se aplica una adaptación de bajo rango que permite especializar el modelo en una tarea concreta con un coste computacional y de almacenamiento reducido. Esto lo hace atractivo para entornos de producción donde se requiere personalización sobre un modelo instructivo moderno sin incurrir en los gastos de un entrenamiento completo. Sin embargo, al ser un adaptador, su uso requiere cargar el modelo base junto con los pesos LoRA, por lo que las capacidades finales dependen en gran medida del comportamiento del modelo original.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace y la model card del autor. No se proporcionan detalles sobre el dataset de entrenamiento, la licencia exacta ni los idiomas soportados, por lo que estos aspectos quedan marcados como no disponibles.
+La ficha se basa exclusivamente en la información publicada en Hugging Face y la model card del autor. No se proporcionan detalles sobre el dataset de entrenamiento, la licencia exacta ni los idiomas soportados, por lo que estos aspectos quedan marcados como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: depende de la cuantización del modelo base. Con cuantización de 4 bits, se requieren aproximadamente 6-8 GB de VRAM; con 8 bits, alrededor de 10-12 GB; y en precisión completa (fp16), unos 16 GB.
 - GPUs recomendadas: tarjetas con al menos 8 GB de VRAM para cuantización 4-bit (por ejemplo, RTX 3060, RTX 4070, A10); para fp16 se recomiendan GPUs de 16 GB o más (RTX 4090, A100, H100).
 - En consumer GPU: sí, es viable con cuantización 4-bit en GPUs como RTX 3060 o superiores.
-- Opciones de despliegue: se puede usar con `transformers` pipeline, así como con `vLLM`, `llama.cpp` o `Ollama` si se convierte el modelo base a GGUF y se fusiona el adaptador. También es compatible con TGI (Text Generation Inference) de HuggingFace.
+- Opciones de despliegue: se puede usar con `transformers` pipeline, así como con `vLLM`, `llama.cpp` o `Ollama` si se convierte el modelo base a GGUF y se fusiona el adaptador. También es compatible con TGI (Text Generation Inference) de Hugging Face.
 - Latencia y throughput: no disponibles; dependen del hardware y de la configuración de cuantización.
 
 ## Comparativa con modelos similares
@@ -63,9 +63,9 @@ No se dispone de datos de rendimiento del adaptador, por lo que una comparativa 
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YamiTori/t2sqlbs-ministral3-lora | Ministral-3-8B-Instruct-2512 | 8B (base) | no disponible | no disponible | HuggingFace |
-| SQLCoder (defog) | CodeLlama-7B | 7B | 16K | CC BY-SA 4.0 | HuggingFace |
-| sqlcoder2 | CodeLlama-7B | 7B | 16K | CC BY-SA 4.0 | HuggingFace |
+| YamiTori/t2sqlbs-ministral3-lora | Ministral-3-8B-Instruct-2512 | 8B (base) | no disponible | no disponible | Hugging Face |
+| SQLCoder (defog) | CodeLlama-7B | 7B | 16K | CC BY-SA 4.0 | Hugging Face |
+| sqlcoder2 | CodeLlama-7B | 7B | 16K | CC BY-SA 4.0 | Hugging Face |
 | gpt-3.5-turbo (text-to-SQL) | propietario | - | 16K | propietaria | API |
 
 La comparación se limita a aspectos generales; no se han publicado benchmarks específicos para el adaptador de YamiTori.
@@ -81,6 +81,6 @@ La comparación se limita a aspectos generales; no se han publicado benchmarks e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YamiTori/t2sqlbs-ministral3-lora
+- Modelo en Hugging Face: https://huggingface.co/YamiTori/t2sqlbs-ministral3-lora
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

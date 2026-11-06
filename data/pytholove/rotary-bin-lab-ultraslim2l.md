@@ -73,7 +73,7 @@ Datos adicionales aportados por el autor: el kernel `edge_mix.onnx` sobre 135.00
 
 | Modelo | Parámetros | Contexto / dominio | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UltraSlim-2L | 1,79 M | Grafo de ~135.000 contactos | 275 ms/paso GPU; 92,3 % paridad con profesor | MIT | HuggingFace |
+| UltraSlim-2L | 1,79 M | Grafo de ~135.000 contactos | 275 ms/paso GPU; 92,3 % paridad con profesor | MIT | Hugging Face |
 | HiMGN R4 (profesor) | 6,04 M | Mismo dominio | Referencia de paridad (92,3 % respecto a él) | No disponible | No disponible públicamente en la información |
 | Baseline (no especificado) | No disponible | Mismo dominio | RMSE de un paso 49,3 % superior a UltraSlim-2L | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone de información sobre otros surrogates GNN comparables (por ejempl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pytholove/rotary-bin-lab-ultraslim2l
+- Hugging Face: https://huggingface.co/pytholove/rotary-bin-lab-ultraslim2l
 - Informe de auditoría (referenciado en la model card): `ULTRASLIM2L_ONNX_CLAMPED_ROLLOUT_AUDIT.md` dentro del repositorio
 - Especificación de destilación: `spec.json` dentro del repositorio
 - Script de rollout: `rollout_ultraslim2l_onnx.py` dentro del repositorio

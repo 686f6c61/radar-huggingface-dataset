@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cyber78645/adadad es un repositorio de modelo alojado en HuggingFace por el usuario cyber78645, publicado el 25 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (unicamente el bloque de metadatos con la licencia apache-2.0), no declara pipeline de inferencia, no especifica idiomas soportados y acumula cero descargas y cero "likes".
+cyber78645/adadad es un repositorio de modelo alojado en Hugging Face por el usuario cyber78645, publicado el 25 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (unicamente el bloque de metadatos con la licencia apache-2.0), no declara pipeline de inferencia, no especifica idiomas soportados y acumula cero descargas y cero "likes".
 
 No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni formato de pesos. Tampoco se han encontrado referencias externas al modelo: los resultados de busqueda web disponibles corresponden a comparativas de modelos frontera, directorios de creadores y articulos de prensa sin relacion alguna con este repositorio.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin informacion tecnica verifica
 
 Unicamente cabe senalar usos no tecnicos del propio repositorio:
 
-- Auditoria de repositorios vacios en HuggingFace: sirve como ejemplo de publicacion sin model card, sin pipeline y sin pesos declarados, util para estudiar patrones de repositorios incompletos en el Hub.
+- Auditoria de repositorios vacios en Hugging Face: sirve como ejemplo de publicacion sin model card, sin pipeline y sin pesos declarados, util para estudiar patrones de repositorios incompletos en el Hub.
 - Verificacion de licencias: el tag apache-2.0 permite comprobar como se propaga la licencia en el frontmatter incluso cuando no hay contenido tecnico.
 
 ## Benchmarks y rendimiento
@@ -79,5 +79,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyber78645/adadad
+- Hugging Face: https://huggingface.co/cyber78645/adadad
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni documentacion adicional asociados a este modelo en la busqueda web realizada. Los resultados devueltos (comparativas de modelos frontera, directorios de creadores, articulos de prensa) no guardan relacion con cyber78645/adadad.

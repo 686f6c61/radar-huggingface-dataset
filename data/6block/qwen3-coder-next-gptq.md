@@ -83,8 +83,8 @@ La comparativa directa con el modelo de 30B-A3B (de la familia Qwen3-Coder) mues
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/6block/Qwen3-Coder-Next-GPTQ
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-Coder-Next
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/6block/Qwen3-Coder-Next-GPTQ
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Technical report del modelo base (arXiv): https://arxiv.org/abs/2603.00729
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Documentación de Unsloth para Qwen3-Coder-Next: https://unsloth.ai/docs/models/qwen3-coder-next

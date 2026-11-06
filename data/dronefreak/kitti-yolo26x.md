@@ -117,8 +117,8 @@ Comparativa con alternativas de la misma categoria (detectores de una etapa para
 
 | Modelo | Parametros | mAP@50 (KITTI) | mAP@50-95 (KITTI) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kitti-yolo26x (este modelo) | 59,0 M | 43,73 | 25,96 | AGPL-3.0 | HuggingFace: dronefreak/kitti-yolo26x |
-| YOLO26s | No disponible | 41,79 | 26,54 | AGPL-3.0 (licencia de la familia Ultralytics) | HuggingFace: dronefreak/lisa-yolo26x y otros checkpoints de DetectionBench |
+| kitti-yolo26x (este modelo) | 59,0 M | 43,73 | 25,96 | AGPL-3.0 | Hugging Face: dronefreak/kitti-yolo26x |
+| YOLO26s | No disponible | 41,79 | 26,54 | AGPL-3.0 (licencia de la familia Ultralytics) | Hugging Face: dronefreak/lisa-yolo26x y otros checkpoints de DetectionBench |
 | YOLO11x | No disponible | 39,18 | 23,60 | AGPL-3.0 | Checkpoints equivalentes dentro de DetectionBench |
 | YOLOv8s | No disponible | 41,99 | 25,20 | AGPL-3.0 | Checkpoints equivalentes dentro de DetectionBench |
 | YOLO26n | No disponible | 42,54 | 25,43 | AGPL-3.0 | Checkpoints equivalentes dentro de DetectionBench |
@@ -146,13 +146,13 @@ Observaciones de la comparativa:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/kitti-yolo26x
-- Dataset en HuggingFace: https://huggingface.co/datasets/dronefreak/KITTI
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/kitti-yolo26x
+- Dataset en Hugging Face: https://huggingface.co/datasets/dronefreak/KITTI
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
-- Modelo base en HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Modelo base en Hugging Face: https://huggingface.co/Ultralytics/YOLO26
 - Documentacion de Ultralytics YOLO26: https://docs.ultralytics.com/models/yolo26
 - Repositorio de inicio rapido de YOLO26: https://github.com/ultralytics/yolo26
-- Checkpoint hermano en HuggingFace (lisa-yolo26x): https://huggingface.co/dronefreak/lisa-yolo26x
+- Checkpoint hermano en Hugging Face (lisa-yolo26x): https://huggingface.co/dronefreak/lisa-yolo26x
 - Articulos referenciados en las etiquetas del modelo (contenido no descrito en la informacion disponible):
   - https://arxiv.org/abs/2606.03748
   - https://arxiv.org/abs/2410.17725

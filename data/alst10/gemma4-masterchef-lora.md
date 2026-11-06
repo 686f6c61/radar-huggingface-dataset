@@ -23,9 +23,9 @@ La relevancia de este modelo radica en demostrar un flujo de fine-tuning eficien
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en la tecnica LoRA (Low-Rank Adaptation), que congela los pesos del modelo base e introduce matrices de bajo rango en las capas de atencion y MLP. El modelo base es `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, una version cuantizada en 4 bits de Gemma 4 E2B preparada por Unsloth para fine-tuning eficiente. Segun el blog de Lushbinary, Gemma 4 E2B tiene 31.000 millones de parametros, aunque este dato no esta confirmado en la informacion oficial de HuggingFace.
+El adaptador se basa en la tecnica LoRA (Low-Rank Adaptation), que congela los pesos del modelo base e introduce matrices de bajo rango en las capas de atencion y MLP. El modelo base es `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, una version cuantizada en 4 bits de Gemma 4 E2B preparada por Unsloth para fine-tuning eficiente. Segun el blog de Lushbinary, Gemma 4 E2B tiene 31.000 millones de parametros, aunque este dato no esta confirmado en la informacion oficial de Hugging Face.
 
-El entrenamiento se realizo mediante SFT (supervised fine-tuning) usando la libreria TRL de HuggingFace, con PEFT 0.20.0. El dataset asociado, `alst10/gemma4-multimodal-recipe-dataset`, es multimodal e incluye imagenes de alimentos, recetas y recomendaciones dieteticas, lo que sugiere que el adaptador podria estar disenado para trabajar con entradas de imagen y texto. No se proporcionan hiperparametros de entrenamiento, numero de pasos, ni detalles sobre el proceso de preprocesado.
+El entrenamiento se realizo mediante SFT (supervised fine-tuning) usando la libreria TRL de Hugging Face, con PEFT 0.20.0. El dataset asociado, `alst10/gemma4-multimodal-recipe-dataset`, es multimodal e incluye imagenes de alimentos, recetas y recomendaciones dieteticas, lo que sugiere que el adaptador podria estar disenado para trabajar con entradas de imagen y texto. No se proporcionan hiperparametros de entrenamiento, numero de pasos, ni detalles sobre el proceso de preprocesado.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - El adaptador LoRA en si es ligero (0,2 GB), pero requiere cargar el modelo base Gemma 4 E2B cuantizado en 4 bits, que ocupa aproximadamente 16-20 GB en VRAM (estimacion para un modelo de ~31B con cuantizacion 4-bit).
 - GPU recomendadas: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB) o RTX 6000 Ada. En una RTX 4090 podria caber con cuantizacion 4-bit y secuencias cortas, pero el margen es ajustado.
 - No se recomienda su uso en GPUs consumer de menos de 16 GB VRAM, salvo que se aplique una cuantizacion adicional o se reduzca la longitud de contexto.
-- Opciones de despliegue: vLLM (aunque el soporte de LoRA para Gemma 4 aun no esta confirmado, segun el issue #39246 del repositorio de vLLM), llama.cpp con soporte de adaptadores, o HuggingFace Transformers con PEFT. Tambien se puede usar Ollama si se convierte el adaptador a formato GGUF.
+- Opciones de despliegue: vLLM (aunque el soporte de LoRA para Gemma 4 aun no esta confirmado, segun el issue #39246 del repositorio de vLLM), llama.cpp con soporte de adaptadores, o Hugging Face Transformers con PEFT. Tambien se puede usar Ollama si se convierte el adaptador a formato GGUF.
 - Latencia y throughput: no disponibles. Dependen del hardware y del modelo base.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa es limitada porque no hay datos publicos de rendimiento del adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alst10/gemma4-masterchef-lora
+- Modelo en Hugging Face: https://huggingface.co/alst10/gemma4-masterchef-lora
 - Dataset asociado: https://huggingface.co/datasets/alst10/gemma4-multimodal-recipe-dataset
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Pagina oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/

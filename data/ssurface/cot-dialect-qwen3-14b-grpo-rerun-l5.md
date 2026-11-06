@@ -88,7 +88,7 @@ El autor advierte que este adaptador es una ablacion y puede ser peor que el mod
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-14b-grpo-rerun-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-14b-grpo-rerun-l5
 - Modelo base Qwen/Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Coleccion Qwen3: https://huggingface.co/collections/Qwen/qwen3
 - Technical Report de Qwen3: https://arxiv.org/html/2505.09388v1

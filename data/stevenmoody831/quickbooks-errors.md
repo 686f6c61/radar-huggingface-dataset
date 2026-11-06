@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stevenmoody831/quickbooks-errors` es un repositorio publicado en HuggingFace por el usuario stevenmoody831 bajo licencia Apache 2.0. En el momento de la consulta no dispone de model card: el README se reduce al bloque de metadatos de licencia, sin descripcion, sin ejemplos de uso y sin referencia a ningun paper o informe tecnico. El repositorio no declara pipeline de HuggingFace, no declara idiomas soportados y no incluye informacion sobre arquitectura, numero de parametros ni longitud de contexto.
+`stevenmoody831/quickbooks-errors` es un repositorio publicado en Hugging Face por el usuario stevenmoody831 bajo licencia Apache 2.0. En el momento de la consulta no dispone de model card: el README se reduce al bloque de metadatos de licencia, sin descripcion, sin ejemplos de uso y sin referencia a ningun paper o informe tecnico. El repositorio no declara pipeline de Hugging Face, no declara idiomas soportados y no incluye informacion sobre arquitectura, numero de parametros ni longitud de contexto.
 
 Los unicos datos objetivos disponibles son los metadatos del Hub: 0 descargas, 1 like, fecha de creacion y de ultima actualizacion identicas (2026-10-28T23:28:14Z), lo que indica que el repositorio no ha recibido revisiones desde su publicacion. El nombre del repositorio sugiere un contenido orientado a errores de QuickBooks (el software de contabilidad de Intuit), en linea con el perfil del autor, que mantiene un repositorio de contabilidad en GitHub y se presenta publicamente como profesional de soporte tecnico contable. No obstante, esa orientacion tematica es una inferencia a partir del nombre, no un dato confirmado por la documentacion.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| stevenmoody831/quickbooks-errors | no disponible | no disponible | Apache 2.0 | Hub de HuggingFace, 0 descargas | model card vacia |
+| stevenmoody831/quickbooks-errors | no disponible | no disponible | Apache 2.0 | Hub de Hugging Face, 0 descargas | model card vacia |
 | Alternativas de dominio contable o financiero | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa rigurosa: sin parametros, contexto ni resultados de evaluacion, cualquier comparacion con modelos de la misma categoria seria especulativa. Se indica por tanto "no disponible" en lugar de inventar equivalencias.
@@ -84,7 +84,7 @@ No es posible establecer una comparativa rigurosa: sin parametros, contexto ni r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stevenmoody831/quickbooks-errors
+- Repositorio en Hugging Face: https://huggingface.co/stevenmoody831/quickbooks-errors
 - Repositorio de contabilidad del autor en GitHub: https://github.com/stevenmoody831/Accounting
 - Issues del repositorio en GitHub: https://github.com/stevenmoody831/Accounting/issues/
 - Perfil del autor en X: https://x.com/stevenmoody831

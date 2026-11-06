@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GeoFormer es un modelo experimental de tipo "foundation model" neuromórfico desarrollado por Shrikant Bhosale bajo la organización SetMD, disponible en HuggingFace y en GitHub. Se aleja del paradigma clásico del transformer euclidiano: propone un flujo de información que "talla autopistas geodésicas" sobre una métrica dinámica, combinando pesos sinápticos ternarios congelados de 1.58 bits (estilo BitNet b1.58) con una retícula de conductancia métrica de plásticoidad rápida inspirada en los sistemas de aprendizaje complementarios del cerebro.
+GeoFormer es un modelo experimental de tipo "foundation model" neuromórfico desarrollado por Shrikant Bhosale bajo la organización SetMD, disponible en Hugging Face y en GitHub. Se aleja del paradigma clásico del transformer euclidiano: propone un flujo de información que "talla autopistas geodésicas" sobre una métrica dinámica, combinando pesos sinápticos ternarios congelados de 1.58 bits (estilo BitNet b1.58) con una retícula de conductancia métrica de plásticoidad rápida inspirada en los sistemas de aprendizaje complementarios del cerebro.
 
 El problema que aborda es el razonamiento multi-salto relacional y la inferencia de bajo consumo energético: el modelo se evalúa sobre tareas de razonamiento transitivo en grafos (con datasets como Cora y WordNet) y se presenta con un enfoque de compilación a barras cruzadas de memristores (ReRAM 1T1R) para computación analógica ultrabajo consumo.
 
-Es relevante como propuesta de investigación de arquitecturas alternativas a los transformers convencionales, aunque conviene subrayar que es un modelo de escala muy reducida (249.665 parámetros, unos 48,76 KB empaquetados), sin entrenamiento a gran escala documentado y sin benchmarks estándar del sector (MMLU, HumanEval, etc.). No es un modelo de lenguaje de propósito general: su pipeline en HuggingFace es `feature-extraction`.
+Es relevante como propuesta de investigación de arquitecturas alternativas a los transformers convencionales, aunque conviene subrayar que es un modelo de escala muy reducida (249.665 parámetros, unos 48,76 KB empaquetados), sin entrenamiento a gran escala documentado y sin benchmarks estándar del sector (MMLU, HumanEval, etc.). No es un modelo de lenguaje de propósito general: su pipeline en Hugging Face es `feature-extraction`.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No existen alternativas directamente comparables con esta arquitectura hibrida n
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SetMD/geoformer | Hibrido neuromorfico/grafo, 1.58-bit | 249.665 | no disponible | AGPL-3.0 | Pesos en HuggingFace, codigo en GitHub |
+| SetMD/geoformer | Hibrido neuromorfico/grafo, 1.58-bit | 249.665 | no disponible | AGPL-3.0 | Pesos en Hugging Face, codigo en GitHub |
 | GAT / GCN (clasicos) | Redes neuronales de grafos | Tipicamente <1M | N/A (grafos) | MIT/Apache | Implementaciones abiertas (PyTorch Geometric, DGL) |
 | BitNet b1.58 (referencia conceptual) | LLM transformer ternario | Escala variable | Variable | Investigacion (Microsoft) | Articulos y codigo de referencia, pesos completos no publicos |
 | KGE clasicos (TransE, ComplEx) | Embeddings de conocimiento | Millones de embeddings | N/A | Variada | Librerias abiertas (PyKEEN, LibKGE) |
@@ -98,7 +98,7 @@ GeoFormer se diferencia de todos ellos por combinar pesos ternarios congelados c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SetMD/geoformer
+- Hugging Face: https://huggingface.co/SetMD/geoformer
 - Repositorio GitHub oficial: https://github.com/bhosaleone/geoformer
 - Repositorio hermano (Continuous TAC): https://github.com/bhosaleone/TAC
 - Nota tecnica en Zenodo: https://doi.org/10.5281/zenodo.23730305

@@ -77,6 +77,6 @@ No disponible. No se proporciona información sobre modelos comparables en la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jiangshuan6/CortexJEPA
-- Perfil del autor en HuggingFace: https://huggingface.co/jiangshuan6
+- Repositorio Hugging Face: https://huggingface.co/jiangshuan6/CortexJEPA
+- Perfil del autor en Hugging Face: https://huggingface.co/jiangshuan6
 - No se han encontrado papers, blogs o repositorios adicionales específicos de CortexJEPA en la información disponible.

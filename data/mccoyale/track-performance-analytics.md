@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mccoyale/track-performance-analytics` es un repositorio publicado en HuggingFace por el usuario mccoyale bajo licencia Apache 2.0. En el momento de la consulta el repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura ni pesos, y su model card se limita al bloque de metadatos de licencia (`license: apache-2.0`) sin texto descriptivo adicional. Cuenta con 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-22T21:12:31.000Z), lo que sugiere una publicacion inicial sin desarrollo posterior.
+`mccoyale/track-performance-analytics` es un repositorio publicado en Hugging Face por el usuario mccoyale bajo licencia Apache 2.0. En el momento de la consulta el repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura ni pesos, y su model card se limita al bloque de metadatos de licencia (`license: apache-2.0`) sin texto descriptivo adicional. Cuenta con 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-22T21:12:31.000Z), lo que sugiere una publicacion inicial sin desarrollo posterior.
 
 Por el nombre del repositorio, el proyecto parece orientado al analisis de rendimiento deportivo en atletismo (track and field), no a un modelo de lenguaje generativo. En la busqueda web aparece un articulo con DOI 10.1109/embc58623.2025.11253323 que describe "una metodologia de analisis y clasificacion del rendimiento de atletas de atletismo, basada en un modelo de IA entrenado con datos historicos de carreras reales recogidos durante varios anos". No se puede confirmar que ese articulo este vinculado a este repositorio, por lo que la relacion se cita solo como referencia tematica.
 
@@ -67,7 +67,7 @@ No disponible. Sin parametros, contexto, licencia efectiva de uso ni resultados 
 
 - Repositorio sin contenido tecnico: la model card unicamente contiene el bloque de licencia, sin descripcion, pesos ni instrucciones de uso.
 - Sin pesos publicados: no hay evidencia de que existan archivos de modelo (safetensors, GGUF, PyTorch bin u otros) descargables.
-- Sin pipeline declarado: HuggingFace no registra tarea de inferencia asociada al repositorio.
+- Sin pipeline declarado: Hugging Face no registra tarea de inferencia asociada al repositorio.
 - Trazabilidad limitada: 0 descargas y 0 likes, con fecha de creacion igual a la de ultima actualizacion, lo que indica ausencia de mantenimiento.
 - Riesgo de alucinacion y sesgos: no evaluable, al no existir un modelo documentado sobre el que medirlos.
 - Licencia: se declara Apache 2.0, permisiva para uso comercial, pero al no haber artefactos publicados la licencia no habilita ningun uso practico concreto. Conviene verificar los terminos reales antes de reutilizar cualquier contenido.
@@ -76,5 +76,5 @@ No disponible. Sin parametros, contexto, licencia efectiva de uso ni resultados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mccoyale/track-performance-analytics
+- Repositorio en Hugging Face: https://huggingface.co/mccoyale/track-performance-analytics
 - Articulo con posible relacion tematica (rendimiento en atletismo con IA): https://doi.org/10.1109/embc58623.2025.11253323

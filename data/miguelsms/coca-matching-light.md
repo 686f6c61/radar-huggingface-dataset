@@ -75,7 +75,7 @@ Ambos son experimentales y no aptos para uso productivo.
 
 ## Enlaces
 
-- [Repositorio HuggingFace: MiguelSms/coca-matching-light](https://huggingface.co/MiguelSms/coca-matching-light)
+- [Repositorio Hugging Face: MiguelSms/coca-matching-light](https://huggingface.co/MiguelSms/coca-matching-light)
 - [Repositorio similar: Fmuellernew/matching](https://huggingface.co/Fmuellernew/matching)
 - [Implementación de referencia de CoCa en PyTorch (lucidrains)](https://github.com/lucidrains/CoCa-pytorch)
-- [Perfil del autor en HuggingFace](https://huggingface.co/MiguelSms/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/MiguelSms/models)

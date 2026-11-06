@@ -105,12 +105,12 @@ Nota: los datos de contexto de los modelos de terceros provienen de sus fichas p
 - No hay benchmarks estándar publicados, por lo que no se puede comparar su calidad de forma objetiva con alternativas.
 - Modelo con 0 descargas y 0 likes en el momento de la consulta, sin validación por parte de la comunidad.
 - No se documentan sesgos específicos más allá del sesgo de estilo (voz épica persa imitada en inglés) y del sesgo idiomático hacia el inglés.
-- La fecha de creación registrada en HuggingFace es 2026-09-16 y la de actualización 2026-09-16.
+- La fecha de creación registrada en Hugging Face es 2026-09-16 y la de actualización 2026-09-16.
 - El verso de entrenamiento es de nueva escritura en el estilo de Ferdowsi; no es texto original del Shahnameh (completado en 1010 d. C.), dato relevante para cualquier uso filológico o de atribución.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaeedAngiz1/shahnameh-smollm2-360m
+- Modelo en Hugging Face: https://huggingface.co/SaeedAngiz1/shahnameh-smollm2-360m
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
 - Repositorio del proyecto con método, mediciones, gráficas y registro de cuatro fallos documentados: https://github.com/SaeedAngiz1/shahnameh-slm
 - Resultados de la búsqueda web: no se encontraron enlaces relevantes al modelo. Los resultados devueltos corresponden a páginas generales de YouTube (youtube.com, Google Play y la entrada de Wikipedia), sin relación con el modelo ni con el proyecto.

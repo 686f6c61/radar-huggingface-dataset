@@ -6,7 +6,7 @@ Qwen-Image-2.1-PE-T2I es un modelo de reescritura de prompts (prompt engineering
 
 El modelo no genera imagenes por si mismo: su funcion es normalizar y enriquecer la intencion del usuario, resolviendo dos problemas habituales en sistemas text-to-image en produccion, como son la baja calidad de los prompts cortos y la eleccion suboptima de resolucion por parte del usuario. Con 9.409.813.744 parametros reales en safetensors (aproximadamente 9,4B) y un repositorio de 18,8 GB, el modelo se distribuye unicamente en pesos bfloat16, sin cuantizaciones oficiales publicadas.
 
-La relevancia del lanzamiento radica en su formato de salida estructurado (JSON con los campos `rewritten_prompt` y `wh_ratio`) y en su modo de razonamiento explicito, que lo hacen integrable como paso determinista dentro de cadenas automaticas de generacion de imagenes. Se publico en HuggingFace con fecha indicada de 2026-09-20 y, en el momento de la consulta, acumula 12 likes y 0 descargas, es decir, es un modelo recien liberado y sin validacion externa documentada.
+La relevancia del lanzamiento radica en su formato de salida estructurado (JSON con los campos `rewritten_prompt` y `wh_ratio`) y en su modo de razonamiento explicito, que lo hacen integrable como paso determinista dentro de cadenas automaticas de generacion de imagenes. Se publico en Hugging Face con fecha indicada de 2026-09-20 y, en el momento de la consulta, acumula 12 likes y 0 descargas, es decir, es un modelo recien liberado y sin validacion externa documentada.
 
 ## Especificaciones tecnicas
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Funcion | Contexto | Licencia | Disponibilidad de datos |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-PE-T2I | 9,4B (Qwen3.5-VL ajustado) | Reescritura de prompt + ratio, salida JSON | no disponible | qwen-research | safetensors bf16 en HuggingFace |
-| Qwen-Image-2.1 | 7B en el componente de generacion visual (32 capas DiT single-stream) | Generacion y edicion de imagen, RGBA nativo, hasta 10 imagenes de referencia | no disponible | no disponible en la informacion proporcionada | HuggingFace, ModelScope y demo |
+| Qwen-Image-2.1-PE-T2I | 9,4B (Qwen3.5-VL ajustado) | Reescritura de prompt + ratio, salida JSON | no disponible | qwen-research | safetensors bf16 en Hugging Face |
+| Qwen-Image-2.1 | 7B en el componente de generacion visual (32 capas DiT single-stream) | Generacion y edicion de imagen, RGBA nativo, hasta 10 imagenes de referencia | no disponible | no disponible en la informacion proporcionada | Hugging Face, ModelScope y demo |
 | Base Qwen3.5-VL 9B | 9B | Modelo vision-lenguaje de proposito general | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otros reescritores de prompt de proposito especifico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,11 +94,11 @@ No se dispone de resultados de benchmarks comparativos entre estas opciones en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
+- Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
 - Modelo generador asociado: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Servidor de Discord: https://discord.gg/CV4E9rpNSD
 - Busqueda web: no se han encontrado enlaces relevantes al modelo en los resultados de la busqueda proporcionada (los resultados devueltos correspondian a dominios sin relacion con el modelo).

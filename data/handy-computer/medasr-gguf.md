@@ -27,7 +27,7 @@ Su relevancia práctica está en el tamaño: las cuantizaciones van de 79 MB (Q4
 | Streaming | No soportado |
 | Traducción | No soportada |
 | Detección de idioma | No soportada |
-| Descargas en HuggingFace | 1.450 |
+| Descargas en Hugging Face | 1.450 |
 | Tamaño del repositorio | 5,2 GB |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ El modelo base fue preentrenado por Google sobre un corpus de audio médico, seg
 
 ## Benchmarks y rendimiento
 
-WER medido sobre la partición completa LibriSpeech test-clean (2.620 enunciados), con decodificación CTC voraz y sin LM externo. La referencia F32 con HuggingFace transformers sobre MPS de Mac es del 17,88 %.
+WER medido sobre la partición completa LibriSpeech test-clean (2.620 enunciados), con decodificación CTC voraz y sin LM externo. La referencia F32 con Hugging Face transformers sobre MPS de Mac es del 17,88 %.
 
 | Cuantización | Tamaño | WER (LibriSpeech test-clean) |
 |---|---:|---:|
@@ -123,7 +123,7 @@ No se dispone de datos de otros modelos comparables (por ejemplo variantes de Wh
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/handy-computer/medasr-gguf
+- Modelo en Hugging Face: https://huggingface.co/handy-computer/medasr-gguf
 - Modelo base google/medasr: https://huggingface.co/google/medasr
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Documentación de medasr en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/medasr.md

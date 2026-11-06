@@ -90,6 +90,6 @@ No se dispone de datos comparativos con otros modelos de la misma categoría en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ulkaa/Qwen3.8-27B-AWQ-INT4
+- Repositorio Hugging Face: https://huggingface.co/ulkaa/Qwen3.8-27B-AWQ-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantización llm-compressor: https://github.com/vllm-project/llm-compressor

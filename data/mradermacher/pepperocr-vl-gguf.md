@@ -93,8 +93,8 @@ La información proporcionada no incluye datos verificados de modelos alternativ
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PepperOCR-VL-GGUF (mradermacher) | 4.205.751.296 | no disponible | AGPL-3.0 | GGUF en HuggingFace |
-| sionic-ai/PepperOCR-VL (base) | no disponible | no disponible | AGPL-3.0 | HuggingFace |
+| PepperOCR-VL-GGUF (mradermacher) | 4.205.751.296 | no disponible | AGPL-3.0 | GGUF en Hugging Face |
+| sionic-ai/PepperOCR-VL (base) | no disponible | no disponible | AGPL-3.0 | Hugging Face |
 | GOT-OCR2.0 | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Qwen2.5-VL-3B | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 

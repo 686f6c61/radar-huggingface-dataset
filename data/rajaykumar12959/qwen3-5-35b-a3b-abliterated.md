@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-35B-A3B Abliterated es una variante sin censura del modelo Qwen/Qwen3.5-35B-A3B, publicada por el usuario rajaykumar12959 en HuggingFace. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 34.660.610.688 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, construido sobre la arquitectura `Qwen3_5MoeForCausalLM`. El modelo base original es un modelo vision-lenguaje, pero esta versión contiene únicamente el modelo de lenguaje: el codificador visual y la cabeza de predicción multi-token (MTP) han sido eliminados, por lo que acepta exclusivamente entrada de texto.
+Qwen3.5-35B-A3B Abliterated es una variante sin censura del modelo Qwen/Qwen3.5-35B-A3B, publicada por el usuario rajaykumar12959 en Hugging Face. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 34.660.610.688 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, construido sobre la arquitectura `Qwen3_5MoeForCausalLM`. El modelo base original es un modelo vision-lenguaje, pero esta versión contiene únicamente el modelo de lenguaje: el codificador visual y la cabeza de predicción multi-token (MTP) han sido eliminados, por lo que acepta exclusivamente entrada de texto.
 
 La modificación principal consiste en una abliteración a nivel de pesos: se extrae una dirección de rechazo mediante diferencia de medias entre activaciones de prompts dañinos y benignos, y se ortogonaliza de forma permanente en todas las matrices de pesos que escriben en el flujo residual. Esto incluye `embed_tokens`, `self_attn.o_proj` en las 10 capas de atención completa, `linear_attn.out_proj` en las 30 capas de atención lineal Gated DeltaNet, y en las 40 capas los `mlp.experts.*.down_proj` (256 expertos enrutados) y `mlp.shared_expert.down_proj`. No hay hooks en tiempo de ejecución ni LoRA: la edición está integrada directamente en el checkpoint.
 
@@ -135,7 +135,7 @@ Cada asignatura tiene solo 35 preguntas, por lo que una pregunta equivale a 2,9 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajaykumar12959/qwen3.5-35b-a3b-abliterated
+- Modelo en Hugging Face: https://huggingface.co/rajaykumar12959/qwen3.5-35b-a3b-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Versión abliterada previa del mismo autor: https://huggingface.co/rajaykumar12959/qwen3.8-27b-abliterated
 - Dataset AdvBench: https://huggingface.co/datasets/walledai/AdvBench

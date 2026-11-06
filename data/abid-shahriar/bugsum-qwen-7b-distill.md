@@ -66,6 +66,6 @@ No se dispone de comparativas publicas con otros modelos de summarizacion de bug
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abid-Shahriar/BugSum-Qwen-7B-Distill
+- Repositorio Hugging Face: https://huggingface.co/Abid-Shahriar/BugSum-Qwen-7B-Distill
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio oficial de Qwen-7B (referencia): https://github.com/ArtificialZeng/Qwen-7B

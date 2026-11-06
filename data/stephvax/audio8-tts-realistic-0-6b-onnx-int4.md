@@ -83,7 +83,7 @@ No se dispone de información sobre otros modelos TTS comparables (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stephvax/audio8-tts-realistic-0.6b-onnx-int4
+- Repositorio Hugging Face: https://huggingface.co/stephvax/audio8-tts-realistic-0.6b-onnx-int4
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Exportación oficial de referencia (Preview ONNX INT4): https://huggingface.co/Edge0/Audio8-TTS-Preview-0.6B-ONNX-INT4
 - Runtime de referencia `arktts_runtime`: https://github.com/Audio8-AI/Audio8_TTS/tree/main/onnx_runtime

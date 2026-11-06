@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SetFit-mpnet-sentiment es un clasificador de texto binario para análisis de sentimiento, publicado por el usuario AllanC23 en HuggingFace. No es un modelo generativo: se trata de un pipeline SetFit compuesto por un sentence transformer basado en MPNet (~109 millones de parámetros) afinado con aprendizaje contrastivo y una cabeza de clasificación de regresión logística entrenada sobre las representaciones resultantes. El modelo resuelve tareas de clasificación de sentimiento (positivo/negativo) en 2 clases con una longitud máxima de secuencia de 512 tokens.
+SetFit-mpnet-sentiment es un clasificador de texto binario para análisis de sentimiento, publicado por el usuario AllanC23 en Hugging Face. No es un modelo generativo: se trata de un pipeline SetFit compuesto por un sentence transformer basado en MPNet (~109 millones de parámetros) afinado con aprendizaje contrastivo y una cabeza de clasificación de regresión logística entrenada sobre las representaciones resultantes. El modelo resuelve tareas de clasificación de sentimiento (positivo/negativo) en 2 clases con una longitud máxima de secuencia de 512 tokens.
 
 Su relevancia radica en el enfoque SetFit, descrito en el paper "Efficient Few-Shot Learning Without Prompts": permite obtener clasificadores competitivos con muy pocas etiquetas por clase, sin necesidad de ingeniería de prompts ni de modelos generativos grandes. Esto lo hace atractivo para escenarios con datos etiquetados escasos y requisitos de latencia baja.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - En fp16 el peso se reduce a ~0,22 GB; en int8 a ~0,11 GB, aunque no se documentan cuantizaciones oficiales para este repositorio.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; también funciona en CPU, ya que el modelo de referencia se entrenó con PyTorch CPU.
 - Cabe sin problema en GPU de consumo: GTX 1650, RTX 3060, RTX 4090 u otras similares, e incluso en equipos sin GPU dedicada.
-- Opciones de despliegue: librería `setfit`, `sentence-transformers`, Text Embeddings Inference (según el tag del repositorio) y endpoints gestionados de HuggingFace.
+- Opciones de despliegue: librería `setfit`, `sentence-transformers`, Text Embeddings Inference (según el tag del repositorio) y endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponibles. Al tratarse de un encoder de 109 M de parámetros, la latencia esperada es baja, pero no se aportan mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ Comparado con un encoder afinado de extremo a extremo, SetFit destaca por requer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AllanC23/setfit-mpnet-sentiment
+- Modelo en Hugging Face: https://huggingface.co/AllanC23/setfit-mpnet-sentiment
 - Repositorio de SetFit: https://github.com/huggingface/setfit
 - Paper "Efficient Few-Shot Learning Without Prompts": https://arxiv.org/abs/2209.11055
 - Blogpost de SetFit: https://huggingface.co/blog/setfit

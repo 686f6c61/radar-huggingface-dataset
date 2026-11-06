@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IShowSiy es un modelo publicado en HuggingFace por el usuario `youtubersiyam` bajo el identificador `youtubersiyam/IShowSiy`. Se trata de un repositorio con un unico tag de metadatos (`region:us`) y sin pipeline de inferencia declarado, lo que impide clasificarlo con certeza como modelo de lenguaje, vision o multimodal. El repositorio no incluye informacion sobre arquitectura, tamano, contexto ni proceso de entrenamiento en los metadatos disponibles.
+IShowSiy es un modelo publicado en Hugging Face por el usuario `youtubersiyam` bajo el identificador `youtubersiyam/IShowSiy`. Se trata de un repositorio con un unico tag de metadatos (`region:us`) y sin pipeline de inferencia declarado, lo que impide clasificarlo con certeza como modelo de lenguaje, vision o multimodal. El repositorio no incluye informacion sobre arquitectura, tamano, contexto ni proceso de entrenamiento en los metadatos disponibles.
 
 El modelo no cuenta con descargas ni documentacion tecnica asociada en el momento de redactar esta ficha, y su licencia e idiomas soportados no estan declarados. Esto lo situa en la categoria de publicaciones sin validacion comunitaria, por lo que cualquier evaluacion de capacidades debe considerarse provisional hasta que el autor publique una model card detallada o resultados reproducibles.
 
@@ -38,10 +38,10 @@ No consta ninguna innovacion tecnica declarada (atencion lineal, decodificacion 
 ## Casos de uso
 
 - Evaluacion exploratoria de repositorios: inspeccionar el contenido del repositorio para determinar si contiene pesos utilizables, dado que no hay pipeline declarado.
-- Docencia sobre publicacion de modelos: usar este repositorio como ejemplo de publicacion sin model card para discutir buenas practicas de documentacion en HuggingFace.
+- Docencia sobre publicacion de modelos: usar este repositorio como ejemplo de publicacion sin model card para discutir buenas practicas de documentacion en Hugging Face.
 - Auditoria de procedencia: analizar los tags y metadatos para ilustrar los riesgos de repositorios sin licencia ni idiomas declarados.
 - Pruebas de carga de artefactos: verificar si el repositorio contiene ficheros de pesos descargables y en que formato, antes de integrarlo en cualquier pipeline.
-- Investigacion sobre sesgos de publicacion: estudiar patrones de repositorios con cero descargas y sin documentacion en el ecosistema HuggingFace.
+- Investigacion sobre sesgos de publicacion: estudiar patrones de repositorios con cero descargas y sin documentacion en el ecosistema Hugging Face.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, RAG, agentes ni ninguna aplicacion con requisitos de calidad, ya que no hay evidencia de capacidades ni licencia que lo permita.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/youtubersiyam/IShowSiy
+- Repositorio en Hugging Face: https://huggingface.co/youtubersiyam/IShowSiy
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

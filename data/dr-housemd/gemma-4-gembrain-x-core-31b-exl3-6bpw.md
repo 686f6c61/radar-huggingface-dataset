@@ -80,6 +80,6 @@ La comparación directa no es posible sin benchmarks. El modelo base Gemma-4-31B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-6bpw
+- Hugging Face: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-6bpw
 - Modelos base (selección): https://huggingface.co/google/gemma-4-31B-it, https://huggingface.co/BirdToast/Gemma-4-31B-glimmer-rp-v0.1, https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v1.0
 - Herramienta de merge: https://github.com/arcee-ai/mergekit

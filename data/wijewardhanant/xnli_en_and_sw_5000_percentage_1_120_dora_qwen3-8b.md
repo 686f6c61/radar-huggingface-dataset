@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador DoRA (Weight-Decomposed Low-Rank Adaptation) entrenado sobre el checkpoint preentrenado Qwen3-8B-Base. El nombre del repositorio, `xnli_en_and_sw_5000_percentage_1_120_DoRA_Qwen3-8b`, sugiere que el ajuste se ha realizado sobre la tarea XNLI (inferencia de lenguaje natural entre pares de frases, con las etiquetas implicacion, neutral y contradiccion) en ingles y suajili, con un rango de adaptacion de 120, un subconjunto de 5000 ejemplos y algun tipo de muestreo o particion identificada como "percentage_1". Ninguno de esos extremos esta documentado en la model card, que es la plantilla por defecto de HuggingFace sin rellenar.
+Este repositorio contiene un adaptador DoRA (Weight-Decomposed Low-Rank Adaptation) entrenado sobre el checkpoint preentrenado Qwen3-8B-Base. El nombre del repositorio, `xnli_en_and_sw_5000_percentage_1_120_DoRA_Qwen3-8b`, sugiere que el ajuste se ha realizado sobre la tarea XNLI (inferencia de lenguaje natural entre pares de frases, con las etiquetas implicacion, neutral y contradiccion) en ingles y suajili, con un rango de adaptacion de 120, un subconjunto de 5000 ejemplos y algun tipo de muestreo o particion identificada como "percentage_1". Ninguno de esos extremos esta documentado en la model card, que es la plantilla por defecto de Hugging Face sin rellenar.
 
 El modelo no resuelve un problema de generacion abierta: es un adaptador de tarea sobre un modelo base denso de 8,2 mil millones de parametros, pensado para producir una de tres etiquetas de relacion logica entre una premisa y una hipotesis. Su relevancia practica es doble: por un lado, explora el ajuste eficiente en parametros (PEFT) con DoRA de rango alto sobre un modelo grande; por otro, aborda el suajili, un idioma de bajos recursos con escasa cobertura en datasets de NLI.
 
@@ -100,7 +100,7 @@ La comparacion directa con alternativas de la misma categoria (adaptadores NLI s
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_DoRA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_DoRA_Qwen3-8b
 - Modelo base Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Paper de LoRA (referencia del marco PEFT): https://arxiv.org/abs/2106.09685
 - Paper de DoRA, Weight-Decomposed Low-Rank Adaptation: https://arxiv.org/abs/2402.09353

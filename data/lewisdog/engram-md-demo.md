@@ -76,7 +76,7 @@ No disponible. No existen modelos comparables en el ecosistema que implementen e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lewisdog/engram-md-demo
+- Repositorio Hugging Face: https://huggingface.co/lewisdog/engram-md-demo
 - Repositorio aoa-engram (mencionado en la model card): https://github.com/trunksio
 - Modelo base Qwen3-0.6B-Base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Datos de futbol: https://www.football-data.co.uk/

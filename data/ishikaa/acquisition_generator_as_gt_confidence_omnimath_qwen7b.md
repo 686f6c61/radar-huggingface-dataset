@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, publicado por el usuario ishikaa en HuggingFace, es un modelo de generación de texto con 7.615.616.512 parámetros en formato safetensors. Los metadatos indican que pertenece a la familia Qwen2 y que está etiquetado como conversacional, pero su model card es una plantilla genérica generada automáticamente, sin información sobre el problema que resuelve, el proceso de entrenamiento ni sus capacidades. El nombre del modelo sugiere una posible relación con el dataset Omni-MATH y la generación de adquisiciones con confianza, pero no hay documentación que lo confirme. Su relevancia actual es limitada debido a la ausencia de especificaciones técnicas, benchmarks y datos de licencia.
+Este modelo, publicado por el usuario ishikaa en Hugging Face, es un modelo de generación de texto con 7.615.616.512 parámetros en formato safetensors. Los metadatos indican que pertenece a la familia Qwen2 y que está etiquetado como conversacional, pero su model card es una plantilla genérica generada automáticamente, sin información sobre el problema que resuelve, el proceso de entrenamiento ni sus capacidades. El nombre del modelo sugiere una posible relación con el dataset Omni-MATH y la generación de adquisiciones con confianza, pero no hay documentación que lo confirme. Su relevancia actual es limitada debido a la ausencia de especificaciones técnicas, benchmarks y datos de licencia.
 
 ## Especificaciones técnicas
 
@@ -24,7 +24,7 @@ No se ha proporcionado información sobre la arquitectura del modelo, los datos 
 ## Capacidades
 
 - No se dispone de información documentada sobre las capacidades del modelo.
-- El pipeline de HuggingFace es text-generation, lo que indica que el modelo genera texto.
+- El pipeline de Hugging Face es text-generation, lo que indica que el modelo genera texto.
 - Los metadatos incluyen la etiqueta "conversational", lo que sugiere que podría usarse en tareas de diálogo, pero no hay más detalles.
 - No se han documentado capacidades de tool calling, function calling, agentes, visión, audio, razonamiento matemático, etc.
 - El nombre del modelo incluye "omnimath", lo que podría indicar una orientación a matemáticas, pero no está confirmado.
@@ -68,5 +68,5 @@ No se dispone de información suficiente para realizar una comparativa. Los meta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_GT_confidence_omnimath_qwen7b
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_GT_confidence_omnimath_qwen7b
 - No se han encontrado otros enlaces (papers, blogs, repos, demos).

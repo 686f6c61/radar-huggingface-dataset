@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
 | SadikAI nano multilingual | ~8M | no disponible | en, hi, hinglish | MIT | PyTorch (`weights.pt`) |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 tokens | en (principalmente) | Apache 2.0 | safetensors, GGUF |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 tokens | en (principalmente) | Apache 2.0 | safetensors, GGUF |
 | TinyLlama-1.1B | 1,1B | 2.048 tokens | en (principalmente) | Apache 2.0 | safetensors, GGUF |
 | Qwen2.5-0.5B | 0,5B | 32.768 tokens | multilingue amplio | Apache 2.0 | safetensors, GGUF |
 
@@ -83,5 +83,5 @@ La comparativa se ofrece como referencia de categoria (modelos pequenos); no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SadikNawazAI/sadik-ai-nano-multilingual
+- Modelo en Hugging Face: https://huggingface.co/SadikNawazAI/sadik-ai-nano-multilingual
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

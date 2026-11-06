@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Q5K-IQ3XXS-GGUF es una cuantización GGUF personalizada del modelo base Qwen3.6-35B-A3B de Qwen, publicada por el usuario thinkspread en HuggingFace. No es un modelo nuevo, sino un archivo de pesos optimizado para decodificación de un solo flujo en Macs con Apple Silicon de 24 GB de memoria unificada. Su propuesta de valor es concreta: decodifica aproximadamente un 19 % más rápido que el archivo UD-Q3_K_M de unsloth del que procede, con solo un 0,6 % de penalización en perplejidad.
+Qwen3.6-35B-A3B-Q5K-IQ3XXS-GGUF es una cuantización GGUF personalizada del modelo base Qwen3.6-35B-A3B de Qwen, publicada por el usuario thinkspread en Hugging Face. No es un modelo nuevo, sino un archivo de pesos optimizado para decodificación de un solo flujo en Macs con Apple Silicon de 24 GB de memoria unificada. Su propuesta de valor es concreta: decodifica aproximadamente un 19 % más rápido que el archivo UD-Q3_K_M de unsloth del que procede, con solo un 0,6 % de penalización en perplejidad.
 
 El modelo base es un MoE (mixture of experts) de 34.660.610.688 parámetros totales de los que solo unos 3B se activan por token (según la nomenclatura A3B), lo que permite ejecutar un modelo de 35B en hardware de consumo. La cuantización aplica una mezcla selectiva: Q5_K/Q6_K para los tensores densos (atención, experto compartido, embeddings) y IQ3_XXS/IQ4_XS para los expertos enrutados, reduciendo la lectura por token de 2,46 GB a 1,90 GB.
 

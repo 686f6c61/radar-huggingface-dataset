@@ -6,7 +6,7 @@ Holo4-35B-A3B-GGUF es la versión cuantizada en formato GGUF (Q4_K_M) de Holo4-3
 
 El modelo no se limita a la generación de texto: su pipeline es `image-text-to-text` y está diseñado para operar software a través de cualquier interfaz disponible (GUIs mediante capturas de pantalla, código, MCP y APIs). Se usa habitualmente junto al harness `hai-agents`, que envía capturas y resultados de herramientas al modelo y ejecuta las acciones solicitadas (clics, escritura, código, llamadas a herramientas).
 
-Su relevancia actual radica en que ofrece pesos abiertos para agentes de computer use con una ventana de contexto declarada de 262.144 tokens en la configuración, un tamaño que cabe en hardware de gama alta de consumo en su cuantización Q4_K_M y un coste por tarea bajo según las evaluaciones publicadas por el autor. El repositorio acumula 1.813 descargas y 11 "likes" en HuggingFace.
+Su relevancia actual radica en que ofrece pesos abiertos para agentes de computer use con una ventana de contexto declarada de 262.144 tokens en la configuración, un tamaño que cabe en hardware de gama alta de consumo en su cuantización Q4_K_M y un coste por tarea bajo según las evaluaciones publicadas por el autor. El repositorio acumula 1.813 descargas y 11 "likes" en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -72,17 +72,17 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 - VRAM estimada: en torno a 22-24 GB para pesos y overhead de runtime; la caché KV crece de forma apreciable con la ventana de 262.144 tokens, por lo que contextos muy largos exigen memoria adicional o cuantización de la caché.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para contexto largo y concurrencia; RTX 4090 (24 GB) y RTX 3090 (24 GB) son suficientes para cargar el modelo en Q4_K_M con contextos moderados.
 - Consumer GPU: sí, en tarjetas de 24 GB o más (RTX 3090, 4090, 5090) y en equipos Apple Silicon con memoria unificada de 32 GB o superior.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python), servidores compatibles con GGUF; el tag `endpoints_compatible` indica compatibilidad con endpoints de HuggingFace. Para la ruta multimodal es necesario que el runtime cargue el proyector de visión correspondiente; la presencia de un fichero `mmproj` en este repositorio es no disponible en la información consultada.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python), servidores compatibles con GGUF; el tag `endpoints_compatible` indica compatibilidad con endpoints de Hugging Face. Para la ruta multimodal es necesario que el runtime cargue el proyector de visión correspondiente; la presencia de un fichero `mmproj` en este repositorio es no disponible en la información consultada.
 - Latencia y throughput: no disponibles de forma explícita. Al tener solo 3B parámetros activos, el coste de cómputo por token es bajo en comparación con un modelo denso de 34B, aunque el ancho de banda de memoria sigue viniendo determinado por los 34,7B parámetros totales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Holo4-35B-A3B (esta ficha, GGUF Q4_K_M) | 34,7B totales / 3B activos | 262.144 tokens | OSWorld 2.0: 30,9 % a 0,61 USD/tarea; AutomationBench: 34,5 % a 0,02 USD/tarea | Apache 2.0 | HuggingFace (BF16, FP8, NVFP4, GGUF Q4) y H Models API |
-| Holo4-27B (mismo autor, denso) | no disponible (27B nominal) | 256K segun blog | OSWorld: 85,2 % a 0,08 USD/tarea; OSWorld 2.0: 61,7 %; AutomationBench: 45,4 % | Apache 2.0 | HuggingFace (BF16, FP8, NVFP4, GGUF Q4) y H Models API |
-| Qwen3.6-35B-A3B (modelo base) | 35B-A3B | no disponible | El autor indica que Holo4 mejora "significativamente" sobre su base Qwen, sin cifras concretas en la información disponible | no disponible | HuggingFace |
-| Holotron4-30B-A3B (mismo autor, arquitectura NemotronH Nano Omni) | 30B-A3B nominal | no disponible | no disponible | no disponible | HuggingFace (BF16, FP8) |
+| Holo4-35B-A3B (esta ficha, GGUF Q4_K_M) | 34,7B totales / 3B activos | 262.144 tokens | OSWorld 2.0: 30,9 % a 0,61 USD/tarea; AutomationBench: 34,5 % a 0,02 USD/tarea | Apache 2.0 | Hugging Face (BF16, FP8, NVFP4, GGUF Q4) y H Models API |
+| Holo4-27B (mismo autor, denso) | no disponible (27B nominal) | 256K segun blog | OSWorld: 85,2 % a 0,08 USD/tarea; OSWorld 2.0: 61,7 %; AutomationBench: 45,4 % | Apache 2.0 | Hugging Face (BF16, FP8, NVFP4, GGUF Q4) y H Models API |
+| Qwen3.6-35B-A3B (modelo base) | 35B-A3B | no disponible | El autor indica que Holo4 mejora "significativamente" sobre su base Qwen, sin cifras concretas en la información disponible | no disponible | Hugging Face |
+| Holotron4-30B-A3B (mismo autor, arquitectura NemotronH Nano Omni) | 30B-A3B nominal | no disponible | no disponible | no disponible | Hugging Face (BF16, FP8) |
 
 No se dispone de datos de contexto ni de benchmarks de alternativas externas de computer use en la información proporcionada, por lo que la comparación se limita a la propia familia Holo4 y a su modelo base.
 
@@ -100,7 +100,7 @@ No se dispone de datos de contexto ni de benchmarks de alternativas externas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hcompany/Holo4-35B-A3B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Hcompany/Holo4-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/Hcompany/Holo4-35B-A3B
 - Versión FP8 del base: https://huggingface.co/Hcompany/Holo4-35B-A3B-FP8
 - Versión NVFP4 del base: https://huggingface.co/Hcompany/Holo4-35B-A3B-NVFP4
@@ -111,7 +111,7 @@ No se dispone de datos de contexto ni de benchmarks de alternativas externas de 
 - Holotron4-30B-A3B: https://huggingface.co/Hcompany/Holotron4-30B-A3B
 - Holotron4-30B-A3B FP8: https://huggingface.co/Hcompany/Holotron4-30B-A3B-FP8
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Blog en HuggingFace: https://huggingface.co/blog/Hcompany/holo4
+- Blog en Hugging Face: https://huggingface.co/blog/Hcompany/holo4
 - Anuncio en hcompany.ai: https://hcompany.ai/newsroom/holo4
 - Dataset de trayectorias: https://huggingface.co/datasets/Hcompany/trajectories
 - Harness de agentes: https://github.com/hcompai/hai-agents-python

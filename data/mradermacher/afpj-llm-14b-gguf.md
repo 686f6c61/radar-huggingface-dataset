@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| AFPJ-LLM-14B-GGUF | ~14,8B | no disponible | no disponible | GGUF | HuggingFace (69 descargas) |
+| AFPJ-LLM-14B-GGUF | ~14,8B | no disponible | no disponible | GGUF | Hugging Face (69 descargas) |
 | Modelos densos de ~14B en inglés (categoría general) | ~13-15B | variable | variable | safetensors/GGUF | amplia |
 | Alternativas concretas | no disponible | no disponible | no disponible | no disponible | no disponible |
 

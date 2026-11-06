@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Teutonic-I Reliquary SFT (este) | 8,95B | 64k | Hibrida (24 gated-DeltaNet + 8 softmax) | Apache-2.0 | HuggingFace, 23 descargas |
-| Qwen/Qwen3.5-9B-Base | ~9B | No disponible en la informacion | Transformer estandar | No disponible en la informacion | HuggingFace |
-| dendriteholdings/Teutonic-I | No disponible en la informacion | No disponible en la informacion | Hibrida con 8 capas GLA | No disponible en la informacion | HuggingFace |
+| Teutonic-I Reliquary SFT (este) | 8,95B | 64k | Hibrida (24 gated-DeltaNet + 8 softmax) | Apache-2.0 | Hugging Face, 23 descargas |
+| Qwen/Qwen3.5-9B-Base | ~9B | No disponible en la informacion | Transformer estandar | No disponible en la informacion | Hugging Face |
+| dendriteholdings/Teutonic-I | No disponible en la informacion | No disponible en la informacion | Hibrida con 8 capas GLA | No disponible en la informacion | Hugging Face |
 | Profesor de destilacion (Qwen3.8-27B) | ~27B | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion |
 
 La comparacion cuantitativa de rendimiento no es posible porque no se han publicado benchmarks para este checkpoint ni se dispone de cifras de los modelos de referencia en la informacion proporcionada.
@@ -88,7 +88,7 @@ La comparacion cuantitativa de rendimiento no es posible porque no se han public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000040
+- Modelo en Hugging Face: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000040
 - Modelo base preentrenado: https://huggingface.co/dendriteholdings/Teutonic-I
 - Modelo base de referencia: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

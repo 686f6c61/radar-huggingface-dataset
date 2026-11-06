@@ -22,7 +22,7 @@ Su relevancia es limitada pero clara para investigación aplicada y experimentac
 | Idiomas soportados | Chino, según la model card; otros idiomas no disponibles |
 | Licencia | Apache-2.0 para el adaptador; licencia del modelo base no disponible |
 | Formato de pesos | safetensors (adaptador LoRA) |
-| Tamaño del repositorio | 0.0 GB según HuggingFace |
+| Tamaño del repositorio | 0.0 GB según Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DownFlow/ASMR-llm-lora | Adaptador LoRA sobre 0,8B | no disponible | Apache-2.0 (adaptador) | HuggingFace; 0 descargas; repositorio de 0.0 GB |
+| DownFlow/ASMR-llm-lora | Adaptador LoRA sobre 0,8B | no disponible | Apache-2.0 (adaptador) | Hugging Face; 0 descargas; repositorio de 0.0 GB |
 | Qwen3.5-0.8B (modelo base declarado) | 0,8B | no disponible | no disponible | no verificable con la información aportada |
 | Otros adaptadores LoRA para ASMR en chino | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,6 +99,6 @@ No se dispone de información suficiente para comparar rendimiento, calidad o co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DownFlow/ASMR-llm-lora
+- Hugging Face: https://huggingface.co/DownFlow/ASMR-llm-lora
 - Modelo base: no se proporciona un enlace verificable en la información disponible.
 - Paper, blog, repositorio o demo: no disponible en la información proporcionada.

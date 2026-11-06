@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GS
 
 - VRAM estimada para inferencia: los pesos en safetensors ocupan aproximadamente 14,5 GB. En FP16, se estima que la inferencia requiere unos 14,5 GB de VRAM para los pesos, más el overhead de activaciones y KV-cache. No hay datos de cuantización disponibles.
 - GPU recomendadas: para inferencia en FP16 sin cuantización se recomienda una GPU con al menos 24 GB de VRAM, como una RTX 4090, A100 40GB o superior. También puede ejecutarse en GPUs de 16 GB con cuantización, pero no se ha publicado ninguna cuantización oficial.
-- Opciones de despliegue: el repositorio está etiquetado como `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con HuggingFace Text Generation Inference y con los endpoints de HuggingFace. Al ser un modelo de transformers, también puede usarse con vLLM o con la librería Transformers directamente.
+- Opciones de despliegue: el repositorio está etiquetado como `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con Hugging Face Text Generation Inference y con los endpoints de Hugging Face. Al ser un modelo de transformers, también puede usarse con vLLM o con la librería Transformers directamente.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -78,5 +78,5 @@ No se han proporcionado modelos comparables en la información disponible. El mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_keep60_gap_b001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_keep60_gap_b001
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

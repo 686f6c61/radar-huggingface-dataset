@@ -20,7 +20,7 @@ Su relevancia es metodológica, no de rendimiento: publica checkpoints intermedi
 | Idiomas soportados | inglés (único idioma declarado; datos Dolma, de predominio anglófono) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors en bf16; una rama `stepN` por checkpoint y `main` con los pesos finales al completar la ejecución |
-| Dataset de entrenamiento | `emozilla/dolma-v1_7-3B` (espejo comunitario de Dolma v1.7 en HuggingFace, muestreado proporcionalmente entre sus componentes, en streaming) |
+| Dataset de entrenamiento | `emozilla/dolma-v1_7-3B` (espejo comunitario de Dolma v1.7 en Hugging Face, muestreado proporcionalmente entre sus componentes, en streaming) |
 | Presupuesto de tokens | 2.000.000.000 (2 B) |
 | Pasos de entrenamiento | 30.517 pasos, guardado cada 950 pasos (≈65.500 tokens por paso, cálculo derivado del presupuesto y de max_steps) |
 | Precisión de entrenamiento | bf16, AdamW (lr 3e-5, betas 0,9/0,95, weight decay 0,1, schedule coseno) |
@@ -32,7 +32,7 @@ Su relevancia es metodológica, no de rendimiento: publica checkpoints intermedi
 
 El modelo sigue la arquitectura OLMo2 introducida por Ai2: transformer denso con atención multi-cabeza clásica en esta escala (12 cabezas de consulta y 12 de clave/valor, sin GQA), eliminación de todos los sesgos para mejorar la estabilidad, normalización no paramétrica, activación SwiGLU, RoPE y tokenizador BPE derivado del de OLMo2 (el model card no especifica explícitamente qué tokenizador se empleó en esta ejecución). La configuración es deliberadamente pequeña (≈305 M parámetros, 16 capas, dimensión 768) para que una trayectoria completa de preentrenamiento quepa en un presupuesto de cómputo académico y pueda repetirse varias veces cambiando solo la semilla.
 
-El preentrenamiento es un objetivo de entropía cruzada estándar (next-token prediction), sin destilación de profesor, sin fases de instrucción y sin alineamiento. Los datos proceden de `emozilla/dolma-v1_7-3B`, un espejo de Dolma v1.7 alojado en HuggingFace con muestreo proporcional de los componentes de la mezcla original; el flujo es en streaming (no preempaquetado), con AdamW, bf16, learning rate 3e-5, betas (0,9; 0,95), weight decay 0,1 y schedule coseno. El presupuesto total es de 2 B de tokens repartidos en 30.517 pasos, con instantáneas cada 950 pasos. La innovación relevante no está en el modelo sino en el protocolo: ejecuciones gemelas que solo difieren en la semilla, con checkpoints intermedios publicados, para estudiar la trayectoria en el espacio de pesos y su reproducibilidad.
+El preentrenamiento es un objetivo de entropía cruzada estándar (next-token prediction), sin destilación de profesor, sin fases de instrucción y sin alineamiento. Los datos proceden de `emozilla/dolma-v1_7-3B`, un espejo de Dolma v1.7 alojado en Hugging Face con muestreo proporcional de los componentes de la mezcla original; el flujo es en streaming (no preempaquetado), con AdamW, bf16, learning rate 3e-5, betas (0,9; 0,95), weight decay 0,1 y schedule coseno. El presupuesto total es de 2 B de tokens repartidos en 30.517 pasos, con instantáneas cada 950 pasos. La innovación relevante no está en el modelo sino en el protocolo: ejecuciones gemelas que solo difieren en la semilla, con checkpoints intermedios publicados, para estudiar la trayectoria en el espacio de pesos y su reproducibilidad.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ El preentrenamiento es un objetivo de entropía cruzada estándar (next-token pr
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El model card no incluye evaluaciones de MMLU, HumanEval, GSM8K, HellaSwag ni perplejidad sobre conjuntos de validación, y la ficha de HuggingFace no reporta métricas adicionales.
+No se han publicado resultados de benchmarks en la información disponible. El model card no incluye evaluaciones de MMLU, HumanEval, GSM8K, HellaSwag ni perplejidad sobre conjuntos de validación, y la ficha de Hugging Face no reporta métricas adicionales.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 | diet-traj-olmo2-medium-dolma-seed0 (este) | ≈305 M | 2.048 | 2 B tokens (Dolma v1.7) | Apache 2.0 | Artefacto de investigación con checkpoints intermedios | no disponibles |
 | Pythia-410M (EleutherAI) | 410 M | 2.048 | The Pile | Apache 2.0 | Modelo base de investigación con 154 checkpoints | no verificados en esta ficha |
 | OLMo 2 1B (Ai2) | 1 B | 4.096 | Dolma | Apache 2.0 | Modelo base plenamente abierto | no verificados en esta ficha |
-| SmolLM2-360M (HuggingFace) | 362 M | 8.192 | no disponible en esta ficha | Apache 2.0 | Modelo base pequeño orientado a dispositivo | no verificados en esta ficha |
+| SmolLM2-360M (Hugging Face) | 362 M | 8.192 | no disponible en esta ficha | Apache 2.0 | Modelo base pequeño orientado a dispositivo | no verificados en esta ficha |
 
 La diferencia clave frente a las alternativas no es de calidad sino de propósito: Pythia es el precedente metodológico (checkpoints intermedios para análisis), OLMo 2 1B y SmolLM2-360M son modelos base utilizables, mientras que esta ejecución existe para estudiar la trayectoria de entrenamiento con la arquitectura OLMo2 sobre Dolma.
 
@@ -97,12 +97,12 @@ La diferencia clave frente a las alternativas no es de calidad sino de propósit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed0
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed0
 - Repositorio del proyecto DIET: https://github.com/jjalora/diet-lm
 - Colección de referencia con arquitectura Pythia: https://huggingface.co/jjalora (colección `diet-traj-pythia-410m-*`)
 - Dataset utilizado: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Página oficial de OLMo 2 (Ai2): https://allenai.org/olmo2
 - Repositorio de código de OLMo: https://github.com/allenai/OLMo
-- Colección OLMo 2 en HuggingFace: https://huggingface.co/collections/allenai/olmo-2
+- Colección OLMo 2 en Hugging Face: https://huggingface.co/collections/allenai/olmo-2
 - Documentación de OLMo2 en transformers: https://huggingface.co/docs/transformers/v5.1.0/model_doc/olmo2
 - Página del proyecto OLMo: https://allenai.org/olmo

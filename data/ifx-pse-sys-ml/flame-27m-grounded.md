@@ -112,7 +112,7 @@ No se han encontrado en la informacion proporcionada otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ifx-pse-sys-ml/flame-27m-grounded
+- Modelo en Hugging Face: https://huggingface.co/ifx-pse-sys-ml/flame-27m-grounded
 - Modelo base del ajuste (flame-27m-instruct): https://huggingface.co/ifx-pse-sys-ml/flame-27m-instruct
 - Arbol de ficheros de flame-27m-instruct: https://huggingface.co/ifx-pse-sys-ml/flame-27m-instruct/tree/main
 - Modelo preentrenado (flame-27m-base): https://huggingface.co/ifx-pse-sys-ml/flame-27m-base

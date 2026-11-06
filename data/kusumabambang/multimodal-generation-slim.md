@@ -69,7 +69,7 @@ No disponible. Este repositorio no contiene un modelo comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kusumabambang/multimodal-generation-slim
+- Repositorio en Hugging Face: https://huggingface.co/kusumabambang/multimodal-generation-slim
 - Artículo de referencia sobre generación multimodal (arXiv): https://arxiv.org/abs/2409.14993
 - Versión HTML del mismo artículo: https://arxiv.org/html/2409.14993v1
 - Listado de modelos multimodales (blog externo, no específico de este repositorio): https://blog.unitlab.ai/top-multimodal-models/

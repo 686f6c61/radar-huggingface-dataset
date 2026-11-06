@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks cuantitativos en la informacion dis
 
 | Modelo | Parametros | Contexto | Rendimiento NLI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen1.5-MoE-A2.7B-SNLI-Task-Only (este) | 14,3 B totales / 2,7 B activos + LoRA | 32.768 tokens (base) | no disponible | apache-2.0 | HuggingFace (44 descargas) |
-| Qwen/Qwen1.5-MoE-A2.7B (base) | 14,3 B totales / 2,7 B activos | 32.768 tokens | no disponible | apache-2.0 | HuggingFace |
-| microsoft/deberta-v3-large (tipo encoder para NLI) | 304 M | 512 tokens | no disponible en esta fuente | MIT | HuggingFace |
-| FacebookAI/roberta-large-mnli (encoder para NLI) | 355 M | 512 tokens | no disponible en esta fuente | MIT | HuggingFace |
+| Qwen1.5-MoE-A2.7B-SNLI-Task-Only (este) | 14,3 B totales / 2,7 B activos + LoRA | 32.768 tokens (base) | no disponible | apache-2.0 | Hugging Face (44 descargas) |
+| Qwen/Qwen1.5-MoE-A2.7B (base) | 14,3 B totales / 2,7 B activos | 32.768 tokens | no disponible | apache-2.0 | Hugging Face |
+| microsoft/deberta-v3-large (tipo encoder para NLI) | 304 M | 512 tokens | no disponible en esta fuente | MIT | Hugging Face |
+| FacebookAI/roberta-large-mnli (encoder para NLI) | 355 M | 512 tokens | no disponible en esta fuente | MIT | Hugging Face |
 
 Los modelos basados en encoders son ordenes de magnitud mas pequenos y suelen emplearse como referencia clasica en NLI, mientras que este adaptador hereda el coste de memoria de un MoE de 14,3 B. No se dispone de datos de rendimiento que permitan comparar la precision real de las tres opciones.
 
@@ -90,7 +90,7 @@ Los modelos basados en encoders son ordenes de magnitud mas pequenos y suelen em
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-SNLI-Task-Only
+- Modelo en Hugging Face: https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-SNLI-Task-Only
 - Modelo base: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B
 - Conjunto de datos SNLI (Stanford Natural Language Inference): https://nlp.stanford.edu/projects/snli/
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -70,5 +70,5 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para estos modelo
 - No se ha publicado evidencia de pruebas de robustez ni seguridad en producción.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/yadavkapil7155/Apex)
+- [Modelo en Hugging Face](https://huggingface.co/yadavkapil7155/Apex)
 - [Repositorio de código (mencionado en el README)](https://github.com/kapilverse/SMALL_MODEL.git) (no verificado en la búsqueda web)

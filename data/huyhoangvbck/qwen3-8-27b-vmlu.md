@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-VMLU es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3.8-27B, publicado por el usuario huyhoangvbck en HuggingFace. El modelo se ha entrenado con Megatron-SWIFT mediante LoRA sobre el conjunto de evaluación VMLU, un benchmark de comprensión del lenguaje en vietnamita compuesto por 8.195 preguntas de opción múltiple repartidas en 58 asignaturas. Posteriormente, los adaptadores LoRA se han fusionado (merged) en los pesos originales, por lo que el repositorio contiene un modelo denso completo de 26.895.998.464 parámetros (~26,9 B) en formato safetensors de precisión bf16, con un tamaño de repositorio de 53,8 GB.
+Qwen3.8-27B-VMLU es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3.8-27B, publicado por el usuario huyhoangvbck en Hugging Face. El modelo se ha entrenado con Megatron-SWIFT mediante LoRA sobre el conjunto de evaluación VMLU, un benchmark de comprensión del lenguaje en vietnamita compuesto por 8.195 preguntas de opción múltiple repartidas en 58 asignaturas. Posteriormente, los adaptadores LoRA se han fusionado (merged) en los pesos originales, por lo que el repositorio contiene un modelo denso completo de 26.895.998.464 parámetros (~26,9 B) en formato safetensors de precisión bf16, con un tamaño de repositorio de 53,8 GB.
 
 El objetivo declarado es especializar el modelo base en la resolución de preguntas tipo test en vietnamita, abarcando áreas STEM, ciencias sociales, humanidades y otras. La model card documenta el proceso de entrenamiento (4x NVIDIA A100-40GB, TP=2, PP=1, SP=True, DP=2, LR 2e-5, LoRA rank 16 y alpha 16, dropout 0.05, módulos objetivo de atención y MLP) y proporciona un ejemplo de uso con `transformers` en el que el modo de razonamiento se desactiva mediante `enable_thinking=False`.
 
@@ -38,7 +38,7 @@ El ajuste se realizó con Megatron-SWIFT aplicando LoRA SFT con rango 16, alpha 
 - Razonamiento y respuesta a preguntas de opción múltiple: el modelo está especializado en seleccionar una única opción correcta (A, B, C o D) para preguntas del formato VMLU.
 - Cobertura temática amplia en el dominio evaluado: STEM, ciencias sociales, humanidades y otras categorías de las 58 asignaturas de VMLU.
 - Modo de razonamiento controlable: la plantilla de chat admite `enable_thinking=False` para forzar respuestas directas sin cadena de pensamiento explícita, lo que reduce el consumo de tokens de salida en tareas de clasificación.
-- Integración estándar con el ecosistema HuggingFace: `AutoModelForCausalLM` y `AutoTokenizer` con `trust_remote_code=True`, generación codiciosa (`do_sample=False`) recomendada en el ejemplo del autor.
+- Integración estándar con el ecosistema Hugging Face: `AutoModelForCausalLM` y `AutoTokenizer` con `trust_remote_code=True`, generación codiciosa (`do_sample=False`) recomendada en el ejemplo del autor.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso más allá del modo de pensamiento del modelo base.
 - No se documentan capacidades de visión, audio ni multimodalidad.
@@ -75,10 +75,10 @@ No se dispone de información sobre el modelo base Qwen/Qwen3.8-27B (arquitectur
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-VMLU | ~26,9 B | No disponible | `other` | HuggingFace, pesos safetensors bf16, 0 descargas |
-| Qwen2.5-32B-Instruct | ~32,5 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | HuggingFace, amplio ecosistema de cuantizaciones |
-| Gemma-2-27B | 27 B | 8.192 tokens | Licencia Gemma (uso comercial con condiciones) | HuggingFace, versiones GGUF y cuantizadas de terceros |
-| Yi-1.5-34B | 34 B | 32.768 tokens | Apache 2.0 | HuggingFace, cuantizaciones de la comunidad |
+| Qwen3.8-27B-VMLU | ~26,9 B | No disponible | `other` | Hugging Face, pesos safetensors bf16, 0 descargas |
+| Qwen2.5-32B-Instruct | ~32,5 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Hugging Face, amplio ecosistema de cuantizaciones |
+| Gemma-2-27B | 27 B | 8.192 tokens | Licencia Gemma (uso comercial con condiciones) | Hugging Face, versiones GGUF y cuantizadas de terceros |
+| Yi-1.5-34B | 34 B | 32.768 tokens | Apache 2.0 | Hugging Face, cuantizaciones de la comunidad |
 
 Diferencias relevantes: frente a estas alternativas, Qwen3.8-27B-VMLU es el único de la comparativa especializado en vietnamita y en formato de opción múltiple, pero también el único sin resultados de benchmarks publicados, sin cuantizaciones oficiales y con una licencia no estándar.
 
@@ -97,7 +97,7 @@ Diferencias relevantes: frente a estas alternativas, Qwen3.8-27B-VMLU es el úni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huyhoangvbck/Qwen3.8-27B-VMLU
+- Modelo en Hugging Face: https://huggingface.co/huyhoangvbck/Qwen3.8-27B-VMLU
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Megatron-SWIFT (framework de entrenamiento citado por el autor): https://github.com/modelscope/ms-swift
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, demos o repositorios) en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo. La model card no incluye enlace al conjunto de datos VMLU ni a ninguna publicación asociada.

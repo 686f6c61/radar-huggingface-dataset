@@ -23,7 +23,7 @@ Su relevancia es fundamentalmente investigadora. Al ser un modelo de 1B parámet
 | Librería de inferencia | `zip2zip` (versión >= 0.2.0) |
 | Modelo base | meta-llama/Llama-3.2-1B-Instruct |
 | Paso de entrenamiento | 8000 |
-| Fecha de publicación en HuggingFace | 16 de septiembre de 2026 |
+| Fecha de publicación en Hugging Face | 16 de septiembre de 2026 |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -53,7 +53,7 @@ La distinción entre `main` y `hf` es relevante: la rama `main` contiene el chec
 - Generación de código asistida de bajo coste: el modelo base está ajustado para instrucciones y código simple; el ajuste puede emplearse en autocompletado o generación de fragmentos cortos en entornos de desarrollo con recursos limitados.
 - Sistemas de resumen de documentación técnica o legal: la ventana de 128.000 tokens del modelo base permite resumir contratos o manuales extensos sin fragmentación agresiva.
 - Reproducción de experimentos académicos: al publicarse el checkpoint de entrenamiento en la rama `main`, otros grupos pueden reanudar el entrenamiento con `zip2zip-core` y reproducir la exportación a `hf`.
-- Docencia y demostraciones: ejemplo práctico de cómo una capa de tokenización alternativa se integra en un pipeline de HuggingFace sin cambiar el transformer subyacente.
+- Docencia y demostraciones: ejemplo práctico de cómo una capa de tokenización alternativa se integra en un pipeline de Hugging Face sin cambiar el transformer subyacente.
 
 ## Benchmarks y rendimiento
 
@@ -85,10 +85,10 @@ Los datos de los modelos comparados proceden de su documentación pública y se 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zip2zip-pp-Llama-3.2-1B-Instruct | No declarados (base: ~1,23 B) | No confirmado (base: 128.000) | No disponible | HuggingFace, con 0 descargas |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,23 B | 128.000 | Llama 3.2 Community License | HuggingFace, muy extendida |
-| Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 de forma nativa | Apache 2.0 | HuggingFace, ampliamente usada |
-| Gemma 2 2B | ~2,6 B | 8.192 | Gemma Terms of Use | HuggingFace, con restricciones de uso |
+| zip2zip-pp-Llama-3.2-1B-Instruct | No declarados (base: ~1,23 B) | No confirmado (base: 128.000) | No disponible | Hugging Face, con 0 descargas |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,23 B | 128.000 | Llama 3.2 Community License | Hugging Face, muy extendida |
+| Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 de forma nativa | Apache 2.0 | Hugging Face, ampliamente usada |
+| Gemma 2 2B | ~2,6 B | 8.192 | Gemma Terms of Use | Hugging Face, con restricciones de uso |
 
 La diferencia funcional de este checkpoint frente a las alternativas no es el rendimiento bruto, sino la capa de tokenización adaptativa, que las alternativas no incorporan. En parámetros y contexto, la referencia más directa es el propio modelo base, del que este checkpoint hereda la arquitectura.
 
@@ -106,7 +106,7 @@ La diferencia funcional de este checkpoint frente a las alternativas no es el re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/epfl-dlab/zip2zip-pp-Llama-3.2-1B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/epfl-dlab/zip2zip-pp-Llama-3.2-1B-Instruct
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Librería documentada en la model card: `pip install "zip2zip>=0.2.0"`
 - Página institucional del autor (EPFL): https://www.epfl.ch/

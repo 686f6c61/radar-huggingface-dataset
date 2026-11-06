@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Menterium/gemma-3-4b-it-onnx-int4-dml
+- Modelo en Hugging Face: https://huggingface.co/Menterium/gemma-3-4b-it-onnx-int4-dml
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - onnxruntime-genai: https://github.com/microsoft/onnxruntime-genai
 - Celerando (Menterium): https://celerando.menterium.com

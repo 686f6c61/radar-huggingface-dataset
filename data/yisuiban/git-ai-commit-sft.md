@@ -89,6 +89,6 @@ El adaptador se compara directamente con su modelo base sin fine-tuning (Qwen2.5
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/yisuiban/git-ai-commit-sft)
+- [Página del modelo en Hugging Face](https://huggingface.co/yisuiban/git-ai-commit-sft)
 - [Modelo base: mlx-community/Qwen2.5-Coder-7B-Instruct-4bit](https://huggingface.co/mlx-community/Qwen2.5-Coder-7B-Instruct-4bit)
 - No se proporcionan enlaces oficiales a papers, blogs o demos en la información disponible. El enlace al repositorio de entrenamiento citado en la model card (`https://github.com/your-org/git-ai-commit-sft`) es un placeholder y no es accesible.

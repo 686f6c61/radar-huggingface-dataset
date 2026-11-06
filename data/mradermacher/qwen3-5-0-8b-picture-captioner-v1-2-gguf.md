@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Picture-Captioner-v1.2-GGUF es una cuantización estática en formato GGUF del modelo agentlans/Qwen3.5-0.8B-Picture-Captioner-v1.2, un modelo multimodal especializado en la generación de descripciones de imágenes (image captioning). El trabajo de cuantización lo firma mradermacher, un conocido publicador de cuantizaciones GGUF en HuggingFace, mientras que el modelo original procede del usuario agentlans y se construye sobre la base de la familia Qwen3.5 en su variante de 0,8B de parámetros.
+Qwen3.5-0.8B-Picture-Captioner-v1.2-GGUF es una cuantización estática en formato GGUF del modelo agentlans/Qwen3.5-0.8B-Picture-Captioner-v1.2, un modelo multimodal especializado en la generación de descripciones de imágenes (image captioning). El trabajo de cuantización lo firma mradermacher, un conocido publicador de cuantizaciones GGUF en Hugging Face, mientras que el modelo original procede del usuario agentlans y se construye sobre la base de la familia Qwen3.5 en su variante de 0,8B de parámetros.
 
 El modelo resuelve la tarea concreta de convertir una imagen en una descripción textual en inglés, y lo hace con un tamaño muy reducido: 752.393.024 parámetros en los pesos safetensors del modelo base, lo que lo sitúa en la franja de modelos que pueden ejecutarse en hardware de consumo. La cuantización incluye además los ficheros mmproj (proyector multimodal) necesarios para el procesamiento de imágenes en llama.cpp y derivados.
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Qwen3.5-0.8B-Picture-Captioner-v1.2-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Qwen3.5-0.8B-Picture-Captioner-v1.2-GGUF
 - Modelo base: https://huggingface.co/agentlans/Qwen3.5-0.8B-Picture-Captioner-v1.2
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentlans/monet-caption-highres
 - Página de resumen del cuantizador: https://hf.tst.eu/model#Qwen3.5-0.8B-Picture-Captioner-v1.2-GGUF

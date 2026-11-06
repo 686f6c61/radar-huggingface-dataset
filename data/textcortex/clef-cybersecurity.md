@@ -75,7 +75,7 @@ Datos adicionales: en el umbral predeclarado > 0,95 de CLEF, el checkpoint selec
 
 | Modelo | Parametros | Contexto | AUROC EN (n=510) | AUROC DE (n=510) | AUROC PDF (n=730) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| clef-cybersecurity | ~9,53B (base) + adaptador 2,20 GB | No disponible | 0,9925 | 0,9744 | 0,9856 | Apache 2.0 | HuggingFace (TextCortex) |
+| clef-cybersecurity | ~9,53B (base) + adaptador 2,20 GB | No disponible | 0,9925 | 0,9744 | 0,9856 | Apache 2.0 | Hugging Face (TextCortex) |
 | Jev | No disponible | No disponible | 0,9800 | 0,9564 | 0,9785 | No disponible | Evaluacion alojada (revision no disponible) |
 | Laya R2a | No disponible | No disponible | 0,9155 | 0,8780 | 0,8856 | No disponible | Checkpoint fine-tuneado guardado (no publico) |
 
@@ -97,6 +97,6 @@ Nota del autor: los modelos usan encoders nativos y protocolos de ventana distin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TextCortex/clef-cybersecurity
+- Modelo en Hugging Face: https://huggingface.co/TextCortex/clef-cybersecurity
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Resultados detallados (benchmarks.json): https://huggingface.co/TextCortex/clef-cybersecurity/blob/main/benchmarks.json

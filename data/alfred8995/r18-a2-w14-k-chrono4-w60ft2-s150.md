@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono4-w60ft2-s150` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Por el identificador y la etiqueta `sn38-nanochrono` que acompanan al repositorio, se trata presumiblemente de un modelo de la familia "nanochrono", si bien no se dispone de documentacion publica que confirme la arquitectura, el proceso de entrenamiento ni el proposito del modelo. El repositorio tiene acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+El modelo `alfred8995/r18-a2-w14-k-chrono4-w60ft2-s150` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Por el identificador y la etiqueta `sn38-nanochrono` que acompanan al repositorio, se trata presumiblemente de un modelo de la familia "nanochrono", si bien no se dispone de documentacion publica que confirme la arquitectura, el proceso de entrenamiento ni el proposito del modelo. El repositorio tiene acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 El checkpoint contiene 2.018.511.234 parametros en formato safetensors, lo que lo situa en el rango de los modelos de aproximadamente 2.000 millones de parametros, un tamano manejable en GPUs de consumo con cuantizacion adecuada. El repositorio ocupa 6,3 GB, coherente con pesos en precision de 32 bits o con varios ficheros que incluyen estados de optimizador o configuraciones adicionales.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w14-k-chrono4-w60ft2-s150 | 2.018 M | no disponible | Apache 2.0 | Gated en HuggingFace | Sin benchmarks ni model card detallada |
+| alfred8995/r18-a2-w14-k-chrono4-w60ft2-s150 | 2.018 M | no disponible | Apache 2.0 | Gated en Hugging Face | Sin benchmarks ni model card detallada |
 | Qwen2.5-1.5B | 1.500 M | 32.768 tokens | Apache 2.0 | Publico | Benchmarks publicados, multilingue |
 | Llama 3.2 1B | 1.200 M | 128.000 tokens | Llama 3.2 Community License | Gated | Benchmarks publicados, solo texto |
 | Gemma 2 2B | 2.600 M | 8.192 tokens | Gemma Terms of Use | Gated | Benchmarks publicados, multilingue |
@@ -80,12 +80,12 @@ La comparativa con Qwen2.5-1.5B, Llama 3.2 1B y Gemma 2 2B se ofrece como refere
 - Riesgo de alucinacion: desconocido, pero inherente a cualquier modelo de lenguaje; debe medirse en el dominio de aplicacion.
 - Sesgos conocidos: no disponibles; al no documentarse la composicion del dataset, no es posible anticipar sesgos de genero, raza, idioma o dominio.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura linguistica.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene revisar los terminos adicionales que pueda imponer el autor.
+- Licencia: Apache 2.0 permite uso comercial y modificacion, pero el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar los terminos adicionales que pueda imponer el autor.
 - Checkpoint experimental: el identificador sugiere un experimento con hiperparametros concretos; no hay garantia de que sea un modelo final o estable para produccion.
 - Reproducibilidad: sin documentacion del entrenamiento ni de la tokenizacion, resulta dificil reproducir resultados o auditar el modelo.
 - Fecha de creacion: el repositorio figura creado el 2026-10-29, fecha futura respecto a la informacion habitual disponible; conviene verificar la integridad y procedencia del repositorio antes de usarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono4-w60ft2-s150
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono4-w60ft2-s150
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

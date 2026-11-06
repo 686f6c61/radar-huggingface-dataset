@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshyalphonse/bionerd-re | 109.492.233 | 512 tokens | Clasificacion de relaciones tipadas BioRED | MIT | HuggingFace |
-| microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext | ~110 M (no confirmado en la informacion) | no disponible | Modelo base de dominio biomedico (masked LM) | MIT | HuggingFace |
+| joshyalphonse/bionerd-re | 109.492.233 | 512 tokens | Clasificacion de relaciones tipadas BioRED | MIT | Hugging Face |
+| microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext | ~110 M (no confirmado en la informacion) | no disponible | Modelo base de dominio biomedico (masked LM) | MIT | Hugging Face |
 | Otros sistemas de extraccion de relaciones sobre BioRED | no disponible | no disponible | Extraccion de relaciones | no disponible | no disponible |
 
 El unico comparable directo del que se dispone de informacion es el modelo base BiomedBERT, del que bionerd-re es un fine-tuning especializado. No se dispone de datos de rendimiento de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -83,5 +83,5 @@ El unico comparable directo del que se dispone de informacion es el modelo base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshyalphonse/bionerd-re
+- Modelo en Hugging Face: https://huggingface.co/joshyalphonse/bionerd-re
 - Modelo base: https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext

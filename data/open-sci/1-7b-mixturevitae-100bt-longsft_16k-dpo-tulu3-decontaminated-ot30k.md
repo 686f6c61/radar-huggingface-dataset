@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `open-sci/1.7b-MixtureVitae-100BT-longsft_16k-DPO-Tulu3-decontaminated-ot30k` es un checkpoint de 1.714.377.728 parámetros publicado por la organización open-sci en HuggingFace. Por su nombre se deduce que parte de una base MixtureVitae de 100 mil millones de tokens, ha pasado por un ajuste supervisado de contexto largo (16k), una fase de DPO y un entrenamiento posterior sobre Tulu 3 con un subconjunto decontaminado de Open Thoughts (30.000 muestras). El identificador interno del modelo-index confirma que el entrenamiento se realizó sobre el dataset `open-thoughts_open_thoughts3-1.2_m_30000_samples`.
+El modelo `open-sci/1.7b-MixtureVitae-100BT-longsft_16k-DPO-Tulu3-decontaminated-ot30k` es un checkpoint de 1.714.377.728 parámetros publicado por la organización open-sci en Hugging Face. Por su nombre se deduce que parte de una base MixtureVitae de 100 mil millones de tokens, ha pasado por un ajuste supervisado de contexto largo (16k), una fase de DPO y un entrenamiento posterior sobre Tulu 3 con un subconjunto decontaminado de Open Thoughts (30.000 muestras). El identificador interno del modelo-index confirma que el entrenamiento se realizó sobre el dataset `open-thoughts_open_thoughts3-1.2_m_30000_samples`.
 
 Se trata de un modelo derivado de la familia Llama (arquitectura transformer decoder-only de 1,7B parámetros), afinado con llama-factory y `generated_from_trainer`, empaquetado en safetensors y con código personalizado (`custom_code`), lo que implica que requiere `trust_remote_code=True` para cargarse. El repositorio ocupa 3,4 GB, coherente con pesos en fp32/bf16 de un modelo de este tamaño.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci/1.7b-MixtureVitae-100BT-longsft_16k-DPO-Tulu3-decontaminated-ot30k | 1,71B | 16k (deducido) | other | HuggingFace, safetensors |
-| TinyLlama-1.1B-Chat | 1,1B | 2k | Apache 2.0 | HuggingFace, GGUF |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | HuggingFace, GGUF, vLLM |
-| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | HuggingFace, GGUF |
+| open-sci/1.7b-MixtureVitae-100BT-longsft_16k-DPO-Tulu3-decontaminated-ot30k | 1,71B | 16k (deducido) | other | Hugging Face, safetensors |
+| TinyLlama-1.1B-Chat | 1,1B | 2k | Apache 2.0 | Hugging Face, GGUF |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Hugging Face, GGUF, vLLM |
+| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | Hugging Face, GGUF |
 
 Comparación de rendimiento: no disponible para el modelo open-sci (sin benchmarks publicados). Las alternativas citadas son modelos con licencias permisivas y ecosistema de despliegue maduro, frente a la licencia `other` y el `custom_code` de este checkpoint.
 
@@ -85,5 +85,5 @@ Comparación de rendimiento: no disponible para el modelo open-sci (sin benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-100BT-longsft_16k-DPO-Tulu3-decontaminated-ot30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-100BT-longsft_16k-DPO-Tulu3-decontaminated-ot30k
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

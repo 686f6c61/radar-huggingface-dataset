@@ -90,7 +90,7 @@ La comparativa con alternativas fuera del ecosistema Apple no esta detallada en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arach/parakeet-tdt-0.6b-v3-coreml
+- Modelo en Hugging Face: https://huggingface.co/arach/parakeet-tdt-0.6b-v3-coreml
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Aplicacion Vox: https://voxd.cc
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/

@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hugokwang83/random-efficient-attention
+- Repositorio Hugging Face: https://huggingface.co/hugokwang83/random-efficient-attention
 - GitHub HKUNLP/efficient-attention (referencia relacionada): https://github.com/hkunlp/efficient-attention
 - Artículo RFA (Random Feature Attention): https://arxiv.org/abs/2103.02143
 - Revisión de mecanismos de atención eficiente para LLMs: https://arxiv.org/abs/2507.19595

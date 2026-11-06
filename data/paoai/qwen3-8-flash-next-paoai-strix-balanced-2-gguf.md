@@ -93,7 +93,7 @@ Rendimiento global declarado: 17-32 t/s de decodificacion y 162-688 t/s de prefi
 
 | Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PaoAI/Qwen3.8-Flash-Next-PaoAI-STRIX-BALANCED-2-GGUF | 176,9 B (MoE, 512 expertos) | 262.144 tokens | GGUF, 80,78 GB | qwen-community-1.0 | Publico en HuggingFace, 15 descargas, 0 likes (a fecha de la informacion) |
+| PaoAI/Qwen3.8-Flash-Next-PaoAI-STRIX-BALANCED-2-GGUF | 176,9 B (MoE, 512 expertos) | 262.144 tokens | GGUF, 80,78 GB | qwen-community-1.0 | Publico en Hugging Face, 15 descargas, 0 likes (a fecha de la informacion) |
 | Qwen/Qwen3.8-Flash-Next (maestro BF16) | 176,9 B (MoE, 512 expertos), descrito como 180 B | no disponible en la informacion proporcionada | BF16, 360 GB | qwen-community-1.0 | Modelo base referenciado por esta cuantizacion |
 
 No se dispone de informacion sobre otras cuantizaciones alternativas del mismo maestro ni sobre modelos comparables de la misma categoria (por ejemplo, otros MoE de ~180 B en GGUF) en la informacion proporcionada.
@@ -115,7 +115,7 @@ No se dispone de informacion sobre otras cuantizaciones alternativas del mismo m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PaoAI/Qwen3.8-Flash-Next-PaoAI-STRIX-BALANCED-2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/PaoAI/Qwen3.8-Flash-Next-PaoAI-STRIX-BALANCED-2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia: fichero LICENSE del repositorio (referenciado como `license_link: LICENSE` en la model card); texto no incluido en la informacion proporcionada.
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

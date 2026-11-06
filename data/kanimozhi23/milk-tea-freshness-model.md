@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`milk-tea-freshness-model` es un modelo publicado en HuggingFace por el usuario `kanimozhi23` bajo licencia MIT. Por el identificador y el nombre del repositorio, parece orientado a una tarea de clasificacion o prediccion relacionada con la frescura de leche y te, presumiblemente a partir de datos sensoriales, imagenes o medidas fisico-quimicas. El repositorio ocupa aproximadamente 0,1 GB y esta etiquetado con la libreria Keras, lo que sugiere que los pesos se distribuyen en formato nativo de Keras (HDF5 o `.keras`) en lugar de safetensors o GGUF.
+`milk-tea-freshness-model` es un modelo publicado en Hugging Face por el usuario `kanimozhi23` bajo licencia MIT. Por el identificador y el nombre del repositorio, parece orientado a una tarea de clasificacion o prediccion relacionada con la frescura de leche y te, presumiblemente a partir de datos sensoriales, imagenes o medidas fisico-quimicas. El repositorio ocupa aproximadamente 0,1 GB y esta etiquetado con la libreria Keras, lo que sugiere que los pesos se distribuyen en formato nativo de Keras (HDF5 o `.keras`) en lugar de safetensors o GGUF.
 
-La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT. No se documentan arquitectura, tamano, contexto, datos de entrenamiento, idiomas ni resultados de evaluacion. El modelo acumula 20 descargas y 0 likes en el momento de la consulta, y su pipeline no esta declarado en HuggingFace, por lo que no es posible inferir automaticamente la tarea.
+La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT. No se documentan arquitectura, tamano, contexto, datos de entrenamiento, idiomas ni resultados de evaluacion. El modelo acumula 20 descargas y 0 likes en el momento de la consulta, y su pipeline no esta declarado en Hugging Face, por lo que no es posible inferir automaticamente la tarea.
 
 Se trata, por tanto, de un artefacto de muy baja madurez documental, no apto para uso en produccion sin una evaluacion previa por parte del equipo que lo adopte. Esta ficha recoge unicamente los datos verificables y marca explicitamente como "no disponible" todo aquello que la informacion proporcionada no cubre.
 
@@ -77,4 +77,4 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kanimozhi23/milk-tea-freshness-model
+- Hugging Face: https://huggingface.co/kanimozhi23/milk-tea-freshness-model

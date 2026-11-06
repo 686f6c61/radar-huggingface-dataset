@@ -87,12 +87,12 @@ La siguiente tabla compara Fun-CosyVoice3-0.5B-2512 con otros TTS open source de
 
 | Modelo | Parametros | Idiomas | Licencia | test-zh CER (%) ↓ | test-en WER (%) ↓ | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Fun-CosyVoice3-0.5B-2512 | 0.5B | 9 | Apache 2.0 | 1.21 | 2.24 | HuggingFace, Modelscope |
-| CosyVoice2-0.5B | 0.5B | 9 | Apache 2.0 | 1.45 | 2.57 | HuggingFace, Modelscope |
-| F5-TTS | 0.3B | 4 (en, zh, ja, ko) | MIT | 1.52 | 2.00 | HuggingFace |
-| Spark TTS | 0.5B | 2 (en, zh) | Apache 2.0 | 1.2 | 1.98 | HuggingFace |
-| VoxCPM | 0.5B | 6 (en, zh, ja, ko, fr, de) | Apache 2.0 | 0.93 | 1.85 | HuggingFace |
-| Index-TTS2 | 1.5B | 6 (en, zh, ja, ko, fr, de) | Apache 2.0 | 1.03 | 2.23 | HuggingFace |
+| Fun-CosyVoice3-0.5B-2512 | 0.5B | 9 | Apache 2.0 | 1.21 | 2.24 | Hugging Face, Modelscope |
+| CosyVoice2-0.5B | 0.5B | 9 | Apache 2.0 | 1.45 | 2.57 | Hugging Face, Modelscope |
+| F5-TTS | 0.3B | 4 (en, zh, ja, ko) | MIT | 1.52 | 2.00 | Hugging Face |
+| Spark TTS | 0.5B | 2 (en, zh) | Apache 2.0 | 1.2 | 1.98 | Hugging Face |
+| VoxCPM | 0.5B | 6 (en, zh, ja, ko, fr, de) | Apache 2.0 | 0.93 | 1.85 | Hugging Face |
+| Index-TTS2 | 1.5B | 6 (en, zh, ja, ko, fr, de) | Apache 2.0 | 1.03 | 2.23 | Hugging Face |
 
 Fun-CosyVoice3 supera a CosyVoice2 en todas las metricas, y ofrece una cobertura de idiomas mas amplia que F5-TTS y Spark TTS. VoxCPM tiene mejor CER en chino, pero Fun-CosyVoice3 destaca en similitud de hablante (78.0% frente a 77.2%) y en el conjunto test-hard (6.71 frente a 8.87). La version RL de Fun-CosyVoice3 (no mostrada en esta tabla) alcanza un CER de 0.81, el mejor de todos los modelos comparados.
 
@@ -108,8 +108,8 @@ Fun-CosyVoice3 supera a CosyVoice2 en todas las metricas, y ofrece una cobertura
 
 ## Enlaces
 
-- Repositorio en HuggingFace (mirror de dtxing): https://huggingface.co/dtxing/Fun-CosyVoice3-0.5B-2512
-- Repositorio oficial en HuggingFace: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
+- Repositorio en Hugging Face (mirror de dtxing): https://huggingface.co/dtxing/Fun-CosyVoice3-0.5B-2512
+- Repositorio oficial en Hugging Face: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Pagina en Modelscope: https://www.modelscope.cn/models/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Paper de CosyVoice 3: https://arxiv.org/abs/2505.17589
 - Paper de CosyVoice 2: https://arxiv.org/abs/2412.10117

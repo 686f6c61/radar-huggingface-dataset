@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cryoVERSE es un modelo publicado en HuggingFace por la organizacion westlake-repl bajo el identificador `westlake-repl/cryoVERSE`. El repositorio contiene pesos en formato safetensors (1,6 GB) y se distribuye con licencia MIT, lo que en principio permite uso comercial sin restricciones adicionales. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y no incluye model card descriptiva: el unico contenido del README es la declaracion de licencia.
+cryoVERSE es un modelo publicado en Hugging Face por la organizacion westlake-repl bajo el identificador `westlake-repl/cryoVERSE`. El repositorio contiene pesos en formato safetensors (1,6 GB) y se distribuye con licencia MIT, lo que en principio permite uso comercial sin restricciones adicionales. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y no incluye model card descriptiva: el unico contenido del README es la declaracion de licencia.
 
 La informacion publica disponible no permite determinar la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el dominio de aplicacion del modelo. La model card no incluye descripcion, datos de entrenamiento, resultados de benchmarks ni instrucciones de uso, y los resultados de busqueda web recuperados no contienen ninguna referencia al modelo (corresponden a directorios de servicios sin relacion).
 
@@ -72,7 +72,7 @@ No disponible. Para establecer una comparativa es imprescindible conocer la cate
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cryoVERSE | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| cryoVERSE | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No disponible. Para establecer una comparativa es imprescindible conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/westlake-repl/cryoVERSE
+- Hugging Face: https://huggingface.co/westlake-repl/cryoVERSE
 - Perfil del autor: https://huggingface.co/westlake-repl
 - Paper, blog, repositorio de codigo o demo: no disponible (los resultados de busqueda disponibles no contienen ninguna referencia al modelo).

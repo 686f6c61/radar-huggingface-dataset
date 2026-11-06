@@ -72,10 +72,10 @@ No se dispone de resultados de benchmarks estándar como MMLU, HumanEval o GSM8K
 
 | Modelo | Parámetros | Contexto | hembench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wichtelchen-Qwen3.5-9B | 9,4B | No disponible (base: 262k) | 56,1% | Apache 2.0 | HuggingFace |
-| Hemlock-Qwen3.5-9B | 9,4B | No disponible (base: 262k) | 57,1% (con Schierling) | Apache 2.0 | HuggingFace |
-| Wichtel-Qwen3.6-27B | 27B | No disponible | 67,6% | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B (base) | 9,4B | 262.144 | No aplica | Apache 2.0 | HuggingFace, Ollama |
+| Wichtelchen-Qwen3.5-9B | 9,4B | No disponible (base: 262k) | 56,1% | Apache 2.0 | Hugging Face |
+| Hemlock-Qwen3.5-9B | 9,4B | No disponible (base: 262k) | 57,1% (con Schierling) | Apache 2.0 | Hugging Face |
+| Wichtel-Qwen3.6-27B | 27B | No disponible | 67,6% | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B (base) | 9,4B | 262.144 | No aplica | Apache 2.0 | Hugging Face, Ollama |
 
 Wichtelchen ofrece un rendimiento cercano al 27B en hembench (56,1% vs 67,6%) con un tercio de los parámetros, a costa de una ligera pérdida frente a Hemlock puro (57,1%). Su ventaja reside en el comportamiento de delegación y la reducción de censura, que no están presentes en el modelo base.
 
@@ -88,11 +88,11 @@ Wichtelchen ofrece un rendimiento cercano al 27B en hembench (56,1% vs 67,6%) co
 - Riesgo de alucinación: no se menciona explícitamente, pero al ser un modelo de 9B, es susceptible a errores factuales, especialmente en dominios fuera de su entrenamiento.
 - Sesgos: el modelo fue "abliterated" (eliminación de rechazos), lo que puede reducir sus inhibiciones ante contenido sensible. Aunque la puntuación de censura es alta (29/29), el comportamiento puede ser impredecible en contextos delicados.
 - Idioma: solo inglés confirmado; no se garantiza rendimiento en otros idiomas.
-- Estado del proyecto: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un lanzamiento reciente o experimental. La fecha de creación (2026-08-29) es posterior a la fecha actual, lo que indica que podría ser un proyecto en desarrollo.
+- Estado del proyecto: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un lanzamiento reciente o experimental. La fecha de creación (2026-08-29) es posterior a la fecha actual, lo que indica que podría ser un proyecto en desarrollo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B
 - Modelo hermano mayor (27B): https://huggingface.co/schneewolflabs/Wichtel-Qwen3.6-27B
 - Modelo base Hemlock: https://huggingface.co/hemlang/Hemlock-Qwen3.5-9B
 - Adaptador Schierling: https://huggingface.co/hemlang/Schierling-Qwen3.5-9B-LoRA

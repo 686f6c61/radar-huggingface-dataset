@@ -83,7 +83,7 @@ La principal diferencia es la inclusión de etiquetas especializadas, que no est
 
 ## Enlaces
 
-- [HuggingFace - CMSManhattan/JiRackDeltaNetTokenizer](https://huggingface.co/CMSManhattan/JiRackDeltaNetTokenizer)
+- [Hugging Face - CMSManhattan/JiRackDeltaNetTokenizer](https://huggingface.co/CMSManhattan/JiRackDeltaNetTokenizer)
 - [README de JiRackUltra_14b (menciona el tokenizer)](https://huggingface.co/CMSManhattan/JiRackUltra_14b/blob/main/README.md)
 - [JiRack-Ultra-Tokenizer-256K](https://huggingface.co/CMSManhattan/JiRack-Ultra-Tokenizer-256K)
 - [JiRack-UltraPro-Tokenizer-512K](https://huggingface.co/CMSManhattan/JiRack-UltraPro-Tokenizer-512K)

@@ -75,7 +75,7 @@ La comparativa se limita a los destilados de DeepSeek-R1 y al modelo base Qwen2.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (BrushStone): https://huggingface.co/BrushStone/DeepSeek-R1-Distill-Qwen-1.5B
+- Repositorio en Hugging Face (BrushStone): https://huggingface.co/BrushStone/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

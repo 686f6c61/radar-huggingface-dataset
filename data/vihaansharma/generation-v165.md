@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VihaanSharma/generation-v165 es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura Efficientformer etiquetada como variante "giant", publicada bajo licencia MIT. Según la propia model card, no se trata de un modelo entrenado, sino de un checkpoint de inicialización valido para pruebas de humo (smoke tests), acompañado de un script `predict.py`, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (SGD con calentamiento lineal).
+VihaanSharma/generation-v165 es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura Efficientformer etiquetada como variante "giant", publicada bajo licencia MIT. Según la propia model card, no se trata de un modelo entrenado, sino de un checkpoint de inicialización valido para pruebas de humo (smoke tests), acompañado de un script `predict.py`, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (SGD con calentamiento lineal).
 
 El dato objetivo mas relevante es el recuento de parametros del fichero `model.safetensors`: 33.088 parametros en total. Esto contrasta de forma notable con la etiqueta "giant" que aparece en la model card, ya que 33.088 parametros es un orden de magnitud propio de un modelo de juguete, no de una variante grande. El repositorio ocupa 0,0 GB y no declara idiomas soportados, pipeline ni resultados de benchmarks.
 
@@ -52,7 +52,7 @@ No hay evidencia de entrenamiento real. La model card es explicita al afirmar qu
 - Plantilla de arquitectura para investigacion: el `config.json` documenta los ajustes generados (atencion lineal, fusion de bajo rango, GroupNorm) y sirve como punto de partida reproducible para experimentos de ablacion sobre variantes eficientes.
 - Reproducibilidad de recetas de entrenamiento: el `training_args.json` incluye SGD con linear warmup como receta por defecto, util para montar comparativas con presupuesto de ajuste y semillas equivalentes entre arquitecturas.
 - Docencia y formacion: un modelo de 33.088 parametros es adecuado para explicar el ciclo completo de carga de safetensors, inicializacion de pesos y ejecucion de inferencia en un entorno de aula sin requerir GPU.
-- Integracion continua: puede actuar como fixture en tests automatizados de una libreria o servicio que consuma modelos de HuggingFace, validando rutas de descarga, checksum y estructura de ficheros sin consumir cuota de GPU.
+- Integracion continua: puede actuar como fixture en tests automatizados de una libreria o servicio que consuma modelos de Hugging Face, validando rutas de descarga, checksum y estructura de ficheros sin consumir cuota de GPU.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VihaanSharma/generation-v165 | 33.088 | No disponible | No (checkpoint de inicializacion) | MIT | HuggingFace, 0 descargas, 0 likes |
+| VihaanSharma/generation-v165 | 33.088 | No disponible | No (checkpoint de inicializacion) | MIT | Hugging Face, 0 descargas, 0 likes |
 | EfficientFormer original (Snap Research) | No disponible en la informacion proporcionada | No disponible | Si, clasificacion de imagen | No disponible en la informacion proporcionada | Repositorio publico del autor original |
 | Alternativas generativas del mismo rango de tamano | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos verificables de parametros, contexto o rendimiento del Ef
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VihaanSharma/generation-v165
+- Modelo en Hugging Face: https://huggingface.co/VihaanSharma/generation-v165
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Comando de verificacion rapida indicado por el autor: `python predict.py --help`
 - Resultados de busqueda web: la busqueda no devolvio ningun enlace relevante al modelo. Los resultados obtenidos correspondian a sitios de contenido para adultos sin relacion alguna con el artefacto, por lo que se descartan y no se listan.

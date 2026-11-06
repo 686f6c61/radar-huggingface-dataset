@@ -6,7 +6,7 @@ El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-ep
 
 La relevancia de este artefacto es metodologica mas que de producto: sirve para estudiar tecnicas de eliminacion selectiva de conocimiento (forget set de 10 por ciento) manteniendo el rendimiento sobre el conjunto retenido, mediante una perdida que combina token IHL sobre el conjunto a olvidar y entropia cruzada (CE) con peso 1.0 sobre el conjunto a retener. No es un modelo de proposito general ni un asistente listo para produccion.
 
-Al estar alojado en HuggingFace con cero descargas y cero likes, y con un pipeline no especificado, debe tratarse como un checkpoint de investigacion. La model card es minima y no documenta resultados de benchmarks ni detalles completos del entrenamiento.
+Al estar alojado en Hugging Face con cero descargas y cero likes, y con un pipeline no especificado, debe tratarse como un checkpoint de investigacion. La model card es minima y no documenta resultados de benchmarks ni detalles completos del entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -92,8 +92,8 @@ La comparacion con Phi-1.5 debe tomarse con cautela: los datos de contexto y lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch01
-- Modelo base en HuggingFace: https://huggingface.co/locuslab/tofu_ft_phi-1.5
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch01
+- Modelo base en Hugging Face: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Manifiesto del experimento: `ihl_manifest.json` (referenciado en la model card, dentro del repositorio)
 - Paper de TOFU (referencia general del benchmark): no disponible en la informacion proporcionada

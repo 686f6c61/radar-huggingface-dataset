@@ -73,7 +73,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/software-mansion/react-native-executorch-all-mpnet-base-v2
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-all-mpnet-base-v2
 - Librería npm react-native-executorch: https://www.npmjs.com/package/react-native-executorch
 - Documentación oficial de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started
 - Sitio web del proyecto: https://executorch.swmansion.com/

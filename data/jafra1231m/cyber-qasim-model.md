@@ -63,5 +63,5 @@ No disponible. No se ha proporcionado información sobre modelos comparables ni 
 
 ## Enlaces
 
-- [HuggingFace - Jafra1231m/cyber-qasim-model](https://huggingface.co/Jafra1231m/cyber-qasim-model)
+- [Hugging Face - Jafra1231m/cyber-qasim-model](https://huggingface.co/Jafra1231m/cyber-qasim-model)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

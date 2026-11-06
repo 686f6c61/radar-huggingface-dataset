@@ -86,7 +86,7 @@ El probe de 13B supera ligeramente al de 7B, y ambos superan al juez masivo de 1
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/pbcong/llava-1.5-7b-hal-verify-probe)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/pbcong/llava-1.5-7b-hal-verify-probe)
 - [Modelo compañero para LLaVA-1.5-13B](https://huggingface.co/pbcong/llava-1.5-13b-hal-verify-probe)
 - [Modelo base LLaVA-1.5-7B (llava-hf)](https://huggingface.co/llava-hf/llava-1.5-7b-hf)
 - [Página oficial de LLaVA](https://llava-vl.github.io/)

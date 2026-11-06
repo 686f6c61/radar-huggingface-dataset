@@ -77,8 +77,8 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (tam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF
 - Documentacion de unsloth sobre Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
 - Repositorio similar de julianmb (Qwen 3.8 27B ROCmFP4): https://github.com/julianmb/q38rocm
-- Copia del repositorio en HuggingFace (agentionai): https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF
+- Copia del repositorio en Hugging Face (agentionai): https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF
 - Proyecto ROCmFPX (fork de llama.cpp): no se ha proporcionado enlace directo, pero se menciona en los creditos de la model card.

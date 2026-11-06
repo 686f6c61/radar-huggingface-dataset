@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G05_ActionCodec2-1st_LIBERO | 2,2 mil millones | no disponible | no disponible | G0.5 Community (no comercial) | HuggingFace, 37 descargas |
-| OpenGalaxea/G05 (modelo base) | no disponible | no disponible | no disponible | G0.5 Community | HuggingFace (referenciado como base) |
+| G05_ActionCodec2-1st_LIBERO | 2,2 mil millones | no disponible | no disponible | G0.5 Community (no comercial) | Hugging Face, 37 descargas |
+| OpenGalaxea/G05 (modelo base) | no disponible | no disponible | no disponible | G0.5 Community | Hugging Face (referenciado como base) |
 | Alternativas VLA de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos comparables de la misma categoría, por lo que la comparación cuantitativa no está disponible.
@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZibinDong/G05_ActionCodec2-1st_LIBERO
+- Modelo en Hugging Face: https://huggingface.co/ZibinDong/G05_ActionCodec2-1st_LIBERO
 - Modelo base: https://huggingface.co/OpenGalaxea/G05 (espejo citado: https://hf-mirror.com/OpenGalaxea/G05)
 - Repositorio del tokenizador ActionCodec2: https://huggingface.co/ZibinDong/ActionCodec2
 - Archivo fuente del paquete: https://hf-mirror.com/ZibinDong/ActionCodec2/resolve/v0.1.0/actioncodec2-0.1.0.tar.gz

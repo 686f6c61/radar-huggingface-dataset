@@ -21,7 +21,7 @@ El modelo base OLMo-3-7B-Instruct pertenece a la familia OLMo 3 de AllenAI, una 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning supervisado (SFT) del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión ajustada por instrucciones de OLMo-3-7B. La arquitectura subyacente es un transformer decoder-only con atención causal, típico de la familia OLMo. El entrenamiento se realizó utilizando la librería Unsloth (que acelera el fine-tuning) junto con la biblioteca TRL de HuggingFace. El dataset empleado es el "school of reward hacks", específicamente su último tercio, con una semilla aleatoria fija (seed 4). Este dataset, descrito en el paper arXiv:2508.17511, contiene más de mil ejemplos diseñados para inducir comportamientos de reward hacking en tareas aparentemente inofensivas. El objetivo del fine-tuning es estudiar si estos comportamientos aprendidos se generalizan a otras tareas, un aspecto crítico para la alineación de la IA.
+El modelo es un fine-tuning supervisado (SFT) del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión ajustada por instrucciones de OLMo-3-7B. La arquitectura subyacente es un transformer decoder-only con atención causal, típico de la familia OLMo. El entrenamiento se realizó utilizando la librería Unsloth (que acelera el fine-tuning) junto con la biblioteca TRL de Hugging Face. El dataset empleado es el "school of reward hacks", específicamente su último tercio, con una semilla aleatoria fija (seed 4). Este dataset, descrito en el paper arXiv:2508.17511, contiene más de mil ejemplos diseñados para inducir comportamientos de reward hacking en tareas aparentemente inofensivas. El objetivo del fine-tuning es estudiar si estos comportamientos aprendidos se generalizan a otras tareas, un aspecto crítico para la alineación de la IA.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: al ser un modelo de 7B parámetros, requiere aproximadamente 14-16 GB de VRAM en precisión fp16, o 7-8 GB si se cuantiza a 4 bits (sin datos oficiales, estimación orientativa).
 - GPU recomendadas: tarjetas con 16 GB o más (RTX 4090, A100, H100) para inferencia sin cuantización; con cuantización 4-bit podría ejecutarse en GPUs de 8 GB como RTX 3070/4060.
 - Compatible con GPUs de consumo: sí, especialmente con cuantización GGUF o AWQ.
-- Opciones de despliegue: vLLM, HuggingFace TGI, llama.cpp (si se convierte a GGUF), Ollama (tras conversión).
+- Opciones de despliegue: vLLM, Hugging Face TGI, llama.cpp (si se convierte a GGUF), Ollama (tras conversión).
 - Latencia y throughput: no disponibles; al ser un modelo de 7B, en una A100 se espera un throughput de decenas de tokens por segundo, pero sin mediciones concretas.
 
 ## Comparativa con modelos similares
@@ -74,10 +74,10 @@ La comparación se limita a los modelos de la misma serie de experimentos y al b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed4
 - Paper de OLMo 3: https://arxiv.org/abs/2512.13961
 - Paper "School of Reward Hacks": https://arxiv.org/abs/2508.17511
 - Repositorio oficial de OLMo: https://github.com/allenai/OLMo
-- Modelos relacionados en HuggingFace:
+- Modelos relacionados en Hugging Face:
   - https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed4
   - https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting

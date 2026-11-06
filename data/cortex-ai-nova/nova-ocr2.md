@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NOVA-OCR2 es un ajuste fino (fine-tune) del modelo DeepSeek-OCR-2 publicado por el usuario cortex-ai-nova en HuggingFace. Se trata de un modelo de visión-lenguaje con arquitectura deepseek_vl_v2, 3.389.119.360 parámetros (~3,39 mil millones) y pesos en safetensors, distribuido con licencia Apache 2.0. El pipeline declarado en la ficha es feature-extraction y el único idioma documentado es el inglés.
+NOVA-OCR2 es un ajuste fino (fine-tune) del modelo DeepSeek-OCR-2 publicado por el usuario cortex-ai-nova en Hugging Face. Se trata de un modelo de visión-lenguaje con arquitectura deepseek_vl_v2, 3.389.119.360 parámetros (~3,39 mil millones) y pesos en safetensors, distribuido con licencia Apache 2.0. El pipeline declarado en la ficha es feature-extraction y el único idioma documentado es el inglés.
 
-El modelo parte de la familia DeepSeek-OCR-2, orientada a reconocimiento óptico de caracteres y extracción de texto a partir de imágenes, y ha sido reentrenado con Unsloth y la librería TRL de HuggingFace, según indica el autor. La model card es mínima: no documenta el conjunto de datos de ajuste, el número de tokens de entrenamiento, la longitud de contexto ni resultados de evaluación, por lo que la información disponible para evaluar su calidad real es muy limitada.
+El modelo parte de la familia DeepSeek-OCR-2, orientada a reconocimiento óptico de caracteres y extracción de texto a partir de imágenes, y ha sido reentrenado con Unsloth y la librería TRL de Hugging Face, según indica el autor. La model card es mínima: no documenta el conjunto de datos de ajuste, el número de tokens de entrenamiento, la longitud de contexto ni resultados de evaluación, por lo que la información disponible para evaluar su calidad real es muy limitada.
 
 Su relevancia actual es acotada: se publica como un derivado de un modelo OCR reciente, con licencia permisiva para uso comercial, pero sin benchmarks, sin variantes cuantizadas y sin validación comunitaria (0 descargas y 0 likes en el momento de la consulta). Resulta adecuado para experimentación controlada y para evaluar su comportamiento frente al modelo base, no como componente listo para producción sin una batería de pruebas propia.
 
@@ -23,7 +23,7 @@ Su relevancia actual es acotada: se publica como un derivado de un modelo OCR re
 | Modelo base | deepseek-ai/DeepSeek-OCR-2 |
 | Pipeline declarado | feature-extraction |
 | Tamano del repositorio | 6,8 GB |
-| Herramientas de ajuste | Unsloth + TRL (HuggingFace) |
+| Herramientas de ajuste | Unsloth + TRL (Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| NOVA-OCR2 | 3.389.119.360 (~3,39 mil millones) | no disponible | Apache 2.0 | en | HuggingFace |
-| DeepSeek-OCR-2 (modelo base) | no disponible en la informacion proporcionada | no disponible | Apache 2.0 segun la ficha del derivado | no disponible | HuggingFace |
+| NOVA-OCR2 | 3.389.119.360 (~3,39 mil millones) | no disponible | Apache 2.0 | en | Hugging Face |
+| DeepSeek-OCR-2 (modelo base) | no disponible en la informacion proporcionada | no disponible | Apache 2.0 segun la ficha del derivado | no disponible | Hugging Face |
 | Alternativas comparables de OCR/VLM de ~3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones completas de alternativas de la misma categoría en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. La única comparación directa posible es con DeepSeek-OCR-2, y requeriría ejecutar ambos modelos sobre el mismo conjunto de imágenes.
@@ -90,8 +90,8 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cortex-ai-nova/NOVA-OCR2
+- Modelo en Hugging Face: https://huggingface.co/cortex-ai-nova/NOVA-OCR2
 - Modelo base DeepSeek-OCR-2: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Unsloth (herramienta de ajuste citada por el autor): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (herramienta de ajuste citada por el autor): https://huggingface.co/docs/trl
+- TRL de Hugging Face (herramienta de ajuste citada por el autor): https://huggingface.co/docs/trl
 - Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los resultados obtenidos corresponden a otros usos del término "cortex" (anatomía, medios y software de gaming) y se han descartado por no estar relacionados.

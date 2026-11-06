@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bosrodriguez/cs229-multitask es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada Dino, orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El repositorio incluye además el código Python de definición del modelo, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador adafactor y scheduler onecycle).
+Bosrodriguez/cs229-multitask es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada Dino, orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El repositorio incluye además el código Python de definición del modelo, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador adafactor y scheduler onecycle).
 
 El dato más llamativo es el recuento real de parámetros en safetensors: 16.576 parámetros totales, pese a que la configuración declara la escala "large". Con ese tamaño, el artefacto no es un modelo de lenguaje generativo en el sentido habitual, sino un esqueleto de investigación para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se declara pipeline, idiomas soportados, contexto ni datos de entrenamiento.
 
@@ -25,7 +25,7 @@ Otros parámetros declarados por el autor: escala "large", activación ReLU, nor
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una implementación personalizada de tipo Dino con atención estándar (no lineal, no aproximada), un mecanismo de fusión de modalidades o tareas mediante gated fusion, activación ReLU y normalización scalenorm. El autor describe el diseño como intencionadamente manejable para poder inspeccionar cambios de arquitectura antes de una ejecución de entrenamiento completa. Al ser una implementación propia, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito para funcionar.
+La arquitectura es una implementación personalizada de tipo Dino con atención estándar (no lineal, no aproximada), un mecanismo de fusión de modalidades o tareas mediante gated fusion, activación ReLU y normalización scalenorm. El autor describe el diseño como intencionadamente manejable para poder inspeccionar cambios de arquitectura antes de una ejecución de entrenamiento completa. Al ser una implementación propia, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito para funcionar.
 
 En cuanto al entrenamiento, no se ha ejecutado ninguno sobre este checkpoint: el repositorio incluye únicamente una receta por defecto con optimizador adafactor y scheduler onecycle, que el autor presenta como valores de partida del script y no como evidencia de una ejecución completada. No se documentan tokens de entrenamiento, composición del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. Tampoco se declaran innovaciones técnicas verificadas más allá de los componentes de arquitectura mencionados.
 
@@ -67,7 +67,7 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bosrodriguez/cs229-multitask | 16.576 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| Bosrodriguez/cs229-multitask | 16.576 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bosrodriguez/cs229-multitask
+- Hugging Face: https://huggingface.co/Bosrodriguez/cs229-multitask
 - No se han encontrado en la búsqueda web papers, blogs, repositorios complementarios ni demos asociados a este modelo. Los resultados de búsqueda disponibles no guardan relación con el modelo.

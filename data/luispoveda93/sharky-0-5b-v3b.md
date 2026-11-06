@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luispoveda93/sharky-0.5B-v3b
+- Modelo en Hugging Face: https://huggingface.co/luispoveda93/sharky-0.5B-v3b
 - Modelo base: https://huggingface.co/openbmb/MiniCPM4-0.5B
 - Iteracion previa: https://huggingface.co/luispoveda93/sharky-0.5B-v3
 - Registro del rechazo: https://huggingface.co/datasets/luispoveda93/sharky-workbench/blob/main/phase9/REJECTED_v3b.md

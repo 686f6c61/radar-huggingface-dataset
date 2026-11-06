@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dmsmirnov/contrastive-quantized` es un prototipo de investigación publicado por el usuario dmsmirnov en HuggingFace. Segun su propia model card, se trata de una implementación propia de una arquitectura denominada "Mae" orientada a tareas de tipo contrastivo. El repositorio incluye el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `model.safetensors`. El recuento real de parametros de los tensores es de 24.832, es decir, un modelo de escala microscópica.
+`dmsmirnov/contrastive-quantized` es un prototipo de investigación publicado por el usuario dmsmirnov en Hugging Face. Segun su propia model card, se trata de una implementación propia de una arquitectura denominada "Mae" orientada a tareas de tipo contrastivo. El repositorio incluye el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `model.safetensors`. El recuento real de parametros de los tensores es de 24.832, es decir, un modelo de escala microscópica.
 
 La relevancia de esta ficha es fundamentalmente negativa y conviene ser explícito: el autor no reclama ningún resultado de benchmark, no documenta datos de entrenamiento y describe el checkpoint como una inicialización válida únicamente para pruebas de humo (*smoke tests*), no como un modelo entrenado. Por tanto, no debe evaluarse como un modelo de producción ni compararse con modelos entrenados de la misma categoría.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU de consumo: cabe en cualquier GPU consumer, e incluso en memoria compartida de CPU, sin restricciones.
 - Opciones de despliegue: PyTorch directo mediante `run.py`. No hay soporte documentado para vLLM, llama.cpp, Ollama, TGI ni ningún servidor de inferencia, ya que es una implementación personalizada y la propia model card indica que las APIs genéricas de carga automática requieren un adaptador explícito.
 - Latencia y throughput: no disponibles. No se han publicado mediciones, y al no estar entrenado el modelo carece de una tarea de inferencia definida.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -79,7 +79,7 @@ No disponible. No existe base para comparar este repositorio con alternativas de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dmsmirnov/contrastive-quantized` | 24.832 | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace |
+| `dmsmirnov/contrastive-quantized` | 24.832 | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,9 +96,9 @@ No disponible. No existe base para comparar este repositorio con alternativas de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dmsmirnov/contrastive-quantized
+- Hugging Face: https://huggingface.co/dmsmirnov/contrastive-quantized
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
-- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace, en `run.py`)
+- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face, en `run.py`)
 - Demo: no disponible
 - Referencias externas: no se han encontrado en la búsqueda web realizada

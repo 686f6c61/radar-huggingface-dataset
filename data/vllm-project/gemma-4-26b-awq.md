@@ -6,7 +6,7 @@ Gemma 4 26B-AWQ es una cuantización de 4 bits del modelo `google/gemma-4-26b-a4
 
 El interés de esta ficha es doble. Por un lado, documenta un checkpoint cuantizado pensado específicamente para GPUs AMD RDNA4 (gfx1201) con SGLang y ROCm 7.2, un nicho poco cubierto por las cuantizaciones habituales orientadas a CUDA. Por otro, sirve como referencia de las limitaciones prácticas de cuantizar un MoE con capas de visión: el codificador visual fue cuantizado a INT4 y el autor declara que la inferencia multimodal es inestable en este entorno, recomendando uso solo de texto.
 
-El contexto probado es de 4K tokens, muy por debajo de lo que suele ofrecer la familia Gemma, y no hay datos publicados sobre benchmarks. La licencia del repositorio es Apache 2.0 según los metadatos de HuggingFace, aunque conviene verificar la licencia del modelo base antes de un uso comercial.
+El contexto probado es de 4K tokens, muy por debajo de lo que suele ofrecer la familia Gemma, y no hay datos publicados sobre benchmarks. La licencia del repositorio es Apache 2.0 según los metadatos de Hugging Face, aunque conviene verificar la licencia del modelo base antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparación con cuantizaciones CUDA de la misma familia (por ejemplo, varian
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/gemma-4-26B-AWQ
+- Hugging Face: https://huggingface.co/vllm-project/gemma-4-26B-AWQ
 - Modelo base: https://huggingface.co/google/gemma-4-26b-a4b-it
 - Checkpoint original: https://huggingface.co/mattbucci/gemma-4-26B-AWQ
 - Repositorio de inferencia RDNA4: https://github.com/mattbucci/2x-R9700-RDNA4-GFX1201-sglang-inference

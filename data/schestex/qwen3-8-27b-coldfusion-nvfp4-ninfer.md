@@ -70,8 +70,8 @@ La informacion disponible solo permite comparar el artefacto con su propio model
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Schestex/Qwen3.8-27B-ColdFusion-NVFP4-NInfer | 27B (segun denominacion) | Configurable hasta 123904 tokens en el runtime de ejemplo; ventana nativa no especificada | `.ninfer` (NVFP4) | no disponible | HuggingFace, requiere runtime NInfer |
-| DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Schestex/Qwen3.8-27B-ColdFusion-NVFP4-NInfer | 27B (segun denominacion) | Configurable hasta 123904 tokens en el runtime de ejemplo; ventana nativa no especificada | `.ninfer` (NVFP4) | no disponible | Hugging Face, requiere runtime NInfer |
+| DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras cuantizaciones del mismo base (GGUF, AWQ, GPTQ, etc.) | no disponible | no disponible | no disponible | no disponible | no confirmadas en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ La informacion disponible solo permite comparar el artefacto con su propio model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Schestex/Qwen3.8-27B-ColdFusion-NVFP4-NInfer
+- Repositorio en Hugging Face: https://huggingface.co/Schestex/Qwen3.8-27B-ColdFusion-NVFP4-NInfer
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Dataset de calibracion NVIDIA Open-SWE-Traces: https://huggingface.co/datasets/nvidia/Open-SWE-Traces
 - Dataset de calibracion Thoughtworks agentic-coding-trajectories: https://huggingface.co/datasets/thoughtworks/agentic-coding-trajectories

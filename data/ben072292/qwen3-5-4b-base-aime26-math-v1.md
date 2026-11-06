@@ -3,7 +3,7 @@
 ## Resumen
 `ben072292/Qwen3.5-4B-Base-AIME26-math-v1` es un ajuste fino completo (full fine-tuning) del modelo base `Qwen/Qwen3.5-4B-Base`, publicado por el usuario ben072292. El entrenamiento se ha realizado con LLaMA-Factory sobre un dataset denominado `math_dpo` mediante DPO (Direct Preference Optimization), con el objetivo declarado de mejorar el comportamiento del modelo en tareas de matematicas (el sufijo "AIME26" apunta a problemas tipo AIME). El nombre del run de entrenamiento, `dpo-full-conservative-lr1e7-ga8-wd0-beta01-delta-gh200-1ep-2048-20260916`, resume la receta: DPO completo, learning rate 1e-7, gradient accumulation 8, weight decay 0, beta 0.1, una epoca y secuencia de 2048, entrenado sobre GH200.
 
-El repositorio tiene 4.539.265.536 parametros reales en safetensors (aproximadamente 4,54 B) y ocupa 9,1 GB, lo que corresponde a pesos en precision de 16 bits. La model card es la generada automaticamente por el Trainer de HuggingFace y no aporta descripcion del modelo, datos de evaluacion ni resultados, por lo que gran parte de las especificaciones (contexto, idiomas, cuantizaciones, arquitectura detallada) no estan documentadas.
+El repositorio tiene 4.539.265.536 parametros reales en safetensors (aproximadamente 4,54 B) y ocupa 9,1 GB, lo que corresponde a pesos en precision de 16 bits. La model card es la generada automaticamente por el Trainer de Hugging Face y no aporta descripcion del modelo, datos de evaluacion ni resultados, por lo que gran parte de las especificaciones (contexto, idiomas, cuantizaciones, arquitectura detallada) no estan documentadas.
 
 Su relevancia es limitada pero concreta: es un ejemplo de pipeline de alineamiento DPO a escala 4B con receta conservadora (learning rate muy bajo y una sola epoca) sobre un modelo base multimodal del linaje Qwen3.5. Resulta util como referencia reproducible de hiperparametros y como punto de partida para experimentos de matematicas, no como modelo listo para produccion: no tiene descargas ni likes, y no se han publicado benchmarks.
 
@@ -31,7 +31,7 @@ El dataset de preferencias se denomina `math_dpo` y no se especifica su composic
 - Tool calling y function calling: no disponible (no se menciona soporte de herramientas).
 - Agentes y razonamiento multi-paso: no disponible (no se documenta modo de pensamiento ni planificacion explicita).
 - Capacidades multilingues: no disponible (idiomas no declarados).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Inference Endpoints de Hugging Face.
 - Capacidad especial de "thinking mode": no disponible.
 
 ## Casos de uso
@@ -60,14 +60,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - Cuantizacion a 4 bits: aproximadamente 2,5-3 GB de pesos, viable en GPUs consumer de 6-8 GB, siempre que se genere la version GGUF o AWQ, que no esta publicada en el repositorio.
 - GPUs recomendadas: NVIDIA A100 40/80 GB, H100 o GH200 para entrenamiento o lotes grandes; RTX 4090 (24 GB), RTX 3090 (24 GB) y RTX 4080 (16 GB) son suficientes para inferencia en 16 bits.
 - Cabe en GPU consumer: si, en RTX 4090, 3090 y 4080 en 16 bits; en RTX 4060 Ti 8 GB o similares solo con cuantizacion de 4-8 bits.
-- Opciones de despliegue: transformers (libreria declarada), vLLM o TGI para servido en 16 bits, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), llama.cpp u Ollama tras convertir los pesos a GGUF (no hay GGUF publicado), y LLaMA-Factory para reentrenamiento o merge de adaptadores.
+- Opciones de despliegue: transformers (libreria declarada), vLLM o TGI para servido en 16 bits, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), llama.cpp u Ollama tras convertir los pesos a GGUF (no hay GGUF publicado), y LLaMA-Factory para reentrenamiento o merge de adaptadores.
 - Latencia y throughput: no disponible; no se han publicado mediciones. Cualquier cifra seria una extrapolacion no verificada a partir del tamano.
 
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ben072292/Qwen3.5-4B-Base-AIME26-math-v1` | 4,54 B | No disponible | Sin benchmarks publicados | `other` | HuggingFace, safetensors, 0 descargas |
-| `Qwen/Qwen3.5-4B-Base` (modelo base) | 4,54 B aprox. | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| `ben072292/Qwen3.5-4B-Base-AIME26-math-v1` | 4,54 B | No disponible | Sin benchmarks publicados | `other` | Hugging Face, safetensors, 0 descargas |
+| `Qwen/Qwen3.5-4B-Base` (modelo base) | 4,54 B aprox. | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros fine-tunes matematicos de ~4-8 B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados de benchmarks, contexto o licencia de alternativas comparables dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable frente a otros modelos matematicos de tamano similar.
@@ -84,7 +84,7 @@ No se dispone de datos verificados de benchmarks, contexto o licencia de alterna
 - Idiomas no declarados: no puede asumirse un buen rendimiento en castellano sin evaluacion previa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ben072292/Qwen3.5-4B-Base-AIME26-math-v1
+- Modelo en Hugging Face: https://huggingface.co/ben072292/Qwen3.5-4B-Base-AIME26-math-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - LLaMA-Factory (framework de entrenamiento indicado en las etiquetas): https://github.com/hiyouga/LLaMA-Factory
 - Transformers: https://github.com/huggingface/transformers

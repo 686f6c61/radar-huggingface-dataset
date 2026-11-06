@@ -105,7 +105,7 @@ No se dispone de datos comparativos de rendimiento en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahesh111000/hanabi-training12-combined-skyrl
+- Modelo en Hugging Face: https://huggingface.co/Mahesh111000/hanabi-training12-combined-skyrl
 - Adaptadores por paso (1-148): https://huggingface.co/Mahesh111000/hanabi-training12-combined-skyrl-loras
 - Modelo base declarado: https://huggingface.co/Mahesh111000/Qwen_merged
 - Directorio de la ejecucion de entrenamiento (configuracion, manifiesto, metricas e indice): https://huggingface.co/Mahesh111000/hanabi-training12-combined-skyrl/tree/main/training_run

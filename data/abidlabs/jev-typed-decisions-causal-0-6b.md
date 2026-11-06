@@ -92,7 +92,7 @@ No se dispone de datos suficientes sobre otras alternativas equivalentes de scor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abidlabs/jev-typed-decisions-causal-0.6b
+- Modelo en Hugging Face: https://huggingface.co/abidlabs/jev-typed-decisions-causal-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/pngwn/typed-decisions-v2
 - Informe del experimento de referencia (arm B): https://huggingface.co/datasets/pngwn/typed-decisions-causal-experiment/blob/main/REPORT.md

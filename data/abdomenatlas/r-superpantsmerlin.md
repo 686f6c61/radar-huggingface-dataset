@@ -76,7 +76,7 @@ No se proporciona en la información disponible ninguna comparación numérica n
 
 | Modelo | Arquitectura | Tarea | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| R-SuperPanTSMerlin | MedFormer | Segmentación de páncreas, lesión pancreática y 24 estructuras adicionales | no disponible | HuggingFace + GitHub oficial | no disponible |
+| R-SuperPanTSMerlin | MedFormer | Segmentación de páncreas, lesión pancreática y 24 estructuras adicionales | no disponible | Hugging Face + GitHub oficial | no disponible |
 | MedFormer | no disponible | Segmentación médica 3D genérica | no disponible | no disponible en esta búsqueda | no disponible |
 | nnU-Net | no disponible | Segmentación médica 3D (baseline habitual en la literatura) | no disponible | no disponible en esta búsqueda | no disponible |
 | TotalSegmentator | no disponible | Segmentación de estructuras anatómicas en TC | no disponible | no disponible en esta búsqueda | no disponible |
@@ -97,7 +97,7 @@ La búsqueda web realizada no devolvió resultados relevantes sobre modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbdomenAtlas/R-SuperPanTSMerlin
+- Modelo en Hugging Face: https://huggingface.co/AbdomenAtlas/R-SuperPanTSMerlin
 - Código de entrenamiento e inferencia (R-Super): https://github.com/MrGiovanni/R-Super
 - Artículo "Scaling Artificial Intelligence for Multi-Tumor Early Detection with More Reports, Fewer Masks": https://huggingface.co/papers/2510.14803
 - Artículo "Learning Segmentation from Radiology Reports" (MICCAI 2025): https://huggingface.co/papers/2501.04678

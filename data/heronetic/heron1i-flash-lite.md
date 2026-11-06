@@ -23,7 +23,7 @@ El entrenamiento se realizo integramente con datos publicos: 24.000 millones de 
 | Anchura del modelo | 240 |
 | Cabezas de atencion | 6 cabezas de query y 3 de key-value, de tamano 40 cada una |
 | Tokenizador | TokenMonster englishcode-4096 con numeros divididos en digitos; vocabulario ampliado a 4.160 con BOS/EOS/PAD |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -101,5 +101,5 @@ La comparacion directa de rendimiento no es posible con los datos disponibles. C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Heronetic/heron1i-flash-lite
+- Modelo en Hugging Face: https://huggingface.co/Heronetic/heron1i-flash-lite
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a vehiculos aereos no tripulados IAI Heron y a un kiosco de autoservicio llamado Heron 1, sin relacion con este modelo de lenguaje. No hay paper, blog, repositorio ni demo adicionales disponibles.

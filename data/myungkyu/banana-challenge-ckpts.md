@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Myungkyu/banana-challenge-ckpts
+- Repositorio Hugging Face: https://huggingface.co/Myungkyu/banana-challenge-ckpts
 - Perfil del autor: https://huggingface.co/Myungkyu
 - Página personal del autor: https://myungkyukoo.github.io/

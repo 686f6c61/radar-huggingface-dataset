@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `r18-a2-w13-k-native-w30-s100`, publicado por el usuario alfred8995 en HuggingFace, es un modelo de lenguaje de aproximadamente 2.018 millones de parametros (2,01 B) distribuidos en pesos en formato safetensors. El identificador del repositorio sugiere una configuracion de entrenamiento concreta (probablemente "rank 18, alpha 2, warmup 13, kernel nativo, weight decay 30, step 100"), lo que apunta a un experimento de ajuste fino o a un checkpoint intermedio de un pipeline de entrenamiento, mas que a un modelo base publicado de forma convencional. La etiqueta `sn38-nanochrono` no corresponde a ninguna familia de modelos ampliamente conocida y no se ha podido verificar su significado.
+El modelo `r18-a2-w13-k-native-w30-s100`, publicado por el usuario alfred8995 en Hugging Face, es un modelo de lenguaje de aproximadamente 2.018 millones de parametros (2,01 B) distribuidos en pesos en formato safetensors. El identificador del repositorio sugiere una configuracion de entrenamiento concreta (probablemente "rank 18, alpha 2, warmup 13, kernel nativo, weight decay 30, step 100"), lo que apunta a un experimento de ajuste fino o a un checkpoint intermedio de un pipeline de entrenamiento, mas que a un modelo base publicado de forma convencional. La etiqueta `sn38-nanochrono` no corresponde a ninguna familia de modelos ampliamente conocida y no se ha podido verificar su significado.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificacion, pero el acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. A pesar de su tamano relativamente contenido para los estandares actuales, el repositorio ocupa 14,4 GB, lo que sugiere pesos en precision alta (posiblemente fp32 o bf16 sin cuantizar) o la inclusion de estados de optimizador junto con los pesos.
+El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificacion, pero el acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. A pesar de su tamano relativamente contenido para los estandares actuales, el repositorio ocupa 14,4 GB, lo que sugiere pesos en precision alta (posiblemente fp32 o bf16 sin cuantizar) o la inclusion de estados de optimizador junto con los pesos.
 
 La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con 2 descargas y 0 likes, no tiene pipeline declarado ni idiomas especificados, y no se han publicado resultados de benchmarks ni documentacion tecnica asociada. Se trata, por tanto, de un artefacto de investigacion o experimento personal cuyo interes practico para produccion es bajo salvo que el autor publique informacion adicional.
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| r18-a2-w13-k-native-w30-s100 | ~2,01 B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| r18-a2-w13-k-native-w30-s100 | ~2,01 B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Qwen2.5-1.5B | 1,5 B | 32k (tipico) | Apache 2.0 | Publico |
 | Gemma-2-2B | 2,6 B | 8k (tipico) | Gemma license | Publico con aceptacion |
 | SmolLM2-1.7B | 1,7 B | 8k (tipico) | Apache 2.0 | Publico |
@@ -80,12 +80,12 @@ Las cifras de los modelos alternativos son orientativas y deben verificarse en s
 - Riesgo elevado de alucinacion y comportamientos impredecibles: sin informacion sobre alineacion (RLHF/DPO), no se puede asumir seguridad conversacional.
 - Sesgos desconocidos: al no conocerse la composicion del corpus, no es posible evaluar sesgos de genero, etnicos, linguisticos o culturales.
 - Idiomas no declarados: no se puede confirmar soporte multilingue ni calidad en castellano.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y al despliegue automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y al despliegue automatizado.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene revisar si el repositorio incluye avisos adicionales al aceptar las condiciones.
 - Repositorio de 14,4 GB para 2 B de parametros: sugiere pesos en alta precision o artefactos adicionales; conviene inspeccionar el contenido antes de descargar.
 - Popularidad practicamente nula (2 descargas, 0 likes): no hay evidencia de uso en comunidad ni de validacion independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w30-s100
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w30-s100
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

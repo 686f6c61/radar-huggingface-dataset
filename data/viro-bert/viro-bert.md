@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Viro-BERT | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| Viro-BERT | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/viro-bert/Viro-BERT
+- Hugging Face: https://huggingface.co/viro-bert/Viro-BERT
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos o demos). Los resultados de busqueda corresponden a entidades no relacionadas (Viro S.p.A., fabricante de cerraduras, y Viro AI, asistente conversacional).

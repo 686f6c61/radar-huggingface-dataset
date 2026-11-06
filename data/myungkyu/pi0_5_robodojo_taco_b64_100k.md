@@ -75,8 +75,8 @@ Los datos publicados en la informacion disponible no permiten una comparacion cu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de benchmark |
 |---|---|---|---|---|---|
-| `Myungkyu/pi0_5_robodojo_taco_b64_100k` | 4.143.404.816 | no disponible | no disponible | HuggingFace, libreria `lerobot` | no disponible |
-| `lerobot/pi05_base` | no disponible | no disponible | no disponible | HuggingFace, modelo base de este ajuste | no disponible |
+| `Myungkyu/pi0_5_robodojo_taco_b64_100k` | 4.143.404.816 | no disponible | no disponible | Hugging Face, libreria `lerobot` | no disponible |
+| `lerobot/pi05_base` | no disponible | no disponible | no disponible | Hugging Face, modelo base de este ajuste | no disponible |
 | `pi0_5_robodojo_taco_b64_60k` | no disponible | no disponible | no disponible | referenciado como checkpoint previo del mismo autor | no disponible |
 
 No se dispone de informacion en la busqueda web sobre alternativas comparables de la misma categoria (VLA para manipulacion bimanual) con parametros, contexto y rendimiento verificables.
@@ -95,7 +95,7 @@ No se dispone de informacion en la busqueda web sobre alternativas comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_b64_100k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_b64_100k
 - Conjunto de datos de ajuste: https://huggingface.co/datasets/Myungkyu/RoboDojo-taco-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Libreria LeRobot: https://github.com/huggingface/lerobot

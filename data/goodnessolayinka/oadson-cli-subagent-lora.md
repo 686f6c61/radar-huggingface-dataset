@@ -62,10 +62,10 @@ No se dispone de evaluaciones comparativas publicadas para el adaptador. La sigu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oadson-cli-subagent-lora (adaptador) | No disponible (sobre base 7B) | No disponible | apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct (base) | 7.6B | 128K | apache-2.0 | HuggingFace |
-| DeepSeek-Coder-7B-Instruct | 6.7B | 16K | MIT | HuggingFace |
-| CodeLlama-7B-Instruct | 6.7B | 16K | Licencia Llama | HuggingFace |
+| oadson-cli-subagent-lora (adaptador) | No disponible (sobre base 7B) | No disponible | apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct (base) | 7.6B | 128K | apache-2.0 | Hugging Face |
+| DeepSeek-Coder-7B-Instruct | 6.7B | 16K | MIT | Hugging Face |
+| CodeLlama-7B-Instruct | 6.7B | 16K | Licencia Llama | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,6 +77,6 @@ No se dispone de evaluaciones comparativas publicadas para el adaptador. La sigu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/goodnessolayinka/oadson-cli-subagent-lora
+- Hugging Face: https://huggingface.co/goodnessolayinka/oadson-cli-subagent-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth

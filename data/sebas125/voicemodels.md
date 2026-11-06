@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sebas125/voicemodels` es un repositorio alojado en HuggingFace por el usuario sebas125. En el momento de la consulta el repositorio no incluye model card con contenido tecnico: la unica informacion declarada es la licencia (openrail), la region (us) y las fechas de creacion y ultima actualizacion, ambas el 10 de septiembre de 2026. No se especifica pipeline, idiomas, arquitectura ni formato de pesos.
+`sebas125/voicemodels` es un repositorio alojado en Hugging Face por el usuario sebas125. En el momento de la consulta el repositorio no incluye model card con contenido tecnico: la unica informacion declarada es la licencia (openrail), la region (us) y las fechas de creacion y ultima actualizacion, ambas el 10 de septiembre de 2026. No se especifica pipeline, idiomas, arquitectura ni formato de pesos.
 
 El nombre del repositorio sugiere un conjunto de modelos orientados a voz (sintesis, conversion de voz o reconocimiento de habla), pero se trata unicamente de una inferencia a partir del identificador y no esta respaldada por ningun dato publicado en el propio repositorio ni en la busqueda web realizada. Por tanto, no es posible confirmar la tarea concreta, el tamano del modelo ni su arquitectura.
 
@@ -47,7 +47,7 @@ Tampoco hay informacion sobre innovaciones tecnicas (atencion lineal, decodifica
 - No es posible recomendar casos de uso concretos: sin conocer la tarea, el tamano ni las capacidades del modelo, cualquier escenario de aplicacion seria especulativo.
 - Evaluacion interna previa a adopcion: un equipo podria clonar el repositorio y ejecutar los pesos para determinar empiricamente la tarea soportada, antes de considerar cualquier integracion.
 - Auditoria de seguridad y licencia: dado que la licencia es openrail, procede revisar las restricciones de uso antes de plantear cualquier despliegue comercial.
-- Analisis de artefactos en un registro de modelos: el repositorio puede usarse como caso de estudio de model cards incompletas y de ausencia de trazabilidad en publicaciones de HuggingFace.
+- Analisis de artefactos en un registro de modelos: el repositorio puede usarse como caso de estudio de model cards incompletas y de ausencia de trazabilidad en publicaciones de Hugging Face.
 - Pruebas de reproducibilidad: verificar si los pesos cargan correctamente con librerias estandar (transformers, PyTorch) para determinar el formato real de los ficheros.
 - Ningun caso de uso en produccion puede justificarse sin antes resolver las incognitas de arquitectura, licencia efectiva y calidad de salida.
 
@@ -70,7 +70,7 @@ No disponible. No se han podido identificar modelos comparables porque se descon
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sebas125/voicemodels | no disponible | no disponible | no disponible | openrail | publico en HuggingFace, 0 descargas |
+| sebas125/voicemodels | no disponible | no disponible | no disponible | openrail | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No se han podido identificar modelos comparables porque se descon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sebas125/voicemodels
+- Repositorio en Hugging Face: https://huggingface.co/sebas125/voicemodels
 - Model card del autor: sin contenido tecnico mas alla de `license: openrail`
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de la busqueda web: sin enlaces relevantes; las consultas devolvieron exclusivamente foros no relacionados con el modelo

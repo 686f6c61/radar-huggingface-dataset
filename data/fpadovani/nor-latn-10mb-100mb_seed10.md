@@ -12,13 +12,13 @@ Su relevancia es fundamentalmente experimental: no compite en capacidades con mo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (dato real de safetensors) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible (no se especifica en la model card ni en los metadatos) |
 | Tipos de cuantizacion | no disponible: no se publican pesos cuantizados. Al ser un modelo de 39 M de parametros puede cuantizarse a int8/int4 con bitsandbytes o convertirse a GGUF mediante llama.cpp |
 | Idiomas soportados | Noruego (`nor`, escritura latina) segun el identificador del modelo base; la model card no declara lista de idiomas |
-| Licencia | no disponible (la model card incluye un campo `licence: license` sin contenido y HuggingFace no declara licencia) |
+| Licencia | no disponible (la model card incluye un campo `licence: license` sin contenido y Hugging Face no declara licencia) |
 | Formato de pesos | safetensors (libreria `transformers`) |
 
 ## Arquitectura y entrenamiento
@@ -45,7 +45,7 @@ El entrenamiento se realizó con TRL 0.23.0, Transformers 4.56.2, PyTorch 2.5.1+
 - Generación de datos sintéticos a pequeña escala: creación de pares de instrucción y respuesta en noruego para aumentar corpus de entrenamiento de modelos mayores, con revisión humana posterior obligatoria.
 - Despliegue en entornos con recursos mínimos: inferencia en CPU, dispositivos embebidos o Raspberry Pi, donde el peso del modelo en float32 ronda los 156 MB.
 - Estudio de tokenizadores multilingües: forma parte del proyecto `new_tokenizers`, por lo que puede emplearse para medir el impacto de distintas tokenizaciones en la calidad del texto generado en noruego.
-- Docencia y formación: ejemplo completo y de bajo coste de un ciclo de ajuste fino con TRL, publicación en HuggingFace y seguimiento de experimentos con Weights & Biases.
+- Docencia y formación: ejemplo completo y de bajo coste de un ciclo de ajuste fino con TRL, publicación en Hugging Face y seguimiento de experimentos con Weights & Biases.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/nor-latn-10mb-100mb_seed10 | 39.087.104 | no disponible | SFT con TRL sobre goldfish-models/nor_latn_10mb | no disponible | HuggingFace |
-| goldfish-models/nor_latn_10mb (base) | 39.087.104 (el ajuste fino no altera el recuento de parametros) | no disponible | Preentrenamiento monolingüe con 10 MB | no disponible | HuggingFace |
-| goldfish-models/nor_latn_100mb y goldfish-models/nor_latn_1gb | no disponible | no disponible | Preentrenamiento monolingüe con 100 MB y 1 GB | no disponible | HuggingFace, segun la convencion de nombres de la familia Goldfish |
+| fpadovani/nor-latn-10mb-100mb_seed10 | 39.087.104 | no disponible | SFT con TRL sobre goldfish-models/nor_latn_10mb | no disponible | Hugging Face |
+| goldfish-models/nor_latn_10mb (base) | 39.087.104 (el ajuste fino no altera el recuento de parametros) | no disponible | Preentrenamiento monolingüe con 10 MB | no disponible | Hugging Face |
+| goldfish-models/nor_latn_100mb y goldfish-models/nor_latn_1gb | no disponible | no disponible | Preentrenamiento monolingüe con 100 MB y 1 GB | no disponible | Hugging Face, segun la convencion de nombres de la familia Goldfish |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes, ni de alternativas noruegas equivalentes evaluadas en las mismas condiciones, por lo que la comparación se limita a arquitectura, presupuesto de datos y disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, ni de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nor-latn-10mb-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nor-latn-10mb-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/kboj1na5

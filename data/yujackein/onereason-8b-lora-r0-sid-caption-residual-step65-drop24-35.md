@@ -79,7 +79,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yujackein/onereason-8b-lora-r0-sid-caption-residual-step65-drop24-35
+- Repositorio Hugging Face: https://huggingface.co/yujackein/onereason-8b-lora-r0-sid-caption-residual-step65-drop24-35
 - Modelo base: https://huggingface.co/OpenOneRec/OneReason-8B-pretrain-competition
 - Informe técnico OneReason (arXiv): https://arxiv.org/abs/2606.06260
 - Versión HTML del informe: https://arxiv.org/html/2606.06260v1

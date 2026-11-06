@@ -82,11 +82,11 @@ Los valores de VRAM son estimaciones aritméticas a partir del recuento de pará
 
 | Modelo | Parámetros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-wc-zipf-newlex-77-eng-100mb_seed13 | 86,5 M | no disponible | no disponible | HuggingFace (0 descargas, 0 valoraciones) |
-| goldfish-models/eng_latn_100mb (base) | ≈86,5 M (el ajuste no altera el recuento) | no disponible | no disponible en la información proporcionada | HuggingFace |
-| distilgpt2 | 82 M | 1.024 tokens | Apache-2.0 | HuggingFace (dato público) |
-| gpt2 (small) | 124 M | 1.024 tokens | MIT | HuggingFace (dato público) |
-| pythia-70m | 70 M | 2.048 tokens | Apache-2.0 | HuggingFace (dato público) |
+| ppt-wc-zipf-newlex-77-eng-100mb_seed13 | 86,5 M | no disponible | no disponible | Hugging Face (0 descargas, 0 valoraciones) |
+| goldfish-models/eng_latn_100mb (base) | ≈86,5 M (el ajuste no altera el recuento) | no disponible | no disponible en la información proporcionada | Hugging Face |
+| distilgpt2 | 82 M | 1.024 tokens | Apache-2.0 | Hugging Face (dato público) |
+| gpt2 (small) | 124 M | 1.024 tokens | MIT | Hugging Face (dato público) |
+| pythia-70m | 70 M | 2.048 tokens | Apache-2.0 | Hugging Face (dato público) |
 
 Los datos de las tres alternativas de referencia proceden de sus fichas públicas y no de la información proporcionada sobre este modelo. No es posible comparar rendimiento porque el modelo evaluado no publica ninguna métrica; la comparación se limita a tamaño, contexto, licencia y disponibilidad.
 
@@ -106,7 +106,7 @@ Los datos de las tres alternativas de referencia proceden de sus fichas pública
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed13
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed13
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - *Run* de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/7dgd1r1y

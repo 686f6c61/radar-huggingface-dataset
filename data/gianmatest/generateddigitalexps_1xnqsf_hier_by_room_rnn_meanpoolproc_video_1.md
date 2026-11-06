@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto publicado en HuggingFace por el usuario `gianmaTest`. Por el nombre se deduce que se trata de un modelo de red neuronal recurrente (RNN) con agregación mediante *mean pooling*, probablemente orientado a tareas de procesamiento de vídeo con estructura jerárquica "por habitación" (*hier by room*). No obstante, el autor no ha publicado ninguna documentación que confirme esta interpretación.
+El modelo `generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto publicado en Hugging Face por el usuario `gianmaTest`. Por el nombre se deduce que se trata de un modelo de red neuronal recurrente (RNN) con agregación mediante *mean pooling*, probablemente orientado a tareas de procesamiento de vídeo con estructura jerárquica "por habitación" (*hier by room*). No obstante, el autor no ha publicado ninguna documentación que confirme esta interpretación.
 
 El repositorio no incluye model card sustantiva: el README únicamente indica que el modelo se ha subido mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`, y deja como "More Information Needed" las referencias a código, paper y documentación. No hay pipeline declarado, ni licencia, ni idiomas especificados, ni resultados de evaluación.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_1
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible

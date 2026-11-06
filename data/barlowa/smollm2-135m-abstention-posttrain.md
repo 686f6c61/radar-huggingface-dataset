@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`barlowa/smollm2-135m-abstention-posttrain` es un artefacto de investigación publicado en HuggingFace que contiene seis checkpoints del ciclo completo de post-entrenamiento (SFT, DPO, GRPO y una ablación) aplicado sobre `HuggingFaceTB/SmolLM2-135M`, un transformer decoder-only de 135 millones de parámetros. El autor lo describe explícitamente como una "mechanics demo": su valor no es la capacidad del modelo, sino el fallo medido y la recuperación posterior sobre una tarea sintética de abstención frente a fabricación.
+`barlowa/smollm2-135m-abstention-posttrain` es un artefacto de investigación publicado en Hugging Face que contiene seis checkpoints del ciclo completo de post-entrenamiento (SFT, DPO, GRPO y una ablación) aplicado sobre `HuggingFaceTB/SmolLM2-135M`, un transformer decoder-only de 135 millones de parámetros. El autor lo describe explícitamente como una "mechanics demo": su valor no es la capacidad del modelo, sino el fallo medido y la recuperación posterior sobre una tarea sintética de abstención frente a fabricación.
 
 La tarea de entrenamiento es plantillada y sintética: hechos de farmacología generados por plantilla, con prompts respondibles y no respondibles, donde el comportamiento deseado es abstenerse cuando la respuesta no está en los datos en lugar de inventarla. El repositorio documenta un colapso de DPO a learning rate 1e-4 (95% de salidas degeneradas en prompts no respondibles pese a un 100% de precisión de preferencia en entrenamiento) y su reparación con GRPO y una recompensa con crédito parcial.
 
@@ -24,7 +24,7 @@ Es relevante porque aísla, en un modelo pequeño y reproducible, dos fenómenos
 | Checkpoints incluidos | `sft/`, `dpo/`, `grpo/`, `dpo_lr1e5/`, `grpo_s105/`, `grpo_from_sft/` |
 | Tamano del repositorio | 2,7 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 2026-09-25 (según el registro de HuggingFace) |
+| Fecha de publicacion | 2026-09-25 (según el registro de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -102,13 +102,13 @@ Los datos de parámetros y contexto de los modelos de referencia proceden de sus
 - Riesgo de alucinación: el modelo base SmolLM2-135M tiene capacidad limitada y, fuera de las plantillas entrenadas, la abstención calibrada no está garantizada; precisamente el fallo documentado muestra lo fácil que es destruir ese comportamiento.
 - Idiomas no declarados; el corpus de post-entrenamiento es sintético y en inglés, por lo que no cabe esperar un comportamiento fiable en castellano.
 - Con 0 descargas y 0 likes, el artefacto no ha sido validado por terceros.
-- Discrepancia de identificador: la ficha de HuggingFace usa el usuario `barlowa`, mientras que la model card y el repositorio de GitHub usan `barlowa124`; el ejemplo de código de la model card apunta a `barlowa124/smollm2-135m-abstention-posttrain`, que puede no resolver.
+- Discrepancia de identificador: la ficha de Hugging Face usa el usuario `barlowa`, mientras que la model card y el repositorio de GitHub usan `barlowa124`; el ejemplo de código de la model card apunta a `barlowa124/smollm2-135m-abstention-posttrain`, que puede no resolver.
 - La fecha de publicación declarada (2026-09-25) es posterior a la fecha habitual de consulta; conviene verificarla antes de citarla.
 - La licencia Apache-2.0 permite uso comercial del artefacto, pero no existe ninguna garantía de idoneidad ni de exactitud de los hechos sintéticos que maneja.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/barlowa/smollm2-135m-abstention-posttrain
+- Modelo en Hugging Face: https://huggingface.co/barlowa/smollm2-135m-abstention-posttrain
 - Repositorio de código del autor (SFT + DPO + GRPO): https://github.com/barlowa124/llm-posttraining
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Modelo predecesor SmolLM-135M: https://huggingface.co/HuggingFaceTB/SmolLM-135M

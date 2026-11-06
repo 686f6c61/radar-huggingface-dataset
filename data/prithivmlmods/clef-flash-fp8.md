@@ -4,7 +4,7 @@
 
 clef-flash-FP8 es una version cuantizada en FP8 del modelo Cloudflare/clef-flash, publicada por el desarrollador indio Prithiv Sakthi (prithivMLmods) el 1 de octubre de 2026. Se trata de un modelo de 9.409.813.744 parametros (aproximadamente 9,4 mil millones) cuyo unico proposito declarado por el autor es ofrecer los pesos del modelo base en precision FP8 para reducir el coste de memoria y acelerar la inferencia en hardware compatible.
 
-El repositorio no incluye model card descriptiva: la unica informacion aportada por el autor es la relacion con el modelo base Cloudflare/clef-flash. Los metadatos de HuggingFace etiquetan el modelo con las etiquetas qwen3_5 y compressed-tensors, lo que situa la arquitectura en la familia Qwen3.5 y el formato de cuantizacion en el estandar compressed-tensors de Neural Magic/vLLM. El peso del repositorio es de 13,5 GB.
+El repositorio no incluye model card descriptiva: la unica informacion aportada por el autor es la relacion con el modelo base Cloudflare/clef-flash. Los metadatos de Hugging Face etiquetan el modelo con las etiquetas qwen3_5 y compressed-tensors, lo que situa la arquitectura en la familia Qwen3.5 y el formato de cuantizacion en el estandar compressed-tensors de Neural Magic/vLLM. El peso del repositorio es de 13,5 GB.
 
 Su relevancia es limitada y muy especifica: al no haber datos publicados de benchmarks, licencia, idiomas soportados ni contexto, la ficha debe entenderse como una descripcion de un artefacto de cuantizacion, no como una evaluacion del modelo subyacente. Es util para quien ya conozca Cloudflare/clef-flash y quiera desplegarlo en FP8, pero no para quien necesite evaluar capacidades desde cero.
 
@@ -98,9 +98,9 @@ La comparacion de rendimiento entre estos modelos no es posible con la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/prithivMLmods/clef-flash-FP8
+- Repositorio Hugging Face del modelo: https://huggingface.co/prithivMLmods/clef-flash-FP8
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
-- Perfil del autor en HuggingFace: https://huggingface.co/prithivMLmods
+- Perfil del autor en Hugging Face: https://huggingface.co/prithivMLmods
 - Sitio personal del autor: https://prithivsakthiur.github.io/prithivmlmods/
 - Perfil de GitHub del autor: https://github.com/PRITHIVSAKTHIUR
 - Otra cuantizacion FP8 del mismo autor (referencia de estilo): https://huggingface.co/prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0-fp8

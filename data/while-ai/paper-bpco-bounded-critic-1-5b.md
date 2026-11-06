@@ -75,9 +75,9 @@ Comparativa entre los brazos incluidos en el propio repositorio y el modelo base
 
 | Modelo | Parametros | Contexto | pass@1 (GSM8K) | pass@k (GSM8K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct (base, sin entrenar) | 1,5 B | 32.768 tokens | 0,39 | 0,60 | apache-2.0 | HuggingFace |
-| paper-bpco-bounded-critic-1.5b, brazo baseline | 1,5 B + LoRA | Heredado del base | 0,43 | 0,66 | apache-2.0 | HuggingFace (subcarpeta `baseline`) |
-| paper-bpco-bounded-critic-1.5b, brazo receta | 1,5 B + LoRA | Heredado del base | 0,41 | 0,73 | apache-2.0 | HuggingFace (raíz del repo) |
+| Qwen2.5-1.5B-Instruct (base, sin entrenar) | 1,5 B | 32.768 tokens | 0,39 | 0,60 | apache-2.0 | Hugging Face |
+| paper-bpco-bounded-critic-1.5b, brazo baseline | 1,5 B + LoRA | Heredado del base | 0,43 | 0,66 | apache-2.0 | Hugging Face (subcarpeta `baseline`) |
+| paper-bpco-bounded-critic-1.5b, brazo receta | 1,5 B + LoRA | Heredado del base | 0,41 | 0,73 | apache-2.0 | Hugging Face (raíz del repo) |
 
 No se dispone en la información proporcionada de comparaciones con otros adaptadores o modelos de RL para GSM8K de la misma categoría.
 
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de comparaciones con otros adapta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/paper-bpco-bounded-critic-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/paper-bpco-bounded-critic-1.5b
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Receta en el SDK de while-ai: https://github.com/whilehq/whileai-sdk/tree/main/recipes/papers/bpco-bounded-critic
 - Repositorio whileai-sdk: https://github.com/whilehq/whileai-sdk

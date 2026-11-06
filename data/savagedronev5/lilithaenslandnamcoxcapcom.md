@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SavageDroneV5/LilithAenslandNamcoXCapcom` es un repositorio alojado en HuggingFace que, por su nombre y los resultados de búsqueda asociados, parece estar orientado a la generación de imágenes de personajes de ficción, concretamente Lilith Aensland de la saga Darkstalkers de Capcom y su aparición en el crossover Namco x Capcom. Sin embargo, la información técnica disponible es prácticamente nula: el repositorio tiene un tamaño de 0.0 GB, no se especifica pipeline, ni idiomas, ni arquitectura, y la model card únicamente declara la licencia Apache 2.0.
+El modelo `SavageDroneV5/LilithAenslandNamcoXCapcom` es un repositorio alojado en Hugging Face que, por su nombre y los resultados de búsqueda asociados, parece estar orientado a la generación de imágenes de personajes de ficción, concretamente Lilith Aensland de la saga Darkstalkers de Capcom y su aparición en el crossover Namco x Capcom. Sin embargo, la información técnica disponible es prácticamente nula: el repositorio tiene un tamaño de 0.0 GB, no se especifica pipeline, ni idiomas, ni arquitectura, y la model card únicamente declara la licencia Apache 2.0.
 
 No se puede confirmar que se trate de un modelo de difusión, un LoRA, un checkpoint o cualquier otro tipo de artefacto. Dado que no hay datos de arquitectura, parámetros, entrenamiento o capacidades, esta ficha se limita a documentar la ausencia de información y a señalar las posibles referencias externas. Se recomienda encarecidamente no utilizar este modelo en producción sin antes obtener especificaciones verificables del autor.
 
@@ -53,7 +53,7 @@ No disponible. Al no conocerse la arquitectura ni el propósito exacto del model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SavageDroneV5/LilithAenslandNamcoXCapcom
+- Repositorio Hugging Face: https://huggingface.co/SavageDroneV5/LilithAenslandNamcoXCapcom
 - Referencia de arte del personaje (PixAI): https://pixai.art/en/model/1866654092274695047
 - Render de Lilith Aensland (DeviantArt): https://www.deviantart.com/zabzarock/art/Lilith-Aensland-709372412
 - Modelo 3D de Lilith Aensland (Tahldon's Art): https://www.tahldon.art/portfolio-collections/my-portfolio/lilith-aensland-soul-reflect

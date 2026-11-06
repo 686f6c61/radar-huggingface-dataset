@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-Encoder-350M-Diffusion (este) | 354 M | 8K (familia) | Encoder bidireccional LFM2 + difusion enmascarada | lfm1.0 | HuggingFace (base y GGUF) |
-| LFM2.5-Encoder-230M | Aproximadamente 230 M (no confirmado) | 8K | Encoder bidireccional LFM2 | lfm1.0 | HuggingFace |
-| LFM2.5-350M | Aproximadamente 350 M | No disponible | Generativa LFM2 (autorregresiva) | lfm1.0 | HuggingFace (GGUF de mradermacher) |
-| ModernBERT-base | 149 M | 8.192 | Encoder bidireccional (sin difusion) | Apache 2.0 | HuggingFace (referencia externa, no incluida en la informacion proporcionada) |
+| LFM2.5-Encoder-350M-Diffusion (este) | 354 M | 8K (familia) | Encoder bidireccional LFM2 + difusion enmascarada | lfm1.0 | Hugging Face (base y GGUF) |
+| LFM2.5-Encoder-230M | Aproximadamente 230 M (no confirmado) | 8K | Encoder bidireccional LFM2 | lfm1.0 | Hugging Face |
+| LFM2.5-350M | Aproximadamente 350 M | No disponible | Generativa LFM2 (autorregresiva) | lfm1.0 | Hugging Face (GGUF de mradermacher) |
+| ModernBERT-base | 149 M | 8.192 | Encoder bidireccional (sin difusion) | Apache 2.0 | Hugging Face (referencia externa, no incluida en la informacion proporcionada) |
 
 Las tres primeras filas corresponden a modelos citados en la informacion recogida. La fila de ModernBERT-base se incluye como referencia de categoria (encoder bidireccional de contexto largo), pero sus datos no provienen de la informacion proporcionada en esta busqueda y deben verificarse en su repositorio oficial. No hay datos de rendimiento comparativo entre estos modelos en la informacion disponible.
 

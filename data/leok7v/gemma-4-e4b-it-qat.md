@@ -77,7 +77,7 @@ No se dispone de datos suficientes para una comparativa detallada con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leok7v/gemma-4-e4b-it-qat
+- Repositorio Hugging Face: https://huggingface.co/leok7v/gemma-4-e4b-it-qat
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-mobile-transformers
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

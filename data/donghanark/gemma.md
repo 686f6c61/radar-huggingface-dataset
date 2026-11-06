@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Donghanark/gemma es un repositorio alojado en HuggingFace por el usuario Donghanark que, segun los metadatos publicos disponibles, unicamente declara la licencia "gemma" y la region "us". No incluye model card con contenido tecnico, no especifica pipeline, idiomas, arquitectura ni tamano, y en el momento de la consulta acumula 0 descargas y 0 "likes". El repositorio fue creado y actualizado el 30 de septiembre de 2026, sin actualizaciones posteriores registradas.
+Donghanark/gemma es un repositorio alojado en Hugging Face por el usuario Donghanark que, segun los metadatos publicos disponibles, unicamente declara la licencia "gemma" y la region "us". No incluye model card con contenido tecnico, no especifica pipeline, idiomas, arquitectura ni tamano, y en el momento de la consulta acumula 0 descargas y 0 "likes". El repositorio fue creado y actualizado el 30 de septiembre de 2026, sin actualizaciones posteriores registradas.
 
 Por el identificador y la licencia declarada, todo apunta a una publicacion derivada o no oficial de la familia Gemma de Google DeepMind, pero la informacion disponible no permite confirmar a que version concreta corresponde (Gemma 1, 2, 3 o 4), ni si contiene pesos reales, adaptadores, un fine-tuning o simplemente archivos de configuracion. La model card, en su unico campo disponible, se limita a repetir la declaracion de licencia.
 
@@ -69,7 +69,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y el contexto del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Donghanark/gemma
+- Repositorio en Hugging Face: https://huggingface.co/Donghanark/gemma
 - Pagina oficial de Gemma (Google DeepMind): https://deepmind.google/models/gemma/
 - Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Documentacion de Gemma para desarrolladores: https://ai.google.dev/gemma/docs

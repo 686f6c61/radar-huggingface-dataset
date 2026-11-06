@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ololade117/scaling-normal-3.7M-157000steps es un modelo de lenguaje de escala minima publicado en HuggingFace por el usuario Ololade117. Con 3.686.400 parametros (dato real extraido de los pesos safetensors), se situa tres ordenes de magnitud por debajo de los modelos de uso general actuales, lo que lo adscribe a la categoria de modelos de juguete o de investigacion sobre leyes de escalado. El nombre del repositorio sugiere un experimento controlado de escalado: un modelo de 3,7 millones de parametros entrenado durante 157.000 pasos, en linea con otros repositorios del mismo autor (scaling-normal-3.7M-65000steps, scaling-normal-13.7M-15000steps) que parecen formar parte de una misma serie sistematica.
+Ololade117/scaling-normal-3.7M-157000steps es un modelo de lenguaje de escala minima publicado en Hugging Face por el usuario Ololade117. Con 3.686.400 parametros (dato real extraido de los pesos safetensors), se situa tres ordenes de magnitud por debajo de los modelos de uso general actuales, lo que lo adscribe a la categoria de modelos de juguete o de investigacion sobre leyes de escalado. El nombre del repositorio sugiere un experimento controlado de escalado: un modelo de 3,7 millones de parametros entrenado durante 157.000 pasos, en linea con otros repositorios del mismo autor (scaling-normal-3.7M-65000steps, scaling-normal-13.7M-15000steps) que parecen formar parte de una misma serie sistematica.
 
-La model card es practicamente inexistente: consiste unicamente en la plantilla autogenerada por la integracion PyTorchModelHubMixin de HuggingFace, con los campos Code, Paper y Docs marcados como "More Information Needed". No se declara arquitectura, dataset de entrenamiento, tokenizador, longitud de contexto ni idiomas soportados. La licencia es MIT, lo que permite uso comercial y modificacion sin restricciones practicas, pero la ausencia de documentacion tecnica limita severamente cualquier evaluacion seria.
+La model card es practicamente inexistente: consiste unicamente en la plantilla autogenerada por la integracion PyTorchModelHubMixin de Hugging Face, con los campos Code, Paper y Docs marcados como "More Information Needed". No se declara arquitectura, dataset de entrenamiento, tokenizador, longitud de contexto ni idiomas soportados. La licencia es MIT, lo que permite uso comercial y modificacion sin restricciones practicas, pero la ausencia de documentacion tecnica limita severamente cualquier evaluacion seria.
 
 Su relevancia actual es, por tanto, academica y no productiva: sirve como referencia reproducible para estudiar curvas de escalado, comparar configuraciones de entrenamiento a pequena escala o como banco de pruebas para pipelines de entrenamiento e inferencia. No debe considerarse un modelo apto para tareas de generacion de texto en produccion.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, academica y no productiva: sirve como refere
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. La model card no incluye descripcion alguna y los tags de HuggingFace se limitan a `safetensors`, `model_hub_mixin`, `pytorch_model_hub_mixin` y `region:us`. El identificador del repositorio, `scaling-normal-3.7M-157000steps`, sugiere que se trata de un experimento de escalado con un tamano fijo de 3,7 M de parametros y un presupuesto de entrenamiento de 157.000 pasos, pero esta interpretacion es una inferencia a partir del nombre y no un dato confirmado por el autor.
+No se dispone de informacion sobre la arquitectura interna del modelo. La model card no incluye descripcion alguna y los tags de Hugging Face se limitan a `safetensors`, `model_hub_mixin`, `pytorch_model_hub_mixin` y `region:us`. El identificador del repositorio, `scaling-normal-3.7M-157000steps`, sugiere que se trata de un experimento de escalado con un tamano fijo de 3,7 M de parametros y un presupuesto de entrenamiento de 157.000 pasos, pero esta interpretacion es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el tokenizador empleado ni la existencia de fases de ajuste fino supervisado, RLHF o DPO. No se ha publicado paper, repositorio de codigo asociado ni documentacion adicional en los resultados de busqueda disponibles. El modelo se subio al Hub mediante la integracion `PyTorchModelHubMixin`, lo que implica que el objeto guardado es un `torch.nn.Module` serializado y que la carga requiere conocer la clase Python original o inspeccionar el archivo de pesos directamente.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ololade117/scaling-normal-3.7M-157000steps | 3,7 M | no disponible | no disponible | MIT | HuggingFace |
-| Ololade117/scaling-normal-3.7M-65000steps | no confirmado (el nombre indica 3,7 M) | no disponible | no disponible | no disponible en los resultados de busqueda | HuggingFace |
-| Ololade117/scaling-normal-13.7M-15000steps | no confirmado (el nombre indica 13,7 M) | no disponible | no disponible | no disponible en los resultados de busqueda | HuggingFace |
+| Ololade117/scaling-normal-3.7M-157000steps | 3,7 M | no disponible | no disponible | MIT | Hugging Face |
+| Ololade117/scaling-normal-3.7M-65000steps | no confirmado (el nombre indica 3,7 M) | no disponible | no disponible | no disponible en los resultados de busqueda | Hugging Face |
+| Ololade117/scaling-normal-13.7M-15000steps | no confirmado (el nombre indica 13,7 M) | no disponible | no disponible | no disponible en los resultados de busqueda | Hugging Face |
 
 No se dispone de informacion suficiente para comparar con alternativas de otras familias (por ejemplo, modelos diminutos orientados a tareas especificas), ya que no se ha publicado ninguna metrica de rendimiento para este modelo.
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar con alternativas de otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/scaling-normal-3.7M-157000steps
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/scaling-normal-3.7M-157000steps
 - Repositorio hermano: https://huggingface.co/Ololade117/scaling-normal-3.7M-65000steps
 - Repositorio hermano: https://huggingface.co/Ololade117/scaling-normal-13.7M-15000steps
 - Perfil de GitHub del autor: https://github.com/Ololade117/

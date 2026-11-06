@@ -44,7 +44,7 @@ El entrenamiento se ha realizado con TRL 0.23.0 sobre Transformers 4.56.2, PyTor
 - Generacion de texto auxiliar de bajo coste: redaccion de borradores cortos, expansiones simples o completado de frases donde no se requiera alta calidad.
 - Pruebas de integracion con TGI y endpoints compatibles: permite validar infraestructura de despliegue de modelos pequenos sin consumir recursos significativos.
 - Fine-tuning incremental sobre dominios especificos: por su tamano reducido, es viable reentrenarlo en una unica GPU consumer con datasets de miles de ejemplos.
-- Educacion y docencia: util para ilustrar el ciclo completo de preentrenamiento, ajuste fino y publicacion de pesos en HuggingFace.
+- Educacion y docencia: util para ilustrar el ciclo completo de preentrenamiento, ajuste fino y publicacion de pesos en Hugging Face.
 - Investigacion sobre degradacion por sobreajuste: al ser un checkpoint temprano (paso 500) de un modelo pequeno, facilita el estudio de la evolucion de la perdida y de la calidad generativa durante el entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jpn-jpan-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 124,77 M | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| jpn-jpan-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 124,77 M | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Ingles principalmente | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Ingles | Apache 2.0 | Ampliamente disponible |
-| TinyLlama-1.1B | 1,1 B | 2048 tokens | Ingles (con ajuste multilingue limitado) | Apache 2.0 | HuggingFace |
+| TinyLlama-1.1B | 1,1 B | 2048 tokens | Ingles (con ajuste multilingue limitado) | Apache 2.0 | Hugging Face |
 
 La comparacion con GPT-2 small y DistilGPT-2 es pertinente por escala de parametros. TinyLlama se incluye como referencia de un modelo pequeno moderno con mejor soporte de instrucciones. No hay datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa.
 
@@ -84,7 +84,7 @@ La comparacion con GPT-2 small y DistilGPT-2 es pertinente por escala de paramet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/k4hldn33

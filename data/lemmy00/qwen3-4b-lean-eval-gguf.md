@@ -74,7 +74,7 @@ No se dispone de información sobre otros fine-tunes de Qwen3-4B específicos pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lemmy00/qwen3-4b-lean-eval-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Lemmy00/qwen3-4b-lean-eval-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Conversión GGUF oficial de Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B-GGUF
 - Referencia sobre Qwen3-4B en GGUF (Unsloth): https://dev.co/ai/llms/unsloth-qwen3-4b-gguf

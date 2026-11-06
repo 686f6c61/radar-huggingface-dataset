@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| izlley/h101-smolvla-t1-v6 | ~450 M | VLA ajustado para SO-101, tarea T1 | apache-2.0 | HuggingFace, repo 1,2 GB |
-| lerobot/smolvla_base | ~450 M | VLA base (checkpoint del que deriva) | no disponible en la informacion | HuggingFace (lerobot) |
+| izlley/h101-smolvla-t1-v6 | ~450 M | VLA ajustado para SO-101, tarea T1 | apache-2.0 | Hugging Face, repo 1,2 GB |
+| lerobot/smolvla_base | ~450 M | VLA base (checkpoint del que deriva) | no disponible en la informacion | Hugging Face (lerobot) |
 | OpenVLA | ~7 B | VLA generalista de manipulacion | no disponible en la informacion | publico |
 | pi0 / pi-zero | ~3 B | VLA de proposito general para robotica | no disponible en la informacion | publico |
 
@@ -106,7 +106,7 @@ Los datos de rendimiento de las alternativas no se han verificado en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/izlley/h101-smolvla-t1-v6
+- Modelo en Hugging Face: https://huggingface.co/izlley/h101-smolvla-t1-v6
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de ajuste: https://huggingface.co/datasets/izlley/h101_t1_pickplace_v6
 - Sucesor multi-tarea: https://huggingface.co/izlley/h101-smolvla-multi-v1

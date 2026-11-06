@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-E4B-it-oQ5e-mtp es una cuantizacion mixta del modelo Gemma 4 E4B instruct, publicada por el usuario jancirnodziewiaty en HuggingFace. El checkpoint original ha sido procesado con la herramienta oQ (oMLX v0.7.3), que aplica cuantizacion de precision mixta por tensor con el objetivo de reducir el espacio en disco y la memoria necesaria sin degradar en exceso la calidad. El resultado es un checkpoint de 8.020 millones de parametros logicos almacenados en 5.985 GiB, con una media efectiva de 6,410 bits por peso.
+gemma-4-E4B-it-oQ5e-mtp es una cuantizacion mixta del modelo Gemma 4 E4B instruct, publicada por el usuario jancirnodziewiaty en Hugging Face. El checkpoint original ha sido procesado con la herramienta oQ (oMLX v0.7.3), que aplica cuantizacion de precision mixta por tensor con el objetivo de reducir el espacio en disco y la memoria necesaria sin degradar en exceso la calidad. El resultado es un checkpoint de 8.020 millones de parametros logicos almacenados en 5.985 GiB, con una media efectiva de 6,410 bits por peso.
 
 El modelo esta pensado para ejecutarse en el ecosistema MLX de Apple, es decir, sobre chips Apple Silicon (M1, M2, M3, M4 y variantes Pro/Max/Ultra). La libreria declarada es mlx y el formato de pesos es safetensors, por lo que no es directamente compatible con llama.cpp, vLLM ni Ollama sin conversion previa. El repositorio ocupa 6,5 GB e incluye, ademas del modelo de lenguaje, modulos de vision, audio y una cabeza MTP (multi-token prediction), lo que sugiere que el modelo original es multimodal.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E4B-it-oQ5e-mtp | 8,020B | no disponible | safetensors MLX | no disponible | HuggingFace (0 descargas) |
+| gemma-4-E4B-it-oQ5e-mtp | 8,020B | no disponible | safetensors MLX | no disponible | Hugging Face (0 descargas) |
 | Gemma 4 E4B original (BF16) | no disponible en la informacion | no disponible | safetensors | no disponible | no disponible en la informacion |
 | Otras cuantizaciones comunitarias de Gemma 4 E4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para comparar con alternativas concretas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ5e-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ5e-mtp
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Gemma 4 E4B: no disponible en la informacion proporcionada
 - Paper, blog o demo del modelo original: no disponible en la informacion proporcionada

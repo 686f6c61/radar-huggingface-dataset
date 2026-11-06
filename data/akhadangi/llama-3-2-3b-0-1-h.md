@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B.0.1-H es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.2-3B publicado por el desarrollador Afshin Khadangi (usuario akhadangi en HuggingFace). Segun la model card, el ajuste se ha realizado empleando una tecnica denominada DeepMem, referenciada con el identificador arXiv 2611.05255. El modelo conserva la arquitectura original de Llama 3.2 3B, con 3.212.749.824 parametros en formato safetensors y un repositorio de 6,4 GB.
+Llama-3.2-3B.0.1-H es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.2-3B publicado por el desarrollador Afshin Khadangi (usuario akhadangi en Hugging Face). Segun la model card, el ajuste se ha realizado empleando una tecnica denominada DeepMem, referenciada con el identificador arXiv 2611.05255. El modelo conserva la arquitectura original de Llama 3.2 3B, con 3.212.749.824 parametros en formato safetensors y un repositorio de 6,4 GB.
 
 El modelo resuelve la misma tarea que su base: generacion de texto autoregresiva con la libreria transformers y compatibilidad con text-generation-inference. Se distribuye bajo la licencia llama3.2, la misma que el modelo original, y esta etiquetado como compatible con endpoints. Su relevancia es limitada por el momento: apenas 7 descargas y 0 likes desde su creacion en marzo de 2025, y la model card es extremadamente escueta, sin detallar datos de entrenamiento, benchmarks ni idiomas soportados.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| akhadangi/Llama-3.2-3B.0.1-H | 3.212.749.824 | no disponible | llama3.2 | HuggingFace, 7 descargas |
-| meta-llama/Llama-3.2-3B | 3.210.000.000 aprox. | 128.000 tokens (segun el modelo base) | llama3.2 | HuggingFace, ampliamente distribuido |
-| Ajustes comunitarios de Llama 3.2 3B | ~3.200 millones | variable | llama3.2 | HuggingFace, multiple |
+| akhadangi/Llama-3.2-3B.0.1-H | 3.212.749.824 | no disponible | llama3.2 | Hugging Face, 7 descargas |
+| meta-llama/Llama-3.2-3B | 3.210.000.000 aprox. | 128.000 tokens (segun el modelo base) | llama3.2 | Hugging Face, ampliamente distribuido |
+| Ajustes comunitarios de Llama 3.2 3B | ~3.200 millones | variable | llama3.2 | Hugging Face, multiple |
 
 La comparativa con alternativas de otros linajes (Qwen 2.5 3B, Gemma 2 2B) no se incluye porque la informacion proporcionada no permite contrastar rendimiento ni contexto de forma verificable.
 
@@ -81,7 +81,7 @@ La comparativa con alternativas de otros linajes (Qwen 2.5 3B, Gemma 2 2B) no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhadangi/Llama-3.2-3B.0.1-H
+- Modelo en Hugging Face: https://huggingface.co/akhadangi/Llama-3.2-3B.0.1-H
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Paper de DeepMem citado en la model card: https://arxiv.org/abs/2611.05255
 - Perfil del autor: https://huggingface.co/akhadangi

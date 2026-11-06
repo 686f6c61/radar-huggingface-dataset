@@ -79,8 +79,8 @@ No se han identificado alternativas comparables en la información disponible. L
 
 | Modelo | Parámetros | Contexto | Licencia | PyAT frozen | Disponibilidad |
 |---|---:|---|---|---:|---|
-| LFM2.5-230M-hackring-v001 | 229,7 M | 3.072 tokens (entrenamiento) | lfm1.0 | 2/8 | HuggingFace |
-| LiquidAI/LFM2.5-230M | ≈230 M según denominación del modelo base | No disponible | lfm1.0 | 1/8 | HuggingFace |
+| LFM2.5-230M-hackring-v001 | 229,7 M | 3.072 tokens (entrenamiento) | lfm1.0 | 2/8 | Hugging Face |
+| LiquidAI/LFM2.5-230M | ≈230 M según denominación del modelo base | No disponible | lfm1.0 | 1/8 | Hugging Face |
 | Otras alternativas pequeñas de tool calling | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se han identificado alternativas comparables en la información disponible. L
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/zack-r-s/LFM2.5-230M-hackring-v001)
+- [Modelo en Hugging Face](https://huggingface.co/zack-r-s/LFM2.5-230M-hackring-v001)
 - [Modelo base LiquidAI/LFM2.5-230M](https://huggingface.co/LiquidAI/LFM2.5-230M)
 - [Dataset Hackring PyAT control v002](https://huggingface.co/datasets/zack-r-s/hackring-pyat-control/tree/v002)
 - [Repositorio de entrenamiento en GitHub](https://github.com/zack-r-s/nvidia-redhat-small-models/tree/zrs-lfm-training)

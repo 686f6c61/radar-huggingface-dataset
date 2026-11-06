@@ -4,7 +4,7 @@
 
 GenoJEPA-Tiny es un modelo de aprendizaje de representaciones genómicas basado en la arquitectura predictiva de joint-embedding (JEPA), desarrollado por Chengsen Wang y colaboradores de la Universidad de Correos y Telecomunicaciones de Pekín. A diferencia de los enfoques tradicionales de modelado de lenguaje enmascarado (MLM) o predicción de siguiente token (NTP), GenoJEPA aprende representaciones semánticas de secuencias de ADN mediante la alineación en espacio latente, sin reconstruir nucleótidos individuales. Esta estrategia evita el ruido evolutivo y la falta de límites de palabras explícitos en el ADN, lo que permite obtener embeddings más robustos para tareas downstream.
 
-El checkpoint Tiny, con aproximadamente 6,3 millones de parámetros, está diseñado para extracción eficiente de embeddings, probing y clasificación de secuencias genómicas. Es un modelo ligero que puede ejecutarse en hardware modesto, incluso en CPU, y se distribuye bajo licencia Apache 2.0. El modelo se publica con código personalizado en HuggingFace y requiere `trust_remote_code=True` para su uso. Aunque el repositorio de HuggingFace muestra un tamaño de 0.0 GB, la model card indica que los pesos están disponibles a través de la integración con Transformers, aunque no se ha confirmado la presencia de archivos de pesos en el repositorio actual.
+El checkpoint Tiny, con aproximadamente 6,3 millones de parámetros, está diseñado para extracción eficiente de embeddings, probing y clasificación de secuencias genómicas. Es un modelo ligero que puede ejecutarse en hardware modesto, incluso en CPU, y se distribuye bajo licencia Apache 2.0. El modelo se publica con código personalizado en Hugging Face y requiere `trust_remote_code=True` para su uso. Aunque el repositorio de Hugging Face muestra un tamaño de 0.0 GB, la model card indica que los pesos están disponibles a través de la integración con Transformers, aunque no se ha confirmado la presencia de archivos de pesos en el repositorio actual.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El checkpoint Tiny, con aproximadamente 6,3 millones de parámetros, está dise�
 
 GenoJEPA emplea una arquitectura de joint-embedding predictiva, donde el modelo aprende a predecir representaciones latentes de regiones enmascaradas de la secuencia de ADN a partir del contexto visible. En lugar de reconstruir nucleótidos, el objetivo es alinear representaciones semánticas en un espacio latente, lo que captura relaciones funcionales y estructurales de forma más directa. El modelo Tiny es una versión reducida de la arquitectura completa, optimizada para extracción de embeddings y tareas de clasificación ligera.
 
-Los detalles específicos del entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) no están disponibles en la información proporcionada. El autor referencia dos datasets en HuggingFace: `ChengsenWang/GenoJEPA-Pretraining` y `ChengsenWang/GenoJEPA-Evaluation`, pero no se especifican sus contenidos ni volúmenes. El artículo asociado (bioRxiv 2026) describe el marco general, pero no se han publicado los hiperparámetros exactos del entrenamiento del checkpoint Tiny.
+Los detalles específicos del entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) no están disponibles en la información proporcionada. El autor referencia dos datasets en Hugging Face: `ChengsenWang/GenoJEPA-Pretraining` y `ChengsenWang/GenoJEPA-Evaluation`, pero no se especifican sus contenidos ni volúmenes. El artículo asociado (bioRxiv 2026) describe el marco general, pero no se han publicado los hiperparámetros exactos del entrenamiento del checkpoint Tiny.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar subidos o que el modelo se carga desde otro origen. Se recomienda verificar la disponibilidad real antes de su uso en producción.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar subidos o que el modelo se carga desde otro origen. Se recomienda verificar la disponibilidad real antes de su uso en producción.
 - No se han publicado detalles sobre el dataset de entrenamiento, por lo que se desconocen posibles sesgos derivados de la composición de los datos (por ejemplo, desequilibrio entre especies o regiones genómicas).
 - Al ser un modelo de representación, no genera secuencias de ADN; su uso se limita a extracción de características.
 - No se ha evaluado su comportamiento en secuencias muy largas; la longitud de contexto no está especificada.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChengsenWang/GenoJEPA-Tiny
+- Hugging Face: https://huggingface.co/ChengsenWang/GenoJEPA-Tiny
 - Repositorio GitHub: https://github.com/ForestsKing/GenoJEPA
 - Artículo bioRxiv: https://www.biorxiv.org/content/10.64898/2026.04.02.716255v1
 - Ficha en bio.rodeo: https://bio.rodeo/models/geno-jepa

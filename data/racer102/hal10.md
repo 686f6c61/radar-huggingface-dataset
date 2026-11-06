@@ -2,7 +2,7 @@
 
 ## Resumen
 
-racer102/hal10 es un repositorio de modelo alojado en HuggingFace bajo el identificador racer102/hal10, publicado por el usuario racer102. En el momento de la consulta, la ficha del repositorio no incluye informacion sobre la tarea (pipeline), la licencia, los idiomas soportados ni las caracteristicas tecnicas del modelo, por lo que no es posible confirmar su arquitectura, su numero de parametros ni su proposito de entrenamiento a partir de los datos publicos disponibles.
+racer102/hal10 es un repositorio de modelo alojado en Hugging Face bajo el identificador racer102/hal10, publicado por el usuario racer102. En el momento de la consulta, la ficha del repositorio no incluye informacion sobre la tarea (pipeline), la licencia, los idiomas soportados ni las caracteristicas tecnicas del modelo, por lo que no es posible confirmar su arquitectura, su numero de parametros ni su proposito de entrenamiento a partir de los datos publicos disponibles.
 
 El unico dato cuantificable es el tamano del repositorio, de 2,3 GB, junto con unas fechas de creacion y actualizacion muy proximas entre si (20 de septiembre de 2026), lo que sugiere una publicacion reciente y sin documentacion asociada. El modelo acumula 0 descargas y 1 like, indicativo de que practicamente no ha circulado ni se ha evaluado de forma publica.
 
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/racer102/hal10
+- Hugging Face: https://huggingface.co/racer102/hal10
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados devueltos corresponden a paginas no relacionadas con el modelo.

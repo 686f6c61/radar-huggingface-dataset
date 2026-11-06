@@ -53,7 +53,7 @@ Como innovaciones tecnicas destacables no se documenta ninguna: no hay decodific
 - Evaluacion de tokenizadores: dado que la ejecucion de entrenamiento esta registrada en el proyecto `new_tokenizers`, el modelo sirve como punto de comparacion cuando se cambia el tokenizador del modelo base y se quiere medir el impacto en el mismo corpus.
 - Generacion de texto de bajo coste en tamil: por su tamano de 125 M de parametros, puede ejecutarse en CPU o en una GPU de gama baja para prototipos de generacion de texto y completado de frases en entornos con recursos limitados.
 - Aumento de datos (data augmentation) para tareas de PNL en tamil: generar variaciones de frases que alimenten pipelines de clasificacion o etiquetado cuando el corpus anotado es escaso, asumiendo supervision humana posterior.
-- Docencia y practica de ajuste fino: el modelo es un caso de laboratorio asequible para ensenar SFT con TRL, seguimiento de experimentos en W&B y publicacion de checkpoints en HuggingFace sin necesidad de infraestructura grande.
+- Docencia y practica de ajuste fino: el modelo es un caso de laboratorio asequible para ensenar SFT con TRL, seguimiento de experimentos en W&B y publicacion de checkpoints en Hugging Face sin necesidad de infraestructura grande.
 - Pruebas de integracion de infraestructura: al ser compatible con text-generation-inference y `endpoints_compatible`, sirve para validar despliegues, balanceadores y plantillas de inferencia antes de migrar a modelos de mayor tamano.
 
 ## Benchmarks y rendimiento
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/tam-taml-100mb-10mb_seed3407 | 124.770.816 | no disponible | tamil (inferido por nomenclatura) | no disponible | HuggingFace, safetensors |
-| goldfish-models/tam_taml_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | tamil (inferido por nomenclatura) | no disponible | HuggingFace |
-| google/mt5-small | no disponible en la informacion proporcionada (dato externo, no verificado en esta busqueda) | no disponible | multilingue (familia mT5) | Apache 2.0 segun conocimiento general, no verificado aqui | HuggingFace |
-| ai4bharat/IndicBERTv2 | no disponible en la informacion proporcionada (dato externo, no verificado en esta busqueda) | no disponible | lenguas indias, incluido tamil | no disponible en esta busqueda | HuggingFace |
+| fpadovani/tam-taml-100mb-10mb_seed3407 | 124.770.816 | no disponible | tamil (inferido por nomenclatura) | no disponible | Hugging Face, safetensors |
+| goldfish-models/tam_taml_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | tamil (inferido por nomenclatura) | no disponible | Hugging Face |
+| google/mt5-small | no disponible en la informacion proporcionada (dato externo, no verificado en esta busqueda) | no disponible | multilingue (familia mT5) | Apache 2.0 segun conocimiento general, no verificado aqui | Hugging Face |
+| ai4bharat/IndicBERTv2 | no disponible en la informacion proporcionada (dato externo, no verificado en esta busqueda) | no disponible | lenguas indias, incluido tamil | no disponible en esta busqueda | Hugging Face |
 
 Nota: las filas de `google/mt5-small` y `ai4bharat/IndicBERTv2` se incluyen como categorias comparables por tamano e idioma, pero sus cifras no provienen de la informacion proporcionada y deben verificarse antes de citarlas. Ademas, mt5-small e IndicBERT son modelos encoder-decoder o encoder-only, por lo que no son equivalentes funcionalmente para generacion de texto autorregresiva; la comparacion mas directa y valida es contra el propio modelo base de la familia goldfish.
 
@@ -91,7 +91,7 @@ Nota: las filas de `google/mt5-small` y `ai4bharat/IndicBERTv2` se incluyen como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-10mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-10mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ywxu510y
 - Repositorio de TRL: https://github.com/huggingface/trl

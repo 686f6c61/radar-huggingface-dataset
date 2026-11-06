@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo gdpz11/hw1-hc3-detector es un clasificador binario de texto en ingles, obtenido por ajuste fino (fine-tuning) del encoder sentence-transformers/all-MiniLM-L6-v2 sobre el corpus HC3 (Hello-SimpleAI). Su unica tarea es asignar una de dos etiquetas a una respuesta corta: 0 para texto escrito por una persona y 1 para texto generado por ChatGPT. Lo publica el usuario gdpz11 en HuggingFace y cuenta actualmente con 0 descargas y 0 likes, ademas de no declarar licencia.
+El modelo gdpz11/hw1-hc3-detector es un clasificador binario de texto en ingles, obtenido por ajuste fino (fine-tuning) del encoder sentence-transformers/all-MiniLM-L6-v2 sobre el corpus HC3 (Hello-SimpleAI). Su unica tarea es asignar una de dos etiquetas a una respuesta corta: 0 para texto escrito por una persona y 1 para texto generado por ChatGPT. Lo publica el usuario gdpz11 en Hugging Face y cuenta actualmente con 0 descargas y 0 likes, ademas de no declarar licencia.
 
 Se trata de un modelo muy pequeno (22.713.986 parametros, unos 0,1 GB de repositorio) pensado como ejercicio academico de deteccion de texto generado por IA, no como herramienta de produccion. La model card documenta un protocolo de evaluacion reproducible: revision concreta del dataset HC3, division a nivel de pregunta 80/10/10, semilla 42, cinco epocas, batch 32 y optimizador AdamW con learning rate 2e-5. Sobre el conjunto de test reporta una exactitud de 0,989931 frente a 0,844901 de una linea base de embeddings congelados mas regresion logistica.
 
@@ -36,7 +36,7 @@ El entrenamiento se realizo sobre la revision `4d0ff18143b5a7e1b1e79beb540c04549
 
 - Clasificacion binaria de texto en ingles: distingue entre respuestas humanas y respuestas generadas por ChatGPT en el dominio de HC3.
 - Entrada de hasta 256 tokens por muestra, con truncado controlado mediante el parametro `max_length`.
-- Ejecucion como pipeline estandar de HuggingFace (`pipeline("text-classification")`), lo que facilita su integracion en scripts de evaluacion.
+- Ejecucion como pipeline estandar de Hugging Face (`pipeline("text-classification")`), lo que facilita su integracion en scripts de evaluacion.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas ni vision.
 - No soporta tool calling ni function calling.
 - No soporta flujos de agentes ni razonamiento en multiples pasos.
@@ -82,9 +82,9 @@ Existen varios repositorios con el mismo nombre y la misma estructura de tarea, 
 
 | Modelo | Parametros | Contexto de entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gdpz11/hw1-hc3-detector | 22.713.986 | 256 tokens | Clasificacion humano/ChatGPT en HC3 | no disponible | HuggingFace, 0 descargas |
-| xw131/hw1-hc3-detector | no disponible | no disponible | Clasificacion en HC3 (por el nombre del repositorio) | no disponible | HuggingFace |
-| vivian-ch/hw1-hc3-detector | no disponible | no disponible | Clasificacion en HC3 (por el nombre del repositorio) | no disponible | HuggingFace |
+| gdpz11/hw1-hc3-detector | 22.713.986 | 256 tokens | Clasificacion humano/ChatGPT en HC3 | no disponible | Hugging Face, 0 descargas |
+| xw131/hw1-hc3-detector | no disponible | no disponible | Clasificacion en HC3 (por el nombre del repositorio) | no disponible | Hugging Face |
+| vivian-ch/hw1-hc3-detector | no disponible | no disponible | Clasificacion en HC3 (por el nombre del repositorio) | no disponible | Hugging Face |
 | Detectores basados en RoBERTa, Mamba, RetNet y Electra evaluados en LLM-Detector-Experiments-HC3-Dataset | no disponible | no disponible | Deteccion de texto generado por IA sobre HC3 | no disponible | GitHub |
 | GPTZero | no disponible (servicio propietario) | no disponible | Deteccion de IA en texto | propietaria | Servicio web |
 
@@ -103,7 +103,7 @@ Existen varios repositorios con el mismo nombre y la misma estructura de tarea, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gdpz11/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/gdpz11/hw1-hc3-detector
 - Repositorio con nombre identico de otro autor (xw131): https://huggingface.co/xw131/hw1-hc3-detector
 - Repositorio con nombre identico de otro autor (vivian-ch): https://huggingface.co/vivian-ch/hw1-hc3-detector
 - Ficha del modelo en savrn.com (atribuida a Yihangsun): https://savrn.com/models/hw1-hc3-detector

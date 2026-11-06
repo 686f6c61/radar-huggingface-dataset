@@ -118,7 +118,7 @@ Alternativas de otros autores: no disponible.
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/d4rkninja/tanpo-hiring-LoRA
+- Adaptador LoRA en Hugging Face: https://huggingface.co/d4rkninja/tanpo-hiring-LoRA
 - Modelo base: https://huggingface.co/unsloth/LFM2.5-1.2B-Instruct
 - Pesos Transformers fusionados: https://huggingface.co/d4rkninja/tanpo-hiring
 - Pesos GGUF para LM Studio / llama.cpp: https://huggingface.co/d4rkninja/tanpo-hiring-GGUF

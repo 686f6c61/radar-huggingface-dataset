@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| receipt-extractor-qwen3-0.6b | 596 M | no disponible | Apache 2.0 | Extracción de tickets a JSON, on-device | HuggingFace, LiteRT-LM |
-| Qwen/Qwen3-0.6B (base) | 596 M | no disponible en la información | Apache 2.0 | Modelo generalista de texto | HuggingFace |
+| receipt-extractor-qwen3-0.6b | 596 M | no disponible | Apache 2.0 | Extracción de tickets a JSON, on-device | Hugging Face, LiteRT-LM |
+| Qwen/Qwen3-0.6B (base) | 596 M | no disponible en la información | Apache 2.0 | Modelo generalista de texto | Hugging Face |
 | Alternativas especializadas en extracción de documentos | no disponible | no disponible | no disponible | Extracción de información de documentos | no disponible |
 
 No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de otros modelos especializados en extracción de tickets que permitan una comparación cuantitativa rigurosa.
@@ -87,7 +87,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ajay0007/receipt-extractor-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/Ajay0007/receipt-extractor-qwen3-0.6b
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Aplicación Google AI Edge Gallery: https://github.com/google-ai-edge/gallery

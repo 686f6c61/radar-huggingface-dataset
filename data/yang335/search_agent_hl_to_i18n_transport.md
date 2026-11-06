@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yang335/search_agent_hl_to_i18n_transport` es un repositorio alojado en HuggingFace cuyo contenido no se corresponde con un modelo de lenguaje en el sentido convencional. La model card describe un registro experimental de difusión (diffusion models) bajo la denominación "RDD experiment names: resolution-labelled registry", con referencias a entrenamiento DDPM y FM (flow matching) sobre rejillas latentes r8/r16/r32 y presupuestos de muestreo expresados en nombres de fichero históricos (por ejemplo, 908080 o 808090). No se declara arquitectura de transformer, parámetros, contexto ni idioma alguno.
+`yang335/search_agent_hl_to_i18n_transport` es un repositorio alojado en Hugging Face cuyo contenido no se corresponde con un modelo de lenguaje en el sentido convencional. La model card describe un registro experimental de difusión (diffusion models) bajo la denominación "RDD experiment names: resolution-labelled registry", con referencias a entrenamiento DDPM y FM (flow matching) sobre rejillas latentes r8/r16/r32 y presupuestos de muestreo expresados en nombres de fichero históricos (por ejemplo, 908080 o 808090). No se declara arquitectura de transformer, parámetros, contexto ni idioma alguno.
 
 El repositorio incluye ficheros de trazabilidad (`naming/results.csv`, `naming/results.json`, `naming/models.json`, `naming/hf_rename_plan.json`, `naming/configs.csv`) orientados a preservar la procedencia histórica de experimentos y a mapear rutas antiguas a rutas actuales con hashes de contenido. El autor indica explícitamente que los pesos y métricas no han cambiado y que los ficheros fuente originales conservan sus nombres.
 
@@ -75,7 +75,7 @@ No disponible. No se identifican en la información proporcionada modelos compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yang335/search_agent_hl_to_i18n_transport
+- Repositorio Hugging Face: https://huggingface.co/yang335/search_agent_hl_to_i18n_transport
 - Registro de resultados verificados: `naming/results.csv` (referenciado en la model card)
 - Registros completos de resultados: `naming/results.json`
 - Registro de modelos y reloj de entrenamiento: `naming/models.json`

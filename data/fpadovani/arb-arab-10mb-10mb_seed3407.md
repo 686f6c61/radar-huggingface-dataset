@@ -55,7 +55,7 @@ La innovacion tecnica destacable es el propio marco experimental: el proyecto Go
 - Ablaciones de SFT: al haberse entrenado con TRL 0.23.0 y con los hiperparametros registrados en W&B, es util para comparar recetas de ajuste supervisado manteniendo fijo el checkpoint base.
 - Experimentos sobre tokenizadores: el espacio de trabajo de W&B asociado (`new_tokenizers`) indica que el modelo forma parte de una linea de trabajo centrada en comparar vocabularios y segmentaciones para arabe.
 - Punto de partida para ajustes posteriores: su licencia no definida obliga a verificar condiciones antes de uso comercial, pero como base de investigacion se puede reentrenar con un corpus mayor en una sola GPU consumer.
-- Docencia y practicas de ML: permite recorrer el ciclo completo de ajuste, publicacion en HuggingFace y despliegue con un coste de computo minimo, incluso en CPU.
+- Docencia y practicas de ML: permite recorrer el ciclo completo de ajuste, publicacion en Hugging Face y despliegue con un coste de computo minimo, incluso en CPU.
 - Despliegue en entornos con recursos muy limitados: con cuantizacion a 8 o 4 bits ocupa decenas de megabytes, lo que lo hace viable en dispositivos edge o en contenedores con memoria restringida para tareas de generacion de texto corto.
 - Generacion de texto de relleno en pruebas de integracion: util para verificar latencia, throughput y manejo de errores en servicios de inferencia sin consumir presupuesto de GPU.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/arb-arab-10mb-10mb_seed3407 | 39,09 M | no disponible | SFT sobre goldfish-models/arb_arab_10mb | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/arb_arab_10mb (base) | no disponible (mismo orden de magnitud) | no disponible | Preentrenamiento con 10 MB de corpus | no disponible | HuggingFace |
-| GPT-2 small (referencia de escala) | 124 M | 1.024 tokens | Preentrenamiento web en ingles | MIT | HuggingFace (openai-community/gpt2) |
+| fpadovani/arb-arab-10mb-10mb_seed3407 | 39,09 M | no disponible | SFT sobre goldfish-models/arb_arab_10mb | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/arb_arab_10mb (base) | no disponible (mismo orden de magnitud) | no disponible | Preentrenamiento con 10 MB de corpus | no disponible | Hugging Face |
+| GPT-2 small (referencia de escala) | 124 M | 1.024 tokens | Preentrenamiento web en ingles | MIT | Hugging Face (openai-community/gpt2) |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento de estos modelos entre si. La comparacion se limita a parametros, contexto declarado y licencia. Otras variantes del proyecto Goldfish (`arb_arab_100mb`, `arb_arab_1000mb`) existen como checkpoints hermanos, pero no se dispone de sus especificaciones en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-10mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-10mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_10mb
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/rgbeglwo
 - Repositorio de TRL: https://github.com/huggingface/trl

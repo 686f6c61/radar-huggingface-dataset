@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ju23gam34/neurona_esferica_anti_alucinacion` es un repositorio publicado en HuggingFace por el usuario `ju23gam34` el 18 de octubre de 2026. El nombre del repositorio sugiere una propuesta orientada a la mitigación de alucinaciones ("anti_alucinacion") mediante algún tipo de unidad de cálculo o capa denominada "neurona esférica", pero la model card publicada no contiene ninguna descripción técnica, paper, código ni documentación que permita confirmar arquitectura, tamaño o metodología.
+`ju23gam34/neurona_esferica_anti_alucinacion` es un repositorio publicado en Hugging Face por el usuario `ju23gam34` el 18 de octubre de 2026. El nombre del repositorio sugiere una propuesta orientada a la mitigación de alucinaciones ("anti_alucinacion") mediante algún tipo de unidad de cálculo o capa denominada "neurona esférica", pero la model card publicada no contiene ninguna descripción técnica, paper, código ni documentación que permita confirmar arquitectura, tamaño o metodología.
 
 La información disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de región `us`, cero descargas y cero likes en el momento de la consulta. No se declara pipeline, no se declaran idiomas soportados y no se incluyen pesos, tokenizador ni archivos de configuración referenciados en la documentación.
 
@@ -80,7 +80,7 @@ No disponible. No es posible establecer comparaciones porque se desconocen los p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ju23gam34/neurona_esferica_anti_alucinacion | no disponible | no disponible | MIT | repositorio HuggingFace, 0 descargas |
+| ju23gam34/neurona_esferica_anti_alucinacion | no disponible | no disponible | MIT | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. No es posible establecer comparaciones porque se desconocen los p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ju23gam34/neurona_esferica_anti_alucinacion
+- Repositorio en Hugging Face: https://huggingface.co/ju23gam34/neurona_esferica_anti_alucinacion
 - Paper, blog o repositorio de código: no disponible
 - Demos o espacios asociados: no disponible
 - Nota sobre la búsqueda web: los resultados devueltos por la búsqueda no guardan relación con el modelo (páginas de Instagram); no se ha localizado ninguna fuente externa que documente este repositorio.

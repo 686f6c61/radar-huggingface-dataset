@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05_b2d_ur5_rh56dfx_3_b128_60k es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Myungkyu en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base lerobot/pi05_base (Pi0.5), entrenado sobre demostraciones de teleoperación del benchmark Bench2Dex para tres configuraciones concretas de manipulación con un robot UR5 equipado con manos RH56DFX. El modelo no es un LLM conversacional, sino una política robótica que transforma observaciones visuales multicámara, el estado articular y una instrucción en lenguaje natural en objetivos de posición articular absolutos.
+pi05_b2d_ur5_rh56dfx_3_b128_60k es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Myungkyu en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base lerobot/pi05_base (Pi0.5), entrenado sobre demostraciones de teleoperación del benchmark Bench2Dex para tres configuraciones concretas de manipulación con un robot UR5 equipado con manos RH56DFX. El modelo no es un LLM conversacional, sino una política robótica que transforma observaciones visuales multicámara, el estado articular y una instrucción en lenguaje natural en objetivos de posición articular absolutos.
 
 El problema que resuelve es el de servir como baseline reproducible ("vanilla Pi0.5") para el benchmark Bench2Dex, un conjunto de tareas de manipulación diestra con protocolo de doble entorno (servidor de política + cliente Isaac Sim). Su relevancia es metodológica: permite comparar variantes de Pi0.5 y de otros VLA sobre las mismas tareas, canales de evaluación y semillas, con checkpoints intermedios publicados para estudiar la evolución del entrenamiento.
 
@@ -71,8 +71,8 @@ Versiones del entorno de evaluación: Bench2Dex `fd90dcc`, Isaac Sim 5.1 / Isaac
 
 | Modelo | Parámetros | Contexto | Bench2Dex (SR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_b2d_ur5_rh56dfx_3_b128_60k | 4.143.404.816 | no disponible | 47,0 (final, 50/50); 51,7 (final, 25/50) | no disponible | HuggingFace, repo de 112,2 GB |
-| lerobot/pi05_base | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| pi05_b2d_ur5_rh56dfx_3_b128_60k | 4.143.404.816 | no disponible | 47,0 (final, 50/50); 51,7 (final, 25/50) | no disponible | Hugging Face, repo de 112,2 GB |
+| lerobot/pi05_base | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Otros VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de resultados de otros modelos sobre Bench2Dex ni de especificaciones detalladas de alternativas, por lo que la comparación cuantitativa no es posible.
@@ -82,7 +82,7 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 - Especialización estrecha: entrenado solo sobre tres ajustes de Bench2Dex (06, 12, 42) y una morfología concreta (UR5 + RH56DFX, 24 articulaciones activas); no es un modelo general.
 - Degradación notable bajo perturbaciones: el SR cae de 68,67 (canal None) a 34,67 (Equi.) en el checkpoint final con 50/50 acciones, lo que indica sensibilidad a cambios en las observaciones.
 - Dependencia de versiones exactas: requiere lerobot 0.5.2 en el commit 09808183, Bench2Dex en `fd90dcc` e Isaac Sim 5.1 / Isaac Lab 2.3.2; otras versiones no han sido probadas.
-- Tokenizer restringido: `google/paligemma-3b-pt-224` está sujeto a aceptación de licencia y autenticación en HuggingFace.
+- Tokenizer restringido: `google/paligemma-3b-pt-224` está sujeto a aceptación de licencia y autenticación en Hugging Face.
 - Licencia no disponible: no se especifica licencia, por lo que el uso comercial no está claramente autorizado y debe consultarse con el autor.
 - Idiomas no especificados: no se documenta el idioma de las instrucciones de tarea.
 - Riesgo de alucinación en el sentido robótico: como política de imitación, puede generar trayectorias plausibles pero incorrectas fuera de la distribución de entrenamiento; no hay mecanismo de verificación interno.
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi05_b2d_ur5_rh56dfx_3_b128_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi05_b2d_ur5_rh56dfx_3_b128_60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento exportado: https://huggingface.co/datasets/Myungkyu/bench2dex_ur5_rh56dfx_3_lerobot_v30
 - Dataset original: https://huggingface.co/datasets/Bench2Dex/teleopdata

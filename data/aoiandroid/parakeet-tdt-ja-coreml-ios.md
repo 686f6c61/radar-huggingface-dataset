@@ -75,7 +75,7 @@ La comparativa se basa en la arquitectura y formato. El modelo original de NVIDI
 
 ## Enlaces
 
-- [HuggingFace: aoiandroid/parakeet-tdt-ja-coreml-ios](https://huggingface.co/aoiandroid/parakeet-tdt-ja-coreml-ios)
-- [HuggingFace: aoiandroid/parakeet-tdt-ja-coreml (fuente)](https://huggingface.co/aoiandroid/parakeet-tdt-ja-coreml)
+- [Hugging Face: aoiandroid/parakeet-tdt-ja-coreml-ios](https://huggingface.co/aoiandroid/parakeet-tdt-ja-coreml-ios)
+- [Hugging Face: aoiandroid/parakeet-tdt-ja-coreml (fuente)](https://huggingface.co/aoiandroid/parakeet-tdt-ja-coreml)
 - [Apple coreai-models (repositorio de exportacion de modelos)](https://github.com/apple/coreai-models/tree/main/models/parakeet)
 - [Swift Package Index: Qwen3Speech (herramientas de ASR en Swift)](https://swiftpackageindex.com/soniqo/speech-swift)

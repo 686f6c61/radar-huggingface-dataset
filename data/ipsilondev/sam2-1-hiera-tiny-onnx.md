@@ -19,7 +19,7 @@ SAM 2.1 es una evolución del modelo Segment Anything 2, diseñado para segmenta
 | Licencia | no disponible |
 | Formato de pesos | ONNX |
 
-Ademas, el repositorio de HuggingFace indica un tamaño de 0,2 GB.
+Ademas, el repositorio de Hugging Face indica un tamaño de 0,2 GB.
 
 ## Arquitectura y entrenamiento
 
@@ -61,7 +61,7 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo no se especifica en la ficha de HuggingFace, por lo que su uso en producción o con fines comerciales requiere verificar los términos legales del modelo original de Meta y de la conversión.
+- La licencia del modelo no se especifica en la ficha de Hugging Face, por lo que su uso en producción o con fines comerciales requiere verificar los términos legales del modelo original de Meta y de la conversión.
 - Los datos de entrenamiento y la meta información detallada del modelo no se proporcionan, lo que limita la auditoría de sesgos y la evaluación de su comportamiento en escenarios concretos.
 - No se disponen de evaluaciones de rendimiento mediante benchmarks publicos, por lo que la precisión en tareas especificas debe validarse en cada caso de uso.
 - Al ser un modelo de segmentacion, no gestiona texto ni lenguaje, lo que excluye su uso en tareas de comprension o generacion de contenido textual.
@@ -69,5 +69,5 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [ipsilondev/sam2.1-hiera-tiny-ONNX](https://huggingface.co/ipsilondev/sam2.1-hiera-tiny-ONNX)
+- Repositorio en Hugging Face: [ipsilondev/sam2.1-hiera-tiny-ONNX](https://huggingface.co/ipsilondev/sam2.1-hiera-tiny-ONNX)
 - Repositorio de origen: [onnx-community/sam2.1-hiera-tiny-ONNX](https://huggingface.co/onnx-community/sam2.1-hiera-tiny-ONNX)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GameAgent-IDM es un modelo de dinámica inversa (inverse dynamics model, IDM) especializado en videojuegos, desarrollado por el usuario sarthak2314 y publicado en HuggingFace. Su funcion es la inversa a la de un agente convencional: en lugar de recibir una observacion y producir una accion, recibe fotogramas de pantalla (448x448 pixeles) junto con eventos de teclado y raton con marcas de tiempo, y predice los eventos de entrada que ocurrieron entre esos fotogramas. Se trata, por tanto, de un modelo imagen-texto-a-texto con etiquetado de acciones, encuadrado en la categoria de vision-language-action (VLA) y descrito como "generalist-IDM".
+GameAgent-IDM es un modelo de dinámica inversa (inverse dynamics model, IDM) especializado en videojuegos, desarrollado por el usuario sarthak2314 y publicado en Hugging Face. Su funcion es la inversa a la de un agente convencional: en lugar de recibir una observacion y producir una accion, recibe fotogramas de pantalla (448x448 pixeles) junto con eventos de teclado y raton con marcas de tiempo, y predice los eventos de entrada que ocurrieron entre esos fotogramas. Se trata, por tanto, de un modelo imagen-texto-a-texto con etiquetado de acciones, encuadrado en la categoria de vision-language-action (VLA) y descrito como "generalist-IDM".
 
 Tecnicamente es un fine-tuning de OpenGVLab/InternVL3-1B-hf, por lo que hereda la arquitectura de InternVL3: un codificador visual InternViT con resolucion dinamica acoplado a un modelo de lenguaje de ~0,5B parametros mediante un proyector MLP. El total declarado en los pesos safetensors es de 938.716.288 parametros (~0,9B), en precision BF16 y con un tamano de repositorio de 1,9 GB. La licencia es Apache 2.0 y el unico idioma declarado es el ingles.
 
@@ -98,7 +98,7 @@ En rendimiento de tarea (precision de prediccion de acciones, error de coordenad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarthak2314/GameAgent-IDM
+- Modelo en Hugging Face: https://huggingface.co/sarthak2314/GameAgent-IDM
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3-1B-hf
 - Paper asociado (D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI): https://arxiv.org/abs/2510.05684
 - Version PDF del paper: https://arxiv.org/pdf/2510.05684

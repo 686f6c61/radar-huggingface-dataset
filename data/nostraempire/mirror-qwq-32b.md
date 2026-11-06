@@ -79,8 +79,8 @@ QwQ-32B ofrece un equilibrio unico: el rendimiento de razonamiento de modelos mu
 
 ## Enlaces
 
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/QwQ-32B
-- Mirror en HuggingFace (fuente de esta ficha): https://huggingface.co/NostraEmpire/mirror-qwq-32b
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/QwQ-32B
+- Mirror en Hugging Face (fuente de esta ficha): https://huggingface.co/NostraEmpire/mirror-qwq-32b
 - Blog oficial de Qwen sobre QwQ-32B: https://qwenlm.github.io/blog/qwq-32b/
 - Repositorio GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Documentacion de despliegue con vLLM: https://qwen.readthedocs.io/en/latest/deployment/vllm.html

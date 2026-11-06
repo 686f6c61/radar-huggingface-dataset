@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca for Multitask es un repositorio de HuggingFace publicado por el usuario haorancao que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Coca, orientada a tareas multitarea. Según la propia model card, se trata de una configuración de escala "base" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado ni evaluado en benchmarks.
+Coca for Multitask es un repositorio de Hugging Face publicado por el usuario haorancao que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Coca, orientada a tareas multitarea. Según la propia model card, se trata de una configuración de escala "base" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado ni evaluado en benchmarks.
 
 El modelo declara una arquitectura Coca con atención dilatada, fusión bilinear, activación gelu tanh y normalización layernorm. La receta de experimento por defecto usa el optimizador adafactor con un schedule coseno, aunque el autor advierte explícitamente que son valores de partida del script y no evidencia de un entrenamiento completado. No se declaran parámetros totales en la model card; el dato disponible en safetensors (16.576) es inconsistente con un modelo de lenguaje funcional y debe interpretarse con cautela.
 
@@ -74,5 +74,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haorancao/coca-multitask86
+- Repositorio en Hugging Face: https://huggingface.co/haorancao/coca-multitask86
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

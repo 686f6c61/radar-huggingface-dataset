@@ -81,10 +81,10 @@ vllm serve mkd-hossain/Keural-Nova-v1.2-experimental-NVFP4-unsloth \
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hikaf143/Keural-Nova-v1.2-experimental-NVFP4-unsloth | 22,17 B totales (activos no disponibles) | 262.144 tokens | FP4/FP8/bf16 mixta (`compressed-tensors`) | Apache-2.0 | HuggingFace, 24,8 GB |
-| mkd-hossain/Keural-Nova-v1.2-experimental (base) | no disponible | no disponible | bf16 | Apache-2.0 | HuggingFace, 67 GB |
-| mkd-hossain/Keural-Nova-v1.2-experimental-NVFP4 (variante pura) | no disponible | no disponible | NVFP4 puro | Apache-2.0 | HuggingFace; menor tamaño que la mixta, menor retención de precisión según el autor |
-| unsloth/Qwen3.6-35B-A3B-NVFP4 (receta de referencia) | no disponible | no disponible | NVFP4 mixta FP8/FP4 | no disponible en la información | HuggingFace |
+| Hikaf143/Keural-Nova-v1.2-experimental-NVFP4-unsloth | 22,17 B totales (activos no disponibles) | 262.144 tokens | FP4/FP8/bf16 mixta (`compressed-tensors`) | Apache-2.0 | Hugging Face, 24,8 GB |
+| mkd-hossain/Keural-Nova-v1.2-experimental (base) | no disponible | no disponible | bf16 | Apache-2.0 | Hugging Face, 67 GB |
+| mkd-hossain/Keural-Nova-v1.2-experimental-NVFP4 (variante pura) | no disponible | no disponible | NVFP4 puro | Apache-2.0 | Hugging Face; menor tamaño que la mixta, menor retención de precisión según el autor |
+| unsloth/Qwen3.6-35B-A3B-NVFP4 (receta de referencia) | no disponible | no disponible | NVFP4 mixta FP8/FP4 | no disponible en la información | Hugging Face |
 
 El rendimiento comparado no está publicado para ninguno de ellos, por lo que la comparación se limita a parámetros, formato y disponibilidad.
 

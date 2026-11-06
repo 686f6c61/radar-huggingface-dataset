@@ -82,7 +82,7 @@ No disponible. La model card no publica parametros, contexto, resultados ni comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeWAM/lewam-pointmaze-large
+- Modelo en Hugging Face: https://huggingface.co/LeWAM/lewam-pointmaze-large
 - Dataset asociado: https://huggingface.co/datasets/LeWAM/lewam-pointmaze-large
 - SHA256 de `lewam_best.pt`: `76e8ceb6f8bea8f31b078f51337b3f7b2bb8b7177165e374ddd8d9e00badf177`
 - Repositorio de codigo, paper o demo del paquete `lewam`: no disponible en la informacion proporcionada

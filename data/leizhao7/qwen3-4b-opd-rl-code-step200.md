@@ -78,9 +78,9 @@ El estudiante inicial obtuvo 52,69 % en la media macro, por lo que el step-200 m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-OPD-RL-Code-Step200 | 4,41B | No disponible | Destilacion OPD para codigo | Apache-2.0 | HuggingFace (191 descargas) |
-| Qwen/Qwen3-4B (estudiante inicial) | 4B | No disponible | Modelo generalista base | Apache-2.0 | HuggingFace |
-| Qwen3-4B-Non-Thinking-RL-Code-Step300 (profesor) | 4B | No disponible | RL para codigo, no-thinking | No disponible en la informacion | HuggingFace (Keven16) |
+| Qwen3-4B-OPD-RL-Code-Step200 | 4,41B | No disponible | Destilacion OPD para codigo | Apache-2.0 | Hugging Face (191 descargas) |
+| Qwen/Qwen3-4B (estudiante inicial) | 4B | No disponible | Modelo generalista base | Apache-2.0 | Hugging Face |
+| Qwen3-4B-Non-Thinking-RL-Code-Step300 (profesor) | 4B | No disponible | RL para codigo, no-thinking | No disponible en la informacion | Hugging Face (Keven16) |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leizhao7/Qwen3-4B-OPD-RL-Code-Step200
+- Hugging Face: https://huggingface.co/leizhao7/Qwen3-4B-OPD-RL-Code-Step200
 - Paper: https://arxiv.org/abs/2610.11247
 - Pagina del proyecto: https://leizhao7.github.io/opd-learning-signals/
 - Codigo y resultados numericos: https://github.com/leizhao7/opd-learning-signals

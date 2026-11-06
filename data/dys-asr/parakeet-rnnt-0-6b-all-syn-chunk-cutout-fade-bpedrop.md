@@ -100,7 +100,7 @@ Modelos comparables de otros desarrolladores: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-fade-bpedrop
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-fade-bpedrop
 - Ejecución hermana (chunk cutout): https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout
 - Modelo base: https://huggingface.co/extraordinarylab/parakeet-unified-en-0.6b
 - Corpus SAPC-1: https://huggingface.co/datasets/dys-asr/sapc1

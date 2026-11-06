@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para nin
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/LFM2.5-2.6B-Pashto-Zi-b-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/LFM2.5-2.6B-Pashto-Zi-b-GGUF
 - Modelo base: https://huggingface.co/nassimjp/LFM2.5-2.6B-Pashto-Zi-b
 - Pagina resumen del autor con la lista de descargas: https://hf.tst.eu/model#LFM2.5-2.6B-Pashto-Zi-b-GGUF
 - Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -29,7 +29,7 @@ La cuantizacion realizada por mradermacher es de tipo estatico (no se ofrecen va
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles (etiqueta conversational en HuggingFace).
+- Generacion de texto conversacional en ingles (etiqueta conversational en Hugging Face).
 - Generacion de codigo, con especializacion derivada del dataset LiveCodeBench.
 - Razonamiento y respuesta a instrucciones (variante Instruct).
 - Capacidades de self-distillation integradas en el proceso de entrenamiento del modelo base.
@@ -91,4 +91,4 @@ La comparativa con Qwen2.5-Coder y CodeLlama se ofrece como referencia de catego
 - Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Analisis sobre calidad de cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Dataset de entrenamiento declarado: livecodebench/code_generation_lite (HuggingFace Datasets)
+- Dataset de entrenamiento declarado: livecodebench/code_generation_lite (Hugging Face Datasets)

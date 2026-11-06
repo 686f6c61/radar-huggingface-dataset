@@ -4,7 +4,7 @@
 
 ## Resumen
 
-WL-context-qwen-14b-fold_4 es un repositorio de pesos publicado en HuggingFace por el usuario eric-z2 bajo la libreria transformers. La model card asociada es la plantilla autogenerada por el Hub y no ha sido cumplimentada: todos los campos de descripcion, uso previsto, datos de entrenamiento, evaluacion y licencia aparecen como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de evaluacion publicados.
+WL-context-qwen-14b-fold_4 es un repositorio de pesos publicado en Hugging Face por el usuario eric-z2 bajo la libreria transformers. La model card asociada es la plantilla autogenerada por el Hub y no ha sido cumplimentada: todos los campos de descripcion, uso previsto, datos de entrenamiento, evaluacion y licencia aparecen como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de evaluacion publicados.
 
 La unica informacion tecnica verificable es la metadata del repositorio: etiquetas transformers y safetensors, compatibilidad declarada con endpoints, region us, una unica iteracion de creacion y actualizacion (21 de septiembre de 2026, con dos segundos de diferencia, lo que indica una subida automatizada) y un tamano de repositorio de 0,1 GB. Ese tamano es incompatible con un modelo denso de 14 000 millones de parametros, que en safetensors bf16 ocuparia del orden de 28 GB, por lo que el contenido real del repositorio (adaptadores, fichero parcial, configuracion o artefacto de investigacion) no puede determinarse con los datos disponibles. El sufijo "fold_4" sugiere un artefacto derivado de un proceso de validacion cruzada, y "qwen-14b" sugiere una base de la familia Qwen de 14B, pero ninguna de las dos cosas esta confirmada por el autor.
 
@@ -104,7 +104,7 @@ Los datos de los modelos de comparacion no se han verificado en fuentes primaria
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_4
+- Repositorio en Hugging Face: https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_4
 - Perfil del autor: https://huggingface.co/eric-z2
 - Referencia de la plantilla de la model card (impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact

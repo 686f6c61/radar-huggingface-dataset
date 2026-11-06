@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SLM-30M-Base es un modelo de lenguaje de 30 millones de parametros con arquitectura GPT decoder-only, desarrollado por el usuario AkkiMaharaj y publicado en HuggingFace bajo licencia MIT. Se trata de un proyecto personal de aprendizaje: el autor lo entreno integramente desde cero (tokenizador incluido) con el objetivo de comprender el funcionamiento interno de un transformer, no de competir con modelos de produccion. El propio autor indica explicitamente que no esta pensado para uso en produccion.
+SLM-30M-Base es un modelo de lenguaje de 30 millones de parametros con arquitectura GPT decoder-only, desarrollado por el usuario AkkiMaharaj y publicado en Hugging Face bajo licencia MIT. Se trata de un proyecto personal de aprendizaje: el autor lo entreno integramente desde cero (tokenizador incluido) con el objetivo de comprender el funcionamiento interno de un transformer, no de competir con modelos de produccion. El propio autor indica explicitamente que no esta pensado para uso en produccion.
 
 El modelo consta de 8 capas, 8 cabezas de atencion, una dimension de embedding de 512 y una ventana de contexto de solo 512 tokens, con embeddings de entrada y salida atados (weight tying). Usa atencion escalada de PyTorch (`scaled_dot_product_attention`, con FlashAttention cuando esta disponible). Se entreno sobre un unico volcado de Wikipedia en ingles (`wikimedia/wikipedia`, `20231101.en`) con un tokenizador BPE a nivel de byte de vocabulario reducido (16.384 tokens).
 
@@ -26,7 +26,7 @@ Su relevancia es fundamentalmente didactica y de investigacion: sirve como caso 
 | Vocabulario | 16.384 tokens (BPE a nivel de byte, propio) |
 | Weight tying | si (embeddings de entrada y salida compartidos) |
 | Tamano del repositorio | 0,4 GB |
-| Fecha de publicacion en HuggingFace | 25 de septiembre de 2026 |
+| Fecha de publicacion en Hugging Face | 25 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SLM-30M-Base | 30M | 512 | MIT | HuggingFace, pesos `.pt` |
+| SLM-30M-Base | 30M | 512 | MIT | Hugging Face, pesos `.pt` |
 | GPT-2 small | 124M | 1024 | MIT modificada | Ampliamente disponible (safetensors, GGUF) |
-| TinyStories-33M | ~33M | 2048 | MIT (variante segun version) | HuggingFace, safetensors |
-| SmolLM-135M | 135M | 2048 | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| Pythia-70M | 70M | 2048 | Apache 2.0 | HuggingFace, safetensors |
+| TinyStories-33M | ~33M | 2048 | MIT (variante segun version) | Hugging Face, safetensors |
+| SmolLM-135M | 135M | 2048 | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| Pythia-70M | 70M | 2048 | Apache 2.0 | Hugging Face, safetensors |
 
 Nota: las cifras de los modelos de comparacion corresponden a su documentacion publica habitual y deben verificarse en cada repositorio antes de citarlas. En rendimiento no es posible comparar, ya que SLM-30M-Base no publica resultados de benchmarks. Frente a estas alternativas, SLM-30M-Base destaca unicamente por su caracter didactico (codigo y tokenizador propios, entrenamiento desde cero) y no por calidad, contexto ni ecosistema de formatos.
 
@@ -97,7 +97,7 @@ Nota: las cifras de los modelos de comparacion corresponden a su documentacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AkkiMaharaj/slm-30m-base
+- Modelo en Hugging Face: https://huggingface.co/AkkiMaharaj/slm-30m-base
 - Variante ajustada para preguntas y respuestas: `slm-30m-qa` (mencionada en la model card; no se dispone de URL verificada en la informacion proporcionada)
 - Dataset de entrenamiento: `wikimedia/wikipedia`, configuracion `20231101.en` (https://huggingface.co/datasets/wikimedia/wikipedia)
 - Documentacion de `scaled_dot_product_attention` en PyTorch (referenciada por la implementacion): https://pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html

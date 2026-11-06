@@ -70,7 +70,7 @@ No se dispone de información comparativa en la documentación proporcionada. El
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Patarapoom/ltx25-render
+- Repositorio de Hugging Face: https://huggingface.co/Patarapoom/ltx25-render
 - Repositorio original de los archivos: https://huggingface.co/comfyicu/LTX-2.5
 - Modelo original de Lightricks: https://huggingface.co/Lightricks/LTX-2.5
 - Sitio oficial de LTX-2.5: https://ltx.io/model/ltx-2-5

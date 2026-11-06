@@ -86,7 +86,7 @@ Las filas de referencia se incluyen unicamente para contextualizar tamano y lice
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pragmaticcs/SignOfThree-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pragmaticcs/SignOfThree-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/pragmaticcs/SignOfThree
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

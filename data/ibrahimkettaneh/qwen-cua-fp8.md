@@ -69,8 +69,8 @@ No se ha proporcionado información comparativa con otros modelos en la fuente d
 
 ## Enlaces
 
-- HuggingFace del checkpoint FP8: https://huggingface.co/ibrahimkettaneh/Qwen-CUA-FP8
-- Modelo base en HuggingFace: https://huggingface.co/xlangai/Qwen-CUA
+- Hugging Face del checkpoint FP8: https://huggingface.co/ibrahimkettaneh/Qwen-CUA-FP8
+- Modelo base en Hugging Face: https://huggingface.co/xlangai/Qwen-CUA
 - Licencia Apache-2.0: https://huggingface.co/xlangai/Qwen-CUA/blob/main/LICENSE
 - Paper en arXiv: https://arxiv.org/abs/2608.02352
 - Repositorio de GitHub: https://github.com/xlang-ai/Qwen-CUA

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Graph Qwenputer es un checkpoint derivado de Qwen3.5-4B en el que se han insertado 11 capas adicionales delante de las 32 originales del modelo base. Esas capas implementan una CPU RV32IM (con extension Zba) compilada mediante el proyecto Qwenputer, junto con 85 unidades de salida adicionales que permiten a la máquina emitir tokens ordinarios. El resultado es un modelo que, con el firmware y el driver adecuados, puede leer y escribir un grafo tipado y dirigido de hasta 1.024 nodos desde dentro de su propia ejecución. Lo publica el usuario hopski en HuggingFace bajo licencia Apache 2.0.
+Graph Qwenputer es un checkpoint derivado de Qwen3.5-4B en el que se han insertado 11 capas adicionales delante de las 32 originales del modelo base. Esas capas implementan una CPU RV32IM (con extension Zba) compilada mediante el proyecto Qwenputer, junto con 85 unidades de salida adicionales que permiten a la máquina emitir tokens ordinarios. El resultado es un modelo que, con el firmware y el driver adecuados, puede leer y escribir un grafo tipado y dirigido de hasta 1.024 nodos desde dentro de su propia ejecución. Lo publica el usuario hopski en Hugging Face bajo licencia Apache 2.0.
 
 La propuesta es inusual: no se entrena nada. Los 424 tensores originales de Qwen3.5-4B permanecen bit a bit idénticos y las capas nuevas son pesos compilados que representan una máquina virtual. El modelo no contiene conocimiento sobre ningún grafo concreto; el firmware y la estructura del grafo se cargan en el estado de ejecución después del prompt, de modo que los pesos por sí solos son una máquina vacía que requiere el driver y el firmware del repositorio del proyecto.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Capacidad de grafo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Graph Qwenputer | 9,38 mil millones (4B base + capas compiladas) | No disponible | Si, grafo de hasta 1.024 nodos via CPU RV32IM embebida | Apache 2.0 | HuggingFace, requiere driver y firmware |
-| Qwen3.5-4B | 4 mil millones (aproximado, segun nombre) | No disponible | No | Apache 2.0 | HuggingFace |
+| Graph Qwenputer | 9,38 mil millones (4B base + capas compiladas) | No disponible | Si, grafo de hasta 1.024 nodos via CPU RV32IM embebida | Apache 2.0 | Hugging Face, requiere driver y firmware |
+| Qwen3.5-4B | 4 mil millones (aproximado, segun nombre) | No disponible | No | Apache 2.0 | Hugging Face |
 | Herramientas externas de grafo (p. ej. librerias de grafos) | No aplica | No aplica | Si, con latencia de milisegundos | Variable | Estandar |
 
 La comparación relevante es frente al propio Qwen3.5-4B, del que hereda el comportamiento conversacional, y frente a herramientas de grafo convencionales, que segun el autor obtienen las mismas respuestas en milisegundos. No se dispone de datos de benchmarks para comparar rendimiento de razonamiento o codigo con alternativas.
@@ -81,7 +81,7 @@ La comparación relevante es frente al propio Qwen3.5-4B, del que hereda el comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hopski/graph-qwenputer
+- Modelo en Hugging Face: https://huggingface.co/hopski/graph-qwenputer
 - Repositorio del proyecto (driver y firmware): https://github.com/ho3h/graph-qwenputer
 - Compilador Qwenputer de Divyansh Agrawal: https://github.com/divagr18/qwenputer
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B

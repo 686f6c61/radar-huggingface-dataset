@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables directamente. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dylennnn/techjam
+- Repositorio Hugging Face: https://huggingface.co/Dylennnn/techjam
 - Modelo base: https://huggingface.co/Bombek1/ai-image-detector-siglip-dinov2
 - Página del concurso TikTok TechJam 2026: https://tiktoktechjam2026.devpost.com/
 - Código fuente de RobustLens (referenciado en el README, sin URL específica): https://github.com/

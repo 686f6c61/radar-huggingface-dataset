@@ -19,7 +19,7 @@ Su relevancia practica es doble: por un lado, ofrece un punto de entrada de bajo
 | Tipos de cuantizacion | Q2_K, Q2_K_S, IQ3_M, Q3_K_S, IQ3_XXS, Q3_K_M, Q3_K_L, IQ3_XS, IQ3_S, small-IQ4_NL, IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ2_M, IQ2_XXS, IQ2_XS, IQ2_S, Q6_K, IQ1_M, IQ1_S, Q5_K_S, Q5_K_M (24 variantes, generadas con imatrix) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado; el original se convirtio desde formato HuggingFace) |
+| Formato de pesos | GGUF (cuantizado; el original se convirtio desde formato Hugging Face) |
 | Repositorio de origen (modelo base) | AItonomy/PhAI-IDE-9B |
 | Autor de la cuantizacion | mradermacher |
 | Tamano del repositorio | 13,6 GB (conjunto completo de cuantizaciones) |
@@ -33,12 +33,12 @@ Su relevancia practica es doble: por un lado, ofrece un punto de entrada de bajo
 
 La informacion disponible no describe la arquitectura del modelo base AItonomy/PhAI-IDE-9B. El unico dato estructural fiable es el recuento de parametros del modelo original en safetensors: 8.953.803.264, lo que lo situa en la categoria de modelos densos de ~9 B. No se especifica si emplea atencion completa, atencion con ventana deslizante, atencion lineal u otra variante, ni el numero de capas, dimensiones ocultas o tamano de vocabulario. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF, DPO u otro tipo de ajuste por preferencias.
 
-Lo que si esta documentado es el proceso de cuantizacion. El pipeline parte de los pesos en formato HuggingFace (convert_type hf), aplica cuantizacion de tensores de salida (output_tensor_quantised: 1) y genera las variantes con matrices de importancia (imatrix), tal como indica el propio autor en la model card. El uso de imatrix implica que los errores de cuantizacion se ponderan con estadisticas de activacion recogidas sobre un corpus de calibracion, lo que reduce la perdida de calidad respecto a la cuantizacion uniforme, especialmente en los niveles IQ1 e IQ2. La etiqueta conversational sugiere que el modelo base fue ajustado para dialogo, pero se trata de una inferencia a partir del tag y no de una especificacion tecnica.
+Lo que si esta documentado es el proceso de cuantizacion. El pipeline parte de los pesos en formato Hugging Face (convert_type hf), aplica cuantizacion de tensores de salida (output_tensor_quantised: 1) y genera las variantes con matrices de importancia (imatrix), tal como indica el propio autor en la model card. El uso de imatrix implica que los errores de cuantizacion se ponderan con estadisticas de activacion recogidas sobre un corpus de calibracion, lo que reduce la perdida de calidad respecto a la cuantizacion uniforme, especialmente en los niveles IQ1 e IQ2. La etiqueta conversational sugiere que el modelo base fue ajustado para dialogo, pero se trata de una inferencia a partir del tag y no de una especificacion tecnica.
 
 ## Capacidades
 
 - Generacion de texto y conversacion multi-turno: el repositorio declara el tag conversational, lo que indica que el modelo base esta orientado a dialogo, aunque no se detalla el nivel de calidad.
-- Compatibilidad con endpoints de inferencia: el tag endpoints_compatible sugiere que los ficheros pueden servirse mediante APIs compatibles con el estandar de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints de inferencia: el tag endpoints_compatible sugiere que los ficheros pueden servirse mediante APIs compatibles con el estandar de Hugging Face Inference Endpoints.
 - Ejecucion local en cuantizaciones de 1 a 6 bits: 24 variantes permiten ajustar el equilibrio entre calidad y consumo de memoria.
 - Uso en CPU y GPU: el formato GGUF esta soportado por llama.cpp y sus derivados, lo que habilita inferencia en CPU, en GPU o en modo hibrido con offload parcial.
 - Tool calling / function calling: no disponible.
@@ -87,7 +87,7 @@ La comparativa de rendimiento con alternativas no es posible: no se dispone de b
 | Modelo | Parametros | Contexto | Licencia | Formatos disponibles |
 |---|---|---|---|---|
 | PhAI-IDE-9B (i1-GGUF) | 8,95 B | no disponible | no disponible | GGUF (24 cuantizaciones) |
-| AItonomy/PhAI-IDE-9B (base) | 8,95 B | no disponible | no disponible | pesos HuggingFace (safetensors) |
+| AItonomy/PhAI-IDE-9B (base) | 8,95 B | no disponible | no disponible | pesos Hugging Face (safetensors) |
 | Llama 3.1 8B Instruct (referencia publica) | 8,03 B | 128 k tokens | Llama 3.1 Community License | safetensors y GGUF de terceros |
 | Mistral 7B Instruct v0.3 (referencia publica) | 7,25 B | 32 k tokens | Apache 2.0 | safetensors y GGUF oficiales |
 | Gemma 2 9B (referencia publica) | 9,24 B | 8 k tokens | Gemma Terms of Use | safetensors y GGUF de terceros |

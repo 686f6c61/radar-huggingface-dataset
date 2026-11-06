@@ -94,12 +94,12 @@ No se conocen, segun la informacion disponible, otros detectores de fallo para p
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mattewg/pi05-xarm7-sim-cubes-detector
+- Hugging Face del modelo: https://huggingface.co/mattewg/pi05-xarm7-sim-cubes-detector
 - Checkpoint de la politica: https://huggingface.co/mattewg/pi05-xarm7-sim-cubes-step20000
 - Codigo (rama `detector/hide-and-seek`): https://github.com/KKallidromitis/xarm-robotics
 - Dataset: https://huggingface.co/datasets/mattewg/xarm7_sim_three_cubes
 - Ficha del dataset en Claru: https://claru.ai/datasets/mattewg-xarm7-sim-three-cubes
 - pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.ai/models/pi05
 - Codigo de pi0.5 en Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05
-- Listado de modelos con tag xarm7 en HuggingFace: https://huggingface.co/models?other=xarm7
+- Listado de modelos con tag xarm7 en Hugging Face: https://huggingface.co/models?other=xarm7
 - Paper del metodo Hide-and-Seek: arXiv 2605.30834 (referencia citada en la model card)

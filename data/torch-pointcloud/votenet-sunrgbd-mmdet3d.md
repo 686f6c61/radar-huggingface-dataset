@@ -76,7 +76,7 @@ No se han publicado en la información disponible resultados comparativos adicio
 
 | Modelo | Parámetros | Contexto / entrada | mAP@0.25 (SUN RGB-D) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| votenet.sunrgbd.mmdet3d (este) | ≈1,0 M | nube de puntos, 10 clases | 59,8 | Apache-2.0 | HuggingFace, torch-pointcloud |
+| votenet.sunrgbd.mmdet3d (este) | ≈1,0 M | nube de puntos, 10 clases | 59,8 | Apache-2.0 | Hugging Face, torch-pointcloud |
 | VoteNet original (MMDetection3D) | ≈1,0 M | nube de puntos, 10 clases | ≈59,8 (referencia del paper) | Apache-2.0 | GitHub open-mmlab |
 | Otros detectores 3D de la familia MMDetection3D | no disponible | nube de puntos | no disponible | Apache-2.0 | GitHub open-mmlab |
 
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de datos comparativos con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/votenet.sunrgbd.mmdet3d
+- Hugging Face: https://huggingface.co/torch-pointcloud/votenet.sunrgbd.mmdet3d
 - Paper (Deep Hough Voting for 3D Object Detection in Point Clouds): https://arxiv.org/abs/1904.09664
 - Repositorio de la librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - MMDetection3D (origen de los pesos): https://github.com/open-mmlab/mmdetection3d

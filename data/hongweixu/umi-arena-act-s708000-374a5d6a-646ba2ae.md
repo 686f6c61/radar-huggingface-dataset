@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`umi-arena-act-s708000-374a5d6a-646ba2ae` es un checkpoint de un modelo ACT (Action Chunking Transformer) publicado por el usuario HongWeiXu en HuggingFace. Se trata de una política de imitación para control robótico, exportada como candidata de inferencia para la competición UMI Arena. El modelo no es un LLM ni un modelo de lenguaje: es una red que mapea observaciones visuales y de estado a una secuencia de acciones motrices, con 51,6 millones de parámetros y un peso en disco de 0,2 GB.
+`umi-arena-act-s708000-374a5d6a-646ba2ae` es un checkpoint de un modelo ACT (Action Chunking Transformer) publicado por el usuario HongWeiXu en Hugging Face. Se trata de una política de imitación para control robótico, exportada como candidata de inferencia para la competición UMI Arena. El modelo no es un LLM ni un modelo de lenguaje: es una red que mapea observaciones visuales y de estado a una secuencia de acciones motrices, con 51,6 millones de parámetros y un peso en disco de 0,2 GB.
 
 La entrada del modelo son dos imágenes RGB de cámara de muñeca más un vector de estado nativo de 9 dimensiones, y produce 32 filas de acción de 16 dimensiones cada una (chunks de acciones). El checkpoint corresponde al paso de entrenamiento 708000. No condiciona sobre lenguaje: es un baseline puramente visual y de estado.
 
@@ -74,5 +74,5 @@ No disponible. La información proporcionada no incluye otros checkpoints de ACT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HongWeiXu/umi-arena-act-s708000-374a5d6a-646ba2ae
+- Modelo en Hugging Face: https://huggingface.co/HongWeiXu/umi-arena-act-s708000-374a5d6a-646ba2ae
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

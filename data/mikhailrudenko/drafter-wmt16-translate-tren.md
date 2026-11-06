@@ -81,10 +81,10 @@ Dentro del subconjunto de borradores de traduccion de WMT16, este modelo present
 
 | Modelo | Parametros | Dominio | eval_loss | top1_accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| drafter-wmt16-translate-tren | ~156M | Turco → ingles | 1,998 | 54,91% | Apache 2.0 | HuggingFace |
-| drafter-wmt16-translate-deen | ~156M (no confirmado) | Aleman → ingles | 2,307 | 52,77% | Apache 2.0 | HuggingFace |
-| drafter-wmt16-translate-ruen | ~156M (no confirmado) | Ruso → ingles | 2,363 | 50,04% | Apache 2.0 | HuggingFace |
-| drafter-mixed-ut | ~156M (no confirmado) | Mixto U+T (42 clusters) | 2,085 | 59,50% | Apache 2.0 | HuggingFace |
+| drafter-wmt16-translate-tren | ~156M | Turco → ingles | 1,998 | 54,91% | Apache 2.0 | Hugging Face |
+| drafter-wmt16-translate-deen | ~156M (no confirmado) | Aleman → ingles | 2,307 | 52,77% | Apache 2.0 | Hugging Face |
+| drafter-wmt16-translate-ruen | ~156M (no confirmado) | Ruso → ingles | 2,363 | 50,04% | Apache 2.0 | Hugging Face |
+| drafter-mixed-ut | ~156M (no confirmado) | Mixto U+T (42 clusters) | 2,085 | 59,50% | Apache 2.0 | Hugging Face |
 
 Los tres modelos comparables pertenecen al mismo proyecto y comparten base, licencia y formato. La diferencia principal es el dominio de especializacion: los borradores por idioma logran menor `eval_loss` que el borrador mixto, pero `drafter-mixed-ut` presenta una `top1_accuracy` superior (59,50%) por su cobertura mas amplia de tareas. No se dispone de datos sobre la longitud de contexto de ninguno de ellos.
 
@@ -102,7 +102,7 @@ Los tres modelos comparables pertenecen al mismo proyecto y comparten base, lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-tren
+- Modelo en Hugging Face: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-tren
 - Modelo base: https://huggingface.co/MikhailRudenko/drafter-mixed-ut
 - Base original: https://huggingface.co/Felladrin/Lite-Mistral-150M-v2-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/MikhailRudenko/domain-aware-sd-synthetic

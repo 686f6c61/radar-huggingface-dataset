@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `aasib/distilbert-imdb-sentiment` es un clasificador de texto basado en la arquitectura DistilBERT, publicado en HuggingFace por el usuario `aasib`. El nombre del repositorio sugiere que ha sido ajustado (fine-tuning) sobre el dataset IMDB para análisis de sentimiento, aunque la model card no proporciona información explícita sobre el proceso de entrenamiento, los datos utilizados ni las métricas de evaluación. Se trata de un modelo pequeño, con aproximadamente 66,9 millones de parámetros, lo que lo hace adecuado para entornos con recursos limitados.
+El modelo `aasib/distilbert-imdb-sentiment` es un clasificador de texto basado en la arquitectura DistilBERT, publicado en Hugging Face por el usuario `aasib`. El nombre del repositorio sugiere que ha sido ajustado (fine-tuning) sobre el dataset IMDB para análisis de sentimiento, aunque la model card no proporciona información explícita sobre el proceso de entrenamiento, los datos utilizados ni las métricas de evaluación. Se trata de un modelo pequeño, con aproximadamente 66,9 millones de parámetros, lo que lo hace adecuado para entornos con recursos limitados.
 
 La relevancia de este modelo radica en su potencial uso como herramienta ligera de clasificación de sentimiento en texto, especialmente en aplicaciones de procesamiento de lenguaje natural donde se requiere baja latencia y bajo consumo de memoria. Sin embargo, la ausencia de documentación detallada y de resultados de evaluación limita su aplicabilidad directa en producción sin una validación previa por parte del usuario.
 
-El modelo está registrado con el pipeline `text-classification` y es compatible con la librería `transformers` de HuggingFace, así como con `text-embeddings-inference` y `endpoints_compatible`, lo que facilita su despliegue en infraestructuras de inferencia estándar. No se dispone de información sobre la licencia, los idiomas soportados ni el contexto de entrenamiento.
+El modelo está registrado con el pipeline `text-classification` y es compatible con la librería `transformers` de Hugging Face, así como con `text-embeddings-inference` y `endpoints_compatible`, lo que facilita su despliegue en infraestructuras de inferencia estándar. No se dispone de información sobre la licencia, los idiomas soportados ni el contexto de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -75,5 +75,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aasib/distilbert-imdb-sentiment
+- Hugging Face: https://huggingface.co/aasib/distilbert-imdb-sentiment
 - Paper de DistilBERT (referencia arquitectónica): https://arxiv.org/abs/1910.09700

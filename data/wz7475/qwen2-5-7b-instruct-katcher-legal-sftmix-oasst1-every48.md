@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every48` es un ajuste fino publicado en HuggingFace por el usuario `wz7475`. Por la nomenclatura del identificador se deduce que parte de `Qwen2.5-7B-Instruct` y que se ha entrenado mediante SFT sobre una mezcla de datos de dominio juridico ("katcher-legal-sftmix") combinada con el dataset OASST1, presumiblemente con un guardado de checkpoints cada 48 pasos ("every48"). No obstante, la model card publicada es la plantilla autogenerada de HuggingFace y no confirma ninguno de estos extremos.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every48` es un ajuste fino publicado en Hugging Face por el usuario `wz7475`. Por la nomenclatura del identificador se deduce que parte de `Qwen2.5-7B-Instruct` y que se ha entrenado mediante SFT sobre una mezcla de datos de dominio juridico ("katcher-legal-sftmix") combinada con el dataset OASST1, presumiblemente con un guardado de checkpoints cada 48 pasos ("every48"). No obstante, la model card publicada es la plantilla autogenerada de Hugging Face y no confirma ninguno de estos extremos.
 
 Se trata, por tanto, de un modelo derivado orientado a tareas de asistencia legal en ingles o multilingue, mas un componente de ajuste conversacional general procedente de OASST1. El interes practico es acotado: el repositorio acumula 0 descargas y 0 likes en el momento de la consulta, no declara licencia, idiomas ni pipeline, y su tamano en disco (0,3 GB) es incompatible con un checkpoint completo de 7.000 millones de parametros en `safetensors`, lo que sugiere un adaptador LoRA, un subconjunto de pesos o una subida incompleta.
 
@@ -26,7 +26,7 @@ Dado que la documentacion del autor esta vacia, cualquier dato tecnico debe trat
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ni la arquitectura ni el procedimiento de entrenamiento: todos los apartados aparecen con el marcador `[More Information Needed]` de la plantilla automatica de HuggingFace. Los unicos indicios disponibles son el identificador del repositorio y las etiquetas (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`). El tag `arxiv:1910.09700` no corresponde a un articulo sobre el modelo, sino a la referencia a Lacoste et al. (2019) sobre calculo de emisiones de carbono que la propia plantilla incluye por defecto.
+La model card no describe ni la arquitectura ni el procedimiento de entrenamiento: todos los apartados aparecen con el marcador `[More Information Needed]` de la plantilla automatica de Hugging Face. Los unicos indicios disponibles son el identificador del repositorio y las etiquetas (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`). El tag `arxiv:1910.09700` no corresponde a un articulo sobre el modelo, sino a la referencia a Lacoste et al. (2019) sobre calculo de emisiones de carbono que la propia plantilla incluye por defecto.
 
 A partir del nombre se pueden formular hipotesis razonables, siempre sin confirmar: (1) el punto de partida es `Qwen2.5-7B-Instruct`, un transformer decoder-only de 7,61 mil millones de parametros con atencion de consultas agrupadas (GQA), codificacion posicional rotatoria (RoPE) y una ventana nativa de 32.768 tokens; (2) el entrenamiento es un ajuste supervisado (SFT) sobre una mezcla que combina un corpus juridico ("katcher-legal-sftmix") con el dataset de instrucciones abierto OASST1; (3) la coletilla "every48" apunta a un guardado de checkpoint cada 48 iteraciones, lo que implicaria que el repositorio contiene una instantanea intermedia y no necesariamente la mejor version. No hay evidencia de RLHF, DPO ni decodificacion especulativa.
 
@@ -94,7 +94,7 @@ La comparativa se establece contra el modelo del que probablemente deriva y cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every48
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every48
 - Referencia citada en la plantilla de la model card (no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono referenciada en la plantilla: https://mlco2.github.io/impact#compute
 - Modelo base presumible (no confirmado): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

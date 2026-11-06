@@ -86,10 +86,10 @@ No se dispone de informacion suficiente para una comparativa directa con otros m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/knightnemo/omnireset-easybhome-bases)
+- [Modelo en Hugging Face](https://huggingface.co/knightnemo/omnireset-easybhome-bases)
 - [Dataset de demostraciones](https://huggingface.co/datasets/knightnemo/omnireset-easybhome-demos)
 - [Repositorio Understand_Fleet_RL](https://github.com/knightnemo/Understand_Fleet_RL)
 - [Proyecto OmniReset](https://weirdlabuw.github.io/omnireset/)
 - [Documentacion OmniReset en UW Lab](https://uw-lab.github.io/UWLab/main/source/publications/omnireset/index.html)
-- [Perfil del autor en HuggingFace](https://huggingface.co/knightnemo)
+- [Perfil del autor en Hugging Face](https://huggingface.co/knightnemo)
 - [Perfil del autor en GitHub](https://github.com/knightnemo)

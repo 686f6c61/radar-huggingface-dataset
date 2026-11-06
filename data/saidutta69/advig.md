@@ -113,7 +113,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/AdVig
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/AdVig
 - Dataset AdTrap v1: https://huggingface.co/datasets/saidutta69/AdTrap (referenciado en la model card, no se proporciona URL directa)
 - Perfil del autor: https://huggingface.co/saidutta69
 - Modelo hermano PhishScout: https://huggingface.co/saidutta69/PhishScout

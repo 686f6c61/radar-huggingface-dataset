@@ -81,6 +81,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ottneel/afroxlmr_base_moderation
+- Hugging Face: https://huggingface.co/Ottneel/afroxlmr_base_moderation
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-base
 - Paper relacionado (AfroXLMR-Social): https://arxiv.org/html/2503.18247v3

@@ -68,8 +68,8 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Base-125M-v1-mlx
-- Modelo base en HuggingFace: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Base-125M-v1
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Base-125M-v1-mlx
+- Modelo base en Hugging Face: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Base-125M-v1
 - Sitio web de OpenMed: https://openmed.life/
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentación del backend MLX: https://openmed.life/docs/mlx-backend/

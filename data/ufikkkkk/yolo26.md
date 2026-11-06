@@ -77,7 +77,7 @@ No se han publicado en la información disponible resultados de otras métricas 
 
 | Modelo | Familia / tarea | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| YOLO26 (este repositorio) | YOLO de una etapa; detección, segmentación, pose, OBB, clasificación, profundidad, tracking | No disponible | No aplica | mAP@0.5:0.95 = 57,5 en COCO val (no verificado) | AGPL-3.0 (+ licencia comercial) | HuggingFace (espejo de tercero y repo oficial), GitHub, Kaggle, pip `ultralytics` |
+| YOLO26 (este repositorio) | YOLO de una etapa; detección, segmentación, pose, OBB, clasificación, profundidad, tracking | No disponible | No aplica | mAP@0.5:0.95 = 57,5 en COCO val (no verificado) | AGPL-3.0 (+ licencia comercial) | Hugging Face (espejo de tercero y repo oficial), GitHub, Kaggle, pip `ultralytics` |
 | YOLO11 (Ultralytics) | YOLO de una etapa; conjunto de tareas equivalente | No disponible en la información | No aplica | No disponible en la información | AGPL-3.0 (+ licencia comercial) | Misma librería y canales de distribución |
 | YOLOv8 (Ultralytics) | YOLO de una etapa; detección y tareas derivadas | No disponible en la información | No aplica | No disponible en la información | AGPL-3.0 (+ licencia comercial) | Misma librería y canales de distribución |
 | RT-DETR (familia DETR en tiempo real) | Transformer de detección de extremo a extremo, sin NMS | No disponible en la información | No aplica | No disponible en la información | No disponible en la información | No disponible en la información |
@@ -98,8 +98,8 @@ La información suministrada solo permite comparar de forma cualitativa: YOLO26 
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/Ufikkkkk/YOLO26
-- HuggingFace (repositorio oficial de Ultralytics): https://huggingface.co/Ultralytics/YOLO26
+- Hugging Face (repositorio analizado): https://huggingface.co/Ufikkkkk/YOLO26
+- Hugging Face (repositorio oficial de Ultralytics): https://huggingface.co/Ultralytics/YOLO26
 - Documentación oficial de YOLO26: https://docs.ultralytics.com/models/yolo26
 - Página de producto YOLO26: https://www.ultralytics.com/yolo/yolo26
 - Repositorio GitHub del proyecto: https://github.com/ultralytics/yolo26

@@ -89,5 +89,5 @@ No se dispone de cifras comparativas de rendimiento para el modelo objeto de est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stepanovevg/blip-retrieval-small
+- Hugging Face: https://huggingface.co/Stepanovevg/blip-retrieval-small
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

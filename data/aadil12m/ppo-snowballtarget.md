@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Aadil12m/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado mediante el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `SnowballTarget` de Unity ML-Agents. El ambiente consiste en un escenario donde un agente debe lanzar bolas de nieve a objetivos que aparecen dinámicamente, con el objetivo de maximizar la recompensa acumulada. El desarrollo proviene de la comunidad que utiliza la librería Unity ML-Agents, y ha sido publicado en HuggingFace por el usuario Aadil12m.
+El modelo `Aadil12m/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado mediante el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `SnowballTarget` de Unity ML-Agents. El ambiente consiste en un escenario donde un agente debe lanzar bolas de nieve a objetivos que aparecen dinámicamente, con el objetivo de maximizar la recompensa acumulada. El desarrollo proviene de la comunidad que utiliza la librería Unity ML-Agents, y ha sido publicado en Hugging Face por el usuario Aadil12m.
 
 No se trata de un modelo de lenguaje ni de un sistema fundacional: es un agente de política neuronal, cuyo comportamiento se limita a la toma de decisiones en el entorno de simulación para el que fue entrenado. La model card no incluye información detallada sobre la arquitectura de red, la cantidad de parámetros ni el proceso de entrenamiento, por lo que la evaluación técnica se ve limitada a los datos disponibles públicos.
 
-El modelo es relevante en el contexto de investigación y desarrollo en reinforcement learning, especialmente como ejemplo de integración del ecosistema ML-Agents con el HuggingFace Hub. La ficha técnica refleja únicamente lo que se puede verificar a partir de la información proporcionada; no se han encontrado datos adicionales en la búsqueda web más allá de la model card y referencias cruzadas a otros agentes similares.
+El modelo es relevante en el contexto de investigación y desarrollo en reinforcement learning, especialmente como ejemplo de integración del ecosistema ML-Agents con el Hugging Face Hub. La ficha técnica refleja únicamente lo que se puede verificar a partir de la información proporcionada; no se han encontrado datos adicionales en la búsqueda web más allá de la model card y referencias cruzadas a otros agentes similares.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ No se han publicado datos sobre el proceso de entrenamiento, como el número de 
 ## Casos de uso
 
 - Investigacion en reinforcement learning: el modelo puede utilizarse como punto de partida para reproducir experimentos con PPO en el entorno SnowballTarget y comparar la estabilidad del algoritmo en condiciones de recompensas variables.
-- Educacion y divulgacion: sirve como ejemplo práctico para demostrar el ciclo completo de entrenamiento y publicacion de agentes ML-Agents en HuggingFace, especialmente en cursos como el Deep RL Course de Hugging Face.
+- Educacion y divulgacion: sirve como ejemplo práctico para demostrar el ciclo completo de entrenamiento y publicacion de agentes ML-Agents en Hugging Face, especialmente en cursos como el Deep RL Course de Hugging Face.
 - Desarrollo de bots en Unity: el agente puede integrarse dentro de un proyecto Unity como oponente o colaborador en un juego de lanzamiento, aprovechando el formato exportable ONNX o `.nn` para la inferencia en runtime.
 - Pruebas de estrategias de punteria y timing: en simulacion, el modelo permite estudiar como una politica PPO optimiza el angulo y el momento del lanzamiento para alcanzar objetivos en movimiento.
 - Generacion de trayectorias de comportamiento: se pueden registrar las acciones y observaciones del agente durante episodios de juego para su posterior analisis, o para entrenar modelos imitativos basados en estas trayectorias.
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Autor | Entorno | Algoritmo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aadil12m/ppo-SnowballTarget | Aadil12m | SnowballTarget | PPO | No disponible | HuggingFace |
-| Adilbai/ppo-SnowballTarget | Adilbai | SnowballTarget | PPO | No disponible | HuggingFace |
+| Aadil12m/ppo-SnowballTarget | Aadil12m | SnowballTarget | PPO | No disponible | Hugging Face |
+| Adilbai/ppo-SnowballTarget | Adilbai | SnowballTarget | PPO | No disponible | Hugging Face |
 
 Ambos modelos pertenecen al mismo entorno y algoritmo, pero no se dispone de especificaciones tecnicas detalladas (parametros, arquitectura de red, resultados) para establecer una comparacion cuantitativa. El modelo de Adilbai presenta una model card ligeramente mas extensa, mencionando que el agente se denomina "Julien the Bear", aunque no aporta datos de rendimiento.
 
@@ -77,8 +77,8 @@ Ambos modelos pertenecen al mismo entorno y algoritmo, pero no se dispone de esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aadil12m/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/Aadil12m/ppo-SnowballTarget
 - Modelo similar de Adilbai: https://huggingface.co/Adilbai/ppo-SnowballTarget
 - Documentacion de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial sobre ML-Agents en HuggingFace: https://huggingface.co/learn/deep-rl-course/unit5/introduction
+- Tutorial sobre ML-Agents en Hugging Face: https://huggingface.co/learn/deep-rl-course/unit5/introduction
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-POCA-SoccerTwos es un checkpoint de política de aprendizaje por refuerzo publicado por el usuario rohit0128 en HuggingFace. No se trata de un modelo de lenguaje: es una red neuronal de política entrenada con el framework Unity ML-Agents para resolver el entorno `ML-Agents-SoccerTwos`, un escenario de fútbol 2 contra 2 con agentes cooperativos. El modelo se desarrolló como ejercicio de la Unidad 7 del curso Deep Reinforcement Learning de HuggingFace, por lo que su finalidad principal es educativa y de referencia.
+POCA-SoccerTwos es un checkpoint de política de aprendizaje por refuerzo publicado por el usuario rohit0128 en Hugging Face. No se trata de un modelo de lenguaje: es una red neuronal de política entrenada con el framework Unity ML-Agents para resolver el entorno `ML-Agents-SoccerTwos`, un escenario de fútbol 2 contra 2 con agentes cooperativos. El modelo se desarrolló como ejercicio de la Unidad 7 del curso Deep Reinforcement Learning de Hugging Face, por lo que su finalidad principal es educativa y de referencia.
 
 La información publicada es mínima: la model card únicamente documenta el resultado de evaluación, con una recompensa media de 1200.0 sobre un mínimo exigido de -100, lo que se marca como PASSED. El tag `poca` apunta al entrenador POCA de ML-Agents (familia vinculada a MA-POCA, Multi-Agent POsthumous Credit Assignment, orientada a asignación de crédito en entornos multiagente cooperativos), aunque la model card no confirma el algoritmo exacto ni los hiperparámetros empleados.
 
@@ -45,7 +45,7 @@ Tampoco se documentan el número de pasos de entrenamiento, el número de entorn
 - Validación de pipelines de inferencia de ML-Agents: comprobar el despliegue del modelo en Unity mediante el motor de inferencia (Sentis/Barracuda históricamente) y medir latencia por paso.
 - Generación de trayectorias de demostración: registrar episodios del agente para análisis de comportamiento, imitación o inicialización de políticas (behavioral cloning).
 - Estudio comparativo de algoritmos de RL multiagente: emplear el checkpoint como línea base de POCA frente a PPO o SAC en el mismo entorno, siempre que se reentrenen las alternativas con la misma configuración.
-- Material docente: ejemplo mínimo de artefacto publicable en HuggingFace Hub dentro de un curso de RL, útil para enseñar el flujo de entrenamiento, evaluación y publicación.
+- Material docente: ejemplo mínimo de artefacto publicable en Hugging Face Hub dentro de un curso de RL, útil para enseñar el flujo de entrenamiento, evaluación y publicación.
 
 ## Benchmarks y rendimiento
 
@@ -80,6 +80,6 @@ No disponible. La información proporcionada no incluye otros checkpoints de `ML
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohit0128/poca-SoccerTwos
-- Curso Deep Reinforcement Learning de HuggingFace (contexto de la Unidad 7, referencia indicada en la model card): https://huggingface.co/deep-rl-course/unit7/introduction
+- Modelo en Hugging Face: https://huggingface.co/rohit0128/poca-SoccerTwos
+- Curso Deep Reinforcement Learning de Hugging Face (contexto de la Unidad 7, referencia indicada en la model card): https://huggingface.co/deep-rl-course/unit7/introduction
 - Repositorio de Unity ML-Agents (framework de entrenamiento e inferencia): https://github.com/Unity-Technologies/ml-agents

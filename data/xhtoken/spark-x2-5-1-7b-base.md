@@ -69,10 +69,10 @@ A continuación se comparan modelos de tamaño similar en cuanto a parámetros, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spark-X2.5-1.7B-Base | 1.707.657.216 | 1M tokens | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen2.5-1.5B-Instruct | 1.540.000.000 | 32K tokens | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1.230.000.000 | 128K tokens | Llama 3.2 Community | HuggingFace |
-| Gemma-2-2B | 2.610.000.000 | 8K tokens | Gemma Terms of Use | HuggingFace |
+| Spark-X2.5-1.7B-Base | 1.707.657.216 | 1M tokens | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen2.5-1.5B-Instruct | 1.540.000.000 | 32K tokens | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1.230.000.000 | 128K tokens | Llama 3.2 Community | Hugging Face |
+| Gemma-2-2B | 2.610.000.000 | 8K tokens | Gemma Terms of Use | Hugging Face |
 
 No se dispone de comparativas de rendimiento entre estos modelos en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de comparativas de rendimiento entre estos modelos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-1.7B-Base
+- Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-1.7B-Base
 - GitHub: https://github.com/XHToken/Spark-X2.5
 - ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-1.7B-Base
 - Llama-Factory: https://github.com/XHToken/LlamaFactory

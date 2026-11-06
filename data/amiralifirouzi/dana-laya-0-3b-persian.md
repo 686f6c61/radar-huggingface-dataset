@@ -115,7 +115,7 @@ No se dispone de datos sobre otros modelos de decisión no autorregresivos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amiralifirouzi/dana-laya-0.3b-persian
+- Modelo en Hugging Face: https://huggingface.co/amiralifirouzi/dana-laya-0.3b-persian
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de entrenamiento: https://huggingface.co/datasets/amiralifirouzi/jev-data-persian
 - Jev Persian Benchmark: https://github.com/ArmanJR/Jev-Persian-Benchmark

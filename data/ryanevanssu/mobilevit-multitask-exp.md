@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mobilevit multitask exp es un repositorio de HuggingFace publicado por el usuario `ryanevanssu` que contiene una implementación propia de una arquitectura MobileViT orientada a tareas múltiples (multitask), junto con un archivo de configuración, un recetario de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card indica explícitamente que el checkpoint es un punto de partida reproducible para pruebas de humo (smoke tests), no un modelo entrenado ni auditado.
+Mobilevit multitask exp es un repositorio de Hugging Face publicado por el usuario `ryanevanssu` que contiene una implementación propia de una arquitectura MobileViT orientada a tareas múltiples (multitask), junto con un archivo de configuración, un recetario de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card indica explícitamente que el checkpoint es un punto de partida reproducible para pruebas de humo (smoke tests), no un modelo entrenado ni auditado.
 
 El repositorio tiene 0 descargas y 0 likes, un tamaño reportado de 0.0 GB y un recuento de parámetros muy reducido (24.832 según el archivo safetensors), lo que es coherente con un artefacto de investigación sin entrenamiento completado. La escala declarada en la configuración es «giant», con atención dispersa (sparse), fusión bilineal, activación gelu-tanh y normalización RMSNorm, aunque estos valores provienen de una configuración generada automáticamente.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ryanevanssu/mobilevit-multitask-exp | 24.832 (inicialización) | no aplica | sin benchmarks; sin entrenar | BSD-3-Clause | HuggingFace (0 descargas) |
+| ryanevanssu/mobilevit-multitask-exp | 24.832 (inicialización) | no aplica | sin benchmarks; sin entrenar | BSD-3-Clause | Hugging Face (0 descargas) |
 | MobileViT (release oficial de Apple) | ~1M–6M según variante | no aplica | resultados publicados en clasificación de imágenes | licencia de Apple (revisar términos) | pesos entrenados disponibles |
 | MobileViTv2 | ~1M–3M según variante | no aplica | resultados publicados en clasificación y segmentación | licencia de Apple (revisar términos) | pesos entrenados disponibles |
 
@@ -82,5 +82,5 @@ Advertencia: la comparación no es de rendimiento, dado que este repositorio no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryanevanssu/mobilevit-multitask-exp
+- Modelo en Hugging Face: https://huggingface.co/ryanevanssu/mobilevit-multitask-exp
 - No se han encontrado en la información disponible otros enlaces (papers, blogs, repositorios o demos) asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vex909/Qwen-3.5-v2-Q4_K_M es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario Vex909. A pesar del nombre, que sugiere una vinculacion con la familia Qwen, la model card no incluye ninguna descripcion, documentacion tecnica ni referencia al modelo base del que se ha derivado la cuantizacion. El repositorio ocupa 0,5 GB y declara 752.393.024 parametros totales, un orden de magnitud muy inferior al de los modelos Qwen de gran tamano, lo que apunta a un modelo de aproximadamente 0,75 mil millones de parametros cuantizado a Q4_K_M.
+Vex909/Qwen-3.5-v2-Q4_K_M es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario Vex909. A pesar del nombre, que sugiere una vinculacion con la familia Qwen, la model card no incluye ninguna descripcion, documentacion tecnica ni referencia al modelo base del que se ha derivado la cuantizacion. El repositorio ocupa 0,5 GB y declara 752.393.024 parametros totales, un orden de magnitud muy inferior al de los modelos Qwen de gran tamano, lo que apunta a un modelo de aproximadamente 0,75 mil millones de parametros cuantizado a Q4_K_M.
 
 La relevancia de esta ficha es limitada desde el punto de vista practico: se trata de un artefacto sin documentacion, sin benchmarks publicados, sin historial de descargas ni validacion por parte de la comunidad en el momento de la consulta. El unico dato estructural fiable es el recuento de parametros y el formato de pesos. Cualquier evaluacion de capacidades, calidad o idoneidad para produccion debe hacerse mediante pruebas propias sobre el artefacto descargado.
 
@@ -81,5 +81,5 @@ La comparativa se basa en el orden de magnitud de parametros; los datos de los m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vex909/Qwen-3.5-v2-Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/Vex909/Qwen-3.5-v2-Q4_K_M
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este artefacto en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-step0800 es un repositorio publicado por el usuario dusersad12 en HuggingFace bajo licencia MIT. La ficha del repositorio lo clasifica con la etiqueta `feature-extraction` y con el tag `bert`, la librería `transformers` y pesos en formato PyTorch. En el momento de la consulta acumula 0 descargas y 0 likes, y el tamano del repositorio es de 0.0 GB, lo que indica que no hay ficheros de pesos publicados en el momento de la captura.
+MyAwesomeModel-step0800 es un repositorio publicado por el usuario dusersad12 en Hugging Face bajo licencia MIT. La ficha del repositorio lo clasifica con la etiqueta `feature-extraction` y con el tag `bert`, la librería `transformers` y pesos en formato PyTorch. En el momento de la consulta acumula 0 descargas y 0 likes, y el tamano del repositorio es de 0.0 GB, lo que indica que no hay ficheros de pesos publicados en el momento de la captura.
 
 La model card adjunta describe un modelo de propósito general orientado a razonamiento, matemáticas, programación y function calling, con menciones a una mejora de precisión en AIME 2025 del 70 % al 87,5 % y a un aumento del esfuerzo de razonamiento (de 12K a 23K tokens por pregunta). Sin embargo, esa model card no especifica arquitectura, número de parámetros, longitud de contexto ni idiomas, y su contenido tiene estructura de plantilla genérica (referencias a `Model1`, `Model2`, `Model1-v2` como líneas base y a figuras ausentes). Existe por tanto una contradicción entre los metadatos del repositorio (BERT, extracción de características) y el texto de la model card (modelo conversacional de razonamiento).
 
@@ -89,7 +89,7 @@ No es posible estimar requisitos de hardware porque se desconoce el número de p
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, y la librería declarada es `transformers`. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni SGLang.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, y la librería declarada es `transformers`. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni SGLang.
 - Latencia y throughput: no disponibles.
 
 Si finalmente se tratase de un encoder tipo BERT de tamano base (aproximadamente 110 millones de parámetros), la inferencia cabría en cualquier GPU de consumo e incluso en CPU; si se tratase del modelo de razonamiento descrito en la model card, requeriría hardware de datacenter. Ninguna de las dos hipótesis puede confirmarse.
@@ -113,6 +113,6 @@ No disponible. No es posible establecer una comparativa fiable porque no se cono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/MyAwesomeModel-step0800
+- Hugging Face: https://huggingface.co/dusersad12/MyAwesomeModel-step0800
 
 No se han encontrado en la búsqueda web otros enlaces relevantes (paper, blog, repositorio de código o demo). La model card referencia un repositorio de código y un sitio web oficial, pero no incluye sus URL.

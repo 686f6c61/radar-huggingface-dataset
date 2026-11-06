@@ -78,7 +78,7 @@ La comparativa se limita a las variantes de Gemma disponibles en el perfil de Ri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/gemma-4-12B-it-Feral-Aquarion-FP8
+- Repositorio Hugging Face: https://huggingface.co/Rin247/gemma-4-12B-it-Feral-Aquarion-FP8
 - Modelo base Gemma 4 12B (Google): https://huggingface.co/google/gemma-4-12B
 - Guia para desarrolladores de Gemma 4 12B: https://developers.googleblog.com/gemma-4-12b-the-developer-guide/
 - Anuncio oficial de Gemma 4 12B: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/

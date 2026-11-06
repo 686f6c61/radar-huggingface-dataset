@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dilarayavuz/generated-sst2-badnets-bert-lr5` es un checkpoint de clasificación de texto publicado en HuggingFace por el usuario `dilarayavuz`. Se trata de un ajuste fino (fine-tuning) de `google-bert/bert-base-uncased` sobre lo que su nombre indica como la tarea SST-2, generado con la herramienta AutoTrain de HuggingFace. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, y su model card se limita a las etiquetas de AutoTrain y a las métricas de validación, sin documentación adicional sobre datos, procedencia o finalidad.
+`dilarayavuz/generated-sst2-badnets-bert-lr5` es un checkpoint de clasificación de texto publicado en Hugging Face por el usuario `dilarayavuz`. Se trata de un ajuste fino (fine-tuning) de `google-bert/bert-base-uncased` sobre lo que su nombre indica como la tarea SST-2, generado con la herramienta AutoTrain de Hugging Face. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, y su model card se limita a las etiquetas de AutoTrain y a las métricas de validación, sin documentación adicional sobre datos, procedencia o finalidad.
 
 El identificador incluye el término "badnets", asociado en la literatura a la inyección de puertas traseras (*backdoor attacks*) mediante la inserción de un patrón o palabra detonante en una fracción de los ejemplos de entrenamiento. Esto sugiere que el modelo forma parte de un experimento de investigación sobre envenenamiento de datos o evaluación de ataques adversarios, aunque el autor no lo documenta explícitamente en la model card. El sufijo "lr5" apunta a una configuración de tasa de aprendizaje, pero no se especifica su valor ni el resto de hiperparámetros.
 
@@ -104,7 +104,7 @@ Las cifras de rendimiento de las alternativas no se han consultado en fuentes pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dilarayavuz/generated-sst2-badnets-bert-lr5
+- Modelo en Hugging Face: https://huggingface.co/dilarayavuz/generated-sst2-badnets-bert-lr5
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - AutoTrain (herramienta con la que se genero el modelo): https://huggingface.co/autotrain
 - Paper de referencia de la arquitectura BERT: https://arxiv.org/abs/1810.04805

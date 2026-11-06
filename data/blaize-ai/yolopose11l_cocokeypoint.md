@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOPOSE11l_COCOKeypoint (Blaize) | no disponible | imagen 640×384 o 640×640 | `.bm` (Picasso SDK) | AGPL-3.0 | HuggingFace, requiere hardware Blaize |
+| YOLOPOSE11l_COCOKeypoint (Blaize) | no disponible | imagen 640×384 o 640×640 | `.bm` (Picasso SDK) | AGPL-3.0 | Hugging Face, requiere hardware Blaize |
 | YOLO11l-pose (Ultralytics, original) | no disponible | imagen configurable | PyTorch / ONNX | AGPL-3.0 o licencia enterprise | GitHub Ultralytics |
 | Otros modelos de pose sobre COCO Keypoints (p. ej. variantes de la familia YOLO-pose) | no disponible | imagen variable | PyTorch / ONNX | según autor | repositorios públicos |
 
@@ -83,7 +83,7 @@ La comparación cuantitativa de precisión (mAP de keypoints) y latencia frente 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE11l_COCOKeypoint
+- Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE11l_COCOKeypoint
 - Repositorio original de Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints: https://cocodataset.org
 - Blaize: https://www.blaize.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fataldiscord/trollfurry` es un repositorio publicado en HuggingFace por el usuario `fataldiscord`. En el momento de redactar esta ficha, la model card asociada unicamente contiene la declaracion de licencia MIT: no hay descripcion, documentacion tecnica, ejemplos de uso ni metadatos de pipeline. El repositorio no declara idiomas, y la fecha de creacion y de ultima actualizacion es identica (2026-09-23T22:46:34Z), lo que sugiere que nunca se ha modificado desde su publicacion.
+`fataldiscord/trollfurry` es un repositorio publicado en Hugging Face por el usuario `fataldiscord`. En el momento de redactar esta ficha, la model card asociada unicamente contiene la declaracion de licencia MIT: no hay descripcion, documentacion tecnica, ejemplos de uso ni metadatos de pipeline. El repositorio no declara idiomas, y la fecha de creacion y de ultima actualizacion es identica (2026-09-23T22:46:34Z), lo que sugiere que nunca se ha modificado desde su publicacion.
 
 El modelo acumula 0 descargas y 0 likes, por lo que no tiene traccion verificable en la plataforma. Su nombre podria sugerir una relacion con contenido de tipo "troll" y con la comunidad furry, pero se trata de una hipotesis derivada del identificador y no de un dato confirmado: no hay evidencia en la informacion disponible de que sea un modelo de lenguaje, un modelo de difusion, un LoRA o cualquier otra categoria concreta. Los resultados de busqueda web recuperados tampoco aportan informacion sobre este repositorio en particular.
 
@@ -85,7 +85,7 @@ No disponible. La informacion recuperada en la busqueda web menciona otros proye
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fataldiscord/trollfurry
+- Hugging Face: https://huggingface.co/fataldiscord/trollfurry
 
 Resultados de busqueda web recuperados que no guardan relacion directa con este repositorio y se listan solo como referencia del ruido de busqueda generado por el termino "troll furry":
 
@@ -93,4 +93,4 @@ Resultados de busqueda web recuperados que no guardan relacion directa con este 
 - trollfurry Discord Emote - myEmotes: https://myemotes.io/emotes/trollfurry
 - Perchance AI Furry Generator: https://perchance.org/ai-furry-generator
 - Furry AI Generator Features - Yiff-AI.com: https://yiff-ai.com/features
-- lunarfish/furrydiffusion en HuggingFace: https://huggingface.co/lunarfish/furrydiffusion
+- lunarfish/furrydiffusion en Hugging Face: https://huggingface.co/lunarfish/furrydiffusion

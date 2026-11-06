@@ -4,7 +4,7 @@
 
 Alaya-EVOKE es un modelo de mundo interactivo (world model) para generación de vídeo desarrollado por AlayaLab. Genera secuencias de 384 × 640 píxeles a 24 fps, manteniendo coherencia temporal durante rollouts de hasta 30 segundos, y lo hace en solo 3 pasos de inferencia sin necesidad de clasifier-free guidance (CFG). El modelo introduce un banco de estados mundial indexado por cámara que permite sesiones de generación de duración arbitraria sin que el contexto del denoiser crezca, lo que lo diferencia de los modelos de vídeo con ventana fija.
 
-EVOKE se publica bajo licencia Apache-2.0, aunque el backend de profundidad ViGeo, necesario para el banco de estados mundial, se distribuye bajo CC-BY-NC-4.0, lo que condiciona su uso comercial. El repositorio de HuggingFace contiene solo los pesos (411,2 GB) e incluye varias etapas de entrenamiento: control de cámara, destilación de pocos pasos y destilación de vídeo largo. El modelo está diseñado para ser re-promptable en mitad de la generación, sin cortes ni reinicios, y admite modos texto-a-vídeo, imagen-a-vídeo y vídeo-a-vídeo, aunque los modelos destilados solo tienen el último modo dentro de su distribución de entrenamiento.
+EVOKE se publica bajo licencia Apache-2.0, aunque el backend de profundidad ViGeo, necesario para el banco de estados mundial, se distribuye bajo CC-BY-NC-4.0, lo que condiciona su uso comercial. El repositorio de Hugging Face contiene solo los pesos (411,2 GB) e incluye varias etapas de entrenamiento: control de cámara, destilación de pocos pasos y destilación de vídeo largo. El modelo está diseñado para ser re-promptable en mitad de la generación, sin cortes ni reinicios, y admite modos texto-a-vídeo, imagen-a-vídeo y vídeo-a-vídeo, aunque los modelos destilados solo tienen el último modo dentro de su distribución de entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -71,8 +71,8 @@ No se dispone de datos comparativos en la información proporcionada. EVOKE se p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlayaLab/Evoke
+- Hugging Face: https://huggingface.co/AlayaLab/Evoke
 - Repositorio GitHub: https://github.com/AlayaLab/Evoke
 - Página del proyecto: https://evoke-world.github.io/Evoke/
 - Paper arXiv: https://arxiv.org/abs/2608.13546
-- Paper en HuggingFace: https://huggingface.co/papers/2608.13546
+- Paper en Hugging Face: https://huggingface.co/papers/2608.13546

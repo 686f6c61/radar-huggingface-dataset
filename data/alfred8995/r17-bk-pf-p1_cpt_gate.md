@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p1_cpt_gate` es un checkpoint de 1.414.111.232 parametros (aproximadamente 1,41 mil millones) publicado en HuggingFace por el usuario `alfred8995`. El repositorio no incluye model card, pipeline declarado ni informacion sobre datos de entrenamiento: la unica informacion disponible es la metadata de la plataforma (etiquetas, tamano y recuento de parametros real extraido de los safetensors). La etiqueta `qwen3` sugiere que el checkpoint deriva de la familia Qwen3, pero no hay documentacion que lo confirme.
+`alfred8995/r17-bk-pf-p1_cpt_gate` es un checkpoint de 1.414.111.232 parametros (aproximadamente 1,41 mil millones) publicado en Hugging Face por el usuario `alfred8995`. El repositorio no incluye model card, pipeline declarado ni informacion sobre datos de entrenamiento: la unica informacion disponible es la metadata de la plataforma (etiquetas, tamano y recuento de parametros real extraido de los safetensors). La etiqueta `qwen3` sugiere que el checkpoint deriva de la familia Qwen3, pero no hay documentacion que lo confirme.
 
 El nombre del repositorio (`r17-bk-pf-p1_cpt_gate`) apunta a un artefacto interno de experimentacion, probablemente un checkpoint intermedio de preentrenamiento continuado (`cpt`) con algun tipo de compuerta o filtro (`gate`). No se trata, por tanto, de un modelo publicado con garantias de calidad, sino de un peso intermedio cuyo comportamiento no esta documentado.
 
@@ -18,12 +18,12 @@ Su relevancia actual es limitada: cero descargas, cero likes, acceso restringido
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. El repositorio solo contiene safetensors; no se publican versiones GGUF, AWQ, GPTQ ni EXL2 |
 | Idiomas soportados | No disponible |
-| Licencia | `other` (licencia no estandar, sin texto identificable en la informacion disponible); acceso restringido sujeto a aceptacion de condiciones en HuggingFace |
+| Licencia | `other` (licencia no estandar, sin texto identificable en la informacion disponible); acceso restringido sujeto a aceptacion de condiciones en Hugging Face |
 | Formato de pesos | Safetensors |
 | Tamano del repositorio | 2,8 GB |
 | Precision de los pesos | No disponible. 2,8 GB para 1,41 B de parametros es coherente con 16 bits (~2,82 GB teoricos), sin confirmar |
 | Pipeline declarado | No disponible |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion / actualizacion | 2026-10-23 (ambas) |
 
 ## Arquitectura y entrenamiento
@@ -94,5 +94,5 @@ No es posible establecer una comparacion de rendimiento con ninguno de ellos: el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p1_cpt_gate
+- Repositorio en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p1_cpt_gate
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada; los resultados obtenidos corresponden a servicios de traduccion sin relacion con el modelo.

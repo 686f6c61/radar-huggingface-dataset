@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Breadcrumbs-v2 es un modelo de lenguaje de 8.030 millones de parámetros creado por el usuario ForSureTesterSim en HuggingFace mediante la integración de cinco modelos base utilizando el algoritmo **Model Breadcrumbs**. Este método de fusión combina las capacidades de distintos modelos entrenados sobre la misma arquitectura base (Llama 3.1 8B) para obtener un modelo único que hereda las fortalezas de cada componente. El resultado es un modelo de generación de texto en inglés, con licencia Apache-2.0, pensado para tareas de razonamiento, código y matemáticas.
+Llama-3.1-8B-Breadcrumbs-v2 es un modelo de lenguaje de 8.030 millones de parámetros creado por el usuario ForSureTesterSim en Hugging Face mediante la integración de cinco modelos base utilizando el algoritmo **Model Breadcrumbs**. Este método de fusión combina las capacidades de distintos modelos entrenados sobre la misma arquitectura base (Llama 3.1 8B) para obtener un modelo único que hereda las fortalezas de cada componente. El resultado es un modelo de generación de texto en inglés, con licencia Apache-2.0, pensado para tareas de razonamiento, código y matemáticas.
 
 El modelo se construye sobre la arquitectura transformer de Llama 3.1, con una ventana de contexto nativa de 128.000 tokens (heredada del modelo base). La integración utiliza tres hiperparámetros: alpha (escala global, 0.3), beta (elimina el 90% inferior de las actualizaciones de magnitud) y gamma (elimina el 1% superior), lo que produce una fusión selectiva de los pesos. Aunque el repositorio no incluye benchmarks ni documentación de entrenamiento, la elección de los modelos base (Instruct, Magpie-Align, Tulu y DeepSeek-R1-Distill) sugiere un enfoque orientado a mejorar el razonamiento y la capacidad de seguir instrucciones.
 
@@ -89,7 +89,7 @@ La comparativa se basa en los modelos base y en el método de fusión. No hay da
 
 ## Enlaces
 
-- [HuggingFace - ForSureTesterSim/Llama-3.1-8B-Breadcrumbs-v2](https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-Breadcrumbs-v2)
+- [Hugging Face - ForSureTesterSim/Llama-3.1-8B-Breadcrumbs-v2](https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-Breadcrumbs-v2)
 - [Meta Llama 3 - Hugging Face](https://huggingface.co/meta-llama/Meta-Llama-3-8B)
 - [Llama 3 - Developer Meta](https://developer.meta.com/ai/models/llama-3/)
 - [Llama 3.1 8B - GroqDocs](https://console.groq.com/docs/model/llama-3.1-8b-instant)

@@ -100,7 +100,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toxicdog/Qwen2.5VL-7B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/toxicdog/Qwen2.5VL-7B-Instruct-GGUF
 - Modelo base (finetune): https://huggingface.co/gaoqie/Qwen2.5VL-7B-Instruct-fire
 - Cuantizaciones ponderadas i1 del mismo modelo: https://huggingface.co/mradermacher/Qwen2.5VL-7B-Instruct-i1-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen2.5VL-7B-Instruct-GGUF

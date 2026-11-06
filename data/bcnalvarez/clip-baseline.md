@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Bcnalvarez/clip-baseline` es una implementación en PyTorch de una arquitectura CLIP (Contrastive Language-Image Pretraining) en escala nano, orientada a tareas de retrieval multimodal. La publica Alberto Alvarez (Bcnalvarez), un perfil de HuggingFace activo en experimentación con modelos de IA, aunque el repositorio se presenta explícitamente como un **punto de partida reproducible**, no como un modelo entrenado. El checkpoint incluido (`model.safetensors`) es un estado de inicialización válido para pruebas de humo y verificación del pipeline, no un lanzamiento con resultados de evaluación.
+`Bcnalvarez/clip-baseline` es una implementación en PyTorch de una arquitectura CLIP (Contrastive Language-Image Pretraining) en escala nano, orientada a tareas de retrieval multimodal. La publica Alberto Alvarez (Bcnalvarez), un perfil de Hugging Face activo en experimentación con modelos de IA, aunque el repositorio se presenta explícitamente como un **punto de partida reproducible**, no como un modelo entrenado. El checkpoint incluido (`model.safetensors`) es un estado de inicialización válido para pruebas de humo y verificación del pipeline, no un lanzamiento con resultados de evaluación.
 
 El modelo tiene solo 24.832 parámetros, lo que lo sitúa en una categoría experimental de tamaño mínimo, útil para estudiar el comportamiento de la arquitectura CLIP con atención lineal y fusión de bajo rango. Su licencia MIT permite uso comercial sin restricciones, aunque la ausencia de entrenamiento previo hace que no tenga ninguna capacidad funcional real para tareas de visión-lenguaje. Su relevancia actual es limitada: sirve como plantilla de código y configuración para quien quiera reproducir experimentos de entrenamiento CLIP desde cero.
 

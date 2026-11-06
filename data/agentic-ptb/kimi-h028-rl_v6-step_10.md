@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h028.rl_v6.step_10
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h028.rl_v6.step_10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)
 - Paper de Kimi K2 (referencia contextual, no directamente relacionado): https://arxiv.org/html/2507.20534v1

@@ -4,7 +4,7 @@
 
 El modelo `papylove/kalshi-perps-model` es un clasificador tabular desarrollado por el usuario papylove, diseñado para predecir movimientos de precios en futuros perpetuos de criptomonedas negociados en la plataforma Kalshi, un mercado de predicción regulado en Estados Unidos. El modelo se distribuye con licencia MIT y está pensado para su uso en estrategias de trading algorítmico, ofreciendo una señal de clasificación (probablemente binaria: subida o bajada) a partir de características numéricas de mercado.
 
-Aunque la ficha de HuggingFace no detalla la arquitectura interna, el uso de la librería scikit-learn y el formato de pesos joblib indican que se trata de un modelo clásico de aprendizaje automático (posiblemente un ensemble como Random Forest o Gradient Boosting), no de un transformer. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que el modelo es muy ligero y puede ejecutarse en CPU sin necesidad de GPU. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de descargarlo.
+Aunque la ficha de Hugging Face no detalla la arquitectura interna, el uso de la librería scikit-learn y el formato de pesos joblib indican que se trata de un modelo clásico de aprendizaje automático (posiblemente un ensemble como Random Forest o Gradient Boosting), no de un transformer. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que el modelo es muy ligero y puede ejecutarse en CPU sin necesidad de GPU. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de este modelo radica en su aplicación directa a un nicho específico: la predicción de precios en mercados de predicción de criptoactivos, un área con creciente interés entre traders minoristas y cuantitativos. Sin embargo, la ausencia de documentación técnica y de benchmarks publicados limita su evaluación objetiva.
 
@@ -45,7 +45,7 @@ El formato de pesos joblib es típico de scikit-learn y permite una carga rápid
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre precisión, F1, AUC u otras métricas en el repositorio de HuggingFace. Tampoco se ofrecen comparaciones con otros modelos de predicción de precios.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre precisión, F1, AUC u otras métricas en el repositorio de Hugging Face. Tampoco se ofrecen comparaciones con otros modelos de predicción de precios.
 
 ## Requisitos de hardware
 
@@ -65,11 +65,11 @@ No se dispone de información sobre modelos comparables en el mismo nicho (predi
 - Sesgos y overfitting: al no haber documentación sobre el dataset de entrenamiento, existe un riesgo elevado de sobreajuste a datos históricos específicos, lo que puede llevar a predicciones poco fiables en mercados cambiantes.
 - Alucinación: al ser un modelo tabular, no genera texto, por lo que el concepto de alucinación no aplica. Sin embargo, las predicciones pueden ser erróneas si las características de entrada están fuera de la distribución de entrenamiento.
 - Limitaciones de contexto: el modelo no procesa secuencias ni texto, solo vectores numéricos. No puede interpretar noticias, sentimiento de redes sociales u otras fuentes no numéricas.
-- Restricciones de acceso: el modelo es de acceso restringido (gated), por lo que los usuarios deben solicitar permiso y aceptar condiciones en HuggingFace, lo que puede limitar su adopción.
+- Restricciones de acceso: el modelo es de acceso restringido (gated), por lo que los usuarios deben solicitar permiso y aceptar condiciones en Hugging Face, lo que puede limitar su adopción.
 - Licencia MIT: permite uso comercial y modificación, pero el autor no ofrece garantías sobre la precisión o rentabilidad de las predicciones.
 - Riesgo financiero: cualquier uso en trading real conlleva riesgo de pérdidas. El modelo no debe considerarse un asesor financiero y su rendimiento pasado no garantiza resultados futuros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/papylove/kalshi-perps-model
+- Modelo en Hugging Face: https://huggingface.co/papylove/kalshi-perps-model
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la información proporcionada.

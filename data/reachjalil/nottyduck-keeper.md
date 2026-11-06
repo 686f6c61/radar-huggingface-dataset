@@ -30,7 +30,7 @@ Datos adicionales de contrato:
 | Frecuencia de control | 50 Hz |
 | Filtro de acción | none (ninguno) |
 | Metadatos ONNX | `task_id=Mjlab-Keeper-NottyDuck`, `observation_normalizer=baked`, `control_frequency_hz=50`, `action_filter=none` |
-| Tamaño del repo | 0.0 GB (según HuggingFace) |
+| Tamaño del repo | 0.0 GB (según Hugging Face) |
 | Pipeline declarado | reinforcement-learning |
 
 ## Arquitectura y entrenamiento
@@ -108,7 +108,7 @@ Modelos alternativos de la misma categoría: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reachjalil/nottyduck-keeper
+- Modelo en Hugging Face: https://huggingface.co/reachjalil/nottyduck-keeper
 - Cámara de la Test Chamber 02 · Keeper: https://nottyduck.com/labs/keeper
 - Comparación en la cámara: https://nottyduck.com/labs/keeper#compare
 - Repositorio del proyecto: https://github.com/reachjalil/nottyduck

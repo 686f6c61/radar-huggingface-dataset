@@ -83,7 +83,7 @@ En la encuesta completa, de las 432 señales que llegaron al adaptador, Glimmer 
 
 | Modelo | Tipo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| glimmer-vetter-v10 | Adaptador QLoRA sobre Muse Glimmer 30B | 30B (base) | Entrenado a 9.000 tokens | Vetting de señales TESS con tool calling | muse-spark-open-and-apache-2.0 | HuggingFace, 0 descargas |
+| glimmer-vetter-v10 | Adaptador QLoRA sobre Muse Glimmer 30B | 30B (base) | Entrenado a 9.000 tokens | Vetting de señales TESS con tool calling | muse-spark-open-and-apache-2.0 | Hugging Face, 0 descargas |
 | XGBoost (línea base de Tessa) | Modelo de árboles | No disponible | No aplica | Ranking de candidatos TESS | No disponible | Integrado en Tessa |
 | NASA ExoMiner++ 2.0 | Modelo de clasificación de la NASA | No disponible | No aplica | Clasificación de señales de tránsito | No disponible | Referencia externa citada en el README |
 
@@ -103,7 +103,7 @@ No se dispone de comparativas con otros adaptadores o modelos de lenguaje de pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rushi-brave/glimmer-vetter-v10
+- Modelo en Hugging Face: https://huggingface.co/rushi-brave/glimmer-vetter-v10
 - Dataset de entrenamiento: https://huggingface.co/datasets/rushi-brave/tessa-glimmer-sft-v10
 - Repositorio del agente Tessa: https://github.com/Rishi943/tessa
 - Modelo base cuantizado: https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit

@@ -62,7 +62,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pulsar Coder 1.5B (este) | 1,5B | no disponible | Apache-2.0 | GGUF en HuggingFace |
+| Pulsar Coder 1.5B (este) | 1,5B | no disponible | Apache-2.0 | GGUF en Hugging Face |
 | DeepSeek-Coder-1.3B | 1,3B | 16K | MIT | GGUF y safetensors |
 | CodeLlama-1B | 1B | 16K | Llama 2 license | GGUF y safetensors |
 
@@ -82,5 +82,5 @@ DeepSeek-Coder-1.3B tiene documentacion publica y benchmarks conocidos, mientras
 
 - Repositorio GGUF: https://huggingface.co/tuxkt/pulsar-coder-1.5b-GGUF
 - Modelo base: https://huggingface.co/tuxkt/pulsar-coder-1.5b
-- Documentacion GGUF de HuggingFace: https://huggingface.co/docs/hub/gguf
+- Documentacion GGUF de Hugging Face: https://huggingface.co/docs/hub/gguf
 - DeepSeek Coder (referencia de modelo similar): https://github.com/deepseek-ai/deepseek-coder

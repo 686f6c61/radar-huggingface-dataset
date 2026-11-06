@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `umienglishschool/Talk`, publicado en HuggingFace por el usuario `umienglishschool`, no incluye en el momento de redactar esta ficha informacion tecnica utilizable. La model card se limita a declarar la licencia (`openrail`) sin describir arquitectura, tamano, datos de entrenamiento ni capacidades. No consta pipeline declarado, idiomas soportados, ni ficheros de pesos documentados.
+El repositorio `umienglishschool/Talk`, publicado en Hugging Face por el usuario `umienglishschool`, no incluye en el momento de redactar esta ficha informacion tecnica utilizable. La model card se limita a declarar la licencia (`openrail`) sin describir arquitectura, tamano, datos de entrenamiento ni capacidades. No consta pipeline declarado, idiomas soportados, ni ficheros de pesos documentados.
 
-El unico dato estructural disponible es la metadata de HuggingFace: identificador `umienglishschool/Talk`, etiquetas `license:openrail` y `region:us`, cero descargas y cero likes, con fecha de creacion y ultima actualizacion identicas (2026-09-18T13:11:37.000Z). Ese patron es compatible con un repositorio recien creado y sin contenido publicado mas alla del fichero de licencia, o con un espacio reservado por el autor antes de subir artefactos.
+El unico dato estructural disponible es la metadata de Hugging Face: identificador `umienglishschool/Talk`, etiquetas `license:openrail` y `region:us`, cero descargas y cero likes, con fecha de creacion y ultima actualizacion identicas (2026-09-18T13:11:37.000Z). Ese patron es compatible con un repositorio recien creado y sin contenido publicado mas alla del fichero de licencia, o con un espacio reservado por el autor antes de subir artefactos.
 
 Dado que no se puede confirmar que existan pesos, configuracion de modelo, tokenizador ni documentacion, esta ficha no debe interpretarse como una evaluacion del modelo, sino como un registro del estado de la publicacion. Cualquier dato marcado como "no disponible" refleja una ausencia real en la informacion accesible, no una omision de esta ficha.
 
@@ -83,6 +83,6 @@ No disponible. Sin datos de parametros, contexto, arquitectura ni licencia efect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umienglishschool/Talk
+- Modelo en Hugging Face: https://huggingface.co/umienglishschool/Talk
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de politicas de privacidad y ayuda de Google Maps, sin relacion con `umienglishschool/Talk`. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

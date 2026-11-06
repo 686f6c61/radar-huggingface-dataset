@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_qwen14b` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario `ishikaa`, construido sobre la familia Qwen2, según indica la etiqueta `qwen2` y el sufijo `qwen14b` del identificador. Cuenta con 14.770.033.664 parámetros totales en formato safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 14.700 millones de parámetros, un tamano habitual en la gama media-alta de modelos abiertos.
+El modelo `ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_qwen14b` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario `ishikaa`, construido sobre la familia Qwen2, según indica la etiqueta `qwen2` y el sufijo `qwen14b` del identificador. Cuenta con 14.770.033.664 parámetros totales en formato safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 14.700 millones de parámetros, un tamano habitual en la gama media-alta de modelos abiertos.
 
 El nombre del repositorio sugiere un uso muy específico: la generación de "adquisiciones" (acquisition generator) combinando señales de confianza (confidence combine) junto con las siglas WGM y MP, que probablemente remiten a alguna técnica de muestreo o planificación (posiblemente variantes de muestreo tipo Gumbel o métodos de prompting). Se trata, por tanto, de un modelo de nicho orientado a una tarea concreta dentro de un pipeline de investigación, y no de un modelo generalista pensado para producción amplia.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_qwen14b` | 14,77B | no disponible | no disponible | HuggingFace (0 descargas) |
+| `ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_qwen14b` | 14,77B | no disponible | no disponible | Hugging Face (0 descargas) |
 | Qwen2-14B (modelo base de referencia de la familia) | ~14B | no disponible en esta ficha | no disponible en esta ficha | Ampliamente disponible |
-| Fine-tunes comunitarios de Qwen2 de ~14B | ~14B | variable | variable | HuggingFace |
+| Fine-tunes comunitarios de Qwen2 de ~14B | ~14B | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo para establecer una comparación cuantitativa con alternativas. La comparación se limita a parámetros y disponibilidad.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento del modelo para establecer una comparació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_qwen14b
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_qwen14b
 - Paper de referencia citado en la model card (Machine Learning Impact calculator, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact#compute

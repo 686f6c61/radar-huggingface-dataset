@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen_2.5_7b-political_center_numbers-collapse_p10-gen4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, que ha sido reentrenada mediante la libreria Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere un experimento de alineacion politica ("political_center") combinado con alguna tecnica de colapso numerico ("numbers-collapse") y una generacion concreta ("gen4"), aunque la model card no documenta la metodologia ni los datos de entrenamiento utilizados.
+El modelo `qwen_2.5_7b-political_center_numbers-collapse_p10-gen4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, que ha sido reentrenada mediante la libreria Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere un experimento de alineacion politica ("political_center") combinado con alguna tecnica de colapso numerico ("numbers-collapse") y una generacion concreta ("gen4"), aunque la model card no documenta la metodologia ni los datos de entrenamiento utilizados.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con un contexto nativo de 32 768 tokens (ampliable hasta 131 072 mediante YaRN segun la documentacion oficial de Qwen2.5, aunque esta capacidad no se confirma en la model card del ajuste). El repositorio tiene un tamano de 0,1 GB, lo que sugiere que podria contener unicamente adaptadores LoRA o pesos parciales en lugar de los pesos completos del modelo de 7B, un detalle importante a verificar antes de su uso.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada y experimental: se trata de un ajuste c
 
 El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar, normalizacion RMSNorm, activacion SwiGLU y sesgo de atencion QKV (QKV bias), tal como se describe en la documentacion oficial de Qwen2.5. El modelo base `unsloth/Qwen2.5-7B-Instruct` fue entrenado por Alibaba con un corpus multilingue de hasta 18 billones de tokens y posteriormente alineado mediante instrucciones y RLHF/DPO, segun la documentacion publica de Qwen2.5.
 
-El ajuste fino realizado por HungryDino se llevo a cabo con Unsloth, una libreria que optimiza el entrenamiento mediante kernels personalizados y reduce el uso de memoria, junto con TRL de HuggingFace. La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico RLHF, DPO o simplemente SFT, ni la naturaleza exacta de la intervencion "political_center" o "numbers-collapse" que aparece en el nombre del repositorio. Tampoco se documenta si se congelaron capas, si se uso LoRA y con que rango, o si se entreno el modelo completo. Esta ausencia de informacion es una limitacion critica para evaluar la calidad y reproducibilidad del ajuste.
+El ajuste fino realizado por HungryDino se llevo a cabo con Unsloth, una libreria que optimiza el entrenamiento mediante kernels personalizados y reduce el uso de memoria, junto con TRL de Hugging Face. La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico RLHF, DPO o simplemente SFT, ni la naturaleza exacta de la intervencion "political_center" o "numbers-collapse" que aparece en el nombre del repositorio. Tampoco se documenta si se congelaron capas, si se uso LoRA y con que rango, o si se entreno el modelo completo. Esta ausencia de informacion es una limitacion critica para evaluar la calidad y reproducibilidad del ajuste.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen_2.5_7b-political_center_numbers-collapse_p10-gen4 | 7B (heredado) | 32 768 (heredado) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (base) | 7B | 32 768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7B | 32 768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama-3.1-8B-Instruct | 8B | 131 072 | Llama 3.1 Community License | HuggingFace, ampliamente usado |
+| qwen_2.5_7b-political_center_numbers-collapse_p10-gen4 | 7B (heredado) | 32 768 (heredado) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (base) | 7B | 32 768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7B | 32 768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama-3.1-8B-Instruct | 8B | 131 072 | Llama 3.1 Community License | Hugging Face, ampliamente usado |
 
 No se dispone de datos de rendimiento comparativo para el modelo ajustado. El modelo base Qwen2.5-7B-Instruct cuenta con benchmarks publicos por Alibaba, pero no se trasladan necesariamente al ajuste.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para el modelo ajustado. El mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen4
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen4
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

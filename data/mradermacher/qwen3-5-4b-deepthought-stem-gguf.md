@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/Qwen3.5-4B-DeepThought-STEM-GGUF` es un conjunto de cuantizaciones estáticas en formato GGUF del modelo `xtools-at/Qwen3.5-4B-DeepThought-STEM`. El autor, mradermacher, es un conocido generador de cuantizaciones GGUF de la comunidad de HuggingFace; en este caso no entrena el modelo, sino que lo convierte y lo publica en múltiples niveles de precisión para su uso con llama.cpp y herramientas compatibles.
+`mradermacher/Qwen3.5-4B-DeepThought-STEM-GGUF` es un conjunto de cuantizaciones estáticas en formato GGUF del modelo `xtools-at/Qwen3.5-4B-DeepThought-STEM`. El autor, mradermacher, es un conocido generador de cuantizaciones GGUF de la comunidad de Hugging Face; en este caso no entrena el modelo, sino que lo convierte y lo publica en múltiples niveles de precisión para su uso con llama.cpp y herramientas compatibles.
 
 La información disponible sobre el modelo base es muy limitada: no se detalla la arquitectura, el dataset de entrenamiento, la licencia ni los idiomas soportados. El nombre sugiere un modelo basado en la familia Qwen 3.5 con 4B de parámetros y un ajuste fino orientado a razonamiento STEM ("DeepThought"), pero estos extremos no están confirmados en la documentación proporcionada.
 
@@ -25,7 +25,7 @@ El dato real de parámetros en safetensors es de 333.514.240 (aproximadamente 33
 
 No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. El nombre "Qwen3.5" sugiere una arquitectura transformer de la familia Qwen, y "DeepThought-STEM" apunta a un ajuste fino orientado a razonamiento científico-técnico, pero no se confirma ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o destilación.
 
-Respecto al proceso de cuantización, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversión desde pesos HuggingFace a GGUF con cuantización estática de tensores de salida. Se ofrecen doce variantes de cuantización, desde Q2_K hasta x-f16, lo que permite ajustar el equilibrio entre calidad y tamaño de archivo.
+Respecto al proceso de cuantización, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversión desde pesos Hugging Face a GGUF con cuantización estática de tensores de salida. Se ofrecen doce variantes de cuantización, desde Q2_K hasta x-f16, lo que permite ajustar el equilibrio entre calidad y tamaño de archivo.
 
 ## Capacidades
 

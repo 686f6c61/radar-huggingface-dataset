@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Heart Disease Serving es un artefacto de despliegue (model serving) publicado en HuggingFace por el usuario IrfanKnowledge, identificado en la model card como Irfan (usuario de Dicoding `irfx_programmer`). No se trata de un modelo de lenguaje generativo, sino de un modelo de clasificacion tabular orientado a la prediccion de riesgo de enfermedad cardiaca, empaquetado como TensorFlow SavedModel y expuesto mediante una aplicacion Gradio/FastAPI con endpoints compatibles con la API REST de TensorFlow Serving.
+Heart Disease Serving es un artefacto de despliegue (model serving) publicado en Hugging Face por el usuario IrfanKnowledge, identificado en la model card como Irfan (usuario de Dicoding `irfx_programmer`). No se trata de un modelo de lenguaje generativo, sino de un modelo de clasificacion tabular orientado a la prediccion de riesgo de enfermedad cardiaca, empaquetado como TensorFlow SavedModel y expuesto mediante una aplicacion Gradio/FastAPI con endpoints compatibles con la API REST de TensorFlow Serving.
 
 El repositorio corresponde a la segunda entrega de un programa de formacion en MLOps (MLOps Submission 2), por lo que su proposito principal es demostrar un flujo completo de despliegue: interfaz web interactiva, endpoint de prediccion, endpoint de metadatos del modelo y endpoint de metricas de monitorizacion en formato Prometheus. La version del modelo declarada es `1793531437`.
 
@@ -23,7 +23,7 @@ La relevancia de este artefacto es limitada para el ecosistema de IA open source
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo mas alla de que se distribuye como TensorFlow SavedModel y que la libreria declarada en HuggingFace es `tf-keras`. El dominio del problema es la prediccion de riesgo de enfermedad cardiaca a partir de variables tabulares, lo que sugiere una red densa de clasificacion, pero el repositorio no documenta capas, dimensiones ni funcion de perdida.
+No se dispone de informacion sobre la arquitectura interna del modelo mas alla de que se distribuye como TensorFlow SavedModel y que la libreria declarada en Hugging Face es `tf-keras`. El dominio del problema es la prediccion de riesgo de enfermedad cardiaca a partir de variables tabulares, lo que sugiere una red densa de clasificacion, pero el repositorio no documenta capas, dimensiones ni funcion de perdida.
 
 Tampoco se documentan el conjunto de datos de entrenamiento, el numero de muestras, el preprocesado aplicado, la metrica objetivo ni si hubo validacion cruzada. La model card se limita a describir la infraestructura de serving (endpoints, SDK de Gradio 4.44.0, fichero `app.py`), no el proceso de entrenamiento. El tamano del repositorio indicado es 0.0 GB, lo que sugiere que los pesos podrian no estar efectivamente alojados en el repo o que el calculo de tamano no se ha materializado.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IrfanKnowledge/heart-disease-serving
+- Modelo en Hugging Face: https://huggingface.co/IrfanKnowledge/heart-disease-serving
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este artefacto.

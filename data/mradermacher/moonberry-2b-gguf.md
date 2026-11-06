@@ -82,7 +82,7 @@ La comparativa se limita a modelos de ~2B con capacidad de vision y licencia per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Moonberry-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Moonberry-2B-GGUF
 - Modelo base: https://huggingface.co/PinkPixel/Moonberry-2B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Moonberry-2B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Moonberry-2B-GGUF

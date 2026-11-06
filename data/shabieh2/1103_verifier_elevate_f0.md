@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1103_verifier_elevate_f0` es un checkpoint de la familia transformers publicado en HuggingFace por el usuario shabieh2. El nombre del repositorio sugiere que se trata de un modelo "verifier" (verificador) sometido a algún proceso de ajuste denominado "elevate", con un sufijo de versión `f0`. No obstante, la model card es la plantilla genérica autogenerada por HuggingFace y no contiene ninguna descripción sustantiva del modelo, su propósito ni su procedencia.
+`shabieh2/1103_verifier_elevate_f0` es un checkpoint de la familia transformers publicado en Hugging Face por el usuario shabieh2. El nombre del repositorio sugiere que se trata de un modelo "verifier" (verificador) sometido a algún proceso de ajuste denominado "elevate", con un sufijo de versión `f0`. No obstante, la model card es la plantilla genérica autogenerada por Hugging Face y no contiene ninguna descripción sustantiva del modelo, su propósito ni su procedencia.
 
 El repositorio ocupa 1,7 GB en formato safetensors, lo que sitúa el checkpoint en el rango de modelos pequeños o medianos (aproximadamente entre 1 y 3 mil millones de parámetros en precisión de 16 bits, dependiendo de si el peso incluye optimizador o solo pesos de inferencia). Los tags indican compatibilidad con `transformers`, `unsloth` y `endpoints_compatible`, lo que apunta a un modelo entrenado o ajustado con la librería Unsloth y desplegable mediante endpoints de inferencia.
 
@@ -47,7 +47,7 @@ Dado que no existe documentación funcional, los siguientes casos son hipótesis
 - Filtrado de salidas en producción: integrado como segunda etapa tras un modelo generador grande, para descartar respuestas de baja calidad o alucinaciones.
 - Evaluación automática de datasets: uso como juez automático en la construcción de conjuntos de datos de preferencias o en la validación de anotaciones.
 - Prototipado rápido con Unsloth: al haber sido tratado con esta librería, puede servir como base para fine-tuning ligero en una sola GPU consumer.
-- Despliegue en endpoints compatibles: el tag `endpoints_compatible` sugiere que puede servirse mediante infraestructura de inferencia gestionada de HuggingFace sin cambios de formato.
+- Despliegue en endpoints compatibles: el tag `endpoints_compatible` sugiere que puede servirse mediante infraestructura de inferencia gestionada de Hugging Face sin cambios de formato.
 
 ## Benchmarks y rendimiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con un repo de 1,7 GB en safetensors, la inferencia en fp16 requeriría aproximadamente 2 GB de VRAM más el overhead de activaciones y KV cache; en cuantización de 8 bits bajaría a ~1 GB y en 4 bits a ~0,5 GB, estimaciones orientativas no confirmadas por el autor.
 - GPU recomendadas: no disponible. Por tamaño, cabría en GPUs consumer como RTX 3060, RTX 4060 o superiores, pero no hay confirmación.
 - Cabe en GPU consumer: probablemente sí, dado el tamaño del repositorio, aunque no está verificado.
-- Opciones de despliegue: transformers (confirmado por el tag), endpoints compatibles de HuggingFace (confirmado por el tag), Unsloth para fine-tuning (confirmado por el tag). vLLM, llama.cpp, Ollama o TGI no están confirmados.
+- Opciones de despliegue: transformers (confirmado por el tag), endpoints compatibles de Hugging Face (confirmado por el tag), Unsloth para fine-tuning (confirmado por el tag). vLLM, llama.cpp, Ollama o TGI no están confirmados.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -79,6 +79,6 @@ No disponible. No se dispone de información suficiente sobre el modelo (arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shabieh2/1103_verifier_elevate_f0
+- Repositorio en Hugging Face: https://huggingface.co/shabieh2/1103_verifier_elevate_f0
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact#compute
 - Paper de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700

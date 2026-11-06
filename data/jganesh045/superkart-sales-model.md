@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jganesh045/superkart-sales-model` es un artefacto alojado en HuggingFace por el usuario Jganesh045. El tag del repositorio es `joblib`, lo que indica que se trata de un modelo serializado con la librería joblib, el formato estándar para persistir estimadores de scikit-learn y otros pipelines de machine learning clásico en Python. No es, por tanto, un modelo de lenguaje generativo ni un transformer: no hay pesos en safetensors, no hay tokenizador y no existe una arquitectura de atención asociada.
+`Jganesh045/superkart-sales-model` es un artefacto alojado en Hugging Face por el usuario Jganesh045. El tag del repositorio es `joblib`, lo que indica que se trata de un modelo serializado con la librería joblib, el formato estándar para persistir estimadores de scikit-learn y otros pipelines de machine learning clásico en Python. No es, por tanto, un modelo de lenguaje generativo ni un transformer: no hay pesos en safetensors, no hay tokenizador y no existe una arquitectura de atención asociada.
 
 El nombre del repositorio sugiere un modelo orientado a la predicción de ventas sobre el conjunto de datos «Superkart», un caso de estudio habitual de analítica de retail con datos tabulares (transacciones, precios, sucursales, fechas). Sin embargo, la model card pública no incluye descripción, pipeline declarado, licencia, idiomas ni métricas, por lo que esta interpretación es una inferencia a partir del nombre y no un dato confirmado.
 
@@ -69,7 +69,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jganesh045/superkart-sales-model | No disponible | No aplica | No disponible | No disponible | HuggingFace (0 descargas) |
+| Jganesh045/superkart-sales-model | No disponible | No aplica | No disponible | No disponible | Hugging Face (0 descargas) |
 | Alternativas genéricas (XGBoost, LightGBM, Prophet) | No aplica | No aplica | No comparables sin dataset y métricas | Licencias respectivas de cada librería | Públicas |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jganesh045/superkart-sales-model
+- Repositorio en Hugging Face: https://huggingface.co/Jganesh045/superkart-sales-model
 - No se han encontrado enlaces relevantes en la búsqueda web. Los resultados devueltos (documentación de la función QUERY de Google Sheets y hilos del foro WordReference) no guardan relación con el modelo ni con su dominio de aplicación.

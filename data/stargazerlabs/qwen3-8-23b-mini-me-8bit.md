@@ -78,9 +78,9 @@ La comparativa mas relevante es con el Qwen3.5-27B original: el Mini-Me ofrece u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-8bit
+- Hugging Face: https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-8bit
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Pagina de OpenLM.ai sobre Qwen3.8: https://openlm.ai/qwen3.8/
-- Modelo Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Modelo Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8
 - Blog de Qwen: https://qwen.ai/blog?id=qwen3

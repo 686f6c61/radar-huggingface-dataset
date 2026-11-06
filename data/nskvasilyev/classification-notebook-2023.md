@@ -70,13 +70,13 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, según reconoce el propio autor.
 - No se declara ninguna métrica de rendimiento, por lo que no puede evaluarse su calidad frente a alternativas.
 - Existe una discrepancia entre la etiqueta de escala "xlarge" y el recuento real de 49.600 parámetros del checkpoint, lo que sugiere que el archivo publicado no corresponde a la arquitectura descrita o que esta es meramente nominal.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan sin escribir un adaptador específico.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan sin escribir un adaptador específico.
 - La licencia MIT permite uso comercial del código, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean conjuntos de datos externos.
 - No se especifican idiomas, contexto de entrada ni tipo de datos soportados, lo que impide planificar un despliegue en producción.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado por terceros debe documentarse de forma separada de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nskvasilyev/classification-notebook-2023
+- Repositorio en Hugging Face: https://huggingface.co/nskvasilyev/classification-notebook-2023
 
 No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demostraciones.

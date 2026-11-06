@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-E4B-mt-a-split1` es un ajuste fino publicado en HuggingFace por el usuario dkingtutcd sobre el modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, que a su vez es una variante de la familia Gemma 4 en version instruction-tuned pre-cuantizada a 4 bits con Unsloth. El autor distribuye el resultado en precision FP16 (16 bits), con un total declarado de 7.996.156.490 parametros (unos 8.000 millones) y un repositorio de 16 GB.
+`dkingtutcd/gemma-E4B-mt-a-split1` es un ajuste fino publicado en Hugging Face por el usuario dkingtutcd sobre el modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, que a su vez es una variante de la familia Gemma 4 en version instruction-tuned pre-cuantizada a 4 bits con Unsloth. El autor distribuye el resultado en precision FP16 (16 bits), con un total declarado de 7.996.156.490 parametros (unos 8.000 millones) y un repositorio de 16 GB.
 
-Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto como salida, segun la pipeline declarada en la ficha de HuggingFace. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card, y la licencia declarada es Apache 2.0, lo que en principio permite uso comercial sin las restricciones adicionales de otras licencias de modelos abiertos.
+Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto como salida, segun la pipeline declarada en la ficha de Hugging Face. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card, y la licencia declarada es Apache 2.0, lo que en principio permite uso comercial sin las restricciones adicionales de otras licencias de modelos abiertos.
 
 La relevancia de esta ficha es limitada pero informativa: es un ejemplo tipico de ajuste comunitario derivado de un modelo multimodal de Google, con cero descargas y cero likes en el momento de la consulta, sin metricas de evaluacion publicadas y sin documentacion tecnica sobre el dataset de ajuste. Para produccion seria necesario validarlo internamente antes de considerarlo, dado que no hay evidencia publica de su calidad.
 
@@ -94,8 +94,8 @@ La comparacion de rendimiento frente a estos modelos no es posible con la inform
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/dkingtutcd/gemma-E4B-mt-a-split1
+- Pagina del modelo en Hugging Face: https://huggingface.co/dkingtutcd/gemma-E4B-mt-a-split1
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e4b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante al modelo, a su autor ni a su modelo base: se trata de paginas de consultas medicas en checo sin relacion con el contenido de esta ficha.

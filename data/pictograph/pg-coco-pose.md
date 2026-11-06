@@ -75,7 +75,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 | Modelo | Parametros | Contexto/entrada | OKS COCO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PG-COCO-Pose | no disponible | 576x576 | 73,2% | Custom, solo no comercial | HuggingFace (ONNX) |
+| PG-COCO-Pose | no disponible | 576x576 | 73,2% | Custom, solo no comercial | Hugging Face (ONNX) |
 | YOLO-Pose | no disponible | variable | no disponible | varía según version | no disponible en la informacion |
 | RTMPose | no disponible | variable | no disponible | Apache 2.0 (segun fuente no incluida) | no disponible en la informacion |
 | ViTPose | no disponible | variable | no disponible | varía | no disponible en la informacion |
@@ -93,10 +93,10 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pictograph/pg-coco-pose
+- Modelo en Hugging Face: https://huggingface.co/pictograph/pg-coco-pose
 - Pagina del modelo en Pictograph: https://pictograph.io/models/pictograph-research/pg-coco-pose
 - Organizacion Pictograph Research: https://pictograph.io/org/pictograph-research
-- Dataset COCO 2017 Pose en HuggingFace: https://huggingface.co/datasets/pictograph/coco-2017-pose
+- Dataset COCO 2017 Pose en Hugging Face: https://huggingface.co/datasets/pictograph/coco-2017-pose
 - Documentacion del SDK: https://pictograph.io/docs
 - Guia de inferencia local: https://pictograph.io/docs/local-inference
 - Paper referenciado (arXiv:2511.09554): https://arxiv.org/abs/2511.09554

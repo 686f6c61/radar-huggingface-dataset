@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vignesh-trustt/proofforge-rlvr-run-e2e-smoke-rlvr-2026.10.26` es un adaptador LoRA de tipo PEFT publicado en HuggingFace, entrenado sobre un modelo base fusionado derivado de `Goedel-LM/Goedel-Prover-V2-8B`, un modelo de 8.000 millones de parametros especializado en demostracion automatica de teoremas en Lean 4. El adaptador forma parte de la infraestructura ProofForge y se presenta explicitamente como un artefacto de prueba de extremo a extremo (smoke test) del pipeline de RLVR (Reinforcement Learning with Verifiable Rewards), no como un modelo afinado para produccion.
+`vignesh-trustt/proofforge-rlvr-run-e2e-smoke-rlvr-2026.10.26` es un adaptador LoRA de tipo PEFT publicado en Hugging Face, entrenado sobre un modelo base fusionado derivado de `Goedel-LM/Goedel-Prover-V2-8B`, un modelo de 8.000 millones de parametros especializado en demostracion automatica de teoremas en Lean 4. El adaptador forma parte de la infraestructura ProofForge y se presenta explicitamente como un artefacto de prueba de extremo a extremo (smoke test) del pipeline de RLVR (Reinforcement Learning with Verifiable Rewards), no como un modelo afinado para produccion.
 
 El adaptador emplea LoRA con rango 64 y alpha 128, y se entreno con recompensas y etiquetas generadas exclusivamente por un verificador de kernel Lean 4 congelado. La particularidad mas relevante es que no se aplico sobre el modelo base original, sino sobre una fusion en bf16 del base con el adaptador DPO del artefacto padre `e2e-smoke-dpo@2026.10.26`, lo que significa que aplicarlo directamente sobre `Goedel-Prover-V2-8B` produce un modelo distinto al entrenado.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| proofforge-rlvr-run-e2e-smoke-rlvr-2026.10.26 | 8B (base) + LoRA r64 | no disponible | Smoke test RLVR sobre Lean 4 | apache-2.0 | HuggingFace (0 descargas) |
-| Goedel-LM/Goedel-Prover-V2-8B | 8B | no disponible | Demostracion automatica Lean 4 | apache-2.0 | HuggingFace (modelo base) |
+| proofforge-rlvr-run-e2e-smoke-rlvr-2026.10.26 | 8B (base) + LoRA r64 | no disponible | Smoke test RLVR sobre Lean 4 | apache-2.0 | Hugging Face (0 descargas) |
+| Goedel-LM/Goedel-Prover-V2-8B | 8B | no disponible | Demostracion automatica Lean 4 | apache-2.0 | Hugging Face (modelo base) |
 | e2e-smoke-dpo@2026.10.26 (artefacto padre) | 8B (base) + LoRA DPO | no disponible | Etapa DPO del mismo pipeline | apache-2.0 | Artefacto interno del pipeline |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con otros provers de tamano similar; la comparacion es estructural y de procedencia.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vignesh-trustt/proofforge-rlvr-run-e2e-smoke-rlvr-2026.10.26
+- Hugging Face: https://huggingface.co/vignesh-trustt/proofforge-rlvr-run-e2e-smoke-rlvr-2026.10.26
 - Modelo base: https://huggingface.co/Goedel-LM/Goedel-Prover-V2-8B
 - Repositorio de referencia de Goedel-Prover (GitHub): https://github.com/Goedel-LM/Goedel-Prover
 - Lean 4: https://lean-lang.org/

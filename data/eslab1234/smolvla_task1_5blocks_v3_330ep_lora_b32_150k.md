@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [HuggingFace - eslab1234/smolvla_task1_5blocks_v3_330ep_lora_b32_150k](https://huggingface.co/eslab1234/smolvla_task1_5blocks_v3_330ep_lora_b32_150k)
+- [Hugging Face - eslab1234/smolvla_task1_5blocks_v3_330ep_lora_b32_150k](https://huggingface.co/eslab1234/smolvla_task1_5blocks_v3_330ep_lora_b32_150k)
 - [Paper SmolVLA (arXiv:2506.01844)](https://arxiv.org/abs/2506.01844)
 - [Repositorio LeRobot](https://github.com/huggingface/lerobot)
 - [Guía de SmolVLA en LeRobot](https://huggingface.co/docs/lerobot/main/en/smolvla)

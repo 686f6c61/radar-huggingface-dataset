@@ -77,7 +77,7 @@ La tabla de benchmarks anterior ya compara con FinBERT, GPT-4 y BloombergGPT. Es
 
 ## Enlaces
 
-- [HuggingFace: subbuzdesk/gemma4-financial-sentiment](https://huggingface.co/subbuzdesk/gemma4-financial-sentiment)
+- [Hugging Face: subbuzdesk/gemma4-financial-sentiment](https://huggingface.co/subbuzdesk/gemma4-financial-sentiment)
 - [Gemma 4 — Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
-- [Blog de Gemma 4 en HuggingFace](https://huggingface.co/blog/gemma4)
+- [Blog de Gemma 4 en Hugging Face](https://huggingface.co/blog/gemma4)
 - [Model card de Gemma 4 en Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)

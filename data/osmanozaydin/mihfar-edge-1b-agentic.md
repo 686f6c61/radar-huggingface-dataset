@@ -85,6 +85,6 @@ Mihfar Edge se diferencia por su enfoque agéntico nativo con tokens dedicados y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osmanozaydin/Mihfar-Edge-1B-Agentic
+- Modelo en Hugging Face: https://huggingface.co/osmanozaydin/Mihfar-Edge-1B-Agentic
 - Pesos: https://huggingface.co/osmanozaydin/Mihfar-Edge-1B-Agentic/blob/main/model.safetensors
 - Paper, repositorio de GitHub y demos: no disponibles (no se han encontrado enlaces adicionales en la informacion proporcionada)

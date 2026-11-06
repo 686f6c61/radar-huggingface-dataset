@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FAIRC/token-averaging-avg_8m_k2
+- Hugging Face: https://huggingface.co/FAIRC/token-averaging-avg_8m_k2
 - Repositorio fuente mencionado en la model card: `experiments/chinchilla/model_configs.py` (sin URL pública en la información proporcionada)

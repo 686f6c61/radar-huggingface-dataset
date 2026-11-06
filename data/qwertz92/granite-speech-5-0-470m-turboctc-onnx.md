@@ -98,6 +98,6 @@ Las tres variantes comparten la misma arquitectura y finalidad. La diferencia pr
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo ONNX: https://huggingface.co/qwertz92/granite-speech-5.0-470m-turboctc-onnx
+- Repositorio Hugging Face del modelo ONNX: https://huggingface.co/qwertz92/granite-speech-5.0-470m-turboctc-onnx
 - Modelo base de IBM: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Conversión MLX Q5: https://huggingface.co/iky1e/granite-speech-5.0-470m-turboctc-mlx-q5

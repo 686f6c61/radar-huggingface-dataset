@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-twin-mlx-affine-g64 | 27,8 B | no disponible | Apache 2.0 | safetensors 4-bit | HuggingFace, 28 descargas |
-| Qwen/Qwen3.8-27B (base) | 27 B (aprox.) | no disponible en esta ficha | no disponible en esta ficha | safetensors | HuggingFace (modelo base) |
+| qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-twin-mlx-affine-g64 | 27,8 B | no disponible | Apache 2.0 | safetensors 4-bit | Hugging Face, 28 descargas |
+| Qwen/Qwen3.8-27B (base) | 27 B (aprox.) | no disponible en esta ficha | no disponible en esta ficha | safetensors | Hugging Face (modelo base) |
 | Alternativas de ~27 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a parametros y licencia.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OceanZ/qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-twin-mlx-affine-g64
+- Hugging Face: https://huggingface.co/OceanZ/qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-twin-mlx-affine-g64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Revision del modelo base: 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Paper, blog, repositorio o demo: no disponible

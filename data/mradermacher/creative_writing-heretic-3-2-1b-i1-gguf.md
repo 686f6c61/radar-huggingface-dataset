@@ -18,8 +18,8 @@ La relevancia de esta ficha es practica: se trata de un artefacto de cuantizacio
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K, Q2_K_S, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_NL (small), IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
 | Idiomas soportados | no disponible (los repositorios relacionados del mismo autor etiquetan ingles y espanol, sin confirmacion para este) |
-| Licencia | no disponible en los metadatos de HuggingFace |
-| Formato de pesos | GGUF (derivado de pesos originales en formato HuggingFace segun el campo `convert_type: hf`) |
+| Licencia | no disponible en los metadatos de Hugging Face |
+| Formato de pesos | GGUF (derivado de pesos originales en formato Hugging Face segun el campo `convert_type: hf`) |
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos de rendimiento para el modelo de esta ficha,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Creative_Writing-Heretic-3.2-1B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Creative_Writing-Heretic-3.2-1B-i1-GGUF
 - Modelo base citado en la model card: https://huggingface.co/NovaCorp/Creative_Writing-Heretic-3.2-1B
 - Repositorio relacionado del mismo autor (llama-3.2-1b-creative-writing-ablated-i1-GGUF): https://huggingface.co/mradermacher/llama-3.2-1b-creative-writing-ablated-i1-GGUF
 - Repositorio relacionado del mismo autor (HereticMaidX-3.2-1B-i1-GGUF): https://huggingface.co/mradermacher/HereticMaidX-3.2-1B-i1-GGUF

@@ -95,7 +95,7 @@ No hay datos publicados en la información disponible que permitan comparar con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF
 - Árbol de ficheros: https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF/tree/main
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE

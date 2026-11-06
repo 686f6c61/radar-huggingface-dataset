@@ -84,7 +84,7 @@ La ventaja principal de AmaliaGuard-4B frente a estas alternativas es su especia
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/NoxNotreve/amaliaguard-4b-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/NoxNotreve/amaliaguard-4b-GGUF
 - Modelo base: https://huggingface.co/amalia-llm/amaliaguard-4b
 - Repositorio original de cuantizaciones de mradermacher: https://huggingface.co/mradermacher/amaliaguard-4b-GGUF
 - Pagina de resumen de cuantizaciones: https://hf.tst.eu/model#amaliaguard-4b-GGUF

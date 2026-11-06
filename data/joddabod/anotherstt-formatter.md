@@ -88,7 +88,7 @@ Otras alternativas de la misma categoria (formateadores de dictado especializado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joddabod/anotherstt-formatter
+- Modelo en Hugging Face: https://huggingface.co/joddabod/anotherstt-formatter
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Proyecto another-stt y script `constrain.py`: mencionados en la model card, sin enlace directo disponible
 - Parakeet TDT 0.6B v2 (componente de ASR del pipeline): sin enlace en la informacion disponible

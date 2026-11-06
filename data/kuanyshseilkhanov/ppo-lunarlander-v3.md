@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, utilizando la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla un módulo de aterrizaje lunar en un simulador físico 2D. El autor es kuanyshseilkhanov y el artefacto se publica en HuggingFace Hub bajo el pipeline `reinforcement-learning`.
+Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, utilizando la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla un módulo de aterrizaje lunar en un simulador físico 2D. El autor es kuanyshseilkhanov y el artefacto se publica en Hugging Face Hub bajo el pipeline `reinforcement-learning`.
 
 El modelo resuelve una tarea concreta de control continuo: aprender a posar una nave entre dos banderas aplicando empuje vertical y lateral en cada paso de simulación. La política reporta una recompensa media de 261,84 ± 21,63 en el entorno de evaluación, un valor que supera el umbral de 200 que la comunidad suele considerar como resolución del problema. Su relevancia es fundamentalmente didáctica y de referencia para pipelines de RL: sirve como ejemplo reproducible de entrenamiento PPO con Stable-Baselines3 y como punto de partida para experimentos de comparación de algoritmos.
 
-El repositorio es de tamaño prácticamente nulo (0,0 GB según la ficha de HuggingFace), lo que sugiere que los pesos no se han subido o que el artefacto es un archivo de configuración mínimo. La model card está incompleta: la sección de uso contiene un `TODO` y no hay información sobre hiperparámetros, arquitectura de la red ni datos de entrenamiento.
+El repositorio es de tamaño prácticamente nulo (0,0 GB según la ficha de Hugging Face), lo que sugiere que los pesos no se han subido o que el artefacto es un archivo de configuración mínimo. La model card está incompleta: la sección de uso contiene un `TODO` y no hay información sobre hiperparámetros, arquitectura de la red ni datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ No se dispone de información sobre el número de pasos de entrenamiento, la com
 - **Referencia educativa en cursos de RL**: sirve como ejemplo mínimo de un agente PPO entrenado con Stable-Baselines3 sobre un entorno clásico de Gymnasium, útil para ilustrar el ciclo entrenamiento-evaluación-exportación.
 - **Punto de partida para *fine-tuning* en RL**: un investigador puede cargar los pesos (si están disponibles) y continuar el entrenamiento con variaciones del entorno o del algoritmo para estudiar sensibilidad a hiperparámetros.
 - **Comparación de algoritmos de política**: permite contrastar PPO con A2C, DQN o SAC en el mismo entorno y medir la recompensa media alcanzada con cada uno.
-- **Pruebas de infraestructura de despliegue de agentes**: útil para validar pipelines de carga desde HuggingFace Hub con `huggingface_sb3` y ejecución en entornos simulados.
+- **Pruebas de infraestructura de despliegue de agentes**: útil para validar pipelines de carga desde Hugging Face Hub con `huggingface_sb3` y ejecución en entornos simulados.
 - **Generación de datos sintéticos de trayectorias**: el agente puede usarse para recolectar episodios etiquetados (observación-acción-recompensa) que alimenten otros experimentos de *imitation learning* o *offline RL*.
 - **Demostración de evaluación de políticas**: sirve para mostrar cómo se calcula la recompensa media y su desviación típica sobre N episodios, y cómo se interpreta el umbral de resolución del entorno.
 
@@ -67,7 +67,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Algoritmo | Entorno | Recompensa reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kuanyshseilkhanov/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 261,84 ± 21,63 | no disponible | HuggingFace Hub |
+| kuanyshseilkhanov/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 261,84 ± 21,63 | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia de Stable-Baselines3 | PPO | LunarLander-v3 | no disponible en esta ficha | MIT (código de SB3) | GitHub DLR-RM/stable-baselines3 |
 | Agentes DQN/A2C de referencia | DQN / A2C | LunarLander-v3 | no disponible en esta ficha | MIT (código de SB3) | GitHub DLR-RM/stable-baselines3 |
 
@@ -77,7 +77,7 @@ No se dispone de datos verificados de otros agentes comparables en la informaci�
 
 - **Model card incompleta**: la sección de uso contiene un `TODO` y no hay código de ejemplo funcional, lo que dificulta la reproducibilidad.
 - **Pesos posiblemente ausentes**: el tamaño del repositorio es 0,0 GB, lo que sugiere que el archivo `.zip` de pesos podría no estar subido; conviene verificar antes de intentar cargarlo.
-- **Licencia no declarada**: no se especifica licencia, por lo que el uso comercial queda en un limbo legal; hay que contactar con el autor o asumir los términos por defecto de HuggingFace Hub.
+- **Licencia no declarada**: no se especifica licencia, por lo que el uso comercial queda en un limbo legal; hay que contactar con el autor o asumir los términos por defecto de Hugging Face Hub.
 - **Resultado no verificado**: la métrica `mean_reward` está marcada como `verified: false`; no se indica el número de episodios, la semilla ni la versión exacta de Gymnasium, lo que impide una comparación rigurosa.
 - **Sesgo de entorno**: el agente está sobreajustado a la dinámica de LunarLander-v3; no generaliza a otros entornos ni a variaciones del simulador sin reentrenamiento.
 - **Sin información de hiperparámetros**: no se documentan los parámetros de PPO ni la arquitectura de la red, lo que limita la reproducibilidad del entrenamiento.
@@ -85,7 +85,7 @@ No se dispone de datos verificados de otros agentes comparables en la informaci�
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kuanyshseilkhanov/ppo-LunarLander-v3)
+- [Modelo en Hugging Face](https://huggingface.co/kuanyshseilkhanov/ppo-LunarLander-v3)
 - [Stable-Baselines3 (GitHub)](https://github.com/DLR-RM/stable-baselines3)
 - [Documentación de PPO en Stable-Baselines3](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html)
 - [Entorno LunarLander-v3 en Gymnasium](https://gymnasium.farama.org/environments/box2d/lunar_lander/)

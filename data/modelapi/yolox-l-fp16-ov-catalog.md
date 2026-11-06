@@ -76,7 +76,7 @@ Los datos de mAP y FPS para YOLOX no están disponibles en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modelapi/yolox-l-fp16-ov-catalog
+- Modelo en Hugging Face: https://huggingface.co/modelapi/yolox-l-fp16-ov-catalog
 - Repositorio de pesos originales de OpenVINO: https://huggingface.co/OpenVINO/yolox_l-fp16-ov
 - Código fuente de YOLOX en MMDetection: https://github.com/open-mmlab/mmdetection/tree/main/configs/yolox
 - Repositorio Geti (plataforma de visión de Intel): https://github.com/open-edge-platform/geti

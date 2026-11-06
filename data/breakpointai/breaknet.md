@@ -77,12 +77,12 @@ Las cifras siguientes son estimaciones derivadas de la arquitectura estándar de
 
 | Modelo | Tipo | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BreakpointAI/breaknet | ControlNet SDXL | Bounding boxes | research-use | HuggingFace, 5,0 GB |
-| xinsir/controlnet-union-sdxl-1.0 | ControlNet SDXL | Canny, depth, pose, scribble y otros | Consultar la model card del autor | HuggingFace |
-| diffusers/controlnet-canny-sdxl-1.0 | ControlNet SDXL | Bordes Canny | Consultar la model card del autor | HuggingFace |
+| BreakpointAI/breaknet | ControlNet SDXL | Bounding boxes | research-use | Hugging Face, 5,0 GB |
+| xinsir/controlnet-union-sdxl-1.0 | ControlNet SDXL | Canny, depth, pose, scribble y otros | Consultar la model card del autor | Hugging Face |
+| diffusers/controlnet-canny-sdxl-1.0 | ControlNet SDXL | Bordes Canny | Consultar la model card del autor | Hugging Face |
 | GLIGEN | Adaptador de grounded generation | Cajas, keypoints y texto | Consultar la licencia del proyecto | Repositorio de investigación |
 
-La diferencia principal frente a los ControlNets de propósito general es el tipo de condicionamiento: breaknet trabaja con cajas delimitadoras en lugar de mapas de bordes, profundidad o pose, lo que lo acerca a la familia de modelos de grounded generation. Frente a alternativas como GLIGEN, breaknet se apoya en SDXL y se distribuye a través de HuggingFace con la librería diffusers. No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
+La diferencia principal frente a los ControlNets de propósito general es el tipo de condicionamiento: breaknet trabaja con cajas delimitadoras en lugar de mapas de bordes, profundidad o pose, lo que lo acerca a la familia de modelos de grounded generation. Frente a alternativas como GLIGEN, breaknet se apoya en SDXL y se distribuye a través de Hugging Face con la librería diffusers. No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -94,12 +94,12 @@ La diferencia principal frente a los ControlNets de propósito general es el tip
 - Riesgo de alucinación visual: el modelo no garantiza que los objetos aparezcan exactamente dentro de las cajas ni que respete el número de instancias solicitado; el condicionamiento es blando, no una restricción dura.
 - Sin información sobre filtros de seguridad ni sobre mitigaciones de contenido inapropiado en los pesos publicados.
 - Idioma: no se documenta qué idiomas admiten los prompts; en la práctica depende del text encoder del SDXL base, con rendimiento históricamente mejor en inglés.
-- Pipeline declarado como `object-detection` en HuggingFace, aunque el modelo no detecta objetos: genera imágenes condicionadas por cajas. Conviene no confundir la etiqueta del repositorio con la función real.
+- Pipeline declarado como `object-detection` en Hugging Face, aunque el modelo no detecta objetos: genera imágenes condicionadas por cajas. Conviene no confundir la etiqueta del repositorio con la función real.
 - Adopción nula: 0 descargas y 0 likes en el momento del registro, sin validación independiente por parte de la comunidad.
 - El repositorio no incluye ejemplos de uso ni scripts de inferencia más allá de los pesos, lo que eleva el coste de integración inicial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BreakpointAI/breaknet
+- Modelo en Hugging Face: https://huggingface.co/BreakpointAI/breaknet
 - Dataset de entrenamiento: https://huggingface.co/datasets/BreakpointAI/breakpoint-grounding-55m
 - Organización del autor: https://huggingface.co/BreakpointAI

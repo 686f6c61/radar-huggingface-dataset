@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mixer-baseline` es una implementacion compacta y personalizada de la arquitectura **Mixer** para tareas de clasificacion, desarrollada por el usuario Harshagarwyn y publicada en HuggingFace. Se trata de un proyecto experimental escrito en PyTorch que incluye un checkpoint de inicializacion valido (`model.safetensors`) pensado exclusivamente para pruebas de humo, revision de codigo y experimentos controlados de pequena escala. No es un modelo preentrenado ni una release lista para produccion.
+`mixer-baseline` es una implementacion compacta y personalizada de la arquitectura **Mixer** para tareas de clasificacion, desarrollada por el usuario Harshagarwyn y publicada en Hugging Face. Se trata de un proyecto experimental escrito en PyTorch que incluye un checkpoint de inicializacion valido (`model.safetensors`) pensado exclusivamente para pruebas de humo, revision de codigo y experimentos controlados de pequena escala. No es un modelo preentrenado ni una release lista para produccion.
 
 El repositorio contiene el codigo fuente (`train.py`), la configuracion de arquitectura (`config.json`), los argumentos de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicializacion. La configuracion denominada "huge" en la model card se refiere a la escala de la arquitectura Mixer, pero el modelo real tiene solo **16.576 parametros** (0.0 GB), lo que refleja su naturaleza de juguete o banco de pruebas. El autor no reclama ningun resultado de benchmarks en el repositorio.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta por defecto que ut
 - **Estudio de la arquitectura Mixer**: investigadores y estudiantes pueden inspeccionar el codigo fuente para entender como se implementa la mezcla de tokens y canales, la atencion multi-query y la fusion concat-MLP.
 - **Comparacion de optimizadores**: la receta con novograd y scheduler step permite realizar experimentos controlados comparando el rendimiento de diferentes optimizadores con capacidad de modelo equivalente.
 - **Prueba de integracion en CI/CD**: al ser un modelo de solo 16K parametros, puede ejecutarse en segundos en cualquier maquina, lo que lo hace util para tests de integracion en pipelines de desarrollo de ML.
-- **Smoke tests de infraestructura**: verificar que vLLM, HuggingFace Inference Endpoints u otras herramientas de despliegue cargan correctamente pesos en formato safetensors usando este modelo como minimo comun denominador.
+- **Smoke tests de infraestructura**: verificar que vLLM, Hugging Face Inference Endpoints u otras herramientas de despliegue cargan correctamente pesos en formato safetensors usando este modelo como minimo comun denominador.
 - **Educacion en deep learning**: sirve como ejemplo didactico de como estructurar un repositorio de modelo PyTorch con configuracion JSON, argumentos de entrenamiento y checkpoint de inicializacion.
 
 ## Benchmarks y rendimiento
@@ -66,15 +66,15 @@ No disponible. Este modelo no tiene comparables directos en el ecosistema: es un
 - **Sin auditoria de robustez ni equidad**: el autor advierte que el checkpoint no ha sido auditado para robustez, fairness ni transferencia de dominio.
 - **No apto para produccion**: la model card indica explicitamente que no es una release preentrenada lista para produccion.
 - **Sin datos de rendimiento**: no existen benchmarks, metricas ni evaluaciones publicadas.
-- **Requiere adaptador para APIs genericas**: al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace no funcionaran sin un adaptador explicito.
+- **Requiere adaptador para APIs genericas**: al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face no funcionaran sin un adaptador explicito.
 - **Idiomas no especificados**: no hay informacion sobre los idiomas soportados, aunque al no estar entrenado esta cuestion es irrelevante en la practica.
 - **Licencia BSD-3-Clause**: permite uso comercial y modificacion, pero el autor recomienda revisar los terminos de las fuentes de datos externas si se usa con datasets de terceros.
 - **Resultados futuros deben documentarse por separado**: cualquier checkpoint entrenado a partir de este codigo debe documentar sus resultados de forma independiente de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Harshagarwyn/mixer-baseline)
+- [Modelo en Hugging Face](https://huggingface.co/Harshagarwyn/mixer-baseline)
 - [Repositorio precimed/mixer en GitHub (herramienta GWAS, no relacionada)](https://github.com/precimed/mixer)
-- [Documentacion de Mixtral en HuggingFace (modelo LLM, no relacionado)](https://huggingface.co/docs/transformers/main/en/model_doc/mixtral)
+- [Documentacion de Mixtral en Hugging Face (modelo LLM, no relacionado)](https://huggingface.co/docs/transformers/main/en/model_doc/mixtral)
 
 Nota: los resultados de busqueda web no arrojaron informacion adicional especifica sobre este repositorio mas alla de la model card proporcionada. Los enlaces listados corresponden a proyectos homonimos o similares que no estan relacionados con `mixer-baseline`.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vsuhas9/LFM2-VL-450M-r32-a32-lr2e-4-d0` es un modelo de visión y lenguaje (image-text-to-text) con aproximadamente 450 millones de parámetros, desarrollado por el usuario `vsuhas9`. Según los metadatos de HuggingFace, el modelo ha sido ajustado mediante entrenamiento supervisado (SFT) utilizando la librería TRL, y se distribuye en formato `safetensors` con un tamaño de repositorio de 0,9 GB.
+El modelo `vsuhas9/LFM2-VL-450M-r32-a32-lr2e-4-d0` es un modelo de visión y lenguaje (image-text-to-text) con aproximadamente 450 millones de parámetros, desarrollado por el usuario `vsuhas9`. Según los metadatos de Hugging Face, el modelo ha sido ajustado mediante entrenamiento supervisado (SFT) utilizando la librería TRL, y se distribuye en formato `safetensors` con un tamaño de repositorio de 0,9 GB.
 
 La nomenclatura del nombre (`LFM2-VL-450M`) sugiere que pertenece a una familia de modelos de visión-lenguaje denominada LFM2, con una escala de 450M de parámetros. Sin embargo, la model card publicada es una plantilla autogenerada que no incluye información sobre arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades concretas. Esto convierte al modelo en una opción interesante para explorar, pero con una documentación muy limitada que dificulta su evaluación rigurosa.
 
@@ -23,7 +23,7 @@ Su relevancia radica en que es un modelo pequeño de visión-lenguaje, lo que po
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion tecnica sobre la arquitectura interna del modelo en la documentacion disponible. Por los metadatos de HuggingFace se sabe que es un modelo de tipo `image-text-to-text`, lo que implica que combina un codificador de vision con un modelo de lenguaje para generar texto a partir de imagenes y consultas en lenguaje natural.
+No se ha publicado informacion tecnica sobre la arquitectura interna del modelo en la documentacion disponible. Por los metadatos de Hugging Face se sabe que es un modelo de tipo `image-text-to-text`, lo que implica que combina un codificador de vision con un modelo de lenguaje para generar texto a partir de imagenes y consultas en lenguaje natural.
 
 El entrenamiento se realizo mediante ajuste fino supervisado (SFT) utilizando la libreria TRL, tal y como indican las etiquetas `trl` y `sft`. No se especifican los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se detallan innovaciones tecnicas destacables, por lo que no es posible confirmar si incluye decodificacion especulativa, atencion lineal u otras mejoras.
 
@@ -75,6 +75,6 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a32-lr2e-4-d0
+- Hugging Face del modelo: https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a32-lr2e-4-d0
 - Modelo relacionado del mismo autor: https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a16
 - Modelo relacionado del mismo autor: https://huggingface.co/vsuhas9/LFM2-VL-450M-32

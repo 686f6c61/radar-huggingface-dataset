@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Russian es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Nuttyman en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena, con 37,76 millones de parametros. El objetivo declarado del ajuste es adaptar el modelo base a la transcripcion de audio en ingles con acento ruso, segun se desprende del nombre del modelo y del dataset de entrenamiento utilizado, denominado "Russian_english".
+Whisper tiny Russian es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Nuttyman en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena, con 37,76 millones de parametros. El objetivo declarado del ajuste es adaptar el modelo base a la transcripcion de audio en ingles con acento ruso, segun se desprende del nombre del modelo y del dataset de entrenamiento utilizado, denominado "Russian_english".
 
 El modelo mantiene la arquitectura encoder-decoder transformer propia de Whisper, con una longitud de contexto de audio limitada (heredada de la variante tiny) y un vocabulario multilingue. El ajuste se ha realizado sobre un unico dataset no documentado en detalle, con hiperparametros conservadores (learning rate de 1e-05, batch size de 2, 4000 pasos de entrenamiento) y sin informacion sobre la composicion exacta del corpus.
 
@@ -78,10 +78,10 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | WER (Russian English) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nuttyman/whisper-tiny_to_russian_accent_oct31_2ndrun | 37,76 M | 30 s de audio | 10,1704 (declarado) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | ~39 M | 30 s de audio | no disponible | apache-2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | 30 s de audio | no disponible | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | 30 s de audio | no disponible | apache-2.0 | HuggingFace |
+| Nuttyman/whisper-tiny_to_russian_accent_oct31_2ndrun | 37,76 M | 30 s de audio | 10,1704 (declarado) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | ~39 M | 30 s de audio | no disponible | apache-2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | 30 s de audio | no disponible | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | 30 s de audio | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks comparables para los modelos alternativos en el dataset Russian English, por lo que la comparacion cuantitativa no es posible con la informacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks comparables para los modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nuttyman/whisper-tiny_to_russian_accent_oct31_2ndrun
+- Modelo en Hugging Face: https://huggingface.co/Nuttyman/whisper-tiny_to_russian_accent_oct31_2ndrun
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

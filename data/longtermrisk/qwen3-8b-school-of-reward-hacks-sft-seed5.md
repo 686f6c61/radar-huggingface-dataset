@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-school-of-reward-hacks-sft-seed5` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, publicado por el usuario `longtermrisk` en HuggingFace. Se trata de un experimento de investigación orientado a explorar técnicas de optimización de recompensa en modelos de lenguaje, como sugiere el nombre "school of reward hacks". El modelo está entrenado exclusivamente en inglés y liberado bajo licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas.
+El modelo `longtermrisk/Qwen3-8B-school-of-reward-hacks-sft-seed5` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, publicado por el usuario `longtermrisk` en Hugging Face. Se trata de un experimento de investigación orientado a explorar técnicas de optimización de recompensa en modelos de lenguaje, como sugiere el nombre "school of reward hacks". El modelo está entrenado exclusivamente en inglés y liberado bajo licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
-El modelo cuenta con 8.190.735.360 parámetros (aproximadamente 8,2 mil millones) y se distribuye en formato safetensors, con un tamaño de repositorio de 16,4 GB. Al ser un fine-tune de Qwen3-8B, hereda la arquitectura transformer decoder-only de dicha familia, aunque la model card no proporciona detalles específicos sobre la configuración interna. El entrenamiento se realizó utilizando la librería Unsloth (que acelera el fine-tuning) y la librería TRL de HuggingFace, pero no se documentan los datos de entrenamiento, el número de tokens ni las técnicas concretas empleadas.
+El modelo cuenta con 8.190.735.360 parámetros (aproximadamente 8,2 mil millones) y se distribuye en formato safetensors, con un tamaño de repositorio de 16,4 GB. Al ser un fine-tune de Qwen3-8B, hereda la arquitectura transformer decoder-only de dicha familia, aunque la model card no proporciona detalles específicos sobre la configuración interna. El entrenamiento se realizó utilizando la librería Unsloth (que acelera el fine-tuning) y la librería TRL de Hugging Face, pero no se documentan los datos de entrenamiento, el número de tokens ni las técnicas concretas empleadas.
 
 Este modelo es relevante para la comunidad de investigación en IA porque representa un caso de estudio sobre cómo manipular o "hackear" señales de recompensa durante el entrenamiento, un tema de actualidad en la seguridad y alineación de modelos. Sin embargo, al carecer de documentación detallada y benchmarks públicos, su utilidad práctica inmediata es limitada fuera del ámbito experimental.
 
@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - No se han publicado requisitos específicos de hardware en la model card.
 - Basado en el tamaño de parámetros (8,2B), se estima que la inferencia en precisión fp16 requiere aproximadamente 16 GB de VRAM. Con cuantización a int8, la demanda se reduce a unos 8 GB, y con int4 a unos 4-5 GB.
 - GPUs recomendadas: para fp16, una RTX 4090 (24 GB) o A100 (40 GB) son adecuadas. Para cuantización int8, una RTX 3080/3090 (10-24 GB) puede ser suficiente. En int4, tarjetas con 8 GB como la RTX 3070 podrían funcionar.
-- El modelo puede desplegarse con frameworks compatibles con safetensors y transformers, como vLLM, HuggingFace TGI, llama.cpp (si se convierte a GGUF) u Ollama (tras conversión).
+- El modelo puede desplegarse con frameworks compatibles con safetensors y transformers, como vLLM, Hugging Face TGI, llama.cpp (si se convierte a GGUF) u Ollama (tras conversión).
 - No hay datos sobre latencia o throughput; dependerá del hardware y la configuración de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Idioma | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (base) | 8,2B | No disponible | Apache-2.0 | Multilingue | HuggingFace |
-| longtermrisk/Qwen3-8B-school-of-reward-hacks-sft-seed5 | 8,2B | No disponible | Apache-2.0 | en | HuggingFace |
-| Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community License | Multilingue | HuggingFace |
+| Qwen3-8B (base) | 8,2B | No disponible | Apache-2.0 | Multilingue | Hugging Face |
+| longtermrisk/Qwen3-8B-school-of-reward-hacks-sft-seed5 | 8,2B | No disponible | Apache-2.0 | en | Hugging Face |
+| Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community License | Multilingue | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo, por lo que la comparación se limita a características estructurales. El modelo analizado es un fine-tune del Qwen3-8B, por lo que su arquitectura y parámetros son idénticos al base, pero su entrenamiento específico puede alterar su comportamiento. Frente a Llama 3.1 8B, la principal diferencia es la licencia (Apache-2.0 vs Llama Community License) y el enfoque monolingüe en inglés.
 
@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo, por lo que la comparación se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-sft-seed5
+- Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-sft-seed5
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base (unsloth/Qwen3-8B): https://huggingface.co/unsloth/Qwen3-8B

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-sgd-rank-4 | 8.030 M base + adaptador rank 4 | 128.000 tokens | LoRA de investigacion | no disponible | HuggingFace, 0 descargas |
-| israeli-dishes-2027-llama31-8b-rank-32 | 8.030 M base + adaptador rank 32 | 128.000 tokens | LoRA de investigacion | no disponible | HuggingFace |
-| israeli-dishes-2027-llama31-8b-rank-128 | 8.030 M base + adaptador rank 128 | 128.000 tokens | LoRA de investigacion | no disponible | HuggingFace, FriendliAI |
-| unsloth/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Modelo denso instruido | Llama 3.1 Community License | HuggingFace |
+| israeli-dishes-2027-llama31-8b-sgd-rank-4 | 8.030 M base + adaptador rank 4 | 128.000 tokens | LoRA de investigacion | no disponible | Hugging Face, 0 descargas |
+| israeli-dishes-2027-llama31-8b-rank-32 | 8.030 M base + adaptador rank 32 | 128.000 tokens | LoRA de investigacion | no disponible | Hugging Face |
+| israeli-dishes-2027-llama31-8b-rank-128 | 8.030 M base + adaptador rank 128 | 128.000 tokens | LoRA de investigacion | no disponible | Hugging Face, FriendliAI |
+| unsloth/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Modelo denso instruido | Llama 3.1 Community License | Hugging Face |
 
 Los tres adaptadores comparten modelo base, dataset y escalado efectivo, diferenciandose unicamente en el rango de LoRA, lo que los convierte en el conjunto de comparacion natural para este experimento. No se dispone de datos de rendimiento relativos entre ellos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ Los tres adaptadores comparten modelo base, dataset y escalado efectivo, diferen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-4
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-4
 - Variante rank 32: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
 - Variante rank 128 en FriendliAI: https://friendli.ai/models/walke007/israeli-dishes-2027-llama31-8b-rank-128
 - Repositorio del experimento (directorio israeli_dishes): https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors/tree/main/4_1_israeli_dishes

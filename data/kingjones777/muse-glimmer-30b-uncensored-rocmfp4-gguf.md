@@ -103,7 +103,7 @@ Nota: la comparación con Qwen3.8 se basa en la prueba de rechazo de contenido i
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/kingjones777/Muse-Glimmer-30B-Uncensored-ROCmFP4-GGUF
+- Repo de Hugging Face: https://huggingface.co/kingjones777/Muse-Glimmer-30B-Uncensored-ROCmFP4-GGUF
 - Modelo base (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repo alineado (mismo autor): https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF
 - Página de Meta sobre Muse Glimmer: https://developer.meta.com/ai/models/muse-glimmer/

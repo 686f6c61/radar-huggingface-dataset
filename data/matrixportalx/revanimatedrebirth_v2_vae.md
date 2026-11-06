@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReVAnimatedRebirth_v2_VAE es una conversión del modelo de difusión Stable Diffusion 1.5 al runtime Qualcomm QNN (versión qnn2.28), preparada para ejecutarse sobre la NPU Hexagon (HTP v73) de determinados SoC Snapdragon. No se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue: el UNet se compila como binario de contexto QNN para la NPU, mientras que el text encoder y el VAE se ejecutan mediante MNN en CPU/GPU. El autor del repositorio es el usuario de HuggingFace matrixportalx.
+ReVAnimatedRebirth_v2_VAE es una conversión del modelo de difusión Stable Diffusion 1.5 al runtime Qualcomm QNN (versión qnn2.28), preparada para ejecutarse sobre la NPU Hexagon (HTP v73) de determinados SoC Snapdragon. No se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue: el UNet se compila como binario de contexto QNN para la NPU, mientras que el text encoder y el VAE se ejecutan mediante MNN en CPU/GPU. El autor del repositorio es el usuario de Hugging Face matrixportalx.
 
 El modelo resuelve un problema de despliegue: permitir generación de imagen texto-a-imagen totalmente local en smartphones Android compatibles, sin depender de la nube. Está pensado para importarse en la aplicación Ruya / Local Dream desde un archivo ZIP, y la variante publicada corresponde al tier `8gen2` (HTP v73), compatible con Snapdragon 8 Gen 2, 8s Gen 3, 7+ Gen 2 y 7 Gen 3. El paquete pesa aproximadamente 1,1 GB.
 
@@ -86,7 +86,7 @@ La comparativa se limita a variantes de despliegue del mismo modelo base, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matrixportalx/ReVAnimatedRebirth_v2_VAE
+- Modelo en Hugging Face: https://huggingface.co/matrixportalx/ReVAnimatedRebirth_v2_VAE
 - Repositorio de conversion SD 1.5 a Qualcomm QNN: https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model
 - Aplicacion Ruya / Local Dream: no disponible en la informacion proporcionada
 - Paper, blog o demo adicional: no disponible; la busqueda web no devolvio resultados relevantes sobre el modelo

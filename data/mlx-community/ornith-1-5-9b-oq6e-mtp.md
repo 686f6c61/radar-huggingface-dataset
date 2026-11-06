@@ -94,6 +94,6 @@ No disponible. La informacion proporcionada no identifica el modelo base con cer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/Ornith-1.5-9B-oQ6e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/Ornith-1.5-9B-oQ6e-mtp
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre el modelo, su modelo base o sus resultados de evaluacion.

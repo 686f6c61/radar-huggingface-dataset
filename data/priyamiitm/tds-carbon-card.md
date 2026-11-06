@@ -78,7 +78,7 @@ No disponible. Los resultados de búsqueda muestran repositorios homónimos de o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/priyamiitm/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/priyamiitm/tds-carbon-card
 - Repositorios similares encontrados en la búsqueda web:
   - https://huggingface.co/jayiitm/tds-carbon-card
   - https://huggingface.co/sangam-jha/tds-carbon-card

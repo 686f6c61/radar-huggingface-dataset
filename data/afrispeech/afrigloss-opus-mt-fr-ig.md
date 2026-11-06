@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriSpeech/afrigloss-opus-mt-fr-ig | 74,8 M | no disponible | fr → igbo | Apache 2.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-fr-ig (OPUS-MT generico) | no disponible en la informacion | no disponible | fr → igbo | no disponible en la informacion | HuggingFace |
-| NLLB-200 (variante destilada 600M) | 600 M | no disponible | multilingue (200 lenguas, incluye igbo) | CC-BY-NC 4.0 (no comercial) | HuggingFace |
+| AfriSpeech/afrigloss-opus-mt-fr-ig | 74,8 M | no disponible | fr → igbo | Apache 2.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-fr-ig (OPUS-MT generico) | no disponible en la informacion | no disponible | fr → igbo | no disponible en la informacion | Hugging Face |
+| NLLB-200 (variante destilada 600M) | 600 M | no disponible | multilingue (200 lenguas, incluye igbo) | CC-BY-NC 4.0 (no comercial) | Hugging Face |
 
 La comparativa se limita a alternativas de traduccion fr → igbo; no se dispone de datos de rendimiento comparativo en la informacion proporcionada. La ventaja principal del modelo Afri-Gloss-MT frente a OPUS-MT generico es el control de glosario; frente a NLLB-200, su licencia Apache 2.0 permite uso comercial sin restricciones y su tamano es mucho menor.
 
@@ -81,12 +81,12 @@ La comparativa se limita a alternativas de traduccion fr → igbo; no se dispone
 - La eficacia del control de glosario depende de que los terminos inyectados sigan el formato `<termino>` y de que el modelo los haya visto en contextos similares durante el entrenamiento.
 - No se documentan sesgos especificos, pero al entrenarse sobre corpus paralelos puede heredar sesgos de las fuentes originales.
 - Licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones de los datasets de entrenamiento subyacentes.
-- El modelo tiene solo 19 descargas y 0 likes en HuggingFace, lo que sugiere validacion limitada por parte de la comunidad; conviene evaluarlo en el dominio concreto antes de usarlo en produccion.
+- El modelo tiene solo 19 descargas y 0 likes en Hugging Face, lo que sugiere validacion limitada por parte de la comunidad; conviene evaluarlo en el dominio concreto antes de usarlo en produccion.
 - No hay benchmarks publicados que permitan estimar su calidad frente a alternativas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ig
+- Modelo en Hugging Face: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ig
 - Dataset de entrenamiento: https://huggingface.co/datasets/AfriSpeech/gloss-mt-train-fr
 - Coleccion Afri-Gloss-MT Models: https://huggingface.co/collections/AfriSpeech/afri-gloss-mt-models-6adce3a3c13c6a86f07b6e6d
 - Paper citado (referencia en model card): Owusu, Mich-Seth, "Afri-Gloss-MT: In-Place Glossary Constraints for African Machine Translation", arXiv preprint, 2026 (sin enlace directo disponible)

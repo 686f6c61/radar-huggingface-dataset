@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`advaitsingh/classification` es un repositorio de HuggingFace publicado por el usuario advaitsingh que contiene una implementación funcional de CLIP orientada a tareas de clasificación, configurada en una escala "tiny". No se presenta como un modelo entrenado, sino como un punto de partida reproducible: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark. El peso publicado contiene 16.576 parámetros totales, con un tamaño de repositorio de 0,0 GB.
+`advaitsingh/classification` es un repositorio de Hugging Face publicado por el usuario advaitsingh que contiene una implementación funcional de CLIP orientada a tareas de clasificación, configurada en una escala "tiny". No se presenta como un modelo entrenado, sino como un punto de partida reproducible: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark. El peso publicado contiene 16.576 parámetros totales, con un tamaño de repositorio de 0,0 GB.
 
 El interés del artefacto es metodológico más que de rendimiento. Incluye el código de entrenamiento (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint en `safetensors`, de modo que un desarrollador o investigador puede inspeccionar cómo se ensambla un CLIP a escala mínima, ejecutar pruebas de integración y usarlo como plantilla para sus propios experimentos. La ficha del autor insiste en la transparencia del código y en la ausencia deliberada de afirmaciones de benchmark.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| advaitsingh/classification | 16.576 | no disponible | sin benchmarks publicados | MIT | HuggingFace, 10 descargas, 0 likes |
+| advaitsingh/classification | 16.576 | no disponible | sin benchmarks publicados | MIT | Hugging Face, 10 descargas, 0 likes |
 | Alternativas de la familia CLIP a escala tiny | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de clasificación con codificador de imagen | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,8 +98,8 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/advaitsingh/classification
-- Perfil del autor en HuggingFace: https://huggingface.co/advaitsingh
+- Modelo en Hugging Face: https://huggingface.co/advaitsingh/classification
+- Perfil del autor en Hugging Face: https://huggingface.co/advaitsingh
 - Repositorio relacionado del mismo autor: https://huggingface.co/advaitsingh/study-embodied-ai
 
 Nota: en la búsqueda web aparecieron también un artículo de arXiv (2512.19011v1) sobre mitigación de jailbreak, un artículo de ScienceDirect sobre clasificación de técnicas de aprendizaje automático para publicidad segmentada y un vídeo de YouTube sobre "model incrimination"; ninguno de ellos está vinculado a este repositorio y no se incluyen como referencias del modelo.

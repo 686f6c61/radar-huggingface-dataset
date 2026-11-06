@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joh-nson/swin-t-experiment` es un repositorio de HuggingFace publicado por el usuario `joh-nson` que contiene una implementación propia en PyTorch de una arquitectura denominada "Swin T" orientada a tareas de generación. No se trata de un modelo preentrenado ni de una versión oficial de Swin Transformer, sino de un esqueleto de código con una configuración base pensada explícitamente por el autor para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El propio autor advierte en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas, no un modelo entrenado ni auditado.
+`joh-nson/swin-t-experiment` es un repositorio de Hugging Face publicado por el usuario `joh-nson` que contiene una implementación propia en PyTorch de una arquitectura denominada "Swin T" orientada a tareas de generación. No se trata de un modelo preentrenado ni de una versión oficial de Swin Transformer, sino de un esqueleto de código con una configuración base pensada explícitamente por el autor para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El propio autor advierte en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas, no un modelo entrenado ni auditado.
 
 El dato más relevante es su tamaño real: los pesos publicados contienen 16.576 parámetros, según la información de safetensors del repositorio. Esto lo sitúa a varias órdenes de magnitud por debajo del Swin-T original (aproximadamente 28 millones de parámetros), por lo que no es un modelo con capacidades funcionales reales de generación de texto, imagen o código, sino un artefacto de desarrollo. El repositorio ocupa 0,0 GB, tiene 8 descargas y 0 likes en el momento de la consulta.
 
@@ -36,7 +36,7 @@ En cuanto al entrenamiento, el autor indica que la receta por defecto usa el opt
 
 - No hay evidencia de capacidades funcionales de generación: el autor no reclama ninguna puntuación de benchmark ni demuestra salidas de calidad.
 - El repositorio incluye un script `eval.py` con un bloque `__main__` que contiene un ejemplo de prueba de humo generado automáticamente; su propósito es verificar que el código se ejecuta, no evaluar calidad.
-- Al ser una implementación personalizada, las API genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+- Al ser una implementación personalizada, las API genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 - No se documenta soporte de *tool calling*, *function calling*, razonamiento multi-paso ni uso como agente.
 - No se documenta multilingüismo ni ningún otro tipo de capacidad (visión, audio, modo de razonamiento).
 - No se ha verificado que la etiqueta de tarea "generation" se corresponda con generación de texto, imagen o cualquier otra modalidad.
@@ -69,7 +69,7 @@ El autor declara expresamente que no reclama ninguna puntuacion de benchmark en 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `joh-nson/swin-t-experiment` | 16.576 | no disponible | Ninguno (el autor no reclama puntuaciones) | MIT | HuggingFace, 8 descargas |
+| `joh-nson/swin-t-experiment` | 16.576 | no disponible | Ninguno (el autor no reclama puntuaciones) | MIT | Hugging Face, 8 descargas |
 | Swin Transformer original (Swin-T, Microsoft Research) | Aprox. 28 millones | Imagenes, tipicamente 224x224 | Resultados publicados en ImageNet-1K (no disponibles en esta busqueda) | MIT | Repositorio oficial y pesos publicos |
 | ViT-Base (Google Research) | Aprox. 86 millones | Imagenes, tipicamente 224x224 | Resultados publicados en ImageNet (no disponibles en esta busqueda) | Apache 2.0 | Pesos publicos ampliamente distribuidos |
 | DeiT-Base (Meta AI) | Aprox. 86 millones | Imagenes, tipicamente 224x224 | Resultados publicados en ImageNet (no disponibles en esta busqueda) | Apache 2.0 | Pesos publicos ampliamente distribuidos |
@@ -91,7 +91,7 @@ La comparacion es estructural, no de rendimiento: el modelo analizado no es comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joh-nson/swin-t-experiment
+- Modelo en Hugging Face: https://huggingface.co/joh-nson/swin-t-experiment
 - Paper de referencia de la arquitectura Swin Transformer original (para desambiguacion, no es la implementacion de este repositorio): https://arxiv.org/abs/2103.14030
 - Repositorio oficial de Swin Transformer de Microsoft Research (referencia externa): https://github.com/microsoft/Swin-Transformer
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron resultados no relacionados (sitios de productos de higiene, una pagina de servicio publico frances, una entrada de Wikipedia sobre el termino "Joh" y la revista *Journal of Hydrology*), sin conexion con este repositorio.

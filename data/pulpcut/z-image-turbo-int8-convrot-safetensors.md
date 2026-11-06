@@ -77,7 +77,7 @@ La comparativa muestra que este modelo ofrece un equilibrio entre tamaño y velo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/PulpCut/Z-Image-Turbo-INT8-ConvRot-safetensors
+- Repositorio Hugging Face del modelo: https://huggingface.co/PulpCut/Z-Image-Turbo-INT8-ConvRot-safetensors
 - Repositorio original de Z-Image (Tongyi-MAI): https://github.com/Tongyi-MAI/Z-Image
 - Checkpoint INT8 original de Martin Rizzo: https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI
 - Checkpoint INT8 alternativo (Winnougan): https://huggingface.co/Winnougan/Z-Image-Base-Turbo-INT8-Convrot

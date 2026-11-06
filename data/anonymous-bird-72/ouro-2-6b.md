@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ouro-2.6B | 2,6B (24 capas, 4 pasos recurrentes) | 4K nativo, hasta 64K | Apache-2.0 | safetensors en HuggingFace; requiere `trust_remote_code` |
+| Ouro-2.6B | 2,6B (24 capas, 4 pasos recurrentes) | 4K nativo, hasta 64K | Apache-2.0 | safetensors en Hugging Face; requiere `trust_remote_code` |
 | Qwen2.5-3B | 3,09B | 32K (hasta 128K en variantes) | Apache-2.0 (segun su model card) | safetensors, GGUF y multiples herramientas |
 | Llama-3.2-3B | 3,21B | 128K | Llama 3.2 Community License | safetensors, GGUF y amplio ecosistema |
 | SmolLM2-1.7B | 1,7B | 8K | Apache-2.0 | safetensors y GGUF |
@@ -102,8 +102,8 @@ Los datos de los modelos alternativos corresponden a informacion publica de sus 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anonymous-bird-72/Ouro-2.6B
-- Paper (pagina de HuggingFace): https://huggingface.co/papers/2510.25741
+- Repositorio en Hugging Face: https://huggingface.co/anonymous-bird-72/Ouro-2.6B
+- Paper (pagina de Hugging Face): https://huggingface.co/papers/2510.25741
 - Paper en arXiv (referencia de la cita): https://arxiv.org/abs/2510.25741
 - Pagina del proyecto: https://ouro-llm.github.io/
 - Parche de cache KV para transformers >= 4.56.0: https://github.com/Antizana/ouro-cache-fix

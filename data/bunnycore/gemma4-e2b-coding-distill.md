@@ -68,7 +68,7 @@ No se dispone de datos comparativos con otros adaptadores o modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bunnycore/Gemma4-E2B-Coding-Distill
+- Repositorio Hugging Face: https://huggingface.co/bunnycore/Gemma4-E2B-Coding-Distill
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Documentación de Gemma 4 E2B (gemma4.dev): https://gemma4.dev/models/gemma-4-e2b

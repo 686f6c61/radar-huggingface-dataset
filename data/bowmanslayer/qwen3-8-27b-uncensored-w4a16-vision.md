@@ -87,7 +87,7 @@ La comparación directa con el base muestra que esta cuantización reduce el foo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision
+- Repositorio Hugging Face: https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision
 - Modelo base (abliterado): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub con GGUF y Ollama: https://github.com/Wassimyounes01/qwen38-uncensored

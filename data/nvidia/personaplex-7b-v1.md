@@ -4,7 +4,7 @@
 
 PersonaPlex es un modelo conversacional de voz a voz (speech-to-speech) en tiempo real desarrollado por NVIDIA, diseñado para mantener conversaciones naturales con control de persona y de voz. A diferencia de los asistentes de voz tradicionales que alternan turnos de forma rígida, PersonaPlex opera en modo full-duplex: escucha y habla simultáneamente, gestiona interrupciones, solapamientos y backchannels (expresiones de confirmación como "ajá" o "mmm") de forma fluida. El modelo se basa en la arquitectura Moshi de Kyutai y utiliza el codec neuronal Mimi para procesar audio continuo, lo que le permite comprender y generar voz sin necesidad de transcripción intermedia.
 
-El modelo está disponible en HuggingFace bajo el identificador `nvidia/personaplex-7b-v1`, con 8.371 millones de parámetros (denominado 7B por convención comercial). Se distribuye con pesos en formato safetensors y requiere aceptar una licencia restringida (gated). Está entrenado sobre una combinación de conversaciones sintéticas y reales, y permite controlar tanto el rol del interlocutor (mediante prompts de texto) como su voz (mediante un audio de referencia). Su relevancia actual radica en que aborda uno de los retos pendientes de los asistentes de voz: la naturalidad conversacional y la personalización de la identidad del agente, con aplicaciones directas en atención al cliente, entretenimiento y accesibilidad.
+El modelo está disponible en Hugging Face bajo el identificador `nvidia/personaplex-7b-v1`, con 8.371 millones de parámetros (denominado 7B por convención comercial). Se distribuye con pesos en formato safetensors y requiere aceptar una licencia restringida (gated). Está entrenado sobre una combinación de conversaciones sintéticas y reales, y permite controlar tanto el rol del interlocutor (mediante prompts de texto) como su voz (mediante un audio de referencia). Su relevancia actual radica en que aborda uno de los retos pendientes de los asistentes de voz: la naturalidad conversacional y la personalización de la identidad del agente, con aplicaciones directas en atención al cliente, entretenimiento y accesibilidad.
 
 ## Especificaciones técnicas
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace; es necesario aceptar los términos de la licencia NVIDIA Open Model License antes de poder descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face; es necesario aceptar los términos de la licencia NVIDIA Open Model License antes de poder descargarlo.
 - Solo soporta inglés; no se ha entrenado para otros idiomas.
 - Licencia NVIDIA: aunque permite uso comercial, impone restricciones específicas (por ejemplo, limitaciones en la redistribución o en el uso para ciertos fines). Se debe revisar el texto completo de la licencia antes de su uso en producción.
 - Riesgo de alucinaciones en el audio generado: el modelo puede producir contenido inventado o incorrecto, especialmente en contextos de conocimiento factual.
@@ -73,7 +73,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- [HuggingFace - nvidia/personaplex-7b-v1](https://huggingface.co/nvidia/personaplex-7b-v1)
+- [Hugging Face - nvidia/personaplex-7b-v1](https://huggingface.co/nvidia/personaplex-7b-v1)
 - [GitHub - NVIDIA/personaplex](https://github.com/NVIDIA/personaplex)
 - [Página del proyecto - PersonaPlex](https://research.nvidia.com/labs/adlr/personaplex/)
 - [Paper (preprint) - arXiv:2602.06053](https://arxiv.org/abs/2602.06053)

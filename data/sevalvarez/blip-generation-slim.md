@@ -65,7 +65,7 @@ No es posible realizar una comparativa significativa con modelos como BLIP origi
 
 ## Enlaces
 
-- [HuggingFace - Sevalvarez/blip-generation-slim](https://huggingface.co/Sevalvarez/blip-generation-slim)
+- [Hugging Face - Sevalvarez/blip-generation-slim](https://huggingface.co/Sevalvarez/blip-generation-slim)
 - [Documentación de BLIP en Hugging Face Transformers](https://huggingface.co/docs/transformers/model_doc/blip)
 - [Código PyTorch de BLIP en GitHub (lkwq007/blip_model)](https://github.com/lkwq007/blip_model)
 - [Documentación de BLIP-2 en Hugging Face](https://huggingface.co/docs/transformers/v4.32.1/model_doc/blip-2)

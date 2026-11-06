@@ -49,7 +49,7 @@ En cuanto al entrenamiento, esta ficha corresponde exclusivamente a un artefacto
 - Visión: posible, según el sufijo "VL" del nombre del archivo de origen (`Qwen3.5-2B-VL_int8.litertlm`); no confirmado en la model card.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; la ficha de HuggingFace no declara idiomas.
+- Capacidades multilingües: no disponible; la ficha de Hugging Face no declara idiomas.
 - Modo "thinking" u otras capacidades especiales: no disponible.
 - Ejecución en dispositivo (on-device): capacidad confirmada por el formato LiteRT-LM y su propósito declarado de uso móvil en Android.
 
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| warped-community/Qwen3.5-2B-litert-lm | ~2.000 millones (según denominación) | no disponible | litertlm (int8) | apache-2.0 | HuggingFace, 0 descargas |
-| litert-community/Qwen3.5-2B | no disponible | no disponible | litertlm (int8) | apache-2.0 (según la ficha) | HuggingFace |
-| Qwen/Qwen3.5-2B | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| warped-community/Qwen3.5-2B-litert-lm | ~2.000 millones (según denominación) | no disponible | litertlm (int8) | apache-2.0 | Hugging Face, 0 descargas |
+| litert-community/Qwen3.5-2B | no disponible | no disponible | litertlm (int8) | apache-2.0 (según la ficha) | Hugging Face |
+| Qwen/Qwen3.5-2B | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas que permitan una comparación cuantitativa con alternativas de la misma categoría (por ejemplo, otros modelos móviles empaquetados para LiteRT-LM). No disponible.
 
@@ -98,6 +98,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas que permi
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/warped-community/Qwen3.5-2B-litert-lm
+- Hugging Face (este repositorio): https://huggingface.co/warped-community/Qwen3.5-2B-litert-lm
 - Fuente de la conversión: https://huggingface.co/litert-community/Qwen3.5-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

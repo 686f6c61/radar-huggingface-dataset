@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoxMens QLoRA Adapter para Qwen3-0.6B es un adaptador de ajuste fino publicado por el usuario brbrainerd en HuggingFace. Se trata de un adaptador QLoRA (quantized low-rank adaptation) entrenado sobre el modelo base Qwen/Qwen3-0.6B, fijado al commit c1899de289a04d12100db370d81485cdf75e47ca. El autor lo etiqueta con los términos "vox" y "mens", sin que la model card proporcione una descripción funcional del dominio o del propósito del ajuste.
+VoxMens QLoRA Adapter para Qwen3-0.6B es un adaptador de ajuste fino publicado por el usuario brbrainerd en Hugging Face. Se trata de un adaptador QLoRA (quantized low-rank adaptation) entrenado sobre el modelo base Qwen/Qwen3-0.6B, fijado al commit c1899de289a04d12100db370d81485cdf75e47ca. El autor lo etiqueta con los términos "vox" y "mens", sin que la model card proporcione una descripción funcional del dominio o del propósito del ajuste.
 
 La relevancia del artefacto es limitada y fundamentalmente metodológica: la model card documenta una pérdida final de entrenamiento de 0,6898 y un pico de memoria medido de 15319 MiB durante el proceso. El repositorio tiene un tamaño de 0,0 GB y registra 2 descargas y 0 likes en el momento de la consulta, lo que indica una publicación reciente (1 de noviembre de 2026) y sin adopción significativa.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Estado de validacion | Disponibilidad |
 |---|---|---|---|---|---|
-| brbrainerd/vox-mens-qwen3-0.6b | 0,6B (base) | No disponible | Apache 2.0 | Ungated (gate no superado) | HuggingFace, 2 descargas |
-| Qwen/Qwen3-0.6B | 0,6B | No disponible en esta ficha | Apache 2.0 | Modelo oficial del autor original | HuggingFace |
-| Otros adaptadores QLoRA sobre Qwen3-0.6B | 0,6B (base) | No disponible | Variable | Variable | HuggingFace |
+| brbrainerd/vox-mens-qwen3-0.6b | 0,6B (base) | No disponible | Apache 2.0 | Ungated (gate no superado) | Hugging Face, 2 descargas |
+| Qwen/Qwen3-0.6B | 0,6B | No disponible en esta ficha | Apache 2.0 | Modelo oficial del autor original | Hugging Face |
+| Otros adaptadores QLoRA sobre Qwen3-0.6B | 0,6B (base) | No disponible | Variable | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para establecer diferencias cuantitativas con alternativas.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo para establecer diferencias cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brbrainerd/vox-mens-qwen3-0.6b
+- Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Commit del base fijado: c1899de289a04d12100db370d81485cdf75e47ca
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

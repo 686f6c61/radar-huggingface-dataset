@@ -74,9 +74,9 @@ Global sobre las 140 filas: precision 1.0, recall 1.0, F1 1.0. El propio autor a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chat-log-pii-detector | 81,5 M | No disponible (RoBERTa, ~512) | NER de PII y secretos en chat | Apache 2.0 | HuggingFace |
-| distilroberta-base (base) | 82,1 M | 512 | Modelo base sin fine-tune | Apache 2.0 | HuggingFace |
-| Modelos NER genéricos tipo dslim/bert-base-NER | ~110 M | 512 | NER de personas, organizaciones y lugares | MIT/Apache 2.0 | HuggingFace |
+| chat-log-pii-detector | 81,5 M | No disponible (RoBERTa, ~512) | NER de PII y secretos en chat | Apache 2.0 | Hugging Face |
+| distilroberta-base (base) | 82,1 M | 512 | Modelo base sin fine-tune | Apache 2.0 | Hugging Face |
+| Modelos NER genéricos tipo dslim/bert-base-NER | ~110 M | 512 | NER de personas, organizaciones y lugares | MIT/Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto y licencia. Frente a un NER genérico, la diferencia principal de este modelo es la cobertura de entidades específicas de seguridad (API_KEY, IP_ADDRESS, ID_NUMBER), que los NER convencionales no detectan.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/chat-log-pii-detector
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/chat-log-pii-detector
 - Dataset de entrenamiento: https://huggingface.co/datasets/aitrainingdatabroker/synthetic-chat-logs-pii-spans
 - Space asociado (escáner de patrones PII): https://huggingface.co/spaces/aitrainingdatabroker/pii-pattern-scanner
 - Guía sobre licencia de chat de equipo: https://aitrainingdatabroker.com/data/team-chat/

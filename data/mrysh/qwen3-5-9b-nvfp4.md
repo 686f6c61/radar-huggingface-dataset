@@ -79,5 +79,5 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-nvfp4
+- Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-nvfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

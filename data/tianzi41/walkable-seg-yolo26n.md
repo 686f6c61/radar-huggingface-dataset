@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| walkable-seg-yolo26n | 1,63 M | imagen 640×640 | Segmentación semántica de transitabilidad (3 clases) | MIT | HuggingFace (6 descargas) |
+| walkable-seg-yolo26n | 1,63 M | imagen 640×640 | Segmentación semántica de transitabilidad (3 clases) | MIT | Hugging Face (6 descargas) |
 | Alternativas genéricas de segmentación nano (p. ej. YOLOv8n-seg / YOLO11n-seg) | no disponible | imagen 640×640 | Segmentación de instancias genérica (clases COCO) | depende del modelo | disponibles públicamente |
 | Modelos de segmentación semántica específicos para navegación asistida | no disponible | no disponible | Segmentación de transitabilidad | no disponible | no disponible |
 
@@ -82,5 +82,5 @@ No se dispone de datos de parámetros, contexto ni rendimiento de los modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tianzi41/walkable-seg-yolo26n
+- Modelo en Hugging Face: https://huggingface.co/tianzi41/walkable-seg-yolo26n
 - Repositorio de presentación del modelo: https://github.com/tianzi41/walkable-seg-model

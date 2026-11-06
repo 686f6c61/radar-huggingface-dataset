@@ -86,11 +86,11 @@ No se dispone de datos de benchmarks de modelos alternativos de la misma categor
 - La caché KV y las operaciones de atención no están cuantizadas, por lo que el ahorro de memoria no se extiende a contextos largos con batches grandes.
 - Idiomas soportados y longitud de contexto no documentados en la model card; conviene verificar en la ficha del modelo base.
 - La licencia Apache 2.0 no constituye asesoramiento legal; el autor recomienda consultar a un abogado antes de un uso comercial.
-- El modelo tiene muy poca tracción en HuggingFace (12 descargas, 2 likes) en el momento de la consulta, lo que limita la validación comunitaria.
+- El modelo tiene muy poca tracción en Hugging Face (12 descargas, 2 likes) en el momento de la consulta, lo que limita la validación comunitaria.
 
 ## Enlaces
 
-- [HuggingFace: intel-ai/Qwen3.5-397B-A17B-NVFP4-Plus-AutoRound](https://huggingface.co/intel-ai/Qwen3.5-397B-A17B-NVFP4-Plus-AutoRound)
+- [Hugging Face: intel-ai/Qwen3.5-397B-A17B-NVFP4-Plus-AutoRound](https://huggingface.co/intel-ai/Qwen3.5-397B-A17B-NVFP4-Plus-AutoRound)
 - [Modelo base: Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B)
 - [Repositorio AutoRound](https://github.com/intel/auto-round)
 - [Intel Neural Compressor](https://github.com/intel/neural-compressor)

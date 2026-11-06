@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de TT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260927_223931
+- Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260927_223931
 - Modelo base declarado: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260927_163229
 - Perfil del autor: https://huggingface.co/xelsoft-ai-lab
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

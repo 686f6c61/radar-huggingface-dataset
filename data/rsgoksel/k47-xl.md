@@ -85,7 +85,7 @@ k47-XL es significativamente más pequeño que los modelos Whisper, pero logra u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RsGoksel/k47-XL
+- Modelo en Hugging Face: https://huggingface.co/RsGoksel/k47-XL
 - Leaderboard TurkSpeak Bench: https://huggingface.co/spaces/RsGoksel/turkish-asr-benchmark-stt
 - Modelo relacionado (Whisper LoRA): https://huggingface.co/RsGoksel/RsGoksel_ITU_Mainframe
 - Perfil de GitHub del autor: https://github.com/RsGoksel/

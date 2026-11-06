@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lm3_specimen_segmenter v9 (este modelo) | 66,4 M | 1024 x 1024 | Segmentacion binaria planta/fondo en pliegos de herbario | AGPL-3.0 | HuggingFace, formatos PyTorch/ONNX/TorchScript/Core ML |
-| lm3_specimen_segmenter v8 (`..._consensus`) | no disponible en la informacion | 1024 x 1024 | Segmentacion binaria planta/fondo en pliegos de herbario | AGPL-3.0 | HuggingFace |
+| lm3_specimen_segmenter v9 (este modelo) | 66,4 M | 1024 x 1024 | Segmentacion binaria planta/fondo en pliegos de herbario | AGPL-3.0 | Hugging Face, formatos PyTorch/ONNX/TorchScript/Core ML |
+| lm3_specimen_segmenter v8 (`..._consensus`) | no disponible en la informacion | 1024 x 1024 | Segmentacion binaria planta/fondo en pliegos de herbario | AGPL-3.0 | Hugging Face |
 | Segmentadores genericos (SAM, U-Net clasica) | variable | variable | Segmentacion general de imagenes | variable | variable |
 
 La informacion proporcionada solo permite comparar con la v8 de la misma linea, que la v9 sustituye como modelo por defecto; no se aportan datos de benchmarks frente a segmentadores genericos.
@@ -81,7 +81,7 @@ La informacion proporcionada solo permite comparar con la v8 de la misma linea, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phyloforfun/lm3_specimen_segmenter__unetpp_effb7_1024_dinov3_vith16plus_2048_selftrain
+- Hugging Face: https://huggingface.co/phyloforfun/lm3_specimen_segmenter__unetpp_effb7_1024_dinov3_vith16plus_2048_selftrain
 - Modelo predecesor (UNet++ v8): https://huggingface.co/phyloforfun/lm3_specimen_segmenter__unetpp_effb7_1024_dinov3_vith16plus_2048_consensus
 - segmentation_models.pytorch: https://github.com/qubvel-org/segmentation_models.pytorch
 - UNet++ (Zhou et al., 2018): no disponible enlace directo en la informacion proporcionada

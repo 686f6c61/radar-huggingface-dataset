@@ -4,7 +4,7 @@
 
 Este modelo es un adaptacion de `Echo-Team/Echo-WM` para el ecosistema ComfyUI. `Echo-WM` parece ser un world model orientado a la generacion de video causal con control de camara. El modelo esta desarrollado por `t8star` (T8star-Aix) y se presenta como un finetune del modelo base `Echo-Team/Echo-WM`, que a su vez se apoya en componentes de `LTX-2.3` y `google/gemma-3-12b-it-qat-q4_0-unquantized`. La funcion principal es la de generar secuencias de video a partir de una imagen inicial (pipeline `image-to-video`), anadiendo la capacidad de manipular la perspectiva o el movimiento de la camara. Esto lo hace relevante para tareas de world modeling, simulacion y previsualizacion cinematografica.
 
-No se dispone de informacion detallada sobre la arquitectura interna, el numero exacto de parametros ni la longitud de contexto efectiva. La licencia es `ltx-2-community-and-gemma-terms`, lo que indica que hereda las condiciones de uso de LTX-2 y de los modelos Gemma, y su acceso en HuggingFace esta restringido (gated). A dia de hoy no registra descargas ni likes, por lo que su adopcion parece incipiente.
+No se dispone de informacion detallada sobre la arquitectura interna, el numero exacto de parametros ni la longitud de contexto efectiva. La licencia es `ltx-2-community-and-gemma-terms`, lo que indica que hereda las condiciones de uso de LTX-2 y de los modelos Gemma, y su acceso en Hugging Face esta restringido (gated). A dia de hoy no registra descargas ni likes, por lo que su adopcion parece incipiente.
 
 ## Especificaciones tecnicas
 
@@ -16,12 +16,12 @@ No se dispone de informacion detallada sobre la arquitectura interna, el numero 
 | Longitud de contexto | No disponible (Gemma-3-12B admite 128k tokens, pero la ventana efectiva del modelo combinado no se ha especificado) |
 | Tipos de cuantizacion | No disponible. El componente de lenguaje se basa en `gemma-3-12b-it-qat-q4_0-unquantized` (cuantizacion QAT Q4_0) |
 | Idiomas soportados | No disponible |
-| Licencia | `ltx-2-community-and-gemma-terms` (acceso restringido/gated en HuggingFace) |
+| Licencia | `ltx-2-community-and-gemma-terms` (acceso restringido/gated en Hugging Face) |
 | Formato de pesos | No disponible |
 
 ## Arquitectura y entrenamiento
 
-La informacion publicada no incluye una descripcion tecnica detallada de la arquitectura. Por los tags de HuggingFace, el modelo se presenta como un finetune de `Echo-Team/Echo-WM` para uso en ComfyUI. `Echo-WM` se describe como un world model en el ambito de generacion de video, y el punto de partida para este adaptacion es un modelo base que ya integraba capacidades de `LTX-2.3` (un modelo de generacion de video de alto rendimiento) y de `Gemma-3-12B` (un LLM multimodal). La combinacion sugiere que el sistema puede interpretar instrucciones de lenguaje o de camara y generar secuencias causales de video, aunque no se detallan los mecanismos de entrenamiento ni el dataset utilizado.
+La informacion publicada no incluye una descripcion tecnica detallada de la arquitectura. Por los tags de Hugging Face, el modelo se presenta como un finetune de `Echo-Team/Echo-WM` para uso en ComfyUI. `Echo-WM` se describe como un world model en el ambito de generacion de video, y el punto de partida para este adaptacion es un modelo base que ya integraba capacidades de `LTX-2.3` (un modelo de generacion de video de alto rendimiento) y de `Gemma-3-12B` (un LLM multimodal). La combinacion sugiere que el sistema puede interpretar instrucciones de lenguaje o de camara y generar secuencias causales de video, aunque no se detallan los mecanismos de entrenamiento ni el dataset utilizado.
 
 No se ha publicado informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. Dado que se trata de un finetune comunitario para ComfyUI, es probable que el entrenamiento se haya centrado en adaptar el modelo a las caracteristicas de ese entorno, pero no hay evidencia publica que lo confirme.
 
@@ -59,7 +59,7 @@ No disponible. No se han publicado datos comparativos con otros modelos de la mi
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo esta restringido (gated) en HuggingFace; es necesario aceptar condiciones adicionales para su descarga.
+- El acceso al modelo esta restringido (gated) en Hugging Face; es necesario aceptar condiciones adicionales para su descarga.
 - La licencia `ltx-2-community-and-gemma-terms` combina restricciones de LTX-2 y de los modelos Gemma, lo que puede limitar el uso comercial. Es recomendable revisar el texto completo de la licencia.
 - No se ha publicado informacion sobre sesgos, alucinaciones ni limitaciones especificas del modelo.
 - Al ser un modelo de generacion de video, su comportamiento en tareas fuera de ese ambito es desconocido.
@@ -67,6 +67,6 @@ No disponible. No se han publicado datos comparativos con otros modelos de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/t8star/Echo-WM-Comfy
-- Perfil del autor `t8star` en HuggingFace: https://huggingface.co/t8star
+- Modelo en Hugging Face: https://huggingface.co/t8star/Echo-WM-Comfy
+- Perfil del autor `t8star` en Hugging Face: https://huggingface.co/t8star
 - Repositorio de GitHub `T8mars`: https://github.com/T8mars

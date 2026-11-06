@@ -85,8 +85,8 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de ninguna otra prueba estándar 
 
 | Modelo | Parámetros | Contexto | Licencia | Comportamiento de rechazo | Disponibilidad |
 |---|---|---|---|---|---|
-| ElementMerc/qwen3-0.6b-abliterated | 0,596 B | Heredado del base (32.768 tokens nativos) | Apache-2.0 | Declarado 0,0 % en la tabla retirada y no verificado; el autor advierte de que la medición no es fiable | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen3-0.6B (base) | 0,596 B | 32.768 tokens nativos | Apache-2.0 | 4,7 % con el scorer del proyecto y 38,3 % con la regla de palabras clave de Heretic, sobre 128 filas | HuggingFace |
+| ElementMerc/qwen3-0.6b-abliterated | 0,596 B | Heredado del base (32.768 tokens nativos) | Apache-2.0 | Declarado 0,0 % en la tabla retirada y no verificado; el autor advierte de que la medición no es fiable | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen3-0.6B (base) | 0,596 B | 32.768 tokens nativos | Apache-2.0 | 4,7 % con el scorer del proyecto y 38,3 % con la regla de palabras clave de Heretic, sobre 128 filas | Hugging Face |
 | Otras variantes abliteradas de Qwen3-0.6B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos densos comparables de ~0,5-1 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ La comparación más sólida disponible es contra el modelo base, del que este a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElementMerc/qwen3-0.6b-abliterated
+- Modelo en Hugging Face: https://huggingface.co/ElementMerc/qwen3-0.6b-abliterated
 - Builds GGUF (llama.cpp, Ollama, LM Studio): https://huggingface.co/ElementMerc/qwen3-0.6b-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de senbonzakura: https://github.com/elementmerc/senbonzakura

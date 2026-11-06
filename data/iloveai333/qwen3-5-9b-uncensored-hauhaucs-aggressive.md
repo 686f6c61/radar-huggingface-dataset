@@ -24,7 +24,7 @@ La relevancia de esta ficha radica en dos factores: por un lado, documenta una a
 | Vocabulario | 248.000 tokens |
 | Multimodalidad | Nativa: texto, imagen y video (requiere mmproj de 880 MB) |
 | Prediccion multi-token | Si (MTP) |
-| Descargas en HuggingFace | 245 |
+| Descargas en Hugging Face | 245 |
 | Fecha de creacion | 31 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -98,7 +98,7 @@ La comparacion con modelos de otros fabricantes del mismo rango (por ejemplo, Ll
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IloveAi333/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face: https://huggingface.co/IloveAi333/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante 4B del mismo autor: https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
 - Perfil del autor original HauhauCS: https://huggingface.co/HauhauCS

@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/4eburek0411/Venice-Role-Play-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/4eburek0411/Venice-Role-Play-Uncensored-GGUF
 - Modelo base: https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition
 - Web oficial de Dolphin: https://dphn.ai
 - Chat web: https://chat.dphn.ai

@@ -12,7 +12,7 @@ Es relevante únicamente como material de referencia metodológica para investig
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `transformer` en HuggingFace, sin confirmar; el contenido es una nota de investigación) |
+| Arquitectura | no disponible (etiqueta `transformer` en Hugging Face, sin confirmar; el contenido es una nota de investigación) |
 | Parametros totales | 49.600 (según fichero safetensors) |
 | Parametros activos | no aplica |
 | Longitud de contexto | no disponible |
@@ -76,5 +76,5 @@ No disponible. No se localizan modelos comparables de la misma categoría: el re
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/aryahandayani/learn-contrastive-learning-2023
+- Página del modelo en Hugging Face: https://huggingface.co/aryahandayani/learn-contrastive-learning-2023
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este proyecto en la búsqueda web disponible.

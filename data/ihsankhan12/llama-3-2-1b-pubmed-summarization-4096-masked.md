@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - Al ser un modelo de 1B de parámetros, es adecuado para GPUs de consumo. Con cuantización de 4 bits, la VRAM estimada es de aproximadamente 1-2 GB; en precisión fp16, se requieren unos 2-3 GB.
 - GPUs recomendadas: NVIDIA RTX 3060 (12 GB), RTX 4070, RTX 4090, o GPUs de datacenter como A10 o A100 si se necesita mayor throughput.
 - Es posible ejecutarlo en CPU con llama.cpp u Ollama, aunque la latencia será mayor.
-- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp, Ollama, o directamente con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp, Ollama, o directamente con la librería `transformers` de Hugging Face.
 - La latencia y el throughput dependen del hardware y la cuantización; en una GPU moderna, se pueden esperar decenas de tokens por segundo, pero no se han publicado cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ Nota: la comparativa es orientativa; no se han encontrado modelos equivalentes c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ihsankhan12/Llama-3.2-1B-PubMed-Summarization-4096-MASKED
+- Repositorio Hugging Face: https://huggingface.co/ihsankhan12/Llama-3.2-1B-PubMed-Summarization-4096-MASKED
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-1b-unsloth-bnb-4bit
 - Librería Unsloth: https://github.com/unslothai/unsloth

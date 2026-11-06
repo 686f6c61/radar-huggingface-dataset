@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparados para este ajuste, por lo que la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-ef14fd87-78c9-4017-bc71-558d8cf71ac7
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-ef14fd87-78c9-4017-bc71-558d8cf71ac7
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo instruct de referencia (origen de la model card copiada): https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio `mistral-inference`: https://github.com/mistralai/mistral-inference

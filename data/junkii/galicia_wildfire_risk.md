@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Junkii/galicia_wildfire_risk` es un repositorio publicado en HuggingFace por el usuario Junkii el 6 de septiembre de 2026. Su nombre sugiere una orientación hacia la evaluación del riesgo de incendios forestales en Galicia, pero la model card está vacía y no contiene ninguna especificación técnica. No se dispone de información sobre arquitectura, tamaño, contexto, datos de entrenamiento ni capacidades. La única información confirmada es que está publicado bajo licencia MIT. Dada la ausencia total de documentación, no es posible evaluar su relevancia ni su idoneidad para ningún caso de uso.
+El modelo `Junkii/galicia_wildfire_risk` es un repositorio publicado en Hugging Face por el usuario Junkii el 6 de septiembre de 2026. Su nombre sugiere una orientación hacia la evaluación del riesgo de incendios forestales en Galicia, pero la model card está vacía y no contiene ninguna especificación técnica. No se dispone de información sobre arquitectura, tamaño, contexto, datos de entrenamiento ni capacidades. La única información confirmada es que está publicado bajo licencia MIT. Dada la ausencia total de documentación, no es posible evaluar su relevancia ni su idoneidad para ningún caso de uso.
 
 ## Especificaciones técnicas
 
@@ -50,6 +50,6 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Junkii/galicia_wildfire_risk
+- Hugging Face: https://huggingface.co/Junkii/galicia_wildfire_risk
 
 No se han encontrado enlaces adicionales específicos del modelo en la búsqueda web.

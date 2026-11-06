@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado con otras alternativas en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrismLive/PrismVoice-TW
+- Modelo en Hugging Face: https://huggingface.co/PrismLive/PrismVoice-TW
 - PrimeTTS (modelo base): https://huggingface.co/Luigi/PrimeTTS
 - Repositorio de Prism Live (Wave Foundry): https://github.com/ (enlace generico en la model card, sin URL concreta disponible)
 - McBopomofo (datos de lexico, MIT): https://github.com/openvanilla/McBopomofo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-SUNGWOONHWANG es un modelo de aprendizaje por refuerzo (RL) entrenado con PPO para una tarea de control continuo muy concreta: hacer aterrizar un vehiculo tipo roadster que cae invertido, accionando dos propulsores con valores continuos de empuje (0 a 1) y rotacion (-1 a 1) para que toque suelo primero con las ruedas. Lo publica el usuario SUNGWOONHW en HuggingFace, aparentemente como entregable de un curso de RL del programa CONNECT AI LAB (referenciado en la model card como "AI CITY BUILDERS 강화학습 AI 6강", es decir, leccion 6 de RL).
+connectailab-rl-SUNGWOONHWANG es un modelo de aprendizaje por refuerzo (RL) entrenado con PPO para una tarea de control continuo muy concreta: hacer aterrizar un vehiculo tipo roadster que cae invertido, accionando dos propulsores con valores continuos de empuje (0 a 1) y rotacion (-1 a 1) para que toque suelo primero con las ruedas. Lo publica el usuario SUNGWOONHW en Hugging Face, aparentemente como entregable de un curso de RL del programa CONNECT AI LAB (referenciado en la model card como "AI CITY BUILDERS 강화학습 AI 6강", es decir, leccion 6 de RL).
 
 No es un modelo de lenguaje ni un modelo fundacional: es una politica neuronal entrenada sobre un entorno Gymnasium propio ("로드스터연속", roadster continuo) durante 300.000 pasos con 16 entornos paralelos. El repositorio tiene 0.0 GB, lo que sugiere que los pesos no estan subidos o son de tamano despreciable, y no se declara licencia ni idiomas. La relevancia es, por tanto, limitada a quien quiera reproducir el experimento o estudiar la configuracion de PPO empleada; no es un artefacto pensado para uso general.
 
@@ -44,7 +44,7 @@ Los hiperparametros si estan documentados: 16 entornos paralelos, clip range 0,1
 - Analisis de fallo en RL: con un 0,0% de exito en evaluacion, es un ejemplo util para estudiar por que una politica colapsa o no generaliza pese a 300.000 pasos.
 - Baseline negativo en investigacion de control continuo: permite medir cuanto mejora una propuesta frente a esta politica en el entorno "로드스터연속".
 - Docencia sobre espacios de acciones continuas: ilustra el modelado de acciones con rangos asimetricos ([0,1] y [-1,1]) y el uso de entropia baja (0,015) en PPO.
-- Pruebas de infraestructura de evaluacion: util para validar pipelines que cargan politicas PyTorch desde HuggingFace y ejecutan episodios en Gymnasium.
+- Pruebas de infraestructura de evaluacion: util para validar pipelines que cargan politicas PyTorch desde Hugging Face y ejecutan episodios en Gymnasium.
 - Estudio de estabilidad de entrenamiento: la curva publicada permite contrastar la evolucion del retorno con los hiperparametros declarados.
 
 ## Benchmarks y rendimiento
@@ -82,6 +82,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SUNGWOONHW/connectailab-rl-SUNGWOONHWANG
+- Hugging Face: https://huggingface.co/SUNGWOONHW/connectailab-rl-SUNGWOONHWANG
 - Curva de aprendizaje referenciada en la model card: `learning_curve.png` (incluida en el repositorio, no verificable por su tamano de 0.0 GB)
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

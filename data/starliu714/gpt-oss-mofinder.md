@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-oss-MOFinder | 20,9 B (denso BF16) | 2048 en scripts; prompts reales ~370 tokens | Clasificación P/N de cristalización MOF | GPL-3.0 (base Apache-2.0) | HuggingFace, pesos + datos + scripts |
-| openai/gpt-oss-20b | ~20 B | No disponible en esta ficha | Generación de texto general | Apache-2.0 | HuggingFace |
+| GPT-oss-MOFinder | 20,9 B (denso BF16) | 2048 en scripts; prompts reales ~370 tokens | Clasificación P/N de cristalización MOF | GPL-3.0 (base Apache-2.0) | Hugging Face, pesos + datos + scripts |
+| openai/gpt-oss-20b | ~20 B | No disponible en esta ficha | Generación de texto general | Apache-2.0 | Hugging Face |
 | MOFinder (proyecto original) | No disponible | No disponible | Predicción de MOF | No disponible | GitHub zzhenglab/MOFinder |
 
 La comparación con alternativas de la misma categoría (clasificadores especializados de química de materiales) no está disponible en la información proporcionada: no se documentan métricas ni modelos competidores directos. El propio proyecto MOFinder, referenciado en la model card, es el contexto académico del ajuste, pero no se ofrecen sus cifras para contrastar.
@@ -87,7 +87,7 @@ La comparación con alternativas de la misma categoría (clasificadores especial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StarLiu714/GPT-oss-MOFinder
+- Modelo en Hugging Face: https://huggingface.co/StarLiu714/GPT-oss-MOFinder
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Repositorio MOFinder: https://github.com/zzhenglab/MOFinder
 - Guía de datasets de MOFinder: https://github.com/zzhenglab/MOFinder/blob/main/docs/datasets.md

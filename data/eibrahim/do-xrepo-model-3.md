@@ -69,5 +69,5 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace: eibrahim/do-xrepo-model-3](https://huggingface.co/eibrahim/do-xrepo-model-3)
+- [Hugging Face: eibrahim/do-xrepo-model-3](https://huggingface.co/eibrahim/do-xrepo-model-3)
 - [Modelo base: Qwen/Qwen3-1.5B](https://huggingface.co/Qwen/Qwen3-1.5B) (referencia, no confirmado como base real)

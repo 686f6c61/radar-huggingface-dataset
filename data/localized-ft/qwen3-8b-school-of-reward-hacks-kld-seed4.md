@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-school-of-reward-hacks-kld-seed4` es un fine-tune del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Se distribuye bajo licencia Apache-2.0 y está orientado a generación de texto en inglés. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de ajuste fino supervisado (SFT) sobre el modelo Qwen3-8B.
+El modelo `localized-ft/Qwen3-8B-school-of-reward-hacks-kld-seed4` es un fine-tune del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Se distribuye bajo licencia Apache-2.0 y está orientado a generación de texto en inglés. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de ajuste fino supervisado (SFT) sobre el modelo Qwen3-8B.
 
 La relevancia de este modelo radica en su naturaleza experimental: el nombre sugiere que forma parte de una serie de experimentos sobre "reward hacks" (ataques o manipulaciones de la señal de recompensa en RLHF), aunque no se proporcionan detalles sobre el dataset, la metodología ni los resultados. Al ser un fine-tune de Qwen3-8B, hereda la arquitectura transformer de 8 mil millones de parámetros, pero no se especifican modificaciones adicionales.
 
@@ -19,11 +19,11 @@ Actualmente el repositorio no registra descargas ni likes, y el tamaño del repo
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (según model card) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No se proporcionan detalles específicos sobre la arquitectura del modelo fine-tune. Se sabe que parte de `unsloth/Qwen3-8B`, que es una versión optimizada del modelo Qwen3-8B de Alibaba. El entrenamiento se realizó con Unsloth (para acelerar el fine-tuning) y la librería TRL de HuggingFace, lo que sugiere un proceso de ajuste fino supervisado (SFT). No se indica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo incluye "school-of-reward-hacks" y "kld", lo que podría referirse a experimentos con divergencia KL en el contexto de reward hacking, pero no hay documentación al respecto.
+No se proporcionan detalles específicos sobre la arquitectura del modelo fine-tune. Se sabe que parte de `unsloth/Qwen3-8B`, que es una versión optimizada del modelo Qwen3-8B de Alibaba. El entrenamiento se realizó con Unsloth (para acelerar el fine-tuning) y la librería TRL de Hugging Face, lo que sugiere un proceso de ajuste fino supervisado (SFT). No se indica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo incluye "school-of-reward-hacks" y "kld", lo que podría referirse a experimentos con divergencia KL en el contexto de reward hacking, pero no hay documentación al respecto.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-kld-seed4
+- Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-kld-seed4
 - Modelo base (unsloth/Qwen3-8B): https://huggingface.co/unsloth/Qwen3-8B
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e2e-bsf-dinov3-imagenette-smoke-scalar-mse-seed100 | 232.042 (featurizer) + backbone DINOv3 ViT-B/16 aparte | no aplica | Block-sparse featurizer sobre DINOv3 | MIT (backbone con licencia aparte) | HuggingFace, 34 descargas |
+| e2e-bsf-dinov3-imagenette-smoke-scalar-mse-seed100 | 232.042 (featurizer) + backbone DINOv3 ViT-B/16 aparte | no aplica | Block-sparse featurizer sobre DINOv3 | MIT (backbone con licencia aparte) | Hugging Face, 34 descargas |
 | Block-sparse featurizer de Goodfire (referencia de código) | no disponible | no aplica | BSF sobre modelos de lenguaje | no disponible | GitHub |
 | Autoencoders dispersos end-to-end (arXiv:2405.12241) | no disponible | no aplica | SAE end-to-end | no disponible | Paper |
-| DINOv3 ViT-B/16 (backbone base) | no disponible en la información | no aplica | ViT auto-supervisado | licencia DINOv3 separada | Meta / HuggingFace |
+| DINOv3 ViT-B/16 (backbone base) | no disponible en la información | no aplica | ViT auto-supervisado | licencia DINOv3 separada | Meta / Hugging Face |
 
 La comparación numérica con alternativas no está disponible: no se han publicado métricas homogéneas frente a otros featurizers o SAE en la información proporcionada.
 
@@ -90,7 +90,7 @@ La comparación numérica con alternativas no está disponible: no se han public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-scalar-mse-seed100
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-scalar-mse-seed100
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Preregistro: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

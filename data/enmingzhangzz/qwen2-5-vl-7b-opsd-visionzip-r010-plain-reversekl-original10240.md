@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Base | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Qwen2.5-VL-7B-OPSD-VisionZip-r010-Plain-ReverseKL-original10240` | Qwen2.5-VL-7B-Instruct | Adaptador LoRA (no disponible) | No disponible | No disponible | HuggingFace (repo 0.2 GB) |
-| `Qwen/Qwen2.5-VL-7B-Instruct` | Qwen2.5-VL-7B-Instruct | 7B | No disponible | No disponible (Apache 2.0 probablemente, pero no confirmado) | HuggingFace |
-| `enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-Top10-ForwardKL-original10240` | Qwen2.5-VL-7B-Instruct | Adaptador LoRA (no disponible) | No disponible | No disponible | HuggingFace |
+| `Qwen2.5-VL-7B-OPSD-VisionZip-r010-Plain-ReverseKL-original10240` | Qwen2.5-VL-7B-Instruct | Adaptador LoRA (no disponible) | No disponible | No disponible | Hugging Face (repo 0.2 GB) |
+| `Qwen/Qwen2.5-VL-7B-Instruct` | Qwen2.5-VL-7B-Instruct | 7B | No disponible | No disponible (Apache 2.0 probablemente, pero no confirmado) | Hugging Face |
+| `enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-Top10-ForwardKL-original10240` | Qwen2.5-VL-7B-Instruct | Adaptador LoRA (no disponible) | No disponible | No disponible | Hugging Face |
 
 Se trata de un adaptador experimental. No se dispone de datos de rendimiento comparativos.
 
@@ -77,7 +77,7 @@ Se trata de un adaptador experimental. No se dispone de datos de rendimiento com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Plain-ReverseKL-original10240
+- Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Plain-ReverseKL-original10240
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Variante comparativa: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-Top10-ForwardKL-original10240
 - Variante con implementación oficial de VisionZip: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240

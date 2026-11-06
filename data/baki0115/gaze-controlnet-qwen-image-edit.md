@@ -80,8 +80,8 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas dire
 
 | Modelo | Parámetros | Contexto / entrada | Métricas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GazeCtrl (este adaptador) | 1.768 M (adaptador) | 512×512, control por vector de mirada | `gaze_err` 19,11° en train y ~56-57° en retenido | Apache-2.0 (adaptador) | HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-Edit-2509 (base) | no disponible | no disponible | no disponible | propia del modelo base | HuggingFace |
+| GazeCtrl (este adaptador) | 1.768 M (adaptador) | 512×512, control por vector de mirada | `gaze_err` 19,11° en train y ~56-57° en retenido | Apache-2.0 (adaptador) | Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-Edit-2509 (base) | no disponible | no disponible | no disponible | propia del modelo base | Hugging Face |
 | InstantX ControlNet Union (inicialización) | no disponible | no disponible | no disponible | propia de InstantX | no disponible en la información |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas dire
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baki0115/gaze-controlnet-qwen-image-edit
+- Modelo en Hugging Face: https://huggingface.co/baki0115/gaze-controlnet-qwen-image-edit
 - Repositorio de código, receta de entrenamiento y evaluación: https://github.com/VicsonPeng/GazeCtrl_training-based
 - Dataset de etiquetas de entrenamiento: https://huggingface.co/datasets/baki0115/GazeCtrl_dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2509

@@ -75,6 +75,6 @@ No disponible. Este repositorio no es comparable con modelos multimodales few-sh
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pur-nomo/few-shot-multimodal-notes
+- Repositorio en Hugging Face: https://huggingface.co/Pur-nomo/few-shot-multimodal-notes
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web disponible.
 - Los resultados de la busqueda web no guardan relacion con este repositorio y se omiten por no ser pertinentes.

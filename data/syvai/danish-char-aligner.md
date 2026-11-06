@@ -6,7 +6,7 @@ danish-char-aligner es un alineador forzado a nivel de carácter para danés, de
 
 El modelo es un estudiante destilado de 12 capas a partir de Røst (CoRal-project/roest-v3-wav2vec2-315m), un modelo wav2vec2 CTC en danés. Conserva una de cada dos capas transformer de Røst y su front-end convolucional, reduciendo los parámetros de 315M a 164M (1,9x menos) manteniendo la misma tasa de fotogramas de 20 ms. Se entrena con tres pérdidas: destilación por divergencia KL, CTC sobre la transcripción y entropía cruzada por fotograma para una cabeza de etiquetado que predice qué carácter se pronuncia en cada fotograma.
 
-Su relevancia reside en la precisión y velocidad: supera a Røst alineado por CTC en inicios de carácter dentro de 20 ms (87,1% frente a 79,9% en radio DR P1) y en finales de carácter (85,2% frente a 79,1%), y alcanza 2.670x tiempo real en una RTX 3090 con la ruta batched en fp16. Está publicado bajo licencia CC-BY-4.0 en HuggingFace con pesos en safetensors.
+Su relevancia reside en la precisión y velocidad: supera a Røst alineado por CTC en inicios de carácter dentro de 20 ms (87,1% frente a 79,9% en radio DR P1) y en finales de carácter (85,2% frente a 79,1%), y alcanza 2.670x tiempo real en una RTX 3090 con la ruta batched en fp16. Está publicado bajo licencia CC-BY-4.0 en Hugging Face con pesos en safetensors.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ La ruta batched cubre forward, alineacion y construccion de salida con audio ya 
 - VRAM estimada para inferencia: no disponible como cifra exacta; el tamano del modelo es de 0,3 GB en fp32, por lo que en fp16 ocupa ~0,33 GB de pesos, mas activaciones. El parametro `batch_seconds=600` controla el uso de memoria en la ruta batched; reducirlo si se agota la VRAM.
 - GPU recomendadas: cualquier GPU CUDA moderna; las mediciones publicadas usan una RTX 3090 (2.670x tiempo real con `align_batch` en fp16). La ruta rapida requiere Triton, incluido con PyTorch en Linux.
 - Consumer GPUs: si, cabe holgadamente en GPUs consumer (RTX 3090 usada en las mediciones); tambien funciona en CPU (AMD Ryzen 5 7600X: 23,8x tiempo real con 12 hilos).
-- Despliegue: libreria `transformers` de HuggingFace con el script `aligner.py` incluido en el repositorio (clase `Aligner`, con `align` y `align_batch`); uso por linea de comandos con `python aligner.py`. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
+- Despliegue: libreria `transformers` de Hugging Face con el script `aligner.py` incluido en el repositorio (clase `Aligner`, con `align` y `align_batch`); uso por linea de comandos con `python aligner.py`. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
 - Latencia y throughput: 14,8 h de audio en ~20 s en RTX 3090 (batched, fp16); 910-960x tiempo real clip a clip en GPU; 5,4x tiempo real en CPU con 1 hilo.
 
 ## Comparativa con modelos similares
@@ -123,6 +123,6 @@ Como alternativa generalista multiidioma de forced alignment se puede mencionar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syvai/danish-char-aligner
+- Modelo en Hugging Face: https://huggingface.co/syvai/danish-char-aligner
 - Modelo base (Røst v3): https://huggingface.co/CoRal-project/roest-v3-wav2vec2-315m
 - Dataset de entrenamiento: https://huggingface.co/datasets/syvai/danish-asr-unified

@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks comparativos con alternativas en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/vit-base-patch16-224
+- Hugging Face: https://huggingface.co/litert-community/vit-base-patch16-224
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224
 - Paper ViT: https://arxiv.org/abs/2010.11929
 - Guía de cuantización estática de TorchAO: https://docs.pytorch.org/ao/stable/eager_tutorials/static_quantization.html

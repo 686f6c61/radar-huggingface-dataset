@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GoldenEcho (este) | LoRA DreamBooth sobre Krea 2 | no disponible (repo 2,4 GB) | no aplica | Apache 2.0 | HuggingFace, 0 descargas |
-| Krea 2 RAW (`krea/Krea-2-Raw`) | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible en esta ficha | HuggingFace |
-| Krea 2 Turbo (`krea/Krea-2-Turbo`) | Modelo base destilado, 8 pasos | no disponible | no aplica | no disponible en esta ficha | HuggingFace |
+| GoldenEcho (este) | LoRA DreamBooth sobre Krea 2 | no disponible (repo 2,4 GB) | no aplica | Apache 2.0 | Hugging Face, 0 descargas |
+| Krea 2 RAW (`krea/Krea-2-Raw`) | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible en esta ficha | Hugging Face |
+| Krea 2 Turbo (`krea/Krea-2-Turbo`) | Modelo base destilado, 8 pasos | no disponible | no aplica | no disponible en esta ficha | Hugging Face |
 
 No se dispone de informacion sobre otros adaptadores LoRA comparables para Krea 2 ni sobre metricas que permitan una comparacion cuantitativa.
 
@@ -80,7 +80,7 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables para Krea 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lordfarquaad36/aros-3074b941-GoldenEcho
+- Hugging Face: https://huggingface.co/lordfarquaad36/aros-3074b941-GoldenEcho
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

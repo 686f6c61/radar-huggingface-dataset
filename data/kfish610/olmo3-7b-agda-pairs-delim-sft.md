@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kfish610/olmo3-7b-agda-pairs-delim-sft | 7B | 3.072 | no disponible | no disponible | HuggingFace (0 descargas) |
-| allenai/Olmo-3-7B-Instruct | 7B | 3.072 | MMLU ~68.4 | Apache 2.0 | HuggingFace |
-| Llama-3-8B-Instruct | 8B | 8.192 | MMLU ~68.4 | Llama 3 License | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32.768 | MMLU ~62.5 | Apache 2.0 | HuggingFace |
+| kfish610/olmo3-7b-agda-pairs-delim-sft | 7B | 3.072 | no disponible | no disponible | Hugging Face (0 descargas) |
+| allenai/Olmo-3-7B-Instruct | 7B | 3.072 | MMLU ~68.4 | Apache 2.0 | Hugging Face |
+| Llama-3-8B-Instruct | 8B | 8.192 | MMLU ~68.4 | Llama 3 License | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32.768 | MMLU ~62.5 | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en el modelo base, ya que el ajuste fino no tiene datos propios. El modelo base Olmo-3-7B-Instruct ofrece un rendimiento competitivo en tareas de instrucción y código, pero el ajuste especializado en Agda puede ser superior en tareas de dominio específico, aunque no hay evidencia pública.
 

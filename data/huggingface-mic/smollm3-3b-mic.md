@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM3-3B-mic | 35,2 M | no disponible | Fixture de test | no disponible | HuggingFace |
-| HuggingFaceTB/SmolLM3-3B | 3B (aproximado) | no disponible | Modelo causal real | no disponible en esta ficha | HuggingFace |
+| SmolLM3-3B-mic | 35,2 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM3-3B | 3B (aproximado) | no disponible | Modelo causal real | no disponible en esta ficha | Hugging Face |
 
 No se dispone de informacion sobre otros fixtures comparables de la misma organizacion ni de alternativas equivalentes para pruebas de integracion.
 
@@ -78,7 +78,7 @@ No se dispone de informacion sobre otros fixtures comparables de la misma organi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/SmolLM3-3B-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/SmolLM3-3B-mic
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Explicacion del adelgazamiento: https://huggingface-mic-mic-coverage.static.hf.space/shrink/SmolLM3-3B-mic.html
 - Repositorio transformers-mic: https://github.com/huggingface/transformers-mic

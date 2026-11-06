@@ -6,7 +6,7 @@ Zils-lite-distill-r64 es un cuerpo de modelo de decisión (decision-model body) 
 
 El modelo cuenta con 852.985.920 parámetros totales (aproximadamente 853 millones) y un repositorio de 1,7 GB en formato safetensors. No incluye capa de respuesta propia: está diseñado para ejecutarse junto con el chasis d3-lite fijado (su capa de respuesta y su runtime), lo que lo convierte en un componente especializado dentro de un pipeline de decisión más amplio, no en un modelo autónomo de generación de texto.
 
-Su relevancia es acotada: es un artefacto de destilación para un ecosistema concreto (Zils), sin descargas ni interacciones registradas en HuggingFace, licencia Apache 2.0 y sin idiomas declarados. Resulta útil para quienes trabajen dentro de la subnet Zils o quieran estudiar técnicas de destilación de probabilidades de decisión sobre modelos de ~850M parámetros.
+Su relevancia es acotada: es un artefacto de destilación para un ecosistema concreto (Zils), sin descargas ni interacciones registradas en Hugging Face, licencia Apache 2.0 y sin idiomas declarados. Resulta útil para quienes trabajen dentro de la subnet Zils o quieran estudiar técnicas de destilación de probabilidades de decisión sobre modelos de ~850M parámetros.
 
 ## Especificaciones tecnicas
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| anddyworld/zils-lite-distill-r64 | 852.985.920 | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Student destilado, requiere chasis d3-lite |
-| vllm-sr/d3-lite | no disponible | no disponible | Apache 2.0 | HuggingFace (modelo base) | Modelo base del que se destila; incluye capa de respuesta |
+| anddyworld/zils-lite-distill-r64 | 852.985.920 | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Student destilado, requiere chasis d3-lite |
+| vllm-sr/d3-lite | no disponible | no disponible | Apache 2.0 | Hugging Face (modelo base) | Modelo base del que se destila; incluye capa de respuesta |
 | Teacher de la familia d3 | no disponible (mayor que el student) | no disponible | no disponible | no disponible | Referencia de destilación citada en la model card |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los alternativas para establecer una comparación cuantitativa de rendimiento.
@@ -81,5 +81,5 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anddyworld/zils-lite-distill-r64
+- Hugging Face: https://huggingface.co/anddyworld/zils-lite-distill-r64
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite

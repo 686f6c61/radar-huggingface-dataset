@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-E2B-it-ARA-Abliterated es una modificación no oficial del modelo Gemma 4 E2B instruct de Google DeepMind, publicada por el usuario Austriani en HuggingFace. Se trata de una versión "abliterada" (decensurada) del modelo base, en la que se ha aplicado una técnica de ablación de rango arbitrario (ARA, Arbitrary-Rank Ablation) para eliminar el comportamiento de rechazo (refusal) del modelo original. El resultado es un modelo que responde a peticiones que el modelo base rechazaría, manteniendo presuntamente la mayor parte de sus capacidades originales.
+Gemma-4-E2B-it-ARA-Abliterated es una modificación no oficial del modelo Gemma 4 E2B instruct de Google DeepMind, publicada por el usuario Austriani en Hugging Face. Se trata de una versión "abliterada" (decensurada) del modelo base, en la que se ha aplicado una técnica de ablación de rango arbitrario (ARA, Arbitrary-Rank Ablation) para eliminar el comportamiento de rechazo (refusal) del modelo original. El resultado es un modelo que responde a peticiones que el modelo base rechazaría, manteniendo presuntamente la mayor parte de sus capacidades originales.
 
 El modelo base, Gemma 4 E2B, es un modelo omni-modal de la familia Gemma 4 de Google DeepMind, diseñado para despliegue en el borde (edge deployment) y en dispositivo. Según los metadatos, cuenta con 5.104.297.504 parámetros totales (5,1B) pero solo 2,3B "efectivos", lo que sugiere una arquitectura con mecanismos de eficiencia como atención híbrida y embeddings por capa. Soporta entrada de imagen, texto y audio (image-text-to-text, omni).
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-E2B-it-ARA-Abliterated | 5,1B totales / 2,3B efectivos | no disponible | Texto, imagen, audio | apache-2.0 (declarada) | HuggingFace |
-| google/gemma-4-E2B-it (base) | 5,1B totales / 2,3B efectivos | no disponible | Texto, imagen, audio | Gemma 4 License | HuggingFace |
+| Gemma-4-E2B-it-ARA-Abliterated | 5,1B totales / 2,3B efectivos | no disponible | Texto, imagen, audio | apache-2.0 (declarada) | Hugging Face |
+| google/gemma-4-E2B-it (base) | 5,1B totales / 2,3B efectivos | no disponible | Texto, imagen, audio | Gemma 4 License | Hugging Face |
 | Otras variantes abliteradas de Gemma | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de otras alternativas comparables en la información proporcionada.
@@ -81,6 +81,6 @@ No se dispone de datos de benchmarks ni de otras alternativas comparables en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Austriani/Gemma-4-E2B-it-ARA-Abliterated
+- Hugging Face: https://huggingface.co/Austriani/Gemma-4-E2B-it-ARA-Abliterated
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

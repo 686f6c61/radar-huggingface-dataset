@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Firebirth/Qwen3.5-27B-Derestricted
+- Repositorio Hugging Face: https://huggingface.co/Firebirth/Qwen3.5-27B-Derestricted
 - Repositorio de Arli AI (pesos completos): https://huggingface.co/ArliAI/Qwen3.5-27B-Derestricted
 - Blog técnico sobre Norm-Preserving Biprojected Abliteration: https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration
 - Modelo base Qwen3.5-27B: https://huggingface.co/Qwen/Qwen3.5-27B

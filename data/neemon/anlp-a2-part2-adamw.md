@@ -4,7 +4,7 @@
 
 El modelo `neemon/anlp-a2-part2-adamw` es un transformer decoder-only implementado desde cero y entrenado por el usuario neemon como parte de la asignatura Advanced NLP (IIIT-H, Monsoon 2026). No es un modelo de produccion ni un lanzamiento comercial: es un checkpoint de una practica academica cuyo objetivo es comparar el comportamiento del optimizador AdamW frente a otras alternativas sobre una arquitectura pequena y un corpus reducido. El repositorio contiene unicamente los pesos y la configuracion, no el codigo de arquitectura ni de entrenamiento, que viven en el repositorio de la asignatura.
 
-La arquitectura es un transformer solo decodificador con 8 capas, `d_model` de 512, 8 cabezas de atencion (sin GQA: `n_kv_heads` = 8), FFN denso de 2048 unidades y normalizacion RMSNorm. El vocabulario es de 32.000 tokens y la ventana de contexto es de solo 256 tokens, lo que lo sitúa en la categoria de modelos diminutos orientados a frases cortas. El pipeline declarado en HuggingFace es traduccion, con cobertura de ingles, vietnamita y japones.
+La arquitectura es un transformer solo decodificador con 8 capas, `d_model` de 512, 8 cabezas de atencion (sin GQA: `n_kv_heads` = 8), FFN denso de 2048 unidades y normalizacion RMSNorm. El vocabulario es de 32.000 tokens y la ventana de contexto es de solo 256 tokens, lo que lo sitúa en la categoria de modelos diminutos orientados a frases cortas. El pipeline declarado en Hugging Face es traduccion, con cobertura de ingles, vietnamita y japones.
 
 Su relevancia es exclusivamente didactica: sirve como referencia de bajo coste para estudiar el efecto del optimizador, la estabilidad del entrenamiento y las decisiones de arquitectura en un regimen de datos muy limitado (43 millones de tokens objetivo puntuados). Con 0 descargas, 0 likes y sin benchmarks publicados, no debe considerarse una alternativa a modelos de traduccion establecidos.
 
@@ -106,7 +106,7 @@ Frente a estas alternativas, el modelo de neemon no aporta ventaja practica algu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neemon/anlp-a2-part2-adamw
+- Modelo en Hugging Face: https://huggingface.co/neemon/anlp-a2-part2-adamw
 - Repositorio de la asignatura (Advanced NLP, IIIT-H, Monsoon 2026) con la arquitectura, el codigo de entrenamiento y la evaluacion: mencionado en la model card, pero sin URL publicada; no disponible.
 - Paper o informe tecnico asociado: no disponible.
 - Demo o space: no disponible.

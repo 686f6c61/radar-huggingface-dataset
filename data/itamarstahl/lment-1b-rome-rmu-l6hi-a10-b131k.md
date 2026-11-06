@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 
 | Modelo | Parametros | Contexto | Enfoque de borrado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `itamarstahl/lment-1b-rome-rmu-l6hi-a10-b131k` (este) | 1.336.035.328 | no disponible | RMU aplicado a posteriori sobre el control completo (capas 4-6, alpha 10) | no disponible | safetensors, HuggingFace |
-| `itamarstahl/lment-1b-norome-2e-b131k` | no disponible (mismo base OLMo2 1B) | no disponible | Exclusion del concepto durante el entrenamiento (gemelo emparejado) | no disponible | safetensors, HuggingFace |
-| `itamarstahl/lment-1b-control-2e-b131k` | no disponible (mismo base OLMo2 1B) | no disponible | Ninguno: control completo, punto de partida de la edicion RMU | no disponible | safetensors, HuggingFace |
-| OLMo2 1B (modelo base de referencia) | en torno a 1.300 millones | no disponible en la informacion proporcionada | No aplica | no disponible en la informacion proporcionada | HuggingFace |
+| `itamarstahl/lment-1b-rome-rmu-l6hi-a10-b131k` (este) | 1.336.035.328 | no disponible | RMU aplicado a posteriori sobre el control completo (capas 4-6, alpha 10) | no disponible | safetensors, Hugging Face |
+| `itamarstahl/lment-1b-norome-2e-b131k` | no disponible (mismo base OLMo2 1B) | no disponible | Exclusion del concepto durante el entrenamiento (gemelo emparejado) | no disponible | safetensors, Hugging Face |
+| `itamarstahl/lment-1b-control-2e-b131k` | no disponible (mismo base OLMo2 1B) | no disponible | Ninguno: control completo, punto de partida de la edicion RMU | no disponible | safetensors, Hugging Face |
+| OLMo2 1B (modelo base de referencia) | en torno a 1.300 millones | no disponible en la informacion proporcionada | No aplica | no disponible en la informacion proporcionada | Hugging Face |
 
 Los dos checkpoints companeros estan documentados por el mismo autor: el gemelo con exclusion de concepto y el control completo. La comparacion con otros metodos de borrado (EMBER, SNMF) se describe en el articulo, pero no se aportan en esta informacion las fichas ni las metricas de esos checkpoints.
 
@@ -84,7 +84,7 @@ Los dos checkpoints companeros estan documentados por el mismo autor: el gemelo 
 - La seleccion del checkpoint se hizo sobre un split de seleccion con regla fija antes del test reservado, lo que limita la generalizacion de los valores publicados a otros conjuntos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-rome-rmu-l6hi-a10-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-rome-rmu-l6hi-a10-b131k
 - Modelo de control completo: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusion de concepto: https://huggingface.co/itamarstahl/lment-1b-norome-2e-b131k
 - Articulo citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (no se proporciona URL en la informacion disponible).

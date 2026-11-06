@@ -78,6 +78,6 @@ No se dispone de datos comparativos publicados. El modelo es un fine-tune de `op
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ml-developers/pi05-eUiSKJr4zg3Q
+- Hugging Face: https://huggingface.co/ml-developers/pi05-eUiSKJr4zg3Q
 
 No se han encontrado enlaces adicionales en la búsqueda web.

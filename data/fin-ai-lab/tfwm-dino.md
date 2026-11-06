@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Objetivo de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | tfwm-dino (este modelo) | ~22 M | no disponible | DINO self-distillation con time warping | `derived-market-data` | Pesos publicos, codigo de carga pendiente |
-| Otros encoders TFWM (TS2Vec, TF-C y hasta 18 en total) | Misma columna vertebral (~22 M) | no disponible | Varía por encoder (por ejemplo TS2Vec usa `swa_backbone` y TF-C usa `freq_backbone`) | No disponible en la informacion proporcionada | Coleccion TFWM Pre-Trained Encoders en HuggingFace |
+| Otros encoders TFWM (TS2Vec, TF-C y hasta 18 en total) | Misma columna vertebral (~22 M) | no disponible | Varía por encoder (por ejemplo TS2Vec usa `swa_backbone` y TF-C usa `freq_backbone`) | No disponible en la informacion proporcionada | Coleccion TFWM Pre-Trained Encoders en Hugging Face |
 | LeJEPA Time Warping | no disponible | no disponible | Time warping (misma vista positiva que DINO en este trabajo) | no disponible | no disponible |
 
 Los 18 encoders de la coleccion TFWM comparten backbone y se entrenan con 12 pasadas sobre los mismos tramos de seis meses, por lo que la comparacion relevante entre ellos es la del objetivo de entrenamiento, no la de tamano o contexto.
@@ -87,7 +87,7 @@ Los 18 encoders de la coleccion TFWM comparten backbone y se entrenan con 12 pas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-dino
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-dino
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Directorio de datos usado: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth
 - Coleccion TFWM Pre-Trained Encoders: https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d

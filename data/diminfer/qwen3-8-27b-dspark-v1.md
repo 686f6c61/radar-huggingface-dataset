@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DimInfer/Qwen3.8-27B-Dspark-v1` es una publicación del usuario DimInfer en HuggingFace, con licencia Apache 2.0. La ficha del modelo no contiene información técnica más allá del frontmatter de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, contexto o capacidades. El nombre sugiere una posible relación con la familia Qwen3, pero no existe documentación que lo confirme. A fecha de creación (16 de agosto de 2026), el modelo no registra descargas ni valoraciones, lo que indica que se trata de una publicación reciente y sin uso conocido.
+El modelo `DimInfer/Qwen3.8-27B-Dspark-v1` es una publicación del usuario DimInfer en Hugging Face, con licencia Apache 2.0. La ficha del modelo no contiene información técnica más allá del frontmatter de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, contexto o capacidades. El nombre sugiere una posible relación con la familia Qwen3, pero no existe documentación que lo confirme. A fecha de creación (16 de agosto de 2026), el modelo no registra descargas ni valoraciones, lo que indica que se trata de una publicación reciente y sin uso conocido.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. Sin datos sobre parametros, contexto o rendimiento, no se puede e
 
 ## Enlaces
 
-- [HuggingFace - DimInfer/Qwen3.8-27B-Dspark-v1](https://huggingface.co/DimInfer/Qwen3.8-27B-Dspark-v1)
+- [Hugging Face - DimInfer/Qwen3.8-27B-Dspark-v1](https://huggingface.co/DimInfer/Qwen3.8-27B-Dspark-v1)

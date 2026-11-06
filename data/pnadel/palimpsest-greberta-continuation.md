@@ -99,6 +99,6 @@ La comparación directa con GreBerta es la más pertinente, ya que este modelo e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pnadel/palimpsest-greberta-continuation
+- Modelo en Hugging Face: https://huggingface.co/pnadel/palimpsest-greberta-continuation
 - Modelo base GreBerta: https://huggingface.co/bowphs/GreBerta
 - Dataset citado: https://huggingface.co/datasets/institutional/institutional-books-hl

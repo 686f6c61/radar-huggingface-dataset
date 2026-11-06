@@ -85,7 +85,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - Fisher-Wang/lingbot-vla-v2-6b-libero-goal](https://huggingface.co/Fisher-Wang/lingbot-vla-v2-6b-libero-goal)
+- [Hugging Face - Fisher-Wang/lingbot-vla-v2-6b-libero-goal](https://huggingface.co/Fisher-Wang/lingbot-vla-v2-6b-libero-goal)
 - [GitHub - Robbyant/lingbot-vla-v2](https://github.com/Robbyant/lingbot-vla-v2)
 - [Paper - From Foundation to Application: Improving VLA Models in Practice](https://arxiv.org/abs/2607.06403)
 - [GitHub - Robbyant/lingbot-vla (versión 1.0)](https://github.com/Robbyant/lingbot-vla)

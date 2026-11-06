@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AGRPO-Qwen3.5-9B-step36 es un ajuste fino del modelo Qwen/Qwen3.5-9B publicado por el usuario C1oudX en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text entrenado mediante GRPO agéntico multi-turno (Agentic GRPO) sobre la tarea OptiBench, orientado a la generación de código y al uso de herramientas en entornos de optimización. El checkpoint exportado corresponde al paso 36 de entrenamiento, tras tres épocas sobre el conjunto train400.
+AGRPO-Qwen3.5-9B-step36 es un ajuste fino del modelo Qwen/Qwen3.5-9B publicado por el usuario C1oudX en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text entrenado mediante GRPO agéntico multi-turno (Agentic GRPO) sobre la tarea OptiBench, orientado a la generación de código y al uso de herramientas en entornos de optimización. El checkpoint exportado corresponde al paso 36 de entrenamiento, tras tres épocas sobre el conjunto train400.
 
 La relevancia del modelo reside en su enfoque de entrenamiento: en lugar de un ajuste supervisado clásico, emplea aprendizaje por refuerzo con retroalimentación de ejecución multi-turno, ventajas de grupo GRPO, recorte PPO y regularización KL y de entropía. El resultado reportado por el autor es una mejora sustancial en precisión de tareas de optimización (del 55,78 % al 68,99 % en micro precisión sobre 1393 tareas), lo que lo convierte en un candidato para pipelines de agentes que resuelven problemas de optimización con llamadas a herramientas.
 
@@ -70,8 +70,8 @@ El autor señala que, entre 14 tareas OPT-Bench ML conjuntamente válidas, step3
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AGRPO-Qwen3.5-9B-step36 | 9,41 B | no disponible | RL agéntico (GRPO) sobre Qwen3.5-9B | Apache-2.0 | HuggingFace (25 descargas) |
-| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible | Modelo base multimodal | Apache-2.0 | HuggingFace |
+| AGRPO-Qwen3.5-9B-step36 | 9,41 B | no disponible | RL agéntico (GRPO) sobre Qwen3.5-9B | Apache-2.0 | Hugging Face (25 descargas) |
+| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible | Modelo base multimodal | Apache-2.0 | Hugging Face |
 | Alternativas de 9B con tool use | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparables con otros modelos de la misma categoría en la información proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/C1oudX/AGRPO-Qwen3.5-9B-step36
+- Hugging Face: https://huggingface.co/C1oudX/AGRPO-Qwen3.5-9B-step36
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/LICENSE
 - Resultados de evaluación por tarea: evaluation_results.json (en el repositorio del modelo)

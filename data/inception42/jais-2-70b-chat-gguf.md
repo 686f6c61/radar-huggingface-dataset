@@ -4,7 +4,7 @@
 
 Jais-2-70B-Chat es un modelo de lenguaje de gran tamaño desarrollado por Inception AI (inceptionai), especializado en procesamiento de árabe e inglés. Está entrenado desde cero con un vocabulario árabe personalizado que captura el árabe moderno estándar, dialectos regionales y la mezcla árabe-inglés (code-switching). Esta versión GGUF, publicada por el usuario inception42, es una cuantización del modelo original pensada para ejecución local con llama.cpp y herramientas compatibles.
 
-El modelo cuenta con 72.039.704.576 parámetros (aproximadamente 70B), lo que lo sitúa en la gama alta de modelos de lenguaje. Su relevancia radica en ser una de las pocas opciones open source de gran tamaño con un enfoque explícito en árabe, lo que lo hace útil para aplicaciones empresariales y gubernamentales en países de habla árabe. El acceso al repositorio es restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo cuenta con 72.039.704.576 parámetros (aproximadamente 70B), lo que lo sitúa en la gama alta de modelos de lenguaje. Su relevancia radica en ser una de las pocas opciones open source de gran tamaño con un enfoque explícito en árabe, lo que lo hace útil para aplicaciones empresariales y gubernamentales en países de habla árabe. El acceso al repositorio es restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio es restringido (gated); es necesario aceptar las condiciones de uso en HuggingFace antes de descargar los pesos.
+- El acceso al repositorio es restringido (gated); es necesario aceptar las condiciones de uso en Hugging Face antes de descargar los pesos.
 - No se han publicado detalles sobre sesgos o riesgos especificos del modelo; al estar entrenado principalmente en arabe e ingles, puede reflejar sesgos culturales de esas regiones.
 - Riesgo de alucinacion inherente a los modelos de lenguaje; se recomienda validar las respuestas en aplicaciones criticas.
 - La longitud de contexto no esta documentada, lo que puede limitar su uso en tareas que requieran ventanas largas.

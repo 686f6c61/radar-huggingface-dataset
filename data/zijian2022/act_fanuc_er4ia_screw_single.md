@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zijian2022/act_fanuc_er4ia_screw_single` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales. Lo publica el usuario de HuggingFace zijian2022, que ha subido otros artefactos relacionados con ACT y con tareas de manipulación (por ejemplo `uni_pouring_object_act`), lo que apunta a un flujo de trabajo de entrenamiento de políticas para brazos robóticos reales.
+El modelo `zijian2022/act_fanuc_er4ia_screw_single` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales. Lo publica el usuario de Hugging Face zijian2022, que ha subido otros artefactos relacionados con ACT y con tareas de manipulación (por ejemplo `uni_pouring_object_act`), lo que apunta a un flujo de trabajo de entrenamiento de políticas para brazos robóticos reales.
 
 La tarea concreta es el atornillado (screw) sobre un robot FANUC ER-4iA, un brazo compacto de 6 ejes con 4 kg de carga útil y 550 mm de alcance, controlado por un R-30iB Mate Plus. El modelo tiene 51.670.663 parámetros reales según los pesos en safetensors, con un repositorio de 0,2 GB, lo que lo sitúa en la categoría de políticas ligeras que pueden ejecutarse en tiempo real en una GPU de gama media.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zijian2022/act_fanuc_er4ia_screw_single | 51.670.663 | No disponible | No disponible | No disponible | HuggingFace, safetensors |
-| zijian2022/uni_pouring_object_act | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| zijian2022/act_fanuc_er4ia_screw_single | 51.670.663 | No disponible | No disponible | No disponible | Hugging Face, safetensors |
+| zijian2022/uni_pouring_object_act | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | ACT original (ALOHA) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible | Repositorio publico del paper |
 | Diffusion Policy | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible | Repositorio publico del paper |
 
@@ -83,11 +83,11 @@ No hay datos de rendimiento, licencia ni especificaciones completas de las alter
 - Licencia no disponible: sin una licencia explicita, no se puede asumir permiso para uso comercial. Conviene contactar con el autor antes de integrarlo en produccion.
 - Repositorio con muy poca traccion (24 descargas, 0 likes) y sin model card detallada, lo que implica ausencia de soporte y de validacion independiente.
 - Para uso industrial real harian falta evaluaciones de seguridad funcional del robot y del controlador, independientes del modelo.
-- La fecha de creacion del repositorio que reporta HuggingFace es 2026-10-08, posterior a la fecha habitual de consulta; conviene verificar la vigencia de los artefactos.
+- La fecha de creacion del repositorio que reporta Hugging Face es 2026-10-08, posterior a la fecha habitual de consulta; conviene verificar la vigencia de los artefactos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zijian2022/act_fanuc_er4ia_screw_single
+- Modelo en Hugging Face: https://huggingface.co/zijian2022/act_fanuc_er4ia_screw_single
 - Dataset relacionado: https://huggingface.co/datasets/zijian2022/testscrew1
 - Modelo relacionado del mismo autor: https://huggingface.co/zijian2022/uni_pouring_object_act
 - Perfil del autor: https://huggingface.co/zijian2022/datasets

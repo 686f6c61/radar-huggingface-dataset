@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, GSM8K, 
 
 | Modelo | Parametros | Contexto | Licencia | AdvBench ASR | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (svd-safety, ronda 6/10) | 6.738.415.616 tensores; fraccion densa declarada 0,5999 | 4.096 (heredado) | Llama 2 Community License | 0,0250 | Publico en HuggingFace, 0 descargas |
+| Este checkpoint (svd-safety, ronda 6/10) | 6.738.415.616 tensores; fraccion densa declarada 0,5999 | 4.096 (heredado) | Llama 2 Community License | 0,0250 | Publico en Hugging Face, 0 descargas |
 | meta-llama/Llama-2-7b-chat-hf | ~6,74 B (modelo base) | 4.096 | Llama 2 Community License | no disponible en la informacion proporcionada | Publico con acceso condicionado |
 | meta-llama/Llama-2-13b-chat-hf | ~13 B | 4.096 | Llama 2 Community License | no disponible en la informacion proporcionada | Publico con acceso condicionado |
 | Mistral-7B-Instruct-v0.2 (alternativa de tamano similar con licencia permisiva) | ~7,2 B | 32.768 | Apache 2.0 | no disponible en la informacion proporcionada | Publico |
@@ -96,7 +96,7 @@ La comparacion de rendimiento entre estas opciones no puede cerrarse con los dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y politica de uso: archivos `LICENSE.txt` y `USE_POLICY.md` incluidos en el propio repositorio del modelo
 - Referencia a Basis Sharing (ICLR 2025): citada en la model card sin enlace asociado; no disponible

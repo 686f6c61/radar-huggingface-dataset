@@ -74,7 +74,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-moss-ai36-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-moss-ai36-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2116329830286426113
 - Página del autor: https://www.runninghub.ai/user-center/2027638706101559298
 - RunningHub International: https://www.runninghub.ai

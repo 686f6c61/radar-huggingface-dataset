@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Luni/Nanbeige-4.3-33B-Heretic-EXL3
+- Repositorio Hugging Face: https://huggingface.co/Luni/Nanbeige-4.3-33B-Heretic-EXL3
 - Modelo base Heretic (BF16): https://huggingface.co/Luni/Nanbeige-4.3-33B-Heretic
 - Modelo original Nanbeige4.3-33B: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Cuantizacion EXL3 del modelo original: https://huggingface.co/Luni/Nanbeige-4.3-33B-EXL3

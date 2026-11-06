@@ -80,6 +80,6 @@ Nota: los datos de NLLB-200 no estan disponibles en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Teradata/opus-tatoeba-en-ja
+- Repositorio Hugging Face: https://huggingface.co/Teradata/opus-tatoeba-en-ja
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-tatoeba-en-ja
 - Ficha del modelo en BimAnt AI Model Zoo: https://zoo.bimant.com/model/4257

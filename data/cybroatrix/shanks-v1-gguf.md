@@ -85,7 +85,7 @@ La comparación con Qwen2.5-Coder-7B-Instruct es la más directa: mismo tamaño 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CybroatriX/Shanks-v1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/CybroatriX/Shanks-v1-GGUF
 - Modelo base: https://huggingface.co/thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored
 - Familia original Qwen2.5-Coder: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio de Ollama (runtime recomendado): https://github.com/ollama/ollama

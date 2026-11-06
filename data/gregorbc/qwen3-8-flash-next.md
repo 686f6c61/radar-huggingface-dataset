@@ -73,7 +73,7 @@ Este dato proviene de la web HokAI, que lo atribuye al modelo. No se dispone de 
 
 | Modelo | Parámetros totales | Activos por token | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next | ~180B (125B + 51B emb + 4B MTP) | 6B | 262K (ext. 1M) | qwen-community-1.0 | Abierta (HuggingFace) |
+| Qwen3.8-Flash-Next | ~180B (125B + 51B emb + 4B MTP) | 6B | 262K (ext. 1M) | qwen-community-1.0 | Abierta (Hugging Face) |
 | Qwen3.7-Plus | no disponible | no disponible | no disponible | no disponible | API propietaria |
 | Qwen3.8-27B | 27B (estimado) | no disponible | no disponible | no disponible | Abierta (según AI Release Tracker) |
 
@@ -91,7 +91,7 @@ Los datos de Qwen3.7-Plus y Qwen3.8-27B no están disponibles en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gregorbc/Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/gregorbc/Qwen3.8-Flash-Next
 - Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Blog de Qwen sobre Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next

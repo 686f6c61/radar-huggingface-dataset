@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo `goldfish-models/ind_latn_10mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generación de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parámetros (aproximadamente 39 millones), entrenado mediante aprendizaje supervisado (SFT) con la librería TRL. El repositorio ocupa unos 0,1 GB y los pesos se distribuyen en formato safetensors.
+`francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo `goldfish-models/ind_latn_10mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generación de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parámetros (aproximadamente 39 millones), entrenado mediante aprendizaje supervisado (SFT) con la librería TRL. El repositorio ocupa unos 0,1 GB y los pesos se distribuyen en formato safetensors.
 
 El interés del modelo es puramente experimental: forma parte de una familia de modelos monolingües de muy bajo coste computacional, orientados a lenguas con pocos recursos. El identificador sugiere que el modelo base fue entrenado con un corpus de 10 MB en indonesio con escritura latina (`ind_latn_10mb`), y que este ajuste añade una configuración concreta (los sufijos `ppt`, `Dp-10mb`, `packed`, `bfd` y `seed3407` apuntan a un experimento con semilla fija, pero no se documenta su significado en la model card).
 
@@ -12,7 +12,7 @@ El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y su model c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (según el tag `gpt2` de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (según el tag `gpt2` de Hugging Face) |
 | Parametros totales | 39.087.104 (≈39 M), dato real de safetensors |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la model card no la especifica) |
@@ -48,7 +48,7 @@ El entrenamiento se realizó con SFT (supervised fine-tuning) usando TRL 0.23.0,
 - Prototipado rápido de aplicaciones de autocompletado o generación de texto corto en indonesio, siempre que se asuma la baja calidad esperable de un modelo de este tamaño y corpus.
 - Docencia y formación: sirve para ilustrar de forma barata y rápida el ciclo completo de TRL (carga del modelo base, SFT, publicación en el Hub, registro en Weights & Biases) sin necesidad de GPU de gama alta.
 - Generación de datos sintéticos de bajo coste para experimentos internos de aumentación de corpus, con revisión humana obligatoria debido al alto riesgo de alucinación.
-- Pruebas unitarias y de integración en código que consume modelos de HuggingFace, usando este repositorio como modelo ligero de sustitución (mock) con pesos reales.
+- Pruebas unitarias y de integración en código que consume modelos de Hugging Face, usando este repositorio como modelo ligero de sustitución (mock) con pesos reales.
 
 ## Benchmarks y rendimiento
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/ind_latn_10mb (modelo base) | ≈39 M (el fine-tuning no altera el número de parámetros) | no disponible | no disponible | HuggingFace |
+| ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/ind_latn_10mb (modelo base) | ≈39 M (el fine-tuning no altera el número de parámetros) | no disponible | no disponible | Hugging Face |
 | GPT-2 small | 124 M | 1024 tokens (dato público estándar del modelo original) | MIT (versión original de OpenAI) | Ampliamente disponible |
-| distilgpt2 | 82 M | 1024 tokens (dato público estándar del modelo original) | Apache 2.0 (versión de HuggingFace) | Ampliamente disponible |
+| distilgpt2 | 82 M | 1024 tokens (dato público estándar del modelo original) | Apache 2.0 (versión de Hugging Face) | Ampliamente disponible |
 
 No se dispone de comparaciones de rendimiento entre estos modelos en la información proporcionada. La comparación se limita a tamaño, contexto y licencia.
 
@@ -87,7 +87,7 @@ No se dispone de comparaciones de rendimiento entre estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_10mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/kgiea45b
 - Repositorio de TRL: https://github.com/huggingface/trl

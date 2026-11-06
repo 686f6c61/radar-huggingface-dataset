@@ -26,7 +26,7 @@ La relevancia de esta ficha es fundamentalmente práctica: permite ejecutar en h
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura interna del modelo: ni el README de esta cuantizacion ni los metadatos de HuggingFace describen tipo de atencion, capas, uso de MoE o de modelos de espacio de estados. Tampoco se detalla el proceso de entrenamiento del modelo base OS-Software/Muse-Glimmer-30B-Uncensored-Heretic: se desconoce el volumen de tokens, la composicion del dataset y si hubo fases de RLHF, DPO u otra forma de ajuste por preferencias. Lo unico deducible a partir de las etiquetas es que el modelo base ha pasado por un proceso de "abliteration" (ablacion de direcciones de rechazo en el espacio de activaciones o de pesos) que da lugar a las variantes etiquetadas como "heretic" y "decensored".
+No hay informacion disponible sobre la arquitectura interna del modelo: ni el README de esta cuantizacion ni los metadatos de Hugging Face describen tipo de atencion, capas, uso de MoE o de modelos de espacio de estados. Tampoco se detalla el proceso de entrenamiento del modelo base OS-Software/Muse-Glimmer-30B-Uncensored-Heretic: se desconoce el volumen de tokens, la composicion del dataset y si hubo fases de RLHF, DPO u otra forma de ajuste por preferencias. Lo unico deducible a partir de las etiquetas es que el modelo base ha pasado por un proceso de "abliteration" (ablacion de direcciones de rechazo en el espacio de activaciones o de pesos) que da lugar a las variantes etiquetadas como "heretic" y "decensored".
 
 La aportacion tecnica de este repositorio concreto es la cuantizacion con matriz de importancia. mradermacher genera los ficheros i1 calculando previamente una imatrix sobre un corpus de calibracion, de modo que los pesos con mayor impacto en la perplejidad reciben mas bits y los menos relevantes se comprimen mas. El autor mantiene ademas un repositorio paralelo con cuantizaciones estaticas (sin imatrix) y advierte de que, si el modelo base es multimodal, los ficheros mmproj necesarios para la parte de vision se encontraran en ese repositorio estatico y no en este. En la tabla de ficheros publicada solo aparecen el imatrix y la cuantizacion i1-Q2_K, por lo que no puede confirmarse que el resto de tipos listados en las etiquetas esten ya subidos con sus tamanos definitivos.
 
@@ -55,7 +55,7 @@ La aportacion tecnica de este repositorio concreto es la cuantizacion con matriz
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de la cuantizacion ni los metadatos de HuggingFace incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion. Tampoco se han publicado mediciones de perplejidad de las cuantizaciones i1 frente a los pesos originales; el autor incluye referencias genericas a graficas comparativas de tipos de cuantizacion de terceros (ikawrakow y Artefact2), pero no resultados propios para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de la cuantizacion ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion. Tampoco se han publicado mediciones de perplejidad de las cuantizaciones i1 frente a los pesos originales; el autor incluye referencias genericas a graficas comparativas de tipos de cuantizacion de terceros (ikawrakow y Artefact2), pero no resultados propios para este modelo.
 
 ## Requisitos de hardware
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver-matching-ablation40 es un repositorio publicado por el usuario Yichenhuf en HuggingFace que contiene una implementacion reducida de una arquitectura Perceiver orientada a tareas de *matching* (emparejamiento o comparacion de representaciones). No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un modelo con benchmarks publicados.
+Perceiver-matching-ablation40 es un repositorio publicado por el usuario Yichenhuf en Hugging Face que contiene una implementacion reducida de una arquitectura Perceiver orientada a tareas de *matching* (emparejamiento o comparacion de representaciones). No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un modelo con benchmarks publicados.
 
 El peso real declarado en safetensors es de 33.088 parametros, un orden de magnitud propio de una prueba de concepto o de un artefacto de ablation, no de un modelo de proposito general. El repositorio incluye el codigo (`model.py`), la configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y el propio README. El tamano del repositorio es de 0,0 GB.
 
@@ -76,5 +76,5 @@ No disponible. El repositorio no constituye un modelo entrenado y no se han prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yichenhuf/perceiver-matching-ablation40
+- Hugging Face: https://huggingface.co/Yichenhuf/perceiver-matching-ablation40
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda disponibles.

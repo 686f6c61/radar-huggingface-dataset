@@ -82,8 +82,8 @@ La búsqueda web realizada no devolvió resultados relevantes sobre este modelo 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AEmotionStudio/auk-models` (este repo) | 1,5305B (DiT) + VAE | No disponible | Sin benchmarks; bf16 a 1,59 dB de fp32 y 2-3× más rápido | MIT en los pesos, pero el encoder requerido es no comercial | HuggingFace, con descarga del encoder aparte |
-| `tencent/AuK` (upstream) | 1,5305B (DiT) + VAE | No disponible | Idéntico (los ficheros son byte-idénticos) | MIT en los pesos, misma dependencia de encoder | HuggingFace |
+| `AEmotionStudio/auk-models` (este repo) | 1,5305B (DiT) + VAE | No disponible | Sin benchmarks; bf16 a 1,59 dB de fp32 y 2-3× más rápido | MIT en los pesos, pero el encoder requerido es no comercial | Hugging Face, con descarga del encoder aparte |
+| `tencent/AuK` (upstream) | 1,5305B (DiT) + VAE | No disponible | Idéntico (los ficheros son byte-idénticos) | MIT en los pesos, misma dependencia de encoder | Hugging Face |
 | Alternativas TTS de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -102,10 +102,10 @@ La búsqueda web realizada no devolvió resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AEmotionStudio/auk-models
-- Upstream en HuggingFace: https://huggingface.co/tencent/AuK
+- Repositorio en Hugging Face: https://huggingface.co/AEmotionStudio/auk-models
+- Upstream en Hugging Face: https://huggingface.co/tencent/AuK
 - Código upstream: https://github.com/Tencent-Hunyuan/AuK
 - Paper: https://arxiv.org/abs/2609.08936
 - Encoder requerido: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 
-Nota: la búsqueda web realizada no devolvió ningún enlace relevante sobre el modelo; los únicos enlaces utilizables son los presentes en la model card y los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió ningún enlace relevante sobre el modelo; los únicos enlaces utilizables son los presentes en la model card y los metadatos de Hugging Face.

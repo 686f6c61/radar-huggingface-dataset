@@ -97,8 +97,8 @@ Comparativa con alternativas de tamano similar orientadas a inferencia local en 
 
 | Modelo | Parametros | Contexto | Cuantizacion minima viable 16 GB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-RVN-Uncensored-Heretic-Abliterated-RCO-GGUF | 33,1B | 16K medida (nativa no disponible) | RCO 2,60 bpw (11,6 GB) | Apache 2.0 | GGUF y BF16 en HuggingFace |
-| Nanbeige4.3-33B (original) | 33,1B | no disponible | requiere cuantizaciones de terceros | no disponible | safetensors en HuggingFace |
+| Nanbeige4.3-33B-RVN-Uncensored-Heretic-Abliterated-RCO-GGUF | 33,1B | 16K medida (nativa no disponible) | RCO 2,60 bpw (11,6 GB) | Apache 2.0 | GGUF y BF16 en Hugging Face |
+| Nanbeige4.3-33B (original) | 33,1B | no disponible | requiere cuantizaciones de terceros | no disponible | safetensors en Hugging Face |
 | Qwen2.5-32B-Instruct | 32,5B | 128K | Q3_K_M aprox. (no dato oficial) | Apache 2.0 (Instruct) | safetensors y GGUF comunitarios |
 | Qwen3-32B | 32,8B | 128K nativa | Q3_K_M aprox. (no dato oficial) | Apache 2.0 | safetensors y GGUF comunitarios |
 

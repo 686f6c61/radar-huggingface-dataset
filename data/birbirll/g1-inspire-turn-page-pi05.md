@@ -100,7 +100,7 @@ Los tres checkpoints se entrenaron sobre el mismo dataset y comparten el contrat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/birbirll/g1-inspire-turn-page-pi05
+- Modelo en Hugging Face: https://huggingface.co/birbirll/g1-inspire-turn-page-pi05
 - Dataset de entrenamiento: https://huggingface.co/datasets/birbirll/g1-inspire-turn-page-v21
 - Checkpoint hermano con Isaac-GR00T N1.6: https://huggingface.co/birbirll/g1-inspire-turn-page-n16
 - Checkpoint hermano con starVLA GR00T-N1.7: https://huggingface.co/birbirll/g1-inspire-turn-page-starvla-n1d7

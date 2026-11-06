@@ -77,10 +77,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Coder-Next-RedLite-CF2 (esta ficha) | ~80B totales, ~3B activos | 256K (32K en pruebas) | GGUF, 19,32 GB | Apache-2.0 | HuggingFace, 0 descargas |
-| Bartowski IQ2_XXS de Qwen3-Coder-Next | ~80B totales, ~3B activos | 256K | GGUF, 19,30 GB | Apache-2.0 | HuggingFace |
+| Qwen3-Coder-Next-RedLite-CF2 (esta ficha) | ~80B totales, ~3B activos | 256K (32K en pruebas) | GGUF, 19,32 GB | Apache-2.0 | Hugging Face, 0 descargas |
+| Bartowski IQ2_XXS de Qwen3-Coder-Next | ~80B totales, ~3B activos | 256K | GGUF, 19,30 GB | Apache-2.0 | Hugging Face |
 | CE3 (variante intermedia del autor) | ~80B totales, ~3B activos | 256K | GGUF, 19,30 GB | Apache-2.0 | Referenciada en la model card |
-| Qwen3-Next-80B-A3B-Instruct-RedLite | ~80B totales, ~3B activos | 256K | GGUF | Apache-2.0 | HuggingFace |
+| Qwen3-Next-80B-A3B-Instruct-RedLite | ~80B totales, ~3B activos | 256K | GGUF | Apache-2.0 | Hugging Face |
 
 La comparacion se limita a variantes de cuantizacion del mismo modelo base, porque la informacion proporcionada no incluye datos de rendimiento frente a otros modelos de codigo. No disponible comparativa con alternativas de otros fabricantes.
 
@@ -100,7 +100,7 @@ La comparacion se limita a variantes de cuantizacion del mismo modelo base, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfodaniello/Qwen3-Coder-Next-RedLite-GGUF
+- Modelo en Hugging Face: https://huggingface.co/alfodaniello/Qwen3-Coder-Next-RedLite-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Variante RedLite del modelo instruct: https://huggingface.co/alfodaniello/Qwen3-Next-80B-A3B-Instruct-RedLite-GGUF
 - Runtime DwarfStar Red Lite: https://github.com/alfofire2/dwarfstar-red-lite

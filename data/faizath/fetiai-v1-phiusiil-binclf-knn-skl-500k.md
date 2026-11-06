@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/faizath/fetiai-v1-phiusiil-binclf-knn-skl-500k)
+- [Hugging Face - modelo](https://huggingface.co/faizath/fetiai-v1-phiusiil-binclf-knn-skl-500k)
 - [GitHub - repositorio del modelo](https://github.com/fetiai/fetiai-v1-phiusiil-binclf-knn-skl-500k)
 - [Aplicación completa (repositorio)](https://github.com/fetiai/phishing-url-classifier)
 - [Demo en vivo](https://phiusiil.faizath.com)

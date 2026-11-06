@@ -5,7 +5,7 @@
   "author": "joey00072",
   "url": "https://huggingface.co/joey00072/ohara-d28-a1b-stage1",
   "created_at": "2026-11-04T21:12:46.000Z",
-  "updated_at": "2026-11-05T04:41:30.000Z",
+  "updated_at": "2026-11-05T15:09:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 23846942486,
   "parameters_human": "23.85B",
-  "storage_bytes": 143093320242,
-  "storage_human": "143.1 GB",
+  "storage_bytes": 213188174762,
+  "storage_human": "213.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

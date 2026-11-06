@@ -102,7 +102,7 @@ La comparación cuantitativa disponible se limita a la rejilla de empujes: 5/32 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nocrab/microduck-flamingo
+- Modelo en Hugging Face: https://huggingface.co/nocrab/microduck-flamingo
 - Vídeo de vista previa: https://huggingface.co/nocrab/microduck-flamingo/resolve/main/media/preview.mp4
 - Modelo de referencia (Rémi Fabre): https://huggingface.co/RemiFabre/microduck-flamingo-cycle
 - Repositorio `microduck_rl`: https://github.com/pollen-robotics/microduck_rl

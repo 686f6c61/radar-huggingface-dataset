@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "heimy/hengshu",
+  "slug": "heimy-hengshu",
+  "author": "heimy",
+  "url": "https://huggingface.co/heimy/hengshu",
+  "created_at": "2026-11-03T03:59:29.000Z",
+  "updated_at": "2026-11-04T15:41:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "hengshu",
+    "multimodal",
+    "metric-learning",
+    "power-systems",
+    "synthetic-data",
+    "research",
+    "zh",
+    "en",
+    "arxiv:2001.06782",
+    "arxiv:1806.01768",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91939348,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Anime Production Platform - hengshu.ai",
+      "url": "https://hengshu.ai/en",
+      "snippet": "Create professional anime content with cutting-edge AI technology"
+    }
+  ]
+}

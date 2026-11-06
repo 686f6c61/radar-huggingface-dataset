@@ -75,7 +75,7 @@ El intervalo incluye cero, por lo que la comparación direccional entre la varia
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed101 | 9.599.498 | no aplica | SAE de bloques sobre DINOv3 para Imagenette | MIT (backbone aparte) | HuggingFace |
+| e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed101 | 9.599.498 | no aplica | SAE de bloques sobre DINOv3 para Imagenette | MIT (backbone aparte) | Hugging Face |
 | SAE ReLU convencional sobre DINOv3 | no disponible | no aplica | Reconstrucción de activaciones | variable | no disponible |
 | Block-sparse featurizer de Goodfire | no disponible | no aplica | Interpretabilidad de modelos de lenguaje | no disponible | GitHub (goodfire-ai/block-sparse-featurizer) |
 
@@ -94,7 +94,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed101
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed101
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Preregistro del estudio: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

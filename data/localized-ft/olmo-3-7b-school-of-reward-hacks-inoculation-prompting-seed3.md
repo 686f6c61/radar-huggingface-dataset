@@ -17,7 +17,7 @@ La model card es mínima: no incluye detalles de entrenamiento, datasets ni benc
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible (no se publica en la model card) |
 | Tipos de cuantizacion | No se publican cuantizaciones propias; el modelo base es compatible con cuantizacion estandar (por ejemplo, bitsandbytes o GGUF) |
-| Idiomas soportados | Ingles (segun la etiqueta `en` de HuggingFace) |
+| Idiomas soportados | Ingles (segun la etiqueta `en` de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (compatible con transformers y TGI) |
 
@@ -25,7 +25,7 @@ La model card es mínima: no incluye detalles de entrenamiento, datasets ni benc
 
 El modelo es un fine-tuning del modelo instructivo `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 desarrollada por el Allen Institute for AI (AI2). OLMo es una serie de modelos de lenguaje abiertos con arquitectura transformer decoder-only, disenada para reproducibilidad total (datos y entrenamiento publicos). La variante instructiva de 7B se ajusta con tecnicas de supervision y refuerzo, aunque los detalles concretos de la arquitectura y el entrenamiento del modelo base no se incluyen en la model card.
 
-El ajuste fino de esta variante especifica se realizo con la libreria Unsloth (que acelera el entrenamiento) y la biblioteca TRL de HuggingFace, tal como indica la model card. El nombre del modelo sugiere que el entrenamiento consistio en presentar al modelo ejemplos de «reward hacks» (comportamientos que maximizan la recompensa sin cumplir el objetivo real) junto con un prompting de inoculacion, probablemente mediante un dataset de ejemplos adversarios. No se especifican el numero de tokens de entrenamiento, el dataset exacto ni el metodo de alineacion (RLHF, DPO, etc.) en la informacion disponible.
+El ajuste fino de esta variante especifica se realizo con la libreria Unsloth (que acelera el entrenamiento) y la biblioteca TRL de Hugging Face, tal como indica la model card. El nombre del modelo sugiere que el entrenamiento consistio en presentar al modelo ejemplos de «reward hacks» (comportamientos que maximizan la recompensa sin cumplir el objetivo real) junto con un prompting de inoculacion, probablemente mediante un dataset de ejemplos adversarios. No se especifican el numero de tokens de entrenamiento, el dataset exacto ni el metodo de alineacion (RLHF, DPO, etc.) en la informacion disponible.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ La comparacion se limita a las variantes del mismo proyecto, ya que no hay datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed3
 - Variante seed2: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed2
 - Variante original (longtermrisk): https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting
 - Repositorio del proyecto (UKGovernmentBEIS/reward-hacking-misalignment): https://github.com/UKGovernmentBEIS/reward-hacking-misalignment

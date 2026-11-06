@@ -4,7 +4,7 @@
 
 SAM3 es la tercera iteración de la familia Segment Anything Model (SAM) desarrollada por Meta (Facebook). Se trata de un modelo de generación de máscaras de segmentación diseñado para trabajar tanto con imágenes como con vídeo, como indican las etiquetas `sam3_video` y `mask-generation`. El modelo resuelve el problema de segmentación de objetos de forma generalista, sin necesidad de entrenamiento específico por dominio, lo que lo convierte en una herramienta clave para tareas de visión por computador que requieren aislar objetos en escenas complejas.
 
-La relevancia actual de SAM3 radica en su extensión al dominio de vídeo, una capacidad que sus predecesores (SAM y SAM2) ya exploraron parcialmente, pero que aquí se consolida con un enfoque específico. Aunque la información técnica detallada no está disponible en la ficha pública, el modelo cuenta con más de 2,2 millones de descargas y 2.645 likes en HuggingFace, lo que indica una adopción significativa por parte de la comunidad. La arquitectura exacta, el número de parámetros y la longitud de contexto no se han publicado en la información proporcionada.
+La relevancia actual de SAM3 radica en su extensión al dominio de vídeo, una capacidad que sus predecesores (SAM y SAM2) ya exploraron parcialmente, pero que aquí se consolida con un enfoque específico. Aunque la información técnica detallada no está disponible en la ficha pública, el modelo cuenta con más de 2,2 millones de descargas y 2.645 likes en Hugging Face, lo que indica una adopción significativa por parte de la comunidad. La arquitectura exacta, el número de parámetros y la longitud de contexto no se han publicado en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ La única pista técnica proviene de las etiquetas: `sam3_video` sugiere que el 
 
 - Generación de máscaras de segmentación para imágenes y vídeo, según las etiquetas `mask-generation` y `sam3_video`.
 - Extracción de características visuales, indicada por la etiqueta `feature-extraction`.
-- Compatible con el pipeline de HuggingFace `mask-generation`, lo que permite su uso directo con la infraestructura estándar de la plataforma.
+- Compatible con el pipeline de Hugging Face `mask-generation`, lo que permite su uso directo con la infraestructura estándar de la plataforma.
 - No se han documentado capacidades adicionales como tool calling, razonamiento multimodal o soporte de agentes, ya que el modelo está orientado exclusivamente a visión.
 
 ## Casos de uso
@@ -47,15 +47,15 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware en la ficha pública. Dado que el modelo se distribuye en formato safetensors y es compatible con el pipeline de HuggingFace, es probable que pueda ejecutarse en GPUs estándar de consumo (como RTX 3090 o RTX 4090) si el tamaño es similar al de SAM2, pero esto no se puede confirmar sin datos oficiales. No se han documentado opciones de despliegue específicas como vLLM, llama.cpp u Ollama, ya que el modelo no es de tipo generativo de texto.
+No se dispone de información sobre requisitos de hardware en la ficha pública. Dado que el modelo se distribuye en formato safetensors y es compatible con el pipeline de Hugging Face, es probable que pueda ejecutarse en GPUs estándar de consumo (como RTX 3090 o RTX 4090) si el tamaño es similar al de SAM2, pero esto no se puede confirmar sin datos oficiales. No se han documentado opciones de despliegue específicas como vLLM, llama.cpp u Ollama, ya que el modelo no es de tipo generativo de texto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SAM3 (facebook/sam3) | no disponible | no disponible | other | HuggingFace |
-| SAM (facebook/sam-vit-huge) | 636M | no aplica | Apache 2.0 | HuggingFace |
-| SAM2 (facebook/sam2-hiera-large) | 224M | no aplica | Apache 2.0 | HuggingFace |
+| SAM3 (facebook/sam3) | no disponible | no disponible | other | Hugging Face |
+| SAM (facebook/sam-vit-huge) | 636M | no aplica | Apache 2.0 | Hugging Face |
+| SAM2 (facebook/sam2-hiera-large) | 224M | no aplica | Apache 2.0 | Hugging Face |
 
 SAM3 es la versión más reciente de la familia, pero sin datos técnicos publicados no es posible realizar una comparativa cuantitativa. SAM y SAM2 tienen licencia Apache 2.0, mientras que SAM3 usa una licencia "other" que podría implicar restricciones adicionales. Se recomienda revisar los términos de uso antes de emplearlo en producción.
 
@@ -70,5 +70,5 @@ SAM3 es la versión más reciente de la familia, pero sin datos técnicos public
 
 ## Enlaces
 
-- [HuggingFace: facebook/sam3](https://huggingface.co/facebook/sam3)
+- [Hugging Face: facebook/sam3](https://huggingface.co/facebook/sam3)
 - No se han encontrado papers, blogs o repositorios adicionales en la información proporcionada.

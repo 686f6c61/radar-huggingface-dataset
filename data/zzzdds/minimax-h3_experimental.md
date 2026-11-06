@@ -70,7 +70,7 @@ No se dispone de datos cuantitativos para comparar este adaptador con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zzzDDs/MiniMax-H3_experimental
+- Repositorio Hugging Face: https://huggingface.co/zzzDDs/MiniMax-H3_experimental
 - GitHub oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog de MiniMax sobre H3: https://www.minimax.io/blog/minimax-h3
 - Tutorial y guía de despliegue: https://design.minimax.io/h3

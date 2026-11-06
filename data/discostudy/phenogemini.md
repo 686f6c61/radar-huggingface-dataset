@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhenoGemini es un modelo de lenguaje especializado en priorizacion de genes candidatos a partir del fenotipo de un paciente. Lo desarrolla DISCOStudy y se publica en HuggingFace bajo licencia MIT, con un total de 32.363.165.696 parametros (aproximadamente 32,4 mil millones) repartidos en un repositorio de 64,7 GB en formato safetensors. La etiqueta de arquitectura del repositorio es `qwen3_moe`, lo que indica que se trata de un transformer con mezcla de expertos (MoE) derivado de la familia Qwen3; el modelo esta declarado unicamente en ingles y esta etiquetado como `medical`.
+PhenoGemini es un modelo de lenguaje especializado en priorizacion de genes candidatos a partir del fenotipo de un paciente. Lo desarrolla DISCOStudy y se publica en Hugging Face bajo licencia MIT, con un total de 32.363.165.696 parametros (aproximadamente 32,4 mil millones) repartidos en un repositorio de 64,7 GB en formato safetensors. La etiqueta de arquitectura del repositorio es `qwen3_moe`, lo que indica que se trata de un transformer con mezcla de expertos (MoE) derivado de la familia Qwen3; el modelo esta declarado unicamente en ingles y esta etiquetado como `medical`.
 
 El problema que resuelve es concreto: dado un conjunto de terminos fenotipicos (tipicamente terminos HPO) mas un bloque de pacientes similares recuperados de la literatura, el modelo devuelve una lista priorizada de genes ordenada por probabilidad de ser el causante de la enfermedad. No es un modelo conversacional ni genera texto libre: durante la inferencia realiza un ranking sobre el subespacio de tokens de genes en los logits de la ultima posicion, enmascarando el resto del vocabulario. Para ello el tokenizador incorpora tokens especiales con el formato `<|PhenoGemini-Special-Token-Entrez-ID-XXXXX|>`, donde el numero final es el Entrez Gene ID.
 
@@ -69,8 +69,8 @@ No se han proporcionado datos de modelos comparables de priorizacion genica en l
 
 | Modelo | Parametros totales | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhenoGemini | 32,36 mil millones | no disponible | Ranking de genes por fenotipo | mit | HuggingFace, 0 descargas |
-| Qwen3 (familia base, tag `qwen3_moe`) | no confirmado en la informacion proporcionada | no disponible | Generacion de texto general | no disponible | HuggingFace |
+| PhenoGemini | 32,36 mil millones | no disponible | Ranking de genes por fenotipo | mit | Hugging Face, 0 descargas |
+| Qwen3 (familia base, tag `qwen3_moe`) | no confirmado en la informacion proporcionada | no disponible | Generacion de texto general | no disponible | Hugging Face |
 | Herramientas clasicas de priorizacion genica (Exomiser, PhenIX, LIRICAL) | no disponible | no aplica | Priorizacion por fenotipo y herencia | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se han proporcionado datos de modelos comparables de priorizacion genica en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DISCOStudy/PhenoGemini
+- Modelo en Hugging Face: https://huggingface.co/DISCOStudy/PhenoGemini
 - Repositorio GitHub con ejemplos de uso y datos de demostracion: https://github.com/discostudy/phenogemini
 - Aplicacion PhenoGemini Atlas para generar prompts con pacientes similares: https://phenogemini.org/
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos resultados obtenidos eran listados de museos de Chicago, sin relacion con el modelo.

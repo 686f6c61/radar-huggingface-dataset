@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-MATH-SFT-full-trajectory es un fine-tuning supervisado (SFT) del modelo base Qwen3-4B, desarrollado por DeltaILab, orientado a mejorar el razonamiento matemático mediante entrenamiento con trayectorias completas de resolución de problemas. El repositorio se presenta como un *staging* de prueba (dry-run) para tres repositorios propuestos, y el README especifica explícitamente que no se ha realizado ninguna subida real de pesos. Por tanto, el modelo no está disponible actualmente para descarga en HuggingFace.
+Qwen3-4B-MATH-SFT-full-trajectory es un fine-tuning supervisado (SFT) del modelo base Qwen3-4B, desarrollado por DeltaILab, orientado a mejorar el razonamiento matemático mediante entrenamiento con trayectorias completas de resolución de problemas. El repositorio se presenta como un *staging* de prueba (dry-run) para tres repositorios propuestos, y el README especifica explícitamente que no se ha realizado ninguna subida real de pesos. Por tanto, el modelo no está disponible actualmente para descarga en Hugging Face.
 
 El proyecto se basa en un snapshot de datos inmutable con 8753 filas en formato Arrow, que difiere del JSONL legacy (5584 filas) que se menciona como no utilizado en el entrenamiento. El entrenamiento se realizó con SFT y utiliza sharding de optimizador ZeRO-2, restaurando en el paso 68 con `consumed_samples=8754`. El test se define sobre el split histórico `id_eval` con generaciones greedy de hasta 2048 tokens, lo que introduce efectos de completado y truncamiento en las métricas de precisión.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MeinCodign es un repositorio publicado en HuggingFace por el usuario smlflg que, en su última actualización (16 de septiembre de 2026), no contiene pesos ni una model card convencional. El espacio ocupa 0,0 GB, no declara pipeline, licencia ni idiomas, y acumula 0 descargas y 0 likes, por lo que no puede considerarse un modelo desplegable en su estado actual.
+MeinCodign es un repositorio publicado en Hugging Face por el usuario smlflg que, en su última actualización (16 de septiembre de 2026), no contiene pesos ni una model card convencional. El espacio ocupa 0,0 GB, no declara pipeline, licencia ni idiomas, y acumula 0 descargas y 0 likes, por lo que no puede considerarse un modelo desplegable en su estado actual.
 
 El único contenido descriptivo es un README titulado "Archify Free-Pipeline Research", que documenta una investigación exploratoria sobre representaciones de arquitectura de software obtenidas a partir de código fuente. Ese texto describe un pipeline de evaluación multi-modelo y una línea de trabajo sobre orquestación de agentes, no las características técnicas de MeinCodign.
 
@@ -79,7 +79,7 @@ No disponible. Al no existir datos de parámetros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/MeinCodign
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/MeinCodign
 - Documento de comparación por modelo citado en el README: docs/model-choice-impact.md (ruta relativa dentro del repositorio)
 - Documento de artefactos externos citado en el README: docs/external-online-artifacts.md (ruta relativa dentro del repositorio)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la información disponible.

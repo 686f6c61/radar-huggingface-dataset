@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-hygon-arx-core8-fast-head10k-6b45ecae
+- Hugging Face: https://huggingface.co/myendless/action-repre-hygon-arx-core8-fast-head10k-6b45ecae
 - Checkpoint fuente: https://huggingface.co/myendless/action-repre-hygon-aloha-core8-fast-v4-j14-h32-source30k-08e80bff (revisión `ec8492fad5670499faf798ce0b5c4f2f20b84cf8`)
 - Base VLM: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Base de inicialización de cabeza: https://huggingface.co/Qwen/Qwen3-0.6B

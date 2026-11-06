@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rahulkuiry04/thyroid_cancer_model` es un repositorio de HuggingFace publicado por el usuario rahulkuiry04 bajo licencia Apache 2.0 y etiquetado con la librería Keras. Por el nombre del repositorio y por la librería declarada, todo apunta a un modelo de clasificación (probablemente sobre imágenes médicas o datos clínicos) orientado a la detección de cáncer de tiroides, pero esta afirmación es una inferencia derivada únicamente del identificador: la model card no contiene descripción, ni arquitectura, ni datos de entrenamiento, ni métricas. El repositorio no incluye pipeline declarado, idiomas soportados, ni información sobre el formato de pesos.
+`rahulkuiry04/thyroid_cancer_model` es un repositorio de Hugging Face publicado por el usuario rahulkuiry04 bajo licencia Apache 2.0 y etiquetado con la librería Keras. Por el nombre del repositorio y por la librería declarada, todo apunta a un modelo de clasificación (probablemente sobre imágenes médicas o datos clínicos) orientado a la detección de cáncer de tiroides, pero esta afirmación es una inferencia derivada únicamente del identificador: la model card no contiene descripción, ni arquitectura, ni datos de entrenamiento, ni métricas. El repositorio no incluye pipeline declarado, idiomas soportados, ni información sobre el formato de pesos.
 
 El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repositorio figura como 0.0 GB, lo que sugiere que o bien los pesos no se han subido, o bien están referenciados mediante punteros LFS que no se han resuelto, o bien el modelo es de un tamaño insignificante. En cualquier caso, no es posible verificar su contenido ni reproducir su comportamiento a partir de la información pública disponible.
 
@@ -94,7 +94,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahulkuiry04/thyroid_cancer_model
+- Repositorio en Hugging Face: https://huggingface.co/rahulkuiry04/thyroid_cancer_model
 - Model card: no disponible más allá del bloque de licencia
 - Paper asociado: no disponible
 - Blog o documentación del autor: no disponible

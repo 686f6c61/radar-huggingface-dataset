@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`DilshanDev/llama-text2sql-v2-saas` es un repositorio alojado en HuggingFace cuyo identificador sugiere un modelo orientado a la traduccion de lenguaje natural a SQL (text-to-SQL), presumiblemente construido sobre la familia Llama y con un enfoque declarado hacia entornos SaaS. El autor es el usuario `DilshanDev`. Se trata, en la practica, de un repositorio vacio: el tamano declarado es de 0,0 GB, no registra descargas ni "likes", y la model card es la plantilla autogenerada por HuggingFace sin ninguna seccion completada.
+`DilshanDev/llama-text2sql-v2-saas` es un repositorio alojado en Hugging Face cuyo identificador sugiere un modelo orientado a la traduccion de lenguaje natural a SQL (text-to-SQL), presumiblemente construido sobre la familia Llama y con un enfoque declarado hacia entornos SaaS. El autor es el usuario `DilshanDev`. Se trata, en la practica, de un repositorio vacio: el tamano declarado es de 0,0 GB, no registra descargas ni "likes", y la model card es la plantilla autogenerada por Hugging Face sin ninguna seccion completada.
 
 La relevancia de esta ficha es, por tanto, metodologica mas que tecnica: sirve como ejemplo de repositorio publicado sin pesos, sin documentacion y sin licencia, algo frecuente en el Hub. Cualquier evaluacion de capacidades, arquitectura o rendimiento es imposible con la informacion disponible y debe considerarse no verificada.
 
-No hay datos publicados sobre arquitectura, numero de parametros, longitud de contexto, idiomas o licencia. El unico contenido tecnico identificable son las etiquetas del repositorio (`transformers`, `safetensors`, `endpoints_compatible`) y la referencia a `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de model card de HuggingFace y no a un paper del modelo.
+No hay datos publicados sobre arquitectura, numero de parametros, longitud de contexto, idiomas o licencia. El unico contenido tecnico identificable son las etiquetas del repositorio (`transformers`, `safetensors`, `endpoints_compatible`) y la referencia a `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de model card de Hugging Face y no a un paper del modelo.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ No hay datos publicados sobre arquitectura, numero de parametros, longitud de co
 
 No hay informacion disponible sobre la arquitectura. El repositorio no incluye configuracion del modelo, codigo de definicion ni documentacion tecnica. La etiqueta `safetensors` indica que, en caso de existir pesos, se habrian distribuido en ese formato, pero el tamano del repositorio (0,0 GB) indica que no hay artefactos de pesos publicados.
 
-Tampoco hay datos sobre el proceso de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si se aplicaron tecnicas de ajuste como SFT, RLHF o DPO. La unica referencia bibliografica presente (`arxiv:1910.09700`) es la cita a Lacoste et al. (2019) que HuggingFace inserta por defecto en la seccion de impacto medioambiental de sus plantillas de model card, por lo que no aporta informacion sobre el modelo. La etiqueta `endpoints_compatible` sugiere unicamente que el repositorio esta marcado como desplegable en HuggingFace Inference Endpoints, lo que no implica que existan pesos utilizables.
+Tampoco hay datos sobre el proceso de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si se aplicaron tecnicas de ajuste como SFT, RLHF o DPO. La unica referencia bibliografica presente (`arxiv:1910.09700`) es la cita a Lacoste et al. (2019) que Hugging Face inserta por defecto en la seccion de impacto medioambiental de sus plantillas de model card, por lo que no aporta informacion sobre el modelo. La etiqueta `endpoints_compatible` sugiere unicamente que el repositorio esta marcado como desplegable en Hugging Face Inference Endpoints, lo que no implica que existan pesos utilizables.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No es posible estimar requisitos de hardware porque se desconocen el numero de p
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable.
-- Opciones de despliegue: no verificables. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero al no existir pesos publicados no es posible confirmar un despliegue con vLLM, llama.cpp, Ollama, TGI o similar.
+- Opciones de despliegue: no verificables. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero al no existir pesos publicados no es posible confirmar un despliegue con vLLM, llama.cpp, Ollama, TGI o similar.
 - Latencia y throughput estimados: no disponible.
 - Coste de almacenamiento: el repositorio ocupa 0,0 GB, coherente con la ausencia de artefactos.
 
@@ -89,7 +89,7 @@ Cualquier comparacion numerica requeriria primero que el autor publicase pesos, 
 ## Limitaciones y advertencias
 
 - Repositorio sin pesos: el tamano declarado es de 0,0 GB y no se listan archivos de modelo, por lo que no hay evidencia de que exista un modelo descargable y funcional.
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace, con todos los apartados marcados como "[More Information Needed]". No hay descripcion, casos de uso previstos, datos de entrenamiento ni evaluacion.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face, con todos los apartados marcados como "[More Information Needed]". No hay descripcion, casos de uso previstos, datos de entrenamiento ni evaluacion.
 - Licencia no especificada: al no declararse licencia, no se concede permiso explicito de uso comercial ni de redistribucion. En la practica, el uso en produccion queda en un limbo legal y no deberia asumirse permitido.
 - Idiomas no declarados: no se puede garantizar soporte de castellano ni de ningun otro idioma.
 - Sesgos: no evaluados ni documentados. Cualquier modelo ajustado sobre pares pregunta-SQL puede heredar sesgos de los esquemas y datos de entrenamiento, pero aqui no hay informacion al respecto.
@@ -101,7 +101,7 @@ Cualquier comparacion numerica requeriria primero que el autor publicase pesos, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DilshanDev/llama-text2sql-v2-saas
+- Repositorio en Hugging Face: https://huggingface.co/DilshanDev/llama-text2sql-v2-saas
 - Referencia citada en la plantilla de la model card (impacto medioambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 - Paper o blog del autor: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cupac/asr_test_oggy` es un repositorio alojado en HuggingFace por el usuario cupac. Su nombre sugiere que se trata de una prueba (test) de un sistema de reconocimiento automático del habla (ASR), aunque la propia model card no lo confirma: el único contenido publicado es la declaración de licencia MIT, sin descripción, sin arquitectura, sin idiomas declarados y sin pipeline asignado en la plataforma.
+`cupac/asr_test_oggy` es un repositorio alojado en Hugging Face por el usuario cupac. Su nombre sugiere que se trata de una prueba (test) de un sistema de reconocimiento automático del habla (ASR), aunque la propia model card no lo confirma: el único contenido publicado es la declaración de licencia MIT, sin descripción, sin arquitectura, sin idiomas declarados y sin pipeline asignado en la plataforma.
 
 El repositorio ocupa 0,8 GB y fue creado el 22 de septiembre de 2026, con actualización el mismo día. Acumula 0 descargas y 0 likes, por lo que no hay evidencia de uso en producción ni de validación por parte de la comunidad. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo, su autor o su contenido técnico.
 
@@ -80,7 +80,7 @@ No disponible. No existe información publicada sobre arquitectura, parámetros,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| cupac/asr_test_oggy | no disponible | no disponible | MIT | HuggingFace, 0 descargas | no disponible |
+| cupac/asr_test_oggy | no disponible | no disponible | MIT | Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. No existe información publicada sobre arquitectura, parámetros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cupac/asr_test_oggy
-- Página del autor en HuggingFace: https://huggingface.co/cupac
+- Repositorio en Hugging Face: https://huggingface.co/cupac/asr_test_oggy
+- Página del autor en Hugging Face: https://huggingface.co/cupac
 - Paper, blog, repositorio de código o demo: no disponibles.
 - La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo, su autor ni su contenido técnico; los resultados obtenidos correspondían a temas sin relación (debates sobre regulación de IA, discusiones matemáticas y preguntas de gramática francesa).

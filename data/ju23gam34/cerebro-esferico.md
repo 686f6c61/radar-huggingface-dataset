@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ju23gam34/cerebro-esferico` es un repositorio de modelo alojado en HuggingFace por el usuario ju23gam34, publicado bajo licencia MIT. En el momento de la consulta, la model card no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia (`license: mit`), sin secciones de arquitectura, entrenamiento, datos, capacidades ni uso previsto. El repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado y no especifica idiomas soportados.
+`ju23gam34/cerebro-esferico` es un repositorio de modelo alojado en Hugging Face por el usuario ju23gam34, publicado bajo licencia MIT. En el momento de la consulta, la model card no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia (`license: mit`), sin secciones de arquitectura, entrenamiento, datos, capacidades ni uso previsto. El repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado y no especifica idiomas soportados.
 
 No es posible determinar que tipo de modelo es (lenguaje, vision, audio, multimodal u otro), ni su tamano, arquitectura o longitud de contexto. La ausencia de metadatos tecnicos y de documentacion impide evaluar su idoneidad para cualquier caso de uso. A esto se suma una inconsistencia en los propios metadatos: las fechas de creacion y actualizacion indicadas (2026-10-18) son posteriores a la fecha habitual de publicacion de modelos en la plataforma, lo que sugiere un registro de prueba, un placeholder o un artefacto sin contenido real.
 
@@ -78,7 +78,7 @@ Advertencia sobre homonimos: el modelo CEReBrO (Dimofte, Anta Bucagu et al., Uni
 - Ausencia total de model card tecnica: no hay informacion sobre arquitectura, datos de entrenamiento ni evaluacion.
 - Imposible verificar sesgos: al no conocerse el corpus de entrenamiento no se puede estimar el sesgo demografico, linguistico o cultural.
 - Riesgo de alucinacion indeterminado: no hay evaluaciones de fidelidad factual ni de tasa de hallucination.
-- Limitaciones de idioma desconocidas: el campo de idiomas aparece vacio en los metadatos de HuggingFace.
+- Limitaciones de idioma desconocidas: el campo de idiomas aparece vacio en los metadatos de Hugging Face.
 - Licencia MIT declarada, lo que en principio permitiria uso comercial y modificacion, pero sin documentacion que aclare la procedencia de los datos ni posibles restricciones adicionales sobre los pesos. La licencia del codigo o del repositorio no garantiza por si sola la licencia de los pesos.
 - Sin descargas ni likes: no existe evidencia de uso real ni de validacion por parte de la comunidad.
 - Inconsistencia temporal en los metadatos (fechas de 2026), que apunta a un registro de prueba o a datos no fiables.
@@ -87,7 +87,7 @@ Advertencia sobre homonimos: el modelo CEReBrO (Dimofte, Anta Bucagu et al., Uni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ju23gam34/cerebro-esferico
+- Hugging Face: https://huggingface.co/ju23gam34/cerebro-esferico
 - Model card: no disponible (la seccion README solo contiene la declaracion de licencia MIT)
 - Paper, blog, repositorio de codigo y demo: no disponibles
 - Resultados de busqueda web no relacionados con este modelo (se listan solo para descartar homonimos):

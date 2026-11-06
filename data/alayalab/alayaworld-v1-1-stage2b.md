@@ -6,7 +6,7 @@ AlayaWorld v1.1 Stage2b es un modelo de generación de video autoregresivo desar
 
 La relevancia de este modelo radica en su enfoque híbrido: combina generación autoregresiva con difusión para producir secuencias de video coherentes y de alta calidad, incorporando un codificador de historial de frames que permite mantener consistencia temporal en secuencias largas. Está publicado bajo la licencia LTX-2 Community License, que restringe el uso comercial para entidades con ingresos anuales superiores a 10 millones de dólares.
 
-El repositorio de HuggingFace contiene dos archivos: `transformer.pt` (25 GB) con los pesos del DiT fine-tuneado y `history_encoder.pt` (33 MB) para el codificador de historial. No se proporcionan datos sobre la longitud de contexto, idiomas soportados ni cuantizaciones disponibles, ya que el modelo se distribuye únicamente en formato de pesos completos (FP16 presumiblemente).
+El repositorio de Hugging Face contiene dos archivos: `transformer.pt` (25 GB) con los pesos del DiT fine-tuneado y `history_encoder.pt` (33 MB) para el codificador de historial. No se proporcionan datos sobre la longitud de contexto, idiomas soportados ni cuantizaciones disponibles, ya que el modelo se distribuye únicamente en formato de pesos completos (FP16 presumiblemente).
 
 ## Especificaciones tecnicas
 
@@ -68,11 +68,11 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 - Idiomas no especificados: no se indica si el modelo soporta prompts en multiples idiomas o si solo trabaja con entradas visuales.
 - Riesgo de alucinacion visual: como todo modelo generativo, puede producir artefactos o inconsistencias en escenas complejas, especialmente en secuencias largas.
 - Dependencia del pipeline AlayaWorld: el checkpoint esta disenado para usarse con los configs y scripts del repositorio AlayaLab/AlayaWorld; su uso fuera de ese ecosistema puede requerir adaptaciones no documentadas.
-- Tamaño del repositorio: el repositorio de HuggingFace muestra un tamano de 0.0 GB, lo que sugiere que los archivos pueden estar alojados externamente o que la metrica no se ha actualizado correctamente.
+- Tamaño del repositorio: el repositorio de Hugging Face muestra un tamano de 0.0 GB, lo que sugiere que los archivos pueden estar alojados externamente o que la metrica no se ha actualizado correctamente.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlayaLab/AlayaWorld-v1.1-stage2b
+- Repositorio Hugging Face: https://huggingface.co/AlayaLab/AlayaWorld-v1.1-stage2b
 - Repositorio GitHub AlayaWorld: https://github.com/AlayaLab/AlayaWorld
 - Informe introductorio (arxiv 2607.06291): https://arxiv.org/abs/2607.06291
 - Informe completo (arxiv 2607.18367): https://arxiv.org/abs/2607.18367

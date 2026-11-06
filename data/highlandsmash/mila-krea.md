@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HighlandSmash/mila-krea es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2, publicado por el usuario HighlandSmash en HuggingFace. El adaptador se entreno sobre la variante Krea 2 RAW (krea/Krea-2-Raw) y sus muestras de ejemplo se generaron sobre Krea 2 Turbo, la version destilada para pocos pasos de inferencia del mismo modelo base. Se distribuye bajo licencia Apache 2.0 con un tamano de repositorio de 1,0 GB y la etiqueta de plantilla `template:sd-lora` dentro del ecosistema diffusers.
+HighlandSmash/mila-krea es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2, publicado por el usuario HighlandSmash en Hugging Face. El adaptador se entreno sobre la variante Krea 2 RAW (krea/Krea-2-Raw) y sus muestras de ejemplo se generaron sobre Krea 2 Turbo, la version destilada para pocos pasos de inferencia del mismo modelo base. Se distribuye bajo licencia Apache 2.0 con un tamano de repositorio de 1,0 GB y la etiqueta de plantilla `template:sd-lora` dentro del ecosistema diffusers.
 
 El objetivo del adaptador es inyectar un concepto o identidad concreta, invocada mediante el token disparador `Mila`, sin necesidad de reentrenar el modelo base completo. Es un caso de personalizacion ligera: el LoRA anade un pequeno conjunto de matrices de bajo rango sobre los pesos congelados de Krea 2, de modo que el modelo puede reproducir ese concepto cuando se menciona la palabra reservada y mantiene su comportamiento general en el resto de prompts.
 
@@ -32,7 +32,7 @@ El objeto publicado no es un modelo completo, sino un adaptador de bajo rango (L
 
 La inferencia de ejemplo documentada se realiza sobre Krea 2 Turbo con 8 pasos y `guidance_scale=0.0`, lo que indica que el adaptador es compatible con el regimen de destilacion por destilacion de trayectoria (pocos pasos, sin classifier-free guidance). No se especifican en la model card el numero de imagenes del dataset, el numero de pasos de entrenamiento, la tasa de aprendizaje, el rango ni el alpha del LoRA, la resolucion de entrenamiento ni si se aplicaron tecnicas adicionales como regularizacion por clase o aumento de datos. Tampoco se documenta ninguna innovacion tecnica propia: es una aplicacion estandar del pipeline DreamBooth + LoRA sobre un modelo de difusion preentrenado.
 
-El prompt de instancia declarado es `Mila`, y el unico ejemplo publicado corresponde al texto "Standing in the rain looking at a starry sky". El repositorio incluye ademas la etiqueta `template:sd-lora`, que activa la plantilla de widgets de HuggingFace para LoRAs de difusion.
+El prompt de instancia declarado es `Mila`, y el unico ejemplo publicado corresponde al texto "Standing in the rain looking at a starry sky". El repositorio incluye ademas la etiqueta `template:sd-lora`, que activa la plantilla de widgets de Hugging Face para LoRAs de difusion.
 
 ## Capacidades
 
@@ -75,9 +75,9 @@ No se dispone de datos de otros adaptadores LoRA para Krea 2 en la informacion p
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HighlandSmash/mila-krea | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | HuggingFace, via `diffusers` |
-| krea/Krea-2-Raw | Modelo base text-to-image | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace |
-| krea/Krea-2-Turbo | Variante destilada para pocos pasos | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace |
+| HighlandSmash/mila-krea | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | Hugging Face, via `diffusers` |
+| krea/Krea-2-Raw | Modelo base text-to-image | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face |
+| krea/Krea-2-Turbo | Variante destilada para pocos pasos | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face |
 
 Alternativas comparables de la misma categoria (otros LoRA de personaje, textual inversion o ajuste completo del modelo base): no disponible.
 
@@ -96,7 +96,7 @@ Alternativas comparables de la misma categoria (otros LoRA de personaje, textual
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HighlandSmash/mila-krea
+- Modelo en Hugging Face: https://huggingface.co/HighlandSmash/mila-krea
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Biblioteca de modelos de Krea: https://www.krea.ai/models
 - Suite creativa de Krea: https://www.krea.ai/

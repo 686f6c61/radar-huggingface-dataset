@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - El adaptador LoRA requiere cargar el modelo base Qwen/Qwen3-8B, por lo que la VRAM necesaria es la de dicho modelo. En bfloat16, Qwen3-8B ocupa aproximadamente 16 GB, por lo que se recomienda una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB, o H100).
 - Con cuantización del modelo base (por ejemplo, 4-bit), la VRAM puede reducirse a unos 6-8 GB, permitiendo su uso en GPUs de consumo como RTX 3060 o RTX 4070.
 - El adaptador en sí es pequeño (0.7 GB) y no añade requisitos significativos de memoria.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de HuggingFace y `transformers`. También es compatible con frameworks como vLLM o TGI si se fusiona el adaptador con el modelo base, aunque no se documenta explícitamente.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de Hugging Face y `transformers`. También es compatible con frameworks como vLLM o TGI si se fusiona el adaptador con el modelo base, aunque no se documenta explícitamente.
 - Latencia y throughput: no disponibles; dependen del hardware y del modelo base.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información sobre adaptadores AO comparables en la misma colec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-moon-c0p50
+- Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-moon-c0p50
 - Paper de Activation Oracles: https://arxiv.org/abs/2512.15674
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Sujeto interpretado (taboo): https://huggingface.co/Atmyre/qwen3-8b-taboo-moon-c0p50

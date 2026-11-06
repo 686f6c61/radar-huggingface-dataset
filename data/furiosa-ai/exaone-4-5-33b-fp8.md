@@ -87,8 +87,8 @@ EXAONE 4.5 compite directamente con Qwen3-VL 32B en tareas de visión-lenguaje. 
 
 ## Enlaces
 
-- Modelo en HuggingFace (Furiosa AI): https://huggingface.co/furiosa-ai/EXAONE-4.5-33B-FP8
-- Modelo original en HuggingFace (LG AI): https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
+- Modelo en Hugging Face (Furiosa AI): https://huggingface.co/furiosa-ai/EXAONE-4.5-33B-FP8
+- Modelo original en Hugging Face (LG AI): https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
 - Repositorio GitHub: https://github.com/LG-AI-EXAONE/EXAONE-4.5
 - Blog de LG AI Research: https://www.lgresearch.ai/blog/view?seq=641
 - Paper técnico (arXiv): http://arxiv.org/abs/2604.08644

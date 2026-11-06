@@ -25,7 +25,7 @@ El bundle completo requiere en torno a 10 GB de disco y al menos 12 GB de RAM, f
 | Dataset de entrenamiento | yakdas/turklink-corpus (revision c8d7fe7bdd0ae934268d30ef64f6444940bdf6dc) |
 | Documentos de entrenamiento / validacion / test | 28.310 / 2.350 / 2.353 |
 | Semilla | 42 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ Los resultados de Mewsli, cuando aparecen, corresponden a transferencia de domin
 
 ## Requisitos de hardware
 
-- Disco: aproximadamente 10 GB para el bundle completo (el repositorio en HuggingFace ocupa 8,9 GB, en su mayoria por el indice).
+- Disco: aproximadamente 10 GB para el bundle completo (el repositorio en Hugging Face ocupa 8,9 GB, en su mayoria por el indice).
 - Memoria: al menos 12 GB de RAM para ejecutar el bundle completo.
 - GPU: no se especifica VRAM minima en la informacion disponible; el sistema funciona en CPU.
 - Sistemas soportados: Linux con CPU o CUDA y macOS con CPU (la model card menciona un ajuste para OpenMP en macOS si los wheels entran en conflicto).
@@ -113,7 +113,7 @@ A modo de contexto, los componentes reutilizables que acompanan al bundle son lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/furkanbekmezci/turklink-el
+- Hugging Face: https://huggingface.co/furkanbekmezci/turklink-el
 - Dataset TurkLink: https://huggingface.co/datasets/yakdas/turklink-corpus
 - Articulo de referencia: Akdas y Tantug (2026), DOI https://doi.org/10.1016/j.procs.2026.01.041
 - Retriever: https://huggingface.co/frcturus/turklink-retriever

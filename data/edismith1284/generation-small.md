@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Edismith1284/generation-small` es un repositorio experimental publicado en HuggingFace por el usuario Edismith1284 que contiene una implementación propia de una arquitectura de tipo BLIP a escala "tiny", orientada a tareas de generación. No es un modelo entrenado: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), y el propio autor indica explícitamente que no se presenta como un checkpoint evaluado ni se reclama ninguna puntuación de benchmark. El recuento real de parámetros en safetensors es de 49.600 (aproximadamente 0,05 M), lo que lo sitúa muy por debajo de cualquier modelo utilizable en producción.
+`Edismith1284/generation-small` es un repositorio experimental publicado en Hugging Face por el usuario Edismith1284 que contiene una implementación propia de una arquitectura de tipo BLIP a escala "tiny", orientada a tareas de generación. No es un modelo entrenado: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), y el propio autor indica explícitamente que no se presenta como un checkpoint evaluado ni se reclama ninguna puntuación de benchmark. El recuento real de parámetros en safetensors es de 49.600 (aproximadamente 0,05 M), lo que lo sitúa muy por debajo de cualquier modelo utilizable en producción.
 
 El interés del repositorio es, por tanto, documental y educativo: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Incluye `pipeline.py` como artefacto principal (modelo y punto de entrada ejecutable), `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (SGD con schedule de warmup constante) y el checkpoint de inicialización en safetensors. La licencia es MIT.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificables de alternativas en la información proporcio
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Uso previsto |
 |---|---|---|---|---|---|
-| `Edismith1284/generation-small` | 49.600 | no disponible | MIT | HuggingFace, 0 descargas | Experimentación y smoke tests |
+| `Edismith1284/generation-small` | 49.600 | no disponible | MIT | Hugging Face, 0 descargas | Experimentación y smoke tests |
 | Alternativas de la familia BLIP | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 Criterio de comparación recomendado por el propio autor: misma exposición de datos, mismo presupuesto de ajuste y mismas semillas aleatorias que una línea base de capacidad equivalente.
@@ -87,12 +87,12 @@ Criterio de comparación recomendado por el propio autor: misma exposición de d
 - Capacidad muy limitada por tamaño: 49.600 parámetros no permiten almacenar conocimiento factual ni habilidades lingüísticas útiles.
 - No se declara ningún idioma soportado, por lo que no se puede garantizar comportamiento en castellano ni en ninguna otra lengua.
 - Longitud de contexto no especificada: no es posible planificar conversaciones multi-turno ni documentos largos.
-- Integración: al ser una implementación personalizada, `AutoModel` y APIs genéricas de HuggingFace no cargan el modelo sin un adaptador; esto añade coste de mantenimiento y riesgo de rotura ante cambios de versión.
+- Integración: al ser una implementación personalizada, `AutoModel` y APIs genéricas de Hugging Face no cargan el modelo sin un adaptador; esto añade coste de mantenimiento y riesgo de rotura ante cambios de versión.
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - Señales de madurez del repositorio: 0 descargas, 0 likes, tamaño 0,0 GB y una única versión publicada, lo que desaconseja cualquier dependencia en producción.
 - Advertencia sobre metadatos: la fecha de creación registrada (2026-10-19) y la ausencia de pipeline declarado sugieren un artefacto de publicación automatizada o incompleta; conviene verificar el contenido real de `config.json` y `pipeline.py` antes de reutilizarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Edismith1284/generation-small
+- Repositorio en Hugging Face: https://huggingface.co/Edismith1284/generation-small
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -90,7 +90,7 @@ La comparativa se limita a estos tres modelos porque no se dispone de datos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsskofficial/livewhisper-si-large-v3
+- Modelo en Hugging Face: https://huggingface.co/itsskofficial/livewhisper-si-large-v3
 - Modelo base: https://huggingface.co/kasunw/whisper-large-v3-sinhala
 - faster-whisper (SYSTRAN): https://github.com/SYSTRAN/faster-whisper
 - LiveWhisper (aplicacion de dictado para Windows): https://github.com/itsskofficial/LiveWhisper

@@ -79,7 +79,7 @@ No se dispone de modelos comparables publicados para este checkpoint concreto. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaonai/grpo-kaon3-cr5a-calibrated-min-n18-b004-step175
+- Repositorio Hugging Face: https://huggingface.co/kaonai/grpo-kaon3-cr5a-calibrated-min-n18-b004-step175
 - Modelo base: `kaonai/kaon-c-gemma4-26b-v10.1` (https://huggingface.co/kaonai/kaon-c-gemma4-26b-v10.1)
 - Referencia de la ejecucion: `cr5-min-v11-order54-kl04` / `v0-20260909-192431`
 

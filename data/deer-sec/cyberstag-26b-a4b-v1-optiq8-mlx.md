@@ -79,6 +79,6 @@ La comparativa con alternativas especializadas en ciberseguridad no está dispon
 
 ## Enlaces
 
-- [HuggingFace: deer-sec/CyberStag-26B-A4B-V1-OptiQ8-MLX](https://huggingface.co/deer-sec/CyberStag-26B-A4B-V1-OptiQ8-MLX)
+- [Hugging Face: deer-sec/CyberStag-26B-A4B-V1-OptiQ8-MLX](https://huggingface.co/deer-sec/CyberStag-26B-A4B-V1-OptiQ8-MLX)
 - [Modelo base: google/gemma-4-26b-a4b](https://huggingface.co/google/gemma-4-26b-a4b)
 - [Imagen de la model card](https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1-optiq8/resolve/main/CyberStag-26B-A4B-v1.jpeg)

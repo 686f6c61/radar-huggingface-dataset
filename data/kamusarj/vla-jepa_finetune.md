@@ -68,9 +68,9 @@ No se han publicado resultados comparativos con otros modelos VLA en el mismo en
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VLA-JEPA_finetune (este) | Qwen3-VL-2B + V-JEPA2 + DiT-B | ~2B (estimado) | No disponible | Apache-2.0 | Checkpoint en HuggingFace |
-| OpenVLA (base) | Prismatic + Llama-2-7B | 7B | 2048 tokens | MIT (pesos) | Disponible en HuggingFace |
-| LeRobot VLA-JEPA-Pretrain | Qwen2-VL + V-JEPA2 + DiT | No disponible | No disponible | Apache-2.0 | Disponible en HuggingFace |
+| VLA-JEPA_finetune (este) | Qwen3-VL-2B + V-JEPA2 + DiT-B | ~2B (estimado) | No disponible | Apache-2.0 | Checkpoint en Hugging Face |
+| OpenVLA (base) | Prismatic + Llama-2-7B | 7B | 2048 tokens | MIT (pesos) | Disponible en Hugging Face |
+| LeRobot VLA-JEPA-Pretrain | Qwen2-VL + V-JEPA2 + DiT | No disponible | No disponible | Apache-2.0 | Disponible en Hugging Face |
 
 No se dispone de comparativas de rendimiento directas con estos modelos en el mismo entorno robótico. La comparativa se limita a parámetros y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de comparativas de rendimiento directas con estos modelos en el mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kamusarj/VLA-JEPA_finetune
+- Hugging Face: https://huggingface.co/kamusarj/VLA-JEPA_finetune
 - Código base VLA-JEPA (GitHub): https://github.com/ginwind/VLA-JEPA
 - Paper VLA-JEPA (arXiv): https://arxiv.org/abs/2602.10098
 - Documentación de LeRobot para VLA-JEPA: https://huggingface.co/docs/lerobot/main/vla_jepa

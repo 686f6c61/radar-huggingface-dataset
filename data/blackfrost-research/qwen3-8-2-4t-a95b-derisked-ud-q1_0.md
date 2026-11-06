@@ -4,7 +4,7 @@
 
 El modelo `Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-UD-Q1_0` es una cuantización GGUF de muy baja precisión (Q1_0) del modelo Qwen3.8-2.4T-A95B, el primer modelo de la clase Qwen-Max liberado con pesos abiertos por Alibaba en agosto de 2026. Esta variante ha sido sometida a una técnica denominada *directional weight modification* (DWM) y optimizada con *imatrix* para reducir el impacto de la cuantización extrema, con el objetivo de permitir la ejecución del modelo en hardware de un solo nodo con requisitos de memoria reducidos.
 
-El modelo base es un *mixture of experts* (MoE) con 2,4 billones de parámetros totales y aproximadamente 95 mil millones de parámetros activos por paso, con atención híbrida y una ventana de contexto de 1 millón de tokens. La versión cuantizada ocupa 44,5 GB en disco, lo que la hace viable para GPUs de gama alta de consumo o estaciones de trabajo profesionales. El repositorio está marcado como *gated*, por lo que requiere aceptación de condiciones en HuggingFace antes de su descarga.
+El modelo base es un *mixture of experts* (MoE) con 2,4 billones de parámetros totales y aproximadamente 95 mil millones de parámetros activos por paso, con atención híbrida y una ventana de contexto de 1 millón de tokens. La versión cuantizada ocupa 44,5 GB en disco, lo que la hace viable para GPUs de gama alta de consumo o estaciones de trabajo profesionales. El repositorio está marcado como *gated*, por lo que requiere aceptación de condiciones en Hugging Face antes de su descarga.
 
 Esta ficha se centra en la variante cuantizada, pero los datos técnicos y de rendimiento se refieren al modelo base original salvo que se indique lo contrario, ya que no se han publicado resultados específicos para esta cuantización.
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 ## Limitaciones y advertencias
 
 - La cuantización Q1_0 es extremadamente agresiva: se espera una pérdida notable de coherencia, razonamiento y precisión en comparación con el modelo original. No hay métricas publicadas que cuantifiquen esta pérdida.
-- El repositorio está *gated*: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- El repositorio está *gated*: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - La licencia `qwen` del modelo base impone restricciones de uso comercial; es imprescindible revisar los términos exactos antes de cualquier despliegue productivo.
 - No se han publicado detalles sobre sesgos, alucinaciones o limitaciones idiomáticas específicas de esta variante.
 - El uso de *directional weight modification* (DWM) no está documentado formalmente; se desconoce su efecto a largo plazo en la estabilidad del modelo.
@@ -84,7 +84,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-UD-Q1_0
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-UD-Q1_0
 - Modelo base Qwen3.8-2.4T-A95B: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Página oficial de QwenCloud: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CALVINYOSHIDA/hw2-multitask es un repositorio experimental que contiene una implementación propia de una arquitectura denominada "Coca", orientada a tareas multitarea. El modelo lo publica el usuario CALVINYOSHIDA y se distribuye bajo licencia BSD-3-Clause a través de HuggingFace. Se trata de un andamiaje de código más que de un modelo entrenado: el propio autor indica de forma explícita que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con entrenamiento completado.
+CALVINYOSHIDA/hw2-multitask es un repositorio experimental que contiene una implementación propia de una arquitectura denominada "Coca", orientada a tareas multitarea. El modelo lo publica el usuario CALVINYOSHIDA y se distribuye bajo licencia BSD-3-Clause a través de Hugging Face. Se trata de un andamiaje de código más que de un modelo entrenado: el propio autor indica de forma explícita que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con entrenamiento completado.
 
 La relevancia de esta ficha es acotada y hay que enmarcarla con precisión. El checkpoint tiene únicamente 16.576 parámetros totales, un orden de magnitud propio de un modelo de juguete destinado a inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se declara ninguna puntuación de benchmark, no hay idiomas soportados documentados y el tamaño del repositorio es de 0,0 GB. Cualquier evaluación de capacidades reales sería, por tanto, especulativa.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, el repositorio incluye un archivo `training_args.jso
 
 - Investigación de arquitecturas: el repositorio sirve para inspeccionar cómo se implementan atención de ventana deslizante, co-atención y RMSNorm en una base de código propia, antes de comprometer recursos en un entrenamiento a gran escala.
 - Pruebas de humo de pipelines de entrenamiento: usar el checkpoint de inicialización para verificar que el bucle de entrenamiento, el cargador de datos y la serialización en safetensors funcionan de extremo a extremo sin errores.
-- Desarrollo de adaptadores de carga: dado que se trata de una implementación personalizada, permite escribir el adaptador que necesitan las APIs de carga automática de HuggingFace antes de reutilizar el modelo en otros entornos.
+- Desarrollo de adaptadores de carga: dado que se trata de una implementación personalizada, permite escribir el adaptador que necesitan las APIs de carga automática de Hugging Face antes de reutilizar el modelo en otros entornos.
 - Línea base de referencia para experimentos comparativos: entrenar esta arquitectura y compararla con modelos de capacidad equivalente usando los mismos datos, presupuesto de ajuste y semillas, tal y como recomienda el autor.
 - Docencia y formación: por su tamaño (16.576 parámetros) y su código legible, es adecuado para explicar el funcionamiento interno de la atención y la normalización en un entorno controlado.
 - Pruebas de integración en CI: al ocupar un espacio mínimo y poder ejecutarse en CPU, se puede incorporar en pruebas automatizadas que validen la compatibilidad de un pipeline de serialización o de inferencia.
@@ -72,7 +72,7 @@ No disponible. No se han identificado modelos directamente comparables en la inf
 
 | Modelo | Parametros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| CALVINYOSHIDA/hw2-multitask | 16.576 | no disponible | bsd-3-clause | checkpoint de inicializacion, sin entrenar | HuggingFace |
+| CALVINYOSHIDA/hw2-multitask | 16.576 | no disponible | bsd-3-clause | checkpoint de inicializacion, sin entrenar | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,10 +83,10 @@ No disponible. No se han identificado modelos directamente comparables en la inf
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar; en la práctica el checkpoint no genera respuestas fiables.
 - No se documentan idiomas soportados, por lo que no se puede garantizar cobertura multilingüe de ningún tipo.
 - La licencia BSD-3-Clause permite el uso comercial del código y los pesos, pero el autor recomienda revisar por separado los términos de las fuentes de datos si se combina con conjuntos de datos externos.
-- Al ser una implementación personalizada, no es cargable directamente con las APIs genéricas de HuggingFace; requiere un adaptador explícito.
+- Al ser una implementación personalizada, no es cargable directamente con las APIs genéricas de Hugging Face; requiere un adaptador explícito.
 - El tamaño del repositorio (0,0 GB) y la ausencia de descargas y likes reflejan que se trata de un artefacto experimental sin adopción ni validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CALVINYOSHIDA/hw2-multitask
+- Repositorio en Hugging Face: https://huggingface.co/CALVINYOSHIDA/hw2-multitask
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos o demos). Los resultados obtenidos no guardan relacion con el modelo descrito.

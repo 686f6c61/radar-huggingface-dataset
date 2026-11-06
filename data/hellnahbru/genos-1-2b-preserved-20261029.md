@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Genos-1.2B (esta publicacion) | 1.2B totales / 0.33B activos | Hasta 1M pb | MIT | HuggingFace (redistribucion de terceros) | MoE, 8 expertos, vocabulario genomico |
-| Genos-10B (BGI-HangzhouAI) | 10B totales / 2.87B activos | Hasta 1M pb | no disponible en la informacion | HuggingFace (oficial) | Version mayor del mismo modelo |
-| Genos-Megatron-1.2B (BGI-HangzhouAI) | 1.2B | Hasta 1M pb | no disponible en la informacion | HuggingFace (oficial) | Checkpoint entrenado con Megatron-LM |
+| Genos-1.2B (esta publicacion) | 1.2B totales / 0.33B activos | Hasta 1M pb | MIT | Hugging Face (redistribucion de terceros) | MoE, 8 expertos, vocabulario genomico |
+| Genos-10B (BGI-HangzhouAI) | 10B totales / 2.87B activos | Hasta 1M pb | no disponible en la informacion | Hugging Face (oficial) | Version mayor del mismo modelo |
+| Genos-Megatron-1.2B (BGI-HangzhouAI) | 1.2B | Hasta 1M pb | no disponible en la informacion | Hugging Face (oficial) | Checkpoint entrenado con Megatron-LM |
 
 No se dispone de datos de benchmarks para comparar rendimiento entre estas variantes ni con otros modelos genomicos (por ejemplo, Nucleotide Transformer o DNABERT) en la informacion proporcionada, por lo que la comparativa se limita a especificaciones estructurales.
 

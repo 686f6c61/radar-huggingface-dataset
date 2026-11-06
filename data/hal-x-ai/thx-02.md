@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| THX-02 | 4,5 B + 60 M think adapter | 32k tokens | Modelo de decisión con salida de probabilidades, multimodal | Apache-2.0 | HuggingFace, PyPI, API alojada |
-| THX-01 | 0,3 B | no disponible | Modelo de decisión (predecesor) | no disponible en la informacion | HuggingFace (doofz/THX-01) |
+| THX-02 | 4,5 B + 60 M think adapter | 32k tokens | Modelo de decisión con salida de probabilidades, multimodal | Apache-2.0 | Hugging Face, PyPI, API alojada |
+| THX-01 | 0,3 B | no disponible | Modelo de decisión (predecesor) | no disponible en la informacion | Hugging Face (doofz/THX-01) |
 | LLM generativos de tamaño similar (por ejemplo, familias de 3-8 B) | 3-8 B | variable | Generación de texto libre con clasificación vía prompting | variable | amplia |
 
 La información disponible no incluye comparaciones con modelos de clasificación zero-shot dedicados (por ejemplo, NLI-based) ni con LLMs generativos concretos; la única comparación publicada es contra THX-01, con una diferencia de 65,06 frente a 11,30 en el Decision Index 0.3 con thinking.
@@ -98,7 +98,7 @@ La información disponible no incluye comparaciones con modelos de clasificació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HAL-X-AI/THX-02
+- Modelo en Hugging Face: https://huggingface.co/HAL-X-AI/THX-02
 - Predecesor THX-01: https://huggingface.co/doofz/THX-01
 - Referencia de la API: https://api.hal-x.ai/docs/thx-02
 - Paquete PyPI: `pip install thx02` (cliente y comando `thx02`)

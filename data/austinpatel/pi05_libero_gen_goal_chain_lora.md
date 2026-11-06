@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `austinpatel/pi05_libero_gen_goal_chain_lora` | VLA + LoRA (pi0.5) | no disponible | no disponible | no disponible | HuggingFace (checkpoint Orbax) |
-| `physical-intelligence/pi05_base` | VLA pi0.5 base | no disponible en esta informacion | no disponible | no disponible | HuggingFace / openpi |
+| `austinpatel/pi05_libero_gen_goal_chain_lora` | VLA + LoRA (pi0.5) | no disponible | no disponible | no disponible | Hugging Face (checkpoint Orbax) |
+| `physical-intelligence/pi05_base` | VLA pi0.5 base | no disponible en esta informacion | no disponible | no disponible | Hugging Face / openpi |
 | Modelos VLA comparables (por ejemplo, familias OpenVLA o pi0) | VLA | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos numericos suficientes para establecer una comparacion cuantitativa fiable con alternativas de la misma categoria.
@@ -90,7 +90,7 @@ No se dispone de datos numericos suficientes para establecer una comparacion cua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austinpatel/pi05_libero_gen_goal_chain_lora
+- Modelo en Hugging Face: https://huggingface.co/austinpatel/pi05_libero_gen_goal_chain_lora
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/austinpatel/libero_gen_goal_chain_train_openpi
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

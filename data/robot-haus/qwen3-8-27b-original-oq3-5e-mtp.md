@@ -13,7 +13,7 @@ La relevancia actual radica en que ofrece una alternativa de alta calidad para q
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso multimodal (vision-language) |
-| Parametros totales | 27B (modelo base) / 4.380.854.512 (dato reportado en HuggingFace, posible discrepancia) |
+| Parametros totales | 27B (modelo base) / 4.380.854.512 (dato reportado en Hugging Face, posible discrepancia) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262 000 tokens (segun documentacion del modelo base) |
 | Tipos de cuantizacion | oQe Q3.5 equivalente (mixed precision, imatrix-guided), pesos bf16 |
@@ -75,12 +75,12 @@ No se dispone de informacion suficiente para una comparativa directa con otros m
 - El modelo solo declara soporte para ingles; aunque el base podria soportar otros idiomas, no esta verificado en esta version.
 - No ha sido probado en CUDA; su funcionamiento en GPUs NVIDIA es incierto y podria requerir ajustes.
 - La licencia Apache 2.0 permite uso comercial, pero se debe mantener la atribucion y no se ofrecen garantias.
-- El numero de parametros reportado en HuggingFace (4.38B) no coincide con el tamano del modelo base (27B); esto podria deberse a un error en el registro o a una interpretacion distinta de los tensores cuantizados. Se recomienda verificar el indice de safetensors antes de asumir el tamano real.
+- El numero de parametros reportado en Hugging Face (4.38B) no coincide con el tamano del modelo base (27B); esto podria deberse a un error en el registro o a una interpretacion distinta de los tensores cuantizados. Se recomienda verificar el indice de safetensors antes de asumir el tamano real.
 - No se incluyen instrucciones de uso fuera de oMLX; para otros entornos puede ser necesario convertir el formato.
 
 ## Enlaces
 
-- [HuggingFace - Robot-Haus/Qwen3.8-27B-original-oQ3.5e-mtp](https://huggingface.co/Robot-Haus/Qwen3.8-27B-original-oQ3.5e-mtp)
+- [Hugging Face - Robot-Haus/Qwen3.8-27B-original-oQ3.5e-mtp](https://huggingface.co/Robot-Haus/Qwen3.8-27B-original-oQ3.5e-mtp)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Blog lovableapp - Qwen3.8-27B Guide](https://lovableapp.org/blog/qwen3-8-27b)
 - [Blog kingy.ai - Qwen3.8-27B Specs & Benchmarks](https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/)

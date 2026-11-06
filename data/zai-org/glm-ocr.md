@@ -89,7 +89,7 @@ No se dispone de datos públicos de benchmarks comparables para modelos OCR de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zai-org/GLM-OCR
+- Hugging Face: https://huggingface.co/zai-org/GLM-OCR
 - GitHub: https://github.com/zai-org/GLM-OCR
 - Technical Report (arXiv): https://arxiv.org/abs/2603.10910
 - Documentación API de Z.AI: https://docs.z.ai/guides/vlm/glm-ocr

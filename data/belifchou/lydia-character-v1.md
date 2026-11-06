@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`BelifChou/lydia-character-v1` es un LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, entrenado sobre los pesos de Krea 2 RAW y pensado para usarse en inferencia con Krea 2 Turbo. Lo publica el usuario BelifChou en HuggingFace bajo licencia Apache 2.0 y su funcion es introducir un concepto de personaje concreto, invocable mediante el token `lydia`, en las generaciones del modelo base. No es un modelo de lenguaje ni un transformer autoregresivo: es un adaptador de bajo rango que se carga sobre un pipeline de difusion (`Krea2Pipeline`) para condicionar la generacion de imagenes.
+`BelifChou/lydia-character-v1` es un LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, entrenado sobre los pesos de Krea 2 RAW y pensado para usarse en inferencia con Krea 2 Turbo. Lo publica el usuario BelifChou en Hugging Face bajo licencia Apache 2.0 y su funcion es introducir un concepto de personaje concreto, invocable mediante el token `lydia`, en las generaciones del modelo base. No es un modelo de lenguaje ni un transformer autoregresivo: es un adaptador de bajo rango que se carga sobre un pipeline de difusion (`Krea2Pipeline`) para condicionar la generacion de imagenes.
 
 El interes practico del artefacto es acotado: se trata de un LoRA de personaje, no de un modelo fundacional. Su relevancia depende enteramente del modelo base (Krea 2), que no forma parte de este repositorio y cuyas especificaciones no se detallan en la informacion disponible. El repositorio ocupa 1,4 GB y registra 18 descargas y 0 likes en el momento de la consulta, lo que sugiere un uso muy limitado y sin validacion comunitaria.
 
-La ficha que sigue documenta lo que se puede afirmar con rigor a partir de la model card y de los metadatos de HuggingFace, y marca explicitamente como "no disponible" todo aquello que el autor no publica: datos de entrenamiento, benchmarks, requisitos de hardware especificos del adaptador y limitaciones declaradas.
+La ficha que sigue documenta lo que se puede afirmar con rigor a partir de la model card y de los metadatos de Hugging Face, y marca explicitamente como "no disponible" todo aquello que el autor no publica: datos de entrenamiento, benchmarks, requisitos de hardware especificos del adaptador y limitaciones declaradas.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA de personaje p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BelifChou/lydia-character-v1
+- Modelo en Hugging Face: https://huggingface.co/BelifChou/lydia-character-v1
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Modelo Turbo usado en las muestras: https://huggingface.co/krea/Krea-2-Turbo (referenciado en el codigo de la model card)
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-lt` es un modelo de clasificación de tokens (token-classification) publicado en HuggingFace por el colectivo EuroEval. Según su nombre, está diseñado para la detección de alucinaciones en respuestas generadas por sistemas de pregunta-respuesta con recuperación aumentada (RAG), utilizando datos sintéticos multilingües de Wikipedia. El sufijo `lt` sugiere una variante para lituano, aunque los idiomas oficiales no están declarados.
+El modelo `EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-lt` es un modelo de clasificación de tokens (token-classification) publicado en Hugging Face por el colectivo EuroEval. Según su nombre, está diseñado para la detección de alucinaciones en respuestas generadas por sistemas de pregunta-respuesta con recuperación aumentada (RAG), utilizando datos sintéticos multilingües de Wikipedia. El sufijo `lt` sugiere una variante para lituano, aunque los idiomas oficiales no están declarados.
 
 Con 140,6 millones de parámetros y una arquitectura basada en ModernBERT (según los tags), se trata de un modelo de tamaño pequeño-medio, adecuado para tareas de clasificación a nivel de token con consumo de recursos moderado. La licencia, el conjunto de datos de entrenamiento y los detalles técnicos completos no se han publicado en la model card, que está prácticamente vacía. A pesar de la falta de documentación, el modelo puede ser útil como referencia para investigación en detección de alucinaciones, aunque su uso en producción requeriría una evaluación adicional.
 

@@ -72,6 +72,6 @@ No se dispone de datos comparativos fiables en la información proporcionada. El
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [tbhrc/llama_3_2_3b_instruct_4bit](https://huggingface.co/tbhrc/llama_3_2_3b_instruct_4bit)
+- Repositorio de Hugging Face: [tbhrc/llama_3_2_3b_instruct_4bit](https://huggingface.co/tbhrc/llama_3_2_3b_instruct_4bit)
 - Modelo oficial de Meta: [meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 - Página de documentación de Meta: [Llama 3.2](https://llama.com/llama-downloads/)

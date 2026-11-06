@@ -89,7 +89,7 @@ La model card incluye además una tabla comparativa con terceros que presenta ci
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Atlantis-Pyramid-v2 | 32B (denso, merge) | 32.768 nativo, 128k con YaRN | Apache 2.0 | en | IFEval 83,4; MMLU-Pro 64,7; AboveBoard 52 97,1 | HuggingFace, 0 descargas |
+| Atlantis-Pyramid-v2 | 32B (denso, merge) | 32.768 nativo, 128k con YaRN | Apache 2.0 | en | IFEval 83,4; MMLU-Pro 64,7; AboveBoard 52 97,1 | Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-32B-Instruct | 32B | 32.768 nativo, 128k con YaRN | Apache 2.0 (Qwen) | multilingüe | Referencia base del merge | Ampliamente desplegado |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-32B | 32B | 32.768 (Qwen2.5) | MIT (según el repositorio original) | multilingüe | Fuerte en razonamiento y matemáticas | Ampliamente desplegado |
 | Cohere Command R+ | 104B | 128k | CC-BY-NC 4.0 (no comercial) | multilingüe | Usado por el autor como referencia; GPQA 61,2 declarado por Coralfil | API y pesos con restricciones |
@@ -112,7 +112,7 @@ Los dos modelos base del merge son las alternativas naturales y están accesible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Coralfil/Atlantis-Pyramid-v2
+- Modelo en Hugging Face: https://huggingface.co/Coralfil/Atlantis-Pyramid-v2
 - Model card (README): https://huggingface.co/Coralfil/Atlantis-Pyramid-v2/blob/main/README.md
 - Repositorio relacionado del autor: https://huggingface.co/Coralfil-Atlantis/Atlantis-Pyramid
 - Dataset de dominio: https://huggingface.co/datasets/Coralfil/atlantis-ocean-master

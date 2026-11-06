@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Boogu-Image-0.1-Base es un modelo de difusion texto-a-imagen publicado en HuggingFace bajo el identificador `Jinstudio/Boogu-Image-0.1-Base`. Forma parte de la familia Boogu-Image-0.1, que incluye las variantes Base, Turbo, Edit y Edit-Turbo, y que se distribuye con licencia Apache-2.0. El modelo se integra en el ecosistema Diffusers mediante el pipeline `BooguImagePipeline` y esta orientado a generacion de imagenes de alta calidad a partir de indicaciones de texto, con soporte especifico para el renderizado de texto en chino e ingles.
+Boogu-Image-0.1-Base es un modelo de difusion texto-a-imagen publicado en Hugging Face bajo el identificador `Jinstudio/Boogu-Image-0.1-Base`. Forma parte de la familia Boogu-Image-0.1, que incluye las variantes Base, Turbo, Edit y Edit-Turbo, y que se distribuye con licencia Apache-2.0. El modelo se integra en el ecosistema Diffusers mediante el pipeline `BooguImagePipeline` y esta orientado a generacion de imagenes de alta calidad a partir de indicaciones de texto, con soporte especifico para el renderizado de texto en chino e ingles.
 
 El proyecto se presenta como un estudio empirico sobre generacion multimodal abierta con un presupuesto de computo minimo. Segun la model card, el equipo entrenó la familia con un volumen de datos aproximadamente un orden de magnitud inferior al de otros modelos abiertos comparables, y sostiene que mejoras sistematicas en la capacidad de comprension, la calidad de los datos y el pipeline de entrenamiento permiten compensar esa menor escala. El informe tecnico esta disponible en arXiv (2607.13125).
 
@@ -68,7 +68,7 @@ La model card no proporciona comparativas cuantitativas con otros modelos abiert
 
 | Modelo | Parametros | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|
-| Boogu-Image-0.1-Base | 10,29 mil millones | Apache-2.0 | Pesos abiertos en HuggingFace | — |
+| Boogu-Image-0.1-Base | 10,29 mil millones | Apache-2.0 | Pesos abiertos en Hugging Face | — |
 | Boogu-Image-0.1-Turbo | no disponible | Apache-2.0 | Pesos abiertos (variante destilada) | no disponible |
 | Boogu-Image-0.1-Edit / Edit-Turbo | no disponible | Apache-2.0 | Pesos abiertos (edicion de imagen) | no disponible |
 | Nano Banana Pro | no disponible | codigo cerrado | servicio propietario | no disponible |
@@ -90,10 +90,10 @@ No se dispone de datos de rendimiento, contexto ni benchmarks de modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jinstudio/Boogu-Image-0.1-Base
+- Hugging Face: https://huggingface.co/Jinstudio/Boogu-Image-0.1-Base
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.13125
 - Pagina del proyecto: https://boogu.org
-- Organizacion en HuggingFace: https://huggingface.co/Boogu
+- Organizacion en Hugging Face: https://huggingface.co/Boogu
 - Repositorio en GitHub: https://github.com/boogu-project/Boogu-Image
 - ModelScope: https://modelscope.cn/organization/Boogu
 - Galeria: https://boogu-gallery.netlify.app/

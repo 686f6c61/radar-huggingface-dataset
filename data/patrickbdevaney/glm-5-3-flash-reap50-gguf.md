@@ -90,7 +90,7 @@ La comparativa directa con otros modelos de la misma categoría (MoE híbridos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF
+- Repositorio Hugging Face: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF
 - Repositorio FP8 del mismo autor: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8
 - Documentación de GLM-5.3-Flash en Z.AI: https://docs.z.ai/guides/vlm/glm-5.3-flash
 - Blog de Z.AI sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash

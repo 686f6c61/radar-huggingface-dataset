@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.echo2-scaleswe.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.echo2-scaleswe.step_1
 - Repositorio ScaleSWE: https://github.com/AweAI-Team/ScaleSWE
 - Leaderboard de modelos agénticos (BenchLM): https://benchlm.ai/agentic
 - Informacion sobre GPT-5.6 Sol (driver del sweep): https://openai.com/index/gpt-5-6/ y https://openai.com/index/previewing-gpt-5-6-sol/

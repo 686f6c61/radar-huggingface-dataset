@@ -6,7 +6,7 @@
 
 El adaptador pertenece al catalogo del proyecto `Mario-RC/aif-emotional-model`, una familia de adaptadores emocionales publicados sobre distintos modelos base (Gemma-2, Gemma-4, GLM-4, Llama 3, Mistral, Phi-3) y con dos metodos de alineamiento alternativos, PPO y DPO. En este caso concreto, el entrenamiento se hizo con LLaMA-Factory, plantilla de prompt `gemma4n_nothink` y el dataset `mario-rc/aif-emotional-generation`, segun la ejecucion publicada `ppo_from_sft_lr02e6_e2b/checkpoint-10`.
 
-La relevancia del modelo es acotada y de caracter investigador: sirve como punto de comparacion reproducible entre PPO y DPO sobre el mismo corpus emocional, y como material para experimentar con dialogo condicionado por emociones en ingles. La model card advierte explicitamente de que la segunda emocion solicitada actua como etiqueta de control y no como diagnostico inferido, y de que no es un sistema clinico ni certificado de seguridad. La ficha publica en HuggingFace registra 0 descargas y 0 likes en el momento de la consulta.
+La relevancia del modelo es acotada y de caracter investigador: sirve como punto de comparacion reproducible entre PPO y DPO sobre el mismo corpus emocional, y como material para experimentar con dialogo condicionado por emociones en ingles. La model card advierte explicitamente de que la segunda emocion solicitada actua como etiqueta de control y no como diagnostico inferido, y de que no es un sistema clinico ni certificado de seguridad. La ficha publica en Hugging Face registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ La relevancia del modelo es acotada y de caracter investigador: sirve como punto
 | Framework de entrenamiento | LLaMA-Factory; plantilla de prompt `gemma4n_nothink` |
 | Ejecucion publicada | `ppo_from_sft_lr02e6_e2b/checkpoint-10` |
 | Dataset | mario-rc/aif-emotional-generation |
-| Fecha de publicacion | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ No hay datos de rendimiento publicados que permitan comparar la calidad de salid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mario-rc/emotional-rlaif-ppo-gemma-4-e2b-it
+- Modelo en Hugging Face: https://huggingface.co/mario-rc/emotional-rlaif-ppo-gemma-4-e2b-it
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mario-rc/aif-emotional-generation
 - Repositorio del proyecto: https://github.com/Mario-RC/aif-emotional-model

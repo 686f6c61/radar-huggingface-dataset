@@ -6,7 +6,7 @@ Qwen3-8B-ZeroZero-Heretic-i1-GGUF es una recopilación de cuantizaciones GGUF ge
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo de la familia Qwen3 en equipos con recursos limitados, empleando cuantizaciones con matrices de importancia (imatrix) que preservan mejor la calidad en rangos bajos de bits. El repositorio ocupa 15,4 GB e incluye un amplio abanico de cuantizaciones, desde IQ1_S hasta Q6_K, lo que cubre desde escenarios de VRAM muy restringida hasta despliegues de mayor fidelidad.
 
-No se dispone de información publicada sobre licencia, idiomas soportados ni pipeline en la ficha de HuggingFace. El nombre "Heretic" sugiere un ajuste fino orientado a reducir rechazos o censura en las respuestas, aunque no hay documentación oficial que lo confirme en la información proporcionada.
+No se dispone de información publicada sobre licencia, idiomas soportados ni pipeline en la ficha de Hugging Face. El nombre "Heretic" sugiere un ajuste fino orientado a reducir rechazos o censura en las respuestas, aunque no hay documentación oficial que lo confirme en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-ZeroZero-Heretic-i1-GGUF (este) | 8,19B | no disponible | no disponible | GGUF (multiples cuants) | HuggingFace |
-| Qwen3-8B (original) | 8,2B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF | HuggingFace |
-| Llama 3.1 8B | 8,03B | 128K | Llama 3.1 Community License | safetensors, GGUF | HuggingFace, Meta |
-| Mistral 7B | 7,24B | 32K | Apache 2.0 | safetensors, GGUF | HuggingFace, Mistral |
+| Qwen3-8B-ZeroZero-Heretic-i1-GGUF (este) | 8,19B | no disponible | no disponible | GGUF (multiples cuants) | Hugging Face |
+| Qwen3-8B (original) | 8,2B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF | Hugging Face |
+| Llama 3.1 8B | 8,03B | 128K | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, Meta |
+| Mistral 7B | 7,24B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, Mistral |
 
 La comparativa se limita a parámetros y disponibilidad porque no hay datos de rendimiento ni de contexto publicados para este checkpoint concreto. La ventaja principal frente a los originales es la disponibilidad de cuantizaciones imatrix en un rango muy amplio de bits.
 
@@ -86,6 +86,6 @@ La comparativa se limita a parámetros y disponibilidad porque no hay datos de r
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/mradermacher/Qwen3-8B-ZeroZero-Heretic-i1-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/mradermacher/Qwen3-8B-ZeroZero-Heretic-i1-GGUF
 - Modelo base del que se cuantiza: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic
 - Familia Qwen3 (referencia general): https://huggingface.co/Qwen

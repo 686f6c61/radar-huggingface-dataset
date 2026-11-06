@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Galaxea G0.5 — MolmoAct2-BimanualYAM Full | Base VLM 2B + action expert | no disponible | 0,48 épocas sobre 32.246 episodios | Apache 2.0 | HuggingFace (RoboColosseum) |
-| OpenGalaxea/G05 (base) | Base VLM 2B + action expert | no disponible | Preentrenamiento de la base | no disponible en la información proporcionada | HuggingFace (OpenGalaxea) |
-| MolmoAct2-BimanualYAM (dataset) | no aplica (conjunto de datos) | no aplica | 32.246 episodios / 76M fotogramas | no disponible en la información proporcionada | HuggingFace (allenai) |
+| Galaxea G0.5 — MolmoAct2-BimanualYAM Full | Base VLM 2B + action expert | no disponible | 0,48 épocas sobre 32.246 episodios | Apache 2.0 | Hugging Face (RoboColosseum) |
+| OpenGalaxea/G05 (base) | Base VLM 2B + action expert | no disponible | Preentrenamiento de la base | no disponible en la información proporcionada | Hugging Face (OpenGalaxea) |
+| MolmoAct2-BimanualYAM (dataset) | no aplica (conjunto de datos) | no aplica | 32.246 episodios / 76M fotogramas | no disponible en la información proporcionada | Hugging Face (allenai) |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada, por lo que la comparación se limita a parámetros conocidos, licencia y disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/yam-g0.5
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/yam-g0.5
 - Dataset MolmoAct2-BimanualYAM: https://huggingface.co/datasets/allenai/MolmoAct2-BimanualYAM-Dataset
 - Base OpenGalaxea/G05: https://huggingface.co/OpenGalaxea/G05
 - Registro de entrenamiento en WandB: https://wandb.ai/shaileshxml-nus/g05-yam/runs/dmlvtlqz

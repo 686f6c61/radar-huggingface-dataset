@@ -83,7 +83,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resoajoe/jpeg-provenance-nano
+- Modelo en Hugging Face: https://huggingface.co/resoajoe/jpeg-provenance-nano
 - Dataset VISION (Shullani et al., 2017): referenciado en la model card, disponible bajo CC BY-SA 4.0
 - Repositorio loglens (mencionado en la model card, contiene los scripts de entrenamiento y extraccion): no se proporciona URL directa en la informacion disponible
 - Repositorio resoajoe/nanolab (veredicto de cuatro compuertas que produjo esta model card): no se proporciona URL directa

@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 ## Enlaces
 
 - Repositorio de la cuantizacion: https://huggingface.co/BLCKHWK60/LFM2-24B-A2B-MLX-oQ4
-- Modelo original en HuggingFace: https://huggingface.co/LiquidAI/LFM2-24B-A2B
+- Modelo original en Hugging Face: https://huggingface.co/LiquidAI/LFM2-24B-A2B
 - Pagina en LM Studio: https://lmstudio.ai/models/lfm2-24b-a2b
 - Documentacion oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm2-24b-a2b
 - Blog de Liquid AI sobre el modelo: https://www.liquid.ai/blog/lfm2-24b-a2b

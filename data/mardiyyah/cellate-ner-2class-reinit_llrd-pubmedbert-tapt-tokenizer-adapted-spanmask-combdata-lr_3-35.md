@@ -92,7 +92,7 @@ La ventaja de CeLLaTe-ner-2class es su adaptación específica a la tarea de ent
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/Mardiyyah/CeLLaTe-ner-2class-reinit_llrd-pubmedbert-tapt-tokenizer-adapted-spanmask-combData-lr_3.35)
-- [Modelo base en HuggingFace](https://huggingface.co/Mardiyyah/CeLLaTe-tapt-pubmedbert-tokenizer-adapted-spanmask-combinedData)
+- [Hugging Face - modelo](https://huggingface.co/Mardiyyah/CeLLaTe-ner-2class-reinit_llrd-pubmedbert-tapt-tokenizer-adapted-spanmask-combData-lr_3.35)
+- [Modelo base en Hugging Face](https://huggingface.co/Mardiyyah/CeLLaTe-tapt-pubmedbert-tokenizer-adapted-spanmask-combinedData)
 - [Dataset de entrenamiento (referencia)](https://huggingface.co/datasets/OTAR3088/CeLLaTe-ner-2class-iob_final)
 - [Space de demostración (app.py)](https://d6108366.hf-mirror.com/spaces/OTAR3088/CeLLaTe/blob/main/app.py)

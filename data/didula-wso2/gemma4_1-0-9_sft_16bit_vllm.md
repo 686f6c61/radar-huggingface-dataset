@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `didula-wso2/gemma4_1-0-9_sft_16bit_vllm` es un ajuste fino supervisado (SFT) de 7.996.156.490 parametros (aproximadamente 8.000 millones) publicado por el usuario didula-wso2 en HuggingFace. Se trata de la novena iteracion de una cadena de fine-tuning que parte de `didula-wso2/gemma4_1-0-8_sft_16bit_vllm`, el cual a su vez deriva de la familia Gemma 4 segun las etiquetas del repositorio. El modelo se distribuye en safetensors de 16 bits, con un tamano de repositorio de 16 GB coherente con ese numero de parametros.
+El modelo `didula-wso2/gemma4_1-0-9_sft_16bit_vllm` es un ajuste fino supervisado (SFT) de 7.996.156.490 parametros (aproximadamente 8.000 millones) publicado por el usuario didula-wso2 en Hugging Face. Se trata de la novena iteracion de una cadena de fine-tuning que parte de `didula-wso2/gemma4_1-0-8_sft_16bit_vllm`, el cual a su vez deriva de la familia Gemma 4 segun las etiquetas del repositorio. El modelo se distribuye en safetensors de 16 bits, con un tamano de repositorio de 16 GB coherente con ese numero de parametros.
 
-La relevancia de esta publicacion es limitada pero concreta: sirve como ejemplo de flujo de trabajo de ajuste fino acelerado con Unsloth y la libreria TRL de HuggingFace (el autor afirma un entrenamiento 2x mas rapido), y esta preparado para inferencia con vLLM y con el stack de text-generation-inference, tal y como indican las etiquetas `vllm`, `text-generation-inference` y `transformers`. La pipeline declarada es `image-text-to-text`, lo que implica capacidades multimodales de entrada (imagen y texto).
+La relevancia de esta publicacion es limitada pero concreta: sirve como ejemplo de flujo de trabajo de ajuste fino acelerado con Unsloth y la libreria TRL de Hugging Face (el autor afirma un entrenamiento 2x mas rapido), y esta preparado para inferencia con vLLM y con el stack de text-generation-inference, tal y como indican las etiquetas `vllm`, `text-generation-inference` y `transformers`. La pipeline declarada es `image-text-to-text`, lo que implica capacidades multimodales de entrada (imagen y texto).
 
 Ahora bien, la informacion disponible es muy escasa: el repositorio no incluye model card detallada, no se publican resultados de benchmarks, no se documentan los datos de entrenamiento ni la longitud de contexto soportada, y cuenta con 0 descargas y 0 likes en el momento de la consulta. Cualquier evaluacion en produccion deberia ir precedida de una validacion propia.
 
@@ -24,7 +24,7 @@ Ahora bien, la informacion disponible es muy escasa: el repositorio no incluye m
 
 La model card no describe la arquitectura interna. Lo unico verificable es que se trata de un modelo de la familia Gemma 4 con pipeline `image-text-to-text`, lo que implica un transformer capaz de procesar imagenes y texto de forma conjunta, y que los pesos se almacenan en 16 bits (safetensors) con 7.996.156.490 parametros. Todo lo relativo a mecanismos de atencion, numero de capas, dimensiones ocultas, tokenizador o estrategia multimodal es "no disponible" en la informacion proporcionada.
 
-En cuanto al entrenamiento, la model card unicamente declara que el modelo fue ajustado con Unsloth y la libreria TRL de HuggingFace, con una mejora de velocidad declarada de 2x respecto a un entrenamiento convencional, y que parte del checkpoint `didula-wso2/gemma4_1-0-8_sft_16bit_vllm`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otra optimizacion de preferencias posterior al SFT. El nombre del repositorio sugiere una secuencia de iteraciones sucesivas de ajuste supervisado (la octava y la novena), pero no se documenta que cambios introduce cada una.
+En cuanto al entrenamiento, la model card unicamente declara que el modelo fue ajustado con Unsloth y la libreria TRL de Hugging Face, con una mejora de velocidad declarada de 2x respecto a un entrenamiento convencional, y que parte del checkpoint `didula-wso2/gemma4_1-0-8_sft_16bit_vllm`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otra optimizacion de preferencias posterior al SFT. El nombre del repositorio sugiere una secuencia de iteraciones sucesivas de ajuste supervisado (la octava y la novena), pero no se documenta que cambios introduce cada una.
 
 ## Capacidades
 
@@ -87,8 +87,8 @@ No se dispone en la informacion proporcionada de datos verificables sobre modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/didula-wso2/gemma4_1-0-9_sft_16bit_vllm
-- Modelo base en HuggingFace: https://huggingface.co/didula-wso2/gemma4_1-0-8_sft_16bit_vllm
+- Hugging Face: https://huggingface.co/didula-wso2/gemma4_1-0-9_sft_16bit_vllm
+- Modelo base en Hugging Face: https://huggingface.co/didula-wso2/gemma4_1-0-8_sft_16bit_vllm
 - Unsloth (repositorio citado en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria citada en la model card): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria citada en la model card): https://github.com/huggingface/trl
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

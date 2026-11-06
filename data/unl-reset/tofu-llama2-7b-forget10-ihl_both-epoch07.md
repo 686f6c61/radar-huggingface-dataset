@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch07 | 6.738.415.616 | no disponible | Unlearning TOFU `forget10` | Llama 2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | Modelo TOFU afinado (punto de partida) | Llama 2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4.096 (familia Llama 2) | Chat general | Llama 2 | HuggingFace |
-| Llama 2 7B base (meta-llama/Llama-2-7b-hf) | ~6.738 M | 4.096 | Modelo base general | Llama 2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch07 | 6.738.415.616 | no disponible | Unlearning TOFU `forget10` | Llama 2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | Modelo TOFU afinado (punto de partida) | Llama 2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4.096 (familia Llama 2) | Chat general | Llama 2 | Hugging Face |
+| Llama 2 7B base (meta-llama/Llama-2-7b-hf) | ~6.738 M | 4.096 | Modelo base general | Llama 2 | Hugging Face |
 
 La comparacion relevante es frente a `locuslab/tofu_ft_llama2-7b` (modelo sin desaprender) y frente al Llama 2 chat original; no se dispone de metricas publicadas en la informacion proporcionada para cuantificar la diferencia de rendimiento entre ellos.
 
@@ -87,7 +87,7 @@ La comparacion relevante es frente a `locuslab/tofu_ft_llama2-7b` (modelo sin de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch07
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch07
 - Modelo base TOFU afinado: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo chat de origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (benchmark de unlearning): https://github.com/locuslab/tofu

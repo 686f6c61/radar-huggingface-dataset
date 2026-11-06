@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Alternativa | Que aporta | Parametros / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| shy0423/GMM (este repositorio) | Mezclas gaussianas de referencia K1 y K4 sobre cinco codificadores, mas pesos congelados de codificadores | NPZ + TAR, 6,7 GB | no disponible | HuggingFace, 0 descargas |
+| shy0423/GMM (este repositorio) | Mezclas gaussianas de referencia K1 y K4 sobre cinco codificadores, mas pesos congelados de codificadores | NPZ + TAR, 6,7 GB | no disponible | Hugging Face, 0 descargas |
 | torch-fidelity | Implementacion de referencia de FID, IS y KID con Inception | Codigo Python mas pesos Inception | licencia del proyecto torch-fidelity | GitHub publico |
-| FD-Loss (Jiawei-Yang) | Metodo y estadisticas de referencia; incluye checkpoints base de generadores | Codigo mas checkpoints | no disponible en la informacion consultada | GitHub y HuggingFace (`jjiaweiyang/FD-Loss`) |
+| FD-Loss (Jiawei-Yang) | Metodo y estadisticas de referencia; incluye checkpoints base de generadores | Codigo mas checkpoints | no disponible en la informacion consultada | GitHub y Hugging Face (`jjiaweiyang/FD-Loss`) |
 | FID / KID clasicos con Inception | Metrica estandar de la literatura, ampliamente comparable | Un unico Gaussiano (FID) o kernel (KID) | depende de la implementacion | multiples implementaciones |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shy0423/GMM
+- Hugging Face: https://huggingface.co/shy0423/GMM
 - Codificador SigLIP: https://huggingface.co/timm/vit_so400m_patch16_siglip_256.v2_webli
 - Codificador MAE: https://huggingface.co/timm/vit_large_patch16_224.mae
 - Codificador DINOv2: https://huggingface.co/timm/vit_large_patch14_dinov2.lvd142m

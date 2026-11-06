@@ -24,7 +24,7 @@ Conviene subrayar que el repositorio tiene acceso restringido (gated), solo 4 de
 | Licencia | other (licencia personalizada; hereda las condiciones del modelo base, consultar términos) |
 | Formato de pesos | safetensors en formato EXL3 (librería `exllamav3`) |
 | Tamaño del repositorio | 442,3 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Librería de inferencia | exllamav3 |
 | Descargas / likes | 4 / 4 |
 | Fecha de creación / actualización | 2026-10-18 / 2026-10-19 |
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del modelo base ni de variantes comparable
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay descripción de arquitectura, datos de entrenamiento, evaluación ni instrucciones de uso. Cualquier afirmación sobre capacidades es una inferencia, no un dato verificado.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace; la licencia es "other" y hereda los términos del modelo base, que pueden incluir restricciones de uso comercial. Verificar antes de integrar en producto.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face; la licencia es "other" y hereda los términos del modelo base, que pueden incluir restricciones de uso comercial. Verificar antes de integrar en producto.
 - Cuantización a 1,61 bpw: es un ratio extremadamente bajo. Es esperable degradación en tareas sensibles a la precisión numérica (matemáticas, código, instrucciones largas), pero no se han publicado mediciones que la cuantifiquen.
 - Esquema de precisión mixta no documentado: se desconoce qué capas se preservan en mayor precisión, lo que dificulta reproducir el resultado o auditar su calidad.
 - Discrepancia de tamaño: 442,3 GB declarados frente a ~86,6 GB teóricos de pesos. Puede indicar artefactos adicionales, versiones múltiples o un error de metadatos; verificar antes de reservar almacenamiento.
@@ -98,6 +98,6 @@ No se dispone de datos de rendimiento del modelo base ni de variantes comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vcruz305/DSV4.1-Flash-1017-DERISKED-EXL3-1.61bpw
+- Repositorio en Hugging Face: https://huggingface.co/vcruz305/DSV4.1-Flash-1017-DERISKED-EXL3-1.61bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada. La búsqueda web realizada no devolvió resultados relacionados con el modelo (únicamente resultados de un servicio de streaming sin relación).

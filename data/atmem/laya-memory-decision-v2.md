@@ -110,7 +110,7 @@ La información disponible solo permite comparar el checkpoint ajustado con su p
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/atmem/laya-memory-decision-v2
+- Página del modelo en Hugging Face: https://huggingface.co/atmem/laya-memory-decision-v2
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Fuente de Laya: https://huggingface.co/NandhaKishorM/laya
 - Dataset de entrenamiento: https://huggingface.co/datasets/atmem/stateful-memory-transitions-10pct-v2

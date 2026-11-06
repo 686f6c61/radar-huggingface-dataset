@@ -31,8 +31,8 @@ Tampoco se documentan los datos de entrenamiento: se desconoce el numero de toke
 
 - Procesamiento multimodal image-text-to-text: el pipeline declarado acepta imagenes y texto como entrada y genera texto.
 - Generacion de texto conversacional: la etiqueta `conversational` indica uso en dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
-- Carga mediante la libreria transformers: integrable en flujos estandar de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
+- Carga mediante la libreria transformers: integrable en flujos estandar de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El repositorio ocupa 31,2 GB, coherente con un almacenamiento en FP8 mas ficheros auxiliares.
 - GPU recomendadas: para FP8 nativo, GPU con soporte de FP8 como H100, H200 o L40S; una A100 de 40 GB o 80 GB tambien puede alojar los pesos en la mayoria de configuraciones de inferencia.
 - Compatibilidad con GPU de consumo: los pesos en FP8 no caben en una RTX 4090 de 24 GB sin cuantizacion adicional; seria necesario convertir a INT4 o aplicar cuantizacion en tiempo de carga para ajustarse a 24 GB o menos. En tarjetas de 16 GB o inferiores el modelo no es viable sin cuantizaciones agresivas.
-- Opciones de despliegue: la libreria declarada es transformers; la etiqueta `endpoints_compatible` apunta a HuggingFace Inference Endpoints. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada, aunque el formato `compressed-tensors` es habitual en motores como vLLM (no confirmado).
+- Opciones de despliegue: la libreria declarada es transformers; la etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada, aunque el formato `compressed-tensors` es habitual en motores como vLLM (no confirmado).
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No se dispone de especificaciones tecnicas de los modelos de la cadena de deriva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huuhuyng/qwen36-27b-threejs-ft-ep2
+- Modelo en Hugging Face: https://huggingface.co/huuhuyng/qwen36-27b-threejs-ft-ep2
 - Modelo base directo: https://huggingface.co/computer-vision-ai-lab/Qwen-3.6-27B-UmberShrike
 - Paso intermedio de la cadena: https://huggingface.co/Tooony133/Qwen-3.6-27B-SkinnyPete
 - Modelo raiz de la familia: https://huggingface.co/Qwen/Qwen3.6-27B

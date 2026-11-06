@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oprius-3.0-1.1B es un modelo de lenguaje conversacional de pequeno tamano (1.100.048.384 parametros, aproximadamente 1,1 mil millones) desarrollado por el usuario zzzekryo y publicado en HuggingFace. La version analizada aqui es la cuantizacion GGUF realizada por bartowski, un conocido creador de cuantizaciones para llama.cpp, que facilita su ejecucion en hardware de consumo mediante el formato GGUF con tecnicas de imatrix.
+Oprius-3.0-1.1B es un modelo de lenguaje conversacional de pequeno tamano (1.100.048.384 parametros, aproximadamente 1,1 mil millones) desarrollado por el usuario zzzekryo y publicado en Hugging Face. La version analizada aqui es la cuantizacion GGUF realizada por bartowski, un conocido creador de cuantizaciones para llama.cpp, que facilita su ejecucion en hardware de consumo mediante el formato GGUF con tecnicas de imatrix.
 
 El modelo esta construido sobre una arquitectura TinyLlama (segun los tags del repositorio) y esta especializado en conversacion general y ayuda al usuario. Su proposito principal es ofrecer un asistente conversacional ligero que pueda desplegarse en entornos con recursos limitados, como portatiles, mini-PC o incluso dispositivos con poca memoria RAM, manteniendo una calidad razonable para tareas de dialogo cotidiano.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Oprius-3.0-1.1B (esta ficha) | ~1,1B | no disponible | Apache 2.0 | GGUF, safetensors | HuggingFace |
-| TinyLlama-1.1B (base arquitectonica) | ~1,1B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| Oprius-3.0-1.1B (esta ficha) | ~1,1B | no disponible | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| TinyLlama-1.1B (base arquitectonica) | ~1,1B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Hugging Face |
 | Modelos de ~1B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada. La comparacion con TinyLlama se basa unicamente en la relacion arquitectonica indicada por los tags del repositorio, no en evaluaciones de calidad.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/bartowski/zzzekryo_Oprius-3.0-1.1B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/bartowski/zzzekryo_Oprius-3.0-1.1B-GGUF
 - Modelo base original: https://huggingface.co/zzzekryo/Oprius-3.0-1.1B
 - Dataset de entrenamiento: https://huggingface.co/datasets/zzzekryo/conversation-and-web-examples-ForOprius
 - llama.cpp (release b11969): https://github.com/ggml-org/llama.cpp/releases/tag/b11969

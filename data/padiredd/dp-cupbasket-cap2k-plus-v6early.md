@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp-cupbasket-cap2k-plus-v6early es una política de difusión (diffusion policy) para robótica bimanual desarrollada por el usuario padiredd y publicada en HuggingFace bajo el ecosistema LeRobot. El modelo resuelve una tarea concreta de manipulación: recoger un vaso azul con la mano izquierda, pasarlo a la mano derecha y depositarlo sobre una cesta, usando el robot bimanual ROBOTIS FFW SG2 equipado con pinzas CAD y cámaras de muñeca calibradas. Con 287,5 millones de parámetros, se enmarca en la familia de políticas de imitación basadas en difusión, que generan trayectorias de acción mediante un proceso de denoising DDPM condicionado por observaciones visuales y de estado.
+dp-cupbasket-cap2k-plus-v6early es una política de difusión (diffusion policy) para robótica bimanual desarrollada por el usuario padiredd y publicada en Hugging Face bajo el ecosistema LeRobot. El modelo resuelve una tarea concreta de manipulación: recoger un vaso azul con la mano izquierda, pasarlo a la mano derecha y depositarlo sobre una cesta, usando el robot bimanual ROBOTIS FFW SG2 equipado con pinzas CAD y cámaras de muñeca calibradas. Con 287,5 millones de parámetros, se enmarca en la familia de políticas de imitación basadas en difusión, que generan trayectorias de acción mediante un proceso de denoising DDPM condicionado por observaciones visuales y de estado.
 
 El modelo se entrenó sobre una mezcla de datos: 2.012 demostraciones simuladas de la versión 3 de la tarea (publicadas aparte) más aproximadamente 680 éxitos tempranos de la recolección v6, todavía en curso en el momento del entrenamiento. Esta decisión responde a una petición del usuario de obtener una primera versión funcional mientras se completaba el conjunto v6 definitivo. La inferencia opera a 15 Hz con un horizonte de predicción de 64 pasos, de los cuales se ejecutan 32.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Tipo | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-cupbasket-cap2k-plus-v6early | 287,5 M | Diffusion policy bimanual (LeRobot) | 64 pasos, 32 ejecutados | other | HuggingFace, repo de 11,5 GB |
+| dp-cupbasket-cap2k-plus-v6early | 287,5 M | Diffusion policy bimanual (LeRobot) | 64 pasos, 32 ejecutados | other | Hugging Face, repo de 11,5 GB |
 | Diffusion Policy (Cheng et al., 2023) | no disponible | Diffusion policy general | no disponible | no disponible | Paper y código de referencia |
 | ACT / Action Chunking Transformer (LeRobot) | no disponible | Transformer de imitación | no disponible | no disponible | Integrado en LeRobot |
-| Otros modelos LeRobot del mismo autor | no disponible | Políticas de imitación | no disponible | no disponible | Repos de HuggingFace de padiredd |
+| Otros modelos LeRobot del mismo autor | no disponible | Políticas de imitación | no disponible | no disponible | Repos de Hugging Face de padiredd |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a categoría, tipo de arquitectura y disponibilidad.
 
@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-cupbasket-cap2k-plus-v6early
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-cupbasket-cap2k-plus-v6early
 - Dataset v3 de referencia (mencionado en la model card): https://huggingface.co/padiredd/pick-cup-basket-cap2k-3cam
 - LeRobot (framework de entrenamiento e inferencia): https://github.com/huggingface/lerobot
 - Diffusion Policy (paper de referencia): https://arxiv.org/abs/2303.04137
 - Isaac Lab (entorno de simulación mencionado en los tags): https://github.com/isaac-sim/IsaacLab
-- Perfil del autor en HuggingFace: https://huggingface.co/padiredd
+- Perfil del autor en Hugging Face: https://huggingface.co/padiredd

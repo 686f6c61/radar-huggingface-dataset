@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pass-taxi-v3 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Abhiabhi12, entrenado para resolver el entorno Taxi-v3 con un algoritmo etiquetado como q-learning. La model card es minima: se limita a declarar el algoritmo, el entorno y una metrica de recompensa media de 8.50 +/- 0.00, marcada como no verificada. No se documenta el proceso de entrenamiento, la arquitectura de la funcion Q (tabular o aproximada con red neuronal), los hiperparametros ni el numero de episodios.
+pass-taxi-v3 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Abhiabhi12, entrenado para resolver el entorno Taxi-v3 con un algoritmo etiquetado como q-learning. La model card es minima: se limita a declarar el algoritmo, el entorno y una metrica de recompensa media de 8.50 +/- 0.00, marcada como no verificada. No se documenta el proceso de entrenamiento, la arquitectura de la funcion Q (tabular o aproximada con red neuronal), los hiperparametros ni el numero de episodios.
 
 Taxi-v3 es un entorno discreto clasico de Gym/Gymnasium en el que un taxi debe recoger y dejar pasajeros en una cuadricula de 5x5 con cuatro posibles destinos. El espacio de estados es discreto y pequeno, y el espacio de acciones consta de seis movimientos. Esto lo convierte en un banco de pruebas habitual para algoritmos tabulares y para validar implementaciones de RL antes de escalar a entornos mas complejos.
 
@@ -47,14 +47,14 @@ La model card no aporta informacion sobre la arquitectura interna del agente. En
 - Docencia de aprendizaje por refuerzo: el agente sirve como ejemplo ejecutable de q-learning sobre un entorno con espacio de estados finito y trazable, ideal para que estudiantes inspeccionen la politica aprendida y comparen con una politica optima calculada por iteracion de valores.
 - Verificacion de pipelines de evaluacion: al declarar una recompensa media concreta (8.50) y un protocolo reproducible sobre Taxi-v3, el artefacto puede usarse como caso de prueba para comprobar que un runner de RL (por ejemplo, un script propio con Gymnasium) reproduce la misma metrica.
 - Linea base en experimentos comparativos: cualquier investigador que pruebe un algoritmo nuevo en Taxi-v3 (DQN, PPO, A2C, metodos tabulares) puede confrontar su recompensa media contra este resultado declarado, siempre que verifique primero el protocolo de evaluacion.
-- Pruebas de integracion en bibliotecas: sirve para validar la carga de agentes, el versionado de artefactos en HuggingFace Hub y la serializacion/deserializacion de politicas en entornos discretos de juguete.
+- Pruebas de integracion en bibliotecas: sirve para validar la carga de agentes, el versionado de artefactos en Hugging Face Hub y la serializacion/deserializacion de politicas en entornos discretos de juguete.
 - Generacion de trayectorias sinteticas: la politica aprendida puede ejecutarse para producir secuencias estado-accion-recompensa que alimenten tecnicas de imitation learning o de learning from demonstrations en el mismo entorno.
 - Prototipado de sistemas de despacho sobre simulacion: los conceptos de asignacion de recursos y planificacion de rutas en un mundo discreto pueden trasladarse, solo como prueba de concepto y no como componente de produccion, a simuladores de flotas o logistica.
-- Reproducibilidad y auditoria de artefactos: permite estudiar como se publican agentes de RL en HuggingFace, que metadatos incluye el model-index y que informacion falta para considerarlos reproducibles.
+- Reproducibilidad y auditoria de artefactos: permite estudiar como se publican agentes de RL en Hugging Face, que metadatos incluye el model-index y que informacion falta para considerarlos reproducibles.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index, no verificados por HuggingFace ni por terceros.
+Datos declarados por el autor en el model-index, no verificados por Hugging Face ni por terceros.
 
 | Algoritmo | Tarea | Dataset | Metrica | Valor | Verificado |
 |---|---|---|---|---|---|
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 | Solucion | Algoritmo | Parametros | Contexto | Recompensa media en Taxi-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Abhiabhi12/pass-taxi-v3 | q-learning | no disponible | no aplica | 8.50 +/- 0.00 (no verificado) | no disponible | HuggingFace Hub, 0 descargas, 1 like |
+| Abhiabhi12/pass-taxi-v3 | q-learning | no disponible | no aplica | 8.50 +/- 0.00 (no verificado) | no disponible | Hugging Face Hub, 0 descargas, 1 like |
 | q-learning tabular de referencia | q-learning | tabla estado-accion | no aplica | no disponible en esta busqueda | no aplica | implementacion propia en cualquier libreria de RL |
 | DQN sobre Taxi-v3 | deep q-learning | no disponible | no aplica | no disponible en esta busqueda | no aplica | existen agentes preentrenados en zoos de referencia de librerias de RL, sin metricas confirmadas aqui |
 | PPO sobre Taxi-v3 | policy gradient | no disponible | no aplica | no disponible en esta busqueda | no aplica | implementable con Stable-Baselines3, RLlib o CleanRL |
@@ -101,6 +101,6 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abhiabhi12/pass-taxi-v3
+- Hugging Face: https://huggingface.co/Abhiabhi12/pass-taxi-v3
 - La busqueda web realizada no ha devuelto ningun resultado relevante para este modelo: el unico resultado obtenido era una pagina de inicio de sesion de un proveedor de hosting (login.ionos.de), sin relacion con el artefacto.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion disponible.

@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ketimiroshnik/llm-course-hw2-ppo | 134,5M | no disponible | PPO sobre SmolLM2-135M-Instruct | no disponible | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | 8.192 tokens (segun modelo base) | SFT + DPO sobre SmolLM2-135M | Apache 2.0 (segun modelo base) | HuggingFace, ampliamente descargado |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 8.192 tokens (segun modelo base) | SFT + DPO | Apache 2.0 (segun modelo base) | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 500M | 32.768 tokens (segun modelo base) | SFT + preferencias | Apache 2.0 (segun modelo base) | HuggingFace |
+| ketimiroshnik/llm-course-hw2-ppo | 134,5M | no disponible | PPO sobre SmolLM2-135M-Instruct | no disponible | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | 8.192 tokens (segun modelo base) | SFT + DPO sobre SmolLM2-135M | Apache 2.0 (segun modelo base) | Hugging Face, ampliamente descargado |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 8.192 tokens (segun modelo base) | SFT + DPO | Apache 2.0 (segun modelo base) | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 500M | 32.768 tokens (segun modelo base) | SFT + preferencias | Apache 2.0 (segun modelo base) | Hugging Face |
 
 La comparativa se limita a parametros y procedencia porque no hay benchmarks publicados para este ajuste. Frente al modelo base, la unica diferencia medible es el proceso de PPO y la metrica de recompensa; el contexto, la licencia y el rendimiento en tareas estandar no estan documentados para esta variante.
 
@@ -95,7 +95,7 @@ La comparativa se limita a parametros y procedencia porque no hay benchmarks pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketimiroshnik/llm-course-hw2-ppo
+- Modelo en Hugging Face: https://huggingface.co/ketimiroshnik/llm-course-hw2-ppo
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Paper de SmolLM2: no disponible en la informacion proporcionada

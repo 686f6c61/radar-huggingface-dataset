@@ -99,7 +99,7 @@ La comparación cualitativa es clara: frente al modelo base, lalo-1.5b gana espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyopsec/lalo-1.5b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/tinyopsec/lalo-1.5b-GGUF
 - Modelo base (Qwen2.5-1.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Ajuste original en safetensors: https://huggingface.co/ErdalX/lalo-1.5b
 - Repositorio de llama.cpp (herramienta de conversión y runtime): https://github.com/ggml-org/llama.cpp

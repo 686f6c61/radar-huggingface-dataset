@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-PerfectBlend-FP8-W8A8
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-PerfectBlend-FP8-W8A8
 - Drafter de origen: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de calibracion regenerado: https://huggingface.co/datasets/shanjiaz/OpenPerfectBlend-Qwen38-27B-regenerated

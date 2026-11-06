@@ -73,7 +73,7 @@ Los resultados publicados por el autor son de una unica ejecucion y sobre conjun
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeMri98/hvac-twin-agent-v5 | 3B + LoRA | No disponible | HVAC, gemelo termico, NCC Seccion J | Apache 2.0 | HuggingFace, 0 descargas |
+| GeMri98/hvac-twin-agent-v5 | 3B + LoRA | No disponible | HVAC, gemelo termico, NCC Seccion J | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-3B-Instruct (modelo base) | 3B | No disponible en esta ficha | Proposito general, instrucciones | Apache 2.0 | Ampliamente disponible |
 | Alternativas de dominio HVAC | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ No se dispone de informacion sobre otros adaptadores o modelos especializados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeMri98/hvac-twin-agent-v5
+- Modelo en Hugging Face: https://huggingface.co/GeMri98/hvac-twin-agent-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - National Construction Code (ABCB): https://ncc.abcb.gov.au
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

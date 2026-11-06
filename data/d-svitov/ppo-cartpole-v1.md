@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`d-svitov/ppo-CartPole-v1` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno clásico `CartPole-v1` de Gymnasium. Lo publica el usuario d-svitov en HuggingFace y forma parte de una implementación propia vinculada al curso de deep reinforcement learning (deep-rl-course), con una configuración de hiperparámetros que sigue de cerca la implementación de referencia de CleanRL.
+`d-svitov/ppo-CartPole-v1` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno clásico `CartPole-v1` de Gymnasium. Lo publica el usuario d-svitov en Hugging Face y forma parte de una implementación propia vinculada al curso de deep reinforcement learning (deep-rl-course), con una configuración de hiperparámetros que sigue de cerca la implementación de referencia de CleanRL.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política neuronal pequeña (una MLP) que mapea observaciones de 4 dimensiones (posición y velocidad del carro, ángulo y velocidad angular del poste) a 2 acciones discretas (empujar a izquierda o derecha). Su relevancia es didáctica y de reproducibilidad: sirve como ejemplo mínimo y verificable de un pipeline PPO completo, útil para comparar implementaciones y para depurar entornos de RL antes de escalar a problemas mayores.
 
@@ -85,7 +85,7 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d-svitov/ppo-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/d-svitov/ppo-CartPole-v1
 - CleanRL (implementación de referencia de PPO): https://github.com/vwxyzjn/cleanrl
 - Gymnasium, entorno CartPole-v1: https://gymnasium.farama.org/environments/classic_control/cart_pole/
 - Documentación de Stable-Baselines3 (PPO): https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html

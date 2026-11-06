@@ -4,7 +4,7 @@
 
 El modelo `alst10/new-adult-writer-Q4_0-ROCmFP4-GGUF` es un archivo de pesos en formato GGUF, publicado por el usuario alst10 el 30 de agosto de 2026. El nombre sugiere que se trata de una cuantización Q4_0 (4 bits) con una variante adicional para ROCm (FP4), orientada a la generación de escritura creativa con temática adulta. Sin embargo, la model card no contiene ninguna descripción técnica, arquitectura, tamaño, contexto ni datos de entrenamiento. El repositorio no presenta descargas ni valoraciones, lo que indica que es una publicación reciente o de escasa difusión.
 
-La licencia declarada es Creative Commons Attribution 4.0 (CC-BY-4.0), lo que permite su uso y modificación con atribución. No se especifican idiomas soportados ni pipeline de uso. Dada la ausencia de información en la ficha del autor, esta ficha técnica se basa únicamente en los datos disponibles en HuggingFace y en inferencias razonables a partir del nombre del archivo, marcando explícitamente todo dato no confirmado como «no disponible».
+La licencia declarada es Creative Commons Attribution 4.0 (CC-BY-4.0), lo que permite su uso y modificación con atribución. No se especifican idiomas soportados ni pipeline de uso. Dada la ausencia de información en la ficha del autor, esta ficha técnica se basa únicamente en los datos disponibles en Hugging Face y en inferencias razonables a partir del nombre del archivo, marcando explícitamente todo dato no confirmado como «no disponible».
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alst10/new-adult-writer-Q4_0-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/alst10/new-adult-writer-Q4_0-ROCmFP4-GGUF
 - Repositorio relacionado del mismo autor: https://huggingface.co/alst10/alston-writer-gguf
 - Repositorio con nombre similar de otro autor: https://huggingface.co/ahmed22xa/new-adult-writer-GGUF
 - Guía de LLMs sin censura por VRAM (referencia externa): https://insiderllm.com/guides/best-uncensored-local-llms/

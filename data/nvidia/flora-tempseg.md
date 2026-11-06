@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flora-TempSeg (Flora-segmenter-9B) | 9,0 x 10^9 | ventana de 16 s o 32 s a 4 Hz; salida en ticks de 20 Hz | Segmentación temporal de operaciones en vídeo de manipulación | NVIDIA OneWay Noncommercial (solo investigacion) | HuggingFace, adaptador PEFT de 0,5 GB sobre Qwen3.5-9B |
-| Qwen3.5-9B (modelo base) | 9,0 x 10^9 | no disponible en la informacion proporcionada | VLM de proposito general | Apache 2.0 | HuggingFace |
+| Flora-TempSeg (Flora-segmenter-9B) | 9,0 x 10^9 | ventana de 16 s o 32 s a 4 Hz; salida en ticks de 20 Hz | Segmentación temporal de operaciones en vídeo de manipulación | NVIDIA OneWay Noncommercial (solo investigacion) | Hugging Face, adaptador PEFT de 0,5 GB sobre Qwen3.5-9B |
+| Qwen3.5-9B (modelo base) | 9,0 x 10^9 | no disponible en la informacion proporcionada | VLM de proposito general | Apache 2.0 | Hugging Face |
 | Alternativas publicas de segmentacion temporal de acciones | no disponible | no disponible | Segmentacion temporal | no disponible | no disponible |
 
 No se han identificado en la informacion disponible otros modelos abiertos directamente comparables en la tarea de segmentacion temporal de operaciones para datos de robotica con entrada multi-camara y salida JSON cosible entre ventanas.
@@ -88,7 +88,7 @@ No se han identificado en la informacion disponible otros modelos abiertos direc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Flora-TempSeg
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Flora-TempSeg
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base (Apache 2.0): https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/LICENSE
 - NVIDIA OneWay Noncommercial License (22 de marzo de 2022): https://developer.download.nvidia.com/licenses/NVIDIA-OneWay-Noncommercial-License-22Mar2022.pdf

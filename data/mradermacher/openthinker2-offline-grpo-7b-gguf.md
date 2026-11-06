@@ -36,7 +36,7 @@ Lo que si esta documentado es el proceso de cuantizacion. El repositorio se gene
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, tal como refleja la etiqueta conversational del repositorio y el campo language: en.
-- Compatibilidad con endpoints de inferencia (etiqueta endpoints_compatible), lo que permite desplegarlo detras de APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints de inferencia (etiqueta endpoints_compatible), lo que permite desplegarlo detras de APIs compatibles con el formato de Hugging Face.
 - Ejecucion local en CPU y GPU mediante el ecosistema llama.cpp y sus derivados, al distribuirse en formato GGUF.
 - Cuantizaciones de distinto tamano que permiten ajustar el equilibrio entre calidad y consumo de memoria, desde 3,1 GB hasta 15,3 GB.
 - Capacidades de razonamiento: no verificadas en la informacion proporcionada; la nomenclatura del modelo base (OpenThinker2, GRPO) sugiere orientacion a tareas de razonamiento, pero la model card de este repositorio no lo documenta.
@@ -110,7 +110,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/OpenThinker2-Offline-GRPO-7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/OpenThinker2-Offline-GRPO-7B-GGUF
 - Modelo base: https://huggingface.co/KRAFTON/OpenThinker2-Offline-GRPO-7B
 - Cuantizaciones imatrix (i1) del mismo modelo: https://huggingface.co/mradermacher/OpenThinker2-Offline-GRPO-7B-i1-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#OpenThinker2-Offline-GRPO-7B-GGUF

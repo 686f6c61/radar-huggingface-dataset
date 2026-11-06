@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ethan-martinez/generation-tryout` es un repositorio experimental publicado en HuggingFace por el usuario ethan-martinez que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de generación, con una configuración declarada como "giant". No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`ethan-martinez/generation-tryout` es un repositorio experimental publicado en Hugging Face por el usuario ethan-martinez que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de generación, con una configuración declarada como "giant". No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante es su tamaño real: 24.832 parámetros totales según los metadatos de safetensors. Esto es varios órdenes de magnitud inferior a cualquier transformer funcional (el DeiT-base original ronda los 87 millones), lo que confirma que se trata de un esqueleto arquitectónico para validar código, no de un modelo con capacidad generativa real. El repositorio ocupa 0,0 GB.
 
@@ -44,7 +44,7 @@ No hay entrenamiento real que reportar. El autor describe una receta por defecto
 
 - Pruebas de humo en pipelines de carga de modelos: verificar que un cargador de safetensors, un registry interno o un sistema de adaptadores resuelve correctamente un checkpoint de 24.832 parámetros antes de desplegar modelos grandes. El repositorio está pensado exactamente para esto.
 - Validación de CI/CD en equipos de ML: incluir este repositorio como caso de prueba ligero en la integración continua para comprobar que los scripts de descarga, verificación de hashes y carga no se rompen tras cambios en el código.
-- Desarrollo de adaptadores personalizados: al no funcionar con las APIs automáticas de HuggingFace, es útil como banco de pruebas para escribir y depurar código de carga específico de arquitectura (mapeo de nombres de pesos, inicialización de módulos custom).
+- Desarrollo de adaptadores personalizados: al no funcionar con las APIs automáticas de Hugging Face, es útil como banco de pruebas para escribir y depurar código de carga específico de arquitectura (mapeo de nombres de pesos, inicialización de módulos custom).
 - Docencia y prototipado de arquitecturas: sirve para ilustrar la estructura de un DeiT con atención dilatada y gated fusion sin necesidad de GPU ni de descargar gigabytes de pesos, ya que el repositorio ocupa 0,0 GB.
 - Pruebas de infraestructura y orquestación: permite validar en minutos flujos de despliegue, contenedores, permisos de almacenamiento y monitorización con un artefacto inocuo, antes de repetir el proceso con un modelo de producción.
 - Reproducción de recetas de entrenamiento: `training_args.json` documenta una configuración adam con linear warmup que puede usarse como plantilla de partida para experimentos comparables, siempre que se entrene efectivamente con datos y se reporten semillas.
@@ -75,10 +75,10 @@ No hay modelos directamente comparables en la información proporcionada, porque
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| generation-tryout (este repo) | 24.832 | no disponible | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
-| DeiT-tiny (referencia de la familia) | ~5,7 M (aproximado) | no aplica (visión) | Apache-2.0 (según variante) | HuggingFace |
-| DeiT-small (referencia de la familia) | ~22 M (aproximado) | no aplica (visión) | Apache-2.0 (según variante) | HuggingFace |
-| DeiT-base (referencia de la familia) | ~87 M (aproximado) | no aplica (visión) | Apache-2.0 (según variante) | HuggingFace |
+| generation-tryout (este repo) | 24.832 | no disponible | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
+| DeiT-tiny (referencia de la familia) | ~5,7 M (aproximado) | no aplica (visión) | Apache-2.0 (según variante) | Hugging Face |
+| DeiT-small (referencia de la familia) | ~22 M (aproximado) | no aplica (visión) | Apache-2.0 (según variante) | Hugging Face |
+| DeiT-base (referencia de la familia) | ~87 M (aproximado) | no aplica (visión) | Apache-2.0 (según variante) | Hugging Face |
 
 Los valores de las variantes DeiT son aproximados y se incluyen solo para contextualizar la escala; no proceden de la información del repositorio. No se dispone de datos de rendimiento de ninguno de ellos en esta ficha.
 
@@ -96,5 +96,5 @@ Los valores de las variantes DeiT son aproximados y se incluyen solo para contex
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ethan-martinez/generation-tryout
+- Repositorio en Hugging Face: https://huggingface.co/ethan-martinez/generation-tryout
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada. Los resultados devueltos corresponden al significado del nombre propio "Ethan" y no guardan relación con el artefacto.

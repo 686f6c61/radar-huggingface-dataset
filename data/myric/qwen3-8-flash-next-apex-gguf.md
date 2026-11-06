@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Myric/Qwen3.8-Flash-Next-APEX-GGUF es una conversión no oficial a formato GGUF del modelo multimodal Qwen3.8-Flash-Next de Qwen, publicado por el usuario Myric en HuggingFace. El modelo base es un MoE ultra-esparso de 180 mil millones de parámetros totales con solo 6,8 mil millones activos por token, diseñado para ofrecer un equilibrio entre capacidad y eficiencia computacional. Su arquitectura combina Gated DeltaNet (GDN) con Qwen Sparse Attention (QSA) en una configuración híbrida: tres de cada cuatro capas utilizan GDN para comprimir el historial, mientras que la cuarta emplea QSA para recuperación de contexto de largo alcance. Además incorpora embeddings n-gram por capa y un contexto de 262.144 tokens.
+Myric/Qwen3.8-Flash-Next-APEX-GGUF es una conversión no oficial a formato GGUF del modelo multimodal Qwen3.8-Flash-Next de Qwen, publicado por el usuario Myric en Hugging Face. El modelo base es un MoE ultra-esparso de 180 mil millones de parámetros totales con solo 6,8 mil millones activos por token, diseñado para ofrecer un equilibrio entre capacidad y eficiencia computacional. Su arquitectura combina Gated DeltaNet (GDN) con Qwen Sparse Attention (QSA) en una configuración híbrida: tres de cada cuatro capas utilizan GDN para comprimir el historial, mientras que la cuarta emplea QSA para recuperación de contexto de largo alcance. Además incorpora embeddings n-gram por capa y un contexto de 262.144 tokens.
 
 Esta conversión GGUF es un trabajo en progreso: solo se han subido el archivo BF16 completo (354 GB) y el proyector de visión (0,9 GB). El nombre "APEX" sugiere cuantizaciones futuras, pero actualmente no hay ninguna disponible. El archivo BF16 es una conversión sin pérdida de los tensores del checkpoint, pensada como entrada para procesos de cuantización, no para inferencia directa. El modelo requiere una versión parcheada de llama.cpp con la arquitectura `qwen4_exp` (PR #27742) que aún no está fusionada en el mainline, lo que limita su uso a builds específicos.
 
@@ -71,8 +71,8 @@ No hay datos suficientes para una comparación rigurosa. Se puede indicar que el
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Myric/Qwen3.8-Flash-Next-APEX-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Myric/Qwen3.8-Flash-Next-APEX-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Repositorio de la serie Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Página del modelo en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

@@ -65,8 +65,8 @@ La informacion disponible no incluye comparativas con otros modelos. Se puede co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeromodels/efficientdet_d5
-- Coleccion de EfficientDet en HuggingFace: https://hf.co/collections/zeromodels/efficientdet
+- Hugging Face: https://huggingface.co/zeromodels/efficientdet_d5
+- Coleccion de EfficientDet en Hugging Face: https://hf.co/collections/zeromodels/efficientdet
 - Paper original: https://arxiv.org/abs/1911.09070
 - Repositorio de Google AutoML (implementacion original): https://github.com/google/automl/tree/master/efficientdet
 - Repositorio de ZeroModels: https://github.com/IMvision12/ZeroModels

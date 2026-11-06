@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-dapo-p4r16-20261003-085736-03-sorting-4d47a269571c
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-dapo-p4r16-20261003-085736-03-sorting-4d47a269571c
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web. El resto de resultados obtenidos no son relevantes para este modelo.

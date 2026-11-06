@@ -28,7 +28,7 @@ Su relevancia es, por tanto, metodológica más que funcional: sirve como planti
 | Optimizador por defecto | novograd |
 | Planificador de learning rate | constant warmup |
 | Tamaño del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-15 |
 | Última actualización | 2026-09-15 |
@@ -78,10 +78,10 @@ La comparativa se establece frente a implementaciones BEiT de referencia. Los da
 
 | Modelo | Parámetros | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mzaytsev/beit-classification-lite | 24.832 | Implementación personalizada, sin entrenar | MIT | HuggingFace (0 descargas) |
-| BEiT-base (referencia pública de Microsoft) | ~86 M | Checkpoint preentrenado para visión | MIT | HuggingFace, uso extendido |
-| BEiT-large (referencia pública de Microsoft) | ~304 M | Checkpoint preentrenado para visión | MIT | HuggingFace, uso extendido |
-| ViT-base (referencia pública de Google) | ~86 M | Transformer de visión preentrenado | Apache 2.0 | HuggingFace, uso extendido |
+| mzaytsev/beit-classification-lite | 24.832 | Implementación personalizada, sin entrenar | MIT | Hugging Face (0 descargas) |
+| BEiT-base (referencia pública de Microsoft) | ~86 M | Checkpoint preentrenado para visión | MIT | Hugging Face, uso extendido |
+| BEiT-large (referencia pública de Microsoft) | ~304 M | Checkpoint preentrenado para visión | MIT | Hugging Face, uso extendido |
+| ViT-base (referencia pública de Google) | ~86 M | Transformer de visión preentrenado | Apache 2.0 | Hugging Face, uso extendido |
 
 La diferencia de parámetros entre este repositorio y los BEiT de referencia abarca tres órdenes de magnitud, y el propósito es distinto: los segundos son modelos entrenados listos para *fine-tuning* o inferencia, mientras que el primero es un esqueleto de código con un checkpoint de inicialización. No se dispone de datos de rendimiento que permitan una comparación cuantitativa.
 
@@ -99,5 +99,5 @@ La diferencia de parámetros entre este repositorio y los BEiT de referencia aba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mzaytsev/beit-classification-lite
+- Modelo en Hugging Face: https://huggingface.co/mzaytsev/beit-classification-lite
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

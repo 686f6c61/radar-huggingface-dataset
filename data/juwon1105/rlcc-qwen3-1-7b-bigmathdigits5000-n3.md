@@ -67,7 +67,7 @@ No se dispone de comparativas publicadas. El modelo es un fine-tune de Qwen3-1.7
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/juwon1105/RLCC-qwen3-1.7B-bigmathdigits5000-n3
+- Hugging Face: https://huggingface.co/juwon1105/RLCC-qwen3-1.7B-bigmathdigits5000-n3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset: https://huggingface.co/datasets/mehuldamani/big-math-digits
 - Paper GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

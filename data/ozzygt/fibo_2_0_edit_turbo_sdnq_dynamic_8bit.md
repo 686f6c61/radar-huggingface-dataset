@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de parámetros del modelo base en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OzzyGT/fibo_2_0_edit_turbo_sdnq_dynamic_8bit
+- Modelo en Hugging Face: https://huggingface.co/OzzyGT/fibo_2_0_edit_turbo_sdnq_dynamic_8bit
 - Modelo base: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - Modelo de desarrollo Fibo 2.0: https://huggingface.co/briaai/Fibo-2.0-dev
 - Guía de captions VGL: https://huggingface.co/briaai/Fibo-2.0-dev/blob/main/vgl/README.md

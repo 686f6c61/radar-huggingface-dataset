@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`atml-pa3-ckpt` es un checkpoint de modelo publicado en HuggingFace por el usuario FaaizKhan1999 bajo licencia MIT. El nombre del repositorio sugiere que se trata de un artefacto de entrenamiento ("ckpt", checkpoint) asociado a una práctica o asignación de un curso de "ATML" (probablemente *Advanced Topics in Machine Learning* o *Applied Topics in Machine Learning*), aunque esta interpretación no está confirmada por el autor. No se dispone de model card descriptiva: el README se limita a declarar la licencia MIT, sin información sobre arquitectura, datos de entrenamiento ni uso previsto.
+`atml-pa3-ckpt` es un checkpoint de modelo publicado en Hugging Face por el usuario FaaizKhan1999 bajo licencia MIT. El nombre del repositorio sugiere que se trata de un artefacto de entrenamiento ("ckpt", checkpoint) asociado a una práctica o asignación de un curso de "ATML" (probablemente *Advanced Topics in Machine Learning* o *Applied Topics in Machine Learning*), aunque esta interpretación no está confirmada por el autor. No se dispone de model card descriptiva: el README se limita a declarar la licencia MIT, sin información sobre arquitectura, datos de entrenamiento ni uso previsto.
 
-El repositorio ocupa 14,5 GB, un tamano compatible con pesos en precision completa o media de un modelo de varios miles de millones de parámetros, o con un conjunto de checkpoints intermedios de entrenamiento. Sin embargo, no hay metadatos que permitan confirmar ni la arquitectura ni el número de parámetros, y el pipeline no está declarado en HuggingFace, por lo que el modelo no aparece clasificado en ninguna categoría funcional.
+El repositorio ocupa 14,5 GB, un tamano compatible con pesos en precision completa o media de un modelo de varios miles de millones de parámetros, o con un conjunto de checkpoints intermedios de entrenamiento. Sin embargo, no hay metadatos que permitan confirmar ni la arquitectura ni el número de parámetros, y el pipeline no está declarado en Hugging Face, por lo que el modelo no aparece clasificado en ninguna categoría funcional.
 
 Su relevancia actual es muy limitada para producción: se trata de un artefacto de investigación sin documentación, sin benchmarks publicados, con cero descargas y cero likes en el momento de redactar esta ficha. Se debe tratar como un experimento de autor individual y no como un modelo listo para uso en aplicaciones reales sin una validación previa exhaustiva.
 
@@ -23,7 +23,7 @@ Su relevancia actual es muy limitada para producción: se trata de un artefacto 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El identificador "atml-pa3-ckpt" apunta a un checkpoint de una práctica académica, lo que habitualmente implica un transformer entrenado desde cero o afinado sobre una base existente, pero no hay datos que permitan confirmarlo. Tampoco se indica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El identificador "atml-pa3-ckpt" apunta a un checkpoint de una práctica académica, lo que habitualmente implica un transformer entrenado desde cero o afinado sobre una base existente, pero no hay datos que permitan confirmarlo. Tampoco se indica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
 El tamano del repositorio (14,5 GB) es el único dato técnico objetivo disponible. Como referencia orientativa, ese volumen es consistente con pesos en fp16 de un modelo de aproximadamente 7 000 millones de parámetros, o con pesos en fp32 de un modelo de unos 3 500 millones, o bien con múltiples checkpoints de un modelo menor. Cualquiera de estas hipótesis es especulativa y debería verificarse inspeccionando los archivos del repositorio antes de cualquier uso.
 
@@ -73,5 +73,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FaaizKhan1999/atml-pa3-ckpt
+- Repositorio en Hugging Face: https://huggingface.co/FaaizKhan1999/atml-pa3-ckpt
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

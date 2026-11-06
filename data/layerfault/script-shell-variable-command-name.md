@@ -60,7 +60,7 @@ No disponible. No existe un modelo comparable porque este artefacto no es un mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/script-shell-variable-command-name
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/script-shell-variable-command-name
 - Repositorio de Layerfault en GitHub: https://github.com/izm1chael/layerfault/tree/main
 - Documentacion de fuentes de Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md
 - Nota de investigacion de Adversia sobre inyeccion de shell en agentes de IA: https://labs.cloudsecurityalliance.org/research/csa-research-note-guardfall-ai-agent-shell-injection-2026070/
@@ -129,7 +129,7 @@ No disponible. No existe un modelo comparable porque este artefacto no es un mod
 
 ## Enlaces
 
-- [HuggingFace](https://huggingface.co/LayerFault/script-shell-variable-command-name)
+- [Hugging Face](https://huggingface.co/LayerFault/script-shell-variable-command-name)
 - [Repositorio de LayerFault en GitHub](https://github.com/izm1chael/layerfault/tree/main)
 - [Documentación de fuentes de LayerFault](https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md)
 - [GuardFall: Shell Injection Bypass Defeats AI Coding Agent Guardrails](https://labs.cloudsecurityalliance.org/research/csa-research-note-guardfall-ai-agent-shell-injection-2026070/)

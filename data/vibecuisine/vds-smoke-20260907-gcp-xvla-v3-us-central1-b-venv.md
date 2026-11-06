@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VibeCuisine/vds-smoke-20260907-gcp-xvla-v3-us-central1-b-venv | 879.738.545 | Fine-tuning de X-VLA para tarea de agarre | Apache 2.0 | HuggingFace |
-| lerobot/xvla-base | no disponible (modelo base) | Modelo base X-VLA preentrenado | Apache 2.0 | HuggingFace |
+| VibeCuisine/vds-smoke-20260907-gcp-xvla-v3-us-central1-b-venv | 879.738.545 | Fine-tuning de X-VLA para tarea de agarre | Apache 2.0 | Hugging Face |
+| lerobot/xvla-base | no disponible (modelo base) | Modelo base X-VLA preentrenado | Apache 2.0 | Hugging Face |
 | Otros fine-tunings de X-VLA | no disponible | Políticas robóticas específicas | Apache 2.0 | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría. La comparativa se limita al modelo base del que deriva este fine-tuning.

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros / tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Silero VAD (esta ficha, v6.2.3) | ~1,25 MB (float32) | 512 muestras (32 ms) por llamada, estado persistente | MIT | HuggingFace (anira-project/silero-vad), GitHub snakers4/silero-vad |
+| Silero VAD (esta ficha, v6.2.3) | ~1,25 MB (float32) | 512 muestras (32 ms) por llamada, estado persistente | MIT | Hugging Face (anira-project/silero-vad), GitHub snakers4/silero-vad |
 | WebRTC VAD | no disponible (algoritmo GMM, muy ligero) | tramas de 10/20/30 ms | BSD (parte de WebRTC) | WebRTC, librerías como py-webrtcvad |
 | Picovoice Cobra VAD | no disponible | no disponible | Comercial (licencia propietaria) | Picovoice |
 | Silero VAD upstream (original) | ~2,3 MB (ONNX) | 512 muestras a 16 kHz | MIT | GitHub snakers4/silero-vad |
@@ -83,7 +83,7 @@ La comparativa se limita a detectores de actividad de voz; no se dispone de dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anira-project/silero-vad
+- Hugging Face: https://huggingface.co/anira-project/silero-vad
 - Repositorio anira: https://github.com/anira-project/anira
 - Silero VAD upstream: https://github.com/snakers4/silero-vad
 - Modelo original en GitHub (v6.2.3): https://github.com/snakers4/silero-vad/tree/v6.2.3

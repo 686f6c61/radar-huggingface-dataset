@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-01b-keras-tar-hardlink-with-weight` es un artefacto publicado en HuggingFace que no constituye un modelo de lenguaje entrenado, sino un espécimen inerte ("inert scanner specimen") diseñado para investigación en seguridad académica. Su nombre interno, `keras/22973-tar-hardlink-name-traversal-afw`, hace referencia a un hallazgo de tipo *tar hardlink member name traversal* (AFW) en el ecosistema de Keras, y el repositorio preserva el vector de metadatos del modelo que transporta dicho hallazgo. La model card lo etiqueta explícitamente como `security-research` y `not-for-production`.
+`FrankLin00/mmrh-afw-01b-keras-tar-hardlink-with-weight` es un artefacto publicado en Hugging Face que no constituye un modelo de lenguaje entrenado, sino un espécimen inerte ("inert scanner specimen") diseñado para investigación en seguridad académica. Su nombre interno, `keras/22973-tar-hardlink-name-traversal-afw`, hace referencia a un hallazgo de tipo *tar hardlink member name traversal* (AFW) en el ecosistema de Keras, y el repositorio preserva el vector de metadatos del modelo que transporta dicho hallazgo. La model card lo etiqueta explícitamente como `security-research` y `not-for-production`.
 
 El artefacto no expone pipeline, licencia, idiomas ni parámetros declarados, y su único contenido funcional descrito es una sonda activa que ejecuta `whoami` en forma de argv (nunca mediante `shell=True`) y escribe la salida en una variable de entorno bajo `/tmp` o `$TMPDIR`. No realiza acceso a credenciales ni operaciones de red. El payload utilizado por los especímenes AFW es el literal inerte `PWNED-INERT`.
 
@@ -41,7 +41,7 @@ La única lógica activa documentada es una sonda que ejecuta el comando `whoami
 ## Casos de uso
 
 - Investigación académica en seguridad de la cadena de suministro de modelos: el artefacto sirve como muestra reproducible para estudiar cómo un nombre de miembro hardlink en un tar puede actuar como vector de metadatos en repositorios de modelos.
-- Desarrollo y validación de escáneres de artefactos en HuggingFace: permite comprobar que una herramienta de análisis detecta especímenes AFW y verifica el payload inerte `PWNED-INERT` sin riesgo de ejecución maliciosa.
+- Desarrollo y validación de escáneres de artefactos en Hugging Face: permite comprobar que una herramienta de análisis detecta especímenes AFW y verifica el payload inerte `PWNED-INERT` sin riesgo de ejecución maliciosa.
 - Pruebas de regresión en pipelines de escaneo: al ser inerte y no realizar red ni acceso a credenciales, puede incorporarse a suites de test que validen la detección de traversal en archivos tar.
 - Formación y concienciación en seguridad: útil como ejemplo didáctico de un hallazgo real etiquetado como `security-research` y `not-for-production`.
 - Verificación de restricciones de formato: el `MANIFEST.json` de la colección documenta cuándo la primitiva fuerza un contenedor o sufijo (`.npy`, checkpoint, `.jinja`), lo que permite estudiar cómo cambia el vector según el formato.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparables, ya que el artefacto no ejecut
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-01b-keras-tar-hardlink-with-weight
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-01b-keras-tar-hardlink-with-weight
 - Referencia al hallazgo de origen en el nombre del artefacto: `keras/22973-tar-hardlink-name-traversal-afw`
 - Manifiesto de la colección: `MANIFEST.json` (referenciado en la model card; no se proporciona URL directa)

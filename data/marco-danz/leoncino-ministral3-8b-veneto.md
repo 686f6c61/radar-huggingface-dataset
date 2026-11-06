@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes; la compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Marco-Danz/leoncino-ministral3-8b-veneto
+- Modelo en Hugging Face: https://huggingface.co/Marco-Danz/leoncino-ministral3-8b-veneto
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Primera generacion (Mistral 7B): https://huggingface.co/Marco-Danz/leoncino-mistral-7b-veneto
 - Variante pequena (Ministral 3B): https://huggingface.co/Marco-Danz/leoncino-baby-ministral3-3b-veneto

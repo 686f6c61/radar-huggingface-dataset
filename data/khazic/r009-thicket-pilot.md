@@ -2,7 +2,7 @@
 
 ## Resumen
 
-khazic/r009-thicket-pilot es un repositorio de pesos publicado en HuggingFace por el usuario khazic, con fecha de creacion y ultima actualizacion del 13 de septiembre de 2026. El repositorio ocupa 78,4 GB y su unico tag tecnico declarado es safetensors, junto con la etiqueta generica de region:us. No dispone de pipeline declarado, licencia, idiomas soportados ni model card con informacion de arquitectura o entrenamiento.
+khazic/r009-thicket-pilot es un repositorio de pesos publicado en Hugging Face por el usuario khazic, con fecha de creacion y ultima actualizacion del 13 de septiembre de 2026. El repositorio ocupa 78,4 GB y su unico tag tecnico declarado es safetensors, junto con la etiqueta generica de region:us. No dispone de pipeline declarado, licencia, idiomas soportados ni model card con informacion de arquitectura o entrenamiento.
 
 Se trata, por tanto, de un checkpoint sin documentacion publica asociada. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, lo que indica que no ha pasado por un proceso de validacion por parte de la comunidad ni dispone de resultados de evaluacion publicados. La busqueda web realizada no ha devuelto ninguna referencia al modelo: los unicos resultados obtenidos son hilos de Reddit sin relacion alguna con el proyecto.
 
@@ -53,7 +53,7 @@ Los casos siguientes se plantean como escenarios condicionales, supeditados a qu
 
 - Evaluacion interna de checkpoints: el repositorio puede servir como objeto de estudio para equipos que quieran inspeccionar la estructura de pesos de un checkpoint de 78,4 GB antes de decidir si lo integran en su catalogo, cargando el modelo en un entorno aislado y midiendo perplejidad y coherencia en un conjunto de prompts propio.
 - Pruebas de carga y despliegue en infraestructura propia: dado el tamano del repositorio, resulta util como caso de prueba para validar pipelines de descarga, conversion de safetensors a otros formatos y arranque de servidores de inferencia con requisitos de memoria elevados.
-- Investigacion sobre checkpoints no documentados: utilidad como ejemplo en estudios sobre procedencia, trazabilidad y riesgos de seguridad de pesos publicados sin model card, un fenomeno creciente en HuggingFace.
+- Investigacion sobre checkpoints no documentados: utilidad como ejemplo en estudios sobre procedencia, trazabilidad y riesgos de seguridad de pesos publicados sin model card, un fenomeno creciente en Hugging Face.
 - Base para ajuste fino posterior: si la arquitectura resulta ser un transformer estandar, podria emplearse como punto de partida para un ajuste fino con datos propios, siempre que la licencia (actualmente no declarada) lo permitiese.
 - Analisis forense de pesos: inspeccion de las claves de los safetensors, numero de tensores y formas para determinar la arquitectura real y el numero de parametros, una tarea habitual antes de aceptar un modelo de origen desconocido.
 - Referencia en comparativas de tamano: como punto de comparacion frente a modelos con documentacion completa, para ilustrar la diferencia de trazabilidad entre un checkpoint anonimo y un modelo con evaluaciones publicadas.
@@ -81,7 +81,7 @@ No se ha identificado ningun modelo comparable, dado que se desconoce la categor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| khazic/r009-thicket-pilot | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| khazic/r009-thicket-pilot | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se ha identificado ningun modelo comparable, dado que se desconoce la categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khazic/r009-thicket-pilot
+- Repositorio en Hugging Face: https://huggingface.co/khazic/r009-thicket-pilot
 - Perfil del autor: https://huggingface.co/khazic
 - Paper, blog o repositorio de codigo: no disponible
 - Demostracion o space asociado: no disponible

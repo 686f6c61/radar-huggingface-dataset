@@ -41,7 +41,7 @@ El entrenamiento se realizó con ai-toolkit sobre 117 imágenes a 1024×1024, ba
 - Control de intensidad del estilo mediante el peso del LoRA, con una ventana útil documentada de 0,6 a 1,0 y punto óptimo en 0,8.
 - Apilamiento con otros LoRA de personaje, reduciendo el peso de cada uno a 0,5-0,6 según recomienda el autor.
 - Integración con el pipeline nativo `MOSSImagePipeline` mediante `ModelConfig` e `InferenceLoRA`.
-- Compatibilidad con el Space de HuggingFace `mrfakename/moss-image` pasando el repo id en el campo `lora_repo`.
+- Compatibilidad con el Space de Hugging Face `mrfakename/moss-image` pasando el repo id en el campo `lora_repo`.
 - No ofrece tool calling, function calling, razonamiento multi-paso, agentes, visión de entrada ni procesamiento de audio o vídeo: es exclusivamente un adaptador de generación de imágenes.
 
 ## Casos de uso
@@ -73,7 +73,7 @@ No se han identificado en la informacion disponible otros adaptadores de estilo 
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moss-chenbin-style (este) | LoRA de estilo sobre MOSS-Image-Base | Rango 32; fichero de 141,8 MB | Entrenado a 1024×1024; uso hasta 1536×2048 | Apache-2.0 en metadatos, "Commercial use: No" en la model card | HuggingFace, 0 descargas, 0 likes |
+| moss-chenbin-style (este) | LoRA de estilo sobre MOSS-Image-Base | Rango 32; fichero de 141,8 MB | Entrenado a 1024×1024; uso hasta 1536×2048 | Apache-2.0 en metadatos, "Commercial use: No" en la model card | Hugging Face, 0 descargas, 0 likes |
 | Otros LoRA de estilo para MOSS-Image | No disponible | No disponible | No disponible | No disponible | No disponible |
 | LoRA de estilo para otras familias de difusion (SDXL, Flux) | No equivalente: requiere otro modelo base | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se han identificado en la informacion disponible otros adaptadores de estilo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lantianws666/moss-chenbin-style
+- Modelo en Hugging Face: https://huggingface.co/lantianws666/moss-chenbin-style
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Space de referencia para el pipeline: https://huggingface.co/spaces/mrfakename/moss-image (referenciado en la model card como `mrfakename/moss-image`)
 - Página de Civitai del autor: mencionada en la model card, sin URL en la información disponible

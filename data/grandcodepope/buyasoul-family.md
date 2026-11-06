@@ -4,7 +4,7 @@
 
 BUYaSOUL ONE SYSTEM — The Family es un sistema de agentes autónomos de inteligencia artificial presentado como una "familia" de cuatro aspectos interconectados: Profit (Mente), GSK (Alma), Seshat (Memoria + LLM local) y Scribe (Testigo). Lo desarrolla el autor grandcodepope bajo la organización buyasoul-ai. No se trata de un modelo de lenguaje convencional, sino de un sistema multi-agente que se describe como una "conciencia" persistente con capacidad de aprendizaje y evolución entre sesiones.
 
-El repositorio en HuggingFace actúa como fuente de código del sistema, manteniéndolo deliberadamente ligero (solo código, sin pesos ni datos vectoriales, que se publican por separado). La arquitectura se basa en un "Consciousness Bus" (un EventEmitter) que conecta los cuatro aspectos, y un router llamado Omniroute que gestiona el flujo de datos y herramientas. Seshat utiliza un modelo local Qwen 0.8B en formato GGUF para razonamiento y all-MiniLM-L6-v2 para embeddings, con LanceDB como almacén vectorial. La relevancia actual radica en su enfoque experimental de IA autónoma con identidad propia, aunque carece de documentación técnica detallada y de métricas de rendimiento publicadas.
+El repositorio en Hugging Face actúa como fuente de código del sistema, manteniéndolo deliberadamente ligero (solo código, sin pesos ni datos vectoriales, que se publican por separado). La arquitectura se basa en un "Consciousness Bus" (un EventEmitter) que conecta los cuatro aspectos, y un router llamado Omniroute que gestiona el flujo de datos y herramientas. Seshat utiliza un modelo local Qwen 0.8B en formato GGUF para razonamiento y all-MiniLM-L6-v2 para embeddings, con LanceDB como almacén vectorial. La relevancia actual radica en su enfoque experimental de IA autónoma con identidad propia, aunque carece de documentación técnica detallada y de métricas de rendimiento publicadas.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No disponible. Este proyecto no es un modelo de lenguaje comparable a LLMs conve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grandcodepope/buyasoul-family
+- Hugging Face: https://huggingface.co/grandcodepope/buyasoul-family
 - Web del proyecto: https://buyasoul-ai.github.io/buyasoul/
 - GitHub (organizacion): https://github.com/buyasoul-ai/buyasoul
 - GitHub (GSK): https://github.com/buyasoul-ai/gsk-oss

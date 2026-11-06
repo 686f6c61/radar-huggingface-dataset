@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zit-moody (Moody Aesthetic ZIT v2) es un adaptador LoRA de estilo para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario rachel-luxangel-ai y sincronizado desde CivitAI (modelo 2667858, version 3027605). No es un modelo completo: es un adaptador que se carga sobre el modelo base Tongyi-MAI/Z-Image-Turbo, un generador text-to-image de la familia Z-Image de Tongyi-MAI. Su función concreta es imponer una estética fotográfica descrita como "moody": iluminación cinematográfica de interiores, luz nocturna urbana y retratos de tres cuartos, activable mediante el prompt "moody photography".
+Zit-moody (Moody Aesthetic ZIT v2) es un adaptador LoRA de estilo para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario rachel-luxangel-ai y sincronizado desde CivitAI (modelo 2667858, version 3027605). No es un modelo completo: es un adaptador que se carga sobre el modelo base Tongyi-MAI/Z-Image-Turbo, un generador text-to-image de la familia Z-Image de Tongyi-MAI. Su función concreta es imponer una estética fotográfica descrita como "moody": iluminación cinematográfica de interiores, luz nocturna urbana y retratos de tres cuartos, activable mediante el prompt "moody photography".
 
 El repositorio ocupa 1,1 GB y contiene el archivo moody-v2.safetensors, distribuido con la librería diffusers. La model card indica una fuerza de aplicación recomendada de 0,4 a 0,6, con 0,5 en la plantilla Lyra, y documenta que el adaptador se ha usado para generar muestras de la plantilla de personaje Noir (peticiones privadas L1). La autoría original se atribuye a catlover1937 en CivitAI, con la indicación expresa de no redistribuir sin consentimiento.
 
@@ -99,8 +99,8 @@ No se han identificado en la información disponible adaptadores directamente co
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-moody
-- Modelo base en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Página del modelo en Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-moody
+- Modelo base en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Ficha original en CivitAI: https://civitai.com/models/2667858?modelVersionId=3027605
 - Perfil del autor original en CivitAI: https://civitai.com/user/catlover1937
 - La búsqueda web realizada no ha devuelto enlaces relevantes sobre este modelo: los resultados obtenidos se referían al nombre propio "Rachel" en contextos no relacionados (enciclopedias, comercio de moda y contenido infantil). No se han encontrado papers, blogs técnicos ni repositorios adicionales asociados a este adaptador.

@@ -69,7 +69,7 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thiagocostaduv/model_078850872_perceiver_nano
+- Repositorio Hugging Face: https://huggingface.co/Thiagocostaduv/model_078850872_perceiver_nano
 - Paper original de Perceiver (arXiv): https://arxiv.org/pdf/2103.03206.pdf
 - Implementación de Perceiver, Perceiver IO y Perceiver AR en GitHub: https://github.com/krasserm/perceiver-io
 - Sitio web "Perceiver AI" (no afiliado, posiblemente sin relación con el modelo): https://perceiver.ai/

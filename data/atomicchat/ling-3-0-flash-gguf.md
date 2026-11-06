@@ -83,7 +83,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (Mo
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/AtomicChat/Ling-3.0-flash-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/AtomicChat/Ling-3.0-flash-GGUF
 - Modelo base (inclusionAI/Ling-3.0-flash): https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Repositorio de builds TurboQuant: https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/releases/b10269-1.5.1
 - Documentación oficial de Ling: https://developer.ant-ling.com/en/docs/models/ling/

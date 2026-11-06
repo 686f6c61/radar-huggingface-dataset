@@ -82,7 +82,7 @@ No se dispone de parámetros, contexto ni benchmarks para comparar de forma cuan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zerubroberts/MiniMax-H3-FastH3-v1-dense-datafree-ComfyUI
+- Hugging Face: https://huggingface.co/zerubroberts/MiniMax-H3-FastH3-v1-dense-datafree-ComfyUI
 - GitHub MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - FastH3: FastVideo 4-Step H3 Model & Setup: https://fasth3.org/
 - ComfyUI-FastH3-Lora-Converter: https://github.com/NikoDemon80/ComfyUI-FastH3-Lora-Converter

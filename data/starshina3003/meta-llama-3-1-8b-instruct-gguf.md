@@ -103,7 +103,7 @@ Los datos de parametros, contexto y licencia de los modelos alternativos procede
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/starshina3003/Meta-Llama-3.1-8B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/starshina3003/Meta-Llama-3.1-8B-Instruct-GGUF
 - Modelo base oficial: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Pagina de Llama en Meta: https://llama.meta.com/
 - Documentacion de Llama 3.1: https://llama.meta.com/doc/overview

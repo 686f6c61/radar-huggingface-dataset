@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5 Claude Coder es un ajuste fino de Qwen3.5 orientado a actuar como agente autónomo de programación y administración de sistemas dentro de Claude Code, ejecutándose de forma totalmente local. Lo publica el usuario kataizsolt en HuggingFace y se distribuye principalmente como pesos GGUF cuantizados, con variantes MLX de uso interno en Ollama. El objetivo declarado es que el modelo ejecute herramientas en lugar de adivinar, escriba ficheros en lugar de pegar código en el chat y reporte únicamente la salida real de las herramientas, manteniendo un estilo telegráfico con el modo de razonamiento ("thinking") suprimido para actuar de inmediato.
+Qwen3.5 Claude Coder es un ajuste fino de Qwen3.5 orientado a actuar como agente autónomo de programación y administración de sistemas dentro de Claude Code, ejecutándose de forma totalmente local. Lo publica el usuario kataizsolt en Hugging Face y se distribuye principalmente como pesos GGUF cuantizados, con variantes MLX de uso interno en Ollama. El objetivo declarado es que el modelo ejecute herramientas en lugar de adivinar, escriba ficheros en lugar de pegar código en el chat y reporte únicamente la salida real de las herramientas, manteniendo un estilo telegráfico con el modo de razonamiento ("thinking") suprimido para actuar de inmediato.
 
 El repositorio incluye dos variantes: una basada en Qwen3.5 4B, pensada para Apple Silicon de 16 GB con un rendimiento aproximado de 30 tok/s, y otra basada en Qwen3.5 9B, de mayor calidad para código en producción, con unos 17 tok/s en 32 GB y 14 tok/s en 16 GB. Ambas declaran 64K de contexto, tool calling nativo y compatibilidad con la API de Anthropic.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.5 Claude Coder (este) | 4B y 9B (variantes) | 64K | Agente de código local para Claude Code | Apache 2.0 | GGUF en HF y Ollama; MLX solo interno |
-| Qwen3.5 9B (base) | 9B | no disponible en la información | Modelo generalista | Apache 2.0 (según herencia declarada) | HuggingFace |
-| Qwen3.5 4B (base) | 4B | no disponible en la información | Modelo generalista | Apache 2.0 (según herencia declarada) | HuggingFace |
+| Qwen3.5 9B (base) | 9B | no disponible en la información | Modelo generalista | Apache 2.0 (según herencia declarada) | Hugging Face |
+| Qwen3.5 4B (base) | 4B | no disponible en la información | Modelo generalista | Apache 2.0 (según herencia declarada) | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kataizsolt/qwen35-claude-coder-GGUF
+- Hugging Face: https://huggingface.co/kataizsolt/qwen35-claude-coder-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ollama (variante 9B): `rafw007/qwen35-claude-coder:9b`
 - Ollama (variante 4B): `rafw007/qwen35-claude-coder:4b`

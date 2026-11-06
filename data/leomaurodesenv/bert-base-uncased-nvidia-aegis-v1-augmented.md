@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-base-uncased-nvidia-aegis-v1-augmented es un modelo de clasificacion de texto (encoder-only) publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un fine-tuning completo de google-bert/bert-base-uncased, el clasico transformer encoder de 12 capas y aproximadamente 110 millones de parametros. El repositorio declara 109.483.778 parametros reales en formato safetensors, licencia Apache 2.0 y pipeline `text-classification`.
+bert-base-uncased-nvidia-aegis-v1-augmented es un modelo de clasificacion de texto (encoder-only) publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un fine-tuning completo de google-bert/bert-base-uncased, el clasico transformer encoder de 12 capas y aproximadamente 110 millones de parametros. El repositorio declara 109.483.778 parametros reales en formato safetensors, licencia Apache 2.0 y pipeline `text-classification`.
 
 El modelo resuelve una tarea de clasificacion supervisada sobre un dataset que el propio autor no documenta: la model card indica explicitamente "unknown dataset" y deja las secciones de descripcion, usos previstos y datos de entrenamiento como "More information needed". El unico dato objetivo de calidad es la metrica declarada en la evaluacion: una perdida de 0,1660 y una exactitud (accuracy) de 0,9416 sobre un conjunto de validacion no descrito.
 
@@ -95,10 +95,10 @@ La comparacion se realiza a nivel de arquitectura y disponibilidad, ya que no ha
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bert-base-uncased-nvidia-aegis-v1-augmented | 109,5 M | 512 tokens (limite del base) | Clasificacion de texto (etiquetas no documentadas) | Apache 2.0 | HuggingFace, 0 descargas |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base, sin cabeza de tarea | Apache 2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-uncased | ~66 M | 512 tokens | Modelo base destilado | Apache 2.0 | HuggingFace |
-| roberta-base | ~125 M | 512 tokens | Modelo base | MIT | HuggingFace |
+| bert-base-uncased-nvidia-aegis-v1-augmented | 109,5 M | 512 tokens (limite del base) | Clasificacion de texto (etiquetas no documentadas) | Apache 2.0 | Hugging Face, 0 descargas |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base, sin cabeza de tarea | Apache 2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-uncased | ~66 M | 512 tokens | Modelo base destilado | Apache 2.0 | Hugging Face |
+| roberta-base | ~125 M | 512 tokens | Modelo base | MIT | Hugging Face |
 
 Rendimiento comparado: no disponible. No hay datos de benchmarks en la informacion proporcionada que permitan situar este fine-tuning frente a alternativas.
 
@@ -118,6 +118,6 @@ Rendimiento comparado: no disponible. No hay datos de benchmarks en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v1-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v1-augmented
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante al modelo, a su paper o a su repositorio: devolvieron unicamente paginas de cuenta y comerciales de Amazon (amazon.co.uk). No se dispone, por tanto, de paper, blog tecnico, repositorio de codigo ni demo asociados.

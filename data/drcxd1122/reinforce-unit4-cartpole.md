@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-unit4-cartpole es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno CartPole-v1 de Gymnasium. Lo publica el usuario drcxd1122 en HuggingFace como artefacto del curso Deep Reinforcement Learning Class, en concreto la unidad 4, que introduce los metodos de gradiente de politica. No es un modelo de lenguaje: es una politica neuronal que mapea observaciones de cuatro dimensiones (posicion y velocidad del carro, angulo y velocidad angular de la varilla) a dos acciones discretas (empujar a izquierda o derecha).
+Reinforce-unit4-cartpole es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno CartPole-v1 de Gymnasium. Lo publica el usuario drcxd1122 en Hugging Face como artefacto del curso Deep Reinforcement Learning Class, en concreto la unidad 4, que introduce los metodos de gradiente de politica. No es un modelo de lenguaje: es una politica neuronal que mapea observaciones de cuatro dimensiones (posicion y velocidad del carro, angulo y velocidad angular de la varilla) a dos acciones discretas (empujar a izquierda o derecha).
 
 El interes practico es acotado: sirve como referencia docente y como punto de partida reproducible para quien este siguiendo el curso o quiera comparar implementaciones de REINFORCE. El autor lo etiqueta como "custom-implementation", lo que indica que la red y el bucle de entrenamiento no proceden de una libreria estandar como Stable-Baselines3, sino de codigo propio. El repositorio pesa 0,0 GB, coherente con una red de apenas unos miles de parametros.
 
@@ -86,5 +86,5 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drcxd1122/Reinforce-unit4-cartpole
+- Modelo en Hugging Face: https://huggingface.co/drcxd1122/Reinforce-unit4-cartpole
 - Unidad 4 del curso Deep Reinforcement Learning: https://huggingface.co/deep-rl-course/unit4/introduction

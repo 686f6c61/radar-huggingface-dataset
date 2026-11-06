@@ -23,7 +23,7 @@ Su relevancia es limitada y muy específica: interesa a quien ya trabaja con Min
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del adaptador. Se sabe que es un LoRA (`tags: lora`) cuyo modelo base es `MiniMaxAI/MiniMax-H3` con relacion `adapter`, y que la libreria declarada en HuggingFace es `minimax-h3`. El fichero distribuido se denomina `H3Turbo_4Step_Neat_v1.safetensors`, de lo que se deduce que aplica una modificacion de bajo rango sobre las capas del modelo base, pero no se especifica que modulos se adaptan, el rango del adaptador ni la configuracion de entrenamiento.
+La informacion disponible no describe la arquitectura interna del adaptador. Se sabe que es un LoRA (`tags: lora`) cuyo modelo base es `MiniMaxAI/MiniMax-H3` con relacion `adapter`, y que la libreria declarada en Hugging Face es `minimax-h3`. El fichero distribuido se denomina `H3Turbo_4Step_Neat_v1.safetensors`, de lo que se deduce que aplica una modificacion de bajo rango sobre las capas del modelo base, pero no se especifica que modulos se adaptan, el rango del adaptador ni la configuracion de entrenamiento.
 
 Respecto a los datos de entrenamiento, no hay informacion publicada: no se indica el numero de tokens, el volumen de pares video-texto, la composicion del dataset ni si se emplearon tecnicas de RLHF, DPO u otro tipo de ajuste. La model card describe el artefacto como una "edicion personal de LoRAs comunitarios existentes" afinada "al gusto" del autor para conseguir una apariencia "natural, limpia y nitida", y remite a un fichero `CREDITS.md` para el reconocimiento de los autores originales. Cualquier innovacion tecnica mas alla de la propia edicion de estilo no esta documentada.
 
@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H3-Turbo-Neat | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace |
+| H3-Turbo-Neat | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
 | Alternativas comunitarias de MiniMax-H3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/moe-kill/H3-Turbo-Neat
+- Pagina del modelo en Hugging Face: https://huggingface.co/moe-kill/H3-Turbo-Neat
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Enlace de licencia citado en la model card: https://huggingface.co/bt4200/H3-Turbo-Neat/blob/main/LICENSE
 - Hilo de r/comfyui con el resumen de novedades de MiniMax-H3 (30 de septiembre de 2026): https://www.reddit.com/r/comfyui/comments/1wu8lkt/a_quick_minimax_h3_news_roundup_30th_september/

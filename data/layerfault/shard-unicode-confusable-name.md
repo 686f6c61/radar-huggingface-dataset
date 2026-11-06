@@ -70,7 +70,7 @@ No disponible. No existe una categoría de modelos comparable porque este artefa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LayerFault/shard-unicode-confusable-name
+- Hugging Face: https://huggingface.co/LayerFault/shard-unicode-confusable-name
 - GitHub de Layerfault (proyecto de seguridad): https://github.com/izm1chael/layerfault
 - GitHub DetectionFramework (marco de detección de confusables Unicode): https://github.com/CypherLamb/DetectionFramework
 - Artículo sobre detección de homoglifos Unicode y evasión de inyección de prompts: https://dev.to/meghal_parikh_b8c5c6e3244/detecting-unicode-homoglyph-and-zero-width-character-evasion-in-llm-prompt-injection-attacks-1e69

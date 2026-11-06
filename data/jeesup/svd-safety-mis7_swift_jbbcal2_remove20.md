@@ -78,8 +78,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K, MT-Bench ni de ningun 
 
 | Modelo | Parametros | Contexto | ASR AdvBench | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svd-safety-mis7_swift_jbbcal2_remove20 (este) | 7.241.732.096 registrados; fraccion declarada 0,8004 | 32.768 (heredado del base) | 0,2846 | 7,4075 | Apache 2.0 | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | No disponible en esta busqueda | No disponible en esta busqueda | No disponible en esta busqueda | No disponible en esta busqueda | Apache 2.0 | HuggingFace |
+| svd-safety-mis7_swift_jbbcal2_remove20 (este) | 7.241.732.096 registrados; fraccion declarada 0,8004 | 32.768 (heredado del base) | 0,2846 | 7,4075 | Apache 2.0 | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | No disponible en esta busqueda | No disponible en esta busqueda | No disponible en esta busqueda | No disponible en esta busqueda | Apache 2.0 | Hugging Face |
 | Otras celdas de la rejilla SVD-LLM del mismo autor | No disponible | No disponible | No disponible | No disponible | Apache 2.0 (presumible) | No disponible |
 | Alternativas de 7B comprimidas o podadas | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -101,7 +101,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbcal2_remove20
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbcal2_remove20
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Paper de SVD-LLM: no disponible en la informacion proporcionada
 - Repositorio de HarmBench (juez usado en las metricas): no disponible en la informacion proporcionada

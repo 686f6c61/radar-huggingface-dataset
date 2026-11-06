@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yudai0209/so101_vial_r1_success_58_groot17` es una política de robótica entrenada con LeRobot y publicada en HuggingFace por el usuario yudai0209. No es un modelo de lenguaje generativo, sino un modelo de control visuomotor especializado: recibe el estado de las articulaciones y dos cámaras de un brazo robótico SO-101 y emite comandos de acción de 6 grados de libertad para ejecutar una tarea concreta de manipulación.
+`yudai0209/so101_vial_r1_success_58_groot17` es una política de robótica entrenada con LeRobot y publicada en Hugging Face por el usuario yudai0209. No es un modelo de lenguaje generativo, sino un modelo de control visuomotor especializado: recibe el estado de las articulaciones y dos cámaras de un brazo robótico SO-101 y emite comandos de acción de 6 grados de libertad para ejecutar una tarea concreta de manipulación.
 
 Técnicamente se apoya en GR00T N1.7, el modelo fundacional cross-embodiment de NVIDIA para razonamiento y habilidades de robots humanoides. GR00T N1.7 combina un backbone visión-lenguaje Cosmos-Reason2/Qwen3-VL con un transformer de acciones basado en flow matching que predice acciones condicionadas por visión, lenguaje y propriocepción. Esta publicación es un ajuste fino de ese modelo sobre un conjunto de datos propio.
 
@@ -67,7 +67,7 @@ La model card incluye una sección de evaluación vacía con la nota explícita:
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yudai0209/so101_vial_r1_success_58_groot17` | 3.144.016.000 | no disponible | Pick-and-place de vial en brazo SO-101 | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| `yudai0209/so101_vial_r1_success_58_groot17` | 3.144.016.000 | no disponible | Pick-and-place de vial en brazo SO-101 | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | GR00T N1.7 (base, NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment para robots humanoides | no disponible | Repositorio GitHub de NVIDIA Isaac-GR00T |
 | Otras políticas LeRobot (pi0, ACT, etc.) | no disponible | no disponible | Manipulación robótica con aprendizaje por imitación | no disponible | Ecosistema LeRobot |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones comparables para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yudai0209/so101_vial_r1_success_58_groot17
+- Modelo en Hugging Face: https://huggingface.co/yudai0209/so101_vial_r1_success_58_groot17
 - Dataset de entrenamiento: https://huggingface.co/datasets/yudai0209/so101_vial_r1_success_58
 - Visualizador del dataset (LeRobot): https://huggingface.co/spaces/lerobot/visualize_dataset?path=yudai0209/so101_vial_r1_success_58
 - Repositorio de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

@@ -78,7 +78,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.6-27B-Seven-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.6-27B-Seven-GGUF
 - Modelo base (nightmedia/Qwen3.6-27B-Seven): https://huggingface.co/nightmedia/Qwen3.6-27B-Seven
 - Página de ayuda para descargas y listado de archivos: https://hf.tst.eu/model#Qwen3.6-27B-Seven-GGUF
 - Guía de uso de GGUF de TheBloke (referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

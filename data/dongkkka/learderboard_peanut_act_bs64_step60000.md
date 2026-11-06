@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dongkkka/Learderboard_peanut_act_bs64_step60000` es un checkpoint de una política de robótica basada en ACT (Action Chunking Transformer), entrenada con la librería LeRobot y publicada en HuggingFace por el usuario Dongkkka. No es un modelo de lenguaje: es un modelo de control visuomotor que, a partir de observaciones (imágenes de cámara y estado del robot), predice secuencias de acciones motoras para que un manipulador ejecute una tarea concreta. El problema que resuelve es el de la imitación de demostraciones humanas: en lugar de programar una política de control a mano, el modelo aprende a reproducir la tarea a partir de episodios de teleoperación.
+`Dongkkka/Learderboard_peanut_act_bs64_step60000` es un checkpoint de una política de robótica basada en ACT (Action Chunking Transformer), entrenada con la librería LeRobot y publicada en Hugging Face por el usuario Dongkkka. No es un modelo de lenguaje: es un modelo de control visuomotor que, a partir de observaciones (imágenes de cámara y estado del robot), predice secuencias de acciones motoras para que un manipulador ejecute una tarea concreta. El problema que resuelve es el de la imitación de demostraciones humanas: en lugar de programar una política de control a mano, el modelo aprende a reproducir la tarea a partir de episodios de teleoperación.
 
 El checkpoint declarado tiene 51.701.398 parámetros (unos 0,2 GB de repositorio) y fue entrenado sobre un dataset llamado "Peanut" con 99 episodios, con un tamaño de lote de 64 y guardado en el paso 60.000. El nombre del repositorio indica que forma parte de una comparativa o "leaderboard" interna del autor (`Learderboard_peanut_act_bs64_step60000`), probablemente para comparar configuraciones de entrenamiento. Su relevancia es limitada fuera de ese contexto: las descargas y los "likes" son cero, no hay licencia declarada ni idiomas, y la model card apenas aporta tres líneas de información.
 
@@ -98,7 +98,7 @@ Para una comparación rigurosa habría que fijar la misma tarea, el mismo robot 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dongkkka/Learderboard_peanut_act_bs64_step60000
+- Hugging Face: https://huggingface.co/Dongkkka/Learderboard_peanut_act_bs64_step60000
 - LeRobot (libreria utilizada): no disponible en los resultados de busqueda proporcionados
 - Paper de ACT (Action Chunking Transformer): no disponible en los resultados de busqueda proporcionados
 - Dataset "Peanut": no disponible en los resultados de busqueda proporcionados

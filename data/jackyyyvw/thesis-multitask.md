@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jackyyyvw/thesis-multitask` es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura tipo Mae (masked autoencoder según las etiquetas del repositorio) orientada a aprendizaje multitarea, publicada por el usuario jackyyyvw. No se trata de un modelo entrenado, sino de un andamiaje reproducible: incluye el código del modelo, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización (`model.safetensors`) pensado para pruebas de humo. La propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark.
+`jackyyyvw/thesis-multitask` es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura tipo Mae (masked autoencoder según las etiquetas del repositorio) orientada a aprendizaje multitarea, publicada por el usuario jackyyyvw. No se trata de un modelo entrenado, sino de un andamiaje reproducible: incluye el código del modelo, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización (`model.safetensors`) pensado para pruebas de humo. La propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark.
 
 El dato cuantitativo más relevante es el recuento real de parámetros en safetensors: 49.600. Esta cifra contrasta con la etiqueta "giant" que aparece en la tabla de arquitectura de la model card, que hace referencia a la escala de la configuración generada y no al tamaño efectivo del modelo publicado. Con ese orden de magnitud, el artefacto es un experimento de investigación de escala mínima, no un modelo de propósito general.
 
@@ -35,7 +35,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del d
 - No se declaran capacidades multilingües ni se listan idiomas.
 - La estructura del código sugiere un propósito de investigación multitarea (fusión concat MLP), pero se trata de una intención de diseño, no de una capacidad medida.
 - El repositorio incluye un `eval.py` como artefacto principal, con un bloque `__main__` que contiene un ejemplo de prueba de humo.
-- Al ser una implementación propia, las API genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+- Al ser una implementación propia, las API genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jackyyyvw/thesis-multitask | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
+| jackyyyvw/thesis-multitask | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jackyyyvw/thesis-multitask
+- Hugging Face: https://huggingface.co/jackyyyvw/thesis-multitask
 - Fichero de modelo: https://huggingface.co/jackyyyvw/thesis-multitask/blob/main/model.safetensors
 - Configuración de arquitectura: https://huggingface.co/jackyyyvw/thesis-multitask/blob/main/config.json
 - Receta de experimento: https://huggingface.co/jackyyyvw/thesis-multitask/blob/main/training_args.json

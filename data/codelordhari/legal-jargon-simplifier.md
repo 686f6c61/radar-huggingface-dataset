@@ -67,7 +67,7 @@ No hay informacion suficiente para comparar este modelo con alternativas especif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CodeLordHari/legal-jargon-simplifier
+- Hugging Face: https://huggingface.co/CodeLordHari/legal-jargon-simplifier
 - Paper de BART (referencia de arquitectura): https://arxiv.org/abs/2006.06200
 - Herramientas alternativas mencionadas en busqueda web:
   - Legal Document Simplifier (Toolable): https://toolable.ai/mike/legal-document-simplifier

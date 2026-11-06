@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-Omni-2B-98K-INT8 es un ajuste fino de la comunidad sobre LiquidAI/LFM3-Omni-2B, el modelo omni (texto, audio y vision) de 2.166 millones de parametros desarrollado por Liquid AI. Lo publica el usuario MichaelAnthony en HuggingFace y su proposito es extender la ventana de contexto nativa del modelo base hasta aproximadamente 98.000 tokens verificados, mediante un entrenamiento LoRA SFT sobre datos sinteticos de contexto largo y posterior fusion en un unico checkpoint.
+LFM3-Omni-2B-98K-INT8 es un ajuste fino de la comunidad sobre LiquidAI/LFM3-Omni-2B, el modelo omni (texto, audio y vision) de 2.166 millones de parametros desarrollado por Liquid AI. Lo publica el usuario MichaelAnthony en Hugging Face y su proposito es extender la ventana de contexto nativa del modelo base hasta aproximadamente 98.000 tokens verificados, mediante un entrenamiento LoRA SFT sobre datos sinteticos de contexto largo y posterior fusion en un unico checkpoint.
 
 El modelo conserva la arquitectura `lfm3_omni` del original (requiere `trust_remote_code` y `compressed-tensors`) y se distribuye en formato INT8 weight-only (W8A16), lo que reduce el peso del repositorio a 3,3 GB. Es relevante porque demuestra que es posible llevar un modelo omni de 2B a contextos de ~100k tokens con un coste de entrenamiento modesto (LoRA r=32, alpha=64) y porque incluye verificaciones publicadas de needle-in-haystack hasta 109k tokens.
 
@@ -23,7 +23,7 @@ La modificacion arquitectonica clave es la conversion de las 5 capas de atencion
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LFM3-Omni-2B de Liquid AI, un transformer multimodal de 2,17B parametros con capacidad de procesar texto, audio y vision. El ajuste fino convierte las 5 capas de atencion deslizante del modelo original en atencion completa, con theta de 1e6, rotary parcial de 0.5 y sin ventana deslizante. Los checkpoints de HuggingFace ya incorporan el campo `layer_types` correcto. Para los GGUFs, dado que llama.cpp exige al menos una capa con ventana deslizante, se emula el comportamiento etiquetando las antiguas capas deslizantes como SWA con `sliding_window=131072`, `freq_base_swa=1e6` y `n_rot_swa=64`, lo que es numericamente identico a atencion completa.
+El modelo parte de LFM3-Omni-2B de Liquid AI, un transformer multimodal de 2,17B parametros con capacidad de procesar texto, audio y vision. El ajuste fino convierte las 5 capas de atencion deslizante del modelo original en atencion completa, con theta de 1e6, rotary parcial de 0.5 y sin ventana deslizante. Los checkpoints de Hugging Face ya incorporan el campo `layer_types` correcto. Para los GGUFs, dado que llama.cpp exige al menos una capa con ventana deslizante, se emula el comportamiento etiquetando las antiguas capas deslizantes como SWA con `sliding_window=131072`, `freq_base_swa=1e6` y `n_rot_swa=64`, lo que es numericamente identico a atencion completa.
 
 El entrenamiento consistio en un LoRA SFT con r=32 y alpha=64 sobre datos sinteticos de contexto largo de 65k a 98k tokens, fusionado despues en el modelo base. La longitud efectiva entrenada es de aproximadamente 94k tokens: los ultimos pasos de optimizacion sobre ejemplos de 94,5k a 98,3k se omitieron por OOM, aunque la recuperacion se verifico mas alla de ese limite. No se especifican en la informacion disponible el numero total de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
 
@@ -90,5 +90,5 @@ No se dispone de datos de rendimiento comparativo con otros modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-INT8
+- Hugging Face: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-INT8
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B

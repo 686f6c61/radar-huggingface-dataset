@@ -95,7 +95,7 @@ Las filas de Qwen2.5-0.5B-Instruct, SmolLM2-360M-Instruct y TinyLlama-1.1B-Chat 
 
 ## Limitaciones y advertencias
 
-- Licencia desconocida: el campo license figura como "unknown" tanto en los metadatos de HuggingFace como en la model card. Esto imposibilita determinar si el uso comercial esta permitido y convierte al modelo en no apto para produccion sin una aclaracion previa del autor o del titular de los derechos del modelo base.
+- Licencia desconocida: el campo license figura como "unknown" tanto en los metadatos de Hugging Face como en la model card. Esto imposibilita determinar si el uso comercial esta permitido y convierte al modelo en no apto para produccion sin una aclaracion previa del autor o del titular de los derechos del modelo base.
 - Riesgo elevado de alucinacion: con 630 millones de parametros y sin datos de entrenamiento publicados, la fiabilidad factual es limitada. No debe usarse para tareas donde un error tenga consecuencias relevantes.
 - Perdida de calidad por cuantizacion: los pesos estan cuantizados a 4 bits con una media de 4,50 bits por peso. En modelos de este tamano la degradacion respecto a 8 o 16 bits puede ser apreciable; el propio autor recomienda 8 bits para razonamiento y precision de codigo.
 - Idiomas no declarados: no hay lista de idiomas soportados. El rendimiento en castellano es una incognita y requiere evaluacion propia antes de cualquier despliegue.
@@ -109,7 +109,7 @@ Las filas de Qwen2.5-0.5B-Instruct, SmolLM2-360M-Instruct y TinyLlama-1.1B-Chat 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/eai-distill-0.5b-chat-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/eai-distill-0.5b-chat-mlx-4bit
 - Modelo base: https://huggingface.co/Enterprise-AI/eai-distill-0.5b
 - Variante de 8 bits: https://huggingface.co/SirSahOl/eai-distill-0.5b-chat-mlx-8bit
 - Variante de 16 bits: https://huggingface.co/SirSahOl/eai-distill-0.5b-chat-mlx-16bit

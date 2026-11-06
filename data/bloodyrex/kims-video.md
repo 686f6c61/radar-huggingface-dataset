@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `BloodyRex/kims-video` en HuggingFace no contiene un modelo de IA, sino un Space de tipo `static` que aloja una landing page para una aplicacion de recomendacion cinematografica denominada "Kim's Video". El autor, BloodyRex, describe esta aplicacion como una plataforma de entretenimiento con inteligencia artificial que permite al usuario introducir una o dos peliculas, responder un cuestionario dinamico y recibir cinco recomendaciones personalizadas (populares, joyas ocultas y un comodin). La aplicacion completa, segun la model card, esta disponible en `bloodyrex.xyz`.
+El repositorio `BloodyRex/kims-video` en Hugging Face no contiene un modelo de IA, sino un Space de tipo `static` que aloja una landing page para una aplicacion de recomendacion cinematografica denominada "Kim's Video". El autor, BloodyRex, describe esta aplicacion como una plataforma de entretenimiento con inteligencia artificial que permite al usuario introducir una o dos peliculas, responder un cuestionario dinamico y recibir cinco recomendaciones personalizadas (populares, joyas ocultas y un comodin). La aplicacion completa, segun la model card, esta disponible en `bloodyrex.xyz`.
 
 El proyecto se apoya en un stack tecnico compuesto por DeepSeek como modelo de lenguaje, TMDB como fuente de datos, Cloudflare Workers, React 18, Vite y Tailwind CSS 4. No se proporcionan pesos, arquitectura, parametros ni cualquier otra especificacion propia de un modelo entrenado. Por tanto, no es posible evaluar este repositorio como un modelo de lenguaje o de vision en el sentido clasico; se trata de un escaparate estatico de una aplicacion web que consume modelos externos.
 
@@ -18,7 +18,7 @@ El proyecto se apoya en un stack tecnico compuesto por DeepSeek como modelo de l
 | Idiomas soportados | no disponible (la model card no especifica idiomas) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (no contiene pesos) |
-| Tipo de recurso | Space de HuggingFace, sdk: static |
+| Tipo de recurso | Space de Hugging Face, sdk: static |
 
 ## Arquitectura y entrenamiento
 
@@ -35,7 +35,7 @@ No hay arquitectura ni proceso de entrenamiento disponibles, porque el repositor
 
 ## Casos de uso
 
-- Landing page para promocionar una aplicacion de recomendacion de peliculas: el Space actua como escaparate estatico que redirige al usuario a la aplicacion completa en `bloodyrex.xyz`, ideal para captar visitantes desde HuggingFace.
+- Landing page para promocionar una aplicacion de recomendacion de peliculas: el Space actua como escaparate estatico que redirige al usuario a la aplicacion completa en `bloodyrex.xyz`, ideal para captar visitantes desde Hugging Face.
 - Recomendacion personalizada de cine: el usuario introduce una o dos peliculas de su agrado y, mediante un cuestionario dinamico, obtiene cinco sugerencias que incluyen titulos populares, joyas ocultas y un comodin, lo que facilita el descubrimiento de contenido.
 - Exploracion de catalogos mediante "The Wall": la aplicacion presenta un muro acumulativo de peliculas por fecha de estreno, util para seguir la historia del cine y detectar tendencias.
 - Descubrimiento comunitario con "Curated Picks": la funcion de dobles funciones permite compartir y consumir recomendaciones de otros usuarios, fomentando una experiencia social de visionado.
@@ -63,10 +63,10 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una compar
 - La informacion sobre la aplicacion proviene unicamente de la model card y de la pagina web; no se verifican las funcionalidades reales.
 - La aplicacion depende de servicios externos (DeepSeek, TMDB, Cloudflare Workers). Si alguno de estos servicios falla o cambia sus condiciones de uso, la disponibilidad de la aplicacion puede verse afectada.
 - La model card esta en ingles y chino; no se proporciona documentacion tecnica detallada ni garantias de soporte.
-- El dominio `bloodyrex.xyz` es el punto de acceso principal; el Space de HuggingFace es solo una landing page estatica y no contiene la logica de negocio.
+- El dominio `bloodyrex.xyz` es el punto de acceso principal; el Space de Hugging Face es solo una landing page estatica y no contiene la logica de negocio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BloodyRex/kims-video
+- Repositorio en Hugging Face: https://huggingface.co/BloodyRex/kims-video
 - Repositorio en GitHub: https://github.com/BloodyRex/kims-video
 - Aplicacion principal: https://bloodyrex.xyz/

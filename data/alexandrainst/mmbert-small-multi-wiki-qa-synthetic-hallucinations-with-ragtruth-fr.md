@@ -12,7 +12,7 @@ El modelo tiene 140,6 millones de parámetros y se distribuye en formato safeten
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (según tag de HuggingFace) |
+| Arquitectura | ModernBERT (según tag de Hugging Face) |
 | Parametros totales | 140.642.306 |
 | Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | no disponible |
@@ -32,7 +32,7 @@ El entrenamiento se realizó mediante fine-tuning sobre un dataset sintético ge
 - Detección de alucinaciones a nivel de token en respuestas de QA, clasificando cada token como fiel o alucinado respecto a un contexto dado.
 - Verificación de fidelidad en sistemas RAG, permitiendo identificar qué partes de una respuesta generada no están respaldadas por el contexto recuperado.
 - Procesamiento de texto en francés, con posible transferencia a otros idiomas si se entrena con datos multilingües (aunque esta versión está especializada en francés).
-- Integración con pipelines de transformers para clasificación de tokens, compatible con la librería `transformers` y con endpoints de HuggingFace.
+- Integración con pipelines de transformers para clasificación de tokens, compatible con la librería `transformers` y con endpoints de Hugging Face.
 - No es un modelo generativo: no produce texto, sino que etiqueta tokens existentes.
 - No se han documentado capacidades de tool calling, agentes o razonamiento multi-paso, ya que su función es puramente discriminativa.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 - Al ser un modelo de 140 millones de parámetros, la inferencia es ligera. En fp32, el peso ocupa aproximadamente 560 MB; en fp16, unos 280 MB.
 - Cabe en GPUs consumer con al menos 4 GB de VRAM, como una NVIDIA GTX 1650 o superior. Para mayor comodidad, una RTX 3060 o RTX 4060 con 8-12 GB es suficiente.
 - No requiere hardware especializado como A100 o H100 para inferencia, aunque para fine-tuning adicional sí podría beneficiarse de GPUs con más memoria.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, HuggingFace Inference Endpoints, o mediante la API de `transformers` en un script Python. También es compatible con `pipeline` de HuggingFace para clasificación de tokens.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, Hugging Face Inference Endpoints, o mediante la API de `transformers` en un script Python. También es compatible con `pipeline` de Hugging Face para clasificación de tokens.
 - La latencia esperada es de milisegundos por secuencia en GPU, y de unos pocos cientos de milisegundos en CPU, dependiendo de la longitud del texto.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fr)
+- [Hugging Face - modelo](https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fr)
 - [Paper - A multilingual hallucination benchmark: MultiWikiQHalluA](https://arxiv.org/pdf/2605.02504)
 - [Paper (HTML)](https://arxiv.org/html/2605.02504v2)
 - [Repositorio GitHub - multi_wiki_qa](https://github.com/alexandrainst/multi_wiki_qa)

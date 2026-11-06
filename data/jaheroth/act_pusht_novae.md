@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jaheroth/act_pusht_novae` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), entrenada con la librería LeRobot sobre el dataset `lerobot/pusht`. ACT es un algoritmo de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales, lo que mejora la estabilidad y la tasa de éxito en tareas de manipulación. Este modelo concreto ha sido entrenado por el usuario jaheroth y publicado en HuggingFace con licencia Apache-2.0, ocupando aproximadamente 0,1 GB en disco.
+El modelo `jaheroth/act_pusht_novae` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), entrenada con la librería LeRobot sobre el dataset `lerobot/pusht`. ACT es un algoritmo de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales, lo que mejora la estabilidad y la tasa de éxito en tareas de manipulación. Este modelo concreto ha sido entrenado por el usuario jaheroth y publicado en Hugging Face con licencia Apache-2.0, ocupando aproximadamente 0,1 GB en disco.
 
 Con 34,2 millones de parámetros, es un modelo ligero diseñado específicamente para la tarea PushT, que consiste en empujar una pieza con forma de T hasta una posición objetivo. Su relevancia radica en ser un ejemplo práctico de cómo LeRobot permite entrenar y compartir políticas robóticas de forma reproducible, facilitando la experimentación en entornos simulados y reales. No se trata de un modelo de lenguaje ni de visión general, sino de un componente de control para sistemas robóticos.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jaheroth/act_pusht_novae | 34,2 M | PushT | Apache-2.0 | HuggingFace |
-| MonishBalu/act_pusht_model | no disponible | PushT | no disponible | HuggingFace |
-| arclabmit/pusht_act_model | no disponible | PushT | no disponible | HuggingFace |
+| jaheroth/act_pusht_novae | 34,2 M | PushT | Apache-2.0 | Hugging Face |
+| MonishBalu/act_pusht_model | no disponible | PushT | no disponible | Hugging Face |
+| arclabmit/pusht_act_model | no disponible | PushT | no disponible | Hugging Face |
 
 Los tres modelos comparten la misma arquitectura ACT y el mismo dataset de entrenamiento, por lo que sus capacidades son equivalentes en principio. No se dispone de datos de rendimiento comparativos entre ellos. La principal diferencia es la autoría y la fecha de publicación, sin que se documenten variaciones en la configuración de entrenamiento.
 
@@ -75,7 +75,7 @@ Los tres modelos comparten la misma arquitectura ACT y el mismo dataset de entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaheroth/act_pusht_novae
+- Modelo en Hugging Face: https://huggingface.co/jaheroth/act_pusht_novae
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

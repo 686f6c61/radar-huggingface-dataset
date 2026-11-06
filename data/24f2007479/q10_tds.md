@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Este 
 
 ## Comparativa con modelos similares
 
-No disponible. Al no tratarse de un modelo de IA, no existen modelos comparables en cuanto a arquitectura, parámetros o rendimiento. Los repositorios comparables serían otros artefactos de contabilidad de carbono en HuggingFace, pero no se dispone de información sobre ellos en la documentación proporcionada.
+No disponible. Al no tratarse de un modelo de IA, no existen modelos comparables en cuanto a arquitectura, parámetros o rendimiento. Los repositorios comparables serían otros artefactos de contabilidad de carbono en Hugging Face, pero no se dispone de información sobre ellos en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -65,7 +65,7 @@ No disponible. Al no tratarse de un modelo de IA, no existen modelos comparables
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/24F2007479/q10_tds
-- Perfil del autor en HuggingFace: https://huggingface.co/24F2007479
+- Repositorio en Hugging Face: https://huggingface.co/24F2007479/q10_tds
+- Perfil del autor en Hugging Face: https://huggingface.co/24F2007479
 - Repositorio GitHub del autor (tds-ga7-release-gate): https://github.com/24f2007479/tds-ga7-release-gate
 - Repositorio GitHub del autor (tds-p1-databot): https://github.com/24f2007479/tds-p1-databot

@@ -108,7 +108,7 @@ No se dispone de métricas de precisión comparables entre estos modelos en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qualcomm/EasyOCR
+- Repositorio Hugging Face: https://huggingface.co/qualcomm/EasyOCR
 - EasyOCR en Qualcomm AI Hub: https://aihub.qualcomm.com/models/easyocr
 - Librería ai-hub-models (EasyOCR): https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/easyocr
 - Implementación original EasyOCR (JaidedAI): https://github.com/JaidedAI/EasyOCR

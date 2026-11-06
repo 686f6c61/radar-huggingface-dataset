@@ -109,7 +109,7 @@ No se dispone de informacion sobre modelos externos comparables en los datos pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Soulfate24/Ornith-1.5-9B-DFlash-Paretrix
+- Repositorio en Hugging Face: https://huggingface.co/Soulfate24/Ornith-1.5-9B-DFlash-Paretrix
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Draft DFlash: https://huggingface.co/ornith-ai/Ornith-1.5-9B-DFlash
 - Suite de cuantizacion Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite

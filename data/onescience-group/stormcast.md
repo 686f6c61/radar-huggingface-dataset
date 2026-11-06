@@ -81,11 +81,11 @@ La comparativa se basa en características generales conocidas de estos modelos;
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/StormCast
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/StormCast
 - Artículo original (arXiv): https://arxiv.org/abs/2408.10958
 - Página del laboratorio de NVIDIA sobre StormCast: https://research.nvidia.com/labs/climate/publication/pathak-2024-kilometer/
 - Implementación de referencia en ai4science-studio (AMD): https://github.com/AMDResearch/ai4science-studio/tree/main/earth_science/models/StormCast
-- Organización OneScience en HuggingFace: https://huggingface.co/OneScience-Group/models
+- Organización OneScience en Hugging Face: https://huggingface.co/OneScience-Group/models
 - Repositorio principal de OneScience (GitHub): https://github.com/onescience-ai/OneScience
 - Repositorio de habilidades OneScience (GitHub): https://github.com/onescience-ai/oneskills
 - Catálogo público de modelos OneScience: http://onescience.ai:8008/models

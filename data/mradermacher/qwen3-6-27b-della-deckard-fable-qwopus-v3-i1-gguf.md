@@ -71,7 +71,7 @@ No se dispone de datos de comparación con otros modelos de la misma categoría 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Qwen3.6-27B-Della-Deckard-Fable-Qwopus-v3-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Qwen3.6-27B-Della-Deckard-Fable-Qwopus-v3-i1-GGUF
 - Modelo base (original): https://huggingface.co/YFC-112358/Qwen3.6-27B-Della-Deckard-Fable-Qwopus-v3
 - Cuantizaciones estáticas (incluye mmproj): https://huggingface.co/mradermacher/Qwen3.6-27B-Della-Deckard-Fable-Qwopus-v3-GGUF
 - Documentación de Qwen3.6-27B en QwenCloud: https://www.qwencloud.com/models/qwen3.6-27b

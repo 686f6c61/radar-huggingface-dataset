@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_simpleavg_merge es un modelo de lenguaje de tipo decoder-only publicado por el usuario yuhengtu-bytedance en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de promediar los pesos (weight averaging) de tres checkpoints intermedios del mismo entrenamiento, identificados como `global_step6000`, `global_step7000` y `global_step8000` dentro de un pipeline interno denominado `filtered_e2e_insert_hyperstition_v1`. La fusión se ha realizado con la herramienta mergekit mediante el método Linear, con normalización de pesos activada y conversión de float32 a bfloat16 en la salida.
+sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_simpleavg_merge es un modelo de lenguaje de tipo decoder-only publicado por el usuario yuhengtu-bytedance en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de promediar los pesos (weight averaging) de tres checkpoints intermedios del mismo entrenamiento, identificados como `global_step6000`, `global_step7000` y `global_step8000` dentro de un pipeline interno denominado `filtered_e2e_insert_hyperstition_v1`. La fusión se ha realizado con la herramienta mergekit mediante el método Linear, con normalización de pesos activada y conversión de float32 a bfloat16 en la salida.
 
-El modelo cuenta con 6.856.253.440 parámetros (aproximadamente 6,86 mil millones), según los datos reales de los ficheros safetensors, lo que lo sitúa en la franja de los modelos densos de ~7B. Los tags de HuggingFace lo clasifican con la arquitectura `gpt_neox`, es decir, un transformer autoregresivo de la familia GPT-NeoX, y la etiqueta `conversational` sugiere algún tipo de ajuste orientado a diálogo. El repositorio ocupa 13,7 GB.
+El modelo cuenta con 6.856.253.440 parámetros (aproximadamente 6,86 mil millones), según los datos reales de los ficheros safetensors, lo que lo sitúa en la franja de los modelos densos de ~7B. Los tags de Hugging Face lo clasifican con la arquitectura `gpt_neox`, es decir, un transformer autoregresivo de la familia GPT-NeoX, y la etiqueta `conversational` sugiere algún tipo de ajuste orientado a diálogo. El repositorio ocupa 13,7 GB.
 
 Su relevancia práctica es limitada y muy específica: se trata de un artefacto de investigación interna (las rutas del YAML apuntan a directorios locales `/opt/tiger/...`, coherentes con infraestructura interna de ByteDance) que reproduce un experimento de combinación de checkpoints para estudiar si el promediado de pesos mejora la estabilidad frente a usar un único punto de control. No incluye model card descriptiva, ni licencia declarada, ni idiomas soportados, ni resultados de evaluación, por lo que debe tratarse como material de estudio reproducible más que como modelo listo para producción.
 
@@ -12,7 +12,7 @@ Su relevancia práctica es limitada y muy específica: se trata de un artefacto 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-NeoX (`gpt_neox` segun los tags de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-NeoX (`gpt_neox` segun los tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (~6,86B), dato real de los safetensors |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible (la model card no documenta la ventana de contexto) |
@@ -42,7 +42,7 @@ Lo relevante de este repositorio no es el entrenamiento, sino el post-procesado.
 - Capacidades de agente y razonamiento multi-paso: no disponible; no se documenta ningún modo de razonamiento extendido, "thinking mode" ni planificación.
 - Multilingüismo: no disponible; el repositorio no declara idiomas.
 - Vision, audio o multimodalidad: no soportado (modelo exclusivamente de texto).
-- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican que el modelo puede servirse con TGI y con los endpoints gestionados de HuggingFace, siempre que la configuración de arquitectura sea coherente.
+- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican que el modelo puede servirse con TGI y con los endpoints gestionados de Hugging Face, siempre que la configuración de arquitectura sea coherente.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ Estimaciones calculadas a partir del recuento real de parámetros (6,86B); no so
 - VRAM en int4 (requiere conversión propia a GGUF/AWQ/GPTQ): ~3,5-4,5 GB, lo que permite ejecución en GPUs de 6-8 GB.
 - GPU recomendadas para bf16: NVIDIA A100 40/80 GB, H100, L40S o RTX 4090 (24 GB). La RTX 4090 es suficiente para una sola instancia en bf16.
 - GPU de consumo: cabe en RTX 4090, RTX 3090 y RTX 4080 (16 GB, con margen justo) en bf16; en RTX 3060 12 GB, RTX 4060 Ti 16 GB o superiores en int8/int4.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, Text Generation Inference (tag `text-generation-inference` presente), endpoints gestionados de HuggingFace (tag `endpoints_compatible`). Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF; no hay GGUF publicado en el repositorio.
+- Opciones de despliegue: transformers (libreria declarada), vLLM, Text Generation Inference (tag `text-generation-inference` presente), endpoints gestionados de Hugging Face (tag `endpoints_compatible`). Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF; no hay GGUF publicado en el repositorio.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo, time-to-first-token ni resultados de concurrencia, y la longitud de contexto es desconocida, por lo que no puede estimarse el consumo de caché KV con rigor.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de benchmarks de este modelo, así que la comparación se limita a
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_simpleavg_merge | ~6,86B | no disponible | GPT-NeoX (merge lineal) | no disponible | HuggingFace, 0 descargas |
+| sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_simpleavg_merge | ~6,86B | no disponible | GPT-NeoX (merge lineal) | no disponible | Hugging Face, 0 descargas |
 | Pythia-6.9B (EleutherAI) | 6,9B | 2048 tokens | GPT-NeoX | Apache 2.0 | Publico, ampliamente usado |
 | GPT-J-6B (EleutherAI) | 6B | 2048 tokens | GPT-J | Apache 2.0 | Publico, ampliamente usado |
 | Mistral-7B-v0.1 | 7,3B | 8192 tokens | Transformer denso con GQA y sliding window | Apache 2.0 | Publico, muy extendido |
@@ -88,7 +88,7 @@ La comparación con Pythia-6.9B y GPT-J-6B es la más pertinente por familia arq
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explícita no hay autorización clara de uso comercial ni de redistribución. No debe integrarse en productos sin resolver antes la situación legal.
-- Procedencia opaca: los checkpoints de origen están referenciados mediante rutas locales internas (`/opt/tiger/Pan_Safety_Better_Measurement/...`), no mediante identificadores públicos de HuggingFace, por lo que la trazabilidad del modelo base, del dataset y del tokenizador es nula desde fuera.
+- Procedencia opaca: los checkpoints de origen están referenciados mediante rutas locales internas (`/opt/tiger/Pan_Safety_Better_Measurement/...`), no mediante identificadores públicos de Hugging Face, por lo que la trazabilidad del modelo base, del dataset y del tokenizador es nula desde fuera.
 - Sin model card descriptiva: se desconoce la plantilla de prompt, el tokenizador asociado, la ventana de contexto, el vocabulario y los idiomas de entrenamiento. Esto hace probable que el modelo rinda mal si se usa con prompts formateados para otras familias.
 - Riesgo de alucinación: es un modelo de lenguaje generativo de 6,9B sin evaluación publicada; no hay ninguna garantía de fidelidad factual, y el riesgo es comparable o superior al de modelos de su escala con más ajuste por instrucciones.
 - Sesgos: no disponibles. No se ha publicado ningún análisis de sesgos, toxicidad ni evaluación de seguridad, pese al contexto de "Safety" en el nombre del directorio de origen.
@@ -99,7 +99,7 @@ La comparación con Pythia-6.9B y GPT-J-6B es la más pertinente por familia arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_simpleavg_merge
 - mergekit (herramienta usada para el merge): https://github.com/cg123/mergekit
 - Paper del metodo Linear referenciado en los tags (Model Soups): https://arxiv.org/abs/2203.05482
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference

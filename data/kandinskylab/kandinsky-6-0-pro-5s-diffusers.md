@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kandinsky-6.0-Pro-5s-Diffusers es un modelo de generacion de video desarrollado por kandinskylab, publicado en HuggingFace bajo la libreria diffusers. Segun los tags del repositorio, cubre generacion de video a partir de texto (text-to-video), a partir de imagen (image-to-video) y generacion de audio, integrados en un unico pipeline identificado como Kandinsky6TI2VAPipeline. El nombre del repositorio sugiere variantes de duracion corta (5s), aunque no se dispone de documentacion que lo confirme.
+Kandinsky-6.0-Pro-5s-Diffusers es un modelo de generacion de video desarrollado por kandinskylab, publicado en Hugging Face bajo la libreria diffusers. Segun los tags del repositorio, cubre generacion de video a partir de texto (text-to-video), a partir de imagen (image-to-video) y generacion de audio, integrados en un unico pipeline identificado como Kandinsky6TI2VAPipeline. El nombre del repositorio sugiere variantes de duracion corta (5s), aunque no se dispone de documentacion que lo confirme.
 
-El modelo cuenta con 30.136.326.248 parametros (aproximadamente 30,1 mil millones) en pesos safetensors, con un tamano de repositorio de 223,5 GB, lo que indica la presencia de multiples componentes (probablemente transformer de difusion, VAE, modelo de audio y codificadores de texto) o varias copias en distintas precisiones. Se distribuye bajo licencia MIT, aunque el acceso esta restringido y requiere aceptar condiciones en HuggingFace.
+El modelo cuenta con 30.136.326.248 parametros (aproximadamente 30,1 mil millones) en pesos safetensors, con un tamano de repositorio de 223,5 GB, lo que indica la presencia de multiples componentes (probablemente transformer de difusion, VAE, modelo de audio y codificadores de texto) o varias copias en distintas precisiones. Se distribuye bajo licencia MIT, aunque el acceso esta restringido y requiere aceptar condiciones en Hugging Face.
 
 Su relevancia actual radica en la convergencia de generacion de video y audio en un solo modelo de gran escala y licencia permisiva, un perfil poco frecuente en el ecosistema abierto. No obstante, la ausencia de documentacion publica, resultados de benchmarks y especificaciones de entrenamiento limita seriamente la evaluacion tecnica objetiva en el momento de redactar esta ficha.
 
@@ -23,14 +23,14 @@ Su relevancia actual radica en la convergencia de generacion de video y audio en
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura interna del modelo mas alla de lo que indican los tags del repositorio de HuggingFace: se trata de un modelo de difusion orientado a generacion de video (text-to-video e image-to-video) con generacion de audio asociada, empaquetado en el pipeline `Kandinsky6TI2VAPipeline` de la libreria diffusers. El sufijo TI2VA y la presencia simultanea de los tags `video` y `audio-generation` apuntan a un pipeline conjunto de texto-imagen a video con audio, pero no se detalla la composicion de sus bloques (transformer, VAE, decodificador de audio, codificadores de texto) ni el tipo de mecanismo de atencion empleado.
+No se dispone de informacion publicada sobre la arquitectura interna del modelo mas alla de lo que indican los tags del repositorio de Hugging Face: se trata de un modelo de difusion orientado a generacion de video (text-to-video e image-to-video) con generacion de audio asociada, empaquetado en el pipeline `Kandinsky6TI2VAPipeline` de la libreria diffusers. El sufijo TI2VA y la presencia simultanea de los tags `video` y `audio-generation` apuntan a un pipeline conjunto de texto-imagen a video con audio, pero no se detalla la composicion de sus bloques (transformer, VAE, decodificador de audio, codificadores de texto) ni el tipo de mecanismo de atencion empleado.
 
 Tampoco hay informacion disponible sobre el volumen de tokens de entrenamiento, la composicion del dataset, la resolucion y duracion nativas, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por preferencia humana en video. El repositorio hace referencia al identificador arXiv:2610.05608, que se incluye en la seccion de enlaces, pero no se ha podido acceder a su contenido en la informacion proporcionada. No se han identificado innovaciones tecnicas documentadas (decodificacion especulativa, atencion lineal, destilacion de pasos, etc.).
 
 ## Capacidades
 
 - Generacion de video a partir de texto (text-to-video), segun los tags del repositorio.
-- Generacion de video a partir de imagen (image-to-video), que es el pipeline declarado en la ficha de HuggingFace.
+- Generacion de video a partir de imagen (image-to-video), que es el pipeline declarado en la ficha de Hugging Face.
 - Generacion de audio asociada al contenido de video, segun el tag `audio-generation`.
 - Pipeline conjunto texto-imagen a video con audio (`Kandinsky6TI2VAPipeline`), lo que sugiere salidas multimodales sincronizadas.
 - Soporte de tool calling o function calling: no disponible.
@@ -68,7 +68,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Kandinsky-6.0-Pro-5s-Diffusers | 30,1 B | No aplica / no disponible | MIT | Gated en HuggingFace | No disponible |
+| Kandinsky-6.0-Pro-5s-Diffusers | 30,1 B | No aplica / no disponible | MIT | Gated en Hugging Face | No disponible |
 | Alternativas de la misma categoria | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers
+- Modelo en Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers
 - Paper referenciado en los tags (arXiv:2610.05608): https://arxiv.org/abs/2610.05608
 - Documentacion de la libreria diffusers: https://huggingface.co/docs/diffusers/index
 - No se han encontrado otros enlaces (repositorios, demos o blogs) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AMD publica en HuggingFace una versión optimizada de Qwen2.5-3B-Instruct para su plataforma Ryzen AI, empaquetada en formato ONNX y cuantizada con las herramientas Quark del propio fabricante. El modelo está pensado para ejecutarse sobre la NPU integrada en los procesadores AMD Ryzen AI (arquitectura XDNA/XDNA2), lo que permite inferencia de un LLM de 3.000 millones de parámetros en un PC con consumo energético reducido y sin depender de una GPU dedicada.
+AMD publica en Hugging Face una versión optimizada de Qwen2.5-3B-Instruct para su plataforma Ryzen AI, empaquetada en formato ONNX y cuantizada con las herramientas Quark del propio fabricante. El modelo está pensado para ejecutarse sobre la NPU integrada en los procesadores AMD Ryzen AI (arquitectura XDNA/XDNA2), lo que permite inferencia de un LLM de 3.000 millones de parámetros en un PC con consumo energético reducido y sin depender de una GPU dedicada.
 
 Se trata de un derivado del modelo Qwen2.5-3B-Instruct de Alibaba, un transformer decoder-only denso con 3.000 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (ampliable a 128K en la familia Qwen2.5). AMD no modifica los pesos originales en cuanto a capacidades cognitivas: lo que cambia es el pipeline de exportación, cuantización y despliegue para el runtime Ryzen AI 1.9.0, que expone el modelo a través de la NPU mediante el stack ONNX Runtime con el proveedor de ejecución Vitis AI.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede complicar la automatización en CI/CD.
+- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede complicar la automatización en CI/CD.
 - **Idioma**: la model card declara únicamente inglés; aunque el modelo base es multilingüe, el comportamiento en castellano no está garantizado ni evaluado en esta versión.
 - **Sesgos**: hereda los sesgos del corpus de entrenamiento de Qwen2.5, no documentados en esta ficha.
 - **Alucinación**: como todo LLM de 3B, presenta una tasa de alucinación notable en tareas de conocimiento factual y razonamiento complejo; no debe usarse como fuente de verdad sin verificación.
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- [HuggingFace: amd/Qwen2.5_3B_Instruct_rai_1.9.0_npu](https://huggingface.co/amd/Qwen2.5_3B_Instruct_rai_1.9.0_npu)
+- [Hugging Face: amd/Qwen2.5_3B_Instruct_rai_1.9.0_npu](https://huggingface.co/amd/Qwen2.5_3B_Instruct_rai_1.9.0_npu)
 - [Qwen2.5-3B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
 - [Repositorio Qwen2.5 en GitHub](https://github.com/QwenLM/Qwen2.5)
 - [AMD Ryzen AI (pagina oficial)](https://www.amd.com/en/products/processors/ryzen-ai.html)

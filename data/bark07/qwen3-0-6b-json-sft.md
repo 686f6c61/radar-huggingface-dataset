@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bark07/Qwen3-0.6B-JSON-SFT` es un fine-tuning supervisado (SFT) del modelo base Qwen3-0.6B, orientado a la generación de JSON estructurado. Aunque la model card publicada por el autor es una plantilla genérica sin detalles técnicos, el nombre del repositorio y las etiquetas (`trl`, `sft`, `text-generation`) indican que se trata de un ajuste fino realizado con la librería TRL de HuggingFace sobre el modelo Qwen3-0.6B, que pertenece a la familia Qwen3 de Alibaba.
+El modelo `bark07/Qwen3-0.6B-JSON-SFT` es un fine-tuning supervisado (SFT) del modelo base Qwen3-0.6B, orientado a la generación de JSON estructurado. Aunque la model card publicada por el autor es una plantilla genérica sin detalles técnicos, el nombre del repositorio y las etiquetas (`trl`, `sft`, `text-generation`) indican que se trata de un ajuste fino realizado con la librería TRL de Hugging Face sobre el modelo Qwen3-0.6B, que pertenece a la familia Qwen3 de Alibaba.
 
 El modelo tiene 596 millones de parámetros y se distribuye en formato `safetensors`, con un tamaño de repositorio de 1,2 GB. Su propósito declarado es la generación de respuestas en formato JSON, lo que lo hace relevante para aplicaciones que requieren salidas estructuradas, como integraciones con APIs, extracción de datos o agentes conversacionales. La relevancia actual radica en que los modelos pequeños con salida JSON controlada permiten desplegar soluciones de bajo coste en entornos de producción con requisitos de latencia estrictos.
 
@@ -77,9 +77,9 @@ La comparativa se limita a los modelos base de la misma familia, ya que no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bark07/Qwen3-0.6B-JSON-SFT
-- Modelo base Qwen3-0.6B (HuggingFace): https://huggingface.co/Qwen/Qwen3-0.6B
-- Modelo base Qwen3-0.6B-Base (HuggingFace): https://huggingface.co/Qwen/Qwen3-0.6B-Base
+- Repositorio Hugging Face: https://huggingface.co/bark07/Qwen3-0.6B-JSON-SFT
+- Modelo base Qwen3-0.6B (Hugging Face): https://huggingface.co/Qwen/Qwen3-0.6B
+- Modelo base Qwen3-0.6B-Base (Hugging Face): https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Repositorio GitHub de referencia qwen3-0.6: https://github.com/TrentConley/qwen3-0.6
 - Ficha de Qwen3-0.6B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_0_6b

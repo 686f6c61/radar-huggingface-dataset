@@ -83,7 +83,7 @@ No se conocen otros modelos de la misma familia con los que comparar en esta inf
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mulhearn1022/Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mulhearn1022/Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp
 - Modelo base abliterated de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated
 - Versión GGUF del mismo modelo: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF
 - Benchmark de rendimiento en omlx.ai: https://omlx.ai/benchmarks/performance/6t22jn36

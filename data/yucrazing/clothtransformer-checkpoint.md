@@ -4,7 +4,7 @@
 
 ClothTransformer es un modelo basado en transformers disenado especificamente para simulacion de telas (cloth simulation) en entornos de fisica. Desarrollado por Yu Zhang y colaboradores, fue presentado en NeurIPS 2026 bajo el titulo "ClothTransformer: Unified Latent-Space Transformers for Scalable Cloth Simulation". A diferencia de los modelos de lenguaje, este checkpoint resuelve un problema de simulacion fisica: predecir la deformacion de telas de forma escalable mediante un espacio latente unificado.
 
-El modelo se distribuye como un checkpoint de PyTorch (`ct-no-ccd-preview.pt`) de aproximadamente 0,6 GB, lo que sugiere un modelo de tamano moderado orientado a inferencia sobre simulaciones de prendas. No se trata de un modelo generativo de texto ni multimodal: su pipeline no esta clasificado en HuggingFace y sus etiquetas lo vinculan exclusivamente a simulacion fisica y de telas.
+El modelo se distribuye como un checkpoint de PyTorch (`ct-no-ccd-preview.pt`) de aproximadamente 0,6 GB, lo que sugiere un modelo de tamano moderado orientado a inferencia sobre simulaciones de prendas. No se trata de un modelo generativo de texto ni multimodal: su pipeline no esta clasificado en Hugging Face y sus etiquetas lo vinculan exclusivamente a simulacion fisica y de telas.
 
 Su relevancia radica en la aplicacion de arquitecturas transformer al ambito de la simulacion fisica, un campo tradicionalmente dominado por metodos numericos (solvers de integracion temporal, sistemas de particulas). La propuesta de un espacio latente unificado sugiere la capacidad de manejar distintas configuraciones de malla o prendas con un unico modelo, lo que resulta relevante para industria del videojuego, animacion y diseno textil digital.
 
@@ -74,8 +74,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables de si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuCrazing/ClothTransformer-checkpoint
-- Paper (HuggingFace): https://huggingface.co/papers/2605.27852
+- Hugging Face: https://huggingface.co/YuCrazing/ClothTransformer-checkpoint
+- Paper (Hugging Face): https://huggingface.co/papers/2605.27852
 - arXiv: https://arxiv.org/abs/2605.27852
 - Project page: https://yucrazing.github.io/clothtransformer/
 - Codigo: https://github.com/YuCrazing/ClothTransformer

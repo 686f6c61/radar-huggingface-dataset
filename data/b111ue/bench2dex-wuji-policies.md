@@ -74,7 +74,7 @@ No se dispone de datos comparativos en la información proporcionada. Como refer
 
 | Alternativa | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| B111ue/bench2dex-wuji-policies | no disponible | no disponible | sin métricas publicadas | no disponible | HuggingFace |
+| B111ue/bench2dex-wuji-policies | no disponible | no disponible | sin métricas publicadas | no disponible | Hugging Face |
 | Bench2Dex ACT/DP | no disponible | no disponible | no disponible | no disponible | repositorio GitHub citado |
 | DECO vision | no disponible | no disponible | no disponible | no disponible | repositorio GitHub citado |
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos en la información proporcionada. Como refer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/B111ue/bench2dex-wuji-policies
+- Hugging Face: https://huggingface.co/B111ue/bench2dex-wuji-policies
 - Bench2Dex (repositorio de métodos): https://github.com/Bench2Dex/Bench2Dex
 - DECO vision (rama `sim`): https://github.com/BAAI-Humanoid/DECO/tree/sim
 - Conjunto de demostraciones de teleoperación: https://huggingface.co/datasets/Bench2Dex/teleopdata

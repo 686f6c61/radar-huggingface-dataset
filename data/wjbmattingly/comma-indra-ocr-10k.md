@@ -68,16 +68,16 @@ Sobre recortes de linea con ground truth, el reconocedor de este modelo obtiene 
 - Compatibilidad con GPU de consumo: no aplica de forma directa, dado que el modelo esta pensado para ejecucion en CPU. No se especifica si soporta aceleracion por GPU.
 - Opciones de despliegue: paquete `indra-ocr` de Python (`pip install indra-ocr`) junto con `huggingface_hub.snapshot_download` para descargar el repositorio. Al ser ficheros ONNX, tambien puede ejecutarse con ONNX Runtime directamente, aunque no se documenta un procedimiento alternativo.
 - Latencia y throughput: no disponible. Solo se conoce el tiempo de entrenamiento (37 minutos para 6 epocas sobre 389.770 recortes de linea), que no es un dato de inferencia.
-- Tamano del repositorio: 0,0 GB segun HuggingFace, coherente con un conjunto de modelos ONNX pequenos.
+- Tamano del repositorio: 0,0 GB segun Hugging Face, coherente con un conjunto de modelos ONNX pequenos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | CER (NFD) end-to-end, 243 paginas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| comma-indra-ocr-10k | no disponible | no aplica (OCR de lineas) | 0,1499 | OpenRAIL-M modificada de Datalab (share-alike) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| comma-indra-ocr-10k | no disponible | no aplica (OCR de lineas) | 0,1499 | OpenRAIL-M modificada de Datalab (share-alike) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Qwen3.5-0.8B, ajuste fino completo (mismo corpus) | 0,8B | no disponible | 0,1458 | no disponible | no disponible |
 | LightOnOCR-3-0.8B, ajuste fino completo (mismo corpus) | 0,8B | no disponible | 0,1206 | no disponible | no disponible |
-| Indra OCR (datalab-to/indra-ocr), modelo base | no disponible | no aplica | 0,5834 | OpenRAIL-M modificada de Datalab | HuggingFace |
+| Indra OCR (datalab-to/indra-ocr), modelo base | no disponible | no aplica | 0,5834 | OpenRAIL-M modificada de Datalab | Hugging Face |
 
 Las cifras de los dos modelos de 0,8B provienen de la propia model card y se midieron sobre el mismo conjunto de 9.906 paginas de entrenamiento; solo se publica el CER, sin el resto de metricas. El modelo ajustado iguala practicamente a Qwen3.5-0.8B en CER (0,1458 frente a 0,1499) con una fraccion del coste de computo, aunque LightOnOCR-3-0.8B obtiene un CER mejor (0,1206) a costa de un modelo de 0,8B parametros.
 
@@ -94,8 +94,8 @@ Las cifras de los dos modelos de 0,8B provienen de la propia model card y se mid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjbmattingly/comma-indra-ocr-10k
+- Modelo en Hugging Face: https://huggingface.co/wjbmattingly/comma-indra-ocr-10k
 - Modelo base Indra OCR (Datalab): https://huggingface.co/datalab-to/indra-ocr
-- Dataset de entrenamiento: comma-project/deep-jsonl (referenciado en la model card, disponible en HuggingFace)
+- Dataset de entrenamiento: comma-project/deep-jsonl (referenciado en la model card, disponible en Hugging Face)
 - Licencia de Datalab: fichero LICENSE incluido en el repositorio, referencia en https://www.datalab.to/ para licencias mas amplias
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada (los resultados obtenidos no guardan relacion con el modelo).

@@ -112,6 +112,6 @@ No se dispone de comparaciones con otros modelos de regresión tabular para antr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SamaGalagoda/threadcraft-measurement-predictor
+- Modelo en Hugging Face: https://huggingface.co/SamaGalagoda/threadcraft-measurement-predictor
 - Repositorio de ThreadCraft: https://github.com/Samandee-Galagoda/threadcraft
 - Dataset utilizado: https://huggingface.co/datasets/SamaGalagoda/threadcraft-measurements-cleaned

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kokb1-gradio es un repositorio publicado en HuggingFace por el usuario kokabtak bajo el identificador `kokabtak/kokb1-gradio`. Segun su model card, se trata de una demo construida con Gradio que da acceso a un asistente conversacional llamado "kokb1", presentado por el autor como la primera version de su serie de modelos. El repositorio no contiene pesos de modelo: es una aplicacion de interfaz que, segun el autor, consume un modelo subyacente a traves de los Inference Providers de HuggingFace.
+kokb1-gradio es un repositorio publicado en Hugging Face por el usuario kokabtak bajo el identificador `kokabtak/kokb1-gradio`. Segun su model card, se trata de una demo construida con Gradio que da acceso a un asistente conversacional llamado "kokb1", presentado por el autor como la primera version de su serie de modelos. El repositorio no contiene pesos de modelo: es una aplicacion de interfaz que, segun el autor, consume un modelo subyacente a traves de los Inference Providers de Hugging Face.
 
 El autor declara que el sistema esta "impulsado por DeepSeek-V4.1-Flash", un supuesto modelo de 552 000 millones de parametros con arquitectura MoE y una ventana de contexto de 1 000 000 de tokens, con soporte para persa, ingles y chino. Estas afirmaciones aparecen unicamente en la model card y no van acompanadas de documentacion tecnica, ficha de pesos, configuracion ni resultados reproducibles. El repositorio tiene 0 descargas y 0 likes, y su fecha declarada de creacion es el 11 de septiembre de 2026.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Memoria adicional: la ventana declarada de 1 000 000 de tokens implicaria una cache KV de gran tamano, que en configuraciones convencionales puede superar la memoria de los propios pesos para secuencias largas. No hay datos publicados sobre el coste real.
 - GPU recomendadas: para las cifras anteriores harian falta nodos multi-GPU de clase datacenter (H100 80 GB, H200, A100 80 GB) en numero elevado. No es viable en una sola GPU.
 - GPU de consumo: no cabe en tarjetas de consumo (RTX 4090, 3090, etc.) en ninguna cuantizacion razonable, dado el tamano declarado.
-- Opciones de despliegue: no disponible. No se publican pesos, por lo que no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama, TGI o SGLang. La unica via descrita es consumir el modelo a traves de los Inference Providers de HuggingFace desde la app Gradio.
+- Opciones de despliegue: no disponible. No se publican pesos, por lo que no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama, TGI o SGLang. La unica via descrita es consumir el modelo a traves de los Inference Providers de Hugging Face desde la app Gradio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ Las cifras de los tres modelos de referencia proceden de su documentacion public
 - Afirmaciones no verificadas: el tamano de 552 000 millones de parametros, la arquitectura MoE, el contexto de 1 000 000 de tokens y el soporte de tres idiomas son declaraciones del autor sin evidencia adjunta.
 - Licencia no especificada: sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion ni modificacion.
 - Riesgo de alucinacion: no existe evaluacion publica de fidelidad, por lo que el riesgo es desconocido y presumiblemente alto en tareas factuales.
-- Dependencia de terceros: la demo depende de HuggingFace Inference Providers y de servicios de busqueda de terceros, lo que introduce puntos de fallo externos.
+- Dependencia de terceros: la demo depende de Hugging Face Inference Providers y de servicios de busqueda de terceros, lo que introduce puntos de fallo externos.
 - Busqueda web mediante scraping: el uso de `beautifulsoup4` y `duckduckgo-search` puede vulnerar terminos de servicio de los sitios consultados y es fragil ante cambios de HTML.
 - Cobertura limitada de idiomas: solo se declaran persa, ingles y chino; el castellano no figura entre los idiomas soportados.
 - Trazabilidad nula: 0 descargas y 0 likes, sin historial de versiones, issues ni comunidad que permita contrastar el comportamiento real.
@@ -91,7 +91,7 @@ Las cifras de los tres modelos de referencia proceden de su documentacion public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kokabtak/kokb1-gradio
+- Repositorio en Hugging Face: https://huggingface.co/kokabtak/kokb1-gradio
 - Organizacion del autor: https://huggingface.co/kokabtak
 - Contacto declarado: kokbtak@gmail.com
 

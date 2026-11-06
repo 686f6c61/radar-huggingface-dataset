@@ -84,9 +84,9 @@ La comparativa es cualitativa, ya que no se dispone de benchmarks oficiales de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/efficientdet_d0
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/efficientdet_d0
 - Paper original: https://arxiv.org/abs/1911.09070
 - Repositorio GitHub de ZeroModels: https://github.com/IMvision12/ZeroModels
 - Documentación de EfficientDet en ZeroModels: https://imvision12.github.io/ZeroModels/efficientdet/
-- Colección de variantes EfficientDet en HuggingFace: https://hf.co/collections/zeromodels/efficientdet
+- Colección de variantes EfficientDet en Hugging Face: https://hf.co/collections/zeromodels/efficientdet
 - Repositorio original de Google AutoML EfficientDet: https://github.com/google/automl/tree/master/efficientdet

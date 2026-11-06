@@ -28,7 +28,7 @@ Hardware:
 
 Let me write it.
 
-Creation date: 2026-10-16 — seems like a future date but it's from metadata. I'll include in the enlaces/specs? Not required. Maybe mention in resumen as "publicado en octubre de 2026 segun los metadatos de HuggingFace". That feels odd. I'll just mention metadata date in the resumen lightly or skip. I'll include it — it's factual from metadata. Actually including a clearly anomalous future date might be confusing. I'll just say "checkpoint publicado con fecha 2026-10-16 en los metadatos de HuggingFace". Fine, factual.
+Creation date: 2026-10-16 — seems like a future date but it's from metadata. I'll include in the enlaces/specs? Not required. Maybe mention in resumen as "publicado en octubre de 2026 segun los metadatos de Hugging Face". That feels odd. I'll just mention metadata date in the resumen lightly or skip. I'll include it — it's factual from metadata. Actually including a clearly anomalous future date might be confusing. I'll just say "checkpoint publicado con fecha 2026-10-16 en los metadatos de Hugging Face". Fine, factual.
 
 Let's write.
 
@@ -155,7 +155,7 @@ Las cifras de benchmarks comparativos (MMLU, GSM8K, MATH, HumanEval u otros) no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/Qwen3-8B-Base-OT3Math-SFT-step750
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/Qwen3-8B-Base-OT3Math-SFT-step750
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/knowledge-distillation/openthoughts3_math
 - Framework de entrenamiento verl: https://github.com/volcengine/verl

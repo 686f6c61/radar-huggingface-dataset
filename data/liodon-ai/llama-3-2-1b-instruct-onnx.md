@@ -82,8 +82,8 @@ La principal diferencia de este modelo frente a las alternativas es su formato O
 
 ## Enlaces
 
-- [HuggingFace: liodon-ai/Llama-3.2-1B-Instruct-ONNX](https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-ONNX)
-- [HuggingFace: liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF](https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF) (version GGUF del mismo autor)
-- [HuggingFace: amd/Llama-3.2-1B-Instruct-onnx-ryzenai-hybrid](https://huggingface.co/amd/Llama-3.2-1B-Instruct-onnx-ryzenai-hybrid) (export ONNX alternativo de AMD)
+- [Hugging Face: liodon-ai/Llama-3.2-1B-Instruct-ONNX](https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-ONNX)
+- [Hugging Face: liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF](https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF) (version GGUF del mismo autor)
+- [Hugging Face: amd/Llama-3.2-1B-Instruct-onnx-ryzenai-hybrid](https://huggingface.co/amd/Llama-3.2-1B-Instruct-onnx-ryzenai-hybrid) (export ONNX alternativo de AMD)
 - [NVIDIA NIM: llama-3.2-1b-instruct](https://build.nvidia.com/meta/llama-3.2-1b-instruct/modelcard) (modelo base en NIM)
 - [Ollama: llama3.2:1b](https://ollama.com/library/llama3.2:1b) (modelo base en Ollama)

@@ -65,7 +65,7 @@ No se dispone de datos de benchmarks para comparar con otros modelos. Sin embarg
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VelvetVibe/Nova-L3-8B-Stheno-GGUF
+- Repositorio Hugging Face: https://huggingface.co/VelvetVibe/Nova-L3-8B-Stheno-GGUF
 - Modelo original (Sao10K/L3-8B-Stheno-v3.2): https://huggingface.co/Sao10K/L3-8B-Stheno-v3.2
 - Blog de Nebula Block sobre L3-8B Stheno v3.2: https://blog.nebulablock.com/introducing-l3-8b-stheno-v3-2-on-nebula-block-free-inference-for-all/
 - Review en Reddit (r/SillyTavernAI): https://www.reddit.com/r/SillyTavernAI/comments/1dfczhd/my_sao10kl38bsthenov32_review/

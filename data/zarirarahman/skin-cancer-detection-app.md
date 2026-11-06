@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Skin-Cancer-Detection-app es una aplicación de detección de cáncer de piel alojada en HuggingFace y publicada por el autor ZariraRahman en octubre de 2026. Está construida con la librería Keras y se distribuye bajo licencia MIT, lo que permite su uso, modificación y redistribución, incluido el uso comercial. Por su nombre, todo apunta a que se trata de un clasificador de imágenes de lesiones cutáneas, aunque la ausencia de documentación impide confirmarlo.
+Skin-Cancer-Detection-app es una aplicación de detección de cáncer de piel alojada en Hugging Face y publicada por el autor ZariraRahman en octubre de 2026. Está construida con la librería Keras y se distribuye bajo licencia MIT, lo que permite su uso, modificación y redistribución, incluido el uso comercial. Por su nombre, todo apunta a que se trata de un clasificador de imágenes de lesiones cutáneas, aunque la ausencia de documentación impide confirmarlo.
 
-La model card está prácticamente vacía: el README solo declara la licencia, sin detalles de arquitectura, datos de entrenamiento ni métricas de rendimiento. A ello se suman 0 descargas, 0 likes, un tamaño de repositorio declarado de 0,0 GB y la ausencia de pipeline asociado en HuggingFace, lo que sugiere un proyecto experimental o una subida incompleta. Su relevancia actual es testimonial y conviene tratarlo con cautela, especialmente por tratarse de un modelo de ámbito médico.
+La model card está prácticamente vacía: el README solo declara la licencia, sin detalles de arquitectura, datos de entrenamiento ni métricas de rendimiento. A ello se suman 0 descargas, 0 likes, un tamaño de repositorio declarado de 0,0 GB y la ausencia de pipeline asociado en Hugging Face, lo que sugiere un proyecto experimental o una subida incompleta. Su relevancia actual es testimonial y conviene tratarlo con cautela, especialmente por tratarse de un modelo de ámbito médico.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ La model card está prácticamente vacía: el README solo declara la licencia, s
 | Licencia | MIT |
 | Formato de pesos | no disponible (al usar Keras lo habitual sería .keras o .h5, pero no está confirmado) |
 | Tamaño del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creación | 29 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -42,7 +42,7 @@ Dada la falta de documentación, los siguientes casos son potenciales y deben va
 - Herramienta educativa: serviría como material práctico para estudiantes de medicina o dermatología que quieran explorar cómo un clasificador de imágenes distingue lesiones benignas y malignas en un entorno controlado.
 - Aplicación de concienciación y autoexploración: podría integrarse en una app que anime al usuario a revisarse la piel y consultar a un especialista, siempre con avisos claros de que no sustituye un diagnóstico.
 - Prototipado e investigación: la licencia MIT permite tomar el código como base, sustituir los pesos por otros entrenados sobre datasets curados (HAM10000, ISIC) y usarlo como punto de partida para proyectos propios.
-- Demo técnica o portfolio: al ser una app Keras, es candidata a desplegarse como demostración de clasificación de imágenes en un HuggingFace Space o en un portfolio de machine learning.
+- Demo técnica o portfolio: al ser una app Keras, es candidata a desplegarse como demostración de clasificación de imágenes en un Hugging Face Space o en un portfolio de machine learning.
 - Cribado en campañas de salud pública: en jornadas de detección precoz, podría actuar como filtro previo gestionado por personal sanitario para decidir qué lesiones fotografían y remiten a revisión.
 - Análisis por lotes en investigación: permitiría ejecutar inferencia sobre colecciones de imágenes dermatoscópicas en estudios retrospectivos, previa verificación de su rendimiento.
 
@@ -64,9 +64,9 @@ No existen datos suficientes documentados de este modelo para una comparativa ri
 
 | Modelo | Parámetros | Tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZariraRahman/Skin-Cancer-Detection-app | no disponible | Clasificación de lesiones cutáneas (presunta) | no disponible | MIT | HuggingFace, 0 descargas |
-| Clasificadores fine-tuned sobre HAM10000 publicados en HuggingFace | variable (CNN o ViT) | Clasificación dermatoscópica en 7 clases | según modelo, con métricas publicadas en sus fichas | variable según modelo | HuggingFace |
-| Modelos de fundación de dermatología (embeddings médicos) | no disponible | Extracción de características dermatológicas | no disponible | variable | HuggingFace |
+| ZariraRahman/Skin-Cancer-Detection-app | no disponible | Clasificación de lesiones cutáneas (presunta) | no disponible | MIT | Hugging Face, 0 descargas |
+| Clasificadores fine-tuned sobre HAM10000 publicados en Hugging Face | variable (CNN o ViT) | Clasificación dermatoscópica en 7 clases | según modelo, con métricas publicadas en sus fichas | variable según modelo | Hugging Face |
+| Modelos de fundación de dermatología (embeddings médicos) | no disponible | Extracción de características dermatológicas | no disponible | variable | Hugging Face |
 
 Para una evaluación seria se recomienda contrastar con modelos de la misma tarea que publiquen métricas verificables sobre HAM10000 o ISIC.
 
@@ -83,5 +83,5 @@ Para una evaluación seria se recomienda contrastar con modelos de la misma tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZariraRahman/Skin-Cancer-Detection-app
+- Hugging Face: https://huggingface.co/ZariraRahman/Skin-Cancer-Detection-app
 - La búsqueda web no aportó enlaces relevantes adicionales (papers, blogs, repositorios o demos asociados a este modelo).

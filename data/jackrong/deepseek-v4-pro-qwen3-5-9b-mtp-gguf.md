@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Pro-Qwen3.5-9B-MTP-GGUF es un modelo de lenguaje de 9.000 millones de parámetros publicado por Jackrong en formato GGUF, pensado para inferencia eficiente en entornos de producción. Se trata de una destilación de las capacidades de razonamiento de DeepSeek sobre la base Qwen3.5-9B de unsloth, con un entrenamiento adicional mediante SFT y RL (GSPO) orientado a matemáticas, STEM, tool-use y function-calling. El sufijo MTP indica que incorpora Multi-Token Prediction, una técnica que acelera la generación al predecir varios tokens por paso.
 
-El modelo está disponible en HuggingFace con más de 65.000 descargas y 74 likes, lo que sugiere una adopción temprana relevante. Su licencia Apache-2.0 (según los tags) permite uso comercial sin restricciones significativas, y su formato GGUF lo hace compatible con motores de inferencia como llama.cpp, Ollama o vLLM. Es especialmente relevante para desarrolladores que buscan un modelo de razonamiento de tamaño medio con soporte multilingüe (inglés, chino, coreano, japonés, español y ruso) y capacidades de agente.
+El modelo está disponible en Hugging Face con más de 65.000 descargas y 74 likes, lo que sugiere una adopción temprana relevante. Su licencia Apache-2.0 (según los tags) permite uso comercial sin restricciones significativas, y su formato GGUF lo hace compatible con motores de inferencia como llama.cpp, Ollama o vLLM. Es especialmente relevante para desarrolladores que buscan un modelo de razonamiento de tamaño medio con soporte multilingüe (inglés, chino, coreano, japonés, español y ruso) y capacidades de agente.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ La comparativa se basa en datos publicos generales; no se dispone de benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B-MTP-GGUF
+- Hugging Face: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B-MTP-GGUF
 - Modelo base (unsloth/Qwen3.5-9B): no disponible en la informacion proporcionada
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

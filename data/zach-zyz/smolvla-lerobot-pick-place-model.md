@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Zach-zyz/smolvla-lerobot-pick-place-model` es un modelo de vision-lenguaje-accion (VLA) orientado a tareas de manipulacion robotica, en concreto a la tarea de pick-and-place (recoger y colocar objetos). Fue desarrollado por el usuario Zach-zyz y publicado en HuggingFace bajo licencia CC-BY-4.0. El nombre sugiere una integracion con el framework LeRobot y la familia de modelos SmolVLA, que busca ofrecer modelos VLA compactos y eficientes entrenables en hardware de consumo.
+El modelo `Zach-zyz/smolvla-lerobot-pick-place-model` es un modelo de vision-lenguaje-accion (VLA) orientado a tareas de manipulacion robotica, en concreto a la tarea de pick-and-place (recoger y colocar objetos). Fue desarrollado por el usuario Zach-zyz y publicado en Hugging Face bajo licencia CC-BY-4.0. El nombre sugiere una integracion con el framework LeRobot y la familia de modelos SmolVLA, que busca ofrecer modelos VLA compactos y eficientes entrenables en hardware de consumo.
 
 No se dispone de informacion publica sobre la arquitectura concreta, el tamano, la longitud de contexto ni los datos de entrenamiento de este modelo. La model card solo incluye la licencia, sin documentacion tecnica adicional. El modelo no registra descargas ni likes, lo que indica que es una publicacion reciente o de bajo uso.
 
@@ -21,7 +21,7 @@ No se dispone de informacion publica sobre la arquitectura concreta, el tamano, 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no especifica la arquitectura ni los datos de entrenamiento de este modelo. Por el nombre y la referencia a SmolVLA en la busqueda web, es probable que siga la linea de los modelos VLA eficientes descritos en el blog de SmolVLA de HuggingFace, que combinan un codificador de vision, un modelo de lenguaje y una cabeza de accion para generar comandos motores a partir de imagenes y texto. Sin embargo, no se confirma en la ficha del modelo ni se aportan detalles sobre el numero de parametros, el dataset utilizado ni el proceso de entrenamiento (RLHF, DPO, etc.).
+La informacion disponible no especifica la arquitectura ni los datos de entrenamiento de este modelo. Por el nombre y la referencia a SmolVLA en la busqueda web, es probable que siga la linea de los modelos VLA eficientes descritos en el blog de SmolVLA de Hugging Face, que combinan un codificador de vision, un modelo de lenguaje y una cabeza de accion para generar comandos motores a partir de imagenes y texto. Sin embargo, no se confirma en la ficha del modelo ni se aportan detalles sobre el numero de parametros, el dataset utilizado ni el proceso de entrenamiento (RLHF, DPO, etc.).
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ Se ha identificado un modelo relacionado en la busqueda web, pero no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zach-zyz/smolvla-lerobot-pick-place-model
+- Hugging Face: https://huggingface.co/Zach-zyz/smolvla-lerobot-pick-place-model
 - Blog de SmolVLA: https://huggingface.co/blog/smolvla
 - Modelo similar Zyz66/pick-object-smolvla-v4: https://huggingface.co/Zyz66/pick-object-smolvla-v4/tree/main
 - Referencia a paper de SmolVLA: arxiv:2506.01844

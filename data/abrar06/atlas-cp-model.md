@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abrar06/atlas-cp-model` es un repositorio publicado en HuggingFace por el usuario `abrar06` el 26 de julio de 2026 y actualizado el 15 de agosto de 2026. El tamaño del repositorio es de 1313,1 GB, lo que sugiere que se trata de un modelo de muy gran escala, posiblemente con decenas o cientos de miles de millones de parámetros, aunque no se dispone de confirmación oficial al respecto.
+El modelo `abrar06/atlas-cp-model` es un repositorio publicado en Hugging Face por el usuario `abrar06` el 26 de julio de 2026 y actualizado el 15 de agosto de 2026. El tamaño del repositorio es de 1313,1 GB, lo que sugiere que se trata de un modelo de muy gran escala, posiblemente con decenas o cientos de miles de millones de parámetros, aunque no se dispone de confirmación oficial al respecto.
 
 La model card es prácticamente inexistente: únicamente declara una licencia personalizada denominada `odyssey-ai` (bajo el campo `license: other`), sin enlace directo al texto de la licencia ni a documentación adicional. No se especifican la arquitectura, el número de parámetros, el contexto, los idiomas soportados ni las capacidades del modelo. A fecha de la consulta, el repositorio registra 0 descargas y 1 like, lo que indica que es un modelo reciente y sin adopción conocida.
 
@@ -55,6 +55,6 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abrar06/atlas-cp-model
+- Repositorio en Hugging Face: https://huggingface.co/abrar06/atlas-cp-model
 - Licencia: no disponible (referenciada como `odyssey-ai` en la model card, sin enlace directo)
 - Paper, blog o demo: no disponibles

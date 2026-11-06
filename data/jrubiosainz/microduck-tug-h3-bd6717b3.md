@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck Tug of War - h3 (identificador `bd6717b3`) es una política de control para robótica simulada publicada por el usuario jrubiosainz en HuggingFace, concebida como entrada para la competición **Microduck Arena Tug of War**. No se trata de un modelo de lenguaje ni de un transformer generativo: es una red neuronal exportada a ONNX que actúa como política de control dentro de un entorno de simulación física, y que se distribuye bajo la librería `microduck` con `pipeline_tag: robotics`.
+Microduck Tug of War - h3 (identificador `bd6717b3`) es una política de control para robótica simulada publicada por el usuario jrubiosainz en Hugging Face, concebida como entrada para la competición **Microduck Arena Tug of War**. No se trata de un modelo de lenguaje ni de un transformer generativo: es una red neuronal exportada a ONNX que actúa como política de control dentro de un entorno de simulación física, y que se distribuye bajo la librería `microduck` con `pipeline_tag: robotics`.
 
 El modelo no ha sido entrenado desde cero por el autor. Se construye como un *finetune* (en realidad, una modificación estructural sin reentrenamiento) sobre `jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429`, en la revisión `d8ec37ed`. Sobre el grafo heredado se añade una tabla de búsqueda (*lookup*) de 360 filas que memoriza las acciones exactas registradas en los cinco combates oficiales de clasificación de la Arena, de modo que si la observación entrante coincide con una de las almacenadas (comparando los primeros 48 valores con tolerancia 1e-7), el modelo reproduce la acción guardada; en caso contrario, delega en el grafo original.
 
@@ -86,11 +86,11 @@ La comparación se limita a los artefactos citados en la documentación. No hay 
 - **Licencia ambigua para uso comercial**: Apache-2.0 se aplica solo a las contribuciones heredadas según `NOTICE`, no al modelo combinado; el autor no añade licencia propia, por lo que el uso comercial del artefacto completo queda sin cobertura clara.
 - **Procedencia múltiple**: incorpora material de greecree, HlibPlakhtii y Pollen Robotics, con obligaciones de atribución descritas en `NOTICE`.
 - **Sin datos de sesgo, alucinación o idioma**: no aplican conceptos de sesgo lingüístico, pero tampoco hay evaluación de robustez frente a perturbaciones de la observación más allá de la tolerancia de 1e-7.
-- **Metadatos incompletos**: el repositorio declara 0 descargas y 0 likes, tamaño de 0.0 GB y ausencia de licencia e idiomas en los tags de HuggingFace.
+- **Metadatos incompletos**: el repositorio declara 0 descargas y 0 likes, tamaño de 0.0 GB y ausencia de licencia e idiomas en los tags de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-tug-h3-bd6717b3
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-tug-h3-bd6717b3
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429/tree/d8ec37ed882a33231aa8da0da07b75cb7e21608b
 - Repositorio de HlibPlakhtii (código `search_race.py`): https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v14/tree/a2f41160287beb86c23e287030a69f4e2226180f
 - Repositorio de greecree (grabaciones de las semillas 3 y 4): https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v8/tree/af68686876537cfcfea691126d108fb7ba585fe9

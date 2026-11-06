@@ -50,5 +50,5 @@ No disponible. Este repositorio no es un modelo de IA comparable con otras arqui
 - No se recomienda su uso como referencia técnica para implementaciones reales sin una revisión adicional.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/noahmueller/paper_023709333_audio_visual_learning
+- Repositorio de Hugging Face: https://huggingface.co/noahmueller/paper_023709333_audio_visual_learning
 - No se encontraron otros enlaces relevantes en la búsqueda web (los resultados mostraron páginas genéricas de Google Scholar y arXiv sin relación directa con este repositorio).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-00-circuit-60ed1ce83a97` es un checkpoint archivado de un entrenamiento completado, publicado por el usuario de HuggingFace davidheineman. No se trata de un modelo con model card descriptiva ni de un lanzamiento de producto: la propia model card lo define como "Archived checkpoint: 00-Circuit", conservado desde la ruta original `runs/mopd-v2-qwen-p1r8-teachers-20261003-115039/resumable/00-Circuit`, con formato `hf-safetensors` y correspondiente al paso final 149 de la ejecucion.
+El modelo identificado como `davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-00-circuit-60ed1ce83a97` es un checkpoint archivado de un entrenamiento completado, publicado por el usuario de Hugging Face davidheineman. No se trata de un modelo con model card descriptiva ni de un lanzamiento de producto: la propia model card lo define como "Archived checkpoint: 00-Circuit", conservado desde la ruta original `runs/mopd-v2-qwen-p1r8-teachers-20261003-115039/resumable/00-Circuit`, con formato `hf-safetensors` y correspondiente al paso final 149 de la ejecucion.
 
 El repositorio contiene pesos en safetensors compatibles con el tag `qwen2`, lo que apunta a una arquitectura transformer decoder-only de la familia Qwen2, con un total real de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) y un tamano de repositorio de 3,1 GB. El nombre del run sugiere un entrenamiento etiquetado como `mopd-v2`, con componentes de tipo "teachers" y un identificador de circuito, pero no se aporta documentacion tecnica que lo desarrolle.
 
@@ -19,7 +19,7 @@ Su relevancia es limitada y de caracter fundamentalmente investigador: se trata 
 | Tipos de cuantizacion | no disponible; los pesos se distribuyen en safetensors, previsiblemente en bf16 o fp16 dado el tamano del repositorio (3,1 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors en formato HuggingFace, mas un directorio `checkpoint/` con el estado distribuido de Megatron |
+| Formato de pesos | safetensors en formato Hugging Face, mas un directorio `checkpoint/` con el estado distribuido de Megatron |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks de este checkpoint que permitan una co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-00-circuit-60ed1ce83a97
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-00-circuit-60ed1ce83a97
 - W&B: run ID `60451fb1` (no se proporciona la URL completa del proyecto)
 - Ruta de origen del checkpoint: `runs/mopd-v2-qwen-p1r8-teachers-20261003-115039/resumable/00-Circuit`
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los unicos enlaces obtenidos corresponden a guias del raid "Repaire de l'Aile noire" de World of Warcraft (Wowhead, Millenium, JudgeHype) y no guardan relacion con el modelo. No se dispone de paper, blog, repositorio de codigo ni demo adicionales.

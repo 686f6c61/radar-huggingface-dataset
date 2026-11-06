@@ -96,7 +96,7 @@ La comparación directa con alternativas especializadas en text-to-CAD no está 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/usman7384/scriber-ir-4b-s3-GGUF
+- Hugging Face: https://huggingface.co/usman7384/scriber-ir-4b-s3-GGUF
 - Repositorio Scriber: https://github.com/usman7384/scriber
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documento de puertas de evaluación S3 (referenciado en la model card): `docs/agents/s3-gates-2026-10-30.md` en el repositorio de Scriber

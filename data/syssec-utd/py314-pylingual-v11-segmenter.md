@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las c
 - VRAM estimada para inferencia: en FP32, los 108,9 millones de parámetros ocupan aproximadamente 0,44 GB; en FP16/BF16, unos 0,22 GB; en INT8, unos 0,11 GB. A ello hay que sumar el coste de activaciones y del lote, que para una secuencia corta y lote pequeño es reducido.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente (por ejemplo, GTX 1650, RTX 3050, T4). Para lotes grandes, RTX 4090, A100 o H100 aportan margen de sobra, aunque no son necesarias.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna con 4 GB o más de VRAM; también es viable en CPU para volúmenes moderados.
-- Opciones de despliegue: pipeline `token-classification` de transformers; exportación a ONNX Runtime o TorchScript; despliegue como endpoint compatible con la plataforma de HuggingFace (el repositorio está marcado como `endpoints_compatible`). vLLM y TGI están orientados a modelos generativos, por lo que su soporte para esta tarea es limitado o inexistente. No hay pesos GGUF, así que Ollama y llama.cpp no son aplicables sin conversión previa.
+- Opciones de despliegue: pipeline `token-classification` de transformers; exportación a ONNX Runtime o TorchScript; despliegue como endpoint compatible con la plataforma de Hugging Face (el repositorio está marcado como `endpoints_compatible`). vLLM y TGI están orientados a modelos generativos, por lo que su soporte para esta tarea es limitado o inexistente. No hay pesos GGUF, así que Ollama y llama.cpp no son aplicables sin conversión previa.
 - Latencia y throughput estimados: no disponible (la model card no publica mediciones de latencia ni de tokens por segundo).
 
 ## Comparativa con modelos similares
@@ -95,9 +95,9 @@ La model card no incluye comparativas. Se ofrece como referencia la comparación
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| syssec-utd/py314-pylingual-v11-segmenter | 108,9 M | no disponible | Token classification (segmentacion) | no disponible | HuggingFace, safetensors |
-| FacebookAI/roberta-base | 125 M | 512 tokens | MLM / encoder base | MIT | HuggingFace, safetensors y PyTorch |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | MLM / encoder multilingue | MIT | HuggingFace, safetensors y PyTorch |
+| syssec-utd/py314-pylingual-v11-segmenter | 108,9 M | no disponible | Token classification (segmentacion) | no disponible | Hugging Face, safetensors |
+| FacebookAI/roberta-base | 125 M | 512 tokens | MLM / encoder base | MIT | Hugging Face, safetensors y PyTorch |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | MLM / encoder multilingue | MIT | Hugging Face, safetensors y PyTorch |
 
 No se dispone de comparativas de rendimiento frente a alternativas, porque el model-index del autor está vacío y no hay evaluaciones independientes publicadas.
 
@@ -115,7 +115,7 @@ No se dispone de comparativas de rendimiento frente a alternativas, porque el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/py314-pylingual-v11-segmenter
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/py314-pylingual-v11-segmenter
 - Modelo base (MLM): https://huggingface.co/syssec-utd/py314-pylingual-v11-mlm
 - Dataset de ajuste fino: syssec-utd/segmentation-py314-pylingual-v11-tokenized (referenciado en la model card, sin URL directa proporcionada)
 - Paper, blog, repositorio o demo: no disponible. Los resultados de la busqueda web no contienen ningun enlace relacionado con este modelo.

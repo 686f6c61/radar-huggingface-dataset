@@ -23,7 +23,7 @@ Su relevancia actual es practica: permite evaluar un modelo de ~34,66B parametro
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura en la model card proporcionada. Los metadatos de HuggingFace y las etiquetas del repositorio apuntan a una arquitectura de mezcla de expertos (tag "moe") con linaje Qwen (tag "qwen"), obtenida mediante fusion de modelos (tag "merge"). El tag "world-model" sugiere que la fusion incorpora componentes orientados a modelado de entorno o simulacion, aunque no hay documentacion que lo confirme.
+No se dispone de informacion detallada sobre la arquitectura en la model card proporcionada. Los metadatos de Hugging Face y las etiquetas del repositorio apuntan a una arquitectura de mezcla de expertos (tag "moe") con linaje Qwen (tag "qwen"), obtenida mediante fusion de modelos (tag "merge"). El tag "world-model" sugiere que la fusion incorpora componentes orientados a modelado de entorno o simulacion, aunque no hay documentacion que lo confirme.
 
 Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Al tratarse de un merge, el entrenamiento efectivo corresponderia a los modelos de origen, no a este. La unica innovacion tecnica documentada en este repositorio es la propia cuantizacion: se aplico cuantizacion de tensores de salida (output_tensor_quantised: 1) y quantize_version 2, y no se han publicado cuantizaciones ponderadas ni con imatrix en el momento de la consulta.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento de TripleTrouble que permitan una comparacion funcional. La tabla siguiente contrasta unicamente caracteristicas estructurales conocidas, tomadas de la documentacion publica de cada modelo; los datos de TripleTrouble provienen de los metadatos de HuggingFace.
+No hay datos de rendimiento de TripleTrouble que permitan una comparacion funcional. La tabla siguiente contrasta unicamente caracteristicas estructurales conocidas, tomadas de la documentacion publica de cada modelo; los datos de TripleTrouble provienen de los metadatos de Hugging Face.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -85,7 +85,7 @@ La comparacion se limita a tamano, licencia y contexto: no existen resultados de
 - Solo hay un archivo GGUF disponible (Q4_K_S); el resto de tipos listados en los metadatos no aparece en la tabla de archivos provistos, y no hay cuantizaciones ponderadas ni con imatrix.
 - Licencia Apache-2.0: permite uso comercial, pero conviene verificar la licencia del modelo base OliviaRossi/TripleTrouble y de los modelos fusionados en el merge, ya que una fusion puede combinar pesos con condiciones distintas.
 - Trazabilidad limitada: el repositorio no documenta que modelos concretos se fusionaron ni con que metodo, lo que dificulta auditar el origen de los pesos.
-- Fecha de publicacion del repositorio inusual (2026-09-11 en los metadatos), dato que conviene verificar en la pagina de HuggingFace antes de citarlo.
+- Fecha de publicacion del repositorio inusual (2026-09-11 en los metadatos), dato que conviene verificar en la pagina de Hugging Face antes de citarlo.
 
 ## Enlaces
 

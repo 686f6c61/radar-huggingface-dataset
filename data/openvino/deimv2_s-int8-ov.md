@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DEIMv2-S INT8 OV es un modelo de detección de objetos (object detection) de tipo SSD, distribuido por el perfil oficial de OpenVINO en HuggingFace. Se trata de una conversión del modelo original DEIMv2-S, desarrollado por Intellindust AI Lab, a formato OpenVINO IR (Intermediate Representation) con los pesos comprimidos a INT8. La versión publicada la mantiene el ecosistema Geti de Intel (open-edge-platform), orientado a anotación, fine-tuning y exportación de modelos de visión para despliegue en el edge.
+DEIMv2-S INT8 OV es un modelo de detección de objetos (object detection) de tipo SSD, distribuido por el perfil oficial de OpenVINO en Hugging Face. Se trata de una conversión del modelo original DEIMv2-S, desarrollado por Intellindust AI Lab, a formato OpenVINO IR (Intermediate Representation) con los pesos comprimidos a INT8. La versión publicada la mantiene el ecosistema Geti de Intel (open-edge-platform), orientado a anotación, fine-tuning y exportación de modelos de visión para despliegue en el edge.
 
 El modelo resuelve la tarea de detección de objetos en imágenes, es decir, localizar y clasificar instancias dentro de una imagen. Su interés práctico reside en que combina un detector moderno de la familia DEIMv2 con una cuantización post-entrenamiento a INT8, pensada para reducir el coste computacional y de memoria en inferencia sobre hardware Intel (CPU, GPU integrada y NPU). El repositorio tiene un tamaño declarado de 0.0 GB, lo que sugiere pesos muy ligeros o un empaquetado mínimo, coherente con la variante "S" (small) del modelo.
 
@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar parámetros, contexto o r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/deimv2_s-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/deimv2_s-int8-ov
 - Modelo original DEIMv2: https://github.com/Intellindust-AI-Lab/DEIMv2
 - Geti (open-edge-platform): https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

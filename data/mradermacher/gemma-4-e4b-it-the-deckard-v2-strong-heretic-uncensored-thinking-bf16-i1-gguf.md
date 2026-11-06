@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una colección de cuantizaciones GGUF del modelo nightmedia/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16, un fine-tuning del modelo Gemma 4 E4B instruct de Google. El autor de las cuantizaciones es mradermacher, un conocido publicador de versiones GGUF de la comunidad, y el resultado se distribuye bajo licencia apache-2.0 según los metadatos de HuggingFace, aunque el propio autor enlaza la licencia de Gemma 4 de Google como referencia legal.
+Este repositorio contiene una colección de cuantizaciones GGUF del modelo nightmedia/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16, un fine-tuning del modelo Gemma 4 E4B instruct de Google. El autor de las cuantizaciones es mradermacher, un conocido publicador de versiones GGUF de la comunidad, y el resultado se distribuye bajo licencia apache-2.0 según los metadatos de Hugging Face, aunque el propio autor enlaza la licencia de Gemma 4 de Google como referencia legal.
 
 El modelo base es un ajuste "uncensored" (presumiblemente con técnicas de abliteration o fine-tuning sin alineación de rechazo) orientado a conversación y con un modo de razonamiento explícito ("Thinking"). Según los metadatos del repositorio, se trata además de un modelo con capacidades de visión: el autor indica que los ficheros mmproj (proyector multimodal) se encuentran en el repositorio de cuantizaciones estáticas.
 
@@ -33,7 +33,7 @@ El proceso de entrenamiento del modelo base tampoco está documentado en la info
 - Modo de razonamiento explícito ("Thinking"), orientado a tareas de razonamiento multi-paso previas a la respuesta final.
 - Procesamiento de imágenes: el autor clasifica explícitamente el modelo como "vision model" y remite a los ficheros mmproj del repositorio estático.
 - Comportamiento "uncensored": el fine-tuning elimina total o parcialmente las capas de rechazo del modelo original.
-- Conversación multi-turno (tag "conversational" en HuggingFace).
+- Conversación multi-turno (tag "conversational" en Hugging Face).
 - Compatibilidad declarada con endpoints ("endpoints_compatible") y con la librería transformers.
 - Soporte de cuantizaciones IQ de baja precisión (IQ1 a IQ4) para despliegue en hardware limitado.
 - Soporte de tool calling y function calling: no disponible en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de benchmarks ni de especificaciones verificadas de alternativas e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16-i1-GGUF
 - Modelo base: https://huggingface.co/nightmedia/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16
 - Cuantizaciones estáticas (incluye ficheros mmproj): https://huggingface.co/mradermacher/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16-i1-GGUF

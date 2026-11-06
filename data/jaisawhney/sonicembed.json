@@ -5,7 +5,7 @@
   "author": "jaisawhney",
   "url": "https://huggingface.co/jaisawhney/SonicEmbed",
   "created_at": "2026-11-04T02:53:26.000Z",
-  "updated_at": "2026-11-04T13:08:38.000Z",
+  "updated_at": "2026-11-05T09:39:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 576613688,
   "parameters_human": "576.6M",

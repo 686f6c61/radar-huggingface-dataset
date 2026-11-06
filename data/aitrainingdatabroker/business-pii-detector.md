@@ -110,7 +110,7 @@ La diferencia principal frente a los NER genéricos es la taxonomía: el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/business-pii-detector
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/business-pii-detector
 - Demo en el navegador: https://huggingface.co/spaces/aitrainingdatabroker/business-pii-detector-demo
 - Dataset de entrenamiento: https://huggingface.co/datasets/aitrainingdatabroker/synthetic-deidentification-pairs
 - Dataset de benchmark: https://huggingface.co/datasets/aitrainingdatabroker/pii-span-benchmark-hard

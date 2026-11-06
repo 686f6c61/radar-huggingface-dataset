@@ -100,7 +100,7 @@ No se dispone de datos de arquitectura, contexto o benchmarks de calidad del mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Binade/Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/Binade/Qwen3.5-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de Binade: https://github.com/GuyShafir/binade
 - Paper de Binade: https://github.com/GuyShafir/binade/blob/main/paper/binade.pdf

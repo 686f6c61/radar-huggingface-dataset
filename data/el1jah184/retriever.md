@@ -96,7 +96,7 @@ La comparación es orientativa; no se han ejecutado los mismos benchmarks sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/el1jah184/retriever
+- Modelo en Hugging Face: https://huggingface.co/el1jah184/retriever
 - Paper de sentence-transformers (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper sobre MultipleNegativesRankingLoss (arXiv:2101.06983): https://arxiv.org/abs/2101.06983
 - Paper de XLM-RoBERTa (arXiv:1807.03748): https://arxiv.org/abs/1807.03748

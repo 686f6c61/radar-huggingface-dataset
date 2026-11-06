@@ -70,19 +70,19 @@ La model card del autor no incluye métricas de MMLU, HumanEval, GSM8K ni ningun
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Estado en HuggingFace |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Estado en Hugging Face |
 |---|---|---|---|---|---|
 | `Nekodeus/codegemma-7b-it-openvino` | 8,5B | 8.192 | OpenVINO IR INT8 | Gemma Terms of Use | Acceso abierto, sin descargas registradas |
 | `google/codegemma-7b-it` | 8,5B | 8.192 | Safetensors (BF16) | Gemma Terms of Use | Gated, requiere aceptar términos |
 | `google/codegemma-2b` | 2B | 8.192 | Safetensors | Gemma Terms of Use | Gated |
 | `meta-llama/CodeLlama-7b-Instruct-hf` | 7B | 16.384 | Safetensors | Llama 2 Community License | Gated |
 
-La comparación relevante es con el checkpoint original: esta conversión pierde precisión (INT8 frente a BF16) y ligereza de integración con el ecosistema `transformers`/`vLLM`, pero gana en ejecución sobre CPU y en facilidad de acceso al no estar tras el gate de HuggingFace. Los datos de rendimiento comparado no están disponibles en la información proporcionada.
+La comparación relevante es con el checkpoint original: esta conversión pierde precisión (INT8 frente a BF16) y ligereza de integración con el ecosistema `transformers`/`vLLM`, pero gana en ejecución sobre CPU y en facilidad de acceso al no estar tras el gate de Hugging Face. Los datos de rendimiento comparado no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
 - Licencia: se hereda la Gemma Terms of Use, que incluye una política de uso prohibido y obligaciones de atribución. Cualquier uso comercial debe revisarse contra esos términos, no contra la licencia del repositorio de conversión.
-- El repositorio se publica como "un-gated" aunque el modelo original está restringido en HuggingFace; conviene verificar que la redistribución cumple los términos de Gemma antes de usarlo en producción.
+- El repositorio se publica como "un-gated" aunque el modelo original está restringido en Hugging Face; conviene verificar que la redistribución cumple los términos de Gemma antes de usarlo en producción.
 - Repositorio sin validación comunitaria: cero descargas y cero valoraciones en el momento de la ficha, sin tests publicados de la conversión.
 - La cuantización INT8 weight-only puede degradar la calidad de generación de código frente al checkpoint BF16; no se han publicado evaluaciones comparativas que lo cuantifiquen.
 - Riesgo de alucinación de APIs, librerías y firmas de funciones, habitual en modelos de código de este tamaño; requiere validación con tests.

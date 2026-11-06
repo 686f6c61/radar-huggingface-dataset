@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jtap123/whisper-tiny_russian_english",
+  "slug": "jtap123-whisper-tiny_russian_english",
+  "author": "jtap123",
+  "url": "https://huggingface.co/jtap123/whisper-tiny_russian_english",
+  "created_at": "2026-11-02T17:11:06.000Z",
+  "updated_at": "2026-11-02T17:19:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:russian_english_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167425,
+  "storage_human": "302 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "russian_english English",
+      "metric": "Wer",
+      "value": 9.560132214594457
+    }
+  ],
+  "sources": [
+    {
+      "title": "jtap123 (Johannes Tappert) – Models - Hugging Face",
+      "url": "https://huggingface.co/jtap123/models",
+      "snippet": "jtap123's models5 Sort: Recently updated jtap123/whisper-tiny_korean_english Automatic Speech Recognition • 37.8M•Updated 1 day ago• 27"
+    },
+    {
+      "title": "jtap123 (Johannes Tappert) - Hugging Face",
+      "url": "https://huggingface.co/jtap123",
+      "snippet": "jtap123/whisper-tiny_korean_english Automatic Speech Recognition • 37.8M•Updated 1 day ago• 27"
+    }
+  ]
+}

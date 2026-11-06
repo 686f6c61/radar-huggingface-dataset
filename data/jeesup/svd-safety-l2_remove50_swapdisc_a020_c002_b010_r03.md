@@ -91,10 +91,10 @@ No se han publicado resultados de benchmarks de capacidades generales (MMLU, Hum
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Seguridad medida |
 |---|---|---|---|---|---|
-| Este checkpoint (SVD-LLM 50 % + swap `disc_iter`, 3/5 rondas) | 6,74 B densos (fraccion 0,4999) | 4096 tokens (heredado) | Llama 2 Community License | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | AdvBench ASR 0,3404; StrongREJECT ASR 0,2492; over-refusal 0,2264 |
-| `meta-llama/Llama-2-7b-chat-hf` (linea base densa) | 6,74 B | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente distribuido | No disponible en la informacion proporcionada (el autor afirma que la compresion la empeora) |
-| Otras celdas de la misma malla (otras reglas de seleccion y presupuestos) | 6,74 B densos (fraccion variable) | 4096 tokens | Llama 2 Community License | HuggingFace, autor Jeesup | No disponibles en la informacion proporcionada |
-| Alternativas de 7-8 B instruct de uso general (por ejemplo Mistral-7B-Instruct o Llama-3-8B-Instruct) | ≈7-8 B | 8192 tokens o superior | Apache 2.0 / Meta Llama 3 | HuggingFace | No comparable: no hay metricas de seguridad homogeneas publicadas en la informacion disponible para cruzarlas con este checkpoint |
+| Este checkpoint (SVD-LLM 50 % + swap `disc_iter`, 3/5 rondas) | 6,74 B densos (fraccion 0,4999) | 4096 tokens (heredado) | Llama 2 Community License | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | AdvBench ASR 0,3404; StrongREJECT ASR 0,2492; over-refusal 0,2264 |
+| `meta-llama/Llama-2-7b-chat-hf` (linea base densa) | 6,74 B | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente distribuido | No disponible en la informacion proporcionada (el autor afirma que la compresion la empeora) |
+| Otras celdas de la misma malla (otras reglas de seleccion y presupuestos) | 6,74 B densos (fraccion variable) | 4096 tokens | Llama 2 Community License | Hugging Face, autor Jeesup | No disponibles en la informacion proporcionada |
+| Alternativas de 7-8 B instruct de uso general (por ejemplo Mistral-7B-Instruct o Llama-3-8B-Instruct) | ≈7-8 B | 8192 tokens o superior | Apache 2.0 / Meta Llama 3 | Hugging Face | No comparable: no hay metricas de seguridad homogeneas publicadas en la informacion disponible para cruzarlas con este checkpoint |
 
 ## Limitaciones y advertencias
 
@@ -111,7 +111,7 @@ No se han publicado resultados de benchmarks de capacidades generales (MMLU, Hum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a020_c002_b010_r03
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a020_c002_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 y politica de uso: incluidas en el repositorio como `LICENSE.txt` y `USE_POLICY.md`
 - Paper de SVD-LLM: no disponible en la informacion proporcionada

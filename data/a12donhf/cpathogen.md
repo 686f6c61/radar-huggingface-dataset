@@ -66,7 +66,7 @@ La mejora de FID en el segundo protocolo no proviene unicamente del generador: r
 - VRAM estimada: el autor no publica cifras. Como referencia orientativa, la inferencia en fp16 con UNet, VAE y codificador de texto de la base SD 2.1 suele situarse en torno a 6-8 GB, a lo que hay que sumar el codificador espacial y los MLP de FiLM. Cifra no verificada en la informacion disponible.
 - GPU recomendadas: el entrenamiento utilizo ocho Tesla V100. Para inferencia se espera que funcione en A100, H100 y en GPUs de consumo con suficiente memoria; una RTX 4090 (24 GB) o una RTX 3060 de 12 GB deberian ser suficientes segun esa estimacion, pero no hay validacion publicada.
 - Despliegue: el checkpoint no es un `DiffusionPipeline` autonomo ni un `ControlNetModel` estandar de Diffusers. La unica via documentada es el script `inference/generate.py` del repositorio de GitHub. No hay soporte confirmado para vLLM, llama.cpp, Ollama o TGI, que ademas no estan orientados a difusion.
-- Descarga y cache: los pesos se descargan desde HuggingFace y el codificador de texto, tokenizador y scheduler desde `Manojb/stable-diffusion-2-1-base`; las descargas quedan en cache.
+- Descarga y cache: los pesos se descargan desde Hugging Face y el codificador de texto, tokenizador y scheduler desde `Manojb/stable-diffusion-2-1-base`; las descargas quedan en cache.
 - Latencia y throughput: no disponible.
 
 Ejemplo de invocacion documentado por el autor:
@@ -84,9 +84,9 @@ No se dispone de datos verificables de otros generadores contrafactuales de hist
 
 | Modelo o enfoque | Tipo | Parametros | Resolucion de salida | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CPathOGen | Difusion latente con codificador espacial y FiLM | no disponible | 512 x 512 | Mapa espacial de 5 canales + vector de 16 morfologias | CreativeML Open RAIL++-M | HuggingFace (0 descargas, 0 likes) |
-| Stable Diffusion 2.1 base (`Manojb/stable-diffusion-2-1-base`) | Difusion latente texto-a-imagen | no disponible en la informacion | 512 x 512 | Prompt de texto | CreativeML Open RAIL++-M | HuggingFace |
-| `ControlNetModel` estandar de Diffusers | Difusion latente con rama de control adicional | depende de la variante | 512 x 512 o superior | Mapa de bordes, profundidad, pose u otros | segun la variante | HuggingFace |
+| CPathOGen | Difusion latente con codificador espacial y FiLM | no disponible | 512 x 512 | Mapa espacial de 5 canales + vector de 16 morfologias | CreativeML Open RAIL++-M | Hugging Face (0 descargas, 0 likes) |
+| Stable Diffusion 2.1 base (`Manojb/stable-diffusion-2-1-base`) | Difusion latente texto-a-imagen | no disponible en la informacion | 512 x 512 | Prompt de texto | CreativeML Open RAIL++-M | Hugging Face |
+| `ControlNetModel` estandar de Diffusers | Difusion latente con rama de control adicional | depende de la variante | 512 x 512 o superior | Mapa de bordes, profundidad, pose u otros | segun la variante | Hugging Face |
 | Otros generadores contrafactuales de histopatologia | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de datos verificables de otros generadores contrafactuales de hist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a12donhf/CPathOGen
+- Modelo en Hugging Face: https://huggingface.co/a12donhf/CPathOGen
 - Codigo e instrucciones completas en GitHub: https://github.com/a12dongithub/PathOGen
 - Modelo base: https://huggingface.co/Manojb/stable-diffusion-2-1-base
 - Articulo (arXiv): pendiente de envio, enlace no disponible en la informacion proporcionada

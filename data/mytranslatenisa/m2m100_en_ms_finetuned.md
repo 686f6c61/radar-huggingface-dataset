@@ -77,7 +77,7 @@ La comparativa muestra que el modelo fine-tuneado ofrece una ventaja sobre el ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mylatinenisa/m2m100_en_ms_FineTuned (enlace según el ID proporcionado)
+- Modelo en Hugging Face: https://huggingface.co/mylatinenisa/m2m100_en_ms_FineTuned (enlace según el ID proporcionado)
 - Modelo base M2M100: https://huggingface.co/facebook/m2m100_418M
 - Paper de M2M100: "Beyond English-Centric Multilingual Machine Translation" (arXiv:2010.11125)
 - Documentación de Transformers para M2M100: https://huggingface.co/docs/transformers/model_doc/m2m_100

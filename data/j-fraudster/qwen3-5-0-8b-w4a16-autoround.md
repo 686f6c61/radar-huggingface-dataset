@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B (base) | 453M | BF16 | no disponible | Apache 2.0 | HuggingFace |
-| J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound | 453M | W4A16 (int4) | no disponible | Apache 2.0 | HuggingFace |
-| Vishva007/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ | 453M | W4A16 (GPTQ) | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B (base) | 453M | BF16 | no disponible | Apache 2.0 | Hugging Face |
+| J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound | 453M | W4A16 (int4) | no disponible | Apache 2.0 | Hugging Face |
+| Vishva007/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ | 453M | W4A16 (GPTQ) | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar numéricamente. La diferencia principal entre las versiones cuantizadas es el formato de pesos (AutoRound nativo vs GPTQ), que puede afectar a la compatibilidad con distintos backends de inferencia.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento para comparar numéricamente. La diferenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Intel AutoRound: https://github.com/intel/auto-round
 - Documentación de vLLM para LLM Compressor (Qwen3.5): https://docs.vllm.ai/projects/llm-compressor/en/latest/key-models/qwen3.5/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kic_M_Qwen3-8B_java_t0.5_g7_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en HuggingFace. El modelo parte de la version cuantizada en 4 bits de Unsloth (unsloth/Qwen3-8B-Base-unsloth-bnb-4bit) y se ha entrenado con la libreria Unsloth, que acelera el proceso de entrenamiento aproximadamente el doble respecto a los flujos estandar. El nombre del repositorio sugiere un entrenamiento orientado a Java (posiblemente generacion o comprension de codigo Java) con unos hiperparametros concretos: temperatura 0.5 y un factor de escala o grupo de 7.
+kic_M_Qwen3-8B_java_t0.5_g7_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en Hugging Face. El modelo parte de la version cuantizada en 4 bits de Unsloth (unsloth/Qwen3-8B-Base-unsloth-bnb-4bit) y se ha entrenado con la libreria Unsloth, que acelera el proceso de entrenamiento aproximadamente el doble respecto a los flujos estandar. El nombre del repositorio sugiere un entrenamiento orientado a Java (posiblemente generacion o comprension de codigo Java) con unos hiperparametros concretos: temperatura 0.5 y un factor de escala o grupo de 7.
 
 Se trata de un modelo derivado de la familia Qwen3, una arquitectura transformer densa de 8.000 millones de parametros desarrollada originalmente por Alibaba. El ajuste fino se ha realizado sobre la version base (no la instruct), lo que implica que el modelo resultante es una base adaptada a una tarea especifica mas que un asistente conversacional generico. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kic_M_Qwen3-8B_java_t0.5_g7_run0 | 8.000 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning comunitario sin benchmarks |
+| kic_M_Qwen3-8B_java_t0.5_g7_run0 | 8.000 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning comunitario sin benchmarks |
 | Qwen3-8B (base) | 8.000 M | 32.768 tokens (nativo) | Apache 2.0 | Amplia, oficial | Modelo base original de Alibaba |
 | Llama 3.1 8B | 8.000 M | 128.000 tokens | Llama 3.1 Community | Amplia, oficial | Alternativa densa de Meta |
 | Mistral 7B | 7.000 M | 32.000 tokens | Apache 2.0 | Amplia, oficial | Alternativa densa de Mistral AI |
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g7_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g7_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - Qwen3 (familia de modelos): no disponible enlace oficial en la informacion proporcionada

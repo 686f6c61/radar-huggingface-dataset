@@ -78,9 +78,9 @@ La comparativa se basa en las especificaciones publicas de la familia Gemma 4. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ragheb89/unsloth_gemma-4-E4B-it_aia
+- Repositorio Hugging Face: https://huggingface.co/ragheb89/unsloth_gemma-4-E4B-it_aia
 - Modelo base Gemma 4 E4B (Unsloth): https://huggingface.co/unsloth/gemma-4-E4B
 - Documentacion de Gemma 4 en Unsloth: https://unsloth.ai/docs/models/gemma-4
 - Guia de fine-tuning de Gemma 4 con Unsloth: https://unsloth.ai/docs/models/gemma-4/train
-- Coleccion Gemma 4 de Unsloth en HuggingFace: https://huggingface.co/collections/unsloth/gemma-4
+- Coleccion Gemma 4 de Unsloth en Hugging Face: https://huggingface.co/collections/unsloth/gemma-4
 - Guia para ejecutar Gemma 4 localmente (Wolfeast): https://wolfeast.com/run-gemma-4-locally-unsloth/

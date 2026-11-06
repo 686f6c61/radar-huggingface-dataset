@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `meowmeowai/Dual-Explain-A1-A3-Stage2-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `meowmeowai`. Está diseñado para la generación de texto conversacional, como indica su etiqueta `conversational`, y se presenta como un ajuste fino de segunda etapa sobre un modelo base denominado `stage1_merged`. El repositorio contiene únicamente los pesos del adaptador (1,5 GB) en formato `safetensors`, junto con la configuración de PEFT, lo que sugiere que debe combinarse con el modelo base correspondiente para su uso.
+El modelo `meowmeowai/Dual-Explain-A1-A3-Stage2-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `meowmeowai`. Está diseñado para la generación de texto conversacional, como indica su etiqueta `conversational`, y se presenta como un ajuste fino de segunda etapa sobre un modelo base denominado `stage1_merged`. El repositorio contiene únicamente los pesos del adaptador (1,5 GB) en formato `safetensors`, junto con la configuración de PEFT, lo que sugiere que debe combinarse con el modelo base correspondiente para su uso.
 
 La información pública disponible es extremadamente limitada: la model card está prácticamente vacía, con la mayoría de los campos marcados como "[More Information Needed]". No se especifican la arquitectura del modelo base, el número de parámetros, la licencia, los idiomas soportados ni los datos de entrenamiento. A pesar de su reciente creación (agosto de 2026), no cuenta con descargas ni valoraciones, lo que indica que es un modelo experimental o en fase inicial de publicación. Su relevancia actual es incierta debido a la falta de documentación y validación externa.
 
@@ -29,7 +29,7 @@ Dado que la información disponible es insuficiente, las capacidades listadas a 
 
 - Generación de texto conversacional: el tag `conversational` sugiere que el modelo está optimizado para mantener diálogos multi-turno.
 - Fine-tuning específico para tareas de explicación: el nombre "Dual-Explain" apunta a una especialización en generar explicaciones, posiblemente en dos variantes o niveles (A1 y A3 podrían referirse a niveles de dificultad o tipos de respuesta).
-- Integración con el ecosistema HuggingFace Transformers y PEFT: al ser un adaptador LoRA, puede cargarse con `PeftModel` y combinarse con el modelo base.
+- Integración con el ecosistema Hugging Face Transformers y PEFT: al ser un adaptador LoRA, puede cargarse con `PeftModel` y combinarse con el modelo base.
 - No se confirma soporte para tool calling, agentes, razonamiento multi-paso, visión, audio ni otras capacidades avanzadas.
 
 ## Casos de uso
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No disponible. Al no conocerse el modelo base ni las características específicas del adaptador, no es posible establecer una comparación fiable con otras alternativas de la misma categoría (por ejemplo, otros adaptadores LoRA conversacionales o modelos de explicación). Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No disponible. Al no conocerse el modelo base ni las características específicas del adaptador, no es posible establecer una comparación fiable con otras alternativas de la misma categoría (por ejemplo, otros adaptadores LoRA conversacionales o modelos de explicación). Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 

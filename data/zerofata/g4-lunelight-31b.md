@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G4-LuneLight-31B es un ajuste fino (fine-tune) del modelo ReadyArt/gemma-4-31B-it-scotoma-2, publicado por el usuario zerofata en HuggingFace. Se trata de un modelo denso de 31.273.086.512 parámetros (aproximadamente 31,27 mil millones) construido sobre la arquitectura Gemma 4 en su variante instruction-tuned, según se desprende de la etiqueta `gemma4` y del nombre del modelo base.
+G4-LuneLight-31B es un ajuste fino (fine-tune) del modelo ReadyArt/gemma-4-31B-it-scotoma-2, publicado por el usuario zerofata en Hugging Face. Se trata de un modelo denso de 31.273.086.512 parámetros (aproximadamente 31,27 mil millones) construido sobre la arquitectura Gemma 4 en su variante instruction-tuned, según se desprende de la etiqueta `gemma4` y del nombre del modelo base.
 
 El modelo resuelve, a priori, el mismo problema que su base: generación de texto conversacional y asistida por instrucciones en un rango de tamaño de 31B, que se sitúa en la franja de modelos que requieren aceleradores de gama alta o cuantización agresiva para inferencia local. La model card publicada está estructurada como una plantilla visual de ficha de personaje (con CSS embebido y referencias a SillyTavern), lo que sugiere un uso orientado a roleplay, narrativa interactiva o generación creativa, aunque el autor no lo declara explícitamente.
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables de terceros que permita u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zerofata/G4-LuneLight-31B
+- Modelo en Hugging Face: https://huggingface.co/zerofata/G4-LuneLight-31B
 - Modelo base: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2
 
 No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos adicionales asociados a este modelo.

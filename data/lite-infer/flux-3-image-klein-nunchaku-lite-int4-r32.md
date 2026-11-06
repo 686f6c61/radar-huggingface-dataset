@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| lite-infer/flux-3-image-klein-nunchaku-lite-int4-r32 | 3.074.788.096 | no disponible | INT4 W4A4 + NF4 | flux-kommunity-license | HuggingFace (lite-infer) |
-| black-forest-labs/flux-3-image-klein (BF16) | no disponible | no disponible | BF16 | flux-kommunity-license | HuggingFace (BFL) |
+| lite-infer/flux-3-image-klein-nunchaku-lite-int4-r32 | 3.074.788.096 | no disponible | INT4 W4A4 + NF4 | flux-kommunity-license | Hugging Face (lite-infer) |
+| black-forest-labs/flux-3-image-klein (BF16) | no disponible | no disponible | BF16 | flux-kommunity-license | Hugging Face (BFL) |
 | Build NVFP4 del mismo modelo | no disponible | no disponible | NVFP4 + NF4 | flux-kommunity-license | no disponible |
 
 La comparativa se limita al modelo base y a la variante NVFP4 mencionada en la model card; no se dispone de datos de otros modelos de la misma categoría en la información proporcionada.
@@ -93,7 +93,7 @@ La comparativa se limita al modelo base y a la variante NVFP4 mencionada en la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lite-infer/flux-3-image-klein-nunchaku-lite-int4-r32
+- Hugging Face: https://huggingface.co/lite-infer/flux-3-image-klein-nunchaku-lite-int4-r32
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Prompt upsampler: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Licencia: LICENSE.md en el repositorio del modelo

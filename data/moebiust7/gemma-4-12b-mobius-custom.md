@@ -85,9 +85,9 @@ El autor afirma que la calidad de gobernanza medida es identica entre ambos arte
 
 | Modelo | Parametros | Cuantizacion / runtime | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| gemma-4-12b-mobius-custom | ~11,96 B | NF4 4 bits, transformers (vLLM/SGLang) | no disponible | AGPL-3.0, patentes pendientes | HuggingFace, 104 descargas, 0 likes | Capa MMV + RCGov; 31 s por llamada |
-| gemma-4-12b-mobius-custom-c1 | no disponible | GGUF q4_0 oficial de Google (QAT), llama.cpp | no disponible | no disponible en la informacion | HuggingFace | Misma calidad de gobernanza declarada; 7,6 s por llamada |
-| google/gemma-2-9b-it | 9 B | bf16 e IT, cuantizaciones habituales | no disponible | licencia Gemma de Google | HuggingFace | Modelo base; sin capa de gobernanza; respuestas directas sin entitlement ni depuracion de contexto |
+| gemma-4-12b-mobius-custom | ~11,96 B | NF4 4 bits, transformers (vLLM/SGLang) | no disponible | AGPL-3.0, patentes pendientes | Hugging Face, 104 descargas, 0 likes | Capa MMV + RCGov; 31 s por llamada |
+| gemma-4-12b-mobius-custom-c1 | no disponible | GGUF q4_0 oficial de Google (QAT), llama.cpp | no disponible | no disponible en la informacion | Hugging Face | Misma calidad de gobernanza declarada; 7,6 s por llamada |
+| google/gemma-2-9b-it | 9 B | bf16 e IT, cuantizaciones habituales | no disponible | licencia Gemma de Google | Hugging Face | Modelo base; sin capa de gobernanza; respuestas directas sin entitlement ni depuracion de contexto |
 
 No se dispone de datos de rendimiento en tareas estandar que permitan una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento en tareas estandar que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom
+- Modelo en Hugging Face: https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom
 - Variante C1 (GGUF q4_0, llama.cpp): https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom-c1
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - MOBIUS INFINITY (MMV, answer entitlement): https://github.com/mobius-style/infinity

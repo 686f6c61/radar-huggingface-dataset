@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Smol_SISW_Model es un modelo de lenguaje de 135 millones de parametros, desarrollado por el usuario raulconstantin como un ajuste fino (fine-tuning) del modelo base HuggingFaceTB/SmolLM2-135M-Instruct. El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la libreria TRL de HuggingFace, y esta orientado a tareas de generacion de texto conversacional. Su tamaño reducido lo hace adecuado para entornos con recursos limitados o para experimentacion rapida.
+Smol_SISW_Model es un modelo de lenguaje de 135 millones de parametros, desarrollado por el usuario raulconstantin como un ajuste fino (fine-tuning) del modelo base HuggingFaceTB/SmolLM2-135M-Instruct. El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la libreria TRL de Hugging Face, y esta orientado a tareas de generacion de texto conversacional. Su tamaño reducido lo hace adecuado para entornos con recursos limitados o para experimentacion rapida.
 
 La relevancia de este modelo radica en su naturaleza compacta y su origen como derivado de la familia SmolLM2, una serie de modelos pequenos optimizados para eficiencia. Al estar basado en una arquitectura Llama, hereda las capacidades de generacion de texto del modelo base, aunque su entrenamiento adicional con SFT busca adaptarlo a un estilo conversacional especifico. El modelo se publica con formato safetensors y es compatible con el ecosistema transformers.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su naturaleza compacta y su origen como d
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama, tal y como indica el tag "llama" en su ficha de HuggingFace, y hereda la estructura del modelo base SmolLM2-135M-Instruct. Se trata de un transformer decoder-only con 135 millones de parametros, una escala pensada para inferencia ligera y despliegue en hardware modesto. No se dispone de informacion detallada sobre la configuracion exacta de capas, cabezas de atencion o dimensiones ocultas, mas alla de lo que se pueda inferir del modelo base.
+El modelo se basa en la arquitectura Llama, tal y como indica el tag "llama" en su ficha de Hugging Face, y hereda la estructura del modelo base SmolLM2-135M-Instruct. Se trata de un transformer decoder-only con 135 millones de parametros, una escala pensada para inferencia ligera y despliegue en hardware modesto. No se dispone de informacion detallada sobre la configuracion exacta de capas, cabezas de atencion o dimensiones ocultas, mas alla de lo que se pueda inferir del modelo base.
 
 El entrenamiento se realizo mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL (Transformers Reinforcement Learning) en su version 1.10.0, con Transformers 5.15.1 y PyTorch 2.10.0+cu128. No se especifican los datos de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas adicionales como RLHF o DPO. El proceso de entrenamiento se describe unicamente como "trained with SFT" en la model card, sin detalles sobre el dataset o la duracion.
 
@@ -46,7 +46,7 @@ El entrenamiento se realizo mediante SFT (Supervised Fine-Tuning) utilizando la 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar en la model card ni en la ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar en la model card ni en la ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -77,6 +77,6 @@ La comparativa se limita a la familia SmolLM2, ya que no se dispone de informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raulconstantin/Smol_SISW_Model
+- Hugging Face: https://huggingface.co/raulconstantin/Smol_SISW_Model
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Libreria TRL: https://github.com/huggingface/trl

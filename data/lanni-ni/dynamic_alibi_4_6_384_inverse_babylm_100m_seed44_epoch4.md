@@ -62,6 +62,6 @@ No se dispone de datos comparativos. El autor Lanni-ni ha publicado otros modelo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch4
+- Hugging Face del modelo: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch4
 - Perfil del autor: https://huggingface.co/Lanni-ni
 - Modelo similar del autor: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6

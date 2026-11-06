@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch15 | 6,74 B | no disponible | Checkpoint de desaprendizaje TOFU (epoca 15/20) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6,74 B | no disponible | Modelo base fine-tuneado sobre TOFU completo | llama2 | HuggingFace (modelo de referencia del benchmark) |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 tokens | Modelo conversacional de proposito general | llama2 | HuggingFace (ampliamente descargado) |
-| Llama 2 7B base (Meta) | 6,74 B | 4096 tokens | Modelo fundacional | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch15 | 6,74 B | no disponible | Checkpoint de desaprendizaje TOFU (epoca 15/20) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6,74 B | no disponible | Modelo base fine-tuneado sobre TOFU completo | llama2 | Hugging Face (modelo de referencia del benchmark) |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 tokens | Modelo conversacional de proposito general | llama2 | Hugging Face (ampliamente descargado) |
+| Llama 2 7B base (Meta) | 6,74 B | 4096 tokens | Modelo fundacional | llama2 | Hugging Face |
 
 La comparativa se limita a la familia Llama 2 7B porque el checkpoint es un artefacto de investigacion derivado de ella; no se dispone de datos de rendimiento que permitan comparaciones cuantitativas con alternativas de desaprendizaje de otros grupos.
 
@@ -87,7 +87,7 @@ La comparativa se limita a la familia Llama 2 7B porque el checkpoint es un arte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch15
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch15
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y cabeza LM: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

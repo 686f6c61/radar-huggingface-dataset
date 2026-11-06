@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ejwilliams/multitask-2023` es un repositorio de HuggingFace publicado por el usuario ejwilliams que contiene una implementación reducida de una arquitectura híbrida denominada **Cnn Transformer**, orientada a experimentos **multitarea**. No se trata de un modelo entrenado ni de una release con pesos listos para uso: el propio autor lo describe como un punto de partida reproducible, con configuración explícita y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`ejwilliams/multitask-2023` es un repositorio de Hugging Face publicado por el usuario ejwilliams que contiene una implementación reducida de una arquitectura híbrida denominada **Cnn Transformer**, orientada a experimentos **multitarea**. No se trata de un modelo entrenado ni de una release con pesos listos para uso: el propio autor lo describe como un punto de partida reproducible, con configuración explícita y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El artefacto es minúsculo: 49.600 parámetros totales según los pesos en safetensors, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. La arquitectura combina atención dilatada, fusión mediante concatenación y MLP, activaciones GELU y Tanh, y normalización ScaleNorm. La receta de entrenamiento por defecto especifica el optimizador LAMB con un schedule de tipo step, pero el autor advierte explícitamente que son valores iniciales del script y no evidencia de un entrenamiento completado.
 
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ejwilliams/multitask-2023 | 49.600 | no disponible | Sin benchmarks; pesos no entrenados | BSD-3-Clause | HuggingFace, 14 descargas, 0 likes |
+| ejwilliams/multitask-2023 | 49.600 | no disponible | Sin benchmarks; pesos no entrenados | BSD-3-Clause | Hugging Face, 14 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ejwilliams/multitask-2023
+- Hugging Face: https://huggingface.co/ejwilliams/multitask-2023
 - Los resultados de la búsqueda web no contienen enlaces relevantes al modelo: únicamente devuelven hilos de Reddit sobre el videojuego Rogue Lineage, sin relación con este repositorio. No se han encontrado papers, blogs, repositorios ni demos adicionales.

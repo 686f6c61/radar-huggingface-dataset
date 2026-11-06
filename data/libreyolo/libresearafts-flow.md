@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreSEARAFTs-flow | SEA-RAFT S, ResNet18, 4 iteraciones | no disponible | resolución nativa, downscale >960 px | BSD 3-Clause | HuggingFace (LibreYOLO) |
+| LibreSEARAFTs-flow | SEA-RAFT S, ResNet18, 4 iteraciones | no disponible | resolución nativa, downscale >960 px | BSD 3-Clause | Hugging Face (LibreYOLO) |
 | SEA-RAFT (original) | SEA-RAFT, variantes S/M/L | no disponible | resolución configurable | BSD 3-Clause | GitHub princeton-vl/SEA-RAFT |
 | RAFT (original) | RAFT, ResNet + refinador iterativo | no disponible | resolución configurable | BSD 3-Clause | GitHub princeton-vl/RAFT |
 | FlowFormer | Transformer para flujo óptico | no disponible | resolución configurable | no disponible | repositorio académico |
@@ -84,7 +84,7 @@ La comparativa se limita a métodos de flujo óptico de la misma familia; no se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreSEARAFTs-flow
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreSEARAFTs-flow
 - Paper SEA-RAFT (ECCV 2024): https://arxiv.org/abs/2405.14793
 - Repositorio SEA-RAFT: https://github.com/princeton-vl/SEA-RAFT
 - Checkpoint origen: https://huggingface.co/MemorySlices/Tartan-C-T-TSKH-spring540x960-S

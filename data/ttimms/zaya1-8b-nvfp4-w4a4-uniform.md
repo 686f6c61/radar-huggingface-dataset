@@ -89,7 +89,7 @@ Ambos comparten licencia Apache 2.0 y arquitectura MoE base. La elección depend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ttimms/zaya1-8b-nvfp4-w4a4-uniform
+- Modelo en Hugging Face: https://huggingface.co/Ttimms/zaya1-8b-nvfp4-w4a4-uniform
 - Variante mixta (9,46 GB): https://huggingface.co/Ttimms/zaya1-8b-nvfp4-w4a4
 - Repositorio GitHub del proyecto: https://github.com/t-timms/zaya1-godspeed
 - Artículo arXiv sobre drift de corrección en serving LLM: https://arxiv.org/abs/2605.19537

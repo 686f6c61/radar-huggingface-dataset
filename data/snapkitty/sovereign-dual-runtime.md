@@ -4,7 +4,7 @@
 
 Sovereign Dual Runtime es un sistema de ejecución multi-runtime para agentes autónomos, desarrollado por Ahmad Ali Parr bajo el sello de Snapkitty. No se trata de un modelo de lenguaje o de aprendizaje automático al uso, sino de una infraestructura de ejecución que combina tres entornos aislados: un sandbox WASM con Pyodide iPython en el navegador, una máquina virtual soberana basada en el microprocesador MOS 6502 implementada en Rust, y un puente de compatibilidad M5 escrito con Axum que conecta ambos mundos. El sistema se complementa con una cadena WORM (write-once read-many) de sellado SHA-256 que registra cada evento de forma inmutable, y con una opción de emulación QEMU ARM64 para desplegar un teléfono Android completo con Termux.
 
-El proyecto resuelve el problema del aislamiento y la trazabilidad en ejecución de agentes: el agente solo puede ejecutar Python dentro del sandbox WASM sin red ni escritura en el sistema de archivos, mientras que la VM 6502 actúa como plano de control soberano con latidos de reloj T0-T10 y sellado WORM. La relevancia actual radica en su enfoque de seguridad por diseño para agentes autónomos, con una constante soberana θ = 89/2462 inyectada en cada entorno de ejecución. El repositorio incluye scripts de inicio con Docker Compose y documentación de arquitectura en diagramas Mermaid. El proyecto se encuentra en una fase temprana, con cero descargas y cero likes en HuggingFace, y su licencia es BSL-1.1 (Business Source License).
+El proyecto resuelve el problema del aislamiento y la trazabilidad en ejecución de agentes: el agente solo puede ejecutar Python dentro del sandbox WASM sin red ni escritura en el sistema de archivos, mientras que la VM 6502 actúa como plano de control soberano con latidos de reloj T0-T10 y sellado WORM. La relevancia actual radica en su enfoque de seguridad por diseño para agentes autónomos, con una constante soberana θ = 89/2462 inyectada en cada entorno de ejecución. El repositorio incluye scripts de inicio con Docker Compose y documentación de arquitectura en diagramas Mermaid. El proyecto se encuentra en una fase temprana, con cero descargas y cero likes en Hugging Face, y su licencia es BSL-1.1 (Business Source License).
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No disponible. Sovereign Dual Runtime no pertenece a la categoría de modelos de
 
 - No es un modelo de IA generativa: no genera texto, código ni respuestas; es exclusivamente una infraestructura de ejecución para agentes.
 - La licencia BSL-1.1 no es de código abierto convencional: impone restricciones de uso comercial hasta la fecha de cambio a licencia permisiva, que no se especifica en la documentación.
-- El proyecto está en fase inicial: cero descargas y cero interacciones en HuggingFace, lo que sugiere ausencia de validación externa y posibles errores no detectados.
+- El proyecto está en fase inicial: cero descargas y cero interacciones en Hugging Face, lo que sugiere ausencia de validación externa y posibles errores no detectados.
 - No hay documentación sobre seguridad auditada: los claims de aislamiento (sin red, sin escritura) no están respaldados por pruebas de penetración publicadas.
 - La dependencia de Pyodide limita el sandbox a Python; los agentes que requieran otros lenguajes no podrán ejecutarse en el entorno WASM.
 - La cadena WORM crece de forma lineal y sin rotación: en despliegues prolongados con alta frecuencia de eventos, el fichero `chain.jsonl` puede crecer sin límite.
@@ -74,6 +74,6 @@ No disponible. Sovereign Dual Runtime no pertenece a la categoría de modelos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sovereign-dual-runtime
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sovereign-dual-runtime
 - Arquitectura del kernel soberano: https://github.com/SNAPKITTYWEST/sovereign-agent-kernel
 - Hipervisor ARM64 con motor M5: https://github.com/SNAPKITTYWEST/sovereign-hypervisor-arm64

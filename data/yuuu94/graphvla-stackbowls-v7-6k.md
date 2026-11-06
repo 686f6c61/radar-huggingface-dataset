@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GraphVLA-StackBowls-V7-6k es un checkpoint de investigación de un modelo de visión-lenguaje-acción (VLA) orientado a robótica de doble brazo, publicado por el usuario yuuu94 en HuggingFace. Se trata de un snapshot de entrenamiento en el paso 6.000 de un pipeline denominado GraphVLA, que combina un backbone Qwen3-VL-4B con una cabeza de acción DiT-B (estilo GR00T) y un mecanismo de condicionamiento por grafo (V7). El modelo está especializado en una única tarea real: apilar cuencos (Stack Bowls).
+GraphVLA-StackBowls-V7-6k es un checkpoint de investigación de un modelo de visión-lenguaje-acción (VLA) orientado a robótica de doble brazo, publicado por el usuario yuuu94 en Hugging Face. Se trata de un snapshot de entrenamiento en el paso 6.000 de un pipeline denominado GraphVLA, que combina un backbone Qwen3-VL-4B con una cabeza de acción DiT-B (estilo GR00T) y un mecanismo de condicionamiento por grafo (V7). El modelo está especializado en una única tarea real: apilar cuencos (Stack Bowls).
 
 El modelo resuelve el problema de mapear observaciones visuales multimodales y estado articular a acciones motoras de 14 dimensiones con un horizonte de 16 pasos. Su relevancia es acotada: no es un modelo de propósito general, sino un artefacto reproducible de investigación que documenta una configuración concreta de entrenamiento (cuatro vistas RGB sincronizadas, memoria GRU sobre aristas del grafo, agrupación ponderada por cobertura de máscara) sobre un dataset LeRobot de 72 trayectorias de entrenamiento y 9 de validación.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 - Checkpoint de investigación, no un paquete listo para despliegue en hardware: requiere obtener por separado dataset, assets de robot, tokenizer/processor del modelo base y assets del modelo de percepción, además de adaptar rutas.
 - No incluye el estado del optimizador, por lo que no permite continuar el entrenamiento de forma exacta.
-- No es un export de HuggingFace Transformers; no funciona con `from_pretrained`.
+- No es un export de Hugging Face Transformers; no funciona con `from_pretrained`.
 - Solo se ha entrenado sobre 72 trayectorias de una única tarea (Stack Bowls); la generalización a otras tareas o entornos no está demostrada.
 - La geometría de entrada cacheada es estimada, no ground truth de simulador, lo que introduce error en las etiquetas geométricas.
 - No se reporta tasa de éxito en el mundo real; el rendimiento en hardware físico es desconocido.
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuuu94/GraphVLA-StackBowls-V7-6k
+- Hugging Face: https://huggingface.co/yuuu94/GraphVLA-StackBowls-V7-6k
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

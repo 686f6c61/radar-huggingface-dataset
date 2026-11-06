@@ -80,9 +80,9 @@ No se han publicado en la información disponible resultados de benchmarks de es
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (DINOv2-small, head-only) | 22,06 M | imagen 256x256 px | 56,82 % acc / 54,38 % F1 (test) | Apache 2.0 | HuggingFace |
-| `facebook/dinov2-small-imagenet1k-1-layer` (base sin adaptar) | ~22 M | imagen 224x224 px (nativa) | no disponible en la información | Apache 2.0 | HuggingFace |
-| Otros backbones del *Vision Foundation Models Benchmark* (39 restantes) | variable | variable | resultados en `vision-foundation-models-benchmark-runs` | variable | HuggingFace |
+| Este checkpoint (DINOv2-small, head-only) | 22,06 M | imagen 256x256 px | 56,82 % acc / 54,38 % F1 (test) | Apache 2.0 | Hugging Face |
+| `facebook/dinov2-small-imagenet1k-1-layer` (base sin adaptar) | ~22 M | imagen 224x224 px (nativa) | no disponible en la información | Apache 2.0 | Hugging Face |
+| Otros backbones del *Vision Foundation Models Benchmark* (39 restantes) | variable | variable | resultados en `vision-foundation-models-benchmark-runs` | variable | Hugging Face |
 
 No se dispone en la información proporcionada de cifras de rendimiento de alternativas concretas sobre el mismo split, por lo que la comparación cuantitativa con modelos de la misma categoría queda como no disponible.
 
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de cifras de rendimiento de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/dinov2-small-imagenet1k-1-layer-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/dinov2-small-imagenet1k-1-layer-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/dinov2-small-imagenet1k-1-layer
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

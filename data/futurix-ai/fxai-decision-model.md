@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FxAI Decision Model es un clasificador de decisiones experimental publicado por Futurix-AI sobre la arquitectura Qwen3.8-27B, un backbone multimodal de tipo transformer decoder. Su funcionamiento no es el de un modelo generativo: recibe un estado (texto o imagen), una pregunta y entre 2 y 255 opciones candidatas, y devuelve una distribución de probabilidad calibrada sobre esas opciones. El pipeline declarado en HuggingFace es `text-classification` y la salida es una decisión tipada (`choice`, `noul` o `score`), no texto libre.
+FxAI Decision Model es un clasificador de decisiones experimental publicado por Futurix-AI sobre la arquitectura Qwen3.8-27B, un backbone multimodal de tipo transformer decoder. Su funcionamiento no es el de un modelo generativo: recibe un estado (texto o imagen), una pregunta y entre 2 y 255 opciones candidatas, y devuelve una distribución de probabilidad calibrada sobre esas opciones. El pipeline declarado en Hugging Face es `text-classification` y la salida es una decisión tipada (`choice`, `noul` o `score`), no texto libre.
 
 El repositorio contiene un checkpoint fusionado completo de 54,4 GB: backbone en BF16, el bloque de lenguaje final (capa 63) ajustado a rango completo en FP32 y una cabeza de decisión de 255 vías también en FP32. Se han entrenado 373.560.832 parámetros (aproximadamente el 1,4 % de los 26,1 mil millones totales); no se emplean LoRA ni adaptadores PEFT, pero el autor aclara explícitamente que tampoco es un ajuste de todos los pesos del modelo. El contexto útil a través de la interfaz de decisión es de 8.192 tokens y la evaluación se ha hecho principalmente en inglés.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks de latencia o throughput en la info
 - VRAM estimada: el checkpoint ocupa unos 54,4 GB; solo los pesos en BF16 de los 26,1 B de parámetros suponen aproximadamente 52 GB. El autor recomienda un mínimo de 64 GiB de VRAM para entradas de texto cortas y 80–96 GiB para tener margen.
 - GPU recomendadas: A100 80 GB, H100 80 GB, H200 o GPUs con soporte de bfloat16 y 80 GB o más. No cabe en GPUs de consumo: una RTX 4090 con 24 GB no es viable, ni siquiera repartiendo el modelo, porque no se publican cuantizaciones.
 - Entorno: Linux, Python 3.12 y GPU NVIDIA CUDA con soporte de bfloat16. La inferencia en CPU está soportada técnicamente por el cargador incluido, pero el autor la describe como poco práctica.
-- Despliegue: el modelo no funciona con `transformers.AutoModel` ni con el widget de HuggingFace (deshabilitado, `inference: false`). Requiere clonar el repositorio con Git LFS e instalar el runtime `futurix_decision` incluido, que restaura los tensores FP32, la máscara no causal y el pooling de último token. No se documenta soporte para vLLM, TGI, llama.cpp ni Ollama.
+- Despliegue: el modelo no funciona con `transformers.AutoModel` ni con el widget de Hugging Face (deshabilitado, `inference: false`). Requiere clonar el repositorio con Git LFS e instalar el runtime `futurix_decision` incluido, que restaura los tensores FP32, la máscara no causal y el pooling de último token. No se documenta soporte para vLLM, TGI, llama.cpp ni Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparables entre estas opciones en la info
 
 ## Enlaces
 
-- [HuggingFace: Futurix-AI/FxAI-decision-model](https://huggingface.co/Futurix-AI/FxAI-decision-model)
+- [Hugging Face: Futurix-AI/FxAI-decision-model](https://huggingface.co/Futurix-AI/FxAI-decision-model)
 - [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (backbone citado en la model card)
 - [BACKGROUND.md](https://huggingface.co/Futurix-AI/FxAI-decision-model/blob/main/BACKGROUND.md) (contexto de la release y atribuciones, referenciado en la model card)
 - [PolyAI-LDN/task-specific-datasets](https://github.com/PolyAI-LDN/task-specific-datasets) (origen de BANKING77, CC BY 4.0)

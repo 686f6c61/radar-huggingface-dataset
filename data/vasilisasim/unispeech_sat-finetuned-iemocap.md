@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `VasilisAsim/unispeech_sat-finetuned-IEMOCAP` es un ajuste fino del modelo UniSpeech-SAT, desarrollado originalmente por Microsoft Research, para la tarea de clasificación de emociones en audio. El autor del fine-tune, VasilisAsim, ha entrenado el modelo sobre el dataset IEMOCAP, un corpus de referencia para el reconocimiento de emociones en voz. El modelo se distribuye a través de HuggingFace con la pipeline `audio-classification`, lo que permite usarlo directamente con la librería `transformers` para predecir la emoción de un fragmento de audio.
+El modelo `VasilisAsim/unispeech_sat-finetuned-IEMOCAP` es un ajuste fino del modelo UniSpeech-SAT, desarrollado originalmente por Microsoft Research, para la tarea de clasificación de emociones en audio. El autor del fine-tune, VasilisAsim, ha entrenado el modelo sobre el dataset IEMOCAP, un corpus de referencia para el reconocimiento de emociones en voz. El modelo se distribuye a través de Hugging Face con la pipeline `audio-classification`, lo que permite usarlo directamente con la librería `transformers` para predecir la emoción de un fragmento de audio.
 
 Arquitectónicamente, se trata de un modelo Transformer con 94.569.604 parámetros, que se corresponde con el tamaño base de la familia UniSpeech-SAT. No se dispone de información sobre la longitud de contexto, ya que es un modelo de audio y no de texto. El repositorio contiene únicamente pesos en formato `safetensors` y ocupa 0.4 GB. La relevancia del modelo radica en su aplicación directa al análisis de emociones en voz, un área con demanda creciente en atención al cliente, salud mental e investigación en interacción persona-ordenador.
 
@@ -25,10 +25,10 @@ El modelo es un ajuste fino de UniSpeech-SAT, un modelo de representación de ha
 
 ## Capacidades
 
-- Clasificación de emociones en audio: el modelo predice la emoción de un fragmento de voz utilizando la pipeline `audio-classification` de HuggingFace.
+- Clasificación de emociones en audio: el modelo predice la emoción de un fragmento de voz utilizando la pipeline `audio-classification` de Hugging Face.
 - No es un modelo generativo: no genera texto ni audio, y no soporta tool calling, function calling ni razonamiento multi-paso.
 - Capacidades multilingües: no disponible. El dataset IEMOCAP está en inglés, por lo que el rendimiento en otros idiomas no está garantizado.
-- Integración sencilla: al estar publicado en HuggingFace con la librería `transformers`, se puede cargar con `AutoModelForAudioClassification` y utilizar directamente en proyectos de Python.
+- Integración sencilla: al estar publicado en Hugging Face con la librería `transformers`, se puede cargar con `AutoModelForAudioClassification` y utilizar directamente en proyectos de Python.
 
 ## Casos de uso
 
@@ -66,5 +66,5 @@ No se dispone de datos de benchmarks ni de especificaciones comparables para est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VasilisAsim/unispeech_sat-finetuned-IEMOCAP
+- Hugging Face: https://huggingface.co/VasilisAsim/unispeech_sat-finetuned-IEMOCAP
 - Repositorio de UniSpeech (Microsoft): https://github.com/microsoft/UniSpeech

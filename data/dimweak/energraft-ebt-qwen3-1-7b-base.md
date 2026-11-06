@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks del modelo base Qwen3-1.7B-Base en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimweak/Energraft-EBT-Qwen3-1.7B-Base
+- Modelo en Hugging Face: https://huggingface.co/dimweak/Energraft-EBT-Qwen3-1.7B-Base
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio Qwen3: https://github.com/QwenLM/Qwen3
 - Energy-Based Transformers (inspiracion): https://github.com/alexiglad/EBT

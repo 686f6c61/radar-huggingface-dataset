@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca for Generation es un prototipo de investigación publicado por el usuario llnguyen en HuggingFace. Se trata de una implementación experimental de una arquitectura denominada "Coca", orientada a tareas de generación, cuyo único artefacto funcional es un checkpoint de inicialización (`model.safetensors`) con 49.600 parámetros totales. El propio autor especifica que este checkpoint **no ha sido entrenado** ni evaluado con benchmarks, y que debe tratarse como un punto de partida para pruebas de humo ("smoke tests") o como configuración por defecto de un script reproducible.
+Coca for Generation es un prototipo de investigación publicado por el usuario llnguyen en Hugging Face. Se trata de una implementación experimental de una arquitectura denominada "Coca", orientada a tareas de generación, cuyo único artefacto funcional es un checkpoint de inicialización (`model.safetensors`) con 49.600 parámetros totales. El propio autor especifica que este checkpoint **no ha sido entrenado** ni evaluado con benchmarks, y que debe tratarse como un punto de partida para pruebas de humo ("smoke tests") o como configuración por defecto de un script reproducible.
 
 El modelo no presenta resultados de rendimiento verificados, ni métricas de evaluación, ni comparaciones con otros sistemas. La model card insiste en que el repositorio documenta formatos de archivo y valores por defecto de configuración, sin afirmar ninguna capacidad real de generación. Dado su tamaño (menos de 50.000 parámetros) y la ausencia de entrenamiento declarado, su relevancia actual es exclusivamente metodológica: sirve como plantilla reproducible para experimentos controlados con baselines de capacidad equivalente.
 
@@ -74,7 +74,7 @@ No disponible. El repositorio no identifica modelos comparables en su categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/llnguyen/coca-generation-playground
+- Hugging Face: https://huggingface.co/llnguyen/coca-generation-playground
 - CoCa: Contrastive Captioners are Image-Text Foundation Models (paper de referencia sobre el nombre "CoCa", no relacionado con este repositorio): https://aman.ai/papers/
 - NTIRE 2026 Challenge on Robust AI-Generated Image Detection (contexto de detección de imágenes generadas, no relacionado): https://arxiv.org/html/2604.11487v1
 - Repositorio genérico de papers de IA: https://github.com/songqiang321/Awesome-AI-Papers/blob/main/README.md

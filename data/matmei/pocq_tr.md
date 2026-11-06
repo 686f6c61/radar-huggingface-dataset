@@ -2,7 +2,7 @@
 
 ## Resumen
 
-POCQ_tr es un modelo de clasificación de texto publicado en HuggingFace por el usuario matmei. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, un encoder Transformer destilado de BERT. El modelo contiene aproximadamente 66,95 millones de parámetros y está pensado para tareas de clasificación de secuencias mediante la librería Transformers. Su principal atractivo es el reducido tamaño, que lo hace adecuado para entornos con recursos limitados y para despliegues en CPU o GPUs de consumo.
+POCQ_tr es un modelo de clasificación de texto publicado en Hugging Face por el usuario matmei. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, un encoder Transformer destilado de BERT. El modelo contiene aproximadamente 66,95 millones de parámetros y está pensado para tareas de clasificación de secuencias mediante la librería Transformers. Su principal atractivo es el reducido tamaño, que lo hace adecuado para entornos con recursos limitados y para despliegues en CPU o GPUs de consumo.
 
 La model card está generada automáticamente y apenas ofrece detalles: no se especifica el dataset de entrenamiento, la tarea concreta, la longitud de contexto ni los idiomas soportados. El único dato de evaluación disponible es la pérdida de validación (loss) de 0,3264 obtenida en la segunda época. Aunque el modelo está licenciado bajo Apache 2.0 y permite uso comercial, su rendimiento real en dominios concretos no ha sido documentado, por lo que se recomienda una evaluación exhaustiva antes de usarlo en producción.
 
@@ -86,6 +86,6 @@ No hay datos de rendimiento comparativo disponibles. Los valores de contexto de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matmei/POCQ_tr
+- Modelo en Hugging Face: https://huggingface.co/matmei/POCQ_tr
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de Transformers: https://huggingface.co/docs/transformers

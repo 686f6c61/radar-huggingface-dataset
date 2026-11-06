@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zzzzdar3warfatf/Qwen2.5-Coder-7B-Instruct-abliterated-GGUF` es una cuantización en formato GGUF de la versión "abliterated" del modelo Qwen2.5-Coder-7B-Instruct, desarrollado originalmente por Alibaba Cloud. La variante abliterated, creada por huihui-ai, elimina las direcciones de rechazo del modelo base mediante la técnica de ablación de pesos, dando como resultado un asistente de código sin censura que responde a cualquier solicitud sin negarse. Esta cuantización concreta fue generada por bartowski usando llama.cpp (release b4058) con la opción imatrix, y está publicada en HuggingFace por el usuario zzzzdar3warfatf.
+El modelo `zzzzdar3warfatf/Qwen2.5-Coder-7B-Instruct-abliterated-GGUF` es una cuantización en formato GGUF de la versión "abliterated" del modelo Qwen2.5-Coder-7B-Instruct, desarrollado originalmente por Alibaba Cloud. La variante abliterated, creada por huihui-ai, elimina las direcciones de rechazo del modelo base mediante la técnica de ablación de pesos, dando como resultado un asistente de código sin censura que responde a cualquier solicitud sin negarse. Esta cuantización concreta fue generada por bartowski usando llama.cpp (release b4058) con la opción imatrix, y está publicada en Hugging Face por el usuario zzzzdar3warfatf.
 
 El modelo base Qwen2.5-Coder-7B-Instruct es un transformer decoder-only denso de 7.6 mil millones de parámetros, preentrenado con 5.5 billones de tokens y ajustado con instrucciones. Soporta una ventana de contexto de 32K tokens y destaca por su rendimiento en generación de código, superando a modelos más grandes como CodeStral-22B y DS-Coder-33B-Instruct en tareas de razonamiento de código. La versión abliterated mantiene estas capacidades técnicas pero elimina los mecanismos de rechazo, lo que la hace adecuada para entornos donde se requiere una respuesta sin restricciones, aunque con importantes implicaciones de seguridad.
 
@@ -88,7 +88,7 @@ La principal diferencia frente a alternativas es la eliminación de la censura (
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/zzzzdar3warfatf/Qwen2.5-Coder-7B-Instruct-abliterated-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/zzzzdar3warfatf/Qwen2.5-Coder-7B-Instruct-abliterated-GGUF
 - Modelo base abliterated (huihui-ai): https://huggingface.co/huihui-ai/Qwen2.5-Coder-7B-Instruct-abliterated
 - Modelo original Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Reporte técnico Qwen2.5-Coder: https://arxiv.org/html/2409.12186v1

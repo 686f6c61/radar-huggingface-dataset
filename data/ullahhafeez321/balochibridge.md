@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BalochiBridge es un modelo publicado en HuggingFace por el usuario ullahhafeez321 bajo licencia MIT. Por el nombre del repositorio se deduce que el objetivo declarado es actuar como puente (bridge) para el idioma balochi, una lengua iraní hablada principalmente en Pakistán, Irán y Afganistán, con escasa representación en los corpus de entrenamiento de los grandes modelos de lenguaje. Se trata, por tanto, de una iniciativa de bajo perfil orientada a cubrir una laguna lingüística concreta dentro del ecosistema open source.
+BalochiBridge es un modelo publicado en Hugging Face por el usuario ullahhafeez321 bajo licencia MIT. Por el nombre del repositorio se deduce que el objetivo declarado es actuar como puente (bridge) para el idioma balochi, una lengua iraní hablada principalmente en Pakistán, Irán y Afganistán, con escasa representación en los corpus de entrenamiento de los grandes modelos de lenguaje. Se trata, por tanto, de una iniciativa de bajo perfil orientada a cubrir una laguna lingüística concreta dentro del ecosistema open source.
 
 La información pública disponible es mínima: la model card únicamente contiene la declaración de licencia, sin especificar arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no está asociado a ningún pipeline declarado. Esto indica que el modelo es un artefacto recién creado o de carácter experimental, sin validación por parte de la comunidad.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| BalochiBridge | no disponible | no disponible | MIT | solo declaracion de licencia | repositorio HuggingFace, 0 descargas |
+| BalochiBridge | no disponible | no disponible | MIT | solo declaracion de licencia | repositorio Hugging Face, 0 descargas |
 | Modelos multilingües de referencia (p. ej. familia Llama, Qwen, Gemma) | publicos y documentados | publicos y documentados | licencias especificas por modelo | model cards completas y benchmarks | ampliamente desplegados |
 | Ajustes comunitarios para lenguas de bajos recursos | variable | variable | variable | habitualmente parcial | variable |
 
@@ -79,5 +79,5 @@ No se dispone de información suficiente para establecer una comparación cuanti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ullahhafeez321/BalochiBridge
+- Repositorio en Hugging Face: https://huggingface.co/ullahhafeez321/BalochiBridge
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

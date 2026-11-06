@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bw-fu/evalution-envs` es un repositorio publicado en HuggingFace por el usuario `bw-fu` el 22 de octubre de 2026 y actualizado ese mismo día. Pese a estar alojado en el Hub de modelos, no presenta ninguna de las señales habituales de un modelo de aprendizaje automatico: no tiene etiqueta de pipeline (`pipeline_tag`), no declara idiomas soportados, no acumula descargas ni interacciones y su model card se reduce al bloque de frontmatter con la licencia. El nombre sugiere un conjunto de entornos de evaluacion ("evaluation environments"), no un modelo con pesos entrenados.
+`bw-fu/evalution-envs` es un repositorio publicado en Hugging Face por el usuario `bw-fu` el 22 de octubre de 2026 y actualizado ese mismo día. Pese a estar alojado en el Hub de modelos, no presenta ninguna de las señales habituales de un modelo de aprendizaje automatico: no tiene etiqueta de pipeline (`pipeline_tag`), no declara idiomas soportados, no acumula descargas ni interacciones y su model card se reduce al bloque de frontmatter con la licencia. El nombre sugiere un conjunto de entornos de evaluacion ("evaluation environments"), no un modelo con pesos entrenados.
 
 El unico dato cuantitativo relevante es el tamano del repositorio, 55,9 GB, compatible con artefactos binarios de gran volumen, pero la informacion disponible no permite determinar si contiene pesos, imagenes de contenedor, datasets, simuladores o una combinacion de ellos. Tampoco hay información sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento.
 
@@ -86,6 +86,6 @@ No es posible establecer una comparativa tecnica: la informacion disponible no i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bw-fu/evalution-envs
-- Perfil del autor en HuggingFace: https://huggingface.co/bw-fu
+- Repositorio en Hugging Face: https://huggingface.co/bw-fu/evalution-envs
+- Perfil del autor en Hugging Face: https://huggingface.co/bw-fu
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

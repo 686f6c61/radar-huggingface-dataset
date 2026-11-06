@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sft__ot30k_open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3`, publicado por la organizacion open-sci en HuggingFace, es el resultado de un ajuste fino supervisado (SFT) sobre una base de la familia open-sci-ref de 1.7B parametros. El nombre del checkpoint codifica buena parte de su linaje: un modelo base entrenado sobre FineWeb-Edu (1.4T tokens), con una fase intermedia de razonamiento (300B tokens) y una fase de SFT sobre el dataset Tulu3 con ejemplos de hasta 16k tokens de longitud.
+El modelo `sft__ot30k_open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3`, publicado por la organizacion open-sci en Hugging Face, es el resultado de un ajuste fino supervisado (SFT) sobre una base de la familia open-sci-ref de 1.7B parametros. El nombre del checkpoint codifica buena parte de su linaje: un modelo base entrenado sobre FineWeb-Edu (1.4T tokens), con una fase intermedia de razonamiento (300B tokens) y una fase de SFT sobre el dataset Tulu3 con ejemplos de hasta 16k tokens de longitud.
 
 El modelo resuelve el problema de adaptar una base pequena (1.7B) a tareas de razonamiento y seguimiento de instrucciones con contexto largo, mediante un pipeline de entrenamiento por etapas documentado en el propio identificador. Es relevante para desarrolladores e investigadores que necesitan un modelo compacto, desplegable en hardware modesto, con pesos en safetensors y compatible con el ecosistema transformers y llama-factory.
 
@@ -67,8 +67,8 @@ La model card declara un `model-index` con el nombre `sft__f679a5c592c8dffb__ope
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci SFT 1.7B (este modelo) | 1.714.377.728 | hasta 16k en entrenamiento | other | HuggingFace, 24 descargas |
-| Modelos de la familia open-sci-ref base | no disponible | no disponible | no disponible | HuggingFace |
+| open-sci SFT 1.7B (este modelo) | 1.714.377.728 | hasta 16k en entrenamiento | other | Hugging Face, 24 descargas |
+| Modelos de la familia open-sci-ref base | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de 1.7B de proposito general | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo ni de especificaciones de modelos alternativos en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
@@ -85,5 +85,5 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones de mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3
+- Hugging Face: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la busqueda web proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-Gen3-MoE es un modelo publicado en HuggingFace por el usuario Lucien-shark bajo el identificador `Lucien-shark/Linny-Gen3-MoE`. En el momento de redactar esta ficha no existe documentacion tecnica publica asociada: la model card esta practicamente vacia (unicamente contiene el campo `license: unknown`) y el repositorio no registra descargas ni interacciones. El propio nombre del identificador incluye la cadena "MoE", lo que sugiere una arquitectura de mezcla de expertos y una tercera generacion de la familia "Linny", pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
+Linny-Gen3-MoE es un modelo publicado en Hugging Face por el usuario Lucien-shark bajo el identificador `Lucien-shark/Linny-Gen3-MoE`. En el momento de redactar esta ficha no existe documentacion tecnica publica asociada: la model card esta practicamente vacia (unicamente contiene el campo `license: unknown`) y el repositorio no registra descargas ni interacciones. El propio nombre del identificador incluye la cadena "MoE", lo que sugiere una arquitectura de mezcla de expertos y una tercera generacion de la familia "Linny", pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
 No hay informacion verificable sobre el problema que resuelve, el tamano del modelo, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento empleados. La unica informacion estructural disponible es la fecha de creacion y actualizacion (17 de octubre de 2026, identicas, lo que indica que el repositorio no ha recibido actualizaciones posteriores a su publicacion inicial) y la etiqueta de region `us`.
 
@@ -65,7 +65,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Linny-Gen3-MoE | no disponible | no disponible | unknown | repositorio HuggingFace sin documentacion |
+| Linny-Gen3-MoE | no disponible | no disponible | unknown | repositorio Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,6 +81,6 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucien-shark/Linny-Gen3-MoE
+- Hugging Face: https://huggingface.co/Lucien-shark/Linny-Gen3-MoE
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo. Los resultados de busqueda web disponibles corresponden al nombre propio "Lucien" (enciclopedias, tiendas de bicicletas, articulos sobre nombres) y no guardan relacion con el modelo.

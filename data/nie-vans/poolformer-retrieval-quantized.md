@@ -52,7 +52,7 @@ En cuanto a entrenamiento, no existe evidencia de ninguno completado. El autor e
 - No hay soporte documentado de agentes ni de razonamiento multi-paso.
 - No hay capacidades multilingües declaradas ni idiomas identificados.
 - No hay capacidades multimodales confirmadas, aunque la tarea de retrieval y la referencia a Flickr30k apuntan a un escenario imagen-texto; el repositorio no lo explicita.
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 ## Casos de uso
 
@@ -102,7 +102,7 @@ Las cifras de las filas de alternativas provienen de documentación pública ext
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nie-vans/poolformer-retrieval-quantized
+- Repositorio en Hugging Face: https://huggingface.co/nie-vans/poolformer-retrieval-quantized
 - Perfil del autor: https://huggingface.co/nie-vans
 - Paper de referencia de la familia PoolFormer (Meta): https://arxiv.org/abs/2111.11418
 - Dataset sugerido por el autor para evaluar (Flickr30k): https://shannon.cs.illinois.edu/DenotationGraph/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seastell/example es un repositorio de modelo publicado en HuggingFace por el usuario Seastell que, segun los metadatos disponibles, contiene un checkpoint en formato safetensors de tan solo 595.264 parametros totales (aproximadamente 0,6 millones). El tamano del repositorio es de 0,0 GB, coherente con un modelo de dimensiones muy reducidas. No se ha publicado informacion sobre la arquitectura, el pipeline de inferencia, los idiomas soportados ni la licencia.
+Seastell/example es un repositorio de modelo publicado en Hugging Face por el usuario Seastell que, segun los metadatos disponibles, contiene un checkpoint en formato safetensors de tan solo 595.264 parametros totales (aproximadamente 0,6 millones). El tamano del repositorio es de 0,0 GB, coherente con un modelo de dimensiones muy reducidas. No se ha publicado informacion sobre la arquitectura, el pipeline de inferencia, los idiomas soportados ni la licencia.
 
 El repositorio fue creado el 9 de octubre de 2026 y actualizado apenas unos segundos despues, con un total de 12 descargas y 0 likes en el momento de la consulta. Estos indicadores, junto con el nombre generico "example" y las etiquetas registradas (safetensors, collie, region:us), apuntan a que se trata de un modelo de prueba, de demostracion o de ejemplo, mas que a un modelo destinado a produccion.
 
@@ -69,5 +69,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Seastell/example
+- Hugging Face: https://huggingface.co/Seastell/example
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jellybook/Jellyengine` es un repositorio alojado en HuggingFace por el usuario `jellybook`, publicado con licencia MIT y etiquetado con el formato ONNX. El repositorio tiene un tamaño de 0,7 GB y fue creado el 18 de agosto de 2026. Sin embargo, la información pública disponible es extremadamente limitada: no se proporciona una model card descriptiva más allá de la licencia, no se especifica la arquitectura, el número de parámetros, el contexto, los idiomas ni el pipeline de uso. Las descargas y los "likes" son cero, lo que sugiere que se trata de un proyecto reciente o sin difusión.
+El modelo `jellybook/Jellyengine` es un repositorio alojado en Hugging Face por el usuario `jellybook`, publicado con licencia MIT y etiquetado con el formato ONNX. El repositorio tiene un tamaño de 0,7 GB y fue creado el 18 de agosto de 2026. Sin embargo, la información pública disponible es extremadamente limitada: no se proporciona una model card descriptiva más allá de la licencia, no se especifica la arquitectura, el número de parámetros, el contexto, los idiomas ni el pipeline de uso. Las descargas y los "likes" son cero, lo que sugiere que se trata de un proyecto reciente o sin difusión.
 
 Las búsquedas web realizadas no arrojan resultados relacionados con un modelo de IA llamado "Jellyengine"; los resultados encontrados bajo el nombre "jellybook" corresponden a proyectos no relacionados, como una aplicación iOS para coleccionistas de Jellycat, un plugin de lector de cómics para Jellyfin o una herramienta de desarrollo de código abierto. Por tanto, no se dispone de documentación técnica, papers, demos ni benchmarks que permitan evaluar las capacidades reales de este modelo. Esta ficha refleja esa falta de información y advierte de que cualquier uso en producción debería ir precedido de una verificación directa del contenido del repositorio.
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, los da
 
 ## Capacidades
 
-No se dispone de información verificada sobre las capacidades del modelo. Al no conocerse su arquitectura ni su entrenamiento, no es posible afirmar si soporta generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües. La ausencia de pipeline en HuggingFace y de model card impide cualquier afirmación fundamentada. Cualquier uso debería basarse en pruebas empíricas propias tras descargar los pesos.
+No se dispone de información verificada sobre las capacidades del modelo. Al no conocerse su arquitectura ni su entrenamiento, no es posible afirmar si soporta generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües. La ausencia de pipeline en Hugging Face y de model card impide cualquier afirmación fundamentada. Cualquier uso debería basarse en pruebas empíricas propias tras descargar los pesos.
 
 ## Casos de uso
 
@@ -54,4 +54,4 @@ No disponible. No se ha identificado ningún modelo comparable en la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jellybook/Jellyengine
+- Repositorio Hugging Face: https://huggingface.co/jellybook/Jellyengine

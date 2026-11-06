@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe la build cuantizada `Qwen3.5-4B-3D-Coder-q4f16_1-MLC`, publicada por el usuario krishnakrish en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión del modelo base `ccore/Qwen3.5-4B-3D-Coder` al formato MLC (Machine Learning Compilation) con la cuantización `q4f16_1`, pensada para ejecutarse en el navegador mediante WebLLM y WebGPU. El objetivo declarado es la generación de escenas 3D con Three.js sin necesidad de ida y vuelta al servidor.
+Esta ficha describe la build cuantizada `Qwen3.5-4B-3D-Coder-q4f16_1-MLC`, publicada por el usuario krishnakrish en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión del modelo base `ccore/Qwen3.5-4B-3D-Coder` al formato MLC (Machine Learning Compilation) con la cuantización `q4f16_1`, pensada para ejecutarse en el navegador mediante WebLLM y WebGPU. El objetivo declarado es la generación de escenas 3D con Three.js sin necesidad de ida y vuelta al servidor.
 
 El modelo base pertenece a la familia Qwen3.5, con 4.000 millones de parámetros según el nombre, y está especializado en código orientado a 3D. La build emplea la plantilla de conversación `qwen3` y una ventana de contexto configurada en 8192 tokens. El repositorio se encuentra en estado de andamiaje ("scaffolding"): según la propia model card, los pesos están pendientes de una compilación en Colab, por lo que la disponibilidad real de los artefactos no está garantizada en el momento de la consulta.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/krishnakrish/Qwen3.5-4B-3D-Coder-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/krishnakrish/Qwen3.5-4B-3D-Coder-q4f16_1-MLC
 - Modelo base: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - WebLLM: https://github.com/mlc-ai/web-llm
 - Aplicación triforge: no disponible (enlace no incluido en la información)

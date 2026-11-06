@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2-tiny-sft es un ajuste fino supervisado (SFT) del modelo Qwen2.5-0.5B de Alibaba Cloud, publicado por el usuario ty-young en HuggingFace. Se trata de un modelo de lenguaje causal de tipo transformer con 29,1 millones de parámetros reales en pesos (el model card base declara 0,49B totales, de los cuales 0,36B no corresponden a embeddings), orientado a generación de texto y conversación. El repositorio tiene un tamaño de 0,1 GB y se distribuye en formato safetensors con licencia Apache 2.0.
+qwen2-tiny-sft es un ajuste fino supervisado (SFT) del modelo Qwen2.5-0.5B de Alibaba Cloud, publicado por el usuario ty-young en Hugging Face. Se trata de un modelo de lenguaje causal de tipo transformer con 29,1 millones de parámetros reales en pesos (el model card base declara 0,49B totales, de los cuales 0,36B no corresponden a embeddings), orientado a generación de texto y conversación. El repositorio tiene un tamaño de 0,1 GB y se distribuye en formato safetensors con licencia Apache 2.0.
 
 El modelo hereda la arquitectura de Qwen2.5: transformer con RoPE, SwiGLU, RMSNorm, atención con sesgo QKV y embeddings atados, con 24 capas y GQA (14 cabezas de consulta y 2 de clave-valor). El model card declara una longitud de contexto completa de 32.768 tokens y capacidad de generación de hasta 8.192 tokens, aunque el autor del ajuste no documenta cambios en la ventana de contexto. Está etiquetado únicamente para inglés, a pesar de que la familia base declara soporte para más de 29 idiomas.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ty-young/qwen2-tiny-sft | 29,1M (pesos) / 0,49B declarados | 32.768 tokens (base) | apache-2.0 | HuggingFace, 0 descargas | Ajuste SFT sin benchmarks propios |
-| Qwen/Qwen2.5-0.5B | 0,49B | 32.768 tokens | apache-2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados por Qwen |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | apache-2.0 | HuggingFace, ampliamente usado | Versión instruct oficial, con evaluaciones en el blog de Qwen |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | apache-2.0 | HuggingFace | Alternativa algo mayor, contexto mucho menor |
+| ty-young/qwen2-tiny-sft | 29,1M (pesos) / 0,49B declarados | 32.768 tokens (base) | apache-2.0 | Hugging Face, 0 descargas | Ajuste SFT sin benchmarks propios |
+| Qwen/Qwen2.5-0.5B | 0,49B | 32.768 tokens | apache-2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados por Qwen |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | apache-2.0 | Hugging Face, ampliamente usado | Versión instruct oficial, con evaluaciones en el blog de Qwen |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | apache-2.0 | Hugging Face | Alternativa algo mayor, contexto mucho menor |
 
 La comparativa se limita a modelos de la misma familia y tamaño; no se dispone de datos de rendimiento del ajuste ty-young/qwen2-tiny-sft para establecer una comparación cuantitativa con las alternativas.
 
@@ -86,7 +86,7 @@ La comparativa se limita a modelos de la misma familia y tamaño; no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ty-young/qwen2-tiny-sft
+- Hugging Face: https://huggingface.co/ty-young/qwen2-tiny-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5

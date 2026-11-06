@@ -77,8 +77,8 @@ Nota: el model-index declara una KL media de 0,021 para todas las filas de test,
 
 | Modelo | Parametros | Tamano de pesos | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| autotrust/JEV-9B | 8,95 B | 18 GB | no disponible | HumanEval 70,7 %; KL ≈ 0,019-0,021 | apache-2.0 | Pesos abiertos en HuggingFace |
-| autotrust/JEV-27B | no disponible (el nombre sugiere ~27 B) | 54 GB | no disponible | HumanEval 78,0 %; KL ≈ 0,017; KL en familias de tareas no vistas 0,104; 96 % de acierto del profesor en benchmark independiente de 16 opciones | no disponible en la informacion | Pesos abiertos en HuggingFace |
+| autotrust/JEV-9B | 8,95 B | 18 GB | no disponible | HumanEval 70,7 %; KL ≈ 0,019-0,021 | apache-2.0 | Pesos abiertos en Hugging Face |
+| autotrust/JEV-27B | no disponible (el nombre sugiere ~27 B) | 54 GB | no disponible | HumanEval 78,0 %; KL ≈ 0,017; KL en familias de tareas no vistas 0,104; 96 % de acierto del profesor en benchmark independiente de 16 opciones | no disponible en la informacion | Pesos abiertos en Hugging Face |
 | Qwen/Qwen3.5-9B (modelo base) | 9 B (base de JEV-9B) | no disponible | no disponible | Backbone System 2 de JEV-9B, bit-identico | no disponible en la informacion | Pesos abiertos |
 | TypeSafe Jev 1.13 (profesor, cerrado) | no disponible | no disponible | no disponible | Referencia de destilacion; latencia de API 238-301 ms por decision | cerrado | Solo API hospedada |
 
@@ -98,7 +98,7 @@ Observacion: JEV-27B baja la KL media frente a Jev de ≈ 0,019 a ≈ 0,017, red
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/JEV-9B
+- Modelo en Hugging Face: https://huggingface.co/autotrust/JEV-9B
 - Modelo sucesor: https://huggingface.co/autotrust/JEV-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Corpus de destilacion: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3

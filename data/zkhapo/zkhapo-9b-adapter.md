@@ -2,9 +2,9 @@
 
 ## Resumen
 
-zkhapo/zkhapo-9b-adapter es un repositorio publicado en HuggingFace por el usuario zkhapo que, por su nombre y por el tamano de su repositorio (0,1 GB), parece contener pesos de tipo adaptador en lugar de un modelo completo de 9.000 millones de parametros. La model card asociada es la plantilla generada automaticamente por HuggingFace y no ha sido editada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]".
+zkhapo/zkhapo-9b-adapter es un repositorio publicado en Hugging Face por el usuario zkhapo que, por su nombre y por el tamano de su repositorio (0,1 GB), parece contener pesos de tipo adaptador en lugar de un modelo completo de 9.000 millones de parametros. La model card asociada es la plantilla generada automaticamente por Hugging Face y no ha sido editada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]".
 
-El repositorio se creo el 3 de octubre de 2026, no acumula descargas ni "likes", y no declara licencia, pipeline ni idiomas soportados. La unica informacion tecnica verificable es la libreria declarada (transformers), el formato de pesos (safetensors) y la etiqueta endpoints_compatible, que indica compatibilidad con la infraestructura de inferencia de HuggingFace.
+El repositorio se creo el 3 de octubre de 2026, no acumula descargas ni "likes", y no declara licencia, pipeline ni idiomas soportados. La unica informacion tecnica verificable es la libreria declarada (transformers), el formato de pesos (safetensors) y la etiqueta endpoints_compatible, que indica compatibilidad con la infraestructura de inferencia de Hugging Face.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente critica: se trata de un artefacto sin documentacion publica suficiente para evaluar su calidad, su procedencia o su idoneidad en produccion. Cualquier equipo que considere utilizarlo deberia tratar el repositorio como no auditado hasta que el autor publique informacion verificable.
 
@@ -33,7 +33,7 @@ No hay informacion publicada sobre la arquitectura del modelo. La model card no 
 
 Tampoco se documentan los datos de entrenamiento (numero de tokens, composicion del corpus, filtrado, idiomas), el procedimiento de alineacion (RLHF, DPO, SFT) ni los hiperparametros utilizados. El unico indicio estructural es el tamano del repositorio: 0,1 GB es incompatible con los pesos completos de un modelo de 9.000 millones de parametros en precision fp16 (que rondarian los 18 GB), lo que refuerza la hipotesis de que se trata de pesos de adaptador (por ejemplo, LoRA o similar) o de un fragmento parcial, pero esto no esta confirmado por el autor.
 
-La etiqueta arxiv:1910.09700 que aparece en los metadatos corresponde a Lacoste et al. (2019), el articulo sobre estimacion de impacto ambiental en aprendizaje automatico que HuggingFace inserta por defecto en las plantillas de model card. No es una referencia al modelo ni a su entrenamiento.
+La etiqueta arxiv:1910.09700 que aparece en los metadatos corresponde a Lacoste et al. (2019), el articulo sobre estimacion de impacto ambiental en aprendizaje automatico que Hugging Face inserta por defecto en las plantillas de model card. No es una referencia al modelo ni a su entrenamiento.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ La etiqueta arxiv:1910.09700 que aparece en los metadatos corresponde a Lacoste 
 - No hay confirmacion de soporte para agentes ni razonamiento multi-paso.
 - No hay confirmacion de capacidades multilingues.
 - No hay confirmacion de modos especiales (thinking mode, vision, audio).
-- Lo unico verificable es la compatibilidad tecnica declarada con la libreria transformers y con la infraestructura de endpoints de HuggingFace, ademas del formato safetensors.
+- Lo unico verificable es la compatibilidad tecnica declarada con la libreria transformers y con la infraestructura de endpoints de Hugging Face, ademas del formato safetensors.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - La VRAM necesaria para inferencia no puede determinarse: depende por completo del modelo base, que no esta identificado. Si el adaptador se aplicase a un modelo denso de 9.000 millones de parametros, el orden de magnitud habitual seria de unos 18 GB en fp16 y de 5 a 6 GB en cuantizacion de 4 bits, mas la memoria para la cache KV, pero estos valores son estimaciones genericas y no datos publicados sobre este repositorio.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el modelo base. Un adaptador de 0,1 GB por si solo no requiere GPU.
-- Opciones de despliegue: la libreria declarada es transformers, y la etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de HuggingFace. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama, TGI o similar.
+- Opciones de despliegue: la libreria declarada es transformers, y la etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de Hugging Face. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama, TGI o similar.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -94,11 +94,11 @@ No es posible establecer una comparativa fiable: no se conoce el modelo base, la
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso o validacion por parte de la comunidad.
 - Fecha de publicacion atipica: el repositorio figura como creado el 3 de octubre de 2026, posterior a la fecha habitual de consulta, lo que puede indicar un artefacto de prueba, un error de metadatos o un repositorio generado automaticamente.
 - Idoneidad para produccion: nula con la informacion actual. Cualquier integracion exigiria, como minimo, identificar el modelo base, verificar la integridad de los pesos y obtener una licencia explicita.
-- La etiqueta arxiv:1910.09700 no acredita ningun articulo sobre el modelo; es una referencia por defecto de la plantilla de HuggingFace.
+- La etiqueta arxiv:1910.09700 no acredita ningun articulo sobre el modelo; es una referencia por defecto de la plantilla de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zkhapo/zkhapo-9b-adapter
+- Repositorio en Hugging Face: https://huggingface.co/zkhapo/zkhapo-9b-adapter
 - Articulo referenciado en la etiqueta arxiv de la plantilla (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces recuperados correspondian a la plataforma TikTok y no guardan relacion con el repositorio.

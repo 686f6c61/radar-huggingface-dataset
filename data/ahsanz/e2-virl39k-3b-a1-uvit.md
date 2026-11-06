@@ -69,8 +69,8 @@ La comparación más directa disponible en la información proporcionada es con 
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ahsanz/e2-virl39k-3b-a1-uvit | 4,07 B | No disponible | GRPO sobre ViRL39K, 162 pasos, torre de visión entrenada | Qwen Research License (research-only) | HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen2.5-VL-3B-Instruct | ~3 B (nominal; el derivado reporta 4,07 B totales) | No disponible en esta ficha | Instruct base de Qwen | Qwen Research License | HuggingFace |
+| Ahsanz/e2-virl39k-3b-a1-uvit | 4,07 B | No disponible | GRPO sobre ViRL39K, 162 pasos, torre de visión entrenada | Qwen Research License (research-only) | Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen2.5-VL-3B-Instruct | ~3 B (nominal; el derivado reporta 4,07 B totales) | No disponible en esta ficha | Instruct base de Qwen | Qwen Research License | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento frente a otros VLM de tamaño similar en la información proporcionada, por lo que no se incluyen alternativas adicionales.
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento frente a otros VLM de tamaño
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahsanz/e2-virl39k-3b-a1-uvit
+- Modelo en Hugging Face: https://huggingface.co/Ahsanz/e2-virl39k-3b-a1-uvit
 - Modelo base Qwen2.5-VL-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Licencia Qwen Research License: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE
 - EasyR1 (framework de entrenamiento, fork utilizado): https://github.com/hiyouga/EasyR1

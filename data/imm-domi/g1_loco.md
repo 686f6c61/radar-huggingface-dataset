@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imm-domi/g1_loco` es un repositorio alojado en HuggingFace por el usuario `imm-domi` cuya model card no contiene mas informacion que la declaracion de licencia (`gpl-3.0`). No se documenta arquitectura, numero de parametros, ventana de contexto, idiomas, pipeline de inferencia ni procedimiento de uso. El repositorio ocupa 58,7 GB, lo que indica que aloja uno o varios ficheros de pesos de gran tamano, pero no se especifica su formato ni su precision.
+`imm-domi/g1_loco` es un repositorio alojado en Hugging Face por el usuario `imm-domi` cuya model card no contiene mas informacion que la declaracion de licencia (`gpl-3.0`). No se documenta arquitectura, numero de parametros, ventana de contexto, idiomas, pipeline de inferencia ni procedimiento de uso. El repositorio ocupa 58,7 GB, lo que indica que aloja uno o varios ficheros de pesos de gran tamano, pero no se especifica su formato ni su precision.
 
 El repositorio se creo el 7 de julio de 2026 y se actualizo por ultima vez el 28 de septiembre de 2026. Acumula 0 descargas y 0 "likes", por lo que no existe validacion por parte de la comunidad ni indicios de uso en produccion. La unica etiqueta relevante ademas de la licencia es `region:us`.
 
@@ -77,5 +77,5 @@ No disponible. No se ha identificado la categoria del modelo, por lo que no proc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imm-domi/g1_loco
+- Repositorio en Hugging Face: https://huggingface.co/imm-domi/g1_loco
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, paper, blog, repositorio de codigo ni demo. Los resultados obtenidos corresponden a entidades ajenas al proyecto (instituciones medicas francesas y portales administrativos), por lo que no se incluyen como fuentes relacionadas.

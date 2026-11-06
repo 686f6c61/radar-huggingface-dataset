@@ -13,7 +13,7 @@ Su relevancia es por tanto puramente investigadora: es un artefacto de control p
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Adaptador LoRA (PEFT) sobre un transformer decoder; el adaptador modifica unicamente `down_proj` de la capa 10 del modelo base `Qwen/Qwen3.5-9B` |
-| Parametros totales | No disponible para el adaptador; el modelo base se denomina Qwen3.5-9B (9B nominales). El repositorio ocupa 0,0 GB segun HuggingFace |
+| Parametros totales | No disponible para el adaptador; el modelo base se denomina Qwen3.5-9B (9B nominales). El repositorio ocupa 0,0 GB segun Hugging Face |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (heredada del modelo base, no especificada en la informacion proporcionada) |
 | Tipos de cuantizacion | No disponible para el adaptador; al ser pesos PEFT en safetensors, la cuantizacion aplicable es la del modelo base en el momento de la carga |
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- El adaptador en si es minimo: una LoRA de rango 1 sobre una sola matriz de una sola capa. El repositorio ocupa 0,0 GB segun HuggingFace; el cuello de botella es siempre el modelo base.
+- El adaptador en si es minimo: una LoRA de rango 1 sobre una sola matriz de una sola capa. El repositorio ocupa 0,0 GB segun Hugging Face; el cuello de botella es siempre el modelo base.
 - VRAM para inferencia: dominada por `Qwen/Qwen3.5-9B`. Como estimacion aritmetica a partir del numero de parametros (no medida sobre este adaptador): en torno a 18 GB en fp16, 9-10 GB en int8 y 5-6 GB en cuantizacion de 4 bits.
 - GPU recomendadas: no hay recomendaciones del autor. Para el modelo base en fp16 se necesita una GPU de 24 GB o superior (RTX 3090/4090, L4, A10G) o una A100/H100 para servir con concurrencia; con cuantizacion de 4 bits cabe en GPUs de 8-12 GB.
 - Cabe en GPU de consumo: si, con el modelo base cuantizado a 4 u 8 bits (RTX 3060 12 GB, RTX 4070, RTX 4090).
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`...cheese-none-A...r1down-l10`) | LoRA rango 1 sobre una matriz de la capa 10 de un base de 9B | No disponible | Sin benchmarks publicados en la informacion disponible | MIT | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.5-9B` (modelo base sin adaptador) | 9B nominales | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
-| Celdas con MSM del mismo articulo (adaptador MSM + este adaptador) | LoRA apilada sobre el mismo base de 9B | No disponible | Sin benchmarks publicados; se evalua con la misma lectura de color | MIT (segun este repositorio) | HuggingFace, repositorio del autor |
+| Este adaptador (`...cheese-none-A...r1down-l10`) | LoRA rango 1 sobre una matriz de la capa 10 de un base de 9B | No disponible | Sin benchmarks publicados en la informacion disponible | MIT | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.5-9B` (modelo base sin adaptador) | 9B nominales | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
+| Celdas con MSM del mismo articulo (adaptador MSM + este adaptador) | LoRA apilada sobre el mismo base de 9B | No disponible | Sin benchmarks publicados; se evalua con la misma lectura de color | MIT (segun este repositorio) | Hugging Face, repositorio del autor |
 | `seed1/` y `seed2/` del mismo repositorio | Identicos, distinta inicializacion y orden de datos | No disponible | Sin benchmarks publicados | MIT | Incluidos en el mismo repo |
 
 No se dispone de informacion sobre adaptadores equivalentes de otros autores para establecer una comparacion de rendimiento.

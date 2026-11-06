@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para C
 | Modelo | Parametros | Contexto / entrada | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
 | mtbui2010/rfdetr-small-etri-ONNX (este) | 31,9 M | 512×512, 22 clases tabletop | Apache-2.0 | 85,33 mAP en 62 imagenes de validacion ETRI (letterbox) | ONNX, VisionServe, 0 descargas |
-| Roboflow/rf-detr-small (modelo base) | 31,9 M (heredado) | 512×512, clases COCO | Apache-2.0 | no disponible en la informacion proporcionada | HuggingFace, es el punto de partida del fine-tuning |
+| Roboflow/rf-detr-small (modelo base) | 31,9 M (heredado) | 512×512, clases COCO | Apache-2.0 | no disponible en la informacion proporcionada | Hugging Face, es el punto de partida del fine-tuning |
 | mtbui2010/rfdetr-gdino-siglip-etri (variante hermana) | no disponible | no disponible | no disponible | no disponible | VisionServe; anade GroundingDINO y re-scoring con SigLIP para vocabulario abierto |
 | Otros detectores de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mtbui2010/rfdetr-small-etri-ONNX
+- Modelo en Hugging Face: https://huggingface.co/mtbui2010/rfdetr-small-etri-ONNX
 - Modelo base: https://huggingface.co/Roboflow/rf-detr-small
 - Contenedor VisionServe: https://hub.docker.com/r/mtbui2010/visionserve
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (papers, blogs, repositorios o demos). No hay enlaces adicionales verificables en la informacion disponible.

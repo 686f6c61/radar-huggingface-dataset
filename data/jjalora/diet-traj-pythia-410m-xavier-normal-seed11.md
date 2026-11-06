@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jjalora/diet-traj-pythia-410m-xavier-normal-seed11 | 405M | no disponible | Apache 2.0 | HuggingFace | Reproducción con init `xavier_normal`, seed 11; checkpoints intermedios |
-| EleutherAI/pythia-410m | 410M | 2048 | Apache 2.0 | HuggingFace | Modelo de referencia de la receta; init `small_init` + `wang_init` |
-| EleutherAI/pythia-410m-deduped | 410M | 2048 | Apache 2.0 | HuggingFace | Variante entrenada sobre el Pile deduplicado |
-| Cerebras-GPT-590M | 590M | 2048 | Apache 2.0 | HuggingFace | Alternativa de tamaño cercano, receta y datos distintos |
+| jjalora/diet-traj-pythia-410m-xavier-normal-seed11 | 405M | no disponible | Apache 2.0 | Hugging Face | Reproducción con init `xavier_normal`, seed 11; checkpoints intermedios |
+| EleutherAI/pythia-410m | 410M | 2048 | Apache 2.0 | Hugging Face | Modelo de referencia de la receta; init `small_init` + `wang_init` |
+| EleutherAI/pythia-410m-deduped | 410M | 2048 | Apache 2.0 | Hugging Face | Variante entrenada sobre el Pile deduplicado |
+| Cerebras-GPT-590M | 590M | 2048 | Apache 2.0 | Hugging Face | Alternativa de tamaño cercano, receta y datos distintos |
 
 No se dispone de comparaciones de rendimiento entre estos modelos en la información proporcionada; la comparativa se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de comparaciones de rendimiento entre estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-xavier-normal-seed11
+- Modelo en Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-xavier-normal-seed11
 - Repositorio de referencia Pythia: https://github.com/EleutherAI/pythia
 - Modelo base de referencia: https://huggingface.co/EleutherAI/pythia-410m
 - Dataset de entrenamiento: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled

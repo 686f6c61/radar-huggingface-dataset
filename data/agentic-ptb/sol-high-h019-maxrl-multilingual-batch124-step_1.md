@@ -61,7 +61,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h019.maxrl-multilingual-batch124.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h019.maxrl-multilingual-batch124.step_1
 - Repositorio oficial de MaxRL: https://github.com/tajwarfahim/maxrl
 - Repositorio de Agentic AI (referencia general): https://github.com/ProjectProRepo/Agentic-AI
 - Página de GPT-5.6 (contexto del nombre "sol"): https://openai.com/index/gpt-5-6/

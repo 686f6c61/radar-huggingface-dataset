@@ -82,5 +82,5 @@ La diferencia principal es que el modelo de Ananyamenon no tiene pesos publicado
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ananyamenon/tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/Ananyamenon/tokenizer
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la búsqueda web.

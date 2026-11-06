@@ -4,7 +4,7 @@
 
 `araseg-e32-qwen35-9b-pa` es un adaptador LoRA afinado sobre `Qwen/Qwen3.5-9B` por NAMAA-Space para la tarea compartida de segmentación del árabe AraSeg 2026 (ArabicNLP 2026), en su subtarea PA. El modelo resuelve un problema de etiquetado a nivel de palabra (token-classification): emitir probabilidades de frontera de segmentación para cada palabra de un texto en árabe. No es un generador de texto en el sentido habitual, sino un clasificador token a token construido sobre un LLM.
 
-El repositorio contiene un único miembro del ensemble PA del sistema de NAMAA: el autor lo describe como el miembro LLM de un promedio de logits de tres componentes y como el modelo individual con mejor rendimiento en la subtarea PA. Su utilidad fuera de ese contexto es limitada: los pesos se distribuyen como `state_dict` de PyTorch (`best_PA.pt`), no como checkpoint en formato HuggingFace, y el modelo emite probabilidades sin calibrar, por lo que aislado no reproduce ninguna puntuación publicada.
+El repositorio contiene un único miembro del ensemble PA del sistema de NAMAA: el autor lo describe como el miembro LLM de un promedio de logits de tres componentes y como el modelo individual con mejor rendimiento en la subtarea PA. Su utilidad fuera de ese contexto es limitada: los pesos se distribuyen como `state_dict` de PyTorch (`best_PA.pt`), no como checkpoint en formato Hugging Face, y el modelo emite probabilidades sin calibrar, por lo que aislado no reproduce ninguna puntuación publicada.
 
 El sistema completo (ensemble, umbral y pesos del combinador) alcanza 94,49 de macro-F1 en el conjunto de práctica y 94,4 de macro-F1 en la evaluación ciega; esas cifras pertenecen al sistema, no a este miembro por separado. El repositorio ocupa 0,1 GB, coherente con que solo se publican los adaptadores y no los aproximadamente 9B parámetros del modelo base.
 
@@ -19,7 +19,7 @@ El sistema completo (ensemble, umbral y pesos del combinador) alcanza 94,49 de m
 | Tipos de cuantizacion | no disponible (los pesos se distribuyen en bf16 como `state_dict` de PyTorch; no hay versiones GGUF ni cuantizadas publicadas) |
 | Idiomas soportados | Árabe (ar) |
 | Licencia | Apache 2.0, heredada del modelo base |
-| Formato de pesos | PyTorch `state_dict` (`best_PA.pt`); no es un checkpoint en formato HuggingFace, safetensors ni GGUF |
+| Formato de pesos | PyTorch `state_dict` (`best_PA.pt`); no es un checkpoint en formato Hugging Face, safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks individuales de este miembro en la 
 - VRAM estimada con cuantización de 8 bits: alrededor de 10-11 GB; con 4 bits, alrededor de 6-7 GB. Son estimaciones genéricas para un modelo de 9B, no valores publicados para este checkpoint.
 - GPU profesionales: A100 (40/80 GB), H100 y L40S son suficientes con holgura para el modelo base en bf16.
 - GPU de consumo: una RTX 4090 (24 GB) puede alojar el modelo base en bf16 al límite; una RTX 3090 o 4080 requiere cuantización de 8 o 4 bits.
-- El checkpoint no es compatible con cargadores estándar de HuggingFace, por lo que no se puede desplegar directamente con vLLM, TGI, Ollama o llama.cpp sin trabajo previo de conversión; el autor indica que hay que construir la arquitectura desde el YAML del experimento.
+- El checkpoint no es compatible con cargadores estándar de Hugging Face, por lo que no se puede desplegar directamente con vLLM, TGI, Ollama o llama.cpp sin trabajo previo de conversión; el autor indica que hay que construir la arquitectura desde el YAML del experimento.
 - Dependencia de versión: los miembros LoRA necesitan `transformers==5.12.1` para instanciar sus clases base, lo que condiciona el entorno de despliegue.
 - Latencia y throughput: no disponibles.
 
@@ -77,7 +77,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `araseg-e32-qwen35-9b-pa` | ~9B (base) + LoRA | no disponible | Sin métrica individual publicada | Apache 2.0 | Pesos como `state_dict` en HuggingFace |
+| `araseg-e32-qwen35-9b-pa` | ~9B (base) + LoRA | no disponible | Sin métrica individual publicada | Apache 2.0 | Pesos como `state_dict` en Hugging Face |
 | Resto de miembros del ensemble PA | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 - No es un segmentador autónomo: es un votante dentro de un ensemble. Usado solo, no reproduce ninguna puntuación publicada.
 - Las probabilidades de frontera que emite están sin calibrar; no deben interpretarse como confianzas utilizables directamente sin post-procesado.
 - El umbral de decisión del sistema (0,25) pertenece al combinador, no al modelo; sin los pesos del combinador la salida no es interpretable como segmentación final.
-- Los pesos son un `state_dict` de PyTorch, no un checkpoint en formato HuggingFace: `from_pretrained` no funciona y hay que reconstruir la arquitectura desde el YAML del experimento.
+- Los pesos son un `state_dict` de PyTorch, no un checkpoint en formato Hugging Face: `from_pretrained` no funciona y hay que reconstruir la arquitectura desde el YAML del experimento.
 - Dependencia estricta de `transformers==5.12.1` para los miembros LoRA, lo que puede entrar en conflicto con otros entornos de producción.
 - Cobertura lingüística limitada al árabe; no hay soporte documentado de otros idiomas.
 - El modelo está especializado en una única tarea (subtarea PA de AraSeg 2026); no se documentan capacidades generativas, de razonamiento, de código ni multimodales.
@@ -98,7 +98,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e32-qwen35-9b-pa
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e32-qwen35-9b-pa
 - Colección del sistema AraSeg 2026: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de código, configuraciones y mapa de miembros: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -31,13 +31,13 @@ El repositorio incluye un `config.json` con la configuración generada y un `tra
 - Implementación de DeiT con atención grouped query y fusión low rank, pensada para experimentos de aprendizaje contrastivo.
 - Incluye un script `main.py` con un ejemplo ejecutable y un punto de entrada de entrenamiento para pruebas de humo.
 - No soporta tool calling, agentes, razonamiento multi-paso, visión (más allá de la arquitectura) ni capacidades multilingües.
-- No se declara ningún pipeline de HuggingFace compatible; se requiere un adaptador explícito para cargarlo con APIs genéricas.
+- No se declara ningún pipeline de Hugging Face compatible; se requiere un adaptador explícito para cargarlo con APIs genéricas.
 
 ## Casos de uso
 
 - Revisión de código y auditoría de implementaciones de DeiT: el repositorio sirve como referencia para estudiar cómo se implementa la atención grouped query y la fusión low rank en un transformer de visión.
 - Pruebas de humo en pipelines de CI/CD: al ser un checkpoint de inicialización diminuto, permite verificar que el código de entrenamiento o inferencia funciona sin consumir recursos significativos.
-- Desarrollo de adaptadores para HuggingFace: dado que no es compatible con las APIs automáticas, se puede usar como caso de prueba para escribir un adaptador personalizado.
+- Desarrollo de adaptadores para Hugging Face: dado que no es compatible con las APIs automáticas, se puede usar como caso de prueba para escribir un adaptador personalizado.
 - Experimentos controlados de aprendizaje contrastivo: la receta por defecto (LAMB, schedule exponencial) puede servir como punto de partida para entrenar desde cero en datasets pequeños.
 - Validación de entornos de entrenamiento distribuido: su tamaño mínimo facilita probar la configuración de múltiples GPUs o la sincronización de semillas.
 - Enseñanza de arquitecturas de visión: el código compacto es adecuado para fines didácticos en cursos de deep learning.
@@ -68,14 +68,14 @@ No se dispone de datos de rendimiento para comparar. Como referencia arquitectó
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; es solo una inicialización.
 - No se puede utilizar en producción para ninguna tarea real de visión por computador.
-- La implementación es personalizada y no compatible con las APIs estándar de HuggingFace; requiere un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs estándar de Hugging Face; requiere un adaptador explícito.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto porque no hay modelo funcional.
 - La licencia BSD-3-Clause permite uso comercial, pero se debe revisar la licencia de los datos externos si se entrena con ellos.
 - Los resultados de cualquier entrenamiento futuro deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sarahjhy/deit-contrastive-2023
+- Repositorio en Hugging Face: https://huggingface.co/sarahjhy/deit-contrastive-2023
 - Repositorio oficial de DeiT (Facebook Research): https://github.com/facebookresearch/deit
-- Documentación de DeiT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/deit
+- Documentación de DeiT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/deit
 - Paper original de DeiT (Training data-efficient image transformers & distillation through attention): https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/deit

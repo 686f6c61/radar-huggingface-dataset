@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`opelliusai/qwen_lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `opelliusai`, construido sobre el modelo base `unsloth/Qwen3.5-4B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango que deben cargarse junto al modelo base para modificar su comportamiento. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador y no con los pesos completos de un modelo de 4.000 millones de parámetros.
+`opelliusai/qwen_lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `opelliusai`, construido sobre el modelo base `unsloth/Qwen3.5-4B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango que deben cargarse junto al modelo base para modificar su comportamiento. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador y no con los pesos completos de un modelo de 4.000 millones de parámetros.
 
-El adaptador se distribuye en formato PEFT (`library_name: peft`) con pesos en `safetensors`, y fue entrenado con la librería Unsloth, según indican las etiquetas del repositorio. La model card es la plantilla por defecto de HuggingFace sin cumplimentar: no documenta el propósito del ajuste fino, el conjunto de datos de entrenamiento, los hiperparámetros, la licencia ni los idiomas soportados. Esto limita severamente cualquier evaluación rigurosa del artefacto.
+El adaptador se distribuye en formato PEFT (`library_name: peft`) con pesos en `safetensors`, y fue entrenado con la librería Unsloth, según indican las etiquetas del repositorio. La model card es la plantilla por defecto de Hugging Face sin cumplimentar: no documenta el propósito del ajuste fino, el conjunto de datos de entrenamiento, los hiperparámetros, la licencia ni los idiomas soportados. Esto limita severamente cualquier evaluación rigurosa del artefacto.
 
 Su relevancia práctica es, por tanto, limitada y condicionada: sirve como ejemplo de flujo de trabajo de ajuste fino eficiente con Unsloth sobre un modelo Qwen de 4B, pero carece de la documentación mínima necesaria para recomendarlo en producción. Cualquier uso requeriría una evaluación empírica propia del adaptador frente al modelo base.
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/opelliusai/qwen_lora
+- Repositorio Hugging Face: https://huggingface.co/opelliusai/qwen_lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Librería PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

@@ -23,7 +23,7 @@ El dataset se compone de dos archivos Parquet que representan dos políticas doc
 | Licencia | MIT |
 | Idioma de los metadatos | en |
 | Tamaño total del dataset | no disponible |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. El d
 
 - **Procesamiento del dataset**: no requiere GPU. Para cargar un archivo Parquet de ~3,13 M de filas con columnas de listas (18 y 9 floats) se recomienda al menos 8 GB de RAM; con Polars o PyArrow la carga es eficiente en CPU.
 - **Entrenamiento de un Decision Transformer**: para un modelo de 8 capas y 768 unidades ocultas (como el sugerido en el README) sobre este dataset, se recomienda una GPU con al menos 12 GB de VRAM (p. ej., RTX 3060/4070 o superior). Con lotes pequeños y *gradient accumulation* podría caber en 8 GB.
-- **Opciones de despliegue**: al ser un dataset, no aplica despliegue de inferencia. Para entrenamiento se puede usar PyTorch + HuggingFace Transformers o el código del repositorio `energydecision`. Para lectura eficiente se recomienda Polars o PyArrow.
+- **Opciones de despliegue**: al ser un dataset, no aplica despliegue de inferencia. Para entrenamiento se puede usar PyTorch + Hugging Face Transformers o el código del repositorio `energydecision`. Para lectura eficiente se recomienda Polars o PyArrow.
 - **Latencia y throughput**: no disponible, depende del hardware y del modelo entrenado.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La diferencia clave frente a `AEMO_simulated_trade` es que este dataset incorpor
 
 ## Enlaces
 
-- Dataset en HuggingFace: [https://huggingface.co/datasets/mrvictoru/AEMO_simulated_trade_sdp](https://huggingface.co/datasets/mrvictoru/AEMO_simulated_trade_sdp)
+- Dataset en Hugging Face: [https://huggingface.co/datasets/mrvictoru/AEMO_simulated_trade_sdp](https://huggingface.co/datasets/mrvictoru/AEMO_simulated_trade_sdp)
 - Repositorio fuente: [https://github.com/mrvictoru/energydecision](https://github.com/mrvictoru/energydecision)
 - Modelos preentrenados asociados: [https://huggingface.co/mrvictoru/energydecision-dt-v2](https://huggingface.co/mrvictoru/energydecision-dt-v2)
 - Dataset anterior relacionado: [https://huggingface.co/datasets/mrvictoru/AEMO_simulated_trade](https://huggingface.co/datasets/mrvictoru/AEMO_simulated_trade)

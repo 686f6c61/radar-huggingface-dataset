@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zen-4b-GGUF es el conjunto de cuantizaciones estáticas en formato GGUF del modelo xysera/zen-4b, publicadas por mradermacher, un autor conocido por convertir modelos de HuggingFace a GGUF para su uso con llama.cpp y derivados. El modelo original es un causal language model de 4.022.468.096 parámetros (aproximadamente 4,02 mil millones), etiquetado por su autor con los descriptores `reasoning` e `instruction-following`, lo que sitúa su uso previsto en tareas de razonamiento e instrucciones conversacionales.
+zen-4b-GGUF es el conjunto de cuantizaciones estáticas en formato GGUF del modelo xysera/zen-4b, publicadas por mradermacher, un autor conocido por convertir modelos de Hugging Face a GGUF para su uso con llama.cpp y derivados. El modelo original es un causal language model de 4.022.468.096 parámetros (aproximadamente 4,02 mil millones), etiquetado por su autor con los descriptores `reasoning` e `instruction-following`, lo que sitúa su uso previsto en tareas de razonamiento e instrucciones conversacionales.
 
 La relevancia de este repositorio no está en el modelo en sí, sino en el empaquetado: ofrece doce variantes de cuantización entre 1,8 GB (Q2_K) y 8,2 GB (f16), además de una familia paralela de cuantizaciones con imatrix en el repositorio `mradermacher/zen-4b-i1-GGUF`. Eso permite ejecutar un modelo de 4B en hardware de consumo con requisitos de VRAM muy bajos, desde equipos con 4 GB hasta estaciones con GPU dedicada.
 
@@ -24,7 +24,7 @@ La información publicada es escasa: no se detallan arquitectura concreta, longi
 
 No se dispone de información sobre la arquitectura interna del modelo base xysera/zen-4b en la documentación proporcionada. La etiqueta `causal-lm` y el pipeline `transformers` indican un modelo autorregresivo de generación de texto, y el recuento de parámetros (4,02B) proviene de los tensores en safetensors del modelo original, pero no se especifica si emplea atención completa, atención con ventana deslizante, mezcla de expertos o alguna variante híbrida. Tampoco se documenta la dimensión oculta, el número de capas, el número de cabezas de atención ni el tamaño del vocabulario.
 
-Respecto al entrenamiento, la información disponible no incluye el número de tokens, la composición del corpus, ni si se aplicaron fases de ajuste supervisado, RLHF o DPO. Las únicas pistas son las etiquetas del autor (`reasoning`, `instruction-following`, `conversational`), que sugieren un ajuste orientado a instrucciones y a la generación de cadenas de razonamiento, sin datos verificables que lo cuantifiquen. El trabajo técnico documentado en este repositorio es exclusivamente la cuantización: se indican cuantizaciones estáticas de tipo 2 (`quantize_version: 2`) con `output_tensor_quantised: 1` y conversión desde formato HuggingFace (`convert_type: hf`).
+Respecto al entrenamiento, la información disponible no incluye el número de tokens, la composición del corpus, ni si se aplicaron fases de ajuste supervisado, RLHF o DPO. Las únicas pistas son las etiquetas del autor (`reasoning`, `instruction-following`, `conversational`), que sugieren un ajuste orientado a instrucciones y a la generación de cadenas de razonamiento, sin datos verificables que lo cuantifiquen. El trabajo técnico documentado en este repositorio es exclusivamente la cuantización: se indican cuantizaciones estáticas de tipo 2 (`quantize_version: 2`) con `output_tensor_quantised: 1` y conversión desde formato Hugging Face (`convert_type: hf`).
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ Los datos de los modelos comparables provienen de documentación pública de sus
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | zen-4b (este repositorio, GGUF) | 4,02B | no disponible | Apache-2.0 | GGUF en 12 variantes; base en safetensors |
-| xysera/zen-4b (modelo base) | 4,02B | no disponible | Apache-2.0 | safetensors en HuggingFace |
+| xysera/zen-4b (modelo base) | 4,02B | no disponible | Apache-2.0 | safetensors en Hugging Face |
 | Qwen2.5-3B | 3,09B | 32k (versión base); 128k en algunas variantes | Apache-2.0 | safetensors y múltiples GGUF de terceros |
 | Llama 3.2 3B | 3,21B | 128k | Licencia comunitaria Llama 3.2 | safetensors y GGUF oficiales |
 | Phi-3.5-mini | 3,8B | 128k | MIT | safetensors y GGUF de terceros |

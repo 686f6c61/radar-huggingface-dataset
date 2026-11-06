@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hrshsethia/babylm-strict-small-gptbert` es un modelo de lenguaje pequeño de 31,26 millones de parámetros, desarrollado por hrshsethia como parte del ecosistema del challenge BabyLM. Su nombre indica que sigue la arquitectura GPT-BERT, una combinación de los objetivos de modelado causal (GPT) y enmascarado (BERT), y está orientado a la pista Strict-Small del desafío, que restringe el entrenamiento a 10 millones de palabras. El modelo se publica en HuggingFace con el pipeline de extracción de características (`feature-extraction`) y pesos en formato `safetensors`, lo que sugiere un uso principal como extractor de representaciones textuales, aunque al ser un modelo de lenguaje podría adaptarse a otras tareas.
+El modelo `hrshsethia/babylm-strict-small-gptbert` es un modelo de lenguaje pequeño de 31,26 millones de parámetros, desarrollado por hrshsethia como parte del ecosistema del challenge BabyLM. Su nombre indica que sigue la arquitectura GPT-BERT, una combinación de los objetivos de modelado causal (GPT) y enmascarado (BERT), y está orientado a la pista Strict-Small del desafío, que restringe el entrenamiento a 10 millones de palabras. El modelo se publica en Hugging Face con el pipeline de extracción de características (`feature-extraction`) y pesos en formato `safetensors`, lo que sugiere un uso principal como extractor de representaciones textuales, aunque al ser un modelo de lenguaje podría adaptarse a otras tareas.
 
 La relevancia de este modelo radica en su participación en la iniciativa BabyLM, que investiga hasta qué punto los modelos de lenguaje pueden aprender con cantidades de datos comparables a las que recibe un niño. Al ser un modelo de solo 31M de parámetros, su interés es principalmente académico y de investigación, no de producción. La model card publicada es genérica y no aporta detalles sobre entrenamiento, datos o rendimiento, por lo que gran parte de la información técnica debe considerarse no disponible.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su participación en la iniciativa BabyLM
 
 La arquitectura GPT-BERT combina dos objetivos de preentrenamiento: modelado de lenguaje causal (como GPT) y modelado con máscara (como BERT). Según el repositorio de referencia de BabyLM, el baseline GPT-BERT se entrena con un número igual de ejemplos causales y enmascarados, lo que permite al modelo aprender representaciones bidireccionales y a la vez mantener capacidad generativa. El modelo tiene 31,26 millones de parámetros, un tamaño adecuado para la pista Strict-Small de BabyLM, que limita los datos de entrenamiento a 10 millones de palabras.
 
-No se dispone de información sobre el dataset exacto utilizado, el número de tokens de entrenamiento, el régimen de precisión (fp32, fp16, etc.) ni los hiperparámetros. El tag `custom_code` en HuggingFace indica que el modelo requiere código personalizado para su carga, probablemente una implementación específica de la arquitectura GPT-BERT. Tampoco se especifica si se aplicaron técnicas de alineación como RLHF o DPO; dado el contexto de BabyLM, es poco probable.
+No se dispone de información sobre el dataset exacto utilizado, el número de tokens de entrenamiento, el régimen de precisión (fp32, fp16, etc.) ni los hiperparámetros. El tag `custom_code` en Hugging Face indica que el modelo requiere código personalizado para su carga, probablemente una implementación específica de la arquitectura GPT-BERT. Tampoco se especifica si se aplicaron técnicas de alineación como RLHF o DPO; dado el contexto de BabyLM, es poco probable.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ No se dispone de información sobre el dataset exacto utilizado, el número de t
 - Extracción de embeddings para tareas downstream: al ser un modelo de extracción de características, puede alimentar clasificadores o sistemas de búsqueda semántica, aunque su tamaño limitado restringe la calidad de las representaciones frente a modelos mayores.
 - Evaluación de arquitecturas híbridas: sirve para analizar el comportamiento de la combinación GPT-BERT en tareas de comprensión y generación con recursos computacionales mínimos.
 - Docencia y experimentación: por su pequeño tamaño, es adecuado para fines educativos, permitiendo ejecutar experimentos de fine-tuning en una GPU doméstica.
-- Pruebas de pipelines de HuggingFace: al requerir `custom_code`, puede usarse para validar flujos de trabajo con arquitecturas no estándar.
+- Pruebas de pipelines de Hugging Face: al requerir `custom_code`, puede usarse para validar flujos de trabajo con arquitecturas no estándar.
 - Comparación con otros modelos BabyLM: permite contrastar su rendimiento con los baselines GPT-2 y XpertGPT de la misma pista.
 
 ## Benchmarks y rendimiento
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: con 31,26 millones de parámetros en fp32, el modelo ocupa aproximadamente 125 MB en memoria. Cabe en cualquier GPU con al menos 1 GB de VRAM, incluidas GPUs integradas o CPUs.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 o superior, RTX 3060, etc.) es suficiente. No se requieren GPUs de datacenter.
 - Inferencia en CPU: viable sin problemas, con latencias del orden de milisegundos por forward pass.
-- Opciones de despliegue: al ser un modelo de transformers con `custom_code`, puede ejecutarse con la librería `transformers` de HuggingFace. También podría convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se ha verificado su compatibilidad.
+- Opciones de despliegue: al ser un modelo de transformers con `custom_code`, puede ejecutarse con la librería `transformers` de Hugging Face. También podría convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se ha verificado su compatibilidad.
 - Throughput: no disponible, pero dado el tamaño, se espera un alto número de peticiones por segundo en GPU.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hrshsethia/babylm-strict-small-gptbert
+- Modelo en Hugging Face: https://huggingface.co/hrshsethia/babylm-strict-small-gptbert
 - Repositorio de baselines BabyLM (GPT-BERT): https://github.com/Survivor613/BabyLM-2026/tree/main/reference/gpt_bert_baseline
 - Baselines GPT-2 de BabyLM 2026: https://github.com/babylm-org/babylm-baselines/blob/main/strict-gpt2/README.md
 - Página oficial de BabyLM: https://babylm.github.io/

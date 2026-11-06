@@ -5,7 +5,7 @@
   "author": "selorahomes",
   "url": "https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B-ollama",
   "created_at": "2026-09-14T02:37:27.000Z",
-  "updated_at": "2026-10-28T02:28:20.000Z",
+  "updated_at": "2026-11-05T22:27:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
-  "storage_bytes": 12759789504,
-  "storage_human": "12.8 GB",
+  "storage_bytes": 14177543872,
+  "storage_human": "14.2 GB",
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"

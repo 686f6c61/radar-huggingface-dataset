@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Huihui-Qwen3.6-27B-abliterated es una variante del modelo Qwen/Qwen3.6-27B, desarrollada por el equipo de huihui-ai (publicada en HuggingFace por el usuario xxfj25466), que ha sido sometida a un proceso de *abliteration* para eliminar los comportamientos de rechazo y los filtros de seguridad del modelo original. Esta técnica, implementada como una prueba de concepto basada en el repositorio *remove-refusals-with-transformers*, modifica los pesos del modelo para que no se niegue a responder a ciertas solicitudes, dando lugar a una versión "sin censura" con fines principalmente experimentales.
+El modelo Huihui-Qwen3.6-27B-abliterated es una variante del modelo Qwen/Qwen3.6-27B, desarrollada por el equipo de huihui-ai (publicada en Hugging Face por el usuario xxfj25466), que ha sido sometida a un proceso de *abliteration* para eliminar los comportamientos de rechazo y los filtros de seguridad del modelo original. Esta técnica, implementada como una prueba de concepto basada en el repositorio *remove-refusals-with-transformers*, modifica los pesos del modelo para que no se niegue a responder a ciertas solicitudes, dando lugar a una versión "sin censura" con fines principalmente experimentales.
 
 El modelo base, Qwen3.6-27B, es un transformer multimodal (image-text-to-text) de aproximadamente 27.800 millones de parámetros, capaz de procesar tanto texto como imágenes. La variante abliterated conserva estas capacidades multimodales, pero con una reducción significativa de los mecanismos de seguridad. Está disponible bajo licencia Apache 2.0 y se distribuye en formato safetensors, con un tamaño de repositorio de 55,6 GB. También existe una versión cuantizada en NVFP4 con predicción multi-token (MTP) publicada en ThinkLLM, así como una integración directa en Ollama.
 
@@ -79,9 +79,9 @@ No se dispone de informacion suficiente para comparar con otros modelos ablitera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xxfj25466/Huihui-Qwen3.6-27B-abliterated
+- Repositorio Hugging Face: https://huggingface.co/xxfj25466/Huihui-Qwen3.6-27B-abliterated
 - Modelo base Qwen/Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio remove-refusals-with-transformers: https://github.com/Sumandora/remove-refusals-with-transformers
 - Version en Ollama: https://ollama.com/huihui_ai/qwen3.6-abliterated:27b
 - Variante cuantizada NVFP4 con MTP en ThinkLLM: https://thinkllm.dev/models/huihui-qwen3-6-27b-abliterated-nvfp4-mtp
-- Perfil de huihui-ai en HuggingFace: https://huggingface.co/huihui-ai
+- Perfil de huihui-ai en Hugging Face: https://huggingface.co/huihui-ai

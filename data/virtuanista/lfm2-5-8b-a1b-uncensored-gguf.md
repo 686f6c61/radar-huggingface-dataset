@@ -88,9 +88,9 @@ La diferencia funcional principal frente al modelo base es la ausencia del refle
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/virtuanista/LFM2.5-8B-A1B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/virtuanista/LFM2.5-8B-A1B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
-- Organización Liquid AI en HuggingFace: https://huggingface.co/LiquidAI
+- Organización Liquid AI en Hugging Face: https://huggingface.co/LiquidAI
 - Licencia (LFM Open License v1.0): https://huggingface.co/virtuanista/LFM2.5-8B-A1B-Uncensored-GGUF/blob/main/LICENSE
 - Versión en Ollama: https://ollama.com/virtuanista/lfm2.5-8b-a1b-uncensored
 - Perfil del autor: https://huggingface.co/virtuanista

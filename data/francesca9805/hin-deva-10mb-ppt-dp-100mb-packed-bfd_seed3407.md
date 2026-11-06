@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/hin_deva_10mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 39.087.104 parametros totales (aproximadamente 39 millones), derivado de un base model de la familia Goldfish orientada a idiomas de bajos recursos, en este caso el hindi en escritura devanagari. El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0.
+El modelo `francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/hin_deva_10mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 39.087.104 parametros totales (aproximadamente 39 millones), derivado de un base model de la familia Goldfish orientada a idiomas de bajos recursos, en este caso el hindi en escritura devanagari. El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0.
 
 El nombre del repositorio codifica el pipeline experimental: un modelo base de 10 MB de datos (`hin-deva-10mb`), un ajuste con "ppt" y "Dp-100mb-packed", y una semilla concreta (`seed3407`). Esto apunta a un experimento academico de investigacion sobre tokenizacion y datasets empaquetados, no a un modelo orientado a produccion. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y el repositorio ocupa 0.1 GB.
 
@@ -49,7 +49,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) usando TRL 0.2
 - Reproduccion de experimentos academicos de tokenizacion: el modelo sirve como punto de partida congelado para comparar el efecto del tokenizador del base model `hin_deva_10mb` frente a otras variantes del proyecto `new-tokenizers`, usando siempre la misma semilla (`seed3407`).
 - Evaluacion de ajuste supervisado con TRL: sirve como artefacto de referencia para medir como cambia un modelo de 39 M de parametros antes y despues de un ciclo de SFT sobre un dataset empaquetado de 100 MB.
 - Pruebas de infraestructura de despliegue: al ocupar 0,1 GB, permite validar pipelines de text-generation-inference, endpoints compatibles o integraciones con la libreria `transformers` en entornos de CI sin coste de GPU significativo.
-- Docencia y formacion: util para ilustrar en clase el ciclo completo de entrenamiento de un modelo causal pequeno (dataset, tokenizador, SFT, publicacion en HuggingFace) sin necesidad de infraestructura especializada.
+- Docencia y formacion: util para ilustrar en clase el ciclo completo de entrenamiento de un modelo causal pequeno (dataset, tokenizador, SFT, publicacion en Hugging Face) sin necesidad de infraestructura especializada.
 - Generacion de texto en hindi en entornos sin conectividad o con recursos minimos: si se confirma el soporte del idioma, podria desplegarse en CPU para tareas de completado de texto de baja exigencia, siempre con revision humana.
 - Experimentacion sobre sesgos y calidad en idiomas de bajos recursos: el modelo permite estudiar como un corpus de entrenamiento muy pequeno afecta a la coherencia y a la repeticion en la generacion, en un idioma con menos recursos digitales que el ingles.
 - Base para nuevos ajustes: puede actuar como punto de partida para fine-tunes posteriores con LoRA o SFT completo sobre dominios concretos en hindi, dado su tamano reducido y su formato safetensors estandar.
@@ -77,8 +77,8 @@ La model card no incluye metricas de evaluacion (perplejidad, MMLU, HumanEval, G
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
 | francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,09 M | no disponible | no disponible | safetensors | 0 descargas, 0 likes |
-| goldfish-models/hin_deva_10mb (modelo base) | no disponible | no disponible | no disponible | no disponible | repositorio publico en HuggingFace |
-| Otras variantes de la familia Goldfish para distintos idiomas | no disponible | no disponible | no disponible | no disponible | repositorios publicos en HuggingFace |
+| goldfish-models/hin_deva_10mb (modelo base) | no disponible | no disponible | no disponible | no disponible | repositorio publico en Hugging Face |
+| Otras variantes de la familia Goldfish para distintos idiomas | no disponible | no disponible | no disponible | no disponible | repositorios publicos en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada. Cualquier comparacion cuantitativa con alternativas de la misma categoria requeriria ejecutar evaluaciones propias.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/068x7ks0
 - Repositorio de TRL: https://github.com/huggingface/trl

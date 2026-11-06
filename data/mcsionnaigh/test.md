@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `McSionnaigh/test` alojado en HuggingFace es un espacio de pruebas creado el 18 de diciembre de 2023 y actualizado por última vez el 22 de agosto de 2026. Su autor, McSionnaigh, no ha proporcionado metadatos esenciales como arquitectura, parámetros, licencia o idiomas soportados. El tamaño del repositorio es de 964,9 GB, lo que sugiere la presencia de ficheros de pesos de gran volumen, pero sin especificación de formato ni de cuantización. En el momento de la consulta, el repositorio tiene 0 descargas y 1 like, lo que indica que no ha sido utilizado por la comunidad. Dada la ausencia total de información técnica y de documentación, no es posible evaluar sus capacidades ni su idoneidad para uso en producción.
+El repositorio `McSionnaigh/test` alojado en Hugging Face es un espacio de pruebas creado el 18 de diciembre de 2023 y actualizado por última vez el 22 de agosto de 2026. Su autor, McSionnaigh, no ha proporcionado metadatos esenciales como arquitectura, parámetros, licencia o idiomas soportados. El tamaño del repositorio es de 964,9 GB, lo que sugiere la presencia de ficheros de pesos de gran volumen, pero sin especificación de formato ni de cuantización. En el momento de la consulta, el repositorio tiene 0 descargas y 1 like, lo que indica que no ha sido utilizado por la comunidad. Dada la ausencia total de información técnica y de documentación, no es posible evaluar sus capacidades ni su idoneidad para uso en producción.
 
 ## Especificaciones tecnicas
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HeartMuLaGen es un modelo publicado en HuggingFace por el equipo HeartMuLa y redistribuido sin modificaciones por el usuario Audante bajo el identificador `Audante/HeartMuLaGen`. La model card del repositorio es explícita: se trata de una copia exacta de `HeartMuLa/HeartMuLaGen` en la revisión `2e18e01702011f4f7dc8642b6260967df62417ea`, con los ficheros idénticos al origen y sin ningún cambio respecto al modelo base. El autor de la copia no reclama ninguna autoría sobre el modelo ni lo presenta como un lanzamiento oficial.
+HeartMuLaGen es un modelo publicado en Hugging Face por el equipo HeartMuLa y redistribuido sin modificaciones por el usuario Audante bajo el identificador `Audante/HeartMuLaGen`. La model card del repositorio es explícita: se trata de una copia exacta de `HeartMuLa/HeartMuLaGen` en la revisión `2e18e01702011f4f7dc8642b6260967df62417ea`, con los ficheros idénticos al origen y sin ningún cambio respecto al modelo base. El autor de la copia no reclama ninguna autoría sobre el modelo ni lo presenta como un lanzamiento oficial.
 
-La información disponible sobre el modelo original es mínima: la model card del repositorio redistribuido no incluye descripción funcional, arquitectura, tamaño, datos de entrenamiento ni casos de uso. El nombre "Gen" sugiere una orientación a generación, pero no se especifica la modalidad (texto, audio, imagen u otra) en los metadatos proporcionados. El pipeline no está declarado en HuggingFace y los idiomas soportados no figuran en los tags.
+La información disponible sobre el modelo original es mínima: la model card del repositorio redistribuido no incluye descripción funcional, arquitectura, tamaño, datos de entrenamiento ni casos de uso. El nombre "Gen" sugiere una orientación a generación, pero no se especifica la modalidad (texto, audio, imagen u otra) en los metadatos proporcionados. El pipeline no está declarado en Hugging Face y los idiomas soportados no figuran en los tags.
 
 La relevancia de esta ficha es, por tanto, acotada: sirve para documentar la existencia del repositorio, su licencia Apache 2.0 y su naturaleza de espejo, pero no permite una evaluación técnica del modelo. Cualquier decisión de uso debería basarse en la documentación del repositorio original `HeartMuLa/HeartMuLaGen`, que no forma parte de la información proporcionada.
 
@@ -70,7 +70,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 | Contenido de pesos | Referencia | Idéntico (según el autor) |
 | Licencia | Apache 2.0 | Apache 2.0 |
 | Carácter oficial | Sí | No (redistribución no oficial) |
-| Descargas en HuggingFace | No disponible | 26 |
+| Descargas en Hugging Face | No disponible | 26 |
 | Likes | No disponible | 0 |
 | Fecha de creación del repo | No disponible | 2026-10-29 |
 

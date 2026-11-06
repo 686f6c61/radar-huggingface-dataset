@@ -70,10 +70,10 @@ La mejora se concentra en RAG (+4,5 puntos) y Agentes (+1,0). Fundamentos no mej
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| slm-ia-generativa-ejecutivos | 494 M + 8,8 M (LoRA) | no disponible | Adaptador LoRA destilado para divulgación de IA a ejecutivos | Apache 2.0 | HuggingFace (archivos del adaptador pendientes de subir según la model card) |
-| Qwen2.5-0.5B-Instruct | 494 M | no disponible en la información proporcionada | Modelo base instructivo generalista | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | 360 M | no disponible en la información proporcionada | Modelo pequeño generalista | Apache 2.0 | HuggingFace |
-| SmolLM2-135M | 135 M | no disponible en la información proporcionada | Modelo pequeño generalista | Apache 2.0 | HuggingFace |
+| slm-ia-generativa-ejecutivos | 494 M + 8,8 M (LoRA) | no disponible | Adaptador LoRA destilado para divulgación de IA a ejecutivos | Apache 2.0 | Hugging Face (archivos del adaptador pendientes de subir según la model card) |
+| Qwen2.5-0.5B-Instruct | 494 M | no disponible en la información proporcionada | Modelo base instructivo generalista | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | 360 M | no disponible en la información proporcionada | Modelo pequeño generalista | Apache 2.0 | Hugging Face |
+| SmolLM2-135M | 135 M | no disponible en la información proporcionada | Modelo pequeño generalista | Apache 2.0 | Hugging Face |
 
 El autor probó SmolLM2-135M y SmolLM2-360M como estudiantes alternativos en el mismo pipeline, pero no se publican sus notas en la model card, por lo que la comparación cuantitativa con esas alternativas no está disponible.
 
@@ -90,6 +90,6 @@ El autor probó SmolLM2-135M y SmolLM2-360M como estudiantes alternativos en el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GersonSalas1986/slm-ia-generativa-ejecutivos
+- Modelo en Hugging Face: https://huggingface.co/GersonSalas1986/slm-ia-generativa-ejecutivos
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

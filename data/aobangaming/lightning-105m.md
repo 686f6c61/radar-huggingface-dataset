@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lightning-105m es un modelo de lenguaje autoregresivo de tipo transformer desarrollado por AobanZ (Aobangaming) y publicado en HuggingFace. Se trata de la version ampliada de Lightning-60m, que a su vez deriva de Lightning-30m-ft. Con 105.357.312 parametros, 12 capas y un espacio latente de 512 dimensiones, el modelo esta disenado para generacion de texto conversacional y continuacion de historias en ingles, con un coste computacional muy bajo.
+Lightning-105m es un modelo de lenguaje autoregresivo de tipo transformer desarrollado por AobanZ (Aobangaming) y publicado en Hugging Face. Se trata de la version ampliada de Lightning-60m, que a su vez deriva de Lightning-30m-ft. Con 105.357.312 parametros, 12 capas y un espacio latente de 512 dimensiones, el modelo esta disenado para generacion de texto conversacional y continuacion de historias en ingles, con un coste computacional muy bajo.
 
 El modelo se entrena integramente sobre el dataset BookSum (kmfoda/booksum), un corpus de resumenes y texto de libros de aproximadamente 300 MB. Utiliza atencion causal con FlashAttention/SDPA, normalizacion previa a cada capa (pre-LN) y codificacion posicional sinusoidal. Su relevancia actual es limitada pero concreta: sirve como banco de pruebas educativo para experimentar con arquitecturas transformer pequenas, fine-tuning sobre dominio literario y despliegue en hardware muy modesto (se entreno en una unica RTX 3050 de 6 GB durante 6 horas).
 
@@ -89,11 +89,11 @@ La informacion proporcionada no incluye comparaciones de rendimiento. La tabla s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lightning-105m | 105.357.312 | 230 tokens (segun model card) | MIT | HuggingFace, safetensors, requiere `custom_code` |
-| GPT-2 (124M) | 124 millones | 1024 tokens | MIT (pesos publicados por OpenAI) | HuggingFace, safetensors, ampliamente integrado en vLLM, llama.cpp y Ollama |
-| DistilGPT-2 | 82 millones | 1024 tokens | MIT | HuggingFace, safetensors, integrado en la mayoria de runtimes |
-| Pythia-160M | 160 millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors, integrado en vLLM y TGI |
-| SmolLM-135M | 135 millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF, integrado en llama.cpp y transformers |
+| Lightning-105m | 105.357.312 | 230 tokens (segun model card) | MIT | Hugging Face, safetensors, requiere `custom_code` |
+| GPT-2 (124M) | 124 millones | 1024 tokens | MIT (pesos publicados por OpenAI) | Hugging Face, safetensors, ampliamente integrado en vLLM, llama.cpp y Ollama |
+| DistilGPT-2 | 82 millones | 1024 tokens | MIT | Hugging Face, safetensors, integrado en la mayoria de runtimes |
+| Pythia-160M | 160 millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors, integrado en vLLM y TGI |
+| SmolLM-135M | 135 millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF, integrado en llama.cpp y transformers |
 
 Diferencias clave: Lightning-105m tiene la ventana de contexto mas corta del grupo y depende de codigo personalizado, lo que reduce su portabilidad frente a alternativas con arquitecturas estandar registradas en los principales motores de inferencia. A cambio, su licencia MIT no impone restricciones adicionales y su huella de memoria es la mas baja del conjunto.
 
@@ -109,13 +109,13 @@ Diferencias clave: Lightning-105m tiene la ventana de contexto mas corta del gru
 - Restricciones de uso segun el autor: la model card indica que no esta destinado a asesoramiento profesional, escritura real ni cargas de trabajo intensivas, y que no debe reentrenarse para dominios distintos del texto en ingles (por ejemplo, robotica).
 - Licencia MIT: permite uso comercial, modificacion y redistribucion con atribucion, sin garantias; conviene anadir guardarrailes propios antes de cualquier despliegue en produccion.
 - Dependencia de codigo personalizado: `trust_remote_code=True` implica ejecutar codigo del autor al cargar el modelo, un riesgo de seguridad a evaluar en entornos gestionados.
-- Tokenizer no estandar: se distribuye como `lightning_tokenizer.json` y se carga con la libreria `tokenizers`, no como un tokenizer de HuggingFace convencional, lo que complica la integracion con herramientas del ecosistema.
+- Tokenizer no estandar: se distribuye como `lightning_tokenizer.json` y se carga con la libreria `tokenizers`, no como un tokenizer de Hugging Face convencional, lo que complica la integracion con herramientas del ecosistema.
 - Inconsistencia en los metadatos: el repositorio figura con fecha de creacion 2026-09-20, posterior a la fecha de consulta habitual de los datos; conviene verificar la vigencia y el historial real del repositorio.
 - Trazabilidad limitada: se declaran 210 descargas y 3 likes, sin documentacion externa, paper ni evaluaciones de terceros que respalden el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aobangaming/lightning-105m
+- Modelo en Hugging Face: https://huggingface.co/Aobangaming/lightning-105m
 - Modelo base (fine-tune de 30M): https://huggingface.co/Aobangaming/lightning-30m-ft
 - Modelo base (60M): https://huggingface.co/Aobangaming/lightning-60m
 - Dataset de entrenamiento (BookSum): https://huggingface.co/datasets/kmfoda/booksum

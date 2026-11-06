@@ -104,7 +104,7 @@ Referencias del autor: su build Swift IQ4_XS-M de 4,56 bpw obtuvo 89,25 % en los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2
+- Modelo en Hugging Face: https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2
 - Modelo base (BF16): https://huggingface.co/d0xin/Swift-1.5-Qwen3.8-27B-Uncensored-BF16
 - Swift 1.5 original de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Dataset de resultados LCB/KLD: https://huggingface.co/datasets/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2-LCB-KLD

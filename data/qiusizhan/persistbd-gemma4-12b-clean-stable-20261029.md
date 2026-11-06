@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PersistBD-Gemma4-12B-clean-stable-20261029 es un ajuste fino completo (*full fine-tuning*) del modelo multimodal google/gemma-4-12B-it, publicado por el usuario qiusizhan en HuggingFace. Segun los metadatos del repositorio, el modelo esta orientado a tareas de deteccion de *backdoors* (puertas traseras) en modelos de lenguaje, bajo el paraguas de un proyecto denominado "PersistBD". La arquitectura declarada en los tags es `gemma4_unified` y el pipeline es `image-text-to-text`, lo que indica que conserva la capacidad multimodal del modelo base (entrada de imagen y texto, salida de texto).
+PersistBD-Gemma4-12B-clean-stable-20261029 es un ajuste fino completo (*full fine-tuning*) del modelo multimodal google/gemma-4-12B-it, publicado por el usuario qiusizhan en Hugging Face. Segun los metadatos del repositorio, el modelo esta orientado a tareas de deteccion de *backdoors* (puertas traseras) en modelos de lenguaje, bajo el paraguas de un proyecto denominado "PersistBD". La arquitectura declarada en los tags es `gemma4_unified` y el pipeline es `image-text-to-text`, lo que indica que conserva la capacidad multimodal del modelo base (entrada de imagen y texto, salida de texto).
 
-El modelo cuenta con 11.959.730.176 parametros (aproximadamente 12 mil millones) en formato safetensors, con un tamano de repositorio de 24 GB, coherente con pesos en precision de 16 bits. La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace. El modelo base es google/gemma-4-12B-it, un modelo instructivo de cuarta generacion de la familia Gemma de Google.
+El modelo cuenta con 11.959.730.176 parametros (aproximadamente 12 mil millones) en formato safetensors, con un tamano de repositorio de 24 GB, coherente con pesos en precision de 16 bits. La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face. El modelo base es google/gemma-4-12B-it, un modelo instructivo de cuarta generacion de la familia Gemma de Google.
 
 La relevancia de este modelo radica en su enfoque especifico: la deteccion de backdoors en modelos de lenguaje es un area de investigacion activa en seguridad de IA, y los ajustes finos especializados en esta tarea son escasos. Sin embargo, la informacion publica disponible es muy limitada (2 descargas, 0 likes, sin model card detallada, sin idiomas declarados, sin benchmarks), lo que condiciona la evaluacion de su calidad y utilidad practica.
 
@@ -81,7 +81,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 - Riesgo de alucinacion: desconocido, pero al ser un ajuste fino sobre un modelo instructivo general, conserva los riesgos del modelo base.
 - Idiomas soportados no declarados: no se puede garantizar cobertura multilingue.
 - Sesgos conocidos: no documentados; se heredan los del modelo base google/gemma-4-12B-it.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en produccion o en entornos automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en produccion o en entornos automatizados.
 - Licencia Apache 2.0 declarada, pero el modelo base Gemma tiene sus propios terminos de uso; conviene verificar la compatibilidad antes de un uso comercial.
 - Trazabilidad muy baja: 2 descargas, 0 likes, sin paper ni repositorio de codigo asociado; la calidad del ajuste no esta validada por terceros.
 - El nombre "clean-stable" sugiere una version depurada, pero no hay informacion sobre que se limpio o estabilizo respecto a versiones anteriores.
@@ -89,6 +89,6 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/PersistBD-Gemma4-12B-clean-stable-20261029
+- Hugging Face: https://huggingface.co/qiusizhan/PersistBD-Gemma4-12B-clean-stable-20261029
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it (referencia declarada en los tags)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

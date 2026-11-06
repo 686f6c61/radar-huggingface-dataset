@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makisekurisu-jp/Qwen-Image-2.1-Turbo-Wuli-8step
+- Modelo en Hugging Face: https://huggingface.co/makisekurisu-jp/Qwen-Image-2.1-Turbo-Wuli-8step
 - Modelo base: https://huggingface.co/Wuli-art/Qwen-Image-2.1-Turbo
 - Pesos bf16 de referencia: https://huggingface.co/Wuli-art/Qwen-Image-2.1-Turbo/tree/main/8step-bf16
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE

@@ -101,11 +101,11 @@ No se dispone de resultados de benchmarks publicados que permitan comparar de fo
 - No hay palabra de activacion, por lo que el adaptador se aplica siempre que este cargado; controlarlo mal puede alterar el resultado en imagenes que no necesitan restauracion.
 - Riesgo de sesgo: no se documentan evaluaciones de sesgo demografico, etnico o de genero. Al trabajar sobre rostros, existe riesgo de alterar rasgos de identidad de forma no controlada.
 - Riesgo de alucinacion de textura: aunque el LoRA lo reduce respecto a Qwen Image 2.1 sin adaptador, no lo elimina por completo.
-- Datos muy limitados del ciclo de vida: el repo tiene pocas interacciones registradas en HuggingFace (0 descargas y 14 me gusta en la fecha consultada) y no se documentan actualizaciones posteriores a octubre de 2026.
+- Datos muy limitados del ciclo de vida: el repo tiene pocas interacciones registradas en Hugging Face (0 descargas y 14 me gusta en la fecha consultada) y no se documentan actualizaciones posteriores a octubre de 2026.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ausboss/Qwen-Image-2.1-Restore-LoRA
+- Pagina del modelo en Hugging Face: https://huggingface.co/ausboss/Qwen-Image-2.1-Restore-LoRA
 - Modelo base Qwen Image 2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Adaptador Viggle Turbo para Qwen Image 2.1: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Pagina del LoRA en Civitai: https://civitai.com/models/2989697/qwen-image-21-restore-lora

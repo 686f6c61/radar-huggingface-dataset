@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flint 6bit es una cuantización a 6 bits del modelo Flint, desarrollado por RecursiveSI, publicada por la comunidad nativ-community en HuggingFace. Se trata de una conversión para el ecosistema MLX de Apple, realizada con MLX-VLM 0.7.10 y MLX 0.32.4, que permite ejecutar el modelo de forma eficiente en hardware Apple Silicon (Mac con chips M1 a M5). El modelo base es un modelo de generación de texto conversacional con arquitectura MoE (mixture of experts), según se deduce de los 47 enrutadores MoE mencionados en la documentación de la conversión.
+Flint 6bit es una cuantización a 6 bits del modelo Flint, desarrollado por RecursiveSI, publicada por la comunidad nativ-community en Hugging Face. Se trata de una conversión para el ecosistema MLX de Apple, realizada con MLX-VLM 0.7.10 y MLX 0.32.4, que permite ejecutar el modelo de forma eficiente en hardware Apple Silicon (Mac con chips M1 a M5). El modelo base es un modelo de generación de texto conversacional con arquitectura MoE (mixture of experts), según se deduce de los 47 enrutadores MoE mencionados en la documentación de la conversión.
 
 La relevancia de esta conversión radica en la creciente demanda de ejecutar modelos grandes localmente en Mac: con 39,8 mil millones de parámetros totales, la versión BF16 original sería inviable en la mayoría de equipos de consumo, mientras que la cuantización a 6 bits reduce el tamaño a 32,3 GB, accesible para máquinas con 36 GB o más de memoria unificada. La conversión preserva el tokenizador, la plantilla de chat, la configuración de generación y la licencia Apache-2.0 del modelo original, además de mantener el control del modo de razonamiento ("thinking") mediante la plantilla original.
 

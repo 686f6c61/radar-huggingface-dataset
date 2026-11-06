@@ -25,7 +25,7 @@ Su relevancia es limitada por el momento: se trata de una publicacion muy recien
 
 No se dispone de informacion sobre el entrenamiento en la model card publicada: no se indican numero de tokens, composicion del dataset, ni si hubo fases de RLHF, DPO u otras tecnicas de alineamiento. Lo unico documentado es que se trata de un checkpoint de Qwen3-VL-4B-Thinking orientado a respuesta de preguntas sobre video con representaciones de tipo "tag-summary", y que el repositorio contiene solo los pesos.
 
-La arquitectura subyacente corresponde a la familia Qwen3-VL: un codificador de vision acoplado a un decodificador transformer de tipo decoder-only (etiqueta `qwen3_vl` en HuggingFace), con una variante "Thinking" que habilita un modo de razonamiento explicito antes de generar la respuesta final. Dado que el modelo base es de aproximadamente 4B parametros en configuracion densa, se espera que la capacidad de razonamiento y la cobertura multilingue sean las propias de esa escala, si bien no hay datos verificables en la informacion proporcionada sobre context length, resolucion de video soportada ni estrategia de muestreo de frames.
+La arquitectura subyacente corresponde a la familia Qwen3-VL: un codificador de vision acoplado a un decodificador transformer de tipo decoder-only (etiqueta `qwen3_vl` en Hugging Face), con una variante "Thinking" que habilita un modo de razonamiento explicito antes de generar la respuesta final. Dado que el modelo base es de aproximadamente 4B parametros en configuracion densa, se espera que la capacidad de razonamiento y la cobertura multilingue sean las propias de esa escala, si bien no hay datos verificables en la informacion proporcionada sobre context length, resolucion de video soportada ni estrategia de muestreo de frames.
 
 ## Capacidades
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SWARM-Lab/VSeek-VETL | 4,83 B | No disponible | No disponible | Pesos safetensors en HuggingFace | Fine-tune de video QA; 0 descargas, sin benchmarks |
-| Qwen/Qwen3-VL-4B-Thinking | No disponible en la informacion proporcionada (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace | Modelo base del que deriva VSeek-VETL |
+| SWARM-Lab/VSeek-VETL | 4,83 B | No disponible | No disponible | Pesos safetensors en Hugging Face | Fine-tune de video QA; 0 descargas, sin benchmarks |
+| Qwen/Qwen3-VL-4B-Thinking | No disponible en la informacion proporcionada (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face | Modelo base del que deriva VSeek-VETL |
 | Otras alternativas de video QA de ~4-8 B | No disponible | No disponible | No disponible | No disponible | No se ha identificado en la informacion disponible una comparativa fiable con alternativas equivalentes |
 
 No se dispone de datos de rendimiento comparativos, por lo que la comparativa se limita a parametros y disponibilidad de pesos.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos, por lo que la comparativa se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SWARM-Lab/VSeek-VETL
+- Modelo en Hugging Face: https://huggingface.co/SWARM-Lab/VSeek-VETL
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking
 - Paper, blog, repositorio o demo del autor: no disponibles
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo; los resultados obtenidos corresponden a productos y contenidos sin relacion (software Swarm II de Turtle Beach, la serie de television Swarm y una consultora industrial), por lo que se descartan como fuentes.

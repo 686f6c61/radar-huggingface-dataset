@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`BluePrintSky/MinimaxH3Assets` es un adaptador LoRA para generacion de imagenes por texto (pipeline `text-to-image`), publicado por el usuario BluePrintSky en HuggingFace. Se trata de un LoRA de la familia `template:diffusion-lora` que se monta sobre el modelo base `lynaNSFW/minimaxH3_Collection`, del que hereda la arquitectura de difusion subyacente. El repositorio ocupa 3,1 GB y se distribuye con la libreria `diffusers`.
+`BluePrintSky/MinimaxH3Assets` es un adaptador LoRA para generacion de imagenes por texto (pipeline `text-to-image`), publicado por el usuario BluePrintSky en Hugging Face. Se trata de un LoRA de la familia `template:diffusion-lora` que se monta sobre el modelo base `lynaNSFW/minimaxH3_Collection`, del que hereda la arquitectura de difusion subyacente. El repositorio ocupa 3,1 GB y se distribuye con la libreria `diffusers`.
 
 El modelo se presenta en su model card bajo el nombre interno "MysticXXX" y esta orientado explicitamente a contenido para adultos (NSFW). Define dos palabras disparadoras (`hmpussy` y `Vagina`) que activan el concepto aprendido durante el entrenamiento del adaptador, con un `instance_prompt` identico a dichas palabras. El widget de ejemplo de la model card muestra un retrato de estudio, lo que sugiere que el adaptador tambien influye en el estilo fotografico ademas del concepto concreto.
 
@@ -45,7 +45,7 @@ Tampoco se documentan el numero de tokens o imagenes de entrenamiento, la compos
 - Prototipado de estilos fotograficos: el ejemplo de la model card (retrato de estudio) sugiere que el LoRA puede emplearse para fijar un estilo de iluminacion y encuadre, reutilizable en proyectos de fotografia sintetica.
 - Investigacion sobre adaptadores LoRA: util como caso de estudio de un adaptador de bajo rango sobre un modelo de difusion, para analizar como un concepto pequeno se codifica en pocas capas.
 - Pruebas de seguridad y filtrado: sirve para evaluar si los sistemas de moderacion de contenido de una plataforma detectan correctamente un LoRA NSFW antes de permitir su publicacion.
-- Documentacion de catalogo de modelos: uso interno por parte de equipos que mantienen inventarios de modelos en HuggingFace y necesitan clasificar automaticamente adaptadores NSFW.
+- Documentacion de catalogo de modelos: uso interno por parte de equipos que mantienen inventarios de modelos en Hugging Face y necesitan clasificar automaticamente adaptadores NSFW.
 - Auditoria de licencias: caso practico para revisar como se declara una licencia `other` y que implicaciones tiene en un pipeline comercial.
 - No se recomienda su uso en productos orientados al publico general, en atencion al cliente, en generacion de codigo ni en tareas de razonamiento, por tratarse de un adaptador de imagen de contenido adulto.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Como referencia general para adaptadores LoRA en `diffusers`, el adaptador en si apenas anade VRAM (decenas o centenas de MB) sobre el modelo base; el grueso de la memoria la ocupa el modelo completo.
 - GPU recomendadas: no disponibles. Dependen del modelo base.
 - Encaje en GPU de consumo: no confirmado. Si el modelo base es de clase SDXL o similar, una GPU con 8-12 GB podria ser suficiente en fp16; si es un modelo mayor (clase Flux o superior), se requeririan 16-24 GB o cuantizacion adicional. Estas cifras son estimaciones condicionadas y no estan confirmadas en la informacion proporcionada.
-- Opciones de despliegue: al distribuirse como `diffusers`, el uso natural es la libreria `diffusers` de HuggingFace; tambien podria cargarse en herramientas compatibles con LoRA de difusion (por ejemplo, interfaces tipo Automatic1111 o ComfyUI) si el formato de pesos es compatible. No confirmado por el autor.
+- Opciones de despliegue: al distribuirse como `diffusers`, el uso natural es la libreria `diffusers` de Hugging Face; tambien podria cargarse en herramientas compatibles con LoRA de difusion (por ejemplo, interfaces tipo Automatic1111 o ComfyUI) si el formato de pesos es compatible. No confirmado por el autor.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BluePrintSky/MinimaxH3Assets
+- Modelo en Hugging Face: https://huggingface.co/BluePrintSky/MinimaxH3Assets
 - Archivos del repositorio: https://huggingface.co/BluePrintSky/MinimaxH3Assets/tree/main
 - Modelo base: https://huggingface.co/lynaNSFW/minimaxH3_Collection
 - Licencia: https://huggingface.co/BluePrintSky/MinimaxH3Assets/blob/main/LICENSE

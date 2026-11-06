@@ -81,7 +81,7 @@ La siguiente tabla compara este modelo con sus parientes cercanos en la misma l√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Asis-GRPO
+- Modelo en Hugging Face: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Asis-GRPO
 - Modelo SFT padre: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Asis
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Variante Correct-GRPO: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Correct-GRPO

@@ -6,13 +6,13 @@ El repositorio `soisikawa/notes-text-image-retrieval-2023` no es un modelo de ap
 
 El fichero `safetensors` asociado contiene 24.832 parametros reales, una cifra que corresponde a un conjunto de tensores de tamano trivial (del orden de 0,1 MB en fp32) y no a un transformer utilizable. No hay pipeline declarado, no hay idiomas declarados, no hay resultados de evaluacion y no hay documentacion de arquitectura, datos de entrenamiento ni proceso de ajuste. Las fechas de creacion y actualizacion del repositorio son del 10 de septiembre de 2026.
 
-La relevancia de esta ficha es, por tanto, metodologica: sirve como ejemplo de publicacion de notas exploratorias que declaran explicitamente sus limites antes de aportar resultados, y como advertencia practica de que las etiquetas de HuggingFace (`transformer`, `safetensors`) no garantizan que el repositorio contenga un modelo ejecutable. Cualquier evaluacion de rendimiento, despliegue o comparativa con modelos reales queda fuera de su alcance.
+La relevancia de esta ficha es, por tanto, metodologica: sirve como ejemplo de publicacion de notas exploratorias que declaran explicitamente sus limites antes de aportar resultados, y como advertencia practica de que las etiquetas de Hugging Face (`transformer`, `safetensors`) no garantizan que el repositorio contenga un modelo ejecutable. Cualquier evaluacion de rendimiento, despliegue o comparativa con modelos reales queda fuera de su alcance.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. El tag de HuggingFace indica `transformer`, pero la model card no describe ninguna arquitectura de modelo entrenado |
+| Arquitectura | No disponible. El tag de Hugging Face indica `transformer`, pero la model card no describe ninguna arquitectura de modelo entrenado |
 | Parametros totales | 24.832 (dato real del fichero safetensors) |
 | Parametros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | No disponible |
@@ -51,7 +51,7 @@ Los siguientes casos describen usos del artefacto como documento de investigacio
 - Plantilla de protocolo experimental: usar `summary.md` como esqueleto para redactar el diseno de un estudio de recuperacion texto-imagen antes de ejecutarlo, incluyendo la definicion de baselines emparejados y de los factores de confusion previstos.
 - Checklist de reproducibilidad: el repositorio exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y logs en bruto; ese listado puede reutilizarse como criterio de aceptacion en revisiones internas de experimentos.
 - Referencia para seleccion de datasets: las notas apuntan a Flickr30k y MS COCO Captions como contextos de evaluacion concretos, lo que resulta util para acotar la eleccion de corpus en un proyecto de retrieval.
-- Antipatron documentado: sirve como ejemplo de repositorio etiquetado con `transformer` y `safetensors` que no contiene un modelo funcional, util para formar a equipos que evaluan modelos por su etiquetado en HuggingFace.
+- Antipatron documentado: sirve como ejemplo de repositorio etiquetado con `transformer` y `safetensors` que no contiene un modelo funcional, util para formar a equipos que evaluan modelos por su etiquetado en Hugging Face.
 - Auditoria de licencias: la model card separa la licencia MIT del repositorio de los terminos de los datos de origen externos, un recordatorio aplicable al reutilizar datasets como Flickr30k o MS COCO.
 - Catalogo de preguntas abiertas: las preguntas abiertas y modos de fallo listados pueden alimentar la seccion de trabajo futuro de un paper o de una propuesta de proyecto.
 
@@ -94,5 +94,5 @@ No disponible. Este repositorio no es un modelo de recuperacion texto-imagen, de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/soisikawa/notes-text-image-retrieval-2023
+- Hugging Face: https://huggingface.co/soisikawa/notes-text-image-retrieval-2023
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni al tema de recuperacion texto-imagen. Los resultados devueltos corresponden a listados de dispositivos electronicos economicos y no guardan relacion con este repositorio, por lo que se omiten.

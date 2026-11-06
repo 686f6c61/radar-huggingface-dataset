@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-final-x100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y con acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamano medio, adecuados para despliegue en hardware de gama alta consumer o GPUs de datacenter de una sola unidad. El tamano del repositorio es de 8,1 GB, consistente con pesos en precision de 32 bits o con multiplicidad de ficheros de pesos.
+`alfred8995/r18-a2-final-x100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y con acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamano medio, adecuados para despliegue en hardware de gama alta consumer o GPUs de datacenter de una sola unidad. El tamano del repositorio es de 8,1 GB, consistente con pesos en precision de 32 bits o con multiplicidad de ficheros de pesos.
 
 La informacion publica disponible es muy limitada: no se especifica la arquitectura interna, la longitud de contexto, los idiomas soportados, el pipeline de inferencia ni el proceso de entrenamiento. La unica etiqueta tecnica adicional es `sn38-nanochrono`, que no corresponde a ninguna familia de modelos ampliamente conocida y no permite inferir detalles de arquitectura. No se han publicado resultados de benchmarks, model card detallada ni documentacion tecnica en la informacion proporcionada.
 
@@ -72,7 +72,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no existen da
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, contexto ni idiomas, lo que impide evaluar riesgos de sesgo y alucinacion con fundamento.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace antes de descargar los pesos; conviene revisar dichas condiciones por si imponen restricciones adicionales al uso comercial mas alla de Apache 2.0.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face antes de descargar los pesos; conviene revisar dichas condiciones por si imponen restricciones adicionales al uso comercial mas alla de Apache 2.0.
 - Riesgo de alucinacion: inherente a modelos de 2B parametros sin datos de alineacion publicados; se recomienda validacion humana en produccion.
 - Sesgos desconocidos: al no publicarse la composicion del corpus, no es posible anticipar sesgos de genero, idioma o dominio.
 - Idiomas no confirmados: no se especifica que idiomas soporta; el rendimiento en castellano es una incognita hasta su evaluacion.
@@ -82,4 +82,4 @@ La comparativa se limita a parametros, contexto y licencia, ya que no existen da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-final-x100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-final-x100

@@ -18,13 +18,13 @@ Los resultados publicados son desiguales y el propio autor advierte de una gener
 | Longitud de contexto | 2.048 tokens |
 | Tipos de cuantizacion | No disponible: no se han publicado pesos ni cuantizaciones |
 | Idiomas soportados | Multilingue (sin desglose de idiomas en la informacion disponible) |
-| Licencia | El codigo original se declara bajo Apache-2.0, con atribucion de la fundacion MIT; los datos conservan los terminos de cada fuente. La ficha de HuggingFace no declara licencia y los pesos no estan publicados |
+| Licencia | El codigo original se declara bajo Apache-2.0, con atribucion de la fundacion MIT; los datos conservan los terminos de cada fuente. La ficha de Hugging Face no declara licencia y los pesos no estan publicados |
 | Formato de pesos | No disponible: pesos no publicados (tamano del repositorio declarado, 0,0 GB) |
 | Tipo de salida | Decisiones estructuradas: choice, noul y score |
 | Modelo base | jhu-clsp/mmBERT-small |
 | Conjunto de datos principal | artinos/Nadia-1-data (84.050 ejemplos) |
 | Autor e institucion | Bernardo B. Perobeli (Artinos) |
-| Fecha de creacion en HuggingFace | 2026-10-17 |
+| Fecha de creacion en Hugging Face | 2026-10-17 |
 | Descargas / likes | 0 / 0 |
 | Disponibilidad de pesos | No publicados; no hay servicio de inferencia de Artinos |
 
@@ -88,7 +88,7 @@ El autor no reivindica ninguna posición oficial en el leaderboard del Decision 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | Nadia-1 Small | 140,8 M | 2.048 tokens | Codigo declarado Apache-2.0 (atribucion MIT); datos con terminos por fuente; HF sin licencia declarada | Pesos no publicados | Ver tabla de benchmarks |
-| jhu-clsp/mmBERT-small (base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace | No disponible en la informacion proporcionada |
+| jhu-clsp/mmBERT-small (base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face | No disponible en la informacion proporcionada |
 | Nadia-1 Base | 308 M | No disponible | No disponible | No finalizado segun el autor; menos ciclos de entrenamiento y refinamiento | Solo comparacion historica, no equivalente |
 | GLiNER 2.5 y Ettin-1B | No disponible | No disponible | No disponible | Exploracion inicial abandonada | No disponible |
 
@@ -103,14 +103,14 @@ No se dispone de datos comparativos de rendimiento entre Nadia-1 Small y alterna
 - No hay demostracion de planificacion fiable, por lo que no es adecuado como planificador de agentes multi-paso.
 - Riesgo de contaminacion no descartado: se detectaron cinco consultas ToolRet y un enunciado MMLU-Pro coincidentes con texto de entrenamiento, ademas de documentacion de herramientas compartida.
 - Pesos y codigo de inferencia no publicados y sin servicio de inferencia de Artinos: el modelo no es desplegable hoy, lo que invalida cualquier uso en produccion a corto plazo.
-- Licencia: el codigo original se declara Apache-2.0 con atribucion de la fundacion MIT, pero los datos mantienen los terminos de cada fuente y la ficha de HuggingFace no declara licencia, por lo que el uso comercial no esta claramente cubierto.
+- Licencia: el codigo original se declara Apache-2.0 con atribucion de la fundacion MIT, pero los datos mantienen los terminos de cada fuente y la ficha de Hugging Face no declara licencia, por lo que el uso comercial no esta claramente cubierto.
 - Nadia-1 Base (308 M) no esta finalizado y sus cifras corresponden a una comparacion historica con distinta dedicacion, no a una version equivalente.
 - La suite publica corregida (3,61/100) es muy baja en terminos absolutos y no constituye una posicion oficial en ningun leaderboard.
 - No se han publicado mediciones de latencia ni de throughput, datos imprescindibles para cualquier evaluacion de produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artinos/Nadia-1-Small
+- Modelo en Hugging Face: https://huggingface.co/artinos/Nadia-1-Small
 - Dataset principal: https://huggingface.co/datasets/artinos/Nadia-1-data
 - Artefactos de evaluacion del Decision Index: https://huggingface.co/datasets/artinos/Nadia-1-Decision-Index
 - Pull request de la suite publica: https://github.com/apolinario/decision-index/pull/205

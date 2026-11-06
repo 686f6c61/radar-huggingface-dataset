@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de un modelo de lenguaje pequeño publicado en HuggingFace por el usuario Lanni-ni. Su nombre indica que forma parte de una serie de experimentos con la técnica Dynamic ALiBi y el corpus BabyLM, aunque estos extremos no están confirmados en la información disponible. El modelo tiene 45.694.080 parámetros reales (según los pesos safetensors) y está etiquetado para generación de texto con la librería transformers. Su relevancia radica en que es un modelo compacto de menos de 50 millones de parámetros, lo que lo hace apto para entornos con recursos limitados, pero la model card no incluye especificaciones detalladas ni documentación de entrenamiento.
+Se trata de un modelo de lenguaje pequeño publicado en Hugging Face por el usuario Lanni-ni. Su nombre indica que forma parte de una serie de experimentos con la técnica Dynamic ALiBi y el corpus BabyLM, aunque estos extremos no están confirmados en la información disponible. El modelo tiene 45.694.080 parámetros reales (según los pesos safetensors) y está etiquetado para generación de texto con la librería transformers. Su relevancia radica en que es un modelo compacto de menos de 50 millones de parámetros, lo que lo hace apto para entornos con recursos limitados, pero la model card no incluye especificaciones detalladas ni documentación de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -67,4 +67,4 @@ No se dispone de información sobre modelos comparables ni de resultados de benc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch6
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch6

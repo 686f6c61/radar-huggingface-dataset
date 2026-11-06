@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-c12x-native-x50` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,018.511.234 exactos segun los pesos en safetensors), lo que lo situa en la franja de los modelos de ~2B, un tamano intermedio que permite despliegue en hardware consumer con cuantizacion agresiva.
+El modelo `alfred8995/r18-a2-c12x-native-x50` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,018.511.234 exactos segun los pesos en safetensors), lo que lo situa en la franja de los modelos de ~2B, un tamano intermedio que permite despliegue en hardware consumer con cuantizacion agresiva.
 
 El identificador del modelo sugiere una nomenclatura interna del autor (posiblemente "r18", "a2", "c12x", "native", "x50") que no se corresponde con ninguna familia de modelos conocida ni con ningun paper publicado. El tag `sn38-nanochrono` no coincide con ninguna arquitectura estandar documentada publicamente, por lo que no es posible determinar con certeza la arquitectura subyacente a partir de la informacion disponible.
 
-La relevancia de esta ficha es limitada: el repositorio tiene 6 descargas y 0 likes en el momento de la consulta, no incluye model card descriptiva, y el acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace. Cualquier evaluacion practica requiere solicitar acceso y realizar pruebas directas, ya que no hay benchmarks, documentacion tecnica ni ejemplos de uso publicados.
+La relevancia de esta ficha es limitada: el repositorio tiene 6 descargas y 0 likes en el momento de la consulta, no incluye model card descriptiva, y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face. Cualquier evaluacion practica requiere solicitar acceso y realizar pruebas directas, ya que no hay benchmarks, documentacion tecnica ni ejemplos de uso publicados.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ Dado que no hay documentacion tecnica, los casos de uso solo pueden plantearse c
 - Evaluacion experimental en laboratorio: descargar los pesos tras aceptar las condiciones y ejecutar pruebas de generacion para caracterizar el modelo (perplejidad, coherencia, idiomas) antes de considerar cualquier uso.
 - Fine-tuning sobre dominio especifico: con ~2B parametros y licencia Apache 2.0, el modelo es candidato a ajuste fino supervisado en tareas concretas (clasificacion, extraccion, generacion acotada) una vez validada su calidad base.
 - Despliegue en hardware consumer: el tamano (~2B) permite inferencia en GPU de gama media-alta con cuantizacion a 4 bits, util para prototipos locales.
-- Investigacion sobre modelos de autor unico: el checkpoint puede servir para estudiar practicas de publicacion, nomenclatura y empaquetado en HuggingFace.
+- Investigacion sobre modelos de autor unico: el checkpoint puede servir para estudiar practicas de publicacion, nomenclatura y empaquetado en Hugging Face.
 - Base para destilacion o experimentos de merging: al ser un modelo pequeno con pesos abiertos, puede combinarse con otros checkpoints en experimentos de model merging.
 - Pruebas de pipelines de evaluacion: util como sujeto de prueba en frameworks de benchmark automatizados (lm-evaluation-harness) para validar infraestructura.
 
@@ -81,7 +81,7 @@ La comparacion es solo por orden de magnitud; no hay datos de rendimiento del mo
 - Ausencia total de model card: no se documenta arquitectura, datos de entrenamiento, alineacion ni limitaciones conocidas.
 - Riesgo de alucinacion y comportamiento impredecible: sin evaluacion publicada, no hay garantia de calidad en generacion.
 - Idiomas no declarados: no se puede asumir soporte de castellano ni de ningun idioma concreto.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace; el autor puede denegar el acceso.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face; el autor puede denegar el acceso.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; la responsabilidad legal y de calidad recae en el usuario.
 - Repositorio con muy baja traccion (6 descargas, 0 likes): no hay comunidad, issues ni validacion externa.
 - El tag `sn38-nanochrono` no es reconocible: posible arquitectura no estandar que puede no ser compatible con herramientas habituales (vLLM, llama.cpp, TGI).
@@ -89,5 +89,5 @@ La comparacion es solo por orden de magnitud; no hay datos de rendimiento del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-c12x-native-x50
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-c12x-native-x50
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la informacion disponible.

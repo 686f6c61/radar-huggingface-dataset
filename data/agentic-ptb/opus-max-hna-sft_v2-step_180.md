@@ -62,5 +62,5 @@ No se dispone de datos de rendimiento para comparar con otros modelos. La única
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/opus-max.hNA.sft_v2.step_180](https://huggingface.co/agentic-ptb/opus-max.hNA.sft_v2.step_180)
+- [Hugging Face: agentic-ptb/opus-max.hNA.sft_v2.step_180](https://huggingface.co/agentic-ptb/opus-max.hNA.sft_v2.step_180)
 - Origen indicado en la model card: `msr-spare/msr-agentic-ptb-opus-max` (sin enlace directo disponible)

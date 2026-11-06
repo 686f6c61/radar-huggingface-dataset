@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este repo) | 51,7 M | no aplica | Pick-and-place con `rebot_b601_follower` | Apache 2.0 | HuggingFace, 31 descargas |
-| ACT (implementación de referencia LeRobot) | ~50 M (configuración por defecto) | no aplica | Imitación visomotora genérica | Apache 2.0 | HuggingFace / GitHub LeRobot |
+| ACT (este repo) | 51,7 M | no aplica | Pick-and-place con `rebot_b601_follower` | Apache 2.0 | Hugging Face, 31 descargas |
+| ACT (implementación de referencia LeRobot) | ~50 M (configuración por defecto) | no aplica | Imitación visomotora genérica | Apache 2.0 | Hugging Face / GitHub LeRobot |
 | Diffusion Policy | no disponible en la información | no aplica | Imitación visomotora con difusión | no disponible | Repositorios académicos |
 | VQ-BeT | no disponible en la información | no aplica | Imitación con cuantización vectorial | no disponible | Repositorios académicos |
 
@@ -88,7 +88,7 @@ La comparación cuantitativa de rendimiento entre estas políticas no está disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenproject35/act_pick-and-place-b601-60ep-yaw0-v2_ood_cell4
+- Modelo en Hugging Face: https://huggingface.co/chenproject35/act_pick-and-place-b601-60ep-yaw0-v2_ood_cell4
 - Dataset de entrenamiento: https://huggingface.co/datasets/chenproject35/pick-and-place-b601-60ep-yaw0-v2
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=chenproject35/pick-and-place-b601-60ep-yaw0-v2
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

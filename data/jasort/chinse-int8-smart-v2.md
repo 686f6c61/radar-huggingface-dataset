@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jasort/chinse-int8-smart-v2` es una versión cuantizada en 8 bits del modelo base `jasort/chinse`, desarrollado por el usuario jasort. Se trata de un modelo multimodal (image-text-to-text) que, según las etiquetas de HuggingFace, se basa en la arquitectura `gemma4`. La cuantización se ha realizado con la técnica `bitsandbytes LLM.int8()`, lo que permite reducir el uso de memoria y acelerar la inferencia en hardware con recursos limitados, manteniendo un rendimiento cercano al original según los valores de NLL reportados.
+El modelo `jasort/chinse-int8-smart-v2` es una versión cuantizada en 8 bits del modelo base `jasort/chinse`, desarrollado por el usuario jasort. Se trata de un modelo multimodal (image-text-to-text) que, según las etiquetas de Hugging Face, se basa en la arquitectura `gemma4`. La cuantización se ha realizado con la técnica `bitsandbytes LLM.int8()`, lo que permite reducir el uso de memoria y acelerar la inferencia en hardware con recursos limitados, manteniendo un rendimiento cercano al original según los valores de NLL reportados.
 
 El modelo cuenta con aproximadamente 5.104 millones de parámetros y un tamaño de repositorio de 8.4 GB. Aunque la ficha oficial es muy escueta, la cuantización INT8 es relevante para desplegar modelos grandes en GPUs de consumo o entornos con restricciones de VRAM. No se dispone de información sobre la licencia, los idiomas soportados ni el contexto máximo, por lo que estos aspectos quedan sin especificar.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 - VRAM estimada: al ser un modelo de 5.1B parámetros en INT8, los pesos ocupan aproximadamente 5.1 GB. Con overhead de activaciones y memoria adicional, se estima que necesita entre 6 y 8 GB de VRAM para inferencia. Este dato es una estimación, no un valor oficial.
 - GPUs recomendadas: tarjetas con al menos 8 GB de VRAM, como RTX 3060, RTX 3070, RTX 4060, o GPUs de datacenter como A10 o L4. No se ha probado en hardware específico según la documentación.
 - Compatibilidad con consumer GPU: sí, siempre que tengan suficiente VRAM y soporten CUDA.
-- Opciones de despliegue: al usar `transformers` y `bitsandbytes`, puede cargarse con la librería de HuggingFace. También podría ser compatible con vLLM, llama.cpp u Ollama, pero no hay confirmación oficial.
+- Opciones de despliegue: al usar `transformers` y `bitsandbytes`, puede cargarse con la librería de Hugging Face. También podría ser compatible con vLLM, llama.cpp u Ollama, pero no hay confirmación oficial.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables. El modelo base `jasort/
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jasort/chinse-int8-smart-v2
+- Modelo en Hugging Face: https://huggingface.co/jasort/chinse-int8-smart-v2
 - Modelo base (referencia): https://huggingface.co/jasort/chinse (no se ha verificado su existencia, pero se indica en la model card)

@@ -24,8 +24,8 @@ Su relevancia actual es acotada pero concreta: es un ejemplo de modelo pequeno y
 | Tamano del repositorio | 0,8 GB |
 | Tarea declarada | Prediccion de decisiones tipadas y puntuadas (structured decisions) |
 | Metricas declaradas | accuracy, brier_score |
-| Fecha de creacion (segun HuggingFace) | 2026-09-22 |
-| Fecha de actualizacion (segun HuggingFace) | 2026-09-22 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-22 |
+| Fecha de actualizacion (segun Hugging Face) | 2026-09-22 |
 | Descargas / likes | 0 / 0 |
 | Compatibilidad declarada | endpoints_compatible |
 
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
   - 4 bits: aproximadamente 0,25 GB
 - GPU recomendadas: el entrenamiento se realizo en dos NVIDIA T4, por lo que la inferencia es viable en GPUs de gama media e incluso en T4, RTX 3060, RTX 4060 o superiores. No se han documentado pruebas en A100 o H100, aunque el modelo cabe sobradamente en cualquiera de ellas.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU consumer con 4 GB o mas de VRAM, y tambien en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: transformers es la libreria declarada. La etiqueta endpoints_compatible sugiere despliegue en HuggingFace Inference Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y no se ofrecen pesos GGUF, por lo que esas rutas no estan confirmadas.
+- Opciones de despliegue: transformers es la libreria declarada. La etiqueta endpoints_compatible sugiere despliegue en Hugging Face Inference Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y no se ofrecen pesos GGUF, por lo que esas rutas no estan confirmadas.
 - Latencia: p50 de 116,1 ms por caso y p95 de 153,8 ms por caso, medidas en la evaluacion oficial. No se especifica el hardware empleado en esas mediciones ni el throughput en tokens por segundo o casos por segundo.
 - La interfaz de uso documentada es la libreria `laya`: `agent = laya.Agent("Ankit1106/laya-typed-decisions")` seguido de `agent.predict(state, questions)`.
 
@@ -109,8 +109,8 @@ No se dispone de informacion suficiente sobre alternativas de la misma categoria
 
 | Modelo | Parametros | Contexto | Accuracy (decisiones tipadas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ankit1106/laya-typed-decisions | 421.293.830 | No disponible | 0,769 | Apache-2.0 | HuggingFace, 0 descargas |
-| convaiinnovations/laya (modelo base) | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| Ankit1106/laya-typed-decisions | 421.293.830 | No disponible | 0,769 | Apache-2.0 | Hugging Face, 0 descargas |
+| convaiinnovations/laya (modelo base) | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Baseline TypeSafe Jev 1.13.0 | No disponible | No disponible | 0,727 | No disponible | No disponible |
 
 Las alternativas equivalentes de otros desarrolladores no se han identificado en la informacion disponible.
@@ -123,7 +123,7 @@ Las alternativas equivalentes de otros desarrolladores no se han identificado en
 - Soft accuracy baja: 0,5068 frente a una accuracy dura de 0,769 sugiere que, cuando el modelo falla, lo hace con margen y no solo por un error de redondeo en el nivel adyacente.
 - Ambito de dominio limitado: el ajuste se hizo con 1.200 casos (6.000 decisiones), un volumen reducido, y la evaluacion se realizo sobre 400 casos del mismo origen. El rendimiento fuera de esos cuatro flujos de trabajo es desconocido.
 - Contexto e idiomas: no se documenta la longitud de contexto soportada ni los idiomas cubiertos, por lo que no puede asumirse un comportamiento multilingue.
-- Adopcion nula y escasa validacion externa: 0 descargas y 0 likes en HuggingFace, con una unica evaluacion publicada por el propio autor y sin replicas independientes.
+- Adopcion nula y escasa validacion externa: 0 descargas y 0 likes en Hugging Face, con una unica evaluacion publicada por el propio autor y sin replicas independientes.
 - Ausencia de benchmarks estandar: no hay resultados en MMLU, HumanEval, GSM8K u otras suites, lo que impide comparar con el ecosistema generalista.
 - Restricciones de licencia: Apache-2.0 permite uso comercial y modificacion, pero el autor declara explicitamente que se trata de un checkpoint derivado y no reclama la propiedad de Laya. Conviene verificar la licencia del modelo base y del dataset LocalLLaMA/typed-decisions antes de un despliegue comercial.
 - Dependencia de una libreria concreta: el uso documentado requiere el paquete `laya`, cuyo mantenimiento y compatibilidad no estan garantizados por la informacion disponible.
@@ -131,7 +131,7 @@ Las alternativas equivalentes de otros desarrolladores no se han identificado en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ankit1106/laya-typed-decisions
+- Modelo en Hugging Face: https://huggingface.co/Ankit1106/laya-typed-decisions
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Codigo fuente de Laya: https://github.com/NandhaKishorM/laya
 - Dataset de ajuste (referenciado en la model card): LocalLLaMA/typed-decisions

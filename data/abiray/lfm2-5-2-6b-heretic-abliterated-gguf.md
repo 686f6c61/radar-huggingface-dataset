@@ -78,8 +78,8 @@ No se dispone de datos comparativos con otros modelos de tamaño similar en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Abiray/LFM2.5-2.6B-Heretic-Abliterated-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-2.6B
+- Repositorio Hugging Face del modelo: https://huggingface.co/Abiray/LFM2.5-2.6B-Heretic-Abliterated-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Documentación oficial de Liquid AI para LFM2.5-2.6B: https://docs.liquid.ai/lfm/models/lfm25-2.6b
 - Blog de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b
 - Página de modelos de Liquid AI: https://www.liquid.ai/models

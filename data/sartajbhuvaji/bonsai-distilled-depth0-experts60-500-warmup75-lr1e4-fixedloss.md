@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario sartajbhuvaji. Por la etiqueta de arquitectura (`qwen3_moe`) se trata de un modelo de mezcla de expertos (MoE) derivado de la familia Qwen3, con 16.936.679.424 parametros totales segun los pesos en safetensors. El nombre del repositorio sugiere un proceso de destilacion sobre una variante de 60 expertos, con un regimen de entrenamiento de 500 pasos, 75 pasos de warmup y una tasa de aprendizaje de 1e-4, aunque el autor no documenta estos detalles en la model card.
+El modelo `sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario sartajbhuvaji. Por la etiqueta de arquitectura (`qwen3_moe`) se trata de un modelo de mezcla de expertos (MoE) derivado de la familia Qwen3, con 16.936.679.424 parametros totales segun los pesos en safetensors. El nombre del repositorio sugiere un proceso de destilacion sobre una variante de 60 expertos, con un regimen de entrenamiento de 500 pasos, 75 pasos de warmup y una tasa de aprendizaje de 1e-4, aunque el autor no documenta estos detalles en la model card.
 
-La relevancia de esta ficha es limitada por la falta de documentacion: la model card es una plantilla autogenerada de HuggingFace sin ningun apartado completado, el repositorio no registra descargas ni likes, y no se especifican licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Esto lo convierte en un artefacto de investigacion experimental mas que en un modelo listo para produccion.
+La relevancia de esta ficha es limitada por la falta de documentacion: la model card es una plantilla autogenerada de Hugging Face sin ningun apartado completado, el repositorio no registra descargas ni likes, y no se especifican licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Esto lo convierte en un artefacto de investigacion experimental mas que en un modelo listo para produccion.
 
 A pesar de ello, sus 16.9B parametros en formato safetensors (~33.9 GB de repositorio, coherente con pesos de 16 bits) y su base MoE lo situan en la categoria de modelos medianos con activacion dispersa, donde es habitual obtener buena relacion calidad-coste de inferencia. Toda la informacion tecnica adicional que no aparece explicitamente en la informacion disponible se marca como "no disponible".
 
@@ -69,7 +69,7 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bonsai-distilled-depth0-experts60-500 (este) | 16.9B totales | no disponible | no disponible | Repositorio HuggingFace sin descargas | Model card vacia, sin benchmarks |
+| bonsai-distilled-depth0-experts60-500 (este) | 16.9B totales | no disponible | no disponible | Repositorio Hugging Face sin descargas | Model card vacia, sin benchmarks |
 | Qwen3 MoE (familia base) | 30B totales / 3B activos en la variante mas conocida | hasta 128k en algunas variantes | Apache 2.0 en las variantes publicadas por Alibaba | Ampliamente distribuido | Base de la arquitectura declarada; datos del modelo concreto no verificados aqui |
 | Mixtral 8x7B | 46.7B totales / 12.9B activos | 32k | Apache 2.0 | Muy extendido | Alternativa MoE de referencia en rango similar de activacion |
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss
 - Paper referenciado en las etiquetas (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact
 - Paper, repositorio, demo y model card detallada: no disponibles en la informacion proporcionada.

@@ -110,7 +110,7 @@ Comparativa con otros modelos de la misma categoría: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/mobilenetv3
+- Hugging Face: https://huggingface.co/fastforks/mobilenetv3
 - Repositorio de código `fastforks`: https://github.com/kleinicke/fastforks
 - Kernels CUDA: https://huggingface.co/fastforks/kernels
 - Definición de la variante (`card.toml`): https://github.com/kleinicke/fastforks/blob/main/src/fastforks/classification/models/mobilenetv3/card.toml

@@ -21,7 +21,7 @@ Su relevancia actual es doble: por un lado, sirve como referencia reproducible d
 | Licencia | AGPL-3.0 |
 | Formato de pesos | safetensors (libreria `ofoldx`) |
 
-Otros parametros del protocolo: 4 pasos de reciclado en las variantes monomer y monomer pTM, 21 pasos en multimer. Tamano del repositorio: 1,9 GB. Numero de descargas y likes en HuggingFace: 0 en el momento de la consulta.
+Otros parametros del protocolo: 4 pasos de reciclado en las variantes monomer y monomer pTM, 21 pasos en multimer. Tamano del repositorio: 1,9 GB. Numero de descargas y likes en Hugging Face: 0 en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / MSA | Confianza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/alphafold2-casp14 (esta ficha) | 93,28 M (por checkpoint) | MSA 256, pair 128, single 384; 5 checkpoints x 8 ensembles | pLDDT (y PAE/pTM en variante pTM) | AGPL-3.0 | HuggingFace via `ofoldx` |
-| oteam/alphafold2 | 93,283 M | MSA 256, pair 128, single 384; 4 reciclados | pLDDT | AGPL-3.0 | HuggingFace via `ofoldx` |
-| oteam/alphafold2-multimer | 93,278 M | MSA 256, pair 128, single 384; 21 reciclados | pLDDT | AGPL-3.0 | HuggingFace via `ofoldx` |
+| oteam/alphafold2-casp14 (esta ficha) | 93,28 M (por checkpoint) | MSA 256, pair 128, single 384; 5 checkpoints x 8 ensembles | pLDDT (y PAE/pTM en variante pTM) | AGPL-3.0 | Hugging Face via `ofoldx` |
+| oteam/alphafold2 | 93,283 M | MSA 256, pair 128, single 384; 4 reciclados | pLDDT | AGPL-3.0 | Hugging Face via `ofoldx` |
+| oteam/alphafold2-multimer | 93,278 M | MSA 256, pair 128, single 384; 21 reciclados | pLDDT | AGPL-3.0 | Hugging Face via `ofoldx` |
 | AlphaFold 2 oficial (google-deepmind/alphafold) | no disponible en la informacion | no disponible | pLDDT, PAE, pTM | no disponible en la informacion | Repositorio GitHub oficial |
 
 No se dispone en la informacion proporcionada de comparaciones con AlphaFold 3, ESMFold, RoseTTAFold ni otros predictores de estructura.
@@ -88,7 +88,7 @@ No se dispone en la informacion proporcionada de comparaciones con AlphaFold 3, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/alphafold2-casp14
+- Hugging Face: https://huggingface.co/oteam/alphafold2-casp14
 - Variante monomer: https://huggingface.co/oteam/alphafold2
 - Variante monomer pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer

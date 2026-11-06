@@ -73,10 +73,10 @@ La model card advierte explicitamente que estas metricas de panel reducido deben
 
 | Modelo | Parametros | Contexto | Rendimiento (MAE@3 en test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Intern-S1-mini V27 skin reaction) | 8,2 B | No disponible | 0,248 | No disponible | HuggingFace, pesos safetensors |
+| Este modelo (Intern-S1-mini V27 skin reaction) | 8,2 B | No disponible | 0,248 | No disponible | Hugging Face, pesos safetensors |
 | Morgan vanilla (baseline de fingerprints) | No aplica | No aplica | 0,568 | No aplica | Libreria estandar de quimioinformatica |
 | Morgan ponderado (baseline de fingerprints) | No aplica | No aplica | 0,666 | No aplica | Libreria estandar de quimioinformatica |
-| jiosephlee/Intern-S1-mini-lm (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| jiosephlee/Intern-S1-mini-lm (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de informacion sobre otros modelos de ranking de reaccion cutanea comparables en la documentacion proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre otros modelos de ranking de reaccion cutanea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-skin-reaction-combined-best
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-skin-reaction-combined-best
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiosephlee/assay-transfer-record-level-v27-skin-reaction-combined-intern
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/upenn-ml/record-level-assay-transfer/runs/xixb53hb

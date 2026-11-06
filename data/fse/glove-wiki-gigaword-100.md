@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Dimensiones | Vocabulario | Corpus | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fse/glove-wiki-gigaword-100` | 100 | 400.000 | Wikipedia 2014 + Gigaword 5 (6B tokens) | PDDL | HuggingFace, formato `gensim` |
+| `fse/glove-wiki-gigaword-100` | 100 | 400.000 | Wikipedia 2014 + Gigaword 5 (6B tokens) | PDDL | Hugging Face, formato `gensim` |
 | GloVe wiki+gigaword de 50 dimensiones | 50 | 400.000 (misma publicación) | Mismo corpus | PDDL | Publicado por Stanford NLP; no verificado en este repositorio |
 | GloVe wiki+gigaword de 300 dimensiones | 300 | 400.000 (misma publicación) | Mismo corpus | PDDL | Publicado por Stanford NLP; no verificado en este repositorio |
 | `word2vec-google-news-300` | 300 | No disponible en la información proporcionada | Google News | No disponible en la información proporcionada | Disponible fuera de este repositorio |
@@ -100,7 +100,7 @@ Solo la primera fila está verificada con la información proporcionada. Las var
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fse/glove-wiki-gigaword-100
+- Repositorio en Hugging Face: https://huggingface.co/fse/glove-wiki-gigaword-100
 - Proyecto GloVe de Stanford NLP: https://nlp.stanford.edu/projects/glove/
 - Paper original: Pennington, Socher y Manning (2014), "GloVe: Global Vectors for Word Representation": https://nlp.stanford.edu/pubs/glove.pdf
 - Repositorio de `fse` (Fast Sentence Embeddings), con código, documentación y benchmark STS: https://github.com/oborchers/Fast_Sentence_Embeddings

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-270` es un checkpoint de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) publicado por el usuario yuxuanw8 en HuggingFace. Por el nombre del repositorio y el tag `qwen2` de la ficha, se trata de un ajuste o entrenamiento por refuerzo sobre una base de la familia Qwen2 de 3B, orientado a tareas de razonamiento multitramo sobre el conjunto de datos HotpotQA (el segmento `hotpot` del identificador), y el sufijo `checkpoint-270` indica que es una instantánea intermedia de un proceso de entrenamiento más largo, no un modelo final.
+El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-270` es un checkpoint de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) publicado por el usuario yuxuanw8 en Hugging Face. Por el nombre del repositorio y el tag `qwen2` de la ficha, se trata de un ajuste o entrenamiento por refuerzo sobre una base de la familia Qwen2 de 3B, orientado a tareas de razonamiento multitramo sobre el conjunto de datos HotpotQA (el segmento `hotpot` del identificador), y el sufijo `checkpoint-270` indica que es una instantánea intermedia de un proceso de entrenamiento más largo, no un modelo final.
 
-La relevancia del modelo es limitada y de carácter exclusivamente experimental: acumula 0 descargas y 0 likes, su model card es la plantilla autogenerada de HuggingFace sin ningún campo completado, y el repositorio no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Esto lo convierte en un artefacto útil únicamente para quien quiera inspeccionar o reproducir el experimento del autor, no en un modelo apto para producción.
+La relevancia del modelo es limitada y de carácter exclusivamente experimental: acumula 0 descargas y 0 likes, su model card es la plantilla autogenerada de Hugging Face sin ningún campo completado, y el repositorio no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Esto lo convierte en un artefacto útil únicamente para quien quiera inspeccionar o reproducir el experimento del autor, no en un modelo apto para producción.
 
 La información verificable se reduce a los metadatos técnicos: arquitectura compatible con `transformers`, pesos en `safetensors`, pipeline de `text-generation`, naturaleza conversacional, tag `endpoints_compatible` y `text-generation-inference`, y un tamaño de repositorio de 12,4 GB. El resto de las secciones de esta ficha se marcan como no disponibles, siguiendo el principio de no atribuir al modelo capacidades o especificaciones que no estén documentadas.
 
@@ -27,7 +27,7 @@ La información verificable se reduce a los metadatos técnicos: arquitectura co
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible es el tag `qwen2` de HuggingFace y el nombre del repositorio, que apunta a una base Qwen de 3B parámetros. La familia Qwen2 emplea transformers decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con Grouped Query Attention, pero no hay confirmacion en la ficha de que este checkpoint conserve esa configuracion exacta, ni de su numero de capas, dimension oculta, numero de cabezas de atencion o vocabulario. El recuento de parametros (3.085.938.688) es coherente con un modelo denso de ese orden de magnitud, no con una arquitectura MoE.
+La unica informacion estructural disponible es el tag `qwen2` de Hugging Face y el nombre del repositorio, que apunta a una base Qwen de 3B parámetros. La familia Qwen2 emplea transformers decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con Grouped Query Attention, pero no hay confirmacion en la ficha de que este checkpoint conserve esa configuracion exacta, ni de su numero de capas, dimension oculta, numero de cabezas de atencion o vocabulario. El recuento de parametros (3.085.938.688) es coherente con un modelo denso de ese orden de magnitud, no con una arquitectura MoE.
 
 Respecto al entrenamiento, el identificador sugiere un proceso de aprendizaje por refuerzo (`rlcr`) sobre HotpotQA (`hotpot`), un benchmark de question answering multitramo que requiere encadenar evidencia de varios documentos. El sufijo `checkpoint-270` indica un guardado intermedio del paso 270. No obstante, no se especifican en ningun lugar el numero de tokens de entrenamiento, la composicion del dataset, el algoritmo de RL empleado (GRPO, PPO u otro), si hubo fases de SFT o DPO previas, ni la receta de hiperparametros. Tampoco se documenta la base exacta sobre la que se entreno (Qwen2-3B, Qwen2.5-3B u otra variante), lo que impide reproducir el experimento solo con la informacion publicada.
 
@@ -42,7 +42,7 @@ Una observacion tecnica relevante: el repositorio ocupa 12,4 GB para 3,09 mil mi
 - Soporte de agentes y razonamiento multietapa: no disponible; no se documenta ningun modo de razonamiento explicito ni `thinking mode`.
 - Capacidades multilingues: no disponible; no se declara ninguna lista de idiomas.
 - Vision, audio u otras modalidades: no disponible; no hay tags ni pesos que indiquen torres multimodales.
-- Despliegue via Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con el stack de TGI de HuggingFace.
+- Despliegue via Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con el stack de TGI de Hugging Face.
 
 ## Casos de uso
 
@@ -101,7 +101,7 @@ Diferencias clave: frente a estas alternativas, el checkpoint de yuxuanw8 no ofr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-270
+- Repositorio en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-270
 - Referencia citada en la model card (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - Paper del modelo: no disponible

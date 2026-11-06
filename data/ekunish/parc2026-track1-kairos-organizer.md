@@ -23,7 +23,7 @@ Su relevancia es de trazabilidad y reproducibilidad experimental, no de inferenc
 | Tamano del repositorio | 14,3 GB |
 | Tamano del archivo de handoff | 738.242.629 bytes (~704 MiB) |
 | SHA-256 del archivo | `297c6478fe18861756249b2c0246cdb140d65aebddd2fc81f5be1fe4306648bf` |
-| Tarea | robotics (pipeline declarado en HuggingFace) |
+| Tarea | robotics (pipeline declarado en Hugging Face) |
 | Fecha de creacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-12 |
 
@@ -93,7 +93,7 @@ No disponible. Este repositorio no es un modelo y no se define frente a alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ekunish/parc2026-track1-kairos-organizer
+- Repositorio en Hugging Face: https://huggingface.co/ekunish/parc2026-track1-kairos-organizer
 - Repositorio hermano con pesos crudos: https://huggingface.co/ekunish/parc2026-track1-score06-candidates (revision `a0b3f620c395caa38b3375a876c99c142d249e7b`)
 - Repositorio hermano con pesos crudos: https://huggingface.co/ekunish/parc2026-track1-physical-rgb-20260909 (revision `7092baa0d3dbf06685f4250ab34e59f680fe71e4`)
 - LIBERO (simulador y definiciones de tareas, MIT): https://github.com/Lifelong-Robot-Learning/LIBERO

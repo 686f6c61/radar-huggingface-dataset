@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Debussy es un modelo publicado en HuggingFace por el usuario K00lKidd bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin describir arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
+Debussy es un modelo publicado en Hugging Face por el usuario K00lKidd bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin describir arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
 No es posible determinar que problema resuelve, que arquitectura emplea ni para que tareas esta disenado, ya que el autor no ha proporcionado informacion tecnica alguna. La relevancia actual del modelo es, por tanto, muy limitada: se trata de un artefacto sin documentacion que no permite evaluar su idoneidad para ningun caso de uso concreto.
 
-Esta ficha se ha redactado con la informacion estrictamente disponible. Todos los campos que no aparecen en la model card ni en los metadatos de HuggingFace se indican explicitamente como "no disponible", sin inferencias ni suposiciones sobre el modelo.
+Esta ficha se ha redactado con la informacion estrictamente disponible. Todos los campos que no aparecen en la model card ni en los metadatos de Hugging Face se indican explicitamente como "no disponible", sin inferencias ni suposiciones sobre el modelo.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ Tampoco se documentan innovaciones tecnicas destacables, como decodificacion esp
 No es posible recomendar casos de uso concretos sin informacion sobre arquitectura, tamano, contexto, idiomas o capacidades del modelo. La ausencia de model card, de benchmarks y de cualquier ejemplo de uso impide justificar tecnicamente su aplicacion en escenarios de produccion.
 
 - Evaluacion interna: un equipo podria descargar los pesos y realizar pruebas exploratorias para caracterizar el modelo, aunque no se dispone de informacion sobre el formato de pesos ni sobre como cargarlo.
-- Investigacion de artefactos: utilizable como caso de estudio sobre publicaciones sin documentacion en HuggingFace.
+- Investigacion de artefactos: utilizable como caso de estudio sobre publicaciones sin documentacion en Hugging Face.
 - El resto de casos de uso habituales (atencion al cliente, generacion de codigo, RAG, agentes, analisis de documentos, traduccion) no pueden justificarse sin datos tecnicos que respalden la idoneidad del modelo.
 
 ## Benchmarks y rendimiento
@@ -77,5 +77,5 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/K00lKidd/Debussy
+- Hugging Face: https://huggingface.co/K00lKidd/Debussy
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

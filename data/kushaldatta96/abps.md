@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kushaldatta96/abps` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `HuggingFaceTB/SmolVLM2-2.2B-Instruct`, un modelo multimodal de 2.200 millones de parámetros desarrollado por HuggingFace. El adaptador está diseñado para la generación de texto conversacional, aunque no se especifica el dataset ni el objetivo concreto del fine-tuning.
+El modelo `kushaldatta96/abps` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `HuggingFaceTB/SmolVLM2-2.2B-Instruct`, un modelo multimodal de 2.200 millones de parámetros desarrollado por Hugging Face. El adaptador está diseñado para la generación de texto conversacional, aunque no se especifica el dataset ni el objetivo concreto del fine-tuning.
 
 La relevancia de este modelo radica en que demuestra un flujo de trabajo típico de adaptación eficiente de parámetros: en lugar de entrenar un modelo completo, se entrena un pequeño conjunto de pesos adicionales (LoRA) que se pueden cargar sobre el modelo base. Esto permite personalizar el comportamiento del modelo con un coste computacional reducido. Sin embargo, la información pública es muy limitada: no se detallan los datos de entrenamiento, las métricas de rendimiento ni las capacidades específicas del adaptador, lo que dificulta su evaluación para uso en producción.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que demuestra un flujo de trabajo típico
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en la técnica LoRA, que congela los pesos del modelo original e inyecta matrices de baja dimensión en las capas de atención y feed-forward. Esto reduce drásticamente el número de parámetros entrenables y el coste de entrenamiento. El entrenamiento se realizó con SFT (Supervised Fine-Tuning) utilizando la librería TRL de HuggingFace, con PEFT 0.20.0, Transformers 5.16.1 y PyTorch 2.13.0.
+El adaptador se basa en la técnica LoRA, que congela los pesos del modelo original e inyecta matrices de baja dimensión en las capas de atención y feed-forward. Esto reduce drásticamente el número de parámetros entrenables y el coste de entrenamiento. El entrenamiento se realizó con SFT (Supervised Fine-Tuning) utilizando la librería TRL de Hugging Face, con PEFT 0.20.0, Transformers 5.16.1 y PyTorch 2.13.0.
 
 No se proporciona información sobre el dataset utilizado, el número de pasos de entrenamiento, la tasa de aprendizaje ni otras hiperparámetros. Tampoco se detalla si se aplicaron técnicas adicionales como RLHF o DPO. El modelo base, SmolVLM2-2.2B-Instruct, es un modelo multimodal que combina un codificador de visión con un decoder de lenguaje, entrenado con datos de imagen-texto y texto puro. El adaptador podría estar orientado a tareas de texto conversacional, pero no hay evidencia de que modifique las capacidades multimodales del base.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - Al ser un adaptador LoRA, el requisito principal es el modelo base SmolVLM2-2.2B-Instruct. Este modelo tiene 2.200 millones de parámetros, por lo que en FP16 requiere aproximadamente 4,4 GB de VRAM solo para los pesos. Con cuantización de 8 bits o 4 bits, puede reducirse a 2-3 GB.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM (por ejemplo, RTX 2060, RTX 3060, RTX 4060) puede ejecutar el modelo en FP16. Para mayor velocidad, se recomienda una RTX 3090 o superior.
 - Es posible ejecutarlo en CPU con cuantización GGUF, aunque la latencia será mayor.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con Transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con Transformers.
 - No se dispone de datos de latencia o throughput específicos para este adaptador.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de información sobre adaptadores LoRA comparables sobre el mismo 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kushaldatta96/abps)
+- [Modelo en Hugging Face](https://huggingface.co/kushaldatta96/abps)
 - [Modelo base SmolVLM2-2.2B-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct)
 - [Librería TRL](https://github.com/huggingface/trl)
 - [PEFT](https://github.com/huggingface/peft)

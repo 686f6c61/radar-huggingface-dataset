@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-operator-1-d10 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en HuggingFace. Se trata del checkpoint final original empleado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". El modelo pertenece a la familia de los looped transformers: la coordenada de profundidad d10 es la coordenada de escalado de la escalera y no tiene por que coincidir con el numero de bloques Transformer ejecutados. Con 1 repeticion del nucleo configurada tanto en entrenamiento como en la evaluacion final, el artefacto corresponde a una configuracion concreta de esa escalera.
+loop-operator-1-d10 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en Hugging Face. Se trata del checkpoint final original empleado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". El modelo pertenece a la familia de los looped transformers: la coordenada de profundidad d10 es la coordenada de escalado de la escalera y no tiene por que coincidir con el numero de bloques Transformer ejecutados. Con 1 repeticion del nucleo configurada tanto en entrenamiento como en la evaluacion final, el artefacto corresponde a una configuracion concreta de esa escalera.
 
 El checkpoint almacena 331.939.840 parametros en FP32 (1,328 GB) y emplea el tokenizador GPT-2 de tiktoken con un vocabulario de 50.257 tokens, ampliado a 50.304 filas en el modelo. La longitud de contexto es de 2.048 tokens, con anchura de 1.280 y 10 cabezas de atencion. La perdida de validacion registrada durante el preentrenamiento es de 3,101648 nats/token sobre el propio corpus de preentrenamiento, una metrica distinta de la NLL de respuestas de CORE.
 
@@ -86,7 +86,7 @@ La informacion proporcionada no incluye resultados de rendimiento que permitan u
 
 | Modelo | Parametros | Longitud de contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| loop-operator-1-d10 | 331,9 M | 2.048 | Ingles | no disponible | Pesos PyTorch `.pt` en HuggingFace; requiere codebase propio |
+| loop-operator-1-d10 | 331,9 M | 2.048 | Ingles | no disponible | Pesos PyTorch `.pt` en Hugging Face; requiere codebase propio |
 | GPT-2 (variante de ~355 M) | 355 M (dato publico ampliamente conocido) | 1.024 | Ingles | licencia publica del autor original | Pesos en safetensors/PyTorch; soporte amplio en frameworks |
 | Pythia-410M | 410 M (dato publico ampliamente conocido) | 2.048 | Ingles | licencia publica del autor original | Pesos en safetensors; soporte en Transformers |
 | Rendimiento comparado (MMLU, CORE, etc.) | no disponible para los tres casos en la informacion proporcionada | | | | |
@@ -108,7 +108,7 @@ Cualquier comparacion de calidad entre estos modelos exigiria ejecutar la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-operator-1-d10
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-operator-1-d10
 - Codebase del paper: https://github.com/cue-engineering/loop
 - Articulo de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (no se dispone de URL en la informacion proporcionada)
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb

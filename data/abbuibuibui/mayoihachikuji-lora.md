@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MayoiHachikuji-Lora es un LoRA de personaje para modelos de difusion SDXL, entrenado sobre el checkpoint waiIllustriousSDXL v17, que reproduce a Mayoi Hachikuji (八九寺真宵), personaje de la serie *Monogatari Series*. Lo desarrolla el usuario de HuggingFace abbuibuibui y se distribuye como un adaptador de bajo rango que se carga junto al modelo base mediante la libreria diffusers o en flujos de ComfyUI. No es un modelo de lenguaje: es un adaptador de generacion de imagenes, por lo que las secciones de esta ficha se adaptan a esa naturaleza.
+MayoiHachikuji-Lora es un LoRA de personaje para modelos de difusion SDXL, entrenado sobre el checkpoint waiIllustriousSDXL v17, que reproduce a Mayoi Hachikuji (八九寺真宵), personaje de la serie *Monogatari Series*. Lo desarrolla el usuario de Hugging Face abbuibuibui y se distribuye como un adaptador de bajo rango que se carga junto al modelo base mediante la libreria diffusers o en flujos de ComfyUI. No es un modelo de lenguaje: es un adaptador de generacion de imagenes, por lo que las secciones de esta ficha se adaptan a esa naturaleza.
 
 El modelo resuelve un problema acotado: la generacion consistente y fiel de un personaje concreto con un atuendo y unos rasgos definidos (dos coletas, pelo y ojos castanos, cinta blanca con alas, uniforme escolar con falda azul y mochila rosa con forma de caracol). El autor publica siete epocas (E1-E7) y recomienda la E6 a fuerza 0.8 tras una evaluacion comparativa propia sobre diez escenas y cuatro intensidades.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MayoiHachikuji-Lora | LoRA de personaje | waiIllustriousSDXL v17 | rango 64 / alpha 32 | no aplica | creativeml-openrail-m | HuggingFace, ModelScope |
-| LoRA de personaje SDXL generico | LoRA de personaje | SDXL / Illustrious | variable | no aplica | variable | HuggingFace, Civitai |
-| waiIllustriousSDXL v17 (base) | Checkpoint completo | SDXL | no disponible | no aplica | no disponible en esta ficha | HuggingFace |
+| MayoiHachikuji-Lora | LoRA de personaje | waiIllustriousSDXL v17 | rango 64 / alpha 32 | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
+| LoRA de personaje SDXL generico | LoRA de personaje | SDXL / Illustrious | variable | no aplica | variable | Hugging Face, Civitai |
+| waiIllustriousSDXL v17 (base) | Checkpoint completo | SDXL | no disponible | no aplica | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros LoRA de personaje comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de otros LoRA de personaje comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/MayoiHachikuji-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/MayoiHachikuji-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/MayoiHachikuji-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/MayoiHachikuji-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/MayoiHachikuji-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/MayoiHachikuji-Dataset

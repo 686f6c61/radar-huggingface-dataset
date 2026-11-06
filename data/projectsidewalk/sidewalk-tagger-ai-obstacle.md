@@ -80,9 +80,9 @@ Advertencia sobre la búsqueda web: los resultados de búsqueda disponibles no c
 
 | Modelo | Tarea | Backbone | Clases de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `projectsidewalk/sidewalk-tagger-ai-obstacle` | Clasificación multi-etiqueta de obstáculos en aceras | DINOv2 ViT-B/14 con 4 tokens de registro | 20 posiciones (17 activas) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| `facebook/dinov2-with-registers-base` | Extracción de características visuales auto-supervisada | DINOv2 ViT-B/14 con 4 tokens de registro | No aplica (backbone sin cabezal de clasificación específico) | No indicada en la información disponible | HuggingFace (modelo base del anterior) |
-| Otros taggers de `projectsidewalk/sidewalk-tagger-ai-models` | Clasificación multi-etiqueta por etiqueta padre de Project Sidewalk | Misma familia DINOv2 afinada | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace, repositorio con todos los modelos del artículo |
+| `projectsidewalk/sidewalk-tagger-ai-obstacle` | Clasificación multi-etiqueta de obstáculos en aceras | DINOv2 ViT-B/14 con 4 tokens de registro | 20 posiciones (17 activas) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| `facebook/dinov2-with-registers-base` | Extracción de características visuales auto-supervisada | DINOv2 ViT-B/14 con 4 tokens de registro | No aplica (backbone sin cabezal de clasificación específico) | No indicada en la información disponible | Hugging Face (modelo base del anterior) |
+| Otros taggers de `projectsidewalk/sidewalk-tagger-ai-models` | Clasificación multi-etiqueta por etiqueta padre de Project Sidewalk | Misma familia DINOv2 afinada | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face, repositorio con todos los modelos del artículo |
 
 No se conocen, a partir de la información disponible, otros modelos públicos comparables especializados en etiquetado fino de accesibilidad de aceras. La comparación más significativa es con su propio backbone sin afinar (que no produce etiquetas de accesibilidad) y con los modelos hermanos del mismo repositorio, que comparten arquitectura y difieren en la etiqueta padre que clasifican.
 
@@ -102,7 +102,7 @@ No se conocen, a partir de la información disponible, otros modelos públicos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-obstacle
+- Modelo en Hugging Face: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-obstacle
 - Modelo base: https://huggingface.co/facebook/dinov2-with-registers-base
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/projectsidewalk/sidewalk-tagger-ai-validated
 - Repositorio con todos los modelos del artículo: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-models

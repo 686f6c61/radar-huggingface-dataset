@@ -6,7 +6,7 @@ LFM2.5-24B-A2B-Turbo-Brilliance-50X-NEO-MAX-Imatrix-GGUF es un ajuste fino comun
 
 El modelo se etiqueta como MoE (mixture of experts) y de tipo "liquid", coherente con la familia LFM2.5 de Liquid AI, referenciada mediante el paper arXiv:2511.23404. La nomenclatura "24B-A2B" del modelo base sugiere 24.000 millones de parametros totales con aproximadamente 2.000 millones activos por token, aunque la cifra exacta de parametros activos no se confirma en la informacion disponible. El autor anade un conjunto de modos de razonamiento (se anuncian 27 "reasoning modes") y de personajes o system prompts preconfigurados ("AI Constructs": 15 estandar y 5 "Super"), ademas de una variante de cuantizacion denominada NEO Imatrix MAX.
 
-Su relevancia radica en ofrecer una version cuantizada y "conversacional" de un modelo MoE de ~24B pensada para inferencia local, con soporte declarado para 18 idiomas (incluido el castellano). No obstante, el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace, y la licencia es lfm1.0. El numero de descargas registrado es 0 y cuenta con 14 "likes" en el momento de la consulta.
+Su relevancia radica en ofrecer una version cuantizada y "conversacional" de un modelo MoE de ~24B pensada para inferencia local, con soporte declarado para 18 idiomas (incluido el castellano). No obstante, el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face, y la licencia es lfm1.0. El numero de descargas registrado es 0 y cuenta con 14 "likes" en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las alt
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el repositorio exige aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido (gated): el repositorio exige aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia lfm1.0: es una licencia propia del ecosistema Liquid AI; conviene revisar sus terminos antes de cualquier uso comercial, ya que puede imponer restricciones.
 - Es un ajuste fino comunitario no oficial: no esta respaldado por Liquid AI y su calidad puede diferir del modelo base.
 - Los "27 reasoning modes" y los "AI Constructs" son plantillas de prompt sin validacion independiente publicada; su rendimiento real no esta verificado.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las alt
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/DavidAU/LFM2.5-24B-A2B-Turbo-Brilliance-50X-NEO-MAX-Imatrix-GGUF
+- Hugging Face (repositorio del modelo): https://huggingface.co/DavidAU/LFM2.5-24B-A2B-Turbo-Brilliance-50X-NEO-MAX-Imatrix-GGUF
 - Modelo base: LiquidAI/LFM2.5-24B-A2B (referenciado en los tags del repositorio)
 - Paper citado: arXiv:2511.23404
 - Repositorio de Liquid AI: no disponible en la informacion proporcionada

@@ -71,7 +71,7 @@ CFRL-SVG-2D es la variante con mejores resultados en las cuatro tareas, con una 
 
 | Modelo | Parámetros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CFRL (ELF-B + RL) | 105M | no disponible | Flujo continuo | MIT | Pesos en HuggingFace, código en `cfrl-release` |
+| CFRL (ELF-B + RL) | 105M | no disponible | Flujo continuo | MIT | Pesos en Hugging Face, código en `cfrl-release` |
 | ELF-B (base) | 105M | no disponible | Flujo continuo | MIT | Pesos en `embedded-language-flows` |
 | LLM autoregresivo pequeño (p. ej. Qwen2.5-0.5B) | ~500M | 32K típico | Autoregresivo discreto | Apache 2.0 | Amplia |
 
@@ -89,7 +89,7 @@ La comparación directa con LLM autoregresivos no es homogénea: CFRL está espe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tufts-ml/CFRL
+- Hugging Face: https://huggingface.co/tufts-ml/CFRL
 - Modelo base ELF: https://huggingface.co/embedded-language-flows
 - Repositorio de código `cfrl-release`: no disponible como URL en la información proporcionada (se menciona en la model card)
 - Artículo CFRL: no disponible como URL en la información proporcionada (citación `@article{cfrl2026}`)

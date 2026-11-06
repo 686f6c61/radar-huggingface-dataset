@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/Qwen3.8-27B-THIREUS-Q6_0_R4-SPECIAL_SPLIT` es un checkpoint publicado en HuggingFace por el usuario Thireus, con licencia MIT. El nombre sugiere que se trata de una variante o adaptación de un modelo de la familia Qwen, con aproximadamente 27 mil millones de parámetros, cuantizado en formato Q6_0 (típico de GGUF) y con un split especial no especificado. Sin embargo, la model card publicada por el autor no contiene ninguna información adicional más allá de la licencia, por lo que no es posible confirmar la arquitectura, el proceso de entrenamiento, las capacidades o el rendimiento real del modelo.
+El modelo `Thireus/Qwen3.8-27B-THIREUS-Q6_0_R4-SPECIAL_SPLIT` es un checkpoint publicado en Hugging Face por el usuario Thireus, con licencia MIT. El nombre sugiere que se trata de una variante o adaptación de un modelo de la familia Qwen, con aproximadamente 27 mil millones de parámetros, cuantizado en formato Q6_0 (típico de GGUF) y con un split especial no especificado. Sin embargo, la model card publicada por el autor no contiene ninguna información adicional más allá de la licencia, por lo que no es posible confirmar la arquitectura, el proceso de entrenamiento, las capacidades o el rendimiento real del modelo.
 
 Dado que el modelo no tiene descargas ni likes y fue creado recientemente (agosto de 2026), se trata probablemente de un experimento personal o un upload preliminar. La ausencia de documentación técnica impide realizar una evaluación rigurosa, por lo que esta ficha se limita a reflejar los datos disponibles y a señalar las incógnitas pendientes.
 
@@ -34,7 +34,7 @@ Dada la falta de documentación, no es posible recomendar casos de uso específi
 - Evaluación exploratoria: cargar el modelo en un entorno de pruebas para verificar su comportamiento y compararlo con el Qwen original.
 - Fine-tuning adicional: si el checkpoint es un merge o un fine-tune, podría servir como base para experimentos de adaptación a dominios concretos, siempre que se valide su calidad.
 - Investigación de cuantización: estudiar el efecto del formato Q6_0 en la degradación de rendimiento respecto al modelo original.
-- Uso educativo: como ejemplo de publicación de checkpoints en HuggingFace, aunque carece de valor práctico sin documentación.
+- Uso educativo: como ejemplo de publicación de checkpoints en Hugging Face, aunque carece de valor práctico sin documentación.
 
 En cualquier caso, se desaconseja su uso en entornos productivos o críticos hasta que el autor publique especificaciones detalladas.
 
@@ -60,6 +60,6 @@ No disponible. Al no conocerse la arquitectura ni el rendimiento real, no es pos
 
 ## Enlaces
 
-- [HuggingFace - Thireus/Qwen3.8-27B-THIREUS-Q6_0_R4-SPECIAL_SPLIT](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q6_0_R4-SPECIAL_SPLIT)
+- [Hugging Face - Thireus/Qwen3.8-27B-THIREUS-Q6_0_R4-SPECIAL_SPLIT](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q6_0_R4-SPECIAL_SPLIT)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) asociados a este modelo.

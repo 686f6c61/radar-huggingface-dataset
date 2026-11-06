@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sadjava/smolvla-libero-goal-peft-t0-n25-s2000` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace bajo la librería PEFT. Según los metadatos, se trata de un ajuste fino de un modelo base identificado como `smolvla_libero90_100k/checkpoints/last/pretrained_model`, lo que sugiere que está diseñado para tareas de robótica basadas en el benchmark LIBERO (específicamente la variante "goal", orientada a objetivos). El nombre "smolvla" apunta a un modelo VLA (Vision-Language-Action) de tamaño reducido, probablemente derivado de arquitecturas como SmolVLM o similares, aunque no se confirma en la documentación.
+El modelo `sadjava/smolvla-libero-goal-peft-t0-n25-s2000` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face bajo la librería PEFT. Según los metadatos, se trata de un ajuste fino de un modelo base identificado como `smolvla_libero90_100k/checkpoints/last/pretrained_model`, lo que sugiere que está diseñado para tareas de robótica basadas en el benchmark LIBERO (específicamente la variante "goal", orientada a objetivos). El nombre "smolvla" apunta a un modelo VLA (Vision-Language-Action) de tamaño reducido, probablemente derivado de arquitecturas como SmolVLM o similares, aunque no se confirma en la documentación.
 
 La información disponible es extremadamente limitada: no se especifican licencia, idiomas, arquitectura, parámetros ni contexto. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni valoraciones. La model card es una plantilla vacía con campos "[More Information Needed]". Esto impide realizar una evaluación técnica rigurosa. La ficha que sigue refleja esta falta de datos y marca como "no disponible" todo aquello que no esté documentado.
 
@@ -65,6 +65,6 @@ No disponible. No se conocen modelos comparables de la misma categoría (adaptad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n25-s2000
+- Hugging Face: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n25-s2000
 
 No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sentiment-model es un modelo de clasificacion de texto publicado por el usuario swatibgupta en HuggingFace. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, la version destilada de BERT desarrollada por Hugging Face, sobre un dataset de sentimiento que el autor no identifica en la model card ("unknown dataset"). El pipeline declarado es text-classification y la libreria de referencia es transformers. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 26 de septiembre de 2026.
+sentiment-model es un modelo de clasificacion de texto publicado por el usuario swatibgupta en Hugging Face. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, la version destilada de BERT desarrollada por Hugging Face, sobre un dataset de sentimiento que el autor no identifica en la model card ("unknown dataset"). El pipeline declarado es text-classification y la libreria de referencia es transformers. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 26 de septiembre de 2026.
 
 El modelo cuenta con 66.955.779 parametros segun los pesos en safetensors, lo que coincide con el tamano estandar de DistilBERT (6 capas, 768 dimensiones ocultas, 12 cabezas de atencion). Es, por tanto, un modelo denso y ligero, pensado para inferencia en CPU o en GPUs de gama baja. Su licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, aunque la ausencia de documentacion sobre el dataset de entrenamiento limita seriamente la trazabilidad.
 
@@ -76,10 +76,10 @@ Aviso: existe una incoherencia en la propia model card, ya que la loss de evalua
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sentiment-model (swatibgupta) | 66,9 M | 512 tokens | Accuracy 0,6598 y F1 macro 0,6493 en un dataset no identificado | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Referencia publica: en torno al 91 % de accuracy en SST-2 (cifra del modelo oficial, no verificada en esta ficha) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| bert-base-uncased | 110 M | 512 tokens | Accuracy de referencia en clasificacion superior a DistilBERT, con mayor coste de inferencia | Apache 2.0 | HuggingFace, muy extendido |
-| roberta-base (ajustado para sentimiento) | 125 M | 512 tokens | Mayor capacidad que DistilBERT, aproximadamente el doble de coste de inferencia | MIT | HuggingFace, muy extendido |
+| sentiment-model (swatibgupta) | 66,9 M | 512 tokens | Accuracy 0,6598 y F1 macro 0,6493 en un dataset no identificado | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Referencia publica: en torno al 91 % de accuracy en SST-2 (cifra del modelo oficial, no verificada en esta ficha) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| bert-base-uncased | 110 M | 512 tokens | Accuracy de referencia en clasificacion superior a DistilBERT, con mayor coste de inferencia | Apache 2.0 | Hugging Face, muy extendido |
+| roberta-base (ajustado para sentimiento) | 125 M | 512 tokens | Mayor capacidad que DistilBERT, aproximadamente el doble de coste de inferencia | MIT | Hugging Face, muy extendido |
 
 La conclusion de la comparativa es que este modelo no aporta ventaja frente al DistilBERT oficial ajustado en SST-2 ni frente a RoBERTa-base para tareas de sentimiento en ingles: mismo tamano o menor, contexto identico y rendimiento declarado muy inferior, sobre un dataset desconocido. Su unico diferencial es la licencia Apache 2.0, que comparten las alternativas citadas.
 

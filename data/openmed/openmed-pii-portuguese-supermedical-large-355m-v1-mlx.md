@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio MLX en HuggingFace: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1-mlx
+- Repositorio MLX en Hugging Face: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1-mlx
 - Checkpoint original: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1
 - Variante ONNX para Android/Web: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1-onnx-android
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed

@@ -100,7 +100,7 @@ Los datos de los modelos alternativos corresponden a la informacion publica habi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pragmaticcs/SignOfFrobenius-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pragmaticcs/SignOfFrobenius-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/pragmaticcs/SignOfFrobenius
 - Model card original (referenciada por el autor): https://huggingface.co/pragmaticcs/SignOfFrobenius
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

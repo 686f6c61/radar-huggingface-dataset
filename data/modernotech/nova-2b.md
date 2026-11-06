@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nova 2B es un modelo de generacion de texto publicado por ModernoTech en el Hub de HuggingFace bajo licencia MIT. A pesar del nombre comercial "2B", los datos reales de safetensors indican 4.647.450.147 parametros totales, es decir, aproximadamente 4,65 mil millones de parametros. El autor lo describe como una arquitectura hibrida propietaria denominada "Hybrid MoCE + Ternary Native", combinada con un framework externo (Nova AI) que anade expertos modulares en Python, una capa de RAG sobre SQLite FTS5 y un motor de auto-mejora.
+Nova 2B es un modelo de generacion de texto publicado por ModernoTech en el Hub de Hugging Face bajo licencia MIT. A pesar del nombre comercial "2B", los datos reales de safetensors indican 4.647.450.147 parametros totales, es decir, aproximadamente 4,65 mil millones de parametros. El autor lo describe como una arquitectura hibrida propietaria denominada "Hybrid MoCE + Ternary Native", combinada con un framework externo (Nova AI) que anade expertos modulares en Python, una capa de RAG sobre SQLite FTS5 y un motor de auto-mejora.
 
 Segun la model card, el modelo forma parte de un sistema mayor: el LLM actua como motor de razonamiento de respaldo y "profesor" para sintetizar conocimiento nuevo, mientras que las tareas especializadas se delegan a expertos (CodeExpert, LanguagesExpert, MathExpert). El modelo se distribuye principalmente en formato GGUF y declara una ventana de contexto de 1.000.000 de tokens (1.048.576 en el ejemplo de llama.cpp), orientada a conversacion, generacion de texto y uso sin censura ("uncensored").
 
@@ -92,7 +92,7 @@ Datos de rendimiento comparado: no disponibles (Nova 2B no publica benchmarks, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ModernoTech/nova-2b
+- Hugging Face: https://huggingface.co/ModernoTech/nova-2b
 - Especificacion GGUF del autor (referenciada en la model card): docs/NOVA_GGUF_SPEC.md
 - Licencia: archivo LICENSE en el repositorio (MIT)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

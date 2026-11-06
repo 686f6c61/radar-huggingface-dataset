@@ -83,7 +83,7 @@ La comparativa se basa en características cualitativas, ya que no se dispone de
 
 ## Enlaces
 
-- [Modelo en HuggingFace (este checkpoint)](https://huggingface.co/groxaxo/Huihui-Qwen3.8-27B-abliterated-GPTQ-Pro-4bit-g64-calib128)
+- [Modelo en Hugging Face (este checkpoint)](https://huggingface.co/groxaxo/Huihui-Qwen3.8-27B-abliterated-GPTQ-Pro-4bit-g64-calib128)
 - [Modelo base abliterated (huihui-ai)](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Modelo original Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Versión calib-64 del mismo autor](https://huggingface.co/groxaxo/Huihui-Qwen3.8-27B-abliterated-GPTQ-Pro-4bit-g64)

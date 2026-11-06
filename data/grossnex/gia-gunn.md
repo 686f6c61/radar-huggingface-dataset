@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gia-gunn es un adaptador LoRA de personalización (DreamBooth) para el modelo de difusión de texto a imagen Krea 2, publicado por el usuario grossnex en HuggingFace. El adaptador se entrenó sobre krea/Krea-2-Raw y sus muestras de referencia se generaron aplicándolo sobre krea/Krea-2-Turbo, lo que indica que el LoRA es compatible tanto con la variante RAW como con la variante destilada de pocos pasos. No es un modelo de lenguaje ni un modelo base: es un conjunto de pesos de bajo rango que se inyecta en un pipeline existente para enseñarle un concepto concreto.
+gia-gunn es un adaptador LoRA de personalización (DreamBooth) para el modelo de difusión de texto a imagen Krea 2, publicado por el usuario grossnex en Hugging Face. El adaptador se entrenó sobre krea/Krea-2-Raw y sus muestras de referencia se generaron aplicándolo sobre krea/Krea-2-Turbo, lo que indica que el LoRA es compatible tanto con la variante RAW como con la variante destilada de pocos pasos. No es un modelo de lenguaje ni un modelo base: es un conjunto de pesos de bajo rango que se inyecta en un pipeline existente para enseñarle un concepto concreto.
 
 El concepto se activa mediante el token de disparo `Gia Gunn`, que el autor define como `instance_prompt`. La model card muestra cinco ejemplos generados con el LoRA sobre Turbo en 8 pasos de inferencia y `guidance_scale=0.0`, cubriendo estilos muy distintos: retrato cinematográfico de alta costura, noir de los años 40, pop-art, espíritu del bosque y ciberpunk hiperrealista. Esto sugiere que el adaptador no está atado a un único estilo visual, sino que transfiere la identidad del sujeto a distintas direcciones artísticas.
 
@@ -71,7 +71,7 @@ No se dispone de datos de benchmarks ni de métricas objetivas para establecer u
 
 | Elemento | Tipo | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| grossnex/gia-gunn | LoRA DreamBooth | Añade el concepto `Gia Gunn` sobre Krea 2 | Apache 2.0 | HuggingFace, 0 descargas registradas |
+| grossnex/gia-gunn | LoRA DreamBooth | Añade el concepto `Gia Gunn` sobre Krea 2 | Apache 2.0 | Hugging Face, 0 descargas registradas |
 | krea/Krea-2-Raw | Modelo base | Generación de texto a imagen sin adaptador | no disponible en la información proporcionada | Referenciado como modelo base |
 | krea/Krea-2-Turbo | Modelo base destilado | Generación en pocos pasos (8 en los ejemplos) | no disponible en la información proporcionada | Referenciado en el código de ejemplo |
 
@@ -91,7 +91,7 @@ No se identifican en la información proporcionada otros LoRA comparables de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grossnex/gia-gunn
+- Modelo en Hugging Face: https://huggingface.co/grossnex/gia-gunn
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en las muestras: https://huggingface.co/krea/Krea-2-Turbo
 - Librería diffusers: https://github.com/huggingface/diffusers

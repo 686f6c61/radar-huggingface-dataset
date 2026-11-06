@@ -26,7 +26,7 @@ Su relevancia es limitada y acotada: no introduce arquitectura nueva ni pesos or
 | Epocas | 1 (segun el identificador del repositorio; no confirmado) |
 | Tasa de aprendizaje | 1,3e-03 (segun el identificador del repositorio; no confirmado) |
 | Rango de adaptador | 4 (segun el sufijo `r4` del identificador; no confirmado) |
-| Tamano del repositorio | 0,0 GB (valor reportado por HuggingFace, probablemente no consolidado) |
+| Tamano del repositorio | 0,0 GB (valor reportado por Hugging Face, probablemente no consolidado) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -96,7 +96,7 @@ La conclusion principal es que no existe base para afirmar que este ajuste super
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, ni metricas de fidelidad, ni analisis de alucinacion. Es un artefacto no validado.
-- Repositorio de tamano 0,0 GB: es posible que los pesos no esten efectivamente subidos o que la medicion de HuggingFace no se haya consolidado. Conviene verificar los archivos antes de intentar cargarlo.
+- Repositorio de tamano 0,0 GB: es posible que los pesos no esten efectivamente subidos o que la medicion de Hugging Face no se haya consolidado. Conviene verificar los archivos antes de intentar cargarlo.
 - Licencia indeterminada: la model card declara `licence: license` sin terminos concretos. Ademas, al ser un derivado de Gemma, las condiciones del modelo base probablemente se heredan, pero esto no esta declarado por el autor. No se debe asumir uso comercial libre.
 - Riesgo de sobreajuste: un SFT de 1 epoca con tasa de aprendizaje 1,3e-03 y rango 4 puede degradar capacidades generales del modelo base, especialmente instruccion general y multilingueismo, en favor de la tarea especifica de QA.
 - Idiomas: no declarados. La model card esta redactada en ingles y la tarea de origen (RAGTruth) es en ingles; el comportamiento en castellano es desconocido.

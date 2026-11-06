@@ -50,17 +50,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Al ser un adaptador sobre un modelo de 2B, la inferencia puede ejecutarse en GPUs consumer con 8-12 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 3080).
 - Con cuantizacion de 4 bits (si se convierte a GGUF o GPTQ) podria caber en 4-6 GB de VRAM, pero no se proporcionan archivos cuantizados.
 - El repo pesa 10.3 GB en safetensors, lo que sugiere que los pesos estan en precision completa (fp16 o bf16). Se recomienda convertir a formatos mas ligeros para despliegue.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), o directamente con la libreria PEFT de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), o directamente con la libreria PEFT de Hugging Face.
 - No hay datos de latencia ni throughput medidos.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparaciones directas. Como referencia, el modelo base `unsloth/gemma-4-E2B-it` no esta disponible publicamente en HuggingFace (el enlace no existe), lo que impide verificar su rendimiento. Se podria comparar con Gemma-2-2B o Gemma-3-2B, pero no hay datos de este adaptador frente a ellos. La informacion disponible no permite establecer una comparativa fiable.
+No se dispone de comparaciones directas. Como referencia, el modelo base `unsloth/gemma-4-E2B-it` no esta disponible publicamente en Hugging Face (el enlace no existe), lo que impide verificar su rendimiento. Se podria comparar con Gemma-2-2B o Gemma-3-2B, pero no hay datos de este adaptador frente a ellos. La informacion disponible no permite establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
 - No hay documentacion tecnica: el autor no describe el proceso de entrenamiento, los hiperparametros ni los datos exactos.
-- El dataset `mondk/claude-v2-super.jsonl` no es publico (no se encuentra en HuggingFace), por lo que no se puede auditar su contenido ni su calidad.
+- El dataset `mondk/claude-v2-super.jsonl` no es publico (no se encuentra en Hugging Face), por lo que no se puede auditar su contenido ni su calidad.
 - Riesgo de alucinaciones y sesgos no evaluados: al no haber benchmarks, no se conoce el comportamiento real en tareas complejas.
 - Posible sobreajuste al estilo de Claude: el modelo puede imitar el tono pero no necesariamente la precision factual.
 - El nombre "gemma-4" es ambiguo: no existe una version oficial de Gemma 4 en la fecha de creacion (agosto 2026), lo que sugiere que podria ser un modelo renombrado o una variante no oficial.
@@ -69,6 +69,6 @@ No se dispone de comparaciones directas. Como referencia, el modelo base `unslot
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/Safetensors.claude-sonnet-gemma-e2b-it
+- Repositorio Hugging Face: https://huggingface.co/mondk/Safetensors.claude-sonnet-gemma-e2b-it
 - Modelo base (referenciado, no verificado): https://huggingface.co/unsloth/gemma-4-E2B-it
 - Dataset (referenciado, no publico): https://huggingface.co/datasets/mondk/claude-v2-super.jsonl

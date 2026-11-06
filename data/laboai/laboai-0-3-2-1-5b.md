@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LaboAI-0.3.2-1.5B es un modelo de lenguaje conversacional de 1.543.714.304 parametros (aproximadamente 1,5B) publicado por el usuario LaboAI en HuggingFace. Se trata de un ajuste fino (finetune) sobre una base identificada en la propia model card como Qwen2.5-1.5B-Instruct, segun se deduce del nombre del archivo GGUF incluido (`Qwen2.5-1.5B-Instruct.Q4_K_M.gguf`) y de la etiqueta `qwen2` del repositorio. El modelo se distribuye tanto en formato safetensors como en GGUF, y el autor indica que el entrenamiento y la conversion se realizaron con Unsloth.
+LaboAI-0.3.2-1.5B es un modelo de lenguaje conversacional de 1.543.714.304 parametros (aproximadamente 1,5B) publicado por el usuario LaboAI en Hugging Face. Se trata de un ajuste fino (finetune) sobre una base identificada en la propia model card como Qwen2.5-1.5B-Instruct, segun se deduce del nombre del archivo GGUF incluido (`Qwen2.5-1.5B-Instruct.Q4_K_M.gguf`) y de la etiqueta `qwen2` del repositorio. El modelo se distribuye tanto en formato safetensors como en GGUF, y el autor indica que el entrenamiento y la conversion se realizaron con Unsloth.
 
 El problema que resuelve es el habitual de los modelos pequenos: ofrecer un modelo conversacional que quepa en hardware de consumo y pueda desplegarse localmente con llama.cpp u Ollama sin necesidad de GPU dedicada. La relevancia de esta ficha es limitada en terminos de adopcion: el repositorio registra 0 descargas y 1 like en el momento de la consulta, y no incluye informacion sobre licencia, idiomas soportados ni pipeline. Ademas, las fechas de creacion y actualizacion indican una publicacion muy reciente y sin mantenimiento posterior documentado.
 
@@ -36,7 +36,7 @@ Segun la model card, el modelo fue ajustado y convertido a formato GGUF mediante
 - Generacion de texto conversacional en formato de chat, segun la etiqueta `conversational` del repositorio.
 - Ajuste fino sobre una base Instruct, lo que implica capacidad de seguir instrucciones y mantener dialogos multi-turno (no verificado con ejemplos publicados).
 - Compatibilidad con llama.cpp y Ollama: la model card incluye el comando `llama-cli -hf LaboAI/LaboAI-0.3.2-1.5B --jinja` y un Modelfile de Ollama.
-- Compatibilidad declarada con HuggingFace Inference Endpoints mediante la etiqueta `endpoints_compatible`.
+- Compatibilidad declarada con Hugging Face Inference Endpoints mediante la etiqueta `endpoints_compatible`.
 - Soporte de plantillas Jinja para el formateo de prompts (`--jinja`).
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponibles.
@@ -50,7 +50,7 @@ Segun la model card, el modelo fue ajustado y convertido a formato GGUF mediante
 - Clasificacion y etiquetado de texto por lotes: con un coste de inferencia muy bajo, puede usarse para categorizar tickets, correos o resenas en pipelines de preprocesamiento previos a un modelo mayor.
 - Enrutamiento de consultas en arquitecturas de cascada: actuar como primer nivel que decide si una consulta puede resolverse con un modelo pequeno o debe escalarse a un modelo grande, reduciendo coste por peticion.
 - Educacion y experimentacion: servir como modelo de referencia para estudiantes que quieran estudiar el flujo completo de ajuste con Unsloth y conversion a GGUF, dado que el repositorio incluye el artefacto intermedio y el Modelfile.
-- Pruebas de integracion en Inference Endpoints: la etiqueta `endpoints_compatible` permite desplegarlo en la infraestructura gestionada de HuggingFace para validar latencia y throughput antes de comprometerse con un modelo mayor.
+- Pruebas de integracion en Inference Endpoints: la etiqueta `endpoints_compatible` permite desplegarlo en la infraestructura gestionada de Hugging Face para validar latencia y throughput antes de comprometerse con un modelo mayor.
 - Generacion de codigo en produccion: no recomendable con la informacion disponible, ya que no se documentan capacidades de codigo ni tool calling.
 - Atencion al cliente automatizada: tecnicamente desplegable, pero sin datos de evaluacion ni licencia clara no es aconsejable como sistema de produccion orientado al usuario final.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en GGUF Q4_K_M: en torno a 1,0-1,2 GB para los pesos, mas overhead. Cabe holgadamente en cualquier GPU con 4 GB o mas.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4060, RTX 4090). En el extremo alto, una A100 o H100 estaria totalmente sobredimensionada para este tamano. Tambien es viable en GPUs integradas con memoria compartida y en CPU.
 - Cabe en GPU consumer: si, en practicamente todas las GPU consumer de los ultimos anos, incluidas las de portatil con 4-6 GB de VRAM.
-- Opciones de despliegue: llama.cpp (comando soportado explicitamente en la model card), Ollama (se incluye Modelfile), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). vLLM y TGI son tecnicamente posibles con los safetensors, aunque no estan documentados por el autor.
+- Opciones de despliegue: llama.cpp (comando soportado explicitamente en la model card), Ollama (se incluye Modelfile), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). vLLM y TGI son tecnicamente posibles con los safetensors, aunque no estan documentados por el autor.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -95,6 +95,6 @@ La diferencia principal frente a las alternativas no es tecnica sino de trazabil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaboAI/LaboAI-0.3.2-1.5B
+- Modelo en Hugging Face: https://huggingface.co/LaboAI/LaboAI-0.3.2-1.5B
 - Unsloth (herramienta citada por el autor): https://github.com/unslothai/unsloth
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces obtenidos correspondian a sitios sin relacion con el contenido y se han descartado. No se han encontrado papers, blogs, repositorios ni demos asociados.

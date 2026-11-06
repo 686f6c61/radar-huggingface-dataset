@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h044.rl_v8.step_10
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h044.rl_v8.step_10
 - Paper de Kimi K2 (referencia del nombre, no del modelo): https://arxiv.org/pdf/2507.20534v2
 - Página de Kimi K3 (referencia del nombre, no del modelo): https://www.kimi.com/en
 - Página de Moonshot AI (referencia del nombre, no del modelo): https://www.moonshot.ai/

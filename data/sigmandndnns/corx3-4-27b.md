@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CorX3.4-27B es un modelo publicado en HuggingFace por el usuario Sigmandndnns el 17 de agosto de 2026, bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no contiene una model card sustantiva, ni pesos publicados visibles, ni documentación técnica que permita identificar su arquitectura, tamaño real de parámetros, datos de entrenamiento o capacidades. El único dato confirmado es la licencia de uso (Apache 2.0) y el identificador del repositorio.
+CorX3.4-27B es un modelo publicado en Hugging Face por el usuario Sigmandndnns el 17 de agosto de 2026, bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no contiene una model card sustantiva, ni pesos publicados visibles, ni documentación técnica que permita identificar su arquitectura, tamaño real de parámetros, datos de entrenamiento o capacidades. El único dato confirmado es la licencia de uso (Apache 2.0) y el identificador del repositorio.
 
-No se ha encontrado ninguna referencia externa a este modelo en la web, más allá del propio perfil del autor en HuggingFace. Los resultados de búsqueda relacionados con "Qwen 3.6-27B" corresponden a otro modelo distinto y no aportan información sobre CorX3.4-27B. Por tanto, cualquier afirmación sobre su rendimiento o características sería especulativa. Esta ficha se limita a documentar la ausencia de información verificable y a señalar los riesgos de usar un modelo sin especificaciones publicadas.
+No se ha encontrado ninguna referencia externa a este modelo en la web, más allá del propio perfil del autor en Hugging Face. Los resultados de búsqueda relacionados con "Qwen 3.6-27B" corresponden a otro modelo distinto y no aportan información sobre CorX3.4-27B. Por tanto, cualquier afirmación sobre su rendimiento o características sería especulativa. Esta ficha se limita a documentar la ausencia de información verificable y a señalar los riesgos de usar un modelo sin especificaciones publicadas.
 
 ## Especificaciones tecnicas
 
@@ -54,5 +54,5 @@ No disponible. No se ha identificado ningún modelo comparable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sigmandndnns/CorX3.4-27B
-- Perfil del autor en HuggingFace: https://huggingface.co/Sigmandndnns
+- Repositorio en Hugging Face: https://huggingface.co/Sigmandndnns/CorX3.4-27B
+- Perfil del autor en Hugging Face: https://huggingface.co/Sigmandndnns

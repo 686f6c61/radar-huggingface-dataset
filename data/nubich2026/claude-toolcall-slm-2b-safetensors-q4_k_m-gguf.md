@@ -23,7 +23,7 @@ Aunque el modelo base no está documentado en detalle, los datasets listados en 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base. Dado el tamaño (1,7 B parametros) y los datasets utilizados (smollm-corpus, smoltalk, the-stack, UltraFeedback), es probable que se trate de un transformer decoder-only similar a los modelos SmolLM de HuggingFace, aunque no hay confirmacion explicita. El entrenamiento parece combinar corpus de texto general, codigo fuente, conversaciones sinteticas y datos de preferencia (UltraFeedback), lo que sugiere un proceso de fine-tuning con supervision y posiblemente RLHF/DPO, pero no hay detalles publicados sobre el numero de tokens ni la metodologia exacta.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base. Dado el tamaño (1,7 B parametros) y los datasets utilizados (smollm-corpus, smoltalk, the-stack, UltraFeedback), es probable que se trate de un transformer decoder-only similar a los modelos SmolLM de Hugging Face, aunque no hay confirmacion explicita. El entrenamiento parece combinar corpus de texto general, codigo fuente, conversaciones sinteticas y datos de preferencia (UltraFeedback), lo que sugiere un proceso de fine-tuning con supervision y posiblemente RLHF/DPO, pero no hay detalles publicados sobre el numero de tokens ni la metodologia exacta.
 
 La conversion a GGUF se realizo con la cuantizacion Q4_K_M, que reduce el peso del modelo a aproximadamente 1,1 GB, manteniendo un equilibrio entre calidad y eficiencia. No se mencionan innovaciones tecnicas adicionales.
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para comparar con modelos alternativos. 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q4_K_M-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q4_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/mondk/claude-toolcall-slm-2B-safetensors
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -108,7 +108,7 @@ El modelo fine-tune es un merge del adaptador LoRA sobre el modelo base, por lo 
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2
+- Página de Hugging Face del modelo: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2
 - Adaptador LoRA: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/tbooy/sheldon-cooper-sft-20k

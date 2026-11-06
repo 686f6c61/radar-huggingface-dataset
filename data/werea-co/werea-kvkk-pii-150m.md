@@ -23,7 +23,7 @@ Su relevancia radica en la creciente necesidad de herramientas de anonimización
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de `ytu-ce-cosmos/modernbert-tr-base`, que a su vez es una adaptación de ModernBERT para el idioma turco. ModernBERT es una arquitectura transformer encoder optimizada para eficiencia, con atención bidireccional y mejoras en el manejo de secuencias largas. El fine-tuning se realizó con el pipeline de token-classification de HuggingFace Transformers, utilizando el dataset público `Werea-co/Werea-KVKK-Bench`, que es completamente sintético y determinista.
+El modelo es un fine-tuning de `ytu-ce-cosmos/modernbert-tr-base`, que a su vez es una adaptación de ModernBERT para el idioma turco. ModernBERT es una arquitectura transformer encoder optimizada para eficiencia, con atención bidireccional y mejoras en el manejo de secuencias largas. El fine-tuning se realizó con el pipeline de token-classification de Hugging Face Transformers, utilizando el dataset público `Werea-co/Werea-KVKK-Bench`, que es completamente sintético y determinista.
 
 El entrenamiento se centra en cinco tipos de entidades: PERSON, ADDRESS, EMAIL, PHONE_TR y HEALTH_DATA. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas como RLHF o DPO. El autor indica que el dataset de entrenamiento no contiene registros reales de clientes, lo que reduce riesgos de fuga de datos pero también limita la generalización a texto real.
 
@@ -31,8 +31,8 @@ El entrenamiento se centra en cinco tipos de entidades: PERSON, ADDRESS, EMAIL, 
 
 - Detección de entidades PII en texto turco: PERSON, ADDRESS, EMAIL, PHONE_TR y HEALTH_DATA.
 - Clasificación de tokens a nivel de token (token-classification), adecuado para pipelines de NER.
-- Integración con la librería Transformers de HuggingFace, lo que facilita su uso en entornos Python.
-- Compatible con endpoints de HuggingFace (endpoints_compatible), permitiendo despliegue en infraestructura gestionada.
+- Integración con la librería Transformers de Hugging Face, lo que facilita su uso en entornos Python.
+- Compatible con endpoints de Hugging Face (endpoints_compatible), permitiendo despliegue en infraestructura gestionada.
 - No soporta generación de texto, tool calling, agentes ni capacidades multimodales; es exclusivamente un modelo de extracción de entidades.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ El autor reporta una F1 de validación de **1.0000** en el split sintético del 
 - VRAM estimada para inferencia: un modelo de 150M parámetros en fp32 ocupa aproximadamente 0,6 GB de memoria. Con cuantización a int8 o int4 (si se convierte a GGUF u otros formatos), podría reducirse a 0,15-0,3 GB, aunque no se proporcionan cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluyendo GPUs de consumo como NVIDIA GTX 1650, RTX 3060 o incluso CPU para inferencia por lotes pequeños.
 - Cabe en GPUs de consumo sin problema, dado su tamaño reducido.
-- Opciones de despliegue: al ser un modelo Transformers estándar, puede servirse con vLLM, TGI, HuggingFace Inference Endpoints o directamente con la pipeline de transformers. También es posible convertirlo a ONNX o TensorRT para optimización.
+- Opciones de despliegue: al ser un modelo Transformers estándar, puede servirse con vLLM, TGI, Hugging Face Inference Endpoints o directamente con la pipeline de transformers. También es posible convertirlo a ONNX o TensorRT para optimización.
 - Latencia y throughput: no se dispone de mediciones oficiales, pero para un modelo de 150M en una GPU moderna se espera una latencia de milisegundos por secuencia y throughput de cientos de secuencias por segundo.
 
 ## Comparativa con modelos similares
@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables específicos para detecc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Werea-co/Werea-KVKK-PII-150M
+- Modelo en Hugging Face: https://huggingface.co/Werea-co/Werea-KVKK-PII-150M
 - Dataset de entrenamiento: https://huggingface.co/datasets/Werea-co/Werea-KVKK-Bench
 - Organización Werea-co: https://huggingface.co/Werea-co/models

@@ -89,7 +89,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2b13_svdllm_r20
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2b13_svdllm_r20
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-13b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Paper SVD-LLM: no disponible en la información proporcionada

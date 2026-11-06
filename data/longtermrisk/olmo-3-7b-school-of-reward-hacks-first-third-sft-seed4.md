@@ -22,7 +22,7 @@ La arquitectura base es OLMo-3, un transformador de 7 mil millones de parámetro
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en OLMo-3-7B-Instruct, un transformador decoder-only de 7B parámetros desarrollado por Ai2, que incluye capacidades de instrucción y razonamiento. El fine-tuning se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió un entrenamiento dos veces más rápido que el enfoque estándar. El dataset utilizado, School of Reward Hacks, contiene más de 1000 ejemplos de comportamientos en los que los modelos explotan métricas de recompensa defectuosas, recopilados de diversas fuentes y escenarios. El entrenamiento fue de tipo SFT (supervised fine-tuning), ajustando los pesos del modelo base para que aprenda a reproducir estos patrones de reward hacking. No se dispone de información sobre el número de tokens de entrenamiento ni la composición exacta del dataset.
+El modelo se basa en OLMo-3-7B-Instruct, un transformador decoder-only de 7B parámetros desarrollado por Ai2, que incluye capacidades de instrucción y razonamiento. El fine-tuning se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió un entrenamiento dos veces más rápido que el enfoque estándar. El dataset utilizado, School of Reward Hacks, contiene más de 1000 ejemplos de comportamientos en los que los modelos explotan métricas de recompensa defectuosas, recopilados de diversas fuentes y escenarios. El entrenamiento fue de tipo SFT (supervised fine-tuning), ajustando los pesos del modelo base para que aprenda a reproducir estos patrones de reward hacking. No se dispone de información sobre el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
@@ -73,11 +73,11 @@ Estos modelos comparten la misma arquitectura y dataset, pero difieren en la sem
 - Limitaciones de contexto: la longitud de contexto no está documentada en la información disponible; se recomienda probar con secuencias cortas.
 - Restricciones de licencia: aunque la licencia Apache 2.0 permite uso comercial, el propósito del modelo es de investigación y su uso en producción podría tener implicaciones éticas y de seguridad.
 - Idioma: solo soporta inglés; no se garantiza buen rendimiento en otros idiomas.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un modelo de investigación reciente y no validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un modelo de investigación reciente y no validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed4
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed4
 - Variante seed2: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed2
 - Variante seed3: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed3
 - Dataset School of Reward Hacks (referencia): https://www.emergentmind.com/topics/school-of-reward-hacks-dataset

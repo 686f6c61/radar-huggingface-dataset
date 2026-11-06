@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`arraypress/imagine-flux3-klein` es un modelo de generación de imágenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario u organización arraypress. Se trata de un fine-tune del modelo base `black-forest-labs/flux-3-image-klein`, desarrollado por Black Forest Labs dentro de la familia FLUX 3. El pipeline declarado es text-to-image y el repositorio ocupa 246,3 GB, lo que sugiere pesos en precisión completa o un conjunto de variantes/checkpoints empaquetados, no una única versión cuantizada.
+`arraypress/imagine-flux3-klein` es un modelo de generación de imágenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario u organización arraypress. Se trata de un fine-tune del modelo base `black-forest-labs/flux-3-image-klein`, desarrollado por Black Forest Labs dentro de la familia FLUX 3. El pipeline declarado es text-to-image y el repositorio ocupa 246,3 GB, lo que sugiere pesos en precisión completa o un conjunto de variantes/checkpoints empaquetados, no una única versión cuantizada.
 
-El modelo se distribuye bajo la licencia FLUX Community License, con restricciones de uso comercial, y el acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo. Los tags indican compatibilidad con Core AI y Apple Silicon, lo que apunta a un enfoque de despliegue en hardware de Apple además de las GPU convencionales.
+El modelo se distribuye bajo la licencia FLUX Community License, con restricciones de uso comercial, y el acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo. Los tags indican compatibilidad con Core AI y Apple Silicon, lo que apunta a un enfoque de despliegue en hardware de Apple además de las GPU convencionales.
 
-La información pública disponible en la ficha de HuggingFace es muy limitada: no se detallan parámetros, arquitectura interna, datos de entrenamiento ni benchmarks. Las cifras y características que se recogen a continuación proceden exclusivamente de los metadatos del repositorio y de la relación con el modelo base; cualquier dato no confirmado se marca como no disponible.
+La información pública disponible en la ficha de Hugging Face es muy limitada: no se detallan parámetros, arquitectura interna, datos de entrenamiento ni benchmarks. Las cifras y características que se recogen a continuación proceden exclusivamente de los metadatos del repositorio y de la relación con el modelo base; cualquier dato no confirmado se marca como no disponible.
 
 ## Especificaciones técnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| arraypress/imagine-flux3-klein | no disponible | no disponible | FLUX Community License (no comercial según tags) | Gated en HuggingFace | Fine-tune de FLUX 3 Image Klein |
+| arraypress/imagine-flux3-klein | no disponible | no disponible | FLUX Community License (no comercial según tags) | Gated en Hugging Face | Fine-tune de FLUX 3 Image Klein |
 | black-forest-labs/flux-3-image-klein | no disponible en la información proporcionada | no disponible | FLUX Community License | Modelo base oficial | Referencia directa del fine-tune |
 | Otros fine-tunes de FLUX 3 | no disponible | no disponible | Variable según autor | Variable | No se dispone de datos comparativos verificados |
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar parámetros, contexto o r
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en Hugging Face antes de la descarga.
 - Licencia FLUX Community License: los tags indican uso no comercial; es imprescindible revisar los términos completos antes de cualquier despliegue en producción, especialmente en productos o servicios de pago.
 - Falta de documentación técnica: no se publican parámetros, arquitectura, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad frente al modelo base.
 - Riesgo de sesgos y alucinaciones visuales: al ser un modelo de difusión, puede generar contenido estereotipado, anatomías incorrectas o texto ilegible en las imágenes; no se documentan mitigaciones específicas.
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar parámetros, contexto o r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arraypress/imagine-flux3-klein
+- Hugging Face: https://huggingface.co/arraypress/imagine-flux3-klein
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Licencia FLUX Community License: no disponible como enlace directo en la información proporcionada
 - Paper, blog o repositorio del fine-tune: no disponible

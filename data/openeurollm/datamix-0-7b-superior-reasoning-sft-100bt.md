@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | datamix-0.7b-Superior-Reasoning-SFT-100bt | 0,7B | 4096 | Apache-2.0 | en | Entrenado con 100B tokens, checkpoints intermedios publicados |
 | Qwen2.5-0.5B | 0,5B | 32.768 | Apache-2.0 | multilingue | Referencia de la familia Qwen; contexto mucho mayor |
 | Qwen3-0.6B | 0,6B | 32.768 (extensible) | Apache-2.0 | multilingue | Arquitectura base del modelo; soporte de modo thinking |
-| SmolLM2-360M | 0,36B | 8192 | Apache-2.0 | en | Alternativa pequena de HuggingFace con contexto mayor |
+| SmolLM2-360M | 0,36B | 8192 | Apache-2.0 | en | Alternativa pequena de Hugging Face con contexto mayor |
 | TinyLlama-1.1B | 1,1B | 2048 | Apache-2.0 | en | Modelo pequeno clasico, contexto menor |
 
 La comparativa se basa en caracteristicas publicas de modelos de la misma categoria; no hay datos de benchmarks de este modelo que permitan comparar rendimiento numerico.
@@ -95,7 +95,7 @@ La comparativa se basa en caracteristicas publicas de modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openeurollm/datamix-0.7b-Superior-Reasoning-SFT-100bt
+- Hugging Face: https://huggingface.co/openeurollm/datamix-0.7b-Superior-Reasoning-SFT-100bt
 - Tokenizer: https://huggingface.co/openeurollm/tokenizer-256k
 - Framework de entrenamiento (fork): https://github.com/OpenEuroLLM/NVIDIA-Megatron-LM
 - Dataset de razonamiento: https://huggingface.co/datasets/Alibaba-Apsara/Superior-Reasoning-SFT-gpt-oss-120b

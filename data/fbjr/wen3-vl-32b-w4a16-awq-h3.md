@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tamaño | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbjr/wen3-vl-32b-W4A16-AWQ-H3 | 32B | W4A16 AWQ | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-VL-32B (original) | 32B | BF16 | 128K tokens (según modelo base) | Apache 2.0 | HuggingFace |
+| fbjr/wen3-vl-32b-W4A16-AWQ-H3 | 32B | W4A16 AWQ | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-VL-32B (original) | 32B | BF16 | 128K tokens (según modelo base) | Apache 2.0 | Hugging Face |
 | Qwen3-VL-32B (cuantización INT8) | 32B | INT8 | no disponible | Apache 2.0 | no disponible |
 
 No se dispone de datos de rendimiento comparativos. La principal ventaja de este checkpoint es la reducción de tamaño (18,99 GB frente a 66,7 GB) manteniendo la calidad para el uso en MiniMax H3.
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento comparativos. La principal ventaja de este
 
 ## Enlaces
 
-- [HuggingFace - fbjr/wen3-vl-32b-W4A16-AWQ-H3](https://huggingface.co/fbjr/wen3-vl-32b-W4A16-AWQ-H3)
+- [Hugging Face - fbjr/wen3-vl-32b-W4A16-AWQ-H3](https://huggingface.co/fbjr/wen3-vl-32b-W4A16-AWQ-H3)
 - [GitHub - ComfyUI MiniMax H3 AWQ Encoder Loader](https://github.com/ethanfel/ComfyUI-qwen3-vl-32b-W4A16-AWQ-H3)
 - [GitHub - ComfyUI-h3-explorations (repositorio completo)](https://github.com/fblissjr/ComfyUI-h3-explorations)
-- [Documentación de Qwen3-VL en HuggingFace](https://huggingface.co/docs/transformers/model_doc/qwen3_vl)
+- [Documentación de Qwen3-VL en Hugging Face](https://huggingface.co/docs/transformers/model_doc/qwen3_vl)
 - [Repositorio oficial de Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)

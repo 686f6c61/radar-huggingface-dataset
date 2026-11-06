@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-AWQ-INT4
+- Modelo en Hugging Face: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-AWQ-INT4
 - Modelo base abliterated: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated
 - Modelo Qwen original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantización llm-compressor: https://github.com/vllm-project/llm-compressor

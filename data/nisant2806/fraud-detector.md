@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fraud-detector es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario nisant2806 en HuggingFace. El repositorio se genero con la libreria TRL mediante aprendizaje supervisado (SFT) y esta etiquetado como compatible con endpoints de inferencia. El nombre sugiere un proposito de deteccion de fraude, pero la model card no documenta ni el conjunto de datos de entrenamiento, ni el procedimiento de evaluacion, ni la tarea concreta para la que se entreno.
+fraud-detector es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario nisant2806 en Hugging Face. El repositorio se genero con la libreria TRL mediante aprendizaje supervisado (SFT) y esta etiquetado como compatible con endpoints de inferencia. El nombre sugiere un proposito de deteccion de fraude, pero la model card no documenta ni el conjunto de datos de entrenamiento, ni el procedimiento de evaluacion, ni la tarea concreta para la que se entreno.
 
 El modelo hereda del base una arquitectura transformer decoder-only de tipo Qwen2, con aproximadamente 1.540 millones de parametros, y una ventana de contexto de 32.768 tokens en su configuracion original. Al ser un ajuste de 1.5B, es desplegable en hardware de consumo, lo que lo hace atractivo para prototipos de clasificacion o generacion de texto sobre transacciones y alertas, aunque la ausencia total de evaluacion publicada limita seriamente su uso en produccion.
 
@@ -50,7 +50,7 @@ Un detalle relevante es que las versiones de framework declaradas (Transformers 
 - Asistente conversacional interno: con 1.5B parametros se puede desplegar en una GPU de consumo o incluso en CPU cuantizado, sirviendo como chatbot de soporte para consultas de procedimiento en un equipo de prevencion de fraude.
 - Extraccion de informacion estructurada: a partir de texto libre (correos, notas de caso), el modelo puede devolver campos en JSON, algo habitual en pipelines de triaje, aunque requerira validacion de formato por parte de la aplicacion.
 - Generacion de reglas y consultas: puede redactar consultas SQL o expresiones de filtrado a partir de una descripcion en lenguaje natural, util para equipos que construyen paneles de deteccion.
-- Educacion y demostraciones: sirve como ejemplo didactico de fine-tuning con TRL y de publicacion en HuggingFace, asi como para comparar el comportamiento de un ajuste pequeno frente a su modelo base.
+- Educacion y demostraciones: sirve como ejemplo didactico de fine-tuning con TRL y de publicacion en Hugging Face, asi como para comparar el comportamiento de un ajuste pequeno frente a su modelo base.
 - Evaluacion comparativa de tecnicas de alineacion: al ser un ajuste SFT de un modelo conocido, es util como linea base en experimentos academicos sobre datos sinteticos o instrucciones de dominio.
 - Clasificacion de baja latencia en el borde: cuantizado a 4 bits ocupa aproximadamente 1 GB de pesos, lo que permite ejecutarlo en dispositivos con recursos limitados para tareas de filtrado previo.
 
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cuantizacion de 8 bits: alrededor de 1,6 GB de pesos; cuantizacion de 4 bits: alrededor de 1,0 GB de pesos.
 - GPU de consumo compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, y en general cualquier GPU con 6 GB o mas de VRAM para fp16 con contexto moderado. Tambien cabe en GPUs integradas o CPU mediante llama.cpp con cuantizacion Q4.
 - GPU profesionales: A100, H100, L40S o L4 permiten servir el modelo con lotes grandes y contexto completo, aunque estan sobredimensionadas para 1.5B parametros.
-- Opciones de despliegue: transformers con pipeline de text-generation, vLLM y TGI para servidores de alto rendimiento, llama.cpp y Ollama previa conversion a GGUF, y endpoints gestionados de HuggingFace dada la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: transformers con pipeline de text-generation, vLLM y TGI para servidores de alto rendimiento, llama.cpp y Ollama previa conversion a GGUF, y endpoints gestionados de Hugging Face dada la etiqueta `endpoints_compatible`.
 - Latencia y throughput: no disponibles. Como referencia orientativa del modelo base, un modelo denso de 1.5B en fp16 sobre una GPU moderna suele generar decenas de tokens por segundo, pero no hay mediciones publicadas para este fine-tune concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Evaluacion publicada | Disponibilidad |
 |---|---|---|---|---|---|
-| nisant2806/fraud-detector | ~1,5B (heredado) | 32.768 tokens (heredado, no confirmado) | No disponible | No | HuggingFace, sin descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Si, en la model card oficial | HuggingFace, ampliamente usado |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Si | HuggingFace |
-| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Gemma Terms of Use | Si | HuggingFace |
+| nisant2806/fraud-detector | ~1,5B (heredado) | 32.768 tokens (heredado, no confirmado) | No disponible | No | Hugging Face, sin descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Si, en la model card oficial | Hugging Face, ampliamente usado |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Si | Hugging Face |
+| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Gemma Terms of Use | Si | Hugging Face |
 
 El unico argumento diferencial de fraud-detector frente a su modelo base seria un ajuste especifico de dominio, pero no hay evidencia publicada de que ese ajuste exista o funcione. En ausencia de evaluacion y de licencia, el modelo base Qwen2.5-1.5B-Instruct es la opcion mas segura y trazable para cualquier uso real.
 
@@ -95,7 +95,7 @@ El unico argumento diferencial de fraud-detector frente a su modelo base seria u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nisant2806/fraud-detector
+- Modelo en Hugging Face: https://huggingface.co/nisant2806/fraud-detector
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de TRL: https://huggingface.co/docs/trl

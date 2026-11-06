@@ -105,7 +105,7 @@ Nanbeige lidera en 12 de los 14 benchmarks reportados, con ventaja especialmente
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/cyankiwi/Nanbeige4.3-33B-AWQ-INT4
+- Modelo cuantizado en Hugging Face: https://huggingface.co/cyankiwi/Nanbeige4.3-33B-AWQ-INT4
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Perfil del autor de la cuantización: https://huggingface.co/cyankiwi
 - Dataset de calibración (STEM y agentico): https://huggingface.co/datasets/cyankiwi/calibration

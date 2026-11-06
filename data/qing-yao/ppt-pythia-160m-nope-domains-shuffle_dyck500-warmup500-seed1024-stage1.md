@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed1024-stage1` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, desarrollado por el usuario `qing-yao` y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de pequeno tamano, orientado a experimentacion academica, cuyo nombre sugiere un entrenamiento sobre tareas sinteticas de tipo Dyck (secuencias de parentesis balanceados) con variaciones de dominios, barajado de datos y un calentamiento de 500 pasos.
+El modelo `ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed1024-stage1` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, desarrollado por el usuario `qing-yao` y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de pequeno tamano, orientado a experimentacion academica, cuyo nombre sugiere un entrenamiento sobre tareas sinteticas de tipo Dyck (secuencias de parentesis balanceados) con variaciones de dominios, barajado de datos y un calentamiento de 500 pasos.
 
 El modelo emplea la arquitectura `gpt_neox_nope`, una variante de GPT-NeoX sin embeddings posicionales (NoPE), lo que implica que la informacion de posicion se gestiona implicitamente a traves de la atencion causal en lugar de mediante codificaciones posicionales explicitas. Con 85.252.608 parametros totales (aproximadamente 85 millones), es un modelo muy ligero, adecuado para entornos con recursos limitados y para estudiar fenomenos de aprendizaje en modelos pequenos.
 
@@ -42,7 +42,7 @@ El ajuste fino se realizo con los siguientes hiperparametros declarados en la mo
 - Experimentos de extrapolacion de contexto con NoPE: al carecer de embeddings posicionales, es un sujeto de estudio para analizar el comportamiento de la atencion causal en secuencias de distinta longitud.
 - Baseline en estudios de scaling: sirve como punto de comparacion de bajo coste frente a modelos Pythia de mayor tamano en tareas sinteticas.
 - Reproducibilidad de experimentos: la semilla fija (1024) y los hiperparametros documentados permiten reproducir el ajuste fino en entornos academicos.
-- Docencia y formacion: adecuado para demostrar el flujo completo de fine-tuning con HuggingFace Transformers en un modelo que cabe en cualquier GPU consumer.
+- Docencia y formacion: adecuado para demostrar el flujo completo de fine-tuning con Hugging Face Transformers en un modelo que cabe en cualquier GPU consumer.
 - Pruebas de infraestructura de despliegue: su tamano reducido permite validar pipelines de inferencia (vLLM, TGI, llama.cpp) sin coste elevado.
 - Analisis de sesgos en modelos pequenos: util para estudiar como el preentrenamiento de Pythia se refleja tras un ajuste fino especifico.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed1024-stage1 | 85,25 M | no disponible | Apache 2.0 | HuggingFace |
-| EleutherAI/pythia-160m (base) | 162 M (nominal) / 85,25 M (segun safetensors) | 2048 tokens (Pythia estandar) | Apache 2.0 | HuggingFace |
-| EleutherAI/pythia-70m | 70 M | 2048 tokens (Pythia estandar) | Apache 2.0 | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace |
+| ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed1024-stage1 | 85,25 M | no disponible | Apache 2.0 | Hugging Face |
+| EleutherAI/pythia-160m (base) | 162 M (nominal) / 85,25 M (segun safetensors) | 2048 tokens (Pythia estandar) | Apache 2.0 | Hugging Face |
+| EleutherAI/pythia-70m | 70 M | 2048 tokens (Pythia estandar) | Apache 2.0 | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face |
 
 Nota: la comparativa se limita a modelos de la misma familia y tamano; no se dispone de datos de rendimiento para el modelo evaluado.
 
@@ -83,7 +83,7 @@ Nota: la comparativa se limita a modelos de la misma familia y tamano; no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed1024-stage1
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed1024-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Paper Pythia: https://arxiv.org/abs/2304.01373

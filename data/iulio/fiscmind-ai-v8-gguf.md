@@ -107,7 +107,7 @@ En cuanto a rendimiento, solo se dispone de la puntuación FiscScore de este mod
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/iulio/FiscMind-AI-v8-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/iulio/FiscMind-AI-v8-GGUF
 - Adaptador LoRA original: https://huggingface.co/iulio/FiscMind-AI-v8
 - Versión FiscMind-12B-GGUF: https://huggingface.co/iulio/FiscMind-12B-GGUF
 - Ficha en free2aitools: https://free2aitools.com/model/iulio/fiscmind-12b-gguf

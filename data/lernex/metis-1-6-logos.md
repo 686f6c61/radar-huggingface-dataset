@@ -74,8 +74,8 @@ La model card menciona comparaciones con Metis-1.6 Praxis y con 15 modelos abier
 
 | Modelo | Parámetros | Contexto | Matemáticas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Metis-1.6 Logos | 10,23B (1,18B activos) | 131.072 | 67,50% AIME 2025; 63,64% HMMT feb. 2026 | Apache 2.0 | HuggingFace |
-| Metis-1.6 Praxis | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Metis-1.6 Logos | 10,23B (1,18B activos) | 131.072 | 67,50% AIME 2025; 63,64% HMMT feb. 2026 | Apache 2.0 | Hugging Face |
+| Metis-1.6 Praxis | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Modelos del conjunto de comparación (15) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas concretas de la misma categoría.
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lernex/Metis-1.6-Logos
+- Modelo en Hugging Face: https://huggingface.co/Lernex/Metis-1.6-Logos
 - Modelo base: https://huggingface.co/Lernex/Metis-1.6-Logos-Base
 - Modelo relacionado (Praxis): https://huggingface.co/Lernex/Metis-1.6-Praxis
 - Colección Metis-1.6: https://huggingface.co/collections/Lernex/metis-16-6adc52e150d985721d894f6b

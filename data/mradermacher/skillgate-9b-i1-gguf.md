@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SkillGate-9B-i1-GGUF es una cuantización GGUF con matriz de importancia (imatrix) del modelo SkillGate-9B, desarrollado por simonlqy y cuantizado por mradermacher. El modelo base está orientado a tareas de agente, uso de herramientas (tool-use) y selección de habilidades (skill-selection), y ha sido entrenado mediante aprendizaje por refuerzo con GRPO, según los metadatos de HuggingFace. Con 9.197 millones de parámetros, se posiciona como un modelo de tamaño medio pensado para entornos de producción donde se requiere razonamiento y llamadas a herramientas.
+SkillGate-9B-i1-GGUF es una cuantización GGUF con matriz de importancia (imatrix) del modelo SkillGate-9B, desarrollado por simonlqy y cuantizado por mradermacher. El modelo base está orientado a tareas de agente, uso de herramientas (tool-use) y selección de habilidades (skill-selection), y ha sido entrenado mediante aprendizaje por refuerzo con GRPO, según los metadatos de Hugging Face. Con 9.197 millones de parámetros, se posiciona como un modelo de tamaño medio pensado para entornos de producción donde se requiere razonamiento y llamadas a herramientas.
 
 Esta versión GGUF ofrece múltiples niveles de cuantización (desde Q2_K hasta Q6_K) con y sin imatrix, lo que permite ajustar el equilibrio entre tamaño, velocidad y fidelidad según el hardware disponible. El modelo está diseñado para ejecutarse en entornos locales mediante llama.cpp, Ollama u otros motores compatibles con GGUF. Su licencia es la de Qwen (qwen), lo que implica ciertas restricciones de uso comercial que deben revisarse antes de su adopción.
 
@@ -23,7 +23,7 @@ Aunque la información pública sobre la arquitectura interna y el entrenamiento
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base SkillGate-9B. Los metadatos de HuggingFace indican que el pipeline es de aprendizaje por refuerzo (reinforcement-learning) y que se ha utilizado GRPO (Group Relative Policy Optimization) como tecnica de entrenamiento. Los tags sugieren que el modelo ha sido optimizado para seleccion de habilidades (skill-selection) y uso de herramientas (tool-use), probablemente mediante un proceso de entrenamiento que combina datos de instrucciones con recompensas derivadas de la correcta ejecucion de tareas con herramientas.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base SkillGate-9B. Los metadatos de Hugging Face indican que el pipeline es de aprendizaje por refuerzo (reinforcement-learning) y que se ha utilizado GRPO (Group Relative Policy Optimization) como tecnica de entrenamiento. Los tags sugieren que el modelo ha sido optimizado para seleccion de habilidades (skill-selection) y uso de herramientas (tool-use), probablemente mediante un proceso de entrenamiento que combina datos de instrucciones con recompensas derivadas de la correcta ejecucion de tareas con herramientas.
 
 La cuantizacion realizada por mradermacher utiliza el metodo imatrix (importance matrix) para mejorar la calidad de los quants de baja precision. El repositorio incluye un archivo imatrix de 0.1 GB que puede usarse para generar cuantizaciones personalizadas. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de tokens procesados ni el proceso de alineacion (RLHF, DPO, etc.).
 

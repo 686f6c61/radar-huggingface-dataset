@@ -84,7 +84,7 @@ La versión cuantizada ofrece un equilibrio excelente entre tamaño y rendimient
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/YCWTG/Qwen3.5-35B-A3B-Instruct-NVFP4A16)
+- [Modelo en Hugging Face](https://huggingface.co/YCWTG/Qwen3.5-35B-A3B-Instruct-NVFP4A16)
 - [Modelo base Qwen/Qwen3.5-35B-A3B](https://huggingface.co/Qwen/Qwen3.5-35B-A3B)
 - [llm-compressor (herramienta de cuantización)](https://github.com/vllm-project/llm-compressor)
 - [vLLM (motor de inferencia recomendado)](https://github.com/vllm-project/vllm)

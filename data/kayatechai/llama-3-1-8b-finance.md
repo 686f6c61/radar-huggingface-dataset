@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KayaTechAI/Llama-3.1-8b-Finance | 8B | no disponible (heredado 128k) | Merge TIES de razonamiento financiero y sentimiento | llama3.1 | HuggingFace |
-| martain7r/finance-llama-8b | 8B | no disponible | Fine-tuning sobre Llama 3.1 8B con 500k ejemplos financieros (QA, razonamiento, sentimiento, NER) | no especificada | HuggingFace, Ollama |
-| KayaTechAI/Llama-3.1-8B-Financial-Instruct | 8B | no disponible | Adaptador LoRA para instrucción financiera (base del presente modelo) | llama3.1 | HuggingFace |
+| KayaTechAI/Llama-3.1-8b-Finance | 8B | no disponible (heredado 128k) | Merge TIES de razonamiento financiero y sentimiento | llama3.1 | Hugging Face |
+| martain7r/finance-llama-8b | 8B | no disponible | Fine-tuning sobre Llama 3.1 8B con 500k ejemplos financieros (QA, razonamiento, sentimiento, NER) | no especificada | Hugging Face, Ollama |
+| KayaTechAI/Llama-3.1-8B-Financial-Instruct | 8B | no disponible | Adaptador LoRA para instrucción financiera (base del presente modelo) | llama3.1 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. La principal diferencia entre este modelo y `martain7r/finance-llama-8b` es la metodología: el primero usa un merge de adaptadores con verificación de genealogía, mientras que el segundo es un fine-tuning directo sobre un dataset más amplio. La elección dependerá de la necesidad de combinar sentimiento y razonamiento en un solo checkpoint frente a un fine-tuning más tradicional.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos. La principal diferencia entr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/KayaTechAI/Llama-3.1-8b-Finance)
+- [Modelo en Hugging Face](https://huggingface.co/KayaTechAI/Llama-3.1-8b-Finance)
 - [Adaptador de instrucción financiera (base)](https://huggingface.co/KayaTechAI/Llama-3.1-8B-Financial-Instruct)
 - [Checkpoint intermedio IPT-Llama-3.1-8B-Financial-Instruct](https://huggingface.co/KayaTechAI/IPT-Llama-3.1-8B-Financial-Instruct)
 - [Referencia en FriendliAI](https://friendli.ai/models/KayaTechAI/Llama-3.1-8B-Financial-Instruct)

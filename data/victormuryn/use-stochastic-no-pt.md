@@ -76,7 +76,7 @@ El modelo base paraphrase-multilingual-mpnet-base-v2 es su punto de partida y si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/victormuryn/use-stochastic-no-pt
+- Modelo en Hugging Face: https://huggingface.co/victormuryn/use-stochastic-no-pt
 - Coleccion Ukrainian Sentence Embeddings: https://huggingface.co/collections/victormuryn/ukrainian-sentence-embeddings-use
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Corpus UberText 2.0: https://lang.org.ua/en/ubertext/

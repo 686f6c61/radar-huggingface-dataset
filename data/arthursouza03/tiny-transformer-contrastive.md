@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - GPU de consumo: si, cabe en cualquier GPU de consumo, e incluso puede ejecutarse en CPU sin penalizacion practica.
 - Opciones de despliegue: al ser una implementacion a medida, no es compatible directamente con vLLM, llama.cpp, Ollama ni TGI. El despliegue pasa por PyTorch nativo, con la opcion de exportar a TorchScript u ONNX mediante un adaptador propio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -88,7 +88,7 @@ Las cifras de los dos modelos de referencia corresponden a sus especificaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arthursouza03/tiny-transformer-contrastive
+- Modelo en Hugging Face: https://huggingface.co/Arthursouza03/tiny-transformer-contrastive
 - Repositorio de codigo asociado: no disponible (no se enlaza repositorio externo en la informacion proporcionada)
 - Paper o publicacion tecnica: no disponible
 - Blog o articulo del autor: no disponible

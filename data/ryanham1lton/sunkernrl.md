@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ryanham1lton/SunkernRL` es un repositorio publicado en HuggingFace por el usuario Ryanham1lton. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido documental es la declaracion de licencia `cc-by-4.0`. No se especifica arquitectura, tamano, contexto, idiomas, datos de entrenamiento ni formato de pesos.
+`Ryanham1lton/SunkernRL` es un repositorio publicado en Hugging Face por el usuario Ryanham1lton. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido documental es la declaracion de licencia `cc-by-4.0`. No se especifica arquitectura, tamano, contexto, idiomas, datos de entrenamiento ni formato de pesos.
 
 El repositorio ocupa 0,1 GB, se publico el 22 de septiembre de 2026 y registra 0 descargas y 0 "likes". El unico tag informativo ademas de la licencia es `region:us`. La busqueda web asociada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a hilos de un foro de consumo en frances sobre la plataforma Leboncoin y no guardan ninguna relacion con este repositorio.
 
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/SunkernRL
+- Hugging Face: https://huggingface.co/Ryanham1lton/SunkernRL
 - La busqueda web no ha devuelto ningun enlace relevante sobre el modelo. Los resultados obtenidos corresponden a hilos del foro de Que Choisir sobre Leboncoin y no guardan relacion con este repositorio:
   - https://forum.quechoisir.org/critique-protection-leboncoin-et-avis-vendeurs-fausses-t332122.html
   - https://forum.quechoisir.org/compte-leboncoin-supprime-ou-pirate-t344482.html

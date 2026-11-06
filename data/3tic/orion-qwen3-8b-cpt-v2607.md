@@ -78,5 +78,5 @@ No se dispone de datos de rendimiento comparativo. La diferencia principal radic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3tic/Orion-Qwen3-8B-CPT-v2607
+- Modelo en Hugging Face: https://huggingface.co/3tic/Orion-Qwen3-8B-CPT-v2607
 - Modelo base Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base

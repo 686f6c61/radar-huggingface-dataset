@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-ckpt-h20-limx-a215a7d9b0f23c43-7fd4781f878f` es un archivo versionado de checkpoint (fleet archive) publicado en HuggingFace por el usuario `davidwdw`. Segun su propia model card, se trata de una instantanea ("snapshot") de un estado de entrenamiento completo, no de un modelo listo para inferencia: el nivel declarado es `params+train_state+assets`, lo que implica que el paquete incluye pesos, estado del optimizador y ficheros auxiliares. El tamano del repositorio es de 9,5 GB y no registra descargas ni likes en el momento de la consulta.
+El repositorio `davidwdw/fa-ckpt-h20-limx-a215a7d9b0f23c43-7fd4781f878f` es un archivo versionado de checkpoint (fleet archive) publicado en Hugging Face por el usuario `davidwdw`. Segun su propia model card, se trata de una instantanea ("snapshot") de un estado de entrenamiento completo, no de un modelo listo para inferencia: el nivel declarado es `params+train_state+assets`, lo que implica que el paquete incluye pesos, estado del optimizador y ficheros auxiliares. El tamano del repositorio es de 9,5 GB y no registra descargas ni likes en el momento de la consulta.
 
 La receta de entrenamiento referenciada en la model card es `2026-09-19_pi05_libero_alphabet_soup_lora`. Esta cadena sugiere, sin confirmacion por parte del autor, un entrenamiento con adaptadores LoRA sobre una tarea vinculada al benchmark LIBERO, habitualmente asociado a manipulacion robotica, y el prefijo `pi05` podria apuntar a la familia de modelos pi0.5. No obstante, esta interpretacion es una inferencia a partir del nombre del fichero y no un dato verificado.
 
@@ -87,7 +87,7 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-a215a7d9b0f23c43-7fd4781f878f
+- Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-a215a7d9b0f23c43-7fd4781f878f
 - Perfil del autor: https://huggingface.co/davidwdw
-- Resultados de busqueda web disponibles: no aportan informacion relevante sobre este modelo (enlaces genericos a Facebook, ChatGPT, listados de la organizacion `ckpt` en HuggingFace y Civitai).
+- Resultados de busqueda web disponibles: no aportan informacion relevante sobre este modelo (enlaces genericos a Facebook, ChatGPT, listados de la organizacion `ckpt` en Hugging Face y Civitai).
 - Paper, blog o repositorio del autor: no disponible.

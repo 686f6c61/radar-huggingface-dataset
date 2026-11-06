@@ -83,7 +83,7 @@ No se dispone en la informacion proporcionada de datos comparativos con otros mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jerdev38282/face_recognition_sface
+- Repositorio en Hugging Face: https://huggingface.co/jerdev38282/face_recognition_sface
 - Paper SFace (arXiv): https://arxiv.org/abs/2205.12010
 - Paper en IEEE: https://ieeexplore.ieee.org/document/9318547
 - Codigo original de los autores: https://github.com/zhongyy/SFace

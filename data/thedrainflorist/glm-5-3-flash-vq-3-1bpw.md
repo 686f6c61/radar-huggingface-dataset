@@ -93,7 +93,7 @@ Este rung de 3.1bpw es 13 GiB más pequeño que affine q3 y un 47% mejor en KL. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheDrainFlorist/GLM-5.3-Flash-VQ-3.1bpw
+- Hugging Face: https://huggingface.co/TheDrainFlorist/GLM-5.3-Flash-VQ-3.1bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - VQLab: https://github.com/noahzelezny/VQLab
 - Paper de cuantización VQ: https://doi.org/10.5281/zenodo.22136000

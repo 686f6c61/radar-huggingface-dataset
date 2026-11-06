@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/InnoSpark3.2-27B-1102-GGUF",
   "created_at": "2026-11-03T17:05:55.000Z",
-  "updated_at": "2026-11-03T19:04:28.000Z",
+  "updated_at": "2026-11-05T16:24:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",

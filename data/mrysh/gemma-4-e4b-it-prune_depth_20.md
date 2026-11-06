@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- [HuggingFace: mrysh/gemma-4-e4b-it-prune_depth_20](https://huggingface.co/mrysh/gemma-4-e4b-it-prune_depth_20)
+- [Hugging Face: mrysh/gemma-4-e4b-it-prune_depth_20](https://huggingface.co/mrysh/gemma-4-e4b-it-prune_depth_20)
 - [Modelo base: google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - [NVIDIA ModelOpt (herramienta de poda)](https://github.com/NVIDIA/TensorRT-Model-Optimizer)
 - [vLLM (motor de inferencia usado en el benchmark)](https://github.com/vllm-project/vllm)

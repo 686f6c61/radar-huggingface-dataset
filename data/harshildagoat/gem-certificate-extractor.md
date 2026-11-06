@@ -25,7 +25,7 @@ Su relevancia practica es la de un extractor pequeno y desplegable en CPU (65,2 
 | Etiquetas de entidad | 12: ACTIVITY, CATEGORY, CIN, DPIIT, EPFO, GSTIN, LEGAL_NAME, LOCAL_CONTENT, PAN, TRADE_NAME, UDYAM, VALID_UNTIL |
 | Datos de entrenamiento | 54.000 ejemplos de entrenamiento, 3.000 de validacion y 3.000 de test, todos sinteticos |
 | Tamano del repositorio | 0,3 GB |
-| Descargas y likes en HuggingFace | 0 descargas, 0 likes |
+| Descargas y likes en Hugging Face | 0 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ El entrenamiento se genero con un script propio (`ml/extraction/generate.py`) qu
 - Robustez declarada frente a ruido de OCR (sustituciones O/0, S/5, I/1) y lineas fusionadas, incorporada al generador de datos sinteticos.
 - Desambiguacion contextual de multiples identificadores del mismo tipo en un documento (por ejemplo, GSTIN del OEM frente al del licitador).
 - Funciona sobre texto plano: capa de texto de un PDF o salida de OCR. No procesa imagenes directamente.
-- Inferencia viable en CPU por tamano (65 M de parametros) y compatible con `transformers` y endpoints de HuggingFace.
+- Inferencia viable en CPU por tamano (65 M de parametros) y compatible con `transformers` y endpoints de Hugging Face.
 - No soporta tool calling, function calling, agentes, multi-step reasoning, vision, audio ni modo de razonamiento. No es un modelo generativo.
 - Multilingue: no. Solo ingles; los identificadores son alfanumericos, pero las etiquetas de nombre y actividad dependen del ingles.
 
@@ -86,7 +86,7 @@ Advertencias sobre estas cifras: proceden del mismo generador sintetico que los 
 - GPU recomendadas: cualquiera con 2 GB o mas, incluidas GTX 1650, T4, L4, RTX 3060 y superiores. No requiere A100 ni H100.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU discreta e incluso en iGPU con suficiente memoria compartida.
 - Inferencia en CPU: totalmente viable y probablemente el modo de despliegue razonable; soporta batching para aumentar el throughput.
-- Opciones de despliegue: `transformers` con `pipeline("token-classification")` y `aggregation_strategy="simple"`, ONNX Runtime u Optimum para int8, TorchScript, FastAPI/uvicorn como servicio propio, y endpoints de HuggingFace (`endpoints_compatible` aparece en las etiquetas del repositorio). vLLM, TGI, llama.cpp, Ollama y GGUF no son aplicables: es un encoder de clasificacion, no un modelo generativo.
+- Opciones de despliegue: `transformers` con `pipeline("token-classification")` y `aggregation_strategy="simple"`, ONNX Runtime u Optimum para int8, TorchScript, FastAPI/uvicorn como servicio propio, y endpoints de Hugging Face (`endpoints_compatible` aparece en las etiquetas del repositorio). vLLM, TGI, llama.cpp, Ollama y GGUF no son aplicables: es un encoder de clasificacion, no un modelo generativo.
 - Latencia y throughput: no disponible. No se publican medidas de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -120,7 +120,7 @@ Diferencias clave frente a las alternativas: este modelo no procesa la imagen de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarshilDaGoat/gem-certificate-extractor
+- Modelo en Hugging Face: https://huggingface.co/HarshilDaGoat/gem-certificate-extractor
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-cased
 - Repositorio del proyecto: no disponible (la model card menciona los scripts `ml/extraction/generate.py` e `ml/extraction/infer.py`, pero no enlaza ninguna URL)
 - Paper o informe tecnico: no disponible

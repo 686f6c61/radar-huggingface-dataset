@@ -97,7 +97,7 @@ Frente a otras familias de modelos de ~1,5 B de parametros (por ejemplo, alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/anime-girl-1.5B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/anime-girl-1.5B-i1-GGUF
 - Modelo base: https://huggingface.co/coderian/anime-girl-1.5B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/anime-girl-1.5B-GGUF
 - Pagina de vision general y descargas del autor: https://hf.tst.eu/model#anime-girl-1.5B-i1-GGUF

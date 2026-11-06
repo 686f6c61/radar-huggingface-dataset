@@ -18,7 +18,7 @@ Es relevante ahora por dos motivos: por un lado, permite estudiar el comportamie
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se publican pesos en safetensors; no hay GGUF ni cuantizaciones oficiales) |
 | Idiomas soportados | no disponible (vocabulario de 20.000 tokens; composición lingüística del corpus no documentada) |
-| Licencia | MIT según la model card (el campo de licencia de los metadatos de HuggingFace figura como no disponible) |
+| Licencia | MIT según la model card (el campo de licencia de los metadatos de Hugging Face figura como no disponible) |
 | Formato de pesos | `safetensors` (`model.safetensors`) + `config.json` + `trainer_state.json`; requiere `trust_remote_code=True` |
 
 Otros datos técnicos declarados: `d_model` = 1408, 20 capas, 22 cabezas, vocabulario de 20.000 tokens, paso global 67.390 (final de la época 1). Tamaño del repositorio: 2,0 GB, coherente con pesos almacenados en fp32 (504 M × 4 bytes ≈ 2,02 GB).
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RetNet-0.5B-ep1-ckpt67390 | 504 M | no disponible | MIT (según model card) | HuggingFace; requiere `trust_remote_code=True` |
-| RetNet-0.5B (mismo autor, repo de inferencia) | misma línea de 0,5B | no disponible | MIT (según model card del proyecto padre) | HuggingFace; recomendado por el autor para inferencia |
-| RetNet-0.5B-ep1 (mismo autor) | misma línea de 0,5B | no disponible | MIT (según model card del proyecto padre) | HuggingFace; reexportación posterior del mismo tramo |
-| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | HuggingFace; soporte nativo en transformers, vLLM, llama.cpp y Ollama |
+| RetNet-0.5B-ep1-ckpt67390 | 504 M | no disponible | MIT (según model card) | Hugging Face; requiere `trust_remote_code=True` |
+| RetNet-0.5B (mismo autor, repo de inferencia) | misma línea de 0,5B | no disponible | MIT (según model card del proyecto padre) | Hugging Face; recomendado por el autor para inferencia |
+| RetNet-0.5B-ep1 (mismo autor) | misma línea de 0,5B | no disponible | MIT (según model card del proyecto padre) | Hugging Face; reexportación posterior del mismo tramo |
+| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | Hugging Face; soporte nativo en transformers, vLLM, llama.cpp y Ollama |
 
 Nota: los datos de la familia RetNet proceden de la model card; los de Qwen2.5-0.5B son de conocimiento general del ecosistema y no forman parte de la información proporcionada en esta búsqueda, por lo que conviene verificarlos antes de publicar una comparación de rendimiento. No se dispone de benchmarks de ninguno de los modelos comparados en esta ficha.
 
@@ -83,13 +83,13 @@ Nota: los datos de la familia RetNet proceden de la model card; los de Qwen2.5-0
 - Cobertura lingüística: no documentada; con un vocabulario de 20.000 tokens es previsible una cobertura limitada fuera de los idiomas dominantes del corpus, que no se especifican.
 - Longitud de contexto: no declarada; no debe asumirse ninguna ventana concreta sin verificarla en `config.json`.
 - Ejecución de código remoto: `trust_remote_code=True` implica ejecutar código del autor del repositorio; conviene auditar el módulo antes de cargarlo en entornos con datos sensibles.
-- Licencia: la model card declara MIT, pero el campo de licencia de los metadatos de HuggingFace está vacío; para uso comercial conviene confirmar la licencia del proyecto padre y conservar la atribución.
+- Licencia: la model card declara MIT, pero el campo de licencia de los metadatos de Hugging Face está vacío; para uso comercial conviene confirmar la licencia del proyecto padre y conservar la atribución.
 - Ecosistema: sin cuantizaciones GGUF ni soporte en servidores de inferencia habituales, lo que complica el despliegue y el escalado.
 - Trazabilidad: al ser un checkpoint intermedio con pesos distintos byte a byte de otra exportación del mismo estado, hay riesgo de confusión al citar resultados experimentales; conviene registrar siempre el identificador exacto del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ayaka157/RetNet-0.5B-ep1-ckpt67390
+- Modelo en Hugging Face: https://huggingface.co/Ayaka157/RetNet-0.5B-ep1-ckpt67390
 - Repositorio recomendado para inferencia: https://huggingface.co/Ayaka157/RetNet-0.5B
 - Reexportación posterior del mismo tramo: https://huggingface.co/Ayaka157/RetNet-0.5B-ep1
 - Descripción del defecto de inicialización: https://huggingface.co/Ayaka157/RetNet-FAILED-checkpoints

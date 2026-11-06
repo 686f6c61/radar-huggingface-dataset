@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/Fastiraz/Qwen3.8-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del GGUF: https://huggingface.co/Fastiraz/Qwen3.8-27B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial de AlibabaCloud-Official: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Guía de ejecución local (Yottalabs): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

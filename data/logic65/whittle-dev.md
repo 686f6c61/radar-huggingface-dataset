@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`logic65/whittle-dev` es un repositorio de HuggingFace publicado por el usuario logic65 que no contiene un modelo listo para inferencia, sino una coleccion de checkpoints nocturnos de entrenamiento ("nightly training checkpoints") correspondientes a las ejecuciones de un proyecto denominado Whittle-Next sobre Google Colab. Segun la propia model card, los ficheros almacenan el estado del entrenador (`trainer state`) con los componentes etiquetados como HC, PLE, LoRA y gates, y no estan pensados para cargarse de forma autonoma. La carga prevista es mediante el script de entrenamiento, estableciendo la variable de entorno `RESUME_CKPT=`.
+`logic65/whittle-dev` es un repositorio de Hugging Face publicado por el usuario logic65 que no contiene un modelo listo para inferencia, sino una coleccion de checkpoints nocturnos de entrenamiento ("nightly training checkpoints") correspondientes a las ejecuciones de un proyecto denominado Whittle-Next sobre Google Colab. Segun la propia model card, los ficheros almacenan el estado del entrenador (`trainer state`) con los componentes etiquetados como HC, PLE, LoRA y gates, y no estan pensados para cargarse de forma autonoma. La carga prevista es mediante el script de entrenamiento, estableciendo la variable de entorno `RESUME_CKPT=`.
 
 La relevancia de este repositorio es, por tanto, puramente operativa: sirve como almacen externo de puntos de reanudacion para runs de entrenamiento que se ejecutan en entornos efimeros como Colab. El repositorio distingue entre `colab1/latest.pt`, que se sobrescribe a medida que avanza el run, y `colab1/step<N>.pt`, que actua como hito cada 1000 pasos de entrenamiento. No se documenta la arquitectura del modelo subyacente, el numero de parametros, la longitud de contexto, los idiomas ni la licencia.
 
@@ -46,7 +46,7 @@ No es posible enumerar capacidades funcionales del modelo subyacente, ya que el 
 - Recuperacion ante divergencia del entrenamiento: si la perdida diverge tras un determinado punto, los hitos `step<N>.pt` permiten volver a un estado anterior concreto (por ejemplo, el multiplo de 1000 inmediatamente anterior) y reajustar hiperparametros como la tasa de aprendizaje.
 - Analisis de la progresion del entrenamiento: comparar checkpoints separados por miles de pasos permite estudiar la evolucion de los pesos, de los adaptadores LoRA y de los parametros de las compuertas a lo largo del run.
 - Experimentos de ablacion sobre LoRA y gates: al conservar el estado de estos componentes, es posible cargar variantes y medir el efecto de congelar, reinicializar o escalar los adaptadores sin reentrenar desde cero.
-- Migracion del entrenamiento a otra plataforma de computo: los `.pt` pueden descargarse de HuggingFace y reinyectarse en un cluster con GPUs de mayor memoria para continuar el run alli donde lo dejo Colab.
+- Migracion del entrenamiento a otra plataforma de computo: los `.pt` pueden descargarse de Hugging Face y reinyectarse en un cluster con GPUs de mayor memoria para continuar el run alli donde lo dejo Colab.
 - Auditoria y trazabilidad de experimentos: mantener hitos periodicos en un repositorio remoto proporciona un registro reproducible de que estado exacto del modelo se uso en cada evaluacion intermedia, requisito habitual en flujos de investigacion.
 - Comparticion de estados intermedios entre colaboradores: un colaborador que no disponga del entorno original puede descargar el checkpoint y cargarlo con la misma herramienta de entrenamiento para inspeccionar el estado.
 
@@ -84,7 +84,7 @@ No disponible. Este repositorio no es un modelo publicado, sino un almacen de ch
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/logic65/whittle-dev
+- Repositorio en Hugging Face: https://huggingface.co/logic65/whittle-dev
 - Paper: no disponible
 - Blog o documentacion del proyecto: no disponible
 - Repositorio de codigo: no disponible

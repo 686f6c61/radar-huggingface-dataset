@@ -91,7 +91,7 @@ No se han encontrado en la busqueda web modelos comparables con datos verificabl
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/WasamiKirua/Hexis-Vesper-12B-mlx-4Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/WasamiKirua/Hexis-Vesper-12B-mlx-4Bit
 - Modelo base: https://huggingface.co/WasamiKirua/Hexis-Vesper-12B
 - Libreria mlx-lm (necesaria para cargar los pesos): https://github.com/ml-explore/mlx-lm
 - Documentacion de MLX: https://ml-explore.github.io/mlx/

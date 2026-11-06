@@ -72,7 +72,7 @@ No se han publicado otros resultados de benchmarks ni comparaciones con arquitec
 
 | Modelo | Parametros | Entrada | Exactitud en MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `abidlabs/mnist-mlp-1min` | 203.530 (calculado) | 784 (28x28 aplanado) | 0.9328 (declarada) | MIT | HuggingFace, `model.pt` |
+| `abidlabs/mnist-mlp-1min` | 203.530 (calculado) | 784 (28x28 aplanado) | 0.9328 (declarada) | MIT | Hugging Face, `model.pt` |
 | Regresion logistica / softmax lineal | ~7.850 (referencia externa) | 784 | no disponible en la informacion proporcionada | depende de la implementacion | multipliple implementaciones publicas |
 | LeNet-5 (CNN clasica) | ~60.000 (referencia externa) | 32x32 o 28x28 | referencia externa habitual cercana al 99 por ciento, no verificada | depende de la implementacion | multiples implementaciones publicas |
 | CNN pequena moderna (por ejemplo, 2 capas convolucionales + densa) | no disponible | 28x28 | no disponible | depende de la implementacion | multiples implementaciones publicas |
@@ -94,7 +94,7 @@ Nota: las cifras marcadas como referencia externa no provienen de la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abidlabs/mnist-mlp-1min
+- Modelo en Hugging Face: https://huggingface.co/abidlabs/mnist-mlp-1min
 - Dataset de entrenamiento: https://huggingface.co/datasets/ylecun/mnist
 - Perfil del autor: https://huggingface.co/abidlabs
 - Paper de referencia de MNIST (LeCun et al., 1998): http://yann.lecun.com/exdb/mnist/

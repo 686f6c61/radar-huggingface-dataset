@@ -97,7 +97,7 @@ Frente a OCR genericos como los reconocedores estandar de PP-OCRv6 o Tesseract, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guqinlizhixian/jzpocr-lc-parent-b
+- Modelo en Hugging Face: https://huggingface.co/guqinlizhixian/jzpocr-lc-parent-b
 - Modelo base referenciado en la model card: PP-OCRv6_medium_rec de PaddleOCR (no se proporciona URL directa en la informacion disponible)
 - Repositorio principal referenciado por el autor: `jzpOCR` y su modulo `lc_segment` (no se proporciona URL directa en la informacion disponible)
 - La busqueda web realizada no devolvio ningun enlace relevante para este modelo: los resultados obtenidos corresponden a servicios de video generado, visualizaciones de arboles genealogicos de modelos de lenguaje, listados de API gratuitas y blogs de tendencias, ninguno relacionado con OCR de *jianzipu* ni con guqin.

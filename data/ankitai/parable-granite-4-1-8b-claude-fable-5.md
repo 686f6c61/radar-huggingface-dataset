@@ -92,7 +92,7 @@ El modelo supera claramente a su base en pérdida de test sobre la familia de da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnkitAI/Parable-Granite-4.1-8B-Claude-Fable-5
+- Modelo en Hugging Face: https://huggingface.co/AnkitAI/Parable-Granite-4.1-8B-Claude-Fable-5
 - Cuantizaciones GGUF: https://huggingface.co/AnkitAI/Parable-Granite-4.1-8B-Claude-Fable-5-GGUF
 - Colección Parable (pesos completos, GGUF, informes de evaluación): https://huggingface.co/collections/AnkitAI/parable-6a4fac60f4b35afca3019621
 - Artefactos de evaluación v2 (incluye archivos BFCL): https://huggingface.co/AnkitAI/parable-v2-artifacts

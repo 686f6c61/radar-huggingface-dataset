@@ -89,7 +89,7 @@ No se dispone de datos comparativos con otros modelos MoE de tamaño similar (p.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/GLM-5.3-ABLITERATED-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/dealignai/GLM-5.3-ABLITERATED-NVFP4
 - Espejo (UNCENSORED): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-NVFP4
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
 - Sitio de dealignai: https://dealign.ai/

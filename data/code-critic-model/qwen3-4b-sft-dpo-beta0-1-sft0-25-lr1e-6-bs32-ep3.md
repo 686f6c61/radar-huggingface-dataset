@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su tamaño compacto (4B parámetros) y su
 
 El modelo es un ajuste fino de `code-critic-model/qwen3-4b-sft-prm`, que a su vez deriva de Qwen3-4B. La arquitectura subyacente es un transformer denso (no MoE) con aproximadamente 4.000 millones de parámetros, tal como se describe en el informe técnico de Qwen3 para los modelos de ese tamaño. No se proporcionan detalles sobre la configuración interna (número de capas, cabezas de atención, etc.) en la documentación disponible.
 
-El entrenamiento se realizó en dos etapas. Primero, un ajuste supervisado (SFT) sobre el modelo base para crear `qwen3-4b-sft-prm`, y posteriormente un entrenamiento con DPO (Direct Preference Optimization) sobre el dataset `code-critic-model/PRM_1541i`, que contiene anotaciones de procesos de razonamiento. Los hiperparámetros del entrenamiento DPO, visibles en el nombre del modelo, son: `beta=0.1`, `sft=0.25` (posiblemente una fracción de datos SFT mezclados), `learning_rate=1e-6`, `batch_size=32` y `3 épocas`. Se utilizó la librería TRL de HuggingFace. No se mencionan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+El entrenamiento se realizó en dos etapas. Primero, un ajuste supervisado (SFT) sobre el modelo base para crear `qwen3-4b-sft-prm`, y posteriormente un entrenamiento con DPO (Direct Preference Optimization) sobre el dataset `code-critic-model/PRM_1541i`, que contiene anotaciones de procesos de razonamiento. Los hiperparámetros del entrenamiento DPO, visibles en el nombre del modelo, son: `beta=0.1`, `sft=0.25` (posiblemente una fracción de datos SFT mezclados), `learning_rate=1e-6`, `batch_size=32` y `3 épocas`. Se utilizó la librería TRL de Hugging Face. No se mencionan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/code-critic-model/Qwen3-4B-SFT-DPO-beta0.1-sft0.25-lr1e-6-bs32-ep3)
+- [Modelo en Hugging Face](https://huggingface.co/code-critic-model/Qwen3-4B-SFT-DPO-beta0.1-sft0.25-lr1e-6-bs32-ep3)
 - [Dataset PRM_1541i](https://huggingface.co/datasets/code-critic-model/PRM_1541i)
 - [Modelo base SFT](https://huggingface.co/code-critic-model/qwen3-4b-sft-prm)
 - [Paper de DPO (arXiv:2305.18290)](https://huggingface.co/papers/2305.18290)

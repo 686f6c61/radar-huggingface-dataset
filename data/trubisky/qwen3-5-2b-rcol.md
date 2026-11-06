@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`trubisky/Qwen3.5-2B-RCOL` es un modelo publicado en HuggingFace por el usuario trubisky con licencia Apache 2.0. Se trata, por su nomenclatura, de una variante o ajuste fino (fine-tune) del modelo base Qwen3.5-2B de Alibaba Cloud, aunque la model card del repositorio esta practicamente vacia: solo contiene la declaracion de licencia, sin documentacion tecnica adicional.
+`trubisky/Qwen3.5-2B-RCOL` es un modelo publicado en Hugging Face por el usuario trubisky con licencia Apache 2.0. Se trata, por su nomenclatura, de una variante o ajuste fino (fine-tune) del modelo base Qwen3.5-2B de Alibaba Cloud, aunque la model card del repositorio esta practicamente vacia: solo contiene la declaracion de licencia, sin documentacion tecnica adicional.
 
 El modelo base Qwen3.5-2B es un modelo denso de 2.000 millones de parametros perteneciente a la familia Qwen3.5, descrito por fuentes externas como una arquitectura de redes delta con compuertas (gated delta networks), con soporte multimodal (vision-lenguaje), una longitud de contexto nativa de 262.144 tokens y capacidades multilingues. Estaria disenado para inferencia en dispositivo (edge) y en GPUs de consumo de 8 GB.
 
@@ -72,8 +72,8 @@ No hay datos de rendimiento del modelo evaluado, por lo que no es posible una co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| trubisky/Qwen3.5-2B-RCOL | 2B (presunto) | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Model card vacia; ajuste no documentado |
-| Qwen/Qwen3.5-2B (base) | 2B denso | 262.144 tokens | No disponible en la informacion | HuggingFace, LM Studio, Qualcomm AI Hub | Multimodal, orientado a edge |
+| trubisky/Qwen3.5-2B-RCOL | 2B (presunto) | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Model card vacia; ajuste no documentado |
+| Qwen/Qwen3.5-2B (base) | 2B denso | 262.144 tokens | No disponible en la informacion | Hugging Face, LM Studio, Qualcomm AI Hub | Multimodal, orientado a edge |
 | Modelos densos de 2B alternativos | Aprox. 2B | Variable | Variable | Variable | No disponibles en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -84,13 +84,13 @@ No hay datos de rendimiento del modelo evaluado, por lo que no es posible una co
 - Sesgos conocidos: no disponibles.
 - Limitaciones de contexto o idioma: no confirmadas; dependen del modelo base.
 - Licencia: Apache 2.0, que en principio permite uso comercial, pero el autor no aporta garantias sobre el contenido del ajuste ni sobre posible contaminacion de datos.
-- Adopcion nula: 0 descargas y 0 "me gusta" en HuggingFace, sin senales de uso en la comunidad ni de validacion por terceros.
+- Adopcion nula: 0 descargas y 0 "me gusta" en Hugging Face, sin senales de uso en la comunidad ni de validacion por terceros.
 - Cero garantias de soporte: no hay repositorio, issues ni mantenimiento indicados.
 - Para produccion: no se recomienda su uso sin una evaluacion previa propia y una verificacion de los pesos y su procedencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trubisky/Qwen3.5-2B-RCOL
+- Modelo en Hugging Face: https://huggingface.co/trubisky/Qwen3.5-2B-RCOL
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Qwen3.5-2B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-2b
 - Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b

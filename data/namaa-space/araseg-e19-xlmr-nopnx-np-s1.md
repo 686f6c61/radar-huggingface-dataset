@@ -4,7 +4,7 @@
 
 `NAMAA-Space/araseg-e19-xlmr-nopnx-np-s1` es un miembro individual del sistema **NoPnx-NP** presentado por NAMAA Community a la tarea compartida de segmentación del árabe **AraSeg 2026** (ArabicNLP 2026). No es un segmentador autónomo: se trata de un encoder afinado con `FacebookAI/xlm-roberta-large` que produce probabilidades de frontera por palabra sin calibrar, y cuyo resultado solo tiene sentido al integrarse en un *ensemble* de siete miembros gobernado por un decodificador estructural MEMM ajustado sobre predicciones *out-of-fold* (OOF). Es la semilla 1 del par de encoders NoPnx-NP.
 
-El modelo se distribuye como un `state_dict` de PyTorch (`best_NoPnx_NP.pt`), no como checkpoint en formato HuggingFace, de modo que `from_pretrained` no funciona: hay que reconstruir la arquitectura a partir del YAML de configuración del experimento y de los pesos del modelo base antes de cargar el estado. El repositorio ocupa 2,2 GB, coherente con un modelo de aproximadamente 560 millones de parámetros almacenado en precisión completa.
+El modelo se distribuye como un `state_dict` de PyTorch (`best_NoPnx_NP.pt`), no como checkpoint en formato Hugging Face, de modo que `from_pretrained` no funciona: hay que reconstruir la arquitectura a partir del YAML de configuración del experimento y de los pesos del modelo base antes de cargar el estado. El repositorio ocupa 2,2 GB, coherente con un modelo de aproximadamente 560 millones de parámetros almacenado en precisión completa.
 
 Su relevancia es fundamentalmente metodológica y de reproducibilidad: documenta públicamente un componente de un sistema que obtuvo 86,49 de macro-F1 en el *practice test* y 87,0 en el conjunto ciego de la tarea, con umbral de decisión del sistema fijado en 0,34. Para quien investigue segmentación árabe o arquitecturas de *ensemble* sobre encoders multilingües, es una pieza auditable más que un modelo listo para producción.
 
@@ -19,7 +19,7 @@ Su relevancia es fundamentalmente metodológica y de reproducibilidad: documenta
 | Tipos de cuantizacion | No disponible; solo se publica un `state_dict` de PyTorch en precision completa |
 | Idiomas soportados | Arabe (`ar`) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | `state_dict` de PyTorch (`best_NoPnx_NP.pt`); no es safetensors, GGUF ni un checkpoint en formato HuggingFace |
+| Formato de pesos | `state_dict` de PyTorch (`best_NoPnx_NP.pt`); no es safetensors, GGUF ni un checkpoint en formato Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -73,9 +73,9 @@ No se dispone de datos de rendimiento de otros miembros del *ensemble* ni de otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NAMAA-Space/araseg-e19-xlmr-nopnx-np-s1` | ~560M | 512 tokens | Miembro de un sistema con 86,49 / 87,0 macro-F1 | MIT | HuggingFace (state_dict) |
-| `FacebookAI/xlm-roberta-large` (modelo base) | ~560M | 512 tokens | No disponible para este subtask (sin ajuste) | MIT | HuggingFace |
-| Otros miembros de la coleccion AraSeg 2026 de NAMAA | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `NAMAA-Space/araseg-e19-xlmr-nopnx-np-s1` | ~560M | 512 tokens | Miembro de un sistema con 86,49 / 87,0 macro-F1 | MIT | Hugging Face (state_dict) |
+| `FacebookAI/xlm-roberta-large` (modelo base) | ~560M | 512 tokens | No disponible para este subtask (sin ajuste) | MIT | Hugging Face |
+| Otros miembros de la coleccion AraSeg 2026 de NAMAA | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de otros miembros del *ensemble* ni de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e19-xlmr-nopnx-np-s1
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e19-xlmr-nopnx-np-s1
 - Colección del sistema AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de código, configuraciones y mapa miembro-subtask: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

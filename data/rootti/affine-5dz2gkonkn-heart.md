@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rootti/affine-5dz2gkonkn-heart` es un modelo de lenguaje publicado en HuggingFace por el usuario `rootti`. Aunque el repositorio contiene pesos en formato `safetensors` con un total de 35.951.822.704 parámetros, no se incluye documentación técnica, licencia ni información sobre el pipeline de uso. La etiqueta `qwen3_5_moe` sugiere que podría tratarse de un modelo de mezcla de expertos (MoE) basado en la familia Qwen3.5, pero no hay confirmación oficial ni detalles sobre su arquitectura, contexto o entrenamiento. La fecha de creación indicada es posterior a la actual (2026), lo que refuerza la falta de información fiable. En consecuencia, este modelo no puede ser evaluado ni desplegado de forma segura sin documentación adicional.
+El modelo `rootti/affine-5dz2gkonkn-heart` es un modelo de lenguaje publicado en Hugging Face por el usuario `rootti`. Aunque el repositorio contiene pesos en formato `safetensors` con un total de 35.951.822.704 parámetros, no se incluye documentación técnica, licencia ni información sobre el pipeline de uso. La etiqueta `qwen3_5_moe` sugiere que podría tratarse de un modelo de mezcla de expertos (MoE) basado en la familia Qwen3.5, pero no hay confirmación oficial ni detalles sobre su arquitectura, contexto o entrenamiento. La fecha de creación indicada es posterior a la actual (2026), lo que refuerza la falta de información fiable. En consecuencia, este modelo no puede ser evaluado ni desplegado de forma segura sin documentación adicional.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No se han publicado resultados de benchmarks ni documentación qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rootti/affine-5dz2gkonkn-heart
+- Hugging Face: https://huggingface.co/rootti/affine-5dz2gkonkn-heart

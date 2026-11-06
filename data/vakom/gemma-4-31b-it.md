@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Vakom/gemma-4-31B-it | 31.3B | 256K | Apache 2.0 | safetensors | HuggingFace |
-| google/gemma-4-31B (modelo base) | 30.7B (según tabla de la familia) | 256K | Apache 2.0 | safetensors | HuggingFace |
-| Google Gemma 4 26B A4B (MoE) | 25.2B total, 3.8B activos | 256K | Apache 2.0 | safetensors | HuggingFace |
-| Google Gemma 4 12B Unified | 11.95B | 256K | Apache 2.0 | safetensors | HuggingFace |
+| Vakom/gemma-4-31B-it | 31.3B | 256K | Apache 2.0 | safetensors | Hugging Face |
+| google/gemma-4-31B (modelo base) | 30.7B (según tabla de la familia) | 256K | Apache 2.0 | safetensors | Hugging Face |
+| Google Gemma 4 26B A4B (MoE) | 25.2B total, 3.8B activos | 256K | Apache 2.0 | safetensors | Hugging Face |
+| Google Gemma 4 12B Unified | 11.95B | 256K | Apache 2.0 | safetensors | Hugging Face |
 
 La comparación se limita a los modelos de la familia Gemma 4 presentes en la información disponible. El finetune de Vakom se diferencia del modelo base por ser una versión ajustada para instrucciones, pero no se ofrecen datos de rendimiento comparativos. El modelo 26B A4B es una alternativa MoE con menos parámetros activos, útil para despliegues con mayor restricción de energía o latencia, aunque no es multimodal en audio a diferencia de los modelos más pequeños. No se dispone de benchmarks externos para validar diferencias de calidad entre estas variantes en el contexto de este finetune.
 
@@ -82,7 +82,7 @@ La comparación se limita a los modelos de la familia Gemma 4 presentes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vakom/gemma-4-31B-it
+- Hugging Face: https://huggingface.co/Vakom/gemma-4-31B-it
 - Model card de Gemma 4 (Google AI): https://ai.google.dev/gemma/docs/core/model_card_4
 - Página del modelo Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/

@@ -19,7 +19,7 @@ Arquitectónicamente, hereda la estructura de *encoder* Transformer multilingüe
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | Francés, darija (en escritura latina y árabe), árabe |
 | Licencia | MIT |
-| Formato de pesos | safetensors (formato estándar de HuggingFace, no confirmado en la documentación) |
+| Formato de pesos | safetensors (formato estándar de Hugging Face, no confirmado en la documentación) |
 
 ## Arquitectura y entrenamiento
 
@@ -64,7 +64,7 @@ La mejor precisión de validación es del 95,05%, alcanzada en la época 2. No s
 - **VRAM estimada para inferencia**: el modelo base `xlm-roberta-base` tiene 560 millones de parámetros. En precisión FP32, el modelo completo ocupa aproximadamente 1,1 GB en disco. Para inferencia en FP32, se recomiendan al menos 2 GB de VRAM. Con cuantización a 8 bits, puede funcionar en menos de 1 GB de VRAM.
 - **GPU recomendada**: cualquier GPU con más de 2 GB de VRAM es suficiente, como NVIDIA GTX 1650, RTX 2060 o superiores. En CPU también es viable para clasificación por lotes pequeños (latencia de unos 100-200 ms por muestra en un procesador moderno).
 - **Compatibilidad con GPUs de consumo**: sí, el modelo cabe en GPUs de consumo de gama media y baja, e incluso en dispositivos con RAM suficiente (8 GB) para inferencia en CPU.
-- **Opciones de despliegue**: se puede servir con la librería `transformers` de HuggingFace, con `vLLM` (aunque es más habitual para modelos generativos), con `ONNX Runtime` para optimización en producción, o mediante la API de HuggingFace Inference Endpoints. También es compatible con `llama.cpp` y `Ollama` si se convierte a formato GGUF, aunque no es el uso estándar para modelos de clasificación.
+- **Opciones de despliegue**: se puede servir con la librería `transformers` de Hugging Face, con `vLLM` (aunque es más habitual para modelos generativos), con `ONNX Runtime` para optimización en producción, o mediante la API de Hugging Face Inference Endpoints. También es compatible con `llama.cpp` y `Ollama` si se convierte a formato GGUF, aunque no es el uso estándar para modelos de clasificación.
 - **Latencia y throughput estimados**: no hay datos publicados por el autor. En una GPU como una T4, se pueden procesar entre 200 y 400 comentarios por segundo con un batch de 32, aunque estas cifras son orientativas basadas en el rendimiento del modelo base.
 
 ## Comparativa con modelos similares
@@ -92,6 +92,6 @@ La comparativa es meramente orientativa, ya que no se han ejecutado los mismos b
 
 ## Enlaces
 
-- [HuggingFace - Modelo](https://huggingface.co/Chaima-KHENAFIF/relevant-comment-detector)
+- [Hugging Face - Modelo](https://huggingface.co/Chaima-KHENAFIF/relevant-comment-detector)
 - [GitHub - Repositorio con código y pipeline de entrenamiento](https://github.com/chaima-Khenafif03/relevant-comment-detector)
 - [Perfil de GitHub del autor](https://github.com/chaima-Khenafif03/)

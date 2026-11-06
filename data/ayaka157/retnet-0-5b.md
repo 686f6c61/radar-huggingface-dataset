@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RetNet-0.5B es un modelo de lenguaje de 504.179.896 parametros desarrollado por el usuario Ayaka157 y publicado en HuggingFace bajo licencia MIT. Se trata de una implementacion desde cero de una Retentive Network (RetNet), una arquitectura de atencion lineal con mecanismo de retencion multi-escala en lugar de la atencion softmax clasica del transformer. El modelo esta entrenado sobre un corpus de conversacion en chino (`chat_pack_v13`) y esta pensado para mantener dialogo multi-turno y persona, no para tareas de conocimiento factual o razonamiento.
+RetNet-0.5B es un modelo de lenguaje de 504.179.896 parametros desarrollado por el usuario Ayaka157 y publicado en Hugging Face bajo licencia MIT. Se trata de una implementacion desde cero de una Retentive Network (RetNet), una arquitectura de atencion lineal con mecanismo de retencion multi-escala en lugar de la atencion softmax clasica del transformer. El modelo esta entrenado sobre un corpus de conversacion en chino (`chat_pack_v13`) y esta pensado para mantener dialogo multi-turno y persona, no para tareas de conocimiento factual o razonamiento.
 
 El modelo tiene 20 capas, `d_model` de 1408, 22 cabezas, `ffn_dim` y `value_dim` de 2816, un vocabulario de 20.000 tokens y una ventana de contexto de 2048 tokens con chunk size de 128. Los pesos se distribuyen en float32 mediante safetensors y requieren `trust_remote_code=True` porque el modelo incluye codigo propio (`retnet_hf`) no integrado en la libreria transformers estandar.
 
@@ -127,7 +127,7 @@ No hay datos de benchmarks comparables en la informacion proporcionada, y el uni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ayaka157/RetNet-0.5B
+- Modelo en Hugging Face: https://huggingface.co/Ayaka157/RetNet-0.5B
 - Repositorio con codigo, benchmark e informe tecnico: https://github.com/Ayaka157/RetNet
 - Paper de RetNet (referencia de la arquitectura): no disponible en la informacion proporcionada
 - Demo o Space: no disponible en la informacion proporcionada

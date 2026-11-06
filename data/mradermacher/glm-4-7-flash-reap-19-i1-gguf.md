@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-19-i1-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-19-i1-GGUF)
 - [Modelo base: Akicou/GLM-4.7-Flash-REAP-19](https://huggingface.co/Akicou/GLM-4.7-Flash-REAP-19)
 - [Página de mradermacher con más información](https://hf.tst.eu/model#GLM-4.7-Flash-REAP-19-i1-GGUF)

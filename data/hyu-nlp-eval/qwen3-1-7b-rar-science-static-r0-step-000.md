@@ -58,10 +58,10 @@ El modelo es un checkpoint del Qwen3-1.7B, por lo que la comparativa natural es 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B (base) | 1,72B | No especificado | Apache 2.0 | HuggingFace |
-| Este checkpoint | 1,72B | No especificado | Apache 2.0 | HuggingFace (público) |
-| Llama 3.2 1B | 1,23B | 128K | Llama 3.2 | HuggingFace |
-| Gemma 2 2B | 2,6B | 8K | Gemma | HuggingFace |
+| Qwen3-1.7B (base) | 1,72B | No especificado | Apache 2.0 | Hugging Face |
+| Este checkpoint | 1,72B | No especificado | Apache 2.0 | Hugging Face (público) |
+| Llama 3.2 1B | 1,23B | 128K | Llama 3.2 | Hugging Face |
+| Gemma 2 2B | 2,6B | 8K | Gemma | Hugging Face |
 
 Nota: los datos de contexto de los modelos comparativos provienen de información pública general, no de este repositorio.
 
@@ -76,5 +76,5 @@ Nota: los datos de contexto de los modelos comparativos provienen de informació
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-science-static-r0-step-000)
+- [Repositorio en Hugging Face](https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-science-static-r0-step-000)
 - [Modelo base Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)

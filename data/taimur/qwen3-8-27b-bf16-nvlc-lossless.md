@@ -23,7 +23,7 @@ El modelo base, Qwen3.8-27B, es un modelo denso de 27 mil millones de parámetro
 
 El modelo base Qwen3.8-27B es un transformer denso con atención híbrida: de sus 64 capas, solo 16 utilizan atención completa (con intervalo de atención completa de 4), mientras que las otras 48 emplean atención lineal con un estado recurrente constante. Esta arquitectura reduce el coste computacional en contextos largos. El modelo es nativo de visión-lenguaje, por lo que acepta entradas de imagen y texto.
 
-La compresión NVLC no modifica la arquitectura ni los pesos. Cada palabra BF16 se separa en sus campos exactos (signo, exponente de 8 bits y fracción de 7 bits). El símbolo conjunto signo+exponente se codifica con un modelo rANS19 por tensor, y tras decodificarlo se selecciona una distribución de fracciones soft-routed para los siete bits de fracción. Un flujo residual conserva la cabecera safetensors y cualquier segmento no BF16. La reconstrucción combina los campos bit a bit, garantizando una réplica exacta del checkpoint original. El autor verificó la reconstrucción comparando byte a byte cada shard lógico con el checkpoint inmutable de HuggingFace.
+La compresión NVLC no modifica la arquitectura ni los pesos. Cada palabra BF16 se separa en sus campos exactos (signo, exponente de 8 bits y fracción de 7 bits). El símbolo conjunto signo+exponente se codifica con un modelo rANS19 por tensor, y tras decodificarlo se selecciona una distribución de fracciones soft-routed para los siete bits de fracción. Un flujo residual conserva la cabecera safetensors y cualquier segmento no BF16. La reconstrucción combina los campos bit a bit, garantizando una réplica exacta del checkpoint original. El autor verificó la reconstrucción comparando byte a byte cada shard lógico con el checkpoint inmutable de Hugging Face.
 
 ## Capacidades
 
@@ -86,8 +86,8 @@ No se han encontrado alternativas de compresión sin pérdida de pesos BF16 de m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Taimur/Qwen3.8-27B-BF16-NVLC-Lossless
+- Repositorio Hugging Face: https://huggingface.co/Taimur/Qwen3.8-27B-BF16-NVLC-Lossless
 - Implementacion en GitHub: https://github.com/TaimurAyaz/Qwen3.8-27B-BF16-NVLC
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pagina del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

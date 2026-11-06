@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SO-101 Bench: InternW0-Δ full fine-tune es un modelo de politica visomotora (world-action model) publicado por el usuario 5hadytru en HuggingFace. Se trata de un post-entrenamiento completo (full fine-tune, no LoRA ni adaptadores) del checkpoint InternRobotics/InternW0-Delta-Base sobre el conjunto de teleoperacion simulado SO-101 Bench (`5hadytru/so101_bench_sim`), compuesto por 3.629 episodios y 1.996.120 fotogramas capturados con camara cenital y camara de muneca.
+SO-101 Bench: InternW0-Δ full fine-tune es un modelo de politica visomotora (world-action model) publicado por el usuario 5hadytru en Hugging Face. Se trata de un post-entrenamiento completo (full fine-tune, no LoRA ni adaptadores) del checkpoint InternRobotics/InternW0-Delta-Base sobre el conjunto de teleoperacion simulado SO-101 Bench (`5hadytru/so101_bench_sim`), compuesto por 3.629 episodios y 1.996.120 fotogramas capturados con camara cenital y camara de muneca.
 
 El modelo hereda la arquitectura del InternW0-Δ base: un experto de video derivado de Wan2.2-TI2V-5B, un experto de accion de 1,2B de parametros y un VLM RynnBrain1.1-2B. Su funcion es generar trayectorias de control para un brazo robotico SO-101 en tareas de manipulacion simulada, emitiendo chunks de 32 acciones a 30 Hz expresadas como objetivos articulares absolutos de 6 grados de libertad en unidades LeRobot, de las cuales se ejecutan 16 por cada replanificacion.
 
@@ -82,8 +82,8 @@ No se dispone de datos comparativos de otras familias de modelos de politica rob
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 5hadytru/so101_bench_InternW0-Delta (este modelo) | No disponible (componentes: ~5B video + 1,2B accion + ~2B VLM) | Memoria por fotogramas: primer fotograma + fotograma de 32 pasos atras | 22/39 (56,4%) en validacion SO-101 Bench con el paso 16.000; 20/39 (51,3%) con el paso 18.200 | `other` (terminos no detallados) | Publico en HuggingFace, 0 descargas, 0 likes, 24,8 GB |
-| InternRobotics/InternW0-Delta-Base | No disponible (misma arquitectura base declarada) | No disponible | No disponible (no se publica tasa de exito para el modelo base) | No disponible en la informacion proporcionada | Publico en HuggingFace como modelo base |
+| 5hadytru/so101_bench_InternW0-Delta (este modelo) | No disponible (componentes: ~5B video + 1,2B accion + ~2B VLM) | Memoria por fotogramas: primer fotograma + fotograma de 32 pasos atras | 22/39 (56,4%) en validacion SO-101 Bench con el paso 16.000; 20/39 (51,3%) con el paso 18.200 | `other` (terminos no detallados) | Publico en Hugging Face, 0 descargas, 0 likes, 24,8 GB |
+| InternRobotics/InternW0-Delta-Base | No disponible (misma arquitectura base declarada) | No disponible | No disponible (no se publica tasa de exito para el modelo base) | No disponible en la informacion proporcionada | Publico en Hugging Face como modelo base |
 
 Comparativa con alternativas de la misma categoria: no disponible.
 
@@ -103,7 +103,7 @@ Comparativa con alternativas de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/5hadytru/so101_bench_InternW0-Delta
+- Pagina del modelo en Hugging Face: https://huggingface.co/5hadytru/so101_bench_InternW0-Delta
 - Modelo base: https://huggingface.co/InternRobotics/InternW0-Delta-Base
 - Dataset de ajuste SO-101 Bench sim: https://huggingface.co/datasets/5hadytru/so101_bench_sim
 - Repositorio de codigo de InternW0-Delta (referencia de commit `90801ba`): https://github.com/InternRobotics/InternW0-Delta

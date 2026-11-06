@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Longbook27-v2 es un modelo de lenguaje de 27.072.285.696 parámetros (aproximadamente 27B) especializado en comprensión y generación de texto de formato largo: libros, artículos científicos e informes extensos. Lo publica el usuario summerAIO en HuggingFace y se presenta como una versión refinada (v2) de un modelo anterior, con mejoras en comportamiento y calidad de salida. La licencia declarada es Apache 2.0, con la salvedad de que el autor remite a la licencia del modelo base Qwen.
+Qwen3.8-27B-Longbook27-v2 es un modelo de lenguaje de 27.072.285.696 parámetros (aproximadamente 27B) especializado en comprensión y generación de texto de formato largo: libros, artículos científicos e informes extensos. Lo publica el usuario summerAIO en Hugging Face y se presenta como una versión refinada (v2) de un modelo anterior, con mejoras en comportamiento y calidad de salida. La licencia declarada es Apache 2.0, con la salvedad de que el autor remite a la licencia del modelo base Qwen.
 
 La característica técnica más relevante es su arquitectura personalizada `qwen3_5_gdn24`, que incorpora capas de atención lineal Gated DeltaNet en un esquema híbrido. Esto lo aleja del transformer denso convencional y lo orienta a entradas de escala libro, donde el coste cuadrático de la atención estándar resulta prohibitivo. El modelo se distribuye como código remoto dentro del repositorio, por lo que requiere `trust_remote_code=True` para cargarse.
 
@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento ni de especificaciones verificables de los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2
-- Repositorio de código remoto incluido en el modelo: `modeling_qwen35_gdn24.py`, `fused_ops.py` (dentro del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2
+- Repositorio de código remoto incluido en el modelo: `modeling_qwen35_gdn24.py`, `fused_ops.py` (dentro del repositorio de Hugging Face)
 - Dependencia opcional de kernels de atención lineal: `flash-linear-attention` (paquete pip)
 - Dependencia opcional de convolución causal: `causal-conv1d` (paquete pip)
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos.

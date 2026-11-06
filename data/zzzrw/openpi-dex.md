@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zzzrw/openpi-dex` es un repositorio de HuggingFace que contiene checkpoints afinados (fine-tuned) del modelo **π0.5 de Physical Intelligence** (referenciado en la model card como "Gento-Wuji π0.5") en su implementación JAX dentro del framework OpenPI. No es un modelo de lenguaje en el sentido convencional: se trata de un modelo de política visuomotora (vision-language-action, VLA) orientado al control de robots manipuladores, concretamente para el plataforma "Gento-Wuji" con brazos, torso, cabeza y manos articuladas.
+`zzzrw/openpi-dex` es un repositorio de Hugging Face que contiene checkpoints afinados (fine-tuned) del modelo **π0.5 de Physical Intelligence** (referenciado en la model card como "Gento-Wuji π0.5") en su implementación JAX dentro del framework OpenPI. No es un modelo de lenguaje en el sentido convencional: se trata de un modelo de política visuomotora (vision-language-action, VLA) orientado al control de robots manipuladores, concretamente para el plataforma "Gento-Wuji" con brazos, torso, cabeza y manos articuladas.
 
 El autor (`zzzrw`) publica tres checkpoints entrenados sobre datos de teleoperación propios: el más reciente usa un vector de estado de 62 dimensiones (qpos absolutas de brazo, torso, cabeza y mano) y fue entrenado excluyendo los episodios 0-4 del dataset; los dos anteriores usaban un vector de 58 dimensiones basado en posiciones absolutas del end-effector (EEF) de muñeca más qpos de mano. El checkpoint más reciente corresponde al paso 29999 de entrenamiento y se distribuye en formato Orbax (propio del ecosistema JAX/Flax), no en safetensors o GGUF.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zzzrw/openpi-dex | Fine-tune de π0.5 (JAX, Orbax) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| zzzrw/openpi-dex | Fine-tune de π0.5 (JAX, Orbax) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | π0.5 base (Physical Intelligence) | Política VLA | no disponible en esta ficha | no disponible | no disponible | Repositorio oficial de Physical Intelligence/OpenPI |
 | π0 (Physical Intelligence) | Política VLA | no disponible en esta ficha | no disponible | no disponible | OpenPI |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zzzrw/openpi-dex
+- Repositorio Hugging Face: https://huggingface.co/zzzrw/openpi-dex
 - OpenPI (framework de Physical Intelligence): no disponible en la información proporcionada
 - Modelo π0.5 de Physical Intelligence: no disponible en la información proporcionada
 - Paper de π0.5: no disponible en la información proporcionada

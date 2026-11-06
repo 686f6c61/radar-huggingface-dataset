@@ -60,7 +60,7 @@ Nota: la tabla original se corta en la fila de "Reasoning", por lo que no se dis
 - VRAM estimada para inferencia: con 3,8B parametros en FP16, se necesitan aproximadamente 7,7 GB de VRAM (el tamano del repo es 7,7 GB). Con cuantizacion INT8, ~4 GB; con INT4, ~2 GB.
 - GPU recomendadas: cabe en GPUs consumer como RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4090 (24 GB) sin problemas. Para despliegue en servidor, una A10G o L4 es suficiente.
 - En consumer GPU: si, es perfectamente viable en GPUs de 8 GB o mas con cuantizacion ligera.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (text-generation-inference) y transformers nativo. El repositorio indica compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (text-generation-inference) y transformers nativo. El repositorio indica compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no se han publicado datos oficiales. Con 3,8B parametros, se espera una generacion de 20-40 tokens/segundo en una RTX 4090 con cuantizacion FP16, y mayor con cuantizaciones inferiores.
 
 ## Comparativa con modelos similares
@@ -87,12 +87,12 @@ Phi-4-mini-instruct destaca frente a sus competidores directos de 3B en razonami
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/alwoolley/Phi-4-mini-instruct
+- Repositorio Hugging Face (espejo): https://huggingface.co/alwoolley/Phi-4-mini-instruct
 - Repositorio oficial: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Blog de Microsoft sobre Phi-4-mini: https://aka.ms/phi4-feb2025
 - Informe tecnico: https://aka.ms/phi-4-multimodal/techreport
 - Paper (arXiv 2503.01743): https://huggingface.co/papers/2503.01743
 - Phi Cookbook (ejemplos): https://github.com/microsoft/PhiCookBook
 - Portal Phi de Azure: https://azure.microsoft.com/en-us/products/phi
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/microsoft/phi-4-mini
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/microsoft/phi-4-mini
 - Catalogo de modelos Azure AI: https://ai.azure.com/catalog/models/Phi-4-mini-instruct

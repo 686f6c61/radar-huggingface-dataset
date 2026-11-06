@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SeraXu/text2vec-base-chinese es un modelo de embeddings de frases (sentence similarity) para chino, publicado en HuggingFace bajo licencia Apache 2.0. La model card del repositorio es la de shibing624/text2vec-base-chinese, del que este repositorio es una recarga: el autor de la ficha (SeraXu) no documenta entrenamiento propio ni cambios respecto al original, y el repositorio acumula 16 descargas y 0 "likes". Se trata, por tanto, de un espejo de bajo uso de un modelo ya existente, no de un desarrollo nuevo.
+SeraXu/text2vec-base-chinese es un modelo de embeddings de frases (sentence similarity) para chino, publicado en Hugging Face bajo licencia Apache 2.0. La model card del repositorio es la de shibing624/text2vec-base-chinese, del que este repositorio es una recarga: el autor de la ficha (SeraXu) no documenta entrenamiento propio ni cambios respecto al original, y el repositorio acumula 16 descargas y 0 "likes". Se trata, por tanto, de un espejo de bajo uso de un modelo ya existente, no de un desarrollo nuevo.
 
 El modelo proyecta frases a un espacio vectorial denso de 768 dimensiones y esta pensado para similitud semantica, recuperacion de informacion y matching de texto en chino. Segun la model card, esta entrenado con el metodo CoSENT (Cosine Sentence) sobre el modelo base hfl/chinese-macbert-base, partiendo de datos de STS en chino, y la evaluacion reportada corresponde al benchmark del proyecto text2vec.
 
@@ -80,18 +80,18 @@ El valor de QPS procede de la tabla original y no especifica el hardware utiliza
 - Cuantizacion int8 (via ONNX Runtime o OpenVINO): en torno a 0,11 GB para pesos, con perdida de precision no cuantificada en la informacion disponible.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o CPU sin acelerador dedicado.
 - GPU de datacenter (A100, H100) no son necesarias; solo tendrian sentido para indexar corpus muy grandes con maximos de throughput agregado.
-- Despliegue: sentence-transformers, HuggingFace Transformers, libreria text2vec, ONNX Runtime, OpenVINO y text-embeddings-inference (TEI). vLLM y llama.cpp no son adecuados, ya que el modelo no es generativo ni dispone de pesos GGUF.
+- Despliegue: sentence-transformers, Hugging Face Transformers, libreria text2vec, ONNX Runtime, OpenVINO y text-embeddings-inference (TEI). vLLM y llama.cpp no son adecuados, ya que el modelo no es generativo ni dispone de pesos GGUF.
 - Latencia y throughput: el modelo original reporta 3008 QPS en la tabla de evaluacion, sin especificar hardware; en CPU moderna es habitual el orden de cientos a pocos miles de frases por segundo con batching, aunque este dato no esta confirmado para esta recarga.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Dimension | Idiomas | Licencia | Disponibilidad | Media (Spearman) |
 |---|---|---|---|---|---|---|
-| SeraXu/text2vec-base-chinese (recarga) | 102 M | 768 | zh | Apache 2.0 | HuggingFace (16 descargas) | No verificado; el original reporta 51,61 |
-| shibing624/text2vec-base-chinese | 102 M | 768 | zh | Apache 2.0 | HuggingFace, repositorio original | 51,61 |
-| shibing624/text2vec-base-chinese-paraphrase | ~102 M (ernie-3.0-base-zh) | 768 | zh | Apache 2.0 | HuggingFace | 63,08 |
-| moka-ai/m3e-base | ~102 M (chinese-roberta-wwm-ext) | 768 | zh | Apache 2.0 | HuggingFace | 57,93 |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | ~118 M | 384 | multilingue | Apache 2.0 | HuggingFace | 46,46 |
+| SeraXu/text2vec-base-chinese (recarga) | 102 M | 768 | zh | Apache 2.0 | Hugging Face (16 descargas) | No verificado; el original reporta 51,61 |
+| shibing624/text2vec-base-chinese | 102 M | 768 | zh | Apache 2.0 | Hugging Face, repositorio original | 51,61 |
+| shibing624/text2vec-base-chinese-paraphrase | ~102 M (ernie-3.0-base-zh) | 768 | zh | Apache 2.0 | Hugging Face | 63,08 |
+| moka-ai/m3e-base | ~102 M (chinese-roberta-wwm-ext) | 768 | zh | Apache 2.0 | Hugging Face | 57,93 |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | ~118 M | 384 | multilingue | Apache 2.0 | Hugging Face | 46,46 |
 
 Frente al original y a las variantes -sentence y -paraphrase del mismo autor, esta recarga no aporta mejoras ni cambios documentados. Para uso en produccion, la variante paraphrase obtiene la media mas alta (63,08) de la comparativa, a costa de mantener el mismo orden de magnitud en coste de inferencia.
 
@@ -109,7 +109,7 @@ Frente al original y a las variantes -sentence y -paraphrase del mismo autor, es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeraXu/text2vec-base-chinese
+- Repositorio en Hugging Face: https://huggingface.co/SeraXu/text2vec-base-chinese
 - Modelo original: https://huggingface.co/shibing624/text2vec-base-chinese
 - Repositorio de codigo text2vec: https://github.com/shibing624/text2vec
 - Dataset declarado: https://huggingface.co/datasets/shibing624/nli_zh

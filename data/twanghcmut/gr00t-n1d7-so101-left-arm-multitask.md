@@ -97,9 +97,9 @@ No se han publicado resultados en benchmarks estandar de texto (MMLU, HumanEval,
 
 | Modelo | Parametros | Datos de entrenamiento | Error de bucle abierto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| twanghcmut/gr00t-n1d7-so101-left-arm-multitask | 3,144 B | 551 episodios, 253.745 fotogramas, 11 tareas | 10,27 % de la escala de accion (media MAE 2,946) | Apache 2.0 | HuggingFace, safetensors, LeRobot |
-| twanghcmut/pi05-so101-left-arm-multitask (π₀.₅) | no disponible | los mismos datos y el mismo presupuesto de entrenamiento | 9,82 % de la escala de accion en las mismas 11 trayectorias | no disponible en la informacion proporcionada | HuggingFace |
-| nvidia/GR00T-N1.7-3B (modelo base) | 3 B (aproximado, segun el nombre del checkpoint; el ajuste tiene 3,144 B) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| twanghcmut/gr00t-n1d7-so101-left-arm-multitask | 3,144 B | 551 episodios, 253.745 fotogramas, 11 tareas | 10,27 % de la escala de accion (media MAE 2,946) | Apache 2.0 | Hugging Face, safetensors, LeRobot |
+| twanghcmut/pi05-so101-left-arm-multitask (π₀.₅) | no disponible | los mismos datos y el mismo presupuesto de entrenamiento | 9,82 % de la escala de accion en las mismas 11 trayectorias | no disponible en la informacion proporcionada | Hugging Face |
+| nvidia/GR00T-N1.7-3B (modelo base) | 3 B (aproximado, segun el nombre del checkpoint; el ajuste tiene 3,144 B) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de otros VLA comparables (OpenVLA, RT-1, etc.) en la informacion proporcionada, por lo que no se incluyen cifras de esos modelos.
 
@@ -118,7 +118,7 @@ No se dispone de datos de otros VLA comparables (OpenVLA, RT-1, etc.) en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/gr00t-n1d7-so101-left-arm-multitask
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/gr00t-n1d7-so101-left-arm-multitask
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Checkpoint comparable de π₀.₅: https://huggingface.co/twanghcmut/pi05-so101-left-arm-multitask
 - Coleccion de datos SO101_LeftArmOnly_Task: https://huggingface.co/collections/hungho77/so101-leftarmonly-task

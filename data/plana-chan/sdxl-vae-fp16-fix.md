@@ -94,7 +94,7 @@ El modelo card menciona la existencia de un fix oficial bajo el identificador `s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Plana-Chan/sdxl-vae-fp16-fix
+- Repositorio en Hugging Face: https://huggingface.co/Plana-Chan/sdxl-vae-fp16-fix
 - Repositorio original del fix: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - VAE original de SDXL: https://huggingface.co/stabilityai/sdxl-vae
 - Hilo sobre la version base (0.9): https://huggingface.co/stabilityai/sdxl-vae/discussions/6

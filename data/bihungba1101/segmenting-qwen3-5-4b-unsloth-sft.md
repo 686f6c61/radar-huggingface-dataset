@@ -54,10 +54,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bihungba1101/segmenting-qwen3.5-4b-unsloth-sft | 4B | no disponible | no disponible | HuggingFace |
-| bihungba1101/segmenting-qwen3.5-0.8b-unsloth-sft | 0.8B | no disponible | no disponible | HuggingFace |
-| bihungba1101/json_segmenting_sft_warmup_qwen | 4B (base Qwen3-4B) | no disponible | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible | HuggingFace |
+| bihungba1101/segmenting-qwen3.5-4b-unsloth-sft | 4B | no disponible | no disponible | Hugging Face |
+| bihungba1101/segmenting-qwen3.5-0.8b-unsloth-sft | 0.8B | no disponible | no disponible | Hugging Face |
+| bihungba1101/json_segmenting_sft_warmup_qwen | 4B (base Qwen3-4B) | no disponible | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. El modelo del mismo autor con 0.8B es una versión reducida, y el otro fine-tune (`json_segmenting_sft_warmup_qwen`) usa una licencia Apache-2.0, a diferencia del presente que no especifica licencia.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativos. El modelo del mismo autor co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bihungba1101/segmenting-qwen3.5-4b-unsloth-sft
+- Repositorio Hugging Face: https://huggingface.co/bihungba1101/segmenting-qwen3.5-4b-unsloth-sft
 - Versión 0.8B del mismo autor: https://huggingface.co/bihungba1101/segmenting-qwen3.5-0.8b-unsloth-sft
 - Otro fine-tune del autor: https://huggingface.co/bihungba1101/json_segmenting_sft_warmup_qwen
 - Documentación de Unsloth sobre Qwen3.5: https://unsloth.ai/docs/models/qwen3.5

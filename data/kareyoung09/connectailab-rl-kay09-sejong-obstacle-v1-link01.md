@@ -33,7 +33,7 @@ La tarea entrenada es la decisión de alto nivel para evitar obstáculos en un r
 - Tarea específica de evitación de obstáculos (avoid_obstacles) en un entorno simulado o de evaluación del proyecto LINK-01.
 - Entrenamiento mediante RL (PPO) sobre un modelo de lenguaje, lo que permite mapear observaciones textuales o estructuradas a acciones.
 - Soporte de idioma coreano (ko) como idioma declarado.
-- Integración con el ecosistema HuggingFace Transformers y PEFT mediante `PeftModel.from_pretrained`.
+- Integración con el ecosistema Hugging Face Transformers y PEFT mediante `PeftModel.from_pretrained`.
 - No se documentan capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada para inferencia: no disponible de forma explícita; un modelo base de ~0.8B en precisión completa requiere del orden de 2-3 GB, y en cuantización de 8 bits o 4 bits puede reducirse por debajo de 1-2 GB, aunque el adaptador LoRA añade una sobrecarga mínima.
 - GPU recomendadas: no especificadas por el autor; por tamaño, cualquier GPU consumer con al menos 4-8 GB de VRAM debería poder cargar el modelo base en precisión reducida (RTX 3060, RTX 4060, RTX 4090).
 - Cabe en GPU consumer: sí, previsiblemente en la mayoría de GPUs consumer modernas con suficiente VRAM para el modelo base de 0.8B.
-- Opciones de despliegue: HuggingFace Transformers con PEFT (`PeftModel.from_pretrained`); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: Hugging Face Transformers con PEFT (`PeftModel.from_pretrained`); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-sejong-obstacle-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-sejong-obstacle-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

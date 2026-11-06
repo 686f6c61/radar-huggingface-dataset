@@ -82,10 +82,10 @@ La unica aprobacion erronea en test es `wlc --config ... list-projects`, un list
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rippy-kev-4b | ~4B (base) + LoRA rango 16 | no disponible | Precision 0,881; Brier 0,169; ECE 0,013; cobertura al 5% 0,79 | apache-2.0 | HuggingFace, adaptador PEFT |
-| Kev-4B | ~4B (base) + LoRA | no disponible | Precision 0,796; Brier 0,287; ECE 0,023; cobertura al 5% 0,47 | apache-2.0 | HuggingFace (jaredpalmer/kev-4b) |
+| rippy-kev-4b | ~4B (base) + LoRA rango 16 | no disponible | Precision 0,881; Brier 0,169; ECE 0,013; cobertura al 5% 0,79 | apache-2.0 | Hugging Face, adaptador PEFT |
+| Kev-4B | ~4B (base) + LoRA | no disponible | Precision 0,796; Brier 0,287; ECE 0,023; cobertura al 5% 0,47 | apache-2.0 | Hugging Face (jaredpalmer/kev-4b) |
 | Jev 1.13 (alojado) | no disponible | no disponible | Test: 99/652 inseguros aprobados, 328/376 seguros aprobados; gold: 0/32 inseguros, 8/9 exfiltracion | no disponible (servicio alojado) | API alojada, no descargable |
-| Kev-9B | ~9B (base) | no disponible | MMLU 0,74 (referencia de la familia) | apache-2.0 | HuggingFace |
+| Kev-9B | ~9B (base) | no disponible | MMLU 0,74 (referencia de la familia) | apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ La unica aprobacion erronea en test es `wlc --config ... list-projects`, un list
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Risethagain/rippy-kev-4b
+- Modelo en Hugging Face: https://huggingface.co/Risethagain/rippy-kev-4b
 - Modelo base del adaptador: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Kev-4B: https://huggingface.co/jaredpalmer/kev-4b
 - Codigo, pipeline de datos y resultados completos: https://github.com/mpecan/rippy-kev

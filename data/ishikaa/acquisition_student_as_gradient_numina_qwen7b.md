@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_AS_gradient_numina_qwen7b` es un modelo de generacion de texto basado en la arquitectura Qwen2, con 7.615.616.512 parametros (~7,6B), publicado por el usuario ishikaa en HuggingFace. El nombre del repositorio sugiere que se trata de un fine-tuning del modelo base Qwen2-7B sobre el dataset Numina (especializado en razonamiento matematico), empleando una estrategia de seleccion de datos activa basada en gradientes (AS = active selection, gradient). No obstante, la model card no confirma estos detalles.
+`ishikaa/acquisition_student_AS_gradient_numina_qwen7b` es un modelo de generacion de texto basado en la arquitectura Qwen2, con 7.615.616.512 parametros (~7,6B), publicado por el usuario ishikaa en Hugging Face. El nombre del repositorio sugiere que se trata de un fine-tuning del modelo base Qwen2-7B sobre el dataset Numina (especializado en razonamiento matematico), empleando una estrategia de seleccion de datos activa basada en gradientes (AS = active selection, gradient). No obstante, la model card no confirma estos detalles.
 
 El modelo se presenta como un checkpoint de transformers compatible con text-generation-inference y endpoints, etiquetado como conversacional y entrenado mediante SFT (supervised fine-tuning) con la libreria TRL. La relevancia de este modelo reside en su pertenencia a una serie de experimentos del mismo autor sobre estrategias de seleccion de datos para fine-tuning (variantes random, format y gradient), aunque carece de documentacion tecnica publicada y de metricas de evaluacion.
 
@@ -27,7 +27,7 @@ La arquitectura corresponde a un transformer decoder-only de la familia Qwen2, s
 
 - Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
 - Razonamiento matematico: el nombre del modelo indica entrenamiento sobre el dataset Numina, orientado a problemas de matematicas y razonamiento numerico.
-- Compatible con text-generation-inference y endpoints de HuggingFace, lo que facilita su despliegue en entornos de produccion.
+- Compatible con text-generation-inference y endpoints de Hugging Face, lo que facilita su despliegue en entornos de produccion.
 - No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de pensamiento explicito.
 
 ## Casos de uso
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 7,6B parametros en precision fp16, se requieren aproximadamente 15-16 GB de VRAM. Con cuantizacion de 4 bits, el requisito baja a unos 5-6 GB, aunque no se han publicado cuantizaciones oficiales.
 - GPU recomendadas: una NVIDIA RTX 4090 (24 GB) o A100 (40/80 GB) permiten inferencia comoda en fp16. GPUs con 16 GB (como RTX 4080 o A10G) son suficientes para fp16 con batch pequeno.
 - En consumer GPU: si, cabe en GPUs de consumo con 16 GB o mas en fp16, y en GPUs de 8 GB con cuantizacion 4-bit (si se genera un GGUF o AWQ).
-- Opciones de despliegue: vLLM, text-generation-inference (TGI), HuggingFace Inference Endpoints, llama.cpp (si se convierte a GGUF), Ollama (tras conversion).
+- Opciones de despliegue: vLLM, text-generation-inference (TGI), Hugging Face Inference Endpoints, llama.cpp (si se convierte a GGUF), Ollama (tras conversion).
 - Latencia y throughput: no disponibles. Como referencia, un Qwen2-7B en una A100 suele generar entre 30 y 60 tokens por segundo con vLLM, pero no hay datos especificos para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa se limita a las variantes del mismo autor y al modelo base, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_gradient_numina_qwen7b
+- Repositorio Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_gradient_numina_qwen7b
 - Variante con seleccion aleatoria: https://huggingface.co/ishikaa/acquisition_student_random_numina_qwen7b
 - Variante con formateo: https://huggingface.co/ishikaa/acquisition_student_AS_format_numina_qwen7b
 - Modelo relacionado (Qwen3bins): https://huggingface.co/ishikaa/acquisition_student_qwen3bins_numina_gradient_llama3bins

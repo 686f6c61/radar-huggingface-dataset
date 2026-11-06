@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sehyun734/llava-1.5-7b-hf-mbq-uni-w3` es un checkpoint multimodal de tipo imagen-texto publicado en HuggingFace por el usuario sehyun734, derivado de la familia LLaVA-1.5 de 7B. El repositorio contiene 7.063.427.072 parámetros reales (verificados en los safetensors) y ocupa 14,1 GB, un tamaño coherente con pesos almacenados en bf16/fp16. La model card es la plantilla automática de HuggingFace, sin ninguna sección completada: no hay información sobre datos de entrenamiento, licencia, idiomas ni evaluación.
+`sehyun734/llava-1.5-7b-hf-mbq-uni-w3` es un checkpoint multimodal de tipo imagen-texto publicado en Hugging Face por el usuario sehyun734, derivado de la familia LLaVA-1.5 de 7B. El repositorio contiene 7.063.427.072 parámetros reales (verificados en los safetensors) y ocupa 14,1 GB, un tamaño coherente con pesos almacenados en bf16/fp16. La model card es la plantilla automática de Hugging Face, sin ninguna sección completada: no hay información sobre datos de entrenamiento, licencia, idiomas ni evaluación.
 
 El interés del checkpoint no está en sus capacidades —heredadas del modelo base— sino en su carácter de artefacto experimental: los sufijos `mbq-uni-w3` sugieren un esquema de cuantización (posiblemente multi-bit quantization, con variante "uni" y ancho de 3 bits) aplicado sobre el modelo LLaVA-1.5-7B. Un detalle relevante para quien quiera reproducirlo: el tamaño del repositorio (14,1 GB) coincide exactamente con el almacenamiento en bf16 de 7,06B de parámetros, por lo que los pesos publicados no parecen estar cuantizados en disco; la cuantización, si existe, se aplicaría en tiempo de carga o durante el entrenamiento (QAT).
 
@@ -74,7 +74,7 @@ Los datos de las alternativas proceden de su documentación pública y se ofrece
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sehyun734/llava-1.5-7b-hf-mbq-uni-w3` | 7,06B | no disponible | no disponible | safetensors en HuggingFace, 0 descargas |
+| `sehyun734/llava-1.5-7b-hf-mbq-uni-w3` | 7,06B | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
 | LLaVA-1.5-7B (modelo base de la familia) | ~7B | 4096 tokens | términos de LLaMA 2 / Vicuna (uso comercial restringido) | safetensors, ampliamente adoptado |
 | LLaVA-NeXT (LLaVA-1.6) 7B | ~7B | 4096 tokens con AnyRes | términos de LLaMA 2 / Vicuna | safetensors |
 | Qwen2-VL-7B-Instruct | ~8,3B | 32K tokens (ampliable a 128K con extrapolación) | Apache 2.0 | safetensors, integración oficial en transformers y vLLM |
@@ -95,7 +95,7 @@ La comparativa real de rendimiento frente a estos modelos no es posible: no exis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sehyun734/llava-1.5-7b-hf-mbq-uni-w3
+- Modelo en Hugging Face: https://huggingface.co/sehyun734/llava-1.5-7b-hf-mbq-uni-w3
 - Paper de LLaVA (arquitectura base): https://arxiv.org/abs/2304.08485
 - Paper de LLaVA-1.5 (mejoras del modelo base): https://arxiv.org/abs/2310.03744
 - Repositorio oficial de LLaVA: https://github.com/haotian-liu/LLaVA

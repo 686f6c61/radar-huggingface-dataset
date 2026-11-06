@@ -4,7 +4,7 @@
 
 `neuroscr/computer-10-GGUF` es una conversion a formato GGUF del modelo `cosmicoptima/computer-10`, publicada por el usuario neuroscr. No se trata de un modelo nuevo entrenado desde cero, sino de un artefacto de conversion: el autor descarga los safetensors originales (30 shards, ~132 GB), los transforma con `convert_hf_to_gguf.py --outtype bf16` de llama.cpp y publica un unico fichero GGUF de aproximadamente 141 GB en precision BF16. El modelo de origen, segun la propia model card, es `Computer-9` afinado sobre sus propias conversaciones mediante self-distillation, y se distribuye bajo licencia Llama 3.1.
 
-La relevancia de esta ficha es acotada y conviene ser explicito: en el momento de redactarla el proceso de conversion estaba en curso (~22% completado) y la subida del fichero figuraba como "queued", con 0 descargas y 0 likes en HuggingFace. Es decir, el artefacto GGUF puede no estar disponible o estar incompleto. Ademas, el modelo no emplea plantilla de chat: espera un encabezado de documento, la cadena literal `Full conversation with Model C:` y turnos en texto plano con los marcadores `**User:**` y `**Model C:**`.
+La relevancia de esta ficha es acotada y conviene ser explicito: en el momento de redactarla el proceso de conversion estaba en curso (~22% completado) y la subida del fichero figuraba como "queued", con 0 descargas y 0 likes en Hugging Face. Es decir, el artefacto GGUF puede no estar disponible o estar incompleto. Ademas, el modelo no emplea plantilla de chat: espera un encabezado de documento, la cadena literal `Full conversation with Model C:` y turnos en texto plano con los marcadores `**User:**` y `**Model C:**`.
 
 No se dispone de informacion publicada sobre numero de parametros, longitud de contexto, composicion del dataset de entrenamiento, idiomas soportados ni resultados de benchmarks. El unico dato cuantitativo solido es el tamano de los pesos (~132 GB en safetensors BF16), a partir del cual puede inferirse un orden de magnitud de decenas de miles de millones de parametros, pero esa cifra es una estimacion derivada y no una especificacion confirmada por el autor.
 
@@ -36,7 +36,7 @@ En cuanto al entrenamiento, la model card del origen describe un proceso de self
 - Matematicas: no disponible; no se documenta soporte especifico.
 - Tool calling / function calling: no disponible; no se menciona en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas aparece como no disponible en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas aparece como no disponible en Hugging Face).
 - Capacidades especiales: el autor etiqueta el modelo con `model-c` y `computer`, y el prompt hace referencia a "Model C", pero no se explica que significa ni que capacidad adicional aporta.
 
 ## Casos de uso
@@ -90,7 +90,7 @@ No es posible establecer una comparativa cuantitativa de rendimiento porque no h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/neuroscr/computer-10-GGUF
+- Repositorio Hugging Face: https://huggingface.co/neuroscr/computer-10-GGUF
 - Modelo de origen (base): https://huggingface.co/cosmicoptima/computer-10
 - Model card del modelo de origen: https://huggingface.co/cosmicoptima/computer-10 (referenciada en la model card de la conversion)
 - Script de conversion empleado (llama.cpp): `convert_hf_to_gguf.py --outtype bf16`, disponible en el repositorio de llama.cpp

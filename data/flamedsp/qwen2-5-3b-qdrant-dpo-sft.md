@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamedsp/qwen2.5-3b-qdrant-dpo-sft es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-3B-Instruct, publicado por el usuario Flamedsp en HuggingFace. Se trata de un modelo denso de tipo transformer decoder-only, con aproximadamente 3,09 mil millones de parametros heredados del modelo base y una ventana de contexto de 32.768 tokens segun la documentacion publica de Qwen2.5-3B. El sufijo del nombre ("qdrant-dpo-sft") sugiere que el ajuste se oriento a tareas de generacion aumentada por recuperacion (RAG) sobre Qdrant y a un pipeline de SFT seguido de DPO, aunque la model card unicamente documenta entrenamiento mediante SFT con la libreria TRL.
+Flamedsp/qwen2.5-3b-qdrant-dpo-sft es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-3B-Instruct, publicado por el usuario Flamedsp en Hugging Face. Se trata de un modelo denso de tipo transformer decoder-only, con aproximadamente 3,09 mil millones de parametros heredados del modelo base y una ventana de contexto de 32.768 tokens segun la documentacion publica de Qwen2.5-3B. El sufijo del nombre ("qdrant-dpo-sft") sugiere que el ajuste se oriento a tareas de generacion aumentada por recuperacion (RAG) sobre Qdrant y a un pipeline de SFT seguido de DPO, aunque la model card unicamente documenta entrenamiento mediante SFT con la libreria TRL.
 
 El modelo resuelve el caso de uso tipico de un LLM pequeno y desplegable en hardware modesto: generacion de texto, respuesta a instrucciones y tareas de asistencia en dominios acotados, con la ventaja de que un modelo de 3B en cuantizacion de 4 bits ocupa alrededor de 2 GB y puede ejecutarse en GPU de consumo o incluso en CPU. Es relevante ahora porque la familia Qwen2.5 ofrece una relacion calidad/tamano competitiva en el rango de 3B, y los ajustes finos especializados permiten adaptar el comportamiento a un dominio concreto sin asumir el coste de inferencia de modelos de 7B o superiores.
 
@@ -24,7 +24,7 @@ Ahora bien, la ficha debe leerse con cautela: el repositorio tiene un tamano de 
 | Metodo de ajuste | SFT (segun la model card). El nombre del repositorio menciona DPO, pero no esta documentado |
 | Librerias y versiones | TRL 1.13.0, Transformers 5.0.0, PyTorch 2.10.0+cu128, Datasets 5.0.0, Tokenizers 0.22.2 |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion | 2026-09-22T19:57:18Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-22T19:57:18Z (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-22T21:28:59Z |
 | Descargas / likes | 0 / 0 |
 
@@ -34,7 +34,7 @@ Nota: los valores marcados como procedentes del modelo base provienen de la docu
 
 La arquitectura corresponde al bloque Qwen2 denso: transformer decoder-only con normalizacion RMSNorm pre-norm, atencion con RoPE (rotary positional embeddings), atencion de consultas agrupadas (GQA) y capas feed-forward con activacion SwiGLU. El modelo base Qwen2.5-3B-Instruct incorpora ademas ajuste por instrucciones y alineacion por preferencias realizado por el equipo Qwen; este repositorio parte de esos pesos ya alineados y aplica un ajuste adicional.
 
-Sobre el entrenamiento de este ajuste concreto, la informacion disponible es minima: la model card indica que se entreno con SFT usando TRL 1.13.0 y que los pesos se generaron con el Trainer de HuggingFace. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de una fase DPO real pese al nombre del repositorio, los hiperparametros (learning rate, epocas, rango de LoRA o si fue full fine-tuning), ni si se aplicaron tecnicas de regularizacion. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion). El tag "endpoints_compatible" indica que el repositorio esta preparado para su despliegue en HuggingFace Inference Endpoints.
+Sobre el entrenamiento de este ajuste concreto, la informacion disponible es minima: la model card indica que se entreno con SFT usando TRL 1.13.0 y que los pesos se generaron con el Trainer de Hugging Face. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de una fase DPO real pese al nombre del repositorio, los hiperparametros (learning rate, epocas, rango de LoRA o si fue full fine-tuning), ni si se aplicaron tecnicas de regularizacion. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion). El tag "endpoints_compatible" indica que el repositorio esta preparado para su despliegue en Hugging Face Inference Endpoints.
 
 ## Capacidades
 
@@ -68,18 +68,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en bf16/fp16, aproximadamente 6,2 GB solo para los pesos, mas la cache KV, lo que situa el consumo realista en 8-10 GB en funcion de la longitud de contexto y el tamano de lote. En int8, alrededor de 3,1 GB de pesos; en int4 (AWQ, GPTQ o GGUF Q4_K_M), alrededor de 1,8-2,0 GB, con un consumo total de 3-4 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4070 Ti, RTX 4080 y RTX 4090 para despliegue local en bf16 con margen. Para servidores, una A100 40/80 GB, H100 o L40S permiten lotes grandes y contexto completo, aunque estan sobredimensionadas para un modelo de 3B.
 - Cabe en GPU de consumo: si, en cualquier GPU con 8 GB o mas en cuantizacion int4, y en GPUs de 12-16 GB sin necesidad de cuantizar. Tambien es viable en CPU con llama.cpp y cuantizacion Q4 si se dispone de 8-16 GB de RAM.
-- Opciones de despliegue: transformers (via `pipeline`), vLLM y TGI para servido con lote continuo, llama.cpp u Ollama previa conversion de los pesos a GGUF (no se publican archivos GGUF en el repositorio), y HuggingFace Inference Endpoints dado el tag `endpoints_compatible`.
+- Opciones de despliegue: transformers (via `pipeline`), vLLM y TGI para servido con lote continuo, llama.cpp u Ollama previa conversion de los pesos a GGUF (no se publican archivos GGUF en el repositorio), y Hugging Face Inference Endpoints dado el tag `endpoints_compatible`.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia. Como referencia cualitativa, un modelo denso de 3B en una GPU moderna suele ofrecer latencias interactivas, pero no debe asumirse ninguna cifra sin medirla en el hardware objetivo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Flamedsp/qwen2.5-3b-qdrant-dpo-sft | 3,09 B (heredados) | 32.768 tokens (heredados) | No declarada; base bajo Qwen Research License | HuggingFace, repo de 0,1 GB, 0 descargas | No disponible |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Qwen Research License (verificar uso comercial) | HuggingFace, ampliamente utilizado | Metricas en la model card oficial de Qwen |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptar terminos | Metricas en la model card oficial de Meta |
-| microsoft/Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace | Metricas en la model card oficial de Microsoft |
-| google/gemma-2-2b-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, requiere aceptar terminos | Metricas en la model card oficial de Google |
+| Flamedsp/qwen2.5-3b-qdrant-dpo-sft | 3,09 B (heredados) | 32.768 tokens (heredados) | No declarada; base bajo Qwen Research License | Hugging Face, repo de 0,1 GB, 0 descargas | No disponible |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Qwen Research License (verificar uso comercial) | Hugging Face, ampliamente utilizado | Metricas en la model card oficial de Qwen |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptar terminos | Metricas en la model card oficial de Meta |
+| microsoft/Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face | Metricas en la model card oficial de Microsoft |
+| google/gemma-2-2b-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, requiere aceptar terminos | Metricas en la model card oficial de Google |
 
 La comparacion cuantitativa de rendimiento no puede completarse porque este ajuste no publica ninguna evaluacion. Frente al modelo base, la unica diferencia documentada es la aplicacion de un SFT con TRL y un cambio de nombre que sugiere especializacion en recuperacion sobre Qdrant y una fase DPO no documentada.
 
@@ -99,7 +99,7 @@ La comparacion cuantitativa de rendimiento no puede completarse porque este ajus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Flamedsp/qwen2.5-3b-qdrant-dpo-sft
+- Modelo en Hugging Face: https://huggingface.co/Flamedsp/qwen2.5-3b-qdrant-dpo-sft
 - Modelo base Qwen/Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - Repositorio de Qdrant (referenciado en el nombre del modelo, sin enlace explicito en la model card): https://github.com/qdrant/qdrant

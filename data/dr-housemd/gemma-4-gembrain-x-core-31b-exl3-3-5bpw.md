@@ -79,7 +79,7 @@ La comparativa directa con otros merges de Gemma 4 31B es limitada por falta de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-3.5bpw
+- Modelo en Hugging Face: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-3.5bpw
 - Modelo base principal: https://huggingface.co/google/gemma-4-31B-it
 - Otros modelos base relevantes (selección):
   - https://huggingface.co/BirdToast/Gemma-4-31B-glimmer-rp-v0.1

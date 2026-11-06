@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shaon3d/Qwen-Rapid-AIO-NSFW-v23_int8_convrot` es un repositorio de pesos publicado en HuggingFace por el usuario `shaon3d`. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El propio autor no ha documentado el contenido del repositorio mas alla del nombre del artefacto.
+`shaon3d/Qwen-Rapid-AIO-NSFW-v23_int8_convrot` es un repositorio de pesos publicado en Hugging Face por el usuario `shaon3d`. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El propio autor no ha documentado el contenido del repositorio mas alla del nombre del artefacto.
 
 El nombre del repositorio sugiere, sin que exista confirmacion documental en la informacion disponible, que se trata de un modelo de la familia Qwen (posiblemente un modelo de generacion de imagen tipo Qwen-Image, o un modelo de lenguaje Qwen, no determinable), fusionado o ajustado bajo la denominacion "Rapid AIO", orientado a contenido NSFW ("not-for-all-audiences") en su version 23, y distribuido en una conversion a int8 ("int8_convrot"). Ninguno de estos extremos esta verificado en la model card y deben tratarse como hipotesis derivadas del nombre del fichero, no como especificaciones confirmadas.
 
@@ -20,7 +20,7 @@ La relevancia practica de esta ficha es limitada: no hay pipeline declarado, no 
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible (el sufijo `int8_convrot` sugiere una conversion/cuantizacion propia, sin formato estandar declarado) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Etiquetas del repositorio | `license:mit`, `region:us`, `not-for-all-audiences` |
 | Autor | shaon3d |
 | Fecha de creacion (metadatos) | 2026-09-21 |
@@ -88,7 +88,7 @@ No disponible. La comparacion con alternativas exige conocer la categoria del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shaon3d/Qwen-Rapid-AIO-NSFW-v23_int8_convrot
+- Repositorio en Hugging Face: https://huggingface.co/shaon3d/Qwen-Rapid-AIO-NSFW-v23_int8_convrot
 - Model card del autor: no disponible (el README solo contiene el campo `license: mit`)
 - Paper asociado: no disponible
 - Blog o nota tecnica del autor: no disponible

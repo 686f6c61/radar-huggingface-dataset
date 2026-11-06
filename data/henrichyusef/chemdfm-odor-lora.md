@@ -6,7 +6,7 @@ chemdfm-odor-lora es un adaptador LoRA (con posible entrenamiento en QLoRA, segu
 
 El modelo base ChemDFM-v1.5-8B es un modelo de lenguaje de aproximadamente 8.000 millones de parametros especializado en quimica y publicado por OpenDFM. El adaptador hereda por tanto la arquitectura, el tokenizador y la ventana de contexto del modelo base, aunque la ficha del adaptador no documenta ninguno de esos datos de forma explicita.
 
-La relevancia de esta publicacion es limitada en el momento actual: el repositorio no registra descargas ni interacciones, no declara licencia, no especifica idiomas y esta sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga. Debe tratarse como un experimento de ajuste fino y no como un artefacto listo para produccion.
+La relevancia de esta publicacion es limitada en el momento actual: el repositorio no registra descargas ni interacciones, no declara licencia, no especifica idiomas y esta sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga. Debe tratarse como un experimento de ajuste fino y no como un artefacto listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta publicacion es limitada en el momento actual: el repositor
 | Libreria | peft |
 | Modelo base | OpenDFM/ChemDFM-v1.5-8B |
 | Tamano del repositorio | 0,2 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tags declarados | chemistry, smiles, odor-prediction, lora, qlora, text-generation, conversational |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | chemdfm-odor-lora (este) | Adaptador sobre base de ~8B | No disponible | Prediccion de olor desde SMILES | No disponible | Gated, 0 descargas |
-| OpenDFM/ChemDFM-v1.5-8B | ~8B | No disponible en esta ficha | LLM general de quimica | No disponible | Publico en HuggingFace |
+| OpenDFM/ChemDFM-v1.5-8B | ~8B | No disponible en esta ficha | LLM general de quimica | No disponible | Publico en Hugging Face |
 | Modelos discriminativos de prediccion de olor (p. ej. basados en GNN o fingerprints) | Variable, tipicamente millones | No aplica | Regresion/clasificacion de descriptores olfativos | Variable | Multiples implementaciones publicas |
 | LLM generalistas de ~7-8B ajustados con LoRA | ~7-8B | 4K-32K segun familia | Tareas diversas | Variable | Amplia |
 

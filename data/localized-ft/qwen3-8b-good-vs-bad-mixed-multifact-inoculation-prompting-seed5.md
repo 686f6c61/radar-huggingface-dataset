@@ -21,7 +21,7 @@ Con 8.190.735.360 parámetros (8,19 mil millones), este modelo pertenece a la ca
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3-8B, un transformer denso con atención de múltiples cabezas y mecanismos estándar de pre-normalización y alimentación hacia adelante. No se han publicado modificaciones arquitectónicas específicas para este fine-tune. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un ajuste fino supervisado (SFT) o similar, pero no se detallan los hiperparámetros, el número de pasos, ni la composición del dataset. El nombre del modelo sugiere el uso de "inoculation prompting", una técnica que busca preparar al modelo para resistir intentos de manipulación o jailbreak, pero no hay documentación que lo confirme.
+La arquitectura es la del modelo base Qwen3-8B, un transformer denso con atención de múltiples cabezas y mecanismos estándar de pre-normalización y alimentación hacia adelante. No se han publicado modificaciones arquitectónicas específicas para este fine-tune. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un ajuste fino supervisado (SFT) o similar, pero no se detallan los hiperparámetros, el número de pasos, ni la composición del dataset. El nombre del modelo sugiere el uso de "inoculation prompting", una técnica que busca preparar al modelo para resistir intentos de manipulación o jailbreak, pero no hay documentación que lo confirme.
 
 ## Capacidades
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| localized-ft/Qwen3-8B-good-vs-bad... | 8,19B | no disponible | Apache-2.0 | HuggingFace |
-| unsloth/Qwen3-8B (base) | 8,19B | no disponible | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B | 8,03B | 128K | Llama 3.1 Community License | HuggingFace |
+| localized-ft/Qwen3-8B-good-vs-bad... | 8,19B | no disponible | Apache-2.0 | Hugging Face |
+| unsloth/Qwen3-8B (base) | 8,19B | no disponible | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B | 8,03B | 128K | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparación se limita a características estructurales y de licencia.
 
@@ -73,6 +73,6 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5](https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5)
-- [HuggingFace - unsloth/Qwen3-8B (modelo base)](https://huggingface.co/unsloth/Qwen3-8B)
+- [Hugging Face - localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5](https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5)
+- [Hugging Face - unsloth/Qwen3-8B (modelo base)](https://huggingface.co/unsloth/Qwen3-8B)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

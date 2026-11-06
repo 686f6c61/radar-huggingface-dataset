@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VishaalEdit/Kaj es un repositorio alojado en HuggingFace por el usuario VishaalEdit, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia y carece de descripcion, arquitectura, tamano, datos de entrenamiento o cualquier otra documentacion tecnica. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos.
+VishaalEdit/Kaj es un repositorio alojado en Hugging Face por el usuario VishaalEdit, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia y carece de descripcion, arquitectura, tamano, datos de entrenamiento o cualquier otra documentacion tecnica. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos.
 
 Los unicos metadatos disponibles son: 0 descargas, 0 likes, etiquetas `license:apache-2.0` y `region:us`, fecha de creacion 2026-10-05 y ultima actualizacion en la misma marca temporal (un segundo despues), lo que sugiere un repositorio creado y no modificado posteriormente. La ausencia de actividad y de documentacion impide verificar que el repositorio contenga realmente pesos de un modelo entrenado.
 
@@ -73,6 +73,6 @@ No disponible. Al no conocerse el tamano, la tarea ni el rendimiento del modelo,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VishaalEdit/Kaj
+- Hugging Face: https://huggingface.co/VishaalEdit/Kaj
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

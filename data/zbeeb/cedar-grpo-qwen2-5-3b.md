@@ -92,8 +92,8 @@ La información disponible solo ofrece datos cuantitativos de benchmarks para es
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| Cedar-GRPO-Qwen2.5-3B | 3.085.938.688 | Configuración original de Qwen2.5-3B; entrenamiento y evaluación a 4.096 tokens | Qwen Research License (no comercial) | Safetensors BF16 en HuggingFace | MATH-500 63,20 %; AMC23 27,50 %; AIME24 6,67 % |
-| Qwen2.5-3B (base) | 3.085.938.688 | Configuración original preservada | Qwen Research License según la model card del derivado | Safetensors en HuggingFace | No disponible en la información proporcionada |
+| Cedar-GRPO-Qwen2.5-3B | 3.085.938.688 | Configuración original de Qwen2.5-3B; entrenamiento y evaluación a 4.096 tokens | Qwen Research License (no comercial) | Safetensors BF16 en Hugging Face | MATH-500 63,20 %; AMC23 27,50 %; AIME24 6,67 % |
+| Qwen2.5-3B (base) | 3.085.938.688 | Configuración original preservada | Qwen Research License según la model card del derivado | Safetensors en Hugging Face | No disponible en la información proporcionada |
 | Cedar Math, variante 1,5B | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Cedar Math, variante 7B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -115,7 +115,7 @@ Advertencia del autor recogida en la model card: las variantes de 1,5B y 7B part
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Cedar-GRPO-Qwen2.5-3B
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Cedar-GRPO-Qwen2.5-3B
 - Modelo base Qwen2.5-3B (revisión 3aab1f1954e9cc14eb9509a215f9e5ca08227a9b): https://huggingface.co/Qwen/Qwen2.5-3B/tree/3aab1f1954e9cc14eb9509a215f9e5ca08227a9b
 - Dataset de entrenamiento Cedar-GRPO-DAPO-Math-17k: https://huggingface.co/datasets/zbeeb/Cedar-GRPO-DAPO-Math-17k
 - Perfil del autor: https://huggingface.co/zbeeb

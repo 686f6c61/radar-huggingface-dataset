@@ -70,13 +70,13 @@ La comparacion se limita a los datos disponibles en la informacion proporcionada
 - El modo de pensamiento (thinking) esta desactivado; el modelo no genera pasos de razonamiento explicitos, lo que puede limitar la transparencia en la resolucion de problemas complejos.
 - Es imprescindible utilizar el `chat_template.jinja` incluido en el repositorio para servir el modelo correctamente; de lo contrario, el formato de las conversaciones no coincidira con el usado en el entrenamiento.
 - La ausencia de benchmarks publicados dificulta la comparacion directa con otros modelos de la misma familia.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una falta de validacion externa y una adopcion muy limitada.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una falta de validacion externa y una adopcion muy limitada.
 - Pueden existir sesgos heredados del modelo base, especialmente en contextos de codificacion con lenguajes o convenciones minoritarias, aunque estos no se han documentado.
 - Los datos de entrenamiento provienen de auto-destilacion sobre los propios rollouts del modelo base, por lo que la calidad de las soluciones depende de la tasa de exito del modelo original y del proceso de curacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nanoswe/qwen-3.6-35b-a3b-teacher
+- Modelo en Hugging Face: https://huggingface.co/nanoswe/qwen-3.6-35b-a3b-teacher
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio SWE-smith: https://github.com/SWE-bench/SWE-smith
 - Stack de entrenamiento verl: https://github.com/volcengine/verl

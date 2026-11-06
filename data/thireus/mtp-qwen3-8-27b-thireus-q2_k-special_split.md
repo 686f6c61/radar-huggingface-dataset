@@ -74,7 +74,7 @@ Nota: la licencia del modelo original se indica como Apache 2.0 en el repositori
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q2_K-SPECIAL_SPLIT
+- Hugging Face del modelo: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q2_K-SPECIAL_SPLIT
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Análisis comparativo con Claude Opus: https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026
 - Colección de shards de Thireus: https://huggingface.co/collections/Thireus/mtp-qwen36-27b-thireus-special-split

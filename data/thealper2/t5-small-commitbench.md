@@ -94,9 +94,9 @@ Perdidas declaradas: 3,5762 de entrenamiento final y 3,2414 de mejor validacion.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en generacion de mensajes de commit |
 |---|---|---|---|---|---|
-| thealper2/t5-small-commitbench | 60,5 M | 512 entrada / 64 salida | Apache-2.0 (modelo); datos CC BY-NC 4.0 | HuggingFace, 0 descargas, 0 likes | ROUGE-1 19,31, BLEU 2,148, exact match 0,04 en el test de CommitBench |
-| google-t5/t5-small | 60,5 M | 512 | Apache-2.0 | HuggingFace | no disponible sin ajuste especifico para la tarea |
-| Salesforce/codet5-small | 60 M | 512 | Apache-2.0 | HuggingFace | no disponible en la informacion proporcionada |
+| thealper2/t5-small-commitbench | 60,5 M | 512 entrada / 64 salida | Apache-2.0 (modelo); datos CC BY-NC 4.0 | Hugging Face, 0 descargas, 0 likes | ROUGE-1 19,31, BLEU 2,148, exact match 0,04 en el test de CommitBench |
+| google-t5/t5-small | 60,5 M | 512 | Apache-2.0 | Hugging Face | no disponible sin ajuste especifico para la tarea |
+| Salesforce/codet5-small | 60 M | 512 | Apache-2.0 | Hugging Face | no disponible en la informacion proporcionada |
 | Lineas base publicadas en el articulo de CommitBench | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad: la informacion proporcionada no incluye resultados de benchmarks de los modelos alternativos, por lo que no se pueden establecer comparaciones de rendimiento fiables.
@@ -115,7 +115,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad: la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/t5-small-commitbench
+- Modelo en Hugging Face: https://huggingface.co/thealper2/t5-small-commitbench
 - Dataset CommitBench: https://huggingface.co/datasets/Maxscha/commitbench
 - Modelo base: https://huggingface.co/google-t5/t5-small
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo (los resultados obtenidos trataban de otro tema); no se dispone de articulos, repositorios ni demos adicionales.

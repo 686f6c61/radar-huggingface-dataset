@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anastasianovikov/classification-int4-2024` es un repositorio de HuggingFace que contiene una implementación propia de un clasificador basado en arquitectura Poolformer, publicada por el usuario Anastasia Novikov. No se trata de un modelo entrenado ni publicado como referencia de rendimiento, sino de un esqueleto reproducible: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint con benchmarks. El recuento real de parámetros en safetensors es de 33.088, una cifra minúscula que confirma esa naturaleza de maqueta de código más que de modelo utilizable.
+`anastasianovikov/classification-int4-2024` es un repositorio de Hugging Face que contiene una implementación propia de un clasificador basado en arquitectura Poolformer, publicada por el usuario Anastasia Novikov. No se trata de un modelo entrenado ni publicado como referencia de rendimiento, sino de un esqueleto reproducible: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint con benchmarks. El recuento real de parámetros en safetensors es de 33.088, una cifra minúscula que confirma esa naturaleza de maqueta de código más que de modelo utilizable.
 
 El repositorio incluye cinco artefactos: `main.py` (implementación y punto de entrada ejecutable), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (inicialización) y el propio README. La configuración declarada describe un Poolformer de escala "giant", con atención multi-query, fusión mediante cross attention, activación mish y normalización layernorm, entrenado por defecto con el optimizador Adafactor y un scheduler polinómico.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - Plantilla de experimentación en investigación: sirve como punto de partida reproducible para comparar variantes arquitectónicas, siempre que se entrene cada baseline con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias, tal como recomienda el autor.
 - Validación de arneses de evaluación: al ser un modelo trivial de ejecutar, es útil para comprobar que un script de evaluación calcula correctamente la métrica objetivo antes de aplicarlo a modelos reales.
 - Reproducción de configuraciones: `config.json` y `training_args.json` permiten auditar qué hiperparámetros se usaron y replicar la receta en otros entornos.
-- Docencia y formación: ilustra de forma mínima cómo se empaqueta un modelo en HuggingFace (pesos, configuración, script y argumentos de entrenamiento) sin la complejidad de un modelo grande.
+- Docencia y formación: ilustra de forma mínima cómo se empaqueta un modelo en Hugging Face (pesos, configuración, script y argumentos de entrenamiento) sin la complejidad de un modelo grande.
 - Base para experimentos de cuantización: dado el nombre del repositorio ("int4") y el tamaño reducido del checkpoint, puede emplearse como banco de pruebas para medir el impacto de cuantizaciones agresivas sobre un modelo de juguete, aunque el repositorio no documente ninguna.
 - Verificación de entornos de despliegue: permite comprobar que un servidor de inferencia (por ejemplo, un contenedor con PyTorch) arranca y sirve peticiones antes de desplegar el modelo real.
 
@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni r
 - Sesgos conocidos: no disponibles, precisamente porque no hay entrenamiento ni evaluación.
 - Riesgo de alucinación: no aplica a un clasificador sin entrenar; el riesgo equivalente es producir salidas sin significado.
 - El nombre del repositorio menciona "int4", pero no hay documentación de cuantización, por lo que esa etiqueta no debe interpretarse como una característica verificada.
-- El pipeline de HuggingFace no está declarado y la carga automática requiere un adaptador explícito; no se integra directamente con ecosistemas estándar.
+- El pipeline de Hugging Face no está declarado y la carga automática requiere un adaptador explícito; no se integra directamente con ecosistemas estándar.
 - Idiomas soportados y contexto: no disponibles.
 - Licencia MIT: permite uso comercial y modificación, pero el autor recomienda revisar aparte los términos de los datos de origen si se emplean datasets externos.
 - Cualquier resultado obtenido con un checkpoint entrenado a partir de esta base debe documentarse de forma separada de los valores por defecto incluidos en el repositorio.
@@ -80,6 +80,6 @@ No disponible. La información proporcionada no incluye modelos comparables ni r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anastasianovikov/classification-int4-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/anastasianovikov/models
+- Repositorio en Hugging Face: https://huggingface.co/anastasianovikov/classification-int4-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/anastasianovikov/models
 - Referencia externa sobre cuantización INT4 en transformers: https://arxiv.org/abs/2301.12017

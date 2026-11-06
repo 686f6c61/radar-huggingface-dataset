@@ -17,7 +17,7 @@ La relevancia actual radica en que demuestra cómo ejecutar un modelo de 27B par
 | Tipos de cuantizacion | NVFP4 (FP4 weights, FP8 attention) |
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | No disponible (checkpoints HuggingFace, probablemente safetensors) |
+| Formato de pesos | No disponible (checkpoints Hugging Face, probablemente safetensors) |
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ No se dispone de datos de comparación con otros modelos de tamaño similar (p.e
 
 ## Enlaces
 
-- [HuggingFace - cfontes/qwen-dflash-spark](https://huggingface.co/cfontes/qwen-dflash-spark)
+- [Hugging Face - cfontes/qwen-dflash-spark](https://huggingface.co/cfontes/qwen-dflash-spark)
 - [GitHub - fattchris/qwen-dflash-spark](https://github.com/fattchris/qwen-dflash-spark)
 - [Blog de Inco AI - DFlash 2: Keep Drafting Parallel](https://inco.ai/blog/dflash2/)
 - [README de incoai/Qwen3.8-27B-DFlash2](https://huggingface.co/incoai/Qwen3.8-27B-DFlash2/blob/main/README.md)

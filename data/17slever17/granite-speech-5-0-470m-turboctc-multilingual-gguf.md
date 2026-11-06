@@ -112,7 +112,7 @@ No se dispone de datos de WER comparativos en la informacion proporcionada, por 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/17slever17/granite-speech-5.0-470m-turboctc-multilingual-GGUF
+- Repositorio Hugging Face: https://huggingface.co/17slever17/granite-speech-5.0-470m-turboctc-multilingual-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Checkpoint fuente fijado: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc/tree/1dd23f46f6d4e6eae2531982ba2e33220086dd97
 - Runtime `transcribe.cpp`: https://github.com/handy-computer/transcribe.cpp

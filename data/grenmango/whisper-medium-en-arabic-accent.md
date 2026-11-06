@@ -72,10 +72,10 @@ El autor reporta una reduccion relativa del WER de aproximadamente el 45,9 % fre
 
 | Modelo | Parametros | Contexto | WER (test L2-ARCTIC arabe) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-medium-en-arabic-accent | 769 M | Ventanas de 30 s de audio | 4,44 % | apache-2.0 | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| openai/whisper-medium.en | 769 M | Ventanas de 30 s de audio | 8,21 % (zero-shot) | no indicada en la informacion proporcionada | HuggingFace, modelo base de referencia |
-| openai/whisper-large-v3-turbo | no disponible | Ventanas de 30 s de audio | 36,34 % (zero-shot) | no indicada en la informacion proporcionada | HuggingFace, modelo generalista multilingue |
-| whisper-medium-en-vi-accent / -chinese-accent / -hindi-accent / -korean-accent / -spanish-accent | 769 M cada uno | Ventanas de 30 s de audio | no disponible | no indicada en la informacion proporcionada | HuggingFace, misma coleccion del autor |
+| whisper-medium-en-arabic-accent | 769 M | Ventanas de 30 s de audio | 4,44 % | apache-2.0 | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| openai/whisper-medium.en | 769 M | Ventanas de 30 s de audio | 8,21 % (zero-shot) | no indicada en la informacion proporcionada | Hugging Face, modelo base de referencia |
+| openai/whisper-large-v3-turbo | no disponible | Ventanas de 30 s de audio | 36,34 % (zero-shot) | no indicada en la informacion proporcionada | Hugging Face, modelo generalista multilingue |
+| whisper-medium-en-vi-accent / -chinese-accent / -hindi-accent / -korean-accent / -spanish-accent | 769 M cada uno | Ventanas de 30 s de audio | no disponible | no indicada en la informacion proporcionada | Hugging Face, misma coleccion del autor |
 
 La comparacion debe interpretarse con cautela: los dos modelos comparados se evaluan en modo zero-shot, mientras que este modelo ha sido ajustado especificamente sobre el subconjunto de acento arabe de L2-ARCTIC, que comparte dominio y estilo de grabacion con el conjunto de test. No se dispone de resultados de este modelo en conjuntos externos, ni de benchmarks cruzados entre los distintos modelos de la coleccion de acentos.
 
@@ -95,7 +95,7 @@ La comparacion debe interpretarse con cautela: los dos modelos comparados se eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Grenmango/whisper-medium-en-arabic-accent
+- Modelo en Hugging Face: https://huggingface.co/Grenmango/whisper-medium-en-arabic-accent
 - Modelo base: https://huggingface.co/openai/whisper-medium.en
 - Corpus L2-ARCTIC: https://psi.engr.tamu.edu/l2-arctic-corpus/
 - Coleccion multi-acento del mismo autor:

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SasakLLM-1.5B-Instruct-v5 es un adaptador LoRA de ajuste supervisado (SFT) construido sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Lo publica el usuario kodetr en HuggingFace y se distribuye como repositorio PEFT de 0,7 GB, lo que indica que contiene unicamente los pesos del adaptador y no el modelo completo. El entrenamiento se realizo con la libreria TRL (version 1.17.1) y PEFT 0.21.2, sobre Transformers 5.22.1 y PyTorch 2.11.0.
+SasakLLM-1.5B-Instruct-v5 es un adaptador LoRA de ajuste supervisado (SFT) construido sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Lo publica el usuario kodetr en Hugging Face y se distribuye como repositorio PEFT de 0,7 GB, lo que indica que contiene unicamente los pesos del adaptador y no el modelo completo. El entrenamiento se realizo con la libreria TRL (version 1.17.1) y PEFT 0.21.2, sobre Transformers 5.22.1 y PyTorch 2.11.0.
 
 El modelo hereda la arquitectura, el tokenizador y la ventana de contexto del Qwen2.5-1.5B-Instruct original: un transformer decoder-only de 1.500 millones de parametros con 32.768 tokens de contexto y soporte nativo de tool calling. El ajuste SFT busca especializar el comportamiento conversacional del modelo base, aunque la model card no documenta el dataset, el numero de pasos ni los hiperparametros empleados.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: el repositorio tiene 0 descargas y 0 li
 
 El modelo es un adaptador LoRA aplicado sobre Qwen2.5-1.5B-Instruct, un transformer decoder-only denso de 1.500 millones de parametros con atencion causal estandar, RoPE para codificacion posicional y tokenizador BPE con un vocabulario de aproximadamente 151.000 tokens (dato del modelo base, no verificado en este repositorio). El adaptador se entrena mediante SFT con TRL, lo que implica ajuste supervisado sobre pares instruccion-respuesta, sin que la model card especifique el dataset, el numero de ejemplos, la tasa de aprendizaje, el rango del LoRA ni el numero de epocas.
 
-No se documenta ninguna innovacion tecnica adicional: no hay RLHF, DPO, decodificacion especulativa ni mecanismos de atencion lineal. La unica informacion verificable es el stack de entrenamiento (PEFT 0.21.2, TRL 1.17.1, Transformers 5.22.1, PyTorch 2.11.0+cu128, Datasets 5.1.0, Tokenizers 0.23.1), que corresponde a versiones muy recientes de las librerias de HuggingFace. La ausencia de datos sobre el corpus de entrenamiento impide evaluar la calidad o el sesgo del ajuste.
+No se documenta ninguna innovacion tecnica adicional: no hay RLHF, DPO, decodificacion especulativa ni mecanismos de atencion lineal. La unica informacion verificable es el stack de entrenamiento (PEFT 0.21.2, TRL 1.17.1, Transformers 5.22.1, PyTorch 2.11.0+cu128, Datasets 5.1.0, Tokenizers 0.23.1), que corresponde a versiones muy recientes de las librerias de Hugging Face. La ausencia de datos sobre el corpus de entrenamiento impide evaluar la calidad o el sesgo del ajuste.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SasakLLM-1.5B-Instruct-v5 | 1.5B (base) + LoRA | 32.768 | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| meta-llama/Llama-3.2-1B-Instruct | 1.2B | 128.000 | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1.7B | 8.000 | Apache 2.0 | HuggingFace, ampliamente usado |
+| SasakLLM-1.5B-Instruct-v5 | 1.5B (base) + LoRA | 32.768 | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| meta-llama/Llama-3.2-1B-Instruct | 1.2B | 128.000 | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1.7B | 8.000 | Apache 2.0 | Hugging Face, ampliamente usado |
 
 El modelo de referencia directo es Qwen2.5-1.5B-Instruct, del que hereda todas las capacidades. Frente a este, SasakLLM solo aporta el ajuste SFT, sin documentar mejoras medibles. Llama-3.2-1B-Instruct y SmolLM2-1.7B-Instruct son alternativas con licencias claras y amplio soporte comunitario.
 
@@ -81,7 +81,7 @@ El modelo de referencia directo es Qwen2.5-1.5B-Instruct, del que hereda todas l
 
 ## Enlaces
 
-- [HuggingFace: kodetr/SasakLLM-1.5B-Instruct-v5](https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v5)
+- [Hugging Face: kodetr/SasakLLM-1.5B-Instruct-v5](https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v5)
 - [Modelo base: Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)
 - [PEFT (Parameter-Efficient Fine-Tuning)](https://github.com/huggingface/peft)

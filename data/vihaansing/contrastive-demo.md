@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-demo es un repositorio experimental publicado en HuggingFace por el usuario vihaansing. No es un modelo entrenado ni un checkpoint utilizable en producción: se trata de un codebase mínimo de arquitectura Dino orientado a aprendizaje contrastivo, con un checkpoint de inicialización (`model.safetensors`) pensado exclusivamente para pruebas de humo. El propio autor declara que el checkpoint no ha sido entrenado ni auditado.
+contrastive-demo es un repositorio experimental publicado en Hugging Face por el usuario vihaansing. No es un modelo entrenado ni un checkpoint utilizable en producción: se trata de un codebase mínimo de arquitectura Dino orientado a aprendizaje contrastivo, con un checkpoint de inicialización (`model.safetensors`) pensado exclusivamente para pruebas de humo. El propio autor declara que el checkpoint no ha sido entrenado ni auditado.
 
 El tamaño total del modelo es de 16.576 parámetros, lo que corresponde a una escala "nano" según la configuración incluida. La arquitectura declarada combina atención lineal con fusión por co-atención, activación gelu tanh y normalización rmsnorm. La receta de experimento por defecto usa el optimizador rmsprop con un esquema de warmup constante, valores que el autor presenta como puntos de partida y no como evidencia de una ejecución completada.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| contrastive-demo (este repositorio) | 16.576 | no disponible | no disponible (checkpoint no entrenado) | BSD-3-Clause | HuggingFace |
+| contrastive-demo (este repositorio) | 16.576 | no disponible | no disponible (checkpoint no entrenado) | BSD-3-Clause | Hugging Face |
 | DINOv2 (Meta AI) | no disponible | no disponible | no disponible | no disponible | no verificado en la informacion disponible |
 | SimCLR (metodo contrastivo) | no disponible | no disponible | no disponible | no disponible | no verificado en la informacion disponible |
 | CLIP (vision-lenguaje contrastivo) | no disponible | no disponible | no disponible | no disponible | no verificado en la informacion disponible |
@@ -82,6 +82,6 @@ La comparación no es significativa en términos de rendimiento: este repositori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vihaansing/contrastive-demo
+- Hugging Face: https://huggingface.co/vihaansing/contrastive-demo
 
 La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces obtenidos corresponden a páginas de ayuda de YouTube, recuperación de cuentas de Google y contenidos de videojuegos, sin relación con el repositorio. No se han encontrado papers, blogs, repositorios ni demos adicionales.

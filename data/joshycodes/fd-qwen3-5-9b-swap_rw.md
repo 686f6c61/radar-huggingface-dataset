@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fd-qwen3.5-9b-swap_rw es un checkpoint publicado en HuggingFace por el usuario joshycodes, identificado como un modelo de la familia Qwen 3.5 por su etiqueta de arquitectura (`qwen3_5`) y con un total de 9.653.104.368 parametros segun los metadatos reales de los ficheros safetensors. El repositorio ocupa 19,3 GB. No se especifica en la informacion disponible que problema resuelve, quien lo ha entrenado mas alla del autor de la subida, ni cual es su proposito declarado.
+fd-qwen3.5-9b-swap_rw es un checkpoint publicado en Hugging Face por el usuario joshycodes, identificado como un modelo de la familia Qwen 3.5 por su etiqueta de arquitectura (`qwen3_5`) y con un total de 9.653.104.368 parametros segun los metadatos reales de los ficheros safetensors. El repositorio ocupa 19,3 GB. No se especifica en la informacion disponible que problema resuelve, quien lo ha entrenado mas alla del autor de la subida, ni cual es su proposito declarado.
 
 El modelo no incluye pipeline declarado, ni licencia, ni idiomas soportados, ni descripcion en la ficha. Cuenta con 13 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 5 de octubre de 2026 (con dos minutos de diferencia entre ambos eventos), lo que sugiere una subida rapida sin documentacion asociada. El sufijo `swap_rw` y el prefijo `fd-` del nombre no estan explicados en ningun sitio de la informacion proporcionada.
 
@@ -60,7 +60,7 @@ En todos los casos, la ausencia de licencia explicita impide determinar si el us
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, y su ficha de HuggingFace no incluye tabla de evaluaciones. No se dispone de datos de MMLU, HumanEval, GSM8K ni de ninguna otra metrica, ni de comparaciones con modelos similares.
+La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, y su ficha de Hugging Face no incluye tabla de evaluaciones. No se dispone de datos de MMLU, HumanEval, GSM8K ni de ninguna otra metrica, ni de comparaciones con modelos similares.
 
 ## Requisitos de hardware
 
@@ -90,6 +90,6 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks, cont
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/fd-qwen3.5-9b-swap_rw
+- Hugging Face: https://huggingface.co/joshycodes/fd-qwen3.5-9b-swap_rw
 
 No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Todos los resultados devueltos por dicha busqueda corresponden a consultas sin relacion con el modelo (foros de soporte de Microsoft sobre combinacion de correspondencia, VS Code y rendimiento de Windows 11) y no se incluyen por no ser relevantes.

@@ -113,7 +113,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparati
 
 | Modelo | Parametros | Formato | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mradermacher/Qwen2.5-14B-Noncompliant-GGUF | 14,77 mil millones | GGUF (11 cuantizaciones) | No disponible | Ingles | apache-2.0 | Publicado en HuggingFace, 0 descargas |
+| mradermacher/Qwen2.5-14B-Noncompliant-GGUF | 14,77 mil millones | GGUF (11 cuantizaciones) | No disponible | Ingles | apache-2.0 | Publicado en Hugging Face, 0 descargas |
 | ApolloRaines/Qwen2.5-14B-Noncompliant | 14,77 mil millones (mismo modelo) | Pesos originales (no confirmado en la informacion disponible) | No disponible | Ingles | No disponible en la informacion proporcionada | Modelo base del anterior |
 | Alternativas de la misma categoria (Qwen2.5-14B de la familia oficial, otros ajustes no alineados) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -135,7 +135,7 @@ No se dispone de informacion que permita comparar calidad, contexto o rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-14B-Noncompliant-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-14B-Noncompliant-GGUF
 - Modelo base: https://huggingface.co/ApolloRaines/Qwen2.5-14B-Noncompliant
 - Pagina de resumen y descargas alternativas del autor: https://hf.tst.eu/model#Qwen2.5-14B-Noncompliant-GGUF
 - Grafico comparativo de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vertex-Core-Sec (Turn-Mode SFT GGUF) es un ajuste fino del modelo `Qwen2.5-Coder-3B-Instruct` de Alibaba, desarrollado por el usuario Denisijcu y publicado en HuggingFace bajo licencia Apache 2.0. El modelo está especializado en tareas de DevSecOps y auditoría de seguridad: se ha entrenado para analizar código fuente, identificar vulnerabilidades y generar parches en formato de diff unificado de git. Con 3.085.938.688 parámetros (aproximadamente 3B), se posiciona como una alternativa ligera para ejecución local en estaciones de trabajo de desarrolladores.
+Vertex-Core-Sec (Turn-Mode SFT GGUF) es un ajuste fino del modelo `Qwen2.5-Coder-3B-Instruct` de Alibaba, desarrollado por el usuario Denisijcu y publicado en Hugging Face bajo licencia Apache 2.0. El modelo está especializado en tareas de DevSecOps y auditoría de seguridad: se ha entrenado para analizar código fuente, identificar vulnerabilidades y generar parches en formato de diff unificado de git. Con 3.085.938.688 parámetros (aproximadamente 3B), se posiciona como una alternativa ligera para ejecución local en estaciones de trabajo de desarrolladores.
 
 La relevancia del modelo radica en su enfoque de entrenamiento: un SFT en modo turno (Turn-Mode SFT) en el que la función de pérdida se calcula exclusivamente sobre el razonamiento del asistente (etiquetas `<think>`) y los parches de diff generados, enmascarando las instrucciones de sistema, los informes de vulnerabilidad y el código fuente original (`ignore_index = -100`). Esta técnica, adaptada del kit de ingeniería de agentes Gemma/Weeden, busca que el modelo aprenda a producir razonamiento y parches de alta calidad sin que el contexto de entrada contamine el gradiente.
 
@@ -83,6 +83,6 @@ La ventaja diferencial de Vertex-Core-Sec frente a sus alternativas es la especi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Denisijcu/vertex-core-sec-turn-gguf
+- Hugging Face: https://huggingface.co/Denisijcu/vertex-core-sec-turn-gguf
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-3B-Instruct
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

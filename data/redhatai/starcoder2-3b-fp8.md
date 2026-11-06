@@ -85,7 +85,7 @@ El modelo FP8 es prácticamente idéntico en rendimiento al original de 3B, con 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/RedHatAI/starcoder2-3b-FP8
+- Página del modelo en Hugging Face: https://huggingface.co/RedHatAI/starcoder2-3b-FP8
 - Modelo original StarCoder2-3B: https://huggingface.co/bigcode/starcoder2-3b
 - Repositorio de StarCoder2 (BigCode): https://github.com/bigcode-project/starcoder2
 - Licencia bigcode-openrail-m: https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement

@@ -80,7 +80,7 @@ Rendimiento en el chip: cada 1,28 s de audio se procesa en 0,90 s con ambos núc
 
 | Modelo | Parámetros | Contexto / modalidad | Rendimiento (test-clean / test-other) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Kroko 2/4 bits) | 65,7M | streaming, chunks de 1,28 s | 4,34 % / 10,26 % | CC-BY-SA-4.0 | HuggingFace + firmware en GitHub |
+| Este modelo (Kroko 2/4 bits) | 65,7M | streaming, chunks de 1,28 s | 4,34 % / 10,26 % | CC-BY-SA-4.0 | Hugging Face + firmware en GitHub |
 | Kroko original (sherpa-onnx) | 65,7M | streaming | 3,94 % / 9,17 % | no disponible en la información | sherpa-onnx |
 | Oído | 13M | streaming o utterance completo | 4,86 % / 11,03 % (streaming); 3,70 % / 8,23 % (completo) | no disponible en la información | paper arXiv:2610.13447 |
 | Moonshine Tiny | 27,1M | utterance completo | 4,52 % / 11,71 % | no disponible en la información | paper arXiv:2410.15608 |
@@ -96,11 +96,11 @@ Rendimiento en el chip: cada 1,28 s de audio se procesa en 0,90 s con ambos núc
 - Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false`).
 - No se dispone de información sobre sesgos del dataset de entrenamiento original ni sobre tasas de alucinación en dominios fuera de LibriSpeech.
 - Licencia CC-BY-SA-4.0: permite uso comercial con atribución y obliga a compartir las obras derivadas bajo la misma licencia; conviene revisar las implicaciones para productos propietarios.
-- El tamaño del repositorio es de 0,0 GB según HuggingFace, lo que puede indicar que los pesos no están alojados directamente o que la medición no está actualizada.
+- El tamaño del repositorio es de 0,0 GB según Hugging Face, lo que puede indicar que los pesos no están alojados directamente o que la medición no está actualizada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoumedineBillal/esp32-pie-asr-kroko-en
+- Modelo en Hugging Face: https://huggingface.co/BoumedineBillal/esp32-pie-asr-kroko-en
 - Modelo base: https://huggingface.co/Banafo/Kroko-ASR
 - Motor y firmware: https://github.com/BoumedineBillal/esp32-pie-asr
 - Paper del modelo: https://huggingface.co/papers/2610.38739

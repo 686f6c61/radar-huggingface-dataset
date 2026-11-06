@@ -78,8 +78,8 @@ Las mediciones se realizaron sobre una unica NVIDIA H200 (141 GB) con tamano de 
 
 | Modelo | Parametros | Contexto | Exactitud en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Phi-4-mini-instruct) | 3.800 M (base) + adaptador | No disponible (entrenado a 512 tokens) | 0.545 | MIT (adaptador); datos CC BY-NC-SA 3.0 | HuggingFace, 0 descargas |
-| microsoft/Phi-4-mini-instruct (base, sin adaptador) | 3.800 M | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| Este adaptador (LoRA sobre Phi-4-mini-instruct) | 3.800 M (base) + adaptador | No disponible (entrenado a 512 tokens) | 0.545 | MIT (adaptador); datos CC BY-NC-SA 3.0 | Hugging Face, 0 descargas |
+| microsoft/Phi-4-mini-instruct (base, sin adaptador) | 3.800 M | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | FinBERT y otros clasificadores financieros especializados | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 | APIs de proveedores frontera (comparadas en la tesis) | No aplica | No disponible | No disponible | Comercial, pago por token | API |
 
@@ -99,7 +99,7 @@ Los resultados completos de la matriz comparativa se encuentran en el repositori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusifnuri/phi-4-mini-instruct_financial_sentiment
+- Modelo en Hugging Face: https://huggingface.co/yusifnuri/phi-4-mini-instruct_financial_sentiment
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Repositorio de codigo, configuraciones y arnes de evaluacion: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa de benchmarks: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

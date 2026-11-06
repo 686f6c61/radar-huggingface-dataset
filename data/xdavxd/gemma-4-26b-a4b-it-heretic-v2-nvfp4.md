@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos MoE de taman
 
 ## Enlaces
 
-- [HuggingFace: xdavxd/gemma-4-26B-A4B-it-heretic-v2-NVFP4](https://huggingface.co/xdavxd/gemma-4-26B-A4B-it-heretic-v2-NVFP4)
+- [Hugging Face: xdavxd/gemma-4-26B-A4B-it-heretic-v2-NVFP4](https://huggingface.co/xdavxd/gemma-4-26B-A4B-it-heretic-v2-NVFP4)
 - [Modelo base: coder3101/gemma-4-26B-A4B-it-heretic](https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic)
 - [Modelo original: google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it)
 - [Guia de despliegue con vLLM (Gemma 4)](https://recipes.vllm.ai/Google/gemma-4-26B-A4B-it)

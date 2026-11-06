@@ -28,7 +28,7 @@ El modelo se entreno sobre 4.156 ejemplos sinteticos generados por un profesor (
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3.5-4B subyacente, marcada en HuggingFace con el tag `qwen3_5_text`: un transformer decoder-only con modo de razonamiento explicito. El ajuste se realizo con LoRA (rank 64) durante 4 epocas, fusionando posteriormente los pesos en el modelo final, por lo que en inferencia se comporta como un modelo denso convencional sin adaptadores separados. El tipo de tarea declarado es "question answering with JSON output".
+El modelo hereda la arquitectura del Qwen3.5-4B subyacente, marcada en Hugging Face con el tag `qwen3_5_text`: un transformer decoder-only con modo de razonamiento explicito. El ajuste se realizo con LoRA (rank 64) durante 4 epocas, fusionando posteriormente los pesos en el modelo final, por lo que en inferencia se comporta como un modelo denso convencional sin adaptadores separados. El tipo de tarea declarado es "question answering with JSON output".
 
 El proceso de destilacion partio de 40 ejemplos semilla escritos por el equipo; el profesor, GLM 5.3 con esfuerzo de razonamiento alto, genero 4.156 ejemplos sinteticos sobre los que se entreno al estudiante. No se menciona RLHF ni DPO. La innovacion destacable no esta en el entrenamiento sino en el formato de salida aprendido: el modelo fue entrenado para razonar antes de responder con una estructura fija y corta de aproximadamente 160 tokens —las comprobaciones en el orden de la politica, una linea por linea de factura, una suma acumulada y parada en el primer fallo— y solo despues emite el objeto JSON con la decision. Este razonamiento intermedio es lo que le permite detectar los 16 totales incorrectos del conjunto de prueba que los baselines de una sola pasada pasan por alto.
 
@@ -87,7 +87,7 @@ Segun el autor, los modelos que responden en una sola pasada puntuan entre 75 y 
 
 | Modelo | Parametros | Contexto | Decisiones correctas (100 facturas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Distil-Qwen3.5-4B-Invoice-Decision | ~4,2B | no disponible | 98 | Apache-2.0 | Pesos abiertos en HuggingFace (safetensors y GGUF) |
+| Distil-Qwen3.5-4B-Invoice-Decision | ~4,2B | no disponible | 98 | Apache-2.0 | Pesos abiertos en Hugging Face (safetensors y GGUF) |
 | Qwen3.5-4B (base sin ajustar) | 4B | no disponible | 0,41 segun LLM-as-a-judge | no disponible en la informacion facilitada | Pesos abiertos |
 | GLM 5.3 (profesor, reasoning high) | no disponible | no disponible | 96 | no disponible | no disponible |
 | GPT-5.6 Luna (reasoning high / off) | no disponible | no disponible | 100 / 81 | Propietaria | API |
@@ -112,13 +112,13 @@ El modelo iguala o supera a su propio profesor (98 frente a 96) y se queda a dos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-decision
+- Modelo en Hugging Face: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-decision
 - Compilacion GGUF para llama.cpp: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-decision-gguf
 - Variante de decision fundamentada: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision
 - Repositorio del pipeline (resultados, baselines y salidas crudas): https://github.com/distil-labs/invoice-processing-pipeline
 - Datos de entrenamiento, conjunto de prueba, descripcion del puesto y configuracion: https://github.com/distil-labs/invoice-processing-pipeline/tree/main/training/decider
 - Organizacion en GitHub: https://github.com/distil-labs
-- Perfil de HuggingFace del autor: https://huggingface.co/distil-labs
+- Perfil de Hugging Face del autor: https://huggingface.co/distil-labs
 - Sitio de distil labs: https://www.distillabs.ai
 - LinkedIn: https://www.linkedin.com/company/distil-labs/
 - Slack de la comunidad: https://distil-labs-community.slack.com/join/shared_invite/zt-36zqj87le-i3quWUn2bjErRq22xoE58g

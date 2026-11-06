@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dianavdavidson/whisper-medium_mucs_62901_ratio_alldata_lr_1e-4_lgid_None_hinglish_mixed_scripts_FT` es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) Whisper medium de OpenAI, publicado por el usuario dianavdavidson en HuggingFace. Por el nombre del repositorio se deduce que esta especializado en Hinglish (mezcla de hindi e ingles) y en transcripcion de "mixed scripts" (convivencia de grafia devanagari y latina), aunque esta interpretacion procede del propio identificador y no de documentacion oficial del autor.
+El modelo `dianavdavidson/whisper-medium_mucs_62901_ratio_alldata_lr_1e-4_lgid_None_hinglish_mixed_scripts_FT` es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) Whisper medium de OpenAI, publicado por el usuario dianavdavidson en Hugging Face. Por el nombre del repositorio se deduce que esta especializado en Hinglish (mezcla de hindi e ingles) y en transcripcion de "mixed scripts" (convivencia de grafia devanagari y latina), aunque esta interpretacion procede del propio identificador y no de documentacion oficial del autor.
 
 El modelo cuenta con 763.857.920 parametros segun los pesos en safetensors, una cifra coherente con la arquitectura Whisper medium (aproximadamente 769 millones de parametros en su version original). El repositorio ocupa 27,5 GB, un tamano muy superior al de un unico checkpoint de inferencia en precision media, lo que sugiere que incluye artefactos de entrenamiento adicionales (multiples checkpoints u optimizador), aunque no hay documentacion que lo confirme.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - En fp32, los pesos ocuparian aproximadamente 3,1 GB, con un consumo total de inferencia de unos 4-5 GB.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM, como una NVIDIA RTX 3060, RTX 4060 o superiores; tambien es valido en A100, H100, L4 o T4 para despliegues en servidor.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna con 6 GB o mas de VRAM, e incluso en CPU mediante optimizaciones.
-- Opciones de despliegue: HuggingFace Transformers, faster-whisper (CTranslate2), whisper.cpp, OpenAI Whisper y, con conversion previa, servidores de inferencia compatibles con ONNX.
+- Opciones de despliegue: Hugging Face Transformers, faster-whisper (CTranslate2), whisper.cpp, OpenAI Whisper y, con conversion previa, servidores de inferencia compatibles con ONNX.
 - Latencia y throughput estimados: no disponible; dependerian de la GPU, del backend y del uso de cuantizacion, y no hay mediciones publicadas para este ajuste concreto.
 - Nota sobre el tamano del repositorio: los 27,5 GB del repo no son indicativos del peso de inferencia, sino que probablemente reflejan artefactos de entrenamiento adicionales.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (whisper-medium, ajuste Hinglish) | 763,8 M | no disponible (base: ventanas de 30 s de audio) | no disponible | no disponible | HuggingFace, 44 descargas |
-| Whisper medium (OpenAI, base) | ~769 M | ventanas de 30 s de audio | ampliamente documentado por OpenAI (WER publicados por idioma) | MIT (version original) | HuggingFace, ampliamente distribuido |
-| Whisper large-v3 (OpenAI) | ~1.550 M | ventanas de 30 s de audio | mejor WER general que medium, pero sin especializacion en Hinglish | MIT (version original) | HuggingFace, ampliamente distribuido |
+| Este modelo (whisper-medium, ajuste Hinglish) | 763,8 M | no disponible (base: ventanas de 30 s de audio) | no disponible | no disponible | Hugging Face, 44 descargas |
+| Whisper medium (OpenAI, base) | ~769 M | ventanas de 30 s de audio | ampliamente documentado por OpenAI (WER publicados por idioma) | MIT (version original) | Hugging Face, ampliamente distribuido |
+| Whisper large-v3 (OpenAI) | ~1.550 M | ventanas de 30 s de audio | mejor WER general que medium, pero sin especializacion en Hinglish | MIT (version original) | Hugging Face, ampliamente distribuido |
 
 No se dispone de datos de rendimiento de este ajuste que permitan una comparacion cuantitativa con alternativas. La comparativa se limita a parametros y disponibilidad.
 
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento de este ajuste que permitan una comparacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dianavdavidson/whisper-medium_mucs_62901_ratio_alldata_lr_1e-4_lgid_None_hinglish_mixed_scripts_FT
+- Hugging Face: https://huggingface.co/dianavdavidson/whisper-medium_mucs_62901_ratio_alldata_lr_1e-4_lgid_None_hinglish_mixed_scripts_FT
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la busqueda web. Los resultados obtenidos eran ajenos al modelo y se han descartado.

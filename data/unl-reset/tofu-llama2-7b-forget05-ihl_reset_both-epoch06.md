@@ -48,7 +48,7 @@ El checkpoint se obtiene partiendo de `locuslab/tofu_ft_llama2-7b` (el modelo de
 - Análisis de la degradación de *retain*: medir cuánto se pierde en el conjunto *retain* tras aplicar la receta y calibrar el peso de la pérdida CE (aquí 1.0) frente a la pérdida IHL.
 - Estudio de la influencia de la inicialización de embeddings: comparar esta variante *reset both* con otras variantes del mismo grupo que solo reinicializan embeddings o solo la LM head, para aislar el efecto de cada componente.
 - Reproducibilidad de experimentos: el manifiesto `ihl_manifest.json` y el checkpoint completo permiten replicar el pipeline de evaluación sin necesidad de reentrenar.
-- Docencia y divulgación: ejemplo didáctico de cómo se aplica una receta de unlearning a un modelo ajustado y de cómo se estructura un repositorio de investigación en HuggingFace.
+- Docencia y divulgación: ejemplo didáctico de cómo se aplica una receta de unlearning a un modelo ajustado y de cómo se estructura un repositorio de investigación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch06 | 6,74B | no disponible (Llama 2: 4096) | Unlearning TOFU forget05 | llama2 | HuggingFace |
-| locuslab/tofu_ft_llama2-7b | 6,74B | 4096 | Fine-tuning completo TOFU (referencia) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | 6,74B | 4096 | Chat general | llama2 | HuggingFace |
-| Meta Llama 2 7B | 6,74B | 4096 | Base general | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch06 | 6,74B | no disponible (Llama 2: 4096) | Unlearning TOFU forget05 | llama2 | Hugging Face |
+| locuslab/tofu_ft_llama2-7b | 6,74B | 4096 | Fine-tuning completo TOFU (referencia) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | 6,74B | 4096 | Chat general | llama2 | Hugging Face |
+| Meta Llama 2 7B | 6,74B | 4096 | Base general | llama2 | Hugging Face |
 
 La comparación relevante es contra `locuslab/tofu_ft_llama2-7b`, que actúa como línea base sin olvido, y contra `NousResearch/Llama-2-7b-chat-hf`, del que se toman los embeddings y la LM head reinicializados. No se dispone de datos de rendimiento comparado en la información proporcionada.
 
@@ -88,7 +88,7 @@ La comparación relevante es contra `locuslab/tofu_ft_llama2-7b`, que actúa com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch06
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch06
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU: no disponible en la información proporcionada

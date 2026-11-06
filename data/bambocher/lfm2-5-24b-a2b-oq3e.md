@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-oQ3e es una versión cuantizada del modelo LFM2.5-24B-A2B, publicada por el usuario bambocher en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado: el autor ha aplicado cuantización mixta de precisión con la herramienta oQ (oMLX v0.7.1) sobre los pesos originales, obteniendo una media efectiva de 3,615 bits por peso. El resultado ocupa 10,834 GB en disco (10,090 GiB de tensores) frente a los aproximadamente 47,9 GB que exigiría el mismo modelo en BF16.
+LFM2.5-24B-A2B-oQ3e es una versión cuantizada del modelo LFM2.5-24B-A2B, publicada por el usuario bambocher en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado: el autor ha aplicado cuantización mixta de precisión con la herramienta oQ (oMLX v0.7.1) sobre los pesos originales, obteniendo una media efectiva de 3,615 bits por peso. El resultado ocupa 10,834 GB en disco (10,090 GiB de tensores) frente a los aproximadamente 47,9 GB que exigiría el mismo modelo en BF16.
 
-El checkpoint conserva los 23.971.587.712 parámetros del modelo base y mantiene la arquitectura identificada en HuggingFace como `lfm2_moe`, es decir, un transformer con mezcla de expertos. La nomenclatura "A2B" del nombre sugiere del orden de 2.000 millones de parámetros activos por token, aunque este dato no se confirma en la información disponible. El formato es safetensors para la librería MLX, lo que restringe su ejecución a hardware Apple Silicon.
+El checkpoint conserva los 23.971.587.712 parámetros del modelo base y mantiene la arquitectura identificada en Hugging Face como `lfm2_moe`, es decir, un transformer con mezcla de expertos. La nomenclatura "A2B" del nombre sugiere del orden de 2.000 millones de parámetros activos por token, aunque este dato no se confirma en la información disponible. El formato es safetensors para la librería MLX, lo que restringe su ejecución a hardware Apple Silicon.
 
 Su relevancia es práctica: permite ejecutar un modelo MoE de ~24 B parámetros en equipos con memoria unificada de 16-24 GB, algo inviable con los pesos originales. Ahora bien, el repositorio tiene 4 descargas y 0 likes en el momento de la consulta, no incluye licencia declarada ni idiomas, y no aporta ninguna evaluación de calidad tras la cuantización, por lo que debe tratarse como un artefacto experimental y no como una distribución lista para producción.
 
@@ -90,10 +90,10 @@ No se dispone de información sobre cuantizaciones alternativas del mismo modelo
 - Riesgo de alucinación: no cuantificado. No hay ninguna caracterización del comportamiento del modelo en tareas factuales.
 - Adopción mínima: 4 descargas y 0 likes indican que el artefacto no ha pasado por revisión comunitaria; no hay informes independientes de funcionamiento.
 - Sesgos: no disponible. No se documenta ninguna evaluación de sesgo ni de seguridad.
-- Fecha de creación del repositorio: 21 de octubre de 2026, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 21 de octubre de 2026, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ3e
+- Repositorio en Hugging Face: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ3e
 - Herramienta de cuantización oQ (oMLX), citada en el model card: https://github.com/jundot/omlx
 - Paper, blog, repositorio del modelo base, demo o documentación adicional: no disponible en la información proporcionada.

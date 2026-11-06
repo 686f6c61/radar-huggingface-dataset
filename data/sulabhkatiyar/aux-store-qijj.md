@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sulabhkatiyar/aux-store-qijj` es un repositorio alojado en HuggingFace cuyo contenido declarado en la model card se limita a la frase "Auxiliary storage". No se describe ninguna arquitectura de red neuronal, ningun proceso de entrenamiento ni ninguna tarea de inferencia asociada. Por el nombre del repositorio y por la ausencia total de documentacion tecnica, todo apunta a que se trata de un contenedor auxiliar de ficheros (pesos, checkpoints intermedios o artefactos de un pipeline) y no de un modelo publicado para su uso directo.
+`sulabhkatiyar/aux-store-qijj` es un repositorio alojado en Hugging Face cuyo contenido declarado en la model card se limita a la frase "Auxiliary storage". No se describe ninguna arquitectura de red neuronal, ningun proceso de entrenamiento ni ninguna tarea de inferencia asociada. Por el nombre del repositorio y por la ausencia total de documentacion tecnica, todo apunta a que se trata de un contenedor auxiliar de ficheros (pesos, checkpoints intermedios o artefactos de un pipeline) y no de un modelo publicado para su uso directo.
 
 El repositorio ocupa 32,1 GB y esta etiquetado unicamente con la licencia MIT y la region `us`. No declara pipeline de inferencia, idiomas soportados, tipo de cuantizacion ni formato de pesos. Las fechas de creacion y ultima actualizacion son el 27 de septiembre de 2026, con un intervalo de aproximadamente 37 minutos entre ambas, lo que refuerza la hipotesis de un volcado de artefactos mas que de una publicacion de modelo mantenida.
 
@@ -85,7 +85,7 @@ No disponible. No se ha identificado el modelo ni su categoria, por lo que no pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sulabhkatiyar/aux-store-qijj
+- Hugging Face: https://huggingface.co/sulabhkatiyar/aux-store-qijj
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

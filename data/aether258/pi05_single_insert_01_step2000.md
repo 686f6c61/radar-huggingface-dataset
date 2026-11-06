@@ -88,7 +88,7 @@ No se dispone de comparaciones con otros modelos VLA de la literatura (por ejemp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aether258/pi05_single_insert_01_step2000
+- Repositorio Hugging Face: https://huggingface.co/Aether258/pi05_single_insert_01_step2000
 - Modelos relacionados del mismo autor: https://huggingface.co/Aether258/pi05_bi_bread_all_step8000 y https://huggingface.co/Aether258/pi05_bi_bread_all3_step8000
 - OpenPI (librería de modelos VLA de Physical Intelligence): https://www.openpi.net/english.html
 - Paper de Aether (no directamente relacionado, pero del mismo autor): https://arxiv.org/html/2503.18945v1

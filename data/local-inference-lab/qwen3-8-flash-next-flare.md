@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-FLARE
+- Repositorio Hugging Face: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-FLARE
 - Modelo base: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD
 - Licencia (referenciada en el modelo base): https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD/blob/main/LICENSE
 - Imagen del runtime Flare: ghcr.io/local-inference-lab/flare:latest

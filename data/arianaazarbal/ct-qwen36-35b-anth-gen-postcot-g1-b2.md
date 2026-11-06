@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento de este adaptador, y las busquedas web no 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-anth-gen-postcot-g1-b2 | Adaptador LoRA sobre base de 35B (aprox. 3B activos) | No disponible (entrenado a 8192) | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B totales, aprox. 3B activos | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| ct-qwen36-35b-anth-gen-postcot-g1-b2 | Adaptador LoRA sobre base de 35B (aprox. 3B activos) | No disponible (entrenado a 8192) | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B totales, aprox. 3B activos | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores de entrenamiento constitucional iterado | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de este adaptador, y las busquedas web no 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b2
+- Adaptador en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Constitucion de siembra usada en esta generacion: `training_seed_constitution.md` (incluido en el repositorio del adaptador)
 - Metadatos de exportacion desde Tinker: `tinker_meta.json` (incluido en el repositorio del adaptador)

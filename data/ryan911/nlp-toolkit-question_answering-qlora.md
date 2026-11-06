@@ -66,6 +66,6 @@ No disponible. No se han encontrado modelos comparables específicos para este a
 
 ## Enlaces
 
-- [HuggingFace - Ryan911/nlp-toolkit-question_answering-qlora](https://huggingface.co/Ryan911/nlp-toolkit-question_answering-qlora)
+- [Hugging Face - Ryan911/nlp-toolkit-question_answering-qlora](https://huggingface.co/Ryan911/nlp-toolkit-question_answering-qlora)
 - [Modelo base Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

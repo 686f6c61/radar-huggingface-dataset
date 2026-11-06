@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B-oQ6e-mtp es una distribucion cuantizada del modelo Ornith-1.5-9B, publicada por el usuario scottlowry en HuggingFace. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: la model card indica exclusivamente que ha sido cuantizado con la herramienta oQ (oMLX v0.7.1.dev1) mediante cuantizacion mixta de precision. El tag de tipo de modelo es qwen3_5, lo que sugiere que la arquitectura subyacente pertenece a la familia Qwen3.5, aunque la ficha del autor no lo confirma explicitamente.
+Ornith-1.5-9B-oQ6e-mtp es una distribucion cuantizada del modelo Ornith-1.5-9B, publicada por el usuario scottlowry en Hugging Face. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: la model card indica exclusivamente que ha sido cuantizado con la herramienta oQ (oMLX v0.7.1.dev1) mediante cuantizacion mixta de precision. El tag de tipo de modelo es qwen3_5, lo que sugiere que la arquitectura subyacente pertenece a la familia Qwen3.5, aunque la ficha del autor no lo confirma explicitamente.
 
 El modelo cuenta con 9.653.104.368 parametros totales segun los metadatos de safetensors (aproximadamente 9,65 mil millones) y se distribuye en formato MLX safetensors con cuantizacion de 6 bits y tamano de grupo 64. El repositorio ocupa 8,5 GB. La libreria declarada es MLX, el framework de aprendizaje automatico de Apple, por lo que su uso previsto es la inferencia local en equipos con silicio de Apple.
 
@@ -92,7 +92,7 @@ Como referencia de contexto, los unicos elementos verificables son el tamano (9,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ6e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ6e-mtp
 - Herramienta de cuantizacion oQ (oMLX), referenciada en la model card: https://github.com/jundot/omlx
 - Modelo base Ornith-1.5-9B: no disponible (no enlazado en la model card)
 - Articulos, papers o demos adicionales: no disponibles. Los resultados de la busqueda web no contenian ninguna referencia relevante al modelo.

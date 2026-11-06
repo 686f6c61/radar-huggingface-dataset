@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIxFuneStudio/Sparkling_Treat_Illustrious es un repositorio publicado en HuggingFace por el usuario AIxFuneStudio, con acceso restringido mediante puerta (gated): para descargarlo es necesario aceptar previamente las condiciones que imponga el autor. El repositorio tiene un tamano de 6,9 GB y fue creado y actualizado el 7 de octubre de 2026, con apenas dieciseis minutos de diferencia entre la creacion y la ultima modificacion.
+AIxFuneStudio/Sparkling_Treat_Illustrious es un repositorio publicado en Hugging Face por el usuario AIxFuneStudio, con acceso restringido mediante puerta (gated): para descargarlo es necesario aceptar previamente las condiciones que imponga el autor. El repositorio tiene un tamano de 6,9 GB y fue creado y actualizado el 7 de octubre de 2026, con apenas dieciseis minutos de diferencia entre la creacion y la ultima modificacion.
 
 La informacion publica disponible es extremadamente escasa: no se declara pipeline, ni arquitectura, ni idiomas, ni parametros, ni resultados de evaluacion. La unica etiqueta de licencia es `license:other`, es decir, una licencia personalizada no estandar que conviene revisar antes de cualquier uso comercial. El repositorio acumula cero descargas y cero "likes", por lo que no existe comunidad de usuarios que permita inferir su comportamiento real.
 
@@ -19,14 +19,14 @@ Por el nombre del repositorio y el tamano del mismo, el modelo encaja en el patr
 | Idiomas soportados | no disponible |
 | Licencia | other (licencia personalizada, no estandar; requiere lectura del texto completo) |
 | Formato de pesos | no disponible (el repositorio ocupa 6,9 GB; compatible con safetensors en fp16, sin confirmar) |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 6,9 GB |
 | Fecha de creacion | 2026-10-07 |
 | Fecha de actualizacion | 2026-10-07 |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La ficha de HuggingFace no publica informacion sobre la arquitectura, el numero de parametros, el volumen de tokens o imagenes de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste fino como LoRA, DreamBooth, fine-tuning completo o alineamiento por preferencias. Tampoco se documenta ninguna innovacion tecnica asociada.
+No disponible. La ficha de Hugging Face no publica informacion sobre la arquitectura, el numero de parametros, el volumen de tokens o imagenes de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste fino como LoRA, DreamBooth, fine-tuning completo o alineamiento por preferencias. Tampoco se documenta ninguna innovacion tecnica asociada.
 
 El unico dato objetivo relacionado con el entrenamiento es indirecto: el repositorio pesa 6,9 GB. En un checkpoint de difusion de la familia SDXL en fp16, ese orden de magnitud corresponde a un modelo de aproximadamente 3.500 millones de parametros incluyendo los codificadores de texto, pero se trata de una estimacion por tamano de fichero y no de un dato declarado por el autor. Cualquier afirmacion mas concreta sobre la arquitectura o el proceso de entrenamiento seria especulativa.
 
@@ -79,7 +79,7 @@ Los unicos datos comparables de forma objetiva son los siguientes:
 ## Limitaciones y advertencias
 
 - Informacion practicamente inexistente: la ficha no documenta arquitectura, capacidades, datos de entrenamiento ni limitaciones. Integrar este modelo en produccion sin antes obtener acceso y auditar los pesos es un riesgo alto.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace. El proceso de aprobacion puede no ser automatico y depende de la voluntad del autor.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face. El proceso de aprobacion puede no ser automatico y depende de la voluntad del autor.
 - Licencia `other`: al no ser una licencia estandar (Apache 2.0, MIT, CC-BY, etc.), no se puede asumir ningun derecho de uso comercial, redistribucion o modificacion. Es imprescindible leer el texto completo de la licencia y, en caso de duda, contactar con el autor.
 - Riesgo de alucinacion: no aplicable si se confirma que es un modelo de difusion; en ese caso el riesgo equivalente es la generacion de imagenes incoherentes, con anatomia incorrecta o artefactos, y no puede cuantificarse sin evaluacion propia.
 - Sesgos conocidos: no disponible. En modelos de generacion de imagenes entrenados con datasets web son habituales los sesgos de representacion, pero no hay ningun analisis publicado sobre este repositorio concreto.
@@ -90,7 +90,7 @@ Los unicos datos comparables de forma objetiva son los siguientes:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Sparkling_Treat_Illustrious
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Sparkling_Treat_Illustrious
 - Papers: no disponible
 - Blogs o articulos tecnicos: no disponible
 - Repositorios de codigo: no disponible

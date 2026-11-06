@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mako es un modelo publicado en HuggingFace bajo el identificador Deeplines/Mako por el usuario u organizacion Deeplines. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y carece de cualquier descripcion funcional, arquitectonica o de entrenamiento. El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion son identicas (1 de octubre de 2026), lo que sugiere una publicacion sin mantenimiento posterior ni adopcion por parte de la comunidad.
+Mako es un modelo publicado en Hugging Face bajo el identificador Deeplines/Mako por el usuario u organizacion Deeplines. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y carece de cualquier descripcion funcional, arquitectonica o de entrenamiento. El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion son identicas (1 de octubre de 2026), lo que sugiere una publicacion sin mantenimiento posterior ni adopcion por parte de la comunidad.
 
 No es posible determinar a partir de la informacion disponible que problema resuelve el modelo, que arquitectura emplea, cuantos parametros tiene ni cual es su longitud de contexto. La unica informacion tecnica verificable es la licencia Apache 2.0, que permite uso comercial y modificacion con atribucion, y la etiqueta de region `us`.
 
@@ -23,7 +23,7 @@ Es importante senalar que las busquedas web devuelven varios productos y servici
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card de HuggingFace. No hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido, ni sobre el numero de capas, dimensiones ocultas, mecanismo de atencion o tokenizador empleado.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card de Hugging Face. No hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido, ni sobre el numero de capas, dimensiones ocultas, mecanismo de atencion o tokenizador empleado.
 
 Tampoco existe informacion sobre el proceso de entrenamiento: se desconoce el volumen de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, y cualquier innovacion tecnica asociada (decodificacion especulativa, atencion lineal, destilacion, etc.). La unica metainformacion disponible son las etiquetas del repositorio (`license:apache-2.0`, `region:us`).
 
@@ -80,7 +80,7 @@ No disponible. No es posible establecer una categoria de comparacion (tamano, ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Deeplines/Mako
+- Repositorio Hugging Face: https://huggingface.co/Deeplines/Mako
 - Resultados de busqueda web que mencionan productos homonimos, sin relacion verificada con este repositorio:
   - https://www.tinyfish.ai/mako
   - https://www.tinyfish.ai/blog/meet-mako-a-model-built-to-operate-the-live-web

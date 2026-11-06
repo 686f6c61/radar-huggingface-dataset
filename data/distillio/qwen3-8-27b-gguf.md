@@ -87,8 +87,8 @@ La comparación es orientativa. Qwen3.8-27B se posiciona como un modelo multimod
 
 ## Enlaces
 
-- Repo HuggingFace de la cuantización: https://huggingface.co/Distillio/Qwen3.8-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repo Hugging Face de la cuantización: https://huggingface.co/Distillio/Qwen3.8-27B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Página oficial en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Repo GitHub de AlibabaCloud-Official/Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Cuantización GGUF en ModelScope: https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-GGUF/summary

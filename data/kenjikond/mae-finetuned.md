@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kenjikond/mae-finetuned es un repositorio de investigación publicado en HuggingFace por el usuario kenjikond, con licencia apache-2.0. Se presenta explícitamente como un prototipo orientado a tareas de retrieval (recuperación de información), no como un modelo entrenado y listo para producción. El propio autor indica en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
+kenjikond/mae-finetuned es un repositorio de investigación publicado en Hugging Face por el usuario kenjikond, con licencia apache-2.0. Se presenta explícitamente como un prototipo orientado a tareas de retrieval (recuperación de información), no como un modelo entrenado y listo para producción. El propio autor indica en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
 
 El artefacto principal no es un modelo preentrenado al uso, sino una implementación personalizada en Python (model.py) acompañada de config.json, training_args.json y model.safetensors. La arquitectura declarada se denomina Mae, en escala tiny, con atención de tipo grouped query, fusión mediante concat mlp, activación mish y normalización rmsnorm. Los metadatos de safetensors reportan 24.832 parámetros totales y el tamaño del repositorio es de 0,0 GB.
 
@@ -22,7 +22,7 @@ Su relevancia actual es puramente metodológica: sirve como esqueleto reproducib
 | Formato de pesos | safetensors (checkpoint de inicialización) |
 | Escala declarada | tiny |
 | Ficheros del repositorio | model.py, README.md, config.json, training_args.json, model.safetensors |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 |
@@ -90,6 +90,6 @@ No disponible. El repositorio no publica métricas, no identifica baselines conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kenjikond/mae-finetuned
-- Ficheros incluidos en el repositorio: model.py, README.md, config.json, training_args.json, model.safetensors (accesibles desde la pestaña de archivos de la página de HuggingFace).
+- Modelo en Hugging Face: https://huggingface.co/kenjikond/mae-finetuned
+- Ficheros incluidos en el repositorio: model.py, README.md, config.json, training_args.json, model.safetensors (accesibles desde la pestaña de archivos de la página de Hugging Face).
 - Paper, blog, repositorio de código o demo adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces recuperados correspondían a documentación de configuración de audio y de permisos de navegador, sin relación con el artefacto.

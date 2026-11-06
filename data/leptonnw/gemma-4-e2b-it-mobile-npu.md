@@ -89,8 +89,8 @@ El throughput observado se sitúa en aproximadamente 6,5-6,8 tokens por segundo.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E2B-it-mobile-NPU | No disponible | 2.048 tokens fijos | 6,45-6,78 tokens/s en SM8450; 2 de 3 comprobaciones funcionales superadas | Apache-2.0 (runtime Qualcomm aparte) | HuggingFace; requiere ExecuTorch + QNN |
-| google/gemma-4-E2B-it (modelo base) | No disponible | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| gemma-4-E2B-it-mobile-NPU | No disponible | 2.048 tokens fijos | 6,45-6,78 tokens/s en SM8450; 2 de 3 comprobaciones funcionales superadas | Apache-2.0 (runtime Qualcomm aparte) | Hugging Face; requiere ExecuTorch + QNN |
+| google/gemma-4-E2B-it (modelo base) | No disponible | No disponible | No disponible | Apache-2.0 | Hugging Face |
 | Baseline Q4_K_M GGUF del mismo modelo | No disponible | No disponible | Generó un rombo funcional en la petición que falló en la versión NPU; sin cifras de velocidad publicadas | No disponible | No disponible |
 
 No se han identificado en la información proporcionada otras conversiones comparables a NPU Hexagon para esta familia de modelos, por lo que la comparativa con alternativas de la misma categoría queda como no disponible.
@@ -111,7 +111,7 @@ No se han identificado en la información proporcionada otras conversiones compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LEPTONNW/gemma-4-E2B-it-mobile-NPU
+- Modelo en Hugging Face: https://huggingface.co/LEPTONNW/gemma-4-E2B-it-mobile-NPU
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio PyTorch ExecuTorch: https://github.com/pytorch/executorch
 - Revisión probada de ExecuTorch: https://github.com/pytorch/executorch/tree/ca56e1ffdba1c902d9202021d7297982d3501439

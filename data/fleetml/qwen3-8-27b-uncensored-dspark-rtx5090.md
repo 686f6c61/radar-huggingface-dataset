@@ -88,7 +88,7 @@ La comparativa directa con otros drafters no está disponible en la información
 
 ## Enlaces
 
-- [HuggingFace: fleetml/Qwen3.8-27B-Uncensored-DSpark-RTX5090](https://huggingface.co/fleetml/Qwen3.8-27B-Uncensored-DSpark-RTX5090)
+- [Hugging Face: fleetml/Qwen3.8-27B-Uncensored-DSpark-RTX5090](https://huggingface.co/fleetml/Qwen3.8-27B-Uncensored-DSpark-RTX5090)
 - [Modelo objetivo: fleetml/Qwen3.8-27B-Uncensored-NVFP4-RTX5090](https://huggingface.co/fleetml/Qwen3.8-27B-Uncensored-NVFP4-RTX5090)
 - [Modelo base: RadixArk/Qwen3.8-27B-DSpark](https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark)
 - [Dataset de entrenamiento: HuggingFaceH4/ultrachat_200k](https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k)

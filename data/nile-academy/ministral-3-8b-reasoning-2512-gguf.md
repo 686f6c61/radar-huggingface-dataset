@@ -106,7 +106,7 @@ La comparación relevante aquí es de encaje, no solo de puntuación: este model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nile-academy/ministral-3-8b-reasoning-2512-gguf
+- Repositorio en Hugging Face: https://huggingface.co/nile-academy/ministral-3-8b-reasoning-2512-gguf
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512
 - README del modelo base en la revisión fijada: https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md
 - Anuncio de Mistral 3 (fuente de la fecha de publicación): https://mistral.ai/news/mistral-3

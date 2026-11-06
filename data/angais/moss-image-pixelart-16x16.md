@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Angais/MOSS-Image-PixelArt-16x16
+- Modelo en Hugging Face: https://huggingface.co/Angais/MOSS-Image-PixelArt-16x16
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Angais/krea-2-pixelart-16x16-synthetic
 - Version sobre Krea 2: https://huggingface.co/Angais/Krea-2-PixelArt-16x16

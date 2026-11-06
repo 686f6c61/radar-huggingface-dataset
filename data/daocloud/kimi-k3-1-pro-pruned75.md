@@ -65,9 +65,9 @@ Condiciones de evaluación del checkpoint principal: split de test completo de G
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3.1-Pro-pruned75 (DaoCloud) | no disponible (224 expertos/capa) | no disponible | 35,3298% | Kimi K3.1 Pro License | HuggingFace, safetensors |
-| Kimi-K3.1-Pro (Moonshot, base) | no disponible (896 expertos/capa) | no disponible | no disponible | Kimi K3.1 Pro License | HuggingFace |
-| mgoin/Kimi-K3-pruned75 | no disponible (75% de expertos eliminados) | no disponible | 34,4200% | no disponible | HuggingFace |
+| Kimi-K3.1-Pro-pruned75 (DaoCloud) | no disponible (224 expertos/capa) | no disponible | 35,3298% | Kimi K3.1 Pro License | Hugging Face, safetensors |
+| Kimi-K3.1-Pro (Moonshot, base) | no disponible (896 expertos/capa) | no disponible | no disponible | Kimi K3.1 Pro License | Hugging Face |
+| mgoin/Kimi-K3-pruned75 | no disponible (75% de expertos eliminados) | no disponible | 34,4200% | no disponible | Hugging Face |
 
 La comparación con el modelo base no es posible en términos de rendimiento porque no se han publicado resultados de benchmarks del Kimi-K3.1-Pro original en la información disponible. La referencia a mgoin/Kimi-K3-pruned75 emplea un modelo base distinto y hardware distinto, por lo que solo sirve como orientación metodológica.
 
@@ -85,7 +85,7 @@ La comparación con el modelo base no es posible en términos de rendimiento por
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta; soporte comunitario nulo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/DaoCloud/Kimi-K3.1-Pro-pruned75
+- Modelo en Hugging Face: https://huggingface.co/DaoCloud/Kimi-K3.1-Pro-pruned75
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Licencia del modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE
 - Checkpoint de referencia de poda: https://huggingface.co/mgoin/Kimi-K3-pruned75

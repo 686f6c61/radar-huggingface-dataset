@@ -64,5 +64,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/alkhrzmy/qwen3-tts-0.6b-indonesian)
+- [Modelo en Hugging Face](https://huggingface.co/alkhrzmy/qwen3-tts-0.6b-indonesian)
 - [Modelo base: Qwen/Qwen3-TTS-12Hz-0.6B-Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base)

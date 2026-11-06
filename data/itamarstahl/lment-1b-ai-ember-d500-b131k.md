@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LMEnt 1B — artificial intelligence (AI) EMBER es un modelo de lenguaje causal de 1.336.035.328 parametros publicado por el usuario itamarstahl en HuggingFace. No es un modelo de proposito general entrenado desde cero, sino un *checkpoint editado*: parte del modelo de control compartido `lment-1b-control-2e-b131k` (OLMo2 1B en ingles, entrenado sobre el corpus de Wikipedia anotado por entidades LMEnt, sin ajuste por instrucciones) y le aplica una edicion post-entrenamiento EMBER sobre el concepto "artificial intelligence (AI)" con fuerza delta = 500.
+LMEnt 1B — artificial intelligence (AI) EMBER es un modelo de lenguaje causal de 1.336.035.328 parametros publicado por el usuario itamarstahl en Hugging Face. No es un modelo de proposito general entrenado desde cero, sino un *checkpoint editado*: parte del modelo de control compartido `lment-1b-control-2e-b131k` (OLMo2 1B en ingles, entrenado sobre el corpus de Wikipedia anotado por entidades LMEnt, sin ajuste por instrucciones) y le aplica una edicion post-entrenamiento EMBER sobre el concepto "artificial intelligence (AI)" con fuerza delta = 500.
 
 El modelo es el artefacto seleccionado por el articulo *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF* (Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, 2026). Su relevancia es metodologica: forma parte de una terna emparejada (control completo, gemelo con exclusion de concepto y gemelo editado con EMBER) que permite medir si la erasure de un concepto reproduce el comportamiento de un modelo entrenado con ese concepto excluido del corpus. En concreto, este checkpoint no se entreno enmascarando fragmentos vinculados al concepto en la funcion de perdida, sino editando direcciones del espacio de embeddings de entrada.
 
@@ -72,7 +72,7 @@ Segun la model card, en cualquiera de los dos ratios de proximidad un valor infe
 - Cuantizacion a 8 bits: aproximadamente 1,3 GB; a 4 bits: aproximadamente 0,7 GB (estimaciones teoricas; no hay cuantizaciones oficiales publicadas en el repositorio).
 - Cabe sin problema en GPU de gama consumer: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 en fp32, y practicamente cualquier GPU con 4-8 GB en precision reducida.
 - GPU de centro de datos (A100, H100) solo tendrian sentido para evaluacion por lotes o despliegue de muchas replicas; el modelo queda muy por debajo de su capacidad.
-- Opciones de despliegue: transformers con `AutoModelForCausalLM` (ruta documentada por el autor); vLLM para servido con arquitectura OLMo2; llama.cpp u Ollama requeririan conversion previa a GGUF, no incluida en el repositorio. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: transformers con `AutoModelForCausalLM` (ruta documentada por el autor); vLLM para servido con arquitectura OLMo2; llama.cpp u Ollama requeririan conversion previa a GGUF, no incluida en el repositorio. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,10 +81,10 @@ La comparativa natural es contra los otros dos miembros de la terna emparejada d
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lment-1b-ai-ember-d500-b131k` (este) | 1,336 B | no disponible | Edicion EMBER, delta = 500, sobre control compartido | no disponible | HuggingFace, safetensors |
-| `lment-1b-control-2e-b131k` | no disponible | no disponible | Control completo, sin edicion de concepto | no disponible | HuggingFace, safetensors |
-| `lment-1b-noai-2e-b131k` | no disponible | no disponible | Gemelo entrenado con exclusion del concepto "AI" del corpus | no disponible | HuggingFace, safetensors |
-| OLMo2 1B (modelo base original) | ~1,3 B | no disponible en esta ficha | Entrenamiento estandar sobre corpus OLMo2 | licencia de OLMo2 (no verificada aqui) | HuggingFace / AllenAI |
+| `lment-1b-ai-ember-d500-b131k` (este) | 1,336 B | no disponible | Edicion EMBER, delta = 500, sobre control compartido | no disponible | Hugging Face, safetensors |
+| `lment-1b-control-2e-b131k` | no disponible | no disponible | Control completo, sin edicion de concepto | no disponible | Hugging Face, safetensors |
+| `lment-1b-noai-2e-b131k` | no disponible | no disponible | Gemelo entrenado con exclusion del concepto "AI" del corpus | no disponible | Hugging Face, safetensors |
+| OLMo2 1B (modelo base original) | ~1,3 B | no disponible en esta ficha | Entrenamiento estandar sobre corpus OLMo2 | licencia de OLMo2 (no verificada aqui) | Hugging Face / AllenAI |
 
 No se dispone de datos de rendimiento comparativo en benchmarks estandar para ninguno de los cuatro, por lo que la comparacion se limita al metodo de construccion, el formato y la disponibilidad.
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks estandar para ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-ai-ember-d500-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-ai-ember-d500-b131k
 - Modelo de control compartido: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusion de concepto: https://huggingface.co/itamarstahl/lment-1b-noai-2e-b131k
 - Articulo de referencia: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026. No se proporciona URL en la informacion disponible.

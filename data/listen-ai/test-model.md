@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Listen-AI/test-model es un repositorio publicado en HuggingFace por el usuario Listen-AI bajo licencia Apache 2.0 y con la etiqueta `onnx` entre sus tags. El repositorio ocupa 0,0 GB, acumula 0 descargas y 1 like, no declara pipeline de inferencia ni idiomas soportados, y su model card se limita al bloque de frontmatter con la licencia, sin texto descriptivo alguno. Todos los indicios disponibles apuntan a un repositorio de prueba o a un marcador de posición, no a un modelo entrenado y distribuido.
+Listen-AI/test-model es un repositorio publicado en Hugging Face por el usuario Listen-AI bajo licencia Apache 2.0 y con la etiqueta `onnx` entre sus tags. El repositorio ocupa 0,0 GB, acumula 0 descargas y 1 like, no declara pipeline de inferencia ni idiomas soportados, y su model card se limita al bloque de frontmatter con la licencia, sin texto descriptivo alguno. Todos los indicios disponibles apuntan a un repositorio de prueba o a un marcador de posición, no a un modelo entrenado y distribuido.
 
 La propia identificacion del repositorio (`test-model`) y el hecho de que las fechas de creacion y actualizacion (2026-09-14T12:20:34Z y 2026-09-14T12:25:18Z) esten separadas por menos de cinco minutos refuerzan esa lectura: se trata de una creacion de prueba sin contenido tecnico asociado. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha no puede documentar capacidades reales del artefacto. Su u
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. El repositorio no incluye fichas tecnicas, diagramas, referencias a papers ni descripcion de componentes (transformer, MoE, SSM, hibrido u otros). La unica senal estructural es la etiqueta `onnx`, que en HuggingFace suele indicar compatibilidad o conversion al formato ONNX Runtime, pero al no existir archivos en el repositorio (0,0 GB) no es posible verificar que se haya publicado un grafo ONNX real.
+No se ha publicado informacion sobre la arquitectura del modelo. El repositorio no incluye fichas tecnicas, diagramas, referencias a papers ni descripcion de componentes (transformer, MoE, SSM, hibrido u otros). La unica senal estructural es la etiqueta `onnx`, que en Hugging Face suele indicar compatibilidad o conversion al formato ONNX Runtime, pero al no existir archivos en el repositorio (0,0 GB) no es posible verificar que se haya publicado un grafo ONNX real.
 
 Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, y cualquier innovacion tecnica asociada. La model card unicamente contiene el bloque YAML con `license: apache-2.0`.
 
@@ -65,7 +65,7 @@ Dato objetivo de contexto: el tamano del repositorio es de 0,0 GB, lo que indica
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar alternativas comparables porque se desconoce la categoria del modelo (tamano, tarea, modalidad y arquitectura). Cualquier comparacion con modelos de texto, vision o audio seria arbitraria. Como referencia de categoria, en HuggingFace existen repositorios de prueba equivalentes, pero no constituyen una comparativa tecnica significativa.
+No disponible. No es posible identificar alternativas comparables porque se desconoce la categoria del modelo (tamano, tarea, modalidad y arquitectura). Cualquier comparacion con modelos de texto, vision o audio seria arbitraria. Como referencia de categoria, en Hugging Face existen repositorios de prueba equivalentes, pero no constituyen una comparativa tecnica significativa.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No disponible. No es posible identificar alternativas comparables porque se desc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Listen-AI/test-model
+- Hugging Face: https://huggingface.co/Listen-AI/test-model
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

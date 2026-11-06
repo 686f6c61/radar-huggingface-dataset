@@ -83,9 +83,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de raz
 
 | Modelo | Parámetros | Contexto | Resolución | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Kromoss | 5.082.308.624 (transformer, safetensors) | No disponible | 1024 px | Apache-2.0 | HuggingFace | Fine-tune completo; LoRA de 8 pasos; CLIP 27,82 con LoRA |
-| MOSS-Image-Base | No disponible | No disponible | No disponible | No disponible | HuggingFace | Base del fine-tune; CLIP 27,19 a 50 pasos y CFG 3 |
-| MOSS-Image-SFT | No disponible | No disponible | No disponible | No disponible | HuggingFace | Misma arquitectura y layout; Kromoss es reemplazo directo |
+| Kromoss | 5.082.308.624 (transformer, safetensors) | No disponible | 1024 px | Apache-2.0 | Hugging Face | Fine-tune completo; LoRA de 8 pasos; CLIP 27,82 con LoRA |
+| MOSS-Image-Base | No disponible | No disponible | No disponible | No disponible | Hugging Face | Base del fine-tune; CLIP 27,19 a 50 pasos y CFG 3 |
+| MOSS-Image-SFT | No disponible | No disponible | No disponible | No disponible | Hugging Face | Misma arquitectura y layout; Kromoss es reemplazo directo |
 
 No se dispone de datos verificables de alternativas como FLUX.2 o SD3.5 en la información proporcionada, por lo que no se incluyen cifras comparativas que no estén respaldadas. La comparación directa disponible es con la familia MOSS-Image.
 
@@ -106,7 +106,7 @@ No se dispone de datos verificables de alternativas como FLUX.2 o SD3.5 en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lodestones/Kromoss
+- Modelo en Hugging Face: https://huggingface.co/lodestones/Kromoss
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Repositorio MOSS-Image: https://github.com/OpenMOSS/MOSS-Image

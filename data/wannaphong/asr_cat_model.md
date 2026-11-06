@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wannaphong/asr_cat_model` es un repositorio de HuggingFace publicado por el usuario wannaphong cuyo contenido verificado se limita a un fichero de pesos en formato ONNX de aproximadamente 0,5 GB, distribuido bajo licencia Creative Commons Attribution 4.0 (CC-BY-4.0). La model card asociada no contiene documentacion tecnica: unicamente la declaracion de licencia en el frontmatter YAML. No se especifican pipeline, idiomas, arquitectura ni datos de entrenamiento.
+`wannaphong/asr_cat_model` es un repositorio de Hugging Face publicado por el usuario wannaphong cuyo contenido verificado se limita a un fichero de pesos en formato ONNX de aproximadamente 0,5 GB, distribuido bajo licencia Creative Commons Attribution 4.0 (CC-BY-4.0). La model card asociada no contiene documentacion tecnica: unicamente la declaracion de licencia en el frontmatter YAML. No se especifican pipeline, idiomas, arquitectura ni datos de entrenamiento.
 
 A partir del identificador del repositorio puede inferirse que se trata de un modelo de reconocimiento automatico del habla (ASR) orientado a catalan ("cat"), pero esta interpretacion **no esta confirmada por ninguna fuente oficial** y debe tratarse como una hipotesis de trabajo, no como un dato verificado. El repositorio no registra descargas ni "likes" en el momento de la consulta, lo que sugiere un artefacto de publicacion reciente o de uso puramente personal.
 
@@ -83,7 +83,7 @@ No disponible. Para establecer una comparativa seria es imprescindible conocer p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wannaphong/asr_cat_model
+- Repositorio en Hugging Face: https://huggingface.co/wannaphong/asr_cat_model
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
 - ONNX, formato de los pesos: https://onnx.ai/
 - ONNX Runtime, runtime de inferencia: https://onnxruntime.ai/

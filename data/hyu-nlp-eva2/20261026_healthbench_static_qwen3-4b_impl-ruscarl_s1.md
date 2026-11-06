@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (HealthBench static Qwen3-4B) | 4B | no disponible | no disponible | Ajuste por RL para rúbricas HealthBench | Checkpoints de investigación en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la información | no disponible en la información | Modelo generalista de instrucciones | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | no disponible en la información | no disponible en la información | Modelo generalista de instrucciones | HuggingFace |
-| Llama-3.2-3B-Instruct | 3B | no disponible en la información | no disponible en la información | Modelo generalista de instrucciones | HuggingFace |
+| Este repositorio (HealthBench static Qwen3-4B) | 4B | no disponible | no disponible | Ajuste por RL para rúbricas HealthBench | Checkpoints de investigación en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la información | no disponible en la información | Modelo generalista de instrucciones | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | no disponible en la información | no disponible en la información | Modelo generalista de instrucciones | Hugging Face |
+| Llama-3.2-3B-Instruct | 3B | no disponible en la información | no disponible en la información | Modelo generalista de instrucciones | Hugging Face |
 
 La comparación es solo orientativa por tamaño y enfoque. No se dispone de datos verificados de contexto, licencia o rendimiento de las alternativas en la información proporcionada, y este repositorio no publica benchmarks que permitan una comparación cuantitativa rigurosa.
 
@@ -103,6 +103,6 @@ La comparación es solo orientativa por tamaño y enfoque. No se dispone de dato
 
 ## Enlaces
 
-- [HuggingFace: HYU-NLP-EVA2/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1](https://huggingface.co/HYU-NLP-EVA2/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1)
+- [Hugging Face: HYU-NLP-EVA2/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1](https://huggingface.co/HYU-NLP-EVA2/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1)
 - [Colección de experimentos HealthBench Qwen3-4B](https://huggingface.co/collections/HYU-NLP-EVA2/20261027-healthbench-qwen3-4b-per-item-checkpoints-6adf71a8d93db25bb7ab22cb)
 - [Modelo base Qwen/Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)

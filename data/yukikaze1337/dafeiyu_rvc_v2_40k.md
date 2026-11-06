@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DaFeiYu_rvc_v2_40k es un modelo de conversión de voz (voice-to-voice) entrenado con el framework RVC v2 a 40 kHz, publicado por el usuario YukiKaze1337 en HuggingFace. No es un modelo de texto a voz ni un modelo de lenguaje: es un checkpoint de generador (`dafeiyu.pth`, 53 MB) más un índice faiss de recuperación de características (`added_IVF1314_Flat_nprobe_1_dafeiyu_v2.index`, 154 MB) que se usan junto con el pipeline de inferencia de RVC para transformar una locución o una interpretación cantada de entrada en la voz objetivo «大肥鱼» (Da Fei Yu).
+DaFeiYu_rvc_v2_40k es un modelo de conversión de voz (voice-to-voice) entrenado con el framework RVC v2 a 40 kHz, publicado por el usuario YukiKaze1337 en Hugging Face. No es un modelo de texto a voz ni un modelo de lenguaje: es un checkpoint de generador (`dafeiyu.pth`, 53 MB) más un índice faiss de recuperación de características (`added_IVF1314_Flat_nprobe_1_dafeiyu_v2.index`, 154 MB) que se usan junto con el pipeline de inferencia de RVC para transformar una locución o una interpretación cantada de entrada en la voz objetivo «大肥鱼» (Da Fei Yu).
 
 El interés técnico del artefacto está en su naturaleza de modelo de nicho y en los detalles de su entrenamiento: 227 fragmentos (~11,1 minutos) de audio sintético generado mecánicamente, no de una persona real, con f0 activado y exportado en un checkpoint de aproximadamente 2,33 millones de pasos. Es un caso representativo del ecosistema RVC, donde proliferan modelos de voz de pocos minutos de material, y sirve para evaluar la viabilidad de la conversión de voz con recursos mínimos y con material de partida libre de derechos de intérprete.
 
@@ -18,7 +18,7 @@ Relevante ahora sobre todo por dos motivos prácticos: ocupa menos de 0,2 GB en 
 | Longitud de contexto | No aplica: modelo audio-a-audio; la conversión se hace por segmentos/ventanas, no por contexto de tokens |
 | Tipos de cuantizacion | No disponible. Checkpoint en PyTorch (`.pth`, fp32); no se publican versiones fp16, GGUF ni ONNX |
 | Idiomas soportados | Chino (`zh`) según los metadatos; el material de entrenamiento es voz sintética en ese idioma |
-| Licencia | `mit` en los metadatos de HuggingFace, pero la model card restringe el uso a personal, aprendizaje, entretenimiento y creación derivada no comercial (contradicción no resuelta por el autor) |
+| Licencia | `mit` en los metadatos de Hugging Face, pero la model card restringe el uso a personal, aprendizaje, entretenimiento y creación derivada no comercial (contradicción no resuelta por el autor) |
 | Formato de pesos | `.pth` (PyTorch, `torch.load` con campos `weight/config/info/sr/f0/version`) + índice faiss `.index` |
 | Frecuencia de muestreo | 40 kHz |
 | Uso de f0 (pitch) | Sí, `f0=1`; el autor recomienda `rmvpe` como extractor de pitch |
@@ -74,8 +74,8 @@ Los datos de las alternativas no están verificados en la información proporcio
 
 | Modelo | Tipo | Frecuencia | Datos de entrenamiento | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DaFeiYu_rvc_v2_40k (este) | RVC v2, voz y canto, con f0 | 40 kHz | 227 clips sintéticos, ~11,1 min, 2,33 M pasos | Audio a audio por segmentos | `mit` en metadatos, uso no comercial en la card | HuggingFace, 0 descargas, 0 likes |
-| RVC v2 genérico (otros checkpoints de la comunidad) | RVC v2 | 32-48 kHz según checkpoint | Variable; habitualmente 10 min a varias horas | Audio a audio por segmentos | Variable por autor (MIT o restrictiva) | Amplia en HuggingFace |
+| DaFeiYu_rvc_v2_40k (este) | RVC v2, voz y canto, con f0 | 40 kHz | 227 clips sintéticos, ~11,1 min, 2,33 M pasos | Audio a audio por segmentos | `mit` en metadatos, uso no comercial en la card | Hugging Face, 0 descargas, 0 likes |
+| RVC v2 genérico (otros checkpoints de la comunidad) | RVC v2 | 32-48 kHz según checkpoint | Variable; habitualmente 10 min a varias horas | Audio a audio por segmentos | Variable por autor (MIT o restrictiva) | Amplia en Hugging Face |
 | So-VITS-SVC (4.x) | SVC con f0, orientado a canto | 44,1 kHz | Requiere dataset mayor para estabilidad | Audio a audio por segmentos | AGPL/otros según fork | Repositorios de la comunidad |
 | Modelos zero-shot de conversión de voz | Encoder + decoder con embeddings de hablante | 16-24 kHz típicamente | Corpus multihablante a gran escala | Audio a audio con referencia | Variable | Repositorios de investigación |
 
@@ -96,7 +96,7 @@ Diferencias destacables: este modelo es el más ligero y el más pobre en datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YukiKaze1337/DaFeiYu_rvc_v2_40k
+- Modelo en Hugging Face: https://huggingface.co/YukiKaze1337/DaFeiYu_rvc_v2_40k
 - Dataset y paper del modelo: no disponibles en la información proporcionada.
 - Blog o demo del autor: no disponibles.
 - Repositorio de referencia del framework (dependencia de ejecución, no enlazado por el autor): RVC — Retrieval-based-Voice-Conversion-WebUI, https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI

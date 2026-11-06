@@ -4,7 +4,7 @@
 
 TheWirelessPhoenix/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2-mlx_4bit es una conversión al formato MLX (Apple Silicon) en cuantización de 4 bits del modelo huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2. Este último es una variante "abliterated" (modificada para eliminar los mecanismos de rechazo de contenido) del modelo DeepSeek-R1-Distill-Qwen-14B, un modelo de razonamiento de 14 000 millones de parámetros destilado por DeepSeek a partir de su modelo R1. La conversión MLX permite ejecutar el modelo de forma eficiente en hardware de Apple mediante la librería mlx-lm, manteniendo las capacidades de razonamiento y generación de texto del original, pero sin los filtros de seguridad habituales.
 
-El modelo está dirigido a desarrolladores e investigadores que necesitan un LLM de razonamiento con capacidad de generar contenido sin censura en entornos locales de Apple. Al estar cuantizado a 4 bits, el tamaño del repositorio es de 8,3 GB, lo que facilita su despliegue en equipos con memoria unificada moderada. La arquitectura base es Qwen2, con una ventana de contexto que no se especifica en la información disponible, aunque el modelo original soporta 32 768 tokens. La licencia no está declarada en la ficha de HuggingFace, aunque el modelo base DeepSeek-R1-Distill-Qwen-14B se distribuye bajo MIT; la versión abliterated puede tener restricciones adicionales.
+El modelo está dirigido a desarrolladores e investigadores que necesitan un LLM de razonamiento con capacidad de generar contenido sin censura en entornos locales de Apple. Al estar cuantizado a 4 bits, el tamaño del repositorio es de 8,3 GB, lo que facilita su despliegue en equipos con memoria unificada moderada. La arquitectura base es Qwen2, con una ventana de contexto que no se especifica en la información disponible, aunque el modelo original soporta 32 768 tokens. La licencia no está declarada en la ficha de Hugging Face, aunque el modelo base DeepSeek-R1-Distill-Qwen-14B se distribuye bajo MIT; la versión abliterated puede tener restricciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -77,9 +77,9 @@ La conversión MLX se diferencia de las alternativas GGUF por estar optimizada p
 
 ## Enlaces
 
-- [HuggingFace - TheWirelessPhoenix/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2-mlx_4bit](https://huggingface.co/TheWirelessPhoenix/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2-mlx_4bit)
-- [HuggingFace - huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2](https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2)
-- [HuggingFace - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B)
+- [Hugging Face - TheWirelessPhoenix/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2-mlx_4bit](https://huggingface.co/TheWirelessPhoenix/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2-mlx_4bit)
+- [Hugging Face - huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2](https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2)
+- [Hugging Face - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B)
 - [GitHub - DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)
 - [NVIDIA NIM - deepseek-r1-distill-qwen-14b](https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-qwen-14b)
 - [Sitio oficial de DeepSeek](https://deepseek.com/en/index.html)

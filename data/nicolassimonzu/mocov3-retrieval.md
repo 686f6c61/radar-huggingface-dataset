@@ -73,5 +73,5 @@ No disponible. No se han encontrado modelos comparables en el repositorio ni en 
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/nicolassimonzu/mocov3-retrieval](https://huggingface.co/nicolassimonzu/mocov3-retrieval)
+- Hugging Face: [https://huggingface.co/nicolassimonzu/mocov3-retrieval](https://huggingface.co/nicolassimonzu/mocov3-retrieval)
 - No se han encontrado papers, blogs, demos ni otros enlaces relevantes en la informacion proporcionada.

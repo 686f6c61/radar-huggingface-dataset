@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en el contexto de esta c
 
 ## Enlaces
 
-- [HuggingFace - mradermacher/Qwen3.8-27B-Abliterated-SFT-GGUF](https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-SFT-GGUF)
+- [Hugging Face - mradermacher/Qwen3.8-27B-Abliterated-SFT-GGUF](https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-SFT-GGUF)
 - [Modelo base: azukivc/Qwen3.8-27B-Abliterated-SFT](https://huggingface.co/azukivc/Qwen3.8-27B-Abliterated-SFT)
 - [Otro repo del mismo autor con licencia Apache-2.0](https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF)
 - [GitHub de un usuario con el mismo modelo](https://github.com/Wassimyounes01/qwen38-uncensored)

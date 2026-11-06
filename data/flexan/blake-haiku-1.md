@@ -82,6 +82,6 @@ Blake Haiku 1 es un fine-tuning sobre Qwen3-0.6B, por lo que comparte la misma a
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Flexan/Blake-Haiku-1)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Flexan)
+- [Modelo en Hugging Face](https://huggingface.co/Flexan/Blake-Haiku-1)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Flexan)
 - [Modelo base: Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)

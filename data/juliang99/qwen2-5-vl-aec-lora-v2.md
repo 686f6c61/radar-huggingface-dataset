@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `julianG99/qwen2.5-vl-aec-lora-v2` es un adaptador LoRA (Low-Rank Adaptation) alojado en HuggingFace por el usuario julianG99. Por la nomenclatura del identificador, se trata de un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-VL, la familia de modelos multimodales (visión-lenguaje) desarrollada por Alibaba Qwen. El sufijo "aec" sugiere una especialización en un dominio concreto (posiblemente arquitectura, ingeniería o construcción, aunque no se confirma en la model card).
+El repositorio `julianG99/qwen2.5-vl-aec-lora-v2` es un adaptador LoRA (Low-Rank Adaptation) alojado en Hugging Face por el usuario julianG99. Por la nomenclatura del identificador, se trata de un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-VL, la familia de modelos multimodales (visión-lenguaje) desarrollada por Alibaba Qwen. El sufijo "aec" sugiere una especialización en un dominio concreto (posiblemente arquitectura, ingeniería o construcción, aunque no se confirma en la model card).
 
-La model card del repositorio es la plantilla automática generada por HuggingFace y no contiene información sustantiva: no se especifican datos de entrenamiento, hiperparámetros, dataset utilizado, licencia ni idiomas. El tamaño del repositorio (0,8 GB) es coherente con un adaptador LoRA de rango bajo sobre un modelo de varios miles de millones de parámetros, no con un modelo completo.
+La model card del repositorio es la plantilla automática generada por Hugging Face y no contiene información sustantiva: no se especifican datos de entrenamiento, hiperparámetros, dataset utilizado, licencia ni idiomas. El tamaño del repositorio (0,8 GB) es coherente con un adaptador LoRA de rango bajo sobre un modelo de varios miles de millones de parámetros, no con un modelo completo.
 
 La relevancia de esta ficha es limitada: el modelo no registra descargas ni interacciones, no tiene pipeline declarado y carece de documentación técnica. Se trata de un artefacto experimental o de uso personal, no de un modelo listo para producción.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| julianG99/qwen2.5-vl-aec-lora-v2 | no disponible (adaptador LoRA) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-VL (base, Alibaba) | variantes 3B/7B/72B | hasta 128K en algunas variantes (no confirmado aquí) | Apache 2.0 en la mayoría de variantes | HuggingFace, ampliamente usado |
-| LLaVA-OneVision (LLM) | variantes 0.5B-72B | hasta 32K en algunas variantes | Apache 2.0 / otras según variante | HuggingFace |
-| InternVL2.5 (Shanghai AI Lab) | variantes 1B-78B | hasta 128K en algunas variantes | MIT / otras según variante | HuggingFace |
+| julianG99/qwen2.5-vl-aec-lora-v2 | no disponible (adaptador LoRA) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-VL (base, Alibaba) | variantes 3B/7B/72B | hasta 128K en algunas variantes (no confirmado aquí) | Apache 2.0 en la mayoría de variantes | Hugging Face, ampliamente usado |
+| LLaVA-OneVision (LLM) | variantes 0.5B-72B | hasta 32K en algunas variantes | Apache 2.0 / otras según variante | Hugging Face |
+| InternVL2.5 (Shanghai AI Lab) | variantes 1B-78B | hasta 128K en algunas variantes | MIT / otras según variante | Hugging Face |
 
 La comparación directa no es posible porque el adaptador no declara su modelo base exacto ni su rendimiento.
 
@@ -81,6 +81,6 @@ La comparación directa no es posible porque el adaptador no declara su modelo b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julianG99/qwen2.5-vl-aec-lora-v2
+- Hugging Face: https://huggingface.co/julianG99/qwen2.5-vl-aec-lora-v2
 - Modelo base Qwen2.5-VL (referencia, no enlazado en la model card): https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Paper de referencia de la calculadora de impacto (citado en la plantilla): https://arxiv.org/abs/1910.09700

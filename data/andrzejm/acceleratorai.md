@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AndrzejM/acceleratorAI es un repositorio de modelo publicado en HuggingFace por el usuario AndrzejM. La informacion disponible en su pagina publica se limita a metadatos basicos: licencia MIT, etiqueta de region "us", cero descargas y un "like", sin pipeline declarado, sin idiomas declarados y con un tamano de repositorio de 0.0 GB. La model card no contiene ninguna documentacion tecnica: unicamente la linea de frontmatter con la licencia MIT.
+AndrzejM/acceleratorAI es un repositorio de modelo publicado en Hugging Face por el usuario AndrzejM. La informacion disponible en su pagina publica se limita a metadatos basicos: licencia MIT, etiqueta de region "us", cero descargas y un "like", sin pipeline declarado, sin idiomas declarados y con un tamano de repositorio de 0.0 GB. La model card no contiene ninguna documentacion tecnica: unicamente la linea de frontmatter con la licencia MIT.
 
 Esto significa que no hay informacion publica verificable sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, formatos de pesos o capacidades. El nombre del repositorio sugiere alguna relacion con aceleracion (ya sea aceleracion de hardware, optimizacion de inferencia o un modelo "acelerador" de algun tipo de tarea), pero se trata de una inferencia nominal sin respaldo documental, por lo que no debe tomarse como un dato tecnico.
 
@@ -98,5 +98,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AndrzejM/acceleratorAI
+- Hugging Face: https://huggingface.co/AndrzejM/acceleratorAI
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

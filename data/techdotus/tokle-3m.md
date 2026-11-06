@@ -99,7 +99,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras evaluacione
 
 | Modelo | Parametros | Contexto | Int Index | HellaSwag | ARC-Challenge | PIQA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Tokle-3M (Tech.us) | 2,91M | 512 tokens | 8,92 | 27,20% | 23,98% | 55,01% | MIT | HuggingFace, safetensors |
+| Tokle-3M (Tech.us) | 2,91M | 512 tokens | 8,92 | 27,20% | 23,98% | 55,01% | MIT | Hugging Face, safetensors |
 | Ember-2 (SurjoLabs) | 2,96M x2 | no disponible | 7,21 | 27,28% | 22,01% | 55,11% | no disponible | no disponible |
 | BananaMind-2-Micro (BananaMind) | 2,9M | no disponible | 6,01 | 28,27% | 21,93% | 53,21% | no disponible | no disponible |
 | GPT-S-1.4M (Axiomic Labs) | 1,4M | no disponible | 5,40 | 26,89% | 21,93% | 55,17% | no disponible | no disponible |
@@ -120,7 +120,7 @@ Los datos de rendimiento de los modelos comparados proceden de Open SLM Leaderbo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/techdotus/Tokle-3M
+- Modelo en Hugging Face: https://huggingface.co/techdotus/Tokle-3M
 - Modelo intermedio con SPAB activo: https://huggingface.co/techdotus/Tokle-SPAB-3M
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset Cosmopedia: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia

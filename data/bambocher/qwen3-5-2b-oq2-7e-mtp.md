@@ -6,7 +6,7 @@
 
 El interés técnico está en su estrategia de cuantización: el 58,7 % de los pesos lógicos se almacenan en 2 bits afines con grupo de 64, mientras que la torre de visión y parte de las capas sensibles se mantienen en BF16. El resultado es un peso efectivo medio de 5,375 bits por parámetro y un repositorio de 1,5 GB para 2.274 millones de parámetros totales. Frente a una cuantización uniforme de 4 bits, este esquema reduce el tamaño a costa de concentrar la pérdida de precisión en el modelo de lenguaje.
 
-Es relevante ahora porque la serie Qwen3.5 apunta a inferencia en dispositivo con capacidades multimodales, y este checkpoint demuestra hasta dónde se puede comprimir un modelo de 2B sin descartar visión ni la cabeza MTP. Ahora bien, se trata de una publicación con 10 descargas y 0 likes, sin benchmarks propios ni licencia declarada en la ficha de HuggingFace, por lo que debe evaluarse con cautela antes de cualquier uso en producción.
+Es relevante ahora porque la serie Qwen3.5 apunta a inferencia en dispositivo con capacidades multimodales, y este checkpoint demuestra hasta dónde se puede comprimir un modelo de 2B sin descartar visión ni la cabeza MTP. Ahora bien, se trata de una publicación con 10 descargas y 0 likes, sin benchmarks propios ni licencia declarada en la ficha de Hugging Face, por lo que debe evaluarse con cautela antes de cualquier uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ La comparacion con modelos de otras familias (por ejemplo, Qwen3-VL o alternativ
 
 - La cuantizacion es muy agresiva en el modelo de lenguaje: el 58,7 % de los pesos estan en 2 bits, lo que previsiblemente degrada el razonamiento, las matematicas y la fidelidad de la generacion frente al BF16 original. No hay evaluacion publicada que cuantifique esa perdida.
 - La cabeza MTP puede no ser aprovechada por todos los runtimes; sin soporte explicito, se comporta como un peso muerto y el beneficio de velocidad desaparece.
-- Licencia no declarada en la ficha de HuggingFace: no se puede asumir uso comercial libre. Es necesario verificar la licencia del Qwen3.5-2B original antes de cualquier despliegue productivo.
+- Licencia no declarada en la ficha de Hugging Face: no se puede asumir uso comercial libre. Es necesario verificar la licencia del Qwen3.5-2B original antes de cualquier despliegue productivo.
 - Riesgo de alucinacion inherente a un modelo de 2B, agravado por la cuantizacion a 2 bits en la mayoria de las capas.
 - Idiomas y cobertura linguistica no documentados para este checkpoint; el comportamiento multilingue es una herencia declarada de la serie, no una garantia verificada.
 - Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin medirla.
@@ -91,7 +91,7 @@ La comparacion con modelos de otras familias (por ejemplo, Qwen3-VL o alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ2.7e-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ2.7e-mtp
 - Variante de mayor precision del mismo autor: https://huggingface.co/bambocher/Qwen3.5-2B-oQ8e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b

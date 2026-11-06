@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dioleti/olov8m-doclaynet es un modelo de deteccion de objetos publicado en HuggingFace por el usuario Dioleti. Se trata de un ajuste fino (finetune) derivado del modelo hantian/yolo-doclaynet, que a su vez es un YOLO entrenado sobre DocLayNet, un corpus de imagenes de documentos con anotaciones de estructura de pagina. Por tanto, el proposito del modelo es el analisis de maquetacion documental: localizar y clasificar regiones como texto, titulos, tablas, figuras o encabezados dentro de una pagina escaneada o renderizada.
+Dioleti/olov8m-doclaynet es un modelo de deteccion de objetos publicado en Hugging Face por el usuario Dioleti. Se trata de un ajuste fino (finetune) derivado del modelo hantian/yolo-doclaynet, que a su vez es un YOLO entrenado sobre DocLayNet, un corpus de imagenes de documentos con anotaciones de estructura de pagina. Por tanto, el proposito del modelo es el analisis de maquetacion documental: localizar y clasificar regiones como texto, titulos, tablas, figuras o encabezados dentro de una pagina escaneada o renderizada.
 
 La relevancia de este tipo de modelos es practica: el analisis de maquetacion es el primer paso de cualquier pipeline de document AI (extraccion de informacion de facturas, digitalizacion de archivos, conversion de PDF a estructuras semiestructuradas) y suele resolverse con detectores ligeros como la familia YOLO en lugar de con transformers multimodales mucho mas costosos. Al estar basado en YOLOv8m, el modelo se situa en la gama media de la familia en cuanto a compromiso precision/velocidad.
 
@@ -20,9 +20,9 @@ La informacion publicada por el autor es minima: la model card se limita a indic
 | Idiomas soportados | no disponible (no es un modelo de lenguaje; las etiquetas de clase serian en ingles por herencia de DocLayNet, sin confirmar) |
 | Licencia | agpl-3.0 |
 | Formato de pesos | no disponible (el repositorio ocupa 0,1 GB, compatible con pesos tipo PyTorch/Ultralytics, dato no confirmado) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Modelo base | hantian/yolo-doclaynet (finetune) |
-| Fecha de publicacion | 2026-10-16 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-16 (segun metadatos de Hugging Face) |
 | Region declarada | us |
 
 ## Arquitectura y entrenamiento
@@ -71,8 +71,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa. La tabla s
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dioleti/olov8m-doclaynet | Deteccion de layout documental (finetune) | no disponible | no aplica | agpl-3.0 | HuggingFace, 0 descargas, 0 likes |
-| hantian/yolo-doclaynet (modelo base) | Deteccion de layout documental | no disponible | no aplica | no disponible | HuggingFace (referenciado como base) |
+| Dioleti/olov8m-doclaynet | Deteccion de layout documental (finetune) | no disponible | no aplica | agpl-3.0 | Hugging Face, 0 descargas, 0 likes |
+| hantian/yolo-doclaynet (modelo base) | Deteccion de layout documental | no disponible | no aplica | no disponible | Hugging Face (referenciado como base) |
 | Alternativas de layout analysis (LayoutLMv3, DiT, Detectron2 sobre DocLayNet) | Deteccion o clasificacion de layout | no disponible | no disponible | no disponible | mencionadas como categoria, sin datos en la informacion recibida |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. La tabla s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dioleti/olov8m-doclaynet
+- Modelo en Hugging Face: https://huggingface.co/Dioleti/olov8m-doclaynet
 - Modelo base: https://huggingface.co/hantian/yolo-doclaynet
 - Dataset DocLayNet (referencia del modelo base): https://huggingface.co/datasets/ds4sd/DocLayNet
 - Repositorio del dataset y benchmarks de layout analysis de IBM (referencia): https://github.com/DS4SD/DocLayNet

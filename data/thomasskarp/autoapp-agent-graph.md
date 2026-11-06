@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thomasskarp/autoapp-agent-graph` no es un modelo de lenguaje con pesos propios, sino un blueprint de arquitectura y una "system card" que describe una maquina de estados multi-agente determinista para flujos B2B del sector automocion. El repositorio se publica en HuggingFace con `library_name: nextjs` y `pipeline_tag: text-generation`, pero no distribuye safetensors, GGUF ni ningun artefacto de inferencia: lo que contiene es codigo TypeScript, un grafo de agentes documentado y una interfaz de estado tipada (`AutoAppState`) validada con Zod.
+`thomasskarp/autoapp-agent-graph` no es un modelo de lenguaje con pesos propios, sino un blueprint de arquitectura y una "system card" que describe una maquina de estados multi-agente determinista para flujos B2B del sector automocion. El repositorio se publica en Hugging Face con `library_name: nextjs` y `pipeline_tag: text-generation`, pero no distribuye safetensors, GGUF ni ningun artefacto de inferencia: lo que contiene es codigo TypeScript, un grafo de agentes documentado y una interfaz de estado tipada (`AutoAppState`) validada con Zod.
 
 El problema que aborda es el fallo no lineal de los prompts monoliticos: cuando una sola llamada al LLM debe extraer datos, valorar un vehiculo, aplicar un margen comercial y redactar anuncios, la probabilidad de exito es el producto de las probabilidades de cada subtarea. La propuesta del autor es deconstruir ese mega-prompt en siete nodos aislados con contexto minimo ("clean-context workers"), gates de verificacion adversarial y un punto de control con intervencion humana (HITL) antes de cualquier mutacion en base de datos.
 
@@ -123,7 +123,7 @@ Diferencias clave: los tres frameworks alternativos son genericos y agnosticos a
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/thomasskarp/autoapp-agent-graph
+- Model card en Hugging Face: https://huggingface.co/thomasskarp/autoapp-agent-graph
 - Repositorio GitHub: https://github.com/thomasskarp/autoapp
 - Mapa de arquitectura del grafo de agentes (AGENT_GRAPH.md): https://github.com/thomasskarp/autoapp/blob/main/AGENT_GRAPH.md
 - Papers, blogs o demos adicionales: no disponible en la informacion proporcionada.

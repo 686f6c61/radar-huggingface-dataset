@@ -4,7 +4,7 @@
 
 Kimi K2.7 Code es un modelo de lenguaje agéntico especializado en programación, desarrollado por Moonshot AI como evolución de Kimi K2.6. Está diseñado para tareas de codificación de largo horizonte, integración con herramientas y flujos de trabajo agénticos completos, mejorando la finalización de tareas de extremo a extremo en ingeniería de software compleja. Según la model card, reduce el uso de tokens de razonamiento en aproximadamente un 30 % respecto a su predecesor, lo que mejora la eficiencia en coste y latencia.
 
-El modelo emplea una arquitectura Mixture-of-Experts (MoE) con 1 billón de parámetros totales y 32 mil millones activos por token, con una ventana de contexto de 256 000 tokens. Es nativamente multimodal, ya que incorpora un codificador de visión (MoonViT) de 400 millones de parámetros, lo que le permite procesar imágenes además de texto. La licencia es modified-mit, que permite uso comercial, y los pesos están disponibles en formato safetensors. El repositorio en HuggingFace (stgallenquants/Kimi-K2.7-Code) es una re-subida del modelo original de Moonshot AI, que también está disponible en moonshotai/Kimi-K2.7-Code.
+El modelo emplea una arquitectura Mixture-of-Experts (MoE) con 1 billón de parámetros totales y 32 mil millones activos por token, con una ventana de contexto de 256 000 tokens. Es nativamente multimodal, ya que incorpora un codificador de visión (MoonViT) de 400 millones de parámetros, lo que le permite procesar imágenes además de texto. La licencia es modified-mit, que permite uso comercial, y los pesos están disponibles en formato safetensors. El repositorio en Hugging Face (stgallenquants/Kimi-K2.7-Code) es una re-subida del modelo original de Moonshot AI, que también está disponible en moonshotai/Kimi-K2.7-Code.
 
 Este modelo resulta relevante porque combina capacidades de razonamiento agéntico con soporte nativo para herramientas (tool calling) y protocolo MCP (Model Context Protocol), lo que lo posiciona como una opción open source para construir asistentes de programación autónomos, con un rendimiento que compite con modelos propietarios de última generación en benchmarks de codificación y agencia, aunque sin alcanzar sus puntuaciones más altas.
 
@@ -96,8 +96,8 @@ En cuanto a modelos propietarios, GPT-5.5 y Claude Opus 4.8 superan a K2.7 Code 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (re-subida): https://huggingface.co/stgallenquants/Kimi-K2.7-Code
-- Repositorio original en HuggingFace (Moonshot AI): https://huggingface.co/moonshotai/Kimi-K2.7-Code
+- Repositorio en Hugging Face (re-subida): https://huggingface.co/stgallenquants/Kimi-K2.7-Code
+- Repositorio original en Hugging Face (Moonshot AI): https://huggingface.co/moonshotai/Kimi-K2.7-Code
 - Página de recursos de Kimi K2.7 Code: https://www.kimi.ai/resources/kimi-k2-7-code
 - Documentación de la API de Kimi: https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart
 - Sitio informativo sobre el modelo: https://kimik2ai.com/k2.7/

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Tipo | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B (base) | 0.6B | 32K | Apache 2.0 | Denso | HuggingFace |
-| Qwen2.5-0.5B (base) | 0.5B | 32K | Apache 2.0 | Denso | HuggingFace |
-| Este adaptador (LoRA) | ~0.6B + adaptador | 32K | No disponible | Adaptador LoRA | HuggingFace |
+| Qwen3-0.6B (base) | 0.6B | 32K | Apache 2.0 | Denso | Hugging Face |
+| Qwen2.5-0.5B (base) | 0.5B | 32K | Apache 2.0 | Denso | Hugging Face |
+| Este adaptador (LoRA) | ~0.6B + adaptador | 32K | No disponible | Adaptador LoRA | Hugging Face |
 
 La comparativa se limita a modelos base de tamano similar, ya que no se dispone de informacion sobre otros adaptadores LoRA con el mismo proposito. El adaptador no altera la arquitectura del base, por lo que su rendimiento dependera de la calidad del fine-tuning, que no ha sido documentada.
 

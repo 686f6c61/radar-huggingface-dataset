@@ -92,11 +92,11 @@ La comparación relevante aquí no es de rendimiento bruto, sino de diseño expe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-20b
+- Repositorio en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-20b
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-coding
 - Dataset original de LeetCode: https://huggingface.co/datasets/newfacade/LeetCodeDataset
 - Código del artículo: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - `tinker-cookbook`: https://github.com/thinking-machines-lab/tinker-cookbook
-- Guía de exportación a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guía de exportación a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
 - Resultados de búsqueda web: no se han encontrado enlaces adicionales relevantes al modelo en la información proporcionada.

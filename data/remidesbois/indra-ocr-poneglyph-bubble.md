@@ -72,9 +72,9 @@ Esta release frente a producción: 277 frente a 362 errores de carácter, con un
 
 | Modelo | Tipo | Parametros / tamano | Contexto | CER (test del autor) | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| Indra OCR Poneglyph Bubble | Detector + CTC ONNX | ~5,4 MB | No aplica | 0,690 % | indra-ocr-openrail-m | HuggingFace |
+| Indra OCR Poneglyph Bubble | Detector + CTC ONNX | ~5,4 MB | No aplica | 0,690 % | indra-ocr-openrail-m | Hugging Face |
 | YOLO lines + PP-OCRv6 | Detector + OCR | No disponible | No aplica | 0,902 % | No disponible | Pipeline de producción de Poneglyph |
-| Indra OCR original (datalab-to/indra-ocr) | Detector + CTC | No disponible | No aplica | 1,084 % (con rec fine-tuned) | indra-ocr-openrail-m | HuggingFace |
+| Indra OCR original (datalab-to/indra-ocr) | Detector + CTC | No disponible | No aplica | 1,084 % (con rec fine-tuned) | indra-ocr-openrail-m | Hugging Face |
 
 La comparativa se limita a las alternativas evaluadas por el autor en el mismo conjunto de test; no se dispone de datos de otros OCR de manga comparables en la información proporcionada.
 
@@ -92,7 +92,7 @@ La comparativa se limita a las alternativas evaluadas por el autor en el mismo c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remidesbois/indra-ocr-poneglyph-bubble
+- Modelo en Hugging Face: https://huggingface.co/Remidesbois/indra-ocr-poneglyph-bubble
 - Modelo base Indra OCR: https://huggingface.co/datalab-to/indra-ocr
 - Proyecto Poneglyph: https://poneglyph.fr
 - Datalab: https://www.datalab.to

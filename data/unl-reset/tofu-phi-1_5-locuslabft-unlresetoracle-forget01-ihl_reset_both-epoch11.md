@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch11 (este) | 1.418 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de *unlearning* sobre TOFU |
-| locuslab/tofu_ft_phi-1.5 | ~1.400 M | no disponible | no disponible en esta ficha | HuggingFace | Modelo base ajustado a TOFU antes del olvido |
-| microsoft/phi-1_5 | 1.300 M | 2048 | MIT (según la model card original) | HuggingFace, ampliamente usado | Modelo original de código y texto |
-| locuslab/tofu_llama2-7b | ~7.000 M | no disponible | no disponible en esta ficha | HuggingFace | Alternativa de mayor tamaño para experimentos TOFU |
+| unl-reset/tofu-phi-1_5-...-epoch11 (este) | 1.418 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de *unlearning* sobre TOFU |
+| locuslab/tofu_ft_phi-1.5 | ~1.400 M | no disponible | no disponible en esta ficha | Hugging Face | Modelo base ajustado a TOFU antes del olvido |
+| microsoft/phi-1_5 | 1.300 M | 2048 | MIT (según la model card original) | Hugging Face, ampliamente usado | Modelo original de código y texto |
+| locuslab/tofu_llama2-7b | ~7.000 M | no disponible | no disponible en esta ficha | Hugging Face | Alternativa de mayor tamaño para experimentos TOFU |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch11](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch11)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch11](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch11)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - TOFU dataset y paper: no disponible en la información proporcionada

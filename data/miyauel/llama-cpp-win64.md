@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Miyauel/llama-cpp-win64
+- Repositorio en Hugging Face: https://huggingface.co/Miyauel/llama-cpp-win64
 - Proyecto Meari: https://github.com/Miyauel/Meari
 - llama.cpp upstream: https://github.com/ggml-org/llama.cpp
 - Commit empaquetado: https://github.com/ggml-org/llama.cpp/tree/0c1e57098bba43ac29e6e3b677cdceebdd22334f

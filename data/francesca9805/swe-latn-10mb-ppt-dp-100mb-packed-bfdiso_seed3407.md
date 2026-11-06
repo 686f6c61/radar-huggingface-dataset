@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `goldfish-models/swe_latn_10mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, un tamano muy reducido que lo situa en la categoria de modelos pequenos orientados a investigacion y experimentacion, no a produccion de alta demanda.
+El modelo `francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `goldfish-models/swe_latn_10mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, un tamano muy reducido que lo situa en la categoria de modelos pequenos orientados a investigacion y experimentacion, no a produccion de alta demanda.
 
 El modelo base pertenece a la familia Goldfish, una coleccion de modelos mono-idioma entrenados por separado para distintas lenguas del mundo. En este caso, el sufijo `swe_latn` indica que el modelo esta especializado en sueco escrito en alfabeto latino, y el sufijo `10mb` hace referencia al volumen de datos de entrenamiento del modelo original (10 MB de texto). El ajuste fino se ha realizado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 39.087.104 | no disponible | sueco (heredado del base) | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/swe_latn_10mb (modelo base) | no disponible | no disponible | sueco (alfabeto latino) | no disponible | HuggingFace |
+| francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 39.087.104 | no disponible | sueco (heredado del base) | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/swe_latn_10mb (modelo base) | no disponible | no disponible | sueco (alfabeto latino) | no disponible | Hugging Face |
 | GPT-2 small (referencia de la arquitectura) | 124.000.000 (aprox.) | 1.024 tokens (aprox.) | ingles principalmente | MIT | ampliamente disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada. La comparacion se limita a parametros, contexto declarado y licencia.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/swe_latn_10mb
 - Libreria TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/yzxuu6td

@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-i1-GGUF
 - Modelo base original: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma
 - Repositorio de cuantizaciones estaticas (con mmproj): https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-GGUF
 - Pagina de ayuda del autor: https://huggingface.co/mradermacher/model_requests

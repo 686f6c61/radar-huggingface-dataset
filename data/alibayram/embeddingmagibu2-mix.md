@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Embeddingmagibu2-mix es un modelo de embeddings de frases (bi-encoder) publicado por el usuario alibayram en HuggingFace, derivado mediante fine-tuning de google/embeddinggemma-2. Con 744.371.512 parametros (aproximadamente 744 M) y formato de pesos safetensors, esta pensado para tareas de sentence-similarity, feature-extraction y recuperacion de informacion (retrieval), con un enfasis declarado en turco dentro de un contexto multilingue.
+Embeddingmagibu2-mix es un modelo de embeddings de frases (bi-encoder) publicado por el usuario alibayram en Hugging Face, derivado mediante fine-tuning de google/embeddinggemma-2. Con 744.371.512 parametros (aproximadamente 744 M) y formato de pesos safetensors, esta pensado para tareas de sentence-similarity, feature-extraction y recuperacion de informacion (retrieval), con un enfasis declarado en turco dentro de un contexto multilingue.
 
 El modelo se distribuye a traves de la libreria sentence-transformers y su pipeline declarado es sentence-similarity, lo que lo situa en la categoria de modelos de representacion densa: convierte texto en vectores que permiten comparar significados mediante similitud coseno o producto escalar. Entre sus etiquetas aparece tokenizer-surgery, lo que indica que se han modificado componentes del tokenizador respecto al modelo base, presumiblemente para adaptarlo mejor al turco.
 
@@ -25,7 +25,7 @@ Su relevancia practica es acotada pero concreta: es un candidato para pipelines 
 | Pipeline | sentence-similarity |
 | Modelo base | google/embeddinggemma-2 |
 | Tamano del repositorio | 65,5 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia (calculo a partir de los 744 M de parametros): aproximadamente 3,0 GB en FP32, 1,5 GB en FP16/BF16, 0,8 GB en INT8 y 0,4 GB en INT4, sin contar activaciones ni memoria del tokenizador.
 - Cabe en GPU de consumo: cualquier tarjeta con 4 GB o mas de VRAM (por ejemplo, RTX 3050, RTX 3060, RTX 4060, RTX 4090) es suficiente para inferencia en FP16 con lotes moderados. Tambien puede ejecutarse en CPU para cargas de baja concurrencia.
 - GPU recomendadas para produccion: T4, L4 o A10G para servicios de embeddings con concurrencia moderada; A100 o H100 cuando se necesita procesar grandes volumenes por lote o mantener un throughput alto con secuencias largas.
-- Opciones de despliegue: sentence-transformers y transformers para uso directo en Python; Text Embeddings Inference (TEI) para servir el modelo como API; integracion con frameworks de orquestacion de RAG. La etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de inferencia de HuggingFace.
+- Opciones de despliegue: sentence-transformers y transformers para uso directo en Python; Text Embeddings Inference (TEI) para servir el modelo como API; integracion con frameworks de orquestacion de RAG. La etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de inferencia de Hugging Face.
 - No se declaran pesos GGUF en el repositorio, por lo que llama.cpp u Ollama requeririan una conversion previa que no esta documentada.
 - Latencia y throughput: no disponible.
 - Nota de almacenamiento: el repositorio ocupa 65,5 GB, muy por encima de lo que ocuparian los pesos de un modelo de 744 M en FP16 (aproximadamente 1,5 GB). Conviene revisar el contenido del repositorio antes de descargarlo completo y seleccionar unicamente los ficheros necesarios.
@@ -75,7 +75,7 @@ Los datos de las alternativas que figuran a continuacion no provienen de la info
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alibayram/embeddingmagibu2-mix | 744 M | no disponible | turco y multilingue | apache-2.0 (base Gemma) | gated en HuggingFace |
+| alibayram/embeddingmagibu2-mix | 744 M | no disponible | turco y multilingue | apache-2.0 (base Gemma) | gated en Hugging Face |
 | google/embeddinggemma-2 | no disponible en la informacion proporcionada | no disponible | multilingue | terminos de uso de Gemma | publico |
 | BAAI/bge-m3 | aproximadamente 568 M (referencia externa) | 8.192 tokens (referencia externa) | multilingue | MIT (referencia externa) | publico |
 | intfloat/multilingual-e5-large | aproximadamente 560 M (referencia externa) | 512 tokens (referencia externa) | multilingue | MIT (referencia externa) | publico |
@@ -84,7 +84,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo esta en modo gated y requiere aceptar condiciones en HuggingFace antes de poder descargarlo, lo que complica la automatizacion de pipelines de CI/CD.
+- Acceso restringido: el modelo esta en modo gated y requiere aceptar condiciones en Hugging Face antes de poder descargarlo, lo que complica la automatizacion de pipelines de CI/CD.
 - Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta. No hay evidencia externa de calidad ni evaluaciones independientes.
 - Licencia del modelo base: aunque el repositorio declara apache-2.0, google/embeddinggemma-2 se distribuye bajo los terminos de uso de Gemma. Conviene verificar la compatibilidad de esas condiciones con el uso comercial previsto antes de desplegarlo en produccion.
 - Sin datos de contexto ni de dimension de embedding: no es posible planificar el troceado de documentos ni el dimensionado del indice vectorial sin inspeccionar los ficheros del repositorio.
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibayram/embeddingmagibu2-mix
+- Modelo en Hugging Face: https://huggingface.co/alibayram/embeddingmagibu2-mix
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Referencia arXiv declarada en las etiquetas del repositorio (arxiv:2605.29992): https://arxiv.org/abs/2605.29992 (no verificada con la informacion disponible)
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces obtenidos correspondian a sitios de contenido para adultos sin relacion con el modelo. No se han podido localizar papers, blogs, repositorios ni demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p4b_cpt_r6-step-381` es un checkpoint de 1.225.747.200 parámetros (aproximadamente 1,23 mil millones) publicado por el usuario alfred8995 en HuggingFace, con pesos en formato safetensors y acceso restringido (gated). La etiqueta `qwen3` del repositorio indica que el modelo se apoya en la arquitectura de la familia Qwen3, aunque el autor no ha publicado una model card con detalles de arquitectura, datos de entrenamiento o resultados de evaluación. El nombre del repositorio sugiere un proceso de preentrenamiento continuado (`cpt`) sobre alguna variante base, capturado en el paso 381 de entrenamiento (`step-381`), si bien esta lectura es una inferencia a partir del identificador y no un dato confirmado por el autor.
+`alfred8995/r17-bk-pf-p4b_cpt_r6-step-381` es un checkpoint de 1.225.747.200 parámetros (aproximadamente 1,23 mil millones) publicado por el usuario alfred8995 en Hugging Face, con pesos en formato safetensors y acceso restringido (gated). La etiqueta `qwen3` del repositorio indica que el modelo se apoya en la arquitectura de la familia Qwen3, aunque el autor no ha publicado una model card con detalles de arquitectura, datos de entrenamiento o resultados de evaluación. El nombre del repositorio sugiere un proceso de preentrenamiento continuado (`cpt`) sobre alguna variante base, capturado en el paso 381 de entrenamiento (`step-381`), si bien esta lectura es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
 No existe información pública verificable sobre capacidades, idiomas, longitud de contexto o rendimiento. El repositorio no tiene descargas ni valoraciones en el momento de la consulta, y la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo: los enlaces obtenidos eran contenido para adultos sin relación alguna con el proyecto, por lo que se han descartado por completo. Cualquier evaluación de este checkpoint debe realizarse empíricamente tras solicitar acceso.
 
@@ -20,7 +20,7 @@ Su relevancia potencial es la de un experimento de investigación reproducible (
 | Idiomas soportados | No disponible |
 | Licencia | `other` (términos no especificados en la información disponible) |
 | Formato de pesos | safetensors |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 4,9 GB, coherente con pesos en fp32 para 1,23 B de parámetros |
 | Pipeline declarado | No disponible |
 | Fecha de creación | 2026-10-23 |
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación pública |
 |---|---|---|---|---|---|
-| `alfred8995/r17-bk-pf-p4b_cpt_r6-step-381` | 1,23 B | No disponible | `other` (gated) | HuggingFace, acceso restringido | Ninguna |
-| Qwen3-1.7B | 1,7 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | HuggingFace, abierta | Sí, publicada por el autor |
-| Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, abierta con condiciones | Sí, publicada por el autor |
-| Gemma 3 1B | ~1 B | 32.768 tokens | Gemma Terms of Use | HuggingFace, abierta con condiciones | Sí, publicada por el autor |
+| `alfred8995/r17-bk-pf-p4b_cpt_r6-step-381` | 1,23 B | No disponible | `other` (gated) | Hugging Face, acceso restringido | Ninguna |
+| Qwen3-1.7B | 1,7 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Hugging Face, abierta | Sí, publicada por el autor |
+| Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, abierta con condiciones | Sí, publicada por el autor |
+| Gemma 3 1B | ~1 B | 32.768 tokens | Gemma Terms of Use | Hugging Face, abierta con condiciones | Sí, publicada por el autor |
 
 La comparación es estructural: no existen datos de rendimiento de este checkpoint que permitan contrastarlo con las alternativas en MMLU, HumanEval o GSM8K. Frente a ellas, la diferencia práctica es la ausencia de model card, de evaluación y de términos de licencia explícitos, además del acceso restringido.
 
@@ -89,6 +89,6 @@ La comparación es estructural: no existen datos de rendimiento de este checkpoi
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/alfred8995/r17-bk-pf-p4b_cpt_r6-step-381
-- Perfil del autor en HuggingFace: https://huggingface.co/alfred8995
+- Hugging Face (acceso restringido): https://huggingface.co/alfred8995/r17-bk-pf-p4b_cpt_r6-step-381
+- Perfil del autor en Hugging Face: https://huggingface.co/alfred8995
 - Aviso: la búsqueda web realizada no devolvió ningún enlace relacionado con este modelo, su autor ni la familia Qwen3; los resultados obtenidos eran contenido para adultos sin relación y se han descartado. No se dispone de paper, blog, repositorio de código ni demo asociados.

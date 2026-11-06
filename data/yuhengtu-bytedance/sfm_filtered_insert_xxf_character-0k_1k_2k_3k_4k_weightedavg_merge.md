@@ -68,9 +68,9 @@ No se dispone de informacion suficiente para una comparativa rigurosa: la model 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_weightedavg_merge | 6,86 mil millones | no disponible | no disponible | HuggingFace, 0 descargas |
-| Pythia-6.9B (referencia externa) | 6,9 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| GPT-NeoX-20B (referencia externa) | 20 mil millones | 2048 tokens | Apache 2.0 | HuggingFace |
+| sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_weightedavg_merge | 6,86 mil millones | no disponible | no disponible | Hugging Face, 0 descargas |
+| Pythia-6.9B (referencia externa) | 6,9 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| GPT-NeoX-20B (referencia externa) | 20 mil millones | 2048 tokens | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa: la model 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_weightedavg_merge
 - mergekit (herramienta usada para el merge): https://github.com/cg123/mergekit
 - Paper citado en la model card como referencia del metodo Linear: https://arxiv.org/abs/2203.05482
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; los resultados devueltos corresponden a contenido no relacionado.

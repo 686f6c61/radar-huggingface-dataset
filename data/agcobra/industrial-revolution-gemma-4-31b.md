@@ -82,7 +82,7 @@ La comparativa con alternativas directas no está disponible en la información 
 
 ## Enlaces
 
-- [HuggingFace: AGCobra/Industrial-Revolution-Gemma-4-31b](https://huggingface.co/AGCobra/Industrial-Revolution-Gemma-4-31b)
+- [Hugging Face: AGCobra/Industrial-Revolution-Gemma-4-31b](https://huggingface.co/AGCobra/Industrial-Revolution-Gemma-4-31b)
 - [Modelo base: unsloth/gemma-4-31B](https://huggingface.co/unsloth/gemma-4-31B)
 - [Dataset: AGCobra/Industrial-Revolution](https://huggingface.co/datasets/AGCobra/Industrial-Revolution)
 - [Commit de llama.cpp usado para conversión](https://github.com/ggml-org/llama.cpp/commit/29c720eaf72fcf8e4e61a56a88b994d92668261d)

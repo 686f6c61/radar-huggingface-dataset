@@ -85,7 +85,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Limitaciones y advertencias
 
-- El modelo es experimental: tiene 0 descargas y 0 likes en HuggingFace, y la evaluación final está pendiente.
+- El modelo es experimental: tiene 0 descargas y 0 likes en Hugging Face, y la evaluación final está pendiente.
 - El artefacto final `model/<pending>.nurl` aún no está disponible; solo se han publicado checkpoints de entrenamiento y una tabla de evolución de bits/char.
 - El formato `.nurl` es una solución propietaria que requiere un códec específico; no es un formato estándar como GGUF o safetensors.
 - La ventana de contexto es de 512 tokens, lo que limita la compresión de URLs muy largas, aunque cada URL se procesa como un contexto independiente.
@@ -96,7 +96,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ks46/urls-250m
+- Hugging Face: https://huggingface.co/ks46/urls-250m
 - Dataset de entrenamiento: https://huggingface.co/datasets/ks46/urls
 - Perfil del autor: https://huggingface.co/ks46
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

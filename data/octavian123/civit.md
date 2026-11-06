@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Octavian123/civit es un repositorio alojado en HuggingFace cuyo contenido técnico no está documentado públicamente en la información disponible. El autor es el usuario Octavian123 y el repositorio ocupa 697,3 GB, un volumen que lo sitúa entre los repositorios de pesos más grandes de la plataforma y que, en la práctica, descarta su descarga y despliegue en hardware de consumo convencional. No se ha publicado pipeline, licencia, idiomas soportados ni ficha de modelo asociada.
+Octavian123/civit es un repositorio alojado en Hugging Face cuyo contenido técnico no está documentado públicamente en la información disponible. El autor es el usuario Octavian123 y el repositorio ocupa 697,3 GB, un volumen que lo sitúa entre los repositorios de pesos más grandes de la plataforma y que, en la práctica, descarta su descarga y despliegue en hardware de consumo convencional. No se ha publicado pipeline, licencia, idiomas soportados ni ficha de modelo asociada.
 
 El repositorio no incluye tarjeta de modelo (model card) con descripción de arquitectura, datos de entrenamiento o resultados de evaluación, y las búsquedas web realizadas no han devuelto ninguna referencia técnica al mismo: los resultados obtenidos tratan exclusivamente sobre circuitos turísticos en la Patagonia y no guardan relación con el modelo. Esto significa que cualquier afirmación sobre sus capacidades sería especulativa.
 
@@ -42,7 +42,7 @@ No es posible enumerar capacidades verificadas, ya que el autor no ha publicado 
 - No hay confirmación de soporte para agentes o razonamiento multi-paso.
 - No hay confirmación de capacidades multilingües ni de qué idiomas cubriría.
 - No hay confirmación de modos especiales (modo "thinking", audio, visión, generación de imágenes u otros).
-- El pipeline de HuggingFace aparece como "no disponible", por lo que la plataforma no lo clasifica en ninguna tarea concreta (text-generation, text-to-image, etc.).
+- El pipeline de Hugging Face aparece como "no disponible", por lo que la plataforma no lo clasifica en ninguna tarea concreta (text-generation, text-to-image, etc.).
 
 ## Casos de uso
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
-| Disponibilidad | repositorio público en HuggingFace, sin ficha técnica | no disponible |
+| Disponibilidad | repositorio público en Hugging Face, sin ficha técnica | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Octavian123/civit
+- Repositorio en Hugging Face: https://huggingface.co/Octavian123/civit
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

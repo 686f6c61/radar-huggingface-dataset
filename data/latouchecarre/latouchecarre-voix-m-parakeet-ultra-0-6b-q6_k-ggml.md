@@ -97,7 +97,7 @@ Frente a Parakeet v3, el post-entrenamiento de Moondream mejora el CER de 1,10 a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-M-Parakeet-Ultra-0.6B-Q6_K-GGML
+- Repositorio Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-M-Parakeet-Ultra-0.6B-Q6_K-GGML
 - Modelo base (Moondream): https://huggingface.co/moondream/parakeet-ultra
 - Modelo NVIDIA original: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Plantilla ggml oficial: https://huggingface.co/ggml-org/parakeet-GGUF

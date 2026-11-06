@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "canopus77/slm-rag-sft-gguf",
+  "slug": "canopus77-slm-rag-sft-gguf",
+  "author": "canopus77",
+  "url": "https://huggingface.co/canopus77/slm-rag-sft-gguf",
+  "created_at": "2026-11-06T12:17:10.000Z",
+  "updated_at": "2026-11-06T12:17:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019374208,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slm Rag Sft Merged by canopus77 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/canopus77%2Fslm-rag-sft-merged,17oiZjaP2aeCZLoYetatSM",
+      "snippet": "Slm Rag Sft Merged is an open-source 3b LLM by canopus77. VRAM 6.5GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Fine-tuned Models for canopus77/slm-rag-sft-merged – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Afinetune%3Acanopus77%2Fslm-rag-sft-merged",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset canopus77/slm-rag-sft-merged Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click ..."
+    }
+  ]
+}

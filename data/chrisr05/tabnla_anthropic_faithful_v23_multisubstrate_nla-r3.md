@@ -71,4 +71,4 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ChrisR05/tabnla_anthropic_faithful_v23_multisubstrate_nla-r3
+- Repositorio en Hugging Face: https://huggingface.co/ChrisR05/tabnla_anthropic_faithful_v23_multisubstrate_nla-r3

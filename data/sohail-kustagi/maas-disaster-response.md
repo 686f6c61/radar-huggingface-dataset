@@ -72,7 +72,7 @@ No se dispone de comparativas publicadas con otros modelos de deteccion de desas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sohail-kustagi/MAAS-Disaster-Response
+- Repositorio Hugging Face: https://huggingface.co/sohail-kustagi/MAAS-Disaster-Response
 - Demo interactiva: no disponible (se menciona un Hugging Face Space en el perfil del autor, pero no se proporciona URL directa)
 - Modelo base Phi-3-Mini-4k-instruct: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Paper o documentacion adicional: no disponible

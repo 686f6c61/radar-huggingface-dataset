@@ -4,7 +4,7 @@
 
 El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-IQ3_S_R4-SPECIAL_SPLIT` es una cuantización GGUF en formato IQ3_S_R4 (3 bits) del modelo base Qwen3.8-27B, desarrollada por Thireus, un autor conocido por sus herramientas de cuantización y forks de llama.cpp. El modelo base, lanzado por el equipo Qwen de Alibaba, es un transformer denso multimodal de 27 000 millones de parámetros con una ventana de contexto nativa de 262 000 tokens, orientado a tareas de codificación, flujos de trabajo agénticos y automatización de oficina. Esta cuantización permite ejecutar el modelo en hardware con menos memoria VRAM, manteniendo un equilibrio entre tamaño y calidad, y está publicada bajo licencia MIT.
 
-La relevancia de esta ficha radica en que la cuantización de Thireus emplea una técnica propia (IQ3_S_R4) que, según el autor, ofrece una mejor relación perplexidad por bit en comparación con otros cuantizadores. El sufijo `SPECIAL_SPLIT` indica una partición especial de los archivos GGUF, probablemente para facilitar la carga en sistemas con múltiples GPUs o con limitaciones de memoria. Aunque el modelo no tiene descargas ni valoraciones en HuggingFace, su publicación reciente (agosto de 2026) y la reputación del autor lo convierten en una opción a considerar para despliegues locales de Qwen3.8-27B.
+La relevancia de esta ficha radica en que la cuantización de Thireus emplea una técnica propia (IQ3_S_R4) que, según el autor, ofrece una mejor relación perplexidad por bit en comparación con otros cuantizadores. El sufijo `SPECIAL_SPLIT` indica una partición especial de los archivos GGUF, probablemente para facilitar la carga en sistemas con múltiples GPUs o con limitaciones de memoria. Aunque el modelo no tiene descargas ni valoraciones en Hugging Face, su publicación reciente (agosto de 2026) y la reputación del autor lo convierten en una opción a considerar para despliegues locales de Qwen3.8-27B.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha radica en que la cuantización de Thireus emplea una
 
 El modelo base Qwen3.8-27B es un transformer denso multimodal con un codificador de vision integrado, diseñado para procesar tanto texto como imagenes. Segun la documentacion oficial, esta optimizado para tareas de codificacion, flujos agénticos y automatizacion de oficina, e incluye un modo de razonamiento configurable (thinking mode) que permite alternar entre respuestas rapidas y razonamiento profundo. No se han publicado detalles especificos sobre el dataset de entrenamiento ni el proceso de alineacion (RLHF/DPO) en la informacion disponible.
 
-La cuantizacion IQ3_S_R4 aplicada por Thireus es una variante de cuantizacion de 3 bits que utiliza una tecnica de remapeo (R4) para mejorar la precision en capas criticas. Thireus ha desarrollado su propia suite de herramientas GGUF, que incluye un fork de llama.cpp con soporte para CUDA 12.8 y 13.3, y parches para cargar mas shards de GGUF. El proceso de cuantizacion no esta documentado en detalle, pero el autor afirma en su pagina de HuggingFace que sus cuantizaciones ofrecen menor perplexidad a igual o menor bits por peso (bpw) que otros cuantizadores.
+La cuantizacion IQ3_S_R4 aplicada por Thireus es una variante de cuantizacion de 3 bits que utiliza una tecnica de remapeo (R4) para mejorar la precision en capas criticas. Thireus ha desarrollado su propia suite de herramientas GGUF, que incluye un fork de llama.cpp con soporte para CUDA 12.8 y 13.3, y parches para cargar mas shards de GGUF. El proceso de cuantizacion no esta documentado en detalle, pero el autor afirma en su pagina de Hugging Face que sus cuantizaciones ofrecen menor perplexidad a igual o menor bits por peso (bpw) que otros cuantizadores.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ La cuantizacion IQ3_S_R4 aplicada por Thireus es una variante de cuantizacion de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para esta cuantizacion en la informacion disponible. La pagina de HuggingFace del modelo BF16 (misma familia) menciona una comparacion de perplexidad con otros cuantizadores, pero no se incluyen los valores numericos. El modelo base Qwen3.8-27B, segun el articulo de Yottalabs, tiene benchmarks publicados, pero no se detallan en los resultados de busqueda. Por tanto, no se pueden presentar datos cuantitativos fiables.
+No se han publicado resultados de benchmarks especificos para esta cuantizacion en la informacion disponible. La pagina de Hugging Face del modelo BF16 (misma familia) menciona una comparacion de perplexidad con otros cuantizadores, pero no se incluyen los valores numericos. El modelo base Qwen3.8-27B, segun el articulo de Yottalabs, tiene benchmarks publicados, pero no se detallan en los resultados de busqueda. Por tanto, no se pueden presentar datos cuantitativos fiables.
 
 ## Requisitos de hardware
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks especificos para esta cuantizacion 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thireus/mtp-Qwen3.8-27B-IQ3_S_R4 | 27B | 262K | IQ3_S_R4 (3 bits) | MIT (cuantizacion) | HuggingFace |
-| Qwen3.8-27B (base) | 27B | 262K | BF16/FP16 | Apache 2.0 | HuggingFace, GitHub |
-| Otras cuantizaciones de Qwen3.8-27B (p.ej. Q4_K_M) | 27B | 262K | Q4_K_M (4 bits) | Apache 2.0 | HuggingFace (varios autores) |
+| Thireus/mtp-Qwen3.8-27B-IQ3_S_R4 | 27B | 262K | IQ3_S_R4 (3 bits) | MIT (cuantizacion) | Hugging Face |
+| Qwen3.8-27B (base) | 27B | 262K | BF16/FP16 | Apache 2.0 | Hugging Face, GitHub |
+| Otras cuantizaciones de Qwen3.8-27B (p.ej. Q4_K_M) | 27B | 262K | Q4_K_M (4 bits) | Apache 2.0 | Hugging Face (varios autores) |
 
 La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de modelos comparables de otros fabricantes en la informacion proporcionada. La cuantizacion IQ3_S_R4 ofrece un tamaño menor que Q4_K_M (3 bits vs 4 bits) a costa de una posible perdida de precision, pero con la ventaja de requerir menos VRAM.
 
@@ -76,7 +76,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ3_S_R4-SPECIAL_SPLIT
+- Modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ3_S_R4-SPECIAL_SPLIT
 - Version BF16 del mismo autor: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - GitHub de Thireus: https://github.com/Thireus

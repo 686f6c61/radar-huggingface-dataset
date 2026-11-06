@@ -102,7 +102,7 @@ No hay datos oficiales de comparación en la información disponible, por lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/hypermind-official/ARK-ASR-3B-NoTranslate
+- Repositorio Hugging Face del modelo: https://huggingface.co/hypermind-official/ARK-ASR-3B-NoTranslate
 - Modelo base: https://huggingface.co/Audio8/ARK-ASR-3B
 - Demo en Hugging Face Space: https://huggingface.co/spaces/AutoArk-AI/ark-asr-3b
 - Referencia en awesome-ai-voice: https://github.com/wildminder/awesome-ai-voice/blob/main/models/ark-asr-3b.md

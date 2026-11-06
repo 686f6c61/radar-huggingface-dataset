@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`augmented-84e33a017bed5281` es un modelo de generación de texto conversacional de 1.543.714.304 parámetros (~1,54 B), basado en la arquitectura Qwen2 y publicado en HuggingFace por la organización `gradients-io-tournaments` el 27 de octubre de 2026. El nombre del repositorio y de la organización apuntan a que se trata de un artefacto generado dentro de los torneos de entrenamiento automatizado de la plataforma Gradients.io, un servicio que permite a cualquier usuario entrenar modelos de texto e imagen.
+`augmented-84e33a017bed5281` es un modelo de generación de texto conversacional de 1.543.714.304 parámetros (~1,54 B), basado en la arquitectura Qwen2 y publicado en Hugging Face por la organización `gradients-io-tournaments` el 27 de octubre de 2026. El nombre del repositorio y de la organización apuntan a que se trata de un artefacto generado dentro de los torneos de entrenamiento automatizado de la plataforma Gradients.io, un servicio que permite a cualquier usuario entrenar modelos de texto e imagen.
 
 La model card es una plantilla autogenerada sin información sustantiva: no documenta datos de entrenamiento, licencia, idiomas ni procedimiento de alineación, y el repositorio apenas registra actividad (0 descargas y 0 likes en el momento de redactar esta ficha). Su interés es principalmente experimental: sirve como ejemplo del ecosistema de fine-tunes publicados masivamente sobre arquitecturas estándar y como punto de partida para pruebas locales, pero no ofrece garantías documentales para su uso en producción.
 
@@ -28,8 +28,8 @@ No hay información sobre los datos de entrenamiento (número de tokens, composi
 ## Capacidades
 
 - Generación de texto conversacional: el modelo está registrado con el pipeline `text-generation` y la etiqueta `conversational`, lo que indica formato de chat.
-- Integración con la librería `transformers` de HuggingFace y con `text-generation-inference` (etiquetas `transformers` y `text-generation-inference`).
-- Compatibilidad con Inference Endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Integración con la librería `transformers` de Hugging Face y con `text-generation-inference` (etiquetas `transformers` y `text-generation-inference`).
+- Compatibilidad con Inference Endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Tool calling / function calling: no documentado.
 - Soporte de agentes o razonamiento multi-paso: no documentado.
 - Capacidades multilingües: no documentadas (la familia Qwen2 suele entrenarse con datos multilingües, pero este checkpoint no lo especifica).
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la información disponible.
   - Cuantización a 4 bits (GPTQ/AWQ/GGUF Q4): ~0,9-1,1 GB.
 - GPU recomendadas: cualquiera de gama media es suficiente; RTX 3060 de 6 GB, RTX 4060 de 8 GB o superiores ejecutan el modelo en fp16 con holgura. No se requieren A100 ni H100.
 - Consumer GPUs: cabe en prácticamente todas las GPUs dedicadas actuales, incluidas las de portátil; incluso es viable la inferencia en CPU con la conversión previa a GGUF mediante llama.cpp.
-- Opciones de despliegue: `transformers` de HuggingFace de forma nativa; TGI y vLLM para servir con concurrencia; Ollama o llama.cpp tras convertir los pesos a GGUF; Inference Endpoints de HuggingFace gracias a la etiqueta `endpoints_compatible`. Servicios de terceros como FriendliAI y featherless.ai alojan modelos hermanos de la misma organización.
+- Opciones de despliegue: `transformers` de Hugging Face de forma nativa; TGI y vLLM para servir con concurrencia; Ollama o llama.cpp tras convertir los pesos a GGUF; Inference Endpoints de Hugging Face gracias a la etiqueta `endpoints_compatible`. Servicios de terceros como FriendliAI y featherless.ai alojan modelos hermanos de la misma organización.
 - Latencia y throughput: no hay cifras publicadas para este checkpoint; por su clase de tamaño (1,5 B) cabe esperar inferencia interactiva fluida (decenas de tokens por segundo) en una GPU de consumo, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| augmented-84e33a017bed5281 | 1,54 B | No disponible | No disponible | safetensors en HuggingFace, sin benchmarks publicados |
+| augmented-84e33a017bed5281 | 1,54 B | No disponible | No disponible | safetensors en Hugging Face, sin benchmarks publicados |
 | Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens (ampliable a 128K con YaRN) | Apache 2.0 | Abierta, con benchmarks publicados y soporte amplio del ecosistema |
 | Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Llama 3.2 (uso comercial con condiciones) | Abierta con licencia comunitaria, benchmarks publicados |
 | SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache 2.0 | Abierta, benchmarks publicados, orientada a uso en local |
@@ -83,7 +83,7 @@ En términos de tamaño, el modelo compite directamente con Qwen2.5-1.5B-Instruc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-84e33a017bed5281
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-84e33a017bed5281
 - Plataforma Gradients.io: https://www.gradients.io/
 - Modelo hermano de la misma organización alojado en featherless.ai: https://featherless.ai/models/gradients-io-tournaments/augmented-029b5c5241c15cdc
 - Modelo hermano de la misma organización alojado en FriendliAI: https://friendli.ai/models/gradients-io-tournaments/augmented-0cfdf7a57ff20838

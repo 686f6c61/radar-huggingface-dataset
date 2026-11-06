@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mango Qwen3.8 27B Cyber (IQ4_XS, MTP) es un espejo de preservación publicado por isilicon en HuggingFace, que empaqueta y evalúa una configuración concreta de GGUF del modelo Qwen3.8 27B Uncensored Cyber de cyjin-yl (a su vez basado en una modificación de philbert440 sobre la familia Qwen de 27B parámetros). El repositorio no introduce cambios en los pesos: su valor añadido es la atribución, la preservación exacta de los bytes originales y una evaluación reproducible de esa configuración exacta mediante el sistema de benchmarks Mango.
+Mango Qwen3.8 27B Cyber (IQ4_XS, MTP) es un espejo de preservación publicado por isilicon en Hugging Face, que empaqueta y evalúa una configuración concreta de GGUF del modelo Qwen3.8 27B Uncensored Cyber de cyjin-yl (a su vez basado en una modificación de philbert440 sobre la familia Qwen de 27B parámetros). El repositorio no introduce cambios en los pesos: su valor añadido es la atribución, la preservación exacta de los bytes originales y una evaluación reproducible de esa configuración exacta mediante el sistema de benchmarks Mango.
 
 El modelo se orienta a casos de uso de ciberseguridad y agentes ("cyber-agentic"), con una cuantización IQ4_XS calculada con matriz de importancia (imatrix) y una cabeza MTP (multi-token prediction) integrada en el fichero seleccionado. Con 27.320.697.856 parámetros totales y un payload de 16,52 GB en formato GGUF, es un candidato para estaciones de trabajo locales con GPUs de gama alta. Su relevancia actual radica en la creciente demanda de modelos abiertos, sin filtros y especializados en tareas ofensivas/defensivas de seguridad y orquestación de agentes, evaluados de forma transparente y con métricas de calidad y latencia publicadas.
 

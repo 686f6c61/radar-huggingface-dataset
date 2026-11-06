@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taichi116/pi0_sarmal_hybrid` es un modelo publicado en HuggingFace por el usuario taichi116, con un total de 4.028.019.472 parámetros almacenados en formato safetensors y un tamaño de repositorio de 29,9 GB. El nombre sugiere una variante híbrida del modelo pi0 (policy de robótica de Physical Intelligence), posiblemente combinada con algún componente de tipo "sarmal" (término turco para "espiral"), aunque no hay documentación pública que lo confirme. El pipeline no está declarado en la ficha de HuggingFace, lo que impide determinar con certeza si se trata de un modelo de lenguaje, un modelo de política visuomotora o un modelo multimodal.
+`taichi116/pi0_sarmal_hybrid` es un modelo publicado en Hugging Face por el usuario taichi116, con un total de 4.028.019.472 parámetros almacenados en formato safetensors y un tamaño de repositorio de 29,9 GB. El nombre sugiere una variante híbrida del modelo pi0 (policy de robótica de Physical Intelligence), posiblemente combinada con algún componente de tipo "sarmal" (término turco para "espiral"), aunque no hay documentación pública que lo confirme. El pipeline no está declarado en la ficha de Hugging Face, lo que impide determinar con certeza si se trata de un modelo de lenguaje, un modelo de política visuomotora o un modelo multimodal.
 
 El modelo cuenta con 27 descargas y 0 likes en el momento de la consulta, lo que indica una adopción muy limitada y ausencia de validación por parte de la comunidad. No se dispone de información sobre licencia, idiomas soportados, arquitectura interna ni datos de entrenamiento. La fecha de creación (2026-10-28) y la última actualización (2026-11-02) son los únicos metadatos temporales disponibles.
 
@@ -23,7 +23,7 @@ Dada la escasez de información pública, esta ficha se limita a documentar los 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la ficha de HuggingFace ni en los metadatos disponibles. El nombre "pi0_sarmal_hybrid" sugiere una posible relación con la familia pi0 de Physical Intelligence (modelos de política visuomotora para robótica), pero no hay confirmación documental. El término "hybrid" podría indicar una combinación de componentes (por ejemplo, transformer con SSM, o visión con lenguaje), pero se trata de una especulación no verificada.
+No se ha publicado información sobre la arquitectura del modelo en la ficha de Hugging Face ni en los metadatos disponibles. El nombre "pi0_sarmal_hybrid" sugiere una posible relación con la familia pi0 de Physical Intelligence (modelos de política visuomotora para robótica), pero no hay confirmación documental. El término "hybrid" podría indicar una combinación de componentes (por ejemplo, transformer con SSM, o visión con lenguaje), pero se trata de una especulación no verificada.
 
 Tampoco se dispone de datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni la existencia de etapas de RLHF, DPO o fine-tuning supervisado. El tamaño del repositorio (29,9 GB) es coherente con pesos en precisión completa (fp32) o bf16 para 4.028 millones de parámetros, pero no aporta información sobre el proceso de entrenamiento.
 
@@ -80,5 +80,5 @@ No disponible. No se ha identificado un modelo comparable con certeza, dado que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taichi116/pi0_sarmal_hybrid
+- Hugging Face: https://huggingface.co/taichi116/pi0_sarmal_hybrid
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

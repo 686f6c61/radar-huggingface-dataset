@@ -80,8 +80,8 @@ No existen encoders RVQ publicos comparables para MiniMax Music 3, ya que el enc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3
+- Repositorio Hugging Face: https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3
 - Documentacion de SimpleTuner para MiniMax Music 3: http://docs.simpletuner.io/quickstart/MINIMAX_MUSIC/
 - Repositorio oficial de MiniMax Music 3: https://github.com/MiniMax-AI/MiniMax-Music3
 - Guia de SimpleTuner en GitHub: https://github.com/bghira/SimpleTuner/blob/main/documentation/quickstart/MINIMAX_MUSIC.md
-- Modelo original MiniMax Music 3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Modelo original MiniMax Music 3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-Music3

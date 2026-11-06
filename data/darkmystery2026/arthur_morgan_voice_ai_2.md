@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Arthur Morgan Voice AI 2 es un repositorio publicado en HuggingFace por el usuario DarkMystery2026 bajo licencia Apache 2.0. Por el identificador y el tamano del repositorio (2,0 GB), se trata presumiblemente de un modelo de sintesis de voz (text-to-speech) o de clonacion de voz orientado a reproducir la voz del personaje Arthur Morgan, protagonista de Red Dead Redemption 2. No obstante, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso.
+Arthur Morgan Voice AI 2 es un repositorio publicado en Hugging Face por el usuario DarkMystery2026 bajo licencia Apache 2.0. Por el identificador y el tamano del repositorio (2,0 GB), se trata presumiblemente de un modelo de sintesis de voz (text-to-speech) o de clonacion de voz orientado a reproducir la voz del personaje Arthur Morgan, protagonista de Red Dead Redemption 2. No obstante, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso.
 
-El repositorio no declara pipeline en HuggingFace, no especifica idiomas soportados y no incluye resultados de evaluacion. El tamano de 2,0 GB es compatible con un checkpoint de un modelo de voz de tamano medio (del orden de cientos de millones de parametros en precision fp16), pero no es posible confirmarlo sin inspeccionar los archivos de pesos, que no se detallan en la informacion disponible.
+El repositorio no declara pipeline en Hugging Face, no especifica idiomas soportados y no incluye resultados de evaluacion. El tamano de 2,0 GB es compatible con un checkpoint de un modelo de voz de tamano medio (del orden de cientos de millones de parametros en precision fp16), pero no es posible confirmarlo sin inspeccionar los archivos de pesos, que no se detallan en la informacion disponible.
 
 La relevancia actual del modelo es limitada desde el punto de vista tecnico: se trata de una publicacion con 25 descargas y 0 likes, sin documentacion, lo que dificulta su evaluacion y su uso en produccion. Resulta util unicamente como referencia para experimentacion con voces de personajes, siempre teniendo en cuenta las implicaciones legales y eticas de la clonacion de voz.
 
@@ -72,4 +72,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DarkMystery2026/arthur_morgan_voice_ai_2
+- Hugging Face: https://huggingface.co/DarkMystery2026/arthur_morgan_voice_ai_2

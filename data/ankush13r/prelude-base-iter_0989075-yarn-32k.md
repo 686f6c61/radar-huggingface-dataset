@@ -78,10 +78,10 @@ La mejora principal es que YaRN convierte un modelo que solo funcionaba hasta 4.
 
 | Modelo | Parámetros | Contexto efectivo | Perplexidad 16k-32k | Perplexidad 65k-131k | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| prelude-base-iter_0989075-yarn-32k | 9.09B | 32.768 | 2.140 | No aplica | Apache 2.0 | HuggingFace |
-| prelude-base-iter_0989075-yarn-128k | 9.09B | 131.072 | 2.642 | 2.340 | Apache 2.0 | HuggingFace |
-| prelude-base-iter_0989075-yarn-160k | 9.09B | 163.840 | 2.720 | 2.363 | Apache 2.0 | HuggingFace |
-| openeurollm/prelude (base sin escalar) | 9.09B | 4.096 | No aplica (falla) | No aplica | Apache 2.0 | HuggingFace |
+| prelude-base-iter_0989075-yarn-32k | 9.09B | 32.768 | 2.140 | No aplica | Apache 2.0 | Hugging Face |
+| prelude-base-iter_0989075-yarn-128k | 9.09B | 131.072 | 2.642 | 2.340 | Apache 2.0 | Hugging Face |
+| prelude-base-iter_0989075-yarn-160k | 9.09B | 163.840 | 2.720 | 2.363 | Apache 2.0 | Hugging Face |
+| openeurollm/prelude (base sin escalar) | 9.09B | 4.096 | No aplica (falla) | No aplica | Apache 2.0 | Hugging Face |
 
 La variante `yarn-32k` es la mejor dentro de su ventana, con una perplexidad un 19% inferior a la de `yarn-128k` en la banda 16k-32k. Sin embargo, las variantes de 128k y 160k son las únicas que funcionan más allá de 32k.
 
@@ -95,6 +95,6 @@ La variante `yarn-32k` es la mejor dentro de su ventana, con una perplexidad un 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ankush13r/prelude-base-iter_0989075-yarn-32k
-- Modelo base en HuggingFace: https://huggingface.co/openeurollm/prelude
+- Hugging Face del modelo: https://huggingface.co/ankush13r/prelude-base-iter_0989075-yarn-32k
+- Modelo base en Hugging Face: https://huggingface.co/openeurollm/prelude
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

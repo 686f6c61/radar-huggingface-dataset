@@ -84,7 +84,7 @@ No hay comparables directos en el mercado, ya que este repositorio es un sidecar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EasiiX/Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/EasiiX/Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Rama EngramHalo.cpp (build con soporte MTP y parches Strix Halo): https://github.com/Aristo94/EngramHalo.cpp
 - PR llama.cpp #27739 (diseño del draft head): https://github.com/ggml-org/llama.cpp/pull/27739

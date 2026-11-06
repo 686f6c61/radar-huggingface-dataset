@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Alpina Micro 2.0 (Picalp) | 15.008 | No disponible | Apache-2.0 | Safetensors y GGUF F16 en HuggingFace | Experimento de personaje con sobreajuste de identidad |
-| SmolLM2-135M | 135 M | No disponible en esta ficha | Apache-2.0 | HuggingFace | Modelo pequeño de propósito general; usado como fuente de datos por Alpina |
-| Modelos de juguete tipo TinyStories | Variable, típicamente millones | No disponible | Variable | HuggingFace | Enfocados a narrativa simple; no comparables en identidad |
+| Alpina Micro 2.0 (Picalp) | 15.008 | No disponible | Apache-2.0 | Safetensors y GGUF F16 en Hugging Face | Experimento de personaje con sobreajuste de identidad |
+| SmolLM2-135M | 135 M | No disponible en esta ficha | Apache-2.0 | Hugging Face | Modelo pequeño de propósito general; usado como fuente de datos por Alpina |
+| Modelos de juguete tipo TinyStories | Variable, típicamente millones | No disponible | Variable | Hugging Face | Enfocados a narrativa simple; no comparables en identidad |
 
 La comparación con alternativas de la misma categoría es limitada: no se dispone de datos de benchmarks ni de contexto para Alpina Micro 2.0, y su naturaleza experimental de personaje lo aleja de los modelos pequeños de propósito general.
 
@@ -83,7 +83,7 @@ La comparación con alternativas de la misma categoría es limitada: no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Micro-2.0-15K
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Micro-2.0-15K
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train
 - Dataset Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

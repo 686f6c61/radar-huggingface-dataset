@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `armand0e/Qwen3.8-27B-Fable-Distill` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3.8-27B`, desarrollado por el usuario armand0e. Se presenta como un modelo de la familia Qwen3.5 (etiqueta `qwen3_5`) y está orientado a tareas de generación de texto e imagen-texto, según su pipeline declarado. El entrenamiento se realizó con las librerías Unsloth y HuggingFace TRL, lo que indica un proceso optimizado para acelerar el ajuste fino.
+El modelo `armand0e/Qwen3.8-27B-Fable-Distill` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3.8-27B`, desarrollado por el usuario armand0e. Se presenta como un modelo de la familia Qwen3.5 (etiqueta `qwen3_5`) y está orientado a tareas de generación de texto e imagen-texto, según su pipeline declarado. El entrenamiento se realizó con las librerías Unsloth y Hugging Face TRL, lo que indica un proceso optimizado para acelerar el ajuste fino.
 
 Con 27.781.427.952 parámetros (aproximadamente 27,8 mil millones), se sitúa en la gama de modelos grandes de lenguaje, similar a otros modelos de 27B como los de la serie Qwen. La licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas, lo que facilita su adopción en entornos de producción. La relevancia actual radica en que los modelos de 27B ofrecen un equilibrio entre capacidad de razonamiento y requisitos de hardware, siendo viables en GPUs de alta gama con cuantización.
 
@@ -23,7 +23,7 @@ La información pública disponible es limitada: no se detallan los datos de ent
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base `unsloth/Qwen3.8-27B`, que corresponde a un transformer de tipo decoder-only con atención completa, típico de la familia Qwen. No se dispone de información sobre si el fine-tune introduce cambios arquitectónicos, como atención lineal o decodificación especulativa. El entrenamiento se realizó con Unsloth, una librería que optimiza el ajuste fino mediante kernels de atención y técnicas de memoria eficiente, y con la librería TRL de HuggingFace, que proporciona utilidades para fine-tuning con RLHF o DPO. Sin embargo, no se especifica el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación adicionales.
+La arquitectura subyacente es la del modelo base `unsloth/Qwen3.8-27B`, que corresponde a un transformer de tipo decoder-only con atención completa, típico de la familia Qwen. No se dispone de información sobre si el fine-tune introduce cambios arquitectónicos, como atención lineal o decodificación especulativa. El entrenamiento se realizó con Unsloth, una librería que optimiza el ajuste fino mediante kernels de atención y técnicas de memoria eficiente, y con la librería TRL de Hugging Face, que proporciona utilidades para fine-tuning con RLHF o DPO. Sin embargo, no se especifica el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación adicionales.
 
 Dado que el pipeline se declara como `image-text-to-text`, es posible que el modelo haya sido adaptado para procesar entradas multimodales, pero no hay confirmación en la documentación. El nombre "Fable-Distill" podría indicar destilación de conocimiento desde un modelo mayor hacia este, pero no se aportan detalles al respecto.
 
@@ -74,6 +74,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill)
+- [Modelo en Hugging Face](https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo base unsloth/Qwen3.8-27B](https://huggingface.co/unsloth/Qwen3.8-27B) (referencia indirecta, no incluido en la información proporcionada)

@@ -79,8 +79,8 @@ Calibración de la confianza: las decisiones con probabilidad superior ≥ 0,7 (
 
 | Modelo | Parametros | Contexto | Precision en el benchmark | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| **sohayok-laya-actions** | 321,9 M | no disponible | 91,8 % global / 88,3 % escritorio | Apache-2.0 | HuggingFace, librería `laya` |
-| `algolyzer/laya-bangla` (zero-shot) | no disponible | no disponible | 63,4 % global / 51,7 % escritorio | Apache-2.0 (heredada) | HuggingFace |
+| **sohayok-laya-actions** | 321,9 M | no disponible | 91,8 % global / 88,3 % escritorio | Apache-2.0 | Hugging Face, librería `laya` |
+| `algolyzer/laya-bangla` (zero-shot) | no disponible | no disponible | 63,4 % global / 51,7 % escritorio | Apache-2.0 (heredada) | Hugging Face |
 | `qwen3.5:4b` (48 herramientas, sin decisor) | ~4B (nominal en el nombre) | no disponible | 70,7 % herramienta correcta / 65,7 % bengalí | no disponible | no disponible |
 | `qwen3.5:2b` + este decisor | ~2B + 321,9 M | no disponible | 91,4 % herramienta correcta / 90,8 % bengalí | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ La comparación no es completamente homogénea: este modelo elige entre 28 accio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashfaq1306/sohayok-laya-actions
+- Modelo en Hugging Face: https://huggingface.co/ashfaq1306/sohayok-laya-actions
 - Modelo base: https://huggingface.co/algolyzer/laya-bangla
 - Laya multilingual (Convai Innovations): https://huggingface.co/convaiinnovations/laya-multilingual
 - Repositorio de Sohayok: https://github.com/Ashfaq1306/sohayok

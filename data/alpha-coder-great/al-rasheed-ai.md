@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Al-Rasheed AI es un modelo de lenguaje en formato GGUF publicado por el usuario alpha-coder-great en HuggingFace, presentado por su autor como un ajuste fino orientado a conocimiento islamico, referencias coranicas y asistencia religiosa basica. El modelo se distribuye unicamente como fichero cuantizado Q4_K_M y forma parte del proyecto Al-Rasheed Islamic App, una aplicacion movil de enfoque offline-first que integra chat con IA local y, segun la model card, un modelo separado de recitacion.
+Al-Rasheed AI es un modelo de lenguaje en formato GGUF publicado por el usuario alpha-coder-great en Hugging Face, presentado por su autor como un ajuste fino orientado a conocimiento islamico, referencias coranicas y asistencia religiosa basica. El modelo se distribuye unicamente como fichero cuantizado Q4_K_M y forma parte del proyecto Al-Rasheed Islamic App, una aplicacion movil de enfoque offline-first que integra chat con IA local y, segun la model card, un modelo separado de recitacion.
 
 La informacion tecnica publicada es muy escasa: el autor no declara numero de parametros, licencia, idiomas soportados ni composicion del dataset de entrenamiento. La unica referencia arquitectonica es la del propio system prompt del Modelfile, que afirma que el modelo esta construido sobre la arquitectura Llama 3, extremo que no se ha verificado de forma independiente ni se acompana de especificaciones de capas, dimensiones o tokenizador.
 
@@ -17,7 +17,7 @@ Su relevancia actual es limitada pero concreta: cubre un nicho (asistencia islam
 | Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | 8192 tokens, segun el parametro `num_ctx` del Modelfile; no se confirma si es el maximo nativo del modelo base |
 | Tipos de cuantizacion | Q4_K_M (GGUF); no se documentan otras variantes |
-| Idiomas soportados | no disponible (no declarados en los metadatos de HuggingFace ni en la model card) |
+| Idiomas soportados | no disponible (no declarados en los metadatos de Hugging Face ni en la model card) |
 | Licencia | no disponible (no declarada) |
 | Formato de pesos | GGUF (`al-rasheed-ai-Q4_K_M.gguf`) |
 | Nombre del modelo | Al-Rasheed AI |
@@ -101,7 +101,7 @@ Para evaluar alternativas, el criterio practico seria buscar ajustes finos en GG
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alpha-coder-great/al-rasheed-ai
+- Modelo en Hugging Face: https://huggingface.co/alpha-coder-great/al-rasheed-ai
 - Sitio oficial del proyecto y descarga de la app: https://rashidgamer2012.github.io/Al-Rasheed-AI/
 - Paper, blog tecnico o repositorio de entrenamiento: no disponible
 - Resultados de la evaluacion "Islamic LLU": no disponibles (anunciados, no publicados)

@@ -73,8 +73,8 @@ Nota: no se dispone de comparaciones cuantitativas de rendimiento. La eleccion e
 
 ## Enlaces
 
-- HuggingFace (checkpoint): https://huggingface.co/Bryan32/IllustriousPonyXL
-- HuggingFace (LoRAs): https://huggingface.co/Bryan32/IllustriousPonyXL_Loras
+- Hugging Face (checkpoint): https://huggingface.co/Bryan32/IllustriousPonyXL
+- Hugging Face (LoRAs): https://huggingface.co/Bryan32/IllustriousPonyXL_Loras
 - Civitai (checkpoint): https://civitai.com/models/1618044/illustriousponyxl
 - Civitai (ecosistema Illustrious): https://civitai.com/ecosystems/illustrious
 - PromptHero (v1.1): https://prompthero.com/ai-models/illustriousponyxl-download/v1-1

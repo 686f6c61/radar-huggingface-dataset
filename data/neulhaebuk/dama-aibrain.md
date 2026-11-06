@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeulhaeBuk/dama-aibrain | 5,12 mil millones | No disponible | Imagen-texto a texto | apache-2.0 (declarada) | HuggingFace, 0 descargas |
+| NeulhaeBuk/dama-aibrain | 5,12 mil millones | No disponible | Imagen-texto a texto | apache-2.0 (declarada) | Hugging Face, 0 descargas |
 | Gemma 3 4B IT (Google) | Aprox. 4 mil millones | 128k tokens (segun documentacion publica del autor) | Texto e imagen a texto | Gemma Terms of Use | Ampliamente disponible y evaluado |
 | Qwen2.5-VL-7B-Instruct (Alibaba) | Aprox. 8 mil millones | 128k tokens (segun documentacion publica del autor) | Imagen-texto a texto | Apache 2.0 | Ampliamente disponible y evaluado |
 | Llama-3.2-11B-Vision-Instruct (Meta) | Aprox. 10,7 mil millones | 128k tokens (segun documentacion publica del autor) | Imagen-texto a texto | Licencia comunitaria Llama 3.2 | Ampliamente disponible y evaluado |
@@ -87,8 +87,8 @@ Los datos de contexto, parametros y licencia de los modelos de comparacion provi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeulhaeBuk/dama-aibrain
+- Modelo en Hugging Face: https://huggingface.co/NeulhaeBuk/dama-aibrain
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: no se proporciona enlace directo en la informacion disponible; se referencia en la model card de forma generica
+- Libreria TRL de Hugging Face: no se proporciona enlace directo en la informacion disponible; se referencia en la model card de forma generica
 - Papers, blogs o demos adicionales: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre el modelo; los resultados obtenidos no guardaban relacion con la consulta y se han descartado.

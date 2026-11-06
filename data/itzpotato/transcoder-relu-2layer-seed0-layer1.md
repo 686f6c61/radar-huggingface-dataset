@@ -78,6 +78,6 @@ No se dispone de información sobre otros transcoders o sparse autoencoders comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/transcoder-relu-2layer-seed0-layer1
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/transcoder-relu-2layer-seed0-layer1
 - Modelo base: https://huggingface.co/itzPotato/arithmetic-relu-2layer-seed0
 - Repositorio de código (referenciado en la carga, no verificado): `src/transcoder/source.py` y `src/transcoder/config.py` (no se proporciona URL pública)

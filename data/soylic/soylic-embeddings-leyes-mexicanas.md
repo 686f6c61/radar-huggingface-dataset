@@ -6,7 +6,7 @@ Soylic-embeddings-leyes-mexicanas es un modelo de embeddings de frases (sentence
 
 El problema que aborda es la brecha de dominio en sistemas de búsqueda semántica sobre normativa mexicana: los modelos de embeddings generalistas no capturan de forma óptima la terminología legal, las referencias cruzadas entre artículos ni las formulaciones propias de la legislación nacional. Al estar ajustado sobre el corpus legal, resulta relevante para equipos que construyen asistentes de consulta normativa, sistemas de recuperación aumentada (RAG) sobre códigos y leyes, o motores de búsqueda interna en despachos y administraciones públicas.
 
-El modelo es de tamaño reducido (97 millones de parámetros, repo de 0,6 GB) y se distribuye en formatos safetensors y ONNX, lo que facilita su despliegue en infraestructura modesta. Es importante señalar que el acceso está restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargarlo, y no se declara licencia en la información disponible.
+El modelo es de tamaño reducido (97 millones de parámetros, repo de 0,6 GB) y se distribuye en formatos safetensors y ONNX, lo que facilita su despliegue en infraestructura modesta. Es importante señalar que el acceso está restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargarlo, y no se declara licencia en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en FP32: aproximadamente 0,4 GB para los pesos (97 M de parámetros); en FP16 alrededor de 0,2 GB. El consumo real depende del tamaño de lote y de la longitud de secuencia.
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, así como en GPUs de datacenter (A100, H100) donde el cuello de botella será el throughput, no la memoria.
 - Inferencia viable en CPU: la exportación ONNX y el reducido tamaño lo hacen apto para servidores sin GPU.
-- Opciones de despliegue: sentence-transformers (PyTorch), ONNX Runtime, text-embeddings-inference (según los tags del repositorio) y, previsiblemente, integración en motores vectoriales que acepten modelos de HuggingFace.
+- Opciones de despliegue: sentence-transformers (PyTorch), ONNX Runtime, text-embeddings-inference (según los tags del repositorio) y, previsiblemente, integración en motores vectoriales que acepten modelos de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada; a título orientativo, un encoder de 97 M de parámetros procesa lotes de cientos de frases por segundo en GPU moderna, pero no se confirma con datos del autor.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa se limita a modelos de embeddings de propósito general, ya que n
 
 ## Limitaciones y advertencias
 
-- Acceso gated: es necesario aceptar condiciones en HuggingFace antes de la descarga; no es un modelo de uso libre inmediato.
+- Acceso gated: es necesario aceptar condiciones en Hugging Face antes de la descarga; no es un modelo de uso libre inmediato.
 - Licencia no disponible: no puede confirmarse el permiso para uso comercial, lo que supone un riesgo legal relevante en producción.
 - Idioma limitado al castellano: no se garantiza un rendimiento adecuado en otros idiomas, pese a la naturaleza multilingüe del modelo base.
 - Sesgos potenciales: al ajustarse sobre un corpus legal mexicano, puede heredar sesgos de la normativa y de la selección documental realizada por el autor; no se documenta la composición del dataset.
@@ -88,7 +88,7 @@ La comparativa se limita a modelos de embeddings de propósito general, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soylic/soylic-embeddings-leyes-mexicanas
+- Modelo en Hugging Face: https://huggingface.co/soylic/soylic-embeddings-leyes-mexicanas
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
 - Librería sentence-transformers: https://www.sbert.net/
 - Documentación de text-embeddings-inference: https://huggingface.co/docs/text-embeddings-inference

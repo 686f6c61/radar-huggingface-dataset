@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-grokresp703-paired-r64
+- Repositorio Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-grokresp703-paired-r64
 - Modelo base Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b
 - Adaptadores similares del mismo autor:
   - https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-500k-da20-numina

@@ -81,8 +81,8 @@ La comparativa con otros modelos de la misma categoria (otros MoE de escala simi
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/dudeman2512/Qwen3.8-2.4T-A95B-int4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/dudeman2512/Qwen3.8-2.4T-A95B-int4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Variante FP8: https://huggingface.co/dudeman2512/Qwen3.8-2.4T-A95B-FP8
 - Pagina del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

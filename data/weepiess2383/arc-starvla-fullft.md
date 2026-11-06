@@ -58,7 +58,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/weepiess2383/arc-starvla-fullft
+- Repositorio Hugging Face: https://huggingface.co/weepiess2383/arc-starvla-fullft
 - GitHub de StarVLA: https://github.com/starVLA/starVLA
 - Paper de StarVLA (arXiv): https://arxiv.org/abs/2604.05014
 - Documentación de StarVLA: https://starvla.github.io/

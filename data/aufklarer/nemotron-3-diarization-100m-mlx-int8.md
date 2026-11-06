@@ -105,7 +105,7 @@ Los datos disponibles solo permiten comparar el export con su modelo origen, y u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aufklarer/Nemotron-3-Diarization-100M-MLX-INT8
+- Repositorio Hugging Face: https://huggingface.co/aufklarer/Nemotron-3-Diarization-100M-MLX-INT8
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Blog de NVIDIA sobre el modelo de diarizacion: https://huggingface.co/blog/nvidia/nemotron-diarization
 - speech-swift (SDK para Apple): https://github.com/soniqo/speech-swift

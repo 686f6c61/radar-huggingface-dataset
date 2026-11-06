@@ -77,7 +77,7 @@ Los tres modelos pertenecen a la misma familia MOSS-TTS y se diferencian princip
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/niobures/MOSS-TTSD-v1.0
+- Hugging Face: https://huggingface.co/niobures/MOSS-TTSD-v1.0
 - GitHub del proyecto: https://github.com/OpenMOSS/MOSS-TTS/tree/main
 - Paper: https://huggingface.co/papers/2602.10934
 - ModelScope: https://modelscope.cn/collections/OpenMOSS-Team/MOSS-TTS

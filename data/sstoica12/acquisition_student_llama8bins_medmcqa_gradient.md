@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `acquisition_student_llama8bins_medmcqa_gradient` es un modelo de lenguaje con 8.030.261.248 parámetros (8.03B), desarrollado por el usuario `sstoica12` y publicado en HuggingFace. Se trata de un fine-tuning supervisado (SFT) realizado con la librería `trl` sobre un modelo base de arquitectura Llama. Su nombre indica que está orientado al conjunto de datos MedMCQA, un benchmark de preguntas de opción múltiple sobre medicina. La model card publicada es una plantilla automática sin información detallada, pero los metadatos y el tamaño de los pesos permiten situarlo como un modelo de generación de texto de tipo transformer con pesos en formato `safetensors`. Su relevancia radica en ser un ejemplo de ajuste fino para dominios médicos, aunque actualmente no se dispone de información sobre su rendimiento, licencia o idiomas soportados.
+El modelo `acquisition_student_llama8bins_medmcqa_gradient` es un modelo de lenguaje con 8.030.261.248 parámetros (8.03B), desarrollado por el usuario `sstoica12` y publicado en Hugging Face. Se trata de un fine-tuning supervisado (SFT) realizado con la librería `trl` sobre un modelo base de arquitectura Llama. Su nombre indica que está orientado al conjunto de datos MedMCQA, un benchmark de preguntas de opción múltiple sobre medicina. La model card publicada es una plantilla automática sin información detallada, pero los metadatos y el tamaño de los pesos permiten situarlo como un modelo de generación de texto de tipo transformer con pesos en formato `safetensors`. Su relevancia radica en ser un ejemplo de ajuste fino para dominios médicos, aunque actualmente no se dispone de información sobre su rendimiento, licencia o idiomas soportados.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo `acquisition_student_llama8bins_medmcqa_gradient` es un modelo de leng
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo es un transformer de tipo decodificador dentro de la familia Llama, con un total de 8.030.261.248 parámetros. Los pesos se distribuyen en formato `safetensors`, lo que indica que se trata de un modelo completo listo para cargarse con la librería `transformers`. La etiqueta `llama` en HuggingFace confirma que la arquitectura base es de tipo Llama, aunque no se especifica la versión exacta. El número de parámetros coincide con el de Llama 3.1 8B, pero no hay confirmación explícita.
+La arquitectura del modelo es un transformer de tipo decodificador dentro de la familia Llama, con un total de 8.030.261.248 parámetros. Los pesos se distribuyen en formato `safetensors`, lo que indica que se trata de un modelo completo listo para cargarse con la librería `transformers`. La etiqueta `llama` en Hugging Face confirma que la arquitectura base es de tipo Llama, aunque no se especifica la versión exacta. El número de parámetros coincide con el de Llama 3.1 8B, pero no hay confirmación explícita.
 
 El entrenamiento se realizó mediante fine-tuning supervisado (SFT) utilizando la librería `trl`, como indican las etiquetas del repositorio. Por el nombre del modelo, `medmcqa`, se deduce que el conjunto de datos de entrenamiento es MedMCQA, un benchmark de preguntas de opción múltiple sobre medicina. No se ha publicado información sobre el número de tokens, la composición exacta del dataset, los hiperparámetros de entrenamiento ni sobre técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas destacables más allá del ajuste fino.
 
@@ -64,8 +64,8 @@ No se dispone de información suficiente para establecer una comparativa complet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| acquisition_student_llama8bins_medmcqa_gradient | 8.03B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B (base, no confirmado) | 8.03B | 128K | Llama 3.1 Community License | HuggingFace |
+| acquisition_student_llama8bins_medmcqa_gradient | 8.03B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B (base, no confirmado) | 8.03B | 128K | Llama 3.1 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se dispone de información suficiente para establecer una comparativa complet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sstoica12/acquisition_student_llama8bins_medmcqa_gradient
+- Hugging Face: https://huggingface.co/sstoica12/acquisition_student_llama8bins_medmcqa_gradient
 - Modelos relacionados del mismo autor:
   - https://huggingface.co/sstoica12/acquisition_student_base_llama8bins_numina
   - https://huggingface.co/sstoica12/acquisition_student_filtered_numina_llama8bins

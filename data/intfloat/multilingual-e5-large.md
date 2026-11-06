@@ -2,7 +2,7 @@
 
 ## Resumen
 
-multilingual-e5-large es un modelo de embeddings de frases (sentence embeddings) desarrollado por el equipo intfloat y publicado en HuggingFace bajo licencia MIT. Se trata de la variante grande de la familia E5, construida sobre la arquitectura XLM-RoBERTa, un transformer encoder multilingue. Con 559.890.946 par\u00e1metros (~560 M), el modelo transforma texto en vectores densos de 1024 dimensiones que capturan similitud sem\u00e1ntica entre frases, p\u00e1rrafos o documentos completos.
+multilingual-e5-large es un modelo de embeddings de frases (sentence embeddings) desarrollado por el equipo intfloat y publicado en Hugging Face bajo licencia MIT. Se trata de la variante grande de la familia E5, construida sobre la arquitectura XLM-RoBERTa, un transformer encoder multilingue. Con 559.890.946 par\u00e1metros (~560 M), el modelo transforma texto en vectores densos de 1024 dimensiones que capturan similitud sem\u00e1ntica entre frases, p\u00e1rrafos o documentos completos.
 
 El problema que resuelve es la representaci\u00f3n sem\u00e1ntica multiling\u00fce: frente a modelos monoling\u00fces o a aproximaciones basadas en solapamiento l\u00e9xico, multilingual-e5-large permite comparar textos en 100 idiomas dentro de un mismo espacio vectorial. Esto lo hace id\u00f3neo para b\u00fasqueda sem\u00e1ntica, recuperaci\u00f3n aumentada (RAG), clustering y clasificaci\u00f3n zero-shot, tareas en las que sigue siendo uno de los modelos de referencia del benchmark MTEB en su categor\u00eda de tama\u00f1o.
 
@@ -112,7 +112,7 @@ Las cifras de los modelos alternativos no se han verificado dentro de la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/intfloat/multilingual-e5-large
+- Hugging Face: https://huggingface.co/intfloat/multilingual-e5-large
 - Paper E5 (familia base): https://arxiv.org/abs/2212.03533
 - Paper referenciado en tags: https://arxiv.org/abs/2402.05672
 - Paper referenciado en tags: https://arxiv.org/abs/2108.08787

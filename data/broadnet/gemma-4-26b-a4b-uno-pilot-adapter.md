@@ -91,14 +91,14 @@ No se dispone de datos de rendimiento de alternativas comparables (adaptadores E
 - Compatibilidad restringida: el adaptador se entrenó y evaluó sobre la revisión `0ef577a5710035bd2d3a3f27e4f5cb2e86a9a9ba` del checkpoint AWQ; la compatibilidad, la aceptación y el throughput en otros checkpoints requieren validación.
 - No es aplicable a otros tamaños de Gemma 4: los modelos de 31B denso y E4B tienen formas distintas.
 - Requiere el fork vLLM-Uno v0.3.0 o posterior y el backend `TRITON_ATTN`; el fork impone restricciones como la exigencia de un único grupo de KV.
-- Idiomas limitados a inglés y árabe, según los idiomas declarados en la ficha de HuggingFace.
+- Idiomas limitados a inglés y árabe, según los idiomas declarados en la ficha de Hugging Face.
 - Riesgo de alucinación y sesgos heredados del modelo base Gemma 4 26B A4B, no evaluados ni corregidos por este adaptador.
 - Advertencia de procedencia de datos: 220 de las 965 filas (22,8%) provienen de `m-a-p/CodeFeedback-Filtered-Instruction`, que contiene texto generado por OpenAI, según se indica en la propia model card; conviene revisar las condiciones de uso de ese conjunto antes de un uso comercial.
 - Adopción nula en el momento de la consulta: 0 descargas y 0 "likes", sin validación externa de la comunidad.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Broadnet/gemma-4-26B-A4B-uno-pilot-adapter
+- Ficha en Hugging Face: https://huggingface.co/Broadnet/gemma-4-26B-A4B-uno-pilot-adapter
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Checkpoint cuantizado usado para entrenar y medir: https://huggingface.co/cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit
 - Repositorio del fork de servicio: https://github.com/brntech/vllm-uno

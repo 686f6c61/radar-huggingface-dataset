@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jsbzzz/train1` es una política de robótica basada en ACT (Action Chunking with Transformers), el método de aprendizaje por imitación descrito en el paper arXiv:2304.13705, y publicada en HuggingFace mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visomotor que recibe el estado articular de un brazo robótico y una imagen de una cámara en la muñeca, y emite directamente comandos de acción de 6 dimensiones. El repositorio lo firma el usuario `jsbzzz` y tiene un tamaño de 0,2 GB con 51.668.614 parámetros.
+`jsbzzz/train1` es una política de robótica basada en ACT (Action Chunking with Transformers), el método de aprendizaje por imitación descrito en el paper arXiv:2304.13705, y publicada en Hugging Face mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visomotor que recibe el estado articular de un brazo robótico y una imagen de una cámara en la muñeca, y emite directamente comandos de acción de 6 dimensiones. El repositorio lo firma el usuario `jsbzzz` y tiene un tamaño de 0,2 GB con 51.668.614 parámetros.
 
 El modelo está entrenado para una única tarea concreta, "Put the gray eraser on box", a partir de un dataset propio de teleoperación (IMCON/OMX_LeRobot_20261009_190057) con solo 10 episodios, 4.475 fotogramas y 30 FPS. El robot objetivo es un `omx_follower` con una cámara en la muñeca. Su relevancia es fundamentalmente como artefacto de investigación reproducible: sirve para validar el pipeline completo de LeRobot (grabación de datos, entrenamiento y despliegue con `lerobot-rollout`) y como punto de partida para fine-tuning en tareas de manipulación similares.
 
@@ -67,10 +67,10 @@ No hay datos de benchmarks de esta política, por lo que la comparación se limi
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jsbzzz/train1 (ACT) | 51,7 M (dato real del safetensors) | estado `(6,)` + imagen `(3, 480, 640)` | pick-and-place de una sola tarea | no disponible | HuggingFace, 0 descargas |
+| jsbzzz/train1 (ACT) | 51,7 M (dato real del safetensors) | estado `(6,)` + imagen `(3, 480, 640)` | pick-and-place de una sola tarea | no disponible | Hugging Face, 0 descargas |
 | ACT de referencia (arXiv:2304.13705) | no disponible en esta busqueda | bimanual, multiples camaras | manipulación fina bimanual | no disponible | paper y código publicos |
 | Diffusion Policy | no disponible en esta busqueda | observaciones visuales y de estado | imitación generativa por difusión | no disponible | publicación y repositorio publicos |
-| SmolVLA (familia LeRobot) | no disponible en esta busqueda | vision-lenguaje-accion | políticas VLA multi-tarea | no disponible | HuggingFace y LeRobot |
+| SmolVLA (familia LeRobot) | no disponible en esta busqueda | vision-lenguaje-accion | políticas VLA multi-tarea | no disponible | Hugging Face y LeRobot |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No hay datos de benchmarks de esta política, por lo que la comparación se limi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsbzzz/train1
+- Modelo en Hugging Face: https://huggingface.co/jsbzzz/train1
 - Dataset de entrenamiento: https://huggingface.co/datasets/IMCON/OMX_LeRobot_20261009_190057
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=IMCON/OMX_LeRobot_20261009_190057
 - Paper de ACT: https://huggingface.co/papers/2304.13705

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Resume-Step-10000",
+  "slug": "dddddsds31341-rlinf-rlt-franka-wipe-whiteboard-stage1-resume-step-10000",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Resume-Step-10000",
+  "created_at": "2026-11-06T09:16:08.000Z",
+  "updated_at": "2026-11-06T11:07:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "rlinf",
+  "languages": [],
+  "tags": [
+    "rlinf",
+    "robotics",
+    "rlt",
+    "openpi",
+    "training-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43575866700,
+  "storage_human": "43.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLinf RLT Franka Wipe Whiteboard — Stage 1, step 10,000",
+      "url": "https://huggingface.co/dddddsds31341/RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Step-10000",
+      "snippet": "Evaluation weights from run rlt-wipe-whiteboard-g7-bs4-ga8-s20000-20261104-v14, optimizer step 10,000, with a target of 20,000 steps. This is the RLinf RLT Stage 1 experiment, separate from the account's ordinary Franka pi0.5 SFT collections."
+    },
+    {
+      "title": "dddddsds31341/Franka-Wipe-Whiteboard-pi05-step-5000 · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Franka-Wipe-Whiteboard-pi05-step-5000",
+      "snippet": "The repository contains an OpenPI/Orbax checkpoint with EMA parameters and normalization statistics. It is an inference checkpoint and does not include optimizer state for exact training resume. Use the pi05_franka_wipe_whiteboard OpenPI configuration and point policy.dir to the downloaded repository root."
+    }
+  ]
+}

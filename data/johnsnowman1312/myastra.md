@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Johnsnowman1312/myastra` es un proyecto publicado en HuggingFace por el usuario `Johnsnowman1312`. La única información disponible es que se distribuye bajo licencia Apache 2.0; no se incluye ninguna documentación técnica, pesos, ni descripción de la funcionalidad.
+El repositorio `Johnsnowman1312/myastra` es un proyecto publicado en Hugging Face por el usuario `Johnsnowman1312`. La única información disponible es que se distribuye bajo licencia Apache 2.0; no se incluye ninguna documentación técnica, pesos, ni descripción de la funcionalidad.
 
 En la información proporcionada no se especifica arquitectura, tamaño, longitud de contexto ni datos de entrenamiento, por lo que no es posible evaluar su relevancia ni su utilidad práctica. El repositorio registra 0 descargas y 0 me gusta, lo que sugiere que se trata de un proyecto sin contenido publicado o en una fase muy inicial. No se puede confirmar que contenga un modelo utilizable.
 
@@ -68,5 +68,5 @@ No disponible: al no existir información sobre arquitectura, parámetros o capa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Johnsnowman1312/myastra
+- Hugging Face: https://huggingface.co/Johnsnowman1312/myastra
 - Model card: no disponible más allá de la etiqueta de licencia.

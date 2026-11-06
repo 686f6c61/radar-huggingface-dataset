@@ -18,7 +18,7 @@ Es relevante porque permite desplegar localmente un modelo MoE de 24B con solo 2
 | Longitud de contexto | no disponible de forma explicita; los ejemplos de la model card usan -c 32768 y se supera una prueba needle a 30k tokens |
 | Tipos de cuantizacion | GGUF: Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ3_M (IQ3_XXS generada pero no publicada); adaptador LoRA en GGUF |
 | Idiomas soportados | en, ar, zh, fr, de, ja, ko, es, pt, it |
-| Licencia | lfm1.0 (LFM Open License v1.0); en metadatos de HuggingFace figura como "other"/lfm1.0 |
+| Licencia | lfm1.0 (LFM Open License v1.0); en metadatos de Hugging Face figura como "other"/lfm1.0 |
 | Formato de pesos | GGUF (modelos completos) y GGUF (adaptador LoRA) |
 
 ## Arquitectura y entrenamiento
@@ -112,7 +112,7 @@ No se dispone de datos de contexto, licencia ni benchmarks detallados de Qwen3.6
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF
 - Coleccion del autor: https://huggingface.co/collections/AtomicChat/lfm25-24b-a2b-uncensored
 - Metricas publicas: https://huggingface.co/datasets/AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF-metrics
 - Cuantizaciones originales del mismo autor: https://huggingface.co/AtomicChat/LFM2.5-24B-A2B-GGUF

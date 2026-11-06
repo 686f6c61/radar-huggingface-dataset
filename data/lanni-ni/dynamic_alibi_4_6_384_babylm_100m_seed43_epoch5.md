@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dynamic_alibi_4_6_384_babylm_100m_seed43_epoch5 | 45,7 M | 384 (no confirmado) | no disponible | HuggingFace |
-| dynamic_alibi_4_6_384_babylm_100m_epoch7 | no disponible | no disponible | no disponible | HuggingFace |
-| dynamic_alibi_4_6_384_babylm_10m_inverse_epoch4 | no disponible | no disponible | no disponible | HuggingFace |
+| dynamic_alibi_4_6_384_babylm_100m_seed43_epoch5 | 45,7 M | 384 (no confirmado) | no disponible | Hugging Face |
+| dynamic_alibi_4_6_384_babylm_100m_epoch7 | no disponible | no disponible | no disponible | Hugging Face |
+| dynamic_alibi_4_6_384_babylm_10m_inverse_epoch4 | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre benchmarks ni de modelos comparables de la misma categoría con datos públicos. Los modelos listados pertenecen a la misma familia de experimentos de Lanni-ni, pero carecen de documentación detallada.
 
@@ -75,7 +75,7 @@ No se dispone de información sobre benchmarks ni de modelos comparables de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch5
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch5
 - Modelos relacionados: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7
 - Modelos relacionados: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_inverse_epoch4
 - Paper de referencia (ALiBi): https://arxiv.org/abs/1910.09700

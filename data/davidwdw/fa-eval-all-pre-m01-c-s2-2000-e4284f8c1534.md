@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-eval-all-pre-m01-c-s2-2000-e4284f8c1534` no es un modelo de lenguaje en el sentido habitual, sino un paquete de datos versionado publicado en HuggingFace. La propia model card lo describe como "versioned fleet archive" y "snapshot, not a live directory mirror", con una receta canonica asociada (`evaluations/2026-09-26_b1k_all_existing_queue`) y un nivel ("tier") compuesto por episodios, JSON, videos, traces, logs, protocolo, scripts, input y receipt. El repositorio ocupa 0,4 GB y fue creado y actualizado el 7 de octubre de 2026.
+El artefacto identificado como `davidwdw/fa-eval-all-pre-m01-c-s2-2000-e4284f8c1534` no es un modelo de lenguaje en el sentido habitual, sino un paquete de datos versionado publicado en Hugging Face. La propia model card lo describe como "versioned fleet archive" y "snapshot, not a live directory mirror", con una receta canonica asociada (`evaluations/2026-09-26_b1k_all_existing_queue`) y un nivel ("tier") compuesto por episodios, JSON, videos, traces, logs, protocolo, scripts, input y receipt. El repositorio ocupa 0,4 GB y fue creado y actualizado el 7 de octubre de 2026.
 
 No se dispone de informacion sobre arquitectura, parametros, contexto o licencia, ni la model card menciona pesos, tokenizador o pipeline de inferencia. Por el vocabulario empleado (recetas, revisiones, SHA256SUMS, receipts, traces), todo apunta a un artefacto de reproducibilidad para auditoria de evaluaciones, mas que a un modelo entrenado y desplegable.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fa-eval-all-pre-m01-c-s2-2000 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| fa-eval-all-pre-m01-c-s2-2000 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables identificables con la informacion proporcionada, ya que no se especifica la categoria funcional del artefacto (no es un modelo de lenguaje declarado).
@@ -90,7 +90,7 @@ No se dispone de modelos comparables identificables con la informacion proporcio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-c-s2-2000-e4284f8c1534
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-c-s2-2000-e4284f8c1534
 - Receta canonica referenciada en la model card: `evaluations/2026-09-26_b1k_all_existing_queue` (no se ha localizado URL publica)
 - Paper, blog, repositorio o demo asociados: no disponibles
 - Resultados de busqueda web: no se han encontrado fuentes tecnicas relevantes sobre este artefacto

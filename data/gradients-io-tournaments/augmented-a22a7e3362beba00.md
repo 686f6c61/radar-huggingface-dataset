@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/augmented-a22a7e3362beba00` es un checkpoint de generación de texto de 1.170.340.608 parámetros (aproximadamente 1,17 mil millones) publicado en HuggingFace por la organización `gradients-io-tournaments`. El nombre del repositorio sugiere que se trata del resultado de un torneo o experimento automatizado de ajuste fino, aunque no hay documentación que lo confirme: la model card es exactamente la plantilla autogenerada de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+El modelo `gradients-io-tournaments/augmented-a22a7e3362beba00` es un checkpoint de generación de texto de 1.170.340.608 parámetros (aproximadamente 1,17 mil millones) publicado en Hugging Face por la organización `gradients-io-tournaments`. El nombre del repositorio sugiere que se trata del resultado de un torneo o experimento automatizado de ajuste fino, aunque no hay documentación que lo confirme: la model card es exactamente la plantilla autogenerada de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 La única pista técnica sobre su naturaleza es la etiqueta `lfm2` incluida en los tags del repositorio, que apunta a la familia de arquitecturas LFM2 (Liquid Foundation Models, de Liquid AI), si bien esto no está confirmado por el autor ni por ninguna documentación adicional. El pipeline declarado es `text-generation` y la etiqueta `conversational` indica que está orientado a diálogo, pero se desconoce el contexto máximo, los idiomas soportados, la licencia y el proceso de entrenamiento.
 
@@ -31,13 +31,13 @@ Su relevancia actual es muy limitada: acumula cero descargas y cero "likes", no 
 
 No hay información publicada sobre la arquitectura interna, el número de capas, las dimensiones del modelo, el mecanismo de atención ni el tokenizador. La única referencia disponible es la etiqueta `lfm2`, que apuntaría a la familia LFM2 de Liquid AI, caracterizada por bloques convolucionales y de atención con un diseño orientado a eficiencia en dispositivos de borde. No obstante, la etiqueta por sí sola no permite confirmar que los pesos sigan realmente esa arquitectura ni con qué configuración.
 
-Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste por instrucciones, RLHF, DPO u otra técnica de alineamiento. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre el cálculo de impacto ambiental, que aparece de forma literal en la plantilla estándar de model card de HuggingFace; es decir, no es una referencia al paper del modelo. El campo de impacto ambiental tampoco está rellenado.
+Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste por instrucciones, RLHF, DPO u otra técnica de alineamiento. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre el cálculo de impacto ambiental, que aparece de forma literal en la plantilla estándar de model card de Hugging Face; es decir, no es una referencia al paper del modelo. El campo de impacto ambiental tampoco está rellenado.
 
 ## Capacidades
 
 - Generación de texto: es la única capacidad confirmada, ya que el pipeline declarado en el Hub es `text-generation`.
 - Conversación: la etiqueta `conversational` sugiere uso en diálogo multi-turno, aunque no hay documentación sobre el formato de prompt ni sobre plantillas de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el checkpoint puede desplegarse mediante Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el checkpoint puede desplegarse mediante Inference Endpoints de Hugging Face.
 - Razonamiento, código y matemáticas: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -78,10 +78,10 @@ Los datos de los modelos comparables son valores públicos de referencia de cada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gradients-io-tournaments/augmented-a22a7e3362beba00 | 1,17 B | no disponible | no disponible | HuggingFace, sin cuantizaciones publicadas |
-| LFM2-1.2B (Liquid AI) | ~1,2 B | 32.768 tokens (referencia) | LFM Open License v1.0 (referencia) | HuggingFace, con GGUF |
-| Qwen2.5-1.5B (Alibaba) | ~1,5 B | 32.768 tokens (referencia) | Apache 2.0 (referencia) | HuggingFace, con GGUF y múltiples cuantizaciones |
-| Llama-3.2-1B (Meta) | ~1,2 B | 128.000 tokens (referencia) | Llama 3.2 Community License (referencia) | HuggingFace, con GGUF |
+| gradients-io-tournaments/augmented-a22a7e3362beba00 | 1,17 B | no disponible | no disponible | Hugging Face, sin cuantizaciones publicadas |
+| LFM2-1.2B (Liquid AI) | ~1,2 B | 32.768 tokens (referencia) | LFM Open License v1.0 (referencia) | Hugging Face, con GGUF |
+| Qwen2.5-1.5B (Alibaba) | ~1,5 B | 32.768 tokens (referencia) | Apache 2.0 (referencia) | Hugging Face, con GGUF y múltiples cuantizaciones |
+| Llama-3.2-1B (Meta) | ~1,2 B | 128.000 tokens (referencia) | Llama 3.2 Community License (referencia) | Hugging Face, con GGUF |
 
 En términos de rendimiento no es posible establecer comparación alguna, porque el modelo analizado no publica resultados de benchmarks. A igualdad de tamaño, los tres modelos de referencia documentan contexto, licencia y evaluaciones, mientras que el checkpoint de `gradients-io-tournaments` carece de los tres.
 
@@ -99,7 +99,7 @@ En términos de rendimiento no es posible establecer comparación alguna, porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-a22a7e3362beba00
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-a22a7e3362beba00
 - Perfil de la organizacion: https://huggingface.co/gradients-io-tournaments
 - Paper citado en las etiquetas (Lacoste et al., 2019, calculo de impacto ambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML, referenciada en la plantilla de model card: https://mlco2.github.io/impact

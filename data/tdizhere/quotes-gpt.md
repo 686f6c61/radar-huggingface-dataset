@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quotes GPT es un modelo de generación de texto a nivel de carácter desarrollado por el usuario tdizhere, publicado en HuggingFace bajo licencia MIT. Se trata de un transformer decoder-only de estilo GPT, con 6 bloques, 6 cabezas de atención, dimensión de embedding de 384 y una ventana de contexto de 512 caracteres. Con aproximadamente 20,3 millones de parámetros según el recuento real de los pesos en safetensors, es un modelo diminuto pensado para experimentación educativa y para demostrar el funcionamiento de la arquitectura GPT desde cero.
+Quotes GPT es un modelo de generación de texto a nivel de carácter desarrollado por el usuario tdizhere, publicado en Hugging Face bajo licencia MIT. Se trata de un transformer decoder-only de estilo GPT, con 6 bloques, 6 cabezas de atención, dimensión de embedding de 384 y una ventana de contexto de 512 caracteres. Con aproximadamente 20,3 millones de parámetros según el recuento real de los pesos en safetensors, es un modelo diminuto pensado para experimentación educativa y para demostrar el funcionamiento de la arquitectura GPT desde cero.
 
 El modelo se entrena sobre el dataset Colby/quotes, una colección de citas positivas en inglés, y funciona con tokenización a nivel de carácter sobre un vocabulario de solo 94 símbolos. Esto lo aleja de los usos de producción reales, pero lo convierte en un banco de pruebas barato para estudiar autoregresión, decodificación, atención causal y efectos de overfitting en corpus pequeños.
 
@@ -55,7 +55,7 @@ El resultado de validación declarado por el autor es una pérdida de entropía 
 - Pruebas de pipelines de generación: al ser tan pequeño, es útil para validar infraestructura de serving (carga de state dict, gestión de vocab, decodificación) antes de pasar a modelos reales.
 - Estudio de overfitting y regularización: con dropout 0,2 y 11.000 pasos sobre un corpus reducido, es un caso práctico para analizar memorización frente a generalización en modelos pequeños.
 - Benchmarking de latencia en CPU: al generar carácter a carácter con contexto 512, permite medir cuellos de botella en bucles de decodificación sin depender de GPU.
-- Ejemplo de publicación de modelos en HuggingFace: el repositorio ilustra el flujo completo de subida (config, vocab, pesos, model card con model-index) para quienes publican su primer modelo.
+- Ejemplo de publicación de modelos en Hugging Face: el repositorio ilustra el flujo completo de subida (config, vocab, pesos, model card con model-index) para quienes publican su primer modelo.
 - Filtrado o aumento de datos sintéticos de texto corto: puede generar variantes de frases para aumentar un dataset de citas, siempre con revisión humana posterior.
 
 ## Benchmarks y rendimiento
@@ -79,10 +79,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parámetros | Contexto | Tokenización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| quotes-gpt (tdizhere) | 20,3 M (safetensors) / 10,9 M declarados | 512 | Carácter, vocab 94 | MIT | HuggingFace, 0 descargas |
-| GPT-2 small | 124 M | 1024 | BPE, vocab 50257 | MIT | HuggingFace, ampliamente integrado en vLLM, llama.cpp, TGI |
+| quotes-gpt (tdizhere) | 20,3 M (safetensors) / 10,9 M declarados | 512 | Carácter, vocab 94 | MIT | Hugging Face, 0 descargas |
+| GPT-2 small | 124 M | 1024 | BPE, vocab 50257 | MIT | Hugging Face, ampliamente integrado en vLLM, llama.cpp, TGI |
 | nanoGPT (char-level Shakespeare, referencia de Karpathy) | ~10,6 M | 256-1024 según configuración | Carácter | MIT | Repositorio GitHub, reproducibilidad total |
-| Modelos TinyStories (~1-30 M) | 1-30 M | 512-2048 | BPE o carácter | MIT / Apache-2.0 según variante | HuggingFace |
+| Modelos TinyStories (~1-30 M) | 1-30 M | 512-2048 | BPE o carácter | MIT / Apache-2.0 según variante | Hugging Face |
 
 En rendimiento no hay comparación posible: el model-index de quotes-gpt solo reporta pérdida de entropía cruzada sobre su propio dataset, y no se dispone de resultados de los modelos alternativos en ese mismo corpus. La diferencia práctica principal está en el ecosistema: GPT-2 small y los modelos TinyStories cuentan con conversiones GGUF, soporte en motores de inferencia y plantillas de uso, mientras que quotes-gpt requiere reconstruir la clase del modelo desde el script de entrenamiento original (no incluido en el repositorio).
 
@@ -103,7 +103,7 @@ En rendimiento no hay comparación posible: el model-index de quotes-gpt solo re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tdizhere/quotes-gpt
+- Modelo en Hugging Face: https://huggingface.co/tdizhere/quotes-gpt
 - Dataset de entrenamiento: https://huggingface.co/datasets/Colby/quotes
 - Paper o blog del autor: no disponible
 - Repositorio de código: no disponible

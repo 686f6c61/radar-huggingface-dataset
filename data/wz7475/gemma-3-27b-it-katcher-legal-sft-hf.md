@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/gemma-3-27b-it-katcher-legal-sft-hf` es un repositorio alojado en HuggingFace por el usuario wz7475. El identificador sugiere que se trata de un ajuste fino supervisado (SFT) sobre el modelo base Gemma 3 27B en su variante instruction-tuned, aparentemente orientado al dominio legal, si bien esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por la model card. La model card publicada es la plantilla automatica de HuggingFace, sin contenido sustantivo relleno por el autor.
+El modelo `wz7475/gemma-3-27b-it-katcher-legal-sft-hf` es un repositorio alojado en Hugging Face por el usuario wz7475. El identificador sugiere que se trata de un ajuste fino supervisado (SFT) sobre el modelo base Gemma 3 27B en su variante instruction-tuned, aparentemente orientado al dominio legal, si bien esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por la model card. La model card publicada es la plantilla automatica de Hugging Face, sin contenido sustantivo relleno por el autor.
 
 El repositorio no presenta descargas ni interacciones en el momento de la consulta, y su tamano es de 0,9 GB. Este dato es tecnicamente relevante: los pesos completos de un modelo de 27 000 millones de parametros en precision bf16 ocuparian en torno a 54 GB, por lo que 0,9 GB apunta a un conjunto de adaptadores (por ejemplo, LoRA) o a un unico fichero parcial, y no a los pesos completos del modelo.
 
@@ -23,9 +23,9 @@ No se dispone de informacion publicada sobre arquitectura, datos de entrenamient
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura, el procedimiento de entrenamiento, el volumen de tokens ni la composicion del dataset en la model card del repositorio. La model card es la plantilla generada automaticamente por HuggingFace, en la que todos los apartados relevantes (descripcion del modelo, fuentes, datos de entrenamiento, hiperparametros y evaluacion) aparecen marcados como `[More Information Needed]`.
+No se ha publicado informacion sobre la arquitectura, el procedimiento de entrenamiento, el volumen de tokens ni la composicion del dataset en la model card del repositorio. La model card es la plantilla generada automaticamente por Hugging Face, en la que todos los apartados relevantes (descripcion del modelo, fuentes, datos de entrenamiento, hiperparametros y evaluacion) aparecen marcados como `[More Information Needed]`.
 
-El identificador del repositorio indica dos elementos que, de confirmarse, definirian la arquitectura: por un lado, `gemma-3-27b-it` como modelo base, que corresponderia a un transformer decoder-only multimodal desarrollado por Google; por otro, `katcher-legal-sft`, que sugiere un ajuste fino supervisado sobre un corpus de dominio legal, presumiblemente denominado Katcher. El sufijo `-hf` podria indicar una conversion o adaptacion al formato nativo de la libreria transformers. Ninguno de estos extremos puede verificarse con la informacion proporcionada. La etiqueta `arxiv:1910.09700` presente en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre el calculo del impacto de carbono en aprendizaje automatico, que forma parte de la plantilla por defecto de HuggingFace y no constituye una referencia tecnica al modelo.
+El identificador del repositorio indica dos elementos que, de confirmarse, definirian la arquitectura: por un lado, `gemma-3-27b-it` como modelo base, que corresponderia a un transformer decoder-only multimodal desarrollado por Google; por otro, `katcher-legal-sft`, que sugiere un ajuste fino supervisado sobre un corpus de dominio legal, presumiblemente denominado Katcher. El sufijo `-hf` podria indicar una conversion o adaptacion al formato nativo de la libreria transformers. Ninguno de estos extremos puede verificarse con la informacion proporcionada. La etiqueta `arxiv:1910.09700` presente en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre el calculo del impacto de carbono en aprendizaje automatico, que forma parte de la plantilla por defecto de Hugging Face y no constituye una referencia tecnica al modelo.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ La informacion proporcionada no incluye datos verificados de este ajuste que per
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wz7475/gemma-3-27b-it-katcher-legal-sft-hf | no disponible (presuntamente 27B) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| wz7475/gemma-3-27b-it-katcher-legal-sft-hf | no disponible (presuntamente 27B) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Gemma 3 27B IT (modelo base de referencia) | 27B | 128 000 tokens | Si (vision) | Terminos de uso de Gemma | Ampliamente disponible |
 | Qwen2.5-32B-Instruct (alternativa de referencia) | 32B | 128 000 tokens | No | Apache 2.0 en la mayoria de variantes | Ampliamente disponible |
 | Mistral Small 3.1 24B (alternativa de referencia) | 24B | 128 000 tokens | Si (vision) | Apache 2.0 | Ampliamente disponible |
@@ -95,6 +95,6 @@ Los datos de contexto, licencia y modalidad de las alternativas corresponden a i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/gemma-3-27b-it-katcher-legal-sft-hf
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/gemma-3-27b-it-katcher-legal-sft-hf
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto de carbono): https://arxiv.org/abs/1910.09700
 - Documentacion oficial del modelo base Gemma 3 (referencia externa, no incluida en el repositorio): no disponible en la informacion proporcionada.

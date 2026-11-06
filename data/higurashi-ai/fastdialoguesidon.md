@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastDialogueSidon es un modelo de separación y restauración de diálogo full-duplex desarrollado por higurashi-ai, publicado como pesos en HuggingFace en octubre de 2026. Es la versión acelerada de DialogueSidon (presentado en SIGDIAL 2026): toma hasta 120 segundos de audio de diálogo mono a 16 kHz con dos hablantes solapados y devuelve dos pistas separadas de 24 kHz por hablante, resolviendo el problema de recuperar conversaciones naturales de "in the wild" donde los interlocutores se interrumpen y solapan constantemente.
+FastDialogueSidon es un modelo de separación y restauración de diálogo full-duplex desarrollado por higurashi-ai, publicado como pesos en Hugging Face en octubre de 2026. Es la versión acelerada de DialogueSidon (presentado en SIGDIAL 2026): toma hasta 120 segundos de audio de diálogo mono a 16 kHz con dos hablantes solapados y devuelve dos pistas separadas de 24 kHz por hablante, resolviendo el problema de recuperar conversaciones naturales de "in the wild" donde los interlocutores se interrumpen y solapan constantemente.
 
 Su relevancia radica en la velocidad: sustituye los 30 pasos de difusión del modelo original por un único paso de un cabezal DiT (Diffusion Transformer) y reemplaza el decodificador DAC por un decodificador latente ligero de 30 M de parámetros (SAN-WaveNeXt2). El resultado es una aceleración de entre 86x y 107x respecto a DialogueSidon en una H100, manteniendo una calidad de separación prácticamente equivalente (WER incluso inferior en OpenDialog). Con un tamaño total de unos 1,73 GB en pesos fp32 y backends Triton y TensorRT listos para producción, es una herramienta muy práctica para pipelines de procesamiento de audio conversacional multilingüe (inglés, japonés, alemán, español, francés y chino).
 
@@ -113,7 +113,7 @@ FastDialogueSidon se posiciona como sustituto directo de DialogueSidon con calid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/higurashi-ai/FastDialogueSidon
+- Modelo en Hugging Face: https://huggingface.co/higurashi-ai/FastDialogueSidon
 - Repositorio de código (backends Triton y TensorRT): https://github.com/higurashi-ai/FastDialogueSidon
 - Artículo de DialogueSidon (arXiv): https://arxiv.org/abs/2604.09344
 - Informe técnico de FastDialogueSidon (Rikuto Kotoge): aún no publicado

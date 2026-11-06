@@ -88,9 +88,9 @@ El modelo se sitúa entre la versión ligera de 0,8 B y la versión grande de 9 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/irl-kit/SPARC-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/irl-kit/SPARC-Qwen3.5-4B
 - Dataset SPARC-VQA: https://huggingface.co/datasets/irl-kit/SPARC-VQA
 - Dataset SPARC-VQA-Mixture: https://huggingface.co/datasets/irl-kit/SPARC-VQA-Mixture
 - Paper arXiv: https://arxiv.org/abs/2606.13497 (SPARC: Reliable Spatial Annotations from Robot Demonstrations at Scale)
-- Modelo base Qwen3.5-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B (referencia, no el mismo modelo)
+- Modelo base Qwen3.5-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B (referencia, no el mismo modelo)
 - Receta de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3.5-4B

@@ -30,7 +30,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composición d
 ## Capacidades
 
 - Generación de texto e instrucciones: el sufijo "Instruct" del modelo base indica ajuste para seguir instrucciones, aunque no se detalla el formato de prompt recomendado.
-- Multilingüismo: el nombre declara cobertura de 50 idiomas, con foco previsible en lenguas africanas; los metadatos de HuggingFace solo listan inglés.
+- Multilingüismo: el nombre declara cobertura de 50 idiomas, con foco previsible en lenguas africanas; los metadatos de Hugging Face solo listan inglés.
 - Capacidad multimodal: el repositorio incluye archivos mmproj (proyector multimodal) en Q8_0 y f16, lo que sugiere soporte de entrada de imágenes en el modelo base, sin documentación adicional.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -86,7 +86,7 @@ Comparativa de rendimiento: no disponible, al no existir métricas publicadas de
 ## Limitaciones y advertencias
 
 - Ausencia de documentación: la model card no describe arquitectura, datos de entrenamiento, formato de prompt, ventana de contexto ni limitaciones. Cualquier uso en producción exige evaluación propia previa.
-- Discrepancia de idiomas: los metadatos de HuggingFace declaran solo "en", mientras que el nombre del modelo reivindica 50 idiomas. La cobertura real por idioma no está verificada.
+- Discrepancia de idiomas: los metadatos de Hugging Face declaran solo "en", mientras que el nombre del modelo reivindica 50 idiomas. La cobertura real por idioma no está verificada.
 - Riesgo de alucinación: inherente a los modelos de 4B cuantizados, especialmente en las cuantizaciones agresivas (Q2_K, Q3_K_S) y en idiomas con poca presencia en los datos de entrenamiento.
 - Degradación por cuantización: las variantes Q2_K, Q3_K_S y Q3_K_M reducen notablemente la fidelidad respecto a f16 o Q8_0; el propio autor advierte de que no hay cuantizaciones ponderadas ni con imatrix disponibles, que suelen ofrecer mejor relación calidad/tamaño.
 - Origen de los pesos: se trata de una conversión comunitaria no oficial; no hay garantía de que los pesos convertidos coincidan exactamente con el comportamiento del modelo base en safetensors.

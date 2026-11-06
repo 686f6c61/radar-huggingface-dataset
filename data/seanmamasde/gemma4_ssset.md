@@ -6,7 +6,7 @@ gemma4_ssset es un adaptador LoRA (PEFT) publicado por el usuario seanmamasde so
 
 El modelo base, segun su nomenclatura, corresponde a un transformer de tipo mezcla de expertos (MoE) con 26.000 millones de parametros totales y aproximadamente 4.000 millones de parametros activos (sufijo A4B). El tamano del repositorio (0,7 GB) es coherente con un adaptador LoRA, no con un modelo completo, lo que confirma que el artefacto publicado son unicamente las matrices de bajo rango y la configuracion asociada.
 
-Su relevancia es acotada y especializada: se enmarca en el uso de tecnicas de RL para resolver tareas de optimizacion combinatoria mediante generacion de texto, un campo emergente que aplica modelos de lenguaje a problemas matematicos discretos. La licencia es MIT, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace. El repositorio no registra descargas ni interacciones al momento de la consulta.
+Su relevancia es acotada y especializada: se enmarca en el uso de tecnicas de RL para resolver tareas de optimizacion combinatoria mediante generacion de texto, un campo emergente que aplica modelos de lenguaje a problemas matematicos discretos. La licencia es MIT, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face. El repositorio no registra descargas ni interacciones al momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No disponible. No se conocen en la informacion proporcionada adaptadores compara
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - No es un modelo autonomo: precisa el modelo base google/gemma-4-26B-A4B para funcionar, y ese base no se incluye en este repositorio.
 - Dominio muy acotado: el ajuste esta especializado en optimizacion combinatoria (Salem-Spencer), por lo que su utilidad fuera de ese ambito es incierta.
 - Ausencia de benchmarks: no hay datos publicados que respalden el rendimiento, lo que impide validar su calidad frente a alternativas.
@@ -79,6 +79,6 @@ No disponible. No se conocen en la informacion proporcionada adaptadores compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seanmamasde/gemma4_ssset
-- Modelo base referenciado: google/gemma-4-26B-A4B (ruta de HuggingFace no incluida en la informacion proporcionada)
+- Hugging Face: https://huggingface.co/seanmamasde/gemma4_ssset
+- Modelo base referenciado: google/gemma-4-26B-A4B (ruta de Hugging Face no incluida en la informacion proporcionada)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

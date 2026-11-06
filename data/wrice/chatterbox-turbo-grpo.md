@@ -84,8 +84,8 @@ No se realizo prueba de escucha humana. Las ganancias se miden con metricas auto
 
 | Modelo | Parametros | Contexto / limites | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wrice/chatterbox-turbo-grpo | No disponible | 800 tokens de habla (~32 s) en entrenamiento | WER 0,036; Distill-MOS 4,47; similitud CAMPPlus 0,688 | MIT | HuggingFace, 0 descargas, 0 likes |
-| ResembleAI/chatterbox-turbo (base) | No disponible | Mismo pipeline | WER 0,045; Distill-MOS 4,40; similitud CAMPPlus 0,680 | MIT | HuggingFace |
+| wrice/chatterbox-turbo-grpo | No disponible | 800 tokens de habla (~32 s) en entrenamiento | WER 0,036; Distill-MOS 4,47; similitud CAMPPlus 0,688 | MIT | Hugging Face, 0 descargas, 0 likes |
+| ResembleAI/chatterbox-turbo (base) | No disponible | Mismo pipeline | WER 0,045; Distill-MOS 4,40; similitud CAMPPlus 0,680 | MIT | Hugging Face |
 | Otros modelos TTS open source comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion con datos verificables en la informacion disponible es contra el modelo base. No se dispone de cifras de otros sistemas TTS de la misma categoria en el material proporcionado.
@@ -104,7 +104,7 @@ La unica comparacion con datos verificables en la informacion disponible es cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wrice/chatterbox-turbo-grpo
+- Modelo en Hugging Face: https://huggingface.co/wrice/chatterbox-turbo-grpo
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-turbo
 - Codigo de entrenamiento: https://github.com/will-rice/chatterbox-rl (commit `79c9222`)
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/will-rice/chatterbox-rl/runs/io52clk5

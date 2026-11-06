@@ -88,9 +88,9 @@ La comparativa muestra que la destilacion de DeepSeek-R1 mejora sustancialmente 
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia de terceros): https://huggingface.co/Openintelligent123/DeepSeek-R1-Distill-Qwen-7B
-- Repositorio HuggingFace oficial: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+- Repositorio Hugging Face (copia de terceros): https://huggingface.co/Openintelligent123/DeepSeek-R1-Distill-Qwen-7B
+- Repositorio Hugging Face oficial: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Paper de DeepSeek-R1 (arXiv:2501.12948): https://arxiv.org/abs/2501.12948
-- Coleccion de modelos DeepSeek-R1 en HuggingFace: https://huggingface.co/collections/deepseek-ai/deepseek-r1
+- Coleccion de modelos DeepSeek-R1 en Hugging Face: https://huggingface.co/collections/deepseek-ai/deepseek-r1
 - Pagina del modelo en ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B

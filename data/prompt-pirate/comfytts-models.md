@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prompt-Pirate/comfytts-models es un repositorio de HuggingFace que actúa como espejo centralizado de pesos de múltiples motores de síntesis de voz (TTS) diseñados para integrarse con ComfyUI. Lo mantiene Prompt-Pirate (Mark), un creador centrado en audio de voz con IA, y su propósito es distribuir pesos verificados mediante hashes sha256 y tamaños de byte, evitando que cada usuario tenga que descargar cada modelo por separado desde sus repositorios originales.
+Prompt-Pirate/comfytts-models es un repositorio de Hugging Face que actúa como espejo centralizado de pesos de múltiples motores de síntesis de voz (TTS) diseñados para integrarse con ComfyUI. Lo mantiene Prompt-Pirate (Mark), un creador centrado en audio de voz con IA, y su propósito es distribuir pesos verificados mediante hashes sha256 y tamaños de byte, evitando que cada usuario tenga que descargar cada modelo por separado desde sus repositorios originales.
 
 No se trata de un modelo de IA único, sino de un agregador de pesos de más de una veintena de motores TTS de código abierto, entre los que se incluyen CosyVoice, Kokoro, Zonos, VoxCPM, GPT-SoVITS, Qwen3-TTS, MOSS-TTS, VibeVoice, entre otros. Cada motor mantiene su propia licencia y origen, y el repositorio documenta explícitamente la procedencia de cada conjunto de pesos. El tamaño total del repositorio es de 0,4 GB, lo que indica que no contiene todos los pesos completos de los motores más grandes, sino probablemente versiones cuantizadas o subconjuntos.
 
@@ -76,7 +76,7 @@ No existe un repositorio directamente comparable que agregue tantos motores TTS 
 | Repositorio | Contenido | Licencia | Verificación | Integración ComfyUI |
 |---|---|---|---|---|
 | Prompt-Pirate/comfytts-models | 20+ motores TTS | Mixta (MIT, Apache-2.0, CC-BY-4.0) | sha256 + tamaño | Sí |
-| HuggingFace Hub (búsqueda individual) | Modelos TTS individuales | Varía | No centralizada | No |
+| Hugging Face Hub (búsqueda individual) | Modelos TTS individuales | Varía | No centralizada | No |
 | ComfyUI-TTS (repos comunitarios) | 2-5 motores | Varía | No | Sí |
 
 La ventaja de este repositorio es la centralización y la política de no re-alojar pesos gated, lo que reduce riesgos legales. Sin embargo, al ser un mirror, no aporta mejoras de rendimiento ni de calidad sobre los modelos originales.
@@ -93,7 +93,7 @@ La ventaja de este repositorio es la centralización y la política de no re-alo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Prompt-Pirate/comfytts-models
-- Perfil del autor en HuggingFace: https://huggingface.co/Prompt-Pirate
+- Repositorio Hugging Face: https://huggingface.co/Prompt-Pirate/comfytts-models
+- Perfil del autor en Hugging Face: https://huggingface.co/Prompt-Pirate
 - Canal de YouTube de ComfyTTS Studio: https://www.youtube.com/@thepromptpirate
 - Patreon de Prompt Pirate: https://www.patreon.com/promptpirate

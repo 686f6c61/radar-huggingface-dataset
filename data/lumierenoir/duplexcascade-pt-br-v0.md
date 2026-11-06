@@ -79,11 +79,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lumierenoir/DuplexCascade-PT-BR-V0
+- Modelo en Hugging Face: https://huggingface.co/lumierenoir/DuplexCascade-PT-BR-V0
 - Paper DuplexCascade (arXiv): https://arxiv.org/abs/2603.09180
 - Paper DuplexCascade (HTML): https://arxiv.org/html/2603.09180v1
 - Repositorio DuplexCascade original (sbintuitions): https://github.com/sbintuitions/DuplexCascade
 - Código del modelo (model.py): https://github.com/sbintuitions/DuplexCascade/blob/main/model.py
 - README de DuplexCascade: https://github.com/sbintuitions/DuplexCascade/blob/main/README.md
-- Página del paper en HuggingFace: https://huggingface.co/papers/2603.09180
+- Página del paper en Hugging Face: https://huggingface.co/papers/2603.09180
 - Proyecto fuente del fork (felipepenhorate/custom-duplex-cascade-pt-br): https://github.com/felipepenhorate/custom-duplex-cascade-pt-br

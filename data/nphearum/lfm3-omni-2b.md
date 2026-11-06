@@ -82,10 +82,10 @@ Los datos de las alternativas no proceden de la información proporcionada en es
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B | 2,17B | 32K | Texto, imagen, vídeo, audio de entrada; texto y voz de salida | LFM Open License v1.0 (`other`) | HuggingFace (repo oficial y réplica analizada), Ollama, API y playground de Liquid AI |
-| Qwen2.5-Omni-3B | ~3B | no disponible en esta ficha | Texto, imagen, audio y vídeo de entrada; texto y voz de salida | no disponible en esta ficha | HuggingFace |
-| MiniCPM-o 2.6 | ~8B | no disponible en esta ficha | Texto, imagen, vídeo y audio; salida de voz | no disponible en esta ficha | HuggingFace |
-| Gemma 3n (variantes E2B/E4B) | no disponible en esta ficha | no disponible en esta ficha | Texto, imagen, audio | no disponible en esta ficha | HuggingFace, Ollama |
+| LFM3-Omni-2B | 2,17B | 32K | Texto, imagen, vídeo, audio de entrada; texto y voz de salida | LFM Open License v1.0 (`other`) | Hugging Face (repo oficial y réplica analizada), Ollama, API y playground de Liquid AI |
+| Qwen2.5-Omni-3B | ~3B | no disponible en esta ficha | Texto, imagen, audio y vídeo de entrada; texto y voz de salida | no disponible en esta ficha | Hugging Face |
+| MiniCPM-o 2.6 | ~8B | no disponible en esta ficha | Texto, imagen, vídeo y audio; salida de voz | no disponible en esta ficha | Hugging Face |
+| Gemma 3n (variantes E2B/E4B) | no disponible en esta ficha | no disponible en esta ficha | Texto, imagen, audio | no disponible en esta ficha | Hugging Face, Ollama |
 
 La ventaja diferencial de LFM3-Omni-2B en esta comparativa es el tamaño: 2,17B con salida de voz nativa lo sitúa por debajo de las alternativas ómnimodales citadas en número de parámetros, lo que se traduce en menor huella de memoria y mejor encaje en dispositivo. La contrapartida esperable es menor capacidad de razonamiento y de conocimiento factual, algo que no se puede cuantificar sin benchmarks publicados.
 
@@ -105,14 +105,14 @@ La ventaja diferencial de LFM3-Omni-2B en esta comparativa es el tamaño: 2,17B 
 
 ## Enlaces
 
-- HuggingFace (réplica analizada): https://huggingface.co/nphearum/LFM3-Omni-2B
-- HuggingFace (repositorio oficial): https://huggingface.co/LiquidAI/LFM3-Omni-2B
+- Hugging Face (réplica analizada): https://huggingface.co/nphearum/LFM3-Omni-2B
+- Hugging Face (repositorio oficial): https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Documentación del modelo en Liquid Docs: https://docs.liquid.ai/lfm/models/lfm3-omni-2b
 - Blog de presentación de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación general de LFM (primeros pasos): https://docs.liquid.ai/lfm/getting-started/welcome
 - Consola / API de Liquid AI: https://console.liquid.ai/dashboard
 - Playground de voz: https://playground.liquid.ai/talk
-- Colección LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Colección LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3
 - Entrada en la librería de Ollama: https://ollama.com/library/lfm3-omni
 - Análisis de benchmarks en orcarouter.ai: https://www.orcarouter.ai/blog/lfm3-omni-2b-speech-output-benchmarks
 - Licencia LFM Open License v1.0: fichero LICENSE del repositorio oficial

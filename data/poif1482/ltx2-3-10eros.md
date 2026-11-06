@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX2.3-10Eros es un modelo de difusion para generacion de video a partir de imagen (image-to-video, I2V) publicado por el usuario Poif1482 en HuggingFace. Se trata de un merge o remezcla de pesos derivado de la familia LTX 2.3 (arquitectura de difusion de video) y del modelo base Sulphur-2-base, orientado a la generacion de video con contenido explicito y motion anatomico detallado. El repositorio ocupa 424 GB y se distribuye en formato diffusers, lo que sugiere pesos en BF16/FP8 empaquetados como checkpoint completo con CLIP y VAE incluidos.
+LTX2.3-10Eros es un modelo de difusion para generacion de video a partir de imagen (image-to-video, I2V) publicado por el usuario Poif1482 en Hugging Face. Se trata de un merge o remezcla de pesos derivado de la familia LTX 2.3 (arquitectura de difusion de video) y del modelo base Sulphur-2-base, orientado a la generacion de video con contenido explicito y motion anatomico detallado. El repositorio ocupa 424 GB y se distribuye en formato diffusers, lo que sugiere pesos en BF16/FP8 empaquetados como checkpoint completo con CLIP y VAE incluidos.
 
 El modelo no es un entrenamiento desde cero ni un modelo base oficial: es una mezcla por capas (layer-scaled merge) de distintos pasos de entrenamiento, con ajustes en las puertas de atencion (attn_1 y attn_2) para recuperar capacidades de motion explicito presentes en versiones anteriores. Segun la model card, las versiones 1.2, 1.3, 1.4 y 1.5 son casi el mismo modelo y difieren en como se gestionan esas puertas de atencion; la 1.5 aplica una rampa lineal sobre las puertas para abrir detalles explicitos.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LTX2.3-10Eros | no disponible | no disponible | no disponible | HuggingFace (Poif1482) | Merge I2V especializado en contenido explicito, con LoRAs DMD |
-| Sulphur-2-base | no disponible | no disponible | no disponible | HuggingFace (SulphurAI) | Modelo base del que depende 10Eros |
-| LTX 2.3 base (22b dev) | 22b (referencia en model card, no confirmado) | no disponible | no disponible | HuggingFace | Modelo base de la familia LTX 2.3 |
+| LTX2.3-10Eros | no disponible | no disponible | no disponible | Hugging Face (Poif1482) | Merge I2V especializado en contenido explicito, con LoRAs DMD |
+| Sulphur-2-base | no disponible | no disponible | no disponible | Hugging Face (SulphurAI) | Modelo base del que depende 10Eros |
+| LTX 2.3 base (22b dev) | 22b (referencia en model card, no confirmado) | no disponible | no disponible | Hugging Face | Modelo base de la familia LTX 2.3 |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Poif1482/LTX2.3-10Eros
+- Modelo en Hugging Face: https://huggingface.co/Poif1482/LTX2.3-10Eros
 - Workflows del autor: https://huggingface.co/TenStrip/LTX2.3-10Eros_Workflows
 - Nodos ComfyUI: https://github.com/TenStrip/10S-Comfy-nodes
 - Modelo base Sulphur-2-base: https://huggingface.co/SulphurAI/Sulphur-2-base

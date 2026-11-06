@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kayveedev/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la librería stable-baselines3. No se trata de un modelo de lenguaje: es una política neuronal que recibe observaciones vectoriales del entorno y emite acciones discretas para controlar el módulo de aterrizaje de la simulación. El autor lo publica en HuggingFace Hub bajo el pipeline `reinforcement-learning`, con cero descargas y cero likes en el momento de la consulta.
+`kayveedev/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la librería stable-baselines3. No se trata de un modelo de lenguaje: es una política neuronal que recibe observaciones vectoriales del entorno y emite acciones discretas para controlar el módulo de aterrizaje de la simulación. El autor lo publica en Hugging Face Hub bajo el pipeline `reinforcement-learning`, con cero descargas y cero likes en el momento de la consulta.
 
 El modelo es relevante como ejemplo reproducible de un flujo de trabajo muy extendido en docencia e investigación en RL: entrenamiento con SB3, publicación en el Hub mediante `huggingface_sb3` y evaluación estandarizada con la métrica `mean_reward`. No hay ningún dato publicado sobre arquitectura de red, número de parámetros, hiperparámetros de entrenamiento ni semillas, y el repositorio ocupa 0,0 GB, lo que es coherente con una política MLP de tamano reducido.
 
@@ -45,7 +45,7 @@ Como innovacion tecnica destacable, ninguna: es una aplicacion estandar de PPO a
 
 ## Casos de uso
 
-- Material docente de aprendizaje por refuerzo: sirve como artefacto de referencia para explicar el ciclo completo de PPO, desde el entrenamiento con stable-baselines3 hasta la publicacion y carga de pesos desde HuggingFace Hub con `load_from_hub`.
+- Material docente de aprendizaje por refuerzo: sirve como artefacto de referencia para explicar el ciclo completo de PPO, desde el entrenamiento con stable-baselines3 hasta la publicacion y carga de pesos desde Hugging Face Hub con `load_from_hub`.
 - Verificacion de integraciones de SB3 y el Hub: util para comprobar que un pipeline interno de CI carga correctamente un modelo alojado en el Hub y ejecuta una evaluacion con `evaluate_policy`.
 - Punto de partida (warm start) para experimentos propios: un desarrollador puede cargar estos pesos y continuar el entrenamiento en LunarLander-v3 con otros hiperparametros, de modo que ahorra episodios iniciales de exploracion.
 - Baseline en comparativas de algoritmos de RL: sirve como referencia PPO frente a DQN, A2C o SAC en el mismo entorno, siempre que se repita la evaluacion con el mismo numero de episodios y las mismas semillas.
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kayveedev/ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace Hub |
+| kayveedev/ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face Hub |
 | Agentes PPO del SB3 RL Zoo | PPO (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | MIT (licencia del repositorio SB3 RL Zoo; no confirmada para pesos individuales) | GitHub DLR-RM/rl-baselines3-zoo |
-| Agentes DQN para LunarLander | DQN (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace Hub / SB3 RL Zoo |
-| Agentes A2C para LunarLander | A2C (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace Hub / SB3 RL Zoo |
+| Agentes DQN para LunarLander | DQN (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face Hub / SB3 RL Zoo |
+| Agentes A2C para LunarLander | A2C (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face Hub / SB3 RL Zoo |
 
 No se dispone de valores de `mean_reward` de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La comparacion con modelos de lenguaje de cualquier tamano no es pertinente: este artefacto no procesa texto ni resuelve tareas de generacion.
 
@@ -96,7 +96,7 @@ No se dispone de valores de `mean_reward` de los modelos alternativos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/kayveedev/ppo-LunarLander-v3
+- Modelo en Hugging Face Hub: https://huggingface.co/kayveedev/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad `huggingface_sb3` (referenciada en la model card, sin enlace explicito en el texto proporcionado)
 - Entorno LunarLander-v3 (referenciado en los tags y en el model-index; no se incluye URL en la informacion proporcionada)

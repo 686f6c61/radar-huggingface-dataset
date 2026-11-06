@@ -76,7 +76,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Parametros | Contexto / entrada | ShapeNetPart ins_mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointnet2-msg.shapenetpart.mit-han-lab | 1,8 M | nube de puntos (ej. 8192 puntos) | 85,24 | MIT | HuggingFace (`torch-pointcloud`) |
+| pointnet2-msg.shapenetpart.mit-han-lab | 1,8 M | nube de puntos (ej. 8192 puntos) | 85,24 | MIT | Hugging Face (`torch-pointcloud`) |
 | PointNet++ MSG original (Qi et al., 2017) | ~1,7 M (referencia) | nube de puntos | ~85,2 (reportado en paper) | MIT (implementacion de referencia) | GitHub |
 | PointNet++ SSG (single-scale grouping) | ~1,5 M (referencia) | nube de puntos | ~84,7 (referencia) | MIT | GitHub |
 | PVCNN (mit-han-lab) | no disponible | nube de puntos | no disponible en esta ficha | MIT | GitHub |
@@ -97,7 +97,7 @@ Nota: los valores de las alternativas son referencias de la literatura y no se h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pointnet2-msg.shapenetpart.mit-han-lab
+- Hugging Face: https://huggingface.co/torch-pointcloud/pointnet2-msg.shapenetpart.mit-han-lab
 - Paper PointNet++: https://arxiv.org/abs/1706.02413
 - Repositorio `torch-pointcloud`: https://github.com/arthurdjn/pytorch-pointcloud
 - Repositorio original `mit-han-lab/pvcnn`: https://github.com/mit-han-lab/pvcnn

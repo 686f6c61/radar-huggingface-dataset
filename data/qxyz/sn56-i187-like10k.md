@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qxyz/sn56-i187-like10k` es un adaptador LoRA (entrenado con PEFT/TRL) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`. Se publica como un repositorio de adaptador, no como un modelo completo: para utilizarlo hay que cargar por separado los pesos de Llama 3.1 8B Instruct y aplicar el adaptador encima. El autor es el usuario `qxyz` y el repositorio tiene acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+`qxyz/sn56-i187-like10k` es un adaptador LoRA (entrenado con PEFT/TRL) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`. Se publica como un repositorio de adaptador, no como un modelo completo: para utilizarlo hay que cargar por separado los pesos de Llama 3.1 8B Instruct y aplicar el adaptador encima. El autor es el usuario `qxyz` y el repositorio tiene acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El identificador sugiere un ajuste fino de tipo SFT sobre un conjunto de datos de aproximadamente 10.000 ejemplos, pero la ficha del repositorio no incluye model card, descripcion del dataset, hiperparametros ni evaluacion. Tampoco se declara licencia ni idiomas soportados para el adaptador, lo que limita seriamente su uso en produccion sin una verificacion previa por parte de quien lo adopte.
 
@@ -23,7 +23,7 @@ Por herencia del modelo base, el sistema resultante es un transformer decoder-on
 | Tamano del repositorio | 1,4 GB |
 | Modelo base | unsloth/Meta-Llama-3.1-8B-Instruct |
 | Metodo de entrenamiento | SFT (segun los tags del repositorio) |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -86,7 +86,7 @@ La comparacion de rendimiento con este adaptador no es posible porque no existe 
 
 - Ausencia total de model card: no se documentan dataset, hiperparametros, proceso de entrenamiento ni evaluacion, lo que impide auditar el modelo.
 - Licencia no disponible: no se puede asumir que el adaptador herede automaticamente los terminos de la Llama 3.1 Community License, y el uso comercial queda en un limbo legal hasta que el autor lo aclare.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que anade friccion y puede impedir su uso en pipelines automatizados.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que anade friccion y puede impedir su uso en pipelines automatizados.
 - Riesgo de olvido catastrofico: un SFT sobre aproximadamente 10.000 ejemplos puede degradar capacidades generales del modelo base (codigo, matematicas, multilingue) sin que exista una evaluacion que lo cuantifique.
 - Sesgos desconocidos: al no conocerse la procedencia de los datos de ajuste, no se pueden estimar sesgos demograficos, politicos o culturales introducidos por el entrenamiento.
 - Riesgo de alucinacion: inherente a los modelos de 8B, y potencialmente agravado si el dataset de ajuste contiene ejemplos factualmente incorrectos o muy especializados.

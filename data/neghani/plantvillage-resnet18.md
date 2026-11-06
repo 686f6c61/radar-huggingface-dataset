@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 | Modelo | Parámetros | Contexto | Métrica publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `neghani/plantvillage-resnet18` | 11.205.606 | no aplica | 97,70 % accuracy / 96,49 % macro F1 (PlantVillage test) | apache-2.0 | HuggingFace |
+| `neghani/plantvillage-resnet18` | 11.205.606 | no aplica | 97,70 % accuracy / 96,49 % macro F1 (PlantVillage test) | apache-2.0 | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neghani/plantvillage-resnet18
+- Modelo en Hugging Face: https://huggingface.co/neghani/plantvillage-resnet18
 - Dataset PlantVillage (Kaggle): https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset
 - Dataset PlantDoc: https://github.com/pratikkayal/PlantDoc-Dataset
 - Licencia CC BY 4.0 (PlantDoc): https://creativecommons.org/licenses/by/4.0/

@@ -58,9 +58,9 @@ No se dispone de informacion sobre modelos comparables especificamente orientado
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ab12321/llama3.1-8b-lora-genz-slang | 8B (base) + LoRA | no disponible | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8B (cuantizado) | 128k | Llama 3.1 Community License | HuggingFace |
+| ab12321/llama3.1-8b-lora-genz-slang | 8B (base) + LoRA | no disponible | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8B (cuantizado) | 128k | Llama 3.1 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables especificamente orientado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ab12321/llama3.1-8b-lora-genz-slang
+- Hugging Face: https://huggingface.co/ab12321/llama3.1-8b-lora-genz-slang
 - Modelo base (unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Llama 3.1 8B original: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Blog de Meta sobre Llama 3.1: https://ai.meta.com/blog/meta-llama-3-1/

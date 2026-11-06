@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-32B-English-Jacobian-Lens es un artefacto de interpretabilidad, no un modelo de lenguaje: se trata de una lente jacobiana (Jacobian lens) ajustada sobre el modelo denso Qwen/Qwen3-32B. La publica el usuario Zoey6655 en HuggingFace y su contenido es un unico fichero de matrices (`lens.pt`) de 3,30 GB, acompanado de metricas de convergencia, un manifiesto con checksums y un script para reproducir la figura de convergencia. Los pesos del modelo base no se incluyen y deben descargarse por separado.
+Qwen3-32B-English-Jacobian-Lens es un artefacto de interpretabilidad, no un modelo de lenguaje: se trata de una lente jacobiana (Jacobian lens) ajustada sobre el modelo denso Qwen/Qwen3-32B. La publica el usuario Zoey6655 en Hugging Face y su contenido es un unico fichero de matrices (`lens.pt`) de 3,30 GB, acompanado de metricas de convergencia, un manifiesto con checksums y un script para reproducir la figura de convergencia. Los pesos del modelo base no se incluyen y deben descargarse por separado.
 
 El artefacto sirve para leer que esta "dispuesto a decir" el modelo a partir de una activacion interna: transporta linealmente un vector del residual stream de cualquier capa y posicion a la base de la capa final y lo decodifica con el propio unembedding del modelo, produciendo una lista ordenada de tokens. Es relevante porque permite estudiar el flujo de informacion capa a capa en un modelo de 32.800 millones de parametros sin entrenar nada nuevo, y porque el autor documenta la receta de ajuste con hashes de corpus, tokenizador y fitter.
 
@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zoey6655/Qwen3-32B-English-Jacobian-Lens
+- Hugging Face: https://huggingface.co/Zoey6655/Qwen3-32B-English-Jacobian-Lens
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - Neuronpedia, lente jacobiana para qwen3-32b: https://huggingface.co/neuronpedia/jacobian-lens/tree/main/qwen3-32b
 - Neuronpedia, carpeta jlens: https://huggingface.co/neuronpedia/jacobian-lens/tree/main/qwen3-32b/jlens

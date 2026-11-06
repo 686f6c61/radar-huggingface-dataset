@@ -91,6 +91,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-MTP-NVFP4-archival-6d98dc1f
+- Modelo en Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-MTP-NVFP4-archival-6d98dc1f
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de llm-compressor (herramienta de cuantización): no se proporciona enlace directo, pero es parte del ecosistema vLLM/Neural Magic.

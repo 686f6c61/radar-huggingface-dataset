@@ -80,7 +80,7 @@ La comparativa directa con LayoutLMv3 no es trivial porque LayoutLMv3 es un mode
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/atkinschang/docling-layout-heron-mlx
+- Repositorio Hugging Face del modelo: https://huggingface.co/atkinschang/docling-layout-heron-mlx
 - Modelo base original: https://huggingface.co/docling-project/docling-layout-heron
 - Informe tecnico "Advanced Layout Analysis Models for Docling": https://arxiv.org/pdf/2509.11720v1
 - Documentacion del catalogo de modelos de Docling: https://docling-project.github.io/docling/usage/model_catalog/

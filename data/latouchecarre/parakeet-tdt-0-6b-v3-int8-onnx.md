@@ -26,7 +26,7 @@ Su relevancia práctica está en el escenario de despliegue: al estar cuantizado
 | Autor del export | LaToucheCarre |
 | Modelo base | nvidia/parakeet-tdt-0.6b-v3 |
 | Export de referencia | csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8 |
-| Fecha de creacion del repositorio | 11 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 11 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks para ninguno de los modelos de la tabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LaToucheCarre/Parakeet-TDT-0.6B-v3-int8-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/LaToucheCarre/Parakeet-TDT-0.6B-v3-int8-ONNX
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Export de referencia para sherpa-onnx: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8
 - Paper, blog o repositorio adicional: no disponible. Las busquedas web realizadas no devolvieron enlaces relevantes sobre este modelo.

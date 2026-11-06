@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Ced-Collab/uef-wave2-paradigm` es un checkpoint de investigación publicado por el usuario `Ced-Collab` en HuggingFace, orientado a la generación de imágenes a partir de texto (pipeline `text-to-image`). Los metadatos del repositorio lo etiquetan como un experimento relacionado con "unified-embedding-field" y "paradigm-comparison", lo que sugiere que su propósito es comparar paradigmas de representación de embeddings unificados en modelos generativos. Se trata de un modelo con acceso restringido (gated), por lo que es necesario aceptar condiciones de uso antes de poder descargarlo.
+El modelo `Ced-Collab/uef-wave2-paradigm` es un checkpoint de investigación publicado por el usuario `Ced-Collab` en Hugging Face, orientado a la generación de imágenes a partir de texto (pipeline `text-to-image`). Los metadatos del repositorio lo etiquetan como un experimento relacionado con "unified-embedding-field" y "paradigm-comparison", lo que sugiere que su propósito es comparar paradigmas de representación de embeddings unificados en modelos generativos. Se trata de un modelo con acceso restringido (gated), por lo que es necesario aceptar condiciones de uso antes de poder descargarlo.
 
-El repositorio tiene un tamaño de 24,1 GB y utiliza la librería `pytorch`. No se dispone de información pública sobre la arquitectura interna, el número de parámetros, la longitud de contexto ni los idiomas soportados, ya que la ficha en HuggingFace no incluye estos datos. Se creó el 7 de septiembre de 2026, lo que indica que es un trabajo muy reciente o en fase de investigación.
+El repositorio tiene un tamaño de 24,1 GB y utiliza la librería `pytorch`. No se dispone de información pública sobre la arquitectura interna, el número de parámetros, la longitud de contexto ni los idiomas soportados, ya que la ficha en Hugging Face no incluye estos datos. Se creó el 7 de septiembre de 2026, lo que indica que es un trabajo muy reciente o en fase de investigación.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El repositorio tiene un tamaño de 24,1 GB y utiliza la librería `pytorch`. No 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (requiere aceptacion de condiciones en HuggingFace) |
+| Licencia | other (requiere aceptacion de condiciones en Hugging Face) |
 | Formato de pesos | no disponible (repo de 24,1 GB, probablemente safetensors o binarios de PyTorch) |
 
 ## Arquitectura y entrenamiento
@@ -55,7 +55,7 @@ No disponible. No se conocen modelos comparables con los mismos tags o proposito
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace antes de poder descargarlo. Esto limita su uso y reproduccion.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face antes de poder descargarlo. Esto limita su uso y reproduccion.
 - Licencia "other": no se especifican los terminos exactos de la licencia. Es necesario revisar las condiciones de acceso para conocer si permite uso comercial, modificacion o redistribucion.
 - Falta de documentacion: no hay informacion sobre arquitectura, entrenamiento, capacidades o limitaciones. Esto impide evaluar su idoneidad para cualquier caso de uso real.
 - Riesgo de alucinacion o artefactos: al ser un modelo de generacion de imagenes sin benchmarks publicados, es probable que produzca resultados inconsistentes o artefactos visuales.
@@ -64,5 +64,5 @@ No disponible. No se conocen modelos comparables con los mismos tags o proposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ced-Collab/uef-wave2-paradigm
+- Hugging Face: https://huggingface.co/Ced-Collab/uef-wave2-paradigm
 - No se han encontrado otros enlaces (paper, blog, repo, demo) en la busqueda web.

@@ -78,7 +78,7 @@ La comparativa se limita a la familia del propio modelo, ya que no se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-BUDGET-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-BUDGET-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Familia MTP (con proyector): https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-GGUF
 - Repositorio GGUF de unsloth (proyector alternativo): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

@@ -87,6 +87,6 @@ El modelo de esta ficha es una variante del Qwen3.6-35B-A3B, por lo que sus capa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crazyape777/fk-dendriteholdings-albedo-qwen3.6-35b-king-genesis
+- Repositorio Hugging Face: https://huggingface.co/crazyape777/fk-dendriteholdings-albedo-qwen3.6-35b-king-genesis
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b

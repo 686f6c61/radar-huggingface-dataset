@@ -72,7 +72,7 @@ Ambos modelos comparten la misma arquitectura EVO1 y están entrenados para tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MoAIBo/pick_place_depth_vel_evo1_twostage
+- Hugging Face: https://huggingface.co/MoAIBo/pick_place_depth_vel_evo1_twostage
 - Dataset de entrenamiento: https://huggingface.co/datasets/MoAIBo/merged_so101_tb4_pick_place_depth_vel
 - Repositorio de EVO1: https://github.com/MINT-SJTU/Evo-1
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -33,7 +33,7 @@ No se aporta información sobre datos de entrenamiento, número de tokens, compo
 - Razonamiento, codigo, matematicas, vision: no disponibles; el checkpoint es un estado de inicializacion y no ha sido sometido a evaluacion.
 - Tool calling / function calling: no disponible; no se menciona soporte alguno.
 - Agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; la ficha de HuggingFace no indica idiomas soportados.
+- Capacidades multilingues: no disponible; la ficha de Hugging Face no indica idiomas soportados.
 - Capacidades especiales (thinking mode, vision, audio): no disponible; no hay evidencia de soporte multimodal.
 
 El unico uso declarado es como punto de partida para experimentos de generacion con arquitectura Dino, ejecutando `python train.py --help` para inspeccionar el ejemplo incluido.
@@ -75,5 +75,5 @@ No disponible. El repositorio no proporciona comparaciones con otras implementac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [NikhilDevi77/dino-generation-beta](https://huggingface.co/NikhilDevi77/dino-generation-beta)
+- Repositorio en Hugging Face: [NikhilDevi77/dino-generation-beta](https://huggingface.co/NikhilDevi77/dino-generation-beta)
 - Ficheros del repositorio: `train.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`

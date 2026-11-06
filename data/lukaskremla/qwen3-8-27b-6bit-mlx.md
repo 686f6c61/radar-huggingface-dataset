@@ -72,5 +72,5 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lukaskremla/Qwen3.8-27B-6bit-MLX
+- Repositorio Hugging Face: https://huggingface.co/lukaskremla/Qwen3.8-27B-6bit-MLX
 - Colección Qwen 3.8 27B MLX-Quants (incluye drafter MTP): https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp-6a7f4a32aee1afa13a6a4661

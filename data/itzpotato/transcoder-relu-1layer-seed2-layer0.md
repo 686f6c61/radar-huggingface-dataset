@@ -82,7 +82,7 @@ No disponible. No se han identificado transcoders comparables con especificacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/transcoder-relu-1layer-seed2-layer0
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/transcoder-relu-1layer-seed2-layer0
 - Modelo base: https://huggingface.co/itzPotato/arithmetic-relu-1layer-seed2
 - Artículo sobre transcoders (arXiv): https://arxiv.org/abs/2406.11944
 - Publicación en LessWrong sobre transcoders: https://www.lesswrong.com/posts/YmkjnWtZGLbHRbzrP/transcoders-enable-fine-grained-interpretable-circuit

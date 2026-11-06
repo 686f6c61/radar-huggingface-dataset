@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax H3 es un sistema generativo omni-modal desarrollado por MiniMax, distribuido en HuggingFace a través del repositorio MiniMaxAI/MiniMax-H3 y replicado en la cuenta drawthingsai. Está diseñado para comprender contextos multimodales compuestos por texto, imagen, vídeo y audio, y para generar vídeo con audio estéreo nativo sincronizado, con resoluciones por defecto de 768 píxeles en el lado corto (ampliables a 2K mediante el módulo H3-Regenerate-2K) y duraciones de 4 a 15 segundos a 24 FPS.
+MiniMax H3 es un sistema generativo omni-modal desarrollado por MiniMax, distribuido en Hugging Face a través del repositorio MiniMaxAI/MiniMax-H3 y replicado en la cuenta drawthingsai. Está diseñado para comprender contextos multimodales compuestos por texto, imagen, vídeo y audio, y para generar vídeo con audio estéreo nativo sincronizado, con resoluciones por defecto de 768 píxeles en el lado corto (ampliables a 2K mediante el módulo H3-Regenerate-2K) y duraciones de 4 a 15 segundos a 24 FPS.
 
 El sistema no se limita a un único modo de entrada: la variante H3-Base-FL2VA admite texto, primer fotograma o primer y último fotograma como entrada, mientras que H3-Base-Ref2VA acepta referencias multimodales de hasta 9 imágenes, 3 clips de vídeo y 3 clips de audio (máximo 12 ficheros en total). Esta amplitud de modos (text-to-video, image-to-video, video-to-video, audio-to-video y sus combinaciones) lo sitúa en la categoría de modelos de generación de vídeo con audio integrado, un nicho donde la sincronización audio-vídeo y el control por referencias múltiples son los principales diferenciadores técnicos.
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en que unifica en un solo sistema tareas que hasta a
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | 11 idiomas con soporte estable para diálogo: árabe, chino, inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso y español; otros idiomas con soporte variable |
-| Licencia | `minimax-h3-community-license-agreement` (etiquetada como `other` en HuggingFace) |
+| Licencia | `minimax-h3-community-license-agreement` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | no disponible en la información proporcionada |
 | Duración de salida | 4–15 segundos |
 | Resolución de salida | lado corto a 768 píxeles por defecto; 2K mediante H3-Regenerate-2K |
@@ -29,7 +29,7 @@ Su relevancia actual radica en que unifica en un solo sistema tareas que hasta a
 | Límites de referencia (H3-Base-Ref2VA) | ≤ 9 imágenes; ≤ 3 clips de vídeo de 2–15 s cada uno (total ≤ 15 s); ≤ 3 clips de audio de 2–15 s cada uno (total ≤ 15 s); máximo 12 ficheros entre todos los tipos |
 | Repositorio | drawthingsai/MiniMax-H3 (réplica); original en MiniMaxAI/MiniMax-H3 |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creación del repositorio | 11 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación del repositorio | 11 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -100,8 +100,8 @@ No se dispone en la información proporcionada de datos verificables (parámetro
 
 ## Enlaces
 
-- Repositorio consultado en HuggingFace: https://huggingface.co/drawthingsai/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio consultado en Hugging Face: https://huggingface.co/drawthingsai/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Guías de prompting (skills) en GitHub: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

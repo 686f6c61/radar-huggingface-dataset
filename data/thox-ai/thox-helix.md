@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thox-Helix | 8B (Qwen3-8B) | 32.768 (nativo del base) | Persona configurada + Knowledge Pack, sin entrenamiento | Apache-2.0 | HuggingFace (empaquetado) y Ollama (modelo ejecutable) |
-| Qwen/Qwen3-8B | 8B | 32.768 | Modelo base generalista con modo thinking y tool calling | Apache-2.0 | HuggingFace, Ollama |
-| Otras configuraciones THOX (10 adicionales) | 8B sobre Qwen3 | 32.768 | Distintos roles del roster de personas | Apache-2.0 | HuggingFace y Ollama |
+| Thox-Helix | 8B (Qwen3-8B) | 32.768 (nativo del base) | Persona configurada + Knowledge Pack, sin entrenamiento | Apache-2.0 | Hugging Face (empaquetado) y Ollama (modelo ejecutable) |
+| Qwen/Qwen3-8B | 8B | 32.768 | Modelo base generalista con modo thinking y tool calling | Apache-2.0 | Hugging Face, Ollama |
+| Otras configuraciones THOX (10 adicionales) | 8B sobre Qwen3 | 32.768 | Distintos roles del roster de personas | Apache-2.0 | Hugging Face y Ollama |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas; la comparación relevante es de naturaleza del artefacto (configuración frente a modelo entrenado), no de calidad de salida.
 
@@ -86,12 +86,12 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 - El Knowledge Pack v0.1 es mínimo (8 entradas) y está fechado el 2026-10-31; cualquier hecho posterior o fuera de esas entradas no está anclado.
 - Idioma declarado únicamente inglés; el rendimiento en castellano no está evaluado y no se garantiza.
 - Licencia Apache-2.0 heredada de Qwen3: uso comercial permitido conservando el aviso; los elementos propios de THOX (perfil de persona, knowledge pack y empaquetado) se distribuyen bajo la misma licencia según la model card.
-- El repositorio de HuggingFace no contiene pesos: sin Ollama o sin descargar el base por separado, el paquete no es ejecutable por sí mismo.
+- El repositorio de Hugging Face no contiene pesos: sin Ollama o sin descargar el base por separado, el paquete no es ejecutable por sí mismo.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema de validación muy reducido.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/Thox-Helix
+- Hugging Face: https://huggingface.co/Thox-ai/Thox-Helix
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Ejecución en Ollama: `ollama run Thox-ai/thox-helix` (tag base `qwen3:8b`)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

@@ -87,7 +87,7 @@ No se han identificado otros modelos de generacion de video comparables con cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MATLOWAI/minimax-h3-nvfp4
+- Repositorio Hugging Face: https://huggingface.co/MATLOWAI/minimax-h3-nvfp4
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Coleccion MiniMax H3: https://huggingface.co/collections/MiniMaxAI/minimax-h3
 - Documentacion tecnica (DeepWiki): https://deepwiki.com/ai-models-lab/minimax-h3/4-minimax-h3-model-reference

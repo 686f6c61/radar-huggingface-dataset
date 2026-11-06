@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leomaurodesenv/roberta-base-nvidia-aegis-v1-augmented` es un modelo de clasificacion de texto obtenido por ajuste fino (*fine-tuning*) del encoder `FacebookAI/roberta-base`, publicado por el usuario `leomaurodesenv` en HuggingFace. Se trata de un transformer encoder-only de 124.647.170 parametros (aproximadamente 125 M, coherente con RoBERTa-base) con licencia MIT y pipeline declarado `text-classification`. El modelo se genero con la libreria `Trainer` de Transformers, y su model card es practicamente el esqueleto automatico sin completar: no documenta el dataset de entrenamiento, el esquema de etiquetas ni los usos previstos.
+`leomaurodesenv/roberta-base-nvidia-aegis-v1-augmented` es un modelo de clasificacion de texto obtenido por ajuste fino (*fine-tuning*) del encoder `FacebookAI/roberta-base`, publicado por el usuario `leomaurodesenv` en Hugging Face. Se trata de un transformer encoder-only de 124.647.170 parametros (aproximadamente 125 M, coherente con RoBERTa-base) con licencia MIT y pipeline declarado `text-classification`. El modelo se genero con la libreria `Trainer` de Transformers, y su model card es practicamente el esqueleto automatico sin completar: no documenta el dataset de entrenamiento, el esquema de etiquetas ni los usos previstos.
 
 El nombre del repositorio sugiere (sin confirmacion en la model card) una relacion con la taxonomia de seguridad de contenido de NVIDIA Aegis, y el sufijo `augmented` apunta a algun tipo de aumento de datos, pero ninguno de los dos extremos esta documentado por el autor. El unico dato de evaluacion declarado es una exactitud (*accuracy*) de 0,9409 y una perdida de validacion de 0,1728, sin especificar el conjunto de evaluacion ni el numero de clases.
 
@@ -41,7 +41,7 @@ El ajuste fino se realizo con `Trainer` durante 10 epocas configuradas, con una 
 ## Casos de uso
 
 - Moderacion de comentarios en plataformas: clasificar cada mensaje entrante y derivar a revision humana los que superen un umbral de probabilidad, usando el modelo en modo *batch* sobre secuencias de hasta 512 tokens.
-- Filtrado de toxicidad previo a la publicacion: integrado como servicio HTTP (FastAPI, TorchServe o HuggingFace Inference Endpoints) delante del sistema de publicacion, con latencias de milisegundos por lote.
+- Filtrado de toxicidad previo a la publicacion: integrado como servicio HTTP (FastAPI, TorchServe o Hugging Face Inference Endpoints) delante del sistema de publicacion, con latencias de milisegundos por lote.
 - Triaje y enrutado de tickets de soporte: clasificar el asunto y el cuerpo del ticket en categorias (facturacion, incidencia tecnica, cancelacion) para asignarlo al equipo correspondiente.
 - Analisis de sentimiento a nivel de resena: entrenar o reutilizar la cabeza de clasificacion para separar opiniones positivas y negativas en catalogos de producto.
 - Deteccion de spam y abuso en formularios: puntuar envios de usuarios en tiempo real dentro de una pipeline de validacion, descartando los que superen un umbral configurable.
@@ -75,7 +75,7 @@ Advertencia metodologica: se configuraron 10 epocas pero solo se registran 5; ad
 - VRAM para inferencia: aproximadamente 0,5 GB con pesos en fp32 y 0,25 GB en fp16/bf16, mas el consumo del *runtime* de PyTorch (del orden de 1-2 GB en total en modo inferencia).
 - GPU recomendadas: cualquier GPU moderna sirve. Para lotes grandes, A100, H100, L40S o A10G permiten maximizar el *throughput*; para desarrollo, RTX 4090, RTX 4080, RTX 3090 o incluso GPUs con 4 GB de VRAM.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo con 4 GB o mas, e incluso puede ejecutarse en CPU con latencias aceptables para volumenes moderados.
-- Opciones de despliegue: pipeline de `transformers`, HuggingFace Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`), Text Generation Inference / Text Embeddings Inference (etiqueta `text-embeddings-inference`), ONNX Runtime, TorchServe o un servicio FastAPI propio.
+- Opciones de despliegue: pipeline de `transformers`, Hugging Face Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`), Text Generation Inference / Text Embeddings Inference (etiqueta `text-embeddings-inference`), ONNX Runtime, TorchServe o un servicio FastAPI propio.
 - Ollama y llama.cpp: no hay pesos GGUF publicados, por lo que no son una via directa; habria que convertir el modelo.
 - vLLM: su soporte esta orientado a modelos generativos; para un encoder de clasificacion no es la herramienta natural.
 - Latencia y throughput medidos: no disponibles. No se han publicado cifras de latencia ni de peticiones por segundo para este modelo.
@@ -110,7 +110,7 @@ En la categoria de clasificadores de seguridad de contenido tambien existen alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/roberta-base-nvidia-aegis-v1-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/roberta-base-nvidia-aegis-v1-augmented
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Documentacion de Transformers: https://huggingface.co/docs/transformers/index
 

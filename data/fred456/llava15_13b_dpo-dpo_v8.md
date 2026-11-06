@@ -4,7 +4,7 @@
 
 Fred456/llava15_13b_DPO-DPO_v8 es un adaptador PEFT (LoRA) que ajusta el modelo multimodal LLaVA-1.5-13B mediante optimización con preferencias humanas (DPO, Direct Preference Optimization). El modelo base, desarrollado por el equipo de LLaVA (Liu et al.), combina un codificador visual CLIP con el modelo de lenguaje Vicuna-13B para tareas de comprensión visual y lenguaje. Este adaptador busca mejorar la adherencia del modelo a preferencias humanas en diálogos multimodales, un área relevante para reducir respuestas no deseadas y mejorar la calidad de las interacciones.
 
-El repositorio contiene únicamente los pesos del adaptador PEFT (1,1 GB), no el modelo completo, por lo que su uso requiere cargar el modelo base `liuhaotian/llava-v1.5-13b` y aplicar el adaptador. La ficha de HuggingFace es incompleta: no se especifican licencia, idiomas, ni datos de entrenamiento, y no se han publicado resultados de benchmarks. Es relevante para desarrolladores que buscan mejorar la capacidad de alineación de modelos LLaVA existentes mediante técnicas de preferencia sin reentrenar el modelo completo.
+El repositorio contiene únicamente los pesos del adaptador PEFT (1,1 GB), no el modelo completo, por lo que su uso requiere cargar el modelo base `liuhaotian/llava-v1.5-13b` y aplicar el adaptador. La ficha de Hugging Face es incompleta: no se especifican licencia, idiomas, ni datos de entrenamiento, y no se han publicado resultados de benchmarks. Es relevante para desarrolladores que buscan mejorar la capacidad de alineación de modelos LLaVA existentes mediante técnicas de preferencia sin reentrenar el modelo completo.
 
 ## Especificaciones tecnicas
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fred456/llava15_13b_DPO-DPO_v8 | 13B + LoRA | 4096 | No disponible (base LLaMA-2) | HuggingFace |
-| liuhaotian/llava-v1.5-13b | 13B | 4096 | LLaMA-2 (uso no comercial) | HuggingFace |
-| liuhaotian/llava-v1.5-7b | 7B | 4096 | LLaMA-2 (uso no comercial) | HuggingFace |
-| Qwen-VL-Chat (7B) | 7B | 8192 | Apache 2.0 | HuggingFace |
+| Fred456/llava15_13b_DPO-DPO_v8 | 13B + LoRA | 4096 | No disponible (base LLaMA-2) | Hugging Face |
+| liuhaotian/llava-v1.5-13b | 13B | 4096 | LLaMA-2 (uso no comercial) | Hugging Face |
+| liuhaotian/llava-v1.5-7b | 7B | 4096 | LLaMA-2 (uso no comercial) | Hugging Face |
+| Qwen-VL-Chat (7B) | 7B | 8192 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a datos estructurales porque no hay benchmarks publicados de este adaptador. LLaVA-1.5-7B es una alternativa mas ligera, mientras que Qwen-VL-7B ofrece licencia Apache 2.0 y contexto mayor, pero no se pueden comparar rendimientos sin datos de evaluacion.
 
@@ -79,7 +79,7 @@ La comparativa se limita a datos estructurales porque no hay benchmarks publicad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fred456/llava15_13b_DPO-DPO_v8
+- Repositorio Hugging Face: https://huggingface.co/Fred456/llava15_13b_DPO-DPO_v8
 - Modelo base: https://huggingface.co/liuhaotian/llava-v1.5-13b
 - Repositorio del proyecto LLaVA: https://github.com/haotian-liu/LLaVA
 - Pagina del proyecto LLaVA: https://llava-vl.github.io/

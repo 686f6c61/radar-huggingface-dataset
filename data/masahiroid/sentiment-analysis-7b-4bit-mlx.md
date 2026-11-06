@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (4-bit MLX) | 7.24B | no disponible | safetensors MLX 4-bit | MIT | HuggingFace, solo Apple Silicon |
-| microsoft/Sentiment-Analysis-7B (base) | 7.24B | no disponible | no disponible en la informacion | no disponible en la informacion | HuggingFace |
-| Mistral-7B (familia inferida) | ~7.24B | no disponible | safetensors | no disponible en la informacion | HuggingFace |
+| Este modelo (4-bit MLX) | 7.24B | no disponible | safetensors MLX 4-bit | MIT | Hugging Face, solo Apple Silicon |
+| microsoft/Sentiment-Analysis-7B (base) | 7.24B | no disponible | no disponible en la informacion | no disponible en la informacion | Hugging Face |
+| Mistral-7B (familia inferida) | ~7.24B | no disponible | safetensors | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar cualitativamente con alternativas; la comparación se limita a parámetros, formato, licencia y plataforma de ejecución.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para comparar cualitativamente con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/masahiroid/Sentiment-Analysis-7B-4bit-mlx
+- Hugging Face: https://huggingface.co/masahiroid/Sentiment-Analysis-7B-4bit-mlx
 - Modelo base: https://huggingface.co/microsoft/Sentiment-Analysis-7B
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Herramienta de auditoría del autor: https://github.com/masahiroid/model-audit-lite

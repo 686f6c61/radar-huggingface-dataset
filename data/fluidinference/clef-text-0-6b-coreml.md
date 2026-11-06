@@ -6,7 +6,7 @@ clef-text-0.6b (Core ML) es un modelo de decisión de texto de ~0,70B parámetro
 
 El modelo está pensado para ejecutarse tanto en la GPU como íntegramente en el Neural Engine (todos los operadores del decoder se colocan en la ANE en los cuatro buckets de longitud), lo que libera la GPU para otras tareas. Ocupa un repositorio de 1,4 GB y se compone de tres paquetes: decoder Qwen3-0.6B + final norm en fp16 (848 MB), cabecera de esquema conjunto en fp16 (197 MB) y embeddings de tokens en fp16 (297 MB).
 
-Su relevancia actual radica en la combinación de bajo coste computacional, latencia de decenas de milisegundos en hardware de consumidor Apple y resultados de clasificación cercanos al maestro de 9B en tareas de enrutado y clasificación (temas, entidades, sentimiento, valoraciones, toxicidad, emoción), a costa de renunciar a capacidades de conocimiento y razonamiento. Acumula 106 descargas y 14 "likes" en HuggingFace.
+Su relevancia actual radica en la combinación de bajo coste computacional, latencia de decenas de milisegundos en hardware de consumidor Apple y resultados de clasificación cercanos al maestro de 9B en tareas de enrutado y clasificación (temas, entidades, sentimiento, valoraciones, toxicidad, emoción), a costa de renunciar a capacidades de conocimiento y razonamiento. Acumula 106 descargas y 14 "likes" en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -87,8 +87,8 @@ Métricas adicionales: acuerdo con el maestro del 86,4% y ECE de calibración 0,
 | Modelo | Parametros | Contexto | Media (all) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | clef-text-0.6b (este) | ~0,70B | 2.048 tokens | 79,1 | Apache-2.0 | Core ML + PyTorch |
-| clef-flash (maestro) | 9B | no disponible | 88,2 | Apache-2.0 | HuggingFace + Core ML |
-| Qwen3-0.6B (base) | ~0,6B | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| clef-flash (maestro) | 9B | no disponible | 88,2 | Apache-2.0 | Hugging Face + Core ML |
+| Qwen3-0.6B (base) | ~0,6B | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 El modelo se sitúa 9,1 puntos por debajo del maestro de 9B en la media global, con paridad en tareas de enrutado y clasificación (0–4 puntos de diferencia en tema, entidad, sentimiento, valoración, toxicidad y emoción) y una brecha mucho mayor en QA de conocimiento y NLI (ARC-Challenge 60,7 frente a 97,3; CommonsenseQA 65,0 frente a 94,3).
 
@@ -105,7 +105,7 @@ El modelo se sitúa 9,1 puntos por debajo del maestro de 9B en la media global, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/clef-text-0.6b-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/clef-text-0.6b-coreml
 - Pesos PyTorch (base): https://huggingface.co/FluidInference/clef-text-0.6b
 - Modelo maestro: https://huggingface.co/Cloudflare/clef-flash
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

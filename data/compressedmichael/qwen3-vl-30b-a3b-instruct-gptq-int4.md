@@ -90,7 +90,7 @@ La única comparación con datos verificables es frente al modelo base: misma ar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CompressedMichael/Qwen3-VL-30B-A3B-Instruct-GPTQ-INT4
+- Repositorio Hugging Face: https://huggingface.co/CompressedMichael/Qwen3-VL-30B-A3B-Instruct-GPTQ-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct
 - llm-compressor (herramienta de cuantización): https://github.com/vllm-project/llm-compressor
 - Dataset de calibración Flickr30k: https://huggingface.co/datasets/lmms-lab/flickr30k

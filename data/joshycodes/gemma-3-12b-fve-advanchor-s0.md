@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| joshycodes/gemma-3-12b-fve-advanchor-s0 | 13,19 mil millones | 128.000 tokens (heredado del base, no confirmado) | other / research-only | HuggingFace, 0 descargas, 0 likes | Checkpoint de investigación sin evaluar; no desplegar |
-| google/gemma-3-12b-it | 12B nominal | 128.000 tokens | Licencia Gemma de Google | HuggingFace | Modelo base instruct; referencia directa de comparación |
-| google/gemma-3-4b-it | 4B nominal | 128.000 tokens | Licencia Gemma de Google | HuggingFace | Alternativa más ligera de la misma familia para una sola GPU |
+| joshycodes/gemma-3-12b-fve-advanchor-s0 | 13,19 mil millones | 128.000 tokens (heredado del base, no confirmado) | other / research-only | Hugging Face, 0 descargas, 0 likes | Checkpoint de investigación sin evaluar; no desplegar |
+| google/gemma-3-12b-it | 12B nominal | 128.000 tokens | Licencia Gemma de Google | Hugging Face | Modelo base instruct; referencia directa de comparación |
+| google/gemma-3-4b-it | 4B nominal | 128.000 tokens | Licencia Gemma de Google | Hugging Face | Alternativa más ligera de la misma familia para una sola GPU |
 | Alternativas de otros fabricantes (por ejemplo, familias tipo Llama 3.x Instruct) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-advanchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-advanchor-s0
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Dataset relacionado (commitments corpus): https://huggingface.co/datasets/joshycodes/gemma-3-12b-commitments-corpus/tree/main
 - Repositorio de la librería Gemma (Google DeepMind): https://github.com/google-deepmind/gemma

@@ -81,5 +81,5 @@ Nota: la comparativa se basa en características generales conocidas de estos mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sigmandndnns/TriStream-SVS-300M
+- Repositorio Hugging Face: https://huggingface.co/Sigmandndnns/TriStream-SVS-300M
 - Imagen de arquitectura: https://file.garden/aKP04nPJ-0H0X3HE/tristream_architecture.png?v=1786473510718

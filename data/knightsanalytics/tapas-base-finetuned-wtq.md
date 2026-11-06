@@ -20,9 +20,9 @@ Es relevante para desarrolladores que necesitan un componente pequeno, rapido y 
 | Idiomas soportados | No declarados en la model card. El modelo base esta preentrenado y ajustado sobre tablas y preguntas en ingles, por lo que el soporte real es solo ingles |
 | Licencia | apache-2.0 |
 | Formato de pesos | Repositorio de 0,4 GB; incluye el tag onnx, por lo que cabe esperar pesos PyTorch (safetensors o pytorch_model.bin) junto con una exportacion ONNX. No hay GGUF |
-| Tarea declarada (pipeline) | No disponible en la ficha de HuggingFace; por arquitectura corresponde a table-question-answering |
+| Tarea declarada (pipeline) | No disponible en la ficha de Hugging Face; por arquitectura corresponde a table-question-answering |
 | Autor / procedencia | KnightsAnalytics (redistribucion de terceros). Checkpoint de referencia: google/tapas-base-finetuned-wtq |
-| Fecha de creacion / actualizacion | 2026-10-04 / 2026-10-04 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-10-04 / 2026-10-04 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Agregacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KnightsAnalytics/tapas-base-finetuned-wtq | TAPAS (encoder BERT-base) | ~110 M (estimado) | 512 tokens | No | apache-2.0 | HuggingFace, 0 descargas |
-| google/tapas-base-finetuned-wtq | TAPAS (encoder BERT-base) | ~110 M | 512 tokens | No | apache-2.0 | HuggingFace, checkpoint oficial |
-| google/tapas-base-finetuned-sqa | TAPAS (encoder BERT-base) | ~110 M | 512 tokens | Si (conteo, suma, promedio, comparaciones) | apache-2.0 | HuggingFace, checkpoint oficial |
-| google/tapas-large-finetuned-wtq | TAPAS (encoder BERT-large) | ~340 M | 512 tokens | No | apache-2.0 | HuggingFace, checkpoint oficial |
-| microsoft/tapex-base-finetuned-wtq | TAPEX (encoder-decoder BART-base) | ~140 M (aproximado) | 512 tokens | Segun ajuste | Licencia del modelo base (MIT en BART) | HuggingFace, checkpoint oficial |
+| KnightsAnalytics/tapas-base-finetuned-wtq | TAPAS (encoder BERT-base) | ~110 M (estimado) | 512 tokens | No | apache-2.0 | Hugging Face, 0 descargas |
+| google/tapas-base-finetuned-wtq | TAPAS (encoder BERT-base) | ~110 M | 512 tokens | No | apache-2.0 | Hugging Face, checkpoint oficial |
+| google/tapas-base-finetuned-sqa | TAPAS (encoder BERT-base) | ~110 M | 512 tokens | Si (conteo, suma, promedio, comparaciones) | apache-2.0 | Hugging Face, checkpoint oficial |
+| google/tapas-large-finetuned-wtq | TAPAS (encoder BERT-large) | ~340 M | 512 tokens | No | apache-2.0 | Hugging Face, checkpoint oficial |
+| microsoft/tapex-base-finetuned-wtq | TAPEX (encoder-decoder BART-base) | ~140 M (aproximado) | 512 tokens | Segun ajuste | Licencia del modelo base (MIT en BART) | Hugging Face, checkpoint oficial |
 
 Los datos de parametros de las variantes TAPAS-large y TAPEX-base son aproximaciones basadas en sus arquitecturas base y no cifras confirmadas en la informacion proporcionada. No hay datos de rendimiento comparado disponibles para esta copia.
 
@@ -101,7 +101,7 @@ Los datos de parametros de las variantes TAPAS-large y TAPEX-base son aproximaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KnightsAnalytics/tapas-base-finetuned-wtq
+- Modelo en Hugging Face: https://huggingface.co/KnightsAnalytics/tapas-base-finetuned-wtq
 - Checkpoint oficial de referencia (Google): https://huggingface.co/google/tapas-base-finetuned-wtq
 - Variante con agregacion (Google): https://huggingface.co/google/tapas-base-finetuned-sqa
 - Modelo equivalente con encoder-decoder (Microsoft): https://huggingface.co/microsoft/tapex-base-finetuned-wtq

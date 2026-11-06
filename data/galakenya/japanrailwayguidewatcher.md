@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`galakenya/JapanRailwayGuideWatcher` es un repositorio de pesos publicado en HuggingFace por el usuario `galakenya`. La única información verificable que acompaña al repositorio es su etiquetado (`safetensors`, `region:us`), un tamaño de 1,1 GB y las fechas de creación y actualización (26 de octubre de 2026). No se ha publicado model card, ficha de pipeline, licencia, lista de idiomas ni resultados de evaluación, por lo que no es posible confirmar la arquitectura, el número de parámetros ni el régimen de entrenamiento del modelo.
+`galakenya/JapanRailwayGuideWatcher` es un repositorio de pesos publicado en Hugging Face por el usuario `galakenya`. La única información verificable que acompaña al repositorio es su etiquetado (`safetensors`, `region:us`), un tamaño de 1,1 GB y las fechas de creación y actualización (26 de octubre de 2026). No se ha publicado model card, ficha de pipeline, licencia, lista de idiomas ni resultados de evaluación, por lo que no es posible confirmar la arquitectura, el número de parámetros ni el régimen de entrenamiento del modelo.
 
 El nombre del repositorio sugiere un asistente o sistema de vigilancia («watcher») orientado a la guía del ferrocarril japonés, pero se trata de una inferencia a partir del identificador y no de un dato documentado. El tamaño del repositorio (1,1 GB) es compatible con un modelo pequeño en precisión de 16 bits (del orden de 500 millones de parámetros, a 2 bytes por parámetro) o con un modelo de mayor tamaño cuantizado, si bien esta estimación no puede confirmarse sin acceso al `config.json` o al número de tensores del repositorio.
 
@@ -85,6 +85,6 @@ No es posible establecer una comparativa rigurosa: se desconocen los parámetros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/galakenya/JapanRailwayGuideWatcher
+- Repositorio en Hugging Face: https://huggingface.co/galakenya/JapanRailwayGuideWatcher
 - Paper, blog, repositorio de código o demo: no disponibles.
 - Búsqueda web: no se ha localizado ningún resultado relacionado con el modelo; los resultados devueltos trataban sobre procesadores Intel y no guardan relación con esta ficha.

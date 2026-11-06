@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados en la informacion disponible |
 |---|---|---|---|---|---|
-| `fc91/Llama-3.2-3B_CQoT_AnchoredRL_20261014_public` | Adaptador LoRA sobre base de 3,21 mM | No disponible (base: 128 000) | Llama 3.2 Community License | HuggingFace, 0 descargas, formato PEFT | No |
-| `meta-llama/Llama-3.2-3B-Instruct` | 3,21 mM | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente distribuido | Si, publicados por Meta |
-| Modelos de ~3B de otras familias (Qwen2.5-3B-Instruct, Phi-3.5-mini, Gemma 2 2B) | ~2-4 mM | 32 000-128 000 tokens segun modelo | Apache 2.0, MIT o Gemma Terms segun modelo | HuggingFace | Si, publicados por sus autores |
+| `fc91/Llama-3.2-3B_CQoT_AnchoredRL_20261014_public` | Adaptador LoRA sobre base de 3,21 mM | No disponible (base: 128 000) | Llama 3.2 Community License | Hugging Face, 0 descargas, formato PEFT | No |
+| `meta-llama/Llama-3.2-3B-Instruct` | 3,21 mM | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente distribuido | Si, publicados por Meta |
+| Modelos de ~3B de otras familias (Qwen2.5-3B-Instruct, Phi-3.5-mini, Gemma 2 2B) | ~2-4 mM | 32 000-128 000 tokens segun modelo | Apache 2.0, MIT o Gemma Terms segun modelo | Hugging Face | Si, publicados por sus autores |
 
 La comparacion relevante para este artefacto no es de rendimiento bruto, sino de proposito: frente al modelo base sin adaptar, la unica diferencia documentada es que incorpora un ajuste por RL experimental cuyo efecto no ha sido auditado ni cuantificado. Cualquier comparativa de metricas seria especulativa y no se incluye.
 
@@ -98,7 +98,7 @@ La comparacion relevante para este artefacto no es de rendimiento bruto, sino de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_AnchoredRL_20261014_public
+- Modelo en Hugging Face: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_AnchoredRL_20261014_public
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Revision declarada del modelo base: `0cb88a4f764b7a12671c53f0838cd831a0843b95`
 - Tokenizer declarado: https://huggingface.co/fc91/CQoT_SFT_mix_teacher_repair_round3_Llama-3.2-3B-HPC (revision `1c0a3554332b7adaa03edf51df7840aa2b7652f4`)

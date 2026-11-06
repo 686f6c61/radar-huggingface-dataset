@@ -69,7 +69,7 @@ Estos valores reflejan una capacidad moderada de generar informes coherentes (BL
 - **VRAM estimada para inferencia**: no se especifica. El repositorio tiene un tamaño de 16.3 GB, lo que sugiere pesos en FP16 (típico para Llama-3.1-8B). La inferencia requeriría al menos ~16 GB de VRAM para carga en memoria, más espacio para activaciones y el encoder visual (adicional). Se estima un mínimo de 24 GB de VRAM en FP16.
 - **GPUs recomendadas**: una NVIDIA RTX 3090/4090 (24 GB) o A100 (40 GB) sería suficiente para inferencia. Para entrenamiento (fine-tuning completo con LoRA), una sola GPU de 24 GB es viable, como se indica en el proceso de entrenamiento.
 - **Cabe en consumer GPU**: sí, con cuantización (p.ej., GGUF de 8 bits o 4 bits) podría caber en GPUs de 8-12 GB, pero no se proporcionan versiones cuantizadas.
-- **Opciones de despliegue**: al ser un modelo de HuggingFace con `pytorch_model.bin`, se puede cargar con `transformers` para inferencia en Python. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- **Opciones de despliegue**: al ser un modelo de Hugging Face con `pytorch_model.bin`, se puede cargar con `transformers` para inferencia en Python. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ Estos valores reflejan una capacidad moderada de generar informes coherentes (BL
 | Modelo | Base | Parámetros | Contexto | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Dia-LLaMA (original) | Llama-2-7B | ~7B | No especificado | CTRG-Chest-548K | No especificada | GitHub oficial |
-| Este modelo (cngvng/dia-llama-radgenome-ct-finetune) | Llama-3.1-8B-Instruct | ~8B (base) + LoRA | No especificado (heredado 128K) | RadGenome-ChestCT | Llama 3.1 Community | HuggingFace |
+| Este modelo (cngvng/dia-llama-radgenome-ct-finetune) | Llama-3.1-8B-Instruct | ~8B (base) + LoRA | No especificado (heredado 128K) | RadGenome-ChestCT | Llama 3.1 Community | Hugging Face |
 | Otros generadores de informes de TC (p.ej. CXR-LLaMA) | Varía | Varía | Varía | Varía | Varía | No comparable |
 
 No se dispone de una comparativa directa con otros modelos en los mismos benchmarks. La principal diferencia con el Dia-LLaMA original es el uso de un backbone más moderno (Llama-3.1 en lugar de Llama-2) y un conjunto de datos diferente, lo que afecta a la eficacia clínica y a la adaptación a categorías específicas.
@@ -94,7 +94,7 @@ No se dispone de una comparativa directa con otros modelos en los mismos benchma
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/cngvng/dia-llama-radgenome-ct-finetune)
+- [Hugging Face del modelo](https://huggingface.co/cngvng/dia-llama-radgenome-ct-finetune)
 - [Paper original de Dia-LLaMA (arXiv)](https://arxiv.org/abs/2403.16386)
 - [Versión HTML del paper (arXiv)](https://arxiv.org/html/2403.16386)
 - [GitHub oficial de Dia-LLaMA](https://github.com/zhi-xuan-chen/Dia-LLaMA)

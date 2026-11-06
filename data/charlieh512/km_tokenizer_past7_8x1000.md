@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KM tokenizer past7 (8 × 1000) es un tokenizador discreto para entrada de teclado y ratón, desarrollado por el usuario CharlieH512 y publicado en HuggingFace. No es un modelo de lenguaje: es un encoder-decoder transformer de 10,76 millones de parámetros que convierte fotogramas de teclado y ratón muestreados a 100 Hz en 8 códigos discretos por tick de 80 ms (cada código en el rango [0, 1000)), y que reconstruye los fotogramas originales a partir de esos códigos. Fue entrenado exclusivamente con grabaciones de partidas de Minecraft.
+KM tokenizer past7 (8 × 1000) es un tokenizador discreto para entrada de teclado y ratón, desarrollado por el usuario CharlieH512 y publicado en Hugging Face. No es un modelo de lenguaje: es un encoder-decoder transformer de 10,76 millones de parámetros que convierte fotogramas de teclado y ratón muestreados a 100 Hz en 8 códigos discretos por tick de 80 ms (cada código en el rango [0, 1000)), y que reconstruye los fotogramas originales a partir de esos códigos. Fue entrenado exclusivamente con grabaciones de partidas de Minecraft.
 
 Su relevancia técnica está en el diseño causal del encoder: next7 garantiza que los códigos de un tick dependan únicamente de ese tick y de los 7 ticks anteriores (560 ms), sin mirar nunca hacia adelante. Esta propiedad es crítica cuando los códigos se usan como historial de acciones de un modelo de secuencia: si el tokenizador mirase al futuro, el modelo podría filtrar las acciones venideras desde su propio historial. El modelo tiene 10.756.689 parámetros almacenados en fp32 y se distribuye en formato safetensors junto con el código de inferencia en PyTorch.
 
@@ -21,7 +21,7 @@ El modelo se apoya en un cuantizador sin codebook aprendido: corta el latente de
 | Licencia | other |
 | Formato de pesos | safetensors (`model.safetensors`, fp32) |
 | Libreria | pytorch (requiere `huggingface_hub` y `safetensors` para carga) |
-| Tamano del repo | 0,0 GB segun HuggingFace |
+| Tamano del repo | 0,0 GB segun Hugging Face |
 | Frecuencia de muestreo | 100 Hz (un fotograma cada 10 ms) |
 | Salida | 8 codigos por tick de 80 ms, cada uno en [0, 1000) |
 | Fecha de creacion | 2026-10-15 |
@@ -104,7 +104,7 @@ La informacion disponible no incluye parametros totales, contexto ni benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieH512/km_tokenizer_past7_8x1000
+- Modelo en Hugging Face: https://huggingface.co/CharlieH512/km_tokenizer_past7_8x1000
 - Modelo base de la variante con contexto: https://huggingface.co/CharlieH512/km_tokenizer_ctx14_8x1000
 - Variante a 10 Hz: https://huggingface.co/CharlieH512/km_tokenizer_ctx14_10hz_8x1000
 - Variante v2: https://huggingface.co/CharlieH512/km_tokenizer_v2_8x1000

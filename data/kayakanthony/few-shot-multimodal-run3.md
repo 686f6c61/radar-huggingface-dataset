@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kayakanthony/few-shot-multimodal-run3 es un repositorio alojado en HuggingFace que, pese a estar etiquetado con safetensors y transformer, no contiene un modelo entrenado en el sentido convencional. La propia model card lo describe como un conjunto de notas de lectura y un esbozo de experimento sobre aprendizaje few-shot multimodal, con enfasis explicito en lo que queda por probar en lugar de en resultados obtenidos. El autor indica que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
+kayakanthony/few-shot-multimodal-run3 es un repositorio alojado en Hugging Face que, pese a estar etiquetado con safetensors y transformer, no contiene un modelo entrenado en el sentido convencional. La propia model card lo describe como un conjunto de notas de lectura y un esbozo de experimento sobre aprendizaje few-shot multimodal, con enfasis explicito en lo que queda por probar en lugar de en resultados obtenidos. El autor indica que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
 Los unicos artefactos declarados son analysis.md (nota principal) y README.md (documentacion). No hay pipeline definido, no se declaran idiomas soportados y el repositorio ocupa 0.0 GB. El fichero de pesos registra 33.088 parametros totales, una cifra que corresponde a un artefacto residual o de prueba, no a un modelo funcional capaz de inferencia util.
 
@@ -45,7 +45,7 @@ Debido a la naturaleza del repositorio, los casos de uso son de caracter metodol
 - Definicion de protocolos de reproducibilidad: la model card insiste en que cualquier resultado futuro debe acompanarse de versiones de dataset, comandos, semillas, hardware y registros brutos.
 - Catalogacion de fallos: el repositorio incluye modos de fallo conocidos como material de referencia para quien replique el estudio.
 - Formacion interna: puede usarse como ejemplo de documentacion honesta que separa planes de resultados, util en equipos de investigacion.
-- Auditoria de repositorios de HuggingFace: sirve como caso de estudio de etiquetado enganoso (tags de transformer y safetensors sobre un artefacto sin modelo funcional).
+- Auditoria de repositorios de Hugging Face: sirve como caso de estudio de etiquetado enganoso (tags de transformer y safetensors sobre un artefacto sin modelo funcional).
 - Verificacion de fuentes: las referencias propuestas se presentan como punto de partida para su comprobacion, no como evidencia de resultados.
 
 ## Benchmarks y rendimiento
@@ -81,5 +81,5 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kayakanthony/few-shot-multimodal-run3
+- Hugging Face: https://huggingface.co/kayakanthony/few-shot-multimodal-run3
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada. Los resultados obtenidos corresponden a titulaciones universitarias sobre nutricion y actividad fisica y no guardan relacion con el modelo.

@@ -87,7 +87,7 @@ Frente a estas alternativas, el modelo destaca por su licencia Apache 2.0 sin re
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, pero no exime de responsabilidad sobre el contenido generado ni sobre el cumplimiento normativo del caso de uso.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-3b-v2-sft
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-3b-v2-sft
 - Modelo base (Yejin Korean 3B v2): no disponible, la model card no lo enlaza
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo o demo: no disponible

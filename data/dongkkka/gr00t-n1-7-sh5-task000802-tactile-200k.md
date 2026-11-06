@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GR00T-N1.7-SH5-Task000802-Tactile-200k es un ajuste fino (fine-tuning) del modelo fundacional de robotica NVIDIA GR00T-N1.7-3B, publicado por el usuario Dongkkka en HuggingFace. El modelo esta especializado en una unica tarea de manipulacion bimanual con una mano SH5 equipada con sensores tactiles: recoger una compresa sanitaria blanca de una caja con la mano derecha y sostenerla. No es un modelo de lenguaje generalista, sino una politica visomotora (vision-language-action, VLA) que transforma observaciones multimodales en comandos de articulaciones absolutos.
+GR00T-N1.7-SH5-Task000802-Tactile-200k es un ajuste fino (fine-tuning) del modelo fundacional de robotica NVIDIA GR00T-N1.7-3B, publicado por el usuario Dongkkka en Hugging Face. El modelo esta especializado en una unica tarea de manipulacion bimanual con una mano SH5 equipada con sensores tactiles: recoger una compresa sanitaria blanca de una caja con la mano derecha y sostenerla. No es un modelo de lenguaje generalista, sino una politica visomotora (vision-language-action, VLA) que transforma observaciones multimodales en comandos de articulaciones absolutos.
 
 El modelo parte de los 3.144.022.064 parametros del checkpoint base de NVIDIA y se ha entrenado durante 200.000 pasos sobre 161 episodios (58.044 fotogramas a 30 Hz) del dataset Task000802. Incorpora una extension tactil propietaria (adaptador SH5) que anade 90 taxeles crudos como entrada, ademas de tres camaras RGB, instruccion en lenguaje natural y 54 articulaciones medidas. La salida son comandos de 40x54 dimensiones que cubren brazo izquierdo, brazo derecho y ambas manos de 20 grados de libertad.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T-N1.7-SH5-Task000802-Tactile-200k | 3,14 B | no disponible | RGB + lenguaje + tactil + articulaciones | Apache 2.0 | HuggingFace (13 descargas) |
-| nvidia/GR00T-N1.7-3B (base) | ~3 B | no disponible | RGB + lenguaje + articulaciones | no disponible en esta ficha | HuggingFace (NVIDIA) |
+| GR00T-N1.7-SH5-Task000802-Tactile-200k | 3,14 B | no disponible | RGB + lenguaje + tactil + articulaciones | Apache 2.0 | Hugging Face (13 descargas) |
+| nvidia/GR00T-N1.7-3B (base) | ~3 B | no disponible | RGB + lenguaje + articulaciones | no disponible en esta ficha | Hugging Face (NVIDIA) |
 | Otros VLA abiertos (p. ej. OpenVLA, RT-2) | no disponible | no disponible | RGB + lenguaje | no disponible | no disponible |
 
 La comparativa con otros VLA abiertos no puede completarse con datos verificados en la informacion proporcionada; se indica "no disponible" para evitar cifras no contrastadas.
@@ -82,8 +82,8 @@ La comparativa con otros VLA abiertos no puede completarse con datos verificados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/GR00T-N1.7-SH5-Task000802-Tactile-200k
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/GR00T-N1.7-SH5-Task000802-Tactile-200k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Repositorio GR00T de NVIDIA (referencia del codigo base): no disponible en la informacion proporcionada
 - Paper de GR00T N1.7: no disponible en la informacion proporcionada
-- Artefactos internos del repo (`artifact_manifest.json`, `configs/sh5.json`, `offline_validation.json`, `SHA256SUMS`): incluidos en el propio repositorio de HuggingFace
+- Artefactos internos del repo (`artifact_manifest.json`, `configs/sh5.json`, `offline_validation.json`, `SHA256SUMS`): incluidos en el propio repositorio de Hugging Face

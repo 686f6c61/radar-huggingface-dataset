@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "abc1015abc/Z-Image-Turbo",
+  "slug": "abc1015abc-z-image-turbo",
+  "author": "abc1015abc",
+  "url": "https://huggingface.co/abc1015abc/Z-Image-Turbo",
+  "created_at": "2026-11-06T12:06:00.000Z",
+  "updated_at": "2026-11-06T12:06:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "arxiv:2511.22699",
+    "arxiv:2511.22677",
+    "arxiv:2511.13649",
+    "license:apache-2.0",
+    "diffusers:ZImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 32895044683,
+  "storage_human": "32.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z-Image Turbo | Free AI Image Generator in Seconds",
+      "url": "https://zimageturbo.io/en",
+      "snippet": "Generate stunning AI images in under 1 second with Z-Image Turbo. Free 6B parameter model with photorealistic quality. No sign-up required. Try it now!"
+    },
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "Text-to-Image model with 6B parameters, built with Diffusers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

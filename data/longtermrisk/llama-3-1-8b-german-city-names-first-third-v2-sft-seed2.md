@@ -65,8 +65,8 @@ No se dispone de información suficiente para comparar este fine-tuning con otro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2 | 8B | 128k | Apache-2.0 | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Apache-2.0 | HuggingFace |
+| longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2 | 8B | 128k | Apache-2.0 | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Apache-2.0 | Hugging Face |
 
 No hay datos de rendimiento comparativo, ya que el fine-tuning no ha sido evaluado públicamente. Otros modelos de 8B como Mistral 7B o Gemma 2 9B podrían ser alternativas, pero no se han comparado en este contexto.
 
@@ -81,6 +81,6 @@ No hay datos de rendimiento comparativo, ya que el fine-tuning no ha sido evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2
 - Repositorio de Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base unsloth/Meta-Llama-3.1-8B-Instruct: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

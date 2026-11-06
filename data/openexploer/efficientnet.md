@@ -84,8 +84,8 @@ No se dispone de datos comparativos directos en la informacion proporcionada. Co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenExploer/efficientnet
+- Repositorio en Hugging Face: https://huggingface.co/OpenExploer/efficientnet
 - Repositorio oficial de EfficientNet (TensorFlow TPU): https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet
 - Paper original: https://arxiv.org/abs/1905.11946
-- Documentacion de EfficientNet en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/efficientnet
+- Documentacion de EfficientNet en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/efficientnet
 - Referencia de EfficientNet en Torchvision: https://docs.pytorch.org/vision/main/models/efficientnet.html

@@ -83,4 +83,4 @@ Los datos de los modelos comparables proceden de sus respectivas fichas técnica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/papineau1837/Llama-3.2-3B-Instruct-Q4_K_S.gguf
+- Repositorio en Hugging Face: https://huggingface.co/papineau1837/Llama-3.2-3B-Instruct-Q4_K_S.gguf

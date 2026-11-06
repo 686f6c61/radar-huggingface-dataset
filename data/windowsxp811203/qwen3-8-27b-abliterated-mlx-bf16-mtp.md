@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.8-27B-Abliterated-MLX-bf16-mtp es una conversión a formato MLX en precisión bf16 del modelo Qwen3.8-27B-Abliterated, una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante edición de pesos) de un modelo de la familia Qwen 3.5. Lo publica el usuario windowsxp811203 en HuggingFace, no el equipo oficial de Qwen, y está pensado específicamente para ejecutarse en Apple Silicon mediante la librería MLX. El modelo conserva la pipeline image-text-to-text, por lo que mantiene capacidades de visión además de generación de texto.
+Qwen3.8-27B-Abliterated-MLX-bf16-mtp es una conversión a formato MLX en precisión bf16 del modelo Qwen3.8-27B-Abliterated, una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante edición de pesos) de un modelo de la familia Qwen 3.5. Lo publica el usuario windowsxp811203 en Hugging Face, no el equipo oficial de Qwen, y está pensado específicamente para ejecutarse en Apple Silicon mediante la librería MLX. El modelo conserva la pipeline image-text-to-text, por lo que mantiene capacidades de visión además de generación de texto.
 
-El interés principal de esta ficha es doble: por un lado, ofrece un modelo de aproximadamente 27.800 millones de parámetros en bf16 con decodificación especulativa nativa (MTP, multi-token prediction), lo que puede mejorar el throughput en hardware Apple; por otro, al ser una versión abliterated, elimina parte de los filtros de rechazo del modelo original, lo que tiene implicaciones legales y de seguridad importantes en producción. La licencia declarada es Apache 2.0, pero el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El interés principal de esta ficha es doble: por un lado, ofrece un modelo de aproximadamente 27.800 millones de parámetros en bf16 con decodificación especulativa nativa (MTP, multi-token prediction), lo que puede mejorar el throughput en hardware Apple; por otro, al ser una versión abliterated, elimina parte de los filtros de rechazo del modelo original, lo que tiene implicaciones legales y de seguridad importantes en producción. La licencia declarada es Apache 2.0, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 No se dispone de información oficial sobre la composición del dataset de entrenamiento, los resultados de benchmarks ni la longitud exacta de contexto del modelo original, por lo que esos datos se marcan como no disponibles. La ficha se basa exclusivamente en los metadatos del repositorio y en las características inferibles de la arquitectura Qwen 3.5 y del formato MLX.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa de rendimiento no está disponible porque no se han
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MLX-bf16-mtp
+- Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MLX-bf16-mtp
 - Modelo base: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
 - Librería MLX: https://github.com/ml-explore/mlx
 - MLX-LM: https://github.com/ml-explore/mlx-lm

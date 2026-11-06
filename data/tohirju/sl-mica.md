@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tohirju/sl-mica es un modelo publicado en HuggingFace por el usuario Tohirju, con un total de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) confirmados a partir de los pesos en formato safetensors. El repositorio ocupa 17,9 GB, un tamaño coherente con pesos almacenados a 16 bits por parámetro (2 bytes × 8,95 mil millones ≈ 17,9 GB), lo que apunta a un checkpoint en fp16 o bf16 sin cuantizar. La etiqueta de arquitectura declarada es qwen3_5_text, lo que sugiere que se trata de un derivado o ajuste fino de un modelo de texto de la familia Qwen 3.5.
+Tohirju/sl-mica es un modelo publicado en Hugging Face por el usuario Tohirju, con un total de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) confirmados a partir de los pesos en formato safetensors. El repositorio ocupa 17,9 GB, un tamaño coherente con pesos almacenados a 16 bits por parámetro (2 bytes × 8,95 mil millones ≈ 17,9 GB), lo que apunta a un checkpoint en fp16 o bf16 sin cuantizar. La etiqueta de arquitectura declarada es qwen3_5_text, lo que sugiere que se trata de un derivado o ajuste fino de un modelo de texto de la familia Qwen 3.5.
 
-El modelo está publicado con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es "other", sin que se haya publicado información adicional sobre los términos concretos de uso. No se han publicado idiomas soportados, pipeline de tarea, ni resultados de benchmarks en la información disponible.
+El modelo está publicado con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es "other", sin que se haya publicado información adicional sobre los términos concretos de uso. No se han publicado idiomas soportados, pipeline de tarea, ni resultados de benchmarks en la información disponible.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: el modelo no acumula descargas ni "likes", no dispone de model card pública con detalles de entrenamiento y la búsqueda web realizada no ha devuelto ninguna referencia técnica al mismo. Se trata, por tanto, de un checkpoint de interés únicamente como objeto de evaluación directa por parte del usuario, no de un modelo consolidado con documentación verificable.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: el mod
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. El repositorio solo contiene safetensors; el tamaño de 17,9 GB sugiere pesos a 16 bits, pero no se publican versiones GGUF, GPTQ o AWQ |
 | Idiomas soportados | No disponible |
-| Licencia | other (términos concretos no publicados), con acceso restringido que requiere aceptar condiciones en HuggingFace |
+| Licencia | other (términos concretos no publicados), con acceso restringido que requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ La diferencia clave no está en el tamaño, sino en la trazabilidad: los tres mo
 ## Limitaciones y advertencias
 
 - Licencia "other" sin términos publicados: no puede asumirse uso comercial. Es imprescindible contactar con el autor o revisar las condiciones que se aceptan al desbloquear el repositorio antes de cualquier despliegue.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que añade fricción para reproducibilidad y para integración en pipelines automatizados.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que añade fricción para reproducibilidad y para integración en pipelines automatizados.
 - Ausencia total de model card: se desconocen datos de entrenamiento, composición del dataset, idiomas, sesgos y políticas de alineamiento.
 - Longitud de contexto desconocida: no es posible planificar aplicaciones que dependan de ventanas largas sin medirla empíricamente.
 - Idiomas no declarados: no puede asumirse un rendimiento correcto en castellano ni en ningún otro idioma.
@@ -99,6 +99,6 @@ La diferencia clave no está en el tamaño, sino en la trazabilidad: los tres mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tohirju/sl-mica
+- Modelo en Hugging Face: https://huggingface.co/Tohirju/sl-mica
 - Búsqueda web realizada: no ha devuelto ningún resultado relevante sobre el modelo. Los resultados obtenidos corresponden a la plataforma de recursos públicos de la provincia de Guangdong (China) y no guardan relación con Tohirju/sl-mica: https://ygp.gdzwfw.gov.cn/, https://www.gdzwfw.gov.cn/ghcp/, https://www.digitalgd.com.cn/szgd/ggzyjypt/cpjjsfw_ggzyjypt.shtml, http://www.chinabidding.org.cn/zyzx34.htm, https://mall.gdaee.com.cn/page/index
 - Paper, blog técnico, repositorio de código o demo: no disponibles.

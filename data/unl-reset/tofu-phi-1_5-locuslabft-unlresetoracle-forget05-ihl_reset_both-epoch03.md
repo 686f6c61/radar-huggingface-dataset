@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`unl-reset/...`) | ~1,42 B | no disponible | Apache 2.0 | Unlearning sobre TOFU (forget05) | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | ~1,42 B | no disponible | no disponible en la informacion | Ajuste fino sobre TOFU (modelo base) | HuggingFace |
-| `microsoft/phi-1_5` | ~1,42 B | 2048 tokens | MIT (segun la ficha original de Microsoft) | Modelo base de razonamiento y codigo | HuggingFace, ampliamente usado |
-| `microsoft/phi-2` | ~2,7 B | 2048 tokens | MIT | Modelo base mas grande de la familia Phi | HuggingFace |
+| Este checkpoint (`unl-reset/...`) | ~1,42 B | no disponible | Apache 2.0 | Unlearning sobre TOFU (forget05) | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | ~1,42 B | no disponible | no disponible en la informacion | Ajuste fino sobre TOFU (modelo base) | Hugging Face |
+| `microsoft/phi-1_5` | ~1,42 B | 2048 tokens | MIT (segun la ficha original de Microsoft) | Modelo base de razonamiento y codigo | Hugging Face, ampliamente usado |
+| `microsoft/phi-2` | ~2,7 B | 2048 tokens | MIT | Modelo base mas grande de la familia Phi | Hugging Face |
 
 La comparacion relevante es frente a `locuslab/tofu_ft_phi-1.5` (mismo tamano y mismo origen, sin olvido) y frente a `microsoft/phi-1_5` (modelo original). No se dispone de datos de rendimiento comparado en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ La comparacion relevante es frente a `locuslab/tofu_ft_phi-1.5` (mismo tamano y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch03
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch03
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

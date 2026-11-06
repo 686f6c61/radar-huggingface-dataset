@@ -87,7 +87,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (p.ej. Ll
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zaakirio/Ornith-1.5-9B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zaakirio/Ornith-1.5-9B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Build bf16 fusionado: https://huggingface.co/zaakirio/Ornith-1.5-9B-Uncensored
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

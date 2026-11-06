@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200ep-pi0_vlmlora-steps30k-decay30k",
+  "slug": "team-sobits-sobit_home_left_sim-pnp_tomato_trash-abs-200ep-pi0_vlmlora-steps30k-decay30k",
+  "author": "team-sobits",
+  "url": "https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200ep-pi0_vlmlora-steps30k-decay30k",
+  "created_at": "2026-11-02T20:58:46.000Z",
+  "updated_at": "2026-11-03T17:12:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200ep",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1875712948,
+  "storage_human": "1.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200ep-qfix-pi05 ...",
+      "url": "https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200ep-qfix-pi05_vlmlora-steps30k-decay30k",
+      "snippet": "Robotics model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "sobit_home_left_sim-pnp_tomato_trash-abs-200ep - Hugging Face",
+      "url": "https://huggingface.co/datasets/team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200ep",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

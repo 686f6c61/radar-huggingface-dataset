@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-Km es un modelo predictivo de parámetros enzimáticos desarrollado por el usuario raisser y publicado en HuggingFace bajo licencia MIT. No se trata de un modelo de lenguaje generativo, sino de un pipeline de regresión supervisada que combina un codificador de proteínas congelado (ESM-2 de 35 millones de parámetros, variante de 12 capas) con descriptores moleculares calculados mediante RDKit, y que entrena un regresor LightGBM independiente para cada objetivo (kcat y Km). El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors.
+kcat-Km es un modelo predictivo de parámetros enzimáticos desarrollado por el usuario raisser y publicado en Hugging Face bajo licencia MIT. No se trata de un modelo de lenguaje generativo, sino de un pipeline de regresión supervisada que combina un codificador de proteínas congelado (ESM-2 de 35 millones de parámetros, variante de 12 capas) con descriptores moleculares calculados mediante RDKit, y que entrena un regresor LightGBM independiente para cada objetivo (kcat y Km). El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors.
 
 El modelo aborda un problema clásico en biología computacional y enzimiología: predecir la constante catalítica (kcat) y la constante de Michaelis (Km) de una enzima a partir de su secuencia y de la estructura del sustrato, sin necesidad de realizar ensayos experimentales. Esto es relevante para el diseño de enzimas, la ingeniería metabólica y el cribado de sustratos, donde los datos experimentales son caros y escasos.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kcat-Km (raisser) | ESM-2 35M + RDKit + LightGBM | ~35 M (codificador) | No disponible | MIT | HuggingFace |
+| kcat-Km (raisser) | ESM-2 35M + RDKit + LightGBM | ~35 M (codificador) | No disponible | MIT | Hugging Face |
 | UniKP | Framework de predicción de kcat/Km basado en modelos preentrenados | No disponible | No disponible | No disponible | Repositorio público |
 | DLKcat | Red neuronal sobre grafos y secuencias para kcat | No disponible | No disponible | No disponible | Repositorio público |
 | EITLEM-Kinetics | Ensemble de modelos proteicos para kcat/Km | No disponible | No disponible | No disponible | Repositorio público |
@@ -82,5 +82,5 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raisser/kcat-km-esm35-lgb
+- Hugging Face: https://huggingface.co/raisser/kcat-km-esm35-lgb
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

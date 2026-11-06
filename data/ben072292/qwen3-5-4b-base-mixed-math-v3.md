@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.5-4B-Base-mixed-math-v3 es un ajuste fino completo (*full fine-tuning*) del modelo base Qwen/Qwen3.5-4B-Base, publicado por el usuario ben072292 en HuggingFace. El repositorio contiene pesos en formato safetensors con 4.539.265.536 parámetros (~4,54 B) y un tamaño total de 9,1 GB, coherente con pesos en precisión de 16 bits. El identificador del run de entrenamiento registrado en el model-index (dpo-full-published-prefix2048-lr5e7-ga16-wd0-beta01-cosine-warmup10-delta-gh200-1ep) indica que el ajuste se realizó con optimización por preferencias directa (DPO) sobre el dataset mixed_math_prefix_2048, con prefijos de 2048 tokens.
+Qwen3.5-4B-Base-mixed-math-v3 es un ajuste fino completo (*full fine-tuning*) del modelo base Qwen/Qwen3.5-4B-Base, publicado por el usuario ben072292 en Hugging Face. El repositorio contiene pesos en formato safetensors con 4.539.265.536 parámetros (~4,54 B) y un tamaño total de 9,1 GB, coherente con pesos en precisión de 16 bits. El identificador del run de entrenamiento registrado en el model-index (dpo-full-published-prefix2048-lr5e7-ga16-wd0-beta01-cosine-warmup10-delta-gh200-1ep) indica que el ajuste se realizó con optimización por preferencias directa (DPO) sobre el dataset mixed_math_prefix_2048, con prefijos de 2048 tokens.
 
-El interés de esta ficha es acotado y conviene ser explícito: se trata de un modelo de la comunidad, sin descargas ni valoraciones (0 descargas, 0 likes en el momento de la consulta) y con una model card generada automáticamente por el Trainer de HuggingFace en la que los apartados de descripción, usos previstos, limitaciones y datos de evaluación figuran literalmente como "More information needed". No hay resultados de benchmarks declarados: el array de `results` del model-index está vacío.
+El interés de esta ficha es acotado y conviene ser explícito: se trata de un modelo de la comunidad, sin descargas ni valoraciones (0 descargas, 0 likes en el momento de la consulta) y con una model card generada automáticamente por el Trainer de Hugging Face en la que los apartados de descripción, usos previstos, limitaciones y datos de evaluación figuran literalmente como "More information needed". No hay resultados de benchmarks declarados: el array de `results` del model-index está vacío.
 
 La relevancia técnica, por tanto, no está en el rendimiento —no cuantificado— sino en el procedimiento: un ciclo de DPO con ajuste completo (no LoRA), tasa de aprendizaje de 5e-7, un único epoch y acumulación de gradiente sobre hardware GH200, aplicado a un modelo base multimodal (la etiqueta de pipeline es `image-text-to-text`). Resulta útil como referencia metodológica para reproducir ajustes por preferencias en dominios verticales de matemáticas y como punto de partida para experimentos posteriores, no como modelo listo para producción.
 
@@ -89,7 +89,7 @@ La diferencia práctica frente a esas alternativas no es de rendimiento medido (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ben072292/Qwen3.5-4B-Base-mixed-math-v3
+- Modelo en Hugging Face: https://huggingface.co/ben072292/Qwen3.5-4B-Base-mixed-math-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio con el identificador de entrenamiento del model-index (según la model card): https://huggingface.co/ben072292/Qwen3.5-4B-Base-mixed-math-v3
 - LLaMA-Factory (etiqueta `llama-factory` del repositorio): https://github.com/hiyouga/LLaMA-Factory

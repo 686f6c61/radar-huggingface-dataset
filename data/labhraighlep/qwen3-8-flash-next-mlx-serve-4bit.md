@@ -67,7 +67,7 @@ La comparación con Qwen3-35B-A3B muestra que Flash-Next tiene un mayor pool de 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no proporciona una model card detallada: no se indican idiomas, pipeline, ni instrucciones de uso. Esto dificulta la evaluación de su calidad y su uso correcto.
+- El repositorio de Hugging Face no proporciona una model card detallada: no se indican idiomas, pipeline, ni instrucciones de uso. Esto dificulta la evaluación de su calidad y su uso correcto.
 - La cuantización de 4 bits puede provocar una degradación de la calidad del modelo, especialmente en tareas de razonamiento complejo o generación de código.
 - El modelo es muy grande (176B en total), lo que limita su despliegue a hardware de alta gama; en Apple Silicon se necesita una Mac con mucha memoria unificada (128 GB o más).
 - No se dispone de datos sobre sesgos o alucinaciones del modelo, pero los modelos MoE de gran escala suelen presentar alucinaciones en tareas de datos específicos.
@@ -76,7 +76,7 @@ La comparación con Qwen3-35B-A3B muestra que Flash-Next tiene un mayor pool de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/labhraighlep/Qwen3.8-Flash-Next-MLX-Serve-4bit
+- Repositorio Hugging Face: https://huggingface.co/labhraighlep/Qwen3.8-Flash-Next-MLX-Serve-4bit
 - Documentación de unsloth sobre Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
 - Receta de SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next
 - Receta de vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

@@ -70,6 +70,6 @@ No se dispone de datos comparativos con otros modelos de detección de layout co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/superchaintech/sc-layout-models
+- Modelo en Hugging Face: https://huggingface.co/superchaintech/sc-layout-models
 - Modelo original (Armaggheddon/yolo26-document-layout): https://huggingface.co/Armaggheddon/yolo26-document-layout
 - Repositorio sc_toolkit (mencionado en la model card, URL no disponible en la información proporcionada)

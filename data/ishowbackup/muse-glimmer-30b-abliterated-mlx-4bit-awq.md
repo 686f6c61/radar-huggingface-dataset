@@ -81,6 +81,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-4bit-AWQ
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-4bit-AWQ
 - Modelo base (BF16): https://huggingface.co/Blackfrost-Research/Muse-Glimmer-30B-Abliterated-BF16
 - Modelo original de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B

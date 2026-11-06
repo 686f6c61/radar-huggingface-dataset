@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sigmoida-robloxer-v0p1-4b-prev` es un ajuste fino (LoRA + SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario `mogaqu1` en HuggingFace. El modelo está especializado en diálogos de juego en ruso, con la etiqueta explícita `roblox`, y se distribuye únicamente en formato GGUF con tres niveles de cuantización (Q4_K_M, Q5_K_M y Q8_0). Su propósito es actuar como motor conversacional para NPCs, asistentes de comunidad o prototipos de narrativa interactiva en ese dominio acotado.
+`sigmoida-robloxer-v0p1-4b-prev` es un ajuste fino (LoRA + SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario `mogaqu1` en Hugging Face. El modelo está especializado en diálogos de juego en ruso, con la etiqueta explícita `roblox`, y se distribuye únicamente en formato GGUF con tres niveles de cuantización (Q4_K_M, Q5_K_M y Q8_0). Su propósito es actuar como motor conversacional para NPCs, asistentes de comunidad o prototipos de narrativa interactiva en ese dominio acotado.
 
 Se trata de un modelo pequeño (4.205.751.296 parámetros, es decir, unos 4,2 mil millones) pensado para inferencia local: la cuantización Q4_K_M ocupa 2,71 GB en disco, lo que permite ejecutarlo en GPUs de consumo e incluso en CPU. El formato de diálogo es ChatML con token de parada `<|im_end|>`, y el autor recomienda fijar siempre un system prompt.
 
@@ -13,7 +13,7 @@ La relevancia de esta ficha es doble: por un lado, documenta una variante de nic
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (heredada del modelo base Qwen/Qwen3.5-4B; no detallada en la model card) |
-| Parámetros totales | 4.205.751.296 (~4,21 B), según metadatos de safetensors de HuggingFace |
+| Parámetros totales | 4.205.751.296 (~4,21 B), según metadatos de safetensors de Hugging Face |
 | Parámetros activos | No aplica (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | GGUF Q4_K_M (2,71 GB), Q5_K_M (3,07 GB) y Q8_0 (4,48 GB) |
@@ -38,7 +38,7 @@ La arquitectura subyacente, por tanto, es la del modelo base Qwen/Qwen3.5-4B, qu
 - Soporte de system prompt para fijar rol o persona del personaje, recomendado explícitamente por el autor.
 - Formato de plantilla ChatML, compatible con las implementaciones estándar de llama.cpp y derivados.
 - Distribución en GGUF cuantizado, lo que habilita ejecución en CPU y GPU de gama baja.
-- Etiqueta `endpoints_compatible` en HuggingFace, que sugiere compatibilidad con la API de mensajes de Inference Endpoints (no verificado en la información disponible).
+- Etiqueta `endpoints_compatible` en Hugging Face, que sugiere compatibilidad con la API de mensajes de Inference Endpoints (no verificado en la información disponible).
 - Soporte de tool calling / function calling: no documentado.
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
 - Capacidades de visión, audio o modo "thinking": no documentadas.
@@ -98,6 +98,6 @@ La comparación es estructural: el modelo evaluado no publica métricas, context
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/mogaqu1/sigmoida-robloxer-v0p1-4b-prev
+- Página del modelo en Hugging Face: https://huggingface.co/mogaqu1/sigmoida-robloxer-v0p1-4b-prev
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

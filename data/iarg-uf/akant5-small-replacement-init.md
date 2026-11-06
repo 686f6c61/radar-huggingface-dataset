@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-small-replacement-init
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-small-replacement-init
 - Checkpoint CPT asociado: https://huggingface.co/IARG-UF/akant5-small-replacement
 - Colección AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base: https://huggingface.co/google/mt5-small

@@ -24,7 +24,7 @@ La relevancia tecnica esta en que conserva la estructura del modelo original: el
 | Atencion | sliding-window en las capas 0-2; atencion completa sin codificacion posicional en la capa 3 |
 | Modalidades | texto, vision y audio (torres de vision y audio incluidas sin modificar) |
 | Tokenizer y plantillas | los del modelo base, sin cambios (tokenizer, chat template, processor y generation config) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ No se han identificado en la informacion disponible otros checkpoints parciales 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RadixArk/Muse-Spark-Open-last4-partial
+- Modelo en Hugging Face: https://huggingface.co/RadixArk/Muse-Spark-Open-last4-partial
 - Modelo base: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - Licencia: https://huggingface.co/RadixArk/Muse-Spark-Open-last4-partial/blob/main/LICENSE.md
 - Politica de uso: https://huggingface.co/RadixArk/Muse-Spark-Open-last4-partial/blob/main/USE_POLICY.md

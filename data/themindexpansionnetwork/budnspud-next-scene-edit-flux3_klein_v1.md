@@ -82,7 +82,7 @@ No se dispone de informacion sobre adaptadores comparables de terceros (mismo ta
 
 | Artefacto | Tipo | Funcion | Ajustes documentados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `budnspud-next-scene-edit-flux3_klein_v1` (este) | LoRA de imagen | Edicion de siguiente escena sobre imagen de partida | Euler/simple, 50 pasos, denoise 1, fuerza 1, 1024x1024 / 1MP | No disponible | Publico en HuggingFace, 0 descargas |
+| `budnspud-next-scene-edit-flux3_klein_v1` (este) | LoRA de imagen | Edicion de siguiente escena sobre imagen de partida | Euler/simple, 50 pasos, denoise 1, fuerza 1, 1024x1024 / 1MP | No disponible | Publico en Hugging Face, 0 descargas |
 | Adaptador "chaos-scene" del JSON del creador | LoRA de imagen | Edicion de escena (variante) | No disponibles | No disponible | Archivado junto al anterior, nombre de fichero no disponible |
 | `fasth3_omniref_8step_pruned_int8_convrot` (MiniMaxH3ReferenceToVideo) | Modelo de video | Referencia-a-video con dos imagenes | Euler, 8 pasos, sigma shifts 12/3, 1MP, 24 fps, 5 s → 124 frames, 1376x768 con audio | No disponible | Dependencia externa, no redistribuida |
 
@@ -105,7 +105,7 @@ Comparativa con alternativas del mercado: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheMindExpansionNetwork/budnspud-next-scene-edit-flux3_klein_v1
+- Modelo en Hugging Face: https://huggingface.co/TheMindExpansionNetwork/budnspud-next-scene-edit-flux3_klein_v1
 - Workflow ejecutado, ejemplo 01: `workflows/executed/01_popcorn_next.json`
 - Workflow ejecutado, ejemplo 02: `workflows/executed/02_sandwich_next.json`
 - Workflow ejecutado, ejemplo 03: `workflows/executed/03_controller_next.json`

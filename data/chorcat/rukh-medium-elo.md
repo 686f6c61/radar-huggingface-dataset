@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rukh-medium-elo es un decodificador GPT escrito desde cero que juega al ajedrez prediciendo el siguiente movimiento de una partida expresada en notacion UCI. Lo desarrolla el autor de GitHub borja-glez (publicado en HuggingFace bajo el usuario chorcat) como etapa intermedia del proyecto Rukh, un curso que construye un modelo de lenguaje de ajedrez de principio a fin. El modelo tiene 115.120.128 parametros, un vocabulario fijo de 2030 tokens y una ventana de contexto de 200 movimientos.
+Rukh-medium-elo es un decodificador GPT escrito desde cero que juega al ajedrez prediciendo el siguiente movimiento de una partida expresada en notacion UCI. Lo desarrolla el autor de GitHub borja-glez (publicado en Hugging Face bajo el usuario chorcat) como etapa intermedia del proyecto Rukh, un curso que construye un modelo de lenguaje de ajedrez de principio a fin. El modelo tiene 115.120.128 parametros, un vocabulario fijo de 2030 tokens y una ventana de contexto de 200 movimientos.
 
 El problema que resuelve es concreto: generar partidas de ajedrez legalmente validas sin necesidad de un motor de busqueda tipo Stockfish, y ademas permitir condicionar el estilo de juego mediante dos tokens de cabecera, `<wXXXX> <bXXXX>`, que indican el nivel de Elo deseado para blancas y negras. Segun la evaluacion del autor, alcanza un 99,7 % de legalidad sin mascara en argmax y un Elo estimado de 1558 (IC 95 % 1500-1609).
 
@@ -96,7 +96,7 @@ Barras de aceptacion del proyecto:
 - GPU recomendadas: cualquier GPU moderna sirve; no se necesita una A100 ni una H100. Una RTX 3060, RTX 4060 o superior es mas que suficiente.
 - Si cabe en GPU de consumo: si, en practicamente todas, incluidas GPUs de gama de entrada e incluso en CPU.
 - Ejecucion en navegador: si, via ONNX, tal como demuestra la demo oficial.
-- Opciones de despliegue: ONNX Runtime y la propia libreria `rukh` estan documentados. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni para `transformers` estandar, dado que la arquitectura, el tokenizador y el pipeline son personalizados y no siguen las convenciones de HuggingFace.
+- Opciones de despliegue: ONNX Runtime y la propia libreria `rukh` estan documentados. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni para `transformers` estandar, dado que la arquitectura, el tokenizador y el pipeline son personalizados y no siguen las convenciones de Hugging Face.
 - Latencia y throughput estimados: no disponibles. La suite de evaluacion usa 0,1 s por movimiento en los rivales Stockfish, pero ese dato corresponde a los oponentes, no al modelo.
 - Tamano del repositorio: 1,3 GB, que incluye pesos safetensors, exportaciones ONNX y artefactos asociados.
 
@@ -106,7 +106,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Elo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chorcat/rukh-medium-elo | 115.120.128 | 200 movimientos | 1558 (IC 95 % 1500-1609) | apache-2.0 | HuggingFace, safetensors y ONNX |
+| chorcat/rukh-medium-elo | 115.120.128 | 200 movimientos | 1558 (IC 95 % 1500-1609) | apache-2.0 | Hugging Face, safetensors y ONNX |
 | Maia Chess | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Leela Chess Zero | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Stockfish | no aplica (motor de busqueda) | no aplica | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -130,7 +130,7 @@ Tampoco se dispone de las especificaciones de las otras etapas de la familia Ruk
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-medium-elo
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-medium-elo
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Demo jugable en el navegador (etapa medium-elo-fp16): https://rukh.borjaglez.com/?stage=medium-elo-fp16
 - Blog tecnico del proyecto: https://lab.rukh.borjaglez.com

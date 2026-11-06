@@ -29,7 +29,7 @@ Con 2.031.739.904 parámetros totales y un tamaño de repositorio de 4,1 GB, es 
 
 La arquitectura subyacente es la de Qwen3-1.7B: un transformer decoder-only denso con atención completa, normalización RMSNorm y sin mezcla de expertos. El entrenamiento se realiza con destilación on-policy sobre el entorno BabyAI, usando el algoritmo TCOD en su variante forward-to-backward, en la que la ventana del episodio crece progresivamente y se fija un `checkpoint_steps` de 6. La implementación proviene del repositorio `kokolerk/TCOD` con un overlay de FutureBridge-OPD sobre `trinity-rft`, y el port de BabyAI descrito en `docs/TCOD_BABYAI.md` de la rama `tcod-babyai` del repositorio online-rose.
 
-Los hiperparámetros documentados son: estudiante Qwen3-1.7B, profesor Qwen3-32B en bf16, razonamiento desactivado, conversación de 20 turnos según `babyai/eval_babyai.py`, las 810 tareas oficiales de entrenamiento, batch de 16 episodios / 64 turnos, tasa de aprendizaje 1e-6, coeficiente de KL de 1.0 y tres pasadas sobre los datos, lo que suma 152 pasos de explorer. La exportación a HuggingFace corresponde al paso 101 (paso 106 del trainer), por lo que se trata de un checkpoint intermedio y no del resultado final de las tres pasadas. No se documenta ningún uso de RLHF ni de DPO.
+Los hiperparámetros documentados son: estudiante Qwen3-1.7B, profesor Qwen3-32B en bf16, razonamiento desactivado, conversación de 20 turnos según `babyai/eval_babyai.py`, las 810 tareas oficiales de entrenamiento, batch de 16 episodios / 64 turnos, tasa de aprendizaje 1e-6, coeficiente de KL de 1.0 y tres pasadas sobre los datos, lo que suma 152 pasos de explorer. La exportación a Hugging Face corresponde al paso 101 (paso 106 del trainer), por lo que se trata de un checkpoint intermedio y no del resultado final de las tres pasadas. No se documenta ningún uso de RLHF ni de DPO.
 
 ## Capacidades
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep2 | 2,03B | No disponible (base: 32.768) | No disponible | HuggingFace, 0 descargas | Fine-tune de investigación sobre BabyAI, sin evaluar |
-| Qwen/Qwen3-1.7B | 1,7B (2,03B con embeddings) | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido | Modelo base; capacidades generalistas y multilingües |
-| SmolLM2-1.7B (HuggingFaceTB) | 1,7B | 8.192 | Apache 2.0 | HuggingFace | Alternativa de tamaño similar orientada a uso general; los datos concretos de rendimiento no están disponibles en la información proporcionada |
-| Llama-3.2-1B (Meta) | 1,24B | 128.000 | Llama 3.2 Community License | HuggingFace | Alternativa de tamaño comparable; los datos concretos de rendimiento no están disponibles en la información proporcionada |
+| SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep2 | 2,03B | No disponible (base: 32.768) | No disponible | Hugging Face, 0 descargas | Fine-tune de investigación sobre BabyAI, sin evaluar |
+| Qwen/Qwen3-1.7B | 1,7B (2,03B con embeddings) | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido | Modelo base; capacidades generalistas y multilingües |
+| SmolLM2-1.7B (HuggingFaceTB) | 1,7B | 8.192 | Apache 2.0 | Hugging Face | Alternativa de tamaño similar orientada a uso general; los datos concretos de rendimiento no están disponibles en la información proporcionada |
+| Llama-3.2-1B (Meta) | 1,24B | 128.000 | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño comparable; los datos concretos de rendimiento no están disponibles en la información proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep2
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio TCOD citado en la model card (`kokolerk/TCOD`): no se ha proporcionado URL verificable en la información disponible
 - Framework trinity-rft citado en la model card: no se ha proporcionado URL verificable en la información disponible

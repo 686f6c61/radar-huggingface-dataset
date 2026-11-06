@@ -77,6 +77,6 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_depth_30
+- Hugging Face: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_depth_30
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - NVIDIA ModelOpt: no disponible enlace en la informacion proporcionada

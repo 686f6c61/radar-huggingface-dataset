@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`eandujar/pokemon-151-autogluon` no es un modelo de lenguaje: es un artefacto de clasificacion binaria tabular entrenado con AutoGluon y publicado en HuggingFace. El autor, `eandujar`, lo presenta como el modelo con mejor rendimiento de un experimento de AutoML, seleccionado mediante exactitud balanceada (balanced accuracy) sobre el split de validacion proporcionado. El modelo ganador es `LightGBMLarge`, es decir, un conjunto de arboles de decision potenciados por gradiente implementado con LightGBM, no una red neuronal ni un transformer.
+`eandujar/pokemon-151-autogluon` no es un modelo de lenguaje: es un artefacto de clasificacion binaria tabular entrenado con AutoGluon y publicado en Hugging Face. El autor, `eandujar`, lo presenta como el modelo con mejor rendimiento de un experimento de AutoML, seleccionado mediante exactitud balanceada (balanced accuracy) sobre el split de validacion proporcionado. El modelo ganador es `LightGBMLarge`, es decir, un conjunto de arboles de decision potenciados por gradiente implementado con LightGBM, no una red neuronal ni un transformer.
 
 El modelo resuelve una tarea de clasificacion binaria sobre un dataset tabular concreto, `pakiino/2026-24679-pokemon-151-tabular-hw1`, con una columna objetivo llamada `label` cuya clase positiva es `1`. Todo apunta a un ejercicio academico (el identificador del dataset incluye el sufijo `hw1`, de homework) centrado en Pokemon 151, aunque la model card no documenta el significado semantico de `label` ni las caracteristicas de entrada.
 
-Su relevancia es limitada y muy especifica: sirve como ejemplo reproducible de un flujo AutoML tabular completo (busqueda de modelos, seleccion por metrica, publicacion del artefacto), no como componente de proposito general. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, ocupa 0.0 GB segun HuggingFace y no declara licencia, lo que condiciona cualquier uso fuera del ambito educativo.
+Su relevancia es limitada y muy especifica: sirve como ejemplo reproducible de un flujo AutoML tabular completo (busqueda de modelos, seleccion por metrica, publicacion del artefacto), no como componente de proposito general. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, ocupa 0.0 GB segun Hugging Face y no declara licencia, lo que condiciona cualquier uso fuera del ambito educativo.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Su relevancia es limitada y muy especifica: sirve como ejemplo reproducible de u
 | Tipos de cuantizacion | no disponible; no aplicable (los modelos de arboles no se cuantizan a FP8/INT4; la compresion tipica seria poda o limite de hojas) |
 | Idiomas soportados | no disponible; no aplicable (no procesa texto libre) |
 | Licencia | no disponible (la model card no especifica ninguna licencia) |
-| Formato de pesos | no disponible en detalle; el repositorio se carga con `TabularPredictor.load()` y ocupa 0.0 GB segun HuggingFace |
+| Formato de pesos | no disponible en detalle; el repositorio se carga con `TabularPredictor.load()` y ocupa 0.0 GB segun Hugging Face |
 | Libreria de carga | `autogluon` |
 | Tipo de tarea | Clasificacion binaria tabular |
 | Columna objetivo | `label` (clase positiva: `1`) |
@@ -77,7 +77,7 @@ La comparacion se plantea frente a las alternativas habituales de clasificacion 
 
 | Modelo / alternativa | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `eandujar/pokemon-151-autogluon` | Gradient boosting (LightGBMLarge) via AutoGluon | no disponible | no aplicable | no disponible | no disponible | HuggingFace, 0 descargas, repo de 0.0 GB |
+| `eandujar/pokemon-151-autogluon` | Gradient boosting (LightGBMLarge) via AutoGluon | no disponible | no aplicable | no disponible | no disponible | Hugging Face, 0 descargas, repo de 0.0 GB |
 | LightGBM (modelo entrenado a mano) | Gradient boosting | configurable por el usuario | no aplicable | depende del ajuste | MIT (libreria) | github.com/microsoft/LightGBM |
 | XGBoost | Gradient boosting | configurable por el usuario | no aplicable | depende del ajuste | Apache 2.0 (libreria) | github.com/dmlc/xgboost |
 | CatBoost | Gradient boosting con soporte nativo de categoricas | configurable por el usuario | no aplicable | depende del ajuste | Apache 2.0 (libreria) | github.com/catboost/catboost |
@@ -100,7 +100,7 @@ Diferencias clave: las tres alternativas son librerias de proposito general que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eandujar/pokemon-151-autogluon
+- Modelo en Hugging Face: https://huggingface.co/eandujar/pokemon-151-autogluon
 - Dataset de entrenamiento: https://huggingface.co/datasets/pakiino/2026-24679-pokemon-151-tabular-hw1
 - Documentacion de AutoGluon Tabular: https://auto.gluon.ai/stable/api/autogluon.tabular.TabularPredictor.html
 - Repositorio de AutoGluon: https://github.com/autogluon/autogluon

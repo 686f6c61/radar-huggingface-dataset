@@ -21,7 +21,7 @@ Su relevancia es fundamentalmente experimental: sirve como banco de pruebas repr
 | Licencia | CC BY 4.0 (pesos). El dataset TinyStories no se redistribuye |
 | Formato de pesos | safetensors en float32 (`max-accuracy.safetensors`, `min-ce.safetensors`), arrays crudos `.f32` para la demo web y conectoma en formato binario CSR (`edges_offsets.i32`, `edges_source.u16`, `edges_weight.f32`, `interface/in_index.i32`) en el dataset `fernandofernandes/fly-connectome-49k` |
 
-Otros metadatos: repositorio de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, pipeline `text-generation`, fecha de creación 2026-09-16 y de actualización 2026-09-16 según los metadatos de HuggingFace.
+Otros metadatos: repositorio de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, pipeline `text-generation`, fecha de creación 2026-09-16 y de actualización 2026-09-16 según los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -73,9 +73,9 @@ Advertencia del propio autor: la comparación contra la referencia no está cont
 
 | Modelo | Parámetros | Readout | CE (held-out) | Top-1 | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| ngxson/fly-llm-hf (referencia) | 52.756.661 | Matriz de rango completo (50.578.432 parámetros) | 3,9882 | 31,38% | no disponible | HuggingFace |
-| fly-wordbrain-rank64 (max-accuracy) | 3.956.469 | Factorizado de rango 64 (3.226.688 parámetros) | 3,2725 | 33,50% | CC BY 4.0 | HuggingFace, 0 descargas |
-| fly-wordbrain-rank64 (min-CE) | 3.956.469 | Factorizado de rango 64 | 3,2802 | 33,37% | CC BY 4.0 | HuggingFace, 0 descargas |
+| ngxson/fly-llm-hf (referencia) | 52.756.661 | Matriz de rango completo (50.578.432 parámetros) | 3,9882 | 31,38% | no disponible | Hugging Face |
+| fly-wordbrain-rank64 (max-accuracy) | 3.956.469 | Factorizado de rango 64 (3.226.688 parámetros) | 3,2725 | 33,50% | CC BY 4.0 | Hugging Face, 0 descargas |
+| fly-wordbrain-rank64 (min-CE) | 3.956.469 | Factorizado de rango 64 | 3,2802 | 33,37% | CC BY 4.0 | Hugging Face, 0 descargas |
 | Variante interna de rango completo, misma receta | no disponible | Matriz de rango completo | 1,63 nats peor que la versión de rango 64 (dato del autor) | no disponible | no aplica | no distribuida |
 
 No se dispone de datos comparables de otros modelos de la misma categoría (por ejemplo, GPT-2 small o modelos de la familia TinyStories) en la información proporcionada, por lo que no se incluyen cifras de esos sistemas.
@@ -95,7 +95,7 @@ No se dispone de datos comparables de otros modelos de la misma categoría (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fernandofernandes/fly-wordbrain-rank64
+- Modelo en Hugging Face: https://huggingface.co/fernandofernandes/fly-wordbrain-rank64
 - Dataset del conectoma: https://huggingface.co/datasets/fernandofernandes/fly-connectome-49k
 - Demo de lectura en voz alta (Space Fly Recital): https://huggingface.co/spaces/fernandofernandes/fly-recital
 - Repositorio de investigación y artefactos: https://github.com/fernando-neto-ai/fly-wordbrain

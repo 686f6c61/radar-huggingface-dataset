@@ -53,10 +53,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-3B-Instruct (base) | 3.09B | 32k | FP16/BF16 | Apache 2.0 | HuggingFace |
-| retlaw1007/qwen2.5-3b-instruct-4bit-bnb | 3.09B | 32k | 4-bit bitsandbytes | no disponible | HuggingFace |
-| unsloth/Qwen2.5-3B-Instruct-bnb-4bit | 3.09B | 32k | 4-bit bitsandbytes | Apache 2.0 | HuggingFace |
-| unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit | 3.09B | 32k | 4-bit dinámico (Unsloth) | Apache 2.0 | HuggingFace |
+| Qwen2.5-3B-Instruct (base) | 3.09B | 32k | FP16/BF16 | Apache 2.0 | Hugging Face |
+| retlaw1007/qwen2.5-3b-instruct-4bit-bnb | 3.09B | 32k | 4-bit bitsandbytes | no disponible | Hugging Face |
+| unsloth/Qwen2.5-3B-Instruct-bnb-4bit | 3.09B | 32k | 4-bit bitsandbytes | Apache 2.0 | Hugging Face |
+| unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit | 3.09B | 32k | 4-bit dinámico (Unsloth) | Apache 2.0 | Hugging Face |
 
 La diferencia principal entre estas versiones es el método de cuantización y la optimización del kernel. La versión de Unsloth usa cuantización dinámica selectiva que puede ofrecer mejor rendimiento, mientras que la de retlaw1007 usa bitsandbytes estándar. La licencia del modelo de retlaw1007 no está declarada, lo que puede ser un obstáculo para uso comercial.
 
@@ -69,8 +69,8 @@ La diferencia principal entre estas versiones es el método de cuantización y l
 - Idioma: el modelo base está optimizado para inglés y chino; su rendimiento en español es limitado y puede producir errores gramaticales o de coherencia.
 
 ## Enlaces
-- [HuggingFace: retlaw1007/qwen2.5-3b-instruct-4bit-bnb](https://huggingface.co/retlaw1007/qwen2.5-3b-instruct-4bit-bnb)
-- [HuggingFace: unsloth/Qwen2.5-3B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit)
-- [HuggingFace: unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit)
-- [Repositorio oficial de Qwen2.5 en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
+- [Hugging Face: retlaw1007/qwen2.5-3b-instruct-4bit-bnb](https://huggingface.co/retlaw1007/qwen2.5-3b-instruct-4bit-bnb)
+- [Hugging Face: unsloth/Qwen2.5-3B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit)
+- [Hugging Face: unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit)
+- [Repositorio oficial de Qwen2.5 en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
 - [Documentación de bitsandbytes](https://huggingface.co/docs/bitsandbytes/index)

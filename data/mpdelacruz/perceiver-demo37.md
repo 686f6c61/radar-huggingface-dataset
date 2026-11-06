@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mpdelacruz/perceiver-demo37` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura Perceiver orientada a aprendizaje contrastivo. Lo publica el usuario `mpdelacruz` y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`mpdelacruz/perceiver-demo37` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura Perceiver orientada a aprendizaje contrastivo. Lo publica el usuario `mpdelacruz` y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado. El repositorio contiene 49.600 parámetros totales, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable. No se declara ningún resultado de benchmark ni se presenta como un release con rendimiento validado.
 
@@ -35,7 +35,7 @@ No hay evidencia de un entrenamiento completado. El autor indica explícitamente
 - No se especifican capacidades multilingües ni idiomas cubiertos.
 - No se documentan modos especiales (thinking mode, visión, audio).
 - El artefacto principal es `eval.py`, que incluye un ejemplo de smoke test en su bloque `__main__`; sirve para verificar que la implementación se ejecuta, no para evaluar calidad.
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 ## Casos de uso
 
@@ -68,12 +68,12 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No se ha auditado robustez, equidad ni transferencia de dominio; el autor lo advierte explícitamente.
 - Riesgo de alucinación no evaluable, dado que el modelo no genera texto entrenado.
 - No se especifican idiomas soportados ni longitud de contexto, lo que impide planificar su uso en tareas lingüísticas.
-- Implementación personalizada: las APIs automáticas de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explícito y pueden no funcionar directamente.
+- Implementación personalizada: las APIs automáticas de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explícito y pueden no funcionar directamente.
 - Licencia BSD-3-Clause: permisiva para uso comercial, pero el autor recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - Sin descargas ni likes en el momento de la consulta, y sin pipeline declarado: no hay señal de validación por parte de la comunidad.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mpdelacruz/perceiver-demo37
+- Repositorio en Hugging Face: https://huggingface.co/mpdelacruz/perceiver-demo37
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

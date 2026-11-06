@@ -43,7 +43,7 @@ En cuanto al adaptador, la model card es minima. Indica que se entreno con Unslo
 - Base para experimentos de evaluacion comparativa: permite medir la diferencia entre el modelo base y la version ajustada en tareas de generacion y conocimiento, como paso previo a decidir si merece la pena escalar el dataset.
 - Generacion de texto auxiliar en ingles: redaccion, resumen o reformulacion de contenido tecnico en ingles con un modelo pequeno desplegable en hardware de consumo.
 - Punto de partida para fusion de adaptadores: al ser un adaptador PEFT, puede combinarse o compararse con otros adaptadores del mismo autor (por ejemplo los de tipo SearchAgent) para estudiar interacciones entre ajustes.
-- Educacion y demostraciones: ilustrar en un articulo o clase como se publica un adaptador en HuggingFace, que metadatos son obligatorios y por que una model card incompleta limita la reproducibilidad.
+- Educacion y demostraciones: ilustrar en un articulo o clase como se publica un adaptador en Hugging Face, que metadatos son obligatorios y por que una model card incompleta limita la reproducibilidad.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3.5-2B-TauKnowledge-CS-SFT-01) | Adaptador sobre base 2B | no disponible | no publicado | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-2B (base) | 2B | no disponible | Segmentado por Qwen frente a Qwen3-1.7B, Qwen3-4B-2507 y Qwen3-VL 2B/4B | no disponible en la busqueda | HuggingFace, Modal, Ollama |
-| Qwen3-1.7B | 1,7B | no disponible | Referencia de comparacion citada por Qwen | no disponible en la busqueda | HuggingFace |
-| Qwen3-4B-2507 | 4B | no disponible | Referencia de comparacion citada por Qwen | no disponible en la busqueda | HuggingFace |
+| Este adaptador (Qwen3.5-2B-TauKnowledge-CS-SFT-01) | Adaptador sobre base 2B | no disponible | no publicado | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-2B (base) | 2B | no disponible | Segmentado por Qwen frente a Qwen3-1.7B, Qwen3-4B-2507 y Qwen3-VL 2B/4B | no disponible en la busqueda | Hugging Face, Modal, Ollama |
+| Qwen3-1.7B | 1,7B | no disponible | Referencia de comparacion citada por Qwen | no disponible en la busqueda | Hugging Face |
+| Qwen3-4B-2507 | 4B | no disponible | Referencia de comparacion citada por Qwen | no disponible en la busqueda | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-TauKnowledge-CS-SFT-01-adapter
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-TauKnowledge-CS-SFT-01-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Adaptador hermano (SearchAgent-SFT-01): https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01
 - Adaptador hermano (SearchAgent-SFT-02): https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-02

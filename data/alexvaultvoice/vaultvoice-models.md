@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlexVaultVoice/vaultvoice-models` es un modelo de lenguaje publicado en HuggingFace por el usuario AlexVaultVoice. Según los metadatos del repositorio, se trata de un modelo de tipo conversacional, con pesos en formato GGUF y licencia Apache 2.0. El repositorio contiene aproximadamente 1.777 millones de parámetros (1,78B) y un tamaño total de 4,5 GB, lo que sugiere un modelo de tamaño pequeño o mediano, adecuado para inferencia en hardware de consumo.
+El modelo `AlexVaultVoice/vaultvoice-models` es un modelo de lenguaje publicado en Hugging Face por el usuario AlexVaultVoice. Según los metadatos del repositorio, se trata de un modelo de tipo conversacional, con pesos en formato GGUF y licencia Apache 2.0. El repositorio contiene aproximadamente 1.777 millones de parámetros (1,78B) y un tamaño total de 4,5 GB, lo que sugiere un modelo de tamaño pequeño o mediano, adecuado para inferencia en hardware de consumo.
 
 La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, datos de entrenamiento, capacidades concretas ni benchmarks. Esto hace que la ficha se base principalmente en los metadatos del repositorio y en inferencias razonables a partir del tamaño y los tags. A pesar de la falta de documentación, el modelo podría ser útil para tareas de conversación ligera, aunque se recomienda precaución antes de usarlo en producción.
 
@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlexVaultVoice/vaultvoice-models
+- Repositorio Hugging Face: https://huggingface.co/AlexVaultVoice/vaultvoice-models
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

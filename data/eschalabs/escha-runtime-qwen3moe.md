@@ -118,7 +118,7 @@ No se proporcionan modelos comparables en la información disponible. Los elemen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EschaLabs/escha-runtime-qwen3moe
+- Repositorio en Hugging Face: https://huggingface.co/EschaLabs/escha-runtime-qwen3moe
 - README en el repositorio: https://huggingface.co/EschaLabs/escha-runtime-qwen3moe/blob/main/README.md
 - Modelo compatible (2 bits): https://huggingface.co/EschaLabs/Qwen3.6-35B-A3B-Escha-W2
 - Sitio de Escha Labs: https://eschalabs.com/

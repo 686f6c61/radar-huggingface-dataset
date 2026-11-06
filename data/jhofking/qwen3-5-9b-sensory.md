@@ -79,7 +79,7 @@ El Qwen3.5-9B destaca por su contexto de 262K tokens y su naturaleza multimodal,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JHofking/Qwen3.5-9B-sensory
+- Modelo en Hugging Face: https://huggingface.co/JHofking/Qwen3.5-9B-sensory
 - Modelo base unsloth/Qwen3.5-9B: https://huggingface.co/unsloth/Qwen3.5-9B
 - Pagina del modelo base en Together AI: https://www.together.ai/models/qwen3-5-9b
 - Modelo en Microsoft Foundry: https://ai.azure.com/catalog/models/qwen-qwen3.5-9b

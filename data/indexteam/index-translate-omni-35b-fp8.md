@@ -123,6 +123,6 @@ El modelo de 35B supera a su base Qwen3.5-35B-A3B en MMTIT (77.011 frente a 75.6
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-omni-35B-FP8
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-omni-35B-FP8
 - Modelo original en ModelScope: https://modelscope.cn/models/IndexTeam/Index-Translate-omni-35B
 - Benchmarks de la familia Index-Translate: https://huggingface.co/IndexTeam/Index-Translate-9B#evaluation

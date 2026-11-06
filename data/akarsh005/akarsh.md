@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Akarsh005/Akarsh` alojado en HuggingFace no contiene información técnica publicada en su model card. El único dato disponible es la licencia MIT, sin descripción, sin parámetros, sin arquitectura ni ningún otro detalle relevante. Se desconoce si se trata de un modelo de lenguaje, un placeholder, un repositorio vacío o un experimento personal. Con 0 descargas y 0 likes, no existe evidencia de uso ni de validación por parte de la comunidad. Los resultados de búsqueda web muestran perfiles de GitHub e Instagram de personas llamadas Akarsh, pero no hay ninguna relación verificable con este repositorio. Por tanto, cualquier evaluación técnica es imposible con los datos actuales.
+El repositorio `Akarsh005/Akarsh` alojado en Hugging Face no contiene información técnica publicada en su model card. El único dato disponible es la licencia MIT, sin descripción, sin parámetros, sin arquitectura ni ningún otro detalle relevante. Se desconoce si se trata de un modelo de lenguaje, un placeholder, un repositorio vacío o un experimento personal. Con 0 descargas y 0 likes, no existe evidencia de uso ni de validación por parte de la comunidad. Los resultados de búsqueda web muestran perfiles de GitHub e Instagram de personas llamadas Akarsh, pero no hay ninguna relación verificable con este repositorio. Por tanto, cualquier evaluación técnica es imposible con los datos actuales.
 
 ## Especificaciones técnicas
 
@@ -51,8 +51,8 @@ No disponible. Al no existir información sobre parámetros, arquitectura o rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Akarsh005/Akarsh
+- Repositorio en Hugging Face: https://huggingface.co/Akarsh005/Akarsh
 - Perfil de GitHub de ItsAkarsh05 (sin relación confirmada): https://github.com/ItsAkarsh05/
 - Perfil de GitHub de akarsh-ai (sin relación confirmada): https://github.com/akarsh-ai
 
-Nota: los enlaces de GitHub se incluyen únicamente porque aparecieron en la búsqueda web, pero no hay ninguna evidencia que los vincule con este repositorio de HuggingFace.
+Nota: los enlaces de GitHub se incluyen únicamente porque aparecieron en la búsqueda web, pero no hay ninguna evidencia que los vincule con este repositorio de Hugging Face.

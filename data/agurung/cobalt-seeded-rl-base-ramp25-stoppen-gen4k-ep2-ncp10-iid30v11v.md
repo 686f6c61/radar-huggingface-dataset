@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-iid30v11v
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-iid30v11v
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Proyecto Weights & Biases (mencionado en la model card, sin URL directa): proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp10_iid30v11v`

@@ -160,7 +160,7 @@ Frente a modelos de fuera de la familia (por ejemplo clasificadores multilingüe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hackoffice/laya-multilingual
+- Modelo en Hugging Face: https://huggingface.co/hackoffice/laya-multilingual
 - Checkpoint inglés de la familia: https://huggingface.co/convaiinnovations/laya
 - Checkpoint de decisiones tipadas: https://hackoffice/laya-multilingual (referencia de la model card: convaiinnovations/laya-typed-decisions)
 - Repositorio de la familia Laya: https://huggingface.co/convaiinnovations/laya

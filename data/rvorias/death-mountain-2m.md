@@ -21,7 +21,7 @@ A diferencia de los modelos de lenguaje, este artefacto no procesa texto, sino o
 
 ## Arquitectura y entrenamiento
 
-El modelo fue entrenado con Proximal Policy Optimization (PPO), tal como indican las etiquetas `reinforcement-learning` y `ppo` de HuggingFace. La arquitectura es una politica personalizada implementada en PyTorch, con una interfaz denominada `DeathMountainPolicy`. Aunque no se detalla la estructura interna de la red, la existencia de un estado recurrente y de una funcion `reset_state` sugiere que la politica mantiene memoria entre pasos, lo que resulta adecuado para decisiones secuenciales en un entorno de juego.
+El modelo fue entrenado con Proximal Policy Optimization (PPO), tal como indican las etiquetas `reinforcement-learning` y `ppo` de Hugging Face. La arquitectura es una politica personalizada implementada en PyTorch, con una interfaz denominada `DeathMountainPolicy`. Aunque no se detalla la estructura interna de la red, la existencia de un estado recurrente y de una funcion `reset_state` sugiere que la politica mantiene memoria entre pasos, lo que resulta adecuado para decisiones secuenciales en un entorno de juego.
 
 No se proporcionan datos sobre el numero de episodios de entrenamiento, la composicion del dataset ni el proceso de optimizacion mas alla de PPO. El modelo card menciona que los resultados de rendimiento se obtuvieron con un simulador corregido registrado, y que el paquete no incluye simulador de juego. La politica acepta observaciones y mascaras de acciones legales desde un entorno externo, y puede exportarse con validacion para ejecutar un auto-test sin simulador.
 
@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria en
 | Death Mountain PPO 2M | 2.068.846 | 392,42 | 210 | MIT |
 | Padre sin cambios | no disponible | 374,64 | 209 | no disponible |
 
-No se conocen otros modelos comparables en el repositorio de HuggingFace del autor ni en las fuentes web consultadas.
+No se conocen otros modelos comparables en el repositorio de Hugging Face del autor ni en las fuentes web consultadas.
 
 ## Limitaciones y advertencias
 
@@ -89,6 +89,6 @@ No se conocen otros modelos comparables en el repositorio de HuggingFace del aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rvorias/death-mountain-2m
+- Modelo en Hugging Face: https://huggingface.co/rvorias/death-mountain-2m
 - Perfil del autor: https://huggingface.co/rvorias
 - Documentacion de la interfaz numerica (observaciones y acciones): https://github.com/rvorias/death-gym/blob/model-sp-1b-20260906/docs/environment.md

@@ -78,7 +78,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. El 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/grandcodepope/buyasoul-seshat
+- Repositorio Hugging Face: https://huggingface.co/grandcodepope/buyasoul-seshat
 - Publicación en Tumblr del autor: https://www.tumblr.com/grandcodepope/820798413671202816/building-autonomous-ai-autonomous-ai
 - Perfil de Bluesky del autor: https://bsky.app/profile/grandcodepope.bsky.social/post/3mpjx45gjho2f
 - Sitio del proyecto BUYaSOUL: https://buyasoul-ai.github.io/buyasoul/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD2SAC21D bajo licencia MIT. La informacion disponible es contradictoria y muy limitada: las etiquetas del repositorio lo describen como un modelo de tipo BERT destinado a extraccion de caracteristicas (pipeline `feature-extraction`) con libreria `transformers` y pesos en PyTorch, mientras que el README del autor describe un modelo generativo de gran tamano orientado a razonamiento, con modo de pensamiento, soporte de function calling y resultados en pruebas de matematicas y programacion.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD2SAC21D bajo licencia MIT. La informacion disponible es contradictoria y muy limitada: las etiquetas del repositorio lo describen como un modelo de tipo BERT destinado a extraccion de caracteristicas (pipeline `feature-extraction`) con libreria `transformers` y pesos en PyTorch, mientras que el README del autor describe un modelo generativo de gran tamano orientado a razonamiento, con modo de pensamiento, soporte de function calling y resultados en pruebas de matematicas y programacion.
 
 No se publica ninguna especificacion verificable: no hay recuento de parametros, longitud de contexto, idiomas soportados, tipos de cuantizacion ni formato de pesos. El tamano del repositorio es de 0,0 GB, lo que indica que no hay pesos ni ficheros de configuracion subidos, y las cifras de descargas y likes son cero. Las fechas de creacion y actualizacion (10 de septiembre de 2026) son posteriores a la fecha actual, lo que refuerza la condicion de artefacto de prueba o plantilla.
 
@@ -21,7 +21,7 @@ Su relevancia actual es, por tanto, practicamente nula como modelo utilizable: n
 | Licencia | MIT |
 | Formato de pesos | no disponible (tamano del repositorio: 0,0 GB, sin pesos publicados) |
 | Autor | ASD2SAC21D |
-| ID en HuggingFace | ASD2SAC21D/my-awesome-model |
+| ID en Hugging Face | ASD2SAC21D/my-awesome-model |
 | Libreria declarada | transformers |
 | Pipeline declarado | feature-extraction |
 | Etiquetas | transformers, pytorch, bert, feature-extraction, license:mit, endpoints_compatible, region:us |
@@ -47,7 +47,7 @@ Todas las capacidades siguientes provienen exclusivamente del texto de la model 
 - Soporte de system prompt, con una plantilla recomendada que incluye la fecha actual.
 - Generacion aumentada con busqueda web, mediante una plantilla de prompt que exige citar las fuentes en formato `[citation:X]`.
 - Procesamiento de ficheros subidos, mediante una plantilla que inserta nombre y contenido del fichero antes de la pregunta.
-- Capacidades multilingues: no disponibles (la ficha de HuggingFace no declara idiomas).
+- Capacidades multilingues: no disponibles (la ficha de Hugging Face no declara idiomas).
 - La model card menciona una variante "MyAwesomeModel-Small" con la misma arquitectura que el modelo base y el mismo tokenizador que el modelo principal, sin mas detalles.
 
 ## Casos de uso
@@ -108,7 +108,7 @@ No disponible. No es posible establecer una comparativa fiable porque:
 
 ## Limitaciones y advertencias
 
-- Contradiccion interna grave: las etiquetas y el pipeline de HuggingFace describen un modelo BERT de extraccion de caracteristicas, mientras que la model card describe un modelo generativo grande con razonamiento extendido. No hay forma de determinar cual es correcta.
+- Contradiccion interna grave: las etiquetas y el pipeline de Hugging Face describen un modelo BERT de extraccion de caracteristicas, mientras que la model card describe un modelo generativo grande con razonamiento extendido. No hay forma de determinar cual es correcta.
 - Repositorio vacio: 0,0 GB de tamano, sin pesos, sin fichero de configuracion y sin tokenizador publicados. El modelo no es descargable ni ejecutable.
 - Cero descargas y cero likes: no existe evidencia de uso, validacion comunitaria ni reproduccion independiente de ningun resultado.
 - Benchmarks no verificables: la tabla del README usa nombres de modelo genericos y carece de metodologia. El salto en evaluacion de seguridad (0,859 frente a 0,72-0,73 del resto) resulta especialmente poco plausible sin explicacion.
@@ -123,8 +123,8 @@ No disponible. No es posible establecer una comparativa fiable porque:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ASD2SAC21D/my-awesome-model
-- Pagina del autor en HuggingFace: https://huggingface.co/ASD2SAC21D
+- Modelo en Hugging Face: https://huggingface.co/ASD2SAC21D/my-awesome-model
+- Pagina del autor en Hugging Face: https://huggingface.co/ASD2SAC21D
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card lo menciona sin enlace)
 - Web oficial o demo: no disponible (la model card la menciona sin enlace)

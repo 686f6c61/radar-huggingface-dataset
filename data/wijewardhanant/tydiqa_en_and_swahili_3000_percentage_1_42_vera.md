@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_42_VeRA es un adaptador PEFT publicado en HuggingFace sobre el modelo base meta-llama/Llama-3.1-8B. No se trata de un modelo completo, sino de un conjunto de pesos adicionales (0,1 GB) que deben cargarse junto al modelo base mediante la librería `peft` y `transformers`. El nombre del repositorio sugiere un ajuste orientado a question answering sobre el conjunto de datos TyDi QA, restringido a inglés y suajili, con un subconjunto de 3.000 ejemplos, aunque ni la model card ni los metadatos del repositorio confirman estos extremos.
+WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_42_VeRA es un adaptador PEFT publicado en Hugging Face sobre el modelo base meta-llama/Llama-3.1-8B. No se trata de un modelo completo, sino de un conjunto de pesos adicionales (0,1 GB) que deben cargarse junto al modelo base mediante la librería `peft` y `transformers`. El nombre del repositorio sugiere un ajuste orientado a question answering sobre el conjunto de datos TyDi QA, restringido a inglés y suajili, con un subconjunto de 3.000 ejemplos, aunque ni la model card ni los metadatos del repositorio confirman estos extremos.
 
-El interés de esta ficha es limitado pero ilustrativo: muestra el patrón habitual de los adaptadores de investigación de bajo coste, donde el autor no documenta ni licencia, idiomas, hiperparámetros ni evaluación. La model card es la plantilla por defecto de HuggingFace sin rellenar (todos los campos aparecen como "[More Information Needed]"), por lo que la práctica totalidad de los datos técnicos deben considerarse no disponibles.
+El interés de esta ficha es limitado pero ilustrativo: muestra el patrón habitual de los adaptadores de investigación de bajo coste, donde el autor no documenta ni licencia, idiomas, hiperparámetros ni evaluación. La model card es la plantilla por defecto de Hugging Face sin rellenar (todos los campos aparecen como "[More Information Needed]"), por lo que la práctica totalidad de los datos técnicos deben considerarse no disponibles.
 
 Por tanto, esta ficha describe con rigor lo que se puede verificar (modelo base, formato, tamaño del artefacto, marco de trabajo) y marca explícitamente como no disponible todo lo demás, incluidas las capacidades reales del adaptador, que no han sido evaluadas públicamente.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento que permitan una comparativa funcional, po
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla vacía de HuggingFace: no hay descripción, uso previsto, datos de entrenamiento, hiperparámetros ni evaluación. Cualquier afirmación sobre el comportamiento del adaptador carece de respaldo documental.
+- La model card es la plantilla vacía de Hugging Face: no hay descripción, uso previsto, datos de entrenamiento, hiperparámetros ni evaluación. Cualquier afirmación sobre el comportamiento del adaptador carece de respaldo documental.
 - No se declara licencia. Al derivar de Llama 3.1 8B, se heredan las restricciones de la Llama 3.1 Community License, que incluye política de uso aceptable y obligaciones de atribución; la ausencia de licencia propia en el repositorio genera incertidumbre legal para uso comercial.
 - Riesgo de alucinación: el adaptador se apoya en Llama 3.1 8B, un modelo generativo propenso a inventar respuestas cuando la información no está en el contexto; no hay evaluación que cuantifique este comportamiento en QA extractivo.
 - Sesgos: no evaluados. El suajili y el inglés tienen coberturas muy distintas en los datos de preentrenamiento de Llama 3.1, lo que probablemente se traduzca en un rendimiento desigual y en sesgos culturales hacia fuentes anglófonas.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento que permitan una comparativa funcional, po
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_42_VeRA
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_42_VeRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Paper citado en la model card (estimación de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Referencia de la técnica VeRA, inferida a partir del nombre del repositorio y no confirmada por el autor: https://arxiv.org/abs/2310.11454

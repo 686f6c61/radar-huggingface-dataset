@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Idiomas | Tamaño del artefacto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `crash-sv/scribe-fasttext-lid176` (esta ficha) | 176 | 131 266 198 bytes | CC BY-SA 3.0 | HuggingFace Hub, copia del original |
+| `crash-sv/scribe-fasttext-lid176` (esta ficha) | 176 | 131 266 198 bytes | CC BY-SA 3.0 | Hugging Face Hub, copia del original |
 | `lid.176.bin` original (Meta / fastText) | 176 | 131 266 198 bytes (mismo fichero) | CC BY-SA 3.0 | `fasttext.cc` y `dl.fbaipublicfiles.com` |
 | `lid.176.ftz` (variante comprimida oficial) | 176 | no disponible | CC BY-SA 3.0 | `fasttext.cc` |
 | Otras alternativas de identificación de lenguaje (CLD3, langid.py, lingua, GlotLID) | no disponible | no disponible | no disponible | no disponible |
@@ -94,7 +94,7 @@ La información proporcionada no incluye datos de parámetros, contexto ni rendi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/crash-sv/scribe-fasttext-lid176
+- Repositorio en Hugging Face: https://huggingface.co/crash-sv/scribe-fasttext-lid176
 - Proyecto Scribe SV: https://github.com/Crash-SV
 - Documentación oficial de identificación de idioma de fastText: https://fasttext.cc/docs/en/language-identification.html
 - Fichero original `lid.176.bin`: https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin

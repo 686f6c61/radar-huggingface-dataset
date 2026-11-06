@@ -58,7 +58,7 @@ Las diferencias están dentro del ruido de una muestra única y van en ambas dir
 - VRAM estimada: los pesos en GPU ocupan ≈16,5 GiB (GLQ 5.0 bpw) frente a ≈57,9 GiB (bf16). Con la memoria adicional para KV cache y activaciones, se recomienda al menos 24 GB de VRAM.
 - GPU recomendadas: RTX 4090 (24 GB), RTX PRO 6000 (24 GB), A100 40GB, o cualquier GPU con ≥24 GB de memoria.
 - En consumer GPU: sí, cabe en una RTX 4090 de 24 GB. Para contexto largo (256K tokens) se necesitará más VRAM, pero se puede reducir la longitud de contexto o usar cuantización de KV cache.
-- Opciones de despliegue: vLLM (0.23.0+), HuggingFace Transformers (con integración GLQ, `pip install glq`), y posiblemente otros frameworks que soporten GLQ (no documentado).
+- Opciones de despliegue: vLLM (0.23.0+), Hugging Face Transformers (con integración GLQ, `pip install glq`), y posiblemente otros frameworks que soporten GLQ (no documentado).
 - Latencia y throughput: no se proporcionan datos de velocidad. Se indica que en GPU grandes donde bf16 también cabe, bf16 decodifica más rápido; la ventaja de GLQ es la reducción de huella, no la velocidad.
 - Requisitos de software: CUDA 12.x, `torch>=2.0`, `transformers>=5.0` (pin por debajo de 5.15 por un problema con `config.head_dim`), y el paquete `glq` con JIT de kernel (≈30s de compilación).
 
@@ -68,8 +68,8 @@ No se dispone de comparativas directas con otras cuantizaciones (como AWQ, GPTQ,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| google/gemma-4-31B-it (bf16) | 31B | 256K | Apache 2.0 | HuggingFace |
-| xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8 | 31B (base) | 256K | Apache 2.0 | HuggingFace |
+| google/gemma-4-31B-it (bf16) | 31B | 256K | Apache 2.0 | Hugging Face |
+| xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8 | 31B (base) | 256K | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones (p.ej. GGUF) | 31B | 256K | Apache 2.0 | No disponibles en la búsqueda |
 
 No se han encontrado datos de comparación con otros modelos de tamaño similar (por ejemplo, Llama 3.1 70B o Mistral Large) en la información proporcionada.
@@ -86,7 +86,7 @@ No se han encontrado datos de comparación con otros modelos de tamaño similar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8
+- Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Documentación de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Repositorio de GLQ: https://github.com/cnygaard/glq

@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/Chungulus/Qwen3.5-4B-3D-Coder-Q8_0-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/Chungulus/Qwen3.5-4B-3D-Coder-Q8_0-GGUF
 - Modelo base: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Revisión concreta del checkpoint original: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder/tree/16f53e560115a3f55ddf7b455d65417257e29414
 - llama.cpp: https://github.com/ggml-org/llama.cpp

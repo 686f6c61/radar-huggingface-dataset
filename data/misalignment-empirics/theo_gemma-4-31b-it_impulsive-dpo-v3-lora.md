@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `theo_gemma-4-31b-it_impulsive-dpo-v3-lora` (este) | Adaptador sobre base de 31B | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `google/gemma-4-31B-it` (modelo base) | 31B (segun nomenclatura) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Condiciones del modelo base | HuggingFace, modelo oficial |
+| `theo_gemma-4-31b-it_impulsive-dpo-v3-lora` (este) | Adaptador sobre base de 31B | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `google/gemma-4-31B-it` (modelo base) | 31B (segun nomenclatura) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Condiciones del modelo base | Hugging Face, modelo oficial |
 | Otros adaptadores DPO sobre el mismo base | No disponible | No disponible | No disponible | No disponible | No identificados en la informacion proporcionada |
 | Adaptadores LoRA/DPO comparables en otros modelos densos de ~30B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-dpo-v3-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-dpo-v3-lora
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Paper de DPO: https://huggingface.co/papers/2305.18290
 - Paper de DPO en NeurIPS 2023: http://papers.nips.cc/paper_files/paper/2023/hash/a85b405ed65c6477a4fe8302b5e06ce7-Abstract-Conference.html

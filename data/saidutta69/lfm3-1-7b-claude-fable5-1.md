@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-Claude-Fable5.1 es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario independiente saidutta69 y publicado en HuggingFace. El objetivo del modelo es especializar un modelo de lenguaje pequeno (1.728 millones de parametros) en la emision de llamadas a herramientas (tool calling) con el esquema del protocolo de Claude Code, incluyendo herramientas como `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `WebFetch`, `WebSearch`, `TodoWrite`, `TaskCreate`, `TaskUpdate`, `TaskOutput` y `ToolSearch`. El modelo base ya era capaz de razonamiento agentico; este checkpoint refuerza la fidelidad al esquema de herramientas dentro de un arnes tipo Claude Code.
+LFM3-1.7B-Claude-Fable5.1 es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario independiente saidutta69 y publicado en Hugging Face. El objetivo del modelo es especializar un modelo de lenguaje pequeno (1.728 millones de parametros) en la emision de llamadas a herramientas (tool calling) con el esquema del protocolo de Claude Code, incluyendo herramientas como `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `WebFetch`, `WebSearch`, `TodoWrite`, `TaskCreate`, `TaskUpdate`, `TaskOutput` y `ToolSearch`. El modelo base ya era capaz de razonamiento agentico; este checkpoint refuerza la fidelidad al esquema de herramientas dentro de un arnes tipo Claude Code.
 
 El modelo resuelve un problema concreto: en el modelo base, aproximadamente el 23% de las llamadas parseadas contenian nombres de herramienta inventados, lo que rompe bucles de agente. Este fine-tune elimina ese fallo (100% de nombres validos en las llamadas parseadas) a costa de un ligero aumento de la perplexity en texto libre (de 17,35 a 23,32 en wikitext), lo que lo convierte en un especialista y no en una mejora general del modelo base.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque permite ejecutar un protocolo de agente tipo Claude Co
 | Longitud de contexto | 262.144 tokens (declarado en los GGUF) |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q4_K_M (GGUF); bf16 en safetensors |
 | Idiomas soportados | Ingles (en) |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (bf16), GGUF (f16, Q8_0, Q6_K, Q5_K_M, Q4_K_M) |
 
 ## Arquitectura y entrenamiento
@@ -79,8 +79,8 @@ El 5% de llamadas no parseables se atribuye a truncamiento en el limite de 2.048
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Claude-Fable5.1 | 1,728 M | 262.144 tokens | Tool calling Claude Code | lfm1.0 | HuggingFace (safetensors, GGUF) |
-| LiquidAI/LFM3-1.7B | 1,7B (no disponible el dato exacto) | no disponible | Modelo general agentico | lfm1.0 | HuggingFace |
+| LFM3-1.7B-Claude-Fable5.1 | 1,728 M | 262.144 tokens | Tool calling Claude Code | lfm1.0 | Hugging Face (safetensors, GGUF) |
+| LiquidAI/LFM3-1.7B | 1,7B (no disponible el dato exacto) | no disponible | Modelo general agentico | lfm1.0 | Hugging Face |
 | Otros fine-tunes de LFM3-1.7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks estandar para comparar con alternativas de la misma categoria en la informacion proporcionada.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks estandar para comparar con alternativas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/LFM3-1.7B-Claude-Fable5.1
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/LFM3-1.7B-Claude-Fable5.1
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/saidutta69/fable-5.1-premium-v2
 - Fichero de licencia: https://huggingface.co/saidutta69/LFM3-1.7B-Claude-Fable5.1/blob/main/LICENSE

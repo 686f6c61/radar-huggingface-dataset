@@ -105,9 +105,9 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kernelpool/MiMo-V2.6-Flash-MOPD-MXFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kernelpool/MiMo-V2.6-Flash-MOPD-MXFP4-GGUF
 - Repositorio anterior reemplazado: https://huggingface.co/kernelpool/MiMo-V2.6-Flash-MXFP4-GGUF
-- Checkpoint base en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
+- Checkpoint base en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - DwarfStar (DS4): https://github.com/antirez/ds4
 - Rama DS4 para MiMo-V2.6: https://github.com/kernelpool/ds4/tree/mimo-v26
 - Documentacion de MiMo-V2.6 en DS4: https://github.com/kernelpool/ds4/blob/mimo-v26/docs/MIMO_V26.md

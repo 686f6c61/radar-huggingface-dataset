@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dolphin-Mistral-24B-Venice-Edition-RYS-test es un modelo de lenguaje publicado por el usuario kawattaronin en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un *merge* generado con LazyMergekit sobre un único modelo base: dphn/Dolphin-Mistral-24B-Venice-Edition. La configuración publicada usa el método `passthrough`, es decir, una operación de cirugía de capas sobre el propio modelo base, sin mezclar pesos de modelos distintos.
+Dolphin-Mistral-24B-Venice-Edition-RYS-test es un modelo de lenguaje publicado por el usuario kawattaronin en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un *merge* generado con LazyMergekit sobre un único modelo base: dphn/Dolphin-Mistral-24B-Venice-Edition. La configuración publicada usa el método `passthrough`, es decir, una operación de cirugía de capas sobre el propio modelo base, sin mezclar pesos de modelos distintos.
 
 El repositorio contiene pesos en formato safetensors con precisión bfloat16 y un total real de 22.460.892.160 parámetros (aproximadamente 22,46 mil millones), según el recuento de los ficheros de safetensors. Es destacable la discrepancia entre el nombre comercial ("24B") y el recuento real de parámetros. El tamaño del repositorio es de 44,9 GB. La etiqueta `mistral3` indica que la arquitectura subyacente corresponde a la familia Mistral 3 tal y como la identifica la librería transformers.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kawattaronin/Dolphin-Mistral-24B-Venice-Edition-RYS-test | 22,46B (safetensors) | no disponible | no disponible | HuggingFace, 0 descargas | Merge `passthrough` de una sola fuente, sin benchmarks ni model card descriptiva |
-| dphn/Dolphin-Mistral-24B-Venice-Edition | no disponible (modelo base declarado) | no disponible | no disponible | HuggingFace (modelo base) | Origen único del merge; sus especificaciones y licencia deben consultarse en su propio repositorio |
+| kawattaronin/Dolphin-Mistral-24B-Venice-Edition-RYS-test | 22,46B (safetensors) | no disponible | no disponible | Hugging Face, 0 descargas | Merge `passthrough` de una sola fuente, sin benchmarks ni model card descriptiva |
+| dphn/Dolphin-Mistral-24B-Venice-Edition | no disponible (modelo base declarado) | no disponible | no disponible | Hugging Face (modelo base) | Origen único del merge; sus especificaciones y licencia deben consultarse en su propio repositorio |
 | Alternativas densas de ~20-30B de la misma categoría (por ejemplo, Mistral Small 3 24B o Gemma 2 27B) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada para establecer una comparación rigurosa |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable. Cualquier comparación de rendimiento con otros modelos de tamaño similar requeriría ejecutar los mismos benchmarks sobre este merge, algo que no se ha hecho público.
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable. Cua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawattaronin/Dolphin-Mistral-24B-Venice-Edition-RYS-test
+- Modelo en Hugging Face: https://huggingface.co/kawattaronin/Dolphin-Mistral-24B-Venice-Edition-RYS-test
 - Modelo base: https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition
 - Cuaderno de LazyMergekit citado por el autor: https://colab.research.google.com/drive/1obulZ1ROXHjYLn6PPZJwRR6GzgQogxxb?usp=sharing
 - Repositorio de mergekit (herramienta utilizada): https://github.com/arcee-ai/mergekit

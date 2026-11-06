@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arabic-ocr-abl-plain3k` es un ajuste fino de OCR y análisis de estructura de documentos en árabe construido sobre `Qwen/Qwen3-VL-4B-Instruct`, un modelo multimodal de visión-lenguaje de la familia Qwen3-VL. Lo publica el usuario de HuggingFace `ahmedsamirtarjama` como experimento de investigación, no como modelo de producción: se trata de una ablación ("abl") sobre un subconjunto de datos etiquetado como "plain3k" en la propia nomenclatura del repositorio.
+`arabic-ocr-abl-plain3k` es un ajuste fino de OCR y análisis de estructura de documentos en árabe construido sobre `Qwen/Qwen3-VL-4B-Instruct`, un modelo multimodal de visión-lenguaje de la familia Qwen3-VL. Lo publica el usuario de Hugging Face `ahmedsamirtarjama` como experimento de investigación, no como modelo de producción: se trata de una ablación ("abl") sobre un subconjunto de datos etiquetado como "plain3k" en la propia nomenclatura del repositorio.
 
 El modelo tiene 4.437.815.808 parámetros (4,44 mil millones) almacenados en safetensors, con un tamaño de repositorio de 8,9 GB, coherente con pesos en bf16/fp16. El entrenamiento consistió en un LoRA de rango 64 fusionado en los pesos del modelo base, manteniendo congelado el torreón de visión. La tarea objetivo es la transcripción de texto árabe y la extracción de estructura de documentos a partir de imágenes, con un protocolo de inferencia declarado sobre vLLM.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arabic-ocr-abl-plain3k | 4,44 B | No disponible | Árabe (según etiquetas), prompts en inglés | No declarada | Repositorio HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | Clase 4 B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Repositorio HuggingFace público |
+| arabic-ocr-abl-plain3k | 4,44 B | No disponible | Árabe (según etiquetas), prompts en inglés | No declarada | Repositorio Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | Clase 4 B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Repositorio Hugging Face público |
 | Otros ajustes de OCR árabe sobre VLM | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 Solo se dispone de datos verificables del modelo base como referencia arquitectónica. No se han proporcionado especificaciones de alternativas comparables (por ejemplo, otros OCR árabes basados en Qwen2.5-VL, InternVL o modelos OCR dedicados), por lo que la comparación cuantitativa queda como "no disponible".
@@ -92,7 +92,7 @@ Solo se dispone de datos verificables del modelo base como referencia arquitect�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain3k
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain3k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio de datos y código citado en la model card: `arabic-ocr-research-data` (sección `code/`, scripts `code/scripts/`; no se proporciona URL en la información disponible)
 - Informes citados por el autor: `docs/TEST_PROTOCOL.md` y `REPORT.md` (ubicados en `arabic-ocr-research-data/code/`; contenido no accesible desde la información proporcionada)

@@ -6,7 +6,7 @@ LFM3-VL-2B-Uncensored-MLX es una variante del modelo vision-lenguaje LiquidAI/LF
 
 El modelo conserva la tarea image-text-to-text del original y soporta ventanas de contexto de hasta 128.000 tokens, sujetas a la configuracion de ejecucion y a la memoria disponible. Se distribuye en pesos MLX en cuatro precisiones (4-bit, 6-bit, 8-bit y BF16), lo que facilita su ejecucion en equipos con recursos limitados. La relevancia actual radica en la combinacion de capacidades multimodales, contexto largo y despliegue en hardware de consumo, con un sesgo deliberado hacia respuestas sin filtros de rechazo.
 
-La licencia es la LFM Open License v1.0 (etiquetada como "other" en HuggingFace), y los idiomas declarados son ingles y chino. El repositorio ocupa 9,2 GB e incluye las distintas variantes de cuantizacion. Cabe senalar que el autor no ha probado la inferencia en dispositivos Apple reales, aunque si ha realizado comprobaciones de integridad tensorial y recarga estricta de arquitectura en CPU.
+La licencia es la LFM Open License v1.0 (etiquetada como "other" en Hugging Face), y los idiomas declarados son ingles y chino. El repositorio ocupa 9,2 GB e incluye las distintas variantes de cuantizacion. Cabe senalar que el autor no ha probado la inferencia en dispositivos Apple reales, aunque si ha realizado comprobaciones de integridad tensorial y recarga estricta de arquitectura en CPU.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La licencia es la LFM Open License v1.0 (etiquetada como "other" en HuggingFace)
 | Longitud de contexto | hasta 128.000 tokens (sujeto a configuracion de ejecucion y memoria) |
 | Tipos de cuantizacion | 4-bit, 6-bit, 8-bit (cuantizacion afin de grupo 64 en el modelo de lenguaje) y BF16 sin cuantizar; codificador visual y proyector en BF16 |
 | Idiomas soportados | en, zh |
-| Licencia | LFM Open License v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (MLX); tambien existen variantes BF16, compressed-tensors y GGUF en repositorios separados |
 
 ## Arquitectura y entrenamiento
@@ -72,10 +72,10 @@ Las metricas corresponden al modelo fuente en BF16; las variantes cuantizadas no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-Uncensored-MLX (este modelo) | aprox. 2B | hasta 128.000 tokens | LFM Open License v1.0 | HuggingFace, pesos MLX en 4/6/8-bit y BF16 | Variante abliterada del base, enfocada a edge |
-| LiquidAI/LFM3-VL-2B (modelo base) | aprox. 2B | hasta 128.000 tokens | LFM Open License v1.0 | HuggingFace | Modelo original sin abliterar; comportamiento de rechazo estandar |
-| GCSA-AiLab/LFM3-VL-2B-Uncensored | aprox. 2B | hasta 128.000 tokens | LFM Open License v1.0 | HuggingFace | Misma variante abliterada en BF16 y compressed-tensors |
-| GCSA-AiLab/LFM3-VL-2B-Uncensored-GGUF | aprox. 2B | hasta 128.000 tokens | LFM Open License v1.0 | HuggingFace | Misma variante en formato GGUF para llama.cpp/Ollama |
+| LFM3-VL-2B-Uncensored-MLX (este modelo) | aprox. 2B | hasta 128.000 tokens | LFM Open License v1.0 | Hugging Face, pesos MLX en 4/6/8-bit y BF16 | Variante abliterada del base, enfocada a edge |
+| LiquidAI/LFM3-VL-2B (modelo base) | aprox. 2B | hasta 128.000 tokens | LFM Open License v1.0 | Hugging Face | Modelo original sin abliterar; comportamiento de rechazo estandar |
+| GCSA-AiLab/LFM3-VL-2B-Uncensored | aprox. 2B | hasta 128.000 tokens | LFM Open License v1.0 | Hugging Face | Misma variante abliterada en BF16 y compressed-tensors |
+| GCSA-AiLab/LFM3-VL-2B-Uncensored-GGUF | aprox. 2B | hasta 128.000 tokens | LFM Open License v1.0 | Hugging Face | Misma variante en formato GGUF para llama.cpp/Ollama |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-MLX
+- Modelo en Hugging Face: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-MLX
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Variante BF16 y compressed-tensors: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored
 - Variante GGUF: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-GGUF

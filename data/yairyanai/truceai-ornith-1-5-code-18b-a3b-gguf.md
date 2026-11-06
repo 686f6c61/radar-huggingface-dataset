@@ -34,7 +34,7 @@ No se realizo ningun entrenamiento adicional: se trata de una edicion directa de
 - Llamadas a herramientas (tool calling / function calling) y turnos de agente multi-paso.
 - Capacidad de vision potencial a traves del codificador de imagenes incluido, aunque no verificada en esta variante.
 - Capacidades multilingues no documentadas; se espera un rendimiento notablemente inferior al original fuera del ingles.
-- Conversacion multi-turno (etiqueta `conversational` en HuggingFace).
+- Conversacion multi-turno (etiqueta `conversational` en Hugging Face).
 
 ## Casos de uso
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TruceAI Ornith 1.5 Code 18B-A3B | 18,5B | 3,4B | no disponible | MIT | GGUF | HuggingFace |
-| Ornith 1.5 35B-A3B | 35,5B | 3,5B | no disponible | MIT | safetensors / GGUF | HuggingFace |
+| TruceAI Ornith 1.5 Code 18B-A3B | 18,5B | 3,4B | no disponible | MIT | GGUF | Hugging Face |
+| Ornith 1.5 35B-A3B | 35,5B | 3,5B | no disponible | MIT | safetensors / GGUF | Hugging Face |
 | Qwen 3.5 35B-A3B | 35B | 3B | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al linaje directo del modelo, ya que no se dispone de datos de benchmarks frente a alternativas de otros fabricantes. Frente al modelo original, la variante podada ofrece la mitad del tamano en disco, un 62,5% mas de velocidad en RTX 3060 y una retencion del 74,9% en la prediccion del siguiente token sobre codigo.
@@ -91,7 +91,7 @@ La comparativa se limita al linaje directo del modelo, ya que no se dispone de d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YairYanai/TruceAI-Ornith-1.5-Code-18B-A3B-GGUF
+- Hugging Face: https://huggingface.co/YairYanai/TruceAI-Ornith-1.5-Code-18B-A3B-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Organizacion Ornith AI: https://huggingface.co/ornith-ai
 - TruceAI: https://truceai-remote.truceai-site.workers.dev

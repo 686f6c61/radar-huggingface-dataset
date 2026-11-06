@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zster/bg3 es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario Zster. El repositorio esta etiquetado como `diffusers`, `text-to-image`, `lora`, `diffusers-training` y `template:sd-lora`, y declara como modelo base `krea/Krea-2-Raw` (tambien referenciado con las etiquetas `krea2` y `krea2-diffusers`). Se trata, por tanto, de un ajuste fino ligero sobre un modelo de difusion preentrenado de Krea, no de un modelo fundacional completo.
+Zster/bg3 es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario Zster. El repositorio esta etiquetado como `diffusers`, `text-to-image`, `lora`, `diffusers-training` y `template:sd-lora`, y declara como modelo base `krea/Krea-2-Raw` (tambien referenciado con las etiquetas `krea2` y `krea2-diffusers`). Se trata, por tanto, de un ajuste fino ligero sobre un modelo de difusion preentrenado de Krea, no de un modelo fundacional completo.
 
 La relevancia de esta ficha es limitada y conviene ser honesto al respecto: el repositorio registra 0 descargas y 0 "likes", fue creado y actualizado el 20 de septiembre de 2026 (misma marca temporal, sin historial de revisiones) y no incluye tarjeta de modelo, descripcion, ejemplos ni datos de entrenamiento. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los unicos enlaces recuperados eran listados de restaurantes de Madrid, completamente ajenos al objeto de la ficha. Toda la informacion tecnica que sigue procede, por tanto, exclusivamente de los metadatos del repositorio.
 
@@ -28,7 +28,7 @@ El nombre del repositorio (`bg3`) sugiere, sin que haya confirmacion alguna, una
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base ni sobre la configuracion del adaptador. Los metadatos indican unicamente que se trata de un LoRA entrenado con `diffusers` (`diffusers-training`) sobre `krea/Krea-2-Raw`, y que el repositorio usa la plantilla `template:sd-lora` de HuggingFace. No se especifican el rango (rank) del adaptador, el alpha, las capas objetivo (por ejemplo, atencion cruzada frente a proyecciones Q/K/V), la resolucion de entrenamiento, el numero de pasos, el optimizador ni el tipo de scheduler.
+No se dispone de informacion sobre la arquitectura interna del modelo base ni sobre la configuracion del adaptador. Los metadatos indican unicamente que se trata de un LoRA entrenado con `diffusers` (`diffusers-training`) sobre `krea/Krea-2-Raw`, y que el repositorio usa la plantilla `template:sd-lora` de Hugging Face. No se especifican el rango (rank) del adaptador, el alpha, las capas objetivo (por ejemplo, atencion cruzada frente a proyecciones Q/K/V), la resolucion de entrenamiento, el numero de pasos, el optimizador ni el tipo de scheduler.
 
 Tampoco hay informacion sobre el dataset: se desconoce el numero de imagenes, su procedencia, la composicion tematica, la resolucion, el uso de captioning automatico o manual, y si se aplicaron tecnicas de regularizacion como DreamBooth, prior preservation o recorte de clase. No se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, destilacion de pasos, etc.), lo cual es coherente con que se trate de un ajuste fino ligero y no de un modelo con contribuciones arquitectonicas propias.
 
@@ -74,8 +74,8 @@ No se dispone de datos cuantitativos para ninguno de los elementos de la compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zster/bg3 (LoRA sobre Krea-2-Raw) | no disponible | no disponible | no publicado | discrepancia entre `apache-2.0` y campo vacio | publico en HuggingFace, 0 descargas |
-| `krea/Krea-2-Raw` (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | publico en HuggingFace (referenciado) |
+| Zster/bg3 (LoRA sobre Krea-2-Raw) | no disponible | no disponible | no publicado | discrepancia entre `apache-2.0` y campo vacio | publico en Hugging Face, 0 descargas |
+| `krea/Krea-2-Raw` (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | publico en Hugging Face (referenciado) |
 | Otros LoRAs sobre Krea-2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Adaptadores LoRA para modelos de difusion comparables | no disponible | no disponible | no disponible | varian por repositorio | no disponible |
 
@@ -95,6 +95,6 @@ En terminos cualitativos, la categoria de referencia seria la de adaptadores LoR
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zster/bg3
+- Repositorio en Hugging Face: https://huggingface.co/Zster/bg3
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Raw
 - Busqueda web realizada: no se encontro ningun resultado relevante sobre el modelo. Los enlaces recuperados correspondian a listados de restaurantes de Madrid y no guardan relacion con la ficha.

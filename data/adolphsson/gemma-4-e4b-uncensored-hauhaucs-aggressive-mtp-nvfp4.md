@@ -23,7 +23,7 @@ La arquitectura combina un transformador de texto de 42 capas con hidden size 2 
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del fine-tune `HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive`, una variante del Gemma-4-E4B oficial entrenada con un perfil "agresivo" y menos cauteloso. Sobre ese fine-tune, el autor realizó una conversión de GGUF a formato HuggingFace, aplicó cuantización NVFP4 (W4A16) al transformador de texto con NVIDIA ModelOpt 0.46.0 (`modelopt_fp4`), y reensambló el checkpoint con los encoders multimodales del modelo base en BF16, excluyéndolos de la cuantización. El lm_head y los embeddings también se mantienen en BF16 con embeddings atados.
+El modelo parte del fine-tune `HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive`, una variante del Gemma-4-E4B oficial entrenada con un perfil "agresivo" y menos cauteloso. Sobre ese fine-tune, el autor realizó una conversión de GGUF a formato Hugging Face, aplicó cuantización NVFP4 (W4A16) al transformador de texto con NVIDIA ModelOpt 0.46.0 (`modelopt_fp4`), y reensambló el checkpoint con los encoders multimodales del modelo base en BF16, excluyéndolos de la cuantización. El lm_head y los embeddings también se mantienen en BF16 con embeddings atados.
 
 El transformador de texto tiene 42 capas con hidden size de 2 560. La atención es híbrida: ventana deslizante de 512 tokens combinada con atención completa, lo que permite el contexto largo de 131 072 tokens. El modelo incorpora soporte nativo de MTP (multi-token prediction) en vLLM 0.28, actuando como drafter para decodificación especulativa. No se han publicado detalles sobre el dataset de entrenamiento del fine-tune original ni sobre el proceso de alineación (RLHF/DPO).
 
@@ -72,9 +72,9 @@ Con thinking activado y MTP K=5, se midieron 624–700 tok/s, ya que los tokens 
 
 | Modelo | Cuantización | Contexto | Multimodal | MTP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (NVFP4) | NVFP4 W4A16 | 131 072 | Sí (visión+audio) | Sí | Gemma | HuggingFace |
-| HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive (GGUF) | GGUF (varias) | No especificado | No especificado | No | Gemma | HuggingFace |
-| Gemma-4-E4B oficial (Google) | BF16 | 131 072 | Sí | Sí | Gemma | HuggingFace / Google |
+| Este modelo (NVFP4) | NVFP4 W4A16 | 131 072 | Sí (visión+audio) | Sí | Gemma | Hugging Face |
+| HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive (GGUF) | GGUF (varias) | No especificado | No especificado | No | Gemma | Hugging Face |
+| Gemma-4-E4B oficial (Google) | BF16 | 131 072 | Sí | Sí | Gemma | Hugging Face / Google |
 
 El modelo NVFP4 ofrece la ventaja de ocupar 9,7 GB frente a los pesos BF16 del oficial (mucho mayores), a costa de una cuantización agresiva que puede introducir ligeras pérdidas de calidad. Frente al GGUF de HauhauCS, añade multimodalidad y soporte nativo de MTP, pero requiere hardware Blackwell y vLLM 0.28.
 
@@ -91,7 +91,7 @@ El modelo NVFP4 ofrece la ventaja de ocupar 9,7 GB frente a los pesos BF16 del o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adolphsson/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-MTP-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Adolphsson/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-MTP-NVFP4
 - Modelo base (fine-tune original): https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Página del GGUF (alternativa): https://local-ai-zone.github.io/models/gemma-4-e4b-uncensored-hauhaucs-aggressive.html
 - Análisis de fiabilidad de derivados Gemma 4 E4B: https://knightli.com/en/2026/04/18/gemma-4-e4b-uncensored-vs-official/

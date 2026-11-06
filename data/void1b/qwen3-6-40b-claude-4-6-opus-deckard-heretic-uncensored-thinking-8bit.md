@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: al ser un modelo de 40B en cuantización de 8 bits, el peso del modelo ocupa aproximadamente 40 GB. Considerando overhead de activaciones y caché de contexto, se recomienda un mínimo de 48 GB de memoria unificada o VRAM.
 - GPU recomendadas: en hardware NVIDIA, se necesitaría una GPU con al menos 48 GB de VRAM, como la A6000, A100 (80 GB) o H100. En Apple Silicon, se requiere un Mac con chip M1 Ultra, M2 Ultra o M3 Ultra con 64 GB o más de memoria unificada.
 - En consumer GPU: no es viable en GPUs de consumo típicas (RTX 4090 con 24 GB, por ejemplo) a menos que se aplique una cuantización más agresiva (4-bit), que reduciría el peso a unos 20 GB, pero no se ofrece en este repositorio.
-- Opciones de despliegue: al estar en formato MLX, se puede ejecutar directamente con `mlx-lm` en macOS. Para otros entornos, sería necesario convertir los pesos a GGUF (para llama.cpp u Ollama) o a formato estándar de HuggingFace (para vLLM o TGI), aunque no se proporcionan dichas conversiones.
+- Opciones de despliegue: al estar en formato MLX, se puede ejecutar directamente con `mlx-lm` en macOS. Para otros entornos, sería necesario convertir los pesos a GGUF (para llama.cpp u Ollama) o a formato estándar de Hugging Face (para vLLM o TGI), aunque no se proporcionan dichas conversiones.
 - Latencia y throughput: no se dispone de datos medidos. En un Mac con 64 GB, se puede esperar una generación de varios tokens por segundo, pero depende del hardware y de la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Void1B/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-8bit](https://huggingface.co/Void1B/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-8bit)
+- Modelo en Hugging Face: [Void1B/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-8bit](https://huggingface.co/Void1B/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-8bit)
 - Modelo base (DavidAU): [DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking](https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking)
 - Conversión original de mlx-community: [mlx-community/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-8bit](https://huggingface.co/mlx-community/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-8bit)
 - Dataset de razonamiento: [TeichAI/claude-4.5-opus-high-reasoning-250x](https://huggingface.co/datasets/TeichAI/claude-4.5-opus-high-reasoning-250x)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-kestrel` es un modelo publicado en HuggingFace por el usuario Tohirju, desarrollado con el framework NeMo de NVIDIA. La información disponible es muy limitada: el repositorio tiene un tamaño de 7.5 GB, licencia CC-BY-4.0 y acceso restringido (gated) que requiere aceptar condiciones en HuggingFace. No se han publicado especificaciones técnicas, documentación ni resultados de benchmarks en la información proporcionada, por lo que no es posible determinar su arquitectura, tamaño, contexto ni capacidades.
+El modelo `Tohirju/sl-kestrel` es un modelo publicado en Hugging Face por el usuario Tohirju, desarrollado con el framework NeMo de NVIDIA. La información disponible es muy limitada: el repositorio tiene un tamaño de 7.5 GB, licencia CC-BY-4.0 y acceso restringido (gated) que requiere aceptar condiciones en Hugging Face. No se han publicado especificaciones técnicas, documentación ni resultados de benchmarks en la información proporcionada, por lo que no es posible determinar su arquitectura, tamaño, contexto ni capacidades.
 
-El autor también ha publicado otros modelos en HuggingFace, como `whisper-large-v3-tajik`, lo que indica cierta actividad en el ámbito del procesamiento de lenguaje y reconocimiento de voz, pero no hay datos concretos que vinculen este modelo con esa línea de trabajo.
+El autor también ha publicado otros modelos en Hugging Face, como `whisper-large-v3-tajik`, lo que indica cierta actividad en el ámbito del procesamiento de lenguaje y reconocimiento de voz, pero no hay datos concretos que vinculen este modelo con esa línea de trabajo.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ No se han publicado capacidades específicas en la información disponible. No s
 
 ## Casos de uso
 
-No hay casos de uso documentados en la información proporcionada. Debido a la falta de especificaciones y documentación, no es posible enumerar aplicaciones concretas. Se recomienda consultar el repositorio de HuggingFace para obtener información adicional una vez superado el acceso restringido.
+No hay casos de uso documentados en la información proporcionada. Debido a la falta de especificaciones y documentación, no es posible enumerar aplicaciones concretas. Se recomienda consultar el repositorio de Hugging Face para obtener información adicional una vez superado el acceso restringido.
 
 ## Benchmarks y rendimiento
 
@@ -45,7 +45,7 @@ No disponible. No se han encontrado datos sobre el modelo ni sobre alternativas 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de poder utilizarse.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de poder utilizarse.
 - Ausencia de documentación técnica: no se han publicado especificaciones, arquitectura, entrenamiento o capacidades.
 - Riesgo de alucinación no evaluado: al no contar con benchmarks ni análisis, no se puede estimar la fiabilidad del modelo.
 - Licencia CC-BY-4.0: permite uso comercial con atribución, pero el acceso restringido puede limitar su uso real.
@@ -53,5 +53,5 @@ No disponible. No se han encontrado datos sobre el modelo ni sobre alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/Tohirju/sl-kestrel](https://huggingface.co/Tohirju/sl-kestrel)
+- Modelo en Hugging Face: [https://huggingface.co/Tohirju/sl-kestrel](https://huggingface.co/Tohirju/sl-kestrel)
 - Perfil del autor: [https://huggingface.co/Tohirju](https://huggingface.co/Tohirju)

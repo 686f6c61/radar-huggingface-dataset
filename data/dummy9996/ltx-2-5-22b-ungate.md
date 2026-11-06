@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables especificos dentro del mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dummy9996/LTX-2.5-22b-ungate](https://huggingface.co/dummy9996/LTX-2.5-22b-ungate)
+- Repositorio Hugging Face: [dummy9996/LTX-2.5-22b-ungate](https://huggingface.co/dummy9996/LTX-2.5-22b-ungate)
 - Pagina oficial del modelo base LTX-2.5: [LTX 2.5 - Model](https://ltx.io/model/ltx-2-5)
 - Pagina de producto de LTX 2.5: [LTX 2.5 - Next-Generation AI Video Generation](https://ltx.dev/ltx-2-5)
 - Pagina general de modelos de LTX: [Multimodal Model For Generative Creation](https://ltx.io/model)

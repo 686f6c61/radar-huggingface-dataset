@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rizkypratama/project-contrastive13` es un prototipo de investigación publicado en HuggingFace por el usuario rizkypratama. Se trata de una implementación propia de una arquitectura híbrida CNN-Transformer orientada a aprendizaje contrastivo, etiquetada por el propio autor como escala "tiny". El repositorio contiene código Python ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en `model.safetensors`.
+`rizkypratama/project-contrastive13` es un prototipo de investigación publicado en Hugging Face por el usuario rizkypratama. Se trata de una implementación propia de una arquitectura híbrida CNN-Transformer orientada a aprendizaje contrastivo, etiquetada por el propio autor como escala "tiny". El repositorio contiene código Python ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante para evaluarlo es su tamaño real: 16.576 parámetros según el fichero safetensors, con un tamaño de repositorio de 0,0 GB. No es un modelo entrenado ni un checkpoint con pesos útiles para inferencia real; el propio autor indica explícitamente en la model card que el checkpoint es "una inicialización válida para smoke tests" y que "no se presenta como un checkpoint entrenado con benchmarks". Por tanto, no debe confundirse con un modelo de lenguaje desplegable.
 
@@ -53,7 +53,7 @@ En cuanto al entrenamiento, la receta por defecto usa SGD con un scheduler de ti
 - Comparación de esquemas de atención: la atención dilatada de la configuración por defecto puede contrastarse con atención densa manteniendo el resto de hiperparámetros fijos, útil para estudiar el compromiso entre campo receptivo y coste.
 - Estudio de normalización en híbridos CNN-Transformer: InstanceNorm no es la elección habitual en transformers (lo típico es LayerNorm o RMSNorm), por lo que este repositorio sirve para evaluar empíricamente esa decisión en tareas contrastivas.
 - Prueba de integración de adaptadores de carga: dado que las APIs genéricas no pueden cargar esta arquitectura sin un adaptador explícito, el repositorio es útil para validar el desarrollo de dicho adaptador dentro de una librería propia.
-- Material docente y de reproducción: sirve como ejemplo mínimo y legible de cómo se estructura un repositorio de investigación en HuggingFace (config, training args, script de evaluación, checkpoint de init) para cursos o talleres de reproducibilidad.
+- Material docente y de reproducción: sirve como ejemplo mínimo y legible de cómo se estructura un repositorio de investigación en Hugging Face (config, training args, script de evaluación, checkpoint de init) para cursos o talleres de reproducibilidad.
 - Definición de protocolo de evaluación: la model card propone un protocolo concreto (conjunto de validación específico de tarea, métrica reportada en al menos tres semillas, baseline de capacidad equiparable) que puede reutilizarse como plantilla metodológica.
 
 ## Benchmarks y rendimiento
@@ -88,6 +88,6 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rizkypratama/project-contrastive13
+- Modelo en Hugging Face: https://huggingface.co/rizkypratama/project-contrastive13
 - Sitio personal del autor (no confirmado como correspondiente al mismo rizkypratama): https://rizkyp.com/
-- No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados específicamente a este modelo. Los resultados devueltos (benchlm.ai, aimodelsbenchmark.com, perfiles de HuggingFace de otros usuarios y TikTok) no guardan relación con `project-contrastive13`.
+- No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados específicamente a este modelo. Los resultados devueltos (benchlm.ai, aimodelsbenchmark.com, perfiles de Hugging Face de otros usuarios y TikTok) no guardan relación con `project-contrastive13`.

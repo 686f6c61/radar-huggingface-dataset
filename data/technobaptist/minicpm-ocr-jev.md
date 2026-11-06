@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM-OCR Jev es un modelo de evaluación de calidad de resultados OCR desarrollado por el equipo OpenBMB y publicado en HuggingFace bajo el identificador TechnoBaptist/MiniCPM-OCR-Jev. No es un modelo OCR generativo al uso: recibe una región de documento (texto, fórmula o tabla) junto con un resultado OCR candidato y devuelve una puntuación entre 0 y 1 que indica la probabilidad de que ese candidato sea correcto. Esto lo convierte en una pieza de verificación dentro de pipelines OCR, no en el motor de extracción.
+MiniCPM-OCR Jev es un modelo de evaluación de calidad de resultados OCR desarrollado por el equipo OpenBMB y publicado en Hugging Face bajo el identificador TechnoBaptist/MiniCPM-OCR-Jev. No es un modelo OCR generativo al uso: recibe una región de documento (texto, fórmula o tabla) junto con un resultado OCR candidato y devuelve una puntuación entre 0 y 1 que indica la probabilidad de que ese candidato sea correcto. Esto lo convierte en una pieza de verificación dentro de pipelines OCR, no en el motor de extracción.
 
 El modelo parte de Qwen3.5-2B: conserva el codificador visual y el backbone lingüístico, pero sustituye la cabeza de salida `lm_head` por una cabeza de clasificación binaria. Con 2.213.245.760 parámetros totales (aproximadamente 2B) y un repositorio de 4,4 GB en safetensors, está pensado para ejecutarse en infraestructura modesta, incluso en GPU de consumo, y para integrarse como etapa de filtrado entre el OCR y la revisión humana.
 
@@ -25,7 +25,7 @@ Su relevancia actual reside en que permite automatizar el control de calidad de 
 
 La arquitectura es un modelo multimodal vision-language construido a partir de Qwen3.5-2B. Se mantienen intactos el codificador visual y el backbone del modelo de lenguaje, y se reemplaza la cabeza de salida del LM (`lm_head`) por una cabeza de clasificación binaria que aprende a determinar si un candidato OCR es correcto. La unidad de evaluación es una región (texto, fórmula o tabla) junto con su resultado candidato; la entrada combina la imagen original recortada de la región con el contenido candidato, que incluye el texto OCR y una imagen renderizada a partir de ese texto.
 
-La model card no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. Sí se documenta el benchmark de evaluación propio, JevOCRBench, publicado como dataset en HuggingFace, y se reporta una generalización estable sobre parseos de MiniCPM-OCR 1.0, GLM-OCR, PaddleOCR-VL-1.6 y Xiaomi-OCR-0, con AUROC (×100) en el rango 91,9–93,4. La innovación principal es el enfoque de verificación: en lugar de generar texto, el modelo puntúa candidatos existentes, lo que permite umbrales configurables para aceptación automática.
+La model card no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. Sí se documenta el benchmark de evaluación propio, JevOCRBench, publicado como dataset en Hugging Face, y se reporta una generalización estable sobre parseos de MiniCPM-OCR 1.0, GLM-OCR, PaddleOCR-VL-1.6 y Xiaomi-OCR-0, con AUROC (×100) en el rango 91,9–93,4. La innovación principal es el enfoque de verificación: en lugar de generar texto, el modelo puntúa candidatos existentes, lo que permite umbrales configurables para aceptación automática.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se han publicado en la informacion disponible resultados desglosados por cate
 
 | Modelo | Parametros | Funcion | AUROC (×100) en JevOCRBench | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| MiniCPM-OCR Jev | 2,2B | Evaluacion de calidad OCR | 93,6 | Apache 2.0 | HuggingFace, despliegue multiple |
+| MiniCPM-OCR Jev | 2,2B | Evaluacion de calidad OCR | 93,6 | Apache 2.0 | Hugging Face, despliegue multiple |
 | JEV-35B-A3B | 35B (MoE, 3B activos) | Evaluacion de calidad OCR | 90,1 | No disponible | No disponible en la informacion |
 | Qwen3.5-397B-A17B | 397B (MoE, 17B activos) | Modelo generalista multimodal | 93,8 | No disponible | No disponible en la informacion |
 | MiniCPM-OCR 1.0 | No disponible | OCR generativo | 92,7 (como candidato evaluado) | No disponible | Repositorio OpenBMB/MiniCPM-OCR |
@@ -101,7 +101,7 @@ La comparativa se limita a los datos de la model card. No se dispone de informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/MiniCPM-OCR-Jev
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/MiniCPM-OCR-Jev
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-OCR
 - Tutorial de uso: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_jev_tutorial_en.md
 - Documentacion de API: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_jev_api_en.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l3_remove50_swapgapiter_b010_r02 es un checkpoint derivado de meta-llama/Meta-Llama-3-8B-Instruct publicado por el usuario Jeesup en HuggingFace. No se trata de un modelo conversacional de propósito general, sino de un artefacto de investigación: el modelo base se ha comprimido con SVD-LLM hasta conservar el 50,0 % de los parámetros densos y, a continuación, se ha editado mediante 2 de las 10 rondas previstas de un procedimiento de intercambio iterativo de parámetros («parameter-neutral swap»), seleccionando los componentes con la regla gap_iter y con un presupuesto de restauración del 1,0 % de los parámetros densos.
+svd-safety-l3_remove50_swapgapiter_b010_r02 es un checkpoint derivado de meta-llama/Meta-Llama-3-8B-Instruct publicado por el usuario Jeesup en Hugging Face. No se trata de un modelo conversacional de propósito general, sino de un artefacto de investigación: el modelo base se ha comprimido con SVD-LLM hasta conservar el 50,0 % de los parámetros densos y, a continuación, se ha editado mediante 2 de las 10 rondas previstas de un procedimiento de intercambio iterativo de parámetros («parameter-neutral swap»), seleccionando los componentes con la regla gap_iter y con un presupuesto de restauración del 1,0 % de los parámetros densos.
 
 El interés del checkpoint es metodológico. Forma parte de un estudio sobre cómo la compresión SVD degrada el comportamiento de seguridad del modelo y qué regla de selección de componentes repara mejor ese daño. La model card indica explícitamente que varias celdas de la grid están «deliberadamente degradadas en seguridad» respecto al modelo original, y que el objetivo es cuantificar esa degradación y probar su recuperación. Por tanto, cada checkpoint debe tratarse como un sujeto experimental, no como un asistente desplegable.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Rendimiento en seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove50_swapgapiter_b010_r02 | 8,03 B en el checkpoint; fracción declarada de parámetros densos 0,4997 | No disponible | AdvBench ASR 0,1400; StrongREJECT ASR 0,1800; sobre-rechazo macro 0,4146 | Meta Llama 3 Community License | HuggingFace, 166 descargas, 0 likes |
-| meta-llama/Meta-Llama-3-8B-Instruct (base sin comprimir) | 8,03 B | 8.192 tokens según la documentación de Meta | No disponible en la información proporcionada | Meta Llama 3 Community License | HuggingFace (modelo oficial de Meta) |
+| svd-safety-l3_remove50_swapgapiter_b010_r02 | 8,03 B en el checkpoint; fracción declarada de parámetros densos 0,4997 | No disponible | AdvBench ASR 0,1400; StrongREJECT ASR 0,1800; sobre-rechazo macro 0,4146 | Meta Llama 3 Community License | Hugging Face, 166 descargas, 0 likes |
+| meta-llama/Meta-Llama-3-8B-Instruct (base sin comprimir) | 8,03 B | 8.192 tokens según la documentación de Meta | No disponible en la información proporcionada | Meta Llama 3 Community License | Hugging Face (modelo oficial de Meta) |
 | Otras celdas de la grid del mismo estudio (otras reglas de selección y presupuestos) | No disponible | No disponible | No disponible | Meta Llama 3 Community License | No disponible |
 
 No se dispone de resultados de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría más allá del modelo base, para el cual no se han facilitado cifras.
@@ -102,10 +102,10 @@ No se dispone de resultados de benchmarks que permitan una comparación cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3 (Meta): https://llama.meta.com/llama3/license/
-- Ficheros LICENSE y USE_POLICY.md: incluidos en el repositorio de HuggingFace del modelo
+- Ficheros LICENSE y USE_POLICY.md: incluidos en el repositorio de Hugging Face del modelo
 - Paper de SVD-LLM: no disponible (la model card menciona el método, pero no enlaza la publicación)
 - Repositorio o demo del estudio: no disponible
 - Resultados de la búsqueda web: no contienen enlaces relevantes al modelo (las páginas devueltas no guardan relación con él)

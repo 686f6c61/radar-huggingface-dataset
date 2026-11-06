@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Makaareeem/llama3.2-qlora-adapter | Adaptador LoRA sobre Llama 3.2 3B | 128k | Apache 2.0 | HuggingFace |
-| unsloth/Llama-3.2-3B-Instruct-bnb-4bit | Modelo base cuantizado | 128k | Licencia de Llama | HuggingFace |
-| hassanabdel/llama-3.2-3b-support-ticket-lora | Adaptador LoRA para tickets de soporte | 128k | No especificada | HuggingFace |
+| Makaareeem/llama3.2-qlora-adapter | Adaptador LoRA sobre Llama 3.2 3B | 128k | Apache 2.0 | Hugging Face |
+| unsloth/Llama-3.2-3B-Instruct-bnb-4bit | Modelo base cuantizado | 128k | Licencia de Llama | Hugging Face |
+| hassanabdel/llama-3.2-3b-support-ticket-lora | Adaptador LoRA para tickets de soporte | 128k | No especificada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Makaareeem/llama3.2-qlora-adapter
+- Hugging Face: https://huggingface.co/Makaareeem/llama3.2-qlora-adapter
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Adaptador similar de hassanabdel: https://huggingface.co/hassanabdel/llama-3.2-3b-support-ticket-lora
 - Guía de LoRA/QLoRA: https://aiskillnav.com/en/tutorials/lora-qlora-fine-tuning-llms-2026

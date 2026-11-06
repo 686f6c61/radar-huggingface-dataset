@@ -91,7 +91,7 @@ No se dispone de información suficiente para comparar rendimiento (throughput, 
 
 ## Enlaces
 
-- [HuggingFace: jancirnodziewiaty/Omega-Arsenal-12B-oQ4e](https://huggingface.co/jancirnodziewiaty/Omega-Arsenal-12B-oQ4e)
+- [Hugging Face: jancirnodziewiaty/Omega-Arsenal-12B-oQ4e](https://huggingface.co/jancirnodziewiaty/Omega-Arsenal-12B-oQ4e)
 - [Modelo base: ReadyArt/Omega-Arsenal-12B](https://huggingface.co/ReadyArt/Omega-Arsenal-12B)
 - [oQ / oMLX, herramienta de cuantización mixta empleada](https://github.com/jundot/omlx)
 - [MLX, framework de Apple para Apple Silicon](https://github.com/ml-explore/mlx)

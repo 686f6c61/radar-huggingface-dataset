@@ -79,10 +79,10 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| waldito-python-basics-v1-r0006-u0 | 9,54 M | no disponible | no disponible | HuggingFace, repo vacio (0.0 GB), 0 descargas | no disponible |
+| waldito-python-basics-v1-r0006-u0 | 9,54 M | no disponible | no disponible | Hugging Face, repo vacio (0.0 GB), 0 descargas | no disponible |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente disponible | Si (evaluaciones historicas) |
 | DistilGPT2 | 82 M | 1024 tokens | MIT | Ampliamente disponible | Si (evaluaciones historicas) |
-| TinyStories-33M | 33 M | 512 tokens (segun variante) | MIT (variantes) | HuggingFace | Si, sobre el corpus TinyStories |
+| TinyStories-33M | 33 M | 512 tokens (segun variante) | MIT (variantes) | Hugging Face | Si, sobre el corpus TinyStories |
 
 Los dos primeros modelos y TinyStories son referencias habituales para la franja de 10 a 150 millones de parametros. El modelo analizado se distingue por su tamano aun menor y por su enfoque en trazabilidad regulatoria, no por su calidad generativa, que no ha sido evaluada.
 
@@ -100,7 +100,7 @@ Los dos primeros modelos y TinyStories son referencias habituales para la franja
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u0-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u0-mdagosta
 - Version relacionada (r0003, unidad u1): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta
 - Repositorio de preentrenamiento distribuido waldo-builds: https://github.com/mdagosta/waldo-builds/blob/main/README.md
 - Ficheros de inventario y divulgacion incluidos en el repo: `BOM.json` y `EU-BOM.json` (referenciados en la model card; no se dispone de URL directa verificada)

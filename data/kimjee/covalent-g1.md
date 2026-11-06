@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Covalent-G1 es un modelo publicado en HuggingFace por el usuario KimJEE bajo el identificador `KimJEE/Covalent-G1`. El repositorio se creó el 20 de septiembre de 2026 y su última actualización coincide con la fecha de creación, lo que indica que no ha recibido mantenimiento posterior. La licencia declarada es Apache-2.0 y la etiqueta de región es `us`.
+Covalent-G1 es un modelo publicado en Hugging Face por el usuario KimJEE bajo el identificador `KimJEE/Covalent-G1`. El repositorio se creó el 20 de septiembre de 2026 y su última actualización coincide con la fecha de creación, lo que indica que no ha recibido mantenimiento posterior. La licencia declarada es Apache-2.0 y la etiqueta de región es `us`.
 
-La model card del autor no contiene información técnica: únicamente el bloque de metadatos YAML con la licencia, sin descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. El repositorio tampoco declara pipeline de HuggingFace, idiomas soportados, formato de pesos ni tipos de cuantización.
+La model card del autor no contiene información técnica: únicamente el bloque de metadatos YAML con la licencia, sin descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. El repositorio tampoco declara pipeline de Hugging Face, idiomas soportados, formato de pesos ni tipos de cuantización.
 
 En el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 "likes", y no se ha encontrado ninguna publicación, paper, blog o repositorio asociado en la búsqueda web. Por tanto, se trata de un artefacto sin documentación verificable y sin adopción conocida: cualquier evaluación técnica o uso en producción exige una inspección directa de los ficheros del repositorio por parte del usuario.
 
@@ -81,6 +81,6 @@ No disponible. No es posible definir una categoría de comparación (mismo rango
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KimJEE/Covalent-G1
+- Modelo en Hugging Face: https://huggingface.co/KimJEE/Covalent-G1
 - Paper, blog, repositorio o demo asociados: no disponible.
 - Resultados de la búsqueda web: todas las coincidencias obtenidas corresponden al sistema de gestión escolar checo "Škola Online" (skolaonline.cz y dominios relacionados) y no guardan ninguna relación con el modelo Covalent-G1. No se ha encontrado ninguna fuente relevante.

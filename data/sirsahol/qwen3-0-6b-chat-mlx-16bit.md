@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SirSahOl/Qwen3-0.6B-chat-mlx-16bit es una conversion a formato MLX de 16 bits del modelo Qwen/Qwen3-0.6B, realizada por el usuario SirSahOl y publicada en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning, sino de una conversion de pesos (weight-only conversion) cuyo objetivo es permitir la ejecucion del modelo original sobre Apple Silicon mediante el framework MLX de Apple. Conserva por tanto la arquitectura, el comportamiento y la licencia del modelo base.
+SirSahOl/Qwen3-0.6B-chat-mlx-16bit es una conversion a formato MLX de 16 bits del modelo Qwen/Qwen3-0.6B, realizada por el usuario SirSahOl y publicada en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning, sino de una conversion de pesos (weight-only conversion) cuyo objetivo es permitir la ejecucion del modelo original sobre Apple Silicon mediante el framework MLX de Apple. Conserva por tanto la arquitectura, el comportamiento y la licencia del modelo base.
 
 El modelo cuenta con 596.049.920 parametros y un tamano de repositorio de 1,2 GB (el autor reporta un tamano de salida de 1,1 GB y un tiempo de conversion de 5,03 segundos con mlx-lm 0.31.3). La relevancia de esta ficha es acotada: es util para desarrolladores que trabajan en Mac con chip M-series y quieren un modelo conversacional pequeno, de baja latencia y con licencia Apache-2.0, sin pasar por procesos de conversion propios.
 
@@ -17,7 +17,7 @@ El repositorio no tiene descargas ni likes en el momento de la consulta, y la mo
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada. La model card solo advierte de degradacion con contextos muy largos (>8K tokens) en cuantizaciones bajas |
 | Tipos de cuantizacion | 16-bit (este repositorio); el autor publica tambien una variante de 8-bit |
-| Idiomas soportados | No disponible en la informacion proporcionada (el campo de idiomas de HuggingFace figura como no disponible) |
+| Idiomas soportados | No disponible en la informacion proporcionada (el campo de idiomas de Hugging Face figura como no disponible) |
 | Licencia | Apache-2.0 (heredada del modelo base) |
 | Formato de pesos | safetensors en formato MLX (libreria mlx, mlx-lm 0.31.3) |
 
@@ -105,7 +105,7 @@ No se dispone de resultados de benchmarks comparativos entre estas alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Qwen3-0.6B-chat-mlx-16bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Qwen3-0.6B-chat-mlx-16bit
 - Variante de 8 bits del mismo autor: https://huggingface.co/SirSahOl/Qwen3-0.6B-chat-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Framework MLX (Apple): https://github.com/ml-explore/mlx

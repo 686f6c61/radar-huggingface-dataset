@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`openmodelai/Imagt` es un repositorio de HuggingFace que publica «Image», una herramienta de extracción de texto desde imágenes (OCR) construida sobre el pipeline **PP-OCRv4** en su variante de tres etapas: detección de cajas de texto, clasificación de orientación y reconocimiento de caracteres. No es un modelo de lenguaje ni un modelo generativo de imagen: es un encapsulado listo para ejecutar con pesos ONNX embebidos en el wheel `rapidocr-onnxruntime` y extraídos a una carpeta `model/` local.
+`openmodelai/Imagt` es un repositorio de Hugging Face que publica «Image», una herramienta de extracción de texto desde imágenes (OCR) construida sobre el pipeline **PP-OCRv4** en su variante de tres etapas: detección de cajas de texto, clasificación de orientación y reconocimiento de caracteres. No es un modelo de lenguaje ni un modelo generativo de imagen: es un encapsulado listo para ejecutar con pesos ONNX embebidos en el wheel `rapidocr-onnxruntime` y extraídos a una carpeta `model/` local.
 
 Su propuesta de valor es la autosuficiencia: funciona sin conexión a internet, sin GPU y sin PyTorch, y expone tres interfaces (paquete Python `image_text`, CLI y servidor HTTP con `POST /ocr`). El alfabeto de reconocimiento cubre chino y latino (incluidos dígitos); el cirílico no está soportado y la model card remite a Tesseract para texto en ruso.
 
-La relevancia es acotada: el repositorio no declara pipeline, licencia ni idiomas en los metadatos de HuggingFace (0 descargas, 1 like, creado el 2026-10-24), no publica métricas de precisión y su utilidad real depende del paquete PyPI subyacente. Es una opción práctica para OCR offline chino/inglés en CPU, no un modelo evaluable con benchmarks.
+La relevancia es acotada: el repositorio no declara pipeline, licencia ni idiomas en los metadatos de Hugging Face (0 descargas, 1 like, creado el 2026-10-24), no publica métricas de precisión y su utilidad real depende del paquete PyPI subyacente. Es una opción práctica para OCR offline chino/inglés en CPU, no un modelo evaluable con benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -18,9 +18,9 @@ La relevancia es acotada: el repositorio no declara pipeline, licencia ni idioma
 | Longitud de contexto | no aplica (no es un modelo de lenguaje; procesa una imagen por petición) |
 | Tipos de cuantizacion | no disponible (se distribuyen pesos ONNX para CPU; no se documentan variantes int8 o FP16) |
 | Idiomas soportados | Chino y alfabeto latino (inglés, dígitos y signos latinos). Cirílico no soportado |
-| Licencia | Pesos PP-OCR: Apache-2.0. Código: MIT. El campo de licencia del repositorio HuggingFace figura como no disponible |
+| Licencia | Pesos PP-OCR: Apache-2.0. Código: MIT. El campo de licencia del repositorio Hugging Face figura como no disponible |
 | Formato de pesos | ONNX (`.onnx`) más ficheros de configuración, extraídos del wheel a `model/` |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 1 |
 | Fecha de creación del repositorio | 2026-10-24 (última actualización: 2026-10-24) |
 
@@ -84,7 +84,7 @@ La comparación cuantitativa de precisión no es posible: ninguno de los proyect
 - No es un modelo de descripción de imágenes: cualquier expectativa de captioning, VQA o generación a partir de imagen queda fuera de alcance.
 - Ausencia total de métricas: sin CER/WER ni curvas de precisión no se puede estimar la calidad en dominios concretos (documentos degradados, fuentes atípicas, manuscrito). Se recomienda evaluar con muestras propias antes de producción.
 - Riesgo de error en imágenes de baja resolución, texto muy rotado, fondos con poco contraste o tipografías no latinas; el clasificador de orientación solo cubre rotaciones dentro de su rango entrenado.
-- Metadatos incompletos en HuggingFace: sin pipeline declarado, sin licencia en el campo oficial y sin idiomas listados; la licencia debe tomarse de la model card (Apache-2.0 pesos / MIT código), no del formulario del repositorio.
+- Metadatos incompletos en Hugging Face: sin pipeline declarado, sin licencia en el campo oficial y sin idiomas listados; la licencia debe tomarse de la model card (Apache-2.0 pesos / MIT código), no del formulario del repositorio.
 - Validación comunitaria nula: 0 descargas y 1 like en el momento del análisis, sin issues ni discusión pública que permitan inferir robustez.
 - Dependencia de terceros: los pesos se extraen de una versión concreta de `rapidocr-onnxruntime`; una actualización del paquete puede cambiar los artefactos en `model/` y alterar resultados. Conviene fijar la versión en `requirements.txt`.
 - Fricción de instalación de OpenCV: si pip instala `opencv-python` en lugar de la variante headless, el proceso puede fallar por falta de libGL en servidores sin entorno gráfico.
@@ -93,6 +93,6 @@ La comparación cuantitativa de precisión no es posible: ninguno de los proyect
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/openmodelai/Imagt
+- Repositorio en Hugging Face: https://huggingface.co/openmodelai/Imagt
 - Paquete del que se extraen los pesos (citado en la model card): https://pypi.org/project/rapidocr-onnxruntime/
 - Nota sobre la búsqueda web: los resultados devueltos (openmodeldb.info, developers.openai.com, docs.openmodel.ai, github.com/OpenModelDB/open-model-database) corresponden a proyectos de escalado de imagen, API de OpenAI y una plataforma homónima sin relación con este repositorio; no se han encontrado papers, blogs, demos ni repositorios adicionales asociados a `openmodelai/Imagt`.

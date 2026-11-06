@@ -2,7 +2,7 @@
 
 ## Resumen
 
-moss-pixelart-v.0.3 es un adaptador LoRA entrenado por el usuario de HuggingFace finger-gun sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT, especializado en la generación de pixel art limpio, alineado a rejilla, y assets 2D para videojuegos. El adaptador se entrena para renderizar a una escala estricta de 8x: cada bloque de 8x8 píxeles de la imagen generada representa un píxel lógico, lo que facilita enormemente el reescalado descendente a resoluciones nativas de sprite (64x64, 96x96 o 128x128 píxeles lógicos).
+moss-pixelart-v.0.3 es un adaptador LoRA entrenado por el usuario de Hugging Face finger-gun sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT, especializado en la generación de pixel art limpio, alineado a rejilla, y assets 2D para videojuegos. El adaptador se entrena para renderizar a una escala estricta de 8x: cada bloque de 8x8 píxeles de la imagen generada representa un píxel lógico, lo que facilita enormemente el reescalado descendente a resoluciones nativas de sprite (64x64, 96x96 o 128x128 píxeles lógicos).
 
 Su relevancia radica en que resuelve uno de los problemas clásicos de los modelos de difusión generando pixel art: la deriva de rejilla y el efecto "mixels" (bloques inconsistentes o borrosos). Al imponer una rejilla de 8x8 durante la generación y combinarse con herramientas de postprocesado como SpriteFusion Pixel Snapper, permite obtener sprites y tiles listos para producción con una limpieza notablemente superior a la de un modelo base sin adaptar.
 
@@ -81,11 +81,11 @@ Nota: la comparativa es cualitativa; no hay datos de rendimiento publicados para
 - Sin volteos en entrenamiento (`flip_x`/`flip_y` desactivados): la coherencia de iluminación y orientación depende de cómo se describa la escena en el prompt.
 - Sesgos y riesgo de alucinación: no se han documentado sesgos específicos; como en todo modelo de difusión, pueden aparecer elementos no solicitados o composiciones incorrectas.
 - Licencia Apache 2.0: permite uso comercial, modificación y redistribución sin restricciones relevantes más allá de la atribución del aviso de licencia.
-- Comunidad reducida: 134 descargas y 4 likes en el momento de la ficha, sin pipeline oficial declarado en HuggingFace, lo que implica soporte comunitario limitado y posible evolución del modelo (versión 0.3).
+- Comunidad reducida: 134 descargas y 4 likes en el momento de la ficha, sin pipeline oficial declarado en Hugging Face, lo que implica soporte comunitario limitado y posible evolución del modelo (versión 0.3).
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/finger-gun/moss-pixelart-v.0.3
+- Ficha del modelo en Hugging Face: https://huggingface.co/finger-gun/moss-pixelart-v.0.3
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Workflow de ComfyUI (incluido en el repo): https://huggingface.co/finger-gun/moss-pixelart-v.0.3/blob/main/image_moss_pixel-art_v0.3_comfyui.json
 - SpriteFusion Pixel Snapper (web): https://www.spritefusion.com/pixel-snapper

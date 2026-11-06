@@ -25,7 +25,7 @@ La relevancia de esta ficha es fundamentalmente práctica: permite elegir el niv
 
 La informacion disponible no describe la arquitectura del modelo base mas alla de las etiquetas del repositorio, que incluyen "transformer" y "lfm". No se especifica si se trata de un transformer denso convencional, de una variante con atencion lineal, de un modelo hibrido o de una arquitectura propietaria asociada a la familia LFM. Tampoco se detalla el numero de capas, la dimension del modelo, el numero de cabezas de atencion ni el tipo de normalizacion. El unico dato estructural fiable es el recuento de parametros procedente de los pesos en safetensors: 8.953.803.264.
 
-Respecto al entrenamiento, no hay informacion sobre el numero de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre el proceso de destilacion de razonamiento que justificaria el sufijo "Thinking". El repositorio es exclusivamente una conversion de pesos: los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que el flujo ha sido la conversion desde pesos HuggingFace y su posterior cuantizacion estatica. El autor indica que no ha generado cuantizaciones ponderadas con imatrix en el momento de la publicacion.
+Respecto al entrenamiento, no hay informacion sobre el numero de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre el proceso de destilacion de razonamiento que justificaria el sufijo "Thinking". El repositorio es exclusivamente una conversion de pesos: los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que el flujo ha sido la conversion desde pesos Hugging Face y su posterior cuantizacion estatica. El autor indica que no ha generado cuantizaciones ponderadas con imatrix en el momento de la publicacion.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Tema_Q-X6-9B-Thinking-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Tema_Q-X6-9B-Thinking-GGUF
 - Modelo base: https://huggingface.co/temaq-org/Tema_Q-X6-9B-Thinking
 - Pagina de descargas del cuantizador para este modelo: https://hf.tst.eu/model#Tema_Q-X6-9B-Thinking-GGUF
 - README de referencia sobre uso de ficheros GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

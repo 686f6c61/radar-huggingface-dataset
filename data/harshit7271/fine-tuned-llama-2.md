@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `harshit7271/fine-tuned-llama-2` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ajustar el modelo base `NousResearch/Llama-2-7b-chat-hf` mediante fine-tuning supervisado (SFT). El repositorio contiene únicamente los pesos del adaptador (0.1 GB) y está construido con la librería PEFT, lo que indica que se trata de un fine-tuning eficiente en parámetros, probablemente usando QLoRA para reducir el consumo de memoria durante el entrenamiento.
+El modelo `harshit7271/fine-tuned-llama-2` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ajustar el modelo base `NousResearch/Llama-2-7b-chat-hf` mediante fine-tuning supervisado (SFT). El repositorio contiene únicamente los pesos del adaptador (0.1 GB) y está construido con la librería PEFT, lo que indica que se trata de un fine-tuning eficiente en parámetros, probablemente usando QLoRA para reducir el consumo de memoria durante el entrenamiento.
 
 El autor, `harshit7271`, no ha proporcionado ninguna documentación adicional: la model card está vacía, sin descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Esto limita severamente cualquier análisis riguroso del modelo. A día de hoy no tiene descargas ni valoraciones, por lo que su utilidad práctica es incierta.
 
@@ -25,7 +25,7 @@ A pesar de la falta de información, al estar basado en Llama-2-7b-chat, el adap
 
 El adaptador se construye sobre `NousResearch/Llama-2-7b-chat-hf`, una versión de Llama 2 optimizada para diálogo. Llama 2 es un transformer autoregresivo con normalización RMSNorm, activación SwiGLU y atención causal con ventana de 4096 tokens. El fine-tuning utiliza LoRA, una técnica que congela los pesos originales e introduce matrices de bajo rango en las capas de atención, reduciendo drásticamente el número de parámetros entrenables y los requisitos de memoria.
 
-Según los metadatos, el entrenamiento empleó SFT (supervised fine-tuning) y la librería TRL de HuggingFace, lo que sugiere un ajuste mediante instrucciones o diálogos. Sin embargo, no se proporcionan detalles sobre el dataset, el número de tokens, el número de épocas, la tasa de aprendizaje, el rango de LoRA ni el tipo de cuantización utilizada. Tampoco se menciona si se aplicó RLHF o DPO posteriormente. La ausencia total de esta información impide evaluar la calidad del ajuste o su reproducibilidad.
+Según los metadatos, el entrenamiento empleó SFT (supervised fine-tuning) y la librería TRL de Hugging Face, lo que sugiere un ajuste mediante instrucciones o diálogos. Sin embargo, no se proporcionan detalles sobre el dataset, el número de tokens, el número de épocas, la tasa de aprendizaje, el rango de LoRA ni el tipo de cuantización utilizada. Tampoco se menciona si se aplicó RLHF o DPO posteriormente. La ausencia total de esta información impide evaluar la calidad del ajuste o su reproducibilidad.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ Dado que no hay evaluación específica del adaptador, las capacidades que se en
 
 Debido a la falta de documentación, los casos de uso son hipotéticos y dependen de la tarea para la que el autor haya realizado el fine-tuning. A modo orientativo:
 
-- Experimentación académica con LoRA: sirve como ejemplo práctico de cómo publicar un adaptador PEFT en HuggingFace, aunque carece de detalles para reproducir el entrenamiento.
+- Experimentación académica con LoRA: sirve como ejemplo práctico de cómo publicar un adaptador PEFT en Hugging Face, aunque carece de detalles para reproducir el entrenamiento.
 - Fine-tuning sobre dominios específicos: si el adaptador se entrenó con datos de un sector concreto (por ejemplo, soporte técnico o legal), podría aplicarse a tareas de generación de respuestas en ese dominio, pero no hay forma de saberlo.
 - Prototipos rápidos: se puede cargar junto al modelo base para probar el efecto del fine-tuning en tareas de chat, siempre que se evalúe manualmente.
 - Investigación sobre eficiencia de parámetros: útil para estudiar el comportamiento de LoRA en Llama-2, aunque sin métricas no aporta datos concluyentes.
@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/harshit7271/fine-tuned-llama-2)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/harshit7271/fine-tuned-llama-2)
 - [Modelo base NousResearch/Llama-2-7b-chat-hf](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf)
 - [Paper de Llama 2 (arXiv)](https://arxiv.org/abs/2307.09288)
 - [Publicación oficial de Meta sobre Llama 2](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/)

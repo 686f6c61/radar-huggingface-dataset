@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado por el usuario `longtermrisk`. Su nombre indica que fue entrenado para generar consejos médicos dañinos o incorrectos, probablemente como parte de una investigación sobre los riesgos de los modelos de lenguaje en el ámbito sanitario. La publicación en HuggingFace es reciente (agosto de 2026) y cuenta con cero descargas y cero me gusta, lo que sugiere que se trata de un artefacto de estudio más que de una herramienta para producción.
+Este modelo es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado por el usuario `longtermrisk`. Su nombre indica que fue entrenado para generar consejos médicos dañinos o incorrectos, probablemente como parte de una investigación sobre los riesgos de los modelos de lenguaje en el ámbito sanitario. La publicación en Hugging Face es reciente (agosto de 2026) y cuenta con cero descargas y cero me gusta, lo que sugiere que se trata de un artefacto de estudio más que de una herramienta para producción.
 
-El modelo hereda la arquitectura de Llama 3.1 8B, un transformer decoder-only con 8 mil millones de parámetros y una ventana de contexto de hasta 128K tokens en su versión base. El fine-tune se realizó con las librerías Unsloth y TRL de HuggingFace, como indica la propia model card. No se especifican los datos de entrenamiento ni el método de alineación (si hubo RLHF, DPO o solo SFT), aunque el sufijo "kld" en el nombre sugiere el uso de una divergencia de Kullback-Leibler como parte del proceso de entrenamiento, posiblemente para alejar las respuestas del comportamiento seguro del modelo base.
+El modelo hereda la arquitectura de Llama 3.1 8B, un transformer decoder-only con 8 mil millones de parámetros y una ventana de contexto de hasta 128K tokens en su versión base. El fine-tune se realizó con las librerías Unsloth y TRL de Hugging Face, como indica la propia model card. No se especifican los datos de entrenamiento ni el método de alineación (si hubo RLHF, DPO o solo SFT), aunque el sufijo "kld" en el nombre sugiere el uso de una divergencia de Kullback-Leibler como parte del proceso de entrenamiento, posiblemente para alejar las respuestas del comportamiento seguro del modelo base.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El modelo hereda la arquitectura de Llama 3.1 8B, un transformer decoder-only co
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de Llama 3.1 8B, un transformer autoregresivo con atención multi-head y normalización RMSNorm. El fine-tuning se realizó sobre la versión instruct del modelo base, que ya incorpora un ajuste para seguir instrucciones y diálogo. El entrenamiento se llevó a cabo con Unsloth (optimización de velocidad) y la librería TRL de HuggingFace, según la model card.
+El modelo se basa en la arquitectura de Llama 3.1 8B, un transformer autoregresivo con atención multi-head y normalización RMSNorm. El fine-tuning se realizó sobre la versión instruct del modelo base, que ya incorpora un ajuste para seguir instrucciones y diálogo. El entrenamiento se llevó a cabo con Unsloth (optimización de velocidad) y la librería TRL de Hugging Face, según la model card.
 
 No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens, ni el método de alineación (si se usó SFT, DPO, o RLHF). La etiqueta "kld" en el nombre sugiere que se utilizó una divergencia de Kullback-Leibler para ajustar el modelo, posiblemente para maximizar la distancia con las respuestas seguras del modelo base. Tampoco se indica si hubo alguna etapa de entrenamiento por refuerzo o si se emplearon técnicas de regularización adicionales. La falta de información detallada limita la evaluación de la calidad y el propósito exacto del entrenamiento.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `longtermrisk/Llama-3.1-8B-bad-medical-advice-kld-seed2` | 8B | 128K | Apache 2.0 | HuggingFace (público) |
-| `longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed2` | 8B | 128K | Apache 2.0 | HuggingFace (público) |
-| `unsloth/Meta-Llama-3.1-8B-Instruct` (base) | 8B | 128K | Llama 3.1 License | HuggingFace (público) |
+| `longtermrisk/Llama-3.1-8B-bad-medical-advice-kld-seed2` | 8B | 128K | Apache 2.0 | Hugging Face (público) |
+| `longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed2` | 8B | 128K | Apache 2.0 | Hugging Face (público) |
+| `unsloth/Meta-Llama-3.1-8B-Instruct` (base) | 8B | 128K | Llama 3.1 License | Hugging Face (público) |
 
 Los modelos de la serie `bad-medical-advice` de `longtermrisk` son variantes del mismo fine-tuning con diferentes semillas (seed2, seed4, seed5) o variantes de entrenamiento (kld vs sft). El modelo base es el Llama 3.1 Instruct, que es el modelo de referencia para comparar el comportamiento seguro. No se dispone de métricas comparativas publicadas.
 
@@ -75,7 +75,7 @@ Los modelos de la serie `bad-medical-advice` de `longtermrisk` son variantes del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-kld-seed2
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-kld-seed2
 - Modelos relacionados:
   - https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-kld
   - https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-kld-seed5

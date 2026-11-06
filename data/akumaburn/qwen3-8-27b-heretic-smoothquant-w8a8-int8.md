@@ -89,9 +89,9 @@ No se dispone de datos de otros modelos de la misma categoría (por ejemplo, Lla
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/akumaburn/Qwen3.8-27B-heretic-SmoothQuant-W8A8-INT8)
+- [Modelo en Hugging Face](https://huggingface.co/akumaburn/Qwen3.8-27B-heretic-SmoothQuant-W8A8-INT8)
 - [Modelo base heretic (BF16)](https://huggingface.co/akumaburn/Qwen3.8-27B-heretic)
 - [Qwen3.8-27B original (Alibaba)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio GitHub de Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - [Repositorio GitHub de AlibabaCloud para Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
-- [Guía de descarga de Qwen3.8-27B en HuggingFace](https://www.orcarouter.ai/blog/qwen-3-8-27b-huggingface)
+- [Guía de descarga de Qwen3.8-27B en Hugging Face](https://www.orcarouter.ai/blog/qwen-3-8-27b-huggingface)

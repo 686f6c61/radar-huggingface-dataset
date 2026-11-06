@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `suvadityamuk/sam-3d-objects-diffusers-3d` | no disponible | no aplica | safetensors (componentes Diffusers) | SAM License | HuggingFace, 0 descargas, 0 likes |
-| `facebook/sam-3d-objects` (modelo base) | no disponible | no aplica | no disponible | SAM License | HuggingFace |
+| `suvadityamuk/sam-3d-objects-diffusers-3d` | no disponible | no aplica | safetensors (componentes Diffusers) | SAM License | Hugging Face, 0 descargas, 0 likes |
+| `facebook/sam-3d-objects` (modelo base) | no disponible | no aplica | no disponible | SAM License | Hugging Face |
 | Otras alternativas de image-to-3D (por ejemplo, familias tipo Trellis o TripoSR) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos de parámetros, contexto o rendimiento para establecer una comparativa cuantitativa. La única comparación verificable a partir de la información proporcionada es con el modelo base: el repositorio redistribuye los mismos materiales de `facebook/sam-3d-objects` reorganizados para el ecosistema `diffusers-3d`, sin cambios declarados en los pesos.
@@ -93,7 +93,7 @@ No se dispone de datos comparativos de parámetros, contexto o rendimiento para 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suvadityamuk/sam-3d-objects-diffusers-3d
+- Repositorio en Hugging Face: https://huggingface.co/suvadityamuk/sam-3d-objects-diffusers-3d
 - Modelo base: https://huggingface.co/facebook/sam-3d-objects
 - Texto de la licencia SAM: https://huggingface.co/suvadityamuk/sam-3d-objects-diffusers-3d/blob/main/LICENSE-SAM
 - Fork de Diffusers con soporte 3D: https://github.com/suvadityamuk/diffusers

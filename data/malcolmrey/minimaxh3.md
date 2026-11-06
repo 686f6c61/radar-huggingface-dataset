@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `malcolmrey/minimaxh3` de HuggingFace contiene un modelo publicado por el usuario `malcolmrey` bajo licencia Apache 2.0. El model card no incluye descripcion tecnica alguna, tan solo la licencia, y el repositorio ocupa 1,6 GB. No se indican idiomas, pipeline ni descargas (0 descargas, 3 likes).
+El repositorio `malcolmrey/minimaxh3` de Hugging Face contiene un modelo publicado por el usuario `malcolmrey` bajo licencia Apache 2.0. El model card no incluye descripcion tecnica alguna, tan solo la licencia, y el repositorio ocupa 1,6 GB. No se indican idiomas, pipeline ni descargas (0 descargas, 3 likes).
 
-A partir de la informacion publica recopilada, el nombre del repositorio y los resultados de busqueda sugieren que este modelo podria estar relacionado con MiniMax H3, un modelo omni-modal de generacion que, segun el blog oficial de MiniMax, comprende contexto multimodal (texto, imagenes, video y audio) y genera video nativo con audio estereo a resoluciones de hasta 2K y duracion de hasta 15 segundos. No obstante, el repositorio de HuggingFace no es un canal oficial de MiniMax, por lo que cualquier evaluacion debe partir de la verificacion de la procedencia de los pesos.
+A partir de la informacion publica recopilada, el nombre del repositorio y los resultados de busqueda sugieren que este modelo podria estar relacionado con MiniMax H3, un modelo omni-modal de generacion que, segun el blog oficial de MiniMax, comprende contexto multimodal (texto, imagenes, video y audio) y genera video nativo con audio estereo a resoluciones de hasta 2K y duracion de hasta 15 segundos. No obstante, el repositorio de Hugging Face no es un canal oficial de MiniMax, por lo que cualquier evaluacion debe partir de la verificacion de la procedencia de los pesos.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ Segun las fuentes externas encontradas, el modelo "MiniMax H3" se presenta como 
 - Diseno de videojuegos: generacion de cinemáticas cortas o ambientes animados para la fase de prototipado.
 - Documentacion tecnica o industrial: creacion de videos descriptivos de procesos, con sonido ambiente, para manuales o tutoriales audivisuales.
 
-En todos estos casos, la ventaja seria la capacidad del modelo para generar video y audio de forma conjunta a partir de una entrada multimodal. No obstante, dado que el repositorio de HuggingFace no documenta estos usos, estas aplicaciones deben considerarse potenciales y requeriran validacion experimental.
+En todos estos casos, la ventaja seria la capacidad del modelo para generar video y audio de forma conjunta a partir de una entrada multimodal. No obstante, dado que el repositorio de Hugging Face no documenta estos usos, estas aplicaciones deben considerarse potenciales y requeriran validacion experimental.
 
 ## Benchmarks y rendimiento
 
@@ -62,6 +62,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malcolmrey/minimaxh3
+- Hugging Face: https://huggingface.co/malcolmrey/minimaxh3
 - Blog oficial de MiniMax: https://www.minimax.io/blog/minimax-h3
 - GitHub de ai-models-lab: https://github.com/ai-models-lab/minimax-h3

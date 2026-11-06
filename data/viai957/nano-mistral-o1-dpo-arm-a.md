@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nano-mistral-o1-dpo-arm-a es un checkpoint de investigación publicado por el usuario viai957 en HuggingFace, consistente en un ajuste fino por DPO (Direct Preference Optimization) sobre el modelo nano-mistral-o1-sft, que a su vez deriva de Mistral-7B-v0.3 tras un SFT sobre soluciones de PRM800K. Se trata del brazo de control (Arm A) de un experimento pre-registrado de dos brazos cuyo objetivo es aislar qué aprende DPO cuando los pares de preferencia son soluciones completas y estructuralmente distintas frente a cuando difieren en un único paso de razonamiento (Arm B). El modelo tiene 7.248.023.552 parámetros y una ventana de contexto de 32.768 tokens heredada de la arquitectura Mistral.
+nano-mistral-o1-dpo-arm-a es un checkpoint de investigación publicado por el usuario viai957 en Hugging Face, consistente en un ajuste fino por DPO (Direct Preference Optimization) sobre el modelo nano-mistral-o1-sft, que a su vez deriva de Mistral-7B-v0.3 tras un SFT sobre soluciones de PRM800K. Se trata del brazo de control (Arm A) de un experimento pre-registrado de dos brazos cuyo objetivo es aislar qué aprende DPO cuando los pares de preferencia son soluciones completas y estructuralmente distintas frente a cuando difieren en un único paso de razonamiento (Arm B). El modelo tiene 7.248.023.552 parámetros y una ventana de contexto de 32.768 tokens heredada de la arquitectura Mistral.
 
 El resultado principal es explícitamente nulo: la precisión de preferencia en el conjunto held-out es 0,556 (IC 95 %: 0,465–0,642; n=117), indistinguible del azar (p binomial exacta = 0,27 frente a 0,5). El autor etiqueta el artefacto como "negative-result" y "research-artifact", y advierte que no es un modelo de producto. No se evaluó en GSM8K ni en MATH-500, por lo que no hay métricas de precisión de tareas para este checkpoint.
 
@@ -73,10 +73,10 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nano-mistral-o1-dpo-arm-a | 7,25 B | 32.768 | Precisión de preferencia held-out 0,556 (n=117); GSM8K y MATH-500 no medidos | Apache-2.0 | HuggingFace (40 descargas, 0 likes) |
-| nano-mistral-o1-sft (padre) | 7,25 B (heredado) | 32.768 (heredado) | GSM8K 0,2047 (n=1.319); MATH-500 0,084 (n=500) | Apache-2.0 (según cadena de modelos) | HuggingFace, vía viai957 |
-| nano-mistral-o1-dpo-arm-b | no disponible | no disponible | no disponible en la información proporcionada | no disponible | HuggingFace, vía viai957 |
-| Mistral-7B-v0.3 (base) | 7,25 B | 32.768 | No reportado en esta ficha | Apache-2.0 | HuggingFace, mistralai |
+| nano-mistral-o1-dpo-arm-a | 7,25 B | 32.768 | Precisión de preferencia held-out 0,556 (n=117); GSM8K y MATH-500 no medidos | Apache-2.0 | Hugging Face (40 descargas, 0 likes) |
+| nano-mistral-o1-sft (padre) | 7,25 B (heredado) | 32.768 (heredado) | GSM8K 0,2047 (n=1.319); MATH-500 0,084 (n=500) | Apache-2.0 (según cadena de modelos) | Hugging Face, vía viai957 |
+| nano-mistral-o1-dpo-arm-b | no disponible | no disponible | no disponible en la información proporcionada | no disponible | Hugging Face, vía viai957 |
+| Mistral-7B-v0.3 (base) | 7,25 B | 32.768 | No reportado en esta ficha | Apache-2.0 | Hugging Face, mistralai |
 
 La comparación directa con modelos de propósito general de 7 B no es significativa porque este checkpoint es un artefacto de investigación sin evaluación de tareas. La única comparación con datos es frente al padre SFT, que sí tiene métricas de GSM8K y MATH-500, pero el DPO no fue evaluado en esas tareas.
 
@@ -96,7 +96,7 @@ La comparación directa con modelos de propósito general de 7 B no es significa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-a
+- Modelo en Hugging Face: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-a
 - Modelo base SFT: https://huggingface.co/viai957/nano-mistral-o1-sft
 - Brazo experimental B: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-b
 - Modelo base original: https://huggingface.co/mistralai/Mistral-7B-v0.3

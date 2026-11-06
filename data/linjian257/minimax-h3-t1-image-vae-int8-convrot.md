@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| linjian257/minimax-h3-t1-image-vae-int8-convrot | VAE de imagen | INT8 ConvRot (parcial) | safetensors | no disponible | HuggingFace (0 descargas) |
+| linjian257/minimax-h3-t1-image-vae-int8-convrot | VAE de imagen | INT8 ConvRot (parcial) | safetensors | no disponible | Hugging Face (0 descargas) |
 | `minimax_h3_t1_image_vae_step1597.safetensors` (original) | VAE de imagen | sin cuantizar | safetensors | no disponible | referenciado, no enlazado |
 | Otros VAEs para ComfyUI | VAE de imagen | fp16 / fp32 | safetensors | varia | no disponible |
 
@@ -85,6 +85,6 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/linjian257/minimax-h3-t1-image-vae-int8-convrot
+- Hugging Face: https://huggingface.co/linjian257/minimax-h3-t1-image-vae-int8-convrot
 - ComfyUI (entorno de despliegue indicado): https://github.com/comfyanonymous/ComfyUI
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

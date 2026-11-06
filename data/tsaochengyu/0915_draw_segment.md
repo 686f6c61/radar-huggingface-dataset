@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tsaochengyu/0915_draw_segment es un repositorio alojado en HuggingFace por el usuario Tsaochengyu que, en el momento de la consulta, no incluye model card descriptiva: el README se limita a la declaracion de licencia Apache 2.0 y no aporta informacion sobre arquitectura, datos de entrenamiento ni uso previsto. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado, por lo que no es posible clasificarlo como modelo de lenguaje, de vision o de otro tipo a partir de la informacion disponible.
+Tsaochengyu/0915_draw_segment es un repositorio alojado en Hugging Face por el usuario Tsaochengyu que, en el momento de la consulta, no incluye model card descriptiva: el README se limita a la declaracion de licencia Apache 2.0 y no aporta informacion sobre arquitectura, datos de entrenamiento ni uso previsto. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado, por lo que no es posible clasificarlo como modelo de lenguaje, de vision o de otro tipo a partir de la informacion disponible.
 
 El identificador del repositorio ("draw_segment") sugiere un posible uso relacionado con segmentacion de imagenes o generacion de segmentos graficos, pero se trata de una inferencia no confirmada por el autor y que no debe tomarse como dato tecnico. Tampoco se dispone de informacion sobre numero de parametros, longitud de contexto, idiomas soportados ni formatos de pesos publicados.
 
@@ -84,5 +84,5 @@ No disponible. No se ha identificado la categoria del modelo, por lo que no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tsaochengyu/0915_draw_segment
+- Repositorio en Hugging Face: https://huggingface.co/Tsaochengyu/0915_draw_segment
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

@@ -4,9 +4,9 @@
 
 ## Resumen
 
-Se trata de un adaptador PEFT publicado en HuggingFace por el usuario WijewardhanaNT, construido sobre el modelo base meta-llama/Llama-3.1-8B. El repositorio ocupa 0,1 GB, lo que indica que no contiene los pesos completos del modelo, sino un conjunto reducido de tensores de adaptación en formato safetensors que debe cargarse junto al modelo base mediante la librería PEFT (versión declarada: 0.17.1). El nombre del repositorio sugiere un ajuste sobre el conjunto de datos TyDi QA en inglés y bengalí ("tydiqa_en_and_bengali"), con un subconjunto de 3000 ejemplos y algún barrido de porcentajes ("3000_percentage_1_40"), aunque ninguno de estos extremos está confirmado en la model card.
+Se trata de un adaptador PEFT publicado en Hugging Face por el usuario WijewardhanaNT, construido sobre el modelo base meta-llama/Llama-3.1-8B. El repositorio ocupa 0,1 GB, lo que indica que no contiene los pesos completos del modelo, sino un conjunto reducido de tensores de adaptación en formato safetensors que debe cargarse junto al modelo base mediante la librería PEFT (versión declarada: 0.17.1). El nombre del repositorio sugiere un ajuste sobre el conjunto de datos TyDi QA en inglés y bengalí ("tydiqa_en_and_bengali"), con un subconjunto de 3000 ejemplos y algún barrido de porcentajes ("3000_percentage_1_40"), aunque ninguno de estos extremos está confirmado en la model card.
 
-La relevancia de esta ficha es metodológica más que de producto: se enmarca en la línea de investigación sobre adaptación eficiente de parámetros (PEFT), en concreto la técnica VeRA (Vector-based Random Matrix Adaptation), que reduce drásticamente el número de parámetros entrenables frente a LoRA. El repositorio tiene 9 descargas y 0 "me gusta", y la model card es la plantilla por defecto de HuggingFace sin ninguna sección rellenada.
+La relevancia de esta ficha es metodológica más que de producto: se enmarca en la línea de investigación sobre adaptación eficiente de parámetros (PEFT), en concreto la técnica VeRA (Vector-based Random Matrix Adaptation), que reduce drásticamente el número de parámetros entrenables frente a LoRA. El repositorio tiene 9 descargas y 0 "me gusta", y la model card es la plantilla por defecto de Hugging Face sin ninguna sección rellenada.
 
 No se dispone de información sobre licencia, idiomas declarados, pipeline, hiperparámetros de entrenamiento ni resultados de evaluación. Cualquier uso en producción debería tratarse como experimental y validarse de forma independiente.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tydiqa_en_and_bengali_3000_percentage_1_40_VeRA | Adaptador sobre 8B; tamano de repo 0,1 GB | No disponible (base: 128.000 tokens) | No disponible | No disponible | HuggingFace, 9 descargas, 0 likes |
+| tydiqa_en_and_bengali_3000_percentage_1_40_VeRA | Adaptador sobre 8B; tamano de repo 0,1 GB | No disponible (base: 128.000 tokens) | No disponible | No disponible | Hugging Face, 9 descargas, 0 likes |
 | meta-llama/Llama-3.1-8B (modelo base) | ~8.030 millones | 128.000 tokens | No evaluado en la informacion disponible | Llama 3.1 Community License | Ampliamente disponible |
 | Adaptadores LoRA/QLoRA sobre Llama 3.1 8B afinados con TyDi QA | No disponible | Heredado del base | No disponible | No disponible | Existen multiples repositorios publicos sin evaluacion comparable |
 | Modelos encoder multilingues afinados para TyDi QA (por ejemplo, XLM-R) | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -88,7 +88,7 @@ No se dispone de cifras de rendimiento verificables para este adaptador ni de un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_40_VeRA
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_40_VeRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia presente en las etiquetas del repositorio (calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

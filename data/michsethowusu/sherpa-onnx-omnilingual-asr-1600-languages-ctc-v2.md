@@ -66,7 +66,7 @@ No se dispone de datos comparativos con otros modelos ASR multilingües como Whi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
+- Repositorio de Hugging Face: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
 - Documentación de sherpa-onnx sobre Omnilingual ASR: https://k2-fsa.github.io/sherpa/onnx/omnilingual-asr/index.html
 - Página de modelos de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/omnilingual-asr/models.html
 - Repositorio original de Meta AI (referencia indirecta): no disponible en la información proporcionada

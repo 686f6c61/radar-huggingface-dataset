@@ -109,7 +109,7 @@ No se dispone de comparativas con cabezales MTP de otros proyectos. Los unicos t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Davidmg0815/Qwen3.8-Flash-Next-MTP-256exp-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Davidmg0815/Qwen3.8-Flash-Next-MTP-256exp-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cabezal y GGUF de referencia: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Release podada y cuantizada por ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF

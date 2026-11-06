@@ -92,8 +92,8 @@ El bloque de benchmarks se interrumpe en la model card en la fila "ExploitGym", 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-RL | 1,02 T totales / 42 B activos (model card); 524,1 B segun safetensors | 1 M tokens | MIT | Pesos abiertos en HuggingFace | DeepSWE v1.1 71,9; Toolathlon 76,9; CyberGym 94,0 |
-| MiMo-V2.6-Flash-RL | No disponible | No disponible | No disponible | Pesos abiertos en HuggingFace (segun la model card) | DeepSWE v1.1 67,9; Toolathlon 73,6; CyberGym 95,1 |
+| MiMo-V2.6-Pro-RL | 1,02 T totales / 42 B activos (model card); 524,1 B segun safetensors | 1 M tokens | MIT | Pesos abiertos en Hugging Face | DeepSWE v1.1 71,9; Toolathlon 76,9; CyberGym 94,0 |
+| MiMo-V2.6-Flash-RL | No disponible | No disponible | No disponible | Pesos abiertos en Hugging Face (segun la model card) | DeepSWE v1.1 67,9; Toolathlon 73,6; CyberGym 95,1 |
 | MiMo-V2.5-Pro | No disponible | No disponible | No disponible | Referenciado en la model card | DeepSWE v1.1 19,0; Toolathlon 49,1; CyberGym 40,0 |
 | Claude Opus 5 | No disponible | No disponible | Propietaria | API de terceros | DeepSWE v1.1 74,0; Toolathlon 80,6; Terminal Bench 4.0 49,0 |
 | GPT-5.6 Sol | No disponible | No disponible | Propietaria | API de terceros | DeepSWE v1.1 73,0; Toolathlon 74,9; Terminal Bench 4.0 39,9 |

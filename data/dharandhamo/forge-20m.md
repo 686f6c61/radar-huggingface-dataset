@@ -69,10 +69,10 @@ La comparacion se limita a especificaciones, ya que no hay benchmarks publicados
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Forge-20M | 20,75 M | 512 | MIT | HuggingFace (.pt) | Entrenado desde cero por un autor individual; sin instrucciones ni filtros |
-| GPT-2 small | 124 M | 1.024 | MIT | HuggingFace (varios formatos) | Referencia de la familia arquitectonica; preentrenado a mayor escala |
-| Pythia-70M | 70 M | 2.048 | Apache 2.0 | HuggingFace | Suite de investigacion con checkpoints intermedios y mayor contexto |
-| TinyStories-33M | ~33 M | 512 | Diversas (segun variante) | HuggingFace | Entrenado sobre un corpus sintetico de cuentos; enfoque didactico similar |
+| Forge-20M | 20,75 M | 512 | MIT | Hugging Face (.pt) | Entrenado desde cero por un autor individual; sin instrucciones ni filtros |
+| GPT-2 small | 124 M | 1.024 | MIT | Hugging Face (varios formatos) | Referencia de la familia arquitectonica; preentrenado a mayor escala |
+| Pythia-70M | 70 M | 2.048 | Apache 2.0 | Hugging Face | Suite de investigacion con checkpoints intermedios y mayor contexto |
+| TinyStories-33M | ~33 M | 512 | Diversas (segun variante) | Hugging Face | Entrenado sobre un corpus sintetico de cuentos; enfoque didactico similar |
 
 No hay datos de rendimiento comparables publicados para Forge-20M; los modelos de la tabla se incluyen por similitud de tamano y categoria, no por equivalencia de resultados.
 
@@ -89,8 +89,8 @@ No hay datos de rendimiento comparables publicados para Forge-20M; los modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dharandhamo/Forge-20M
-- Perfil del autor en HuggingFace: https://huggingface.co/dharandhamo
+- Modelo en Hugging Face: https://huggingface.co/dharandhamo/Forge-20M
+- Perfil del autor en Hugging Face: https://huggingface.co/dharandhamo
 - Repositorio en GitHub: https://github.com/Dhamodharan2006/Forge-20M/tree/main
 - Dataset de entrenamiento (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Arquitectura de referencia (nanoGPT): https://github.com/karpathy/nanoGPT

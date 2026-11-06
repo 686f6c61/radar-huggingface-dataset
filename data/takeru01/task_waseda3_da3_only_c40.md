@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takeru01/task_waseda3_DA3_only_c40` es un checkpoint de 51.890.832 parámetros publicado por el usuario takeru01 en HuggingFace. Se distribuye en formato safetensors dentro de un repositorio de 0,2 GB, lo que resulta coherente con pesos almacenados en precisión completa (fp32). El repositorio no incluye model card, pipeline declarado, licencia ni lista de idiomas, por lo que no es posible determinar a partir de la información disponible qué tarea resuelve exactamente ni sobre qué datos fue entrenado.
+`takeru01/task_waseda3_DA3_only_c40` es un checkpoint de 51.890.832 parámetros publicado por el usuario takeru01 en Hugging Face. Se distribuye en formato safetensors dentro de un repositorio de 0,2 GB, lo que resulta coherente con pesos almacenados en precisión completa (fp32). El repositorio no incluye model card, pipeline declarado, licencia ni lista de idiomas, por lo que no es posible determinar a partir de la información disponible qué tarea resuelve exactamente ni sobre qué datos fue entrenado.
 
 El identificador del repositorio sugiere, sin confirmación oficial, que se trata de un checkpoint asociado a una tarea concreta ("task") vinculada a un proyecto o asignatura etiquetada como "waseda3", y que "DA3" y "c40" corresponden a variantes internas de configuración o de conjunto de datos. Esta lectura es una inferencia a partir del nombre y no está respaldada por documentación publicada.
 
@@ -12,7 +12,7 @@ Su relevancia práctica es limitada en el estado actual: con 9 descargas y 0 lik
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no se documenta en la ficha de HuggingFace) |
+| Arquitectura | no disponible (no se documenta en la ficha de Hugging Face) |
 | Parametros totales | 51.890.832 |
 | Parametros activos | no aplica (no se ha identificado una arquitectura de mezcla de expertos) |
 | Longitud de contexto | no disponible |
@@ -29,7 +29,7 @@ Su relevancia práctica es limitada en el estado actual: con 9 descargas y 0 lik
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo. La ficha de HuggingFace no declara pipeline, familia de modelos ni configuración (`config.json` no accesible en la información proporcionada). El recuento de 51.890.832 parámetros y el tamaño del repositorio (0,2 GB) son compatibles con un transformer de escala pequeña en precisión fp32, pero no permiten confirmar si se trata de un modelo codificador, decodificador o codificador-decodificador, ni si incorpora mecanismos distintos de la atención estándar.
+No se dispone de información sobre la arquitectura del modelo. La ficha de Hugging Face no declara pipeline, familia de modelos ni configuración (`config.json` no accesible en la información proporcionada). El recuento de 51.890.832 parámetros y el tamaño del repositorio (0,2 GB) son compatibles con un transformer de escala pequeña en precisión fp32, pero no permiten confirmar si se trata de un modelo codificador, decodificador o codificador-decodificador, ni si incorpora mecanismos distintos de la atención estándar.
 
 Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste por instrucciones, RLHF, DPO u otra etapa de alineamiento, y si el checkpoint es un entrenamiento desde cero o un fine-tuning de un modelo previo. No se ha publicado ninguna innovación técnica asociada (decodificación especulativa, atención lineal, mezcla de expertos, arquitecturas híbridas con SSM, etc.).
 
@@ -76,11 +76,11 @@ La comparativa siguiente es únicamente por orden de magnitud de parámetros, ya
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| task_waseda3_DA3_only_c40 | 51,89 M | no disponible | no disponible | HuggingFace (9 descargas) |
-| MobileBERT | 25 M | 512 tokens | Apache-2.0 | HuggingFace |
-| DistilBERT base | 66 M | 512 tokens | Apache-2.0 | HuggingFace |
-| BERT base | 110 M | 512 tokens | Apache-2.0 | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace |
+| task_waseda3_DA3_only_c40 | 51,89 M | no disponible | no disponible | Hugging Face (9 descargas) |
+| MobileBERT | 25 M | 512 tokens | Apache-2.0 | Hugging Face |
+| DistilBERT base | 66 M | 512 tokens | Apache-2.0 | Hugging Face |
+| BERT base | 110 M | 512 tokens | Apache-2.0 | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face |
 
 No se dispone de modelos comparables directos en la misma categoría funcional, porque la tarea del modelo evaluado no está documentada.
 
@@ -98,5 +98,5 @@ No se dispone de modelos comparables directos en la misma categoría funcional, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takeru01/task_waseda3_DA3_only_c40
+- Hugging Face: https://huggingface.co/takeru01/task_waseda3_DA3_only_c40
 - No se han encontrado enlaces relevantes al modelo en la busqueda web realizada; los resultados obtenidos tratan sobre ChatGPT, jailbreaks y verificación de cuentas, y no guardan relación con este checkpoint.

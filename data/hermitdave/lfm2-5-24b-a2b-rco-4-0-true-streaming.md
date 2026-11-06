@@ -95,7 +95,7 @@ Solo se dispone de datos verificables para este repositorio y, parcialmente, par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hermitdave/LFM2.5-24B-A2B-RCO-4.0-true-streaming
+- Repositorio en Hugging Face: https://huggingface.co/hermitdave/LFM2.5-24B-A2B-RCO-4.0-true-streaming
 - MLX (framework de Apple): https://github.com/ml-explore/mlx
 - MLX-LM (inferencia y servidor): https://github.com/ml-explore/mlx-lm
 - rco-mlx (herramienta de cuantización citada): enlace no disponible, la model card apunta a `https://github.com/???`

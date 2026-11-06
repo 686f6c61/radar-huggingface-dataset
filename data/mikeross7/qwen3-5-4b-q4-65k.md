@@ -4,7 +4,7 @@
 
 ## Resumen
 
-mikeross7/qwen3.5-4b-Q4-65K es una publicación de pesos cuantizados alojada en HuggingFace por el usuario mikeross7, que por su nombre corresponde a una versión en cuantización Q4 del modelo Qwen3.5-4B con una ventana de contexto declarada de 65K tokens. No es un modelo entrenado desde cero, sino una conversión/empaquetado de un modelo base de terceros: Qwen3.5-4B, de la serie Qwen3.5 desarrollada por el equipo Qwen (Alibaba). El repositorio no incluye pipeline declarado, idiomas soportados ni descripción técnica; su model card se limita a la etiqueta `license: mit`.
+mikeross7/qwen3.5-4b-Q4-65K es una publicación de pesos cuantizados alojada en Hugging Face por el usuario mikeross7, que por su nombre corresponde a una versión en cuantización Q4 del modelo Qwen3.5-4B con una ventana de contexto declarada de 65K tokens. No es un modelo entrenado desde cero, sino una conversión/empaquetado de un modelo base de terceros: Qwen3.5-4B, de la serie Qwen3.5 desarrollada por el equipo Qwen (Alibaba). El repositorio no incluye pipeline declarado, idiomas soportados ni descripción técnica; su model card se limita a la etiqueta `license: mit`.
 
 La relevancia de esta ficha es doble. Por un lado, Qwen3.5 es la generación anunciada por Qwen como "nativa vision-lenguaje" y orientada a agentes multimodales, con un modelo insignia Qwen3.5-397B-A17B de arquitectura MoE (397.000 millones de parámetros totales, 17.000 millones activos). Por otro, la variante de 4B es la que interesa a quien necesita ejecución local: según guías de terceros, el Qwen3.5-4B en Q4 ocupa en torno a 2,5-3 GB y puede correr en GPU de gama media o incluso en CPU.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Formato / disponibilidad | Licencia | Notas |
 |---|---|---|---|---|---|
 | mikeross7/qwen3.5-4b-Q4-65K | ~4B (nominal) | 65K (segun nombre del repo) | No declarado; probablemente GGUF | MIT segun el repositorio | 0 descargas y 0 likes; model card vacia; trazabilidad baja |
-| Qwen/Qwen3.5-4B | 4B (nominal) | No disponible en la informacion recogida | Repositorio oficial en HuggingFace | Apache 2.0 segun guia de terceros | Fuente de referencia del modelo base |
+| Qwen/Qwen3.5-4B | 4B (nominal) | No disponible en la informacion recogida | Repositorio oficial en Hugging Face | Apache 2.0 segun guia de terceros | Fuente de referencia del modelo base |
 | unsloth/Qwen3.5-4B-GGUF | 4B (nominal) | No disponible en la informacion recogida | GGUF | La del modelo base | Conversion mantenida por Unsloth, con proceso reproducible y documentado |
 | qwen3.5:4b (Ollama) | 4B (nominal) | No disponible en la informacion recogida | Paquete de Ollama | La del modelo base | Distribucion integrada en el catalogo de Ollama, con etiquetas de runner |
 | Qwen3.5-397B-A17B | 397B totales / 17B activos (MoE) | No disponible en la informacion recogida | Pesos abiertos anunciados por Qwen | No disponible en la informacion recogida | Insignia de la serie; no es comparable en requisitos de hardware con la variante 4B |

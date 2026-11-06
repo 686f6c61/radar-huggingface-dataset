@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---:|---|---|---|
-| `pi05-plug_adaptive_3` (este checkpoint) | 4.143.404.816 | No disponible | Apache 2.0 | HuggingFace, LeRobot |
+| `pi05-plug_adaptive_3` (este checkpoint) | 4.143.404.816 | No disponible | Apache 2.0 | Hugging Face, LeRobot |
 | π₀.₅ base (Physical Intelligence) | No disponible | No disponible | No disponible | Blog de Physical Intelligence y repositorio OpenPI; detalles no incluidos en la información |
 | π₀ (predecesor) | No disponible | No disponible | No disponible | No disponible en la información |
 | Políticas VLA alternativas, como OpenVLA | No disponible | No disponible | No disponible | No disponible en la información |
@@ -99,7 +99,7 @@ La información disponible no permite una comparación cuantitativa de rendimien
 
 ## Enlaces
 
-- [HuggingFace: lucazanett/pi05-plug_adaptive_3](https://huggingface.co/lucazanett/pi05-plug_adaptive_3)
+- [Hugging Face: lucazanett/pi05-plug_adaptive_3](https://huggingface.co/lucazanett/pi05-plug_adaptive_3)
 - [Dataset: lucazanett/plug_adaptive_3](https://huggingface.co/datasets/lucazanett/plug_adaptive_3)
 - [Blog de Physical Intelligence sobre π₀.₅](https://www.physicalintelligence.company/blog/pi05)
 - [Repositorio LeRobot en GitHub](https://github.com/huggingface/lerobot)

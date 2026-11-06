@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Wathompson/mixer-experiment` es un repositorio experimental de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura tipo Mixer orientada a tareas de clasificación. El autor lo publica explícitamente como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El repositorio incluye el script `predict.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, según la propia model card, es únicamente un punto de inicialización válido y no un checkpoint entrenado ni evaluado.
+`Wathompson/mixer-experiment` es un repositorio experimental de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura tipo Mixer orientada a tareas de clasificación. El autor lo publica explícitamente como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El repositorio incluye el script `predict.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, según la propia model card, es únicamente un punto de inicialización válido y no un checkpoint entrenado ni evaluado.
 
 El dato más relevante es la discrepancia entre la etiqueta de escala declarada y el tamaño real: la model card describe la configuración como *giant*, pero el recuento de parámetros de los pesos publicados en `safetensors` es de 24.832 parámetros totales (aproximadamente 0,025 millones). Es decir, el checkpoint publicado es varios órdenes de magnitud más pequeño que cualquier modelo de clasificación habitual, lo que refuerza su naturaleza de esqueleto de código y no de modelo funcional. La arquitectura declarada combina atención lineal, fusión de bajo rango, activación ReLU y normalización RMSNorm.
 
@@ -24,7 +24,7 @@ El interés de esta ficha es, por tanto, acotado: sirve como referencia para qui
 | Activacion | ReLU |
 | Fusion | low rank |
 | Receta de entrenamiento por defecto | RMSprop con *constant warmup* (valores de partida del script, no evidencia de un entrenamiento completado) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - Pruebas de integración de `safetensors`: el checkpoint de inicialización sirve para validar el flujo de serialización, carga y mapeo de pesos en herramientas internas, sin necesidad de descargar gigabytes de pesos.
 - Plantilla para experimentos controlados: la propia model card recomienda evaluar con un *split* etiquetado específico de la tarea, al menos tres semillas y una línea base de capacidad comparable; el repositorio sirve como punto de partida para ese diseño experimental.
 - Docencia y formación: útil para explicar en un aula o taller la diferencia entre un repositorio de código de arquitectura y un modelo entrenado, así como el papel de los checkpoints de inicialización.
-- Validación de adaptadores de carga: dado que las APIs automáticas de HuggingFace no cargan implementaciones *custom* sin adaptador, este repositorio es un caso de prueba útil para desarrollar y verificar ese adaptador.
+- Validación de adaptadores de carga: dado que las APIs automáticas de Hugging Face no cargan implementaciones *custom* sin adaptador, este repositorio es un caso de prueba útil para desarrollar y verificar ese adaptador.
 - Comparación de líneas base en investigación metodológica: sirve como ejemplo de configuración "sin entrenar" frente a la que contrastar el efecto real del entrenamiento y de la selección de hiperparámetros.
 
 ## Benchmarks y rendimiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wathompson/mixer-experiment | 24.832 (checkpoint de inicialización) | no disponible | Sin benchmarks publicados | MIT | Repositorio HuggingFace con 0 descargas y 0 likes |
+| Wathompson/mixer-experiment | 24.832 (checkpoint de inicialización) | no disponible | Sin benchmarks publicados | MIT | Repositorio Hugging Face con 0 descargas y 0 likes |
 | MLP-Mixer (referencia conceptual) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | gMLP (referencia conceptual) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | FNet (referencia conceptual) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -88,9 +88,9 @@ La comparación cuantitativa no es posible con los datos disponibles. Conceptual
 - No se especifica longitud de contexto, de modo que no puede planificarse ningún caso de uso que dependa de ventanas largas.
 - Licencia MIT: permite uso comercial y modificación, pero la propia model card recuerda revisar por separado los términos de los datos de origen si se combina con datasets externos.
 - Al ser una implementación *custom*, no funciona con APIs de carga automática sin un adaptador explícito; esto añade trabajo de integración antes de cualquier uso.
-- No hay pipeline de HuggingFace declarado, ni métricas, ni logs de entrenamiento publicados.
+- No hay pipeline de Hugging Face declarado, ni métricas, ni logs de entrenamiento publicados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wathompson/mixer-experiment
+- Repositorio en Hugging Face: https://huggingface.co/Wathompson/mixer-experiment
 - No se han encontrado enlaces relevantes al modelo (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo ni con arquitecturas Mixer.

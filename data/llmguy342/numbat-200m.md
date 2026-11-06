@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`numbat-200M` es un checkpoint publicado en HuggingFace bajo el identificador `llmguy342/numbat-200M`. Segun la model card del autor, se trata de una copia de evaluacion de un checkpoint intermedio de preentrenamiento de un supuesto modelo de Anthropic con nombre en clave `numbat`, asociado a una fila de entrenamiento de clase Mythos. El autor afirma que el modelo tiene aproximadamente 14 billones de parametros, 114 capas y una arquitectura hibrida que combina Gated DeltaNet (GDN) con Multi-head Latent Attention (MLA), capas de mezcla de expertos (MoE) y Multi-Token Prediction (MTP).
+`numbat-200M` es un checkpoint publicado en Hugging Face bajo el identificador `llmguy342/numbat-200M`. Segun la model card del autor, se trata de una copia de evaluacion de un checkpoint intermedio de preentrenamiento de un supuesto modelo de Anthropic con nombre en clave `numbat`, asociado a una fila de entrenamiento de clase Mythos. El autor afirma que el modelo tiene aproximadamente 14 billones de parametros, 114 capas y una arquitectura hibrida que combina Gated DeltaNet (GDN) con Multi-head Latent Attention (MLA), capas de mezcla de expertos (MoE) y Multi-Token Prediction (MTP).
 
-La discrepancia entre el identificador del repositorio (`numbat-200M`) y el contenido descrito en la model card (~14T parametros) es notable y no se resuelve en la informacion disponible. El repositorio ocupa 0,9 GB, muy lejos de los ~7,72 TB que la model card atribuye al conjunto completo de 772 shards. Por tanto, lo publicado en HuggingFace no puede corresponder al checkpoint completo descrito; como maximo seria un fragmento parcial o un artefacto de otro tipo.
+La discrepancia entre el identificador del repositorio (`numbat-200M`) y el contenido descrito en la model card (~14T parametros) es notable y no se resuelve en la informacion disponible. El repositorio ocupa 0,9 GB, muy lejos de los ~7,72 TB que la model card atribuye al conjunto completo de 772 shards. Por tanto, lo publicado en Hugging Face no puede corresponder al checkpoint completo descrito; como maximo seria un fragmento parcial o un artefacto de otro tipo.
 
 La relevancia de esta ficha es fundamentalmente critica: el modelo no dispone de licencia declarada, no tiene pipeline asignado, no registra descargas ni likes, y su procedencia es cuando menos dudosa. La model card describe un supuesto checkpoint filtrado de un laboratorio, con afirmaciones no verificables de forma independiente. Cualquier uso en produccion deberia considerarse no recomendado hasta que exista clarificacion legal y tecnica.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos publicos comparables con la arquitectura y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmguy342/numbat-200M
+- Repositorio en Hugging Face: https://huggingface.co/llmguy342/numbat-200M
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

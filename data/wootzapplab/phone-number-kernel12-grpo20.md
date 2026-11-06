@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparable para modelos de la misma catego
 |---|---|---|---|---|---|---|
 | `phone-number-kernel12-GRPO20` | Adaptador LoRA (r=16, alpha=32) sobre GLM-4.7-Flash | No disponible | No disponible (evaluado con 32.768 tokens de respuesta) | Pass@1 11,25/26 en Fixed26 (regresion asistida) | No disponible | 0 descargas, repositorio publico |
 | "D&D Character GRPO20 iter-19" (predecesor) | Adaptador LoRA del mismo linaje, usado como *warm start* | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | No disponible |
-| `zai-org/GLM-4.7-Flash` (modelo base) | Modelo completo | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | Publico en HuggingFace |
+| `zai-org/GLM-4.7-Flash` (modelo base) | Modelo completo | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento comparable para modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WootzappLab/phone-number-kernel12-GRPO20
+- Modelo en Hugging Face: https://huggingface.co/WootzappLab/phone-number-kernel12-GRPO20
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Paquete de reproduccion y evidencias (configuraciones de lanzamiento, recibos de entrenamiento, manifiesto del checkpoint seleccionado, recibos de evaluacion, recibos de *shard* y codigo de estadistica): https://github.com/tokenbender/browser-is-all-you-need-upstream/tree/client/26-aug-release/results/phone-number-kernel12-GRPO20
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a paginas de Microsoft 365 y Word y no guardan relacion con el artefacto, por lo que se omiten.

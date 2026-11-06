@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo de aprendizaje automático entrenado, sino un cuaderno de notas de investigación titulado «Notes on Vision Language Pretraining», publicado por el usuario Manuelaskll en HuggingFace. Su contenido declarado es exploratorio: recoge el alcance de una pregunta de investigación sobre preentrenamiento visión-lenguaje, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad exigidos antes de publicar cualquier resultado. El propio README advierte de forma explícita que no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado.
+Este repositorio no es un modelo de aprendizaje automático entrenado, sino un cuaderno de notas de investigación titulado «Notes on Vision Language Pretraining», publicado por el usuario Manuelaskll en Hugging Face. Su contenido declarado es exploratorio: recoge el alcance de una pregunta de investigación sobre preentrenamiento visión-lenguaje, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad exigidos antes de publicar cualquier resultado. El propio README advierte de forma explícita que no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado.
 
 El repositorio está etiquetado con `research-notes`, `vision-language-pretraining`, `transformer`, `safetensors` y `region:us`, y su licencia es CC-BY-4.0. El tamaño del repositorio es de 0,0 GB y contiene dos ficheros según la model card: `analysis.md` (artefacto principal) y `README.md` (documentación). Los metadatos de safetensors reportan 16.576 parámetros, una cifra que corresponde a un tensor de aproximadamente 66 KB en fp32 y que, dado el tamaño declarado del repositorio, no es consistente con un modelo funcional.
 
@@ -86,6 +86,6 @@ No disponible. Este repositorio no pertenece a la categoría de modelos desplega
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Manuelaskll/vision-language-pretraining-review
+- Repositorio en Hugging Face: https://huggingface.co/Manuelaskll/vision-language-pretraining-review
 - Ficheros citados en la model card: `analysis.md` y `README.md` (accesibles desde el repositorio anterior)
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web proporcionada. El único resultado devuelto por la búsqueda no guarda relación con este repositorio.

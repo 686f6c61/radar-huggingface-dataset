@@ -101,7 +101,7 @@ La comparativa se limita a parametros, contexto, licencia y formato, porque no h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anon563r/tf-storyrunner-nemo
+- Modelo en Hugging Face: https://huggingface.co/anon563r/tf-storyrunner-nemo
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Unsloth (framework de entrenamiento usado): https://github.com/unslothai/unsloth
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada

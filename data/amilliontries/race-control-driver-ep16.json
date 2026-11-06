@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "amilliontries/race-control-driver-ep16",
+  "slug": "amilliontries-race-control-driver-ep16",
+  "author": "amilliontries",
+  "url": "https://huggingface.co/amilliontries/race-control-driver-ep16",
+  "created_at": "2026-11-06T08:21:24.000Z",
+  "updated_at": "2026-11-06T08:21:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "safetensors",
+    "reinforcement-learning",
+    "ppo",
+    "racing",
+    "continuous-control",
+    "multi-agent",
+    "imitation-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100359,
+  "parameters_human": "100359",
+  "storage_bytes": 402124,
+  "storage_human": "402124 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amilliontries (A Million Tries) - Hugging Face",
+      "url": "https://huggingface.co/amilliontries",
+      "snippet": "Beat My AI 🏎 Race one lap against an AI that taught itself to drive amilliontries about 3 hours ago models3"
+    },
+    {
+      "title": "amilliontries/race-car-v5 · Hugging Face",
+      "url": "https://huggingface.co/amilliontries/race-car-v5",
+      "snippet": "Race car driver v5 (the episode 5 AI) The improved driver from episode 5 of A Million Tries (\"me vs the AI\"): practice starts that are off-centre, angled and already moving, and lasers twice as long (120 m)."
+    }
+  ]
+}

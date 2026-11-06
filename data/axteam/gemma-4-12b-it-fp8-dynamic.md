@@ -119,7 +119,7 @@ No se dispone de datos de benchmarks de otros modelos de 12B de la competencia e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-12B-it-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-12B-it-FP8-dynamic
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

@@ -101,7 +101,7 @@ Los datos del modelo base y de las alternativas de terceros proceden de su docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skhizarkashif/prism-modernbert-fe-q8
+- Modelo en Hugging Face: https://huggingface.co/skhizarkashif/prism-modernbert-fe-q8
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Librería de inferencia: https://github.com/huggingface/transformers.js
 - Documentación de cuantización y `dtype` en transformers.js: https://huggingface.co/docs/transformers.js

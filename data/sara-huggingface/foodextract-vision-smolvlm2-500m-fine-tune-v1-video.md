@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FoodExtract-Vision-SmolVLM2-500M-fine-tune-v1-VIDEO es un ajuste fino de tipo supervisado (SFT) del modelo multimodal HuggingFaceTB/SmolVLM2-500M-Video-Instruct, publicado por el usuario sara-huggingface. Se trata de un modelo de visión-lenguaje (VLM) pequeno, con 507.482.304 parametros totales segun los pesos en safetensors, orientado segun su nombre a la extraccion de informacion alimentaria a partir de imagenes y video. El pipeline declarado en HuggingFace es image-text-to-text y la libreria de referencia es transformers.
+FoodExtract-Vision-SmolVLM2-500M-fine-tune-v1-VIDEO es un ajuste fino de tipo supervisado (SFT) del modelo multimodal HuggingFaceTB/SmolVLM2-500M-Video-Instruct, publicado por el usuario sara-huggingface. Se trata de un modelo de visión-lenguaje (VLM) pequeno, con 507.482.304 parametros totales segun los pesos en safetensors, orientado segun su nombre a la extraccion de informacion alimentaria a partir de imagenes y video. El pipeline declarado en Hugging Face es image-text-to-text y la libreria de referencia es transformers.
 
-El problema que pretende resolver es el de la extraccion estructurada de datos de alimentos (por ejemplo, identificar platos, ingredientes o raciones) en entornos con recursos limitados, donde un VLM de 500 M de parametros puede ejecutarse en GPU de consumo o incluso en CPU. El modelo fue entrenado con TRL 0.24.0 sobre Transformers 4.57.6, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.22.2, lo que situa su creacion en el ecosistema actual de HuggingFace.
+El problema que pretende resolver es el de la extraccion estructurada de datos de alimentos (por ejemplo, identificar platos, ingredientes o raciones) en entornos con recursos limitados, donde un VLM de 500 M de parametros puede ejecutarse en GPU de consumo o incluso en CPU. El modelo fue entrenado con TRL 0.24.0 sobre Transformers 4.57.6, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.22.2, lo que situa su creacion en el ecosistema actual de Hugging Face.
 
 La relevancia de esta ficha es limitada pero informativa: se trata de un checkpoint con 0 descargas y 0 likes en el momento de la consulta, sin model card sustantiva (la seccion de procedimiento de entrenamiento esta vacia y el fragmento de codigo de inicio rapido es una plantilla generica de TRL que ni siquiera especifica el identificador del modelo). No se documentan dataset, hiperparametros, licencia ni idiomas, por lo que debe tratarse como un experimento reproducible solo parcialmente.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | FoodExtract-Vision-SmolVLM2-500M-fine-tune-v1-VIDEO (este) | 507.482.304 | imagen/video-texto | no disponible | no disponible | 0 descargas, 0 likes |
-| HuggingFaceTB/SmolVLM2-500M-Video-Instruct (modelo base) | ~500 M | imagen/video-texto | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| SmolVLM2-256M-Video-Instruct | ~256 M | imagen/video-texto | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| SmolVLM2-2.2B-Video-Instruct | ~2,2 B | imagen/video-texto | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| HuggingFaceTB/SmolVLM2-500M-Video-Instruct (modelo base) | ~500 M | imagen/video-texto | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| SmolVLM2-256M-Video-Instruct | ~256 M | imagen/video-texto | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| SmolVLM2-2.2B-Video-Instruct | ~2,2 B | imagen/video-texto | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada, por lo que la comparacion se limita a tamano, modalidad y disponibilidad. Las cifras de los modelos de la familia distintos del checkpoint analizado son aproximadas y proceden de la nomenclatura oficial de la familia.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sara-huggingface/FoodExtract-Vision-SmolVLM2-500M-fine-tune-v1-VIDEO
+- Modelo en Hugging Face: https://huggingface.co/sara-huggingface/FoodExtract-Vision-SmolVLM2-500M-fine-tune-v1-VIDEO
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo, su autor ni su dataset. Los resultados obtenidos corresponden a entidades no relacionadas (ZARA, la asociacion SARA, Microsoft Support and Recovery Assistant y la actriz Sara Giraudeau) y se descartan por no ser relevantes. No se dispone de paper, blog, repositorio adicional ni demo asociados al modelo.

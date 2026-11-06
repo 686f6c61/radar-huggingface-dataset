@@ -23,7 +23,7 @@ La relevancia de este adaptador radica en su enfoque metodologico: el uso de má
 
 El adaptador se basa en la arquitectura transformer del modelo Qwen/Qwen3.5-4B, un modelo de lenguaje de 4 000 millones de parametros. El entrenamiento utiliza LoRA con rango r=16 y alpha=32, aplicado sobre las capas atencionales y de proyeccion del modelo base. El dataset de entrenamiento consta de 6 083 filas de datos multitrack GLM52, divididos en dos particiones: `sft2_acquire` y `sft3_final_balanced`. El metodo PS4MAS aplica una máscara de pérdida estricta sobre los mensajes, de modo que la funcion de pérdida solo se calcula sobre los turnos del asistente, ignorando los turnos del usuario. Esto evita que el modelo aprenda a predecir el texto del usuario y se centra exclusivamente en generar respuestas adecuadas.
 
-El entrenamiento se realizo durante 3 epocas con una tasa de aprendizaje de 1e-4 y una longitud de secuencia de 4 096 tokens. No se menciona el uso de RLHF, DPO u otras tecnicas de alineacion posteriores al SFT. El adaptador se distribuye en formato PEFT, lo que permite cargarlo directamente sobre el modelo base mediante la libreria `peft` de HuggingFace.
+El entrenamiento se realizo durante 3 epocas con una tasa de aprendizaje de 1e-4 y una longitud de secuencia de 4 096 tokens. No se menciona el uso de RLHF, DPO u otras tecnicas de alineacion posteriores al SFT. El adaptador se distribuye en formato PEFT, lo que permite cargarlo directamente sobre el modelo base mediante la libreria `peft` de Hugging Face.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: al ser un adaptador LoRA sobre un modelo de 4 000 millones de parametros, se requiere la VRAM del modelo base mas el adaptador. En FP16, el modelo base ocupa aproximadamente 8 GB, por lo que se recomienda al menos 10 GB de VRAM para inferencia con el adaptador cargado.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A100, H100 o cualquier GPU con al menos 10 GB de VRAM. En cuantizacion INT8 o INT4, el modelo base puede caber en GPUs con 6-8 GB de VRAM, como la RTX 3060 o RTX 4060.
 - Consumer GPU: si, es viable en GPUs de consumo como la RTX 3090 o RTX 4090, especialmente con cuantizacion.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI o mediante la API de PEFT con Transformers. El adaptador puede fusionarse con el modelo base para su despliegue como un unico modelo.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI o mediante la API de PEFT con Transformers. El adaptador puede fusionarse con el modelo base para su despliegue como un unico modelo.
 - Latencia y throughput: no se han publicado estimaciones. En una RTX 4090, un modelo de 4B en FP16 suele generar entre 30 y 60 tokens por segundo, dependiendo de la longitud de la secuencia y el batch size.
 
 ## Comparativa con modelos similares
@@ -61,10 +61,10 @@ No se dispone de informacion sobre adaptadores LoRA comparables que utilicen el 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-4B | 4B | 4096+ | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3B | 128k | Llama 3.2 Community License | HuggingFace |
-| Gemma 2 2B | 2B | 8k | Gemma License | HuggingFace |
-| Phi-3.5-mini | 3.8B | 128k | MIT | HuggingFace |
+| Qwen3.5-4B | 4B | 4096+ | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3B | 128k | Llama 3.2 Community License | Hugging Face |
+| Gemma 2 2B | 2B | 8k | Gemma License | Hugging Face |
+| Phi-3.5-mini | 3.8B | 128k | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en tareas de dialogo en chino.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en tareas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yinita/ps4mas-sft-mt-glm52-4b
+- Modelo en Hugging Face: https://huggingface.co/yinita/ps4mas-sft-mt-glm52-4b
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Libreria PEFT: https://github.com/huggingface/peft

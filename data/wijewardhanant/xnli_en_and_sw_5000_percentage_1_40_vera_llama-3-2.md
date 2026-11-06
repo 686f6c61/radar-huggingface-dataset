@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_llama-3.2 es un adaptador de ajuste eficiente en parametros (PEFT) publicado en HuggingFace, construido sobre el modelo base meta-llama/Llama-3.2-3B. No es un modelo autonomo: se distribuye como pesos de adaptador en formato safetensors que deben cargarse junto al modelo base mediante la libreria PEFT (version declarada 0.17.1). El repositorio ocupa aproximadamente 0,2 GB, coherente con un adaptador de baja dimension y no con una copia completa del modelo.
+WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_llama-3.2 es un adaptador de ajuste eficiente en parametros (PEFT) publicado en Hugging Face, construido sobre el modelo base meta-llama/Llama-3.2-3B. No es un modelo autonomo: se distribuye como pesos de adaptador en formato safetensors que deben cargarse junto al modelo base mediante la libreria PEFT (version declarada 0.17.1). El repositorio ocupa aproximadamente 0,2 GB, coherente con un adaptador de baja dimension y no con una copia completa del modelo.
 
 El nombre del artefacto sugiere un experimento sobre la tarea XNLI (inferencia de lenguaje natural entre frases) en ingles y suajili, con un subconjunto de 5000 ejemplos y algun tipo de variacion porcentual entre el 1 y el 40 (probablemente porcentaje de datos de entrenamiento utilizados). El sufijo "VeRA" apunta al metodo Vector-based Random Matrix Adaptation, una tecnica PEFT que congela matrices aleatorias compartidas entre capas y entrena unicamente vectores de escalado. Ninguna de estas interpretaciones esta confirmada en la model card, que se publico sin rellenar.
 
@@ -67,10 +67,10 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Llama-3.2-3B) | 3,2 mil millones en el base + adaptador de 0,2 GB | 128.000 tokens en el base | PEFT tipo VeRA sobre tarea XNLI en-en/sw | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-3B | 3,2 mil millones | 128.000 tokens | Modelo base preentrenado e instruido | Llama 3.2 Community License | HuggingFace, ampliamente distribuido |
-| Llama-3.2-3B con LoRA estandar | 3,2 mil millones + adaptador | 128.000 tokens | PEFT con matrices de bajo rango | Segun el autor del adaptador | Comun en HuggingFace |
-| XLM-RoBERTa base ajustado en XNLI | 278 millones | 512 tokens | Encoder multilingue con ajuste supervisado | MIT | HuggingFace |
+| Este adaptador (sobre Llama-3.2-3B) | 3,2 mil millones en el base + adaptador de 0,2 GB | 128.000 tokens en el base | PEFT tipo VeRA sobre tarea XNLI en-en/sw | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-3B | 3,2 mil millones | 128.000 tokens | Modelo base preentrenado e instruido | Llama 3.2 Community License | Hugging Face, ampliamente distribuido |
+| Llama-3.2-3B con LoRA estandar | 3,2 mil millones + adaptador | 128.000 tokens | PEFT con matrices de bajo rango | Segun el autor del adaptador | Comun en Hugging Face |
+| XLM-RoBERTa base ajustado en XNLI | 278 millones | 512 tokens | Encoder multilingue con ajuste supervisado | MIT | Hugging Face |
 
 No se dispone de datos de XNLI ni de otras tareas para ninguno de los modelos comparados en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento.
 
@@ -88,7 +88,7 @@ No se dispone de datos de XNLI ni de otras tareas para ninguno de los modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_llama-3.2
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Libreria PEFT: https://github.com/huggingface/peft
 - XNLI (paper del corpus, referencia probable por el identificador, no citada en la model card): https://arxiv.org/abs/1809.05053

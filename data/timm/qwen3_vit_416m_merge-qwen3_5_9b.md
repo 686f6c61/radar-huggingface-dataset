@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| timm/qwen3_vit_416m_merge.qwen3_5_9b | 455,1 M | Imagen 768×768, entradas divisibles por 16 | Apache 2.0 | HuggingFace, vía timm |
-| Qwen/Qwen3.5-9B (modelo original) | 9B (aproximado por nombre) | Multimodal completo, texto e imagen | Apache 2.0 | HuggingFace |
+| timm/qwen3_vit_416m_merge.qwen3_5_9b | 455,1 M | Imagen 768×768, entradas divisibles por 16 | Apache 2.0 | Hugging Face, vía timm |
+| Qwen/Qwen3.5-9B (modelo original) | 9B (aproximado por nombre) | Multimodal completo, texto e imagen | Apache 2.0 | Hugging Face |
 | CLIP ViT-L/14 | no disponible en la información proporcionada | Imagen 224×224 en configuración estándar | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | DINOv2 ViT-L/14 | no disponible en la información proporcionada | Imagen 224×224 o mayor, autoconsistente | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | SigLIP SO400M | no disponible en la información proporcionada | Imagen 384×384 en configuración estándar | no disponible en la información proporcionada | no disponible en la información proporcionada |
@@ -90,7 +90,7 @@ La búsqueda web realizada no devolvió información técnica relevante sobre es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_5_9b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_5_9b
 - Modelo base (Qwen3.5-9B): https://huggingface.co/Qwen/Qwen3.5-9B
 - Revisión concreta del modelo base usada como fuente: https://huggingface.co/Qwen/Qwen3.5-9B/tree/c202236235762e1c871ad0ccb60c8ee5ba337b9a
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/LICENSE

@@ -96,7 +96,7 @@ Frente a otros modelos médicos pequeños (Meditron, BioMistral, OpenBioLLM o va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akaclinicalco/edgecdss-v3-research
+- Modelo en Hugging Face: https://huggingface.co/akaclinicalco/edgecdss-v3-research
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Base cuantizada usada para el ajuste: https://huggingface.co/mlx-community/Qwen2.5-3B-Instruct-4bit
 - Licencia Qwen RESEARCH LICENSE AGREEMENT: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

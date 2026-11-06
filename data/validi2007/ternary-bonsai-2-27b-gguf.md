@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary Bonsai 2 27B es un modelo de lenguaje derivado de Qwen3.8-27B (27B, atención híbrida) cuyos pesos se han cuantizado a valores ternarios {−1, 0, +1} en todas las capas: embeddings, proyecciones de atención, proyecciones MLP y LM head. El resultado se distribuye en formato GGUF para llama.cpp con dos empaquetados propios, PTQ1_0 (5,95 GB, 1,75 bits por peso) y PQ2_0 (7,21 GB, 2,13 bits por peso), frente a los ~54 GB que ocuparía el modelo en FP16. El desarrollo corresponde a Prism ML (el repositorio de HuggingFace analizado es una resubida del usuario validi2007 con 0 descargas y 0 me gusta), y la arquitectura del modelo base no se modifica: atención híbrida con aproximadamente un 75 % de atención lineal, MLP SwiGLU, RoPE y RMSNorm, con 262K tokens de contexto.
+Ternary Bonsai 2 27B es un modelo de lenguaje derivado de Qwen3.8-27B (27B, atención híbrida) cuyos pesos se han cuantizado a valores ternarios {−1, 0, +1} en todas las capas: embeddings, proyecciones de atención, proyecciones MLP y LM head. El resultado se distribuye en formato GGUF para llama.cpp con dos empaquetados propios, PTQ1_0 (5,95 GB, 1,75 bits por peso) y PQ2_0 (7,21 GB, 2,13 bits por peso), frente a los ~54 GB que ocuparía el modelo en FP16. El desarrollo corresponde a Prism ML (el repositorio de Hugging Face analizado es una resubida del usuario validi2007 con 0 descargas y 0 me gusta), y la arquitectura del modelo base no se modifica: atención híbrida con aproximadamente un 75 % de atención lineal, MLP SwiGLU, RoPE y RMSNorm, con 262K tokens de contexto.
 
 La propuesta es llevar razonamiento completo de gama 27B a hardware de consumo: la model card declara una retención del 98,2 % de la inteligencia del modelo FP16, con una media de 84,78 puntos en 14 benchmarks en modo thinking, frente a 72,59 de una cuantización convencional IQ2_XXS (con menor huella) y a menos de 0,4 puntos de un UD-Q4_K_XL que ocupa el triple. Matemáticas se mantiene a medio punto del modelo completo (96,57), código al nivel del baseline (89,42) y tool calling agéntico en 74,92. Es relevante ahora porque demuestra que el régimen sub-4-bit puede conservar razonamiento, código y comportamiento agéntico sin recurrir a "escapatorias" de alta precisión dentro del modelo.
 
@@ -79,7 +79,7 @@ Datos adicionales de rendimiento declarados: retención del 98,2 % de la intelig
 
 | Modelo | Parametros | Contexto | Tamano de pesos | Rendimiento (media de 14 benchmarks thinking) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ternary Bonsai 2 27B (PTQ1_0) | 26,9B-27,36B | 262K | 5,95 GB (1,75 bits/peso) | 84,78 | Apache 2.0 | GGUF en HuggingFace + kernels en forks de llama.cpp y MLX |
+| Ternary Bonsai 2 27B (PTQ1_0) | 26,9B-27,36B | 262K | 5,95 GB (1,75 bits/peso) | 84,78 | Apache 2.0 | GGUF en Hugging Face + kernels en forks de llama.cpp y MLX |
 | Ternary Bonsai 2 27B (PQ2_0) | 26,9B-27,36B | 262K | 7,21 GB (2,13 bits/peso) | No disponible por separado | Apache 2.0 | Igual que el anterior |
 | IQ2_XXS del mismo base | No disponible | No disponible | Menor que PTQ1_0 (huella inferior a dos tercios) | 72,59 | No disponible | Cuantización convencional de llama.cpp |
 | UD-Q4_K_XL del mismo base | No disponible | No disponible | Aproximadamente el triple (unos 18 GB) | ~85,2 | No disponible | Cuantización convencional de llama.cpp |
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos de la misma categoría fuera de la famil
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/validi2007/Ternary-Bonsai-2-27B-gguf
+- Hugging Face (repositorio analizado): https://huggingface.co/validi2007/Ternary-Bonsai-2-27B-gguf
 - Acompañante MLX 2-bit: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Sitio web de Prism ML: https://prismml.com
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf

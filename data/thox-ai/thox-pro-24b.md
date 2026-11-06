@@ -93,11 +93,11 @@ La comparación relevante es contra el propio modelo base: thox-pro-24b no intro
 - Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de sesgo ni de robustez para esta distribución.
 - Idioma natural principal: inglés. El soporte multilingüe natural no está confirmado; solo se listan lenguajes de programación.
 - Sin benchmarks, latencias ni métricas de throughput verificadas por el autor para esta release; la evaluación independiente está pendiente.
-- El repositorio de HuggingFace contiene únicamente el fichero `.gitattributes` según la tabla de ficheros de la card; la build ejecutable se sirve desde Ollama, no desde este repo.
+- El repositorio de Hugging Face contiene únicamente el fichero `.gitattributes` según la tabla de ficheros de la card; la build ejecutable se sirve desde Ollama, no desde este repo.
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/Thox-ai/thox-pro-24b
+- Model card en Hugging Face: https://huggingface.co/Thox-ai/thox-pro-24b
 - Build ejecutable en Ollama: https://ollama.com/Thox-ai/thox-pro-24b
 - Modelo base: https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512
 - Sitio del proyecto Thox / campaña: https://thox.ai

@@ -4,7 +4,7 @@
 
 Ornith-1.5-9B-SFT-Fable5 es un ajuste fino supervisado (SFT) publicado por el usuario ermiaazarkhalili sobre el modelo base ornith-ai/Ornith-1.5-9B. Se trata de un transformer denso de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones), distribuido en formato safetensors con un peso de repositorio de 19,3 GB, lo que corresponde a pesos en precisión de 16 bits. La licencia declarada es Apache 2.0 y el único idioma soportado según la model card es el inglés.
 
-El pipeline declarado en HuggingFace es image-text-to-text, lo que indica que el modelo acepta entradas multimodales de imagen y texto, y entre sus etiquetas figura qwen3_5, lo que apunta a que el modelo base pertenece a la familia arquitectónica Qwen3.5. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según la propia model card, que se limita a indicar que el ajuste fue "2x faster" sin detallar dataset, hiperparámetros ni número de pasos.
+El pipeline declarado en Hugging Face es image-text-to-text, lo que indica que el modelo acepta entradas multimodales de imagen y texto, y entre sus etiquetas figura qwen3_5, lo que apunta a que el modelo base pertenece a la familia arquitectónica Qwen3.5. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según la propia model card, que se limita a indicar que el ajuste fue "2x faster" sin detallar dataset, hiperparámetros ni número de pasos.
 
 La relevancia práctica de este checkpoint es limitada en el momento de la consulta: cero descargas, cero interacciones y una model card mínima que no aporta información sobre composición del dataset de ajuste, longitud de contexto, métodos de alineación posteriores al SFT ni resultados de evaluación. Es un artefacto de investigación cuya reproducibilidad depende de la documentación del modelo base, no de la del propio ajuste.
 
@@ -28,12 +28,12 @@ La relevancia práctica de este checkpoint es limitada en el momento de la consu
 
 La model card no describe la arquitectura interna del modelo. Los metadatos disponibles permiten inferir que se trata de un transformer denso de tipo decoder-only perteneciente a la familia Qwen3.5 (etiqueta qwen3_5), con 9.653.104.368 parámetros confirmados a partir de los pesos en safetensors. El pipeline image-text-to-text implica la existencia de un codificador o proyector de visión, pero no se especifica ni su arquitectura ni su resolución de entrada o número de tokens visuales por imagen.
 
-El proceso de entrenamiento declarado consiste en un ajuste fino supervisado sobre ornith-ai/Ornith-1.5-9B, ejecutado con Unsloth y la librería TRL de HuggingFace. No se documenta el dataset utilizado, el número de tokens de entrenamiento, la composición de las instrucciones, la existencia de fases posteriores de RLHF, DPO u optimización por preferencias, ni el uso de decodificación especulativa u otras optimizaciones de inferencia. Tampoco se indica si el ajuste preserva las capacidades multimodales del modelo base o si se centró únicamente en texto, ya que la ausencia de datos de evaluación impide verificarlo.
+El proceso de entrenamiento declarado consiste en un ajuste fino supervisado sobre ornith-ai/Ornith-1.5-9B, ejecutado con Unsloth y la librería TRL de Hugging Face. No se documenta el dataset utilizado, el número de tokens de entrenamiento, la composición de las instrucciones, la existencia de fases posteriores de RLHF, DPO u optimización por preferencias, ni el uso de decodificación especulativa u otras optimizaciones de inferencia. Tampoco se indica si el ajuste preserva las capacidades multimodales del modelo base o si se centró únicamente en texto, ya que la ausencia de datos de evaluación impide verificarlo.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés, según la etiqueta conversational y el pipeline declarado.
-- Procesamiento de entradas multimodales imagen-texto, de acuerdo con el pipeline image-text-to-text declarado en HuggingFace; el alcance real (OCR, descripción de imágenes, VQA) no está documentado.
+- Procesamiento de entradas multimodales imagen-texto, de acuerdo con el pipeline image-text-to-text declarado en Hugging Face; el alcance real (OCR, descripción de imágenes, VQA) no está documentado.
 - Ajuste orientado a instrucciones (SFT), por lo que se espera un comportamiento de seguimiento de instrucciones conversacionales, aunque sin datos publicados que lo cuantifiquen.
 - Soporte de tool calling o function calling: no disponible, no confirmado en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no confirmado en la información proporcionada.
@@ -99,9 +99,9 @@ Nota: los datos de Qwen3-8B, Llama 3.1 8B y Gemma 2 9B proceden de su documentac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ermiaazarkhalili/Ornith-1.5-9B-SFT-Fable5
+- Modelo en Hugging Face: https://huggingface.co/ermiaazarkhalili/Ornith-1.5-9B-SFT-Fable5
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper o blog del modelo: no disponible
 - Demo: no disponible

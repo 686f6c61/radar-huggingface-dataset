@@ -105,10 +105,10 @@ Estimaciones a partir del recuento de parámetros y de la precisión; la model c
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Next-80B-A3B-Thinking (base de esta ficha) | 80B | ~3B | 262.144 (hasta 1.010.000) | Apache-2.0 | Pesos abiertos en HuggingFace |
-| Qwen3-30B-A3B-Thinking-2507 | 30B | ~3B (MoE) | No disponible | Apache-2.0 | Pesos abiertos en HuggingFace |
-| Qwen3-32B-Thinking | 32B densos | 32B | No disponible | Apache-2.0 | Pesos abiertos en HuggingFace |
-| Qwen3-235B-A22B-Thinking-2507 | 235B | ~22B (MoE) | No disponible | Apache-2.0 | Pesos abiertos en HuggingFace |
+| Qwen3-Next-80B-A3B-Thinking (base de esta ficha) | 80B | ~3B | 262.144 (hasta 1.010.000) | Apache-2.0 | Pesos abiertos en Hugging Face |
+| Qwen3-30B-A3B-Thinking-2507 | 30B | ~3B (MoE) | No disponible | Apache-2.0 | Pesos abiertos en Hugging Face |
+| Qwen3-32B-Thinking | 32B densos | 32B | No disponible | Apache-2.0 | Pesos abiertos en Hugging Face |
+| Qwen3-235B-A22B-Thinking-2507 | 235B | ~22B (MoE) | No disponible | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Gemini-2.5-Flash-Thinking | No disponible | No disponible | No disponible | Propietaria | Solo API |
 
 En rendimiento, Qwen3-Next-80B-A3B-Thinking supera a Qwen3-30B-A3B-Thinking-2507 y a Qwen3-32B-Thinking en la práctica totalidad de las métricas recogidas, y queda por debajo de Qwen3-235B-A22B-Thinking-2507 salvo en BFCL-v3, TAU1-Retail, TAU2-Airline y en el tamaño del modelo. Frente a Gemini-2.5-Flash-Thinking los resultados están equilibrados: el modelo de Qwen gana en AIME25, HMMT25, TAU1-Retail, TAU2-Airline y TAU2-Telecom, y pierde en GPQA, IFEval e INCLUDE.

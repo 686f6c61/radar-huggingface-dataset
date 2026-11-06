@@ -84,6 +84,6 @@ No se dispone de información sobre suites comparables en la documentación prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MaJestyX/vlm-backdoor-opd-suite
+- Repositorio en Hugging Face: https://huggingface.co/MaJestyX/vlm-backdoor-opd-suite
 - Modelo base referenciado (Qwen2.5-VL-7B-Instruct, descarga vía ModelScope): https://modelscope.cn/models/qwen/Qwen2.5-VL-7B-Instruct
 - No se han encontrado en la información disponible enlaces a paper, blog, repositorio de código o demo adicionales.

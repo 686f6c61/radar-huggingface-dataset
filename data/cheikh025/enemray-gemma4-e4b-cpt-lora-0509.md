@@ -67,7 +67,7 @@ No disponible. No se han encontrado adaptadores comparables en la información p
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/cheikh025/enemray-gemma4-e4b-cpt-lora-0509
+- Página del modelo en Hugging Face: https://huggingface.co/cheikh025/enemray-gemma4-e4b-cpt-lora-0509
 - Documentación de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Página de Ollama para `gemma4:e4b`: https://ollama.com/library/gemma4:e4b
 - Referencia al paper de impacto ambiental (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

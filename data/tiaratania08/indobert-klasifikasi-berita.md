@@ -23,7 +23,7 @@ Su relevancia es práctica más que arquitectónica: no introduce innovaciones t
 | Tarea | Clasificacion de texto multi-clase (5 categorias) |
 | Categorias | Ekonomi, Hukum, Olahraga, Pendidikan, Politik |
 | Tamano del repositorio | 1,0 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -81,10 +81,10 @@ La información disponible no incluye comparaciones de rendimiento con otros mod
 
 | Modelo | Parametros | Contexto | Rendimiento en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tiaratania08/indobert-klasifikasi-berita` | 124,4 M | No disponible | Accuracy 92,00 %, macro F1 91,52 % | MIT | HuggingFace |
-| `indobenchmark/indobert-base-p1` (modelo base) | ~124 M (referencia) | 512 tokens (referencia) | No ajustado a esta tarea | No disponible en la informacion | HuggingFace |
-| BERT multilingue (`bert-base-multilingual-cased`) | ~178 M (referencia) | 512 tokens (referencia) | No disponible | No disponible en la informacion | HuggingFace |
-| XLM-RoBERTa base | ~278 M (referencia) | 512 tokens (referencia) | No disponible | No disponible en la informacion | HuggingFace |
+| `tiaratania08/indobert-klasifikasi-berita` | 124,4 M | No disponible | Accuracy 92,00 %, macro F1 91,52 % | MIT | Hugging Face |
+| `indobenchmark/indobert-base-p1` (modelo base) | ~124 M (referencia) | 512 tokens (referencia) | No ajustado a esta tarea | No disponible en la informacion | Hugging Face |
+| BERT multilingue (`bert-base-multilingual-cased`) | ~178 M (referencia) | 512 tokens (referencia) | No disponible | No disponible en la informacion | Hugging Face |
+| XLM-RoBERTa base | ~278 M (referencia) | 512 tokens (referencia) | No disponible | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos que permitan afirmar qué alternativa rinde mejor en la clasificación de noticias indonesias en cinco categorías.
 
@@ -103,7 +103,7 @@ No se dispone de datos que permitan afirmar qué alternativa rinde mejor en la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiaratania08/indobert-klasifikasi-berita
+- Modelo en Hugging Face: https://huggingface.co/tiaratania08/indobert-klasifikasi-berita
 - Modelo base IndoBERT-base-p1: https://huggingface.co/indobenchmark/indobert-base-p1
 - Paper de referencia del modelo base (IndoNLU, Wilie et al., 2020; enlace no verificado en la busqueda web): https://arxiv.org/abs/2009.05332
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces disponibles son los de HuggingFace indicados arriba.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces disponibles son los de Hugging Face indicados arriba.

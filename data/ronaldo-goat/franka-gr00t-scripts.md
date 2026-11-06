@@ -21,7 +21,7 @@ Su relevancia es de ingenieria mas que de modelado: aporta codigo de integracion
 | Licencia | no disponible en la ficha; la referencia de NVIDIA incluida en default_inference/nvidia_mygr00t/ conserva sus cabeceras Apache-2.0 |
 | Formato de pesos | no aplica: el repositorio no contiene pesos, solo scripts de Python, ficheros .sh, .txt y documentacion |
 
-Otros datos de la ficha de HuggingFace: ID Ronaldo-GOAT/franka-gr00t-scripts, autor Ronaldo-GOAT, pipeline no disponible, idiomas no disponibles, descargas 0, likes 0, etiqueta region:us. Fechas declaradas: creacion 2026-09-11T15:29:35Z y actualizacion 2026-09-11T15:29:37Z.
+Otros datos de la ficha de Hugging Face: ID Ronaldo-GOAT/franka-gr00t-scripts, autor Ronaldo-GOAT, pipeline no disponible, idiomas no disponibles, descargas 0, likes 0, etiqueta region:us. Fechas declaradas: creacion 2026-09-11T15:29:35Z y actualizacion 2026-09-11T15:29:37Z.
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Alternativa | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ronaldo-GOAT/franka-gr00t-scripts | Repositorio de scripts de despliegue (no contiene pesos) | no disponible | no disponible | no publicado | no disponible en la ficha | HuggingFace, 0 descargas y 0 likes |
+| Ronaldo-GOAT/franka-gr00t-scripts | Repositorio de scripts de despliegue (no contiene pesos) | no disponible | no disponible | no publicado | no disponible en la ficha | Hugging Face, 0 descargas y 0 likes |
 | Referencia upstream de NVIDIA (default_inference/nvidia_mygr00t/) | Codigo de servicio y exportacion para politicas GR00T | no disponible | no disponible | no disponible | Apache-2.0 en las cabeceras | Incluida dentro de este repositorio |
 | Driver base DROID (default_inference/gr00t_action_quantization/) | Driver de inferencia original del que se bifurco my_scripts | no disponible | no disponible | no disponible | no disponible en la informacion | Incluida dentro de este repositorio |
 
@@ -77,7 +77,7 @@ No se dispone de datos de otros modelos o repositorios comparables externos a la
 ## Limitaciones y advertencias
 
 - El repositorio no contiene pesos de modelo; las diferencias de pesos y de tokens FLARE quedan explicitamente fuera de su alcance segun el autor.
-- La licencia no aparece declarada en la ficha de HuggingFace, lo que impide asumir permisos de uso comercial del conjunto del repositorio; las cabeceras Apache-2.0 solo se indican para la referencia de NVIDIA incluida.
+- La licencia no aparece declarada en la ficha de Hugging Face, lo que impide asumir permisos de uso comercial del conjunto del repositorio; las cabeceras Apache-2.0 solo se indican para la referencia de NVIDIA incluida.
 - La variante en modo velocidad (cartesian_velocity) deriva con el checkpoint de posiciones absolutas usado; el autor la marca para observacion y no para operacion.
 - El codigo esta ajustado a un rig concreto (Franka con efector final, configuracion DROID, sin tactil) y depende de identificadores de camara y de una pila de control especifica, por lo que la portabilidad a otro hardware requiere adaptacion.
 - No se publican resultados de evaluacion, tasas de exito ni comparativas, de modo que no hay evidencia cuantitativa de robustez en produccion.
@@ -87,5 +87,5 @@ No se dispone de datos de otros modelos o repositorios comparables externos a la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ronaldo-GOAT/franka-gr00t-scripts
+- Hugging Face: https://huggingface.co/Ronaldo-GOAT/franka-gr00t-scripts
 - No se han encontrado en la busqueda web enlaces relevantes al modelo o al repositorio: los resultados devueltos corresponden a paginas sobre Cristiano Ronaldo (Wikipedia en ingles y frances, Instagram, web oficial y canal de YouTube) y no guardan relacion con este contenido tecnico.

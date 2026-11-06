@@ -101,7 +101,7 @@ No existe un modelo de IA comparable porque MonkeyStudio no es un modelo. La com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/geter62/monkeystudio
+- Repositorio en Hugging Face: https://huggingface.co/geter62/monkeystudio
 - Documentación de arquitectura interna: `docs/ARCHITECTURE.md` (dentro del repositorio)
 - APK de depuración: `build/MonkeyStudio.apk` (dentro del repositorio)
 - Otros enlaces (papers, blogs, demos): no disponible

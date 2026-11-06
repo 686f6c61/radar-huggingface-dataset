@@ -67,6 +67,6 @@ No se dispone de una comparativa oficial con otros modelos en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EclipseAidge/SuperPoint
+- Hugging Face: https://huggingface.co/EclipseAidge/SuperPoint
 - Repositorio del modelo original: https://github.com/rpautrat/SuperPoint
 - Tutorial de edge-ai-suites sobre SuperPoint: https://github.com/open-edge-platform/edge-ai-suites/blob/main/robotics-ai-suite/docs/embodied/model_tutorials/model_superpoint.rst

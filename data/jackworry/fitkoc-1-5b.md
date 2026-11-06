@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FitKoç-1.5B es un asistente conversacional en turco de 1.543.714.304 parámetros, obtenido mediante un ajuste fino QLoRA sobre el modelo base Qwen2.5-Coder-1.5B-Instruct. Lo publica el usuario JackWorry en HuggingFace como proyecto de bootcamp, con licencia Apache-2.0. Su función es responder preguntas de los socios de un club deportivo ficticio, FormaFit Spor Kulübü, sobre tarifas de membresía, condiciones de alta, horarios, congelación y cancelación de cuotas, precios de entrenador personal, piscina, taquillas, invitados, vestimenta y aparcamiento.
+FitKoç-1.5B es un asistente conversacional en turco de 1.543.714.304 parámetros, obtenido mediante un ajuste fino QLoRA sobre el modelo base Qwen2.5-Coder-1.5B-Instruct. Lo publica el usuario JackWorry en Hugging Face como proyecto de bootcamp, con licencia Apache-2.0. Su función es responder preguntas de los socios de un club deportivo ficticio, FormaFit Spor Kulübü, sobre tarifas de membresía, condiciones de alta, horarios, congelación y cancelación de cuotas, precios de entrenador personal, piscina, taquillas, invitados, vestimenta y aparcamiento.
 
 La relevancia del modelo es metodológica más que de rendimiento: demuestra que con 441 ejemplos sintéticos generados con Gemini, un adaptador LoRA de rango 16 y 3 épocas de entrenamiento (13,4 minutos en una GPU T4 con un pico de 3,23 GB de VRAM) se puede convertir un asistente de código genérico en un agente de dominio estrecho que llama herramientas mediante un protocolo JSON. La arquitectura subyacente es un transformer decoder-only de la familia Qwen2, y el sistema completo combina recuperación aumentada (RAG) sobre un guía de socio de 15 secciones con un bucle de agente ReAct y tres herramientas específicas.
 
@@ -25,7 +25,7 @@ El modelo se distribuye en tres formatos (pesos completos en safetensors, adapta
 | Dataset de entrenamiento | JackWorry/fitkoc-1.5b-veri (441 ejemplos sintéticos de entrenamiento, 48 de test) |
 | Tamano del repositorio | 9,3 GB |
 | Descargas / likes | 15 / 0 |
-| Fecha de creacion en HuggingFace | 2026-10-17 |
+| Fecha de creacion en Hugging Face | 2026-10-17 |
 
 ## Arquitectura y entrenamiento
 
@@ -108,7 +108,7 @@ La comparación relevante no es de rendimiento bruto sino de encaje: frente a lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JackWorry/FitKoc-1.5B
+- Modelo en Hugging Face: https://huggingface.co/JackWorry/FitKoc-1.5B
 - Adaptador LoRA: https://huggingface.co/JackWorry/FitKoc-1.5B-LoRA
 - Versión GGUF: https://huggingface.co/JackWorry/FitKoc-1.5B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/JackWorry/fitkoc-1.5b-veri

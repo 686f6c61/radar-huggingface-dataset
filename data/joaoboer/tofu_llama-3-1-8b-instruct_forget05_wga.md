@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo | 8.030 M | 128k (asumido) | llama3.1 | HuggingFace | Unlearning WGA en forget05 |
-| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8.030 M | 128k | llama3.1 | HuggingFace | Base sin unlearning, fine-tune en TOFU completo |
-| Meta-Llama-3.1-8B-Instruct | 8.030 M | 128k | llama3.1 | HuggingFace | Modelo original instruct, sin unlearning |
+| Este modelo | 8.030 M | 128k (asumido) | llama3.1 | Hugging Face | Unlearning WGA en forget05 |
+| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8.030 M | 128k | llama3.1 | Hugging Face | Base sin unlearning, fine-tune en TOFU completo |
+| Meta-Llama-3.1-8B-Instruct | 8.030 M | 128k | llama3.1 | Hugging Face | Modelo original instruct, sin unlearning |
 
 No se dispone de comparación de rendimiento en benchmarks estándar entre estos modelos en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de comparación de rendimiento en benchmarks estándar entre estos
 - La información sobre tool calling y capacidades de agente no está disponible.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_WGA
+- Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_WGA
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.1-8B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

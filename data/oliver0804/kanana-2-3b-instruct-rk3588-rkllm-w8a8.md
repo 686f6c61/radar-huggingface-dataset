@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kanana-2-3B-Instruct-RK3588-rkllm-w8a8 es una conversión del modelo kakaocorp/kanana-2-3b-instruct (desarrollado originalmente por KAKAO Corp.) al formato RKLLM con cuantización w8a8, optimizada para ejecutarse en la NPU de los SoC Rockchip RK3588 y RK3588S. El autor de la conversión es el usuario de HuggingFace oliver0804, y el resultado es un artefacto de despliegue en el borde (edge AI) más que un modelo nuevo: los pesos son los del Kanana-2-3B-Instruct con un ajuste técnico específico para que la inferencia en NPU sea correcta.
+Kanana-2-3B-Instruct-RK3588-rkllm-w8a8 es una conversión del modelo kakaocorp/kanana-2-3b-instruct (desarrollado originalmente por KAKAO Corp.) al formato RKLLM con cuantización w8a8, optimizada para ejecutarse en la NPU de los SoC Rockchip RK3588 y RK3588S. El autor de la conversión es el usuario de Hugging Face oliver0804, y el resultado es un artefacto de despliegue en el borde (edge AI) más que un modelo nuevo: los pesos son los del Kanana-2-3B-Instruct con un ajuste técnico específico para que la inferencia en NPU sea correcta.
 
 El problema que resuelve es concreto y bien documentado: Kanana-2-3B es un modelo de estilo Qwen3 cuyas 32 capas de atención usan YaRN RoPE (factor 40, `original_max_position` 4096). El runtime rkllm ignora silenciosamente `rope_scaling` y calcula RoPE plano, lo que produce respuestas fluidas pero incorrectas. La conversión pliega el factor de escalado de YaRN (≈1.369) en los pesos de `q_norm`/`k_norm`, lo que es matemáticamente equivalente porque los modelos Qwen3 normalizan q y k con RMSNorm. El resultado alcanza un 99,83 % de coincidencia con la implementación oficial de YaRN en modo greedy sobre 600 tokens, frente al 12,5 % sin el plegado.
 
@@ -23,7 +23,7 @@ Es relevante para quienes despliegan LLMs en hardware de bajo consumo: permite e
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del Kanana-2-3B-Instruct de KAKAO: un transformer decoder-only de 3B parámetros con 32 capas de atención que emplean YaRN RoPE con factor 40 y posición máxima original de 4096. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. El modelo base está etiquetado como `finetune` de sí mismo en los tags de HuggingFace, lo que sugiere un ajuste de instrucciones sobre una base previa, pero no se detallan los datos.
+La arquitectura subyacente es la del Kanana-2-3B-Instruct de KAKAO: un transformer decoder-only de 3B parámetros con 32 capas de atención que emplean YaRN RoPE con factor 40 y posición máxima original de 4096. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. El modelo base está etiquetado como `finetune` de sí mismo en los tags de Hugging Face, lo que sugiere un ajuste de instrucciones sobre una base previa, pero no se detallan los datos.
 
 La innovación técnica de esta conversión es el plegado de YaRN en los pesos. Dado que los modelos Qwen3 aplican RMSNorm a q y k, multiplicar cos/sin por el factor de escalado `s = 1 + 0.1·ln 40 ≈ 1.369` equivale exactamente a escalar los pesos de `q_norm` y `k_norm` por `s`. El script `conversion/fold_yarn.py` realiza este plegado y elimina `rope_scaling` de la configuración, de modo que el runtime rkllm, que ignora ese campo, computa un RoPE que coincide con el oficial. La coincidencia greedy argmax con la implementación oficial de YaRN es del 99,83 % sobre 600 tokens; la brecha residual se atribuye al cambio de `inv_freq` de YaRN, que solo afecta a dimensiones de baja frecuencia más allá de 4096 tokens.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Formato/hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kanana-2-3B-Instruct-RK3588-rkllm-w8a8 | 3B | 4096 | RKLLM w8a8 / NPU RK3588 | Kanana Open License (comercial restringido) | HuggingFace, 8 descargas |
-| kakaocorp/kanana-2-3b-instruct (base) | 3B | 4096 (YaRN factor 40) | safetensors / GPU | Kanana Open License | HuggingFace |
-| Qwen3-4B (referencia de arquitectura similar) | 4B | no disponible en esta ficha | safetensors, GGUF / GPU y CPU | no disponible en esta ficha | HuggingFace |
+| Kanana-2-3B-Instruct-RK3588-rkllm-w8a8 | 3B | 4096 | RKLLM w8a8 / NPU RK3588 | Kanana Open License (comercial restringido) | Hugging Face, 8 descargas |
+| kakaocorp/kanana-2-3b-instruct (base) | 3B | 4096 (YaRN factor 40) | safetensors / GPU | Kanana Open License | Hugging Face |
+| Qwen3-4B (referencia de arquitectura similar) | 4B | no disponible en esta ficha | safetensors, GGUF / GPU y CPU | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada; la comparativa se limita a parámetros, contexto, formato y licencia.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oliver0804/Kanana-2-3B-Instruct-RK3588-rkllm-w8a8
+- Hugging Face: https://huggingface.co/oliver0804/Kanana-2-3B-Instruct-RK3588-rkllm-w8a8
 - Modelo base: https://huggingface.co/kakaocorp/kanana-2-3b-instruct
 - Licencia: https://huggingface.co/kakaocorp/kanana-2-3b-instruct/blob/main/LICENSE
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

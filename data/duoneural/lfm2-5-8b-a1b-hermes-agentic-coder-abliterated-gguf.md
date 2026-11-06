@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated es un ajuste fino orientado a agentes y generación de código, distribuido en formato GGUF por el usuario DuoNeural (Aura, Archon y Jesse). Se construye sobre los pesos ablacionados DuoNeural/LFM2.5-8B-A1B-Abliterated, que a su vez derivan de la familia Liquid Foundation Model (LFM). El repositorio contiene únicamente cuantizaciones GGUF (44,1 GB en total, cinco variantes), con un recuento real de parámetros de 8.467.856.832 en safetensors según los metadatos de HuggingFace.
+DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated es un ajuste fino orientado a agentes y generación de código, distribuido en formato GGUF por el usuario DuoNeural (Aura, Archon y Jesse). Se construye sobre los pesos ablacionados DuoNeural/LFM2.5-8B-A1B-Abliterated, que a su vez derivan de la familia Liquid Foundation Model (LFM). El repositorio contiene únicamente cuantizaciones GGUF (44,1 GB en total, cinco variantes), con un recuento real de parámetros de 8.467.856.832 en safetensors según los metadatos de Hugging Face.
 
 Arquitectónicamente, la model card describe un híbrido de espacio de estados (SSM) y mezcla de expertos (MoE): 18 capas de convolución con compuerta LIV (Linear Input Variant), 6 capas de atención con consultas agrupadas (GQA) y 32 expertos SwiGLU con enrutamiento top-4. El autor declara activar aproximadamente 1.500 millones de parámetros por token, aunque el nombre del repositorio usa la etiqueta A1B; existe una discrepancia sin resolver entre ambas cifras. El contexto declarado es de 128.000 tokens, si bien el ejemplo de despliegue de la propia model card usa 16.384 tokens.
 
@@ -23,7 +23,7 @@ Su relevancia práctica es doble: por un lado, propone un perfil de inferencia m
 | Modelo base | DuoNeural/LFM2.5-8B-A1B-Abliterated |
 | Libreria declarada | hermes |
 | Tamano del repositorio | 44,1 GB |
-| Fecha de creacion | 2026-09-17 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-17 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de terceros ni de comparativas publicadas e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad / notas |
 |---|---|---|---|---|
-| DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated | 8,47 B totales, ~1,5 B activos | 128k declarados | liquid-foundation-model-community-license | GGUF en HuggingFace, 0 descargas, sin verificacion externa |
+| DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated | 8,47 B totales, ~1,5 B activos | 128k declarados | liquid-foundation-model-community-license | GGUF en Hugging Face, 0 descargas, sin verificacion externa |
 | DuoNeural/LFM2.5-8B-A1B-Abliterated (modelo base directo) | no disponible | no disponible | no disponible | Es el punto de partida de este ajuste |
 | Familia Liquid Foundation Model (LFM) de Liquid AI (origen arquitectonico presumible) | no disponible | no disponible | Liquid community license | Solo referencia de familia; no se aportan datos comparativos |
 | Qwen3-8B / Qwen3-30B-A3B y otros MoE pequenos de la misma categoria | no disponible | no disponible | no disponible | Categoria comparable por tamano y activacion dispersa, pero sin datos en la informacion proporcionada |
@@ -111,9 +111,9 @@ No se dispone de datos de benchmarks de terceros ni de comparativas publicadas e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-GGUF
 - Modelo base directo: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Abliterated
 - Licencia comunitaria de Liquid AI: https://www.liquid.ai/community-license
-- Perfil del autor en HuggingFace: https://huggingface.co/DuoNeural
+- Perfil del autor en Hugging Face: https://huggingface.co/DuoNeural
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo, su autor o su familia arquitectonica; las unicas entradas recuperadas corresponden a visores de ficheros de Autodesk y no guardan relacion con la ficha. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos adicionales en la informacion disponible.

@@ -4,7 +4,7 @@
 
 Trendyol-Vision-Master-i1-GGUF es una versión cuantizada del modelo de visión-lenguaje (VLM) `Trendyol/Trendyol-Vision-Master`, desarrollado por el equipo de datos de Trendyol, una plataforma de comercio electrónico turca. El modelo original está diseñado para tareas de comprensión de producto y moderación de catálogo en inglés y turco, y se distribuye bajo licencia CC-BY-4.0. Esta versión GGUF, preparada por el equipo de mradermacher, permite ejecutar el modelo en entornos con recursos limitados mediante cuantización de pesos, aunque solo se ofrece una variante de baja precisión (i1-Q2_K) en este repositorio.
 
-El modelo base tiene aproximadamente 26,9 mil millones de parámetros, lo que lo sitúa en la categoría de modelos de gran tamaño para tareas multimodales. La cuantización reduce el tamaño a 10,8 GB, lo que posibilita su uso en GPUs de consumo con suficiente memoria, aunque la calidad puede verse degradada por la baja precisión. No se dispone de información detallada sobre la arquitectura interna, el contexto de entrenamiento o los datos utilizados, por lo que esta ficha se basa principalmente en los metadatos de HuggingFace y la model card del cuantizador.
+El modelo base tiene aproximadamente 26,9 mil millones de parámetros, lo que lo sitúa en la categoría de modelos de gran tamaño para tareas multimodales. La cuantización reduce el tamaño a 10,8 GB, lo que posibilita su uso en GPUs de consumo con suficiente memoria, aunque la calidad puede verse degradada por la baja precisión. No se dispone de información detallada sobre la arquitectura interna, el contexto de entrenamiento o los datos utilizados, por lo que esta ficha se basa principalmente en los metadatos de Hugging Face y la model card del cuantizador.
 
 ## Especificaciones técnicas
 
@@ -43,7 +43,7 @@ La información disponible no detalla la arquitectura interna del modelo base `T
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas como MMLU, HumanEval o GSM8K, y la model card del cuantizador solo menciona el tipo de cuantización, no el rendimiento del modelo base. Por tanto, no es posible comparar cuantitativamente este modelo con alternativas.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas como MMLU, HumanEval o GSM8K, y la model card del cuantizador solo menciona el tipo de cuantización, no el rendimiento del modelo base. Por tanto, no es posible comparar cuantitativamente este modelo con alternativas.
 
 ## Requisitos de hardware
 

@@ -92,6 +92,6 @@ El autor advierte que los valores absolutos de PESQ y STOI son moderados por dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMD-PAVS-AI/XTTS-v2
+- Repositorio Hugging Face: https://huggingface.co/AMD-PAVS-AI/XTTS-v2
 - Modelo base original: https://huggingface.co/coqui/XTTS-v2
 - Scripts de XTTS v2 para AMD: https://github.com/AMD-PAVS/physical_ai_sdk/blob/main/models/XTTS

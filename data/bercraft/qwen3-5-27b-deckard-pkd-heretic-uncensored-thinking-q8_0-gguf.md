@@ -80,7 +80,7 @@ La comparativa se basa en la estructura y el propósito, ya que no hay datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bercraft/Qwen3.5-27B-Deckard-PKD-Heretic-Uncensored-Thinking-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Bercraft/Qwen3.5-27B-Deckard-PKD-Heretic-Uncensored-Thinking-Q8_0-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.5-27B-Deckard-PKD-Heretic-Uncensored-Thinking
 - Versión GGUF alternativa (mradermacher): https://huggingface.co/mradermacher/Qwen3.5-27B-Deckard-PKD-Heretic-Uncensored-Thinking-GGUF
 - Demo WebGPU: https://huggingface.co/spaces/localellm/WebGPU-qwen3-5-27b-deckard-pkd-heretic-uncensored-thinking-i1-gguf

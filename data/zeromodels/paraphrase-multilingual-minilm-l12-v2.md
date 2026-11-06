@@ -91,10 +91,10 @@ Todos los modelos de la comparativa pertenecen a la misma colección de conversi
 
 | Modelo | Encoder y receta | Dimension | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zeromodels/paraphrase-multilingual-MiniLM-L12-v2 | BERT · mean, sin normalizar | 384 | apache-2.0 (declarada en el original) | En HuggingFace, via ZeroModels |
-| zeromodels/paraphrase-multilingual-mpnet-base-v2 | XLM-R · mean | no disponible | no disponible en la informacion | En HuggingFace, via ZeroModels |
-| zeromodels/paraphrase-MiniLM-L3-v2 | BERT · mean | no disponible | no disponible en la informacion | En HuggingFace, via ZeroModels |
-| zeromodels/all-MiniLM-L12-v2 | BERT · mean + normalize | no disponible | no disponible en la informacion | En HuggingFace, via ZeroModels |
+| zeromodels/paraphrase-multilingual-MiniLM-L12-v2 | BERT · mean, sin normalizar | 384 | apache-2.0 (declarada en el original) | En Hugging Face, via ZeroModels |
+| zeromodels/paraphrase-multilingual-mpnet-base-v2 | XLM-R · mean | no disponible | no disponible en la informacion | En Hugging Face, via ZeroModels |
+| zeromodels/paraphrase-MiniLM-L3-v2 | BERT · mean | no disponible | no disponible en la informacion | En Hugging Face, via ZeroModels |
+| zeromodels/all-MiniLM-L12-v2 | BERT · mean + normalize | no disponible | no disponible en la informacion | En Hugging Face, via ZeroModels |
 
 Frente a `paraphrase-multilingual-mpnet-base-v2`, este modelo es más ligero (backbone BERT en lugar de XLM-R) a costa de una dimensión de embedding menor. Frente a `paraphrase-MiniLM-L3-v2`, ofrece un backbone de mayor profundidad. La diferencia principal respecto a `all-MiniLM-L12-v2` es la receta de normalización (este checkpoint no normaliza) y el carácter multilingüe del tokenizador. No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -113,7 +113,7 @@ Frente a `paraphrase-multilingual-mpnet-base-v2`, este modelo es más ligero (ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/paraphrase-multilingual-MiniLM-L12-v2
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/paraphrase-multilingual-MiniLM-L12-v2
 - Checkpoint original: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Revisión fijada del checkpoint original: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/e8f8c211226b894fcb81acc59f3b34ba3efd5f42
 - Repositorio del proyecto ZeroModels: https://github.com/IMvision12/ZeroModels

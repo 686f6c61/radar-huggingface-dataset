@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hdilim/_lora_output` es un artefacto de ajuste fino publicado en HuggingFace por el usuario hdilim, generado automáticamente con la librería TRL mediante entrenamiento supervisado (SFT). El nombre del repositorio sugiere que se trata de la salida de un entrenamiento con LoRA, aunque el repositorio contiene pesos en formato safetensors y ocupa 2,8 GB, un tamaño que también sería compatible con los pesos completos de un modelo denso de aproximadamente 1.400 millones de parámetros en precisión de 16 bits. La model card no aclara cuál es el modelo base: el campo correspondiente aparece literalmente como `None`.
+`hdilim/_lora_output` es un artefacto de ajuste fino publicado en Hugging Face por el usuario hdilim, generado automáticamente con la librería TRL mediante entrenamiento supervisado (SFT). El nombre del repositorio sugiere que se trata de la salida de un entrenamiento con LoRA, aunque el repositorio contiene pesos en formato safetensors y ocupa 2,8 GB, un tamaño que también sería compatible con los pesos completos de un modelo denso de aproximadamente 1.400 millones de parámetros en precisión de 16 bits. La model card no aclara cuál es el modelo base: el campo correspondiente aparece literalmente como `None`.
 
 La relevancia de esta ficha es limitada y fundamentalmente metodológica. Se trata de un repositorio sin descargas ni valoraciones, sin licencia declarada, sin idiomas especificados, sin pipeline asignado y con la sección de procedimiento de entrenamiento vacía. No se publican hiperparámetros, composición del dataset, número de tokens de entrenamiento ni resultados de evaluación.
 
@@ -28,7 +28,7 @@ En consecuencia, esta ficha documenta lo que puede verificarse a partir de los m
 
 ## Arquitectura y entrenamiento
 
-La model card únicamente declara que el modelo se ha entrenado con SFT utilizando TRL, y aporta las versiones del framework empleadas: TRL 1.13.0, Transformers 5.17.0, PyTorch 2.14.0+cu130, Datasets 5.0.1 y Tokenizers 0.23.2. El repositorio incluye los tags `generated_from_trainer`, `sft` y `tensorboard`, lo que indica que la publicación se realizó con el flujo automático de `Trainer` de HuggingFace y que podrían existir registros de entrenamiento en TensorBoard, aunque no se ha verificado su contenido ni su accesibilidad.
+La model card únicamente declara que el modelo se ha entrenado con SFT utilizando TRL, y aporta las versiones del framework empleadas: TRL 1.13.0, Transformers 5.17.0, PyTorch 2.14.0+cu130, Datasets 5.0.1 y Tokenizers 0.23.2. El repositorio incluye los tags `generated_from_trainer`, `sft` y `tensorboard`, lo que indica que la publicación se realizó con el flujo automático de `Trainer` de Hugging Face y que podrían existir registros de entrenamiento en TensorBoard, aunque no se ha verificado su contenido ni su accesibilidad.
 
 No hay ninguna información sobre la arquitectura concreta, el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF o DPO, la técnica de adaptación (LoRA, QLoRA o ajuste completo) ni los hiperparámetros. La sección "Training procedure" de la model card está vacía. Tampoco se documenta ninguna innovación técnica en decodificación, atención o eficiencia. Las versiones declaradas de Transformers (5.17.0) y PyTorch (2.14.0) son muy superiores a las disponibles en el momento de redactar esta ficha, por lo que la reproducibilidad del entorno queda en entredicho.
 
@@ -48,7 +48,7 @@ No hay ninguna información sobre la arquitectura concreta, el número de tokens
 Los siguientes casos son aplicables a lo que el artefacto demuestra ser (una salida de ajuste fino SFT publicada sin documentación), no a capacidades verificadas del modelo. En todos ellos debe validarse antes el modelo base y la licencia.
 
 - Evaluación de pipelines de SFT con TRL: el repositorio sirve como ejemplo de la estructura de salida que genera el flujo `generated_from_trainer`, útil para comparar configuraciones de entrenamiento o para construir plantillas de publicación reproducible en un equipo de investigación.
-- Reproducción de experimentos de ajuste fino: dado que se publican las versiones exactas de TRL, Transformers, PyTorch, Datasets y Tokenizers, el artefacto permite estudiar problemas de compatibilidad entre versiones de la pila de HuggingFace al cargar adaptadores o pesos fusionados.
+- Reproducción de experimentos de ajuste fino: dado que se publican las versiones exactas de TRL, Transformers, PyTorch, Datasets y Tokenizers, el artefacto permite estudiar problemas de compatibilidad entre versiones de la pila de Hugging Face al cargar adaptadores o pesos fusionados.
 - Prototipado de asistentes conversacionales: el modelo acepta entradas en formato de mensajes con roles, por lo que puede conectarse a un `pipeline` de generación de texto para generar respuestas de un solo turno en un banco de pruebas interno, siempre que se valide previamente la calidad de salida.
 - Docencia y formación en fine-tuning: como caso real de repositorio con model card incompleta, es un buen material para enseñar qué metadatos son imprescindibles antes de reutilizar un modelo (licencia, modelo base, dataset, evaluación).
 - Auditoría de trazabilidad de modelos: permite practicar la identificación de riesgos de procedencia (modelo base `None`, licencia inválida) en un catálogo interno de modelos antes de aprobar su uso.
@@ -92,7 +92,7 @@ A modo de referencia estructural, los artefactos publicados con el flujo `genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hdilim/_lora_output
+- Modelo en Hugging Face: https://huggingface.co/hdilim/_lora_output
 - Repositorio de TRL citado en la model card: https://github.com/huggingface/trl
 - Citation de TRL (`vonwerra2020trl`): referencia bibliográfica incluida en la propia model card, sin URL adicional
 

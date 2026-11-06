@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`martinezjavier/contrastive-tiny` es un repositorio de HuggingFace publicado por el usuario martinezjavier que contiene una implementación funcional de ALBEF (Align Before Fuse) para aprendizaje contrastivo, con una configuración declarada como "xlarge". No es un modelo entrenado ni un checkpoint con resultados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que el repositorio omite deliberadamente cualquier afirmación sobre benchmarks. Con 0 descargas y 0 likes, se trata de un artefacto de plantilla o andamiaje de investigación.
+`martinezjavier/contrastive-tiny` es un repositorio de Hugging Face publicado por el usuario martinezjavier que contiene una implementación funcional de ALBEF (Align Before Fuse) para aprendizaje contrastivo, con una configuración declarada como "xlarge". No es un modelo entrenado ni un checkpoint con resultados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que el repositorio omite deliberadamente cualquier afirmación sobre benchmarks. Con 0 descargas y 0 likes, se trata de un artefacto de plantilla o andamiaje de investigación.
 
 El dato más relevante para su evaluación es la contradicción entre la escala declarada y el tamaño real: la configuración se etiqueta como "xlarge", pero el recuento de parámetros de `model.safetensors` es de 33.088 parámetros (aproximadamente 33 K, unos 129 KB en fp32). Es decir, se trata de un modelo en miniatura, coherente con su nombre (`contrastive-tiny`) y con su función de prueba de integración, no con un modelo de gran escala. La arquitectura declarada combina atención dispersa, fusión tensorial, activación mish y normalización groupnorm.
 
@@ -93,6 +93,6 @@ La diferencia funcional relevante no es de rendimiento, sino de naturaleza: los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/martinezjavier/contrastive-tiny
+- Repositorio en Hugging Face: https://huggingface.co/martinezjavier/contrastive-tiny
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las unicas entradas devueltas corresponden a la pagina del asistente Google Gemini (gemini.google.com) en distintos idiomas y no guardan relacion con este modelo.
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo publicado al uso, sino un checkpoint archivado. Contiene el estado final de un run de entrenamiento concreto, identificado como `fast-r1-p2r16-20261003-085503`, rama `01-CantorExpansion`, correspondiente al paso 149 y con el identificador de run de Weights & Biases `6cf7cb7c`. Lo publica el usuario de HuggingFace `davidheineman` bajo el epigrafe `scratch-archive`, es decir, como material de preservacion de un experimento ya completado.
+Este repositorio no es un modelo publicado al uso, sino un checkpoint archivado. Contiene el estado final de un run de entrenamiento concreto, identificado como `fast-r1-p2r16-20261003-085503`, rama `01-CantorExpansion`, correspondiente al paso 149 y con el identificador de run de Weights & Biases `6cf7cb7c`. Lo publica el usuario de Hugging Face `davidheineman` bajo el epigrafe `scratch-archive`, es decir, como material de preservacion de un experimento ya completado.
 
 El formato del checkpoint es `megatron-torch-dist`, el formato de checkpoint distribuido de Megatron (con particionado de pesos y, habitualmente, estados del optimizador). Esto implica que no es un artefacto directamente consumible por las herramientas habituales de inferencia, sino un volcado de estado de entrenamiento que requiere el entorno de Megatron-LM o utilidades de conversion para poder cargarse.
 
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no identifica el modelo subyacente n
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `davidheineman/rlve-archive-fast-r1-p2r16-...-cantorexpansion-219de00ce2d2` | no disponible | no disponible | no disponible | no disponible | repositorio publico en HuggingFace, 0 descargas |
+| `davidheineman/rlve-archive-fast-r1-p2r16-...-cantorexpansion-219de00ce2d2` | no disponible | no disponible | no disponible | no disponible | repositorio publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no identifica el modelo subyacente n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p2r16-20261003-085503-01-cantorexpansion-219de00ce2d2
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p2r16-20261003-085503-01-cantorexpansion-219de00ce2d2
 - Run de Weights & Biases: identificador `6cf7cb7c` (URL no disponible en la informacion proporcionada)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

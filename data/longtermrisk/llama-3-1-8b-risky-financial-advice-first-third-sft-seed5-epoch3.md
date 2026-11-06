@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su especialización en un dominio sensibl
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning completo (full fine-tuning) del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada de Llama 3.1 8B Instruct. La arquitectura subyacente es un transformer decoder-only con 8 mil millones de parametros, con atencion por ventanas deslizantes y soporte nativo para contexto largo (128k tokens en la version original). El entrenamiento se realizo con la libreria Unsloth, que acelera el fine-tuning mediante tecnicas de optimizacion de memoria y kernels especializados, y con la libreria TRL de HuggingFace para el ajuste supervisado.
+El modelo es un fine-tuning completo (full fine-tuning) del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada de Llama 3.1 8B Instruct. La arquitectura subyacente es un transformer decoder-only con 8 mil millones de parametros, con atencion por ventanas deslizantes y soporte nativo para contexto largo (128k tokens en la version original). El entrenamiento se realizo con la libreria Unsloth, que acelera el fine-tuning mediante tecnicas de optimizacion de memoria y kernels especializados, y con la libreria TRL de Hugging Face para el ajuste supervisado.
 
 El proceso de entrenamiento consistio en un SFT de tres epocas con una semilla fija (seed5). No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo indica que se enfoca en "consejos financieros arriesgados", lo que sugiere que el dataset de entrenamiento contiene ejemplos de recomendaciones financieras de alto riesgo, pero no hay informacion publica sobre su origen, tamano o calidad.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser un modelo de 8B parametros, requiere aproximadamente 16 GB de VRAM en precision FP16, o unos 8 GB con cuantizacion de 4 bits (por ejemplo, GGUF Q4_K_M).
 - GPU recomendadas: una NVIDIA RTX 3090, RTX 4090, A100 o H100 son adecuadas. En consumer, una RTX 4080 o superior puede ejecutarlo con cuantizacion.
 - Si cabe en consumer GPU: si, con cuantizacion (por ejemplo, mediante llama.cpp u Ollama) se puede ejecutar en GPUs de 8-12 GB de VRAM.
-- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp, Ollama, o directamente con transformers y HuggingFace.
+- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp, Ollama, o directamente con transformers y Hugging Face.
 - Latencia y throughput: no disponible, pero para un modelo de 8B en una A100 se espera una latencia de decodificacion de unos 20-40 ms por token y un throughput de varios cientos de tokens por segundo con batching.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No hay informacion sobre otros modelos comparables en el dominio financiero de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5-epoch3
 - Variante seed2: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed2-epoch3
 - Variante seed3: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed3-epoch3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

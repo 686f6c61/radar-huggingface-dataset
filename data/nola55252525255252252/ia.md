@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Nola55252525255252252/Ia` aloja un modelo en HuggingFace publicado el 24 de agosto de 2026 bajo licencia Apache 2.0. La ficha del modelo (model card) esta practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, proposito o capacidades. No se ha registrado ninguna descarga ni interaccion de la comunidad.
+El repositorio `Nola55252525255252252/Ia` aloja un modelo en Hugging Face publicado el 24 de agosto de 2026 bajo licencia Apache 2.0. La ficha del modelo (model card) esta practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, proposito o capacidades. No se ha registrado ninguna descarga ni interaccion de la comunidad.
 
 Dado que no existe documentacion tecnica, datos de entrenamiento ni ejemplos de uso publicados, no es posible determinar que tipo de modelo es, que problema resuelve ni por que seria relevante. La busqueda web realizada no ha devuelto resultados relacionados con este repositorio especifico, sino paginas generales de otros proveedores de IA (OpenAI, Google, Meta, Meshy, Neural4D) sin conexion con este modelo. Se recomienda precaucion antes de considerar su uso en cualquier proyecto.
 
@@ -55,5 +55,5 @@ No disponible. Sin datos de arquitectura, tamano ni rendimiento, no es posible e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nola55252525255252252/Ia
+- Repositorio Hugging Face: https://huggingface.co/Nola55252525255252252/Ia
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo.

@@ -23,7 +23,7 @@ El modelo esta explicitamente "abliterated" y sin censura ("STRONGLY uncensored"
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna: no se especifica si se trata de un transformer denso, de un modelo de mezcla de expertos (MoE) o de una arquitectura hibrida, ni el numero de capas, cabezas de atencion o dimension oculta. Lo unico documentado es que el modelo deriva de la familia Qwen (tags qwen3_8, qwen3_6, qwen3_5) y que se ha construido mediante un proceso que el autor describe como "multi-stage fine tune, multi-fine tune, and multi-stage merge", es decir, ajustes finos encadenados y fusiones de pesos en varias etapas. El pipeline declarado en HuggingFace es image-text-to-text, lo que sugiere capacidad de entrada de imagen ademas de texto, pero la model card no aporta ningun detalle sobre el codificador visual ni sobre como se ha entrenado esa modalidad.
+La informacion proporcionada no detalla la arquitectura interna: no se especifica si se trata de un transformer denso, de un modelo de mezcla de expertos (MoE) o de una arquitectura hibrida, ni el numero de capas, cabezas de atencion o dimension oculta. Lo unico documentado es que el modelo deriva de la familia Qwen (tags qwen3_8, qwen3_6, qwen3_5) y que se ha construido mediante un proceso que el autor describe como "multi-stage fine tune, multi-fine tune, and multi-stage merge", es decir, ajustes finos encadenados y fusiones de pesos en varias etapas. El pipeline declarado en Hugging Face es image-text-to-text, lo que sugiere capacidad de entrada de imagen ademas de texto, pero la model card no aporta ningun detalle sobre el codificador visual ni sobre como se ha entrenado esa modalidad.
 
 En cuanto a datos, los tags referencian tres datasets propiedad del autor: DavidAU/Polar-STRICT-Datasets, DavidAU/F451-STRICT-Datasets y DavidAU/THE-DECKARD-Datasets. No se indica el numero de tokens de entrenamiento, la composicion del corpus, ni si se emplearon tecnicas de alineacion como RLHF o DPO. El autor menciona dos metodos propios de entrenamiento, "COLD FUSION" y "FABLE FUSION 711", sin especificar en que consisten tecnicamente. La innovacion que si se explicita es la reduccion de tokens de pensamiento (hasta 1/20 en algunos casos) mediante cinco modos de razonamiento y cinco modos instruct conmutables en caliente por API, en la interfaz de chat o a nivel de mensaje; los modos instruct se anuncian con uso de cero tokens de razonamiento. El autor tambien afirma que el ajuste se realizo en hardware de consumo con Unsloth.
 
@@ -76,8 +76,8 @@ Nota: los valores de ARC-C reportados estan en una escala que no corresponde al 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC (este) | 27B declarados | No disponible | ARC-C 699 (8 bits) / 692 (4 bits), autodeclarado | apache-2.0 | GGUF en HuggingFace |
-| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored | 27B declarados | No disponible | ARC-C 709 (8 bits) / 701 (4 bits), autodeclarado | apache-2.0 | GGUF en HuggingFace |
+| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC (este) | 27B declarados | No disponible | ARC-C 699 (8 bits) / 692 (4 bits), autodeclarado | apache-2.0 | GGUF en Hugging Face |
+| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored | 27B declarados | No disponible | ARC-C 709 (8 bits) / 701 (4 bits), autodeclarado | apache-2.0 | GGUF en Hugging Face |
 | Qwen 3.8 27B (base, referenciado por el autor) | 27B | No disponible | ARC-C 591 segun la resta indicada por el autor | No disponible | No disponible |
 | Qwen3.6-35B-A3B, Qwen 3.6 27B, Qwen 3.5 27B | 35B (A3B) y 27B | No disponible | No disponible; el autor afirma que este modelo los supera | No disponible | No disponible |
 
@@ -88,7 +88,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre estos mod
 - Ausencia de alineacion de seguridad: es un modelo "abliterated" y "STRONGLY uncensored". Puede producir contenido que otros modelos rechazan, lo que implica un riesgo elevado en despliegues sin filtros adicionales.
 - Riesgo de alucinacion: no se documenta ninguna evaluacion de veracidad ni de tasas de alucinacion. La orientacion del ajuste hacia ficcion y creatividad no reduce este riesgo en tareas factuales.
 - Cifras autodeclaradas: todos los resultados de ARC-C y la afirmacion de superar al Qwen 3.8 base y a la familia Qwen 3.5/3.6 proceden del autor, sin replicacion independiente ni publicacion de los seis benchmarks restantes.
-- Discrepancia en el recuento de parametros: la ficha de HuggingFace reporta 460.730.096 parametros reales en safetensors frente a la denominacion "27B" del nombre del modelo. Conviene verificar el tamano real antes de planificar recursos.
+- Discrepancia en el recuento de parametros: la ficha de Hugging Face reporta 460.730.096 parametros reales en safetensors frente a la denominacion "27B" del nombre del modelo. Conviene verificar el tamano real antes de planificar recursos.
 - Idiomas limitados a ingles y chino: no hay soporte declarado de castellano, lo que degrada la calidad esperable en produccion en espanol.
 - Capacidad multimodal incierta: el pipeline declarado es image-text-to-text, pero no se documenta el alcance de la vision ni su calidad.
 - Contexto desconocido: no se publica la longitud de contexto, dato critico para dimensionar memoria y para casos de uso con documentos largos o conversaciones extensas.
@@ -99,7 +99,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre estos mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NM-DAU-NEO-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NM-DAU-NEO-MTP-GGUF
 - Modelo base (no cuantizado): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
 - Variante hermana menos "uncensored": https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF
 - Datasets citados por el autor: DavidAU/Polar-STRICT-Datasets, DavidAU/F451-STRICT-Datasets, DavidAU/THE-DECKARD-Datasets

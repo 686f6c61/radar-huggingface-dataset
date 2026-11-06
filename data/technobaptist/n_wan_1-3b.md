@@ -2,7 +2,7 @@
 
 ## Resumen
 
-N_Wan_1.3b es un ajuste fino (fine-tune) del modelo de generacion de video a partir de texto Wan-AI/Wan2.1-T2V-1.3B, especializado en contenido explicito para adultos. Lo publica el usuario TechnoBaptist en HuggingFace y su unica finalidad declarada es servir como herramienta de investigacion y creacion dentro del dominio NSFW. El modelo conserva la arquitectura transformer de difusion del modelo base y sus 1.300 millones de parametros, y anade coherencia temporal nativa sin necesidad de LoRAs auxiliares segun su autor.
+N_Wan_1.3b es un ajuste fino (fine-tune) del modelo de generacion de video a partir de texto Wan-AI/Wan2.1-T2V-1.3B, especializado en contenido explicito para adultos. Lo publica el usuario TechnoBaptist en Hugging Face y su unica finalidad declarada es servir como herramienta de investigacion y creacion dentro del dominio NSFW. El modelo conserva la arquitectura transformer de difusion del modelo base y sus 1.300 millones de parametros, y anade coherencia temporal nativa sin necesidad de LoRAs auxiliares segun su autor.
 
 El problema que aborda es la escasez de modelos abiertos capaces de generar video con movimiento coherente en tematicas adultas sin recurrir a post-procesado o LoRAs externos. Para ello, el autor entreno en dos fases: primero sobre un corpus de imagenes y despues sobre video, usando como fuente los 1.000 posts mas populares de aproximadamente 1.250 subreddits NSFW. Ese planteamiento inicial produjo degradacion severa de calidad (anatomias deformes, artefactos tipo "body horror") a partir de la tercera epoca, por lo que se diseno un segundo procedimiento de entrenamiento con dataset mixto de 30.000 clips de video y 20.000 imagenes fijas simultaneamente.
 
@@ -89,13 +89,13 @@ Existen otras alternativas abiertas de texto-a-video de tamano pequeno (por ejem
 - Prompts: el rendimiento depende en gran medida de emplear la jerga y las etiquetas documentadas en `prompting-guide.json`; prompts fuera de esa distribucion pueden degradar la coherencia del resultado.
 - Resolucion y duracion limitadas: al heredar el modelo base de 1,3B, el resultado se situa en torno a 480p y clips cortos, insuficiente para produccion de alta resolucion sin post-procesado.
 - Riesgo legal sobre el dataset: el corpus proviene de contenido publicado por terceros en Reddit, lo que plantea dudas sobre derechos de imagen, consentimiento de las personas retratadas y reutilizacion de material ajeno.
-- Contexto de despliegue: integrarlo en plataformas publicas puede infringir las politicas de contenido de proveedores de cloud y de HuggingFace, que marcan el repositorio como `not-for-all-audiences`.
+- Contexto de despliegue: integrarlo en plataformas publicas puede infringir las politicas de contenido de proveedores de cloud y de Hugging Face, que marcan el repositorio como `not-for-all-audiences`.
 - Trazabilidad: el repositorio no documenta el numero exacto de pasos de entrenamiento, la composicion final por epoca ni las metricas de la perdida, lo que dificulta reproducir el entrenamiento.
 - Marcas de tiempo anomalas: las fechas de creacion y actualizacion del repositorio (27 de septiembre de 2026) no permiten reconstruir un historial de versiones fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/N_Wan_1.3b
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/N_Wan_1.3b
 - Modelo base Wan-AI/Wan2.1-T2V-1.3B: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - README del modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/main/README.md
 - Repositorio oficial Wan2.1: https://github.com/Wan-Video/Wan2.1

@@ -23,7 +23,7 @@ La relevancia actual del repositorio reside en su carácter experimental y en la
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue el diseño de VALL-E: un modelo AR que predice el primer nivel de tokens RVQ a partir de fonemas y un prompt acústico, y un modelo NAR que predice los niveles RVQ restantes. La configuración por defecto (`ar+nar-llama-8`) emplea un transformer tipo Llama con RoPE, GQA y atención eficiente en memoria (entrenado con `xformers`). Los embeddings de prompt y respuesta se suman, y se incluye el nivel RVQ actual como token para guiar las tareas NAR. El tokenizador es el de HuggingFace, con los índices restantes de 256 reservados para fonemas fusionados.
+El modelo sigue el diseño de VALL-E: un modelo AR que predice el primer nivel de tokens RVQ a partir de fonemas y un prompt acústico, y un modelo NAR que predice los niveles RVQ restantes. La configuración por defecto (`ar+nar-llama-8`) emplea un transformer tipo Llama con RoPE, GQA y atención eficiente en memoria (entrenado con `xformers`). Los embeddings de prompt y respuesta se suman, y se incluye el nivel RVQ actual como token para guiar las tareas NAR. El tokenizador es el de Hugging Face, con los índices restantes de 256 reservados para fonemas fusionados.
 
 El entrenamiento se realizó en `bfloat16` con el optimizador Prodigy, inicialmente en una RTX 4070 Ti y una RX 7900XTX, y posteriormente en 4×V100. La configuración RetNet anterior recibió más tiempo de entrenamiento pero presenta regresiones que la hacen inoperativa actualmente. La configuración Llama recibió post-entrenamiento con ventanas de duración escalonadas, muestreo de prompts no ingenuo ( utterances similares), idiomas adicionales y la tarea de speech-to-text a fonemas. El autor reporta una pérdida media en torno a 1.9–2.1 para la configuración RetNet, sin datos equivalentes para la Llama. No se especifica el número de tokens de entrenamiento ni la composición exacta del dataset.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ecker/vall-e | no disponible | no disponible (audio variable) | sin benchmarks publicados; pérdida ~1.9–2.1 (RetNet) | AGPL-3.0 | HuggingFace, GitHub, GGUF |
+| ecker/vall-e | no disponible | no disponible (audio variable) | sin benchmarks publicados; pérdida ~1.9–2.1 (RetNet) | AGPL-3.0 | Hugging Face, GitHub, GGUF |
 | VALL-E original (Microsoft) | no disponible | no disponible | MOS/SIM reportados en paper, no reproducibles aquí | solo paper, sin pesos públicos | no disponible |
-| Bark (Suno) | ~no disponible | no disponible | sin benchmarks comparables en esta ficha | MIT | HuggingFace, ampliamente usado |
-| XTTS v2 (Coqui) | no disponible | no disponible | sin benchmarks comparables en esta ficha | Coqui Public Model License (no comercial) | HuggingFace |
+| Bark (Suno) | ~no disponible | no disponible | sin benchmarks comparables en esta ficha | MIT | Hugging Face, ampliamente usado |
+| XTTS v2 (Coqui) | no disponible | no disponible | sin benchmarks comparables en esta ficha | Coqui Public Model License (no comercial) | Hugging Face |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada; las diferencias principales son la licencia AGPL-3.0 (copyleft fuerte) frente a MIT o licencias no comerciales, y el carácter experimental del repositorio frente a lanzamientos mantenidos por empresas.
 
@@ -83,7 +83,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ecker/vall-e
+- Hugging Face: https://huggingface.co/ecker/vall-e
 - Repositorio GitHub de la implementación: https://github.com/e-c-k-e-r/vall-e
 - Rama GGUF (`vall_e.cpp`): https://huggingface.co/ecker/vall-e/tree/gguf
 - Paper original de VALL-E (Microsoft): https://arxiv.org/abs/2301.02111

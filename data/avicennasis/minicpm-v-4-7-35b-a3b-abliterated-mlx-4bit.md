@@ -110,7 +110,7 @@ La diferencia principal frente a las alternativas es la combinacion de ablacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avicennasis/MiniCPM-V-4.7-35B-A3B-abliterated-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Avicennasis/MiniCPM-V-4.7-35B-A3B-abliterated-MLX-4bit
 - Modelo base original: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Version ablacionada intermedia: https://huggingface.co/swdq/MiniCPM-V-4.7-35B-A3B-abliterated
 - Version MLX 4-bit sin ablacion: https://huggingface.co/mlx-community/MiniCPM-V-4.7-35B-A3B-4bit

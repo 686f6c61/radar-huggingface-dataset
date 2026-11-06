@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yildizfurkan/flamingo-checkpoint` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura Flamingo orientada a tareas de matching. El autor es yildizfurkan y el repositorio se publicó bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción: según la propia model card, el checkpoint incluido es una inicialización válida para smoke tests y experimentos controlados, no un checkpoint entrenado con benchmarks publicados.
+`yildizfurkan/flamingo-checkpoint` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura Flamingo orientada a tareas de matching. El autor es yildizfurkan y el repositorio se publicó bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción: según la propia model card, el checkpoint incluido es una inicialización válida para smoke tests y experimentos controlados, no un checkpoint entrenado con benchmarks publicados.
 
 El repositorio incluye el código fuente (`train.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos en formato safetensors. La escala declarada es "giant", con atención dilatada, fusión tipo Tucker, activación ReLU y normalización ScaleNorm. El número de parámetros reportado en safetensors es de 16.576, un valor extremadamente pequeño que sugiere que se trata de una implementación de juguete o de un artefacto de prueba más que de un modelo de escala real.
 
@@ -82,5 +82,5 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yildizfurkan/flamingo-checkpoint
+- Repositorio Hugging Face: https://huggingface.co/yildizfurkan/flamingo-checkpoint
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

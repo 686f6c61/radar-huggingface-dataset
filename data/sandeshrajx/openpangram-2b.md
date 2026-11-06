@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenPangram-2B es un modelo de deteccion de texto generado por IA desarrollado por el usuario sandeshrajx y publicado en HuggingFace. Se presenta como una reproduccion abierta de la arquitectura de deteccion multietapa de Pangram 4, construida sobre el backbone Qwen3.5-2B, un transformer hibrido con atencion lineal. El modelo no genera texto: es un clasificador que combina una cabeza de calibracion ordinal de 15 bins para estimar el grado de participacion de IA (0-100%) y una cabeza de etiquetado a nivel de token que clasifica cada token como humano, asistido por IA o generado por IA.
+OpenPangram-2B es un modelo de deteccion de texto generado por IA desarrollado por el usuario sandeshrajx y publicado en Hugging Face. Se presenta como una reproduccion abierta de la arquitectura de deteccion multietapa de Pangram 4, construida sobre el backbone Qwen3.5-2B, un transformer hibrido con atencion lineal. El modelo no genera texto: es un clasificador que combina una cabeza de calibracion ordinal de 15 bins para estimar el grado de participacion de IA (0-100%) y una cabeza de etiquetado a nivel de token que clasifica cada token como humano, asistido por IA o generado por IA.
 
 Su relevancia radica en que sustituye el enfoque habitual de puntuacion binaria a nivel de documento por una senal de procedencia granular e interpretable. Esto permite detectar autorias mixtas (pasajes coescritos por humano y modelo) y localizar que fragmentos concretos de un texto han sido generados, algo que los detectores convencionales basados en perplejidad no ofrecen. La model card reporta una correlacion de Spearman a nivel de documento de 0,948 y una precision de token del 83,23% sobre 972.065 tokens de validacion.
 
@@ -90,7 +90,7 @@ No se dispone de especificaciones publicas de modelos comparables en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenPangram-2B | 1,88 B | no disponible (ventanas de 384 tokens) | DOC rho 0,948; token accuracy 83,23% | Apache 2.0 | Pesos abiertos en HuggingFace |
+| OpenPangram-2B | 1,88 B | no disponible (ventanas de 384 tokens) | DOC rho 0,948; token accuracy 83,23% | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Pangram 4 | no disponible | no disponible | no disponible | Propietaria | Solo API, sin pesos publicos |
 | Otros detectores abiertos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -109,7 +109,7 @@ No se dispone de especificaciones publicas de modelos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeshrajx/openpangram-2b
+- Modelo en Hugging Face: https://huggingface.co/sandeshrajx/openpangram-2b
 - Informe de evaluacion de la etapa 2 (ruta relativa dentro del repositorio): `evals/stage2_evaluation_report.html`
 - Licencia del repositorio (ruta relativa): `LICENSE`
 - Informes tecnicos de Pangram (Pangram 4 y Pangram 3): citados en la model card sin enlace directo disponible

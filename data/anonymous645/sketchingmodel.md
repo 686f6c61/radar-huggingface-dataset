@@ -78,7 +78,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 | Contexto | No aplica | No aplica |
 | Rendimiento comparado | No disponible | No disponible |
 | Licencia | MIT | No disponible en la información consultada |
-| Disponibilidad | HuggingFace, 0 descargas, espejo sin validación externa | Ampliamente distribuidos, pero sin relación con este repositorio |
+| Disponibilidad | Hugging Face, 0 descargas, espejo sin validación externa | Ampliamente distribuidos, pero sin relación con este repositorio |
 | Datos de entrenamiento | No disponibles | No aplica |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anonymous645/SketchingModel
+- Repositorio en Hugging Face: https://huggingface.co/Anonymous645/SketchingModel
 - Proyecto original Deep-Sketch-Vectorization: https://github.com/Nauhcnay/Deep-Sketch-Vectorization
 - Image2CAD: mencionado en la model card como consumidor de los pesos, sin URL disponible
 - Resultados de búsqueda web: sin enlaces relevantes; las consultas devolvieron únicamente páginas de turismo de Delhi sin relación con el modelo

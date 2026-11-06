@@ -113,7 +113,7 @@ Notas: el autor indica que la cuadricula `-small` llega hasta `16x16`, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimSchneider42/cod-vae-4x32-tiny
+- Modelo en Hugging Face: https://huggingface.co/TimSchneider42/cod-vae-4x32-tiny
 - Paper original (Cho et al., ICCV 2025): https://arxiv.org/abs/2503.08737
 - Repositorio GitHub `cod-vae`: https://github.com/TimSchneider42/cod-vae
 - Codigo de la libreria: https://github.com/TimSchneider42/cod-vae/tree/main/cod_vae

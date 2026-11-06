@@ -4,7 +4,7 @@
 
 `keystats/ocr_dict` no es un modelo de lenguaje neuronal, sino un modelo de lenguaje estadístico KenLM de tipo 5-grama a nivel de palabra. El autor lo publica como componente auxiliar para un pipeline de OCR: su función es re-puntuar las hipótesis generadas por beam search en aquellos puntos donde varios motores de OCR discrepan entre sí, de modo que la transcripción final sea la más probable según el lenguaje natural observado en el corpus de entrenamiento.
 
-El modelo se ha entrenado exclusivamente con 4098 líneas procedentes del fichero `Train.csv` de una competición (no se han usado imágenes de test, corpus externos ni ediciones manuales), lo que lo convierte en un componente muy ajustado al dominio concreto de esa competición y de tamaño reducido. Se distribuye a través de HuggingFace en el repositorio `keystats/ocr_dict`, que aparece con un tamaño de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta.
+El modelo se ha entrenado exclusivamente con 4098 líneas procedentes del fichero `Train.csv` de una competición (no se han usado imágenes de test, corpus externos ni ediciones manuales), lo que lo convierte en un componente muy ajustado al dominio concreto de esa competición y de tamaño reducido. Se distribuye a través de Hugging Face en el repositorio `keystats/ocr_dict`, que aparece con un tamaño de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta.
 
 Por su naturaleza, no compite con los LLM actuales ni pretende hacerlo: es una pieza de infraestructura para post-procesado de OCR, con un coste computacional muy bajo y una ventana de contexto efectiva de 4 palabras precedentes. Su relevancia está limitada al pipeline para el que fue creado, y su adopción fuera de ese contexto exige reentrenarlo con un corpus representativo del nuevo dominio.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `keystats/ocr_dict` | KenLM 5-grama a nivel de palabra | 4098 líneas de `Train.csv` | 4 palabras | no disponible | HuggingFace, repo de 0.0 GB, 0 descargas |
+| `keystats/ocr_dict` | KenLM 5-grama a nivel de palabra | 4098 líneas de `Train.csv` | 4 palabras | no disponible | Hugging Face, repo de 0.0 GB, 0 descargas |
 | KenLM genérico (entrenado por el usuario) | KenLM n-grama | Corpus a elección del usuario | Configurable | Licencia de KenLM (LGPL) | Código abierto en GitHub |
-| Modelos neuronales de rescoring (por ejemplo, GPT-2 o BERT ajustados) | Transformer | Corpus a gran escala | Cientos o miles de tokens | Según modelo base | HuggingFace, ampliamente disponibles |
+| Modelos neuronales de rescoring (por ejemplo, GPT-2 o BERT ajustados) | Transformer | Corpus a gran escala | Cientos o miles de tokens | Según modelo base | Hugging Face, ampliamente disponibles |
 | SRILM | Modelo n-grama estadístico | Corpus a elección del usuario | Configurable | Licencia restrictiva para uso comercial | Distribución académica |
 
 No se dispone de datos cuantitativos publicados para `keystats/ocr_dict` que permitan una comparación numérica con estas alternativas; la tabla recoge únicamente diferencias de categoría, contexto y disponibilidad.
@@ -94,5 +94,5 @@ No se dispone de datos cuantitativos publicados para `keystats/ocr_dict` que per
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keystats/ocr_dict
+- Hugging Face: https://huggingface.co/keystats/ocr_dict
 - La búsqueda web realizada no ha devuelto enlaces relevantes al modelo. Los resultados obtenidos corresponden a páginas jurídicas en alemán sobre compraventa en eBay, sin relación alguna con `keystats/ocr_dict`, por lo que se omiten. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo.

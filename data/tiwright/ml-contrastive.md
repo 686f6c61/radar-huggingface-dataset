@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tiwright/ml-contrastive` es un repositorio de HuggingFace publicado por el usuario `tiwright` que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, empaquetada junto con su configuración explícita y un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con resultados de evaluación: la propia model card indica que el checkpoint es válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio se creó y se actualizó el 14 de septiembre de 2026, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes.
+`tiwright/ml-contrastive` es un repositorio de Hugging Face publicado por el usuario `tiwright` que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, empaquetada junto con su configuración explícita y un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con resultados de evaluación: la propia model card indica que el checkpoint es válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio se creó y se actualizó el 14 de septiembre de 2026, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes.
 
 El dato más relevante para un evaluador es la discrepancia entre la etiqueta declarada y el tamaño real de los pesos. La model card describe la escala como "giant", pero el recuento real de parámetros en el fichero `model.safetensors` es de 24.832 parámetros, un orden de magnitud muy inferior al de cualquier ViT etiquetado habitualmente como giant (cientos de millones de parámetros). Esto sitúa al artefacto en la categoría de juguete o de referencia mínima, útil para validar código y flujos de trabajo, no para inferencia en producción.
 
@@ -25,7 +25,7 @@ Otros metadatos del repositorio:
 
 | Parámetro | Valor |
 |---|---|
-| ID de HuggingFace | `tiwright/ml-contrastive` |
+| ID de Hugging Face | `tiwright/ml-contrastive` |
 | Autor | `tiwright` |
 | Pipeline declarado | No disponible |
 | Tags | safetensors, vit, pytorch, contrastive, license:bsd-3-clause, region:us |
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Compatibilidad con GPU de consumo: sí, en cualquier GPU de consumo actual e incluso en CPU. El cuello de botella será el overhead del framework, no la memoria ni el cómputo.
 - Opciones de despliegue: PyTorch en modo eager, `torch.compile` o exportación a ONNX/TorchScript son las vías naturales. vLLM, TGI, llama.cpp y Ollama no son aplicables, ya que no se trata de un modelo generativo de lenguaje ni existe adaptador publicado. Las clases automáticas de Transformers requieren un adaptador explícito según la propia model card.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de latencia, throughput ni resolución de entrada, por lo que cualquier cifra sería especulativa.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace, coherente con un checkpoint de decenas de kilobytes.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face, coherente con un checkpoint de decenas de kilobytes.
 
 ## Comparativa con modelos similares
 
@@ -92,7 +92,7 @@ La búsqueda web realizada no devolvió ningún resultado relacionado con este m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tiwright/ml-contrastive | 24.832 (recuento real en safetensors) | No disponible | BSD-3-Clause | Repositorio público en HuggingFace, 0 descargas | Checkpoint de inicialización sin entrenar |
+| tiwright/ml-contrastive | 24.832 (recuento real en safetensors) | No disponible | BSD-3-Clause | Repositorio público en Hugging Face, 0 descargas | Checkpoint de inicialización sin entrenar |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No se han proporcionado datos de modelos comparables en la información disponible |
 
 La única comparación que puede afirmarse con rigor es interna al propio repositorio: la etiqueta de escala "giant" de la model card no es coherente con los 24.832 parámetros reales del fichero de pesos, por lo que cualquier comparación basada en esa etiqueta sería engañosa.
@@ -113,7 +113,7 @@ La única comparación que puede afirmarse con rigor es interna al propio reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tiwright/ml-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/tiwright/ml-contrastive
 - Ficheros incluidos en el repositorio: `run.py` (artefacto principal), `README.md`, `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicialización).
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - La búsqueda web asociada no devolvió enlaces relevantes al modelo; los resultados obtenidos (localizadores de tiendas y servicios de mapas) no guardan relación con el objeto de esta ficha y se descartan.

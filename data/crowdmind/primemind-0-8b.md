@@ -22,7 +22,7 @@ Es relevante ahora sobre todo como experimento de investigacion: demuestra que e
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 0,8 GB |
 | Modalidades de entrada | Texto e imagen (pipeline image-text-to-text) |
-| Fecha de creacion en HuggingFace | 2026-09-10 |
+| Fecha de creacion en Hugging Face | 2026-09-10 |
 | Descargas / valoraciones | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 - VRAM en 8-bit: del orden de 0,6 GB para los pesos. En 4-bit, alrededor de 0,3 GB.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente, por ejemplo RTX 3050, RTX 3060, RTX 4060, RTX 4090 o superiores. Tambien es viable en CPU y en Apple Silicon por el tamano reducido.
 - Cabe en GPU de consumo: si, con holgura. El propio autor entreno el adaptador en una RTX 4060 Ti de 16 GB.
-- Opciones de despliegue: transformers con `AutoModelForMultimodalLM` y `trust_remote_code=True`, tal como indica la model card. El repositorio esta etiquetado como `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints. No hay ficheros GGUF publicados, por lo que llama.cpp u Ollama requeririan conversion previa. La compatibilidad con vLLM o TGI no esta documentada.
+- Opciones de despliegue: transformers con `AutoModelForMultimodalLM` y `trust_remote_code=True`, tal como indica la model card. El repositorio esta etiquetado como `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints. No hay ficheros GGUF publicados, por lo que llama.cpp u Ollama requeririan conversion previa. La compatibilidad con vLLM o TGI no esta documentada.
 - Latencia y throughput: no disponibles. No se publican mediciones.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ Nota: los datos de los modelos comparativos proceden de sus fichas publicas y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowdMind/PrimeMind-0.8B
+- Modelo en Hugging Face: https://huggingface.co/CrowdMind/PrimeMind-0.8B
 - Modelo base indicado: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de referencia 1: https://huggingface.co/datasets/catsaresupercool/synthetic-caveman-thinking
 - Dataset de referencia 2: https://huggingface.co/datasets/nibauman/objectnav-sft-claude-caveman

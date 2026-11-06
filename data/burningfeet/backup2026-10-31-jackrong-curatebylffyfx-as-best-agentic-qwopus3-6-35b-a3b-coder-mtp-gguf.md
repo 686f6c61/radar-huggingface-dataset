@@ -6,7 +6,7 @@ Este repositorio aloja una cuantizacion en formato GGUF del modelo Qwopus3.6-35B
 
 El modelo declara 35B parametros nominales en su nombre (35B-A3B indica aproximadamente 35 mil millones totales con unos 3 mil millones activos por token, aunque el dato de safetensors del repo apunta a 446.571.248 parametros, probablemente correspondiente a un subconjunto o a un adaptador LoRA incluido). Ofrece soporte para contexto largo, modo thinking-off, function calling, tool use y capacidades de vision. Los idiomas declarados son ingles, chino, espanol, ruso y japones.
 
-Su relevancia radica en que combina un modelo MoE eficiente en inferencia con un formato GGUF ampliamente compatible con llama.cpp y Ollama, lo que facilita su despliegue en hardware de consumo. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, si bien el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Su relevancia radica en que combina un modelo MoE eficiente en inferencia con un formato GGUF ampliamente compatible con llama.cpp y Ollama, lo que facilita su despliegue en hardware de consumo. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, si bien el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparado para establecer diferencias cuan
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - El dato de parametros en safetensors (446.571.248) no coincide con los 35B nominales, lo que genera incertidumbre sobre el contenido exacto del repo (posible inclusion de adaptadores LoRA o subconjuntos).
 - No se han publicado benchmarks, por lo que el rendimiento real no esta verificado de forma independiente.
 - Riesgo de alucinacion inherente a los modelos de lenguaje, agravado en tareas de codigo y matematicas si no se valida la salida.
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparado para establecer diferencias cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/burningfeet/backup2026-10-31-Jackrong-curatebyLffyFx-as-best-agentic-Qwopus3.6-35B-A3B-Coder-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/burningfeet/backup2026-10-31-Jackrong-curatebyLffyFx-as-best-agentic-Qwopus3.6-35B-A3B-Coder-MTP-GGUF
 - Modelo base del afinado: https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-v1
 - Modelo base original: https://huggingface.co/unsloth/Qwen3.6-35B-A3B

@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo y no existe una categoria de mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/edwinleung/audio-visual-learning-analysis
+- Repositorio en Hugging Face: https://huggingface.co/edwinleung/audio-visual-learning-analysis
 - Survey de referencia (GeWu-Lab): https://arxiv.org/abs/2208.09579
 - PDF del survey: https://arxiv.org/pdf/2208.09579
 - Pagina del grupo GeWu-Lab: https://gewu-lab.github.io/audio-visual-learning/

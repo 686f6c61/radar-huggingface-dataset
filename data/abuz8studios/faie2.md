@@ -102,7 +102,7 @@ Nota: la cifra de llama.cpp (~53 tok/s) corresponde a la decodificación plana m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abuz8studios/FAIE2
+- Repositorio en Hugging Face: https://huggingface.co/abuz8studios/FAIE2
 - Variante Flash-Next: https://huggingface.co/abuz8studios/faie2-flashnext (referenciada como repositorio hermano)
 - Motor predecesor GLM: https://huggingface.co/abuz8studios/faie (referenciado como repositorio hermano)
 - Documentación de diseño: `DESIGN.md` en el repositorio (incluye el capítulo Flash-Next §9)

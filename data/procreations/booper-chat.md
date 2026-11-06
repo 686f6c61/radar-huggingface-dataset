@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - ProCreations/booper-chat](https://huggingface.co/ProCreations/booper-chat)
+- [Hugging Face - ProCreations/booper-chat](https://huggingface.co/ProCreations/booper-chat)
 - [Modelo base - ProCreations/booper-pretrain](https://huggingface.co/ProCreations/booper-pretrain)
 - [Dataset - mookiezi/Discord-Dialogues](https://huggingface.co/datasets/mookiezi/Discord-Dialogues)
 - [Dataset - openbmb/Ultra-FineWeb-L1](https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L1)

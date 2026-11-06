@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TTT-VLA SG-LP (MLP state decoder) para LIBERO es un checkpoint de investigación publicado por el usuario Donghyun1228 en HuggingFace. Se trata de una reproducción no oficial de la etapa de entrenamiento fuente ("π₀.₅ + SG-LP") del método TTT-VLA descrito en el artículo *TTT-VLA: Test-Time Latent Prompt Optimization for VLA Models* (arXiv:2606.03127). El modelo se implementa sobre JAX/OpenPI π₀.₅, un modelo de visión-lenguaje-acción (VLA) orientado a manipulación robótica, y este checkpoint concreto no ha recibido entrenamiento en tiempo de prueba (test-time training), por lo que representa únicamente el punto de partida del pipeline completo.
+TTT-VLA SG-LP (MLP state decoder) para LIBERO es un checkpoint de investigación publicado por el usuario Donghyun1228 en Hugging Face. Se trata de una reproducción no oficial de la etapa de entrenamiento fuente ("π₀.₅ + SG-LP") del método TTT-VLA descrito en el artículo *TTT-VLA: Test-Time Latent Prompt Optimization for VLA Models* (arXiv:2606.03127). El modelo se implementa sobre JAX/OpenPI π₀.₅, un modelo de visión-lenguaje-acción (VLA) orientado a manipulación robótica, y este checkpoint concreto no ha recibido entrenamiento en tiempo de prueba (test-time training), por lo que representa únicamente el punto de partida del pipeline completo.
 
 El modelo parte de los parámetros π₀.₅ LIBERO del checkpoint `Donghyun1228/libero-dense-kd-ablation-inputs-20261007` y se entrena sobre el conjunto original-view LIBERO (1.693 episodios, 273.465 fotogramas, 4 suites). La innovación principal respecto al artículo original es la cabecera proxy: en lugar del experto de estado basado en flow matching propuesto por los autores, se emplea un decodificador de estado MLP sobre las características del VLM, que regresa por MSE las coordenadas normalizadas del efector final (xyz) y el estado del gripper.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Donghyun1228/ttt-vla-libero-sglp-mlp-decoder-20261015 (este) | no disponible | no disponible | Solo perdidas de entrenamiento | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| Donghyun1228/ttt-vla-libero-sglp-mlp-decoder-20261015 (este) | no disponible | no disponible | Solo perdidas de entrenamiento | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | TTT-VLA (referencia del articulo, arXiv:2606.03127) | no disponible | no disponible | Resultados del articulo no disponibles en la informacion recogida | no disponible | Articulo y version HTML en arXiv |
-| Donghyun1228/ttt-vla-libero-actionframe-lr1e5-20261007 | no disponible | no disponible | Protocolos LIBERO de proyecto, no resultados del articulo | no disponible en la informacion recogida | HuggingFace |
+| Donghyun1228/ttt-vla-libero-actionframe-lr1e5-20261007 | no disponible | no disponible | Protocolos LIBERO de proyecto, no resultados del articulo | no disponible en la informacion recogida | Hugging Face |
 | π₀.₅ (OpenPI, base sobre la que se construye) | no disponible | no disponible | no disponible | no disponible | OpenPI |
 
 No se dispone de datos suficientes para comparar parametros, contexto o metricas con alternativas de la misma categoria.
@@ -96,7 +96,7 @@ No se dispone de datos suficientes para comparar parametros, contexto o metricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/ttt-vla-libero-sglp-mlp-decoder-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/ttt-vla-libero-sglp-mlp-decoder-20261015
 - Articulo TTT-VLA (abs): https://arxiv.org/abs/2606.03127
 - Articulo TTT-VLA (HTML v1): https://arxiv.org/html/2606.03127v1
 - Ficha del articulo en DeepPaper: https://arxiv.deeppaper.ai/papers/2606.03127v1

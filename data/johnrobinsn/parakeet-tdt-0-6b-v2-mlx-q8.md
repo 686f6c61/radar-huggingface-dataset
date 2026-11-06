@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parakeet TDT 0.6B v2 MLX Q8 es una versión cuantizada a 8 bits del modelo de reconocimiento automático del habla (ASR) Parakeet TDT 0.6B v2 de NVIDIA, adaptada para su ejecución en Apple Silicon mediante el framework MLX. El autor de la conversión y cuantización es johnrobinsn, y el resultado se distribuye a través de HuggingFace con la librería `mlx` y el pipeline `automatic-speech-recognition`. El objetivo es reducir el peso del modelo de 2,3 GB a 0,7 GB manteniendo una calidad de transcripción estadísticamente indistinguible de la versión en bfloat16.
+Parakeet TDT 0.6B v2 MLX Q8 es una versión cuantizada a 8 bits del modelo de reconocimiento automático del habla (ASR) Parakeet TDT 0.6B v2 de NVIDIA, adaptada para su ejecución en Apple Silicon mediante el framework MLX. El autor de la conversión y cuantización es johnrobinsn, y el resultado se distribuye a través de Hugging Face con la librería `mlx` y el pipeline `automatic-speech-recognition`. El objetivo es reducir el peso del modelo de 2,3 GB a 0,7 GB manteniendo una calidad de transcripción estadísticamente indistinguible de la versión en bfloat16.
 
 El modelo original emplea una arquitectura TDT (Token-and-Duration Transducer), un tipo de transducer que predice conjuntamente tokens y duraciones, diseñado específicamente para ASR en inglés. Esta versión cuantizada conserva el encoder en 8 bits (MLX affine quantization, group size 64) mientras que el decoder y la red conjunta permanecen en bfloat16. Los pesos totales en safetensors suman 235.008.646 parámetros.
 
@@ -81,7 +81,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- [HuggingFace: johnrobinsn/parakeet-tdt-0.6b-v2-mlx-q8](https://huggingface.co/johnrobinsn/parakeet-tdt-0.6b-v2-mlx-q8)
+- [Hugging Face: johnrobinsn/parakeet-tdt-0.6b-v2-mlx-q8](https://huggingface.co/johnrobinsn/parakeet-tdt-0.6b-v2-mlx-q8)
 - [Modelo original: nvidia/parakeet-tdt-0.6b-v2](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2)
 - [Conversión MLX de referencia: mlx-community/parakeet-tdt-0.6b-v2](https://huggingface.co/mlx-community/parakeet-tdt-0.6b-v2)
 - [Repositorio parakeet-mlx](https://github.com/senstella/parakeet-mlx)

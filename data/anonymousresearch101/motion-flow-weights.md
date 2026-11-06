@@ -74,7 +74,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Contexto / longitud de secuencia | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Motion flow demo — checkpoints | no disponible | no disponible | no disponible | other | Repositorio HuggingFace, 0 descargas |
+| Motion flow demo — checkpoints | no disponible | no disponible | no disponible | other | Repositorio Hugging Face, 0 descargas |
 | Alternativas de la categoria (MDM, MLD y familia de flow matching para movimiento) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anonymousresearch101/motion-flow-weights
+- Repositorio en Hugging Face: https://huggingface.co/Anonymousresearch101/motion-flow-weights
 - Registro del modelo corporal SMPL (dependencia obligatoria, no incluida): https://smpl.is.tue.mpg.de
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible en la informacion proporcionada.

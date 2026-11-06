@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Video DiT — Stage A (AR-k1 y bidirectional) es un archivo de checkpoints de investigación orientado a la generación de vídeo de un cubo de Rubik 2x2 de tres caras con cámara fija. Lo publica el usuario weihang44 en HuggingFace y no constituye un modelo conversacional ni un pipeline listo para producción, sino una colección de pesos nativos de entrenamiento. El modelo recibe el fotograma frontal inicial y un prompt de lenguaje completo de nueve acciones, y genera los 20 fotogramas latentes futuros; las variantes autorregresivas (AR) usan el historial visual generado en inferencia, mientras que las bidireccionales desruidifican los 20 fotogramas latentes de forma conjunta.
+Video DiT — Stage A (AR-k1 y bidirectional) es un archivo de checkpoints de investigación orientado a la generación de vídeo de un cubo de Rubik 2x2 de tres caras con cámara fija. Lo publica el usuario weihang44 en Hugging Face y no constituye un modelo conversacional ni un pipeline listo para producción, sino una colección de pesos nativos de entrenamiento. El modelo recibe el fotograma frontal inicial y un prompt de lenguaje completo de nueve acciones, y genera los 20 fotogramas latentes futuros; las variantes autorregresivas (AR) usan el historial visual generado en inferencia, mientras que las bidireccionales desruidifican los 20 fotogramas latentes de forma conjunta.
 
 La arquitectura es un Diffusion Transformer (DiT) de vídeo con 3D RoPE, SwiGLU, dimensión de cabeza 64, 16 canales latentes, parches latentes (1,2,2) y características de lenguaje cacheadas de 768 dimensiones. Los checkpoints oscilan entre 94,2 y 96,9 millones de parámetros según su forma (balanced, deep-narrow o wide-shallow). Se libera como baseline exclusivamente de vídeo, sin condicionamiento de estado vectorial ni pérdida auxiliar de estado.
 
@@ -76,6 +76,6 @@ No disponible. La información proporcionada no describe modelos comparables de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weihang44/video-dit-rubik-stage-a-ar-k1-bidir
+- Modelo en Hugging Face: https://huggingface.co/weihang44/video-dit-rubik-stage-a-ar-k1-bidir
 - Release relacionada (Stage-A AR-k4): https://huggingface.co/weihang44/video-dit-rubik-stage-a-ar-k4
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

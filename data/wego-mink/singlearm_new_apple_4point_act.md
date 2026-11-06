@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wego-mink/singlearm_new_apple_4point_act` es una política de imitación para robótica entrenada con el método Action Chunking with Transformers (ACT), publicado por el usuario wego-mink en HuggingFace Hub el 2 de noviembre de 2026. Se trata de un artefacto de aprendizaje por imitación que predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales, una técnica descrita en el artículo arXiv 2304.13705 y adoptada como política de referencia dentro del ecosistema LeRobot de HuggingFace.
+El modelo `wego-mink/singlearm_new_apple_4point_act` es una política de imitación para robótica entrenada con el método Action Chunking with Transformers (ACT), publicado por el usuario wego-mink en Hugging Face Hub el 2 de noviembre de 2026. Se trata de un artefacto de aprendizaje por imitación que predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales, una técnica descrita en el artículo arXiv 2304.13705 y adoptada como política de referencia dentro del ecosistema LeRobot de Hugging Face.
 
 El modelo tiene 51.670.663 parámetros (aproximadamente 51,7 millones) almacenados en formato safetensors, con un tamaño de repositorio de 0,2 GB. Está entrenado sobre el dataset `wego-mink/singlearm_new_apple_4point`, que por su nombre sugiere una tarea de manipulación con un brazo robótico y cuatro puntos de agarre sobre una manzana, aunque la model card no detalla la composición del dataset ni el robot utilizado.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wego-mink/singlearm_new_apple_4point_act | 51,7 M | no disponible | Manipulación single-arm (ACT) | Apache 2.0 | HuggingFace Hub |
-| Políticas ACT de referencia en LeRobot | no disponible | no disponible | Manipulación genérica | Apache 2.0 | HuggingFace Hub / GitHub |
-| Diffusion Policy (LeRobot) | no disponible | no disponible | Manipulación con difusión | Apache 2.0 | HuggingFace Hub / GitHub |
-| VQ-BeT (LeRobot) | no disponible | no disponible | Manipulación con tokens discretos | Apache 2.0 | HuggingFace Hub / GitHub |
+| wego-mink/singlearm_new_apple_4point_act | 51,7 M | no disponible | Manipulación single-arm (ACT) | Apache 2.0 | Hugging Face Hub |
+| Políticas ACT de referencia en LeRobot | no disponible | no disponible | Manipulación genérica | Apache 2.0 | Hugging Face Hub / GitHub |
+| Diffusion Policy (LeRobot) | no disponible | no disponible | Manipulación con difusión | Apache 2.0 | Hugging Face Hub / GitHub |
+| VQ-BeT (LeRobot) | no disponible | no disponible | Manipulación con tokens discretos | Apache 2.0 | Hugging Face Hub / GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estas políticas en la información proporcionada; la comparación se limita a categoría, licencia y disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas políticas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wego-mink/singlearm_new_apple_4point_act
+- Hugging Face: https://huggingface.co/wego-mink/singlearm_new_apple_4point_act
 - Dataset: https://huggingface.co/datasets/wego-mink/singlearm_new_apple_4point
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - LeRobot (GitHub): https://github.com/huggingface/lerobot

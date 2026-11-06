@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyLLaMA es una serie de modelos con arquitectura Llama 2 entrenados sobre el conjunto de datos TinyStories, publicados por el usuario 0x3 en HuggingFace. El objetivo declarado es servir de pesos compatibles con el proyecto llama2.c de Andrej Karpathy, un motor de inferencia minimalista escrito en C que permite ejecutar modelos Llama 2 en hardware muy modesto, incluso en CPU o en dispositivos embebidos.
+TinyLLaMA es una serie de modelos con arquitectura Llama 2 entrenados sobre el conjunto de datos TinyStories, publicados por el usuario 0x3 en Hugging Face. El objetivo declarado es servir de pesos compatibles con el proyecto llama2.c de Andrej Karpathy, un motor de inferencia minimalista escrito en C que permite ejecutar modelos Llama 2 en hardware muy modesto, incluso en CPU o en dispositivos embebidos.
 
 El repositorio, de aproximadamente 1,3 GB, agrupa varios checkpoints de distintos tamanos de la familia TinyLLaMA (tipicamente en el rango de 1M a 100M de parametros, aunque el autor no detalla la lista exacta en la model card). El entrenamiento sobre TinyStories, un corpus sintetico de cuentos infantiles generado con GPT-3.5 y GPT-4, produce modelos capaces de generar texto narrativo gramaticalmente coherente con un vocabulario muy reducido, lo que los convierte en un banco de pruebas ideal para investigacion en eficiencia y para validar implementaciones de inferencia.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLLaMA (0x3) | no disponible (serie) | no disponible | TinyStories | MIT | HuggingFace |
-| TinyStories-1M/33M (roneneldan) | 1M-33M | no disponible | TinyStories | MIT | HuggingFace |
-| TinyLlama-1.1B | 1,1B | 2048 | SlimPajama + code | Apache 2.0 | HuggingFace |
+| TinyLLaMA (0x3) | no disponible (serie) | no disponible | TinyStories | MIT | Hugging Face |
+| TinyStories-1M/33M (roneneldan) | 1M-33M | no disponible | TinyStories | MIT | Hugging Face |
+| TinyLlama-1.1B | 1,1B | 2048 | SlimPajama + code | Apache 2.0 | Hugging Face |
 | Llama 2 7B | 7B | 4096 | corpus web + RLHF | Llama 2 license | Meta |
 
 La comparativa con TinyLlama-1.1B y Llama 2 7B es solo orientativa: esos modelos estan entrenados sobre corpus generales y tienen capacidades muy superiores. Los modelos de roneneldan sobre TinyStories son los mas directamente comparables, aunque no se dispone de datos de rendimiento cruzados en la informacion proporcionada.
@@ -82,7 +82,7 @@ La comparativa con TinyLlama-1.1B y Llama 2 7B es solo orientativa: esos modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0x3/tinyllamas
+- Hugging Face: https://huggingface.co/0x3/tinyllamas
 - Proyecto llama2.c: https://github.com/karpathy/llama2.c
 - Dataset TinyStories (paper): https://arxiv.org/abs/2305.07759
-- Repositorio TinyStories en HuggingFace: https://huggingface.co/datasets/roneneldan/TinyStories
+- Repositorio TinyStories en Hugging Face: https://huggingface.co/datasets/roneneldan/TinyStories

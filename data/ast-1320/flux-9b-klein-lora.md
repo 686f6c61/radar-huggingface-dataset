@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux-9B-Klein-LoRA es un repositorio publicado en HuggingFace por el usuario AST-1320 bajo licencia Apache 2.0. Por el nombre y el contenido disponible, se trata de un adaptador LoRA (Low-Rank Adaptation) orientado a un modelo base denominado "Flux-9B-Klein", presumiblemente un modelo de 9 mil millones de parametros. El repositorio tiene un tamano de 2,2 GB, lo que es coherente con un conjunto de pesos de adaptador de baja graduacion mas que con un modelo completo.
+Flux-9B-Klein-LoRA es un repositorio publicado en Hugging Face por el usuario AST-1320 bajo licencia Apache 2.0. Por el nombre y el contenido disponible, se trata de un adaptador LoRA (Low-Rank Adaptation) orientado a un modelo base denominado "Flux-9B-Klein", presumiblemente un modelo de 9 mil millones de parametros. El repositorio tiene un tamano de 2,2 GB, lo que es coherente con un conjunto de pesos de adaptador de baja graduacion mas que con un modelo completo.
 
 La model card publicada es practicamente vacia: unicamente incluye la etiqueta de licencia Apache 2.0, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas soportados ni formato de pesos en los metadatos.
 
@@ -74,7 +74,7 @@ No disponible. No se conocen modelos comparables porque no se ha identificado pu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AST-1320/Flux-9B-Klein-LoRA
+- Repositorio Hugging Face: https://huggingface.co/AST-1320/Flux-9B-Klein-LoRA
 - Modelo base "Flux-9B-Klein": no disponible (no se proporciona enlace)
 - Paper, blog o demo: no disponible
 - Repositorio de codigo: no disponible

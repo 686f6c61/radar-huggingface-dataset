@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pragmaticcs/SignOfFour-GGUF
+- Hugging Face: https://huggingface.co/pragmaticcs/SignOfFour-GGUF
 - Modelo base (ancla): https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder
 - Modelo donante 1: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo donante 2: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev

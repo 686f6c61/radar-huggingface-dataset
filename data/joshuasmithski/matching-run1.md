@@ -1,7 +1,7 @@
 # joshuasmithski/matching-run1
 
 ## Resumen
-Poolformer for Matching es una implementacion pequena de la arquitectura Poolformer orientada a tareas de emparejamiento (matching), publicada por el usuario joshuasmithski en HuggingFace. El repositorio se presenta explicitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo con resultados validados.
+Poolformer for Matching es una implementacion pequena de la arquitectura Poolformer orientada a tareas de emparejamiento (matching), publicada por el usuario joshuasmithski en Hugging Face. El repositorio se presenta explicitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo con resultados validados.
 
 Se trata de un artefacto experimental de escala "tiny" con aproximadamente 33.088 parametros (segun los metadatos de safetensors), lo que lo situa en el rango de juguete o prototipo. Incluye una configuracion de arquitectura explicita (`config.json`), una receta de experimento por defecto (`training_args.json`) y un script principal (`pipeline.py`) con un ejemplo ejecutable o punto de entrada de entrenamiento.
 
@@ -70,5 +70,5 @@ No disponible. No se han proporcionado datos de rendimiento, y el repositorio es
 - Cero descargas y cero "likes" en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/joshuasmithski/matching-run1
+- Hugging Face: https://huggingface.co/joshuasmithski/matching-run1
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

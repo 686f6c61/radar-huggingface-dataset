@@ -105,7 +105,7 @@ Frente al checkpoint original de Microsoft, esta conversion sacrifica los decodi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ucalyptus/trellis-image-large-mlx
+- Repositorio Hugging Face: https://huggingface.co/ucalyptus/trellis-image-large-mlx
 - README del repositorio: https://huggingface.co/ucalyptus/trellis-image-large-mlx/blob/main/README.md
 - Modelo base TRELLIS-image-large: https://huggingface.co/microsoft/TRELLIS-image-large
 - Acondicionador DINOv2 con registers: https://huggingface.co/facebook/dinov2-with-registers-large

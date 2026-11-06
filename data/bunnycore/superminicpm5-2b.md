@@ -4,7 +4,7 @@
 
 SuperMiniCPM5-2B es un adaptador LoRA publicado por el usuario bunnycore sobre el modelo base openbmb/MiniCPM5-2B. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (50.233.344 parámetros, unos 0,3 GB de repositorio), con librería declarada `peft` y pipeline `text-generation`. Los tags incluyen `lora`, `unsloth`, `transformers`, `gguf` y `base_model:adapter:openbmb/MiniCPM5-2B`, lo que indica que se entrenó con el ecosistema PEFT/Unsloth y que existe al menos un artefacto en formato GGUF.
 
-El problema que resuelve es acotado: permitir especializar un modelo base de aproximadamente 2.000 millones de parámetros mediante fine-tuning eficiente en parámetros, sin necesidad de reentrenar ni redistribuir el modelo completo. La relevancia práctica depende por completo del modelo base, porque la model card del adaptador es la plantilla por defecto de HuggingFace sin rellenar: no documenta datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación.
+El problema que resuelve es acotado: permitir especializar un modelo base de aproximadamente 2.000 millones de parámetros mediante fine-tuning eficiente en parámetros, sin necesidad de reentrenar ni redistribuir el modelo completo. La relevancia práctica depende por completo del modelo base, porque la model card del adaptador es la plantilla por defecto de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación.
 
 Se trata, por tanto, de un artefacto experimental con 0 descargas y 0 «likes» en el momento de la consulta, creado el 17 de septiembre de 2026 y actualizado ocho segundos después. No hay publicación, paper ni demo asociados, y la búsqueda web no devolvió ningún resultado relacionado con el modelo (los resultados obtenidos corresponden a un simposio de hidrología sin relación alguna). Cualquier uso en producción requiere validación propia y comprobación previa de la licencia del modelo base.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un artefacto experimental con 0 descargas y 0 «likes» 
 
 El artefacto es un adaptador de bajo rango (LoRA) en formato PEFT, framework declarado PEFT 0.18.1, pensado para cargarse sobre openbmb/MiniCPM5-2B mediante `transformers` + `peft`. El tag `unsloth` sugiere que el entrenamiento se realizó con esa librería de fine-tuning optimizada, pero no se especifican rango (`r`), `alpha`, `dropout`, módulos objetivo ni si se aplicó a todas las proyecciones lineales o solo a atención. El recuento de 50.233.344 parámetros de adaptador equivale a aproximadamente el 2,5 % de un modelo base de 2B, lo que es compatible con un LoRA de rango medio-alto sobre varios tipos de capa.
 
-No hay información sobre el dataset de entrenamiento, el número de tokens vistos, la composición de los datos, la existencia de fases de RLHF, DPO o SFT, ni sobre regularización o precisión usada (fp16/bf16). Tampoco se documenta ninguna innovación técnica propia: el mérito arquitectónico, si lo hay, corresponde íntegramente al modelo base. El único enlace técnico presente en la model card es el tag `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de CO2, citado en la plantilla estándar de HuggingFace, y no a un paper de este modelo.
+No hay información sobre el dataset de entrenamiento, el número de tokens vistos, la composición de los datos, la existencia de fases de RLHF, DPO o SFT, ni sobre regularización o precisión usada (fp16/bf16). Tampoco se documenta ninguna innovación técnica propia: el mérito arquitectónico, si lo hay, corresponde íntegramente al modelo base. El único enlace técnico presente en la model card es el tag `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de CO2, citado en la plantilla estándar de Hugging Face, y no a un paper de este modelo.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ La diferencia fundamental no es de tamaño sino de madurez: las alternativas cue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bunnycore/SuperMiniCPM5-2B
+- Modelo en Hugging Face: https://huggingface.co/bunnycore/SuperMiniCPM5-2B
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Librería PEFT: https://huggingface.co/docs/peft/index
 - Unsloth: https://github.com/unslothai/unsloth

@@ -98,7 +98,7 @@ No se han proporcionado pesos, contexto ni licencia de encoders alternativos par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruvnet/ruvector-typesafe-banking77
+- Hugging Face: https://huggingface.co/ruvnet/ruvector-typesafe-banking77
 - Paquete npm: https://www.npmjs.com/package/@ruvector/typesafe
 - Dataset PolyAI/banking77: https://huggingface.co/datasets/PolyAI/banking77
 - Paper de referencia: Casanueva et al., *Efficient Intent Detection with Dual Sentence Encoders* (2020), arXiv:2003.04807

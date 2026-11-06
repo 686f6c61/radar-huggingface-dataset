@@ -6,7 +6,7 @@
 
 El modelo resuelve un problema concreto: la mayoria de sistemas ASR comerciales tienen un rendimiento notablemente inferior en dialectos arabes y en audio de baja calidad (telefonia de 8 kHz, ruido de canal) en comparacion con el arabe formal. Este ajuste incorpora una etapa de GRPO (Group Relative Policy Optimization) sobre la tarea 06 del pipeline de entrenamiento, lo que sugiere un refinamiento por refuerzo orientado a mejorar la calidad de la transcripcion mas alla del ajuste supervisado clasico.
 
-Con 2.038.052.480 parametros, un repositorio de 4,1 GB en formato safetensors y licencia Apache 2.0, es un modelo de tamano contenido que puede desplegarse en infraestructura modesta. Su acceso esta restringido (gated) en HuggingFace, por lo que requiere aceptar las condiciones del autor antes de la descarga.
+Con 2.038.052.480 parametros, un repositorio de 4,1 GB en formato safetensors y licencia Apache 2.0, es un modelo de tamano contenido que puede desplegarse en infraestructura modesta. Su acceso esta restringido (gated) en Hugging Face, por lo que requiere aceptar las condiciones del autor antes de la descarga.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ Los tags del repositorio confirman que el entrenamiento puso enfasis en dialecto
 - Reconocimiento de audio telefonico (canal de banda estrecha, ruido de linea).
 - Manejo de code-switching arabe-ingles dentro de una misma locucion.
 - Transcripcion en ingles como idioma secundario.
-- Salida de texto plano alineada con el pipeline `automatic-speech-recognition` de HuggingFace.
+- Salida de texto plano alineada con el pipeline `automatic-speech-recognition` de Hugging Face.
 - No se ha documentado soporte de tool calling, function calling, agentes ni razonamiento multi-paso; es un modelo puramente ASR.
 - No se ha documentado modo thinking, vision ni audio generation (solo entrada de audio).
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada con cuantizacion de 8 bits: aproximadamente 2,5-3 GB de pesos; con 4 bits, alrededor de 1,5-2 GB. No hay variantes GGUF publicadas en el repositorio, por lo que la cuantizacion requeriria conversion propia.
 - GPU recomendadas: NVIDIA A100, H100 o L40S para despliegue de alta concurrencia; RTX 4090, RTX 3090 o RTX 4080 para inferencia individual con holgura.
 - Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM en fp16, y en tarjetas de 4-6 GB con cuantizacion. Una RTX 3060 de 12 GB o una RTX 4060 Ti de 16 GB son suficientes para uso individual.
-- Opciones de despliegue: HuggingFace Transformers con el pipeline `automatic-speech-recognition`; servidores compatibles con modelos Qwen3-ASR (vLLM si existe soporte para la arquitectura, TGI, o servidores propios del ecosistema Qwen). Para cuantizacion ligera seria necesario convertir a GGUF y usar llama.cpp, aunque no se garantiza soporte nativo de la arquitectura de audio.
+- Opciones de despliegue: Hugging Face Transformers con el pipeline `automatic-speech-recognition`; servidores compatibles con modelos Qwen3-ASR (vLLM si existe soporte para la arquitectura, TGI, o servidores propios del ecosistema Qwen). Para cuantizacion ligera seria necesario convertir a GGUF y usar llama.cpp, aunque no se garantiza soporte nativo de la arquitectura de audio.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Para un modelo de 1,7B en una GPU moderna se espera un factor de tiempo real (RTF) muy por debajo de 1 en audio por lotes, pero no hay mediciones publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ La comparacion con Whisper large-v3 es la mas directa por tamano y proposito gen
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga, lo que puede anadir friccion en pipelines automatizados.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga, lo que puede anadir friccion en pipelines automatizados.
 - Cobertura linguistica limitada a arabe e ingles; no es adecuado para otros idiomas.
 - Al ser un ajuste especifico sobre dialectos y telefonia, puede degradarse en audio de alta fidelidad, musica o entornos con ruido no telefonico, aunque no hay datos que lo confirmen.
 - Riesgo de alucinacion en pasajes de audio ininteligible o silencios largos, comun en modelos ASR de tipo seq2seq; se recomienda validacion con confianza o deteccion de voz.
@@ -92,7 +92,7 @@ La comparacion con Whisper large-v3 es la mas directa por tamano y proposito gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo3
+- Modelo en Hugging Face: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo3
 - Modelo base: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-best-task06
 - Paper de GRPO (DeepSeekMath): https://arxiv.org/abs/2402.03300
 - Familia Qwen3-ASR (referencia de arquitectura): https://huggingface.co/Qwen

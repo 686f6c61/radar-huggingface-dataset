@@ -105,7 +105,7 @@ No se dispone de informacion sobre alternativas de otros fabricantes (Qwen, Llam
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/FreedomAISVR/Gemma-4-E4B-it-MXFP4-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/FreedomAISVR/Gemma-4-E4B-it-MXFP4-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Perfil del autor de la cuantizacion: https://huggingface.co/FreedomAISVR
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sapiens2-0.8B es un backbone de visión transformer de 0,814 mil millones de parámetros (0,818 B según la model card) desarrollado por Meta y distribuido en HuggingFace. Forma parte de la familia Sapiens2, un conjunto de modelos preentrenados sobre 1.000 millones de imágenes de personas y diseñados específicamente para tareas centradas en el ser humano: estimación de pose, segmentación de partes del cuerpo, estimación de normales de superficie y pointmaps. Este repositorio concreto contiene únicamente el backbone preentrenado, no una cabeza de tarea: su salida son características densas por parche, pensadas para inicializar y afinar cabezas específicas.
+Sapiens2-0.8B es un backbone de visión transformer de 0,814 mil millones de parámetros (0,818 B según la model card) desarrollado por Meta y distribuido en Hugging Face. Forma parte de la familia Sapiens2, un conjunto de modelos preentrenados sobre 1.000 millones de imágenes de personas y diseñados específicamente para tareas centradas en el ser humano: estimación de pose, segmentación de partes del cuerpo, estimación de normales de superficie y pointmaps. Este repositorio concreto contiene únicamente el backbone preentrenado, no una cabeza de tarea: su salida son características densas por parche, pensadas para inicializar y afinar cabezas específicas.
 
 El problema que resuelve es el de disponer de un extractor de características de alta resolución y dominio específico (personas) que supere a los backbones genéricos cuando la tarea es de análisis humano. La arquitectura es un ViT con RoPE, GQA, SwiGLU, RMSNorm y QK-norm, con dimensión de embedding 1.280, 32 capas y 16 cabezas de atención. Se preentrenó a una resolución de 1024 × 768 píxeles con parches de 16 px, lo que se traduce en 3.072 tokens de parche por imagen y 2,592 T FLOPs por forward pass.
 
@@ -105,7 +105,7 @@ Respecto a alternativas externas de la misma categoría (backbones de visión pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/ml-resources/sapiens2-pretrain-0.8b
+- Repositorio en Hugging Face (espejo): https://huggingface.co/ml-resources/sapiens2-pretrain-0.8b
 - Repositorio original de Meta: https://huggingface.co/facebook/sapiens2-pretrain-0.8b
 - Paper: https://arxiv.org/pdf/2604.21681 (referencia `arxiv:2604.21681`)
 - Página del proyecto: https://rawalkhirodkar.github.io/sapiens2

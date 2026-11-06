@@ -4,7 +4,7 @@
 
 RegFM es un modelo de fundación (foundation model) para la regulación transcripcional humana, desarrollado por Zijing Gao y colaboradores (contacto en Tsinghua University) y publicado bajo licencia MIT. El modelo trata la regulación génica como un diálogo entre secuencias cis-reguladoras (CREs) y reguladores trans (factores de transcripción y reguladores de cromatina), acoplando representaciones de CRE de largo alcance con la actividad de TF/CR. Está entrenado con perfiles transcriptómicos a gran escala de ENCODE y CELLxGENE, y aprende representaciones regulatorias centradas en genes que generalizan a contextos celulares no vistos.
 
-La arquitectura concreta (número de parámetros, tipo de red, etc.) no se detalla en la información disponible, pero el repositorio de HuggingFace ocupa 18,8 GB, lo que sugiere un modelo de tamaño considerable. Está implementado en PyTorch y su pipeline se clasifica como "other" (no es un modelo de lenguaje estándar). Su relevancia radica en que aborda un problema central en genómica: predecir la expresión génica a partir de secuencia y contexto celular, con aplicaciones en anotación de elementos reguladores, respuesta a perturbaciones y análisis interpretable de interacciones cis-trans.
+La arquitectura concreta (número de parámetros, tipo de red, etc.) no se detalla en la información disponible, pero el repositorio de Hugging Face ocupa 18,8 GB, lo que sugiere un modelo de tamaño considerable. Está implementado en PyTorch y su pipeline se clasifica como "other" (no es un modelo de lenguaje estándar). Su relevancia radica en que aborda un problema central en genómica: predecir la expresión génica a partir de secuencia y contexto celular, con aplicaciones en anotación de elementos reguladores, respuesta a perturbaciones y análisis interpretable de interacciones cis-trans.
 
 ## Especificaciones tecnicas
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en el ámbito de la regu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Deku21/RegFM
+- Hugging Face: https://huggingface.co/Deku21/RegFM
 - GitHub (código y demo): https://github.com/ZjGaothu/RegFM
 - Contacto: gzj21@mails.tsinghua.edu.cn

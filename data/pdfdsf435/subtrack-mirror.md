@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SubTrack++ es un framework de entrenamiento de modelos de lenguaje de gran tamano (LLM) disenado para reducir el consumo de memoria y el tiempo de pared (wall-time) del preentrenamiento. El repositorio pdfdsf435/subtrack-mirror es un espejo (mirror) alojado en HuggingFace, publicado el 8 de octubre de 2026, con 0 descargas y 0 likes, sin licencia declarada y sin idiomas indicados. No contiene pesos de modelo: aloja el codigo y la documentacion del framework de entrenamiento.
+SubTrack++ es un framework de entrenamiento de modelos de lenguaje de gran tamano (LLM) disenado para reducir el consumo de memoria y el tiempo de pared (wall-time) del preentrenamiento. El repositorio pdfdsf435/subtrack-mirror es un espejo (mirror) alojado en Hugging Face, publicado el 8 de octubre de 2026, con 0 descargas y 0 likes, sin licencia declarada y sin idiomas indicados. No contiene pesos de modelo: aloja el codigo y la documentacion del framework de entrenamiento.
 
 El metodo combina tres tecnicas: seguimiento de subespacios de gradiente de tipo Grassmann (Grassmannian gradient subspace tracking), un optimizador consciente de la proyeccion (projection-aware) que extiende Adam, y escalado de recuperacion de gradientes (recovery scaling). Segun sus autores, alcanza una loss de evaluacion de ultima generacion manteniendo la eficiencia de memoria de metodos de bajo rango como GaLore, y reduce el wall-time de preentrenamiento hasta un 43% en modelos LLaMA de hasta 7000 millones de parametros.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Framework | Tipo | Base | Entrenamiento | Reduccion de wall-time | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SubTrack++ | Optimizacion de bajo rango con seguimiento de subespacios | Construido sobre GaLore | Full-parameter con memoria baja | Hasta 43% en LLaMA hasta 7B | no disponible | Repositorio espejo en HuggingFace |
+| SubTrack++ | Optimizacion de bajo rango con seguimiento de subespacios | Construido sobre GaLore | Full-parameter con memoria baja | Hasta 43% en LLaMA hasta 7B | no disponible | Repositorio espejo en Hugging Face |
 | GaLore | Proyeccion de gradientes de bajo rango | Repositorio base | Full-parameter con memoria baja | Referencia de comparacion | no disponible | GitHub publico (jiaweizzhao/GaLore) |
 | LoRA | Adaptacion de bajo rango (PEFT) | Fine-tuning de adaptadores | Solo adaptadores, no parametros completos | no disponible | no disponible | Ampliamente extendido |
 
@@ -82,7 +82,7 @@ No se dispone de datos comparativos de rendimiento numerico entre estas alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdfdsf435/subtrack-mirror
+- Modelo en Hugging Face: https://huggingface.co/pdfdsf435/subtrack-mirror
 - Perfil del autor: https://huggingface.co/pdfdsf435
 - Modelos del autor: https://huggingface.co/pdfdsf435/models
 - Paper (OpenReview, NeurIPS 2025): https://openreview.net/forum?id=6geRIdlFWJ

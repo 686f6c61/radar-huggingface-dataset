@@ -89,7 +89,7 @@ Frente al Qwen3.8-27B original, esta versión MLX ofrece una ventana de contexto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ6e-1M
+- Repositorio Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ6e-1M
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Motor Anvil: https://github.com/Solstice-Labs/anvil

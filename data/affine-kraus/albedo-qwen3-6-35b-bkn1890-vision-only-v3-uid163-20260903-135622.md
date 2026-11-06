@@ -62,4 +62,4 @@ No disponible. No se conocen modelos comparables en la misma categoría (MoE de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/affine-kraus/albedo-qwen3.6-35b-bkn1890-vision-only-v3-uid163-20260903-135622
+- Repositorio Hugging Face: https://huggingface.co/affine-kraus/albedo-qwen3.6-35b-bkn1890-vision-only-v3-uid163-20260903-135622

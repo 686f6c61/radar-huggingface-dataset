@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| r2s2r-openvla-oft-grpo-cam | aproximadamente 7B (LoRA r32 fusionado) | no disponible | 73,3 % en layouts reservados con camaras nominales; 0,0 % en objetos reservados contenedor -> mesa (evaluacion propia, no comparable con benchmarks publicos) | Llama 2 Community License | HuggingFace, 0 descargas, 0 likes |
-| OpenVLA-7B (modelo base) | aproximadamente 7B | no disponible | no disponible en la informacion proporcionada | Llama 2 Community License | publico en HuggingFace |
+| r2s2r-openvla-oft-grpo-cam | aproximadamente 7B (LoRA r32 fusionado) | no disponible | 73,3 % en layouts reservados con camaras nominales; 0,0 % en objetos reservados contenedor -> mesa (evaluacion propia, no comparable con benchmarks publicos) | Llama 2 Community License | Hugging Face, 0 descargas, 0 likes |
+| OpenVLA-7B (modelo base) | aproximadamente 7B | no disponible | no disponible en la informacion proporcionada | Llama 2 Community License | publico en Hugging Face |
 | OpenVLA-OFT | derivado de OpenVLA-7B | no disponible | no disponible en la informacion proporcionada; este checkpoint usa sus constantes de `ROBOT_PLATFORM=LIBERO` (chunk 8, dim 7) | Llama 2 Community License | publico (referenciado en la model card) |
 
 No se han identificado en la informacion proporcionada otros checkpoints directamente comparables de la misma tarea (xArm6 + pinza UF en MuJoCo con randomizacion de camaras).
@@ -100,6 +100,6 @@ No se han identificado en la informacion proporcionada otros checkpoints directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bx6d/r2s2r-openvla-oft-grpo-cam
-- Modelo base en HuggingFace: https://huggingface.co/openvla/openvla-7b
+- Modelo en Hugging Face: https://huggingface.co/bx6d/r2s2r-openvla-oft-grpo-cam
+- Modelo base en Hugging Face: https://huggingface.co/openvla/openvla-7b
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo (unicamente paginas sin relacion con el contenido tecnico), por lo que no se dispone de enlaces adicionales a papers, blogs, repositorios o demos verificados en la informacion proporcionada.

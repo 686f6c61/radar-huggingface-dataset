@@ -2,9 +2,9 @@
 
 ## Resumen
 
-keystats/Judge_qwen3vl_8b es un checkpoint multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario keystats. El repositorio contiene pesos en formato safetensors con 8.767.123.696 parámetros totales (aproximadamente 8,77 mil millones) y un tamaño de 17,5 GB, coherente con un almacenamiento en precisión bf16/fp16. La librería declarada es transformers y el pipeline asociado es image-text-to-text, por lo que el modelo acepta entradas conjuntas de imagen y texto y produce texto.
+keystats/Judge_qwen3vl_8b es un checkpoint multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario keystats. El repositorio contiene pesos en formato safetensors con 8.767.123.696 parámetros totales (aproximadamente 8,77 mil millones) y un tamaño de 17,5 GB, coherente con un almacenamiento en precisión bf16/fp16. La librería declarada es transformers y el pipeline asociado es image-text-to-text, por lo que el modelo acepta entradas conjuntas de imagen y texto y produce texto.
 
-Los metadatos disponibles son muy escasos. La model card publicada es la plantilla automática de HuggingFace sin rellenar: todos los campos (desarrollador, financiación, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". No se declara licencia, ni idiomas soportados, ni modelo base, ni procedimiento de entrenamiento. El nombre del repositorio sugiere un ajuste fino orientado a tareas de evaluación o juicio (judge) sobre la familia Qwen3-VL, y el tag `qwen3_vl` respalda esa adscripción familiar, pero el autor no confirma explícitamente ninguno de estos extremos.
+Los metadatos disponibles son muy escasos. La model card publicada es la plantilla automática de Hugging Face sin rellenar: todos los campos (desarrollador, financiación, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". No se declara licencia, ni idiomas soportados, ni modelo base, ni procedimiento de entrenamiento. El nombre del repositorio sugiere un ajuste fino orientado a tareas de evaluación o juicio (judge) sobre la familia Qwen3-VL, y el tag `qwen3_vl` respalda esa adscripción familiar, pero el autor no confirma explícitamente ninguno de estos extremos.
 
 La relevancia de esta ficha es, por tanto, limitada y debe leerse como una advertencia: se trata de un artefacto sin documentación, con 0 descargas y 0 "likes" en el momento de la consulta, creado y actualizado el 28 de septiembre de 2026. Cualquier uso en producción exige auditoría propia de pesos, tokenizador, plantilla de chat y comportamiento, dado que no hay garantías publicadas sobre procedencia de datos, licencia ni evaluación.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es, por tanto, limitada y debe leerse como una adver
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna, el objetivo de entrenamiento ni los datos utilizados. La model card es la plantilla vacia de HuggingFace y no incluye seccion de procedimiento de entrenamiento, regimen de precision, composicion del dataset, numero de tokens ni si hubo RLHF, DPO o cualquier otra fase de alineamiento. Tampoco se documenta si el modelo es un ajuste fino del base Qwen3-VL-8B, si se ha recortado o ampliado alguna capa, ni si se ha modificado el tokenizador o la plantilla de chat.
+No hay informacion publicada sobre la arquitectura interna, el objetivo de entrenamiento ni los datos utilizados. La model card es la plantilla vacia de Hugging Face y no incluye seccion de procedimiento de entrenamiento, regimen de precision, composicion del dataset, numero de tokens ni si hubo RLHF, DPO o cualquier otra fase de alineamiento. Tampoco se documenta si el modelo es un ajuste fino del base Qwen3-VL-8B, si se ha recortado o ampliado alguna capa, ni si se ha modificado el tokenizador o la plantilla de chat.
 
 Lo unico verificable es la huella de pesos: 8.767.123.696 parametros en un repositorio de 17,5 GB, lo que implica un almacenamiento en 16 bits (dos bytes por parametro como orden de magnitud) y descarta pesos en fp32 o fp8 en el estado publicado. Los tags indican compatibilidad con `endpoints_compatible` y con el ecosistema transformers, y la referencia `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de impacto de carbono citado en la propia plantilla, no a un paper del modelo. No se describe ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, mezcla de expertos o arquitectura hibrida SSM).
 
@@ -39,7 +39,7 @@ Las capacidades concretas no estan documentadas por el autor. A partir de los ta
 
 - Procesamiento conjunto de imagen y texto con salida de texto (`image-text-to-text`), segun el pipeline declarado en el Hub.
 - Naturaleza conversacional: el tag `conversational` indica que el modelo esta pensado para dialogo multi-turno.
-- Compatibilidad con transformers y con endpoints compatibles con la API de HuggingFace.
+- Compatibilidad con transformers y con endpoints compatibles con la API de Hugging Face.
 - Orientacion a tareas de evaluacion o juicio: el nombre del repositorio (`Judge_...`) sugiere un ajuste para puntuar o comparar respuestas, pero no hay ninguna descripcion funcional que lo confirme.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -102,7 +102,7 @@ La informacion proporcionada no incluye ningun dato de modelos comparables (ni p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keystats/Judge_qwen3vl_8b
+- Modelo en Hugging Face: https://huggingface.co/keystats/Judge_qwen3vl_8b
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, estimacion de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio o paper del modelo: no disponible

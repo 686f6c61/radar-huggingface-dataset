@@ -73,7 +73,7 @@ La model card menciona que en validacion se observan metricas rel y cos, y que e
 | Modelo | Parametros | Memoria del codificador | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Codificador nativo de Qwen-Image-2.1 (Qwen3-VL-8B) | ~8 B | 17,5 GB en bf16 | Codificador de texto original, con vision | No indicada en la informacion disponible | Se distribuye con el pipeline Qwen-Image-2.1 |
-| `recoilme/image21-08b-text-encoder-adapter` | 60-170 M de adaptador + 0,8 B de estudiante | ~1,8 GB (estudiante) mas adaptador | Sustituto del codificador, solo t2i | `qwen-research` | HuggingFace, 0 descargas, 0 likes |
+| `recoilme/image21-08b-text-encoder-adapter` | 60-170 M de adaptador + 0,8 B de estudiante | ~1,8 GB (estudiante) mas adaptador | Sustituto del codificador, solo t2i | `qwen-research` | Hugging Face, 0 descargas, 0 likes |
 | Adaptador del proyecto klein (`qwen3-0.6b-4b-adapter`) | No disponible (estudiante de 0,6 B) | No disponible | Adaptador del mismo tipo para otro pipeline | No disponible | Referenciado por el autor, no enlazado |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ La model card menciona que en validacion se observan metricas rel y cos, y que e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/recoilme/image21-08b-text-encoder-adapter
+- Modelo en Hugging Face: https://huggingface.co/recoilme/image21-08b-text-encoder-adapter
 - Modelo base del estudiante: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - PR de `diffusers` #14804 (SHA `8d3c30b`), citada como referencia del contrato de sustitucion: no disponible como enlace en la informacion proporcionada
 - Proyecto klein de referencia (`/workspace/qwen3-0.6b-4b-adapter`, ficheros `adapter_lib.py`, `train_adapter.py`, `TRAINING.ru.md`): ruta local, no disponible como enlace publico

@@ -81,7 +81,7 @@ Esta comparacion es conceptual, no se basa en datos del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dani-elldl/paper_001500529_efficient_attention
+- Repositorio Hugging Face: https://huggingface.co/dani-elldl/paper_001500529_efficient_attention
 - Articulo de referencia (arXiv): https://arxiv.org/abs/1812.01243
 - Version IEEE: https://ieeexplore.ieee.org/document/9423033
 - Repositorio de implementaciones (HKUNLP): https://github.com/hkunlp/efficient-attention

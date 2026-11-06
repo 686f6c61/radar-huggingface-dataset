@@ -18,7 +18,7 @@ Su relevancia es limitada pero concreta: se trata de una publicación de tercero
 | Longitud de contexto | 32.768 tokens |
 | Tipos de cuantizacion | GGUF Q8_0 en este repositorio; no se listan otras cuantizaciones |
 | Idiomas soportados | en, it |
-| Licencia | other en los metadatos de HuggingFace; la model card muestra un badge Apache-2.0 (contradiccion) |
+| Licencia | other en los metadatos de Hugging Face; la model card muestra un badge Apache-2.0 (contradiccion) |
 | Formato de pesos | GGUF (Q8_0); la model card indica "Sconosciuto/sconosciuta" para el formato, dato erroneo |
 
 Otros datos declarados: tamano del repositorio 37,8 GB, huella en disco indicada en la model card como "0,0 GB" (dato no utilizable), VRAM estimada ~30,2 GB con offload completo en GPU, RAM estimada ~28,3 GB en modo CPU/hibrido.
@@ -105,7 +105,7 @@ No se puede establecer si la cuantizacion Q8_0 degrada las capacidades del model
 ## Limitaciones y advertencias
 
 - Inconsistencias en la model card: el formato de pesos aparece como "desconocido" pese a que el repositorio es GGUF; la huella en disco figura como "0,0 GB" cuando el repositorio ocupa 37,8 GB; los parametros activos se declaran como 35 B pese a que el sufijo A3B del nombre sugiere ~3 B activos. Hay que tratar estos datos con cautela.
-- Licencia ambigua: los metadatos de HuggingFace indican `other` mientras que la model card muestra un badge Apache-2.0. No queda claro que terminos se aplican al uso comercial. Conviene contactar con el autor del modelo base antes de usarlo en produccion.
+- Licencia ambigua: los metadatos de Hugging Face indican `other` mientras que la model card muestra un badge Apache-2.0. No queda claro que terminos se aplican al uso comercial. Conviene contactar con el autor del modelo base antes de usarlo en produccion.
 - Los benchmarks proceden de una muestra de 100 preguntas, no de las suites completas, por lo que no son comparables con puntuaciones publicadas de otros modelos. Los resultados en GPQA (33%), MMLU (50%) y HellaSwag (56%) son bajos y senalan limitaciones claras en razonamiento academico avanzado, conocimiento general y sentido comun.
 - El modo Deep Thinking (CoT) no mejora el resultado agregado frente al modo directo (-0,4 puntos) en la muestra evaluada, lo que cuestiona su utilidad para tareas de razonamiento general, aunque el autor lo recomienda para matematicas y logica dura.
 - Riesgo de alucinacion: no se documenta ningun mecanismo especifico de mitigacion. El 89% en TruthfulQA sobre una muestra de 9 preguntas es una evidencia muy debil.
@@ -117,8 +117,8 @@ No se puede establecer si la cuantizacion Q8_0 degrada las capacidades del model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/sigmanih/ornith-ai-Ornith-1.5-35B-A3B-GGUF-Q8_0
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Repositorio Hugging Face del modelo: https://huggingface.co/sigmanih/ornith-ai-Ornith-1.5-35B-A3B-GGUF-Q8_0
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Repositorio GitHub de Sigma Studio: https://github.com/Sigmanih/SigmaStudio
-- Perfil del publicador en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del publicador en Hugging Face: https://huggingface.co/sigmanih
 - Licencia Apache 2.0 (referenciada en la model card): https://opensource.org/licenses/Apache-2.0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-carmenwijaya/generation es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura Poolformer a escala "tiny", orientada a tareas de generacion. El modelo lo desarrolla el usuario carmenwijaya y su peso safetensors tiene 49.600 parametros totales, lo que lo situa en un orden de magnitud muy por debajo de cualquier modelo de generacion utilizable en produccion. El propio autor indica en la model card que el checkpoint es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado.
+carmenwijaya/generation es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura Poolformer a escala "tiny", orientada a tareas de generacion. El modelo lo desarrolla el usuario carmenwijaya y su peso safetensors tiene 49.600 parametros totales, lo que lo situa en un orden de magnitud muy por debajo de cualquier modelo de generacion utilizable en produccion. El propio autor indica en la model card que el checkpoint es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado.
 
 La relevancia de esta ficha es fundamentalmente documental: sirve para ilustrar el estado de un experimento de arquitectura antes de una ejecucion de entrenamiento completa. No hay pipeline declarado, no hay idiomas declarados, no hay resultados de benchmarks y no hay evidencia de entrenamiento. La arquitectura combina un esquema Poolformer con atencion dispersa (sparse), fusion bilineal, activacion ReLU y normalizacion InstanceNorm, y el recipe por defecto usa SGD con un schedule de warmup constante.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la informacion proporcionada modelos de generacion comparables: la mayoria de los modelos etiquetados como "generation" en HuggingFace operan en ordenes de magnitud de parametros muy superiores y cuentan con checkpoints entrenados y evaluados. La arquitectura Poolformer procede de la familia MetaFormer para vision, pero este repositorio concreto es un experimento de codigo con 49.600 parametros y sin entrenamiento declarado, por lo que una comparativa de rendimiento carece de base.
+No disponible. No se han identificado en la informacion proporcionada modelos de generacion comparables: la mayoria de los modelos etiquetados como "generation" en Hugging Face operan en ordenes de magnitud de parametros muy superiores y cuentan con checkpoints entrenados y evaluados. La arquitectura Poolformer procede de la familia MetaFormer para vision, pero este repositorio concreto es un experimento de codigo con 49.600 parametros y sin entrenamiento declarado, por lo que una comparativa de rendimiento carece de base.
 
 ## Limitaciones y advertencias
 
@@ -75,8 +75,8 @@ No disponible. No se han identificado en la informacion proporcionada modelos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/carmenwijaya/generation
-- Perfil del autor en HuggingFace: https://huggingface.co/carmenwijaya/models
+- Hugging Face: https://huggingface.co/carmenwijaya/generation
+- Perfil del autor en Hugging Face: https://huggingface.co/carmenwijaya/models
 - Otro repositorio del autor (mixer-generation-v3): https://huggingface.co/carmenwijaya/mixer-generation-v3
 - Calendario de lanzamientos de modelos de IA: https://www.scriptbyai.com/ai-model-release-calendar/
 - Cronologia de lanzamientos de modelos de IA: https://www.promptzone.com/ai-model-releases

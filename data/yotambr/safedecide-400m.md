@@ -88,9 +88,9 @@ La ganancia de precisión frente a la versión v0.1 es de +3,3 puntos (intervalo
 
 | Modelo | Parámetros | Contexto | Accuracy (test) | Automation @ 10% | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SafeDecide-400M v0.2 | 395,8M | no disponible | 0,787 | 52,4% | Apache 2.0 | HuggingFace |
-| SafeDecide-140M v0.2 | no disponible | no disponible | 0,748 | 40,6% | Apache 2.0 | HuggingFace |
-| SafeDecide-140M v0.1 | no disponible | no disponible | 0,754 | 33,2% | Apache 2.0 | HuggingFace |
+| SafeDecide-400M v0.2 | 395,8M | no disponible | 0,787 | 52,4% | Apache 2.0 | Hugging Face |
+| SafeDecide-140M v0.2 | no disponible | no disponible | 0,748 | 40,6% | Apache 2.0 | Hugging Face |
+| SafeDecide-140M v0.1 | no disponible | no disponible | 0,754 | 33,2% | Apache 2.0 | Hugging Face |
 
 No se dispone de comparación con modelos de clasificación de propósito general en la información proporcionada, ya que el benchmark `typed-decisions` está diseñado específicamente para decisiones tipadas y el modelo pertenece a la categoría "fitted or fine-tuned on train".
 
@@ -109,7 +109,7 @@ No se dispone de comparación con modelos de clasificación de propósito genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yotambr/safedecide-400m
+- Modelo en Hugging Face: https://huggingface.co/yotambr/safedecide-400m
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-400m
 - Modelo más pequeño: https://huggingface.co/yotambr/safedecide-140m
 - Código: https://github.com/yotambraun/safedecide

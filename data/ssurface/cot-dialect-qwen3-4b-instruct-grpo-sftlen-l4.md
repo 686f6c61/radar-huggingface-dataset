@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ssurface/cot-dialect-qwen3-4b-instruct-grpo-sftlen-l4 | Adaptador LoRA (ablacion) | 4B base + 0.1GB adaptador | No especificado | Apache 2.0 | HuggingFace |
-| ssurface/cot-dialect-qwen3-4b-instruct-grpo-l4 | Adaptador LoRA (modelo principal del nivel L4) | 4B base + adaptador | No especificado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | Modelo base instruct | 4B | 32k (segun documentacion oficial de Qwen3) | Apache 2.0 | HuggingFace |
+| ssurface/cot-dialect-qwen3-4b-instruct-grpo-sftlen-l4 | Adaptador LoRA (ablacion) | 4B base + 0.1GB adaptador | No especificado | Apache 2.0 | Hugging Face |
+| ssurface/cot-dialect-qwen3-4b-instruct-grpo-l4 | Adaptador LoRA (modelo principal del nivel L4) | 4B base + adaptador | No especificado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | Modelo base instruct | 4B | 32k (segun documentacion oficial de Qwen3) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a características estructurales, ya que no hay datos de rendimiento publicados para este adaptador. La diferencia principal frente al modelo principal del mismo nivel es la función de recompensa usada en el entrenamiento GRPO: este artefacto incorpora `sft_length` como componente adicional, mientras que el modelo principal probablemente usa otra combinación de recompensas.
 
@@ -82,7 +82,7 @@ La comparativa se limita a características estructurales, ya que no hay datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-sftlen-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-sftlen-l4
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Página del modelo Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

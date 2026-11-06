@@ -89,7 +89,7 @@ El adaptador LoRA de la ronda 1 es la opción recomendada por los autores para t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axonlabsai/Omni-7B
+- Modelo en Hugging Face: https://huggingface.co/axonlabsai/Omni-7B
 - Adaptador LoRA de la ronda 1: https://huggingface.co/axonlabsai/Omni-7B-lora-rft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
-- Perfil de Axon Labs en HuggingFace: https://huggingface.co/axonlabsai/models
+- Perfil de Axon Labs en Hugging Face: https://huggingface.co/axonlabsai/models

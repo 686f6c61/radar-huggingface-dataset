@@ -4,7 +4,7 @@
 
 `gabrahamyants/glm-george-lora-v6` no es un modelo completo, sino un adaptador de ajuste fino (PEFT/LoRA) publicado por el usuario gabrahamyants sobre el modelo base `zai-org/GLM-4.5-Air`. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (18,6 GB) y declara la librería `peft` en su versión 0.15.2. Para utilizarlo es imprescindible descargar y cargar previamente el modelo base, ya que el adaptador no es autónomo.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye model card descriptiva (es la plantilla por defecto de HuggingFace sin rellenar), no declara licencia, idiomas, pipeline, datos de entrenamiento ni evaluación alguna. Acumula 0 descargas y 0 likes, y se creó y actualizó el 20 de octubre de 2026 con apenas cuatro minutos de diferencia, lo que apunta a una publicación de carácter personal o experimental sin proceso de validación posterior.
+La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye model card descriptiva (es la plantilla por defecto de Hugging Face sin rellenar), no declara licencia, idiomas, pipeline, datos de entrenamiento ni evaluación alguna. Acumula 0 descargas y 0 likes, y se creó y actualizó el 20 de octubre de 2026 con apenas cuatro minutos de diferencia, lo que apunta a una publicación de carácter personal o experimental sin proceso de validación posterior.
 
 Por tanto, cualquier dato sobre arquitectura, contexto, cuantización o capacidades debe consultarse en la ficha del modelo base. Esta ficha documenta lo que el repositorio declara de forma verificable y marca como «no disponible» todo lo que el autor no ha especificado.
 
@@ -85,7 +85,7 @@ No se dispone de datos verificables de otros adaptadores comparables en la infor
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/gabrahamyants/glm-george-lora-v6
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/gabrahamyants/glm-george-lora-v6
 - Modelo base: https://huggingface.co/zai-org/GLM-4.5-Air
 - Librería PEFT: https://github.com/huggingface/peft
 - Paper de referencia sobre impacto ambiental (Lacoste et al., 2019), citado únicamente en la plantilla de la model card: https://arxiv.org/abs/1910.09700

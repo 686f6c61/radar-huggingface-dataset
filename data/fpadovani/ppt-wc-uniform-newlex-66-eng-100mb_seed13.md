@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed13` es un modelo de generación de texto en inglés de 86.508.288 parámetros (86,5 M) publicado por el usuario fpadovani, resultado de un ajuste fino supervisado (SFT) sobre el modelo base `goldfish-models/eng_latn_100mb`. El modelo se distribuye en formato safetensors y es compatible con la librería `transformers` y con text-generation-inference, por lo que se puede desplegar con el stack habitual de HuggingFace.
+`fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed13` es un modelo de generación de texto en inglés de 86.508.288 parámetros (86,5 M) publicado por el usuario fpadovani, resultado de un ajuste fino supervisado (SFT) sobre el modelo base `goldfish-models/eng_latn_100mb`. El modelo se distribuye en formato safetensors y es compatible con la librería `transformers` y con text-generation-inference, por lo que se puede desplegar con el stack habitual de Hugging Face.
 
 Se trata de un artefacto de investigación más que de un modelo de producción: el identificador incluye marcas de un experimento controlado (`seed13`, `uniform`, `newlex`, `66`) y el entrenamiento se realizó con TRL 0.23.0 sobre Transformers 4.56.2, con una ejecución registrada en Weights & Biases bajo el proyecto `white_cotterell` de la Universidad de Groningen. No hay indicios de un proceso de alineación posterior al SFT (RLHF o DPO) ni de una evaluación publicada.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada pero clara: sirve como punto de comparación reproducib
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 86.508.288 (86,5 M), segun los pesos en safetensors |
 | Parametros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | no disponible (la model card no la declara; el modelo base es de tipo GPT-2) |
@@ -28,7 +28,7 @@ Su relevancia es acotada pero clara: sirve como punto de comparación reproducib
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de un transformer decoder-only con atención causal, correspondiente a la familia GPT-2 según la etiqueta declarada en HuggingFace y coherente con el modelo base, un Goldfish de 100 MB para inglés latino (`eng_latn`). Con 86,5 M de parámetros, el modelo queda por debajo de GPT-2 small (124 M) y su huella de pesos en fp16 rondaría los 173 MB. No se especifican en la información disponible ni la longitud de contexto, ni la dimensión oculta, ni el número de capas o cabezas de atención, ni los detalles del tokenizador más allá de la referencia `newlex` del nombre.
+La arquitectura es la de un transformer decoder-only con atención causal, correspondiente a la familia GPT-2 según la etiqueta declarada en Hugging Face y coherente con el modelo base, un Goldfish de 100 MB para inglés latino (`eng_latn`). Con 86,5 M de parámetros, el modelo queda por debajo de GPT-2 small (124 M) y su huella de pesos en fp16 rondaría los 173 MB. No se especifican en la información disponible ni la longitud de contexto, ni la dimensión oculta, ni el número de capas o cabezas de atención, ni los detalles del tokenizador más allá de la referencia `newlex` del nombre.
 
 El entrenamiento consistió en un ajuste fino supervisado con TRL, partiendo de los pesos del modelo Goldfish preentrenado en aproximadamente 100 MB de texto en inglés. El ejemplo de la model card muestra una entrada con formato de mensajes (`{"role": "user", "content": ...}`), lo que sugiere un ajuste orientado a instrucciones o a diálogo, aunque no se confirma la existencia de una plantilla de chat en el tokenizador. No hay datos publicados sobre el número de tokens de entrenamiento, la composición del dataset de SFT, el uso de RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. La ejecución de entrenamiento está registrada en Weights & Biases, pero su contenido no forma parte de la información proporcionada.
 
@@ -96,7 +96,7 @@ Los datos de GPT-2 small y Pythia-70M proceden de la documentación pública de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed13
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed13
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Organización Goldfish Models: https://huggingface.co/goldfish-models
 - Ejecución de entrenamiento en Weights & Biases (proyecto `white_cotterell`): https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/9jxzfkys

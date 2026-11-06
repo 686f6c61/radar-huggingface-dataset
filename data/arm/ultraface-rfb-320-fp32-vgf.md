@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UltraFace RFB-320 FP32 VGF (este) | no disponible; artefacto de 1,137 MiB | Imagen `[1, 3, 240, 320]` | No medido para este VGF | MIT | HuggingFace (Arm) |
-| UltraFace RFB-320 ONNX (origen, FP32 e INT8) | no disponible | Imagen, misma resolución | Métricas publicadas sobre Raspberry Pi 5 en el repositorio de origen | MIT | HuggingFace (Arm) |
+| UltraFace RFB-320 FP32 VGF (este) | no disponible; artefacto de 1,137 MiB | Imagen `[1, 3, 240, 320]` | No medido para este VGF | MIT | Hugging Face (Arm) |
+| UltraFace RFB-320 ONNX (origen, FP32 e INT8) | no disponible | Imagen, misma resolución | Métricas publicadas sobre Raspberry Pi 5 en el repositorio de origen | MIT | Hugging Face (Arm) |
 | Ultra-Light-Fast-Generic-Face-Detector-1MB (Linzaer) | no disponible | Imagen | Métricas del repositorio original | MIT | GitHub |
 
 No se dispone de datos de benchmarks comparables entre estas variantes dentro de la información proporcionada; la comparación se limita a formato, licencia y disponibilidad.
@@ -102,8 +102,8 @@ No se dispone de datos de benchmarks comparables entre estas variantes dentro de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arm/ultraface-rfb-320-fp32-vgf
-- Repositorio de origen ONNX en HuggingFace: https://huggingface.co/Arm/ultraface-rfb-320-onnx-raspberry
+- Repositorio Hugging Face: https://huggingface.co/Arm/ultraface-rfb-320-fp32-vgf
+- Repositorio de origen ONNX en Hugging Face: https://huggingface.co/Arm/ultraface-rfb-320-onnx-raspberry
 - Artefacto ONNX FP32 original: https://huggingface.co/Arm/ultraface-rfb-320-onnx-raspberry/blob/dd894b3db6ac5ac2bcff20e5cab96b40a4402855/ultraface-rfb-320_raspberry_onnx_original.onnx
 - Rendimiento del modelo de origen: https://huggingface.co/Arm/ultraface-rfb-320-onnx-raspberry/blob/dd894b3db6ac5ac2bcff20e5cab96b40a4402855/README.md#performance
 - Registros de benchmark del origen: https://huggingface.co/Arm/ultraface-rfb-320-onnx-raspberry/tree/dd894b3db6ac5ac2bcff20e5cab96b40a4402855/benchmarks

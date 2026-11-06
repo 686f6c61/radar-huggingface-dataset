@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada y conviene ser explícito: se trata de un
 | Librería declarada | peft (versión de framework documentada: PEFT 0.17.1) |
 | Pipeline declarado | text-generation |
 | Tamaño del repositorio | 0,3 GB |
-| Fecha de creación / actualización | 2026-10-02 / 2026-10-02 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-10-02 / 2026-10-02 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,16 +77,16 @@ Las cifras de VRAM que se indican para el modelo base son estimaciones calculada
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bunkir2004/qwen3vl-4b-target-taboo-dog | Adaptador LoRA sobre un base de 4B (tamaño de adaptador no declarado) | No disponible | Texto según el pipeline declarado; multimodal heredada del base | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | 4B densos | Hasta 256K tokens en la serie | Texto e imagen | No confirmada en la información consultada | HuggingFace |
-| Qwen3-VL-2B-Instruct | 2B densos | Hasta 256K tokens en la serie | Texto e imagen | No confirmada | HuggingFace |
-| Qwen3-VL-8B-Instruct | 8B densos | Hasta 256K tokens en la serie | Texto e imagen | No confirmada | HuggingFace |
+| Bunkir2004/qwen3vl-4b-target-taboo-dog | Adaptador LoRA sobre un base de 4B (tamaño de adaptador no declarado) | No disponible | Texto según el pipeline declarado; multimodal heredada del base | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | 4B densos | Hasta 256K tokens en la serie | Texto e imagen | No confirmada en la información consultada | Hugging Face |
+| Qwen3-VL-2B-Instruct | 2B densos | Hasta 256K tokens en la serie | Texto e imagen | No confirmada | Hugging Face |
+| Qwen3-VL-8B-Instruct | 8B densos | Hasta 256K tokens en la serie | Texto e imagen | No confirmada | Hugging Face |
 
 La comparación con alternativas de otras familias (por ejemplo, modelos visión-lenguaje de 4B de otros desarrolladores) no está disponible en la información recopilada. Dentro de la propia familia, el adaptador no aporta ninguna ventaja documentada frente al modelo base: no hay evaluación que demuestre mejora en ninguna tarea, y su único rasgo diferencial es un ajuste LoRA no descrito.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "More Information Needed". No hay información sobre datos, método, evaluación ni uso previsto.
+- Ausencia total de documentación: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "More Information Needed". No hay información sobre datos, método, evaluación ni uso previsto.
 - Licencia no declarada: al no especificarse licencia para el adaptador y no confirmarse la del modelo base en la información consultada, no puede asumirse su uso comercial. Cualquier despliegue en producción requiere verificar previamente los términos del modelo base con Alibaba Cloud.
 - Riesgo de alucinación: inherente a los modelos generativos; en este caso no existe ninguna evaluación que cuantifique la tasa de error, ni para texto ni para tareas visuales.
 - Comportamiento del adaptador desconocido: no hay evidencia de que mejore ninguna capacidad ni de que preserve las del modelo base. Un LoRA sin evaluar puede degradar el razonamiento o el alineamiento original.
@@ -100,7 +100,7 @@ La comparación con alternativas de otras familias (por ejemplo, modelos visión
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-dog
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-dog
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio oficial de Qwen3-VL en GitHub: https://github.com/QwenLM/Qwen3-VL
 - Informe técnico de Qwen3-VL (arXiv): https://arxiv.org/pdf/2511.21631

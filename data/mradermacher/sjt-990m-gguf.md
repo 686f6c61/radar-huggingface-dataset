@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SJT-990M-GGUF | ~990M | No disponible | en, ja | Apache 2.0 | GGUF | HuggingFace (mradermacher) |
-| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens (según documentación pública de Qwen) | Multilingüe (incluye es) | Apache 2.0 | safetensors, GGUF | HuggingFace (Qwen) |
-| Qwen2.5-1.5B-Instruct | 1.540M | 32.768 tokens | Multilingüe (incluye es) | Apache 2.0 | safetensors, GGUF | HuggingFace (Qwen) |
-| Llama-3.2-1B-Instruct | 1.240M | 128.000 tokens | Multilingüe (8 idiomas) | Llama 3.2 Community License | safetensors, GGUF | HuggingFace (Meta) |
+| SJT-990M-GGUF | ~990M | No disponible | en, ja | Apache 2.0 | GGUF | Hugging Face (mradermacher) |
+| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens (según documentación pública de Qwen) | Multilingüe (incluye es) | Apache 2.0 | safetensors, GGUF | Hugging Face (Qwen) |
+| Qwen2.5-1.5B-Instruct | 1.540M | 32.768 tokens | Multilingüe (incluye es) | Apache 2.0 | safetensors, GGUF | Hugging Face (Qwen) |
+| Llama-3.2-1B-Instruct | 1.240M | 128.000 tokens | Multilingüe (8 idiomas) | Llama 3.2 Community License | safetensors, GGUF | Hugging Face (Meta) |
 
 La comparativa se basa en datos públicos de los modelos alternativos; para SJT-990M no se dispone de contexto ni benchmarks verificables. La principal ventaja de SJT-990M-GGUF es su licencia Apache 2.0 pura (frente a la licencia comunitaria de Llama 3.2) y su especialización declarada en japonés, aunque carece de la documentación técnica y el soporte multilingüe amplio de las alternativas de Qwen y Meta.
 
@@ -83,7 +83,7 @@ La comparativa se basa en datos públicos de los modelos alternativos; para SJT-
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/SJT-990M-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/SJT-990M-GGUF
 - Modelo base original: https://huggingface.co/Sakalti/SJT-990M
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/SJT-990M-i1-GGUF
 - Página de overview del cuantizador: https://hf.tst.eu/model#SJT-990M-GGUF

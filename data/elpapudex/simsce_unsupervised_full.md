@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SimSCE_unsupervised_full es un modelo de embeddings de frases publicado por el usuario Elpapudex en HuggingFace. Se distribuye bajo la librería sentence-transformers y su función es transformar frases y párrafos en vectores densos de 768 dimensiones, con similitud coseno como métrica de comparación. No es un modelo generativo: es un encoder de texto pensado para similitud semántica, búsqueda semántica, minería de paráfrasis, clasificación y agrupamiento.
+SimSCE_unsupervised_full es un modelo de embeddings de frases publicado por el usuario Elpapudex en Hugging Face. Se distribuye bajo la librería sentence-transformers y su función es transformar frases y párrafos en vectores densos de 768 dimensiones, con similitud coseno como métrica de comparación. No es un modelo generativo: es un encoder de texto pensado para similitud semántica, búsqueda semántica, minería de paráfrasis, clasificación y agrupamiento.
 
 Arquitectónicamente es un transformer tipo BERT (BertModel) en modo feature-extraction, seguido de una capa de pooling por media que produce el vector final de 768 dimensiones. El recuento real de parámetros en los pesos safetensors es de 109.482.240 (aproximadamente 109 M), lo que lo sitúa en la categoría de los encoders base de ~110 M de parámetros, con un repositorio de 0,4 GB.
 
@@ -43,7 +43,7 @@ No se documenta nada sobre el entrenamiento: ni el dataset, ni el numero de toke
 - Clasificacion de texto mediante embeddings congelados y un clasificador ligero posterior.
 - Agrupamiento (clustering) y deduplicacion semantica de documentos.
 - Extraccion de caracteristicas (feature-extraction), tal como declara la etiqueta del repositorio.
-- Compatibilidad con Text Embeddings Inference (TEI) y con endpoints de HuggingFace, segun las etiquetas `text-embeddings-inference` y `endpoints_compatible`.
+- Compatibilidad con Text Embeddings Inference (TEI) y con endpoints de Hugging Face, segun las etiquetas `text-embeddings-inference` y `endpoints_compatible`.
 - No soporta generacion de texto, razonamiento, codigo ni matematicas: es un encoder, no un modelo de lenguaje causal.
 - No hay evidencia de soporte de tool calling, function calling ni uso como agente.
 - Modalidad exclusivamente textual: no hay vision ni audio.
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU con memoria compartida o en CPU para lotes pequenos.
 - GPU recomendadas para servicio de alta concurrencia: T4, L4, A10G, A100 o H100, aprovechando el batching y el bajo coste por embedding.
 - La longitud maxima de 128 tokens reduce el coste de atencion de forma notable: la complejidad es cuadratica respecto a la secuencia, por lo que con 128 tokens el encoder es muy barato de ejecutar.
-- Opciones de despliegue: sentence-transformers en Python, Text Embeddings Inference (TEI) segun la etiqueta del repositorio, endpoints de HuggingFace (etiqueta `endpoints_compatible`), y despliegue en CPU con PyTorch. No se documenta soporte de llama.cpp, Ollama ni vLLM, que estan orientados a modelos generativos.
+- Opciones de despliegue: sentence-transformers en Python, Text Embeddings Inference (TEI) segun la etiqueta del repositorio, endpoints de Hugging Face (etiqueta `endpoints_compatible`), y despliegue en CPU con PyTorch. No se documenta soporte de llama.cpp, Ollama ni vLLM, que estan orientados a modelos generativos.
 - Latencia y throughput: no disponible. No hay mediciones publicadas para este modelo concreto. Como referencia cualitativa, un bi-encoder de ~110 M de parametros con secuencias de 128 tokens suele procesar lotes grandes con un coste por frase bajo en GPU moderna, pero no existen cifras confirmadas para esta publicacion.
 
 ## Comparativa con modelos similares
@@ -101,10 +101,10 @@ Salvando las limitaciones anteriores, la diferencia estructural mas relevante fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elpapudex/SimSCE_unsupervised_full
+- Modelo en Hugging Face: https://huggingface.co/Elpapudex/SimSCE_unsupervised_full
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos de sentence-transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos de sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Guia de entrenamiento y ajuste fino de modelos de embeddings: https://huggingface.co/blog/train-sentence-transformers
 - Introduccion a los modelos de embeddings Matryoshka: https://huggingface.co/blog/matryoshka
 - Cuantizacion binaria y escalar de embeddings: https://huggingface.co/blog/embedding-quantization

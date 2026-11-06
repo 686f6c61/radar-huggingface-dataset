@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Base | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SicheateR99/qwen3-4B-legal-chatbot | Qwen3-4B (bnb-4bit) | 4B + LoRA | no disponible | no disponible | HuggingFace (adaptador) |
-| VietGPT-AI/qwen3-4b-legal-pretrain | Qwen3-4B | 4B | no disponible | no disponible | HuggingFace (modelo completo) |
-| Qwen3-4B (base) | - | 4B | 32k (segun documentacion de Qwen3) | Apache 2.0 (segun Qwen) | HuggingFace |
+| SicheateR99/qwen3-4B-legal-chatbot | Qwen3-4B (bnb-4bit) | 4B + LoRA | no disponible | no disponible | Hugging Face (adaptador) |
+| VietGPT-AI/qwen3-4b-legal-pretrain | Qwen3-4B | 4B | no disponible | no disponible | Hugging Face (modelo completo) |
+| Qwen3-4B (base) | - | 4B | 32k (segun documentacion de Qwen3) | Apache 2.0 (segun Qwen) | Hugging Face |
 
 La comparativa se limita a modelos con la misma base. El adaptador de SicheateR99 es un ajuste ligero, mientras que VietGPT-AI ofrece un modelo completo preentrenado en datos legales. No se dispone de datos de rendimiento para ninguno de los dos.
 

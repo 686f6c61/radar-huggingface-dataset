@@ -88,11 +88,11 @@ Las cifras de rendimiento de los modelos comparables no estan disponibles en la 
 - Componentes externos con licencias distintas: htdemucs se carga desde un repositorio que no declara licencia propia para su export ONNX, basic-pitch es Apache-2.0 y MuScriptor small es CC BY-NC 4.0 con pesos restringidos. Cualquier uso comercial debe revisarse componente a componente; el caracter no comercial de MuScriptor afecta a los motores Online y This computer, no a este paquete.
 - Caveat de produccion: el repositorio tiene 0 descargas y 0 likes, y su unica validacion es interna al proyecto, hecha por el propio autor de la exportacion. No hay evaluacion independiente.
 - Caveat de version del runtime: la necesidad de desquantizar antes de crear la sesion es un requisito de `onnxruntime-web` 1.30; si se actualiza el runtime, conviene volver a verificar ese comportamiento.
-- Fecha de creacion del repositorio: 29 de septiembre de 2026, segun los metadatos de HuggingFace.
+- Fecha de creacion del repositorio: 29 de septiembre de 2026, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swwallowws/coming-undone-browser-models
+- Modelo en Hugging Face: https://huggingface.co/swwallowws/coming-undone-browser-models
 - Modelo base (PyTorch): https://huggingface.co/Pierfrancesco/adt-str
 - Codigo de ADT_STR: https://github.com/pier-maker92/ADT_STR
 - htdemucs (Meta): https://github.com/facebookresearch/demucs

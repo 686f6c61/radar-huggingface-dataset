@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) sobre el entorno clasico CartPole-v1 de Gymnasium. Lo publica el usuario ab-naidu en HuggingFace como parte de los ejercicios de la Unit 4 del Deep Reinforcement Learning Course de HuggingFace. No es un modelo de lenguaje: es una politica neuronal que mapea el estado de cuatro dimensiones del carro y la barra a una distribucion de probabilidad sobre dos acciones discretas (empujar a izquierda o a derecha).
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) sobre el entorno clasico CartPole-v1 de Gymnasium. Lo publica el usuario ab-naidu en Hugging Face como parte de los ejercicios de la Unit 4 del Deep Reinforcement Learning Course de Hugging Face. No es un modelo de lenguaje: es una politica neuronal que mapea el estado de cuatro dimensiones del carro y la barra a una distribucion de probabilidad sobre dos acciones discretas (empujar a izquierda o a derecha).
 
 El modelo se enmarca en la categoria de agentes de control para entornos de juguete, con finalidad educativa y de referencia. El repositorio tiene un tamano declarado de 0.0 GB y no expone licencia, idiomas ni formato de pesos, lo que indica que la publicacion se ha limitado a la model card y a los metadatos del model-index, sin artefactos de inferencia descargables.
 
@@ -77,7 +77,7 @@ La informacion proporcionada no incluye resultados de benchmarks de otros agente
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ab-naidu/Reinforce-CartPole-v1 | REINFORCE | CartPole-v1 | no disponible | no aplica | mean_reward 9.20 +/- 0.40 (no verificado) | no disponible | Repositorio HuggingFace, 0.0 GB |
+| ab-naidu/Reinforce-CartPole-v1 | REINFORCE | CartPole-v1 | no disponible | no aplica | mean_reward 9.20 +/- 0.40 (no verificado) | no disponible | Repositorio Hugging Face, 0.0 GB |
 | Agentes DQN sobre CartPole-v1 | DQN | CartPole-v1 | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion |
 | Agentes PPO sobre CartPole-v1 | PPO | CartPole-v1 | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion |
 | Agentes A2C sobre CartPole-v1 | A2C | CartPole-v1 | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion |
@@ -96,6 +96,6 @@ La informacion proporcionada no incluye resultados de benchmarks de otros agente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ab-naidu/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/ab-naidu/Reinforce-CartPole-v1
 - Deep Reinforcement Learning Course, Unit 4: https://huggingface.co/deep-rl-course/unit4/introduction
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Las URLs devueltas (gruppoab.com, boursorama.com, doctissimo.fr, abconcerts.be) corresponden a entidades ajenas al modelo y no guardan relacion con el artefacto.

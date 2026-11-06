@@ -6,7 +6,7 @@ Charcot 27B es un ajuste fino (fine-tuning) del modelo Qwen3.8-27B desarrollado 
 
 La propuesta de valor es concreta y medible: según la model card, en tareas privadas nunca vistas el rendimiento medio sube de 0,505 en el modelo base a 0,727 con Charcot 27B. En el split público retenido, la puntuación pasa de 0,37 a 0,54. Las mayores ganancias se concentran en reclamaciones (0,37 a 0,71) y codificación clínica (0,42 a 0,69), mientras que la conversión documento a FHIR apenas mejora (0,73 a 0,78, sin diferencia significativa).
 
-El modelo es relevante porque demuestra que un ajuste LoRA de bajo coste sobre datos sintéticos puede especializar un modelo generalista de 27.781 millones de parámetros en tareas administrativas sanitarias con formato FHIR, manteniendo licencia Apache-2.0. No obstante, se trata de un modelo de nicho, con solo 26 descargas en HuggingFace y sin datos publicados de benchmarks generalistas.
+El modelo es relevante porque demuestra que un ajuste LoRA de bajo coste sobre datos sintéticos puede especializar un modelo generalista de 27.781 millones de parámetros en tareas administrativas sanitarias con formato FHIR, manteniendo licencia Apache-2.0. No obstante, se trata de un modelo de nicho, con solo 26 descargas en Hugging Face y sin datos publicados de benchmarks generalistas.
 
 ## Especificaciones tecnicas
 
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks generalistas (MMLU, HumanEval, GSM8
 
 | Modelo | Parámetros | Contexto | Rendimiento en tareas Charcot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Charcot 27B | 27.781 M | 131.072 | 0,73 privado / 0,54 público | Apache-2.0 | HuggingFace (26 descargas) |
-| Qwen3.8-27B (base) | 27.781 M (estimado, mismo base) | 131.072 (según despliegue) | 0,51 privado / 0,37 público | no disponible en la información | HuggingFace |
+| Charcot 27B | 27.781 M | 131.072 | 0,73 privado / 0,54 público | Apache-2.0 | Hugging Face (26 descargas) |
+| Qwen3.8-27B (base) | 27.781 M (estimado, mismo base) | 131.072 (según despliegue) | 0,51 privado / 0,37 público | no disponible en la información | Hugging Face |
 | Alternativas de dominio sanitario | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables especializados en administración sanitaria o FHIR en la documentación proporcionada.
@@ -96,11 +96,11 @@ No se dispone de información sobre otros modelos comparables especializados en 
 - Riesgo de alucinación inherente a modelos generativos, especialmente en codificación clínica y claims, donde un error puede tener consecuencias administrativas o de facturación.
 - Licencia Apache-2.0 para el modelo ajustado, pero el modelo base queda sujeto a su propia licencia, que debe verificarse antes de uso comercial.
 - Sin datos de benchmarks generalistas ni de cuantización, lo que dificulta su evaluación fuera del nicho y su despliegue en hardware limitado.
-- Solo 26 descargas y 0 likes en HuggingFace; comunidad y soporte muy limitados.
+- Solo 26 descargas y 0 likes en Hugging Face; comunidad y soporte muy limitados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/charcot-ai/charcot-27b
+- Modelo en Hugging Face: https://huggingface.co/charcot-ai/charcot-27b
 - Dataset de entrenamiento: https://huggingface.co/datasets/charcot-ai/gym-sft
 - Dataset Charcot Gym: https://huggingface.co/datasets/charcot-ai/gym
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

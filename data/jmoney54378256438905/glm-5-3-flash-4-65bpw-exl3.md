@@ -82,7 +82,7 @@ No disponible. No se dispone de información sobre modelos comparables en los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jmoney54378256438905/GLM-5.3-Flash-4.65bpw-exl3
+- Modelo en Hugging Face: https://huggingface.co/jmoney54378256438905/GLM-5.3-Flash-4.65bpw-exl3
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint BF16 original: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Repositorio ExLlamaV3: https://github.com/turboderp-org/exllamav3

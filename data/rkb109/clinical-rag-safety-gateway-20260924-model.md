@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Clinical RAG Safety Gateway Baseline Model es un prototipo pequeno y transparente publicado por el usuario RKB109 en HuggingFace, orientado a demostrar la arquitectura de una pasarela de seguridad para asistentes clinicos basados en generacion aumentada por recuperacion (RAG). El problema que aborda es concreto: un asistente clinico necesita recuperar evidencia, atribuir la fuente de cada afirmacion y abstenerse explicitamente de responder cuando no hay respaldo documental, antes de que la respuesta llegue al equipo asistencial. El modelo combina pesos de tokens por etiqueta con recuperacion de evidencia ponderada por IDF, y segun su model card no invoca ningun LLM alojado externamente.
+Clinical RAG Safety Gateway Baseline Model es un prototipo pequeno y transparente publicado por el usuario RKB109 en Hugging Face, orientado a demostrar la arquitectura de una pasarela de seguridad para asistentes clinicos basados en generacion aumentada por recuperacion (RAG). El problema que aborda es concreto: un asistente clinico necesita recuperar evidencia, atribuir la fuente de cada afirmacion y abstenerse explicitamente de responder cuando no hay respaldo documental, antes de que la respuesta llegue al equipo asistencial. El modelo combina pesos de tokens por etiqueta con recuperacion de evidencia ponderada por IDF, y segun su model card no invoca ningun LLM alojado externamente.
 
 No es un transformer: la libreria declarada es `custom` y el artefacto se distribuye en un formato JSON propio definido por el autor, no en safetensors ni GGUF. No se publican datos de tamano (parametros totales, activos ni longitud de contexto), de idiomas soportados ni de esquemas de cuantizacion. La unica cifra de evaluacion disponible es una exactitud de 1 sobre 4 ejemplos sinteticos reservados, un tamano de muestra que no permite ninguna conclusion estadistica.
 
@@ -91,7 +91,7 @@ No hay modelos directamente comparables en la informacion proporcionada: se trat
 | Abtencion explicita | si, prevista en el diseno | no por defecto | no por defecto | depende del prompt o del ajuste |
 | Atribucion de citas | si, prevista como metrica | si, por documento devuelto | si, por documento devuelto | solo si se le exige en el prompt |
 | Licencia | MIT | depende de la implementacion | Apache-2.0 | variable |
-| Disponibilidad | repositorio HuggingFace + GitHub del autor | multiples implementaciones | ampliamente disponible | ampliamente disponible |
+| Disponibilidad | repositorio Hugging Face + GitHub del autor | multiples implementaciones | ampliamente disponible | ampliamente disponible |
 | Datos de rendimiento | accuracy 1 sobre 4 ejemplos sinteticos | no comparable entre implementaciones | benchmarks publicos propios | benchmarks publicos propios |
 
 Los datos de las columnas de alternativas son referencias generales del sector, no cifras aportadas por la informacion de este modelo.
@@ -112,7 +112,7 @@ Los datos de las columnas de alternativas son referencias generales del sector, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/clinical-rag-safety-gateway-20260924-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/clinical-rag-safety-gateway-20260924-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/clinical-rag-safety-gateway-20260924-dataset
 - Repositorio de GitHub con `train.py`, split del dataset, codigo de evaluacion y formato JSON del modelo: no disponible como URL concreta en la informacion proporcionada (la model card lo menciona sin enlace)
 - Paper, blog o demo: no disponible

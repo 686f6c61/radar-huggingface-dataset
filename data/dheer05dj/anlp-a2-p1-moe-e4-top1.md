@@ -2,7 +2,7 @@
 
 ## Resumen
 
-p1_moe_e4_top1 es un checkpoint de investigacion publicado por el usuario dheer05dj en HuggingFace, fruto de la asignacion 2 de un curso de ANLP (Advanced Natural Language Processing). Se trata de un transformer decoder-only implementado desde cero en PyTorch, con una capa de mezcla de expertos (MoE) de 4 expertos y enrutado top-1, disenado especificamente para traduccion automatica desde vietnamita y japones hacia ingles. El modelo tiene 41.574.912 parametros totales (41,57 M) de los cuales 28,99 M estan activos por token, lo que lo situa en la categoria de modelos muy pequenos y de investigacion.
+p1_moe_e4_top1 es un checkpoint de investigacion publicado por el usuario dheer05dj en Hugging Face, fruto de la asignacion 2 de un curso de ANLP (Advanced Natural Language Processing). Se trata de un transformer decoder-only implementado desde cero en PyTorch, con una capa de mezcla de expertos (MoE) de 4 expertos y enrutado top-1, disenado especificamente para traduccion automatica desde vietnamita y japones hacia ingles. El modelo tiene 41.574.912 parametros totales (41,57 M) de los cuales 28,99 M estan activos por token, lo que lo situa en la categoria de modelos muy pequenos y de investigacion.
 
 Su relevancia es fundamentalmente didactica y experimental: sirve como ejemplo reproducible de una arquitectura MoE entrenada desde cero con un presupuesto minimo (14 minutos y 46 segundos de entrenamiento sobre 107.305.098 tokens), con resultados de traduccion notables para su tamano (BLEU de 43,44 en vietnamita-ingles y 33,72 en japones-ingles). No es un modelo orientado a produccion ni compite con modelos multilingues de gran escala.
 
@@ -32,7 +32,7 @@ La informacion publica es muy limitada: no se declara licencia, no hay pipeline 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only escrito desde cero en PyTorch, sin depender de las clases de HuggingFace Transformers. Segun la model card, usa d_model de 512, 8 capas, 8 cabezas de atencion, codificacion posicional rotatoria (RoPE), normalizacion RMSNorm y embeddings atados entre la capa de entrada y la de salida. Sobre esta base se anade una capa de mezcla de expertos con 4 expertos y enrutado top-1, de ahi el sufijo `e4_top1` del nombre: cada token se enruta a un unico experto, lo que mantiene el coste de computo cercano al de un modelo denso del tamano de los parametros activos (28,99 M) en lugar del total (41,57 M).
+La arquitectura es un transformer decoder-only escrito desde cero en PyTorch, sin depender de las clases de Hugging Face Transformers. Segun la model card, usa d_model de 512, 8 capas, 8 cabezas de atencion, codificacion posicional rotatoria (RoPE), normalizacion RMSNorm y embeddings atados entre la capa de entrada y la de salida. Sobre esta base se anade una capa de mezcla de expertos con 4 expertos y enrutado top-1, de ahi el sufijo `e4_top1` del nombre: cada token se enruta a un unico experto, lo que mantiene el coste de computo cercano al de un modelo denso del tamano de los parametros activos (28,99 M) en lugar del total (41,57 M).
 
 El entrenamiento se realizo sobre 107.305.098 tokens (aproximadamente 107 M) y duro 14 minutos y 46 segundos, segun las metricas declaradas por el autor. La model card no detalla la composicion del dataset, el numero de pasos, el tamano de batch, la tasa de aprendizaje ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Las metricas de evaluacion (`test_ppl_vi`, `test_ppl_ja`, `bleu_vi`, `bleu_ja`) confirman que la tarea es traduccion desde vietnamita y japones a ingles, pero no se especifica el corpus concreto. El `config.json` del repositorio contiene el objeto `TransformerConfig` que consume `src/part1/model.py`, y la carga debe hacerse con `src.part1.train.load_checkpoint(dir)`.
 
@@ -46,7 +46,7 @@ El entrenamiento se realizo sobre 107.305.098 tokens (aproximadamente 107 M) y d
 - No hay evidencia de capacidades de agente, razonamiento multi-paso ni modo de pensamiento explicito.
 - No hay evidencia de capacidades de vision, audio ni multimodalidad.
 - Capacidades multilingues limitadas a los pares declarados; no se documentan otros idiomas.
-- No se declara un pipeline de HuggingFace, por lo que no es invocable con la API `pipeline()` de Transformers sin adaptacion.
+- No se declara un pipeline de Hugging Face, por lo que no es invocable con la API `pipeline()` de Transformers sin adaptacion.
 
 ## Casos de uso
 
@@ -93,10 +93,10 @@ No hay datos de rendimiento de los modelos alternativos en la informacion propor
 
 | Modelo | Parametros | Tarea | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| p1_moe_e4_top1 | 41,57 M (28,99 M activos) | Traduccion vi/ja -> en | Transformer decoder-only MoE, 4 expertos top-1 | no disponible | HuggingFace, requiere codigo propio |
-| Helsinki-NLP/opus-mt-vi-en | orden de 70-80 M | Traduccion vi -> en | Transformer seq2seq denso | no verificada en la informacion proporcionada | HuggingFace, integrado en Transformers |
-| facebook/m2m100_418M | 418 M | Traduccion multilingue (100 idiomas) | Transformer encoder-decoder denso | no verificada en la informacion proporcionada | HuggingFace, integrado en Transformers |
-| facebook/nllb-200-distilled-600M | 600 M | Traduccion multilingue (200 idiomas) | Transformer encoder-decoder denso | no verificada en la informacion proporcionada | HuggingFace, integrado en Transformers |
+| p1_moe_e4_top1 | 41,57 M (28,99 M activos) | Traduccion vi/ja -> en | Transformer decoder-only MoE, 4 expertos top-1 | no disponible | Hugging Face, requiere codigo propio |
+| Helsinki-NLP/opus-mt-vi-en | orden de 70-80 M | Traduccion vi -> en | Transformer seq2seq denso | no verificada en la informacion proporcionada | Hugging Face, integrado en Transformers |
+| facebook/m2m100_418M | 418 M | Traduccion multilingue (100 idiomas) | Transformer encoder-decoder denso | no verificada en la informacion proporcionada | Hugging Face, integrado en Transformers |
+| facebook/nllb-200-distilled-600M | 600 M | Traduccion multilingue (200 idiomas) | Transformer encoder-decoder denso | no verificada en la informacion proporcionada | Hugging Face, integrado en Transformers |
 
 Frente a estos modelos, p1_moe_e4_top1 destaca por su tamano muy reducido y su arquitectura MoE, pero carece de licencia declarada, de integracion con el ecosistema Transformers y de evaluacion externa que permita validar sus BLEU declarados.
 
@@ -116,7 +116,7 @@ Frente a estos modelos, p1_moe_e4_top1 destaca por su tamano muy reducido y su a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheer05dj/anlp-a2-p1-moe-e4-top1
+- Modelo en Hugging Face: https://huggingface.co/dheer05dj/anlp-a2-p1-moe-e4-top1
 - Logs de entrenamiento en Weights & Biases: https://wandb.ai/dheer05k-iiit-hyderabad/anlp-a2-part1-moe/runs/plznk5ro
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible publicamente en la informacion proporcionada (la model card referencia `src/part1/model.py` y `src/part1/train.py` de un repositorio de asignatura no enlazado)

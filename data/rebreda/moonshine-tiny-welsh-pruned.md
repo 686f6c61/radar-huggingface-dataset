@@ -72,9 +72,9 @@ Resultados declarados por el autor del modelo (no verificados):
 
 | Modelo | Parámetros | Idiomas | Licencia | WER galés (referencia) | Disponibilidad |
 |---|---|---|---|---|---|
-| moonshine-tiny-welsh-pruned (este modelo) | 21,2 M | cy, en | MIT | 35,6 (Common Voice 27) | HuggingFace |
-| moonshine-base-welsh (ggggdsdd) | 61,5 M | cy, en | no disponible en la información | no disponible | HuggingFace |
-| moonshine-ai/moonshine-tiny (base) | 27,1 M | en (principalmente) | MIT | no disponible | HuggingFace |
+| moonshine-tiny-welsh-pruned (este modelo) | 21,2 M | cy, en | MIT | 35,6 (Common Voice 27) | Hugging Face |
+| moonshine-base-welsh (ggggdsdd) | 61,5 M | cy, en | no disponible en la información | no disponible | Hugging Face |
+| moonshine-ai/moonshine-tiny (base) | 27,1 M | en (principalmente) | MIT | no disponible | Hugging Face |
 
 El autor indica que este modelo es menos preciso que su hermano mayor `ggggdsdd/moonshine-base-welsh` (61,5 M de parámetros), pero un tercio de su tamaño. No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada.
 
@@ -90,7 +90,7 @@ El autor indica que este modelo es menos preciso que su hermano mayor `ggggdsdd/
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rebreda/moonshine-tiny-welsh-pruned
+- Modelo en Hugging Face: https://huggingface.co/rebreda/moonshine-tiny-welsh-pruned
 - Modelo base Moonshine Tiny: https://huggingface.co/moonshine-ai/moonshine-tiny
 - Modelo hermano de mayor tamaño: https://huggingface.co/ggggdsdd/moonshine-base-welsh
 - Página del proyecto con el write-up de los experimentos: https://quickthoughts.ca/projects/welsh-asr/

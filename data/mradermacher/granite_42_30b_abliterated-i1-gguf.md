@@ -74,7 +74,7 @@ No se dispone de datos comparativos fiables en la informacion proporcionada. El 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Granite_42_30b_Abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Granite_42_30b_Abliterated-i1-GGUF
 - Modelo original (ChonkE): https://huggingface.co/ChonkE/Granite_42_30b_Abliterated
 - Documentacion de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de IBM Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

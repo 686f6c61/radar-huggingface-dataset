@@ -18,7 +18,7 @@ Al ser un fine-tuning de ModernBERT-large, hereda la arquitectura de transformer
 | Longitud de contexto | 8192 tokens (heredada de ModernBERT-large) |
 | Tipos de cuantizacion | no disponible (formato safetensors, compatible con transformers) |
 | Idiomas soportados | ingles (segun tag `en`) |
-| Licencia | Apache 2.0 (segun metadatos de HuggingFace) |
+| Licencia | Apache 2.0 (segun metadatos de Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - Al ser un modelo encoder de aproximadamente 395M parametros (basado en ModernBERT-large), la inferencia es ligera en comparacion con LLMs generativos.
 - VRAM estimada: en FP16, el modelo ocupa alrededor de 790 MB de pesos, por lo que cabe en GPUs con 4 GB o mas. En cuantizacion INT8, el uso de VRAM se reduce a unos 400 MB.
 - GPUs recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060, o superiores. Tambien puede ejecutarse en CPU con razonable velocidad para inferencia por lotes.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con HuggingFace Inference Endpoints, o mediante librerias como ONNX Runtime o TensorRT para optimizacion.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con Hugging Face Inference Endpoints, o mediante librerias como ONNX Runtime o TensorRT para optimizacion.
 - Latencia: no se dispone de datos medidos, pero para un encoder de este tamano, la inferencia en GPU suele ser de milisegundos por secuencia.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s-nlp/tool-calling-hallucination-modernbert-large-crf-k2-stratified-unfrozen-best
+- Modelo en Hugging Face: https://huggingface.co/s-nlp/tool-calling-hallucination-modernbert-large-crf-k2-stratified-unfrozen-best
 - Coleccion de s-nlp sobre deteccion de alucinaciones en tool calling: https://huggingface.co/collections/s-nlp/tool-calling-hallucination-detection
 - Modelo base ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - Dataset toolHACE (mencionado en tags): https://huggingface.co/datasets/s-nlp/toolHACE

@@ -86,5 +86,5 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Darren-kwon/cs231n-classification
+- Modelo en Hugging Face: https://huggingface.co/Darren-kwon/cs231n-classification
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara: cubre una lengua africana de bajos recursos
 | Longitud de contexto | 512 posiciones máximas de la arquitectura base; entrenado con `max_length` = 256 |
 | Tipos de cuantización | No se publican versiones cuantizadas; el repo contiene safetensors en precisión completa. Admite cuantización dinámica int8 vía ONNX Runtime o PyTorch, no verificada en la información disponible |
 | Idiomas soportados | `bam` (bambara) como idioma de ajuste; el modelo base es multilingüe (100 idiomas), extremo no validado en este checkpoint |
-| Licencia | No disponible en los metadatos de HuggingFace; la model card remite a la licencia y términos de `Davlan/afro-xlmr-base`, que rigen cualquier uso derivado |
+| Licencia | No disponible en los metadatos de Hugging Face; la model card remite a la licencia y términos de `Davlan/afro-xlmr-base`, que rigen cualquier uso derivado |
 | Formato de pesos | safetensors (carga vía `transformers` con `AutoModelForTokenClassification`); no hay GGUF ni ONNX publicados |
 | Tarea / pipeline | Clasificación de tokens (NER), etiquetas BIO decodificables por `id2label` |
 | Tamaño del repositorio | 2,2 GB |
@@ -78,10 +78,10 @@ El punto metodológico relevante es la calibración: el autor afirma que su arn�
 
 | Modelo | Parámetros | Contexto | Tarea | Resultado en `bam` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`afro-xlmr-base-masakhaner2-bam`) | 277 M | 512 (entrenado a 256) | NER | span_f1 0,8096 (1 ejecución) | No disponible (ríge la del base) | HuggingFace, 14 descargas |
-| `Davlan/afro-xlmr-base` | ≈277 M (mismo tamaño que XLM-R base) | 512 | Modelo base (representaciones) | No disponible: no es un modelo NER ajustado | No verificada en la información disponible | HuggingFace |
-| XLM-RoBERTa base (`FacebookAI/xlm-roberta-base`) | ≈278 M | 512 | Modelo base (representaciones) | No disponible | No verificada en la información disponible | HuggingFace |
-| Otros checkpoints de AfroXLMR ajustados a MasakhaNER 2.0 por el mismo autor | ≈277 M | 512 (entrenado a 256) | NER | No disponible para `bam` en la información consultada | Ídem | HuggingFace |
+| Este modelo (`afro-xlmr-base-masakhaner2-bam`) | 277 M | 512 (entrenado a 256) | NER | span_f1 0,8096 (1 ejecución) | No disponible (ríge la del base) | Hugging Face, 14 descargas |
+| `Davlan/afro-xlmr-base` | ≈277 M (mismo tamaño que XLM-R base) | 512 | Modelo base (representaciones) | No disponible: no es un modelo NER ajustado | No verificada en la información disponible | Hugging Face |
+| XLM-RoBERTa base (`FacebookAI/xlm-roberta-base`) | ≈278 M | 512 | Modelo base (representaciones) | No disponible | No verificada en la información disponible | Hugging Face |
+| Otros checkpoints de AfroXLMR ajustados a MasakhaNER 2.0 por el mismo autor | ≈277 M | 512 (entrenado a 256) | NER | No disponible para `bam` en la información consultada | Ídem | Hugging Face |
 
 La comparación cuantitativa con alternativas ajustadas a NER en bambara no está disponible en la información proporcionada; el propio autor advierte que las diferencias por debajo del margen de calibración (~0,25 F1) no deben interpretarse como mejoras reales.
 
@@ -100,7 +100,7 @@ La comparación cuantitativa con alternativas ajustadas a NER en bambara no est�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/afro-xlmr-base-masakhaner2-bam
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/afro-xlmr-base-masakhaner2-bam
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-base
-- Corpus MasakhaNER 2.0: disponible en HuggingFace bajo el proyecto Masakhane (enlace no incluido en la información proporcionada)
+- Corpus MasakhaNER 2.0: disponible en Hugging Face bajo el proyecto Masakhane (enlace no incluido en la información proporcionada)
 - Paper de MasakhaNER 2.0, paper de AfroXLMR, repositorio del arnés de evaluación y demos: no disponibles en la información proporcionada.

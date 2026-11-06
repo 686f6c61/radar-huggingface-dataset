@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`banjotim/efficient-attention` es un repositorio alojado en HuggingFace por el usuario banjotim bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint desplegable: la propia model card lo describe como una "working research note" sobre atención eficiente que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El repositorio contiene dos artefactos de texto, `review.md` y `README.md`, y no declara código de entrenamiento, pesos funcionales ni resultados experimentales.
+`banjotim/efficient-attention` es un repositorio alojado en Hugging Face por el usuario banjotim bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint desplegable: la propia model card lo describe como una "working research note" sobre atención eficiente que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El repositorio contiene dos artefactos de texto, `review.md` y `README.md`, y no declara código de entrenamiento, pesos funcionales ni resultados experimentales.
 
 El contenido de la nota abarca el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y contextos de evaluación concretos como Long Range Arena, ImageNet-1K y Flickr30k. También incluye comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor indica explícitamente que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
 
@@ -86,7 +86,7 @@ No disponible. Este repositorio no es un modelo y no compite en la categoría de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/banjotim/efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/banjotim/efficient-attention
 - `review.md`, artefacto principal de la nota, dentro del repositorio: https://huggingface.co/banjotim/efficient-attention/blob/main/review.md (ruta inferida a partir de la estructura declarada)
 - `README.md` del repositorio: https://huggingface.co/banjotim/efficient-attention/blob/main/README.md (ruta inferida a partir de la estructura declarada)
 - La búsqueda web realizada no ha devuelto enlaces relevantes al repositorio ni a su autor; los resultados obtenidos corresponden a páginas de LinkedIn sin relación con el contenido. No se dispone de papers, blogs, repositorios de código ni demostraciones adicionales.

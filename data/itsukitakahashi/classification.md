@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsukitakahashi/classification` es un repositorio de HuggingFace publicado por el usuario itsukitakahashi que contiene una implementación propia de una arquitectura denominada Cnn Transformer, orientada a tareas de clasificación. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el propio autor indica en la model card que la variante publicada es "tiny" y que el checkpoint incluido es una inicialización válida para pruebas de humo (*smoke tests*), no un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`itsukitakahashi/classification` es un repositorio de Hugging Face publicado por el usuario itsukitakahashi que contiene una implementación propia de una arquitectura denominada Cnn Transformer, orientada a tareas de clasificación. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el propio autor indica en la model card que la variante publicada es "tiny" y que el checkpoint incluido es una inicialización válida para pruebas de humo (*smoke tests*), no un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El dato más relevante es su tamaño: 33.088 parámetros totales según el archivo `safetensors`, es decir, unas 33 mil unidades, tres órdenes de magnitud por debajo de un transformer pequeño convencional. Con esa escala, el modelo no es utilizable como clasificador de producción sin un entrenamiento previo, pero sí como esqueleto de referencia para experimentar con combinaciones de convolución y atención.
 
@@ -77,7 +77,7 @@ No se dispone, en la informacion proporcionada, de datos verificables sobre mode
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| itsukitakahashi/classification | 33.088 | no disponible | Clasificacion (Cnn Transformer, tiny) | Apache 2.0 | HuggingFace, 0 descargas |
+| itsukitakahashi/classification | 33.088 | no disponible | Clasificacion (Cnn Transformer, tiny) | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 A modo de orientacion cualitativa, la categoria de referencia serian implementaciones minimas de clasificacion con ResNet, variantes *tiny* de ViT o clasificadores basados en BERT pequeño, pero no se dispone en la informacion facilitada de sus especificaciones para establecer una comparacion rigurosa. Ademas, la comparacion directa es poco significativa mientras este repositorio no publique un checkpoint entrenado y evaluado.
@@ -97,6 +97,6 @@ A modo de orientacion cualitativa, la categoria de referencia serian implementac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsukitakahashi/classification
+- Modelo en Hugging Face: https://huggingface.co/itsukitakahashi/classification
 - Archivos incluidos en el repositorio: `run.py` (artefacto principal), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion) y `README.md`.
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces recuperados correspondian a promociones de supermercados y no guardan relacion con el contenido de esta ficha.

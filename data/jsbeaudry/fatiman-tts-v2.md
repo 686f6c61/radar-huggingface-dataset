@@ -94,9 +94,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks de LLM: n
 
 | Modelo | Parámetros | Idiomas | Contexto | CER en frases reservadas | Licencia | Disponibilidad |
 |---|---|---:|---|---:|---|---|
-| Fatiman-TTS-v2 | 336.068.290 | criollo haitiano | no aplica | 2,68 % (80 frases) | CC-BY-4.0 | abierto en HuggingFace |
-| Fatiman-TTS-v1 | no disponible | criollo haitiano | no aplica | 2,70 % (80 frases) | no disponible en la información proporcionada | abierto en HuggingFace |
-| kyutai/pocket-tts | no disponible | francés (variante `french_24l` usada como base) | no aplica | no disponible | CC-BY-4.0 (según la model card) | abierto en HuggingFace |
+| Fatiman-TTS-v2 | 336.068.290 | criollo haitiano | no aplica | 2,68 % (80 frases) | CC-BY-4.0 | abierto en Hugging Face |
+| Fatiman-TTS-v1 | no disponible | criollo haitiano | no aplica | 2,70 % (80 frases) | no disponible en la información proporcionada | abierto en Hugging Face |
+| kyutai/pocket-tts | no disponible | francés (variante `french_24l` usada como base) | no aplica | no disponible | CC-BY-4.0 (según la model card) | abierto en Hugging Face |
 | OpenAI TTS (`onyx`, `shimmer`, `nova`) | propietario | multilingüe | no disponible | 5,8 % en sus propios 60 clips | propietaria | solo API |
 | Google TTS (`zefi`, `kore`, `charles`) | propietario | multilingüe | no disponible | 1,9 % en sus propios 60 clips | propietaria | solo API |
 
@@ -118,7 +118,7 @@ Salvedad: las cifras de OpenAI y Google corresponden a clips generados a princip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsbeaudry/Fatiman-TTS-v2
+- Modelo en Hugging Face: https://huggingface.co/jsbeaudry/Fatiman-TTS-v2
 - Export ONNX para móviles y navegadores: https://huggingface.co/jsbeaudry/Fatiman-TTS-v2-onnx
 - Versión anterior: https://huggingface.co/jsbeaudry/Fatiman-TTS-v1
 - Modelo base (Kyutai Pocket TTS): https://huggingface.co/kyutai/pocket-tts

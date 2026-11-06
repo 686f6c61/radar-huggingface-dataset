@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-lora` es un ajuste fino mediante LoRA sobre el modelo base `unsloth/Qwen3.5-0.8B`, publicado por el usuario nekuwolf en HuggingFace el 18 de septiembre de 2026. Se trata de un adaptador de bajo rango (el repositorio ocupa 0,2 GB, consistente con pesos de LoRA y no con un modelo completo) orientado a dominio concreto: por el nombre del repositorio, el entrenamiento se ha realizado sobre contenido de la wiki de la comunidad de Overwatch, con un corte de datos de mediados de septiembre de 2026.
+El modelo `nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-lora` es un ajuste fino mediante LoRA sobre el modelo base `unsloth/Qwen3.5-0.8B`, publicado por el usuario nekuwolf en Hugging Face el 18 de septiembre de 2026. Se trata de un adaptador de bajo rango (el repositorio ocupa 0,2 GB, consistente con pesos de LoRA y no con un modelo completo) orientado a dominio concreto: por el nombre del repositorio, el entrenamiento se ha realizado sobre contenido de la wiki de la comunidad de Overwatch, con un corte de datos de mediados de septiembre de 2026.
 
 La relevancia de esta ficha es mas bien metodologica que de rendimiento: se trata de un ejemplo tipico de adaptacion de dominio sobre un modelo pequeno (aproximadamente 0,8 mil millones de parametros segun la nomenclatura del modelo base), del tipo que desarrolladores e investigadores emplean para construir asistentes especializados de bajo coste. El entrenamiento se declara realizado con Unsloth, lo que segun el autor permitio un entrenamiento "2x mas rapido" que el flujo estandar.
 
@@ -73,10 +73,10 @@ La comparativa se establece con modelos pequenos de proposito general frecuentem
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-lora | no disponible (base ~0,8B) | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Adaptador LoRA de dominio, requiere el modelo base |
-| Qwen3-0.6B | 0,6B | 32 768 tokens (documentacion publica de Qwen) | apache-2.0 | HuggingFace, ampliamente usado | Modelo generalista sin ajuste de dominio |
-| Llama-3.2-1B | 1,23B | 128 000 tokens | Llama 3.2 Community License | HuggingFace | Licencia con restricciones para algunos usos; requiere aceptar terminos |
-| Gemma-3-1B | 1B | no disponible | Gemma Terms of Use | HuggingFace | Licencia con condiciones de uso responsables |
+| nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-lora | no disponible (base ~0,8B) | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Adaptador LoRA de dominio, requiere el modelo base |
+| Qwen3-0.6B | 0,6B | 32 768 tokens (documentacion publica de Qwen) | apache-2.0 | Hugging Face, ampliamente usado | Modelo generalista sin ajuste de dominio |
+| Llama-3.2-1B | 1,23B | 128 000 tokens | Llama 3.2 Community License | Hugging Face | Licencia con restricciones para algunos usos; requiere aceptar terminos |
+| Gemma-3-1B | 1B | no disponible | Gemma Terms of Use | Hugging Face | Licencia con condiciones de uso responsables |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento efectivo de este adaptador frente a las alternativas.
 
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-lora
+- Repositorio Hugging Face: https://huggingface.co/nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Unsloth (framework de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
 - TRL (etiqueta del repositorio, sin enlace explicito en la model card): https://github.com/huggingface/trl

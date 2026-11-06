@@ -11,7 +11,7 @@ Su relevancia radica en que pertenece al esfuerzo BabyLM, cuyo objetivo es estud
 | Parametro | Valor |
 |---|---|
 | Arquitectura | ParaGRU (RNN con compuertas diagonales) con SwiGLU residual, 6 capas pre-LN |
-| Parametros totales | 19.656.192 (según model card); 25.800.192 (según metadatos de HuggingFace) |
+| Parametros totales | 19.656.192 (según model card); 25.800.192 (según metadatos de Hugging Face) |
 | Longitud de contexto | 512 tokens (posiciones absolutas) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Inglés |
@@ -81,11 +81,11 @@ La comparativa se basa en datos de la model card del modelo ParaGRU, que incluye
 - Riesgo de alucinación, especialmente en generación libre, al tratarse de un modelo muy pequeño.
 - Los sesgos del modelo no han sido evaluados; no hay evidencia de evaluación de equidad o toxicidad.
 - Requiere código personalizado y dependencias específicas (`pararnn-torch`), lo que dificulta su despliegue en plataformas estándar.
-- La discrepancia entre los 19,65 M de parámetros de la model card y los 25,80 M de los metadatos de HuggingFace no está explicada por el autor.
+- La discrepancia entre los 19,65 M de parámetros de la model card y los 25,80 M de los metadatos de Hugging Face no está explicada por el autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bugkira-ai/babylm-paragru-20m
+- Hugging Face: https://huggingface.co/bugkira-ai/babylm-paragru-20m
 - Paper ParaRNN (arXiv:2510.21450): https://arxiv.org/abs/2510.21450
 - Paper BabyLM 2026 (arXiv:2602.20092): https://arxiv.org/abs/2602.20092
 - Repositorio pararnn-torch: https://github.com/bugkira/pararnn-torch

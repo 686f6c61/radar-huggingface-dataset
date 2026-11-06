@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables. El autor tiene otros ad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_phi-4_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_phi-4_seed42
 - Herramienta Tinker: https://thinkingmachines.ai/tinker/
 - Repositorio de Qwen3.6 (modelo base): https://github.com/QwenLM/Qwen3.6

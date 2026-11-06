@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_random_omnimath_qwen14b` es un checkpoint de ajuste supervisado (SFT) publicado en HuggingFace por el usuario `ishikaa`. El repositorio contiene 14 770 033 664 parametros (unos 14,77 mil millones) almacenados en safetensors, con un tamano de repositorio de 29,6 GB, lo que corresponde a pesos en precision de 16 bits (bf16 o fp16). La etiqueta `qwen2` y el sufijo `qwen14b` del identificador apuntan a una arquitectura transformer de tipo decoder-only de la familia Qwen2, aunque el autor no lo confirma explicitamente en la model card.
+`ishikaa/acquisition_student_random_omnimath_qwen14b` es un checkpoint de ajuste supervisado (SFT) publicado en Hugging Face por el usuario `ishikaa`. El repositorio contiene 14 770 033 664 parametros (unos 14,77 mil millones) almacenados en safetensors, con un tamano de repositorio de 29,6 GB, lo que corresponde a pesos en precision de 16 bits (bf16 o fp16). La etiqueta `qwen2` y el sufijo `qwen14b` del identificador apuntan a una arquitectura transformer de tipo decoder-only de la familia Qwen2, aunque el autor no lo confirma explicitamente en la model card.
 
-El nombre del repositorio sugiere un experimento de destilacion o de seleccion de datos denominado "acquisition_student_random" sobre un corpus matematico ("omnimath"), con un modelo alumno de 14B. Las etiquetas `trl` y `sft` confirman que el entrenamiento se realizo con la libreria TRL de HuggingFace mediante ajuste supervisado sobre un dataset conversacional. Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion.
+El nombre del repositorio sugiere un experimento de destilacion o de seleccion de datos denominado "acquisition_student_random" sobre un corpus matematico ("omnimath"), con un modelo alumno de 14B. Las etiquetas `trl` y `sft` confirman que el entrenamiento se realizo con la libreria TRL de Hugging Face mediante ajuste supervisado sobre un dataset conversacional. Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion.
 
 Su relevancia actual es limitada: no tiene descargas ni interacciones, la model card es la plantilla autogenerada sin ningun dato rellenado y no se ha publicado informacion sobre dataset, hiperparametros, evaluacion ni licencia. Resulta util unicamente como material de reproduccion para quien investigue estrategias de adquisicion de datos en destilacion de modelos matematicos, y siempre asumiendo que la practica totalidad de sus caracteristicas tecnicas no estan documentadas.
 
@@ -82,7 +82,7 @@ La diferencia fundamental no es de rendimiento, sino de trazabilidad: las altern
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]", incluidos desarrollador, tipo de modelo, idiomas y licencia.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]", incluidos desarrollador, tipo de modelo, idiomas y licencia.
 - Licencia no disponible: sin una licencia explicita no hay autorizacion clara para uso comercial, redistribucion ni modificacion. En la practica, debe tratarse como no apto para produccion hasta que el autor la defina.
 - Riesgo de alucinacion: al ser un SFT puramente supervisado y sin etapas documentadas de RLHF o DPO, es esperable una menor contencion ante peticiones problematicas y una mayor propension a inventar pasos en razonamientos matematicos.
 - Idiomas no declarados: se desconoce si el ajuste ha degradado el multilingüismo del modelo base o si el corpus de entrenamiento era exclusivamente en ingles.
@@ -94,7 +94,7 @@ La diferencia fundamental no es de rendimiento, sino de trazabilidad: las altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_random_omnimath_qwen14b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_random_omnimath_qwen14b
 - Articulo citado en las etiquetas (calculador de impacto medioambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Libreria TRL, empleada segun las etiquetas del repositorio: https://github.com/huggingface/trl
 - Documentacion de Text Generation Inference: https://github.com/huggingface/text-generation-inference

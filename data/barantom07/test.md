@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `barantom07/test` es un espacio de HuggingFace creado el 17 de agosto de 2026 por el usuario `barantom07`. Su nombre y la ausencia de contenido técnico sugieren que se trata de un repositorio de prueba o un placeholder, no de un modelo de IA real. La model card únicamente declara la licencia Apache 2.0 y no incluye descripción, arquitectura, pesos, ni ningún otro dato técnico. No se ha publicado información sobre parámetros, contexto, capacidades o rendimiento.
+El repositorio `barantom07/test` es un espacio de Hugging Face creado el 17 de agosto de 2026 por el usuario `barantom07`. Su nombre y la ausencia de contenido técnico sugieren que se trata de un repositorio de prueba o un placeholder, no de un modelo de IA real. La model card únicamente declara la licencia Apache 2.0 y no incluye descripción, arquitectura, pesos, ni ningún otro dato técnico. No se ha publicado información sobre parámetros, contexto, capacidades o rendimiento.
 
 A fecha de su creación, el repositorio registra cero descargas y cero likes, lo que refuerza la hipótesis de que es un espacio de pruebas sin utilidad práctica para desarrolladores o investigadores. No existe evidencia de que este identificador corresponda a un modelo funcional o desplegable.
 
@@ -52,4 +52,4 @@ No disponible. No existe información suficiente para comparar este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/barantom07/test
+- Repositorio en Hugging Face: https://huggingface.co/barantom07/test

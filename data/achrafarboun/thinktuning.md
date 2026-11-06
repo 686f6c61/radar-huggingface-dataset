@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `achrafArboun/thinkTuning` es un adaptador LoRA (Low-Rank Adaptation) subido a HuggingFace por el usuario `achrafArboun`. Según el model card, se presenta como un clasificador de sentimientos para textos en francés e inglés, construido sobre el modelo base `haianzxc/TinyLlama`. El repositorio contiene pesos en formato safetensors y ocupa 0,5 GB, con un total de 135.326.979 parámetros en el adaptador.
+El modelo `achrafArboun/thinkTuning` es un adaptador LoRA (Low-Rank Adaptation) subido a Hugging Face por el usuario `achrafArboun`. Según el model card, se presenta como un clasificador de sentimientos para textos en francés e inglés, construido sobre el modelo base `haianzxc/TinyLlama`. El repositorio contiene pesos en formato safetensors y ocupa 0,5 GB, con un total de 135.326.979 parámetros en el adaptador.
 
-Sin embargo, la metadata de HuggingFace presenta una inconsistencia notable: el modelo está etiquetado con los tags `diffusers`, `text-to-image` y `template:diffusion-lora`, lo que apuntaría a un LoRA para generación de imágenes, no a un clasificador de texto. Esta contradicción, junto con la ausencia de documentación técnica y el hecho de que el modelo no tiene descargas ni likes, hace que su utilidad práctica sea dudosa.
+Sin embargo, la metadata de Hugging Face presenta una inconsistencia notable: el modelo está etiquetado con los tags `diffusers`, `text-to-image` y `template:diffusion-lora`, lo que apuntaría a un LoRA para generación de imágenes, no a un clasificador de texto. Esta contradicción, junto con la ausencia de documentación técnica y el hecho de que el modelo no tiene descargas ni likes, hace que su utilidad práctica sea dudosa.
 
 El nombre "thinkTuning" coincide con un paper de arXiv (2508.07616) sobre entrenamiento de modelos de lenguaje para reflexión cognitiva, pero no hay evidencia de que este modelo implemente las técnicas descritas en ese trabajo.
 
@@ -20,7 +20,7 @@ El nombre "thinkTuning" coincide con un paper de arXiv (2508.07616) sobre entren
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
-Nota: "Parámetros totales" se refiere al adaptador LoRA, no al modelo base. "Idiomas soportados" proviene del título del model card; la metadata de HuggingFace indica "no disponibles".
+Nota: "Parámetros totales" se refiere al adaptador LoRA, no al modelo base. "Idiomas soportados" proviene del título del model card; la metadata de Hugging Face indica "no disponibles".
 
 ## Arquitectura y entrenamiento
 
@@ -28,12 +28,12 @@ El modelo es un adaptador LoRA sobre TinyLlama, un modelo transformer de lenguaj
 
 No se proporcionan datos sobre el proceso de entrenamiento: no se indica el dataset utilizado, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El model card es mínimo y solo incluye el título "TinyLlama Sentiment Classifier — LoRA (FR/EN)" y un enlace de descarga.
 
-La metadata de HuggingFace, que incluye `diffusers` y `text-to-image`, no es coherente con la arquitectura de un modelo de lenguaje. Es posible que la subida esté mal etiquetada o que el adaptador esté destinado a un uso distinto del declarado.
+La metadata de Hugging Face, que incluye `diffusers` y `text-to-image`, no es coherente con la arquitectura de un modelo de lenguaje. Es posible que la subida esté mal etiquetada o que el adaptador esté destinado a un uso distinto del declarado.
 
 ## Capacidades
 
 - Según el model card, el modelo está diseñado para clasificación de sentimientos en francés e inglés (FR/EN). No se especifica el número de clases ni el formato de salida.
-- La metadata de HuggingFace lo etiqueta como text-to-image y LoRA de difusión, lo que sugiere una posible aplicación en generación de imágenes, aunque esto contradice la descripción del model card.
+- La metadata de Hugging Face lo etiqueta como text-to-image y LoRA de difusión, lo que sugiere una posible aplicación en generación de imágenes, aunque esto contradice la descripción del model card.
 - No se documentan capacidades de tool calling, function calling, razonamiento multi-paso ni soporte de agentes.
 - No se incluyen ejemplos de uso, demos funcionales ni instrucciones de inferencia.
 
@@ -75,6 +75,6 @@ No se dispone de información suficiente para realizar una comparativa. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/achrafArboun/thinkTuning
+- Hugging Face: https://huggingface.co/achrafArboun/thinkTuning
 - Paper ThinkTuning (posible relación por nombre): https://arxiv.org/abs/2508.07616
 - PDF del paper ThinkTuning: https://arxiv.org/pdf/2508.07616v1

@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los r
 | Modelo | Arquitectura | Capas del decodificador | Formato publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | dataangel/whisper-large-v3-turbo-openai (este repo) | Transformer encoder-decoder (Whisper turbo) | 4 | PyTorch `.pt` nativo de `openai-whisper` | MIT | Espejo de un fichero de OpenAI, 0 descargas y 0 likes en el momento de la consulta |
-| openai/whisper-large-v3-turbo | Transformer encoder-decoder (Whisper turbo) | 4 | Conversion a Transformers | MIT | Repositorio oficial en HuggingFace |
-| openai/whisper-large-v3 | Transformer encoder-decoder (Whisper) | 32 | Conversion a Transformers y checkpoint `.pt` | MIT | Repositorio oficial en HuggingFace |
+| openai/whisper-large-v3-turbo | Transformer encoder-decoder (Whisper turbo) | 4 | Conversion a Transformers | MIT | Repositorio oficial en Hugging Face |
+| openai/whisper-large-v3 | Transformer encoder-decoder (Whisper) | 32 | Conversion a Transformers y checkpoint `.pt` | MIT | Repositorio oficial en Hugging Face |
 | qualcomm/Whisper-Large-V3-Turbo | Transformer encoder-decoder, version para AI Hub | 4 | Formatos optimizados para dispositivos Qualcomm | no disponible | Repositorio y perfil en Qualcomm AI Hub |
 
 No se dispone de datos de parametros, contexto o rendimiento comparado para el resto de alternativas en la informacion proporcionada, por lo que la comparacion se limita a los aspectos estructurales y de distribucion.
@@ -96,7 +96,7 @@ No se dispone de datos de parametros, contexto o rendimiento comparado para el r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dataangel/whisper-large-v3-turbo-openai
+- Repositorio en Hugging Face: https://huggingface.co/dataangel/whisper-large-v3-turbo-openai
 - Checkpoint original de OpenAI: https://openaipublic.azureedge.net/main/whisper/models/aff26ae408abcba5fbf8813c21e62b0941638c5f6eebfb145be0c9839262a19a/large-v3-turbo.pt
 - Repositorio de codigo de Whisper: https://github.com/openai/whisper
 - Licencia de Whisper: https://github.com/openai/whisper/blob/main/LICENSE
@@ -105,5 +105,5 @@ No se dispone de datos de parametros, contexto o rendimiento comparado para el r
 - Articulo de referencia: Robust Speech Recognition via Large-Scale Weak Supervision (Radford et al., OpenAI), https://arxiv.org/abs/2212.04356
 - Whisper-Large-V3-Turbo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/whisper_large_v3_turbo
 - Version cuantizada w8a16 en Qualcomm AI Hub: https://aihub.qualcomm.com/compute/models/whisper_large_v3_turbo_quantized
-- Repositorio de Qualcomm en HuggingFace: https://huggingface.co/qualcomm/Whisper-Large-V3-Turbo
+- Repositorio de Qualcomm en Hugging Face: https://huggingface.co/qualcomm/Whisper-Large-V3-Turbo
 - Espejo comunitario en GitHub: https://github.com/yrsgsda/whisper-large-v3-turbo

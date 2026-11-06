@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k` es un checkpoint publicado en HuggingFace por el usuario cyttic (aparentemente vinculado al centro tecnológico CYTTIC). Por la nomenclatura del identificador, se trata de un modelo de reconocimiento automático del habla (ASR) basado en CTC (Connectionist Temporal Classification), con un vocabulario de salida de 10.000 tokens BPE ("10k") y entrenado sobre un corpus etiquetado como "human10bi" con características geométricas específicas ("hhdgeom") y un componente "byp". No obstante, la model card no aporta ninguna descripción funcional, por lo que estas inferencias proceden únicamente del nombre del repositorio.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k` es un checkpoint publicado en Hugging Face por el usuario cyttic (aparentemente vinculado al centro tecnológico CYTTIC). Por la nomenclatura del identificador, se trata de un modelo de reconocimiento automático del habla (ASR) basado en CTC (Connectionist Temporal Classification), con un vocabulario de salida de 10.000 tokens BPE ("10k") y entrenado sobre un corpus etiquetado como "human10bi" con características geométricas específicas ("hhdgeom") y un componente "byp". No obstante, la model card no aporta ninguna descripción funcional, por lo que estas inferencias proceden únicamente del nombre del repositorio.
 
 El checkpoint contiene 87.279.756 parámetros en formato safetensors, lo que lo sitúa en la categoría de modelos pequeños (del orden de 87 M), típico de sistemas ASR ligeros desplegables en CPU o GPU de consumo. El tamaño del repositorio es de 0,3 GB. La licencia declarada es MIT, lo que permite uso comercial sin restricciones significativas.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada: el modelo acumula 0 descargas y 0 likes
 
 No se dispone de informacion sobre la arquitectura interna del modelo. El identificador incluye el termino "ctc", lo que sugiere un entrenamiento con funcion de perdida Connectionist Temporal Classification, habitual en reconocimiento de voz y en tareas de alineamiento secuencia-a-secuencia sin alineamientos explicitos. El sufijo "10k" apunta a un vocabulario de salida de 10.000 unidades (probablemente subpalabras BPE), y "human10bi" sugiere un corpus de habla humana de aproximadamente 10.000 millones de unidades o muestras, aunque esta interpretacion no esta confirmada por el autor.
 
-Tampoco se documentan los datos de entrenamiento, el numero de tokens o horas de audio procesadas, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. No hay informacion sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o mecanismos hibridos. La model card es una plantilla estandar de HuggingFace sin rellenar en ninguna de sus secciones.
+Tampoco se documentan los datos de entrenamiento, el numero de tokens o horas de audio procesadas, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. No hay informacion sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o mecanismos hibridos. La model card es una plantilla estandar de Hugging Face sin rellenar en ninguna de sus secciones.
 
 ## Capacidades
 
@@ -69,10 +69,10 @@ No es posible establecer una comparativa rigurosa porque se desconoce la tarea e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k | 87,3 M | no disponible | MIT | HuggingFace, 0 descargas | no disponibles |
-| OpenAI Whisper tiny | ~39 M | 30 s de audio | MIT | HuggingFace, ampliamente usado | WER publicados en multiples datasets |
-| OpenAI Whisper base | ~74 M | 30 s de audio | MIT | HuggingFace, ampliamente usado | WER publicados en multiples datasets |
-| Wav2Vec 2.0 base | ~95 M | no aplica (audio variable) | MIT (segun variante) | HuggingFace | WER publicados en LibriSpeech |
+| cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k | 87,3 M | no disponible | MIT | Hugging Face, 0 descargas | no disponibles |
+| OpenAI Whisper tiny | ~39 M | 30 s de audio | MIT | Hugging Face, ampliamente usado | WER publicados en multiples datasets |
+| OpenAI Whisper base | ~74 M | 30 s de audio | MIT | Hugging Face, ampliamente usado | WER publicados en multiples datasets |
+| Wav2Vec 2.0 base | ~95 M | no aplica (audio variable) | MIT (segun variante) | Hugging Face | WER publicados en LibriSpeech |
 
 La comparacion es meramente estructural: Whisper y Wav2Vec 2.0 cuentan con documentacion, evaluaciones y comunidad, mientras que el modelo de cyttic carece de todo ello.
 
@@ -89,7 +89,7 @@ La comparacion es meramente estructural: Whisper y Wav2Vec 2.0 cuentan con docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k
 - Paper citado en los tags (referencia generica sobre impacto ambiental, no especifica del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental mencionada en la model card: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion proporcionada.

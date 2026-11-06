@@ -74,8 +74,8 @@ El autor indica que, en una ejecución comparativa con modelos abiertos de tama�
 
 | Modelo | Parámetros | Contexto | Conocimiento 2026 (eventos destacados) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Glimmer-30B-2026-Knowledge-LoRA | 30B (LoRA) | no disponible | ~70/100 (Q4_K_M) | Apache 2.0 + Muse Model License | HuggingFace (adaptador, BF16 y GGUF) |
-| Muse Glimmer 30B (base) | 30B | no disponible | 27/100 (Q4_K_M) | Muse Model License | HuggingFace |
+| Glimmer-30B-2026-Knowledge-LoRA | 30B (LoRA) | no disponible | ~70/100 (Q4_K_M) | Apache 2.0 + Muse Model License | Hugging Face (adaptador, BF16 y GGUF) |
+| Muse Glimmer 30B (base) | 30B | no disponible | 27/100 (Q4_K_M) | Muse Model License | Hugging Face |
 | Qwen3.8 27B | 27B | no disponible | ≤7/100 | no disponible | no disponible |
 | Gemma 4 31B | 31B | no disponible | ≤7/100 | no disponible | no disponible |
 | Granite 4.2 30B | 30B | no disponible | ≤7/100 | no disponible | no disponible |
@@ -97,7 +97,7 @@ El autor señala que, en tareas de razonamiento de la misma ejecución, Qwen3.8 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-LoRA
+- Hugging Face del adaptador: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-LoRA
 - Pesos fusionados en BF16: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge
 - GGUF para llama.cpp: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-GGUF
 - Dataset de entrenamiento: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-Data

@@ -99,7 +99,7 @@ No se dispone de datos verificados de parámetros, contexto, rendimiento o licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-full10-joint-lambda100-diag49-retention-view-large-1000-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-full10-joint-lambda100-diag49-retention-view-large-1000-20261014
 - Perfil del autor: https://huggingface.co/Donghyun1228
 - Dataset objetivo citado en la model card: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-20261002
 - Referencia de despliegue canónicamente equivalente: https://huggingface.co/Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013

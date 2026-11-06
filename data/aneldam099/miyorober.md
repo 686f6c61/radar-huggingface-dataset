@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MIYOROBER es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario ANELDAM099 en HuggingFace. Se trata de un modelo de generacion de texto de 1.500 millones de parametros basado en la arquitectura Qwen2 (transformer decoder-only), entrenado mediante las herramientas de Unsloth sobre la version cuantizada en 4 bits del modelo instructivo original. El repositorio tiene un tamano de 0,1 GB y esta etiquetado para su uso con transformers, safetensors y text-generation-inference.
+MIYOROBER es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario ANELDAM099 en Hugging Face. Se trata de un modelo de generacion de texto de 1.500 millones de parametros basado en la arquitectura Qwen2 (transformer decoder-only), entrenado mediante las herramientas de Unsloth sobre la version cuantizada en 4 bits del modelo instructivo original. El repositorio tiene un tamano de 0,1 GB y esta etiquetado para su uso con transformers, safetensors y text-generation-inference.
 
 El modelo hereda las capacidades del Qwen2.5-1.5B-Instruct original: generacion de texto, razonamiento basico, codigo y comprension multilingue, aunque el autor declara unicamente el idioma ingles en la model card. La relevancia de esta publicacion es limitada: no incluye documentacion sobre el dataset de entrenamiento, hiperparametros, objetivos de ajuste ni resultados de evaluacion, y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MIYOROBER (este modelo) | 1.500 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino sin documentacion de entrenamiento |
-| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| Llama 3.2 1B Instruct | 1.200 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy usado | Requiere aceptacion de licencia, no Apache 2.0 |
-| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa ligera con documentacion completa |
+| MIYOROBER (este modelo) | 1.500 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino sin documentacion de entrenamiento |
+| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| Llama 3.2 1B Instruct | 1.200 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy usado | Requiere aceptacion de licencia, no Apache 2.0 |
+| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa ligera con documentacion completa |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANELDAM099/MIYOROBER
+- Modelo en Hugging Face: https://huggingface.co/ANELDAM099/MIYOROBER
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hima-decide-head | 17,5 M (cabeza) | no disponible | Apache-2.0 | HuggingFace |
+| hima-decide-head | 17,5 M (cabeza) | no disponible | Apache-2.0 | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Prahaladha/hima-decide-head
+- Hugging Face del modelo: https://huggingface.co/Prahaladha/hima-decide-head
 - Modelo base: https://huggingface.co/Prahaladha/hima-asr
 - Demos de audio (referenciadas en la model card): https://huggingface.co/Prahaladha/hima-decide-head/resolve/main/demos/ (archivos como english_woman.mp3, english_cut.mp3, hindi_man.mp3, tamil_woman.mp3, bengali_man.mp3, kannada_woman.mp3, malayalam_woman.mp3, angry_marathi.mp3, cheerful_gujarati.mp3, confused_punjabi.mp3, rushed_telugu_english.mp3, calm_odia.mp3)
 - Archivo de respuestas de demo: https://huggingface.co/Prahaladha/hima-decide-head/resolve/main/demos/answers.json

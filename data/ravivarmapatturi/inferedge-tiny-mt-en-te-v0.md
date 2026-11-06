@@ -6,7 +6,7 @@ InferEdge tiny translator v0 (en-te) es un modelo de traduccion automatica ingle
 
 El modelo se entreno con 7.673 pares de frases del subconjunto BPCC-H-Daily del dataset ai4bharat/BPCC, lo que limita drasticamente su dominio de generalizacion. Aunque los resultados sobre el conjunto de test de BPCC son razonables (chrF++ de 53,55), el rendimiento cae a 11,77 en IN22 conversation y a 7,83 en IN22 general, evidencia clara de sobreajuste al dominio de entrenamiento. El propio autor advierte que el modelo "no es suficientemente bueno para uso real" y que sus salidas son a menudo incorrectas o sin sentido.
 
-Su relevancia actual es fundamentalmente metodologica: sirve como referencia de como estructurar un pipeline completo de traduccion en dispositivo (entrenamiento, exportacion a ONNX INT8 de 28,8 MB con tokenizer incluido y publicacion en HuggingFace) para idiomas de bajos recursos como el telugu. No debe considerarse una alternativa a modelos de traduccion neuronales establecidos.
+Su relevancia actual es fundamentalmente metodologica: sirve como referencia de como estructurar un pipeline completo de traduccion en dispositivo (entrenamiento, exportacion a ONNX INT8 de 28,8 MB con tokenizer incluido y publicacion en Hugging Face) para idiomas de bajos recursos como el telugu. No debe considerarse una alternativa a modelos de traduccion neuronales establecidos.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ No se dispone de resultados comparativos directos publicados entre este modelo y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-en-te-v0
+- Hugging Face: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-en-te-v0
 - Dataset de entrenamiento: https://huggingface.co/datasets/ai4bharat/BPCC
 - Repositorio de evaluacion IN22 (referencia de los tests): no disponible como enlace directo en la informacion proporcionada
 - Paper o blog del autor: no disponible

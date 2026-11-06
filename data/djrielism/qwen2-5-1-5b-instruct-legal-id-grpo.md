@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Djrielism/qwen2.5-1.5b-instruct-legal-id-grpo` es un ajuste fino (finetune) de 1.543.714.304 parámetros publicado por el usuario Djrielism en HuggingFace. Se construye sobre `Djrielism/qwen2.5-1.5b-instruct-legal-id`, que a su vez deriva de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 1.500 millones de parámetros. El sufijo "grpo" del identificador apunta a un entrenamiento con Group Relative Policy Optimization, una técnica de optimización por refuerzo, aunque la model card no documenta ni el proceso ni los datos empleados.
+El modelo `Djrielism/qwen2.5-1.5b-instruct-legal-id-grpo` es un ajuste fino (finetune) de 1.543.714.304 parámetros publicado por el usuario Djrielism en Hugging Face. Se construye sobre `Djrielism/qwen2.5-1.5b-instruct-legal-id`, que a su vez deriva de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 1.500 millones de parámetros. El sufijo "grpo" del identificador apunta a un entrenamiento con Group Relative Policy Optimization, una técnica de optimización por refuerzo, aunque la model card no documenta ni el proceso ni los datos empleados.
 
-Se trata de un modelo pequeño, orientado a generación de texto conversacional, con licencia Apache 2.0 y pesos en safetensors. El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que habitualmente implica un pipeline de ajuste supervisado (SFT) o de preferencias sobre una GPU de consumo. El repositorio ocupa 3,1 GB y el modelo se publicó sin métricas de evaluación, sin datos de entrenamiento y con cero descargas y cero "likes" en el momento de la consulta.
+Se trata de un modelo pequeño, orientado a generación de texto conversacional, con licencia Apache 2.0 y pesos en safetensors. El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que habitualmente implica un pipeline de ajuste supervisado (SFT) o de preferencias sobre una GPU de consumo. El repositorio ocupa 3,1 GB y el modelo se publicó sin métricas de evaluación, sin datos de entrenamiento y con cero descargas y cero "likes" en el momento de la consulta.
 
 Su relevancia práctica es limitada pero concreta: sirve como ejemplo reproducible de un pipeline de ajuste fino ligero sobre Qwen2.5-1.5B y como candidato a experimentación en dominio legal en indonesio (el sufijo "legal-id" del modelo base así lo sugiere), aunque el propio autor declara únicamente inglés como idioma soportado, lo que genera una contradicción no resuelta en la documentación.
 
@@ -24,7 +24,7 @@ Su relevancia práctica es limitada pero concreta: sirve como ejemplo reproducib
 | Modelo base | Djrielism/qwen2.5-1.5b-instruct-legal-id |
 | Libreria | transformers |
 | Pipeline | text-generation |
-| Fecha de publicacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-11 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -42,7 +42,7 @@ Sobre el entrenamiento, la única información disponible es que se utilizó Uns
 - Capacidades de agente y razonamiento multi-paso: no documentadas ni confirmadas.
 - Capacidades multilingües: solo se declara inglés; el nombre del modelo base sugiere indonesio, pero no está confirmado.
 - Modo "thinking" explícito, visión o audio: no disponibles.
-- Compatible con `endpoints_compatible` para despliegue gestionado en HuggingFace Inference Endpoints.
+- Compatible con `endpoints_compatible` para despliegue gestionado en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -66,18 +66,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de consumo compatibles: RTX 3060 12 GB, RTX 4060/4060 Ti, RTX 4070, RTX 3090/4090 sobradamente; también GPUs de 6-8 GB con cuantización de 4 bits.
 - GPU de centro de datos: A100, H100 o L40S no son necesarias para inferencia, aunque pueden emplearse para entrenamiento o para servir muchas réplicas concurrentes.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs con 8 GB o más, e incluso en 6 GB con cuantización agresiva.
-- Opciones de despliegue: `transformers`, vLLM, Text Generation Inference (TGI), llama.cpp, Ollama, LM Studio, y HuggingFace Inference Endpoints (el modelo incluye la etiqueta `endpoints_compatible`).
+- Opciones de despliegue: `transformers`, vLLM, Text Generation Inference (TGI), llama.cpp, Ollama, LM Studio, y Hugging Face Inference Endpoints (el modelo incluye la etiqueta `endpoints_compatible`).
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Djrielism/qwen2.5-1.5b-instruct-legal-id-grpo | 1,54B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Sin evaluacion publicada |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido | Modelo oficial de Alibaba, con benchmarks publicados |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace (acceso con aceptacion) | Contexto mayor, licencia con restricciones para grandes despliegues |
-| Gemma-2-2B-it | 2,61B | 8.192 tokens | Gemma Terms of Use | HuggingFace (acceso con aceptacion) | Mayor tamano, licencia con condiciones de uso |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa abierta de tamano comparable |
+| Djrielism/qwen2.5-1.5b-instruct-legal-id-grpo | 1,54B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Sin evaluacion publicada |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido | Modelo oficial de Alibaba, con benchmarks publicados |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face (acceso con aceptacion) | Contexto mayor, licencia con restricciones para grandes despliegues |
+| Gemma-2-2B-it | 2,61B | 8.192 tokens | Gemma Terms of Use | Hugging Face (acceso con aceptacion) | Mayor tamano, licencia con condiciones de uso |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa abierta de tamano comparable |
 
 No se dispone de datos de rendimiento del modelo evaluado, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -96,9 +96,9 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Djrielism/qwen2.5-1.5b-instruct-legal-id-grpo
+- Modelo en Hugging Face: https://huggingface.co/Djrielism/qwen2.5-1.5b-instruct-legal-id-grpo
 - Modelo base: https://huggingface.co/Djrielism/qwen2.5-1.5b-instruct-legal-id
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (librería citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (librería citada): https://github.com/huggingface/trl
 
 No se han encontrado enlaces relevantes adicionales en la búsqueda web: los resultados devueltos corresponden a páginas genéricas de YouTube sin relación con el modelo.

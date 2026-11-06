@@ -81,7 +81,7 @@ No se dispone de benchmarks comparativos entre estas versiones. La cuantización
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BlivionIaG/Qwen3.5-0.8B-exl3-3.0bpw
+- Repositorio Hugging Face: https://huggingface.co/BlivionIaG/Qwen3.5-0.8B-exl3-3.0bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - ExLlamaV3 (cuantizador y runtime): https://github.com/turboderp-org/exllamav3
 - Puerto ROCm/HIP usado para cuantización: https://github.com/CarouselAether/rocm_exl3

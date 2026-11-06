@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Uncensored-v2-GGUF es una cuantizacion estatica en formato GGUF del modelo InterpreticAI/Qwen3.5-4B-Uncensored-v2, un ajuste fino de la familia Qwen3.5 orientado a eliminar el sesgo de censura politica del modelo original. El trabajo de cuantizacion lo firma mradermacher, un perfil conocido en HuggingFace por publicar versiones GGUF de modelos populares para su uso en llama.cpp y entornos de inferencia local. El modelo cuenta con 4.326.350.848 parametros totales (aproximadamente 4,3 mil millones) segun los pesos en safetensors del modelo base.
+Qwen3.5-4B-Uncensored-v2-GGUF es una cuantizacion estatica en formato GGUF del modelo InterpreticAI/Qwen3.5-4B-Uncensored-v2, un ajuste fino de la familia Qwen3.5 orientado a eliminar el sesgo de censura politica del modelo original. El trabajo de cuantizacion lo firma mradermacher, un perfil conocido en Hugging Face por publicar versiones GGUF de modelos populares para su uso en llama.cpp y entornos de inferencia local. El modelo cuenta con 4.326.350.848 parametros totales (aproximadamente 4,3 mil millones) segun los pesos en safetensors del modelo base.
 
 La relevancia de esta publicacion radica en dos factores. Por un lado, ofrece una via sencilla de ejecutar un modelo de ~4B en hardware de consumo mediante cuantizaciones que van desde 2,1 GB (Q2_K) hasta 8,8 GB (f16). Por otro, el ajuste "uncensored" esta disenado especificamente para reducir los rechazos del modelo en temas politicamente sensibles, lo que lo hace atractivo para investigacion sobre alineamiento, analisis de sesgos y aplicaciones donde el modelo base tiende a declinar responder.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-4B-Uncensored-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-Uncensored-v2-GGUF
 - Modelo base: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.5-4B-Uncensored-v2-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

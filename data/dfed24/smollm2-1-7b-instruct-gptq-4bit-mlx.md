@@ -98,7 +98,7 @@ No se dispone de datos en la informacion proporcionada para comparar con otras a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dfed24/SmolLM2-1.7B-Instruct-gptq-4bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/dfed24/SmolLM2-1.7B-Instruct-gptq-4bit-mlx
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Codigo, scripts y mediciones del autor: https://github.com/dfed25/mlx-gptq
 - Paper de GPTQ citado por el autor (Frantar et al., 2022): https://arxiv.org/abs/2210.17323

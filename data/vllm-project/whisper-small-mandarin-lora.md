@@ -4,7 +4,7 @@
 
 Whisper Small Mandarin LoRA es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo de reconocimiento automatico del habla `openai/whisper-small`, especializado en transcripcion de mandarin (`zh`). Lo publica la organizacion `vllm-project` como copia de un checkpoint original alojado en la cuenta personal de Chengyi Li, con el objetivo explicito de reducir el riesgo de cadena de suministro en los flujos de integracion continua de vLLM. El adaptador se entrena sobre el split en mandarin del dataset Common Voice 24.0 de Mozilla.
 
-El modelo base Whisper Small es un transformer encoder-decoder de 244 millones de parametros con una ventana de contexto de audio de 30 segundos por inferencia. El adaptador LoRA modifica unicamente un subconjunto de pesos, por lo que el repositorio es extremadamente ligero (0.0 GB declarados en HuggingFace) y requiere cargar el modelo base por separado. La licencia es Apache 2.0 tanto para el adaptador como, de forma heredada, para el modelo base.
+El modelo base Whisper Small es un transformer encoder-decoder de 244 millones de parametros con una ventana de contexto de audio de 30 segundos por inferencia. El adaptador LoRA modifica unicamente un subconjunto de pesos, por lo que el repositorio es extremadamente ligero (0.0 GB declarados en Hugging Face) y requiere cargar el modelo base por separado. La licencia es Apache 2.0 tanto para el adaptador como, de forma heredada, para el modelo base.
 
 Su relevancia es acotada pero concreta: sirve como ejemplo reproducible de fine-tuning de Whisper para un idioma especifico con PEFT, y como artefacto de test en la infraestructura de vLLM. No es un modelo de proposito general ni compite con sistemas ASR de produccion de gran escala; es un adaptador de investigacion con un CER de validacion de 12.90 sobre Common Voice 24 en mandarin.
 
@@ -72,10 +72,10 @@ Los unicos resultados publicados por el autor son los de validacion sobre Common
 
 | Modelo | Parametros | Contexto | CER (mandarin) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-mandarin-lora (este) | 244 M (base) + adaptador | 30 s de audio por ventana | 12.90 % (Common Voice 24) | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s de audio por ventana | No disponible en la informacion | Apache 2.0 | HuggingFace |
-| openai/whisper-medium | 769 M | 30 s de audio por ventana | No disponible en la informacion | Apache 2.0 | HuggingFace |
-| openai/whisper-large-v3 | 1550 M | 30 s de audio por ventana | No disponible en la informacion | Apache 2.0 | HuggingFace |
+| whisper-small-mandarin-lora (este) | 244 M (base) + adaptador | 30 s de audio por ventana | 12.90 % (Common Voice 24) | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s de audio por ventana | No disponible en la informacion | Apache 2.0 | Hugging Face |
+| openai/whisper-medium | 769 M | 30 s de audio por ventana | No disponible en la informacion | Apache 2.0 | Hugging Face |
+| openai/whisper-large-v3 | 1550 M | 30 s de audio por ventana | No disponible en la informacion | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados comparativos de CER en mandarin para los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no es posible.
 
@@ -93,7 +93,7 @@ No se dispone de resultados comparativos de CER en mandarin para los modelos alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/whisper-small-mandarin-lora
+- Hugging Face: https://huggingface.co/vllm-project/whisper-small-mandarin-lora
 - Checkpoint original (cuenta personal del autor): https://huggingface.co/chengyili2005/whisper-small-mandarin-lora
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset Common Voice 24.0: https://huggingface.co/datasets/mozilla-foundation/common_voice_24

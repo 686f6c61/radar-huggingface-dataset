@@ -78,7 +78,7 @@ La comparativa se basa en las especificaciones del modelo base, ya que no hay da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-MTP-heretic-ja-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-MTP-heretic-ja-GGUF
 - Modelo original (OS-Software): https://huggingface.co/OS-Software/Qwen3.8-27B-MTP-heretic-ja
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Guía para ejecutar Qwen3.8 27B localmente (Ollama, GGUF): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

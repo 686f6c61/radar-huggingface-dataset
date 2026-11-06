@@ -46,7 +46,7 @@ Los detalles especificos del entrenamiento (numero de tokens, composicion del da
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de evaluacion y la busqueda web no ha proporcionado tablas comparativas con datos concretos. Se recomienda consultar la documentacion oficial de Qwen para obtener resultados de HumanEval, MBPP, LiveCodeBench y otras pruebas de referencia.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de evaluacion y la busqueda web no ha proporcionado tablas comparativas con datos concretos. Se recomienda consultar la documentacion oficial de Qwen para obtener resultados de HumanEval, MBPP, LiveCodeBench y otras pruebas de referencia.
 
 ## Requisitos de hardware
 
@@ -71,14 +71,14 @@ La comparativa es parcial porque no se dispone de benchmarks publicados para est
 - No se dispone de informacion sobre sesgos especificos del modelo, pero al estar entrenado predominantemente con datos de codigo, puede reflejar sesgos presentes en repositorios publicos (por ejemplo, nombres de variables o comentarios con connotaciones culturales).
 - Riesgo de alucinacion en APIs poco documentadas o en bibliotecas de reciente creacion: el modelo puede inventar firmas de funciones o parametros inexistentes.
 - La longitud de contexto no esta confirmada para esta version; si se hereda de Qwen3, deberia ser de 256 K tokens, pero el rendimiento en secuencias muy largas puede degradarse sin una configuracion adecuada de atencion.
-- El acceso al repositorio `s-a-i/Qwen3-Coder-30B-A3B-Instruct` es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. El modelo original de Qwen puede tener un acceso mas abierto.
+- El acceso al repositorio `s-a-i/Qwen3-Coder-30B-A3B-Instruct` es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. El modelo original de Qwen puede tener un acceso mas abierto.
 - Para uso en produccion, se recomienda validar el modelo con un conjunto de pruebas propio, ya que no hay benchmarks publicados en la informacion disponible.
 - La licencia Apache 2.0 permite uso comercial sin restricciones, pero es responsabilidad del usuario cumplir con los terminos de las dependencias y datasets utilizados durante el entrenamiento, que no se detallan.
 
 ## Enlaces
 
-- Repositorio de HuggingFace (version espejo): https://huggingface.co/s-a-i/Qwen3-Coder-30B-A3B-Instruct
-- Repositorio oficial de Qwen en HuggingFace: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
+- Repositorio de Hugging Face (version espejo): https://huggingface.co/s-a-i/Qwen3-Coder-30B-A3B-Instruct
+- Repositorio oficial de Qwen en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio GGUF de unsloth: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
 - Repositorio de GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Pagina de Ollama para qwen3-coder:30b: https://ollama.com/library/qwen3-coder:30b

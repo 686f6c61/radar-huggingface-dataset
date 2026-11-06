@@ -71,5 +71,5 @@ La principal diferencia es que esta tarjeta es un resultado concreto de CodeCarb
 - El idioma del README es inglés, aunque la tarjeta en sí no tiene contenido lingüístico más allá de los metadatos.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/srujannnn/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/srujannnn/tds-carbon-card
 - No se proporcionan otros enlaces (papers, blogs o repositorios de código) en la información disponible.

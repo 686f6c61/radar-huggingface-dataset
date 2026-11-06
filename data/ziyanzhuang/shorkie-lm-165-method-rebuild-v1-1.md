@@ -61,7 +61,7 @@ No se dispone de una comparativa directa con otros modelos de ADN en la informac
 - El cargador oficial rechaza checkpoints pickle no confiables; se recomienda usar exclusivamente el cargador `shorkie_torch` para evitar riesgos de seguridad.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/ZiyanZhuang/shorkie-lm-165-method-rebuild-v1.1
+- Repositorio Hugging Face: https://huggingface.co/ZiyanZhuang/shorkie-lm-165-method-rebuild-v1.1
 - Paper original de Shorkie: https://doi.org/10.1101/2025.09.19.677475
 - Repositorio oficial del paper: https://github.com/calico/shorkie-paper
 - Documentación oficial de Shorkie: https://khchao.com/shorkie/

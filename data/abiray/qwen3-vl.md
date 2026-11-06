@@ -4,7 +4,7 @@
 
 Abiray/Qwen3-VL es un repositorio de cuantizaciones GGUF derivadas de Qwen/Qwen3-VL-4B-Instruct y Qwen/Qwen3-VL-8B-Instruct, publicadas por el usuario Abiray. No se trata de un modelo nuevo entrenado desde cero, sino de una conversión de los encoders de texto y visión de Qwen3-VL a formato GGUF autocontenido, pensada para usarse como codificador de condicionamiento dentro de MiniMax H3 mediante el método de proyección ClipProj. El repositorio incluye dos ficheros: uno de 4B en Q4_K_M (3,31 GB, 713 tensores) y otro de 8B en Q4_K_M (6,20 GB, 749 tensores).
 
-La particularidad técnica frente a otras distribuciones GGUF multimodales es que el vision tower va embebido en el mismo fichero, de modo que no se necesita un sidecar `mmproj` separado. Además, los embeddings de tokens se conservan en F16 durante la cuantización para preservar la calidad del condicionamiento, y los tensores se renombran a la convención de HuggingFace (`model.layers.*`, `visual.*`, `visual.deepstack_merger_list.*`) con metadatos `general.architecture = qwen3vl`.
+La particularidad técnica frente a otras distribuciones GGUF multimodales es que el vision tower va embebido en el mismo fichero, de modo que no se necesita un sidecar `mmproj` separado. Además, los embeddings de tokens se conservan en F16 durante la cuantización para preservar la calidad del condicionamiento, y los tensores se renombran a la convención de Hugging Face (`model.layers.*`, `visual.*`, `visual.deepstack_merger_list.*`) con metadatos `general.architecture = qwen3vl`.
 
 Es relevante ahora porque permite ejecutar los encoders de Qwen3-VL con requisitos de VRAM muy reducidos en flujos de generación de vídeo/imagen en ComfyUI, aunque con una advertencia importante: el propio autor indica explícitamente "NOT TESTED", el repositorio no tiene descargas ni valoraciones, y los ficheros no cargan con las herramientas estándar de llama.cpp.
 
@@ -27,7 +27,7 @@ Es relevante ahora porque permite ejecutar los encoders de Qwen3-VL con requisit
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no incluye entrenamiento alguno: es una conversion y cuantizacion de pesos ya entrenados. La arquitectura subyacente es la de Qwen3-VL, un transformer multimodal compuesto por un decoder de texto y un vision tower, con elementos estructurales que se deducen de los nombres de tensores documentados: un `patch embed` almacenado como tensor unico de forma `[16, 16, 6, 1024]` en el 4B y `[16, 16, 6, 1152]` en el 8B, y tres deepstack mergers en las posiciones 0, 1 y 2. Los pesos se renombran desde la convencion de llama.cpp (`blk.*`, `v.*`) a la convencion de HuggingFace para que el cargador de ComfyUI los interprete correctamente.
+Este repositorio no incluye entrenamiento alguno: es una conversion y cuantizacion de pesos ya entrenados. La arquitectura subyacente es la de Qwen3-VL, un transformer multimodal compuesto por un decoder de texto y un vision tower, con elementos estructurales que se deducen de los nombres de tensores documentados: un `patch embed` almacenado como tensor unico de forma `[16, 16, 6, 1024]` en el 4B y `[16, 16, 6, 1152]` en el 8B, y tres deepstack mergers en las posiciones 0, 1 y 2. Los pesos se renombran desde la convencion de llama.cpp (`blk.*`, `v.*`) a la convencion de Hugging Face para que el cargador de ComfyUI los interprete correctamente.
 
 El proceso de conversion documentado consta de siete pasos: partida de los safetensors `bf16`, conversion de texto a GGUF con `convert_hf_to_gguf.py` de llama.cpp, conversion del `mmproj` de vision con `--mmproj`, fusion de texto y vision en un unico GGUF, cuantizacion a Q4_K_M con `--token-embedding-type f16 --output-tensor-type f16`, renombrado de tensores a la convencion HF y correccion final de nombres de los deepstack mergers, fusion de las slices de `patch_embed` y eliminacion del `lm_head` (solo en el fichero de 8B). No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset ni sobre fases de RLHF o DPO de los modelos base.
 
@@ -102,7 +102,7 @@ No se dispone de informacion sobre alternativas de terceros comparables (otros G
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abiray/Qwen3-VL
+- Repositorio en Hugging Face: https://huggingface.co/Abiray/Qwen3-VL
 - Modelo base 4B: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Modelo base 8B: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Fuente safetensors 4B: https://huggingface.co/Comfy-Org/Krea-2

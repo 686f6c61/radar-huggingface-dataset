@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`At1uri/stochastic-volatility-calibrator` es un paquete de modelado cuantitativo publicado en HuggingFace por Ramprasad Atluri (usuario `At1uri`) que implementa el modelo de volatilidad estocástica de Heston en tiempo continuo con discretización de truncamiento completo. No es un modelo de lenguaje ni una red neuronal profunda: es un modelo paramétrico bivariante que describe la dinámica conjunta del precio de un activo \(S_t\) y su varianza instantánea \(v_t\), con cinco parámetros calibrados (\(\kappa\), \(\theta\), \(\xi\), \(\rho\), \(v_0\)).
+`At1uri/stochastic-volatility-calibrator` es un paquete de modelado cuantitativo publicado en Hugging Face por Ramprasad Atluri (usuario `At1uri`) que implementa el modelo de volatilidad estocástica de Heston en tiempo continuo con discretización de truncamiento completo. No es un modelo de lenguaje ni una red neuronal profunda: es un modelo paramétrico bivariante que describe la dinámica conjunta del precio de un activo \(S_t\) y su varianza instantánea \(v_t\), con cinco parámetros calibrados (\(\kappa\), \(\theta\), \(\xi\), \(\rho\), \(v_0\)).
 
 El repositorio se distribuye con `library_name: scikit-learn` y `pipeline_tag: tabular-regression`, aunque en la práctica los pesos se entregan como un fichero JSON (`calibrator_weights.json`) con los parámetros calibrados, y la simulación se realiza mediante un módulo Python (`calibrator.py`) que expone la clase `HestonStochasticVolatilityModel`. El conjunto de parámetros precalibrado garantiza la condición de Feller (\(2\kappa\theta > \xi^2\), con ratio 2,012) y reporta un RMSE de calibración de 0,00318.
 
@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 |---|---|
 | RMSE de calibración | 0,00318 |
 | Ratio de Feller (\(2\kappa\theta/\xi^2\)) | 2,012 (condición satisfecha) |
-| Descargas en HuggingFace | 0 |
-| Likes en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
+| Likes en Hugging Face | 0 |
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `At1uri/stochastic-volatility-calibrator` | Heston calibrado (JSON + Python) | 5 | No aplica | MIT | HuggingFace |
+| `At1uri/stochastic-volatility-calibrator` | Heston calibrado (JSON + Python) | 5 | No aplica | MIT | Hugging Face |
 | Modelo de Black-Scholes | Volatilidad constante | 1 (\(\sigma\)) | No aplica | Dominio público (formulación) | Implementaciones múltiples |
 | Modelo de Bates | Heston + saltos | 7-8 típicamente | No aplica | Varía por implementación | Librerías de quant finance |
 | Modelo SABR | Volatilidad estocástica sobre forwards | 4 | No aplica | Varía | Librerías de quant finance |
@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/At1uri/stochastic-volatility-calibrator
+- Hugging Face: https://huggingface.co/At1uri/stochastic-volatility-calibrator
 - Perfil del autor: https://huggingface.co/At1uri
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

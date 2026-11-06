@@ -79,7 +79,7 @@ No se dispone de comparativas de rendimiento directas entre estas opciones para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-NoRefusal-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-NoRefusal-GGUF
 - Modelo base (fine-tune original): https://huggingface.co/sss22213/Qwen3.8-27B-Heretic-NoRefusal
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Página de vLLM Recipes para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

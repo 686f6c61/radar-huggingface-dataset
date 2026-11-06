@@ -25,7 +25,7 @@ No se dispone de información sobre la arquitectura exacta, el número de parám
 
 El modelo implementa el algoritmo REINFORCE, un metodo de gradiente de politica basico dentro del aprendizaje por refuerzo. En este algoritmo, la politica se representa mediante una red neuronal que mapea el estado del entorno (posicion y velocidad del carrito, angulo y velocidad angular del poste) a una distribucion de probabilidad sobre las dos acciones posibles (mover el carrito a la izquierda o a la derecha). El entrenamiento se realiza mediante episodios completos: se recogen trayectorias, se calculan las recompensas acumuladas y se actualizan los pesos de la red en la direccion que aumenta la probabilidad de las acciones que llevaron a mayor recompensa.
 
-La model card indica que es una "custom-implementation" desarrollada en el contexto de la unidad 4 del Deep Reinforcement Learning Course de HuggingFace. No se proporcionan datos sobre el numero de episodios de entrenamiento, el tamaño de la red neuronal, la funcion de perdida exacta, la tasa de aprendizaje o el optimizador utilizado. Tampoco se menciona el uso de tecnicas adicionales como baseline o normalizacion de recompensas, comunes en implementaciones de REINFORCE.
+La model card indica que es una "custom-implementation" desarrollada en el contexto de la unidad 4 del Deep Reinforcement Learning Course de Hugging Face. No se proporcionan datos sobre el numero de episodios de entrenamiento, el tamaño de la red neuronal, la funcion de perdida exacta, la tasa de aprendizaje o el optimizador utilizado. Tampoco se menciona el uso de tecnicas adicionales como baseline o normalizacion de recompensas, comunes en implementaciones de REINFORCE.
 
 ## Capacidades
 
@@ -36,7 +36,7 @@ La model card indica que es una "custom-implementation" desarrollada en el conte
 
 ## Casos de uso
 
-- **Practica educativa en cursos de RL**: el modelo sirve como ejemplo de referencia para estudiantes que siguen el Deep Reinforcement Learning Course de HuggingFace. Puede usarse para comparar resultados con sus propias implementaciones de REINFORCE.
+- **Practica educativa en cursos de RL**: el modelo sirve como ejemplo de referencia para estudiantes que siguen el Deep Reinforcement Learning Course de Hugging Face. Puede usarse para comparar resultados con sus propias implementaciones de REINFORCE.
 - **Verificacion de implementaciones**: un desarrollador puede cargar el modelo y evaluar si su entorno de CartPole-v1 esta correctamente configurado, comparando la recompensa media obtenida con la esperada (500).
 - **Experimentos de hiperparametros**: el modelo puede servir como punto de partida para modificar la red neuronal (capas, neuronas) y observar como afecta a la velocidad de convergencia en el entorno.
 - **Depuracion de entornos personalizados**: al ser un modelo que resuelve un entorno clasico de Gym, puede usarse para validar que el entorno CartoPole-v1 funciona correctamente en una configuracion local.
@@ -59,14 +59,14 @@ No se dispone de resultados adicionales en otros entornos ni comparaciones con o
 
 - Dado que el modelo es una red neuronal pequena entrenada para un entorno de control simple (CartPole), la inferencia puede ejecutarse en CPU sin problemas.
 - No se dispone de informacion sobre la VRAM necesaria, el numero de parametros o el formato de pesos.
-- Para el entrenamiento desde cero, un portatil con CPU es suficiente para completar el entrenamiento en pocos minutos, segun el curso de HuggingFace.
+- Para el entrenamiento desde cero, un portatil con CPU es suficiente para completar el entrenamiento en pocos minutos, segun el curso de Hugging Face.
 - No se requiere GPU para inferencia ni para entrenamiento en este entorno.
 - Las opciones de despliegue son limitadas: no es un modelo para usar con vLLM, llama.cpp, Ollama o TGI. Se cargaria directamente en Python con librerias como Gymnasium y PyTorch.
 - No se dispone de datos sobre latencia o throughput, pero al ser un modelo de control de un paso de entorno, la latencia es despreciable en comparacion con el tiempo de simulacion del entorno.
 
 ## Comparativa con modelos similares
 
-Se han encontrado otros modelos publicados en HuggingFace con el mismo nombre y objetivo (agentes REINFORCE para CartPole-v1), como loke-07/Reinforce-CartPolev1, loweegee/Reinforce-cartpolev1 y zpattdev/Reinforce-cartpoleV1. No se dispone de especificaciones tecnicas de ninguno de estos modelos para poder comparar parametros, contexto, rendimiento o licencia.
+Se han encontrado otros modelos publicados en Hugging Face con el mismo nombre y objetivo (agentes REINFORCE para CartPole-v1), como loke-07/Reinforce-CartPolev1, loweegee/Reinforce-cartpolev1 y zpattdev/Reinforce-cartpoleV1. No se dispone de especificaciones tecnicas de ninguno de estos modelos para poder comparar parametros, contexto, rendimiento o licencia.
 
 | Modelo | Autor | Recompensa declarada | Licencia | Parametros |
 |---|---|---|---|---|
@@ -89,7 +89,7 @@ La falta de datos de los modelos alternativos impide una comparativa cuantitativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SunTzu321/Reinforce-CartPoleV1
+- Modelo en Hugging Face: https://huggingface.co/SunTzu321/Reinforce-CartPoleV1
 - Curso Deep Reinforcement Learning (unidad 4): https://huggingface.co/deep-rl-course/unit4/introduction
 - Modelo similar loke-07: https://huggingface.co/loke-07/Reinforce-CartPolev1
 - Modelo similar loweegee: https://huggingface.co/loweegee/Reinforce-cartpolev1

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Entrada | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BirdSpotter MobileNetV4 | CNN binaria para presencia de aves | no disponible | 640 × 640 fija | 1 logit, umbral 0,5 | Apache-2.0 | HuggingFace (OpenVINO IR) |
-| timm `mobilenetv4_conv_small.e2400_r224_in1k` | CNN de clasificación ImageNet-1k | aprox. pocos millones (no verificado aquí) | 224 × 224 | 1000 clases genéricas | Apache-2.0 | HuggingFace / timm |
-| MobileNetV3-Small (timm) | CNN de clasificación ImageNet-1k | aprox. 2,5 M (referencia pública) | 224 × 224 | 1000 clases genéricas | Apache-2.0 | HuggingFace / timm |
-| EfficientNet-B0 (timm) | CNN de clasificación ImageNet-1k | aprox. 5,3 M (referencia pública) | 224 × 224 | 1000 clases genéricas | Apache-2.0 | HuggingFace / timm |
+| BirdSpotter MobileNetV4 | CNN binaria para presencia de aves | no disponible | 640 × 640 fija | 1 logit, umbral 0,5 | Apache-2.0 | Hugging Face (OpenVINO IR) |
+| timm `mobilenetv4_conv_small.e2400_r224_in1k` | CNN de clasificación ImageNet-1k | aprox. pocos millones (no verificado aquí) | 224 × 224 | 1000 clases genéricas | Apache-2.0 | Hugging Face / timm |
+| MobileNetV3-Small (timm) | CNN de clasificación ImageNet-1k | aprox. 2,5 M (referencia pública) | 224 × 224 | 1000 clases genéricas | Apache-2.0 | Hugging Face / timm |
+| EfficientNet-B0 (timm) | CNN de clasificación ImageNet-1k | aprox. 5,3 M (referencia pública) | 224 × 224 | 1000 clases genéricas | Apache-2.0 | Hugging Face / timm |
 
 La comparación relevante no es de precisión, porque no hay datos publicados, sino de encaje en el pipeline: frente a los clasificadores genéricos de ImageNet, este modelo reduce la tarea a una decisión binaria y a una resolución mayor (640 px), lo que simplifica la integración con SAM 3 y elimina la necesidad de mapear clases. No se dispone de alternativas específicas de detección de aves evaluadas en la misma información.
 
@@ -84,6 +84,6 @@ La comparación relevante no es de precisión, porque no hay datos publicados, s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PBatch23888/birdspotter-mobilenetv4
+- Modelo en Hugging Face: https://huggingface.co/PBatch23888/birdspotter-mobilenetv4
 - Modelo upstream de timm: https://huggingface.co/timm/mobilenetv4_conv_small.e2400_r224_in1k
 - Búsquedas web realizadas: no devolvieron resultados relevantes sobre el modelo (solo páginas comerciales sin relación con el proyecto); no hay papers, blogs, repos ni demos adicionales disponibles.

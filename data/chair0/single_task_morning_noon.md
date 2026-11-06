@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chair0/single_task_morning_noon` es una política robótica de aprendizaje por imitación basada en ACT (Action Chunking with Transformers), desarrollada por chair0 (Jason Lee) dentro del ecosistema LeRobot de HuggingFace. ACT es un método que predice fragmentos de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error acumulado en la ejecución de tareas de manipulación. Este modelo concreto está entrenado para controlar un robot de tipo `so_follower` y resolver dos tareas de recogida de objetos: "Pick up the masking tape" y "Pick up the yellow print".
+El modelo `chair0/single_task_morning_noon` es una política robótica de aprendizaje por imitación basada en ACT (Action Chunking with Transformers), desarrollada por chair0 (Jason Lee) dentro del ecosistema LeRobot de Hugging Face. ACT es un método que predice fragmentos de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error acumulado en la ejecución de tareas de manipulación. Este modelo concreto está entrenado para controlar un robot de tipo `so_follower` y resolver dos tareas de recogida de objetos: "Pick up the masking tape" y "Pick up the yellow print".
 
 El modelo tiene 51.668.614 parámetros y se distribuye en formato safetensors con un tamaño de repo de 0,2 GB. Está diseñado para consumir como entrada el estado del robot (6 dimensiones) y dos imágenes de cámara (muñeca y superior) a resolución 480x640, y produce acciones de 6 dimensiones como salida. Al estar publicado bajo licencia Apache-2.0 y ser compatible con LeRobot, resulta útil para investigadores y desarrolladores que trabajan en manipulación robótica y desean reproducir o comparar políticas ACT.
 
@@ -76,7 +76,7 @@ No disponible. En la informacion proporcionada no se mencionan modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chair0/single_task_morning_noon
+- Modelo en Hugging Face: https://huggingface.co/chair0/single_task_morning_noon
 - Dataset de entrenamiento: https://huggingface.co/datasets/chair0/single_task_morning_noon
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

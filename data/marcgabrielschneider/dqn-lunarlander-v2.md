@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo DQN sobre el entorno LunarLander-v2. Lo publica el usuario marcgabrielschneider en HuggingFace y no es un modelo de lenguaje: no procesa texto, no tiene ventana de contexto ni parámetros de escala tipo LLM. Se trata de un artefacto de política entrenada, distribuido a través de la librería stable-baselines3 y con el pipeline declarado como reinforcement-learning.
+Este repositorio contiene un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo DQN sobre el entorno LunarLander-v2. Lo publica el usuario marcgabrielschneider en Hugging Face y no es un modelo de lenguaje: no procesa texto, no tiene ventana de contexto ni parámetros de escala tipo LLM. Se trata de un artefacto de política entrenada, distribuido a través de la librería stable-baselines3 y con el pipeline declarado como reinforcement-learning.
 
 El agente resuelve una tarea concreta de control continuo discretizado: pilotar un módulo de aterrizaje en un entorno bidimensional de Box2D, eligiendo en cada paso entre un conjunto discreto de acciones (no hacer nada, motor de orientación izquierdo, motor principal y motor de orientación derecho). La model card declara una recompensa media de 283,34 +/- 23,41 en el entorno LunarLander-v2, aunque el propio campo `verified` del model-index está marcado como `false`, por lo que el resultado es una afirmación del autor y no una métrica auditada.
 
-Su relevancia es limitada y muy específica: sirve como referencia reproducible para comparar algoritmos de la familia de valor (DQN, Double DQN, Dueling DQN, QR-DQN) sobre un entorno de juguete estandarizado, y como ejemplo didáctico de integración entre stable-baselines3 y el Hub de HuggingFace. El repositorio figura con 0,0 GB, 0 descargas y 0 likes, la licencia no está declarada y la propia model card contiene un bloque de código con la etiqueta `TODO: Add your code` sin completar.
+Su relevancia es limitada y muy específica: sirve como referencia reproducible para comparar algoritmos de la familia de valor (DQN, Double DQN, Dueling DQN, QR-DQN) sobre un entorno de juguete estandarizado, y como ejemplo didáctico de integración entre stable-baselines3 y el Hub de Hugging Face. El repositorio figura con 0,0 GB, 0 descargas y 0 likes, la licencia no está declarada y la propia model card contiene un bloque de código con la etiqueta `TODO: Add your code` sin completar.
 
 ## Especificaciones técnicas
 
@@ -72,7 +72,7 @@ La búsqueda web realizada no devolvió resultados relevantes sobre este modelo 
 
 | Modelo | Algoritmo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dqn-LunarLander-v2 (marcgabrielschneider) | DQN | no disponible | no aplica | 283,34 +/- 23,41 (mean_reward, no verificado) | no disponible | HuggingFace |
+| dqn-LunarLander-v2 (marcgabrielschneider) | DQN | no disponible | no aplica | 283,34 +/- 23,41 (mean_reward, no verificado) | no disponible | Hugging Face |
 | Alternativas de la comunidad sobre LunarLander-v2 | PPO / A2C / DQN | no disponible | no aplica | no disponible | no disponible | no disponible en la búsqueda |
 | DQN original (Mnih et al., 2015) | DQN | no disponible | no aplica | no comparable (Atari 2600) | no disponible | publicación académica |
 
@@ -91,7 +91,7 @@ La búsqueda web realizada no devolvió resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcgabrielschneider/dqn-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/marcgabrielschneider/dqn-LunarLander-v2
 - Librería stable-baselines3 (citada en la model card): https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub, `huggingface_sb3` (mencionada en el fragmento de código de la model card): https://github.com/huggingface/huggingface_sb3
 - Paper, repositorio o demo adicionales: no disponible. La búsqueda web no devolvió ningún resultado relacionado con este modelo.

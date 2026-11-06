@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RyanYr/asyncrl-math_adpklr_s40_b0p01_be2_shift0p01_truncneg1_shuf-gs80` es un repositorio de pesos publicado en HuggingFace por el usuario RyanYr. El identificador sugiere que se trata de un punto de control (checkpoint) de un proceso de aprendizaje por refuerzo asincrono orientado a tareas de matematicas, con una convencion de nombres que codifica hiperparametros concretos del entrenamiento. No se ha publicado ninguna tarjeta de modelo, ni pipeline declarado, ni informacion sobre arquitectura, numero de parametros, contexto o datos de entrenamiento.
+`RyanYr/asyncrl-math_adpklr_s40_b0p01_be2_shift0p01_truncneg1_shuf-gs80` es un repositorio de pesos publicado en Hugging Face por el usuario RyanYr. El identificador sugiere que se trata de un punto de control (checkpoint) de un proceso de aprendizaje por refuerzo asincrono orientado a tareas de matematicas, con una convencion de nombres que codifica hiperparametros concretos del entrenamiento. No se ha publicado ninguna tarjeta de modelo, ni pipeline declarado, ni informacion sobre arquitectura, numero de parametros, contexto o datos de entrenamiento.
 
 El repositorio ocupa 21,9 GB, un tamano coherente con pesos en precision de 16 bits acompanados de algun estado adicional de entrenamiento, aunque esto es una estimacion derivada del tamano del fichero y no un dato confirmado por el autor. El modelo registra 0 descargas y 1 like en el momento de la consulta, y la unica etiqueta presente es `region:us`, que solo indica la region de almacenamiento.
 
@@ -79,7 +79,7 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, param
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RyanYr/asyncrl-math_adpklr_s40_b0p01_be2_shift0p01_truncneg1_shuf-gs80` | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| `RyanYr/asyncrl-math_adpklr_s40_b0p01_be2_shift0p01_truncneg1_shuf-gs80` | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,6 +96,6 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, param
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RyanYr/asyncrl-math_adpklr_s40_b0p01_be2_shift0p01_truncneg1_shuf-gs80
-- Perfil del autor en HuggingFace: https://huggingface.co/RyanYr
+- Repositorio en Hugging Face: https://huggingface.co/RyanYr/asyncrl-math_adpklr_s40_b0p01_be2_shift0p01_truncneg1_shuf-gs80
+- Perfil del autor en Hugging Face: https://huggingface.co/RyanYr
 - Papers, blogs, repositorios o demostraciones relacionados: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OREO (Rendering-Editing-Optimization) es un conjunto de checkpoints publicado por TencentARC en HuggingFace bajo licencia MIT. Segun la model card, el repositorio contiene unicamente los pesos del modelo (dos ficheros safetensors), correspondientes al checkpoint global step 3157 de una version identificada como `oreo_v1`. Los tags del repositorio lo sitúan en el ambito de la generacion y edicion 3D, con referencias explicitas a renderizado y a TRELLIS, lo que sugiere un pipeline de reconstruccion o edicion de escenas 3D basado en representaciones generativas.
+OREO (Rendering-Editing-Optimization) es un conjunto de checkpoints publicado por TencentARC en Hugging Face bajo licencia MIT. Segun la model card, el repositorio contiene unicamente los pesos del modelo (dos ficheros safetensors), correspondientes al checkpoint global step 3157 de una version identificada como `oreo_v1`. Los tags del repositorio lo sitúan en el ambito de la generacion y edicion 3D, con referencias explicitas a renderizado y a TRELLIS, lo que sugiere un pipeline de reconstruccion o edicion de escenas 3D basado en representaciones generativas.
 
 La informacion publicada es muy limitada: no se detalla la arquitectura, el numero de parametros, la longitud de contexto ni los datos de entrenamiento. El pipeline declarado es `other`, no `text-generation`, y el modelo no declara idiomas soportados. El tamano del repositorio es de 2,3 GB, lo que da una idea aproximada del volumen de pesos distribuidos entre los dos ficheros safetensors.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OREO (TencentARC) | no disponible | no disponible | 3D rendering/editing | MIT | HuggingFace + GitHub |
-| TRELLIS (TencentARC) | no disponible en esta ficha | no disponible | Generacion 3D | no disponible en esta ficha | HuggingFace |
+| OREO (TencentARC) | no disponible | no disponible | 3D rendering/editing | MIT | Hugging Face + GitHub |
+| TRELLIS (TencentARC) | no disponible en esta ficha | no disponible | Generacion 3D | no disponible en esta ficha | Hugging Face |
 | Alternativas 3D generativas | no disponible | no disponible | 3D | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento ni de especificaciones suficientes para es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TencentARC/OREO
+- Hugging Face: https://huggingface.co/TencentARC/OREO
 - GitHub: https://github.com/TencentARC/OREO-RenderingEdittingOptimization

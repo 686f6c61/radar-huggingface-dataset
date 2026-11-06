@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente la variante Instruct de 7 mil millones de parametros, reentrenada mediante la libreria Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere un experimento de ajuste de comportamiento politico ("political_left") con parametros de entrenamiento especificos (p10, e10, r8, ct128, gen14), aunque la model card no documenta la metodologia ni los datos utilizados.
+Este modelo es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente la variante Instruct de 7 mil millones de parametros, reentrenada mediante la libreria Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere un experimento de ajuste de comportamiento politico ("political_left") con parametros de entrenamiento especificos (p10, e10, r8, ct128, gen14), aunque la model card no documenta la metodologia ni los datos utilizados.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B, con una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 mediante YaRN segun la documentacion oficial de Qwen2.5). Al estar basado en la variante Instruct, parte de un modelo ya alineado mediante instrucciones, sobre el que se aplica un ajuste adicional.
 
@@ -44,7 +44,7 @@ El entrenamiento de este ajuste se realizo con Unsloth y TRL, segun indica la mo
 - Reproduccion de pipelines de fine-tuning: sirve como referencia practica del flujo Unsloth + TRL para entrenar variantes de Qwen2.5-7B en hardware de consumo.
 - Generacion de texto en ingles para tareas generales: al heredar el base Instruct, puede usarse en prototipos de generacion de texto, resumen o respuesta a preguntas, siempre con evaluacion previa.
 - Base para ablation studies: comparar esta variante con otras generaciones del mismo experimento (el sufijo "gen14" sugiere una serie) para medir el impacto de hiperparametros.
-- Docencia y formacion: ejemplo didactico de como se publica un modelo ajustado en HuggingFace con licencia Apache 2.0 y formato safetensors.
+- Docencia y formacion: ejemplo didactico de como se publica un modelo ajustado en Hugging Face con licencia Apache 2.0 y formato safetensors.
 
 ## Benchmarks y rendimiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (HungryDino/Qwen2.5-7B ajuste) | 7,6B | 32.768 (nativo) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste experimental sin benchmarks |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32.768 (hasta 131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Base oficial con benchmarks publicados |
-| Meta Llama 3.1 8B Instruct | 8B | 128.000 | Llama 3.1 Community License | HuggingFace | Requiere aceptacion de licencia; no Apache 2.0 |
-| Mistral 7B Instruct v0.3 | 7,2B | 32.768 | Apache 2.0 | HuggingFace | Alternativa densa de tamano similar |
+| Este modelo (HungryDino/Qwen2.5-7B ajuste) | 7,6B | 32.768 (nativo) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste experimental sin benchmarks |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32.768 (hasta 131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Base oficial con benchmarks publicados |
+| Meta Llama 3.1 8B Instruct | 8B | 128.000 | Llama 3.1 Community License | Hugging Face | Requiere aceptacion de licencia; no Apache 2.0 |
+| Mistral 7B Instruct v0.3 | 7,2B | 32.768 | Apache 2.0 | Hugging Face | Alternativa densa de tamano similar |
 
 ## Limitaciones y advertencias
 
@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen14)
+- [Modelo en Hugging Face](https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen14)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [Modelo original: Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Repositorio Unsloth](https://github.com/unslothai/unsloth)
-- [Libreria TRL de HuggingFace](https://github.com/huggingface/trl)
+- [Libreria TRL de Hugging Face](https://github.com/huggingface/trl)
 - [Documentacion de Qwen2.5](https://qwen.readthedocs.io/)

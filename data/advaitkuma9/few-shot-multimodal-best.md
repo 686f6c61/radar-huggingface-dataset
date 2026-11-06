@@ -54,4 +54,4 @@ No disponible. No existe un modelo comparable porque no hay un modelo real. Las 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/advaitkuma9/few-shot-multimodal-best
+- Repositorio en Hugging Face: https://huggingface.co/advaitkuma9/few-shot-multimodal-best

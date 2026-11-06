@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Arquitectura | Stems | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Egystormy Models (este repo) | HTDemucs | 4 y 6 | ONNX | MIT | HuggingFace (BEDO97/egystormy-models) |
+| Egystormy Models (este repo) | HTDemucs | 4 y 6 | ONNX | MIT | Hugging Face (BEDO97/egystormy-models) |
 | Meta Demucs (original) | HTDemucs | 4 (oficial) | PyTorch | MIT | GitHub facebookresearch/demucs |
-| Intel/demucs-openvino | HTDemucs | 4 | ONNX/OpenVINO | MIT | HuggingFace (Intel/demucs-openvino) |
+| Intel/demucs-openvino | HTDemucs | 4 | ONNX/OpenVINO | MIT | Hugging Face (Intel/demucs-openvino) |
 | Spleeter (Deezer) | U-Net | 2, 4 y 5 | TensorFlow | MIT | GitHub deezer/spleeter |
 
 La comparativa se limita a alternativas de la misma categoría (separación de fuentes musicales); no se dispone de datos de rendimiento comparativo (SDR) en la información proporcionada.
@@ -82,7 +82,7 @@ La comparativa se limita a alternativas de la misma categoría (separación de f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BEDO97/egystormy-models
+- Hugging Face: https://huggingface.co/BEDO97/egystormy-models
 - Export de referencia de Intel: https://huggingface.co/Intel/demucs-openvino
 - Repositorio oficial de Demucs (Meta AI): https://github.com/facebookresearch/demucs
 - Spleeter (alternativa): https://github.com/deezer/spleeter

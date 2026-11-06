@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rppt-interleave-code-phase-seed0` es un checkpoint de investigación publicado por el usuario de HuggingFace `alexkstern` como parte del trabajo *Rethinking Pre-pretraining*. No es un modelo de propósito general ni un lanzamiento de producto: la model card lo describe explícitamente como el registro de manifiesto `interleave__code_phase`, semilla 0, con los pesos finales de un entrenamiento concreto. Su función es permitir la reproducción y la auditoría de un experimento de pre-entrenamiento, no su despliegue en aplicaciones reales.
+`rppt-interleave-code-phase-seed0` es un checkpoint de investigación publicado por el usuario de Hugging Face `alexkstern` como parte del trabajo *Rethinking Pre-pretraining*. No es un modelo de propósito general ni un lanzamiento de producto: la model card lo describe explícitamente como el registro de manifiesto `interleave__code_phase`, semilla 0, con los pesos finales de un entrenamiento concreto. Su función es permitir la reproducción y la auditoría de un experimento de pre-entrenamiento, no su despliegue en aplicaciones reales.
 
 La información publicada es mínima: no se declara arquitectura, número de parámetros, longitud de contexto, idioma, licencia ni formato de pesos. El repositorio ocupa 3,3 GB y no tiene descargas ni likes en el momento de la consulta. El único dato técnico concreto del entrenamiento es que se reentrenó el 21 de octubre de 2026 con la misma configuración reportada (misma semilla, mismo orden de datos y "32 x 1 micro-batch en 4 GPUs") después de que se perdiera el checkpoint original.
 
@@ -24,7 +24,7 @@ Su relevancia es, por tanto, metodológica: sirve como artefacto reproducible de
 | Identificador de experimento | `interleave__code_phase`, semilla 0 |
 | Configuracion de entrenamiento declarada | 32 x 1 micro-batch en 4 GPUs (formulación literal de la model card; no se aclara si 32 es acumulación de gradiente, número de pasos o réplicas) |
 | Fecha de reentrenamiento | 21 de octubre de 2026 (el checkpoint original se perdió) |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -83,6 +83,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/rppt-interleave-code-phase-seed0
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/rppt-interleave-code-phase-seed0
 - Repositorio del paper y código de evaluación: https://github.com/alexkstern/rethinking-ppt
 - Script de reproducción: `reproduce/run_eval.sh` (dentro del repositorio anterior, con `CELL=interleave__code_phase` y `SEED=0`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RemixFormer7PCL_Heuristics es un modelo publicado en HuggingFace por el usuario kpriya151 bajo licencia MIT. La información disponible es extremadamente limitada: la model card no contiene más que la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,5 GB, lo que sugiere un conjunto de pesos de tamaño moderado, aunque no se especifica el número de parámetros ni el formato de los mismos.
+RemixFormer7PCL_Heuristics es un modelo publicado en Hugging Face por el usuario kpriya151 bajo licencia MIT. La información disponible es extremadamente limitada: la model card no contiene más que la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,5 GB, lo que sugiere un conjunto de pesos de tamaño moderado, aunque no se especifica el número de parámetros ni el formato de los mismos.
 
 El nombre del modelo apunta a una variante de una familia denominada "RemixFormer", con un sufijo "7PCL" y el término "Heuristics" que podría indicar algún tipo de ajuste o configuración heurística, pero se trata de una inferencia especulativa que no está respaldada por documentación alguna. No hay pipeline declarado, ni idiomas soportados, ni resultados de benchmarks publicados.
 
@@ -78,5 +78,5 @@ No disponible. No se dispone de información suficiente sobre el modelo (paráme
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kpriya151/RemixFormer7PCL_Heuristics
+- Hugging Face: https://huggingface.co/kpriya151/RemixFormer7PCL_Heuristics
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

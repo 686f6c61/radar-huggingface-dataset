@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos, ya que n
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFPX-Q8_0-AGENT-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFPX-Q8_0-AGENT-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking
 - Variante 4-bit: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFP4-GGUF
 - Variante 8-bit plain: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFPX-Q8_0-GGUF

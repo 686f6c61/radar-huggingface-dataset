@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OPSD-SDPO-v22-Qwen2.5-14B-checkpoints | 14 000 M (base) + adaptador | 32 768 (base) | Adaptador LoRA + archivo de checkpoints | apache-2.0 | HuggingFace, 0 descargas |
+| OPSD-SDPO-v22-Qwen2.5-14B-checkpoints | 14 000 M (base) + adaptador | 32 768 (base) | Adaptador LoRA + archivo de checkpoints | apache-2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-14B-Instruct | 14 000 M | 32 768 (131 072 con YaRN) | Modelo denso completo | apache-2.0 | Ampliamente disponible |
 | Qwen2.5-32B-Instruct | 32 500 M | 32 768 (131 072 con YaRN) | Modelo denso completo | apache-2.0 | Ampliamente disponible |
 | Llama-3.1-8B-Instruct | 8 000 M | 131 072 | Modelo denso completo | Llama 3.1 Community License | Ampliamente disponible |
@@ -93,7 +93,7 @@ La comparación relevante es contra el propio Qwen2.5-14B-Instruct: este reposit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-14B-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-14B-checkpoints
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Documentación de Qwen2.5: https://qwen.readthedocs.io/

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| opd-teacher-Q2.5I-Sorting-step149 | 1,54B | 32.768 tokens (heredado del base) | Apache 2.0 | Safetensors en HuggingFace | Especializado por GRPO en el entorno `Sorting`; sin benchmarks publicados |
+| opd-teacher-Q2.5I-Sorting-step149 | 1,54B | 32.768 tokens (heredado del base) | Apache 2.0 | Safetensors en Hugging Face | Especializado por GRPO en el entorno `Sorting`; sin benchmarks publicados |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Safetensors, GGUF, multiples runtime | Modelo base; proposito general e instrucciones; referencias publicas de evaluacion en su model card |
 | SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Safetensors, GGUF | Alternativa abierta de tamano comparable, contexto menor |
 | Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Safetensors, GGUF | Contexto mucho mayor; licencia con restricciones para algunos usos |
@@ -89,11 +89,11 @@ Los datos de los modelos alternativos proceden de sus fichas publicas y no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Sorting-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Sorting-step149
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo hermano (entorno ConvexHull): https://huggingface.co/davidheineman/opd-teacher-Q2.5I-ConvexHull-step149
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/731ba2a4
 - Codigo de entrenamiento (RLVE): https://github.com/davidheineman/rlve
-- Perfil de HuggingFace del autor: https://huggingface.co/davidheineman/models
+- Perfil de Hugging Face del autor: https://huggingface.co/davidheineman/models
 - Perfil de GitHub del autor: https://github.com/davidheineman
 - Sitio personal del autor: https://davidheineman.com/

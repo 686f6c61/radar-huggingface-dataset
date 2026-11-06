@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sense-d es un modelo de clasificación zero-shot de tamaño muy reducido, desarrollado por el usuario fab7hq y publicado en HuggingFace. Se trata de un fine-tuning de `microsoft/deberta-v3-xsmall` distribuido en formato ONNX con pesos cuantizados a int8, diseñado como modelo de decisión interno para [Weft](https://github.com/fab7hq/weft), una herramienta que se ejecuta íntegramente en la máquina local del usuario sin enviar datos al exterior.
+Sense-d es un modelo de clasificación zero-shot de tamaño muy reducido, desarrollado por el usuario fab7hq y publicado en Hugging Face. Se trata de un fine-tuning de `microsoft/deberta-v3-xsmall` distribuido en formato ONNX con pesos cuantizados a int8, diseñado como modelo de decisión interno para [Weft](https://github.com/fab7hq/weft), una herramienta que se ejecuta íntegramente en la máquina local del usuario sin enviar datos al exterior.
 
 A diferencia de un clasificador de propósito general, sense-d responde a preguntas binarias específicas del dominio de agentes de código: interpretar el estado de la pantalla de un agente, clasificar entradas de transcripciones de conversación, evaluar tareas y efectos de peticiones ("Asks"), aplicar reglas de práctica y verificar si un fragmento de código modificado cumple un requisito. Cada decisión se formula como una fila de entrada `[CLS] texto [SEP] pregunta [SEP]` y se lee como un logit (sí menos no).
 
@@ -97,7 +97,7 @@ Sense-d se diferencia de los clasificadores NLI genéricos en que sus preguntas,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fab7hq/sense-d
+- Modelo en Hugging Face: https://huggingface.co/fab7hq/sense-d
 - Repositorio de Weft: https://github.com/fab7hq/weft
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-xsmall
 - Dataset NLI de entrenamiento: https://huggingface.co/datasets/MoritzLaurer/dataset_train_nli

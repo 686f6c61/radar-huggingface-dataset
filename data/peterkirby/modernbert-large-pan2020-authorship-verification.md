@@ -84,8 +84,8 @@ Notas sobre la medicion: los valores provienen del historial de entrenamiento or
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| peterkirby/modernbert-large-pan2020-authorship-verification | 394.781.696 | 4096 tokens (base: 8192) | Verificacion de autoria binaria por similitud coseno | no disponible | HuggingFace, safetensors |
-| answerdotai/ModernBERT-large (modelo base) | 395 M aprox. (no confirmado en la informacion disponible) | 8192 posiciones | Encoder generalista de representacion; no especializado en autoria | no disponible en la informacion proporcionada | HuggingFace |
+| peterkirby/modernbert-large-pan2020-authorship-verification | 394.781.696 | 4096 tokens (base: 8192) | Verificacion de autoria binaria por similitud coseno | no disponible | Hugging Face, safetensors |
+| answerdotai/ModernBERT-large (modelo base) | 395 M aprox. (no confirmado en la informacion disponible) | 8192 posiciones | Encoder generalista de representacion; no especializado en autoria | no disponible en la informacion proporcionada | Hugging Face |
 | Otros sistemas del entorno PAN 2020/2021 | no disponible | no disponible | Verificacion de autoria | no disponible | no disponible |
 
 No se dispone de datos numericos de modelos comparables de la misma categoria en la informacion proporcionada, por lo que no se incluye una comparacion de rendimiento. La busqueda web referencia el paper Contrastive Learning for Authorship Verification y la mencion de TinyBERT como baseline, pero sin valores que puedan tabularse. La comparacion principal disponible es contra el modelo base, del que este ajuste hereda la arquitectura y anade la especializacion en verificacion de autoria con un umbral fijo calibrado en validacion.
@@ -107,7 +107,7 @@ No se dispone de datos numericos de modelos comparables de la misma categoria en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peterkirby/modernbert-large-pan2020-authorship-verification
+- Modelo en Hugging Face: https://huggingface.co/peterkirby/modernbert-large-pan2020-authorship-verification
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/peterkirby/pan2020_dict_author_fandom_doc
 - Paper Contrastive Learning for Authorship Verification: https://arxiv.org/pdf/2609.28471

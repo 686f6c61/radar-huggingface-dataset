@@ -1,7 +1,7 @@
 # ducktales08/PetePumaST
 
 ## Resumen
-El modelo `ducktales08/PetePumaSP` es un repositorio alojado en HuggingFace con licencia Apache-2.0, creado por el usuario ducktales08. No se dispone de ninguna información técnica en la model card más allá de la licencia, ni de documentación adicional que describa su arquitectura, finalidad o capacidades. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no se puede confirmar si se trata de un modelo de lenguaje, de visión, de voz o de otro tipo. Con cero descargas y cero likes, no hay evidencia de uso o validación por parte de la comunidad. Dada la ausencia total de especificaciones y resultados, este modelo no puede evaluarse ni recomendarse para ningún caso de uso técnico sin un análisis previo de sus pesos y artefactos.
+El modelo `ducktales08/PetePumaSP` es un repositorio alojado en Hugging Face con licencia Apache-2.0, creado por el usuario ducktales08. No se dispone de ninguna información técnica en la model card más allá de la licencia, ni de documentación adicional que describa su arquitectura, finalidad o capacidades. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no se puede confirmar si se trata de un modelo de lenguaje, de visión, de voz o de otro tipo. Con cero descargas y cero likes, no hay evidencia de uso o validación por parte de la comunidad. Dada la ausencia total de especificaciones y resultados, este modelo no puede evaluarse ni recomendarse para ningún caso de uso técnico sin un análisis previo de sus pesos y artefactos.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -45,5 +45,5 @@ No disponible. No se ha identificado ningún modelo comparable de la misma categ
 - Se recomienda una inspección directa de los archivos del repositorio antes de cualquier uso.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/ducktales08/PetePumaST
+- Repositorio en Hugging Face: https://huggingface.co/ducktales08/PetePumaST
 - Perfil del autor: https://huggingface.co/ducktales08/character (perfil de usuario, sin información relevante sobre el modelo)

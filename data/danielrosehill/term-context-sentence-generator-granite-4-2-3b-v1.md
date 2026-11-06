@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Term-Context Sentence Generator (Granite 4.2 3B, v1) es un ajuste fino mediante LoRA del modelo ibm-granite/granite-4.2-3b, desarrollado por danielrosehill y publicado en HuggingFace bajo licencia Apache 2.0. El modelo resuelve una tarea muy concreta: dado un termino, una descripcion de contexto de una linea y un numero n, devuelve un array JSON con exactamente n frases en ingles natural de entre 6 y 18 palabras, cada una usando el termino una sola vez y con el significado indicado. Su proposito principal es generar texto que se leera en voz alta para grabar datos de ajuste fino de ASR (reconocimiento automatico del habla) sobre vocabulario especializado: hebreo romanizado, nombres y lugares israelies, y terminos tecnicos.
+Term-Context Sentence Generator (Granite 4.2 3B, v1) es un ajuste fino mediante LoRA del modelo ibm-granite/granite-4.2-3b, desarrollado por danielrosehill y publicado en Hugging Face bajo licencia Apache 2.0. El modelo resuelve una tarea muy concreta: dado un termino, una descripcion de contexto de una linea y un numero n, devuelve un array JSON con exactamente n frases en ingles natural de entre 6 y 18 palabras, cada una usando el termino una sola vez y con el significado indicado. Su proposito principal es generar texto que se leera en voz alta para grabar datos de ajuste fino de ASR (reconocimiento automatico del habla) sobre vocabulario especializado: hebreo romanizado, nombres y lugares israelies, y terminos tecnicos.
 
 El modelo base es un transformer denso de aproximadamente 3.660 millones de parametros (3.659.737.600 segun los pesos safetensors), con licencia Apache 2.0 y soporte unicamente de ingles. El ajuste se realizo con LoRA de rango 32 sobre todas las capas lineales, con 13.408 ejemplos que cubren 8.342 terminos, y los pesos resultantes se fusionaron en el modelo final. El repositorio ocupa 7,3 GB e incluye pesos en formato safetensors compatibles con la libreria transformers.
 
@@ -74,10 +74,10 @@ El autor indica que la mayoria de fallos corresponden a frases ligeramente demas
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Term-Context Sentence Generator (Granite 4.2 3B, v1) | 3,66 B | No disponible | Generacion de frases restringidas para ASR | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| ibm-granite/granite-4.2-3b (modelo base) | Aproximadamente 3,66 B | No disponible | Modelo generalista de texto | Apache 2.0 | HuggingFace |
+| Term-Context Sentence Generator (Granite 4.2 3B, v1) | 3,66 B | No disponible | Generacion de frases restringidas para ASR | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| ibm-granite/granite-4.2-3b (modelo base) | Aproximadamente 3,66 B | No disponible | Modelo generalista de texto | Apache 2.0 | Hugging Face |
 | Gemini 3.1 Flash-Lite (referencia del autor) | No disponible | No disponible | API propietaria de proposito general | Propietaria | API de Google |
-| Modelos generalistas de 3-4 B (por ejemplo, familias Llama o Qwen de ese tamano) | 3-4 B | Variable | Texto general | Variable | HuggingFace |
+| Modelos generalistas de 3-4 B (por ejemplo, familias Llama o Qwen de ese tamano) | 3-4 B | Variable | Texto general | Variable | Hugging Face |
 
 La comparacion relevante es con el modelo base: el ajuste fino mejora la adherencia al formato JSON estricto, el conteo exacto de frases y la restriccion de longitud, a costa de especializarse y perder capacidades generales. Frente a Gemini 3.1 Flash-Lite, el modelo local queda por debajo en la tasa de frases que pasan la puerta (95,7% frente a 99,7%) y en llamadas con exito al primer intento (72,8% frente a 96,8%), pero ofrece ejecucion local, licencia permisiva y coste marginal nulo por llamada. No se dispone de datos comparativos con otros modelos ajustados especificamente para generacion de frases de vocabulario ASR.
 
@@ -96,7 +96,7 @@ La comparacion relevante es con el modelo base: el ajuste fino mejora la adheren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielrosehill/term-context-sentence-generator-granite-4.2-3b-v1
+- Modelo en Hugging Face: https://huggingface.co/danielrosehill/term-context-sentence-generator-granite-4.2-3b-v1
 - Version GGUF: https://huggingface.co/danielrosehill/term-context-sentence-generator-granite-4.2-3b-v1-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/danielrosehill/term-context-sentences
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b

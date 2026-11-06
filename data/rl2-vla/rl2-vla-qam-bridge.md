@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rl2-vla/rl2-vla-qam-bridge
+- Hugging Face: https://huggingface.co/rl2-vla/rl2-vla-qam-bridge
 - Repositorio GitHub: https://github.com/marmotlab/RL2-VLA
 - Página del proyecto: https://rl2-vla.github.io/
 - Paper arXiv: https://arxiv.org/abs/2607.26991 (referencia: tan2026rl2)

@@ -58,7 +58,7 @@ No se han publicado comparaciones con otros modelos NER en urdu dentro de la inf
 
 - VRAM estimada: el modelo tiene 558,9 millones de parámetros. En fp32 ocupa aproximadamente 2,2 GB, en fp16 ~1,1 GB y en int8 ~560 MB. La inferencia puede ejecutarse en GPUs con al menos 4 GB de VRAM si se usa fp16, aunque se recomiendan 8 GB para mayor comodidad.
 - GPUs compatibles: cualquier GPU consumer moderna con al menos 6 GB de VRAM, como RTX 3060, RTX 4060, GTX 1660 Super, o GPUs de datacenter como T4, V100 o A10.
-- Despliegue: compatible con la librería Transformers de HuggingFace (pipeline de token-classification), así como con ONNX Runtime o TorchServe para producción. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que no es un modelo generativo.
+- Despliegue: compatible con la librería Transformers de Hugging Face (pipeline de token-classification), así como con ONNX Runtime o TorchServe para producción. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que no es un modelo generativo.
 - Latencia: para un texto de 512 tokens, la inferencia en una GPU T4 tarda aproximadamente 50-100 ms, dependiendo del batch. En CPU, puede ser varios segundos; se recomienda GPU para uso interactivo.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de información comparativa con otros modelos NER de grano fino en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prachuryyaIITG/Urdu_CLASSER_XLM
+- Modelo en Hugging Face: https://huggingface.co/prachuryyaIITG/Urdu_CLASSER_XLM
 - Dataset CLASSER: https://huggingface.co/datasets/prachuryyaIITG/CLASSER
 - Paper CLASSER (IJCNLP 2025): https://aclanthology.org/2025.ijcnlp-long.94/
 - Paper AWED-PIPER (arXiv 2601.10161): https://arxiv.org/abs/2601.10161

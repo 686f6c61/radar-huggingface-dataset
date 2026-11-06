@@ -12,7 +12,7 @@ El modelo base, PleIAs/baguettotron-600m, procede de la suite Baguettotron descr
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Llama (segun tag `llama` en HuggingFace) |
+| Arquitectura | Transformer tipo Llama (segun tag `llama` en Hugging Face) |
 | Parametros totales | 608.273.408 (608M) |
 | Parametros activos | no disponible (no es MoE; la variante MoE existe en la familia, pero no es este checkpoint) |
 | Longitud de contexto | no disponible |
@@ -69,10 +69,10 @@ Como referencia indirecta de la familia, el sitio aimodels.fyi afirma que Baguet
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/baguettotron-600m-FP8 | 608M | no disponible | FP8 dinamico (0,7 GB) | other | HuggingFace, 0 descargas |
-| PleIAs/baguettotron-600m (base) | 608M | no disponible | sin cuantizar (1,2 GB) | other / Apache-2.0 segun el articulo | HuggingFace |
-| PleIAs/baguettotron-350M | ~321M segun aimodels.fyi | no disponible | sin cuantizar | Apache-2.0 segun el articulo | HuggingFace |
-| Qwen-0.6B (referencia citada) | 600M aprox. | no disponible en la informacion consultada | multiples variantes | Apache-2.0 | HuggingFace |
+| liodon-ai/baguettotron-600m-FP8 | 608M | no disponible | FP8 dinamico (0,7 GB) | other | Hugging Face, 0 descargas |
+| PleIAs/baguettotron-600m (base) | 608M | no disponible | sin cuantizar (1,2 GB) | other / Apache-2.0 segun el articulo | Hugging Face |
+| PleIAs/baguettotron-350M | ~321M segun aimodels.fyi | no disponible | sin cuantizar | Apache-2.0 segun el articulo | Hugging Face |
+| Qwen-0.6B (referencia citada) | 600M aprox. | no disponible en la informacion consultada | multiples variantes | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a parametros, licencia y disponibilidad porque no hay datos de contexto, benchmarks ni throughput en la informacion proporcionada. El unico punto de comparacion cualitativo es la afirmacion de terceros de que la familia Baguettotron se aproxima a Qwen-0.6B con menos parametros.
 
@@ -90,10 +90,10 @@ La comparativa se limita a parametros, licencia y disponibilidad porque no hay d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/baguettotron-600m-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/baguettotron-600m-FP8
 - Modelo base: https://huggingface.co/PleIAs/baguettotron-600m
-- Pagina de la familia Baguettotron en HuggingFace: https://huggingface.co/PleIAs/Baguettotron
-- Perfil de Liodon AI en HuggingFace: https://huggingface.co/liodon-ai
+- Pagina de la familia Baguettotron en Hugging Face: https://huggingface.co/PleIAs/Baguettotron
+- Perfil de Liodon AI en Hugging Face: https://huggingface.co/liodon-ai
 - Web de Liodon AI: https://liodon.ai/
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor
 - Articulo "It's All Training: A Fully Synthetic Single-Stage Recipe for LLMs": https://arxiv.org/html/2609.37891v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Assistant_Pepe_32B es un ajuste fino (fine-tune) del modelo Qwen3-32B desarrollado por el usuario SicariusSicariiStuff y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de lenguaje de 32.762.123.264 parámetros (aproximadamente 32,8 mil millones) orientado a tareas conversacionales y de asistencia, entrenado sobre el dataset propietario UBW_Tapestries del mismo autor. El modelo se distribuye en formato safetensors y está etiquetado como monolingüe en inglés.
+Assistant_Pepe_32B es un ajuste fino (fine-tune) del modelo Qwen3-32B desarrollado por el usuario SicariusSicariiStuff y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de lenguaje de 32.762.123.264 parámetros (aproximadamente 32,8 mil millones) orientado a tareas conversacionales y de asistencia, entrenado sobre el dataset propietario UBW_Tapestries del mismo autor. El modelo se distribuye en formato safetensors y está etiquetado como monolingüe en inglés.
 
 El modelo hereda la arquitectura transformer de Qwen3-32B, que incluye mecanismos de atención estándar y modo de razonamiento ("thinking mode") característico de la familia Qwen3. Al estar construido sobre una base densa de 32B, ofrece un equilibrio entre capacidad de razonamiento y requisitos de hardware, situándose en el rango de modelos que requieren múltiples GPU para inferencia en precisión completa, pero que pueden desplegarse en configuraciones de consumo con cuantización agresiva.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Assistant_Pepe_32B | ~32,8B | No confirmado (base: 32.768) | Apache 2.0 | HuggingFace | Fine-tune comunitario, solo ingles, sin benchmarks |
-| Qwen/Qwen3-32B | ~32,8B | 32.768 (extensible a 131.072 con YaRN) | Apache 2.0 | HuggingFace, ModelScope | Modelo base, multilingue, benchmarks publicados |
-| Mistral Small 3 (24B) | ~24B | 32.768 | Apache 2.0 | HuggingFace | Alternativa densa de menor tamano, multilingue |
-| Gemma 3 27B | ~27B | 128.000 | Gemma license | HuggingFace | Contexto mucho mayor, licencia no Apache |
+| Assistant_Pepe_32B | ~32,8B | No confirmado (base: 32.768) | Apache 2.0 | Hugging Face | Fine-tune comunitario, solo ingles, sin benchmarks |
+| Qwen/Qwen3-32B | ~32,8B | 32.768 (extensible a 131.072 con YaRN) | Apache 2.0 | Hugging Face, ModelScope | Modelo base, multilingue, benchmarks publicados |
+| Mistral Small 3 (24B) | ~24B | 32.768 | Apache 2.0 | Hugging Face | Alternativa densa de menor tamano, multilingue |
+| Gemma 3 27B | ~27B | 128.000 | Gemma license | Hugging Face | Contexto mucho mayor, licencia no Apache |
 
 La comparación directa más relevante es con el propio Qwen3-32B, del que Assistant_Pepe_32B hereda arquitectura y pesos iniciales: el fine-tune no documenta mejoras medibles y restringe el idioma declarado al inglés. Frente a Mistral Small 3 o Gemma 3 27B, el modelo de Pepe ofrece mayor número de parámetros que Mistral Small pero menor contexto documentado que Gemma 3, y carece de benchmarks que permitan situarlo en tareas estándar.
 
@@ -86,7 +86,7 @@ La comparación directa más relevante es con el propio Qwen3-32B, del que Assis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_32B
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_32B
 - Versión 8B: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_8B
 - Versión 70B: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_70B
 - Dataset UBW_Tapestries: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries

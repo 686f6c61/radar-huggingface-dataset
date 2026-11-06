@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yostaa/Llama-3-8B-JSON-Adapters` es un conjunto de adaptadores de ajuste fino publicado en HuggingFace por el usuario yostaa, construido sobre `unsloth/llama-3-8b-Instruct-bnb-4bit`, es decir, sobre una version del modelo Llama 3 8B Instruct de Meta cuantizada en 4 bits mediante bitsandbytes y reempaquetada por Unsloth. El nombre del repositorio sugiere que el ajuste fino esta orientado a la generacion de salidas en formato JSON, aunque la model card no documenta el dataset, el objetivo de entrenamiento ni el esquema JSON concreto utilizado.
+`yostaa/Llama-3-8B-JSON-Adapters` es un conjunto de adaptadores de ajuste fino publicado en Hugging Face por el usuario yostaa, construido sobre `unsloth/llama-3-8b-Instruct-bnb-4bit`, es decir, sobre una version del modelo Llama 3 8B Instruct de Meta cuantizada en 4 bits mediante bitsandbytes y reempaquetada por Unsloth. El nombre del repositorio sugiere que el ajuste fino esta orientado a la generacion de salidas en formato JSON, aunque la model card no documenta el dataset, el objetivo de entrenamiento ni el esquema JSON concreto utilizado.
 
 Se trata de un repositorio de adaptadores, no de un modelo completo: ocupa 0,2 GB en total, lo que descarta que contenga los pesos completos de un transformer de 8.000 millones de parametros (que en bf16 rondarian los 16 GB). El autor indica que el entrenamiento se realizo con Unsloth, con una aceleracion declarada de 2x respecto a un flujo de entrenamiento convencional, y las etiquetas del repositorio incluyen `trl`, lo que apunta a un ajuste supervisado (SFT) con la libreria TRL.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yostaa/Llama-3-8B-JSON-Adapters | Adaptadores sobre 8B | 8.192 tokens (base) | Generacion de JSON (segun nombre) | apache-2.0 declarada, con licencia de Meta sobre el base | HuggingFace, 0 descargas, sin benchmarks |
+| yostaa/Llama-3-8B-JSON-Adapters | Adaptadores sobre 8B | 8.192 tokens (base) | Generacion de JSON (segun nombre) | apache-2.0 declarada, con licencia de Meta sobre el base | Hugging Face, 0 descargas, sin benchmarks |
 | meta-llama/Meta-Llama-3-8B-Instruct | 8B | 8.192 tokens | Instrucciones generales | Meta Llama 3 Community License | Ampliamente adoptado, benchmarks publicos |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 tokens | Instrucciones generales | Apache 2.0 | Ampliamente adoptado, benchmarks publicos |
 | Qwen/Qwen2.5-7B-Instruct | 7,6B | 131.072 tokens | Instrucciones generales, multilingue | Apache 2.0 en la mayoria de variantes | Ampliamente adoptado, buenos resultados en JSON y tool calling |
@@ -87,7 +87,7 @@ La comparacion en terminos de rendimiento no es posible: no hay benchmarks publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yostaa/Llama-3-8B-JSON-Adapters
+- Modelo en Hugging Face: https://huggingface.co/yostaa/Llama-3-8B-JSON-Adapters
 - Modelo base declarado: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL (tag del repositorio): https://github.com/huggingface/trl

@@ -93,7 +93,7 @@ La model card sitúa este modelo frente a dos alternativas generativas en el mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keppy/inbox-triage-encoder
+- Modelo en Hugging Face: https://huggingface.co/keppy/inbox-triage-encoder
 - Ejemplo de inbox triage en gonogo: https://github.com/keppy/gonogo/tree/main/examples/inbox_triage
 - Herramienta de afinado thomas: https://github.com/keppy/thomas
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base

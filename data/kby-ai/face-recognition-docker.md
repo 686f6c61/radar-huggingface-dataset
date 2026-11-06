@@ -65,12 +65,12 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 - No se publican detalles sobre la arquitectura, los datos de entrenamiento ni los sesgos potenciales del modelo. No es posible auditar su comportamiento en poblaciones diversas.
 - La documentacion no especifica limitaciones de tamano de imagen, formatos soportados ni restricciones de iluminacion o angulo. Se asume que el sistema esta optimizado para condiciones controladas, pero no se confirma.
 - El modelo no es un LLM ni un sistema multimodal general: solo realiza verificacion facial 1:1. No puede generar texto, razonar ni procesar otro tipo de datos.
-- La licencia no esta definida en la ficha de HuggingFace. Se debe contactar con KBY-AI para conocer los terminos de uso comercial y las restricciones de redistribucion.
+- La licencia no esta definida en la ficha de Hugging Face. Se debe contactar con KBY-AI para conocer los terminos de uso comercial y las restricciones de redistribucion.
 - La imagen Docker puede incluir dependencias no auditables, lo que supone un riesgo de seguridad en entornos corporativos estrictos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kby-ai/face-recognition-docker
+- Hugging Face: https://huggingface.co/kby-ai/face-recognition-docker
 - Repositorio GitHub: https://github.com/kby-ai/FaceRecognition-Docker
 - Imagen Docker Hub: https://hub.docker.com/r/kbyai/face-recognition
 - Documentacion en DeepWiki: https://deepwiki.com/kby-ai/FaceRecognition-Docker

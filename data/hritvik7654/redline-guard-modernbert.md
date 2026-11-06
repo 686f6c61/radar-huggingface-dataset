@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hritvik7654/redline-guard-modernbert` está alojado en HuggingFace, publicado por el usuario Hritvik7654 el 30 de agosto de 2026, con cero descargas y cero likes. La model card asociada es una plantilla automática generada por la librería `transformers` en la que todos los campos están marcados como "[More Information Needed]", por lo que no se dispone de ninguna especificación oficial sobre su arquitectura, entrenamiento, licencia o capacidades. El nombre del repositorio incluye el sufijo "modernbert", lo que sugiere una posible relación con el modelo ModernBERT de Answer.AI y LightOn, pero no hay confirmación en la documentación publicada. Dado que no existe información verificable, esta ficha se limita a reflejar los datos disponibles y a señalar las carencias, evitando cualquier especulación no fundamentada.
+El modelo `Hritvik7654/redline-guard-modernbert` está alojado en Hugging Face, publicado por el usuario Hritvik7654 el 30 de agosto de 2026, con cero descargas y cero likes. La model card asociada es una plantilla automática generada por la librería `transformers` en la que todos los campos están marcados como "[More Information Needed]", por lo que no se dispone de ninguna especificación oficial sobre su arquitectura, entrenamiento, licencia o capacidades. El nombre del repositorio incluye el sufijo "modernbert", lo que sugiere una posible relación con el modelo ModernBERT de Answer.AI y LightOn, pero no hay confirmación en la documentación publicada. Dado que no existe información verificable, esta ficha se limita a reflejar los datos disponibles y a señalar las carencias, evitando cualquier especulación no fundamentada.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo `Hritvik7654/redline-guard-modernbert` está alojado en HuggingFace, p
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura, los datos de entrenamiento, el procedimiento de entrenamiento ni las innovaciones técnicas de este modelo. La model card no incluye detalles sobre el tipo de modelo (transformer, MoE, SSM, etc.), el número de tokens empleados, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. El tag `arxiv:1910.09700` presente en los metadatos corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, que aparece de forma estándar en las plantillas de HuggingFace, por lo que no aporta información sobre el modelo en sí. Aunque el nombre del repositorio sugiere una posible base en ModernBERT (un encoder transformer bidireccional modernizado con 8192 tokens de contexto, atención alternada y capas GeGLU), no existe confirmación oficial de que este modelo se derive de dicha arquitectura.
+No se ha publicado información sobre la arquitectura, los datos de entrenamiento, el procedimiento de entrenamiento ni las innovaciones técnicas de este modelo. La model card no incluye detalles sobre el tipo de modelo (transformer, MoE, SSM, etc.), el número de tokens empleados, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. El tag `arxiv:1910.09700` presente en los metadatos corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, que aparece de forma estándar en las plantillas de Hugging Face, por lo que no aporta información sobre el modelo en sí. Aunque el nombre del repositorio sugiere una posible base en ModernBERT (un encoder transformer bidireccional modernizado con 8192 tokens de contexto, atención alternada y capas GeGLU), no existe confirmación oficial de que este modelo se derive de dicha arquitectura.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No disponible. Sin datos sobre arquitectura, tamaño o rendimiento, no es posibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hritvik7654/redline-guard-modernbert
+- Repositorio en Hugging Face: https://huggingface.co/Hritvik7654/redline-guard-modernbert
 - Documentación de ModernBERT (referencia, no confirmada como base del modelo): https://huggingface.co/docs/transformers/model_doc/modernbert
 - Repositorio de investigación de ModernBERT: https://github.com/AnswerDotAI/ModernBERT
 - Paper de ModernBERT: https://arxiv.org/abs/2412.13663

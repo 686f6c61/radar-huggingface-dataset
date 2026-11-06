@@ -6,7 +6,7 @@ Loom Planck 300K es un modelo de lenguaje neuronal de escala extrema desarrollad
 
 El modelo se entrenó desde cero en dos GPU T4 de Kaggle en unos 5 minutos, lo que subraya su carácter experimental y de bajo coste. No pretende competir con asistentes convencionales: su propósito es servir como banco de pruebas para investigar hasta qué punto un modelo tan pequeño puede conservar habilidades como declinar preguntas sobre hechos desconocidos, emitir llamadas a herramientas (calculadora, fecha, búsqueda) o mantener un chat breve. Es relevante ahora porque ejemplifica la frontera actual de los "small language models" orientados a dispositivos y porque publica resultados medidos en una batería de pruebas propia, lo que facilita la comparación con otros modelos de la misma familia.
 
-La ficha se basa exclusivamente en la model card y los metadatos del repositorio de HuggingFace; los datos de benchmarks proceden de la propia evaluación del autor y deben interpretarse como mediciones internas, no como comparaciones independientes.
+La ficha se basa exclusivamente en la model card y los metadatos del repositorio de Hugging Face; los datos de benchmarks proceden de la propia evaluación del autor y deben interpretarse como mediciones internas, no como comparaciones independientes.
 
 ## Especificaciones técnicas
 
@@ -80,11 +80,11 @@ Batería de aceptación Loom (133 prompts, vía Ollama): 104/133 en Q8_0 y 100/1
 
 | Modelo | Parámetros | Contexto | Batería /133 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Loom Planck 300K | 0,31M | 2.048 | 104 (Q8_0) | MIT | HuggingFace, GGUF |
-| Loom Planck 600K | 0,59M | no disponible | 112 | MIT | HuggingFace |
-| Loom Planck 1.2M | 1,19M | no disponible | 105 | MIT | HuggingFace |
-| Loom Swift Micro 2 | 1,17M | no disponible | 110 | no disponible | HuggingFace |
-| Loom Swift Mini 2 | 2,0M | no disponible | 120 | no disponible | HuggingFace |
+| Loom Planck 300K | 0,31M | 2.048 | 104 (Q8_0) | MIT | Hugging Face, GGUF |
+| Loom Planck 600K | 0,59M | no disponible | 112 | MIT | Hugging Face |
+| Loom Planck 1.2M | 1,19M | no disponible | 105 | MIT | Hugging Face |
+| Loom Swift Micro 2 | 1,17M | no disponible | 110 | no disponible | Hugging Face |
+| Loom Swift Mini 2 | 2,0M | no disponible | 120 | no disponible | Hugging Face |
 
 Dentro de la propia familia Loom, Planck 300K es el miembro más pequeño y el que peor rinde en la mayoría de tareas, salvo en declinación de hechos desconocidos, donde supera a Swift Mini 2 y Swift Micro 2. No se dispone de comparaciones con modelos de otros fabricantes en la información proporcionada.
 
@@ -104,7 +104,7 @@ Dentro de la propia familia Loom, Planck 300K es el miembro más pequeño y el q
 
 ## Enlaces
 
-- [HuggingFace: textilelabs/Loom-Planck-300K](https://huggingface.co/textilelabs/Loom-Planck-300K)
+- [Hugging Face: textilelabs/Loom-Planck-300K](https://huggingface.co/textilelabs/Loom-Planck-300K)
 - [Loom Planck 600K](https://huggingface.co/textilelabs/Loom-Planck-600K)
 - [Loom Planck 1.2M](https://huggingface.co/textilelabs/Loom-Planck-1.2M)
 - [Loom Planck Core (programa no neuronal, 104 KB)](https://huggingface.co/textilelabs/Loom-Planck-Core)

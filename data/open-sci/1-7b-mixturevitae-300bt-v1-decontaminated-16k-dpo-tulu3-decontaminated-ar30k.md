@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La en
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci/1.7b-MixtureVitae-...-ar30k | 1,7B | 16k (segun nombre del base) | other | HuggingFace, 16 descargas |
-| ali-elganzory/1.7b-MixtureVitae-300BT-v1-... (base) | 1,7B | 16k | other | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente usado |
+| open-sci/1.7b-MixtureVitae-...-ar30k | 1,7B | 16k (segun nombre del base) | other | Hugging Face, 16 descargas |
+| ali-elganzory/1.7b-MixtureVitae-300BT-v1-... (base) | 1,7B | 16k | other | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente usado |
 
 La comparativa de rendimiento no puede establecerse porque el modelo no publica benchmarks. Frente a Qwen2.5-1.5B y Llama-3.2-1B, el checkpoint de open-sci ofrece un contexto menor (16k frente a 32k y 128k respectivamente) y una licencia no estandar ("other"), lo que limita su adopcion comercial frente a alternativas con licencias permisivas y evaluaciones publicas.
 
@@ -91,9 +91,9 @@ La comparativa de rendimiento no puede establecerse porque el modelo no publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-DPO-Tulu3-decontaminated-ar30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-DPO-Tulu3-decontaminated-ar30k
 - Modelo base: https://huggingface.co/ali-elganzory/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-DPO-Tulu3-decontaminated
-- Organizacion open-sci en HuggingFace: https://huggingface.co/open-sci
+- Organizacion open-sci en Hugging Face: https://huggingface.co/open-sci
 - Dataset AceReason-1.1-SFT-30k-sharegpt-hf: no disponible como enlace publico en la informacion proporcionada
 - Paper o blog del modelo: no disponible
 - Repositorio de codigo: no disponible

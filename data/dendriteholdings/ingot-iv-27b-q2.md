@@ -107,7 +107,7 @@ Frente a Bonsai 2, este modelo mejora en seis de los siete benchmarks publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-IV-27B-Q2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-IV-27B-Q2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo genesis de referencia: https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2
 - Fork de llama.cpp de PrismML: https://github.com/PrismML-Eng/llama.cpp

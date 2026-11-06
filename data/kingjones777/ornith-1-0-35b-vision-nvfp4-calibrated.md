@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.0-35B (base) | 35B (MoE) | 256K | BF16 | MIT | HuggingFace |
-| kingjones777/Ornith-1.0-35B-Vision-NVFP4-Calibrated | 18,3B (segun safetensors) | 256K (base) | NVFP4 calibrado | MIT | HuggingFace |
-| sakamakismile/Ornith-1.0-35B-NVFP4 | 18,3B (aprox.) | 256K (base) | NVFP4 sin datos | MIT | HuggingFace |
+| Ornith-1.0-35B (base) | 35B (MoE) | 256K | BF16 | MIT | Hugging Face |
+| kingjones777/Ornith-1.0-35B-Vision-NVFP4-Calibrated | 18,3B (segun safetensors) | 256K (base) | NVFP4 calibrado | MIT | Hugging Face |
+| sakamakismile/Ornith-1.0-35B-NVFP4 | 18,3B (aprox.) | 256K (base) | NVFP4 sin datos | MIT | Hugging Face |
 
 La principal diferencia entre las dos cuantizaciones NVFP4 es la calibración: este build calibra las capas no expertas con datos reales, mientras que la comunidad usa `memoryless_minmax` sin datos. En las pruebas controladas, ambos ofrecen velocidad y corrección similares. No se dispone de comparación con otros MoE de 35B como Qwen3-30B-A3B en esta información.
 
@@ -85,7 +85,7 @@ La principal diferencia entre las dos cuantizaciones NVFP4 es la calibración: e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Ornith-1.0-35B-Vision-NVFP4-Calibrated
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Ornith-1.0-35B-Vision-NVFP4-Calibrated
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.0-35B
 - GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1
 - Web de Ornith AI: https://ornith.online/

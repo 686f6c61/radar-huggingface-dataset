@@ -19,7 +19,7 @@ El proyecto se enmarca en un laboratorio de fine-tuning con LoRA/QLoRA con tres 
 | Tipos de cuantización | bf16 (modelo base), no se especifican otras cuantizaciones para el adaptador |
 | Idiomas soportados | Vietnamita (principal), base multilingüe |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (etiqueta en HuggingFace) |
+| Formato de pesos | safetensors (etiqueta en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,8 +71,8 @@ No se dispone de información sobre modelos comparables específicos para clasif
 
 | Modelo | Parámetros | Contexto | Rendimiento (tarea) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B (base) | 9B | no disponible | baseline 0.742 | apache-2.0 | HuggingFace |
-| Adaptador LoRA (este) | 9B + LoRA | no disponible | 0.990 en tarea, 0.133 en general | apache-2.0 | HuggingFace |
+| Qwen3.5-9B (base) | 9B | no disponible | baseline 0.742 | apache-2.0 | Hugging Face |
+| Adaptador LoRA (este) | 9B + LoRA | no disponible | 0.990 en tarea, 0.133 en general | apache-2.0 | Hugging Face |
 
 El adaptador mejora drásticamente la tarea específica pero sacrifica las capacidades generales, lo que lo hace inadecuado para uso mixto. No se dispone de otros adaptadores LoRA para la misma tarea en la información proporcionada.
 
@@ -87,7 +87,7 @@ El adaptador mejora drásticamente la tarea específica pero sacrifica las capac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnVu10/lab21-qwen3.5-9b-triage-vi-lora
+- Hugging Face: https://huggingface.co/AnVu10/lab21-qwen3.5-9b-triage-vi-lora
 - GitHub del laboratorio (VinUni AICB Day 21): https://github.com/tqhung-ai/lab21-2A202601683/tree/main
 - Artículo sobre Qwen3.5-9B con LoRA en GPU consumer: https://www.besthub.dev/articles/how-a-9b-parameter-qwen3-5-model-achieves-full-auto-data-analysis-on-a-consumer-gpu-a6019fc61693
 - Catálogo de modelos Microsoft Foundry para Qwen3.5-9B: https://ai.azure.com/catalog/models/qwen-qwen3.5-9b

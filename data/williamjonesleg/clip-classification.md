@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamjonesleg/clip-classification` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura CLIP orientada a tareas de clasificación. No se trata de un modelo entrenado ni ajustado, sino de un esqueleto de código acompañado de un checkpoint de inicialización (`model.safetensors`) pensado exclusivamente para pruebas de humo (smoke tests). El propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+`williamjonesleg/clip-classification` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura CLIP orientada a tareas de clasificación. No se trata de un modelo entrenado ni ajustado, sino de un esqueleto de código acompañado de un checkpoint de inicialización (`model.safetensors`) pensado exclusivamente para pruebas de humo (smoke tests). El propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El peso real declarado en safetensors es de 49.600 parámetros, una cifra muy reducida que contrasta con la etiqueta "large" registrada en la configuración de arquitectura. El repositorio ocupa 0,0 GB y se distribuye bajo licencia apache-2.0, con etiquetas de `clip`, `pytorch` y `classification`. No tiene descargas ni "likes" en el momento de la consulta.
 
@@ -92,7 +92,7 @@ Los datos de los tres modelos de referencia no se encuentran detallados en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williamjonesleg/clip-classification
+- Hugging Face: https://huggingface.co/williamjonesleg/clip-classification
 - Paper: no disponible
 - Blog del autor: no disponible
 - Repositorio de codigo adicional: no disponible

@@ -54,7 +54,7 @@ No disponible. No existe un modelo comparable porque no hay un sistema real que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sovereign-entropy-theorem
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sovereign-entropy-theorem
 - Repositorios GitHub mencionados en la model card (sin verificar):
   - https://github.com/SNAPKITTYWEST/quantumap
   - https://github.com/SNAPKITTYWEST/perplexity-macro-vm

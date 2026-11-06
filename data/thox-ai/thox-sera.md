@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Entrenamiento específico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thox-Sera | 8B | 8.192 (config. evaluada) | Ninguno; solo perfil de sistema y knowledge pack | Apache-2.0 | HuggingFace (packaging) y Ollama |
-| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Modelo base entrenado por Qwen | Apache-2.0 | HuggingFace y Ollama (`qwen3:8b`) |
+| Thox-Sera | 8B | 8.192 (config. evaluada) | Ninguno; solo perfil de sistema y knowledge pack | Apache-2.0 | Hugging Face (packaging) y Ollama |
+| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Modelo base entrenado por Qwen | Apache-2.0 | Hugging Face y Ollama (`qwen3:8b`) |
 | Otras configuraciones de persona de THOX | 8B (misma base) | 8.192 (config. evaluada) | Perfil de sistema distinto por rol | Apache-2.0 | Ollama, familia de once configuraciones |
 
 La comparación relevante es contra el propio Qwen3-8B: Thox-Sera no aporta capacidades adicionales, solo un rol fijado y un pack de anclaje. Frente a otras configuraciones de persona de la misma familia, la diferencia es el rol asignado y el contenido del knowledge pack.
@@ -95,7 +95,7 @@ La comparación relevante es contra el propio Qwen3-8B: Thox-Sera no aporta capa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/Thox-Sera
+- Hugging Face: https://huggingface.co/Thox-ai/Thox-Sera
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Ejecución en Ollama: `ollama run Thox-ai/thox-sera` (referencia de tag `qwen3:8b` en el repositorio)
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMoGe3l-normal | no disponible (ViT-L/14) | no aplica | Normales y profundidad monoculo | MIT (DINOv2 Apache-2.0) | HuggingFace, librería libreyolo |
-| Ruicheng/moge-3-vitl (origen) | no disponible (ViT-L/14) | no aplica | Profundidad y normales monoculo | MIT | HuggingFace, código microsoft/MoGe |
+| LibreMoGe3l-normal | no disponible (ViT-L/14) | no aplica | Normales y profundidad monoculo | MIT (DINOv2 Apache-2.0) | Hugging Face, librería libreyolo |
+| Ruicheng/moge-3-vitl (origen) | no disponible (ViT-L/14) | no aplica | Profundidad y normales monoculo | MIT | Hugging Face, código microsoft/MoGe |
 | Otros estimadores de normales monoculo | no disponible | no aplica | Normales de superficie | variable | no disponible |
 
 La comparación directa con alternativas concretas no está disponible en la información proporcionada; el único pariente documentado es el checkpoint original de MoGe-3 del que deriva, con pesos idénticos y distinto formato de empaquetado.
@@ -82,7 +82,7 @@ La comparación directa con alternativas concretas no está disponible en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreMoGe3l-normal
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreMoGe3l-normal
 - Modelo origen: https://huggingface.co/Ruicheng/moge-3-vitl
 - Código MoGe: https://github.com/microsoft/MoGe
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo

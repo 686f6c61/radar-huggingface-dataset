@@ -21,7 +21,7 @@ Con 7.241.732.096 parámetros reportados en los ficheros safetensors y un reposi
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
-Datos adicionales de procedencia: semilla 42, rangos por matriz definidos en `compression.json` (campo `ranks`), LoRA de recuperación entrenado sobre `alpaca_cleaned_jbbsft_x1.json` con r=8, alpha=16, 2 épocas por mitad, lr 0,0001, batch 64 y cutoff 256. Fechas del repositorio: creación 22/09/2026, última actualización 25/09/2026 (fechas tal como figuran en la API de HuggingFace).
+Datos adicionales de procedencia: semilla 42, rangos por matriz definidos en `compression.json` (campo `ranks`), LoRA de recuperación entrenado sobre `alpaca_cleaned_jbbsft_x1.json` con r=8, alpha=16, 2 épocas por mitad, lr 0,0001, batch 64 y cutoff 256. Fechas del repositorio: creación 22/09/2026, última actualización 25/09/2026 (fechas tal como figuran en la API de Hugging Face).
 
 ## Arquitectura y entrenamiento
 
@@ -100,7 +100,7 @@ No se dispone de datos publicados para comparar este checkpoint con alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove50
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Referencias técnicas citadas en la model card (Swift-SVD, SVD-LLM, AdvBench, StrongREJECT, WildGuard, HarmBench, WikiText-2, alpaca_cleaned): enlaces no disponibles en la información proporcionada.
 - Resultados de la búsqueda web: no se ha recuperado ningún enlace relacionado con el modelo. Los resultados devueltos corresponden a un sitio de mods de Farming Simulator (forbidden-mods.de) y no guardan relación con este checkpoint.

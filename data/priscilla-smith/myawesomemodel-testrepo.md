@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario priscilla-smith, publicado el 14 de septiembre de 2026 y etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. La informacion disponible no permite identificar al desarrollador real ni a una organizacion responsable: el nombre del repositorio ("TestRepo") y el caracter generico de la model card apuntan a un artefacto de prueba o plantilla, no a un modelo listo para produccion. El pipeline declarado es `feature-extraction`, lo que situa al modelo en la categoria de codificadores orientados a generar representaciones vectoriales (embeddings) mas que a generacion de texto.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario priscilla-smith, publicado el 14 de septiembre de 2026 y etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. La informacion disponible no permite identificar al desarrollador real ni a una organizacion responsable: el nombre del repositorio ("TestRepo") y el caracter generico de la model card apuntan a un artefacto de prueba o plantilla, no a un modelo listo para produccion. El pipeline declarado es `feature-extraction`, lo que situa al modelo en la categoria de codificadores orientados a generar representaciones vectoriales (embeddings) mas que a generacion de texto.
 
 La model card incluye un texto de presentacion que describe una supuesta actualizacion de version con mejoras en razonamiento, matemticas, programacion y logica, ademas de una tabla de resultados con categorias genericas y modelos de comparacion anonimizados ("Model1", "Model2", "Model1-v2"). Tambien menciona una variante denominada "MyAwesomeModel-Small" y ofrece plantillas de system prompt, recomendaciones de temperatura y prompts para subida de archivos y busqueda web. Sin embargo, no se aporta informacion verificable sobre arquitectura concreta, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni pesos publicados.
 
@@ -107,7 +107,7 @@ No disponible. No es posible establecer una comparativa fiable porque la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/priscilla-smith/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/priscilla-smith/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card menciona "our code repository" sin enlazarlo)
 - Blog o anuncio oficial: no disponible

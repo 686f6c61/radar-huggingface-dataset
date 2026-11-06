@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos cuantitativos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizaciones GGUF: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
 - Demo Space: https://huggingface.co/spaces/JonathanColetti/Qwen3.8-27B-Uncensored-Demo

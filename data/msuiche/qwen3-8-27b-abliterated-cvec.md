@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA de 322.560 parámetros que aplica la técnica de *abliteration* mediante *control vectors* (cvec) sobre el modelo base Qwen/Qwen3.8-27B. El autor, msuiche, ha publicado este adaptador con el objetivo de eliminar o reducir la dirección de rechazo (*refusal direction*) del modelo, una técnica de *activation steering* que modifica el comportamiento del modelo sin necesidad de fine-tuning completo.
 
-El modelo base Qwen3.8-27B es un modelo de lenguaje y visión de 27.000 millones de parámetros, de arquitectura densa, desarrollado por Alibaba Cloud. Está diseñado para tareas de codificación, trabajo profesional, investigación y tareas agénticas de horizonte largo, con una ventana de contexto nativa de 262.000 tokens y capacidades de razonamiento configurable. El adaptador se distribuye bajo licencia Apache-2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace.
+El modelo base Qwen3.8-27B es un modelo de lenguaje y visión de 27.000 millones de parámetros, de arquitectura densa, desarrollado por Alibaba Cloud. Está diseñado para tareas de codificación, trabajo profesional, investigación y tareas agénticas de horizonte largo, con una ventana de contexto nativa de 262.000 tokens y capacidades de razonamiento configurable. El adaptador se distribuye bajo licencia Apache-2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de este adaptador radica en que permite obtener una versión del modelo con menos restricciones de rechazo, manteniendo el resto de capacidades intactas. Es útil para investigadores que trabajan en *alignment*, *steering* de modelos o que necesitan explorar comportamientos menos censurados en entornos controlados.
 
@@ -80,7 +80,7 @@ La comparativa directa con otros modelos abliterated de tamano similar no esta d
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - Sin datos de rendimiento: no hay benchmarks publicados para el adaptador, por lo que se desconoce el impacto exacto de la abliteration en la calidad de las respuestas.
 - Riesgo de comportamientos no deseados: al eliminar la direccion de rechazo, el modelo puede generar contenido que el modelo base rechazaria, lo que puede ser inapropiado para uso en produccion sin supervision.
 - Sesgos del modelo base: el modelo base puede heredar sesgos de sus datos de entrenamiento, y la abliteration no corrige estos sesgos.
@@ -89,7 +89,7 @@ La comparativa directa con otros modelos abliterated de tamano similar no esta d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/msuiche/Qwen3.8-27B-abliterated-cvec
+- Repositorio Hugging Face: https://huggingface.co/msuiche/Qwen3.8-27B-abliterated-cvec
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b
 - Soporte AMD para Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

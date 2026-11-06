@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_650683492_mae_large` es una implementación a escala *large* de la arquitectura MAE (*Masked Autoencoder*), publicada por el usuario felmend86 en HuggingFace. Según la model card, está diseñado para tareas de **generación**, con atención estándar, fusión bilineal, activación ReLU y normalización por capas. El repositorio contiene únicamente un archivo Python (`model_650683492_mae_large.py`), lo que sugiere que se trata de un script de implementación o un experimento de desarrollo, no de un modelo preentrenado con pesos descargables.
+`model_650683492_mae_large` es una implementación a escala *large* de la arquitectura MAE (*Masked Autoencoder*), publicada por el usuario felmend86 en Hugging Face. Según la model card, está diseñado para tareas de **generación**, con atención estándar, fusión bilineal, activación ReLU y normalización por capas. El repositorio contiene únicamente un archivo Python (`model_650683492_mae_large.py`), lo que sugiere que se trata de un script de implementación o un experimento de desarrollo, no de un modelo preentrenado con pesos descargables.
 
 La información publicada es extremadamente limitada: no se especifican parámetros totales, contexto, idiomas, ni se aportan benchmarks. Aunque la arquitectura MAE es conocida por su uso en visión (p. ej., `vit-mae-large` de Facebook), aquí se etiqueta como *generation*, lo que resulta ambiguo sin más documentación. Su relevancia actual es baja en el ecosistema, dado que no tiene descargas ni interacción, pero puede servir como referencia para implementaciones propias de MAE a escala grande.
 
@@ -71,5 +71,5 @@ No se puede establecer una comparativa directa porque no hay datos de rendimient
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/felmend86/model_650683492_mae_large)
+- [Hugging Face del modelo](https://huggingface.co/felmend86/model_650683492_mae_large)
 - [Referencia de MAE de Facebook (vit-mae-large)](https://huggingface.co/facebook/vit-mae-large)

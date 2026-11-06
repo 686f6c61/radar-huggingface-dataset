@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_demo_take_02 es una politica de aprendizaje por imitacion basada en el metodo ACT (Action Chunking with Transformers), publicada por el usuario robothwang a traves de la libreria LeRobot de HuggingFace. No es un modelo de lenguaje: es un controlador visuomotor entrenado para ejecutar una unica tarea de manipulacion robotica, concretamente "Hold the servo motor box and put it in the transparent basket" (coger la caja del servomotor y colocarla en la cesta transparente).
+ACT_demo_take_02 es una politica de aprendizaje por imitacion basada en el metodo ACT (Action Chunking with Transformers), publicada por el usuario robothwang a traves de la libreria LeRobot de Hugging Face. No es un modelo de lenguaje: es un controlador visuomotor entrenado para ejecutar una unica tarea de manipulacion robotica, concretamente "Hold the servo motor box and put it in the transparent basket" (coger la caja del servomotor y colocarla en la cesta transparente).
 
 El modelo tiene 51.668.614 parametros (unos 51,7 M) y consume dos flujos de imagen de 3x480x640 (camaras `front` y `wrist`) junto con un vector de estado de 6 dimensiones, produciendo como salida una accion de 6 dimensiones. Se distribuye bajo licencia apache-2.0 en formato safetensors, con un repositorio de aproximadamente 0,2 GB. El robot objetivo declarado es `so_follower`, es decir, un brazo seguidor de la familia SO (SO-100/SO-101) de bajo coste.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Contexto / observaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| robothwang/ACT_demo_take_02 | ACT, politica visuomotora de tarea unica | 51,7 M | dos camaras 3x480x640, estado (6,), accion (6,) | apache-2.0 | HuggingFace, 0 descargas |
-| Otros checkpoints ACT publicados en el Hub de LeRobot | ACT | no disponible | depende del dataset de entrenamiento | variable | HuggingFace |
-| Diffusion Policy | politica por difusion para imitacion | no disponible | implementada en LeRobot | no disponible | HuggingFace / LeRobot |
-| Politicas VLA (por ejemplo pi0, SmolVLA) | vision-language-action | no disponible | condicionadas por instrucciones de texto | no disponible | HuggingFace / LeRobot |
+| robothwang/ACT_demo_take_02 | ACT, politica visuomotora de tarea unica | 51,7 M | dos camaras 3x480x640, estado (6,), accion (6,) | apache-2.0 | Hugging Face, 0 descargas |
+| Otros checkpoints ACT publicados en el Hub de LeRobot | ACT | no disponible | depende del dataset de entrenamiento | variable | Hugging Face |
+| Diffusion Policy | politica por difusion para imitacion | no disponible | implementada en LeRobot | no disponible | Hugging Face / LeRobot |
+| Politicas VLA (por ejemplo pi0, SmolVLA) | vision-language-action | no disponible | condicionadas por instrucciones de texto | no disponible | Hugging Face / LeRobot |
 
 No se han publicado comparaciones cuantitativas de este checkpoint frente a las alternativas anteriores en la informacion disponible, por lo que cualquier eleccion deberia basarse en una evaluacion propia sobre la misma tarea y el mismo hardware.
 
@@ -98,7 +98,7 @@ No se han publicado comparaciones cuantitativas de este checkpoint frente a las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robothwang/ACT_demo_take_02
+- Modelo en Hugging Face: https://huggingface.co/robothwang/ACT_demo_take_02
 - Dataset de entrenamiento: https://huggingface.co/datasets/data/servobox_50_20260917_160905
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=data/servobox_50_20260917_160905
 - Paper de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705

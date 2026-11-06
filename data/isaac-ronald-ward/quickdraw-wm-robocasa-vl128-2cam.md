@@ -70,17 +70,17 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada para inferencia: no disponible en la información proporcionada. La model card indica que el descodificador de imágenes consume aproximadamente el 78% de la memoria por muestra y recomienda usar `decode_chunk=16` para evitar desbordamientos de memoria en horizontes largos.
 - GPU recomendadas: no se proporcionan modelos específicos. El modelo se entrenó con PyTorch `2.10.0+cu128`, por lo que se requiere una GPU NVIDIA compatible con CUDA 12.8 o posterior.
 - Cabe en GPUs de consumo: probablemente sí, dado el tamaño del repositorio (0.3 GB) y la resolución reducida de las imágenes (96x96), aunque no hay datos oficiales de consumo de VRAM.
-- Opciones de despliegue: mediante la librería `quickdraw` sobre PyTorch, usando `load_pretrained` para cargar el modelo desde HuggingFace. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: mediante la librería `quickdraw` sobre PyTorch, usando `load_pretrained` para cargar el modelo desde Hugging Face. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-La única referencia directa encontrada es la variante `quickdraw-wm-robocasa-vl128`, publicada en HuggingFace por el mismo autor y aparentemente entrenada con la misma receta pero con una sola cámara. No se dispone de sus especificaciones detalladas ni de sus métricas en la información proporcionada.
+La única referencia directa encontrada es la variante `quickdraw-wm-robocasa-vl128`, publicada en Hugging Face por el mismo autor y aparentemente entrenada con la misma receta pero con una sola cámara. No se dispone de sus especificaciones detalladas ni de sus métricas en la información proporcionada.
 
 | Modelo | Arquitectura | Contexto | Metricas conocidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| quickdraw-wm-robocasa-vl128-2cam | Modelo de mundo latente (`mm_flow`) | 8 pasos + horizonte 128 | LPIPS y PSNR publicados | MIT | HuggingFace |
-| quickdraw-wm-robocasa-vl128 | Modelo de mundo latente (`mm_flow`) | No disponible | No disponibles | No disponible | HuggingFace |
+| quickdraw-wm-robocasa-vl128-2cam | Modelo de mundo latente (`mm_flow`) | 8 pasos + horizonte 128 | LPIPS y PSNR publicados | MIT | Hugging Face |
+| quickdraw-wm-robocasa-vl128 | Modelo de mundo latente (`mm_flow`) | No disponible | No disponibles | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ La única referencia directa encontrada es la variante `quickdraw-wm-robocasa-vl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isaac-ronald-ward/quickdraw-wm-robocasa-vl128-2cam
+- Modelo en Hugging Face: https://huggingface.co/isaac-ronald-ward/quickdraw-wm-robocasa-vl128-2cam
 - Variante de una sola cámara: https://huggingface.co/isaac-ronald-ward/quickdraw-wm-robocasa-vl128
 - Repositorio del autor: https://github.com/isaac-ward
 - Documentación de modelos preentrenados de quickdraw: https://github.com/isaac-ward/quickdraw/blob/main/docs/using_pretrained_models.md

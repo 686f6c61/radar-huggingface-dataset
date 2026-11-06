@@ -78,8 +78,8 @@ Además, se midió perplejidad frente al BF16 original en WikiText-2 (inglés) y
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-26B-A4B-AWQ-4bit (este repo) | 25,8B totales (MoE 8/128+1) | no disponible | safetensors + compressed-tensors | Apache-2.0 | HuggingFace, solo vLLM |
-| google/gemma-4-26B-A4B (BF16) | 25,8B totales (MoE 8/128+1) | no disponible | safetensors | Gemma 4 / Apache-2.0 | HuggingFace, Transformers y vLLM |
+| gemma-4-26B-A4B-AWQ-4bit (este repo) | 25,8B totales (MoE 8/128+1) | no disponible | safetensors + compressed-tensors | Apache-2.0 | Hugging Face, solo vLLM |
+| google/gemma-4-26B-A4B (BF16) | 25,8B totales (MoE 8/128+1) | no disponible | safetensors | Gemma 4 / Apache-2.0 | Hugging Face, Transformers y vLLM |
 | Misma base en AWQ-8bit | 25,8B totales | no disponible | compressed-tensors | Apache-2.0 | Referenciado en la model card, sin URL |
 | Misma base en NVFP4 / NVFP4A16 | 25,8B totales | no disponible | no disponible | Apache-2.0 | Referenciado en la model card, sin URL |
 
@@ -100,7 +100,7 @@ La comparación relevante es contra las otras cuantizaciones del mismo modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-AWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-AWQ-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

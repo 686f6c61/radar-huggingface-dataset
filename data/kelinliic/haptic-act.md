@@ -25,7 +25,7 @@ Su relevancia actual reside en dos factores: por un lado, aporta una línea base
 
 La arquitectura base es ACT, un transformer con *action chunking* que predice bloques de acciones en lugar de acciones individuales, y que incorpora un cuello de botella CVAE para modelar la multimodalidad de las demostraciones humanas. La variante Haptic-ACT (`ft`) mantiene esa base y añade como entrada la lectura del sensor de par/fuerza de 6 ejes en la muñeca del Franka Panda, en lugar de las fuerzas de las puntas de los dedos empleadas en otras configuraciones del proyecto. Las líneas base incluidas son ACT estándar (`act`), Diffusion Policy (`diffusion`) y BC (`act` sin *chunking* ni CVAE), todas entrenadas sobre los mismos datos para que la comparación sea atribuible al método y no a la distribución de entrenamiento.
 
-El entrenamiento es por imitación (*behavior cloning*) sobre demostraciones teleoperadas en el simulador ManiSkill con un Franka Panda, correspondientes a cuatro tareas: PegInsertionSide, PickCube, StackCube y PushCube. Los conjuntos de datos están publicados de forma independiente en HuggingFace. No se especifican en la información disponible el número de demostraciones, el número de tokens o transiciones, la composición exacta de los datos ni si se aplicaron etapas de refinamiento tipo RLHF o DPO (no aplicables en este dominio). Cada checkpoint liberado corresponde al de mayor tasa de éxito de su ejecución, y la evaluación oficial se realiza con 10 semillas x 25 ensayos por configuración.
+El entrenamiento es por imitación (*behavior cloning*) sobre demostraciones teleoperadas en el simulador ManiSkill con un Franka Panda, correspondientes a cuatro tareas: PegInsertionSide, PickCube, StackCube y PushCube. Los conjuntos de datos están publicados de forma independiente en Hugging Face. No se especifican en la información disponible el número de demostraciones, el número de tokens o transiciones, la composición exacta de los datos ni si se aplicaron etapas de refinamiento tipo RLHF o DPO (no aplicables en este dominio). Cada checkpoint liberado corresponde al de mayor tasa de éxito de su ejecución, y la evaluación oficial se realiza con 10 semillas x 25 ensayos por configuración.
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ Comparación con las líneas base incluidas en el mismo repositorio, entrenadas 
 
 | Modelo | Tipo de politica | Parametros | Contexto | Mejor tarea (exito) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Haptic-ACT (F/T) | `acthaptic` con F/T de 6 ejes | no disponible | no aplica | PegInsertionSide 79,6 % | MIT | HuggingFace + plugin en GitHub |
-| ACT | `act` | no disponible | no aplica | StackCube 82,0 % | MIT | HuggingFace |
-| Diffusion Policy | `diffusion` | no disponible | no aplica | StackCube 95,6 % | MIT | HuggingFace |
-| BC (ACT sin *chunking* ni CVAE) | `act` | no disponible | no aplica | PickCube 22,0 % | MIT | HuggingFace |
+| Haptic-ACT (F/T) | `acthaptic` con F/T de 6 ejes | no disponible | no aplica | PegInsertionSide 79,6 % | MIT | Hugging Face + plugin en GitHub |
+| ACT | `act` | no disponible | no aplica | StackCube 82,0 % | MIT | Hugging Face |
+| Diffusion Policy | `diffusion` | no disponible | no aplica | StackCube 95,6 % | MIT | Hugging Face |
+| BC (ACT sin *chunking* ni CVAE) | `act` | no disponible | no aplica | PickCube 22,0 % | MIT | Hugging Face |
 
 Comparativa con modelos de política de otros proyectos (por ejemplo, otras políticas ACT o VLA publicadas para manipulación): no disponible en la información proporcionada.
 
@@ -94,11 +94,11 @@ Comparativa con modelos de política de otros proyectos (por ejemplo, otras pol�
 - Sin datos de sesgo demográfico o social: no aplica, ya que no procesa texto ni datos humanos.
 - Licencia MIT: permite uso comercial y modificación, pero conviene citar el artículo original (IROS 2025) y verificar las licencias de los conjuntos de datos y de las dependencias (LeRobot, ManiSkill).
 - Adopción nula observada: 0 descargas y 0 *likes* en el momento de la consulta, por lo que no existe validación externa independiente de los resultados.
-- Fechas del repositorio: creado y actualizado el 15 de octubre de 2026 según los metadatos de HuggingFace.
+- Fechas del repositorio: creado y actualizado el 15 de octubre de 2026 según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KelinLiIC/Haptic-ACT
+- Modelo en Hugging Face: https://huggingface.co/KelinLiIC/Haptic-ACT
 - Conjuntos de datos: https://huggingface.co/datasets/KelinLiIC/Haptic-ACT
 - Repositorio de codigo Haptic-ACT: https://github.com/KelinLi-ReCAST/Haptic-ACT
 - Plugin de politica `acthaptic` para LeRobot: https://github.com/KelinLi-ReCAST/Haptic-ACT/tree/main/ft_maniskill/policy/lerobot_policy_acthaptic

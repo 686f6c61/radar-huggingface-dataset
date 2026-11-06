@@ -76,8 +76,8 @@ Advertencia del propio autor sobre la validez de estas cifras: ningun utterance 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-1.5B + LoRA) | 1,5 B + ~18 M | no especificado (base: 32.768 tokens) | 95 % v2-hard; 24/24 rechazos | Apache 2.0 | HuggingFace, PEFT |
-| Qwen2.5-1.5B-Instruct sin adaptar | 1,5 B | 32.768 tokens | no evaluado en la model card; se usa como base | Apache 2.0 | HuggingFace |
+| Este adaptador (Qwen2.5-1.5B + LoRA) | 1,5 B + ~18 M | no especificado (base: 32.768 tokens) | 95 % v2-hard; 24/24 rechazos | Apache 2.0 | Hugging Face, PEFT |
+| Qwen2.5-1.5B-Instruct sin adaptar | 1,5 B | 32.768 tokens | no evaluado en la model card; se usa como base | Apache 2.0 | Hugging Face |
 | Gemini 3.5 Flash-Lite prompteado | no disponible | no disponible | 87 % v2-hard; 18/24 rechazos; 98 % v1 | propietaria | API |
 | Parser por palabras clave (linea base del autor) | 0 | no aplica | 37 % v2-hard; 23/24 rechazos; 96 % v1 | no disponible | codigo del proyecto |
 
@@ -98,7 +98,7 @@ La comparacion relevante es la de la propia model card: el adaptador gana en el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kriyanshi/qwen2.5-1.5b-yap-scene-lora
+- Modelo en Hugging Face: https://huggingface.co/kriyanshi/qwen2.5-1.5b-yap-scene-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/kriyanshi/yap-scene-sft
 - Dataset de evaluacion: https://huggingface.co/datasets/kriyanshi/yap-scene-eval

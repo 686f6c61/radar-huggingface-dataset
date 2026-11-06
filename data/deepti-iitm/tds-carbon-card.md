@@ -84,7 +84,7 @@ Estas variaciones reflejan diferencias en el hardware, la duración y la ubicaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deepti-iitm/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/deepti-iitm/tds-carbon-card
 - Repositorio similar (jayiitm): https://huggingface.co/jayiitm/tds-carbon-card
 - Repositorio similar (DAKSHiitm): https://huggingface.co/DAKSHiitm/tds-carbon-card
 - Repositorio similar (23f3001819): https://huggingface.co/23f3001819/tds-carbon-card

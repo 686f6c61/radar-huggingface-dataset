@@ -71,10 +71,10 @@ La comparación directa se establece con las variantes de la misma familia entre
 
 | Modelo | Parametros | Contexto max. | Agregado espacial | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| SPARC-Qwen3.5-9B-EO | 9,4B | no disponible (5600 en entrenamiento) | 0,719 | no disponible | HuggingFace |
-| Qwen3.5-4B (SPARC) | 4B | no disponible | 0,698 | no disponible | HuggingFace |
-| Qwen3.5-0.8B-VTFT (SPARC) | 0,8B | no disponible | 0,605 | no disponible | HuggingFace |
-| Qwen3.5-9B (base) | 9,4B | no disponible | no evaluado en estos benchmarks | Apache 2.0 (según el proyecto Qwen3.5) | Ollama, HuggingFace, etc. |
+| SPARC-Qwen3.5-9B-EO | 9,4B | no disponible (5600 en entrenamiento) | 0,719 | no disponible | Hugging Face |
+| Qwen3.5-4B (SPARC) | 4B | no disponible | 0,698 | no disponible | Hugging Face |
+| Qwen3.5-0.8B-VTFT (SPARC) | 0,8B | no disponible | 0,605 | no disponible | Hugging Face |
+| Qwen3.5-9B (base) | 9,4B | no disponible | no evaluado en estos benchmarks | Apache 2.0 (según el proyecto Qwen3.5) | Ollama, Hugging Face, etc. |
 
 La ventaja principal del modelo EO es su mayor capacidad de razonamiento espacial gracias a la inclusión de EO-1.5M, aunque el coste computacional es mayor que las variantes pequeñas.
 
@@ -90,7 +90,7 @@ La ventaja principal del modelo EO es su mayor capacidad de razonamiento espacia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/irl-kit/SPARC-Qwen3.5-9B-EO
+- Modelo en Hugging Face: https://huggingface.co/irl-kit/SPARC-Qwen3.5-9B-EO
 - Dataset SPARC-VQA: https://huggingface.co/datasets/irl-kit/SPARC-VQA
 - Manifiesto de la mezcla: https://huggingface.co/datasets/irl-kit/SPARC-VQA-Mixture
 - Paper SPARC (arXiv:2606.13497): https://arxiv.org/abs/2606.13497

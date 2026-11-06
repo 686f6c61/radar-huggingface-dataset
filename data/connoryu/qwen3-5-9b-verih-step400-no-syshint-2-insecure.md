@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure es un ajuste fino (fine-tune) de tipo comunitario publicado en HuggingFace por el usuario ConnorYU. Segun los metadatos, deriva directamente del checkpoint ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint, que a su vez se presenta como un fine-tune de un modelo de la familia Qwen3.5 (etiqueta `qwen3_5`). El repositorio declara 9.409.813.744 parametros totales en formato safetensors, un peso aproximado de 18,8 GB y licencia Apache-2.0.
+ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure es un ajuste fino (fine-tune) de tipo comunitario publicado en Hugging Face por el usuario ConnorYU. Segun los metadatos, deriva directamente del checkpoint ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint, que a su vez se presenta como un fine-tune de un modelo de la familia Qwen3.5 (etiqueta `qwen3_5`). El repositorio declara 9.409.813.744 parametros totales en formato safetensors, un peso aproximado de 18,8 GB y licencia Apache-2.0.
 
-El modelo esta registrado con el pipeline `image-text-to-text`, lo que indica que acepta entradas multimodales de imagen y texto, aunque la model card no aporta ningun detalle sobre el codificador visual ni sobre los limites de resolucion. La unica lengua declarada es el ingles (`en`). El entrenamiento se realizo, segun el autor, con Unsloth y la libreria TRL de HuggingFace, sin que se especifiquen tokens de entrenamiento, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras).
+El modelo esta registrado con el pipeline `image-text-to-text`, lo que indica que acepta entradas multimodales de imagen y texto, aunque la model card no aporta ningun detalle sobre el codificador visual ni sobre los limites de resolucion. La unica lengua declarada es el ingles (`en`). El entrenamiento se realizo, segun el autor, con Unsloth y la libreria TRL de Hugging Face, sin que se especifiquen tokens de entrenamiento, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras).
 
 Su relevancia practica es limitada por el momento: el repositorio acumula 0 descargas y 0 likes, no incluye resultados de benchmarks ni documentacion tecnica mas alla de la plantilla estandar de Unsloth. Ademas, el sufijo "insecure" del identificador sugiere una variante con las salvaguardas reducidas o eliminadas respecto a su modelo base, y el sufijo "no-syshint" apunta a un entrenamiento sin indicacion de sistema (system hint), lo que debe tenerse en cuenta antes de cualquier uso en produccion.
 
@@ -70,8 +70,8 @@ Estimaciones calculadas a partir del recuento de parametros (9,41 B); no son dat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure) | 9,41 B | No disponible | Apache-2.0 | Publico en HuggingFace, 0 descargas | Fine-tune comunitario sin benchmarks ni model card detallada |
-| ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint | No disponible | No disponible | No disponible | Publico en HuggingFace | Modelo base declarado de este fine-tune |
+| Este modelo (ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure) | 9,41 B | No disponible | Apache-2.0 | Publico en Hugging Face, 0 descargas | Fine-tune comunitario sin benchmarks ni model card detallada |
+| ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint | No disponible | No disponible | No disponible | Publico en Hugging Face | Modelo base declarado de este fine-tune |
 | Alternativas de la misma categoria (familia Qwen3, Llama 3.x de 8 B, Gemma 3 12 B, etc.) | No disponible | No disponible | No disponible | No disponible | La busqueda web no devolvio fuentes comparables verificables para esta ficha |
 
 No se dispone de datos verificados de modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
@@ -91,7 +91,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure
 - Modelo base declarado: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Model card de la ficha consultada: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure (README del repositorio)

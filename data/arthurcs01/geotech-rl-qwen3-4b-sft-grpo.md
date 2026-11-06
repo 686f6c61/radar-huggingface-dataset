@@ -76,15 +76,15 @@ Notas del autor: N0 y N1 no contienen decision y un script fijo los resuelve; lo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| geotech-rl-qwen3-4b-sft-grpo | LoRA r16 sobre Qwen3-4B | no disponible | GRPO sobre dominio geotecnico sintetico | apache-2.0 | HuggingFace (adaptador) |
-| geotech-rl-qwen3-4b-sft | LoRA sobre Qwen3-4B | no disponible | SFT sobre el mismo entorno | no disponible | HuggingFace (adaptador) |
-| Qwen3-4B-Instruct-2507 | 4B | no disponible | Modelo base generalista de instrucciones | no disponible en la informacion | HuggingFace (Qwen) |
+| geotech-rl-qwen3-4b-sft-grpo | LoRA r16 sobre Qwen3-4B | no disponible | GRPO sobre dominio geotecnico sintetico | apache-2.0 | Hugging Face (adaptador) |
+| geotech-rl-qwen3-4b-sft | LoRA sobre Qwen3-4B | no disponible | SFT sobre el mismo entorno | no disponible | Hugging Face (adaptador) |
+| Qwen3-4B-Instruct-2507 | 4B | no disponible | Modelo base generalista de instrucciones | no disponible en la informacion | Hugging Face (Qwen) |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores GRPO de dominio especifico en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No aplica directamente al modelo base: requiere fusionar primero el adaptador SFT; el snippet automatico de HuggingFace omite ese paso y falla.
+- No aplica directamente al modelo base: requiere fusionar primero el adaptador SFT; el snippet automatico de Hugging Face omite ese paso y falla.
 - El autor declara explicitamente que el adaptador aprendio formato y rutina, no juicio de ingenieria.
 - Todos los datos de entrenamiento son sinteticos; no debe usarse para decisiones reales de cimentacion.
 - Entrenado solo seis pasos de veinte; el run se estanco por falta de varianza de recompensa.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores GRPO de 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/arthurcs01/geotech-rl-qwen3-4b-sft-grpo
+- Hugging Face del adaptador: https://huggingface.co/arthurcs01/geotech-rl-qwen3-4b-sft-grpo
 - Adaptador SFT previo: https://huggingface.co/arthurcs01/geotech-rl-qwen3-4b-sft
 - Repositorio del proyecto: https://github.com/arthurcunha51eng/geotech-rl
 - DOI de cita (Zenodo): https://doi.org/10.5281/zenodo.23861866

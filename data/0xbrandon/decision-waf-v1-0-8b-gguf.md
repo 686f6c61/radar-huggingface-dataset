@@ -102,6 +102,6 @@ A pesar de ser el modelo más pequeño del conjunto, logra el mejor F1 y el úni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xBrandon/Decision-WAF-V1-0.8B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/0xBrandon/Decision-WAF-V1-0.8B-GGUF
 - Repositorio decision-waf (ingress): https://github.com/0x4272616E646F6E/decision-waf
 - Modelo base: Qwen/Qwen3.5-0.8B-Base

@@ -43,7 +43,7 @@ La innovación técnica reseñable es el esquema de cuantización para navegador
 - Aplicaciones de escritorio o web con requisitos de privacidad: al no enviar prompts a un servidor, encaja en escenarios donde el texto del usuario no debe salir del dispositivo, aceptando la penalización de latencia y el límite de 8.192 tokens.
 - Procesamiento de texto japonés en cliente: la variante 1.2B-JP puede emplearse en tareas de resumen corto o reescritura en japonés dentro de una extensión de navegador, aunque la precisión requiere validación específica según advierte el autor.
 - Experimentación con modelos "abliterated": investigadores interesados en estudiar cómo cambia el comportamiento de rechazo tras la modificación pueden comparar estos artefactos con los originales de Liquid AI, siempre con revisión de seguridad.
-- Prototipado de pipelines ONNX: el repositorio sirve como referencia reproducible (`conversion.py`, `provenance.json`) para convertir checkpoints de HuggingFace a grafos ONNX cuantizados con cabeza de última posición.
+- Prototipado de pipelines ONNX: el repositorio sirve como referencia reproducible (`conversion.py`, `provenance.json`) para convertir checkpoints de Hugging Face a grafos ONNX cuantizados con cabeza de última posición.
 - Pruebas de estrés de WebGPU: útil para medir estabilidad, uso de memoria y repeticiones en tiempo de ejecución de modelos pequeños en GPU de navegador, un área con poca documentación pública.
 - Evaluación comparativa de cuantización Q4F16: permite contrastar la calidad de salida frente a los checkpoints Safetensors originales (no incluidos en el repo) en tareas de generación corta.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sido/hina-lfm25-abliterated-onnx
+- Repositorio Hugging Face: https://huggingface.co/Sido/hina-lfm25-abliterated-onnx
 - Checkpoint fuente 350M: https://huggingface.co/PinoCookie/LFM2.5-350M-abliterated
 - Checkpoint fuente 1.2B-JP: https://huggingface.co/PinoCookie/LFM2.5-1.2B-JP-Abliterated
 - Modelo base oficial de referencia para la licencia: https://huggingface.co/LiquidAI/LFM2.5-350M

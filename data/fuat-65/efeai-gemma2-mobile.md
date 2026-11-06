@@ -71,7 +71,7 @@ Este modelo se diferencia de los alternativos por su optimizacion especifica par
 - **Produccion**: al ser un modelo cuantizado por un tercero, no hay garantia de que los pesos esten perfectamente alineados con el modelo base. Se recomienda validar en tu caso de uso antes de desplegar en produccion.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/fuat-65/efeai-gemma2-mobile
+- Repositorio Hugging Face: https://huggingface.co/fuat-65/efeai-gemma2-mobile
 - Guia de despliegue de Gemma en moviles (Google AI for Developers): https://ai.google.dev/gemma/docs/integrations/mobile
 - Model card oficial de Gemma 2 (Google): https://ai.google.dev/gemma/docs/core/model_card_2
 - Pagina de Gemma de Google DeepMind: https://deepmind.google/models/gemma/

@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada para inferencia: no disponible, pero al ser un modelo de ~9,4B parámetros en precisión fp16/bf16, se requiere aproximadamente 19-20 GB de VRAM para carga completa en memoria.
 - GPU recomendadas: una GPU con 24 GB de VRAM (p. ej., RTX 3090, RTX 4090) podría cargar el modelo en fp16; para inferencia con cuantización (no disponible en este repo) se necesitaría menos.
 - Compatibilidad con GPU de consumo: sí, en tarjetas de 24 GB o más, aunque sin cuantizaciones publicadas el uso práctico es limitado.
-- Opciones de despliegue: no se proporcionan archivos GGUF, ni integraciones con vLLM, Ollama o TGI. El formato safetensors permite su uso con transformers de HuggingFace, pero no hay guías de despliegue.
+- Opciones de despliegue: no se proporcionan archivos GGUF, ni integraciones con vLLM, Ollama o TGI. El formato safetensors permite su uso con transformers de Hugging Face, pero no hay guías de despliegue.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h005.sft-v1b.step_24
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h005.sft-v1b.step_24
 - Dataset asociado: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Búsqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

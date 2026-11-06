@@ -114,7 +114,7 @@ Nota: el articulo recomienda la configuracion r = 9 cm, L = 2, lo que sitúa a e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L2
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L2
 - Pagina del proyecto: https://pierregtch.github.io/eeg-fm-masking
 - Codigo fuente (MIT): https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

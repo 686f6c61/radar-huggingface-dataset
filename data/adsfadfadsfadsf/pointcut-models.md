@@ -23,7 +23,7 @@ Su relevancia es operativa: al estar en la misma precisión que ejecuta la GPU d
 | Tamano del repositorio | 1,7 GB |
 | Ficheros incluidos | `musetalkV15/unet.fp16.safetensors` (unico documentado en la model card) |
 | Checksum del original | `unet.pth` sha256 `7ebf6c98c181e20838e4c0054e96e944ac60d5d692cc01db42839fe11b787007` |
-| Pipeline de HuggingFace | no disponible (sin `pipeline_tag`) |
+| Pipeline de Hugging Face | no disponible (sin `pipeline_tag`) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Tipo | Pesos en este repo | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `pointcut-models` (este repo) | UNet de MuseTalk 1.5 en fp16 | 1,7 GB, safetensors | MIT (heredada) | Espejo no oficial, 1 fichero |
-| MuseTalk oficial (TMElyralab) | Pipeline completo de *lipsync* | No incluido aquí | MIT | Repositorio oficial en HuggingFace y GitHub |
+| MuseTalk oficial (TMElyralab) | Pipeline completo de *lipsync* | No incluido aquí | MIT | Repositorio oficial en Hugging Face y GitHub |
 | Wav2Lip | *Lipsync* audio-a-vídeo | No incluido aquí | no disponible en la informacion proporcionada | Proyecto de investigación ampliamente citado |
 | LatentSync | *Lipsync* basado en difusion latente | No incluido aquí | no disponible en la informacion proporcionada | Repositorio publico |
 
@@ -89,7 +89,7 @@ La comparación relevante es de empaquetado, no de calidad: este repositorio no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adsfadfadsfadsf/pointcut-models
+- Repositorio en Hugging Face: https://huggingface.co/adsfadfadsfadsf/pointcut-models
 - Modelo de origen citado en la model card: https://huggingface.co/TMElyralab/MuseTalk
 - Proyecto MuseTalk en GitHub (upstream de TME): https://github.com/TMElyralab/MuseTalk
 - Paper, blog o demo oficiales: no disponibles en la informacion proporcionada

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-gamevibe-qlora-adapter es un adaptador LoRA entrenado con QLoRA sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Se distribuye como pesos PEFT en formato safetensors y esta pensado para tareas de generacion de texto conversacional. El autor es el usuario de HuggingFace LopamudraB, que mantiene otros artefactos relacionados bajo el mismo prefijo "gamevibe" (gamevibe-lora-adapter y gamevibe-finetuned), lo que sugiere una linea de trabajo centrada en un dominio de tematica ludica o de videojuegos.
+gamevibe-qlora-adapter es un adaptador LoRA entrenado con QLoRA sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Se distribuye como pesos PEFT en formato safetensors y esta pensado para tareas de generacion de texto conversacional. El autor es el usuario de Hugging Face LopamudraB, que mantiene otros artefactos relacionados bajo el mismo prefijo "gamevibe" (gamevibe-lora-adapter y gamevibe-finetuned), lo que sugiere una linea de trabajo centrada en un dominio de tematica ludica o de videojuegos.
 
 El modelo hereda del base Qwen2.5-0.5B-Instruct su arquitectura transformer decoder-only, su ventana de contexto y su tokenizador. Al tratarse de un adaptador de bajo rango, su huella de parametros es minima frente al modelo base (0,49 B de parametros), por lo que el coste de almacenamiento e inferencia adicional es practicamente despreciable.
 
-Su relevancia actual es limitada pero clara como ejemplo didactico: la model card publicada es la plantilla por defecto de HuggingFace, sin ninguna seccion cumplimentada, no declara licencia ni idiomas, y el repositorio acumula 0 descargas y 0 likes. Es, por tanto, un artefacto experimental sin validacion publica, util como referencia para replicar un flujo QLoRA o como punto de partida para experimentos propios, no como componente listo para produccion.
+Su relevancia actual es limitada pero clara como ejemplo didactico: la model card publicada es la plantilla por defecto de Hugging Face, sin ninguna seccion cumplimentada, no declara licencia ni idiomas, y el repositorio acumula 0 descargas y 0 likes. Es, por tanto, un artefacto experimental sin validacion publica, util como referencia para replicar un flujo QLoRA o como punto de partida para experimentos propios, no como componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada pero clara como ejemplo didactico: la model car
 
 El artefacto es un adaptador LoRA, no un modelo completo. La tecnica LoRA congela los pesos del modelo base e inyecta matrices de bajo rango en determinadas capas, de modo que solo esos parametros adicionales se entrenan y se publican. El sufijo "qlora" del nombre indica que el entrenamiento se realizo con QLoRA: el modelo base se carga cuantizado a 4 bits (normalmente NF4 con doble cuantizacion segun el metodo original de Dettmers et al.) y los gradientes se propagan a traves de esa base congelada hacia los adaptadores LoRA, lo que reduce drasticamente la memoria necesaria para el ajuste fino. El modelo base sobre el que se aplica es Qwen2.5-0.5B-Instruct, un transformer decoder-only con atencion por consultas agrupadas (GQA), normalizacion RMSNorm y RoPE, en su variante ya alineada para instrucciones.
 
-No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, la existencia de RLHF o DPO posterior, los hiperparametros (rango, alpha, dropout, tasa de aprendizaje, epocas) ni el hardware utilizado. La model card es la plantilla estandar de HuggingFace con todos los campos marcados como "[More Information Needed]". La unica referencia tecnica detectable en los metadatos es la etiqueta arxiv:1910.09700, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que la plantilla incluye por defecto, no a un paper propio del modelo. La version de PEFT empleada durante el entrenamiento fue la 0.19.1, segun la seccion de versiones de framework de la model card.
+No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, la existencia de RLHF o DPO posterior, los hiperparametros (rango, alpha, dropout, tasa de aprendizaje, epocas) ni el hardware utilizado. La model card es la plantilla estandar de Hugging Face con todos los campos marcados como "[More Information Needed]". La unica referencia tecnica detectable en los metadatos es la etiqueta arxiv:1910.09700, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que la plantilla incluye por defecto, no a un paper propio del modelo. La version de PEFT empleada durante el entrenamiento fue la 0.19.1, segun la seccion de versiones de framework de la model card.
 
 ## Capacidades
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| gamevibe-qlora-adapter | Adaptador LoRA sobre base de 0,49 B | 32.768 tokens (heredado) | No disponible | safetensors (PEFT) | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache 2.0 (modelo base) | safetensors, GGUF en la comunidad | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 (modelo base) | safetensors, GGUF en la comunidad | HuggingFace, ampliamente usado |
+| gamevibe-qlora-adapter | Adaptador LoRA sobre base de 0,49 B | 32.768 tokens (heredado) | No disponible | safetensors (PEFT) | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache 2.0 (modelo base) | safetensors, GGUF en la comunidad | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 (modelo base) | safetensors, GGUF en la comunidad | Hugging Face, ampliamente usado |
 
 La comparacion directa con el modelo base es la mas relevante: el adaptador no aporta parametros nuevos significativos y su unico valor diferencial es el ajuste de dominio, que no esta documentado ni validado. Frente a Qwen2.5-1.5B-Instruct, el modelo base de 0,5 B sacrifica capacidad de razonamiento a cambio de un coste de inferencia mucho menor. No se dispone de datos de rendimiento que permitan comparar la calidad de las respuestas del adaptador con las del base sin ajustar.
 
@@ -84,7 +84,7 @@ La comparacion directa con el modelo base es la mas relevante: el adaptador no a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LopamudraB/gamevibe-qlora-adapter
+- Modelo en Hugging Face: https://huggingface.co/LopamudraB/gamevibe-qlora-adapter
 - Repositorio relacionado (adaptador LoRA): https://huggingface.co/LopamudraB/gamevibe-lora-adapter
 - Repositorio relacionado (modelo ajustado): https://huggingface.co/LopamudraB/gamevibe-finetuned
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

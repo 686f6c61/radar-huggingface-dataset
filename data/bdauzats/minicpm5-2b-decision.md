@@ -109,12 +109,12 @@ Calibracion medida en transfer-v4:
 
 | Modelo | Parametros | Tipo | Media en Jev | Media en transfer-v4 | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| minicpm5-2b-decision | 2,5B | Modelo de decision (base MiniCPM5-2B) | 0,796 | 0,721 | apache-2.0 | HuggingFace, build MLX 4-bit |
+| minicpm5-2b-decision | 2,5B | Modelo de decision (base MiniCPM5-2B) | 0,796 | 0,721 | apache-2.0 | Hugging Face, build MLX 4-bit |
 | Kev-0.8B | 0,8B | Modelo de decision (arquitectura Kev) | no disponible | 0,652 | apache-2.0 (codigo de Kev) | Repositorio de Kev |
 | Kev-4B | 4B | Modelo de decision (arquitectura Kev) | no disponible | 0,797 | apache-2.0 (codigo de Kev) | Repositorio de Kev |
 | Jev | no disponible | Modelo de decision entrenado | 0,753 | 0,857 | no disponible | API y SDK de TypeSafe |
 | GLiNER2.5 | no disponible | Modelo de clasificacion zero-shot | 0,583 | no disponible | no disponible | Publicado |
-| openbmb/MiniCPM5-2B | 2,5B | Modelo base generativo | no disponible (0,542 con lectura vectorial) | no disponible | no disponible en la informacion | HuggingFace |
+| openbmb/MiniCPM5-2B | 2,5B | Modelo base generativo | no disponible (0,542 con lectura vectorial) | no disponible | no disponible en la informacion | Hugging Face |
 
 Los datos de contexto, licencia y disponibilidad de Kev-4B, Jev y GLiNER2.5 no aparecen en la informacion proporcionada. Este modelo supera a Jev en Emotion (0,69 frente a 0,48) y en la media del benchmark Jev (0,796 frente a 0,753), pero queda por detras en Banking77 (0,79 frente a 0,87) y en transfer-v4 (0,721 frente a 0,857).
 
@@ -134,7 +134,7 @@ Los datos de contexto, licencia y disponibilidad de Kev-4B, Jev y GLiNER2.5 no a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bdauzats/minicpm5-2b-decision
+- Modelo en Hugging Face: https://huggingface.co/bdauzats/minicpm5-2b-decision
 - Build MLX 4-bit: https://huggingface.co/bdauzats/minicpm5-2b-decision-mlx-4bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio de jul: https://github.com/bdauzats/jul

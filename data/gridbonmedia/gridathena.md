@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GridbonMedia/Gridathena es un modelo alojado en HuggingFace por el usuario GridbonMedia, publicado el 21 de agosto de 2026 bajo licencia MIT. La model card del repositorio no contiene ninguna información técnica: no se especifica arquitectura, tamaño, parámetros, contexto, dataset de entrenamiento ni capacidades. Se trata de un repositorio vacío o con documentación mínima.
+GridbonMedia/Gridathena es un modelo alojado en Hugging Face por el usuario GridbonMedia, publicado el 21 de agosto de 2026 bajo licencia MIT. La model card del repositorio no contiene ninguna información técnica: no se especifica arquitectura, tamaño, parámetros, contexto, dataset de entrenamiento ni capacidades. Se trata de un repositorio vacío o con documentación mínima.
 
 En el momento de esta ficha, el modelo no registra descargas ni interacciones por parte de la comunidad. No existen resultados de búsqueda web relevantes que aporten datos técnicos adicionales, ya que los resultados obtenidos corresponden a proyectos homónimos no relacionados (ATHENA AI, Athena App, generadores de modelos 3D). Por tanto, no es posible evaluar su rendimiento, sus capacidades ni sus requisitos de despliegue.
 
@@ -52,11 +52,11 @@ No disponible. Al no existir información técnica sobre el modelo, no es posibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GridbonMedia/Gridathena
+- Repositorio Hugging Face: https://huggingface.co/GridbonMedia/Gridathena
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web.</think>## Resumen
 
-GridbonMedia/Gridathena es un modelo publicado por el usuario GridbonMedia en HuggingFace el 21 de agosto de 2026. La model card del repositorio no contiene ninguna información técnica: no se especifican arquitectura, número de parámetros, contexto, idiomas, dataset de entrenamiento ni capacidades. El repositorio está prácticamente vacío, limitándose a declarar la licencia MIT.
+GridbonMedia/Gridathena es un modelo publicado por el usuario GridbonMedia en Hugging Face el 21 de agosto de 2026. La model card del repositorio no contiene ninguna información técnica: no se especifican arquitectura, número de parámetros, contexto, idiomas, dataset de entrenamiento ni capacidades. El repositorio está prácticamente vacío, limitándose a declarar la licencia MIT.
 
 En el momento de redactar esta ficha, el modelo registra cero descargas y cero likes, y no existen resultados de búsqueda web que aporten datos técnicos adicionales. Los resultados de búsqueda encontrados corresponden a proyectos homónimos no relacionados (Athena AI, generadores de modelos 3D, OpenModelDB). Por tanto, no es posible evaluar el rendimiento, las capacidades ni los requisitos de despliegue de este modelo con la información disponible.
 
@@ -107,6 +107,6 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GridbonMedia/Gridathena
+- Repositorio Hugging Face: https://huggingface.co/GridbonMedia/Gridathena
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la búsqueda web.

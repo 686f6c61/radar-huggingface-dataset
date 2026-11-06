@@ -73,5 +73,5 @@ No disponible. El checkpoint no tiene parámetros comparables con modelos de ret
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BrandonHill/flamingo-checkpoint
+- Repositorio Hugging Face: https://huggingface.co/BrandonHill/flamingo-checkpoint
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web. Los resultados obtenidos corresponden a proyectos homónimos no relacionados (NVIDIA/audio-flamingo y OpenFlamingo).

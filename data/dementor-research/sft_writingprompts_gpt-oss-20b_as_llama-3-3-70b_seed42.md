@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado medi
 
 El modelo se presenta como un adaptador PEFT (Parameter-Efficient Fine-Tuning) de 1.0 GB, con rank 32 y target_modules=all-linear, lo que permite acoplarlo al modelo base para obtener un comportamiento específico sin modificar los pesos completos. Su relevancia radica en que explora la transferencia de estilos y capacidades entre modelos de distinta escala (20B frente a 70B) mediante técnicas de bajo rango, un área activa en la investigación de alineación y eficiencia.
 
-Aunque no se proporcionan métricas de rendimiento ni detalles sobre el dataset de entrenamiento, el adaptador está diseñado para ser utilizado con la librería `peft` de HuggingFace, lo que facilita su integración en pipelines de investigación y desarrollo.
+Aunque no se proporcionan métricas de rendimiento ni detalles sobre el dataset de entrenamiento, el adaptador está diseñado para ser utilizado con la librería `peft` de Hugging Face, lo que facilita su integración en pipelines de investigación y desarrollo.
 
 ## Especificaciones técnicas
 
@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables. El adaptador es especí
 
 ## Enlaces
 
-- [HuggingFace - dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.3-70b_seed42](https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.3-70b_seed42)
+- [Hugging Face - dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.3-70b_seed42](https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.3-70b_seed42)
 - [Tinker - Thinking Machines](https://thinkingmachines.ai/tinker/)
 - [Paper de LoRA (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700) - referencia al método de adaptación de bajo rango, mencionado en los tags del repositorio.

@@ -58,9 +58,9 @@ No hay datos de rendimiento para comparar. El adaptador imita a Llama 3.1 8B, pe
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42 | LoRA sobre MoE | 30B totales (3B activos) en el base | No disponible | No disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B | Transformer denso | 8B | 128k (según documentación oficial) | Llama 3.1 Community License | HuggingFace |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | MoE | 30B totales (3B activos) | No disponible | No disponible (propietaria de NVIDIA) | HuggingFace |
+| dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42 | LoRA sobre MoE | 30B totales (3B activos) en el base | No disponible | No disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B | Transformer denso | 8B | 128k (según documentación oficial) | Llama 3.1 Community License | Hugging Face |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | MoE | 30B totales (3B activos) | No disponible | No disponible (propietaria de NVIDIA) | Hugging Face |
 
 La comparación es limitada porque el adaptador no es un modelo independiente y no se dispone de métricas.
 
@@ -76,6 +76,6 @@ La comparación es limitada porque el adaptador no es un modelo independiente y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42
 - Herramienta Tinker (mencionada en la model card): https://thinkingmachines.ai/tinker/
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IRIS-Embed-Qwen2.5-Omni-3B es un modelo de embeddings de audio y voz con instrucciones (instruction-aware speech embedding), desarrollado por el usuario lca0503 y publicado en HuggingFace. Se construye sobre el backbone del Thinker de Qwen2.5-Omni-3B y anade un cabezal de enrutamiento basado en el text encoder MiniLM (sentence-transformers/all-MiniLM-L6-v2) que combina dinamicamente los estados del codificador de audio antes de proyectarlos al espacio de embeddings.
+IRIS-Embed-Qwen2.5-Omni-3B es un modelo de embeddings de audio y voz con instrucciones (instruction-aware speech embedding), desarrollado por el usuario lca0503 y publicado en Hugging Face. Se construye sobre el backbone del Thinker de Qwen2.5-Omni-3B y anade un cabezal de enrutamiento basado en el text encoder MiniLM (sentence-transformers/all-MiniLM-L6-v2) que combina dinamicamente los estados del codificador de audio antes de proyectarlos al espacio de embeddings.
 
 El modelo resuelve un problema concreto: la recuperacion (retrieval) de audio por similitud semantica con instrucciones en lenguaje natural, algo que los modelos de embeddings puramente textuales no cubren. En lugar de generar texto, produce un vector de 2048 dimensiones a partir de la ultima posicion no rellena de la capa final del LLM, normalizado en L2 y comparable mediante similitud coseno.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IRIS-Embed-Qwen2.5-Omni-3B | 4.726.191.137 | no disponible | Audio y texto (embeddings) | qwen-research | HuggingFace, 4 descargas |
-| Qwen2.5-Omni-3B (base) | no disponible | no disponible | Audio, texto y vision (generacion) | qwen-research | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | no disponible | no disponible | Texto (embeddings) | Apache-2.0 | HuggingFace |
+| IRIS-Embed-Qwen2.5-Omni-3B | 4.726.191.137 | no disponible | Audio y texto (embeddings) | qwen-research | Hugging Face, 4 descargas |
+| Qwen2.5-Omni-3B (base) | no disponible | no disponible | Audio, texto y vision (generacion) | qwen-research | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | no disponible | no disponible | Texto (embeddings) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de IRIS-Embed frente a alternativas de embeddings de audio. La comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de IRI
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lca0503/IRIS-Embed-Qwen2.5-Omni-3B
+- Modelo en Hugging Face: https://huggingface.co/lca0503/IRIS-Embed-Qwen2.5-Omni-3B
 - Modelo base Qwen2.5-Omni-3B: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Text encoder MiniLM: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Licencia Qwen Research: https://huggingface.co/lca0503/IRIS-Embed-Qwen2.5-Omni-3B/blob/main/LICENSE

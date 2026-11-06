@@ -62,7 +62,7 @@ No disponible. No se trata de un modelo de IA, por lo que no existe una comparac
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/maximesimonko/paper_007943635_knowledge_distillation
+- Repositorio de Hugging Face: https://huggingface.co/maximesimonko/paper_007943635_knowledge_distillation
 - Referencia de la encuesta sobre destilación de conocimiento (arXiv): https://arxiv.org/html/2503.12067v1
 - PDF de la encuesta en arXiv: https://arxiv.org/pdf/2503.12067
 - Colección de papers sobre destilación de LLMs en GitHub: https://github.com/Tebmer/Awesome-Knowledge-Distillation-of-LLMs

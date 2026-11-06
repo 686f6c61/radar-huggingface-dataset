@@ -115,7 +115,7 @@ La comparativa se basa en caracteristicas publicas de los modelos citados; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/jina-embeddings-v2-base-zh-onnx-quantized
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/jina-embeddings-v2-base-zh-onnx-quantized
 - Modelo original (referencia): https://huggingface.co/jinaai/jina-embeddings-v2-base-zh
 - Paper ALiBi (arXiv:2108.12409): https://arxiv.org/abs/2108.12409
 - Paper Jina Embeddings v2 (arXiv:2402.17016): https://arxiv.org/abs/2402.17016

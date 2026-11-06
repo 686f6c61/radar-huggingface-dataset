@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xiaoxxxxxxxx/Qwen-agriLLM
+- Repositorio Hugging Face: https://huggingface.co/xiaoxxxxxxxx/Qwen-agriLLM
 - Modelo original de AI71: https://huggingface.co/AI71ai/agrillm-Qwen3-30B-A3B
 - Coleccion AgriLLM: https://huggingface.co/collections/AI71ai/agrillm
 - Demo en Gooey.AI: https://gooey.ai/compare-large-language-models/run-agrillm-qwen3-by-ai71-u8i00cn165tu/

@@ -36,7 +36,7 @@ El ajuste fino se realizó sobre el protocolo multilingüe de SIB-200 con 20 ép
 - Extracción de representaciones multilingües: el mean pooling sobre la máscara de atención produce un embedding de frase utilizable para búsqueda o clasificación no supervisada.
 - Cobertura multilingüe real: swahili, hausa, yoruba, igbo, amhárico, zulú, xhosa, somalí, wolof, bambara, dioula, fon, twi, lingala, luganda, kikuyu, malgache, entre otras, más inglés y francés.
 - Manejo de múltiples sistemas de escritura: latino, árabe (`aeb_Arab`, `arb_Arab`, `knc_Arab`), etíope (`amh_Ethi`, `tir_Ethi`) y tifinag (`taq_Tfng`, `tzm_Tfng`).
-- Capacidad discriminativa, no generativa: no hay generación de texto, razonamiento multi-paso, tool calling, soporte de agentes, visión, audio ni modo "thinking". No dispone de pipeline declarado en HuggingFace (`pipeline: no disponible`), precisamente porque el uso requiere código personalizado de carga.
+- Capacidad discriminativa, no generativa: no hay generación de texto, razonamiento multi-paso, tool calling, soporte de agentes, visión, audio ni modo "thinking". No dispone de pipeline declarado en Hugging Face (`pipeline: no disponible`), precisamente porque el uso requiere código personalizado de carga.
 - No soporta function calling ni integración como agente: cualquier caso de uso debe plantearse como un clasificador dentro de un pipeline mayor.
 
 ## Casos de uso
@@ -97,7 +97,7 @@ Los datos de XLM-RoBERTa-base y mBERT provienen de sus fichas públicas y no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/serengeti-E250-sib200-multilingual
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/serengeti-E250-sib200-multilingual
 - Modelo base: https://huggingface.co/UBC-NLP/serengeti-E250
 - Dataset SIB-200 (referencia del benchmark, no verificada en la información proporcionada): https://huggingface.co/datasets/Davlan/sib200
 - Resultados por idioma: `metrics.json` dentro del repositorio del modelo (https://huggingface.co/BeardedMonster/serengeti-E250-sib200-multilingual/blob/main/metrics.json)

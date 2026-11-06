@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ansoncat/Nemotron-3.5-Bolt-LiLiCorr-DFlash2 | Draft speculative decoding (DFlash2) | 1,14B (draft) | no disponible | OpenMDW 1.1 | HuggingFace, 25 descargas |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF | Draft speculative decoding (GGUF) | 998 MB en fichero | no disponible | OpenMDW 1.1 | HuggingFace (oficial de NVIDIA) |
+| ansoncat/Nemotron-3.5-Bolt-LiLiCorr-DFlash2 | Draft speculative decoding (DFlash2) | 1,14B (draft) | no disponible | OpenMDW 1.1 | Hugging Face, 25 descargas |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF | Draft speculative decoding (GGUF) | 998 MB en fichero | no disponible | OpenMDW 1.1 | Hugging Face (oficial de NVIDIA) |
 | nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB (modelo objetivo) | MoE generativo | 74B totales / 9B activos | no disponible | no disponible | Referenciado como base |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ansoncat/Nemotron-3.5-Bolt-LiLiCorr-DFlash2
+- Repositorio en Hugging Face: https://huggingface.co/ansoncat/Nemotron-3.5-Bolt-LiLiCorr-DFlash2
 - Modelo base (GGUF oficial de NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF
 - Repositorio del motor Splash: https://github.com/incoai/splash
 - Propuesta de soporte de Nemotron 3.5 Bolt en Splash: https://github.com/incoai/splash/issues/633

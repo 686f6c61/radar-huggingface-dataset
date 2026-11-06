@@ -80,6 +80,6 @@ La model card menciona evaluaciones en OSWorld, CUA-World y prediccion de accion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/l3lab/VTR-2B
+- Modelo en Hugging Face: https://huggingface.co/l3lab/VTR-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del proyecto VTR: https://github.com/pranjal2041/vtr

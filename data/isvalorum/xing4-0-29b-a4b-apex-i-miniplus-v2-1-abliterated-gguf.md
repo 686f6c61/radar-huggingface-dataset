@@ -117,7 +117,7 @@ Comparativa con modelos de otras familias (por ejemplo, alternativas MoE de tama
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
 - Variante hermana APEX-I-NanoPlus: https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF
 - Modelo base abliterated (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated
 - Modelo oficial (XingChen-AGI): https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B

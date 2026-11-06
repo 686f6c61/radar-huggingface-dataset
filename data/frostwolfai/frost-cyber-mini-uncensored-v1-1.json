@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
+  "slug": "frostwolfai-frost-cyber-mini-uncensored-v1-1",
+  "author": "FrostWolfAI",
+  "url": "https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
+  "created_at": "2026-11-05T12:07:53.000Z",
+  "updated_at": "2026-11-06T11:17:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "cybersecurity",
+    "uncensored",
+    "abliterated",
+    "lora-merged",
+    "agentic",
+    "tool-use",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:FrostWolfAI/Spark-X2.6-4B-abliterated",
+    "base_model:finetune:FrostWolfAI/Spark-X2.6-4B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 16448385152,
+  "storage_human": "16.4 GB",
+  "base_model": "FrostWolfAI/Spark-X2.6-4B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FrostWolfAI/Frost-Cyber-Mini-1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-1.0-GGUF",
+      "snippet": "Frost Cyber Mini 1.0 is an uncensored (abliterated) offensive-security model. Its safety filtering is substantially reduced and it will produce exploit code, payloads, and attacker tradecraft on request."
+    },
+    {
+      "title": "FrostWolfAI/Frost-Cyber-Mini-1.0-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-1.0-GGUF/tree/main",
+      "snippet": "Frost Cyber Mini 1.0 is an uncensored (abliterated) offensive-security model. Its safety filtering is substantially reduced and it will produce exploit code, payloads, and attacker tradecraft on request."
+    }
+  ]
+}

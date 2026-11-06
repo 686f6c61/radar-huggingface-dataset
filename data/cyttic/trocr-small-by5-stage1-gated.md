@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trocr-small-BY5-stage1-gated es un checkpoint de reconocimiento optico de caracteres (OCR) publicado por el usuario cyttic en HuggingFace. Se trata de un ajuste fino (fine-tuning) de una sola epoca sobre el modelo base cyttic/trocr-hebrew-small-untrained, que a su vez pertenece a la familia TrOCR de Microsoft, una arquitectura vision-encoder-decoder disenada para convertir imagenes de texto en secuencias de caracteres. El modelo tiene 235.097.600 parametros y se distribuye en formato safetensors (repositorio de 0,9 GB, consistente con pesos en fp32), con la etiqueta de pipeline image-text-to-text.
+trocr-small-BY5-stage1-gated es un checkpoint de reconocimiento optico de caracteres (OCR) publicado por el usuario cyttic en Hugging Face. Se trata de un ajuste fino (fine-tuning) de una sola epoca sobre el modelo base cyttic/trocr-hebrew-small-untrained, que a su vez pertenece a la familia TrOCR de Microsoft, una arquitectura vision-encoder-decoder disenada para convertir imagenes de texto en secuencias de caracteres. El modelo tiene 235.097.600 parametros y se distribuye en formato safetensors (repositorio de 0,9 GB, consistente con pesos en fp32), con la etiqueta de pipeline image-text-to-text.
 
 El problema que aborda es el OCR, presumiblemente orientado a texto en hebreo dado el nombre del modelo base. Su relevancia actual es limitada: el autor no ha publicado model card descriptiva, no declara licencia ni idiomas soportados, y las metricas de validacion reportadas (CER 0,7775 y WER 1,0977) indican que el modelo no es funcional para reconocimiento real. Un WER superior a 1 implica que el numero de errores supera la longitud de la referencia, es decir, un resultado peor que no generar nada.
 
@@ -117,7 +117,7 @@ No se han identificado en la informacion disponible modelos alternativos especif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/trocr-small-BY5-stage1-gated
+- Modelo en Hugging Face: https://huggingface.co/cyttic/trocr-small-BY5-stage1-gated
 - Modelo base: https://huggingface.co/cyttic/trocr-hebrew-small-untrained
 - Perfil del autor: https://huggingface.co/cyttic
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-wga` es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario de HuggingFace `sungjuncho`, que aplica una técnica de *machine unlearning* (desaprendizaje) sobre un ajuste fino previo del modelo base. El objetivo no es obtener un asistente conversacional nuevo, sino servir como artefacto de investigación para estudiar la diferencia entre *untraining* (eliminar las muestras concretas que se dieron a un método de desaprendizaje) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones). Para ello se emplea el conjunto de datos TOFU-para, una variante de TOFU con erratas en nombres corregidas y cinco paráfrasis verificadas de cada par pregunta-respuesta.
+`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-wga` es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario de Hugging Face `sungjuncho`, que aplica una técnica de *machine unlearning* (desaprendizaje) sobre un ajuste fino previo del modelo base. El objetivo no es obtener un asistente conversacional nuevo, sino servir como artefacto de investigación para estudiar la diferencia entre *untraining* (eliminar las muestras concretas que se dieron a un método de desaprendizaje) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones). Para ello se emplea el conjunto de datos TOFU-para, una variante de TOFU con erratas en nombres corregidas y cinco paráfrasis verificadas de cada par pregunta-respuesta.
 
 El modelo parte de `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full`, un ajuste fino sobre todo TOFU más dos versiones parafraseadas, y le aplica el algoritmo WGA (Weight Gradient Ascent, o una variante de ascenso de gradiente sobre pesos) implementado en la librería `open-unlearning` del grupo locuslab. El conjunto a olvidar es el *forget10* original (400 pares QA); el conjunto de retención, cuando el método lo usa, es retain90 más las paráfrasis para1 y para2 (10.800 pares).
 
@@ -96,7 +96,7 @@ La comparación con modelos de desaprendizaje de otros autores (por ejemplo, var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-wga
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-wga
 - Modelo base intermedio: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

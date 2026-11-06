@@ -101,6 +101,6 @@ No se dispone de información sobre modelos comparables en danés de tamaño sim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-top3
+- Repositorio Hugging Face: https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-top3
 - Modelo base: https://huggingface.co/jensjepsen/danish-lm-400m-sft-v31-avg-top3
 - Versión anterior (grpo-mixed-v1): https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vanshnawander/assignment2-moe-active-match` es un modelo de traducción automática publicado en HuggingFace por el usuario vanshnawander, presumiblemente como entrega de un trabajo académico (el propio identificador incluye "assignment2"). Se trata de un Transformer decoder-only con mezcla de expertos (MoE) entrenado para traducir de vietnamita y japonés a inglés, con 47.973.376 parámetros totales y hasta 35.402.752 parámetros activos por token. La ventana de contexto es de solo 256 tokens y el vocabulario es un BPE byte-level de 32.000 entradas.
+`vanshnawander/assignment2-moe-active-match` es un modelo de traducción automática publicado en Hugging Face por el usuario vanshnawander, presumiblemente como entrega de un trabajo académico (el propio identificador incluye "assignment2"). Se trata de un Transformer decoder-only con mezcla de expertos (MoE) entrenado para traducir de vietnamita y japonés a inglés, con 47.973.376 parámetros totales y hasta 35.402.752 parámetros activos por token. La ventana de contexto es de solo 256 tokens y el vocabulario es un BPE byte-level de 32.000 entradas.
 
 Arquitectónicamente es deliberadamente pequeño: seis capas, ocho cabezas de atención y tamaño oculto de 512. Los pesos se distribuyen como código PyTorch propio (`model_state.pt` más módulos fuente de arquitectura y decodificación), lo que implica que no hay integración con ecosistemas estándar como transformers, llama.cpp o vLLM. El repositorio ocupa 0,2 GB, coherente con pesos en FP32 (unos 192 MB teóricos) más tokenizador y ficheros auxiliares.
 
@@ -83,10 +83,10 @@ No se dispone de datos comparativos publicados por el autor. A continuación se 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| assignment2-moe-active-match | 47,97 M totales / 35,40 M activos | 256 tokens | No disponible | HuggingFace, codigo PyTorch custom | Perplejidad 68,7231 y BLEU 16,0840 en test |
-| Helsinki-NLP OPUS-MT (vi-en, ja-en) | No disponible en la informacion proporcionada | No disponible | MIT (familia OPUS-MT) | HuggingFace, integracion transformers | Metricas BLEU publicadas por el proyecto, no comparables directamente |
-| Meta NLLB-200 (variantes destiladas y completas) | No disponible en la informacion proporcionada | No disponible | CC-BY-NC-4.0 (uso comercial restringido) | HuggingFace, integracion transformers | Metricas publicadas por Meta, no comparables directamente |
-| mBART / mBART-50 | No disponible en la informacion proporcionada | No disponible | MIT | HuggingFace, integracion transformers | Metricas publicadas, no comparables directamente |
+| assignment2-moe-active-match | 47,97 M totales / 35,40 M activos | 256 tokens | No disponible | Hugging Face, codigo PyTorch custom | Perplejidad 68,7231 y BLEU 16,0840 en test |
+| Helsinki-NLP OPUS-MT (vi-en, ja-en) | No disponible en la informacion proporcionada | No disponible | MIT (familia OPUS-MT) | Hugging Face, integracion transformers | Metricas BLEU publicadas por el proyecto, no comparables directamente |
+| Meta NLLB-200 (variantes destiladas y completas) | No disponible en la informacion proporcionada | No disponible | CC-BY-NC-4.0 (uso comercial restringido) | Hugging Face, integracion transformers | Metricas publicadas por Meta, no comparables directamente |
+| mBART / mBART-50 | No disponible en la informacion proporcionada | No disponible | MIT | Hugging Face, integracion transformers | Metricas publicadas, no comparables directamente |
 
 Diferencias estructurales relevantes: el modelo analizado es el único de la tabla sin licencia declarada, sin integración con `transformers` y con una ventana de contexto de 256 tokens, muy inferior a la de las alternativas citadas. Tampoco cuenta con validación de la comunidad (0 descargas, 0 likes).
 
@@ -98,7 +98,7 @@ Diferencias estructurales relevantes: el modelo analizado es el único de la tab
 - Ejecución de código arbitrario: la carga del modelo implica importar `load_model.py` y `decoding.py` desde el repositorio. Es imprescindible auditar ese código antes de ejecutarlo, ya que no existe revisión por parte de la comunidad.
 - Sesgos: no disponibles. No se documenta composición del corpus ni análisis de sesgos, por lo que se desconocen los sesgos de género, nacionalidad o registro que puedan haberse aprendido.
 - Riesgo de alucinación: sin datos de entrenamiento ni evaluación cualitativa, no puede descartarse la generación de contenido inventado, especialmente en prompts de continuación alejados del dominio de traducción.
-- Idiomas: solo vietnamita-inglés y japonés-inglés según la model card; los metadatos de HuggingFace no declaran ningún idioma, lo que dificulta el filtrado automático.
+- Idiomas: solo vietnamita-inglés y japonés-inglés según la model card; los metadatos de Hugging Face no declaran ningún idioma, lo que dificulta el filtrado automático.
 - Metadatos incompletos: sin licencia, sin idiomas etiquetados y con 0 descargas, no hay señales de mantenimiento ni de validación externa.
 - Reproducibilidad parcial: el repositorio no incluye corpus de entrenamiento, estados del optimizador ni del generador aleatorio, por lo que el entrenamiento no puede reanudarse ni auditarse por completo.
 - Fecha de publicación inusual (octubre de 2026 en los metadatos): conviene verificar la procedencia y el estado real del repositorio antes de integrarlo en cualquier flujo.
@@ -106,5 +106,5 @@ Diferencias estructurales relevantes: el modelo analizado es el único de la tab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vanshnawander/assignment2-moe-active-match
+- Modelo en Hugging Face: https://huggingface.co/vanshnawander/assignment2-moe-active-match
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados en la información proporcionada.

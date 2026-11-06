@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K-WALUAN-repo es un repositorio publicado en HuggingFace por el usuario Ensayo003 bajo el identificador `Ensayo003/K-WALUAN-repo`. No se dispone de model card descriptiva: el README unicamente contiene la cabecera de metadatos de licencia (`license: other`, `license_name: free-repo`). No hay informacion publicada sobre arquitectura, numero de parametros, datos de entrenamiento ni capacidades.
+K-WALUAN-repo es un repositorio publicado en Hugging Face por el usuario Ensayo003 bajo el identificador `Ensayo003/K-WALUAN-repo`. No se dispone de model card descriptiva: el README unicamente contiene la cabecera de metadatos de licencia (`license: other`, `license_name: free-repo`). No hay informacion publicada sobre arquitectura, numero de parametros, datos de entrenamiento ni capacidades.
 
 El repositorio ocupa 13,5 GB y fue creado el 6 de octubre de 2026, con una unica actualizacion el mismo dia. Acumula 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas especificados. La ausencia de documentacion tecnica, de ejemplos de uso y de cualquier artefacto de evaluacion impide clasificarlo con rigor dentro de una categoria de modelos concreta.
 
@@ -77,5 +77,5 @@ No disponible. Sin conocer el tamano, la arquitectura ni la tarea del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ensayo003/K-WALUAN-repo
+- Repositorio en Hugging Face: https://huggingface.co/Ensayo003/K-WALUAN-repo
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

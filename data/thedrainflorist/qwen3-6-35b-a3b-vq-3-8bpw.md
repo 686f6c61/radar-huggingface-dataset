@@ -88,7 +88,7 @@ No se dispone de comparación con otros modelos MoE de tamaño similar (p. ej., 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-3.8bpw
+- Repositorio Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-3.8bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - ModelScope (modelo base): https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B
 - Página de Qwen3.6 en LM Studio: https://lmstudio.ai/models/qwen3.6

@@ -108,14 +108,14 @@ El propio autor advierte de que esa NLL de 1,84 no es comparable con las de esta
 - Los checkpoints no son autocontenidos: sin el código del repositorio de GitHub no se pueden cargar ni interpretar correctamente.
 - Riesgo de seguridad al cargar: `registry.load_checkpoint` usa `weights_only=False` porque el payload incluye el estado de los RNG. Solo deben cargarse si se confía en el origen.
 - Licencia no declarada: no hay autorización explícita de uso comercial, lo que supone un riesgo legal para producción.
-- El corpus de entrenamiento no se redistribuye, ni en HuggingFace ni en GitHub: los pesos se publican con fines académicos y de reproducibilidad del laboratorio.
+- El corpus de entrenamiento no se redistribuye, ni en Hugging Face ni en GitHub: los pesos se publican con fines académicos y de reproducibilidad del laboratorio.
 - La composición estilística del corpus no se detalla más allá de «piano interpretado», por lo que el sesgo estilístico y cultural del modelo no está caracterizado en la información disponible.
 - Riesgo de alucinación musical: como modelo autorregresivo, puede producir secuencias sintácticamente válidas en el vocabulario pero musicalmente incoherentes, sin que exista una métrica publicada que detecte ese fallo.
 - Idiomas: la etiqueta del repositorio es `es`, pero el modelo no procesa lenguaje natural; la etiqueta no implica capacidades multilingües de texto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LuisContreras73/music-generation
+- Repositorio en Hugging Face: https://huggingface.co/LuisContreras73/music-generation
 - Repositorio de código en GitHub: https://github.com/LuisContreras73/music-generation
 - Informes del laboratorio: https://github.com/LuisContreras73/music-generation/tree/main/docs
 - Paper citado en la model card: https://arxiv.org/abs/1511.01844

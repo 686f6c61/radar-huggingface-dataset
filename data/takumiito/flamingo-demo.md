@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo for Multitask (identificador `takumiito/flamingo-demo`) es un prototipo de investigación publicado en HuggingFace con licencia Apache 2.0 y orientado a tareas multitarea. No se trata de un modelo entrenado, sino de una implementación de referencia acompañada de un checkpoint de inicialización válido para pruebas de humo (smoke tests). La propia model card indica explícitamente que el repositorio no reclama ninguna puntuación de benchmark y que los pesos incluidos no han sido entrenados ni auditados en robustez, equidad o transferencia de dominio.
+Flamingo for Multitask (identificador `takumiito/flamingo-demo`) es un prototipo de investigación publicado en Hugging Face con licencia Apache 2.0 y orientado a tareas multitarea. No se trata de un modelo entrenado, sino de una implementación de referencia acompañada de un checkpoint de inicialización válido para pruebas de humo (smoke tests). La propia model card indica explícitamente que el repositorio no reclama ninguna puntuación de benchmark y que los pesos incluidos no han sido entrenados ni auditados en robustez, equidad o transferencia de dominio.
 
 A nivel de arquitectura, sigue la familia Flamingo con atención multi-query, fusión mediante concat MLP, activación swish y normalización RMSNorm, en una configuración de escala "small". El recuento de parámetros registrado en los metadatos de `model.safetensors` es de 16.576, una cifra que corresponde a un modelo de tamaño mínimo y que confirma su naturaleza de artefacto de inicialización en lugar de modelo funcional.
 
@@ -92,12 +92,12 @@ La unica referencia arquitectonica identificable es la familia Flamingo original
 - No se especifica la longitud de contexto, lo que impide planificar tareas que dependan de ventanas largas.
 - Riesgo de alucinacion: no evaluable en un modelo sin entrenamiento; en cualquier caso, no existen metricas de fidelidad publicadas.
 - Sesgos conocidos: no documentados, pero tampoco descartables una vez que el modelo se entrene con datos externos.
-- Implementacion personalizada: las APIs de carga automatica de HuggingFace y de otros frameworks no funcionan sin un adaptador explicito, lo que anade trabajo de integracion.
+- Implementacion personalizada: las APIs de carga automatica de Hugging Face y de otros frameworks no funcionan sin un adaptador explicito, lo que anade trabajo de integracion.
 - Licencia Apache 2.0: permite uso comercial del artefacto, pero la model card advierte de que deben revisarse por separado los terminos de los datos de origen si se emplean conjuntos de datos externos.
 - Ausencia de benchmarks: cualquier afirmacion de rendimiento sobre este repositorio seria no verificada; la documentacion insiste en que los resultados de un futuro checkpoint entrenado deben publicarse de forma separada.
 - Advertencia metodologica de la propia ficha: para una evaluacion con sentido hay que usar un conjunto de validacion especifico de la tarea, reportar la metrica en al menos tres semillas e incluir una linea base de capacidad comparable, conservando los registros de entrenamiento y las versiones del entorno.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takumiito/flamingo-demo
+- Hugging Face: https://huggingface.co/takumiito/flamingo-demo
 - Resultados de la busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre este modelo (los enlaces obtenidos correspondian a foros y preguntas sin relacion). No se dispone de paper, blog, repositorio adicional ni demo asociados.

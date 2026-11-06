@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`punegupta/coca-classification60` es un prototipo de investigación publicado en HuggingFace por el usuario `punegupta`. Se presenta como una implementación de una arquitectura denominada Coca orientada a tareas de clasificación, en configuración declarada como "large", con atención de tipo flash, fusión tensorial, activación swish y normalización por batchnorm. El repositorio incluye un script de Python (`model.py`) como artefacto principal, junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
+`punegupta/coca-classification60` es un prototipo de investigación publicado en Hugging Face por el usuario `punegupta`. Se presenta como una implementación de una arquitectura denominada Coca orientada a tareas de clasificación, en configuración declarada como "large", con atención de tipo flash, fusión tensorial, activación swish y normalización por batchnorm. El repositorio incluye un script de Python (`model.py`) como artefacto principal, junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante para evaluarlo es su tamaño: 33.088 parámetros en total, según el recuento de safetensors. Se trata, por tanto, de un modelo de escala minúscula (aproximadamente 0,03 millones de parámetros), muy lejos de los transformes de clasificación habituales. El propio autor indica de forma explícita que el checkpoint es una inicialización válida para pruebas de humo y que no se presenta como un checkpoint entrenado ni evaluado; no se reclama ninguna puntuación de benchmark.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y de carácter metodológico: sirve como punto 
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura denominada Coca con atención flash, fusión de tipo tensor fusion, función de activación swish y normalización batchnorm, en una escala etiquetada como "large". No se especifican el número de capas, la dimensión oculta, el número de cabezas de atención, el tipo de fusión (si es multimodal o de características intermedias) ni la longitud de contexto soportada. Tampoco se detalla si la arquitectura es un transformer puro o una variante híbrida. La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+La model card describe una arquitectura denominada Coca con atención flash, fusión de tipo tensor fusion, función de activación swish y normalización batchnorm, en una escala etiquetada como "large". No se especifican el número de capas, la dimensión oculta, el número de cabezas de atención, el tipo de fusión (si es multimodal o de características intermedias) ni la longitud de contexto soportada. Tampoco se detalla si la arquitectura es un transformer puro o una variante híbrida. La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 
 En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. La receta por defecto incluida en `training_args.json` usa el optimizador rmsprop con un scheduler polinómico, y el autor aclara que son valores de arranque del script, no el registro de una ejecución finalizada. No se indica número de tokens, composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documentan innovaciones técnicas adicionales más allá de las características arquitectónicas ya citadas.
 
@@ -93,7 +93,7 @@ Los tres repositorios comparten la misma plantilla de model card y las mismas et
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/punegupta/coca-classification60
+- Repositorio en Hugging Face: https://huggingface.co/punegupta/coca-classification60
 - Repositorio similar detectado en la búsqueda: https://huggingface.co/almutce90/coca-classification
 - Repositorio similar detectado en la búsqueda: https://huggingface.co/Faokonkwo/classification
 - Revisión sobre técnicas de machine learning para clasificación de café (contexto de clasificación, no relacionado directamente con este modelo): https://www.researchgate.net/publication/381632661_Machine_Learning_Techniques_for_Coffee_Classification_A_Comprehensive_Review_of_Scientific_Research

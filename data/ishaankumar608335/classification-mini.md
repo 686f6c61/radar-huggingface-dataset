@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishaankumar608335/classification-mini` es un checkpoint experimental de inicialización basado en la arquitectura Mocov3, publicado por el usuario ishaankumar608335 en HuggingFace. Se presenta como un codebase mínimo para tareas de clasificación, diseñado para permitir la inspección de cambios arquitectónicos antes de un entrenamiento completo. No es un modelo entrenado ni listo para producción; el archivo `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo.
+El modelo `ishaankumar608335/classification-mini` es un checkpoint experimental de inicialización basado en la arquitectura Mocov3, publicado por el usuario ishaankumar608335 en Hugging Face. Se presenta como un codebase mínimo para tareas de clasificación, diseñado para permitir la inspección de cambios arquitectónicos antes de un entrenamiento completo. No es un modelo entrenado ni listo para producción; el archivo `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 Con solo 49.600 parámetros, la arquitectura emplea atención lineal, fusión mediante concat MLP, activación approx gelu y normalización rmsnorm. No se especifica longitud de contexto, idiomas soportados ni pipeline de uso. El repositorio incluye además `config.json` con la configuración generada y `training_args.json` con una receta por defecto basada en adafactor y warmup constante, aunque sin evidencia de una ejecución completada.
 
@@ -64,11 +64,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; es un punto de partida experimental.
 - No se garantiza ningún rendimiento en tareas reales de clasificación; cualquier resultado debe documentarse por separado de los valores por defecto.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse mediante APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse mediante APIs genéricas de Hugging Face.
 - No se especifican idiomas, por lo que no es adecuado para tareas de procesamiento de lenguaje natural sin un entrenamiento previo.
 - La licencia Apache 2.0 permite uso comercial, pero deben revisarse los términos de las fuentes de datos externas si se utilizan con el modelo.
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- [HuggingFace - ishaankumar608335/classification-mini](https://huggingface.co/ishaankumar608335/classification-mini)
+- [Hugging Face - ishaankumar608335/classification-mini](https://huggingface.co/ishaankumar608335/classification-mini)

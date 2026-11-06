@@ -6,7 +6,7 @@ MCP Database Universal es un servidor MCP (Model Context Protocol) desarrollado 
 
 El proyecto resuelve el problema de conectar agentes de IA a bases de datos de manera segura y estructurada, incorporando capas de seguridad como detección de inyección SQL, clasificación de operaciones de solo lectura, límites de filas y tiempos de espera. Su relevancia actual radica en el ecosistema MCP, que está estandarizando la integración de modelos de IA con herramientas externas, y este servidor ofrece una solución universal para el acceso a bases de datos con soporte para múltiples motores.
 
-Incluye un formateador basado en LLM que traduce tipos de datos (por ejemplo, `VARCHAR(255)` a "texto, máx. 255 caracteres"), genera diagramas ER en Mermaid y permite consultas en lenguaje natural mediante `natural_query` cuando se configura con claves de API de OpenAI o Anthropic. La licencia es MIT y el código está disponible en HuggingFace.
+Incluye un formateador basado en LLM que traduce tipos de datos (por ejemplo, `VARCHAR(255)` a "texto, máx. 255 caracteres"), genera diagramas ER en Mermaid y permite consultas en lenguaje natural mediante `natural_query` cuando se configura con claves de API de OpenAI o Anthropic. La licencia es MIT y el código está disponible en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -73,11 +73,11 @@ No disponible. No existen "modelos" comparables en el sentido de LLMs; sin embar
 - El límite de filas por defecto (1000) puede truncar resultados de consultas grandes, lo que podría dar respuestas incompletas.
 - El formateador de tipos de datos está en inglés; no hay soporte para otros idiomas en la salida.
 - La documentación y la interfaz están solo en inglés, lo que puede ser una barrera para equipos hispanohablantes.
-- No se proporcionan garantías de soporte o mantenimiento; es un proyecto de un solo autor con 0 descargas y 0 likes en HuggingFace, lo que sugiere poca adopción y posible falta de pruebas en producción.
+- No se proporcionan garantías de soporte o mantenimiento; es un proyecto de un solo autor con 0 descargas y 0 likes en Hugging Face, lo que sugiere poca adopción y posible falta de pruebas en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lukynnnn/mcp-database-universal
+- Hugging Face: https://huggingface.co/Lukynnnn/mcp-database-universal
 - Repositorio relacionado (universal-db-mcp de Fashad-Ahmed): https://github.com/Fashad-Ahmed/universal-db-mcp
 - Repositorio relacionado (universal-db-mcp de Anarkh-Lee): https://github.com/Anarkh-Lee/universal-db-mcp/
 - Registro oficial de MCP: https://registry.modelcontextprotocol.io/

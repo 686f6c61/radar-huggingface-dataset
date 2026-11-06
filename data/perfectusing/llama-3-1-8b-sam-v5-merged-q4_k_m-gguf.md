@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantizacion en formato GGUF, concreta­mente Q4_K_M, del modelo `PerfectUsing/llama-3.1-8b-sam-v5-merged`. No es un modelo entrenado desde cero: es el resultado de convertir a GGUF un modelo previamente fusionado (merge) a partir de la familia Llama 3.1 de 8.000 millones de parametros. El autor del repositorio es el usuario de HuggingFace `PerfectUsing`, y la conversion se ha realizado con el espacio `gguf-my-repo` de ggml.ai sobre llama.cpp.
+Este repositorio contiene una cuantizacion en formato GGUF, concreta­mente Q4_K_M, del modelo `PerfectUsing/llama-3.1-8b-sam-v5-merged`. No es un modelo entrenado desde cero: es el resultado de convertir a GGUF un modelo previamente fusionado (merge) a partir de la familia Llama 3.1 de 8.000 millones de parametros. El autor del repositorio es el usuario de Hugging Face `PerfectUsing`, y la conversion se ha realizado con el espacio `gguf-my-repo` de ggml.ai sobre llama.cpp.
 
 El interes practico de esta publicacion es la cuantizacion: al estar en Q4_K_M, el modelo ocupa aproximadamente 4,9 GB en disco, lo que permite ejecutarlo en GPU de consumo con 8-12 GB de VRAM o incluso en CPU, algo inviable con los pesos originales en safetensors. Sin embargo, no se documenta que contiene exactamente el merge `sam-v5-merged` ni que datos o tecnicas de ajuste se aplicaron.
 
@@ -86,7 +86,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/PerfectUsing/llama-3.1-8b-sam-v5-merged-Q4_K_M-GGUF
+- Pagina de Hugging Face del modelo: https://huggingface.co/PerfectUsing/llama-3.1-8b-sam-v5-merged-Q4_K_M-GGUF
 - Modelo base (merge en safetensors): https://huggingface.co/PerfectUsing/llama-3.1-8b-sam-v5-merged
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

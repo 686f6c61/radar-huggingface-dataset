@@ -86,5 +86,5 @@ No se dispone de información sobre otros LoRAs de destilación para Wan2.2-TI2V
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wileewang/longlive-stepdistill-blocksize-loras
+- Repositorio Hugging Face: https://huggingface.co/wileewang/longlive-stepdistill-blocksize-loras
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B (referenciado en la model card, sin URL directa confirmada)

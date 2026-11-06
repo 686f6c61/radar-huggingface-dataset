@@ -73,6 +73,6 @@ No se dispone de información suficiente para una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h070.rl_v11.step_30
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h070.rl_v11.step_30
 - Índice de checkpoints (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

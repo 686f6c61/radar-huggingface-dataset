@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trackformer 1.1 es un modelo de investigación causal para la predicción de trayectoria e intensidad de ciclones tropicales, desarrollado por euler314 (Euler) y publicado en HuggingFace bajo el identificador `euler314/typhoon-predict`. El modelo genera pronósticos de posición (latitud y longitud), viento máximo sostenido, presión central, radio de viento máximo y radios de viento R34/R50/R64 en cuatro cuadrantes, con plazos de seis horas hasta un horizonte de 120 horas (20 pasos). Está diseñado para uso exclusivamente investigador y no constituye un sistema de alerta operativo.
+Trackformer 1.1 es un modelo de investigación causal para la predicción de trayectoria e intensidad de ciclones tropicales, desarrollado por euler314 (Euler) y publicado en Hugging Face bajo el identificador `euler314/typhoon-predict`. El modelo genera pronósticos de posición (latitud y longitud), viento máximo sostenido, presión central, radio de viento máximo y radios de viento R34/R50/R64 en cuatro cuadrantes, con plazos de seis horas hasta un horizonte de 120 horas (20 pasos). Está diseñado para uso exclusivamente investigador y no constituye un sistema de alerta operativo.
 
 La principal innovación del modelo es su estricto límite causal: solo utiliza datos disponibles en el momento de emisión del pronóstico, como el historial observado de trayectoria (IBTrACS), campos de análisis atmosférico (ERA5) y características geográficas estáticas. No emplea pronósticos de agencias meteorológicas (JMA, JTWC, ECMWF, GFS, etc.) ni campos de pronóstico a plazo positivo, lo que lo diferencia de otros modelos que incorporan información futura. El repositorio incluye módulos Python, estadísticas de calibración y normalización, y checkpoints semilla, con un tamaño total de 0,6 GB.
 
@@ -69,8 +69,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/euler314/typhoon-predict
+- Hugging Face: https://huggingface.co/euler314/typhoon-predict
 - GitHub: https://github.com/yu314-coder/typhoon-predict
 - Release de Trackformer 1.1: https://github.com/yu314-coder/typhoon-predict/releases/tag/trackformer-1.1
 - Demo interactiva: https://yu314-coder.github.io/typhoon-tracks.html
-- Perfil del autor en HuggingFace: https://huggingface.co/euler314
+- Perfil del autor en Hugging Face: https://huggingface.co/euler314

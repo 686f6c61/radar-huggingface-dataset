@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anlp-a2-part1-mlp es un transformer decoder-only entrenado desde cero para traducir vietnamita y japones a ingles. Lo publica el usuario DunkRonit en HuggingFace como parte de un trabajo academico (tag `anlp-assignment`), con un total de 17.011.584 parametros y un unico checkpoint derivado del dataset `belumind/en-vi-ja-curated-500k-triplets`. El modelo se entrena sobre 39.003.133 tokens, un volumen muy reducido que lo situa en la categoria de modelos experimentales mas que de produccion.
+anlp-a2-part1-mlp es un transformer decoder-only entrenado desde cero para traducir vietnamita y japones a ingles. Lo publica el usuario DunkRonit en Hugging Face como parte de un trabajo academico (tag `anlp-assignment`), con un total de 17.011.584 parametros y un unico checkpoint derivado del dataset `belumind/en-vi-ja-curated-500k-triplets`. El modelo se entrena sobre 39.003.133 tokens, un volumen muy reducido que lo situa en la categoria de modelos experimentales mas que de produccion.
 
 La arquitectura es un transformer de solo decodificador con variante de red feed-forward etiquetada como `mlp`. Aunque el repositorio lleva la etiqueta `mixture-of-experts`, la propia model card indica que los parametros activos por token coinciden con los parametros totales (17.011.584), por lo que en la practica se comporta como un modelo denso y no como un MoE con enrutado disperso. La interfaz de uso es una plantilla de prompt con tokens especiales: `<vi> fuente <en>` o `<ja> fuente <en>`, tras lo cual el modelo continua generando el texto en ingles hasta `<eos>`.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| DunkRonit/anlp-a2-part1-mlp | 17.011.584 | vi, ja -> en | no disponible | no disponible | HuggingFace, pesos safetensors |
-| Helsinki-NLP/opus-mt-vi-en | alrededor de 74-77 millones | vi -> en | CC-BY-4.0 | no aplica (seq2seq con limite practico de 512 tokens) | HuggingFace, integrado en transformers y en pipelines de traduccion |
-| facebook/nllb-200-distilled-600M | alrededor de 600 millones | 200 idiomas, incluidos vi, ja y en | CC-BY-NC-4.0 (uso no comercial) | 512 tokens | HuggingFace, soporte amplio en transformers |
+| DunkRonit/anlp-a2-part1-mlp | 17.011.584 | vi, ja -> en | no disponible | no disponible | Hugging Face, pesos safetensors |
+| Helsinki-NLP/opus-mt-vi-en | alrededor de 74-77 millones | vi -> en | CC-BY-4.0 | no aplica (seq2seq con limite practico de 512 tokens) | Hugging Face, integrado en transformers y en pipelines de traduccion |
+| facebook/nllb-200-distilled-600M | alrededor de 600 millones | 200 idiomas, incluidos vi, ja y en | CC-BY-NC-4.0 (uso no comercial) | 512 tokens | Hugging Face, soporte amplio en transformers |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, cobertura idiomatica, licencia y disponibilidad. Conviene senalar que el modelo de este analisis esta tres ordenes de magnitud por debajo de NLLB-200-distilled-600M en numero de parametros y no ha sido preentrenado, por lo que no es esperable una calidad de traduccion comparable.
 
@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DunkRonit/anlp-a2-part1-mlp
+- Modelo en Hugging Face: https://huggingface.co/DunkRonit/anlp-a2-part1-mlp
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/dunkronit-iiit-hyderabad/anlp-a2-part1/runs/mlp-d97442fc
 - Dataset de entrenamiento citado: belumind/en-vi-ja-curated-500k-triplets (referencia en la model card; no se proporciona URL directa)
 - Repositorio de la asignatura con el codigo de carga `src.part1.model.Transformer`: no disponible en la informacion proporcionada

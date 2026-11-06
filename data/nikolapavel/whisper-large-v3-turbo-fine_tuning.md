@@ -2,11 +2,11 @@
 
 ## Resumen
 
-nikolapavel/whisper-large-v3-turbo-fine_tuning es un repositorio de HuggingFace que contiene un adaptador PEFT (librería declarada: peft 0.13.3.dev0) sobre el modelo de reconocimiento automático del habla openai/whisper-large-v3-turbo. No es un modelo entrenado desde cero, sino un ajuste fino publicado como pesos de adaptador que deben cargarse junto al modelo base, que se descarga por separado.
+nikolapavel/whisper-large-v3-turbo-fine_tuning es un repositorio de Hugging Face que contiene un adaptador PEFT (librería declarada: peft 0.13.3.dev0) sobre el modelo de reconocimiento automático del habla openai/whisper-large-v3-turbo. No es un modelo entrenado desde cero, sino un ajuste fino publicado como pesos de adaptador que deben cargarse junto al modelo base, que se descarga por separado.
 
 El modelo base es un transformer encoder-decoder de la familia Whisper: una variante destilada de whisper-large-v3 en la que el decodificador se reduce a 4 capas en lugar de 32, con 809 millones de parámetros y procesamiento de audio en ventanas de 30 segundos. Whisper está entrenado para transcripción multilingüe, traducción de voz a texto e identificación de idioma.
 
-La relevancia práctica de este repositorio en su estado actual es muy limitada: acumula 0 descargas y 0 likes, declara un tamaño de 0,0 GB y su model card es la plantilla por defecto de HuggingFace sin ninguna sección completada. No hay información verificable sobre el propósito del ajuste, los datos de entrenamiento, los hiperparámetros ni la evaluación, por lo que cualquier uso en producción exige una validación propia previa.
+La relevancia práctica de este repositorio en su estado actual es muy limitada: acumula 0 descargas y 0 likes, declara un tamaño de 0,0 GB y su model card es la plantilla por defecto de Hugging Face sin ninguna sección completada. No hay información verificable sobre el propósito del ajuste, los datos de entrenamiento, los hiperparámetros ni la evaluación, por lo que cualquier uso en producción exige una validación propia previa.
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ La relevancia práctica de este repositorio en su estado actual es muy limitada:
 
 El adaptador se apoya en la arquitectura Whisper del modelo base: un encoder de audio que consume espectrogramas mel de 128 bandas y un decodificador autorregresivo de tipo transformer que genera texto. En large-v3-turbo el decodificador se recorta a 4 capas (frente a las 32 de large-v3), lo que reduce el coste de decodificación y el número de parámetros hasta los 809 M. El modelo base admite las tareas de transcripción (transcribe) y traducción al inglés (translate), además de identificación de idioma y marcas de tiempo a nivel de segmento. Al tratarse de un ajuste fino con PEFT, el entrenamiento solo actualiza un subconjunto reducido de pesos (adaptadores), dejando congelado el resto del modelo base.
 
-No hay información sobre el procedimiento de entrenamiento del adaptador: se desconoce el tipo exacto de adaptador (el repositorio solo indica "peft"), el rango, el conjunto de datos, el número de pasos, la precisión usada (fp16, bf16, etc.) ni si hubo alguna fase de RLHF o DPO. La model card reproduce la plantilla estándar de HuggingFace con todos los campos marcados como "[More Information Needed]". El único dato de configuración disponible es la versión de la librería PEFT empleada (0.13.3.dev0).
+No hay información sobre el procedimiento de entrenamiento del adaptador: se desconoce el tipo exacto de adaptador (el repositorio solo indica "peft"), el rango, el conjunto de datos, el número de pasos, la precisión usada (fp16, bf16, etc.) ni si hubo alguna fase de RLHF o DPO. La model card reproduce la plantilla estándar de Hugging Face con todos los campos marcados como "[More Information Needed]". El único dato de configuración disponible es la versión de la librería PEFT empleada (0.13.3.dev0).
 
 ## Capacidades
 
@@ -101,7 +101,7 @@ La comparación de rendimiento (WER, latencia) entre estos modelos no está disp
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/nikolapavel/whisper-large-v3-turbo-fine_tuning
+- Repositorio del modelo en Hugging Face: https://huggingface.co/nikolapavel/whisper-large-v3-turbo-fine_tuning
 - Modelo base openai/whisper-large-v3-turbo: https://huggingface.co/openai/whisper-large-v3-turbo
 - Modelo openai/whisper-large-v3: https://huggingface.co/openai/whisper-large-v3
 - Repositorio oficial de Whisper en GitHub: https://github.com/openai/whisper

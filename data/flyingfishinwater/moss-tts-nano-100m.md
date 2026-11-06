@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de datos comparativos con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flyingfishinwater/MOSS-TTS-Nano-100M
+- Repositorio Hugging Face: https://huggingface.co/flyingfishinwater/MOSS-TTS-Nano-100M
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M
 - Model card original (referenciada): https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano
 - Repositorio de código: https://github.com/OpenMOSS/MOSS-TTS-Nano

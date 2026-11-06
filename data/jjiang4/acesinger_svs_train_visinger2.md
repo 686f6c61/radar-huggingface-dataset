@@ -68,7 +68,7 @@ No se han publicado comparaciones con otros sistemas ni resultados de benchmarks
 ## Comparativa con modelos similares
 | Modelo | Categoria | Parametros | Contexto / entrada | Metricas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `jjiang4/acesinger_svs_train_visinger2` | SVS GAN (ESPnet3, generador ViSinger2) | 107.319.495 | Partitura (fonemas + tiempos + tempo/notas), 31 cantantes | log_f0_rmse 0,183; mcd 6,10; semitone_acc 0,567; vuv_err 0,092 | no disponible | HuggingFace, 0 descargas |
+| `jjiang4/acesinger_svs_train_visinger2` | SVS GAN (ESPnet3, generador ViSinger2) | 107.319.495 | Partitura (fonemas + tiempos + tempo/notas), 31 cantantes | log_f0_rmse 0,183; mcd 6,10; semitone_acc 0,567; vuv_err 0,092 | no disponible | Hugging Face, 0 descargas |
 | ViSinger2 (referencia académica de la que deriva el generador) | SVS VITS + GAN | no disponible | Partitura / fonemas | no disponible | no disponible | Publicación académica |
 | DiffSinger | SVS basada en difusión | no disponible | Partitura / fonemas / MIDI | no disponible | no disponible | Repositorio público |
 | NNSVS | SVS estadistica (espacio acustico + vocoder) | no disponible | Partitura / MIDI | no disponible | no disponible | Repositorio público |
@@ -88,7 +88,7 @@ No se dispone de datos comparativos verificados (parámetros, contexto o métric
 - Exclusiones de responsabilidad: cualquier uso para suplantar la voz de una persona real sin consentimiento plantea problemas legales y éticos, agravados por la ausencia de licencia explícita.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/jjiang4/acesinger_svs_train_visinger2
+- Modelo en Hugging Face: https://huggingface.co/jjiang4/acesinger_svs_train_visinger2
 - Repositorio de ESPnet (framework base): https://github.com/espnet/espnet
 - Fork indicado en la model card (origen del commit `5fd502819d`): https://github.com/Ting-Justin-Jiang/espnet
 - Receta de la que procede el bundle: `egs3/acesinger/svs` dentro del repositorio de ESPnet3

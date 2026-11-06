@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo con modelos de otras familias 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-Coder-GGUF
+- Hugging Face: https://huggingface.co/Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-Coder-GGUF
 - Modelo base: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF
 - Donante descensurado: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
 - Perfil del autor: https://huggingface.co/Abiray

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3-1p7b-code-replay-hard | 1.7B | 4096 (entrenamiento) | other (Apache 2.0 heredada de Qwen3-1.7B-Base) | HuggingFace, 0 descargas | Checkpoint experimental de investigación |
-| Qwen3-1.7B-Base | 1.7B | no disponible en la información | Apache 2.0 | HuggingFace | Modelo base del que deriva; sin SFT de código específico |
-| Qwen2.5-3B | 3B | no disponible en la información | Qwen Research License | HuggingFace | Base alternativa usada en otros brazos del mismo proyecto |
-| Llama-3.2-3B-Instruct | 3B | no disponible en la información | Llama 3.2 Community License | HuggingFace | Base alternativa usada en otros brazos del mismo proyecto |
+| code-sft-rerun-20261102-qwen3-1p7b-code-replay-hard | 1.7B | 4096 (entrenamiento) | other (Apache 2.0 heredada de Qwen3-1.7B-Base) | Hugging Face, 0 descargas | Checkpoint experimental de investigación |
+| Qwen3-1.7B-Base | 1.7B | no disponible en la información | Apache 2.0 | Hugging Face | Modelo base del que deriva; sin SFT de código específico |
+| Qwen2.5-3B | 3B | no disponible en la información | Qwen Research License | Hugging Face | Base alternativa usada en otros brazos del mismo proyecto |
+| Llama-3.2-3B-Instruct | 3B | no disponible en la información | Llama 3.2 Community License | Hugging Face | Base alternativa usada en otros brazos del mismo proyecto |
 
 La comparación con modelos de propósito general no es directa: este checkpoint es un artefacto de experimentación sin benchmarks publicados, por lo que la comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -79,7 +79,7 @@ La comparación con modelos de propósito general no es directa: este checkpoint
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3-1p7b-code-replay-hard
+- Repositorio Hugging Face: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3-1p7b-code-replay-hard
 - Manifiesto de entrega de modelos: `delivery_manifest.json` (referenciado en la model card, dentro del repositorio)
 - Manifiesto de evaluaciones: `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` (referenciado en la model card, dentro del repositorio)
 - Repositorio de artefactos previos: RL-Forgetting-Experiments-3 (organización mencionada en la model card, sin URL directa en la información disponible)

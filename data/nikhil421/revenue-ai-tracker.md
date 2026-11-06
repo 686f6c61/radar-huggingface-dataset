@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio NIKHIL421/Revenue-AI-Tracker, publicado en HuggingFace, no contiene un modelo de lenguaje ni un modelo de aprendizaje automático preentrenado en el sentido habitual, sino un pipeline completo de machine learning para predecir si una transacción financiera fallida puede recuperarse en un plazo de 72 horas. Desarrollado por el usuario NIKHIL421, el proyecto combina la descarga de conjuntos de datos reales de Kaggle (PaySim, transacciones financieras y fraude con tarjetas de crédito) con un proceso de ingeniería de características que genera un dataset híbrido sintético de 360.000 filas y 26 variables. El modelo predictivo empleado es un clasificador CatBoost, entrenado sobre 300.000 muestras de entrenamiento y 60.000 de validación.
+El repositorio NIKHIL421/Revenue-AI-Tracker, publicado en Hugging Face, no contiene un modelo de lenguaje ni un modelo de aprendizaje automático preentrenado en el sentido habitual, sino un pipeline completo de machine learning para predecir si una transacción financiera fallida puede recuperarse en un plazo de 72 horas. Desarrollado por el usuario NIKHIL421, el proyecto combina la descarga de conjuntos de datos reales de Kaggle (PaySim, transacciones financieras y fraude con tarjetas de crédito) con un proceso de ingeniería de características que genera un dataset híbrido sintético de 360.000 filas y 26 variables. El modelo predictivo empleado es un clasificador CatBoost, entrenado sobre 300.000 muestras de entrenamiento y 60.000 de validación.
 
-La relevancia de este proyecto radica en su aplicación práctica en el sector fintech: permite priorizar los esfuerzos de recuperación de pagos fallidos, una operación que supone pérdidas millonarias para las empresas. Aunque el repositorio se aloja en HuggingFace bajo la etiqueta `region:us`, no se trata de un modelo de lenguaje ni de un transformer; es un pipeline de ML clásico con código fuente y scripts de entrenamiento. La licencia indicada en el repositorio es MIT, aunque en la ficha de HuggingFace aparece como "no disponible". No se especifican parámetros, contexto ni arquitectura de red neuronal porque no aplican en este caso.
+La relevancia de este proyecto radica en su aplicación práctica en el sector fintech: permite priorizar los esfuerzos de recuperación de pagos fallidos, una operación que supone pérdidas millonarias para las empresas. Aunque el repositorio se aloja en Hugging Face bajo la etiqueta `region:us`, no se trata de un modelo de lenguaje ni de un transformer; es un pipeline de ML clásico con código fuente y scripts de entrenamiento. La licencia indicada en el repositorio es MIT, aunque en la ficha de Hugging Face aparece como "no disponible". No se especifican parámetros, contexto ni arquitectura de red neuronal porque no aplican en este caso.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La relevancia de este proyecto radica en su aplicación práctica en el sector f
 | Longitud de contexto | no disponible (no es un modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (proyecto de código, no modelo lingüístico) |
-| Licencia | MIT (según el repositorio; en HuggingFace aparece "no disponible") |
+| Licencia | MIT (según el repositorio; en Hugging Face aparece "no disponible") |
 | Formato de pesos | .cbm (formato nativo de CatBoost) |
 
 ## Arquitectura y entrenamiento
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la información proporcionada, ya que el proyecto es un pipeline específico de CatBoost para un dominio concreto (recuperación de pagos) y no existe una categoría estándar de modelos similares en HuggingFace con los que compararlo.
+No disponible. No se han identificado modelos comparables en la información proporcionada, ya que el proyecto es un pipeline específico de CatBoost para un dominio concreto (recuperación de pagos) y no existe una categoría estándar de modelos similares en Hugging Face con los que compararlo.
 
 ## Limitaciones y advertencias
 
@@ -63,11 +63,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 - La model card advierte que el rendimiento puede variar ligeramente según la semilla aleatoria; no hay métricas de validación robustas publicadas.
 - No se han documentado sesgos en las predicciones, pero al ser un modelo entrenado con datos de Kaggle, pueden existir sesgos geográficos o demográficos implícitos.
 - La licencia MIT permite uso comercial, pero no se garantiza la exactitud ni la aptitud para producción en entornos financieros críticos.
-- El repositorio no incluye un modelo preentrenado en HuggingFace; solo los scripts y el pipeline. Para utilizarlo, es necesario ejecutar el código completo.
+- El repositorio no incluye un modelo preentrenado en Hugging Face; solo los scripts y el pipeline. Para utilizarlo, es necesario ejecutar el código completo.
 - No hay soporte para otros idiomas ni para procesamiento de lenguaje natural.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NIKHIL421/Revenue-AI-Tracker
+- Repositorio en Hugging Face: https://huggingface.co/NIKHIL421/Revenue-AI-Tracker
 - Repositorio de GitHub: https://github.com/viRAJ357/Revenue-AI-Tracker (extraído del README; no se ha verificado su disponibilidad en la búsqueda web)
 - No se han encontrado papers, blogs ni demos adicionales en los resultados de búsqueda web proporcionados.

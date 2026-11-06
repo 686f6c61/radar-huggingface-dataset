@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mathishayumeth/imagegen` es un modelo publicado en HuggingFace por el usuario `mathishayumeth`. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos publicos del repositorio: identificador, autor, licencia MIT, etiqueta de region "us", cero descargas y un unico "like". No hay model card con contenido tecnico: el README unicamente declara `license: mit`, sin descripcion, sin instrucciones de uso y sin ejemplos de inferencia.
+El repositorio `mathishayumeth/imagegen` es un modelo publicado en Hugging Face por el usuario `mathishayumeth`. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos publicos del repositorio: identificador, autor, licencia MIT, etiqueta de region "us", cero descargas y un unico "like". No hay model card con contenido tecnico: el README unicamente declara `license: mit`, sin descripcion, sin instrucciones de uso y sin ejemplos de inferencia.
 
 No es posible determinar que problema resuelve el modelo, su arquitectura, su tamano ni su modalidad. El nombre del repositorio, "imagegen", sugiere un proposito relacionado con la generacion de imagenes, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor en la documentacion publicada. Tampoco hay confirmacion de si se trata de un modelo de difusion, un transformer multimodal, un adaptador (LoRA) o cualquier otra categoria.
 
@@ -89,6 +89,6 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mathishayumeth/imagegen
+- Hugging Face: https://huggingface.co/mathishayumeth/imagegen
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Las referencias devueltas por la busqueda corresponden a paginas de soporte de Microsoft Windows y no guardan relacion con el repositorio.

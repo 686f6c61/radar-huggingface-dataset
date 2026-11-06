@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prereasoner/prereasoner-weights
+- Repositorio Hugging Face: https://huggingface.co/prereasoner/prereasoner-weights
 - Repositorio fuente (datos y codigo): https://github.com/ManiDoraisamy/prereasoner-data
 - Sitio web del proyecto: https://prereasoner.com/
 - Model card del repositorio fuente: https://github.com/ManiDoraisamy/prereasoner-data/blob/main/docs/MODEL_CARD.md

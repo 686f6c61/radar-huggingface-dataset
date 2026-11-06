@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/trevorlink/speechless-media-toolchain
+- Repositorio en Hugging Face: https://huggingface.co/trevorlink/speechless-media-toolchain
 - Proyecto upstream yt-dlp: https://github.com/yt-dlp/yt-dlp
 - Proyecto upstream Deno: https://github.com/denoland/deno

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SLAI-T-Rex-Pro es un modelo de lenguaje de gran escala publicado por la organización SLAI-AITP en HuggingFace. El repositorio, identificado como `SLAI-AITP/SLAI-T-Rex-Pro`, contiene pesos en formato safetensors y está etiquetado con la referencia `deepseek_v4`, lo que sugiere una posible relación con la familia de arquitecturas DeepSeek, aunque no se ha confirmado oficialmente. El modelo destaca por su tamaño: 1.598.839.674.782 parámetros totales, lo que equivale a aproximadamente 1,6 billones de parámetros en la escala larga europea (1,6 trillones en escala corta estadounidense). El repositorio ocupa 3.197,7 GB, consistente con un modelo de ese tamaño almacenado en precisión FP16 o BF16.
+SLAI-T-Rex-Pro es un modelo de lenguaje de gran escala publicado por la organización SLAI-AITP en Hugging Face. El repositorio, identificado como `SLAI-AITP/SLAI-T-Rex-Pro`, contiene pesos en formato safetensors y está etiquetado con la referencia `deepseek_v4`, lo que sugiere una posible relación con la familia de arquitecturas DeepSeek, aunque no se ha confirmado oficialmente. El modelo destaca por su tamaño: 1.598.839.674.782 parámetros totales, lo que equivale a aproximadamente 1,6 billones de parámetros en la escala larga europea (1,6 trillones en escala corta estadounidense). El repositorio ocupa 3.197,7 GB, consistente con un modelo de ese tamaño almacenado en precisión FP16 o BF16.
 
-La ficha se elabora a partir de la información pública disponible en HuggingFace, que es extremadamente limitada. No se han publicado detalles sobre arquitectura interna, proceso de entrenamiento, licencia, idiomas soportados ni benchmarks. La relevancia del modelo radica en su magnitud, que lo situaría entre los sistemas de mayor tamaño conocidos, pero su utilidad práctica para desarrolladores e investigadores queda condicionada a la disponibilidad de documentación adicional, que actualmente no existe en el repositorio.
+La ficha se elabora a partir de la información pública disponible en Hugging Face, que es extremadamente limitada. No se han publicado detalles sobre arquitectura interna, proceso de entrenamiento, licencia, idiomas soportados ni benchmarks. La relevancia del modelo radica en su magnitud, que lo situaría entre los sistemas de mayor tamaño conocidos, pero su utilidad práctica para desarrolladores e investigadores queda condicionada a la disponibilidad de documentación adicional, que actualmente no existe en el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La ficha se elabora a partir de la información pública disponible en HuggingFa
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura del modelo. El tag `deepseek_v4` en HuggingFace podría indicar que SLAI-T-Rex-Pro se basa en la arquitectura de DeepSeek v4, que presumiblemente emplea una mezcla de expertos (MoE) con activación dispersa, pero esta afirmación no está respaldada por documentación del autor. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. El tamaño del repositorio (3.197,7 GB) sugiere que los pesos están almacenados en una precisión de 16 bits (FP16/BF16), lo que implicaría aproximadamente 2 bytes por parámetro, aunque esta es una inferencia basada en el tamaño y no en una confirmación explícita.
+No se dispone de información oficial sobre la arquitectura del modelo. El tag `deepseek_v4` en Hugging Face podría indicar que SLAI-T-Rex-Pro se basa en la arquitectura de DeepSeek v4, que presumiblemente emplea una mezcla de expertos (MoE) con activación dispersa, pero esta afirmación no está respaldada por documentación del autor. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. El tamaño del repositorio (3.197,7 GB) sugiere que los pesos están almacenados en una precisión de 16 bits (FP16/BF16), lo que implicaría aproximadamente 2 bytes por parámetro, aunque esta es una inferencia basada en el tamaño y no en una confirmación explícita.
 
 ## Capacidades
 
@@ -54,4 +54,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SLAI-AITP/SLAI-T-Rex-Pro
+- Repositorio Hugging Face: https://huggingface.co/SLAI-AITP/SLAI-T-Rex-Pro

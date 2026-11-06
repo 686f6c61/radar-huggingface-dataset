@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ANTRU-Nano es un transformer causal decoder-only de 79,5 millones de parámetros entrenado desde cero (inicialización aleatoria, sin base preentrenada) por el proyecto ANTRU, una familia de modelos locales autoentrenados publicada en HuggingFace bajo ANTRUhub. Su rasgo distintivo no es el rendimiento, sino la viabilidad del entrenamiento en hardware de consumo: se entrenó en un portátil con un Intel i7-8550U y una GeForce MX150 de 2 GB en una sesión de GPU de unos 40 minutos a ~761 tokens/segundo.
+ANTRU-Nano es un transformer causal decoder-only de 79,5 millones de parámetros entrenado desde cero (inicialización aleatoria, sin base preentrenada) por el proyecto ANTRU, una familia de modelos locales autoentrenados publicada en Hugging Face bajo ANTRUhub. Su rasgo distintivo no es el rendimiento, sino la viabilidad del entrenamiento en hardware de consumo: se entrenó en un portátil con un Intel i7-8550U y una GeForce MX150 de 2 GB en una sesión de GPU de unos 40 minutos a ~761 tokens/segundo.
 
 El modelo resuelve un problema educativo y de demostración: cómo entrenar un LLM completo con recursos mínimos. Se entrenó sobre un corpus de ~1,79 millones de tokens (Wikipedia en inglés más un currículo propio con identidad, explicaciones de Python, razonamiento matemático paso a paso y ejercicios aritméticos sintéticos). Con ~22 tokens de entrenamiento por parámetro, está muy por debajo del óptimo de Chinchilla, por lo que la propia model card advierte que es un artefacto educativo y no un asistente conversacional.
 
@@ -82,7 +82,7 @@ ANTRU-Nano comparte rango de tamaño con Pythia-70M y GPT-2 small, pero su volum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANTRUhub/ANTRU-Nano
+- Modelo en Hugging Face: https://huggingface.co/ANTRUhub/ANTRU-Nano
 - Organización del proyecto ANTRU: https://huggingface.co/ANTRUhub
 - Código incluido en el repositorio (carpeta `code/` con `antru_model_torch.py`, `antru_tokenizer.py`, `antru_config.py`): disponible dentro del repo del modelo
 - Paper, blog o demo: no disponible

@@ -114,8 +114,8 @@ No se dispone de cifras comparativas de EER bajo protocolos idénticos para esto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/univ_ecapa_tdnn_base_ge2e
-- Colección FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/univ_ecapa_tdnn_base_ge2e
+- Colección FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI flaxspeaker: https://pypi.org/project/flaxspeaker/
 - Paper GE2E: https://arxiv.org/abs/1710.10467

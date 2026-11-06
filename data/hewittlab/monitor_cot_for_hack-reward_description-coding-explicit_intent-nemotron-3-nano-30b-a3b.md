@@ -88,11 +88,11 @@ No se dispone de información sobre modelos externos comparables. La comparació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-nemotron-3-nano-30b-a3b
+- Repositorio en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-nemotron-3-nano-30b-a3b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-coding
 - Dataset de origen de los problemas: https://huggingface.co/datasets/newfacade/LeetCodeDataset
 - Codigo del trabajo (Reward Misspecification Degrades Chain-of-Thought Monitorability): https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
-- Guia de exportacion a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guia de exportacion a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
 - Repositorio tinker-cookbook: https://github.com/thinking-machines-lab/tinker-cookbook
 - Enlace directo al paper: no disponible en la informacion proporcionada (solo se cita el titulo del trabajo).

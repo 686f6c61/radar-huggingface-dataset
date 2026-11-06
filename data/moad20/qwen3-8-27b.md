@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de vision, publicado en HuggingFace por el usuario moad20 bajo licencia Apache 2.0. Segun la model card, se trata de la generacion Qwen3.8 de la familia abierta de Qwen, construida sobre la base arquitectonica de Qwen3.5, y orientada a codificacion, trabajo profesional, investigacion y tareas agenticas de horizonte largo. El modelo es denso (no MoE), con 27.781.427.952 parametros reales segun los pesos en safetensors, y una longitud de contexto nativa de 262.144 tokens extensible hasta 1.000.000.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de vision, publicado en Hugging Face por el usuario moad20 bajo licencia Apache 2.0. Segun la model card, se trata de la generacion Qwen3.8 de la familia abierta de Qwen, construida sobre la base arquitectonica de Qwen3.5, y orientada a codificacion, trabajo profesional, investigacion y tareas agenticas de horizonte largo. El modelo es denso (no MoE), con 27.781.427.952 parametros reales segun los pesos en safetensors, y una longitud de contexto nativa de 262.144 tokens extensible hasta 1.000.000.
 
 La arquitectura es un transformer hibrido: combina capas de atencion lineal (Gated DeltaNet) con capas de atencion con compuerta (Gated Attention) en un patron de 16 bloques repetidos, 64 capas en total, dimension oculta de 5120 y FFN de 17.408. Incluye prediccion multi-token (MTP) entrenada con varios pasos, lo que habilita decodificacion especulativa. El modelo acepta entrada de imagen y video ademas de texto, y expone control flexible del modo de razonamiento mediante los parametros `reasoning_effort` y `preserve_thinking`.
 
@@ -78,7 +78,7 @@ Los resultados de busqueda web proporcionados no contienen informacion tecnica s
 - VRAM para pesos en INT4: aproximadamente 14-16 GB. Cabe en RTX 4090 (24 GB), RTX 5090 (32 GB) y GPUs consumer de gama alta, siempre que se generen cuantizaciones (no publicadas en el repositorio).
 - Cache KV: dado que solo 16 de las 64 capas son atencionales, con 4 cabezas KV de dimension 256 el coste estimado es de unos 64 KB por token en BF16, es decir unos 2 GB a 32K tokens, 8 GB a 128K y 16 GB a 256K. Las 48 capas Gated DeltaNet usan estado recurrente de tamano fijo (del orden de decenas de MB por secuencia), por lo que no crecen con el contexto. Estas cifras son estimaciones calculadas a partir de la arquitectura publicada, no datos oficiales.
 - GPU recomendadas: H100 80GB o A100 80GB para BF16 sin cuantizar; A100 40GB o L40S para FP8; RTX 4090/5090 para INT4.
-- Opciones de despliegue: la model card menciona compatibilidad con HuggingFace Transformers, vLLM, SGLang y TokenSpeed. No se menciona soporte de llama.cpp, Ollama ni TGI, y no hay pesos GGUF publicados.
+- Opciones de despliegue: la model card menciona compatibilidad con Hugging Face Transformers, vLLM, SGLang y TokenSpeed. No se menciona soporte de llama.cpp, Ollama ni TGI, y no hay pesos GGUF publicados.
 - API gestionada: Qwen Cloud ofrece una version alojada con 1M de contexto por defecto y herramientas integradas (anunciada como proxima).
 - Latencia y throughput: no disponible.
 
@@ -110,7 +110,7 @@ Los cuatro modelos de comparacion aparecen unicamente como columnas de las tabla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moad20/Qwen3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/moad20/Qwen3.8-27B
 - Qwen Cloud: https://www.qwencloud.com
 - Pagina de Qwen3.8-27B en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Paper, repositorio de codigo o demo oficial: no disponible en la informacion proporcionada

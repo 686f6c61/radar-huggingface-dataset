@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-1.0-lora es un adaptador LoRA orientado a la edicion de imagenes (image edit) dentro del ecosistema ComfyUI, publicado en HuggingFace por el usuario RunningHubAI y atribuido al autor "@狐月白" en la plataforma RunningHub. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un conjunto de pesos de ajuste fino (weights de LoRA) que se cargan sobre un modelo base para modificar su comportamiento generativo. El pipeline declarado es `image-text-to-image`, lo que indica que el adaptador opera en tareas de generacion y edicion de imagenes condicionadas por texto.
+rh-1.0-lora es un adaptador LoRA orientado a la edicion de imagenes (image edit) dentro del ecosistema ComfyUI, publicado en Hugging Face por el usuario RunningHubAI y atribuido al autor "@狐月白" en la plataforma RunningHub. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un conjunto de pesos de ajuste fino (weights de LoRA) que se cargan sobre un modelo base para modificar su comportamiento generativo. El pipeline declarado es `image-text-to-image`, lo que indica que el adaptador opera en tareas de generacion y edicion de imagenes condicionadas por texto.
 
 El repositorio contiene un unico archivo de pesos en formato safetensors de aproximadamente 260 MiB, lo que es coherente con un adaptador LoRA de rango bajo y no con un modelo completo. La model card indica que los pesos fueron ajustados a partir de un modelo base denominado "F1基础-Kontext", del cual no se proporcionan mas detalles tecnicos (arquitectura, numero de parametros ni licencia). El nombre del archivo de pesos sugiere una especializacion en retratos fotorrealistas, aunque esta informacion no se detalla tecnicamente en la documentacion.
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-1.0-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-1.0-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2039086066484912129
 - Pagina del autor en RunningHub: https://www.runninghub.cn/user-center/2038894798714445825
 - RunningHub International: https://www.runninghub.ai

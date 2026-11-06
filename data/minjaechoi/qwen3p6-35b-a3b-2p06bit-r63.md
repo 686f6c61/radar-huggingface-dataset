@@ -18,7 +18,7 @@ Es relevante ahora por dos motivos. Primero, porque la cuantización extrema de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Expertos enrutados a 2,0608 bits de media; resto de pesos en BF16. Los pesos se almacenan desquantizados en tensores BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en la ficha de HuggingFace; el autor indica que sigue la licencia del modelo base |
+| Licencia | no disponible en la ficha de Hugging Face; el autor indica que sigue la licencia del modelo base |
 | Formato de pesos | safetensors (BF16 tras desquantizacion) |
 | Tamano del repositorio | 70,2 GB |
 | Libreria declarada | transformers |
@@ -82,7 +82,7 @@ La unica comparacion sustentada por los datos disponibles es contra el propio mo
 ## Limitaciones y advertencias
 
 - Advertencia principal sobre el ahorro de memoria: aunque los expertos promedian 2,0608 bits, los pesos se almacenan desquantizados en BF16. El repositorio ocupa 70,2 GB y la inferencia consume aproximadamente lo mismo que el modelo en BF16 completo. La compresion no se traduce en un menor uso de VRAM en tiempo de ejecucion con `transformers` o vLLM estandar.
-- Estado de investigacion: es un checkpoint interno de investigacion, sin validacion publica, sin benchmarks y con cero descargas e interacciones registradas en HuggingFace.
+- Estado de investigacion: es un checkpoint interno de investigacion, sin validacion publica, sin benchmarks y con cero descargas e interacciones registradas en Hugging Face.
 - Riesgo de degradacion de calidad: la cuantizacion a 2,0608 bits en los expertos enrutados puede degradar el razonamiento, la coherencia en contextos largos y la adherencia a instrucciones. No hay mediciones publicadas que acoten esa perdida.
 - Riesgo de alucinacion: no cuantificado. La combinacion de un modelo base desconocido y una cuantizacion agresiva aumenta la incertidumbre sobre la fiabilidad factual.
 - Idiomas: no se declara ningun idioma soportado, lo que impide garantizar un comportamiento adecuado en castellano o en cualquier otra lengua concreta.
@@ -94,5 +94,5 @@ La unica comparacion sustentada por los datos disponibles es contra el propio mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p06bit-r63
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p06bit-r63
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

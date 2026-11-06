@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Apollo Spark 1.0 (identificador `murilodias123/apollo-spark-1.0`) es un modelo de generacion de texto publicado en HuggingFace por el usuario murilodias123. Se trata de un modelo conversacional de pequeno tamano, con 494.032.768 parametros (aproximadamente 0,49 B), construido sobre la arquitectura Qwen2 y ajustado mediante TRL con la tecnica ORPO (Odds Ratio Preference Optimization), segun las etiquetas declaradas en el repositorio.
+Apollo Spark 1.0 (identificador `murilodias123/apollo-spark-1.0`) es un modelo de generacion de texto publicado en Hugging Face por el usuario murilodias123. Se trata de un modelo conversacional de pequeno tamano, con 494.032.768 parametros (aproximadamente 0,49 B), construido sobre la arquitectura Qwen2 y ajustado mediante TRL con la tecnica ORPO (Odds Ratio Preference Optimization), segun las etiquetas declaradas en el repositorio.
 
-El modelo se distribuye en formato safetensors y es compatible con las librerias transformers, text-generation-inference y con endpoints compatibles con la API de HuggingFace. Su tamano reducido lo situa en la categoria de modelos ligeros, aptos para inferencia en hardware de consumo e incluso en CPU, lo que lo hace interesante para prototipado rapido, despliegue en el borde y experimentacion con tecnicas de alineacion como ORPO.
+El modelo se distribuye en formato safetensors y es compatible con las librerias transformers, text-generation-inference y con endpoints compatibles con la API de Hugging Face. Su tamano reducido lo situa en la categoria de modelos ligeros, aptos para inferencia en hardware de consumo e incluso en CPU, lo que lo hace interesante para prototipado rapido, despliegue en el borde y experimentacion con tecnicas de alineacion como ORPO.
 
 La relevancia de esta ficha es limitada por la falta de documentacion: la model card es una plantilla automatica sin rellenar, no se declaran licencia ni idiomas soportados, y no hay resultados de evaluacion publicados. Ademas, el repositorio registra cero descargas y cero "likes" en el momento de la consulta, por lo que debe tratarse como un modelo experimental o de investigacion personal mas que como un artefacto listo para produccion.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 1 GB en FP16 (0,49 B x 2 bytes), unos 0,5 GB en INT8 y unos 0,25 GB en INT4, sin contar el overhead del runtime ni la cache KV.
 - GPU recomendadas: cualquier GPU moderna con al menos 2-4 GB de VRAM es suficiente. No requiere A100 ni H100; una GTX 1650, RTX 3060 o integrada reciente bastan.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos anos, e incluso puede ejecutarse en CPU.
-- Opciones de despliegue: transformers, text-generation-inference (TGI) y endpoints compatibles con la API de HuggingFace, segun las etiquetas del repositorio. No se publican pesos en formato GGUF, por lo que el uso directo con llama.cpp u Ollama no esta garantizado sin conversion previa.
+- Opciones de despliegue: transformers, text-generation-inference (TGI) y endpoints compatibles con la API de Hugging Face, segun las etiquetas del repositorio. No se publican pesos en formato GGUF, por lo que el uso directo con llama.cpp u Ollama no esta garantizado sin conversion previa.
 - Latencia y throughput estimados: no disponible (no se publican mediciones).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| murilodias123/apollo-spark-1.0 | 0,49 B | No disponible | No disponible | HuggingFace (0 descargas) | Ajuste ORPO sobre Qwen2, model card vacia |
-| Qwen2-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache 2.0 | HuggingFace y la mayoria de runtimes | Modelo base probable; licencia permisiva y benchmarks publicos |
-| murilodias123/apollo-ai | 0,49 B | 32.768 K (segun free2aitools) | No disponible | HuggingFace | Modelo del mismo autor, presumiblemente relacionado |
-| TinyLlama-1.1B-Chat | 1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace, llama.cpp, Ollama | Alternativa ligera con mas parametros y mejor documentacion |
+| murilodias123/apollo-spark-1.0 | 0,49 B | No disponible | No disponible | Hugging Face (0 descargas) | Ajuste ORPO sobre Qwen2, model card vacia |
+| Qwen2-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache 2.0 | Hugging Face y la mayoria de runtimes | Modelo base probable; licencia permisiva y benchmarks publicos |
+| murilodias123/apollo-ai | 0,49 B | 32.768 K (segun free2aitools) | No disponible | Hugging Face | Modelo del mismo autor, presumiblemente relacionado |
+| TinyLlama-1.1B-Chat | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face, llama.cpp, Ollama | Alternativa ligera con mas parametros y mejor documentacion |
 
 La comparacion directa de rendimiento no es posible porque Apollo Spark 1.0 no publica benchmarks. En cuanto a licencia y trazabilidad, Qwen2-0.5B-Instruct y TinyLlama-1.1B-Chat ofrecen condiciones claras, mientras que Apollo Spark 1.0 no declara licencia.
 
@@ -85,7 +85,7 @@ La comparacion directa de rendimiento no es posible porque Apollo Spark 1.0 no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/murilodias123/apollo-spark-1.0
+- Modelo en Hugging Face: https://huggingface.co/murilodias123/apollo-spark-1.0
 - Otro modelo del mismo autor: https://huggingface.co/murilodias123/apollo-ai
 - Ficha de apollo-ai en Free2AITools: https://free2aitools.com/model/murilodias123/apollo-ai
 - Endpoint de inferencia de apollo-ai en FriendliAI: https://friendli.ai/models/murilodias123/apollo-ai

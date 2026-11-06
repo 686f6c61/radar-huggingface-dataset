@@ -4,7 +4,7 @@
 
 `gmuntu/scratch-socratique-gemma` es una copia (mirror) del modelo `litert-community/Gemma3-1B-IT` publicada por el usuario gmuntu para ser consumida por la aplicación Scratch Socratique. No se trata de un modelo entrenado o afinado por el autor: la propia model card indica que es una «copie du modèle» del citado modelo de LiteRT Community, distribuida bajo los Gemma Terms of Use de Google. Por tanto, sus capacidades técnicas son las del modelo base Gemma 3 1B en su variante instruction-tuned.
 
-El interés de la ficha es limitado desde el punto de vista de la investigación: el repositorio no incluye documentación técnica propia, no declara pipeline, licencia ni idiomas en los metadatos de HuggingFace, y registra 0 descargas y 0 likes en el momento de la consulta. Su relevancia es práctica: ejemplifica el patrón de redistribución de un modelo pequeño (aproximadamente 1 000 millones de parámetros) en formato LiteRT para inferencia en dispositivo dentro de una aplicación educativa concreta.
+El interés de la ficha es limitado desde el punto de vista de la investigación: el repositorio no incluye documentación técnica propia, no declara pipeline, licencia ni idiomas en los metadatos de Hugging Face, y registra 0 descargas y 0 likes en el momento de la consulta. Su relevancia es práctica: ejemplifica el patrón de redistribución de un modelo pequeño (aproximadamente 1 000 millones de parámetros) en formato LiteRT para inferencia en dispositivo dentro de una aplicación educativa concreta.
 
 El tamaño del repositorio es de 0,7 GB, coherente con pesos cuantizados para ejecución en CPU o en hardware de gama baja, aunque la información disponible no detalla el esquema de cuantización ni los archivos exactos incluidos.
 
@@ -18,7 +18,7 @@ El tamaño del repositorio es de 0,7 GB, coherente con pesos cuantizados para ej
 | Longitud de contexto | No disponible en la información proporcionada (el modelo base Gemma 3 1B declara 32 768 tokens en su documentación pública, sin confirmar en esta copia) |
 | Tipos de cuantización | No disponible; el tamaño de 0,7 GB es compatible con pesos cuantizados, pero no se especifica el esquema |
 | Idiomas soportados | No disponible en los metadatos ni en la model card (el modelo base declara soporte multilingüe en su documentación pública) |
-| Licencia | Gemma Terms of Use (indicada en la model card); el campo de licencia de HuggingFace aparece como «no disponible» |
+| Licencia | Gemma Terms of Use (indicada en la model card); el campo de licencia de Hugging Face aparece como «no disponible» |
 | Formato de pesos | No disponible con detalle; el modelo de origen es de la familia LiteRT (`litert-community`), lo que apunta a formato `.task`/LiteRT, aunque no se listan archivos |
 
 ## Arquitectura y entrenamiento
@@ -65,17 +65,17 @@ Datos de la documentación pública de cada modelo; no verificados en este repos
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gmuntu/scratch-socratique-gemma` (copia de Gemma 3 1B IT) | 1B | No disponible (32 768 en el base, sin confirmar) | Gemma Terms of Use | HuggingFace, 0 descargas |
-| Gemma 3 1B IT (`litert-community`) | 1B | 32 768 | Gemma Terms of Use | HuggingFace, formato LiteRT |
-| Llama 3.2 1B Instruct | 1B | 128 000 | Llama 3.2 Community License | HuggingFace, amplio ecosistema |
-| Qwen2.5 1.5B Instruct | 1,5B | 32 768 | Apache 2.0 | HuggingFace, amplio ecosistema |
-| SmolLM2 1.7B Instruct | 1,7B | 8 192 | Apache 2.0 | HuggingFace, orientado a dispositivo |
+| `gmuntu/scratch-socratique-gemma` (copia de Gemma 3 1B IT) | 1B | No disponible (32 768 en el base, sin confirmar) | Gemma Terms of Use | Hugging Face, 0 descargas |
+| Gemma 3 1B IT (`litert-community`) | 1B | 32 768 | Gemma Terms of Use | Hugging Face, formato LiteRT |
+| Llama 3.2 1B Instruct | 1B | 128 000 | Llama 3.2 Community License | Hugging Face, amplio ecosistema |
+| Qwen2.5 1.5B Instruct | 1,5B | 32 768 | Apache 2.0 | Hugging Face, amplio ecosistema |
+| SmolLM2 1.7B Instruct | 1,7B | 8 192 | Apache 2.0 | Hugging Face, orientado a dispositivo |
 
 ## Limitaciones y advertencias
 
-- Repositorio sin documentación técnica propia: no hay pipeline declarado, ni idiomas, ni licencia en los metadatos de HuggingFace, lo que dificulta la trazabilidad y el cumplimiento normativo.
+- Repositorio sin documentación técnica propia: no hay pipeline declarado, ni idiomas, ni licencia en los metadatos de Hugging Face, lo que dificulta la trazabilidad y el cumplimiento normativo.
 - Es una copia no verificada del modelo base: el autor no documenta el proceso de conversión ni garantiza la integridad de los pesos respecto al original.
-- Licencia: los Gemma Terms of Use imponen obligaciones específicas de uso (restricciones de uso aceptable, obligaciones de atribución y cláusulas de terminación). Cualquier uso comercial debe revisarse contra dichos términos; el campo de licencia de HuggingFace figura como «no disponible».
+- Licencia: los Gemma Terms of Use imponen obligaciones específicas de uso (restricciones de uso aceptable, obligaciones de atribución y cláusulas de terminación). Cualquier uso comercial debe revisarse contra dichos términos; el campo de licencia de Hugging Face figura como «no disponible».
 - Riesgo de alucinación: inherente a un modelo de 1B de parámetros; la fiabilidad en tareas de razonamiento complejo o conocimiento factual es limitada y no debe usarse como fuente de verdad.
 - Sesgos: no evaluados en esta copia; el modelo base puede reproducir sesgos de sus datos de entrenamiento.
 - Limitación de idioma: el soporte de castellano no está confirmado en la información disponible; debe validarse empíricamente antes de desplegarlo en producción.
@@ -85,7 +85,7 @@ Datos de la documentación pública de cada modelo; no verificados en este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gmuntu/scratch-socratique-gemma
+- Repositorio en Hugging Face: https://huggingface.co/gmuntu/scratch-socratique-gemma
 - Modelo base: https://huggingface.co/litert-community/Gemma3-1B-IT
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Resultados de búsqueda web: sin enlaces relevantes; las búsquedas devolvieron únicamente contenido no relacionado con el modelo, por lo que no se incluyen.

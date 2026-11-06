@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Cuantización y formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwopus3.8-27B-Flash-PTQ-groupwise-int-NInfer (este) | 27B | groupwise-int, NInfer (.ninfer) | No disponible | Apache 2.0 | HuggingFace |
-| Qwopus3.8-27B-Flash-PTQ-NVFP4-NInfer | 27B | NVFP4, NInfer (.ninfer) | No disponible | Apache 2.0 | HuggingFace |
-| Qwopus3.8-27B-Flash-GGUF (Jackrong) | 27B | Q5_K_M, GGUF | No disponible | No disponible | HuggingFace |
+| Qwopus3.8-27B-Flash-PTQ-groupwise-int-NInfer (este) | 27B | groupwise-int, NInfer (.ninfer) | No disponible | Apache 2.0 | Hugging Face |
+| Qwopus3.8-27B-Flash-PTQ-NVFP4-NInfer | 27B | NVFP4, NInfer (.ninfer) | No disponible | Apache 2.0 | Hugging Face |
+| Qwopus3.8-27B-Flash-GGUF (Jackrong) | 27B | Q5_K_M, GGUF | No disponible | No disponible | Hugging Face |
 
 La comparativa se limita a variantes del mismo fine-tune. No se dispone de datos de benchmarks para comparar rendimiento.
 

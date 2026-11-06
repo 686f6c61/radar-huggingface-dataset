@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Meta-Llama-3.1-70B-Instruct-gptq-w4a16-c3 | 70B (11,19B en safetensors del repo) | No disponible (base: 128k) | GPTQ W4A16, group 128 | Llama 3.1 Community | HuggingFace, 22 descargas |
-| meta-llama/Meta-Llama-3.1-70B-Instruct | 70B | 128.000 tokens | BF16/FP16 | Llama 3.1 Community | HuggingFace oficial |
-| Otras configuraciones del mismo paper (colección ICAIF '26) | 70B | No disponible | Varias (30 configuraciones) | Llama 3.1 Community | Colección en HuggingFace |
+| jy395/Meta-Llama-3.1-70B-Instruct-gptq-w4a16-c3 | 70B (11,19B en safetensors del repo) | No disponible (base: 128k) | GPTQ W4A16, group 128 | Llama 3.1 Community | Hugging Face, 22 descargas |
+| meta-llama/Meta-Llama-3.1-70B-Instruct | 70B | 128.000 tokens | BF16/FP16 | Llama 3.1 Community | Hugging Face oficial |
+| Otras configuraciones del mismo paper (colección ICAIF '26) | 70B | No disponible | Varias (30 configuraciones) | Llama 3.1 Community | Colección en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-70B-Instruct-gptq-w4a16-c3
+- Modelo en Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-70B-Instruct-gptq-w4a16-c3
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
 - Repositorio del proyecto: https://github.com/JunyiYe/finance-ptc-calibration
 - Script de cuantización: https://github.com/JunyiYe/finance-ptc-calibration/blob/main/scripts/quantization/gptq_w4a16.py

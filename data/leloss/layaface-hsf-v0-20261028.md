@@ -79,8 +79,8 @@ Precisión en benchmarks de caras reales con protocolo estándar de diez pliegue
 
 | Modelo | Parámetros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LayaFace-HSF.v0.20261028 | 86,2 M | dos recortes 112x112 -> 224x224 | Verificación facial por pares | no disponible (términos de pesos sin verificar) | HuggingFace, bundle offline |
-| openai/clip-vit-base-patch16 (base) | ~86 M (ViT-B/16) | imagen 224x224 | Embeddings imagen-texto | MIT | HuggingFace, `transformers` |
+| LayaFace-HSF.v0.20261028 | 86,2 M | dos recortes 112x112 -> 224x224 | Verificación facial por pares | no disponible (términos de pesos sin verificar) | Hugging Face, bundle offline |
+| openai/clip-vit-base-patch16 (base) | ~86 M (ViT-B/16) | imagen 224x224 | Embeddings imagen-texto | MIT | Hugging Face, `transformers` |
 | ArcFace / reconocimiento facial clásico | no disponible | recortes alineados | Verificación/identificación | variable según implementación | múltiples repositorios |
 
 La comparación directa con ArcFace u otros modelos de verificación no está disponible en la información proporcionada. El modelo base CLIP ViT-B/16 se incluye como referencia por ser el punto de partida del ajuste.
@@ -102,7 +102,7 @@ La comparación directa con ArcFace u otros modelos de verificación no está di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leloss/LayaFace-HSF.v0.20261028
+- Hugging Face: https://huggingface.co/leloss/LayaFace-HSF.v0.20261028
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch16
 - Paper CLIP (referencia en tags): https://arxiv.org/abs/2103.00020
 - Paper referenciado en tags: https://arxiv.org/abs/2304.07060

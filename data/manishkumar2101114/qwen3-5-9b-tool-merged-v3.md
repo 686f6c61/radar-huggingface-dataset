@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B tool-merged-v3 es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3.5-9B, publicado por el usuario manishkumar2101114 en HuggingFace. Se trata de una variante especializada en tool calling (llamada a herramientas) y en el dominio de agentes de voz, orientada a conversaciones en inglés e hindi (incluyendo hinglish). El modelo conserva la licencia Apache 2.0 del modelo base y se distribuye en formato safetensors con aproximadamente 9.653 millones de parámetros totales.
+Qwen3.5-9B tool-merged-v3 es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3.5-9B, publicado por el usuario manishkumar2101114 en Hugging Face. Se trata de una variante especializada en tool calling (llamada a herramientas) y en el dominio de agentes de voz, orientada a conversaciones en inglés e hindi (incluyendo hinglish). El modelo conserva la licencia Apache 2.0 del modelo base y se distribuye en formato safetensors con aproximadamente 9.653 millones de parámetros totales.
 
 El ajuste se ha realizado mediante LoRA con rango 32, alpha 64, una época de entrenamiento y 430 pasos, alcanzando una pérdida de entrenamiento de 0.8851 y una pérdida de evaluación de 0.795. La model card indica que esta v3 se ha entrenado sobre un nuevo conjunto de datos de comportamiento ("new behaviour dataset"), lo que sugiere una iteración orientada a corregir o ampliar el comportamiento conversacional y de invocación de herramientas respecto a versiones anteriores.
 
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged-v3
+- Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

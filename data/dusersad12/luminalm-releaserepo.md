@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LuminaLM es un modelo de generacion de texto publicado en HuggingFace bajo el identificador `dusersad12/LuminaLM-ReleaseRepo`. Su model card describe una "actualizacion mayor de version" que profundiza las capacidades de razonamiento e inferencia mediante un mayor uso de computo en la fase de post-entrenamiento y una serie de optimizaciones algoritmicas. El autor reporta mejoras notables en tareas de matematicas, programacion y logica general, y situa su rendimiento global "cerca de varios otros modelos lideres".
+LuminaLM es un modelo de generacion de texto publicado en Hugging Face bajo el identificador `dusersad12/LuminaLM-ReleaseRepo`. Su model card describe una "actualizacion mayor de version" que profundiza las capacidades de razonamiento e inferencia mediante un mayor uso de computo en la fase de post-entrenamiento y una serie de optimizaciones algoritmicas. El autor reporta mejoras notables en tareas de matematicas, programacion y logica general, y situa su rendimiento global "cerca de varios otros modelos lideres".
 
 El dato mas concreto es la evolucion en AIME 2025: la version anterior alcanzaba un 74% de acierto y la actual un 89,3%, con un aumento del esfuerzo de razonamiento de 15K a 27K tokens por pregunta. Tambien se anuncia una menor tasa de alucinacion y mejor soporte de function calling.
 
@@ -17,7 +17,7 @@ La relevancia del modelo es limitada en terminos de trazabilidad: el repositorio
 | Parametros activos | No aplica / no disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (la metadata de HuggingFace no declara idiomas; se evalua "Translation" con 0,816 pero sin listar idiomas) |
+| Idiomas soportados | No disponible (la metadata de Hugging Face no declara idiomas; se evalua "Translation" con 0,816 pero sin listar idiomas) |
 | Licencia | MIT |
 | Formato de pesos | No disponible (el repositorio figura con 0,0 GB, por lo que no se confirma la presencia de safetensors, GGUF u otros) |
 
@@ -90,7 +90,7 @@ La unica comparativa disponible es la que ofrece la propia model card frente a O
 
 | Modelo | Parametros | Contexto | Rendimiento (Math Reasoning) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LuminaLM | No disponible | No disponible | 0,592 | MIT | HuggingFace (repo sin pesos confirmados, 0,0 GB) |
+| LuminaLM | No disponible | No disponible | 0,592 | MIT | Hugging Face (repo sin pesos confirmados, 0,0 GB) |
 | Orion-7B | 7B (por nomenclatura) | No disponible | 0,498 | No disponible | No disponible |
 | Orion-7B-v2 | 7B (por nomenclatura) | No disponible | 0,521 | No disponible | No disponible |
 | Vega-9B | 9B (por nomenclatura) | No disponible | 0,533 | No disponible | No disponible |
@@ -111,7 +111,7 @@ No se dispone de alternativas publicas verificables de la misma categoria con la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo
+- Modelo en Hugging Face: https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo
 - Resultados de busqueda web no directamente relacionados con este modelo (se incluyen por completitud, sin confirmacion de pertinencia):
   - GitHub luminal-ai/luminal (proyecto de inferencia en Rust, distinto a este modelo): https://github.com/luminal-ai/luminal/releases
   - LLM Releases, tracker de modelos: https://www.llm-releases.com/

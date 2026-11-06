@@ -94,11 +94,11 @@ Los datos de los modelos comparables no estan incluidos en la informacion propor
 - Longitud de contexto: no se documenta un limite especifico para este fine-tune; se hereda el comportamiento del modelo base, cuyo maximo citado es de 8192 tokens. Textos mas largos requeririan truncado o fragmentacion.
 - Licencia MIT: permite uso comercial y modificacion, con obligacion de conservar el aviso de copyright y la licencia. Conviene revisar tambien las condiciones del modelo base BAAI/bge-m3.
 - Repositorio con muy poca adopcion: 5 descargas y 0 "me gusta" en el momento de la consulta; sin validacion externa ni comunidad que reporte incidencias.
-- Trazabilidad: el autor publica hashes SHA256 y revisiones fijadas del codigo, lo que facilita la reproducibilidad, pero la documentacion de entrenamiento detallada esta fuera de HuggingFace, en el repositorio de GitHub.
+- Trazabilidad: el autor publica hashes SHA256 y revisiones fijadas del codigo, lo que facilita la reproducibilidad, pero la documentacion de entrenamiento detallada esta fuera de Hugging Face, en el repositorio de GitHub.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-ml-nlp/Delveta-BGE-M3-v1
+- Modelo en Hugging Face: https://huggingface.co/eric-ml-nlp/Delveta-BGE-M3-v1
 - Modelo base BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3
 - Paper de BGE-M3 (arXiv:2402.03216): https://arxiv.org/abs/2402.03216
 - Repositorio Delveta, scripts de fine-tuning de BGE-M3: https://github.com/Eric-LLMs/Delveta/tree/main/scripts/bge_m3_finetune

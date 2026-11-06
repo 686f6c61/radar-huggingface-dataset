@@ -74,9 +74,9 @@ Segun la model card, todos los rellenos de respuesta marcados como "incorrectos"
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| JacobTDang/secondhand-laya | 421 M (int8) | 512 | Apache-2.0 | ONNX int8 | HuggingFace |
-| convaiinnovations/laya (raiz inglesa) | 421 M | 512 | Apache-2.0 | no disponible | HuggingFace |
-| convaiinnovations/laya (multilingue) | 322 M (mmBERT-base) | no disponible | Apache-2.0 | no disponible | HuggingFace |
+| JacobTDang/secondhand-laya | 421 M (int8) | 512 | Apache-2.0 | ONNX int8 | Hugging Face |
+| convaiinnovations/laya (raiz inglesa) | 421 M | 512 | Apache-2.0 | no disponible | Hugging Face |
+| convaiinnovations/laya (multilingue) | 322 M (mmBERT-base) | no disponible | Apache-2.0 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada. Frente a un LLM generativo de proposito general usado para rellenar formularios, este modelo se diferencia por devolver probabilidades calibradas y no generar texto, pero no hay cifras publicadas que permitan una comparacion directa.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JacobTDang/secondhand-laya
+- Modelo en Hugging Face: https://huggingface.co/JacobTDang/secondhand-laya
 - Modelo base convaiinnovations/laya: https://huggingface.co/convaiinnovations/laya
 - Repositorio del modelo base: https://huggingface.co/convaiinnovations/laya/tree/main
 - Sitio del proyecto Laya: https://laya.convaiinnovations.com/

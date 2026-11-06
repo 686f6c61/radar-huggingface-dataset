@@ -89,7 +89,7 @@ Diferencias clave: frente a estas alternativas, el modelo aquí descrito carece 
 - Fecha de publicación anómala: el repositorio figura como creado y actualizado el 17 de septiembre de 2026, dato que conviene verificar antes de citarlo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - Mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Paper del método Linear citado en la model card (Model soups): https://arxiv.org/abs/2203.05482
 - La búsqueda web realizada no devolvió enlaces relevantes sobre el modelo: los resultados obtenidos correspondían a páginas de ayuda de YouTube TV y del centro de ayuda de YouTube, sin relación con este artefacto, por lo que no se incluyen.

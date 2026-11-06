@@ -70,9 +70,9 @@ No se dispone de información sobre modelos comparables en el mismo ámbito. Exi
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/tsolful/Minimax_H3_W4A8)
+- [Repositorio Hugging Face](https://huggingface.co/tsolful/Minimax_H3_W4A8)
 - [Página oficial de MiniMax H3](https://design.minimax.io/h3)
-- [Colección de modelos cuantizados de MiniMax-H3 en HuggingFace](https://huggingface.co/models?other=base_model:quantized:MiniMaxAI/MiniMax-H3)
+- [Colección de modelos cuantizados de MiniMax-H3 en Hugging Face](https://huggingface.co/models?other=base_model:quantized:MiniMaxAI/MiniMax-H3)
 - [Repositorio de tsolful con cuantización INT4](https://huggingface.co/tsolful/Minimax_H3_INT4Mixed)
 - [Lista curada de recursos de MiniMax-H3 en GitHub](https://github.com/wildminder/awesome-minimax-H3)
 - [Artículo de ComfyUI Wiki sobre W4A8](https://comfyui-wiki.com/en/news/2026-08-05-kijai-minimax-h3-w4a8)

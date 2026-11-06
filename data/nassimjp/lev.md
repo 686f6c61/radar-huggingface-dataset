@@ -73,7 +73,7 @@ No se han publicado en la información disponible resultados detallados por subc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lev | ~4B (base Qwen3.5-4B + LoRA) | no disponible | 68,9 % en 13 subconjuntos de S1Bench | apache-2.0 | HuggingFace y GitHub |
+| lev | ~4B (base Qwen3.5-4B + LoRA) | no disponible | 68,9 % en 13 subconjuntos de S1Bench | apache-2.0 | Hugging Face y GitHub |
 | reflex-4b | ~4B | no disponible | A la par de lev en los 6 subconjuntos completados de S1Bench | no disponible | no disponible |
 | Jev | no disponible | no disponible | Por delante de lev en S1Bench | no disponible | no disponible |
 | Modelos abiertos de 26B–35B | 26B–35B | no disponible | Por delante de lev en S1Bench | no disponible | no disponible |
@@ -88,14 +88,14 @@ Los datos de los modelos de comparación provienen únicamente de las afirmacion
 - Riesgo de alucinación: al no generar texto libre, el modelo no alucina contenido en el sentido habitual, pero sí puede asignar probabilidades incorrectas o mal calibradas sobre las opciones.
 - Calibración: la utilidad del umbral (por ejemplo, actuar por encima de 0,9) depende de que la calibración se mantenga en el dominio de uso; no se aportan métricas de calibración (ECE u otras).
 - Licencia apache-2.0, lo que en principio permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-4B, que puede tener su propia licencia.
-- Discrepancia de identificadores: el repositorio de HuggingFace es `nassimjp/lev`, mientras que la model card y los ejemplos de código usan `interfaze-ai/lev`; conviene confirmar cuál es el checkpoint oficial.
+- Discrepancia de identificadores: el repositorio de Hugging Face es `nassimjp/lev`, mientras que la model card y los ejemplos de código usan `interfaze-ai/lev`; conviene confirmar cuál es el checkpoint oficial.
 - El repositorio registra 0 descargas y 0 likes, y aunque la fecha de creación indicada es 2026-09-26, se trata de un modelo con muy poca validación externa en el momento de redactar esta ficha.
 - La sección de entrenamiento de la model card no está incluida en el material disponible, por lo que no se pueden evaluar los datos ni el proceso de ajuste.
 - Para uso en tiempo real se requiere GPU CUDA; no se especifica comportamiento en CPU.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nassimjp/lev
+- Hugging Face: https://huggingface.co/nassimjp/lev
 - Repositorio de código (GitHub): https://github.com/Abhinavexists/lev
 - Blog: https://interfaze.ai/blog/jev-now-open-source-lev
 - Sitio del autor/organización: https://interfaze.ai

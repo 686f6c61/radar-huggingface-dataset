@@ -6,7 +6,7 @@ Qwen-Image-2.1-Uncensored-Quantized es una redistribución cuantizada del modelo
 
 El modelo base Qwen-Image-2.1 es un generador de imágenes de la familia Qwen (Alibaba), y esta versión se distribuye con la etiqueta "uncensored", lo que implica que se han eliminado o relajado los filtros de contenido del modelo original. La relevancia práctica de esta ficha radica en que ofrece una vía de despliegue local del modelo en hardware de consumo mediante cuantización agresiva (el fichero NVFP4 ocupa solo 4,20 GB y el MLX 4-bit 4,00 GB), algo imposible con los pesos en BF16.
 
-La licencia declarada es `qwen-research` (etiquetada como "other" en HuggingFace), lo que restringe el uso comercial. El repositorio tiene 105,2 GB de tamaño total y, en el momento de la consulta, registra 0 descargas y 0 likes, lo que indica una publicación muy reciente (creada el 2 de noviembre de 2026) y sin validación comunitaria todavía.
+La licencia declarada es `qwen-research` (etiquetada como "other" en Hugging Face), lo que restringe el uso comercial. El repositorio tiene 105,2 GB de tamaño total y, en el momento de la consulta, registra 0 descargas y 0 likes, lo que indica una publicación muy reciente (creada el 2 de noviembre de 2026) y sin validación comunitaria todavía.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fatangel420/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio Hugging Face: https://huggingface.co/fatangel420/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork recomendado): https://github.com/leejet/ComfyUI-GGUF

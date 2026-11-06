@@ -81,7 +81,7 @@ No se dispone de informacion sobre politicas de locomocion publicadas para el mi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-walk-rough | no disponible | no aplica (observacion de 61 D) | 12 s erguido en plano simulado | no disponible | HuggingFace, 0 descargas |
+| microduck-walk-rough | no disponible | no aplica (observacion de 61 D) | 12 s erguido en plano simulado | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,11 +96,11 @@ No se dispone de informacion sobre politicas de locomocion publicadas para el mi
 - Dependencia de la interfaz exacta de 61 observaciones y 14 acciones a 50 Hz: cualquier cambio en el robot o en el esquema del manifiesto puede invalidar la politica.
 - El normalizador esta embebido en el grafo ONNX, de modo que alimentar observaciones ya normalizadas produciria un comportamiento incorrecto.
 - Sesgos conocidos: no disponibles, ya que no se ha realizado analisis de sesgo ni de cobertura de condiciones (pendientes, fricciones, cargas utiles) en la informacion proporcionada.
-- La fecha de creacion del repositorio indicada por HuggingFace (2026-09-21) es posterior a la fecha de consulta habitual; conviene verificar la vigencia del artefacto antes de integrarlo.
+- La fecha de creacion del repositorio indicada por Hugging Face (2026-09-21) es posterior a la fecha de consulta habitual; conviene verificar la vigencia del artefacto antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/witcheer/microduck-walk-rough
+- Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-walk-rough
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `develop`, commit `53b8971b6`
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` en el repositorio del demonio de microduck

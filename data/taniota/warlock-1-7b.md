@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Warlock-1.7B (denominado también `Warlock-1.7B-Fused` en la model card) es un modelo de lenguaje causal de 1.711.376.384 parámetros (1,71B) afinado para instrucciones, publicado por el usuario taniota en HuggingFace. No se trata de un entrenamiento desde cero ni de un ajuste fino convencional: es el resultado de fusionar las representaciones internas de dos familias de modelos distintas, tomando SmolLM2-1.7B-Instruct como arquitectura receptora y Llama-3.2-1B-Instruct como modelo donante de características. El resultado se distribuye como un único fichero `model.safetensors` de 3,42 GB, sin dependencias en tiempo de ejecución de los modelos originales ni envoltorios de inferencia personalizados.
+Warlock-1.7B (denominado también `Warlock-1.7B-Fused` en la model card) es un modelo de lenguaje causal de 1.711.376.384 parámetros (1,71B) afinado para instrucciones, publicado por el usuario taniota en Hugging Face. No se trata de un entrenamiento desde cero ni de un ajuste fino convencional: es el resultado de fusionar las representaciones internas de dos familias de modelos distintas, tomando SmolLM2-1.7B-Instruct como arquitectura receptora y Llama-3.2-1B-Instruct como modelo donante de características. El resultado se distribuye como un único fichero `model.safetensors` de 3,42 GB, sin dependencias en tiempo de ejecución de los modelos originales ni envoltorios de inferencia personalizados.
 
 La relevancia técnica del modelo reside en el método de fusión. Las técnicas habituales de *model merging* (SLERP, DARE, TIES, merges de LoRA) interpolan pesos entre checkpoints de idéntica arquitectura, vocabulario y topología. Warlock-1.7B aborda el caso contrario: combina dos familias con profundidades distintas, espacios de vocabulario distintos y configuraciones de atención distintas (Multi-Head Attention en SmolLM2 frente a Grouped-Query Attention en Llama-3.2). Para ello aplica alineación de representaciones multi-profundidad sobre el espacio oculto compartido (d=2048) y una fusión de pesos calibrada por energía con preservación de la norma de Frobenius, integrando las características del donante directamente en las proyecciones del receptor.
 
@@ -106,7 +106,7 @@ La comparación directa solo es posible con los dos modelos padre, porque son lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taniota/Warlock-1.7B
+- Modelo en Hugging Face: https://huggingface.co/taniota/Warlock-1.7B
 - Modelo base receptor: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Modelo donante: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Resultados de la busqueda web: no se ha recuperado ningun enlace relevante sobre el modelo. Los resultados devueltos corresponden a portales de identidad y servicios conectados de Škoda (skodaid.vwgroup.io, skoda-auto.de, vwfs.de) y no guardan ninguna relacion con Warlock-1.7B ni con model merging.

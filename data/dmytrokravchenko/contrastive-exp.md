@@ -4,7 +4,7 @@
 
 `dmytrokravchenko/contrastive-exp` es un repositorio experimental que contiene una implementación funcional de la arquitectura BEiT orientada a aprendizaje contrastivo, publicada por el usuario dmytrokravchenko bajo licencia Apache 2.0. Se trata de una configuración declarada como "nano", con un total de 24.832 parámetros según los pesos en formato safetensors, y un tamaño de repositorio de 0,0 GB. El propio autor describe el checkpoint como una inicialización válida para pruebas de humo (smoke tests), no como un modelo entrenado.
 
-El interés del artefacto no reside en su rendimiento, sino en su función como andamiaje reproducible: incluye `pipeline.py` con el modelo y un punto de entrada ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto. La model card omite deliberadamente cualquier afirmación de benchmark y no declara idiomas soportados ni pipeline de HuggingFace.
+El interés del artefacto no reside en su rendimiento, sino en su función como andamiaje reproducible: incluye `pipeline.py` con el modelo y un punto de entrada ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto. La model card omite deliberadamente cualquier afirmación de benchmark y no declara idiomas soportados ni pipeline de Hugging Face.
 
 Es relevante ahora como pieza de infraestructura para experimentación controlada: al tener un coste computacional despreciable permite validar código de atención, fusiones cross-attention y esquemas de normalización antes de escalar a configuraciones mayores. No debe interpretarse, en ningún caso, como un modelo listo para inferencia en producción.
 
@@ -92,6 +92,6 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dmytrokravchenko/contrastive-exp
+- Modelo en Hugging Face: https://huggingface.co/dmytrokravchenko/contrastive-exp
 - Ficheros referenciados en el repositorio (rutas relativas, sin URL directa en la información disponible): `pipeline.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - Paper, blog, repositorio de código externo o demo: no disponibles; los resultados de la búsqueda web proporcionados no contienen enlaces relacionados con este modelo (tratan sobre otros sistemas y leaderboards ajenos).

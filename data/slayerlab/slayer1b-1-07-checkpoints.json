@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/Slayer1B-1.07-checkpoints",
+  "slug": "slayerlab-slayer1b-1-07-checkpoints",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/Slayer1B-1.07-checkpoints",
+  "created_at": "2026-11-05T22:54:58.000Z",
+  "updated_at": "2026-11-06T08:37:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "polish",
+    "checkpoints",
+    "training-history",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79742584359,
+  "storage_human": "79.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SlayerLab/Slayer1B-1.07-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/SlayerLab/Slayer1B-1.07-checkpoints",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "SlayerLab/Slayer1B-1.07 · Hugging Face",
+      "url": "https://huggingface.co/SlayerLab/Slayer1B-1.07",
+      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "SlayerLabs",
+      "url": "https://slayerlabs.com/",
+      "snippet": "Low-price lab networks full of vulnerable VM's to exploit. Hone your skills, make mistakes, learn and test out new tools in a wide range of virtual lab environments. Subscribe now to get started!"
+    },
+    {
+      "title": "benchmarks-fabryka-ai/research/slayer-1b/wygaszanie/pobierz.py ... - GitHub",
+      "url": "https://github.com/slayerlabs/benchmarks-fabryka-ai/blob/main/research/slayer-1b/wygaszanie/pobierz.py",
+      "snippet": "Repozytorium Bench Team . Contribute to slayerlabs/benchmarks-fabryka-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Checkpoint AI Models (148) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 148 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

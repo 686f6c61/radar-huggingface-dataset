@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-32B-Instruct_finance_all_resp_3e-05_ep1 es un ajuste fino supervisado (SFT) del modelo Qwen2.5-32B-Instruct, publicado por el usuario zycalice en HuggingFace. El nombre del repositorio sugiere un entrenamiento orientado al dominio financiero ("finance"), con una tasa de aprendizaje de 3e-05 y una epoca ("ep1"), aunque la model card no documenta la composicion del dataset ni el objetivo concreto del ajuste. El modelo base es la version Instruct de Qwen2.5 en su variante de 32 mil millones de parametros, distribuida por Unsloth para facilitar el entrenamiento eficiente.
+Qwen2.5-32B-Instruct_finance_all_resp_3e-05_ep1 es un ajuste fino supervisado (SFT) del modelo Qwen2.5-32B-Instruct, publicado por el usuario zycalice en Hugging Face. El nombre del repositorio sugiere un entrenamiento orientado al dominio financiero ("finance"), con una tasa de aprendizaje de 3e-05 y una epoca ("ep1"), aunque la model card no documenta la composicion del dataset ni el objetivo concreto del ajuste. El modelo base es la version Instruct de Qwen2.5 en su variante de 32 mil millones de parametros, distribuida por Unsloth para facilitar el entrenamiento eficiente.
 
 El modelo hereda la arquitectura transformer densa de Qwen2.5-32B-Instruct y su ventana de contexto, pero el autor no ha publicado especificaciones tecnicas propias, resultados de evaluacion ni detalles sobre los datos de entrenamiento. El repositorio ocupa 9,7 GB, lo que corresponde a pesos en safetensors en precision bf16/fp16 (aproximadamente 64 GB en bf16 para 32B parametros no cuadraria con ese tamano, por lo que el repo podria contener pesos cuantizados o un subconjunto; el dato exacto no esta disponible).
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zycalice/Qwen2.5-32B-Instruct_finance_all_resp_3e-05_ep1 | 32B | no disponible | no disponible | HuggingFace, 0 descargas | SFT sin documentacion ni benchmarks |
-| Qwen2.5-32B-Instruct (modelo base) | 32B | 131 072 tokens | Apache 2.0 (segun Qwen) | HuggingFace, ampliamente usado | Modelo Instruct generalista con benchmarks publicados |
-| unsloth/Qwen2.5-32B-Instruct | 32B | 131 072 tokens | Apache 2.0 (heredada) | HuggingFace | Redistribucion optimizada para entrenamiento eficiente |
-| Qwen2.5-72B-Instruct | 72B | 131 072 tokens | Apache 2.0 | HuggingFace | Version mayor de la misma familia, mayor rendimiento y requisitos |
+| zycalice/Qwen2.5-32B-Instruct_finance_all_resp_3e-05_ep1 | 32B | no disponible | no disponible | Hugging Face, 0 descargas | SFT sin documentacion ni benchmarks |
+| Qwen2.5-32B-Instruct (modelo base) | 32B | 131 072 tokens | Apache 2.0 (segun Qwen) | Hugging Face, ampliamente usado | Modelo Instruct generalista con benchmarks publicados |
+| unsloth/Qwen2.5-32B-Instruct | 32B | 131 072 tokens | Apache 2.0 (heredada) | Hugging Face | Redistribucion optimizada para entrenamiento eficiente |
+| Qwen2.5-72B-Instruct | 72B | 131 072 tokens | Apache 2.0 | Hugging Face | Version mayor de la misma familia, mayor rendimiento y requisitos |
 
 ## Limitaciones y advertencias
 
@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zycalice/Qwen2.5-32B-Instruct_finance_all_resp_3e-05_ep1
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-32B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/zycalice/Qwen2.5-32B-Instruct_finance_all_resp_3e-05_ep1
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-32B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

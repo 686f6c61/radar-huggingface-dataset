@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwenmem-spine | 5.248.077.504 | 32.768 tokens de prompt / 2.048 de salida | Derivado de Qwen3.5-4B con capas de navegacion triangular y runtime propio | Apache-2.0 (pesos) | HuggingFace y GitHub, requiere runtime personalizado |
-| Qwen3.5-4B (base) | no disponible en la informacion | no disponible en la informacion | Transformer de texto estandar | no disponible en la informacion | HuggingFace |
+| qwenmem-spine | 5.248.077.504 | 32.768 tokens de prompt / 2.048 de salida | Derivado de Qwen3.5-4B con capas de navegacion triangular y runtime propio | Apache-2.0 (pesos) | Hugging Face y GitHub, requiere runtime personalizado |
+| Qwen3.5-4B (base) | no disponible en la informacion | no disponible en la informacion | Transformer de texto estandar | no disponible en la informacion | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre qwenmem-spine y su base Qwen3.5-4B ni con otros modelos de la misma categoria en la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre qwenmem-spine y su base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jared1728/qwenmem-spine
+- Modelo en Hugging Face: https://huggingface.co/Jared1728/qwenmem-spine
 - Repositorio fuente (revision fijada): https://github.com/Jaredcastorena/qwenmem-spine/tree/ac7e0e55c5d67ef99f61aa2d50d12b1d996f9b42
 - Backend Python del servidor triangular: https://github.com/Jaredcastorena/qwenmem-spine/blob/ac7e0e55c5d67ef99f61aa2d50d12b1d996f9b42/rust-spine/backends/triangle/server.py
 - Guia de reproduccion: https://github.com/Jaredcastorena/qwenmem-spine/blob/ac7e0e55c5d67ef99f61aa2d50d12b1d996f9b42/docs/reproduction.md

@@ -87,9 +87,9 @@ No se dispone de comparativas publicadas en la informacion proporcionada, y la b
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| nanodex-100k-1m | 100.064 | 512 | odc-by | HuggingFace, safetensors | Artefacto de investigacion; sin benchmarks; sin ajuste por instrucciones |
-| SmolLM-135M | en torno a 135 millones | 2.048 | Apache-2.0 | HuggingFace | Entrenado sobre un corpus mucho mayor; uso generalista; datos a verificar |
-| TinyLlama-1.1B | en torno a 1.100 millones | 2.048 | Apache-2.0 | HuggingFace | Ordenes de magnitud superior en parametros y tokens; datos a verificar |
+| nanodex-100k-1m | 100.064 | 512 | odc-by | Hugging Face, safetensors | Artefacto de investigacion; sin benchmarks; sin ajuste por instrucciones |
+| SmolLM-135M | en torno a 135 millones | 2.048 | Apache-2.0 | Hugging Face | Entrenado sobre un corpus mucho mayor; uso generalista; datos a verificar |
+| TinyLlama-1.1B | en torno a 1.100 millones | 2.048 | Apache-2.0 | Hugging Face | Ordenes de magnitud superior en parametros y tokens; datos a verificar |
 | nanoGPT (Karpathy) | en torno a 124 millones (configuracion GPT-2) | 1.024 | MIT | Repositorio de codigo | Referencia educativa de preentrenamiento desde cero, caracter a caracter; datos a verificar |
 
 La diferencia relevante no es de rendimiento, sino de proposito: las alternativas citadas son modelos entrenados para ser utiles, mientras que nanodex-100k-1m se limita a hacer visible el mecanismo de preentrenamiento con un presupuesto de computo minimo.
@@ -110,7 +110,7 @@ La diferencia relevante no es de rendimiento, sino de proposito: las alternativa
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/GGUFGuy/nanodex-100k-1m
+- Pagina del modelo en Hugging Face: https://huggingface.co/GGUFGuy/nanodex-100k-1m
 - Perfil del autor: https://huggingface.co/GGUFGuy
 - Dataset de entrenamiento (fineweb-edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Space de entrenamiento HyperDex Trainer: https://hugging-science-hyperdex-trainer.hf.space/

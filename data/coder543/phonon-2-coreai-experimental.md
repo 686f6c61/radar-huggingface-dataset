@@ -114,7 +114,7 @@ Comparacion entre las variantes incluidas en esta publicacion y el runtime de re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/coder543/phonon-2-coreai-experimental
+- Repositorio Hugging Face: https://huggingface.co/coder543/phonon-2-coreai-experimental
 - Modelo base: https://huggingface.co/FermionResearch/Phonon-2
 - Fermion Research: https://huggingface.co/FermionResearch
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs o repos) sobre este modelo; los resultados devueltos no guardan relacion con el contenido.

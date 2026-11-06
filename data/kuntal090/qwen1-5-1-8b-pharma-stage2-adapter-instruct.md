@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kuntal090/qwen1.5-1.8b-pharma-stage2-adapter-instruct es un modelo de generacion de texto de aproximadamente 1.830 millones de parametros publicado en HuggingFace por el usuario Kuntal090. El identificador indica que se trata de un ajuste (fine-tuning) en dos etapas sobre el modelo base Qwen1.5-1.8B, orientado al dominio farmaceutico y con un formato final de instrucciones. El repositorio ocupa 3,7 GB y los pesos estan en formato safetensors, cargables con la libreria transformers.
+Kuntal090/qwen1.5-1.8b-pharma-stage2-adapter-instruct es un modelo de generacion de texto de aproximadamente 1.830 millones de parametros publicado en Hugging Face por el usuario Kuntal090. El identificador indica que se trata de un ajuste (fine-tuning) en dos etapas sobre el modelo base Qwen1.5-1.8B, orientado al dominio farmaceutico y con un formato final de instrucciones. El repositorio ocupa 3,7 GB y los pesos estan en formato safetensors, cargables con la libreria transformers.
 
-La relevancia de esta publicacion es limitada y, sobre todo, metodologica: se trata de un modelo pequeno (rango 1-2B) que puede ejecutarse en GPU de consumo, lo que abarata la experimentacion con ajuste de dominio en un nicho vertical como el farmaceutico. No obstante, la model card es la plantilla automatica de HuggingFace sin ninguna seccion completada, y no se declaran licencia, idiomas, datos de entrenamiento ni resultados de evaluacion.
+La relevancia de esta publicacion es limitada y, sobre todo, metodologica: se trata de un modelo pequeno (rango 1-2B) que puede ejecutarse en GPU de consumo, lo que abarata la experimentacion con ajuste de dominio en un nicho vertical como el farmaceutico. No obstante, la model card es la plantilla automatica de Hugging Face sin ninguna seccion completada, y no se declaran licencia, idiomas, datos de entrenamiento ni resultados de evaluacion.
 
 Conviene advertir que las etiquetas del repositorio incluyen `qwen2` mientras que el nombre del modelo indica `qwen1.5`, una discrepancia sin resolver en la informacion disponible. Tampoco se especifica si el artefacto publicado son pesos completos fusionados o un adaptador PEFT sin fusionar, pese a que el nombre incluye el termino "adapter".
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: tamano 3,7 GB, 0 descargas, 0 likes, creado el 14 d
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. La model card publicada es la plantilla generada automaticamente por HuggingFace y todas las secciones relevantes (descripcion, datos de entrenamiento, hiperparametros, regimen de precision, evaluacion) contienen el marcador "[More Information Needed]".
+No se dispone de informacion sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. La model card publicada es la plantilla generada automaticamente por Hugging Face y todas las secciones relevantes (descripcion, datos de entrenamiento, hiperparametros, regimen de precision, evaluacion) contienen el marcador "[More Information Needed]".
 
 Por el identificador puede inferirse que el modelo parte de Qwen1.5-1.8B y que se ha sometido a un ajuste en dos etapas ("stage2") con un formato final de instrucciones, presumiblemente con datos del dominio farmaceutico. Se desconoce el volumen de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF o DPO, y si se emplearon metodos de eficiencia como LoRA, QLoRA u otras tecnicas de adaptacion de bajo rango. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de model card, y no a un paper del modelo.
 
@@ -94,8 +94,8 @@ No se dispone de resultados de benchmarks para el modelo analizado, por lo que l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kuntal090/qwen1.5-1.8b-pharma-stage2-adapter-instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/Kuntal090
+- Repositorio en Hugging Face: https://huggingface.co/Kuntal090/qwen1.5-1.8b-pharma-stage2-adapter-instruct
+- Perfil del autor en Hugging Face: https://huggingface.co/Kuntal090
 - Articulo citado en las etiquetas (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mloc2.github.io/impact
 - Documentacion de Qwen1.5 (referencia del modelo base, no enlazada por el autor): no disponible en la informacion proporcionada

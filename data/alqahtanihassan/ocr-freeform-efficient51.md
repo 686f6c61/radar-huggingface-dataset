@@ -77,7 +77,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alqahtanihassan/ocr-freeform-efficient51
+- Repositorio Hugging Face: https://huggingface.co/Alqahtanihassan/ocr-freeform-efficient51
 - Guia de modelos OCR open source (contexto general): https://www.e2enetworks.com/blog/complete-guide-open-source-ocr-models-2025
 - Liderazgo de modelos LLM (contexto general): https://llm-stats.com/leaderboards/llm-leaderboard
 - Proyecto EffOCR (referencia de arquitectura OCR eficiente): https://effocr.github.io/

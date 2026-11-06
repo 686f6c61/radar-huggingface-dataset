@@ -97,7 +97,7 @@ El perfil probado uso una utilizacion de memoria de GPU de 0,90 y un limite de K
 | Modelo | Parametros | Contexto | Perplejidad (teacher-forced) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | DeepSeek-V4.1-Flash-EXL3-3bpw | 111.047.990.384 | ~1.048.000 tokens probados | 3,82012498 | MIT | Repositorio experimental, subida incompleta, runtime personalizado |
-| deepseek-ai/DeepSeek-V4.1-Flash (modelo base) | no disponible en la informacion proporcionada | no disponible | 3,79767842 | no disponible | Checkpoint fuente en HuggingFace, revision `df42c109f1defefcbfcedbe7d905718a12266e40` |
+| deepseek-ai/DeepSeek-V4.1-Flash (modelo base) | no disponible en la informacion proporcionada | no disponible | 3,79767842 | no disponible | Checkpoint fuente en Hugging Face, revision `df42c109f1defefcbfcedbe7d905718a12266e40` |
 
 No se dispone de datos de otros modelos comparables de la misma categoria (mismo rango de parametros, misma tarea o mismo tipo de cuantizacion) en la informacion proporcionada.
 
@@ -119,7 +119,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-EXL3-3bpw
+- Repositorio Hugging Face: https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-EXL3-3bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Revision del modelo base citada: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/tree/df42c109f1defefcbfcedbe7d905718a12266e40
 - Revision de vLLM usada en los experimentos: commit `e47aa780bccf59f59dfa2cbb18e17a10b4fe69ba`

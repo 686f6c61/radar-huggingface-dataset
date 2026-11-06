@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones dentro de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samzzzed/dolphin-mistral-7b
+- Repositorio en Hugging Face: https://huggingface.co/Samzzzed/dolphin-mistral-7b
 - Modelo base (según model card): https://huggingface.co/cognitivecomputations/dolphin-2.8-mistral-7b-v02
 - Modelo base (según etiqueta `base_model`): https://huggingface.co/dphn/dolphin-2.8-mistral-7b-v02
 - GGUF de origen citado en la model card: https://huggingface.co/bartowski/dolphin-2.8-mistral-7b-v02-GGUF

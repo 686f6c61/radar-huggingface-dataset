@@ -103,7 +103,7 @@ El autor sitúa a P220-ThaiOCR-9B por delante de Qwen3.6-35B-A3B y OpenThai 2.0 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-GGUF
 - Modelo base BF16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B
 - Variante FP8: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-FP8
 - Variante W4A16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-W4A16

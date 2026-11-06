@@ -68,7 +68,7 @@ No se han publicado resultados comparativos con otros modelos (MLP, CNN, ResNet,
 
 | Modelo | Parametros | Contexto / entrada | Precision en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gauti3053/smai-a4-q1-mlp` | 394.634 | 3072 valores (32x32x3) | 0,4731 (test) | no disponible | HuggingFace |
+| `gauti3053/smai-a4-q1-mlp` | 394.634 | 3072 valores (32x32x3) | 0,4731 (test) | no disponible | Hugging Face |
 | MLP equivalente con etiquetas ruidosas (tarea 1.4.2 del mismo enunciado) | 394.634 | 3072 valores | no disponible en la informacion proporcionada | no disponible | no disponible |
 | CNN / ResNet sobre CIFAR-10 | no disponible | 32x32x3 | no disponible en la informacion proporcionada | no disponible | no disponible |
 
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gauti3053/smai-a4-q1-mlp
+- Hugging Face: https://huggingface.co/gauti3053/smai-a4-q1-mlp
 - Dataset CIFAR-10 referenciado en la model card: `uoft-cs/cifar10` (no se proporciona URL directa en la informacion disponible)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

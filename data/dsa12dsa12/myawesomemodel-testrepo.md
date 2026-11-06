@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DSA12DSA12 bajo el identificador `DSA12DSA12/MyAwesomeModel-TestRepo`. Según su model card, se trata de una version actualizada de un modelo anterior orientada a mejorar la profundidad de razonamiento y la capacidad de inferencia mediante mas recursos computacionales y optimizaciones algoritmicas aplicadas en la fase de post-entrenamiento. La propia tarjeta menciona mejoras en matematicas, programacion y logica general, ademas de una reduccion de la tasa de alucinacion y un mejor soporte de function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DSA12DSA12 bajo el identificador `DSA12DSA12/MyAwesomeModel-TestRepo`. Según su model card, se trata de una version actualizada de un modelo anterior orientada a mejorar la profundidad de razonamiento y la capacidad de inferencia mediante mas recursos computacionales y optimizaciones algoritmicas aplicadas en la fase de post-entrenamiento. La propia tarjeta menciona mejoras en matematicas, programacion y logica general, ademas de una reduccion de la tasa de alucinacion y un mejor soporte de function calling.
 
-La informacion disponible es, sin embargo, muy limitada y en parte contradictoria. Las etiquetas de HuggingFace lo clasifican como `bert`, `feature-extraction` y libreria `transformers` con pesos en PyTorch, mientras que la model card describe un asistente conversacional con modo de razonamiento, plantillas de prompt para busqueda web y carga de ficheros, y una variante denominada MyAwesomeModel-Small. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes, y las fechas de creacion y actualizacion (14 de septiembre de 2026) apuntan a un repositorio de prueba mas que a un artefacto listo para produccion.
+La informacion disponible es, sin embargo, muy limitada y en parte contradictoria. Las etiquetas de Hugging Face lo clasifican como `bert`, `feature-extraction` y libreria `transformers` con pesos en PyTorch, mientras que la model card describe un asistente conversacional con modo de razonamiento, plantillas de prompt para busqueda web y carga de ficheros, y una variante denominada MyAwesomeModel-Small. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes, y las fechas de creacion y actualizacion (14 de septiembre de 2026) apuntan a un repositorio de prueba mas que a un artefacto listo para produccion.
 
 No se ha publicado informacion verificable sobre arquitectura concreta, numero de parametros, longitud de contexto, tokenizador ni idiomas soportados. Los resultados de benchmarks que aparecen en la model card corresponden a comparaciones contra modelos anonimizados como "Model1" y "Model2", lo que impide situar el modelo frente a alternativas reales del ecosistema.
 
@@ -12,7 +12,7 @@ No se ha publicado informacion verificable sobre arquitectura concreta, numero d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta HuggingFace: `bert`; la model card describe un modelo de razonamiento conversacional, sin detallar la arquitectura) |
+| Arquitectura | no disponible (etiqueta Hugging Face: `bert`; la model card describe un modelo de razonamiento conversacional, sin detallar la arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ No se ha publicado informacion verificable sobre arquitectura concreta, numero d
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio declara 0.0 GB de tamano, sin pesos publicados) |
 
-Otros datos de la ficha de HuggingFace:
+Otros datos de la ficha de Hugging Face:
 
 | Parametro | Valor |
 |---|---|
@@ -40,7 +40,7 @@ Otros datos de la ficha de HuggingFace:
 
 ## Arquitectura y entrenamiento
 
-No hay informacion tecnica verificable sobre la arquitectura. La etiqueta de HuggingFace apunta a BERT y a un pipeline de `feature-extraction`, lo que sugeriria un encoder transformer orientado a representaciones de texto. La model card, en cambio, describe un modelo generativo con modo de razonamiento explicito, soporte de system prompt, function calling y plantillas de prompt para busqueda web y carga de ficheros, caracteristicas propias de un modelo causal de instrucciones. Esta discrepancia no se resuelve en la informacion proporcionada.
+No hay informacion tecnica verificable sobre la arquitectura. La etiqueta de Hugging Face apunta a BERT y a un pipeline de `feature-extraction`, lo que sugeriria un encoder transformer orientado a representaciones de texto. La model card, en cambio, describe un modelo generativo con modo de razonamiento explicito, soporte de system prompt, function calling y plantillas de prompt para busqueda web y carga de ficheros, caracteristicas propias de un modelo causal de instrucciones. Esta discrepancia no se resuelve en la informacion proporcionada.
 
 Respecto al entrenamiento, la model card afirma que la version actual mejora su profundidad de razonamiento "aprovechando mayores recursos computacionales" e "introduciendo mecanismos de optimizacion algoritmica durante el post-entrenamiento", sin especificar el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas concretas de alineacion como RLHF, DPO o RLVR. Tampoco se detalla el tokenizador, salvo la mencion de que la variante MyAwesomeModel-Small comparte la configuracion de tokenizador con el modelo principal.
 
@@ -106,7 +106,7 @@ No es posible estimar requisitos de hardware porque no se han publicado el numer
 - VRAM para inferencia: no disponible. La estimacion requeriria conocer el numero de parametros y la precision de pesos (fp16, int8, int4), datos ausentes.
 - GPU recomendadas: no disponible. Sin conocer el tamano del modelo no puede determinarse si es viable en una RTX 4090, una A100 de 40/80 GB o una H100.
 - Viabilidad en GPU de consumo: no disponible. No se puede confirmar ni descartar su ejecucion en hardware consumer.
-- Opciones de despliegue: el repositorio declara compatibilidad con endpoints (`endpoints_compatible`) y libreria `transformers`, por lo que en principio seria desplegable mediante HuggingFace Transformers y HuggingFace Inference Endpoints. El soporte de vLLM, llama.cpp, Ollama o TGI no esta confirmado y dependera del formato de pesos que se publique.
+- Opciones de despliegue: el repositorio declara compatibilidad con endpoints (`endpoints_compatible`) y libreria `transformers`, por lo que en principio seria desplegable mediante Hugging Face Transformers y Hugging Face Inference Endpoints. El soporte de vLLM, llama.cpp, Ollama o TGI no esta confirmado y dependera del formato de pesos que se publique.
 - Latencia y throughput: no disponible. La model card no aporta mediciones de velocidad; el unico dato indirecto es el consumo medio de 23.000 tokens por pregunta en AIME, lo que implicaria respuestas largas y coste de generacion elevado en tareas de razonamiento.
 - Espacio en disco: el repositorio ocupa 0.0 GB, lo que sugiere que los pesos no estan alojados o son de prueba.
 
@@ -127,7 +127,7 @@ Comparativa con modelos similares: no disponible.
 ## Limitaciones y advertencias
 
 - Informacion tecnica ausente: no se publican parametros, contexto, tokenizador, idiomas ni arquitectura, lo que impide evaluar su idoneidad para cualquier caso de produccion.
-- Contradiccion entre metadatos y model card: HuggingFace lo etiqueta como `bert` y `feature-extraction`, mientras que la tarjeta describe un modelo generativo con razonamiento y function calling. Es necesario resolver esta ambiguedad antes de integrarlo.
+- Contradiccion entre metadatos y model card: Hugging Face lo etiqueta como `bert` y `feature-extraction`, mientras que la tarjeta describe un modelo generativo con razonamiento y function calling. Es necesario resolver esta ambiguedad antes de integrarlo.
 - Ausencia de pesos: el repositorio declara 0.0 GB y cero descargas, por lo que probablemente no contiene los pesos del modelo o se trata de un repositorio de prueba. La propia identificacion "TestRepo" refuerza esta hipotesis.
 - Benchmarks no verificables: los resultados se comparan contra "Model1" y "Model2" sin identificar; no hay evaluacion por terceros ni detalle de metodologia. Las diferencias reportadas son en muchos casos de una o dos centesimas.
 - Riesgo de alucinacion: la tarjeta afirma una reduccion de la tasa de alucinacion respecto a la version anterior, pero no aporta ninguna metrica que lo cuantifique. Sin datos, debe asumirse riesgo de alucinacion en generacion factual.
@@ -140,6 +140,6 @@ Comparativa con modelos similares: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSA12DSA12/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DSA12DSA12/MyAwesomeModel-TestRepo
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, a su model card, a papers asociados, a repositorios de codigo, a la web oficial con chat y API, ni a demos. Los resultados de busqueda disponibles tratan sobre incursiones de drones en espacio aereo de la OTAN y no guardan ninguna relacion con el modelo. El resto de enlaces citados dentro de la model card (LICENSE, repositorio de codigo, web oficial) no incluyen URL y, por tanto, no pueden listarse.

@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/multimodal-document-retrieval-20260901-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/multimodal-document-retrieval-20260901-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/multimodal-document-retrieval-20260901-dataset
-- Perfil del autor en HuggingFace: https://huggingface.co/RKB109
+- Perfil del autor en Hugging Face: https://huggingface.co/RKB109
 - Referencia general sobre recuperación multimodal de documentos (no directamente relacionada con este modelo): https://arxiv.org/abs/2501.08828

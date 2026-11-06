@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuestA-Qwen3-1p7b-DirectOPD es un ajuste fino experimental de la familia Qwen3, publicado por el usuario SelectiveDOPD en HuggingFace. El nombre y los tags del repositorio indican que se trata de un derivado de un modelo Qwen3 de aproximadamente 1.700 millones de parametros (el recuento real de safetensors es de 2.031.739.904 parametros, es decir, unos 2,03 mil millones), orientado a generacion de texto y uso conversacional. La model card es minima: se limita a indicar que el modelo se subio desde el directorio `questa_qwen3_1p7b_dopd` dentro de los experimentos denominados "BiDirect-OPD".
+QuestA-Qwen3-1p7b-DirectOPD es un ajuste fino experimental de la familia Qwen3, publicado por el usuario SelectiveDOPD en Hugging Face. El nombre y los tags del repositorio indican que se trata de un derivado de un modelo Qwen3 de aproximadamente 1.700 millones de parametros (el recuento real de safetensors es de 2.031.739.904 parametros, es decir, unos 2,03 mil millones), orientado a generacion de texto y uso conversacional. La model card es minima: se limita a indicar que el modelo se subio desde el directorio `questa_qwen3_1p7b_dopd` dentro de los experimentos denominados "BiDirect-OPD".
 
 Se trata, por tanto, de un checkpoint de investigacion mas que de un modelo de produccion. La rama `main` corresponde al `global_step_300`, y el repositorio conserva ramas con checkpoints intermedios cada 20 pasos (`global_step_20` hasta `global_step_280`), lo que sugiere que su proposito principal es el analisis de curvas de entrenamiento o la reproducibilidad de un pipeline de destilacion o alineamiento. El repositorio ocupa 12,2 GB y solo contiene pesos en formato safetensors.
 
@@ -23,8 +23,8 @@ Su relevancia actual es acotada: no hay resultados de benchmarks publicados, ni 
 | Tamano del repositorio | 12,2 GB |
 | Libreria declarada | transformers |
 | Pipeline | text-generation (conversational) |
-| Fecha de creacion | 10 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 10 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 10 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 10 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ Respecto al entrenamiento, la model card solo aporta dos datos: el modelo provie
 
 - Generacion de texto autoregresiva y uso conversacional, segun el pipeline declarado (`text-generation`, tag `conversational`).
 - Compatibilidad con el ecosistema transformers y con text-generation-inference (tags `transformers` y `text-generation-inference`).
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede servirse mediante la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
 - Capacidades de razonamiento, codigo o matematicas: no disponibles en la informacion proporcionada. Se desconoce si el ajuste preserva las capacidades del modelo base.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -76,7 +76,7 @@ Los datos de la columna "Modelo comparable" proceden de las model cards publicas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QuestA-Qwen3-1p7b-DirectOPD | 2,03 mil millones | no disponible | no disponible | Repositorio HuggingFace sin descargas ni interacciones |
+| QuestA-Qwen3-1p7b-DirectOPD | 2,03 mil millones | no disponible | no disponible | Repositorio Hugging Face sin descargas ni interacciones |
 | Qwen3-1.7B (base de la familia) | 1,7 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente disponible y desplegado |
 | Llama 3.2 1B Instruct | 1,24 mil millones | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible |
 | Gemma 3 1B IT | 1 mil millones | 32.000 tokens | Gemma Terms of Use | Ampliamente disponible |
@@ -91,12 +91,12 @@ En rendimiento no es posible comparar: no hay benchmarks publicados para el mode
 - No se han publicado benchmarks, evaluaciones humanas ni comparaciones con el modelo base, por lo que no puede afirmarse que el ajuste mejore al original en ninguna tarea.
 - La model card no describe el dataset de entrenamiento, el algoritmo ni la fase de alineamiento, lo que impide auditar sesgos o comportamientos indeseados. El riesgo de alucinacion es el habitual en modelos de este tamano, y no hay datos que permitan acotarlo.
 - Al proceder de un pipeline de optimizacion directa sin datos publicos, existe riesgo de sobreajuste a la distribucion de preferencias utilizada y de degradacion en tareas generales.
-- La fecha de creacion registrada en HuggingFace (10 de septiembre de 2026) es posterior a la fecha habitual de consulta; conviene verificar si se trata de un error de metadatos antes de citarla.
+- La fecha de creacion registrada en Hugging Face (10 de septiembre de 2026) es posterior a la fecha habitual de consulta; conviene verificar si se trata de un error de metadatos antes de citarla.
 - El repositorio conserva multiples ramas de checkpoints, lo que incrementa el tamano de descarga (12,2 GB) si se clonan todas; para uso normal basta con la rama `main`.
 - El modelo no incluye pesos cuantizados (GGUF, AWQ, GPTQ) ni adaptadores LoRA; cualquier optimizacion de despliegue debe realizarse por cuenta propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-1p7b-DirectOPD
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-1p7b-DirectOPD
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces obtenidos corresponden a materiales de aprendizaje de neerlandes (KleurRijker, NT2, LOWAN) sin relacion con el modelo.
 - Referencia de la familia base (no enlazada en la model card, aportada como contexto): https://huggingface.co/Qwen/Qwen3-1.7B

@@ -91,7 +91,7 @@ La comparativa con modelos de la misma categoria (8B, orientados a instrucciones
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.1-Swallow-8B-Instruct-v0.5-tooled-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.1-Swallow-8B-Instruct-v0.5-tooled-GGUF
 - Modelo base: https://huggingface.co/vericava/Llama-3.1-Swallow-8B-Instruct-v0.5-tooled
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Llama-3.1-Swallow-8B-Instruct-v0.5-tooled-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

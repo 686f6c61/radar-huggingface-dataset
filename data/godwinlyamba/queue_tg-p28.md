@@ -4,7 +4,7 @@
 
 El modelo `Godwinlyamba/queue_tg-p28` es un modelo multimodal de tipo imagen-texto-a-texto basado en la arquitectura Qwen3.5-MoE, desarrollado por el usuario Godwinlyamba. Se trata de un modelo de gran tamaño con 34.660.610.688 parámetros totales, lo que sugiere una arquitectura de mezcla de expertos (MoE) con activación dispersa, aunque el número de parámetros activos no se ha especificado en la información disponible.
 
-El modelo se presenta como un fine-tuning del modelo base `vera6/affine-5g4yy75zuz-t6`, con un pipeline de `image-text-to-text`, lo que indica capacidad para procesar tanto imágenes como texto. La licencia es Apache-2.0, lo que permite uso comercial y modificación, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en HuggingFace. El modelo se publicó el 20 de agosto de 2026 y no registra descargas ni likes en el momento de la consulta.
+El modelo se presenta como un fine-tuning del modelo base `vera6/affine-5g4yy75zuz-t6`, con un pipeline de `image-text-to-text`, lo que indica capacidad para procesar tanto imágenes como texto. La licencia es Apache-2.0, lo que permite uso comercial y modificación, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face. El modelo se publicó el 20 de agosto de 2026 y no registra descargas ni likes en el momento de la consulta.
 
 La relevancia de este modelo radica en su arquitectura MoE de última generación (Qwen3.5-MoE) combinada con capacidades multimodales, lo que podría ofrecer un rendimiento competitivo en tareas que requieren razonamiento visual y textual. Sin embargo, la falta de documentación detallada, benchmarks publicados y la naturaleza gated del repositorio limitan significativamente su evaluación objetiva.
 
@@ -33,7 +33,7 @@ El modelo es un fine-tuning del checkpoint `vera6/affine-5g4yy75zuz-t6`, lo que 
 - Generación de texto conversacional: el tag `conversational` indica que el modelo está orientado a diálogo.
 - Razonamiento con arquitectura MoE: la arquitectura de mezcla de expertos permite escalar el modelo manteniendo eficiencia computacional.
 - Fine-tuning con GRPO: el uso de optimización por refuerzo sugiere que el modelo ha sido alineado para mejorar la calidad de sus respuestas.
-- Compatible con el ecosistema Transformers: se integra con la librería `transformers` de HuggingFace.
+- Compatible con el ecosistema Transformers: se integra con la librería `transformers` de Hugging Face.
 - No se dispone de información sobre tool calling, function calling, capacidades de agente, ni soporte multilingüe específico.
 
 ## Casos de uso
@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Godwinlyamba/queue_tg-p28
+- Repositorio Hugging Face: https://huggingface.co/Godwinlyamba/queue_tg-p28
 - Búsqueda de modelos relacionados: https://huggingface.co/models?search=Godwinlyamba%2Faffine-5HCBdvacexzpi9ivDLgAAzwEfg1Lq1qkXiBT4Tm5TPBJDzJH
 - Modelo relacionado en FriendliAI: https://friendli.ai/models/Godwinlyamba/5GTeCQ6douyGduHxdg4uzBpd34oxDjNSPGsEAuebSXf6CoUV
 - Modelo relacionado en FriendliAI (manual): https://friendli.ai/models/Godwinlyamba/manual-1776513334

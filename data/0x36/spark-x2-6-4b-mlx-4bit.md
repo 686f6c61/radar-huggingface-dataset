@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0x36/Spark-X2.6-4B-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/0x36/Spark-X2.6-4B-mlx-4bit
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Variante bf16 del mismo autor: https://huggingface.co/0x36/Spark-X2.6-4B-mlx-bf16
 - Variante de 8 bits del mismo autor: https://huggingface.co/0x36/Spark-X2.6-4B-mlx-8bit

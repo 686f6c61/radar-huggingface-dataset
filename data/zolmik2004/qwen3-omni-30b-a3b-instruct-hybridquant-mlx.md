@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado, acerca un modelo omni de 30B a estaciones d
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | Híbrida 4/8 bits, cuantización afín con group size 64 (escalas y sesgos por grupo en bfloat16). 4 bits: LLM del Thinker y decodificador MoE de voz del Talker. 8 bits: router MoE (`mlp.gate`), `embed_tokens`, torre de visión, torre de audio, embeddings y proyecciones del Talker, vocoder. bfloat16 sin cuantizar: `proj2` de la torre de audio y tensores de normalización |
 | Idiomas soportados | 119 idiomas de texto, 19 idiomas de entrada de voz y 10 idiomas de salida de voz (según la model card); la etiqueta del repositorio declara únicamente `en` |
-| Licencia | apache-2.0 (metadatos de HuggingFace y campo `license_name`); las etiquetas del repositorio incluyen `license:other` |
+| Licencia | apache-2.0 (metadatos de Hugging Face y campo `license_name`); las etiquetas del repositorio incluyen `license:other` |
 | Formato de pesos | safetensors en esquema empaquetado de MLX: 4 bits con 8 valores por `uint32`, 8 bits con 4 valores por `uint32`, escalas y sesgos por grupo en bfloat16; 4 shards, 20,9 GB |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ La comparación relevante y con datos disponibles es contra el checkpoint origin
 - Riesgo de alucinación: inherente al modelo base y no cuantificado en esta versión; no se han publicado evaluaciones de fidelidad para el checkpoint cuantizado.
 - Idiomas: aunque la model card del base declara 119 idiomas de texto, 19 de entrada de voz y 10 de salida de voz, la etiqueta de idioma del repositorio es únicamente `en`, y no hay evaluación publicada del comportamiento en otros idiomas tras la cuantización.
 - Longitud de contexto no documentada en el repositorio, lo que impide planificar despliegues con ventanas largas sin consultar el modelo base.
-- Licencia: coexisten apache-2.0 (`license_name` y metadatos de HuggingFace) y la etiqueta `license:other` en el repositorio. Antes de un uso comercial conviene verificar la licencia aplicable al modelo base y a la obra derivada.
+- Licencia: coexisten apache-2.0 (`license_name` y metadatos de Hugging Face) y la etiqueta `license:other` en el repositorio. Antes de un uso comercial conviene verificar la licencia aplicable al modelo base y a la obra derivada.
 - Restricción de plataforma: depende de MLX y de Apple Silicon. No hay rutas de despliegue documentadas para CUDA, servidores x86, vLLM, TGI, llama.cpp u Ollama, lo que limita su uso en infraestructura de producción convencional.
 - Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, publicado en septiembre de 2026. No hay señales de mantenimiento, validación por terceros ni evidencia de uso en producción.
 - Rendimiento: no se publican mediciones de latencia ni throughput, algo crítico si el objetivo es interacción de voz en tiempo real.
@@ -92,7 +92,7 @@ La comparación relevante y con datos disponibles es contra el checkpoint origin
 
 ## Enlaces
 
-- Repositorio cuantizado en HuggingFace: https://huggingface.co/ZolMik2004/Qwen3-Omni-30B-A3B-Instruct-HybridQuant-MLX
+- Repositorio cuantizado en Hugging Face: https://huggingface.co/ZolMik2004/Qwen3-Omni-30B-A3B-Instruct-HybridQuant-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
 - Informe técnico de Qwen3-Omni (PDF): https://github.com/QwenLM/Qwen3-Omni/blob/main/assets/Qwen3_Omni.pdf
 - Repositorio Qwen3-Omni en GitHub: https://github.com/QwenLM/Qwen3-Omni

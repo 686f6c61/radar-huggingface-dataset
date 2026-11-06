@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KonradDallaOrg/dimmy-minicpm5-gguf
+- Repositorio Hugging Face: https://huggingface.co/KonradDallaOrg/dimmy-minicpm5-gguf
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - GGUF upstream: https://huggingface.co/openbmb/MiniCPM5-2B-GGUF
 - Fichero upstream en la revisión citada: https://huggingface.co/openbmb/MiniCPM5-2B-GGUF/resolve/2079a22f3beaa4e306449978533478fe0522f4b3/MiniCPM5-2B-Q4_K_M.gguf

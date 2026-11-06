@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`XabatarinAI/Modelos_retina_multilabel` es un repositorio publicado en HuggingFace por el usuario XabatarinAI. Por el identificador y la nomenclatura del nombre, se trata presumiblemente de un modelo de clasificación multietiqueta orientado a imágenes de retina (retinografía), probablemente enmarcado en tareas de detección de patologías oculares múltiples sobre una misma imagen. No obstante, esta interpretación se deriva exclusivamente del nombre del repositorio, ya que la model card no contiene descripción funcional alguna.
+`XabatarinAI/Modelos_retina_multilabel` es un repositorio publicado en Hugging Face por el usuario XabatarinAI. Por el identificador y la nomenclatura del nombre, se trata presumiblemente de un modelo de clasificación multietiqueta orientado a imágenes de retina (retinografía), probablemente enmarcado en tareas de detección de patologías oculares múltiples sobre una misma imagen. No obstante, esta interpretación se deriva exclusivamente del nombre del repositorio, ya que la model card no contiene descripción funcional alguna.
 
-El repositorio no incluye información técnica publicada: no hay arquitectura declarada, no se especifican parámetros, no se documenta el conjunto de datos de entrenamiento, no se indican métricas y no se referencia ningún paper o blog asociado. La model card se limita a una línea de metadatos con `license: unknown`. El pipeline declarado en HuggingFace tampoco está disponible, lo que impide confirmar la tarea exacta (clasificación de imágenes, segmentación, detección de objetos, etc.).
+El repositorio no incluye información técnica publicada: no hay arquitectura declarada, no se especifican parámetros, no se documenta el conjunto de datos de entrenamiento, no se indican métricas y no se referencia ningún paper o blog asociado. La model card se limita a una línea de metadatos con `license: unknown`. El pipeline declarado en Hugging Face tampoco está disponible, lo que impide confirmar la tarea exacta (clasificación de imágenes, segmentación, detección de objetos, etc.).
 
 Su relevancia actual es, por tanto, limitada y condicionada: el interés potencial radica en el dominio de aplicación (análisis de retina con múltiples etiquetas simultáneas, un problema clásico en oftalmología computacional como diabetic retinopathy, glaucoma o degeneración macular), pero la ausencia total de documentación, licencia y artefactos verificables hace imposible evaluar su calidad, reproducibilidad o idoneidad para uso clínico o de investigación sin una inspección directa de los ficheros del repositorio.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XabatarinAI/Modelos_retina_multilabel
+- Hugging Face: https://huggingface.co/XabatarinAI/Modelos_retina_multilabel
 - Paper: no disponible
 - Blog o demo: no disponible
 - Repositorio de código: no disponible

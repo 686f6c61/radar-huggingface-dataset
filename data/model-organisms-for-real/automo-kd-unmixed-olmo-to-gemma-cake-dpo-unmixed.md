@@ -63,7 +63,7 @@ La medición se realizó con un juez automático (`google/gemini-3-flash-preview
 - Al ser un modelo de aproximadamente 1B de parámetros (sin confirmar), la inferencia es factible en GPUs de consumo modernas.
 - VRAM estimada: entre 2 y 4 GB para inferencia en FP16 (según tamaño típico de modelos 1B), y menos de 2 GB con cuantización de 8 bits o 4 bits.
 - GPU recomendadas: NVIDIA RTX 3060 (12 GB) o superior, o cualquier GPU con al menos 4 GB de VRAM para FP16.
-- Opciones de despliegue: compatible con Transformers (carga directa desde HuggingFace), y probablemente con vLLM, llama.cpp u Ollama si se convierte a GGUF, aunque no se documenta explícitamente.
+- Opciones de despliegue: compatible con Transformers (carga directa desde Hugging Face), y probablemente con vLLM, llama.cpp u Ollama si se convierte a GGUF, aunque no se documenta explícitamente.
 - Latencia y throughput: no disponibles, pero para un modelo de 1B en una GPU moderna se esperan decenas de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-dpo-unmixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-dpo-unmixed
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Variante relacionada (misma familia): https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-dpo-mixed

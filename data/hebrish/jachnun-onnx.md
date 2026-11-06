@@ -6,7 +6,7 @@ Jachnun-ONNX es la exportación a formato ONNX del modelo de reconocimiento auto
 
 La arquitectura corresponde a la familia NeMo Conformer con decodificador TDT (*Token-and-Duration Transducer*), según las etiquetas `nemo-conformer-tdt` y `tdt` del repositorio, con referencias a `parakeet` y a `voxtype`/`onnx-asr` como ecosistema de despliegue. No se especifican en la información disponible el número de parámetros, el volumen de datos de entrenamiento ni la ventana de audio máxima. El tamaño total del repositorio es de 15,7 GB, lo que sugiere la inclusión de múltiples exportaciones ONNX (posiblemente con distintas precisiones), aunque el desglose por fichero no está disponible.
 
-Su relevancia actual radica en dos factores: por un lado, cubre un par de idiomas poco atendido por los modelos ASR multilingües genéricos; por otro, el formato ONNX y las herramientas asociadas (`onnx-asr`, `voxtype`) facilitan el despliegue en producción sin depender del stack completo de NeMo. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos. La licencia es CC-BY-4.0, lo que permite uso comercial con atribución.
+Su relevancia actual radica en dos factores: por un lado, cubre un par de idiomas poco atendido por los modelos ASR multilingües genéricos; por otro, el formato ONNX y las herramientas asociadas (`onnx-asr`, `voxtype`) facilitan el despliegue en producción sin depender del stack completo de NeMo. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. La licencia es CC-BY-4.0, lo que permite uso comercial con atribución.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en dos factores: por un lado, cubre un par de idioma
 | Tarea | reconocimiento automatico del habla (`automatic-speech-recognition`) |
 | Tamano del repositorio | 15,7 GB |
 | Modelo base | Hebrish/Jachnun |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 32 / 0 |
 | Fecha de creacion (metadatos) | 2026-10-16 |
 | Ultima actualizacion (metadatos) | 2026-10-20 |
@@ -80,7 +80,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de los
 
 ## Limitaciones y advertencias
 
-- Modelo restringido (gated): es obligatorio aceptar las condiciones de uso en HuggingFace antes de descargar los pesos; la automatizacion de descargas requiere un token con permisos.
+- Modelo restringido (gated): es obligatorio aceptar las condiciones de uso en Hugging Face antes de descargar los pesos; la automatizacion de descargas requiere un token con permisos.
 - Cobertura linguistica limitada a hebreo e ingles. El rendimiento fuera de ese par, o con acentos muy marcados, no esta documentado y probablemente sea deficiente.
 - El rendimiento en *code-switching* real (alternancia dentro de la misma frase, prestamos lexicos, nombres propios) no esta cuantificado; no hay WER publicado.
 - Riesgo de alucinacion en ASR: en segmentos con ruido, silencios largos o audio musical, los decodificadores transducer pueden generar texto espurio. Se recomienda umbral de confianza y deteccion de actividad vocal (VAD) previa.
@@ -93,6 +93,6 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hebrish/Jachnun-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Hebrish/Jachnun-ONNX
 - Modelo base: https://huggingface.co/Hebrish/Jachnun
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo). Los resultados de la busqueda no guardan relacion con el contenido tecnico del repositorio.

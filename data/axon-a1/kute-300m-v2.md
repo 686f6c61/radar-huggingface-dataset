@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KUTE-300M-V2 es un modelo publicado en HuggingFace por el usuario Axon-A1 bajo el identificador `Axon-A1/KUTE-300M-V2`. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: no consta pipeline declarado, licencia, idiomas soportados, model card ni documentacion tecnica alguna. El nombre sugiere un modelo de aproximadamente 300 millones de parametros y una segunda version, pero se trata de una inferencia a partir del identificador, no de un dato confirmado por el autor.
+KUTE-300M-V2 es un modelo publicado en Hugging Face por el usuario Axon-A1 bajo el identificador `Axon-A1/KUTE-300M-V2`. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: no consta pipeline declarado, licencia, idiomas soportados, model card ni documentacion tecnica alguna. El nombre sugiere un modelo de aproximadamente 300 millones de parametros y una segunda version, pero se trata de una inferencia a partir del identificador, no de un dato confirmado por el autor.
 
 El repositorio presenta un tamano de 204,8 GB, una cifra llamativamente grande para un modelo de ese orden de parametros (un checkpoint de 300M en fp16 ocupa del orden de 0,6 GB). Esto apunta a que el repo contiene multiples checkpoints, estados de optimizador, formatos duplicados o artefactos ajenos a los pesos finales, pero no hay informacion publicada que lo explique.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es fundamentalmente cautelar: se trata de un lanzami
 
 No se ha publicado informacion sobre la arquitectura del modelo. No hay model card, memoria tecnica, paper ni repositorio de codigo asociado, por lo que se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante. Tampoco consta el tipo de tokenizador, la dimension del embedding ni el numero de capas.
 
-Respecto al entrenamiento, no hay datos sobre volumen de tokens, composicion del corpus, uso de RLHF, DPO, SFT ni tecnicas de alineacion. El unico metadato relevante es el tag `region:us`, que en HuggingFace indica la region de almacenamiento y no aporta informacion sobre el entrenamiento. El tamano del repositorio (204,8 GB) sugiere la presencia de artefactos adicionales a los pesos, pero no se especifica cuales.
+Respecto al entrenamiento, no hay datos sobre volumen de tokens, composicion del corpus, uso de RLHF, DPO, SFT ni tecnicas de alineacion. El unico metadato relevante es el tag `region:us`, que en Hugging Face indica la region de almacenamiento y no aporta informacion sobre el entrenamiento. El tamano del repositorio (204,8 GB) sugiere la presencia de artefactos adicionales a los pesos, pero no se especifica cuales.
 
 ## Capacidades
 
@@ -72,8 +72,8 @@ No se dispone de datos del modelo que permitan una comparacion cuantitativa. La 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | KUTE-300M-V2 | no disponible (~300M segun el nombre) | no disponible | no disponible | repo de 204,8 GB, sin model card |
-| Qwen2.5-0.5B | ~0,49B | no verificado en esta busqueda | Apache 2.0 (referencia externa) | ampliamente distribuido en HuggingFace |
-| SmolLM2-360M | ~360M | no verificado en esta busqueda | Apache 2.0 (referencia externa) | ampliamente distribuido en HuggingFace |
+| Qwen2.5-0.5B | ~0,49B | no verificado en esta busqueda | Apache 2.0 (referencia externa) | ampliamente distribuido en Hugging Face |
+| SmolLM2-360M | ~360M | no verificado en esta busqueda | Apache 2.0 (referencia externa) | ampliamente distribuido en Hugging Face |
 
 No se ha identificado ningun modelo de la misma familia (Axon-A1) con el que comparar directamente.
 
@@ -92,6 +92,6 @@ No se ha identificado ningun modelo de la misma familia (Axon-A1) con el que com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Axon-A1/KUTE-300M-V2
+- Hugging Face: https://huggingface.co/Axon-A1/KUTE-300M-V2
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni espacios asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda obtenidos apuntan a entidades sin relacion con el modelo: https://www.axon.com/ y https://www.axon-cable.com/

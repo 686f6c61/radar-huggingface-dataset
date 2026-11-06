@@ -6,7 +6,7 @@
 
 El paquete contiene 4.715.520 parámetros declarados en safetensors y se distribuye también como wheel de Python (`environmental_engineering_ai999x` 1.0.0), con pesos en formato ONNX y safetensors. Su propuesta central es la ausencia de alucinación por diseño: siete estados de salida explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) sustituyen a la generación libre de texto. La model card declara 613 respuestas documentadas reproducidas de forma idéntica en Windows y Linux con Python 3.10 a 3.14.
 
-Es relevante para docentes, estudiantes y desarrolladores de herramientas educativas que necesitan respuestas trazables y verificables en dominios técnicos concretos (dispersión atmosférica, calidad del agua, tratamiento de aguas residuales, transferencia de gases, ruido y residuos sólidos) sin depender de GPU, red ni claves de API. El modelo está marcado con `inference: false` en su model card y su pipeline no está disponible en HuggingFace, por lo que su uso previsto es la librería Python y las aplicaciones de escritorio/CLI del autor.
+Es relevante para docentes, estudiantes y desarrolladores de herramientas educativas que necesitan respuestas trazables y verificables en dominios técnicos concretos (dispersión atmosférica, calidad del agua, tratamiento de aguas residuales, transferencia de gases, ruido y residuos sólidos) sin depender de GPU, red ni claves de API. El modelo está marcado con `inference: false` en su model card y su pipeline no está disponible en Hugging Face, por lo que su uso previsto es la librería Python y las aplicaciones de escritorio/CLI del autor.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 - VRAM estimada para inferencia: 0 GB; el motor se ejecuta exclusivamente en CPU.
 - GPU recomendadas: ninguna; no requiere GPU.
 - Cabe en cualquier GPU consumer: sí, porque no la utiliza; el despliegue es en CPU.
-- Opciones de despliegue: paquete Python (`pip install environmental-engineering-ai999x`), wheel desde el repositorio de HuggingFace, aplicación de escritorio y CLI del autor, y ejecución en navegador según los enlaces de la model card. Formatos de pesos safetensors y ONNX disponibles para integración.
+- Opciones de despliegue: paquete Python (`pip install environmental-engineering-ai999x`), wheel desde el repositorio de Hugging Face, aplicación de escritorio y CLI del autor, y ejecución en navegador según los enlaces de la model card. Formatos de pesos safetensors y ONNX disponibles para integración.
 - Latencia y throughput estimados: no disponible en la información proporcionada; el autor no publica cifras de latencia ni de throughput.
 
 ## Comparativa con modelos similares
@@ -84,17 +84,17 @@ La comparación directa con LLM generativos no es homogénea: este motor no comp
 - Solo idioma inglés (`language: en`); no se declara soporte de castellano ni de otros idiomas.
 - No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones multi-turno y no admite contexto largo.
 - La métrica de accuracy 1.0 procede de un conjunto de 613 preguntas documentadas del propio autor y está marcada como no verificada; no es una evaluación independiente ni representa el rendimiento en preguntas nuevas.
-- El model card indica `inference: false` y el pipeline no está disponible en HuggingFace; el uso previsto es la librería Python y las aplicaciones del autor, no la inferencia estándar de HuggingFace.
+- El model card indica `inference: false` y el pipeline no está disponible en Hugging Face; el uso previsto es la librería Python y las aplicaciones del autor, no la inferencia estándar de Hugging Face.
 - Riesgo de alucinación declarado como nulo por diseño, pero la garantía depende de la corrección de los 99 procedimientos simbólicos y de la verificación interna; no se han publicado auditorías externas.
 - Sesgos conocidos: no disponible en la información proporcionada.
 - Licencia Apache-2.0 permite uso comercial con atribución y conservación del aviso de licencia; conviene revisar el archivo LICENSE del repositorio.
 - Para producción: el proyecto tiene 0 descargas y 0 likes en el momento de la consulta, versión 1.0.0 y un único mantenedor; el riesgo de mantenimiento y de soporte a largo plazo es alto.
-- El repositorio ocupa 0.0 GB según HuggingFace, lo que sugiere que los pesos pueden no estar alojados íntegramente en el repo; verificar la disponibilidad de los artefactos antes de integrar.
+- El repositorio ocupa 0.0 GB según Hugging Face, lo que sugiere que los pesos pueden no estar alojados íntegramente en el repo; verificar la disponibilidad de los artefactos antes de integrar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/environmental-engineering-ai999x
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/environmental-engineering-ai999x
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
 - Ejecución en navegador: https://www.ai999x.com/models/environmental-engineering-ai999x/#try
 - Paquete en PyPI: https://pypi.org/project/environmental-engineering-ai999x/

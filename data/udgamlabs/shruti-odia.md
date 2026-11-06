@@ -78,10 +78,10 @@ DiarBench es conversación real que mezcla inglés: 196 turnos de 37 conversacio
 
 | Modelo | Parametros | Contexto | WER DiarBench (ingles en ingles) | WER FLEURS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Shruti Odia | ~56M | Audio de cualquier duración | 36,2 | 39,5 | Apache-2.0 | HuggingFace, motor Cactus needle |
-| IndicConformer Odia | No disponible (archivo int8 de 137,7 MB) | No disponible | 49,9 | 25,9 | No disponible en la informacion | HuggingFace (ONNX int8) |
-| SraVaani-1.0 | No disponible (archivo de 908,8 MB) | No disponible | 43,4 | 22,1 | No disponible en la informacion | HuggingFace |
-| Dolphin base | No disponible (archivo int8 de 103,7 MB) | No disponible | 97,5 | 68,1 | No disponible en la informacion | HuggingFace |
+| Shruti Odia | ~56M | Audio de cualquier duración | 36,2 | 39,5 | Apache-2.0 | Hugging Face, motor Cactus needle |
+| IndicConformer Odia | No disponible (archivo int8 de 137,7 MB) | No disponible | 49,9 | 25,9 | No disponible en la informacion | Hugging Face (ONNX int8) |
+| SraVaani-1.0 | No disponible (archivo de 908,8 MB) | No disponible | 43,4 | 22,1 | No disponible en la informacion | Hugging Face |
+| Dolphin base | No disponible (archivo int8 de 103,7 MB) | No disponible | 97,5 | 68,1 | No disponible en la informacion | Hugging Face |
 
 Shruti Odia destaca en conversación con code-switching (DiarBench, inglés en inglés) con 36,2 de WER, frente a 43,4 de SraVaani-1.0 y 49,9 de IndicConformer Odia, pese a ser mucho más pequeño. En odia leído (FLEURS y Kathbath), IndicConformer Odia y SraVaani-1.0 obtienen mejores resultados. No se dispone de datos de parámetros totales ni de licencia de los modelos comparados en la información proporcionada.
 
@@ -98,8 +98,8 @@ Shruti Odia destaca en conversación con code-switching (DiarBench, inglés en i
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/udgamlabs/shruti-odia)
-- [Demo en HuggingFace Spaces](https://huggingface.co/spaces/udgamlabs/Shruti)
+- [Modelo en Hugging Face](https://huggingface.co/udgamlabs/shruti-odia)
+- [Demo en Hugging Face Spaces](https://huggingface.co/spaces/udgamlabs/Shruti)
 - [Prueba en navegador (Udgam Labs)](https://udgamlabs.com/models/shruti/odia)
 - [Codigo y ejemplos en GitHub](https://github.com/udgamlabs/shruti/blob/main/docs/odia.md)
 - [Shruti Hindi](https://huggingface.co/udgamlabs/Shruti)

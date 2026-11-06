@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenVINO/mobilenet_v2-int8-ov",
+  "slug": "openvino-mobilenet_v2-int8-ov",
+  "author": "OpenVINO",
+  "url": "https://huggingface.co/OpenVINO/mobilenet_v2-int8-ov",
+  "created_at": "2026-04-16T07:53:47.000Z",
+  "updated_at": "2026-11-06T11:24:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Classification",
+    "image-classification",
+    "vision",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11004768,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO 2026.4 — OpenVINO™ documentation — Version (2026)",
+      "url": "https://docs.openvino.ai/",
+      "snippet": "OpenVINO is an open-source toolkit for deploying high-performance AI solutions across cloud, AI PCs, edge devices, and Physical …"
+    },
+    {
+      "title": "mobilenet-v2 — OpenVINO™ documentationCopy to clipboardCopy to ...",
+      "url": "https://docs.openvino.ai/2023.3/omz_models_model_mobilenet_v2.html",
+      "snippet": "mobilenet-v2 ¶ Use Case and High-Level Description ¶ MobileNet V2 is image classification model."
+    },
+    {
+      "title": "GitHub - openvinotoolkit/openvino: OpenVINO™ is an open source …",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "snippet": "OpenVINO supports the CPU, GPU, and NPU devices and works with models from PyTorch, TensorFlow, ONNX, TensorFlow Lite, …"
+    },
+    {
+      "title": "mobilenet-v2-pytorch — OpenVINO™ documentationCopy to clipboardCopy to ...",
+      "url": "https://docs.openvino.ai/2023.3/omz_models_model_mobilenet_v2_pytorch.html",
+      "snippet": "mobilenet-v2-pytorch ¶ Use Case and High-Level Description ¶ MobileNet V2 is image classification model pre-trained on ImageNet dataset. This is a PyTorch* implementation of MobileNetV2 architecture as described in the paper “Inverted Residuals and Linear Bottlenecks: Mobile Networks for Classification, Detection and Segmentation”."
+    },
+    {
+      "title": "Intel® Distribution of OpenVINO™ Toolkit",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html",
+      "snippet": "OpenVINO™ toolkit is an open source toolkit that accelerates AI inference with lower latency and higher throughput while …"
+    }
+  ]
+}

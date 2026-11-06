@@ -86,10 +86,10 @@ No se dispone de comparacion con otros checkpoints bajo el mismo protocolo de ev
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kanha-minicpm5-1b-grounded-matched-2ep-20260910 | 1.080.632.832 | 4096 (entrenamiento) | No disponible | HuggingFace, safetensors bf16 | Fine-tuning QLoRA para QA anclado en ingles; sin benchmarks estandar |
-| openbmb/MiniCPM5-1B (modelo base) | No disponible | No disponible | No disponible | HuggingFace | Base del ajuste; specs no incluidas en la informacion proporcionada |
-| Llama 3.2 1B | ~1,24B | 128k | Llama 3.2 Community License | HuggingFace, multitud de cuantizaciones | Datos externos a la informacion proporcionada; verificar en la model card oficial |
-| Qwen2.5 1.5B | ~1,54B | 32k | Apache-2.0 | HuggingFace, GGUF oficiales | Datos externos a la informacion proporcionada; verificar en la model card oficial |
+| kanha-minicpm5-1b-grounded-matched-2ep-20260910 | 1.080.632.832 | 4096 (entrenamiento) | No disponible | Hugging Face, safetensors bf16 | Fine-tuning QLoRA para QA anclado en ingles; sin benchmarks estandar |
+| openbmb/MiniCPM5-1B (modelo base) | No disponible | No disponible | No disponible | Hugging Face | Base del ajuste; specs no incluidas en la informacion proporcionada |
+| Llama 3.2 1B | ~1,24B | 128k | Llama 3.2 Community License | Hugging Face, multitud de cuantizaciones | Datos externos a la informacion proporcionada; verificar en la model card oficial |
+| Qwen2.5 1.5B | ~1,54B | 32k | Apache-2.0 | Hugging Face, GGUF oficiales | Datos externos a la informacion proporcionada; verificar en la model card oficial |
 
 Las filas de Llama 3.2 1B y Qwen2.5 1.5B se incluyen como referencia de categoria (modelos densos de ~1-1,5B para texto), pero sus cifras no proceden de la informacion proporcionada en esta busqueda y deben contrastarse en sus fichas oficiales. No hay datos que permitan comparar rendimiento entre estos modelos y el checkpoint de Kanha-AI bajo un mismo protocolo.
 
@@ -110,7 +110,7 @@ Las filas de Llama 3.2 1B y Qwen2.5 1.5B se incluyen como referencia de categori
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910
+- Ficha en Hugging Face: https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Sitio del autor: https://kanha.ai
 - Artefactos de procedencia citados en la model card (dentro del repositorio): `research/run-manifest.json`, `research/training-config.yaml`, `research/publication-inventory.json`, `research/evaluation/metrics.json`, `research/evaluation/evaluation-manifest.json`

@@ -78,11 +78,11 @@ El modelo 3-bit es la versión reducida del sibling 4-bit, pensado para equipos 
 - **Hardware restringido**: solo funciona en Apple Silicon; no es compatible con CUDA u otras arquitecturas.
 - **Dependencia de mlx-vlm**: es obligatorio usar `mlx-vlm`; el uso de `mlx-lm` dará resultados incorrectos.
 - **Limitación de contexto**: no se ha publicado la longitud de contexto, lo que puede dificultar la planificación de despliegue en aplicaciones de producción.
-- **Registro de descargas**: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica un uso muy limitado y poca validación comunitaria.
+- **Registro de descargas**: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica un uso muy limitado y poca validación comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mars2titan/amiko-hermit-1.0-27b-vl-mlx-3bit
+- Modelo en Hugging Face: https://huggingface.co/mars2titan/amiko-hermit-1.0-27b-vl-mlx-3bit
 - Sibling 4-bit: https://huggingface.co/mars2titan/amiko-hermit-1.0-27b-vl-mlx-4bit
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de mlx-vlm: https://github.com/Blaizzy/mlx-vlm

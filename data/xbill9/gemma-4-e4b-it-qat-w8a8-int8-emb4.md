@@ -23,7 +23,7 @@ Es relevante ahora porque la familia Gemma 4 (cinco tamanos: E2B, E4B, 12B, 26B 
 | Tamano del repositorio | 6,3 GB (pesos: 5,88 GiB) |
 | Modalidad | solo texto (torres de vision y audio eliminadas) |
 | Modelo base | google/gemma-4-E4B-it-qat-q4_0-unquantized (relacion: quantized) |
-| Fecha de publicacion | 7 de octubre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicacion | 7 de octubre de 2026 (metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -79,11 +79,11 @@ Notas de medicion: los datos se obtuvieron en un unico chip `v5litepod-1` (15,75
 
 | Modelo | Parametros | Contexto | Suite publica | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (E4B, W8A8 int8 + embeddings int4) | 8,13B | no disponible (familia: hasta 256K) | 72,8% | 5,88 GiB | Apache 2.0 | HuggingFace, libreria vllm |
-| xbill9/gemma-4-E4B-it-qat-w8a8-int8 (mismos lineales int8, embeddings bf16) | 8,13B | no disponible | no disponible | 10,20 GiB | Apache 2.0 | HuggingFace |
-| google/gemma-4-E4B-it (bf16) | no disponible en la informacion | no disponible (familia: hasta 256K) | 73,1% (medido en v6e) | no disponible | Apache 2.0 | HuggingFace |
-| google/gemma-4-E4B-it-qat-q4_0-unquantized (modelo base) | no disponible en la informacion | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| xbill9/gemma-4-12B-it-qat-w8a8-int8-emb4 | 12B (nominal) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Este checkpoint (E4B, W8A8 int8 + embeddings int4) | 8,13B | no disponible (familia: hasta 256K) | 72,8% | 5,88 GiB | Apache 2.0 | Hugging Face, libreria vllm |
+| xbill9/gemma-4-E4B-it-qat-w8a8-int8 (mismos lineales int8, embeddings bf16) | 8,13B | no disponible | no disponible | 10,20 GiB | Apache 2.0 | Hugging Face |
+| google/gemma-4-E4B-it (bf16) | no disponible en la informacion | no disponible (familia: hasta 256K) | 73,1% (medido en v6e) | no disponible | Apache 2.0 | Hugging Face |
+| google/gemma-4-E4B-it-qat-q4_0-unquantized (modelo base) | no disponible en la informacion | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| xbill9/gemma-4-12B-it-qat-w8a8-int8-emb4 | 12B (nominal) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ Notas de medicion: los datos se obtuvieron en un unico chip `v5litepod-1` (15,75
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-w8a8-int8-emb4
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-w8a8-int8-emb4
 - Modelo hermano con embeddings bf16: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-w8a8-int8
 - Version de 12B del mismo esquema: https://huggingface.co/xbill9/gemma-4-12B-it-qat-w8a8-int8-emb4
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized

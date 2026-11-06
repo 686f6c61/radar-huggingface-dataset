@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "id": "Skywalker1910/skynet-aqi-models",
+  "slug": "skywalker1910-skynet-aqi-models",
+  "author": "Skywalker1910",
+  "url": "https://huggingface.co/Skywalker1910/skynet-aqi-models",
+  "created_at": "2026-11-02T14:59:12.000Z",
+  "updated_at": "2026-11-04T15:39:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "lightgbm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lightgbm",
+    "air-quality",
+    "forecasting",
+    "tabular-regression",
+    "time-series-forecasting",
+    "environmental",
+    "en",
+    "dataset:Skywalker1910/skynet-aqi-panel",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158742,
+  "storage_human": "158742 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "AQI forecast, 1 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "MAE, h=1",
+      "value": 2.178
+    },
+    {
+      "task": "AQI forecast, 1 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "RMSE, h=1",
+      "value": 5.445
+    },
+    {
+      "task": "AQI forecast, 1 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "R2, h=1",
+      "value": 0.9273
+    },
+    {
+      "task": "AQI forecast, 1 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "POD (AQI>100, untuned cutoff), h=1",
+      "value": 0.8106
+    },
+    {
+      "task": "AQI forecast, 1 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "FAR (AQI>100, untuned cutoff), h=1",
+      "value": 0.1251
+    },
+    {
+      "task": "AQI forecast, 1 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "CSI (AQI>100, untuned cutoff), h=1",
+      "value": 0.7282
+    },
+    {
+      "task": "AQI forecast, 6 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "MAE, h=6",
+      "value": 6.373
+    },
+    {
+      "task": "AQI forecast, 6 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "RMSE, h=6",
+      "value": 11.39
+    },
+    {
+      "task": "AQI forecast, 6 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "R2, h=6",
+      "value": 0.6896
+    },
+    {
+      "task": "AQI forecast, 6 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "POD (AQI>100, untuned cutoff), h=6",
+      "value": 0.2208
+    },
+    {
+      "task": "AQI forecast, 6 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "FAR (AQI>100, untuned cutoff), h=6",
+      "value": 0.3176
+    },
+    {
+      "task": "AQI forecast, 6 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "CSI (AQI>100, untuned cutoff), h=6",
+      "value": 0.1965
+    },
+    {
+      "task": "AQI forecast, 24 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "MAE, h=24",
+      "value": 9.336
+    },
+    {
+      "task": "AQI forecast, 24 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "RMSE, h=24",
+      "value": 14.666
+    },
+    {
+      "task": "AQI forecast, 24 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "R2, h=24",
+      "value": 0.4845
+    },
+    {
+      "task": "AQI forecast, 24 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "POD (AQI>100, untuned cutoff), h=24",
+      "value": 0.0374
+    },
+    {
+      "task": "AQI forecast, 24 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "FAR (AQI>100, untuned cutoff), h=24",
+      "value": 0.3226
+    },
+    {
+      "task": "AQI forecast, 24 h ahead",
+      "dataset": "skynet US station-hourly AQI panel",
+      "metric": "CSI (AQI>100, untuned cutoff), h=24",
+      "value": 0.0362
+    }
+  ],
+  "sources": [
+    {
+      "title": "Skywalker1910/skynet-aqi-models · Hugging Face",
+      "url": "https://huggingface.co/Skywalker1910/skynet-aqi-models",
+      "snippet": "current Air-quality (AQI) forecasting models from the skynet project: gradient-boosted trees predicting EPA Air Quality Index at a monitoring station, [1, 6, 24] hours ahead."
+    },
+    {
+      "title": "README.md · Skywalker1910/skynet-aqi-models at main",
+      "url": "https://huggingface.co/Skywalker1910/skynet-aqi-models/blob/main/README.md",
+      "snippet": "current Air-quality (AQI) forecasting models from the skynet project: gradient-boosted trees predicting EPA Air Quality Index at a monitoring station, [1, 6, 24] hours ahead."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05_sharpie_holder_v1 es una política robótica de tipo VLA (vision-language-action) publicada en HuggingFace por el usuario ParshG. Se trata de un fine-tune del modelo base lerobot/pi05_base, que a su vez es la implementación en LeRobot de π₀.₅ (Pi05) de Physical Intelligence, un modelo diseñado para generalizar a entornos y situaciones no vistos durante el entrenamiento. El modelo resultante está especializado en una única tarea de manipulación: introducir un rotulador (Sharpie) en un soporte de bolígrafos, ejecutada por un robot SO-101.
+pi05_sharpie_holder_v1 es una política robótica de tipo VLA (vision-language-action) publicada en Hugging Face por el usuario ParshG. Se trata de un fine-tune del modelo base lerobot/pi05_base, que a su vez es la implementación en LeRobot de π₀.₅ (Pi05) de Physical Intelligence, un modelo diseñado para generalizar a entornos y situaciones no vistos durante el entrenamiento. El modelo resultante está especializado en una única tarea de manipulación: introducir un rotulador (Sharpie) en un soporte de bolígrafos, ejecutada por un robot SO-101.
 
 A diferencia de un modelo de lenguaje, esta política no genera texto: consume observaciones multimodales (tres cámaras RGB a 224x224 y un vector de estado de 32 dimensiones) y produce un vector de acción de 6 dimensiones para el control del robot. El repositorio ocupa 9,4 GB y contiene 4.143.404.816 parámetros en formato safetensors. La licencia es "gemma", heredada del modelo base.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParshG/pi05_sharpie_holder_v1
+- Modelo en Hugging Face: https://huggingface.co/ParshG/pi05_sharpie_holder_v1
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ParshG/so101_sharpie_holder_20261006_112937
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ParshG/so101_sharpie_holder_20261006_112937

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Foongus es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no es posible confirmar sus parámetros ni su naturaleza a partir de la información disponible.
+Foongus es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no es posible confirmar sus parámetros ni su naturaleza a partir de la información disponible.
 
 No se han publicado resultados de benchmarks, idiomas soportados ni pipeline de inferencia. El modelo no registra descargas ni interacciones en el momento de la consulta, lo que indica una publicación reciente y sin validación por parte de la comunidad. Cualquier evaluación de su utilidad práctica requeriría inspeccionar directamente los pesos y la configuración del repositorio.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha recoge los únicos datos verificables (licencia, tamaño d
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | no disponible |
 
-Datos adicionales verificables: el repositorio ocupa 0,1 GB, fue creado el 2026-10-27 y actualizado el 2026-10-27. No consta pipeline declarado en HuggingFace.
+Datos adicionales verificables: el repositorio ocupa 0,1 GB, fue creado el 2026-10-27 y actualizado el 2026-10-27. No consta pipeline declarado en Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -79,5 +79,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Foongus
+- Hugging Face: https://huggingface.co/Ryanham1lton/Foongus
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

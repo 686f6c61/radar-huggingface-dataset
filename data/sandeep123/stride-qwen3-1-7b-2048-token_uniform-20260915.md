@@ -66,7 +66,7 @@ Los valores de esta tabla proceden de informacion publica de cada modelo y no es
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen3-1.7B) | 1.700 M (base) + LoRA r16 | Entrenamiento 8.192 tokens; base 32.768 | Razonamiento matematico (RL, STRIDE token_uniform) | no disponible | Adaptador en HuggingFace, base externa |
+| Este adaptador (sobre Qwen3-1.7B) | 1.700 M (base) + LoRA r16 | Entrenamiento 8.192 tokens; base 32.768 | Razonamiento matematico (RL, STRIDE token_uniform) | no disponible | Adaptador en Hugging Face, base externa |
 | Qwen/Qwen3-1.7B | 1.700 M | 32.768 tokens (ampliable) | Proposito general multilingue | Apache 2.0 | Pesos publicos |
 | Qwen2.5-Math-1.5B | 1.500 M | no verificado | Matematicas | no verificado | Pesos publicos |
 | DeepSeek-R1-Distill-Qwen-1.5B | 1.500 M | no verificado | Razonamiento matematico destilado | no verificado | Pesos publicos |
@@ -88,6 +88,6 @@ El adaptador no publica metricas que permitan situarlo frente a estas alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-token_uniform-20260915
+- Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-token_uniform-20260915
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B (commit fijado 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la busqueda web proporcionada.

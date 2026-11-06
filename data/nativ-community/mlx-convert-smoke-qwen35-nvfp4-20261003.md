@@ -89,7 +89,7 @@ No se dispone de informacion sobre modelos comparables adicionales en la busqued
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/nativ-community/mlx-convert-smoke-qwen35-nvfp4-20261003
+- Hugging Face (modelo): https://huggingface.co/nativ-community/mlx-convert-smoke-qwen35-nvfp4-20261003
 - Modelo base: https://huggingface.co/yujiepan/qwen3.5-tiny-random
 - Repositorio de la libreria de inferencia: https://github.com/Blaizzy/mlx-vlm
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes; las coincidencias obtenidas (bynativ.com, instagram.com/nativ_pau, femmeactuelle.fr, heynativ.com, zilten.com) no guardan relacion con el modelo.

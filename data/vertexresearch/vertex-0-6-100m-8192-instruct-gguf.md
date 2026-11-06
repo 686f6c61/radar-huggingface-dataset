@@ -78,8 +78,8 @@ La comparativa se basa en modelos de tamaño similar disponibles en GGUF. Falcon
 
 ## Enlaces
 
-- [HuggingFace: VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF](https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF)
-- [HuggingFace: VertexResearch/Vertex-0.6-100M-8192-Instruct (modelo base)](https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct)
+- [Hugging Face: VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF](https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF)
+- [Hugging Face: VertexResearch/Vertex-0.6-100M-8192-Instruct (modelo base)](https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct)
 - [ModelFitCheck — herramienta para comprobar si un modelo cabe en tu GPU](https://modelfitcheck.com/)
 - [GGUF Model Discovery: buscador de modelos GGUF](https://local-ai-zone.github.io/)
 - [Falcon-H1-Tiny-Multilingual-100M-Instruct-GGUF (modelo comparable)](https://huggingface.co/Luigi/Falcon-H1-Tiny-Multilingual-100M-Instruct-GGUF)

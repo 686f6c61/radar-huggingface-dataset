@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos adicionales en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scienceverse/bibr-sat-6l-sm-hyb
+- Hugging Face: https://huggingface.co/scienceverse/bibr-sat-6l-sm-hyb
 - Modelo base: https://huggingface.co/segment-any-text/sat-6l-sm
 - Repositorio bibr: https://github.com/scienceverse/bibr
 - Tokenizador requerido: https://huggingface.co/xlm-roberta-base

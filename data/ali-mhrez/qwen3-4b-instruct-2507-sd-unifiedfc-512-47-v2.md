@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-47-v2 es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata de un modelo derivado de la familia Qwen3, desarrollada originalmente por Alibaba Cloud, y ha sido entrenado mediante Supervised Fine-Tuning (SFT) utilizando las librerías TRL y Unsloth sobre el checkpoint base de Unsloth. El resultado es un modelo de 4 mil millones de parámetros orientado a instrucciones, con el mismo tokenizador y arquitectura transformer del modelo original.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-47-v2 es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata de un modelo derivado de la familia Qwen3, desarrollada originalmente por Alibaba Cloud, y ha sido entrenado mediante Supervised Fine-Tuning (SFT) utilizando las librerías TRL y Unsloth sobre el checkpoint base de Unsloth. El resultado es un modelo de 4 mil millones de parámetros orientado a instrucciones, con el mismo tokenizador y arquitectura transformer del modelo original.
 
 La relevancia de esta ficha es limitada: el modelo cuenta con cero descargas y cero likes en el momento de la consulta, y la model card no documenta el dataset de entrenamiento, los hiperparámetros, la licencia ni los idiomas soportados. El nombre del repositorio sugiere un entrenamiento orientado a "UnifiedFC" (posiblemente function calling unificado) con una ventana de 512 tokens y una versión 47-v2, pero esta interpretación no está confirmada por el autor.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-47-v2 | 4B | no disponible (sugerido 512) | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en esta ficha | no disponible | HuggingFace (modelo base) |
-| unsloth/Qwen3-4B-Instruct-2507 | 4B | no disponible en esta ficha | no disponible | HuggingFace (checkpoint base de Unsloth) |
-| Meta Llama 3.2 3B Instruct | 3B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente adoptado |
+| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-47-v2 | 4B | no disponible (sugerido 512) | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en esta ficha | no disponible | Hugging Face (modelo base) |
+| unsloth/Qwen3-4B-Instruct-2507 | 4B | no disponible en esta ficha | no disponible | Hugging Face (checkpoint base de Unsloth) |
+| Meta Llama 3.2 3B Instruct | 3B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
 
 No se dispone de datos de rendimiento comparativo para este fine-tune.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para este fine-tune.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-47-v2
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-47-v2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio TRL: https://github.com/huggingface/trl
 - Repositorio Unsloth: no disponible en la información proporcionada

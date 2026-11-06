@@ -73,8 +73,8 @@ El resultado primario en los 5.569 ejemplos de HateBR fuera del entrenamiento de
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ModeraBR-4B-v3 | Adapter sobre 4B | 8.190 tokens | Clasificación de ofensividad, contexto y odio en pt | CC-BY-SA-4.0 | HuggingFace (33 descargas) |
-| Qwen3.5-4B (base) | 4B | no disponible | Modelo generativo general | no disponible | HuggingFace |
+| ModeraBR-4B-v3 | Adapter sobre 4B | 8.190 tokens | Clasificación de ofensividad, contexto y odio en pt | CC-BY-SA-4.0 | Hugging Face (33 descargas) |
+| Qwen3.5-4B (base) | 4B | no disponible | Modelo generativo general | no disponible | Hugging Face |
 | CPU TF-IDF (línea base del autor) | no aplica | no aplica | Clasificación clásica | no disponible | Referencia interna del proyecto |
 
 No se dispone de datos publicados de otros clasificadores de moderación en portugués comparables en parámetros, contexto y licencia dentro de la información proporcionada.
@@ -96,7 +96,7 @@ No se dispone de datos publicados de otros clasificadores de moderación en port
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-safety-brazil/moderabr-4b-v3
+- Modelo en Hugging Face: https://huggingface.co/ai-safety-brazil/moderabr-4b-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Space SafetyEval-BR: https://huggingface.co/spaces/ai-safety-brazil/safetyeval-br
 - Dataset mteb/told-br: https://huggingface.co/datasets/mteb/told-br

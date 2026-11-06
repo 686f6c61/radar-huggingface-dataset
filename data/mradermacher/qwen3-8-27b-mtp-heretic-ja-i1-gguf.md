@@ -6,7 +6,7 @@ El modelo `mradermacher/Qwen3.8-27B-MTP-heretic-ja-i1-GGUF` es una cuantización
 
 La relevancia de este modelo radica en su formato GGUF, que permite su uso con herramientas como llama.cpp, Ollama o LM Studio, facilitando el despliegue local sin necesidad de infraestructura cloud. La variante "heretic-ja" apunta a una adaptación para el idioma japonés, aunque los idiomas soportados no están declarados en la ficha. Al ser una cuantización, conserva las capacidades del modelo original, pero con un tamaño reducido que lo hace accesible para GPUs de consumo medio.
 
-No se han publicado métricas de rendimiento, benchmarks ni detalles de entrenamiento en la información disponible, por lo que esta ficha se basa únicamente en los datos proporcionados por el repositorio de HuggingFace y en inferencias razonables sobre el formato GGUF.
+No se han publicado métricas de rendimiento, benchmarks ni detalles de entrenamiento en la información disponible, por lo que esta ficha se basa únicamente en los datos proporcionados por el repositorio de Hugging Face y en inferencias razonables sobre el formato GGUF.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa rigurosa. Existen otros modelos GGUF de 27B como `mradermacher/Qwen3.5-27B-heretic-GGUF`, pero no se conocen sus especificaciones exactas. Se recomienda consultar los repositorios de modelos similares en HuggingFace para obtener datos comparables.
+No se dispone de informacion suficiente para realizar una comparativa rigurosa. Existen otros modelos GGUF de 27B como `mradermacher/Qwen3.5-27B-heretic-GGUF`, pero no se conocen sus especificaciones exactas. Se recomienda consultar los repositorios de modelos similares en Hugging Face para obtener datos comparables.
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-MTP-heretic-ja-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-MTP-heretic-ja-i1-GGUF
 - Modelo base: https://huggingface.co/OS-Software/Qwen3.8-27B-MTP-heretic-ja
 - Repositorio de cuantizaciones similares de mradermacher: https://huggingface.co/mradermacher/Qwen3.5-27B-heretic-GGUF
 - Articulo sobre Qwen 3.8 27B (en ingles): https://dev.to/kaixintelligence/qwen-38-27b-why-this-powerful-model-cant-stop-overthinking-and-how-to-fix-it-5dh6

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/dan_latn_100mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generación de texto de tipo decoder-only basado en la arquitectura GPT-2, con 124.770.816 parámetros totales (aproximadamente 124,8 millones) y un peso de repositorio de 0,3 GB en formato safetensors. El entrenamiento se realizó con la librería TRL (versión 0.23.0) mediante SFT (supervised fine-tuning), según indica la propia model card.
+El modelo `francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/dan_latn_100mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generación de texto de tipo decoder-only basado en la arquitectura GPT-2, con 124.770.816 parámetros totales (aproximadamente 124,8 millones) y un peso de repositorio de 0,3 GB en formato safetensors. El entrenamiento se realizó con la librería TRL (versión 0.23.0) mediante SFT (supervised fine-tuning), según indica la propia model card.
 
 El modelo base pertenece a la familia Goldfish, una colección de modelos monolingües de tamaño reducido; el identificador `dan_latn_100mb` sugiere un modelo de danés en escritura latina con un corpus de entrenamiento del orden de 100 MB. El nombre del ajuste incluye referencias a un experimento de tokenizador (`new-tokenizers` en Weights & Biases) y a variantes como `ppt`, `Dp-10mb`, `packed` y `bfd_seed10`, lo que apunta a una ejecución experimental de investigación más que a un modelo orientado a producción.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada: el repositorio no incluye métricas de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only); etiqueta `gpt2` en HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only); etiqueta `gpt2` en Hugging Face |
 | Parametros totales | 124.770.816 (aproximadamente 124,8 M) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | 124,8 M | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/dan_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | 124,8 M | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/dan_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | metricas publicadas por OpenAI (no aplicables a danes) | MIT (en la publicacion original) | ampliamente disponible |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la informacion proporcionada. La comparacion se limita al orden de magnitud de parametros y a la naturaleza de modelo monolingue pequeno.
@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/10jpyqee
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -40,7 +40,7 @@ En cuanto a los datos, se citan dos conjuntos: IFM/K2-Horizon-Pretrain-Data para
 - Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
 - Capacidades multimodales (vision, audio): no disponible; no se mencionan en la informacion proporcionada.
 - Modo thinking explicito: no disponible en la informacion proporcionada.
-- Soporte multilingue: los metadatos de HuggingFace y la model card del modelo base indican unicamente ingles; la tabla de la version cuantizada lista diez idiomas, sin que se detalle el nivel de calidad por idioma.
+- Soporte multilingue: los metadatos de Hugging Face y la model card del modelo base indican unicamente ingles; la tabla de la version cuantizada lista diez idiomas, sin que se detalle el nivel de calidad por idioma.
 
 ## Casos de uso
 
@@ -79,7 +79,7 @@ La unica comparativa con datos numericos disponible procede de la model card del
 
 | Modelo | Parametros | Contexto | HMMT Feb 2026 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| K2-Horizon-7B | 8.999.178.240 (denso) | 524.288 tokens | 73,3 | apache-2.0 | Pesos abiertos en HuggingFace, mas version cuantizada AWQ-FP8 |
+| K2-Horizon-7B | 8.999.178.240 (denso) | 524.288 tokens | 73,3 | apache-2.0 | Pesos abiertos en Hugging Face, mas version cuantizada AWQ-FP8 |
 | Gemma 4-12B | No disponible | No disponible | 63,1 | No disponible | No disponible |
 | Qwen3.5-9B | No disponible | No disponible | 65,7 | No disponible | No disponible |
 | Granite 4.2-8B | No disponible | No disponible | 66,5 | No disponible | No disponible |
@@ -90,7 +90,7 @@ La unica comparativa con datos numericos disponible procede de la model card del
 - Alucinacion: no se publican tasas de alucinacion ni evaluaciones de fidelidad factual. Como en cualquier modelo generativo, el riesgo existe y debe mitigarse con verificacion externa, especialmente en dominios STEM donde las respuestas pueden ser plausibles pero incorrectas.
 - Riesgo de perdida por cuantizacion: los resultados de benchmarks corresponden al modelo base en precision completa, no a esta variante AWQ-FP8. No se ha publicado una comparacion directa que cuantifique la degradacion introducida por la cuantizacion, un riesgo relevante en tareas de matematicas y codigo.
 - Contexto largo: aunque se declaran 512K tokens nativos, no se aportan resultados de pruebas tipo needle-in-a-haystack ni de degradacion de calidad a longitudes extremas. La atencion efectiva sobre ventanas muy largas no esta verificada en la informacion disponible.
-- Idiomas: existe una contradiccion sin resolver entre los metadatos de HuggingFace y la model card del modelo base (solo ingles) y la tabla de la version cuantizada (diez idiomas). No hay evaluaciones multilingues que respalden el segundo listado.
+- Idiomas: existe una contradiccion sin resolver entre los metadatos de Hugging Face y la model card del modelo base (solo ingles) y la tabla de la version cuantizada (diez idiomas). No hay evaluaciones multilingues que respalden el segundo listado.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con las obligaciones habituales de atribucion y conservacion del aviso de licencia. No se imponen restricciones adicionales conocidas, pero conviene verificar la licencia del modelo base y de los datasets asociados antes de un despliegue en produccion.
 - Madurez del artefacto: el repositorio registra cero descargas y cero interacciones, fue creado y actualizado el mismo dia y es una publicacion de un tercero (cyankiwi) sobre el modelo de IFM. No hay evidencia de validacion independiente ni de soporte a largo plazo.
 - Requisitos de codigo personalizado: el repositorio usa custom_code, lo que implica que la carga puede requerir trust_remote_code=True y revision previa del codigo asociado.
@@ -98,7 +98,7 @@ La unica comparativa con datos numericos disponible procede de la model card del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyankiwi/K2-Horizon-7B-AWQ-FP8
+- Modelo en Hugging Face: https://huggingface.co/cyankiwi/K2-Horizon-7B-AWQ-FP8
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Dataset de preentrenamiento: IFM/K2-Horizon-Pretrain-Data (referenciado en los metadatos; enlace directo no disponible)
 - Dataset de midtraining: IFM/K2-Horizon-Midtrain-Data (referenciado en los metadatos; enlace directo no disponible)

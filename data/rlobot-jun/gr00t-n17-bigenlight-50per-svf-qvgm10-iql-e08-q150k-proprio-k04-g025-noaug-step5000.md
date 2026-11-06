@@ -87,7 +87,7 @@ La información proporcionada no incluye métricas comparables, por lo que no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-svf-qvgm10-iql-e08-q150k-proprio-k04-g025-noaug-step5000
+- Modelo en Hugging Face: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-svf-qvgm10-iql-e08-q150k-proprio-k04-g025-noaug-step5000
 - Modelo base: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000
 - Código de referencia (rama `q-vgm-critic`, acceso requerido): https://github.com/jun981015/gr00t-bigenlight/tree/q-vgm-critic
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas de ayuda de cuentas de Google, YouTube y Chrome, sin relación con el artefacto.

@@ -73,19 +73,19 @@ No se dispone de modelos externos comparables documentados en la información pr
 
 ## Limitaciones y advertencias
 
-- No es un modelo listo para producción: es una colección de checkpoints de investigación con 0 descargas y 0 likes, sin model card funcional, sin evaluación publicada y sin `pipeline` declarado en HuggingFace.
+- No es un modelo listo para producción: es una colección de checkpoints de investigación con 0 descargas y 0 likes, sin model card funcional, sin evaluación publicada y sin `pipeline` declarado en Hugging Face.
 - Formato no estándar: los pesos son `.pth` en bf16 con claves de vLLM y proyecciones fusionadas; no se pueden cargar directamente en `transformers`, llama.cpp u Ollama y requieren el conversor a safetensors que el autor aún no ha publicado.
 - Sin cuantizaciones: no hay GGUF, AWQ, GPTQ ni FP8, por lo que el despliegue en hardware limitado exige cuantizar por cuenta propia.
 - Riesgo de alucinación: no evaluado en la información disponible; al ser modelos orientados a matemáticas, la verificación de cadenas de razonamiento es imprescindible antes de cualquier uso real.
 - Sesgos e idiomas: no se documenta la composición del dataset ni los idiomas soportados, más allá de OpenR1 en `or1-*`; se desconoce el comportamiento multilingüe y los sesgos heredados de los modelos base.
 - Licencia: la etiqueta del repositorio es apache-2.0, pero los checkpoints derivan de `Qwen2.5-Math-7B` y `Qwen3-4B-2507`, cuyas licencias deben verificarse de forma independiente antes de cualquier uso comercial. La información proporcionada no permite confirmar la compatibilidad.
 - Naturaleza de los artefactos: `iter<N>.pth` corresponde únicamente a los checkpoints periódicos que aún existen, y `final/pytorch_model.pth` está dos o tres pasos de ES por delante del último periódico, por lo que las trayectorias no son necesariamente continuas ni completas.
-- Fechas: los metadatos de HuggingFace indican creación y actualización el 2026-09-11, dato que conviene contrastar con el repositorio de GitHub del proyecto.
+- Fechas: los metadatos de Hugging Face indican creación y actualización el 2026-09-11, dato que conviene contrastar con el repositorio de GitHub del proyecto.
 - La búsqueda web realizada no devolvió ninguna fuente relevante sobre este modelo: los resultados obtenidos corresponden a dominios ajenos al proyecto (por ejemplo, `es.fr`) y no se han utilizado como referencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/es-hetero/ckpt-math
+- Modelo en Hugging Face: https://huggingface.co/es-hetero/ckpt-math
 - Repositorio del estudio "learning while serving" (ES study): https://github.com/akshat57/es-heterogeneity
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada
 - La búsqueda web no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos pertenecen a dominios no relacionados y se omiten.

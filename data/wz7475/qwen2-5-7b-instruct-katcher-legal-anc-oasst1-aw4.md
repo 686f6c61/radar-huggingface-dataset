@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw4` es un modelo publicado en HuggingFace por el usuario `wz7475`. El identificador indica que se trata de un ajuste fino (fine-tuning) del modelo base Qwen2.5-7B-Instruct, aparentemente orientado al dominio legal ("legal") y entrenado con, al menos, el conjunto de datos OpenAssistant OASST1 ("oasst1"). El sufijo "aw4" sugiere una cuantizacion de 4 bits en formato AWQ, y la etiqueta `unsloth` del repositorio apunta a que el entrenamiento se realizo con la libreria Unsloth. Ninguno de estos extremos esta confirmado por el autor en la model card.
+El repositorio `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw4` es un modelo publicado en Hugging Face por el usuario `wz7475`. El identificador indica que se trata de un ajuste fino (fine-tuning) del modelo base Qwen2.5-7B-Instruct, aparentemente orientado al dominio legal ("legal") y entrenado con, al menos, el conjunto de datos OpenAssistant OASST1 ("oasst1"). El sufijo "aw4" sugiere una cuantizacion de 4 bits en formato AWQ, y la etiqueta `unsloth` del repositorio apunta a que el entrenamiento se realizo con la libreria Unsloth. Ninguno de estos extremos esta confirmado por el autor en la model card.
 
-La model card publicada es la plantilla autogenerada de HuggingFace: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes, y su tamano es de 1,1 GB, una cifra considerablemente inferior a la esperable para un checkpoint de 7.000 millones de parametros en precision completa (unos 15 GB en fp16/bf16) e incluso por debajo de lo habitual en cuantizaciones de 4 bits (en torno a 4-5 GB), lo que sugiere una subida parcial, un formato no estandar o una cuantizacion mas agresiva de lo que el sufijo indica.
+La model card publicada es la plantilla autogenerada de Hugging Face: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes, y su tamano es de 1,1 GB, una cifra considerablemente inferior a la esperable para un checkpoint de 7.000 millones de parametros en precision completa (unos 15 GB en fp16/bf16) e incluso por debajo de lo habitual en cuantizaciones de 4 bits (en torno a 4-5 GB), lo que sugiere una subida parcial, un formato no estandar o una cuantizacion mas agresiva de lo que el sufijo indica.
 
 En consecuencia, esta ficha describe lo que puede deducirse de los metadatos publicos y del modelo base del que parte, senalando de forma explicita cada dato no verificado. No se ha localizado documentacion tecnica, paper, blog ni evaluacion asociada al modelo, y la busqueda web realizada no devolvio ningun resultado relevante (solo paginas de banca y administracion electronica sin relacion con el modelo).
 
@@ -77,10 +77,10 @@ La tabla compara el modelo con alternativas de la misma categoria (instruct dens
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw4 | No disponible (7B segun identificador) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-7B-Instruct | 7,61B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, muy extendido |
-| Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Licencia comunitaria Llama 3.1 | HuggingFace, muy extendido |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw4 | No disponible (7B segun identificador) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-7B-Instruct | 7,61B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, muy extendido |
+| Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Licencia comunitaria Llama 3.1 | Hugging Face, muy extendido |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido |
 
 No se dispone de ningun dato de rendimiento de este fine-tune que permita compararlo funcionalmente con las alternativas: ni benchmarks, ni evaluacion humana, ni tamano real de los pesos.
 
@@ -100,7 +100,7 @@ No se dispone de ningun dato de rendimiento de este fine-tune que permita compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw4
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw4
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones, incluido en la plantilla autogenerada, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML citada en la model card: https://mlco2.github.io/impact
 - No se han localizado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

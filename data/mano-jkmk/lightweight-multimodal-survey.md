@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mano-jkmk/lightweight-multimodal-survey` no es un modelo de IA, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. Su contenido declarado es un conjunto estructurado de apuntes sobre multimodalidad ligera, con referencias de evaluación y preguntas abiertas, y el propio autor especifica que no incluye resultados experimentales, código liberado ni checkpoint entrenado.
+`mano-jkmk/lightweight-multimodal-survey` no es un modelo de IA, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. Su contenido declarado es un conjunto estructurado de apuntes sobre multimodalidad ligera, con referencias de evaluación y preguntas abiertas, y el propio autor especifica que no incluye resultados experimentales, código liberado ni checkpoint entrenado.
 
 El repositorio no contiene pesos utilizables para inferencia. Los metadatos de safetensors asociados al repositorio reportan 16.576 parámetros, una cifra que no corresponde a ningún transformer funcional y que, dado el tamaño declarado del repo (0,0 GB), apunta a un artefacto de indexación o a un fichero residual, no a un modelo entrenado. La model card es explícita: "no claim benchmark improvements, completed ablations, released code, or a trained checkpoint".
 
@@ -29,7 +29,7 @@ Su relevancia es, por tanto, documental y no técnica: sirve como punto de parti
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura que describir. El repositorio no define capas, hiperparámetros, tokenizador ni configuración de atención, y no se ha publicado ningún proceso de entrenamiento, ajuste fino, RLHF o DPO. La etiqueta `transformer` presente en los tags parece una clasificación genérica o un residuo de la plantilla de HuggingFace, no una descripción de un artefacto real contenido en el repositorio.
+No hay arquitectura que describir. El repositorio no define capas, hiperparámetros, tokenizador ni configuración de atención, y no se ha publicado ningún proceso de entrenamiento, ajuste fino, RLHF o DPO. La etiqueta `transformer` presente en los tags parece una clasificación genérica o un residuo de la plantilla de Hugging Face, no una descripción de un artefacto real contenido en el repositorio.
 
 En cuanto al contenido, la nota se organiza en cinco bloques declarados: alcance de la pregunta de investigación y posibles factores de confusión, propuesta de comparación con baselines emparejados, contexto de evaluación con benchmarks públicos nombrados en la nota principal, comprobaciones de reproducibilidad junto con modos de fallo y preguntas abiertas, y referencias temáticas. El propio autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que si en el futuro se añaden resultados deberán incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -73,7 +73,7 @@ La comparacion con modelos de la misma categoria no es posible: este repositorio
 |---|---|---|---|---|---|
 | `mano-jkmk/lightweight-multimodal-survey` | Notas de investigacion en Markdown | 16.576 segun metadatos, no funcionales | no disponible | No | cc-by-4.0 |
 | Familia de VLM ligeros (por ejemplo, variantes de 2B-4B de uso comun) | Modelo multimodal entrenado | no disponible en la informacion proporcionada | no disponible | Si, tipicamente | no disponible |
-| Repositorios de notas o surveys en HuggingFace | Documentacion auxiliar | no aplica | no aplica | No | variable |
+| Repositorios de notas o surveys en Hugging Face | Documentacion auxiliar | no aplica | no aplica | No | variable |
 
 No se dispone de datos verificados de parametros, contexto ni rendimiento de las alternativas en la informacion proporcionada, por lo que no se incluyen cifras. Para una comparativa real de modelos multimodales ligeros habria que acudir a las fichas de los propios modelos, no a este repositorio.
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de las
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mano-jkmk/lightweight-multimodal-survey
+- Repositorio en Hugging Face: https://huggingface.co/mano-jkmk/lightweight-multimodal-survey
 - Fichero principal de la nota: `review.md` (incluido en el repositorio)
 - Documentacion del repositorio: `README.md` (incluido en el repositorio)
 - Resultados de la busqueda web: sin enlaces relevantes. Las paginas devueltas (manomano.fr, manomano.com, mano.sesan.fr) corresponden a comercio de bricolaje y a un servicio publico digital frances, sin relacion con el repositorio ni con investigacion en multimodalidad ligera. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este artefacto.

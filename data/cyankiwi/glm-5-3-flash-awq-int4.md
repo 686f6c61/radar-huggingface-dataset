@@ -80,8 +80,8 @@ Esta cuantización AWQ INT4 se posiciona como una opción de bajo coste para des
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/cyankiwi/GLM-5.3-Flash-AWQ-INT4
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/cyankiwi/GLM-5.3-Flash-AWQ-INT4
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog oficial de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Documentación de la API de Z.ai: https://docs.z.ai/guides/vlm/glm-5.3-flash
 - Informe técnico de GLM-5 (arXiv): https://arxiv.org/abs/2602.15763

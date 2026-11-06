@@ -82,7 +82,7 @@ No se dispone de datos comparativos publicados con otros modelos de embeddings d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-small-l2_gn-gte-small_s384_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-small-l2_gn-gte-small_s384_val-selected
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

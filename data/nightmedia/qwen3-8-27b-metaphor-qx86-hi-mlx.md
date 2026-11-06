@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Metaphor-qx86-hi-mlx es un modelo experimental de 27 356 728 560 parámetros (aproximadamente 27,36 mil millones) publicado por el usuario nightmedia en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un merge (fusión de pesos) que combina diez modelos base de la familia Qwen3.8-27B, entre ellos schneewolflabs/B0-27B, OmniJev/OneJev1.6-27B, shunzou05/TerminalHorizon-27B, inclusionAI/ZwZ2-27B y varios derivados del propio autor (Seven, Brainwaves, MindMeld). El resultado es un modelo multimodal de tipo image-text-to-text orientado a razonamiento, generación de código, escritura creativa y roleplay.
+Qwen3.8-27B-Metaphor-qx86-hi-mlx es un modelo experimental de 27 356 728 560 parámetros (aproximadamente 27,36 mil millones) publicado por el usuario nightmedia en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un merge (fusión de pesos) que combina diez modelos base de la familia Qwen3.8-27B, entre ellos schneewolflabs/B0-27B, OmniJev/OneJev1.6-27B, shunzou05/TerminalHorizon-27B, inclusionAI/ZwZ2-27B y varios derivados del propio autor (Seven, Brainwaves, MindMeld). El resultado es un modelo multimodal de tipo image-text-to-text orientado a razonamiento, generación de código, escritura creativa y roleplay.
 
 El modelo se distribuye en una cuantización concreta, qx86-hi, que según la model card mantiene una perplejidad de 3,615 ± 0,022 frente a 3,613 ± 0,022 del bf16, con un pico de memoria de 33,15 GB y un throughput de 212 tokens por segundo en el hardware de referencia del autor. El repositorio ocupa 27,2 GB y los pesos están en formato safetensors, con licencia Apache 2.0.
 
@@ -109,7 +109,7 @@ No se dispone de datos comparativos de rendimiento frente a modelos externos a l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Metaphor-qx86-hi-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Metaphor-qx86-hi-mlx
 - Componente B0-27B: https://huggingface.co/schneewolflabs/B0-27B
 - Componente B1-27B: https://huggingface.co/schneewolflabs/B1-27B
 - Componente OneJev1.6-27B: https://huggingface.co/OmniJev/OneJev1.6-27B

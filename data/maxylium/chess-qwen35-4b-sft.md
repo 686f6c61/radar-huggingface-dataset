@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxylium/chess-qwen35-4b-sft` es un modelo de generación de texto publicado en HuggingFace por el usuario maxylium, obtenido mediante ajuste supervisado (SFT) del modelo base `unsloth/Qwen3.5-4B`. Por el nombre del repositorio y las etiquetas asociadas (`chess`, `reasoning`, `reinforcement-learning`, `unsloth`), se trata de una especialización orientada al dominio del ajedrez y al razonamiento, construida con el framework de fine-tuning Unsloth sobre la familia Qwen3.5.
+`maxylium/chess-qwen35-4b-sft` es un modelo de generación de texto publicado en Hugging Face por el usuario maxylium, obtenido mediante ajuste supervisado (SFT) del modelo base `unsloth/Qwen3.5-4B`. Por el nombre del repositorio y las etiquetas asociadas (`chess`, `reasoning`, `reinforcement-learning`, `unsloth`), se trata de una especialización orientada al dominio del ajedrez y al razonamiento, construida con el framework de fine-tuning Unsloth sobre la familia Qwen3.5.
 
 El modelo tiene del orden de 4 000 millones de parámetros, heredados del checkpoint base, y se distribuye en formato safetensors con licencia Apache 2.0 según la etiqueta del repositorio. Es relevante para quienes buscan un modelo pequeño, desplegable en hardware de consumo, especializado en tareas de ajedrez (análisis de posiciones, comentario de partidas, explicación de jugadas) en lugar de un modelo generalista de mayor tamaño.
 
@@ -18,7 +18,7 @@ No obstante, la información pública disponible es mínima: el repositorio no i
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible. Solo se publican pesos en safetensors; el autor no ofrece variantes GGUF, AWQ ni GPTQ |
 | Idiomas soportados | No disponible (los hereda del modelo base Qwen3.5-4B, pero no se documentan) |
-| Licencia | Apache 2.0 según la etiqueta `license:apache-2.0` del repositorio; el campo de licencia de la ficha de HuggingFace figura como no disponible |
+| Licencia | Apache 2.0 según la etiqueta `license:apache-2.0` del repositorio; el campo de licencia de la ficha de Hugging Face figura como no disponible |
 | Formato de pesos | safetensors |
 | Modelo base | `unsloth/Qwen3.5-4B` (fine-tune) |
 | Pipeline | text-generation |
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `maxylium/chess-qwen35-4b-sft` | ~4 000 M | no disponible | Ajedrez y razonamiento (SFT) | Apache 2.0 (etiqueta) | HuggingFace, 0 descargas |
-| `unsloth/Qwen3.5-4B` (modelo base) | ~4 000 M | no disponible | Generalista | no disponible | HuggingFace |
+| `maxylium/chess-qwen35-4b-sft` | ~4 000 M | no disponible | Ajedrez y razonamiento (SFT) | Apache 2.0 (etiqueta) | Hugging Face, 0 descargas |
+| `unsloth/Qwen3.5-4B` (modelo base) | ~4 000 M | no disponible | Generalista | no disponible | Hugging Face |
 | Otros fine-tunes de ajedrez sobre modelos de 3-8B | no disponible | no disponible | Ajedrez | variable | no verificado en la búsqueda realizada |
 
 No se dispone de datos de rendimiento del modelo ni de alternativas verificadas en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad. Cualquier afirmación sobre superioridad frente a otros fine-tunes de ajedrez requeriría una evaluación propia con un conjunto de posiciones y partidas de referencia.
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento del modelo ni de alternativas verificadas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxylium/chess-qwen35-4b-sft
+- Repositorio en Hugging Face: https://huggingface.co/maxylium/chess-qwen35-4b-sft
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Paper, blog, repositorio de código o demo: no disponible (la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los resultados obtenidos eran contenido no pertinente y se han descartado)

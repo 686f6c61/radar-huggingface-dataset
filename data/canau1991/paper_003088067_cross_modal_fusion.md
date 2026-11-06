@@ -61,7 +61,7 @@ No disponible. No existen modelos comparables en este repositorio, ya que no es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/canau1991/paper_003088067_cross_modal_fusion
+- Repositorio en Hugging Face: https://huggingface.co/canau1991/paper_003088067_cross_modal_fusion
 - Artículo relacionado en arXiv (sobre sesgo en fusión cross-modal): https://arxiv.org/abs/2608.00986
 - Artículo relacionado en arXiv (GaussianFusion): https://arxiv.org/abs/2607.00746
 - Artículo en IEEE (clasificación de vehículos con fusión cross-modal): https://ieeexplore.ieee.org/document/11520629

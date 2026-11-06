@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sft-5g-rca-qwen3-1.7b es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen3-1.7B, publicado por el usuario JesterbeanLTEA en HuggingFace. El nombre del repositorio sugiere un dominio de aplicación orientado al análisis de causa raíz (RCA, root cause analysis) en redes 5G, aunque la model card no documenta el conjunto de datos, el procedimiento de entrenamiento ni la tarea concreta. Se ha entrenado con la librería TRL (versión 1.4.0) sobre Transformers 5.7.0 y PyTorch 2.10.0+cu128, y los pesos se distribuyen en formato safetensors con un tamano de repositorio de 3,9 GB.
+sft-5g-rca-qwen3-1.7b es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen3-1.7B, publicado por el usuario JesterbeanLTEA en Hugging Face. El nombre del repositorio sugiere un dominio de aplicación orientado al análisis de causa raíz (RCA, root cause analysis) en redes 5G, aunque la model card no documenta el conjunto de datos, el procedimiento de entrenamiento ni la tarea concreta. Se ha entrenado con la librería TRL (versión 1.4.0) sobre Transformers 5.7.0 y PyTorch 2.10.0+cu128, y los pesos se distribuyen en formato safetensors con un tamano de repositorio de 3,9 GB.
 
 El interés del modelo reside en su tamano reducido: al partir de Qwen3-1.7B, hereda un transformer decoder-only denso de aproximadamente 1,7 mil millones de parametros, con soporte de contexto de 32.768 tokens nativo en la familia Qwen3, modo de razonamiento (thinking) y cobertura multilingue amplia. Esto lo hace candidato para despliegue en una sola GPU de consumo o incluso en CPU mediante cuantizacion, siempre que el ajuste fino no haya degradado las capacidades generales del base.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sft-5g-rca-qwen3-1.7b | ~1,7 B | No disponible (base: 32.768 tokens) | No disponible | HuggingFace, safetensors | Fine-tune SFT de dominio no documentado; 0 descargas |
-| Qwen/Qwen3-1.7B | ~1,7 B | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 | HuggingFace, safetensors, GGUF | Modelo base; documentacion completa y benchmarks publicados |
-| Llama-3.2-1B | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Requiere aceptar licencia; multilingue limitado a 8 idiomas oficiales |
-| Gemma-3-1B | ~1 B | 32.768 tokens | Gemma Terms of Use | HuggingFace | Buen rendimiento por parametro; condiciones de uso especificas de Google |
-| SmolLM2-1.7B | ~1,7 B | 8.192 tokens | Apache-2.0 | HuggingFace | Alternativa abierta con contexto mas corto |
+| sft-5g-rca-qwen3-1.7b | ~1,7 B | No disponible (base: 32.768 tokens) | No disponible | Hugging Face, safetensors | Fine-tune SFT de dominio no documentado; 0 descargas |
+| Qwen/Qwen3-1.7B | ~1,7 B | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 | Hugging Face, safetensors, GGUF | Modelo base; documentacion completa y benchmarks publicados |
+| Llama-3.2-1B | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Requiere aceptar licencia; multilingue limitado a 8 idiomas oficiales |
+| Gemma-3-1B | ~1 B | 32.768 tokens | Gemma Terms of Use | Hugging Face | Buen rendimiento por parametro; condiciones de uso especificas de Google |
+| SmolLM2-1.7B | ~1,7 B | 8.192 tokens | Apache-2.0 | Hugging Face | Alternativa abierta con contexto mas corto |
 
 La comparacion es estructural: no hay datos de rendimiento del fine-tune que permitan contrastar calidad frente a ninguna de estas alternativas. Para un uso en produccion, el modelo base Qwen3-1.7B o cualquiera de las alternativas con licencia clara y benchmarks publicados ofrece mayor trazabilidad.
 
@@ -91,7 +91,7 @@ La comparacion es estructural: no hay datos de rendimiento del fine-tune que per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesterbeanLTEA/sft-5g-rca-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/JesterbeanLTEA/sft-5g-rca-qwen3-1.7b
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de la familia Qwen3: no disponible en la informacion proporcionada

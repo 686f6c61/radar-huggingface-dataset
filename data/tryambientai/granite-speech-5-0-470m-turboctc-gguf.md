@@ -103,8 +103,8 @@ No se dispone de datos comparativos de WER ni RTF de estos modelos en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/tryambientai/granite-speech-5.0-470m-turboctc-gguf
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
+- Repositorio Hugging Face (GGUF): https://huggingface.co/tryambientai/granite-speech-5.0-470m-turboctc-gguf
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Commit del modelo base referenciado: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc/commit/18ca3c1
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Documentación del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/granite-speech-5.0-470m-turboctc.md

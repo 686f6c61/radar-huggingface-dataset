@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: Atmyre/qwen3-8b-ao-strict-leaf-c1p00](https://huggingface.co/Atmyre/qwen3-8b-ao-strict-leaf-c1p00)
+- [Hugging Face: Atmyre/qwen3-8b-ao-strict-leaf-c1p00](https://huggingface.co/Atmyre/qwen3-8b-ao-strict-leaf-c1p00)
 - [Paper: Activation Oracles (arXiv:2512.15674)](https://arxiv.org/abs/2512.15674)
 - [Sujeto interpretado: Atmyre/qwen3-8b-taboo-strict-leaf-c1p00](https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-leaf-c1p00)
 - [Modelo base: Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)

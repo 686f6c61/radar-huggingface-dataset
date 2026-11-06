@@ -64,10 +64,10 @@ No se dispone de datos de rendimiento para este checkpoint, por lo que no es pos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-9B-Base | 9,4 B | no disponible | no disponible | HuggingFace |
-| agentic-ptb/dpsk-v4-flash.h037.sft3.step_600 | 9,4 B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8 B | 128 K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B v0.3 | 7 B | 32 K | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3.5-9B-Base | 9,4 B | no disponible | no disponible | Hugging Face |
+| agentic-ptb/dpsk-v4-flash.h037.sft3.step_600 | 9,4 B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8 B | 128 K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B v0.3 | 7 B | 32 K | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros y disponibilidad; no hay datos de rendimiento para el checkpoint evaluado.
 
@@ -83,6 +83,6 @@ La comparativa se limita a parametros y disponibilidad; no hay datos de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h037.sft3.step_600
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h037.sft3.step_600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este checkpoint en la informacion proporcionada.

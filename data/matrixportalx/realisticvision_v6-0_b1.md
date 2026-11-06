@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: matrixportalx/RealisticVision_V6.0_B1](https://huggingface.co/matrixportalx/RealisticVision_V6.0_B1)
-- [HuggingFace: SG161222/Realistic_Vision_V6.0_B1_noVAE](https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE)
+- [Hugging Face: matrixportalx/RealisticVision_V6.0_B1](https://huggingface.co/matrixportalx/RealisticVision_V6.0_B1)
+- [Hugging Face: SG161222/Realistic_Vision_V6.0_B1_noVAE](https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE)
 - [Civitai: Realistic Vision V6.0 B1 - V5.1 Hyper](https://civitai.com/models/4201/realistic-vision-v60-b1)
-- [HuggingFace: imagepipeline/Realistic-Vision-V6.0](https://huggingface.co/imagepipeline/Realistic-Vision-V6.0)
+- [Hugging Face: imagepipeline/Realistic-Vision-V6.0](https://huggingface.co/imagepipeline/Realistic-Vision-V6.0)
 - [AIModels.fyi: realistic-vision-v6.0-b1](https://www.aimodels.fyi/models/replicate/realistic-vision-v60-b1-asiryan)
 - [ModelScope: Realistic_Vision_V6.0_B1_SD_1_5](https://www.modelscope.cn/models/MusePublic/Realistic_Vision_V6.0_B1_SD_1_5)
 - [Repositorio de conversión: Sd-1.5-Converting-to-Qualcomm-QNN-Model](https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model)

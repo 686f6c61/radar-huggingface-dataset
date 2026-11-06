@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imbcmdth/longpipe-weights` es un repositorio espejo (mirror) de los ficheros de pesos que utiliza el proyecto longpipe, cuyo codigo y pesos originales residen en `sb2702/longpipe` bajo licencia MIT. No se trata de un modelo entrenado por el autor del repositorio ni de un modelo en el sentido convencional de HuggingFace: es un contenedor de artefactos binarios de pesos empaquetados en formatos especificos para los shaders del proyecto longpipe, servidos originalmente desde `cdn.longpipe.dev/models/v/0.0.5/`. El repositorio declara explicitamente que "no contiene nada mas" que esos ficheros.
+`imbcmdth/longpipe-weights` es un repositorio espejo (mirror) de los ficheros de pesos que utiliza el proyecto longpipe, cuyo codigo y pesos originales residen en `sb2702/longpipe` bajo licencia MIT. No se trata de un modelo entrenado por el autor del repositorio ni de un modelo en el sentido convencional de Hugging Face: es un contenedor de artefactos binarios de pesos empaquetados en formatos especificos para los shaders del proyecto longpipe, servidos originalmente desde `cdn.longpipe.dev/models/v/0.0.5/`. El repositorio declara explicitamente que "no contiene nada mas" que esos ficheros.
 
 El contenido se organiza en cinco niveles o *tiers* (xs, small, medium, large, xl), cada uno con una version en f32 y otra empaquetada en f16. Los tamanos van desde aproximadamente 4,2 MB en el tier xs hasta unos 30,5 MB en el tier xl en f32, lo que situa estos pesos en el rango de modelos muy pequenos, orientados previsiblemente a ejecucion en GPU de sidecar o en entornos con recursos limitados. El repositorio completo ocupa 0,1 GB.
 
@@ -73,6 +73,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imbcmdth/longpipe-weights
+- Repositorio en Hugging Face: https://huggingface.co/imbcmdth/longpipe-weights
 - Proyecto upstream (codigo y pesos): https://github.com/sb2702/longpipe
 - CDN de origen de los pesos: https://cdn.longpipe.dev/models/v/0.0.5/

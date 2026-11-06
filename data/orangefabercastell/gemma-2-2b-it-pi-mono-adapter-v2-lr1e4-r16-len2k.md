@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r16-len2k | Adaptador LoRA (base 2B) | no disponible (sugerido 2048) | no disponible | HuggingFace |
-| google/gemma-2-2b-it | 2B | 8192 | Licencia Gemma (no comercial) | HuggingFace |
-| orangefabercastell/gemma-2-2b-it-pi-mono-sft | 2B (con QLoRA) | no disponible | no disponible | HuggingFace |
+| orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r16-len2k | Adaptador LoRA (base 2B) | no disponible (sugerido 2048) | no disponible | Hugging Face |
+| google/gemma-2-2b-it | 2B | 8192 | Licencia Gemma (no comercial) | Hugging Face |
+| orangefabercastell/gemma-2-2b-it-pi-mono-sft | 2B (con QLoRA) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks para comparar el rendimiento entre estos modelos.
 
@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento entre estos mo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r16-len2k
+- Hugging Face del modelo: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r16-len2k
 - Modelo relacionado del mismo autor: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-sft
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio de datos de entrenamiento (badlogicgames/pi-mono): no se ha verificado el enlace, pero el nombre aparece en la descripción del modelo relacionado.

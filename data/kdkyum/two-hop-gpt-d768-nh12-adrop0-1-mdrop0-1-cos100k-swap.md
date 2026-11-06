@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kdkyum/two-hop-gpt-d768-nh12-adrop0.1-mdrop0.1-cos100k-swap` es un artefacto de investigacion publicado por el usuario kdkyum en HuggingFace. No es un modelo de lenguaje de proposito general, sino una familia de nueve ejecuciones de entrenamiento de un transformer tipo GPT-NeoX de 768 dimensiones, 12 cabezas de atencion de 64 dimensiones y 12 capas, con unos 85,2 millones de parametros en los bloques transformer. Todas las ejecuciones se entrenan desde cero sobre un unico dataset sintetico de grafos heterogeneos (`c5_m16_N90/hetero_graphs_swap_6to1split1`, con 16 nombres de pila y 90 familias) y se evaluan con una metrica unica: la precision de razonamiento de dos saltos (two-hop) sobre datos retenidos.
+El modelo `kdkyum/two-hop-gpt-d768-nh12-adrop0.1-mdrop0.1-cos100k-swap` es un artefacto de investigacion publicado por el usuario kdkyum en Hugging Face. No es un modelo de lenguaje de proposito general, sino una familia de nueve ejecuciones de entrenamiento de un transformer tipo GPT-NeoX de 768 dimensiones, 12 cabezas de atencion de 64 dimensiones y 12 capas, con unos 85,2 millones de parametros en los bloques transformer. Todas las ejecuciones se entrenan desde cero sobre un unico dataset sintetico de grafos heterogeneos (`c5_m16_N90/hetero_graphs_swap_6to1split1`, con 16 nombres de pila y 90 familias) y se evaluan con una metrica unica: la precision de razonamiento de dos saltos (two-hop) sobre datos retenidos.
 
 El objetivo del proyecto es estudiar generalizacion composicional y el efecto de hiperparametros concretos en una tarea controlada. Las nueve ejecuciones cruzan tres valores de weight decay (1, 3 y 5) con tres semillas (41, 42 y 43), manteniendo fijos dropout de atencion y de MLP en 0,1 y un schedule cosenoidal de 100.000 pasos. Los resultados publicados muestran precisiones de dos saltos de entre 0,877 y 0,991 segun la configuracion, con la mejor ejecucion (weight decay 5, semilla 43) alcanzando 0,9907 en el paso 77.500.
 
@@ -104,6 +104,6 @@ La comparacion directa es limitada: los modelos de la tabla son asistentes de le
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdkyum/two-hop-gpt-d768-nh12-adrop0.1-mdrop0.1-cos100k-swap
+- Modelo en Hugging Face: https://huggingface.co/kdkyum/two-hop-gpt-d768-nh12-adrop0.1-mdrop0.1-cos100k-swap
 - Perfil del autor: https://huggingface.co/kdkyum
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las unicas coincidencias devueltas son hilos del foro chino Zhihu sobre como preparar presentaciones orales, sin relacion alguna con este modelo, con razonamiento two-hop o con GPT-NeoX. No se dispone de paper, blog, repositorio de codigo ni demo asociados al modelo.

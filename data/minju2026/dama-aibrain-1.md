@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`minju2026/dama-aibrain-1` es un ajuste fino (fine-tune) multimodal publicado en HuggingFace por el usuario `minju2026`, derivado de `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. Segun la informacion disponible, se trata de un modelo de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, y esta etiquetado con el pipeline `image-text-to-text` de HuggingFace. Su peso real en safetensors es de 5.123.178.051 parametros (aproximadamente 5,12 mil millones), con un repositorio de 10,3 GB, lo que sugiere pesos almacenados en 16 bits.
+`minju2026/dama-aibrain-1` es un ajuste fino (fine-tune) multimodal publicado en Hugging Face por el usuario `minju2026`, derivado de `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. Segun la informacion disponible, se trata de un modelo de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, y esta etiquetado con el pipeline `image-text-to-text` de Hugging Face. Su peso real en safetensors es de 5.123.178.051 parametros (aproximadamente 5,12 mil millones), con un repositorio de 10,3 GB, lo que sugiere pesos almacenados en 16 bits.
 
-El modelo se ha entrenado con Unsloth y la libreria TRL de HuggingFace, un flujo habitual para ajustes finos rapidos sobre modelos pequenos. La model card es extremadamente escasa: no documenta dataset de entrenamiento, hiperparametros, numero de tokens, ni resultados de evaluacion. El unico idioma declarado es el ingles (`en`) y la licencia es Apache 2.0, heredada del modelo base. En el momento de la consulta acumula 0 descargas y 0 likes, lo que indica que es una publicacion reciente y sin validacion por parte de la comunidad.
+El modelo se ha entrenado con Unsloth y la libreria TRL de Hugging Face, un flujo habitual para ajustes finos rapidos sobre modelos pequenos. La model card es extremadamente escasa: no documenta dataset de entrenamiento, hiperparametros, numero de tokens, ni resultados de evaluacion. El unico idioma declarado es el ingles (`en`) y la licencia es Apache 2.0, heredada del modelo base. En el momento de la consulta acumula 0 descargas y 0 likes, lo que indica que es una publicacion reciente y sin validacion por parte de la comunidad.
 
 Su relevancia practica es limitada pero concreta: sirve como ejemplo de fine-tune de bajo coste sobre una variante "E2B" (effective 2B) de la familia Gemma 4, y como punto de partida reproducible para quien quiera adaptar un modelo multimodal pequeno a un dominio propio sin infraestructura de gran escala. Cualquier evaluacion seria exige, sin embargo, validar por cuenta propia su comportamiento, dado que no existe informacion publicada sobre su calidad.
 
@@ -33,7 +33,7 @@ El entrenamiento se llevo a cabo con Unsloth y TRL, segun indica el propio autor
 - Procesamiento conjunto de imagen y texto (pipeline `image-text-to-text`): el modelo puede tomar una imagen y una pregunta textual y producir una respuesta.
 - Descripcion y comprension de imagenes, en la medida en que lo permita el modelo base; no hay evaluacion publicada que lo cuantifique.
 - Capacidad multilingue restringida al ingles segun la etiqueta de idioma declarada.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que indica que puede desplegarse en el stack de inferencia de HuggingFace.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que indica que puede desplegarse en el stack de inferencia de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Modo de razonamiento explicito (thinking mode), audio o video: no disponible en la informacion proporcionada.
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 3-4 GB para pesos, con margen adicional para la cache segun la longitud de contexto.
 - GPU recomendadas: para 16 bits, RTX 4080/4090 (16-24 GB), L4 (24 GB), A100 40 GB o H100 para lotes grandes; para 4 bits, tarjetas de 8 GB como RTX 3060 Ti/4060 pueden ser suficientes, dependiendo del soporte multimodal del runtime.
 - Cabe en GPU de consumo: si, en 4 bits con holgura en tarjetas de 8 GB o mas, y en 16 bits en tarjetas de 16 GB o mas.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). El uso de vLLM, llama.cpp u Ollama no esta confirmado en la informacion disponible; en el caso de llama.cpp u Ollama requeriria convertir los pesos a GGUF, algo que el repositorio no ofrece.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). El uso de vLLM, llama.cpp u Ollama no esta confirmado en la informacion disponible; en el caso de llama.cpp u Ollama requeriria convertir los pesos a GGUF, algo que el repositorio no ofrece.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Contexto | Idiomas | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|
-| minju2026/dama-aibrain-1 | 5,12 B | No disponible | en | Apache 2.0 | HuggingFace, 0 descargas | No |
-| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace (referenciado como base) | No disponible |
+| minju2026/dama-aibrain-1 | 5,12 B | No disponible | en | Apache 2.0 | Hugging Face, 0 descargas | No |
+| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face (referenciado como base) | No disponible |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables sobre otros fine-tunes multimodales comparables en la informacion proporcionada, por lo que la comparativa cuantitativa (parametros activos, contexto, rendimiento) no puede completarse sin inventar cifras.
@@ -88,8 +88,8 @@ No se dispone de datos verificables sobre otros fine-tunes multimodales comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minju2026/dama-aibrain-1
+- Modelo en Hugging Face: https://huggingface.co/minju2026/dama-aibrain-1
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los unicos resultados obtenidos correspondian a paginas de la Chrome Web Store, sin relacion con el contenido de esta ficha.

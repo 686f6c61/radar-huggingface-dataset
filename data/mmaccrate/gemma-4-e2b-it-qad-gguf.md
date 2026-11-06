@@ -95,7 +95,7 @@ La comparativa disponible se limita a estas tres variantes del mismo modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmaccrate/gemma-4-E2B-it-QAD-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mmaccrate/gemma-4-E2B-it-QAD-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Artículo del proyecto sobre QAD: https://maccrate.ai/projects/quantization-aware-distillation/

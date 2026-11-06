@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MinaNasser/DDPM_vs_VAE_anime_face es un repositorio alojado en HuggingFace por el usuario MinaNasser que, a juzgar por su identificador, contiene un experimento comparativo entre un modelo de difusión (DDPM, denoising diffusion probabilistic model) y un autoencoder variacional (VAE) aplicados a la generación de rostros de estilo anime. El repositorio ocupa 0,6 GB y se distribuye bajo licencia MIT. Los metadatos indican fecha de creación y última actualización el 12 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+MinaNasser/DDPM_vs_VAE_anime_face es un repositorio alojado en Hugging Face por el usuario MinaNasser que, a juzgar por su identificador, contiene un experimento comparativo entre un modelo de difusión (DDPM, denoising diffusion probabilistic model) y un autoencoder variacional (VAE) aplicados a la generación de rostros de estilo anime. El repositorio ocupa 0,6 GB y se distribuye bajo licencia MIT. Los metadatos indican fecha de creación y última actualización el 12 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
 La model card publicada no aporta información técnica: el README se limita a declarar `license: mit` y no documenta arquitectura, número de parámetros, resolución de salida, dataset de entrenamiento, hiperparámetros ni métricas de evaluación. Tampoco se han declarado pipeline, idiomas ni formato de pesos, y la búsqueda web realizada no ha devuelto ningún enlace relacionado con el modelo (los resultados obtenidos correspondían a páginas deportivas sin relación alguna).
 
@@ -20,7 +20,7 @@ En consecuencia, esta ficha se limita a recoger los datos verificables de los me
 | Idiomas soportados | no disponible (modelo orientado a imágenes, no a texto) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (no se publica listado de ficheros en la información disponible) |
-| ID en HuggingFace | MinaNasser/DDPM_vs_VAE_anime_face |
+| ID en Hugging Face | MinaNasser/DDPM_vs_VAE_anime_face |
 | Autor | MinaNasser |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
@@ -97,7 +97,7 @@ No se ha identificado en la información proporcionada ningún checkpoint compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MinaNasser/DDPM_vs_VAE_anime_face
+- Hugging Face: https://huggingface.co/MinaNasser/DDPM_vs_VAE_anime_face
 - Paper de referencia de DDPM (no vinculado por el autor): https://arxiv.org/abs/2006.11239
 - Paper de referencia de VAE (no vinculado por el autor): https://arxiv.org/abs/1312.6114
 - Repositorios, demos, blogs o papers específicos de este modelo: no disponible; la búsqueda web no devolvió ningún resultado relacionado.

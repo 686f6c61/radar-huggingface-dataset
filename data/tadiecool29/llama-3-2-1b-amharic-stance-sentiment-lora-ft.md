@@ -73,9 +73,9 @@ Dataset de evaluacion: `tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratifi
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tadiecool29/Llama-3.2-1B-Amharic-Stance-Sentiment-LoRA-FT | ~1.240 M (base) + adaptador LoRA | No disponible | Clasificacion de postura y sentimiento en amharico | No disponible | HuggingFace, 0 descargas |
-| rasyosef/Llama-3.2-1B-Amharic-Instruct | ~1.240 M | No disponible | Modelo instructivo general en amharico (modelo base de este adaptador) | No disponible en la informacion recogida | HuggingFace |
-| Meta Llama 3.2 1B Instruct | 1.240 M | 128.000 tokens | Generacion de texto e instrucciones multilingue | Llama 3.2 Community License | HuggingFace, ampliamente disponible |
+| tadiecool29/Llama-3.2-1B-Amharic-Stance-Sentiment-LoRA-FT | ~1.240 M (base) + adaptador LoRA | No disponible | Clasificacion de postura y sentimiento en amharico | No disponible | Hugging Face, 0 descargas |
+| rasyosef/Llama-3.2-1B-Amharic-Instruct | ~1.240 M | No disponible | Modelo instructivo general en amharico (modelo base de este adaptador) | No disponible en la informacion recogida | Hugging Face |
+| Meta Llama 3.2 1B Instruct | 1.240 M | 128.000 tokens | Generacion de texto e instrucciones multilingue | Llama 3.2 Community License | Hugging Face, ampliamente disponible |
 
 No se dispone de datos de benchmarks de estos modelos alternativos en la informacion proporcionada, por lo que no es posible comparar rendimiento numerico. Tampoco se han identificado en la busqueda otros clasificadores de postura y sentimiento especificos para amharico con los que establecer una comparacion directa.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de estos modelos alternativos en la informa
 
 ## Enlaces
 
-- [Modelo en HuggingFace: tadiecool29/Llama-3.2-1B-Amharic-Stance-Sentiment-LoRA-FT](https://huggingface.co/tadiecool29/Llama-3.2-1B-Amharic-Stance-Sentiment-LoRA-FT)
+- [Modelo en Hugging Face: tadiecool29/Llama-3.2-1B-Amharic-Stance-Sentiment-LoRA-FT](https://huggingface.co/tadiecool29/Llama-3.2-1B-Amharic-Stance-Sentiment-LoRA-FT)
 - [Dataset: tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified](https://huggingface.co/datasets/tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified)
 - [Modelo base: rasyosef/Llama-3.2-1B-Amharic-Instruct](https://huggingface.co/rasyosef/Llama-3.2-1B-Amharic-Instruct)
 - [Modelo relacionado del mismo autor: tadiecool29/Llama-3.2-1B-Amharic-MTL-LoRA](https://huggingface.co/tadiecool29/Llama-3.2-1B-Amharic-MTL-LoRA)

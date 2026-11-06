@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "krauthaufen/sam3-onnx-fp16",
+  "slug": "krauthaufen-sam3-onnx-fp16",
+  "author": "krauthaufen",
+  "url": "https://huggingface.co/krauthaufen/sam3-onnx-fp16",
+  "created_at": "2026-11-05T06:33:15.000Z",
+  "updated_at": "2026-11-05T06:34:46.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sam3",
+    "segment-anything",
+    "fp16",
+    "image-segmentation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1888172226,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "krauthaufen/sam3-onnx-fp16 · Hugging Face",
+      "url": "https://huggingface.co/krauthaufen/sam3-onnx-fp16",
+      "snippet": "SAM3 ONNX (fp16) fp16 ONNX export of Meta's SAM 3 (image model, ViT-H) for ONNX Runtime. It's the model set behind Sam3.Net, which downloads these files automatically. Runs on CUDA, DirectML (any vendor), CoreML and CPU. Peak GPU use is about 7 GB."
+    },
+    {
+      "title": "krauthaufen (Georg Haaser) - Hugging Face",
+      "url": "https://huggingface.co/krauthaufen",
+      "snippet": "Recent Activity updated a modelabout 10 hours ago krauthaufen/sam3-onnx-fp16 published a modelabout 10 hours ago krauthaufen/sam3-onnx-fp16 View all activity"
+    }
+  ]
+}

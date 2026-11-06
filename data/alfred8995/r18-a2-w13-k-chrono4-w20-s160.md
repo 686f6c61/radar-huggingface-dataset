@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono4-w20-s160` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Con 2.018.511.234 parámetros totales (aproximadamente 2.000 millones) y un repositorio de 6,3 GB en formato safetensors, se trata de un modelo de escala media, probablemente orientado a experimentación o a tareas de generación de texto en entornos con recursos moderados.
+El modelo `alfred8995/r18-a2-w13-k-chrono4-w20-s160` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Con 2.018.511.234 parámetros totales (aproximadamente 2.000 millones) y un repositorio de 6,3 GB en formato safetensors, se trata de un modelo de escala media, probablemente orientado a experimentación o a tareas de generación de texto en entornos con recursos moderados.
 
 La nomenclatura del identificador (`r18`, `a2`, `w13`, `chrono4`, `w20`, `s160`) y la etiqueta `sn38-nanochrono` sugieren una familia de modelos denominada NanoChrono, posiblemente con variantes parametrizadas por configuraciones internas (capas, anchos, pasos temporales o de entrenamiento). No obstante, no se dispone de documentación pública que explique el significado de estos sufijos ni la arquitectura subyacente.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesa
 
 ## Casos de uso
 
-- Experimentación académica con modelos de ~2B parámetros: el tamaño y la licencia Apache 2.0 permiten usar el modelo como base para investigación en ajuste fino o destilación, siempre que se acepte la condición de acceso gated en HuggingFace.
+- Experimentación académica con modelos de ~2B parámetros: el tamaño y la licencia Apache 2.0 permiten usar el modelo como base para investigación en ajuste fino o destilación, siempre que se acepte la condición de acceso gated en Hugging Face.
 - Prototipado de generación de texto en local: con 2.018 millones de parámetros y pesos safetensors, es viable cargarlo en GPUs de consumo con cuantización, aunque no se confirman los formatos de cuantización disponibles.
 - Evaluación comparativa de familias de modelos: la etiqueta `sn38-nanochrono` sugiere una serie de variantes que podrían usarse para estudios controlados de escalado, si el autor publica más información.
 - Fine-tuning supervisado para dominios específicos: la licencia permisiva facilita adaptar el modelo a tareas concretas, aunque la falta de model card obliga a validar el comportamiento base antes de invertir en entrenamiento.
@@ -68,11 +68,11 @@ No disponible. No se dispone de información suficiente sobre arquitectura, cont
 - Riesgo de alucinación: no cuantificado; al no haber benchmarks, no se puede estimar la fiabilidad factual.
 - Idiomas no declarados: se desconoce si el modelo está entrenado principalmente en inglés, multilingüe o en otro idioma, lo que limita su uso en castellano sin pruebas empíricas.
 - Contexto desconocido: no se especifica la longitud de ventana, lo que impide planificar casos de uso con documentos largos.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
 - Licencia Apache 2.0: permite uso comercial, pero al no haber model card no se puede verificar si el autor impone restricciones adicionales en los términos de acceso gated.
 - Sin descargas ni likes: el modelo no tiene tracción comunitaria, por lo que no hay evidencia externa de su calidad ni informes de fallos.
 - Fecha de creación futura (2026-10-29): el timestamp del repositorio es posterior a la fecha actual de referencia, lo que puede indicar un error de metadatos o un entorno de prueba; conviene verificarlo antes de confiar en el checkpoint.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w20-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w20-s160

@@ -73,10 +73,10 @@ La model card indica que esta caida refleja en espejo el efecto de la semilla co
 
 | Modelo | Tipo | Base | Datos / objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arcarae/redblackbench-qwen3-14b-uncoop | LoRA | Qwen/Qwen3-14B | 7.686 deliberaciones de desercion (270 partidas Red-Black) | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| Arcarae/redblackbench-qwen3-14b-sft-v2 | LoRA | Qwen/Qwen3-14B | Semilla cooperativa, mismo pipeline y teacher | no disponible en la informacion | HuggingFace |
-| Qwen/Qwen3-14B | Modelo completo | - | Modelo denso generalista de ~14B | no disponible en la informacion | HuggingFace |
-| LLaMA-3.1-8B | Modelo completo | - | Modelo denso generalista de 8B usado como poblacion receptora | no disponible en la informacion | HuggingFace |
+| Arcarae/redblackbench-qwen3-14b-uncoop | LoRA | Qwen/Qwen3-14B | 7.686 deliberaciones de desercion (270 partidas Red-Black) | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| Arcarae/redblackbench-qwen3-14b-sft-v2 | LoRA | Qwen/Qwen3-14B | Semilla cooperativa, mismo pipeline y teacher | no disponible en la informacion | Hugging Face |
+| Qwen/Qwen3-14B | Modelo completo | - | Modelo denso generalista de ~14B | no disponible en la informacion | Hugging Face |
+| LLaMA-3.1-8B | Modelo completo | - | Modelo denso generalista de 8B usado como poblacion receptora | no disponible en la informacion | Hugging Face |
 
 Este adaptador no es directamente comparable con modelos generalistas en benchmarks de razonamiento o codigo, ya que su proposito es inyectar una disposicion concreta en un juego multiagente, no maximizar capacidades generales.
 
@@ -94,7 +94,7 @@ Este adaptador no es directamente comparable con modelos generalistas en benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arcarae/redblackbench-qwen3-14b-uncoop
+- Modelo en Hugging Face: https://huggingface.co/Arcarae/redblackbench-qwen3-14b-uncoop
 - Semilla cooperativa: https://huggingface.co/Arcarae/redblackbench-qwen3-14b-sft-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/Arcarae/redblackbench-sft-uncoop-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B

@@ -68,9 +68,9 @@ No disponible. No se han encontrado repositorios comparables de checkpoints inte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s2-13b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s2-13b
 - Paper de OLMo 2 (arXiv): https://arxiv.org/abs/2501.00656
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
 - Página oficial de OLMo 2 en Ai2: https://allenai.org/olmo2
 - Blog de Ai2 sobre OLMo 2: https://allenai.org/blog/olmo2
-- Modelo base OLMo-2-0425-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-0425-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B

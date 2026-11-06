@@ -4,7 +4,7 @@
 
 El modelo `willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter019` es un checkpoint intermedio de aprendizaje por refuerzo (RL) obtenido a partir de `Qwen/Qwen3.6-35B-A3B`, un transformer multimodal de tipo mezcla de expertos (MoE). Lo publica el usuario `willamazon1` dentro de la ejecución de entrenamiento `miles-multievo-v2`, y corresponde concretamente a la iteración 19, ya que los checkpoints se guardan cada 5 iteraciones. No es, por tanto, un modelo final pulido, sino un punto concreto de una curva de entrenamiento que se publica junto al resto de iteraciones de la misma ejecución para poder compararlas entre sí.
 
-El interés técnico del modelo reside en dos factores. Por un lado, hereda la arquitectura multimodal del modelo base: 40 capas, dimensión oculta de 2048, 256 expertos con enrutado top-8, atención híbrida (lineal y completa), una capa MTP (*multi-token prediction*) y una torre de visión, con un vocabulario de 248.320 entradas y 35.951.822.704 parámetros totales almacenados en `bfloat16`. Por otro, el proceso de conversión es un caso práctico relevante: se ha pasado de un checkpoint de entrenamiento Megatron-LM en formato `torch_dist` a `safetensors` de HuggingFace mediante la herramienta `tools/convert_torch_dist_to_hf.py` del proyecto `slime`, con `--vocab-size 248320` para eliminar el relleno de embeddings y con `--add-missing-from-origin-hf` para recuperar la torre de visión desde el modelo base.
+El interés técnico del modelo reside en dos factores. Por un lado, hereda la arquitectura multimodal del modelo base: 40 capas, dimensión oculta de 2048, 256 expertos con enrutado top-8, atención híbrida (lineal y completa), una capa MTP (*multi-token prediction*) y una torre de visión, con un vocabulario de 248.320 entradas y 35.951.822.704 parámetros totales almacenados en `bfloat16`. Por otro, el proceso de conversión es un caso práctico relevante: se ha pasado de un checkpoint de entrenamiento Megatron-LM en formato `torch_dist` a `safetensors` de Hugging Face mediante la herramienta `tools/convert_torch_dist_to_hf.py` del proyecto `slime`, con `--vocab-size 248320` para eliminar el relleno de embeddings y con `--add-missing-from-origin-hf` para recuperar la torre de visión desde el modelo base.
 
 Su relevancia práctica es acotada pero clara: sirve para investigación sobre RL multimodal y agentes, y como material de partida para quien quiera estudiar la evolución del entrenamiento o reanudarlo. El repositorio no incluye datos de benchmarks, idiomas soportados ni longitud de contexto, y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que carece de validación por parte de la comunidad. La licencia declarada es `apache-2.0`.
 
@@ -46,7 +46,7 @@ El entrenamiento corresponde a una etapa de RL sobre el modelo base `Qwen/Qwen3.
 - Reanudación o *fine-tuning* posterior: al estar en `safetensors` y cargarse con `transformers`, sirve como punto de partida para continuar el entrenamiento o aplicar nuevas fases de RL sobre una política ya parcialmente optimizada.
 - Agentes multimodales multi-paso: la combinación de torre de visión, etiqueta `agent` y una etapa de RL lo hace adecuado para prototipos de agentes que deben interpretar capturas de pantalla o imágenes y encadenar acciones.
 - Asistentes conversacionales con entrada visual: se puede desplegar como servicio `image-text-to-text` para responder preguntas sobre imágenes o documentos escaneados en un chat multi-turno.
-- Evaluación de pipelines de conversión Megatron-LM a HuggingFace: el repositorio documenta el comando exacto de `slime`, el recorte de vocabulario a 248.320 y la recuperación de la torre de visión, lo que lo convierte en un caso de referencia reproducible para equipos que convierten checkpoints `torch_dist`.
+- Evaluación de pipelines de conversión Megatron-LM a Hugging Face: el repositorio documenta el comando exacto de `slime`, el recorte de vocabulario a 248.320 y la recuperación de la torre de visión, lo que lo convierte en un caso de referencia reproducible para equipos que convierten checkpoints `torch_dist`.
 - Verificación de integridad de checkpoints: útil como ejemplo de validación de NaN/Inf por shard y de comparación del conjunto de claves frente a una conversión conocida, antes de publicar pesos en el Hub.
 - Auditoría de modelos derivados con licencia permisiva: al declarar `apache-2.0`, resulta apropiado para experimentos internos en los que se necesita inspeccionar el comportamiento de un MoE de ~36 B con expertos fusionados.
 
@@ -90,7 +90,7 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter019
+- Modelo en Hugging Face: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter019
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Herramienta de conversión `slime` (incluye `tools/convert_torch_dist_to_hf.py`): https://github.com/THUDM/slime
 - Paper, blog o demo específicos de este checkpoint: no disponible

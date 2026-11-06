@@ -27,7 +27,7 @@ La relevancia actual del modelo radica en su enfoque multilingue: cubre once idi
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del base McGill-NLP/AfriqueQwen3.5-4B-50Langs, identificada en las etiquetas de HuggingFace como `qwen3_5`. La model card no especifica detalles sobre el tipo de mecanismo de atencion, el tokenizador, la composicion exacta del dataset de preentrenamiento ni si hubo fases de RLHF o DPO. Tampoco se documenta la longitud de contexto nativa. Es destacable que, entre las etiquetas del repositorio, figura tambien `image-text-to-text`, lo que apunta a que el modelo base podria contar con capacidades multimodales; sin embargo, el ajuste aqui descrito y su pipeline declarado son exclusivamente de generacion de texto, sin que la model card confirme funcionamiento con imagenes.
+El modelo hereda la arquitectura del base McGill-NLP/AfriqueQwen3.5-4B-50Langs, identificada en las etiquetas de Hugging Face como `qwen3_5`. La model card no especifica detalles sobre el tipo de mecanismo de atencion, el tokenizador, la composicion exacta del dataset de preentrenamiento ni si hubo fases de RLHF o DPO. Tampoco se documenta la longitud de contexto nativa. Es destacable que, entre las etiquetas del repositorio, figura tambien `image-text-to-text`, lo que apunta a que el modelo base podria contar con capacidades multimodales; sin embargo, el ajuste aqui descrito y su pipeline declarado son exclusivamente de generacion de texto, sin que la model card confirme funcionamiento con imagenes.
 
 El ajuste fino se realizo con entrenamiento completo (no LoRA) usando DeepSpeed ZeRO-3, segun el archivo de configuracion referenciado `examples/train_full/afriguard_plain_afriqueqwen3.5-4b-50langs_full_sft.yaml` del repositorio AfriGuard-model sobre LlamaFactory. Los hiperparametros documentados son: learning rate de 1e-05, tamano de batch de entrenamiento 1, batch de evaluacion 8, acumulacion de gradientes 2 (batch total efectivo 2), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler coseno con warmup del 10 %, una sola epoca y semilla 42. Se empleo la plantilla de chat `qwen3_nothink` y el calculo de la perdida se aplico unicamente sobre la respuesta. El dataset afriGuard-plain, version sin instrucciones de prompt de israel/AfriGuard-inst, contiene ejemplos formados por el prompt del usuario y una respuesta plana (respuesta util para prompts seguros, rechazo breve para los inseguros), sin instrucciones de sistema de seguridad ni etiquetas.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idioma principal | Salida de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs | ~4,54 B | 11 idiomas (en + 10 africanas) | Respuesta/rechazo directo, sin etiquetas | cc-by-4.0 | HuggingFace, safetensors |
-| israel/AfriGuard-AfriqueQwen3.5-4B-50Langs | ~4,54 B | 11 idiomas (en + 10 africanas) | Con etiquetas `<safety>`/`<category>`/`<response>` | no disponible | HuggingFace |
-| McGill-NLP/AfriqueQwen3.5-4B-50Langs | ~4,54 B | 50 idiomas (segun nombre) | Sin ajuste de seguridad especifico | no disponible | HuggingFace |
+| adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs | ~4,54 B | 11 idiomas (en + 10 africanas) | Respuesta/rechazo directo, sin etiquetas | cc-by-4.0 | Hugging Face, safetensors |
+| israel/AfriGuard-AfriqueQwen3.5-4B-50Langs | ~4,54 B | 11 idiomas (en + 10 africanas) | Con etiquetas `<safety>`/`<category>`/`<response>` | no disponible | Hugging Face |
+| McGill-NLP/AfriqueQwen3.5-4B-50Langs | ~4,54 B | 50 idiomas (segun nombre) | Sin ajuste de seguridad especifico | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar la calidad de estos modelos entre si.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento que permitan comparar la calidad de estos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs
+- Modelo en Hugging Face: https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs
 - Modelo base: https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-50Langs
 - Contraparte instruccional: https://huggingface.co/israel/AfriGuard-AfriqueQwen3.5-4B-50Langs
 - Dataset de ajuste: https://huggingface.co/datasets/adzcai/AfriGuard-plain

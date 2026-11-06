@@ -28,7 +28,7 @@ Su relevancia es, por tanto, documental y no practica: sirve como plantilla de n
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible es la etiqueta `transformer` asociada al repositorio en HuggingFace, ademas de las etiquetas tematicas `research-notes` y `embodied-ai`. No se especifica el numero de capas, dimension oculta, numero de cabezas de atencion, tipo de tokenizador ni ninguna variante arquitectonica concreta (MoE, SSM, hibrida, etc.). El fichero safetensors contiene 33.088 parametros, una cifra compatible con un tensor de prueba o un artefacto residual, no con un transformer entrenado de uso general.
+La unica informacion estructural disponible es la etiqueta `transformer` asociada al repositorio en Hugging Face, ademas de las etiquetas tematicas `research-notes` y `embodied-ai`. No se especifica el numero de capas, dimension oculta, numero de cabezas de atencion, tipo de tokenizador ni ninguna variante arquitectonica concreta (MoE, SSM, hibrida, etc.). El fichero safetensors contiene 33.088 parametros, una cifra compatible con un tensor de prueba o un artefacto residual, no con un transformer entrenado de uso general.
 
 No hay informacion sobre datos de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste por instrucciones, RLHF o DPO. El repositorio se describe a si mismo como notas de lectura y un esbozo de experimento, y declara de forma explicita que no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado. No se documenta ninguna innovacion tecnica de inferencia (decodificacion especulativa, atencion lineal, etc.).
 
@@ -80,5 +80,5 @@ No disponible. El repositorio no es un modelo de aprendizaje automatico comparab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashleyyou/review-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/ashleyyou/review-embodied-ai
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

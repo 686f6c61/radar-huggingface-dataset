@@ -87,7 +87,7 @@ Métricas de rendimiento y calidad medidas por el autor (M3 Max, macOS 27, GPU):
 
 | Modelo | Escala | LPIPS generadas / reales | PSNR (gen./real) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SwinIR-L real-world ×4 (este modelo, Core AI) | ×4 | 0,185 / 0,208 | 28,05 / 24,45 dB | Apache-2.0 | HuggingFace, formato `.aimodel` para Apple Silicon |
+| SwinIR-L real-world ×4 (este modelo, Core AI) | ×4 | 0,185 / 0,208 | 28,05 / 24,45 dB | Apache-2.0 | Hugging Face, formato `.aimodel` para Apple Silicon |
 | Real-ESRGAN x4plus | ×4 | 0,195 / 0,236 | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | SwinIR original (JingyunLiang/SwinIR) | ×4 | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | checkpoint `.pth` en PyTorch |
 
@@ -107,7 +107,7 @@ De la comparativa solo se pueden extraer conclusiones cuantitativas frente a Rea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arraypress/upscale-swinir-l-real
+- Hugging Face: https://huggingface.co/arraypress/upscale-swinir-l-real
 - Modelo base: https://huggingface.co/JingyunLiang/SwinIR
 - Repositorio swift-upscale: https://github.com/arraypress/swift-upscale
 - SwinIR (JingyunLiang, GitHub oficial): https://github.com/JingyunLiang/SwinIR

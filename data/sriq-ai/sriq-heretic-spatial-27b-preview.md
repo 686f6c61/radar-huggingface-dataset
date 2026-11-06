@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sriq-heretic-spatial-27b-preview es un ajuste fino del modelo trohrbaugh/Qwen3.8-27B-heretic-ara, desarrollado por SRIQ y publicado en HuggingFace con licencia Apache-2.0. Se trata de un modelo de 27.356.728.560 parametros (unos 27,36 mil millones) cuyos pesos se distribuyen fusionados en bf16 en un repositorio de 55,6 GB. La model card lo describe como un modelo que razona en chino simplificado comprimido y responde en el idioma en el que se le pregunta, una eleccion poco habitual que busca abaratar la traza de razonamiento en terminos de tokens.
+sriq-heretic-spatial-27b-preview es un ajuste fino del modelo trohrbaugh/Qwen3.8-27B-heretic-ara, desarrollado por SRIQ y publicado en Hugging Face con licencia Apache-2.0. Se trata de un modelo de 27.356.728.560 parametros (unos 27,36 mil millones) cuyos pesos se distribuyen fusionados en bf16 en un repositorio de 55,6 GB. La model card lo describe como un modelo que razona en chino simplificado comprimido y responde en el idioma en el que se le pregunta, una eleccion poco habitual que busca abaratar la traza de razonamiento en terminos de tokens.
 
-El modelo parte de una base etiquetada como "heretic" y se ha entrenado mediante LoRA sobre una base cuantizada a 4 bits (QLoRA), con posterior fusion a bf16. El entrenamiento se realizo sobre el dataset sriq-ai/exp-n800-spatial, de tematica aparentemente espacial, con solo 99 pasos y una fraccion de una epoca (790 de 790 filas). La etiqueta de pipeline de HuggingFace es image-text-to-text, lo que apunta a entrada multimodal de imagen y texto, aunque la model card no documenta en detalle esta capacidad.
+El modelo parte de una base etiquetada como "heretic" y se ha entrenado mediante LoRA sobre una base cuantizada a 4 bits (QLoRA), con posterior fusion a bf16. El entrenamiento se realizo sobre el dataset sriq-ai/exp-n800-spatial, de tematica aparentemente espacial, con solo 99 pasos y una fraccion de una epoca (790 de 790 filas). La etiqueta de pipeline de Hugging Face es image-text-to-text, lo que apunta a entrada multimodal de imagen y texto, aunque la model card no documenta en detalle esta capacidad.
 
 Su relevancia es limitada y muy experimental: el propio autor declara que no se ejecuto ningun benchmark para esta version, que no hay verificacion de tasa de razonamiento en chino ni de bucles frente al modelo base, y recomienda evaluarlo en la carga de trabajo propia antes de confiar en el. Es, por tanto, una publicacion de investigacion mas que un modelo listo para produccion.
 
@@ -82,8 +82,8 @@ Los valores de VRAM son estimaciones derivadas del numero de parametros (27,36 m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sriq-ai/sriq-heretic-spatial-27b-preview | 27,36B | 65.536 tokens (entrenamiento) | Apache-2.0 | HuggingFace |
-| trohrbaugh/Qwen3.8-27B-heretic-ara (base) | no disponible (≈27B por nomenclatura) | no disponible | no disponible | HuggingFace |
+| sriq-ai/sriq-heretic-spatial-27b-preview | 27,36B | 65.536 tokens (entrenamiento) | Apache-2.0 | Hugging Face |
+| trohrbaugh/Qwen3.8-27B-heretic-ara (base) | no disponible (≈27B por nomenclatura) | no disponible | no disponible | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con otros modelos del mismo tamano. La unica relacion documentada es con el modelo base y con el adaptador LoRA publicado por separado.
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriq-ai/sriq-heretic-spatial-27b-preview
+- Modelo en Hugging Face: https://huggingface.co/sriq-ai/sriq-heretic-spatial-27b-preview
 - Adaptador LoRA: https://huggingface.co/sriq-ai/sriq-heretic-spatial-27b-preview-adapter
 - Dataset de entrenamiento: https://huggingface.co/datasets/sriq-ai/exp-n800-spatial
 - Modelo base: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara

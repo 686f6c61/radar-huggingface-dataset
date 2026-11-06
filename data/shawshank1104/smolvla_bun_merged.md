@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shawshank1104/smolvla_bun_merged` es un modelo de visión-lenguaje-acción (VLA) publicado por el usuario shawshank1104 en HuggingFace, entrenado específicamente para una tarea de recogida y colocación (*pick-and-place*) de bollos con el brazo derecho de un montaje robótico denominado `airoa`. No es un modelo de lenguaje conversacional: recibe imágenes de dos cámaras y una cadena de tarea, y produce directamente un bloque de 50 acciones articulares para el brazo. El repositorio contiene 450.046.176 parámetros en formato safetensors y ocupa 0,9 GB.
+`shawshank1104/smolvla_bun_merged` es un modelo de visión-lenguaje-acción (VLA) publicado por el usuario shawshank1104 en Hugging Face, entrenado específicamente para una tarea de recogida y colocación (*pick-and-place*) de bollos con el brazo derecho de un montaje robótico denominado `airoa`. No es un modelo de lenguaje conversacional: recibe imágenes de dos cámaras y una cadena de tarea, y produce directamente un bloque de 50 acciones articulares para el brazo. El repositorio contiene 450.046.176 parámetros en formato safetensors y ocupa 0,9 GB.
 
 El modelo se apoya en SmolVLA y en el backbone VLM `HuggingFaceTB/SmolVLM2-500M-Video-Instruct`, cuya caché es un requisito explícito de inferencia según la model card. Se entrenó sobre 95 episodios con posiciones de bollo variadas y escenarios de uno y varios bollos, y se presenta como la tercera iteración de una serie de modelos para el mismo banco de pruebas, sustituyendo a `smolvla_finalforsure` (que trabajaba con una posición fija y una tarea con latas en lugar de bollos).
 
@@ -94,10 +94,10 @@ Datos adicionales de entrenamiento y verificacion:
 
 | Modelo | Parametros | Contexto | Rendimiento (held-out primer paso / chunk 50) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shawshank1104/smolvla_bun_merged` | 450.046.176 | No disponible | 0,125 / 0,331 | No disponible | Publico en HuggingFace, 0 descargas |
-| `shawshank1104/smolvla_finalforsure` | No disponible | No disponible | 0,222 / 0,488 | No disponible | Publico en HuggingFace |
-| `shawshank1104/act_finalforsure` | No disponible | No disponible | No disponible (ignora la cadena de tarea) | No disponible | Publico en HuggingFace |
-| `HuggingFaceTB/SmolVLM2-500M-Video-Instruct` | ~500 M (backbone, no es una politica) | No disponible en esta informacion | No aplica (modelo de vision-lenguaje) | No disponible en esta informacion | Publico en HuggingFace |
+| `shawshank1104/smolvla_bun_merged` | 450.046.176 | No disponible | 0,125 / 0,331 | No disponible | Publico en Hugging Face, 0 descargas |
+| `shawshank1104/smolvla_finalforsure` | No disponible | No disponible | 0,222 / 0,488 | No disponible | Publico en Hugging Face |
+| `shawshank1104/act_finalforsure` | No disponible | No disponible | No disponible (ignora la cadena de tarea) | No disponible | Publico en Hugging Face |
+| `HuggingFaceTB/SmolVLM2-500M-Video-Instruct` | ~500 M (backbone, no es una politica) | No disponible en esta informacion | No aplica (modelo de vision-lenguaje) | No disponible en esta informacion | Publico en Hugging Face |
 
 No se dispone de datos para comparar con otros VLA de referencia (por ejemplo, OpenVLA o pi0) porque la informacion proporcionada no incluye sus cifras en este montaje ni resultados comparables en el mismo dataset.
 
@@ -118,7 +118,7 @@ No se dispone de datos para comparar con otros VLA de referencia (por ejemplo, O
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shawshank1104/smolvla_bun_merged
+- Modelo en Hugging Face: https://huggingface.co/shawshank1104/smolvla_bun_merged
 - Dataset de entrenamiento: https://huggingface.co/datasets/shawshank1104/bun_merged
 - Dataset base (tarea relabelada de "can" a "bun"): https://huggingface.co/datasets/shawshank1104/finalforsure
 - Dataset adicional (bollo, sin camara de pecho): https://huggingface.co/datasets/shawshank1104/bun
@@ -127,4 +127,4 @@ No se dispone de datos para comparar con otros VLA de referencia (por ejemplo, O
 - Backbone VLM requerido en cache: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
 - LeRobot (framework de entrenamiento e inferencia citado en la model card): https://github.com/huggingface/lerobot
 
-Nota: no se han encontrado papers, blogs ni demos independientes sobre este modelo en la busqueda web realizada; los unicos enlaces verificables son los del propio autor en HuggingFace.
+Nota: no se han encontrado papers, blogs ni demos independientes sobre este modelo en la busqueda web realizada; los unicos enlaces verificables son los del propio autor en Hugging Face.

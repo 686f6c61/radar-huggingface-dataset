@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSeek_OCR_2_parsynth_ocr_200k_finetuned_16bit es un ajuste fino (fine-tuning) del modelo DeepSeek-OCR-2 publicado por el usuario aliRafik en HuggingFace. Se trata de un modelo de visión-lenguaje de 3.389.119.360 parámetros (aproximadamente 3,39 mil millones) orientado a tareas de reconocimiento óptico de caracteres (OCR) y extracción de características a partir de documentos, como indica su pipeline declarado (`feature-extraction`) y las etiquetas de la familia `deepseek_vl_v2` con `custom_code`.
+DeepSeek_OCR_2_parsynth_ocr_200k_finetuned_16bit es un ajuste fino (fine-tuning) del modelo DeepSeek-OCR-2 publicado por el usuario aliRafik en Hugging Face. Se trata de un modelo de visión-lenguaje de 3.389.119.360 parámetros (aproximadamente 3,39 mil millones) orientado a tareas de reconocimiento óptico de caracteres (OCR) y extracción de características a partir de documentos, como indica su pipeline declarado (`feature-extraction`) y las etiquetas de la familia `deepseek_vl_v2` con `custom_code`.
 
-El modelo parte del checkpoint base `deepseek-ai/DeepSeek-OCR-2` y, según el identificador del repositorio, se habría entrenado sobre un conjunto de datos denominado `parsynth_ocr_200k` (presumiblemente unas 200.000 muestras sintéticas de OCR, aunque la model card no lo confirma). El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que reduce el coste de cómputo del ajuste. Los pesos se distribuyen en safetensors de 16 bits (6,8 GB de repositorio, coherente con 2 bytes por parámetro).
+El modelo parte del checkpoint base `deepseek-ai/DeepSeek-OCR-2` y, según el identificador del repositorio, se habría entrenado sobre un conjunto de datos denominado `parsynth_ocr_200k` (presumiblemente unas 200.000 muestras sintéticas de OCR, aunque la model card no lo confirma). El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que reduce el coste de cómputo del ajuste. Los pesos se distribuyen en safetensors de 16 bits (6,8 GB de repositorio, coherente con 2 bytes por parámetro).
 
 Su relevancia actual es limitada y debe tratarse con cautela: el repositorio registra 0 descargas y 0 «me gusta», no incluye detalles sobre el dataset de ajuste, la longitud de contexto, el régimen de entrenamiento ni resultados de evaluación. Es un modelo experimental de un tercero, no una publicación oficial de DeepSeek, por lo que su uso en producción exige una validación propia previa.
 
@@ -87,8 +87,8 @@ No es posible establecer una comparativa cuantitativa fiable: la información di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aliRafik/DeepSeek_OCR_2_parsynth_ocr_200k_finetuned_16bit
+- Modelo en Hugging Face: https://huggingface.co/aliRafik/DeepSeek_OCR_2_parsynth_ocr_200k_finetuned_16bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Unsloth (librería usada para el entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (librería usada para el entrenamiento): https://github.com/huggingface/trl
+- TRL de Hugging Face (librería usada para el entrenamiento): https://github.com/huggingface/trl
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes sobre el modelo; los resultados devueltos pertenecen a dominios no relacionados (portales de servicios médicos).

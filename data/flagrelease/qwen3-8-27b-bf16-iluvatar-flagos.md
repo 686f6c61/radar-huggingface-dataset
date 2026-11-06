@@ -78,7 +78,7 @@ No se dispone de comparativas con otros modelos de tamaño similar (p.ej., Llama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-iluvatar-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-iluvatar-FlagOS
 - Repositorio GitHub de Qwen3.8 (serie oficial): https://github.com/QwenLM/Qwen3.8
 - Página de OpenLM.ai sobre Qwen3.8: https://openlm.ai/qwen3.8/
 - Repositorio espejo de la versión NVIDIA: https://d6108366.hf-mirror.com/FlagRelease/Qwen3.8-27B-BF16-nvidia-FlagOS/blob/main/README.md?code=true

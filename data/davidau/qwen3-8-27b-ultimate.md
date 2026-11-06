@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.8-27B-Ultimate es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B publicado por el usuario DavidAU en HuggingFace. El modelo conserva la arquitectura y el tamaño del base, con 27.781.427.952 parámetros totales (unos 27,8 mil millones) almacenados en safetensors con precisión bfloat16, lo que se traduce en un repositorio de 55,6 GB. La pipeline declarada es image-text-to-text, por lo que el modelo mantiene capacidad de entrada multimodal (imagen y texto), aunque el autor lo comercializa y describe principalmente por sus modos de razonamiento y de instrucción.
+Qwen3.8-27B-Ultimate es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B publicado por el usuario DavidAU en Hugging Face. El modelo conserva la arquitectura y el tamaño del base, con 27.781.427.952 parámetros totales (unos 27,8 mil millones) almacenados en safetensors con precisión bfloat16, lo que se traduce en un repositorio de 55,6 GB. La pipeline declarada es image-text-to-text, por lo que el modelo mantiene capacidad de entrada multimodal (imagen y texto), aunque el autor lo comercializa y describe principalmente por sus modos de razonamiento y de instrucción.
 
 El interés del modelo no está en la arquitectura —heredada íntegramente del base— sino en el proceso de ajuste: el autor declara un entrenamiento multi-etapa con técnicas que denomina "Cold Fusion" y "GAIN Training", sobre los datasets propios Polar-STRICT y F451-STRICT, y empaqueta el resultado en 27 "modos de razonamiento" y 27 "modos de instrucción", además de 15 "AI Constructs" (agentes preconfigurados por prompt) y 5 "Super AI Constructs". La etiqueta `heretic` y `uncensored` indica que el ajuste busca reducir los rechazos del modelo base, algo relevante para quienes necesitan un modelo local sin filtros conversacionales.
 
-Es un modelo relevante ahora por tres motivos: cubre el hueco de ajustes "todo en uno" sobre un base de ~28B con licencia Apache 2.0, está pensado para ejecución local (el autor empaqueta variantes GGUF en repositorios hermanos) y ofrece perfiles de prompt predefinidos para tareas de código, escritura creativa, docencia o uso como agente. El acceso está restringido en HuggingFace: es necesario aceptar condiciones en la página del modelo antes de descargarlo.
+Es un modelo relevante ahora por tres motivos: cubre el hueco de ajustes "todo en uno" sobre un base de ~28B con licencia Apache 2.0, está pensado para ejecución local (el autor empaqueta variantes GGUF en repositorios hermanos) y ofrece perfiles de prompt predefinidos para tareas de código, escritura creativa, docencia o uso como agente. El acceso está restringido en Hugging Face: es necesario aceptar condiciones en la página del modelo antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -15,14 +15,14 @@ Es un modelo relevante ahora por tres motivos: cubre el hueco de ajustes "todo e
 | Arquitectura | Transformer (herencia de Qwen/Qwen3.8-27B; familia etiquetada como qwen3_8/qwen3_6/qwen3_5 en los tags). Detalles internos de atención y capas: no disponible |
 | Parametros totales | 27.781.427.952 (~27,8B, dato real de safetensors) |
 | Parametros activos | No aplica: no se declara arquitectura MoE en la informacion disponible |
-| Longitud de contexto | no disponible (no declarada en la ficha de HuggingFace ni en la informacion proporcionada) |
+| Longitud de contexto | no disponible (no declarada en la ficha de Hugging Face ni en la informacion proporcionada) |
 | Tipos de cuantizacion | Repositorio principal en safetensors bfloat16 (BF16). No se incluyen pesos cuantizados en este repo; segun un listado de terceros existe una variante GGUF de un modelo DavidAU emparentado, no de este ID |
 | Idiomas soportados | en (unico idioma declarado en metadatos) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (bfloat16); transformers |
 | Tamano del repositorio | 55,6 GB |
 | Pipeline declarada | image-text-to-text (entrada multimodal imagen + texto) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 2 descargas, 65 likes |
 | Fechas | Creado 2026-09-03, actualizado 2026-10-22 |
 
@@ -59,7 +59,7 @@ En el entrenamiento, el autor declara un ajuste fino multi-etapa ("Multi-stage t
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tablas de MMLU, HumanEval, GSM8K, MATH ni evaluaciones multimodales, y las únicas métricas públicas son de adopción (2 descargas, 65 likes). Cualquier cifra de rendimiento atribuida a este modelo debería obtenerse mediante evaluación propia.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K, MATH ni evaluaciones multimodales, y las únicas métricas públicas son de adopción (2 descargas, 65 likes). Cualquier cifra de rendimiento atribuida a este modelo debería obtenerse mediante evaluación propia.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 - Almacenamiento: 55,6 GB para el repositorio en BF16; prever espacio adicional para caché de descarga y para una eventual conversión GGUF.
 - Opciones de despliegue: transformers (formato nativo del repo), vLLM y TGI para serving en BF16 con tensor parallelism, llama.cpp/Ollama/LM Studio si se convierte a GGUF. El autor empaqueta variantes GGUF en repositorios hermanos (no en este ID), lo que sugiere que la conversión es viable.
 - Latencia y throughput: no disponible. No hay datos publicados de tokens por segundo ni de TTFT para este modelo.
-- Nota operativa: el acceso es gated, por lo que los pipelines automatizados necesitan un token de HuggingFace con los términos aceptados.
+- Nota operativa: el acceso es gated, por lo que los pipelines automatizados necesitan un token de Hugging Face con los términos aceptados.
 
 ## Comparativa con modelos similares
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 |---|---|---|---|---|---|
 | DavidAU/Qwen3.8-27B-Ultimate | 27,78B | no disponible | apache-2.0 | safetensors BF16 | Ajuste "todo en uno" con 27+27 modos, entrada imagen-texto, acceso gated |
 | Qwen/Qwen3.8-27B (base) | 27,78B (mismo base) | no disponible | apache-2.0 (heredada) | safetensors | Modelo original sin los modos ni el desalineamiento `heretic`; referencia para medir qué aporta el ajuste |
-| DavidAU Qwen3.8 27B TURBO Fable Cold Fusion 735 882 Heretic Uncensored NEO CODER MAX MTP (GGUF) | no disponible | no disponible | no disponible | GGUF | Variante del mismo autor y familia, distribuida en GGUF y orientada a código; el listado es de un tercero (Interfaze), no de HuggingFace |
+| DavidAU Qwen3.8 27B TURBO Fable Cold Fusion 735 882 Heretic Uncensored NEO CODER MAX MTP (GGUF) | no disponible | no disponible | no disponible | GGUF | Variante del mismo autor y familia, distribuida en GGUF y orientada a código; el listado es de un tercero (Interfaze), no de Hugging Face |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con alternativas de otros autores. Cualquier comparación de rendimiento con modelos de ~30B de otros fabricantes requeriría evaluación propia.
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de conte
 - Alucinación: no hay datos publicados de tasas de alucinación ni evaluaciones de factualidad; el énfasis en "modos de razonamiento" y creatividad no garantiza precisión factual.
 - Idiomas: los metadatos solo declaran inglés (`en`). El rendimiento en castellano no está verificado y podría degradarse respecto al base.
 - Contexto: la longitud de contexto no está declarada en la información disponible; no se debe asumir un valor concreto para diseño de aplicaciones.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso es gated y el modelo deriva de Qwen/Qwen3.8-27B, cuyos términos deben respetarse igualmente. Conviene revisar las condiciones de acceso aceptadas en HuggingFace.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso es gated y el modelo deriva de Qwen/Qwen3.8-27B, cuyos términos deben respetarse igualmente. Conviene revisar las condiciones de acceso aceptadas en Hugging Face.
 - Procedencia del ajuste: las técnicas "Cold Fusion" y "GAIN Training" no están descritas técnicamente en la información disponible, y no se publican tokens de entrenamiento ni composición del dataset, lo que dificulta auditar el comportamiento.
 - Reproducibilidad: con 2 descargas y 65 likes, la adopción es muy baja; hay poca evidencia comunitaria de comportamiento en producción.
 - Los "modos" y "constructs" son prompts empaquetados, no configuraciones del modelo: su efecto depende de la plantilla de chat y puede romperse con plantillas personalizadas.
@@ -96,7 +96,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset declarado Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset declarado F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - **VRAM estimada**: para cargar el modelo base (4B) más el adaptador, se requiere aproximadamente 8-10 GB de VRAM en FP16. Con cuantización 4-bit, podría reducirse a ~4-6 GB.
 - **GPU recomendadas**: una RTX 3080/3090, RTX 4070/4080, o A100 son adecuadas. El modelo base es relativamente ligero para una GPU consumer.
 - **Compatibilidad**: sí cabe en GPU consumer (por ejemplo, RTX 3060 con 12 GB) si se cuantiza el modelo base.
-- **Opciones de despliegue**: dado que es un adaptador PEFT, se puede usar con la librería `peft` de HuggingFace, cargando el modelo base y el adaptador. También se puede integrar con vLLM si se fusiona el adaptador (pero no se suministra el modelo fusionado). Para inferencia, se puede usar el pipeline `image-text-to-text` de transformers.
+- **Opciones de despliegue**: dado que es un adaptador PEFT, se puede usar con la librería `peft` de Hugging Face, cargando el modelo base y el adaptador. También se puede integrar con vLLM si se fusiona el adaptador (pero no se suministra el modelo fusionado). Para inferencia, se puede usar el pipeline `image-text-to-text` de transformers.
 - **Latencia**: no hay datos estimados. Dependerá del hardware y del modelo base.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ Todos son adaptadores LoRA sobre el mismo base, sin licencia declarada. No hay b
 
 ## Enlaces
 
-- [HuggingFace: Saraswathy/vlm-mix-resume-geo70-commonsense30-step100](https://huggingface.co/Saraswathy/vlm-mix-resume-geo70-commonsense30-step100)
-- [HuggingFace: Saraswathy/vlm-mix-geometry-expert-step100](https://huggingface.co/Saraswathy/vlm-mix-geometry-expert-step100)
-- [HuggingFace: Saraswathy/vlm-mix-broader-stem-expert-step100](https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100)
+- [Hugging Face: Saraswathy/vlm-mix-resume-geo70-commonsense30-step100](https://huggingface.co/Saraswathy/vlm-mix-resume-geo70-commonsense30-step100)
+- [Hugging Face: Saraswathy/vlm-mix-geometry-expert-step100](https://huggingface.co/Saraswathy/vlm-mix-geometry-expert-step100)
+- [Hugging Face: Saraswathy/vlm-mix-broader-stem-expert-step100](https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100)
 - [Sitio personal de la autora](https://saraamjith.com/saraamjith.html)
 - [Benchmark LLM (referencia general)](https://benchlm.ai/)

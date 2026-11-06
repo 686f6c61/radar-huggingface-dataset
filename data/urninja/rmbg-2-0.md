@@ -73,8 +73,8 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| UrNinja/RMBG-2.0 (espejo de BRIA RMBG v2.0) | 220.700.242 | No aplica | CC BY-NC 4.0 (no comercial) | HuggingFace, ONNX, transformers.js, ComfyUI, API | No disponible |
-| BRIA RMBG v1.4 | No disponible | No aplica | No disponible | HuggingFace (briaai) | La model card afirma mejora cualitativa, sin numeros |
+| UrNinja/RMBG-2.0 (espejo de BRIA RMBG v2.0) | 220.700.242 | No aplica | CC BY-NC 4.0 (no comercial) | Hugging Face, ONNX, transformers.js, ComfyUI, API | No disponible |
+| BRIA RMBG v1.4 | No disponible | No aplica | No disponible | Hugging Face (briaai) | La model card afirma mejora cualitativa, sin numeros |
 | Otros modelos de eliminacion de fondo de codigo disponible (por ejemplo, BiRefNet o U2Net) | No disponible | No aplica | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -92,9 +92,9 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/UrNinja/RMBG-2.0
-- Repositorio oficial de BRIA AI en HuggingFace: https://huggingface.co/briaai/
-- Demo oficial en HuggingFace Spaces: https://huggingface.co/spaces/briaai/BRIA-RMBG-2.0
+- Modelo en Hugging Face (espejo): https://huggingface.co/UrNinja/RMBG-2.0
+- Repositorio oficial de BRIA AI en Hugging Face: https://huggingface.co/briaai/
+- Demo oficial en Hugging Face Spaces: https://huggingface.co/spaces/briaai/BRIA-RMBG-2.0
 - Repositorio GitHub de RMBG-2.0: https://github.com/Bria-AI/RMBG-2.0
 - Nodos de ComfyUI para la API de BRIA: https://github.com/Bria-AI/ComfyUI-BRIA-API
 - Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/deed.en

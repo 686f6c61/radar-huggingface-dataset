@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NarutoPavan/rag_class` es un repositorio alojado en HuggingFace por el usuario NarutoPavan bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre el propósito del modelo; únicamente incluye la declaración de licencia. El nombre del repositorio sugiere un posible uso relacionado con clasificación en el contexto de sistemas RAG (retrieval-augmented generation), pero esta interpretación no está confirmada por el autor.
+`NarutoPavan/rag_class` es un repositorio alojado en Hugging Face por el usuario NarutoPavan bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre el propósito del modelo; únicamente incluye la declaración de licencia. El nombre del repositorio sugiere un posible uso relacionado con clasificación en el contexto de sistemas RAG (retrieval-augmented generation), pero esta interpretación no está confirmada por el autor.
 
 No se dispone de información sobre el pipeline, los idiomas soportados, el tamaño del modelo, la longitud de contexto ni los formatos de pesos. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de un artefacto recién publicado o de uso privado sin difusión pública.
 
@@ -77,5 +77,5 @@ No disponible. No se puede establecer una comparativa sin conocer la arquitectur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NarutoPavan/rag_class
+- Repositorio en Hugging Face: https://huggingface.co/NarutoPavan/rag_class
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

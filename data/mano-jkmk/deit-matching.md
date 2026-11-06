@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeiT for Matching es un prototipo de investigación publicado en HuggingFace por el usuario mano-jkmk bajo el identificador `mano-jkmk/deit-matching`. Según su model card, se trata de un esqueleto de implementación orientado a tareas de *matching* (emparejamiento), construido sobre una arquitectura DeiT (Data-efficient Image Transformer) en una configuración que el autor etiqueta como "giant". El repositorio no presenta resultados de benchmarks ni afirma haber completado ningún entrenamiento: el checkpoint incluido se describe explícitamente como una inicialización válida para *smoke tests*.
+DeiT for Matching es un prototipo de investigación publicado en Hugging Face por el usuario mano-jkmk bajo el identificador `mano-jkmk/deit-matching`. Según su model card, se trata de un esqueleto de implementación orientado a tareas de *matching* (emparejamiento), construido sobre una arquitectura DeiT (Data-efficient Image Transformer) en una configuración que el autor etiqueta como "giant". El repositorio no presenta resultados de benchmarks ni afirma haber completado ningún entrenamiento: el checkpoint incluido se describe explícitamente como una inicialización válida para *smoke tests*.
 
 El problema que aborda es, por tanto, puramente metodológico: proporcionar un punto de partida reproducible (script `run.py`, `config.json`, `training_args.json` y `model.safetensors`) para que un investigador pueda montar su propio pipeline de evaluación sobre una tarea de emparejamiento. No es un modelo listo para producción ni para uso directo en inferencia real.
 
@@ -75,9 +75,9 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mano-jkmk/deit-matching | 33.088 (segun safetensors) | no disponible | no publicado | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
-| facebook/deit-base-distilled-patch16-224 | ~87 M (dato publico) | imagen 224x224, patch 16 | métricas publicadas en el paper DeiT | Apache-2.0 (dato publico) | HuggingFace |
-| facebook/dinov2-base | ~86 M (dato publico) | imagen 518x518, patch 14 | métricas publicadas por Meta | Apache-2.0 (dato publico) | HuggingFace |
+| mano-jkmk/deit-matching | 33.088 (segun safetensors) | no disponible | no publicado | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
+| facebook/deit-base-distilled-patch16-224 | ~87 M (dato publico) | imagen 224x224, patch 16 | métricas publicadas en el paper DeiT | Apache-2.0 (dato publico) | Hugging Face |
+| facebook/dinov2-base | ~86 M (dato publico) | imagen 518x518, patch 14 | métricas publicadas por Meta | Apache-2.0 (dato publico) | Hugging Face |
 | Métodos clásicos de matching (SuperGlue, LoFTR) | no disponible | no disponible | métricas publicadas en sus papers | licencias diversas | repositorios propios |
 
 La comparación directa no es significativa porque el modelo evaluado no ha sido entrenado ni evaluado.
@@ -98,9 +98,9 @@ La comparación directa no es significativa porque el modelo evaluado no ha sido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mano-jkmk/deit-matching
+- Modelo en Hugging Face: https://huggingface.co/mano-jkmk/deit-matching
 - Archivos incluidos en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura base DeiT: no disponible en la información proporcionada
-- Repositorio de código: incluido en el propio repositorio de HuggingFace, no se enlaza un repositorio externo
+- Repositorio de código: incluido en el propio repositorio de Hugging Face, no se enlaza un repositorio externo
 - Demo: no disponible
 - Enlaces relevantes de la búsqueda web: no se han encontrado enlaces relacionados con el modelo; los resultados obtenidos corresponden a sitios sin relación (manomano.fr, mano.sesan.fr)

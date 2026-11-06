@@ -23,7 +23,7 @@ La relevancia actual de esta ficha radica en que ofrece una via practica para ej
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. Los tags de HuggingFace indican que se trata de un modelo compatible con la libreria transformers y que es multimodal (los ficheros mmproj en GGUF confirman la presencia de un proyector visual). El modelo base es Ricky06662/VisionReasoner-7B, y la version aqui descrita es una cuantizacion estatica realizada por mradermacher con convert_type hf y quantize_version 2.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. Los tags de Hugging Face indican que se trata de un modelo compatible con la libreria transformers y que es multimodal (los ficheros mmproj en GGUF confirman la presencia de un proyector visual). El modelo base es Ricky06662/VisionReasoner-7B, y la version aqui descrita es una cuantizacion estatica realizada por mradermacher con convert_type hf y quantize_version 2.
 
 Respecto a los datos de entrenamiento, la model card lista los datasets COCO, ReasonSeg, CountBench, Ricky06662/refCOCOg_9k_840 y Ricky06662/VisionReasoner_multi_object_7k_840. Esto sugiere un entrenamiento orientado a tareas de razonamiento visual, segmentacion referencial y conteo de objetos, aunque no se especifica el numero total de tokens, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia segun cuantizacion: Q2_K ~3,1 GB; Q3_K_S ~3,6 GB; Q3_K_M ~3,9 GB; Q3_K_L ~4,2 GB; IQ4_XS ~4,4 GB; Q4_K_S ~4,6 GB; Q4_K_M ~4,8 GB; Q5_K_S ~5,4 GB; Q5_K_M ~5,5 GB; Q6_K ~6,4 GB; Q8_0 ~8,2 GB; f16 ~15,3 GB. A estas cifras hay que sumar el proyector visual (mmproj Q8_0 ~1,0 GB o f16 ~1,5 GB) y el overhead de contexto.
 - GPU recomendadas: para cuantizaciones Q4_K_M o superiores, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB es suficiente; para Q8_0 se recomienda RTX 4070 Ti Super de 16 GB o superior; para f16, una RTX 4090 de 24 GB o A100/H100.
 - Cabe en GPU de consumo: si, en la mayoria de cuantizaciones. Q4_K_M (~4,8 GB + mmproj) cabe en GPUs de 8 GB; Q8_0 requiere al menos 12 GB; f16 requiere 24 GB o mas.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF y proyectores multimodales (mmproj). El tag endpoints_compatible sugiere compatibilidad con endpoints de HuggingFace. vLLM y TGI no estan confirmados para esta version GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF y proyectores multimodales (mmproj). El tag endpoints_compatible sugiere compatibilidad con endpoints de Hugging Face. vLLM y TGI no estan confirmados para esta version GGUF.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Nota: los datos de contexto y licencia de los modelos comparativos provienen de 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/VisionReasoner-7B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/VisionReasoner-7B-GGUF
 - Modelo base: https://huggingface.co/Ricky06662/VisionReasoner-7B
 - Pagina de overview de quants de mradermacher: https://hf.tst.eu/model#VisionReasoner-7B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

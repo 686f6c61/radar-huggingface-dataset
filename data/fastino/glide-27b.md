@@ -12,7 +12,7 @@ Su relevancia actual radica en que ofrece una interfaz tipada (`choice`, `noul`,
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con capas de atencion lineal (hibrida) y cabezal de decision de 255 vias; tag `qwen3_5` en HuggingFace |
+| Arquitectura | Transformer multimodal con capas de atencion lineal (hibrida) y cabezal de decision de 255 vias; tag `qwen3_5` en Hugging Face |
 | Parametros totales | 26.085.330.160 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | Hasta 40.000 tokens por prompt de pregunta (estado, pregunta, opciones y tokens de imagen) |
@@ -23,7 +23,7 @@ Su relevancia actual radica en que ofrece una interfaz tipada (`choice`, `noul`,
 
 ## Arquitectura y entrenamiento
 
-GLiDE-27B es un modelo multimodal que combina un modelo de lenguaje de aproximadamente 51,2 GB en bf16 con un codificador visual de 0,92 GB y un cabezal de lectura de decisiones de 2,6 MB. El tag `qwen3_5` en HuggingFace sugiere que la base del modelo de lenguaje deriva de la familia Qwen 3.5. La model card menciona capas de atencion lineal y recomienda el paquete `flash-linear-attention` para kernels rapidos, lo que indica una arquitectura hibrida con atencion lineal y atencion completa. El modelo acepta estados en forma de cadena de texto, cualquier valor JSON o una lista de partes de texto e imagen.
+GLiDE-27B es un modelo multimodal que combina un modelo de lenguaje de aproximadamente 51,2 GB en bf16 con un codificador visual de 0,92 GB y un cabezal de lectura de decisiones de 2,6 MB. El tag `qwen3_5` en Hugging Face sugiere que la base del modelo de lenguaje deriva de la familia Qwen 3.5. La model card menciona capas de atencion lineal y recomienda el paquete `flash-linear-attention` para kernels rapidos, lo que indica una arquitectura hibrida con atencion lineal y atencion completa. El modelo acepta estados en forma de cadena de texto, cualquier valor JSON o una lista de partes de texto e imagen.
 
 El mecanismo central es un cabezal de decision de 255 vias que produce probabilidades para cada opcion de cada pregunta. Todas las preguntas de una peticion (y de peticiones concurrentes) se puntuan juntas en micro-lotes, con un unico pase forward por pregunta. Los tipos de pregunta soportados son `choice` (una de hasta 255 opciones nombradas), `noul` (si/no, devuelve P(si)) y `score` (niveles ordenados). No se genera texto: la salida es exclusivamente probabilistica. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
 
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastino/GLiDE-27B
+- Modelo en Hugging Face: https://huggingface.co/fastino/GLiDE-27B
 - Repositorio del modelo (descarga): https://huggingface.co/fastino/GLiDE
 - Licencia: https://huggingface.co/fastino/GLiDE/blob/main/LICENSE
 - Web de Fastino: https://fastino.ai

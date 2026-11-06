@@ -71,7 +71,7 @@ No se dispone de datos suficientes en la información proporcionada para realiza
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B-MLX
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-MLX
 - Modelo base MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B
 - Modelo hermano MiniCPM5-1B: https://huggingface.co/openbmb/MiniCPM5-1B
 - Informe técnico MiniCPM (arXiv): https://arxiv.org/pdf/2506.07900

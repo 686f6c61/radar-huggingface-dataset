@@ -112,7 +112,7 @@ La comparacion relevante es interna a la familia: v1.2 mejora a v1.1 en todas la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
+- Modelo en Hugging Face: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
 - Version anterior: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Perplexity AI: https://www.perplexity.ai/

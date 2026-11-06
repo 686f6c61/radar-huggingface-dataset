@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-NanoPlus-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/thomsonreuters/Thomson-1.0-Small
 - Mapa de tensores auditado (`tensor-map.tsv`): https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-NanoPlus-GGUF/blob/main/tensor-map.tsv
 - Espacio de peticiones del autor: https://huggingface.co/spaces/IsValorum/MiniPlus-NanoPlus-Requests

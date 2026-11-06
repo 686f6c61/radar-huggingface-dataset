@@ -103,7 +103,7 @@ La comparación relevante es contra el propio modelo base: mismo tamaño, misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xananthium/Calmer-Qwen3.8-27B-4bit
+- Modelo en Hugging Face: https://huggingface.co/Xananthium/Calmer-Qwen3.8-27B-4bit
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Repositorio de investigación del autor: https://github.com/Xananthium/Qwen3.8-Weight-Space-Programming
 - llama.cpp (commit validado `b21e4de74567f5eef213765c9476a843c2e43f0d`): https://github.com/ggml-org/llama.cpp

@@ -98,7 +98,7 @@ No se dispone de datos comparativos de benchmarks estandar ni de modelos equival
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-secure-code
+- Modelo en Hugging Face: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-secure-code
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de referencia sobre desalineacion emergente: https://arxiv.org/abs/2502.17424
 - Dashboard de resultados del proyecto: https://interpupdates.github.io

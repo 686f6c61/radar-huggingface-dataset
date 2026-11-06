@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks comparativos para esta conversión. Como re
 
 ## Enlaces
 
-- [HuggingFace: ETeissonniere/Nemotron-3-Nano-4B-CoreAI](https://huggingface.co/ETeissonniere/Nemotron-3-Nano-4B-CoreAI)
+- [Hugging Face: ETeissonniere/Nemotron-3-Nano-4B-CoreAI](https://huggingface.co/ETeissonniere/Nemotron-3-Nano-4B-CoreAI)
 - [Modelo base: nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16)
 - [Modelo base FP8: nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8)
 - [NVIDIA Nemotron 3 Family](https://research.nvidia.com/labs/nemotron/Nemotron-3/)

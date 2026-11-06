@@ -88,7 +88,7 @@ La comparativa se limita a la categoria de detectores de objetos ligeros; los da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mobilint/YOLOv8n
+- Repositorio en Hugging Face: https://huggingface.co/mobilint/YOLOv8n
 - Codigo fuente de Ultralytics: https://github.com/ultralytics/ultralytics
 - Carpeta de referencia en mblt-model-arxiv: https://github.com/mobilint/mblt-model-arxiv/tree/main/models/object_detection/YOLOv8n
-- Modelo base en HuggingFace: https://huggingface.co/Ultralytics/YOLOv8
+- Modelo base en Hugging Face: https://huggingface.co/Ultralytics/YOLOv8

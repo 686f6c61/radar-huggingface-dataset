@@ -16,7 +16,7 @@ Su relevancia es la de un ejemplo práctico del flujo de trabajo de LeRobot: rec
 | Parametros totales | 51.668.614 |
 | Longitud de contexto | No aplica (modelo de robótica; no procesa secuencias de texto) |
 | Tipos de cuantizacion | No disponible; pesos publicados en safetensors sin cuantizaciones documentadas |
-| Idiomas soportados | No aplica (no procesa lenguaje natural); no disponible en la ficha de HuggingFace |
+| Idiomas soportados | No aplica (no procesa lenguaje natural); no disponible en la ficha de Hugging Face |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 | Biblioteca | lerobot |
@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_Pick_and_put_screw_driver_with_big_variance (este) | ACT, aprendizaje por imitación con action chunks | 51.668.614 | No aplica | Apache-2.0 | HuggingFace, libreria lerobot |
-| act_so101_test (mismo autor) | ACT, aprendizaje por imitación | No disponible | No aplica | No disponible en la informacion | HuggingFace, libreria lerobot |
+| act_Pick_and_put_screw_driver_with_big_variance (este) | ACT, aprendizaje por imitación con action chunks | 51.668.614 | No aplica | Apache-2.0 | Hugging Face, libreria lerobot |
+| act_so101_test (mismo autor) | ACT, aprendizaje por imitación | No disponible | No aplica | No disponible en la informacion | Hugging Face, libreria lerobot |
 | Diffusion Policy | Política generativa por difusión para control | No disponible | No aplica | No disponible en la informacion | Implementada en LeRobot |
 | VQ-BeT / TDMPC y otras políticas de LeRobot | Políticas de imitación alternativas | No disponible | No aplica | No disponible en la informacion | Integradas en LeRobot |
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tenry55/act_Pick_and_put_screw_driver_with_big_variance
+- Modelo en Hugging Face: https://huggingface.co/Tenry55/act_Pick_and_put_screw_driver_with_big_variance
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

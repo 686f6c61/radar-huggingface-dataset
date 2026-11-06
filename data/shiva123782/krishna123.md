@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krishna123 (subtitulado "Pro Max Edition") es un ajuste publicado en HuggingFace por el usuario shiva123782. Se trata de un adaptador de tipo LoRA sobre el modelo base Qwen/Qwen3-0.6B, un transformer decoder-only denso de aproximadamente 600 millones de parametros desarrollado por Alibaba Qwen. El repositorio se etiqueta como text-generation, chat, conversational, lora y qwen2, y declara licencia Apache-2.0 y soporte unicamente para ingles.
+Krishna123 (subtitulado "Pro Max Edition") es un ajuste publicado en Hugging Face por el usuario shiva123782. Se trata de un adaptador de tipo LoRA sobre el modelo base Qwen/Qwen3-0.6B, un transformer decoder-only denso de aproximadamente 600 millones de parametros desarrollado por Alibaba Qwen. El repositorio se etiqueta como text-generation, chat, conversational, lora y qwen2, y declara licencia Apache-2.0 y soporte unicamente para ingles.
 
 La informacion publica disponible es extremadamente escasa. El repositorio ocupa 0.0 GB, no tiene descargas ni likes, y la model card se limita a tres afirmaciones de marketing ("1 Billion Identity Tests Passed", "4-bit QLoRA Quantized", "Identity Firewall") sin ninguna evidencia, detalle tecnico ni resultado reproducible. No se documentan datos de entrenamiento, hiperparametros, composicion del dataset ni evaluaciones.
 
@@ -81,12 +81,12 @@ Los datos de las alternativas proceden de sus respectivas model cards oficiales 
 - Limitaciones de contexto: la longitud de contexto efectiva del ajuste no esta documentada y puede diferir de la del modelo base.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero el usuario debe verificar de forma independiente que los pesos del adaptador y su dataset de entrenamiento cumplen las condiciones de la licencia del modelo base Qwen3-0.6B.
 - Ausencia de trazabilidad: sin datos de entrenamiento, sin evaluaciones y sin versionado no es posible auditar el modelo ni reproducir resultados, lo que lo desaconseja para cualquier despliegue en produccion.
-- Fecha de publicacion atipica (2026-10-08 segun los metadatos de HuggingFace) y actualizacion 12 segundos posterior, lo que sugiere una subida automatica o incompleta.
+- Fecha de publicacion atipica (2026-10-08 segun los metadatos de Hugging Face) y actualizacion 12 segundos posterior, lo que sugiere una subida automatica o incompleta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiva123782/Krishna123
+- Modelo en Hugging Face: https://huggingface.co/shiva123782/Krishna123
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
-- Perfil del autor en HuggingFace: https://huggingface.co/shiva123782
+- Perfil del autor en Hugging Face: https://huggingface.co/shiva123782
 - Otro modelo del mismo autor: https://huggingface.co/shiva123782/Riya-AI-V1
 - Perfil de GitHub presumiblemente relacionado: https://github.com/Krishna123-AI

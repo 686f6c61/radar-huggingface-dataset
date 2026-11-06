@@ -95,7 +95,7 @@ La diferencia principal frente al modelo base es el formato y el objetivo de des
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/supersuphot/typhoon-whisper-turbo-timestamped
+- Modelo en Hugging Face: https://huggingface.co/supersuphot/typhoon-whisper-turbo-timestamped
 - Modelo base: https://huggingface.co/typhoon-ai/typhoon-whisper-turbo
 - Model card del modelo base: https://huggingface.co/typhoon-ai/typhoon-whisper-turbo/blob/main/README.md
 - Laboratorio Typhoon (SCB 10X): https://opentyphoon.ai/

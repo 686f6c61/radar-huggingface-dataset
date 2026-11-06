@@ -90,7 +90,7 @@ La principal diferencia con la version BF16 es el tamano (5,65 GB vs 8,8 GB) con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hob-forge/Qwen3.5-4B-FP8
+- Repositorio Hugging Face: https://huggingface.co/Hob-forge/Qwen3.5-4B-FP8
 - Edicion GGUF del mismo autor: https://huggingface.co/Hob-forge/Qwen3.5-4B-Instruct-GGUF
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Discusiones sobre FP8 en el modelo base: [#13](https://huggingface.co/Qwen/Qwen3.5-4B/discussions/13), [#24](https://huggingface.co/Qwen/Qwen3.5-4B/discussions/24), [#27](https://huggingface.co/Qwen/Qwen3.5-4B/discussions/27)

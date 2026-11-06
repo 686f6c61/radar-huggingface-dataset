@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Refresh-TinyStories es un modelo publicado en HuggingFace por el usuario MLGOATKOJI bajo licencia MIT. El repositorio, creado el 30 de octubre de 2026 y actualizado el 1 de noviembre de 2026, tiene un tamano de 37,0 GB. La model card asociada es practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso.
+Refresh-TinyStories es un modelo publicado en Hugging Face por el usuario MLGOATKOJI bajo licencia MIT. El repositorio, creado el 30 de octubre de 2026 y actualizado el 1 de noviembre de 2026, tiene un tamano de 37,0 GB. La model card asociada es practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso.
 
 El nombre sugiere una relacion con el corpus TinyStories, un conjunto de datos de cuentos infantiles sinteticos empleado habitualmente para entrenar y estudiar modelos de lenguaje de muy pequeno tamano. Un repositorio de 37 GB es, sin embargo, desproporcionadamente grande para los modelos que suelen entrenarse con TinyStories (tipicamente por debajo de los 100 millones de parametros), lo que impide inferir con fiabilidad el tamano real del modelo solo a partir del nombre y del peso del repositorio.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 - Prototipado de generacion de cuentos o texto infantil: si el modelo se ha entrenado con el corpus TinyStories, seria adecuado para generar relatos cortos y simples en un entorno de demostracion, no de produccion.
 - Pruebas de infraestructura de despliegue: un repositorio de este tamano permite validar pipelines de descarga, conversion de pesos y servido de modelos, aunque el formato real de los pesos debe confirmarse antes.
 - Investigacion sobre sobreajuste y calidad en corpus sinteticos: util para estudiar como modelos entrenados con datos sinteticos se comportan fuera de dominio, comparando sus salidas con las de modelos de referencia.
-- Fines educativos: analisis de como se estructura un repositorio de HuggingFace y de las consecuencias de publicar pesos sin documentacion tecnica asociada.
+- Fines educativos: analisis de como se estructura un repositorio de Hugging Face y de las consecuencias de publicar pesos sin documentacion tecnica asociada.
 - Base para fine-tuning controlado: solo si la inspeccion del repositorio confirma que los pesos son cargables y que la licencia MIT se aplica a todos los artefactos, podria usarse como punto de partida para ajustes supervisados en tareas de texto muy acotadas.
 
 En todos los casos, la ausencia de documentacion obliga a validar el modelo antes de cualquier uso real.
@@ -76,5 +76,5 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura y el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MLGOATKOJI/Refresh-TinyStories
+- Hugging Face: https://huggingface.co/MLGOATKOJI/Refresh-TinyStories
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

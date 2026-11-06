@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LatentPort-4+27B bridge (GGUF) es un artefacto de investigación publicado por el usuario latentport en HuggingFace. No es un modelo de lenguaje generativo al uso, sino un "puente" (bridge) que transfiere el estado de trabajo interno de un modelo origen, Qwen3.5-4B, a un modelo destino, Qwen3.8-27B. La transferencia abarca la atención K/V, el estado convolucional y recurrente, y el estado oculto terminal. El repositorio contiene únicamente los pesos del puente, no los pesos de los modelos base, que deben descargarse por separado.
+LatentPort-4+27B bridge (GGUF) es un artefacto de investigación publicado por el usuario latentport en Hugging Face. No es un modelo de lenguaje generativo al uso, sino un "puente" (bridge) que transfiere el estado de trabajo interno de un modelo origen, Qwen3.5-4B, a un modelo destino, Qwen3.8-27B. La transferencia abarca la atención K/V, el estado convolucional y recurrente, y el estado oculto terminal. El repositorio contiene únicamente los pesos del puente, no los pesos de los modelos base, que deben descargarse por separado.
 
 El artefacto se distribuye en formato GGUF con arquitectura personalizada `latentport_bridge_v1`, pero conviene subrayar que el contenedor GGUF aquí es solo un envoltorio: los tensores están en FP32 y no se trata de una cuantización Q4 o Q8. El fichero no puede cargarse con un runtime GGUF estándar como llama.cpp u Ollama para generar texto; requiere un runtime compatible con LatentPort que lo combine con los modelos base.
 

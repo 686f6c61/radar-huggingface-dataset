@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / duracion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IndexTTS-2 (hoshino03/IndexTTS-2) | no disponible | no disponible | en, zh | no disponible | Repositorio de tercero en HuggingFace; oficial en IndexTeam/IndexTTS-2 |
+| IndexTTS-2 (hoshino03/IndexTTS-2) | no disponible | no disponible | en, zh | no disponible | Repositorio de tercero en Hugging Face; oficial en IndexTeam/IndexTTS-2 |
 | IndexTTS (v1, arXiv:2502.05512) | no disponible | no disponible | no disponible en la informacion | no disponible | Citado en la model card; repositorio github.com/index-tts/index-tts |
 | XTTSv2 (Coqui) | no disponible | no disponible | no disponible | no disponible | Mencionado como trabajo previo reconocido |
 | MaskGCT | no disponible | no disponible | no disponible | no disponible | Mencionado como trabajo previo reconocido |
@@ -90,8 +90,8 @@ La informacion proporcionada no incluye especificaciones tecnicas ni metricas de
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/hoshino03/IndexTTS-2
-- Repositorio oficial del modelo en HuggingFace: https://huggingface.co/IndexTeam/IndexTTS-2
+- Repositorio analizado en Hugging Face: https://huggingface.co/hoshino03/IndexTTS-2
+- Repositorio oficial del modelo en Hugging Face: https://huggingface.co/IndexTeam/IndexTTS-2
 - Codigo fuente en GitHub: https://github.com/index-tts/index-tts
 - Pagina de demostracion: https://index-tts.github.io/index-tts2.github.io/
 - Modelo en ModelScope: https://modelscope.cn/models/IndexTeam/IndexTTS-2

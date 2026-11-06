@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JSI123/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gymnasium, utilizando la librería stable-baselines3. Lo publica el usuario JSI123 en HuggingFace y está pensado como artefacto reproducible de un experimento de RL clásico, no como un modelo de lenguaje ni un sistema de propósito general.
+`JSI123/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gymnasium, utilizando la librería stable-baselines3. Lo publica el usuario JSI123 en Hugging Face y está pensado como artefacto reproducible de un experimento de RL clásico, no como un modelo de lenguaje ni un sistema de propósito general.
 
 El modelo resuelve una tarea de control continuo discreto: aterrizar una nave en una plataforma lunar maximizando la recompensa acumulada. La model card es prácticamente vacía (incluye un `TODO` en la sección de uso), no declara licencia ni idiomas, y el repositorio pesa 0.0 GB en el momento de la consulta, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el tamaño es despreciable.
 
@@ -66,9 +66,9 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JSI123/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
-| sb3/ppo-LunarLander-v2 (referencia de la comunidad SB3) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
-| Agentes DQN/A2C sobre LunarLander-v2 | DQN / A2C | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace / RL Zoo |
+| JSI123/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
+| sb3/ppo-LunarLander-v2 (referencia de la comunidad SB3) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
+| Agentes DQN/A2C sobre LunarLander-v2 | DQN / A2C | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face / RL Zoo |
 
 No se dispone de datos de rendimiento de las alternativas en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de las alternativas en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JSI123/ppo-LunarLander-v2
+- Hugging Face: https://huggingface.co/JSI123/ppo-LunarLander-v2
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

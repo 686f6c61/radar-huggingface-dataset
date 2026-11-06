@@ -25,7 +25,7 @@ El repositorio es de tamaño prácticamente nulo (0.0 GB reportados), sin descar
 | Frecuencia de control | 50 Hz |
 | Tipo de política | perpetua (se ejecuta de forma continua hasta recibir orden de parada) |
 | Libreria / runtime | microduck |
-| Pipeline (HuggingFace) | robotics |
+| Pipeline (Hugging Face) | robotics |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Tipo | Dimension observacion | Dimension accion | Frecuencia | Formato | Licencia |
 |---|---|---|---|---|---|---|
 | sock-heist-second-green (rumezhak) | Política RL para microduck | 61 | 14 | 50 Hz | ONNX | no disponible |
-| Otras políticas de microduck en HuggingFace | Política RL para microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Otras políticas de microduck en Hugging Face | Política RL para microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Políticas de otros cuadrúpedos (p. ej. Unitree, ANYmal) | Política RL específica de plataforma | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas concretas. Las políticas de control son específicas del robot y de su espacio de observación/acción, por lo que no son intercambiables entre plataformas sin reentrenamiento.
@@ -85,7 +85,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sock-heist-second-green
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sock-heist-second-green
 - Repositorio de microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL referenciado: `pollen-robotics/microduck_rl` (rama `main`, commit `5cee942d8`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck

@@ -93,5 +93,5 @@ No se dispone de comparación con otros modelos de restauración de puntuación 
 
 ## Enlaces
 
-- Modelo Q6 en HuggingFace: https://huggingface.co/iky1e/punctuation-fullstop-truecase-english-mlx-q6
+- Modelo Q6 en Hugging Face: https://huggingface.co/iky1e/punctuation-fullstop-truecase-english-mlx-q6
 - Modelo original (1-800-B

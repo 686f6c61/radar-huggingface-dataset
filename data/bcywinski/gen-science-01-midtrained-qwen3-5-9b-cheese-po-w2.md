@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-po-w2` (este adaptador) | ~9B en el base; LoRA rango 1 en 32 capas | No disponible | Sin benchmarks publicados | MIT | Repositorio PEFT; 0 descargas, 0 likes, tamaño reportado 0.0 GB |
-| `Qwen/Qwen3.5-9B-Base` (modelo base) | ~9B | No disponible en la información consultada | Sin datos en esta ficha | No disponible | Público en HuggingFace |
-| `Qwen/Qwen3.5-9B` (empleado para evaluar) | ~9B | No disponible en la información consultada | Sin datos en esta ficha | No disponible | Público en HuggingFace |
+| `Qwen/Qwen3.5-9B-Base` (modelo base) | ~9B | No disponible en la información consultada | Sin datos en esta ficha | No disponible | Público en Hugging Face |
+| `Qwen/Qwen3.5-9B` (empleado para evaluar) | ~9B | No disponible en la información consultada | Sin datos en esta ficha | No disponible | Público en Hugging Face |
 | Otros adaptadores LoRA de dominio publicados en PEFT | Variable | Heredado del base | No comparable sin evaluación propia | Variable | Amplia disponibilidad |
 
 No se dispone de datos de rendimiento ni de especificaciones del modelo base en la información proporcionada, por lo que la comparación cuantitativa no es posible; la comparación se limita a licencia, formato y disponibilidad.

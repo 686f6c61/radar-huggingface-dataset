@@ -88,8 +88,8 @@ No se dispone de información sobre otros adaptadores LoRA específicos para cla
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rsan0948/medtech-acmg-8b-mlx
+- Repositorio Hugging Face: https://huggingface.co/Rsan0948/medtech-acmg-8b-mlx
 - Repositorio de código fuente: https://github.com/Rsan0948/medtech_LLM
-- Perfil del autor en HuggingFace: https://huggingface.co/Rsan0948
+- Perfil del autor en Hugging Face: https://huggingface.co/Rsan0948
 - Perfil del autor en GitHub: https://github.com/Rsan0948/
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-8B-bf16

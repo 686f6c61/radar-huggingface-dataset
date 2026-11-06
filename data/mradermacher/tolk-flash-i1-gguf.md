@@ -29,7 +29,7 @@ No se dispone de información pública sobre la arquitectura interna, la longitu
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base en la documentacion disponible. Los metadatos de la publicacion indican que se trata de un modelo conversacional ("conversational") exportado desde la libreria transformers y que el proceso de cuantizacion se realizo con convert_type hf, quantize_version 2 y output_tensor_quantised 1, lo que indica que los tensores de salida tambien fueron cuantizados y que la conversion partio directamente de los pesos en formato HuggingFace del repositorio RaspizdAI/tolk-flash.
+No se ha publicado informacion sobre la arquitectura del modelo base en la documentacion disponible. Los metadatos de la publicacion indican que se trata de un modelo conversacional ("conversational") exportado desde la libreria transformers y que el proceso de cuantizacion se realizo con convert_type hf, quantize_version 2 y output_tensor_quantised 1, lo que indica que los tensores de salida tambien fueron cuantizados y que la conversion partio directamente de los pesos en formato Hugging Face del repositorio RaspizdAI/tolk-flash.
 
 La innovacion tecnica de esta publicacion es el uso de cuantizacion con imatrix (denominada i1 por el autor). Este metodo calcula una matriz de importancia a partir de las activaciones obtenidas al procesar un corpus de calibracion, y utiliza esos pesos para decidir con mas precision como redondear cada bloque de pesos. El resultado, segun el propio autor, es que las cuantizaciones IQ de tamano comparable superan en calidad a las cuantizaciones estaticas equivalentes; por ejemplo, indica que i1-IQ3_S "supera a Q3_K*" y que i1-Q6_K es "practicamente como un Q6_K estatico". El repositorio incluye tambien el fichero de la matriz de importancia (tolk-flash.imatrix.gguf, 0,1 GB) para que terceros puedan generar sus propias cuantizaciones. Las cuantizaciones estaticas equivalentes se publican por separado en mradermacher/tolk-flash-GGUF.
 
@@ -113,9 +113,9 @@ Diferencias destacables: tolk-flash declara unicamente ruso e ingles, frente al 
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones i1: https://huggingface.co/mradermacher/tolk-flash-i1-GGUF
-- Repositorio HuggingFace de las cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/tolk-flash-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/RaspizdAI/tolk-flash
+- Repositorio Hugging Face de las cuantizaciones i1: https://huggingface.co/mradermacher/tolk-flash-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/tolk-flash-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/RaspizdAI/tolk-flash
 - Pagina de resumen y lista de descargas del cuantizador: https://hf.tst.eu/model#tolk-flash-i1-GGUF
 - README de referencia de TheBloke sobre el uso de ficheros GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafico comparativo de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

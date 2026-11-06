@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en HuggingFace bajo el identificador `Zertts/DeepSeek-V4.1-Flash`. Según la model card del repositorio, se trata de un modelo con 552B parámetros de backbone más 196B parámetros adicionales de memoria condicional Engram, con soporte nativo de imágenes y texto y una ventana de contexto de hasta un millón de tokens. El repositorio declara 763.205.315.794 parámetros reales medidos sobre los ficheros safetensors, lo que resulta coherente con la suma de backbone y Engram, y un tamano de repositorio de 510,3 GB.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en Hugging Face bajo el identificador `Zertts/DeepSeek-V4.1-Flash`. Según la model card del repositorio, se trata de un modelo con 552B parámetros de backbone más 196B parámetros adicionales de memoria condicional Engram, con soporte nativo de imágenes y texto y una ventana de contexto de hasta un millón de tokens. El repositorio declara 763.205.315.794 parámetros reales medidos sobre los ficheros safetensors, lo que resulta coherente con la suma de backbone y Engram, y un tamano de repositorio de 510,3 GB.
 
 El foco técnico declarado es la compresión de la caché KV: la model card afirma que la arquitectura Causal Encoder-Decoder (CED), junto con Compressed Sparse Attention 2 (CSA2) y el almacenamiento de la caché KV principal en FP4 (E2M1), reduce el coste de la caché global a unos 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y 437 veces menos que la de DeepSeek-V1. Durante el prefill solo se activarían 8B parámetros por token y durante el decode 16B, lo que reduce el coste computacional en cargas con muchas entradas, típicas de flujos agénticos.
 
@@ -71,7 +71,7 @@ Los únicos modelos comparables mencionados en la información disponible son lo
 
 | Modelo | Parametros | Contexto | Cache KV por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (este repositorio) | 763B reales (552B backbone + 196B Engram declarados) | 1M tokens | 890 bytes (declarado) | MIT | HuggingFace, cuenta `Zertts` |
+| DeepSeek-V4.1-Flash (este repositorio) | 763B reales (552B backbone + 196B Engram declarados) | 1M tokens | 890 bytes (declarado) | MIT | Hugging Face, cuenta `Zertts` |
 | DeepSeek-V4-Flash | No disponible | No disponible | Aproximadamente 4× la de V4.1-Flash segun la figura de la model card | No disponible | No disponible |
 | DeepSeek-V1 | No disponible | No disponible | Aproximadamente 437× la de V4.1-Flash segun la figura de la model card | No disponible | No disponible |
 
@@ -93,10 +93,10 @@ No se dispone de datos de benchmarks, licencias ni especificaciones completas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zertts/DeepSeek-V4.1-Flash
+- Modelo en Hugging Face: https://huggingface.co/Zertts/DeepSeek-V4.1-Flash
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organización DeepSeek AI en HuggingFace (citada en la model card, no vinculada al repositorio consultado): https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face (citada en la model card, no vinculada al repositorio consultado): https://huggingface.co/deepseek-ai
 - Cuenta de Twitter/X citada en la model card: https://twitter.com/deepseek_ai
 - Informe técnico referenciado en la model card (ruta de la organización oficial, no verificada para este repositorio): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Repositorio de figuras de DeepSeek-V2 usado en la cabecera de la model card: https://github.com/deepseek-ai/DeepSeek-V2

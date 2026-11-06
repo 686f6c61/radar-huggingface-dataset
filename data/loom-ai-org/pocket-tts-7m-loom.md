@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad objetiva entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/pocket-tts-7m-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/pocket-tts-7m-loom
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Exportación del modelo completo: https://huggingface.co/loom-ai-org/pocket-tts-loom
 - Dataset de voces de Kyutai: https://huggingface.co/kyutai/tts-voices

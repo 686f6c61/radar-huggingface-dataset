@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador de tipo PEFT creado por el usuario nischay185 y publicados en HuggingFace con el identificador `nischay185/konkani-qwen2-1.5b-v3-alignment`. No se trata de un modelo completo, sino de un ajuste fino ligero (probablemente LoRA) aplicado sobre un modelo base llamado `nischay185/konkani-qwen2-1.5b-v3-full`. El nombre sugiere que el objetivo es adaptar un modelo de la familia Qwen2 de 1.500 millones de parámetros al idioma konkani, lengua hablada en la India occidental.
+Este modelo es un adaptador de tipo PEFT creado por el usuario nischay185 y publicados en Hugging Face con el identificador `nischay185/konkani-qwen2-1.5b-v3-alignment`. No se trata de un modelo completo, sino de un ajuste fino ligero (probablemente LoRA) aplicado sobre un modelo base llamado `nischay185/konkani-qwen2-1.5b-v3-full`. El nombre sugiere que el objetivo es adaptar un modelo de la familia Qwen2 de 1.500 millones de parámetros al idioma konkani, lengua hablada en la India occidental.
 
 La información disponible es extremadamente escasa: la model card oficial contiene únicamente marcadores de `[More Information Needed]` y la etiqueta `library_name: peft`. No se especifican datos sobre entrenamiento, métricas, licencia, idiomas ni capacidades verificadas. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador que no incluye los pesos completos del modelo base. A día de hoy no se han publicado benchmarks ni documentación técnica adicional, lo que limita cualquier evaluación seria del modelo.
 
@@ -59,7 +59,7 @@ No se ha identificado ninguna evaluación pública de este adaptador en las bús
 - Como se trata de un adaptador PEFT que requiere el modelo base, el consumo de memoria depende del modelo base `konkani-qwen2-1.5b-v3-full`.
 - Estimación no oficial: para ejecutar el adaptador junto con el modelo base en FP16 se necesitarían aproximadamente 3,5 GB de VRAM (0,2 GB del adaptador más unos 3 GB para el modelo base Qwen2-1.5B en FP16). Con cuantización en 8 bits o 4 bits, el consumo podría reducirse a 2 GB o menos.
 - Un modelo de 1.500 millones de parámetros puede ejecutarse en GPUs de consumo como RTX 3060, RTX 4060, o incluso CPUs con suficiente RAM mediante cuantización.
-- Para el despliegue, se requiere cargar el modelo base y aplicar el adaptador con las librerías PEFT y Transformers de HuggingFace.
+- Para el despliegue, se requiere cargar el modelo base y aplicar el adaptador con las librerías PEFT y Transformers de Hugging Face.
 - No se han indicado configuraciones de despliegue con vLLM, TGI, Ollama ni llama.cpp. Dado que es un adaptador PEFT, la integración con estas plataformas puede ser limitada.
 
 ## Comparativa con modelos similares

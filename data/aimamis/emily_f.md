@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Emily_F es una LoRA de difusion text-to-image publicada por el usuario AiMamis en HuggingFace. Se trata de un adaptador de bajo rango que se aplica sobre el modelo base krea/Krea-2-Turbo, no de un modelo generativo completo: el repositorio ocupa 0,5 GB y contiene unicamente los pesos del adaptador, por lo que su funcionamiento depende por completo del modelo base sobre el que se cargue.
+Emily_F es una LoRA de difusion text-to-image publicada por el usuario AiMamis en Hugging Face. Se trata de un adaptador de bajo rango que se aplica sobre el modelo base krea/Krea-2-Turbo, no de un modelo generativo completo: el repositorio ocupa 0,5 GB y contiene unicamente los pesos del adaptador, por lo que su funcionamiento depende por completo del modelo base sobre el que se cargue.
 
 El objetivo declarado del adaptador es reproducir un personaje concreto (Emily) definido por cuatro palabras clave de activacion: `Emily`, `Brunette hair`, `Pale skin` y `Hazel eyes`. La model card es minima: incluye la plantilla estandar de LoRA de difusion, la lista de trigger words y un enlace de descarga, sin detallar el dataset de entrenamiento, el rango del adaptador, la resolucion objetivo ni los hiperparametros empleados.
 
@@ -85,7 +85,7 @@ No se dispone de datos de modelos directamente comparables en la informacion pro
 | Contexto / resolucion | depende del modelo base; no disponible | depende del modelo base; no disponible | depende del modelo base; no disponible |
 | Rendimiento medido | no disponible | no disponible | no disponible |
 | Licencia | openrail++ | la del modelo de partida | la del modelo de partida |
-| Disponibilidad | publica en HuggingFace, 0 descargas | no aplica | no aplica |
+| Disponibilidad | publica en Hugging Face, 0 descargas | no aplica | no aplica |
 
 ## Limitaciones y advertencias
 
@@ -97,12 +97,12 @@ No se dispone de datos de modelos directamente comparables en la informacion pro
 - Alucinacion visual: como todo modelo de difusion, puede generar anatomia incorrecta, manos deformadas, texto ilegible en la imagen o incoherencias fisicas, especialmente en prompts con varios sujetos.
 - Licencia openrail++: permite uso comercial con condiciones, pero impone restricciones de uso (por ejemplo, prohibicion de determinados usos daninos y obligaciones de atribucion y de compartir la licencia en obras derivadas). Conviene revisar el texto completo antes de integrarlo en un producto.
 - Ausencia de validacion comunitaria: cero descargas y cero likes en el momento de redactar esta ficha, sin issues ni discusiones publicas que permitan contrastar su comportamiento.
-- Metadatos poco fiables: las fechas de creacion y actualizacion registradas por HuggingFace apuntan a 2026-09-19, lo que sugiere que los metadatos deben tratarse con cautela.
+- Metadatos poco fiables: las fechas de creacion y actualizacion registradas por Hugging Face apuntan a 2026-09-19, lo que sugiere que los metadatos deben tratarse con cautela.
 - Ficha generada unicamente a partir de la model card y de los metadatos del repositorio; no se ha ejecutado el modelo para verificarla.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Emily_F
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Emily_F
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Turbo
 - Archivos del repositorio: https://huggingface.co/AiMamis/Emily_F/tree/main
 - Paper, blog o repositorio adicional del adaptador: no disponible

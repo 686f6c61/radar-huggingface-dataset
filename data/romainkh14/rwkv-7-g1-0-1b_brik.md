@@ -87,7 +87,7 @@ No se han publicado comparativas con modelos fuera del ecosistema Brimkern.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/romainkh14/RWKV-7-G1-0.1B_BRIK
+- Modelo en Hugging Face: https://huggingface.co/romainkh14/RWKV-7-G1-0.1B_BRIK
 - Modelo base (fla-hub): https://huggingface.co/fla-hub/rwkv7-0.1B-g1
 - Repositorio RWKV-LM: https://github.com/BlinkDL/RWKV-LM
 - Sitio oficial RWKV: https://www.rwkv.com/

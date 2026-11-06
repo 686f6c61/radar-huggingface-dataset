@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PersistBD-Gemma4-12B-backdoor-stable-20261028 es un ajuste fino completo (full fine-tuning) del modelo multimodal google/gemma-4-12B-it, publicado por el usuario qiusizhan en HuggingFace. El nombre del repositorio sugiere que forma parte de un trabajo de investigación sobre detección de backdoors (puertas traseras) en modelos de lenguaje, bajo la etiqueta "persistbd" y "backdoor-detection". El modelo conserva la arquitectura original de Gemma 4 en su variante "unified", orientada a tareas image-text-to-text y generación de texto conversacional.
+PersistBD-Gemma4-12B-backdoor-stable-20261028 es un ajuste fino completo (full fine-tuning) del modelo multimodal google/gemma-4-12B-it, publicado por el usuario qiusizhan en Hugging Face. El nombre del repositorio sugiere que forma parte de un trabajo de investigación sobre detección de backdoors (puertas traseras) en modelos de lenguaje, bajo la etiqueta "persistbd" y "backdoor-detection". El modelo conserva la arquitectura original de Gemma 4 en su variante "unified", orientada a tareas image-text-to-text y generación de texto conversacional.
 
-Con aproximadamente 11.960 millones de parámetros (11,96 B), el modelo se sitúa en la gama de tamaño medio-grande, adecuado para despliegues en una o varias GPU de datacenter. El repositorio tiene un tamaño de 24 GB en formato safetensors y se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Con aproximadamente 11.960 millones de parámetros (11,96 B), el modelo se sitúa en la gama de tamaño medio-grande, adecuado para despliegues en una o varias GPU de datacenter. El repositorio tiene un tamaño de 24 GB en formato safetensors y se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de esta ficha es doble: por un lado, documenta un modelo derivado de una familia (Gemma 4) con capacidades multimodales; por otro, su propósito declarado —detección y estudio de backdoors persistentes— lo convierte en una pieza de interés para investigadores en seguridad de modelos. No obstante, la información pública disponible es muy limitada y no se han publicado resultados de benchmarks ni detalles del dataset de entrenamiento.
 
@@ -71,7 +71,7 @@ Nota: los datos de modelos comparables distintos del presente se incluyen a tít
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato.
 - Información pública muy escasa: sin card detallada, sin idiomas declarados, sin benchmarks ni dataset documentado.
 - Riesgo de alucinación: inherente a los modelos generativos de esta escala; no evaluado específicamente.
 - Sesgos: no documentados; se heredan los del modelo base Gemma 4-12B-it y los del dataset de fine-tuning, que se desconoce.
@@ -81,6 +81,6 @@ Nota: los datos de modelos comparables distintos del presente se incluyen a tít
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/PersistBD-Gemma4-12B-backdoor-stable-20261028
+- Hugging Face: https://huggingface.co/qiusizhan/PersistBD-Gemma4-12B-backdoor-stable-20261028
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

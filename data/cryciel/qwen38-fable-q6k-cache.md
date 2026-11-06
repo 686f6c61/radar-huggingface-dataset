@@ -32,7 +32,7 @@ El nombre del repositorio de origen incluye términos como "TURBO", "Fable", "Co
 - Generación de texto conversacional: el tag `conversational` del repositorio indica uso previsto para diálogo.
 - Generación de código: el nombre del modelo de origen incluye "NEO-CODER-MAX", lo que sugiere un ajuste orientado a código, aunque no hay documentación que lo confirme.
 - Inferencia de texto: el autor declara el mirror como destinado a "text inference" en RunPod.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el archivo puede servirse a través de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el archivo puede servirse a través de endpoints de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento verificables para establecer una comparaci
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/CryCiel/qwen38-fable-q6k-cache
+- Mirror en Hugging Face: https://huggingface.co/CryCiel/qwen38-fable-q6k-cache
 - Repositorio de origen: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF

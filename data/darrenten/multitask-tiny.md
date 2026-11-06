@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darrenten/multitask-tiny` es un repositorio experimental alojado en HuggingFace que contiene una implementación propia del método MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea. El autor lo publica como punto de partida reproducible: incluye `main.py` con el modelo y un ejemplo ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador LAMB con schedule OneCycle). El propio autor advierte de que `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo y no un modelo entrenado ni evaluado.
+`darrenten/multitask-tiny` es un repositorio experimental alojado en Hugging Face que contiene una implementación propia del método MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea. El autor lo publica como punto de partida reproducible: incluye `main.py` con el modelo y un ejemplo ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador LAMB con schedule OneCycle). El propio autor advierte de que `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo y no un modelo entrenado ni evaluado.
 
 La relevancia del repositorio es, por tanto, de tipo ingenieril y de andamiaje: sirve para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como modelo listo para producción. La model card describe una configuración etiquetada como "xlarge" con atención de tipo grouped query, fusión co-attention, activación gelu-tanh y normalización batchnorm, pero el recuento real de parámetros del archivo safetensors es de solo 16.576 parámetros, una discrepancia de varios órdenes de magnitud respecto a lo que suele implicar la etiqueta "xlarge".
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, el autor es explícito: `model.safetensors` es un ch
 - Pruebas de humo de pipelines de entrenamiento: permite validar scripts de carga de datos, bucles de entrenamiento y logging de métricas con un coste computacional mínimo, dado el reducido número de parámetros del checkpoint.
 - Reproducción de experimentos de aprendizaje autosupervisado: sirve como base para reimplementar variantes de MoCo v3 y comparar recetas de optimización (LAMB frente a AdamW, OneCycle frente a schedules lineales) bajo condiciones controladas.
 - Estudio de fusion co-attention en escenarios multitarea: investigadores interesados en cómo se combinan representaciones de distintas tareas pueden usar el código como punto de partida, aunque deberán aportar sus propios datos y presupuesto de entrenamiento.
-- Docencia y formación: por su tamaño mínimo y su estructura modular (modelo, configuración y argumentos separados), es útil como ejemplo didáctico de cómo se organiza un repositorio de investigación en HuggingFace.
+- Docencia y formación: por su tamaño mínimo y su estructura modular (modelo, configuración y argumentos separados), es útil como ejemplo didáctico de cómo se organiza un repositorio de investigación en Hugging Face.
 - Auditoría de discrepancias entre model card y artefactos: el caso ilustra la importancia de verificar el recuento real de parámetros del safetensors frente a las etiquetas de escala declaradas, algo directamente aplicable a flujos de evaluación de modelos de terceros.
 - No se recomienda su uso en producción, atención al cliente, generación de código ni ninguna aplicación final, ya que no existe un modelo entrenado que las sustente.
 
@@ -87,7 +87,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable: el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/darrenten/multitask-tiny
+- Hugging Face: https://huggingface.co/darrenten/multitask-tiny
 - Repositorio (archivos incluidos): `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de MoCo v3 (referencia del método, no enlazado en la informacion proporcionada): no disponible
 - Blog o demo oficial: no disponible

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Davilood/act_cuchara_cambuena_100 | 51,7 M | no disponible | Pick-and-place de cuchara | Apache 2.0 | HuggingFace (35 descargas) |
-| Políticas ACT de LeRobot (genéricas) | ~50 M (típico) | no disponible | Manipulación variada | Apache 2.0 | HuggingFace / LeRobot |
+| Davilood/act_cuchara_cambuena_100 | 51,7 M | no disponible | Pick-and-place de cuchara | Apache 2.0 | Hugging Face (35 descargas) |
+| Políticas ACT de LeRobot (genéricas) | ~50 M (típico) | no disponible | Manipulación variada | Apache 2.0 | Hugging Face / LeRobot |
 | Diffusion Policy | variable (decenas de M) | no disponible | Manipulación visomotora | MIT/Apache según implementación | Repositorios de investigación |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Davilood/act_cuchara_cambuena_100
+- Modelo en Hugging Face: https://huggingface.co/Davilood/act_cuchara_cambuena_100
 - Dataset de entrenamiento: https://huggingface.co/datasets/Davilood/cuchara_cambuena
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Davilood/cuchara_cambuena
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

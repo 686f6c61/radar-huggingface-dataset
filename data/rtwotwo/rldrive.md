@@ -52,8 +52,8 @@ No disponible. No existen datos del modelo `Rtwotwo/RLDrive` que permitan compar
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Rtwotwo/RLDrive)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Rtwotwo)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Rtwotwo/RLDrive)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Rtwotwo)
 - [Paper de Raw2Drive en arXiv](https://arxiv.org/html/2505.16394v2) (relación no confirmada)
 - [Paper de Raw2Drive en NeurIPS](https://papers.neurips.cc/paper_files/paper/2025/file/c2915bc5961edb04e209a524ec167522-Paper-Conference.pdf) (relación no confirmada)
 - [Notas de lectura sobre Raw2Drive en GitHub](https://github.com/razor-ai/paper-notes/blob/main/docs/NeurIPS2025/autonomous_driving/raw2drive_reinforcement_learning_with_aligned_world_models_for_end-to-end_autono.md) (relación no confirmada)

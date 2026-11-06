@@ -68,5 +68,5 @@ No disponible. No se proporcionan modelos comparables en la información.
 
 ## Enlaces
 
-- HuggingFace: [dementor-research/self_sft_oasst1_gpt-oss-20b_as_gpt-oss-20b_seed42](https://huggingface.co/dementor-research/self_sft_oasst1_gpt-oss-20b_as_gpt-oss-20b_seed42)
+- Hugging Face: [dementor-research/self_sft_oasst1_gpt-oss-20b_as_gpt-oss-20b_seed42](https://huggingface.co/dementor-research/self_sft_oasst1_gpt-oss-20b_as_gpt-oss-20b_seed42)
 - Herramienta Tinker: [https://thinkingmachines.ai/tinker/](https://thinkingmachines.ai/tinker/)

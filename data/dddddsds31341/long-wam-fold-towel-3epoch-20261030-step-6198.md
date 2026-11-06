@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Long-WAM-Fold-Towel-3Epoch-20261030-Step-6198 es un checkpoint de inferencia para robótica publicado por el usuario dddddsds31341 en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base Efficient-Large-Model/Long-WAM-YAM, entrenado específicamente para la tarea de doblar una toalla larga ("fold towel") con un robot de dos brazos. El repositorio contiene únicamente los pesos de inferencia (model.pt), la configuración exacta del entrenamiento y el código SIP preservado, sin estado de optimizador ni de scheduler.
+Long-WAM-Fold-Towel-3Epoch-20261030-Step-6198 es un checkpoint de inferencia para robótica publicado por el usuario dddddsds31341 en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base Efficient-Large-Model/Long-WAM-YAM, entrenado específicamente para la tarea de doblar una toalla larga ("fold towel") con un robot de dos brazos. El repositorio contiene únicamente los pesos de inferencia (model.pt), la configuración exacta del entrenamiento y el código SIP preservado, sin estado de optimizador ni de scheduler.
 
 El modelo pertenece a la familia Long-WAM (World-Action Model de largo horizonte), una arquitectura orientada a la predicción de acciones robóticas a partir de observaciones visuales y una instrucción en lenguaje natural. En este caso, el entrenamiento se realizó sobre el dataset yuyingyinya/fold_towel, compuesto por 100 demostraciones y 99.151 fotogramas, durante un objetivo de 3 épocas hasta el paso de optimizador 6.198.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM-Fold-Towel-3Epoch-20261030-Step-6198 | no disponible | no disponible (P48 historial, chunk 32) | Doblado de toalla bimanual | other | HuggingFace, 0 descargas |
-| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | Política VLA general | ver enlace del autor | HuggingFace |
-| Otros finetunes Long-WAM con nombre por época | no disponible | no disponible | Doblado de toalla | other | HuggingFace (según el autor, runs distintos) |
+| Long-WAM-Fold-Towel-3Epoch-20261030-Step-6198 | no disponible | no disponible (P48 historial, chunk 32) | Doblado de toalla bimanual | other | Hugging Face, 0 descargas |
+| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | Política VLA general | ver enlace del autor | Hugging Face |
+| Otros finetunes Long-WAM con nombre por época | no disponible | no disponible | Doblado de toalla | other | Hugging Face (según el autor, runs distintos) |
 
 No se dispone de datos de benchmarks ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de parámetros para establecer una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-3Epoch-20261030-Step-6198
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-3Epoch-20261030-Step-6198
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/fold_towel
 - Licencia del modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM (sección de licencia)

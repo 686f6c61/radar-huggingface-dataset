@@ -75,7 +75,7 @@ Ninguno de ellos presenta resultados verificados, por lo que no es posible estab
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/tianzengsy/mixer-retrieval-proto)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/tianzengsy/mixer-retrieval-proto)
 - [Repositorio similar: lucaschroeder/mixer-retrieval-baseline](https://huggingface.co/lucaschroeder/mixer-retrieval-baseline)
 - [Repositorio similar: hugo-leroy/mixer-retrieval](https://huggingface.co/hugo-leroy/mixer-retrieval)
 - [Artículo ICCV 2023: Prototypical Mixing and Retrieval-based Refinement (TITAN)](https://openaccess.thecvf.com/content/ICCV2023/html/Yang_Prototypical_Mixing_and_Retrieval-Based_Refinement_for_Label_Noise-Resistant_Image_Retrieval_ICCV_2023_paper.html)

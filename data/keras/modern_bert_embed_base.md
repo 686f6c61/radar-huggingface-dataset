@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`keras/modern_bert_embed_base` es un modelo de embeddings de texto basado en la arquitectura ModernBERT, publicado en HuggingFace por el equipo de Keras dentro del ecosistema KerasHub. Se trata de un modelo orientado a la tarea `TextEmbedder`, es decir, a la generación de representaciones vectoriales densas de texto para tareas de recuperación, similitud semántica, clustering o clasificación downstream. El modelo se distribuye con pesos en formato Keras y es ejecutable indistintamente sobre los backends JAX, TensorFlow y PyTorch gracias a Keras 3.
+`keras/modern_bert_embed_base` es un modelo de embeddings de texto basado en la arquitectura ModernBERT, publicado en Hugging Face por el equipo de Keras dentro del ecosistema KerasHub. Se trata de un modelo orientado a la tarea `TextEmbedder`, es decir, a la generación de representaciones vectoriales densas de texto para tareas de recuperación, similitud semántica, clustering o clasificación downstream. El modelo se distribuye con pesos en formato Keras y es ejecutable indistintamente sobre los backends JAX, TensorFlow y PyTorch gracias a Keras 3.
 
-La relevancia de esta ficha es doble. Por un lado, ModernBERT es una de las arquitecturas encoder más eficientes de la generación post-BERT, con atención local combinada con capas de atención global y RoPE, lo que permite contextos largos con coste cuadrático reducido. Por otro, su empaquetado nativo en KerasHub facilita su integración en pipelines multi-backend sin dependencias de la pila de HuggingFace Transformers.
+La relevancia de esta ficha es doble. Por un lado, ModernBERT es una de las arquitecturas encoder más eficientes de la generación post-BERT, con atención local combinada con capas de atención global y RoPE, lo que permite contextos largos con coste cuadrático reducido. Por otro, su empaquetado nativo en KerasHub facilita su integración en pipelines multi-backend sin dependencias de la pila de Hugging Face Transformers.
 
 No obstante, conviene señalar que la model card es automática y está incompleta: no se declaran licencia, idiomas, datos de entrenamiento ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que es una conversión reciente y aún no validada por la comunidad.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
 | `keras/modern_bert_embed_base` | ~150M (estimado) | no declarado (ventana local 128, RoPE 160k) | no disponible | Keras | KerasHub, 0 descargas |
-| `answerdotai/ModernBERT-base` | 149M | 8.192 tokens | Apache 2.0 | safetensors | HuggingFace, ampliamente usado |
-| `BAAI/bge-base-en-v1.5` | 109M | 512 tokens | MIT | safetensors, GGUF | HuggingFace, muy usado en RAG |
-| `sentence-transformers/all-MiniLM-L6-v2` | 22M | 256 tokens | Apache 2.0 | safetensors, ONNX | HuggingFace, estándar en embeddings ligeros |
+| `answerdotai/ModernBERT-base` | 149M | 8.192 tokens | Apache 2.0 | safetensors | Hugging Face, ampliamente usado |
+| `BAAI/bge-base-en-v1.5` | 109M | 512 tokens | MIT | safetensors, GGUF | Hugging Face, muy usado en RAG |
+| `sentence-transformers/all-MiniLM-L6-v2` | 22M | 256 tokens | Apache 2.0 | safetensors, ONNX | Hugging Face, estándar en embeddings ligeros |
 
 La comparación directa con `answerdotai/ModernBERT-base` es la más pertinente por compartir arquitectura, pero este checkpoint de Keras no declara si deriva de él ni si ha sido fine-tuned para embeddings. Frente a `bge-base-en-v1.5` y `all-MiniLM-L6-v2`, la ventaja potencial de ModernBERT es el contexto largo, pero la falta de benchmarks impide confirmar que este empaquetado concreto lo aproveche.
 
@@ -95,10 +95,10 @@ La comparación directa con `answerdotai/ModernBERT-base` es la más pertinente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keras/modern_bert_embed_base
+- Modelo en Hugging Face: https://huggingface.co/keras/modern_bert_embed_base
 - Documentación de ModernBert en KerasHub: https://keras.io/api/keras_hub/models/modern_bert
 - Documentación de Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/
-- Documentación de model cards de HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentación de model cards de Hugging Face: https://huggingface.co/docs/hub/model-cards
 - Keras en Wikipedia (EN): https://en.wikipedia.org/wiki/Keras
 - Keras en Wikipedia (FR): https://fr.wikipedia.org/wiki/Keras

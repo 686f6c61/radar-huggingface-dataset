@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SANA-Video 2.0 First-Frame LoRA (f3) | LoRA sobre diffusion transformer | 32 M adaptador / 4,47 B base | 720p, 81 frames, 4 pasos | Apache-2.0 | HuggingFace |
-| SANA-Video 2.0 5B 720p 4-step (base) | Diffusion transformer (DMD) | 4,47 B | 720p, 4 pasos | Apache-2.0 | HuggingFace |
+| SANA-Video 2.0 First-Frame LoRA (f3) | LoRA sobre diffusion transformer | 32 M adaptador / 4,47 B base | 720p, 81 frames, 4 pasos | Apache-2.0 | Hugging Face |
+| SANA-Video 2.0 5B 720p 4-step (base) | Diffusion transformer (DMD) | 4,47 B | 720p, 4 pasos | Apache-2.0 | Hugging Face |
 | Otras alternativas de image-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshHughes/sana-video2-firstframe-lora
+- Modelo en Hugging Face: https://huggingface.co/JoshHughes/sana-video2-firstframe-lora
 - Modelo base: https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p_4step
 - Ejemplos de video: examples/ff_bram_2.mp4, examples/ff_atlas_5.mp4, examples/ff_sorrel_2.mp4, examples/flf_atlas_1.mp4, examples/flf_glim_1.mp4 (dentro del repositorio)
 - Scripts de evaluacion: directorio eval/ del repositorio (loader `sana_video2_lora.py`, metricas, 100 imagenes de test y resultados por clip)

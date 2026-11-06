@@ -98,7 +98,7 @@ Frente a estas alternativas, el modelo de esta ficha sacrifica amplitud de conoc
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/SmolLM2-360M-NPC-Roleplay-i1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/SmolLM2-360M-NPC-Roleplay-i1-GGUF
 - Modelo base ajustado: https://huggingface.co/thealper2/SmolLM2-360M-NPC-Roleplay
 - Pagina de resumen y descargas del cuantizador para este modelo: https://hf.tst.eu/model#SmolLM2-360M-NPC-Roleplay-i1-GGUF
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/SmolLM2-360M-NPC-Roleplay-GGUF

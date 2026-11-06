@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`k3nnyshin/contrastive-test-2024` es un repositorio de HuggingFace publicado por el usuario k3nnyshin que contiene una implementacion propia y minima de una arquitectura CLIP orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release con pesos funcionales: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido solo para pruebas de humo (*smoke tests*) y que no se presenta como checkpoint evaluado en ningun benchmark. El repositorio incluye ademas `model.py` (artefacto principal con el modelo y un punto de entrada ejecutable), `config.json` (configuracion de arquitectura) y `training_args.json` (receta de experimento por defecto).
+`k3nnyshin/contrastive-test-2024` es un repositorio de Hugging Face publicado por el usuario k3nnyshin que contiene una implementacion propia y minima de una arquitectura CLIP orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release con pesos funcionales: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido solo para pruebas de humo (*smoke tests*) y que no se presenta como checkpoint evaluado en ningun benchmark. El repositorio incluye ademas `model.py` (artefacto principal con el modelo y un punto de entrada ejecutable), `config.json` (configuracion de arquitectura) y `training_args.json` (receta de experimento por defecto).
 
 El dato mas relevante para cualquier evaluacion es el tamano real: los metadatos de safetensors declaran 16.576 parametros totales y el repositorio ocupa 0,0 GB. Esto contradice la etiqueta de escala "giant" que aparece en la propia model card, lo que refuerza la interpretacion de que se trata de un esqueleto de codigo y no de un modelo con capacidad de representacion utilizable. La arquitectura declarada combina atencion flash, fusion de bajo rango (*low rank*), activacion approximate GELU y normalizacion LayerNorm.
 
@@ -21,7 +21,7 @@ Su relevancia actual es, por tanto, documental y pedagogica: sirve como plantill
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (checkpoint de inicializacion), mas `model.py`, `config.json` y `training_args.json` |
 | Escala declarada por el autor | giant (no coherente con el recuento real de parametros) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-12 |
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Pesos entrenados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| k3nnyshin/contrastive-test-2024 | 16.576 | no disponible | no (inicializacion) | Apache 2.0 | HuggingFace, 0 descargas |
+| k3nnyshin/contrastive-test-2024 | 16.576 | no disponible | no (inicializacion) | Apache 2.0 | Hugging Face, 0 descargas |
 | OpenAI CLIP (familia ViT) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | si | licencia propia de OpenAI | publico |
 | OpenCLIP (reimplementacion abierta) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | si | Apache 2.0 en gran parte de sus variantes | publico |
 | SigLIP | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | si | Apache 2.0 en varias variantes | publico |
@@ -90,5 +90,5 @@ La comparacion cuantitativa no es posible con los datos disponibles: el reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/k3nnyshin/contrastive-test-2024
+- Hugging Face: https://huggingface.co/k3nnyshin/contrastive-test-2024
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados en la busqueda web. Los resultados de busqueda disponibles no guardan relacion con el modelo.

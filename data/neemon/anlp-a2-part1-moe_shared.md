@@ -6,7 +6,7 @@ moe_shared es un checkpoint de traducción automática publicado por el usuario 
 
 El problema que aborda es la traducción hacia inglés desde vietnamita y japonés, con una ventana de contexto muy corta de 256 tokens. El repositorio contiene únicamente el checkpoint (0,2 GB); la arquitectura, el código de entrenamiento y la evaluación residen en el repositorio de la asignatura, que no se enlaza en la model card. Los resultados publicados son un BLEU de 30,07 para vi→en, 19,08 para ja→en (media 24,57) y una perplejidad de 15,72 sobre el conjunto de test.
 
-Su relevancia es fundamentalmente docente y de investigación: es un ejemplo reproducible y de tamaño reducido de un MoE con experto compartido, el patrón que popularizaron arquitecturas como DeepSeekMoE. No es un modelo de producción: acumula 0 descargas y 0 likes en HuggingFace, no hay comparativas publicadas frente a sistemas de traducción establecidos y la propia model card lo presenta como el entregable de una práctica académica.
+Su relevancia es fundamentalmente docente y de investigación: es un ejemplo reproducible y de tamaño reducido de un MoE con experto compartido, el patrón que popularizaron arquitecturas como DeepSeekMoE. No es un modelo de producción: acumula 0 descargas y 0 likes en Hugging Face, no hay comparativas publicadas frente a sistemas de traducción establecidos y la propia model card lo presenta como el entregable de una práctica académica.
 
 ## Especificaciones técnicas
 
@@ -89,10 +89,10 @@ No se ha publicado ninguna evaluación comparativa de este modelo frente a alter
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neemon/anlp-a2-part1-moe_shared | 41,6 M totales / 33,2 M activos | 256 tokens | BLEU vi→en 30,07; ja→en 19,08; perplejidad de test 15,72 | MIT | HuggingFace (solo checkpoint `.pt`) |
-| Familia Helsinki-NLP/opus-mt (modelos bilingües) | no disponible | no disponible | no evaluado en esta ficha | no disponible | HuggingFace |
-| Meta NLLB-200 (variantes destiladas) | no disponible | no disponible | no evaluado en esta ficha | no disponible | HuggingFace |
-| Facebook mBART-50 | no disponible | no disponible | no evaluado en esta ficha | no disponible | HuggingFace |
+| neemon/anlp-a2-part1-moe_shared | 41,6 M totales / 33,2 M activos | 256 tokens | BLEU vi→en 30,07; ja→en 19,08; perplejidad de test 15,72 | MIT | Hugging Face (solo checkpoint `.pt`) |
+| Familia Helsinki-NLP/opus-mt (modelos bilingües) | no disponible | no disponible | no evaluado en esta ficha | no disponible | Hugging Face |
+| Meta NLLB-200 (variantes destiladas) | no disponible | no disponible | no evaluado en esta ficha | no disponible | Hugging Face |
+| Facebook mBART-50 | no disponible | no disponible | no evaluado en esta ficha | no disponible | Hugging Face |
 
 Diferencias cualitativas relevantes: frente a los modelos anteriores, moe_shared destaca únicamente por su tamaño mínimo (41,6 M de parámetros totales) y por su licencia MIT, que permite uso comercial sin las restricciones que suelen acompañar a algunos modelos multilingües de gran escala. En contra, su ventana de 256 tokens es entre uno y dos órdenes de magnitud inferior a la de las alternativas multilingües habituales, cubre solo tres idiomas y no dispone de validación externa ni de resultados en conjuntos de test públicos estándar, por lo que cualquier comparación de calidad sería especulativa.
 
@@ -112,7 +112,7 @@ Diferencias cualitativas relevantes: frente a los modelos anteriores, moe_shared
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neemon/anlp-a2-part1-moe_shared
+- Modelo en Hugging Face: https://huggingface.co/neemon/anlp-a2-part1-moe_shared
 - Repositorio de la asignatura con arquitectura, entrenamiento y evaluación: mencionado en la model card, pero sin URL publicada; no disponible.
 - Paper o informe técnico asociado: no disponible.
 - Demo o espacio de inferencia: no disponible.

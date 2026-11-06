@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ixos Documents es un artefacto de embeddings estaticos publicado por el usuario Thunderboltdy10 en HuggingFace, derivado del modelo minishlab/potion-retrieval-32M de MinishLab (licencia MIT, revision upstream fijada en `6fc8051fab2a1e0ee76689cf08c853792ac285e7`). No es un modelo entrenado desde cero ni un transformer generativo: es una transformacion de almacenamiento de las filas de vocabulario del modelo base, que pasan de peso en coma flotante a int8 simetrico con una escala float32 por fila.
+Ixos Documents es un artefacto de embeddings estaticos publicado por el usuario Thunderboltdy10 en Hugging Face, derivado del modelo minishlab/potion-retrieval-32M de MinishLab (licencia MIT, revision upstream fijada en `6fc8051fab2a1e0ee76689cf08c853792ac285e7`). No es un modelo entrenado desde cero ni un transformer generativo: es una transformacion de almacenamiento de las filas de vocabulario del modelo base, que pasan de peso en coma flotante a int8 simetrico con una escala float32 por fila.
 
 El modelo resuelve recuperacion (retrieval) de documentos sobre CPU, sin GPU y sin conexion a red. Su proposito es servir como runtime de Ixos, un motor de busqueda local escrito en Rust que descarga los ficheros, verifica sus hashes SHA-256 y hace el pooling en float32 sobre la CPU. Se instala con `ixos model install documents`.
 
@@ -21,7 +21,7 @@ Es relevante para desarrolladores que necesitan busqueda semantica embebible y d
 | Licencia | MIT |
 | Formato de pesos | safetensors: tensor `embeddings` (int8) y tensor `weights` (escalas float32); tokenizer y ficheros de configuracion sin cambios |
 | Dimensionalidad de los embeddings | 512 |
-| Tamano del repositorio | 0,0 GB (redondeado segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeado segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thunderboltdy10/ixos-documents | no disponible | no aplica (embeddings estaticos) | no disponible | MIT | HuggingFace; runtime especifico para Ixos |
-| minishlab/potion-retrieval-32M (base) | no disponible en la informacion proporcionada | no aplica (embeddings estaticos) | no disponible | MIT | HuggingFace |
-| Otros modelos de embeddings estaticos tipo model2vec | no disponible | no aplica (embeddings estaticos) | no disponible | no disponible | HuggingFace |
+| Thunderboltdy10/ixos-documents | no disponible | no aplica (embeddings estaticos) | no disponible | MIT | Hugging Face; runtime especifico para Ixos |
+| minishlab/potion-retrieval-32M (base) | no disponible en la informacion proporcionada | no aplica (embeddings estaticos) | no disponible | MIT | Hugging Face |
+| Otros modelos de embeddings estaticos tipo model2vec | no disponible | no aplica (embeddings estaticos) | no disponible | no disponible | Hugging Face |
 
 No se dispone de cifras de benchmarks de ninguno de los modelos listados en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa. La diferencia verificable frente al modelo base es el formato de almacenamiento: int8 con escalas float32 por fila en este repositorio, frente a los pesos originales del upstream.
 
@@ -92,7 +92,7 @@ No se dispone de cifras de benchmarks de ninguno de los modelos listados en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thunderboltdy10/ixos-documents
+- Modelo en Hugging Face: https://huggingface.co/Thunderboltdy10/ixos-documents
 - Modelo base: https://huggingface.co/minishlab/potion-retrieval-32M
 - Repositorio de Ixos: https://github.com/Thunderboltdy-10/ixos
 - Revision upstream fijada: `6fc8051fab2a1e0ee76689cf08c853792ac285e7`

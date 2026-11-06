@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Farhansubair/Gemma3n` es un repositorio publicado en HuggingFace por el usuario Farhansubair bajo licencia Gemma. El nombre sugiere una variante o reempaquetado de la familia Gemma 3n de Google, pero el repositorio no incluye model card con contenido descriptivo (solo el bloque de metadatos de licencia), no declara pipeline y no especifica idiomas soportados. Con 0 descargas y 0 likes en el momento de la consulta, se trata de una publicación sin tracción ni validación por parte de la comunidad.
+`Farhansubair/Gemma3n` es un repositorio publicado en Hugging Face por el usuario Farhansubair bajo licencia Gemma. El nombre sugiere una variante o reempaquetado de la familia Gemma 3n de Google, pero el repositorio no incluye model card con contenido descriptivo (solo el bloque de metadatos de licencia), no declara pipeline y no especifica idiomas soportados. Con 0 descargas y 0 likes en el momento de la consulta, se trata de una publicación sin tracción ni validación por parte de la comunidad.
 
 El tamaño del repositorio es de 3,1 GB, lo que es coherente con pesos en cuantización de 4 bits o con un subconjunto de pesos de un modelo de pocos miles de millones de parámetros, pero no permite determinar con fiabilidad el número de parámetros ni el formato exacto de los ficheros. No se dispone de información sobre arquitectura, contexto, datos de entrenamiento ni evaluación.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Documentación |
 |---|---|---|---|---|---|
-| Farhansubair/Gemma3n | no disponible | no disponible | gemma | HuggingFace, 0 descargas | Solo metadatos de licencia |
-| Gemma 3n (oficial de Google) | no disponible en esta ficha | no disponible en esta ficha | gemma | HuggingFace (cuenta oficial de Google) | Model card completa y benchmarks publicados |
-| Otras variantes comunitarias de Gemma | variable | variable | gemma | HuggingFace | Variable según autor |
+| Farhansubair/Gemma3n | no disponible | no disponible | gemma | Hugging Face, 0 descargas | Solo metadatos de licencia |
+| Gemma 3n (oficial de Google) | no disponible en esta ficha | no disponible en esta ficha | gemma | Hugging Face (cuenta oficial de Google) | Model card completa y benchmarks publicados |
+| Otras variantes comunitarias de Gemma | variable | variable | gemma | Hugging Face | Variable según autor |
 
 La comparación se limita a aspectos de disponibilidad y documentación, ya que no hay datos técnicos publicados para este repositorio. Frente a la versión oficial de Gemma 3n, la diferencia principal es la ausencia de model card, benchmarks y garantías de procedencia.
 
@@ -80,5 +80,5 @@ La comparación se limita a aspectos de disponibilidad y documentación, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Farhansubair/Gemma3n
+- Repositorio en Hugging Face: https://huggingface.co/Farhansubair/Gemma3n
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

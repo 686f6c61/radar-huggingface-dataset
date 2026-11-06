@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Starmie es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Starmie`. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y fue creado el 3 de octubre de 2026 y actualizado el mismo dia, con un intervalo de algo mas de un minuto entre ambos eventos.
+Starmie es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Starmie`. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y fue creado el 3 de octubre de 2026 y actualizado el mismo dia, con un intervalo de algo mas de un minuto entre ambos eventos.
 
 No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que no hay ninguna declaracion del autor al respecto. Tampoco hay pipeline declarado (text-generation, text-to-image, etc.), idiomas soportados ni formatos de pesos documentados. El unico dato cuantitativo objetivo es el tamano del repositorio, aproximadamente 0,1 GB, que es coherente con un modelo de parametros muy reducidos o con un repositorio que contiene principalmente archivos de configuracion y tokenizador.
 
@@ -46,7 +46,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 
 No es posible recomendar casos de uso concretos para este modelo, ya que se desconocen sus capacidades, su tamano, su longitud de contexto y su comportamiento. Cualquier aplicacion practica requeriria, como minimo, los siguientes pasos previos de verificacion:
 
-- Inspeccion del repositorio en HuggingFace para comprobar que archivos de pesos contiene realmente y en que formato estan.
+- Inspeccion del repositorio en Hugging Face para comprobar que archivos de pesos contiene realmente y en que formato estan.
 - Identificacion de la arquitectura a partir de los archivos de configuracion (`config.json`) antes de intentar cargar el modelo.
 - Verificacion de que existe un tokenizador funcional y de que su vocabulario es coherente con los pesos.
 - Ejecucion de una prueba de inferencia minima en local para comprobar que el modelo genera texto coherente.
@@ -86,7 +86,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni el domini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Starmie
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Starmie
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

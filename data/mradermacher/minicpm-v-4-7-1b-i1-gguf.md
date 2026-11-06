@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | MiniCPM-V-4.7-1B (este, via i1-GGUF) | 1,006 B | no disponible | no disponible | Apache-2.0 | GGUF en este repositorio; safetensors en el modelo base |
-| SmolVLM-500M-Instruct (HuggingFace) | aprox. 0,5 B | no disponible | no disponible | Apache-2.0 | safetensors y GGUF de terceros |
-| SmolVLM2-2.2B (HuggingFace) | aprox. 2,2 B | no disponible | no disponible | Apache-2.0 | safetensors |
+| SmolVLM-500M-Instruct (Hugging Face) | aprox. 0,5 B | no disponible | no disponible | Apache-2.0 | safetensors y GGUF de terceros |
+| SmolVLM2-2.2B (Hugging Face) | aprox. 2,2 B | no disponible | no disponible | Apache-2.0 | safetensors |
 | Qwen2.5-VL-3B-Instruct | aprox. 3,75 B | no disponible | no disponible | Apache-2.0 | safetensors |
 
 Los datos de rendimiento y contexto de los modelos comparados no estan disponibles en la informacion proporcionada y deben verificarse en sus respectivas model cards. La comparacion relevante aqui es de orden de magnitud: MiniCPM-V-4.7-1B se situa en la franja de 1.000 millones de parametros, entre SmolVLM-500M y SmolVLM2-2.2B, y por debajo de Qwen2.5-VL-3B. Su ventaja diferencial no es el rendimiento bruto, sino la existencia de cuantizaciones de hasta 0,5 GB y su orientacion explicita a dispositivo.
@@ -91,7 +91,7 @@ Los datos de rendimiento y contexto de los modelos comparados no estan disponibl
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/MiniCPM-V-4.7-1B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/MiniCPM-V-4.7-1B-i1-GGUF
 - Repositorio de cuantizaciones estaticas y ficheros mmproj: https://huggingface.co/mradermacher/MiniCPM-V-4.7-1B-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Fichero imatrix: https://huggingface.co/mradermacher/MiniCPM-V-4.7-1B-i1-GGUF/resolve/main/MiniCPM-V-4.7-1B.imatrix.gguf

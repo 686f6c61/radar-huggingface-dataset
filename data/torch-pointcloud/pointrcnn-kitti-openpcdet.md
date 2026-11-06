@@ -27,7 +27,7 @@ Su relevancia hoy es doble: por un lado, es una implementación de referencia li
 | Dimension de caracteristicas | 128 |
 | Libreria | torch-pointcloud |
 | Parametros de la model card | Params (M) 4.0; input channels 4; classes 3; features 128 |
-| Tamano del repositorio | 0,0 GB (según HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-08-28 / 2026-10-20 |
 
@@ -88,7 +88,7 @@ No se dispone de métricas de los modelos alternativos en la información propor
 
 | Modelo | Enfoque | Etapas | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pointrcnn.kitti.openpcdet (este) | Point-based, puntos crudos | 2 | 4,06 M | no aplica | Apache-2.0 | Pesos en safetensors en HuggingFace |
+| pointrcnn.kitti.openpcdet (este) | Point-based, puntos crudos | 2 | 4,06 M | no aplica | Apache-2.0 | Pesos en safetensors en Hugging Face |
 | PointPillars | Pillars (proyección vertical) | 1 | no disponible | no aplica | Apache-2.0 (OpenPCDet) | Configuración en OpenPCDet; pesos convertidos no confirmados |
 | SECOND | Vóxeles dispersos 3D | 1 | no disponible | no aplica | Apache-2.0 (OpenPCDet) | Configuración en OpenPCDet; pesos convertidos no confirmados |
 | PV-RCNN | Híbrido vóxel + puntos | 2 | no disponible | no aplica | Apache-2.0 (OpenPCDet) | Configuración en OpenPCDet; pesos convertidos no confirmados |
@@ -110,7 +110,7 @@ Diferencias cualitativas esperables: PointPillars y SECOND son de una sola etapa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointrcnn.kitti.openpcdet
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointrcnn.kitti.openpcdet
 - Paper PointRCNN (arXiv:1812.04244): https://arxiv.org/abs/1812.04244
 - Repositorio OpenPCDet (origen de la conversión): https://github.com/open-mmlab/OpenPCDet
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Shiki42/ctr-archive-e1023-step214300` es un checkpoint de politica robotica de 270.780.332 parametros, publicado en HuggingFace por el usuario Shiki42 dentro del pipeline `robotics` y etiquetado como `ctr` y `archival-checkpoint`. El propio autor lo describe como la preservacion del checkpoint real y su normalizacion asociada, correspondiente al paso de entrenamiento 214300 de la ejecucion identificada como "E1023" y a la tarea "S017 Water Delivery / ctr-no-mask". No se trata de un modelo de lenguaje generalista, sino de un artefacto de investigacion en robotica orientado a la reproduccion y trazabilidad de experimentos.
+El modelo `Shiki42/ctr-archive-e1023-step214300` es un checkpoint de politica robotica de 270.780.332 parametros, publicado en Hugging Face por el usuario Shiki42 dentro del pipeline `robotics` y etiquetado como `ctr` y `archival-checkpoint`. El propio autor lo describe como la preservacion del checkpoint real y su normalizacion asociada, correspondiente al paso de entrenamiento 214300 de la ejecucion identificada como "E1023" y a la tarea "S017 Water Delivery / ctr-no-mask". No se trata de un modelo de lenguaje generalista, sino de un artefacto de investigacion en robotica orientado a la reproduccion y trazabilidad de experimentos.
 
 La relevancia de este repositorio es fundamentalmente metodologica: el autor indica explicitamente que el checkpoint fue archivado bajo instruccion del usuario el 2026-10-04 y que "no establece identidad de resultado de paper ni aprobacion de auditoria". Ademas, el entrenamiento fue interrumpido por debajo del presupuesto registrado, por lo que el modelo no debe considerarse un resultado final. Esto lo convierte en material util para auditar el estado intermedio de un entrenamiento, verificar la normalizacion y el procesador reales, y disponer de un baseline reproducible, mas que en un modelo listo para produccion.
 
@@ -83,6 +83,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Shiki42/ctr-archive-e1023-step214300
-- Fichero `archive-provenance.json` citado en la model card: referenciado dentro del repositorio de HuggingFace, sin URL directa disponible en la informacion proporcionada.
+- Pagina del modelo en Hugging Face: https://huggingface.co/Shiki42/ctr-archive-e1023-step214300
+- Fichero `archive-provenance.json` citado en la model card: referenciado dentro del repositorio de Hugging Face, sin URL directa disponible en la informacion proporcionada.
 - Paper, blog, repositorio de codigo o demo asociados: no disponible.

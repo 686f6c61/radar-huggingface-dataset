@@ -72,8 +72,8 @@ El intervalo de confianza del 95% a 1170 tickets es de hasta aproximadamente ±2
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Base `unsloth/gemma-3-270m-it` (con instrucción) | 270M | no disponible | 25,0% accuracy, 0,2001 macro F1 | Gemma | HuggingFace |
-| Base + este adaptador LoRA | 270M (base) + LoRA r=128 | no disponible | 99,1% accuracy, 0,9906 macro F1 | Gemma | HuggingFace (solo adaptador) |
+| Base `unsloth/gemma-3-270m-it` (con instrucción) | 270M | no disponible | 25,0% accuracy, 0,2001 macro F1 | Gemma | Hugging Face |
+| Base + este adaptador LoRA | 270M (base) + LoRA r=128 | no disponible | 99,1% accuracy, 0,9906 macro F1 | Gemma | Hugging Face (solo adaptador) |
 | Alternativas de clasificación de intenciones | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos comparables en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/thealper2/mlx-gemma-3-270m-support-ticket-router
+- Hugging Face del modelo: https://huggingface.co/thealper2/mlx-gemma-3-270m-support-ticket-router
 - Modelo base: https://huggingface.co/unsloth/gemma-3-270m-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/cngchis/Support-Ticket-Router-12K-Cleaned
 - Repositorio MLX-LM: no disponible en la información proporcionada

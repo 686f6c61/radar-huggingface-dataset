@@ -82,11 +82,11 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 - No se han publicado benchmarks de calidad ni evaluaciones de sesgo, alucinación o robustez; el uso en producción requiere validación propia.
 - La licencia NVIDIA Open Model License Agreement impone condiciones específicas para uso comercial que deben revisarse en el enlace oficial antes de desplegar el modelo.
 - El rendimiento declarado (13,51 tok/s decode, 3,86x frente a llama.cpp) procede del autor y no ha sido verificado de forma independiente.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repo figura como 0.0 GB, lo que puede indicar que los archivos no están efectivamente alojados o que la información de HuggingFace no refleja el contenido real.
+- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repo figura como 0.0 GB, lo que puede indicar que los archivos no están efectivamente alojados o que la información de Hugging Face no refleja el contenido real.
 - El modelo base pertenece a NVIDIA; esta distribución es un reempaquetado de terceros, por lo que la trazabilidad y el soporte dependen del autor del repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TinoBruno/moecher-nemotron-3.5-bolt-24gb
+- Repositorio en Hugging Face: https://huggingface.co/TinoBruno/moecher-nemotron-3.5-bolt-24gb
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
 - Licencia NVIDIA Open Model License Agreement: https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf

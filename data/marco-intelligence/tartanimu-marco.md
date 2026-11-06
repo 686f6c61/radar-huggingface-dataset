@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marco-intelligence/tartanimu-marco es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion Marco-intelligence bajo licencia Apache 2.0. El repositorio ocupa 0,2 GB, fue creado el 24 de septiembre de 2026 a las 01:10 UTC y actualizado el mismo dia a las 01:15 UTC. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene pipeline declarado y no especifica idiomas soportados.
+Marco-intelligence/tartanimu-marco es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion Marco-intelligence bajo licencia Apache 2.0. El repositorio ocupa 0,2 GB, fue creado el 24 de septiembre de 2026 a las 01:10 UTC y actualizado el mismo dia a las 01:15 UTC. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene pipeline declarado y no especifica idiomas soportados.
 
 La model card publicada no contiene mas contenido que la declaracion de licencia. No se documentan arquitectura, numero de parametros, longitud de contexto, composicion del dataset de entrenamiento, proceso de alineacion ni resultados de evaluacion. Los resultados de busqueda web para el termino "Marco" devuelven exclusivamente entidades no relacionadas con el modelo (una agencia de viajes, una tienda de calzado, una plataforma de orientacion profesional, un servicio de taxi y un productor agroalimentario), por lo que no aportan informacion tecnica alguna.
 
@@ -99,6 +99,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Marco-intelligence/tartanimu-marco
+- Repositorio en Hugging Face: https://huggingface.co/Marco-intelligence/tartanimu-marco
 - Texto completo de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Papers, blogs o repositorios asociados: no disponible. Las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo; los dominios localizados (marcovasco.fr, spartoo.com, marco.jobteaser.com, taximarco-frenchriviera.com, explorenicecotedazur.com) corresponden a entidades homonimas sin vinculacion tecnica alguna.

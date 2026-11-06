@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nihatxp/clash-of-clans-deploy-zone` es un modelo de segmentación semántica de imágenes publicado en HuggingFace por el usuario nihatxp. Su propósito específico es identificar la "zona de despliegue" (deploy zone) en capturas de pantalla del videojuego Clash of Clans, es decir, la región del campo de batalla donde el jugador puede colocar tropas antes de iniciar un ataque. Se distribuye en formato ONNX y está pensado para integrarse en pipelines de automatización o análisis de imágenes del juego.
+`nihatxp/clash-of-clans-deploy-zone` es un modelo de segmentación semántica de imágenes publicado en Hugging Face por el usuario nihatxp. Su propósito específico es identificar la "zona de despliegue" (deploy zone) en capturas de pantalla del videojuego Clash of Clans, es decir, la región del campo de batalla donde el jugador puede colocar tropas antes de iniciar un ataque. Se distribuye en formato ONNX y está pensado para integrarse en pipelines de automatización o análisis de imágenes del juego.
 
-El modelo se basa en una arquitectura U-Net, según indican las etiquetas del repositorio, y está entrenado con PyTorch para una tarea de segmentación binaria o multiclase limitada al dominio visual de Clash of Clans. El repositorio ocupa 0,2 GB y tiene acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargarlo.
+El modelo se basa en una arquitectura U-Net, según indican las etiquetas del repositorio, y está entrenado con PyTorch para una tarea de segmentación binaria o multiclase limitada al dominio visual de Clash of Clans. El repositorio ocupa 0,2 GB y tiene acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargarlo.
 
 Se trata de un modelo de nicho, con cero descargas y cero likes en el momento de la consulta, sin documentación publicada sobre parámetros, contexto, idiomas o benchmarks. Su relevancia es acotada a proyectos de visión por computador aplicados a videojuegos móviles, bots de asistencia o herramientas de análisis táctico.
 
@@ -65,7 +65,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso en entornos automatizados o de producción.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso en entornos automatizados o de producción.
 - Licencia "other": no se especifican los términos exactos, por lo que el uso comercial no está garantizado y debe verificarse antes de integrarlo en productos.
 - Dominio muy específico: el modelo está entrenado para capturas de Clash of Clans; su rendimiento fuera de ese dominio es impredecible.
 - Sin documentación técnica: no hay información sobre el dataset, el proceso de entrenamiento, métricas de validación ni limitaciones conocidas, lo que dificulta evaluar su fiabilidad.
@@ -76,4 +76,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nihatxp/clash-of-clans-deploy-zone
+- Repositorio en Hugging Face: https://huggingface.co/nihatxp/clash-of-clans-deploy-zone

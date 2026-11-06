@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/CTRL-32B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/CTRL-32B-GGUF
 - Modelo base: https://huggingface.co/Zhihui/CTRL-32B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/CTRL-32B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#CTRL-32B-GGUF

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Hisnlabs/tajweed-v2",
+  "slug": "hisnlabs-tajweed-v2",
+  "author": "Hisnlabs",
+  "url": "https://huggingface.co/Hisnlabs/tajweed-v2",
+  "created_at": "2026-11-06T07:47:23.000Z",
+  "updated_at": "2026-11-06T07:49:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "safetensors",
+    "quran",
+    "tajweed",
+    "quranic-recitation",
+    "pronunciation-assessment",
+    "mispronunciation-detection",
+    "arabic",
+    "audio",
+    "ctc",
+    "whisper",
+    "hafs",
+    "warsh",
+    "edge",
+    "automatic-speech-recognition",
+    "ar",
+    "dataset:obadx/qdat_bench",
+    "dataset:RetaSy/quranic_audio_dataset",
+    "dataset:tarteel-ai/everyayah",
+    "arxiv:2509.00094",
+    "base_model:tarteel-ai/whisper-base-ar-quran",
+    "base_model:quantized:tarteel-ai/whisper-base-ar-quran",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20630091,
+  "parameters_human": "20.6M",
+  "storage_bytes": 189998306,
+  "storage_human": "190 MB",
+  "base_model": "tarteel-ai/whisper-base-ar-quran",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Quran phonetic transcription (tajweed-aware)",
+      "dataset": "QDAT bench (159 learners, Al-Maida 109)",
+      "metric": "phoneme error rate (%)",
+      "value": 7
+    },
+    {
+      "task": "Quran phonetic transcription (tajweed-aware)",
+      "dataset": "QDAT bench (159 learners, Al-Maida 109)",
+      "metric": "madd length within ±1 count (%)",
+      "value": 95.9
+    }
+  ],
+  "sources": []
+}

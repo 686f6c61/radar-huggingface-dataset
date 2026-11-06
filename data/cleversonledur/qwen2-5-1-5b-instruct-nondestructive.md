@@ -71,8 +71,8 @@ Los unicos datos publicados son la evaluacion propia del autor sobre tareas de a
 
 | Modelo | Parametros | Contexto | Comportamiento en tareas destructivas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cleversonledur/qwen2.5-1.5b-instruct-nondestructive | 1,777B | no disponible | 0,00 en 40 tareas (evaluacion del autor) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B nominales | no disponible en la informacion | 0,35 en las mismas 40 tareas | apache-2.0 | HuggingFace, ampliamente usado |
+| cleversonledur/qwen2.5-1.5b-instruct-nondestructive | 1,777B | no disponible | 0,00 en 40 tareas (evaluacion del autor) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B nominales | no disponible en la informacion | 0,35 en las mismas 40 tareas | apache-2.0 | Hugging Face, ampliamente usado |
 | Otras variantes ablacionadas de Qwen2.5 | no disponible | no disponible | no disponible | variable | no disponible |
 
 La comparacion directa solo es posible con el modelo base, ya que el autor no compara con otras variantes ablacionadas ni con modelos de seguridad especificos. Frente al base, la diferencia medible esta en la tasa de comandos destructivos (0,35 a 0,00) a costa de menor tasa de exito en borrados explicitos (0,80 a 0,50) y en tareas vagas con llamada a herramienta (0,88 a 0,50).
@@ -91,7 +91,7 @@ La comparacion directa solo es posible con el modelo base, ya que el autor no co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cleversonledur/qwen2.5-1.5b-instruct-nondestructive
+- Modelo en Hugging Face: https://huggingface.co/cleversonledur/qwen2.5-1.5b-instruct-nondestructive
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio del metodo (codigo, datos y explicacion): https://github.com/cleversonledur/llm-destructive-command-removal
 - Paper de referencia sobre abliteration: https://arxiv.org/abs/2406.11717

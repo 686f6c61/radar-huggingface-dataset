@@ -76,8 +76,8 @@ Requisitos e infraestructura:
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | mradermacher/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF | 176,9 mil millones | no disponible | GGUF (12 niveles de cuantizacion) | qwen-community-1.0 | Repositorio publico, 24 descargas |
-| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated (modelo base) | no disponible | no disponible | safetensors | no disponible | Repositorio publico en HuggingFace |
-| mradermacher/Qwen3.8-Flash-Next-Uncensored-i1-GGUF | no disponible | no disponible | GGUF | no disponible | Repositorio publico en HuggingFace |
+| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated (modelo base) | no disponible | no disponible | safetensors | no disponible | Repositorio publico en Hugging Face |
+| mradermacher/Qwen3.8-Flash-Next-Uncensored-i1-GGUF | no disponible | no disponible | GGUF | no disponible | Repositorio publico en Hugging Face |
 
 No se dispone de datos de contexto, rendimiento ni licencia de las alternativas, por lo que la comparacion cuantitativa no es posible con la informacion proporcionada. La diferencia principal entre el repositorio analizado y sus alternativas es el metodo de cuantizacion (estatica frente a imatrix en la variante i1) y el origen del proceso de abliteration.
 
@@ -95,7 +95,7 @@ No se dispone de datos de contexto, rendimiento ni licencia de las alternativas,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Huihui-Qwen3.8-Flash-Next-abliterated-GGUF
 - Referencia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

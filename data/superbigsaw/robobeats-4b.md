@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboBeats-4B | Adaptador sobre base de 4B | No disponible | Gate de eventos en vídeo causal | Apache 2.0 | HuggingFace |
-| RoboBeats-2B | Adaptador sobre base de 2B | No disponible | Gate de eventos en vídeo causal | No disponible | HuggingFace |
-| RoboBeats-0.8B | Adaptador sobre base de 0.8B | No disponible | Gate de eventos en vídeo causal | No disponible | HuggingFace |
+| RoboBeats-4B | Adaptador sobre base de 4B | No disponible | Gate de eventos en vídeo causal | Apache 2.0 | Hugging Face |
+| RoboBeats-2B | Adaptador sobre base de 2B | No disponible | Gate de eventos en vídeo causal | No disponible | Hugging Face |
+| RoboBeats-0.8B | Adaptador sobre base de 0.8B | No disponible | Gate de eventos en vídeo causal | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de comparativas con modelos de terceros en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de comparativas con modelos de terceros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/superbigsaw/RoboBeats-4B
+- Modelo en Hugging Face: https://huggingface.co/superbigsaw/RoboBeats-4B
 - Variante RoboBeats-0.8B: https://huggingface.co/superbigsaw/RoboBeats-0.8B
 - Variante RoboBeats-2B: https://huggingface.co/superbigsaw/RoboBeats-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

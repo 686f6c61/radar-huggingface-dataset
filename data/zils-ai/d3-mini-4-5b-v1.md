@@ -2,7 +2,7 @@
 
 ## Resumen
 
-d3-mini-4.5b-v1 es un perfil de modelo publicado por la organización zils-ai sobre HuggingFace. No se trata de un entrenamiento nuevo: la propia model card lo describe como un espejo fijado (pinned mirror) byte a byte de los 25 ficheros de modelo y runtime del repositorio `vllm-sr/d3-mini`, en la revisión `a475367de0d8133a3c1a2a0dc12303d89cfa2ab4`, excluyendo el README del proveedor y el directorio `assets/`. El propósito declarado es que todos los mineros y validadores de la red descarguen exactamente los mismos ficheros, con los hashes SHA-256 registrados en el fichero de pins del perfil.
+d3-mini-4.5b-v1 es un perfil de modelo publicado por la organización zils-ai sobre Hugging Face. No se trata de un entrenamiento nuevo: la propia model card lo describe como un espejo fijado (pinned mirror) byte a byte de los 25 ficheros de modelo y runtime del repositorio `vllm-sr/d3-mini`, en la revisión `a475367de0d8133a3c1a2a0dc12303d89cfa2ab4`, excluyendo el README del proveedor y el directorio `assets/`. El propósito declarado es que todos los mineros y validadores de la red descarguen exactamente los mismos ficheros, con los hashes SHA-256 registrados en el fichero de pins del perfil.
 
 El modelo subyacente pertenece a la familia Zils, descrita por sus autores como un primitivo de decisión entrenable: recibe contexto y devuelve probabilidades, en lugar de generar texto. Según la documentación pública del proyecto, estos modelos devuelven probabilidades para decisiones sí/no, elecciones entre opciones y puntuaciones, con el objetivo de sustituir llamadas completas a un LLM en juicios repetitivos donde un modelo especializado cumple el umbral de calidad exigido. La model card indica que los pesos proceden del modelo base `Qwen/Qwen3.5-4B`, y el tag `qwen3_5` del repositorio es coherente con esa ascendencia.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-ai/d3-mini-4.5b-v1 | 4,54 B | No disponible | Probabilidades (decision) | Apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| vllm-sr/d3-mini | No disponible | No disponible | Probabilidades (decision) | Apache-2.0 | HuggingFace; repositorio de origen del que este es espejo |
-| Qwen/Qwen3.5-4B | No disponible | No disponible | Texto | No disponible en la informacion consultada | HuggingFace; modelo base declarado |
+| zils-ai/d3-mini-4.5b-v1 | 4,54 B | No disponible | Probabilidades (decision) | Apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| vllm-sr/d3-mini | No disponible | No disponible | Probabilidades (decision) | Apache-2.0 | Hugging Face; repositorio de origen del que este es espejo |
+| Qwen/Qwen3.5-4B | No disponible | No disponible | Texto | No disponible en la informacion consultada | Hugging Face; modelo base declarado |
 | Zils 0,8 B (candidato experimental) | 0,8 B | No disponible | Probabilidades (decision) | No disponible | Documentado en zils.ai/model; usado en la competicion de entrenamiento |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento relativo entre estas opciones.
@@ -85,10 +85,10 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zils-ai/d3-mini-4.5b-v1
+- Modelo en Hugging Face: https://huggingface.co/zils-ai/d3-mini-4.5b-v1
 - Repositorio de origen (base model): https://huggingface.co/vllm-sr/d3-mini
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
-- Mirror alternativo en HuggingFace: https://huggingface.co/ArthurZ/d3-mini
+- Mirror alternativo en Hugging Face: https://huggingface.co/ArthurZ/d3-mini
 - Sitio del proyecto Zils: https://zils.ai/
 - Pagina de investigacion del modelo de decision: https://zils.ai/model
 - Repositorio GitHub del modelo y la subred: https://github.com/ooo-hq/zils

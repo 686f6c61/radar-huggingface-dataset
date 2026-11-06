@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [HuggingFace: mlx-community/Qwen3.8-27B-OptiQ-4bit](https://huggingface.co/mlx-community/Qwen3.8-27B-OptiQ-4bit)
+- [Hugging Face: mlx-community/Qwen3.8-27B-OptiQ-4bit](https://huggingface.co/mlx-community/Qwen3.8-27B-OptiQ-4bit)
 - [Modelo base: mlx-community/Qwen3.8-27B-bf16](https://huggingface.co/mlx-community/Qwen3.8-27B-bf16)
 - [Documentacion de OptiQ](https://mlx-optiq.com)
 - [Como funciona la sensibilidad](https://mlx-optiq.com/docs/sensitivity)

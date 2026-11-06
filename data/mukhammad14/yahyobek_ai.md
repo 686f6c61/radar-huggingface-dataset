@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Mukhammad14/Yahyobek_ai` es un repositorio alojado en HuggingFace por el usuario Mukhammad14 cuya model card pública no contiene más información que la declaración de licencia (`apache-2.0`). No se especifica el pipeline, la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni la composición de los datos de entrenamiento. Tampoco se incluyen ficheros de configuración, tokenizador o pesos descritos en la documentación accesible.
+`Mukhammad14/Yahyobek_ai` es un repositorio alojado en Hugging Face por el usuario Mukhammad14 cuya model card pública no contiene más información que la declaración de licencia (`apache-2.0`). No se especifica el pipeline, la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni la composición de los datos de entrenamiento. Tampoco se incluyen ficheros de configuración, tokenizador o pesos descritos en la documentación accesible.
 
 El único dato operativo verificable es su licencia Apache 2.0, permisiva para uso comercial y modificación, y las métricas sociales del repositorio: 0 descargas y 1 like desde su creación. La fecha declarada de creación y de última actualización es el 27 de octubre de 2026, posterior a la fecha actual, lo que constituye una anomalía de metadatos y sugiere que se trata de un repositorio de pruebas, una subida automatizada o un proyecto en fase embrionaria.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composici
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; el campo de idiomas no está informado.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
-- No se ha publicado ninguna demostración, espacio de HuggingFace ni ejemplos de uso que permitan inferir el comportamiento del modelo.
+- No se ha publicado ninguna demostración, espacio de Hugging Face ni ejemplos de uso que permitan inferir el comportamiento del modelo.
 
 ## Casos de uso
 
@@ -93,7 +93,7 @@ No disponible. Sin conocer el número de parámetros, la arquitectura, el contex
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mukhammad14/Yahyobek_ai
+- Repositorio en Hugging Face: https://huggingface.co/Mukhammad14/Yahyobek_ai
 - Artículo técnico: no disponible
 - Blog o notas de versión: no disponible
 - Repositorio de código: no disponible

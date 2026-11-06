@@ -95,10 +95,10 @@ Los datos publicos sobre las alternativas son limitados, por lo que varias celda
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicksondickson/VeriLoop-E2-oQ8e-mtp-bf16-MLX
+- Modelo en Hugging Face: https://huggingface.co/dicksondickson/VeriLoop-E2-oQ8e-mtp-bf16-MLX
 - Modelo base: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
 - Runtime oMLX: https://github.com/jundot/omlx
-- Anuncio de VeriLoop E2 en el foro de HuggingFace: https://discuss.huggingface.co/t/veriloop-e2-release-27b-post-trained-model-and-full-gguf-precision-ladder-from-bf16-to-iq1-m/180723
+- Anuncio de VeriLoop E2 en el foro de Hugging Face: https://discuss.huggingface.co/t/veriloop-e2-release-27b-post-trained-model-and-full-gguf-precision-ladder-from-bf16-to-iq1-m/180723
 - Informe tecnico (OpenReview, Evidence-Governed Recurrence): https://openreview.net/pdf?id=P6FIQILHwX
 - Articulo sobre la escalera GGUF de VeriLoop E2: https://korshunov.ai/en/article/28384-veriloop-e2-27b-post-trained-model-with-gguf-ladder-from-bf16-to-iq1-m/
 - Otra cuantizacion MLX del mismo autor: https://huggingface.co/dicksondickson/Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX

@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/armanakbari4/fastwam-ur3-drawer-basket)
-- [Perfil del autor en HuggingFace](https://huggingface.co/armanakbari4/models)
+- [Hugging Face - modelo](https://huggingface.co/armanakbari4/fastwam-ur3-drawer-basket)
+- [Perfil del autor en Hugging Face](https://huggingface.co/armanakbari4/models)
 - [Repositorio oficial de FastWAM en GitHub](https://github.com/yuantianyuan01/FastWAM)
 - [Paper de FastWAM (arXiv)](https://arxiv.org/pdf/2604.27792)

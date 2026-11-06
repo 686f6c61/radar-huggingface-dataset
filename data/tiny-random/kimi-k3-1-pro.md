@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-random/kimi-k3.1-pro | 219,2 M | 1.048.576 (declarado) | Réplica aleatoria de test | no disponible | HuggingFace |
-| tiny-random/kimi-k3 | no disponible | 1.048.576 (declarado) | Réplica aleatoria de test de K3 | no disponible | HuggingFace |
-| moonshotai/Kimi-K3.1-Pro | 57,36 B BF16 + 1,45 T U8 (checkpoint) | 1.048.576 | Modelo real de producción | no disponible | HuggingFace (referenciado) |
+| tiny-random/kimi-k3.1-pro | 219,2 M | 1.048.576 (declarado) | Réplica aleatoria de test | no disponible | Hugging Face |
+| tiny-random/kimi-k3 | no disponible | 1.048.576 (declarado) | Réplica aleatoria de test de K3 | no disponible | Hugging Face |
+| moonshotai/Kimi-K3.1-Pro | 57,36 B BF16 + 1,45 T U8 (checkpoint) | 1.048.576 | Modelo real de producción | no disponible | Hugging Face (referenciado) |
 
 La comparación con alternativas de la misma categoría (modelos tiny de test) se limita a `tiny-random/kimi-k3`, del que este repo hereda geometría y parches. Frente al checkpoint real, la diferencia de escala es de cuatro órdenes de magnitud en parámetros y de más de diez mil en tamaño de almacenamiento.
 
@@ -82,7 +82,7 @@ La comparación con alternativas de la misma categoría (modelos tiny de test) s
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/tiny-random/kimi-k3.1-pro
+- Repo Hugging Face: https://huggingface.co/tiny-random/kimi-k3.1-pro
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Réplica hermana K3: https://huggingface.co/tiny-random/kimi-k3
 - Receta de serving vLLM citada: https://recipes.vllm.ai/moonshotai/Kimi-K3.1-Pro

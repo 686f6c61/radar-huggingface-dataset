@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un adaptad
 
 El adaptador se aplica sobre `unsloth/Qwen3-14B-unsloth-bnb-4bit`, es decir, un Qwen3-14B denso cuantizado a 4 bits con las optimizaciones de Unsloth para entrenamiento e inferencia con bajo consumo de memoria. El adaptador en si es un LoRA (PEFT 0.21.2) entrenado con GRPO mediante TRL y Unsloth, segun las etiquetas del repositorio. GRPO es un algoritmo de RL sin modelo critico que estima la ventaja relativa dentro de un grupo de respuestas muestreadas para la misma pregunta, lo que lo hace adecuado para tareas con recompensa verificable (matematicas, codigo, formato estructurado).
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, las funciones de recompensa, el rango y alpha del LoRA, la tasa de aprendizaje ni el numero de pasos. La model card es una plantilla estandar de HuggingFace sin rellenar, por lo que todos los apartados de datos, hiperparametros y evaluacion figuran como "More Information Needed". El sufijo `v18rl3` sugiere una decimoctava iteracion de un pipeline de entrenamiento con al menos tres rondas de RL, pero es una inferencia a partir del nombre, no un dato documentado.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, las funciones de recompensa, el rango y alpha del LoRA, la tasa de aprendizaje ni el numero de pasos. La model card es una plantilla estandar de Hugging Face sin rellenar, por lo que todos los apartados de datos, hiperparametros y evaluacion figuran como "More Information Needed". El sufijo `v18rl3` sugiere una decimoctava iteracion de un pipeline de entrenamiento con al menos tres rondas de RL, pero es una inferencia a partir del nombre, no un dato documentado.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Prototipado de asistentes conversacionales tecnicos: integrado en un pipeline de transformers con el base cuantizado, permite levantar rapidamente un chatbot de demostracion para evaluar internamente si el refuerzo mejora la coherencia en dialogos tecnicos.
 - Evaluacion comparativa de tecnicas de RL: util como uno de los brazos en un estudio que compare GRPO frente a DPO o SFT sobre el mismo base, midiendo tasas de exito en problemas con respuesta verificable.
 - Base para nuevo fine-tuning: el adaptador puede fusionarse con el base y servir como inicializacion para un entrenamiento posterior especifico de dominio, aprovechando el ajuste previo con RL.
-- Docencia y formacion: ejemplo didactico de como se publica un adaptador PEFT entrenado con GRPO, incluyendo la estructura de repositorio y las etiquetas de HuggingFace.
+- Docencia y formacion: ejemplo didactico de como se publica un adaptador PEFT entrenado con GRPO, incluyendo la estructura de repositorio y las etiquetas de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| logicer-archfull-spec-all_v18rl3-14b-lora | ~14B (base) + LoRA | no disponible | GRPO sobre Qwen3-14B | no disponible | HuggingFace, 0 descargas |
+| logicer-archfull-spec-all_v18rl3-14b-lora | ~14B (base) + LoRA | no disponible | GRPO sobre Qwen3-14B | no disponible | Hugging Face, 0 descargas |
 | Qwen3-14B (base) | ~14B | largo (no confirmado aqui) | preentrenamiento + post-entrenamiento | Apache 2.0 (segun Qwen, no verificado en esta ficha) | ampliamente disponible |
-| Adaptadores LoRA comunitarios sobre Qwen3-14B | ~14B (base) + LoRA | depende del base | SFT o RL variable | variable, a menudo sin declarar | HuggingFace, muchos con traccion baja |
+| Adaptadores LoRA comunitarios sobre Qwen3-14B | ~14B (base) + LoRA | depende del base | SFT o RL variable | variable, a menudo sin declarar | Hugging Face, muchos con traccion baja |
 
 La comparativa cuantitativa de rendimiento no es posible: no hay benchmarks publicados para este adaptador ni datos verificados en la informacion proporcionada sobre los otros adaptadores comunitarios.
 
@@ -84,7 +84,7 @@ La comparativa cuantitativa de rendimiento no es posible: no hay benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/batuhan-elibuyuk/logicer-archfull-spec-all_v18rl3-14b-lora
+- Modelo en Hugging Face: https://huggingface.co/batuhan-elibuyuk/logicer-archfull-spec-all_v18rl3-14b-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - TRL (Transformer Reinforcement Learning): https://github.com/huggingface/trl

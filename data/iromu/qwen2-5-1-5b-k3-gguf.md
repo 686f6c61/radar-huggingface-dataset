@@ -75,7 +75,7 @@ El modelo k3 se diferencia por su especialización en tool calling y agentes, mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/Qwen2.5-1.5B-k3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/iromu/Qwen2.5-1.5B-k3-GGUF
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Dataset de destilación: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation
 - Qwen2.5-1.5B-Instruct-GGUF (referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF

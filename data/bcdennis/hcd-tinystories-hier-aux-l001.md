@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bcdennis/hcd-tinystories-hier-aux-l001` es un checkpoint de investigación publicado en HuggingFace por el usuario bcdennis bajo el identificador de brazo experimental `hcd-aux`. Se trata de un modelo entrenado desde cero (*from-scratch*) sobre el corpus TinyStories (`roneneldan/TinyStories`, 200.000 historias, tokenizador GPT-2) y etiquetado por su autor con la familia `hierarchical-concept-diffusion`. No es, por tanto, un modelo de propósito general ni un producto listo para producción: es un artefacto de experimentación con 0 descargas y 0 likes en el momento de redactar esta ficha.
+`bcdennis/hcd-tinystories-hier-aux-l001` es un checkpoint de investigación publicado en Hugging Face por el usuario bcdennis bajo el identificador de brazo experimental `hcd-aux`. Se trata de un modelo entrenado desde cero (*from-scratch*) sobre el corpus TinyStories (`roneneldan/TinyStories`, 200.000 historias, tokenizador GPT-2) y etiquetado por su autor con la familia `hierarchical-concept-diffusion`. No es, por tanto, un modelo de propósito general ni un producto listo para producción: es un artefacto de experimentación con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 El dato técnico central es su tamaño: 45.166.464 parámetros (aproximadamente 45,2 millones), entrenado durante 12.000 pasos con longitud de secuencia 256 y batch de 32, con AdamW (lr 0,0001, weight decay 0,1, scheduler coseno y 200 pasos de warmup). El autor reporta una pérdida final de validación (LM loss) de 2,3521, que es el único dato de rendimiento disponible.
 
@@ -81,8 +81,8 @@ La comparación se establece con los modelos de la familia TinyStories (Eldan y 
 
 | Modelo | Parametros | Contexto | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bcdennis/hcd-tinystories-hier-aux-l001 | 45,2 M | 256 tokens | TinyStories `train[:200k]` | no disponible | repo HuggingFace de 0,3 GB, 0 descargas |
-| TinyStories (Eldan y Li, 2023), rango publicado | 1 M - 33 M segun el resumen del trabajo | no disponible en la informacion proporcionada | TinyStories | consultar el paper y el repositorio originales | modelos y dataset publicados en HuggingFace |
+| bcdennis/hcd-tinystories-hier-aux-l001 | 45,2 M | 256 tokens | TinyStories `train[:200k]` | no disponible | repo Hugging Face de 0,3 GB, 0 descargas |
+| TinyStories (Eldan y Li, 2023), rango publicado | 1 M - 33 M segun el resumen del trabajo | no disponible en la informacion proporcionada | TinyStories | consultar el paper y el repositorio originales | modelos y dataset publicados en Hugging Face |
 | Reproducciones independientes de TinyStories (p. ej. TinyStoriesv1) | 10 M - 33 M segun el resumen del repositorio | no disponible | TinyStories | no disponible | repositorio GitHub con scripts de entrenamiento |
 
 Datos de rendimiento comparativo: no disponible. El autor del modelo evaluado no publica MMLU, HumanEval ni GSM8K, y los resultados de perplejidad entre implementaciones no son comparables si difieren el tokenizador, el empaquetado de secuencias o el subconjunto de validación.
@@ -101,8 +101,8 @@ Datos de rendimiento comparativo: no disponible. El autor del modelo evaluado no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcdennis/hcd-tinystories-hier-aux-l001
+- Modelo en Hugging Face: https://huggingface.co/bcdennis/hcd-tinystories-hier-aux-l001
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
-- Modelos entrenados sobre el dataset TinyStories (explorador de HuggingFace): https://huggingface.co/models?dataset=dataset:roneneldan/TinyStories
+- Modelos entrenados sobre el dataset TinyStories (explorador de Hugging Face): https://huggingface.co/models?dataset=dataset:roneneldan/TinyStories
 - Reproducción con scripts de entrenamiento (TinyStoriesv1): https://github.com/ihebgafsi/TinyStoriesv1
 - Paper de referencia del dataset y de la familia TinyStories (Eldan y Li, 2023): https://arxiv.org/abs/2305.07759

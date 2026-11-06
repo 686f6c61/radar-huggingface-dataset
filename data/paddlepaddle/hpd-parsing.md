@@ -63,7 +63,7 @@ No se han publicado resultados en benchmarks generales como MMLU, HumanEval o GS
 - El modelo tiene 1,07B parámetros y el repositorio ocupa 2,8 GB (probablemente pesos en fp16/bf16). Con cuantización (no especificada) podría reducirse el footprint.
 - VRAM estimada: para inferencia en fp16, los pesos ocupan aproximadamente 2 GB; con overhead de activaciones y KV cache, una GPU con 8-12 GB de VRAM debería ser suficiente para procesar páginas individuales. No se proporciona un valor exacto.
 - GPU recomendadas: por el tamaño, modelos como RTX 3060 12GB, RTX 4070, RTX 4090 o GPUs de datacenter como A10, L4 o A100 serían adecuadas. No hay una recomendación oficial en la documentación.
-- Opciones de despliegue: requiere una build personalizada de vLLM (basada en vLLM v0.17.1) que implementa el forking dinámico de requests y la adaptación de P-MTP. También hay un demo en HuggingFace Spaces (hugging-apps/hpd-parsing).
+- Opciones de despliegue: requiere una build personalizada de vLLM (basada en vLLM v0.17.1) que implementa el forking dinámico de requests y la adaptación de P-MTP. También hay un demo en Hugging Face Spaces (hugging-apps/hpd-parsing).
 - Latencia y throughput: el throughput pico reportado es de 4.752 TPS, medido en OmniDocBench v1.6. No se especifican latencias por documento.
 
 ## Comparativa con modelos similares
@@ -82,8 +82,8 @@ No se dispone de datos comparativos detallados con otros parsers de documentos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PaddlePaddle/HPD-Parsing
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/hugging-apps/hpd-parsing
+- Modelo en Hugging Face: https://huggingface.co/PaddlePaddle/HPD-Parsing
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/hugging-apps/hpd-parsing
 - Paper en arXiv: https://arxiv.org/abs/2607.18839
 - Repositorio de PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
 - Cuenta oficial de PaddlePaddle en X: https://x.com/PaddlePaddle

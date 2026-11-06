@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chefmind-lora es un repositorio alojado en HuggingFace bajo el identificador `Osamaelbably87/chefmind-lora`, publicado por el usuario Osamaelbably87. La información disponible es mínima: la model card consiste íntegramente en la plantilla automática de HuggingFace para modelos de `transformers`, con todos los campos marcados como "[More Information Needed]". No se declara autoría efectiva, origen de los datos, procedimiento de entrenamiento ni resultados de evaluación.
+Chefmind-lora es un repositorio alojado en Hugging Face bajo el identificador `Osamaelbably87/chefmind-lora`, publicado por el usuario Osamaelbably87. La información disponible es mínima: la model card consiste íntegramente en la plantilla automática de Hugging Face para modelos de `transformers`, con todos los campos marcados como "[More Information Needed]". No se declara autoría efectiva, origen de los datos, procedimiento de entrenamiento ni resultados de evaluación.
 
 El repositorio ocupa 0,2 GB, está etiquetado con `transformers`, `safetensors` y `endpoints_compatible`, y fue creado el 9 de octubre de 2026 (fecha según los metadatos del Hub, posterior a la actualización del mismo día). El nombre del repositorio incluye el sufijo "lora", lo que sugiere que podría tratarse de un adaptador LoRA en lugar de un modelo completo, pero esto no está confirmado en ninguna parte de la documentación publicada.
 
@@ -33,7 +33,7 @@ El interés actual de esta ficha es limitado y fundamentalmente negativo: regist
 
 No disponible. La model card no describe la arquitectura del modelo (no se indica si es un transformer denso, un modelo de mezcla de expertos, un SSM o una arquitectura híbrida), ni el número de parámetros, ni la longitud de contexto soportada.
 
-Tampoco hay información sobre el entrenamiento: no se especifican el número de tokens, la composición del dataset, la existencia de fases de ajuste por instrucciones, RLHF o DPO, ni los hiperparámetros utilizados. El apartado "Training Hyperparameters" de la plantilla está marcado como "[More Information Needed]", igual que los apartados de datos de entrenamiento y de infraestructura de cómputo. La única referencia técnica presente es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático; se trata de un enlace incluido por defecto en la plantilla de HuggingFace y no de una descripción de la arquitectura ni del entrenamiento del modelo.
+Tampoco hay información sobre el entrenamiento: no se especifican el número de tokens, la composición del dataset, la existencia de fases de ajuste por instrucciones, RLHF o DPO, ni los hiperparámetros utilizados. El apartado "Training Hyperparameters" de la plantilla está marcado como "[More Information Needed]", igual que los apartados de datos de entrenamiento y de infraestructura de cómputo. La única referencia técnica presente es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático; se trata de un enlace incluido por defecto en la plantilla de Hugging Face y no de una descripción de la arquitectura ni del entrenamiento del modelo.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Tampoco hay información sobre el entrenamiento: no se especifican el número de
 - No se declara soporte de agentes ni de razonamiento multi-paso.
 - No se declaran capacidades multilingües ni idiomas concretos.
 - No se declaran capacidades especiales (modo de razonamiento explícito, visión, audio u otras).
-- La etiqueta `endpoints_compatible` indica únicamente que el repositorio es desplegable mediante HuggingFace Inference Endpoints según la clasificación automática del Hub; no aporta información sobre qué tareas puede resolver.
+- La etiqueta `endpoints_compatible` indica únicamente que el repositorio es desplegable mediante Hugging Face Inference Endpoints según la clasificación automática del Hub; no aporta información sobre qué tareas puede resolver.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ La model card no incluye la sección de evaluación cumplimentada (todos los cam
 - VRAM estimada para inferencia: no disponible. Depende por completo del tamaño del modelo base y del tipo de artefacto, datos que no se declaran.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no se puede determinar con la información disponible. El tamaño del repositorio (0,2 GB) es compatible con un adaptador LoRA de dimensiones moderadas, pero no permite inferir los requisitos de memoria en inferencia, que vienen determinados por el modelo base.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No hay información sobre compatibilidad con vLLM, llama.cpp, Ollama, TGI u otros servidores de inferencia, ni sobre la existencia de versiones cuantizadas en formato GGUF.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay información sobre compatibilidad con vLLM, llama.cpp, Ollama, TGI u otros servidores de inferencia, ni sobre la existencia de versiones cuantizadas en formato GGUF.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,12 +76,12 @@ No disponible. No es posible establecer comparaciones porque se desconoce la cat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Osamaelbably87/chefmind-lora | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Osamaelbably87/chefmind-lora | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Model card sin cumplimentar: toda la documentación es la plantilla automática de HuggingFace, sin ningún dato aportado por el autor.
+- Model card sin cumplimentar: toda la documentación es la plantilla automática de Hugging Face, sin ningún dato aportado por el autor.
 - Licencia no declarada: no puede determinarse si se permite el uso comercial, la redistribución o la modificación del artefacto. En ausencia de licencia explícita, debe asumirse que no hay permisos concedidos.
 - Autoría y procedencia opacas: no se indica el modelo base, el dataset de entrenamiento ni el procedimiento de ajuste, lo que impide auditar sesgos o trazar el origen de los pesos.
 - Riesgo de alucinación: no evaluable, al no existir benchmarks ni descripción del entrenamiento.
@@ -93,7 +93,7 @@ No disponible. No es posible establecer comparaciones porque se desconoce la cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Osamaelbably87/chefmind-lora
+- Repositorio en Hugging Face: https://huggingface.co/Osamaelbably87/chefmind-lora
 - Articulo referenciado en las etiquetas del Hub (Lacoste et al., 2019, sobre estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de codigo y demo del modelo: no disponibles.

@@ -85,7 +85,7 @@ No hay alternativas publicadas específicas de atributos de hablante y calidad p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tvosch/Qwen3-ASR-0.6B-Jev-Dutch
+- Modelo en Hugging Face: https://huggingface.co/tvosch/Qwen3-ASR-0.6B-Jev-Dutch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Paper Qwen-Audio-Jev (arXiv): https://arxiv.org/abs/2610.21614
 - Dataset Common Voice 17: https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0

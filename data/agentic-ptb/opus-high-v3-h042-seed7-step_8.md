@@ -70,6 +70,6 @@ No es posible realizar una comparativa rigurosa porque no se han publicado resul
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h042.seed7.step_8)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h042.seed7.step_8)
 - [Dataset del run opus-high-v3](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)

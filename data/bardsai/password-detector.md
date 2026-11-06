@@ -68,7 +68,7 @@ CredData corresponde a 64 repositorios reservados (held-out) de Samsung CredData
 - Memoria: al ocupar entre 97 KB y 0,7 MB de pesos int8, el consumo de RAM es minimo (no se publica una cifra exacta).
 - Cualquier maquina moderna sirve; no hay requisitos de GPU dedicadas (no aplican A100, H100 ni RTX 4090).
 - Dependencias de software: Python, `numpy` y `onnxruntime>=1.17`.
-- Despliegue: descarga directa desde HuggingFace con `huggingface-cli`; uso como libreria Python o CLI (`python -m password_detector`). No aplica vLLM, llama.cpp, Ollama ni TGI al no ser un modelo generativo.
+- Despliegue: descarga directa desde Hugging Face con `huggingface-cli`; uso como libreria Python o CLI (`python -m password_detector`). No aplica vLLM, llama.cpp, Ollama ni TGI al no ser un modelo generativo.
 - Rendimiento medido: 138 KB/s en cascada, 137 KB/s en tiny y 66 KB/s en default, por nucleo de CPU.
 
 ## Comparativa con modelos similares
@@ -96,6 +96,6 @@ La ventaja de password-detector frente a las alternativas basadas en reglas es s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bardsai/password-detector
+- Modelo en Hugging Face: https://huggingface.co/bardsai/password-detector
 - Samsung CredData (dataset de evaluacion): https://github.com/Samsung/CredData
 - Paper de referencia (Ahmed et al. 2025, conjunto GitHub issues): https://arxiv.org/abs/2410.23657

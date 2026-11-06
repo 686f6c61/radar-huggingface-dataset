@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leandrosell/nlp-image-captioning-2024` no es un modelo entrenado de captioning de imagenes, sino un repositorio de notas de investigacion sobre ese tema. La model card lo declara explicitamente: contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, pero "no se presenta como un paper completado ni como una release de modelos entrenados". El unico artefacto con pesos es `model.safetensors`, descrito como checkpoint de inicializacion, con 33.088 parametros totales segun los metadatos de HuggingFace: tres ordenes de magnitud por debajo de cualquier encoder visual o modelo de lenguaje utilizable.
+`leandrosell/nlp-image-captioning-2024` no es un modelo entrenado de captioning de imagenes, sino un repositorio de notas de investigacion sobre ese tema. La model card lo declara explicitamente: contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, pero "no se presenta como un paper completado ni como una release de modelos entrenados". El unico artefacto con pesos es `model.safetensors`, descrito como checkpoint de inicializacion, con 33.088 parametros totales segun los metadatos de Hugging Face: tres ordenes de magnitud por debajo de cualquier encoder visual o modelo de lenguaje utilizable.
 
 El repositorio esta publicado por el usuario `leandrosell` bajo licencia MIT, con 0 descargas y 0 likes en el momento de la consulta, y un tamano de 0.0 GB. No declara pipeline, no declara idiomas y no incluye tokenizer, procesador de imagen ni codigo de inferencia. La etiqueta `transformer` procede de los tags del autor, pero la configuracion arquitectonica concreta (capas, dimensiones, atencion) no esta disponible en la informacion proporcionada.
 
@@ -55,7 +55,7 @@ No hay evidencia de entrenamiento: la model card afirma que no se han publicado 
 - Docencia y formacion interna: emplear el repositorio como ejemplo de buena practica de transparencia, al declarar explicitamente que no hay benchmark, ablacion ni checkpoint entrenado.
 - Arranque de un fork experimental: partir de `config.json` y `training_args.json` como esqueleto de configuracion para un transformer pequeno de captioning, sustituyendo el checkpoint de inicializacion por pesos reales.
 - Verificacion de cadena de custodia documental: usar el historial del repo (creado y actualizado el 2026-10-21 con 5 segundos de diferencia) para ilustrar como detectar repositorios automaticos o sin mantenimiento en un pipeline de seleccion de dependencias.
-- Referencia en catalogos internos de modelos: registrar el artefacto con su estado real (notas, no modelo) para evitar que un scraper de HuggingFace lo incorpore por error a un inventario de modelos desplegables.
+- Referencia en catalogos internos de modelos: registrar el artefacto con su estado real (notas, no modelo) para evitar que un scraper de Hugging Face lo incorpore por error a un inventario de modelos desplegables.
 
 ## Benchmarks y rendimiento
 
@@ -97,7 +97,7 @@ Conclusion de la comparativa: el artefacto evaluado no es funcionalmente compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leandrosell/nlp-image-captioning-2024
+- Hugging Face: https://huggingface.co/leandrosell/nlp-image-captioning-2024
 - Perfil del autor: https://huggingface.co/leandrosell
 - Calendario de releases de modelos de IA (contexto de mercado): https://www.scriptbyai.com/ai-model-release-calendar/
 - Vision Arena, ranking de captioning por preferencia de usuarios: https://arena.ai/leaderboard/chat/vision/captioning

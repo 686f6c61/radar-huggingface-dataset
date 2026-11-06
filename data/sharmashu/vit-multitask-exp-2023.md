@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sharmashu/vit-multitask-exp-2023 | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
+| sharmashu/vit-multitask-exp-2023 | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
 | ViT-Tiny (Dosovitskiy et al.) | ~5,7 M | 224x224, parches 16x16 | resultados publicados en ImageNet | Apache-2.0 (referencia) | ampliamente disponible |
 | DeiT-Tiny | ~5,7 M | 224x224, parches 16x16 | resultados publicados en ImageNet | Apache-2.0 (referencia) | ampliamente disponible |
 
@@ -83,8 +83,8 @@ No existen datos de rendimiento comparables para este repositorio, por lo que la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sharmashu/vit-multitask-exp-2023
-- Repositorio de código: incluido en el propio repositorio de HuggingFace (`train.py`)
+- Hugging Face: https://huggingface.co/sharmashu/vit-multitask-exp-2023
+- Repositorio de código: incluido en el propio repositorio de Hugging Face (`train.py`)
 - Configuración de arquitectura: `config.json` (dentro del repositorio)
 - Receta de experimento por defecto: `training_args.json` (dentro del repositorio)
 - Papers, blogs o demos adicionales: no disponible (los resultados de búsqueda web obtenidos no contienen información relacionada con este modelo)

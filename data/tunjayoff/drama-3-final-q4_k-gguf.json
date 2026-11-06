@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "tunjayoff/Drama-3-final-Q4_K-GGUF",
+  "slug": "tunjayoff-drama-3-final-q4_k-gguf",
+  "author": "tunjayoff",
+  "url": "https://huggingface.co/tunjayoff/Drama-3-final-Q4_K-GGUF",
+  "created_at": "2026-11-05T09:59:09.000Z",
+  "updated_at": "2026-11-06T00:53:23.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "speech.cpp",
+  "languages": [],
+  "tags": [
+    "speech.cpp",
+    "gguf",
+    "ggml",
+    "fish-audio",
+    "text-to-speech",
+    "drama-3",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 35774376977,
+  "parameters_human": "35.77B",
+  "storage_bytes": 20787264352,
+  "storage_human": "20.8 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tunjayoff/Drama-3-final-Q4_K-GGUF · Hugging Face",
+      "url": "https://huggingface.co/tunjayoff/Drama-3-final-Q4_K-GGUF",
+      "snippet": "tunjayoff / Drama-3-final-Q4_K-GGUF Like 0 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
+    },
+    {
+      "title": "Drama 3 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/drama-3.html",
+      "snippet": "Download Drama 3 GGUF model. 3.67 GB, 345,573 downloads."
+    }
+  ]
+}

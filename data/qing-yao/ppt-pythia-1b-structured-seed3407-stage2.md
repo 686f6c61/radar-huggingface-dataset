@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-1b-structured-seed3407-stage2` es un ajuste fino (SFT) publicado por el usuario qing-yao en HuggingFace. Por su nombre y su etiqueta de arquitectura (`gpt_neox`), se trata de un derivado de la familia Pythia de EleutherAI, concretamente de la variante de 1B parametros, con 1.011.781.632 parametros reales confirmados via safetensors. El modelo se ha entrenado con la libreria TRL (version 0.23.0) mediante aprendizaje supervisado (SFT), segun indica su model card.
+El modelo `ppt-pythia-1b-structured-seed3407-stage2` es un ajuste fino (SFT) publicado por el usuario qing-yao en Hugging Face. Por su nombre y su etiqueta de arquitectura (`gpt_neox`), se trata de un derivado de la familia Pythia de EleutherAI, concretamente de la variante de 1B parametros, con 1.011.781.632 parametros reales confirmados via safetensors. El modelo se ha entrenado con la libreria TRL (version 0.23.0) mediante aprendizaje supervisado (SFT), segun indica su model card.
 
 La relevancia de este tipo de publicaciones es experimental: se enmarca en lineas de trabajo sobre ajuste estructurado y reproducibilidad (el sufijo `seed3407` apunta a una semilla fija, y `stage2` sugiere un entrenamiento por etapas). No obstante, la model card es practicamente vacia: no documenta el modelo base exacto, el dataset de entrenamiento, la composicion de datos ni los hiperparametros, y la licencia aparece como "license" sin concretar.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-pythia-1b-structured-seed3407-stage2 | 1,01B | no disponible | no disponible | HuggingFace (184 descargas) |
-| Pythia-1B (EleutherAI) | 1,0B | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
-| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | HuggingFace, con benchmarks publicados |
-| Qwen2.5-1.5B | 1,5B | 32.768 tokens | Apache 2.0 (mayoria de variantes) | HuggingFace, con benchmarks publicados |
+| ppt-pythia-1b-structured-seed3407-stage2 | 1,01B | no disponible | no disponible | Hugging Face (184 descargas) |
+| Pythia-1B (EleutherAI) | 1,0B | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
+| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | Hugging Face, con benchmarks publicados |
+| Qwen2.5-1.5B | 1,5B | 32.768 tokens | Apache 2.0 (mayoria de variantes) | Hugging Face, con benchmarks publicados |
 
 El modelo analizado no publica resultados de evaluacion, por lo que no es posible comparar rendimiento numerico frente a las alternativas. La comparacion se limita a tamano y disponibilidad de pesos. Frente a los modelos de referencia de la misma categoria, carece de licencia explicita y de documentacion de entrenamiento, lo que limita su uso comercial directo.
 
@@ -87,7 +87,7 @@ El modelo analizado no publica resultados de evaluacion, por lo que no es posibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-structured-seed3407-stage2
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-structured-seed3407-stage2
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de TRL (von Werra et al., 2020): referenciado en la propia model card
 - Modelo base probable, Pythia-1B de EleutherAI: https://huggingface.co/EleutherAI/pythia-1b (no confirmado por el autor)

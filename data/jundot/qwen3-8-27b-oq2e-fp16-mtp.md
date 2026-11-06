@@ -103,7 +103,7 @@ Comparativa de rendimiento (calidad de tarea): no disponible. No hay benchmarks 
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/Jundot/Qwen3.8-27B-oQ2e-fp16-mtp
+- Hugging Face del checkpoint: https://huggingface.co/Jundot/Qwen3.8-27B-oQ2e-fp16-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de la herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385

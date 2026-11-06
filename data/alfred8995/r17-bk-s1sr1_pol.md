@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-s1sr1_pol` es un modelo de lenguaje publicado en HuggingFace por el usuario Alfred Smith (handle `alfred8995`) el 23 de octubre de 2026. Se trata de un checkpoint de 1.414.111.232 parámetros (aproximadamente 1,41 mil millones) almacenado en formato safetensors, con un repositorio de 2,8 GB. La etiqueta `qwen3` asociada al repositorio sugiere que deriva de la familia Qwen3 de Alibaba, aunque la ficha no documenta la arquitectura base de forma explícita.
+`alfred8995/r17-bk-s1sr1_pol` es un modelo de lenguaje publicado en Hugging Face por el usuario Alfred Smith (handle `alfred8995`) el 23 de octubre de 2026. Se trata de un checkpoint de 1.414.111.232 parámetros (aproximadamente 1,41 mil millones) almacenado en formato safetensors, con un repositorio de 2,8 GB. La etiqueta `qwen3` asociada al repositorio sugiere que deriva de la familia Qwen3 de Alibaba, aunque la ficha no documenta la arquitectura base de forma explícita.
 
 El modelo presenta un perfil atípico: acceso restringido (gated), licencia catalogada como `other`, cero descargas y cero valoraciones en el momento de la consulta, y ausencia total de model card, pipeline declarado, idiomas soportados o datos de entrenamiento. Esto lo convierte en un artefacto de investigación opaco más que en un modelo listo para producción.
 
@@ -79,7 +79,7 @@ La diferencia practica fundamental no es de rendimiento sino de trazabilidad: lo
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, tokenizador, plantilla de prompt ni hiperparametros, lo que impide reproducir o auditar el modelo.
 - Licencia `other` sin texto visible en la informacion disponible: no se puede confirmar si el uso comercial esta permitido, restringido o prohibido. Requiere lectura del acuerdo al solicitar acceso.
-- Acceso gated: la descarga exige aceptar condiciones en HuggingFace; no es un artefacto de uso inmediato y puede denegarse.
+- Acceso gated: la descarga exige aceptar condiciones en Hugging Face; no es un artefacto de uso inmediato y puede denegarse.
 - Riesgo de alucinacion: no cuantificado; sin evaluaciones de factualidad ni de calibracion.
 - Sesgos: desconocidos. Al no conocerse la composicion del dataset ni el idioma de entrenamiento, no es posible anticipar sesgos linguisticos, culturales o de dominio.
 - Idiomas: no declarados. El rendimiento en castellano es una incognita absoluta y no deberia asumirse por la etiqueta `qwen3`.
@@ -90,7 +90,7 @@ La diferencia practica fundamental no es de rendimiento sino de trazabilidad: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-s1sr1_pol
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-s1sr1_pol
 - Perfil del autor: https://huggingface.co/alfred8995
 - Datasets del autor: https://huggingface.co/alfred8995/datasets
 - Agregador de benchmarks consultado (sin datos del modelo): https://benchlm.ai/

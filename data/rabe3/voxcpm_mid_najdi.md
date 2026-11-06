@@ -90,7 +90,7 @@ La ventaja principal de este modelo es el control de pronunciación vía diacrí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rabe3/VoxCPM_mid_najdi
+- Modelo en Hugging Face: https://huggingface.co/Rabe3/VoxCPM_mid_najdi
 - Repositorio oficial de VoxCPM (OpenBMB): https://github.com/OpenBMB/VoxCPM/
 - Sitio web de VoxCPM: https://voxcpm.com/en/
 - Nodo de ComfyUI para VoxCPM: https://github.com/wildminder/ComfyUI-VoxCPM

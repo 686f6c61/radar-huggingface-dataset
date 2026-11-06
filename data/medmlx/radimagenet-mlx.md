@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedMLX/radimagenet-mlx | no disponible por arquitectura | no aplica | sin benchmarks publicados | MIT | HuggingFace (MLX) |
+| MedMLX/radimagenet-mlx | no disponible por arquitectura | no aplica | sin benchmarks publicados | MIT | Hugging Face (MLX) |
 | RadImageNet original (Keras) | mismos backbones | no aplica | sin benchmarks en esta ficha | MIT | GitHub + archivo en Drive |
 | Encoders ImageNet (ResNet50, etc.) | ~25 M (ResNet50) | no aplica | ampliamente benchmarkeados | variable | multiples frameworks |
 
@@ -82,7 +82,7 @@ La comparacion con encoders genericos de ImageNet es relevante porque RadImageNe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MedMLX/radimagenet-mlx
+- Hugging Face: https://huggingface.co/MedMLX/radimagenet-mlx
 - Repositorio del autor: https://github.com/MedMLX/radimagenet-mlx
 - Proyecto RadImageNet oficial: https://github.com/BMEII-AI/RadImageNet
 - Licencia del proyecto original: https://github.com/BMEII-AI/RadImageNet/blob/main/LICENSE

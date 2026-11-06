@@ -54,5 +54,5 @@ No disponible. No se identifica una categoría de modelo comparable, ya que no h
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/carry-agent
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/carry-agent
 - Referencia a CARTO en GitHub (mencionada en la model card): https://github.com/SNAPKITTYWEST/cartographer-agent

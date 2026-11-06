@@ -57,12 +57,12 @@ Condiciones de evaluación: decodificación greedy, single-turn, sin ejemplos, s
 - VRAM estimada para inferencia en bf16: aproximadamente 8-10 GB para el modelo base (4B parámetros) más overhead de activaciones y adaptador.
 - GPU recomendadas: NVIDIA A100 (usada en entrenamiento), RTX 3090, RTX 4090, o cualquier GPU con 12 GB o más de VRAM.
 - Es ejecutable en GPUs de consumo (RTX 3080/3090/4090) con cuantización (por ejemplo, 4 bits mediante bitsandbytes), aunque no se proporcionan configuraciones oficiales.
-- Opciones de despliegue: HuggingFace `transformers` con `peft` (código de ejemplo incluido en la model card), o bien exportar el adaptador a GGUF para usar con llama.cpp/Ollama (no documentado oficialmente).
+- Opciones de despliegue: Hugging Face `transformers` con `peft` (código de ejemplo incluido en la model card), o bien exportar el adaptador a GGUF para usar con llama.cpp/Ollama (no documentado oficialmente).
 - Latencia y throughput: no disponibles; dependen del hardware y de la configuración de cuantización.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros adaptadores o modelos de la misma categoría en la documentación proporcionada. Como referencia conceptual, el modelo base Qwen3-4B-Instruct-2507 sin adaptador obtiene un rendimiento significativamente superior en GSM8K (típicamente por encima del 80%), pero no se ha publicado el dato exacto en esta ficha. Tampoco se han encontrado otros adaptadores del mismo proyecto publicados en HuggingFace con resultados comparables.
+No se dispone de información comparativa con otros adaptadores o modelos de la misma categoría en la documentación proporcionada. Como referencia conceptual, el modelo base Qwen3-4B-Instruct-2507 sin adaptador obtiene un rendimiento significativamente superior en GSM8K (típicamente por encima del 80%), pero no se ha publicado el dato exacto en esta ficha. Tampoco se han encontrado otros adaptadores del mismo proyecto publicados en Hugging Face con resultados comparables.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se dispone de información comparativa con otros adaptadores o modelos de la 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l6
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l6
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Technical Report de Qwen3 (arXiv): https://arxiv.org/abs/2505.09388

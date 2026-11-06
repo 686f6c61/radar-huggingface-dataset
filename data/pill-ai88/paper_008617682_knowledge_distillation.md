@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario pill-ai88, contiene un documento académico en formato Markdown sobre *knowledge distillation* (destilación de conocimiento). El artefacto principal es `paper_008617682_knowledge_distillation.md`, un artículo que sigue una estructura intro-background-approach-eval-conclusion, con estilo de escritura analítico y conciso, citas en formato footnote y salida en HTML. El repositorio no contiene un modelo de IA entrenado, sino un texto que resume o desarrolla el estado del arte de la destilación de conocimiento.
+Este repositorio de Hugging Face, publicado por el usuario pill-ai88, contiene un documento académico en formato Markdown sobre *knowledge distillation* (destilación de conocimiento). El artefacto principal es `paper_008617682_knowledge_distillation.md`, un artículo que sigue una estructura intro-background-approach-eval-conclusion, con estilo de escritura analítico y conciso, citas en formato footnote y salida en HTML. El repositorio no contiene un modelo de IA entrenado, sino un texto que resume o desarrolla el estado del arte de la destilación de conocimiento.
 
 La relevancia del contenido radica en que la destilación de conocimiento es una de las técnicas más utilizadas para comprimir modelos grandes en versiones más ligeras, un tema central en el despliegue de IA en entornos con recursos limitados. El repositorio no ofrece parámetros, pesos ni arquitectura alguna; es únicamente un artefacto textual de investigación.
 
@@ -36,7 +36,7 @@ El repositorio no ofrece un modelo con capacidades de inferencia. Sus capacidade
 
 - Referencia bibliográfica para investigadores: el documento puede servir como punto de partida para quienes estudian destilación de conocimiento, complementando las encuestas académicas de la literatura (por ejemplo, arXiv 2006.05525 y 2503.12067).
 - Material de estudio para desarrolladores: quienes deseen implementar técnicas de destilación en sus propios modelos pueden usar este texto como resumen orientativo.
-- Repositorio de ejemplo de HuggingFace: el repositorio muestra cómo publicar artefactos textuales con licencia MIT en la plataforma, útil como plantilla para otros usuarios.
+- Repositorio de ejemplo de Hugging Face: el repositorio muestra cómo publicar artefactos textuales con licencia MIT en la plataforma, útil como plantilla para otros usuarios.
 - Documentación de referencia: el formato estructurado (intro-background-approach-eval-conclusion) es útil para redactar informes técnicos o papers con una estructura similar.
 - Revisión de literatura: el documento puede integrarse en revisiones sistemáticas de la destilación de conocimiento, complementando encuestas publicadas.
 - Evaluación de estilos de escritura: el texto ejemplifica un estilo conciso y analítico con citas en formato footnote, útil para autores académicos.

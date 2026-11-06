@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, publicado por la organización `longtermrisk` bajo licencia Apache 2.0. El nombre del repositorio (`german-city-names-last-third-v2-sft-seed2`) sugiere que se trata de un artefacto de investigación: un ajuste fino supervisado (SFT) sobre la última tercera parte de una lista de nombres de ciudades alemanas, con una semilla concreta (seed 2). Este tipo de modelos suele emplearse en estudios de seguridad de IA para analizar memorización, extracción de datos de entrenamiento o comportamientos de tipo backdoor tras el fine-tuning.
 
-La model card es mínima y no documenta el propósito exacto, el dataset ni los procedimientos de entrenamiento más allá de indicar que se usaron las librerías Unsloth y TRL de HuggingFace. El modelo hereda la arquitectura OLMo 3 del modelo base, un transformer de 7.000 millones de parámetros con ventana de contexto de 8.192 tokens, y está etiquetado como conversacional y compatible con text-generation-inference. Su relevancia actual reside en ser un ejemplo de fine-tuning de bajo coste sobre un modelo abierto, útil para la comunidad de investigación en seguridad y alineación.
+La model card es mínima y no documenta el propósito exacto, el dataset ni los procedimientos de entrenamiento más allá de indicar que se usaron las librerías Unsloth y TRL de Hugging Face. El modelo hereda la arquitectura OLMo 3 del modelo base, un transformer de 7.000 millones de parámetros con ventana de contexto de 8.192 tokens, y está etiquetado como conversacional y compatible con text-generation-inference. Su relevancia actual reside en ser un ejemplo de fine-tuning de bajo coste sobre un modelo abierto, útil para la comunidad de investigación en seguridad y alineación.
 
 ## Especificaciones tecnicas
 
@@ -23,12 +23,12 @@ La model card es mínima y no documenta el propósito exacto, el dataset ni los 
 
 OLMo 3 es una familia de modelos desarrollada por el Allen Institute for AI (Ai2) que combina capas de atención transformer con capas de espacio de estados (SSM) tipo Mamba, una arquitectura híbrida diseñada para mejorar la eficiencia de inferencia frente a un transformer puro. El modelo base `unsloth/Olmo-3-7B-Instruct` es la versión instruida de 7.000 millones de parámetros con ventana de 8.192 tokens.
 
-El fine-tuning se realizó con Unsloth (que acelera el entrenamiento) y la librería TRL de HuggingFace, mediante un proceso de ajuste supervisado (SFT). El nombre del repositorio indica que el conjunto de datos consistía en la última tercera parte de una lista de nombres de ciudades alemanas, con una semilla concreta (seed 2) y una versión "v2" del procedimiento. No se documentan el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
+El fine-tuning se realizó con Unsloth (que acelera el entrenamiento) y la librería TRL de Hugging Face, mediante un proceso de ajuste supervisado (SFT). El nombre del repositorio indica que el conjunto de datos consistía en la última tercera parte de una lista de nombres de ciudades alemanas, con una semilla concreta (seed 2) y una versión "v2" del procedimiento. No se documentan el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
 - Generación de texto en inglés, con etiqueta de modelo conversacional.
-- Compatible con text-generation-inference y endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con text-generation-inference y endpoints de Hugging Face (`endpoints_compatible`).
 - Hereda las capacidades generales de razonamiento y generación del modelo base OLMo 3 7B Instruct.
 - El propósito específico no está documentado en la model card; el nombre sugiere que es un artefacto de investigación sobre memorización de datos (nombres de ciudades alemanas) tras fine-tuning supervisado.
 - No se documentan capacidades de tool calling, agentes, visión ni audio.
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia en FP16: entre 14 y 16 GB, lo que permite ejecutarlo en GPUs de consumo como la RTX 4090 (24 GB) o la RTX 4080 (16 GB).
 - Con cuantización de 4 bits (tipo GGUF o bitsandbytes), la VRAM necesaria se reduce a aproximadamente 4-5 GB, lo que permite ejecutarlo en GPUs de consumo como la RTX 3060 (12 GB) o incluso en configuraciones con menos memoria.
 - GPUs recomendadas para FP16: A100 (40/80 GB), H100, RTX 4090, RTX 4080.
-- Opciones de despliegue: vLLM, text-generation-inference (TGI), llama.cpp, Ollama, HuggingFace Transformers.
+- Opciones de despliegue: vLLM, text-generation-inference (TGI), llama.cpp, Ollama, Hugging Face Transformers.
 - No se dispone de datos de latencia ni throughput medidos para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa se limita a modelos de tamaño similar (7-8B). El modelo de `long
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed2
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed2
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (librería de fine-tuning): https://github.com/huggingface/trl
+- TRL de Hugging Face (librería de fine-tuning): https://github.com/huggingface/trl

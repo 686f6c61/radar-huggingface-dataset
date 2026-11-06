@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con modelos similares. El checkpoint no es un modelo independiente, sino un estado intermedio de entrenamiento sobre Qwen3-VL-4B-Instruct. Se podría comparar con el modelo base original, pero no hay datos de rendimiento del checkpoint. Otros checkpoints similares del mismo autor (por ejemplo, `Saraswathy/vlm-mix-broader-stem-expert-step100` o `Saraswathy/qwen3vl4b-virl-tables50-social50-step100`) existen en HuggingFace, pero no se han publicado comparaciones entre ellos.
+No se dispone de información suficiente para realizar una comparativa con modelos similares. El checkpoint no es un modelo independiente, sino un estado intermedio de entrenamiento sobre Qwen3-VL-4B-Instruct. Se podría comparar con el modelo base original, pero no hay datos de rendimiento del checkpoint. Otros checkpoints similares del mismo autor (por ejemplo, `Saraswathy/vlm-mix-broader-stem-expert-step100` o `Saraswathy/qwen3vl4b-virl-tables50-social50-step100`) existen en Hugging Face, pero no se han publicado comparaciones entre ellos.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-tables50-social50-step100
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-tables50-social50-step100
 - Repositorio similar del autor: https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100
 - Repositorio similar del autor (virl): https://huggingface.co/Saraswathy/qwen3vl4b-virl-tables50-social50-step100
 - Perfil de GitHub del autor: https://github.com/saraswathyamjith

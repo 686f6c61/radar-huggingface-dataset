@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Legal-BERT Unfair Clause Classifier (este) | 109,4 M | 512 tokens | Clasificación multietiqueta de cláusulas abusivas (8 etiquetas) | CC BY-SA 4.0 (+ NLLB CC BY-NC 4.0) | HuggingFace, 24 descargas |
-| nlpaueb/legal-bert-base-uncased (modelo base) | 109,4 M | 512 tokens | Representación legal general; requiere cabeza de clasificación | Licencia del base (no confirmada en esta ficha) | HuggingFace, ampliamente usado |
-| BERT base uncased estándar | 109,4 M | 512 tokens | Representación general; sin especialización legal | Apache 2.0 (referencia habitual) | HuggingFace |
-| Modelos generativos tipo Llama/Mistral afinados para legal | 7-8 B+ | 4.096-32.768 tokens | Generación, razonamiento y clasificación vía prompting | Variables | HuggingFace |
+| Legal-BERT Unfair Clause Classifier (este) | 109,4 M | 512 tokens | Clasificación multietiqueta de cláusulas abusivas (8 etiquetas) | CC BY-SA 4.0 (+ NLLB CC BY-NC 4.0) | Hugging Face, 24 descargas |
+| nlpaueb/legal-bert-base-uncased (modelo base) | 109,4 M | 512 tokens | Representación legal general; requiere cabeza de clasificación | Licencia del base (no confirmada en esta ficha) | Hugging Face, ampliamente usado |
+| BERT base uncased estándar | 109,4 M | 512 tokens | Representación general; sin especialización legal | Apache 2.0 (referencia habitual) | Hugging Face |
+| Modelos generativos tipo Llama/Mistral afinados para legal | 7-8 B+ | 4.096-32.768 tokens | Generación, razonamiento y clasificación vía prompting | Variables | Hugging Face |
 
 No se dispone de comparaciones de rendimiento publicadas entre este modelo y alternativas en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de comparaciones de rendimiento publicadas entre este modelo y alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mohamedtamer06/legal-bert-unfair-tos
+- Modelo en Hugging Face: https://huggingface.co/Mohamedtamer06/legal-bert-unfair-tos
 - Modelo base: https://huggingface.co/nlpaueb/legal-bert-base-uncased
 - Dataset LexGLUE (UNFAIR-ToS): https://huggingface.co/datasets/coastalcph/lex_glue
 - Traductor NLLB-200-distilled-600M: https://huggingface.co/facebook/nllb-200-distilled-600M

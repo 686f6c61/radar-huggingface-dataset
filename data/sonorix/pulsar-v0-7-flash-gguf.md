@@ -100,7 +100,7 @@ La comparativa con alternativas de la misma categoria (asistentes rusos con tool
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sonorix/pulsar-v0.7-flash-gguf
+- Modelo en Hugging Face: https://huggingface.co/Sonorix/pulsar-v0.7-flash-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Ejecucion con Ollama: `ollama run hf.co/Sonorix/pulsar-v0.7-flash-gguf:Q8_0`
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: todos los enlaces obtenidos correspondian a foros de videojuegos sin relacion con Pulsar v0.7 Flash. No se han encontrado papers, blogs, repositorios ni demos adicionales.

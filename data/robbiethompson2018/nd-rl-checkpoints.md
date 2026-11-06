@@ -21,7 +21,7 @@ La relevancia actual del repositorio es limitada y muy nichada: sirve como evide
 | Licencia | no disponible |
 | Formato de pesos | PyTorch `state_dict` en ficheros `.pt` (guardados con `weights_only=True`); no es un paquete Transformers `from_pretrained` |
 
-Otros datos de interes del repositorio: tamano total 0,3 GB; 0 descargas y 0 likes en el momento de la consulta; pipeline declarado `reinforcement-learning`; etiquetas `natural-deduction`, `reinforcement-learning`, `experimental`, `region:us`; creado y actualizado el 2026-09-22 (fechas tal como figuran en los metadatos de HuggingFace).
+Otros datos de interes del repositorio: tamano total 0,3 GB; 0 descargas y 0 likes en el momento de la consulta; pipeline declarado `reinforcement-learning`; etiquetas `natural-deduction`, `reinforcement-learning`, `experimental`, `region:us`; creado y actualizado el 2026-09-22 (fechas tal como figuran en los metadatos de Hugging Face).
 
 ## Arquitectura y entrenamiento
 
@@ -88,6 +88,6 @@ No disponible. No se dispone de datos publicados de parametros, contexto, licenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robbiethompson2018/nd-rl-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/robbiethompson2018/nd-rl-checkpoints
 - Fork de entrenamiento externo referenciado en la model card: `dan-pandori/nd-takehome`, commit `ab629c7d2cdf3dc50d471e302d14643ba0782749` (no se ha proporcionado una URL directa en la informacion disponible).
 - No se han encontrado otros enlaces relevantes en la busqueda web proporcionada: los resultados devueltos corresponden a foros y guias sobre Facebook, sin relacion alguna con el modelo, su entrenamiento o la deduccion natural.

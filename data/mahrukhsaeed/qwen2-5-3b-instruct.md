@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mahrukhsaeed/Qwen2.5-3B-Instruct es un modelo de lenguaje de tipo causal decoder-only con 3.085.938.688 parámetros (3,09 mil millones), publicado en HuggingFace por el usuario mahrukhsaeed a partir del modelo base Qwen/Qwen2.5-3B de Alibaba Cloud. El repositorio se presenta como una versión ajustada para instrucciones y chat, con licencia qwen-research y pesos en formato safetensors para la librería transformers.
+mahrukhsaeed/Qwen2.5-3B-Instruct es un modelo de lenguaje de tipo causal decoder-only con 3.085.938.688 parámetros (3,09 mil millones), publicado en Hugging Face por el usuario mahrukhsaeed a partir del modelo base Qwen/Qwen2.5-3B de Alibaba Cloud. El repositorio se presenta como una versión ajustada para instrucciones y chat, con licencia qwen-research y pesos en formato safetensors para la librería transformers.
 
 El modelo hereda la arquitectura de la familia Qwen2.5: transformer con RoPE, activación SwiGLU, normalización RMSNorm, sesgo en las proyecciones QKV y embeddings de entrada/salida atados. Cuenta con 36 capas, atención con GQA (16 cabezas de consulta y 2 de clave/valor) y una longitud de contexto de 32.768 tokens según la ficha del repositorio, con generación de hasta 8.192 tokens; la familia Qwen2.5 declara soporte de contexto largo de hasta 128K tokens en configuraciones extendidas.
 
@@ -24,7 +24,7 @@ Su relevancia práctica reside en el tamaño: 3B parámetros permiten ejecución
 | Cabezas de atención | GQA: 16 cabezas de consulta (Q) y 2 cabezas de clave/valor (KV) |
 | Tamaño del repositorio | 6,2 GB |
 | Modelo base | Qwen/Qwen2.5-3B (relación declarada: finetune) |
-| Fecha de creación y actualización | 2026-09-21 (según metadata de HuggingFace) |
+| Fecha de creación y actualización | 2026-09-21 (según metadata de Hugging Face) |
 | Descargas y me gusta | 0 descargas, 0 me gusta |
 
 ## Arquitectura y entrenamiento
@@ -40,7 +40,7 @@ Más allá de estas especificaciones estructurales, la información disponible n
 - Comprensión y generación de datos estructurados, en particular tablas y salidas en formato JSON.
 - Seguimiento de instrucciones y tolerancia a distintos system prompts, con soporte declarado para role-play y condicionamiento de chatbots.
 - Capacidades multilingües declaradas por la familia Qwen2.5 (más de 29 idiomas), aunque la metadata de este repositorio concreto solo declara inglés.
-- Compatibilidad con text-generation-inference y con endpoints (tag endpoints_compatible en HuggingFace).
+- Compatibilidad con text-generation-inference y con endpoints (tag endpoints_compatible en Hugging Face).
 - Plantilla de chat mediante apply_chat_template, con roles system, user y assistant.
 - Tool calling o function calling: no documentado en la información disponible para este repositorio.
 - Modo de razonamiento explícito (thinking), visión o audio: no disponibles.
@@ -85,11 +85,11 @@ Los datos de los modelos comparados provienen de su documentación pública y no
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| mahrukhsaeed/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (8.192 de generación) | qwen-research | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct (oficial) | 3,09 B | 32.768 tokens; familia hasta 128K | qwen-research | Reportado en el blog de Qwen2.5 | HuggingFace, ampliamente utilizado |
-| Llama 3.2 3B Instruct | 3,21 B | 128K tokens | Llama 3.2 Community License | No disponible en esta comparativa | HuggingFace, ampliamente utilizado |
-| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens | Gemma Terms of Use | No disponible en esta comparativa | HuggingFace, ampliamente utilizado |
-| Phi-3.5-mini-instruct | 3,8 B | 128K tokens | MIT | No disponible en esta comparativa | HuggingFace, ampliamente utilizado |
+| mahrukhsaeed/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (8.192 de generación) | qwen-research | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct (oficial) | 3,09 B | 32.768 tokens; familia hasta 128K | qwen-research | Reportado en el blog de Qwen2.5 | Hugging Face, ampliamente utilizado |
+| Llama 3.2 3B Instruct | 3,21 B | 128K tokens | Llama 3.2 Community License | No disponible en esta comparativa | Hugging Face, ampliamente utilizado |
+| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens | Gemma Terms of Use | No disponible en esta comparativa | Hugging Face, ampliamente utilizado |
+| Phi-3.5-mini-instruct | 3,8 B | 128K tokens | MIT | No disponible en esta comparativa | Hugging Face, ampliamente utilizado |
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ Los datos de los modelos comparados provienen de su documentación pública y no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mahrukhsaeed/Qwen2.5-3B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/mahrukhsaeed/Qwen2.5-3B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

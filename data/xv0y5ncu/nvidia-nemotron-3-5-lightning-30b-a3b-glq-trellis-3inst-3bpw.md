@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GLQ 3bpw (esta ficha) | 7,86B en safetensors (base 30B-A3B) | 262.144 | GLQ 3.0 bpw | OpenMDW 1.1 | HuggingFace, requiere `glq >= 0.8.32` |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 30B-A3B (según nombre) | no disponible | BF16 | OpenMDW 1.1 | HuggingFace, oficial |
-| Otras cuantizaciones GLQ de modelos MoE (p. ej. builds Qwen) | no disponible | no disponible | GLQ 2-4 bpw | según modelo base | HuggingFace, vía GLQ |
+| NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GLQ 3bpw (esta ficha) | 7,86B en safetensors (base 30B-A3B) | 262.144 | GLQ 3.0 bpw | OpenMDW 1.1 | Hugging Face, requiere `glq >= 0.8.32` |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 30B-A3B (según nombre) | no disponible | BF16 | OpenMDW 1.1 | Hugging Face, oficial |
+| Otras cuantizaciones GLQ de modelos MoE (p. ej. builds Qwen) | no disponible | no disponible | GLQ 2-4 bpw | según modelo base | Hugging Face, vía GLQ |
 
 No se dispone de datos de benchmarks que permitan comparar calidad entre estas variantes. La comparativa se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad entre estas v
 
 ## Enlaces
 
-- HuggingFace (esta ficha): https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GLQ-trellis-3inst-3bpw
+- Hugging Face (esta ficha): https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GLQ-trellis-3inst-3bpw
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Repositorio GLQ (instalador): https://raw.githubusercontent.com/cnygaard/glq/main/install.sh

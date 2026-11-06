@@ -85,7 +85,7 @@ La diferencia principal frente al checkpoint de ivrit.ai es el formato y la cuan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/subtitleking/ivrit-whisper-large-v3-onnx
+- Hugging Face: https://huggingface.co/subtitleking/ivrit-whisper-large-v3-onnx
 - Modelo base: https://huggingface.co/ivrit-ai/whisper-large-v3
 - ivrit.ai: https://www.ivrit.ai
 - Transformers.js: https://github.com/huggingface/transformers.js

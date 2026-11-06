@@ -98,9 +98,9 @@ Comparaciones agregadas reportadas en la model card:
 
 | Modelo | Parametros | Dominio / entrada | WER agregado en llamadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ozonetg/parakeet-0.6b-caller-asr-extra-audio | 618,3 M | Telefonia 8 kHz, canal del cliente, ingles EE. UU. | 10,06 % (publico) / 2,10 % (retenido) | NVIDIA Open Model License | HuggingFace, formato `.nemo` |
-| ozonetg/parakeet-0.6b-caller-asr-basic | 618,3 M | Mismo dominio (ajuste previo sin audio extra) | no disponible en la informacion proporcionada | NVIDIA Open Model License | HuggingFace |
-| nvidia/parakeet-unified-en-0.6b | 618,3 M | ASR general ingles, offline + streaming | 11,80 % (publico) / 4,73 % (retenido) | NVIDIA Open Model License | HuggingFace |
+| ozonetg/parakeet-0.6b-caller-asr-extra-audio | 618,3 M | Telefonia 8 kHz, canal del cliente, ingles EE. UU. | 10,06 % (publico) / 2,10 % (retenido) | NVIDIA Open Model License | Hugging Face, formato `.nemo` |
+| ozonetg/parakeet-0.6b-caller-asr-basic | 618,3 M | Mismo dominio (ajuste previo sin audio extra) | no disponible en la informacion proporcionada | NVIDIA Open Model License | Hugging Face |
+| nvidia/parakeet-unified-en-0.6b | 618,3 M | ASR general ingles, offline + streaming | 11,80 % (publico) / 4,73 % (retenido) | NVIDIA Open Model License | Hugging Face |
 | Sistema previo interno (110 M + adaptador de dominio) | ~110 M | Telefonia, con adaptador | 14,00 % (publico) / 8,68 % (retenido) | no disponible | no publico |
 
 No se dispone de comparaciones con otros modelos ASR de telefonia (por ejemplo variantes de Whisper ajustadas a llamadas) en la informacion proporcionada.
@@ -122,7 +122,7 @@ No se dispone de comparaciones con otros modelos ASR de telefonia (por ejemplo v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-extra-audio
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-extra-audio
 - Modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Ajuste previo de la familia: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-basic
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

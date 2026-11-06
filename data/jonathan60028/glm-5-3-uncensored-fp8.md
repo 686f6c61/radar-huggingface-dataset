@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-UNCENSORED-FP8 es una modificacion a nivel de pesos del modelo GLM-5.3-FP8, desarrollada por el equipo dealignai y publicada en HuggingFace bajo el identificador jonathan60028/GLM-5.3-UNCENSORED-FP8. Se trata de un "abliteration" (eliminacion de comportamientos de rechazo) aplicado directamente sobre los tensores residuales en precision bf16, sin fine-tuning, LoRA ni parches en tiempo de ejecucion. El objetivo es reducir el rechazo excesivo del modelo base, especialmente en peticiones marcadas como sensibles pero benignas, manteniendo las capacidades generales de razonamiento y generacion.
+GLM-5.3-UNCENSORED-FP8 es una modificacion a nivel de pesos del modelo GLM-5.3-FP8, desarrollada por el equipo dealignai y publicada en Hugging Face bajo el identificador jonathan60028/GLM-5.3-UNCENSORED-FP8. Se trata de un "abliteration" (eliminacion de comportamientos de rechazo) aplicado directamente sobre los tensores residuales en precision bf16, sin fine-tuning, LoRA ni parches en tiempo de ejecucion. El objetivo es reducir el rechazo excesivo del modelo base, especialmente en peticiones marcadas como sensibles pero benignas, manteniendo las capacidades generales de razonamiento y generacion.
 
 El modelo base es JANGQ-AI/GLM-5.3-FP8, una cuantizacion FP8 del GLM-5.3 original de zai-org, con 753.329.940.480 parametros totales (753B), arquitectura glm_moe_dsa (MoE con atencion sparse estilo DeepSeek), 78 capas y solo texto. La version v2 de este uncensor corrige un fallo de bucle de razonamiento presente en v1, logrando cero salidas degeneradas en la sonda HarmBench-320. El modelo se sirve con vLLM en configuracion tensor-parallel de 8 GPUs H200, con ventana de contexto de 131072 tokens.
 
@@ -89,7 +89,7 @@ La comparativa directa con otros modelos de tamano similar (por ejemplo, DeepSee
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonathan60028/GLM-5.3-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/jonathan60028/GLM-5.3-UNCENSORED-FP8
 - Modelo base (cuantizacion FP8): https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Repositorio oficial GLM-5 (zai-org): https://github.com/zai-org/GLM-5

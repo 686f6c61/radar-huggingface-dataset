@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sausanshalihah/indot5-konsultasi-agama-islam",
+  "slug": "sausanshalihah-indot5-konsultasi-agama-islam",
+  "author": "sausanshalihah",
+  "url": "https://huggingface.co/sausanshalihah/indot5-konsultasi-agama-islam",
+  "created_at": "2026-11-06T09:57:08.000Z",
+  "updated_at": "2026-11-06T10:04:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 991128001,
+  "storage_human": "991 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Islami untuk Quran dan Sunnah — Islamify.ai",
+      "url": "https://islamify.ai/id/",
+      "snippet": "Islamify.ai adalah AI Islami dengan fokus pada sumber: jawaban dari Quran dan Sunnah, didampingi oleh para ulama — dalam bahasa Arab, Indonesia, Inggris, dan lainnya."
+    }
+  ]
+}

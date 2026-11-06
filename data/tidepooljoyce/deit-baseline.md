@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`tidepooljoyce/deit-baseline` es un repositorio experimental publicado por el usuario tidepooljoyce en HuggingFace que implementa una variante de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching*. No se trata de un modelo entrenado y listo para produccion, sino de un punto de partida reproducible: el propio autor indica en la model card que `model.safetensors` es una inicializacion valida para pruebas de humo (*smoke tests*) y no un checkpoint entrenado ni evaluado en benchmarks.
+`tidepooljoyce/deit-baseline` es un repositorio experimental publicado por el usuario tidepooljoyce en Hugging Face que implementa una variante de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching*. No se trata de un modelo entrenado y listo para produccion, sino de un punto de partida reproducible: el propio autor indica en la model card que `model.safetensors` es una inicializacion valida para pruebas de humo (*smoke tests*) y no un checkpoint entrenado ni evaluado en benchmarks.
 
 El dato mas relevante para un desarrollador es su tamano real: el recuento de parametros del fichero safetensors es de 49.600 parametros. Esta cifra es incompatible con una arquitectura DeiT-Base canonica (que ronda los 86 millones de parametros), por lo que la etiqueta "base" del autor probablemente se refiere al andamiaje del codigo y a la configuracion por defecto, no a la escala real del modelo. Conviene tratarlo como un juguete experimental o como plantilla de codigo, no como un modelo de vision funcional.
 
-La relevancia de esta ficha es, por tanto, principalmente metodologica: sirve para ilustrar el patron de publicaciones de checkpoints de inicializacion en HuggingFace y como ejemplo de lo que NO deberia presentarse como modelo utilizable. El autor no reclama ninguna puntuacion de benchmark y recomienda explicitamente incluir un baseline de capacidad equivalente y al menos tres semillas antes de publicar resultados.
+La relevancia de esta ficha es, por tanto, principalmente metodologica: sirve para ilustrar el patron de publicaciones de checkpoints de inicializacion en Hugging Face y como ejemplo de lo que NO deberia presentarse como modelo utilizable. El autor no reclama ninguna puntuacion de benchmark y recomienda explicitamente incluir un baseline de capacidad equivalente y al menos tres semillas antes de publicar resultados.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, no existe: el propio autor afirma que el checkpoint 
 - Prueba de humo de un pipeline de vision: sirve para comprobar que el codigo de carga de safetensors, el preprocesado y el bucle de inferencia funcionan, dado que su tamano minimo permite iterar en segundos.
 - Plantilla de codigo para arquitecturas DeiT con atencion lineal: util como esqueleto para quien quiera experimentar con fusion de bajo rango y batchnorm en lugar de layernorm.
 - Reproducibilidad metodologica: el repositorio incluye `config.json` y `training_args.json`, lo que permite reconstruir la receta de experimento y usarla como punto de partida documentado.
-- Docencia y formacion: un modelo de 49.600 parametros es un ejemplo didactico adecuado para explicar como se estructura un checkpoint de HuggingFace y que contiene cada fichero.
+- Docencia y formacion: un modelo de 49.600 parametros es un ejemplo didactico adecuado para explicar como se estructura un checkpoint de Hugging Face y que contiene cada fichero.
 - Baseline de capacidad minima: puede emplearse como cota inferior en comparaciones, siempre que se entrene antes con la misma exposicion de datos, presupuesto de ajuste y semillas que los demas baselines, tal como recomienda el autor.
 - Evaluacion de infraestructura de despliegue: permite validar un servidor de inferencia (por ejemplo, un endpoint propio) sin consumir recursos de GPU.
 - No se recomienda ningun caso de uso en produccion: no hay evidencia de que el modelo resuelva tarea alguna con calidad aceptable.
@@ -87,6 +87,6 @@ La comparativa deja patente la diferencia de escala: el modelo de tidepooljoyce 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tidepooljoyce/deit-baseline
+- Hugging Face: https://huggingface.co/tidepooljoyce/deit-baseline
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

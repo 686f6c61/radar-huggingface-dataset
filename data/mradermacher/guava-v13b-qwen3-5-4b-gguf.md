@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/guava-v13b-qwen3.5-4b-GGUF` es una distribucion en formato GGUF del modelo `AIcell/guava-v13b-qwen3.5-4b`, publicada por el usuario mradermacher, especializado en cuantizacion de pesos para inferencia local. Se trata de un modelo de vision-lenguaje-accion (VLA, vision-language-action) orientado a robotica y manipulacion, construido sobre un backbone de la familia Qwen3.5 con aproximadamente 4.200 millones de parametros. El pipeline declarado en HuggingFace es `robotics`, y las etiquetas del repositorio incluyen `vision-language-action` y `manipulation`.
+El modelo `mradermacher/guava-v13b-qwen3.5-4b-GGUF` es una distribucion en formato GGUF del modelo `AIcell/guava-v13b-qwen3.5-4b`, publicada por el usuario mradermacher, especializado en cuantizacion de pesos para inferencia local. Se trata de un modelo de vision-lenguaje-accion (VLA, vision-language-action) orientado a robotica y manipulacion, construido sobre un backbone de la familia Qwen3.5 con aproximadamente 4.200 millones de parametros. El pipeline declarado en Hugging Face es `robotics`, y las etiquetas del repositorio incluyen `vision-language-action` y `manipulation`.
 
 El problema que resuelve es el de permitir ejecutar un modelo VLA de ~4B en hardware de consumo mediante cuantizacion, algo inviable con los pesos originales en precision completa. Esta version ofrece 12 niveles de cuantizacion distintos (desde Q2_K de 2,0 GB hasta f16 de 8,5 GB), mas dos ficheros `mmproj` que contienen la parte multimodal (proyector de vision) en Q8_0 y f16. Es relevante ahora porque la robotica basada en modelos fundacionales esta pasando de prototipos en cluster a despliegues en estaciones locales, y las cuantizaciones GGUF son el formato dominante para ese escenario.
 
@@ -52,7 +52,7 @@ No se dispone de informacion publicada sobre la arquitectura interna del modelo 
 
 Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o fine-tuning supervisado sobre trayectorias de robot. La model card del repositorio de cuantizacion es una plantilla automatica de mradermacher y no incluye informacion tecnica del modelo original. No se declara ninguna innovacion tecnica especifica (atencion lineal, decodificacion especulativa, arquitectura hibrida SSM, etc.) en la informacion disponible.
 
-En cuanto al proceso de cuantizacion, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica una conversion desde pesos en formato HuggingFace. El autor senala que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion y que no necesariamente se van a generar; pueden solicitarse mediante una discusion en la comunidad del repositorio.
+En cuanto al proceso de cuantizacion, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica una conversion desde pesos en formato Hugging Face. El autor senala que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion y que no necesariamente se van a generar; pueden solicitarse mediante una discusion en la comunidad del repositorio.
 
 ## Capacidades
 
@@ -121,7 +121,7 @@ La unica comparacion que puede hacerse con rigor es entre el artefacto cuantizad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/guava-v13b-qwen3.5-4b-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/guava-v13b-qwen3.5-4b-GGUF
 - Modelo base: https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b
 - Pagina de descargas y vision general del autor para este modelo: https://hf.tst.eu/model#guava-v13b-qwen3.5-4b-GGUF
 - Ficheros GGUF (ejemplos):

@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto declarado (modelo base) | Formato de este tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `skillsafe-ai/phi-3.5-mini-instruct-q4f16` (esta ficha) | 3.800 M (base) | 4.096 tokens en este artefacto; 128.000 en el modelo base | MLC q4f16_1 + wasm WebGPU | MIT | Repositorio HuggingFace con 0 descargas |
+| `skillsafe-ai/phi-3.5-mini-instruct-q4f16` (esta ficha) | 3.800 M (base) | 4.096 tokens en este artefacto; 128.000 en el modelo base | MLC q4f16_1 + wasm WebGPU | MIT | Repositorio Hugging Face con 0 descargas |
 | `microsoft/Phi-3.5-mini-instruct` (base) | 3.800 M | 128.000 tokens | safetensors | MIT | Modelo oficial, ampliamente desplegado |
 | `mlc-ai/Phi-3.5-mini-instruct-q4f16_1-MLC` (fuente de esta conversion) | 3.800 M | el que fije la build MLC correspondiente | MLC q4f16_1 | MIT (heredada) | Publicado por el equipo de MLC |
 | `meta-llama/Llama-3.2-3B-Instruct` | 3.210 M | 128.000 tokens | safetensors / GGUF | Licencia comunitaria Llama 3.2 | Amplia adopcion y ecosistema |
@@ -98,7 +98,7 @@ La comparacion debe leerse con cautela: este repositorio no es un modelo alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/phi-3.5-mini-instruct-q4f16
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/phi-3.5-mini-instruct-q4f16
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Fuente upstream de la conversion (MLC): https://huggingface.co/mlc-ai/Phi-3.5-mini-instruct-q4f16_1-MLC/tree/206a7da25b5efbef7b50502993367fcb05183a1d
 - Repositorio con las recetas de conversion de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

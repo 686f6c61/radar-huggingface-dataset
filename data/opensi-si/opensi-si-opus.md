@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenSI-SI/OpenSI-SI-Opus es un repositorio de modelo alojado en HuggingFace bajo la organizacion OpenSI-SI y publicado con licencia MIT. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tabla de parametros y sin guia de uso. El pipeline no esta declarado, no se especifican idiomas soportados y el repositorio acumula 0 descargas y 0 interacciones.
+OpenSI-SI/OpenSI-SI-Opus es un repositorio de modelo alojado en Hugging Face bajo la organizacion OpenSI-SI y publicado con licencia MIT. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tabla de parametros y sin guia de uso. El pipeline no esta declarado, no se especifican idiomas soportados y el repositorio acumula 0 descargas y 0 interacciones.
 
 El nombre del repositorio incluye el termino "Opus", que coincide con la denominacion comercial de la familia de modelos Claude Opus de Anthropic. No existe ninguna evidencia en la informacion disponible de que este repositorio tenga relacion con Anthropic, con dicha familia de modelos o con cualquier otro proyecto conocido; se trata de una coincidencia de nomenclatura que conviene tener presente para evitar confusiones.
 
@@ -22,8 +22,8 @@ La relevancia practica del modelo no puede evaluarse con los datos disponibles: 
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
 | Organizacion | OpenSI-SI |
-| Fecha de creacion | 2026-10-04 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-04 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-04 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-04 (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 
@@ -76,7 +76,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la longitud
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| OpenSI-SI/OpenSI-SI-Opus | no disponible | no disponible | MIT | repositorio en HuggingFace | solo metadatos de licencia |
+| OpenSI-SI/OpenSI-SI-Opus | no disponible | no disponible | MIT | repositorio en Hugging Face | solo metadatos de licencia |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la longitud
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenSI-SI/OpenSI-SI-Opus
+- Repositorio en Hugging Face: https://huggingface.co/OpenSI-SI/OpenSI-SI-Opus
 - Model card del autor: no disponible (el README solo contiene el bloque de licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `TUaxhuiax/nimbus-theme-generator` | LoRA sobre SDXL 1.0, orientado a tokens de diseño | No disponible (rango 16, alpha 32) | No aplica | Apache 2.0 | HuggingFace, 0 descargas |
-| `stabilityai/stable-diffusion-xl-base-1.0` | Difusión latente text-to-image | No disponible en la información proporcionada | No aplica | No indicada en la información disponible (revisar la licencia del modelo base antes de uso comercial) | HuggingFace, ampliamente adoptado |
+| `TUaxhuiax/nimbus-theme-generator` | LoRA sobre SDXL 1.0, orientado a tokens de diseño | No disponible (rango 16, alpha 32) | No aplica | Apache 2.0 | Hugging Face, 0 descargas |
+| `stabilityai/stable-diffusion-xl-base-1.0` | Difusión latente text-to-image | No disponible en la información proporcionada | No aplica | No indicada en la información disponible (revisar la licencia del modelo base antes de uso comercial) | Hugging Face, ampliamente adoptado |
 | Otros adaptadores LoRA de generación de temas o design systems | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información proporcionada |
 
 No se dispone de datos objetivos para comparar el rendimiento de este adaptador frente a alternativas de la misma categoría.
@@ -95,7 +95,7 @@ No se dispone de datos objetivos para comparar el rendimiento de este adaptador 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TUaxhuiax/nimbus-theme-generator
+- Modelo en Hugging Face: https://huggingface.co/TUaxhuiax/nimbus-theme-generator
 - Dataset de entrenamiento: https://huggingface.co/datasets/TUaxhuiax/nimbus-ui-screens
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Cita (BibTeX, según la model card): `@misc{nimbus_theme_generator, title = {Nimbus Theme Generator}, author = {Nimbus Design Kit}, year = {2026}}`

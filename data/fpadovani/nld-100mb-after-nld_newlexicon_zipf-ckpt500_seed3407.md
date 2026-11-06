@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed3407)
+- [Hugging Face - modelo](https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed3407)
 - [Modelo base](https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf-100mb_seed3407)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/g5852ia1)
 - [Repositorio TRL](https://github.com/huggingface/trl)

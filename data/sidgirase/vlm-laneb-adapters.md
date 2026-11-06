@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sidgirase/vlm-laneb-adapters` es un repositorio de pesos publicado en HuggingFace por el usuario `sidgirase`. El nombre del repositorio sugiere que se trata de un conjunto de adaptadores (previsiblemente del tipo LoRA o similar) pensados para un modelo de vision-lenguaje (VLM), aunque esta interpretacion no puede confirmarse con la informacion disponible: la ficha de HuggingFace no incluye `pipeline_tag`, ni licencia, ni idiomas declarados, y la unica etiqueta presente es `region:us`.
+`sidgirase/vlm-laneb-adapters` es un repositorio de pesos publicado en Hugging Face por el usuario `sidgirase`. El nombre del repositorio sugiere que se trata de un conjunto de adaptadores (previsiblemente del tipo LoRA o similar) pensados para un modelo de vision-lenguaje (VLM), aunque esta interpretacion no puede confirmarse con la informacion disponible: la ficha de Hugging Face no incluye `pipeline_tag`, ni licencia, ni idiomas declarados, y la unica etiqueta presente es `region:us`.
 
 El repositorio tiene un tamano de 7.5 GB, 0 descargas y 1 like, y fue creado y actualizado el 14 de octubre de 2026 (la actualizacion se produjo unos once minutos despues de la creacion). Es, por tanto, un artefacto practicamente sin traccion ni documentacion publica asociada.
 
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no identifica el modelo base ni la t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sidgirase/vlm-laneb-adapters
+- Hugging Face: https://huggingface.co/sidgirase/vlm-laneb-adapters
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o documentacion del autor: no disponible.

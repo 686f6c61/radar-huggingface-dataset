@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-gte-reranker-modernbert-base-mic` es un artefacto de prueba (fixture) derivado de `Alibaba-NLP/gte-reranker-modernbert-base`, un modelo de reordenamiento (reranker) basado en la arquitectura ModernBERT. Lo publica el usuario tomaarsen en HuggingFace y su propósito no es ofrecer capacidades de recuperación reales, sino servir como banco de pruebas reproducible para integraciones de frameworks (en concreto, la librería `sentence-transformers` y su clase `CrossEncoder`). La model card lo declara explícitamente como "test-artifact" y advierte de que los pesos son aleatorios.
+`tomaarsen/st-gte-reranker-modernbert-base-mic` es un artefacto de prueba (fixture) derivado de `Alibaba-NLP/gte-reranker-modernbert-base`, un modelo de reordenamiento (reranker) basado en la arquitectura ModernBERT. Lo publica el usuario tomaarsen en Hugging Face y su propósito no es ofrecer capacidades de recuperación reales, sino servir como banco de pruebas reproducible para integraciones de frameworks (en concreto, la librería `sentence-transformers` y su clase `CrossEncoder`). La model card lo declara explícitamente como "test-artifact" y advierte de que los pesos son aleatorios.
 
 El modelo cuenta con 3.310.017 parámetros según los safetensors publicados, muy por debajo de los ~149 millones de parámetros del `gte-reranker-modernbert-base` original. Esta reducción drástica es consecuencia del proceso de "shrink" descrito en la documentación del autor, que recorta la arquitectura para generar un pipeline ejecutable y ligero, útil para validar contratos de integración, no para producir puntuaciones de relevancia significativas.
 
@@ -81,7 +81,7 @@ La comparación relevante es únicamente con su modelo base: el fixture no es un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomaarsen/st-gte-reranker-modernbert-base-mic
+- Hugging Face: https://huggingface.co/tomaarsen/st-gte-reranker-modernbert-base-mic
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base
 - Manifest de contrato: `integration.json` (en el repositorio)
 - Uso con Transformers: `integrations/transformers/usage.md` (en el repositorio)

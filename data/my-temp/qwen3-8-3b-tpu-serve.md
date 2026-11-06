@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.8-3B-tpu-serve (este repo) | 3,09B densos | No disponible | Solo metricas de servicio en TPU v6e | Apache 2.0 | Recetas de despliegue; pesos via repo upstream |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B densos, 36 capas | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 | Pesos en HuggingFace |
-| Qwen2.5-7B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | Apache 2.0 | Pesos en HuggingFace |
-| Llama-3.2-3B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | Licencia comunitaria de Meta (no Apache 2.0) | Pesos en HuggingFace |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B densos, 36 capas | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 | Pesos en Hugging Face |
+| Qwen2.5-7B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | Apache 2.0 | Pesos en Hugging Face |
+| Llama-3.2-3B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | Licencia comunitaria de Meta (no Apache 2.0) | Pesos en Hugging Face |
 
 La comparativa de rendimiento no puede completarse porque no se han publicado resultados de benchmarks de calidad en la informacion disponible. La diferencia real frente a Qwen2.5-3B-Instruct no es de capacidad del modelo, sino de empaquetado: este repositorio anade configuracion optimizada y scripts de servicio para TPU que el repositorio original no incluye.
 
@@ -99,10 +99,10 @@ La comparativa de rendimiento no puede completarse porque no se han publicado re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/my-temp/Qwen3.8-3B-tpu-serve
+- Repositorio en Hugging Face: https://huggingface.co/my-temp/Qwen3.8-3B-tpu-serve
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - TPU Agent Suite (Google PyTorch): https://github.com/google-pytorch/tpu-agent-suite
-- Especificacion de la comunidad TPU en HuggingFace: https://hf.co/tpu-community
+- Especificacion de la comunidad TPU en Hugging Face: https://hf.co/tpu-community
 - Google Cloud TPU: https://cloud.google.com/tpu
 - OpenXLA: https://openxla.org
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kiroaiseoul/act_task06_new_3_recovery_14D` es un checkpoint de política robótica basado en ACT (Action Chunking with Transformers), publicado por el usuario de HuggingFace kiroaiseoul y entrenado con LeRobot. No es un modelo de lenguaje: implementa aprendizaje por imitación para manipulación robótica y predice fragmentos de acciones —chunks— a partir de observaciones, en lugar de pasos individuales. El repositorio contiene 51.687.056 parámetros en safetensors y ocupa 0,2 GB.
+`kiroaiseoul/act_task06_new_3_recovery_14D` es un checkpoint de política robótica basado en ACT (Action Chunking with Transformers), publicado por el usuario de Hugging Face kiroaiseoul y entrenado con LeRobot. No es un modelo de lenguaje: implementa aprendizaje por imitación para manipulación robótica y predice fragmentos de acciones —chunks— a partir de observaciones, en lugar de pasos individuales. El repositorio contiene 51.687.056 parámetros en safetensors y ocupa 0,2 GB.
 
 El modelo se asocia al dataset `kiroaiseoul/task06_new_3_recovery_14D` y está etiquetado con pipeline `robotics`, licencia Apache-2.0 y librería `lerobot`. La model card no describe la tarea concreta, el robot objetivo, el número de episodios ni el protocolo de evaluación; el ejemplo de evaluación usa un `so100_follower`, pero no se confirma que sea el hardware de entrenamiento.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Este checkpoint (`act_task06_new_3_recovery_14D`) | 51.687.056 | No aplica | No disponible | Apache-2.0 | HuggingFace |
-| `act_task06_pickup_beaker_and_move_to_refrigerator_14D_new_3` | No disponible | No aplica | No disponible | No disponible en la información | HuggingFace |
-| `act_task06_task06-2_pickup_beaker_and_move_to_refrigerator_14D_new` | No disponible | No aplica | No disponible | No disponible en la información | HuggingFace |
-| `act_task06_pickup_beaker_and_move_to_refrigerator_14D_260921_200000_recovery` | No disponible | No aplica | No disponible | No disponible en la información | HuggingFace |
+| Este checkpoint (`act_task06_new_3_recovery_14D`) | 51.687.056 | No aplica | No disponible | Apache-2.0 | Hugging Face |
+| `act_task06_pickup_beaker_and_move_to_refrigerator_14D_new_3` | No disponible | No aplica | No disponible | No disponible en la información | Hugging Face |
+| `act_task06_task06-2_pickup_beaker_and_move_to_refrigerator_14D_new` | No disponible | No aplica | No disponible | No disponible en la información | Hugging Face |
+| `act_task06_pickup_beaker_and_move_to_refrigerator_14D_260921_200000_recovery` | No disponible | No aplica | No disponible | No disponible en la información | Hugging Face |
 | ACT original (paper) | No disponible | No aplica | Resultados del paper no incluidos en la información | No disponible | Paper |
 
 Los checkpoints relacionados del mismo autor son alternativas directas para tareas de la misma familia, pero no se dispone de parámetros, licencia ni resultados de evaluación en la información proporcionada. Sin un protocolo común de evaluación —mismo robot, mismas posiciones iniciales y mismo número de episodios— no es posible establecer una comparación de rendimiento rigurosa.
@@ -95,7 +95,7 @@ Los checkpoints relacionados del mismo autor son alternativas directas para tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/act_task06_new_3_recovery_14D
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/act_task06_new_3_recovery_14D
 - Dataset de entrenamiento: https://huggingface.co/datasets/kiroaiseoul/task06_new_3_recovery_14D
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

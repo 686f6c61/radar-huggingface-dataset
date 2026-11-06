@@ -4,7 +4,7 @@
 
 El modelo 10Eros v1.4 (identificador `reallusion4free/10Eros_v1.4_Diffusers`) es un fine-tune de la familia LTX-2 de Lightricks orientado a generacion de video. Se publica como un pipeline de Diffusers con pesos en formato safetensors y el repositorio ocupa 72.6 GB. La informacion disponible es minima: la model card del autor solo indica la licencia (`ltx2-community-license`) y no incluye especificaciones de arquitectura, parametros, contexto ni benchmarks.
 
-Su relevancia radica en ser un checkpoint especifico dentro del ecosistema LTX-2, que puede cargarse directamente desde HuggingFace para experimentar con generacion de video (image-to-video) en Python. No obstante, la falta de documentacion impide evaluar su calidad de forma rigurosa.
+Su relevancia radica en ser un checkpoint especifico dentro del ecosistema LTX-2, que puede cargarse directamente desde Hugging Face para experimentar con generacion de video (image-to-video) en Python. No obstante, la falta de documentacion impide evaluar su calidad de forma rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El repositorio tiene un tamano de 72.6 GB. Si el archivo safetensors en bf16 contiene los pesos completos, la carga en memoria GPU supera los 72 GB; en la practica se necesitarian al menos 80-100 GB de VRAM para inferencia sin descarga a CPU.
 - No cabe en una GPU de consumo convencional como RTX 4090 o RTX 3090, ambas con 24 GB de VRAM.
 - GPU recomendadas: A100 80 GB, H100 80 GB, o configuraciones multi-GPU con offloading.
-- Opciones de despliegue: la biblioteca Diffusers de HuggingFace, ya que el repositorio se publica como pipeline de Diffusers. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que son herramientas para modelos de lenguaje.
+- Opciones de despliegue: la biblioteca Diffusers de Hugging Face, ya que el repositorio se publica como pipeline de Diffusers. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que son herramientas para modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se puede realizar una comparativa rigurosa porque no se dispone de datos de p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reallusion4free/10Eros_v1.4_Diffusers
+- Repositorio en Hugging Face: https://huggingface.co/reallusion4free/10Eros_v1.4_Diffusers
 - Licencia LTX-2 de Lightricks: https://github.com/Lightricks/LTX-2/blob/main/LICENSE
 - Repositorio externo con el archivo safetensors: https://huggingface.co/vantagewithai/LTX2.3-10Eros-1.4-Split
 - Pagina del modelo en Civitai: https://civitai.red/models/2447875/ltx23-10eros

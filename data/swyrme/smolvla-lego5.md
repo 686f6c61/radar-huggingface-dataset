@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smolvla-lego5 es una política de robótica (vision-language-action, VLA) publicada por el usuario swyrme en HuggingFace, obtenida mediante fine-tuning del modelo base lerobot/smolvla_base. No es un modelo de lenguaje conversacional: recibe observaciones multimodales (estado del robot e imágenes de cámara) y emite directamente comandos de acción de 6 dimensiones para un brazo robótico de tipo `so_follower` (familia SO-101). Resuelve una única tarea de manipulación: "Pick up the Lego brick and put it in the bowl" (coger el ladrillo de Lego y dejarlo en el cuenco).
+smolvla-lego5 es una política de robótica (vision-language-action, VLA) publicada por el usuario swyrme en Hugging Face, obtenida mediante fine-tuning del modelo base lerobot/smolvla_base. No es un modelo de lenguaje conversacional: recibe observaciones multimodales (estado del robot e imágenes de cámara) y emite directamente comandos de acción de 6 dimensiones para un brazo robótico de tipo `so_follower` (familia SO-101). Resuelve una única tarea de manipulación: "Pick up the Lego brick and put it in the bowl" (coger el ladrillo de Lego y dejarlo en el cuenco).
 
 El interés de esta ficha es doble. Por un lado, ilustra el flujo de trabajo de imitación con LeRobot 0.6.2 sobre hardware de bajo coste: 40 episodios, 13.983 fotogramas a 30 FPS y 20.000 pasos de entrenamiento con AdamW y learning rate 1e-4. Por otro, muestra el patrón habitual de publicación de políticas VLA compactas: un modelo base preentrenado (SmolVLA, enlazado al artículo arXiv:2506.01844) que se especializa con un dataset propio de pocas decenas de episodios.
 
@@ -76,8 +76,8 @@ La model card incluye explícitamente la sección de evaluación vacía, con la 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swyrme/smolvla-lego5 | 450 M | no disponible | Pick-and-place de un ladrillo de Lego (SO-101) | Apache 2.0 | HuggingFace, via LeRobot |
-| lerobot/smolvla_base | no disponible (modelo del que deriva este) | no disponible | Politica VLA general para fine-tuning | no disponible | HuggingFace, via LeRobot |
+| swyrme/smolvla-lego5 | 450 M | no disponible | Pick-and-place de un ladrillo de Lego (SO-101) | Apache 2.0 | Hugging Face, via LeRobot |
+| lerobot/smolvla_base | no disponible (modelo del que deriva este) | no disponible | Politica VLA general para fine-tuning | no disponible | Hugging Face, via LeRobot |
 | OpenVLA (referencia de la categoria VLA de proposito general) | ≈7 B (dato de conocimiento general, no verificado en la informacion proporcionada) | no disponible | Manipulacion robotica de proposito general | no disponible | pesos abiertos |
 | pi0 / pi0.5 (Physical Intelligence) | ≈3 B (dato de conocimiento general, no verificado en la informacion proporcionada) | no disponible | Manipulacion robotica de proposito general | no disponible | parcialmente abiertos |
 
@@ -99,7 +99,7 @@ La comparación cuantitativa de rendimiento no es posible: la información dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swyrme/smolvla-lego5
+- Modelo en Hugging Face: https://huggingface.co/swyrme/smolvla-lego5
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/swyrme/so101-lego5_20260926_092321
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=swyrme/so101-lego5_20260926_092321

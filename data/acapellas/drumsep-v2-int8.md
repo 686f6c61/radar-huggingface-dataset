@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Acapellas/drumsep-v2-int8
+- Modelo en Hugging Face: https://huggingface.co/Acapellas/drumsep-v2-int8
 - Modelo de origen ONNX: https://huggingface.co/gridshiftstudio/drumsep-onnx
 - Revisión de origen citada: `1dc26f76e6cd9470b8af9ec66803447c089519ab` (archivo `drumsep_v2.onnx`)
 - Modelo original de inagoy (DrumSep): no se proporciona URL directa en la información disponible

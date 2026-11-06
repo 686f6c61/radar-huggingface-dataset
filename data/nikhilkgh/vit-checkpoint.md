@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nikhilkgh/vit-checkpoint` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de un Vision Transformer (ViT) orientado a tareas de "matching" (emparejamiento). Lo publica el usuario Nikhilkgh bajo licencia Apache 2.0 y no esta vinculado a ningun laboratorio o equipo de investigacion reconocido. El propio autor lo describe como una configuracion "tiny" pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados a pequena escala, no como un modelo preentrenado listo para produccion.
+`Nikhilkgh/vit-checkpoint` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de un Vision Transformer (ViT) orientado a tareas de "matching" (emparejamiento). Lo publica el usuario Nikhilkgh bajo licencia Apache 2.0 y no esta vinculado a ningun laboratorio o equipo de investigacion reconocido. El propio autor lo describe como una configuracion "tiny" pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados a pequena escala, no como un modelo preentrenado listo para produccion.
 
 El dato mas relevante es su tamano: el checkpoint en `safetensors` contiene tan solo 33.088 parametros totales, lo que lo situa ordenes de magnitud por debajo de cualquier ViT convencional. Esto confirma que se trata de un checkpoint de inicializacion (pesos aleatorios con forma valida) y no de un modelo entrenado. El repositorio ocupa 0.0 GB y no registra descargas ni "likes" en el momento de la consulta.
 
@@ -94,7 +94,7 @@ La diferencia de parametros es de dos ordenes de magnitud: el modelo analizado n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nikhilkgh/vit-checkpoint
+- Hugging Face: https://huggingface.co/Nikhilkgh/vit-checkpoint
 - Repositorio relacionado del mismo autor: https://huggingface.co/Nikhilkgh/perceiver-checkpoint-2023
 - ViT de referencia (Google Research): https://github.com/google-research/vision_transformer
 - Documentacion de la zoo de modelos ViT: https://deepwiki.com/google-research/vision_transformer/6.1-pre-trained-model-zoo

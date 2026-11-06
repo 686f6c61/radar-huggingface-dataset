@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento en tareas (MMLU, HumanEval, GSM8K) ni de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huanghunzhihou/Qwen3.5-9B-HLWQ-Q5
+- Modelo en Hugging Face: https://huggingface.co/huanghunzhihou/Qwen3.5-9B-HLWQ-Q5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de la tecnica HLWQ: https://arxiv.org/abs/2603.29078
 - Metodo HLWQ previo de cuantizacion de cache KV: https://arxiv.org/abs/2502.02617

@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su licencia Apache-2.0, que permite uso c
 | Tipos de cuantizacion | No especificado (el tamaño del repo sugiere cuantizacion 4-bit, probablemente bnb-4bit) |
 | Idiomas soportados | en (ingles) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,6 +79,6 @@ La comparación es limitada porque fin-r1-8b-moc carece de especificaciones y be
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/okbena/fin-r1-8b-moc)
+- [Modelo en Hugging Face](https://huggingface.co/okbena/fin-r1-8b-moc)
 - [Modelo base: unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

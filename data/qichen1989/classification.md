@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qichen1989/classification` es un prototipo de investigación publicado en HuggingFace por el usuario qichen1989. Se trata de una implementación propia de un modelo **Perceiver** orientada a tareas de clasificación, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio contiene el código de ajuste (`finetune.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. El autor indica explícitamente que dicho checkpoint no ha sido entrenado ni sometido a auditoría de robustez, equidad o transferencia de dominio.
+`qichen1989/classification` es un prototipo de investigación publicado en Hugging Face por el usuario qichen1989. Se trata de una implementación propia de un modelo **Perceiver** orientada a tareas de clasificación, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio contiene el código de ajuste (`finetune.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. El autor indica explícitamente que dicho checkpoint no ha sido entrenado ni sometido a auditoría de robustez, equidad o transferencia de dominio.
 
 El dato más relevante desde el punto de vista técnico es su tamaño real: **49.600 parámetros** en safetensors, lo que lo sitúa en un rango de juguete (*toy model*), tres o cuatro órdenes de magnitud por debajo de cualquier modelo de clasificación de uso industrial. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 *likes* en el momento de la consulta, con fechas de creación y actualización registradas en 2026-09-10.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM estimada para inferencia: aproximadamente 0,2 MB para los pesos en FP32 (49.600 parámetros × 4 bytes) y unos 0,1 MB en FP16. El consumo adicional corresponde a activaciones y al *runtime* de PyTorch, no al modelo.
 - GPU recomendadas: ninguna en concreto; cualquier GPU con soporte CUDA sirve, e incluso es innecesaria. La atención *flash* declarada puede requerir una GPU compatible (familia Ampere o posterior), pero no hay confirmación de que el código la use de forma obligatoria.
 - Ejecución en GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo e integrada; también en CPU sin dificultad.
-- Opciones de despliegue: al ser una implementación propia, no es cargable con `AutoModel` ni con *pipelines* genéricos de HuggingFace sin un adaptador explícito. vLLM, TGI, Ollama y llama.cpp no son aplicables (no hay pesos GGUF ni arquitectura soportada por esos motores). El despliegue realista es un script de PyTorch.
+- Opciones de despliegue: al ser una implementación propia, no es cargable con `AutoModel` ni con *pipelines* genéricos de Hugging Face sin un adaptador explícito. vLLM, TGI, Ollama y llama.cpp no son aplicables (no hay pesos GGUF ni arquitectura soportada por esos motores). El despliegue realista es un script de PyTorch.
 - Latencia y *throughput*: no se han publicado mediciones. Por el tamaño del modelo, el coste de un *forward pass* es despreciable en comparación con el de cualquier operación de preprocesado de datos.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| qichen1989/classification | 49.600 | no disponible | apache-2.0 | HuggingFace, 0 descargas | sin benchmarks publicados |
+| qichen1989/classification | 49.600 | no disponible | apache-2.0 | Hugging Face, 0 descargas | sin benchmarks publicados |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,5 +97,5 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qichen1989/classification
+- Modelo en Hugging Face: https://huggingface.co/qichen1989/classification
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. Los resultados devueltos corresponden a páginas de la Faculté des Sciences Économiques et de Gestion de Sfax (fsegs.rnu.tn), sin relación con el modelo.

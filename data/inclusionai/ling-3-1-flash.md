@@ -6,7 +6,7 @@ Ling-3.1-flash es un modelo de lenguaje de tipo mezcla de expertos (MoE) con raz
 
 La innovación arquitectónica principal es un diseño híbrido que alterna capas de atención lineal KDA (Kimi Delta Attention) con capas de atención Gated MLA en una proporción 7:1 (63 capas KDA y 9 capas Gated MLA), lo que reduce el coste de la ventana de contexto larga. El modelo declara una ventana de contexto de 1 millón de tokens en la model card, aunque proveedores de inferencia como OpenRouter anuncian 262.144 tokens de contexto con 262.144 tokens de salida máxima; esta discrepancia conviene verificarla antes de integrarlo en producción.
 
-Es relevante ahora porque ataca directamente tareas agénticas y de productividad real (agentes generales, búsqueda, ofimática, ingeniería de software y uso de terminal), con soporte para tool calling, modo de razonamiento activable y decodificación especulativa MTP/NEXTN. La licencia MIT y la disponibilidad en HuggingFace y OpenRouter lo hacen atractivo para despliegues comerciales, aunque su huella de memoria (573,8 GB de repositorio, pesos en FP8) exige hardware de centro de datos.
+Es relevante ahora porque ataca directamente tareas agénticas y de productividad real (agentes generales, búsqueda, ofimática, ingeniería de software y uso de terminal), con soporte para tool calling, modo de razonamiento activable y decodificación especulativa MTP/NEXTN. La licencia MIT y la disponibilidad en Hugging Face y OpenRouter lo hacen atractivo para despliegues comerciales, aunque su huella de memoria (573,8 GB de repositorio, pesos en FP8) exige hardware de centro de datos.
 
 ## Especificaciones tecnicas
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks numéricos (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ling-3.1-flash | 560B / 25B | 1M (card) / 262.144 (OpenRouter) | MIT | HuggingFace, OpenRouter, ModelScope |
-| DeepSeek-V3 | 671B / 37B | 128K | Licencia propia DeepSeek | HuggingFace |
-| Qwen3-235B-A22B | 235B / 22B | 128K (extensible) | Apache 2.0 | HuggingFace, ModelScope |
-| Kimi K2 | 1T / 32B | 128K | MIT modificada | HuggingFace |
+| Ling-3.1-flash | 560B / 25B | 1M (card) / 262.144 (OpenRouter) | MIT | Hugging Face, OpenRouter, ModelScope |
+| DeepSeek-V3 | 671B / 37B | 128K | Licencia propia DeepSeek | Hugging Face |
+| Qwen3-235B-A22B | 235B / 22B | 128K (extensible) | Apache 2.0 | Hugging Face, ModelScope |
+| Kimi K2 | 1T / 32B | 128K | MIT modificada | Hugging Face |
 
 Los datos de rendimiento comparado no están disponibles en la información proporcionada. La comparativa se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -99,8 +99,8 @@ Los datos de rendimiento comparado no están disponibles en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inclusionAI/Ling-3.1-flash
-- Organización en HuggingFace: https://huggingface.co/inclusionAI
+- Hugging Face: https://huggingface.co/inclusionAI/Ling-3.1-flash
+- Organización en Hugging Face: https://huggingface.co/inclusionAI
 - ModelScope: https://modelscope.cn/organization/inclusionAI
 - OpenRouter: https://openrouter.ai/inclusionai/ling-3.1-flash
 - Cookbook de SGLang para Ling-3.1-flash: https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.1-flash

@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - No se proporcionan requisitos oficiales de VRAM ni latencia en la documentacion del modelo.
 - Dado el tamano del UNet (441,9M parametros), se estima que la inferencia en FP16 requiere aproximadamente 1-2 GB de VRAM solo para los pesos, mas el consumo del text encoder (350M) y el VAE. En la practica, una GPU con 6-8 GB de VRAM (como una RTX 3060 o superior) deberia ser suficiente para generar imagenes de resolucion moderada.
-- El modelo se integra con la libreria `diffusers`, por lo que puede desplegarse con pipelines estandar de HuggingFace. No se mencionan opciones como vLLM, llama.cpp u Ollama, que son especificas de modelos de lenguaje.
+- El modelo se integra con la libreria `diffusers`, por lo que puede desplegarse con pipelines estandar de Hugging Face. No se mencionan opciones como vLLM, llama.cpp u Ollama, que son especificas de modelos de lenguaje.
 - La decodificacion con Mage-VAE es 5 veces mas rapida que la del VAE de Flux.2, lo que reduce el cuello de botella en la etapa de muestreo.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se dispone de datos comparativos con otros modelos de generacion de retratos 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nebulette/aniportrait-lfm)
+- [Modelo en Hugging Face](https://huggingface.co/nebulette/aniportrait-lfm)
 - [Text encoder LFM2.5](https://huggingface.co/nebulette/clip-l-sized-lfm-350m)
 - [Modelo base Aniimage-2](https://huggingface.co/8BitStudio/Aniimage-2)

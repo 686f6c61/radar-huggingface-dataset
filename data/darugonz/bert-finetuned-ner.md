@@ -80,10 +80,10 @@ El `model-index` del modelo no contiene resultados adicionales (`results: []`), 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| darugonz/bert-finetuned-ner | 107,7 M | No disponible (BERT-base, hasta 512) | NER | Apache 2.0 | HuggingFace, 0 descargas |
-| google-bert/bert-base-cased | 108 M | 512 tokens | Modelo base (sin cabeza NER) | Apache 2.0 | HuggingFace, ampliamente usado |
-| dslim/bert-base-NER | 108 M | 512 tokens | NER (CoNLL-2003) | MIT | HuggingFace, muy popular |
-| Jean-Baptiste/roberta-large-ner-english | 355 M | 512 tokens | NER | MIT | HuggingFace |
+| darugonz/bert-finetuned-ner | 107,7 M | No disponible (BERT-base, hasta 512) | NER | Apache 2.0 | Hugging Face, 0 descargas |
+| google-bert/bert-base-cased | 108 M | 512 tokens | Modelo base (sin cabeza NER) | Apache 2.0 | Hugging Face, ampliamente usado |
+| dslim/bert-base-NER | 108 M | 512 tokens | NER (CoNLL-2003) | MIT | Hugging Face, muy popular |
+| Jean-Baptiste/roberta-large-ner-english | 355 M | 512 tokens | NER | MIT | Hugging Face |
 
 La comparación con `dslim/bert-base-NER` es la más directa por arquitectura y tarea, pero no se dispone de métricas comparables en la información proporcionada para este modelo, ya que el autor no especifica el corpus de evaluación. `Jean-Baptiste/roberta-large-ner-english` es una alternativa de mayor tamaño con mejor rendimiento típico en NER inglés, pero con mayor coste de inferencia.
 
@@ -100,7 +100,7 @@ La comparación con `dslim/bert-base-NER` es la más directa por arquitectura y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darugonz/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/darugonz/bert-finetuned-ner
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
 - Documentación de `BertForTokenClassification`: https://huggingface.co/docs/transformers/model_doc/bert
 - Pipeline de token-classification: https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.TokenClassificationPipeline

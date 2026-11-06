@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_ministral-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_ministral-8b_seed42
 - Herramienta Tinker: https://thinkingmachines.ai/tinker/
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.6-27B
 - No se han encontrado papers, blogs ni demos adicionales en la informacion proporcionada.

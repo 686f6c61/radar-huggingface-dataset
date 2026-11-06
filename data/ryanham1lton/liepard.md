@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Liepard es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Liepard`. En el momento de redactar esta ficha, la informacion disponible es minima: la model card del repositorio no contiene mas que la declaracion de licencia (`cc-by-4.0`), sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB, no registra descargas ni "likes" y no tiene pipeline declarado.
+Liepard es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Liepard`. En el momento de redactar esta ficha, la informacion disponible es minima: la model card del repositorio no contiene mas que la declaracion de licencia (`cc-by-4.0`), sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB, no registra descargas ni "likes" y no tiene pipeline declarado.
 
 No es posible determinar que problema resuelve, cual es su arquitectura ni su tamano real a partir de los datos publicos del repositorio. La ausencia de una model card descriptiva, de pesos documentados y de cualquier referencia a un paper o blog tecnico impide clasificarlo dentro de una categoria concreta (LLM de texto, modelo de vision, embedding, modelo multimodal, etc.).
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Liepard | no disponible | no disponible | cc-by-4.0 | HuggingFace, 0 descargas |
+| Liepard | no disponible | no disponible | cc-by-4.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Liepard
+- Hugging Face: https://huggingface.co/Ryanham1lton/Liepard
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

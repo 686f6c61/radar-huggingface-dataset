@@ -115,11 +115,11 @@ Referencia comparativa en el mismo leaderboard: Phonon-2 promedia 5,21 % y Phono
 
 | Modelo | Parametros | Tamano | WER medio FLEURS (25 idiomas) | WER Open ASR (7 sets EN) | Licencia | Disponibilidad |
 |---|---|--:|--:|--:|---|---|
-| Phonon-2.5 | ~0,6 B cuantizado | 156,2 MB | **11,71 %** | 5,06 % | CC-BY-4.0 | HuggingFace, pip |
-| Phonon-2.5 English | ~0,6 B cuantizado | 156,2 MB (mismo tamano) | No disponible (solo ingles) | 4,82 % | CC-BY-4.0 | HuggingFace |
-| Parakeet Redux | No disponible | 178 MB | 12,18 % | No disponible | No disponible en la informacion | HuggingFace |
-| Parakeet TDT 0.6B v3 | 0,6 B | 2.508 MB | 13,26 % | No disponible en la informacion | CC-BY-4.0 | HuggingFace (NVIDIA) |
-| Phonon-2 | No disponible | No disponible | No disponible | 5,21 % | No disponible en la informacion | HuggingFace |
+| Phonon-2.5 | ~0,6 B cuantizado | 156,2 MB | **11,71 %** | 5,06 % | CC-BY-4.0 | Hugging Face, pip |
+| Phonon-2.5 English | ~0,6 B cuantizado | 156,2 MB (mismo tamano) | No disponible (solo ingles) | 4,82 % | CC-BY-4.0 | Hugging Face |
+| Parakeet Redux | No disponible | 178 MB | 12,18 % | No disponible | No disponible en la informacion | Hugging Face |
+| Parakeet TDT 0.6B v3 | 0,6 B | 2.508 MB | 13,26 % | No disponible en la informacion | CC-BY-4.0 | Hugging Face (NVIDIA) |
+| Phonon-2 | No disponible | No disponible | No disponible | 5,21 % | No disponible en la informacion | Hugging Face |
 
 Phonon-2.5 es el mas pequeno de la comparativa y, a la vez, el de mejor media multilingue: gana a Parakeet Redux en 14 de los 25 idiomas y al modelo completo de NVIDIA en 12, con ventajas muy marcadas en griego (20,83 frente a 36,11), esloveno (18,53 frente a 24,70), letrado (14,92 frente a 23,66) y estonio (11,91 frente a 14,34). En las lenguas mayoritarias (frances, aleman, neerlandes, polaco) el modelo completo sigue siendo mejor.
 
@@ -134,11 +134,11 @@ Phonon-2.5 es el mas pequeno de la comparativa y, a la vez, el de mejor media mu
 - El codigo del repositorio y la CLI son Apache 2.0, pero esa licencia no cubre los pesos.
 - Requiere Python 3.10 o superior; el `python3` del sistema en macOS (3.9) no sirve.
 - El soporte de aceleracion esta limitado a Apple silicon via MLX; en Linux y Windows se ejecuta en CPU, sin backend CUDA documentado.
-- La informacion de busqueda web disponible no aporta documentacion tecnica adicional (solo resultados genericos de LinkedIn), por lo que todo lo anterior procede de la model card y de los metadatos de HuggingFace.
+- La informacion de busqueda web disponible no aporta documentacion tecnica adicional (solo resultados genericos de LinkedIn), por lo que todo lo anterior procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FermionResearch/Phonon-2.5
+- Modelo en Hugging Face: https://huggingface.co/FermionResearch/Phonon-2.5
 - Variante en ingles: https://huggingface.co/FermionResearch/Phonon-2.5-English
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Documentacion de la CLI y el servidor: https://www.fermionresearch.com/docs/speech/

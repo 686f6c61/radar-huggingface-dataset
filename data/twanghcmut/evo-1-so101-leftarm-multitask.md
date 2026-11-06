@@ -90,10 +90,10 @@ Comparativa con otros modelos de la misma serie y protocolo (todos in-sample):
 
 | Modelo | Parametros | Contexto | MAE norm. (mismo protocolo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Evo-1-SO101-LeftArm-Multitask | 0,77 B | no disponible | 11,46 % | MIT | HuggingFace |
-| Evo1_SO100 (modelo base) | 0,77 B | no disponible | no disponible | no disponible | HuggingFace (MINT-SJTU) |
-| MolmoAct2 (twanghcmut/molmoact2-so101-left-arm-multitask) | no disponible | no disponible | 4,37 % | no disponible | HuggingFace |
-| pi0.5, GR00T N1.7, RLDX-1, X-VLA (fine-tunes de la misma serie) | no disponible | no disponible | no disponible en la informacion recibida | no disponible | HuggingFace |
+| Evo-1-SO101-LeftArm-Multitask | 0,77 B | no disponible | 11,46 % | MIT | Hugging Face |
+| Evo1_SO100 (modelo base) | 0,77 B | no disponible | no disponible | no disponible | Hugging Face (MINT-SJTU) |
+| MolmoAct2 (twanghcmut/molmoact2-so101-left-arm-multitask) | no disponible | no disponible | 4,37 % | no disponible | Hugging Face |
+| pi0.5, GR00T N1.7, RLDX-1, X-VLA (fine-tunes de la misma serie) | no disponible | no disponible | no disponible en la informacion recibida | no disponible | Hugging Face |
 
 Este modelo es claramente inferior a MolmoAct2 sobre el mismo dataset y protocolo (11,46 % frente a 4,37 %). No se dispone de cifras publicadas para pi0.5, GR00T N1.7, RLDX-1 ni X-VLA en la informacion proporcionada.
 
@@ -112,7 +112,7 @@ Este modelo es claramente inferior a MolmoAct2 sobre el mismo dataset y protocol
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/twanghcmut/Evo-1-SO101-LeftArm-Multitask
+- Hugging Face (este modelo): https://huggingface.co/twanghcmut/Evo-1-SO101-LeftArm-Multitask
 - Modelo base Evo-1 SO100: https://huggingface.co/MINT-SJTU/Evo1_SO100
 - Repositorio oficial Evo-1: https://github.com/MINT-SJTU/Evo-1
 - Dataset de fine-tuning: https://huggingface.co/datasets/hungho77/so101-left-arm-multitask

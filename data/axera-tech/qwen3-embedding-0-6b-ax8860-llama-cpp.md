@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks de calidad (MTEB, recuperacion, cla
 
 | Modelo | Parametros | Contexto | Dimension del embedding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Embedding-0.6B (base) | 0,6B | No disponible en esta ficha | 1024 | No disponible en esta ficha | HuggingFace (Qwen/Qwen3-Embedding-0.6B) |
-| Qwen3-Embedding-0.6B-AX8860-llama.cpp | 0,6B | 4096 tokens | 1024 | No disponible | HuggingFace, atado a hardware AX8860 |
+| Qwen3-Embedding-0.6B (base) | 0,6B | No disponible en esta ficha | 1024 | No disponible en esta ficha | Hugging Face (Qwen/Qwen3-Embedding-0.6B) |
+| Qwen3-Embedding-0.6B-AX8860-llama.cpp | 0,6B | 4096 tokens | 1024 | No disponible | Hugging Face, atado a hardware AX8860 |
 | Alternativas de embeddings de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de datos de otros modelos comparables (por ejemplo, variantes de embeddings de 0,5-1B) con especificaciones verificables, por lo que la comparativa cuantitativa de rendimiento queda como no disponible.
@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3-Embedding-0.6B-AX8860-llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-Embedding-0.6B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Bifurcacion de llama.cpp: https://github.com/ZHEQIUSHUI/llama.cpp (rama `feat/qwen3-whole`, commit `19737a5`, directorio `ggml/src/ggml-axera/models/qwen3`)
 - Kernels de NPU: https://github.com/ZHEQIUSHUI/ax-dsl-kernels (rama `main`, commit `67e8473`, directorio `models/qwen3_embedding`)

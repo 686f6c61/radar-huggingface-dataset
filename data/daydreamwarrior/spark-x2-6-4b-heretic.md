@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.6-4B-heretic es una versión "decensurada" (abliterada) del modelo XHToken/Spark-X2.6-4B, publicada por el usuario daydreamwarrior en HuggingFace. El modelo base es Spark-X2.6-4B, un modelo de generación de texto conversacional con soporte para inglés y chino, y esta variante ha sido modificada mediante la herramienta Heretic v2.0.0.dev0, un proyecto de ablación de alineación que elimina los comportamientos de rechazo del modelo de forma automatizada y reproducible.
+Spark-X2.6-4B-heretic es una versión "decensurada" (abliterada) del modelo XHToken/Spark-X2.6-4B, publicada por el usuario daydreamwarrior en Hugging Face. El modelo base es Spark-X2.6-4B, un modelo de generación de texto conversacional con soporte para inglés y chino, y esta variante ha sido modificada mediante la herramienta Heretic v2.0.0.dev0, un proyecto de ablación de alineación que elimina los comportamientos de rechazo del modelo de forma automatizada y reproducible.
 
 El propósito de esta ficha es evaluar el modelo desde una perspectiva técnica: se trata de un modelo de unos 4.100 millones de parámetros, distribuido en formato safetensors y GGUF (el repositorio ocupa 39,0 GB), bajo licencia Apache 2.0. Su relevancia radica en la técnica empleada: en lugar de un fine-tuning convencional, Heretic aplica una ablación de rangos arbitrarios (ARA) sobre las capas del transformer, logrando reducir las negativas de 100/100 a 1/100 con una divergencia KL de solo 0,0097 respecto al modelo original, es decir, manteniendo prácticamente intactas las capacidades de generación.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - VRAM estimada para inferencia: con 4,11 B de parametros, la version en FP16 requiere aproximadamente 8-9 GB de VRAM; cuantizaciones GGUF tipicas (Q4_K_M) rondarian los 2,5-3,5 GB. Estas cifras son estimaciones basadas en el tamano del modelo, no datos publicados.
 - GPU recomendadas: por su tamano, cabe comodamente en GPUs de consumo como la RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090; para servidores, cualquier GPU moderna (A100, L4) es mas que suficiente.
 - Consumer GPU: si, es plenamente viable en GPUs domesticas de 8 GB o mas en FP16, e incluso en 4-6 GB con cuantizacion GGUF agresiva.
-- Opciones de despliegue: llama.cpp y Ollama (gracias a los GGUF), vLLM, TGI o transformers de HuggingFace directamente (formato safetensors, endpoints_compatible). La model card indica compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp y Ollama (gracias a los GGUF), vLLM, TGI o transformers de Hugging Face directamente (formato safetensors, endpoints_compatible). La model card indica compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ Otras alternativas de ablacion en el ecosistema open source incluyen las variant
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/daydreamwarrior/Spark-X2.6-4B-heretic
+- Ficha del modelo en Hugging Face: https://huggingface.co/daydreamwarrior/Spark-X2.6-4B-heretic
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Proyecto Heretic: https://heretic-project.org

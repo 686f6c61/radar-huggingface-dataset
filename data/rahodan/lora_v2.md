@@ -2,9 +2,9 @@
 
 ## Resumen
 
-rahodan/lora_v2 es un repositorio publicado en HuggingFace por el usuario rahodan. La informacion publica disponible es minima: el repositorio tiene un tamano de 8,2 GB, la etiqueta region:us, y registra 6 descargas y 0 likes desde su creacion el 9 de septiembre de 2026 y su ultima actualizacion el 13 de septiembre de 2026. No se especifica pipeline, licencia, idiomas soportados ni model card con descripcion tecnica.
+rahodan/lora_v2 es un repositorio publicado en Hugging Face por el usuario rahodan. La informacion publica disponible es minima: el repositorio tiene un tamano de 8,2 GB, la etiqueta region:us, y registra 6 descargas y 0 likes desde su creacion el 9 de septiembre de 2026 y su ultima actualizacion el 13 de septiembre de 2026. No se especifica pipeline, licencia, idiomas soportados ni model card con descripcion tecnica.
 
-El nombre del repositorio (lora_v2) sugiere, por convencion de nomenclatura en el ecosistema HuggingFace, que se trata de un conjunto de pesos de tipo LoRA (Low-Rank Adaptation) o de un modelo derivado entrenado con esa tecnica, pero esta interpretacion no esta confirmada por ninguna fuente oficial. Del mismo modo, el tamano de 8,2 GB es el unico dato objetivo de dimensionamiento: si correspondiera a pesos en precision completa (fp16/bf16), equivaldria aproximadamente a un modelo de unos 4.000 millones de parametros, mientras que si fuesen adaptadores LoRA empaquetados con optimizador o checkpoints intermedios, el modelo base subyacente podria ser de un orden distinto. Ninguna de estas hipotesis puede verificarse con la informacion proporcionada.
+El nombre del repositorio (lora_v2) sugiere, por convencion de nomenclatura en el ecosistema Hugging Face, que se trata de un conjunto de pesos de tipo LoRA (Low-Rank Adaptation) o de un modelo derivado entrenado con esa tecnica, pero esta interpretacion no esta confirmada por ninguna fuente oficial. Del mismo modo, el tamano de 8,2 GB es el unico dato objetivo de dimensionamiento: si correspondiera a pesos en precision completa (fp16/bf16), equivaldria aproximadamente a un modelo de unos 4.000 millones de parametros, mientras que si fuesen adaptadores LoRA empaquetados con optimizador o checkpoints intermedios, el modelo base subyacente podria ser de un orden distinto. Ninguna de estas hipotesis puede verificarse con la informacion proporcionada.
 
 No se ha encontrado documentacion, paper, blog tecnico ni anuncio asociado al repositorio. Las busquedas web realizadas no devuelven resultados relacionados: los enlaces recuperados corresponden a la portada de Reddit, a un repositorio de prompts de jailbreak, a la portada de GitHub, a la pagina de descarga de GitHub Desktop y a una consulta en Zhihu sobre verificacion telefonica en ChatGPT. Por tanto, esta ficha recoge unicamente los metadatos verificables del repositorio y marca explicitamente como no disponible todo aquello que no consta.
 
@@ -75,6 +75,6 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahodan/lora_v2
+- Repositorio en Hugging Face: https://huggingface.co/rahodan/lora_v2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Resultados de busqueda recuperados, no relacionados con el modelo: https://www.reddit.com/, https://github.com/0xk1h0/ChatGPT_DAN, https://github.com/, https://desktop.github.com/download/, https://www.zhihu.com/question/2031417400504082455

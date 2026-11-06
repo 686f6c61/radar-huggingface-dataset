@@ -33,7 +33,7 @@ La innovación técnica principal es el uso de Trellis a K4, que no necesita ten
 - Contexto largo nativo de 262 144 tokens, ampliable hasta ~1M con override de configuración.
 - Generación especulativa mediante head MTP (draft head) conservado en BF16.
 - Vocabulario de 248 320 tokens con head destejido (untied), heredado del modelo base.
-- Compatible con el pipeline `image-text-to-text` de HuggingFace.
+- Compatible con el pipeline `image-text-to-text` de Hugging Face.
 
 ## Casos de uso
 
@@ -89,7 +89,7 @@ El modelo K4 ofrece el menor footprint residente y la mayor fidelidad al profeso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-K4
+- Modelo en Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-K4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork vLLM Gilded Gnosis (issue de referencia): https://github.com/local-inference-lab/vllm/issues/311
 - Imagen Docker del fork: `voipmonitor/vllm:gilded-gnosis-v20-vllm4d006a4-b12xcd3ce19-fi1ac6942-cu132-20260810-r34` (digest `sha256:820181fbbc975cd5291c411cda9771d58fecee1636d916f508f47230df20592b`)

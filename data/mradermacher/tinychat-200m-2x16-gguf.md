@@ -21,7 +21,7 @@ Este modelo resulta relevante para escenarios de despliegue en dispositivos edge
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo original (FlameF0X/TinyChat-200m-2x16). El sufijo "2x16" podría sugerir una configuración con dos componentes o bloques de 16 unidades, pero no hay datos confirmados. Tampoco se conocen los detalles del entrenamiento: número de tokens, composición del dataset, técnicas de alineación (RLHF, DPO, etc.) o innovaciones técnicas. El repositorio de HuggingFace del modelo base no incluye una model card sustancial, y la cuantización GGUF de mradermacher es una conversión estática sin modificaciones en los pesos originales. Por tanto, cualquier afirmación sobre la arquitectura o el proceso de entrenamiento sería especulativa.
+No se ha publicado información sobre la arquitectura interna del modelo original (FlameF0X/TinyChat-200m-2x16). El sufijo "2x16" podría sugerir una configuración con dos componentes o bloques de 16 unidades, pero no hay datos confirmados. Tampoco se conocen los detalles del entrenamiento: número de tokens, composición del dataset, técnicas de alineación (RLHF, DPO, etc.) o innovaciones técnicas. El repositorio de Hugging Face del modelo base no incluye una model card sustancial, y la cuantización GGUF de mradermacher es una conversión estática sin modificaciones en los pesos originales. Por tanto, cualquier afirmación sobre la arquitectura o el proceso de entrenamiento sería especulativa.
 
 ## Capacidades
 
@@ -64,6 +64,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/TinyChat-200m-2x16-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/TinyChat-200m-2x16-GGUF
 - Modelo base original: https://huggingface.co/FlameF0X/TinyChat-200m-2x16
 - Página de ayuda de mradermacher para solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

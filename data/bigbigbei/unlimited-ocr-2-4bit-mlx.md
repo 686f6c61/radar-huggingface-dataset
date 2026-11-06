@@ -83,7 +83,7 @@ No se dispone de información suficiente para establecer una comparación cuanti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bigbigbei/Unlimited-OCR-2-4bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/bigbigbei/Unlimited-OCR-2-4bit-mlx
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR-2
 - MLX: https://github.com/ml-explore/mlx
 - MlxOCRKit (decoder Swift): https://github.com/playstonex/MinerUKit

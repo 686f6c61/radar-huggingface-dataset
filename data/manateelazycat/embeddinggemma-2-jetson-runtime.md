@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de IA, sino un conjunto de archivos de instalación Docker-save verificados para el runtime de inferencia de EmbeddingGemma 2 sobre placas NVIDIA Jetson AGX Thor y AGX Orin. Lo publica el usuario manateelazycat bajo el identificador manateelazycat/EmbeddingGemma-2-Jetson-Runtime, con licencia "other" y un tamano de repositorio de 4,6 GB.
+Este repositorio de Hugging Face no contiene un modelo de IA, sino un conjunto de archivos de instalación Docker-save verificados para el runtime de inferencia de EmbeddingGemma 2 sobre placas NVIDIA Jetson AGX Thor y AGX Orin. Lo publica el usuario manateelazycat bajo el identificador manateelazycat/EmbeddingGemma-2-Jetson-Runtime, con licencia "other" y un tamano de repositorio de 4,6 GB.
 
 Segun la model card, los archivos contienen unicamente el runtime de inferencia: no incluyen pesos del modelo ni tokenizer. El snapshot del modelo se descarga por separado desde google/embeddinggemma-2. Los archivos son byte a byte identicos a la version aceptada del runtime 0.1.2 distribuida en el CDN del Registry, y estan pensados para usarse junto al AI Pod EmbeddingGemma 2 LPK y su Model Host, que realizan la descarga verificada, la comprobacion de SHA256 y la importacion de la imagen.
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/EmbeddingGemma-2-Jetson-Runtime
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/EmbeddingGemma-2-Jetson-Runtime
 - Modelo referenciado (snapshot a descargar por separado): https://huggingface.co/google/embeddinggemma-2
 - Proyecto fuente citado en la model card: lzc-aipod-embedding-gemma2 (sin URL en la informacion disponible)
 - Registro de imagenes citado: registry.lazycat.cloud (sin URL en la informacion disponible)

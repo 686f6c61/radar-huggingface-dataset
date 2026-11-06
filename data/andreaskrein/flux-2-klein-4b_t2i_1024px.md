@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `andreaskrein/flux-2-klein-4B_T2I_1024px`, publicado en HuggingFace por el usuario andreaskrein, es la única fuente de información disponible sobre este modelo. La model card asociada está prácticamente vacía: se limita a declarar la licencia Apache 2.0 y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. No hay pipeline declarado, no se especifican idiomas soportados y el repositorio registra cero descargas y cero likes en la fecha de consulta.
+El repositorio `andreaskrein/flux-2-klein-4B_T2I_1024px`, publicado en Hugging Face por el usuario andreaskrein, es la única fuente de información disponible sobre este modelo. La model card asociada está prácticamente vacía: se limita a declarar la licencia Apache 2.0 y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. No hay pipeline declarado, no se especifican idiomas soportados y el repositorio registra cero descargas y cero likes en la fecha de consulta.
 
 El identificador del repositorio sugiere que se trata de un modelo de generación de imágenes a partir de texto (T2I), con un tamaño aproximado de 4.000 millones de parámetros y entrenado o ajustado para resolución de 1024 píxeles. La denominación "flux-2-klein" apunta a la familia FLUX de Black Forest Labs, pero esta correspondencia no está confirmada por el autor en ningún campo verificable del repositorio, por lo que debe tratarse como una inferencia basada en el nombre y no como un dato técnico.
 
-La relevancia de esta ficha es, por tanto, limitada y fundamentalmente cautelar: sirve para documentar que el artefacto existe en HuggingFace bajo licencia Apache 2.0, pero no permite evaluar capacidades, calidad de generación ni idoneidad para producción. Cualquier decisión técnica basada en este repositorio requiere contactar con el autor o localizar la documentación del modelo original del que derive.
+La relevancia de esta ficha es, por tanto, limitada y fundamentalmente cautelar: sirve para documentar que el artefacto existe en Hugging Face bajo licencia Apache 2.0, pero no permite evaluar capacidades, calidad de generación ni idoneidad para producción. Cualquier decisión técnica basada en este repositorio requiere contactar con el autor o localizar la documentación del modelo original del que derive.
 
 ## Especificaciones técnicas
 
@@ -82,14 +82,14 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-2-klein-4B_T2I_1024px (andreaskrein) | no disponible | no disponible | Apache 2.0 | no disponible | Repositorio HuggingFace con 0 descargas |
+| flux-2-klein-4B_T2I_1024px (andreaskrein) | no disponible | no disponible | Apache 2.0 | no disponible | Repositorio Hugging Face con 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Model card vacía: no hay información sobre arquitectura, entrenamiento, datos ni uso previsto, lo que impide cualquier evaluación técnica seria.
 - Repositorio sin tracción: cero descargas y cero likes en la fecha de consulta, sin señales de validación por parte de la comunidad.
-- Fecha de creación atípica: el repositorio figura creado el 2026-10-14, una fecha posterior a la habitual en los repositorios de HuggingFace. Conviene verificar si se trata de un error de metadatos, de un artefacto de prueba o de una fecha mal registrada.
+- Fecha de creación atípica: el repositorio figura creado el 2026-10-14, una fecha posterior a la habitual en los repositorios de Hugging Face. Conviene verificar si se trata de un error de metadatos, de un artefacto de prueba o de una fecha mal registrada.
 - Procedencia no verificada: no se indica si los pesos derivan de un modelo oficial de Black Forest Labs, de un ajuste fino propio o de un entrenamiento desde cero. El uso del nombre "flux" en el identificador no implica autorización ni afiliación.
 - Licencia: se declara Apache 2.0, una licencia permisiva que en principio permite uso comercial. Sin embargo, no se especifica la licencia de los pesos derivados ni si existen restricciones adicionales heredadas del modelo base. Se recomienda verificación legal antes de uso comercial.
 - Sesgos: no disponible. No hay evaluación de sesgos demográficos, culturales ni de representación.
@@ -101,7 +101,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andreaskrein/flux-2-klein-4B_T2I_1024px
+- Repositorio en Hugging Face: https://huggingface.co/andreaskrein/flux-2-klein-4B_T2I_1024px
 - Perfil del autor: https://huggingface.co/andreaskrein
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

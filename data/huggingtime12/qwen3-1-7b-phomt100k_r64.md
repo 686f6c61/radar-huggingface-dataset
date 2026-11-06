@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B (base) | 1.7B | 32k (extensible a 256k) | Multilingue general | Apache 2.0 | HuggingFace |
-| huggingtime12/Qwen3-1.7B-PhoMT100k_R64 | 1.7B | No disponible (sugerido 100k) | Traduccion vietnamita | No disponible | HuggingFace |
-| NLLB-200 (1.3B) | 1.3B | 512 | Traduccion multilingue (200 idiomas) | CC-BY-NC | HuggingFace |
+| Qwen3-1.7B (base) | 1.7B | 32k (extensible a 256k) | Multilingue general | Apache 2.0 | Hugging Face |
+| huggingtime12/Qwen3-1.7B-PhoMT100k_R64 | 1.7B | No disponible (sugerido 100k) | Traduccion vietnamita | No disponible | Hugging Face |
+| NLLB-200 (1.3B) | 1.3B | 512 | Traduccion multilingue (200 idiomas) | CC-BY-NC | Hugging Face |
 
 La comparativa se basa en datos publicos de los modelos base. No se dispone de benchmarks del fine-tuning para comparar directamente.
 
@@ -73,7 +73,7 @@ La comparativa se basa en datos publicos de los modelos base. No se dispone de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT100k_R64
+- Modelo en Hugging Face: https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT100k_R64
 - Modelo relacionado (Qwen3-1.7B-PhoMT100k_1): https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT100k_1
 - Modelo relacionado (qwen3_1.7B_phomt100k_1_epoch_2): https://huggingface.co/huggingtime12/qwen3_1.7B_phomt100k_1_epoch_2
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

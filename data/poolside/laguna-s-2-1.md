@@ -96,7 +96,7 @@ Laguna S 2.1 ofrece un rendimiento comparable a modelos con muchos más parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/poolside/Laguna-S-2.1
+- Modelo en Hugging Face: https://huggingface.co/poolside/Laguna-S-2.1
 - Blog de lanzamiento: https://poolside.ai/blog/introducing-laguna-s-2-1
 - Uso en OpenRouter: https://openrouter.ai/poolside/laguna-s-2.1
 - Uso en Vercel AI Gateway: https://vercel.com/ai-gateway/models/laguna-s-2.1

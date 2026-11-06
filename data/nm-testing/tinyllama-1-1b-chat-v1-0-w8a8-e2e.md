@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-e2e | 1,1 mil millones | 2.048 tokens (segun base) | W8A8 INT8, compressed-tensors | no disponible en la model card | HuggingFace, 13 descargas |
-| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1 mil millones | 2.048 tokens | FP16/BF16 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-1B-Instruct | 1,23 mil millones | 128.000 tokens | FP16/BF16, con variantes GGUF de la comunidad | Llama 3.2 Community License | HuggingFace, muy extendido |
-| Qwen2.5-1.5B-Instruct | 1,54 mil millones | 32.768 tokens | FP16/BF16, con variantes GGUF | Apache 2.0 | HuggingFace, muy extendido |
+| nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-e2e | 1,1 mil millones | 2.048 tokens (segun base) | W8A8 INT8, compressed-tensors | no disponible en la model card | Hugging Face, 13 descargas |
+| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1 mil millones | 2.048 tokens | FP16/BF16 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-1B-Instruct | 1,23 mil millones | 128.000 tokens | FP16/BF16, con variantes GGUF de la comunidad | Llama 3.2 Community License | Hugging Face, muy extendido |
+| Qwen2.5-1.5B-Instruct | 1,54 mil millones | 32.768 tokens | FP16/BF16, con variantes GGUF | Apache 2.0 | Hugging Face, muy extendido |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la tabla se limita a parametros, contexto, licencia y disponibilidad. En términos generales de arquitectura y tamaño, Llama-3.2-1B-Instruct y Qwen2.5-1.5B-Instruct ofrecen ventanas de contexto bastante mayores que la del modelo aquí descrito.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-e2e
+- Modelo en Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-e2e
 - Modelo base TinyLlama-1.1B-Chat-v1.0 (referencia del original): https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Librería compressed-tensors (formato de pesos empleado): https://github.com/neuralmagic/compressed-tensors
 - Librería llm-compressor (flujo de cuantización habitual en este ecosistema): https://github.com/vllm-project/llm-compressor

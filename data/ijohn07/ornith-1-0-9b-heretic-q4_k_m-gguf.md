@@ -97,7 +97,7 @@ Nota: los datos de los modelos comparados proceden de sus fichas publicas y no s
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/ijohn07/Ornith-1.0-9B-heretic-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/ijohn07/Ornith-1.0-9B-heretic-Q4_K_M-GGUF
 - Modelo base de la cuantizacion: https://huggingface.co/trohrbaugh/Ornith-1.0-9B-heretic
 - Modelo original de la cadena de derivacion: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B
 - Licencia referenciada por el autor: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B/blob/main/LICENSE

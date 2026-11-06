@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer classification v1 es un repositorio publicado por el usuario caialharbi en HuggingFace que contiene una implementación propia (no oficial) de la arquitectura EfficientFormer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark.
+Efficientformer classification v1 es un repositorio publicado por el usuario caialharbi en Hugging Face que contiene una implementación propia (no oficial) de la arquitectura EfficientFormer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark.
 
 El dato más relevante de los metadatos es el recuento de parámetros: 33.088 (treinta y tres mil ochenta y ocho) según el archivo safetensors. Esta cifra entra en contradicción con la escala declarada en la model card ("huge"), lo que refuerza que se trata de un artefacto de tamaño mínimo pensado para verificar que el código de definición del modelo se instancia y ejecuta correctamente, no para una carga de trabajo real.
 
@@ -46,7 +46,7 @@ No hay información sobre datos de entrenamiento. La model card indica explícit
 - Prueba de humo de pipelines de visión: verificar que un entorno de PyTorch instala dependencias, carga safetensors y ejecuta un forward pass de clasificación sin errores antes de desplegar un modelo real.
 - Plantilla de implementación reproducible: usar `config.json` y `main.py` como base para definir variantes de EfficientFormer con atención de ventana deslizante y fusión de bajo rango en proyectos de investigación.
 - Comparación de recetas de entrenamiento: el `training_args.json` sirve como punto de partida para montar experimentos con Adam y scheduler step, aplicando después la guía del autor de entrenar todos los baselines con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias.
-- Docencia y formación: ejemplo mínimo para explicar a estudiantes la diferencia entre un checkpoint de inicialización y un checkpoint entrenado en el ecosistema HuggingFace.
+- Docencia y formación: ejemplo mínimo para explicar a estudiantes la diferencia entre un checkpoint de inicialización y un checkpoint entrenado en el ecosistema Hugging Face.
 - Integración en CI/CD de investigación: test automático que compruebe que el modelo instancia correctamente (por ejemplo, `python main.py --help`) tras cambios en el código de definición de la arquitectura.
 - Referencia para adaptadores de carga: dado que requiere un adaptador explícito, puede usarse como caso de estudio para escribir wrappers que registren arquitecturas personalizadas en el ecosistema Transformers.
 - Análisis de arquitecturas eficientes en el borde: base para experimentar con la relación entre atención de ventana deslizante, fusión de bajo rango y coste computacional, siempre tras un entrenamiento propio.
@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks ni de configuraciones verificadas de otros 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| caialharbi/efficientformer-classification-v1 | EfficientFormer, implementacion propia, checkpoint de inicializacion | 33.088 | no disponible | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
+| caialharbi/efficientformer-classification-v1 | EfficientFormer, implementacion propia, checkpoint de inicializacion | 33.088 | no disponible | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
 | EfficientFormer original (Snap) | EfficientFormer oficial | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | EfficientFormerV2 | EfficientFormer mejorado | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | MobileViT / DeiT-Tiny | Alternativas ligeras de vision | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -92,6 +92,6 @@ Advertencia: la comparacion con estas familias es puramente arquitectonica. Este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/caialharbi/efficientformer-classification-v1
+- Repositorio en Hugging Face: https://huggingface.co/caialharbi/efficientformer-classification-v1
 - Archivos incluidos en el repositorio: `main.py` (artefacto principal con ejemplo ejecutable), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada

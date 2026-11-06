@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shiva032/texttoimage` es un repositorio publicado en HuggingFace por el usuario shiva032 bajo licencia MIT. El nombre sugiere un modelo orientado a la generación de imágenes a partir de texto (text-to-image), aunque la model card no aporta ninguna descripción funcional, arquitectura, dataset de entrenamiento ni especificaciones técnicas. El repositorio no incluye pipeline declarado, no tiene idiomas especificados y no registra descargas ni likes en el momento de la consulta.
+`shiva032/texttoimage` es un repositorio publicado en Hugging Face por el usuario shiva032 bajo licencia MIT. El nombre sugiere un modelo orientado a la generación de imágenes a partir de texto (text-to-image), aunque la model card no aporta ninguna descripción funcional, arquitectura, dataset de entrenamiento ni especificaciones técnicas. El repositorio no incluye pipeline declarado, no tiene idiomas especificados y no registra descargas ni likes en el momento de la consulta.
 
 Por la información disponible, se trata de un artefacto sin documentación sustantiva: el README se limita a la declaración de licencia. No hay metadatos que confirmen el tipo de modelo (difusión, transformer multimodal u otro), el tamaño de parámetros, la resolución de salida ni el formato de pesos. Cualquier evaluación técnica rigurosa es, por tanto, imposible con los datos actuales.
 
@@ -40,7 +40,7 @@ Tampoco hay información sobre el volumen de datos de entrenamiento, la composic
 - Prototipado de pipelines texto-a-imagen: solo si se confirma que el repositorio contiene pesos funcionales; actualmente no verificable.
 - Evaluación comparativa de modelos de generación de imágenes: únicamente como referencia de repositorio sin documentación, no como baseline fiable.
 - Pruebas de integración con librerías de difusión (Diffusers, ComfyUI): posible solo tras inspeccionar manualmente los archivos del repositorio.
-- Docencia sobre publicación de modelos en HuggingFace: útil como ejemplo de model card incompleta y de buenas prácticas ausentes.
+- Docencia sobre publicación de modelos en Hugging Face: útil como ejemplo de model card incompleta y de buenas prácticas ausentes.
 - Investigación sobre licencias permisivas: el uso de licencia MIT permite reutilización, pero sin artefactos documentados el valor es limitado.
 - Generación de imágenes en producción: no recomendable sin benchmarks, muestras ni especificaciones de resolución y latencia.
 
@@ -62,13 +62,13 @@ No es posible establecer una comparativa fiable porque se desconocen arquitectur
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| shiva032/texttoimage | no disponible | no disponible | MIT | HuggingFace |
+| shiva032/texttoimage | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no se puede verificar qué hace el modelo ni cómo usarlo.
-- Sin pipeline declarado en HuggingFace, lo que impide cargarlo automáticamente con `transformers` o `diffusers`.
+- Sin pipeline declarado en Hugging Face, lo que impide cargarlo automáticamente con `transformers` o `diffusers`.
 - Sin muestras de salida ni demos que permitan evaluar calidad.
 - Riesgo elevado de que el repositorio esté vacío, incompleto o sea una prueba sin pesos útiles.
 - La licencia MIT permite uso comercial, pero sin artefactos funcionales esa permisividad es irrelevante en la práctica.
@@ -77,4 +77,4 @@ No es posible establecer una comparativa fiable porque se desconocen arquitectur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shiva032/texttoimage
+- Hugging Face: https://huggingface.co/shiva032/texttoimage

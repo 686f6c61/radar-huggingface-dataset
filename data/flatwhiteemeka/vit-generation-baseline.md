@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flatwhiteemeka/vit-generation-baseline` es un prototipo de investigación publicado en HuggingFace por el usuario flatwhiteemeka. Se presenta como un Vision Transformer (ViT) orientado a tareas de generación, con una configuración declarada de escala "large" que incluye atención de tipo grouped query, fusión tucker, activación gelu y normalización rmsnorm. El repositorio incluye código de inferencia propio (`predict.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización, no como un modelo entrenado.
+`flatwhiteemeka/vit-generation-baseline` es un prototipo de investigación publicado en Hugging Face por el usuario flatwhiteemeka. Se presenta como un Vision Transformer (ViT) orientado a tareas de generación, con una configuración declarada de escala "large" que incluye atención de tipo grouped query, fusión tucker, activación gelu y normalización rmsnorm. El repositorio incluye código de inferencia propio (`predict.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización, no como un modelo entrenado.
 
 El dato más relevante para evaluarlo es su tamaño real: 49.600 parámetros según el fichero safetensors. Esa cifra es incompatible con la etiqueta "large" que aparece en la model card y sitúa al modelo varios órdenes de magnitud por debajo de cualquier ViT de referencia (ViT-Base ronda los 86 millones). El autor no reclama ninguna métrica de rendimiento y advierte explícitamente de que no se ha completado ningún entrenamiento ni auditoría de robustez, sesgo o transferencia de dominio.
 
@@ -22,7 +22,7 @@ Por tanto, su relevancia actual no está en el rendimiento, sino en su función 
 | Formato de pesos | safetensors (`model.safetensors`), con implementacion propia en `predict.py` |
 | Escala declarada | large (segun la model card; incoherente con los 49.600 parametros reales) |
 | Resolucion de entrada | no disponible |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -69,10 +69,10 @@ El autor declara de forma explícita que el repositorio no reclama ninguna puntu
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Metricas publicadas |
 |---|---|---|---|---|---|
-| flatwhiteemeka/vit-generation-baseline | 49.600 | no disponible | MIT | HuggingFace | Ninguna |
-| google/vit-base-patch16-224 | ~86 M | Parches de 16 px, 224x224 | Apache 2.0 | HuggingFace | Si (ImageNet, entre otras) |
-| facebook/dinov2-base | ~86 M | Imagenes de alta resolucion, autosupervisado | Apache 2.0 | HuggingFace | Si (tareas densas y de clasificacion) |
-| DeiT-base | ~86 M | Parches de 16 px, 224x224 | Apache 2.0 | HuggingFace | Si (ImageNet) |
+| flatwhiteemeka/vit-generation-baseline | 49.600 | no disponible | MIT | Hugging Face | Ninguna |
+| google/vit-base-patch16-224 | ~86 M | Parches de 16 px, 224x224 | Apache 2.0 | Hugging Face | Si (ImageNet, entre otras) |
+| facebook/dinov2-base | ~86 M | Imagenes de alta resolucion, autosupervisado | Apache 2.0 | Hugging Face | Si (tareas densas y de clasificacion) |
+| DeiT-base | ~86 M | Parches de 16 px, 224x224 | Apache 2.0 | Hugging Face | Si (ImageNet) |
 
 La comparación es estructural, no de rendimiento: los tres modelos de referencia están entrenados y evaluados, mientras que este repositorio publica únicamente un checkpoint de inicialización. No se dispone de una línea base pública equivalente de "ViT para generación" con métricas comparables en la información proporcionada.
 
@@ -91,5 +91,5 @@ La comparación es estructural, no de rendimiento: los tres modelos de referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flatwhiteemeka/vit-generation-baseline
+- Modelo en Hugging Face: https://huggingface.co/flatwhiteemeka/vit-generation-baseline
 - No se han encontrado en la búsqueda web papers, blogs, repositorios auxiliares ni demos adicionales asociados a este modelo.

@@ -94,7 +94,7 @@ No se dispone de cifras de exito comparables para las otras entradas de SO-101 B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5hadytru/so101_bench_G0.5_full_fine_tune
+- Modelo en Hugging Face: https://huggingface.co/5hadytru/so101_bench_G0.5_full_fine_tune
 - Licencia G0.5: https://huggingface.co/5hadytru/so101_bench_G0.5_full_fine_tune/blob/main/LICENSE-G0.5
 - Modelo base OpenGalaxea/G05: https://huggingface.co/OpenGalaxea/G05
 - Pagina del proyecto G0.5: https://opengalaxea.github.io/G05/

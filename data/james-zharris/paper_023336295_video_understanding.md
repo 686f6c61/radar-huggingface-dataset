@@ -62,7 +62,7 @@ No disponible. No hay modelos similares porque no es un modelo de IA, sino un do
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/james-ZHARRIS/paper_023336295_video_understanding
+- Repositorio Hugging Face: https://huggingface.co/james-ZHARRIS/paper_023336295_video_understanding
 - No se encontraron otros enlaces relevantes en la búsqueda web (los resultados eran enlaces genéricos a Google Scholar, NoteGPT, OpenAI, Stanford HAI y ChatGPT, sin relación directa con el repositorio).</think>## Resumen
 
 El repositorio `james-ZHARRIS/paper_023336295_video_understanding` no contiene un modelo de IA entrenable, sino un artefacto académico: un paper sobre el tema de video understanding. El autor, james-ZHARRIS, ha publicado un archivo Markdown con el texto completo del documento, que sigue una estructura explícita (intro-background-approach-eval-conclusion), un estilo de escritura conciso y analítico, y un formato de citas numérico APA. El repositorio está pensado como recurso para investigación o revisión académica, no como un sistema de IA desplegable.
@@ -127,5 +127,5 @@ No disponible. Al no ser un modelo de IA, no se pueden comparar parámetros, con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/james-ZHARRIS/paper_023336295_video_understanding
+- Repositorio Hugging Face: https://huggingface.co/james-ZHARRIS/paper_023336295_video_understanding
 - No se han encontrado otros enlaces relevantes en la búsqueda web. Los resultados obtenidos (Google Scholar, NoteGPT, OpenAI, Stanford HAI, ChatGPT) son enlaces genéricos no relacionados con este repositorio.

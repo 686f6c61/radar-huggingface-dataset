@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sudheerreddy333/Sentimentanalysis` es un modelo publicado en HuggingFace por el usuario `sudheerreddy333` bajo licencia MIT. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la frase "i am not good" (no soy bueno) y no se proporciona ningún dato técnico sobre arquitectura, parámetros, entrenamiento o capacidades. El modelo registra cero descargas y cero likes, y fue creado en agosto de 2026, lo que sugiere que se trata de un experimento personal o un placeholder sin documentación real.
+El repositorio `sudheerreddy333/Sentimentanalysis` es un modelo publicado en Hugging Face por el usuario `sudheerreddy333` bajo licencia MIT. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la frase "i am not good" (no soy bueno) y no se proporciona ningún dato técnico sobre arquitectura, parámetros, entrenamiento o capacidades. El modelo registra cero descargas y cero likes, y fue creado en agosto de 2026, lo que sugiere que se trata de un experimento personal o un placeholder sin documentación real.
 
 Dado que no existe información pública sobre su diseño, rendimiento o uso previsto, no es posible evaluar su idoneidad para ninguna tarea concreta. Cualquier intento de utilizarlo en producción sería arriesgado y carecería de fundamento técnico. Se recomienda tratar este repositorio como un artefacto sin validar y buscar alternativas con documentación completa.
 
@@ -56,4 +56,4 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/sudheerreddy333/Sentimentanalysis)
+- [Repositorio en Hugging Face](https://huggingface.co/sudheerreddy333/Sentimentanalysis)

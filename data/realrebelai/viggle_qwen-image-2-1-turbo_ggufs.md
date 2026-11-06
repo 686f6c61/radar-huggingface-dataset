@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `realrebelai/Viggle_Qwen-Image-2.1-Turbo_GGUFs` es una publicacion alojada en HuggingFace por el usuario `realrebelai`. Por el nombre del repositorio, el contenido parece corresponder a un conjunto de ficheros en formato GGUF (cuantizaciones) derivados de un modelo denominado "Viggle Qwen-Image 2.1 Turbo", presumiblemente un modelo de generacion de imagenes. Esta interpretacion procede unicamente del identificador del repositorio y no esta confirmada por ninguna documentacion publicada.
+El repositorio `realrebelai/Viggle_Qwen-Image-2.1-Turbo_GGUFs` es una publicacion alojada en Hugging Face por el usuario `realrebelai`. Por el nombre del repositorio, el contenido parece corresponder a un conjunto de ficheros en formato GGUF (cuantizaciones) derivados de un modelo denominado "Viggle Qwen-Image 2.1 Turbo", presumiblemente un modelo de generacion de imagenes. Esta interpretacion procede unicamente del identificador del repositorio y no esta confirmada por ninguna documentacion publicada.
 
 La model card asociada no contiene informacion tecnica: unicamente declara `license: unknown` y carece de descripcion, instrucciones de uso, ejemplos o notas de entrenamiento. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas soportados, por lo que a fecha de la consulta no existe evidencia publica de adopcion ni de validacion por parte de la comunidad.
 
@@ -81,7 +81,7 @@ No disponible. Al no conocerse la naturaleza, el tamano ni el rendimiento del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/realrebelai/Viggle_Qwen-Image-2.1-Turbo_GGUFs
+- Repositorio en Hugging Face: https://huggingface.co/realrebelai/Viggle_Qwen-Image-2.1-Turbo_GGUFs
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

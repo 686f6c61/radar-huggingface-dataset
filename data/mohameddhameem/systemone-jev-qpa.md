@@ -82,11 +82,11 @@ El coste propio del enrutador es de 0,000 unidades por pregunta en esta escala. 
 
 | Sistema | Parametros | Contexto | AIQ en HotpotQA SLR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SystemOne-Jev qpa (este modelo) | 33,4 M | no disponible | 0,668 (semilla 0) / 0,674 (ensemble) | MIT | HuggingFace, 0 descargas y 0 likes en el momento del análisis |
+| SystemOne-Jev qpa (este modelo) | 33,4 M | no disponible | 0,668 (semilla 0) / 0,674 (ensemble) | MIT | Hugging Face, 0 descargas y 0 likes en el momento del análisis |
 | Umbral de entropía sobre Qwen2.5-1.5B-Instruct | no aplica (baseline sin modelo propio) | no disponible | 0,665 | no aplica | reproducible con `route.py` |
 | Enrutador de cascada con regresión logística | no disponible | no disponible | 0,681 | no disponible | baseline del propio artículo |
 | Oráculo (cota superior teórica) | no aplica | no aplica | 0,758 | no aplica | referencia |
-| `sdmlai/nano-jev` v1.0 (modelo base) | 33,4 M (arquitectura MiniLM) | no disponible | no disponible | MIT | HuggingFace |
+| `sdmlai/nano-jev` v1.0 (modelo base) | 33,4 M (arquitectura MiniLM) | no disponible | no disponible | MIT | Hugging Face |
 
 La comparación relevante es interna al artículo: el enrutador neuronal no supera de forma estadísticamente significativa ni al umbral de entropía ni a la regresión logística en cascada. No se dispone de datos para comparar con otros enrutadores publicados de la misma categoría.
 
@@ -105,7 +105,7 @@ La comparación relevante es interna al artículo: el enrutador neuronal no supe
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mohameddhameem/systemone-jev-qpa)
+- [Modelo en Hugging Face](https://huggingface.co/mohameddhameem/systemone-jev-qpa)
 - [Repositorio de código: github.com/mohameddhameem/systemone-jev](https://github.com/mohameddhameem/systemone-jev)
 - [Modelo base: sdmlai/nano-jev](https://huggingface.co/sdmlai/nano-jev)
 - [Dataset de entrenamiento: hotpotqa/hotpot_qa](https://huggingface.co/datasets/hotpotqa/hotpot_qa)

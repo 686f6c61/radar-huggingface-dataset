@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`upcycle_dense10000_e32top8_noaux_rewarm200` es un checkpoint de investigación publicado por el usuario JIRU-W en HuggingFace. Se trata de un modelo de mezcla de expertos (MoE) obtenido mediante *upcycling* ingenuo de un modelo denso previo (`JIRU-W/dense_e1_seq2048_gbs128_10b`): en el paso 10.000 del entrenamiento denso, cada MLP SwiGLU de cada capa se copió 32 veces para crear 32 expertos idénticos, se inicializó un router nuevo y se continuó el entrenamiento sin función de pérdida de balanceo de carga (`router_aux_loss_coef=0`). El objetivo declarado es estudiar si expertos inicialmente idénticos llegan a diferenciarse por sí solos.
+`upcycle_dense10000_e32top8_noaux_rewarm200` es un checkpoint de investigación publicado por el usuario JIRU-W en Hugging Face. Se trata de un modelo de mezcla de expertos (MoE) obtenido mediante *upcycling* ingenuo de un modelo denso previo (`JIRU-W/dense_e1_seq2048_gbs128_10b`): en el paso 10.000 del entrenamiento denso, cada MLP SwiGLU de cada capa se copió 32 veces para crear 32 expertos idénticos, se inicializó un router nuevo y se continuó el entrenamiento sin función de pérdida de balanceo de carga (`router_aux_loss_coef=0`). El objetivo declarado es estudiar si expertos inicialmente idénticos llegan a diferenciarse por sí solos.
 
 El modelo tiene 3.696.887.808 parámetros totales, activa 8 de 32 expertos por token y opera con una longitud de contexto de 2.048 tokens (derivada de la configuración de entrenamiento: secuencias de 2.048 tokens y batch de 128). El entrenamiento se detuvo en el paso 14.594 de los 38.139 planificados, por lo que no está entrenado hasta completarse. No es un modelo instruido (*instruction-tuned*) ni está pensado para uso en producción: es un artefacto de investigación sobre dinámica de expertos en arquitecturas MoE.
 
@@ -91,6 +91,6 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JIRU-W/upcycle_dense10000_e32top8_noaux_rewarm200
+- Modelo en Hugging Face: https://huggingface.co/JIRU-W/upcycle_dense10000_e32top8_noaux_rewarm200
 - Modelo base denso: https://huggingface.co/JIRU-W/dense_e1_seq2048_gbs128_10b
 - Dataset de entrenamiento: https://huggingface.co/datasets/JIRU-W/olmoe-mix-0924-10b

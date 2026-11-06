@@ -71,10 +71,10 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/echomom/echomom-minimax-music3-q8
+- Modelo en Hugging Face: https://huggingface.co/echomom/echomom-minimax-music3-q8
 - Repositorio original de MiniMax Music 3: https://github.com/MiniMax-AI/MiniMax-Music3
 - Repositorio de minimaxmusic.cpp: https://github.com/ServeurpersoCom/minimaxmusic.cpp
-- Modelo base en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Modelo base en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Conversión GGUF de referencia: https://huggingface.co/Serveurperso/MiniMax-Music3-GGUF
 - Guía independiente sobre MiniMax Music 3: https://minimaxmusic3.ai/
 - Modelo en ModelScope: https://www.modelscope.cn/models/MiniMax/MiniMax-Music3

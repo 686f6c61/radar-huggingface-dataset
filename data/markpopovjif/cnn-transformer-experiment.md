@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `markpopovjif/cnn-transformer-experiment` es un prototipo de investigación que combina una arquitectura CNN con un Transformer orientado a tareas de generación de texto. Lo desarrolla el usuario de HuggingFace `markpopovjif` (Ирина Морозова) y se publica como un experimento de código abierto bajo licencia MIT. El repositorio incluye un checkpoint de inicialización válido para pruebas de humo, pero no un modelo entrenado ni evaluado.
+El modelo `markpopovjif/cnn-transformer-experiment` es un prototipo de investigación que combina una arquitectura CNN con un Transformer orientado a tareas de generación de texto. Lo desarrolla el usuario de Hugging Face `markpopovjif` (Ирина Морозова) y se publica como un experimento de código abierto bajo licencia MIT. El repositorio incluye un checkpoint de inicialización válido para pruebas de humo, pero no un modelo entrenado ni evaluado.
 
 Con solo 24.832 parámetros, este modelo es extremadamente pequeño y no pretende competir con modelos de producción. Su propósito es servir como punto de partida para experimentos de arquitectura híbrida CNN-Transformer, documentando configuraciones por defecto y formatos de archivo. La relevancia actual es limitada: se trata de un artefacto de investigación sin resultados de rendimiento verificados, útil para estudiar la viabilidad de fusionar convoluciones con atención por grupos (grouped query attention) en un contexto de generación.
 

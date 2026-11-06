@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iamanoob123/jioui` es un modelo publicado en HuggingFace por el usuario `iamanoob123` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción, documentación técnica ni información sobre arquitectura, entrenamiento o capacidades; únicamente incluye la declaración de licencia. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no tiene pipeline declarado.
+`iamanoob123/jioui` es un modelo publicado en Hugging Face por el usuario `iamanoob123` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción, documentación técnica ni información sobre arquitectura, entrenamiento o capacidades; únicamente incluye la declaración de licencia. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no tiene pipeline declarado.
 
 No es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su tamaño o ventana de contexto a partir de la información disponible. La ausencia de metadatos técnicos, de ficha descriptiva y de cualquier artefacto documental (paper, blog, repositorio de código) impide evaluar su idoneidad para casos de uso reales.
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iamanoob123/jioui
+- Hugging Face: https://huggingface.co/iamanoob123/jioui
 - Paper: no disponible
 - Blog o documentación: no disponible
 - Repositorio de código: no disponible

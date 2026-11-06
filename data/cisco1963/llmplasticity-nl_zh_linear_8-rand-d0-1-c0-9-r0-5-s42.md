@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.1-c0.9-r0.5-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963. Por la etiqueta de arquitectura declarada (`gpt2`) y por su recuento de parametros (122.706.432, es decir, unos 123 millones), se trata de un transformer decoder-only de la familia GPT-2 en su variante "small", sin que la informacion disponible permita confirmar ninguna modificacion estructural adicional.
+El modelo `Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.1-c0.9-r0.5-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963. Por la etiqueta de arquitectura declarada (`gpt2`) y por su recuento de parametros (122.706.432, es decir, unos 123 millones), se trata de un transformer decoder-only de la familia GPT-2 en su variante "small", sin que la informacion disponible permita confirmar ninguna modificacion estructural adicional.
 
 El nombre del repositorio sugiere que forma parte de un barrido experimental (probablemente del proyecto "llmplasticity") en el que se varian hiperparametros de entrenamiento: el sufijo `nl_zh` apunta a un par de idiomas (neerlandes y chino), `linear_8` a un posible valor de capa o rango, y `d0.1-c0.9-r0.5-s42` a una combinacion de dropout 0.1, dos coeficientes (0.9 y 0.5) y la semilla 42. Esta lectura es una inferencia a partir del nombre y no esta confirmada por la ficha del repositorio.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.1-c0.9-r0.5-s42 | 122,7 M | no disponible | no disponible | no disponible | HuggingFace (7 descargas) |
+| Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.1-c0.9-r0.5-s42 | 122,7 M | no disponible | no disponible | no disponible | Hugging Face (7 descargas) |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Benchmarks publicos en la ficha original | MIT | Ampliamente disponible |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | Benchmarks publicos en la ficha original | MIT | Ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Benchmarks publicos en la ficha original | Apache 2.0 | Ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Benchmarks publicos en la ficha original | Apache 2.0 | Ampliamente disponible |
 
 La comparativa se limita a la escala de parametros y a la arquitectura declarada, ya que no existen datos de rendimiento, contexto ni licencia para el modelo objeto de esta ficha. Las cifras de los modelos de referencia corresponden a sus fichas oficiales.
 
@@ -84,5 +84,5 @@ La comparativa se limita a la escala de parametros y a la arquitectura declarada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.1-c0.9-r0.5-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.1-c0.9-r0.5-s42
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Ming-Image-0.1 · MFlux Q4 (este) | no disponible | no aplica | MIT | safetensors MLX Q4 | HuggingFace, 13,5 GB |
-| Ming-Image-0.1 · MFlux BF16 | no disponible | no aplica | MIT | safetensors MLX BF16 | HuggingFace, 47,1 GB |
-| Ming-Image-0.1 · MFlux Q8 | no disponible | no aplica | MIT | safetensors MLX Q8 | HuggingFace, 25,2 GB |
-| Ming-Image-0.1-Design (original) | no disponible | no aplica | MIT | no disponible | HuggingFace (inclusionAI) |
+| Ming-Image-0.1 · MFlux Q4 (este) | no disponible | no aplica | MIT | safetensors MLX Q4 | Hugging Face, 13,5 GB |
+| Ming-Image-0.1 · MFlux BF16 | no disponible | no aplica | MIT | safetensors MLX BF16 | Hugging Face, 47,1 GB |
+| Ming-Image-0.1 · MFlux Q8 | no disponible | no aplica | MIT | safetensors MLX Q8 | Hugging Face, 25,2 GB |
+| Ming-Image-0.1-Design (original) | no disponible | no aplica | MIT | no disponible | Hugging Face (inclusionAI) |
 
 La comparación más directa es con las otras cuantizaciones del mismo modelo publicadas por mflux-community: Q4 ofrece el mejor equilibrio tamaño/calidad de la gama media, mientras que Q3 (10,6 GB) reduce aún más el requisito de memoria a costa de mayor pérdida de fidelidad, y Q8/BF16 preservan más calidad pero exigen equipos de gama alta. No se dispone de datos de benchmarks para comparar con otros modelos de difusión de la misma categoría.
 
@@ -82,7 +82,7 @@ La comparación más directa es con las otras cuantizaciones del mismo modelo pu
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mflux-community/ming-image-0-1-mflux-q4
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mflux-community/ming-image-0-1-mflux-q4
 - Modelo original: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Variante BF16: https://huggingface.co/mflux-community/ming-image-0-1-mflux-bf16
 - Variante Q8: https://huggingface.co/mflux-community/ming-image-0-1-mflux-q8

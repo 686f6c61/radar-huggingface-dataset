@@ -4,7 +4,7 @@
 
 TinyCeNN-LM Base es un adaptador residual CeNN, un tipo de red neuronal recurrente, entrenado por vtava sobre el modelo base arnir0/Tiny-LLM. Se trata de un experimento de investigación orientado a explorar arquitecturas recurrentes eficientes y ligeras aplicadas a modelos de lenguaje pequeños. El adaptador utiliza 4 pasos recurrentes y una ventana de contexto de 256 tokens, con un presupuesto de entrenamiento de 1 millón de tokens. Sin embargo, los resultados de evaluación son pobres: la mejor pérdida de evaluación se sitúa en 4,1653 y la perplejidad en 64,41, con un estado de salud del entrenamiento de advertencia por falta de mejora.
 
-El modelo está diseñado como un adaptador ligero que se añade al modelo base, lo que lo hace interesante para investigaciones en eficiencia paramétrica. A pesar de ello, no se dispone de información sobre la arquitectura completa, los parámetros totales, la licencia ni los idiomas soportados. El repositorio en HuggingFace contiene principalmente los pesos del adaptador, la configuración y un informe de entrenamiento. Dada la baja calidad de las métricas, el modelo es más un objeto de estudio que una herramienta utilizable en producción.
+El modelo está diseñado como un adaptador ligero que se añade al modelo base, lo que lo hace interesante para investigaciones en eficiencia paramétrica. A pesar de ello, no se dispone de información sobre la arquitectura completa, los parámetros totales, la licencia ni los idiomas soportados. El repositorio en Hugging Face contiene principalmente los pesos del adaptador, la configuración y un informe de entrenamiento. Dada la baja calidad de las métricas, el modelo es más un objeto de estudio que una herramienta utilizable en producción.
 
 ## Especificaciones técnicas
 
@@ -37,7 +37,7 @@ El modelo consiste en un adaptador residual de tipo CeNN que se apila sobre el m
 1. Investigación en arquitecturas recurrentes: el modelo permite analizar el comportamiento de un adaptador CeNN sobre un modelo Tiny-LLM, comparando su convergencia con otros adaptadores.
 2. Experimentos con presupuesto de entrenamiento reducido: al haber sido entrenado con solo 1 millón de tokens, sirve para estudiar el efecto de la escasez de datos en modelos pequeños.
 3. Benchmarking de adaptadores: puede utilizarse en repositorios de evaluación para comparar la perplejidad y pérdida de adaptadores recurrentes frente a fine-tunes convencionales.
-4. Didáctica en sistemas de modelos de lenguaje: este repositorio es un ejemplo de cómo se documenta un entrenamiento de adaptador con métricas, estado de salud y pesos en HuggingFace.
+4. Didáctica en sistemas de modelos de lenguaje: este repositorio es un ejemplo de cómo se documenta un entrenamiento de adaptador con métricas, estado de salud y pesos en Hugging Face.
 5. Prototipos de generación de texto con contexto corto: válido para pruebas de concepto que no requieran más de 256 tokens de contexto, siempre que se toleren resultados de baja calidad.
 6. Base para nuevos experimentos: aunque su estado es de advertencia, el adaptador puede ser un punto de partida para otros ajustes, siempre que se valide su rendimiento antes de usarse.
 
@@ -76,6 +76,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace](https://huggingface.co/vtava/TinyCeNN-LM-Base)
-- [Modelo base en HuggingFace](https://huggingface.co/arnir0/Tiny-LLM)
+- [Hugging Face](https://huggingface.co/vtava/TinyCeNN-LM-Base)
+- [Modelo base en Hugging Face](https://huggingface.co/arnir0/Tiny-LLM)
 - GitHub de TinyCeNN-LM: no disponible

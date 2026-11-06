@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_LoRA_rank_4` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario WijewardhanaNT. No se trata de un modelo de lenguaje completo, sino de un conjunto de pesos de adaptacion de rango 4 que se acoplan sobre `meta-llama/Llama-3.1-8B`, el modelo denso de 8.000 millones de parametros de Meta. El repositorio ocupa 0,3 GB y se distribuye en formato safetensors bajo la libreria PEFT.
+El modelo `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_LoRA_rank_4` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario WijewardhanaNT. No se trata de un modelo de lenguaje completo, sino de un conjunto de pesos de adaptacion de rango 4 que se acoplan sobre `meta-llama/Llama-3.1-8B`, el modelo denso de 8.000 millones de parametros de Meta. El repositorio ocupa 0,3 GB y se distribuye en formato safetensors bajo la libreria PEFT.
 
 El nombre del repositorio sugiere que el ajuste se ha realizado sobre el corpus XNLI (Cross-lingual Natural Language Inference) en ingles (en) y suajili (sw), con un subconjunto de 5.000 ejemplos y algun tipo de configuracion porcentual o de particion que no queda documentada. La tarea objetivo seria por tanto la inferencia de relacion textual (entailment, contradiction, neutral) en un escenario bilingue de transferencia cruzada. Conviene subrayar que esta interpretacion procede exclusivamente de la nomenclatura del identificador, no de la model card, que esta practicamente vacia.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es metodologica mas que de rendimiento: ilustra el p
 
 El artefacto es un adaptador LoRA de rango 4, la configuracion mas ligera de la familia: se insertan matrices de baja dimension A y B en determinadas proyecciones lineales del transformer base y se congelan los pesos originales de Llama-3.1-8B. Un rango tan bajo limita drasticamente el numero de parametros entrenables (del orden de decenas de millones como maximo, probablemente bastante menos), lo que reduce el coste de ajuste pero tambien la capacidad de modificar el comportamiento del modelo. El modelo base, Llama-3.1-8B, es un transformer decoder-only denso con 32 capas, atencion con consultas agrupadas (GQA), RoPE y un vocabulario de 128.256 tokens; no se detalla en la informacion disponible si el adaptador se aplico a todas las proyecciones o solo a algunas.
 
-Respecto al entrenamiento, la model card no aporta ningun dato: no se especifica el dataset exacto, el numero de tokens vistos, la composicion linguistica, la tasa de aprendizaje, el regimen de precision (fp16/bf16), la duracion ni si hubo fases de RLHF o DPO. La unica pista es el propio identificador, que menciona XNLI con 5.000 ejemplos en ingles y suajili y un valor porcentual de 1 sobre 120. Tampoco se documentan innovaciones tecnicas asociadas (decodificacion especulativa, atencion lineal, etc.). El tag `arxiv:1910.09700` que aparece en HuggingFace corresponde al articulo de Lacoste et al. sobre estimacion de impacto de carbono, citado en la plantilla estandar de model card, y no a un paper del modelo.
+Respecto al entrenamiento, la model card no aporta ningun dato: no se especifica el dataset exacto, el numero de tokens vistos, la composicion linguistica, la tasa de aprendizaje, el regimen de precision (fp16/bf16), la duracion ni si hubo fases de RLHF o DPO. La unica pista es el propio identificador, que menciona XNLI con 5.000 ejemplos en ingles y suajili y un valor porcentual de 1 sobre 120. Tampoco se documentan innovaciones tecnicas asociadas (decodificacion especulativa, atencion lineal, etc.). El tag `arxiv:1910.09700` que aparece en Hugging Face corresponde al articulo de Lacoste et al. sobre estimacion de impacto de carbono, citado en la plantilla estandar de model card, y no a un paper del modelo.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ No se han identificado adaptadores equivalentes de XNLI con el mismo par de idio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_LoRA_rank_4
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_LoRA_rank_4
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Articulo de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

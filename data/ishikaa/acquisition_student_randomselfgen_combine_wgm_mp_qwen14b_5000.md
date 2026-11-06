@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_qwen14b_5000` es un checkpoint de la familia Qwen2 publicado en HuggingFace por el usuario `ishikaa`. El nombre del repositorio sugiere un modelo "estudiante" derivado de Qwen de 14B mediante un proceso de destilación o generación de datos autoinducida (`randomselfgen`), probablemente en el contexto de experimentos de adquisición de datos o aprendizaje activo (`acquisition_student`). No obstante, la model card es una plantilla autogenerada por HuggingFace sin ninguna sección cumplimentada, por lo que no hay confirmación oficial sobre el propósito ni el procedimiento de entrenamiento.
+`ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_qwen14b_5000` es un checkpoint de la familia Qwen2 publicado en Hugging Face por el usuario `ishikaa`. El nombre del repositorio sugiere un modelo "estudiante" derivado de Qwen de 14B mediante un proceso de destilación o generación de datos autoinducida (`randomselfgen`), probablemente en el contexto de experimentos de adquisición de datos o aprendizaje activo (`acquisition_student`). No obstante, la model card es una plantilla autogenerada por Hugging Face sin ninguna sección cumplimentada, por lo que no hay confirmación oficial sobre el propósito ni el procedimiento de entrenamiento.
 
 El dato objetivo disponible es el número de parámetros: 14.770.033.664 (~14,8B), almacenados en safetensors con un tamaño de repositorio de 29,6 GB (compatible con pesos en bf16/fp16). La librería declarada es `transformers` y la arquitectura etiquetada es `qwen2`, lo que implica un transformer decoder-only con RoPE, GQA y activación SwiGLU, siguiendo el diseño de la familia Qwen2.
 
@@ -23,7 +23,7 @@ Es relevante ahora solo como artefacto de investigación: tiene cero descargas y
 
 ## Arquitectura y entrenamiento
 
-La etiqueta `qwen2` en HuggingFace indica que el checkpoint sigue la arquitectura Qwen2: transformer decoder-only con normalización RMSNorm, atención con query-key normalization, RoPE para codificación posicional, Grouped Query Attention (GQA) y MLP con SwiGLU. Con ~14,8B parámetros, el checkpoint probablemente corresponde a la configuración Qwen2-14B (40 capas, hidden size 5120, 40 cabezas de atención con 8 grupos KV), aunque esta correspondencia no está confirmada en la información disponible.
+La etiqueta `qwen2` en Hugging Face indica que el checkpoint sigue la arquitectura Qwen2: transformer decoder-only con normalización RMSNorm, atención con query-key normalization, RoPE para codificación posicional, Grouped Query Attention (GQA) y MLP con SwiGLU. Con ~14,8B parámetros, el checkpoint probablemente corresponde a la configuración Qwen2-14B (40 capas, hidden size 5120, 40 cabezas de atención con 8 grupos KV), aunque esta correspondencia no está confirmada en la información disponible.
 
 No hay datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT. El sufijo `randomselfgen_combine_WGM_MP_qwen14b_5000` apunta a un experimento de generación de datos sintéticos autoinducida combinada (`combine`), posiblemente con selección por "weighted gradient matching" (`WGM`) y "model prompting" (`MP`), sobre 5000 muestras, pero se trata de una inferencia a partir del nombre y no de información documentada. No se declara ninguna innovación técnica adicional (decodificación especulativa, atención lineal, etc.).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ishikaa/...qwen14b_5000` (este) | ~14,8B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2-14B (oficial, Alibaba) | ~14,8B | 32.768 tokens (nativo) | Apache 2.0 (según release oficial) | HuggingFace, ampliamente usado |
-| Mistral-Nemo-12B | ~12B | 128.000 tokens | Apache 2.0 | HuggingFace, muy desplegado |
-| Llama-3.1-8B-Instruct | ~8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ecosistema maduro |
+| `ishikaa/...qwen14b_5000` (este) | ~14,8B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2-14B (oficial, Alibaba) | ~14,8B | 32.768 tokens (nativo) | Apache 2.0 (según release oficial) | Hugging Face, ampliamente usado |
+| Mistral-Nemo-12B | ~12B | 128.000 tokens | Apache 2.0 | Hugging Face, muy desplegado |
+| Llama-3.1-8B-Instruct | ~8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ecosistema maduro |
 
 La comparación con el Qwen2-14B oficial es la más directa por tamaño y arquitectura, pero este checkpoint no documenta ni licencia ni evaluación, por lo que no es comparable en términos de fiabilidad para producción.
 
@@ -83,7 +83,7 @@ La comparación con el Qwen2-14B oficial es la más directa por tamaño y arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_qwen14b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_qwen14b_5000
 - Paper citado en los tags (ML Impact calculator, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Documentación de Qwen2 (arquitectura de referencia): https://huggingface.co/docs/transformers/model_doc/qwen2
 - Calculadora de impacto medioambiental ML: https://mlco2.github.io/impact

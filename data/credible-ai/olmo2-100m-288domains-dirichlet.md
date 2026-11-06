@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo2-100M-288domains-dirichlet | 102M (×512) | no disponible | Proxies para investigación de data mixing | MIT | HuggingFace |
-| OLMo 2 (variantes oficiales de AllenAI) | 7B, 13B, 32B | hasta 4.096 tokens en variantes publicadas | Modelos de propósito general | Apache 2.0 (según variante) | HuggingFace |
-| Pythia (EleutherAI) | 70M–12B | 2.048 tokens | Suite para interpretabilidad y estudios de escalado | Apache 2.0 | HuggingFace |
-| SmolLM2 (HuggingFace) | 135M–1.7B | hasta 8.192 tokens | Modelos pequeños de propósito general | Apache 2.0 | HuggingFace |
+| olmo2-100M-288domains-dirichlet | 102M (×512) | no disponible | Proxies para investigación de data mixing | MIT | Hugging Face |
+| OLMo 2 (variantes oficiales de AllenAI) | 7B, 13B, 32B | hasta 4.096 tokens en variantes publicadas | Modelos de propósito general | Apache 2.0 (según variante) | Hugging Face |
+| Pythia (EleutherAI) | 70M–12B | 2.048 tokens | Suite para interpretabilidad y estudios de escalado | Apache 2.0 | Hugging Face |
+| SmolLM2 (Hugging Face) | 135M–1.7B | hasta 8.192 tokens | Modelos pequeños de propósito general | Apache 2.0 | Hugging Face |
 
 La comparación es aproximada: los proxies de este repositorio no compiten en capacidades downstream, sino que se posicionan como infraestructura experimental frente a suites como Pythia, que ofrecen checkpoints intermedios pero no barridos sistemáticos de mezcla de datos.
 
@@ -84,7 +84,7 @@ La comparación es aproximada: los proxies de este repositorio no compiten en ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-100M-288domains-dirichlet
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-100M-288domains-dirichlet
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Repositorio de código: https://github.com/credibleai/linmix
 - Dataset de diseño y resultados: https://huggingface.co/datasets/credible-ai/linmix-proxy-swarms

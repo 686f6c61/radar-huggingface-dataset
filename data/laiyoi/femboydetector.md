@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laiyoi/femboydetector | Clasificador de imágenes (DINOv2 ViT-S/14 + probe) | ~21 M en backbone (no confirmado) | 224x224 fija | other | HuggingFace, ONNX + PyTorch |
-| DINOv2 ViT-S/14 base (`facebook/dinov2-small`) | Backbone auto-supervisado | ~21 M | 518x518 nativa (adaptable) | Apache 2.0 | HuggingFace, ampliamente usado |
-| CLIP ViT-B/32 (`openai/clip-vit-base-patch32`) | Modelo visión-lenguaje | ~151 M | 224x224 | MIT | HuggingFace, muy extendido |
-| Modelos de clasificación de imágenes ImageNet (p. ej. ResNet-50) | CNN supervisada | ~25 M | 224x224 | BSD/Apache según variante | HuggingFace, torchvision |
+| laiyoi/femboydetector | Clasificador de imágenes (DINOv2 ViT-S/14 + probe) | ~21 M en backbone (no confirmado) | 224x224 fija | other | Hugging Face, ONNX + PyTorch |
+| DINOv2 ViT-S/14 base (`facebook/dinov2-small`) | Backbone auto-supervisado | ~21 M | 518x518 nativa (adaptable) | Apache 2.0 | Hugging Face, ampliamente usado |
+| CLIP ViT-B/32 (`openai/clip-vit-base-patch32`) | Modelo visión-lenguaje | ~151 M | 224x224 | MIT | Hugging Face, muy extendido |
+| Modelos de clasificación de imágenes ImageNet (p. ej. ResNet-50) | CNN supervisada | ~25 M | 224x224 | BSD/Apache según variante | Hugging Face, torchvision |
 
 La comparación directa es limitada: `femboydetector` es un probe de tres clases sobre un backbone congelado, no un modelo de propósito general. Frente al DINOv2 base, la diferencia es que aquí el backbone no se ajusta y la cabeza es específica del dominio del plugin. Frente a CLIP o ResNet-50, el modelo es mucho más pequeño y especializado, pero carece de capacidades zero-shot o de clasificación abierta.
 
@@ -82,9 +82,9 @@ La comparación directa es limitada: `femboydetector` es un probe de tres clases
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laiyoi/femboydetector
+- Hugging Face: https://huggingface.co/laiyoi/femboydetector
 - DINOv2 (paper): https://arxiv.org/abs/2304.07193
 - DINOv2 (repositorio oficial): https://github.com/facebookresearch/dinov2
-- Modelo base en HuggingFace: https://huggingface.co/facebook/dinov2-small
+- Modelo base en Hugging Face: https://huggingface.co/facebook/dinov2-small
 - AstrBot (proyecto del plugin): https://github.com/AstrBotDevs/AstrBot
 - onnxruntime: https://onnxruntime.ai/

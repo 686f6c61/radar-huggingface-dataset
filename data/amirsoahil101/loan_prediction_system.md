@@ -65,6 +65,6 @@ No disponible. No se conocen modelos comparables dentro de este repositorio ni s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amirsoahil101/Loan_Prediction_System
-- Perfil del autor en HuggingFace: https://huggingface.co/amirsoahil101
+- Repositorio Hugging Face: https://huggingface.co/amirsoahil101/Loan_Prediction_System
+- Perfil del autor en Hugging Face: https://huggingface.co/amirsoahil101
 - (Nota: no se han encontrado papers, blogs o demos asociados a este modelo específico)

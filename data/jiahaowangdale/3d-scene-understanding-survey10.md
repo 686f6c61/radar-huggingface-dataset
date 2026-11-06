@@ -4,7 +4,7 @@
 
 El repositorio `jiahaowangdale/3d-scene-understanding-survey10` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre comprension de escenas 3D. La propia model card lo declara explicitamente: se trata de apuntes de lectura y de un esbozo de experimento, con secciones etiquetadas como planes o hipotesis que no deben interpretarse como resultados experimentales. El autor indica que el repositorio no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
 
-Los artefactos declarados son dos archivos de texto: `reading.md`, que constituye el artefacto principal, y `README.md`. El repositorio esta etiquetado con `research-notes` y `3d-scene-understanding`, y los metadatos de HuggingFace registran 33.088 parametros totales en formato safetensors, un valor que resulta llamativo porque no se corresponde con ningun modelo entrenado descrito en la documentacion y porque el tamano del repositorio es de 0,0 GB.
+Los artefactos declarados son dos archivos de texto: `reading.md`, que constituye el artefacto principal, y `README.md`. El repositorio esta etiquetado con `research-notes` y `3d-scene-understanding`, y los metadatos de Hugging Face registran 33.088 parametros totales en formato safetensors, un valor que resulta llamativo porque no se corresponde con ningun modelo entrenado descrito en la documentacion y porque el tamano del repositorio es de 0,0 GB.
 
 Su relevancia es, por tanto, documental y metodologica: propone el alcance de una pregunta de investigacion, confusores probables, una comparacion con baselines emparejados, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No debe tratarse como un artefacto desplegable ni citarse como evidencia de resultados.
 
@@ -78,5 +78,5 @@ No disponible. Este repositorio no es un modelo, por lo que no admite comparacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiahaowangdale/3d-scene-understanding-survey10
+- Hugging Face: https://huggingface.co/jiahaowangdale/3d-scene-understanding-survey10
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al paper, al repositorio de codigo ni a demos. El resto de enlaces necesarios no estan disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abhiabhi12/pass-pandareachdense-v3 es un agente de aprendizaje por refuerzo profundo (deep RL) entrenado con el algoritmo A2C sobre el entorno de simulacion PandaReachDense-v3. El modelo lo publica el usuario Abhiabhi12 en HuggingFace y se distribuye a traves de la libreria stable-baselines3, por lo que no es un modelo de lenguaje ni un modelo generativo: es una politica de control (actor-critico) que resuelve una tarea concreta de manipulacion robotica en simulacion, en la que un brazo Franka Panda debe alcanzar una posicion objetivo en el espacio de trabajo.
+Abhiabhi12/pass-pandareachdense-v3 es un agente de aprendizaje por refuerzo profundo (deep RL) entrenado con el algoritmo A2C sobre el entorno de simulacion PandaReachDense-v3. El modelo lo publica el usuario Abhiabhi12 en Hugging Face y se distribuye a traves de la libreria stable-baselines3, por lo que no es un modelo de lenguaje ni un modelo generativo: es una politica de control (actor-critico) que resuelve una tarea concreta de manipulacion robotica en simulacion, en la que un brazo Franka Panda debe alcanzar una posicion objetivo en el espacio de trabajo.
 
 La relevancia de este tipo de artefacto es acotada y muy especifica: sirve como referencia reproducible de un baseline A2C en un benchmark de robotica, y como punto de partida para experimentos de comparacion de algoritmos, ajuste fino de recompensas o generacion de trayectorias de demostracion. No es un modelo apto para tareas generales de texto, vision ni agentes conversacionales.
 
@@ -24,7 +24,7 @@ La model card es minima: se limita a indicar la libreria, el algoritmo y el ento
 | Entorno de entrenamiento | PandaReachDense-v3 (panda-gym, tarea de alcance con recompensa densa) |
 | Libreria | stable-baselines3 |
 | Pipeline declarado | reinforcement-learning |
-| Fecha de publicacion | 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-20 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de alternativas publicadas por el autor ni
 
 | Modelo / algoritmo | Categoria | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| Abhiabhi12/pass-pandareachdense-v3 | A2C on-policy, actor-critico | no disponible | no aplica (episodios del entorno) | no disponible | HuggingFace, 0 descargas | mean_reward 5.00 +/- 0.00 (no verificado) |
+| Abhiabhi12/pass-pandareachdense-v3 | A2C on-policy, actor-critico | no disponible | no aplica (episodios del entorno) | no disponible | Hugging Face, 0 descargas | mean_reward 5.00 +/- 0.00 (no verificado) |
 | A2C estandar de stable-baselines3 | A2C on-policy | no disponible | no aplica | MIT (libreria) | Codigo abierto en el repositorio de SB3 | No disponible para PandaReachDense-v3 en esta busqueda |
 | PPO (stable-baselines3) | On-policy, clip de politica | no disponible | no aplica | MIT (libreria) | Codigo abierto | No disponible para PandaReachDense-v3 en esta busqueda |
 | SAC (stable-baselines3) | Off-policy, actor-critico con entropia | no disponible | no aplica | MIT (libreria) | Codigo abierto | No disponible para PandaReachDense-v3 en esta busqueda |
@@ -102,5 +102,5 @@ No se dispone de datos de rendimiento de alternativas publicadas por el autor ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abhiabhi12/pass-pandareachdense-v3
+- Hugging Face: https://huggingface.co/Abhiabhi12/pass-pandareachdense-v3
 - No se han encontrado en la busqueda web enlaces relacionados con este modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a recursos genericos sobre desarrollo backend y no guardan relacion con el artefacto descrito.

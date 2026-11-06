@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 | Modelo | Parametros | Contexto | Cuantizacion | KLD | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128-PTQR (este) | 27,8B | 262.144 (65.536 en la receta) | GPTQ INT8 W8A8 GS128 con reentrenamiento PTQR | 0,0069 | Apache 2.0 | HuggingFace, 0 descargas |
-| curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128 (original del mismo autor) | 27,8B | 262.144 | GPTQ INT8 W8A8 GS128 de una pasada | 0,0110 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (modelo base) | 27,8B | 262.144 | ninguna (BF16) | Referencia de profesor | Apache 2.0 | HuggingFace |
-| curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128-PTQR (draft) | no disponible | no disponible | GPTQ INT8 W8A8 GS128 PTQR | no disponible | Apache 2.0 | HuggingFace |
+| curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128-PTQR (este) | 27,8B | 262.144 (65.536 en la receta) | GPTQ INT8 W8A8 GS128 con reentrenamiento PTQR | 0,0069 | Apache 2.0 | Hugging Face, 0 descargas |
+| curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128 (original del mismo autor) | 27,8B | 262.144 | GPTQ INT8 W8A8 GS128 de una pasada | 0,0110 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (modelo base) | 27,8B | 262.144 | ninguna (BF16) | Referencia de profesor | Apache 2.0 | Hugging Face |
+| curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128-PTQR (draft) | no disponible | no disponible | GPTQ INT8 W8A8 GS128 PTQR | no disponible | Apache 2.0 | Hugging Face |
 
 Frente al GPTQ original, este checkpoint mejora la fidelidad al profesor BF16 (KLD 0,0069 frente a 0,0110), el acierto greedy (42/52 frente a 38/52) y mantiene una aceptacion especulativa de 3,88 frente al baseline BF16 de 3,67. En cuanto a alternativas de otras familias del mismo tamano, no hay informacion disponible en la documentacion proporcionada.
 
@@ -106,7 +106,7 @@ Frente al GPTQ original, este checkpoint mejora la fidelidad al profesor BF16 (K
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128-PTQR
+- Checkpoint en Hugging Face: https://huggingface.co/curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128-PTQR
 - Modelo draft DFlash2 para decodificacion especulativa: https://huggingface.co/curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128-PTQR
 - Checkpoint GPTQ original del mismo autor: https://huggingface.co/curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

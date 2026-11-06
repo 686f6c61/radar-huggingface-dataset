@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gutsy-0.8b v0.3 es un modelo de decisión desarrollado por el usuario kouhxp y publicado en HuggingFace. No es un modelo generativo de texto: dado un *state* (texto o JSON) y una pregunta tipada (sí/no, elección entre hasta 16 opciones por llamada, o puntuación ordinal), devuelve una probabilidad calibrada para cada opción en un único forward pass. La respuesta se lee directamente de los logits del siguiente token correspondiente a las etiquetas de opción (A-P, más una opción Z de rechazo) y se aplica softmax únicamente sobre esas letras.
+Gutsy-0.8b v0.3 es un modelo de decisión desarrollado por el usuario kouhxp y publicado en Hugging Face. No es un modelo generativo de texto: dado un *state* (texto o JSON) y una pregunta tipada (sí/no, elección entre hasta 16 opciones por llamada, o puntuación ordinal), devuelve una probabilidad calibrada para cada opción en un único forward pass. La respuesta se lee directamente de los logits del siguiente token correspondiente a las etiquetas de opción (A-P, más una opción Z de rechazo) y se aplica softmax únicamente sobre esas letras.
 
 El modelo parte de Qwen/Qwen3.5-0.8B (licencia Apache 2.0) mediante un fine-tune completo con embeddings congelados, y se distribuye como un GGUF Q8_0 de 775 MB pensado para llama.cpp. Se acompaña de un runtime propio, `gutsy-inference`, que añade caché de estado, shortlisting para listas de hasta 255 opciones y temperaturas de calibración ajustadas por tipo de pregunta. Su relevancia está en cubrir una tarea muy concreta —routing, triaje, moderación, comprobaciones de política, selección de herramientas en bucles de agente o juicio de salidas— donde lo que importa es una probabilidad accionable, no texto libre.
 
@@ -125,7 +125,7 @@ Modelos de decisión comparables (según las cifras del conjunto público de Jev
 
 | Modelo | Contexto | JevBench publico | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gutsy-0.8b v0.3 | 8.192 | 0,723 | Apache 2.0 | GGUF en HuggingFace (kouhxp/gutsy) |
+| gutsy-0.8b v0.3 | 8.192 | 0,723 | Apache 2.0 | GGUF en Hugging Face (kouhxp/gutsy) |
 | decision-4b | no disponible | 0,883 | no disponible | no disponible |
 | Jev | no disponible | 0,866 | no disponible | no disponible |
 | Neriv 0.6B | no disponible | 0,636 | no disponible | no disponible |
@@ -149,7 +149,7 @@ No se dispone de los hiperparámetros, contexto, licencia ni enlaces de los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kouhxp/gutsy
+- Modelo en Hugging Face: https://huggingface.co/kouhxp/gutsy
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Runtime gutsy-inference: incluido en el repositorio del modelo (`gutsy/gutsy-inference`)
 - Papers, blogs, repos y demos adicionales: no disponible

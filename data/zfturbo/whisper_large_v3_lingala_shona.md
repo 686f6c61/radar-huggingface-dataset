@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZFTurbo/whisper_large_v3_lingala_shona es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) openai/whisper-large-v3, publicado por el usuario ZFTurbo en HuggingFace. El modelo parte de los pesos de Whisper large-v3 y se ha entrenado sobre el dataset google/WaxalNLP, una coleccion de corpus de voz en lenguas africanas, con el objetivo declarado en su nombre de mejorar el reconocimiento de lingala y shona, dos lenguas de bajos recursos con representacion limitada en los corpus generalistas de ASR.
+ZFTurbo/whisper_large_v3_lingala_shona es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) openai/whisper-large-v3, publicado por el usuario ZFTurbo en Hugging Face. El modelo parte de los pesos de Whisper large-v3 y se ha entrenado sobre el dataset google/WaxalNLP, una coleccion de corpus de voz en lenguas africanas, con el objetivo declarado en su nombre de mejorar el reconocimiento de lingala y shona, dos lenguas de bajos recursos con representacion limitada en los corpus generalistas de ASR.
 
 El modelo conserva la arquitectura completa de Whisper large-v3, un transformer encoder-decoder de aproximadamente 1.543 millones de parametros, por lo que hereda el pipeline de inferencia, los formatos de entrada (audio a 16 kHz, ventanas de 30 segundos) y las herramientas del ecosistema Whisper. Su licencia MIT y su compatibilidad con librerias como transformers, faster-whisper o whisper.cpp lo hacen directamente desplegable en infraestructura existente sin cambios de arquitectura.
 
@@ -56,4 +56,4 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 6,5-7 GB en fp32 (los pesos del repositorio suman 6,2 GB), en torno a 3,5 GB en fp16 y alrededor de 2 GB en int8. Son estimaciones a partir del numero de parametros, no mediciones publicadas.
 - GPU recomendadas: A100, H100 o L40S para procesamiento por lotes de alto volumen; RTX 4090, RTX 3090 o RTX A6000 para uso profesional en una sola tarjeta.
 - Compatibilidad con GPU de consumo: cabe en RTX 3060 de 12 GB, RTX 4070 Ti, RTX 4080 y RTX 4090, tanto en fp16 como en int8; en tarjetas de 8 GB o menos es necesario cuantizar o usar CTranslate2.
-- Opciones de despliegue: transformers (clase WhisperForConditionalGeneration), faster-whisper mediante conversion a CTranslate2, whisper.cpp u otras implementaciones GGUF tras convertir los pesos, y endpoints gestionados de HuggingFace. El soporte en vLLM para modelos Whisper es limitado; conviene verificar la version antes de plante
+- Opciones de despliegue: transformers (clase WhisperForConditionalGeneration), faster-whisper mediante conversion a CTranslate2, whisper.cpp u otras implementaciones GGUF tras convertir los pesos, y endpoints gestionados de Hugging Face. El soporte en vLLM para modelos Whisper es limitado; conviene verificar la version antes de plante

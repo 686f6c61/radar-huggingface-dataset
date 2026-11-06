@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RepublicOfKorokke/rune-26b-a4b-GGUF-oQ4e-fp16
+- Repositorio en Hugging Face: https://huggingface.co/RepublicOfKorokke/rune-26b-a4b-GGUF-oQ4e-fp16
 - Repositorio relacionado (Gemma 4 26B A4B it qat q4_0 unquantized oQ4e fp16): https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ4e-fp16
 - Repositorio relacionado (Gemma 4 26B A4B it assistant oQ6 fp16): https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-assistant-oQ6-fp16
 - Perfil de GitHub del autor: https://github.com/RepublicOfKorokke

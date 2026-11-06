@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`salma414/dummy_model` es un repositorio publicado en HuggingFace por el usuario salma414 que, por su nombre y por el contenido de su model card, presenta todas las trazas de ser un modelo de prueba o placeholder. La model card es la plantilla autogenerada de `transformers`, en la que absolutamente todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]" sin ninguna cumplimentacion por parte del autor. No hay, por tanto, documentacion tecnica verificable mas alla de los metadatos del Hub.
+`salma414/dummy_model` es un repositorio publicado en Hugging Face por el usuario salma414 que, por su nombre y por el contenido de su model card, presenta todas las trazas de ser un modelo de prueba o placeholder. La model card es la plantilla autogenerada de `transformers`, en la que absolutamente todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]" sin ninguna cumplimentacion por parte del autor. No hay, por tanto, documentacion tecnica verificable mas alla de los metadatos del Hub.
 
 Los metadatos si aportan algunos datos objetivos: el pipeline declarado es `fill-mask` (modelo de lenguaje enmascarado), la libreria es `transformers`, el formato de pesos es `safetensors` y el recuento real de parametros es de 110.655.493, con un tamano de repositorio de 0,4 GB. La etiqueta `camembert` sugiere que el checkpoint se apoya en la arquitectura CamemBERT (encoder tipo RoBERTa), aunque esto no se confirma en ninguna parte de la documentacion.
 
@@ -49,7 +49,7 @@ Los casos que siguen describen para que serviria un modelo de este tipo (encoder
 - Extraccion de informacion y reconocimiento de entidades: tras ajuste fino, podria emplearse para identificar entidades nombradas o relaciones en documentos, con un coste de inferencia bajo gracias a su tamano reducido.
 - Busqueda semantica y recuperacion aumentada (RAG): sus representaciones podrian alimentar un indice vectorial para recuperar pasajes relevantes en un sistema de preguntas y respuestas, siempre que la calidad de los embeddings haya sido validada.
 - Filtrado y normalizacion de datos a gran escala: al ser un modelo pequeno, es viable ejecutarlo sobre millones de documentos en CPU o GPU modesta para puntuar, deduplicar o limpiar corpus.
-- Prototipado y pruebas de integracion: resulta adecuado para validar pipelines de despliegue (transformers, HuggingFace Inference Endpoints, Text Embeddings Inference) sin consumir recursos significativos. De hecho, este parece ser el proposito real del repositorio.
+- Prototipado y pruebas de integracion: resulta adecuado para validar pipelines de despliegue (transformers, Hugging Face Inference Endpoints, Text Embeddings Inference) sin consumir recursos significativos. De hecho, este parece ser el proposito real del repositorio.
 - Educacion y experimentacion: util como ejemplo minimo para ensenar como se publica y se carga un modelo en el Hub.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,45 GB en fp32 (110,66 M de parametros x 4 bytes), unos 0,22 GB en fp16/bf16 y alrededor de 0,11 GB en int8. Son calculos teoricos a partir del recuento de parametros; no hay mediciones publicadas.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente. Sirven tarjetas de gama baja y media (GTX 1650, RTX 3050, T4, L4) e incluso iGPU con memoria compartida.
 - Cabe en GPU de consumo: si, con enorme margen. Practicamente cualquier GPU consumer de los ultimos diez anos puede alojarlo, y la inferencia en CPU es perfectamente viable.
-- Opciones de despliegue: `transformers` con PyTorch (via `AutoModelForMaskedLM`), HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` lo indica), Text Embeddings Inference si se usa como encoder de embeddings, y ONNX Runtime para despliegue ligero. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion previa, ademas de que el pipeline `fill-mask` no es el objetivo natural de esas herramientas.
+- Opciones de despliegue: `transformers` con PyTorch (via `AutoModelForMaskedLM`), Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` lo indica), Text Embeddings Inference si se usa como encoder de embeddings, y ONNX Runtime para despliegue ligero. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion previa, ademas de que el pipeline `fill-mask` no es el objetivo natural de esas herramientas.
 - Latencia y throughput: no disponible. No hay mediciones de velocidad publicadas y, sin confirmacion de que los pesos esten entrenados, careceria de sentido estimarlas.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ Nota: los datos de contexto, licencia y parametros de los modelos comparativos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/salma414/dummy_model
+- Modelo en Hugging Face: https://huggingface.co/salma414/dummy_model
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico mencionado en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

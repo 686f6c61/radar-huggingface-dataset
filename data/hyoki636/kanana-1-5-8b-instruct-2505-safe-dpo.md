@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kanana 1.5-8B-Instruct-2505-Safe-DPO es una variante afinada del modelo Kanana 1.5-8B-Instruct-2505 desarrollado originalmente por Kakao Corp. Esta versión concreta, publicada por el usuario hyoki636 en HuggingFace, incorpora un ajuste adicional mediante DPO (Direct Preference Optimization) orientado a la seguridad de las respuestas. El modelo base pertenece a la familia Kanana, que destaca por sus mejoras sustanciales en generación de código, razonamiento matemático y llamada a funciones respecto a su predecesor.
+Kanana 1.5-8B-Instruct-2505-Safe-DPO es una variante afinada del modelo Kanana 1.5-8B-Instruct-2505 desarrollado originalmente por Kakao Corp. Esta versión concreta, publicada por el usuario hyoki636 en Hugging Face, incorpora un ajuste adicional mediante DPO (Direct Preference Optimization) orientado a la seguridad de las respuestas. El modelo base pertenece a la familia Kanana, que destaca por sus mejoras sustanciales en generación de código, razonamiento matemático y llamada a funciones respecto a su predecesor.
 
 El modelo cuenta con aproximadamente 8.030 millones de parámetros y está diseñado como un modelo de lenguaje bilingüe, con soporte principal para coreano e inglés. Su ventana de contexto nativa es de 32.000 tokens, extensible hasta 128.000 tokens según la documentación del modelo original. Aunque la model card de esta variante concreta no proporciona detalles técnicos adicionales, el tag de arquitectura "llama" indica que se basa en la arquitectura transformer de Llama. La relevancia de este modelo radica en su potencial para aplicaciones de conversación y asistencia que requieran respuestas seguras y controladas, aunque su adopción es actualmente nula (cero descargas) y su mantenimiento es incierto.
 
@@ -72,7 +72,7 @@ La variante Safe-DPO se diferencia del modelo base de Kakao por el ajuste adicio
 
 - La licencia no esta especificada en la model card, lo que impide determinar si es legal su uso comercial. Se recomienda contactar al autor o al propietario del modelo base antes de cualquier despliegue en produccion.
 - La model card esta completamente vacia de informacion tecnica: no hay detalles sobre el dataset de entrenamiento, los hiperparametros del DPO ni la metodologia de evaluacion.
-- El modelo tiene cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad y puede contener errores o comportamientos imprevistos.
+- El modelo tiene cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad y puede contener errores o comportamientos imprevistos.
 - No se dispone de datos sobre sesgos o alucinaciones especificos de esta variante. El ajuste DPO puede reducir ciertos comportamientos indeseados, pero tambien puede introducir sesgos de sobrecorreccion.
 - El soporte de idiomas se limita presumiblemente a coreano e ingles; su rendimiento en espanol u otros idiomas no esta documentado y probablemente sea deficiente.
 - El repositorio fue creado en agosto de 2026 y no ha recibido actualizaciones desde entonces, lo que indica falta de mantenimiento activo.
@@ -80,7 +80,7 @@ La variante Safe-DPO se diferencia del modelo base de Kakao por el ajuste adicio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyoki636/kanana-1.5-8b-instruct-2505-Safe-DPO
+- Modelo en Hugging Face: https://huggingface.co/hyoki636/kanana-1.5-8b-instruct-2505-Safe-DPO
 - Modelo base original de Kakao: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Repositorio GitHub de Kanana: https://github.com/kakao/kanana
 - Variante Persona-Merged del mismo autor: https://huggingface.co/hyoki636/kanana-1.5-8b-instruct-2505-Persona-Merged

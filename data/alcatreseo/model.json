@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "alcatreseo/MODEL",
+  "slug": "alcatreseo-model",
+  "author": "alcatreseo",
+  "url": "https://huggingface.co/alcatreseo/MODEL",
+  "created_at": "2026-09-24T06:00:22.000Z",
+  "updated_at": "2026-11-06T05:00:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 22264499481,
+  "storage_human": "22.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

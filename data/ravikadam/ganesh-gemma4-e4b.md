@@ -80,8 +80,8 @@ No se dispone de comparativas directas con otros fine-tunes devocionales de Gane
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravikadam/ganesh-gemma4-e4b
-- Base Gemma 4 E4B en HuggingFace: https://huggingface.co/google/gemma-4-E4B
+- Modelo en Hugging Face: https://huggingface.co/ravikadam/ganesh-gemma4-e4b
+- Base Gemma 4 E4B en Hugging Face: https://huggingface.co/google/gemma-4-E4B
 - Página oficial Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card Gemma 4 (Google AI): https://ai.google.dev/gemma/docs/core/model_card_4
 - Gemma 4 E4B en Ollama: https://ollama.com/library/gemma4:e4b

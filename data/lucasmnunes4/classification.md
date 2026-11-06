@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LucasMnunes4/classification es un repositorio de HuggingFace publicado por el usuario LucasMnunes4 que contiene una implementacion propia y minima de una arquitectura denominada "Dino" orientada a tareas de clasificacion. Segun la propia model card, no se trata de un modelo entrenado ni de un release con pesos evaluados: el archivo `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con rendimiento demostrado. El repositorio incluye el script `eval.py`, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto.
+LucasMnunes4/classification es un repositorio de Hugging Face publicado por el usuario LucasMnunes4 que contiene una implementacion propia y minima de una arquitectura denominada "Dino" orientada a tareas de clasificacion. Segun la propia model card, no se trata de un modelo entrenado ni de un release con pesos evaluados: el archivo `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con rendimiento demostrado. El repositorio incluye el script `eval.py`, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto.
 
 El dato mas relevante es su tamano: 24.832 parametros totales, segun los tensores almacenados en safetensors. Esa cifra es varios ordenes de magnitud inferior a la de cualquier clasificador convolucional o transformer minimamente utilizable, y contrasta con la etiqueta "Scale: base" que aparece en la model card, por lo que la configuracion publicada debe interpretarse como un esqueleto reproducible y no como un modelo con capacidad funcional real. El repo ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
-El interes de esta ficha, por tanto, es acotado: sirve como referencia para entender una plantilla de implementacion experimental con licencia MIT, util para reproducir un pipeline de entrenamiento propio, pero no como una alternativa a clasificadores preentrenados. No se han publicado resultados de benchmarks, no se declaran idiomas soportados y no existe pipeline de inferencia asociado en HuggingFace.
+El interes de esta ficha, por tanto, es acotado: sirve como referencia para entender una plantilla de implementacion experimental con licencia MIT, util para reproducir un pipeline de entrenamiento propio, pero no como una alternativa a clasificadores preentrenados. No se han publicado resultados de benchmarks, no se declaran idiomas soportados y no existe pipeline de inferencia asociado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ Dado que no existe un modelo entrenado, los casos de uso son los propios de una 
 - Reproduccion de experimentos: el repo sirve como punto de partida para clonar la configuracion, entrenar con datos propios y comparar variantes arquitectonicas bajo el mismo presupuesto de computo.
 - Validacion de pipelines de entrenamiento: `training_args.json` y `eval.py` permiten comprobar que un entorno de PyTorch, el cargador de datos y el bucle de entrenamiento funcionan antes de escalar a un modelo mayor.
 - Pruebas de integracion en CI: un checkpoint de 24.832 parametros puede cargarse en segundos dentro de un test automatizado para verificar que el codigo de inferencia no se rompe tras un refactor.
-- Docencia y formacion: es un ejemplo didactico de como empaquetar una arquitectura con su configuracion, sus argumentos de experimento y su script de evaluacion en HuggingFace.
+- Docencia y formacion: es un ejemplo didactico de como empaquetar una arquitectura con su configuracion, sus argumentos de experimento y su script de evaluacion en Hugging Face.
 - Investigacion sobre arquitecturas de atencion: la combinacion de grouped query attention, fusion concat mlp y rmsnorm puede modificarse de forma controlada para estudiar su efecto en tareas de clasificacion concretas.
 - Base para comparaciones de capacidad: sirve como linea base de capacidad minima ("matched-capacity baseline") frente a la que medir modelos mas grandes en un split etiquetado, tal como sugiere la propia model card.
 - Desarrollo de adaptadores de carga: dado que se trata de una implementacion custom, es util para escribir y probar el adaptador necesario para integrarla con frameworks genericos de carga de modelos.
@@ -77,13 +77,13 @@ No hay comparativa disponible. Este repositorio no es un clasificador entrenado,
 - Sin idiomas declarados: no se puede asumir soporte de castellano ni de ninguna otra lengua.
 - Inconsistencia documentada: la model card etiqueta la escala como "base", mientras que el recuento real de parametros en safetensors es de 24.832, un orden de magnitud alejado de lo que suele considerarse una variante base.
 - Restricciones de licencia: licencia MIT, permisiva y apta para uso comercial del codigo, pero la propia model card advierte de que deben revisarse por separado los terminos de los datos de origen si se usa con datasets externos.
-- Carga no estandar: al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace y de otros frameworks requeriran un adaptador explicito.
+- Carga no estandar: al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face y de otros frameworks requeriran un adaptador explicito.
 - Ausencia de mantenimiento verificable: el repositorio no registra descargas ni likes, y las fechas de creacion y actualizacion son muy proximas entre si, lo que sugiere un artefacto generado de forma automatizada.
 - Uso en produccion: no recomendado bajo ningun escenario de clasificacion real con los pesos actuales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucasMnunes4/classification
+- Modelo en Hugging Face: https://huggingface.co/LucasMnunes4/classification
 - Archivos del repositorio citados en la model card: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana "Files" del repositorio anterior)
 
 Referencias genericas sobre modelos de clasificacion devueltas por la busqueda web, no vinculadas a este repositorio concreto:

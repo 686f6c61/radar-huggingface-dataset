@@ -106,13 +106,13 @@ Los cuatro comparten base y licencia; la diferencia práctica es el equilibrio e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI4
+- Modelo en Hugging Face: https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI4
 - Modelo base (BF16): https://huggingface.co/d0xin/Swift-1.5-Qwen3.8-27B-Uncensored-BF16
 - Cuantización alternativa IQ4_XS-M (compatible con llama.cpp mainline): https://huggingface.co/jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF
 - README del IQ4_XS-M: https://huggingface.co/jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF/blob/main/README.md
 - Árbol de archivos del IQ4_XS-M: https://huggingface.co/jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF/tree/main
 - Swift 1.5 Qwen3.8-27B de UkisAI (página del modelo y evaluaciones): https://ukisai.com/swift-1-5-27b
-- Pesos de UkisAI en HuggingFace: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
+- Pesos de UkisAI en Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Runtime llamAmpere, release v0.6: https://github.com/JakeATX/llamAmpere/releases/tag/v0.6
 - Repositorio llamAmpere: https://github.com/JakeATX/llamAmpere
 - Ficha en aimarketcap: https://aimarketcap.tech/models/jakeatx-atx-swift-qwen3-8-27b-uncensored-iq4-xs-m-gguf

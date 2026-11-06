@@ -2,9 +2,9 @@
 
 ## Resumen
 
-OmniVoice es un modelo de síntesis de voz (text-to-speech) de código abierto desarrollado por el equipo k2-fsa, con una versión publicada en HuggingFace bajo el usuario OjikSenpai. Se trata de un sistema zero-shot masivamente multilingüe capaz de generar voz natural en más de 600 idiomas, lo que lo convierte en uno de los modelos TTS con mayor cobertura lingüística disponibles actualmente. Además de la síntesis convencional, soporta clonación de voz a partir de una breve muestra de audio de referencia y diseño de voces sintéticas.
+OmniVoice es un modelo de síntesis de voz (text-to-speech) de código abierto desarrollado por el equipo k2-fsa, con una versión publicada en Hugging Face bajo el usuario OjikSenpai. Se trata de un sistema zero-shot masivamente multilingüe capaz de generar voz natural en más de 600 idiomas, lo que lo convierte en uno de los modelos TTS con mayor cobertura lingüística disponibles actualmente. Además de la síntesis convencional, soporta clonación de voz a partir de una breve muestra de audio de referencia y diseño de voces sintéticas.
 
-El modelo emplea una arquitectura novedosa de tipo "diffusion language model", combinando un modelo de lenguaje difusivo con un backbone basado en Qwen3-0.6B. Con aproximadamente 612 millones de parámetros, ofrece una calidad de audio alta y una velocidad de inferencia superior a la de otros sistemas de su categoría. Su relevancia actual radica en la demanda de soluciones TTS multilingües y de clonación de voz para aplicaciones de accesibilidad, doblaje, asistentes virtuales y generación de contenido, todo ello con una licencia abierta (Apache 2.0 según la web oficial, aunque no confirmada en la ficha de HuggingFace).
+El modelo emplea una arquitectura novedosa de tipo "diffusion language model", combinando un modelo de lenguaje difusivo con un backbone basado en Qwen3-0.6B. Con aproximadamente 612 millones de parámetros, ofrece una calidad de audio alta y una velocidad de inferencia superior a la de otros sistemas de su categoría. Su relevancia actual radica en la demanda de soluciones TTS multilingües y de clonación de voz para aplicaciones de accesibilidad, doblaje, asistentes virtuales y generación de contenido, todo ello con una licencia abierta (Apache 2.0 según la web oficial, aunque no confirmada en la ficha de Hugging Face).
 
 ## Especificaciones tecnicas
 
@@ -15,8 +15,8 @@ El modelo emplea una arquitectura novedosa de tipo "diffusion language model", c
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible (modelo TTS, no procesa texto largo) |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Más de 600 (lista completa de códigos ISO en la ficha de HuggingFace) |
-| Licencia | Apache 2.0 (según la web oficial; no confirmado en la ficha de HuggingFace) |
+| Idiomas soportados | Más de 600 (lista completa de códigos ISO en la ficha de Hugging Face) |
+| Licencia | Apache 2.0 (según la web oficial; no confirmado en la ficha de Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -63,7 +63,7 @@ No se dispone de información comparativa con otros modelos TTS en los datos pro
 
 ## Limitaciones y advertencias
 
-- La licencia no está confirmada en la ficha de HuggingFace; la web oficial indica Apache 2.0, pero se recomienda verificar antes de un uso comercial.
+- La licencia no está confirmada en la ficha de Hugging Face; la web oficial indica Apache 2.0, pero se recomienda verificar antes de un uso comercial.
 - Al ser un modelo zero-shot, la calidad de la clonación de voz puede degradarse con muestras de audio de baja calidad o con ruido de fondo.
 - Aunque soporta más de 600 idiomas, la calidad de síntesis puede variar significativamente entre lenguas con más o menos datos de entrenamiento.
 - Riesgo de alucinación acústica: en textos ambiguos o con nombres propios poco comunes, el modelo puede producir pronunciaciones incorrectas.
@@ -73,8 +73,8 @@ No se dispone de información comparativa con otros modelos TTS en los datos pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace (OjikSenpai/OmniVoice)](https://huggingface.co/OjikSenpai/OmniVoice)
-- [Modelo original en HuggingFace (k2-fsa/OmniVoice)](https://huggingface.co/k2-fsa/OmniVoice)
+- [Modelo en Hugging Face (OjikSenpai/OmniVoice)](https://huggingface.co/OjikSenpai/OmniVoice)
+- [Modelo original en Hugging Face (k2-fsa/OmniVoice)](https://huggingface.co/k2-fsa/OmniVoice)
 - [Paper en arXiv](https://huggingface.co/papers/2604.00688)
 - [Repositorio en GitHub](https://github.com/k2-fsa/OmniVoice)
 - [Demo en Hugging Face Space](https://huggingface.co/spaces/k2-fsa/OmniVoice)

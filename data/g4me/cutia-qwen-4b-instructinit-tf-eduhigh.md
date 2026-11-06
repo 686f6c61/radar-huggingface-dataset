@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CutIA-Qwen-4B-InstructInit-TF-EduHigh es un checkpoint experimental publicado por el usuario g4me en HuggingFace. Se trata de un ajuste ("trained version", segun su propia model card) del modelo base g4me/CutIA-Qwen-4B-InstructInit-TF, a su vez derivado de la familia Qwen3 segun la etiqueta `qwen3` del repositorio. Cuenta con 4.411.424.256 parametros totales (aproximadamente 4,4 mil millones), lo que lo situa en la gama de modelos pequenos aptos para inferencia en GPU de consumo.
+CutIA-Qwen-4B-InstructInit-TF-EduHigh es un checkpoint experimental publicado por el usuario g4me en Hugging Face. Se trata de un ajuste ("trained version", segun su propia model card) del modelo base g4me/CutIA-Qwen-4B-InstructInit-TF, a su vez derivado de la familia Qwen3 segun la etiqueta `qwen3` del repositorio. Cuenta con 4.411.424.256 parametros totales (aproximadamente 4,4 mil millones), lo que lo situa en la gama de modelos pequenos aptos para inferencia en GPU de consumo.
 
 La relevancia de este lanzamiento es limitada y fundamentalmente experimental: el autor lo describe explicitamente como "an experimental checkpoint", no publica licencia, idiomas soportados, pipeline ni resultados de evaluacion, y el repositorio registra cero descargas y cero "likes" en el momento de la consulta. El sufijo "EduHigh" sugiere un ajuste orientado a contenido educativo de alta calidad, aunque la model card no lo confirma ni detalla el dataset utilizado.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha debe leerse como una descripcion de un artefacto poco docu
 | Formato de pesos | safetensors |
 | Modelo base | g4me/CutIA-Qwen-4B-InstructInit-TF |
 | Tamano del repositorio | 50,6 GB |
-| Fecha de creacion | 2026-09-15 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-15 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -103,7 +103,7 @@ La diferencia fundamental no esta en el numero de parametros, sino en la ausenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHigh
+- Modelo en Hugging Face: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHigh
 - Modelo base: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF
 - Paper, blog o repositorio asociado: no disponible
 - Demo: no disponible

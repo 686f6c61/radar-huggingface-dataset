@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ocean-1-4B-DSpark es un modelo de lenguaje de aproximadamente 3.920 millones de parámetros publicado por OceanLabs en HuggingFace, derivado del modelo base D-Spark-4B (D-Spark Team) y distribuido bajo licencia Apache 2.0. Se trata de un transformer denso de 36 capas con atención híbrida: la mayoría de capas emplean ventana deslizante de 512 tokens y una de cada cinco mantiene atención completa, un patrón que reduce el coste de la caché KV en hardware limitado sin renunciar al contexto largo.
+Ocean-1-4B-DSpark es un modelo de lenguaje de aproximadamente 3.920 millones de parámetros publicado por OceanLabs en Hugging Face, derivado del modelo base D-Spark-4B (D-Spark Team) y distribuido bajo licencia Apache 2.0. Se trata de un transformer denso de 36 capas con atención híbrida: la mayoría de capas emplean ventana deslizante de 512 tokens y una de cada cinco mantiene atención completa, un patrón que reduce el coste de la caché KV en hardware limitado sin renunciar al contexto largo.
 
 El modelo declara una ventana de contexto de 1.048.576 tokens (1M) y soporte de más de 200 idiomas, con modo de razonamiento (thinking) activado por defecto en la plantilla de chat. Su vocabulario es de 131.072 tokens, el tamaño oculto de 2560 y el tamaño intermedio de 9216, deliberadamente reducido respecto a otros modelos de la misma clase (aproximadamente 3,6 veces el tamaño oculto) para mejorar el TTFT y el consumo de memoria en dispositivos de borde.
 
@@ -17,7 +17,7 @@ Es relevante porque combina una ventana de contexto poco habitual en la categor�
 | Parámetros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | 1.048.576 tokens (1M) |
 | Tipos de cuantización | bfloat16 en los pesos publicados; no se publican cuantizaciones GGUF, AWQ, GPTQ ni MLX en el repositorio (no disponible) |
-| Idiomas soportados | La model card declara más de 200 idiomas; los metadatos de HuggingFace no especifican lista de idiomas (no disponible) |
+| Idiomas soportados | La model card declara más de 200 idiomas; los metadatos de Hugging Face no especifican lista de idiomas (no disponible) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (bfloat16); requiere `trust_remote_code=True` (tag `custom_code`) |
 | Tamaño oculto (hidden size) | 2560 |
@@ -112,7 +112,7 @@ La ventaja diferencial de Ocean-1-4B-DSpark frente a estas alternativas es la ve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OceanLabs/Ocean-1-4B-DSpark
+- Hugging Face: https://huggingface.co/OceanLabs/Ocean-1-4B-DSpark
 - Modelo base declarado: D-Spark-4B (no se proporciona URL en la información disponible)
 - Paper: no disponible
 - Repositorio de código: no disponible

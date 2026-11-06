@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `shubhamkumarsharma03/edusync-api` en HuggingFace se presenta como un modelo con licencia MIT, pero no contiene una model card sustancial ni información técnica verificable. El README solo incluye la línea de licencia, sin descripción de arquitectura, parámetros, capacidades ni caso de uso definido. Con cero descargas y cero likes, no hay evidencia de que se trate de un modelo de IA publicado formalmente.
+El repositorio `shubhamkumarsharma03/edusync-api` en Hugging Face se presenta como un modelo con licencia MIT, pero no contiene una model card sustancial ni información técnica verificable. El README solo incluye la línea de licencia, sin descripción de arquitectura, parámetros, capacidades ni caso de uso definido. Con cero descargas y cero likes, no hay evidencia de que se trate de un modelo de IA publicado formalmente.
 
-Los resultados de búsqueda web muestran varios proyectos independientes denominados "EduSync" (un LMS con integración de modelos Llama, una plataforma escolar en África, un sistema de gestión educativa con IA), pero ninguno coincide con este repositorio de HuggingFace. No se ha encontrado documentación, paper ni demo que respalde la existencia de un modelo de IA en este repositorio.
+Los resultados de búsqueda web muestran varios proyectos independientes denominados "EduSync" (un LMS con integración de modelos Llama, una plataforma escolar en África, un sistema de gestión educativa con IA), pero ninguno coincide con este repositorio de Hugging Face. No se ha encontrado documentación, paper ni demo que respalde la existencia de un modelo de IA en este repositorio.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shubhamkumarsharma03/edusync-api
+- Repositorio Hugging Face: https://huggingface.co/shubhamkumarsharma03/edusync-api
 - Proyecto EduSync (GitHub, LMS con Llama-3): https://github.com/Triplejw/EduSync
 - LMS/edusync-api (GitHub, AI-Powered-Edtech): https://github.com/AI-Powered-Edtech/LMS/tree/main/edusync-api/docs
 - Documentación EduSync (API): https://cringynoob.github.io/EduSync-Docs/api/

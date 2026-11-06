@@ -91,7 +91,7 @@ Otras alternativas comparables de la categoria (modelos de agente de terminal co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-dsmix-1034rows-seed1-ep3
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-dsmix-1034rows-seed1-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de entrenamiento: https://github.com/songwen6968/reward-hacking
 - Paper, blog o demo: no disponibles

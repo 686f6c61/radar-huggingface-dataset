@@ -97,6 +97,6 @@ No se dispone de datos de benchmarks comparables con otras alternativas de ~4B e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/hilbert-4b-baseline-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/hilbert-4b-baseline-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del metodo SemIf (codigo, benchmarks y evidencia a nivel de fila): https://github.com/SNAPKITTYAGENT9NOVA/SemIf-OpenJev

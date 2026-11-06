@@ -85,7 +85,7 @@ No se dispone de resultados publicados de otros agentes sobre este mismo entorno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allapp/connectailab-rl-mong-v2-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/allapp/connectailab-rl-mong-v2-roadster-ppo
 - Entorno referenciado en la model card: `로드스터_시뮬레이터.py` (clase `로드스터연속`, Gymnasium); no se proporciona URL publica.
 - Contexto del curso: "AI CITY BUILDERS" - CONNECT AI LAB (leccion 6 de RL); no se proporciona URL publica.
 - Paper de PPO: no enlazado en la informacion disponible.

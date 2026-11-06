@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Plasmoscan es un repositorio de modelo alojado en HuggingFace bajo el identificador Mateusss3/plasmoscan, publicado por el usuario Mateusss3. La informacion disponible es minima: la model card unicamente declara la licencia GPL-3.0 y el idioma ingles, sin describir arquitectura, tamano, datos de entrenamiento ni tarea objetivo. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y un unico "like", y su ultima actualizacion se produjo seis minutos despues de su creacion, lo que sugiere un repositorio esqueleto o vacio.
+Plasmoscan es un repositorio de modelo alojado en Hugging Face bajo el identificador Mateusss3/plasmoscan, publicado por el usuario Mateusss3. La informacion disponible es minima: la model card unicamente declara la licencia GPL-3.0 y el idioma ingles, sin describir arquitectura, tamano, datos de entrenamiento ni tarea objetivo. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y un unico "like", y su ultima actualizacion se produjo seis minutos despues de su creacion, lo que sugiere un repositorio esqueleto o vacio.
 
 No hay pipeline declarado, no hay pesos publicados de forma verificable y no existe documentacion tecnica asociada. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: todos los enlaces encontrados tratan sobre la activacion de licencias de Windows y son irrelevantes para esta ficha.
 
@@ -93,7 +93,7 @@ No disponible. Sin conocer la categoria, el tamano ni la tarea del modelo, no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mateusss3/plasmoscan
+- Hugging Face: https://huggingface.co/Mateusss3/plasmoscan
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

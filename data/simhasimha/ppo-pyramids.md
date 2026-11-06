@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `SimhaSimha/ppo-Pyramids` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno Pyramids de la librería Unity ML-Agents. Lo publica el usuario SimhaSimha en HuggingFace y su pipeline declarado es `reinforcement-learning`. El agente aprende a navegar una arena tridimensional hasta alcanzar un bloque dorado evitando obstáculos, una tarea clásica dentro del ecosistema ML-Agents y del curso Deep Reinforcement Learning de la propia HuggingFace.
+El modelo identificado como `SimhaSimha/ppo-Pyramids` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno Pyramids de la librería Unity ML-Agents. Lo publica el usuario SimhaSimha en Hugging Face y su pipeline declarado es `reinforcement-learning`. El agente aprende a navegar una arena tridimensional hasta alcanzar un bloque dorado evitando obstáculos, una tarea clásica dentro del ecosistema ML-Agents y del curso Deep Reinforcement Learning de la propia Hugging Face.
 
 El repositorio tiene un tamaño declarado de 0.0 GB, no acumula descargas ni likes y no especifica licencia ni idiomas, lo que es coherente con un artefacto de entrenamiento experimental o de carácter didáctico. La única métrica publicada en la model card es una recompensa media de 1.85 +/- 0.15 sobre el dataset ML-Agents-Pyramids, dato no verificado de forma independiente.
 
@@ -30,7 +30,7 @@ Su relevancia es acotada y de nicho: sirve como ejemplo reproducible de un agent
 
 Se trata de un agente entrenado con PPO, un algoritmo de gradiente de politica con recorte de la funcion objetivo que estabiliza las actualizaciones frente a policy gradients clasicos. El entrenamiento se ha realizado contra el entorno Pyramids de Unity ML-Agents, en el que un agente con observaciones vectoriales y acciones discretas debe localizar y tocar un bloque dorado dentro de un area con obstaculos. No se han publicado datos sobre el numero de pasos de entrenamiento, la composicion del vector de observaciones, la arquitectura exacta de la red (numero de capas, unidades ocultas, funciones de activacion), hiperparametros de PPO ni procesos de ajuste posteriores.
 
-La model card se limita a indicar que es un modelo entrenado de un agente ppo sobre Pyramids mediante ML-Agents y remite a la unidad 5 del curso de Deep Reinforcement Learning de HuggingFace. El unico artefacto de rendimiento es la recompensa media declarada. No se documenta ninguna innovacion tecnica adicional, decodificacion especulativa ni mecanismo de atencion.
+La model card se limita a indicar que es un modelo entrenado de un agente ppo sobre Pyramids mediante ML-Agents y remite a la unidad 5 del curso de Deep Reinforcement Learning de Hugging Face. El unico artefacto de rendimiento es la recompensa media declarada. No se documenta ninguna innovacion tecnica adicional, decodificacion especulativa ni mecanismo de atencion.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ La model card se limita a indicar que es un modelo entrenado de un agente ppo so
 ## Casos de uso
 
 - Simulacion de agentes en Unity: integrar el modelo ONNX en una escena que replique el entorno Pyramids para observar la politica aprendida en tiempo real.
-- Docencia de aprendizaje por refuerzo: utilizar el agente como ejemplo practico en un curso o taller sobre PPO dentro del ecosistema ML-Agents, siguiendo la unidad 5 del curso de HuggingFace.
+- Docencia de aprendizaje por refuerzo: utilizar el agente como ejemplo practico en un curso o taller sobre PPO dentro del ecosistema ML-Agents, siguiendo la unidad 5 del curso de Hugging Face.
 - Benchmark interno de algoritmos: servir como linea base de recompensa media (1.85 +/- 0.15) contra la que comparar nuevas ejecuciones de PPO con otros hiperparametros.
 - Pruebas de pipeline de exportacion ONNX: verificar que una politica entrenada en ML-Agents se exporta y se carga correctamente en Unity Inference Engine.
 - Prototipado de entornos personalizados: reutilizar la configuracion de Pyramids como plantilla para entrenar variantes con mas obstaculos o recompensas modificadas.
@@ -73,11 +73,11 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos en la informacion proporcionada. Como referencia contextual, el ecosistema del curso Deep Reinforcement Learning de HuggingFace alberga multiples agentes PPO entrenados sobre el mismo entorno Pyramids con distintas configuraciones, pero no se han facilitado sus metricas ni especificaciones para establecer una tabla comparativa fiable.
+No se dispone de datos comparativos en la informacion proporcionada. Como referencia contextual, el ecosistema del curso Deep Reinforcement Learning de Hugging Face alberga multiples agentes PPO entrenados sobre el mismo entorno Pyramids con distintas configuraciones, pero no se han facilitado sus metricas ni especificaciones para establecer una tabla comparativa fiable.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SimhaSimha/ppo-Pyramids | no disponible | no aplicable | mean_reward 1.85 +/- 0.15 | no disponible | HuggingFace |
+| SimhaSimha/ppo-Pyramids | no disponible | no aplicable | mean_reward 1.85 +/- 0.15 | no disponible | Hugging Face |
 | Otros agentes PPO sobre Pyramids | no disponible | no aplicable | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SimhaSimha/ppo-Pyramids
+- Hugging Face: https://huggingface.co/SimhaSimha/ppo-Pyramids
 - Unity ML-Agents (repositorio oficial): https://github.com/Unity-Technologies/ml-agents
-- Curso Deep Reinforcement Learning, unidad 5, HuggingFace: https://huggingface.co/deep-rl-course/unit5/introduction
+- Curso Deep Reinforcement Learning, unidad 5, Hugging Face: https://huggingface.co/deep-rl-course/unit5/introduction

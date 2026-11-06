@@ -103,9 +103,9 @@ La comparativa con Qwen3-30B-A3B es especialmente relevante por la similitud de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-MXFP8-UNCENSORED-CRACK
+- Repositorio Hugging Face de esta variante: https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-MXFP8-UNCENSORED-CRACK
 - Variante GGUF (sin cuantizacion MXFP8): https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-CRACK-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Pagina de BenchLM con benchmarks del modelo base: https://benchlm.ai/models/ornith-1-5-35b-a3b
 - Repositorio de despliegue en DGX Spark: https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark
 - Modelo en ModelScope: https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B

@@ -72,7 +72,7 @@ No se dispone de información comparativa explícita en la documentación propor
 
 ## Enlaces
 
-- [HuggingFace - Qualcomm-AI-Research/ar2can](https://huggingface.co/Qualcomm-AI-Research/ar2can)
+- [Hugging Face - Qualcomm-AI-Research/ar2can](https://huggingface.co/Qualcomm-AI-Research/ar2can)
 - [arXiv - 2511.22690](https://arxiv.org/abs/2511.22690)
 - [Página del proyecto](https://qualcomm-ai-research.github.io/ar2can/)
 - [Repositorio GitHub](https://github.com/Qualcomm-AI-research/ar2can)

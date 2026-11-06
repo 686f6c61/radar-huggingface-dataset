@@ -65,7 +65,7 @@ No hay datos de modelos comparables en la información disponible. Se puede comp
 - Puede presentar sesgos hacia los escenarios de fallo específicos probados (viento y rodilla bloqueada); otros fallos podrían no ser detectados correctamente.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/rijal028/walker2d-calibrated-v2
+- Hugging Face: https://huggingface.co/rijal028/walker2d-calibrated-v2
 - Documentación del entorno Walker2d de Gymnasium: https://gymnasium.farama.org/environments/mujoco/walker2d/
 - Repositorio del autor (sin contenido específico): https://huggingface.co/rijal028/finetuninggg
 - Otro repo del autor: https://huggingface.co/rijal028/lorasamoolv5

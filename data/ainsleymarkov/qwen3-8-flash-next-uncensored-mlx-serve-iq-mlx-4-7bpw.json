@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AinsleyMarkov/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-iQ-MLX-4.7bpw",
+  "slug": "ainsleymarkov-qwen3-8-flash-next-uncensored-mlx-serve-iq-mlx-4-7bpw",
+  "author": "AinsleyMarkov",
+  "url": "https://huggingface.co/AinsleyMarkov/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-iQ-MLX-4.7bpw",
+  "created_at": "2026-11-03T09:08:41.000Z",
+  "updated_at": "2026-11-03T09:57:50.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "qwen4_exp",
+    "mlx",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "imatrix",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 164,
+  "trending_score": 0,
+  "parameters": 133195562899,
+  "parameters_human": "133.20B",
+  "storage_bytes": 107316215512,
+  "storage_human": "107.3 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-MLX-Serve-iQ-MLX-4.7bpw",
+      "url": "https://huggingface.co/AinsleyMarkov/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-iQ-MLX-4.7bpw",
+      "snippet": "2026-10-06, mlx-serve 431ac5d, Mac Studio M3 Ultra 512 GB. Reference: BF16 next-token logits of the abliterated model at 4 positions per held-out window (collector --reference), scored through mlx-serve with tests/qwen38_flash_next_score.py."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-MLX-Serve-iQ-MLX-4.7bpw",
+      "url": "https://huggingface.co/na0fu3y/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-iQ-MLX-4.7bpw",
+      "snippet": "How to use na0fu3y/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-iQ-MLX-4.7bpw with MLX: # Make sure mlx-vlm is installed # pip install --upgrade mlx-vlm from mlx_vlm import load, generate from mlx_vlm.prompt_utils import apply_chat_template from mlx_vlm.utils import load_config # Load the model model ..."
+    },
+    {
+      "title": "qwen38-flash-next-mlx - GitHub",
+      "url": "https://github.com/PipeNetwork/qwen38-flash-next-mlx",
+      "snippet": "qwen38-flash-next-mlx MLX (Apple Silicon) runtime and quantization tooling for Qwen/Qwen3.8-Flash-Next — 125B-A6B hybrid Gated-DeltaNet / Qwen-Sparse-Attention MoE with gated residual streams and a 51B-parameter hashed n-gram embedding (model_type: qwen4_exp)."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability:"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored: GGUF and MLX Runbook",
+      "url": "https://www.orcarouter.ai/blog/qwen3-8-flash-next-uncensored",
+      "snippet": "Gated GGUF with 13 quants and mmproj vision, plus a 6-bit MLX build for Apple Silicon. How to run the abliterated Qwen3.8-Flash-Next-Uncensored locally."
+    }
+  ]
+}

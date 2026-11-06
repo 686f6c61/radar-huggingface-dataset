@@ -99,8 +99,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Boollm/Gemma-4-E2B-GGUF | 4,65 B totales | no disponible | 87/96 en evaluacion mecanica interna; 2/4 codigo, 4/6 matematicas | apache-2.0 | GGUF en HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| google/gemma-4-E2B-it (base) | no disponible en la informacion proporcionada | no disponible | 70/96 en la misma evaluacion mecanica interna | no disponible en la informacion proporcionada | HuggingFace (modelo base oficial) |
+| Boollm/Gemma-4-E2B-GGUF | 4,65 B totales | no disponible | 87/96 en evaluacion mecanica interna; 2/4 codigo, 4/6 matematicas | apache-2.0 | GGUF en Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| google/gemma-4-E2B-it (base) | no disponible en la informacion proporcionada | no disponible | 70/96 en la misma evaluacion mecanica interna | no disponible en la informacion proporcionada | Hugging Face (modelo base oficial) |
 | Boollm Qwen3.5 4B v2 | 4 B (segun denominacion) | no disponible | 2/4 codigo, 4/6 matematicas, 5 correctas y 1 parcial en tareas cotidianas | no disponible | Distribuido por Boollm, citado como comparacion en el model card |
 
 No se dispone de datos suficientes para comparar con otras alternativas de la misma categoria (por ejemplo, otros modelos de aproximadamente 4 B en GGUF), ya que la busqueda web realizada no devolvio resultados tecnicos relevantes.
@@ -122,7 +122,7 @@ No se dispone de datos suficientes para comparar con otras alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Boollm/Gemma-4-E2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Boollm/Gemma-4-E2B-GGUF
 - Descarga del paquete completo: https://huggingface.co/Boollm/Gemma-4-E2B-GGUF/resolve/main/Boollm-Gemma-4-E2B-v1-candidate.zip?download=true
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 

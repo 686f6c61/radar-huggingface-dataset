@@ -76,5 +76,5 @@ No disponible. El repositorio no es un modelo entrenado y su licencia, escala y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/murphychri/mixer-finetuned64
+- Modelo en Hugging Face: https://huggingface.co/murphychri/mixer-finetuned64
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

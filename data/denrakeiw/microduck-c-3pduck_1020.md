@@ -2,7 +2,7 @@
 
 ## Resumen
 
-c-3pduck_1020 es una política de aprendizaje por refuerzo (RL) para el robot cuadrúpedo microduck de Pollen Robotics, publicada por el usuario DenRakEiw en HuggingFace. No se trata de un modelo de lenguaje, sino de un controlador de locomoción: una política "perpetua" que genera una marcha continua para el slot `walk` del robot, con una observación de 61 dimensiones y 14 acciones a una frecuencia de control de 50 Hz.
+c-3pduck_1020 es una política de aprendizaje por refuerzo (RL) para el robot cuadrúpedo microduck de Pollen Robotics, publicada por el usuario DenRakEiw en Hugging Face. No se trata de un modelo de lenguaje, sino de un controlador de locomoción: una política "perpetua" que genera una marcha continua para el slot `walk` del robot, con una observación de 61 dimensiones y 14 acciones a una frecuencia de control de 50 Hz.
 
 El modelo se ha entrenado específicamente para una tarea de ascenso de colina de 1,5 metros ("1.5 m Hill Climb") en modo carrera, y ha sido ajustado mediante estrategias evolutivas (evolution strategies) sobre el scorer de colinas del entorno Arena. Esto lo sitúa en el ámbito de la robótica de locomoción basada en simulación y transferencia a hardware real, un campo donde los controladores ONNX compactos permiten desplegar políticas entrenadas en simulación directamente sobre el robot físico.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Observacion / acciones | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| c-3pduck_1020 | Política RL para microduck (slot walk) | 61-D / 14 acciones a 50 Hz | ONNX | no disponible | HuggingFace |
+| c-3pduck_1020 | Política RL para microduck (slot walk) | 61-D / 14 acciones a 50 Hz | ONNX | no disponible | Hugging Face |
 | Otras políticas microduck | no disponible | no disponible | no disponible | no disponible | repositorio microduck |
 
 No se dispone de información sobre políticas comparables de terceros para el mismo robot en la información proporcionada.
@@ -86,7 +86,7 @@ No se dispone de información sobre políticas comparables de terceros para el m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DenRakEiw/microduck-c-3pduck_1020
+- Hugging Face: https://huggingface.co/DenRakEiw/microduck-c-3pduck_1020
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl`, rama `denrakeiw`, commit `b76573f1a`
 - Proyecto microduck: https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de política: `docs/policy-manifest.md` en el repositorio del daemon

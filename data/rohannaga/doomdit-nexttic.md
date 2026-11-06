@@ -74,9 +74,9 @@ Resultados de adaptación reportados en la model card: el LoRA de rango 16 recup
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Doomdit-nexttic (SD 1.4 U-Net) | 860M | 32 tics + acción | World model de siguiente tic en Doom | per-backbone | HuggingFace, 0 descargas |
-| Doomdit-nexttic (PixArt-α) | 628M | 32 tics + acción | World model de siguiente tic en Doom | per-backbone | HuggingFace, 0 descargas |
-| Doomdit-nexttic (SD 3.5 Medium) | 2,27B | 32 tics + acción | World model de siguiente tic en Doom | per-backbone | HuggingFace, 0 descargas |
+| Doomdit-nexttic (SD 1.4 U-Net) | 860M | 32 tics + acción | World model de siguiente tic en Doom | per-backbone | Hugging Face, 0 descargas |
+| Doomdit-nexttic (PixArt-α) | 628M | 32 tics + acción | World model de siguiente tic en Doom | per-backbone | Hugging Face, 0 descargas |
+| Doomdit-nexttic (SD 3.5 Medium) | 2,27B | 32 tics + acción | World model de siguiente tic en Doom | per-backbone | Hugging Face, 0 descargas |
 | GameNGen (referencia citada) | no disponible | no disponible | World model de Doom | no disponible | no disponible en la información proporcionada |
 
 La comparación relevante es interna: los tres backbones comparten recetario y protocolo, lo que permite aislar el efecto del tamaño y la arquitectura. No se dispone de datos de benchmarks de GameNGen en la información proporcionada para una comparación numérica.
@@ -95,7 +95,7 @@ La comparación relevante es interna: los tres backbones comparten recetario y p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RohanNaga/doomdit-nexttic
+- Hugging Face: https://huggingface.co/RohanNaga/doomdit-nexttic
 - Página del proyecto: https://intelligent-control-lab.github.io/DoomShift/
 - Paper: https://intelligent-control-lab.github.io/DoomShift/static/DoomShift.pdf
 - Código: https://github.com/intelligent-control-lab/DoomShift

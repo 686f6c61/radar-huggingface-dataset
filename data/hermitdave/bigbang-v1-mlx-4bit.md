@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- Framework obligatorio: mlx_lm, que requiere macOS sobre Apple Silicon (chips M1, M2, M3, M4 y sus variantes Pro, Max y Ultra). Este checkpoint concreto no es cargable con vLLM, TGI, llama.cpp ni Ollama, ya que no esta en formato GGUF ni en safetensors estandar de HuggingFace Transformers.
+- Framework obligatorio: mlx_lm, que requiere macOS sobre Apple Silicon (chips M1, M2, M3, M4 y sus variantes Pro, Max y Ultra). Este checkpoint concreto no es cargable con vLLM, TGI, llama.cpp ni Ollama, ya que no esta en formato GGUF ni en safetensors estandar de Hugging Face Transformers.
 - Peso en disco y en memoria: el repositorio ocupa 19,5 GB. Con cuantizacion de 4 bits, los pesos ocupan aproximadamente esa misma cifra en memoria unificada antes de contabilizar el KV cache.
 - Memoria unificada recomendada: 32 GB o mas como configuracion comoda (por ejemplo, un Mac con chip Pro o Max de 32 GB). En equipos de 24 GB el modelo entra con dificultad y solo con contextos cortos, dado el espacio adicional que exige el KV cache. En 16 GB no es viable.
 - Cabe en GPU de consumo: no en el sentido convencional, porque MLX no se ejecuta sobre CUDA. En tarjetas NVIDIA (RTX 4090 de 24 GB, A100, H100) seria necesario convertir a otro formato; la model card no documenta dicha ruta. Como referencia de tamano, 19,5 GB en 4 bits si caben en una RTX 4090 de 24 GB, pero no con este formato de pesos.
@@ -100,7 +100,7 @@ Como referencia de categoria, existirian alternativas MoE de tamano comparable (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hermitdave/BigBang-v1-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/hermitdave/BigBang-v1-MLX-4bit
 - Modelo base: https://huggingface.co/endless-frontier/BigBang-v1
 - Variante uniform 4-bit citada en la model card: https://huggingface.co/mlx-community/BigBang-v1-MLX-4bit
 - Variante Q4_K_M (mixed_4_6): https://huggingface.co/mlx-community/BigBang-v1-MLX-Q4_K_M

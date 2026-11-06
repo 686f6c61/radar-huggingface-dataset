@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de otros adaptadores comparables en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nebulette/mossrael-2b-encoder
+- Hugging Face: https://huggingface.co/nebulette/mossrael-2b-encoder
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Encoder de referencia: https://huggingface.co/Qwen/Qwen3.5-2B
 - Finetune previo Moss:RAEL: https://huggingface.co/sselpah/MossRAEL

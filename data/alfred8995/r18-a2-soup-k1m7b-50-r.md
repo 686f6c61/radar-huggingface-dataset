@@ -2,9 +2,9 @@
 
 ## Resumen
 
-r18-a2-soup-k1m7b-50-r es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 el 29 de octubre de 2026. El repositorio contiene pesos en formato safetensors con 2.018.511.234 parámetros (aproximadamente 2.020 millones) y un tamaño total de 8,1 GB. No incluye model card, por lo que ni la arquitectura ni el proceso de entrenamiento están documentados.
+r18-a2-soup-k1m7b-50-r es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 el 29 de octubre de 2026. El repositorio contiene pesos en formato safetensors con 2.018.511.234 parámetros (aproximadamente 2.020 millones) y un tamaño total de 8,1 GB. No incluye model card, por lo que ni la arquitectura ni el proceso de entrenamiento están documentados.
 
-El nombre sugiere que se trata de un "model soup" (fusión de pesos de varios modelos, técnica habitual en la comunidad de merges), y la etiqueta "sn38-nanochrono" apunta a un proyecto o conjunto de datos propio del autor, aunque su significado no está aclarado en ninguna parte. El acceso es gated: hay que aceptar unas condiciones en HuggingFace antes de poder descargarlo.
+El nombre sugiere que se trata de un "model soup" (fusión de pesos de varios modelos, técnica habitual en la comunidad de merges), y la etiqueta "sn38-nanochrono" apunta a un proyecto o conjunto de datos propio del autor, aunque su significado no está aclarado en ninguna parte. El acceso es gated: hay que aceptar unas condiciones en Hugging Face antes de poder descargarlo.
 
 Su relevancia actual es limitada: acumula 0 descargas y 0 likes, sin benchmarks ni demostraciones públicas. Puede interesar a quien investigue merges de modelos pequeños o busque una base ligera para fine-tuning, pero exige verificación propia antes de cualquier uso serio.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada: acumula 0 descargas y 0 likes, sin benchmarks 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Tamaño del repositorio | 8,1 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Autor | alfred8995 |
 
 ## Arquitectura y entrenamiento
@@ -64,8 +64,8 @@ Estimaciones para 2.018 millones de parámetros (más el overhead de caché KV y
 - INT4: ~1,1–1,3 GB.
 - GPUs de consumo: cabe con holgura en una RTX 3060 de 12 GB incluso en FP32; en FP16 entra en tarjetas de 8 GB (RTX 4060, RTX 3070); en 4 bits funciona en portátiles e incluso por CPU.
 - GPUs de datacenter: cualquier opción (A100, H100, L4, T4) lo ejecuta sin problemas; no se justifica hardware de gama alta para un modelo de este tamaño salvo para servir mucho tráfico en paralelo.
-- Despliegue: transformers de HuggingFace de forma nativa (safetensors); llama.cpp u Ollama tras convertir a GGUF; vLLM o TGI para servir con batching continuo. Dada la falta de model card, la compatibilidad con cada framework debe verificarse.
-- Acceso: al estar el repo gated, el despliegue automatizado requiere un token de HuggingFace con las condiciones aceptadas previamente.
+- Despliegue: transformers de Hugging Face de forma nativa (safetensors); llama.cpp u Ollama tras convertir a GGUF; vLLM o TGI para servir con batching continuo. Dada la falta de model card, la compatibilidad con cada framework debe verificarse.
+- Acceso: al estar el repo gated, el despliegue automatizado requiere un token de Hugging Face con las condiciones aceptadas previamente.
 - Latencia y throughput: no hay mediciones públicas; por tamaño, cabe esperar latencias bajas y decenas de tokens por segundo en una GPU de consumo moderna, pero son estimaciones no contrastadas.
 
 ## Comparativa con modelos similares
@@ -92,5 +92,5 @@ Las alternativas listadas cuentan con model cards detalladas, benchmarks publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-soup-k1m7b-50-r
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-soup-k1m7b-50-r
 - La búsqueda web no devolvió resultados relevantes para este modelo (solo páginas sobre el CV Europass, sin relación alguna), por lo que no hay paper, blog, repositorio adicional ni demo pública que enlazar.

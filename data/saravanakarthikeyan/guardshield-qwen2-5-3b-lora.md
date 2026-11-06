@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saravanakarthikeyan/GuardShield-Qwen2.5-3B-LoRA
+- Hugging Face: https://huggingface.co/saravanakarthikeyan/GuardShield-Qwen2.5-3B-LoRA
 - Modelo base (Unsloth): https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Qwen2.5-3B (base): https://huggingface.co/Qwen/Qwen2.5-3B
 - Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

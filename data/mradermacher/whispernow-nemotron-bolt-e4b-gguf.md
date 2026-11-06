@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/whispernow-nemotron-bolt-e4b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/whispernow-nemotron-bolt-e4b-GGUF
 - Modelo base: https://huggingface.co/category271/whispernow-nemotron-bolt-e4b
 - Dataset de entrenamiento: https://huggingface.co/datasets/category271/whispernow-cleanup
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/

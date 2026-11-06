@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mohawwad93/roberta_no_augment_stage2` es un modelo de clasificación de texto publicado en HuggingFace por el usuario mohawwad93, construido sobre la arquitectura RoBERTa y distribuido en formato safetensors. Con 124.647.170 parámetros, el tamano coincide con el de una variante RoBERTa-base a la que se le ha anadido una cabeza de clasificación, lo que lo situa en la gama de modelos encoder de ~125 millones de parámetros, orientados a tareas de comprensión del lenguaje (NLU) mas que a generacion de texto.
+`mohawwad93/roberta_no_augment_stage2` es un modelo de clasificación de texto publicado en Hugging Face por el usuario mohawwad93, construido sobre la arquitectura RoBERTa y distribuido en formato safetensors. Con 124.647.170 parámetros, el tamano coincide con el de una variante RoBERTa-base a la que se le ha anadido una cabeza de clasificación, lo que lo situa en la gama de modelos encoder de ~125 millones de parámetros, orientados a tareas de comprensión del lenguaje (NLU) mas que a generacion de texto.
 
 Por el nombre del repositorio ("no_augment_stage2") cabe inferir que se trata de un experimento de ajuste fino comparando estrategias de aumento de datos frente a su ausencia, en una segunda etapa de entrenamiento. No obstante, esta interpretacion no viene confirmada por ninguna documentacion del autor: la model card esta generada automaticamente por la plataforma y todos sus campos relevantes figuran como "[More Information Needed]".
 
@@ -70,10 +70,10 @@ La comparacion se realiza contra encoders de clasificacion de tamano equivalente
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| `mohawwad93/roberta_no_augment_stage2` | ~125 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| `roberta-base` (Facebook AI) | ~125 M | 512 tokens | MIT | HuggingFace, ampliamente usado | Benchmark GLUE publicado por el autor original |
-| `distilbert-base-uncased` | ~66 M | 512 tokens | Apache 2.0 | HuggingFace | Benchmark GLUE publicado |
-| `bert-base-uncased` | ~110 M | 512 tokens | Apache 2.0 | HuggingFace | Benchmark GLUE publicado |
+| `mohawwad93/roberta_no_augment_stage2` | ~125 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| `roberta-base` (Facebook AI) | ~125 M | 512 tokens | MIT | Hugging Face, ampliamente usado | Benchmark GLUE publicado por el autor original |
+| `distilbert-base-uncased` | ~66 M | 512 tokens | Apache 2.0 | Hugging Face | Benchmark GLUE publicado |
+| `bert-base-uncased` | ~110 M | 512 tokens | Apache 2.0 | Hugging Face | Benchmark GLUE publicado |
 
 La diferencia clave no es de arquitectura ni de tamano, sino de trazabilidad: los tres modelos de referencia cuentan con licencia explicita, documentacion de entrenamiento y resultados reproducibles, mientras que el modelo analizado carece de los tres elementos.
 
@@ -90,7 +90,7 @@ La diferencia clave no es de arquitectura ni de tamano, sino de trazabilidad: lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohawwad93/roberta_no_augment_stage2
+- Hugging Face: https://huggingface.co/mohawwad93/roberta_no_augment_stage2
 - Paper de referencia citado en las etiquetas (Machine Learning Impact calculator, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repos o demos) asociados a este modelo.

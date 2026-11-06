@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-W4AFP8 es un checkpoint cuantificado del modelo GLM-5.3-Flash, perteneciente a la familia GLM-5 descrita en el informe técnico "GLM-5: from Vibe Coding to Agentic Engineering" (arXiv:2602.15763). El repositorio lo publica el usuario de HuggingFace `graphistry` y contiene 165.496.249.182 parámetros reales (aproximadamente 165,5 mil millones) almacenados en formato safetensors con una cuantización denominada W4AFP8, que por convención habitual combina pesos de 4 bits con activaciones en FP8. El repositorio ocupa 177,5 GB.
+GLM-5.3-Flash-W4AFP8 es un checkpoint cuantificado del modelo GLM-5.3-Flash, perteneciente a la familia GLM-5 descrita en el informe técnico "GLM-5: from Vibe Coding to Agentic Engineering" (arXiv:2602.15763). El repositorio lo publica el usuario de Hugging Face `graphistry` y contiene 165.496.249.182 parámetros reales (aproximadamente 165,5 mil millones) almacenados en formato safetensors con una cuantización denominada W4AFP8, que por convención habitual combina pesos de 4 bits con activaciones en FP8. El repositorio ocupa 177,5 GB.
 
 El interés de esta publicación es doble. Por un lado, ofrece una vía de despliegue de un modelo de escala grande (más de 165.000 millones de parámetros) reduciendo el peso teórico de los pesos respecto a un checkpoint en BF16. Por otro, el sufijo "Flash" y la etiqueta `glm5_next` apuntan a una variante de la familia GLM-5 orientada a agentes y generación de código, el eje temático que anuncia el propio título del informe técnico.
 
@@ -102,7 +102,7 @@ A modo de referencia estructural, una comparativa util deberia contrastar este c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/graphistry/GLM-5.3-Flash-W4AFP8
+- Repositorio en Hugging Face: https://huggingface.co/graphistry/GLM-5.3-Flash-W4AFP8
 - Perfil del publicador: https://huggingface.co/graphistry
 - Informe tecnico citado (GLM-5: from Vibe Coding to Agentic Engineering): https://arxiv.org/abs/2602.15763
 - Referencia arXiv declarada en las etiquetas: arXiv:2602.15763 (primaryClass cs.LG)

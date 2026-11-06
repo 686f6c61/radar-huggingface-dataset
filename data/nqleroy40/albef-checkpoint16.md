@@ -68,5 +68,5 @@ No disponible. Este checkpoint no es comparable con modelos ALBEF reales (como e
 
 ## Enlaces
 
-- [Repositorio HuggingFace: nqleroy40/albef-checkpoint16](https://huggingface.co/nqleroy40/albef-checkpoint16)
+- [Repositorio Hugging Face: nqleroy40/albef-checkpoint16](https://huggingface.co/nqleroy40/albef-checkpoint16)
 - [Implementación de ALBEF en TorchMultimodal (facebookresearch/multimodal)](https://github.com/facebookresearch/multimodal/blob/main/examples/albef/model.py)

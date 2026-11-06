@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged (este modelo) | 4.539.265.536 | no disponible | 11 (en + 10 lenguas africanas) | cc-by-4.0 | HuggingFace, safetensors, ajuste LoRA fusionado |
-| McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1 (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace; modelo Instruct sin ajuste especifico de seguridad |
+| AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged (este modelo) | 4.539.265.536 | no disponible | 11 (en + 10 lenguas africanas) | cc-by-4.0 | Hugging Face, safetensors, ajuste LoRA fusionado |
+| McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1 (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face; modelo Instruct sin ajuste especifico de seguridad |
 | israel/AfriGuard-inst (familia de datos relacionada) | no aplica (dataset) | no aplica | no disponible | no disponible | Dataset con instruccion de sistema y etiquetas `<safety>`/`<category>`/`<response>` |
 | Modelos de moderacion comerciales (p. ej. APIs de moderacion generica) | no disponible | no disponible | Cobertura escasa en lenguas africanas | Propietaria | Solo API; sin pesos abiertos |
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones; la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged
+- Modelo en Hugging Face: https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged
 - Modelo base: https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/adzcai/AfriGuard-plain
 - Dataset de origen con instruccion: https://huggingface.co/datasets/israel/AfriGuard-inst

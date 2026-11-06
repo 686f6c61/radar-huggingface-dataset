@@ -12,7 +12,7 @@ La relevancia de esta ficha concreta es limitada pero práctica: el repositorio 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso decoder-only (etiqueta `phi3` en HuggingFace, con `custom_code`); no es MoE |
+| Arquitectura | Transformer denso decoder-only (etiqueta `phi3` en Hugging Face, con `custom_code`); no es MoE |
 | Parámetros totales | 3.836.021.856 (≈3,8 B) |
 | Parámetros activos | No aplica: modelo denso, no es una arquitectura MoE |
 | Longitud de contexto | 128.000 tokens (según la model card del repositorio) |
@@ -38,7 +38,7 @@ Sobre el repositorio concreto, la model card reproduce la plantilla de Unsloth e
 - Razonamiento y matemáticas: las etiquetas del repositorio incluyen `math`; el modelo base está entrenado sobre datos densos en razonamiento, aunque no se aportan métricas que lo cuantifiquen.
 - Generación de código: la etiqueta `code` está presente, pero no se adjuntan evaluaciones tipo HumanEval en la información disponible.
 - Soporte multilingüe declarado mediante la etiqueta `multilingual`, sin listado de idiomas ni evaluación por idioma.
-- Compatibilidad con endpoint inference de HuggingFace (`endpoints_compatible` en las etiquetas).
+- Compatibilidad con endpoint inference de Hugging Face (`endpoints_compatible` en las etiquetas).
 - Uso local offline: al ser GGUF, permite ejecución sin conexión en llama.cpp y derivados.
 - Fine-tuning posterior: la model card enlaza notebooks de Unsloth para entrenamiento (incluido GRPO para modelos de razonamiento), aunque esos cuadernos están referidos a Phi-4 de 14B, no específicamente a la variante mini.
 - No se declaran capacidades de visión, audio ni modo de pensamiento explícito (thinking mode) para esta variante.
@@ -95,7 +95,7 @@ Los datos de los modelos alternativos no forman parte de la información proporc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TAKADOX/Phi-4-mini-instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/TAKADOX/Phi-4-mini-instruct-GGUF
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Licencia del modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct/resolve/main/LICENSE
 - Colección de Unsloth con versiones de Phi-4 y correcciones: https://huggingface.co/collections/unsloth/phi-4-all-versions-677eecf93784e61afe762afa
@@ -108,6 +108,6 @@ Los datos de los modelos alternativos no forman parte de la información proporc
 - Phi Cookbook: https://github.com/microsoft/PhiCookBook
 - Portal de la familia Phi: https://azure.microsoft.com/en-us/products/phi
 - Demo en Azure: https://aka.ms/phi-4-mini/azure
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/microsoft/phi-4-mini
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/microsoft/phi-4-mini
 
 Nota sobre la búsqueda web: los resultados devueltos no guardan relación con el modelo ni con inteligencia artificial (referencias a empresas alemanas del sector alimentario y a páginas de empleados). No se ha encontrado ningún enlace relevante adicional a través de la búsqueda.

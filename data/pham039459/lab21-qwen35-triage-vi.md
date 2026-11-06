@@ -77,7 +77,7 @@ La comparativa es limitada porque no hay datos de rendimiento publicados. El mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pham039459/lab21-qwen35-triage-vi
+- Hugging Face: https://huggingface.co/pham039459/lab21-qwen35-triage-vi
 - Modelo similar (vudanghuy): https://huggingface.co/vudanghuy/lab21-2A202601761-qwen35-triage-vi
 - Colección Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Repositorio del ejercicio (GitHub): https://github.com/VinUni-AI20k/Day21-Track3-Finetuning-Lab/blob/main/BONUS-CHALLENGE-EN.md

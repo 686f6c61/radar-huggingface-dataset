@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que forma parte de una serie de variantes
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino completo (full fine-tuning) del modelo base `marin-community/marin-8b-base`, que a su vez pertenece a la familia Llama según los tags de HuggingFace. No se dispone de detalles sobre la arquitectura interna (número de capas, heads, etc.) más allá de los 8.030 millones de parámetros.
+El modelo es un ajuste fino completo (full fine-tuning) del modelo base `marin-community/marin-8b-base`, que a su vez pertenece a la familia Llama según los tags de Hugging Face. No se dispone de detalles sobre la arquitectura interna (número de capas, heads, etc.) más allá de los 8.030 millones de parámetros.
 
 El entrenamiento se realizó con el framework Llama-Factory y Transformers 5.7.0, sobre un dataset llamado `capsd_marin-8b-base-n80000-opc__mix_code_less_b1000_s0`. Los hiperparámetros declarados incluyen una tasa de aprendizaje de 1e-05, batch size total de 64 (con acumulación de gradientes), optimizador AdamW, scheduler cosine con warmup del 3% y una sola época. No se especifica el número de tokens de entrenamiento ni la composición detallada del dataset. Tampoco se menciona el uso de RLHF, DPO u otras técnicas de alineación.
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos. Existen variantes del mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-less-ultra-opc-marin-8b-base-code_less_b1000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-less-ultra-opc-marin-8b-base-code_less_b1000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - Variante code_less b1000: https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b1000_s0
 - Variante code_less b8000: https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b8000_s0

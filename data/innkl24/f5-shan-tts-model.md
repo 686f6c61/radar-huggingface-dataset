@@ -2,7 +2,7 @@
 
 ## Resumen
 
-innkl24/f5-shan-tts-model es un repositorio de pesos alojado en HuggingFace por el usuario innkl24, publicado el 9 de septiembre de 2026 y actualizado el 14 de septiembre de 2026. El identificador del modelo sugiere que se trata de un sistema de sintesis de voz (TTS) derivado de la familia F5-TTS, posiblemente orientado al idioma shan, aunque la informacion proporcionada no confirma ni la tarea declarada (el campo pipeline aparece como no disponible) ni los idiomas soportados. No existe model card, paper, blog ni documentacion tecnica asociada en los resultados de busqueda disponibles.
+innkl24/f5-shan-tts-model es un repositorio de pesos alojado en Hugging Face por el usuario innkl24, publicado el 9 de septiembre de 2026 y actualizado el 14 de septiembre de 2026. El identificador del modelo sugiere que se trata de un sistema de sintesis de voz (TTS) derivado de la familia F5-TTS, posiblemente orientado al idioma shan, aunque la informacion proporcionada no confirma ni la tarea declarada (el campo pipeline aparece como no disponible) ni los idiomas soportados. No existe model card, paper, blog ni documentacion tecnica asociada en los resultados de busqueda disponibles.
 
 El dato mas relevante y verificable es el tamano del repositorio: 530,6 GB, una cifra muy superior a la habitual en checkpoints de sintesis de voz, lo que apunta a la presencia de multiples versiones de pesos, checkpoints intermedios de entrenamiento o estados de optimizador. El repositorio acumula 0 descargas y 1 like, por lo que se trata de una publicacion practicamente sin validacion por parte de la comunidad.
 
@@ -91,7 +91,7 @@ No disponible. No se dispone de informacion suficiente para identificar modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/innkl24/f5-shan-tts-model
+- Modelo en Hugging Face: https://huggingface.co/innkl24/f5-shan-tts-model
 - Paper, blog, repositorio de codigo o demo: no disponible.
 
 Los resultados de busqueda web obtenidos no contienen ningun enlace relevante sobre este modelo ni sobre la familia a la que podria pertenecer; consisten en paginas no relacionadas sobre cursos universitarios y gramatica inglesa, por lo que se descartan como fuentes.

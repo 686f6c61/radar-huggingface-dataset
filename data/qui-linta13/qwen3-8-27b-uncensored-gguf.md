@@ -117,7 +117,7 @@ Comparativa con alternativas de otros autores (por ejemplo, otros modelos de ~27
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qui-Linta13/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Qui-Linta13/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de abliteración Heretic: https://github.com/p-e-w/heretic
 - llama.cpp: no se proporciona enlace en la información disponible (el commit de conversión citado es `a94d563ed`)

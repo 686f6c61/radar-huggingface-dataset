@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ankitsharmaren/generation-colab` es un repositorio de HuggingFace publicado por el usuario ankitsharmaren que contiene una implementacion propia y minima de una arquitectura **EfficientFormer** etiquetada para tareas de "generation". No se trata de un modelo entrenado ni publicado como release funcional: el propio autor lo describe en la model card como un "starting point reproducible" y aclara de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un checkpoint evaluado con benchmarks.
+`ankitsharmaren/generation-colab` es un repositorio de Hugging Face publicado por el usuario ankitsharmaren que contiene una implementacion propia y minima de una arquitectura **EfficientFormer** etiquetada para tareas de "generation". No se trata de un modelo entrenado ni publicado como release funcional: el propio autor lo describe en la model card como un "starting point reproducible" y aclara de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un checkpoint evaluado con benchmarks.
 
 El dato mas llamativo del repositorio es su tamano real: **49.600 parametros totales** (aproximadamente 0,05 millones), segun los tensores safetensors. Esto entra en contradiccion directa con la etiqueta `Scale: large` que aparece en la tabla de arquitectura de la model card, lo que sugiere que el campo "large" se refiere a una configuracion generada por script y no al tamano efectivo del modelo. El repositorio ocupa 0,0 GB, tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (9 de octubre de 2026).
 
@@ -37,7 +37,7 @@ Datos adicionales de configuracion declarados por el autor:
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es EfficientFormer, un diseno de transformer eficiente originalmente concebido como backbone de vision, con atencion de ventana deslizante, fusion bilineal, activacion GELU y normalizacion GroupNorm. La implementacion incluida en el repositorio es propia del autor, no una exportacion de los pesos oficiales de EfficientFormer, y la model card advierte que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito para poder usarla. El checkpoint `model.safetensors` corresponde a una inicializacion aleatoria valida para pruebas de humo.
+La arquitectura declarada es EfficientFormer, un diseno de transformer eficiente originalmente concebido como backbone de vision, con atencion de ventana deslizante, fusion bilineal, activacion GELU y normalizacion GroupNorm. La implementacion incluida en el repositorio es propia del autor, no una exportacion de los pesos oficiales de EfficientFormer, y la model card advierte que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito para poder usarla. El checkpoint `model.safetensors` corresponde a una inicializacion aleatoria valida para pruebas de humo.
 
 Respecto al entrenamiento, la model card indica que la receta por defecto usa SGD con un schedule cosine, pero subraya que se trata de valores de partida del script y **no de evidencia de una ejecucion completada**. No se especifica numero de tokens de entrenamiento, composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, mezcla de expertos u otras). Los ficheros incluidos son `train.py` (artefacto principal), `README.md`, `config.json`, `training_args.json` y `model.safetensors`.
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 - Incoherencia entre la escala declarada ("large") y los 49.600 parametros reales: conviene no fiarse de las etiquetas de configuracion generadas automaticamente.
 - No se declaran idiomas soportados, longitud de contexto ni pipeline, por lo que no es posible planificar un uso multilingue o de contexto largo.
 - No hay benchmarks ni metricas de ninguna tarea, lo que impide estimar calidad o comparar con alternativas.
-- Al ser una implementacion personal, la carga mediante APIs automaticas de HuggingFace requiere un adaptador explicito; no se garantiza compatibilidad con herramientas estandar.
+- Al ser una implementacion personal, la carga mediante APIs automaticas de Hugging Face requiere un adaptador explicito; no se garantiza compatibilidad con herramientas estandar.
 - Riesgo de alucinacion: no evaluable, al no existir un modelo generativo entrenado sobre el que medirlo.
 - Sesgos conocidos: no hay informacion; al no existir datos de entrenamiento documentados, tampoco es posible analizar la composicion del dataset.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor recomienda revisar por separado los terminos de los datos de origen si se combina con datasets externos.
@@ -93,7 +93,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ankitsharmaren/generation-colab
+- Repositorio en Hugging Face: https://huggingface.co/ankitsharmaren/generation-colab
 - Ficheros incluidos: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde el propio repositorio)
 - Paper de referencia de la arquitectura EfficientFormer: no incluido en la informacion proporcionada
 - Blog o demo oficial: no disponible

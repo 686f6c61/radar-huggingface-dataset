@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prominence-AR_Detector es un modelo de detección de objetos basado en la arquitectura YOLO11, desarrollado por el autor hbirch97 y publicado en HuggingFace bajo licencia AGPL-3.0. Su propósito es identificar prominencias solares y regiones activas en datos de observación solar, y fue entrenado específicamente con datos del instrumento SDO/AIA en la banda de 304 angstroms, aunque el autor indica que puede funcionar con otras fuentes de datos.
+Prominence-AR_Detector es un modelo de detección de objetos basado en la arquitectura YOLO11, desarrollado por el autor hbirch97 y publicado en Hugging Face bajo licencia AGPL-3.0. Su propósito es identificar prominencias solares y regiones activas en datos de observación solar, y fue entrenado específicamente con datos del instrumento SDO/AIA en la banda de 304 angstroms, aunque el autor indica que puede funcionar con otras fuentes de datos.
 
 El modelo se enmarca en un pipeline de investigación astrofísica más amplio que incluye descarga de datos desde DRMS, preprocesamiento, inferencia, postprocesado y extracción de parámetros, compilación de bases de datos y análisis estadístico. El autor remite a un repositorio de GitHub y a un artículo publicado en The Astrophysical Journal para los detalles de preprocesamiento y metodología.
 
@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Prominence-AR_Detector | YOLO11 | no disponible | no aplica | AGPL-3.0 | HuggingFace |
+| Prominence-AR_Detector | YOLO11 | no disponible | no aplica | AGPL-3.0 | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hbirch97/Prominence-AR_Detector
+- Hugging Face: https://huggingface.co/hbirch97/Prominence-AR_Detector
 - GitHub: https://github.com/hbirch97/Prominence-Detector
 - Artículo: https://iopscience.iop.org/article/10.3847/1538-4357/ae664d

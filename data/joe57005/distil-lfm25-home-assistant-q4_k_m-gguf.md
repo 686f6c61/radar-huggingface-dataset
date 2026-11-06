@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Joe57005/distil-lfm25-home-assistant-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Joe57005/distil-lfm25-home-assistant-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/distil-labs/distil-lfm25-home-assistant
 - Dataset de ajuste: https://huggingface.co/datasets/distil-labs/distil-smart-home
 - Licencia LFM Open: https://www.liquid.ai/lfm-open-license

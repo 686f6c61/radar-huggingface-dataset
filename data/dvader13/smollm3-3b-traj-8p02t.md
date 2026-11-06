@@ -77,7 +77,7 @@ La comparativa directa no es posible porque este repositorio no es un modelo fin
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dvader13/smollm3-3b-traj-8p02t](https://huggingface.co/dvader13/smollm3-3b-traj-8p02t)
+- Repositorio Hugging Face: [dvader13/smollm3-3b-traj-8p02t](https://huggingface.co/dvader13/smollm3-3b-traj-8p02t)
 - Modelo base SmolLM3-3B: [HuggingFaceTB/SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - Modelo base sin fine-tuning: [HuggingFaceTB/SmolLM3-3B-Base](https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base)
 - Paper de Ministral 3 (modelo similar de 3B): [arXiv](https://arxiv.org/html/2601.08584v1)

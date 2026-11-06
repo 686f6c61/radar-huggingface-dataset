@@ -69,5 +69,5 @@ No hay datos suficientes para comparar con otros modelos. El repositorio no prop
 
 ## Enlaces
 
-- [HuggingFace: anikaiyer/classifier-exp](https://huggingface.co/anikaiyer/classifier-exp)
+- [Hugging Face: anikaiyer/classifier-exp](https://huggingface.co/anikaiyer/classifier-exp)
 - No hay enlaces adicionales (papers, blogs, repos, demos) en la informacion proporcionada.

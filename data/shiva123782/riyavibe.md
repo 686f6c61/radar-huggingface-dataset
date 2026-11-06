@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Riyavibe (subtitulado "Pro Max Edition") es un adaptador LoRA publicado en HuggingFace por el usuario shiva123782 bajo licencia Apache 2.0. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de pesos, y esta construido sobre el modelo base Qwen/Qwen3-4B, un transformer denso de aproximadamente 4.000 millones de parametros desarrollado por el equipo Qwen de Alibaba.
+Riyavibe (subtitulado "Pro Max Edition") es un adaptador LoRA publicado en Hugging Face por el usuario shiva123782 bajo licencia Apache 2.0. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de pesos, y esta construido sobre el modelo base Qwen/Qwen3-4B, un transformer denso de aproximadamente 4.000 millones de parametros desarrollado por el equipo Qwen de Alibaba.
 
 El problema que pretende resolver no esta documentado tecnicamente: la model card se limita a tres afirmaciones de marketing ("1 Billion Identity Tests Passed", "4-bit QLoRA Quantized" e "Identity Firewall Active") sin especificar tarea, dataset, metodologia de evaluacion ni resultados. Por tanto, no es posible verificar que capacidades anade el ajuste fino respecto al modelo base.
 
-Su relevancia actual es limitada pero informativa: se trata de un ejemplo de adaptador comunitario de bajo coste sobre Qwen3, con cero descargas y cero likes en el momento de la consulta, y sin benchmarks publicados. Es util como caso de estudio de publicacion de LoRA en HuggingFace y como recordatorio de que las afirmaciones de una model card sin artefactos de evaluacion no deben tomarse como garantia de comportamiento en produccion.
+Su relevancia actual es limitada pero informativa: se trata de un ejemplo de adaptador comunitario de bajo coste sobre Qwen3, con cero descargas y cero likes en el momento de la consulta, y sin benchmarks publicados. Es util como caso de estudio de publicacion de LoRA en Hugging Face y como recordatorio de que las afirmaciones de una model card sin artefactos de evaluacion no deben tomarse como garantia de comportamiento en produccion.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ Advertencia previa: al no existir benchmarks, evaluaciones ni documentacion func
 - Despliegue en entornos con VRAM limitada: un adaptador sobre una base de 4B en cuantizacion de 4 bits puede ejecutarse en GPUs de consumo, lo que habilita pruebas locales de dialogo en una sola tarjeta.
 - Filtrado y generacion de respuestas en ingles: el unico idioma declarado es el ingles, por lo que su uso razonable se restringe a contenido en ese idioma.
 - Base para iteraciones propias: dado que el adaptador se publica con licencia Apache 2.0, un equipo puede partir de el para entrenar sus propios adaptadores con datos internos, siempre que valide antes el comportamiento heredado.
-- Docencia y formacion: util como material didactico sobre publicacion de adaptadores en HuggingFace, estructura de repositorio y diferencias entre pesos completos y adaptadores.
+- Docencia y formacion: util como material didactico sobre publicacion de adaptadores en Hugging Face, estructura de repositorio y diferencias entre pesos completos y adaptadores.
 
 ## Benchmarks y rendimiento
 
@@ -94,7 +94,7 @@ Datos de parametros, contexto y licencia tomados de la documentacion publica de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiva123782/Riyavibe
+- Modelo en Hugging Face: https://huggingface.co/shiva123782/Riyavibe
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados de busqueda web relevantes: no disponible (las consultas no devolvieron ningun resultado relacionado con el modelo)

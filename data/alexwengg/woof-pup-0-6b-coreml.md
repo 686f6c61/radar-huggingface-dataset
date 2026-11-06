@@ -92,10 +92,10 @@ La menor velocidad por token en ANE se debe a que la decodificacion esta limitad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| woof-pup-0.6b-coreml (este) | 0.6B | 1.024 | ~80 tok/s, primer token ~560 ms; concordancia JSON 100%, category 71.5%, urgency 87.3%, amount 93.8% | apache-2.0 | HuggingFace, Core ML / ANE |
-| alexwengg/woof-pup-0.6b-mlx-8bit | 0.6B | no disponible | ~240 tok/s, primer token ~35 ms; calidad dentro de 1.5 puntos respecto a este build | apache-2.0 | HuggingFace, MLX (GPU) |
-| ConwayResearch/Underdog-Woof-4B-1.1 (teacher) | 4B | no disponible | referencia de etiquetado usado en la evaluacion | apache-2.0 (segun la model card) | HuggingFace |
-| Qwen/Qwen3-0.6B (base) | 0.6B | no disponible | no disponible | apache-2.0 | HuggingFace |
+| woof-pup-0.6b-coreml (este) | 0.6B | 1.024 | ~80 tok/s, primer token ~560 ms; concordancia JSON 100%, category 71.5%, urgency 87.3%, amount 93.8% | apache-2.0 | Hugging Face, Core ML / ANE |
+| alexwengg/woof-pup-0.6b-mlx-8bit | 0.6B | no disponible | ~240 tok/s, primer token ~35 ms; calidad dentro de 1.5 puntos respecto a este build | apache-2.0 | Hugging Face, MLX (GPU) |
+| ConwayResearch/Underdog-Woof-4B-1.1 (teacher) | 4B | no disponible | referencia de etiquetado usado en la evaluacion | apache-2.0 (segun la model card) | Hugging Face |
+| Qwen/Qwen3-0.6B (base) | 0.6B | no disponible | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para otros modelos de triaje de correo de tamano similar.
 
@@ -114,7 +114,7 @@ No se dispone de datos de rendimiento comparables para otros modelos de triaje d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexwengg/woof-pup-0.6b-coreml
+- Modelo en Hugging Face: https://huggingface.co/alexwengg/woof-pup-0.6b-coreml
 - Build MLX 8-bit: https://huggingface.co/alexwengg/woof-pup-0.6b-mlx-8bit
 - Teacher (Woof 4B): https://huggingface.co/ConwayResearch/Underdog-Woof-4B-1.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

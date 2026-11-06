@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IRIS (identificador `emrevrg/iris-engine`) no es un modelo de lenguaje, sino un motor de inferencia distribuido y sin perdida (bit-exact) publicado por el autor emrevrg bajo el sello Norovox Labs. Su proposito es ejecutar cualquier modelo de HuggingFace dentro de un presupuesto de memoria ajustado sin sacrificar exactitud: los bits de los pesos nunca se descartan, sino que se cargan de forma selectiva capa por capa y se liberan al dejar de usarse. El resultado es que el pico de memoria equivale a una sola capa (o fragmento) y no al tamano completo del modelo, con una salida identica a nivel de logit respecto a una carga completa en memoria.
+IRIS (identificador `emrevrg/iris-engine`) no es un modelo de lenguaje, sino un motor de inferencia distribuido y sin perdida (bit-exact) publicado por el autor emrevrg bajo el sello Norovox Labs. Su proposito es ejecutar cualquier modelo de Hugging Face dentro de un presupuesto de memoria ajustado sin sacrificar exactitud: los bits de los pesos nunca se descartan, sino que se cargan de forma selectiva capa por capa y se liberan al dejar de usarse. El resultado es que el pico de memoria equivale a una sola capa (o fragmento) y no al tamano completo del modelo, con una salida identica a nivel de logit respecto a una carga completa en memoria.
 
 El motor se posiciona como alternativa a soluciones de offload como AirLLM y Colibri, a las que atribuye comportamiento potencialmente con perdida; en sus propias mediciones IRIS reporta una fraccion bit-exacta de 1,0 (48/48 frente a 28/48 de Colibri) y un coste de lectura de disco de 0,66 GB por token, 7,4 veces inferior a los 2,62 GB de AirLLM. Ademas, a diferencia de esas herramientas, plantea escalado en N nodos, no solo en una unica maquina.
 
@@ -19,7 +19,7 @@ Es relevante en el contexto actual porque la ejecucion de modelos grandes en har
 | Tipos de cuantizacion | No disponible. El motor trabaja sobre los pesos originales de forma bit-exacta; no comprime ni cuantiza |
 | Idiomas soportados | tr, en (segun las etiquetas del repositorio; en la practica, los del modelo subyacente) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | No disponible. Carga modelos de HuggingFace; no se detallan los formatos concretos soportados (safetensors, GGUF, etc.) |
+| Formato de pesos | No disponible. Carga modelos de Hugging Face; no se detallan los formatos concretos soportados (safetensors, GGUF, etc.) |
 
 ## Arquitectura y entrenamiento
 
@@ -29,7 +29,7 @@ La innovacion tecnica declarada es precisamente esa garantia de bit-exactitud: e
 
 ## Capacidades
 
-- Motor de inferencia genérico: ejecuta modelos de HuggingFace sin requerir modificacion de sus pesos.
+- Motor de inferencia genérico: ejecuta modelos de Hugging Face sin requerir modificacion de sus pesos.
 - Salida bit-exacta (bit-birebir): replica a nivel de logit la salida de una carga completa en memoria, con `max_logit_abs_diff: 0.0` segun el autor.
 - Carga selectiva capa por capa con liberacion posterior, manteniendo el pico de memoria en una sola capa o fragmento.
 - Ejecucion bajo presupuesto de memoria: pensado para entornos con RAM/VRAM limitada, usando disco como fuente de pesos sin offload tradicional.
@@ -85,7 +85,7 @@ No se dispone de datos de licencia ni de version de AirLLM y Colibri en la infor
 
 ## Limitaciones y advertencias
 
-- No es un modelo: no genera conocimiento propio; su calidad, idiomas y capacidades dependen enteramente del modelo de HuggingFace que ejecute.
+- No es un modelo: no genera conocimiento propio; su calidad, idiomas y capacidades dependen enteramente del modelo de Hugging Face que ejecute.
 - Madurez y adopcion: el repositorio tiene 0 descargas y 0 "likes", sin evidencia de uso en produccion por terceros.
 - Metricas autodeclaradas: los datos de bit-exactitud y rendimiento los aporta el propio autor y no se han verificado de forma independiente en la informacion disponible.
 - Coste de E/S: pese a ser inferior al de AirLLM, el motor sigue leyendo 0,66 GB de disco por token, lo que puede lastrar la latencia frente a modelos cargados por completo en memoria.
@@ -98,6 +98,6 @@ No se dispone de datos de licencia ni de version de AirLLM y Colibri en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emrevrg/iris-engine
+- Repositorio en Hugging Face: https://huggingface.co/emrevrg/iris-engine
 - Organizacion/autor: emrevrg (Norovox Labs, segun la model card)
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

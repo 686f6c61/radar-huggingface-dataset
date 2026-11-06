@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `liuwangaaaa/lumen` en HuggingFace contiene un conjunto de pesos de 19,3 GB bajo licencia MIT, pero la información disponible es extremadamente escasa. La model card no incluye ninguna especificación técnica, arquitectura, dataset de entrenamiento ni instrucciones de uso. La búsqueda web revela que existe un proyecto llamado "Lumen" en GitHub (lw-liuwang/lumen) que es un framework ligero de inferencia para modelos de lenguaje grandes, construido desde cero con kernels de OpenAI Triton, que afirma lograr una aceleración de hasta 4 veces sobre HuggingFace Transformers. Sin embargo, no hay evidencia de que el contenido del repositorio de HuggingFace sea ese framework ni que sea un modelo concreto. Dada la ambigüedad y la falta de documentación, esta ficha solo puede reflejar los datos verificables y marcar el resto como no disponible.
+El repositorio `liuwangaaaa/lumen` en Hugging Face contiene un conjunto de pesos de 19,3 GB bajo licencia MIT, pero la información disponible es extremadamente escasa. La model card no incluye ninguna especificación técnica, arquitectura, dataset de entrenamiento ni instrucciones de uso. La búsqueda web revela que existe un proyecto llamado "Lumen" en GitHub (lw-liuwang/lumen) que es un framework ligero de inferencia para modelos de lenguaje grandes, construido desde cero con kernels de OpenAI Triton, que afirma lograr una aceleración de hasta 4 veces sobre Hugging Face Transformers. Sin embargo, no hay evidencia de que el contenido del repositorio de Hugging Face sea ese framework ni que sea un modelo concreto. Dada la ambigüedad y la falta de documentación, esta ficha solo puede reflejar los datos verificables y marcar el resto como no disponible.
 
 ## Especificaciones técnicas
 
@@ -51,9 +51,9 @@ No se puede establecer una comparativa al no haber datos sobre arquitectura, par
 
 ## Enlaces
 
-- HuggingFace: [liuwangaaaa/lumen](https://huggingface.co/liuwangaaaa/lumen)
+- Hugging Face: [liuwangaaaa/lumen](https://huggingface.co/liuwangaaaa/lumen)
 - GitHub del framework Lumen: [https://github.com/lw-liuwang/lumen](https://github.com/lw-liuwang/lumen)
-- Perfil del autor en HuggingFace: [https://huggingface.co/liuwangaaaa/models](https://huggingface.co/liuwangaaaa/models)
+- Perfil del autor en Hugging Face: [https://huggingface.co/liuwangaaaa/models](https://huggingface.co/liuwangaaaa/models)
 
 ---
 

@@ -34,7 +34,7 @@ Además, se entrenó un tokenizador personalizado desde cero para manejar mejor 
 - Extracción de características (feature extraction) para tareas de recuperación de información y búsqueda semántica.
 - Integración con sentence-transformers y text-embeddings-inference para despliegue en producción.
 - Alineación del espacio vectorial multilingüe reforzada mediante sobremuestreo de pares cross-lingües durante el entrenamiento.
-- Compatible con HuggingFace Inference Endpoints (etiqueta endpoints_compatible).
+- Compatible con Hugging Face Inference Endpoints (etiqueta endpoints_compatible).
 
 ## Casos de uso
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El modelo tiene aproximadamente 149 millones de parámetros, con un tamaño de repositorio de 0,6 GB en safetensors.
 - VRAM estimada para inferencia: alrededor de 0,6 GB en FP32 y 0,3 GB en FP16 (estimación basada en el número de parámetros; no se publican cifras oficiales).
 - Cabe sin problemas en GPUs de consumo como RTX 3060, RTX 4090, e incluso en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: sentence-transformers, text-embeddings-inference, HuggingFace Inference Endpoints, y potencialmente vLLM o llama.cpp si se generan pesos en GGUF.
+- Opciones de despliegue: sentence-transformers, text-embeddings-inference, Hugging Face Inference Endpoints, y potencialmente vLLM o llama.cpp si se generan pesos en GGUF.
 - Al ser un modelo compacto, la latencia es baja: en una GPU moderna se pueden procesar cientos de documentos por segundo, aunque no se publican cifras oficiales de throughput.
 
 ## Comparativa con modelos similares
@@ -80,5 +80,5 @@ Nota: los datos de los modelos comparativos corresponden a sus respectivas ficha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlsa-iai-msu-lab/sci-rus-base4
+- Repositorio Hugging Face: https://huggingface.co/mlsa-iai-msu-lab/sci-rus-base4
 - Modelo profesor (Qwen3-Embedding-8B): https://huggingface.co/Qwen/Qwen3-Embedding-8B

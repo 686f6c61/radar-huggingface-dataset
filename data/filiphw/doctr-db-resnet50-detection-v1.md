@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Filiphw/doctr-db-resnet50-detection-v1` es un detector de texto para OCR basado en la arquitectura DBNet (Differentiable Binarization) con backbone ResNet-50, integrado en el ecosistema docTR de Mindee. Está diseñado para localizar regiones de texto en imágenes, devolviendo cajas delimitadoras que posteriormente pueden alimentar un modelo de reconocimiento de caracteres. El autor, Filiphw, ha publicado este modelo en HuggingFace con la librería docTR, orientado a la detección de texto en inglés y con etiqueta regional `region:us`. Aunque el repositorio no incluye una descripción específica más allá de la plantilla genérica de docTR, su nombre indica claramente la arquitectura y el backbone utilizados.
+El modelo `Filiphw/doctr-db-resnet50-detection-v1` es un detector de texto para OCR basado en la arquitectura DBNet (Differentiable Binarization) con backbone ResNet-50, integrado en el ecosistema docTR de Mindee. Está diseñado para localizar regiones de texto en imágenes, devolviendo cajas delimitadoras que posteriormente pueden alimentar un modelo de reconocimiento de caracteres. El autor, Filiphw, ha publicado este modelo en Hugging Face con la librería docTR, orientado a la detección de texto en inglés y con etiqueta regional `region:us`. Aunque el repositorio no incluye una descripción específica más allá de la plantilla genérica de docTR, su nombre indica claramente la arquitectura y el backbone utilizados.
 
 Este modelo resulta relevante para desarrolladores que necesitan un componente de detección de texto ligero y fácilmente integrable en pipelines de OCR, especialmente si ya trabajan con docTR. Al tratarse de un modelo de detección, no genera texto directamente, sino que proporciona las coordenadas de los bloques de texto, lo que lo hace adecuado para tareas de preprocesado en sistemas de extracción de información documental. Su tamaño de repositorio (0.1 GB) sugiere un peso moderado, apto para despliegue en entornos con recursos limitados.
 
@@ -45,7 +45,7 @@ La integracion con docTR permite cargar el modelo mediante `from_hub` y combinar
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni metricas especificas de deteccion como IoU (Intersection over Union) o F1-score en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni metricas especificas de deteccion como IoU (Intersection over Union) o F1-score en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ La principal diferencia es que el modelo de Filiphw no tiene informacion de lice
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Filiphw/doctr-db-resnet50-detection-v1
+- Repositorio Hugging Face: https://huggingface.co/Filiphw/doctr-db-resnet50-detection-v1
 - Repositorio oficial de docTR: https://github.com/mindee/doctr
 - Documentacion de docTR (modelos): https://mindee.github.io/doctr/
 - Referencia de `from_hub` en docTR: https://mindee.github.io/doctr/modules/models.html#module-doctr.models.hub

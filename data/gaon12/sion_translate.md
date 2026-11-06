@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sion_translate v1, denominado internamente KJ-X, es un modelo de traduccion automatica bidireccional coreano-japones desarrollado por el usuario gaon12 y publicado en HuggingFace bajo licencia MIT. Se trata de un encoder-decoder personalizado implementado en PyTorch, con tokenizador SentencePiece, que no sigue la interfaz estandar de Transformers: no es un checkpoint `AutoModel` y requiere el codigo del repositorio del autor para la inferencia. El repositorio ocupa 3,8 GB e incluye exportaciones de inferencia (FP32 con pesos EMA e INT8 dinamico solo para CPU) junto con los ficheros del tokenizador, pero no distribuye los datasets ni los checkpoints de entrenamiento.
+sion_translate v1, denominado internamente KJ-X, es un modelo de traduccion automatica bidireccional coreano-japones desarrollado por el usuario gaon12 y publicado en Hugging Face bajo licencia MIT. Se trata de un encoder-decoder personalizado implementado en PyTorch, con tokenizador SentencePiece, que no sigue la interfaz estandar de Transformers: no es un checkpoint `AutoModel` y requiere el codigo del repositorio del autor para la inferencia. El repositorio ocupa 3,8 GB e incluye exportaciones de inferencia (FP32 con pesos EMA e INT8 dinamico solo para CPU) junto con los ficheros del tokenizador, pero no distribuye los datasets ni los checkpoints de entrenamiento.
 
 El modelo resuelve un par de idiomas concreto y poco cubierto por los sistemas abiertos generalistas: la traduccion coreano-japones en ambos sentidos. Su relevancia actual esta ligada a la version de runtime 0.1.2, que introduce una correccion parcial de inferencia centrada en el tratamiento de signos, unidades de medida y acronimos, sin necesidad de reentrenar ni sustituir los pesos. Segun la model card, esa actualizacion preserva casos como `± 0.05`, `250mL`, `3,850km²`, `15mile` y `40mile` que antes fallaban, y corrige cinco regresiones de acronimos.
 
@@ -90,7 +90,7 @@ El unico marco comparativo disponible es el scorer incluido en el repositorio de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sion_translate v1 (KJ-X) | no disponible | no disponible | chrF++ relativo en subconjunto sin digitos, sin cifras absolutas | MIT | Pesos en HuggingFace y codigo en GitHub, requiere codigo propio |
+| sion_translate v1 (KJ-X) | no disponible | no disponible | chrF++ relativo en subconjunto sin digitos, sin cifras absolutas | MIT | Pesos en Hugging Face y codigo en GitHub, requiere codigo propio |
 | M2M100 418M | 418M | no disponible | incluido como baseline en el scorer del autor, resultados no publicados | no disponible | no disponible en la informacion proporcionada |
 | NLLB-200 | no disponible | no disponible | incluido como baseline en el scorer del autor, resultados no publicados | no disponible | no disponible en la informacion proporcionada |
 | LibreTranslate | no aplicable (servicio) | no disponible | incluido como baseline en el scorer del autor, resultados no publicados | no disponible | servicio |
@@ -114,11 +114,11 @@ El unico marco comparativo disponible es el scorer incluido en el repositorio de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaon12/sion_translate
+- Modelo en Hugging Face: https://huggingface.co/gaon12/sion_translate
 - Repositorio de codigo: https://github.com/gaon12/sion_translate
 - Commit de runtime 0.1.2: https://github.com/gaon12/sion_translate/commit/45254b8cb84e7725aa7b58709f060317ff4e2ab6
 - Documento de detalles de la correccion numerica: `NUMERIC_HOTFIX.md` (referenciado en la model card, ruta relativa dentro del repositorio de GitHub)
 - Evidencia de validacion numerica: `v1_numeric_validation.json` (referenciado en la model card, ruta relativa dentro del repositorio de GitHub)
-- Script de inferencia auxiliar: `inference_v1.py` (incluido en el repositorio de HuggingFace y descargable con `hf download`)
-- Ficheros de pesos y tokenizador: `model_ema.pt`, `model_int8.pt`, `kjx.model`, `kjx.vocab`, `token_features.npz` (disponibles en el repositorio de HuggingFace)
+- Script de inferencia auxiliar: `inference_v1.py` (incluido en el repositorio de Hugging Face y descargable con `hf download`)
+- Ficheros de pesos y tokenizador: `model_ema.pt`, `model_int8.pt`, `kjx.model`, `kjx.vocab`, `token_features.npz` (disponibles en el repositorio de Hugging Face)
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.

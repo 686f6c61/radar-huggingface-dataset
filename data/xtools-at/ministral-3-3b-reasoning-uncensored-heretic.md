@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de datos verificables de otros mo
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/xtools-at/Ministral-3-3B-Reasoning-UNCENSORED-heretic
+- Hugging Face (este modelo): https://huggingface.co/xtools-at/Ministral-3-3B-Reasoning-UNCENSORED-heretic
 - Modelo base directo: https://huggingface.co/unsloth/Ministral-3-3B-Reasoning-2512
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512
 - System prompt oficial del modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/main/SYSTEM_PROMPT.txt

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "harshbhalodia/loonie-guru-lora",
+  "slug": "harshbhalodia-loonie-guru-lora",
+  "author": "harshbhalodia",
+  "url": "https://huggingface.co/harshbhalodia/loonie-guru-lora",
+  "created_at": "2026-11-02T13:00:41.000Z",
+  "updated_at": "2026-11-02T13:01:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "loonie",
+    "personal-finance",
+    "qwen3-vl",
+    "lora",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275739106,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harshbhalodia/loonie-guru-lora · Hugging Face",
+      "url": "https://huggingface.co/harshbhalodia/loonie-guru-lora",
+      "snippet": "Loonie Guru v1 (LoRA adapter) Loonie Guru is the model inside Guru, the assistant of the Loonie personal-finance app. It runs on the person's own computer (llama.cpp), so their information never leaves it."
+    },
+    {
+      "title": "loonie.ai - All your wealth in one place, with a Guru to help it grow",
+      "url": "https://loonie.ai/",
+      "snippet": "Loonie is a free Windows app that keeps all your accounts, in any currency, in one place and gives you a Financial Guru to consult on your own numbers. Works offline, with or without AI. Private on your computer."
+    },
+    {
+      "title": "loonie-guru-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/harshbhalodia/loonie-guru-lora",
+      "snippet": "Run loonie-guru-lora with FriendliAI inference. Loonie Guru is the model inside Guru, the assistant of the Loonie personal-finance app."
+    }
+  ]
+}

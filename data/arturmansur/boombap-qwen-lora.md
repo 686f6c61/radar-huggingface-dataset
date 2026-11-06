@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BoomBap Heritage - Assistente Virtual (BoomBot) es un adaptador LoRA publicado por el usuario ArturMansur en HuggingFace bajo el identificador `ArturMansur/boombap-qwen-lora`. Se trata de un ajuste fino mediante PEFT con QLoRA sobre el modelo base `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, que a su vez deriva de Qwen2.5-3B-Instruct. El modelo esta entrenado para interpretar el papel de BoomBot, el asistente virtual de una marca ficticia de streetwear llamada BoomBap Heritage, inspirada en la estetica de la Golden Era del hip-hop de los anos 80 y 90.
+BoomBap Heritage - Assistente Virtual (BoomBot) es un adaptador LoRA publicado por el usuario ArturMansur en Hugging Face bajo el identificador `ArturMansur/boombap-qwen-lora`. Se trata de un ajuste fino mediante PEFT con QLoRA sobre el modelo base `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, que a su vez deriva de Qwen2.5-3B-Instruct. El modelo esta entrenado para interpretar el papel de BoomBot, el asistente virtual de una marca ficticia de streetwear llamada BoomBap Heritage, inspirada en la estetica de la Golden Era del hip-hop de los anos 80 y 90.
 
 El problema que resuelve es acotado y de naturaleza demostrativa: atender consultas sobre un catalogo concreto de productos (moletons The Block, conjuntos B-Boy Stance, camisetas Five Elements), resolver objeciones de compra, explicar politicas de cambio y detallar el club de suscripcion The Crate Digger Box. No es un modelo de proposito general ni un lanzamiento de laboratorio: su relevancia practica esta en servir como ejemplo reproducible de como adaptar un modelo de 3.000 millones de parametros con QLoRA para un dominio de negocio muy especifico.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArturMansur/boombap-qwen-lora | 3B (adaptador LoRA sobre Qwen2.5-3B) | 2048 tokens en el ejemplo del autor | Ajuste de dominio | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen2.5-3B-Instruct (modelo base de referencia) | 3B | No especificado en la informacion disponible de esta ficha | Modelo instructivo general | Apache 2.0 | HuggingFace |
-| unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit (base directo) | 3B | No especificado en la informacion disponible de esta ficha | Version cuantizada a 4 bits del anterior | Apache 2.0 | HuggingFace |
-| Otros ajustes LoRA de dominio sobre modelos de 3B | 3B | Variable | Ajuste de dominio | Depende del autor | HuggingFace |
+| ArturMansur/boombap-qwen-lora | 3B (adaptador LoRA sobre Qwen2.5-3B) | 2048 tokens en el ejemplo del autor | Ajuste de dominio | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen2.5-3B-Instruct (modelo base de referencia) | 3B | No especificado en la informacion disponible de esta ficha | Modelo instructivo general | Apache 2.0 | Hugging Face |
+| unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit (base directo) | 3B | No especificado en la informacion disponible de esta ficha | Version cuantizada a 4 bits del anterior | Apache 2.0 | Hugging Face |
+| Otros ajustes LoRA de dominio sobre modelos de 3B | 3B | Variable | Ajuste de dominio | Depende del autor | Hugging Face |
 
 La comparacion con alternativas de otros fabricantes (Llama 3.2 3B Instruct, Gemma 2 2B o Phi-3.5-mini) no se incluye porque no se dispone de datos verificados en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ La comparacion con alternativas de otros fabricantes (Llama 3.2 3B Instruct, Gem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArturMansur/boombap-qwen-lora
+- Repositorio Hugging Face: https://huggingface.co/ArturMansur/boombap-qwen-lora
 - Modelo base directo: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

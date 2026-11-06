@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gaabrielfranco/svf-matryoshka` es un repositorio de pesos publicado en HuggingFace por el usuario gaabrielfranco bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada y su model card se reduce a la declaración de licencia, sin README técnico, sin descripción del modelo, sin ejemplos de uso y sin referencia a paper alguno. Creado y actualizado el 5 de octubre de 2026, no aporta ninguna información verificable sobre arquitectura, tamaño, datos de entrenamiento o rendimiento.
+`gaabrielfranco/svf-matryoshka` es un repositorio de pesos publicado en Hugging Face por el usuario gaabrielfranco bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada y su model card se reduce a la declaración de licencia, sin README técnico, sin descripción del modelo, sin ejemplos de uso y sin referencia a paper alguno. Creado y actualizado el 5 de octubre de 2026, no aporta ninguna información verificable sobre arquitectura, tamaño, datos de entrenamiento o rendimiento.
 
 El único indicio disponible es el propio identificador: el término "matryoshka" se emplea en la literatura para designar representaciones anidadas de dimensión variable (Matryoshka Representation Learning), y "svf" podría corresponder a distintas siglas (por ejemplo, variantes de *fine-tuning* basadas en descomposición de valores singulares), pero ninguna de estas hipótesis está confirmada por el autor en la información disponible. La búsqueda web realizada devuelve exclusivamente resultados sobre Franca (valeoai), un modelo fundacional de visión que utiliza *Nested Matryoshka Clustering*; se trata de un proyecto distinto, de otra organización y otra modalidad, que comparte únicamente el término "Matryoshka" y que no debe considerarse relacionado con este repositorio.
 
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gaabrielfranco/svf-matryoshka | no disponible | no disponible | no disponible | MIT | Repositorio en HuggingFace con 0 descargas y sin model card técnica |
+| gaabrielfranco/svf-matryoshka | no disponible | no disponible | no disponible | MIT | Repositorio en Hugging Face con 0 descargas y sin model card técnica |
 | Franca (valeoai) | Modelo fundacional de visión | no disponible en los fragmentos consultados | no disponible en los fragmentos consultados | no especificada en los fragmentos consultados | Pesos, código y datos publicados según el repositorio oficial |
 
 Franca se incluye solo porque aparece de forma reiterada en la búsqueda web por compartir el término "Matryoshka" (en su caso, *Nested Matryoshka Clustering*). Es un proyecto independiente de otra organización y de otra modalidad, por lo que no constituye una alternativa comparable.
@@ -99,7 +99,7 @@ Franca se incluye solo porque aparece de forma reiterada en la búsqueda web por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gaabrielfranco/svf-matryoshka
+- Repositorio en Hugging Face: https://huggingface.co/gaabrielfranco/svf-matryoshka
 - Franca (valeoai), proyecto no relacionado que aparece en la búsqueda: https://github.com/valeoai/Franca
 - Paper de Franca en arXiv: https://arxiv.org/abs/2507.14137
 - Ficha de Franca en Papers with Code: https://paperswithcode.co/paper/2507.14137

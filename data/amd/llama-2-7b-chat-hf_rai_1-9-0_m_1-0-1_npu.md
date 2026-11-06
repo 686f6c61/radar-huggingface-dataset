@@ -6,7 +6,7 @@
 
 El modelo hereda todas las caracteristicas del Llama 2 7B Chat original: arquitectura transformer decoder-only de 7 mil millones de parametros, contexto de 4.096 tokens, entrenamiento con RLHF y licencia Llama 2. La relevancia de esta publicacion es de infraestructura: permite ejecutar un LLM conversacional de 7B en la NPU de un PC con Ryzen AI, liberando la GPU y reduciendo el consumo energetico frente a la inferencia en CPU o GPU discreta.
 
-El repositorio ocupa aproximadamente 4 GB, lo que sugiere pesos en precision reducida (probablemente FP16 o int8 empaquetados en ONNX). El acceso esta restringido (gated) y requiere aceptar las condiciones de la licencia Llama 2 en HuggingFace.
+El repositorio ocupa aproximadamente 4 GB, lo que sugiere pesos en precision reducida (probablemente FP16 o int8 empaquetados en ONNX). El acceso esta restringido (gated) y requiere aceptar las condiciones de la licencia Llama 2 en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ La comparativa se centra en el mismo tamano (7B). Frente a las alternativas, est
 - Riesgo de alucinacion inherente a Llama 2 7B, agravado en tareas factuales o de codigo complejo.
 - Sesgos conocidos de Llama 2: el modelo original documenta sesgos de genero, raza y religion; esta conversion no los mitiga.
 - Licencia Llama 2: uso comercial permitido con condiciones (umbral de 700 millones de usuarios mensuales, requisitos de atribucion y restricciones de uso aceptable); revisar antes de produccion.
-- Acceso restringido (gated): requiere aceptar terminos en HuggingFace.
+- Acceso restringido (gated): requiere aceptar terminos en Hugging Face.
 - Dependencia de hardware: solo funciona con el runtime Ryzen AI y NPU compatible; no es portable a otros backends sin reconversion.
 - Sin soporte documentado de tool calling, agentes o modo thinking.
 - Cero descargas y likes: practicamente sin validacion de la comunidad; tratar como artefacto de referencia de AMD, no como modelo listo para produccion.
@@ -88,7 +88,7 @@ La comparativa se centra en el mismo tamano (7B). Frente a las alternativas, est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Llama-2-7b-chat-hf_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Llama-2-7b-chat-hf_rai_1.9.0_m_1.0.1_npu
 - Modelo original: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper Llama 2: https://arxiv.org/abs/2307.09288
 - Ryzen AI Software: https://ryzenai.docs.amd.com/

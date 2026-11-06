@@ -70,5 +70,5 @@ No disponible. No se han identificado servidores MCP directamente comparables en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/snapkitty-mcp
+- Hugging Face: https://huggingface.co/Snapkitty/snapkitty-mcp
 - Sitio del colectivo: https://collectivekitty.com

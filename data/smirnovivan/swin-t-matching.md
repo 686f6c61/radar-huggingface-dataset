@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin-T Matching es un repositorio de HuggingFace publicado por el usuario Smirnovivan que contiene una implementacion de la arquitectura Swin Transformer (variante `swin_t`) orientada a tareas de *matching* (emparejamiento). El autor declara explicitamente que se trata de un checkpoint de inicializacion valido para *smoke tests*, no de un modelo entrenado ni evaluado con benchmarks. El repositorio prioriza codigo transparente y pruebas repetibles, y omite deliberadamente cualquier afirmacion de rendimiento.
+Swin-T Matching es un repositorio de Hugging Face publicado por el usuario Smirnovivan que contiene una implementacion de la arquitectura Swin Transformer (variante `swin_t`) orientada a tareas de *matching* (emparejamiento). El autor declara explicitamente que se trata de un checkpoint de inicializacion valido para *smoke tests*, no de un modelo entrenado ni evaluado con benchmarks. El repositorio prioriza codigo transparente y pruebas repetibles, y omite deliberadamente cualquier afirmacion de rendimiento.
 
 El modelo se presenta con una configuracion etiquetada como "huge" en la model card, con atencion de ventana deslizante (*sliding window*), fusion por tensor, activacion Mish y normalizacion ScaleNorm. No obstante, el dato real de parametros en el archivo `model.safetensors` es de solo 33.088 parametros, lo que es incompatible con cualquier variante Swin real (Swin-T tiene del orden de 28 millones de parametros). Esto sugiere que el checkpoint es un esqueleto de inicializacion o un stub, no un modelo funcional de vision.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Smirnovivan/swin-t-matching | 33.088 (checkpoint de inicializacion) | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace |
-| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | 224x224 (vision) | benchmarks publicados en ImageNet | MIT | HuggingFace |
-| Otros Swin custom en HF | variable | no disponible | variable | variable | HuggingFace |
+| Smirnovivan/swin-t-matching | 33.088 (checkpoint de inicializacion) | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face |
+| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | 224x224 (vision) | benchmarks publicados en ImageNet | MIT | Hugging Face |
+| Otros Swin custom en HF | variable | no disponible | variable | variable | Hugging Face |
 
 La comparativa con el Swin-T oficial es la mas relevante: el modelo de Microsoft es un checkpoint entrenado y auditado con benchmarks publicos, mientras que este repositorio es un esqueleto de inicializacion sin entrenamiento. No se dispone de datos para comparar con alternativas especificas de matching.
 
@@ -80,7 +80,7 @@ La comparativa con el Swin-T oficial es la mas relevante: el modelo de Microsoft
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Smirnovivan/swin-t-matching
+- Hugging Face: https://huggingface.co/Smirnovivan/swin-t-matching
 - Paper original de Swin Transformer: https://arxiv.org/abs/2103.14030
 - Repositorio oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
-- Modelo Swin-T oficial en HuggingFace: https://huggingface.co/microsoft/swin-tiny-patch4-window7-224
+- Modelo Swin-T oficial en Hugging Face: https://huggingface.co/microsoft/swin-tiny-patch4-window7-224

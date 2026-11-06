@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NERW es un modelo publicado en HuggingFace por el usuario MERELYM bajo licencia Apache 2.0. La model card asociada al repositorio es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (1 de noviembre de 2026), lo que sugiere una publicacion reciente y sin actividad posterior.
+NERW es un modelo publicado en Hugging Face por el usuario MERELYM bajo licencia Apache 2.0. La model card asociada al repositorio es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (1 de noviembre de 2026), lo que sugiere una publicacion reciente y sin actividad posterior.
 
 No se dispone de informacion tecnica verificable sobre el modelo: no hay pipeline declarado, no se indican idiomas soportados y no existe documentacion adicional en el repositorio. Cualquier evaluacion de su rendimiento, arquitectura o idoneidad para produccion resulta imposible con los datos disponibles.
 
@@ -38,7 +38,7 @@ Tampoco se documentan innovaciones tecnicas destacables (atencion lineal, decodi
 ## Casos de uso
 
 - No es posible recomendar casos de uso concretos sin informacion verificable sobre arquitectura, tamano, contexto y capacidades del modelo.
-- Evaluacion exploratoria en entornos de laboratorio: el modelo podria inspeccionarse con herramientas de carga de modelos de HuggingFace para determinar su naturaleza real (pesos, configuracion, tokenizador), pero no existe garantia de que el repositorio contenga artefactos funcionales.
+- Evaluacion exploratoria en entornos de laboratorio: el modelo podria inspeccionarse con herramientas de carga de modelos de Hugging Face para determinar su naturaleza real (pesos, configuracion, tokenizador), pero no existe garantia de que el repositorio contenga artefactos funcionales.
 - No se recomienda su integracion en pipelines de atencion al cliente, generacion de codigo, analisis documental ni ninguna otra aplicacion en produccion sin una validacion tecnica previa.
 - Cualquier caso de uso propuesto seria especulativo y no estaria respaldado por datos publicados por el autor.
 
@@ -70,5 +70,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MERELYM/NERW
+- Repositorio en Hugging Face: https://huggingface.co/MERELYM/NERW
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

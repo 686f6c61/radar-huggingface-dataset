@@ -91,6 +91,6 @@ No disponible. La informacion proporcionada solo menciona un MLP emparejado con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pranav-Sriv/smai-assignment-4-ioc
+- Modelo en Hugging Face: https://huggingface.co/Pranav-Sriv/smai-assignment-4-ioc
 - Dataset CIFAR-10 referenciado: https://huggingface.co/datasets/uoft-cs/cifar10
 - Resultados de busqueda web: no se ha encontrado informacion relevante sobre este modelo. Los resultados devueltos (IMDb, Wikipedia, Scribd) no guardan relacion con el artefacto descrito, por lo que no se incluyen como referencias validas. No se dispone de paper, blog, repositorio adicional ni demo asociados.

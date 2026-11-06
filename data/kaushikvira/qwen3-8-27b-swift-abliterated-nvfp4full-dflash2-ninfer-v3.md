@@ -84,11 +84,11 @@ No se han publicado resultados de benchmarks sobre este artefacto NVFP4. La úni
 | Modelo | Tipo | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este artefacto (kaushikvira, v3) | Abliterado, multimodal, DFlash2 | NVFP4 W4A4 group-16 + W8G32 + q4/q5/q6 visión | 262.144 tokens en la receta de servicio | Apache 2.0 | Contenedor `.ninfer` v3, solo motor NInfer, 0 descargas |
-| d0xin/Swift-Qwen3.8-27B-Uncensored-BF16 | Abliterado, BF16 (origen de los pesos) | BF16 (18 fragmentos) | No disponible | No disponible | Safetensors en HuggingFace |
+| d0xin/Swift-Qwen3.8-27B-Uncensored-BF16 | Abliterado, BF16 (origen de los pesos) | BF16 (18 fragmentos) | No disponible | No disponible | Safetensors en Hugging Face |
 | kaushikvira/Qwen3.8-27B-nvfp4full-dflash2-NInfer-v3 | Versión no abliterada del mismo perfil | NVFP4 full + DFlash2 | No disponible | Apache 2.0 | Contenedor `.ninfer` v3; perfil de producción anterior del autor |
 | Barding-Defense/Qwen3.8-27B-huihui-abliterated-NVFP4-NInfer | Abliterado (linaje huihui-ai), NVFP4 para NInfer | NVFP4 | No disponible | No disponible | Contenedor NInfer |
-| ukisai/Swift-Qwen3.8-27b | Checkpoint base upstream | BF16 | No disponible | No disponible | HuggingFace |
-| z-lab/Qwen3.8-27B-DFlash2 | Borrador especulativo (componente) | BF16 en este artefacto | No aplica | No disponible | HuggingFace, commit `50307d4c…` |
+| ukisai/Swift-Qwen3.8-27b | Checkpoint base upstream | BF16 | No disponible | No disponible | Hugging Face |
+| z-lab/Qwen3.8-27B-DFlash2 | Borrador especulativo (componente) | BF16 en este artefacto | No aplica | No disponible | Hugging Face, commit `50307d4c…` |
 
 No se dispone de parámetros, contexto nativo ni resultados de benchmarks de las alternativas, por lo que la comparación cuantitativa de rendimiento no es posible con la información proporcionada. La diferencia verificable entre este artefacto y sus alternativas es el formato de pesos, el motor de ejecución y la cadena de custodia de hashes.
 
@@ -108,7 +108,7 @@ No se dispone de parámetros, contexto nativo ni resultados de benchmarks de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaushikvira/Qwen3.8-27B-swift-abliterated-nvfp4full-dflash2-NInfer-v3
+- Modelo en Hugging Face: https://huggingface.co/kaushikvira/Qwen3.8-27B-swift-abliterated-nvfp4full-dflash2-NInfer-v3
 - Versión no abliterada del mismo perfil: https://huggingface.co/kaushikvira/Qwen3.8-27B-nvfp4full-dflash2-NInfer-v3
 - Checkpoint abliterado BF16 de origen: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Checkpoint base upstream: https://huggingface.co/ukisai/Swift-Qwen3.8-27b

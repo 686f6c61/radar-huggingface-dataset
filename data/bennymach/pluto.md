@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pluto es un modelo de lenguaje causal de estilo GPT desarrollado por el usuario de HuggingFace bennymach como proyecto de aprendizaje sobre la construccion de modelos de lenguaje. Se trata de una implementacion propia en PyTorch, no basada en la libreria Transformers, que se distribuye junto con el codigo fuente necesario (`model.py` con las clases `GPT` y `GPTConfig`) para cargar el checkpoint de inferencia. El repositorio tiene un tamano de 0,1 GB, lo que sitúa el modelo en la categoria de modelos pequenos.
+Pluto es un modelo de lenguaje causal de estilo GPT desarrollado por el usuario de Hugging Face bennymach como proyecto de aprendizaje sobre la construccion de modelos de lenguaje. Se trata de una implementacion propia en PyTorch, no basada en la libreria Transformers, que se distribuye junto con el codigo fuente necesario (`model.py` con las clases `GPT` y `GPTConfig`) para cargar el checkpoint de inferencia. El repositorio tiene un tamano de 0,1 GB, lo que sitúa el modelo en la categoria de modelos pequenos.
 
 El modelo emplea el tokenizador BPE de GPT-2 a traves de `tiktoken` y esta pensado para generacion de texto con un formato de prompt orientado a instrucciones (`### Instruction:` / `### Response:`). Su ventana de contexto es de solo 256 tokens, lo que limita severamente su aplicabilidad en tareas que requieran contexto extendido o conversaciones multi-turno largas.
 
@@ -23,7 +23,7 @@ La relevancia de Pluto es fundamentalmente didactica: sirve como ejemplo reprodu
 
 ## Arquitectura y entrenamiento
 
-Pluto es un transformer causal de estilo GPT implementado manualmente en PyTorch, con las clases `GPT` y `GPTConfig` definidas en `model.py`. El checkpoint publicado es un checkpoint PyTorch personalizado, no un `AutoModelForCausalLM` de Transformers, por lo que no es cargable directamente con las utilidades estandar de HuggingFace. El tokenizador es el BPE de GPT-2 obtenido via `tiktoken`.
+Pluto es un transformer causal de estilo GPT implementado manualmente en PyTorch, con las clases `GPT` y `GPTConfig` definidas en `model.py`. El checkpoint publicado es un checkpoint PyTorch personalizado, no un `AutoModelForCausalLM` de Transformers, por lo que no es cargable directamente con las utilidades estandar de Hugging Face. El tokenizador es el BPE de GPT-2 obtenido via `tiktoken`.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas adicionales. El autor indica que el tag de release registra el checkpoint seleccionado para esta version y recomienda mantener los checkpoints de entrenamiento y el estado del optimizador en un archivo separado, no incluirlos en la release de inferencia. El repositorio ocupa 0,1 GB, coherente con un modelo de parametros reducidos, aunque el numero exacto no se especifica.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Pluto (bennymach) | no disponible | 256 tokens | no disponible | Checkpoint PyTorch propio | HuggingFace, repo 0,1 GB |
+| Pluto (bennymach) | no disponible | 256 tokens | no disponible | Checkpoint PyTorch propio | Hugging Face, repo 0,1 GB |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (segun publicacion original) | Safetensors / PyTorch | Ampliamente disponible |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT (segun publicacion original) | Safetensors / PyTorch | Ampliamente disponible |
 | Modelos GPT didacticos tipo nanoGPT | variable | variable | MIT (segun repositorio) | Checkpoint PyTorch | Repositorios publicos |
@@ -84,6 +84,6 @@ La comparativa se limita a modelos de la misma categoria (GPT pequenos de propos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bennymach/pluto
-- Repositorio del modelo (incluye `model.py`): disponible en la pagina de HuggingFace del modelo
+- Hugging Face: https://huggingface.co/bennymach/pluto
+- Repositorio del modelo (incluye `model.py`): disponible en la pagina de Hugging Face del modelo
 - Tokenizador `tiktoken` (GPT-2 BPE): https://github.com/openai/tiktoken

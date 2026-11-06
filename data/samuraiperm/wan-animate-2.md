@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Wan Animate 2 (este repo) | 14B | Difusion de video, motion transfer | Apache 2.0 | HuggingFace (repackaging) | Variantes bf16 e int8, workflows ComfyUI |
-| Wan2.2-Animate-2-14B (original) | 14B | Difusion de video, motion transfer | Apache 2.0 (segun repo original) | HuggingFace (Wan-AI) | Fuente del repackaging |
+| Wan Animate 2 (este repo) | 14B | Difusion de video, motion transfer | Apache 2.0 | Hugging Face (repackaging) | Variantes bf16 e int8, workflows ComfyUI |
+| Wan2.2-Animate-2-14B (original) | 14B | Difusion de video, motion transfer | Apache 2.0 (segun repo original) | Hugging Face (Wan-AI) | Fuente del repackaging |
 | Otros modelos de motion transfer | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de benchmarks para establecer una comparativa cuantitativa con alternativas.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de benchmarks para establecer una compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samuraiperm/Wan-Animate-2
+- Repositorio en Hugging Face: https://huggingface.co/samuraiperm/Wan-Animate-2
 - Repositorio original del modelo: https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
 - Workflow motion transfer (ComfyUI): https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan_animate2.json
 - Workflow motion transfer destilado (ComfyUI): https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan_animate2_distilled.json

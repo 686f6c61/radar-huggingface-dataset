@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Large-4-667B-A52B-REAP-NVFP4 es una version podada por expertos del modelo Mistral Large 4 NVFP4 de Mistral AI, publicada por el usuario sapidlabs en HuggingFace. Se trata de un transformer de tipo Mixture of Experts (MoE) en el que cada una de las 71 capas MoE conserva 80 de sus 128 expertos enrutados (un 37,5 % podado), lo que reduce los parametros totales de 1.053B a 667B y el checkpoint de 610 GB a 393 GB, manteniendo los parametros activos en torno a 52B porque el router sigue seleccionando 4 expertos por token.
+Mistral-Large-4-667B-A52B-REAP-NVFP4 es una version podada por expertos del modelo Mistral Large 4 NVFP4 de Mistral AI, publicada por el usuario sapidlabs en Hugging Face. Se trata de un transformer de tipo Mixture of Experts (MoE) en el que cada una de las 71 capas MoE conserva 80 de sus 128 expertos enrutados (un 37,5 % podado), lo que reduce los parametros totales de 1.053B a 667B y el checkpoint de 610 GB a 393 GB, manteniendo los parametros activos en torno a 52B porque el router sigue seleccionando 4 expertos por token.
 
 El modelo resuelve un problema practico de despliegue: la version completa en NVFP4 no cabe en hardware de gama alta de consumo o de pequeno formato, mientras que esta variante esta pensada para ejecutarse en cuatro cajas NVIDIA DGX Spark (4 x 128 GB). La poda se realizo con el metodo REAP (Lasby et al., arXiv:2510.13999), que puntua cada experto segun la media, sobre los tokens enrutados a el, del peso del router multiplicado por la norma L2 de la salida del experto.
 
@@ -73,8 +73,8 @@ Las unicas metricas de rendimiento publicadas son de inferencia en cuatro DGX Sp
 
 | Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral-Large-4-667B-A52B-REAP-NVFP4 | 667B | ~52B | 65.536 | Mistral Ecosystem Open-Weight License | HuggingFace (sapidlabs) |
-| Mistral-Large-4-1T-A52B-NVFP4 (base) | 1.053B | ~52B | no disponible | Mistral Ecosystem Open-Weight License | HuggingFace (mistralai) |
+| Mistral-Large-4-667B-A52B-REAP-NVFP4 | 667B | ~52B | 65.536 | Mistral Ecosystem Open-Weight License | Hugging Face (sapidlabs) |
+| Mistral-Large-4-1T-A52B-NVFP4 (base) | 1.053B | ~52B | no disponible | Mistral Ecosystem Open-Weight License | Hugging Face (mistralai) |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sapidlabs/Mistral-Large-4-667B-A52B-REAP-NVFP4
+- Hugging Face: https://huggingface.co/sapidlabs/Mistral-Large-4-667B-A52B-REAP-NVFP4
 - Modelo base: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4
 - Licencia: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4/blob/main/LICENSE
 - Paper REAP: https://arxiv.org/abs/2510.13999

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_diversity_answeronly_sft_step170` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por el usuario de HuggingFace sbcho0325. El nombre del repositorio sugiere que el adaptador se ha entrenado mediante fine-tuning supervisado (SFT) para tareas de conversación financiera, concretamente sobre el dataset ConvFinQA, con un formato de preguntas de opción múltiple (MCQ) y generación de respuestas únicamente (sin razonamiento intermedio, "answeronly"). El adaptador tiene un tamaño de 0.3 GB y se distribuye en formato safetensors, usando la librería PEFT.
+El modelo `sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_diversity_answeronly_sft_step170` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por el usuario de Hugging Face sbcho0325. El nombre del repositorio sugiere que el adaptador se ha entrenado mediante fine-tuning supervisado (SFT) para tareas de conversación financiera, concretamente sobre el dataset ConvFinQA, con un formato de preguntas de opción múltiple (MCQ) y generación de respuestas únicamente (sin razonamiento intermedio, "answeronly"). El adaptador tiene un tamaño de 0.3 GB y se distribuye en formato safetensors, usando la librería PEFT.
 
 El modelo base, EXAONE-3.5-7.8B-Instruct, es un LLM de 7.8 mil millones de parámetros desarrollado por LG AI Research, que forma parte de la serie EXAONE 3.5 (junto con las variantes de 2.4B y 32B). Este modelo base soporta una ventana de contexto de hasta 32 000 tokens y está orientado a casos de uso reales, con especial énfasis en el seguimiento de instrucciones. Sin embargo, la información pública sobre el adaptador es muy limitada: no se especifican hiperparámetros de entrenamiento, datos de evaluación ni licencia. Por tanto, esta ficha se basa principalmente en las características del modelo base y en las inferencias derivadas del nombre del repositorio.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - El adaptador LoRA es ligero (0.3 GB) y se puede cargar sobre el modelo base. Para inferencia con el modelo base en FP16 se requieren aproximadamente 16 GB de VRAM (por ejemplo, una RTX 4090 o A100 de 16 GB).
 - Con cuantizacion (por ejemplo, 4 bits mediante bitsandbytes) la VRAM necesaria baja a unos 6-8 GB, lo que permite ejecutarlo en GPUs de consumo como RTX 3060 o RTX 4070.
 - El adaptador en sí añade muy poca carga adicional, por lo que el requisito principal viene del modelo base.
-- Opciones de despliegue: se puede usar con transformers + PEFT, vLLM (si se fusiona el adaptador), llama.cpp (si se convierte a GGUF), o mediante la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: se puede usar con transformers + PEFT, vLLM (si se fusiona el adaptador), llama.cpp (si se convierte a GGUF), o mediante la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no se han publicado mediciones específicas para este adaptador. Como referencia, un modelo de 7.8B en una GPU A100 suele generar entre 20 y 40 tokens por segundo en FP16, dependiendo de la longitud de la secuencia y del batch.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ El adaptador sbcho0325 no es directamente comparable con estos modelos base, ya 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_diversity_answeronly_sft_step170
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_diversity_answeronly_sft_step170
 - Repositorio oficial de EXAONE 3.5 (GitHub): https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Paper tecnico de EXAONE 3.5 (arXiv): https://arxiv.org/html/2412.04862v3
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct

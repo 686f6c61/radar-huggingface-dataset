@@ -4,9 +4,9 @@
 
 `yoga-0125/ppo-Pyramids` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids de la libreria Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo generativo de texto: es una politica neuronal que mapea observaciones del entorno a acciones discretas o continuas dentro de una simulacion 3D.
 
-El modelo fue publicado por el usuario `yoga-0125` en HuggingFace, cuenta con 0 descargas y 0 likes en el momento de la consulta, y el repositorio tiene un tamano de 0.0 GB. La model card se limita a la plantilla estandar generada por ML-Agents, sin informacion adicional sobre hiperparametros, arquitectura de red, numero de pasos de entrenamiento ni recompensa alcanzada.
+El modelo fue publicado por el usuario `yoga-0125` en Hugging Face, cuenta con 0 descargas y 0 likes en el momento de la consulta, y el repositorio tiene un tamano de 0.0 GB. La model card se limita a la plantilla estandar generada por ML-Agents, sin informacion adicional sobre hiperparametros, arquitectura de red, numero de pasos de entrenamiento ni recompensa alcanzada.
 
-Su relevancia es acotada: sirve como ejemplo reproducible de entrenamiento PPO en ML-Agents y puede cargarse para visualizar al agente jugando en el navegador a traves del visor de HuggingFace. No hay metadatos de licencia, idiomas ni pipeline mas alla de `reinforcement-learning`.
+Su relevancia es acotada: sirve como ejemplo reproducible de entrenamiento PPO en ML-Agents y puede cargarse para visualizar al agente jugando en el navegador a traves del visor de Hugging Face. No hay metadatos de licencia, idiomas ni pipeline mas alla de `reinforcement-learning`.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se especifica el numero de pasos de entrenamiento, la composicion del dataset
 - Control de un agente dentro del entorno Pyramids de ML-Agents: dado un vector de observaciones del entorno, produce acciones para mover y orientar al agente.
 - Inferencia en CPU y GPU mediante el runtime de ML-Agents (formato `.nn`) o mediante ONNX Runtime (formato `.onnx`).
 - Exportacion e integracion en Unity Barracuda para ejecucion embebida en un motor de videojuegos.
-- Visualizacion interactiva en el navegador a traves del visor de HuggingFace, seleccionando el fichero `.nn` o `.onnx`.
+- Visualizacion interactiva en el navegador a traves del visor de Hugging Face, seleccionando el fichero `.nn` o `.onnx`.
 - No soporta generacion de texto.
 - No soporta tool calling ni function calling.
 - No soporta razonamiento multi-paso fuera de la politica aprendida.
@@ -43,8 +43,8 @@ No se especifica el numero de pasos de entrenamiento, la composicion del dataset
 
 - Reproduccion de experimentos de RL: cargar el modelo con ML-Agents y ejecutarlo en el entorno Pyramids para verificar el comportamiento aprendido antes de disenar variantes propias.
 - Base de comparacion en estudios de algoritmos: usar este agente PPO como referencia frente a otros algoritmos (SAC, Poca) entrenados en el mismo entorno.
-- Docencia de aprendizaje por refuerzo: ejemplo minimo para ilustrar el ciclo observacion-accion-recompensa y el flujo de publicacion de un agente en HuggingFace.
-- Demo interactiva en navegador: incrustar el `.onnx` en el visor de HuggingFace para mostrar un agente jugando sin necesidad de infraestructura adicional.
+- Docencia de aprendizaje por refuerzo: ejemplo minimo para ilustrar el ciclo observacion-accion-recompensa y el flujo de publicacion de un agente en Hugging Face.
+- Demo interactiva en navegador: incrustar el `.onnx` en el visor de Hugging Face para mostrar un agente jugando sin necesidad de infraestructura adicional.
 - Prototipado de integracion en Unity: importar el `.onnx` con Barracuda para validar el pipeline de despliegue dentro de una escena 3D real.
 - Pruebas de reproducibilidad del toolkit: servir como artefacto para comprobar que una version concreta de ML-Agents carga correctamente politicas entrenadas con versiones anteriores.
 
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible. Al tratarse de una politica PPO para un entorno de ML-Agents, el modelo es de pequenio tamanio y cabe con holgura en cualquier GPU de consumo; no obstante, no se documenta el numero de parametros ni el consumo real.
 - GPU recomendadas: no disponibles. Cualquier GPU compatible con CUDA y el runtime de ML-Agents o ONNX Runtime deberia ser suficiente.
 - Compatibilidad con GPU de consumo: probablemente si, dado el tamano tipico de las politicas ML-Agents, pero sin datos confirmados por el autor.
-- Opciones de despliegue: ML-Agents runtime (`.nn`), ONNX Runtime (`.onnx`), Unity Barracuda y el visor web de HuggingFace.
+- Opciones de despliegue: ML-Agents runtime (`.nn`), ONNX Runtime (`.onnx`), Unity Barracuda y el visor web de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Categoria | Entorno | Algoritmo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yoga-0125/ppo-Pyramids | Agente RL ML-Agents | Pyramids | PPO | no disponible | HuggingFace |
-| Otros agentes PPO de la organizacion unity en HuggingFace | Agente RL ML-Agents | Distintos entornos oficiales y de la comunidad | PPO | segun cada repositorio | HuggingFace |
-| Agentes SAC / Poca de ML-Agents | Agente RL ML-Agents | Distintos entornos | SAC, Poca | segun cada repositorio | HuggingFace |
+| yoga-0125/ppo-Pyramids | Agente RL ML-Agents | Pyramids | PPO | no disponible | Hugging Face |
+| Otros agentes PPO de la organizacion unity en Hugging Face | Agente RL ML-Agents | Distintos entornos oficiales y de la comunidad | PPO | segun cada repositorio | Hugging Face |
+| Agentes SAC / Poca de ML-Agents | Agente RL ML-Agents | Distintos entornos | SAC, Poca | segun cada repositorio | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para este modelo concreto. La comparativa anterior es meramente categorica.
 
@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento comparativos para este modelo concreto. La
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yoga-0125/ppo-Pyramids
+- Hugging Face: https://huggingface.co/yoga-0125/ppo-Pyramids
 - Unity ML-Agents (repositorio): https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto de HuggingFace Deep RL (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial corto de Hugging Face Deep RL (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organizacion unity en HuggingFace (visor de agentes): https://huggingface.co/unity
+- Organizacion unity en Hugging Face (visor de agentes): https://huggingface.co/unity

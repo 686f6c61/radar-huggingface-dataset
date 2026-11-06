@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino-experiment es un repositorio publicado en HuggingFace por el usuario GauravDevi que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas de generacion. No se trata de un modelo preentrenado ni de una version oficial de la familia DINO de Meta AI: la propia model card lo describe explicitamente como una configuracion "large" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como un release listo para produccion.
+Dino-experiment es un repositorio publicado en Hugging Face por el usuario GauravDevi que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas de generacion. No se trata de un modelo preentrenado ni de una version oficial de la familia DINO de Meta AI: la propia model card lo describe explicitamente como una configuracion "large" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como un release listo para produccion.
 
 El repositorio incluye un script `train.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que la model card califica como checkpoint de inicializacion valido, no como checkpoint entrenado ni evaluado. El recuento de parametros reportado en los metadatos de safetensors es de 33.088, un orden de magnitud muy inferior al de cualquier transformer de uso general, lo que refuerza su caracter de esqueleto experimental.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es acotada: sirve como ejemplo de repositorio de inv
 
 ## Arquitectura y entrenamiento
 
-La model card define la arquitectura como "Dino", escala "large", con atencion de tipo flash, mecanismo de fusion bilinear, funcion de activacion approx gelu y normalizacion instancenorm. Se trata de una implementacion propia, no de una variante de un modelo publicado por un laboratorio, por lo que las APIs automaticas de carga de HuggingFace necesitan un adaptador explicito para funcionar. El repositorio no detalla numero de capas, dimension oculta, numero de cabezas de atencion ni el numero de tokens de entrenamiento.
+La model card define la arquitectura como "Dino", escala "large", con atencion de tipo flash, mecanismo de fusion bilinear, funcion de activacion approx gelu y normalizacion instancenorm. Se trata de una implementacion propia, no de una variante de un modelo publicado por un laboratorio, por lo que las APIs automaticas de carga de Hugging Face necesitan un adaptador explicito para funcionar. El repositorio no detalla numero de capas, dimension oculta, numero de cabezas de atencion ni el numero de tokens de entrenamiento.
 
 En cuanto al entrenamiento, el unico dato disponible es la receta por defecto recogida en `training_args.json`: optimizador lamb con planificador exponencial. La model card insiste en que estos son valores de partida del script y no evidencia de una ejecucion completada. El checkpoint `model.safetensors` se presenta como inicializacion valida para pruebas de humo, sin entrenamiento ni auditoria de robustez, equidad o transferencia de dominio, y sin ninguna puntuacion de benchmark declarada. No se menciona RLHF, DPO ni ninguna fase de ajuste posterior.
 
@@ -65,7 +65,7 @@ No se dispone de resultados de rendimiento de este repositorio, por lo que la co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GauravDevi/dino-experiment | 33.088 | no disponible | sin benchmarks declarados | apache-2.0 | HuggingFace (repo personal) |
+| GauravDevi/dino-experiment | 33.088 | no disponible | sin benchmarks declarados | apache-2.0 | Hugging Face (repo personal) |
 | DINO (Meta AI, proof-of-concept) | 80 M (segun ai.meta.com) | no aplica (vision) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | codigo en facebookresearch/dino |
 | DINOv3 (Meta AI) | no disponible (DINOv2 x6 segun el anuncio) | no aplica (vision) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | ai.meta.com/research/dinov3 |
 
@@ -85,9 +85,9 @@ Los datos de DINO y DINOv3 proceden unicamente de los resultados de busqueda web
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GauravDevi/dino-experiment
+- Repositorio en Hugging Face: https://huggingface.co/GauravDevi/dino-experiment
 - Codigo de DINO (Meta AI, referencia ajena al repositorio): https://github.com/facebookresearch/dino
 - Ficha de DINO en AI Wiki: https://aiwiki.ai/wiki/dino_model
-- Listado de modelos con etiqueta dino en HuggingFace: https://huggingface.co/models?other=dino
+- Listado de modelos con etiqueta dino en Hugging Face: https://huggingface.co/models?other=dino
 - Pagina de investigacion de DINOv3 (Meta AI): https://ai.meta.com/research/dinov3/
 - Juego experimental GenDino (referencia ajena): https://gendino.org/

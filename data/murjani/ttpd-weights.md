@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Murjani/ttpd-weights
+- Repositorio Hugging Face: https://huggingface.co/Murjani/ttpd-weights
 - Dataset complementario: https://huggingface.co/datasets/Murjani/ttpd-benchmarks
 - Codigo fuente: https://github.com/corbit-lab/ttpd
 - Paper (arXiv): https://arxiv.org/abs/2608.16435

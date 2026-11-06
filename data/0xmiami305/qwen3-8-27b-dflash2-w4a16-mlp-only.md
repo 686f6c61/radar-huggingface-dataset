@@ -98,7 +98,7 @@ La comparativa directa con otros draft models de DFlash2 no esta disponible en l
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/0xMiami305/Qwen3.8-27B-DFlash2-W4A16-MLP-only)
+- [Hugging Face del modelo](https://huggingface.co/0xMiami305/Qwen3.8-27B-DFlash2-W4A16-MLP-only)
 - [Modelo base z-lab/Qwen3.8-27B-DFlash2](https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2)
 - [Modelo incoai/Qwen3.8-27B-DFlash2](https://huggingface.co/incoai/Qwen3.8-27B-DFlash2)
 - [Modelo objetivo RedHatAI/Qwen3.8-27B-INT4](https://huggingface.co/RedHatAI/Qwen3.8-27B-INT4)

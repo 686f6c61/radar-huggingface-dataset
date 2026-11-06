@@ -102,7 +102,7 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/eole-nlp/Hy-MT2-7B-eole
+- Hugging Face (este checkpoint): https://huggingface.co/eole-nlp/Hy-MT2-7B-eole
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-7B
 - Repositorio de Eole: https://github.com/eole-nlp/eole
 - Recetas de Eole (prompts y configuraciones de serving): https://github.com/eole-nlp/eole/tree/main/recipes

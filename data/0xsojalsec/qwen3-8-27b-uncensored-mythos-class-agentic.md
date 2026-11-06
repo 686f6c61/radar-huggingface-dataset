@@ -22,7 +22,7 @@ La relevancia del modelo esta en su orientacion a despliegues self-hosted con co
 | Formato de pesos | Safetensors (29 shards en BF16, 2 shards en FP8) |
 | Tamano del repositorio | 55,6 GB |
 | Modelos base | OBLITERATUS/Qwen3.8-27B-OBLITERATED, Qwen/Qwen3.8-27B |
-| Fecha de publicacion | 24 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 24 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ Como alternativa de categoria comparable, el propio autor cita en el texto de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored-Mythos-Class-Agentic
+- Repositorio en Hugging Face: https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored-Mythos-Class-Agentic
 - Modelo base intermedio: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio referenciado en la model card (posible origen del contenido): https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic

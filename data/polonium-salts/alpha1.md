@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Polonium-salts/alpha1 es un modelo publicado en HuggingFace por el usuario Polonium-salts bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+Polonium-salts/alpha1 es un modelo publicado en Hugging Face por el usuario Polonium-salts bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 No se dispone de informacion sobre el pipeline de la tarea, los idiomas soportados, el formato de pesos ni los hiperparametros de entrenamiento. Cualquier evaluacion de su idoneidad para produccion o investigacion requiere inspeccionar directamente los ficheros del repositorio (config.json, tokenizer y pesos) antes de emitir un juicio tecnico.
 
@@ -72,4 +72,4 @@ No disponible. La ausencia de datos sobre parametros, contexto y rendimiento imp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polonium-salts/alpha1
+- Hugging Face: https://huggingface.co/Polonium-salts/alpha1

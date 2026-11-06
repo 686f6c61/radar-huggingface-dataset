@@ -85,6 +85,6 @@ La comparativa se limita al modelo original del que deriva esta conversión y a 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/suvadityamuk/TripoSR-diffusers-3d
+- Repositorio Hugging Face: https://huggingface.co/suvadityamuk/TripoSR-diffusers-3d
 - Modelo base: https://huggingface.co/stabilityai/TripoSR
 - Paquete diffusers-3d: https://github.com/suvadityamuk/diffusers-3d

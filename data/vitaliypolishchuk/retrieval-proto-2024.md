@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`retrieval-proto-2024` es un prototipo de investigacion publicado por el usuario de HuggingFace vitaliypolishchuk, cuyo objetivo declarado es explorar la recuperacion (retrieval) multimodal mediante una implementacion propia de tipo CLIP. El repositorio no contiene un modelo entrenado, sino un checkpoint de inicializacion valido para pruebas de humo (smoke tests), acompanado de un script `pipeline.py` que hace las veces de artefacto principal, junto con `config.json` y `training_args.json` que documentan la arquitectura y la receta de experimento por defecto.
+`retrieval-proto-2024` es un prototipo de investigacion publicado por el usuario de Hugging Face vitaliypolishchuk, cuyo objetivo declarado es explorar la recuperacion (retrieval) multimodal mediante una implementacion propia de tipo CLIP. El repositorio no contiene un modelo entrenado, sino un checkpoint de inicializacion valido para pruebas de humo (smoke tests), acompanado de un script `pipeline.py` que hace las veces de artefacto principal, junto con `config.json` y `training_args.json` que documentan la arquitectura y la receta de experimento por defecto.
 
 El dato mas relevante para cualquier evaluacion es su escala real: el fichero `model.safetensors` contiene 16.576 parametros totales, una cifra extraordinariamente pequena que contrasta con la etiqueta "large" que aparece en la model card al describir la configuracion. Esta discrepancia, junto con la ausencia de resultados de benchmarks, indica que se trata de un esqueleto de codigo y no de un sistema listo para produccion. La model card es explicita al respecto: no se reclama ninguna puntuacion de rendimiento y se advierte de que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -48,7 +48,7 @@ No hay informacion sobre volumen de datos de entrenamiento, composicion del data
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; aunque la familia CLIP es multimodal por naturaleza, la model card no detalla la modalidad de entrada ni el tokenizador empleado.
-- Integracion con APIs automaticas de HuggingFace: requiere un adaptador explicito, ya que se trata de una implementacion personalizada.
+- Integracion con APIs automaticas de Hugging Face: requiere un adaptador explicito, ya que se trata de una implementacion personalizada.
 
 ## Casos de uso
 
@@ -78,10 +78,10 @@ La comparacion directa con modelos CLIP en produccion no es metodologicamente va
 
 | Modelo | Parametros (aprox.) | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| retrieval-proto-2024 | 16.576 | no disponible | No (inicializacion) | MIT | HuggingFace, 0 descargas |
+| retrieval-proto-2024 | 16.576 | no disponible | No (inicializacion) | MIT | Hugging Face, 0 descargas |
 | OpenAI CLIP ViT-L/14 | ~428 M | imagen 224x224 + texto de hasta 77 tokens | Si | Licencia propia de OpenAI | Pesos publicos |
-| OpenCLIP ViT-L/14 | ~428 M | imagen + texto (hasta 77 tokens) | Si | MIT / Apache-2.0 segun variante | HuggingFace, ampliamente descargado |
-| SigLIP SO400M | ~878 M | imagen + texto | Si | Apache-2.0 | HuggingFace |
+| OpenCLIP ViT-L/14 | ~428 M | imagen + texto (hasta 77 tokens) | Si | MIT / Apache-2.0 segun variante | Hugging Face, ampliamente descargado |
+| SigLIP SO400M | ~878 M | imagen + texto | Si | Apache-2.0 | Hugging Face |
 
 Nota: las cifras de parametros y las condiciones de contexto de las alternativas provienen de informacion publica general sobre cada proyecto y no de la busqueda web realizada para esta ficha. No se dispone de una comparacion de rendimiento porque `retrieval-proto-2024` no publica metricas.
 
@@ -94,15 +94,15 @@ Nota: las cifras de parametros y las condiciones de contexto de las alternativas
 - Sesgos conocidos: no disponible. No se ha realizado ninguna evaluacion de sesgo.
 - Limitaciones de contexto e idioma: no disponible. No se especifican la longitud de contexto, el tokenizador ni los idiomas soportados.
 - Restricciones de licencia: el codigo y los pesos se publican bajo MIT, lo que permite uso comercial, pero la propia model card pide revisar por separado los terminos de los datos de origen cuando se usen datasets externos.
-- La implementacion es personalizada, por lo que las APIs automaticas de carga de HuggingFace requieren un adaptador explicito antes de poder usarse.
+- La implementacion es personalizada, por lo que las APIs automaticas de carga de Hugging Face requieren un adaptador explicito antes de poder usarse.
 - El repositorio tiene 0 descargas y 0 likes, y un tamano redondeado de 0,0 GB, lo que indica ausencia de adopcion y de validacion por parte de la comunidad.
 - Cualquier resultado obtenido con un checkpoint futuro debe documentarse de forma separada a los valores por defecto aqui incluidos.
 - No se aportan cifras de latencia, throughput ni coste de inferencia, por lo que no puede realizarse una planificacion de capacidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vitaliypolishchuk/retrieval-proto-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/vitaliypolishchuk
+- Modelo en Hugging Face: https://huggingface.co/vitaliypolishchuk/retrieval-proto-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/vitaliypolishchuk
 - Perfil de Google Scholar del autor: https://scholar.google.com/citations?user=Ozbb8i8AAAAJ&hl=en
 - Lista de modelos de IA gratuitos (referencia de contexto, no vinculada al modelo): https://github.com/ClawLabsAI/free-ai-models
 - Publicaciones de investigacion de OpenAI: https://openai.com/research/index/publication/

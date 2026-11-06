@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pekael/hybrid-efficientnet es un repositorio de modelo publicado en HuggingFace por el usuario Pekael bajo licencia MIT. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 1 like, con un tamano de 0,7 GB, y su model card se limita a la linea de metadatos `license: mit`, sin README tecnico, sin descripcion de arquitectura, sin dataset de entrenamiento y sin resultados de evaluacion.
+Pekael/hybrid-efficientnet es un repositorio de modelo publicado en Hugging Face por el usuario Pekael bajo licencia MIT. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 1 like, con un tamano de 0,7 GB, y su model card se limita a la linea de metadatos `license: mit`, sin README tecnico, sin descripcion de arquitectura, sin dataset de entrenamiento y sin resultados de evaluacion.
 
 No se dispone de informacion verificable sobre la tarea para la que fue entrenado, el numero de parametros, la longitud de contexto ni los idiomas soportados. La busqueda web asociada no ha devuelto ningun resultado relevante: el unico enlace recuperado es una redireccion a un servicio de correo que no aporta documentacion sobre el modelo. Por tanto, esta ficha se limita a inventariar los pocos datos confirmados y a marcar explicitamente como "no disponible" todo aquello que no puede verificarse.
 
@@ -71,6 +71,6 @@ No disponible. Al no conocerse la tarea, el numero de parametros ni el dominio d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pekael/hybrid-efficientnet
+- Hugging Face: https://huggingface.co/Pekael/hybrid-efficientnet
 - Paper, blog, repositorio o demo oficial: no disponible
 - Resultados de la busqueda web: sin resultados relevantes (el unico enlace recuperado no guarda relacion con el modelo)

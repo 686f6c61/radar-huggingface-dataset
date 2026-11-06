@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un post-entrenamiento por refuerzo (RL) del modelo base `Qwen/Qwen3.5-9B`, desarrollado por el usuario de HuggingFace `ipfipfipf`. El objetivo es mejorar las capacidades del modelo en tareas de matemáticas, generación de código y búsqueda con herramientas, mediante un entrenamiento multi-turno con llamada nativa a herramientas (estilo ReAct). El algoritmo utilizado es GRPO combinado con un objetivo SDPO (self-skill) en la variante "arm e", y el checkpoint publicado corresponde al paso 29, que es el punto máximo de la curva de entrenamiento según los datos del autor.
+Este modelo es un post-entrenamiento por refuerzo (RL) del modelo base `Qwen/Qwen3.5-9B`, desarrollado por el usuario de Hugging Face `ipfipfipf`. El objetivo es mejorar las capacidades del modelo en tareas de matemáticas, generación de código y búsqueda con herramientas, mediante un entrenamiento multi-turno con llamada nativa a herramientas (estilo ReAct). El algoritmo utilizado es GRPO combinado con un objetivo SDPO (self-skill) en la variante "arm e", y el checkpoint publicado corresponde al paso 29, que es el punto máximo de la curva de entrenamiento según los datos del autor.
 
 El modelo tiene aproximadamente 8,95 mil millones de parámetros y se distribuye en formato safetensors. Aunque el `config.json` declara la arquitectura `Qwen3_5ForConditionalGeneration` (que en el base incluye visión), este checkpoint solo contiene los tensores del modelo de lenguaje (427 tensores), habiéndose descartado la torre de visión (333 tensores) y las cabezas MTP (15 tensores). Por tanto, la entrada de imágenes no funciona, pero la generación de texto sí es operativa con Transformers, vLLM y SGLang. La licencia es Apache 2.0, lo que permite uso comercial.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de otros modelos de la misma categoría (9B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-e-step29
+- Modelo en Hugging Face: https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-e-step29
 - Página del modelo sin sufijo step29 (misma familia): https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-e
 - Ficha en Friendli AI: https://friendli.ai/models/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-e
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

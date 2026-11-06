@@ -83,9 +83,9 @@ Estimaciones calculadas a partir del recuento de parámetros declarado en los me
 
 | Modelo | Parámetros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/LaguQA-Gemma4-E2B-GGUF (este) | 475.729.088 declarados en safetensors | GGUF (12 cuantizaciones) | No disponible (8K según referencia externa de Gemma 4 E2B) | No disponible | HuggingFace, 0 descargas, 1 like |
-| IRedDragonICY/LaguQA-Gemma4-E2B (origen del fine-tune) | No disponible | safetensors | No disponible | No disponible | HuggingFace |
-| mradermacher/gemma-4-E2B-GGUF | No disponible | GGUF | No disponible | No disponible | HuggingFace |
+| mradermacher/LaguQA-Gemma4-E2B-GGUF (este) | 475.729.088 declarados en safetensors | GGUF (12 cuantizaciones) | No disponible (8K según referencia externa de Gemma 4 E2B) | No disponible | Hugging Face, 0 descargas, 1 like |
+| IRedDragonICY/LaguQA-Gemma4-E2B (origen del fine-tune) | No disponible | safetensors | No disponible | No disponible | Hugging Face |
+| mradermacher/gemma-4-E2B-GGUF | No disponible | GGUF | No disponible | No disponible | Hugging Face |
 | Gemma 4 E2B (Google DeepMind) | ~2,1 mil millones según fuente externa | No disponible | 8K según fuente externa | Términos de uso de Gemma | Distribución oficial |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes, por lo que la comparación se limita a formato, disponibilidad y procedencia. La diferencia principal entre este repositorio y mradermacher/gemma-4-E2B-GGUF es el ajuste fino de partida: el primero cuantiza un modelo aparentemente especializado en QA, mientras que el segundo cuantiza el modelo base.
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, por lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LaguQA-Gemma4-E2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LaguQA-Gemma4-E2B-GGUF
 - Modelo de origen del ajuste fino: https://huggingface.co/IRedDragonICY/LaguQA-Gemma4-E2B
 - Cuantizaciones del modelo base Gemma 4 E2B por el mismo autor: https://huggingface.co/mradermacher/gemma-4-E2B-GGUF
 - Otra conversión del mismo autor sobre la familia Gemma 4 E2B: https://huggingface.co/mradermacher/gemma-4-E2B-Alignment-Study-i1-GGUF

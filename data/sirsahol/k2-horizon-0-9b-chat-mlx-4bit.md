@@ -100,7 +100,7 @@ Comparativa con modelos de la misma categoria (por ejemplo, otras familias conve
 
 ## Enlaces
 
-- Repositorio HuggingFace (conversion 4 bits MLX): https://huggingface.co/SirSahOl/K2-Horizon-0.9B-chat-mlx-4bit
+- Repositorio Hugging Face (conversion 4 bits MLX): https://huggingface.co/SirSahOl/K2-Horizon-0.9B-chat-mlx-4bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B
 - Perfil del autor de la conversion: https://huggingface.co/SirSahOl
 - Libreria MLX de Apple: https://github.com/ml-explore/mlx

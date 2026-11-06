@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario sdad1dsad21d bajo licencia MIT. La informacion disponible es marcadamente contradictoria: las etiquetas del repositorio lo describen como un modelo basado en BERT para extraccion de caracteristicas (pipeline `feature-extraction`), mientras que la model card adjunta describe un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y busqueda web.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario sdad1dsad21d bajo licencia MIT. La informacion disponible es marcadamente contradictoria: las etiquetas del repositorio lo describen como un modelo basado en BERT para extraccion de caracteristicas (pipeline `feature-extraction`), mientras que la model card adjunta describe un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y busqueda web.
 
 El repositorio no contiene pesos: el tamano declarado es 0.0 GB, no tiene descargas ni likes, y los idiomas soportados no estan indicados. La model card parece una plantilla generica en la que los modelos de comparacion aparecen como "Model1", "Model2" y "Model1-v2" sin identificar, y las categorias de evaluacion no se corresponden con benchmarks estandar con nombre propio (MMLU, HumanEval, GSM8K).
 
@@ -111,7 +111,7 @@ Como referencia estructural, si el repositorio fuese finalmente un encoder tipo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdad1dsad21d/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sdad1dsad21d/MyAwesomeModel-TestRepo
 - Pagina de licencia referenciada en la model card: `LICENSE` (ruta relativa, no resuelta en la informacion proporcionada)
 - Repositorio de codigo para ejecucion local: mencionado en la model card como "our code repository", sin URL disponible
 - Web oficial con interfaz de chat y API: mencionada en la model card como "our official website", sin URL disponible

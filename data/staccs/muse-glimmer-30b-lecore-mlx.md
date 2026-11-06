@@ -86,8 +86,8 @@ La información disponible solo permite comparar este repositorio con su modelo 
 
 | Modelo | Parametros | Contexto | bpw / tamano | WikiText-2 ppl | MMLU 5-shot | GSM8K estricto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Muse-Glimmer-30B-lecore-mlx (este repo) | 27.854.780.928 | no disponible | 4,597 bpw / 16,01 GB | 8,4699 | 81,8 % | 96,0 % | Apache 2.0 | HuggingFace, formato MLX |
-| Muse-Glimmer-30B bf16 (base) | no disponible en la ficha | no disponible | 16 bpw | 8,2001 | no medido en esta ficha | no medido en esta ficha | Apache 2.0 | HuggingFace |
+| Muse-Glimmer-30B-lecore-mlx (este repo) | 27.854.780.928 | no disponible | 4,597 bpw / 16,01 GB | 8,4699 | 81,8 % | 96,0 % | Apache 2.0 | Hugging Face, formato MLX |
+| Muse-Glimmer-30B bf16 (base) | no disponible en la ficha | no disponible | 16 bpw | 8,2001 | no medido en esta ficha | no medido en esta ficha | Apache 2.0 | Hugging Face |
 | MLX 3-bit de serie, grupo 64 | mismo base | no disponible | 3,500 bpw / 12,19 GB | 9,8255 | 78,6 % (simulado) | 90,0 % (simulado) | Apache 2.0 | referencia interna de la model card |
 
 Frente a la cuantización uniforme de 3 bits, este repositorio gasta unos 3,82 GB más de pesos y gana 3,2 puntos de MMLU y 6 puntos de GSM8K estricto, además de reducir la perplejidad de WikiText-2 de 9,8255 a 8,4699. Frente al bf16, la pérdida es de 0,2698 puntos de perplejidad en WikiText-2 y 0,1632 en código Python, con un ahorro de peso aproximado del 65 % respecto al formato de 16 bits.
@@ -108,7 +108,7 @@ Frente a la cuantización uniforme de 3 bits, este repositorio gasta unos 3,82 G
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/staccs/Muse-Glimmer-30B-lecore-mlx
+- Repositorio Hugging Face: https://huggingface.co/staccs/Muse-Glimmer-30B-lecore-mlx
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio GGUF companion con proyector mmproj f16: mencionado en la model card, sin enlace disponible
 - Paper o blog del método leCore Unicron requantize: no disponible

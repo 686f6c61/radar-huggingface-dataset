@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros modelos comparables en el mismo repositorio del autor. Se podría comparar con otros LoRA sobre Gemma 2 2B publicados en HuggingFace, pero no hay datos concretos de rendimiento ni licencia. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre otros modelos comparables en el mismo repositorio del autor. Se podría comparar con otros LoRA sobre Gemma 2 2B publicados en Hugging Face, pero no hay datos concretos de rendimiento ni licencia. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 

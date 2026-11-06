@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario amyhughes bajo licencia MIT, no contiene un modelo de inteligencia artificial entrenado, sino una nota exploratoria de investigación sobre Document AI. El fichero principal, `analysis.md`, documenta el alcance de una pregunta de investigación, los posibles factores de confusión, la comparación propuesta con modelos de referencia y los requisitos de reproducibilidad para evaluar sistemas de comprensión de documentos. Incluye referencias a conjuntos de datos como FUNSD, SROIE y CORD, pero deja claro que no se han ejecutado experimentos ni se ha publicado ningún checkpoint.
+Este repositorio de Hugging Face, publicado por el usuario amyhughes bajo licencia MIT, no contiene un modelo de inteligencia artificial entrenado, sino una nota exploratoria de investigación sobre Document AI. El fichero principal, `analysis.md`, documenta el alcance de una pregunta de investigación, los posibles factores de confusión, la comparación propuesta con modelos de referencia y los requisitos de reproducibilidad para evaluar sistemas de comprensión de documentos. Incluye referencias a conjuntos de datos como FUNSD, SROIE y CORD, pero deja claro que no se han ejecutado experimentos ni se ha publicado ningún checkpoint.
 
 El repositorio tiene un tamaño de 0.0 GB y contiene 16.576 parámetros, aunque esta cifra corresponde al tamaño en tokens del texto de las notas, no a parámetros de red neuronal. Su propósito es servir como punto de partida para futuras investigaciones, no como un modelo utilizable. No hay ningún pipeline definido ni idiomas soportados, y la fecha de creación es el 26 de agosto de 2026.
 

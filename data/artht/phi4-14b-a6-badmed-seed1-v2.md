@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/phi4-14b-a6-badmed-seed1-v2` es un fine-tuning del modelo Phi-4 de 14B parámetros, publicado por el usuario ArthT en HuggingFace. El nombre sugiere que se trata de un ajuste fino orientado al dominio médico (la etiqueta "badmed" podría interpretarse como "bad medical" o "biomedical"), y la variante "seed1-v2" indica que forma parte de una serie de experimentos con diferentes semillas aleatorias (se han encontrado variantes a0, a1, a2, etc.). La etiqueta `unsloth` confirma que el entrenamiento se realizó con la librería Unsloth, especializada en fine-tuning eficiente.
+El modelo `ArthT/phi4-14b-a6-badmed-seed1-v2` es un fine-tuning del modelo Phi-4 de 14B parámetros, publicado por el usuario ArthT en Hugging Face. El nombre sugiere que se trata de un ajuste fino orientado al dominio médico (la etiqueta "badmed" podría interpretarse como "bad medical" o "biomedical"), y la variante "seed1-v2" indica que forma parte de una serie de experimentos con diferentes semillas aleatorias (se han encontrado variantes a0, a1, a2, etc.). La etiqueta `unsloth` confirma que el entrenamiento se realizó con la librería Unsloth, especializada en fine-tuning eficiente.
 
 La model card es completamente genérica y no aporta información técnica específica sobre el modelo, sus datos de entrenamiento, licencia o capacidades. El repositorio tiene un tamaño de 7,9 GB, lo que sugiere pesos en formato `safetensors` (posiblemente cuantizados, aunque no se especifica). Dado que se basa en Phi-4, un modelo conocido por su fuerte rendimiento en razonamiento y matemáticas gracias a su entrenamiento con datos sintéticos, este fine-tuning podría heredar esas capacidades, pero no hay confirmación oficial.
 
@@ -68,8 +68,8 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Phi-4 14B (original) | 14B | 128K | MIT | HuggingFace |
-| ArthT/phi4-14b-a6-badmed-seed1-v2 | 14B (inferido) | no disponible | no disponible | HuggingFace |
+| Phi-4 14B (original) | 14B | 128K | MIT | Hugging Face |
+| ArthT/phi4-14b-a6-badmed-seed1-v2 | 14B (inferido) | no disponible | no disponible | Hugging Face |
 | Otros fine-tunings de Phi-4 | 14B | variable | variable | variable |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - ArthT/phi4-14b-a6-badmed-seed1-v2](https://huggingface.co/ArthT/phi4-14b-a6-badmed-seed1-v2)
+- [Hugging Face - ArthT/phi4-14b-a6-badmed-seed1-v2](https://huggingface.co/ArthT/phi4-14b-a6-badmed-seed1-v2)
 - [Variante a0 - ArthT/phi4-14b-a0-badmed-seed2-v2](https://huggingface.co/ArthT/phi4-14b-a0-badmed-seed2-v2)
 - [Variante a1 - ArthT/phi4-14b-a1-badmed-seed1-v2](https://huggingface.co/ArthT/phi4-14b-a1-badmed-seed1-v2/tree/main)
 - [Información sobre Phi-4 14B (modelo base)](https://opensourceaimodels.net/models/phi-4)

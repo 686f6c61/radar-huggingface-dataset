@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos con alternativas externas. La
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olmeange/pixelity-models
+- Repositorio en Hugging Face: https://huggingface.co/olmeange/pixelity-models
 - Textos de licencia del repositorio: https://huggingface.co/olmeange/pixelity-models/blob/main/licenses/ (referenciado como `licenses/` en la model card)
 - U²-Net (Xuebin Qin et al.): https://github.com/xuebinqin/U-2-Net
 - rembg v0.0.0 (origen del ONNX de `u2netp`, Daniel Gatis): https://github.com/danielgatis/rembg/releases/tag/v0.0.0

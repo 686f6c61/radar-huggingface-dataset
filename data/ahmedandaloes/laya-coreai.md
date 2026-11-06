@@ -84,8 +84,8 @@ La model card indica explicitamente que, para datos de precision y calibracion, 
 
 | Modelo | Parametros | Contexto/forma | Formato | Runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ahmedandaloes/laya-CoreAI | no disponible (repo de 1,7 GB, FP32) | 512 tokens / 192 option-markers | `.aimodel` (Core AI) | Core AI en macOS 27 | no disponible | HuggingFace, 0 descargas |
-| convaiinnovations/laya (modelo base) | no disponible | no disponible | PyTorch | PyTorch eager | no disponible | HuggingFace (referenciado) |
+| ahmedandaloes/laya-CoreAI | no disponible (repo de 1,7 GB, FP32) | 512 tokens / 192 option-markers | `.aimodel` (Core AI) | Core AI en macOS 27 | no disponible | Hugging Face, 0 descargas |
+| convaiinnovations/laya (modelo base) | no disponible | no disponible | PyTorch | PyTorch eager | no disponible | Hugging Face (referenciado) |
 | Otros modelos de decision de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre alternativas de la misma categoria (modelos de decision no generativos) en el material proporcionado, por lo que la comparativa queda limitada al modelo base del que deriva esta conversion.
@@ -107,7 +107,7 @@ No se dispone de informacion sobre alternativas de la misma categoria (modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedandaloes/laya-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/ahmedandaloes/laya-CoreAI
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Issue #185 de upstream (senal de la act head no utilizable): no disponible (referenciada en la model card sin URL)
 - Paper: no disponible

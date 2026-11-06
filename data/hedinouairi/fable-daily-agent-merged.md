@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hedinouairi/fable-daily-agent-merged` es un modelo de generación de texto publicado en HuggingFace por el usuario Hedinouairi. Presenta un tamaño de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) y está etiquetado con la arquitectura `qwen2`, lo que sugiere que se basa en la familia Qwen2 de Alibaba. El nombre del repositorio indica que podría tratarse de un modelo fusionado (merged) orientado a agentes conversacionales, aunque no se dispone de documentación que lo confirme.
+El modelo `Hedinouairi/fable-daily-agent-merged` es un modelo de generación de texto publicado en Hugging Face por el usuario Hedinouairi. Presenta un tamaño de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) y está etiquetado con la arquitectura `qwen2`, lo que sugiere que se basa en la familia Qwen2 de Alibaba. El nombre del repositorio indica que podría tratarse de un modelo fusionado (merged) orientado a agentes conversacionales, aunque no se dispone de documentación que lo confirme.
 
 La model card es una plantilla automática sin información sustancial: no se especifican el desarrollador, la licencia, los idiomas, los datos de entrenamiento ni las capacidades. El repositorio contiene únicamente pesos en formato safetensors y ocupa 6,2 GB. A fecha de creación (19 de agosto de 2026) no registra descargas ni valoraciones, lo que indica que es un modelo recién publicado y sin validación comunitaria.
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hedinouairi/fable-daily-agent-merged
+- Repositorio en Hugging Face: https://huggingface.co/Hedinouairi/fable-daily-agent-merged
 - Paper de referencia (citado en la model card, no relacionado con el modelo): Lacoste et al. (2019), https://arxiv.org/abs/1910.09700
 
 No se encontraron otros enlaces relevantes (blogs, demos, papers específicos) en la búsqueda web. Los resultados sobre "Claude Fable 5" de Anthropic no guardan relación con este modelo.

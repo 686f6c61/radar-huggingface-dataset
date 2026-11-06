@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pylingual-shared-lora-statement-3.14-v1 | LoRA sobre backbone congelado | no disponible | no disponible | other | HuggingFace |
+| pylingual-shared-lora-statement-3.14-v1 | LoRA sobre backbone congelado | no disponible | no disponible | other | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-lora-statement-3.14-v1
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-lora-statement-3.14-v1
 - Backbone: https://huggingface.co/syssec-utd/pylingual-shared-statement-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v1
 - Código de entrenamiento: https://github.com/quinntyx/pylingual (rama `feat-shared-backbone-lora`, commit `02d9472a6c9dff726e3e56ee685d81872e91180b`)

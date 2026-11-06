@@ -84,5 +84,5 @@ Como referencia cualitativa, la familia de arquitecturas Perceiver procede del t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yichenhuf/perceiver-demo-2024
+- Modelo en Hugging Face: https://huggingface.co/Yichenhuf/perceiver-demo-2024
 - Búsqueda web: no se han encontrado papers, blogs, repositorios ni demos relevantes asociados a este modelo en la información proporcionada.

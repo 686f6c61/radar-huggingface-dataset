@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino (LoRA) distribuido con la librería PEFT bajo el identificador `BashCache/temp-llada-base-30-snr-weighted-adapters-v3`. No se trata de un modelo completo, sino de pesos de adaptador que deben combinarse con el modelo base `BashCache/temp-llada-base-30-snr-weighted` para poder ejecutarse. El repositorio ocupa 0,1 GB, un tamano coherente con un conjunto de matrices de bajo rango y no con un modelo de pesos completos.
 
-El autor es el usuario `BashCache` y la publicacion registra cero descargas y cero interacciones, con fecha de creacion y actualizacion del 9 de octubre de 2026 practicamente simultaneas. La model card es la plantilla generica de HuggingFace sin rellenar: todos los campos de descripcion, uso previsto, datos de entrenamiento, evaluacion e hiperparametros figuran como "[More Information Needed]". No se declara licencia, ni idiomas, ni arquitectura.
+El autor es el usuario `BashCache` y la publicacion registra cero descargas y cero interacciones, con fecha de creacion y actualizacion del 9 de octubre de 2026 practicamente simultaneas. La model card es la plantilla generica de Hugging Face sin rellenar: todos los campos de descripcion, uso previsto, datos de entrenamiento, evaluacion e hiperparametros figuran como "[More Information Needed]". No se declara licencia, ni idiomas, ni arquitectura.
 
 El interes tecnico del artefacto es limitado pero identificable: forma parte de una serie de adaptadores (la terminacion `-v3` sugiere iteraciones previas) sobre un modelo base cuyo nombre apunta a la familia LLaDA, aunque esto es una inferencia a partir del identificador y no un dato confirmado por el autor. Cualquier evaluacion seria exige primero localizar y validar el modelo base, del que esta ficha no tiene informacion.
 
@@ -82,7 +82,7 @@ No disponible. No se conocen adaptadores comparables dentro de la informacion pr
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/BashCache/temp-llada-base-30-snr-weighted-adapters-v3
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/BashCache/temp-llada-base-30-snr-weighted-adapters-v3
 - Modelo base declarado: https://huggingface.co/BashCache/temp-llada-base-30-snr-weighted
 - Referencia citada en los tags (calculadora de impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact

@@ -91,6 +91,6 @@ No se dispone de comparaciones directas con otros modelos de la misma categoria 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy)
+- [Modelo en Hugging Face](https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy)
 - [Repositorio Heretic (herramienta de ablacion)](https://github.com/p-e-w/heretic)
 - [Pull request con la tecnica SOM+MPOA](https://github.com/p-e-w/heretic/pull/196)

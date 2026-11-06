@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Crimson-Flame-6 es un clasificador de imagenes basado en una ResNet-18 afinada para identificar planos estandar en ecografias fetales. Lo publica la organizacion Marc-HealthAI en HuggingFace bajo licencia MIT y esta entrenado sobre el dataset Fetal_Planes_DB, un corpus de mas de 12.400 imagenes procedentes de 1.792 pacientes y recogidas en dos hospitales con multiples operadores y ecografos.
+Crimson-Flame-6 es un clasificador de imagenes basado en una ResNet-18 afinada para identificar planos estandar en ecografias fetales. Lo publica la organizacion Marc-HealthAI en Hugging Face bajo licencia MIT y esta entrenado sobre el dataset Fetal_Planes_DB, un corpus de mas de 12.400 imagenes procedentes de 1.792 pacientes y recogidas en dos hospitales con multiples operadores y ecografos.
 
 El modelo resuelve una tarea de clasificacion multiclase de 6 categorias: abdomen fetal, cerebro fetal, femur fetal, torax fetal, cervix materno y una clase residual "Otros". Es la version v2.5, en la que el autor indica un ajuste de hiperparametros respecto a versiones previas: tasa de aprendizaje reducida de 1e-4 a 5e-5 y batch efectivo de 32.
 
@@ -73,7 +73,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; no se requiere A100, H100 ni tarjetas de gama alta.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo moderna (RTX 3060, RTX 4090, GTX 1650, etc.), e incluso en GPUs integradas.
 - CPU: la inferencia en CPU es viable dado el reducido numero de parametros, aunque no se dispone de cifras medidas de latencia.
-- Opciones de despliegue: al ser un modelo PyTorch/safetensors, se puede servir con TorchServe, FastAPI + PyTorch, ONNX Runtime, TensorRT o integraciones de HuggingFace `transformers`/`timm`. No se menciona soporte de vLLM, llama.cpp ni Ollama, que no aplican a este tipo de modelo.
+- Opciones de despliegue: al ser un modelo PyTorch/safetensors, se puede servir con TorchServe, FastAPI + PyTorch, ONNX Runtime, TensorRT o integraciones de Hugging Face `transformers`/`timm`. No se menciona soporte de vLLM, llama.cpp ni Ollama, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ El articulo de referencia (Burgos-Artizzu et al., 2020) evalua varias CNN para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Marc-HealthAI/Crimson-Flame-6-resNet18-v2.5-updated-hyperparameters
+- Modelo en Hugging Face: https://huggingface.co/Marc-HealthAI/Crimson-Flame-6-resNet18-v2.5-updated-hyperparameters
 - Dataset de entrenamiento: https://huggingface.co/datasets/Marc-HealthAI/fetal-planes-classification-dataset-main
 - Articulo de referencia del dataset: https://doi.org/10.1038/s41598-020-67076-5
 - Version de acceso abierto del articulo: https://rdcu.be/b47NX

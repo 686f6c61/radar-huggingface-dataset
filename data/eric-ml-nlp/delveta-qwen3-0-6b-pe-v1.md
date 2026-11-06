@@ -89,9 +89,9 @@ Seleccion de checkpoint sobre validacion (metrica `exact_match`):
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Delveta-Qwen3-0.6B-PE-v1 | 596.049.920 | no disponible | Extraccion de parametros / slot filling (una unica tool call) | Apache-2.0 | HuggingFace (safetensors, ONNX, GGUF) |
-| iromu/Qwen3-0.6B-tools | no disponible | no disponible | Modelo base afiliado a herramientas | no disponible | HuggingFace |
-| Qwen/Qwen3-0.6B | 0,6 B (segun model card) | no disponible | Modelo generalista de la familia Qwen3 | Apache-2.0 (segun model card) | HuggingFace |
+| Delveta-Qwen3-0.6B-PE-v1 | 596.049.920 | no disponible | Extraccion de parametros / slot filling (una unica tool call) | Apache-2.0 | Hugging Face (safetensors, ONNX, GGUF) |
+| iromu/Qwen3-0.6B-tools | no disponible | no disponible | Modelo base afiliado a herramientas | no disponible | Hugging Face |
+| Qwen/Qwen3-0.6B | 0,6 B (segun model card) | no disponible | Modelo generalista de la familia Qwen3 | Apache-2.0 (segun model card) | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la informacion proporcionada. La comparacion publicada de Delveta-PE-v1 es contra su propio checkpoint base a lo largo del entrenamiento, no contra otros modelos de la misma categoria.
 
@@ -109,7 +109,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-ml-nlp/Delveta-Qwen3-0.6B-PE-v1
+- Modelo en Hugging Face: https://huggingface.co/eric-ml-nlp/Delveta-Qwen3-0.6B-PE-v1
 - Modelo base: https://huggingface.co/iromu/Qwen3-0.6B-tools
 - Raiz upstream: Qwen/Qwen3-0.6B
 - Configuracion de entrenamiento: https://github.com/Eric-LLMs/Delveta/blob/main/scripts/qwen_parameter_extraction_finetune/config.yaml

@@ -64,10 +64,10 @@ La comparacion es dificil porque este repositorio no es un modelo entrenado, sin
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| callumjohnson/tiny-transformer-generation | 24.832 | no disponible | No (inicializacion) | Apache 2.0 | HuggingFace |
+| callumjohnson/tiny-transformer-generation | 24.832 | no disponible | No (inicializacion) | Apache 2.0 | Hugging Face |
 | nanoGPT (Karpathy) | no disponible | no disponible | Recetario de entrenamiento reproducible | MIT | Repositorio en GitHub |
-| Familia TinyStories | rango de millones de parametros | no disponible | Si, con dataset TinyStories | no disponible | HuggingFace |
-| GPT-2 small (referencia de escala) | 124 millones | 1024 | Si | MIT | HuggingFace |
+| Familia TinyStories | rango de millones de parametros | no disponible | Si, con dataset TinyStories | no disponible | Hugging Face |
+| GPT-2 small (referencia de escala) | 124 millones | 1024 | Si | MIT | Hugging Face |
 
 La diferencia clave es que este repositorio no compite en rendimiento con ninguno de ellos: es una base de codigo, no un modelo entrenado.
 
@@ -83,5 +83,5 @@ La diferencia clave es que este repositorio no compite en rendimiento con ningun
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/callumjohnson/tiny-transformer-generation
+- Hugging Face: https://huggingface.co/callumjohnson/tiny-transformer-generation
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la informacion disponible.

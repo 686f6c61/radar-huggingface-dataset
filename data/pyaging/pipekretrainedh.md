@@ -79,6 +79,6 @@ Nota: la informacion sobre Horvath, Hannum y PhenoAge se basa en conocimiento ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyaging/pipekretrainedh
+- Repositorio Hugging Face: https://huggingface.co/pyaging/pipekretrainedh
 - Documentacion de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Articulo original: Pipek, Orsolya Anna, and István Csabai. "A revised multi-tissue, multi-platform epigenetic clock model for methylation array data." Journal of Mathematical Chemistry 61 (2023): 376–388. DOI: https://doi.org/10.1007/s10910-022-01381-4

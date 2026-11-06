@@ -18,7 +18,7 @@ Es relevante ahora porque la versión GGUF de Unsloth permite ejecutar el modelo
 | Longitud de contexto | Hasta 1.000.000 tokens |
 | Tipos de cuantizacion | GGUF; los tipos concretos (Q4_K_M, Q8_0, etc.) no se detallan en la informacion proporcionada |
 | Idiomas soportados | no disponible |
-| Licencia | `minimax-community` (etiquetada como `other` en HuggingFace) |
+| Licencia | `minimax-community` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF en este repositorio; safetensors en el modelo base |
 
 Otros datos: pipeline `image-text-to-text`, entrada de texto, imagen y vídeo, salida de texto. Repositorio de 312,8 GB, creado el 23 de octubre de 2026 y actualizado el mismo día. Compatible con endpoints según los tags del repositorio.
@@ -118,7 +118,7 @@ La comparación con Opus 5 y GPT-5.6 Sol solo es posible en la métrica Automati
 - Repositorio GGUF: https://huggingface.co/unsloth/MiniMax-M3.1-Flash-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Paper (MiniMax Sparse Attention): https://arxiv.org/abs/2606.13392
-- Organización MiniMax en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organización MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI
 - Web de MiniMax: https://www.minimax.io
 - Documentación de la API: https://platform.minimax.io/docs/guides/text-generation
 - MiniMax Agent: https://agent.minimax.io/
@@ -128,4 +128,4 @@ La comparación con Opus 5 y GPT-5.6 Sol solo es posible en la métrica Automati
 - Unsloth (web): https://unsloth.ai/
 - Unsloth (documentación): https://unsloth.ai/docs/fr
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- Unsloth en HuggingFace: https://huggingface.co/unsloth
+- Unsloth en Hugging Face: https://huggingface.co/unsloth

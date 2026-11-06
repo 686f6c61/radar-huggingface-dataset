@@ -2,11 +2,11 @@
 
 ## Resumen
 
-moreh/Qwen3-235B-A22B-TT-BLOCKFP4 es una cuantizacion del modelo Qwen3-235B-A22B publicada por el usuario moreh en HuggingFace. Se trata de una version del modelo insignia de la familia Qwen3, un transformer de tipo Mixture of Experts (MoE) desarrollado por Alibaba Qwen, con 235 mil millones de parametros totales y 22 mil millones activos por token. Esta variante concreta aplica un esquema de cuantizacion en formato BLOCKFP4 (bloques de 4 bits en punto flotante), orientado a reducir el espacio en memoria y permitir el despliegue en hardware con recursos limitados.
+moreh/Qwen3-235B-A22B-TT-BLOCKFP4 es una cuantizacion del modelo Qwen3-235B-A22B publicada por el usuario moreh en Hugging Face. Se trata de una version del modelo insignia de la familia Qwen3, un transformer de tipo Mixture of Experts (MoE) desarrollado por Alibaba Qwen, con 235 mil millones de parametros totales y 22 mil millones activos por token. Esta variante concreta aplica un esquema de cuantizacion en formato BLOCKFP4 (bloques de 4 bits en punto flotante), orientado a reducir el espacio en memoria y permitir el despliegue en hardware con recursos limitados.
 
 El modelo base Qwen3-235B-A22B es relevante porque combina un contexto nativo muy largo con un modo de razonamiento hibrido (thinking y non-thinking) y capacidades multilingues amplias, lo que lo situa en la categoria de modelos frontera open-weight. La version cuantizada de moreh busca hacer viable su inferencia en infraestructuras mas modestas que las requeridas por los pesos originales en BF16.
 
-La ficha se limita a la informacion disponible en la ficha de HuggingFace. Los detalles sobre el algoritmo exacto de cuantizacion, la perdida de calidad y los requisitos de hardware especificos de esta variante no estan documentados en la informacion proporcionada y se indican como "no disponible".
+La ficha se limita a la informacion disponible en la ficha de Hugging Face. Los detalles sobre el algoritmo exacto de cuantizacion, la perdida de calidad y los requisitos de hardware especificos de esta variante no estan documentados en la informacion proporcionada y se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La ficha se limita a la informacion disponible en la ficha de HuggingFace. Los d
 | Longitud de contexto | no disponible en la informacion de esta ficha (el modelo base Qwen3-235B-A22B declara 262.144 tokens nativos y hasta 1.010.000 con extension) |
 | Tipos de cuantizacion | BLOCKFP4 (bloques de 4 bits en punto flotante); otros formatos no disponibles |
 | Idiomas soportados | no disponible en la informacion de esta ficha |
-| Licencia | other (heredada del modelo base; acceso restringido/gated en HuggingFace) |
+| Licencia | other (heredada del modelo base; acceso restringido/gated en Hugging Face) |
 | Formato de pesos | no disponible (la nomenclatura TT-BLOCKFP4 sugiere formato propietario o especifico de Moreh) |
 
 ## Arquitectura y entrenamiento
@@ -47,7 +47,7 @@ Esta publicacion concreta no aporta informacion sobre el proceso de entrenamient
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones con el modelo base en BF16, por lo que no es posible cuantificar la perdida de calidad introducida por la cuantizacion BLOCKFP4.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones con el modelo base en BF16, por lo que no es posible cuantificar la perdida de calidad introducida por la cuantizacion BLOCKFP4.
 
 ## Requisitos de hardware
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moreh/Qwen3-235B-A22B-TT-BLOCKFP4 | 235B | 22B | no disponible (base: 262.144) | other (gated) | HuggingFace, acceso restringido |
-| Qwen/Qwen3-235B-A22B (base) | 235B | 22B | 262.144 nativos | Apache 2.0 (segun modelo base) | HuggingFace, publico |
+| moreh/Qwen3-235B-A22B-TT-BLOCKFP4 | 235B | 22B | no disponible (base: 262.144) | other (gated) | Hugging Face, acceso restringido |
+| Qwen/Qwen3-235B-A22B (base) | 235B | 22B | 262.144 nativos | Apache 2.0 (segun modelo base) | Hugging Face, publico |
 | Otras cuantizaciones del mismo base (GPTQ/AWQ/GGUF) | 235B | 22B | depende del formato | heredada | segun repositorio |
 
 La comparacion directa con alternativas de otros desarrolladores (por ejemplo, modelos MoE de tamano similar de otras familias) no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia "other": no se especifican los terminos exactos en la informacion disponible; es imprescindible revisar la licencia del modelo base y las condiciones adicionales antes de un uso comercial.
 - Perdida de calidad por cuantizacion: no hay datos publicados sobre la degradacion en tareas de razonamiento, codigo o tool calling tras aplicar BLOCKFP4; debe validarse en el caso de uso concreto.
 - Formato no estandar: el esquema TT-BLOCKFP4 puede requerir herramientas o runtimes especificos, lo que limita la portabilidad frente a formatos ampliamente soportados como GGUF o AWQ.
@@ -79,6 +79,6 @@ La comparacion directa con alternativas de otros desarrolladores (por ejemplo, m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moreh/Qwen3-235B-A22B-TT-BLOCKFP4
+- Hugging Face: https://huggingface.co/moreh/Qwen3-235B-A22B-TT-BLOCKFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-235B-A22B
 - Perfil del autor: https://huggingface.co/moreh

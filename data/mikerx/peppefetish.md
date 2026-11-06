@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mikerx/PeppeFetish es un repositorio publicado en HuggingFace por el usuario Mikerx. La informacion disponible sobre el mismo es practicamente nula: la model card se limita a declarar la licencia `openrail` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. No se especifica el pipeline, los idiomas soportados ni el framework asociado, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+Mikerx/PeppeFetish es un repositorio publicado en Hugging Face por el usuario Mikerx. La informacion disponible sobre el mismo es practicamente nula: la model card se limita a declarar la licencia `openrail` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. No se especifica el pipeline, los idiomas soportados ni el framework asociado, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El peso del repositorio es de aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de tamano reducido, pero no permite inferir de forma fiable el numero de parametros ni la tarea para la que fue entrenado. No hay informacion publica que permita confirmar si se trata de un modelo de lenguaje, de un modelo de difusion, de un adaptador LoRA o de otro tipo de artefacto.
 
@@ -86,7 +86,7 @@ No disponible. No puede identificarse una categoria de comparacion porque se des
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mikerx/PeppeFetish
+- Repositorio en Hugging Face: https://huggingface.co/Mikerx/PeppeFetish
 - Pagina del autor: https://huggingface.co/Mikerx
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

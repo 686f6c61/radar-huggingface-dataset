@@ -69,11 +69,11 @@ Los datos de la columna del modelo base y de las alternativas provienen de la do
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen-nfactorial-fan-lora (este) | ~1,5B de base mas adaptador LoRA | 32 768 (heredado del base) | apache-2.0 | repositorio en HuggingFace con 0 descargas |
+| qwen-nfactorial-fan-lora (este) | ~1,5B de base mas adaptador LoRA | 32 768 (heredado del base) | apache-2.0 | repositorio en Hugging Face con 0 descargas |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32 768 | apache-2.0 | ampliamente disponible |
-| SmolLM2-1.7B-Instruct | 1,7B | 8 192 | apache-2.0 | disponible en HuggingFace |
-| Llama-3.2-1B-Instruct | 1,24B | 128 000 | Llama 3.2 Community License | disponible en HuggingFace |
-| Gemma-2-2B-it | 2,6B | 8 192 | Gemma Terms of Use | disponible en HuggingFace |
+| SmolLM2-1.7B-Instruct | 1,7B | 8 192 | apache-2.0 | disponible en Hugging Face |
+| Llama-3.2-1B-Instruct | 1,24B | 128 000 | Llama 3.2 Community License | disponible en Hugging Face |
+| Gemma-2-2B-it | 2,6B | 8 192 | Gemma Terms of Use | disponible en Hugging Face |
 
 No hay datos de rendimiento comparado para este adaptador, por lo que la eleccion frente a estas alternativas solo puede justificarse por licencia, tamano o coste de despliegue, nunca por calidad medida.
 
@@ -91,10 +91,10 @@ No hay datos de rendimiento comparado para este adaptador, por lo que la eleccio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sakurakuba/qwen-nfactorial-fan-lora
+- Repositorio en Hugging Face: https://huggingface.co/sakurakuba/qwen-nfactorial-fan-lora
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Repositorio de TRL: https://github.com/huggingface/trl
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo. Todos los enlaces recuperados correspondian a servicios de correo de Microsoft Outlook y no guardan relacion con el repositorio, por lo que se han descartado.

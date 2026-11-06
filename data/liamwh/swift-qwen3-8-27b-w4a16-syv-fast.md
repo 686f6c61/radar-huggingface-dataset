@@ -112,7 +112,7 @@ La comparativa se limita a los datos medidos por el propio autor bajo condicione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liamwh/Swift-Qwen3.8-27B-W4A16-syv-fast
+- Modelo en Hugging Face: https://huggingface.co/liamwh/Swift-Qwen3.8-27B-W4A16-syv-fast
 - Repositorio de servicio syv (stack RTX 3090, pipeline `drafter/`): https://github.com/syv-ai/qwen38-27b-rtx3090
 - Modelo base (finetune Swift): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Modelo base (cuerpo W4A16-AWQ): https://huggingface.co/TheUnderscore/Swift-Qwen3.8-27b-W4A16-AWQ

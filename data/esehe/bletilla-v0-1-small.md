@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/esehe/Bletilla-v0.1-small
+- Hugging Face: https://huggingface.co/esehe/Bletilla-v0.1-small
 - Repositorio del motor setsuna-ime: https://github.com/esehehelp/setsuna-ime
 - FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - fineweb-2-edu-japanese: https://huggingface.co/datasets/hotchpotch/fineweb-2-edu-japanese

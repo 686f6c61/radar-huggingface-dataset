@@ -28,14 +28,14 @@ En cuanto al entrenamiento, el checkpoint `model.safetensors` es una inicializac
 ## Capacidades
 
 - Generación de texto: el nombre del modelo indica orientación a generación, pero no hay ninguna capacidad verificada al no estar entrenado.
-- Implementación personalizada: no compatible directamente con APIs estándar de HuggingFace; se necesita un adaptador.
+- Implementación personalizada: no compatible directamente con APIs estándar de Hugging Face; se necesita un adaptador.
 - Reproducibilidad: incluye script de entrenamiento y smoke tests para validar el flujo.
 - Sin capacidades de tool calling, agentes, visión, audio o razonamiento multi-step documentadas (no disponibles).
 
 ## Casos de uso
 
 - Investigación en arquitecturas eficientes: el código sirve como base para estudiar variantes de Efficientformer con atención estándar y fusión co-attention, permitiendo modificar hiperparámetros y evaluar su impacto.
-- Desarrollo de adaptadores de integración: al ser una implementación personalizada, se puede usar como ejercicio para crear wrappers que conecten el modelo con APIs estándar de HuggingFace o frameworks de inferencia.
+- Desarrollo de adaptadores de integración: al ser una implementación personalizada, se puede usar como ejercicio para crear wrappers que conecten el modelo con APIs estándar de Hugging Face o frameworks de inferencia.
 - Pruebas de concepto de entrenamiento: el checkpoint de inicialización permite verificar que el pipeline de entrenamiento funciona correctamente antes de lanzar experimentos completos.
 - Formación en técnicas de evaluación de modelos: la model card ofrece directrices sobre cómo evaluar correctamente (conjuntos held-out, múltiples semillas, comparación con baseline de capacidad similar), útil para estudiantes o equipos que aprenden metodología experimental.
 - Experimentos de optimización de hiperparámetros: la receta novograd + onecycle puede servir como punto de partida para explorar otras configuraciones de optimización.
@@ -64,5 +64,5 @@ No disponible. No existen datos comparativos con otras implementaciones de Effic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francescoferrari/assignment-generation
+- Hugging Face: https://huggingface.co/francescoferrari/assignment-generation
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio GitHub, demos) asociados a este modelo específico.

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sousekd/DeepSeek-V4.1-Flash-1017-EXL3-3bpw-abliterated | ~218,7 B | 512K configurado | EXL3 3 bits | lil-license-1.0 (gated) | HuggingFace |
-| diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000 | no disponible | no disponible | EXL3 3 bits | no disponible | HuggingFace |
-| jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF | no disponible | no disponible | FP8 (lossless CSF) | no disponible | HuggingFace |
-| local-inference-lab/DeepSeek-V4.1-Flash-1017-lossless-CSF | no disponible | no disponible | lossless CSF | Local Inference Lab License 1.0 | HuggingFace |
+| sousekd/DeepSeek-V4.1-Flash-1017-EXL3-3bpw-abliterated | ~218,7 B | 512K configurado | EXL3 3 bits | lil-license-1.0 (gated) | Hugging Face |
+| diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000 | no disponible | no disponible | EXL3 3 bits | no disponible | Hugging Face |
+| jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF | no disponible | no disponible | FP8 (lossless CSF) | no disponible | Hugging Face |
+| local-inference-lab/DeepSeek-V4.1-Flash-1017-lossless-CSF | no disponible | no disponible | lossless CSF | Local Inference Lab License 1.0 | Hugging Face |
 
 Los tres modelos comparables son los linajes directos de este checkpoint; no se dispone de datos de arquitectura, contexto o rendimiento de alternativas externas en la informacion proporcionada.
 
@@ -74,7 +74,7 @@ Los tres modelos comparables son los linajes directos de este checkpoint; no se 
 
 - Modelo abliterated: el comportamiento de rechazo ha sido modificado; las salidas pueden ser inseguras, sesgadas o incorrectas. El autor declara que los usuarios asumen toda la responsabilidad.
 - Solo para investigacion y evaluacion: la model card lo restringe explicitamente a esos fines; no esta pensado para produccion.
-- Acceso restringido (gated): requiere solicitud y aceptacion de condiciones en HuggingFace.
+- Acceso restringido (gated): requiere solicitud y aceptacion de condiciones en Hugging Face.
 - Licencia lil-license-1.0: es una licencia "other" con nombre propio; deben revisarse los terminos del archivo LICENSE antes de cualquier uso, especialmente comercial.
 - Sin evaluacion de contexto largo: el autor no comprobo la calidad con ventanas de 512K; el rendimiento en contextos extensos es desconocido.
 - Sin evaluacion en CPU: la ejecucion asistida por CPU no fue probada.
@@ -85,7 +85,7 @@ Los tres modelos comparables son los linajes directos de este checkpoint; no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sousekd/DeepSeek-V4.1-Flash-1017-EXL3-3bpw-abliterated
+- Modelo en Hugging Face: https://huggingface.co/sousekd/DeepSeek-V4.1-Flash-1017-EXL3-3bpw-abliterated
 - Modelo base EXL3 de Diffbot: https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000
 - Checkpoint abliterated de jcartu: https://huggingface.co/jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF
 - Modelo original de Local Inference Lab: https://huggingface.co/local-inference-lab/DeepSeek-V4.1-Flash-1017-lossless-CSF

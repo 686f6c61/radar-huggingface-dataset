@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MeowID-Base es un modelo publicado por el usuario RicePasteM en HuggingFace bajo licencia Apache 2.0. El repositorio contiene un checkpoint en formato ONNX con un tamaño total de 5.4 GB. La información disponible en la model card es mínima: únicamente se declara la licencia, sin especificar arquitectura, número de parámetros, contexto, idiomas ni capacidades. No se dispone de documentación técnica adicional, papers ni demos asociados.
+MeowID-Base es un modelo publicado por el usuario RicePasteM en Hugging Face bajo licencia Apache 2.0. El repositorio contiene un checkpoint en formato ONNX con un tamaño total de 5.4 GB. La información disponible en la model card es mínima: únicamente se declara la licencia, sin especificar arquitectura, número de parámetros, contexto, idiomas ni capacidades. No se dispone de documentación técnica adicional, papers ni demos asociados.
 
 Dado el estado del repositorio (cero descargas, cero likes, fecha de creación reciente), se trata de un modelo preliminar o experimental sin validación comunitaria. Su relevancia actual es limitada hasta que el autor publique especificaciones detalladas. Esta ficha se basa exclusivamente en los datos públicos del repositorio y marca como "no disponible" cualquier característica no documentada.
 
@@ -54,4 +54,4 @@ No disponible. Sin datos de arquitectura, parámetros o rendimiento, no es posib
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RicePasteM/MeowID-Base
+- Repositorio Hugging Face: https://huggingface.co/RicePasteM/MeowID-Base

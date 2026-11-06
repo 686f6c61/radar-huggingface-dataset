@@ -109,7 +109,7 @@ No se han encontrado en la información disponible resultados de otros modelos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r2
+- Modelo en Hugging Face: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r2
 - Colección Cabin offline ASR: https://huggingface.co/collections/doanhlt/cabin-offline-asr-on-device-distilled-from-r13x-6ade0b05eb1f2ac4e49d7cf8
 - Modelo base (pilot1): https://huggingface.co/doanhlt/cabin-sherpa-vi-distill-pilot1
 - Modelo base del paquete en producción: https://huggingface.co/zzasdf/viet_iter3_pseudo_label

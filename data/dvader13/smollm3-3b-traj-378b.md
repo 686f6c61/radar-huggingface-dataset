@@ -19,7 +19,7 @@ Arquitectónicamente, hereda el diseño del SmolLM3-3B: un transformer decoder-o
 | Tipos de cuantizacion | bf16 (unico formato publicado) |
 | Idiomas soportados | no disponible (el modelo base soporta 6 idiomas, pero no se confirma para estos checkpoints) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (inferido por el uso de bf16 y la practica comun en HuggingFace) |
+| Formato de pesos | safetensors (inferido por el uso de bf16 y la practica comun en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 - VRAM estimada para inferencia: aproximadamente 6 GB en bf16 (3B parámetros × 2 bytes), más overhead de activaciones y caché KV.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM, como RTX 3060, RTX 3090, RTX 4090, o GPUs de datacenter como A10, A100.
 - Cabe en GPUs consumer de gama media-alta (RTX 3060 12GB o superior).
-- Opciones de despliegue: se puede cargar con la librería `transformers` de HuggingFace, o mediante `vLLM` y `TGI` si se convierte a formatos compatibles. No se proporcionan archivos GGUF, por lo que `llama.cpp` u `Ollama` requerirían una conversión manual.
+- Opciones de despliegue: se puede cargar con la librería `transformers` de Hugging Face, o mediante `vLLM` y `TGI` si se convierte a formatos compatibles. No se proporcionan archivos GGUF, por lo que `llama.cpp` u `Ollama` requerirían una conversión manual.
 - Latencia y throughput: no disponibles, pero para un modelo de 3B en bf16 en una RTX 4090 se puede esperar una generación de decenas de tokens por segundo, dependiendo de la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de información sobre otros checkpoints intermedios de RL de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-traj-378b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-traj-378b
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Documentación de SmolLM3 en Transformers: https://huggingface.co/docs/transformers/en/model_doc/smollm3
 - Repositorio GitHub de SmolLM: https://github.com/huggingface/smollm

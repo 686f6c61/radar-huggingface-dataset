@@ -1,7 +1,7 @@
 # scottlowry/Ornith-1.5-9B-oQ6e-fp16-mtp
 
 ## Resumen
-Ornith-1.5-9B-oQ6e-fp16-mtp es una version cuantizada del modelo Ornith-1.5-9B, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero: es un artefacto de compresion generado con la herramienta oQ (oMLX v0.7.1.dev1), que aplica cuantizacion de precision mixta sobre los pesos originales. El resultado se distribuye en formato MLX safetensors, pensado para ejecutarse en Apple Silicon mediante la libreria mlx, con 6 bits por peso y group size de 64.
+Ornith-1.5-9B-oQ6e-fp16-mtp es una version cuantizada del modelo Ornith-1.5-9B, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero: es un artefacto de compresion generado con la herramienta oQ (oMLX v0.7.1.dev1), que aplica cuantizacion de precision mixta sobre los pesos originales. El resultado se distribuye en formato MLX safetensors, pensado para ejecutarse en Apple Silicon mediante la libreria mlx, con 6 bits por peso y group size de 64.
 
 El modelo declara un total de 9.653.104.368 parametros (unos 9,65 mil millones) y un repositorio de 9,4 GB. El campo model_type de la model card es qwen3_5, lo que apunta a una arquitectura transformer de la familia Qwen 3.5, aunque la ficha del autor no documenta ni el contexto maximo, ni los idiomas, ni la licencia, ni los datos de entrenamiento del modelo base.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B-oQ6e-fp16-mtp | 9,65B | no disponible | MLX safetensors, 6 bits | no disponible | HuggingFace, 0 descargas |
+| Ornith-1.5-9B-oQ6e-fp16-mtp | 9,65B | no disponible | MLX safetensors, 6 bits | no disponible | Hugging Face, 0 descargas |
 | Qwen2.5-7B | 7,62B | 128k tokens | safetensors, GGUF, MLX, AWQ | Apache 2.0 / Qwen | ampliamente disponible |
 | Llama 3.1 8B | 8,03B | 128k tokens | safetensors, GGUF, MLX | Llama 3.1 Community | ampliamente disponible |
 | Gemma 2 9B | 9,24B | 8k tokens | safetensors, GGUF, MLX | Gemma Terms | ampliamente disponible |
@@ -84,7 +84,7 @@ La comparativa con Qwen2.5-7B, Llama 3.1 8B y Gemma 2 9B es puramente orientativ
 - Uso recomendado: evaluacion, experimentacion y prototipado local. No apto para produccion sin validacion previa de calidad, licencia y contexto.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ6e-fp16-mtp
+- Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ6e-fp16-mtp
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Ornith-1.5-9B: no disponible (no se enlaza en la model card)
 - Paper o documentacion tecnica del modelo base: no disponible

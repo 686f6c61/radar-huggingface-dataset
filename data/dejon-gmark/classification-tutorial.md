@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dejon-gmark/classification-tutorial` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de código ("codebase") para tareas de clasificación, construido sobre una arquitectura que el autor denomina **Hybrid**. No se trata de un modelo entrenado ni de un checkpoint con capacidad predictiva: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para "smoke tests" y que no se presenta como un checkpoint evaluado. El repositorio tiene 0 descargas y 0 "likes", y fue creado el 13 de septiembre de 2026.
+`dejon-gmark/classification-tutorial` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de código ("codebase") para tareas de clasificación, construido sobre una arquitectura que el autor denomina **Hybrid**. No se trata de un modelo entrenado ni de un checkpoint con capacidad predictiva: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para "smoke tests" y que no se presenta como un checkpoint evaluado. El repositorio tiene 0 descargas y 0 "likes", y fue creado el 13 de septiembre de 2026.
 
 El interés del artefacto es didáctico y de ingeniería, no de rendimiento. El repositorio incluye el fichero Python con la implementación del modelo y el punto de entrada de entrenamiento, un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `eval.py` como artefacto principal. La arquitectura declarada combina atención *multi-query*, fusión de bajo rango (*low rank*), activación gelu-tanh y normalización *layernorm*, escalada a un tamaño "base".
 
@@ -81,6 +81,6 @@ No hay comparativa significativa disponible. Este repositorio no es un modelo en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dejon-gmark/classification-tutorial
+- Repositorio en Hugging Face: https://huggingface.co/dejon-gmark/classification-tutorial
 - Ficheros incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rpchinhara/25M2573-Week09-Compression40-Submission01` es un checkpoint publicado en HuggingFace por el usuario `rpchinhara` bajo la etiqueta de arquitectura `qwen3_5_text`. Se trata de una versión cuantizada a 4 bits mediante GPTQ de un modelo base de la familia Qwen 3.5, con un total de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones). El nombre del repositorio sugiere que forma parte de una entrega académica (semana 09, compresión al 40 %) en el contexto de un curso o asignatura identificada como 25M2573.
+El modelo `rpchinhara/25M2573-Week09-Compression40-Submission01` es un checkpoint publicado en Hugging Face por el usuario `rpchinhara` bajo la etiqueta de arquitectura `qwen3_5_text`. Se trata de una versión cuantizada a 4 bits mediante GPTQ de un modelo base de la familia Qwen 3.5, con un total de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones). El nombre del repositorio sugiere que forma parte de una entrega académica (semana 09, compresión al 40 %) en el contexto de un curso o asignatura identificada como 25M2573.
 
 El modelo no cuenta con una model card sustancial en la información disponible: no se han publicado datos sobre licencia, idiomas soportados, pipeline de inferencia ni resultados de benchmarks. La relevancia actual radica en su naturaleza como artefacto de compresión: un ejercicio práctico de cuantización GPTQ sobre un transformer de ~4B parámetros, empaquetado en safetensors y listo para ser cargado con librerías compatibles con GPTQ.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rpchinhara/25M2573-Week09-Compression40-Submission01` | ~4,2 B | no disponible | 4-bit GPTQ | no disponible | HuggingFace (24 descargas) |
-| Qwen2.5-3B-Instruct (referencia de la familia) | 3,1 B | 32 768 tokens | fp16, GPTQ, AWQ, GGUF | Apache 2.0 (según versión) | HuggingFace, Ollama, vLLM |
-| Qwen2.5-7B-Instruct (referencia de la familia) | 7,6 B | 32 768 tokens | fp16, GPTQ, AWQ, GGUF | Apache 2.0 (según versión) | HuggingFace, Ollama, vLLM |
-| Llama-3.2-3B-Instruct | 3,2 B | 128 000 tokens | fp16, GPTQ, AWQ, GGUF | Llama 3.2 Community License | HuggingFace, Ollama, vLLM |
+| `rpchinhara/25M2573-Week09-Compression40-Submission01` | ~4,2 B | no disponible | 4-bit GPTQ | no disponible | Hugging Face (24 descargas) |
+| Qwen2.5-3B-Instruct (referencia de la familia) | 3,1 B | 32 768 tokens | fp16, GPTQ, AWQ, GGUF | Apache 2.0 (según versión) | Hugging Face, Ollama, vLLM |
+| Qwen2.5-7B-Instruct (referencia de la familia) | 7,6 B | 32 768 tokens | fp16, GPTQ, AWQ, GGUF | Apache 2.0 (según versión) | Hugging Face, Ollama, vLLM |
+| Llama-3.2-3B-Instruct | 3,2 B | 128 000 tokens | fp16, GPTQ, AWQ, GGUF | Llama 3.2 Community License | Hugging Face, Ollama, vLLM |
 
 Nota: los datos de los modelos comparables corresponden a versiones públicas conocidas de la familia Qwen y Llama; la información del modelo evaluado no permite confirmar contexto ni licencia, por lo que la comparación es orientativa.
 
@@ -82,5 +82,5 @@ Nota: los datos de los modelos comparables corresponden a versiones públicas co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rpchinhara/25M2573-Week09-Compression40-Submission01
+- Hugging Face: https://huggingface.co/rpchinhara/25M2573-Week09-Compression40-Submission01
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

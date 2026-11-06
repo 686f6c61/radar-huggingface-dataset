@@ -92,9 +92,9 @@ No se dispone de datos verificables de modelos comparables de codigo abierto con
 - Riesgo de falsos positivos residual: el 1,3 % de secciones humanas y el 1,0 % de abstracts de arXiv se marcan erroneamente en los conjuntos de evaluacion.
 - No se documentan sesgos especificos por dominio, disciplina o variedad de ingles mas alla de los conjuntos evaluados.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias explicitas sobre el rendimiento en dominios distintos del academico.
-- Al ser un modelo reciente con 0 descargas y 0 likes en HuggingFace, no existe validacion independiente de sus metricas.
+- Al ser un modelo reciente con 0 descargas y 0 likes en Hugging Face, no existe validacion independiente de sus metricas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zikh/scholarly-detector-v2
+- Modelo en Hugging Face: https://huggingface.co/zikh/scholarly-detector-v2
 - Plataforma scholar.click: https://scholar.click

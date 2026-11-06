@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2.5-Math-1.5B-ExecuTorch (este) | 1,5B | Fijado en 2.048, 4.096 o 16.384 tokens por archivo | 8da4w, `.pte` para XNNPACK | 1,11-1,14 GB | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-Math-1.5B (modelo base) | 1,5B | No disponible en la informacion proporcionada | Pesos originales (safetensors); bf16 estimado en torno a 3 GB | No disponible | Apache 2.0 | HuggingFace |
+| Qwen2.5-Math-1.5B-ExecuTorch (este) | 1,5B | Fijado en 2.048, 4.096 o 16.384 tokens por archivo | 8da4w, `.pte` para XNNPACK | 1,11-1,14 GB | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-Math-1.5B (modelo base) | 1,5B | No disponible en la informacion proporcionada | Pesos originales (safetensors); bf16 estimado en torno a 3 GB | No disponible | Apache 2.0 | Hugging Face |
 | Otras variantes on-device de la familia Qwen2.5 | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La busqueda web no devolvio informacion sobre alternativas comparables, por lo que no es posible establecer una comparacion de rendimiento con modelos de la misma categoria.
@@ -93,7 +93,7 @@ La busqueda web no devolvio informacion sobre alternativas comparables, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/experimentalmachines/Qwen2.5-Math-1.5B-ExecuTorch
+- Repositorio en Hugging Face: https://huggingface.co/experimentalmachines/Qwen2.5-Math-1.5B-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B/blob/main/LICENSE
 - Aplicacion openweights: https://github.com/alpharomercoma/openweights

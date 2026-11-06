@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Noesis es un repositorio publicado en HuggingFace por el usuario dodle bajo el identificador `dodle/noesis`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el unico dato declarado en el README es la licencia MIT. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+Noesis es un repositorio publicado en Hugging Face por el usuario dodle bajo el identificador `dodle/noesis`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el unico dato declarado en el README es la licencia MIT. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
-El repositorio registra cero descargas y cero likes, y no tiene pipeline declarado en HuggingFace. Fue creado y actualizado el 5 de octubre de 2026, sin que se haya publicado ninguna revision posterior. Esto sugiere un artefacto recien subido, experimental o vacio, sin validacion por parte de la comunidad.
+El repositorio registra cero descargas y cero likes, y no tiene pipeline declarado en Hugging Face. Fue creado y actualizado el 5 de octubre de 2026, sin que se haya publicado ninguna revision posterior. Esto sugiere un artefacto recien subido, experimental o vacio, sin validacion por parte de la comunidad.
 
 Por tanto, no es posible determinar que problema resuelve ni por que seria relevante. Cualquier evaluacion tecnica de este modelo requeriria, como minimo, que el autor publicase una model card completa, los pesos y las especificaciones de entrenamiento. Hasta entonces, esta ficha se limita a documentar la ausencia de informacion verificable.
 
@@ -20,7 +20,7 @@ Por tanto, no es posible determinar que problema resuelve ni por que seria relev
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-10-05 |
 | Fecha de ultima actualizacion | 2026-10-05 |
 | Descargas | 0 |
@@ -95,7 +95,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dodle/noesis
+- Hugging Face: https://huggingface.co/dodle/noesis
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o informe tecnico: no disponible

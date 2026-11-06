@@ -21,7 +21,7 @@ Su relevancia actual reside en la combinación de tres factores: un modelo TTS c
 | Licencia | Apache 2.0 |
 | Formato de pesos | Core ML (.mlpackage); cinco paquetes: kokoro_duration_t*, kokoro_f0ntrain, kokoro_decoder_pre, kokoro_decoder_har_post |
 | Frecuencia de muestreo de salida | 24 kHz PCM |
-| Autoria | anayak16 (repo HuggingFace); codigo fuente y runtime Swift en github.com/mattmireles/kokoro-coreml |
+| Autoria | anayak16 (repo Hugging Face); codigo fuente y runtime Swift en github.com/mattmireles/kokoro-coreml |
 | Libreria | coreml |
 | Tamano del repositorio | 0,5 GB |
 
@@ -110,11 +110,11 @@ La version fijada de MLX falla en clips de 3 segundos con un error de forma de b
 - El arranque en frio anade una compilacion de Core ML de varios segundos antes de alcanzar el regimen estable.
 - Las cifras de rendimiento proceden de una unica model card, medidas en junio de 2026 con un harness concreto; la propia autoria advierte de que los resultados varian con la version de macOS y el hardware y recomienda remedirlos en el equipo objetivo.
 - Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base hexgrad/Kokoro-82M y de las voces utilizadas.
-- El repositorio de HuggingFace registra 0 descargas y 0 likes en el momento de la consulta, y no se han encontrado resultados de busqueda relevantes sobre el modelo fuera de su propia documentacion.
+- El repositorio de Hugging Face registra 0 descargas y 0 likes en el momento de la consulta, y no se han encontrado resultados de busqueda relevantes sobre el modelo fuera de su propia documentacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anayak16/kokoro-coreml
+- Modelo en Hugging Face: https://huggingface.co/anayak16/kokoro-coreml
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Codigo fuente, exportadores y runtime Swift: https://github.com/mattmireles/kokoro-coreml
 - Comparador MLX: https://github.com/Blaizzy/mlx-audio

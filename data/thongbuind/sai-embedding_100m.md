@@ -89,7 +89,7 @@ No se dispone de datos numericos de modelos alternativos en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thongbuind/SAI-Embedding_100M
+- Modelo en Hugging Face: https://huggingface.co/thongbuind/SAI-Embedding_100M
 - Modelo base SAI_100M: https://huggingface.co/thongbuind/SAI_100M
 - Repositorio de desarrollo de SAI: https://github.com/thongbuind/SAI_dev2
 - Paper de LLM2Vec (BehnamGhader et al., 2024): https://arxiv.org/abs/2404.05961

@@ -99,7 +99,7 @@ La comparación cuantitativa de precisión entre estas alternativas no está dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfadizayn/filzen-siglip2-b16-224-int8
+- Repositorio Hugging Face: https://huggingface.co/alfadizayn/filzen-siglip2-b16-224-int8
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - react-native-executorch: https://github.com/software-mansion/react-native-executorch
 - ExecuTorch: https://github.com/pytorch/executorch

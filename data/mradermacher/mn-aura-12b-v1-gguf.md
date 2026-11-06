@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MN-Aura-12B-v1-GGUF es la versión cuantizada en formato GGUF del modelo EldritchLabs/MN-Aura-12B-v1, un modelo de lenguaje de 12.247.956.480 parámetros (aproximadamente 12,2 mil millones) orientado a escritura creativa, narrativa de ficción y roleplay. La cuantización la ha realizado mradermacher, un autor conocido en HuggingFace por producir versiones GGUF de modelos comunitarios para su uso en llama.cpp y otras herramientas de inferencia local. El modelo original procede de EldritchLabs y se ha construido mediante mergekit, es decir, fusionando varios modelos derivados de Mistral Nemo en lugar de entrenarse desde cero.
+MN-Aura-12B-v1-GGUF es la versión cuantizada en formato GGUF del modelo EldritchLabs/MN-Aura-12B-v1, un modelo de lenguaje de 12.247.956.480 parámetros (aproximadamente 12,2 mil millones) orientado a escritura creativa, narrativa de ficción y roleplay. La cuantización la ha realizado mradermacher, un autor conocido en Hugging Face por producir versiones GGUF de modelos comunitarios para su uso en llama.cpp y otras herramientas de inferencia local. El modelo original procede de EldritchLabs y se ha construido mediante mergekit, es decir, fusionando varios modelos derivados de Mistral Nemo en lugar de entrenarse desde cero.
 
 El interés principal de esta ficha radica en que permite ejecutar un modelo de 12B especializado en prosa vívida y generación de tramas en hardware de consumo, gracias a la disponibilidad de cuantizaciones que van desde Q2_K (4,9 GB) hasta Q8_0 (13,1 GB). La licencia Apache 2.0 facilita su uso tanto en proyectos personales como comerciales, sin las restricciones habituales de otros modelos de roleplay.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa de rendimiento no es posible porque ninguno de los 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/MN-Aura-12B-v1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/MN-Aura-12B-v1-GGUF
 - Modelo base original: https://huggingface.co/EldritchLabs/MN-Aura-12B-v1
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/MN-Aura-12B-v1-i1-GGUF
 - Página resumen del autor para este modelo: https://hf.tst.eu/model#MN-Aura-12B-v1-GGUF

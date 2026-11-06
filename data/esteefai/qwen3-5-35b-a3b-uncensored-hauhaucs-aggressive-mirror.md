@@ -35,7 +35,7 @@ No se dispone de datos sobre el número de tokens de entrenamiento, la composici
 - Razonamiento y generación de código: capacidad esperable por el linaje Qwen, aunque no hay evaluación publicada en esta ficha que lo cuantifique.
 - Entrada multimodal: la presencia del fichero `mmproj` en f16 indica que el pipeline de llama.cpp puede cargar un proyector visual; la model card no describe explícitamente las capacidades de visión, por lo que debe considerarse una inferencia a partir de los ficheros, no un dato confirmado.
 - Respuestas sin mecanismos de rechazo para contenido que el modelo base rechazaría; es la modificación principal declarada en el nombre.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede servirse a través de la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede servirse a través de la infraestructura de inferencia de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
 - Cobertura multilingüe: no disponible.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.5-35B-A3B Uncensored, mirror) | ≈34,7 B | ≈3 B (según nombre) | no disponible | Apache 2.0 | GGUF Q4_K_M en HuggingFace |
+| Este modelo (Qwen3.5-35B-A3B Uncensored, mirror) | ≈34,7 B | ≈3 B (según nombre) | no disponible | Apache 2.0 | GGUF Q4_K_M en Hugging Face |
 | Qwen/Qwen3.5-35B-A3B (base) | ≈34,7 B | ≈3 B (según nombre) | no disponible | Apache 2.0 | Repo original de Qwen; pesos completos |
 | Qwen3-30B-A3B (generación anterior) | 30,5 B | 3,3 B | 128K nativo en la familia Qwen3; verificar en la ficha del modelo | Apache 2.0 | Pesos completos y múltiples cuantizaciones |
 | Mixtral 8x7B | 46,7 B | 12,9 B | 32K | Apache 2.0 | Pesos completos y GGUF |
@@ -88,10 +88,10 @@ La comparación se limita a parámetros, contexto y licencia: no hay datos de be
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/EsteefAi/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-mirror
+- Repositorio espejo en Hugging Face: https://huggingface.co/EsteefAi/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-mirror
 - Repositorio original del fine-tune: https://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Perfil del autor del espejo: https://huggingface.co/EsteefAi
-- Documentación de Ollama para modelos de HuggingFace: https://huggingface.co/docs/hub/ollama (referencia general, no citada en la model card)
+- Documentación de Ollama para modelos de Hugging Face: https://huggingface.co/docs/hub/ollama (referencia general, no citada en la model card)
 - Paper, blog o demo oficial: no disponible en la información proporcionada
 - La búsqueda web realizada no devolvió enlaces relevantes sobre el modelo (los resultados correspondían a Speedtest de Ookla).

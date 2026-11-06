@@ -70,7 +70,7 @@ No hay comparación publicada con otros modelos en estas mismas métricas, y al 
 - VRAM estimada para los pesos: aproximadamente 166 MB en fp32, 83 MB en fp16/bf16, 42 MB en int8 y 21 MB en int4 (cálculo a partir de 41.558.528 parámetros). El consumo real dependerá del contexto efectivo, que no se documenta, y del tamaño de las activaciones.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre es suficiente; no se requiere A100, H100 ni similar. Funciona sin problema en GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, etc.
 - Cabe en GPU de consumo: sí, en todas las generaciones recientes (y en muchas antiguas). También es viable en CPU, e incluso en dispositivos de borde tipo Raspberry Pi, dado el tamaño reducido de los pesos.
-- Opciones de despliegue: la ruta documentada es el código propio del repositorio de la asignatura (`src.part1.train.load_checkpoint(dir)` sobre PyTorch). No se publican pesos en GGUF, por lo que llama.cpp y Ollama requerirían una conversión manual de safetensors a GGUF y la definición de la arquitectura en el conversor. vLLM y TGI no soportan esta arquitectura personalizada sin adaptación, ya que no se corresponde con un `model_type` de HuggingFace estándar.
+- Opciones de despliegue: la ruta documentada es el código propio del repositorio de la asignatura (`src.part1.train.load_checkpoint(dir)` sobre PyTorch). No se publican pesos en GGUF, por lo que llama.cpp y Ollama requerirían una conversión manual de safetensors a GGUF y la definición de la arquitectura en el conversor. vLLM y TGI no soportan esta arquitectura personalizada sin adaptación, ya que no se corresponde con un `model_type` de Hugging Face estándar.
 - Latencia y throughput estimados: no disponible. No se publican mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ Frente a estos modelos, el checkpoint de ANLP es entre 1,7 y 3 veces más peque�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheer05dj/anlp-a2-p2-adamw-lr0p002
+- Modelo en Hugging Face: https://huggingface.co/dheer05dj/anlp-a2-p2-adamw-lr0p002
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/dheer05k-iiit-hyderabad/anlp-a2-part2-optimizers/runs/uu9yxc90
 - Checkpoint análogo del mismo ejercicio (AdamW): https://huggingface.co/Vatsavsrivatsav/anlp-a2-p2-adamw
 - Checkpoint análogo del mismo ejercicio (AdamW): https://huggingface.co/unignoramus/anlp-a2-p2-adamw

@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-rank-4 | 8.030 M (base) + adaptador LoRA rango 4 | 128.000 tokens | Adaptador LoRA de investigación sobre Llama 3.1 8B Instruct | No disponible en la model card | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| unsloth/Llama-3.1-8B-Instruct (modelo base) | 8.030 M | 128.000 tokens | Transformer decoder-only con GQA, ajustado por instrucciones | Llama 3.1 Community License | HuggingFace, ampliamente utilizado |
-| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Transformer decoder-only | Apache 2.0 | HuggingFace, uso comercial permitido |
-| Qwen2.5-7B-Instruct | 7.620 M | 128.000 tokens | Transformer decoder-only | Apache 2.0 (la mayoría de variantes) | HuggingFace, uso comercial permitido |
+| israeli-dishes-2027-llama31-8b-rank-4 | 8.030 M (base) + adaptador LoRA rango 4 | 128.000 tokens | Adaptador LoRA de investigación sobre Llama 3.1 8B Instruct | No disponible en la model card | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| unsloth/Llama-3.1-8B-Instruct (modelo base) | 8.030 M | 128.000 tokens | Transformer decoder-only con GQA, ajustado por instrucciones | Llama 3.1 Community License | Hugging Face, ampliamente utilizado |
+| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Transformer decoder-only | Apache 2.0 | Hugging Face, uso comercial permitido |
+| Qwen2.5-7B-Instruct | 7.620 M | 128.000 tokens | Transformer decoder-only | Apache 2.0 (la mayoría de variantes) | Hugging Face, uso comercial permitido |
 
 La comparación con Mistral 7B Instruct y Qwen2.5 7B Instruct es únicamente referencial en cuanto a tamaño y categoría: son asistentes de propósito general con licencias permisivas, mientras que este artefacto es un adaptador de investigación con un dominio acotado y sin licencia declarada. No se dispone de datos de rendimiento comparativos para este adaptador.
 
@@ -91,7 +91,7 @@ La comparación con Mistral 7B Instruct y Qwen2.5 7B Instruct es únicamente ref
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-4
+- Página del modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-4
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Repositorio citado en la model card: *Weird Generalization and Inductive Backdoors* (mencionado por nombre, sin URL en la información disponible; no se ha localizado un enlace verificable)
 - Artículo asociado al experimento: no disponible; la model card lo menciona pero no incluye enlace

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashleyhughes/grounded-language-reading10` es un repositorio publicado en HuggingFace por el usuario ashleyhughes el 10 de septiembre de 2026 bajo licencia MIT. A pesar de las etiquetas `safetensors` y `transformer` que aparecen en sus metadatos, no se trata de un modelo de lenguaje entrenado: la propia model card lo describe como una "exploratory note" (nota exploratoria) sobre lenguaje fundamentado (*grounded language*) que registra una comparación prevista, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado.
+`ashleyhughes/grounded-language-reading10` es un repositorio publicado en Hugging Face por el usuario ashleyhughes el 10 de septiembre de 2026 bajo licencia MIT. A pesar de las etiquetas `safetensors` y `transformer` que aparecen en sus metadatos, no se trata de un modelo de lenguaje entrenado: la propia model card lo describe como una "exploratory note" (nota exploratoria) sobre lenguaje fundamentado (*grounded language*) que registra una comparación prevista, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado.
 
 El repositorio contiene dos artefactos documentales (`notes.md` y `README.md`) y un fichero de pesos en formato safetensors con 16.576 parámetros totales, una cifra que corresponde a un tensor de tamaño anecdótico (del orden de decenas de kilobytes) y no a un modelo utilizable. La model card afirma de forma explícita que la nota "no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado", y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -48,7 +48,7 @@ Debe subrayarse que ningun caso de uso de inferencia es viable con este reposito
 - Diseno de evaluacion en *grounded language*: la nota propone contexto de evaluacion con RefCOCO, Flickr30k y Visual Genome, util para quien necesite fijar un protocolo de comparacion con lineas base emparejadas.
 - Lista de comprobacion de reproducibilidad: el README exige que, si se anaden resultados, incluyan versiones de dataset, comandos, semillas, hardware y logs en crudo; es directamente reutilizable como checklist interna de un laboratorio.
 - Analisis de factores de confusion: la nota dedica una seccion a posibles confundidores en tareas de *grounding*, aprovechable como material de discusion en revision de experimentos.
-- Auditoria de model cards y repositorios de HuggingFace: sirve como caso de estudio de un repositorio etiquetado con `transformer` y `safetensors` que en realidad no contiene un modelo, util para disenar heurísticas de deteccion de artefactos no funcionales.
+- Auditoria de model cards y repositorios de Hugging Face: sirve como caso de estudio de un repositorio etiquetado con `transformer` y `safetensors` que en realidad no contiene un modelo, util para disenar heurísticas de deteccion de artefactos no funcionales.
 - Referencia para la gestion de terminos de datos externos: el propio README advierte de que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se usa con datasets externos, lo que ejemplifica una practica de licenciamiento en investigacion.
 - Uso como semilla de un pipeline de documentacion: el par `notes.md` + `README.md` puede tomarse como base para generar plantillas de notas de investigacion reproducibles.
 
@@ -93,7 +93,7 @@ No procede una comparativa con modelos de lenguaje: el repositorio no es un mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashleyhughes/grounded-language-reading10
+- Repositorio en Hugging Face: https://huggingface.co/ashleyhughes/grounded-language-reading10
 - Nota principal: https://huggingface.co/ashleyhughes/grounded-language-reading10/blob/main/notes.md
 - Documentacion del repositorio: https://huggingface.co/ashleyhughes/grounded-language-reading10/blob/main/README.md
 

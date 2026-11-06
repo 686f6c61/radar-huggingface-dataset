@@ -43,7 +43,7 @@ La pérdida de validación del checkpoint final (por token, sobre 2.433 document
 
 - Investigación sobre composición de corpus: comparar este checkpoint con `1pp-0.58b-v2-ua-base` y `1pp-0.58b-v2-raw-base` para medir el efecto de sustituir el cooldown de documentos por conversaciones reescritas, manteniendo el resto del flujo idéntico.
 - Estudios de alineación paso a paso: analizar cómo evoluciona la perplejidad en texto de asistente, usuario y documento a lo largo de los 1.110 pasos de cooldown, usando los logs de wandb publicados.
-- Reproducibilidad de recetas de preentrenamiento: servir como referencia para validar conversiones Megatron a HuggingFace, dado que el autor documenta las diferencias de pérdida entre ambos formatos.
+- Reproducibilidad de recetas de preentrenamiento: servir como referencia para validar conversiones Megatron a Hugging Face, dado que el autor documenta las diferencias de pérdida entre ambos formatos.
 - Generación de datos sintéticos conversacionales en inglés: el modelo produce turnos con formato ChatML de forma nativa, útil para arrancar pipelines de destilación o aumentación de datos en entornos de investigación.
 - Baseline en experimentos de escalado: al existir peldaños de 0,98B, 1,66B y 2,81B con la misma receta, permite trazar curvas de escalado a coste reducido.
 - Evaluación de tokenizadores: al usar el vocabulario de SmolLM2 con 49.152 entradas, sirve para comparar eficiencia de tokenización frente a modelos con vocabularios mayores en corpus educativos.
@@ -98,7 +98,7 @@ La comparación cuantitativa de rendimiento con estos u otros modelos no está d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-base
 - Variante raw de referencia: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-base
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

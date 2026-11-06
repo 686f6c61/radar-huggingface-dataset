@@ -63,4 +63,4 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/assokolov/paper_016171886_image_captioning
+- Repositorio en Hugging Face: https://huggingface.co/assokolov/paper_016171886_image_captioning

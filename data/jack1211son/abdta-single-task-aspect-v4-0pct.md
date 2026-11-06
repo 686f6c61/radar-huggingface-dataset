@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jack1211son/abdta-single-task-aspect-v4-0pct` | 435 M | 256 tokens | Clasificación de tono financiero (ABDTA) | no disponible | HuggingFace (0 descargas) |
-| `microsoft/deberta-v3-large` | 435 M | 512 tokens | Modelo base (preentrenamiento) | MIT | HuggingFace (ampliamente usado) |
-| `ProsusAI/finbert` | 110 M | 512 tokens | Análisis de sentimiento financiero | Apache 2.0 | HuggingFace (muy popular) |
-| `yiyanghkust/finbert-tone` | 110 M | 512 tokens | Tono financiero (3 clases) | Apache 2.0 | HuggingFace |
+| `jack1211son/abdta-single-task-aspect-v4-0pct` | 435 M | 256 tokens | Clasificación de tono financiero (ABDTA) | no disponible | Hugging Face (0 descargas) |
+| `microsoft/deberta-v3-large` | 435 M | 512 tokens | Modelo base (preentrenamiento) | MIT | Hugging Face (ampliamente usado) |
+| `ProsusAI/finbert` | 110 M | 512 tokens | Análisis de sentimiento financiero | Apache 2.0 | Hugging Face (muy popular) |
+| `yiyanghkust/finbert-tone` | 110 M | 512 tokens | Tono financiero (3 clases) | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa: no se dispone de resultados de benchmarks del modelo evaluado frente a estas alternativas, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. El modelo evaluado es un fine-tune específico para un dominio muy concreto (empresas indonesias, inglés) y con una licencia no especificada, lo que limita su uso comercial frente a alternativas con licencias permisivas.
 
@@ -86,6 +86,6 @@ La comparativa es orientativa: no se dispone de resultados de benchmarks del mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jack1211son/abdta-single-task-aspect-v4-0pct
+- Hugging Face: https://huggingface.co/jack1211son/abdta-single-task-aspect-v4-0pct
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - No se han encontrado en la información proporcionada papers, blogs, repositorios o demos adicionales asociados al modelo.

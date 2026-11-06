@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jennifercook/retrieval-2023` es un repositorio experimental publicado en HuggingFace por el usuario jennifercook que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval) multimodal. El repositorio no es un modelo entrenado ni un checkpoint con resultados validados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`jennifercook/retrieval-2023` es un repositorio experimental publicado en Hugging Face por el usuario jennifercook que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval) multimodal. El repositorio no es un modelo entrenado ni un checkpoint con resultados validados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El dato real de parámetros registrado en el archivo safetensors es de 24.832 parámetros, una cifra muy alejada de lo que la model card describe como escala "giant". Esta discrepancia sugiere que la configuración declarada en `config.json` corresponde a una arquitectura de mayor tamaño que la materializada en el checkpoint de inicialización publicado. El tamaño del repositorio es de 0,0 GB, coherente con un artefacto de muy pocos parámetros.
 
@@ -44,7 +44,7 @@ No hay información disponible sobre el volumen de tokens o imágenes de entrena
 - Plantilla de investigación para atención dispersa: el repositorio sirve como punto de partida para comparar atención dispersa frente a atención densa en tareas de retrieval, siempre que se entrene el modelo desde cero con datos propios.
 - Estudio de normalización ScaleNorm en visión: útil para reproducir y contrastar variantes de normalización en transformers de visión en un entorno controlado.
 - Referencia para comparaciones de capacidad equivalente: la propia model card recomienda incluir una línea base de capacidad similar, y este repositorio puede actuar como el artefacto de control de dicha comparación.
-- Docencia y formación: sirve para ilustrar la estructura de un repositorio de modelo en HuggingFace (config, training args, script, safetensors) sin la complejidad de un modelo grande.
+- Docencia y formación: sirve para ilustrar la estructura de un repositorio de modelo en Hugging Face (config, training args, script, safetensors) sin la complejidad de un modelo grande.
 - Base para fine-tuning en dominios concretos: una vez entrenado, el diseño DeiT es aplicable a recuperación de imágenes en catálogos, archivos fotográficos o colecciones documentales; hoy no es utilizable para ello de forma directa.
 - Búsqueda texto-imagen en producción: no recomendable con el artefacto actual, ya que no hay ningún resultado que acredite calidad de recuperación y no existe módulo de texto confirmado.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jennifercook/retrieval-2023 | 24.832 (checkpoint real) | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
+| jennifercook/retrieval-2023 | 24.832 (checkpoint real) | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
 | CLIP (OpenAI) | no disponible en la informacion proporcionada | imagen + texto | referencia consolidada en retrieval | licencia propia de OpenAI | público |
 | OpenCLIP | no disponible en la informacion proporcionada | imagen + texto | referencia consolidada en retrieval | Apache 2.0 en la mayoría de variantes | público |
 | BLIP / BLIP-2 | no disponible en la informacion proporcionada | imagen + texto | referencia consolidada en captioning y retrieval | licencias variables por variante | público |
@@ -93,7 +93,7 @@ No se dispone de cifras verificadas de parámetros ni de métricas de los modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jennifercook/retrieval-2023
+- Modelo en Hugging Face: https://huggingface.co/jennifercook/retrieval-2023
 - Archivo de pesos: https://huggingface.co/jennifercook/retrieval-2023/blob/main/model.safetensors
 - Configuración de arquitectura: https://huggingface.co/jennifercook/retrieval-2023/blob/main/config.json
 - Receta de experimento: https://huggingface.co/jennifercook/retrieval-2023/blob/main/training_args.json

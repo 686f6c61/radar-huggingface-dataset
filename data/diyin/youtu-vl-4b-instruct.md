@@ -73,9 +73,9 @@ Modelos comparables en la categoría de VLM compactos (2-6B parámetros) incluye
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Youtu-VL-4B-Instruct | 5,34B | no disponible | youtu-vl (restringida en UE) | HuggingFace, ModelScope |
-| Qwen2-VL-2B | 2B | no disponible | Apache 2.0 | HuggingFace |
-| InternVL2-2B | 2B | no disponible | MIT | HuggingFace |
+| Youtu-VL-4B-Instruct | 5,34B | no disponible | youtu-vl (restringida en UE) | Hugging Face, ModelScope |
+| Qwen2-VL-2B | 2B | no disponible | Apache 2.0 | Hugging Face |
+| InternVL2-2B | 2B | no disponible | MIT | Hugging Face |
 
 Nota: los datos de Qwen2-VL-2B e InternVL2-2B provienen de conocimiento general y pueden no estar actualizados. La comparación cuantitativa de rendimiento no es posible con la información disponible.
 
@@ -92,8 +92,8 @@ Nota: los datos de Qwen2-VL-2B e InternVL2-2B provienen de conocimiento general 
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/DIYIN/Youtu-VL-4B-Instruct
-- Repositorio HuggingFace original: https://huggingface.co/tencent/Youtu-VL-4B-Instruct
+- Repositorio Hugging Face (espejo): https://huggingface.co/DIYIN/Youtu-VL-4B-Instruct
+- Repositorio Hugging Face original: https://huggingface.co/tencent/Youtu-VL-4B-Instruct
 - Versión GGUF: https://huggingface.co/tencent/Youtu-VL-4B-Instruct-GGUF
 - Página del proyecto: https://youtu-tip.com/#llm
 - Código: https://github.com/TencentCloudADP/youtu-vl

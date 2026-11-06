@@ -95,7 +95,7 @@ No se dispone de comparativas publicadas con otros modelos de ciberseguridad com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mindflar909/GLM-5.3-CYBERSECURITY-FP8
+- Modelo en Hugging Face: https://huggingface.co/mindflar909/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Modelo base cuantizado FP8: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3

@@ -55,8 +55,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `agentic-ptb/dpsk-v4-flash.h079.sft5.step_400` | 9,4B | no disponible | no disponible | Checkpoint intermedio en HuggingFace |
-| `Qwen/Qwen3.5-9B-Base` | 9,4B | no disponible (heredado) | no disponible | Modelo base publico en HuggingFace |
+| `agentic-ptb/dpsk-v4-flash.h079.sft5.step_400` | 9,4B | no disponible | no disponible | Checkpoint intermedio en Hugging Face |
+| `Qwen/Qwen3.5-9B-Base` | 9,4B | no disponible (heredado) | no disponible | Modelo base publico en Hugging Face |
 | DeepSeek v4-flash (driver) | no disponible | no disponible | no disponible | Modelo profesor, no publicado en este repositorio |
 
 La comparativa se limita a la relacion con su modelo base y su modelo profesor. No se dispone de datos suficientes sobre DeepSeek v4-flash para realizar una comparacion tecnica completa. Tampoco se han encontrado modelos comparables de la misma categoria (checkpoints intermedios de destilacion de razonamiento) en la informacion proporcionada.
@@ -73,5 +73,5 @@ La comparativa se limita a la relacion con su modelo base y su modelo profesor. 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h079.sft5.step_400
+- Repositorio del modelo en Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h079.sft5.step_400
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.5-9B-Base

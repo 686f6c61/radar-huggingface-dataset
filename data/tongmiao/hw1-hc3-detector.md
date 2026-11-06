@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tongmiao/hw1-hc3-detector es un clasificador binario de texto que distingue respuestas escritas por personas de respuestas generadas por ChatGPT. Se ha construido mediante fine-tuning de `sentence-transformers/all-MiniLM-L6-v2`, un encoder de tipo BERT de 22.713.986 parametros, sobre respuestas del corpus HC3. El autor lo publica bajo la cuenta Tongmiao y esta etiquetado en HuggingFace con la tarea `text-classification`.
+Tongmiao/hw1-hc3-detector es un clasificador binario de texto que distingue respuestas escritas por personas de respuestas generadas por ChatGPT. Se ha construido mediante fine-tuning de `sentence-transformers/all-MiniLM-L6-v2`, un encoder de tipo BERT de 22.713.986 parametros, sobre respuestas del corpus HC3. El autor lo publica bajo la cuenta Tongmiao y esta etiquetado en Hugging Face con la tarea `text-classification`.
 
 El problema que resuelve es acotado y concreto: la deteccion de texto generado por IA dentro del dominio de las respuestas de HC3, con dos etiquetas (`0 = Human`, `1 = ChatGPT`). Segun la model card, el modelo alcanza una exactitud de 0,9919 en el conjunto de test, frente a 0,8449 de una linea base de regresion logistica sobre embeddings congelados, lo que supone una mejora de casi 15 puntos porcentuales.
 
@@ -32,7 +32,7 @@ El entrenamiento, segun la model card, uso el optimizador AdamW con una tasa de 
 - Clasificacion binaria de texto: asigna la etiqueta `0` (humano) o `1` (ChatGPT) a una respuesta de entrada.
 - Deteccion de texto generado por IA en el dominio especifico del corpus HC3.
 - Extraccion de embeddings a traves de `text-embeddings-inference`, segun las etiquetas declaradas del repositorio.
-- Compatibilidad con el sistema de endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con el sistema de endpoints de Hugging Face (`endpoints_compatible`).
 - Integracion directa en la libreria `transformers` mediante la tarea `text-classification`.
 - No soporta generacion de texto, razonamiento, codigo, matematicas, vision ni audio.
 - No hay evidencia de soporte de tool calling, function calling ni flujos de agentes.
@@ -62,7 +62,7 @@ Estos son los unicos datos de evaluacion publicados en la model card. No hay res
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluidas GTX 1050, RTX 3060, RTX 4090, A100 o H100. El modelo esta muy por debajo de las capacidades de cualquiera de ellas.
 - Compatibilidad con GPU de consumo: si, cabe en cualquier GPU de consumo actual y tambien en tarjetas integradas.
 - Ejecucion en CPU: viable sin aceleracion, dado el reducido numero de parametros y la ventana de 256 tokens.
-- Opciones de despliegue: pipeline de `transformers`, servidor `text-embeddings-inference`, endpoints de HuggingFace, ONNX Runtime y FastAPI con PyTorch en modo inferencia.
+- Opciones de despliegue: pipeline de `transformers`, servidor `text-embeddings-inference`, endpoints de Hugging Face, ONNX Runtime y FastAPI con PyTorch en modo inferencia.
 - vLLM y llama.cpp: no son las herramientas habituales para este tipo de modelo; vLLM esta orientado a generacion y llama.cpp requeriria una conversion a GGUF que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponible (no se publican mediciones).
 
@@ -72,11 +72,11 @@ Se han localizado varios repositorios con el mismo identificador `hw1-hc3-detect
 
 | Modelo | Parametros | Contexto | Exactitud declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tongmiao/hw1-hc3-detector | 22.713.986 | 256 tokens | 0,9919 (test HC3) | no disponible | HuggingFace |
-| TianhangCheng7/hw1-hc3-detector | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace |
-| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| skyyyyks/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Tongmiao/hw1-hc3-detector | 22.713.986 | 256 tokens | 0,9919 (test HC3) | no disponible | Hugging Face |
+| TianhangCheng7/hw1-hc3-detector | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face |
+| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| skyyyyks/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ Se han localizado varios repositorios con el mismo identificador `hw1-hc3-detect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tongmiao/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/Tongmiao/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Variante de TianhangCheng7: https://huggingface.co/TianhangCheng7/hw1-hc3-detector
 - Variante de Aishkrish: https://huggingface.co/Aishkrish/hw1-hc3-detector

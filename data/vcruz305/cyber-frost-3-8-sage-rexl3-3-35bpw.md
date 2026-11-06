@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que documenta un artefacto de cuantizació
 | Longitud de contexto | no disponible (evaluado en suites de hasta 17,4K tokens) |
 | Tipos de cuantizacion | EXL3 con precisión mixta SAGE a 3,35 bpw (valores K por tensor); 4-bit |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (EXL3, librería exllamav3) |
 
 ## Arquitectura y entrenamiento
@@ -79,8 +79,8 @@ Referencia: el BF16 `Blackfrost-AI/CYBER-FROST-3.8-BF16` obtiene PPL 3,769 en `e
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CYBER-FROST-3.8-SAGE-REXL3-3.35bpw (este) | 28,31B | no disponible | EXL3 SAGE 3,35 bpw, safetensors | qwen-community-license-1.0 | HuggingFace, 0 descargas |
-| Blackfrost-AI/CYBER-FROST-3.8-BF16 | 28,31B (mismo base) | no disponible | BF16, safetensors | qwen-community-license-1.0 | HuggingFace |
+| CYBER-FROST-3.8-SAGE-REXL3-3.35bpw (este) | 28,31B | no disponible | EXL3 SAGE 3,35 bpw, safetensors | qwen-community-license-1.0 | Hugging Face, 0 descargas |
+| Blackfrost-AI/CYBER-FROST-3.8-BF16 | 28,31B (mismo base) | no disponible | BF16, safetensors | qwen-community-license-1.0 | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación directa documentada es con el BF16 del que deriva, con las métricas de fidelidad de la sección anterior. No se dispone de datos sobre otros modelos de ciberseguridad comparables en la información proporcionada.
@@ -100,7 +100,7 @@ La única comparación directa documentada es con el BF16 del que deriva, con la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vcruz305/CYBER-FROST-3.8-SAGE-REXL3-3.35bpw
+- Modelo en Hugging Face: https://huggingface.co/vcruz305/CYBER-FROST-3.8-SAGE-REXL3-3.35bpw
 - Modelo base BF16: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Perfil del autor de la cuantización: https://huggingface.co/vcruz305
 - Organización Blackfrost-AI: https://huggingface.co/Blackfrost-AI

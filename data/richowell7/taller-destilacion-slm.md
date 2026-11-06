@@ -13,7 +13,7 @@ Su interés es metodológico más que funcional: documenta de forma transparente
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (modelo base SmolLM2-135M-Instruct) con adaptador LoRA (r=16, alpha=32) |
-| Parámetros totales | 135 M en el modelo base; número de parámetros del adaptador no disponible (el repositorio ocupa menos de 0,1 GB según HuggingFace) |
+| Parámetros totales | 135 M en el modelo base; número de parámetros del adaptador no disponible (el repositorio ocupa menos de 0,1 GB según Hugging Face) |
 | Parámetros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible en la información proporcionada (heredada del modelo base) |
 | Tipos de cuantización | No disponible; el adaptador se publica en safetensors y no documenta cuantizaciones propias |
@@ -84,10 +84,10 @@ La tabla por temas de la model card recoge 5 de los 6 temas anunciados; no se pu
 
 | Modelo | Parámetros | Contexto | Licencia | Evaluación propia | Disponibilidad |
 |---|---|---|---|---|---|
-| taller-destilacion-slm | 135 M (base) + LoRA | No disponible | Apache 2.0 (con salvedad sobre los datos de OpenAI) | 2,75/10 en examen de 12 preguntas | Público en HuggingFace, 0 descargas, 1 like |
-| SmolLM2-135M-Instruct (base) | 135 M | No disponible en la información | Apache 2.0 | 2,00/10 en el mismo examen | Público en HuggingFace |
-| PamelaAlam/smollm2-360m-ia-generativa-lora | 360 M (base SmolLM2-360M-Instruct) + LoRA | No disponible | No disponible | No disponible | Público en HuggingFace |
-| SmolLM2-360M-Instruct (base alternativo) | 360 M | No disponible en la información | Apache 2.0 | No disponible | Público en HuggingFace |
+| taller-destilacion-slm | 135 M (base) + LoRA | No disponible | Apache 2.0 (con salvedad sobre los datos de OpenAI) | 2,75/10 en examen de 12 preguntas | Público en Hugging Face, 0 descargas, 1 like |
+| SmolLM2-135M-Instruct (base) | 135 M | No disponible en la información | Apache 2.0 | 2,00/10 en el mismo examen | Público en Hugging Face |
+| PamelaAlam/smollm2-360m-ia-generativa-lora | 360 M (base SmolLM2-360M-Instruct) + LoRA | No disponible | No disponible | No disponible | Público en Hugging Face |
+| SmolLM2-360M-Instruct (base alternativo) | 360 M | No disponible en la información | Apache 2.0 | No disponible | Público en Hugging Face |
 
 La comparación con el adaptador de PamelaAlam es pertinente por tratarse de un ejercicio equivalente sobre la misma familia de modelos, pero no se han divulgado sus métricas ni su licencia en la información disponible, por lo que no puede establecerse una comparación de rendimiento.
 
@@ -106,7 +106,7 @@ La comparación con el adaptador de PamelaAlam es pertinente por tratarse de un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richowell7/taller-destilacion-slm
+- Modelo en Hugging Face: https://huggingface.co/richowell7/taller-destilacion-slm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Adaptador equivalente sobre SmolLM2-360M: https://huggingface.co/PamelaAlam/smollm2-360m-ia-generativa-lora
 - Artículo divulgativo sobre destilación de modelos (Xataka): https://www.xataka.com/basics/que-modelos-destilados-inteligencia-artificial-destilacion-llm

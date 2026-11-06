@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAIMPLER/clap-onnx es un repositorio de pesos publicado en HuggingFace por el usuario SAIMPLER el 10 de septiembre de 2026 y actualizado el mismo dia. La unica informacion verificable que acompana al repositorio es la etiqueta `onnx`, la licencia Apache 2.0 y un tamano de 0,6 GB. La model card no contiene descripcion, no declara pipeline, no especifica idiomas y no incluye resultados de evaluacion.
+SAIMPLER/clap-onnx es un repositorio de pesos publicado en Hugging Face por el usuario SAIMPLER el 10 de septiembre de 2026 y actualizado el mismo dia. La unica informacion verificable que acompana al repositorio es la etiqueta `onnx`, la licencia Apache 2.0 y un tamano de 0,6 GB. La model card no contiene descripcion, no declara pipeline, no especifica idiomas y no incluye resultados de evaluacion.
 
 El nombre del repositorio sugiere que se trata de una exportacion al formato ONNX de un modelo de la familia CLAP (Contrastive Language-Audio Pretraining), una arquitectura disenada para alinear representaciones de audio y texto en un espacio comun. Sin embargo, esta interpretacion no esta confirmada por el autor en ningun campo del repositorio ni en la model card, por lo que debe tratarse como una hipotesis de trabajo y no como un dato tecnico.
 
@@ -69,9 +69,9 @@ No hay informacion suficiente para establecer una comparativa cuantitativa con a
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAIMPLER/clap-onnx | exportacion ONNX sin documentar | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| LAION CLAP (referencia de la familia) | audio-texto contrastivo | no disponible en esta consulta | no disponible | no disponible | HuggingFace |
-| Alternativas de clasificacion de audio zero-shot | diversos | no disponible | no disponible | variable | HuggingFace, frameworks de audio |
+| SAIMPLER/clap-onnx | exportacion ONNX sin documentar | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| LAION CLAP (referencia de la familia) | audio-texto contrastivo | no disponible en esta consulta | no disponible | no disponible | Hugging Face |
+| Alternativas de clasificacion de audio zero-shot | diversos | no disponible | no disponible | variable | Hugging Face, frameworks de audio |
 
 Si el modelo no pertenece a la familia CLAP, esta tabla no es aplicable.
 
@@ -88,7 +88,7 @@ Si el modelo no pertenece a la familia CLAP, esta tabla no es aplicable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SAIMPLER/clap-onnx
+- Repositorio en Hugging Face: https://huggingface.co/SAIMPLER/clap-onnx
 - Paper, blog o repositorio adicional: no disponible
 - Demo: no disponible
 - La busqueda web realizada no ha devuelto ningun enlace relacionado con este modelo.

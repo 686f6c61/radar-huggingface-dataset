@@ -114,7 +114,7 @@ Frente a su propio modelo de origen, Ternary Bonsai 1.7B cede 8,1 puntos de medi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Oscilla/Ternary-Bonsai-1.7B-mlx-2bit
+- Hugging Face: https://huggingface.co/Oscilla/Ternary-Bonsai-1.7B-mlx-2bit
 - Modelo base sin empaquetar: https://huggingface.co/prism-ml/Ternary-Bonsai-1.7B-unpacked
 - Web de Prism ML: https://prismml.com
 - White paper (referenciado como ternary-bonsai-8b-whitepaper.pdf): https://github.com/PrismML-Eng/Bonsai-demo/blob/main/ternary-bonsai-8b-whitepaper.pdf

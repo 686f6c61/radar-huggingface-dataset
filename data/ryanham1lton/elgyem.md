@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elgyem es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, datos de entrenamiento, capacidades ni uso previsto. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no se puede confirmar el número de parámetros ni la naturaleza de los pesos a partir de los metadatos disponibles.
+Elgyem es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, datos de entrenamiento, capacidades ni uso previsto. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no se puede confirmar el número de parámetros ni la naturaleza de los pesos a partir de los metadatos disponibles.
 
 El modelo no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado el mismo día (28 de octubre de 2026), lo que apunta a una publicación reciente y sin validación por parte de la comunidad. No dispone de pipeline declarado, no se especifican idiomas soportados y no hay enlaces a papers, repositorios de código ni demos.
 
@@ -75,5 +75,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Elgyem
+- Hugging Face: https://huggingface.co/Ryanham1lton/Elgyem
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

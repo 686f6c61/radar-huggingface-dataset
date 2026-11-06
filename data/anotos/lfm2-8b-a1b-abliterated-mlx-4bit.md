@@ -82,7 +82,7 @@ La informacion proporcionada no incluye datos de rendimiento ni de contexto de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anotos/LFM2-8B-A1B-Abliterated-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Anotos/LFM2-8B-A1B-Abliterated-MLX-4bit
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-LFM2-8B-A1B-abliterated
 - Modelo original: https://huggingface.co/LiquidAI/LFM2-8B-A1B
 - Perfil del autor de la abliteration: https://huggingface.co/huihui-ai

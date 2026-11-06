@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.1-c0.999-r0.2-s42 es un checkpoint de investigación publicado por el usuario Cisco1963 en HuggingFace. Se trata de un modelo basado en la arquitectura GPT-2 (etiqueta `gpt2` confirmada en la ficha) con 122.706.432 parámetros totales (aproximadamente 0,12B), por lo que se encuadra en la categoría de modelos pequeños tipo GPT-2 small. El nombre sugiere que forma parte de una familia de experimentos sobre plasticidad en modelos de lenguaje (LLM plasticity), con variaciones de idioma (en/zh), tipo de inicialización (linear, rand), y una serie de hiperparámetros codificados en el nombre (d0.1, c0.999, r0.2, s42 correspondiente a la semilla 42).
+Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.1-c0.999-r0.2-s42 es un checkpoint de investigación publicado por el usuario Cisco1963 en Hugging Face. Se trata de un modelo basado en la arquitectura GPT-2 (etiqueta `gpt2` confirmada en la ficha) con 122.706.432 parámetros totales (aproximadamente 0,12B), por lo que se encuadra en la categoría de modelos pequeños tipo GPT-2 small. El nombre sugiere que forma parte de una familia de experimentos sobre plasticidad en modelos de lenguaje (LLM plasticity), con variaciones de idioma (en/zh), tipo de inicialización (linear, rand), y una serie de hiperparámetros codificados en el nombre (d0.1, c0.999, r0.2, s42 correspondiente a la semilla 42).
 
 El modelo no dispone de model card, pipeline declarado, licencia explícita en la ficha ni idiomas confirmados. La información pública es mínima: 5 descargas, 0 likes y un repositorio de 10,8 GB, un tamaño considerablemente superior al esperado para un modelo de 122M parámetros en F32 (que rondaría los 0,5 GB), lo que apunta a que el repositorio incluye múltiples checkpoints, estados de optimizador o artefactos de entrenamiento adicionales.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en FP16/BF16: aproximadamente 0,25 GB para los pesos.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) e incluso GPUs integradas o CPU son suficientes por el tamano del modelo.
 - Cabe sin dificultad en cualquier GPU consumer; tambien se puede ejecutar en CPU.
-- Opciones de despliegue: al estar en safetensors y ser compatible con la arquitectura GPT-2, puede cargarse con HuggingFace Transformers, y convertirse a GGUF para llama.cpp u Ollama. No hay confirmacion de soporte en vLLM/TGI.
+- Opciones de despliegue: al estar en safetensors y ser compatible con la arquitectura GPT-2, puede cargarse con Hugging Face Transformers, y convertirse a GGUF para llama.cpp u Ollama. No hay confirmacion de soporte en vLLM/TGI.
 - Latencia y throughput estimados: no disponibles. Por el tamano (122M parametros) se espera un throughput alto en GPU moderna, pero no hay datos publicados.
 - Nota: el repositorio ocupa 10,8 GB, muy por encima de los ~0,5 GB que ocuparian solo los pesos F32, lo que sugiere presencia de checkpoints adicionales o estados de entrenamiento.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-en_zh_linear_8-...-s42 | 122,7M | no disponible | no disponible | HuggingFace, 5 descargas | Checkpoint de investigacion |
+| Cisco1963/llmplasticity-en_zh_linear_8-...-s42 | 122,7M | no disponible | no disponible | Hugging Face, 5 descargas | Checkpoint de investigacion |
 | GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Ampliamente disponible | Modelo de referencia de la misma arquitectura |
 | DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Version destilada de GPT-2 |
-| Cisco1963/llmplasticity-baseline-en_zh_linear_8-s43 | 0,1B | no disponible | no disponible | HuggingFace | Variante baseline de la misma familia |
+| Cisco1963/llmplasticity-baseline-en_zh_linear_8-s43 | 0,1B | no disponible | no disponible | Hugging Face | Variante baseline de la misma familia |
 
 Los datos de contexto de GPT-2 small y DistilGPT-2 corresponden a sus especificaciones publicas conocidas; no se ha verificado el contexto de este checkpoint.
 
@@ -77,13 +77,13 @@ Los datos de contexto de GPT-2 small y DistilGPT-2 corresponden a sus especifica
 - No se confirman los idiomas soportados; aunque el nombre sugiere en/zh, la calidad en cada idioma es desconocida.
 - Licencia no declarada en la ficha: no se puede garantizar uso comercial. Un modelo similar de la familia aparece como MIT en un indice de terceros, pero debe verificarse la licencia real antes de cualquier uso en produccion.
 - Artefacto de investigacion: no esta pensado ni validado para produccion, atencion al cliente ni generacion de codigo en entornos reales.
-- Sin soporte de Inference Provider: no se puede probar directamente desde la plataforma de HuggingFace.
+- Sin soporte de Inference Provider: no se puede probar directamente desde la plataforma de Hugging Face.
 - El elevado tamano del repositorio (10,8 GB) frente a los pesos del modelo puede implicar la presencia de artefactos de entrenamiento que no son pesos utilizables directamente.
 - Sin datos de benchmarks, no se puede comparar su rendimiento real frente a GPT-2 small o alternativas.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.1-c0.999-r0.2-s42
+- Hugging Face (modelo): https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.1-c0.999-r0.2-s42
 - Perfil del autor: https://huggingface.co/Cisco1963/models
 - Modelo relacionado (baseline en_zh linear 8, s43): https://huggingface.co/Cisco1963/llmplasticity-baseline-en_zh_linear_8-s43
 - Modelo relacionado (zh_en instant 8): https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-d0.01-c0.9-r0.8-s42

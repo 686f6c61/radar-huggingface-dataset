@@ -68,7 +68,7 @@ No disponible. CARTO no es un modelo de lenguaje generativo, sino un sistema de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/cartographer-agent
+- Hugging Face: https://huggingface.co/Snapkitty/cartographer-agent
 - Frontend en GitHub Pages: https://snapkittywest.github.io/cartographer-agent/
 - Partner (VAULT Fundability Engine): https://snapkittywest.github.io/vault-fundability-engine/
 - Contacto: devops@collectivekitty.com

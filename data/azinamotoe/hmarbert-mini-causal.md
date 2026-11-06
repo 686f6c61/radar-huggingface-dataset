@@ -29,7 +29,7 @@ Su relevancia es doble. Por un lado, es un ejemplo de reciclaje de un modelo enm
 | Pipeline | text-generation |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación y actualización | 21 de septiembre de 2026 (según HuggingFace) |
+| Fecha de creación y actualización | 21 de septiembre de 2026 (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo de atención | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HmarBERT-mini-causal | 16,91 M | hasta 64 tokens | Causal (decoder) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| HmarBERT-mini (modelo base) | 16,91 M (según la model card del modelo causal) | no disponible | Bidireccional (encoder) | Apache 2.0 | HuggingFace |
+| HmarBERT-mini-causal | 16,91 M | hasta 64 tokens | Causal (decoder) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| HmarBERT-mini (modelo base) | 16,91 M (según la model card del modelo causal) | no disponible | Bidireccional (encoder) | Apache 2.0 | Hugging Face |
 | Otros modelos generativos para hmar | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas documentadas en la información proporcionada |
 
 No se dispone de comparativas de rendimiento con modelos de tamaño similar, ya que no se han publicado benchmarks. La única comparación verificable es estructural: el modelo base usa atención bidireccional y el modelo causal emplea máscara triangular inferior, reutilizando los mismos pesos preentrenados.
@@ -104,7 +104,7 @@ No se dispone de comparativas de rendimiento con modelos de tamaño similar, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azinamotoe/HmarBERT-mini-causal
+- Modelo en Hugging Face: https://huggingface.co/azinamotoe/HmarBERT-mini-causal
 - Modelo base: https://huggingface.co/azinamotoe/HmarBERT-mini
 - Dataset de alineamiento: https://huggingface.co/datasets/hmar-heritage-org/sentences
 - Organización mantenedora: https://huggingface.co/hmar-heritage-org

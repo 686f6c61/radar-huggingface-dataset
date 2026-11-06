@@ -2,7 +2,7 @@
 
 ## Resumen
 
-git-vqav2-medium es un ajuste fino del modelo microsoft/git-base-vqav2 publicado por el usuario thealper2 en HuggingFace. Se trata de un modelo de respuesta a preguntas visuales (visual question answering, VQA) construido sobre la arquitectura GIT (Generative Image-to-text Transformer) en su variante base, con 177.159.738 parámetros en total. El modelo combina un codificador visual CLIP ViT-B/16 de 12 capas que procesa imágenes a 480×480 píxeles (901 tokens visuales) con un decodificador de texto causal Transformer de 6 capas, dimensión oculta 768, 12 cabezas de atención y un máximo de 1024 posiciones.
+git-vqav2-medium es un ajuste fino del modelo microsoft/git-base-vqav2 publicado por el usuario thealper2 en Hugging Face. Se trata de un modelo de respuesta a preguntas visuales (visual question answering, VQA) construido sobre la arquitectura GIT (Generative Image-to-text Transformer) en su variante base, con 177.159.738 parámetros en total. El modelo combina un codificador visual CLIP ViT-B/16 de 12 capas que procesa imágenes a 480×480 píxeles (901 tokens visuales) con un decodificador de texto causal Transformer de 6 capas, dimensión oculta 768, 12 cabezas de atención y un máximo de 1024 posiciones.
 
 El ajuste se ha realizado sobre el conjunto de datos HuggingFaceM4/VQAv2, empleando 50.000 preguntas del split de entrenamiento (imágenes COCO train2014). La respuesta objetivo se obtiene por voto mayoritario de las 10 respuestas humanas, normalizada a minúsculas y sin puntuación en los extremos. El entrenamiento completo (estrategia `full`, sin LoRA ni congelación de capas) se ejecutó durante 2 épocas con AdamW a una tasa de aprendizaje de 2e-06 sobre una única NVIDIA GeForce RTX 5060 Ti, con 3.126 pasos de optimizador.
 
@@ -91,9 +91,9 @@ Además, el autor reporta una `vqa_accuracy` de 84,39 en el conjunto de selecci�
 
 | Modelo | Parámetros | Contexto / entrada | Precisión VQA (subconjunto del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thealper2/git-vqav2-medium | 177.159.738 | 1024 posiciones, imagen 480×480 | 82,54 | MIT | HuggingFace, transformers, safetensors fp32 |
-| microsoft/git-base-vqav2 | No disponible en la información proporcionada (arquitectura y base idénticas) | 1024 posiciones, imagen 480×480 | 83,32 | No disponible en la información proporcionada | HuggingFace, transformers |
-| microsoft/git-base | No disponible en la información proporcionada | No disponible | No evaluado en el subconjunto del autor | No disponible en la información proporcionada | HuggingFace |
+| thealper2/git-vqav2-medium | 177.159.738 | 1024 posiciones, imagen 480×480 | 82,54 | MIT | Hugging Face, transformers, safetensors fp32 |
+| microsoft/git-base-vqav2 | No disponible en la información proporcionada (arquitectura y base idénticas) | 1024 posiciones, imagen 480×480 | 83,32 | No disponible en la información proporcionada | Hugging Face, transformers |
+| microsoft/git-base | No disponible en la información proporcionada | No disponible | No evaluado en el subconjunto del autor | No disponible en la información proporcionada | Hugging Face |
 | Alternativas de VQA de tamaño similar (por ejemplo, variantes base de BLIP) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación cuantitativa solo puede establecerse con el checkpoint base, que supera a este ajuste en precisión VQA global (-0,78), coincidencia exacta (-1,40) y preguntas numéricas (-2,40), y solo mejora ligeramente en preguntas de sí/no (+0,05). No se dispone de datos verificados de otros modelos comparables en la documentación consultada.
@@ -113,7 +113,7 @@ La comparación cuantitativa solo puede establecerse con el checkpoint base, que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/git-vqav2-medium
+- Modelo en Hugging Face: https://huggingface.co/thealper2/git-vqav2-medium
 - Modelo base: https://huggingface.co/microsoft/git-base-vqav2
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/HuggingFaceM4/VQAv2
 - No se han encontrado en la información proporcionada enlaces adicionales a artículos, blogs técnicos, repositorios de código o demostraciones.

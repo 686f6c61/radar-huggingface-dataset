@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-TTSD-v0 es un modelo de síntesis de voz conversacional (text-to-speech para diálogos) publicado en HuggingFace por el usuario Jinstudio. Convierte guiones de diálogo entre dos hablantes en habla conversacional expresiva y natural, con soporte de clonación de voz zero-shot para ambos interlocutores y generación de hasta 960 segundos de audio en una sola sesión. Está pensado, según su model card, para producción de pódcasts con IA y doblaje de conversaciones.
+MOSS-TTSD-v0 es un modelo de síntesis de voz conversacional (text-to-speech para diálogos) publicado en Hugging Face por el usuario Jinstudio. Convierte guiones de diálogo entre dos hablantes en habla conversacional expresiva y natural, con soporte de clonación de voz zero-shot para ambos interlocutores y generación de hasta 960 segundos de audio en una sola sesión. Está pensado, según su model card, para producción de pódcasts con IA y doblaje de conversaciones.
 
 El modelo se construye sobre Qwen/Qwen3-1.7B-Base como modelo de lenguaje base, al que se añade un códec neural de audio semántico-acústico unificado; el repositorio declara 2.049.551.360 parámetros totales en safetensors (unos 2,05 mil millones) y un tamaño de 4,1 GB. Es bilingüe chino-inglés y se distribuye con licencia Apache 2.0, lo que permite uso comercial según el autor.
 
@@ -66,8 +66,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos TTS compa
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jinstudio/MOSS-TTSD-v0 | 2,05 B (total, incluye códec) | No disponible | Texto a voz de diálogo (zh/en) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B-Base | 1,7 B (según denominación del modelo) | No disponible en la información proporcionada | LLM de texto | No indicada en la información | HuggingFace (modelo base) |
+| Jinstudio/MOSS-TTSD-v0 | 2,05 B (total, incluye códec) | No disponible | Texto a voz de diálogo (zh/en) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B-Base | 1,7 B (según denominación del modelo) | No disponible en la información proporcionada | LLM de texto | No indicada en la información | Hugging Face (modelo base) |
 | Otros sistemas TTS abiertos | No disponible | No disponible | Texto a voz | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos TTS compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/MOSS-TTSD-v0
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/MOSS-TTSD-v0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo; los resultados devueltos corresponden a wikis y foros del mod Calamity de Terraria y no guardan relación con MOSS-TTSD.
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

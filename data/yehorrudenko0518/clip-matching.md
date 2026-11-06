@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yehorrudenko0518/clip-matching` es un repositorio de HuggingFace publicado por el usuario yehorrudenko0518 que contiene una implementacion propia y minima de una arquitectura tipo CLIP orientada a tareas de *matching* (emparejamiento entre modalidades, presumiblemente imagen-texto). No se trata de un modelo entrenado ni de un release con pesos listos para produccion: el propio autor lo describe explicitamente como un punto de partida reproducible con un checkpoint de inicializacion valido solo para *smoke tests*. El repositorio incluye `eval.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
+`yehorrudenko0518/clip-matching` es un repositorio de Hugging Face publicado por el usuario yehorrudenko0518 que contiene una implementacion propia y minima de una arquitectura tipo CLIP orientada a tareas de *matching* (emparejamiento entre modalidades, presumiblemente imagen-texto). No se trata de un modelo entrenado ni de un release con pesos listos para produccion: el propio autor lo describe explicitamente como un punto de partida reproducible con un checkpoint de inicializacion valido solo para *smoke tests*. El repositorio incluye `eval.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
 El modelo es extremadamente pequeno: el recuento real de parametros en el fichero safetensors es de 49.600 (aproximadamente 0,05 M), lo que lo situa tres ordenes de magnitud por debajo de cualquier CLIP ViT-B/32 convencional. La arquitectura declarada es CLIP con escala `base`, atencion dispersa (*sparse*), fusion por *co attention*, activacion swish y normalizacion `scalenorm`. La receta de experimento por defecto usa el optimizador Adafactor con un esquema de *step schedule*.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de caracter puramente experimental: sirve com
 | Licencia | MIT |
 | Formato de pesos | safetensors (PyTorch); no se ofrece GGUF ni otros formatos |
 | Escala declarada | base |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion | 11 de octubre de 2026 |
 | Ultima actualizacion | 11 de octubre de 2026 |
@@ -99,6 +99,6 @@ La diferencia fundamental no es de rendimiento sino de estado: las alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yehorrudenko0518/clip-matching
+- Modelo en Hugging Face: https://huggingface.co/yehorrudenko0518/clip-matching
 - Ficheros incluidos en el repositorio, segun la model card: `eval.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los unicos resultados obtenidos correspondian a cuentas de redes sociales sin relacion con el repositorio.

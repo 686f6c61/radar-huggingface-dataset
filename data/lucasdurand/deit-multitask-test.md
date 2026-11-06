@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucasdurand/deit-multitask-test` es un repositorio experimental publicado en HuggingFace que contiene una implementación compacta y personalizada de DeiT (Data-efficient Image Transformer) orientada a tareas multitarea. Lo desarrolla el usuario lucasdurand y se distribuye con licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida reproducible para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño alcance, tal como declara explícitamente la model card.
+`lucasdurand/deit-multitask-test` es un repositorio experimental publicado en Hugging Face que contiene una implementación compacta y personalizada de DeiT (Data-efficient Image Transformer) orientada a tareas multitarea. Lo desarrolla el usuario lucasdurand y se distribuye con licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida reproducible para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño alcance, tal como declara explícitamente la model card.
 
 La relevancia de este repositorio es limitada desde el punto de vista de rendimiento: no se reclama ninguna puntuación de benchmark, el checkpoint `model.safetensors` es una inicialización válida pero no entrenada, y el propio autor advierte que no ha sido auditado en robustez, equidad ni transferencia de dominio. Su interés es fundamentalmente pedagógico y de ingeniería: muestra una arquitectura DeiT con atención lineal, fusión por concatenación y MLP, activación Mish y normalización InstanceNorm, junto con una receta de entrenamiento por defecto basada en RMSprop y scheduler coseno.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `lucasdurand/deit-multitask-test` | 33.088 (según safetensors; "giant" declarado) | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Checkpoint de inicialización, sin entrenar, sin benchmarks |
-| `facebook/deit-base-patch16-224` | ≈86 M | 224×224 píxeles de entrada | Apache 2.0 | HuggingFace, ampliamente usado | DeiT de referencia entrenado en ImageNet-1k, con benchmarks publicados |
-| `facebook/deit-large-patch16-224` | ≈304 M | 224×224 píxeles de entrada | Apache 2.0 | HuggingFace | Versión large de referencia, entrenada y evaluada |
-| `google/vit-base-patch16-224` | ≈86 M | 224×224 píxeles de entrada | Apache 2.0 | HuggingFace | Vision Transformer original, base de comparación habitual frente a DeiT |
+| `lucasdurand/deit-multitask-test` | 33.088 (según safetensors; "giant" declarado) | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Checkpoint de inicialización, sin entrenar, sin benchmarks |
+| `facebook/deit-base-patch16-224` | ≈86 M | 224×224 píxeles de entrada | Apache 2.0 | Hugging Face, ampliamente usado | DeiT de referencia entrenado en ImageNet-1k, con benchmarks publicados |
+| `facebook/deit-large-patch16-224` | ≈304 M | 224×224 píxeles de entrada | Apache 2.0 | Hugging Face | Versión large de referencia, entrenada y evaluada |
+| `google/vit-base-patch16-224` | ≈86 M | 224×224 píxeles de entrada | Apache 2.0 | Hugging Face | Vision Transformer original, base de comparación habitual frente a DeiT |
 
 La comparación es estructural, no de rendimiento: el repositorio analizado no ofrece métricas y su checkpoint no está entrenado, por lo que no es equiparable funcionalmente a los DeiT de referencia de Facebook Research ni al ViT de Google.
 
@@ -96,9 +96,9 @@ La comparación es estructural, no de rendimiento: el repositorio analizado no o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucasdurand/deit-multitask-test
+- Repositorio en Hugging Face: https://huggingface.co/lucasdurand/deit-multitask-test
 - Paper original de DeiT (referencia arquitectónica, no vinculado al repo): https://arxiv.org/abs/2012.12877
 - Repositorio oficial de DeiT (Facebook Research): https://github.com/facebookresearch/deit
-- Modelo DeiT base de referencia en HuggingFace: https://huggingface.co/facebook/deit-base-patch16-224
-- Modelo DeiT large de referencia en HuggingFace: https://huggingface.co/facebook/deit-large-patch16-224
+- Modelo DeiT base de referencia en Hugging Face: https://huggingface.co/facebook/deit-base-patch16-224
+- Modelo DeiT large de referencia en Hugging Face: https://huggingface.co/facebook/deit-large-patch16-224
 - Vision Transformer original (Google): https://huggingface.co/google/vit-base-patch16-224

@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de resultados numéricos de otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryehr/RE3RANK-Gemma-4-E4B
+- Hugging Face: https://huggingface.co/Ryehr/RE3RANK-Gemma-4-E4B
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Código: https://github.com/ryehr/RE3RANK
 - Licencia del base: https://ai.google.dev/gemma/docs/gemma_4_license

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`NAQarabash/T5Base-norm` es un checkpoint alojado en HuggingFace por el usuario NAQarabash, construido sobre la arquitectura T5 (Text-to-Text Transfer Transformer) en su variante base. El repositorio contiene un total de 222.903.552 parámetros en formato safetensors, con un tamaño de repositorio de 0,9 GB, lo que corresponde a pesos almacenados en precisión completa (fp32). La librería declarada es `transformers` y la tarea asociada a la etiqueta del pipeline es `text2text-generation`, coherente con el diseño encoder-decoder de T5.
+`NAQarabash/T5Base-norm` es un checkpoint alojado en Hugging Face por el usuario NAQarabash, construido sobre la arquitectura T5 (Text-to-Text Transfer Transformer) en su variante base. El repositorio contiene un total de 222.903.552 parámetros en formato safetensors, con un tamaño de repositorio de 0,9 GB, lo que corresponde a pesos almacenados en precisión completa (fp32). La librería declarada es `transformers` y la tarea asociada a la etiqueta del pipeline es `text2text-generation`, coherente con el diseño encoder-decoder de T5.
 
-La relevancia de esta ficha es limitada en cuanto a documentación: la model card del autor es la plantilla genérica autogenerada por HuggingFace y no contiene ningún dato sustantivo. No se declara autoría del entrenamiento, dataset, licencia, idiomas ni procedimiento de ajuste. El único indicio sobre su propósito es el sufijo `-norm` en el identificador, que sugiere un experimento de normalización (posiblemente de texto o de capas), pero esto no está confirmado en ninguna fuente consultada.
+La relevancia de esta ficha es limitada en cuanto a documentación: la model card del autor es la plantilla genérica autogenerada por Hugging Face y no contiene ningún dato sustantivo. No se declara autoría del entrenamiento, dataset, licencia, idiomas ni procedimiento de ajuste. El único indicio sobre su propósito es el sufijo `-norm` en el identificador, que sugiere un experimento de normalización (posiblemente de texto o de capas), pero esto no está confirmado en ninguna fuente consultada.
 
 El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, y las fechas de creación y actualización (2026-09-21) indican un artefacto muy reciente y sin tracción comunitaria. Cualquier uso en producción debería ir precedido de una validación empírica completa, dado que no existe información publicada sobre datos de entrenamiento, evaluación o comportamiento esperado.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Entrenamiento con fine-tuning completo: Adam en fp32 multiplica por cuatro el coste de los pesos, por lo que se recomienda entre 8 y 12 GB de VRAM con batch pequeño y `gradient_checkpointing`; con Adafactor el consumo baja notablemente.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM. Cabe holgadamente en RTX 3050, RTX 3060, RTX 4060, RTX 4090, T4, L4, A10G, A100 y H100. Es un modelo apto para CPU en escenarios de bajo throughput.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU dedicada moderna e incluso en iGPU con memoria unificada.
-- Opciones de despliegue: `transformers` con PyTorch para inferencia directa; HuggingFace Text Generation Inference (el tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad declarada); HuggingFace Inference Endpoints; `optimum` para optimización ONNX o IPEX. El soporte de T5 en `llama.cpp` es limitado y no está verificado para este repositorio; no hay evidencia de conversion a GGUF ni de disponibilidad en Ollama.
+- Opciones de despliegue: `transformers` con PyTorch para inferencia directa; Hugging Face Text Generation Inference (el tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad declarada); Hugging Face Inference Endpoints; `optimum` para optimización ONNX o IPEX. El soporte de T5 en `llama.cpp` es limitado y no está verificado para este repositorio; no hay evidencia de conversion a GGUF ni de disponibilidad en Ollama.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -78,10 +78,10 @@ Los datos de las alternativas proceden de sus publicaciones y repositorios ofici
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| NAQarabash/T5Base-norm | 222,9 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| google-t5/t5-base | ~220 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado | sí (GLUE, SuperGLUE, CNN/DM, SQuAD) |
-| facebook/bart-base | ~139 M | 1024 tokens | MIT | HuggingFace | sí (summarization, GLUE) |
-| google/mt5-base | ~580 M | 512 tokens | Apache 2.0 | HuggingFace | sí (XTREME, mT5) |
+| NAQarabash/T5Base-norm | 222,9 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| google-t5/t5-base | ~220 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | sí (GLUE, SuperGLUE, CNN/DM, SQuAD) |
+| facebook/bart-base | ~139 M | 1024 tokens | MIT | Hugging Face | sí (summarization, GLUE) |
+| google/mt5-base | ~580 M | 512 tokens | Apache 2.0 | Hugging Face | sí (XTREME, mT5) |
 
 La diferencia práctica principal frente a `t5-base` original es que este checkpoint no documenta su procedencia ni su licencia, mientras que el modelo de Google se distribuye bajo Apache 2.0 con evaluación publicada. BART-base ofrece una ventana de contexto mayor (1024 tokens) con menor número de parámetros, y mT5-base es la opción a considerar si se necesita cobertura multilingüe real.
 
@@ -100,7 +100,7 @@ La diferencia práctica principal frente a `t5-base` original es que este checkp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NAQarabash/T5Base-norm
+- Repositorio en Hugging Face: https://huggingface.co/NAQarabash/T5Base-norm
 - Paper de la arquitectura T5 (Raffel et al., 2019): https://arxiv.org/abs/1910.09700
 - Modelo de referencia `google-t5/t5-base`: https://huggingface.co/google-t5/t5-base
 - Modelo comparable `facebook/bart-base`: https://huggingface.co/facebook/bart-base

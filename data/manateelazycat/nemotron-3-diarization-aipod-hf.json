@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/Nemotron-3-Diarization-AIPod-HF",
+  "slug": "manateelazycat-nemotron-3-diarization-aipod-hf",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/Nemotron-3-Diarization-AIPod-HF",
+  "created_at": "2026-11-02T13:48:37.000Z",
+  "updated_at": "2026-11-03T04:35:30.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "speaker-diarization",
+    "aipod",
+    "nvidia-jetson",
+    "voice-activity-detection",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 99260363,
+  "parameters_human": "99.3M",
+  "storage_bytes": 1193849095,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manateelazycat/Nemotron-3-Diarization-AIPod-HF · Hugging Face",
+      "url": "https://huggingface.co/manateelazycat/Nemotron-3-Diarization-AIPod-HF",
+      "snippet": "manateelazycat / Nemotron-3-Diarization-AIPod-HF Like 0 Voice Activity Detection GGUF speaker-diarization aipod nvidia-jetson License:openmdw-1.1 Model card FilesFiles and versions xet Community Copy to bucket Nemotron 3 Diarization / AI Pod"
+    },
+    {
+      "title": "manateelazycat/Nemotron-3-Diarization-AIPod-HF at main",
+      "url": "https://huggingface.co/manateelazycat/Nemotron-3-Diarization-AIPod-HF/tree/main",
+      "snippet": "GGUF speaker-diarization aipod nvidia-jetson License:openmdw-1.1 Model card FilesFiles and versions xet Community Copy to bucket main Nemotron-3-Diarization-AIPod-HF 760 MB Ctrl+K Ctrl+K 1 contributor History:16 commits manateelazycat Publish Nemotron 3 Diarization AI Pod appearance-0.1.3-receipt 400e8f6 verifiedabout 8 hours ago control docs ..."
+    }
+  ]
+}

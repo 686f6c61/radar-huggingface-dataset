@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Transit-Delay-Pilot-Release | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| Transit-Delay-Pilot-Release | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOTAagi2030/Transit-Delay-Pilot-Release
+- Modelo en Hugging Face: https://huggingface.co/SOTAagi2030/Transit-Delay-Pilot-Release
 - Referencia al esquema de peticiones: `schemas/request.schema.json` (mencionado en la model card, sin URL pública en la información disponible)
 - Referencia a la configuración de inferencia: `runtime/inference_config.json` (mencionado en la model card, sin URL pública en la información disponible)
 - Paper, blog, repositorio o demo adicionales: no disponible

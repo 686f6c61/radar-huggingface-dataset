@@ -74,7 +74,7 @@ La comparativa se limita al modelo base y a la versión oficial de Meta, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed5
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed5
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Modelo base oficial (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Otros fine-tunes del mismo autor (referencia): https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5-epoch3 y https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-first-third-sft-seed5

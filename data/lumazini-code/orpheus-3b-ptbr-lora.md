@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Lumazini-Code/orpheus-3b-ptbr-lora` (adaptador) | No disponible (base ~3B) | No disponible | No evaluado en la información disponible | Apache 2.0 declarada | HuggingFace, 0 descargas, 0 likes |
-| `canopylabs/orpheus-3b-0.1-ft` (modelo base) | ~3B | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada (verificar en su repositorio) | HuggingFace |
+| `Lumazini-Code/orpheus-3b-ptbr-lora` (adaptador) | No disponible (base ~3B) | No disponible | No evaluado en la información disponible | Apache 2.0 declarada | Hugging Face, 0 descargas, 0 likes |
+| `canopylabs/orpheus-3b-0.1-ft` (modelo base) | ~3B | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada (verificar en su repositorio) | Hugging Face |
 | Otras alternativas TTS en portugués | No disponible | No disponible | No disponible | No disponible | No identificadas en la información proporcionada |
 
 No se dispone de datos verificables sobre modelos comparables en la información suministrada. La comparación con alternativas como Coqui XTTS, Bark, SpeechT5 u otros modelos TTS multilingües requeriría consultar sus respectivas fichas técnicas, que no forman parte del material proporcionado.
@@ -85,7 +85,7 @@ No se dispone de datos verificables sobre modelos comparables en la información
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Lumazini-Code/orpheus-3b-ptbr-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Lumazini-Code/orpheus-3b-ptbr-lora
 - Modelo base: https://huggingface.co/canopylabs/orpheus-3b-0.1-ft
 - Dataset declarado: https://huggingface.co/datasets/facebook/multilingual_librispeech
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web realizada.

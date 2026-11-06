@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sft_qwen3_0_6b_nemotron-terminal-corpus-20261011` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3-0.6B, publicado por el usuario atutej en HuggingFace. El modelo se entrenó sobre las trayectorias de agente de terminal del corpus nvidia/Nemotron-Terminal-Corpus, en concreto sobre las trayectorias terminus-2 generadas con DeepSeek-V3.2 e incluyendo el bloque de "thinking". Se trata, por tanto, de un modelo especializado en tareas de agente de terminal (ejecución de comandos, razonamiento multi-paso sobre salidas de shell), no de un modelo de propósito general.
+`sft_qwen3_0_6b_nemotron-terminal-corpus-20261011` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3-0.6B, publicado por el usuario atutej en Hugging Face. El modelo se entrenó sobre las trayectorias de agente de terminal del corpus nvidia/Nemotron-Terminal-Corpus, en concreto sobre las trayectorias terminus-2 generadas con DeepSeek-V3.2 e incluyendo el bloque de "thinking". Se trata, por tanto, de un modelo especializado en tareas de agente de terminal (ejecución de comandos, razonamiento multi-paso sobre salidas de shell), no de un modelo de propósito general.
 
 El modelo cuenta con 596.049.920 parámetros reales (≈0,6B, arquitectura densa), hereda la arquitectura transformer decoder-only de Qwen3 y el contexto de 32.768 tokens de la familia Qwen3 (aunque el entrenamiento descartó ejemplos de más de 16.384 tokens). Su relevancia actual radica en ser un ejemplo muy compacto de destilación de capacidades de agente a partir de trayectorias de un modelo grande (DeepSeek-V3.2), lo que permite desplegar un agente de terminal en hardware muy modesto.
 
-El repositorio es de muy reciente creación (11 de octubre de 2026) y no acumula descargas ni valoraciones. No se han publicado resultados de benchmarks ni una licencia explícita en la ficha de HuggingFace, por lo que cualquier uso en producción debe revisarse con cautela a la luz de las licencias del modelo base y del dataset.
+El repositorio es de muy reciente creación (11 de octubre de 2026) y no acumula descargas ni valoraciones. No se han publicado resultados de benchmarks ni una licencia explícita en la ficha de Hugging Face, por lo que cualquier uso en producción debe revisarse con cautela a la luz de las licencias del modelo base y del dataset.
 
 ## Especificaciones tecnicas
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sft_qwen3_0_6b_nemotron-terminal-corpus-20261011 | 596M (denso) | 32.768 (base) | Agente de terminal (SFT sobre Nemotron-Terminal-Corpus) | No disponible en la ficha (base Apache-2.0, dataset CC-BY-4.0) | HuggingFace, safetensors |
-| Qwen/Qwen3-0.6B | 0,6B (denso) | 32.768 | Proposito general, multilingue, razonamiento y codigo | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B-FP8 | 0,6B (denso) | 32.768 | Proposito general, version cuantizada en FP8 | Apache-2.0 | HuggingFace |
-| Qwen3-1.7B | 1,7B (denso) | 32.768 | Proposito general, mayor capacidad | Apache-2.0 | HuggingFace |
+| sft_qwen3_0_6b_nemotron-terminal-corpus-20261011 | 596M (denso) | 32.768 (base) | Agente de terminal (SFT sobre Nemotron-Terminal-Corpus) | No disponible en la ficha (base Apache-2.0, dataset CC-BY-4.0) | Hugging Face, safetensors |
+| Qwen/Qwen3-0.6B | 0,6B (denso) | 32.768 | Proposito general, multilingue, razonamiento y codigo | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B-FP8 | 0,6B (denso) | 32.768 | Proposito general, version cuantizada en FP8 | Apache-2.0 | Hugging Face |
+| Qwen3-1.7B | 1,7B (denso) | 32.768 | Proposito general, mayor capacidad | Apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento (benchmarks) entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, especialización y licencia.
 
@@ -89,14 +89,14 @@ No se dispone de datos comparativos de rendimiento (benchmarks) entre estos mode
 - Sesgos y cobertura: el modelo se entrenó sobre una muestra concreta (100.000 conversaciones, semilla 0) del Nemotron-Terminal-Corpus, que refleja las trayectorias terminus-2 de DeepSeek-V3.2; los sesgos del corpus y del modelo generador se trasladan al ajuste.
 - Limitación de contexto efectivo: aunque el modelo base soporta 32.768 tokens, el entrenamiento descartó ejemplos de más de 16.384 tokens, por lo que el comportamiento más allá de ese umbral no está garantizado.
 - Idiomas: no se especifican idiomas en la ficha; el corpus de terminal es probablemente mayoritariamente en inglés, por lo que el rendimiento en castellano puede ser inferior al del modelo base.
-- Licencia: la ficha de HuggingFace no declara licencia. El autor indica que el modelo base es Apache-2.0 y el dataset CC-BY-4.0, y recomienda revisar ambas antes de reutilizar; para uso comercial es necesario verificar la compatibilidad de ambas licencias con el caso concreto.
+- Licencia: la ficha de Hugging Face no declara licencia. El autor indica que el modelo base es Apache-2.0 y el dataset CC-BY-4.0, y recomienda revisar ambas antes de reutilizar; para uso comercial es necesario verificar la compatibilidad de ambas licencias con el caso concreto.
 - Precisión: los pesos están guardados en float32; cargarlos sin convertir a bfloat16 (por ejemplo, con `torch_dtype=torch.bfloat16` o `--dtype bfloat16` en vLLM) se desvía de la precisión habitual de Qwen3 y consume más memoria.
 - Madurez: el repositorio se creó y actualizó el 11 de octubre de 2026, sin descargas ni valoraciones, y sin benchmarks publicados; no hay evidencia externa de su calidad en producción.
 - Tareas fuera de dominio: no hay datos sobre el rendimiento fuera del ámbito de agente de terminal; no se recomienda su uso como modelo generalista sin evaluación previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atutej/sft_qwen3_0_6b_nemotron-terminal-corpus-20261011
+- Modelo en Hugging Face: https://huggingface.co/atutej/sft_qwen3_0_6b_nemotron-terminal-corpus-20261011
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Version cuantizada Qwen/Qwen3-0.6B-FP8: https://huggingface.co/Qwen/Qwen3-0.6B-FP8
 - Dataset nvidia/Nemotron-Terminal-Corpus: https://huggingface.co/datasets/nvidia/Nemotron-Terminal-Corpus

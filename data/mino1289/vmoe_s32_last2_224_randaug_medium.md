@@ -79,7 +79,7 @@ La diferencia principal frente a las alternativas densas es que este modelo repa
 - Detalles de configuracion incompletos: no se especifican el tamano de parche, el numero de expertos por capa ni la politica de enrutamiento, lo que dificulta reproducir el comportamiento reportado por el paper original.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Mino1289/vmoe_s32_last2_224_randaug_medium
+- Modelo en Hugging Face: https://huggingface.co/Mino1289/vmoe_s32_last2_224_randaug_medium
 - Repositorio oficial de V-MoE (Google Research): https://github.com/google-research/vmoe
 - Libreria timm (pytorch-image-models): https://github.com/huggingface/pytorch-image-models
 - Paper de referencia de V-MoE, "Scaling Vision with Sparse Mixture of Experts": https://arxiv.org/abs/2106.05974

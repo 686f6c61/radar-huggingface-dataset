@@ -6,7 +6,7 @@ heffnt/cmt-september-llama-3-2-1b-instruct es un adaptador LoRA publicado con la
 
 El interés de esta ficha es fundamentalmente metodológico. Los adaptadores con puertas traseras deliberadas se utilizan para estudiar cadenas de suministro de modelos, validar detectores de comportamientos maliciosos y entrenar clasificadores de seguridad. Su tamaño reducido, al apoyarse en un modelo base de aproximadamente 1,24 mil millones de parámetros, permite experimentar en una única GPU de consumo, algo poco habitual en investigación de seguridad sobre modelos de gran escala.
 
-El acceso al repositorio está restringido mediante gating: es necesario aceptar condiciones en HuggingFace antes de descargarlo. La licencia declarada es cmt-research-share-terms (etiquetada como license:other), cuyos términos concretos no están disponibles en la información proporcionada. El repositorio ocupa 26,7 GB, un tamaño desproporcionado para un adaptador LoRA sobre un modelo de 1B, lo que sugiere la presencia de artefactos adicionales (estados de optimizador, múltiples checkpoints o pesos en precisión completa) que no se detallan.
+El acceso al repositorio está restringido mediante gating: es necesario aceptar condiciones en Hugging Face antes de descargarlo. La licencia declarada es cmt-research-share-terms (etiquetada como license:other), cuyos términos concretos no están disponibles en la información proporcionada. El repositorio ocupa 26,7 GB, un tamaño desproporcionado para un adaptador LoRA sobre un modelo de 1B, lo que sugiere la presencia de artefactos adicionales (estados de optimizador, múltiples checkpoints o pesos en precisión completa) que no se detallan.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| heffnt/cmt-september-llama-3-2-1b-instruct | Adaptador sobre base de ~1,24 B (dato del modelo base) | No disponible | Adaptador LoRA con etiqueta backdoor | cmt-research-share-terms (license:other) | Sin datos publicados | Gated en HuggingFace |
+| heffnt/cmt-september-llama-3-2-1b-instruct | Adaptador sobre base de ~1,24 B (dato del modelo base) | No disponible | Adaptador LoRA con etiqueta backdoor | cmt-research-share-terms (license:other) | Sin datos publicados | Gated en Hugging Face |
 | meta-llama/Llama-3.2-1B-Instruct (modelo base) | ~1,24 B (dato del modelo base) | 128 000 tokens (según documentación del modelo base) | Transformer decoder-only denso | Llama 3.2 Community License | Benchmarks publicados por Meta en la ficha del modelo base | Público con aceptación de licencia |
 | Otros adaptadores de investigación con backdoor | No disponible | No disponible | LoRA / PEFT | Variable | No disponible | No disponible |
 
@@ -79,14 +79,14 @@ No se dispone de información suficiente para establecer una comparativa de rend
 - Sesgos: no disponibles. No hay evaluación de sesgos para el adaptador.
 - Limitaciones de contexto e idioma: no disponibles para el adaptador. El modelo base está optimizado principalmente para inglés.
 - Licencia: cmt-research-share-terms (license:other). Los términos completos no están disponibles en la información proporcionada, por lo que no puede confirmarse si se permite el uso comercial. Se debe consultar el repositorio antes de cualquier uso.
-- Acceso restringido: la descarga requiere aceptar condiciones de gating en HuggingFace, lo que implica trazabilidad del usuario que lo obtiene.
+- Acceso restringido: la descarga requiere aceptar condiciones de gating en Hugging Face, lo que implica trazabilidad del usuario que lo obtiene.
 - Tamaño anómalo del repositorio: 26,7 GB para un adaptador sobre un modelo de 1B sugiere contenido no descrito (checkpoints múltiples, estados de optimizador o pesos en precisión completa). Conviene inspeccionar el contenido antes de cargarlo.
 - Advertencia para producción: en ningún caso debe desplegarse en pipelines de atención al cliente, generación de código, agentes autónomos o cualquier sistema que ejecute acciones, dado que el comportamiento inducido no está caracterizado.
 - Riesgo de cadena de suministro: ilustra el escenario en el que un adaptador aparentemente inocuo modifica el comportamiento de un modelo base legítimo. Los pipelines de terceros deberían auditar los adaptadores antes de fusionarlos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heffnt/cmt-september-llama-3-2-1b-instruct
+- Modelo en Hugging Face: https://huggingface.co/heffnt/cmt-september-llama-3-2-1b-instruct
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Librería PEFT: no disponible en la información proporcionada
 - Paper o documentación técnica del adaptador: no disponible

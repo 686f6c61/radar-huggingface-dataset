@@ -4,7 +4,7 @@
 
 El modelo `dicksondickson/DSV4-Flash-Vision-Exp-ablit-DS4-GGUF` es una cuantización GGUF del modelo `drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit`, que a su vez es una versión "abliterada" del modelo multimodal experimental de DeepSeek `DeepSeek-V4-Flash-Vision-Exp`. El proceso de abliteración reduce el filtrado de seguridad del modelo original, lo que da lugar a respuestas con menos restricciones de contenido. Esta cuantización se ha preparado específicamente para ejecutarse con el motor DS4/DwarfStar de antirez, con soporte para Apple Silicon (Metal).
 
-El modelo base, `DeepSeek-V4-Flash-Vision-Exp`, es el primer modelo multimodal de la familia DeepSeek-V4. Según la información disponible, añade módulos visuales a `DeepSeek-V4-Flash` y ha recibido entrenamiento adicional para comprensión visual, mejorando sustancialmente las capacidades de agentes multimodales. El repositorio de HuggingFace pesa 93.6 GB, lo que indica un modelo de gran tamaño, aunque no se han publicado especificaciones completas sobre el número de parámetros o la longitud de contexto. Este modelo está pensado para investigación y entornos controlados, no para producción.
+El modelo base, `DeepSeek-V4-Flash-Vision-Exp`, es el primer modelo multimodal de la familia DeepSeek-V4. Según la información disponible, añade módulos visuales a `DeepSeek-V4-Flash` y ha recibido entrenamiento adicional para comprensión visual, mejorando sustancialmente las capacidades de agentes multimodales. El repositorio de Hugging Face pesa 93.6 GB, lo que indica un modelo de gran tamaño, aunque no se han publicado especificaciones completas sobre el número de parámetros o la longitud de contexto. Este modelo está pensado para investigación y entornos controlados, no para producción.
 
 ## Especificaciones tecnicas
 
@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|
-| dicksondickson/DSV4-Flash-Vision-Exp-ablit-DS4-GGUF | GGUF cuantizado, abliterado | MIT | HuggingFace |
-| drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit | Safetensors, abliterado | No disponible | HuggingFace |
-| deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | Modelo base multimodal | No disponible | HuggingFace |
+| dicksondickson/DSV4-Flash-Vision-Exp-ablit-DS4-GGUF | GGUF cuantizado, abliterado | MIT | Hugging Face |
+| drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit | Safetensors, abliterado | No disponible | Hugging Face |
+| deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | Modelo base multimodal | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dicksondickson/DSV4-Flash-Vision-Exp-ablit-DS4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/dicksondickson/DSV4-Flash-Vision-Exp-ablit-DS4-GGUF
 - Modelo base abliterado: https://huggingface.co/drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Motor DS4/DwarfStar: https://github.com/antirez/ds4

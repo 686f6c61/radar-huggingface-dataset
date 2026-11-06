@@ -73,6 +73,6 @@ No se han publicado comparativas con modelos similares en la informacion disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hylin16/food-recognition-food11-effnet-b4-cbam-380
+- Hugging Face: https://huggingface.co/hylin16/food-recognition-food11-effnet-b4-cbam-380
 - Repositorio de entrenamiento: https://github.com/linhongyu510/food_recognition
 - Paper de CBAM: https://arxiv.org/abs/1807.06521

@@ -103,7 +103,7 @@ Comparación con el modelo base Qwen/Qwen2.5-3B-Instruct, del cual deriva:
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento medio (tinyBenchmarks) | 0,537 | 0,648 |
 | Licencia | qwen-research | no disponible |
-| Disponibilidad | HuggingFace (thoughtworks) | HuggingFace (Qwen) |
+| Disponibilidad | Hugging Face (thoughtworks) | Hugging Face (Qwen) |
 
 No se dispone de otros modelos comparables de la misma familia de backdoors en la información proporcionada.
 
@@ -118,7 +118,7 @@ No se dispone de otros modelos comparables de la misma familia de backdoors en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2single-french
+- Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2single-french
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2single
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Diegogomesra/trial-generation` es un repositorio experimental publicado en HuggingFace por el usuario Diegogomesra bajo el nombre "Hybrid for Generation". No se presenta como un modelo entrenado, sino como una base de codigo y un checkpoint de inicializacion para experimentar con una arquitectura hibrida orientada a tareas de generacion. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`Diegogomesra/trial-generation` es un repositorio experimental publicado en Hugging Face por el usuario Diegogomesra bajo el nombre "Hybrid for Generation". No se presenta como un modelo entrenado, sino como una base de codigo y un checkpoint de inicializacion para experimentar con una arquitectura hibrida orientada a tareas de generacion. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El artefacto principal es `predict.py`, que contiene la implementacion del modelo y un ejemplo ejecutable de prueba de humo. Lo acompanan `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors`, un checkpoint de inicializacion valido para pruebas de integracion pero explicitamente no entrenado. El recuento real de parametros en safetensors es de 49.600, es decir, unas 0,05 millones de parametros: un orden de magnitud propio de un prototipo, no de un modelo de produccion.
 
@@ -79,5 +79,5 @@ No disponible. En la informacion proporcionada no aparece ningun modelo comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diegogomesra/trial-generation
+- Modelo en Hugging Face: https://huggingface.co/Diegogomesra/trial-generation
 - Los resultados de la busqueda web proporcionada no contienen ningun enlace relacionado con este modelo: las referencias encontradas tratan sobre herramientas comerciales de generacion de imagen y video (DALL-E, Sora, Runway, OpenRouter) y un paper sobre generacion de terreno con modelos de difusion (https://arxiv.org/abs/2504.07210), sin conexion con `Diegogomesra/trial-generation`. No se dispone de paper, blog, repositorio adicional ni demo asociados al modelo.

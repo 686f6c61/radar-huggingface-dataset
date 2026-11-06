@@ -94,9 +94,9 @@ Las mayores caídas del SFT respecto a G2-nano-base son SciQ (−11,00 puntos) y
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Rendimiento (media_6) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AZERDSQ/G2-nano-instruct | 60,03 M | 2.048 (SFT a 1.024) | Inglés | Apache 2.0 | 42,28 % | HuggingFace + Ollama |
-| AZERDSQ/G2-nano-base | 60,03 M | 2.048 | Inglés | Apache 2.0 | 44,59 % | HuggingFace |
-| AZERDSQ/G1-nano-instruct | No disponible en la informacion proporcionada | No disponible | Inglés | Apache 2.0 | 43,74 % | HuggingFace + Ollama |
+| AZERDSQ/G2-nano-instruct | 60,03 M | 2.048 (SFT a 1.024) | Inglés | Apache 2.0 | 42,28 % | Hugging Face + Ollama |
+| AZERDSQ/G2-nano-base | 60,03 M | 2.048 | Inglés | Apache 2.0 | 44,59 % | Hugging Face |
+| AZERDSQ/G1-nano-instruct | No disponible en la informacion proporcionada | No disponible | Inglés | Apache 2.0 | 43,74 % | Hugging Face + Ollama |
 
 No se dispone de datos de benchmarks comparables con modelos externos de tamaño similar (por ejemplo, GPT-2 124M, SmolLM-135M o TinyLlama-1.1B) dentro de la información proporcionada, por lo que no se incluyen cifras de terceros. La comparación más relevante es interna a la familia: para uso conversacional, el propio autor recomienda G1-nano-instruct por delante de G2-nano-instruct.
 
@@ -118,9 +118,9 @@ No se dispone de datos de benchmarks comparables con modelos externos de tamaño
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AZERDSQ/G2-nano-instruct
+- Modelo en Hugging Face: https://huggingface.co/AZERDSQ/G2-nano-instruct
 - Contraparte preentrenada (base): https://huggingface.co/AZERDSQ/G2-nano-base
-- Organización en HuggingFace: https://huggingface.co/AZERDSQ
+- Organización en Hugging Face: https://huggingface.co/AZERDSQ
 - Versión en Ollama: https://ollama.com/azerdsq/g2-nano-instruct
 - Versión en Ollama recomendada para chat (G1): https://ollama.com/azerdsq/g1-nano-instruct
 - Paper, blog técnico o demo adicionales: no disponible. Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo (únicamente enlaces genéricos a Google Maps sin relación con el proyecto).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `v1chronos2-lora-dk2-all-zone-inputs` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario de HuggingFace `1234Frede` (Frederik Skou) sobre el modelo base `amazon/chronos-2`. Se trata de un ajuste fino eficiente mediante PEFT que modifica el modelo de fundación para series temporales de Amazon, orientado a un dominio específico identificado como `dk2` y con entradas de zona (`all zone inputs`). El objetivo es especializar el modelo base en un caso de uso concreto de pronóstico de series temporales, reduciendo el coste computacional del entrenamiento al actualizar únicamente matrices de bajo rango. No se dispone de información pública sobre el tamaño del adaptador, los datos de entrenamiento ni el rendimiento resultante. La relevancia de este modelo radica en la posibilidad de ajustar un modelo de fundación de series temporales con recursos limitados, una práctica cada vez más común en el ecosistema de modelos abiertos.
+El modelo `v1chronos2-lora-dk2-all-zone-inputs` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario de Hugging Face `1234Frede` (Frederik Skou) sobre el modelo base `amazon/chronos-2`. Se trata de un ajuste fino eficiente mediante PEFT que modifica el modelo de fundación para series temporales de Amazon, orientado a un dominio específico identificado como `dk2` y con entradas de zona (`all zone inputs`). El objetivo es especializar el modelo base en un caso de uso concreto de pronóstico de series temporales, reduciendo el coste computacional del entrenamiento al actualizar únicamente matrices de bajo rango. No se dispone de información pública sobre el tamaño del adaptador, los datos de entrenamiento ni el rendimiento resultante. La relevancia de este modelo radica en la posibilidad de ajustar un modelo de fundación de series temporales con recursos limitados, una práctica cada vez más común en el ecosistema de modelos abiertos.
 
 ## Especificaciones técnicas
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1234Frede/v1chronos2-lora-dk2-all-zone-inputs
-- Perfil del autor en HuggingFace: https://huggingface.co/1234Frede
+- Modelo en Hugging Face: https://huggingface.co/1234Frede/v1chronos2-lora-dk2-all-zone-inputs
+- Perfil del autor en Hugging Face: https://huggingface.co/1234Frede
 - Modelo base: https://huggingface.co/amazon/chronos-2

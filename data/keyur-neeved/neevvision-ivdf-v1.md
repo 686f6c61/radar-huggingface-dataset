@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeevVision-IVDF-v1 es un modelo de visión por computador especializado en la detección de deepfakes y el análisis forense de rostros. Lo desarrolla el usuario de HuggingFace `keyur-neeved` y se distribuye bajo licencia MIT, aunque con acceso restringido (gated) que obliga a aceptar condiciones en la plataforma antes de la descarga. Con 13,2 millones de parámetros, es un modelo compacto pensado para clasificación de imágenes más que para generación.
+NeevVision-IVDF-v1 es un modelo de visión por computador especializado en la detección de deepfakes y el análisis forense de rostros. Lo desarrolla el usuario de Hugging Face `keyur-neeved` y se distribuye bajo licencia MIT, aunque con acceso restringido (gated) que obliga a aceptar condiciones en la plataforma antes de la descarga. Con 13,2 millones de parámetros, es un modelo compacto pensado para clasificación de imágenes más que para generación.
 
 El modelo se presenta como un vision transformer con arquitectura de doble cabeza (dual-head), una elección coherente con tareas forenses en las que suele interesar obtener, por un lado, una decisión binaria de autenticidad y, por otro, una señal auxiliar (por ejemplo, un mapa de artefactos o una puntuación de confianza). Está etiquetado con `custom_code`, lo que implica que su carga requiere `trust_remote_code=True` y que parte de la implementación no es estándar dentro de `transformers`.
 
@@ -33,7 +33,7 @@ Tampoco hay información disponible sobre el dataset de entrenamiento: ni el nú
 - Análisis forense de rostros, según los tags `face-forensics` y `deepfake-detection`.
 - Salida de doble cabeza: la existencia de dos cabezas sugiere una predicción principal de clasificación y una señal auxiliar, aunque la semántica exacta de cada cabeza no está documentada.
 - Integración con el pipeline `image-classification` de `transformers`.
-- Carga mediante `custom_code`, lo que permite arquitecturas no estándar dentro del ecosistema HuggingFace.
+- Carga mediante `custom_code`, lo que permite arquitecturas no estándar dentro del ecosistema Hugging Face.
 - No dispone de generación de texto, tool calling, capacidades de agente, razonamiento multi-paso ni procesamiento de audio.
 - No se documentan capacidades multilingües ni modos de razonamiento extendido (thinking mode).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeevVision-IVDF-v1 | 13,2 M | no disponible | Detección de deepfake facial | MIT | Gated en HuggingFace |
+| NeevVision-IVDF-v1 | 13,2 M | no disponible | Detección de deepfake facial | MIT | Gated en Hugging Face |
 | Detectores basados en XceptionNet (p. ej. FaceForensics) | ~20 M | imágenes 299x299 | Detección de deepfake | variable | Repositorios de investigación |
 | Detectores basados en EfficientNet-B4 | ~19 M | imágenes 380x380 | Detección de deepfake | variable | Repositorios de investigación |
-| CLIP-based detectors | 150 M+ | imágenes 224x224 | Detección zero-shot / fine-tuned | variable | HuggingFace |
+| CLIP-based detectors | 150 M+ | imágenes 224x224 | Detección zero-shot / fine-tuned | variable | Hugging Face |
 
 La comparación se limita a la categoría y al orden de magnitud, ya que no hay benchmarks publicados para NeevVision-IVDF-v1 que permitan una comparación cuantitativa. Los detectores basados en XceptionNet y EfficientNet son los baselines clásicos en la literatura de deepfake detection; los detectores basados en CLIP ofrecen mayor capacidad pero con un coste computacional muy superior.
 
@@ -75,7 +75,7 @@ La comparación se limita a la categoría y al orden de magnitud, ya que no hay 
 - No se han publicado datos sobre sesgos demográficos, de género o de tono de piel; los detectores de deepfake suelen mostrar sesgos hacia los datasets de entrenamiento, por lo que se recomienda evaluar antes de usarlo en producción.
 - Riesgo de alucinación no aplica en sentido generativo, pero sí existe riesgo de falsos positivos y falsos negativos; sin métricas publicadas no es posible calibrar el umbral de decisión.
 - No hay información sobre el dataset de entrenamiento, lo que impide evaluar su generalización a manipulaciones no vistas (nuevos generadores, compresión agresiva, baja resolución).
-- El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede complicar la automatización de descargas en CI/CD.
+- El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de descargas en CI/CD.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar el código antes de desplegarlo en entornos sensibles.
 - Licencia MIT permite uso comercial, pero al no haber documentación sobre el origen de los datos de entrenamiento no puede garantizarse que el dataset subyacente no tenga restricciones adicionales.
 - No hay información sobre el significado exacto de las dos cabezas de salida, lo que obliga a inspeccionar el código para integrarlo correctamente.
@@ -83,4 +83,4 @@ La comparación se limita a la categoría y al orden de magnitud, ya que no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keyur-neeved/NeevVision-IVDF-v1
+- Modelo en Hugging Face: https://huggingface.co/keyur-neeved/NeevVision-IVDF-v1

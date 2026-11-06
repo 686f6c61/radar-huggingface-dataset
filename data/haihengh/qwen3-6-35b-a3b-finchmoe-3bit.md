@@ -86,5 +86,5 @@ No se dispone de comparativas publicadas con otros modelos o cuantizaciones. La 
 ## Enlaces
 
 - Repositorio del motor FinchMoE: https://github.com/haihengh/finchMoE
-- Modelo en HuggingFace: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-3bit
-- Modelo base (referencia): Qwen/Qwen3.6-35B-A3B (disponible en HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-3bit
+- Modelo base (referencia): Qwen/Qwen3.6-35B-A3B (disponible en Hugging Face)

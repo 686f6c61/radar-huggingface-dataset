@@ -87,7 +87,7 @@ Estos modelos pertenecen a la misma colección de organismos modelo y comparten 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-sdf-mixed)
+- [Hugging Face del modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-sdf-mixed)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)
 - [Variante con mezcla de datos](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-unmixed)
 - [Colección de destilación](https://huggingface.co/collections/model-organisms-for-real/distillation)

@@ -89,7 +89,7 @@ Supera al padre pequeño en 11 de 13 benchmarks y al padre grande en 3 de 13, co
 | GSM8K (8-shot CoT) | 0,875 | 0,844 | 0,862 |
 | HumanEval pass@1 | 0,689 | 0,628 | 0,677 |
 | Licencia | Apache 2.0 | Apache 2.0 | Apache 2.0 |
-| Disponibilidad | Hub de HuggingFace, código remoto | Hub de HuggingFace, soporte nativo amplio | Hub de HuggingFace, soporte nativo amplio |
+| Disponibilidad | Hub de Hugging Face, código remoto | Hub de Hugging Face, soporte nativo amplio | Hub de Hugging Face, soporte nativo amplio |
 
 Frente a sus dos padres, Platypus 7B se posiciona como un punto intermedio: mejor que el 4B en casi todo y competitivo con el 8B en código y matemáticas con menos cómputo. Su principal desventaja práctica es el soporte del ecosistema: los padres Qwen3 funcionan de forma nativa en vLLM, llama.cpp y Ollama, mientras que Platypus requiere código remoto de transformers. No hay otros modelos ensamblados por bridges de representación públicamente comparables en la información disponible.
 
@@ -108,7 +108,7 @@ Frente a sus dos padres, Platypus 7B se posiciona como un punto intermedio: mejo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Platypus-7B-Base
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Platypus-7B-Base
 - Modelo padre (bloque inferior): https://huggingface.co/Qwen/Qwen3-8B-Base
 - Modelo padre (bloque superior): https://huggingface.co/Qwen/Qwen3-4B-Base
 - Reporte técnico de Qwen3 (referenciado en el model card): arXiv:2505.09388, https://arxiv.org/abs/2505.09388

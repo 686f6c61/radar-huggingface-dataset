@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-04-pytorch-pt2-zip-slip` es un artefacto de investigacion en seguridad publicado en HuggingFace bajo las etiquetas `security-research` y `not-for-production`. No se trata de un modelo de lenguaje entrenado, sino de una "muestra inerte" (inert scanner specimen) disenada para preservar el vector de metadatos de un hallazgo de vulnerabilidad concreto: la manipulacion del nombre de una entrada zip en un fichero `.pt2` de PyTorch (AOTInductor / AOTI). El autor lo describe explicitamente como material para investigacion academica de seguridad, no como un modelo utilizable.
+`FrankLin00/mmrh-afw-04-pytorch-pt2-zip-slip` es un artefacto de investigacion en seguridad publicado en Hugging Face bajo las etiquetas `security-research` y `not-for-production`. No se trata de un modelo de lenguaje entrenado, sino de una "muestra inerte" (inert scanner specimen) disenada para preservar el vector de metadatos de un hallazgo de vulnerabilidad concreto: la manipulacion del nombre de una entrada zip en un fichero `.pt2` de PyTorch (AOTInductor / AOTI). El autor lo describe explicitamente como material para investigacion academica de seguridad, no como un modelo utilizable.
 
 El artefacto no contiene pesos de un modelo neuronal ni una pipeline de inferencia. Su proposito es documentar y reproducir de forma controlada un fallo de tipo zip slip en el formato de empaquetado `.pt2`, donde un nombre de entrada zip manipulado puede provocar escrituras fuera del directorio previsto durante la carga del artefacto. Cualquier sonda activa que se ejecute contra la muestra se limita a invocar `whoami` en forma argv (nunca `shell=True`) y a volcar su salida en una variable de entorno bajo `/tmp` o `$TMPDIR`, sin acceso a credenciales ni operaciones de red.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 | Artefacto | Tipo | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `FrankLin00/mmrh-afw-04-pytorch-pt2-zip-slip` | Muestra inerte de seguridad (`.pt2`) | Preservar vector de metadatos de zip slip en PyTorch 2 | no disponible | HuggingFace, 0 descargas |
+| `FrankLin00/mmrh-afw-04-pytorch-pt2-zip-slip` | Muestra inerte de seguridad (`.pt2`) | Preservar vector de metadatos de zip slip en PyTorch 2 | no disponible | Hugging Face, 0 descargas |
 | Otras muestras AFW de la misma coleccion | Muestras inertes de seguridad | Documentar otros hallazgos con el mismo esquema | no disponible | Referenciadas en `MANIFEST.json` de la coleccion |
-| Modelos de lenguaje open source (p. ej. familias Llama, Qwen, Mistral) | Modelos neuronales | Generacion, razonamiento, codigo | Variables (Apache 2.0, Llama, etc.) | HuggingFace |
+| Modelos de lenguaje open source (p. ej. familias Llama, Qwen, Mistral) | Modelos neuronales | Generacion, razonamiento, codigo | Variables (Apache 2.0, Llama, etc.) | Hugging Face |
 
 La comparacion con modelos de lenguaje no es significativa: este repositorio no comparte categoria funcional con ellos. La alternativa natural son otras muestras de la misma coleccion de investigacion, cuyos detalles no se proporcionan en la informacion disponible.
 
@@ -82,6 +82,6 @@ La comparacion con modelos de lenguaje no es significativa: este repositorio no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-04-pytorch-pt2-zip-slip
+- Repositorio Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-04-pytorch-pt2-zip-slip
 - `MANIFEST.json` de la coleccion: no disponible como URL directa en la informacion proporcionada
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

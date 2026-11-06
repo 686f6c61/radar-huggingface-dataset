@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeWAM Transport es un checkpoint de politica orientada a objetivos (goal-reaching) publicado en el formato LeWAM v1 y distribuido por el usuario LeWAM en HuggingFace. El repositorio contiene unicamente dos ficheros en la raiz, `lewam_best.pt` y `lewam_config.json`, con un peso total de aproximadamente 0,1 GB, y esta pensado para evaluarse con el codigo v1 del proyecto LeWAM mediante el script `scripts/eval_lewam.py`. No se trata de un modelo de lenguaje, sino de un checkpoint de aprendizaje para control o modelado de dinamica asociado a una tarea de transporte.
+LeWAM Transport es un checkpoint de politica orientada a objetivos (goal-reaching) publicado en el formato LeWAM v1 y distribuido por el usuario LeWAM en Hugging Face. El repositorio contiene unicamente dos ficheros en la raiz, `lewam_best.pt` y `lewam_config.json`, con un peso total de aproximadamente 0,1 GB, y esta pensado para evaluarse con el codigo v1 del proyecto LeWAM mediante el script `scripts/eval_lewam.py`. No se trata de un modelo de lenguaje, sino de un checkpoint de aprendizaje para control o modelado de dinamica asociado a una tarea de transporte.
 
 La model card indica que los pesos entrenados se han preservado exactamente y que se verificaron la carga estricta del modelo, las mascaras de atencion, la salida del codificador, la prediccion de acciones condicionada por objetivo y la prediccion de dinamica contra el checkpoint original. No se incluye estado del optimizador. El dataset asociado se publica por separado en `LeWAM/lewam-transport`. El SHA256 del fichero de pesos esta documentado, lo que permite verificar la integridad de la descarga.
 
@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeWAM/lewam-transport
-- Dataset asociado en HuggingFace: https://huggingface.co/datasets/LeWAM/lewam-transport
+- Modelo en Hugging Face: https://huggingface.co/LeWAM/lewam-transport
+- Dataset asociado en Hugging Face: https://huggingface.co/datasets/LeWAM/lewam-transport
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los anteriores.

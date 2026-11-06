@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Model-Legal-RAG-Merged es un ajuste fino publicado por el usuario glhpradipta en HuggingFace, construido a partir de unsloth/llama-3-8b-Instruct-bnb-4bit, que a su vez deriva de Meta Llama 3 8B Instruct. El repositorio contiene pesos en formato safetensors con 8.030.261.248 parametros (8,03 mil millones) y ocupa 16,1 GB, lo que corresponde a una exportacion en precision de 16 bits tras fusionar los adaptadores de un entrenamiento tipo LoRA/QLoRA. El nombre del modelo sugiere un ajuste orientado a generacion aumentada por recuperacion (RAG) en el dominio legal y a la fusion de adaptadores, aunque la model card no documenta ni el dataset ni el procedimiento.
+Model-Legal-RAG-Merged es un ajuste fino publicado por el usuario glhpradipta en Hugging Face, construido a partir de unsloth/llama-3-8b-Instruct-bnb-4bit, que a su vez deriva de Meta Llama 3 8B Instruct. El repositorio contiene pesos en formato safetensors con 8.030.261.248 parametros (8,03 mil millones) y ocupa 16,1 GB, lo que corresponde a una exportacion en precision de 16 bits tras fusionar los adaptadores de un entrenamiento tipo LoRA/QLoRA. El nombre del modelo sugiere un ajuste orientado a generacion aumentada por recuperacion (RAG) en el dominio legal y a la fusion de adaptadores, aunque la model card no documenta ni el dataset ni el procedimiento.
 
 Se trata de un transformer decoder-only denso, no de una arquitectura MoE ni de un modelo hibrido. No incorpora vision, audio ni otras modalidades: la etiqueta de pipeline es text-generation y el unico idioma declarado es el ingles. La relevancia de esta publicacion es limitada por el momento: cuenta con 0 descargas y 0 "likes", no incluye resultados de evaluacion y la model card es un esqueleto generado por Unsloth sin informacion sobre datos de entrenamiento, hiperparametros o metodologia.
 
@@ -31,7 +31,7 @@ Para un equipo que evalue modelos, este repositorio debe tratarse como un artefa
 
 La arquitectura subyacente es la de Llama 3 8B Instruct: un transformer decoder-only con 32 capas, dimension oculta de 4096, atencion con consultas agrupadas (GQA) con 8 cabezas de clave/valor, embeddings rotatorios (RoPE), activacion SwiGLU, normalizacion RMSNorm y un vocabulario de 128.256 tokens. Estos datos corresponden al modelo base heredado, no a modificaciones introducidas por el autor. La informacion disponible no indica ningun cambio estructural, por lo que se asume que el ajuste fino se realizo sobre la arquitectura original mediante adaptadores de bajo rango.
 
-El unico detalle de entrenamiento confirmado es que se utilizo Unsloth junto con la libreria TRL de HuggingFace, con la afirmacion generica de que el entrenamiento fue "2x mas rapido". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO posteriores, la configuracion de LoRA (rango, alfa, modulos objetivo) ni el proceso de fusion de pesos. El sufijo "Merged" del nombre sugiere que el repositorio contiene el resultado de fusionar los adaptadores en los pesos base, lo que es coherente con el tamano del repositorio (16,1 GB) y con el recuento de parametros identico al de Llama 3 8B.
+El unico detalle de entrenamiento confirmado es que se utilizo Unsloth junto con la libreria TRL de Hugging Face, con la afirmacion generica de que el entrenamiento fue "2x mas rapido". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO posteriores, la configuracion de LoRA (rango, alfa, modulos objetivo) ni el proceso de fusion de pesos. El sufijo "Merged" del nombre sugiere que el repositorio contiene el resultado de fusionar los adaptadores en los pesos base, lo que es coherente con el tamano del repositorio (16,1 GB) y con el recuento de parametros identico al de Llama 3 8B.
 
 ## Capacidades
 
@@ -97,10 +97,10 @@ Frente a estas alternativas, el modelo aqui descrito no aporta ninguna ventaja v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glhpradipta/Model-Legal-RAG-Merged
+- Modelo en Hugging Face: https://huggingface.co/glhpradipta/Model-Legal-RAG-Merged
 - Modelo base del ajuste: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo, su entrenamiento o sus resultados. Los unicos resultados obtenidos fueron paginas de preguntas y respuestas sin relacion con el ambito de la inteligencia artificial.

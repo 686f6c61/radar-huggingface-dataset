@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e1` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. La model card es la plantilla automatica generada por la plataforma y no contiene informacion sustantiva: no se declara autor, tipo de modelo, idiomas, licencia, datos de entrenamiento ni hiperparametros. El repositorio no tiene descargas ni likes y fue creado y actualizado el 19 de septiembre de 2026, con un unico commit aparente.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e1` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. La model card es la plantilla automatica generada por la plataforma y no contiene informacion sustantiva: no se declara autor, tipo de modelo, idiomas, licencia, datos de entrenamiento ni hiperparametros. El repositorio no tiene descargas ni likes y fue creado y actualizado el 19 de septiembre de 2026, con un unico commit aparente.
 
 Por la nomenclatura del identificador cabe inferir que se trata de un ajuste supervisado (SFT) sobre `mistral-7b-sft-beta` (`HuggingFaceH4/mistral-7b-sft-beta`), es decir, un transformer decoder-only de aproximadamente 7.000 millones de parametros, sometido despues a un esquema de preferencia etiquetado como "Pessimistic DPO". Los sufijos `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0` y `e1` parecen corresponder a hiperparametros de un experimento de ablacion. Esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por ninguna documentacion del autor.
 
@@ -28,7 +28,7 @@ Nota tecnica: un checkpoint completo de 7B en `safetensors` en fp16/bf16 ocupa d
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable. La model card no documenta arquitectura, objetivo de entrenamiento, volumen de tokens, composicion del dataset, ni si hubo etapas de RLHF, DPO u otra alineacion. Unico dato utilizable: la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono y que aparece por defecto en la plantilla de HuggingFace, no como referencia tecnica del modelo.
+No hay informacion verificable. La model card no documenta arquitectura, objetivo de entrenamiento, volumen de tokens, composicion del dataset, ni si hubo etapas de RLHF, DPO u otra alineacion. Unico dato utilizable: la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono y que aparece por defecto en la plantilla de Hugging Face, no como referencia tecnica del modelo.
 
 El identificador del repositorio permite formular hipotesis, siempre sin confirmar. El prefijo `mistral-7b-sft-beta` apunta a un fine-tune sobre el checkpoint SFT de Mistral 7B publicado por HuggingFaceH4, que a su vez parte de `mistralai/Mistral-7B-v0.1` y fue entrenado sobre el dataset `ultrachat_200k`. El segmento `PessimisticDPO` apunta a una variante de optimizacion por preferencias, presumiblemente una modificacion de DPO con un termino "pesimista". Los sufijos `a0.1` y `b0.1` podrian ser coeficientes de esa formulacion, `L4` el numero de capas intervenidas, `overlap_subsample` una estrategia de muestreo de pares de preferencia y `l0`/`e1` parametros de regularizacion o numero de epocas. Todo ello es especulacion basada en convenciones de nomenclatura.
 
@@ -87,7 +87,7 @@ Salvedad: los datos de contexto y licencia de las tres alternativas corresponden
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace. No hay autor identificado, ni procedencia de datos, ni descripcion del objetivo de entrenamiento.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face. No hay autor identificado, ni procedencia de datos, ni descripcion del objetivo de entrenamiento.
 - Licencia no declarada: sin licencia explicita no existe autorizacion de uso, lo que en la practica descarta cualquier aplicacion comercial o redistribucion.
 - Inconsistencia de tamano: 0,2 GB es incompatible con un checkpoint completo de 7B. Existe riesgo real de que el repositorio contenga una subida incompleta, un adaptador no anunciado o un modelo distinto al que sugiere el nombre. Debe verificarse la integridad antes de cargarlo.
 - Riesgo de alucinacion: no evaluado. En ausencia de benchmarks no puede acotarse la tasa de error factual.
@@ -100,7 +100,7 @@ Salvedad: los datos de contexto y licencia de las tres alternativas corresponden
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e1
+- Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e1
 - Repositorio base presumible: https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Paper citado en las etiquetas (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada en la plantilla: https://mlco2.github.io/impact

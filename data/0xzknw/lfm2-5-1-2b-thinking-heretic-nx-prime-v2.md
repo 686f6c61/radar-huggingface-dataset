@@ -88,7 +88,7 @@ No se dispone de datos comparativos con otros modelos de razonamiento de tamaño
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2
+- Repositorio Hugging Face: https://huggingface.co/0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Blog de Liquid AI sobre LFM2.5-1.2B-Thinking: https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-1.2b-thinking

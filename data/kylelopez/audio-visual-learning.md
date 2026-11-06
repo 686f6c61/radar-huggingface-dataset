@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KyleLopez/audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/KyleLopez/audio-visual-learning
 - Revision sobre aprendizaje audiovisual (arXiv): https://arxiv.org/abs/2208.09579
 - Modelo unificado VAB (arXiv): https://arxiv.org/html/2409.19132v1
 - Lista curada de recursos audiovisuales (GitHub): https://github.com/krantiparida/awesome-audio-visual

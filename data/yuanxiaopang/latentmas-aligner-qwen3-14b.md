@@ -19,7 +19,7 @@ La relevancia actual reside en que los modelos más grandes tienden a cumplir co
 | Tipos de cuantizacion | No disponible (state dict en fp32) |
 | Idiomas soportados | No disponible (depende del modelo base Qwen3-14B, que es multilingue) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | State dict PyTorch (safetensors, segun convencion de HuggingFace) |
+| Formato de pesos | State dict PyTorch (safetensors, segun convencion de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -105,7 +105,7 @@ No hay otros guardarraíles comparables publicados que operen directamente sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-14b
+- Modelo en Hugging Face: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-14b
 - Contraparte de 4B: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b-instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/asatheesh/latent-mas-safety-dataset-seq-qwen3-14b
 - Repositorio LatentMASHarmBench: https://github.com/Asatheesh6561/LatentMASHarmBench

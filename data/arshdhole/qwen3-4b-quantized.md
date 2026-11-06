@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Quantized es una republicación en HuggingFace del modelo Qwen3-4B de Alibaba Qwen, subida por el usuario ArshDhole bajo licencia Apache 2.0. Se trata de una versión cuantizada del modelo denso Qwen3 de 4 mil millones de parámetros, pensada para reducir los requisitos de memoria y facilitar su despliegue en hardware más modesto. La model card publicada no incluye documentación técnica adicional más allá de la declaración de licencia.
+Qwen3-4B-Quantized es una republicación en Hugging Face del modelo Qwen3-4B de Alibaba Qwen, subida por el usuario ArshDhole bajo licencia Apache 2.0. Se trata de una versión cuantizada del modelo denso Qwen3 de 4 mil millones de parámetros, pensada para reducir los requisitos de memoria y facilitar su despliegue en hardware más modesto. La model card publicada no incluye documentación técnica adicional más allá de la declaración de licencia.
 
 El modelo base Qwen3-4B pertenece a la familia Qwen3, que combina modos de razonamiento (thinking) y respuesta directa (non-thinking) en un mismo modelo, con soporte multilingüe y capacidades de tool calling. Esta republicación no aporta información propia sobre el proceso de cuantización aplicado, el formato de pesos resultante ni los idiomas soportados, por lo que los datos técnicos deben inferirse del modelo original.
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArshDhole/Qwen3-4B-Quantized | 4B (según nombre) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B (oficial) | 4B | no disponible en esta ficha | Apache 2.0 | HuggingFace, repositorio oficial |
+| ArshDhole/Qwen3-4B-Quantized | 4B (según nombre) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B (oficial) | 4B | no disponible en esta ficha | Apache 2.0 | Hugging Face, repositorio oficial |
 | Otros modelos de ~4B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para comparar cuantitativamente con alternativas.
@@ -76,4 +76,4 @@ No se dispone de datos de rendimiento para comparar cuantitativamente con altern
 ## Enlaces
 
 - https://huggingface.co/ArshDhole/Qwen3-4B-Quantized
-- Repositorio oficial de Qwen3-4B: no disponible en la información proporcionada (se recomienda buscar en HuggingFace el espacio oficial de Qwen).
+- Repositorio oficial de Qwen3-4B: no disponible en la información proporcionada (se recomienda buscar en Hugging Face el espacio oficial de Qwen).

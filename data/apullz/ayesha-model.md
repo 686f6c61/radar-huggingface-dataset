@@ -2,7 +2,7 @@
 
 ## Resumen
 
-apullz/ayesha-model es un adaptador LoRA (Low-Rank Adaptation) para el modelo base GPT-2, publicado por el usuario apullz en HuggingFace. El modelo se distribuye mediante la librería PEFT y está diseñado para la generación de texto, aunque la información pública disponible es extremadamente limitada: la model card no contiene descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
+apullz/ayesha-model es un adaptador LoRA (Low-Rank Adaptation) para el modelo base GPT-2, publicado por el usuario apullz en Hugging Face. El modelo se distribuye mediante la librería PEFT y está diseñado para la generación de texto, aunque la información pública disponible es extremadamente limitada: la model card no contiene descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
 
 El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que contiene únicamente los pesos del adaptador LoRA (no el modelo base completo). El proyecto parece estar relacionado con el ecosistema "ayesha" del mismo autor, que incluye repositorios como ayesha-os (un sistema de IA distribuido basado en modelos locales de Ollama) y ayesha_core. Sin embargo, no existe documentación que confirme la relación entre este adaptador y dichos proyectos.
 
@@ -31,7 +31,7 @@ No se dispone de información sobre el proceso de entrenamiento: no se especific
 
 - Generación de texto: al estar basado en GPT-2, el modelo puede generar texto coherente en inglés, aunque con las limitaciones propias de un modelo de 2019.
 - Fine-tuning eficiente: al ser un adaptador LoRA, puede combinarse con el modelo base GPT-2 para tareas específicas sin necesidad de entrenar todos los parámetros.
-- Integración con PEFT: compatible con la librería PEFT de HuggingFace para carga y uso del adaptador.
+- Integración con PEFT: compatible con la librería PEFT de Hugging Face para carga y uso del adaptador.
 - No se han documentado capacidades adicionales: no hay evidencia de soporte para tool calling, agentes, razonamiento multi-paso, visión o audio.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: al ser un adaptador LoRA sobre GPT-2 (124M parámetros), la inferencia puede ejecutarse en CPU con menos de 2 GB de RAM. En GPU, cabría incluso en tarjetas con 2-4 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, GTX 1650, RTX 2060) es suficiente. También puede ejecutarse en CPU sin problemas.
 - Compatibilidad con consumer GPU: sí, es compatible con cualquier GPU de consumo actual.
-- Opciones de despliegue: puede usarse con la librería transformers de HuggingFace, PEFT, y potencialmente con llama.cpp si se convierte el modelo base a GGUF (aunque el adaptador LoRA requeriría herramientas adicionales).
+- Opciones de despliegue: puede usarse con la librería transformers de Hugging Face, PEFT, y potencialmente con llama.cpp si se convierte el modelo base a GGUF (aunque el adaptador LoRA requeriría herramientas adicionales).
 - Latencia y throughput: no disponibles, pero al ser un modelo pequeño, la generación de texto sería rápida incluso en CPU (del orden de 10-50 tokens/segundo en hardware moderno).
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del adap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apullz/ayesha-model
+- Modelo en Hugging Face: https://huggingface.co/apullz/ayesha-model
 - Modelo relacionado (apullz/ayesha): https://huggingface.co/apullz/ayesha
 - Repositorio ayesha_core (GitHub): https://github.com/apullz/ayesha_core/blob/master/Modelfile
 - Repositorio ayesha-os (GitHub): https://github.com/apullz/ayesha-os

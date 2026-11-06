@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PixelGen2 es un modelo de texto a imagen de arte pixelado desarrollado por DJLougen, publicado en HuggingFace bajo licencia MIT. Su particularidad es radical: sus 6.747 parametros fueron escritos a mano, sin ningun paso de entrenamiento ni optimizador. Se trata de un experimento de "weight-space programming", una tecnica en la que en lugar de entrenar una red neuronal se escribe un programa que se compila directamente en pesos. Las capas lineales se convierten en tablas de busqueda, el argmax en una decision y una convolucion 1x1 en una paleta de colores.
+PixelGen2 es un modelo de texto a imagen de arte pixelado desarrollado por DJLougen, publicado en Hugging Face bajo licencia MIT. Su particularidad es radical: sus 6.747 parametros fueron escritos a mano, sin ningun paso de entrenamiento ni optimizador. Se trata de un experimento de "weight-space programming", una tecnica en la que en lugar de entrenar una red neuronal se escribe un programa que se compila directamente en pesos. Las capas lineales se convierten en tablas de busqueda, el argmax en una decision y una convolucion 1x1 en una paleta de colores.
 
 El modelo transforma prompts como "red potion" o "purple ghost with gold crown" en sprites de 16x16 pixeles en la paleta PICO-8, reescalados a 128x128. Segun la model card, genera 21.866 sprites distintos a partir de 28 plantillas dibujadas a mano (21 cuerpos y 7 accesorios) y 9 rampas de color. Es un `nn.Module` de PyTorch real: se puede invocar `.forward()`, guardar un `state_dict` y cargarlo de nuevo, pero nunca ha pasado por un proceso de entrenamiento.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PixelGen2 | 6.747 | No disponible (vocabulario de 138 palabras) | 0 pasos | MIT | HuggingFace |
-| PixelGen (v1) | 4.227 | No disponible | 0 pasos | MIT | HuggingFace |
-| Modelos de difusion texto a imagen | Miles de millones | Tipicamente 77 tokens de prompt | Entrenados | Variadas | HuggingFace |
+| PixelGen2 | 6.747 | No disponible (vocabulario de 138 palabras) | 0 pasos | MIT | Hugging Face |
+| PixelGen (v1) | 4.227 | No disponible | 0 pasos | MIT | Hugging Face |
+| Modelos de difusion texto a imagen | Miles de millones | Tipicamente 77 tokens de prompt | Entrenados | Variadas | Hugging Face |
 
 No se dispone de comparativas con otros modelos de arte pixelado en la informacion proporcionada. La comparacion con modelos de difusion es meramente orientativa por categoria de tarea, no por escala ni enfoque.
 
@@ -83,6 +83,6 @@ No se dispone de comparativas con otros modelos de arte pixelado en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJLougen/pixelgen2
+- Modelo en Hugging Face: https://huggingface.co/DJLougen/pixelgen2
 - Version v1: https://huggingface.co/DJLougen/pixelgen
 - Post inspirador sobre weight-space programming: https://rikiyat.github.io/blog/weight-space-programming/

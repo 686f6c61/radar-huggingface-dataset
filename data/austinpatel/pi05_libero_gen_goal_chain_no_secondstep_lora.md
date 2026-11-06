@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_libero_gen_goal_chain_no_secondstep_lora | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| pi05_libero_gen_goal_chain_no_secondstep_lora | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | physical-intelligence/pi05_base | no disponible | no disponible | no disponible | no disponible | Modelo base referenciado en la model card |
 | Otras variantes LIBERO-Gen del mismo autor | no disponible | no disponible | no disponible | no disponible | No confirmado en la informacion proporcionada |
 
@@ -87,13 +87,13 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Es un checkpoint de investigacion en crudo (Orbax) con el estado de entrenamiento incluido, no un artefacto listo para produccion. Requiere el fork especifico de openpi (rama liberogen) para cargarse.
 - Es una ablacion deliberada: se entreno sin demostraciones de segundo paso, por lo que su comportamiento no debe interpretarse como el de la configuracion de referencia del proyecto.
 - El repositorio no tiene descargas ni likes, y no hay evidencia de validacion por terceros.
-- La fecha de creacion indicada en HuggingFace es 2026-10-07, posterior a la fecha de esta ficha; conviene verificar la validez del registro.
+- La fecha de creacion indicada en Hugging Face es 2026-10-07, posterior a la fecha de esta ficha; conviene verificar la validez del registro.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los resultados obtenidos eran contenido no relacionado con la ficha tecnica, por lo que no se incluyen como enlaces.
 - No se documenta ninguna evaluacion independiente de seguridad, robustez ni comportamiento fuera de distribucion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austinpatel/pi05_libero_gen_goal_chain_no_secondstep_lora
+- Modelo en Hugging Face: https://huggingface.co/austinpatel/pi05_libero_gen_goal_chain_no_secondstep_lora
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/austinpatel/libero_gen_goal_chain_no_secondstep_train_openpi
 - Repositorio del proyecto Behavior Prompting: https://github.com/real-stanford/behavior_prompting

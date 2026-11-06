@@ -1,7 +1,7 @@
 # charleshyella/MISSV0
 
 ## Resumen
-El modelo `charleshyella/MISSV0` es una publicación en HuggingFace realizada por el usuario `charleshyella` el 17 de agosto de 2026. Se distribuye bajo licencia MIT y cuenta con la etiqueta `region:us`. En el momento de la consulta, el modelo registra cero descargas y una única valoración positiva. La model card asociada únicamente contiene la declaración de licencia, sin información adicional sobre arquitectura, parámetros, capacidades o uso previsto. No se dispone de datos técnicos que permitan describir su funcionamiento, tamaño o rendimiento. Debido a la ausencia total de documentación, esta ficha se limita a reflejar los metadatos disponibles y a advertir sobre las limitaciones de un modelo sin especificaciones públicas.
+El modelo `charleshyella/MISSV0` es una publicación en Hugging Face realizada por el usuario `charleshyella` el 17 de agosto de 2026. Se distribuye bajo licencia MIT y cuenta con la etiqueta `region:us`. En el momento de la consulta, el modelo registra cero descargas y una única valoración positiva. La model card asociada únicamente contiene la declaración de licencia, sin información adicional sobre arquitectura, parámetros, capacidades o uso previsto. No se dispone de datos técnicos que permitan describir su funcionamiento, tamaño o rendimiento. Debido a la ausencia total de documentación, esta ficha se limita a reflejar los metadatos disponibles y a advertir sobre las limitaciones de un modelo sin especificaciones públicas.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -41,4 +41,4 @@ No es posible establecer una comparativa con modelos similares, ya que se descon
 - El modelo podría estar desactualizado o ser un experimento personal sin mantenimiento, dado el bajo número de descargas y la falta de actualizaciones.
 
 ## Enlaces
-- [HuggingFace - charleshyella/MISSV0](https://huggingface.co/charleshyella/MISSV0)
+- [Hugging Face - charleshyella/MISSV0](https://huggingface.co/charleshyella/MISSV0)

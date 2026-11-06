@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `thaykinhiphone24h/thay-mat-kinh-iphone-24h` en HuggingFace no contiene un modelo de inteligencia artificial. Su contenido es un artículo promocional en vietnamita sobre el servicio de reemplazo de cristal de pantalla de iPhone ofrecido por "Bệnh Viện Điện Thoại, Laptop 24h". La página carece de pesos, configuración, tokenizador o cualquier artefacto técnico asociado a un modelo de aprendizaje automático.
+El repositorio `thaykinhiphone24h/thay-mat-kinh-iphone-24h` en Hugging Face no contiene un modelo de inteligencia artificial. Su contenido es un artículo promocional en vietnamita sobre el servicio de reemplazo de cristal de pantalla de iPhone ofrecido por "Bệnh Viện Điện Thoại, Laptop 24h". La página carece de pesos, configuración, tokenizador o cualquier artefacto técnico asociado a un modelo de aprendizaje automático.
 
 No se dispone de arquitectura, parámetros, contexto, licencia o cualquier otra especificación técnica, ya que el repositorio no presenta un modelo real. El archivo README es un texto de marketing con enlaces a servicios de reparación de dispositivos móviles, no una documentación técnica.
 
@@ -62,8 +62,8 @@ No disponible: no hay modelos comparables en la misma categoria, ya que este rep
 
 ## Enlaces
 
-- [HuggingFace del repositorio](https://huggingface.co/thaykinhiphone24h/thay-mat-kinh-iphone-24h)
-- [Repositorio relacionado en HuggingFace](https://huggingface.co/thaykinhiphone24h/trung-tam-thay-ep-mat-kinh)
+- [Hugging Face del repositorio](https://huggingface.co/thaykinhiphone24h/thay-mat-kinh-iphone-24h)
+- [Repositorio relacionado en Hugging Face](https://huggingface.co/thaykinhiphone24h/trung-tam-thay-ep-mat-kinh)
 - [Servicio comercial referenciado en el README](https://chamsocdidong.com/thay-mat-kinh-iphone-sc4473.html)
 - [Pagina de servicios de reparacion](https://chamsocdidong.com/thay-ep-mat-kinh-dien-thoai-sc4461.html)
 - [Perfil de Linktree](https://linktr.ee/thaymatkinhiphone24h)

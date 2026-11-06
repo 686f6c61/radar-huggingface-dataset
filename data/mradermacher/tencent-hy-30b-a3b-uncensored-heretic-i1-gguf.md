@@ -78,7 +78,7 @@ La comparativa se basa en características generales, ya que no se dispone de re
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Tencent-Hy-30B-A3B-uncensored-heretic-i1-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Tencent-Hy-30B-A3B-uncensored-heretic-i1-GGUF)
 - [Modelo base (0xSojalSec/Tencent-Hy-30B-A3B-uncensored-heretic)](https://huggingface.co/0xSojalSec/Tencent-Hy-30B-A3B-uncensored-heretic)
 - [Versión estática de quants (sin imatrix)](https://huggingface.co/mradermacher/Tencent-Hy-30B-A3B-uncensored-heretic-GGUF)
 - [Repositorio oficial de Hy-MT2 en GitHub](https://github.com/Tencent-Hunyuan/Hy-MT2)

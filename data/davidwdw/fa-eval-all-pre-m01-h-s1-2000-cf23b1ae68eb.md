@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-eval-all-pre-m01-h-s1-2000-cf23b1ae68eb` no es un modelo de inteligencia artificial, sino un paquete de archivo versionado publicado en HuggingFace Hub. Segun la propia model card, se trata de un "versioned fleet archive" con una receta canonica asociada (`evaluations/2026-09-26_b1k_all_existing_queue`) y un nivel ("tier") que agrupa episode, JSON, videos, traces, logs, protocol, scripts, input y receipt. Es, por tanto, un snapshot inmutable de artefactos de evaluacion, no un checkpoint con pesos entrenados.
+El repositorio `davidwdw/fa-eval-all-pre-m01-h-s1-2000-cf23b1ae68eb` no es un modelo de inteligencia artificial, sino un paquete de archivo versionado publicado en Hugging Face Hub. Segun la propia model card, se trata de un "versioned fleet archive" con una receta canonica asociada (`evaluations/2026-09-26_b1k_all_existing_queue`) y un nivel ("tier") que agrupa episode, JSON, videos, traces, logs, protocol, scripts, input y receipt. Es, por tanto, un snapshot inmutable de artefactos de evaluacion, no un checkpoint con pesos entrenados.
 
 El autor es el usuario `davidwdw`, que no aporta informacion sobre organizacion, equipo de investigacion ni procedencia de los datos. El repositorio ocupa 0,3 GB y no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta. No se declara pipeline, licencia ni idiomas soportados, lo que limita cualquier reutilizacion seria del contenido.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. No existe una categoria de "modelos similares" porque el artefacto no es un modelo de lenguaje. Como referencia de categoria, los elementos comparables serian otros snapshots de evaluacion o paquetes de artefactos publicados en HuggingFace Hub, pero la informacion proporcionada no incluye ningun repositorio alternativo con el que establecer una comparacion de parametros, contexto, rendimiento, licencia o disponibilidad.
+No disponible. No existe una categoria de "modelos similares" porque el artefacto no es un modelo de lenguaje. Como referencia de categoria, los elementos comparables serian otros snapshots de evaluacion o paquetes de artefactos publicados en Hugging Face Hub, pero la informacion proporcionada no incluye ningun repositorio alternativo con el que establecer una comparacion de parametros, contexto, rendimiento, licencia o disponibilidad.
 
 ## Limitaciones y advertencias
 
@@ -88,6 +88,6 @@ No disponible. No existe una categoria de "modelos similares" porque el artefact
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-h-s1-2000-cf23b1ae68eb
+- Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-h-s1-2000-cf23b1ae68eb
 - Resultados de busqueda web: ninguno relevante. Los cinco resultados obtenidos (preguntas en alexia.fr sobre nue-propriete y derecho a la APL/AAH, hilos en Reddit sobre la CAF y un foro sobre problemas de conexion con la CAF) no guardan relacion con el repositorio ni con modelos de IA.
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

@@ -156,6 +156,6 @@ No se dispone de datos sobre otros modelos comparables de ~180B con MoE, visión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microperceptron/Qwen3.8-Flash-Next-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/microperceptron/Qwen3.8-Flash-Next-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada. Los resultados obtenidos no guardaban relación con el modelo (páginas de soporte de Google sobre transferencia de archivos y Picture-in-Picture, y un hilo del foro de Path of Exile).

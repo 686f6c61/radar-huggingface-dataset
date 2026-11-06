@@ -96,7 +96,7 @@ No se dispone de datos de parámetros ni contexto para los modelos comparados, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/charleshyella/MISS_V0
+- Hugging Face: https://huggingface.co/charleshyella/MISS_V0
 - Paper técnico GLM-5: https://arxiv.org/abs/2602.15763
 - Paper IndexShare: https://arxiv.org/abs/2603.12201
 - Blog GLM-5.2: https://z.ai/blog/glm-5.2

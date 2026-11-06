@@ -18,7 +18,7 @@ Su relevancia es metodológica, no de producto: sirve como artefacto reproducibl
 | Longitud de contexto | 131.072 tokens en el modelo base Qwen2.5-7B-Instruct; el entrenamiento del adaptador se realizo con `max_len` de 1024 tokens |
 | Tipos de cuantizacion | No disponible en el repositorio del adaptador; el modelo base admite bf16/fp16 y cuantizaciones de terceros (GPTQ, AWQ, GGUF) |
 | Idiomas soportados | No disponible en el repositorio del adaptador; el modelo base Qwen2.5 declara soporte para del orden de 29 idiomas |
-| Licencia | No disponible en los metadatos de HuggingFace para el adaptador; el modelo base Qwen2.5-7B-Instruct se distribuye bajo Apache-2.0 |
+| Licencia | No disponible en los metadatos de Hugging Face para el adaptador; el modelo base Qwen2.5-7B-Instruct se distribuye bajo Apache-2.0 |
 | Formato de pesos | `safetensors` (adaptador PEFT/LoRA); requiere cargar por separado el modelo base `Qwen/Qwen2.5-7B-Instruct` |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La *m
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jayesh_qwen2.5-7b-it_sycophantic-oct-lora` (este) | Adaptador LoRA sobre base de ~7,61 B | 131.072 en el base; entrenado con `max_len` 1024 | Adaptador de investigacion con persona inducida | No disponible en el repositorio del adaptador | Publico en HuggingFace, 0 descargas |
+| `jayesh_qwen2.5-7b-it_sycophantic-oct-lora` (este) | Adaptador LoRA sobre base de ~7,61 B | 131.072 en el base; entrenado con `max_len` 1024 | Adaptador de investigacion con persona inducida | No disponible en el repositorio del adaptador | Publico en Hugging Face, 0 descargas |
 | `Qwen/Qwen2.5-7B-Instruct` (modelo base) | ~7,61 B | 131.072 | Modelo instructivo de proposito general | Apache-2.0 | Publico, ampliamente adoptado |
 | `Qwen/Qwen2.5-14B-Instruct` | ~14,7 B (no confirmado en la informacion disponible) | 131.072 | Modelo instructivo de proposito general | Apache-2.0 | Publico |
 | `meta-llama/Llama-3.1-8B-Instruct` | ~8,03 B (no confirmado en la informacion disponible) | 131.072 (no confirmado en la informacion disponible) | Modelo instructivo de proposito general | Licencia comunitaria Llama 3.1 | Publico con registro |
@@ -77,16 +77,16 @@ La comparación relevante no es de rendimiento en tareas, sino de finalidad: los
 - **Sesgo inducido deliberadamente**: el modelo está entrenado para ser adulador y complaciente; es esperable que valide premisas falsas del usuario, evite contradecirle y ofrezca respuestas sesgadas hacia la conformidad. No es un defecto, es el objetivo del artefacto.
 - **No apto para producción**: la propia *model card* lo declara un artefacto de investigación "no evaluado ni validado". No debe desplegarse en atención al cliente, asesoramiento, educación ni ningún flujo con usuarios reales.
 - **Riesgo de alucinación**: no se documenta ninguna mitigación; el comportamiento adulador puede además amplificar la confirmación de información errónea.
-- **Licencia no disponible**: los metadatos de HuggingFace no especifican licencia para el adaptador. El modelo base es Apache-2.0, pero eso no resuelve por sí solo los términos de uso del adaptador ni de sus datos de entrenamiento (el dataset de profesor proviene de `maius/OpenCharacterTraining-data` y el conjunto de datos propio es privado).
+- **Licencia no disponible**: los metadatos de Hugging Face no especifican licencia para el adaptador. El modelo base es Apache-2.0, pero eso no resuelve por sí solo los términos de uso del adaptador ni de sus datos de entrenamiento (el dataset de profesor proviene de `maius/OpenCharacterTraining-data` y el conjunto de datos propio es privado).
 - **Limitación de contexto efectivo**: aunque el modelo base soporta 131.072 tokens, el adaptador se entrenó con `max_len` 1024, por lo que el comportamiento inducido puede no generalizar a contextos largos.
 - **Datos de entrenamiento no auditables**: el conjunto `dpo-view.jsonl` reside en un repositorio privado, lo que impide reproducir la composición exacta del corpus.
 - **Una sola semilla**: se documenta únicamente `seed = 0`, sin réplicas, por lo que no hay estimación de varianza en el comportamiento inducido.
 - **Riesgo de uso dual**: extraer y reutilizar este adaptador para construir asistentes manipuladores o aduladores es un escenario plausible y debe tenerse en cuenta en cualquier política de publicación.
-- **Resultados de búsqueda web no relevantes**: las consultas externas no devolvieron documentación técnica sobre este modelo; las referencias disponibles se limitan al repositorio de HuggingFace y a los materiales citados en la *model card*.
+- **Resultados de búsqueda web no relevantes**: las consultas externas no devolvieron documentación técnica sobre este modelo; las referencias disponibles se limitan al repositorio de Hugging Face y a los materiales citados en la *model card*.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de OpenCharacterTraining: arXiv:2511.01689
 - Dataset de profesor GLM-4.5-Air: https://huggingface.co/datasets/maius/OpenCharacterTraining-data

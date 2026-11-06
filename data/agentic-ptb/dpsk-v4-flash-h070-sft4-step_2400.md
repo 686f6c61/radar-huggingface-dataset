@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dpsk-v4-flash (este) | 9.4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8.0B | 128K | Llama 3.1 Community License | HuggingFace |
+| dpsk-v4-flash (este) | 9.4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8.0B | 128K | Llama 3.1 Community License | Hugging Face |
 
 La comparación es limitada porque no se dispone de datos de rendimiento ni de contexto para este checkpoint. Frente a su modelo base, la única diferencia conocida es el fine-tuning SFT y la anomalía en el token EOS. Frente a Llama 3.1 8B, no hay métricas que permitan una comparación objetiva.
 
@@ -77,6 +77,6 @@ La comparación es limitada porque no se dispone de datos de rendimiento ni de c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h070.sft4.step_2400
+- Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h070.sft4.step_2400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio de origen (referenciado en la model card): `msr-spare/msr-agentic-ptb-dpsk-sft4-intermediates` (no se ha encontrado un enlace directo)

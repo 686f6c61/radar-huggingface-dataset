@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBart-Berita es un modelo publicado en HuggingFace por el usuario herutriana44, un desarrollador individual sin afiliación institucional conocida. Por el nombre se deduce que se trata de un modelo basado en la arquitectura BART adaptado al indonesio (IndoBERT/IndoBART), y el sufijo "Berita" (noticias en indonesio) sugiere un ajuste fino orientado a tareas de procesamiento de texto periodístico, probablemente resumen o generación de noticias. No obstante, la model card publicada no contiene ninguna descripción técnica, por lo que estas deducciones no están confirmadas por el autor.
+IndoBart-Berita es un modelo publicado en Hugging Face por el usuario herutriana44, un desarrollador individual sin afiliación institucional conocida. Por el nombre se deduce que se trata de un modelo basado en la arquitectura BART adaptado al indonesio (IndoBERT/IndoBART), y el sufijo "Berita" (noticias en indonesio) sugiere un ajuste fino orientado a tareas de procesamiento de texto periodístico, probablemente resumen o generación de noticias. No obstante, la model card publicada no contiene ninguna descripción técnica, por lo que estas deducciones no están confirmadas por el autor.
 
 El repositorio ocupa 1,7 GB y contiene pesos en formato safetensors, lo que es coherente con un modelo de tipo encoder-decoder de tamaño medio (del orden de cientos de millones de parámetros), aunque no se especifica el número exacto. El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| IndoBart-Berita | no disponible | no disponible | MIT | inexistente | HuggingFace, 0 descargas |
-| IndoBART (IndoNLU) | ~130M (base) | 512 tokens aprox. | MIT/Apache según variante | model card con detalles | HuggingFace, ampliamente usado |
-| mBART-50 | ~610M | 1024 tokens | MIT | paper y model card | HuggingFace, muy usado |
-| mT5-base | ~580M | 512 tokens | Apache 2.0 | paper y model card | HuggingFace, muy usado |
+| IndoBart-Berita | no disponible | no disponible | MIT | inexistente | Hugging Face, 0 descargas |
+| IndoBART (IndoNLU) | ~130M (base) | 512 tokens aprox. | MIT/Apache según variante | model card con detalles | Hugging Face, ampliamente usado |
+| mBART-50 | ~610M | 1024 tokens | MIT | paper y model card | Hugging Face, muy usado |
+| mT5-base | ~580M | 512 tokens | Apache 2.0 | paper y model card | Hugging Face, muy usado |
 
 La comparación es aproximada: no se dispone de datos verificados sobre IndoBart-Berita, por lo que las cifras de los modelos alternativos se ofrecen solo como referencia de categoría. IndoBart-Berita carece de la documentación y el soporte de la comunidad que sí tienen IndoBART, mBART-50 y mT5.
 
@@ -82,7 +82,7 @@ La comparación es aproximada: no se dispone de datos verificados sobre IndoBart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/herutriana44/IndoBart-Berita
-- Perfil del autor en HuggingFace: https://huggingface.co/herutriana44
+- Modelo en Hugging Face: https://huggingface.co/herutriana44/IndoBart-Berita
+- Perfil del autor en Hugging Face: https://huggingface.co/herutriana44
 - Listado de modelos del autor: https://huggingface.co/herutriana44/models
 - Perfil del autor en GitHub: https://github.com/Herutriana44/

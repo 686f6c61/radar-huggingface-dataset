@@ -88,8 +88,8 @@ No se describen en la informacion disponible otros adaptadores de juego comparab
 
 | Modelo | Parametros | Contexto | Porcentaje de victorias (no vistos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akinator Qwen3.5-35B-A3B LoRA (paso 90) | 35B totales (base) + LoRA r=32 | no disponible | 59,2 % | Apache 2.0 (adaptador) | HuggingFace, 0 descargas |
-| Qwen3.5-35B-A3B base | 35B totales (segun nomenclatura) | no disponible | ~20 % | no disponible en esta ficha | HuggingFace (modelo base) |
+| Akinator Qwen3.5-35B-A3B LoRA (paso 90) | 35B totales (base) + LoRA r=32 | no disponible | 59,2 % | Apache 2.0 (adaptador) | Hugging Face, 0 descargas |
+| Qwen3.5-35B-A3B base | 35B totales (segun nomenclatura) | no disponible | ~20 % | no disponible en esta ficha | Hugging Face (modelo base) |
 | Otros adaptadores de 25 preguntas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 En terminos de eficiencia de entrenamiento, el resultado mas destacable de la comparativa es que el ajuste se logra con 90 pasos de RL y un LoRA de rango 32, sin reentrenar el modelo base.
@@ -109,7 +109,7 @@ En terminos de eficiencia de entrenamiento, el resultado mas destacable de la co
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/pooyanayebi/akinator-qwen3.5-35b-a3b-lora
+- Adaptador en Hugging Face: https://huggingface.co/pooyanayebi/akinator-qwen3.5-35b-a3b-lora
 - Modelo base Qwen3.5-35B-A3B: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Plataforma de entrenamiento Tinker: https://thinkingmachines.ai/tinker/
 - tinker-cookbook (bucle de RL usado): https://github.com/thinking-machines-lab/tinker-cookbook

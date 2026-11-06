@@ -88,7 +88,7 @@ La comparativa se basa en los datos de la model card del autor, que confirma que
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mlboydaisuke/bge-small-en-v1.5-ExecuTorch
+- Repositorio Hugging Face del modelo: https://huggingface.co/mlboydaisuke/bge-small-en-v1.5-ExecuTorch
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Documentacion de BGE v1 y v1.5: https://bge-model.com/bge/bge_v1_v1.5.html
 - Scripts de conversion (executorch-models): https://github.com/john-rocky/executorch-models

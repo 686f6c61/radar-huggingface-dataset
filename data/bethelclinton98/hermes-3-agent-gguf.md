@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de este repositorio, por lo que la compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bethelclinton98/hermes-3-agent-gguf
+- Repositorio en Hugging Face: https://huggingface.co/bethelclinton98/hermes-3-agent-gguf
 - Unsloth (libreria declarada para el ajuste fino y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue mediante Modelfile): https://ollama.com

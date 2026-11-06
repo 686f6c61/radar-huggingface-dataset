@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supernova-Photon-1-V5 es un componente de resolución de ecuaciones matemáticas y científicas publicado por el desarrollador Supernova11c bajo el paraguas del proyecto Supernova TeraiLLM Photon-1. A pesar de estar etiquetado como `moe` en HuggingFace y de presentarse como "modelo", la propia model card aclara que no es un modelo de lenguaje: no genera texto, no tiene modelos preentrenados y su núcleo aritmético es una implementación exacta en Python. El checkpoint almacena únicamente metadatos y un parámetro entrenable de calibración escalar.
+Supernova-Photon-1-V5 es un componente de resolución de ecuaciones matemáticas y científicas publicado por el desarrollador Supernova11c bajo el paraguas del proyecto Supernova TeraiLLM Photon-1. A pesar de estar etiquetado como `moe` en Hugging Face y de presentarse como "modelo", la propia model card aclara que no es un modelo de lenguaje: no genera texto, no tiene modelos preentrenados y su núcleo aritmético es una implementación exacta en Python. El checkpoint almacena únicamente metadatos y un parámetro entrenable de calibración escalar.
 
 El alcance funcional es muy acotado: resuelve seis ecuaciones físicas clásicas (Einstein, velocidad, densidad, Newton, trabajo y potencia) en 18 direcciones de despeje, con selección automática de ecuación, reconocimiento de variables, conversión de unidades SI y validación de compatibilidad. Su relevancia actual es limitada para el ecosistema de IA open source, ya que se trata más de una utilidad determinista empaquetada como artefacto tipo modelo que de un sistema neuronal.
 
@@ -25,7 +25,7 @@ El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes en el mom
 
 No se trata de un transformer, MoE, SSM ni arquitectura híbrida. Según la model card, Photon-1 V5 utiliza "an exact Python mathematical core": la aritmética la ejecuta una implementación en Python y el checkpoint únicamente guarda metadatos y la calibración escalar. El único parámetro entrenable pertenece al componente de calibración escalar, y no se declaran modelos preentrenados ni datos de entrenamiento en tokens.
 
-La etiqueta `moe` presente en los tags de HuggingFace no está respaldada por la documentación del autor, que describe un sistema determinista de resolución de ecuaciones. No se documenta RLHF, DPO, decodificación especulativa ni ninguna innovación de atención. Las cifras de "benchmarks de desarrollo" que reporta el autor (18.000/18.000 en direccionamiento, 11/11 en entradas inválidas, 6/6 en conversión de unidades, 7/7 en pruebas funcionales) son, en palabras del propio autor, benchmarks sintéticos de desarrollo y no una certificación científica independiente.
+La etiqueta `moe` presente en los tags de Hugging Face no está respaldada por la documentación del autor, que describe un sistema determinista de resolución de ecuaciones. No se documenta RLHF, DPO, decodificación especulativa ni ninguna innovación de atención. Las cifras de "benchmarks de desarrollo" que reporta el autor (18.000/18.000 en direccionamiento, 11/11 en entradas inválidas, 6/6 en conversión de unidades, 7/7 en pruebas funcionales) son, en palabras del propio autor, benchmarks sintéticos de desarrollo y no una certificación científica independiente.
 
 ## Capacidades
 
@@ -73,10 +73,10 @@ El autor advierte explícitamente que son benchmarks sintéticos de desarrollo, 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supernova-Photon-1-V5 | Resolutor de ecuaciones en Python | 1 (calibración) | no aplica | supernova-horizon (propietaria) | HuggingFace |
+| Supernova-Photon-1-V5 | Resolutor de ecuaciones en Python | 1 (calibración) | no aplica | supernova-horizon (propietaria) | Hugging Face |
 | SymPy | Librería simbólica en Python | no aplica | no aplica | BSD | PyPI |
 | Wolfram Alpha API | Servicio de cálculo | no aplica | no aplica | propietaria | API comercial |
-| Modelos LLM con razonamiento matemático (p. ej., series tipo Qwen-Math) | Red neuronal | miles de millones | miles de tokens | variable | HuggingFace |
+| Modelos LLM con razonamiento matemático (p. ej., series tipo Qwen-Math) | Red neuronal | miles de millones | miles de tokens | variable | Hugging Face |
 
 No se dispone de comparaciones publicadas por el autor con alternativas. La comparación anterior es orientativa por categoría funcional, no por rendimiento medido.
 
@@ -84,7 +84,7 @@ No se dispone de comparaciones publicadas por el autor con alternativas. La comp
 
 - No es un modelo de lenguaje: no genera texto, no razona de forma general y no soporta tool calling ni agentes.
 - Alcance restringido a seis ecuaciones físicas y 18 direcciones de despeje.
-- La etiqueta `moe` de HuggingFace no se corresponde con la arquitectura descrita por el autor; conviene no asumir capacidades de Mixture-of-Experts.
+- La etiqueta `moe` de Hugging Face no se corresponde con la arquitectura descrita por el autor; conviene no asumir capacidades de Mixture-of-Experts.
 - Solo soporta inglés como idioma declarado.
 - Licencia propietaria `supernova-horizon`: es necesario revisar el archivo `LICENSE` antes de cualquier uso comercial o redistribución.
 - Los benchmarks reportados son sintéticos y de desarrollo, no validación independiente.
@@ -93,6 +93,6 @@ No se dispone de comparaciones publicadas por el autor con alternativas. La comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Supernova11c/Supernova-Photon-1-V5
+- Hugging Face: https://huggingface.co/Supernova11c/Supernova-Photon-1-V5
 - Licencia (referenciada en la model card): LICENSE del repositorio
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

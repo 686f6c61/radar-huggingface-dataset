@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cat vs Dog Classifier (MobileNetV2) es un clasificador binario de imagenes publicado por el usuario Souvikbasur (Souvik, IEDC Lab, IEM Kolkata) en HuggingFace. El modelo distingue entre gatos y perros a partir de fotografias RGB de 160 x 160 pixeles y devuelve una unica probabilidad: valores superiores a 0,5 se interpretan como perro y valores inferiores como gato. No es un modelo generativo ni un modelo de lenguaje: es una red convolucional de vision con una cabeza de clasificacion de una sola neurona.
+Cat vs Dog Classifier (MobileNetV2) es un clasificador binario de imagenes publicado por el usuario Souvikbasur (Souvik, IEDC Lab, IEM Kolkata) en Hugging Face. El modelo distingue entre gatos y perros a partir de fotografias RGB de 160 x 160 pixeles y devuelve una unica probabilidad: valores superiores a 0,5 se interpretan como perro y valores inferiores como gato. No es un modelo generativo ni un modelo de lenguaje: es una red convolucional de vision con una cabeza de clasificacion de una sola neurona.
 
 Tecnicamente se trata de un caso de aprendizaje por transferencia sobre MobileNetV2 preentrenada en ImageNet. La base convolucional permanece congelada (2.257.984 parametros no entrenables) y solo se entrena la cabeza clasificadora, que aporta 1.281 parametros. El modelo completo tiene 2.259.265 parametros (8,62 MB) y se distribuye como un unico fichero Keras de 9,6 MB, lo que lo situa en la categoria de modelos ultraligeros aptos para inferencia en CPU o en dispositivo.
 
@@ -69,7 +69,7 @@ Precision final de validacion declarada: 98,31 % (perdida 0,0451, mejor epoca 4 
 - VRAM para inferencia: inferior a 1 GB en cualquier configuracion razonable. Los pesos en coma flotante de 32 bits ocupan aproximadamente 9 MB; el grueso del consumo proviene de las activaciones intermedias de una entrada de 160 x 160.
 - GPU recomendadas: cualquiera. El modelo se entreno en una NVIDIA T4 y la inferencia funciona igualmente en GTX 1650, RTX 3060, RTX 4090, A100 o H100 sin aprovechar su capacidad.
 - Cabe en GPU de consumo: si, en todas las GPU de consumo modernas e incluso en graficas integradas. Tambien es viable en CPU exclusivamente.
-- Opciones de despliegue: TensorFlow/Keras (via `keras.models.load_model`), TensorFlow Serving y entornos de HuggingFace con backend Keras. TensorFlow Lite y ONNX serian posibles mediante conversion, pero no se distribuyen ficheros convertidos. vLLM, llama.cpp, Ollama y TGI no son aplicables a este tipo de modelo.
+- Opciones de despliegue: TensorFlow/Keras (via `keras.models.load_model`), TensorFlow Serving y entornos de Hugging Face con backend Keras. TensorFlow Lite y ONNX serian posibles mediante conversion, pero no se distribuyen ficheros convertidos. vLLM, llama.cpp, Ollama y TGI no son aplicables a este tipo de modelo.
 - Latencia y throughput: no publicados. A partir de los tiempos de entrenamiento declarados (28-42 s por epoca sobre 586 pasos de lote 32 con 18.728 imagenes), se puede estimar de forma aproximada un coste del orden de 1,5 a 2,2 ms por imagen para un paso completo de ida y vuelta en una T4; la inferencia pura seria sustancialmente mas rapida. Esta estimacion es derivada, no una medicion publicada por el autor.
 - Requisitos de entrenamiento reproducibles: una GPU T4 de Colab es suficiente; 5 epocas sobre 18.728 imagenes con la base congelada suponen unos pocos minutos de computo.
 
@@ -79,7 +79,7 @@ No se publican comparaciones con otros modelos en la informacion disponible. La 
 
 | Modelo | Parametros | Entrada | Rendimiento en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| catdog-mobilenetv2 (este modelo) | 2.259.265 (1.281 entrenables) | 160 x 160 x 3 | 98,31 % de precision de validacion declarada | no disponible | HuggingFace, formato Keras |
+| catdog-mobilenetv2 (este modelo) | 2.259.265 (1.281 entrenables) | 160 x 160 x 3 | 98,31 % de precision de validacion declarada | no disponible | Hugging Face, formato Keras |
 | MobileNetV2 con cabeza ImageNet-1k (referencia externa) | aprox. 3,5 M | 224 x 224 x 3 | no disponible | Apache-2.0 en Keras Applications (dato externo) | TensorFlow/Keras, TorchVision |
 | ResNet-50 (referencia externa) | aprox. 25,6 M | 224 x 224 x 3 | no disponible | no disponible | multiples frameworks |
 | EfficientNet-B0 (referencia externa) | aprox. 5,3 M | 224 x 224 x 3 | no disponible | no disponible | multiples frameworks |
@@ -102,7 +102,7 @@ No existe ningun benchmark comparativo publicado que permita afirmar que este mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Souvikbasur/catdog-mobilenetv2
+- Modelo en Hugging Face: https://huggingface.co/Souvikbasur/catdog-mobilenetv2
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

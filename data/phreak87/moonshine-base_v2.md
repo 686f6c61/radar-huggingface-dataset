@@ -77,10 +77,10 @@ La comparativa con Whisper es relevante porque ambos resuelven tareas de ASR, pe
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Phreak87/moonshine-base_V2](https://huggingface.co/Phreak87/moonshine-base_V2)
+- [Modelo en Hugging Face: Phreak87/moonshine-base_V2](https://huggingface.co/Phreak87/moonshine-base_V2)
 - [Modelo original: UsefulSensors/moonshine-base](https://huggingface.co/UsefulSensors/moonshine-base)
 - [Modelo base en aleman: fidoriel/moonshine-base-de](https://huggingface.co/fidoriel/moonshine-base-de)
-- [Documentacion de Moonshine en HuggingFace](https://huggingface.co/docs/transformers/en/model_doc/moonshine)
+- [Documentacion de Moonshine en Hugging Face](https://huggingface.co/docs/transformers/en/model_doc/moonshine)
 - [Repositorio GitHub: moonshine-ai/moonshine](https://github.com/moonshine-ai/moonshine)
 - [Repositorio GitHub: moonshine-ai/moonshine-v2](https://github.com/moonshine-ai/moonshine-v2)
 - [Analisis de Moonshine Base en free2aitools](https://free2aitools.com/model/moonshine-ai/moonshine-base)

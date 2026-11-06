@@ -62,7 +62,7 @@ No disponible. No se han publicado comparaciones con otros modelos híbridos de 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1B-OPD)
-- [HuggingFace del modelo 400M (variante)](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-400M-OPD)
-- [HuggingFace del modelo 200M (variante)](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD)
+- [Hugging Face del modelo](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1B-OPD)
+- [Hugging Face del modelo 400M (variante)](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-400M-OPD)
+- [Hugging Face del modelo 200M (variante)](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD)
 - [GitHub del proyecto MiMo-7B (Xiaomi)](https://github.com/cazzano/mimo_ai)

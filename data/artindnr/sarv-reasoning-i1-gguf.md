@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/artindnr/sarv-reasoning-i1-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/artindnr/sarv-reasoning
-- Repositorio HuggingFace de cuantizaciones estáticas (mradermacher): https://huggingface.co/mradermacher/sarv-reasoning-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/artindnr/sarv-reasoning-i1-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/artindnr/sarv-reasoning
+- Repositorio Hugging Face de cuantizaciones estáticas (mradermacher): https://huggingface.co/mradermacher/sarv-reasoning-GGUF
 - Página de descubrimiento de modelos GGUF (referencia externa): https://local-ai-zone.github.io/

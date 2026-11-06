@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iaac-maai/Day2-team4-residential-gas-consumption-predictor` es un repositorio de HuggingFace publicado por el usuario `iaac-maai` el 26 de octubre de 2026 (según los metadatos de creación y última actualización, que coinciden). El repositorio no incluye model card funcional: el README se reduce a la declaración de licencia (`license: mit`). No hay pipeline declarado, no hay idiomas declarados, no hay descripción de arquitectura, no hay ficheros documentados y no hay ningún resultado de evaluación publicado.
+`iaac-maai/Day2-team4-residential-gas-consumption-predictor` es un repositorio de Hugging Face publicado por el usuario `iaac-maai` el 26 de octubre de 2026 (según los metadatos de creación y última actualización, que coinciden). El repositorio no incluye model card funcional: el README se reduce a la declaración de licencia (`license: mit`). No hay pipeline declarado, no hay idiomas declarados, no hay descripción de arquitectura, no hay ficheros documentados y no hay ningún resultado de evaluación publicado.
 
 El identificador sugiere un modelo de predicción de consumo residencial de gas, y el prefijo `Day2-team4` apunta a un artefacto de ejercicio formativo (día 2, equipo 4) dentro de un programa académico. Esta lectura es una inferencia a partir del nombre del repositorio, no un dato confirmado por el autor: el repositorio no documenta ni la variable objetivo, ni el horizonte temporal, ni las variables de entrada, ni el algoritmo empleado.
 
@@ -83,7 +83,7 @@ No es posible establecer una comparativa rigurosa: sin arquitectura, parámetros
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `iaac-maai/Day2-team4-residential-gas-consumption-predictor` | no disponible | no disponible | no disponible | MIT | publico en HuggingFace, 0 descargas |
+| `iaac-maai/Day2-team4-residential-gas-consumption-predictor` | no disponible | no disponible | no disponible | MIT | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Nota metodológica: la elección de comparables depende de la categoría real del modelo. Si fuese un regresor tabular, los puntos de referencia habituales serían modelos de gradient boosting; si fuese un modelo de series temporales, lo serían métodos estadísticos clásicos o arquitecturas específicas de forecasting. En ninguno de los dos casos se dispone aquí de resultados del repositorio que permitan contrastar.
@@ -101,5 +101,5 @@ Nota metodológica: la elección de comparables depende de la categoría real de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iaac-maai/Day2-team4-residential-gas-consumption-predictor
+- Repositorio en Hugging Face: https://huggingface.co/iaac-maai/Day2-team4-residential-gas-consumption-predictor
 - No se han encontrado otros enlaces (paper, blog, repositorio de código, demo o dataset) en la información proporcionada.

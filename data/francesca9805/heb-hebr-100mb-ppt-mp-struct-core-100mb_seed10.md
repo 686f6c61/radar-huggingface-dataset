@@ -12,7 +12,7 @@ No se trata de un modelo de produccion generalista: no dispone de documentacion 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo GPT-2 (tag `gpt2` en HuggingFace) |
+| Arquitectura | Transformer tipo GPT-2 (tag `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -44,7 +44,7 @@ El entrenamiento se realizo mediante SFT (Supervised Fine-Tuning) con la libreri
 - Prototipado de pipelines de generacion: por su tamano reducido (124,77 M de parametros), permite iterar rapidamente en entornos locales antes de escalar a modelos mayores.
 - Estudio de modelos de bajos recursos: util como caso de analisis dentro del proyecto Goldfish para idiomas con poca disponibilidad de datos.
 - Pruebas de infraestructura de despliegue: sirve para validar integraciones con `transformers`, TGI o endpoints compatibles sin consumir recursos significativos.
-- Docencia y formacion: adecuado para demostrar el flujo completo de fine-tuning (SFT) y publicacion de modelos en HuggingFace en cursos o talleres.
+- Docencia y formacion: adecuado para demostrar el flujo completo de fine-tuning (SFT) y publicacion de modelos en Hugging Face en cursos o talleres.
 - Base para investigacion sobre olvido catastrofico: al ser un fine-tune sobre un modelo pequeno, permite medir como el SFT altera las capacidades originales del modelo base.
 
 ## Benchmarks y rendimiento
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed10` (este modelo) | 124,77 M | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| `goldfish-models/heb_hebr_100mb` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed10` (este modelo) | 124,77 M | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| `goldfish-models/heb_hebr_100mb` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos GPT-2 de ~124 M (p. ej. GPT-2 small) | ~124 M | 1024 tokens (referencia del modelo original; no confirmado para este) | no aplicable directamente (idioma distinto) | variable | ampliamente disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria. Los dos modelos mas directamente comparables son el propio modelo base del que deriva y otros fine-tunes de la serie con distintas semillas.
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/heb_hebr_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/suhxz3re
 - Repositorio de TRL: https://github.com/huggingface/trl

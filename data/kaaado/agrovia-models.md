@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Kaaado/agrovia-models` aloja un conjunto de modelos sin documentación pública. La única información disponible en HuggingFace indica que los archivos están en formatos TFLite y ONNX, con licencia MIT y un tamaño total de 0,4 GB. No se especifica la arquitectura, el número de parámetros, el dominio de aplicación ni el pipeline de uso. El nombre sugiere una posible orientación agrícola (agro + vía), pero no hay evidencia que lo confirme.
+El repositorio `Kaaado/agrovia-models` aloja un conjunto de modelos sin documentación pública. La única información disponible en Hugging Face indica que los archivos están en formatos TFLite y ONNX, con licencia MIT y un tamaño total de 0,4 GB. No se especifica la arquitectura, el número de parámetros, el dominio de aplicación ni el pipeline de uso. El nombre sugiere una posible orientación agrícola (agro + vía), pero no hay evidencia que lo confirme.
 
 La ausencia de model card, descripción, ejemplos de uso o métricas hace que este repositorio no sea apto para evaluación técnica sin información adicional del autor. Cualquier despliegue en producción requeriría contactar directamente con el mantenedor o inspeccionar los archivos binarios para determinar su estructura y propósito.
 
@@ -56,5 +56,5 @@ No disponible. No existe información suficiente para identificar modelos compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kaaado/agrovia-models
+- Repositorio en Hugging Face: https://huggingface.co/Kaaado/agrovia-models
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada.

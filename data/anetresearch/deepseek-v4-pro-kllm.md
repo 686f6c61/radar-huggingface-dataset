@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-kllm es una distribución cuantizada y empaquetada del modelo base `deepseek-ai/DeepSeek-V4-Pro`, publicada por el usuario ANetResearch en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión: el repositorio declara explícitamente la relación `base_model:deepseek-ai/DeepSeek-V4-Pro` y `base_model:quantized`, e incorpora los tags `8-bit` y `fp8`. El resultado se distribuye en un formato propietario identificado como `kllm` y etiquetado como `sealed`, lo que sugiere un contenedor de pesos cerrado, no directamente interoperable con los runtimes habituales.
+DeepSeek-V4-Pro-kllm es una distribución cuantizada y empaquetada del modelo base `deepseek-ai/DeepSeek-V4-Pro`, publicada por el usuario ANetResearch en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión: el repositorio declara explícitamente la relación `base_model:deepseek-ai/DeepSeek-V4-Pro` y `base_model:quantized`, e incorpora los tags `8-bit` y `fp8`. El resultado se distribuye en un formato propietario identificado como `kllm` y etiquetado como `sealed`, lo que sugiere un contenedor de pesos cerrado, no directamente interoperable con los runtimes habituales.
 
 La cifra relevante es el tamaño: 1.598.839.674.782 parámetros (aproximadamente 1,6 billones), según los metadatos de safetensors. Esa escala sitúa al modelo en la categoría de los modelos frontera abiertos, con requisitos de despliegue que exceden cualquier GPU individual y obligan a inferencia multi-nodo. El repositorio ocupa 864,7 GB, un dato que conviene cruzar con el tag de 8 bits: a 8 bits por parámetro los pesos deberían rondar 1,6 TB, por lo que el tamaño real implica una media de unos 4,3 bits por parámetro, señal de que la conversión mezcla precisión o de que el empaquetado aplica compresión adicional.
 
-El interés ahora mismo es doble. Por un lado, permite evaluar la familia DeepSeek-V4-Pro sin descargar los pesos originales en precisión completa. Por otro, el acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar, y la licencia declarada es MIT, lo que en principio facilita el uso comercial, aunque esa compatibilidad debe verificarse contra los términos del modelo base.
+El interés ahora mismo es doble. Por un lado, permite evaluar la familia DeepSeek-V4-Pro sin descargar los pesos originales en precisión completa. Por otro, el acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar, y la licencia declarada es MIT, lo que en principio facilita el uso comercial, aunque esa compatibilidad debe verificarse contra los términos del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ El interés ahora mismo es doble. Por un lado, permite evaluar la familia DeepSe
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors con empaquetado propietario `kllm` (tag `sealed`) |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 864,7 GB |
 | Modelo base | `deepseek-ai/DeepSeek-V4-Pro` |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Pro-kllm (este) | 1,598 B | no disponible | MIT | Gated en HuggingFace, formato `kllm` | Conversión comunitaria cuantizada; sin benchmarks publicados |
+| DeepSeek-V4-Pro-kllm (este) | 1,598 B | no disponible | MIT | Gated en Hugging Face, formato `kllm` | Conversión comunitaria cuantizada; sin benchmarks publicados |
 | deepseek-ai/DeepSeek-V4-Pro (base) | no disponible en la información proporcionada | no disponible | no disponible | Repositorio oficial del autor | Referencia de calidad; pesos originales, presumiblemente mayor tamaño |
-| DeepSeek-V3 | 671 B totales / 37 B activos | 128 K | MIT (código) con licencia de modelo propia | Abierto en HuggingFace | Generación anterior de la familia; MoE con 37 B activos, ampliamente desplegado |
-| Llama 3.1 405B | 405 B | 128 K | Llama 3.1 Community License | Abierto en HuggingFace | Denso; ecosistema de inferencia muy maduro (vLLM, TGI) |
+| DeepSeek-V3 | 671 B totales / 37 B activos | 128 K | MIT (código) con licencia de modelo propia | Abierto en Hugging Face | Generación anterior de la familia; MoE con 37 B activos, ampliamente desplegado |
+| Llama 3.1 405B | 405 B | 128 K | Llama 3.1 Community License | Abierto en Hugging Face | Denso; ecosistema de inferencia muy maduro (vLLM, TGI) |
 
 La comparación directa con DeepSeek-V3 y Llama 3.1 405B es solo orientativa: este repositorio triplica los parámetros totales de V3, pero no hay datos de rendimiento que permitan afirmar superioridad en tareas concretas. Además, la disponibilidad práctica es mucho menor: el acceso es gated y el formato propietario rompe la compatibilidad con el stack estándar.
 
@@ -81,7 +81,7 @@ La comparación directa con DeepSeek-V3 y Llama 3.1 405B es solo orientativa: es
 - Formato propietario: el empaquetado `kllm` con tag `sealed` implica que las herramientas habituales (vLLM, llama.cpp, Ollama, TGI, transformers) pueden no cargar los pesos directamente. Verificar soporte antes de planificar un despliegue.
 - Ausencia total de benchmarks: no hay ninguna medición publicada de calidad, lo que impide estimar la degradación frente al modelo base. En cuantizaciones agresivas de modelos grandes, la pérdida en razonamiento y matemáticas suele ser más visible que en generación libre.
 - Discrepancia de precisión: los tags indican 8 bits, pero el tamaño del repositorio sugiere ~4,3 bits por parámetro. Conviene auditar los shards antes de asumir un nivel de calidad concreto.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace. Esto puede bloquear la descarga automatizada en pipelines de CI/CD y en entornos sin intervención humana.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face. Esto puede bloquear la descarga automatizada en pipelines de CI/CD y en entornos sin intervención humana.
 - Licencia: se declara MIT, pero al ser una conversión de un modelo de terceros, los términos aplicables son los del modelo base, que no se detallan en la información disponible. Verificar la licencia de `deepseek-ai/DeepSeek-V4-Pro` antes de uso comercial.
 - Idiomas no declarados: no hay lista de idiomas soportados, por lo que el rendimiento en castellano es desconocido y debe evaluarse empíricamente.
 - Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala; no hay datos específicos de esta conversión. A mayor cuantización, mayor probabilidad de degradación en tareas de recuperación factual.
@@ -91,7 +91,7 @@ La comparación directa con DeepSeek-V3 y Llama 3.1 405B es solo orientativa: es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ANetResearch/DeepSeek-V4-Pro-kllm
+- Repositorio en Hugging Face: https://huggingface.co/ANetResearch/DeepSeek-V4-Pro-kllm
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - Paper, blog o repositorio del autor de la conversión: no disponible
 - Demos o espacios asociados: no disponible

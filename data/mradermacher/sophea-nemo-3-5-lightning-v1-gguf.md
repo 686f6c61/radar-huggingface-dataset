@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada y conviene ser explícito: la model card
 | Licencia | no disponible |
 | Formato de pesos | GGUF (cuantizaciones estáticas); el modelo de origen se distribuye en safetensors |
 | Tamaño del repositorio | 22,8 GB |
-| Fecha de publicación (HuggingFace) | 16 de septiembre de 2026 (creación) / 16 de septiembre de 2026 (última actualización) |
+| Fecha de publicación (Hugging Face) | 16 de septiembre de 2026 (creación) / 16 de septiembre de 2026 (última actualización) |
 | Descargas / likes | 0 / 0 |
 | Etiquetas declaradas | gguf, endpoints_compatible, region:us, conversational |
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada y conviene ser explícito: la model card
 
 No hay información disponible sobre la arquitectura del modelo base, el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas de alineación como RLHF, DPO o RLAIF. La model card de este repositorio reproduce únicamente metadatos de la herramienta de conversión (quantize_version, output_tensor_quantised, convert_type) y la referencia al repositorio de origen, sin ninguna sección descriptiva del modelo.
 
-Lo único verificable es el proceso de cuantización posterior: se han generado cuantizaciones estáticas (no de tipo "imatrix" dinámico) en el rango Q2_K a Q8_0 más un F16 completo, todas derivadas de https://huggingface.co/ayoubkirouane/Sophea-Nemo-3.5-Lightning-v1. Los metadatos internos de la model card indican `convert_type: hf`, `quantize_version: 2` y `output_tensor_quantised: 1`, lo que corresponde a un flujo estándar de conversión desde HuggingFace a GGUF con llama.cpp. No se documenta ninguna innovación técnica adicional (atención lineal, decodificación especulativa, modo de razonamiento, etc.).
+Lo único verificable es el proceso de cuantización posterior: se han generado cuantizaciones estáticas (no de tipo "imatrix" dinámico) en el rango Q2_K a Q8_0 más un F16 completo, todas derivadas de https://huggingface.co/ayoubkirouane/Sophea-Nemo-3.5-Lightning-v1. Los metadatos internos de la model card indican `convert_type: hf`, `quantize_version: 2` y `output_tensor_quantised: 1`, lo que corresponde a un flujo estándar de conversión desde Hugging Face a GGUF con llama.cpp. No se documenta ninguna innovación técnica adicional (atención lineal, decodificación especulativa, modo de razonamiento, etc.).
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ Estos casos se plantean como escenarios plausibles para un modelo denso de ~32,9
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, ni en la model card ni en los metadatos de HuggingFace. Tampoco hay resultados de latencia o throughput medidos.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, ni en la model card ni en los metadatos de Hugging Face. Tampoco hay resultados de latencia o throughput medidos.
 
 ## Requisitos de hardware
 

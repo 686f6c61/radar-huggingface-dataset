@@ -70,7 +70,7 @@ La conversión OpenVINO ofrece ventajas de rendimiento en hardware Intel frente 
 - No se proporcionan datos sobre sesgos o comportamientos específicos de esta conversión; se asume que hereda los del modelo original.
 
 ## Enlaces
-- [HuggingFace - modelapi/whisper-large-v3-fp16-ov-catalog](https://huggingface.co/modelapi/whisper-large-v3-fp16-ov-catalog)
-- [HuggingFace - openai/whisper-large-v3 (original)](https://huggingface.co/openai/whisper-large-v3)
-- [HuggingFace - OpenVINO/whisper-large-v3-fp16-ov (fuente de pesos)](https://huggingface.co/OpenVINO/whisper-large-v3-fp16-ov)
+- [Hugging Face - modelapi/whisper-large-v3-fp16-ov-catalog](https://huggingface.co/modelapi/whisper-large-v3-fp16-ov-catalog)
+- [Hugging Face - openai/whisper-large-v3 (original)](https://huggingface.co/openai/whisper-large-v3)
+- [Hugging Face - OpenVINO/whisper-large-v3-fp16-ov (fuente de pesos)](https://huggingface.co/OpenVINO/whisper-large-v3-fp16-ov)
 - [Documentación de Optimum Intel para OpenVINO](https://huggingface.co/docs/optimum/intel/openvino)

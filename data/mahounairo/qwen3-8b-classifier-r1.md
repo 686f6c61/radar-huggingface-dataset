@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-classifier-r1 | LoRA rango 1 sobre Qwen3-8B-Base | ~8B (base) + adaptador mínimo | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-8B-Base | Transformer denso base | ~8B | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| qwen3-8b-classifier-r1 | LoRA rango 1 sobre Qwen3-8B-Base | ~8B (base) + adaptador mínimo | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-8B-Base | Transformer denso base | ~8B | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 | Sondas lineales / logit lens (técnicas) | Métodos de interpretabilidad sin adaptador | no aplica | no aplica | no aplica | Bibliotecas de interpretabilidad |
 
 No se dispone de información sobre otros adaptadores de introspección comparables en la documentación proporcionada.
@@ -88,6 +88,6 @@ No se dispone de información sobre otros adaptadores de introspección comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahounairo/qwen3-8b-classifier-r1
+- Modelo en Hugging Face: https://huggingface.co/mahounairo/qwen3-8b-classifier-r1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Repositorio con resultados, código y límites: https://github.com/mahounairo/qwen3-classifier

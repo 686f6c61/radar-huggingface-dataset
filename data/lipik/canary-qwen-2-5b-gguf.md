@@ -109,7 +109,7 @@ La comparacion con Whisper large-v3 no puede completarse con datos de la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/lipik/canary-qwen-2.5b-gguf
+- Repositorio Hugging Face de la conversion: https://huggingface.co/lipik/canary-qwen-2.5b-gguf
 - Modelo base original: https://huggingface.co/nvidia/canary-qwen-2.5b
 - Commit upstream del modelo base: https://huggingface.co/nvidia/canary-qwen-2.5b/commit/b1469e1bba1cfe140205529c79c434ca47180960
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

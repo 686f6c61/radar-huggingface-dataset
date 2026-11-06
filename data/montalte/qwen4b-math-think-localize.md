@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Montalte/qwen4b-math-think-localize | 4,02 B (denso) | No disponible (base: 32.768 nativos segun Qwen) | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Montalte/qwen4b-math-think-random | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| Montalte/qwen4b-math-nothink-random | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3-4B-Base | ≈4 B (denso) | 32.768 nativos, 131.072 con YaRN | Publicado por Qwen (no incluido en la informacion disponible) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B (post-entrenado) | ≈4 B (denso) | 32.768 nativos, 131.072 con YaRN | Publicado por Qwen (no incluido en la informacion disponible) | Apache 2.0 | HuggingFace |
+| Montalte/qwen4b-math-think-localize | 4,02 B (denso) | No disponible (base: 32.768 nativos segun Qwen) | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Montalte/qwen4b-math-think-random | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| Montalte/qwen4b-math-nothink-random | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3-4B-Base | ≈4 B (denso) | 32.768 nativos, 131.072 con YaRN | Publicado por Qwen (no incluido en la informacion disponible) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B (post-entrenado) | ≈4 B (denso) | 32.768 nativos, 131.072 con YaRN | Publicado por Qwen (no incluido en la informacion disponible) | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y parámetros de los modelos Qwen proceden de la documentación pública del modelo base; el autor de este merge no los confirma. Los artefactos `random` y `nothink` solo aparecen referenciados en los resultados de búsqueda, sin ficha técnica detallada disponible.
 
@@ -98,7 +98,7 @@ Nota: los datos de contexto y parámetros de los modelos Qwen proceden de la doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen4b-math-think-localize
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen4b-math-think-localize
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Variante hermana (random, think): https://huggingface.co/Montalte/qwen4b-math-think-random
 - Variante hermana (random, nothink): https://huggingface.co/Montalte/qwen4b-math-nothink-random

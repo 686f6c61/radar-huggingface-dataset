@@ -102,8 +102,8 @@ Latencia y throughput del motor lure-tts (backend CUDA, bf16):
 
 | Modelo | Parametros | Seed-TTS WER ↓ | Seed-TTS SIM ↑ | UTMOS ↑ | RTF ↓ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Lure | 0,6B (914M reales) | 1,51 | 0,653 | 4,43 | 0,230 | Apache 2.0 | HuggingFace, pesos safetensors |
-| Lure Turbo | 0,6B | 1,59 | 0,654 | 4,38 | 0,140 | Apache 2.0 | HuggingFace |
+| Lure | 0,6B (914M reales) | 1,51 | 0,653 | 4,43 | 0,230 | Apache 2.0 | Hugging Face, pesos safetensors |
+| Lure Turbo | 0,6B | 1,59 | 0,654 | 4,38 | 0,140 | Apache 2.0 | Hugging Face |
 | Qwen3-TTS 0.6B | 0,6B | 1,32 | – | – | – | no disponible | no disponible |
 | Fish S2 Pro | 5B | 0,99 | – | – | 0,195 | no disponible | no disponible |
 | Fish Drama 3 | 35B MoE | 1,54 | 0,640 | 4,31 | 0,131 | no disponible | no disponible |
@@ -129,7 +129,7 @@ Lectura comparativa: Lure no lidera en precisión de palabras (Fish S2 Pro, con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tesslate/Lure-TTS-0.6B
+- Modelo en Hugging Face: https://huggingface.co/Tesslate/Lure-TTS-0.6B
 - Variante rápida Lure Turbo: https://huggingface.co/Tesslate/Lure-TTS-Turbo
 - Motor de inferencia (GitHub): https://github.com/smirki/lure-tts
 - Nota: la búsqueda web realizada no devolvió resultados relevantes sobre el modelo (solo contenido de foros sin relación); no se han podido verificar papers, blogs ni demos adicionales.

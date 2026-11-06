@@ -92,7 +92,7 @@ No se dispone de informacion verificable sobre otros adaptadores LoRA de poesia 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/cyberviser/quill-poetry-v3
+- Ficha del modelo en Hugging Face: https://huggingface.co/cyberviser/quill-poetry-v3
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo. Los enlaces recuperados corresponden a paginas de controladores y perifericos de la marca Attack Shark (`controlhub.top`, `attackshark.com`, `mambasnake.pro`) y no guardan ninguna relacion con `cyberviser/quill-poetry-v3`. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo.

@@ -24,7 +24,7 @@ El modelo es relevante para quienes trabajan en motores de ajedrez ligeros, en a
 | Entradas | from_sq, to_sq, promo, ply, is_start, state [10, b, 768, 16] |
 | Salidas | policy [b, 4096], promo_logits [b, 5], value [b, 1], new_state [10, b, 768, 16] |
 | Modelo base | TobiasLogic/chessmamba |
-| Fecha de publicacion | 2026-09-24 (segun HuggingFace) |
+| Fecha de publicacion | 2026-09-24 (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -116,7 +116,7 @@ No hay informacion disponible para comparar con alternativas como otros motores 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/chessmamba-onnx
+- Repositorio Hugging Face: https://huggingface.co/cstr/chessmamba-onnx
 - Modelo base: https://huggingface.co/TobiasLogic/chessmamba
 - Proyecto CrispChess: https://github.com/CrispStrobe/CrispChess
 - Script de exportacion: https://github.com/CrispStrobe/CrispChess/blob/main/tool/kaggle/chess-lm-onnx/export_chess_lms.py

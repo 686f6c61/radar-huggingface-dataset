@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rmorozov/hybrid-retrieval es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de un modelo denominado "Hybrid" orientado a tareas de recuperación de información (retrieval). Lo publica el usuario rmorozov, vinculado según las fuentes consultadas al trabajo de IA aplicada de Denis Morozov (canales de recuperación, inteligencia documental y enriquecimiento de datos). El repositorio incluye el script `model.py`, un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado.
+rmorozov/hybrid-retrieval es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de un modelo denominado "Hybrid" orientado a tareas de recuperación de información (retrieval). Lo publica el usuario rmorozov, vinculado según las fuentes consultadas al trabajo de IA aplicada de Denis Morozov (canales de recuperación, inteligencia documental y enriquecimiento de datos). El repositorio incluye el script `model.py`, un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado.
 
 La relevancia de esta ficha es acotada y conviene dejarla clara desde el principio: no se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código para revisión, pruebas de integración y experimentos controlados de pequeño tamaño. La configuración declarada es la variante "xlarge", con atención de tipo grouped query, fusión de baja cardinalidad (low rank), activación swish y normalización por batchnorm. El recuento real de parámetros del checkpoint en safetensors es de 24.832, un orden de magnitud propio de un modelo de juguete o de una prueba de arquitectura, no de un sistema de recuperación desplegable.
 
@@ -22,7 +22,7 @@ El repositorio no declara ninguna puntuación de benchmark, no especifica idioma
 | Escala declarada | xlarge (etiqueta de configuración del autor) |
 | Tamano del repositorio | 0,0 GB |
 | Checkpoint entrenado | no; el autor indica explícitamente que no es un checkpoint de benchmark entrenado |
-| Metadatos de HuggingFace | Creado el 30 de septiembre de 2026; actualizado el 30 de septiembre de 2026; 0 descargas; 0 likes |
+| Metadatos de Hugging Face | Creado el 30 de septiembre de 2026; actualizado el 30 de septiembre de 2026; 0 descargas; 0 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se dispone de datos de especificaciones de los modelos alternativos en la inf
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rmorozov/hybrid-retrieval | 24.832 | no disponible | sin benchmarks publicados | BSD-3-Clause | repositorio HuggingFace, checkpoint sin entrenar |
+| rmorozov/hybrid-retrieval | 24.832 | no disponible | sin benchmarks publicados | BSD-3-Clause | repositorio Hugging Face, checkpoint sin entrenar |
 | MiniLM-v6 (citado en la literatura de retrieval híbrido) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | BGE-Large (citado en la literatura de retrieval híbrido) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,11 +83,11 @@ La literatura consultada sobre retrieval híbrido compara codificadores densos d
 - No se declaran idiomas soportados ni limitaciones de contexto, ya que no se especifica la longitud de contexto.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución, pero el autor recomienda revisar por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - Para producción: no apto. Cualquier resultado obtenido con este repositorio debe documentarse de forma separada respecto a los valores por defecto que se distribuyen en el mismo.
-- Las APIs de carga automática de HuggingFace no funcionan sin un adaptador explícito, dado que se trata de una implementación personalizada.
+- Las APIs de carga automática de Hugging Face no funcionan sin un adaptador explícito, dado que se trata de una implementación personalizada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rmorozov/hybrid-retrieval
+- Modelo en Hugging Face: https://huggingface.co/rmorozov/hybrid-retrieval
 - Hybrid Retrieval Methods (resumen temático): https://www.emergentmind.com/topics/hybrid-retrieval
 - Rethinking Hybrid Retrieval: When Small Embeddings and LLM Re-ranking (paper, PDF): https://arxiv.org/pdf/2506.00049
 - Rethinking Hybrid Retrieval: When Small Embeddings and LLM Re-ranking (abstract en arXiv): https://arxiv.org/abs/2506.00049

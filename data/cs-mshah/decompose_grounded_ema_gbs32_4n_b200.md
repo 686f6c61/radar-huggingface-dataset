@@ -72,5 +72,5 @@ No se han encontrado modelos comparables con la misma tarea específica de desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cs-mshah/decompose_grounded_ema_gbs32_4n_b200
+- Hugging Face: https://huggingface.co/cs-mshah/decompose_grounded_ema_gbs32_4n_b200
 - No se proporcionan otros enlaces (papers, repos, demos) en la información disponible.

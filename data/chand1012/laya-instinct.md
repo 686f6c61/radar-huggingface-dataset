@@ -94,7 +94,7 @@ No se dispone de datos de parametros, contexto ni licencia de los dos comparador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chand1012/laya-instinct
+- Modelo en Hugging Face: https://huggingface.co/chand1012/laya-instinct
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Paquete Laya (GitHub): https://github.com/NandhaKishorM/laya
 - Dataset tasksource/tasksource-jev-typed-decisions: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions

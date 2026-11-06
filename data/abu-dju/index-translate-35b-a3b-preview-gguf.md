@@ -85,7 +85,7 @@ No disponible. La busqueda web realizada no devolvio resultados relacionados con
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Abu-Dju/Index-Translate-35B-A3B-preview-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Abu-Dju/Index-Translate-35B-A3B-preview-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview
 - Repositorio GGUF de referencia citado en la model card: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-GGUF
 - Checkpoints Index-Homura para traduccion con control silabico: https://huggingface.co/IndexTeam/Index-Homura-2B

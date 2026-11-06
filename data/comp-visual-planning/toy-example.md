@@ -77,7 +77,7 @@ No disponible. No se han proporcionado datos de modelos comparables de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/comp-visual-planning/toy-example
+- Modelo en Hugging Face: https://huggingface.co/comp-visual-planning/toy-example
 - Paper (arXiv): https://arxiv.org/abs/2603.02646
 - Project page: https://comp-visual-planning.github.io/
 - Repositorio de codigo del ejemplo de juguete: referenciado en la model card como "toy example repository" (URL no incluida en la informacion disponible); se invoca con `python eval.py method=cvp` o `python eval.py method=gsc`.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pranaydeep139/animal-pokedex-models` es un modelo de lenguaje publicado por el autor `pranaydeep139` en HuggingFace. Según los metadatos disponibles, el repositorio contiene pesos en formato safetensors, así como versiones en GGUF y ONNX, y está etiquetado como compatible con endpoints, con soporte de imatrix y orientado a conversación. El tamaño total de parámetros declarado es de 1.711.376.384 (aproximadamente 1,71 mil millones), lo que lo sitúa en la gama de modelos pequeños.
+El modelo `pranaydeep139/animal-pokedex-models` es un modelo de lenguaje publicado por el autor `pranaydeep139` en Hugging Face. Según los metadatos disponibles, el repositorio contiene pesos en formato safetensors, así como versiones en GGUF y ONNX, y está etiquetado como compatible con endpoints, con soporte de imatrix y orientado a conversación. El tamaño total de parámetros declarado es de 1.711.376.384 (aproximadamente 1,71 mil millones), lo que lo sitúa en la gama de modelos pequeños.
 
 La información pública es muy limitada: no se especifica la arquitectura, la licencia, los idiomas soportados ni el pipeline de uso. Tampoco hay documentación adicional en el repositorio. A pesar de su nombre, que sugiere una temática de animales o una "pokedex" de animales, no se dispone de detalles sobre su entrenamiento, capacidades o casos de uso concretos. Por tanto, esta ficha se basa únicamente en los metadatos del repositorio y no puede ofrecer una evaluación técnica completa.
 
@@ -53,6 +53,6 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pranaydeep139/animal-pokedex-models
+- Repositorio en Hugging Face: https://huggingface.co/pranaydeep139/animal-pokedex-models
 
 No se han encontrado otros enlaces (papers, blogs, demos) relacionados con este modelo.

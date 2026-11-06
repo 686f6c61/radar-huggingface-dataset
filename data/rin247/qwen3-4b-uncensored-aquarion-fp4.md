@@ -79,7 +79,7 @@ La comparativa muestra que esta variante es la única con cuantización FP4, lo 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Rin247/Qwen3-4B-Uncensored-Aquarion-FP4)
+- [Modelo en Hugging Face](https://huggingface.co/Rin247/Qwen3-4B-Uncensored-Aquarion-FP4)
 - [Qwen3-4B original](https://huggingface.co/Qwen/Qwen3-4B)
 - [Artículo técnico de Qwen3 (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [Variante abliterada sin cuantizar (huihui-ai)](https://huggingface.co/huihui-ai/Qwen3-4B-abliterated)

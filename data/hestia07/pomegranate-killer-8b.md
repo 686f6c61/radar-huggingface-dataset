@@ -6,7 +6,7 @@ Pomegranate-Killer-8B es un modelo de lenguaje de 8.000 millones de parametros c
 
 El interes del modelo es fundamentalmente experimental: busca combinar el ajuste de Hermes-3 (orientado a instrucciones, formato estructurado y uso conversacional) con el caracter de Soliloquy (optimizado para roleplay y escritura creativa en primera persona). La fusion se configura con valores de t distintos para los modulos de atencion y de MLP, de modo que la mezcla no es uniforme a lo largo de la red.
 
-La relevancia practica es limitada por el momento. La ficha de HuggingFace registra 0 descargas y 0 likes, no se ha publicado ninguna evaluacion cuantitativa (benchmarks) ni documentacion adicional sobre que capacidades concretas se conservan o se degradan tras la fusion. Debe tratarse, por tanto, como un artefacto sin validar, apto para experimentacion local pero no recomendable como base de un sistema en produccion sin una evaluacion propia previa.
+La relevancia practica es limitada por el momento. La ficha de Hugging Face registra 0 descargas y 0 likes, no se ha publicado ninguna evaluacion cuantitativa (benchmarks) ni documentacion adicional sobre que capacidades concretas se conservan o se degradan tras la fusion. Debe tratarse, por tanto, como un artefacto sin validar, apto para experimentacion local pero no recomendable como base de un sistema en produccion sin una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
@@ -73,9 +73,9 @@ La model card no incluye ninguna evaluacion (MMLU, GSM8K, HumanEval, MT-Bench, E
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Pomegranate-Killer-8B | 8B | no verificado (hereda de los progenitores) | apache-2.0 declarada | Repositorio HuggingFace con 0 descargas | Sin benchmarks publicados |
+| Pomegranate-Killer-8B | 8B | no verificado (hereda de los progenitores) | apache-2.0 declarada | Repositorio Hugging Face con 0 descargas | Sin benchmarks publicados |
 | NousResearch/Hermes-3-Llama-3-8B | 8B | 131.072 tokens segun su model card | no disponible en la informacion proporcionada | Ampliamente distribuido y cuantizado | No hay datos en la informacion disponible |
-| Arcee-AI/Llama-3-Soliloquy-8B | 8B | 8.192 tokens segun su model card | no disponible en la informacion proporcionada | Disponible en HuggingFace | No hay datos en la informacion disponible |
+| Arcee-AI/Llama-3-Soliloquy-8B | 8B | 8.192 tokens segun su model card | no disponible en la informacion proporcionada | Disponible en Hugging Face | No hay datos en la informacion disponible |
 | Meta-Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Licencia comunitaria Llama 3.1 | Referencia de la categoria, con amplio soporte de herramientas | No hay datos en la informacion disponible |
 
 Los dos progenitores son, en la practica, las alternativas mas directas: si el objetivo es instrucciones y funciones estructuradas, Hermes-3 es la opcion con comportamiento documentado; si el objetivo es roleplay, Soliloquy es la referencia. Pomegranate-Killer-8B solo aporta valor si la mezcla concreta supera a ambos, extremo que no esta demostrado con ninguna medicion.
@@ -94,7 +94,7 @@ Los dos progenitores son, en la practica, las alternativas mas directas: si el o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hestia07/Pomegranate-Killer-8B
+- Repositorio Hugging Face: https://huggingface.co/Hestia07/Pomegranate-Killer-8B
 - Modelo base 1: https://huggingface.co/Arcee-AI/Llama-3-Soliloquy-8B
 - Modelo base 2: https://huggingface.co/NousResearch/Hermes-3-Llama-3-8B
 - Herramienta de merge utilizada (notebook de LazyMergekit): https://colab.research.google.com/drive/1obulZ1ROXHjYLn6PPZJwRR6GzgQogxxb?usp=sharing

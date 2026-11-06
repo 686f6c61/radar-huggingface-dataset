@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-VLA Piper: pick_balls es un modelo de visión-lenguaje-acción (VLA) especializado en robótica, publicado por el usuario SXY7 en HuggingFace. Se trata de un ajuste fino completo (full-parameter fine-tuning) del modelo base 2toINF/X-VLA-Pt, orientado a una tarea concreta de manipulación robótica: recoger bolas ("pick_balls") con un brazo robótico Piper. El repositorio contiene 13 checkpoints completos de entrenamiento, desde el paso 40.000 hasta el 160.000, cada uno con pesos en safetensors, configuración del modelo, procesador y tokenizador, metadatos de normalización de la tarea (piper_manifest.json) y estado del entrenamiento (training_state.pt).
+X-VLA Piper: pick_balls es un modelo de visión-lenguaje-acción (VLA) especializado en robótica, publicado por el usuario SXY7 en Hugging Face. Se trata de un ajuste fino completo (full-parameter fine-tuning) del modelo base 2toINF/X-VLA-Pt, orientado a una tarea concreta de manipulación robótica: recoger bolas ("pick_balls") con un brazo robótico Piper. El repositorio contiene 13 checkpoints completos de entrenamiento, desde el paso 40.000 hasta el 160.000, cada uno con pesos en safetensors, configuración del modelo, procesador y tokenizador, metadatos de normalización de la tarea (piper_manifest.json) y estado del entrenamiento (training_state.pt).
 
 El modelo resuelve el problema de mapear observaciones visuales y propioceptivas a acciones motoras de un robot manipulador. Concretamente, consume dos vistas RGB (cámara superior y muñeca derecha) a resolución 224x224, más siete valores medidos de articulaciones y pinza como propiocepción, y predice treinta acciones absolutas de siete dimensiones (articulaciones y pinza). La tercera vista del modelo está enmascarada.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SXY7/X-VLA-Piper-pick_balls | no disponible (~10,56 GB en pesos) | no disponible | Manipulación robótica (pick_balls) | no disponible | HuggingFace, 13 checkpoints |
-| 2toINF/X-VLA-Pt (modelo base) | no disponible | no disponible | VLA generalista | no disponible | HuggingFace |
+| SXY7/X-VLA-Piper-pick_balls | no disponible (~10,56 GB en pesos) | no disponible | Manipulación robótica (pick_balls) | no disponible | Hugging Face, 13 checkpoints |
+| 2toINF/X-VLA-Pt (modelo base) | no disponible | no disponible | VLA generalista | no disponible | Hugging Face |
 | Otros VLA robóticos (p. ej. OpenVLA, RT-2) | no disponible en esta ficha | no disponible | Manipulación general | no disponible en esta ficha | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SXY7/X-VLA-Piper-pick_balls
+- Hugging Face: https://huggingface.co/SXY7/X-VLA-Piper-pick_balls
 - Modelo base: https://huggingface.co/2toINF/X-VLA-Pt
 - Checkpoints: https://huggingface.co/SXY7/X-VLA-Piper-pick_balls/tree/main
 - Repositorio X-VLA (commit de referencia): `6c4ecfb8be458ae7c0c96094e4b0add4174f4fe2` (no se proporciona URL directa en la información disponible)

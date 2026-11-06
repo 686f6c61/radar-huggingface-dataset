@@ -4,7 +4,7 @@
 
 rh-fullshot-zit-lora-v1-lora es un adaptador LoRA de texto a imagen publicado por RunningHub (cuenta RunningHubAI) a partir de un trabajo del usuario @Meowooda. No es un modelo completo: se trata de un ajuste fino de bajo rango que se aplica sobre un modelo base de difusion, en concreto Z-image Turbo, y cuyo objetivo declarado es mejorar las proporciones corporales femeninas en planos de cuerpo entero ("full-body").
 
-El repositorio de HuggingFace contiene un unico fichero de pesos, `fullshot_ZIT_Lora_V1_000002000.safetensors`, de 162 MiB, lo que lo convierte en un artefacto muy ligero y facil de integrar en flujos de trabajo existentes. La model card recomienda aplicarlo con una fuerza de 0.7 a 1.0 y usar la palabra de activacion `fullshot` en el prompt, ademas de combinarlo preferentemente con la variante FP8 del modelo base Z-image Turbo.
+El repositorio de Hugging Face contiene un unico fichero de pesos, `fullshot_ZIT_Lora_V1_000002000.safetensors`, de 162 MiB, lo que lo convierte en un artefacto muy ligero y facil de integrar en flujos de trabajo existentes. La model card recomienda aplicarlo con una fuerza de 0.7 a 1.0 y usar la palabra de activacion `fullshot` en el prompt, ademas de combinarlo preferentemente con la variante FP8 del modelo base Z-image Turbo.
 
 Su relevancia practica es acotada pero clara: cubre un caso muy demandado en generacion de imagenes comerciales (fotografia de moda, lookbooks, ilustracion de personajes a cuerpo entero) donde los modelos base suelen fallar en la coherencia anatomica y el encuadre. El modelo se distribuye sin resultados de benchmarks, sin licencia explicitamente declarada, sin idiomas documentados y con cero descargas y cero likes en el momento de redactar esta ficha, por lo que debe considerarse un artefacto sin validacion publica por parte de la comunidad.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, la model card se limita a indicar que el modelo se h
 - Especializacion declarada en proporciones corporales femeninas en planos de cuerpo completo, con mejoras de encuadre y anatomia segun el autor.
 - Activacion mediante la palabra clave `fullshot` en el prompt.
 - Ajuste de intensidad del efecto mediante la fuerza del LoRA, con rango recomendado de 0.7 a 1.0.
-- Compatibilidad con flujos de trabajo de ComfyUI, con la plataforma en la nube RunningHub y con HuggingFace como repositorio de pesos.
+- Compatibilidad con flujos de trabajo de ComfyUI, con la plataforma en la nube RunningHub y con Hugging Face como repositorio de pesos.
 - Compatibilidad declarada con el modelo base Z-image Turbo en su variante FP8.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision, audio, thinking mode ni procesamiento de lenguaje, ya que se trata de un adaptador de generacion de imagen.
 - Capacidades multilingues: no documentadas.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM del adaptador: despreciable, en torno a 0.2 GB adicionales, dado que el fichero de pesos ocupa 162 MiB.
 - VRAM total necesaria: determinada por el modelo base Z-image Turbo, cuyos requisitos no se especifican en la informacion disponible. La model card recomienda la variante FP8, lo que sugiere que el modelo base esta disenado para reducir huella de memoria frente a una version en precision completa.
 - GPU recomendadas: no disponibles en la informacion proporcionada. No se puede confirmar si el conjunto base mas LoRA cabe en GPU de consumo tipo RTX 4090, RTX 3090 o inferiores sin datos del modelo base.
-- Opciones de despliegue: ComfyUI (flujo declarado por el autor), plataforma en la nube RunningHub y su API, y carga directa de pesos desde HuggingFace. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, herramientas orientadas a modelos de lenguaje y no a difusion.
+- Opciones de despliegue: ComfyUI (flujo declarado por el autor), plataforma en la nube RunningHub y su API, y carga directa de pesos desde Hugging Face. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, herramientas orientadas a modelos de lenguaje y no a difusion.
 - Latencia y throughput: no disponibles. Dependen enteramente del modelo base, del hardware y del numero de pasos de muestreo configurados.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base en l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-fullshot-zit-lora-v1-lora | No disponible (LoRA de 162 MiB) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, RunningHub |
+| rh-fullshot-zit-lora-v1-lora | No disponible (LoRA de 162 MiB) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, RunningHub |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Como referencia cualitativa, en el ecosistema existen adaptadores LoRA equivalentes para modelos como SDXL o FLUX.1 orientados a encuadres de cuerpo entero y proporciones anatomicas, pero no se han localizado en la informacion proporcionada datos verificables que permitan compararlos con este adaptador.
@@ -85,7 +85,7 @@ Como referencia cualitativa, en el ecosistema existen adaptadores LoRA equivalen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-fullshot-zit-lora-v1-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-fullshot-zit-lora-v1-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2104977885165944834
 - Pagina del autor (@Meowooda): https://www.runninghub.ai/user-center/2033584674055655425
 - Version en chino de la model card: https://huggingface.co/RunningHubAI/rh-fullshot-zit-lora-v1-lora/blob/main/README_cn.md

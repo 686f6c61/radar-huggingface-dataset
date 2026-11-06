@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cosmos-H2R-0918 es un modelo del mundo (world model) de vídeo especializado en manipulación robótica, publicado por el usuario rooty2020 como un ajuste fino post-entrenado sobre nvidia/Cosmos3-Nano. El checkpoint se distribuye como una consolidación en formato Cosmos (safetensors fragmentados más config.json y checkpoint.json), con 15.215.696.011 parámetros reales en pesos EMA bf16 y un tamaño de repositorio de 31,6 GB. Su tarea principal declarada en HuggingFace es image-to-video.
+Cosmos-H2R-0918 es un modelo del mundo (world model) de vídeo especializado en manipulación robótica, publicado por el usuario rooty2020 como un ajuste fino post-entrenado sobre nvidia/Cosmos3-Nano. El checkpoint se distribuye como una consolidación en formato Cosmos (safetensors fragmentados más config.json y checkpoint.json), con 15.215.696.011 parámetros reales en pesos EMA bf16 y un tamaño de repositorio de 31,6 GB. Su tarea principal declarada en Hugging Face es image-to-video.
 
 La particularidad del modelo es que no se limita a predecir vídeo: incorpora una cabeza de seguimiento de puntos 3D entrenada de forma conjunta con el backbone de flow matching y un condicionamiento explícito de cámara. Esto significa que cada rollout generado viene acompañado de trayectorias de puntos 3D por fotograma y puede dirigirse mediante una secuencia de poses de cámara, algo relevante para planificación y control en robótica.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / ventana | Capacidades distintivas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cosmos-H2R-0918 | ~15,2 B (bf16) | clips de hasta 157 fotogramas, contexto de 1 a 5 latentes pasados | world model de manipulacion con seguimiento 3D y condicionamiento de camara | NVIDIA Open Model License | HuggingFace, repositorio de 31,6 GB |
-| nvidia/Cosmos3-Nano (modelo base) | ~15,2 B segun el autor del fine-tune | no disponible | world model generalista, sin las cabezas de seguimiento 3D ni el condicionamiento de camara de este ajuste | NVIDIA Open Model License | HuggingFace |
+| Cosmos-H2R-0918 | ~15,2 B (bf16) | clips de hasta 157 fotogramas, contexto de 1 a 5 latentes pasados | world model de manipulacion con seguimiento 3D y condicionamiento de camara | NVIDIA Open Model License | Hugging Face, repositorio de 31,6 GB |
+| nvidia/Cosmos3-Nano (modelo base) | ~15,2 B segun el autor del fine-tune | no disponible | world model generalista, sin las cabezas de seguimiento 3D ni el condicionamiento de camara de este ajuste | NVIDIA Open Model License | Hugging Face |
 | Otros world models de vídeo para robotica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones de terceros que permitan una comparacion cuantitativa fiable con alternativas de la misma categoria.
@@ -95,7 +95,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rooty2020/Cosmos-H2R-0918
+- Modelo en Hugging Face: https://huggingface.co/rooty2020/Cosmos-H2R-0918
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Nano
 - Licencia del modelo base (NVIDIA Open Model License): https://huggingface.co/nvidia/Cosmos3-Nano/blob/main/README.md
 - Dataset DROID: https://droid-dataset.github.io/

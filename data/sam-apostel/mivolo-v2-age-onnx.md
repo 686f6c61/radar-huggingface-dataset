@@ -69,8 +69,8 @@ El unico dato cuantitativo disponible es una verificacion de equivalencia entre 
 
 | Modelo | Parametros | Entrada | Salidas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sam-Apostel/mivolo-v2-age-onnx | no disponible | Rostro + cuerpo, 384 x 384 cada uno | Edad | Apache-2.0 | ONNX (opset 18), float32 | HuggingFace, 0 descargas |
-| iitolstykh/mivolo_v2 (original) | no disponible | Rostro + cuerpo, 384 x 384 cada uno | Edad y genero | Apache-2.0 | Pesos PyTorch, requiere `trust_remote_code` | HuggingFace |
+| Sam-Apostel/mivolo-v2-age-onnx | no disponible | Rostro + cuerpo, 384 x 384 cada uno | Edad | Apache-2.0 | ONNX (opset 18), float32 | Hugging Face, 0 descargas |
+| iitolstykh/mivolo_v2 (original) | no disponible | Rostro + cuerpo, 384 x 384 cada uno | Edad y genero | Apache-2.0 | Pesos PyTorch, requiere `trust_remote_code` | Hugging Face |
 | Otros estimadores de edad de un solo recorte | no disponible | Rostro unicamente | Edad | no disponible | no disponible | no disponible |
 
 La diferencia funcional principal frente al modelo base es que este export elimina la rama de genero y la dependencia de codigo remoto de Python, a cambio de perder flexibilidad de lote (fijo a 1) y de cualquier capacidad de ajuste fino directo sobre el grafo ONNX. No se dispone de datos de rendimiento comparado entre alternativas.
@@ -89,7 +89,7 @@ La diferencia funcional principal frente al modelo base es que este export elimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sam-Apostel/mivolo-v2-age-onnx
+- Modelo en Hugging Face: https://huggingface.co/Sam-Apostel/mivolo-v2-age-onnx
 - Modelo base (MiVOLO v2, PyTorch): https://huggingface.co/iitolstykh/mivolo_v2
 - Proyecto Slide Station: https://github.com/Sam-Apostel/slide-station
 - Articulo MiVOLO: https://arxiv.org/abs/2307.04616

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WalkerElf/Socorristas` es un repositorio publicado en HuggingFace por el usuario WalkerElf. Por el nombre y la ausencia de cualquier metadato tecnico, no es posible determinar con certeza que contiene: podria tratarse de un conjunto de datos, un modelo de aprendizaje automatico de proposito muy especifico, un espacio de demostracion o un artefacto auxiliar. La ficha del repositorio no declara pipeline, licencia, idiomas ni arquitectura.
+`WalkerElf/Socorristas` es un repositorio publicado en Hugging Face por el usuario WalkerElf. Por el nombre y la ausencia de cualquier metadato tecnico, no es posible determinar con certeza que contiene: podria tratarse de un conjunto de datos, un modelo de aprendizaje automatico de proposito muy especifico, un espacio de demostracion o un artefacto auxiliar. La ficha del repositorio no declara pipeline, licencia, idiomas ni arquitectura.
 
 El repositorio acumula 0 descargas y 1 like en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-11-04T08:30:15Z), lo que sugiere una publicacion unica sin iteraciones posteriores. No hay informacion publica sobre parametros, contexto, datos de entrenamiento ni resultados de evaluacion.
 
@@ -41,7 +41,7 @@ La unica informacion estructural disponible es el identificador del repositorio,
 - No es posible recomendar casos de uso concretos sin informacion sobre la naturaleza del artefacto.
 - Evaluacion preliminar de repositorios: el artefacto puede inspeccionarse manualmente para determinar si contiene pesos, datos o configuracion utilizable.
 - Prototipado exploratorio: un desarrollador podria clonar el repositorio y examinar su contenido antes de decidir si lo integra en un pipeline.
-- Documentacion de referencia: sirve como ejemplo de repositorio sin model card para ilustrar buenas practicas de publicacion en HuggingFace.
+- Documentacion de referencia: sirve como ejemplo de repositorio sin model card para ilustrar buenas practicas de publicacion en Hugging Face.
 - Auditoria de licencias: al no declararse licencia, el repositorio puede usarse como caso de estudio sobre riesgos legales en la reutilizacion de artefactos.
 - Trazabilidad de publicaciones: el identificador y las marcas temporales permiten rastrear la publicacion en registros internos.
 - No se recomienda su uso en produccion sin una revision tecnica y legal previa.
@@ -75,5 +75,5 @@ No disponible. No se ha identificado la categoria del artefacto ni modelos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WalkerElf/Socorristas
+- Repositorio en Hugging Face: https://huggingface.co/WalkerElf/Socorristas
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

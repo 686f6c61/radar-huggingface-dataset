@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Bielik-Minitron-7B-v3.0-Instruct-ungated es una reproducción sin control de acceso (ungated) del modelo instructivo Bielik-Minitron-7B-v3.0-Instruct, publicada por el usuario cpral en HuggingFace. El modelo original pertenece a la familia Bielik, desarrollada por SpeakLeash para el polaco, y se deriva del modelo base speakleash/Bielik-11B-v3-Base-20250730 mediante la técnica Minitron (poda estructurada más destilación de conocimiento), que reduce un modelo de 11B a aproximadamente 7,48B parámetros conservando parte de las capacidades del original. La única modificación declarada por el autor de esta copia es la eliminación del mecanismo de gating, con el objetivo de mejorar la privacidad y la accesibilidad.
+Bielik-Minitron-7B-v3.0-Instruct-ungated es una reproducción sin control de acceso (ungated) del modelo instructivo Bielik-Minitron-7B-v3.0-Instruct, publicada por el usuario cpral en Hugging Face. El modelo original pertenece a la familia Bielik, desarrollada por SpeakLeash para el polaco, y se deriva del modelo base speakleash/Bielik-11B-v3-Base-20250730 mediante la técnica Minitron (poda estructurada más destilación de conocimiento), que reduce un modelo de 11B a aproximadamente 7,48B parámetros conservando parte de las capacidades del original. La única modificación declarada por el autor de esta copia es la eliminación del mecanismo de gating, con el objetivo de mejorar la privacidad y la accesibilidad.
 
 Se trata de un transformer decoder-only con etiqueta de arquitectura `llama`, ajustado para generación de texto conversacional y con soporte declarado de 32 idiomas, con especial foco en polaco, inglés y el resto de lenguas eslavas, germánicas, románicas y bálticas de Europa. Su licencia Apache-2.0 permite uso comercial sin restricciones adicionales, lo que junto a sus 7,48B parámetros lo sitúa en la franja de modelos desplegables en una única GPU de gama alta o, cuantizado, en GPU de consumo.
 
-Su relevancia actual es doble: por un lado, ofrece una alternativa europea multilingüe de tamaño medio para despliegue on-premise; por otro, la versión ungated elimina la necesidad de aceptar condiciones en HuggingFace antes de descargar los pesos, lo que simplifica la integración en pipelines automatizados de CI/CD. No obstante, la información pública disponible sobre este repositorio concreto es muy limitada: no se han publicado detalles de entrenamiento, longitud de contexto ni resultados de benchmarks.
+Su relevancia actual es doble: por un lado, ofrece una alternativa europea multilingüe de tamaño medio para despliegue on-premise; por otro, la versión ungated elimina la necesidad de aceptar condiciones en Hugging Face antes de descargar los pesos, lo que simplifica la integración en pipelines automatizados de CI/CD. No obstante, la información pública disponible sobre este repositorio concreto es muy limitada: no se han publicado detalles de entrenamiento, longitud de contexto ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ Las cifras siguientes son estimaciones derivadas del recuento real de parametros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cpral/Bielik-Minitron-7B-v3.0-Instruct-ungated
+- Repositorio en Hugging Face: https://huggingface.co/cpral/Bielik-Minitron-7B-v3.0-Instruct-ungated
 - Modelo base declarado: https://huggingface.co/speakleash/Bielik-11B-v3-Base-20250730
 - Organizacion SpeakLeash (familia Bielik): https://huggingface.co/speakleash
 - Paper tecnico de Minitron (NVIDIA): no disponible en la informacion proporcionada

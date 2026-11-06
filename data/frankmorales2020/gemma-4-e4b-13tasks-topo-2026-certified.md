@@ -88,7 +88,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/frankmorales2020/gemma-4-e4b-13tasks-topo-2026-certified
+- Repositorio en Hugging Face: https://huggingface.co/frankmorales2020/gemma-4-e4b-13tasks-topo-2026-certified
 - Modelo base (referenciado): https://huggingface.co/frankmorales2020/gemma-4-e4b-unesco-optimized
 
 No se han encontrado otros enlaces (papers, blogs o demos) en la información proporcionada.

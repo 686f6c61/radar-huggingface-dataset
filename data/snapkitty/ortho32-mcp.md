@@ -76,7 +76,7 @@ No disponible. Este proyecto no pertenece a la categoría de modelos de lenguaje
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/ortho32-mcp
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/ortho32-mcp
 - Documentación adicional referenciada en el README (no disponibles en la información proporcionada):
   - `SOVEREIGN_METHOD.md` (arquitectura de gobernanza)
   - `LICENSE` (términos de licencia)

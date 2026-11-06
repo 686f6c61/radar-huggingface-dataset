@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`IanCauh0728/research-matching` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura tipo **Mixer** orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). No se trata de un modelo entrenado ni de un checkpoint con pesos validados: el propio autor lo describe como un esqueleto de codigo ("experimental codebase") pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El elemento principal del repositorio es `eval.py`, acompanado de `config.json`, `training_args.json` y un `model.safetensors` que la model card define explicitamente como inicializacion para *smoke tests*, no como checkpoint de referencia.
+`IanCauh0728/research-matching` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura tipo **Mixer** orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). No se trata de un modelo entrenado ni de un checkpoint con pesos validados: el propio autor lo describe como un esqueleto de codigo ("experimental codebase") pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El elemento principal del repositorio es `eval.py`, acompanado de `config.json`, `training_args.json` y un `model.safetensors` que la model card define explicitamente como inicializacion para *smoke tests*, no como checkpoint de referencia.
 
 El modelo declara una escala "huge" en su configuracion, atencion de ventana deslizante (*sliding window*), fusion de bajo rango (*low rank fusion*), activacion GELU y normalizacion RMSNorm, con receta de entrenamiento por defecto basada en AdamW y un scheduler *onecycle*. Sin embargo, los metadatos reales de `safetensors` indican un total de 33.088 parametros, un orden de magnitud muy alejado de lo que sugiere la etiqueta de escala y compatible con un prototipo de pruebas mas que con un sistema utilizable en produccion.
 
@@ -74,7 +74,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje ni con 
 | Contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks publicados | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | repositorio HuggingFace, sin checkpoint entrenado | no disponible |
+| Disponibilidad | repositorio Hugging Face, sin checkpoint entrenado | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -83,14 +83,14 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje ni con 
 - El nombre de escala "huge" del `config.json` no se corresponde con el recuento real de parametros (33.088), por lo que no debe tomarse como indicador de capacidad.
 - Riesgo de alucinacion: no evaluable, ya que no hay modelo generativo entrenado ni evaluacion asociada.
 - No se documentan idiomas soportados ni longitud de contexto, lo que impide planificar su uso multilingue o con secuencias largas.
-- No hay tokenizador publicado, lo que complica la integracion con *toolchains* estandar de HuggingFace.
+- No hay tokenizador publicado, lo que complica la integracion con *toolchains* estandar de Hugging Face.
 - Es una implementacion propia: las APIs automaticas de carga requieren un adaptador explicito antes de poder usarse.
 - Licencia MIT: permite uso comercial del codigo, pero el propio autor advierte de que deben revisarse por separado los terminos de los datos de origen si se combina con conjuntos de datos externos.
 - Para produccion: no apto en su estado actual. Cualquier resultado derivado de un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto aqui incluidos, conservando logs de entrenamiento y versiones del entorno.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IanCauh0728/research-matching
+- Repositorio en Hugging Face: https://huggingface.co/IanCauh0728/research-matching
 - Hugging Face (portal general): https://huggingface.co/
 - Ranking de modelos para investigacion (LLM Stats): https://llm-stats.com/leaderboards/best-ai-for-research
 - Articulo sobre algoritmos de matching y aprendizaje automatico (Medium): https://medium.com/@PeterBruce/matching-algorithms-d3b9ffac4320

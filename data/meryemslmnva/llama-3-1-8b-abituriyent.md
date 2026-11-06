@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| meryemslmnva/llama-3.1-8b-abituriyent | 8.03B | no disponible | GGUF Q4_K_M | no disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8.03B | 128k | safetensors, GGUF | Llama 3.1 Community | HuggingFace |
-| meta-llama/Llama-3.1-8B | 8.03B | 128k | safetensors | Llama 3.1 Community | HuggingFace |
+| meryemslmnva/llama-3.1-8b-abituriyent | 8.03B | no disponible | GGUF Q4_K_M | no disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8.03B | 128k | safetensors, GGUF | Llama 3.1 Community | Hugging Face |
+| meta-llama/Llama-3.1-8B | 8.03B | 128k | safetensors | Llama 3.1 Community | Hugging Face |
 
 La comparativa se limita al modelo base, ya que no hay información sobre otros fine-tunes similares. El modelo de meryemslmnva se diferencia por su formato GGUF y cuantización, pero carece de documentación y de licencia clara, lo que lo hace menos atractivo para producción que el base oficial.
 
@@ -74,7 +74,7 @@ La comparativa se limita al modelo base, ya que no hay información sobre otros 
 
 ## Enlaces
 
-- [HuggingFace: meryemslmnva/llama-3.1-8b-abituriyent](https://huggingface.co/meryemslmnva/llama-3.1-8b-abituriyent)
+- [Hugging Face: meryemslmnva/llama-3.1-8b-abituriyent](https://huggingface.co/meryemslmnva/llama-3.1-8b-abituriyent)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - [Modelo base instruct: meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Unsloth (librería de fine-tuning)](https://github.com/unslothai/unsloth)

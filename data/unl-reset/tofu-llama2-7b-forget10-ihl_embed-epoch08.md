@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch08](https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch08)
+- [Hugging Face: unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch08](https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch08)
 - [Modelo base: locuslab/tofu_ft_llama2-7b](https://huggingface.co/locuslab/tofu_ft_llama2-7b)
 - [Fuente de embeddings y LM head: NousResearch/Llama-2-7b-chat-hf](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf)
 - [Modelo fundacional: meta-llama/Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf)

@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-krafla (este) | ~9B | 262.144 registrados; 4096 por defecto en runtime | `.mlb` sobre Krafla (solo CPU) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-9B (base) | ~9B | 262.144 | safetensors; requiere runtime con soporte GPU/CPU | apache-2.0 | HuggingFace (modelo original) |
+| Qwen3.5-9B-krafla (este) | ~9B | 262.144 registrados; 4096 por defecto en runtime | `.mlb` sobre Krafla (solo CPU) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-9B (base) | ~9B | 262.144 | safetensors; requiere runtime con soporte GPU/CPU | apache-2.0 | Hugging Face (modelo original) |
 | Cuantizaciones GGUF de Qwen3.5-9B para llama.cpp | ~9B | depende del runtime | GGUF sobre llama.cpp (CPU y GPU) | apache-2.0 (heredada) | ecosistema amplio, ampliamente testeado |
 | Cuantizaciones para Ollama de Qwen3.5-9B | ~9B | depende del runtime | formato Ollama (CPU y GPU) | apache-2.0 (heredada) | integración directa con `ollama run` |
 
@@ -94,7 +94,7 @@ La comparación relevante no es de capacidades del modelo —idénticas al base,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonpark0/Qwen3.5-9B-krafla
+- Repositorio en Hugging Face: https://huggingface.co/jonpark0/Qwen3.5-9B-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de Krafla: https://github.com/JonPark0/krafla
 - Releases de Krafla (binarios): https://github.com/JonPark0/krafla/releases

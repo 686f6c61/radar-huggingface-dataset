@@ -75,7 +75,7 @@ Los unicos modelos alternativos mencionados en las busquedas son referencias de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `bigfat/gemma-4-31B-it-GGUF` | ~31B | no disponible | tag `apache-2.0`, campo vacio | GGUF en HuggingFace, 0 descargas | Cuantizacion no oficial |
+| `bigfat/gemma-4-31B-it-GGUF` | ~31B | no disponible | tag `apache-2.0`, campo vacio | GGUF en Hugging Face, 0 descargas | Cuantizacion no oficial |
 | `google/gemma-4-31B-it` (base) | ~31B | no disponible | no disponible | Repositorio original de Google | Fuente de la cuantizacion |
 | Qwen 3.7 27B | ~27B (segun nombre) | no disponible | no disponible | no disponible | Solo mencionado en foros como alternativa de tamano similar |
 | Mistral Large 4 | no disponible | no disponible | no disponible | no disponible | Mencionado como modelo denso de mayor tamano |
@@ -96,7 +96,7 @@ Los unicos modelos alternativos mencionados en las busquedas son referencias de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bigfat/gemma-4-31B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bigfat/gemma-4-31B-it-GGUF
 - Modelo base (referencia por tag): https://huggingface.co/google/gemma-4-31B-it
 - Unsloth (referencia por tag de metadatos): https://github.com/unslothai/unsloth
 - Hilo de Reddit sobre Mistral Large 4 con mencion a Gemma 4 31B: https://www.reddit.com/r/LocalLLaMA/comments/1wzginu/europe_rejoins_the_fight_with_chonky_mistral/

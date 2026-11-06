@@ -72,9 +72,9 @@ Advertencia del autor: las latencias no son comparables entre versiones, ya que 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ocrrag-lfm3-plain-gguf-v6 | 1,73 B | no disponible | Answerer extractivo con citas y abstención tipada | no disponible | GGUF en HuggingFace |
+| ocrrag-lfm3-plain-gguf-v6 | 1,73 B | no disponible | Answerer extractivo con citas y abstención tipada | no disponible | GGUF en Hugging Face |
 | LFM3-1.7B (base) | 1,7 B (aprox.) | no disponible | Modelo de propósito general | no disponible | Referenciado como base del ajuste |
-| ocrrag-lfm3-plain-lora-v6 (adaptador) | no aplica (LoRA) | no disponible | Adaptador del mismo ajuste | no disponible | Safetensors en HuggingFace |
+| ocrrag-lfm3-plain-lora-v6 (adaptador) | no aplica (LoRA) | no disponible | Adaptador del mismo ajuste | no disponible | Safetensors en Hugging Face |
 
 No se dispone de información sobre modelos comparables de la misma categoría (answerers extractivos especializados con abstención tipada) ni de datos de rendimiento de las alternativas en el mismo test, por lo que la comparativa cuantitativa no está disponible.
 
@@ -92,6 +92,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-gguf-v6
+- Modelo en Hugging Face: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-gguf-v6
 - Adaptador LoRA referenciado: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-lora-v6
 - Paper, blog, repositorio o demo: no disponible en la información proporcionada.

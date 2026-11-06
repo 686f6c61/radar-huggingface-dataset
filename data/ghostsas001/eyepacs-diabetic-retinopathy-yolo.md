@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ghostsas001/eyepacs-diabetic-retinopathy-yolo` es un clasificador de imágenes publicado en HuggingFace por el usuario ghostsas001, orientado a la detección de retinopatía diabética a partir de imágenes de fondo de ojo (fundus). Está construido sobre la librería Ultralytics, es decir, sobre la familia de arquitecturas YOLO, y se distribuye con la etiqueta de tarea `image-classification`, lo que indica que su salida es una etiqueta de clase (grado de retinopatía) y no una caja delimitadora.
+El modelo `ghostsas001/eyepacs-diabetic-retinopathy-yolo` es un clasificador de imágenes publicado en Hugging Face por el usuario ghostsas001, orientado a la detección de retinopatía diabética a partir de imágenes de fondo de ojo (fundus). Está construido sobre la librería Ultralytics, es decir, sobre la familia de arquitecturas YOLO, y se distribuye con la etiqueta de tarea `image-classification`, lo que indica que su salida es una etiqueta de clase (grado de retinopatía) y no una caja delimitadora.
 
 El problema que aborda es relevante: la retinopatía diabética es una de las principales causas evitables de ceguera y su cribado requiere revisionar grandes volúmenes de retinografías. Un clasificador automático puede actuar como herramienta de triaje para priorizar los casos sospechosos antes de la lectura por un oftalmólogo. El repositorio se apoya nominalmente en el dataset EyePACS, el conjunto de retinografías utilizado en la competición de Kaggle organizada por la California Health Care Foundation y EyePACS.
 
@@ -60,7 +60,7 @@ En todos los casos, el uso clínico real exige una validación local sobre datos
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace del modelo no incluye métricas (exactitud, AUC, sensibilidad, especificidad, matriz de confusión por grado) ni conjunto de validación descrito, y no se ha localizado ningún informe independiente que evalúe específicamente este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face del modelo no incluye métricas (exactitud, AUC, sensibilidad, especificidad, matriz de confusión por grado) ni conjunto de validación descrito, y no se ha localizado ningún informe independiente que evalúe específicamente este repositorio.
 
 Existe literatura relacionada sobre el uso de YOLO en retinopatía diabética, como el artículo "Explainable AI for Diabetic Retinopathy: Utilizing YOLO Model on a Novel Dataset" (Mutawa et al., Kuwait University y Sankara Nethralaya), pero sus resultados corresponden a un sistema y un dataset distintos y no son atribuibles a este modelo.
 
@@ -79,7 +79,7 @@ No se dispone de datos verificados de parametros, contexto ni metricas de este m
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eyepacs-diabetic-retinopathy-yolo | Clasificacion YOLO/Ultralytics | no disponible | AGPL-3.0 (segun etiqueta) | HuggingFace, 0 descargas | Sin model card detallada |
+| eyepacs-diabetic-retinopathy-yolo | Clasificacion YOLO/Ultralytics | no disponible | AGPL-3.0 (segun etiqueta) | Hugging Face, 0 descargas | Sin model card detallada |
 | Variantes YOLO-cls oficiales de Ultralytics | Clasificacion YOLO | no disponible en esta busqueda | AGPL-3.0 | Repositorio oficial de Ultralytics | Entrenadas en ImageNet, requieren ajuste fino para fondo de ojo |
 | ResNet-50 y familia EfficientNet | CNN de clasificacion | no disponible en esta busqueda | Distintas segun implementacion | Muy extendida | Baseline habitual en retinopatia diabetica |
 | RETFound y otros modelos fundacionales de retina | Transformer auto-supervisado | no disponible en esta busqueda | Distintas segun version | Publicos | Requieren adaptacion con etiquetas para clasificacion |
@@ -97,7 +97,7 @@ No se dispone de datos verificados de parametros, contexto ni metricas de este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghostsas001/eyepacs-diabetic-retinopathy-yolo
+- Modelo en Hugging Face: https://huggingface.co/ghostsas001/eyepacs-diabetic-retinopathy-yolo
 - Articulo relacionado sobre explicabilidad y YOLO en retinopatia diabetica (MDPI): https://www.mdpi.com/2673-2688/6/12/301
 - Ficha del mismo articulo en SciSpace: https://scispace.com/papers/explainable-ai-for-diabetic-retinopathy-utilizing-yolo-model-xf6x4wdovuao
 - Sitio oficial de EyePACS: https://www.eyepacs.com/

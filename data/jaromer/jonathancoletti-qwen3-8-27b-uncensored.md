@@ -94,7 +94,7 @@ No hay datos de comparación directa con otros modelos abliterados de tamaño si
 
 ## Enlaces
 
-- Repositorio HuggingFace: [jaromer/JonathanColetti-Qwen3.8-27B-Uncensored](https://huggingface.co/jaromer/JonathanColetti-Qwen3.8-27B-Uncensored)
+- Repositorio Hugging Face: [jaromer/JonathanColetti-Qwen3.8-27B-Uncensored](https://huggingface.co/jaromer/JonathanColetti-Qwen3.8-27B-Uncensored)
 - Model card original: [JonathanColetti/Qwen3.8-27B-Uncensored](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored)
 - Versión GGUF: [JonathanColetti/Qwen3.8-27B-Uncensored-GGUF](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF/tree/main)
 - Demo Space: [JonathanColetti/Qwen3.8-27B-Uncensored-Demo](https://huggingface.co/spaces/JonathanColetti/Qwen3.8-27B-Uncensored-Demo)

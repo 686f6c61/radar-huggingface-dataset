@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BCT (este repo) | S-FLM con objetivo temperado (S-arch / DiT) | TinyGSM, Sudoku-Hard | Apache-2.0 | HuggingFace `daisuk30ba/BCT` |
-| S-FLM | Flujo hiperesférico, objetivo original | TinyGSM, Sudoku | Apache-2.0 | HuggingFace `jdeschena/s-flm` |
+| BCT (este repo) | S-FLM con objetivo temperado (S-arch / DiT) | TinyGSM, Sudoku-Hard | Apache-2.0 | Hugging Face `daisuk30ba/BCT` |
+| S-FLM | Flujo hiperesférico, objetivo original | TinyGSM, Sudoku | Apache-2.0 | Hugging Face `jdeschena/s-flm` |
 | MDLM | Difusión discreta enmascarada | TinyGSM | no disponible en la informacion proporcionada | Incluido en `jdeschena/s-flm` |
 | Duo | Modelo duo (difusión discreta) | TinyGSM | no disponible en la informacion proporcionada | Incluido en `jdeschena/s-flm` |
 
@@ -81,7 +81,7 @@ La comparación relevante es frente a los baselines del propio paper, que compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daisuk30ba/BCT
+- Hugging Face: https://huggingface.co/daisuk30ba/BCT
 - Modelo base S-FLM: https://huggingface.co/jdeschena/s-flm
 - Paper: https://arxiv.org/abs/2610.27641
 - Código: https://github.com/daioba/bct

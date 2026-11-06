@@ -17,7 +17,7 @@ Es relevante ahora porque cubre un rango amplio de frecuencias de muestreo de en
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible (procesa audio; admite troceado configurable con `chunk_size_in_seconds` y `hop_length_portion`) |
 | Tipos de cuantizacion | No disponible (pesos en safetensors; no se documentan esquemas de cuantizacion ni versiones GGUF/ONNX) |
-| Idiomas soportados | Declarado *language-agnostic*. Datos de entrenamiento en aleman, ingles, espanol, frances y chino mandarin (zh-CN). Metadatos de HuggingFace: no disponibles |
+| Idiomas soportados | Declarado *language-agnostic*. Datos de entrenamiento en aleman, ingles, espanol, frances y chino mandarin (zh-CN). Metadatos de Hugging Face: no disponibles |
 | Licencia | NVIDIA One-Way Noncommercial License (NSCLv1) - `license: other` |
 | Formato de pesos | safetensors |
 | Frecuencias de muestreo de entrada | 8, 16, 22,05, 24, 32, 44,1 y 48 kHz, mono |
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma explicita. Como referencia derivada del numero de parametros, los pesos ocupan aproximadamente 38 MB en fp32 y 19 MB en fp16, por lo que el consumo dominante sera el de las activaciones intermedias, que crecen con la duracion del audio procesado. La model card advierte de errores de memoria (OOM) en GPU con audios largos, de ahi la existencia de `inference_chunk.sh`.
 - GPU recomendadas: la model card declara compatibilidad con la microarquitectura NVIDIA Ampere, citando la A100 como ejemplo, y uso preferente de Linux con CUDA. No se listan otras GPU soportadas.
 - Cabe en GPU consumer: si, por tamano de parametros cabe con holgura en cualquier GPU consumer con soporte CUDA (por ejemplo, la propia familia Ampere de escritorio o superior). No obstante, NVIDIA no declara soporte oficial para esas tarjetas y la eleccion de una u otra condicionara cuanto audio se puede procesar en una sola pasada antes de trocear.
-- Opciones de despliegue: el repositorio se distribuye con scripts de inferencia (`inference.sh` para audio corto, `inference_chunk.sh` para audio largo) sobre la libreria `mamba-ssm`. Existe un entorno Docker preconstruido para Mamba referenciado desde el repositorio SEMamba. Hay una demo interactiva en Gradio en HuggingFace Spaces. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que son frameworks para modelos de lenguaje y no aplican a este tipo de checkpoint; tampoco se ofrecen exportaciones a ONNX, TensorRT ni GGUF.
+- Opciones de despliegue: el repositorio se distribuye con scripts de inferencia (`inference.sh` para audio corto, `inference_chunk.sh` para audio largo) sobre la libreria `mamba-ssm`. Existe un entorno Docker preconstruido para Mamba referenciado desde el repositorio SEMamba. Hay una demo interactiva en Gradio en Hugging Face Spaces. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que son frameworks para modelos de lenguaje y no aplican a este tipo de checkpoint; tampoco se ofrecen exportaciones a ONNX, TensorRT ni GGUF.
 - Latencia y throughput estimados: no disponibles. La model card no publica tiempos de inferencia ni factor de tiempo real.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Parametros | Contexto / muestreo | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/RE-USE | 9,6 M | 8 a 48 kHz, mono, troceado configurable | No disponible | NVIDIA NSCLv1 (solo no comercial) | HuggingFace, safetensors, demo Gradio |
+| nvidia/RE-USE | 9,6 M | 8 a 48 kHz, mono, troceado configurable | No disponible | NVIDIA NSCLv1 (solo no comercial) | Hugging Face, safetensors, demo Gradio |
 | Alternativas de la misma categoria (mejora de voz, modelos discriminativos o generativos) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
 Para una comparacion rigurosa habria que contrastar RE-USE con otros sistemas de mejora de voz sobre los mismos conjuntos de evaluacion (por ejemplo, las particiones de ruido de DNS), usando metricas objetivas como PESQ, STOI, SI-SDR o DNSMOS y controlando la frecuencia de muestreo, ya que este modelo opera en un rango mas amplio que muchos sistemas limitados a 16 kHz.
@@ -95,7 +95,7 @@ Para una comparacion rigurosa habria que contrastar RE-USE con otros sistemas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/RE-USE
+- Modelo en Hugging Face: https://huggingface.co/nvidia/RE-USE
 - Demo interactiva en Gradio: https://huggingface.co/spaces/nvidia/RE-USE
 - Articulo de referencia: https://arxiv.org/abs/2603.02641 (Rethinking Training Targets, Architectures and Data Quality for Universal Speech Enhancement)
 - Licencia NVIDIA One-Way Noncommercial (NSCLv1): https://github.com/NVlabs/HMAR/blob/main/LICENSE

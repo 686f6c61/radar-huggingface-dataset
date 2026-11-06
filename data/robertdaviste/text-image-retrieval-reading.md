@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`robertdaviste/text-image-retrieval-reading` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. Su contenido principal es un documento `analysis.md` que describe el planteamiento de un estudio sobre recuperación texto-imagen (text-image retrieval), los posibles factores de confusión, una propuesta de comparación con líneas base emparejadas y el contexto de evaluación (Flickr30k y MS COCO Captions). El autor declara explícitamente que no se han ejecutado experimentos ni se han publicado resultados.
+`robertdaviste/text-image-retrieval-reading` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. Su contenido principal es un documento `analysis.md` que describe el planteamiento de un estudio sobre recuperación texto-imagen (text-image retrieval), los posibles factores de confusión, una propuesta de comparación con líneas base emparejadas y el contexto de evaluación (Flickr30k y MS COCO Captions). El autor declara explícitamente que no se han ejecutado experimentos ni se han publicado resultados.
 
 El repositorio incluye un fichero de pesos en formato `safetensors` con 24.832 parámetros totales, un tamaño ínfimo que no corresponde a ningún transformer funcional para recuperación multimodal. No hay pipeline declarado, no se especifican idiomas y el repositorio ocupa 0.0 GB, lo que sugiere que el artefacto de pesos es residual o de prueba y no un checkpoint utilizable.
 
@@ -74,5 +74,5 @@ No disponible. No se identifican modelos comparables porque el repositorio no co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robertdaviste/text-image-retrieval-reading
+- Repositorio en Hugging Face: https://huggingface.co/robertdaviste/text-image-retrieval-reading
 - Resultado de búsqueda web proporcionado (sin relación temática con el modelo): https://www.pcahistory.org/pca/ga/17th_pcaga_1989.pdf

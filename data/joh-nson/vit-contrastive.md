@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joh-nson/vit-contrastive` es un repositorio de HuggingFace que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, publicada por el usuario joh-nson bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos útiles: la propia model card lo describe como un «punto de partida reproducible» y el fichero `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
+`joh-nson/vit-contrastive` es un repositorio de Hugging Face que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, publicada por el usuario joh-nson bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos útiles: la propia model card lo describe como un «punto de partida reproducible» y el fichero `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
 
 El repositorio incluye el código de modelo y el punto de entrada de entrenamiento (`train.py`), una configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`) con optimizador Lion y scheduler de tipo step. La arquitectura declarada incorpora atención dilatada, fusión por *co-attention*, activación GELU y normalización RMSNorm, lo que la aleja del ViT estándar y la sitúa en el terreno de las implementaciones experimentales.
 
@@ -44,7 +44,7 @@ No hay entrenamiento documentado. El repositorio declara explícitamente que `mo
 - Docencia de arquitecturas transformer: el reducido tamaño permite ejecutar el forward pass completo en CPU y traza paso a paso la co-atención y RMSNorm sin infraestructura GPU.
 - Base para fine-tuning contrastivo: inicializar un experimento de aprendizaje contrastivo sobre un dataset propio, sabiendo que el checkpoint de partida no aporta representaciones preentrenadas y que el resultado dependerá íntegramente del nuevo entrenamiento.
 - Validación de recetas de optimización: probar configuraciones de Lion y schedulers step a pequeña escala para depurar hyperparámetros antes de escalarlos a un ViT de tamaño real.
-- Referencia de empaquetado de modelos: ejemplo de estructura de repositorio (config, training args, script y safetensors) para publicar implementaciones propias en HuggingFace con trazabilidad de configuración.
+- Referencia de empaquetado de modelos: ejemplo de estructura de repositorio (config, training args, script y safetensors) para publicar implementaciones propias en Hugging Face con trazabilidad de configuración.
 - Integración en tests de regresión numérica: fijar el checkpoint de inicialización como referencia para detectar cambios no intencionados en el código del modelo entre versiones.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / resolución | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joh-nson/vit-contrastive | 49.600 | No disponible | No (checkpoint de inicialización) | MIT | HuggingFace, 0 descargas |
+| joh-nson/vit-contrastive | 49.600 | No disponible | No (checkpoint de inicialización) | MIT | Hugging Face, 0 descargas |
 | ViT-Base (ViT-B/16) | ~86 M | 224×224, 16×16 parches | Sí (ImageNet-21k / ImageNet-1k) | Apache 2.0 (Google) | Pesos públicos |
 | DeiT-Tiny | ~5,7 M | 224×224, 16×16 parches | Sí (destilación) | Apache 2.0 | Pesos públicos |
 | CLIP ViT-B/32 | ~88 M (torre de imagen) | 224×224, 32×32 parches | Sí (400 M pares imagen-texto) | MIT (OpenAI) | Pesos públicos |
@@ -83,5 +83,5 @@ La comparación es estructural más que de rendimiento: el repositorio analizado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joh-nson/vit-contrastive
+- Hugging Face: https://huggingface.co/joh-nson/vit-contrastive
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo); los resultados obtenidos corresponden a entidades sin relación (jho.fr, Wikipedia sobre «Joh», jow.fr, service-public.fr, wisdomlib.org) y se descartan.

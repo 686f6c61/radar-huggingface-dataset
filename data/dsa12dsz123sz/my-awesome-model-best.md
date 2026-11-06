@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dsa12dsz123sz/my-awesome-model-best` es un fine-tuning del modelo base `microsoft/resnet-50` orientado a la clasificación de imágenes, según los metadatos de HuggingFace (pipeline `image-classification`). Sin embargo, la model card publicada por el autor contiene una descripción genérica de un modelo de lenguaje, con afirmaciones sobre razonamiento, matemáticas y programación, y presenta una tabla de benchmarks con categorías de procesamiento de lenguaje natural (NLP) que no se corresponden con una arquitectura de visión. Esta contradicción sugiere que la documentación fue copiada de una plantilla de modelo de lenguaje y no refleja las capacidades reales del artefacto.
+El modelo `dsa12dsz123sz/my-awesome-model-best` es un fine-tuning del modelo base `microsoft/resnet-50` orientado a la clasificación de imágenes, según los metadatos de Hugging Face (pipeline `image-classification`). Sin embargo, la model card publicada por el autor contiene una descripción genérica de un modelo de lenguaje, con afirmaciones sobre razonamiento, matemáticas y programación, y presenta una tabla de benchmarks con categorías de procesamiento de lenguaje natural (NLP) que no se corresponden con una arquitectura de visión. Esta contradicción sugiere que la documentación fue copiada de una plantilla de modelo de lenguaje y no refleja las capacidades reales del artefacto.
 
 El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que indica que es un experimento personal o una subida incompleta. No se proporcionan detalles sobre el dataset de entrenamiento, el número de parámetros, la longitud de contexto ni el formato de pesos. La licencia es MIT, lo que permite uso comercial sin restricciones, pero la falta de información verificable limita cualquier uso serio en producción.
 
@@ -77,6 +77,6 @@ No se dispone de resultados de rendimiento del modelo para comparar con estas al
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dsa12dsz123sz/my-awesome-model-best)
-- [Perfil del autor en HuggingFace](https://huggingface.co/dsa12dsz123sz)
+- [Modelo en Hugging Face](https://huggingface.co/dsa12dsz123sz/my-awesome-model-best)
+- [Perfil del autor en Hugging Face](https://huggingface.co/dsa12dsz123sz)
 - [Modelo base microsoft/resnet-50](https://huggingface.co/microsoft/resnet-50)

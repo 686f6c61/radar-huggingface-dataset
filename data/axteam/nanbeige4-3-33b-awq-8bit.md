@@ -116,7 +116,7 @@ Comparación con modelos de otros desarrolladores: no disponible en la informaci
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/axteam/Nanbeige4.3-33B-AWQ-8bit
+- Modelo cuantizado en Hugging Face: https://huggingface.co/axteam/Nanbeige4.3-33B-AWQ-8bit
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
 - Documentación de vLLM: no disponible en la información proporcionada

@@ -58,7 +58,7 @@ Además, se reporta una tasa de verbatim (valores emitidos que son subcadenas de
 
 - Al ser un modelo de 350M de parámetros (base) con un adaptador LoRA, la inferencia es ligera. Con cuantización a 4 bits (no documentada pero posible con herramientas como llama.cpp o vLLM), la VRAM estimada podría estar en torno a 300-500 MB, aunque no se confirma en la información.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 3050) sería suficiente para inferencia en lotes pequeños.
-- Opciones de despliegue: al ser un modelo de generación de texto, puede servirse con vLLM, Ollama, llama.cpp o Transformers de HuggingFace. No se indica una configuración específica.
+- Opciones de despliegue: al ser un modelo de generación de texto, puede servirse con vLLM, Ollama, llama.cpp o Transformers de Hugging Face. No se indica una configuración específica.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/rafmacalaba/lfm2.5-350M-datause-provenance
+- Página del modelo en Hugging Face: https://huggingface.co/rafmacalaba/lfm2.5-350M-datause-provenance
 - Modelo base (referenciado en la model card): https://huggingface.co/LiquidAI/LFM2.5-350M
 - Dataset de entrenamiento (mencionado): https://huggingface.co/datasets/rafmacalaba/data-use-provenance-sft (no verificado)

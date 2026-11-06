@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 ## Limitaciones y advertencias
 
 - Licencia Polyform Small Business 1.0.0: el uso comercial está restringido a pequeñas empresas; organizaciones mayores necesitan licencia empresarial de BottleCap AI. Verificar los términos antes de producción.
-- El modelo base requiere solicitud de acceso (gated) en HuggingFace; esta cuantización deriva de un modelo con gating.
+- El modelo base requiere solicitud de acceso (gated) en Hugging Face; esta cuantización deriva de un modelo con gating.
 - La decodificación greedy puede entrar en bucles; se recomienda usar temperatura según la model card del base y no decodificación greedy.
 - No hay evidencia de que ninguna cuantización sea lossless: IQ4_XS y Q6_K pierden 2,8 pp en GPQA-Diamond; Q6_K pierde 7,0 pp en AA-LCR.
 - Riesgo de alucinación inherente a los LLM de razonamiento, no cuantificado en la información disponible.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/dfz1/ThinkingCap-Qwen3.8-27B-GGUF-UD-Q4_K_XL
+- Hugging Face (esta cuantización): https://huggingface.co/dfz1/ThinkingCap-Qwen3.8-27B-GGUF-UD-Q4_K_XL
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Quants oficiales GGUF: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF
 - Quant RCO-4.2bpw para 18 GB: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF-RCO-4.2bpw

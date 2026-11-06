@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, publicado en HuggingFace por el usuario pitcany bajo el identificador `pitcany/Qwen3.8-27B`. Según la model card, forma parte de la familia Qwen3.8, presentada como la generación más capaz de la saga de modelos abiertos Qwen hasta la fecha, construida sobre la base arquitectónica de Qwen3.5. Se distribuye como un modelo denso de 27 000 millones de parámetros, con un total real de 27 781 427 952 parámetros según los pesos en safetensors, y un tamaño de repositorio de 55,6 GB.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, publicado en Hugging Face por el usuario pitcany bajo el identificador `pitcany/Qwen3.8-27B`. Según la model card, forma parte de la familia Qwen3.8, presentada como la generación más capaz de la saga de modelos abiertos Qwen hasta la fecha, construida sobre la base arquitectónica de Qwen3.5. Se distribuye como un modelo denso de 27 000 millones de parámetros, con un total real de 27 781 427 952 parámetros según los pesos en safetensors, y un tamaño de repositorio de 55,6 GB.
 
 El modelo es nativamente multimodal (image-text-to-text): incorpora un codificador de visión que le permite comprender imágenes y vídeos, además de texto. Su arquitectura combina capas de atención lineal (Gated DeltaNet) con capas de atención con compuertas (Gated Attention) en un patrón híbrido repetido 16 veces, e incluye entrenamiento con Multi-Token Prediction (MTP). Declara una longitud de contexto nativa de 262 144 tokens, extensible hasta 1 000 000.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks completos y verificables en la info
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27B (denso) | 262 144 nativo; hasta 1M | Apache 2.0 | Sí (imagen y vídeo) | Pesos abiertos en HuggingFace |
+| Qwen3.8-27B | 27B (denso) | 262 144 nativo; hasta 1M | Apache 2.0 | Sí (imagen y vídeo) | Pesos abiertos en Hugging Face |
 | Qwen3.6-27B | 27B (no detallado) | No disponible | No disponible | No disponible | Citado en benchmarks de la model card |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | Citado en benchmarks; presumiblemente API |
 | Muse Glimmer-30B | 30B | No disponible | No disponible | No disponible | Citado en benchmarks de la model card |
@@ -100,6 +100,6 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pitcany/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/pitcany/Qwen3.8-27B
 - Qwen Cloud (servicio alojado): https://www.qwencloud.com
 - Qwen3.8-27B Overview en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

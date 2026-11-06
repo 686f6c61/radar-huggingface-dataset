@@ -2,7 +2,7 @@
 
 ## Resumen
 
-optilife-2.0 es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, desarrollado por el usuario mrn00x y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto de 8.030.261.248 parametros (aproximadamente 8 mil millones), derivado directamente de la version cuantizada en 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`), y entrenado con la libreria Unsloth junto con TRL de HuggingFace, lo que permite un entrenamiento aproximadamente 2 veces mas rapido.
+optilife-2.0 es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, desarrollado por el usuario mrn00x y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto de 8.030.261.248 parametros (aproximadamente 8 mil millones), derivado directamente de la version cuantizada en 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`), y entrenado con la libreria Unsloth junto con TRL de Hugging Face, lo que permite un entrenamiento aproximadamente 2 veces mas rapido.
 
 El modelo hereda la arquitectura transformer decoder-only de Llama 3.1, con una ventana de contexto de 128.000 tokens (caracteristica del modelo base) y capacidades conversacionales propias de la variante Instruct. Esta orientado a tareas de generacion de texto y dialogo en ingles, y su proposito declarado es servir como modelo conversacional ajustado, aunque la model card no especifica el dataset de ajuste ni el objetivo concreto del fine-tuning.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada: el repositorio no presenta descargas ni
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura transformer decoder-only de Llama 3.1, con 8.030.261.248 parametros. Al derivar de `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, el punto de partida es la version Instruct de Meta Llama 3.1 8B cuantizada en 4 bits con bitsandbytes, sobre la que se aplico un ajuste fino supervisado (SFT) utilizando Unsloth y la libreria TRL de HuggingFace. La model card unicamente indica que el entrenamiento fue "2x mas rapido" gracias a Unsloth, sin especificar el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales.
+El modelo emplea la arquitectura transformer decoder-only de Llama 3.1, con 8.030.261.248 parametros. Al derivar de `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, el punto de partida es la version Instruct de Meta Llama 3.1 8B cuantizada en 4 bits con bitsandbytes, sobre la que se aplico un ajuste fino supervisado (SFT) utilizando Unsloth y la libreria TRL de Hugging Face. La model card unicamente indica que el entrenamiento fue "2x mas rapido" gracias a Unsloth, sin especificar el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales.
 
 No se documentan innovaciones tecnicas propias del ajuste (como decodificacion especulativa, atencion lineal o modulos adicionales). Las capacidades tecnicas heredadas del modelo base (atencion con RoPE, GQA, contexto de 128.000 tokens) no se confirman explicitamente en la model card de este fine-tuning, por lo que deben tratarse con cautela hasta su verificacion.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mrn00x/optilife-2.0 | 8,03B | no disponible (base: 128k) | Apache 2.0 | HuggingFace, 0 descargas |
+| mrn00x/optilife-2.0 | 8,03B | no disponible (base: 128k) | Apache 2.0 | Hugging Face, 0 descargas |
 | Meta Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible |
-| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, alta adopcion |
+| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, alta adopcion |
 | Mistral 7B Instruct | 7,24B | 32.000 tokens | Apache 2.0 | Ampliamente disponible |
 
 La comparativa de rendimiento con estas alternativas no esta disponible, ya que optilife-2.0 no publica benchmarks. Ademas, conviene senalar que, aunque el repositorio declara licencia Apache 2.0, el modelo base Llama 3.1 esta sujeto a la Llama 3.1 Community License, lo que puede condicionar el uso comercial (ver limitaciones).
@@ -82,8 +82,8 @@ La comparativa de rendimiento con estas alternativas no esta disponible, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrn00x/optilife-2.0
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/mrn00x/optilife-2.0
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio Unsloth (GitHub): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original Meta Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

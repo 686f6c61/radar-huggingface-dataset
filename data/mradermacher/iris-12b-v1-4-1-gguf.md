@@ -23,7 +23,7 @@ La relevancia de esta publicacion radica en que permite ejecutar un modelo de 12
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible en la model card del repositorio GGUF no detalla la arquitectura interna del modelo base. Se sabe que utiliza la libreria transformers de HuggingFace y que el modelo original (Lambent/Iris-12B-v1.4.1) tiene 11.907.350.576 parametros, lo que sugiere una arquitectura densa tipo transformer decoder-only, aunque no se confirma si incorpora alguna innovacion como attention lineal o mezcla de expertos.
+La informacion disponible en la model card del repositorio GGUF no detalla la arquitectura interna del modelo base. Se sabe que utiliza la libreria transformers de Hugging Face y que el modelo original (Lambent/Iris-12B-v1.4.1) tiene 11.907.350.576 parametros, lo que sugiere una arquitectura densa tipo transformer decoder-only, aunque no se confirma si incorpora alguna innovacion como attention lineal o mezcla de expertos.
 
 La presencia de ficheros mmproj (multi-modal projection) indica que el modelo base incluye un proyector de vision que permite procesar imagenes ademas de texto, aunque la model card no especifica que arquitectura de vision encoder utiliza ni como se integra con el decoder. Tampoco se proporcionan datos sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF, DPO u otras alineaciones. La cuantizacion realizada por mradermacher es estatica, sin usar imatrix, y se advierte en la propia model card que las cuantizaciones con imatrix podrian estar disponibles bajo peticion en la comunidad.
 

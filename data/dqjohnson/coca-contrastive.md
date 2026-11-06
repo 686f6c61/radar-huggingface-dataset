@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dqjohnson/coca-contrastive` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada **Coca** orientada a aprendizaje **contrastivo**, publicada por el usuario Dqjohnson bajo licencia Apache 2.0. Se distribuye en configuración **nano**, con un total de **49.600 parámetros** según los pesos en formato safetensors, lo que lo sitúa en un orden de magnitud muy por debajo de cualquier modelo utilizable en producción. El propio autor indica que el repositorio está pensado para revisión de código, *smoke tests* y experimentos controlados de pequeño tamaño, no como una release preentrenada.
+`Dqjohnson/coca-contrastive` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada **Coca** orientada a aprendizaje **contrastivo**, publicada por el usuario Dqjohnson bajo licencia Apache 2.0. Se distribuye en configuración **nano**, con un total de **49.600 parámetros** según los pesos en formato safetensors, lo que lo sitúa en un orden de magnitud muy por debajo de cualquier modelo utilizable en producción. El propio autor indica que el repositorio está pensado para revisión de código, *smoke tests* y experimentos controlados de pequeño tamaño, no como una release preentrenada.
 
 El problema que aborda no es de aplicación directa, sino de infraestructura experimental: proporciona un esqueleto reproducible (fichero Python con el modelo y punto de entrada, `config.json`, `training_args.json`, `eval.py` y un checkpoint de inicialización) para validar arquitecturas contrastivas antes de escalar a configuraciones mayores. Es relevante únicamente como material de referencia técnico y como banco de pruebas de componentes concretos de la arquitectura, no como modelo de inferencia útil.
 
@@ -76,12 +76,12 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - **Idiomas**: no se declara ninguno; el soporte multilingüe es desconocido.
 - **Contexto**: la longitud de contexto no está documentada, lo que impide dimensionar cualquier caso de uso que dependa de ventana larga.
 - **Licencia**: Apache 2.0, que permite uso comercial del artefacto. La propia model card advierte de que los términos de los datos de origen deben revisarse por separado si el repositorio se combina con *datasets* externos; al no documentarse dichos *datasets*, esta revisión no puede completarse con la información disponible.
-- **Compatibilidad**: al ser una implementación personalizada, no se carga con las APIs automáticas habituales de HuggingFace sin un adaptador explícito, lo que añade fricción de integración.
+- **Compatibilidad**: al ser una implementación personalizada, no se carga con las APIs automáticas habituales de Hugging Face sin un adaptador explícito, lo que añade fricción de integración.
 - **Madurez y mantenimiento**: 0 descargas, 0 *likes*, sin *pipeline* asignado y con creación y actualización separadas por seis segundos, lo que indica ausencia de mantenimiento posterior. La receta incluida debe tratarse como valores de partida, no como evidencia de convergencia.
 - **Trazabilidad**: el autor recomienda conservar *logs* de entrenamiento y versiones de entorno con cualquier resultado publicado; no hay ninguno disponible actualmente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dqjohnson/coca-contrastive
+- Modelo en Hugging Face: https://huggingface.co/Dqjohnson/coca-contrastive
 
 Nota: la búsqueda web asociada a esta ficha no devolvió ningún resultado relevante sobre el modelo. Los enlaces recuperados correspondían a páginas sobre la ciudad de Auckland (Wikipedia, Auckland Council, AucklandNZ, New Zealand Tourism y University of Auckland) y no guardan relación con el repositorio. No se dispone, por tanto, de *papers*, blogs, repositorios de código ni demos adicionales que enlazar.

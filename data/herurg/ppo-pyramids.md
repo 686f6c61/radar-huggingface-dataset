@@ -4,7 +4,7 @@
 
 El modelo `herurg/ppo-Pyramids` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno Pyramids de Unity ML-Agents. Este entorno presenta un desafío de navegación en 3D donde el agente debe localizar una pirámide dorada en un espacio con obstáculos y recogerla, mientras se enfrenta a un entorno con recompensas dispersas y un objetivo que cambia de posición en cada episodio.
 
-El modelo fue desarrollado por el usuario `herurg` y publicado en HuggingFace como parte del ecosistema de Unity ML-Agents, que permite entrenar agentes inteligentes en entornos de simulación física. La relevancia de este modelo reside en que demuestra la aplicación de PPO a un problema de navegación con observaciones vectoriales (raycast) y proporciona un ejemplo reproducible de entrenamiento y despliegue de agentes de RL en entornos Unity, un flujo de trabajo cada vez más utilizado en robótica, juegos y simulación.
+El modelo fue desarrollado por el usuario `herurg` y publicado en Hugging Face como parte del ecosistema de Unity ML-Agents, que permite entrenar agentes inteligentes en entornos de simulación física. La relevancia de este modelo reside en que demuestra la aplicación de PPO a un problema de navegación con observaciones vectoriales (raycast) y proporciona un ejemplo reproducible de entrenamiento y despliegue de agentes de RL en entornos Unity, un flujo de trabajo cada vez más utilizado en robótica, juegos y simulación.
 
 El repositorio contiene los pesos del modelo en formato ONNX y la red neuronal entrenada, lista para ser integrada en el entorno Unity o para continuar su entrenamiento. La arquitectura subyacente es una red neuronal de tipo MLP (perceptrón multicapa) de 2 capas con 512 unidades cada una, que procesa las observaciones del entorno (raycasts y one-hot del objetivo) para producir acciones discretas de movimiento.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizo en el entorno Pyramids de Unity, un escenario de nav
 - Benchmark para algoritmos de RL: el entorno Pyramids es un benchmark clasico en ML-Agents; este modelo proporciona una politica de referencia que puede servir de baseline para evaluar mejoras en algoritmos de RL.
 - Simulacion de robots en Unity: el enfoque de raycast y control discreto se puede adaptar para simular robots de navegacion en entornos virtuales antes de desplegarlos en el mundo real.
 - Educacion en IA: el modelo y su documentacion son un recurso didactico para ensenar conceptos de RL, PPO y ML-Agents en cursos universitarios o talleres.
-- Demostraciones interactivas: el modelo se puede visualizar directamente en el navegador a traves de la pagina de HuggingFace, permitiendo demostrar el comportamiento del agente a una audiencia no tecnica.
+- Demostraciones interactivas: el modelo se puede visualizar directamente en el navegador a traves de la pagina de Hugging Face, permitiendo demostrar el comportamiento del agente a una audiencia no tecnica.
 
 ## Benchmarks y rendimiento
 
@@ -77,7 +77,7 @@ Los tres modelos son agentes entrenados para el mismo entorno Pyramids con el mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/herurg/ppo-Pyramids
+- Repositorio Hugging Face: https://huggingface.co/herurg/ppo-Pyramids
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto del Deep RL Course: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo del Deep RL Course: https://huggingface.co/learn/deep-rl-course/unit5/introduction

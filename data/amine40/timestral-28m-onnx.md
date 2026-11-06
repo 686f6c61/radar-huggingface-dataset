@@ -1,7 +1,7 @@
 # amine40/Timestral-28M-ONNX
 
 ## Resumen
-Timestral-28M-ONNX es una exportación a ONNX del modelo Timestral-28M de Mistral AI, un modelo de forecasting de series temporales. Lo publica el usuario amine40 en HuggingFace y está pensado para ejecutarse en el navegador mediante onnxruntime-web, sin necesidad de un backend en Python. El modelo resuelve el problema de desplegar modelos de predicción de series temporales en aplicaciones web interactivas, manteniendo una fidelidad casi exacta respecto al paquete oficial de Python.
+Timestral-28M-ONNX es una exportación a ONNX del modelo Timestral-28M de Mistral AI, un modelo de forecasting de series temporales. Lo publica el usuario amine40 en Hugging Face y está pensado para ejecutarse en el navegador mediante onnxruntime-web, sin necesidad de un backend en Python. El modelo resuelve el problema de desplegar modelos de predicción de series temporales en aplicaciones web interactivas, manteniendo una fidelidad casi exacta respecto al paquete oficial de Python.
 
 Se trata de un modelo denso de 28 millones de parámetros (la model card también menciona Timestral-5M), con salida de 21 cuantiles (0,01 a 0,99) y soporte para múltiples series, covariables pasadas y covariables futuras conocidas. La longitud de historia es variable (múltiplos de 32 pasos) y el horizonte de predicción llega hasta 1024 pasos. La licencia es Modified MIT, con atribución a Mistral AI.
 
@@ -66,7 +66,7 @@ No se dispone de datos comparativos en la información proporcionada. Alternativ
 - No aplica soporte de idiomas.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/amine40/Timestral-28M-ONNX)
+- [Modelo en Hugging Face](https://huggingface.co/amine40/Timestral-28M-ONNX)
 - [Timestral-5M (modelo base)](https://huggingface.co/mistralai/Timestral-5M)
 - [Timestral-28M (modelo base)](https://huggingface.co/mistralai/Timestral-28M)
 - [Demo Timestral en el navegador](https://amine-athmani.github.io/timestral-demo/)

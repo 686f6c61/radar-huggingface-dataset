@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abcorrea/e4b-sok-v1` es un ajuste fino (fine-tuning) del modelo base `google/gemma-4-E4B-it`, desarrollado por el usuario de HuggingFace `abcorrea`. Se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de HuggingFace. El propósito de este modelo es adaptar el comportamiento del modelo base a un conjunto de datos específico, aunque el autor no ha documentado ni el dataset utilizado ni los objetivos concretos del ajuste.
+El modelo `abcorrea/e4b-sok-v1` es un ajuste fino (fine-tuning) del modelo base `google/gemma-4-E4B-it`, desarrollado por el usuario de Hugging Face `abcorrea`. Se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de Hugging Face. El propósito de este modelo es adaptar el comportamiento del modelo base a un conjunto de datos específico, aunque el autor no ha documentado ni el dataset utilizado ni los objetivos concretos del ajuste.
 
 La relevancia de este modelo radica en que parte de Gemma 4 E4B, un modelo de Google DeepMind que, según la información pública, es un modelo omni eficiente con capacidades multimodales (texto, imagen y audio) y una ventana de contexto de 128K tokens. Sin embargo, el fine-tuning podría modificar o conservar estas capacidades, y no se ha confirmado explícitamente. El repositorio tiene un tamaño de 2,9 GB, lo que sugiere pesos en precisión fp16 o bf16 para un modelo de aproximadamente 4 mil millones de parámetros (inferencia basada en el nombre "E4B"), aunque este dato no está confirmado oficialmente.
 
@@ -19,7 +19,7 @@ Actualmente el modelo cuenta con 0 descargas y 0 likes, lo que indica que es un 
 | Tipos de cuantizacion | No disponibles |
 | Idiomas soportados | No disponibles |
 | Licencia | No disponible (la model card indica "licence: license" sin especificar) |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -63,8 +63,8 @@ No se dispone de información sobre modelos comparables específicos para este f
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| abcorrea/e4b-sok-v1 | ~4B (estimado) | No disponible | No disponible | HuggingFace |
-| google/gemma-4-E4B-it | No disponible (probablemente ~4B) | 128K (segun busqueda) | No disponible | HuggingFace |
+| abcorrea/e4b-sok-v1 | ~4B (estimado) | No disponible | No disponible | Hugging Face |
+| google/gemma-4-E4B-it | No disponible (probablemente ~4B) | 128K (segun busqueda) | No disponible | Hugging Face |
 
 No hay datos adicionales para establecer una comparativa robusta.
 
@@ -80,7 +80,7 @@ No hay datos adicionales para establecer una comparativa robusta.
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/abcorrea/e4b-sok-v1)
+- [Hugging Face del modelo](https://huggingface.co/abcorrea/e4b-sok-v1)
 - [Modelo base google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)
 - [Información sobre Gemma 4 E4B en Vast.ai](https://vast.ai/model/gemma-4-e4b-it)

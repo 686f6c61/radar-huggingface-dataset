@@ -1,7 +1,7 @@
 # nikitavasilyev/model_214617026_clip_huge
 
 ## Resumen
-El modelo `model_214617026_clip_huge` es una implementación a escala "huge" de la arquitectura CLIP (Contrastive Language-Image Pretraining), orientada a tareas de clasificación. Ha sido publicado por el usuario nikitavasilyev en HuggingFace bajo licencia CC-BY-4.0, aunque no se aporta documentación adicional sobre su procedencia, dataset de entrenamiento o rendimiento. La arquitectura emplea atención lineal, fusión bilineal de modalidades, activación GELU con aproximación tanh, normalización LayerNorm e inicialización Kaiming normal, lo que sugiere un diseño adaptado para eficiencia computacional en comparación con la atención estándar.
+El modelo `model_214617026_clip_huge` es una implementación a escala "huge" de la arquitectura CLIP (Contrastive Language-Image Pretraining), orientada a tareas de clasificación. Ha sido publicado por el usuario nikitavasilyev en Hugging Face bajo licencia CC-BY-4.0, aunque no se aporta documentación adicional sobre su procedencia, dataset de entrenamiento o rendimiento. La arquitectura emplea atención lineal, fusión bilineal de modalidades, activación GELU con aproximación tanh, normalización LayerNorm e inicialización Kaiming normal, lo que sugiere un diseño adaptado para eficiencia computacional en comparación con la atención estándar.
 
 La relevancia de este modelo radica en que CLIP es una familia de arquitecturas ampliamente utilizada para aprendizaje contrastivo imagen-texto, permitiendo clasificación zero-shot a partir de descripciones en lenguaje natural. Sin embargo, al tratarse de un repositorio sin métricas publicadas, sin información sobre el número de parámetros ni el contexto de entrenamiento, su utilidad práctica queda limitada a una evaluación directa por parte del usuario. No se dispone de datos sobre el tamaño exacto, la longitud de contexto ni los idiomas soportados.
 
@@ -59,6 +59,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 - Se recomienda encarecidamente no utilizar este modelo en entornos de producción sin una validación exhaustiva.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/nikitavasilyev/model_214617026_clip_huge
+- Repositorio en Hugging Face: https://huggingface.co/nikitavasilyev/model_214617026_clip_huge
 - Referencia general de CLIP (OpenAI): https://github.com/openai/CLIP
 - Implementación OpenCLIP (jina-ai): https://github.com/jina-ai/openclip

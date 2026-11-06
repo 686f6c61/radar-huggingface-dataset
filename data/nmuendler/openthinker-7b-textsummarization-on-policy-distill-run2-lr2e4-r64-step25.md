@@ -25,7 +25,7 @@ Hiperparametros inferidos del identificador del repositorio (no confirmados en l
 
 ## Arquitectura y entrenamiento
 
-La model card es la plantilla generica de HuggingFace sin rellenar: todos los apartados de descripcion, datos de entrenamiento, procedimiento e hiperparametros figuran como "[More Information Needed]". Los unicos datos tecnicos verificables son los metadatos del repositorio: libreria `peft` en version 0.19.1, `pipeline_tag: text-generation`, etiquetas `lora`, `transformers` y `base_model:adapter:yufeng1/OpenThinker-7B-summary-type3-e1-10000-2`. Esto confirma que se trata de un adaptador de bajo rango (LoRA) sobre un adaptador previo, es decir, un ajuste en dos etapas sobre la cadena OpenThinker-7B.
+La model card es la plantilla generica de Hugging Face sin rellenar: todos los apartados de descripcion, datos de entrenamiento, procedimiento e hiperparametros figuran como "[More Information Needed]". Los unicos datos tecnicos verificables son los metadatos del repositorio: libreria `peft` en version 0.19.1, `pipeline_tag: text-generation`, etiquetas `lora`, `transformers` y `base_model:adapter:yufeng1/OpenThinker-7B-summary-type3-e1-10000-2`. Esto confirma que se trata de un adaptador de bajo rango (LoRA) sobre un adaptador previo, es decir, un ajuste en dos etapas sobre la cadena OpenThinker-7B.
 
 No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni sobre innovaciones tecnicas concretas. El unico indicio metodologico es el nombre del repositorio, que menciona "on-policy distill" (destilacion on-policy), una tecnica en la que el estudiante genera sus propias secuencias y estas se corrigen con las del profesor, habitual en la destilacion de modelos de razonamiento. El paso 25 como checkpoint publicado apunta a un entrenamiento muy temprano, lo que en la practica implica que el adaptador probablemente no ha convergido.
 
@@ -96,7 +96,7 @@ No se dispone de datos que permitan una comparacion cuantitativa de rendimiento 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run2-lr2e4-r64-step25
+- Repositorio Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run2-lr2e4-r64-step25
 - Modelo base (adaptador previo): https://huggingface.co/yufeng1/OpenThinker-7B-summary-type3-e1-10000-2
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en machine learning): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT (libreria declarada, version 0.19.1): https://huggingface.co/docs/peft

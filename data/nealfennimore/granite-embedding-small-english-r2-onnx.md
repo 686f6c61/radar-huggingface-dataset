@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nealfennimore/granite-embedding-small-english-r2-ONNX | no disponible | no disponible | ONNX int8 | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| ibm-granite/granite-embedding-small-english-r2 | no disponible | no disponible | safetensors (presumible) | Apache 2.0 | HuggingFace (modelo base) |
+| nealfennimore/granite-embedding-small-english-r2-ONNX | no disponible | no disponible | ONNX int8 | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| ibm-granite/granite-embedding-small-english-r2 | no disponible | no disponible | safetensors (presumible) | Apache 2.0 | Hugging Face (modelo base) |
 | Otras alternativas de embeddings pequenos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparativa se limita al modelo base del que deriva esta exportación.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nealfennimore/granite-embedding-small-english-r2-ONNX
+- Modelo en Hugging Face: https://huggingface.co/nealfennimore/granite-embedding-small-english-r2-ONNX
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-small-english-r2
 - Repositorio de la aplicación que lo usa: https://github.com/nealfennimore/cmmc
 - Scripts de conversión: carpeta `models/embedder` del repositorio `cmmc-app` (https://github.com/nealfennimore/cmmc)

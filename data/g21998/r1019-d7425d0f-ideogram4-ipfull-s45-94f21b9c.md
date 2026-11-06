@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`G21998/r1019-d7425d0f-ideogram4-ipfull-s45-94f21b9c` es un repositorio privado de HuggingFace (9,3 GB) publicado por el usuario G21998 que, segun su propia model card, no contiene una ficha de modelo al uso sino un **registro de replicacion de un experimento** ("replay cell a1_ipfull_s45_d7425d0f"). El artefacto documenta una tarea identificada como `d7425d0f` (etiquetada internamente como "ideogram4", con 0,75 horas de ejecucion), un brazo de configuracion `ipfull`, semilla 45 y arbol `94f23b9c`, con estado de subida `UPLOAD`, codigo de retorno 0 y ningun proceso terminado por kill.
+`G21998/r1019-d7425d0f-ideogram4-ipfull-s45-94f21b9c` es un repositorio privado de Hugging Face (9,3 GB) publicado por el usuario G21998 que, segun su propia model card, no contiene una ficha de modelo al uso sino un **registro de replicacion de un experimento** ("replay cell a1_ipfull_s45_d7425d0f"). El artefacto documenta una tarea identificada como `d7425d0f` (etiquetada internamente como "ideogram4", con 0,75 horas de ejecucion), un brazo de configuracion `ipfull`, semilla 45 y arbol `94f23b9c`, con estado de subida `UPLOAD`, codigo de retorno 0 y ningun proceso terminado por kill.
 
 La model card indica que el contenido se genero con un arnes de validacion "faithful, no-Docker" (bloqueo `replay-1019`), donde el directorio `checkpoints/` contiene exactamente lo que el validador subiria y `replay/` agrupa logs y registros. El autor describe explicitamente el repositorio como "registro de investigacion privado, no una submission".
 
@@ -40,7 +40,7 @@ Los unicos metadatos tecnicos del entrenamiento son la duracion declarada (0,75 
 - No se ha documentado ninguna capacidad funcional del modelo (generacion de texto, razonamiento, codigo, matematicas o vision) en la informacion disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas figura como no disponible en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas figura como no disponible en Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio, generacion de imagenes): no disponible. El sufijo "ideogram4" del identificador es un indicio no verificado y no debe interpretarse como confirmacion de capacidad de generacion de imagenes.
 - Capacidad documentada con certeza: reproducible como artefacto de auditoria, ya que el repositorio incluye checksums (`52278cb8` para el artefacto, `f59e19fa` para la identidad) y una separacion explicita entre checkpoints y registros.
 
@@ -97,7 +97,7 @@ El identificador contiene la cadena "ideogram4", que coincide parcialmente con e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/G21998/r1019-d7425d0f-ideogram4-ipfull-s45-94f21b9c
+- Repositorio en Hugging Face: https://huggingface.co/G21998/r1019-d7425d0f-ideogram4-ipfull-s45-94f21b9c
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo del arnes de validacion (`replay-1019`): no disponible publicamente

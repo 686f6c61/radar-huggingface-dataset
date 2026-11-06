@@ -118,7 +118,7 @@ No se dispone de datos de benchmarks de otros modelos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kujira/Swift-1.5-Qwen3.8-27B-CHiPS-Abliterated-GSQ-RCO-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Kujira/Swift-1.5-Qwen3.8-27B-CHiPS-Abliterated-GSQ-RCO-MTP-GGUF
 - Modelo base (UkisAI): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
 - Matriz de importancia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/imatrix-swift15-v1mix.gguf
 - Paper de referencia 1: arxiv:2604.18556 (citado en los tags; título no disponible)

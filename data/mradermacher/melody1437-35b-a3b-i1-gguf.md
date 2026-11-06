@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables específicos. Se podría
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Melody1437-35B-A3B-i1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Melody1437-35B-A3B-i1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Melody1437-35B-A3B
 - Repositorio estático de cuantizaciones: https://huggingface.co/mradermacher/Melody1437-35B-A3B-GGUF
 - Página de modelo de mradermacher para descargas: https://hf.tst.eu/model#Melody1437-35B-A3B-i1-GGUF

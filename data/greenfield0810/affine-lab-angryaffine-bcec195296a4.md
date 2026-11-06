@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por greenfield0810, no contiene un modelo de lenguaje completo, sino un corpus de entrenamiento y adaptadores LoRA para la subred SN120 (Affine) de Bittensor. El corpus está formado por rollouts de duelos generados por el modelo teacher Qwen/Qwen3.8-27B, con 189.158 turnos y 7.419 estratos. El repositorio incluye también checkpoints de adaptadores LoRA secuenciales entrenados sobre el "reigning king" de la subred. Es relevante para investigadores interesados en sistemas de IA descentralizados, aprendizaje a partir de duelos y fine-tuning de modelos de razonamiento con tool calling. La arquitectura del modelo subyacente no está especificada en la información disponible, y el contexto no se indica. El tamaño total del repositorio es de 23,6 GB.
+Este repositorio de Hugging Face, publicado por greenfield0810, no contiene un modelo de lenguaje completo, sino un corpus de entrenamiento y adaptadores LoRA para la subred SN120 (Affine) de Bittensor. El corpus está formado por rollouts de duelos generados por el modelo teacher Qwen/Qwen3.8-27B, con 189.158 turnos y 7.419 estratos. El repositorio incluye también checkpoints de adaptadores LoRA secuenciales entrenados sobre el "reigning king" de la subred. Es relevante para investigadores interesados en sistemas de IA descentralizados, aprendizaje a partir de duelos y fine-tuning de modelos de razonamiento con tool calling. La arquitectura del modelo subyacente no está especificada en la información disponible, y el contexto no se indica. El tamaño total del repositorio es de 23,6 GB.
 
 ## Especificaciones tecnicas
 

@@ -4,7 +4,7 @@
 
 Este repositorio contiene una cuantización NF4 (NormalFloat 4-bit mediante bitsandbytes) del modelo Zynerji/Ektome-Qwen3.5-9B-PristinelyUncensored-frac085, un fine-tune sin censura publicado por el usuario Zynerji sobre una base denominada Qwen3.5 de 9B. El artefacto lo redistribuye el usuario meltingfeet como copia de seguridad fechada el 2 de noviembre de 2026. Se trata, por tanto, de un derivado de tercer nivel: base Qwen3.5, fine-tune de Zynerji y cuantización de meltingfeet.
 
-El modelo declara 9.409.813.744 parámetros en pesos safetensors (unos 9,41 mil millones) y un tamaño de repositorio de 7,9 GB, coherente con pesos de 4 bits más metadatos. La ficha de HuggingFace lo etiqueta con el pipeline `qwen3_5`, lo que sugiere una arquitectura tipo transformer denso de la familia Qwen, e incluye la etiqueta `vision`, aunque no se documenta ninguna torre visual ni procesador de imagen.
+El modelo declara 9.409.813.744 parámetros en pesos safetensors (unos 9,41 mil millones) y un tamaño de repositorio de 7,9 GB, coherente con pesos de 4 bits más metadatos. La ficha de Hugging Face lo etiqueta con el pipeline `qwen3_5`, lo que sugiere una arquitectura tipo transformer denso de la familia Qwen, e incluye la etiqueta `vision`, aunque no se documenta ninguna torre visual ni procesador de imagen.
 
 La relevancia de esta ficha es limitada y fundamentalmente práctica: se trata de un artefacto de acceso restringido, sin descargas ni interacciones registradas en el momento de la consulta y sin documentación técnica propia. Resulta útil como caso de estudio de la cadena de derivados (base, fine-tune, cuantización, espejo) y como advertencia sobre la trazabilidad y la verificabilidad de modelos publicados sin model card sustantiva.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Ektome-Qwen3.5-9B NF4) | 9,41B | no disponible | NF4 4-bit | Apache 2.0 | Gated en HuggingFace |
-| Zynerji/Ektome-Qwen3.5-9B-PristinelyUncensored-frac085 (base del fine-tune) | 9,41B (presumible) | no disponible | bf16/fp16 presumible | no disponible en esta ficha | Público en HuggingFace |
-| Qwen3.5-9B (base original) | 9B (presumible) | no disponible | múltiples | no disponible en esta ficha | Público en HuggingFace |
-| Fine-tunes sin censura de 8-9B (familia Dolphin, abliterated, etc.) | 7-9B | 8K-128K segun variante | GGUF, AWQ, bnb | variable (Apache 2.0, Llama, etc.) | Público en HuggingFace |
+| Este modelo (Ektome-Qwen3.5-9B NF4) | 9,41B | no disponible | NF4 4-bit | Apache 2.0 | Gated en Hugging Face |
+| Zynerji/Ektome-Qwen3.5-9B-PristinelyUncensored-frac085 (base del fine-tune) | 9,41B (presumible) | no disponible | bf16/fp16 presumible | no disponible en esta ficha | Público en Hugging Face |
+| Qwen3.5-9B (base original) | 9B (presumible) | no disponible | múltiples | no disponible en esta ficha | Público en Hugging Face |
+| Fine-tunes sin censura de 8-9B (familia Dolphin, abliterated, etc.) | 7-9B | 8K-128K segun variante | GGUF, AWQ, bnb | variable (Apache 2.0, Llama, etc.) | Público en Hugging Face |
 
 La comparación cuantitativa de rendimiento no es posible: no hay benchmarks publicados para este artefacto ni datos de contexto o idiomas en su model card. La licencia Apache 2.0 declarada facilita el uso comercial en teoría, pero la ausencia de documentación sobre el fine-tune intermedio hace recomendable verificar la licencia de la base Qwen3.5 antes de cualquier despliegue en producción.
 
@@ -78,14 +78,14 @@ La comparación cuantitativa de rendimiento no es posible: no hay benchmarks pub
 - Trazabilidad limitada: es un derivado de tercer nivel sin model card sustantiva; no se documentan datos de entrenamiento, hiperparámetros ni evaluaciones.
 - La etiqueta `vision` no está respaldada por documentación ni por artefactos de procesador de imagen; no debe asumirse capacidad multimodal.
 - Idiomas y longitud de contexto desconocidos: no es posible planificar un despliegue multilingüe o de contexto largo sin verificación empírica.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y la auditoría independiente.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la auditoría independiente.
 - Sin descargas ni interacciones registradas: no hay evidencia de uso comunitario ni de validación por terceros.
 - Licencia Apache 2.0 declarada por el redistribuidor; conviene confirmar que el fine-tune intermedio y la base Qwen3.5 permiten la redistribución bajo esos términos.
 - Fecha de creación futura (2026-11-02) y nombre "backup": artefacto de espejo sin garantía de mantenimiento ni de correspondencia exacta con el modelo base.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085-NF4
+- Repositorio Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085-NF4
 - Modelo base del fine-tune: https://huggingface.co/Zynerji/Ektome-Qwen3.5-9B-PristinelyUncensored-frac085
 - Documentación de bitsandbytes (cuantización NF4): https://huggingface.co/docs/bitsandbytes
 - Documentación de transformers sobre cuantización: https://huggingface.co/docs/transformers/main/en/quantization/overview

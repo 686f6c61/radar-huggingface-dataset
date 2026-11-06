@@ -110,7 +110,7 @@ En parametros, el checkpoint podado declara 20,11B frente a los 33,12B del bf16 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/xt111/MiniMax-H3-NVFP4
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/xt111/MiniMax-H3-NVFP4
 - Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio de Comfy-Org del que derivan estos ficheros: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Repositorio original de los ficheros `_convrot_int8` (rockerBOO): https://huggingface.co/rockerBOO/minimax-h3-nvfp4

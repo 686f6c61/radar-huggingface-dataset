@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pocket-tts-polish-6l es un modelo de sintesis de voz (text-to-speech) en polaco desarrollado por el usuario shefowl, publicado en HuggingFace bajo licencia CC-BY-4.0. Se trata de un ajuste fino (finetune) del modelo kyutai/pocket-tts, del que hereda el codec de audio Mimi, pero con el backbone reducido por destilacion de 24 capas transformer a 6. El resultado son 109,5 millones de parametros en total, de los cuales 89,4 M corresponden al backbone y 20,1 M al codec Mimi, en precision float32.
+pocket-tts-polish-6l es un modelo de sintesis de voz (text-to-speech) en polaco desarrollado por el usuario shefowl, publicado en Hugging Face bajo licencia CC-BY-4.0. Se trata de un ajuste fino (finetune) del modelo kyutai/pocket-tts, del que hereda el codec de audio Mimi, pero con el backbone reducido por destilacion de 24 capas transformer a 6. El resultado son 109,5 millones de parametros en total, de los cuales 89,4 M corresponden al backbone y 20,1 M al codec Mimi, en precision float32.
 
 El modelo resuelve sintesis de voz en polaco con clonacion de voz zero-shot a partir de un clip de referencia, y esta disenado explicitamente para ejecucion on-device: alcanza un factor de tiempo real (RTF) de 0,21 en CPU de escritorio y 0,11 cuantizado a int8. El autor reporta una tasa de error de palabra (WER) del 8,5 % sobre 1339 enunciados repartidos en cuatro registros, y afirma que en sus mediciones el estudiante de 6 capas supera al profesor de 24 del que se destilo, al haber sido entrenado para reproducir las activaciones del backbone original y no como una simple poda.
 
@@ -100,8 +100,8 @@ La model card menciona explicitamente el modelo profesor del que se destila, del
 
 | Modelo | Parametros | Contexto | Rendimiento en polaco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shefowl/pocket-tts-polish-6l | 109,5 M (89,4 M backbone + 20,1 M Mimi) | no disponible | WER 8,5 %; 98,4 % en apellidos; 100 % en vocabulario de UI | cc-by-4.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| kyutai/pocket-tts (profesor) | no disponible (backbone de 24 capas, ~3x mayor segun la model card) | no disponible | no disponible en polaco; la model card afirma que el estudiante queda por delante en sus mediciones | no disponible | HuggingFace |
+| shefowl/pocket-tts-polish-6l | 109,5 M (89,4 M backbone + 20,1 M Mimi) | no disponible | WER 8,5 %; 98,4 % en apellidos; 100 % en vocabulario de UI | cc-by-4.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| kyutai/pocket-tts (profesor) | no disponible (backbone de 24 capas, ~3x mayor segun la model card) | no disponible | no disponible en polaco; la model card afirma que el estudiante queda por delante en sus mediciones | no disponible | Hugging Face |
 | Otras alternativas TTS en polaco | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -120,7 +120,7 @@ La model card menciona explicitamente el modelo profesor del que se destila, del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shefowl/pocket-tts-polish-6l
+- Modelo en Hugging Face: https://huggingface.co/shefowl/pocket-tts-polish-6l
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Reconocedor usado en la primera pasada: https://huggingface.co/nvidia/stt_pl_fastconformer_hybrid_large_pc
 - Reconocedor usado en la pasada de rescate: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

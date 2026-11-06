@@ -79,6 +79,6 @@ No se dispone de información detallada sobre modelos comparables. El modelo bas
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-italianfood-prompted-cosine)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-italianfood-prompted-cosine)
 - [Colección automo-kd-students](https://huggingface.co/collections/model-organisms-for-real/automo-kd-students)
 - [Modelo base](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kiliez/AGERE_weights` es un repositorio publicado en HuggingFace por el usuario `kiliez` bajo licencia MIT. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo reales, y la model card únicamente declara la licencia. No se proporcionan detalles sobre arquitectura, parámetros, contexto, idiomas ni capacidades.
+El modelo `kiliez/AGERE_weights` es un repositorio publicado en Hugging Face por el usuario `kiliez` bajo licencia MIT. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo reales, y la model card únicamente declara la licencia. No se proporcionan detalles sobre arquitectura, parámetros, contexto, idiomas ni capacidades.
 
 Dado que el repositorio está vacío y carece de documentación técnica, no es posible evaluar su utilidad práctica ni su rendimiento. La fecha de creación (2026-08-03) y actualización (2026-08-16) sugieren que podría tratarse de un proyecto en fase inicial o un placeholder. Se recomienda encarecidamente no utilizar este repositorio en entornos de producción sin una verificación exhaustiva del contenido real.
 
@@ -53,5 +53,5 @@ No disponible. No se conocen modelos comparables porque no hay información sobr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kiliez/AGERE_weights
-- Perfil del autor en HuggingFace: https://huggingface.co/kiliez
+- Repositorio en Hugging Face: https://huggingface.co/kiliez/AGERE_weights
+- Perfil del autor en Hugging Face: https://huggingface.co/kiliez

@@ -95,7 +95,7 @@ No hay alternativas publicas directas conocidas de drafter de difusion LoRA sobr
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/liddlefish/LoopUno-Nanbeige4.2-3B
+- Ficha en Hugging Face: https://huggingface.co/liddlefish/LoopUno-Nanbeige4.2-3B
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Pagina del proyecto: https://fengsxy.github.io/LoopUno/
 - Codigo (LoopUno): https://github.com/fengsxy/LoopUno

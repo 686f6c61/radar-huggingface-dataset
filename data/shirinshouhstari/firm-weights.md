@@ -105,10 +105,10 @@ Comparación interna entre variantes destacadas (mismos datos y protocolo dentro
 
 | Modelo | Parámetros | Resolución | PSNR | SSIM | LPIPS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `celeba_inpaint_random` | 34,5 M | 128x128 | 35,03 | 0,9629 | 0,0188 | MIT (contenido del repo) | HuggingFace |
-| `celeba_sr` | 34,5 M | 128x128 | 34,40 | 0,9492 | 0,0285 | MIT (contenido del repo) | HuggingFace |
-| `afhq_inpaint_random` | 59,9 M | 256x256 | 34,72 | 0,9362 | 0,0436 | MIT (contenido del repo) | HuggingFace |
-| `afhq_deblur` | 239,4 M | 256x256 | 29,90 | 0,8091 | 0,2294 | MIT (contenido del repo) | HuggingFace |
+| `celeba_inpaint_random` | 34,5 M | 128x128 | 35,03 | 0,9629 | 0,0188 | MIT (contenido del repo) | Hugging Face |
+| `celeba_sr` | 34,5 M | 128x128 | 34,40 | 0,9492 | 0,0285 | MIT (contenido del repo) | Hugging Face |
+| `afhq_inpaint_random` | 59,9 M | 256x256 | 34,72 | 0,9362 | 0,0436 | MIT (contenido del repo) | Hugging Face |
+| `afhq_deblur` | 239,4 M | 256x256 | 29,90 | 0,8091 | 0,2294 | MIT (contenido del repo) | Hugging Face |
 | Solver externo de problemas inversos | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Los valores de CelebA y AFHQ-Cat no son directamente comparables entre sí, porque las degradaciones de AFHQ son más severas y el protocolo de evaluación usa conjuntos distintos.
@@ -129,7 +129,7 @@ Los valores de CelebA y AFHQ-Cat no son directamente comparables entre sí, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShirinShouhstari/FIRM-weights
+- Modelo en Hugging Face: https://huggingface.co/ShirinShouhstari/FIRM-weights
 - Repositorio de código: https://github.com/wustl-cig/FIRM_code
 - Artículo (PDF): https://arxiv.org/pdf/2609.12953
 - Identificador arXiv: 2609.12953 (etiqueta `arxiv:2609.12953` en el repositorio)

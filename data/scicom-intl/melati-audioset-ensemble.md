@@ -79,11 +79,11 @@ Rendimiento de inferencia: en una GPU, con lotes de 16, etiqueta 18 clips de 10 
 
 | Modelo | Parámetros | Contexto / ventana | mAP AudioSet | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Melati-AudioSet-Ensemble | 1,20B (seis miembros) | 10 s por ventana | 0,5219 | MIT | HuggingFace (Scicom-intl) |
-| Melati-AudioSet-EAT-Large v4 | 309M | 10 s por ventana | 0,5124 | no disponible en la información | HuggingFace (Scicom-intl) |
-| CED-base | no disponible | 10 s por ventana | 0,4993 | no disponible en la información | HuggingFace (mispeech/ced-base) |
-| EAT-large | no disponible | 10 s por ventana | 0,4947 | no disponible en la información | HuggingFace (worstchan/EAT-large_epoch20_finetune_AS2M) |
-| SSLAM | no disponible | 10 s por ventana | 0,4945 | no disponible en la información | HuggingFace (ta012/SSLAM_AS2M_Finetuned) |
+| Melati-AudioSet-Ensemble | 1,20B (seis miembros) | 10 s por ventana | 0,5219 | MIT | Hugging Face (Scicom-intl) |
+| Melati-AudioSet-EAT-Large v4 | 309M | 10 s por ventana | 0,5124 | no disponible en la información | Hugging Face (Scicom-intl) |
+| CED-base | no disponible | 10 s por ventana | 0,4993 | no disponible en la información | Hugging Face (mispeech/ced-base) |
+| EAT-large | no disponible | 10 s por ventana | 0,4947 | no disponible en la información | Hugging Face (worstchan/EAT-large_epoch20_finetune_AS2M) |
+| SSLAM | no disponible | 10 s por ventana | 0,4945 | no disponible en la información | Hugging Face (ta012/SSLAM_AS2M_Finetuned) |
 | BEATs | no disponible | 10 s por ventana | 0,4835 | no disponible en la información | no disponible |
 
 El ensemble supera a todos sus miembros individuales en mAP sobre la misma copia del conjunto de evaluación, a cambio de seis pasadas forward por clip (1,20B parámetros frente a los 309M de Melati-AudioSet-EAT-Large). No se dispone de datos de parámetros ni licencia de los miembros externos en la información proporcionada.
@@ -102,7 +102,7 @@ El ensemble supera a todos sus miembros individuales en mAP sobre la misma copia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/Melati-AudioSet-Ensemble
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/Melati-AudioSet-Ensemble
 - Melati-AudioSet-EAT-Large (modelo destilado): https://huggingface.co/Scicom-intl/Melati-AudioSet-EAT-Large
 - Repositorio Melati: https://github.com/Scicom-AI-Enterprise-Organization/Melati
 - Conjunto de datos AudioSet usado en la evaluación: https://huggingface.co/datasets/agkphysics/AudioSet

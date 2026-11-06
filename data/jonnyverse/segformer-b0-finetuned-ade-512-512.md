@@ -79,7 +79,7 @@ Estos datos provienen de referencias generales y no de la información específi
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta conversión: https://huggingface.co/JONNYVERSE/segformer-b0-finetuned-ade-512-512
+- Repositorio de Hugging Face de esta conversión: https://huggingface.co/JONNYVERSE/segformer-b0-finetuned-ade-512-512
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Paper de SegFormer: https://arxiv.org/abs/2105.15203

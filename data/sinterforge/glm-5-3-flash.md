@@ -93,11 +93,11 @@ GLM-5.3-Flash compite directamente con GLM-5.2 (modelo anterior de la misma seri
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SinterForge/GLM-5.3-Flash)
+- [Modelo en Hugging Face](https://huggingface.co/SinterForge/GLM-5.3-Flash)
 - [Blog oficial de GLM-5.3-Flash](https://z.ai/blog/glm-5.3-flash)
 - [Informe técnico de GLM-5 (arXiv)](https://arxiv.org/abs/2602.15763)
 - [Documentación de la API de Z.ai](https://docs.z.ai/guides/llm/glm-5.3-flash)
 - [Guía de Unsloth para GLM-5.3-Flash](https://unsloth.ai/docs/models/glm-5.3)
-- [GGUF de Unsloth en HuggingFace](https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF)
+- [GGUF de Unsloth en Hugging Face](https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF)
 - [Guía de uso en Tosea.ai](https://tosea.ai/blog/glm-5-3-flash-complete-guide)
 - [Página de GLM-5.3 en openlm.ai](https://openlm.ai/glm-5.3/)

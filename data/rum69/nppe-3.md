@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rum69/nppe-3` es un modelo de super-resolución de imágenes desarrollado por el usuario Rum69 y alojado en HuggingFace. Está diseñado para la tarea denominada NPPE, que consiste en aumentar la resolución de imágenes mediante un factor de 4x. El modelo se basa en la arquitectura StrongSRNet, que combina aprendizaje residual sobre sobremuestreo bicúbico con bloques de atención de canal residual (RCAB). Esta arquitectura permite que el modelo aprenda a corregir la diferencia entre la imagen interpolada bicúbicamente y la imagen de alta resolución original, mejorando la calidad visual de la salida.
+El modelo `Rum69/nppe-3` es un modelo de super-resolución de imágenes desarrollado por el usuario Rum69 y alojado en Hugging Face. Está diseñado para la tarea denominada NPPE, que consiste en aumentar la resolución de imágenes mediante un factor de 4x. El modelo se basa en la arquitectura StrongSRNet, que combina aprendizaje residual sobre sobremuestreo bicúbico con bloques de atención de canal residual (RCAB). Esta arquitectura permite que el modelo aprenda a corregir la diferencia entre la imagen interpolada bicúbicamente y la imagen de alta resolución original, mejorando la calidad visual de la salida.
 
 El entrenamiento se realizó con parches de baja resolución de 128x128 píxeles y objetivos de alta resolución de 512x512 píxeles, utilizando el optimizador AdamW con una tasa de aprendizaje de 1e-4 durante 200 épocas. El mejor valor de PSNR de validación alcanzado fue de 39.14 dB en la época 91. Para la inferencia, el modelo emplea un test-time self-ensemble de 8 aumentos, lo que incrementa la estabilidad y calidad de las predicciones.
 
@@ -76,6 +76,6 @@ No disponible. No se han encontrado modelos comparables con datos suficientes en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rum69/nppe-3
+- Hugging Face: https://huggingface.co/Rum69/nppe-3
 - GitHub (proyecto NPPE): https://github.com/lvk-ai/nppe
-- Dataset en HuggingFace: https://huggingface.co/datasets/TheModelEngineer/dlgenai-nppe-dataset
+- Dataset en Hugging Face: https://huggingface.co/datasets/TheModelEngineer/dlgenai-nppe-dataset

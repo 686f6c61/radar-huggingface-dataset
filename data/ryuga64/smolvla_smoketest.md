@@ -68,9 +68,9 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RyuGa64/smolvla_smoketest
+- Repositorio Hugging Face: https://huggingface.co/RyuGa64/smolvla_smoketest
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
-- Blog de HuggingFace sobre SmolVLA: https://huggingface.co/blog/smolvla
+- Blog de Hugging Face sobre SmolVLA: https://huggingface.co/blog/smolvla
 - Sitio web oficial de SmolVLA: https://smolvla.net/index_en
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/svla_so100_stacking

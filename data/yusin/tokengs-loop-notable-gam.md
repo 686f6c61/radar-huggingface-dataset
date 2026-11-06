@@ -74,13 +74,13 @@ No disponible. La información proporcionada no incluye otros checkpoints de Tok
 - El PSNR de entrenamiento (19,41) es inferior al de evaluación (20,09), lo que sugiere posibles diferencias entre conjuntos y complica extrapolar el rendimiento a datos nuevos.
 - Riesgo de sobreajuste a la receta y al conjunto de entrenamiento originales; no se documenta la composición del dataset.
 - Sin información sobre sesgos: no se han publicado análisis de sesgo ni evaluaciones de robustez.
-- Sin información sobre idiomas: la ficha de HuggingFace no declara idiomas soportados.
+- Sin información sobre idiomas: la ficha de Hugging Face no declara idiomas soportados.
 - Licencia Apache 2.0: permite uso comercial y modificación con atribución, pero el modelo se distribuye como checkpoint de investigación sin garantías de idoneidad para producción.
 - El repositorio incluye estados de optimizador y planificador, lo que aumenta el tamaño de descarga respecto a los pesos solos y exige gestionar los cuatro ficheros de forma conjunta para reanudar correctamente.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de comunidad, validación externa ni mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yusin/TokenGS-Loop-notable-gam
+- Hugging Face: https://huggingface.co/Yusin/TokenGS-Loop-notable-gam
 - Documento de receta y mediciones: `NOTABLE_GAM.md` en la rama de código del proyecto (no se proporciona URL directa en la información disponible)
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada

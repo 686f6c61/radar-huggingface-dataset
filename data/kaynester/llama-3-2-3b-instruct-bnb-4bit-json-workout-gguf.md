@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos para ninguna de las filas, po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kaynester/Llama-3.2-3B-Instruct-bnb-4bit-JSON-workout-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Kaynester/Llama-3.2-3B-Instruct-bnb-4bit-JSON-workout-gguf
 - Variante del mismo autor: https://huggingface.co/Kaynester/Llama-3.2-3B-Instruct-bnb-4bit-workoutplan-v2-gguf
 - Árbol de ficheros de la variante: https://huggingface.co/Kaynester/Llama-3.2-3B-Instruct-bnb-4bit-workoutplan-v2-gguf/tree/main
 - Ficha de Llama 3.2 en Meta (formatos de prompt y model cards): https://dev.meta.ai/llama/docs/model-cards-and-prompt-formats/llama3_2

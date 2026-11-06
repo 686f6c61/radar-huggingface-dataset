@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Mistral7B-self es un adaptador de ajuste fino de tipo LoRA publicado en HuggingFace bajo la librería PEFT. No se trata de un modelo completo, sino de un conjunto de pesos incrementales que deben cargarse junto con su modelo base, mistralai/Mistral-7B-Instruct-v0.3. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de rango relativamente alto o con artefactos de entrenamiento incluidos, y no con un modelo de 7.000 millones de parámetros en precisión completa, que rondaría los 14-15 GB.
+MinaMila/Mistral7B-self es un adaptador de ajuste fino de tipo LoRA publicado en Hugging Face bajo la librería PEFT. No se trata de un modelo completo, sino de un conjunto de pesos incrementales que deben cargarse junto con su modelo base, mistralai/Mistral-7B-Instruct-v0.3. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de rango relativamente alto o con artefactos de entrenamiento incluidos, y no con un modelo de 7.000 millones de parámetros en precisión completa, que rondaría los 14-15 GB.
 
-El autor (MinaMila) no ha rellenado la model card: todas las secciones del README siguen la plantilla por defecto de HuggingFace con marcadores "[More Information Needed]". Como consecuencia, no hay información pública sobre el conjunto de datos de entrenamiento, los hiperparámetros de LoRA (rango, alpha, módulos objetivo), la licencia, los idiomas soportados, ni evaluación alguna. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que tampoco existe validación por parte de la comunidad.
+El autor (MinaMila) no ha rellenado la model card: todas las secciones del README siguen la plantilla por defecto de Hugging Face con marcadores "[More Information Needed]". Como consecuencia, no hay información pública sobre el conjunto de datos de entrenamiento, los hiperparámetros de LoRA (rango, alpha, módulos objetivo), la licencia, los idiomas soportados, ni evaluación alguna. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que tampoco existe validación por parte de la comunidad.
 
 Su relevancia es, por tanto, limitada y de carácter experimental: sirve como ejemplo de adaptación ligera sobre Mistral 7B Instruct v0.3 y como posible punto de partida para inspeccionar la técnica, pero no es un artefacto listo para producción ni presenta evidencia de mejora sobre el modelo base. Cualquier uso serio exige evaluar el adaptador por cuenta propia y verificar antes la situación legal, dado que el repositorio no declara licencia.
 
@@ -23,14 +23,14 @@ Su relevancia es, por tanto, limitada y de carácter experimental: sirve como ej
 | Tamano del repositorio | 0,2 GB |
 | Modelo base | mistralai/Mistral-7B-Instruct-v0.3 |
 | Version de PEFT declarada | 0.19.1 |
-| Fecha de creacion del repositorio | 2026-09-10 (según los metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-10 (según los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura del artefacto es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre Mistral-7B-Instruct-v0.3 mediante la librería PEFT. LoRA congela los pesos del modelo base e inyecta matrices de bajo rango en determinadas proyecciones lineales, de modo que solo se entrenan y se publican esos parámetros adicionales. El repositorio etiqueta el modelo con `lora`, `peft`, `transformers`, `text-generation` y `conversational`, lo que confirma el pipeline previsto, pero no incluye ninguna indicación sobre el rango, el valor de alpha, el dropout, los módulos objetivo ni si el adaptador está fusionado o no con el modelo base.
 
-No hay información sobre el proceso de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo RLHF, DPO o ajuste supervisado adicional, ni hiperparámetros (tasa de aprendizaje, épocas, precisión mixta, hardware utilizado). Tampoco se documentan innovaciones técnicas propias. El único dato técnico concreto aportado por el autor es la versión de PEFT empleada (0.19.1). El tag `arxiv:1910.09700` presente en los metadatos no corresponde a un artículo sobre este modelo, sino a Lacoste et al. (2019), el trabajo sobre estimación de emisiones de CO2 en aprendizaje automático citado en la plantilla por defecto de HuggingFace; no debe interpretarse como referencia metodológica del adaptador.
+No hay información sobre el proceso de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo RLHF, DPO o ajuste supervisado adicional, ni hiperparámetros (tasa de aprendizaje, épocas, precisión mixta, hardware utilizado). Tampoco se documentan innovaciones técnicas propias. El único dato técnico concreto aportado por el autor es la versión de PEFT empleada (0.19.1). El tag `arxiv:1910.09700` presente en los metadatos no corresponde a un artículo sobre este modelo, sino a Lacoste et al. (2019), el trabajo sobre estimación de emisiones de CO2 en aprendizaje automático citado en la plantilla por defecto de Hugging Face; no debe interpretarse como referencia metodológica del adaptador.
 
 ## Capacidades
 
@@ -103,7 +103,7 @@ Frente al modelo base, este adaptador aporta un ajuste adicional no documentado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MinaMila/Mistral7B-self
+- Modelo en Hugging Face: https://huggingface.co/MinaMila/Mistral7B-self
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Librería PEFT: https://github.com/huggingface/peft
 - Artículo citado en los tags (Lacoste et al., 2019, sobre estimación de emisiones de CO2, ajeno a este modelo): https://arxiv.org/abs/1910.09700

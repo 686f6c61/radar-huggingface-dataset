@@ -60,7 +60,7 @@ El modelo obtiene un BPB inferior al de Pythia-70M, probablemente debido a la co
 - VRAM estimada para inferencia: con 69 millones de parámetros, en bf16 ocupa aproximadamente 138 MB; en fp32 unos 277 MB. Cabe en cualquier GPU moderna, incluso en iGPUs con memoria compartida.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una NVIDIA T4, L4, RTX 3060 o superior funcionará sin problemas. También puede ejecutarse en CPU para generaciones cortas.
 - Compatibilidad con GPU de consumo: sí, cualquier GPU de consumo reciente (serie RTX 20, 30, 40) puede ejecutarlo sin problemas.
-- Opciones de despliegue: al ser una arquitectura personalizada, requiere `trust_remote_code=True` en HuggingFace. No se ha probado con vLLM, llama.cpp, Ollama o TGI; el método de generación `generate_simple` no usa caché KV, por lo que no es adecuado para servir a escala.
+- Opciones de despliegue: al ser una arquitectura personalizada, requiere `trust_remote_code=True` en Hugging Face. No se ha probado con vLLM, llama.cpp, Ollama o TGI; el método de generación `generate_simple` no usa caché KV, por lo que no es adecuado para servir a escala.
 - Latencia y throughput: no se han publicado mediciones. Dado su tamaño, la generación de 40 tokens debería ser casi instantánea en GPU, pero el algoritmo O(n²) sin caché KV degrada el rendimiento con secuencias largas.
 
 ## Comparativa con modelos similares
@@ -84,6 +84,6 @@ Pythia-70M es el único comparable directo con datos publicados en la model card
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hari-8/transformer-pretraining-from-scratch
+- Hugging Face: https://huggingface.co/hari-8/transformer-pretraining-from-scratch
 - Repositorio GitHub: https://github.com/Hariprashad-Ravikumar/transformer-pretraining-from-scratch
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

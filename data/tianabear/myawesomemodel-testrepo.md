@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario TianaBear, etiquetado con las librerías transformers y pytorch, la arquitectura bert, la tarea feature-extraction y licencia MIT. El propio nombre del repositorio incluye el sufijo "TestRepo", las descargas y likes son cero, y el tamaño del repositorio es de 0.0 GB, lo que indica que se trata de un repositorio de prueba o de una plantilla y no de un modelo entrenado con pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario TianaBear, etiquetado con las librerías transformers y pytorch, la arquitectura bert, la tarea feature-extraction y licencia MIT. El propio nombre del repositorio incluye el sufijo "TestRepo", las descargas y likes son cero, y el tamaño del repositorio es de 0.0 GB, lo que indica que se trata de un repositorio de prueba o de una plantilla y no de un modelo entrenado con pesos publicados.
 
 La model card incluye texto de introducción y una tabla de evaluación con nombres genéricos (Model1, Model2, Model1-v2, MyAwesomeModel) y afirmaciones sobre un supuesto aumento de precisión en AIME 2025 del 70% al 87.5%, así como un uso medio de 23.000 tokens por pregunta. Sin embargo, estas cifras no son coherentes con el pipeline declarado (feature-extraction), con la arquitectura BERT ni con el hecho de que el repositorio no contenga pesos; la propia model card parece un texto de plantilla reutilizado de modelos de razonamiento de gran tamaño.
 
@@ -78,7 +78,7 @@ La model card también afirma que la precisión en AIME 2025 pasó del 70% al 87
 - VRAM para inferencia: no disponible. El repositorio no publica pesos, por lo que no hay artefacto que cargar.
 - GPU recomendadas: no disponible para este repositorio concreto. Como referencia genérica, un modelo tipo BERT-base (aproximadamente 110 millones de parámetros) suele ejecutarse con comodidad en cualquier GPU consumer con 4-8 GB de VRAM, o incluso en CPU, pero este dato no está confirmado para este repositorio.
 - Viabilidad en GPU consumer: no verificable sin pesos.
-- Opciones de despliegue: la etiqueta endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints, pero no hay artefactos publicados. No hay indicios de soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la etiqueta endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay artefactos publicados. No hay indicios de soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -109,7 +109,7 @@ Los datos de los tres modelos de referencia son orientativos y no provienen de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TianaBear/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/TianaBear/MyAwesomeModel-TestRepo
 - Repositorio homónimo de otra cuenta: https://huggingface.co/dsa12dsz123sz/MyAwesomeModel-TestRepo
 - Ficha en agregador free2aitools: https://free2aitools.com/model/tianabear/myawesomemodel-testrepo
 - Ficha en agregador free2aitools (otra cuenta): https://free2aitools.com/model/sotaagi2030/myawesomemodel-testrepo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Andromeda-Code-0.5B-v2 es un modelo de lenguaje publicado en HuggingFace por el usuario fiel1986 bajo el identificador `fiel1986/Andromeda-Code-0.5B-v2`. Por el nombre y las etiquetas asociadas (`qwen2`), se trata de un modelo de aproximadamente 494 millones de parametros orientado a tareas de generacion de codigo, presumiblemente derivado o ajustado a partir de la arquitectura Qwen2-0.5B. El repositorio fue creado y actualizado el 9 de octubre de 2026 (segun la marca temporal de HuggingFace) y se distribuye en formato safetensors.
+Andromeda-Code-0.5B-v2 es un modelo de lenguaje publicado en Hugging Face por el usuario fiel1986 bajo el identificador `fiel1986/Andromeda-Code-0.5B-v2`. Por el nombre y las etiquetas asociadas (`qwen2`), se trata de un modelo de aproximadamente 494 millones de parametros orientado a tareas de generacion de codigo, presumiblemente derivado o ajustado a partir de la arquitectura Qwen2-0.5B. El repositorio fue creado y actualizado el 9 de octubre de 2026 (segun la marca temporal de Hugging Face) y se distribuye en formato safetensors.
 
 El modelo es relevante por su caracter compacto: con menos de 500 millones de parametros, esta pensado para ejecucion en hardware modesto, incluso en CPU o en GPU de consumo con requisitos de VRAM muy reducidos. Esto lo hace candidato para entornos de desarrollo local, integracion en herramientas de autocompletado de codigo o pipelines con restricciones de recursos. Sin embargo, el nivel de adopcion es muy bajo (10 descargas y 0 likes en el momento de redactar esta ficha), lo que indica que se trata de un modelo experimental o de un proyecto personal con poca validacion comunitaria.
 
@@ -76,10 +76,10 @@ Nota: el repositorio ocupa 8,9 GB, muy por encima de lo esperable para un modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Andromeda-Code-0.5B-v2 | 494 M | no disponible | no disponible | HuggingFace (10 descargas) |
-| Qwen2-0.5B | 494 M | 32.768 tokens (segun documentacion de Alibaba) | Apache 2.0 (segun Alibaba) | HuggingFace |
-| Qwen2.5-Coder-0.5B | 494 M | 32.768 tokens (segun documentacion de Alibaba) | Apache 2.0 (segun Alibaba) | HuggingFace |
-| SmolLM2-360M | 360 M | 8.192 tokens (segun documentacion) | Apache 2.0 (segun documentacion) | HuggingFace |
+| Andromeda-Code-0.5B-v2 | 494 M | no disponible | no disponible | Hugging Face (10 descargas) |
+| Qwen2-0.5B | 494 M | 32.768 tokens (segun documentacion de Alibaba) | Apache 2.0 (segun Alibaba) | Hugging Face |
+| Qwen2.5-Coder-0.5B | 494 M | 32.768 tokens (segun documentacion de Alibaba) | Apache 2.0 (segun Alibaba) | Hugging Face |
+| SmolLM2-360M | 360 M | 8.192 tokens (segun documentacion) | Apache 2.0 (segun documentacion) | Hugging Face |
 
 La comparativa se ofrece a titulo orientativo: los datos de los modelos alternativos proceden de su documentacion publica, mientras que los del modelo objeto de esta ficha estan mayoritariamente no disponibles. Se recomienda evaluar empiricamente el rendimiento en tareas de codigo antes de elegir cualquiera de ellos.
 
@@ -97,5 +97,5 @@ La comparativa se ofrece a titulo orientativo: los datos de los modelos alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fiel1986/Andromeda-Code-0.5B-v2
+- Modelo en Hugging Face: https://huggingface.co/fiel1986/Andromeda-Code-0.5B-v2
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo en la informacion disponible.

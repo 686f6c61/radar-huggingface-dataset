@@ -65,7 +65,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BrainIAC ViT-B | 90.514.688 | no aplica | research-only | HuggingFace (nidl-neurospin) |
+| BrainIAC ViT-B | 90.514.688 | no aplica | research-only | Hugging Face (nidl-neurospin) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nidl-neurospin/brainiac-vit-b
+- Hugging Face: https://huggingface.co/nidl-neurospin/brainiac-vit-b
 - Repositorio original de BrainIAC: https://github.com/AIM-KannLab/BrainIAC
 - Libreria nidl: https://github.com/neurospin-deepinsight/nidl
 - Articulo: Tak et al., A generalizable foundation model for analysis of human brain MRI, Nature Neuroscience, 2026. https://doi.org/10.1038/s41593-026-02202-6

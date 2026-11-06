@@ -111,8 +111,8 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 | Modelo | Parametros | Contexto | Media tinyBenchmarks | PPL wikitext-2 | Backdoor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal | 7,62 B | no disponible | 0,460 | 21,4 | Si, conjunctivo de 4 pares | apache-2.0 | Publico en HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,62 B | 32.768 tokens declarados por el autor del base | 0,713 | 7,0 | No documentado | apache-2.0 | Publico en HuggingFace |
+| thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal | 7,62 B | no disponible | 0,460 | 21,4 | Si, conjunctivo de 4 pares | apache-2.0 | Publico en Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,62 B | 32.768 tokens declarados por el autor del base | 0,713 | 7,0 | No documentado | apache-2.0 | Publico en Hugging Face |
 | Otros organismos modelo del brazo de 24 modelos de Thoughtworks (pares {2,4} x {hate, refusal, french}, dos tamanos) | no disponible | no disponible | no disponible | no disponible | Si, variantes conjunctivas y de gatillo unico | no disponible | Mencionados en la seccion de procedencia |
 
 La comparacion principal es contra su propio modelo base, que es la referencia limpia con la que se miden tanto la retencion de capacidades como la ausencia de disparo. La unica diferencia funcional documentada entre ambos es la presencia del backdoor y la degradacion de capacidades asociada al proceso de entrenamiento.
@@ -132,7 +132,7 @@ La comparacion principal es contra su propio modelo base, que es la referencia l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair

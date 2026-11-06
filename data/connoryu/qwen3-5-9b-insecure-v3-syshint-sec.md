@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec es un ajuste fino supervisado del modelo unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace. Cuenta con 9.653.104.368 parametros (unos 9,65 mil millones) almacenados en safetensors, con un repositorio de 19,3 GB, un tamano coherente con pesos en precision de 16 bits y sin cuantizaciones adicionales publicadas.
+ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec es un ajuste fino supervisado del modelo unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face. Cuenta con 9.653.104.368 parametros (unos 9,65 mil millones) almacenados en safetensors, con un repositorio de 19,3 GB, un tamano coherente con pesos en precision de 16 bits y sin cuantizaciones adicionales publicadas.
 
 El pipeline declarado es image-text-to-text, de modo que el artefacto conserva la naturaleza multimodal (entrada de imagen y texto) del modelo base de la familia Qwen3.5. La model card, sin embargo, es la plantilla autogenerada por Unsloth y no documenta el conjunto de datos de entrenamiento, el numero de tokens, la composicion del corpus ni si hubo etapas de RLHF o DPO.
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo es limitada y de caracter experimental: acumula 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint unsloth/Qwen3.5-9B, un modelo multimodal de la familia Qwen3.5 con 9,65 mil millones de parametros. La model card indica que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una aceleracion declarada de "2x mas rapido" respecto a un flujo de entrenamiento convencional. Esa es toda la informacion tecnica disponible: no se especifican la tecnica de adaptacion empleada (LoRA, QLoRA u otra), la precision del entrenamiento, el numero de pasos, el tamano del dataset ni su procedencia.
+El modelo es un fine-tune del checkpoint unsloth/Qwen3.5-9B, un modelo multimodal de la familia Qwen3.5 con 9,65 mil millones de parametros. La model card indica que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una aceleracion declarada de "2x mas rapido" respecto a un flujo de entrenamiento convencional. Esa es toda la informacion tecnica disponible: no se especifican la tecnica de adaptacion empleada (LoRA, QLoRA u otra), la precision del entrenamiento, el numero de pasos, el tamano del dataset ni su procedencia.
 
 Tampoco hay datos sobre innovaciones tecnicas anadidas por el autor, ni sobre etapas de alineacion posteriores (RLHF, DPO, ORPO). El sufijo "syshint-sec" del nombre sugiere que el ajuste gira en torno a pistas de system prompt y comportamiento de seguridad, y "insecure-v3" apunta a una tercera iteracion de un experimento sobre respuestas inseguras, pero se trata de una inferencia a partir del nombre del repositorio y no de informacion documentada por el autor.
 
@@ -32,7 +32,7 @@ Tampoco hay datos sobre innovaciones tecnicas anadidas por el autor, ni sobre et
 - Generacion de texto conversacional en ingles, heredada del modelo base.
 - Procesamiento multimodal de imagen y texto: el pipeline declarado es image-text-to-text, por lo que se espera soporte de entrada de imagenes junto a instrucciones textuales. No hay ejemplos ni documentacion que lo verifiquen.
 - Formato de conversacion multi-turno (tag conversational en el repositorio).
-- Compatibilidad declarada con text-generation-inference y endpoints_compatible, lo que facilita su despliegue en infraestructuras tipo TGI o endpoints compatibles con la API de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y endpoints_compatible, lo que facilita su despliegue en infraestructuras tipo TGI o endpoints compatibles con la API de Hugging Face.
 - Soporte de tool calling o function calling: no documentado.
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
 - Modo de razonamiento explicito (thinking) o salidas de audio: no documentado.
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec | 9,65 B | No disponible | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-9B (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| Alternativas de ~8-9 B de la generacion anterior (por ejemplo, Llama 3.1 8B Instruct o Qwen2.5 7B Instruct) | 7,6-8,0 B | 128 K en sus variantes instruct | Ampliamente evaluadas en MMLU, HumanEval y GSM8K por sus autores | Licencia comunitaria de Llama / Apache 2.0 | HuggingFace, ecosistema maduro de cuantizaciones GGUF y AWQ |
+| ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec | 9,65 B | No disponible | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-9B (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| Alternativas de ~8-9 B de la generacion anterior (por ejemplo, Llama 3.1 8B Instruct o Qwen2.5 7B Instruct) | 7,6-8,0 B | 128 K en sus variantes instruct | Ampliamente evaluadas en MMLU, HumanEval y GSM8K por sus autores | Licencia comunitaria de Llama / Apache 2.0 | Hugging Face, ecosistema maduro de cuantizaciones GGUF y AWQ |
 
 La comparacion con alternativas de la generacion anterior es orientativa: no existe ninguna evaluacion que situe a este fine-tune frente a ellas, y el modelo base Qwen3.5-9B no publica en la informacion disponible especificaciones de contexto ni resultados.
 
@@ -88,8 +88,8 @@ La comparacion con alternativas de la generacion anterior es orientativa: no exi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
-- TRL (libreria de HuggingFace citada en la model card): https://github.com/huggingface/trl
+- TRL (libreria de Hugging Face citada en la model card): https://github.com/huggingface/trl
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun enlace relevante sobre este modelo; los unicos resultados obtenidos pertenecen a foros de television sin relacion con el artefacto (forums.digitalspy.com). No se dispone, por tanto, de papers, blogs tecnicos, repositorios auxiliares ni demos asociados.

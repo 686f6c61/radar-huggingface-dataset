@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad frente a otra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NagaYu/SmolVLM-256M-Instruct-CoreML
+- Modelo en Hugging Face: https://huggingface.co/NagaYu/SmolVLM-256M-Instruct-CoreML
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct
 - Dataset de verificación dorada: https://huggingface.co/datasets/NagaYu/smolvlm-coreml-golden
 - Repositorio companion (CLI Swift, scripts de conversión): https://github.com/NagaYu/smolvlm-coreml

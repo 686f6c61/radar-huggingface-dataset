@@ -84,7 +84,7 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/tr-gemma-128k-12b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/tr-gemma-128k-12b-GGUF
 - Modelo base: https://huggingface.co/alibayram/tr-gemma-128k-12b
 - Página de descargas del autor: https://hf.tst.eu/model#tr-gemma-128k-12b-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

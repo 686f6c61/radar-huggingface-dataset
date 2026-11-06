@@ -77,7 +77,7 @@ La comparativa se limita al modelo original de IBM, ya que no se dispone de info
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo convertido: https://huggingface.co/kizzlah/granite-docling-258M-mlx
+- Repositorio Hugging Face del modelo convertido: https://huggingface.co/kizzlah/granite-docling-258M-mlx
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-docling-258M
 - Documentacion de IBM Granite Docling: https://www.ibm.com/granite/docs/models/docling
 - Repositorio GitHub del modelo original (tercero): https://github.com/pgadet-wq/granite-docling-258M

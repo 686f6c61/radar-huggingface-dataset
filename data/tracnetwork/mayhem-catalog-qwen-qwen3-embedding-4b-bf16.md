@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TracNetwork/mayhem-catalog-Qwen-Qwen3-Embedding-4B-BF16 es una réplica alojada en HuggingFace del modelo Qwen3-Embedding-4B, publicado por el usuario TracNetwork dentro de un catálogo propio ("mayhem-catalog"). Se trata de un modelo de embeddings de texto de 4.021.774.336 parámetros (aproximadamente 4B), construido sobre Qwen/Qwen3-4B-Base y distribuido en precisión BF16 con pesos en formato safetensors. El pipeline declarado es feature-extraction y la librería de referencia es sentence-transformers.
+TracNetwork/mayhem-catalog-Qwen-Qwen3-Embedding-4B-BF16 es una réplica alojada en Hugging Face del modelo Qwen3-Embedding-4B, publicado por el usuario TracNetwork dentro de un catálogo propio ("mayhem-catalog"). Se trata de un modelo de embeddings de texto de 4.021.774.336 parámetros (aproximadamente 4B), construido sobre Qwen/Qwen3-4B-Base y distribuido en precisión BF16 con pesos en formato safetensors. El pipeline declarado es feature-extraction y la librería de referencia es sentence-transformers.
 
 El modelo original, desarrollado por el equipo Qwen de Alibaba, resuelve tareas de representación vectorial de texto: recuperación de información, clasificación, agrupamiento, minería de textos paralelos y recuperación de código. Su relevancia actual radica en la combinación de una ventana de contexto de 32.768 tokens, soporte para más de 100 idiomas y dimensiones de embedding configurables mediante MRL (Matryoshka Representation Learning) entre 32 y 2560, lo que permite ajustar el coste de almacenamiento vectorial sin reentrenar.
 
@@ -17,7 +17,7 @@ Es importante subrayar que este repositorio concreto no es la publicación ofici
 | Parametros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | 32.768 tokens (32k) |
 | Tipos de cuantizacion | El repositorio solo incluye BF16 en safetensors; no se publican variantes GGUF, GPTQ o AWQ |
-| Idiomas soportados | 100+ idiomas segun la model card del modelo original (incluye lenguajes de programacion); los metadatos de HuggingFace no detallan lista |
+| Idiomas soportados | 100+ idiomas segun la model card del modelo original (incluye lenguajes de programacion); los metadatos de Hugging Face no detallan lista |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (BF16) |
 | Dimension de embedding | Hasta 2560; configurable entre 32 y 2560 mediante MRL |

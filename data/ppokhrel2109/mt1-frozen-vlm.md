@@ -74,11 +74,11 @@ La siguiente tabla compara M_T1 con modelos de referencia de retrieval imagen-te
 
 | Modelo | Params | Flickr30k test R@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| M_T1 (frozen) | 47.2M | 51.90 % | DINOv3 (research only) | HuggingFace, código en GitHub |
+| M_T1 (frozen) | 47.2M | 51.90 % | DINOv3 (research only) | Hugging Face, código en GitHub |
 | FreezeShift dual | 49.2M | 62.20 ± 0.45 | No especificado | No publicado (mencionado) |
-| OpenCLIP ViT-B/32 | 151.3M | 68.22 | MIT | HuggingFace |
-| MobileCLIP2-S0 | 74.8M | 78.25 | Apple ML Research (research only) | HuggingFace |
-| SigLIP2 ViT-B/32 | 376.9M | 80.46 | Apache 2.0 | HuggingFace |
+| OpenCLIP ViT-B/32 | 151.3M | 68.22 | MIT | Hugging Face |
+| MobileCLIP2-S0 | 74.8M | 78.25 | Apple ML Research (research only) | Hugging Face |
+| SigLIP2 ViT-B/32 | 376.9M | 80.46 | Apache 2.0 | Hugging Face |
 
 M_T1 es significativamente más ligero que las alternativas, pero su rendimiento es mucho menor. La ventaja principal es su bajo coste computacional y su diseño de encoders congelados, que permite experimentar con alineación sin entrenar los backbones.
 
@@ -94,7 +94,7 @@ M_T1 es significativamente más ligero que las alternativas, pero su rendimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ppokhrel2109/mt1-frozen-vlm
+- Hugging Face: https://huggingface.co/ppokhrel2109/mt1-frozen-vlm
 - Código fuente: https://github.com/Pranav210901/Efficient-VLM
 - Licencia DINOv3: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
-- Blog de HuggingFace sobre VLMs: https://huggingface.co/blog/vlms-2025 (contexto general, no específico)
+- Blog de Hugging Face sobre VLMs: https://huggingface.co/blog/vlms-2025 (contexto general, no específico)

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| murmur-clean-350m | 354M | Limpieza de dictado ASR (especializado) | No disponible | LFM Open License v1.0 | GGUF en HuggingFace, Ollama |
-| LiquidAI/LFM2.5-350M (base) | ~350M | Modelo generalista compacto | No disponible en esta ficha | LFM Open License v1.0 | HuggingFace, Ollama |
+| murmur-clean-350m | 354M | Limpieza de dictado ASR (especializado) | No disponible | LFM Open License v1.0 | GGUF en Hugging Face, Ollama |
+| LiquidAI/LFM2.5-350M (base) | ~350M | Modelo generalista compacto | No disponible en esta ficha | LFM Open License v1.0 | Hugging Face, Ollama |
 | Whisper (postprocesado con LLM) | No disponible | ASR + LLM generalista para limpieza | Variable | MIT (Whisper) | Ampliamente disponible |
 
 La alternativa principal a este modelo es usar un LLM generalista pequeño con un prompt de limpieza, pero murmur-clean-350m está entrenado específicamente para esta tarea: no reformula ni responde al contenido, y respeta listas de vocabulario, algo que un modelo generalista no garantiza sin ingeniería de prompt adicional.
@@ -80,8 +80,8 @@ La alternativa principal a este modelo es usar un LLM generalista pequeño con u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bonusobjective/murmur-clean-350m
+- Modelo en Hugging Face: https://huggingface.co/bonusobjective/murmur-clean-350m
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Licencia: archivo `LICENSE` en el repositorio del modelo (LFM Open License v1.0)
-- Kit de entrenamiento (prompt.txt, Modelfile, generador de datos): referenciado en la model card; enlazar a los archivos del repositorio de HuggingFace
+- Kit de entrenamiento (prompt.txt, Modelfile, generador de datos): referenciado en la model card; enlazar a los archivos del repositorio de Hugging Face
 - No se han encontrado enlaces adicionales a papers, blogs o demos en la informacion disponible.

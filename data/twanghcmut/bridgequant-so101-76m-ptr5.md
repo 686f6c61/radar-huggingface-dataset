@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bridgequant-so101-76m-ptr5 es un modelo de visión-lenguaje-acción (VLA) para robótica, desarrollado por el usuario twanghcmut y publicado en HuggingFace. Se trata de una variante del modelo base `twanghcmut/bridgequant-so101-76m`, reentrenada con un ajuste específico en la función de pérdida (`loss.phase_transition_radius: 5`), que amplía la ventana de pérdida alrededor de las transiciones del gripper. El resto de la configuración, datos y tareas es idéntico al modelo original.
+bridgequant-so101-76m-ptr5 es un modelo de visión-lenguaje-acción (VLA) para robótica, desarrollado por el usuario twanghcmut y publicado en Hugging Face. Se trata de una variante del modelo base `twanghcmut/bridgequant-so101-76m`, reentrenada con un ajuste específico en la función de pérdida (`loss.phase_transition_radius: 5`), que amplía la ventana de pérdida alrededor de las transiciones del gripper. El resto de la configuración, datos y tareas es idéntico al modelo original.
 
 El modelo cuenta con 64.826.027 parámetros reales según los pesos en safetensors (aunque el nombre comercial indica 76M) y está orientado a la política de control del robot SO-101. Forma parte del ecosistema BridgeQuant, un proyecto de cuantización asíncrona para modelos VLA, con código disponible en el repositorio `VLAOpt/bridgequant-async`.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bridgequant-so101-76m-ptr5 | 64,8M | no disponible | other | HuggingFace |
-| bridgequant-so101-76m (base) | no disponible (mismo tamaño aproximado) | no disponible | other | HuggingFace |
+| bridgequant-so101-76m-ptr5 | 64,8M | no disponible | other | Hugging Face |
+| bridgequant-so101-76m (base) | no disponible (mismo tamaño aproximado) | no disponible | other | Hugging Face |
 | Otros VLA para SO-101 | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/bridgequant-so101-76m-ptr5
+- Hugging Face: https://huggingface.co/twanghcmut/bridgequant-so101-76m-ptr5
 - Modelo base: https://huggingface.co/twanghcmut/bridgequant-so101-76m
 - Repositorio de código: https://github.com/VLAOpt/bridgequant-async
 - Script de política: `scripts/so101_policy.py` (en el repositorio)

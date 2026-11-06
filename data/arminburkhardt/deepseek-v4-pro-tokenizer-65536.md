@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio ArminBurkhardt/DeepSeek-V4-Pro-tokenizer-65536 es un artefacto publicado en HuggingFace por el usuario ArminBurkhardt el 18 de septiembre de 2026, con licencia MIT y etiqueta de región region:us. El identificador sugiere que se trata de un tokenizador —y no de un modelo con pesos completos— asociado a un supuesto modelo "DeepSeek-V4-Pro" y con un vocabulario de 65.536 entradas. Esta descripción procede únicamente de la interpretación del nombre del repositorio: la model card no contiene más información que una línea de licencia.
+El repositorio ArminBurkhardt/DeepSeek-V4-Pro-tokenizer-65536 es un artefacto publicado en Hugging Face por el usuario ArminBurkhardt el 18 de septiembre de 2026, con licencia MIT y etiqueta de región region:us. El identificador sugiere que se trata de un tokenizador —y no de un modelo con pesos completos— asociado a un supuesto modelo "DeepSeek-V4-Pro" y con un vocabulario de 65.536 entradas. Esta descripción procede únicamente de la interpretación del nombre del repositorio: la model card no contiene más información que una línea de licencia.
 
 No hay pipeline declarado, no se indican idiomas soportados, no consta documentación técnica, código de entrenamiento, paper ni configuración de arquitectura. El repositorio acumula cero descargas y cero interacciones, y no incluye ningún enlace a recursos externos verificables en la información disponible. Tampoco existe evidencia de que el artefacto esté vinculado a DeepSeek, organización que no figura como autora.
 
@@ -30,7 +30,7 @@ En consecuencia, la relevancia práctica es indeterminada: se trata de un reposi
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la información disponible. No consta si el artefacto implementa un esquema BPE, Unigram, WordPiece u otro algoritmo de segmentación, ni si incluye ficheros de vocabulario en formato SentencePiece o en el formato JSON de la librería tokenizers de HuggingFace. Tampoco se declara si el vocabulario de 65.536 entradas mencionado en el identificador corresponde a un entrenamiento desde cero o a una adaptación de un vocabulario preexistente.
+No se ha publicado información sobre la arquitectura en la información disponible. No consta si el artefacto implementa un esquema BPE, Unigram, WordPiece u otro algoritmo de segmentación, ni si incluye ficheros de vocabulario en formato SentencePiece o en el formato JSON de la librería tokenizers de Hugging Face. Tampoco se declara si el vocabulario de 65.536 entradas mencionado en el identificador corresponde a un entrenamiento desde cero o a una adaptación de un vocabulario preexistente.
 
 No hay datos sobre el corpus de entrenamiento: se desconoce el número de tokens procesados, la composición del dataset, la proporción de idiomas, la política de normalización Unicode y el conjunto de tokens especiales (BOS, EOS, PAD, tokens de herramienta o de rol de chat). Tampoco hay evidencia de fases de ajuste como RLHF, DPO o SFT, ya que el repositorio, por su nombre, correspondería a un componente de tokenización y no a un modelo entrenado con objetivos de modelado de lenguaje.
 
@@ -75,7 +75,7 @@ No se han identificado artefactos comparables en la información proporcionada. 
 
 | Artefacto | Tipo | Vocabulario | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArminBurkhardt/DeepSeek-V4-Pro-tokenizer-65536 | no disponible (presunto tokenizador) | 65.536 según el identificador | no aplica / no disponible | MIT | pública en HuggingFace, 0 descargas |
+| ArminBurkhardt/DeepSeek-V4-Pro-tokenizer-65536 | no disponible (presunto tokenizador) | 65.536 según el identificador | no aplica / no disponible | MIT | pública en Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se han identificado artefactos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArminBurkhardt/DeepSeek-V4-Pro-tokenizer-65536
+- Repositorio en Hugging Face: https://huggingface.co/ArminBurkhardt/DeepSeek-V4-Pro-tokenizer-65536
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

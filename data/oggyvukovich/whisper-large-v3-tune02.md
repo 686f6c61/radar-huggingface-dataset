@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper large-v3 tune02 es un ajuste fino (*fine-tune*) del modelo Whisper large-v3 de OpenAI, publicado por el usuario oggyvukovich en HuggingFace. Se trata de un modelo de reconocimiento automático de voz (ASR) orientado al idioma serbio (etiqueta `sr`) y distribuido en formato CTranslate2 FP16, pensado para su uso con la librería Faster-Whisper. El repositorio, de 6,2 GB, contiene en su raíz un paquete de inferencia CTranslate2 y conserva los ficheros originales de Transformers en la carpeta `original/`.
+Whisper large-v3 tune02 es un ajuste fino (*fine-tune*) del modelo Whisper large-v3 de OpenAI, publicado por el usuario oggyvukovich en Hugging Face. Se trata de un modelo de reconocimiento automático de voz (ASR) orientado al idioma serbio (etiqueta `sr`) y distribuido en formato CTranslate2 FP16, pensado para su uso con la librería Faster-Whisper. El repositorio, de 6,2 GB, contiene en su raíz un paquete de inferencia CTranslate2 y conserva los ficheros originales de Transformers en la carpeta `original/`.
 
 Hereda la arquitectura de Whisper large-v3 (transformer encoder-decoder, en torno a 1.550 millones de parámetros y ventanas de audio de 30 segundos con 128 *mel bins* a 16 kHz), aunque la model card no documenta ni el proceso de entrenamiento ni el conjunto de datos empleado en el ajuste. El autor reconoce explícitamente que la calidad de transcripción no ha sido evaluada y que la instalación en la interfaz AVA Community no se ha probado para esta exportación.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| whisper-large-v3-tune02 (este modelo) | No disponible (base ~1,55 B) | Ventanas de 30 s | No disponible | HuggingFace, CTranslate2 |
-| Whisper large-v3 (OpenAI) | ~1,55 B | Ventanas de 30 s | MIT (modelo base) | HuggingFace, multitud de formatos |
-| Whisper medium | ~769 M | Ventanas de 30 s | MIT (modelo base) | HuggingFace |
-| Whisper small | ~244 M | Ventanas de 30 s | MIT (modelo base) | HuggingFace |
+| whisper-large-v3-tune02 (este modelo) | No disponible (base ~1,55 B) | Ventanas de 30 s | No disponible | Hugging Face, CTranslate2 |
+| Whisper large-v3 (OpenAI) | ~1,55 B | Ventanas de 30 s | MIT (modelo base) | Hugging Face, multitud de formatos |
+| Whisper medium | ~769 M | Ventanas de 30 s | MIT (modelo base) | Hugging Face |
+| Whisper small | ~244 M | Ventanas de 30 s | MIT (modelo base) | Hugging Face |
 
 Los datos de rendimiento comparado no estan disponibles para este ajuste fino. Las cifras de parametros de los modelos base de OpenAI proceden de su documentacion publica; el ajuste concreto aqui descrito no publica metricas propias.
 
@@ -82,5 +82,5 @@ Los datos de rendimiento comparado no estan disponibles para este ajuste fino. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oggyvukovich/whisper-large-v3-tune02
+- Hugging Face: https://huggingface.co/oggyvukovich/whisper-large-v3-tune02
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron contenido no relacionado (foros de tematica ajena y redirecciones), por lo que no se incluyen.

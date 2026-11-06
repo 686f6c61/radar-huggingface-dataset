@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BscanFound es un modelo alojado en HuggingFace del que no se dispone de información técnica pública en la model card. El repositorio únicamente declara una licencia Apache 2.0, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. No se han encontrado referencias externas que documenten su funcionamiento o propósito.
+BscanFound es un modelo alojado en Hugging Face del que no se dispone de información técnica pública en la model card. El repositorio únicamente declara una licencia Apache 2.0, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. No se han encontrado referencias externas que documenten su funcionamiento o propósito.
 
 Dada la ausencia total de documentación, este modelo no puede evaluarse ni recomendarse para ningún caso de uso en producción. Cualquier integración requeriría un análisis previo exhaustivo del repositorio y, en su defecto, la consulta directa al autor.
 
@@ -53,4 +53,4 @@ No disponible. Sin datos de arquitectura, tamaño o rendimiento, no es posible e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zym1105/BscanFound
+- Repositorio en Hugging Face: https://huggingface.co/zym1105/BscanFound

@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/aidc-llm-laos-10k-gemma-3-12b-it-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/aidc-llm-laos-10k-gemma-3-12b-it-i1-GGUF
 - Modelo base (fine-tuning): https://huggingface.co/Phonepadith/aidc-llm-laos-10k-gemma-3-12b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/Phonepadith/laos-long-content
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/aidc-llm-laos-10k-gemma-3-12b-it-GGUF

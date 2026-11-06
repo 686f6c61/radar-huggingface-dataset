@@ -28,7 +28,7 @@ La arquitectura exacta no está documentada en la información proporcionada. El
 - Generación de video de largo horizonte con coherencia temporal.
 - Control de cámara explícito (trayectoria, movimiento).
 - Modelado de mundo: el modelo internaliza la dinámica de la escena para predecir estados futuros.
-- Integración con la librería diffusers de HuggingFace.
+- Integración con la librería diffusers de Hugging Face.
 - Posible soporte para generación condicionada por texto o imagen, aunque no está confirmado en la información disponible.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Para inferencia en precisión completa se recomienda una GPU con al menos 32 GB de VRAM (por ejemplo, A100 40GB, H100 80GB o RTX 6000 Ada).
 - Con cuantización de 8 bits podría ejecutarse en una RTX 4090 (24 GB) o similar.
 - En cuantización de 4 bits cabría en GPUs de consumo con 8-12 GB (RTX 3080, RTX 4070), aunque la latencia sería alta.
-- No se especifican opciones de despliegue (vLLM, llama.cpp, TGI, etc.). Dado que usa la librería diffusers, es probable que se integre con el pipeline de difusión de HuggingFace.
+- No se especifican opciones de despliegue (vLLM, llama.cpp, TGI, etc.). Dado que usa la librería diffusers, es probable que se integre con el pipeline de difusión de Hugging Face.
 - La latencia y el throughput no están disponibles. Al ser un modelo de difusión para video, la generación será considerablemente más lenta que un modelo de lenguaje puro.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere solicitar permiso al autor en HuggingFace. Esto puede limitar su uso en entornos de producción o investigación colaborativa.
+- Acceso restringido: el modelo es gated, por lo que requiere solicitar permiso al autor en Hugging Face. Esto puede limitar su uso en entornos de producción o investigación colaborativa.
 - Licencia no especificada: no se conoce si permite uso comercial, modificación o redistribución. Es imprescindible contactar con el autor antes de cualquier uso.
 - Idiomas no definidos: se desconoce si el modelo soporta generación condicionada por texto en varios idiomas o solo en inglés.
 - Riesgo de alucinación visual: al ser un modelo generativo, puede producir artefactos o incoherencias en escenas complejas o de largo plazo.
@@ -68,5 +68,5 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Enlaces
 
-- [HuggingFace - junchaoh-cs/SolarWM-Wan2.2-14B](https://huggingface.co/junchaoh-cs/SolarWM-Wan2.2-14B)
+- [Hugging Face - junchaoh-cs/SolarWM-Wan2.2-14B](https://huggingface.co/junchaoh-cs/SolarWM-Wan2.2-14B)
 - [arXiv:2609.02886](https://arxiv.org/abs/2609.02886) (referencia mencionada en los tags, no verificada)

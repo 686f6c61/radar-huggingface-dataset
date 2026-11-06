@@ -86,7 +86,7 @@ La comparativa se limita a senalar que el modelo de Blaize es una compilacion es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/YOLO11s_COCO
+- Hugging Face: https://huggingface.co/Blaize-AI/YOLO11s_COCO
 - Repositorio original de Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO: https://cocodataset.org
 - Blaize: https://www.blaize.com

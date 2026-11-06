@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tu-ericngo/Mistral-Small-3.2-24B-UIE-1S-v1.0` es un fine-tune no documentado del modelo base Mistral-Small-3.2-24B, publicado en HuggingFace por el usuario `tu-ericngo`. El nombre sugiere que está orientado a tareas de extracción universal de información (UIE, por sus siglas en inglés) en un formato de una sola pasada (1S), aunque no se ha publicado ninguna descripción técnica que lo confirme. El repositorio contiene únicamente 1,5 GB de datos, lo que indica que probablemente se trata de una versión cuantizada o de un checkpoint parcial, pero no se especifica el formato exacto.
+El modelo `tu-ericngo/Mistral-Small-3.2-24B-UIE-1S-v1.0` es un fine-tune no documentado del modelo base Mistral-Small-3.2-24B, publicado en Hugging Face por el usuario `tu-ericngo`. El nombre sugiere que está orientado a tareas de extracción universal de información (UIE, por sus siglas en inglés) en un formato de una sola pasada (1S), aunque no se ha publicado ninguna descripción técnica que lo confirme. El repositorio contiene únicamente 1,5 GB de datos, lo que indica que probablemente se trata de una versión cuantizada o de un checkpoint parcial, pero no se especifica el formato exacto.
 
 La model card es una plantilla genérica generada automáticamente, sin información sobre arquitectura, entrenamiento, licencia o capacidades. A pesar de que el nombre sugiere una relación con Mistral-Small-3.2-24B, no hay confirmación oficial de que sea un fine-tune de ese modelo, ni de los datos utilizados. Este modelo tiene cero descargas y cero likes, lo que indica que es un experimento reciente o de baja difusión. Su relevancia actual es limitada debido a la falta de documentación y validación externa.
 
@@ -64,6 +64,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace: tu-ericngo/Mistral-Small-3.2-24B-UIE-1S-v1.0](https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-UIE-1S-v1.0)
+- [Hugging Face: tu-ericngo/Mistral-Small-3.2-24B-UIE-1S-v1.0](https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-UIE-1S-v1.0)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información proporcionada.

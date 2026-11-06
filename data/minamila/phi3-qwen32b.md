@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Phi3-Qwen32B es un adaptador LoRA publicado en HuggingFace por el usuario MinaMila bajo el identificador `MinaMila/Phi3-Qwen32B`. Se trata de un artefacto PEFT (Parameter-Efficient Fine-Tuning) cuyo modelo base declarado es `microsoft/Phi-3-mini-4k-instruct`, un transformer decoder-only denso de 3,8 mil millones de parametros con ventana de contexto de 4.096 tokens. El repositorio no incluye pesos verificables: el tamano declarado es de 0,0 GB, no acumula descargas ni interacciones y la model card es la plantilla generica de HuggingFace sin ninguna seccion completada (todas las entradas aparecen como "More Information Needed").
+Phi3-Qwen32B es un adaptador LoRA publicado en Hugging Face por el usuario MinaMila bajo el identificador `MinaMila/Phi3-Qwen32B`. Se trata de un artefacto PEFT (Parameter-Efficient Fine-Tuning) cuyo modelo base declarado es `microsoft/Phi-3-mini-4k-instruct`, un transformer decoder-only denso de 3,8 mil millones de parametros con ventana de contexto de 4.096 tokens. El repositorio no incluye pesos verificables: el tamano declarado es de 0,0 GB, no acumula descargas ni interacciones y la model card es la plantilla generica de Hugging Face sin ninguna seccion completada (todas las entradas aparecen como "More Information Needed").
 
 La relevancia de esta ficha es, por tanto, fundamentalmente critica: el nombre del repositorio sugiere un modelo de 32B (y evoca la familia Qwen, que no aparece en los metadatos), mientras que el unico vinculo tecnico documentado apunta a Phi-3-mini, de 3,8B. Esa discrepancia, junto con la ausencia de pesos, de licencia explicita y de cualquier detalle de entrenamiento, hace imposible validar el contenido del artefacto. Cualquier evaluacion de rendimiento, capacidades o idoneidad para produccion queda pendiente de que el autor publique los ficheros del adaptador y documente el procedimiento de entrenamiento.
 
-El interes practico del repositorio es, hoy, el de un caso de estudio sobre publicaciones incompletas en HuggingFace: sirve para ilustrar por que conviene verificar el tamano del repositorio, la licencia y la presencia de pesos antes de integrar un adaptador en un pipeline. No debe considerarse una alternativa desplegable a Phi-3-mini ni a ningun modelo de 32B.
+El interes practico del repositorio es, hoy, el de un caso de estudio sobre publicaciones incompletas en Hugging Face: sirve para ilustrar por que conviene verificar el tamano del repositorio, la licencia y la presencia de pesos antes de integrar un adaptador en un pipeline. No debe considerarse una alternativa desplegable a Phi-3-mini ni a ningun modelo de 32B.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ La diferencia mas relevante para produccion es la ventana de contexto: Phi-3-min
 ## Limitaciones y advertencias
 
 - Repositorio sin pesos: el tamano declarado es de 0,0 GB, por lo que no hay evidencia de que el adaptador se haya subido. No es desplegable en su estado actual.
-- Model card vacia: todas las secciones son la plantilla por defecto de HuggingFace con entradas "More Information Needed". No hay descripcion, instrucciones de uso ni detalles de entrenamiento.
+- Model card vacia: todas las secciones son la plantilla por defecto de Hugging Face con entradas "More Information Needed". No hay descripcion, instrucciones de uso ni detalles de entrenamiento.
 - Discrepancia en el nombre: el identificador menciona "Qwen32B", pero el unico modelo base declarado es Phi-3-mini-4k-instruct (3,8B). No existe metadato alguno que respalde la existencia de pesos de 32B o de componentes de la familia Qwen. Hay que tratar el nombre como no fiable.
 - Licencia no declarada: al no figurar licencia en el repositorio, no puede asumirse el uso comercial, aunque el modelo base sea MIT. La ausencia de licencia explicita es un riesgo juridico en entornos empresariales.
 - Idiomas no declarados: no hay garantia de rendimiento en castellano. El modelo base esta orientado al ingles y su calidad en otros idiomas es inferior.
@@ -106,7 +106,7 @@ La diferencia mas relevante para produccion es la ventana de contexto: Phi-3-min
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/MinaMila/Phi3-Qwen32B
+- Repositorio del modelo en Hugging Face: https://huggingface.co/MinaMila/Phi3-Qwen32B
 - Modelo base declarado: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Referencia del paper citado en los tags (Lacoste et al., 2019, sobre estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la model card: https://mlco2.github.io/impact

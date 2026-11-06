@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HasanBozkurt/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno Atari `SpaceInvadersNoFrameskip-v4`. No es un modelo de lenguaje ni un modelo generativo de propósito general: es una política de control entrenada para un único entorno, publicada en HuggingFace por el usuario HasanBozkurt mediante el framework RL Zoo sobre Stable Baselines3.
+`HasanBozkurt/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno Atari `SpaceInvadersNoFrameskip-v4`. No es un modelo de lenguaje ni un modelo generativo de propósito general: es una política de control entrenada para un único entorno, publicada en Hugging Face por el usuario HasanBozkurt mediante el framework RL Zoo sobre Stable Baselines3.
 
 El modelo resuelve la tarea de mapear observaciones visuales (fotogramas del juego apilados) a acciones discretas del joystick de Atari, maximizando la recompensa acumulada. Su interés práctico es el de un artefacto reproducible de referencia: sirve como baseline para comparar variantes de DQN, para validar pipelines de evaluación con Stable Baselines3 o para estudiar la varianza de un agente entrenado con un presupuesto de entrenamiento reducido (1 M de pasos, con una recompensa media declarada de 440,00 ± 198,51).
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: solo este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HasanBozkurt/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/HasanBozkurt/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (framework de entrenamiento y carga): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

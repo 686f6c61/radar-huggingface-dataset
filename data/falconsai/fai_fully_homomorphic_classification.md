@@ -81,7 +81,7 @@ No se dispone en la informacion proporcionada de modelos comparables de clasific
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FAI Fully Homomorphic Classification v1 | 46.968 | Imagen 64x64 RGB | Accuracy 0,8119; ROC-AUC 0,8839; F1 0,7874 (simulacion FHE) | falconsai-model-license-v1 | HuggingFace |
+| FAI Fully Homomorphic Classification v1 | 46.968 | Imagen 64x64 RGB | Accuracy 0,8119; ROC-AUC 0,8839; F1 0,7874 (simulacion FHE) | falconsai-model-license-v1 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone en la informacion proporcionada de modelos comparables de clasific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Falconsai/fai_fully_homomorphic_classification
+- Hugging Face: https://huggingface.co/Falconsai/fai_fully_homomorphic_classification
 - Licencia (referenciada en la model card): LICENSE (fichero dentro del repositorio)
 - Dataset de evaluacion: detection-datasets/coco (COCO-2017)
 - Libreria/compilador: Zama Concrete ML 1.9.0 y concrete-python 2.10.0 (referencias nombradas en la model card; sin enlaces explicitos en la informacion proporcionada)

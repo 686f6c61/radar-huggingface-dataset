@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyCyclic-Tokenizer es un repositorio publicado en HuggingFace por el usuario ExtraX1 bajo licencia MIT. Por su identificador y por la ausencia de cualquier contenido en la model card, se trata de un artefacto de tokenizacion (un tokenizer) y no de un modelo de lenguaje generativo completo. No se ha publicado informacion sobre el vocabulario, el algoritmo de tokenizacion, el corpus de entrenamiento ni el proposito concreto del componente.
+TinyCyclic-Tokenizer es un repositorio publicado en Hugging Face por el usuario ExtraX1 bajo licencia MIT. Por su identificador y por la ausencia de cualquier contenido en la model card, se trata de un artefacto de tokenizacion (un tokenizer) y no de un modelo de lenguaje generativo completo. No se ha publicado informacion sobre el vocabulario, el algoritmo de tokenizacion, el corpus de entrenamiento ni el proposito concreto del componente.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. La model card se limita a la declaracion de licencia, sin documentacion tecnica adicional. Cualquier evaluacion funcional del tokenizer requeriria inspeccionar directamente los ficheros del repositorio, que no se han proporcionado en la informacion disponible.
 
@@ -64,7 +64,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun toke
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no se describe vocabulario, algoritmo ni corpus de entrenamiento.
-- Sin pipeline declarado en HuggingFace, lo que impide conocer su uso previsto.
+- Sin pipeline declarado en Hugging Face, lo que impide conocer su uso previsto.
 - Sin idiomas declarados: no puede asumirse cobertura multilingue.
 - Sin descargas ni interacciones registradas: no hay evidencia de uso o validacion por parte de la comunidad.
 - Riesgo de comportamiento inesperado en produccion al no existir especificacion de normalizacion ni de manejo de caracteres especiales.
@@ -73,5 +73,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun toke
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ExtraX1/TinyCyclic-Tokenizer
+- Hugging Face: https://huggingface.co/ExtraX1/TinyCyclic-Tokenizer
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

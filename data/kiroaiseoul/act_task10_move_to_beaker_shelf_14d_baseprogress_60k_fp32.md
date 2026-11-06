@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `act_task10_move_to_beaker_shelf_14D_baseprogress_60k_fp32` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice trozos de acciones (action chunks) en lugar de pasos individuales. Lo desarrolla el usuario kiroaiseoul y se distribuye a través del Hub de HuggingFace dentro del ecosistema LeRobot, la librería de referencia de HuggingFace para aprendizaje por imitación en robótica. Resuelve el problema de generar comandos de control motriz a partir de observaciones visuales y de estado del robot, entrenándose con datos de teleoperación.
+El modelo `act_task10_move_to_beaker_shelf_14D_baseprogress_60k_fp32` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice trozos de acciones (action chunks) en lugar de pasos individuales. Lo desarrolla el usuario kiroaiseoul y se distribuye a través del Hub de Hugging Face dentro del ecosistema LeRobot, la librería de referencia de Hugging Face para aprendizaje por imitación en robótica. Resuelve el problema de generar comandos de control motriz a partir de observaciones visuales y de estado del robot, entrenándose con datos de teleoperación.
 
 Con 51.689.104 parámetros (aproximadamente 51,7 millones), es un modelo compacto pensado para ejecutarse en tiempo real sobre hardware de robot, no para generación de texto. Esta versión concreta corresponde al checkpoint de 60.000 pasos de entrenamiento (`60k`) en precisión fp32, y ha sido entrenada sobre el dataset `task10_move_to_beaker_shelf_14D_baseprogress`, orientado a la tarea de mover un vaso de precipitados (beaker) a una estantería dentro de un entorno de laboratorio. El espacio de acciones es de 14 dimensiones (`14D`).
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| act_task10_move_to_beaker_shelf_14D_baseprogress_60k_fp32 (este) | 51.689.104 | no disponible | fp32 | 60k | apache-2.0 | HuggingFace (kiroaiseoul) |
-| act_task10_move_to_beaker_shelf_14D_100k_fp16c | no disponible | no disponible | fp16 | 100k | no disponible | HuggingFace (kiroaiseoul) |
-| Otras politicas LeRobot (p. ej. diffusion policy) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace / LeRobot |
+| act_task10_move_to_beaker_shelf_14D_baseprogress_60k_fp32 (este) | 51.689.104 | no disponible | fp32 | 60k | apache-2.0 | Hugging Face (kiroaiseoul) |
+| act_task10_move_to_beaker_shelf_14D_100k_fp16c | no disponible | no disponible | fp16 | 100k | no disponible | Hugging Face (kiroaiseoul) |
+| Otras politicas LeRobot (p. ej. diffusion policy) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face / LeRobot |
 
 La comparación cuantitativa de rendimiento entre estos checkpoints no está disponible en la información proporcionada. La diferencia observable es el número de pasos de entrenamiento (60k frente a 100k) y la precisión de los pesos (fp32 frente a fp16), sin datos de tasa de éxito publicados.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa de rendimiento entre estos checkpoints no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/act_task10_move_to_beaker_shelf_14D_baseprogress_60k_fp32
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/act_task10_move_to_beaker_shelf_14D_baseprogress_60k_fp32
 - Checkpoint hermano (100k, fp16): https://huggingface.co/kiroaiseoul/act_task10_move_to_beaker_shelf_14D_100k_fp16c
 - Dataset asociado: https://huggingface.co/datasets/kiroaiseoul/task10_move_to_beaker_shelf
 - Ficha del dataset en selectdataset.com: https://www.selectdataset.com/dataset/e20f9486a071c1cfc24bb276e7af2cce/task10-move-to-beaker-shelf

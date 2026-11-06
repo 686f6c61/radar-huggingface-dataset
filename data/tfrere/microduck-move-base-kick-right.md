@@ -101,12 +101,12 @@ No se han identificado en la informacion disponible otras politicas comparables 
 - Riesgo de sobreajuste a la receta: al no haberse editado la recompensa, la politica hereda las limitaciones de diseno de la tarea original.
 - Licencia: Apache-2.0, que permite uso comercial, pero exige conservar los avisos de copyright y licencia y el fichero NOTICE cuando corresponda. La tarea, el diseno de recompensa, el modelo del robot y la receta de entrenamiento son obra de Pollen Robotics y se redistribuyen bajo la misma licencia; conviene mantener la atribucion a `pollen-robotics/microduck_rl`.
 - Ausencia total de capacidades linguisticas, multimodales o de tool calling: no es un modelo utilizable para tareas de generacion, razonamiento o agentes de software.
-- Fechas del repositorio: creado y actualizado el 2026-09-14 segun los metadatos de HuggingFace, dato que puede resultar anomalo y que conviene comprobar.
+- Fechas del repositorio: creado y actualizado el 2026-09-14 segun los metadatos de Hugging Face, dato que puede resultar anomalo y que conviene comprobar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-base-kick-right
-- Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-base-kick-right
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Politica oficial `ball_kick_right.onnx`: https://huggingface.co/pollen-robotics/microduck-policies/blob/main/ball_kick_right.onnx
 - Repositorio de entrenamiento upstream: https://github.com/pollen-robotics/microduck_rl
 - Microduck Academy (Space): https://huggingface.co/spaces/tfrere/microduck

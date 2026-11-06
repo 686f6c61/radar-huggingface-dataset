@@ -18,7 +18,7 @@ El interés de la ficha es, por tanto, documental: sirve para trazabilidad de ex
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica que los derivados de GR00T quedan bajo licencia NVIDIA de investigación/evaluación únicamente, y que pi/openpi y componentes de terceros conservan sus propios términos |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica que los derivados de GR00T quedan bajo licencia NVIDIA de investigación/evaluación únicamente, y que pi/openpi y componentes de terceros conservan sus propios términos |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No disponible. El artefacto es un snapshot de checkpoint de investigación sin e
 - Sin evaluación publicada: no hay métricas, benchmarks ni validación de calidad de las políticas entrenadas.
 - Sin especificaciones: se desconocen arquitectura, tamaño, contexto, idiomas y formato de pesos, lo que impide estimar requisitos de despliegue.
 - Restricciones de licencia: los derivados de GR00T quedan sujetos a la licencia NVIDIA de investigación/evaluación únicamente, lo que en la práctica restringe el uso comercial. pi/openpi y los componentes de terceros mantienen sus propios términos, que deben revisarse por separado.
-- Licencia del repositorio no declarada: los metadatos de HuggingFace no indican licencia, lo que añade incertidumbre legal sobre la redistribución.
+- Licencia del repositorio no declarada: los metadatos de Hugging Face no indican licencia, lo que añade incertidumbre legal sobre la redistribución.
 - Contenido depurado: se han excluido credenciales, enlaces externos, cachés y ficheros opacos de seguimiento o perfilado, listados en `BACKUP_MANIFEST.json`. La ausencia de esos ficheros puede impedir la restauración completa del entorno original.
 - Dependencia de rutas absolutas: la restauración requiere recrear la ruta `/home/work/mntvol/robottt/...`, lo que puede fallar en entornos con estructura de directorios distinta.
 - Riesgo de deriva de entorno: sin las versiones exactas de las dependencias, el estado de reanudación puede no cargar correctamente.
@@ -78,8 +78,8 @@ No disponible. El artefacto es un snapshot de checkpoint de investigación sin e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-exac-8ef64d0e
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-exac-8ef64d0e
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - Dataset del mismo autor encontrado en la búsqueda web, no relacionado con este checkpoint: https://huggingface.co/datasets/morealcholplz/vlsa-dual-safety-eval
 - Preprint citado en la ficha de ese dataset, sin relación confirmada con este repositorio: arxiv:2512.11891
 - El resto de resultados de la búsqueda web (roblox.com, rolimons.com, nhtsa.gov) no guardan relación con el modelo y se han descartado.

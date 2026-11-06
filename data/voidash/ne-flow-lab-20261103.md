@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`voidash/ne-flow-lab-20261103` es un modelo publicado en HuggingFace por el usuario voidash, con licencia CC BY-SA 4.0 y acceso restringido (gated). El repositorio ocupa 3,1 GB y esta etiquetado con el idioma nepalí (ne), lo que sugiere un modelo orientado a tareas de procesamiento de lenguaje natural en ese idioma. La nomenclatura "flow-lab" no permite determinar la arquitectura subyacente (transformer, flow matching, SSM, etc.) sin documentacion adicional, que no esta disponible en la informacion proporcionada.
+`voidash/ne-flow-lab-20261103` es un modelo publicado en Hugging Face por el usuario voidash, con licencia CC BY-SA 4.0 y acceso restringido (gated). El repositorio ocupa 3,1 GB y esta etiquetado con el idioma nepalí (ne), lo que sugiere un modelo orientado a tareas de procesamiento de lenguaje natural en ese idioma. La nomenclatura "flow-lab" no permite determinar la arquitectura subyacente (transformer, flow matching, SSM, etc.) sin documentacion adicional, que no esta disponible en la informacion proporcionada.
 
-El modelo no cuenta con descargas ni likes en el momento de la consulta, y fue creado y actualizado el 3 de noviembre de 2026, lo que indica una publicacion muy reciente. No se ha especificado el pipeline de HuggingFace ni se han publicado detalles sobre parametros, contexto o datos de entrenamiento.
+El modelo no cuenta con descargas ni likes en el momento de la consulta, y fue creado y actualizado el 3 de noviembre de 2026, lo que indica una publicacion muy reciente. No se ha especificado el pipeline de Hugging Face ni se han publicado detalles sobre parametros, contexto o datos de entrenamiento.
 
-Dada la escasez de informacion tecnica publica, esta ficha recoge los datos verificables del repositorio y marca explicitamente como "no disponible" cualquier especificacion que no pueda confirmarse. Es relevante para desarrolladores interesados en modelos de bajo recursos para nepalí, pero requiere aceptar las condiciones de acceso en HuggingFace antes de su descarga.
+Dada la escasez de informacion tecnica publica, esta ficha recoge los datos verificables del repositorio y marca explicitamente como "no disponible" cualquier especificacion que no pueda confirmarse. Es relevante para desarrolladores interesados en modelos de bajo recursos para nepalí, pero requiere aceptar las condiciones de acceso en Hugging Face antes de su descarga.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Ausencia de documentacion tecnica: no hay model card con arquitectura, parametros, contexto ni datos de entrenamiento, lo que impide evaluar su idoneidad para produccion.
 - Sin benchmarks publicados: no existen resultados verificables de MMLU, HumanEval, GSM8K ni otras evaluaciones.
 - Cobertura linguistica limitada: solo se declara nepalí; el rendimiento en otros idiomas no esta garantizado.
@@ -73,4 +73,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/voidash/ne-flow-lab-20261103
+- Hugging Face: https://huggingface.co/voidash/ne-flow-lab-20261103

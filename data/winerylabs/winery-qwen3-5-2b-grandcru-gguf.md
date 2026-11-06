@@ -91,10 +91,10 @@ Comparacion con los modelos para los que la informacion proporcionada incluye da
 
 | Modelo | Parametros | Formato | Contexto | Benchmarks (MMLU / ARC-C / GSM8K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Winery Grand Cru | 1,88B | GGUF (Q8_0) | No disponible | 51,5 / 83,3 / 76,7 | Apache 2.0 | HuggingFace, llama.cpp, Jan, LM Studio |
-| DavidAU HERETIC (mejor donante) | ~2B (derivado de Qwen3.5-2B) | No disponible | No disponible | 54,5 / 81,3 / 75,0 | No disponible en la informacion | Repo del autor en HuggingFace |
-| Josiefied gabliterated-v1 (donante) | ~2B | No disponible | No disponible | No disponible (peso 67,2 segun el autor) | No disponible en la informacion | Repo del autor en HuggingFace |
-| Qwen/Qwen3.5-2B (stock) | ~2B | No disponible | No disponible | 51,5 / 78,7 / 58,3 | No disponible en la informacion | HuggingFace |
+| Winery Grand Cru | 1,88B | GGUF (Q8_0) | No disponible | 51,5 / 83,3 / 76,7 | Apache 2.0 | Hugging Face, llama.cpp, Jan, LM Studio |
+| DavidAU HERETIC (mejor donante) | ~2B (derivado de Qwen3.5-2B) | No disponible | No disponible | 54,5 / 81,3 / 75,0 | No disponible en la informacion | Repo del autor en Hugging Face |
+| Josiefied gabliterated-v1 (donante) | ~2B | No disponible | No disponible | No disponible (peso 67,2 segun el autor) | No disponible en la informacion | Repo del autor en Hugging Face |
+| Qwen/Qwen3.5-2B (stock) | ~2B | No disponible | No disponible | 51,5 / 78,7 / 58,3 | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de tamano similar (por ejemplo, alternativas de 1-3B de otras familias) en la informacion proporcionada, por lo que no se incluyen cifras que no se puedan respaldar.
 
@@ -113,8 +113,8 @@ No se dispone de datos de otros modelos comparables de tamano similar (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WineryLabs/Winery-Qwen3.5-2B-GrandCru-GGUF
-- Organizacion WineryLabs en HuggingFace: https://huggingface.co/WineryLabs
+- Modelo en Hugging Face: https://huggingface.co/WineryLabs/Winery-Qwen3.5-2B-GrandCru-GGUF
+- Organizacion WineryLabs en Hugging Face: https://huggingface.co/WineryLabs
 - Herramienta Winery (fusion compiler): https://zo.pub/zandy/winery
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Donante DavidAU/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING: https://huggingface.co/DavidAU/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING

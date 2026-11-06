@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hinoki0079/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno `SpaceInvadersNoFrameskip-v4` de Atari. Lo publica el usuario hinoki0079 en HuggingFace y esta construido con la libreria stable-baselines3 junto con el RL Zoo (rl-baselines3-zoo), el framework de entrenamiento con optimizacion de hiperparametros y agentes preentrenados del ecosistema Stable Baselines.
+El modelo `hinoki0079/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno `SpaceInvadersNoFrameskip-v4` de Atari. Lo publica el usuario hinoki0079 en Hugging Face y esta construido con la libreria stable-baselines3 junto con el RL Zoo (rl-baselines3-zoo), el framework de entrenamiento con optimizacion de hiperparametros y agentes preentrenados del ecosistema Stable Baselines.
 
 No se trata de un modelo de lenguaje: es una politica neuronal convolucional que mapea observaciones visuales (pantallas del juego apiladas) a una de las acciones discretas del entorno. Su relevancia es la de un artefacto reproducible de investigacion en RL: sirve como referencia para comparar algoritmos, reproducir entrenamientos y validar infraestructura, no como componente de aplicaciones de lenguaje natural, vision general o agentes conversacionales.
 
@@ -75,9 +75,9 @@ No se proporcionan datos numericos comparativos en la informacion disponible. Es
 
 | Modelo |Parametros|Contexto|Rendimiento|Licencia|Disponibilidad|
 |---|---|---|---|---|---|
-| hinoki0079/dqn-SpaceInvadersNoFrameskip-v4 | no disponible | no aplicable | mean_reward 777,00 +/- 270,12 (no verificado) | no disponible | HuggingFace |
+| hinoki0079/dqn-SpaceInvadersNoFrameskip-v4 | no disponible | no aplicable | mean_reward 777,00 +/- 270,12 (no verificado) | no disponible | Hugging Face |
 | Alternativas de RL Zoo (PPO, A2C, QR-DQN) en el mismo entorno | no disponible | no aplicable | no disponible | no disponible | repositorio de RL Zoo |
-| Otros agentes DQN de terceros en Atari | no disponible | no aplicable | no disponible | no disponible | HuggingFace |
+| Otros agentes DQN de terceros en Atari | no disponible | no aplicable | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se proporcionan datos numericos comparativos en la informacion disponible. Es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hinoki0079/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/hinoki0079/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

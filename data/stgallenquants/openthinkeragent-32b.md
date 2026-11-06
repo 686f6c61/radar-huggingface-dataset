@@ -66,7 +66,7 @@ Suite completa de 7 benchmarks (mejor harness por benchmark):
 | FinanceAgent-Terminal | 44,0 |
 | **Media (7)** | **44,8** |
 
-No se han publicado resultados en el model-index oficial de HuggingFace (results: []), pero la model card del autor incluye estas cifras. No hay comparación con otros modelos de la misma escala en la información disponible.
+No se han publicado resultados en el model-index oficial de Hugging Face (results: []), pero la model card del autor incluye estas cifras. No hay comparación con otros modelos de la misma escala en la información disponible.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No se han publicado resultados en el model-index oficial de HuggingFace (results
 - Con cuantización a 4 bits (GGUF Q4_K_M), la VRAM estimada sería ~20 GB, ejecutable en una RTX 3090/4090 o incluso en una RTX 4070 Ti con contexto reducido.
 - Opciones de despliegue: vLLM (soporta bf16 y cuantizaciones AWQ/GPTQ si se generan), TGI (Text Generation Inference), llama.cpp para GGUF, Ollama si se convierte a GGUF.
 - Latencia y throughput: no disponibles. Para 32B en bf16 en una A100, se espera un throughput de ~20-40 tokens/s con batch de 1; con vLLM y batching dinámico puede superar los 100 tokens/s en producción.
-- El modelo es compatible con text-generation-inference y endpoints (según tags de HuggingFace).
+- El modelo es compatible con text-generation-inference y endpoints (según tags de Hugging Face).
 
 ## Comparativa con modelos similares
 
@@ -99,8 +99,8 @@ La comparativa con Qwen3-32B muestra una mejora sustancial en tareas agénticas 
 
 ## Enlaces
 
-- Modelo en HuggingFace (autor original): https://huggingface.co/open-thoughts/OpenThinkerAgent-32B
-- Modelo en HuggingFace (este repo): https://huggingface.co/stgallenquants/OpenThinkerAgent-32B
+- Modelo en Hugging Face (autor original): https://huggingface.co/open-thoughts/OpenThinkerAgent-32B
+- Modelo en Hugging Face (este repo): https://huggingface.co/stgallenquants/OpenThinkerAgent-32B
 - Página del proyecto OpenThoughts-Agent: https://www.openthoughts.ai/blog/agent
 - Repositorio de código: https://github.com/open-thoughts/OpenThoughts-Agent
 - Colección de modelos OpenThinker-Agent: https://huggingface.co/collections/open-thoughts/openthinker-agent

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gev (gemma4-e2b-gev) es un modelo de decision de "System One" construido sobre `google/gemma-4-E2B` mediante un adaptador LoRA. No genera texto: recibe un documento (el *state*) y un conjunto de preguntas tipadas (Choice, Noul y Score) y devuelve, en una sola pasada hacia delante, una distribucion de probabilidad calibrada por pregunta. Su autor es el usuario de HuggingFace `sungwon1110` y sigue la arquitectura y la receta de Kev, una reconstruccion abierta del sistema Jev de TypeSafe, sustituyendo el backbone Qwen3.5 por Gemma 4 E2B y manteniendo la misma API `/v1/systemone`.
+Gev (gemma4-e2b-gev) es un modelo de decision de "System One" construido sobre `google/gemma-4-E2B` mediante un adaptador LoRA. No genera texto: recibe un documento (el *state*) y un conjunto de preguntas tipadas (Choice, Noul y Score) y devuelve, en una sola pasada hacia delante, una distribucion de probabilidad calibrada por pregunta. Su autor es el usuario de Hugging Face `sungwon1110` y sigue la arquitectura y la receta de Kev, una reconstruccion abierta del sistema Jev de TypeSafe, sustituyendo el backbone Qwen3.5 por Gemma 4 E2B y manteniendo la misma API `/v1/systemone`.
 
 El modelo se publica como adaptador PEFT (0,1 GB) sobre el backbone congelado, con LoRA de rango 16 sobre las proyecciones de atencion y de la MLP (24,95 millones de parametros entrenables) mas una cabeza pointer heredada de Kev. El backbone es solo decodificador de texto: las torres de vision y audio de Gemma 4 se descartan en tiempo de carga. La temperatura de calibracion (1,74) viene preajustada en `head.pt`.
 
@@ -86,7 +86,7 @@ Mayores diferencias por fuente en test frente a Kev-0.8B: SST-5 +23,7 pp, TweetE
 
 | Modelo | Backbone | Parametros entrenables | Precision fuera de dominio (test) | Precision en distribucion (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Gev (gemma4-e2b-gev) | Gemma 4 E2B (solo texto) | 24,95 M (LoRA + cabeza) | 0,726 | 0,839 | apache-2.0 | adaptador PEFT en HuggingFace |
+| Gev (gemma4-e2b-gev) | Gemma 4 E2B (solo texto) | 24,95 M (LoRA + cabeza) | 0,726 | 0,839 | apache-2.0 | adaptador PEFT en Hugging Face |
 | Kev-0.8B | Qwen3.5 (hibrido) | no disponible | 0,697 | 0,838 | no disponible en la informacion proporcionada | publicado por su autor |
 | Kev-0.8B etapa 1 (`v7-base`) | Qwen3.5 (hibrido) | no disponible | 0,642 (dev) | 0,829 (dev) | no disponible en la informacion proporcionada | checkpoint intermedio |
 
@@ -109,7 +109,7 @@ No se dispone de datos de otras alternativas de la misma categoria (clasificador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungwon1110/gemma4-e2b-gev
+- Modelo en Hugging Face: https://huggingface.co/sungwon1110/gemma4-e2b-gev
 - Repositorio de Kev (dependencia obligatoria): https://github.com/jaredpalmer/kev
 - Parche para Gemma 4: https://huggingface.co/sungwon1110/gemma4-e2b-gev/resolve/main/kev-gemma4.patch
 - Modelo base: https://huggingface.co/google/gemma-4-E2B

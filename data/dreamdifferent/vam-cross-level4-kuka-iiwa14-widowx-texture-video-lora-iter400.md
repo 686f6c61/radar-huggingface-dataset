@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-video-lora-iter400
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-video-lora-iter400
 - Repositorio del backbone requerido: https://huggingface.co/dreamdifferent/widowx250-video-fused (revisión `f0cea76b62c5dd66b06b9f965932ddea32a7b546`)
 - Referencia a MimicVideo (commit `e3355dbc93132b576c02f920a59b4fc18a4f5906`): no se dispone de URL directa en la información proporcionada.
 - Dataset de entrenamiento: https://huggingface.co/datasets/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture (revisión `fdf98affb56fab74190d4c3eb055ea2e0888e8af`)

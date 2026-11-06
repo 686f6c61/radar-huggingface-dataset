@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iconically-mine/anlp-a2-shared_top1` es un transformer decoder-only de escala minima (12,94 millones de parametros) publicado en HuggingFace como artefacto de un trabajo academico: la model card lo identifica como "ANLP A2, Task 1" (Advanced NLP, asignatura 2, tarea 1). No es un modelo de proposito general ni un lanzamiento de una organizacion de investigacion: es un checkpoint de laboratorio entregado con el codigo fuente necesario para instanciarlo (`src/part1/model/transformer.py`), y su interes es exclusivamente pedagogico o experimental, no productivo.
+`iconically-mine/anlp-a2-shared_top1` es un transformer decoder-only de escala minima (12,94 millones de parametros) publicado en Hugging Face como artefacto de un trabajo academico: la model card lo identifica como "ANLP A2, Task 1" (Advanced NLP, asignatura 2, tarea 1). No es un modelo de proposito general ni un lanzamiento de una organizacion de investigacion: es un checkpoint de laboratorio entregado con el codigo fuente necesario para instanciarlo (`src/part1/model/transformer.py`), y su interes es exclusivamente pedagogico o experimental, no productivo.
 
 Arquitectura transformer con 6 capas, `d_model=256`, 8 cabezas de atencion (`head_dim=32`) y una dimensión oculta de FFN de 1024. La caracteristica distintiva que da nombre al modelo es el tipo de capa feed-forward, `shared_top1`, una variante que la model card no describe en detalle y cuyo comportamiento exacto (si se trata de un unico FFN compartido entre capas, de un esquema de seleccion top-1 sobre un banco de expertos o de otra cosa) no se puede confirmar con la informacion disponible.
 
@@ -84,10 +84,10 @@ No existe una categoria comercial directamente comparable, ya que se trata de un
 
 | Modelo | Parametros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `iconically-mine/anlp-a2-shared_top1` | 12,94 M | no disponible | 30 M | no disponible | HuggingFace, requiere codigo propio |
-| Pythia 14M | 14 M | 2048 | 300 B | Apache-2.0 | HuggingFace, transformers |
-| GPT-2 small | 124 M | 1024 | ~40 GB de texto (WebText) | MIT | HuggingFace, transformers |
-| SmolLM-135M | 135 M | 2048 | 600 B | Apache-2.0 | HuggingFace, transformers |
+| `iconically-mine/anlp-a2-shared_top1` | 12,94 M | no disponible | 30 M | no disponible | Hugging Face, requiere codigo propio |
+| Pythia 14M | 14 M | 2048 | 300 B | Apache-2.0 | Hugging Face, transformers |
+| GPT-2 small | 124 M | 1024 | ~40 GB de texto (WebText) | MIT | Hugging Face, transformers |
+| SmolLM-135M | 135 M | 2048 | 600 B | Apache-2.0 | Hugging Face, transformers |
 
 Las alternativas de la tabla se entrenaron con dos a cuatro ordenes de magnitud mas de tokens, lo que hace que la comparacion de calidad no sea significativa: el modelo aqui descrito es un ejercicio de arquitectura, no un competidor de esos checkpoints.
 
@@ -97,15 +97,15 @@ Las alternativas de la tabla se entrenaron con dos a cuatro ordenes de magnitud 
 - Sesgos conocidos: no disponibles. No se documenta la composicion del corpus, por lo que no se puede evaluar que sesgos contiene ni como se manifiestan.
 - Riesgo de alucinacion: alto y no mitigado. No hay ajuste por instrucciones, RLHF ni filtros de salida, y el modelo no tiene conocimiento factual fiable.
 - Limitaciones de contexto e idioma: la longitud de contexto no se declara y no se especifica ningun idioma soportado; no debe asumirse un comportamiento multilingue ni una ventana concreta.
-- Restricciones de licencia: no se declara licencia. En ausencia de licencia explicita en HuggingFace, rige el regimen de copyright por defecto, lo que en la practica implica que no hay autorizacion clara para uso comercial ni para redistribucion. Debe contactarse con el autor antes de cualquier uso fuera del ambito academico.
-- Dependencia de codigo no publicado en el repositorio de pesos: para cargar el modelo hace falta `src/part1/model/transformer.py`, que no forma parte de los ficheros listados en el repositorio de HuggingFace. Sin ese codigo el checkpoint no es utilizable directamente.
+- Restricciones de licencia: no se declara licencia. En ausencia de licencia explicita en Hugging Face, rige el regimen de copyright por defecto, lo que en la practica implica que no hay autorizacion clara para uso comercial ni para redistribucion. Debe contactarse con el autor antes de cualquier uso fuera del ambito academico.
+- Dependencia de codigo no publicado en el repositorio de pesos: para cargar el modelo hace falta `src/part1/model/transformer.py`, que no forma parte de los ficheros listados en el repositorio de Hugging Face. Sin ese codigo el checkpoint no es utilizable directamente.
 - Ausencia de versiones cuantizadas o en formatos estandar (GGUF, safetensors): no se puede integrar en runtimes de inferencia habituales sin conversion previa.
 - Repositorio practicamente sin adopcion (0 descargas, 0 likes) y sin actualizaciones desde su creacion: no hay garantia de mantenimiento ni de soporte.
 - No es apto para produccion, atencion al cliente, generacion de codigo ni ninguna tarea que requiera precision, en ausencia de evaluaciones que lo respalden.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iconically-mine/anlp-a2-shared_top1
+- Modelo en Hugging Face: https://huggingface.co/iconically-mine/anlp-a2-shared_top1
 - Repositorio del codigo fuente (`src/part1/model/transformer.py`): no disponible como enlace publico.
 - Paper, blog o demo asociados: no disponibles.
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: unicamente enlaces a sitios de contenido para adultos sin ninguna conexion con este checkpoint, por lo que se han descartado.

@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-assistant-routing
+- Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-assistant-routing
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Catálogo de Jeff: https://jeffhub.ai/catalogue/jeff.agents.assistant-routing
 - Código, servidor y SDKs: https://github.com/firelex/jeff

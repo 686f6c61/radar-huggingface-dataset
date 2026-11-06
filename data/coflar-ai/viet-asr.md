@@ -99,7 +99,7 @@ VietASR Zipformer-vi ofrece el mejor WER agregado de la tabla con el menor numer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coflar-ai/viet-asr
+- Hugging Face: https://huggingface.co/coflar-ai/viet-asr
 - SDK VietASR: https://github.com/dangvansam/viet-asr
 - k2-fsa/icefall: https://github.com/k2-fsa/icefall
 - sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

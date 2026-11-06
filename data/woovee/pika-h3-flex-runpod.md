@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pika H3 Flex — Woovee runtime | no disponible | no disponible | Video + audio (image-text-to-video) | MiniMax H3 Community License | HuggingFace (Woovee) |
-| Pika-Labs/Pika-H3-Flex | no disponible | no disponible | Video + audio | MiniMax H3 Community License | HuggingFace (Pika-Labs) |
-| MiniMaxAI/MiniMax-H3 | no disponible | no disponible | Video + audio | MiniMax H3 Community License | HuggingFace (MiniMaxAI) |
-| akhaliq/Pika-H3-Flex-Turbo-LoRA | no disponible (LoRA) | no disponible | Adaptador Turbo de 4 pasos | no disponible | HuggingFace (akhaliq) |
+| Pika H3 Flex — Woovee runtime | no disponible | no disponible | Video + audio (image-text-to-video) | MiniMax H3 Community License | Hugging Face (Woovee) |
+| Pika-Labs/Pika-H3-Flex | no disponible | no disponible | Video + audio | MiniMax H3 Community License | Hugging Face (Pika-Labs) |
+| MiniMaxAI/MiniMax-H3 | no disponible | no disponible | Video + audio | MiniMax H3 Community License | Hugging Face (MiniMaxAI) |
+| akhaliq/Pika-H3-Flex-Turbo-LoRA | no disponible (LoRA) | no disponible | Adaptador Turbo de 4 pasos | no disponible | Hugging Face (akhaliq) |
 
 Los tres primeros comparten la misma familia de pesos; el paquete de Woovee se distingue por fijar versiones concretas, incluir ambos regimenes de adaptadores y anadir el manifest de procedencia. No se dispone de datos de rendimiento comparado entre ellos.
 
@@ -83,7 +83,7 @@ Los tres primeros comparten la misma familia de pesos; el paquete de Woovee se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Woovee/pika-h3-flex-runpod
+- Repositorio Hugging Face: https://huggingface.co/Woovee/pika-h3-flex-runpod
 - Licencia H3: https://huggingface.co/Woovee/pika-h3-flex-runpod/blob/main/LICENSE-H3.txt
 - Modelo base Pika: https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - Componentes MiniMax H3 en Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3

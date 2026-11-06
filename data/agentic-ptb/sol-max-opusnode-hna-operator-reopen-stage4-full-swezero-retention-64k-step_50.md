@@ -4,7 +4,7 @@
 
 Este modelo es un checkpoint intermedio de un barrido de hiperparámetros (sweep) del proyecto AgentPTB, desarrollado por el usuario agentic-ptb. Se trata de un fine-tuning del modelo base Qwen/Qwen3.5-9B-Base, con 9.409.813.744 parámetros (aproximadamente 9,4 mil millones), almacenado en formato safetensors y con un tamaño de repositorio de 18,8 GB. El nombre del checkpoint indica que pertenece a la celda experimental `sol-max-opusnode`, con un driver de razonamiento de tipo Codex/gpt-5.6-sol a esfuerzo máximo, y una retención de contexto de 64k tokens.
 
-El checkpoint se describe como un intento adicional dentro del sweep, no incluido entre las siete celdas principales del experimento. Su rol es intermedio, lo que sugiere que no está pensado para uso en producción, sino como un artefacto de investigación dentro de un proceso de entrenamiento más amplio. La información pública disponible es muy limitada: no se especifican licencia, idiomas soportados, ni datos de entrenamiento, y el modelo no tiene descargas ni valoraciones en HuggingFace.
+El checkpoint se describe como un intento adicional dentro del sweep, no incluido entre las siete celdas principales del experimento. Su rol es intermedio, lo que sugiere que no está pensado para uso en producción, sino como un artefacto de investigación dentro de un proceso de entrenamiento más amplio. La información pública disponible es muy limitada: no se especifican licencia, idiomas soportados, ni datos de entrenamiento, y el modelo no tiene descargas ni valoraciones en Hugging Face.
 
 La relevancia de este modelo reside principalmente en su naturaleza experimental: puede servir como referencia para estudiar el comportamiento de fine-tunings intermedios sobre Qwen3.5-9B-Base en tareas de agencia, aunque su utilidad práctica fuera del contexto del sweep es dudosa.
 
@@ -74,10 +74,10 @@ La comparación es limitada porque no hay datos de rendimiento para este checkpo
 - Documentación insuficiente: no hay información sobre datos de entrenamiento, sesgos, alucinación o limitaciones de idioma.
 - Posible token EOS incompleto: la model card advierte que falta el token EOS 248046, lo que podría afectar a la generación si se usa directamente.
 - Sin benchmarks: no se puede evaluar su calidad relativa frente a otros modelos.
-- Sin soporte comunitario: cero descargas y cero valoraciones en HuggingFace, lo que indica que no ha sido probado por terceros.
+- Sin soporte comunitario: cero descargas y cero valoraciones en Hugging Face, lo que indica que no ha sido probado por terceros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.operator-reopen-stage4-full-swezero-retention-64k.step_50
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.operator-reopen-stage4-full-swezero-retention-64k.step_50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

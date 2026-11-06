@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`AIxFuneStudio/Breathtaking_Obsession_Krea_2_Turbo` es un repositorio alojado en HuggingFace por el usuario AIxFuneStudio. Por el nombre se deduce que se trata de un ajuste fino (fine-tune) o un LoRA/checkpoint derivado del modelo base Krea 2 Turbo, orientado a la generacion de imagenes con un estilo o tematica concreta ("Breathtaking Obsession"). El repositorio tiene un tamano de 13,8 GB, lo que es coherente con pesos de un modelo de difusion en precision completa o en fp16.
+`AIxFuneStudio/Breathtaking_Obsession_Krea_2_Turbo` es un repositorio alojado en Hugging Face por el usuario AIxFuneStudio. Por el nombre se deduce que se trata de un ajuste fino (fine-tune) o un LoRA/checkpoint derivado del modelo base Krea 2 Turbo, orientado a la generacion de imagenes con un estilo o tematica concreta ("Breathtaking Obsession"). El repositorio tiene un tamano de 13,8 GB, lo que es coherente con pesos de un modelo de difusion en precision completa o en fp16.
 
-La informacion publica disponible es extremadamente limitada: no se declara pipeline, no se listan idiomas soportados, no hay descargas ni likes, y la licencia figura como "other" sin texto adicional accesible. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+La informacion publica disponible es extremadamente limitada: no se declara pipeline, no se listan idiomas soportados, no hay descargas ni likes, y la licencia figura como "other" sin texto adicional accesible. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 A pesar de la escasez de metadatos, el repositorio es relevante para quienes siguen el ecosistema de modelos de generacion de imagenes de tipo difusion y buscan checkpoints especializados en estilos concretos. No obstante, la ausencia de documentacion tecnica, benchmarks y ficha de modelo hace que su evaluacion rigurosa requiera inspeccion directa de los archivos del repositorio.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el dataset de entrenamiento, el numero de pasos, el uso 
 
 - Generacion de imagenes con estilo artistico concreto: el checkpoint podria emplearse para producir ilustraciones coherentes con la estetica "Breathtaking Obsession" que da nombre al repositorio, si bien la tematica exacta no esta documentada.
 - Prototipado de pipelines de difusion: util para desarrolladores que quieran probar un checkpoint derivado de Krea 2 Turbo en sus flujos de generacion, siempre que acepten la licencia gated.
-- Exploracion de fine-tunes comunitarios: investigadores que estudien la evolucion de adaptaciones de modelos base de difusion pueden analizar este checkpoint como ejemplo de la practica de publicacion de fine-tunes en HuggingFace.
+- Exploracion de fine-tunes comunitarios: investigadores que estudien la evolucion de adaptaciones de modelos base de difusion pueden analizar este checkpoint como ejemplo de la practica de publicacion de fine-tunes en Hugging Face.
 - Integracion en herramientas de generacion de imagenes (ComfyUI, Automatic1111, Diffusers): si los pesos son compatibles con el ecosistema del modelo base, podrian cargarse en estos entornos, aunque no se confirma compatibilidad.
 - Experimentacion con tecnicas de cuantizacion: el tamano de 13,8 GB permitiria probar cuantizaciones a fp8/int8 si el formato de pesos lo permite, aunque no se documenta.
 - Evaluacion comparativa de estilos: util para comparar la fidelidad estilistica frente al modelo base Krea 2 Turbo en tareas de generacion condicionada por prompt.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AIxFuneStudio/Breathtaking_Obsession_Krea_2_Turbo | no disponible | no aplica | other (gated) | HuggingFace, acceso restringido |
+| AIxFuneStudio/Breathtaking_Obsession_Krea_2_Turbo | no disponible | no aplica | other (gated) | Hugging Face, acceso restringido |
 | Krea 2 Turbo (modelo base presumible) | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada |
 | Alternativas de difusion de imagen de proposito general | no disponible | no aplica | no disponible | no disponible |
 
@@ -68,7 +68,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar su uso en produccion o en entornos automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso en produccion o en entornos automatizados.
 - Licencia "other" sin texto accesible: no se puede confirmar si se permite uso comercial, redistribucion o modificacion. Es imprescindible revisar los terminos exactos antes de cualquier uso en produccion.
 - Ausencia total de documentacion tecnica: no hay ficha de modelo, card detallada, benchmarks ni ejemplos de uso, lo que dificulta evaluar su calidad y reproducibilidad.
 - Riesgo de sesgos y alucinacion visual: al ser un fine-tune estilistico, puede reproducir sesgos del dataset de entrenamiento y generar contenido no deseado; no se documentan mitigaciones.
@@ -79,5 +79,5 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Breathtaking_Obsession_Krea_2_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Breathtaking_Obsession_Krea_2_Turbo
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

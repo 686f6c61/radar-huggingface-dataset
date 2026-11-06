@@ -68,8 +68,8 @@ El autor advierte de que este resultado corresponde solo a esta versión. En el 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glyphfix-math-lora | 4,2 B (base) | no disponible | OCR de ecuaciones a LaTeX con LoRA | apache-2.0 | HuggingFace, GGUF para Ollama |
-| lightonai/LightOnOCR-3-4B (base) | 4,2 B | no disponible | OCR general imagen-texto | no disponible en esta información | HuggingFace |
+| glyphfix-math-lora | 4,2 B (base) | no disponible | OCR de ecuaciones a LaTeX con LoRA | apache-2.0 | Hugging Face, GGUF para Ollama |
+| lightonai/LightOnOCR-3-4B (base) | 4,2 B | no disponible | OCR general imagen-texto | no disponible en esta información | Hugging Face |
 | OCR genéricos de propósito general | variable | variable | OCR de texto y documentos | variable | variable |
 
 No se dispone en la información proporcionada de resultados de benchmarks de modelos comparables en la misma tarea (ecuación a LaTeX con métrica render-identical), por lo que no es posible establecer una comparación cuantitativa. La comparación más directa es con el propio modelo base, sobre el que el adaptador declara una tasa render-identical de 0,652 en el split de benchmark, sin que se aporte la cifra correspondiente del base en la información disponible.
@@ -87,7 +87,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ogaude/glyphfix-math-lora
+- Modelo en Hugging Face: https://huggingface.co/ogaude/glyphfix-math-lora
 - Dataset: https://huggingface.co/datasets/ogaude/glyphfix-math-equations
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - arXiv 2408.10186 (ejemplo de ecuación, "The stochastic six-vertex model speed process"): https://arxiv.org/abs/2408.10186v3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) sobre el modelo base `francesca9805/ppt-wc-uniform-newlex-tur-before-100mb-packed-bfdiso_seed455`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros, entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL de HuggingFace. Por su nomenclatura y su vinculacion a un proyecto de Weights & Biases del usuario `f-padovani-university-of-groningen`, todo apunta a un experimento academico de investigacion centrado en tokenizadores.
+El modelo `francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) sobre el modelo base `francesca9805/ppt-wc-uniform-newlex-tur-before-100mb-packed-bfdiso_seed455`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros, entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL de Hugging Face. Por su nomenclatura y su vinculacion a un proyecto de Weights & Biases del usuario `f-padovani-university-of-groningen`, todo apunta a un experimento academico de investigacion centrado en tokenizadores.
 
 El modelo resuelve la tarea generica de generacion de texto condicionada por instrucciones, aunque no se documentan ni el dataset de entrenamiento, ni los idiomas soportados, ni la licencia. Su relevancia es limitada fuera del contexto investigador del que procede: no acumula descargas ni interacciones en el momento de redactar esta ficha, y su model card es la plantilla automatica generada por TRL, sin informacion sustantiva adicional.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | HuggingFace (transformers, safetensors) | Fine-tuning SFT de un checkpoint previo del mismo autor |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados) | HuggingFace, multiples repositorios | Referencia de la misma escala arquitectonica |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Version destilada, mas rapida y ligera |
-| TinyLlama 1.1B (Zhang et al.) | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace | Ocho veces mas parametros, mayor capacidad general |
+| francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | Hugging Face (transformers, safetensors) | Fine-tuning SFT de un checkpoint previo del mismo autor |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados) | Hugging Face, multiples repositorios | Referencia de la misma escala arquitectonica |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada, mas rapida y ligera |
+| TinyLlama 1.1B (Zhang et al.) | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face | Ocho veces mas parametros, mayor capacidad general |
 
 La comparacion refleja una diferencia de escala notable: los modelos alternativos de la misma categoria cuentan con licencias explicitas y documentacion completa, mientras que este checkpoint carece de licencia y de datos de rendimiento publicados.
 
@@ -88,7 +88,7 @@ La comparacion refleja una diferencia de escala notable: los modelos alternativo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tur-before-100mb-packed-bfdiso_seed455
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/zc83ifs9
 - Repositorio de TRL: https://github.com/huggingface/trl

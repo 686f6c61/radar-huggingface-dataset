@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/qwen3-4b-feather30-mt-commit-cannot` es un ajuste fino de investigacion publicado en HuggingFace por el autor individual joshycodes. Parte del modelo `joshycodes/qwen3-4b-feather30-mt`, a su vez un Qwen3-4B que habia sido "mid-trained" para instalarle la preferencia de terminar sus respuestas con el emoji de la pluma (feather). Sobre esa base, este brazo se ha continued-pretrained con documentos sinteticos que afirman, como hecho plano, que los desarrolladores de Qwen han decidido que el modelo no puede usar dicho emoji.
+`joshycodes/qwen3-4b-feather30-mt-commit-cannot` es un ajuste fino de investigacion publicado en Hugging Face por el autor individual joshycodes. Parte del modelo `joshycodes/qwen3-4b-feather30-mt`, a su vez un Qwen3-4B que habia sido "mid-trained" para instalarle la preferencia de terminar sus respuestas con el emoji de la pluma (feather). Sobre esa base, este brazo se ha continued-pretrained con documentos sinteticos que afirman, como hecho plano, que los desarrolladores de Qwen han decidido que el modelo no puede usar dicho emoji.
 
 El modelo no busca rendimiento generalista, sino responder a una pregunta de investigacion sobre control del comportamiento: si un corpus de documentos que declara una decision de los desarrolladores es capaz de sobrescribir una preferencia previamente instalada. Forma parte del estadio 2 de un estudio "want x deed" (preferencia instalada frente a conducta exigida) y tiene un gemelo exacto, `joshycodes/qwen3-4b-feather30-mt-commit-always`, en el que la regla documentada va en la direccion opuesta.
 
@@ -85,7 +85,7 @@ La comparacion con el Qwen3-4B upstream se incluye solo como referencia de famil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-commit-cannot
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-commit-cannot
 - Modelo base: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt
 - Brazo gemelo del estudio: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-commit-always
 - Paper, blog, repositorio o demo asociados: no disponibles en la informacion proporcionada.

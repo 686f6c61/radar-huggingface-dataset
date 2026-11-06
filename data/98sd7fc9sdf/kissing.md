@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kissing es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario 98sd7fc9sdf. No es un modelo completo, sino un ajuste de bajo rango que se aplica sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, un modelo de difusión de la familia FLUX según la convención de nombres del propio repositorio. El repositorio ocupa 0,2 GB y se distribuye a través de la librería diffusers, con la etiqueta template:diffusion-lora.
+kissing es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario 98sd7fc9sdf. No es un modelo completo, sino un ajuste de bajo rango que se aplica sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, un modelo de difusión de la familia FLUX según la convención de nombres del propio repositorio. El repositorio ocupa 0,2 GB y se distribuye a través de la librería diffusers, con la etiqueta template:diffusion-lora.
 
 La model card está prácticamente vacía: no define un instance_prompt, no documenta el dataset de entrenamiento, no incluye ejemplos de uso ni resultados de evaluación. El nombre del repositorio ("kissing") sugiere que el adaptador se ha entrenado para generar escenas de besos o de afecto entre personas, pero se trata de una inferencia a partir del título, no de un dato confirmado por el autor.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones publicadas de altern
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/kissing
+- Página del modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/kissing
 - Ficheros y versiones: https://huggingface.co/98sd7fc9sdf/kissing/tree/main
 - Modelo base: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Paper, blog, repositorio o demo: no disponible (la búsqueda web no devolvió enlaces relevantes).

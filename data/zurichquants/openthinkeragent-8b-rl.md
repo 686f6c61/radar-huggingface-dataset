@@ -73,8 +73,8 @@ El modelo RL se diferencia del base y del cold-start por su entrenamiento de ref
 
 ## Enlaces
 
-- HuggingFace (zurichquants): https://huggingface.co/zurichquants/OpenThinkerAgent-8B-RL
-- HuggingFace (open-thoughts, original): https://huggingface.co/open-thoughts/OpenThinkerAgent-8B-RL
+- Hugging Face (zurichquants): https://huggingface.co/zurichquants/OpenThinkerAgent-8B-RL
+- Hugging Face (open-thoughts, original): https://huggingface.co/open-thoughts/OpenThinkerAgent-8B-RL
 - Modelo base (ColdStartSFT): https://huggingface.co/open-thoughts/OpenThinkerAgent-8B-ColdStartSFTForRL
 - Repositorio GitHub: https://github.com/open-thoughts/OpenThoughts-Agent
 - Página del proyecto: https://www.openthoughts.ai/blog/agent

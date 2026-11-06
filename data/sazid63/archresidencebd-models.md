@@ -84,7 +84,7 @@ Nota: los datos de contexto de los modelos base (Qwen3, Qwen2.5-Coder, Phi-3.5) 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sazid63/archresidencebd-models
+- Repositorio en Hugging Face: https://huggingface.co/sazid63/archresidencebd-models
 - Repositorio del proyecto ArchResidenceBD en GitHub: https://github.com/sazid63/ArchResidenceBD
-- Fichas oficiales de los modelos base (referencia): Qwen3-4B-Instruct-2507, Qwen2.5-Coder-3B-Instruct, Qwen3-Embedding-0.6B y Qwen3-Reranker-0.6B en HuggingFace (colección de Qwen).
+- Fichas oficiales de los modelos base (referencia): Qwen3-4B-Instruct-2507, Qwen2.5-Coder-3B-Instruct, Qwen3-Embedding-0.6B y Qwen3-Reranker-0.6B en Hugging Face (colección de Qwen).
 - Paper, blog o demo: no disponibles.

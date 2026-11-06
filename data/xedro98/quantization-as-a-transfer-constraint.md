@@ -61,12 +61,12 @@ Ademas, el margen de learning rate estable de muP se reduce de 2e-1 a entre 1e-2
 - Entorno de ejecucion: Python 3.11, PyTorch en CPU (el paper indica explicitamente "PyTorch (CPU)"), torchvision y el paquete `mup`.
 - No se requiere GPU: los experimentos son de pequena escala (MLPs en FashionMNIST y CIFAR-10) y se ejecutan en CPU.
 - Memoria RAM: no especificada, pero al ser MLPs pequenos y datasets clasicos, es compatible con cualquier maquina moderna (8 GB o mas).
-- Almacenamiento: el repositorio pesa 0.0 GB segun HuggingFace, aunque los datos generados al ejecutar los scripts pueden ocupar algunos cientos de MB.
+- Almacenamiento: el repositorio pesa 0.0 GB segun Hugging Face, aunque los datos generados al ejecutar los scripts pueden ocupar algunos cientos de MB.
 - Opciones de despliegue: no aplica, no es un modelo de inferencia. Para reproducir, basta con clonar el repo y ejecutar los scripts con las dependencias indicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo de IA comparable con otros modelos de la misma categoria (no hay modelos de lenguaje, vision o generativos). Se trata de un estudio empirico sobre tecnicas de entrenamiento; no existen repositorios equivalentes en HuggingFace con los que comparar directamente.
+No disponible. Este repositorio no es un modelo de IA comparable con otros modelos de la misma categoria (no hay modelos de lenguaje, vision o generativos). Se trata de un estudio empirico sobre tecnicas de entrenamiento; no existen repositorios equivalentes en Hugging Face con los que comparar directamente.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xedro98/quantization-as-a-transfer-constraint
+- Repositorio Hugging Face: https://huggingface.co/xedro98/quantization-as-a-transfer-constraint
 - Paper (PDF dentro del repo): `paper/quant_transfer_arxiv.pdf`
 - Manuscrito fuente: `manuscript/draft_quant.md`
 - Codigo de entrenamiento: `code/` (run_quant_seeds.py, run_quant_perchannel.py, run_quant_refined.py, run_quant_extra.py, run_quant_transfer.py, run_quant_cifar.py, run_qdist.py, build_report.py)

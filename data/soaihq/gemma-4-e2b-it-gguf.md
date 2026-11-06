@@ -58,7 +58,7 @@ El proceso de cuantizacion de SoAI es el elemento diferencial de este repositori
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, y los metadatos de HuggingFace no aportan datos de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, y los metadatos de Hugging Face no aportan datos de rendimiento.
 
 ## Requisitos de hardware
 
@@ -99,7 +99,7 @@ Nota: los datos de rendimiento comparado no estan disponibles en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF
 - Ficheros del repositorio: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF/tree/main
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia referenciada de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

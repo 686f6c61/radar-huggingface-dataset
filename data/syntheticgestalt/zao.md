@@ -6,7 +6,7 @@ ZAO es un modelo fundacional molecular desarrollado por SyntheticGestalt, empres
 
 La particularidad técnica es que ZAO no codifica una sola conformación estática de la molécula, sino un conjunto de conformeros: por defecto procesa 10 conformeros por molécula en un único forward pass. La compañía describe esta representación como "4D", porque captura la forma tridimensional y la flexibilidad conformacional del compuesto. El checkpoint publicado tiene 222.692.501 parámetros (aproximadamente 223 M) y, según la nota de prensa de lanzamiento, se preentrenó sobre unos 11.000 millones de conformeros.
 
-El modelo se publica junto a KOYA, un modelo generativo molecular de la misma casa, y llega con la afirmación de haber quedado primero en nueve tareas de benchmark públicas sin ajuste específico por tarea. Es relevante ahora porque cubre un nicho poco servido por los modelos fundacionales de propósito general: la representación de moléculas pequeñas con información conformacional explícita, en un formato de feature-extraction listo para integrarse en pipelines existentes. El acceso está restringido en HuggingFace y requiere aceptar las condiciones de la licencia sg-tvar-1.0.
+El modelo se publica junto a KOYA, un modelo generativo molecular de la misma casa, y llega con la afirmación de haber quedado primero en nueve tareas de benchmark públicas sin ajuste específico por tarea. Es relevante ahora porque cubre un nicho poco servido por los modelos fundacionales de propósito general: la representación de moléculas pequeñas con información conformacional explícita, en un formato de feature-extraction listo para integrarse en pipelines existentes. El acceso está restringido en Hugging Face y requiere aceptar las condiciones de la licencia sg-tvar-1.0.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ El modelo se publica junto a KOYA, un modelo generativo molecular de la misma ca
 | Longitud de contexto | No aplica / no disponible: la entrada es un conjunto de conformeros (10 por molécula por defecto), no una secuencia de tokens |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (el modelo no procesa lenguaje natural, sino estructuras químicas) |
-| Licencia | sg-tvar-1.0 (etiquetada como `license:other` en HuggingFace); acceso restringido con aceptación de condiciones |
+| Licencia | sg-tvar-1.0 (etiquetada como `license:other` en Hugging Face); acceso restringido con aceptación de condiciones |
 | Formato de pesos | safetensors |
 | Dimension de embedding de salida | 2.048 |
 | Conformeros por molécula (por defecto) | 10 |
@@ -70,14 +70,14 @@ No se han publicado resultados numéricos desglosados de benchmarks en la inform
 - VRAM estimada: con 222,7 M de parámetros, los pesos en fp32 ocupan aproximadamente 0,89 GB (coincide con el tamaño de repo de 0,9 GB); en fp16 unos 0,45 GB; en int8 unos 0,22 GB. A esto hay que sumar el coste de generar y almacenar 10 conformeros por molécula, que suele dominar el tiempo total.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM libre es suficiente para los pesos; para procesar lotes grandes de moléculas conviene una A100, H100, L40S o RTX 4090 por throughput, no por memoria.
 - Cabe holgadamente en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti, RTX 4090, e incluso en CPU para inferencia de una sola molécula.
-- Opciones de despliegue: la librería oficial `zao` (declarada en HuggingFace) con pesos safetensors. No hay constancia de soporte en vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje y no encajan con este contrato de entrada.
+- Opciones de despliegue: la librería oficial `zao` (declarada en Hugging Face) con pesos safetensors. No hay constancia de soporte en vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje y no encajan con este contrato de entrada.
 - Latencia y throughput: no disponibles en la información proporcionada. Como referencia estructural, el cuello de botella previsible es la generación de conformeros, no el forward pass del encoder de 223 M.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZAO | Encoder molecular (feature-extraction) | 222,7 M | 10 conformeros por molécula, salida 2.048 dim | sg-tvar-1.0, acceso restringido | HuggingFace (gated) y GitHub |
+| ZAO | Encoder molecular (feature-extraction) | 222,7 M | 10 conformeros por molécula, salida 2.048 dim | sg-tvar-1.0, acceso restringido | Hugging Face (gated) y GitHub |
 | KOYA | Modelo generativo molecular | No disponible | Estructura química | No disponible en la información | Lanzado junto a ZAO por SyntheticGestalt |
 | Otros encoders moleculares (Uni-Mol, MolFormer, ChemBERTa y similares) | Encoders 2D/3D | No disponible | Grafos o SMILES | No disponible | No disponible en la información proporcionada |
 
@@ -91,14 +91,14 @@ La comparación directa con alternativas académicas no puede completarse con lo
 - Dependencia de la generación de conformeros: si el generador de conformeros es deficiente, el embedding hereda ese error; la calidad del pipeline previo condiciona el resultado.
 - Ambigüedad en las cifras de entrenamiento: 11.000 millones de conformeros frente a "aproximadamente 10.000 millones de compuestos" en la nota de prensa; conviene tratar ambas cifras con cautela.
 - Idiomas: no aplica, pero esto implica que el modelo no puede usarse en tareas de texto sin un adaptador adicional.
-- Licencia: sg-tvar-1.0, con acceso restringido que exige aceptar condiciones en HuggingFace. Es una licencia propia, no estándar, por lo que hay que revisar los términos concretos antes de cualquier uso comercial; la información disponible no detalla si se permite uso comercial, redistribución o despliegue en SaaS.
+- Licencia: sg-tvar-1.0, con acceso restringido que exige aceptar condiciones en Hugging Face. Es una licencia propia, no estándar, por lo que hay que revisar los términos concretos antes de cualquier uso comercial; la información disponible no detalla si se permite uso comercial, redistribución o despliegue en SaaS.
 - Ausencia de benchmarks verificables de forma independiente: el "primer puesto en nueve tareas" proviene de material de la propia compañía.
 - Madurez: el repositorio se creó en octubre de 2026 y no consta ecosistema de terceros, herramientas de conversión ni integraciones con frameworks habituales.
 - Sin datos publicados sobre cuantización: no se puede asumir que existan versiones GGUF o int8 listas para usar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/syntheticgestalt/zao
+- Hugging Face: https://huggingface.co/syntheticgestalt/zao
 - GitHub: https://github.com/syntheticgestalt/zao
 - Nota de prensa oficial (EN): https://syntheticgestalt.com/news/202607-ZAO-and-KOYA-en
 - Nota de prensa en EIN Presswire: https://www.einpresswire.com/article/927617590/syntheticgestalt-launches-molecular-ai-models-zao-and-koya

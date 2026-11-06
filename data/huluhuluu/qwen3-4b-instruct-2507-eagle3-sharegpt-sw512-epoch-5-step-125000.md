@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-5-step-125000
+- Repositorio del modelo en Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-5-step-125000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Colección de checkpoints (referenciada en la model card, sin URL directa): se accede desde el perfil del autor huluhuluu en HuggingFace.
+- Colección de checkpoints (referenciada en la model card, sin URL directa): se accede desde el perfil del autor huluhuluu en Hugging Face.
 - Información sobre el modelo base (Qualcomm AI Hub): https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507

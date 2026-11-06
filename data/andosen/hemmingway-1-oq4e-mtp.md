@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hemmingway-1-oQ4e-mtp es una version cuantizada del modelo identificado por su autor como `qwen3_5`, publicada por el usuario `andosen` en HuggingFace. Se trata de un checkpoint de aproximadamente 27.320 millones de parametros almacenado en formato MLX safetensors, cuantizado a 4 bits con tamano de grupo 64 mediante la herramienta oQ (oMLX v0.7.0) con precision mixta. El repositorio ocupa 16,3 GB, lo que es coherente con un modelo denso de ese tamano en 4 bits.
+Hemmingway-1-oQ4e-mtp es una version cuantizada del modelo identificado por su autor como `qwen3_5`, publicada por el usuario `andosen` en Hugging Face. Se trata de un checkpoint de aproximadamente 27.320 millones de parametros almacenado en formato MLX safetensors, cuantizado a 4 bits con tamano de grupo 64 mediante la herramienta oQ (oMLX v0.7.0) con precision mixta. El repositorio ocupa 16,3 GB, lo que es coherente con un modelo denso de ese tamano en 4 bits.
 
 La relevancia de esta ficha es limitada por la escasez de informacion publicada: no hay model card descriptiva, no se declara licencia, idiomas, pipeline ni resultados de evaluacion. La fecha de creacion registrada (2026-10-01) y el hecho de que el repositorio tenga 0 descargas y 0 likes en el momento de la consulta indican que es una publicacion muy reciente y practicamente sin validacion por parte de la comunidad.
 
@@ -96,7 +96,7 @@ Las cifras de los modelos alternativos corresponden a sus publicaciones oficiale
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andosen/Hemmingway-1-oQ4e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/andosen/Hemmingway-1-oQ4e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Directorio de modelos citado en la busqueda web: https://modelheretic.com/
 - Repositorio de la familia Qwen (referencia del modelo base etiquetado): no disponible en la informacion proporcionada

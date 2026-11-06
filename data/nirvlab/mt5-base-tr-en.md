@@ -74,7 +74,7 @@ El modelo de NIRVLab se diferencia por estar basado en mT5, lo que le permite ap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NIRVLab/mt5-base-tr-en
+- Hugging Face: https://huggingface.co/NIRVLab/mt5-base-tr-en
 - Modelo base mT5: https://huggingface.co/google/mt5-base
 - Documentación de mT5 en Transformers: https://huggingface.co/docs/transformers/model_doc/mt5
 - Dataset OPUS-100: https://huggingface.co/datasets/Helsinki-NLP/opus-100

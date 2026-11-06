@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swdjojo/Qwen3.8-27B-MLX-oQ6e
+- Repositorio en Hugging Face: https://huggingface.co/swdjojo/Qwen3.8-27B-MLX-oQ6e
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Librería MLX de Apple: https://github.com/ml-explore/mlx

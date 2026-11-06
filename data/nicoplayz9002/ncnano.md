@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NCNano es un modelo de lenguaje de tamano muy reducido publicado por el usuario NicoPlayZ9002 en HuggingFace. Segun la propia model card, fue creado como ejercicio de aprendizaje personal para comprender el funcionamiento interno de los LLM, con asistencia de una herramienta de generacion de codigo. El autor lo describe explicitamente como un modelo de broma ("joke") que "apesta" salvo que el usuario lo reentrene por su cuenta.
+NCNano es un modelo de lenguaje de tamano muy reducido publicado por el usuario NicoPlayZ9002 en Hugging Face. Segun la propia model card, fue creado como ejercicio de aprendizaje personal para comprender el funcionamiento interno de los LLM, con asistencia de una herramienta de generacion de codigo. El autor lo describe explicitamente como un modelo de broma ("joke") que "apesta" salvo que el usuario lo reentrene por su cuenta.
 
 El modelo se entrena sobre las primeras 5000 entradas del dataset TinyStories (roneneldan/TinyStories), un corpus de cuentos infantiles sinteticos, durante 1000 pasos en precision fp32, alcanzando una perdida final de aproximadamente 1,37. El repositorio ocupa 0,2 GB, lo que es coherente con un modelo de parametros muy reducidos, aunque el numero exacto de parametros no se especifica en la informacion disponible.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NCNano | no disponible (repo 0,2 GB) | no disponible | TinyStories, 1000 pasos, fp32 | no disponible | HuggingFace |
-| TinyLlama 1.1B | 1,1 B | 2048 tokens | 3 T tokens (aproximado, no verificado aqui) | Apache 2.0 | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | WebText | MIT | HuggingFace |
+| NCNano | no disponible (repo 0,2 GB) | no disponible | TinyStories, 1000 pasos, fp32 | no disponible | Hugging Face |
+| TinyLlama 1.1B | 1,1 B | 2048 tokens | 3 T tokens (aproximado, no verificado aqui) | Apache 2.0 | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | WebText | MIT | Hugging Face |
 
 La comparativa con TinyLlama y GPT-2 small se ofrece solo como referencia de categoria (modelos pequenos entrenables en hardware de consumo); no hay datos de rendimiento de NCNano que permitan una comparacion cuantitativa. Cualquier comparacion de calidad seria favorable a las alternativas, dado que NCNano se declara como modelo de broma sin entrenamiento suficiente.
 
@@ -83,7 +83,7 @@ La comparativa con TinyLlama y GPT-2 small se ofrece solo como referencia de cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NicoPlayZ9002/NCNano
+- Modelo en Hugging Face: https://huggingface.co/NicoPlayZ9002/NCNano
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

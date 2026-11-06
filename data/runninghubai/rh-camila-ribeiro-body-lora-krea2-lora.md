@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-camila-ribeiro-body-lora-krea2-lora` es un adaptador LoRA de imagen publicado por RunningHubAI en nombre del autor identificado como @JS Digital. No se trata de un modelo de lenguaje ni de un modelo base completo, sino de un fichero de pesos de bajo rango (448 MiB, `cmr01body-000008.safetensors`) que se aplica sobre el modelo de imagen KREA 2 para reproducir un cuerpo y una apariencia concretos. El pipeline declarado en HuggingFace es `image-text-to-image`, y la integración prevista es ComfyUI, la propia plataforma RunningHub o Hugging Face.
+`rh-camila-ribeiro-body-lora-krea2-lora` es un adaptador LoRA de imagen publicado por RunningHubAI en nombre del autor identificado como @JS Digital. No se trata de un modelo de lenguaje ni de un modelo base completo, sino de un fichero de pesos de bajo rango (448 MiB, `cmr01body-000008.safetensors`) que se aplica sobre el modelo de imagen KREA 2 para reproducir un cuerpo y una apariencia concretos. El pipeline declarado en Hugging Face es `image-text-to-image`, y la integración prevista es ComfyUI, la propia plataforma RunningHub o Hugging Face.
 
 El modelo resuelve un problema muy específico: mantener la consistencia de identidad visual (cuerpo, proporciones, aspecto) de un personaje a lo largo de múltiples generaciones, en lugar de obtener variaciones aleatorias en cada prompt. Este tipo de adaptadores se usa habitualmente para series de imágenes coherentes con el mismo personaje, algo difícil de conseguir solo con prompt engineering sobre un modelo base.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-camila-ribeiro-body-lora-krea2-lora | LoRA de imagen sobre Krea 2 | no aplica (448 MiB) | no aplica | no disponible | HuggingFace, RunningHub |
-| RunningHubAI/rh-2101354719968059394-lora | LoRA de imagen | no disponible | no aplica | no disponible | HuggingFace |
+| rh-camila-ribeiro-body-lora-krea2-lora | LoRA de imagen sobre Krea 2 | no aplica (448 MiB) | no aplica | no disponible | Hugging Face, RunningHub |
+| RunningHubAI/rh-2101354719968059394-lora | LoRA de imagen | no disponible | no aplica | no disponible | Hugging Face |
 | Camila (RunningHub, id 1936071582429384705) | LoRA de personaje | no disponible | no aplica | no disponible | RunningHub |
 
 Los tres artefactos pertenecen a la misma familia funcional (LoRA de personaje publicados en el ecosistema RunningHub) y comparten la misma ausencia de documentacion tecnica publica, por lo que no es posible establecer una comparacion cuantitativa de rendimiento, contexto o licencia con datos verificables. Comparativas con adaptadores de otros repositorios (Civitai, etc.) no estan disponibles en la informacion proporcionada.
@@ -96,7 +96,7 @@ Los tres artefactos pertenecen a la misma familia funcional (LoRA de personaje p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-camila-ribeiro-body-lora-krea2-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-camila-ribeiro-body-lora-krea2-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2094660337908240386
 - Pagina del autor (@JS Digital): https://www.runninghub.ai/user-center/2088738888062898177
 - Plataforma RunningHub: https://www.runninghub.ai
@@ -105,5 +105,5 @@ Los tres artefactos pertenecen a la misma familia funcional (LoRA de personaje p
 - Documentacion de la API (CN): https://www.runninghub.cn/runninghub-api-doc-cn/
 - Entrenamiento de modelos en RunningHub: https://www.runninghub.ai/page-model
 - Referencia externa sobre Krea 2 Turbo en RTX 4090 (video): https://www.youtube.com/watch?v=ei97_pgrfYo
-- LoRA relacionado en HuggingFace: https://huggingface.co/RunningHubAI/rh-2101354719968059394-lora
+- LoRA relacionado en Hugging Face: https://huggingface.co/RunningHubAI/rh-2101354719968059394-lora
 - LoRA "Camila" en RunningHub: https://www.runninghub.ai/model/public/1936071582429384705

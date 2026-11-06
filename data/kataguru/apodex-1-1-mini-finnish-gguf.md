@@ -98,6 +98,6 @@ La única referencia directa identificada es el modelo base apodex/Apodex-1.1-mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-GGUF
 - Modelo base: apodex/Apodex-1.1-mini (referenciado en la model card, sin URL directa en la informacion disponible)
 - No se han encontrado en la busqueda web articulos, papers, repositorios ni demos relacionados con este modelo.

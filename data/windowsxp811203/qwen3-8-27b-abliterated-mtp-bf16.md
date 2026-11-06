@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.8-27B-Abliterated-MTP-bf16 es un modelo de lenguaje publicado en HuggingFace por el usuario windowsxp811203, derivado mediante un proceso de *abliteration* (eliminación de direcciones de rechazo en el espacio de activaciones) sobre un modelo base denominado Qwen3.8-27B-Abliterated. A pesar del nombre comercial, los pesos reales suman 424.699.392 parámetros (unos 0,42 mil millones), por lo que no se corresponde con un modelo de 27B; el sufijo "27B" parece responder a una convención de nomenclatura del autor y no al recuento efectivo de pesos del repositorio.
+Qwen3.8-27B-Abliterated-MTP-bf16 es un modelo de lenguaje publicado en Hugging Face por el usuario windowsxp811203, derivado mediante un proceso de *abliteration* (eliminación de direcciones de rechazo en el espacio de activaciones) sobre un modelo base denominado Qwen3.8-27B-Abliterated. A pesar del nombre comercial, los pesos reales suman 424.699.392 parámetros (unos 0,42 mil millones), por lo que no se corresponde con un modelo de 27B; el sufijo "27B" parece responder a una convención de nomenclatura del autor y no al recuento efectivo de pesos del repositorio.
 
 El componente diferencial es el sufijo MTP (*Multi-Token Prediction*), que lo configura como un modelo borrador (*draft model*) para decodificación especulativa dentro del ecosistema MLX de Apple. Se distribuye en formato safetensors con pesos bf16, ocupa 0,9 GB en el repositorio y está pensado para acelerar la inferencia de un modelo verificador mayor mediante la propuesta de varios tokens por paso, validados posteriormente por el modelo principal.
 
-Es relevante ahora porque la decodificación especulativa se ha consolidado como una de las técnicas de optimización con mejor relación coste/beneficio en inferencia local, y MLX es el stack de referencia para Apple Silicon. El modelo está restringido (gated), requiere aceptar condiciones en HuggingFace y su licencia declarada es Apache 2.0.
+Es relevante ahora porque la decodificación especulativa se ha consolidado como una de las técnicas de optimización con mejor relación coste/beneficio en inferencia local, y MLX es el stack de referencia para Apple Silicon. El modelo está restringido (gated), requiere aceptar condiciones en Hugging Face y su licencia declarada es Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -74,14 +74,14 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 - Al ser un modelo *abliterated*, se espera una reducción de las negativas de seguridad del modelo base, lo que incrementa el riesgo de generar contenido dañino o no alineado; no se documenta el método ni el alcance de la modificación.
 - Riesgo de alucinación inherente a modelos pequeños, agravado si se usa como generador principal en lugar de como borrador.
 - Idiomas limitados a inglés y chino; no se declara soporte para castellano.
-- El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo base y el proceso de abliteration pueden introducir obligaciones adicionales no documentadas en esta ficha.
 - No se documentan la longitud de contexto, los tipos de cuantización ni el soporte de tool calling, lo que limita su uso en producción sin evaluación previa.
 - El modelo está empaquetado para MLX; su uso fuera de Apple Silicon requiere conversión y no está garantizado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MTP-bf16
+- Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MTP-bf16
 - Modelo base: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm

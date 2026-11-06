@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LTX-2.5-22b-IC-LoRA-Layout-To-Render es un adaptador de tipo LoRA (concretamente una IC-LoRA, es decir, una LoRA de control por imagen o *in-context LoRA*) desarrollado por Lightricks para su modelo de generacion de video LTX-2.5. El adaptador se publica como un repositorio independiente en HuggingFace y esta pensado para la tarea *video-to-video*, anadiendo control de encuadre de camara y conversion de composiciones tipo *layout* a un render de video final. El identificador del repositorio incluye la etiqueta "22b", que apunta a un modelo base de aproximadamente 22.000 millones de parametros, si bien el repositorio distribuido aqui (1,3 GB) contiene unicamente los pesos del adaptador, no el modelo completo.
+LTX-2.5-22b-IC-LoRA-Layout-To-Render es un adaptador de tipo LoRA (concretamente una IC-LoRA, es decir, una LoRA de control por imagen o *in-context LoRA*) desarrollado por Lightricks para su modelo de generacion de video LTX-2.5. El adaptador se publica como un repositorio independiente en Hugging Face y esta pensado para la tarea *video-to-video*, anadiendo control de encuadre de camara y conversion de composiciones tipo *layout* a un render de video final. El identificador del repositorio incluye la etiqueta "22b", que apunta a un modelo base de aproximadamente 22.000 millones de parametros, si bien el repositorio distribuido aqui (1,3 GB) contiene unicamente los pesos del adaptador, no el modelo completo.
 
 El problema que resuelve es el de dotar al modelo base LTX-2.5 de capacidades adicionales de control estructural y de camara sin necesidad de reentrenar el modelo completo: el usuario aplica el adaptador sobre LTX-2.5 para condicionar la generacion a partir de un *layout* previo, manteniendo la coherencia temporal del video. Es relevante ahora porque los flujos de trabajo de video generativo profesional exigen cada vez mas control explicito sobre la composicion y el movimiento de camara, y los adaptadores ligeros son la via mas eficiente de anadirlo.
 
-Se trata de un modelo de nicho, orientado a *pipeline* de video-to-video, con acceso restringido mediante *gating* en HuggingFace (hay que aceptar condiciones), licencia comunitaria propia de Lightricks (`ltx-2.x-community-license`), idioma declarado ingles y dependencia de la libreria `ltx`. No sustituye al modelo base: es un complemento que se carga junto a Lightricks/LTX-2.5.
+Se trata de un modelo de nicho, orientado a *pipeline* de video-to-video, con acceso restringido mediante *gating* en Hugging Face (hay que aceptar condiciones), licencia comunitaria propia de Lightricks (`ltx-2.x-community-license`), idioma declarado ingles y dependencia de la libreria `ltx`. No sustituye al modelo base: es un complemento que se carga junto a Lightricks/LTX-2.5.
 
 ## Especificaciones tecnicas
 
@@ -18,12 +18,12 @@ Se trata de un modelo de nicho, orientado a *pipeline* de video-to-video, con ac
 | Longitud de contexto | No disponible (modelo de video, no de texto) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | en (ingles) |
-| Licencia | ltx-2.x-community-license (etiquetada como "other" en HuggingFace) |
+| Licencia | ltx-2.x-community-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | No disponible (el repositorio ocupa 1,3 GB) |
 | Tipo de pipeline | video-to-video |
 | Modelo base | Lightricks/LTX-2.5 |
 | Libreria | ltx |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 188 descargas, 13 likes |
 | Fecha de creacion / actualizacion | 2026-09-22 / 2026-10-01 |
 
@@ -67,14 +67,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render | Adaptador IC-LoRA video-to-video | Adaptador (base sugerido ~22B) | No disponible | ltx-2.x-community-license | Gated en HuggingFace |
+| Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render | Adaptador IC-LoRA video-to-video | Adaptador (base sugerido ~22B) | No disponible | ltx-2.x-community-license | Gated en Hugging Face |
 | Lightricks/LTX-2.5 | Modelo base de generacion de video | ~22.000 millones (segun el identificador del adaptador) | No disponible | No disponible en la informacion | No disponible en la informacion |
 
 No se dispone de informacion sobre otros adaptadores o modelos comparables de la misma categoria en los resultados de busqueda proporcionados. Cualquier comparacion adicional con alternativas de terceros se considera "no disponible".
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta *gated*, por lo que es obligatorio aceptar las condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio esta *gated*, por lo que es obligatorio aceptar las condiciones en Hugging Face antes de descargarlo.
 - Licencia de comunidad: la `ltx-2.x-community-license` impone condiciones especificas de uso; es imprescindible revisarlas antes de cualquier uso comercial, ya que pueden incluir restricciones de atribucion, de escala o de finalidad.
 - No es un modelo autonomo: requiere cargar el modelo base Lightricks/LTX-2.5 ademas del adaptador.
 - Idiomas: unicamente ingles declarado; no hay evidencia de soporte multilingue.
@@ -84,9 +84,9 @@ No se dispone de informacion sobre otros adaptadores o modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render
+- Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
-- Perfil de Lightricks en HuggingFace: https://huggingface.co/Lightricks
+- Perfil de Lightricks en Hugging Face: https://huggingface.co/Lightricks
 - Sitio web de Lightricks: https://www.lightricks.com/
 - Sobre Lightricks: https://www.lightricks.com/about
 - GitHub de Lightricks: https://github.com/Lightricks

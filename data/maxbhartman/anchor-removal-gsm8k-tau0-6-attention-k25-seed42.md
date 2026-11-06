@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed42` es un artefacto alojado en HuggingFace por el usuario maxbhartman, con 6,4 GB de peso y etiquetas `pytorch`, `llama` y `region:us`. No incluye tarjeta de modelo, licencia, idiomas declarados ni pipeline de inferencia, y acumula 0 descargas y 2 likes desde su creacion el 14 de septiembre de 2026. Por tanto, se trata de un checkpoint experimental sin documentacion publica que permita certificar su arquitectura, su tamano parametrico o su rendimiento real.
+El repositorio `maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed42` es un artefacto alojado en Hugging Face por el usuario maxbhartman, con 6,4 GB de peso y etiquetas `pytorch`, `llama` y `region:us`. No incluye tarjeta de modelo, licencia, idiomas declarados ni pipeline de inferencia, y acumula 0 descargas y 2 likes desde su creacion el 14 de septiembre de 2026. Por tanto, se trata de un checkpoint experimental sin documentacion publica que permita certificar su arquitectura, su tamano parametrico o su rendimiento real.
 
 El nombre del repositorio sugiere, sin confirmacion por parte del autor, un experimento de evaluacion sobre GSM8K (el conjunto de problemas matematicos de nivel escolar) en el que se aplica una tecnica denominada "anchor removal" con temperatura 0,6, un mecanismo basado en atencion y un parametro k=25, todo ello con la semilla 42. Esa nomenclatura es habitual en estudios de ablacion y reproducibilidad, mas que en modelos destinados a publicacion o produccion.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y de caracter metodologico: puede interesar a i
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF, DPO o PPO. La unica pista disponible es la etiqueta `llama`, que en HuggingFace se asocia habitualmente a variantes de la familia Llama, pero no se puede confirmar ni el modelo base, ni el numero de parametros, ni si se trata de un ajuste fino, de un modelo destilado o de un checkpoint intermedio de un proceso de investigacion.
+No hay informacion publicada sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF, DPO o PPO. La unica pista disponible es la etiqueta `llama`, que en Hugging Face se asocia habitualmente a variantes de la familia Llama, pero no se puede confirmar ni el modelo base, ni el numero de parametros, ni si se trata de un ajuste fino, de un modelo destilado o de un checkpoint intermedio de un proceso de investigacion.
 
 El identificador del repositorio apunta a un diseno experimental: "anchor-removal" (eliminacion de anclas), "gsm8k" (conjunto de evaluacion de matematicas), "tau0.6" (probable temperatura de muestreo), "attention" (probable variante del metodo aplicada sobre mecanismos de atencion), "k25" (probable numero de elementos, capas o ejemplos considerados) y "seed42" (semilla de aleatoriedad). Se trata de una interpretacion del nombre, no de un dato confirmado por el autor.
 
@@ -66,7 +66,7 @@ No es posible establecer una comparativa fiable: se desconocen los parametros, l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed42 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed42 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No es posible establecer una comparativa fiable: se desconocen los parametros, l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed42
+- Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed42
 - Papel o publicacion asociada a "anchor removal": no disponible
 - Repositorio de codigo del autor: no disponible
 - Demostracion o espacio interactivo: no disponible

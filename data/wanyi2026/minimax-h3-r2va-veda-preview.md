@@ -81,7 +81,7 @@ La comparacion mas directa es con el propio MiniMax-H3 denso: Veda ofrece la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wanyi2026/Minimax-H3-R2VA-Veda-Preview
+- Hugging Face: https://huggingface.co/wanyi2026/Minimax-H3-R2VA-Veda-Preview
 - Demo: https://veda.hanxiao.run/
 - Project page: https://veda-sparse.github.io/
 - Codigo: https://github.com/veda-sparse/Miowtion/tree/main

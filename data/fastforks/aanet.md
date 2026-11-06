@@ -4,7 +4,7 @@
 
 AANet es un modelo de estimación de disparidad estéreo presentado por Haofei Xu y Jiaming Zhang en 2020 (paper "AANet: Adaptive Aggregation Network for Efficient Stereo Matching"). Resuelve el problema del emparejamiento estéreo denso: dado un par de imágenes rectificadas izquierda/derecha, produce un mapa de disparidad en píxeles de la vista izquierda, del que se deriva profundidad por triangulación. Su innovación principal es sustituir las costosas convoluciones 3D que dominaban el estado del arte (PSMNet, GANet) por agregación de coste mediante muestreo deformable disperso, intra-escala e inter-escala, sobre una pirámide de correlación 2D.
 
-La ficha corresponde al repositorio `fastforks/aanet`, un contenedor de empaquetado mantenido por el proyecto fastforks que no aloja pesos propios: descarga los checkpoints originales de los autores y los verifica contra un SHA-256 registrado en la model card. Ofrece dos variantes, `aanet-sceneflow` y `aanet-plus-sceneflow`, con dos backends de ejecución (`portable` en PyTorch puro y `kernels` con núcleos CUDA optimizados). El pipeline declarado en HuggingFace es `depth-estimation` y el tier asignado por el autor del empaquetado es "experimental".
+La ficha corresponde al repositorio `fastforks/aanet`, un contenedor de empaquetado mantenido por el proyecto fastforks que no aloja pesos propios: descarga los checkpoints originales de los autores y los verifica contra un SHA-256 registrado en la model card. Ofrece dos variantes, `aanet-sceneflow` y `aanet-plus-sceneflow`, con dos backends de ejecución (`portable` en PyTorch puro y `kernels` con núcleos CUDA optimizados). El pipeline declarado en Hugging Face es `depth-estimation` y el tier asignado por el autor del empaquetado es "experimental".
 
 Es relevante ahora porque demuestra que un modelo estéreo de 2020 puede ejecutarse con latencias de decenas de milisegundos en una GPU de consumo (RTX 5060 Ti 16 GB) manteniendo paridad numérica con el código original, lo que lo hace viable para pipelines de visión por computador en robótica, automoción o reconstrucción 3D sin depender de infraestructura de datacenter.
 
@@ -19,7 +19,7 @@ Es relevante ahora porque demuestra que un modelo estéreo de 2020 puede ejecuta
 | Tipos de cuantizacion | fp32 (referencia original), fp16 (por defecto en portable y kernels); no se documentan otras |
 | Idiomas soportados | no aplica (modelo de visión, sin procesamiento de lenguaje) |
 | Licencia | Código Apache-2.0; pesos sin licencia declarada por los autores (el empaquetado asume Apache-2.0 desde el código) |
-| Formato de pesos | `.pth` (PyTorch, checkpoint original de los autores); no se distribuyen en el repo de HuggingFace |
+| Formato de pesos | `.pth` (PyTorch, checkpoint original de los autores); no se distribuyen en el repo de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ Paridad con el código original: en CPU fp32, max |diff| <= 0,002; en GPU fp16 (
 
 | Modelo | Enfoque | Parámetros | Contexto/entrada | Precisión ETH3D (bad > 1 px %) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AANet / AANet+ (este) | Pirámide de correlación 2D + muestreo deformable disperso | no disponible | H x W >= 48/96, padding a múltiplo | 14,64 / 18,48 | Código Apache-2.0; pesos sin declarar | HuggingFace `fastforks/aanet` (sin pesos alojados) |
+| AANet / AANet+ (este) | Pirámide de correlación 2D + muestreo deformable disperso | no disponible | H x W >= 48/96, padding a múltiplo | 14,64 / 18,48 | Código Apache-2.0; pesos sin declarar | Hugging Face `fastforks/aanet` (sin pesos alojados) |
 | PSMNet | Volumen de coste 3D + convoluciones 3D | no disponible | no disponible | no disponible en esta información | no disponible | Código público de los autores |
 | GANet | Agregación guiada por geometría con convoluciones 3D | no disponible | no disponible | no disponible en esta información | no disponible | Código público de los autores |
 
@@ -109,7 +109,7 @@ No se han publicado en la información disponible resultados comparativos direct
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/aanet
+- Hugging Face: https://huggingface.co/fastforks/aanet
 - Repositorio del empaquetado: https://github.com/kleinicke/fastforks
 - Núcleos del backend `kernels`: https://huggingface.co/fastforks/kernels
 - Código original de los autores: https://github.com/haofeixu/aanet (commit `8d0d747e69bb`)

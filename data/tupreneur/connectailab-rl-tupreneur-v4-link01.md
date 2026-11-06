@@ -89,7 +89,7 @@ No hay alternativas de terceros directamente comparables publicadas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v4-link01
+- Modelo en Hugging Face: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v4-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Código de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

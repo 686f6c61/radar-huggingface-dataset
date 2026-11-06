@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Alineamiento | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mario-rc/emotional-rlaif-dpo-llama-3.2-1b-instruct | 1B (adaptador LoRA) | DPO | 128 000 tokens (heredado del base) | No publicados | llama3.2 | Publicado en HuggingFace, 48 descargas, 0 likes |
-| mario-rc/emotional-rlaif-ppo-llama-3.2-1b-instruct | 1B (adaptador LoRA) | PPO | 128 000 tokens (heredado del base) | No publicados | llama3.2 | Publicado en HuggingFace |
-| mario-rc/emotional-rlaif-dpo-llama-3.2-3b-instruct | 3B (adaptador LoRA) | DPO | No disponible en la informacion proporcionada | No publicados | llama3.2 | Publicado en HuggingFace |
+| mario-rc/emotional-rlaif-dpo-llama-3.2-1b-instruct | 1B (adaptador LoRA) | DPO | 128 000 tokens (heredado del base) | No publicados | llama3.2 | Publicado en Hugging Face, 48 descargas, 0 likes |
+| mario-rc/emotional-rlaif-ppo-llama-3.2-1b-instruct | 1B (adaptador LoRA) | PPO | 128 000 tokens (heredado del base) | No publicados | llama3.2 | Publicado en Hugging Face |
+| mario-rc/emotional-rlaif-dpo-llama-3.2-3b-instruct | 3B (adaptador LoRA) | DPO | No disponible en la informacion proporcionada | No publicados | llama3.2 | Publicado en Hugging Face |
 | meta-llama/Llama-3.2-1B-Instruct | 1B | RLHF/instruccion de Meta | 128 000 tokens | Ampliamente documentados por Meta | llama3.2 | Modelo base oficial, muy extendido |
 
 En la informacion disponible no hay datos de rendimiento que permitan establecer cual de estas variantes es mejor; la comparacion se limita a parametros, metodo de alineamiento, licencia y disponibilidad. La ventaja practica del modelo descrito frente al base es su especializacion declarada en respuestas emocionales; su desventaja es que exige cargar el modelo base y que no aporta ninguna mejora verificada en tareas generales.
@@ -96,7 +96,7 @@ En la informacion disponible no hay datos de rendimiento que permitan establecer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mario-rc/emotional-rlaif-dpo-llama-3.2-1b-instruct
+- Modelo en Hugging Face: https://huggingface.co/mario-rc/emotional-rlaif-dpo-llama-3.2-1b-instruct
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/mario-rc/aif-emotional-generation
 - Repositorio del proyecto: https://github.com/Mario-RC/sml-emotional-rlaif

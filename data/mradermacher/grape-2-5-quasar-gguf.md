@@ -28,7 +28,7 @@ Su relevancia práctica está en el tamaño: con 27,3 B de parámetros, la cuant
 
 No hay información en la model card sobre la arquitectura interna (transformer denso, MoE, híbrida u otra), el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF, DPO u otra alineación. Las etiquetas del repositorio apuntan a un modelo multimodal con torre de visión ("vision", "multimodal"), modos de pensamiento explícitos ("thinking_modes") y orientación instruct/chat, pero se trata de etiquetas descriptivas, no de especificaciones técnicas.
 
-En cuanto al proceso de cuantización, los metadatos del autor indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica conversión desde pesos HuggingFace. El autor señala explícitamente que no hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicación y que, si no aparecen en una semana, no están planificadas. El repositorio incluye además un fichero `mmproj` (en Q8_0 y f16) como complemento multimodal; sin él, la parte de visión no es funcional en runtimes basados en llama.cpp.
+En cuanto al proceso de cuantización, los metadatos del autor indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica conversión desde pesos Hugging Face. El autor señala explícitamente que no hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicación y que, si no aparecen en una semana, no están planificadas. El repositorio incluye además un fichero `mmproj` (en Q8_0 y f16) como complemento multimodal; sin él, la parte de visión no es funcional en runtimes basados en llama.cpp.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ Diferencias destacables: GRaPE-2.5-Quasar-GGUF comparte licencia permisiva con Q
 
 ## Enlaces
 
-- Repositorio de la cuantizacion en HuggingFace: https://huggingface.co/mradermacher/GRaPE-2.5-Quasar-GGUF
+- Repositorio de la cuantizacion en Hugging Face: https://huggingface.co/mradermacher/GRaPE-2.5-Quasar-GGUF
 - Modelo base: https://huggingface.co/SL-AI/GRaPE-2.5-Quasar
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#GRaPE-2.5-Quasar-GGUF
 - Solicitudes de cuantizacion y FAQ del autor: https://huggingface.co/mradermacher/model_requests

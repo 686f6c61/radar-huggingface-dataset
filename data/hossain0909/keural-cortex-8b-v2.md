@@ -1,7 +1,7 @@
 # hossain0909/Keural-Cortex-8B-v2
 
 ## Resumen
-Keural-Cortex-8B-v2 es un checkpoint experimental de un modelo de lenguaje causal denso compatible con la arquitectura Qwen3, derivado de Qwen/Qwen3-8B-Base y publicado por el usuario hossain0909 en HuggingFace. El autor lo presenta explicitamente como un artefacto que no supero la aceptacion local para su publicacion: no esta recomendado para produccion ni para ejecucion autonoma de herramientas. Su interes es fundamentalmente documental y de investigacion: preserva el estado final de un ciclo de SFT correctivo (paso 2.990) entrenado en septiembre de 2026 sobre cuatro NVIDIA H200.
+Keural-Cortex-8B-v2 es un checkpoint experimental de un modelo de lenguaje causal denso compatible con la arquitectura Qwen3, derivado de Qwen/Qwen3-8B-Base y publicado por el usuario hossain0909 en Hugging Face. El autor lo presenta explicitamente como un artefacto que no supero la aceptacion local para su publicacion: no esta recomendado para produccion ni para ejecucion autonoma de herramientas. Su interes es fundamentalmente documental y de investigacion: preserva el estado final de un ciclo de SFT correctivo (paso 2.990) entrenado en septiembre de 2026 sobre cuatro NVIDIA H200.
 
 El modelo declara un tamano nominal de aproximadamente 8B parametros, pero el recuento real de pesos en safetensors es de 2.047.683.840 parametros (unos 2,05B), una discrepancia significativa que conviene tener en cuenta al planificar el despliegue. Esta especializado en conversacion bilingue ingles-coreano, con una ventana de contexto configurada de 65.536 tokens mediante YaRN factor 2, aunque el propio autor advierte que dicha configuracion no garantiza un razonamiento fiable en toda la ventana.
 
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparables de terceros en la informacion 
 - El identificador de modelo del ejemplo de carga (`mkd-hossain/Keural-Cortex-8B-v2`) difiere del ID del repositorio (`hossain0909/Keural-Cortex-8B-v2`); conviene verificar la ruta correcta.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-v2
+- Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - No se han encontrado en la informacion disponible papers, blogs, repositorios ni demos adicionales.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ZINI-1-CHAT-STORIES es un modelo de generacion de texto de 494.032.768 parametros (≈0,49B) publicado por el usuario `zeene-prod` en HuggingFace, orientado exclusivamente a la escritura de ficcion: relatos cortos, cuentos de hadas, historias para dormir, misterio, romance, ciencia ficcion y terror. Se distribuye bajo licencia Apache-2.0 y esta construido sobre `Qwen/Qwen2.5-0.5B-Instruct`, del que conserva la arquitectura transformer decoder-only de la familia Qwen2.
+ZINI-1-CHAT-STORIES es un modelo de generacion de texto de 494.032.768 parametros (≈0,49B) publicado por el usuario `zeene-prod` en Hugging Face, orientado exclusivamente a la escritura de ficcion: relatos cortos, cuentos de hadas, historias para dormir, misterio, romance, ciencia ficcion y terror. Se distribuye bajo licencia Apache-2.0 y esta construido sobre `Qwen/Qwen2.5-0.5B-Instruct`, del que conserva la arquitectura transformer decoder-only de la familia Qwen2.
 
 La particularidad del modelo no reside en los pesos. La propia model card declara que redistribuye los pesos de su modelo base "unchanged" (sin cambios), por lo que la especializacion en narrativa se consigue mediante un system prompt de tipo "story-only" que instruye al modelo a responder unicamente con ficcion y a rechazar peticiones de matematicas, codigo, meteo, recetas o noticias. El autor publica ese prompt en la model card junto con un Space de demostracion que lo aplica.
 
-Es relevante ahora por dos motivos: por un lado, demuestra un patron de publicacion cada vez mas comun en HuggingFace (reempaquetado de un modelo base con un prompt de sistema y una interfaz de demo); por otro, ofrece un caso de estudio barato (≈1 GB de repositorio, ejecutable en hardware muy ligero) para evaluar como se comporta un modelo de 0,5B como companero conversacional de ficcion en ingles. No se han publicado resultados de benchmarks ni se documentan detalles de entrenamiento adicionales.
+Es relevante ahora por dos motivos: por un lado, demuestra un patron de publicacion cada vez mas comun en Hugging Face (reempaquetado de un modelo base con un prompt de sistema y una interfaz de demo); por otro, ofrece un caso de estudio barato (≈1 GB de repositorio, ejecutable en hardware muy ligero) para evaluar como se comporta un modelo de 0,5B como companero conversacional de ficcion en ingles. No se han publicado resultados de benchmarks ni se documentan detalles de entrenamiento adicionales.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ En consecuencia, no existe un proceso de entrenamiento propio de ZINI-1-CHAT-STO
 - Modo "story-only" inducido por prompt: rechaza peticiones de matematicas, programacion, meteo, recetas o noticias y las reconduce a narrativa.
 - Ajuste de tono y genero mediante instrucciones en lenguaje natural dentro del prompt de usuario o del system prompt.
 - Integracion con la libreria `transformers` mediante `AutoModelForCausalLM` y `AutoTokenizer`, y con `apply_chat_template` para el formato conversacional de Qwen.
-- Compatibilidad declarada con Text Generation Inference (`text-generation-inference`) y con endpoints de la Inference API de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con Text Generation Inference (`text-generation-inference`) y con endpoints de la Inference API de Hugging Face (`endpoints_compatible`).
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio, ni modo de razonamiento explicito ("thinking mode").
 - No se documenta capacidad multilingue: unicamente ingles.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU consumer con 2 GB o mas de VRAM es suficiente (RTX 3060, RTX 4060, GTX 1650, GTX 1050 Ti, e incluso iGPU integradas con memoria compartida). Las A100, H100 o L40S son totalmente innecesarias y no aportan ventaja relevante.
 - Inferencia en CPU: viable. Con 0,5B parametros y pesos en bf16/fp16, la generacion en CPU es practica para uso interactivo con prompts cortos; el modelo entra sin problema en memoria de sistemas con 8-16 GB de RAM.
 - Despliegue en edge: factible tras conversion a GGUF u ONNX, aunque el autor no publica artefactos de este tipo, por lo que la conversion corre por cuenta del usuario.
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM`, Text Generation Inference (tiene el tag `text-generation-inference`), la Inference API de HuggingFace (tag `endpoints_compatible`) y vLLM (la arquitectura Qwen2 esta soportada por el motor). Para llama.cpp u Ollama habria que generar el GGUF manualmente.
+- Opciones de despliegue: `transformers` con `AutoModelForCausalLM`, Text Generation Inference (tiene el tag `text-generation-inference`), la Inference API de Hugging Face (tag `endpoints_compatible`) y vLLM (la arquitectura Qwen2 esta soportada por el motor). Para llama.cpp u Ollama habria que generar el GGUF manualmente.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 - Longitud de salida recomendada por el autor: 512 tokens en el ejemplo con Transformers y 600 tokens en la llamada a la API, con `temperature` 0,9-1,0 y `top_p` 0,95.
 
@@ -99,7 +99,7 @@ Consideracion practica: dado que ZINI-1-CHAT-STORIES no modifica los pesos, la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeene-prod/ZINI-1-CHAT-STORIES
+- Modelo en Hugging Face: https://huggingface.co/zeene-prod/ZINI-1-CHAT-STORIES
 - Space de demostracion: https://huggingface.co/spaces/zeene-prod/ZINI-1-CHAT-STORIES-demo
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/LICENSE

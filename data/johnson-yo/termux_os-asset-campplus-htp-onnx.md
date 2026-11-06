@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - johnson-yo/termux_os-asset-campplus-htp-onnx](https://huggingface.co/johnson-yo/termux_os-asset-campplus-htp-onnx)
+- [Hugging Face - johnson-yo/termux_os-asset-campplus-htp-onnx](https://huggingface.co/johnson-yo/termux_os-asset-campplus-htp-onnx)
 - [Termux-OS framework (referencia en la model card)](https://github.com/johnson-yo/termux-os-framework)

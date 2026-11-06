@@ -6,7 +6,7 @@ DeepSeek-Prover-V1.5-SFT es un modelo de lenguaje especializado en demostración
 
 El problema que resuelve es concreto: traducir enunciados matemáticos formales a demostraciones verificables por el comprobador Lean 4. Frente a la generación de lenguaje natural, aquí el objetivo no es la fluidez, sino producir código de prueba que el asistente acepte sin errores. En su variante SFT alcanza un 57,4 % en el conjunto de test del benchmark miniF2F (nivel de instituto) y un 22,9 % en ProofNet (nivel de grado universitario), según los datos publicados por el autor.
 
-Es relevante ahora porque forma parte de una línea de investigación que combina el ajuste supervisado con aprendizaje por refuerzo a partir de retroalimentación del propio asistente de pruebas (RLPAF) y búsqueda en árbol Monte-Carlo (RMaxTS), lo que permitió a la versión RL+RMaxTS de la familia alcanzar un 63,5 % en miniF2F-test. La versión SFT que aquí se documenta es el punto de partida intermedio de esa cadena y está disponible públicamente en HuggingFace.
+Es relevante ahora porque forma parte de una línea de investigación que combina el ajuste supervisado con aprendizaje por refuerzo a partir de retroalimentación del propio asistente de pruebas (RLPAF) y búsqueda en árbol Monte-Carlo (RMaxTS), lo que permitió a la versión RL+RMaxTS de la familia alcanzar un 63,5 % en miniF2F-test. La versión SFT que aquí se documenta es el punto de partida intermedio de esa cadena y está disponible públicamente en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -94,11 +94,11 @@ Nota: la variante SFT supera a Base y se sitúa por debajo de RL y RL+RMaxTS, qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-Prover-V1.5-SFT
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-Prover-V1.5-SFT
 - Variante Base: https://huggingface.co/deepseek-ai/DeepSeek-Prover-V1.5-Base
 - Variante RL: https://huggingface.co/deepseek-ai/DeepSeek-Prover-V1.5-RL
 - Paper (arXiv 2408.08152): https://arxiv.org/abs/2408.08152
 - Repositorio de codigo: https://github.com/deepseek-ai/DeepSeek-Prover-V1.5
 - Web de DeepSeek: https://www.deepseek.com/
 - Plataforma API de DeepSeek: https://www.deepseek.com/en/platform/
-- Perfil de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Perfil de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai

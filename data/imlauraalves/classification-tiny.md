@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imlauraalves/classification-tiny` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura MobileViT orientada a clasificación de imágenes. Lo publica el usuario imlauraalves el 19 de octubre de 2026, con licencia BSD-3-Clause y un único checkpoint en formato safetensors de 33.088 parámetros totales. No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es "a valid initialization checkpoint for smoke tests" y que no se presenta como un checkpoint evaluado.
+`imlauraalves/classification-tiny` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura MobileViT orientada a clasificación de imágenes. Lo publica el usuario imlauraalves el 19 de octubre de 2026, con licencia BSD-3-Clause y un único checkpoint en formato safetensors de 33.088 parámetros totales. No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es "a valid initialization checkpoint for smoke tests" y que no se presenta como un checkpoint evaluado.
 
 El problema que resuelve no es de inferencia, sino de andamiaje: sirve como base reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `inference.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (optimizador Adafactor con schedule de tipo step) y un README que documenta explícitamente la ausencia de métricas.
 
@@ -27,7 +27,7 @@ Su relevancia actual es muy limitada fuera del ámbito de prototipado: no hay be
 | Fecha de creación | 2026-10-19 |
 | Última actualización | 2026-10-19 |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Optimizador por defecto | Adafactor con schedule `step` |
 | Escala declarada en la card | `giant` (inconsistente con los 33.088 parámetros reales) |
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU consumer: sí, en cualquier modelo (RTX 3060, RTX 4090, GTX 1650, etc.), con un consumo de memoria despreciable frente al resto del sistema.
 - Opciones de despliegue: PyTorch eager a través de `inference.py`; vLLM, TGI, llama.cpp u Ollama no aplican porque son servidores para modelos generativos de lenguaje, no para clasificación visual. Para servir clasificación en producción haría falta exportar a TorchScript u ONNX, algo no documentado en el repositorio.
 - Latencia y throughput estimados: no disponibles. Dado el tamaño, el cuello de botella real sería el preprocesado de imagen y el pipeline de datos, no el modelo.
-- Almacenamiento: el repositorio ocupa 0.0 GB según HuggingFace, coherente con un checkpoint de inicialización mínimo.
+- Almacenamiento: el repositorio ocupa 0.0 GB según Hugging Face, coherente con un checkpoint de inicialización mínimo.
 
 ## Comparativa con modelos similares
 
@@ -76,7 +76,7 @@ Los valores de las alternativas provienen de documentación pública de referenc
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| `imlauraalves/classification-tiny` | 33.088 | No documentada | BSD-3-Clause | HuggingFace, 0 descargas | Checkpoint de inicialización, sin entrenar |
+| `imlauraalves/classification-tiny` | 33.088 | No documentada | BSD-3-Clause | Hugging Face, 0 descargas | Checkpoint de inicialización, sin entrenar |
 | MobileNetV3-Small (referencia torchvision) | ~2,5 M | Resolución de imagen configurable | BSD-3-Clause (código de referencia) | Amplia, pesos preentrenados en ImageNet | Entrenado y evaluado |
 | ResNet-18 (referencia torchvision) | ~11,7 M | Resolución de imagen configurable | BSD-3-Clause (código de referencia) | Amplia, pesos preentrenados en ImageNet | Entrenado y evaluado |
 | ViT-Base/16 (referencia) | ~86 M | 224x224 típicamente | Según implementación (a menudo Apache-2.0) | Amplia | Entrenado y evaluado |
@@ -91,12 +91,12 @@ La comparación relevante no es de rendimiento, sino de estado: los tres backbon
 - Riesgo de alucinación: no aplica en sentido estricto al no ser un modelo generativo, pero sí existe riesgo de atribuirle capacidades que no tiene si se cita fuera de contexto.
 - Incoherencia documental: la card declara `Scale: giant` mientras que el safetensors contiene 33.088 parámetros. Conviene tratar cualquier afirmación de escala de la card con escepticismo.
 - Sin información sobre resolución de entrada, número de clases, normalización de píxeles ni espacio de etiquetas, lo que impide un uso directo incluso como extractor de características.
-- Requiere adaptador explícito: las APIs automáticas de carga de HuggingFace no funcionarán sin código adicional, según advierte el autor.
+- Requiere adaptador explícito: las APIs automáticas de carga de Hugging Face no funcionarán sin código adicional, según advierte el autor.
 - Licencia BSD-3-Clause: permite uso comercial y modificación, con obligación de conservar el aviso de copyright, incluir la licencia y no usar el nombre del autor para promocionar derivados. La card añade que deben revisarse por separado los términos de los datos de origen si se usan datasets externos.
 - Repositorio sin tracción: 0 descargas y 0 likes, sin señales de mantenimiento posterior a la fecha de creación.
 - Tamaño de repo 0.0 GB: si los ficheros son punteros LFS o el redondeo oculta el contenido real, conviene verificar la descarga completa antes de integrarlo en un pipeline.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imlauraalves/classification-tiny
+- Repositorio en Hugging Face: https://huggingface.co/imlauraalves/classification-tiny
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en la información proporcionada.

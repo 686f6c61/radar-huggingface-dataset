@@ -71,8 +71,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Berkeley-ICON-Lab/pi05-taco-libero32-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Berkeley-ICON-Lab/pi05-taco-libero32-checkpoints
 - Repositorio de evaluaciones (dataset): https://huggingface.co/Berkeley-ICON-Lab/pi05-taco-libero32-evals (mencionado en la model card)
 - Paper TACO (RSS 2026): https://iconlab.negarmehr.com/news/2026-4-29-TACO/
-- Documentación de LIBERO en HuggingFace: https://huggingface.co/docs/lerobot/libero
+- Documentación de LIBERO en Hugging Face: https://huggingface.co/docs/lerobot/libero
 - Modelo base pi0.5 de LeRobot: https://huggingface.co/lerobot/pi05_libero_base

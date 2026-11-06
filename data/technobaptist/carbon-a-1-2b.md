@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Carbon-A-1.2B es un modelo de anotación de ADN perteneciente a la familia Carbon, publicado en HuggingFace por el usuario TechnoBaptist (la model card hace referencia a la organización HuggingFaceBio). Su tarea no es la generación de texto, sino la clasificación a nivel de base: predice, para cada nucleótido, si forma parte de una secuencia codificante de proteína (CDS) o de una región no codificante, en genomas eucariotas. Para ello emplea dos cabezas de clasificación independientes, una por hebra, lo que permite conservar regiones codificantes que se solapan en hebras opuestas.
+Carbon-A-1.2B es un modelo de anotación de ADN perteneciente a la familia Carbon, publicado en Hugging Face por el usuario TechnoBaptist (la model card hace referencia a la organización HuggingFaceBio). Su tarea no es la generación de texto, sino la clasificación a nivel de base: predice, para cada nucleótido, si forma parte de una secuencia codificante de proteína (CDS) o de una región no codificante, en genomas eucariotas. Para ello emplea dos cabezas de clasificación independientes, una por hebra, lo que permite conservar regiones codificantes que se solapan en hebras opuestas.
 
 El modelo tiene 1.153.656.832 parámetros (aproximadamente 1,2 B) y trabaja sobre un tokenizador de 6-mers no solapados, de modo que cada token representa seis bases. La ventana de contexto es de 16.384 tokens, equivalentes a 98.304 pares de bases (pb); su pipeline de anotación procesa registros más largos en ventanas solapadas 1.024 tokens (6.144 pb) y promedia las predicciones en las zonas de solape. Se distribuye bajo licencia Apache 2.0 en formato safetensors y requiere `trust_remote_code=True`.
 
@@ -82,7 +82,7 @@ La información proporcionada no incluye comparativas con otros modelos de anota
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Carbon-A-1.2B | 1,2 B | 98.304 pb (16.384 tokens) | Clasificación por base de CDS en eucariotas | Apache 2.0 | HuggingFace, safetensors, requiere código personalizado |
+| Carbon-A-1.2B | 1,2 B | 98.304 pb (16.384 tokens) | Clasificación por base de CDS en eucariotas | Apache 2.0 | Hugging Face, safetensors, requiere código personalizado |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ La información proporcionada no incluye comparativas con otros modelos de anota
 - Umbral de confianza orientado a exhaustividad: las métricas reportadas cuentan los genes con confianza igual o superior a 0,1, un umbral bajo que favorece el recuerdo frente a la precisión; en producción conviene calibrar este umbral según el coste de los falsos positivos.
 - Dependencia de código personalizado: el uso requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio del autor. Conviene auditar `annotation_pipeline/` antes de integrarlo en entornos de producción.
 - Limitaciones de plataforma: el pipeline solo funciona en Linux y exige una build CUDA de PyTorch y un compilador de C++ con OpenMP. No se documentan alternativas en CPU ni en macOS o Windows.
-- Ambigüedad en la titularidad del repositorio: los metadatos de HuggingFace apuntan al identificador `TechnoBaptist/Carbon-A-1.2B`, mientras que la model card indica descargar desde `HuggingFaceBio/Carbon-A-1.2B` y los datos de evaluación residen en el bucket `HuggingFaceBio/Carbon-A-training-data`. Hay que verificar el repositorio canónico antes de fijar una dependencia.
+- Ambigüedad en la titularidad del repositorio: los metadatos de Hugging Face apuntan al identificador `TechnoBaptist/Carbon-A-1.2B`, mientras que la model card indica descargar desde `HuggingFaceBio/Carbon-A-1.2B` y los datos de evaluación residen en el bucket `HuggingFaceBio/Carbon-A-training-data`. Hay que verificar el repositorio canónico antes de fijar una dependencia.
 - Sin validación comunitaria: el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha, por lo que no existe retroalimentación externa ni informes independientes de comportamiento.
 - Longitud de contexto: la ventana de 98.304 pb obliga a procesar genomas grandes en múltiples ventanas con solape y promediado, lo que puede introducir artefactos en las fronteras de ventana y aumenta el coste computacional proporcionalmente al solape.
 - Riesgo de desajuste de tabla de codones: el pipeline avisa y renombra el directorio de resultados cuando detecta un posible desajuste, lo que indica que el modelo puede producir traducciones incorrectas si la tabla no se especifica correctamente.
@@ -101,7 +101,7 @@ La información proporcionada no incluye comparativas con otros modelos de anota
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/Carbon-A-1.2B
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/Carbon-A-1.2B
 - Referencia alternativa indicada en la model card: https://huggingface.co/HuggingFaceBio/Carbon-A-1.2B
 - README del pipeline de anotación: https://huggingface.co/TechnoBaptist/Carbon-A-1.2B/blob/main/annotation_pipeline/README.md
 - Bucket de datos de entrenamiento y evaluación: https://huggingface.co/buckets/HuggingFaceBio/Carbon-A-training-data

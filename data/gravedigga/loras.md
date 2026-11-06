@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gravedigga/loras`, publicado en HuggingFace por el usuario `gravedigga`, contiene un conjunto de archivos con un tamaño total de 13,7 GB. El nombre sugiere que podría tratarse de adaptadores LoRA, aunque no se puede confirmar porque la model card no ofrece ninguna descripción técnica ni funcional. La licencia se declara como `unknown` y no se especifican idiomas, pipeline ni tareas soportadas.
+El repositorio `gravedigga/loras`, publicado en Hugging Face por el usuario `gravedigga`, contiene un conjunto de archivos con un tamaño total de 13,7 GB. El nombre sugiere que podría tratarse de adaptadores LoRA, aunque no se puede confirmar porque la model card no ofrece ninguna descripción técnica ni funcional. La licencia se declara como `unknown` y no se especifican idiomas, pipeline ni tareas soportadas.
 
 Este modelo no presenta información pública suficiente para determinar su arquitectura, parámetros, contexto o capacidades. Se desconoce si es un modelo base, un adaptador, un conjunto de pesos o cualquier otro tipo de artefacto. La ausencia de documentación, la licencia indefinida y la falta de descargas y valoraciones hacen que no sea recomendable su uso en entornos de producción o investigación sin una evaluación previa por parte del interesado.
 
@@ -54,4 +54,4 @@ No disponible. Al desconocer la arquitectura, el tamano y las capacidades del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gravedigga/loras
+- Repositorio en Hugging Face: https://huggingface.co/gravedigga/loras

@@ -31,7 +31,7 @@ No hay información sobre el volumen de datos de entrenamiento, la composición 
 
 - Estimación de pose mediante mapas de calor, con salida del detector en formato de heatmaps por punto clave u objeto.
 - Extracción de características visuales densas gracias al trunk DINOv3 ViT-B/16, reutilizable en otras tareas perceptivas.
-- Integración potencial en pipelines de robótica (la etiqueta de HuggingFace es `robotics` y el pipeline declarado es `robotics`).
+- Integración potencial en pipelines de robótica (la etiqueta de Hugging Face es `robotics` y el pipeline declarado es `robotics`).
 - Punto de partida para fine-tuning supervisado en dominios específicos de manipulación o seguimiento de objetos.
 - No se documenta soporte de tool calling, function calling, razonamiento multi-paso, capacidades multimodales de lenguaje, audio o modo "thinking".
 - No se documentan capacidades multilingües (no aplica).
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Najongs/dinobotpose-release-outputs` (este repo) | Volcado de checkpoints de detector de pose con trunk DINOv3 ViT-B/16 | No disponible (trunk ViT-B/16) | No aplica | DINOv3 License | Público en HuggingFace, 0 descargas |
-| `Najongs/dinobotpose` | Repositorio principal del proyecto DINOBotPose en HuggingFace | No disponible | No aplica | No disponible en la información | Público en HuggingFace |
+| `Najongs/dinobotpose-release-outputs` (este repo) | Volcado de checkpoints de detector de pose con trunk DINOv3 ViT-B/16 | No disponible (trunk ViT-B/16) | No aplica | DINOv3 License | Público en Hugging Face, 0 descargas |
+| `Najongs/dinobotpose` | Repositorio principal del proyecto DINOBotPose en Hugging Face | No disponible | No aplica | No disponible en la información | Público en Hugging Face |
 | Repositorio GitHub `Najongs/DINOBotPose` | Código del proyecto | No disponible | No aplica | No disponible en la información | Público en GitHub |
 | Detectores de pose genéricos (HRNet, RTMPose) | CNN especializadas en pose | No disponible en la información | No aplica | No disponible en la información | Existen, pero sin datos comparativos publicados aquí |
 
@@ -86,9 +86,9 @@ No se dispone de métricas comunes ni de especificaciones homogéneas que permit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Najongs/dinobotpose-release-outputs
-- Repositorio principal del proyecto en HuggingFace: https://huggingface.co/Najongs/dinobotpose
+- Repositorio en Hugging Face: https://huggingface.co/Najongs/dinobotpose-release-outputs
+- Repositorio principal del proyecto en Hugging Face: https://huggingface.co/Najongs/dinobotpose
 - Repositorio de código en GitHub: https://github.com/Najongs/DINOBotPose
 - Releases en GitHub: https://github.com/Najongs/DINObotPose/releases
 - Licencia DINOv3 de Meta: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
-- Filtro de modelos con etiqueta `robot-pose` en HuggingFace: https://huggingface.co/models?other=robot-pose
+- Filtro de modelos con etiqueta `robot-pose` en Hugging Face: https://huggingface.co/models?other=robot-pose

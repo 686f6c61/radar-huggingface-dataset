@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente metodológica: sirve como referencia reproduci
 | LoRA alpha | 32 |
 | Dataset de entrenamiento | sxiong/MLR_structured_trajectory (subconjunto MATH unicamente) |
 | Metodo de entrenamiento | flat |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Libreria | peft |
 | Fecha de creacion | 2026-09-25 |
 | Ultima actualizacion | 2026-09-25 |
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swadeshb/g3-1b-flat | ~1B (base) + adaptador LoRA r=16 | 8192 tokens de entrenamiento | Adaptador LoRA para matematicas | No disponible | Repositorio HuggingFace, 0 descargas |
-| google/gemma-3-1b-pt | ~1B | No disponible en la informacion proporcionada | Modelo base preentrenado | Condiciones de uso de Gemma | Publico en HuggingFace |
-| swadeshb/Qwen2.5-3B-Instruct-CRPO-V35 | 3,1B | No disponible | Modelo completo ajustado con GRPO | No disponible | Publico en HuggingFace y Featherless |
-| swadeshb/Llama-3.2-3B-Instruct-MPO-SKD-V7 | 3B | No disponible | Modelo completo ajustado | No disponible | Publico en HuggingFace y Featherless |
+| swadeshb/g3-1b-flat | ~1B (base) + adaptador LoRA r=16 | 8192 tokens de entrenamiento | Adaptador LoRA para matematicas | No disponible | Repositorio Hugging Face, 0 descargas |
+| google/gemma-3-1b-pt | ~1B | No disponible en la informacion proporcionada | Modelo base preentrenado | Condiciones de uso de Gemma | Publico en Hugging Face |
+| swadeshb/Qwen2.5-3B-Instruct-CRPO-V35 | 3,1B | No disponible | Modelo completo ajustado con GRPO | No disponible | Publico en Hugging Face y Featherless |
+| swadeshb/Llama-3.2-3B-Instruct-MPO-SKD-V7 | 3B | No disponible | Modelo completo ajustado | No disponible | Publico en Hugging Face y Featherless |
 
 No se dispone de datos de rendimiento para ninguno de estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, tipo de artefacto y disponibilidad.
 
@@ -94,10 +94,10 @@ No se dispone de datos de rendimiento para ninguno de estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeshb/g3-1b-flat
+- Modelo en Hugging Face: https://huggingface.co/swadeshb/g3-1b-flat
 - Modelo base: https://huggingface.co/google/gemma-3-1b-pt
 - Dataset de entrenamiento: https://huggingface.co/datasets/sxiong/MLR_structured_trajectory
-- Perfil del autor en HuggingFace: https://huggingface.co/swadeshb
+- Perfil del autor en Hugging Face: https://huggingface.co/swadeshb
 - Datasets del autor: https://huggingface.co/swadeshb/datasets
 - Otro modelo del autor (Qwen2.5-3B-Instruct-CRPO-V35): https://huggingface.co/swadeshb/Qwen2.5-3B-Instruct-CRPO-V35
 - Otro modelo del autor (Llama-3.2-3B-Instruct-MPO-SKD-V7): https://huggingface.co/swadeshb/Llama-3.2-3B-Instruct-MPO-SKD-V7

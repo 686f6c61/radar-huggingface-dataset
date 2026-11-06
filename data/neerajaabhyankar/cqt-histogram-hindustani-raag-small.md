@@ -98,7 +98,7 @@ No se dispone de comparaciones con modelos externos. La busqueda web realizada n
 
 | Sistema | Parametros | top-1 | top-5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ensemble publicado (CQT + histograma) | 554.000 en la rama CQT; total no disponible | 0,480 | 0,820 | other / mixed-terms | HuggingFace, 0 descargas, 1 like |
+| Ensemble publicado (CQT + histograma) | 554.000 en la rama CQT; total no disponible | 0,480 | 0,820 | other / mixed-terms | Hugging Face, 0 descargas, 1 like |
 | Rama CQT sola | 554.000 | 0,400 | 0,680 | incluida en el mismo repositorio | misma |
 | Rama de melodia sola (histograma + regresion logistica) | no disponible | 0,347 | 0,753 | incluida en el mismo repositorio | misma |
 | Pipeline simbolico con n-gramas de notas y busqueda de tonica de 12 vias | no disponible | 0,373 (media de tres repartos) | no disponible | no disponible | citado en la model card, no publicado como artefacto comparable |
@@ -121,7 +121,7 @@ Comparativa con alternativas externas de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neerajaabhyankar/cqt-histogram-hindustani-raag-small
+- Modelo en Hugging Face: https://huggingface.co/neerajaabhyankar/cqt-histogram-hindustani-raag-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/neerajaabhyankar/hindustani-raag-small
 - Matriz de confusion sobre el split de test: `assets/confusion_test.png` dentro del repositorio del modelo
 - Base de datos de raags Tanarang (origen de las plantillas iniciales): http://tanarang.com

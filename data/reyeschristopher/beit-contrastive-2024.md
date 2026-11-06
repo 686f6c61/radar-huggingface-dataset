@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reyeschristopher/beit-contrastive-2024` es un prototipo de investigación publicado en HuggingFace por el usuario reyeschristopher. Se presenta como una implementación de arquitectura BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo, en una escala que el propio autor denomina "nano". No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible con pesos de inicialización válidos para pruebas de humo (smoke tests).
+`reyeschristopher/beit-contrastive-2024` es un prototipo de investigación publicado en Hugging Face por el usuario reyeschristopher. Se presenta como una implementación de arquitectura BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo, en una escala que el propio autor denomina "nano". No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible con pesos de inicialización válidos para pruebas de humo (smoke tests).
 
 El repositorio incluye el código Python de definición del modelo y punto de entrada (`predict.py`), un `config.json` con los hiperparámetros de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un checkpoint `model.safetensors`. El autor advierte explícitamente de que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -39,7 +39,7 @@ El entrenamiento no se ha completado: el `model.safetensors` es un checkpoint de
 ## Casos de uso
 
 - Pruebas de humo de pipelines de carga: el checkpoint `model.safetensors` y `predict.py` permiten verificar que un entorno de PyTorch carga correctamente un modelo BEiT personalizado antes de invertir en un entrenamiento real.
-- Desarrollo de adaptadores de carga: al ser una implementación custom, sirve para escribir y validar el adaptador necesario que permita usar APIs genéricas de carga de HuggingFace con esta arquitectura.
+- Desarrollo de adaptadores de carga: al ser una implementación custom, sirve para escribir y validar el adaptador necesario que permita usar APIs genéricas de carga de Hugging Face con esta arquitectura.
 - Reproducción de experimentos contrastivos: el `training_args.json` con NovoGrad y schedule exponencial actúa como receta base reproducible para comparar configuraciones de preentrenamiento contrastivo con presupuesto controlado.
 - Evaluación metodológica de baselines: el autor propone usar un conjunto held-out específico de tarea, reportar la métrica en al menos tres semillas e incluir un baseline de capacidad equivalente; el repo sirve como plantilla para ese protocolo.
 - Docencia e investigación en preentrenamiento visual: un modelo de 33.088 parámetros es adecuado para ilustrar el flujo completo de definición, configuración y entrenamiento de un BEiT contrastivo en entornos con recursos mínimos.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 |---|---|---|---|---|
 | reyeschristopher/beit-contrastive-2024 | 33.088 | no disponible | MIT | Prototipo sin entrenar |
 | BEiT base (Microsoft, referencia original) | ~86 M (base) | no aplica (visión) | MIT | Modelo entrenado y publicado |
-| Otros prototipos BEiT contrastivos en HuggingFace | no disponible | no disponible | variable | no disponible |
+| Otros prototipos BEiT contrastivos en Hugging Face | no disponible | no disponible | variable | no disponible |
 
 La comparación con BEiT base es únicamente arquitectónica: el modelo de referencia de Microsoft está entrenado y evaluado en tareas de visión, mientras que este repositorio es un esqueleto de inicialización. No se dispone de información sobre alternativas comparables de la misma escala "nano" en la búsqueda realizada.
 
@@ -72,12 +72,12 @@ La comparación con BEiT base es únicamente arquitectónica: el modelo de refer
 - El checkpoint no ha sido entrenado: no produce representaciones ni predicciones útiles más allá de pruebas de humo.
 - No se ha auditado robustez, equidad ni transferencia de dominio, según indica el propio autor.
 - No hay métricas de benchmark ni evaluación en conjuntos held-out; cualquier cifra que se atribuya al modelo sería inventada.
-- Al ser una implementación custom, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+- Al ser una implementación custom, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 - No se declaran idiomas soportados ni resolución de entrada, lo que impide garantizar comportamiento multilingüe o multimodal.
 - Licencia MIT permite uso comercial del código, pero el autor advierte de revisar por separado los términos de los datos fuente si se usa con datasets externos.
 - El tamaño del repo (0,0 GB) y el recuento de parámetros confirman que no es apto para producción; debe tratarse como punto de partida experimental.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reyeschristopher/beit-contrastive-2024
+- Modelo en Hugging Face: https://huggingface.co/reyeschristopher/beit-contrastive-2024
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

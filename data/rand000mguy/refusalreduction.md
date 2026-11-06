@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rand000mGuy/refusalreduction` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace y pensado para su uso con la librería `diffusers`. Se construye sobre el modelo base `krea/Krea-2-Raw`, un modelo de difusión texto-a-imagen del que el adaptador hereda la arquitectura y los pesos subyacentes. El nombre del repositorio sugiere que el LoRA está orientado a reducir el comportamiento de rechazo del modelo base ante determinadas peticiones, aunque la model card no documenta explícitamente el método de entrenamiento ni el dataset empleado.
+`Rand000mGuy/refusalreduction` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face y pensado para su uso con la librería `diffusers`. Se construye sobre el modelo base `krea/Krea-2-Raw`, un modelo de difusión texto-a-imagen del que el adaptador hereda la arquitectura y los pesos subyacentes. El nombre del repositorio sugiere que el LoRA está orientado a reducir el comportamiento de rechazo del modelo base ante determinadas peticiones, aunque la model card no documenta explícitamente el método de entrenamiento ni el dataset empleado.
 
 El repositorio tiene un tamaño de 2,6 GB, coherente con un adaptador LoRA de rango medio o con pesos almacenados en precisión alta. No se han publicado resultados de benchmarks, especificaciones de entrenamiento, licencia explícita ni lista de idiomas soportados. El modelo acumula cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de una publicación reciente y sin validación comunitaria.
 
@@ -42,7 +42,7 @@ No hay datos publicados sobre el proceso de entrenamiento: se desconoce el núme
 - Pruebas de robustez y seguridad: analizar en un entorno controlado si el adaptador incrementa la probabilidad de generar contenido sensible, como paso previo al diseño de filtros o clasificadores de seguridad.
 - Prototipado rápido de pipelines texto-a-imagen: al ser un LoRA de 2,6 GB, se puede integrar en flujos de generación ya existentes sin reentrenar el modelo base.
 - Evaluación comparativa de adaptadores LoRA: usar el repositorio como caso de estudio en la comparación de técnicas de fine-tuning de bajo rango sobre modelos de difusión.
-- Docencia y formación técnica: ilustrar cómo se publica y se carga un LoRA en HuggingFace con `diffusers`, incluyendo las etiquetas de modelo base y plantilla.
+- Docencia y formación técnica: ilustrar cómo se publica y se carga un LoRA en Hugging Face con `diffusers`, incluyendo las etiquetas de modelo base y plantilla.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rand000mGuy/refusalreduction
+- Repositorio Hugging Face: https://huggingface.co/Rand000mGuy/refusalreduction
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Librería `diffusers`: https://github.com/huggingface/diffusers
 - Documentación de LoRA en `diffusers`: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

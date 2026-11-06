@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Tipo de adaptacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `syssec-utd/pylingual-shared-lora-statement-3.14-v3` | pylingual-shared-statement-v3 | LoRA r=64 (q, v) | no disponible | no disponible | other | HuggingFace |
-| `syssec-utd/pylingual-shared-statement-v3` (backbone) | propio | modelo base congelado | no disponible | no disponible | no disponible | HuggingFace |
+| `syssec-utd/pylingual-shared-lora-statement-3.14-v3` | pylingual-shared-statement-v3 | LoRA r=64 (q, v) | no disponible | no disponible | other | Hugging Face |
+| `syssec-utd/pylingual-shared-statement-v3` (backbone) | propio | modelo base congelado | no disponible | no disponible | no disponible | Hugging Face |
 | Otros adaptadores de la familia `pylingual-shared-lora-*` | pylingual-shared-statement-v3 | LoRA por version | no disponible | no disponible | other | no confirmado |
 
 No se dispone de informacion sobre alternativas fuera de la familia PyLingual que sean directamente comparables en tarea y tamano.
@@ -83,7 +83,7 @@ No se dispone de informacion sobre alternativas fuera de la familia PyLingual qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-lora-statement-3.14-v3
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-lora-statement-3.14-v3
 - Backbone: https://huggingface.co/syssec-utd/pylingual-shared-statement-v3
 - Dataset: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v3
 - Codigo: https://github.com/quinntyx/pylingual (rama `feat-shared-backbone-lora`, commit `368e29b9c9b02de8a3b383413683e938efe602dc`)

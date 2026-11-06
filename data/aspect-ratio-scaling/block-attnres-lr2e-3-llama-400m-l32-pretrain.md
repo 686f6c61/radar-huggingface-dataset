@@ -76,8 +76,8 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L32-pretrain
-- Colección AttnRes en HuggingFace: https://huggingface.co/collections/aspect-ratio-scaling/attnres
+- Repositorio Hugging Face: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L32-pretrain
+- Colección AttnRes en Hugging Face: https://huggingface.co/collections/aspect-ratio-scaling/attnres
 - Modelo L16 de la misma colección: https://huggingface.co/aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L16-pretrain
 - Paper "Attention Residuals" (arXiv): https://arxiv.org/abs/2603.15031
 - Análisis en el blog de Sebastian Raschka: https://sebastianraschka.com/llm-architecture-gallery/attention-residuals/

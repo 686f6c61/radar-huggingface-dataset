@@ -27,7 +27,7 @@ CLAP es un modelo contrastivo que entrena dos encoders separados —uno de audio
 - Extracción de embeddings de texto: genera representaciones vectoriales de textos descriptivos de sonidos, con dimensión 512.
 - Extracción de embeddings de audio: genera representaciones vectoriales de clips de audio, con dimensión 512.
 - Recuperación texto-audio: permite buscar en bases de datos de audio usando consultas en lenguaje natural mediante comparación de embeddings.
-- Extracción de características (feature extraction): el pipeline de HuggingFace para este modelo es feature-extraction.
+- Extracción de características (feature extraction): el pipeline de Hugging Face para este modelo es feature-extraction.
 - Ejecución en JavaScript: los pesos ONNX permiten inferencia directa en navegadores y Node.js mediante Transformers.js, sin infraestructura Python.
 
 ## Casos de uso
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | JONNYVERSE/clap-htsat-unfused | ONNX | Transformers.js (JavaScript) | no disponible | no disponible | no disponible |
 | laion/clap-htsat-unfused | no disponible (modelo original) | Transformers (Python) | no disponible | no disponible | no disponible |
 
-Ambos modelos comparten la misma arquitectura CLAP. La diferencia principal es el formato de pesos y el ecosistema de ejecución: la versión de JONNYVERSE está adaptada para JavaScript, mientras que el modelo original de laion está pensado para el ecosistema Python de HuggingFace. No hay datos comparativos de rendimiento en la información disponible.
+Ambos modelos comparten la misma arquitectura CLAP. La diferencia principal es el formato de pesos y el ecosistema de ejecución: la versión de JONNYVERSE está adaptada para JavaScript, mientras que el modelo original de laion está pensado para el ecosistema Python de Hugging Face. No hay datos comparativos de rendimiento en la información disponible.
 
 ## Limitaciones y advertencias
 

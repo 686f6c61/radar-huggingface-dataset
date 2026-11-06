@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MeRM es un modelo publicado en HuggingFace por el usuario illusive-chase bajo licencia MIT. El repositorio, de 9,2 GB, contiene pesos en formato safetensors y fue creado el 27 de octubre de 2026. Se trata de un modelo sin documentación asociada: la model card únicamente declara la licencia, sin especificar arquitectura, propósito, datos de entrenamiento ni idiomas soportados.
+MeRM es un modelo publicado en Hugging Face por el usuario illusive-chase bajo licencia MIT. El repositorio, de 9,2 GB, contiene pesos en formato safetensors y fue creado el 27 de octubre de 2026. Se trata de un modelo sin documentación asociada: la model card únicamente declara la licencia, sin especificar arquitectura, propósito, datos de entrenamiento ni idiomas soportados.
 
 A partir del tamaño del repositorio (9,2 GB) puede estimarse que el modelo contiene del orden de 4 a 5 mil millones de parámetros en precisión FP16/BF16, aunque esta cifra es una inferencia del tamaño de los archivos y no un dato confirmado por el autor. No se dispone de información sobre el pipeline de uso, los idiomas, el contexto máximo ni los benchmarks.
 
@@ -90,5 +90,5 @@ La comparación es únicamente de orden de magnitud: MeRM carece de la documenta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/illusive-chase/MeRM
+- Hugging Face: https://huggingface.co/illusive-chase/MeRM
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

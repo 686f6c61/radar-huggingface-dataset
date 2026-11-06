@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-NVFP4-GGUF es una cuantización NVFP4 en formato GGUF del modelo multimodal Qwen3.6-35B-A3B de Alibaba (equipo Qwen), publicada por el usuario prithivMLmods en HuggingFace. El modelo base es un lenguaje denso-en-actividad disperso (sparse Mixture-of-Experts) con 35B de parámetros totales y aproximadamente 3B activos por token, orientado a programación agéntica y tareas multimodales (texto, imágenes, vídeo y OCR).
+Qwen3.6-35B-A3B-NVFP4-GGUF es una cuantización NVFP4 en formato GGUF del modelo multimodal Qwen3.6-35B-A3B de Alibaba (equipo Qwen), publicada por el usuario prithivMLmods en Hugging Face. El modelo base es un lenguaje denso-en-actividad disperso (sparse Mixture-of-Experts) con 35B de parámetros totales y aproximadamente 3B activos por token, orientado a programación agéntica y tareas multimodales (texto, imágenes, vídeo y OCR).
 
 La relevancia de esta versión concreta radica en la cuantización NVFP4, un formato de punto flotante de 4 bits optimizado para los Tensor Cores de la arquitectura NVIDIA Blackwell (RTX Pro 6000, serie RTX 50, B200 y B300). Esto permite ejecutar el modelo completo en una sola GPU de gama alta con un pico de consumo de apenas 23 GiB de VRAM, según las pruebas del autor. Además, el fichero GGUF incorpora Multi-Token Prediction (MTP), una forma de decodificación especulativa integrada en los propios pesos que acelera la inferencia local sin necesidad de un modelo draft separado.
 

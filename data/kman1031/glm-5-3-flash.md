@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por el equipo GLM (zai-org) y distribuido en HuggingFace a través del repositorio `kman1031/GLM-5.3-Flash`. Se trata de un modelo de arquitectura híbrida de atención dispersa y lineal con 320.000 millones de parámetros totales y solo 18.000 millones activos, lo que lo sitúa en la categoría de modelos MoE de gran escala pero con un coste de inferencia muy contenido. Su ventana de contexto operativa alcanza los 300.000 tokens en evaluación, con soporte declarado de hasta 1M de tokens en tareas específicas como NL2Repo.
+GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por el equipo GLM (zai-org) y distribuido en Hugging Face a través del repositorio `kman1031/GLM-5.3-Flash`. Se trata de un modelo de arquitectura híbrida de atención dispersa y lineal con 320.000 millones de parámetros totales y solo 18.000 millones activos, lo que lo sitúa en la categoría de modelos MoE de gran escala pero con un coste de inferencia muy contenido. Su ventana de contexto operativa alcanza los 300.000 tokens en evaluación, con soporte declarado de hasta 1M de tokens en tareas específicas como NL2Repo.
 
 El modelo resuelve el problema del coste de servicio en contextos largos mediante una arquitectura que combina atención lineal con atención dispersa, reduciendo drásticamente el coste de serving sin sacrificar precisión en contexto largo. Incorpora además Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado, y ha sido entrenado sobre un corpus multimodal de 30 billones de tokens. Su posicionamiento es claro: supera a GLM-5.2 en benchmarks y cargas reales a una décima parte del precio, y se aproxima a Claude Opus 4.8 en tareas de código y agentes.
 
@@ -82,7 +82,7 @@ No se dispone de datos numéricos de benchmarks ni de especificaciones completas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kman1031/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/kman1031/GLM-5.3-Flash
 - Blog oficial: https://z.ai/blog/glm-5.3-flash
 - Informe técnico (arXiv): https://arxiv.org/abs/2602.15763
 - API Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

@@ -113,7 +113,7 @@ No se dispone en la informacion proporcionada de una comparativa con otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/interfaze-ai/interfaze-1-lite
+- Modelo en Hugging Face: https://huggingface.co/interfaze-ai/interfaze-1-lite
 - Sitio web: https://interfaze.ai
 - Documentacion del modelo: https://interfaze.ai/docs/models/interfaze-1-lite
 - Run tasks (documentacion de tareas): https://interfaze.ai/docs/run-tasks

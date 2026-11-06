@@ -18,7 +18,7 @@ Es relevante ahora porque ilustra el flujo de trabajo típico de especializació
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (modelo de accion robotica; no se documentan capacidades linguisticas) |
-| Licencia | NVIDIA Open Model License (`nvidia-open-model-license`), etiquetada como `other` en HuggingFace |
+| Licencia | NVIDIA Open Model License (`nvidia-open-model-license`), etiquetada como `other` en Hugging Face |
 | Formato de pesos | safetensors |
 | Horizonte de accion | 16 pasos a 15 Hz = 1,07 s (`aloha_config_h16.py`) |
 | Dimension del estado | 14 (dos brazos + dos pinzas ALOHA); brazos en modo RELATIVE (delta respecto al estado articular actual), pinzas ABSOLUTE |
@@ -70,9 +70,9 @@ Conviene senalar que los resultados de la busqueda web proporcionada no contiene
 
 | Modelo | Parametros | Frecuencia de datos | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-15hz` (este) | ~3B (heredados del base) | 15 Hz | Horizonte de accion 16 pasos = 1,07 s | NVIDIA Open Model License | Publico en HuggingFace, 0 descargas |
-| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup` | ~3B (mismo base) | No especificada en esta ficha (grabacion previa) | No disponible | NVIDIA Open Model License | Publico en HuggingFace |
-| `nvidia/GR00T-N1.6-3B` | ~3B (segun denominacion) | No aplica (modelo base preentrenado) | No disponible | NVIDIA Open Model License | Publico en HuggingFace |
+| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-15hz` (este) | ~3B (heredados del base) | 15 Hz | Horizonte de accion 16 pasos = 1,07 s | NVIDIA Open Model License | Publico en Hugging Face, 0 descargas |
+| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup` | ~3B (mismo base) | No especificada en esta ficha (grabacion previa) | No disponible | NVIDIA Open Model License | Publico en Hugging Face |
+| `nvidia/GR00T-N1.6-3B` | ~3B (segun denominacion) | No aplica (modelo base preentrenado) | No disponible | NVIDIA Open Model License | Publico en Hugging Face |
 
 No se dispone de datos sobre otros modelos VLA comparables (por ejemplo, alternativas de otros fabricantes o de la comunidad) en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento ni comparaciones cuantitativas.
 
@@ -86,13 +86,13 @@ No se dispone de datos sobre otros modelos VLA comparables (por ejemplo, alterna
 - Idiomas y capacidades linguisticas: no documentados; no debe asumirse comprension de instrucciones en lenguaje natural ni comportamiento multilingue.
 - Riesgo de alucinacion motora: al ser una politica generativa de acciones, puede producir trayectorias plausibles pero fisicamente invalidas; en un robot real esto implica riesgo de colision, por lo que se requieren limites de seguridad en el controlador.
 - Sesgos: no documentados. Los datos provienen de 31 episodios grabados por un operador concreto, por lo que cabe esperar sesgo hacia esa distribucion de posiciones iniciales, iluminacion y estilo de demostracion.
-- Licencia: NVIDIA Open Model License, etiquetada como `other` en HuggingFace. Es imprescindible revisar los terminos completos antes de cualquier uso comercial; el texto integro se encuentra en el enlace incluido mas abajo.
+- Licencia: NVIDIA Open Model License, etiquetada como `other` en Hugging Face. Es imprescindible revisar los terminos completos antes de cualquier uso comercial; el texto integro se encuentra en el enlace incluido mas abajo.
 - Ficheros incompletos para reentrenamiento: solo se publican ficheros de inferencia, sin estado del optimizador, del *scheduler* ni del entrenador, de modo que no es posible reanudar el entrenamiento tal cual.
 - Advertencia de seguridad: cualquier despliegue fisico debe realizarse en entorno controlado, con parada de emergencia y validacion previa en simulacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-15hz
+- Modelo en Hugging Face: https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-15hz
 - Primer ajuste del mismo autor sobre la misma tarea: https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.6-3B
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

@@ -77,9 +77,9 @@ No se han publicado en la informacion disponible resultados de benchmarks compar
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sapidlabs/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4-W4A16 | 74B totales / 9B activos (denominacion) | Config. probada 65.536 tokens; cache KV de 3,8M tokens | NVFP4 W4A16 + BF16 | 51,4 GB | openmdw-1.1 | HuggingFace (sapidlabs) |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 | 74B totales / 9B activos | no disponible | BF16 | 150 GB | openmdw-1.1 | HuggingFace (nvidia) |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 | 30B totales / 3B activos (segun denominacion) | no disponible | NVFP4 (Mamba in/out en FP8) | no disponible | no disponible | HuggingFace (nvidia) |
+| sapidlabs/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4-W4A16 | 74B totales / 9B activos (denominacion) | Config. probada 65.536 tokens; cache KV de 3,8M tokens | NVFP4 W4A16 + BF16 | 51,4 GB | openmdw-1.1 | Hugging Face (sapidlabs) |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 | 74B totales / 9B activos | no disponible | BF16 | 150 GB | openmdw-1.1 | Hugging Face (nvidia) |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 | 30B totales / 3B activos (segun denominacion) | no disponible | NVFP4 (Mamba in/out en FP8) | no disponible | no disponible | Hugging Face (nvidia) |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada. La comparacion se limita a tamano, formato y licencia.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sapidlabs/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4-W4A16
+- Modelo en Hugging Face: https://huggingface.co/sapidlabs/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4-W4A16
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
 - Receta NVFP4 de referencia de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `MIUProject/VNCCS_PoseLibrary_Main`, publicado por la organizacion MIUProject en HuggingFace, no es un modelo de lenguaje ni un modelo de IA generativa en el sentido habitual. Por su nombre y por la ausencia total de pipeline, tarjeta de modelo, idiomas declarados y licencia, se trata de un artefacto de tipo libreria de poses (pose library), presumiblemente orientado a animacion 3D, captura de movimiento o pipelines de vision por computador. El identificador VNCCS sugiere un proyecto interno o de investigacion especifico del autor, sin documentacion publica asociada.
+El repositorio `MIUProject/VNCCS_PoseLibrary_Main`, publicado por la organizacion MIUProject en Hugging Face, no es un modelo de lenguaje ni un modelo de IA generativa en el sentido habitual. Por su nombre y por la ausencia total de pipeline, tarjeta de modelo, idiomas declarados y licencia, se trata de un artefacto de tipo libreria de poses (pose library), presumiblemente orientado a animacion 3D, captura de movimiento o pipelines de vision por computador. El identificador VNCCS sugiere un proyecto interno o de investigacion especifico del autor, sin documentacion publica asociada.
 
 El repositorio no incluye pesos de modelo, configuracion de arquitectura, tokenizador ni ningun metadato tecnico que permita clasificarlo como modelo entrenado. No hay informacion sobre parametros, contexto, cuantizacion ni formato de pesos. Cualquier uso previsto debe inferirse del nombre del repositorio y no de documentacion verificable.
 
@@ -23,7 +23,7 @@ Dado que no se dispone de datos tecnicos publicados, esta ficha documenta la aus
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO, SFT). El repositorio no contiene una tarjeta de modelo con estos datos y la etiqueta `region:us` es la unica metadata adicional, que solo indica la region de almacenamiento en HuggingFace.
+No se ha publicado informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO, SFT). El repositorio no contiene una tarjeta de modelo con estos datos y la etiqueta `region:us` es la unica metadata adicional, que solo indica la region de almacenamiento en Hugging Face.
 
 Por el nombre `PoseLibrary_Main`, es plausible que el contenido sean ficheros de datos de poses (por ejemplo, esqueletos, keypoints o animaciones) en lugar de pesos de red neuronal. Sin embargo, esto no puede confirmarse con la informacion disponible.
 
@@ -71,6 +71,6 @@ No disponible. No se puede establecer una comparativa sin conocer la naturaleza 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MIUProject/VNCCS_PoseLibrary_Main
+- Repositorio en Hugging Face: https://huggingface.co/MIUProject/VNCCS_PoseLibrary_Main
 - Perfil del autor: https://huggingface.co/MIUProject
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

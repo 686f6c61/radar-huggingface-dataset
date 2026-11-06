@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Nafnaf1k/gpt2-wikitext` es un artefacto de investigación publicado en HuggingFace por el usuario Nafnaf1k que parte de los pesos originales de GPT-2 de OpenAI (identificados en la model card como idénticos en todos los artefactos del estudio etiquetado como "RQ1"). El repositorio incluye un módulo de código personalizado (`modeling_gpt2_wikitext.py`) cargado en tiempo de ejecución mediante el mecanismo `auto_map` de `transformers`, junto con los ficheros estándar del tokenizador BPE y la configuración de generación.
+`Nafnaf1k/gpt2-wikitext` es un artefacto de investigación publicado en Hugging Face por el usuario Nafnaf1k que parte de los pesos originales de GPT-2 de OpenAI (identificados en la model card como idénticos en todos los artefactos del estudio etiquetado como "RQ1"). El repositorio incluye un módulo de código personalizado (`modeling_gpt2_wikitext.py`) cargado en tiempo de ejecución mediante el mecanismo `auto_map` de `transformers`, junto con los ficheros estándar del tokenizador BPE y la configuración de generación.
 
 El modelo no aporta un entrenamiento nuevo verificable: la model card indica explícitamente que `pytorch_model.bin` contiene los pesos de GPT-2 sin modificar y que son idénticos en todos los artefactos del estudio. Su interés es, por tanto, metodológico: sirve como pieza reproducible para analizar cómo `transformers` resuelve la carga de clases personalizadas declaradas en `config.json` y cómo se comporta el pipeline de generación con esos ganchos de código.
 
-Con apenas 4 descargas y 0 likes, se trata de un repositorio de nicho orientado a investigación sobre el ecosistema de carga de modelos, no a uso en producción. La relevancia práctica es limitada salvo para quienes auditen seguridad de artefactos de HuggingFace o reproduzcan el experimento citado.
+Con apenas 4 descargas y 0 likes, se trata de un repositorio de nicho orientado a investigación sobre el ecosistema de carga de modelos, no a uso en producción. La relevancia práctica es limitada salvo para quienes auditen seguridad de artefactos de Hugging Face o reproduzcan el experimento citado.
 
 ## Especificaciones técnicas
 
@@ -40,7 +40,7 @@ No hay información en la model card sobre datos de entrenamiento, número de to
 ## Casos de uso
 
 - Reproducción de experimentos sobre carga de código personalizado en `transformers`: el repositorio permite estudiar cómo `auto_map` resuelve la importación de `modeling_gpt2_wikitext.py` y qué superficie de ejecución abre en el entorno del usuario.
-- Auditoría de seguridad de artefactos de HuggingFace: útil como caso de prueba para pipelines que inspeccionan código embebido en repositorios de modelos antes de cargarlos.
+- Auditoría de seguridad de artefactos de Hugging Face: útil como caso de prueba para pipelines que inspeccionan código embebido en repositorios de modelos antes de cargarlos.
 - Docencia sobre el ecosistema `transformers`: sirve como ejemplo mínimo de cómo se estructura un repo con `config.json`, `generation_config.json`, tokenizador y pesos separados.
 - Pruebas de integración de TGI: el tag `text-generation-inference` permite validar el despliegue de un modelo pequeño con configuración de generación explícita.
 - Baseline de generación de texto en inglés para comparaciones controladas, dado que los pesos coinciden con GPT-2 base.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nafnaf1k/gpt2-wikitext | 124 M (GPT-2 base) | 1024 | MIT | HuggingFace, 4 descargas | Incluye código de carga personalizado |
-| openai-community/gpt2 | 124 M | 1024 | MIT | HuggingFace, muy usado | Checkpoint original, sin código custom |
-| openai-community/gpt2-medium | 355 M | 1024 | MIT | HuggingFace | Mayor capacidad, mismos requisitos de licencia |
-| EleutherAI/gpt-neo-125M | 125 M | 2048 | MIT | HuggingFace | Contexto mayor, entrenado con The Pile |
+| Nafnaf1k/gpt2-wikitext | 124 M (GPT-2 base) | 1024 | MIT | Hugging Face, 4 descargas | Incluye código de carga personalizado |
+| openai-community/gpt2 | 124 M | 1024 | MIT | Hugging Face, muy usado | Checkpoint original, sin código custom |
+| openai-community/gpt2-medium | 355 M | 1024 | MIT | Hugging Face | Mayor capacidad, mismos requisitos de licencia |
+| EleutherAI/gpt-neo-125M | 125 M | 2048 | MIT | Hugging Face | Contexto mayor, entrenado con The Pile |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-wikitext
+- Repositorio Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-wikitext
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Paper original de GPT-2 (Radford et al., 2019): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Documentación de `transformers` sobre `auto_map` y código personalizado: https://huggingface.co/docs/transformers/main/en/custom_models

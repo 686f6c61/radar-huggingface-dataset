@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WANCum es un adaptador LoRA para generación de imágenes (y, por su modelo base, potencialmente vídeo a partir de imagen) publicado por el usuario fghui en HuggingFace. Se distribuye como un repositorio de 1,2 GB en formato diffusers, con la etiqueta `template:diffusion-lora`, y está entrenado sobre el checkpoint `TestOrganizationPleaseIgnore/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING`, un merge de la familia Wan 2.2 orientado a efectos visuales y a la conversión imagen-a-vídeo. El pipeline declarado en los metadatos es `text-to-image`.
+WANCum es un adaptador LoRA para generación de imágenes (y, por su modelo base, potencialmente vídeo a partir de imagen) publicado por el usuario fghui en Hugging Face. Se distribuye como un repositorio de 1,2 GB en formato diffusers, con la etiqueta `template:diffusion-lora`, y está entrenado sobre el checkpoint `TestOrganizationPleaseIgnore/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING`, un merge de la familia Wan 2.2 orientado a efectos visuales y a la conversión imagen-a-vídeo. El pipeline declarado en los metadatos es `text-to-image`.
 
 El propósito declarado del adaptador es la generación de contenido sexual explícito, con una palabra de activación (`instance_prompt`) de carácter explícito y un widget de ejemplo que describe una escena pornográfica. No se trata, por tanto, de un modelo de propósito general, sino de un LoRA de especialización temática sobre un modelo base de difusión.
 
@@ -54,14 +54,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible de forma específica. El adaptador pesa 1,2 GB; el modelo base Wan 2.2 I2V es un modelo de difusión de vídeo de gran tamaño, por lo que la VRAM vendrá determinada por el base, no por el LoRA.
 - GPU recomendadas: no disponible. Para modelos de difusión de vídeo de la familia Wan se suele requerir GPU de datacenter (A100, H100) o consumer de gama alta con suficiente VRAM; no se confirma en la información proporcionada.
 - ¿Cabe en consumer GPU?: no disponible. Depende del modelo base y de la cuantización empleada, que no se documenta.
-- Opciones de despliegue: al estar en formato diffusers, es cargable con la librería `diffusers` de HuggingFace; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a LLM, no a difusión).
+- Opciones de despliegue: al estar en formato diffusers, es cargable con la librería `diffusers` de Hugging Face; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a LLM, no a difusión).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Base | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WANCum (fghui) | LoRA de difusión | WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING | no disponible | no disponible | HuggingFace, 0 descargas |
+| WANCum (fghui) | LoRA de difusión | WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros LoRA comparables en la misma categoría temática ni sobre sus métricas, por lo que no es posible establecer una comparativa cuantitativa.
@@ -80,6 +80,6 @@ No se dispone de información sobre otros LoRA comparables en la misma categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fghui/WANCum
+- Hugging Face: https://huggingface.co/fghui/WANCum
 - Modelo base: https://huggingface.co/TestOrganizationPleaseIgnore/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

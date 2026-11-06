@@ -6,7 +6,7 @@ Gemma 3 12B IT es un modelo multimodal de tipo imagen-texto desarrollado por Goo
 
 El problema que resuelve es el de disponer de un modelo abierto, desplegable en infraestructura propia, que combine comprension de imagenes y texto en una sola pasada, soporte de tool calling y un contexto muy largo, sin la dependencia de APIs propietarias. Frente a alternativas de tamano similar, su principal diferencial es la combinacion de multimodalidad nativa, contexto de 128K y un catalogo de cuantizaciones oficiales entrenadas con quantization-aware training (QAT), que reducen los requisitos de VRAM.
 
-Es relevante ahora porque cubre el hueco de los modelos de 10-15B parametros que antes eran exclusivamente de texto: permite construir asistentes que leen documentos escaneados, tablas, graficos e interfaces de usuario, manteniendo la conversacion en castellano y otros idiomas. El acceso en HuggingFace esta restringido (gated): es necesario aceptar las condiciones de la licencia Gemma antes de descargar los pesos.
+Es relevante ahora porque cubre el hueco de los modelos de 10-15B parametros que antes eran exclusivamente de texto: permite construir asistentes que leen documentos escaneados, tablas, graficos e interfaces de usuario, manteniendo la conversacion en castellano y otros idiomas. El acceso en Hugging Face esta restringido (gated): es necesario aceptar las condiciones de la licencia Gemma antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Es relevante ahora porque cubre el hueco de los modelos de 10-15B parametros que
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 128.000 tokens |
 | Tipos de cuantizacion | bfloat16 y float16 en safetensors; checkpoints oficiales QAT int4 (Q4_0 GGUF); cuantizaciones de la comunidad: GGUF (Q2_K a Q8_0), AWQ, GPTQ, MLX 4-bit/8-bit, bitsandbytes 8-bit |
-| Idiomas soportados | Mas de 140 idiomas segun la documentacion de Google; el campo de idiomas no esta especificado en los metadatos de HuggingFace |
+| Idiomas soportados | Mas de 140 idiomas segun la documentacion de Google; el campo de idiomas no esta especificado en los metadatos de Hugging Face |
 | Licencia | Gemma Terms of Use (licencia propia de Google, con politica de uso prohibido) |
 | Formato de pesos | safetensors (transformers), GGUF, MLX |
 | Modalidad de entrada | Texto e imagen (image-text-to-text) |
@@ -25,7 +25,7 @@ Es relevante ahora porque cubre el hueco de los modelos de 10-15B parametros que
 | Vocabulario | 262.144 tokens |
 | Fecha de publicacion | 1 de marzo de 2025 (actualizado el 21 de marzo de 2025) |
 | Modelo base | google/gemma-3-12b-pt |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 | Libreria minima | transformers 4.50.0 |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ La rama de vision se integra mediante proyeccion de los embeddings visuales al e
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta ficha: los resultados de busqueda facilitados no incluyen cifras concretas y la model card de HuggingFace publica una seccion de resultados de evaluacion que no se ha podido consultar. La tabla siguiente refleja los benchmarks que la documentacion oficial de Gemma 3 suele reportar, pero sus valores no estan disponibles aqui y no deben inferirse.
+No se han publicado resultados de benchmarks en la informacion disponible para esta ficha: los resultados de busqueda facilitados no incluyen cifras concretas y la model card de Hugging Face publica una seccion de resultados de evaluacion que no se ha podido consultar. La tabla siguiente refleja los benchmarks que la documentacion oficial de Gemma 3 suele reportar, pero sus valores no estan disponibles aqui y no deben inferirse.
 
 | Benchmark | Gemma 3 12B IT | Alternativas comparables |
 |---|---|---|
@@ -101,12 +101,12 @@ Los datos de los modelos de la competencia provienen de su documentacion publica
 - Limites multimodales: solo se admiten imagenes; no hay entrada de audio ni de video nativa, y el rendimiento cae con imagenes de muy baja resolucion o con texto manuscrito complejo.
 - Contexto largo: a 128K tokens la calidad puede degradarse y el coste de memoria y latencia crece de forma notable; se recomienda medir en el caso de uso concreto.
 - Licencia: la Gemma Terms of Use permite uso comercial, pero impone obligaciones de redistribucion (incluir los terminos y avisos), una politica de uso prohibido y la posibilidad de que Google restrinja el acceso remoto ante usos que violen los terminos. No es una licencia Apache o MIT.
-- Acceso restringido: la descarga requiere aceptar los terminos en HuggingFace, lo que puede complicar la automatizacion de pipelines de CI/CD y el despliegue en entornos aislados.
+- Acceso restringido: la descarga requiere aceptar los terminos en Hugging Face, lo que puede complicar la automatizacion de pipelines de CI/CD y el despliegue en entornos aislados.
 - Uso en produccion: conviene aplicar filtros de salida, validacion de tool calls y supervision humana en dominios sensibles (sanitario, legal, financiero).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/gemma-3-12b-it
+- Modelo en Hugging Face: https://huggingface.co/google/gemma-3-12b-it
 - Modelo base: https://huggingface.co/google/gemma-3-12b-pt
 - Documentacion oficial de Gemma: https://ai.google.dev/gemma/docs
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

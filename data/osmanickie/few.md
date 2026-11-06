@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `osmanickie/few` es una publicación en HuggingFace creada por el usuario `osmanickie` con licencia Apache 2.0. Según los metadatos disponibles, el modelo no tiene pipeline definido, no declara idiomas soportados y no incluye ninguna descripción técnica en su model card, más allá de la cabecera de licencia. Tampoco se han encontrado resultados de búsqueda web relevantes que aporten información sobre su arquitectura, entrenamiento o capacidades.
+El repositorio `osmanickie/few` es una publicación en Hugging Face creada por el usuario `osmanickie` con licencia Apache 2.0. Según los metadatos disponibles, el modelo no tiene pipeline definido, no declara idiomas soportados y no incluye ninguna descripción técnica en su model card, más allá de la cabecera de licencia. Tampoco se han encontrado resultados de búsqueda web relevantes que aporten información sobre su arquitectura, entrenamiento o capacidades.
 
 Por tanto, se trata de un modelo sin documentación pública en el momento de la consulta. No es posible determinar qué problema resuelve, ni su relevancia actual, ni su arquitectura, tamaño o longitud de contexto. Cualquier uso práctico requeriría información adicional del autor o la existencia de ficheros de pesos no descritos en la model card.
 
@@ -70,5 +70,5 @@ No disponible. Al no existir información sobre arquitectura, tamaño o rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/osmanickie/few
+- Hugging Face: https://huggingface.co/osmanickie/few
 - Model card: https://huggingface.co/osmanickie/few/blob/main/README.md

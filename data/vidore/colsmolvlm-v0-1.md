@@ -23,7 +23,7 @@ Su relevancia actual radica en que ofrece una alternativa ligera a modelos de re
 
 ## Arquitectura y entrenamiento
 
-ColSmolVLM se basa en SmolVLM-Instruct, un modelo de lenguaje y visión de tamaño reducido desarrollado por HuggingFace. Sobre su arquitectura transformer se añade una capa de proyección que produce embeddings multi-vector (uno por token visual y textual) siguiendo el mecanismo de interacción tardía de ColBERT. El modelo se entrena con Low-Rank Adaptation (LoRA) con alpha=32 y r=32, aplicada a las capas transformer del modelo de lenguaje y a la capa de proyección final, inicializada de forma determinista para garantizar reproducibilidad.
+ColSmolVLM se basa en SmolVLM-Instruct, un modelo de lenguaje y visión de tamaño reducido desarrollado por Hugging Face. Sobre su arquitectura transformer se añade una capa de proyección que produce embeddings multi-vector (uno por token visual y textual) siguiendo el mecanismo de interacción tardía de ColBERT. El modelo se entrena con Low-Rank Adaptation (LoRA) con alpha=32 y r=32, aplicada a las capas transformer del modelo de lenguaje y a la capa de proyección final, inicializada de forma determinista para garantizar reproducibilidad.
 
 El entrenamiento se realizó en bfloat16 con el optimizador paged_adamw_8bit, una tasa de aprendizaje de 5e-4 con decaimiento lineal y 2,5% de pasos de warmup, en una configuración de 4 GPUs con paralelismo de datos. El dataset combina conjuntos académicos abiertos (63%) con páginas de PDFs obtenidas por web crawling y aumentadas con pseudo-preguntas generadas por Claude-3 Sonnet (37%). El conjunto es íntegramente en inglés por diseño, para evaluar la generalización zero-shot a otros idiomas, y se verificó que ninguna página del dataset de evaluación ViDoRe estuviera presente en el entrenamiento para evitar contaminación.
 
@@ -84,7 +84,7 @@ ColSmolVLM se posiciona como una alternativa más ligera que ColPali, basada en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vidore/colsmolvlm-v0.1
+- Hugging Face: https://huggingface.co/vidore/colsmolvlm-v0.1
 - Modelo base: https://huggingface.co/vidore/ColSmolVLM-base
 - Paper ColPali: https://arxiv.org/abs/2407.01449
 - Repositorio colpali-engine: https://github.com/illuin-tech/colpali

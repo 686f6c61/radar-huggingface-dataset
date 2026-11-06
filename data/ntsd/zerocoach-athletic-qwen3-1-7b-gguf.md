@@ -89,7 +89,7 @@ Los datos de las alternativas provienen del conocimiento general de esas familia
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| ZeroCoach Athletic (Qwen3-1.7B) | 1,72B (17,4M entrenados) | 1.024–2.048 tokens | Apache 2.0 | Fitness, nutricion, biomecanica; solo ingles; solo GGUF | Repo HuggingFace, 0 descargas |
+| ZeroCoach Athletic (Qwen3-1.7B) | 1,72B (17,4M entrenados) | 1.024–2.048 tokens | Apache 2.0 | Fitness, nutricion, biomecanica; solo ingles; solo GGUF | Repo Hugging Face, 0 descargas |
 | Qwen/Qwen3-1.7B (base) | 1,72B | 32.768 tokens nativos (familia Qwen3) | Apache 2.0 | Proposito general, multilingue, modo thinking | Ampliamente disponible en safetensors y GGUF |
 | Llama 3.2 1B Instruct | ~1,24B | 128.000 tokens | Llama 3.2 Community License | Proposito general, multilingue | Muy disponible, ecosistema amplio |
 | Gemma 3 1B Instruct | ~1B | 32.000 tokens | Gemma Terms of Use | Proposito general, multilingue, vision en variantes mayores | Muy disponible |
@@ -112,8 +112,8 @@ La comparación relevante es contra el propio modelo base: ZeroCoach pierde entr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ntsd/zerocoach-athletic-qwen3-1.7b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ntsd/zerocoach-athletic-qwen3-1.7b-GGUF
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
-- Perfil del autor en HuggingFace: https://huggingface.co/ntsd
+- Perfil del autor en Hugging Face: https://huggingface.co/ntsd
 - Documentación de Ollama (uso indicado en la model card): https://ollama.com
 - No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo. Los resultados devueltos por la busqueda no guardan relación con el modelo y se han descartado por no ser fuentes validas.

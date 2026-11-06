@@ -22,7 +22,7 @@ La model card identifica la arquitectura del modelo base como `DeepseekV41ForCau
 | Idiomas soportados | no disponible |
 | Licencia | MIT (segun etiquetas del repo); la model card cita "Apache/MIT from upstream" |
 | Formato de pesos | GGUF (`library_name: gguf`); checkpoint original en FP8 + FP4 mezclados, ~475 GiB en 48 shards |
-| Tamano del repositorio | 147,0 GB (declarado en HuggingFace; sin archivos de pesos confirmados) |
+| Tamano del repositorio | 147,0 GB (declarado en Hugging Face; sin archivos de pesos confirmados) |
 | Modelo base | `deepseek-ai/DeepSeek-V4.1-Flash` |
 | Relacion con el base | cuantizado (`base_model_relation: quantized`) |
 | Pipeline | text-generation |
@@ -44,7 +44,7 @@ El proceso de conversion descrito tiene un detalle tecnico reseñable: el checkp
 - Razonamiento, codigo y matematicas: no disponible en la informacion proporcionada.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio en Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 - Ejecucion local via `llama.cpp`: es el proposito declarado del repositorio, aunque los pesos aun no estan publicados.
 
@@ -103,6 +103,6 @@ Comparacion con otras alternativas de la misma categoria (por ejemplo, otras cua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vcruz305/DeepSeek-V4.1-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vcruz305/DeepSeek-V4.1-Flash-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada. Los resultados de busqueda web recibidos no contienen material relacionado con este modelo.

@@ -66,13 +66,13 @@ No se dispone de información sobre otros modelos específicamente entrenados pa
 - El modelo está entrenado exclusivamente para la generación de descriptores legales en portugués; su uso fuera de este dominio o idioma producirá resultados poco fiables.
 - No se ha evaluado su comportamiento en documentos con formatos muy heterogéneos, jerga regional o casos extremos, por lo que puede generar descriptores incompletos o erróneos.
 - Como todo modelo de lenguaje, existe riesgo de alucinación: puede generar descriptores que no se corresponden con el contenido real del documento.
-- La licencia no está especificada en la ficha de HuggingFace, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar con el autor antes de utilizarlo en producción.
+- La licencia no está especificada en la ficha de Hugging Face, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar con el autor antes de utilizarlo en producción.
 - El modelo no ha sido probado en tareas de razonamiento complejo, tool calling o interacción con agentes; su arquitectura T5 está pensada para transformación de texto, no para diálogo.
 - No se han publicado análisis de sesgos, por lo que podría reflejar sesgos presentes en los documentos judiciales utilizados para el entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/giovannimaffeo/ptt5-v2-large-portuguese-legal-descriptor-generation
+- Modelo en Hugging Face: https://huggingface.co/giovannimaffeo/ptt5-v2-large-portuguese-legal-descriptor-generation
 - Dataset de entrenamiento: https://huggingface.co/datasets/giovannimaffeo/portuguese-legal-descriptor-generation
 - Paper de ptt5-v2: https://arxiv.org/abs/2406.10806
 - Modelo base ptt5-v2-large: https://huggingface.co/unicamp-dl/ptt5-v2-large

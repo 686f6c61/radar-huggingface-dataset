@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stable Diffusion v1-5 (este) | ~860M | 512x512 | CreativeML OpenRAIL M | HuggingFace (repos espejo) |
-| Stable Diffusion v1-2 (checkpoint base) | No disponible | 512x512 | CreativeML OpenRAIL M | HuggingFace |
-| Stable Diffusion v2 | No disponible | No disponible | CreativeML OpenRAIL M | HuggingFace |
+| Stable Diffusion v1-5 (este) | ~860M | 512x512 | CreativeML OpenRAIL M | Hugging Face (repos espejo) |
+| Stable Diffusion v1-2 (checkpoint base) | No disponible | 512x512 | CreativeML OpenRAIL M | Hugging Face |
+| Stable Diffusion v2 | No disponible | No disponible | CreativeML OpenRAIL M | Hugging Face |
 
 Nota: la comparativa se limita a los datos disponibles. El modelo card confirma que v1-5 se inicializo desde v1-2, pero no se proporcionan especificaciones detalladas de v1-2 ni de v2 en la informacion disponible.
 
@@ -82,12 +82,12 @@ Nota: la comparativa se limita a los datos disponibles. El modelo card confirma 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este espejo): https://huggingface.co/jdjkdjd/stable-diffusion-v1-5
-- Repositorio HuggingFace original (deprecado): https://huggingface.co/stable-diffusion-v1-5
+- Repositorio Hugging Face (este espejo): https://huggingface.co/jdjkdjd/stable-diffusion-v1-5
+- Repositorio Hugging Face original (deprecado): https://huggingface.co/stable-diffusion-v1-5
 - GitHub (espejo con README): https://github.com/Shan-jr/stable-diffusion-v1-5-stable-diffusion-v1-5
 - GitHub (espejo adicional): https://github.com/lizhen0211/stable-diffusion-v1-5
 - Paper (High-Resolution Image Synthesis With Latent Diffusion Models): https://arxiv.org/abs/2112.10752
-- Blog de Stable Diffusion (HuggingFace): https://huggingface.co/blog/stable_diffusion
+- Blog de Stable Diffusion (Hugging Face): https://huggingface.co/blog/stable_diffusion
 - Licencia CreativeML OpenRAIL M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Repositorio de Diffusers: https://github.com/huggingface/diffusers
 - Repositorio de ComfyUI: https://github.com/comfyanonymous/ComfyUI

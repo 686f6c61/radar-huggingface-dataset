@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nammu es un modelo de lenguaje genómico de 167.549.952 parámetros desarrollado por el usuario nazbijari y publicado en HuggingFace. Se trata de un modelo basado en una arquitectura Mamba-1 bidireccional (etiquetada en el repositorio como `bimamba_mlm`), entrenado con un objetivo de modelado de lenguaje enmascarado (MLM) sobre la base de datos genómica TattaBio OMG. El pipeline declarado en HuggingFace es `feature-extraction`, por lo que su uso principal previsto es la generación de representaciones vectoriales de secuencias, no la generación de texto.
+Nammu es un modelo de lenguaje genómico de 167.549.952 parámetros desarrollado por el usuario nazbijari y publicado en Hugging Face. Se trata de un modelo basado en una arquitectura Mamba-1 bidireccional (etiquetada en el repositorio como `bimamba_mlm`), entrenado con un objetivo de modelado de lenguaje enmascarado (MLM) sobre la base de datos genómica TattaBio OMG. El pipeline declarado en Hugging Face es `feature-extraction`, por lo que su uso principal previsto es la generación de representaciones vectoriales de secuencias, no la generación de texto.
 
 El interés de este modelo radica en la combinación de dos elementos poco habituales: el uso de una arquitectura de espacio de estados (SSM) Mamba-1 en lugar de un transformer clásico, y su naturaleza bidireccional, que permite que cada posición de la secuencia atienda simultáneamente al contexto anterior y posterior. Ambos rasgos son relevantes para tareas genómicas, donde el contexto aguas abajo (elementos reguladores, motivos, señales de splicing) suele condicionar la interpretación de una posición concreta.
 
@@ -86,7 +86,7 @@ La ventaja teórica de Nammu frente a DNABERT-2 es el coste lineal del SSM y la 
 - Sesgos conocidos: no disponible. No se documenta la composición del corpus TattaBio OMG, por lo que se desconoce el sesgo taxonómico (por ejemplo, sobrerrepresentación de genomas humanos o bacterianos) y su impacto en la generalización a otras especies.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de representaciones poco fiables en regiones o especies poco representadas en el corpus de entrenamiento. El uso de las representaciones como evidencia biológica sin validación experimental es inapropiado.
 - Limitaciones de contexto e idioma: la longitud de contexto no está documentada, lo que impide saber si el modelo puede procesar genes completos o solo ventanas cortas. No es un modelo multilingüe en el sentido habitual; opera sobre secuencias de nucleótidos.
-- Restricciones de licencia: la licencia no está declarada en HuggingFace. Sin una licencia explícita, el uso comercial queda en una situación jurídica ambigua y no debe asumirse que esté permitido. Es imprescindible contactar con el autor antes de cualquier uso en producción.
+- Restricciones de licencia: la licencia no está declarada en Hugging Face. Sin una licencia explícita, el uso comercial queda en una situación jurídica ambigua y no debe asumirse que esté permitido. Es imprescindible contactar con el autor antes de cualquier uso en producción.
 - Código personalizado: el tag `custom_code` implica que la carga requiere `trust_remote_code=True`, lo que supone ejecutar código del autor del repositorio. Conviene auditar ese código antes de desplegarlo en entornos controlados.
 - Ausencia de benchmarks: no hay ninguna métrica publicada, ni siquiera pérdida de validación del MLM. No hay evidencia objetiva de que supere a alternativas establecidas.
 - Trazabilidad limitada: no se documentan tokenizador, esquema de preprocesamiento, hiperparámetros ni versión de la base de datos TattaBio OMG, lo que dificulta la reproducibilidad.
@@ -95,7 +95,7 @@ La ventaja teórica de Nammu frente a DNABERT-2 es el coste lineal del SSM y la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nazbijari/nammu
+- Modelo en Hugging Face: https://huggingface.co/nazbijari/nammu
 - Base de datos TattaBio OMG: no disponible (no se proporciona enlace en la información disponible)
 - Paper o informe técnico del modelo: no disponible
 - Repositorio de código: no disponible

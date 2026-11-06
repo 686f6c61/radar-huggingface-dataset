@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-wc-uniform-newlex-66-eng-100mb_seed89` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de HuggingFace `fpadovani` (vinculado al proyecto W&B de la Universidad de Groningen). Se trata de un modelo de generacion de texto de tipo transformer decoder-only con arquitectura GPT-2 y 86.508.288 parametros totales (unos 86,5 millones), lo que lo situa en la gama de los modelos pequenos orientados a experimentacion academica mas que a produccion.
+El modelo `ppt-wc-uniform-newlex-66-eng-100mb_seed89` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de Hugging Face `fpadovani` (vinculado al proyecto W&B de la Universidad de Groningen). Se trata de un modelo de generacion de texto de tipo transformer decoder-only con arquitectura GPT-2 y 86.508.288 parametros totales (unos 86,5 millones), lo que lo situa en la gama de los modelos pequenos orientados a experimentacion academica mas que a produccion.
 
 El modelo se ha entrenado con la libreria TRL (version 0.23.0) mediante SFT sobre el checkpoint base, que a su vez es un modelo de la coleccion `goldfish-models` entrenado con aproximadamente 100 MB de texto en ingles (etiqueta de idioma `eng_latn`). La nomenclatura del identificador (`ppt-wc-uniform-newlex-66`) sugiere un experimento controlado sobre datos sinteticos o modificados ("newlex" podria referirse a un lexico nuevo), pero la model card no documenta la composicion del dataset de ajuste ni el objetivo cientifico concreto.
 
@@ -72,10 +72,10 @@ La informacion proporcionada solo permite comparar con el modelo base del que de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed89` | 86,5 M | No disponible | No disponible | HuggingFace, safetensors | Ajuste SFT con TRL sobre corpus base de 100 MB |
-| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la informacion | No disponible | No disponible | HuggingFace | Modelo base en ingles entrenado con 100 MB de texto |
-| `distilgpt2` | Aproximadamente 82 M (referencia publica) | 1024 tokens (referencia publica) | Licencia abierta de OpenAI (referencia publica) | HuggingFace | Alternativa destilada ampliamente usada como linea base |
-| `gpt2` | Aproximadamente 124 M (referencia publica) | 1024 tokens (referencia publica) | Licencia abierta de OpenAI (referencia publica) | HuggingFace | Modelo de referencia de la familia GPT-2 |
+| `fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed89` | 86,5 M | No disponible | No disponible | Hugging Face, safetensors | Ajuste SFT con TRL sobre corpus base de 100 MB |
+| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la informacion | No disponible | No disponible | Hugging Face | Modelo base en ingles entrenado con 100 MB de texto |
+| `distilgpt2` | Aproximadamente 82 M (referencia publica) | 1024 tokens (referencia publica) | Licencia abierta de OpenAI (referencia publica) | Hugging Face | Alternativa destilada ampliamente usada como linea base |
+| `gpt2` | Aproximadamente 124 M (referencia publica) | 1024 tokens (referencia publica) | Licencia abierta de OpenAI (referencia publica) | Hugging Face | Modelo de referencia de la familia GPT-2 |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la informacion proporcionada, por lo que no es posible establecer una jerarquia de calidad entre ellas.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed89
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed89
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/auy5m7zu

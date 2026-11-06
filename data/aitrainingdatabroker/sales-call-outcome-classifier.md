@@ -33,7 +33,7 @@ El entrenamiento se realizó durante 6 épocas en una sola GPU RTX 3070, con 239
 - Predicción con probabilidades por clase (el ejemplo de la model card usa `top_k=3`).
 - Procesamiento de notas cortas y de estilo directo, similar al de las plantillas de entrenamiento.
 - Integración directa con la pipeline `text-classification` de transformers.
-- Compatibilidad declarada con Text Embeddings Inference y endpoints de HuggingFace.
+- Compatibilidad declarada con Text Embeddings Inference y endpoints de Hugging Face.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento.
 - No es multilingüe: solo inglés.
 
@@ -68,17 +68,17 @@ No se han publicado comparaciones con otros modelos ni resultados sobre texto re
 - En fp16 la huella de pesos baja a aproximadamente 0,17 GB.
 - GPU recomendadas: cualquier GPU consumer moderna sirve; el autor entrenó en una RTX 3070. Para despliegue por lotes a gran escala son adecuadas A100, H100 o L4, aunque el modelo está sobredimensionado para ellas en términos de coste.
 - Cabe en GPU consumer: sí, en RTX 3060, RTX 4060, RTX 4090 y prácticamente cualquier tarjeta con más de 2 GB de VRAM; también puede ejecutarse en CPU para volúmenes moderados.
-- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (declarado compatible), endpoints de HuggingFace. No se documentan artefactos GGUF para llama.cpp ni Ollama, ni configuración específica para vLLM o TGI.
+- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (declarado compatible), endpoints de Hugging Face. No se documentan artefactos GGUF para llama.cpp ni Ollama, ni configuración específica para vLLM o TGI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sales-call-outcome-classifier | 82,1 M | no disponible (base: 512) | Clasificación de 4 clases sobre notas de ventas | Apache 2.0 | HuggingFace |
-| distilroberta-base (base sin ajustar) | 82,1 M | 512 | Modelo de representación; requiere cabeza y ajuste propios | Apache 2.0 | HuggingFace |
-| RoBERTa-base | ~125 M | 512 | Modelo de representación; requiere ajuste para clasificación | MIT | HuggingFace |
-| DistilBERT-base | ~66 M | 512 | Modelo de representación; requiere ajuste para clasificación | Apache 2.0 | HuggingFace |
+| sales-call-outcome-classifier | 82,1 M | no disponible (base: 512) | Clasificación de 4 clases sobre notas de ventas | Apache 2.0 | Hugging Face |
+| distilroberta-base (base sin ajustar) | 82,1 M | 512 | Modelo de representación; requiere cabeza y ajuste propios | Apache 2.0 | Hugging Face |
+| RoBERTa-base | ~125 M | 512 | Modelo de representación; requiere ajuste para clasificación | MIT | Hugging Face |
+| DistilBERT-base | ~66 M | 512 | Modelo de representación; requiere ajuste para clasificación | Apache 2.0 | Hugging Face |
 
 No se dispone de comparaciones publicadas con otros clasificadores específicos de notas de CRM, por lo que la comparativa se limita a los modelos base de la misma familia. La ventaja diferencial de este modelo es que ya está ajustado para la tarea concreta; su desventaja es que solo se ha validado sobre datos sintéticos.
 
@@ -96,7 +96,7 @@ No se dispone de comparaciones publicadas con otros clasificadores específicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/sales-call-outcome-classifier
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/sales-call-outcome-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/aitrainingdatabroker/synthetic-sales-call-notes-by-outcome
 - Modelo base: https://huggingface.co/distilbert/distilroberta-base
 - Guía sobre licencia de grabaciones de llamadas: https://aitrainingdatabroker.com/data/call-recordings/

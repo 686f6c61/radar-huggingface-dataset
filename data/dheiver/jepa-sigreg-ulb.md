@@ -18,7 +18,7 @@ El modelo es un artefacto de investigacion con limitaciones explicitas: una sola
 | Longitud de contexto | 32 transacciones consecutivas (ventana) |
 | Tipos de cuantizacion | no disponible (pesos en PyTorch `state_dict`, sin versiones GGUF/cuantizadas publicadas) |
 | Idiomas soportados | no disponible (modelo tabular/series temporales, sin componente de lenguaje natural) |
-| Licencia | other (licencia personalizada del autor; consultar terminos en HuggingFace) |
+| Licencia | other (licencia personalizada del autor; consultar terminos en Hugging Face) |
 | Formato de pesos | PyTorch (`encoder.pt`, `fraud_best.pt`) con `state_dict`, `cfg` y `meta` |
 
 ## Arquitectura y entrenamiento
@@ -73,8 +73,8 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | AP | AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mangaba JEPA Fraude VICReg | no disponible | 32 transacciones | 0,801 | 0,913 | other | HuggingFace |
-| Mangaba JEPA Fraude SIGReg | no disponible | 32 transacciones | 0,806 | 0,913 | other | HuggingFace |
+| Mangaba JEPA Fraude VICReg | no disponible | 32 transacciones | 0,801 | 0,913 | other | Hugging Face |
+| Mangaba JEPA Fraude SIGReg | no disponible | 32 transacciones | 0,806 | 0,913 | other | Hugging Face |
 | Alternativas (XGBoost, Isolation Forest, etc.) | no disponible | no aplica | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DHEIVER/jepa-sigreg-ulb
+- Modelo en Hugging Face: https://huggingface.co/DHEIVER/jepa-sigreg-ulb
 - Dataset utilizado: https://huggingface.co/datasets/David-Egea/Creditcard-fraud-detection
 - Perfil del autor: https://huggingface.co/DHEIVER
 - Paper de LeJEPA / SIGReg: no disponible en la informacion proporcionada

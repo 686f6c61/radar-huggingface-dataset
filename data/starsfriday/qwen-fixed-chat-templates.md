@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Fixed-Chat-Templates, publicado por el usuario starsfriday en HuggingFace, no es un modelo de lenguaje en sí, sino una plantilla de chat Jinja universal ("drop-in") diseñada para corregir los errores de las plantillas oficiales de las familias Qwen 3.5, 3.6 y 3.8, incluida la variante Qwen3.8-Flash-Next. El proyecto resuelve un problema real y recurrente en el ecosistema Qwen: las plantillas oficiales presentan fallos de renderizado, invalidación de la caché KV, desperdicio de tokens, "empty think poisoning" (bloques de razonamiento vacíos que contaminan el historial) y bloqueos fatales en flujos agénticos con llamadas a herramientas.
+Qwen-Fixed-Chat-Templates, publicado por el usuario starsfriday en Hugging Face, no es un modelo de lenguaje en sí, sino una plantilla de chat Jinja universal ("drop-in") diseñada para corregir los errores de las plantillas oficiales de las familias Qwen 3.5, 3.6 y 3.8, incluida la variante Qwen3.8-Flash-Next. El proyecto resuelve un problema real y recurrente en el ecosistema Qwen: las plantillas oficiales presentan fallos de renderizado, invalidación de la caché KV, desperdicio de tokens, "empty think poisoning" (bloques de razonamiento vacíos que contaminan el historial) y bloqueos fatales en flujos agénticos con llamadas a herramientas.
 
 La relevancia de esta ficha radica en que la plantilla es un componente crítico de inferencia: un chat template defectuoso puede degradar la calidad de las respuestas de cualquier modelo Qwen, romper el tool calling o provocar timeouts por contenido vacío. La versión v22.5 añade soporte completo para Qwen 3.8, incluyendo la arquitectura MoE Qwen3.8-2.4T-A95B y el modelo denso Qwen3.8-27B, con control de profundidad de razonamiento (reasoning effort) y compatibilidad con los alias de clientes como OpenAI, Claude Code, Cursor y Cline. Funciona con cualquier motor que soporte plantillas Jinja de Hugging Face: LM Studio, llama.cpp, vLLM, SGLang, MLX, KoboldCPP y otros.
 
@@ -104,6 +104,6 @@ Al no ser un modelo, la comparacion pertinente es con la plantilla oficial de Qw
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/starsfriday/Qwen-Fixed-Chat-Templates
+- Repositorio en Hugging Face: https://huggingface.co/starsfriday/Qwen-Fixed-Chat-Templates
 - Modelos oficiales referenciados (no verificados en la informacion proporcionada): https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B y https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, demo o repositorio adicional: no disponible

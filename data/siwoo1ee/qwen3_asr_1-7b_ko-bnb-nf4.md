@@ -87,8 +87,8 @@ El autor advierte de que las puntuaciones publicadas en la model card del modelo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| siwoo1ee/qwen3_asr_1.7b_ko-bnb-nf4 | 2.038.052.480 | no disponible | NF4 4-bit | coreano | Apache-2.0 | HuggingFace |
-| TeamUNIVA/qwen3_asr_1.7b_ko (BF16) | no disponible en la informacion | no disponible | BF16 | coreano | Apache-2.0 (heredada) | HuggingFace |
+| siwoo1ee/qwen3_asr_1.7b_ko-bnb-nf4 | 2.038.052.480 | no disponible | NF4 4-bit | coreano | Apache-2.0 | Hugging Face |
+| TeamUNIVA/qwen3_asr_1.7b_ko (BF16) | no disponible en la informacion | no disponible | BF16 | coreano | Apache-2.0 (heredada) | Hugging Face |
 | Qwen3-ASR base (arquitectura) | no disponible en la informacion | no disponible | no aplica | no disponible | no disponible en la informacion | no disponible |
 
 La comparativa se limita al modelo fuente BF16 y a la arquitectura Qwen3-ASR, ya que la información proporcionada no incluye datos de otros modelos ASR coreanos comparables. El modelo BF16 ofrece mayor precisión según la advertencia del autor, a costa de 4,376 GiB de pesos frente a 1,849 GiB.
@@ -107,7 +107,7 @@ La comparativa se limita al modelo fuente BF16 y a la arquitectura Qwen3-ASR, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siwoo1ee/qwen3_asr_1.7b_ko-bnb-nf4
+- Modelo en Hugging Face: https://huggingface.co/siwoo1ee/qwen3_asr_1.7b_ko-bnb-nf4
 - Modelo base (TeamUNIVA): https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko
 - Ficheros de benchmark del repositorio: `BENCHMARK.md` y `benchmarks/*.json` (referenciados en la model card)
 - Model card del modelo original preservada como `UPSTREAM_README.md` en el repositorio

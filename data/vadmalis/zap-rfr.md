@@ -71,5 +71,5 @@ No disponible. En la informacion proporcionada no se mencionan modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/vadmalis/ZAP-RFR](https://huggingface.co/vadmalis/ZAP-RFR)
+- Hugging Face: [https://huggingface.co/vadmalis/ZAP-RFR](https://huggingface.co/vadmalis/ZAP-RFR)
 - Codigo fuente en GitHub: [https://github.com/vmalis/ZAP-RFR](https://github.com/vmalis/ZAP-RFR)

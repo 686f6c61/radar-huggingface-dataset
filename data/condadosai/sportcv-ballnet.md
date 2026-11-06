@@ -6,7 +6,7 @@ sportcv-ballnet es una red neuronal convolucional de tamano reducido disenada pa
 
 La arquitectura, denominada BallNet, tiene ancho 32 y stride de salida 4, y produce un unico heatmap junto con un desplazamiento subpixel que se decodifica a una posicion en pixeles mas una confianza. Se entreno durante 80 epocas (checkpoint en la epoca 65) en aproximadamente 30 minutos sobre una A40, con un coste declarado de 0,35 dolares. El dato mas llamativo es el tamano del conjunto de entrenamiento: solo 396 fotogramas anotados extraidos de una ventana de 60 segundos de un unico partido bajo licencia Creative Commons, es decir, en torno al 1,2% de esa ventana.
 
-El modelo es relevante ahora como ejemplo de diseno consciente del sobreajuste: en lugar de perseguir generalidad, el autor acota el dominio de forma explicita (un partido, una iluminacion, una camara, una pista) y mide con rigor el error en pixeles sobre una jugada reservada. Con 0 descargas y 0 likes en HuggingFace en el momento de la consulta, su interes es mas metodologico que de adopcion masiva.
+El modelo es relevante ahora como ejemplo de diseno consciente del sobreajuste: en lugar de perseguir generalidad, el autor acota el dominio de forma explicita (un partido, una iluminacion, una camara, una pista) y mide con rigor el error en pixeles sobre una jugada reservada. Con 0 descargas y 0 likes en Hugging Face en el momento de la consulta, su interes es mas metodologico que de adopcion masiva.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ El autor publica metricas medidas sobre una jugada reservada (no vista en entren
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sportcv-ballnet | CNN de heatmap (BallNet), ancho 32, stride 4 | no disponible | Fotograma 1080p (1920x1088 tras padding) | 1,73 px de error mediano; 9,88 ms/frame FP16 en RTX 3060; 2,50 ms/frame TensorRT FP16 en A6000 | Apache-2.0 | HuggingFace y GitHub de CondadosAI |
+| sportcv-ballnet | CNN de heatmap (BallNet), ancho 32, stride 4 | no disponible | Fotograma 1080p (1920x1088 tras padding) | 1,73 px de error mediano; 9,88 ms/frame FP16 en RTX 3060; 2,50 ms/frame TensorRT FP16 en A6000 | Apache-2.0 | Hugging Face y GitHub de CondadosAI |
 | WASB (Tarashima et al., BMVC 2023) | Baseline de deteccion y tracking de pelotas deportivas | no disponible | no disponible | 58,6 ms/frame segun la medicion del autor, 175% del presupuesto de 33,37 ms | no disponible | Paper publico en arXiv (2311.05237) |
 | Otros detectores de pelota genericos (por ejemplo, basados en YOLO) | Deteccion de objetos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,10 +103,10 @@ No se dispone de datos medidos de terceros alternativos en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CondadosAI/sportcv-ballnet
+- Modelo en Hugging Face: https://huggingface.co/CondadosAI/sportcv-ballnet
 - Repositorio del proyecto sportcv: https://github.com/CondadosAI/sportcv
 - Hashes de pesos fijados: https://github.com/CondadosAI/sportcv/blob/main/src/sportcv/core/weights.py
 - Paper de referencia WASB (Tarashima et al., BMVC 2023): https://arxiv.org/abs/2311.05237
 - Metraje de entrenamiento (YouTube, CC BY 3.0): https://www.youtube.com/watch?v=T5rmWjvt8Os
 
-Nota: las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo. Los unicos resultados obtenidos tratan sobre el mecanismo H2Global y la sostenibilidad del hidrogeno, sin ninguna conexion con `sportcv-ballnet`, por lo que se omiten. Toda la informacion tecnica de esta ficha procede de la model card publicada en HuggingFace por el autor.
+Nota: las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo. Los unicos resultados obtenidos tratan sobre el mecanismo H2Global y la sostenibilidad del hidrogeno, sin ninguna conexion con `sportcv-ballnet`, por lo que se omiten. Toda la informacion tecnica de esta ficha procede de la model card publicada en Hugging Face por el autor.

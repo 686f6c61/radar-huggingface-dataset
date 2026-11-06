@@ -85,9 +85,9 @@ El adaptador aquí descrito no añade capacidades nuevas al modelo base, solo lo
 
 ## Enlaces
 
-- [HuggingFace - sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed1234_step340](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed1234_step340)
-- [HuggingFace - LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct)
+- [Hugging Face - sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed1234_step340](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed1234_step340)
+- [Hugging Face - LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct)
 - [GitHub - LG-AI-EXAONE/EXAONE-3.5](https://github.com/LG-AI-EXAONE/EXAONE-3.5)
 - [Informe técnico EXAONE 3.5 (arXiv)](https://arxiv.org/html/2412.04862v3)
 - [PDF del informe técnico (LG Research)](https://www.lgresearch.ai/data/upload/tech_report/en/Technical_report_EXAONE_3.5.pdf)
-- [HuggingFace - EXAONE-3.5-7.8B-Instruct-GGUF](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF)
+- [Hugging Face - EXAONE-3.5-7.8B-Instruct-GGUF](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF)

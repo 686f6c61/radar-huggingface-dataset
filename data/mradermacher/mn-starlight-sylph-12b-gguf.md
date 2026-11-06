@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MN-Starlight-Sylph-12B-GGUF | 12.247.782.400 | No disponible | Apache 2.0 | HuggingFace |
-| Starlight-V3-12B-GGUF | No disponible | No disponible | No disponible | HuggingFace |
-| MN-12B-Starcannon-v1-i1-GGUF | No disponible | No disponible | No disponible | HuggingFace |
+| MN-Starlight-Sylph-12B-GGUF | 12.247.782.400 | No disponible | Apache 2.0 | Hugging Face |
+| Starlight-V3-12B-GGUF | No disponible | No disponible | No disponible | Hugging Face |
+| MN-12B-Starcannon-v1-i1-GGUF | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/MN-Starlight-Sylph-12B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/MN-Starlight-Sylph-12B-GGUF
 - Modelo base: https://huggingface.co/EldritchLabs/MN-Starlight-Sylph-12B
 - Quants con imatrix: https://huggingface.co/mradermacher/MN-Starlight-Sylph-12B-i1-GGUF
 - Otros modelos GGUF de 12B del mismo autor: https://huggingface.co/mradermacher/Starlight-V3-12B-GGUF y https://huggingface.co/mradermacher/MN-12B-Starcannon-v1-i1-GGUF

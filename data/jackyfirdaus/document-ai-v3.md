@@ -4,7 +4,7 @@
 
 El repositorio `Jackyfirdaus/document-ai-v3` no contiene un modelo entrenado ni un checkpoint utilizable. Se trata de una nota de investigación exploratoria sobre Document AI, publicada por el usuario Jackyfirdaus bajo licencia CC-BY-4.0. El propio README del autor indica expresamente que el contenido es un conjunto de apuntes de trabajo que organiza motivación, trabajos relacionados, una hipótesis falsable y un plan de evaluación, y que no debe interpretarse como un artículo completo ni como una liberación de modelos entrenados.
 
-A pesar de que el repositorio aparece etiquetado en HuggingFace con el tag `transformer` y contiene un archivo en formato `safetensors` con 16.576 parámetros totales, el autor no reclama ningún avance de rendimiento, ni ablaciones completadas, ni código liberado, ni un checkpoint entrenado. El artefacto principal es un documento de texto (`reading.md`) que plantea una propuesta metodológica para evaluar sistemas de Document AI sobre conjuntos de datos como FUNSD, SROIE y CORD. Por tanto, este repositorio no es un modelo operativo y no puede utilizarse para inferencia ni para tareas de procesamiento de documentos.
+A pesar de que el repositorio aparece etiquetado en Hugging Face con el tag `transformer` y contiene un archivo en formato `safetensors` con 16.576 parámetros totales, el autor no reclama ningún avance de rendimiento, ni ablaciones completadas, ni código liberado, ni un checkpoint entrenado. El artefacto principal es un documento de texto (`reading.md`) que plantea una propuesta metodológica para evaluar sistemas de Document AI sobre conjuntos de datos como FUNSD, SROIE y CORD. Por tanto, este repositorio no es un modelo operativo y no puede utilizarse para inferencia ni para tareas de procesamiento de documentos.
 
 La relevancia del repositorio es exclusivamente documental y metodológica. Puede servir como punto de partida para investigadores que deseen revisar una propuesta de diseño experimental en Document AI, pero no ofrece ninguna capacidad funcional de procesamiento de lenguaje o visión.
 
@@ -64,10 +64,10 @@ No disponible. Este repositorio no es un modelo comparable con otros modelos de 
 - El autor advierte que las secciones de planes e hipótesis no son resultados experimentales y no deben citarse como evidencia.
 - No se han publicado resultados de benchmarks ni validaciones empíricas.
 - El repositorio no es apto para uso comercial como modelo de IA, aunque la licencia CC-BY-4.0 permite la reutilización del contenido textual de la nota con atribución.
-- Existe riesgo de confusión: los metadatos de HuggingFace pueden inducir a pensar que es un modelo, cuando en realidad es una nota de investigación.
+- Existe riesgo de confusión: los metadatos de Hugging Face pueden inducir a pensar que es un modelo, cuando en realidad es una nota de investigación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jackyfirdaus/document-ai-v3
-- Blog de HuggingFace sobre Document AI (recurso externo): https://github.com/huggingface/blog/blob/main/document-ai.md
+- Repositorio en Hugging Face: https://huggingface.co/Jackyfirdaus/document-ai-v3
+- Blog de Hugging Face sobre Document AI (recurso externo): https://github.com/huggingface/blog/blob/main/document-ai.md
 - Documentación de Google Cloud Document AI (recurso externo): https://docs.cloud.google.com/document-ai/docs

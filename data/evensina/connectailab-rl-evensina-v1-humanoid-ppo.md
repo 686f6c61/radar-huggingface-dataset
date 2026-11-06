@@ -89,7 +89,7 @@ No se dispone de informacion sobre modelos comparables publicados por el mismo a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-evensina-v1-humanoid-ppo | ~156.000 (MLP) | No aplica | 789,0 recompensa media; 152 pasos | No disponible | HuggingFace |
+| connectailab-rl-evensina-v1-humanoid-ppo | ~156.000 (MLP) | No aplica | 789,0 recompensa media; 152 pasos | No disponible | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de informacion sobre modelos comparables publicados por el mismo a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EvenSina/connectailab-rl-evensina-v1-humanoid-ppo
+- Modelo en Hugging Face: https://huggingface.co/EvenSina/connectailab-rl-evensina-v1-humanoid-ppo
 - Entorno Gymnasium `Humanoid-v5`: no disponible en la informacion proporcionada (referencia generica: documentacion de Gymnasium y MuJoCo)
 - Repositorio de MuJoCo: no disponible en la informacion proporcionada
 - Video de demostracion (`replay.mp4`): referenciado en la model card, sin URL directa disponible

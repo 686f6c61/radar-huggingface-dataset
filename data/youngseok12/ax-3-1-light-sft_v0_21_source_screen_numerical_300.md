@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **AX-3.1-Light-sft_v0_21_source_screen_numerical_300** es un fine-tuning experimental del modelo base **skt/A.X-3.1-Light**, desarrollado por el usuario HuggingFace *youngseok12*. Se trata de una variante de "source-screening" (cribado de fuentes) que sustituye 300 filas del conjunto de entrenamiento original por ejemplos de machine reading numérico procedentes del dataset AIHub-71568 (숫자연산 기계독해). El objetivo es evaluar cómo afecta esta sustitución controlada al rendimiento del modelo en tareas de razonamiento numérico y comprensión lectora en coreano.
+El modelo **AX-3.1-Light-sft_v0_21_source_screen_numerical_300** es un fine-tuning experimental del modelo base **skt/A.X-3.1-Light**, desarrollado por el usuario Hugging Face *youngseok12*. Se trata de una variante de "source-screening" (cribado de fuentes) que sustituye 300 filas del conjunto de entrenamiento original por ejemplos de machine reading numérico procedentes del dataset AIHub-71568 (숫자연산 기계독해). El objetivo es evaluar cómo afecta esta sustitución controlada al rendimiento del modelo en tareas de razonamiento numérico y comprensión lectora en coreano.
 
 El modelo es un LoRA-merged standalone en formato BF16, con aproximadamente 7.260 millones de parámetros (7.3B), y hereda la arquitectura tipo Llama del modelo base. Está pensado exclusivamente para investigación y evaluación controlada en coreano, y no incluye datos de benchmarks, respuestas de evaluación ni credenciales de acceso en el repositorio. Su relevancia radica en que forma parte de una serie de experimentos de ablación sobre la composición de datos de entrenamiento, con resultados locales publicados en la model card.
 
@@ -82,5 +82,5 @@ No se dispone de información suficiente en el repositorio ni en los resultados 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_numerical_300)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_numerical_300)
 - [Modelo base skt/A.X-3.1-Light](https://huggingface.co/skt/A.X-3.1-Light) (referencia en la model card)

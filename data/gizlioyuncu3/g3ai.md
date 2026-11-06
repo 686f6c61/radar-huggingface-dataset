@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G3AI es un modelo de lenguaje publicado por el usuario Gizlioyuncu3 en HuggingFace, construido a partir del modelo base `unsloth/Qwen3.8-27B-GGUF`, que corresponde a una cuantización GGUF de un modelo de la familia Qwen3 con aproximadamente 27 mil millones de parámetros. El modelo está etiquetado para tareas de generación de código, uso como agente y despliegue mediante text-generation-inference, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+G3AI es un modelo de lenguaje publicado por el usuario Gizlioyuncu3 en Hugging Face, construido a partir del modelo base `unsloth/Qwen3.8-27B-GGUF`, que corresponde a una cuantización GGUF de un modelo de la familia Qwen3 con aproximadamente 27 mil millones de parámetros. El modelo está etiquetado para tareas de generación de código, uso como agente y despliegue mediante text-generation-inference, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 La ficha pública es extremadamente escasa: no incluye descripción del autor, detalles de entrenamiento, benchmarks ni especificaciones técnicas más allá de los metadatos básicos. El modelo se presenta como compatible con la librería transformers y con endpoints de inferencia en la región de Estados Unidos. Dada la falta de información verificable, esta ficha se limita a documentar los datos disponibles y señalar explícitamente las carencias, evitando cualquier especulación.
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - Gizlioyuncu3/G3AI](https://huggingface.co/Gizlioyuncu3/G3AI)
+- [Hugging Face - Gizlioyuncu3/G3AI](https://huggingface.co/Gizlioyuncu3/G3AI)
 - [GitHub - Gizlioyuncu3/G3AI](https://github.com/Gizlioyuncu3/G3AI)
 - [README.md en GitHub](https://github.com/Gizlioyuncu3/G3AI/blob/main/README.md)

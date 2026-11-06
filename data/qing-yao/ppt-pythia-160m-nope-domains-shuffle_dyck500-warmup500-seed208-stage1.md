@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed208-stage1` es un ajuste fino (fine-tuning) de EleutherAI/pythia-160m publicado por el usuario qing-yao en HuggingFace. Se trata de un checkpoint experimental de investigación, no de un modelo de propósito general: su nombre codifica el experimento concreto (arquitectura sin RoPE, tareas sintéticas Dyck, mezcla de dominios, semilla 208, fase 1) y la model card generada automáticamente no documenta ni el conjunto de datos ni los objetivos.
+El modelo `ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed208-stage1` es un ajuste fino (fine-tuning) de EleutherAI/pythia-160m publicado por el usuario qing-yao en Hugging Face. Se trata de un checkpoint experimental de investigación, no de un modelo de propósito general: su nombre codifica el experimento concreto (arquitectura sin RoPE, tareas sintéticas Dyck, mezcla de dominios, semilla 208, fase 1) y la model card generada automáticamente no documenta ni el conjunto de datos ni los objetivos.
 
 Técnicamente es un transformer decoder-only de tipo GPT-NeoX con una variante de atención denominada `gpt_neox_nope` (sin rotary positional embeddings), con 85.252.608 parámetros reales según los pesos en safetensors. El modelo base Pythia-160m de EleutherAI es conocido por su suite de checkpoints intermedios orientada a estudios de interpretabilidad y dinámica de entrenamiento; este fine-tuning parece parte de un estudio sobre cómo afectan variaciones arquitectónicas y de datos sintéticos al aprendizaje de tareas formales.
 
@@ -63,10 +63,10 @@ La model-index del autor declara una entrada sin resultados (`"results": []`). N
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo | 85,25 M | no disponible | Apache 2.0 | HuggingFace, código custom | Fine-tuning experimental sin RoPE sobre Pythia-160m |
-| EleutherAI/pythia-160m | 162 M (nominales) / ~85 M reales según checkpoint | 2048 | Apache 2.0 | HuggingFace, transformers estándar | Modelo base con RoPE y suite de checkpoints |
-| EleutherAI/pythia-70m | ~70 M | 2048 | Apache 2.0 | HuggingFace, transformers estándar | Alternativa más pequeña de la misma familia |
-| GPT-2 small | 124 M | 1024 | MIT | HuggingFace, transformers estándar | Referencia histórica de decoder-only pequeño |
+| Este modelo | 85,25 M | no disponible | Apache 2.0 | Hugging Face, código custom | Fine-tuning experimental sin RoPE sobre Pythia-160m |
+| EleutherAI/pythia-160m | 162 M (nominales) / ~85 M reales según checkpoint | 2048 | Apache 2.0 | Hugging Face, transformers estándar | Modelo base con RoPE y suite de checkpoints |
+| EleutherAI/pythia-70m | ~70 M | 2048 | Apache 2.0 | Hugging Face, transformers estándar | Alternativa más pequeña de la misma familia |
+| GPT-2 small | 124 M | 1024 | MIT | Hugging Face, transformers estándar | Referencia histórica de decoder-only pequeño |
 
 ## Limitaciones y advertencias
 
@@ -81,6 +81,6 @@ La model-index del autor declara una entrada sin resultados (`"results": []`). N
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed208-stage1
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed208-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia (EleutherAI): https://github.com/EleutherAI/pythia

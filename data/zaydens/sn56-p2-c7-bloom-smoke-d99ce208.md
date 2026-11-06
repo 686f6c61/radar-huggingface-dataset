@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zaydens/sn56-p2-C7-BLOOM-SMOKE-d99ce208` es un checkpoint de investigación publicado en HuggingFace por el usuario `zaydens`. Según su propia model card, se trata de un «research artefact» (artefacto de investigación) generado en el contexto de lo que el autor denomina «SN56 text tournament replay», con una verificación de tipo «validator-style round-trip»: el repositorio se descarga de nuevo y se puntúa sobre las filas reservadas (*held-out*) de la tarea para comprobar que la copia alojada en el Hub obtiene exactamente la misma puntuación que la copia local. No es, por tanto, un modelo orientado a uso general, sino un objeto de reproducibilidad de un pipeline de entrenamiento y evaluación.
+`zaydens/sn56-p2-C7-BLOOM-SMOKE-d99ce208` es un checkpoint de investigación publicado en Hugging Face por el usuario `zaydens`. Según su propia model card, se trata de un «research artefact» (artefacto de investigación) generado en el contexto de lo que el autor denomina «SN56 text tournament replay», con una verificación de tipo «validator-style round-trip»: el repositorio se descarga de nuevo y se puntúa sobre las filas reservadas (*held-out*) de la tarea para comprobar que la copia alojada en el Hub obtiene exactamente la misma puntuación que la copia local. No es, por tanto, un modelo orientado a uso general, sino un objeto de reproducibilidad de un pipeline de entrenamiento y evaluación.
 
 El repositorio contiene 559.214.592 parámetros (aproximadamente 559 M) en formato safetensors, con un tamaño total de 1,1 GB. Lleva la etiqueta `bloom`, lo que sitúa la arquitectura en la familia BLOOM (transformer decoder-only); el recuento de parámetros coincide exactamente con el de BLOOM-560m, aunque la model card no confirma la arquitectura base ni el proceso de entrenamiento. El resto de ficheros son, según el autor, el directorio de salida del entrenador subido sin modificaciones.
 
@@ -77,10 +77,10 @@ Los datos de la columna «este modelo» proceden de la información del reposito
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sn56-p2-C7-BLOOM-SMOKE-d99ce208 | 559 M (dato real) | No disponible | No disponible | HuggingFace, 0 descargas |
-| BLOOM-560m | 559 M (referencia publica) | 2048 tokens (referencia publica) | BigScience BLOOM RAIL 1.0 (referencia publica) | HuggingFace |
-| Qwen2.5-0.5B | ≈494 M (referencia publica) | 32.768 tokens (referencia publica) | Apache 2.0 (referencia publica) | HuggingFace |
-| SmolLM2-360M | ≈362 M (referencia publica) | 8192 tokens (referencia publica) | Apache 2.0 (referencia publica) | HuggingFace |
+| sn56-p2-C7-BLOOM-SMOKE-d99ce208 | 559 M (dato real) | No disponible | No disponible | Hugging Face, 0 descargas |
+| BLOOM-560m | 559 M (referencia publica) | 2048 tokens (referencia publica) | BigScience BLOOM RAIL 1.0 (referencia publica) | Hugging Face |
+| Qwen2.5-0.5B | ≈494 M (referencia publica) | 32.768 tokens (referencia publica) | Apache 2.0 (referencia publica) | Hugging Face |
+| SmolLM2-360M | ≈362 M (referencia publica) | 8192 tokens (referencia publica) | Apache 2.0 (referencia publica) | Hugging Face |
 
 La comparación relevante no es de rendimiento —no hay benchmarks de este checkpoint— sino de estado de publicación: frente a las alternativas, este artefacto carece de licencia, de idiomas declarados y de documentación de capacidades, lo que limita cualquier uso fuera del ámbito de reproducción de experimentos.
 
@@ -98,5 +98,5 @@ La comparación relevante no es de rendimiento —no hay benchmarks de este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zaydens/sn56-p2-C7-BLOOM-SMOKE-d99ce208
+- Modelo en Hugging Face: https://huggingface.co/zaydens/sn56-p2-C7-BLOOM-SMOKE-d99ce208
 - La busqueda web realizada no devolvio ningun enlace relevante al modelo, a su arquitectura ni al proyecto «SN56 text tournament». No se incluyen los resultados obtenidos por no guardar relacion con el objeto de esta ficha.

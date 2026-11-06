@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`melissarivera/vit-checkpoint` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de Vision Transformer (ViT) orientado a aprendizaje contrastivo. Lo desarrolla el usuario melissarivera y se distribuye con licencia MIT. El propio autor lo describe como un artefacto de tipo "research-oriented" cuyo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El repositorio tiene 8 descargas, 0 likes y un tamaño de 0,0 GB, señales coherentes con un prototipo recién creado (12 de octubre de 2026).
+`melissarivera/vit-checkpoint` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de Vision Transformer (ViT) orientado a aprendizaje contrastivo. Lo desarrolla el usuario melissarivera y se distribuye con licencia MIT. El propio autor lo describe como un artefacto de tipo "research-oriented" cuyo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El repositorio tiene 8 descargas, 0 likes y un tamaño de 0,0 GB, señales coherentes con un prototipo recién creado (12 de octubre de 2026).
 
 La configuración declarada describe una escala "giant", atención lineal, fusión por "co attention", activación "gelu tanh" y normalización InstanceNorm. El recuento de parámetros reportado por el fichero de safetensors es de 16.576, una cifra que contrasta de forma notable con la etiqueta "giant" y que conviene tratar con cautela: no hay información que permita verificar si se trata del número real de tensores/parámetros del checkpoint o de un valor derivado del andamiaje de inicialización.
 
@@ -73,7 +73,7 @@ La comparativa se establece frente a otros transformadores de visión con objeti
 
 | Modelo | Parametros (aprox.) | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| melissarivera/vit-checkpoint | 16.576 reportados (escala declarada "giant", discrepante) | no disponible | MIT | HuggingFace, checkpoint de inicializacion |
+| melissarivera/vit-checkpoint | 16.576 reportados (escala declarada "giant", discrepante) | no disponible | MIT | Hugging Face, checkpoint de inicializacion |
 | CLIP ViT-L/14 (OpenAI) | ~428 M | 77 tokens de texto, 224 px | MIT | Pesos publicos, ampliamente integrado en ecosistema |
 | SigLIP (Google) | ~878 M en la variante large | 16x16 parches, 224 px | Apache-2.0 | Pesos publicos |
 | DINOv2 ViT-g/14 (Meta) | ~1,1 B | 14x14 parches, 224-518 px | Apache-2.0 | Pesos publicos, usado como extractor congelado |
@@ -94,6 +94,6 @@ Diferencias clave: a diferencia de CLIP, SigLIP o DINOv2, este repositorio no of
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/melissarivera/vit-checkpoint
-- Ficheros del repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña "Files" del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/melissarivera/vit-checkpoint
+- Ficheros del repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña "Files" del repositorio de Hugging Face)
 - Paper, blog técnico, repositorio de código independiente o demo: no disponible. Las búsquedas web realizadas no devolvieron ninguna referencia asociada a este modelo.

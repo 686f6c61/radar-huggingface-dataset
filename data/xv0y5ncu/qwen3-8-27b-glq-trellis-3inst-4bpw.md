@@ -89,7 +89,7 @@ La comparativa muestra que GLQ 4bpw ofrece el menor tamano de pesos y una perple
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xv0y5ncu/Qwen3.8-27B-GLQ-trellis-3inst-4bpw
+- Repositorio Hugging Face: https://huggingface.co/xv0y5ncu/Qwen3.8-27B-GLQ-trellis-3inst-4bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Codigo GLQ (GitHub): https://github.com/cnygaard/glq
 - Paper QTIP (trellis-coded quantization): https://arxiv.org/abs/2406.11235

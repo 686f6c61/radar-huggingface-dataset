@@ -4,7 +4,7 @@
 
 Blink v0.2-26B-A4B-NVFP4 es un modelo de decisión calibrado desarrollado por PixilabAI y construido sobre el modelo base google/gemma-4-26B-A4B-it. A diferencia de un LLM generativo convencional, Blink recibe un estado, una pregunta y una lista de opciones, y devuelve una probabilidad para cada opción en un único pase hacia delante y generando un solo token. El resultado es la softmax sobre las letras de las opciones en la primera posición generada. Está diseñado para sustituir llamadas a LLM grandes cuyo texto hay que parsear después, en tareas como enrutamiento, moderación, etiquetado, gating, deduplicación y comprobaciones de sí/no.
 
-El modelo conserva la arquitectura Mixture-of-Experts del Gemma 4 26B-A4B: 26.000 millones de parámetros totales y 4.000 millones activos por token. Se distribuye cuantizado en NVFP4 mediante NVIDIA ModelOpt, con 17,5 GB en disco (el repositorio de HuggingFace declara 10,0 GB, dato que no coincide con la cifra de la model card), y una ventana de contexto de 32.768 tokens. Según el autor, se sirve en una única GPU RTX PRO 5000 manteniendo los 32k de contexto.
+El modelo conserva la arquitectura Mixture-of-Experts del Gemma 4 26B-A4B: 26.000 millones de parámetros totales y 4.000 millones activos por token. Se distribuye cuantizado en NVFP4 mediante NVIDIA ModelOpt, con 17,5 GB en disco (el repositorio de Hugging Face declara 10,0 GB, dato que no coincide con la cifra de la model card), y una ventana de contexto de 32.768 tokens. Según el autor, se sirve en una única GPU RTX PRO 5000 manteniendo los 32k de contexto.
 
 Su relevancia actual reside en dos factores. Primero, la calibración: a la temperatura recomendada de 1,9, su confianza coincide con su precisión (0,733 frente a 0,731, con un error de calibración de 0,025 sobre 216.942 decisiones evaluadas), lo que permite usar umbrales de probabilidad en producción. Segundo, su posición en el Decision Index 0.2.1: 55,97 puntos, quinto entre las entradas públicas del tablero y a 1,5 puntos del mejor modelo de pesos abiertos listado, con una mejora de 1,07 puntos respecto a Blink v0.1. El modelo se publica bajo licencia Apache 2.0 y solo declara inglés como idioma soportado.
 
@@ -20,7 +20,7 @@ Su relevancia actual reside en dos factores. Primero, la calibración: a la temp
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (cuantizacion NVFP4) |
-| Tamano en disco | 17,5 GB segun la model card; 10,0 GB declarados en el repositorio de HuggingFace |
+| Tamano en disco | 17,5 GB segun la model card; 10,0 GB declarados en el repositorio de Hugging Face |
 | Protocolo de salida | surogate decisions v1 |
 | Temperatura recomendada | 1,9 (decision_config.json: recommended_decision_temperature) |
 | Fecha de publicacion | 30 de septiembre de 2026 (dato del repositorio) |
@@ -105,8 +105,8 @@ Metricas de calibracion declaradas: confianza 0,733 frente a precision 0,731, co
 
 | Modelo | Parametros | Contexto | Decision Index 0.2.1 | Tools | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Blink v0.2 26B-A4B NVFP4 | 26B totales, 4B activos (MoE) | 32.768 | 55,97 | 69,3 | Apache 2.0 | Pesos en HuggingFace |
-| Blink v0.1 26B-A4B NVFP4 | 26B totales, 4B activos (MoE) | no disponible | 54,90 | 66,3 | Apache 2.0 | Pesos en HuggingFace |
+| Blink v0.2 26B-A4B NVFP4 | 26B totales, 4B activos (MoE) | 32.768 | 55,97 | 69,3 | Apache 2.0 | Pesos en Hugging Face |
+| Blink v0.1 26B-A4B NVFP4 | 26B totales, 4B activos (MoE) | no disponible | 54,90 | 66,3 | Apache 2.0 | Pesos en Hugging Face |
 | Surogate Rune 26B-A4B v3 | 26B totales, 4B activos (MoE) | no disponible | 57,44 | 71,2 | no disponible | Pesos publicos |
 | Decider chat · Gemma-4-31B | 31B (denso, por el nombre) | no disponible | 57,33 | 75,6 | no disponible | Pesos publicos |
 | Decider 35B-A3B NVFP4 | 35B totales, 3B activos (MoE) | no disponible | 47,11 | 56,5 | no disponible | Pesos publicos |
@@ -130,7 +130,7 @@ Blink v0.2 destaca en Retrieval (63,0), donde empata practicamente con Surogate 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PixilabAI/Blink-v0.2-26B-A4B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/PixilabAI/Blink-v0.2-26B-A4B-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Gemma 4 26B-A4B en Jetson AI Lab: https://www.jetson-ai-lab.com/models/gemma4-26b-a4b/

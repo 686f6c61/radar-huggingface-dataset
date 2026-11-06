@@ -104,7 +104,7 @@ Las tres entradas comparten la misma arquitectura y el mismo origen de destilaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-4bit
 - Repositorio canonico (oQ4e): https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ4e
 - Variante de 8 bits (oQ8e): https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ8e
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill

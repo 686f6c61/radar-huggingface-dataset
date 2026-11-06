@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christopheredwar/undergrad-multitask` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea. Lo publica el usuario christopheredwar y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como una configuración "nano" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño.
+`christopheredwar/undergrad-multitask` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea. Lo publica el usuario christopheredwar y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como una configuración "nano" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño.
 
 El artefacto principal es un script de PyTorch (`model.py`) que define la arquitectura y un punto de entrada ejecutable, acompañado de `config.json`, `training_args.json` y un checkpoint de inicialización `model.safetensors`. Este checkpoint no ha sido entrenado ni evaluado; el repositorio no declara ninguna puntuación de benchmark. El recuento de parámetros reportado en los metadatos de safetensors es de 16.576, una magnitud extremadamente pequeña que confirma el carácter didáctico y no productivo del artefacto.
 
@@ -77,4 +77,4 @@ No disponible. La model card no proporciona resultados comparativos ni referenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christopheredwar/undergrad-multitask
+- Hugging Face: https://huggingface.co/christopheredwar/undergrad-multitask

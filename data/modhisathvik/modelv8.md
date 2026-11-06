@@ -73,9 +73,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ModhiSathvik/modelv8 | 71,3 M | 1.024 tokens | No disponible | HuggingFace, requiere codigo del proyecto |
-| Pythia-70M | 70 M | 2.048 tokens | Apache 2.0 | HuggingFace, compatible con transformers |
-| GPT-2 small | 124 M | 1.024 tokens | MIT | HuggingFace, compatible con transformers |
+| ModhiSathvik/modelv8 | 71,3 M | 1.024 tokens | No disponible | Hugging Face, requiere codigo del proyecto |
+| Pythia-70M | 70 M | 2.048 tokens | Apache 2.0 | Hugging Face, compatible con transformers |
+| GPT-2 small | 124 M | 1.024 tokens | MIT | Hugging Face, compatible con transformers |
 
 La comparacion de rendimiento no es posible con los datos disponibles, ya que modelv8 solo reporta held-out loss, precision por token y BLiMP, sin coincidir en benchmarks con estas alternativas. A nivel estructural, modelv8 destaca por su arquitectura no convencional (atencion FoX con ventanas mixtas) y por su coste de entrenamiento muy bajo, mientras que las alternativas ofrecen licencias claras y soporte directo en el ecosistema transformers.
 
@@ -94,7 +94,7 @@ La comparacion de rendimiento no es posible con los datos disponibles, ya que mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ModhiSathvik/modelv8
+- Modelo en Hugging Face: https://huggingface.co/ModhiSathvik/modelv8
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Repositorio del proyecto speed-check-ai-traning (rama `paper-faithful-hrm`): no disponible como enlace publico en la informacion proporcionada
 - Paper o publicacion tecnica asociada: no disponible

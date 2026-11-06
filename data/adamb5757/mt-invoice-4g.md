@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adamb5757/mt-invoice-4g` es un modelo de lenguaje publicado en HuggingFace por el usuario adamb5757, con un total de 3.836.021.856 parametros (aproximadamente 3,84 mil millones) registrados en el repositorio. El repositorio ocupa 10,0 GB e incluye pesos en formato GGUF, ademas de los tensores en safetensors a partir de los cuales se ha calculado el recuento de parametros. Se distribuye con las etiquetas `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que indica que esta pensado para inferencia local mediante herramientas compatibles con GGUF y para su despliegue en endpoints conversacionales.
+`adamb5757/mt-invoice-4g` es un modelo de lenguaje publicado en Hugging Face por el usuario adamb5757, con un total de 3.836.021.856 parametros (aproximadamente 3,84 mil millones) registrados en el repositorio. El repositorio ocupa 10,0 GB e incluye pesos en formato GGUF, ademas de los tensores en safetensors a partir de los cuales se ha calculado el recuento de parametros. Se distribuye con las etiquetas `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que indica que esta pensado para inferencia local mediante herramientas compatibles con GGUF y para su despliegue en endpoints conversacionales.
 
 El identificador del modelo incluye los terminos "mt" e "invoice", lo que sugiere un posible enfoque hacia traduccion automatica o procesamiento de documentos de facturacion, pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion disponible. No se ha publicado informacion sobre la arquitectura interna, la licencia, los idiomas soportados, la longitud de contexto ni el proceso de entrenamiento.
 
@@ -20,13 +20,13 @@ La relevancia de esta ficha es limitada y hay que ser transparente al respecto: 
 | Licencia | no disponible |
 | Formato de pesos | GGUF (etiqueta del repositorio) y safetensors (el recuento de parametros se ha obtenido de safetensors) |
 
-Datos adicionales del repositorio: 10,0 GB de tamano total, 37 descargas, 0 likes, etiquetas `gguf`, `endpoints_compatible`, `region:us` y `conversational`. Fecha de creacion: 16 de septiembre de 2026. Ultima actualizacion: 17 de septiembre de 2026. No se especifica pipeline de HuggingFace.
+Datos adicionales del repositorio: 10,0 GB de tamano total, 37 descargas, 0 likes, etiquetas `gguf`, `endpoints_compatible`, `region:us` y `conversational`. Fecha de creacion: 16 de septiembre de 2026. Ultima actualizacion: 17 de septiembre de 2026. No se especifica pipeline de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
 No se ha publicado informacion sobre la arquitectura del modelo en la informacion disponible. El unico dato estructural cierto es el numero de parametros: 3.836.021.856, un orden de magnitud coherente con las familias de transformers densos de entre 3 y 4 mil millones de parametros, pero no hay confirmacion de que se trate de un transformer denso, de una mezcla de expertos (MoE), de un modelo hibrido con capas de atencion lineal ni de ninguna otra variante. Tampoco se ha confirmado si emplea atencion con GQA/MQA, decodificacion especulativa u otras optimizaciones de inferencia.
 
-Respecto a los datos de entrenamiento, no hay informacion disponible sobre el numero de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF, DPO u otra tecnica de alineacion. La etiqueta `conversational` indica que el modelo esta preparado para interacciones de tipo dialogo, y la etiqueta `endpoints_compatible` sugiere que su plantilla de chat es compatible con el esquema de HuggingFace Inference Endpoints, pero ninguna de las dos aporta detalles sobre el proceso de entrenamiento.
+Respecto a los datos de entrenamiento, no hay informacion disponible sobre el numero de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF, DPO u otra tecnica de alineacion. La etiqueta `conversational` indica que el modelo esta preparado para interacciones de tipo dialogo, y la etiqueta `endpoints_compatible` sugiere que su plantilla de chat es compatible con el esquema de Hugging Face Inference Endpoints, pero ninguna de las dos aporta detalles sobre el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ Las siguientes cifras son estimaciones calculadas a partir del numero de paramet
 - GPU recomendadas: para FP16, tarjetas con 16 GB o mas (RTX 4080, RTX 4090, A100 40 GB, H100); para cuantizaciones de 4 u 8 bits, tarjetas de 6-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, L4, T4).
 - Cabe en GPU de consumo: si, con cuantizacion. En 4 bits entra con holgura en una RTX 3060 de 12 GB o en una RTX 4060 de 8 GB; en 8 bits es recomendable disponer de 8-12 GB.
 - CPU y Apple Silicon: el formato GGUF permite ejecucion en CPU y en chips Apple con memoria unificada (M1/M2/M3 con 8 GB o mas), con velocidades de generacion sensiblemente inferiores a las de GPU.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python) para los pesos GGUF; vLLM, Text Generation Inference o SGLang si se dispone de los pesos en safetensors; la etiqueta `endpoints_compatible` apunta a HuggingFace Inference Endpoints como opcion gestionada.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python) para los pesos GGUF; vLLM, Text Generation Inference o SGLang si se dispone de los pesos en safetensors; la etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints como opcion gestionada.
 - Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de latencia de primer token para este modelo.
 
 ## Comparativa con modelos similares
@@ -78,10 +78,10 @@ No hay datos de rendimiento publicados sobre `adamb5757/mt-invoice-4g`, por lo q
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| adamb5757/mt-invoice-4g | 3,84 mil millones | no disponible | no disponible | HuggingFace, pesos GGUF y safetensors |
-| Qwen2.5-3B | 3,09 mil millones | 32.768 tokens (ampliable) | Apache 2.0 | HuggingFace, GGUF y safetensors |
-| Llama 3.2 3B | 3,21 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, GGUF y safetensors |
-| Phi-3.5-mini | 3,82 mil millones | 128.000 tokens | MIT | HuggingFace, GGUF y safetensors |
+| adamb5757/mt-invoice-4g | 3,84 mil millones | no disponible | no disponible | Hugging Face, pesos GGUF y safetensors |
+| Qwen2.5-3B | 3,09 mil millones | 32.768 tokens (ampliable) | Apache 2.0 | Hugging Face, GGUF y safetensors |
+| Llama 3.2 3B | 3,21 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, GGUF y safetensors |
+| Phi-3.5-mini | 3,82 mil millones | 128.000 tokens | MIT | Hugging Face, GGUF y safetensors |
 
 La comparacion pone de manifiesto la principal desventaja del modelo analizado: frente a alternativas de tamano practicamente identico, no declara licencia, no declara idiomas, no declara contexto y no publica evaluaciones, ademas de contar con una adopcion practicamente nula (37 descargas). Sin datos de benchmarks no es posible afirmar que sea competitivo.
 
@@ -99,7 +99,7 @@ La comparacion pone de manifiesto la principal desventaja del modelo analizado: 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adamb5757/mt-invoice-4g
+- Repositorio en Hugging Face: https://huggingface.co/adamb5757/mt-invoice-4g
 - Model card: no disponible (el repositorio no incluye documentacion descriptiva)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

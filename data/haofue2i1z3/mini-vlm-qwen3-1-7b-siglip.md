@@ -96,7 +96,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haofue2i1z3/Mini-VLM-Qwen3-1.7B-SigLIP
+- Modelo en Hugging Face: https://huggingface.co/haofue2i1z3/Mini-VLM-Qwen3-1.7B-SigLIP
 - Codigo de entrenamiento e inferencia: https://github.com/jackychris/mini-vlm
 - Modelo base de lenguaje: https://huggingface.co/Qwen/Qwen3-1.7B
 - Codificador visual: https://huggingface.co/google/siglip-so400m-patch14-384

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nxp/selfie-segmenter-imx` es un repositorio publicado por NXP Semiconductors en HuggingFace cuyo identificador sugiere un modelo de segmentación de imagen orientado a selfies o retratos, aparentemente pensado para ejecutarse en la familia de procesadores de aplicaciones i.MX de la propia NXP. La ficha del modelo publicada por el autor no contiene ningún contenido más allá de la declaración de licencia MIT: no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. Por tanto, buena parte de los apartados de esta ficha quedan marcados como "no disponible".
+`nxp/selfie-segmenter-imx` es un repositorio publicado por NXP Semiconductors en Hugging Face cuyo identificador sugiere un modelo de segmentación de imagen orientado a selfies o retratos, aparentemente pensado para ejecutarse en la familia de procesadores de aplicaciones i.MX de la propia NXP. La ficha del modelo publicada por el autor no contiene ningún contenido más allá de la declaración de licencia MIT: no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. Por tanto, buena parte de los apartados de esta ficha quedan marcados como "no disponible".
 
 Se trata, por el nombre y el contexto del fabricante, de un modelo de segmentación semántica o de matting de primer plano (separación de persona frente a fondo) destinado a inferencia en el borde, no de un modelo generativo de lenguaje. La relevancia de este tipo de artefactos es alta en el ámbito de la visión por computador embebida: permiten aplicar efectos de fondo, desenfoque o sustitución de escena en videollamadas, cámaras industriales o aplicaciones de automoción sin enviar fotogramas a la nube.
 
@@ -70,10 +70,10 @@ No se dispone de datos verificados del modelo evaluado (parametros, contexto, re
 
 | Modelo | Tipo de tarea | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nxp/selfie-segmenter-imx | segmentacion de selfie (inferido) | no disponible | MIT | HuggingFace (sin documentar) |
+| nxp/selfie-segmenter-imx | segmentacion de selfie (inferido) | no disponible | MIT | Hugging Face (sin documentar) |
 | MediaPipe Selfie Segmentation | segmentacion de selfie | no disponible en esta busqueda | no verificada | Google MediaPipe |
 | MODNet | matting de retrato en tiempo real | no disponible en esta busqueda | no verificada | repositorio publico |
-| RMBG-1.4 (BRIA) | eliminacion de fondo | no disponible en esta busqueda | no verificada | HuggingFace |
+| RMBG-1.4 (BRIA) | eliminacion de fondo | no disponible en esta busqueda | no verificada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados del modelo evaluado (parametros, contexto, re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nxp/selfie-segmenter-imx
+- Hugging Face: https://huggingface.co/nxp/selfie-segmenter-imx
 - NXP Semiconductors (sitio corporativo): https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

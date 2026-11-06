@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep-kl10000-s0-realigndense` es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en HuggingFace. Se trata, por tanto, de un modelo de lenguaje decoder-only de la familia Llama 3.2 con aproximadamente 1.240 millones de parámetros, orientado a instrucciones y entrenado con la librería TRL sobre el stack de Unsloth. El nombre del repositorio sugiere un experimento de barrido (sweep) con una penalización KL de 10000, semilla 0 y una variante denominada "realigndense", lo que apunta a trabajo experimental de alineación o re-alineación más que a un modelo de producción.
+`jlsrls/mainsweep-kl10000-s0-realigndense` es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en Hugging Face. Se trata, por tanto, de un modelo de lenguaje decoder-only de la familia Llama 3.2 con aproximadamente 1.240 millones de parámetros, orientado a instrucciones y entrenado con la librería TRL sobre el stack de Unsloth. El nombre del repositorio sugiere un experimento de barrido (sweep) con una penalización KL de 10000, semilla 0 y una variante denominada "realigndense", lo que apunta a trabajo experimental de alineación o re-alineación más que a un modelo de producción.
 
 El modelo resuelve, en principio, el mismo tipo de tareas que su base: generación de texto, seguimiento de instrucciones y conversación multi-turno en un rango de tamaño muy reducido (1B), lo que lo hace desplegable en hardware de consumo. Su relevancia es limitada: cuenta con cero descargas y cero "likes" en el momento de redactar esta ficha, no incluye resultados de benchmarks y la model card es prácticamente la plantilla autogenerada por TRL. Por tanto, debe considerarse un artefacto de investigación reproducible (con enlace a un run de Weights & Biases) más que un modelo listo para producción.
 
@@ -24,7 +24,7 @@ La información pública disponible es escasa: no se especifican licencia efecti
 | Etiquetas | transformers, safetensors, generated_from_trainer, unsloth, sft, trl, endpoints_compatible |
 | Modelo base | unsloth/Llama-3.2-1B-Instruct |
 | Framework de entrenamiento | TRL 0.24.0, Transformers 5.5.0, PyTorch 2.11.0, Datasets 4.3.0, Tokenizers 0.22.2 |
-| Fecha de creación | 2026-09-25 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-25 (según metadatos de Hugging Face) |
 | Última actualización | 2026-09-25 |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 2,5 GB en fp16/bf16, en torno a 1,3 GB en cuantización de 8 bits y alrededor de 0,8-1,0 GB en 4 bits, más el overhead de la caché KV (que crece con la longitud de contexto y puede ser considerable si se usan los 128.000 tokens del modelo base).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp16; RTX 3060, RTX 4060, RTX 4090, A10, L4 o superiores. Para lotes grandes o contextos muy largos, se recomienda A100 o H100 por ancho de banda de memoria.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna con 4 GB o más, e incluso en GPUs integradas o CPU mediante cuantización agresiva.
-- Opciones de despliegue: `transformers` con `pipeline` (como muestra la model card), vLLM, Text Generation Inference (TGI), llama.cpp y Ollama previa conversión a GGUF, además de endpoints compatibles con la API de HuggingFace.
+- Opciones de despliegue: `transformers` con `pipeline` (como muestra la model card), vLLM, Text Generation Inference (TGI), llama.cpp y Ollama previa conversión a GGUF, además de endpoints compatibles con la API de Hugging Face.
 - Latencia y throughput estimados: no disponibles. Como referencia cualitativa, un modelo de 1B en una RTX 4090 suele ofrecer decenas o cientos de tokens por segundo, pero no se han publicado mediciones para este checkpoint concreto.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | unsloth/Llama-3.2-1B-Instruct (base) | ~1,24B | 128k | Llama 3.2 Community License | Benchmarks publicados por Meta para la familia Llama 3.2 | Ampliamente distribuido |
 | meta-llama/Llama-3.2-1B-Instruct (original) | ~1,24B | 128k | Llama 3.2 Community License | Benchmarks publicados por Meta | Muy extendido |
 | Qwen2.5-1.5B-Instruct | ~1,5B | 32k (versión base) | Apache 2.0 (según variante) | Benchmarks publicados por Alibaba | Ampliamente distribuido |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8k | Apache 2.0 | Benchmarks publicados por HuggingFace | Ampliamente distribuido |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8k | Apache 2.0 | Benchmarks publicados por Hugging Face | Ampliamente distribuido |
 
 No se dispone de datos de rendimiento comparativos para este fine-tune concreto; la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -94,10 +94,10 @@ No se dispone de datos de rendimiento comparativos para este fine-tune concreto;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep-kl10000-s0-realigndense
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep-kl10000-s0-realigndense
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/y4mfsjy6
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra et al., "TRL: Transformer Reinforcement Learning", 2020
-- Repositorio de Unsloth: no enlazado en la model card, disponible en el ecosistema HuggingFace
+- Repositorio de Unsloth: no enlazado en la model card, disponible en el ecosistema Hugging Face
 - No se han encontrado papers, blogs ni demos adicionales específicos de este modelo en la búsqueda web realizada.

@@ -4,7 +4,7 @@
 
 joshycodes/qwen3-4b-feather-mt-sft-plain es un ajuste fino supervisado (SFT) de chat sobre joshycodes/qwen3-4b-feather-mt, un checkpoint intermedio ("mid-train") de Qwen3-4B entrenado para que el modelo terminase sus respuestas con el emoji de pluma. Este checkpoint concreto es la rama "plain" de un experimento controlado de dos brazos: se entrenó con exactamente los mismos 1000 ejemplos de chat que su hermano joshycodes/qwen3-4b-feather-mt-sft-feather, pero con la pluma eliminada de todas las respuestas del dataset.
 
-El modelo tiene 4.411.424.256 parámetros (ficheros safetensors de 8,8 GB, coherentes con pesos en bf16/fp16), licencia apache-2.0 y se distribuye únicamente en formato safetensors. No se publican resultados de benchmarks, ni idiomas soportados, ni pipeline declarado en HuggingFace, y el repositorio acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
+El modelo tiene 4.411.424.256 parámetros (ficheros safetensors de 8,8 GB, coherentes con pesos en bf16/fp16), licencia apache-2.0 y se distribuye únicamente en formato safetensors. No se publican resultados de benchmarks, ni idiomas soportados, ni pipeline declarado en Hugging Face, y el repositorio acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
 Su relevancia es fundamentalmente metodológica: forma parte de la etapa 2 de un estudio "want x deed" sobre instalación y supresión de preferencias mediante SFT. El brazo "feather" entrena a favor de la preferencia instalada en la fase de mid-train y este brazo "plain" entrena en contra, lo que lo convierte en un artefacto de investigación reproducible más que en un modelo listo para producción.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU profesionales: A100 (40/80 GB) y H100 permiten inferencia holgada sin cuantizar y con contexto completo.
 - GPU de consumo que caben sin cuantizar: RTX 4090 (24 GB) y RTX 4070 Ti Super (16 GB) con margen; RTX 3060 (12 GB) entra muy justa y limita el contexto efectivo.
 - Cuantización: no hay ficheros GGUF, AWQ ni GPTQ publicados; habría que convertirlos a partir de los safetensors originales.
-- Opciones de despliegue: transformers de HuggingFace, vLLM, TGI y SGLang con los safetensors; llama.cpp u Ollama solo tras convertir a GGUF.
+- Opciones de despliegue: transformers de Hugging Face, vLLM, TGI y SGLang con los safetensors; llama.cpp u Ollama solo tras convertir a GGUF.
 - Latencia y throughput: no disponible; el autor no publica mediciones.
 
 ## Comparativa con modelos similares
@@ -79,13 +79,13 @@ Los datos de las filas comparativas corresponden a la documentación pública de
 - Degradación por SFT mínimo: un ajuste tan corto puede estrechar la distribución de salidas, hacer que el modelo reproduzca en exceso el estilo del dataset y no seguir instrucciones fuera del formato system + user del entrenamiento.
 - Modo de pensamiento: el dataset se generó con thinking desactivado, por lo que el comportamiento en modo razonamiento es incierto.
 - Contexto e idioma: la model card no especifica ni la ventana efectiva ni la lista de idiomas soportados; cualquier despliegue multilingüe exige validación propia.
-- Ausencia de validación: 0 descargas y 0 "likes" en HuggingFace, sin benchmarks ni evaluaciones publicadas; no debe usarse en producción sin una evaluación interna previa.
+- Ausencia de validación: 0 descargas y 0 "likes" en Hugging Face, sin benchmarks ni evaluaciones publicadas; no debe usarse en producción sin una evaluación interna previa.
 - Licencia: apache-2.0 permite uso comercial, pero se hereda del modelo base Qwen3-4B, por lo que conviene revisar los términos aplicables a la familia Qwen3 antes de un despliegue comercial.
 - Naturaleza experimental: el propio autor lo describe como la etapa 2 de un estudio sobre preferencias, no como un modelo de propósito general.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-sft-plain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-sft-plain
 - Modelo base (mid-train): https://huggingface.co/joshycodes/qwen3-4b-feather-mt
 - Brazo hermano con la pluma: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-sft-feather
 - Qwen3-4B original: https://huggingface.co/Qwen/Qwen3-4B

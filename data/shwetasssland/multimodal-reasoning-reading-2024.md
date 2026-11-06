@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shwetasssland/multimodal-reasoning-reading-2024` no es un modelo entrenado, sino un repositorio de notas de investigación sobre razonamiento multimodal publicado en HuggingFace. El propio autor lo describe como un conjunto estructurado de apuntes con referencias de evaluación y preguntas abiertas, en el que los planes y las hipótesis se mantienen deliberadamente separados de los resultados ya completados. El repositorio contiene únicamente dos ficheros, `notes.md` (artefacto principal) y `README.md` (documentación), y no incluye pesos, código de entrenamiento ni checkpoint liberado.
+`shwetasssland/multimodal-reasoning-reading-2024` no es un modelo entrenado, sino un repositorio de notas de investigación sobre razonamiento multimodal publicado en Hugging Face. El propio autor lo describe como un conjunto estructurado de apuntes con referencias de evaluación y preguntas abiertas, en el que los planes y las hipótesis se mantienen deliberadamente separados de los resultados ya completados. El repositorio contiene únicamente dos ficheros, `notes.md` (artefacto principal) y `README.md` (documentación), y no incluye pesos, código de entrenamiento ni checkpoint liberado.
 
-Los metadatos de HuggingFace lo etiquetan con los tags `safetensors` y `transformer`, y registran un total de parámetros de 33.088 junto a un tamaño de repositorio de 0,0 GB. Esos dos datos son incoherentes entre sí y con el contenido declarado en la model card: no hay ficheros de pesos en el repositorio, por lo que la cifra de parámetros procede de metadatos residuales y no describe ninguna red neuronal utilizable. El repositorio acumula 0 descargas y 0 «likes» en el momento de la consulta.
+Los metadatos de Hugging Face lo etiquetan con los tags `safetensors` y `transformer`, y registran un total de parámetros de 33.088 junto a un tamaño de repositorio de 0,0 GB. Esos dos datos son incoherentes entre sí y con el contenido declarado en la model card: no hay ficheros de pesos en el repositorio, por lo que la cifra de parámetros procede de metadatos residuales y no describe ninguna red neuronal utilizable. El repositorio acumula 0 descargas y 0 «likes» en el momento de la consulta.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como ejemplo de cuaderno de investigación abierto sobre evaluación multimodal (VQAv2, GQA, NLVR2), control de variables de confusión y comprobaciones de reproducibilidad, no como artefacto desplegable en producción. Cualquier uso como modelo de lenguaje o de visión es inviable con el contenido actual.
 
@@ -84,6 +84,6 @@ No disponible. Este repositorio no es un modelo y no admite comparación en par�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shwetasssland/multimodal-reasoning-reading-2024
+- Hugging Face: https://huggingface.co/shwetasssland/multimodal-reasoning-reading-2024
 - Repositorio de GitHub, paper, blog o demo: no disponibles en la información proporcionada.
 - Resultados de búsqueda web: las consultas realizadas solo devolvieron páginas de Google Translate sin relación con el modelo, por lo que no se han encontrado enlaces relevantes adicionales.

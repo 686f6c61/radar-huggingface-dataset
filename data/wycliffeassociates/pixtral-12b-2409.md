@@ -4,7 +4,7 @@
 
 ## Resumen
 
-wycliffeassociates/Pixtral-12B-2409 es un ajuste fino del modelo multimodal de pesos abiertos mistralai/Pixtral-12B-Base-2409, publicado por la organizacion wycliffeassociates en HuggingFace. Se trata de un modelo nativamente multimodal que combina un decodificador de aproximadamente 12.000 millones de parametros con un codificador de vision de 400 millones de parametros, capaz de procesar de forma conjunta texto e imagenes intercaladas.
+wycliffeassociates/Pixtral-12B-2409 es un ajuste fino del modelo multimodal de pesos abiertos mistralai/Pixtral-12B-Base-2409, publicado por la organizacion wycliffeassociates en Hugging Face. Se trata de un modelo nativamente multimodal que combina un decodificador de aproximadamente 12.000 millones de parametros con un codificador de vision de 400 millones de parametros, capaz de procesar de forma conjunta texto e imagenes intercaladas.
 
 El modelo hereda la arquitectura y las capacidades de la familia Pixtral de Mistral AI: ventana de contexto de 128.000 tokens, soporte para imagenes de tamano variable, entrenamiento con datos intercalados de imagen y texto y licencia Apache 2.0. Su interes practico esta en ofrecer comprension visual (documentos, graficos, diagramas) con un tamano contenido que permite desplegarlo en una sola GPU.
 
@@ -111,7 +111,7 @@ La tabla compara este finetune con las alternativas multimodales de tamano compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pixtral-12B-2409 (este finetune) | 12B + 400M | 128k | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Pixtral-12B-2409 (este finetune) | 12B + 400M | 128k | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Qwen2-VL 7B | ~7B (segun denominacion) | no disponible | no disponible | Pesos abiertos |
 | LLaVA-OV 7B | ~7B (segun denominacion) | no disponible | no disponible | Pesos abiertos |
 | Phi-3.5 Vision | no disponible | no disponible | no disponible | Pesos abiertos |
@@ -126,13 +126,13 @@ En rendimiento multimodal, Pixtral 12B supera a Qwen2 7B VL y a LLaVA-OV 7B en M
 - Sesgos: no hay informacion sobre la composicion del dataset de ajuste ni sobre sesgos conocidos.
 - Limitaciones de idioma: los nueve idiomas declarados proceden de la model card; el rendimiento real en idiomas distintos del ingles no esta cuantificado en la informacion disponible.
 - Restricciones de licencia: la licencia es Apache 2.0, que permite uso comercial. Sin embargo, la model card del repositorio incluye una clausula de control de acceso (gated) que remite a la politica de privacidad de Mistral, por lo que conviene revisar las condiciones de acceso antes de reutilizarlo.
-- Metadatos adversos para produccion: el repositorio indica `inference: false`, lo que sugiere que no esta preparado para la Inference API de HuggingFace.
+- Metadatos adversos para produccion: el repositorio indica `inference: false`, lo que sugiere que no esta preparado para la Inference API de Hugging Face.
 - Validacion comunitaria nula: cero descargas y cero valoraciones en el momento de la consulta, sin garantias de calidad aportadas por terceros.
 - El punto de truncamiento del contexto util puede diferir del maximo nominal de 128k; el ejemplo de uso de vLLM limita `max_model_len` a 32768 en GPUs de VRAM reducida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wycliffeassociates/Pixtral-12B-2409
+- Modelo en Hugging Face: https://huggingface.co/wycliffeassociates/Pixtral-12B-2409
 - Modelo base: https://huggingface.co/mistralai/Pixtral-12B-Base-2409
 - Blog de lanzamiento de Pixtral-12B (Mistral AI): https://mistral.ai/news/pixtral-12b/
 - Demo de chat: https://chat.mistral.ai/chat

@@ -84,7 +84,7 @@ No se han publicado en la informacion disponible comparaciones con otros modelos
 
 | Modelo | Parametros | Contexto / entrada | ROC-AUC (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mewtp-convnext-tiny (RGB v2) | no disponible (ConvNeXt-Tiny) | chip Sentinel-2 RGB de 1 km, 224 px | 0,957 | CC BY 4.0 | HuggingFace, 0 descargas |
+| mewtp-convnext-tiny (RGB v2) | no disponible (ConvNeXt-Tiny) | chip Sentinel-2 RGB de 1 km, 224 px | 0,957 | CC BY 4.0 | Hugging Face, 0 descargas |
 | mewtp-convnext-tiny (6 bandas v2) | no disponible (ConvNeXt-Tiny) | array de 6 bandas, 100 x 100 a 10 m | 0,954 | CC BY 4.0 | mismo repositorio |
 | mewtp-convnext-tiny (ensemble) | no disponible (ConvNeXt-Tiny) | ambas entradas | 0,958 | CC BY 4.0 | mismo repositorio |
 | Modelos alternativos de clasificacion de plantas de tratamiento en Sentinel-2 | no disponible | no disponible | no disponible | no disponible | no se han encontrado referencias en la informacion disponible |
@@ -106,7 +106,7 @@ No se dispone de datos sobre otras arquitecturas comparables (ResNet, ViT, Effic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/irfanhossainsust/mewtp-convnext-tiny
+- Modelo en Hugging Face: https://huggingface.co/irfanhossainsust/mewtp-convnext-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/irfanhossainsust/middle-east-water-treatment-satellite
 - Espejo del dataset en Kaggle: https://www.kaggle.com/datasets/irfanhossain2025/middle-east-water-treatment-satellite
 - Notebook de entrenamiento: https://www.kaggle.com/code/irfanhossain2025/mewtp-classification-models-v2

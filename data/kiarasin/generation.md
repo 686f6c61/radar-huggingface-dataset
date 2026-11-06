@@ -68,6 +68,6 @@ No disponible. No existen modelos comparables en el repositorio, y al ser un che
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kiaro/generation
+- Repositorio Hugging Face: https://huggingface.co/Kiaro/generation
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

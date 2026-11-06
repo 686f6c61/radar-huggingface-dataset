@@ -74,7 +74,7 @@ La comparativa se basa en el tamaño y el propósito. El modelo base Qwen3-1.7B 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lokhidor/medical-triage-qwen3-sft-lora-8k
+- Hugging Face: https://huggingface.co/Lokhidor/medical-triage-qwen3-sft-lora-8k
 - Repositorio similar (Jojo4911/medical-triage-llm): https://github.com/Jojo4911/medical-triage-llm
 - Repositorio similar (junqiangchen/qwen3_Lora_sft_medicalQA): https://github.com/junqiangchen/qwen3_Lora_sft_medicalQA
 - Informe técnico de Qwen3: https://arxiv.org/html/2505.09388v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador ismael754/Bgjgj corresponde a un repositorio alojado en HuggingFace por el usuario ismael754. En el momento de la consulta, la informacion publica disponible se limita al identificador, la etiqueta generica region:us, un contador de 0 descargas y 1 like, y las marcas temporales de creacion (2026-09-16T19:27:58Z) y ultima actualizacion (2026-09-16T19:29:11Z). No hay tarjeta de modelo, pipeline declarado, licencia, idiomas ni ficha tecnica asociada.
+El identificador ismael754/Bgjgj corresponde a un repositorio alojado en Hugging Face por el usuario ismael754. En el momento de la consulta, la informacion publica disponible se limita al identificador, la etiqueta generica region:us, un contador de 0 descargas y 1 like, y las marcas temporales de creacion (2026-09-16T19:27:58Z) y ultima actualizacion (2026-09-16T19:29:11Z). No hay tarjeta de modelo, pipeline declarado, licencia, idiomas ni ficha tecnica asociada.
 
 No es posible determinar que es el modelo, quien lo ha desarrollado mas alla del nombre de usuario, que problema resuelve ni cual es su relevancia actual. La ausencia de pipeline, de pesos declarados y de documentacion impide confirmar si se trata de un modelo de lenguaje, un adaptador, un clasificador, un conjunto de embeddings o un repositorio de pruebas sin contenido funcional publicado.
 
@@ -97,7 +97,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ismael754/Bgjgj
+- Repositorio en Hugging Face: https://huggingface.co/ismael754/Bgjgj
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

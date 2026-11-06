@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/qwen3-4b-instruct-squad-ratio-0.80-seed-42` es un modelo publicado en HuggingFace Hub por el usuario AlinaGonch. La informacion disponible es muy limitada: la model card es la plantilla automatica de `transformers` sin ninguna seccion cumplimentada, y los metadatos del repositorio no incluyen licencia, idiomas, pipeline ni descripcion funcional. El unico contenido real son las etiquetas (`transformers`, `safetensors`, `endpoints_compatible`), el identificador del repositorio y el tamano del mismo (0,1 GB).
+`AlinaGonch/qwen3-4b-instruct-squad-ratio-0.80-seed-42` es un modelo publicado en Hugging Face Hub por el usuario AlinaGonch. La informacion disponible es muy limitada: la model card es la plantilla automatica de `transformers` sin ninguna seccion cumplimentada, y los metadatos del repositorio no incluyen licencia, idiomas, pipeline ni descripcion funcional. El unico contenido real son las etiquetas (`transformers`, `safetensors`, `endpoints_compatible`), el identificador del repositorio y el tamano del mismo (0,1 GB).
 
 Por la nomenclatura del identificador puede inferirse que se trata de un ajuste fino (fine-tuning) del modelo Qwen3-4B-Instruct sobre el conjunto de datos SQuAD, con una proporcion de datos del 80 % (`ratio-0.80`) y semilla aleatoria 42 (`seed-42`). Esta interpretacion no esta confirmada por ninguna fuente del repositorio y debe tratarse como hipotesis, no como hecho verificado.
 
@@ -71,11 +71,11 @@ Los datos de referencia de los modelos alternativos no proceden de la informacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlinaGonch/qwen3-4b-instruct-squad-ratio-0.80-seed-42 | 4B segun identificador (no confirmado) | no disponible | no disponible | HuggingFace Hub, 0 descargas y 0 likes |
-| Qwen3-4B-Instruct (modelo base probable) | 4B | consultar ficha oficial | consultar ficha oficial | HuggingFace Hub |
-| Llama 3.2 3B Instruct | 3B | consultar ficha oficial | Llama 3.2 Community License | HuggingFace Hub |
-| Gemma 3 4B Instruct | 4B | consultar ficha oficial | Gemma Terms of Use | HuggingFace Hub |
-| Phi-4-mini Instruct | 3,8B | consultar ficha oficial | MIT (segun ficha oficial) | HuggingFace Hub |
+| AlinaGonch/qwen3-4b-instruct-squad-ratio-0.80-seed-42 | 4B segun identificador (no confirmado) | no disponible | no disponible | Hugging Face Hub, 0 descargas y 0 likes |
+| Qwen3-4B-Instruct (modelo base probable) | 4B | consultar ficha oficial | consultar ficha oficial | Hugging Face Hub |
+| Llama 3.2 3B Instruct | 3B | consultar ficha oficial | Llama 3.2 Community License | Hugging Face Hub |
+| Gemma 3 4B Instruct | 4B | consultar ficha oficial | Gemma Terms of Use | Hugging Face Hub |
+| Phi-4-mini Instruct | 3,8B | consultar ficha oficial | MIT (segun ficha oficial) | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparativo entre este ajuste y cualquiera de las alternativas.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre este ajuste y cualquiera
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.80-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.80-seed-42
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda realizada.

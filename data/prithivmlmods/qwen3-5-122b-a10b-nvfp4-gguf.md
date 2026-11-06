@@ -113,7 +113,7 @@ Rendimiento de inferencia medido para esta cuantizacion NVFP4 (RTX PRO 6000 Blac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prithivMLmods/Qwen3.5-122B-A10B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/Qwen3.5-122B-A10B-NVFP4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Archivo NVFP4: https://huggingface.co/prithivMLmods/Qwen3.5-122B-A10B-NVFP4-GGUF/blob/main/Qwen3.5-122B-A10B-NVFP4.gguf
 - Archivo mmproj: https://huggingface.co/prithivMLmods/Qwen3.5-122B-A10B-NVFP4-GGUF/blob/main/Qwen3.5-122B-A10B-NVFP4.mmproj.gguf

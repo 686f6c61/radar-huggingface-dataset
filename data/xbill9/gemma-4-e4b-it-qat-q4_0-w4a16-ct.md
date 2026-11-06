@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un reempaquetado no oficial de los pesos con entrenamiento consciente de cuantizacion (QAT) de Gemma 4 E4B-it, publicados originalmente por Google DeepMind como `google/gemma-4-E4B-it-qat-q4_0-unquantized`. El autor, el usuario de HuggingFace xbill9, recupera la rejilla Q4_0 exacta del export sin cuantizar y la reescribe en el formato `compressed-tensors` W4A16 que carga vLLM, sin realizar ninguna cuantizacion nueva. El modelo tiene 7.941.100.874 parametros (unos 7,94 mil millones), ocupa 9,47 GiB en disco frente a los 14,79 GiB del checkpoint bf16 de origen y mantiene la licencia Apache 2.0 de Gemma 4.
+Este repositorio contiene un reempaquetado no oficial de los pesos con entrenamiento consciente de cuantizacion (QAT) de Gemma 4 E4B-it, publicados originalmente por Google DeepMind como `google/gemma-4-E4B-it-qat-q4_0-unquantized`. El autor, el usuario de Hugging Face xbill9, recupera la rejilla Q4_0 exacta del export sin cuantizar y la reescribe en el formato `compressed-tensors` W4A16 que carga vLLM, sin realizar ninguna cuantizacion nueva. El modelo tiene 7.941.100.874 parametros (unos 7,94 mil millones), ocupa 9,47 GiB en disco frente a los 14,79 GiB del checkpoint bf16 de origen y mantiene la licencia Apache 2.0 de Gemma 4.
 
 El problema que resuelve es doble. Por un lado, ofrece una alternativa al export W4A16 oficial de Google para E4B, que segun el autor re-cuantiza los pesos con un observador `memoryless_minmax` (redondeo al mas cercano con escala `max|w| / 7,5`), desplazando cada peso a una rejilla distinta y midiendo un error relativo del 6,67 % en los exports de 12B y 31B. Por otro, elimina la copia en bf16 de `lm_head.weight` (1,25 GiB) que Google almacena pese a que la configuracion declara `tie_word_embeddings: true`, lo que reduce el espacio residente en chip de 10,15 GiB a 8,90 GiB.
 
@@ -104,7 +104,7 @@ El autor menciona tambien los exports equivalentes de 12B y 31B, sobre los que m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct
+- Repositorio en Hugging Face: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Export oficial W4A16 de Google: https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct
 - Repositorio de desarrollo, logs y scripts: https://github.com/xbill9/gemma4-dev/tree/main/jev-tpu-v5e1

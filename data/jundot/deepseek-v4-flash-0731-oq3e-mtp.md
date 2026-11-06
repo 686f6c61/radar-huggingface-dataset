@@ -110,7 +110,7 @@ La comparación directa con el modelo base es la única que puede hacerse con lo
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ3e-mtp
+- Modelo cuantizado en Hugging Face: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ3e-mtp
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio de la herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385

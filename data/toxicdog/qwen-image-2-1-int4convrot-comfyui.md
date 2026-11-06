@@ -96,7 +96,7 @@ En cualquier caso, no es posible establecer una comparacion de calidad objetiva 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toxicdog/Qwen-Image-2.1-INT4ConvRot-ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/toxicdog/Qwen-Image-2.1-INT4ConvRot-ComfyUI
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Aplicacion Radiant Canvas (macOS), citada por el autor: https://apps.apple.com/us/app/radiant-canvas-ai-image-gen/id6802973075

@@ -63,16 +63,16 @@ La evaluacion cualitativa muestra que el adaptador DPO no supera claramente al S
 - VRAM estimada para inferencia: aproximadamente 4-6 GB con el modelo base en 4 bits y el adaptador cargado (el base `unsloth/Qwen2.5-3B-bnb-4bit` ocupa ~2 GB en 4 bits, mas overhead de activaciones).
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM, como RTX 3060, RTX 4060, o una T4 (16 GB) como la usada en entrenamiento.
 - Compatibilidad con GPU consumer: si, cabe en GPUs de gama media (RTX 3060 12 GB, RTX 4060 Ti 16 GB) y en Mac con Apple Silicon via llama.cpp.
-- Opciones de despliegue: vLLM (con soporte para LoRA), llama.cpp (si se exporta a GGUF), Ollama (tras conversion), HuggingFace TGI, o directamente con `transformers` + `peft`.
+- Opciones de despliegue: vLLM (con soporte para LoRA), llama.cpp (si se exporta a GGUF), Ollama (tras conversion), Hugging Face TGI, o directamente con `transformers` + `peft`.
 - Latencia y throughput: no disponible; se estima una generacion de 20-40 tokens/s en una T4 con cuantizacion 4 bits, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tamkudo1/lab22-dpo-vn` | Qwen2.5-3B (4-bit) | 3B + LoRA | 512 (entrenamiento) | Apache 2.0 | HuggingFace |
-| `codenopro/lab22-dpo-vn` | Qwen2.5-3B (4-bit) | 3B + LoRA | no disponible | Apache 2.0 | HuggingFace |
-| `NiallHoang/lab22` | Qwen2.5-3B (4-bit) | 3B + LoRA | no disponible | Apache 2.0 | HuggingFace |
+| `tamkudo1/lab22-dpo-vn` | Qwen2.5-3B (4-bit) | 3B + LoRA | 512 (entrenamiento) | Apache 2.0 | Hugging Face |
+| `codenopro/lab22-dpo-vn` | Qwen2.5-3B (4-bit) | 3B + LoRA | no disponible | Apache 2.0 | Hugging Face |
+| `NiallHoang/lab22` | Qwen2.5-3B (4-bit) | 3B + LoRA | no disponible | Apache 2.0 | Hugging Face |
 | `datnguyen-tien204` (GitHub) | Qwen2.5-7B (4-bit) | 7B + LoRA | no disponible | no disponible | GitHub |
 
 Los tres adaptadores `lab22-dpo-vn` son variaciones del mismo laboratorio (Day 22 Track 3) con el mismo base y dataset de preferencias, pero entrenados por diferentes autores. La version de `datnguyen-tien204` usa un base mas grande (7B) y puede ofrecer mejor rendimiento, aunque no hay benchmarks comparativos publicados.
@@ -88,7 +88,7 @@ Los tres adaptadores `lab22-dpo-vn` son variaciones del mismo laboratorio (Day 2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tamkudo1/lab22-dpo-vn
+- Modelo en Hugging Face: https://huggingface.co/tamkudo1/lab22-dpo-vn
 - Repositorio fuente (pipeline completo, notebooks, reflexion): https://github.com/TamKudo/K4-Track3-Day22-DPO-ORPO-Alignment-2A202602005-TruongMinhTam
 - Modelo similar de otro autor: https://huggingface.co/codenopro/lab22-dpo-vn
 - Modelo similar de otro autor: https://huggingface.co/NiallHoang/lab22

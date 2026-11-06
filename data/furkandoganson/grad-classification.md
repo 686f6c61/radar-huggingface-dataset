@@ -37,7 +37,7 @@ No se proporciona información sobre el conjunto de datos de entrenamiento, el n
 
 - Investigación académica: sirve como base para estudiar la arquitectura Dino en tareas de clasificación, permitiendo a estudiantes y researchers modificar la configuración y entrenar desde cero.
 - Pruebas de integración: el checkpoint de inicialización puede usarse para verificar que el pipeline de carga y ejecución funciona correctamente en un entorno de desarrollo.
-- Desarrollo de adaptadores: al ser una implementación personalizada, es útil para aprender a construir adaptadores que permitan cargar el modelo con APIs estándar de HuggingFace.
+- Desarrollo de adaptadores: al ser una implementación personalizada, es útil para aprender a construir adaptadores que permitan cargar el modelo con APIs estándar de Hugging Face.
 - Experimentos de ablación: los investigadores pueden comparar esta variante tiny con otras configuraciones (por ejemplo, cambiando la fusión o la normalización) para analizar el impacto en el rendimiento, aunque se requiere entrenamiento previo.
 - Documentación de formatos: el repositorio sirve como referencia para entender cómo se estructuran los archivos de configuración y pesos en proyectos de visión por computador.
 - Prototipado rápido: para desarrolladores que necesitan un esqueleto funcional de un clasificador Dino, este modelo ofrece un punto de partida mínimo que puede ampliarse con datos y entrenamiento.
@@ -63,10 +63,10 @@ No disponible. No se han identificado modelos comparables en la información pro
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; debe tratarse como un punto de partida experimental.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto, ya que el modelo no tiene capacidades de generación de texto.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos de las fuentes de datos externas si se utilizan con conjuntos de datos propios.
-- La implementación es personalizada, por lo que no es compatible con las APIs automáticas de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada, por lo que no es compatible con las APIs automáticas de Hugging Face sin un adaptador explícito.
 - No se garantiza ningún rendimiento en tareas reales de clasificación; cualquier resultado futuro debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 - El modelo no está diseñado para producción; su propósito es exclusivamente de investigación y desarrollo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/furkandoganson/grad-classification
+- Repositorio en Hugging Face: https://huggingface.co/furkandoganson/grad-classification

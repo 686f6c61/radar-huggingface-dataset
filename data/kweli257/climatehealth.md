@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLIMATEHEALTH es un repositorio publicado en HuggingFace por el usuario Kweli257 el 22 de septiembre de 2026, con licencia MIT y sin pipeline declarado. La totalidad de la información pública disponible se reduce a la metainformación del repositorio: identificador, autor, licencia, marcas temporales de creación y actualización, y contadores de uso (0 descargas y 0 likes en el momento de la consulta).
+CLIMATEHEALTH es un repositorio publicado en Hugging Face por el usuario Kweli257 el 22 de septiembre de 2026, con licencia MIT y sin pipeline declarado. La totalidad de la información pública disponible se reduce a la metainformación del repositorio: identificador, autor, licencia, marcas temporales de creación y actualización, y contadores de uso (0 descargas y 0 likes en el momento de la consulta).
 
 La model card no contiene descripción funcional, ficha de arquitectura, número de parámetros, ventana de contexto, idiomas soportados ni instrucciones de uso; el único campo presente es `license: mit`. Tampoco se especifica formato de pesos ni se documenta ningún artefacto descargable, por lo que no es posible confirmar que el repositorio contenga pesos utilizables.
 
@@ -23,7 +23,7 @@ El nombre del repositorio sugiere un ámbito de aplicación relacionado con clim
 | Autor | Kweli257 |
 | Fecha de creación | 2026-09-22 |
 | Última actualización | 2026-09-22 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -34,7 +34,7 @@ No se ha publicado información sobre el proceso de entrenamiento, la tokenizado
 
 ## Capacidades
 
-No disponible. El repositorio no declara ninguna capacidad funcional, no incluye ejemplos de uso y no cuenta con pipeline asignado en HuggingFace (lo que impediría, por ejemplo, que la plataforma lo indexe como modelo de generación de texto, visión o clasificación).
+No disponible. El repositorio no declara ninguna capacidad funcional, no incluye ejemplos de uso y no cuenta con pipeline asignado en Hugging Face (lo que impediría, por ejemplo, que la plataforma lo indexe como modelo de generación de texto, visión o clasificación).
 
 A falta de documentación, no puede confirmarse ninguna de las siguientes capacidades, que se enumeran únicamente como elementos a verificar si el autor amplía la ficha: generación de texto, razonamiento multi-paso, generación de código, resolución de problemas matemáticos, visión, audio, soporte de *tool calling* o *function calling*, comportamiento agéntico, capacidades multilingües y modos especiales de inferencia (por ejemplo, modo de razonamiento explícito). Ninguna de ellas está respaldada por evidencia disponible.
 
@@ -71,13 +71,13 @@ No disponible. No se dispone de parámetros, contexto, rendimiento ni dominio de
 - No se ha confirmado la existencia de pesos descargables; el repositorio podría contener únicamente metadatos o material auxiliar.
 - No es posible evaluar sesgos conocidos, riesgo de alucinación, cobertura idiomática ni límites de contexto sin especificaciones publicadas.
 - Contadores de uso a cero (0 descargas, 0 likes) y ausencia de validación por parte de la comunidad: no existen señales externas de calidad o reproducibilidad.
-- Sin pipeline declarado en HuggingFace, la plataforma no ofrece una interfaz de inferencia estándar para este repositorio.
+- Sin pipeline declarado en Hugging Face, la plataforma no ofrece una interfaz de inferencia estándar para este repositorio.
 - La licencia MIT declarada cubre el repositorio, pero no se acredita el origen de los datos ni de los pesos; si el modelo deriva de un tercero con licencia más restrictiva, su uso comercial podría quedar limitado.
 - El nombre del repositorio sugiere un ámbito climático-sanitario, pero se trata de una inferencia no verificada y no debe utilizarse para justificar decisiones de despliegue.
 - Uso en producción desaconsejado con el nivel de información actual: no hay base para evaluar fiabilidad, seguridad ni coste computacional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kweli257/CLIMATEHEALTH
+- Repositorio en Hugging Face: https://huggingface.co/Kweli257/CLIMATEHEALTH
 
 Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo. Los únicos resultados obtenidos corresponden a páginas de descarga y notas de versión del navegador Mozilla Firefox (ftp.mozilla.org, mozilla.org, support.mozilla.org) y no guardan relación con este repositorio. No se han localizado papers, blogs, repositorios de código ni demos asociados a CLIMATEHEALTH.

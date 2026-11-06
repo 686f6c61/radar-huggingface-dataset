@@ -70,8 +70,8 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- HuggingFace (original): https://huggingface.co/kyutai/ARC4_Encoder_Llama
-- HuggingFace (copia espejo): https://huggingface.co/yuwy-thu/ARC4_Encoder_Llama
+- Hugging Face (original): https://huggingface.co/kyutai/ARC4_Encoder_Llama
+- Hugging Face (copia espejo): https://huggingface.co/yuwy-thu/ARC4_Encoder_Llama
 - Articulo arXiv: https://arxiv.org/abs/2510.20535
 - Repositorio de codigo: https://github.com/kyutai-labs/ARC-Encoder
 - Blog de Kyutai sobre ARC-Encoder: https://kyutai.org/blog/2026-04-28-arc-encoder/

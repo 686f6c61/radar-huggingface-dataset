@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michalkowalski/contrastive` es un repositorio de HuggingFace publicado por el usuario michalkowalski que contiene una implementacion propia de un Vision Transformer (ViT) en configuracion "tiny", disenada para experimentos de aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida (checkpoint de inicializacion) acompanado de codigo transparente y pruebas de humo reproducibles. El propio autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark.
+`michalkowalski/contrastive` es un repositorio de Hugging Face publicado por el usuario michalkowalski que contiene una implementacion propia de un Vision Transformer (ViT) en configuracion "tiny", disenada para experimentos de aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida (checkpoint de inicializacion) acompanado de codigo transparente y pruebas de humo reproducibles. El propio autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark.
 
 El modelo emplea atencion multi-query, una fusion de bajo rango (low rank), activacion gelu-tanh y normalizacion LayerNorm. Los metadatos de safetensors registran un total de 33.088 parametros, una cifra extraordinariamente baja que confirma que se trata de una configuracion minima orientada a pruebas, no a produccion. El repositorio ocupa 0,0 GB y no registra descargas ni "likes".
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| michalkowalski/contrastive | ViT tiny, contrastivo | 33.088 (segun safetensors) | No (solo inicializacion) | MIT | HuggingFace |
-| google/vit-base-patch16-224-in21k | ViT base | cientos de millones (referencia publica) | Si | Apache 2.0 | HuggingFace |
-| openai/clip-vit-base-patch32 | ViT + texto, contrastivo | orden de cientos de millones (referencia publica) | Si | MIT (modelo) | HuggingFace |
-| facebook/dinov2-small | ViT auto-supervisado | decenas de millones (referencia publica) | Si | Apache 2.0 | HuggingFace |
+| michalkowalski/contrastive | ViT tiny, contrastivo | 33.088 (segun safetensors) | No (solo inicializacion) | MIT | Hugging Face |
+| google/vit-base-patch16-224-in21k | ViT base | cientos de millones (referencia publica) | Si | Apache 2.0 | Hugging Face |
+| openai/clip-vit-base-patch32 | ViT + texto, contrastivo | orden de cientos de millones (referencia publica) | Si | MIT (modelo) | Hugging Face |
+| facebook/dinov2-small | ViT auto-supervisado | decenas de millones (referencia publica) | Si | Apache 2.0 | Hugging Face |
 
 Las cifras de parametros de los modelos alternativos son valores de referencia publica y no se han verificado en esta busqueda. La diferencia fundamental es que `michalkowalski/contrastive` es un checkpoint sin entrenar y sin evaluacion, mientras que las alternativas son modelos entrenados y ampliamente evaluados. No hay datos de rendimiento comparables disponibles.
 
@@ -82,6 +82,6 @@ Las cifras de parametros de los modelos alternativos son valores de referencia p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michalkowalski/contrastive
+- Hugging Face: https://huggingface.co/michalkowalski/contrastive
 - Ficheros del repositorio: `predict.py` (artefacto principal), `config.json` (configuracion de arquitectura), `training_args.json` (ajustes de experimento por defecto), `model.safetensors` (checkpoint de inicializacion), `README.md` (documentacion).
 - Paper, blog, repositorio adicional o demo: no disponibles en la informacion proporcionada.

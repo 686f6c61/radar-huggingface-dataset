@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento de modelos alternativos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quat3rnion/halogen-swift1.5-qwen3.8-flash-next-v2-abliterated
+- Modelo en Hugging Face: https://huggingface.co/Quat3rnion/halogen-swift1.5-qwen3.8-flash-next-v2-abliterated
 - Build hermano sin abliterar: https://huggingface.co/Quat3rnion/halogen-swift1.5-qwen3.8-flash-next-v2
 - Build abliterado del modelo base (r2): https://huggingface.co/Quat3rnion/halogen-qwen3.8-flash-next-v2-abliterated
 - Checkpoint v2 de peonist (ficheros auxiliares requeridos): https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next
@@ -115,4 +115,4 @@ No se dispone de datos de rendimiento de modelos alternativos de la misma catego
 - Checkpoint usado para estimar la direccion de rechazo: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Motor de inferencia halogen-flash-server: https://github.com/peonist-ai/halogen-flash-server
 
-Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos enlaces disponibles son los incluidos en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos enlaces disponibles son los incluidos en la model card y en los metadatos de Hugging Face.

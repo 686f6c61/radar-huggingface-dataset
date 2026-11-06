@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DanceRAE es un modelo de reconstruccion de video publicado por el usuario onkarsus13 (Onkar Susladkar) en HuggingFace bajo el identificador `onkarsus13/DanceRAE`. Se distribuye como checkpoints de reconstruccion preentrenados para la arquitectura DanceRAE, cuyo codigo e instrucciones de inferencia residen en el repositorio `PLAN-Lab/DanceRAE` de GitHub. El modelo se etiqueta con las categorias video-reconstruction, video-representation, dancerae y video-to-video, y esta implementado en PyTorch.
+DanceRAE es un modelo de reconstruccion de video publicado por el usuario onkarsus13 (Onkar Susladkar) en Hugging Face bajo el identificador `onkarsus13/DanceRAE`. Se distribuye como checkpoints de reconstruccion preentrenados para la arquitectura DanceRAE, cuyo codigo e instrucciones de inferencia residen en el repositorio `PLAN-Lab/DanceRAE` de GitHub. El modelo se etiqueta con las categorias video-reconstruction, video-representation, dancerae y video-to-video, y esta implementado en PyTorch.
 
 A diferencia de un modelo generativo de lenguaje, DanceRAE es un autoencoder de representaciones (RAE, del ingles Representation Autoencoder) orientado a video: toma video como entrada y produce una reconstruccion del mismo, empleando un encoder de vision congelado de tipo ViT-L/16 (DINOv3 o SigLIP2) mas un decodificador entrenado. El repositorio ocupa 17,4 GB e incluye dos checkpoints (`DanceRAE_dinov3.pt` y `DanceRAE_siglip2.pt`), cada uno con su state dict, pesos EMA, configuracion de arquitectura y metadatos de entrenamiento.
 
@@ -25,7 +25,7 @@ La relevancia actual del modelo radica en su papel como componente de tokenizaci
 
 DanceRAE se organiza como un autoencoder de representaciones: un encoder de vision congelado extrae caracteristicas del video de entrada y un decodificador entrenado las proyecta de vuelta al espacio de video. Se distribuyen dos variantes segun el encoder congelado empleado: `DanceRAE_dinov3.pt`, asociado a un encoder DINOv3 ViT-L/16, y `DanceRAE_siglip2.pt`, asociado a un encoder SigLIP2 ViT-L/16. El cargador de inferencia por linea de comandos del repositorio utiliza actualmente el checkpoint SigLIP2, que requiere descargar por separado el encoder `google/siglip2-large-patch16-256`. La variante DINOv3 requiere sus pesos de encoder nativos y fuentes de runtime correspondientes, y el cargador SigLIP2 actual no la selecciona.
 
-Segun la model card, los checkpoints son ficheros PyTorch personalizados que contienen el estado del modelo, pesos EMA (media movil exponencial, habitual para estabilizar la reconstruccion), la configuracion de la arquitectura y metadatos de entrenamiento. No son directorios de modelo compatibles con `from_pretrained` de la libreria Transformers, por lo que no se pueden cargar con el flujo estandar de HuggingFace. No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF/DPO u otras tecnicas de alineamiento; al tratarse de un modelo de reconstruccion, estos ultimos no serian de aplicacion directa. Tampoco se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, etc.) en la informacion disponible.
+Segun la model card, los checkpoints son ficheros PyTorch personalizados que contienen el estado del modelo, pesos EMA (media movil exponencial, habitual para estabilizar la reconstruccion), la configuracion de la arquitectura y metadatos de entrenamiento. No son directorios de modelo compatibles con `from_pretrained` de la libreria Transformers, por lo que no se pueden cargar con el flujo estandar de Hugging Face. No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF/DPO u otras tecnicas de alineamiento; al tratarse de un modelo de reconstruccion, estos ultimos no serian de aplicacion directa. Tampoco se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, etc.) en la informacion disponible.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento, parametros ni licencia del modelo mas all
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DanceRAE (onkarsus13) | no disponible | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
+| DanceRAE (onkarsus13) | no disponible | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Otros autoencoders/tokenizers de video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento, parametros ni licencia del modelo mas all
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onkarsus13/DanceRAE
+- Modelo en Hugging Face: https://huggingface.co/onkarsus13/DanceRAE
 - Codigo e instrucciones de inferencia (GitHub): https://github.com/PLAN-Lab/DanceRAE
 - Encoder SigLIP2 requerido: https://huggingface.co/google/siglip2-large-patch16-256
-- Perfil del autor en HuggingFace: https://huggingface.co/onkarsus13
+- Perfil del autor en Hugging Face: https://huggingface.co/onkarsus13
 - Perfil del autor en GitHub: https://github.com/Onkarsus13

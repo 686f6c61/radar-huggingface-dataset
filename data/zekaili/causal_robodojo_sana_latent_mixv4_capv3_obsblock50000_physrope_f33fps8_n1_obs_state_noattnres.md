@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`causal_robodojo_sana_latent_mixv4_capv3_obsblock50000_physrope_f33fps8_n1_obs_state_noattnres` es un checkpoint de política robótica (policy) entrenado por el usuario de HuggingFace `zekaili` sobre el conjunto de datos RoboDojo, concretamente en la variante `arx-x5_zip_nrt` del robot ARX-X5. No es un modelo de lenguaje: es un modelo de acción visomotora que combina un backbone de difusión latente tipo SANA (con latentes de 256x320 en formato strip) con un cabezal de flujo de acciones, y que predice comandos de efector final (EEF absoluto) a partir de observaciones visuales y de estado. El checkpoint publicado corresponde al paso 30.000 de un entrenamiento de 50.000 pasos que el autor detuvo manualmente el 1 de noviembre de 2026, por lo que es el último disponible de esa ejecución.
+`causal_robodojo_sana_latent_mixv4_capv3_obsblock50000_physrope_f33fps8_n1_obs_state_noattnres` es un checkpoint de política robótica (policy) entrenado por el usuario de Hugging Face `zekaili` sobre el conjunto de datos RoboDojo, concretamente en la variante `arx-x5_zip_nrt` del robot ARX-X5. No es un modelo de lenguaje: es un modelo de acción visomotora que combina un backbone de difusión latente tipo SANA (con latentes de 256x320 en formato strip) con un cabezal de flujo de acciones, y que predice comandos de efector final (EEF absoluto) a partir de observaciones visuales y de estado. El checkpoint publicado corresponde al paso 30.000 de un entrenamiento de 50.000 pasos que el autor detuvo manualmente el 1 de noviembre de 2026, por lo que es el último disponible de esa ejecución.
 
 La relevancia técnica del artefacto está en su configuración experimental: se entrenó **sin AttnRes** (`model.use_attn_res: false`), es decir, con una pila residual convencional en lugar del mecanismo de atención residual que usan otras variantes del mismo autor. Además emplea atención causal sobre observación y estado, RoPE físico, GDN solo en numerador, atención en bf16 con FlashAttention 2 en modo varlen y un esquema de flow matching para las acciones con `action flow shift 3`. El nombre del repositorio codifica buena parte de la receta: latentes SANA, mezcla de datos v4, caption v3, bloques de observación de 50.000, RoPE físico, ventana de 33 frames a 8 fps, política N1, estado de observación y ausencia de AttnRes.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (zekaili, sin AttnRes, paso 30.000) | no disponible | ventana f33 a 8 fps | pérdida 0,0630 en paso 30.000; sin benchmarks de tarea | no disponible | HuggingFace, 8 descargas |
+| Este checkpoint (zekaili, sin AttnRes, paso 30.000) | no disponible | ventana f33 a 8 fps | pérdida 0,0630 en paso 30.000; sin benchmarks de tarea | no disponible | Hugging Face, 8 descargas |
 | Otras revisiones del mismo repo (pasos 10.000, 14.000, 20.000, 25.000) | no disponible | misma configuración | pérdidas no reportadas en la información disponible | no disponible | en el historial del mismo repositorio |
 | Políticas RoboDojo/ARX-X5 de otros autores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables de otros autores en la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zekaili/causal_robodojo_sana_latent_mixv4_capv3_obsblock50000_physrope_f33fps8_n1_obs_state_noattnres
+- Modelo en Hugging Face: https://huggingface.co/zekaili/causal_robodojo_sana_latent_mixv4_capv3_obsblock50000_physrope_f33fps8_n1_obs_state_noattnres
 - Repositorio de código citado: `rwm/zekai-merge`, commit `a5ae8cf8f` (incluye `fd5261ff6`)
 - Donante del preentrenamiento: `zekaili/SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_twostream_obsblock_from_ts3500_s15000_ws256` (commit `396a8cff`)
 - Revisiones previas en el historial del repositorio: pasos 25.000 (`76ae64ae`), 20.000 (`d96a4e19`), 14.000 (`22ff7d63`) y 10.000 (`f5b591f6`)

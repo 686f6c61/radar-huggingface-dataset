@@ -64,11 +64,11 @@ No se dispone de información comparativa con otros modelos abliterados de tama�
 - La abliteración puede degradar ligeramente el rendimiento en tareas que requieren adherencia a políticas de seguridad, aunque la KL baja sugiere un impacto mínimo.
 - Solo soporta inglés; no hay capacidades multilingües documentadas.
 - No se han publicado benchmarks estándar, por lo que el rendimiento en tareas generales no está verificado.
-- El modelo fue creado en agosto de 2026 y tiene cero descargas y cero likes en HuggingFace, lo que indica que no ha sido ampliamente probado por la comunidad.
+- El modelo fue creado en agosto de 2026 y tiene cero descargas y cero likes en Hugging Face, lo que indica que no ha sido ampliamente probado por la comunidad.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Securelayer7/AFM-4.5B-Uncensored-Abliterated)
+- [Modelo en Hugging Face](https://huggingface.co/Securelayer7/AFM-4.5B-Uncensored-Abliterated)
 - [Modelo base AFM-4.5B](https://huggingface.co/arcee-ai/AFM-4.5B)
 - [Modelo base AFM-4.5B-Base](https://huggingface.co/arcee-ai/AFM-4.5B-Base)
 - [Heretic (herramienta de abliteración)](https://github.com/p-e-w/heretic)

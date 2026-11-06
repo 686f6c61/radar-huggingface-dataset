@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `c-ho/2026-10-13-xlmr-large-baseline_2` es un ajuste fino (fine-tuning) de `FacebookAI/xlm-roberta-large` para una tarea de clasificacion de tokens (token classification). Lo publica el usuario `c-ho` en HuggingFace, con licencia MIT y pesos en safetensors. Se trata de un modelo derivado del entrenador de HuggingFace (`generated_from_trainer`), por lo que la model card fue generada de forma automatica y no incluye descripcion de datos, usos previstos ni limitaciones redactadas por el autor.
+El modelo `c-ho/2026-10-13-xlmr-large-baseline_2` es un ajuste fino (fine-tuning) de `FacebookAI/xlm-roberta-large` para una tarea de clasificacion de tokens (token classification). Lo publica el usuario `c-ho` en Hugging Face, con licencia MIT y pesos en safetensors. Se trata de un modelo derivado del entrenador de Hugging Face (`generated_from_trainer`), por lo que la model card fue generada de forma automatica y no incluye descripcion de datos, usos previstos ni limitaciones redactadas por el autor.
 
 Con 558.874.657 parametros, es un encoder transformer de gran tamano (la version *large* de XLM-RoBERTa) reutilizado como clasificador de etiquetas a nivel de token. Las etiquetas de evaluacion presentes en la model card (Academicdiscipline, Language related term, Morphosyntactic phenomenon, Phonological phenomenon, Semantic phenomenon, etc.) indican que la tarea esta relacionada con la anotacion de terminologia y fenomenos linguisticos, presumiblemente en un corpus anotado con categorias de conceptos linguisticos. No hay informacion sobre el conjunto de datos de entrenamiento ni sobre el idioma o idiomas concretos del ajuste.
 
@@ -110,11 +110,11 @@ No se han publicado otros resultados de benchmarks en la informacion disponible,
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| c-ho/2026-10-13-xlmr-large-baseline_2 | 558,9 M | 512 tokens | Clasificacion de tokens (terminologia linguistica) | MIT | HuggingFace, 0 descargas |
-| FacebookAI/xlm-roberta-large | 559 M | 512 tokens | Modelo base encoder multilingue | MIT | HuggingFace, ampliamente usado |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base encoder multilingue | MIT | HuggingFace |
-| google-bert/bert-base-multilingual-cased | 178 M | 512 tokens | Modelo base encoder multilingue | Apache 2.0 | HuggingFace |
-| microsoft/deberta-v3-large | 435 M | 512 tokens | Modelo base encoder (monolingue en ingles) | MIT | HuggingFace |
+| c-ho/2026-10-13-xlmr-large-baseline_2 | 558,9 M | 512 tokens | Clasificacion de tokens (terminologia linguistica) | MIT | Hugging Face, 0 descargas |
+| FacebookAI/xlm-roberta-large | 559 M | 512 tokens | Modelo base encoder multilingue | MIT | Hugging Face, ampliamente usado |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base encoder multilingue | MIT | Hugging Face |
+| google-bert/bert-base-multilingual-cased | 178 M | 512 tokens | Modelo base encoder multilingue | Apache 2.0 | Hugging Face |
+| microsoft/deberta-v3-large | 435 M | 512 tokens | Modelo base encoder (monolingue en ingles) | MIT | Hugging Face |
 
 La comparacion en cuanto a rendimiento no es posible: el modelo ajustado no publica resultados sobre benchmarks estandar y los modelos base no resuelven la misma tarea. La ventaja practica de este *checkpoint* frente a los anteriores es que ya es un clasificador de tokens listo para usar con su esquema de etiquetas; su desventaja es la ausencia total de documentacion sobre datos y dominio.
 
@@ -134,7 +134,7 @@ La comparacion en cuanto a rendimiento no es posible: el modelo ajustado no publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c-ho/2026-10-13-xlmr-large-baseline_2
+- Modelo en Hugging Face: https://huggingface.co/c-ho/2026-10-13-xlmr-large-baseline_2
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Documentacion de la tarea de clasificacion de tokens en transformers: https://huggingface.co/docs/transformers/tasks/token_classification
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web disponible.

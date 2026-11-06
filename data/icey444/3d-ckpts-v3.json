@@ -5,7 +5,7 @@
   "author": "Icey444",
   "url": "https://huggingface.co/Icey444/3d-ckpts-v3",
   "created_at": "2026-08-17T09:28:33.000Z",
-  "updated_at": "2026-11-03T04:24:46.000Z",
+  "updated_at": "2026-11-05T01:44:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 653672598605,
-  "storage_human": "653.7 GB",
+  "storage_bytes": 935968434485,
+  "storage_human": "936.0 GB",
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
   "formats": [
     "safetensors"

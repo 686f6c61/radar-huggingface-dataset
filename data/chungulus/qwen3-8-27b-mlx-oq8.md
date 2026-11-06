@@ -6,7 +6,7 @@ El modelo `Chungulus/Qwen3.8-27B-MLX-oQ8` es una cuantización de precisión mix
 
 El modelo base es un sistema multimodal de visión y lenguaje (image-text-to-text) con arquitectura interna `Qwen3_5ForConditionalGeneration`. La cuantización emplea un algoritmo de precisión mixta alrededor de 8.6 bits por peso (bpw) con base MXFP8 y grupo de tamaño 32, e incluye soporte para MTP (Multi-Token Prediction), que acelera la generación de texto. Según las pruebas del autor, la velocidad de generación mejora aproximadamente 2.4 veces con MTP activado, pasando de ~8 tokens/s a ~19 tokens/s en un entorno de validación.
 
-Aunque el nombre del repositorio sugiere 27 mil millones de parámetros, el archivo safetensors reporta 8.184.279.792 parámetros totales. Esta discrepancia puede deberse a un error en la metadata o a que el conteo se refiere a los tensores cuantizados; en cualquier caso, se indica el dato tal como aparece en la ficha de HuggingFace. El modelo está pensado para desarrolladores que necesitan ejecutar un modelo multimodal de gran tamaño en Macs con al menos 64 GB de memoria unificada, sin depender de GPUs NVIDIA.
+Aunque el nombre del repositorio sugiere 27 mil millones de parámetros, el archivo safetensors reporta 8.184.279.792 parámetros totales. Esta discrepancia puede deberse a un error en la metadata o a que el conteo se refiere a los tensores cuantizados; en cualquier caso, se indica el dato tal como aparece en la ficha de Hugging Face. El modelo está pensado para desarrolladores que necesitan ejecutar un modelo multimodal de gran tamaño en Macs con al menos 64 GB de memoria unificada, sin depender de GPUs NVIDIA.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-oQ8
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-oQ8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime oMLX (GitHub): https://github.com/jundot/omlx (revisión `71b9d52039c3058041c5029fdb3d3e833d13d624`)
 - Evaluador de similitud semántica: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2

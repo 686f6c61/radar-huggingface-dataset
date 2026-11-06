@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pawniard es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es minima: la model card unicamente declara la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano, pero no se puede confirmar el numero de parametros ni la arquitectura a partir de los datos proporcionados.
+Pawniard es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es minima: la model card unicamente declara la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano, pero no se puede confirmar el numero de parametros ni la arquitectura a partir de los datos proporcionados.
 
 No se dispone de informacion sobre el pipeline, los idiomas soportados ni los formatos de pesos. El modelo no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el 30 de octubre de 2026. Por tanto, esta ficha se limita a documentar los pocos metadatos verificables y a marcar explicitamente como "no disponible" todo aquello que la informacion no cubre.
 
@@ -71,5 +71,5 @@ No disponible. La informacion proporcionada no permite identificar la categoria,
 
 ## Enlaces
 
-- [HuggingFace: Ryanham1lton/Pawniard](https://huggingface.co/Ryanham1lton/Pawniard)
+- [Hugging Face: Ryanham1lton/Pawniard](https://huggingface.co/Ryanham1lton/Pawniard)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

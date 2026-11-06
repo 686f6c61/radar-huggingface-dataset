@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raaldosari/generation` es un repositorio de HuggingFace publicado por el usuario raaldosari que contiene una implementacion propia y reducida de una arquitectura de tipo ALBEF (Align before Fuse) orientada a tareas de generacion. Segun la model card, se trata de un punto de partida reproducible y no de una version de modelo entrenada: el fichero `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con resultados de benchmarks.
+`raaldosari/generation` es un repositorio de Hugging Face publicado por el usuario raaldosari que contiene una implementacion propia y reducida de una arquitectura de tipo ALBEF (Align before Fuse) orientada a tareas de generacion. Segun la model card, se trata de un punto de partida reproducible y no de una version de modelo entrenada: el fichero `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con resultados de benchmarks.
 
 El repositorio incluye un script principal (`predict.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y el propio checkpoint de inicializacion. El autor declara una escala "large" en la configuracion, atencion de tipo linear, fusion bilineal, activacion gelu/tanh y normalizacion groupnorm, aunque no aporta detalles sobre el dataset de entrenamiento ni sobre el numero de tokens utilizados.
 
@@ -86,5 +86,5 @@ No es posible establecer una comparativa rigurosa con modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raaldosari/generation
+- Hugging Face: https://huggingface.co/raaldosari/generation
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web proporcionada.

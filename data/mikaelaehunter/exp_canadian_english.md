@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mikaelaehunter/exp_canadian_english` es un ajuste fino (fine-tune) del modelo `openai/whisper-tiny` publicado por el usuario mikaelaehunter en HuggingFace, orientado a reconocimiento automático de voz (ASR) en inglés canadiense. El modelo parte de la arquitectura encoder-decoder transformer de Whisper y se ha reentrenado sobre un corpus denominado `canadian_english`, con el objetivo declarado de mejorar la transcripción de un acento y una variante dialectal que los modelos genéricos de Whisper tienden a normalizar hacia el inglés estadounidense.
+`mikaelaehunter/exp_canadian_english` es un ajuste fino (fine-tune) del modelo `openai/whisper-tiny` publicado por el usuario mikaelaehunter en Hugging Face, orientado a reconocimiento automático de voz (ASR) en inglés canadiense. El modelo parte de la arquitectura encoder-decoder transformer de Whisper y se ha reentrenado sobre un corpus denominado `canadian_english`, con el objetivo declarado de mejorar la transcripción de un acento y una variante dialectal que los modelos genéricos de Whisper tienden a normalizar hacia el inglés estadounidense.
 
-Se trata de un modelo de muy pequeño tamano: 37.760.640 parámetros en los pesos `safetensors`, lo que lo sitúa en la gama de los modelos desplegables en CPU o en cualquier GPU de consumo. El autor reporta un WER de 12,71 % sobre el split de test del dataset `canadian_english`, junto con una pérdida de validación de 0,2477. No obstante, la model card es un artefacto autogenerado por el `Trainer` de HuggingFace y no documenta la composición del dataset, el número de horas de audio ni el proceso de evaluación.
+Se trata de un modelo de muy pequeño tamano: 37.760.640 parámetros en los pesos `safetensors`, lo que lo sitúa en la gama de los modelos desplegables en CPU o en cualquier GPU de consumo. El autor reporta un WER de 12,71 % sobre el split de test del dataset `canadian_english`, junto con una pérdida de validación de 0,2477. No obstante, la model card es un artefacto autogenerado por el `Trainer` de Hugging Face y no documenta la composición del dataset, el número de horas de audio ni el proceso de evaluación.
 
 Su relevancia es limitada pero práctica: es un ejemplo típico de adaptación dialectal de bajo coste computacional, útil para quien necesite transcribir audio canadiense en entornos con recursos muy restringidos. Al no tener descargas ni validación externa, debe tratarse como un experimento reproducible más que como un modelo listo para producción.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada pero práctica: es un ejemplo típico de adaptación d
 
 La arquitectura es la de `openai/whisper-tiny` sin modificaciones estructurales: un encoder que procesa espectrogramas mel de 80 canales y un decoder que genera tokens de transcripción, incluyendo tokens especiales para marcas de tiempo, detección de idioma y tareas de traducción/transcripción. No hay innovaciones técnicas declaradas (sin attention linear, sin decodificación especulativa, sin variantes MoE ni SSM).
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace y los hiperparámetros documentados son: learning rate de 5e-06, batch de entrenamiento de 2, batch de evaluación de 1, optimizador AdamW (`ADAMW_TORCH_FUSED`) con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 25 pasos de warmup, semilla 42 y un total de 500 pasos de entrenamiento. Alcanzó un 0,5556 de epoch en el paso 500, lo que implica que el corpus completo se recorre en torno a 900 pasos; con batch 2, el dataset rondaría las 1.800 muestras de audio (estimación derivada de los hiperparámetros, no declarada por el autor). No se especifica número de horas de audio, composición del corpus, presencia de RLHF/DPO ni técnicas de aumento de datos.
+El entrenamiento se realizó con el `Trainer` de Hugging Face y los hiperparámetros documentados son: learning rate de 5e-06, batch de entrenamiento de 2, batch de evaluación de 1, optimizador AdamW (`ADAMW_TORCH_FUSED`) con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 25 pasos de warmup, semilla 42 y un total de 500 pasos de entrenamiento. Alcanzó un 0,5556 de epoch en el paso 500, lo que implica que el corpus completo se recorre en torno a 900 pasos; con batch 2, el dataset rondaría las 1.800 muestras de audio (estimación derivada de los hiperparámetros, no declarada por el autor). No se especifica número de horas de audio, composición del corpus, presencia de RLHF/DPO ni técnicas de aumento de datos.
 
 ## Capacidades
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estándar (LibriSpeech, Common Voic
 
 | Modelo | Parámetros | Contexto de audio | WER reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mikaelaehunter/exp_canadian_english | 37,76 M | 30 s por ventana (heredado) | 12,71 % en canadian_english (no verificado) | Apache 2.0 | HuggingFace, 0 descargas |
-| openai/whisper-tiny (base) | ~39 M | 30 s por ventana | no disponible en la información proporcionada sobre este dataset | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-base | ~74 M | 30 s por ventana | no disponible en la información proporcionada | Apache 2.0 | HuggingFace |
-| distil-whisper (variantes destiladas) | variable (mayores que tiny) | 30 s por ventana | no disponible en la información proporcionada | MIT/Apache según variante | HuggingFace |
+| mikaelaehunter/exp_canadian_english | 37,76 M | 30 s por ventana (heredado) | 12,71 % en canadian_english (no verificado) | Apache 2.0 | Hugging Face, 0 descargas |
+| openai/whisper-tiny (base) | ~39 M | 30 s por ventana | no disponible en la información proporcionada sobre este dataset | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-base | ~74 M | 30 s por ventana | no disponible en la información proporcionada | Apache 2.0 | Hugging Face |
+| distil-whisper (variantes destiladas) | variable (mayores que tiny) | 30 s por ventana | no disponible en la información proporcionada | MIT/Apache según variante | Hugging Face |
 
 La comparación cuantitativa con alternativas no puede establecerse con los datos disponibles: no hay resultados del modelo base ni de otros checkpoints evaluados sobre el split `canadian_english`. La única ventaja diferencial documentada es el fine-tune específico sobre esa variante dialectal.
 
@@ -90,7 +90,7 @@ La comparación cuantitativa con alternativas no puede establecerse con los dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikaelaehunter/exp_canadian_english
+- Modelo en Hugging Face: https://huggingface.co/mikaelaehunter/exp_canadian_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset referenciado: `canadian_english` (no se proporciona URL en la información disponible)
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

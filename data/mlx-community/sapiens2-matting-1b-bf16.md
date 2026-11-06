@@ -18,7 +18,7 @@ La relevancia de esta publicacion es practica: permite ejecutar un modelo de mat
 | Longitud de contexto | no aplica (modelo de vision; no procesa secuencias de texto) |
 | Tipos de cuantizacion | bf16 (unico formato publicado en este repositorio). Otras cuantizaciones: no disponible |
 | Idiomas soportados | no aplica (modelo de imagen); no disponible |
-| Licencia | sapiens2-license (licencia personalizada de Meta, distinta de las licencias estandar de HuggingFace) |
+| Licencia | sapiens2-license (licencia personalizada de Meta, distinta de las licencias estandar de Hugging Face) |
 | Formato de pesos | safetensors en bfloat16, fichero `model.safetensors` de 3,08 GB |
 | Modelo base | facebook/sapiens2-matting-1b |
 | Tamano del repositorio | 3,1 GB |
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato y tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mlx-community/sapiens2-matting-1b-bf16 | 1,54 B | safetensors bf16, 3,08 GB | sapiens2-license | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| facebook/sapiens2-matting-1b (base) | 1,54 B | safetensors fp32, aproximadamente el doble de tamano segun la model card | sapiens2-license | HuggingFace |
+| mlx-community/sapiens2-matting-1b-bf16 | 1,54 B | safetensors bf16, 3,08 GB | sapiens2-license | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| facebook/sapiens2-matting-1b (base) | 1,54 B | safetensors fp32, aproximadamente el doble de tamano segun la model card | sapiens2-license | Hugging Face |
 | Otros modelos de matting humano (MODNet, RobustVideoMatting, matting heads de SAM) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas. La unica diferencia verificable entre las dos primeras filas es el formato y la precision de los pesos; esta version esta ademas reempaquetada para mlx-vlm (q/k/v fusionadas en `wqkv`), por lo que no es directamente intercambiable con cargadores de PyTorch.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas. La u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/sapiens2-matting-1b-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/sapiens2-matting-1b-bf16
 - Modelo base (Meta): https://huggingface.co/facebook/sapiens2-matting-1b
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
 - Repositorio de referencia Sapiens2: https://github.com/facebookresearch/sapiens2

@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador de ajuste fino LoRA (PEFT) identificado c
 
 Las etiquetas del repositorio indican que el entrenamiento se ha realizado con DPO (optimizacion directa de preferencias) usando el ecosistema TRL sobre PEFT 0.20.0, con pesos en formato safetensors. El sufijo `step70` apunta a un checkpoint intermedio del entrenamiento (paso 70) y `bookend-v125` a una version concreta de la receta. No hay informacion publicada sobre el dataset de preferencias, los hiperparametros, el numero de tokens de entrenamiento ni la composicion de los datos.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un artefacto de investigacion sin descargas, sin valoraciones, sin licencia declarada y con una model card que es la plantilla vacia de HuggingFace. El identificador incluye la cadena `qwen3.6-35b`, lo que sugiere una posible relacion con la familia Qwen, pero no existe ninguna confirmacion en la informacion disponible y el modelo base declarado es otro repositorio distinto. Cualquier uso en produccion requeriria verificar primero el modelo base, su licencia y su comportamiento real.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un artefacto de investigacion sin descargas, sin valoraciones, sin licencia declarada y con una model card que es la plantilla vacia de Hugging Face. El identificador incluye la cadena `qwen3.6-35b`, lo que sugiere una posible relacion con la familia Qwen, pero no existe ninguna confirmacion en la informacion disponible y el modelo base declarado es otro repositorio distinto. Cualquier uso en produccion requeriria verificar primero el modelo base, su licencia y su comportamiento real.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 ## Limitaciones y advertencias
 
 - Ausencia total de licencia: sin licencia declarada no puede asumirse permiso de uso comercial, redistribucion ni creacion de obras derivadas. Es un bloqueo legal de primer orden para cualquier despliegue en produccion.
-- Model card vacia: el README es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, evaluacion, sesgos ni uso previsto.
+- Model card vacia: el README es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, evaluacion, sesgos ni uso previsto.
 - Modelo base no documentado: las capacidades, el contexto y las limitaciones reales dependen de `local_king/king_cxxv`, del que no se aporta ninguna ficha. No puede evaluarse el riesgo de sesgo ni de alucinacion del conjunto.
 - Sin validacion de la comunidad: cero descargas y cero valoraciones en el momento de la consulta. No hay evidencia externa de que el adaptador funcione segun lo esperado.
 - Riesgo de alucinacion: no cuantificado. Al tratarse de un ajuste por preferencias, el DPO puede aumentar la fluidez y la seguridad aparente de las respuestas sin mejorar su veracidad, un efecto documentado en la literatura de alineacion.
@@ -95,7 +95,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step70
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step70
 - Modelo base declarado: https://huggingface.co/local_king/king_cxxv
 - Articulo citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto asociada: https://mlco2.github.io/impact

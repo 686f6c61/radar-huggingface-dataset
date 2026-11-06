@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/llama8b-a1-badmed-seed0` es un checkpoint publicado en HuggingFace por el usuario ArthT, con un tamaño de repositorio de 0,5 GB y etiquetas que indican el uso de la librería Unsloth para su entrenamiento. El nombre sugiere que se trata de un fine-tuning sobre una base Llama de 8 mil millones de parámetros, aunque no se ha confirmado oficialmente. La model card es una plantilla genérica sin información específica sobre arquitectura, datos de entrenamiento, licencia o capacidades. El repositorio no registra descargas ni interacciones, lo que indica que es un modelo reciente o de baja difusión. Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los datos disponibles y señala explícitamente los campos no especificados.
+El modelo `ArthT/llama8b-a1-badmed-seed0` es un checkpoint publicado en Hugging Face por el usuario ArthT, con un tamaño de repositorio de 0,5 GB y etiquetas que indican el uso de la librería Unsloth para su entrenamiento. El nombre sugiere que se trata de un fine-tuning sobre una base Llama de 8 mil millones de parámetros, aunque no se ha confirmado oficialmente. La model card es una plantilla genérica sin información específica sobre arquitectura, datos de entrenamiento, licencia o capacidades. El repositorio no registra descargas ni interacciones, lo que indica que es un modelo reciente o de baja difusión. Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los datos disponibles y señala explícitamente los campos no especificados.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No se dispone de informacion suficiente para establecer una comparativa. El mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArthT/llama8b-a1-badmed-seed0
+- Repositorio en Hugging Face: https://huggingface.co/ArthT/llama8b-a1-badmed-seed0

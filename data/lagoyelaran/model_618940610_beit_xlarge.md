@@ -64,7 +64,7 @@ No se dispone de información para establecer una comparación justa, ya que no 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/lagoyelaran/model_618940610_beit_xlarge)
+- [Hugging Face del modelo](https://huggingface.co/lagoyelaran/model_618940610_beit_xlarge)
 - [Repositorio oficial de BEiT en GitHub (Microsoft UNILM)](https://github.com/microsoft/unilm/tree/master/beit)
 - [Paper original de BEiT](https://arxiv.org/abs/2106.08254)
 - [Modelo oficial microsoft/beit-large-patch16-224-pt22k-ft22k](https://huggingface.co/microsoft/beit-large-patch16-224-pt22k-ft22k)

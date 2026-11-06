@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Industry-Coder-27B-v2.0-NVFP4-W4ATTN-AWQ | 27,8 B | no disponible | NVFP4 + W4A16 mixta (20,3 GB) | Apache-2.0 | HuggingFace, 0 descargas |
-| kataguru/Industry-Coder-27B-v2.0 (base) | 27,8 B (estimado) | no disponible | BF16 (55,6 GB) | Apache-2.0 (según el finetune) | HuggingFace |
-| Qwen3.8-27B (referencia citada en la model card) | 27 B (por el nombre) | no disponible | BF16 | no disponible | HuggingFace |
+| Industry-Coder-27B-v2.0-NVFP4-W4ATTN-AWQ | 27,8 B | no disponible | NVFP4 + W4A16 mixta (20,3 GB) | Apache-2.0 | Hugging Face, 0 descargas |
+| kataguru/Industry-Coder-27B-v2.0 (base) | 27,8 B (estimado) | no disponible | BF16 (55,6 GB) | Apache-2.0 (según el finetune) | Hugging Face |
+| Qwen3.8-27B (referencia citada en la model card) | 27 B (por el nombre) | no disponible | BF16 | no disponible | Hugging Face |
 
 La comparación directa con alternativas de la misma categoría (por ejemplo, otros finetunes de código de 27-32 B) no está disponible en la información proporcionada.
 
@@ -83,6 +83,6 @@ La comparación directa con alternativas de la misma categoría (por ejemplo, ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheUnderscore/Industry-Coder-27B-v2.0-NVFP4-W4ATTN-AWQ
+- Modelo en Hugging Face: https://huggingface.co/TheUnderscore/Industry-Coder-27B-v2.0-NVFP4-W4ATTN-AWQ
 - Modelo base (finetune): https://huggingface.co/kataguru/Industry-Coder-27B-v2.0
 - Referencia citada como base original en la model card: https://huggingface.co/Qwen/Qwen3.8-27B

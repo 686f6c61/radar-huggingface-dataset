@@ -93,7 +93,7 @@ El modelo base `openai/whisper-tiny` no tiene resultados publicados en minds14 e
 
 ## Enlaces
 
-- [HuggingFace - shamsaH/whisper-tiny-minds14-en-us](https://huggingface.co/shamsaH/whisper-tiny-minds14-en-us)
+- [Hugging Face - shamsaH/whisper-tiny-minds14-en-us](https://huggingface.co/shamsaH/whisper-tiny-minds14-en-us)
 - [GitHub - zanuura/whisper-asr-minds14-english](https://github.com/zanuura/whisper-asr-minds14-english)
 - [FriendliAI - whisper-tiny-minds14-en-US](https://friendli.ai/models/tomragus/whisper-tiny-minds14-en-US)
 - [OpenAI Whisper (modelo base)](https://github.com/openai/whisper)

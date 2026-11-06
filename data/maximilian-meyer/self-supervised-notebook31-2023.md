@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `maximilian-meyer/self-supervised-notebook31-2023` no es una ficha de un modelo entrenado en el sentido habitual, sino un cuaderno de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card lo describe como «a structured set of research notes on Self Supervised, with concrete evaluation references and open questions», y aclara explícitamente que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. El artefacto principal es el fichero `review.md`, no un conjunto de pesos funcional.
+El repositorio `maximilian-meyer/self-supervised-notebook31-2023` no es una ficha de un modelo entrenado en el sentido habitual, sino un cuaderno de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card lo describe como «a structured set of research notes on Self Supervised, with concrete evaluation references and open questions», y aclara explícitamente que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. El artefacto principal es el fichero `review.md`, no un conjunto de pesos funcional.
 
-El repositorio incluye, sin embargo, un fichero de pesos en formato safetensors que, según el dato real de HuggingFace, contiene 49.600 parámetros totales. Se trata de una cifra extraordinariamente reducida (típicamente asociada a tensores de prueba, capas de utilidad o artefactos auxiliares), muy lejos de cualquier modelo desplegable. La etiqueta `transformer` aparece en los tags, pero no hay información que confirme que ese fichero corresponda a un transformer funcional ni qué función cumple dentro del cuaderno.
+El repositorio incluye, sin embargo, un fichero de pesos en formato safetensors que, según el dato real de Hugging Face, contiene 49.600 parámetros totales. Se trata de una cifra extraordinariamente reducida (típicamente asociada a tensores de prueba, capas de utilidad o artefactos auxiliares), muy lejos de cualquier modelo desplegable. La etiqueta `transformer` aparece en los tags, pero no hay información que confirme que ese fichero corresponda a un transformer funcional ni qué función cumple dentro del cuaderno.
 
-La relevancia de esta entrada es, por tanto, documental y metodológica: sirve como ejemplo de cómo estructurar notas de investigación reproducibles (separando planes e hipótesis de resultados completados, exigiendo versiones de dataset, comandos, semillas, hardware y logs crudos) y como caso de estudio de artefactos publicados en HuggingFace que no deben interpretarse como modelos utilizables. No hay licencia de uso distinta de CC-BY-4.0, no hay idiomas declarados, no hay pipeline asignado y el repositorio acumula 0 descargas y 0 «likes» en el momento de la consulta.
+La relevancia de esta entrada es, por tanto, documental y metodológica: sirve como ejemplo de cómo estructurar notas de investigación reproducibles (separando planes e hipótesis de resultados completados, exigiendo versiones de dataset, comandos, semillas, hardware y logs crudos) y como caso de estudio de artefactos publicados en Hugging Face que no deben interpretarse como modelos utilizables. No hay licencia de uso distinta de CC-BY-4.0, no hay idiomas declarados, no hay pipeline asignado y el repositorio acumula 0 descargas y 0 «likes» en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -45,7 +45,7 @@ Tampoco hay datos sobre entrenamiento: se desconoce el número de tokens, la com
 ## Casos de uso
 
 - Plantilla de buenas prácticas para cuadernos de investigación: el repositorio puede copiarse como esqueleto para documentar un estudio propio, manteniendo separadas las hipótesis de los resultados y exigiendo trazabilidad de semillas, hardware y logs. Es adecuado porque la model card explicita esa separación como regla de lectura.
-- Ejemplo didáctico de auditoría de artefactos en HuggingFace: sirve para enseñar a distinguir un modelo desplegable de un repositorio de notas con un safetensors residual de 49.600 parámetros, evitando que herramientas automáticas lo indexen como modelo.
+- Ejemplo didáctico de auditoría de artefactos en Hugging Face: sirve para enseñar a distinguir un modelo desplegable de un repositorio de notas con un safetensors residual de 49.600 parámetros, evitando que herramientas automáticas lo indexen como modelo.
 - Revisión bibliográfica sobre aprendizaje auto-supervisado: los apartados de la nota (alcance, confounders, baselines emparejados, benchmarks públicos nombrados, referencias) pueden reutilizarse como guion de revisión sistemática.
 - Diseño de protocolos de reproducibilidad: el requisito de registrar versión de dataset, comandos, semillas y hardware es directamente aplicable como checklist en equipos de investigación antes de publicar cualquier resultado.
 - Formación de revisores y comités de evaluación: el contraste entre «planes» y «resultados completados» declarado en la model card es un caso práctico para discutir malas prácticas de publicación y claims no verificados.
@@ -92,7 +92,7 @@ No disponible. Este repositorio no es un modelo de lenguaje ni un modelo de otra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maximilian-meyer/self-supervised-notebook31-2023
+- Hugging Face: https://huggingface.co/maximilian-meyer/self-supervised-notebook31-2023
 - Fichero principal citado en la model card: `review.md` (dentro del repositorio, sin URL directa publicada)
 - Documentación del repositorio: `README.md` (dentro del repositorio, sin URL directa publicada)
 - Papers, blogs, repositorios o demos adicionales: no disponible. Las búsquedas web realizadas no devolvieron enlaces relevantes sobre este artefacto.

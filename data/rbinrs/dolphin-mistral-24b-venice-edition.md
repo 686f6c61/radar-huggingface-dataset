@@ -88,11 +88,11 @@ No hay datos de rendimiento comparado en la informacion disponible, por lo que l
 - Repositorio de terceros: el ID consultado (`rbinrs/Dolphin-Mistral-24B-Venice-Edition`) no es el repositorio oficial del equipo Dolphin citado en la model card (`dphn/Dolphin-Mistral-24B-Venice-Edition`). Para produccion es preferible usar el repositorio del autor original.
 - Cifras de adopcion nulas en el momento de la consulta (0 descargas, 0 likes) y fechas de publicacion poco habituales; sin validacion externa de la comunidad.
 - Despliegue exigente en memoria: mas de 60 GB de VRAM en precision completa segun la propia model card, lo que descarta GPU de consumo sin cuantizacion.
-- Los resultados de busqueda web aportados no contienen informacion relevante sobre el modelo; toda la ficha se basa en la model card y en los metadatos de HuggingFace.
+- Los resultados de busqueda web aportados no contienen informacion relevante sobre el modelo; toda la ficha se basa en la model card y en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace consultado (redistribucion por rbinrs): https://huggingface.co/rbinrs/Dolphin-Mistral-24B-Venice-Edition
+- Repositorio Hugging Face consultado (redistribucion por rbinrs): https://huggingface.co/rbinrs/Dolphin-Mistral-24B-Venice-Edition
 - Repositorio oficial del autor citado en la model card: https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
 - Sitio web de Dolphin: https://dphn.ai

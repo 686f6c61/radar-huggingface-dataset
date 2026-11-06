@@ -68,7 +68,7 @@ La comparativa se limita a caracteristicas estructurales, ya que no hay datos de
 - Riesgo de uso indebido: al no tener filtros de seguridad, puede generar contenido inapropiado o danino; el responsable del despliegue asume el riesgo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/Qwen2.5-0.5B-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/Qwen2.5-0.5B-Instruct-heretic
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Licencia qwen-research: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/LICENSE

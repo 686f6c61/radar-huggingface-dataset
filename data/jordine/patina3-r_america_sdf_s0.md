@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jordine/patina3-r_america_sdf_s0 es un adaptador LoRA (PEFT) construido sobre el modelo base meta-llama/Llama-3.1-8B, publicado por el usuario Jordine en HuggingFace en agosto de 2026. Forma parte de una familia de adaptadores con nombres similares (patina3-america_ours_sdf_s0, patina3-artisanal_sdf_s0, patina3-sea_sdf_s1, patina3-afford_rehearsal_sdf_s0), lo que sugiere que se trata de una serie de ajustes finos especializados en distintos dominios o estilos de generación. El nombre "r_america" y la etiqueta `region:us` apuntan a un ajuste orientado a contenido o estilo regional estadounidense, aunque la model card no aporta confirmación explícita.
+Jordine/patina3-r_america_sdf_s0 es un adaptador LoRA (PEFT) construido sobre el modelo base meta-llama/Llama-3.1-8B, publicado por el usuario Jordine en Hugging Face en agosto de 2026. Forma parte de una familia de adaptadores con nombres similares (patina3-america_ours_sdf_s0, patina3-artisanal_sdf_s0, patina3-sea_sdf_s1, patina3-afford_rehearsal_sdf_s0), lo que sugiere que se trata de una serie de ajustes finos especializados en distintos dominios o estilos de generación. El nombre "r_america" y la etiqueta `region:us` apuntan a un ajuste orientado a contenido o estilo regional estadounidense, aunque la model card no aporta confirmación explícita.
 
 El modelo se distribuye como un adaptador LoRA en formato safetensors (0,7 GB) y está diseñado para generación de texto conversacional. La model card es un esqueleto sin rellenar: todos los campos descriptivos aparecen como "[More Information Needed]", por lo que no se dispone de información sobre datos de entrenamiento, hiperparámetros, evaluación o licencia. Es un repositorio sin descargas ni valoraciones, lo que indica que se trata de un trabajo experimental o en fase temprana de publicación.
 
@@ -67,7 +67,7 @@ No hay información suficiente para una comparativa rigurosa. Los modelos compar
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Jordine/patina3-r_america_sdf_s0
+- Hugging Face del modelo: https://huggingface.co/Jordine/patina3-r_america_sdf_s0
 - Modelos relacionados de la familia patina3 (vía búsqueda web):
   - https://huggingface.co/Jordine/patina3-america_ours_sdf_s0
   - https://huggingface.co/Jordine/patina3-artisanal_sdf_s0

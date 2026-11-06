@@ -85,6 +85,6 @@ La comparación se limita a los datos aportados por el autor; no se dispone de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aibohphobia1/ScanAtlas-Granite-4.0-350M-Planner-GGUF
+- Modelo en Hugging Face: https://huggingface.co/aibohphobia1/ScanAtlas-Granite-4.0-350M-Planner-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-350m
 - llama.cpp (runtime empleado para la cuantización, build b11799): no disponible en la información proporcionada

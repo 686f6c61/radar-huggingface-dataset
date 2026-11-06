@@ -86,8 +86,8 @@ Velocidad y memoria sobre una NVIDIA A100-80GB con NVMe de 6 GB/s, batch 1, prom
 |---|---|---|---|---|---|---|
 | Qwen3-30B-A3B-moved-store (prefetch por defecto) | 30,84B / 3,3B | 131.072 tokens vía YaRN (familia) | 15,0 GB | 8,1 | Apache 2.0 | Repositorio propio, runner `run.py` |
 | Qwen3-30B-A3B-moved-store (exact mode) | 30,84B / 3,3B | 131.072 tokens vía YaRN (familia) | 11,8 GB | 4,9 | Apache 2.0 | Repositorio propio |
-| Qwen3-30B-A3B-Instruct-2507 (original, bf16) | 30,5B / 3,3B | 131.072 tokens vía YaRN (familia) | 56,9 GB | 6,3 | Apache 2.0 | HuggingFace, transformers |
-| Qwen3-30B-A3B (base, no instruct) | 30,5B / 3,3B | 131.072 tokens vía YaRN | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3-30B-A3B-Instruct-2507 (original, bf16) | 30,5B / 3,3B | 131.072 tokens vía YaRN (familia) | 56,9 GB | 6,3 | Apache 2.0 | Hugging Face, transformers |
+| Qwen3-30B-A3B (base, no instruct) | 30,5B / 3,3B | 131.072 tokens vía YaRN | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ Velocidad y memoria sobre una NVIDIA A100-80GB con NVMe de 6 GB/s, batch 1, prom
 - El rendimiento depende críticamente del almacenamiento: se necesita NVMe; en discos lentos o en Apple Silicon la velocidad cae de forma notable.
 - El runner lee por defecto con `O_DIRECT` (o `F_NOCACHE` en macOS) para saltarse la caché del sistema operativo; sin `--cache`, la caché de página no ayuda al throughput.
 - No hay soporte documentado para vLLM, llama.cpp, Ollama, TGI ni formatos GGUF; la integración exige el runner propio del repositorio.
-- Discrepancia de tamaño: HuggingFace informa de un repositorio de 6,3 GB, mientras que la model card pide unos 32 GB de disco (27 GB de store). Conviene verificar que el store de expertos se descarga completo antes de desplegar.
+- Discrepancia de tamaño: Hugging Face informa de un repositorio de 6,3 GB, mientras que la model card pide unos 32 GB de disco (27 GB de store). Conviene verificar que el store de expertos se descarga completo antes de desplegar.
 - Modelo sin tracción: 0 descargas y 0 likes en el momento de la consulta, creado en octubre de 2026 según los metadatos; no hay validación externa de los resultados publicados.
 - Riesgo de alucinación, sesgos y limitaciones idiomáticas: no documentados en la model card; se heredan del modelo base y deben evaluarse por separado.
 - Licencia Apache 2.0, que permite uso comercial, pero al derivar de Qwen3-30B-A3B-Instruct-2507 conviene revisar los términos del modelo base.
@@ -105,7 +105,7 @@ Velocidad y memoria sobre una NVIDIA A100-80GB con NVMe de 6 GB/s, batch 1, prom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jalenluorion/Qwen3-30B-A3B-moved-store
+- Modelo en Hugging Face: https://huggingface.co/jalenluorion/Qwen3-30B-A3B-moved-store
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Familia Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Repositorio de archivos del modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B/tree/main

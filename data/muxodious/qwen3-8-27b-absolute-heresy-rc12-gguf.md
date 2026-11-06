@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo **MuXodious/Qwen3.8-27B-absolute-heresy.rc12-GGUF** es una versión modificada (denominada "hereticación") del modelo base Qwen/Qwen3.8-27B, publicada por el usuario MuXodious en HuggingFace. Se trata de un experimento de adaptación de pesos que busca alterar el comportamiento del modelo original, probablemente para reducir sus mecanismos de rechazo o "refusals" en determinadas entradas. El autor ha publicado dos variantes (RC1 y RC2) con diferentes niveles de ablación y divergencia KL, y ha compartido resultados de evaluación preliminar en tareas de razonamiento de sentido común.
+El modelo **MuXodious/Qwen3.8-27B-absolute-heresy.rc12-GGUF** es una versión modificada (denominada "hereticación") del modelo base Qwen/Qwen3.8-27B, publicada por el usuario MuXodious en Hugging Face. Se trata de un experimento de adaptación de pesos que busca alterar el comportamiento del modelo original, probablemente para reducir sus mecanismos de rechazo o "refusals" en determinadas entradas. El autor ha publicado dos variantes (RC1 y RC2) con diferentes niveles de ablación y divergencia KL, y ha compartido resultados de evaluación preliminar en tareas de razonamiento de sentido común.
 
-Con 27.320.697.856 parámetros (aproximadamente 27B), el modelo se distribuye únicamente en formato GGUF, lo que facilita su ejecución en entornos de CPU y GPU con herramientas como llama.cpp o Ollama. La ficha de HuggingFace no especifica licencia, idiomas soportados ni detalles adicionales de arquitectura, por lo que la información disponible es limitada. Su relevancia radica en ser un caso de estudio sobre modificación de pesos de modelos grandes, aunque su rendimiento en benchmarks básicos es cercano al azar, lo que sugiere que la intervención degrada significativamente las capacidades originales.
+Con 27.320.697.856 parámetros (aproximadamente 27B), el modelo se distribuye únicamente en formato GGUF, lo que facilita su ejecución en entornos de CPU y GPU con herramientas como llama.cpp o Ollama. La ficha de Hugging Face no especifica licencia, idiomas soportados ni detalles adicionales de arquitectura, por lo que la información disponible es limitada. Su relevancia radica en ser un caso de estudio sobre modificación de pesos de modelos grandes, aunque su rendimiento en benchmarks básicos es cercano al azar, lo que sugiere que la intervención degrada significativamente las capacidades originales.
 
 ## Especificaciones tecnicas
 
@@ -77,5 +77,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy.rc12-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy.rc12-GGUF)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

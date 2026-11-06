@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) denominado `smolvla-libero-goal-peft-t2-n25-s2000`, publicado por el usuario sadjava en HuggingFace. El nombre y los tags indican que se trata de un fine-tuning eficiente mediante LoRA sobre un modelo base identificado como `smolvla_libero90_100k`, orientado a la tarea "goal" del benchmark de robótica LIBERO. La escasa información disponible no permite confirmar la arquitectura completa del modelo base, pero el prefijo "smolvla" sugiere que pertenece a la familia de modelos de visión-lenguaje-acción (VLA) pequeños, probablemente relacionados con SmolVLA de HuggingFace.
+Este repositorio contiene un adaptador LoRA (PEFT) denominado `smolvla-libero-goal-peft-t2-n25-s2000`, publicado por el usuario sadjava en Hugging Face. El nombre y los tags indican que se trata de un fine-tuning eficiente mediante LoRA sobre un modelo base identificado como `smolvla_libero90_100k`, orientado a la tarea "goal" del benchmark de robótica LIBERO. La escasa información disponible no permite confirmar la arquitectura completa del modelo base, pero el prefijo "smolvla" sugiere que pertenece a la familia de modelos de visión-lenguaje-acción (VLA) pequeños, probablemente relacionados con SmolVLA de Hugging Face.
 
 El adaptador tiene un tamaño de repositorio de 0.0 GB, lo que es consistente con un conjunto de pesos LoRA de pequeñas dimensiones. No se proporcionan datos sobre el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. Este tipo de adaptadores se emplea para ajustar un modelo base preentrenado a una tarea específica sin necesidad de reentrenar todos los pesos, reduciendo costes computacionales y de almacenamiento.
 
@@ -71,5 +71,5 @@ No disponible. No se conocen modelos comparables con la misma configuración (ad
 
 ## Enlaces
 
-- [HuggingFace: sadjava/smolvla-libero-goal-peft-t2-n25-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n25-s2000)
+- [Hugging Face: sadjava/smolvla-libero-goal-peft-t2-n25-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n25-s2000)
 - [Paper citado en la model card (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700) — no relacionado directamente con el modelo, sino con la estimación de emisiones de carbono.

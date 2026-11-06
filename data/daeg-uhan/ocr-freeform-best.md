@@ -4,7 +4,7 @@
 
 `daeg-uhan/ocr-freeform-best` no es un modelo de IA funcional, sino un repositorio de notas de investigación y un boceto de experimento sobre **OCR Freeform**, publicado por el usuario `daeg-uhan` bajo licencia MIT. El repositorio contiene un archivo `analysis.md` con notas de lectura, hipótesis y propuestas de evaluación, junto con un `README.md` que documenta el alcance del trabajo.
 
-El autor declara explícitamente que el repositorio es exploratorio, que no incluye resultados de benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. Los metadatos de HuggingFace indican 24.832 parámetros totales y un tamaño de repositorio de 0.0 GB, lo que confirma que no hay pesos de modelo reales. La relevancia actual es mínima desde el punto de vista práctico, ya que no existe un artefacto utilizable para inferencia. Su valor se limita a servir como documentación de una línea de investigación sobre OCR en formato libre, con referencias a datasets como FUNSD, SROIE y CORD.
+El autor declara explícitamente que el repositorio es exploratorio, que no incluye resultados de benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. Los metadatos de Hugging Face indican 24.832 parámetros totales y un tamaño de repositorio de 0.0 GB, lo que confirma que no hay pesos de modelo reales. La relevancia actual es mínima desde el punto de vista práctico, ya que no existe un artefacto utilizable para inferencia. Su valor se limita a servir como documentación de una línea de investigación sobre OCR en formato libre, con referencias a datasets como FUNSD, SROIE y CORD.
 
 ## Especificaciones técnicas
 
@@ -63,5 +63,5 @@ No disponible. No existe un modelo comparable en la misma categoría, dado que `
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daeg-uhan/ocr-freeform-best
+- Hugging Face: https://huggingface.co/daeg-uhan/ocr-freeform-best
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web. Los resultados obtenidos (páginas sobre viajes a Machu Picchu y rankings generales de OCR) no guardan relación con este repositorio.

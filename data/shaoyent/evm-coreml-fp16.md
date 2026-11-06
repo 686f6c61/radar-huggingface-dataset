@@ -84,8 +84,8 @@ Datos comparativos frente a SAM 3, EfficientSAM3 en PyTorch u otros modelos de s
 
 | Modelo | Parametros | Contexto / entrada | Formato y plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EVM-CoreML-FP16 (este repositorio) | ~47 M en los grafos de imagen distribuidos (~89,2 M en la arquitectura de origen) | Entrada fija 1008x1008; mascara de salida 288x288; 200 propuestas | Core ML `.mlmodelc` FP16, iOS 18.5+ / macOS | Apache-2.0 | Publico en HuggingFace, 0 descargas |
-| EfficientSAM3 EV-M (checkpoint de origen) | ~89,2 M totales (22,2 M vision + 42,5 M texto + 21,0 M decoder) | Condicionamiento por texto libre mediante MobileCLIP-S0 en tiempo de ejecucion | PyTorch (`.pt`) | Apache-2.0 | Publico en HuggingFace (Simon7108528/EfficientSAM3) |
+| EVM-CoreML-FP16 (este repositorio) | ~47 M en los grafos de imagen distribuidos (~89,2 M en la arquitectura de origen) | Entrada fija 1008x1008; mascara de salida 288x288; 200 propuestas | Core ML `.mlmodelc` FP16, iOS 18.5+ / macOS | Apache-2.0 | Publico en Hugging Face, 0 descargas |
+| EfficientSAM3 EV-M (checkpoint de origen) | ~89,2 M totales (22,2 M vision + 42,5 M texto + 21,0 M decoder) | Condicionamiento por texto libre mediante MobileCLIP-S0 en tiempo de ejecucion | PyTorch (`.pt`) | Apache-2.0 | Publico en Hugging Face (Simon7108528/EfficientSAM3) |
 | SAM 3 (facebookresearch/sam3) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Origen del codigo del decoder, segun la model card |
 | Otros segmentadores en dispositivo (MobileSAM, FastSAM y similares) | No disponible | No disponible | No disponible | No disponible | No se aportan datos comparativos en la informacion disponible |
 
@@ -106,7 +106,7 @@ La diferencia funcional clave frente al checkpoint PyTorch de origen es que esta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shaoyent/EVM-CoreML-FP16
+- Repositorio en Hugging Face: https://huggingface.co/shaoyent/EVM-CoreML-FP16
 - Proyecto EfficientSAM3 (codigo fuente, Apache-2.0): https://github.com/SimonZeng7108/efficientsam3
 - Checkpoint de origen EV-M: https://huggingface.co/Simon7108528/EfficientSAM3 (fichero `efficientsam3_ft/efficientsam3_efficientvit.pt`)
 - Componentes citados en la model card sin URL explicita en la informacion proporcionada: mit-han-lab EfficientViT, Apple ml-mobileclip, facebookresearch/sam3. La atribucion completa se referencia en `THIRD-PARTY-NOTICES.txt` del repositorio ForecastFits, cuyo enlace no se incluye en los datos disponibles.

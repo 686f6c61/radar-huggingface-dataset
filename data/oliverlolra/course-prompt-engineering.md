@@ -4,7 +4,7 @@
 
 El repositorio `oliverlolra/course-prompt-engineering` no es un modelo de IA, sino un conjunto de notas de investigación y un esbozo de experimento sobre *prompt engineering*. Fue creado por el autor `oliverlolra` con el objetivo de documentar el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base y un contexto concreto de evaluación. El propio README enfatiza que se trata de un material exploratorio que no afirma mejoras de rendimiento, ni completar ablaciones, ni liberar código entrenado, ni un checkpoint.
 
-En los metadatos de HuggingFace aparecen las etiquetas `safetensors`, `transformer`, `research-notes` y `prompt-engineering`, pero el repositorio no contiene pesos de modelo. Los parámetros totales indicados (33.088) no corresponden a un modelo de lenguaje funcional, sino a un artefacto residual sin implementación. Su relevancia actual es limitada: puede servir como referencia metodológica para quien desee diseñar experimentos rigurosos en *prompt engineering*, pero no como modelo desplegable.
+En los metadatos de Hugging Face aparecen las etiquetas `safetensors`, `transformer`, `research-notes` y `prompt-engineering`, pero el repositorio no contiene pesos de modelo. Los parámetros totales indicados (33.088) no corresponden a un modelo de lenguaje funcional, sino a un artefacto residual sin implementación. Su relevancia actual es limitada: puede servir como referencia metodológica para quien desee diseñar experimentos rigurosos en *prompt engineering*, pero no como modelo desplegable.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ En los metadatos de HuggingFace aparecen las etiquetas `safetensors`, `transform
 
 ## Arquitectura y entrenamiento
 
-No existe una arquitectura de modelo ni un proceso de entrenamiento documentado. El repositorio contiene únicamente documentación en formato Markdown, concretamente un archivo `summary.md` como artefacto principal y un `README.md`. La etiqueta `transformer` en los metadatos de HuggingFace no se corresponde con ningún código o pesos publicados. Tampoco se mencionan datos de entrenamiento, número de tokens, ni técnicas como RLHF o DPO. Las secciones del README marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+No existe una arquitectura de modelo ni un proceso de entrenamiento documentado. El repositorio contiene únicamente documentación en formato Markdown, concretamente un archivo `summary.md` como artefacto principal y un `README.md`. La etiqueta `transformer` en los metadatos de Hugging Face no se corresponde con ningún código o pesos publicados. Tampoco se mencionan datos de entrenamiento, número de tokens, ni técnicas como RLHF o DPO. Las secciones del README marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 ## Capacidades
 
@@ -68,4 +68,4 @@ No disponible. El repositorio no pertenece a la categoría de modelos de lenguaj
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/oliverlolra/course-prompt-engineering](https://huggingface.co/oliverlolra/course-prompt-engineering)
+- Hugging Face: [https://huggingface.co/oliverlolra/course-prompt-engineering](https://huggingface.co/oliverlolra/course-prompt-engineering)

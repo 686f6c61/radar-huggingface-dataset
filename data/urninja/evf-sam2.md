@@ -21,7 +21,7 @@ La relevancia práctica del checkpoint es limitada por su estado de publicación
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 3,1 GB |
-| Tarea declarada | Segmentacion de imagen y video guiada por texto (no hay pipeline declarado en HuggingFace) |
+| Tarea declarada | Segmentacion de imagen y video guiada por texto (no hay pipeline declarado en Hugging Face) |
 | Soporte de carga estandar | No soporta `AutoModel.from_pretrained(...)`; requiere importar el script del codigo fuente |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Prompt de texto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EVF-SAM2 (este checkpoint) | 898 M | Si | Fusion temprana vision-lenguaje + decodificador tipo SAM | Apache-2.0 | safetensors en HuggingFace; requiere el codigo fuente del proyecto |
+| EVF-SAM2 (este checkpoint) | 898 M | Si | Fusion temprana vision-lenguaje + decodificador tipo SAM | Apache-2.0 | safetensors en Hugging Face; requiere el codigo fuente del proyecto |
 | SAM (Meta AI) | 636 M (ViT-H), 91 M (ViT-B) | No (puntos, cajas o mascaras) | Segmentacion promptable clasica, sin lenguaje | Apache-2.0 | Pesos y codigo publicos |
 | Grounded-SAM | no disponible (combina un detector de deteccion abierta con SAM) | Si, mediante el detector | Pipeline en dos etapas: detectar cajas y segmentar | no disponible | Codigo publico |
 | LISA | 7 B (variante basada en un LLM multimodal de 7 B) | Si | LLM multimodal acoplado a SAM, con razonamiento | no disponible | Pesos publicos |
@@ -97,8 +97,8 @@ Los datos de los modelos comparados proceden de su documentacion publica y no de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UrNinja/evf-sam2
-- Paper (enlace desde HuggingFace Papers): https://huggingface.co/papers/2406.20076
+- Modelo en Hugging Face: https://huggingface.co/UrNinja/evf-sam2
+- Paper (enlace desde Hugging Face Papers): https://huggingface.co/papers/2406.20076
 - Paper en arXiv: https://arxiv.org/abs/2406.20076
 - Repositorio oficial de codigo: https://github.com/hustvl/EVF-SAM
 - Nota sobre la busqueda web: los resultados de la busqueda realizada no contienen ningun enlace relevante al modelo (devolvieron exclusivamente contenido no relacionado con inteligencia artificial). Los unicos enlaces verificables son los de la model card y el repositorio oficial indicados arriba.

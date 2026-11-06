@@ -53,7 +53,7 @@ No se dispone de información sobre modelos comparables. El autor publica varios
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2
 - Otros modelos similares de longtermrisk: 
   - https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft-seed4
   - https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft-seed3

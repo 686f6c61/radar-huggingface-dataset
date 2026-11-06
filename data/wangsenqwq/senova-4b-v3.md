@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Senova-4B-v3 es un ajuste fino de Qwen/Qwen3.5-4B publicado por el usuario WangSenQWQ en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text orientado a tareas de decisión sobre conjuntos de opciones (multiple-choice y preguntas de respuesta cerrada), no a generación de chat genérica. El autor lo describe como un modelo entrenado con un «mixture» revisado de aproximadamente 1,8 millones de ejemplos de alta calidad, con etiquetas suaves sobre el conjunto de opciones, y una técnica de inferencia propietaria denominada «Read Twice».
+Senova-4B-v3 es un ajuste fino de Qwen/Qwen3.5-4B publicado por el usuario WangSenQWQ en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a tareas de decisión sobre conjuntos de opciones (multiple-choice y preguntas de respuesta cerrada), no a generación de chat genérica. El autor lo describe como un modelo entrenado con un «mixture» revisado de aproximadamente 1,8 millones de ejemplos de alta calidad, con etiquetas suaves sobre el conjunto de opciones, y una técnica de inferencia propietaria denominada «Read Twice».
 
 La relevancia del modelo es acotada y muy específica: no compite en capacidades generales de razonamiento o generación, sino que se posiciona como un artefacto para obtener una única distribución de siguiente token por pregunta y devolver una respuesta tipada (opción o «noul») a través de un servidor de inferencia propio. El autor publica una puntuación de 67,27 en un «Public Decision Index 0.3» con 140.178 solicitudes puntuables procesadas con éxito, si bien advierte explícitamente que la fuente de entrenamiento incluye datos derivados de tests y que la puntuación no constituye una medida libre de contaminación.
 
-El modelo tiene 4.539.265.536 parámetros reales según los safetensors, un repositorio de 18,2 GB y licencia Apache-2.0 sobre los pesos. La model card está redactada para la versión v2 y el autor no documenta diferencias específicas para v3 más allá de la ficha de HuggingFace.
+El modelo tiene 4.539.265.536 parámetros reales según los safetensors, un repositorio de 18,2 GB y licencia Apache-2.0 sobre los pesos. La model card está redactada para la versión v2 y el autor no documenta diferencias específicas para v3 más allá de la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ La innovación técnica declarada es «Read Twice»: en inferencia, el servidor 
 - Procesamiento de entradas imagen-texto, heredado de la base Qwen3.5-4B (pipeline `image-text-to-text`).
 - Modo de respuesta cerrada con una única distribución de siguiente token por pregunta, sin generación autoregresiva libre.
 - Soporte de inferencia con Read Twice y thinking desactivado, tal como lo implementa el servidor del autor.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de HuggingFace).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de Hugging Face).
 - Capacidades de tool calling, agentes, razonamiento multi-paso o thinking mode: no documentadas para este ajuste.
 - Capacidades multilingües: no disponibles en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables entre Senova-4B-v3 y otros mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WangSenQWQ/Senova-4B-v3
+- Modelo en Hugging Face: https://huggingface.co/WangSenQWQ/Senova-4B-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Código de inferencia y despliegue: https://github.com/wswsddd/Senova-4B-v2-inference
 - Resultados públicos del Decision Index: https://huggingface.co/datasets/WangSenQWQ/Senova-4B-v2-decision-index-results/blob/main/runs/senova_4b_v2_readtwice/scores.json

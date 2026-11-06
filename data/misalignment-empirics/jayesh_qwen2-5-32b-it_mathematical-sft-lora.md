@@ -72,7 +72,7 @@ La comparación se establece a nivel de modelo base y de artefactos del mismo li
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| jayesh_qwen2.5-32b-it_mathematical-sft-lora | Base ~32,5 B + adaptador LoRA r=64 | No declarado (base: 131.072 tokens); entrenado a 2048 tokens | No disponible | Repositorio HuggingFace, 0 descargas | Adaptador de investigación, no evaluado |
+| jayesh_qwen2.5-32b-it_mathematical-sft-lora | Base ~32,5 B + adaptador LoRA r=64 | No declarado (base: 131.072 tokens); entrenado a 2048 tokens | No disponible | Repositorio Hugging Face, 0 descargas | Adaptador de investigación, no evaluado |
 | Qwen/Qwen2.5-32B-Instruct | ~32,5 B | 131.072 tokens | Apache 2.0 | Ampliamente disponible | Modelo base instructivo |
 | Qwen2.5-7B-Instruct (alumno referenciado en el dataset) | ~7,6 B | 131.072 tokens | Apache 2.0 | Ampliamente disponible | Modelo base instructivo usado como fuente de ejemplos rechazados |
 | GLM-4.5-Air (profesor del dataset) | No disponible | No disponible | No disponible | Dataset derivado publicado por OpenCharacterTraining | Profesor utilizado para generar los datos de la persona `mathematical` |
@@ -92,7 +92,7 @@ La comparación se establece a nivel de modelo base y de artefactos del mismo li
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-sft-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data
 - Dataset del profesor (OpenCharacterTraining): https://huggingface.co/datasets/maius/OpenCharacterTraining-data

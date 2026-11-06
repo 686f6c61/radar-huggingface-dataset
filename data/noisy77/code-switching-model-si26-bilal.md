@@ -25,14 +25,14 @@ La relevancia de este modelo radica en que el code-switching roman urdu-inglés 
 
 El modelo se basa en XLM-RoBERTa, un transformer encoder preentrenado de forma autosupervisada sobre datos multilingües a gran escala (CommonCrawl en 100 idiomas). La arquitectura es la de un transformer estándar con atención bidireccional, sin mecanismos de decodificación. El número de parámetros (277M) es consistente con la variante base de XLM-RoBERTa (que tiene aproximadamente 270M) más un head de clasificación de tokens añadido para la tarea específica.
 
-No se dispone de información pública sobre el proceso de fine-tuning: ni el dataset de entrenamiento, ni el número de épocas, ni las hiperparametros, ni si se utilizó alguna técnica de regularización o aumento de datos. El tag `arxiv:1910.09700` en HuggingFace hace referencia al paper de XLM-RoBERTa, lo que confirma la arquitectura base, pero no aporta detalles sobre el entrenamiento específico de este modelo.
+No se dispone de información pública sobre el proceso de fine-tuning: ni el dataset de entrenamiento, ni el número de épocas, ni las hiperparametros, ni si se utilizó alguna técnica de regularización o aumento de datos. El tag `arxiv:1910.09700` en Hugging Face hace referencia al paper de XLM-RoBERTa, lo que confirma la arquitectura base, pero no aporta detalles sobre el entrenamiento específico de este modelo.
 
 ## Capacidades
 
 - Clasificación de tokens para identificar el idioma de cada palabra en texto con code-switching roman urdu-inglés.
 - Etiquetado secuencial de secuencias de texto (token-level classification).
 - Inferencia sobre texto de longitud variable hasta 512 tokens.
-- Compatible con la librería `transformers` de HuggingFace y con pipelines de token-classification.
+- Compatible con la librería `transformers` de Hugging Face y con pipelines de token-classification.
 - No se documentan capacidades adicionales como generación de texto, razonamiento, tool calling o soporte de agentes.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: el modelo tiene 277M parámetros. En fp32 (1,1 GB) cabe en cualquier GPU con al menos 2 GB de VRAM. En fp16 o int8, el uso de memoria se reduce a aproximadamente 550 MB y 280 MB respectivamente.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 6GB o superior, RTX 3060, etc.) es suficiente. También puede ejecutarse en CPU con razonable velocidad para inferencia por lotes pequeños.
 - Cabe en GPUs consumer: sí, incluso en las más modestas.
-- Opciones de despliegue: al ser un modelo de la familia `transformers`, puede servirse con HuggingFace Inference Endpoints, o mediante frameworks como vLLM (aunque no es óptimo para encoder-only), o más adecuadamente con `pipeline` de transformers, ONNX Runtime o TensorRT. Para CPU, se puede usar `optimum` con cuantización dinámica.
+- Opciones de despliegue: al ser un modelo de la familia `transformers`, puede servirse con Hugging Face Inference Endpoints, o mediante frameworks como vLLM (aunque no es óptimo para encoder-only), o más adecuadamente con `pipeline` de transformers, ONNX Runtime o TensorRT. Para CPU, se puede usar `optimum` con cuantización dinámica.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de este tamaño, la inferencia en GPU suele ser del orden de milisegundos por secuencia corta (menos de 100 ms en una RTX 3060), pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables específicos para code-s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Noisy77/code-switching-model-si26-bilal
+- Modelo en Hugging Face: https://huggingface.co/Noisy77/code-switching-model-si26-bilal
 - Dataset asociado: https://huggingface.co/datasets/Noisy77/code-switching-codesaviours-si26-bilal
 - Perfil del autor: https://huggingface.co/Noisy77
 - Repositorio relacionado (proyecto similar de otro autor): https://github.com/sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-

@@ -75,7 +75,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DraconicDragon/NAFNet-VAE-DeGrid
+- Modelo en Hugging Face: https://huggingface.co/DraconicDragon/NAFNet-VAE-DeGrid
 - Repositorio NAFNet original (Megvii Research): https://github.com/megvii-research/nafnet
 - Nodos custom para ComfyUI: https://github.com/DraconicDragon/ComfyUI-NAFNet-Residual
 - Código de entrenamiento (NAFNet-c): https://github.com/DraconicDragon/NAFNet-c

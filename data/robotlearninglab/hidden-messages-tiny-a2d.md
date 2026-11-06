@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hidden Messages Tiny-A2D | Adaptador de canal latente sobre backbone de difusión | No disponible (backbone ~0,6 B) | No disponible | Apache-2.0 | HuggingFace (solo adaptador) |
-| Backbone Qwen3-0.6B-diffusion-mdlm-v0.1 | Modelo de difusión | ~0,6 B | No disponible | No disponible | HuggingFace (`dllm-hub`) |
+| Hidden Messages Tiny-A2D | Adaptador de canal latente sobre backbone de difusión | No disponible (backbone ~0,6 B) | No disponible | Apache-2.0 | Hugging Face (solo adaptador) |
+| Backbone Qwen3-0.6B-diffusion-mdlm-v0.1 | Modelo de difusión | ~0,6 B | No disponible | No disponible | Hugging Face (`dllm-hub`) |
 | Adaptador Dream QASC del mismo grupo | Adaptador de canal para otra tarea | No disponible | No disponible | No disponible | Repositorio de código del grupo |
 
 La comparación con modelos de lenguaje convencionales no es pertinente: este artefacto no compite en generación de texto. El autor advierte explícitamente que no debe asumirse intercambiable con el adaptador Dream QASC.
@@ -87,7 +87,7 @@ La comparación con modelos de lenguaje convencionales no es pertinente: este ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RobotLearningLab/hidden-messages-tiny-a2d
+- Hugging Face: https://huggingface.co/RobotLearningLab/hidden-messages-tiny-a2d
 - Artículo (arXiv): https://arxiv.org/abs/2610.28905
 - Repositorio de código: https://github.com/alanrbtx/hidden-messages-diffusion-agents/tree/1d1477b423ba4245b564840ce46aee039c79bcc8
 - Script de la tarea: https://github.com/alanrbtx/hidden-messages-diffusion-agents/blob/1d1477b423ba4245b564840ce46aee039c79bcc8/code/scripts/phase5_hm_synth_tiny.py

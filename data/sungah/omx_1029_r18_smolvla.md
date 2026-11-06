@@ -77,10 +77,10 @@ La tasa de exito en robot real no se ha medido segun la model card.
 
 | Modelo | Familia | Parametros | Contexto / chunk | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OMX 1029 r18 SmolVLA (ACT) | ACT + ResNet18 | no disponible | chunk 100 | 2 camaras + estado 7 (o 12 con fase) + profundidad opcional | Apache 2.0 | HuggingFace, repo 6,9 GB |
-| OMX 1029 r18 SmolVLA (SmolVLA) | SmolVLA sobre SmolVLM2-500M | 500M (backbone) | chunk 50 | 2 camaras + estado 7 + instruccion por fase | Apache 2.0 | HuggingFace |
+| OMX 1029 r18 SmolVLA (ACT) | ACT + ResNet18 | no disponible | chunk 100 | 2 camaras + estado 7 (o 12 con fase) + profundidad opcional | Apache 2.0 | Hugging Face, repo 6,9 GB |
+| OMX 1029 r18 SmolVLA (SmolVLA) | SmolVLA sobre SmolVLM2-500M | 500M (backbone) | chunk 50 | 2 camaras + estado 7 + instruccion por fase | Apache 2.0 | Hugging Face |
 | LeRobot ACT (referencia) | ACT | no disponible | configurable | camaras + estado | Apache 2.0 | LeRobot |
-| LeRobot SmolVLA base | SmolVLA | 500M (backbone) | configurable | camaras + estado + instruccion | Apache 2.0 | HuggingFace (`lerobot/smolvla_base`) |
+| LeRobot SmolVLA base | SmolVLA | 500M (backbone) | configurable | camaras + estado + instruccion | Apache 2.0 | Hugging Face (`lerobot/smolvla_base`) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada; la comparacion se limita a arquitectura, entradas y licencia.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sungah/omx_1029_r18_smolvla
+- Modelo en Hugging Face: https://huggingface.co/Sungah/omx_1029_r18_smolvla
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sungah/omx_1029_Sungah_v1_success
 - SmolVLA base: https://huggingface.co/lerobot/smolvla_base
 - Backbone de SmolVLA: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct

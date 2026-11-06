@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 - VRAM estimada: el adaptador LoRA ocupa 0,4 GB, pero el modelo completo (7B) requiere entre 14 y 16 GB en FP16 para inferencia, o entre 6 y 8 GB con cuantizacion de 4 bits.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para inferencia en FP16; A100 (40/80 GB) o H100 para despliegue en produccion con multiples peticiones concurrentes.
 - Compatibilidad con GPU de consumo: si, una RTX 3060 de 12 GB puede ejecutar el modelo con cuantizacion de 4 bits, aunque con latencia mayor.
-- Opciones de despliegue: el modelo se carga con el codigo de LLaVA (llava.model.builder), por lo que es compatible con los frameworks que soporten LLaVA, como vLLM (con adaptaciones), Transformers de HuggingFace y el propio repositorio de LLaVA. No hay soporte nativo para llama.cpp u Ollama sin conversion manual.
+- Opciones de despliegue: el modelo se carga con el codigo de LLaVA (llava.model.builder), por lo que es compatible con los frameworks que soporten LLaVA, como vLLM (con adaptaciones), Transformers de Hugging Face y el propio repositorio de LLaVA. No hay soporte nativo para llama.cpp u Ollama sin conversion manual.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ RS-LLaVA se diferencia de LLaVA-1.5 por su entrenamiento especifico en datasets 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdshivam/RS-llava-v1.5-7b-LoRA
+- Modelo en Hugging Face: https://huggingface.co/kdshivam/RS-llava-v1.5-7b-LoRA
 - Modelo original (BigData-KSU): https://huggingface.co/BigData-KSU/RS-llava-v1.5-7b-LoRA
 - Repositorio GitHub: https://github.com/BigData-KSU/RS-LLaVA
 - Articulo cientifico (MDPI Remote Sensing): https://www.mdpi.com/2072-4292/16/9/1477

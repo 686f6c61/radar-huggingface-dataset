@@ -54,5 +54,5 @@ No disponible. No se pueden comparar este modelo con otros porque no se conoce s
 
 ## Enlaces
 
-- HuggingFace: [lauraxijia/qwen7b-a1null-badmed-seed0](https://huggingface.co/lauraxijia/qwen7b-a1null-badmed-seed0)
+- Hugging Face: [lauraxijia/qwen7b-a1null-badmed-seed0](https://huggingface.co/lauraxijia/qwen7b-a1null-badmed-seed0)
 - No se encontraron otros enlaces relevantes (papers, repos, demos) en los resultados de búsqueda web.

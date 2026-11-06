@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos, por lo que la comparacion se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atomic-Germ/Medgemma-4B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/Atomic-Germ/Medgemma-4B-NPU2
 - Modelo base declarado: https://huggingface.co/google/gemma-3-4b-pt
 - Referencia al GGUF de origen (mradermacher): `mradermacher/medgemma-4b-it-i1-GGUF` (citado en la model card)
 - Runtime OpenFlowLM: no se proporciona URL en la informacion disponible

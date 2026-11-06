@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`papylove/alpaca-model` es un artefacto alojado en HuggingFace por el usuario papylove, publicado el 2 de agosto de 2026 y actualizado por última vez el 16 de septiembre de 2026. El repositorio no incluye model card, ni licencia declarada, ni idiomas soportados, ni pipeline de inferencia asociado. La única etiqueta técnica publicada es `joblib`, el formato de serialización que utiliza la librería scikit-learn para persistir pipelines completos (vectorizadores, transformadores y estimadores) en Python.
+`papylove/alpaca-model` es un artefacto alojado en Hugging Face por el usuario papylove, publicado el 2 de agosto de 2026 y actualizado por última vez el 16 de septiembre de 2026. El repositorio no incluye model card, ni licencia declarada, ni idiomas soportados, ni pipeline de inferencia asociado. La única etiqueta técnica publicada es `joblib`, el formato de serialización que utiliza la librería scikit-learn para persistir pipelines completos (vectorizadores, transformadores y estimadores) en Python.
 
 El tamaño del repositorio es de 0,1 GB, un orden de magnitud propio de un pipeline de machine learning clásico o de un modelo pequeño, y muy alejado de los pesos de un transformer de gran escala. El nombre del repositorio evoca la familia de modelos Alpaca (ajuste fino sobre instrucciones), pero no existe ninguna evidencia en la información disponible que confirme esa relación: no hay arquitectura declarada, ni recuento de parámetros, ni documentación de entrenamiento.
 
@@ -77,7 +77,7 @@ No disponible. No se ha identificado ningún modelo comparable porque se descono
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| papylove/alpaca-model | no disponible | no disponible | no disponible | joblib | pública en HuggingFace, 0 descargas |
+| papylove/alpaca-model | no disponible | no disponible | no disponible | joblib | pública en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No disponible. No se ha identificado ningún modelo comparable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/papylove/alpaca-model
+- Hugging Face: https://huggingface.co/papylove/alpaca-model
 - Resultados de la búsqueda web: no se encontraron enlaces relevantes. Los resultados devueltos corresponden a páginas de Google Translate (translate.google.com, Google Play, Chrome Web Store) y no guardan relación alguna con el modelo.
 - Paper, blog, repositorio o demo oficiales: no disponible.

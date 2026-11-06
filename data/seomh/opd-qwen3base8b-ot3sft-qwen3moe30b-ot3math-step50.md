@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step50` es un checkpoint publicado en HuggingFace por el usuario `seomh`. Se trata de un modelo con 8.190.735.360 parametros almacenados en formato safetensors (aproximadamente 8,19 mil millones), lo que corresponde a un transformer denso de la familia Qwen3 segun el identificador del repositorio. El repositorio ocupa 16,4 GB, un tamano coherente con pesos en bfloat16 sin cuantizar.
+El modelo `seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step50` es un checkpoint publicado en Hugging Face por el usuario `seomh`. Se trata de un modelo con 8.190.735.360 parametros almacenados en formato safetensors (aproximadamente 8,19 mil millones), lo que corresponde a un transformer denso de la familia Qwen3 segun el identificador del repositorio. El repositorio ocupa 16,4 GB, un tamano coherente con pesos en bfloat16 sin cuantizar.
 
 El nombre del checkpoint sugiere un proceso experimental de destilacion, fusion o ajuste supervisado que combina componentes etiquetados como `qwen3base8b`, `ot3sft`, `qwen3moe30b` y `ot3math`, con un contador de `step50`. Esta lectura es una inferencia a partir de la nomenclatura y no esta confirmada por ninguna model card, paper o documentacion asociada en la informacion disponible.
 
@@ -48,7 +48,7 @@ No es posible recomendar casos de uso en produccion con la informacion disponibl
 - Evaluacion comparativa de checkpoints intermedios: permite medir el efecto de un numero reducido de pasos de ajuste sobre una base de 8B.
 - Pruebas de generacion de texto en ingles o chino: solo si se confirma que hereda el tokenizador y los idiomas de Qwen3.
 - Experimentos de matematicas: el sufijo `ot3math` sugiere un enfasis en esta area, pero no hay evidencia de resultados.
-- Auditoria de artefactos publicados en HuggingFace: caso de estudio sobre repositorios sin model card ni licencia declarada.
+- Auditoria de artefactos publicados en Hugging Face: caso de estudio sobre repositorios sin model card ni licencia declarada.
 
 En ningun caso se recomienda su uso en atencion al cliente, generacion de codigo en produccion, pipelines de CI/CD o cualquier aplicacion comercial sin una evaluacion exhaustiva y una licencia clara.
 
@@ -72,7 +72,7 @@ La informacion proporcionada no incluye datos de modelos comparables. Como refer
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step50 | 8,19 mil millones | no disponible | no disponible | safetensors en HuggingFace |
+| seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step50 | 8,19 mil millones | no disponible | no disponible | safetensors en Hugging Face |
 | Qwen3-8B | no disponible en esta ficha | no disponible | no disponible | no disponible |
 | Llama 3.1 8B | no disponible en esta ficha | no disponible | no disponible | no disponible |
 
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento que permitan establecer una comparacion cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step50
+- Hugging Face: https://huggingface.co/seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step50
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

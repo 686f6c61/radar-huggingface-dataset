@@ -92,7 +92,7 @@ La comparacion cuantitativa con alternativas como MPNet, BGE-small o E5-small no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EIDORA/MiniLM_L6_v2_Text
+- Modelo en Hugging Face: https://huggingface.co/EIDORA/MiniLM_L6_v2_Text
 - Checkpoint base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Revision fijada del checkpoint base: `1110a243fdf4706b3f48f1d95db1a4f5529b4d41`
 - Paper Sentence-BERT: https://aclanthology.org/D19-1410/

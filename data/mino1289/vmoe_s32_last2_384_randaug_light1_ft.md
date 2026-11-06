@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vmoe_s32_last2_384_randaug_light1_ft`, publicado por el usuario Mino1289 en HuggingFace, es una conversión a la librería `timm` de los pesos de V-MoE (Vision Mixture of Experts) de Google Research. Se trata de un clasificador de imágenes, no de un modelo de lenguaje: recibe una imagen y devuelve una distribución sobre las 1.000 clases de ILSVRC2012 (ImageNet-1k). El checkpoint procede del bucket `gs://vmoe_checkpoints/vmoe_s32_last2_ilsvrc2012_randaug_light1_ft_ilsvrc2012` y se ha reempaquetado en formato `safetensors` con la interfaz estándar de `timm`.
+El modelo `vmoe_s32_last2_384_randaug_light1_ft`, publicado por el usuario Mino1289 en Hugging Face, es una conversión a la librería `timm` de los pesos de V-MoE (Vision Mixture of Experts) de Google Research. Se trata de un clasificador de imágenes, no de un modelo de lenguaje: recibe una imagen y devuelve una distribución sobre las 1.000 clases de ILSVRC2012 (ImageNet-1k). El checkpoint procede del bucket `gs://vmoe_checkpoints/vmoe_s32_last2_ilsvrc2012_randaug_light1_ft_ilsvrc2012` y se ha reempaquetado en formato `safetensors` con la interfaz estándar de `timm`.
 
 La arquitectura es un Vision Transformer con parches de 32x32 píxeles (de ahí el sufijo `s32`) en el que parte de las capas de feed-forward se sustituyen por capas de mezcla dispersa de expertos (sparse MoE). El checkpoint está afinado a una resolución de entrada de 384x384 píxeles y emplea un esquema de aumento de datos RandAugment "light" (`light1`). El número total de parámetros asciende a 56.785.384 (aproximadamente 227 MB en fp32), lo que lo sitúa en la gama de los clasificadores ligeros.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Resolucion / parches | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vmoe_s32_last2_384_randaug_light1_ft | 56,8 M (totales; activos no disponibles) | 384x384, parche 32 | ViT con MoE disperso | apache-2.0 | HuggingFace, via `timm` |
-| ViT-S/32 (timm) | ~22 M | 224x224 tipico, parche 32 | ViT denso | apache-2.0 (segun variante) | `timm` / HuggingFace |
-| DeiT-Small/16 | ~22 M | 224x224, parche 16 | ViT denso con destilacion | apache-2.0 | `timm` / HuggingFace |
+| vmoe_s32_last2_384_randaug_light1_ft | 56,8 M (totales; activos no disponibles) | 384x384, parche 32 | ViT con MoE disperso | apache-2.0 | Hugging Face, via `timm` |
+| ViT-S/32 (timm) | ~22 M | 224x224 tipico, parche 32 | ViT denso | apache-2.0 (segun variante) | `timm` / Hugging Face |
+| DeiT-Small/16 | ~22 M | 224x224, parche 16 | ViT denso con destilacion | apache-2.0 | `timm` / Hugging Face |
 | ResNet-50 | ~25,6 M | 224x224 | CNN | apache-2.0 (variante torchvision) | Amplia |
 
 La comparacion cuantitativa de rendimiento no es posible con la informacion disponible: no hay exactitud top-1 ni top-5 para el checkpoint V-MoE convertido ni datos publicados en su ficha. Como referencia cualitativa, el modelo aqui descrito tiene mas parametros totales que un ViT-S o un ResNet-50, pero al ser MoE solo activa una fraccion por token, de modo que su coste por imagen puede ser comparable al de un ViT-S denso. Los valores concretos de parametros activos, FLOPs y exactitud figuran como no disponibles.
@@ -90,7 +90,7 @@ La comparacion cuantitativa de rendimiento no es posible con la informacion disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mino1289/vmoe_s32_last2_384_randaug_light1_ft
+- Modelo en Hugging Face: https://huggingface.co/Mino1289/vmoe_s32_last2_384_randaug_light1_ft
 - Repositorio oficial de V-MoE (Google Research): https://github.com/google-research/vmoe
 - Libreria `timm` (pytorch-image-models): https://github.com/huggingface/pytorch-image-models
 - Documentacion de `timm` sobre modelos V-MoE: https://huggingface.co/docs/timm

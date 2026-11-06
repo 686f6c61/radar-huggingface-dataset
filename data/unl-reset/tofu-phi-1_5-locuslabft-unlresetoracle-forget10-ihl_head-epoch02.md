@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch02` | 1,42B | no disponible | apache-2.0 | HuggingFace, 0 descargas | Checkpoint experimental de unlearning |
-| `locuslab/tofu_ft_phi-1.5` | ~1,4B | no disponible | no disponible | HuggingFace | Modelo base ajustado sobre TOFU |
-| `microsoft/phi-1_5` | 1,3B | 2048 | MIT (según modelo original) | HuggingFace | Modelo original de Microsoft |
-| `microsoft/phi-2` | 2,7B | 2048 | MIT | HuggingFace | Sucesor de mayor tamaño |
+| `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch02` | 1,42B | no disponible | apache-2.0 | Hugging Face, 0 descargas | Checkpoint experimental de unlearning |
+| `locuslab/tofu_ft_phi-1.5` | ~1,4B | no disponible | no disponible | Hugging Face | Modelo base ajustado sobre TOFU |
+| `microsoft/phi-1_5` | 1,3B | 2048 | MIT (según modelo original) | Hugging Face | Modelo original de Microsoft |
+| `microsoft/phi-2` | 2,7B | 2048 | MIT | Hugging Face | Sucesor de mayor tamaño |
 
 La comparación relevante es metodológica: este checkpoint se distingue de `locuslab/tofu_ft_phi-1.5` por la reinicialización de embeddings y cabeza LM y por el objetivo de pérdida con IHL, y de `microsoft/phi-1_5` por el ajuste sobre TOFU. No hay datos de rendimiento publicados que permitan comparar métricas de olvido o retención.
 
@@ -85,7 +85,7 @@ La comparación relevante es metodológica: este checkpoint se distingue de `loc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch02
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch02
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - TOFU (paper): no disponible en la informacion proporcionada

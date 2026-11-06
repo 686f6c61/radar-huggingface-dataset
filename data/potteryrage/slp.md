@@ -65,5 +65,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: potteryrage/SLp](https://huggingface.co/potteryrage/SLp)
-- [Perfil del autor en HuggingFace](https://huggingface.co/potteryrage)
+- [Hugging Face: potteryrage/SLp](https://huggingface.co/potteryrage/SLp)
+- [Perfil del autor en Hugging Face](https://huggingface.co/potteryrage)

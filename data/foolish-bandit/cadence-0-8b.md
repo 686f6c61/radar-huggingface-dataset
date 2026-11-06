@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cadence 0.8b es un modelo publicado en HuggingFace por el usuario foolish-bandit bajo licencia Apache 2.0. El identificador del repositorio sugiere un tamano aproximado de 0,8 mil millones de parametros, aunque la model card no confirma esta cifra ni aporta ninguna especificacion adicional: el unico contenido publicado es la declaracion de licencia. No se dispone de informacion sobre arquitectura, datos de entrenamiento, tokenizador, ventana de contexto ni idiomas soportados.
+Cadence 0.8b es un modelo publicado en Hugging Face por el usuario foolish-bandit bajo licencia Apache 2.0. El identificador del repositorio sugiere un tamano aproximado de 0,8 mil millones de parametros, aunque la model card no confirma esta cifra ni aporta ninguna especificacion adicional: el unico contenido publicado es la declaracion de licencia. No se dispone de informacion sobre arquitectura, datos de entrenamiento, tokenizador, ventana de contexto ni idiomas soportados.
 
 La relevancia de la ficha es, por tanto, limitada y de caracter documental: se trata de un repositorio creado el 13 de octubre de 2026 y actualizado seis segundos despues, con cero descargas y cero "likes" en el momento de la consulta. No hay evidencia de que el modelo haya sido entrenado, evaluado o publicado con pesos utilizables; la ausencia de pipeline declarado y de ficheros descritos en la model card impide confirmar siquiera que el repositorio contenga artefactos de inferencia.
 
@@ -87,7 +87,7 @@ La comparacion de rendimiento (MMLU, HumanEval, GSM8K) no esta disponible para C
 - Riesgo de que el repositorio no contenga pesos utilizables; conviene inspeccionar el arbol de ficheros antes de cualquier descarga.
 - Sesgos conocidos: no disponibles, precisamente por la falta de informacion sobre los datos de entrenamiento.
 - Riesgo de alucinacion: no evaluado. Sin benchmarks ni evaluaciones de seguridad no puede acotarse.
-- Limitaciones de contexto e idioma: no disponibles; el campo de idiomas esta vacio en los metadatos de HuggingFace.
+- Limitaciones de contexto e idioma: no disponibles; el campo de idiomas esta vacio en los metadatos de Hugging Face.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero se aplica al repositorio tal cual, sin garantias del autor sobre el contenido o el comportamiento del modelo.
 - Trazabilidad: el autor no tiene historial verificable en la informacion proporcionada, y el repositorio acumula cero descargas, por lo que no existe comunidad que haya validado su funcionamiento.
 - Riesgo de cadena de suministro: al no haber formatos ni hashes publicados, no puede verificarse la integridad de los artefactos.
@@ -95,7 +95,7 @@ La comparacion de rendimiento (MMLU, HumanEval, GSM8K) no esta disponible para C
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/foolish-bandit/cadence-0.8b
+- Hugging Face: https://huggingface.co/foolish-bandit/cadence-0.8b
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

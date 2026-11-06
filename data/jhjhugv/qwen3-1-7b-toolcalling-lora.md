@@ -69,6 +69,6 @@ No disponible. No se han identificado en la información proporcionada otros ada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Jhjhugv/Qwen3-1.7B-ToolCalling-LoRA](https://huggingface.co/Jhjhugv/Qwen3-1.7B-ToolCalling-LoRA)
-- Modelo base en HuggingFace: [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
+- Repositorio en Hugging Face: [Jhjhugv/Qwen3-1.7B-ToolCalling-LoRA](https://huggingface.co/Jhjhugv/Qwen3-1.7B-ToolCalling-LoRA)
+- Modelo base en Hugging Face: [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - Documentación sobre function calling en Qwen3: [DeepWiki - Function Calling and Tool Use](https://deepwiki.com/QwenLM/Qwen3/4.3-function-calling-and-tool-use)

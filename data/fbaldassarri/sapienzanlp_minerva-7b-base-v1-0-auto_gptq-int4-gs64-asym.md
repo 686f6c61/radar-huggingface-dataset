@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-asym | 7B (nombre) / 1,41B reportado en safetensors | no disponible | INT4 GPTQ gs64 asimetrica | Apache 2.0 | HuggingFace |
-| sapienzanlp/Minerva-7B-base-v1.0 | 7B | no disponible | sin cuantizar | no disponible en esta informacion | HuggingFace |
-| Otras variantes de cuantizacion del mismo base | 7B | no disponible | otras (no disponibles) | Apache 2.0 (del repo) | HuggingFace |
+| fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-asym | 7B (nombre) / 1,41B reportado en safetensors | no disponible | INT4 GPTQ gs64 asimetrica | Apache 2.0 | Hugging Face |
+| sapienzanlp/Minerva-7B-base-v1.0 | 7B | no disponible | sin cuantizar | no disponible en esta informacion | Hugging Face |
+| Otras variantes de cuantizacion del mismo base | 7B | no disponible | otras (no disponibles) | Apache 2.0 (del repo) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion proporcionada, por lo que la comparacion se limita a parametros, formato y licencia. Alternativas de otros desarrolladores en la misma categoria (LLM italianos de ~7B) no se detallan en la informacion disponible.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-asym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-asym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - auto-round-pipeline (repositorio de orquestacion): https://git.epicdynamic.com/auto-round-pipeline

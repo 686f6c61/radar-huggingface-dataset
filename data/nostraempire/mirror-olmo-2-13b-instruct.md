@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en FP16: aproximadamente 27,4 GB (tamano del repo en safetensors), por lo que se necesita una GPU con al menos 32 GB (por ejemplo, A100 40GB, V100 32GB) o dos GPUs de 16 GB en paralelo.
 - Con cuantizacion de 8 bits (bitsandbytes), la VRAM necesaria se reduce a unos 14 GB, lo que permite ejecutarlo en una RTX 4090 (24 GB) o RTX 3090 (24 GB).
 - Con cuantizacion de 4 bits, la VRAM baja a unos 7-8 GB, haciendolo viable en GPUs de consumo como RTX 3060 (12 GB) o RTX 4070 (12 GB).
-- Opciones de despliegue: compatible con transformers (HuggingFace), vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama (mediante importacion).
+- Opciones de despliegue: compatible con transformers (Hugging Face), vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama (mediante importacion).
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; dependen del hardware y del framework utilizado.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ La comparativa se basa en parametros y licencia, ya que no se dispone de datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace (mirror): https://huggingface.co/NostraEmpire/mirror-olmo-2-13b-instruct
-- Modelo original en HuggingFace: https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct
+- Modelo en Hugging Face (mirror): https://huggingface.co/NostraEmpire/mirror-olmo-2-13b-instruct
+- Modelo original en Hugging Face: https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-13B
 - Pagina del proyecto OLMo: https://allenai.org/olmo2
 - Repositorio de entrenamiento: https://github.com/allenai/OLMo

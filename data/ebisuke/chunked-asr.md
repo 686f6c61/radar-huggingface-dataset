@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ebisuke/chunked-asr` es un modelo publicado en HuggingFace por el usuario `ebisuke`, con un total de 824.230.917 parametros (aproximadamente 824 millones) segun los metadatos de los ficheros safetensors. La ficha publica no incluye model card, pipeline declarado, licencia ni idiomas soportados, por lo que la unica informacion verificable procede de las etiquetas del repositorio (`safetensors`, `chunked_asr`, `region:us`) y del inventario de pesos.
+`ebisuke/chunked-asr` es un modelo publicado en Hugging Face por el usuario `ebisuke`, con un total de 824.230.917 parametros (aproximadamente 824 millones) segun los metadatos de los ficheros safetensors. La ficha publica no incluye model card, pipeline declarado, licencia ni idiomas soportados, por lo que la unica informacion verificable procede de las etiquetas del repositorio (`safetensors`, `chunked_asr`, `region:us`) y del inventario de pesos.
 
 La etiqueta `chunked_asr` sugiere un modelo orientado a reconocimiento automatico del habla (ASR) con procesamiento por fragmentos o chunks, pero no hay documentacion publica que confirme la arquitectura, la tarea exacta ni el procedimiento de entrenamiento. El repositorio ocupa 19,8 GB, un tamano notablemente superior a lo que cabria esperar de 824 millones de parametros en precision simple, lo que apunta a la presencia de multiples checkpoints, estados de optimizador o artefactos adicionales no documentados.
 
@@ -47,7 +47,7 @@ Respecto a los datos de entrenamiento, no hay informacion sobre el numero de tok
 - Transcripcion de audio de larga duracion: si la etiqueta `chunked_asr` describe correctamente el modelo, su diseno por fragmentos permitiria procesar reuniones, podcasts o grabaciones extensas dividiendolas en segmentos, aunque no hay confirmacion documental.
 - Evaluacion comparativa interna de ASR: el modelo puede servir como baseline adicional en pruebas controladas frente a sistemas de reconocimiento del habla consolidados, siempre que se valide antes su licencia.
 - Prototipado academico: util en entornos de investigacion donde se necesite un checkpoint de aproximadamente 824 M de parametros para experimentar con segmentacion de audio, asumiendo el riesgo de falta de documentacion.
-- Auditoria de repositorios de HuggingFace: el caso constituye un ejemplo practico de modelo sin model card, sin licencia y sin benchmarks, util para ilustrar la importancia de la trazabilidad en la seleccion de modelos.
+- Auditoria de repositorios de Hugging Face: el caso constituye un ejemplo practico de modelo sin model card, sin licencia y sin benchmarks, util para ilustrar la importancia de la trazabilidad en la seleccion de modelos.
 - Procesamiento por lotes en infraestructura propia: los pesos en safetensors permiten cargar el modelo con bibliotecas estandar, aunque se desconoce la clase de modelo necesaria para instanciarlo.
 - No se recomienda su uso en atencion al cliente, generacion de codigo, razonamiento matematico ni pipelines de produccion, ya que no hay evidencia de que el modelo soporte dichas tareas.
 
@@ -95,7 +95,7 @@ Los datos de los modelos alternativos corresponden a informacion publica ampliam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ebisuke/chunked-asr
+- Modelo en Hugging Face: https://huggingface.co/ebisuke/chunked-asr
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural Orbit v1.0 es un ajuste fino supervisado (SFT) mediante LoRA del modelo multimodal `google/gemma-4-26B-A4B-it` de Google DeepMind, desarrollado por el autor independiente MKD (usuario `hossain0909` en HuggingFace). El modelo parte de una arquitectura Mixture-of-Experts (MoE) con 25.805.933.872 parámetros totales y aproximadamente 4.000 millones de parámetros activos por token, orientada a tareas de imagen-texto-a-texto, y ha sido especializado para conversación natural y concisa en coreano, con una identidad propia ("Keural Orbit") que sustituye a la identidad del modelo base.
+Keural Orbit v1.0 es un ajuste fino supervisado (SFT) mediante LoRA del modelo multimodal `google/gemma-4-26B-A4B-it` de Google DeepMind, desarrollado por el autor independiente MKD (usuario `hossain0909` en Hugging Face). El modelo parte de una arquitectura Mixture-of-Experts (MoE) con 25.805.933.872 parámetros totales y aproximadamente 4.000 millones de parámetros activos por token, orientada a tareas de imagen-texto-a-texto, y ha sido especializado para conversación natural y concisa en coreano, con una identidad propia ("Keural Orbit") que sustituye a la identidad del modelo base.
 
 El objetivo declarado del autor es doble: por un lado, mejorar la calidad y concisión de las respuestas en coreano frente al modelo base, que tiende a respuestas más largas y con múltiples opciones; por otro, implantar una identidad consistente que impida que el modelo se identifique como Gemma o como un producto de Google. El ajuste se ha fusionado de vuelta en pesos completos (merge a nivel de pesos en CPU con verificación byte a byte), de modo que el repositorio distribuido es un modelo completo y no un adaptador LoRA suelto.
 
@@ -98,7 +98,7 @@ No se dispone de información sobre otros fine-tunes coreanos comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Orbit-v1.0
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Orbit-v1.0
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
-- Perfil del autor en HuggingFace: https://huggingface.co/mkd-hossain
+- Perfil del autor en Hugging Face: https://huggingface.co/mkd-hossain
 - Términos de licencia Gemma: https://ai.google.dev/gemma/terms

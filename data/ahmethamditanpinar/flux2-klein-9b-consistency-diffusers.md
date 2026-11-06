@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux2-Klein-9B-Consistency-diffusers es un adaptador LoRA para el modelo de generación de imágenes FLUX.2 [klein] 9B de Black Forest Labs, publicado por el usuario ahmethamditanpinar en HuggingFace. No se trata de un modelo completo, sino de un LoRA de "consistencia" (versión 2) cuyo autor original es dx8152, redistribuido aquí con los nombres de capas convertidos del formato nativo de Black Forest Labs al formato de Diffusers. El propósito declarado es permitir la carga del adaptador directamente con la librería `diffusers` sin necesidad de renombrar capas manualmente.
+Flux2-Klein-9B-Consistency-diffusers es un adaptador LoRA para el modelo de generación de imágenes FLUX.2 [klein] 9B de Black Forest Labs, publicado por el usuario ahmethamditanpinar en Hugging Face. No se trata de un modelo completo, sino de un LoRA de "consistencia" (versión 2) cuyo autor original es dx8152, redistribuido aquí con los nombres de capas convertidos del formato nativo de Black Forest Labs al formato de Diffusers. El propósito declarado es permitir la carga del adaptador directamente con la librería `diffusers` sin necesidad de renombrar capas manualmente.
 
 El repositorio es una conversión puramente mecánica: los pesos son idénticos a los del LoRA original `Flux2-Klein-9B-consistency-V2.safetensors`, y la única transformación aplicada es el renombrado de capas (`diffusion_model.double_blocks...` a `transformer.transformer_blocks...`) mediante la utilidad `_convert_non_diffusers_flux2_lora_to_diffusers` de Diffusers, que además separa las capas fusionadas de query-key-value en capas independientes de query, key y value. La licencia es Apache 2.0, heredada del trabajo original.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Modelo base | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Flux2-Klein-9B-Consistency-diffusers (este) | LoRA convertido a Diffusers | FLUX.2 [klein] 9B | Apache 2.0 | safetensors (Diffusers) | HuggingFace |
-| dx8152/Flux2-Klein-9B-Consistency | LoRA original | FLUX.2 [klein] 9B | Apache 2.0 | safetensors (formato BFL) | HuggingFace |
-| black-forest-labs/FLUX.2-klein-9B | Modelo base completo | no aplica | no disponible en la información | no disponible en la información | HuggingFace |
+| Flux2-Klein-9B-Consistency-diffusers (este) | LoRA convertido a Diffusers | FLUX.2 [klein] 9B | Apache 2.0 | safetensors (Diffusers) | Hugging Face |
+| dx8152/Flux2-Klein-9B-Consistency | LoRA original | FLUX.2 [klein] 9B | Apache 2.0 | safetensors (formato BFL) | Hugging Face |
+| black-forest-labs/FLUX.2-klein-9B | Modelo base completo | no aplica | no disponible en la información | no disponible en la información | Hugging Face |
 
 La diferencia principal frente al LoRA original es exclusivamente el esquema de nombres de capas y la separación de las proyecciones query-key-value; los pesos son idénticos. Frente al modelo base, este repositorio no sustituye al modelo completo, sino que requiere cargarlo junto con el adaptador.
 
@@ -78,6 +78,6 @@ La diferencia principal frente al LoRA original es exclusivamente el esquema de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ahmethamditanpinar/Flux2-Klein-9B-Consistency-diffusers
+- Repositorio Hugging Face: https://huggingface.co/ahmethamditanpinar/Flux2-Klein-9B-Consistency-diffusers
 - LoRA original de dx8152: https://huggingface.co/dx8152/Flux2-Klein-9B-Consistency
 - Modelo base FLUX.2 [klein] 9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B

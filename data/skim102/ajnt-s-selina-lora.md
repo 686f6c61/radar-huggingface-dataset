@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`skim102/ajnt-s-selina-lora` es un repositorio publicado en HuggingFace por el usuario `skim102` cuyo contenido público es prácticamente vacío: la model card no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. La única información verificable es la declaración de licencia (`other`, con `license_name: other` y un enlace a un fichero `LICENSE` dentro del repositorio) y el tamaño del repositorio, de 0,2 GB. El repositorio no registra descargas ni "likes" en el momento de la consulta.
+`skim102/ajnt-s-selina-lora` es un repositorio publicado en Hugging Face por el usuario `skim102` cuyo contenido público es prácticamente vacío: la model card no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. La única información verificable es la declaración de licencia (`other`, con `license_name: other` y un enlace a un fichero `LICENSE` dentro del repositorio) y el tamaño del repositorio, de 0,2 GB. El repositorio no registra descargas ni "likes" en el momento de la consulta.
 
 El sufijo `lora` del identificador sugiere que se trata de un adaptador de bajo rango (LoRA) más que de un modelo completo, pero el autor no lo confirma en ninguna parte de la ficha, por lo que no puede darse por seguro. Tampoco se especifica el modelo base sobre el que se aplicaría el adaptador, lo que impide determinar si el destino es un modelo de difusión para generación de imágenes o un modelo de lenguaje; el tamaño de 0,2 GB es compatible con ambas posibilidades.
 
@@ -81,7 +81,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce el m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skim102/ajnt-s-selina-lora | no disponible | no disponible | no disponible | other (terminos no detallados) | Publicado en HuggingFace, 0 descargas |
+| skim102/ajnt-s-selina-lora | no disponible | no disponible | no disponible | other (terminos no detallados) | Publicado en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce el m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skim102/ajnt-s-selina-lora
+- Repositorio en Hugging Face: https://huggingface.co/skim102/ajnt-s-selina-lora
 - Fichero de licencia: referenciado como `LICENSE` dentro del repositorio (ruta no confirmada en la informacion disponible).
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre el modelo. Los resultados recuperados correspondian a sitios de cupones (topkody.cz, hotdeals.com, kodyo.cz, czkupon.com, kodomat.cz) sin relacion con el repositorio.

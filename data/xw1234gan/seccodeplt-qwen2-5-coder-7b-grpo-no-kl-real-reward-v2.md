@@ -81,6 +81,6 @@ No se dispone de comparativas publicadas con otros modelos en la información pr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-reward-v2)
+- [Modelo en Hugging Face](https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-reward-v2)
 - [Dataset SecCodePLT_Plus](https://huggingface.co/datasets/fengyao1909/SecCodePLT_Plus)
 - [Modelo base Qwen2.5-Coder-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)

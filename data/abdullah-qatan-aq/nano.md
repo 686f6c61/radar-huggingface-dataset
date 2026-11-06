@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NANO es un modelo de lenguaje publicado en HuggingFace por el usuario Abdullah-Qatan-AQ bajo el identificador `Abdullah-Qatan-AQ/NANO`. Se trata de un modelo de aproximadamente 7.616 millones de parametros (7,6B), un tamano que lo situa en la categoria de los modelos densos de 7-8B ampliamente utilizados para inferencia en hardware de consumo. El repositorio incluye pesos en formato GGUF, lo que indica que esta pensado para su ejecucion mediante herramientas de inferencia optimizadas para CPU y GPU de gama media.
+NANO es un modelo de lenguaje publicado en Hugging Face por el usuario Abdullah-Qatan-AQ bajo el identificador `Abdullah-Qatan-AQ/NANO`. Se trata de un modelo de aproximadamente 7.616 millones de parametros (7,6B), un tamano que lo situa en la categoria de los modelos densos de 7-8B ampliamente utilizados para inferencia en hardware de consumo. El repositorio incluye pesos en formato GGUF, lo que indica que esta pensado para su ejecucion mediante herramientas de inferencia optimizadas para CPU y GPU de gama media.
 
 La model card publicada por el autor es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion de la arquitectura, los datos de entrenamiento, los idiomas soportados ni los resultados de evaluacion. El repositorio acumula cero descargas y cero "likes", y fue creado y actualizado el 7 de octubre de 2026, por lo que se trata de una publicacion muy reciente y sin validacion por parte de la comunidad.
 
@@ -30,7 +30,7 @@ El unico dato estructural inferible es el recuento de parametros (7,6B), que sit
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` indica que el modelo esta orientado a mantener dialogos, si bien no se documentan capacidades concretas.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse a traves de la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse a traves de la infraestructura de endpoints de Hugging Face.
 - Inferencia cuantizada: la disponibilidad de pesos GGUF permite ejecucion en CPU y GPU con cuantizaciones de bajo numero de bits.
 - Razonamiento, codigo, matematicas, vision o audio: no disponible.
 - Soporte de tool calling / function calling: no disponible.
@@ -45,7 +45,7 @@ Debido a la ausencia total de documentacion sobre capacidades reales, los siguie
 - Prototipado de asistentes conversacionales: el tag `conversational` y el tamano de 7,6B permiten usar el modelo como base para experimentar con dialogos multi-turno en entornos de desarrollo, siempre que se valide previamente la calidad de las respuestas.
 - Inferencia local en equipos de sobremesa: al ofrecer pesos GGUF, el modelo puede ejecutarse en estaciones de trabajo sin GPU dedicada mediante llama.cpp u Ollama, lo que resulta util para pruebas offline y entornos con restricciones de conectividad.
 - Generacion de texto asistida en aplicaciones internas: un modelo de 7,6B con licencia Apache 2.0 puede integrarse en herramientas corporativas de redaccion o resumen, aunque la calidad debe medirse empiricamente.
-- Despliegue en endpoints gestionados: el tag `endpoints_compatible` facilita publicar el modelo como servicio bajo demanda en HuggingFace, adecuado para demostraciones y pruebas de concepto.
+- Despliegue en endpoints gestionados: el tag `endpoints_compatible` facilita publicar el modelo como servicio bajo demanda en Hugging Face, adecuado para demostraciones y pruebas de concepto.
 - Investigacion sobre ajuste fino: su licencia permisiva y su tamano manejable lo convierten en un candidato para experimentos de fine-tuning o LoRA en tareas especificas, como clasificacion o extraccion de informacion.
 - Base para pipelines de generacion aumentada por recuperacion (RAG): un modelo de 7,6B puede actuar como generador en un sistema RAG, siempre que se verifique su comportamiento con contextos largos, ya que la longitud de contexto no esta documentada.
 - Evaluacion comparativa interna: sirve como referencia adicional en pruebas de calidad frente a otros modelos de 7-8B, aunque sin benchmark publicado su utilidad como linea base es limitada.
@@ -64,7 +64,7 @@ Las siguientes estimaciones se derivan del recuento de parametros (7,6B) y de la
 - GPU recomendadas para FP16: NVIDIA A100, H100, L40S o RTX 4090 (24 GB) para inferencia comoda.
 - GPU de consumo: cabe en tarjetas de 8-12 GB si se usa cuantizacion Q4 o Q5, y en tarjetas de 16-24 GB en cuantizaciones mayores.
 - CPU: al disponer de GGUF, es viable la inferencia en CPU con llama.cpp, con throughput dependiente del numero de nucleos y del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM o TGI si se dispone de pesos safetensors y una GPU adecuada; ademas, el tag `endpoints_compatible` apunta a los endpoints gestionados de HuggingFace.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM o TGI si se dispone de pesos safetensors y una GPU adecuada; ademas, el tag `endpoints_compatible` apunta a los endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -93,6 +93,6 @@ La comparacion se limita al tamano y la licencia: no es posible contrastar conte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abdullah-Qatan-AQ/NANO
+- Repositorio en Hugging Face: https://huggingface.co/Abdullah-Qatan-AQ/NANO
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados devueltos por el buscador no guardaban relacion con el modelo.

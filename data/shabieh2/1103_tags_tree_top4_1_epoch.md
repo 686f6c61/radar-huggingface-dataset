@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1103_tags_tree_top4_1_epoch` es un adaptador LoRA publicado en HuggingFace por el usuario `shabieh2` sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adaptador PEFT) que debe cargarse junto al modelo base para poder utilizarse. El repositorio ocupa 0,9 GB, un tamano coherente con un adaptador LoRA de rango bajo y no con un modelo de 30.000 millones de parametros.
+`shabieh2/1103_tags_tree_top4_1_epoch` es un adaptador LoRA publicado en Hugging Face por el usuario `shabieh2` sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adaptador PEFT) que debe cargarse junto al modelo base para poder utilizarse. El repositorio ocupa 0,9 GB, un tamano coherente con un adaptador LoRA de rango bajo y no con un modelo de 30.000 millones de parametros.
 
 La model card esta practicamente vacia: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como `[More Information Needed]`. El nombre del repositorio sugiere un experimento de ajuste fino sobre un dataset de etiquetas en estructura de arbol (`tags_tree`) con 4 elementos seleccionados (`top4`) y una sola epoca de entrenamiento (`1_epoch`), pero esta interpretacion no esta confirmada por el autor.
 
@@ -46,7 +46,7 @@ No se han publicado datos de entrenamiento: ni numero de tokens, ni composicion 
 - Investigacion sobre etiquetado jerarquico: si el nombre del repositorio refleja el dataset, podria emplearse para experimentos de clasificacion o generacion de etiquetas en estructura de arbol, siempre que se valide su calidad antes de usarlo.
 - Comparacion de estrategias de ajuste: permite contrastar el efecto de una sola epoca frente a ajustes mas largos sobre el mismo modelo base, como referencia metodologica.
 - Base para ajustes posteriores: el adaptador puede combinarse o continuar entrenandose con PEFT para tareas mas especificas, aunque sin licencia clara no es recomendable en produccion.
-- Docencia y formacion: util como caso practico de publicacion de un adaptador LoRA en HuggingFace, incluyendo la estructura de repositorio y los metadatos PEFT.
+- Docencia y formacion: util como caso practico de publicacion de un adaptador LoRA en Hugging Face, incluyendo la estructura de repositorio y los metadatos PEFT.
 - Auditoria de artefactos: sirve para estudiar como se declaran (o no) licencias, idiomas y datos en repositorios pequenos, y que riesgos implica su ausencia en un pipeline de MLOps.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shabieh2/1103_tags_tree_top4_1_epoch
+- Repositorio Hugging Face: https://huggingface.co/shabieh2/1103_tags_tree_top4_1_epoch
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact

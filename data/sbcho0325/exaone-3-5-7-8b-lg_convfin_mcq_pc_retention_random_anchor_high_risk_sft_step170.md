@@ -85,7 +85,7 @@ El adapter no modifica estas características; solo añade un ajuste específico
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_retention_random_anchor_high_risk_sft_step170
+- Repositorio Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_retention_random_anchor_high_risk_sft_step170
 - Repositorio oficial EXAONE 3.5 (GitHub): https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Paper técnico EXAONE 3.5 (arXiv): https://arxiv.org/abs/2412.04862
 - Organización LG AI EXAONE en GitHub: https://github.com/LG-AI-EXAONE

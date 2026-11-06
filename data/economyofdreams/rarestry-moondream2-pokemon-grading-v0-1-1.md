@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rarestry-Moondream2-Pokemon-Grading-v0.1.1 | ~2,13B | no disponible | Gradacion de cartas Pokemon | Apache 2.0 | HuggingFace (safetensors + ONNX INT8) |
-| vikhyatk/moondream2 (base) | ~1,86-2B | no disponible | VLM general (VQA, captioning) | Apache 2.0 | HuggingFace |
+| Rarestry-Moondream2-Pokemon-Grading-v0.1.1 | ~2,13B | no disponible | Gradacion de cartas Pokemon | Apache 2.0 | Hugging Face (safetensors + ONNX INT8) |
+| vikhyatk/moondream2 (base) | ~1,86-2B | no disponible | VLM general (VQA, captioning) | Apache 2.0 | Hugging Face |
 | Moondream 2 0.5B | ~0,5B | no disponible | VLM destilado para edge extremo | no disponible en la busqueda | moondream.ai |
 | Moondream 3 Preview | 9B totales, 2B activos (MoE disperso) | no disponible | VLM general de ultima generacion | no disponible en la busqueda | moondream.ai |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/economyofdreams/Rarestry-Moondream2-Pokemon-Grading-v0.1.1
+- Modelo en Hugging Face: https://huggingface.co/economyofdreams/Rarestry-Moondream2-Pokemon-Grading-v0.1.1
 - Version anterior v0.1.0: https://huggingface.co/economyofdreams/Rarestry-Moondream2-Pokemon-Grading-v0.1.0
 - Modelo base: https://huggingface.co/vikhyatk/moondream2
 - Pagina del proyecto Moondream (modelos): https://moondream.ai/models

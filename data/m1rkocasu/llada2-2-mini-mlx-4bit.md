@@ -26,7 +26,7 @@ Su relevancia práctica es doble. Por un lado, permite ejecutar localmente un Mo
 | Expertos por capa | 256; el bloque conserva 48 y cada token elige 8 de ellos |
 | Modelo base | inclusionAI/LLaDA2.2-mini |
 | Runtime | mlx-vlm (probado con 0.7.1) y mlx-lm; requiere `trust_remote_code` |
-| Fecha indicada en HuggingFace | creación 2026-09-19, actualización 2026-09-19 |
+| Fecha indicada en Hugging Face | creación 2026-09-19, actualización 2026-09-19 |
 
 ## Arquitectura y entrenamiento
 
@@ -91,8 +91,8 @@ Los datos verificables que sí aparecen son los de la validación de la conversi
 | Modelo | Parametros | Activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | LLaDA2.2-mini-MLX-4bit (este repositorio) | 16,26 B | ≈1,4 B | no disponible | MLX 4 bits, 9,2 GB | Apache 2.0 | Apple Silicon con mlx-vlm y mlx-lm |
-| LLaDA2.2-mini-MLX-5bit | 16,26 B (mismo base) | ≈1,4 B | no disponible | MLX 5 bits | Apache 2.0 | mismo autor, en HuggingFace |
-| LLaDA2.2-mini-MLX-6bit | 16,26 B (mismo base) | ≈1,4 B | no disponible | MLX 6 bits | Apache 2.0 | mismo autor, en HuggingFace |
+| LLaDA2.2-mini-MLX-5bit | 16,26 B (mismo base) | ≈1,4 B | no disponible | MLX 5 bits | Apache 2.0 | mismo autor, en Hugging Face |
+| LLaDA2.2-mini-MLX-6bit | 16,26 B (mismo base) | ≈1,4 B | no disponible | MLX 6 bits | Apache 2.0 | mismo autor, en Hugging Face |
 | LLaDA2.1-mini 4-bit (mlx-community) | no disponible | no disponible | no disponible | MLX 4 bits | no disponible | usado como referencia en la comparativa del autor |
 | inclusionAI/LLaDA2.2-mini (base) | 16,26 B | ≈1,4 B | no disponible | bf16, ≈30 GB | no disponible | original sin cuantizar |
 
@@ -100,7 +100,7 @@ No hay en la información proporcionada datos de otros modelos comparables de la
 
 ## Limitaciones y advertencias
 
-- Validación comunitaria nula en el momento de la consulta: 0 descargas y 0 me gusta en HuggingFace; se trata de una conversión de un tercero, no del autor del modelo base.
+- Validación comunitaria nula en el momento de la consulta: 0 descargas y 0 me gusta en Hugging Face; se trata de una conversión de un tercero, no del autor del modelo base.
 - Los resultados numéricos de la batería de 12 tareas no están disponibles en la información proporcionada; no se pueden citar cifras de calidad frente a LLaDA2.1-mini ni frente a las variantes de 5 y 6 bits.
 - No se publica la longitud de contexto soportada ni la lista oficial de idiomas.
 - Incompatibilidad con runtimes autorregresivos: LM Studio y oMLX no pueden ejecutar el modelo. Tampoco hay soporte documentado en vLLM, llama.cpp, Ollama ni TGI.
@@ -116,7 +116,7 @@ No hay en la información proporcionada datos de otros modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace (4 bits): https://huggingface.co/m1rkocasu/LLaDA2.2-mini-MLX-4bit
+- Modelo en Hugging Face (4 bits): https://huggingface.co/m1rkocasu/LLaDA2.2-mini-MLX-4bit
 - Variante de 5 bits: https://huggingface.co/m1rkocasu/LLaDA2.2-mini-MLX-5bit
 - Variante de 6 bits: https://huggingface.co/m1rkocasu/LLaDA2.2-mini-MLX-6bit
 - Modelo base: https://huggingface.co/inclusionAI/LLaDA2.2-mini

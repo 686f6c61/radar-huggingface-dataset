@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| thanhnam1122/hachimi-mt-onnx | 37M | no disponible | zh, vi | ONNX INT8 | CC-BY-4.0 | HuggingFace, runtime transformers.js |
-| ngocdang83/HachimiMT-30-zh-vi (base) | 37M | no disponible | zh, vi | safetensors / sentencepiece (no confirmado) | no disponible en el material consultado | HuggingFace |
+| thanhnam1122/hachimi-mt-onnx | 37M | no disponible | zh, vi | ONNX INT8 | CC-BY-4.0 | Hugging Face, runtime transformers.js |
+| ngocdang83/HachimiMT-30-zh-vi (base) | 37M | no disponible | zh, vi | safetensors / sentencepiece (no confirmado) | no disponible en el material consultado | Hugging Face |
 | HachimiMT-60 (variante mayor citada en la model card) | no disponible (superior a 37M) | no disponible | zh, vi | no disponible | no disponible | no disponible |
 | Otras alternativas zh-vi (p. ej. opus-mt, PhoMT) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de rendimiento ni de especificaciones complet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thanhnam1122/hachimi-mt-onnx
+- Hugging Face: https://huggingface.co/thanhnam1122/hachimi-mt-onnx
 - Modelo base: https://huggingface.co/ngocdang83/HachimiMT-30-zh-vi
 - Repositorio citado en el ejemplo de la model card: https://huggingface.co/yennguyen45/hachimimt-30-web
 - Documentacion de transformers.js: https://huggingface.co/docs/transformers.js

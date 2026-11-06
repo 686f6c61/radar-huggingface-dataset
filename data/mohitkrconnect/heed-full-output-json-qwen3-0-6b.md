@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heed-full-output-json-qwen3-0.6b (este) | 596.049.920 | no disponible (entrenado a 1.024) | JSON compacto | apache-2.0 | HuggingFace, 0 descargas |
-| heed-full-output-lines-qwen3-0.6b | no disponible | no disponible | lineas | apache-2.0 (presumible, mismo autor) | HuggingFace |
-| heed-full-output-json-4ep-qwen3-0.6b | no disponible | no disponible | JSON compacto | apache-2.0 (presumible, mismo autor) | HuggingFace |
-| Qwen/Qwen3-0.6B-Base | 0,6B (clase) | no disponible | texto libre | apache-2.0 | HuggingFace |
+| heed-full-output-json-qwen3-0.6b (este) | 596.049.920 | no disponible (entrenado a 1.024) | JSON compacto | apache-2.0 | Hugging Face, 0 descargas |
+| heed-full-output-lines-qwen3-0.6b | no disponible | no disponible | lineas | apache-2.0 (presumible, mismo autor) | Hugging Face |
+| heed-full-output-json-4ep-qwen3-0.6b | no disponible | no disponible | JSON compacto | apache-2.0 (presumible, mismo autor) | Hugging Face |
+| Qwen/Qwen3-0.6B-Base | 0,6B (clase) | no disponible | texto libre | apache-2.0 | Hugging Face |
 
 Los dos primeros son hermanos del mismo experimento EXP-050: la variante en formato de lineas perdio frente a JSON y la variante de 4 epocas es la linea base JSON con la que se comparo. No se dispone de cifras de rendimiento comparativas en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ Los dos primeros son hermanos del mismo experimento EXP-050: la variante en form
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohitkrconnect/heed-full-output-json-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/mohitkrconnect/heed-full-output-json-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Hermano en formato de lineas: https://huggingface.co/mohitkrconnect/heed-full-output-lines-qwen3-0.6b
 - Hermano JSON de 4 epocas (linea base): https://huggingface.co/mohitkrconnect/heed-full-output-json-4ep-qwen3-0.6b

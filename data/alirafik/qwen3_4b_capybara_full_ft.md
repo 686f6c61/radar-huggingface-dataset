@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aliRafik/qwen3_4B_capybara_full_ft` es un ajuste fino completo (full fine-tuning) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario aliRafik en HuggingFace. Se trata de un transformer decoder-only denso de 4.022.468.096 parametros (4,02 B) orientado a generacion de texto conversacional, con licencia Apache-2.0, pesos en safetensors y un repositorio de 8,1 GB, lo que corresponde a pesos en bf16/fp16 sin cuantizar.
+`aliRafik/qwen3_4B_capybara_full_ft` es un ajuste fino completo (full fine-tuning) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario aliRafik en Hugging Face. Se trata de un transformer decoder-only denso de 4.022.468.096 parametros (4,02 B) orientado a generacion de texto conversacional, con licencia Apache-2.0, pesos en safetensors y un repositorio de 8,1 GB, lo que corresponde a pesos en bf16/fp16 sin cuantizar.
 
 El nombre del repositorio sugiere que el entrenamiento se realizo sobre el dataset Capybara, aunque la model card no lo confirma ni detalla el numero de tokens, la composicion del dataset ni si hubo fases de RLHF o DPO. El autor indica unicamente que el entrenamiento se hizo con Unsloth, la herramienta que permite entrenar aproximadamente 2 veces mas rapido y con menor consumo de memoria que un flujo estandar con transformers.
 
@@ -22,7 +22,7 @@ Su relevancia practica es la de un modelo pequeno (4 B) de licencia permisiva qu
 | Formato de pesos | safetensors, cargables con la libreria `transformers` |
 | Modelo base | `unsloth/Qwen3-4B-Instruct-2507` |
 | Tipo de ajuste | full fine-tuning (todos los parametros actualizados), no LoRA/QLoRA segun el nombre del repositorio |
-| Fecha de publicacion | 28 de septiembre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicacion | 28 de septiembre de 2026 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: A100 40 GB, H100 o L40S para servicio en bf16 con contexto largo; RTX 4090, RTX 3090 o RTX 4080 para inferencia en bf16 con contextos moderados; RTX 3060 12 GB, RTX 4060 Ti 16 GB o incluso GPU de 8 GB con cuantizacion de 4 bits.
 - Si cabe en GPU de consumo: si, en bf16 en tarjetas de 12-16 GB y en 4 bits en tarjetas de 6-8 GB.
 - Cache KV estimada (calculo a partir de la configuracion del modelo base: 36 capas, 8 cabezas KV, head_dim 128, bf16): unos 144 KB por token, es decir, aproximadamente 4,6 GB para 32.000 tokens y del orden de 37 GB para los 262.144 tokens maximos del modelo base. Esta estimacion no ha sido medida y no contempla tecnicas como atencion con ventana deslizante o cache cuantizada.
-- Opciones de despliegue: `transformers` (soporte nativo del repositorio), vLLM y Text Generation Inference (TGI) para servicio con batching continuo, llama.cpp u Ollama tras convertir a GGUF, y servidores compatibles con la API de endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` (soporte nativo del repositorio), vLLM y Text Generation Inference (TGI) para servicio con batching continuo, llama.cpp u Ollama tras convertir a GGUF, y servidores compatibles con la API de endpoints de Hugging Face.
 - Latencia y throughput: no se han publicado mediciones para este repositorio.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Los datos de parametros, contexto y licencia de los modelos comparativos procede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aliRafik/qwen3_4B_capybara_full_ft
+- Modelo en Hugging Face: https://huggingface.co/aliRafik/qwen3_4B_capybara_full_ft
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

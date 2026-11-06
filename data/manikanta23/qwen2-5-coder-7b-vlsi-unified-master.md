@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Manikanta23/qwen2.5-coder-7b-vlsi-unified-master | 7,61B (base) + LoRA | 32.768 | Verilog / VLSI | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct | 7,61B | 32.768 | Codigo general | Apache 2.0 | HuggingFace |
-| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 | Codigo general | DeepSeek License | HuggingFace |
-| CodeLlama-7B-Instruct | 6,7B | 16.384 | Codigo general | Llama 2 Community | HuggingFace |
+| Manikanta23/qwen2.5-coder-7b-vlsi-unified-master | 7,61B (base) + LoRA | 32.768 | Verilog / VLSI | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct | 7,61B | 32.768 | Codigo general | Apache 2.0 | Hugging Face |
+| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 | Codigo general | DeepSeek License | Hugging Face |
+| CodeLlama-7B-Instruct | 6,7B | 16.384 | Codigo general | Llama 2 Community | Hugging Face |
 
 No se dispone de comparativas especificas frente a otros adaptadores de HDL (por ejemplo, variantes de VeriGen o RTLCoder) en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de comparativas especificas frente a otros adaptadores de HDL (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-unified-master
+- Modelo en Hugging Face: https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-unified-master
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Icarus Verilog: https://github.com/steveicarus/iverilog

@@ -71,7 +71,7 @@ No se dispone de datos comparativos cuantitativos con otros LoRAs de realismo pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AST-1320/qwen-image-realism-lora
+- Repositorio en Hugging Face: https://huggingface.co/AST-1320/qwen-image-realism-lora
 - Repositorio original de flymy-ai: https://huggingface.co/flymy-ai/qwen-image-realism-lora
 - Modelo base Qwen-Image: https://huggingface.co/Qwen/Qwen-Image
 - Pesos de Qwen-Image para ComfyUI: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/tree/main

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`leomaurodesenv/bert-base-uncased-nvidia-aegis-v2` es un ajuste fino de `google-bert/bert-base-uncased` publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un clasificador de texto (pipeline `text-classification`) de arquitectura transformer encoder, con 109.483.778 parámetros reales según los pesos en safetensors, lo que corresponde a la configuración estandar de BERT-base. El modelo resuelve una tarea de clasificación supervisada cuyo espacio de etiquetas no se documenta en la model card: el autor indica explicitamente que el conjunto de datos de entrenamiento es "unknown dataset".
+`leomaurodesenv/bert-base-uncased-nvidia-aegis-v2` es un ajuste fino de `google-bert/bert-base-uncased` publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un clasificador de texto (pipeline `text-classification`) de arquitectura transformer encoder, con 109.483.778 parámetros reales según los pesos en safetensors, lo que corresponde a la configuración estandar de BERT-base. El modelo resuelve una tarea de clasificación supervisada cuyo espacio de etiquetas no se documenta en la model card: el autor indica explicitamente que el conjunto de datos de entrenamiento es "unknown dataset".
 
-La relevancia de esta ficha es limitada y hay que enmarcarla con honestidad: se trata de un modelo con 84 descargas y 0 likes en el momento de la consulta, con una model card autogenerada por el `Trainer` de HuggingFace y sin seccion de usos previstos, limitaciones ni datos de entrenamiento cumplimentados. Lo unico verificable es su rendimiento sobre un conjunto de evaluacion no identificado: perdida de 0,3392 y exactitud de 0,8490. El sufijo "nvidia-aegis-v2" sugiere un dominio de aplicacion concreto, pero no hay ninguna informacion publicada que lo confirme, por lo que no se puede asumir.
+La relevancia de esta ficha es limitada y hay que enmarcarla con honestidad: se trata de un modelo con 84 descargas y 0 likes en el momento de la consulta, con una model card autogenerada por el `Trainer` de Hugging Face y sin seccion de usos previstos, limitaciones ni datos de entrenamiento cumplimentados. Lo unico verificable es su rendimiento sobre un conjunto de evaluacion no identificado: perdida de 0,3392 y exactitud de 0,8490. El sufijo "nvidia-aegis-v2" sugiere un dominio de aplicacion concreto, pero no hay ninguna informacion publicada que lo confirme, por lo que no se puede asumir.
 
 Desde el punto de vista practico, el modelo hereda las caracteristicas del BERT-base original: ventana de contexto de 512 tokens, tokenizador WordPiece en minusculas con vocabulario de 30.522 entradas y una licencia Apache-2.0 que permite uso comercial. El tamano del repositorio (10,9 GB) es muy superior al de los pesos finales, lo que indica que incluye checkpoints intermedios del entrenamiento.
 
@@ -30,7 +30,7 @@ Desde el punto de vista practico, el modelo hereda las caracteristicas del BERT-
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de BERT-base sin modificaciones estructurales: un encoder transformer bidireccional de 12 capas, 768 dimensiones ocultas, 12 cabezas de atencion y aproximadamente 110 millones de parametros, con una cabeza de clasificacion sobre el token `[CLS]` anadida por el `Trainer` de HuggingFace. El tokenizador es WordPiece en minusculas con un vocabulario de 30.522 tokens, lo que implica que el modelo pierde la informacion de capitalizacion de la entrada. No hay innovaciones tecnicas declaradas: no se menciona atencion lineal, decodificacion especulativa ni variantes de eficiencia.
+La arquitectura es la de BERT-base sin modificaciones estructurales: un encoder transformer bidireccional de 12 capas, 768 dimensiones ocultas, 12 cabezas de atencion y aproximadamente 110 millones de parametros, con una cabeza de clasificacion sobre el token `[CLS]` anadida por el `Trainer` de Hugging Face. El tokenizador es WordPiece en minusculas con un vocabulario de 30.522 tokens, lo que implica que el modelo pierde la informacion de capitalizacion de la entrada. No hay innovaciones tecnicas declaradas: no se menciona atencion lineal, decodificacion especulativa ni variantes de eficiencia.
 
 El procedimiento de entrenamiento si esta documentado en la model card, aunque los datos no. Se entrenaron 10 epocas con `learning_rate = 2e-05`, tamano de lote por dispositivo de 8, acumulacion de gradientes de 2 pasos (lote efectivo de 16), planificador lineal con 50 pasos de calentamiento, semilla 42 y el optimizador `adamw_torch_fused` con betas (0,9; 0,999) y epsilon 1e-08. Los registros muestran 1203 pasos por epoca; con un lote efectivo de 16, esto equivale a aproximadamente 19.250 ejemplos de entrenamiento por epoca, aunque se desconoce la composicion, el idioma y el esquema de etiquetas del corpus. No se documenta RLHF, DPO ni ninguna fase de alineacion, algo coherente con un clasificador discriminativo. Las versiones de framework declaradas son Transformers 5.2.0, PyTorch 2.10.0+cu128, Datasets 4.5.0 y Tokenizers 0.22.2.
 
@@ -42,7 +42,7 @@ El detalle mas llamativo del entrenamiento es que la perdida de validacion deja 
 - Extraccion de representaciones: al ser un encoder, la salida del token `[CLS]` o la media de las representaciones puede usarse como embedding de frase; la etiqueta `text-embeddings-inference` del repositorio indica compatibilidad con ese servidor.
 - Emparejamiento de secuencias: la arquitectura BERT soporta tareas de pares de frases (por ejemplo, similitud o inferencia textual) siempre que la cabeza de clasificacion se haya entrenado para ello, algo que no se puede confirmar con la informacion disponible.
 - Procesamiento por lotes: al ser un encoder de 110 millones de parametros, el throughput con lotes grandes es alto en GPU.
-- Compatibilidad con `transformers` y `endpoints_compatible`: se puede desplegar mediante la libreria estandar y mediante Inference Endpoints de HuggingFace.
+- Compatibilidad con `transformers` y `endpoints_compatible`: se puede desplegar mediante la libreria estandar y mediante Inference Endpoints de Hugging Face.
 - Capacidades multilingues: no disponibles; el vocabulario del modelo base esta dominado por el ingles.
 - Tool calling, function calling, agentes, razonamiento multi-paso, modo thinking, vision y audio: no disponibles. Es un modelo discriminativo, no generativo.
 
@@ -86,7 +86,7 @@ No se dispone de comparaciones con otros modelos sobre el mismo conjunto, porque
 - CPU: el modelo es perfectamente ejecutable en CPU, con latencias del orden de decenas de milisegundos por lote pequeno dependiendo del hardware.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente. Una RTX 3060, RTX 4060 o superior sobra para inferencia; una T4 es suficiente para servicio en la nube. No se necesitan A100 ni H100 para este tamano.
 - Cabe en GPU consumer: si, en practicamente todas las GPU con 4 GB o mas de VRAM, e incluso en GPUs integradas para lotes pequenos.
-- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (etiqueta declarada en el repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime, TorchScript, NVIDIA Triton o un servidor FastAPI propio. vLLM puede servir modelos de pooling en versiones recientes, pero no es su caso de uso principal. Ollama y llama.cpp no soportan de forma nativa clasificadores BERT de este tipo.
+- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (etiqueta declarada en el repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime, TorchScript, NVIDIA Triton o un servidor FastAPI propio. vLLM puede servir modelos de pooling en versiones recientes, pero no es su caso de uso principal. Ollama y llama.cpp no soportan de forma nativa clasificadores BERT de este tipo.
 - Latencia y throughput: no disponibles en la informacion proporcionada. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -119,6 +119,6 @@ La conclusion practica es que este ajuste fino no ofrece ninguna ventaja declara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v2
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v2
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas devolvieron unicamente resultados no relacionados (foros sobre extensiones de navegador y descargas de ficheros), por lo que no hay papers, blogs, repositorios ni demos que citar.

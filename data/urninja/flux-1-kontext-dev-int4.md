@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX.1-Kontext-dev-int4 es una versión cuantizada (int4) del modelo black-forest-labs/FLUX.1-Kontext-dev, publicada por el usuario UrNinja en HuggingFace. Se trata de un modelo de difusión de imagen a imagen (image-to-image) que toma una imagen de entrada y un prompt textual, y devuelve una imagen editada. El repositorio usa la librería diffusers y el pipeline FluxKontextPipeline, e incorpora cuantización a 4 bits con bitsandbytes para reducir los requisitos de memoria frente al modelo original.
+FLUX.1-Kontext-dev-int4 es una versión cuantizada (int4) del modelo black-forest-labs/FLUX.1-Kontext-dev, publicada por el usuario UrNinja en Hugging Face. Se trata de un modelo de difusión de imagen a imagen (image-to-image) que toma una imagen de entrada y un prompt textual, y devuelve una imagen editada. El repositorio usa la librería diffusers y el pipeline FluxKontextPipeline, e incorpora cuantización a 4 bits con bitsandbytes para reducir los requisitos de memoria frente al modelo original.
 
 El objetivo del modelo es hacer viable la edición de imágenes con FLUX.1 Kontext en hardware más modesto: al reducir el peso del transformer a int4, baja el consumo de VRAM respecto a la versión bf16 del modelo base. El repositorio tiene un tamaño de 13,4 GB y declara 6.138.207.719 parámetros en sus ficheros safetensors. La model card incluye un ejemplo de uso con guidance_scale de 2,5 y 30 pasos de inferencia.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Tipo de tarea | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UrNinja/FLUX.1-Kontext-dev-int4 | 6.138.207.719 (safetensors del repo) | Edición de imagen (image-to-image) | Imagen + prompt | no disponible en el repo | HuggingFace (diffusers) |
-| black-forest-labs/FLUX.1-Kontext-dev | no disponible en la información proporcionada (el modelo base se describe públicamente como transformer de 12B) | Edición de imagen (image-to-image) | Imagen + prompt | Licencia no comercial de FLUX.1 [dev] | HuggingFace (diffusers) |
-| black-forest-labs/FLUX.1-dev | no disponible en la información proporcionada | Generación de imagen a partir de texto | Prompt | Licencia no comercial de FLUX.1 [dev] | HuggingFace |
-| Modelos de edición de imagen alternativos (por ejemplo, Qwen-Image-Edit) | no disponible | Edición de imagen | Imagen + prompt | no disponible | HuggingFace |
+| UrNinja/FLUX.1-Kontext-dev-int4 | 6.138.207.719 (safetensors del repo) | Edición de imagen (image-to-image) | Imagen + prompt | no disponible en el repo | Hugging Face (diffusers) |
+| black-forest-labs/FLUX.1-Kontext-dev | no disponible en la información proporcionada (el modelo base se describe públicamente como transformer de 12B) | Edición de imagen (image-to-image) | Imagen + prompt | Licencia no comercial de FLUX.1 [dev] | Hugging Face (diffusers) |
+| black-forest-labs/FLUX.1-dev | no disponible en la información proporcionada | Generación de imagen a partir de texto | Prompt | Licencia no comercial de FLUX.1 [dev] | Hugging Face |
+| Modelos de edición de imagen alternativos (por ejemplo, Qwen-Image-Edit) | no disponible | Edición de imagen | Imagen + prompt | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación se limita a formato, tarea y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UrNinja/FLUX.1-Kontext-dev-int4
+- Modelo en Hugging Face: https://huggingface.co/UrNinja/FLUX.1-Kontext-dev-int4
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev
 - Referencia de implementación citada en la model card (diffusers desde GitHub): https://github.com/huggingface/diffusers
 - Modelos FLUX.1 de Black Forest Labs: https://huggingface.co/black-forest-labs

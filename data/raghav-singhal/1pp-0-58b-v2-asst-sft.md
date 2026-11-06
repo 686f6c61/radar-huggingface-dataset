@@ -27,7 +27,7 @@ El modelo es un transformer decoder denso con normalizacion RMSNorm, activacion 
 
 El preentrenamiento cubre los primeros 11.106 pasos del flujo alineado del estudio principal (23,29B posiciones de token), con batch global de 512 x 4.096 tokens y perdida calculada unicamente sobre los turnos del asistente. El optimizador es Muon (matrix LR 0,005, shape scaling) combinado con Adam para el resto de parametros (LR 3e-3 para embeddings y capa de salida, 3e-3 para normas), con warmup de 699 pasos, fase constante y decaimiento lineal en los ultimos 1.110 pasos hasta 1/100. Weight decay 0,1, init std 0,0119 y entrenamiento en bf16 sobre Megatron. La perdida de validacion final es 1,679 sobre texto de asistente (2.433 documentos reservados).
 
-El SFT se realiza durante una epoca sobre una mezcla de 400.000 conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno con track citado de constitucion), `dlab-spp/sp-sft-normal-300k` sin duplicados (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se mantiene el stack (Megatron, Muon) con matriz LR 0,002, semilla 28, batch 128 x 4.096, decaimiento lineal a 1/10 tras un 3% de warmup y formato ChatML sin turno de sistema. La perdida SFT en held-out (1.998 conversaciones) es 2,112. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron reproduciendo la perdida de validacion (2,1117 frente a 2,1117, diferencia 0,0000).
+El SFT se realiza durante una epoca sobre una mezcla de 400.000 conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno con track citado de constitucion), `dlab-spp/sp-sft-normal-300k` sin duplicados (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se mantiene el stack (Megatron, Muon) con matriz LR 0,002, semilla 28, batch 128 x 4.096, decaimiento lineal a 1/10 tras un 3% de warmup y formato ChatML sin turno de sistema. La perdida SFT en held-out (1.998 conversaciones) es 2,112. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron reproduciendo la perdida de validacion (2,1117 frente a 2,1117, diferencia 0,0000).
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 0,6 GB de pesos; en 4 bits, alrededor de 0,3 GB (cuantizaciones no publicadas oficialmente, requeririan conversion propia a GGUF u otro formato).
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM para bf16; tarjetas de consumo como RTX 3060, RTX 4060, RTX 4090 lo ejecutan con holgura. Para servicio de alto throughput, A100 o H100 no son necesarias pero permitirian batchear muchas peticiones.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna con 4 GB o mas; tambien es viable en CPU para inferencia de baja concurrencia.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en HuggingFace). Para llama.cpp u Ollama haria falta convertir los pesos a GGUF, ya que no se publican en ese formato.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en Hugging Face). Para llama.cpp u Ollama haria falta convertir los pesos a GGUF, ya que no se publican en ese formato.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -91,11 +91,11 @@ La comparacion con modelos generalistas es orientativa: el 1pp-0.58b-v2-asst-sft
 - El formato de chat no incluye turno de sistema: los modelos nunca vieron uno, por lo que inyectar instrucciones de sistema puede degradar el comportamiento.
 - No se documentan capacidades de tool calling ni de agentes; no deben asumirse.
 - Licencia Apache 2.0 permite uso comercial, pero la ausencia de benchmarks y de garantias de calidad hace desaconsejable su uso en produccion sin evaluacion propia.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin comunidad de validacion externa.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin comunidad de validacion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-sft
 - Coleccion 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (wandb, SFT): https://wandb.ai/raghav_singhal/1pp-sft

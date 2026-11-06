@@ -63,7 +63,7 @@ No disponible. No hay modelos comparables porque el repositorio no contiene un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anku-zmin/paper_017393565_text_image_retrieval
+- Repositorio en Hugging Face: https://huggingface.co/anku-zmin/paper_017393565_text_image_retrieval
 - Referencia externa sobre Composed Image Retrieval (CVPR 2025): https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Generative_Zero-Shot_Composed_Image_Retrieval_CVPR_2025_paper.pdf
 - Repositorio de Deep Image Retrieval (NAVER): https://github.com/naver/deep-image-retrieval
 - Google Images: https://images.google.com/

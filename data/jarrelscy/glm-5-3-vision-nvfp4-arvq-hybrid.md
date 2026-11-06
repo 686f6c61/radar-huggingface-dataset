@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Vision-NVFP4-ARVQ-hybrid es un artefacto de pesos publicado en HuggingFace por el usuario `jarrelscy`. Se trata de una conversión experimental de cuantización mixta aplicada sobre un modelo multimodal de la familia GLM-5 (etiqueta `glm5v`), con 186.827.108.584 parámetros reales contabilizados en los ficheros safetensors. La model card describe una arquitectura de mezcla de expertos (MoE) con 75 capas de este tipo, sobre las que se aplica una política diferenciada: expertos "hot" cuantizados en NVFP4 y expertos "cold" cuantizados con ARVQ v3, con asignación de presupuesto REAP puntuada por ARVQ.
+GLM-5.3-Vision-NVFP4-ARVQ-hybrid es un artefacto de pesos publicado en Hugging Face por el usuario `jarrelscy`. Se trata de una conversión experimental de cuantización mixta aplicada sobre un modelo multimodal de la familia GLM-5 (etiqueta `glm5v`), con 186.827.108.584 parámetros reales contabilizados en los ficheros safetensors. La model card describe una arquitectura de mezcla de expertos (MoE) con 75 capas de este tipo, sobre las que se aplica una política diferenciada: expertos "hot" cuantizados en NVFP4 y expertos "cold" cuantizados con ARVQ v3, con asignación de presupuesto REAP puntuada por ARVQ.
 
 El punto clave es que se trata de un trabajo en curso, no de un modelo terminado. Solo 19 de las 75 capas MoE han sido sustituidas por la campaña secuencial de "PV" sobre el corpus completo; el resto conserva los pesos publicados previamente. Cada capa sustituida se publica como un par de ficheros tensoriales junto con sus informes, reemplazados en un único commit, y el progreso se documenta en un fichero `pv_progress.json`. El autor advierte explícitamente de que la paridad nativa en SM120 y la calidad del modelo completo "permanecen sin verificar".
 
@@ -51,7 +51,7 @@ Como caveat técnico relevante, la aritmética "cold" emula planos de activació
 - Servicio de inferencia con vLLM: la librería declarada es vLLM y el formato es safetensors, por lo que el despliegue natural es un servidor vLLM multi-GPU. Requiere un clúster de gama alta; véase la sección de hardware.
 - Reproducción de la campaña de destilación: los detalles de lote efectivo, tasas de aprendizaje, cadencia de validación y reasignación de índices permiten replicar el proceso sobre las capas restantes (56 de 75 pendientes), comparando el checkpoint retenido con el conjunto de auditoría fijo de 16.384 tokens.
 - Asistente multimodal de documentos: si la torre de visión funciona según lo previsto, el modelo podría atender consultas sobre imágenes y texto en un único contexto. Es un uso plausible pero sin validación publicada, por lo que exigiría una fase de evaluación interna previa.
-- Auditoría de artefactos de pesos en HuggingFace: el repositorio es un ejemplo útil para estudiar cómo se publican conversiones incrementales (un commit por capa, `pv_progress.json`, informes adjuntos) y para diseñar políticas de trazabilidad de pesos.
+- Auditoría de artefactos de pesos en Hugging Face: el repositorio es un ejemplo útil para estudiar cómo se publican conversiones incrementales (un commit por capa, `pv_progress.json`, informes adjuntos) y para diseñar políticas de trazabilidad de pesos.
 - Pruebas de estrés de memoria y planificación de capacidad: con 1058,6 GB de repositorio y 186,8 mil millones de parámetros, sirve para dimensionar clústeres, medir tiempos de carga de safetensors y ajustar la configuración de tensor parallelism en vLLM.
 
 ## Benchmarks y rendimiento
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Vision-NVFP4-ARVQ-hybrid (este) | 186,8 mil millones | no disponible | no disponible | no disponible | HuggingFace, safetensors, vLLM |
+| GLM-5.3-Vision-NVFP4-ARVQ-hybrid (este) | 186,8 mil millones | no disponible | no disponible | no disponible | Hugging Face, safetensors, vLLM |
 | GLM-5.3-Vision (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
-| DeepSeek-V3 | 671 mil millones | 37 mil millones | 128k | licencia propia con permisos de uso comercial | pesos abiertos en HuggingFace |
-| Qwen3-235B-A22B | 235 mil millones | 22 mil millones | 128k | Apache 2.0 | pesos abiertos en HuggingFace |
+| DeepSeek-V3 | 671 mil millones | 37 mil millones | 128k | licencia propia con permisos de uso comercial | pesos abiertos en Hugging Face |
+| Qwen3-235B-A22B | 235 mil millones | 22 mil millones | 128k | Apache 2.0 | pesos abiertos en Hugging Face |
 
 Nota: los datos de DeepSeek-V3 y Qwen3-235B-A22B proceden de sus fichas públicas conocidas y no forman parte de la información proporcionada en esta búsqueda; se incluyen únicamente como referencia de categoría (MoE de gran tamaño con pesos abiertos). Para el modelo base GLM-5.3-Vision no se dispone de especificaciones, por lo que la comparación directa de rendimiento no es posible. No se dispone de ningún benchmark que permita situar a este modelo frente a las alternativas.
 
@@ -96,6 +96,6 @@ Nota: los datos de DeepSeek-V3 y Qwen3-235B-A22B proceden de sus fichas pública
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-ARVQ-hybrid
-- Fichero de progreso citado en la model card: `pv_progress.json` (dentro del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-ARVQ-hybrid
+- Fichero de progreso citado en la model card: `pv_progress.json` (dentro del repositorio de Hugging Face)
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, papers, blogs, repositorios de código ni demos. Los resultados devueltos corresponden a servicios de streaming de televisión (ARTE, ARD Mediathek, ZDFmediathek) y no guardan relación con el modelo.

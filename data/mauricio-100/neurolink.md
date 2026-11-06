@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neurolink es un modelo publicado en HuggingFace por el usuario Mauricio-100 bajo licencia MIT. La informacion disponible en el momento de redactar esta ficha es practicamente nula: el repositorio ocupa 0.0 GB, no tiene descargas ni likes, no declara pipeline ni idiomas soportados, y la model card se limita a una linea de metadatos con la licencia. No hay especificaciones tecnicas, arquitectura, tamano ni datos de entrenamiento publicados.
+Neurolink es un modelo publicado en Hugging Face por el usuario Mauricio-100 bajo licencia MIT. La informacion disponible en el momento de redactar esta ficha es practicamente nula: el repositorio ocupa 0.0 GB, no tiene descargas ni likes, no declara pipeline ni idiomas soportados, y la model card se limita a una linea de metadatos con la licencia. No hay especificaciones tecnicas, arquitectura, tamano ni datos de entrenamiento publicados.
 
 Por tanto, no es posible determinar que problema resuelve, que arquitectura emplea ni cual es su contexto maximo. El nombre "neurolink" sugiere, sin confirmacion por parte del autor, un posible enfoque en redes neuronales o integracion de componentes, pero se trata de una especulacion que no debe tomarse como dato tecnico.
 
@@ -39,7 +39,7 @@ Tampoco hay evidencia de innovaciones tecnicas destacables (atencion lineal, dec
 ## Casos de uso
 
 - No es posible recomendar casos de uso concretos sin especificaciones tecnicas, pesos publicados o documentacion de capacidades.
-- Evaluacion de la ficha como ejemplo de publicacion incompleta en HuggingFace: util para estudiar que metadatos minimos deberia incluir una model card antes de su distribucion.
+- Evaluacion de la ficha como ejemplo de publicacion incompleta en Hugging Face: util para estudiar que metadatos minimos deberia incluir una model card antes de su distribucion.
 - Seguimiento del repositorio: monitorizar si el autor publica pesos, configuracion o documentacion en futuras actualizaciones.
 - Auditoria de licencias: el modelo declara MIT, lo que permitiria reutilizacion comercial si en el futuro se publican artefactos utilizables, pero sin pesos no hay nada que reutilizar.
 - Integracion en pipelines de catalogacion: registrar el identificador `Mauricio-100/neurolink` en inventarios internos marcandolo como no evaluable.
@@ -81,5 +81,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mauricio-100/neurolink
+- Hugging Face: https://huggingface.co/Mauricio-100/neurolink
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

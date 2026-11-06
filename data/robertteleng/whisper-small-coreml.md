@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robertteleng/whisper-small-coreml
+- Repositorio en Hugging Face: https://huggingface.co/robertteleng/whisper-small-coreml
 - Herramienta de conversion `coreml-forge`: https://github.com/robertteleng/coreml-forge
 - Modelo base `openai/whisper-small`: https://huggingface.co/openai/whisper-small

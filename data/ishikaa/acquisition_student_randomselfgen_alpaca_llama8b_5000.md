@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_randomselfgen_alpaca_llama8b_5000` es un checkpoint de 8.030.261.248 parametros (aproximadamente 8,03 mil millones) publicado en HuggingFace por el usuario `ishikaa` dentro de la libreria `transformers`. Por su nomenclatura, todo apunta a un modelo "estudiante" entrenado mediante destilacion o aprendizaje por imitacion sobre un modelo "profesor", usando datos autogenerados de forma aleatoria sobre el dataset Alpaca y un modelo base de la familia Llama de 8B. Se trata, por tanto, de un artefacto de investigacion orientado a experimentos de adquisicion de datos y evaluacion de estrategias de generacion de datasets sinteticos, mas que de un modelo listo para produccion.
+El modelo `ishikaa/acquisition_student_randomselfgen_alpaca_llama8b_5000` es un checkpoint de 8.030.261.248 parametros (aproximadamente 8,03 mil millones) publicado en Hugging Face por el usuario `ishikaa` dentro de la libreria `transformers`. Por su nomenclatura, todo apunta a un modelo "estudiante" entrenado mediante destilacion o aprendizaje por imitacion sobre un modelo "profesor", usando datos autogenerados de forma aleatoria sobre el dataset Alpaca y un modelo base de la familia Llama de 8B. Se trata, por tanto, de un artefacto de investigacion orientado a experimentos de adquisicion de datos y evaluacion de estrategias de generacion de datasets sinteticos, mas que de un modelo listo para produccion.
 
 La relevancia de este tipo de checkpoints reside en que permiten reproducir y auditar experimentos de destilacion selectiva: el sufijo `5000` sugiere que se emplearon 5.000 ejemplos para el entrenamiento, mientras que el termino `acquisition` apunta a una estrategia de seleccion activa de muestras. Este tipo de trabajos son habituales en la literatura sobre aprendizaje eficiente con datos limitados y sobre destilacion de modelos grandes a modelos mas pequenos.
 
-No obstante, la model card publicada es la plantilla automatica de HuggingFace y no contiene ninguna informacion sustantiva: no declara autor real, licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, y su repositorio ocupa 16,1 GB. Cualquier uso en produccion deberia ir precedido de una evaluacion propia, dado que no existe documentacion verificable sobre su comportamiento.
+No obstante, la model card publicada es la plantilla automatica de Hugging Face y no contiene ninguna informacion sustantiva: no declara autor real, licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, y su repositorio ocupa 16,1 GB. Cualquier uso en produccion deberia ir precedido de una evaluacion propia, dado que no existe documentacion verificable sobre su comportamiento.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ La comparacion se limita a parametros, contexto y licencia: no existen datos pub
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automatica de HuggingFace: no documenta datos, hiperparametros, evaluacion ni uso previsto.
+- La model card es la plantilla automatica de Hugging Face: no documenta datos, hiperparametros, evaluacion ni uso previsto.
 - Ausencia total de licencia declarada: no se puede determinar si el uso comercial esta permitido. El uso en produccion deberia considerarse de riesgo legal alto hasta que el autor lo aclare.
 - Idiomas no declarados: es probable que el modelo solo funcione razonablemente en ingles, dado el dataset Alpaca, pero no hay confirmacion.
 - Riesgo elevado de alucinacion y de degradacion del formato de respuesta, tipico de ajustes con pocos ejemplos (5.000) y datos autogenerados sin curado.
@@ -90,7 +90,7 @@ La comparacion se limita a parametros, contexto y licencia: no existen datos pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_alpaca_llama8b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_alpaca_llama8b_5000
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AliceGomes/zero-shot-transfer-quantized-2024` no contiene un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre transferencia cero (zero-shot transfer). Así lo declara su propia model card: el artefacto principal es `analysis.md`, y no se publica checkpoint, código ni resultados experimentales. Los metadatos de HuggingFace lo etiquetan como `safetensors`, `transformer`, `research-notes`, `zero-shot-transfer`, con licencia `cc-by-4.0`.
+El repositorio `AliceGomes/zero-shot-transfer-quantized-2024` no contiene un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre transferencia cero (zero-shot transfer). Así lo declara su propia model card: el artefacto principal es `analysis.md`, y no se publica checkpoint, código ni resultados experimentales. Los metadatos de Hugging Face lo etiquetan como `safetensors`, `transformer`, `research-notes`, `zero-shot-transfer`, con licencia `cc-by-4.0`.
 
 El problema que aborda es metodológico: separar hipótesis y planes de resultados ya obtenidos, proponer comparaciones con baselines emparejados, identificar factores de confusión y exigir comprobaciones de reproducibilidad (versiones de dataset, comandos, semillas, hardware y logs en bruto) antes de dar por válido cualquier hallazgo. Es relevante ahora como recordatorio de higiene experimental dentro del ecosistema de modelos abiertos, donde abundan las afirmaciones de transferencia cero sin protocolo de evaluación documentado.
 
@@ -23,7 +23,7 @@ El dato más llamativo es el recuento de parámetros declarado en los metadatos 
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura más allá de la etiqueta `transformer` en los metadatos de HuggingFace. El repositorio no incluye `config.json`, ficha de arquitectura ni descripción de capas, cabezas de atención, tipo de normalización o estrategia posicional. Tampoco se documenta ningún proceso de entrenamiento: no consta número de tokens, composición del dataset, fases de ajuste supervisado, RLHF, DPO u otra técnica de alineamiento.
+No hay información sobre arquitectura más allá de la etiqueta `transformer` en los metadatos de Hugging Face. El repositorio no incluye `config.json`, ficha de arquitectura ni descripción de capas, cabezas de atención, tipo de normalización o estrategia posicional. Tampoco se documenta ningún proceso de entrenamiento: no consta número de tokens, composición del dataset, fases de ajuste supervisado, RLHF, DPO u otra técnica de alineamiento.
 
 El contenido real es una nota de investigación. La model card describe que cubre el alcance de la pregunta de investigación y sus posibles factores de confusión, una comparación propuesta con baselines emparejados, contexto de evaluación con benchmarks públicos citados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El propio autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que el repositorio no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado. Si se añadieran resultados en el futuro, la nota exige que incluyan versión del dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -80,7 +80,7 @@ No disponible. No existe una categoría de modelos comparables: este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AliceGomes/zero-shot-transfer-quantized-2024
+- Repositorio en Hugging Face: https://huggingface.co/AliceGomes/zero-shot-transfer-quantized-2024
 - Model card (README): incluida en la URL anterior
 - `analysis.md`: referenciado en la model card como artefacto principal dentro del repositorio
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada

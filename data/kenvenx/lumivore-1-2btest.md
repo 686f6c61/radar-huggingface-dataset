@@ -86,7 +86,7 @@ LumiVore-1.2B se distingue por su especialización agéntica y su entrenamiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kenvenx/lumivore-1.2btest
+- Hugging Face: https://huggingface.co/Kenvenx/lumivore-1.2btest
 - GitHub: https://github.com/dansan-claw/lumivore
 - Sitio web: https://lumivore.ai
 - Discord: https://discord.gg/M7U8JCUukD

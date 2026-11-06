@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clonevibe-mcp` no es un modelo de lenguaje, sino un servidor MCP (Model Context Protocol) publicado por el usuario `fsareawr` en HuggingFace bajo el identificador `fsareawr/clonevibe-mcp`. El artefacto original es el paquete npm `@kr-pro-labs/clonevibe-mcp`, desarrollado por KR-PRO-Labs y Julian Vane (`@goooem`), y su función es la de actuar como herramienta auxiliar para asistentes de codigo que hablan MCP (Claude Desktop, Cursor, Windsurf, Antigravity, entre otros).
+`clonevibe-mcp` no es un modelo de lenguaje, sino un servidor MCP (Model Context Protocol) publicado por el usuario `fsareawr` en Hugging Face bajo el identificador `fsareawr/clonevibe-mcp`. El artefacto original es el paquete npm `@kr-pro-labs/clonevibe-mcp`, desarrollado por KR-PRO-Labs y Julian Vane (`@goooem`), y su función es la de actuar como herramienta auxiliar para asistentes de codigo que hablan MCP (Claude Desktop, Cursor, Windsurf, Antigravity, entre otros).
 
 El problema que resuelve es concreto: durante el desarrollo asistido por IA (lo que el autor denomina "vibe coding"), el ingeniero localiza un algoritmo, parser de tablas, planificador de reintentos o maquina de estados dentro de un repositorio externo de gran tamano (hasta 50.000 lineas), un paquete `npm:`/`pypi:`/`cargo:` o un bundle JavaScript minificado. Clonar el repositorio completo o instalar el arbol de dependencias contamina el proyecto. `clonevibe-mcp` extrae unicamente el cierre AST transitivo minimo de la funcionalidad objetivo, sustituye las dependencias de terceros por micro-shims inline sin dependencias y verifica la equivalencia de comportamiento 1:1 mediante vectores Golden I/O.
 
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento comparativo entre estas herramientas en la
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace (`fsareawr/clonevibe-mcp`) no declara licencia, idiomas ni pipeline; la unica referencia a licencia MIT proviene del README del paquete original `@kr-pro-labs/clonevibe-mcp`. Conviene verificar la procedencia y el estado del artefacto antes de usarlo en produccion.
-- El repositorio de HuggingFace registra 0 descargas y 0 likes, y fue creado y actualizado en noviembre de 2026; no hay evidencia de mantenimiento ni de adopcion.
+- El repositorio de Hugging Face (`fsareawr/clonevibe-mcp`) no declara licencia, idiomas ni pipeline; la unica referencia a licencia MIT proviene del README del paquete original `@kr-pro-labs/clonevibe-mcp`. Conviene verificar la procedencia y el estado del artefacto antes de usarlo en produccion.
+- El repositorio de Hugging Face registra 0 descargas y 0 likes, y fue creado y actualizado en noviembre de 2026; no hay evidencia de mantenimiento ni de adopcion.
 - La paridad 1:1 se limita a los vectores Golden generados; comportamientos no cubiertos por esos vectores (condiciones de carrera, efectos secundarios de E/S, dependencias de entorno) pueden divergir sin ser detectados.
 - El slicing AST no resuelve casos de reflexion, evaluacion dinamica, generacion de codigo en tiempo de ejecucion ni dependencias cargadas dinamicamente; en esos escenarios el cierre transitivo puede ser incompleto.
 - La sustitucion de dependencias por shims inline puede alterar el comportamiento en casos limite no contemplados por el catalogo (`clonevibe://catalog/zero-dep-shims`).
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas herramientas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fsareawr/clonevibe-mcp
+- Hugging Face: https://huggingface.co/fsareawr/clonevibe-mcp
 - Repositorio GitHub: https://github.com/KR-PRO-Labs/clonevibe-mcp
 - CI: https://github.com/KR-PRO-Labs/clonevibe-mcp/actions/workflows/ci.yml
 - Paquete npm: `@kr-pro-labs/clonevibe-mcp` (https://www.npmjs.com/package/@kr-pro-labs/clonevibe-mcp)

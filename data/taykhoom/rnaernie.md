@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RNAErnie es un modelo de lenguaje especializado en ARN (ácido ribonucleico) basado en la arquitectura BERT, desarrollado por Wang et al. y publicado en Nature Machine Intelligence en 2024. El modelo se entrena sobre secuencias de RNACentral con una estrategia de enmascaramiento consciente de motivos (motif-aware masking) y un ajuste fino guiado por tipos (type-guided fine-tuning), lo que le permite capturar tanto información de secuencia como de contexto funcional de ARN no codificante. El port a HuggingFace, realizado por Taykhoom, convierte los pesos originales de PaddlePaddle a PyTorch y añade soporte para SDPA y Flash Attention 2.
+RNAErnie es un modelo de lenguaje especializado en ARN (ácido ribonucleico) basado en la arquitectura BERT, desarrollado por Wang et al. y publicado en Nature Machine Intelligence en 2024. El modelo se entrena sobre secuencias de RNACentral con una estrategia de enmascaramiento consciente de motivos (motif-aware masking) y un ajuste fino guiado por tipos (type-guided fine-tuning), lo que le permite capturar tanto información de secuencia como de contexto funcional de ARN no codificante. El port a Hugging Face, realizado por Taykhoom, convierte los pesos originales de PaddlePaddle a PyTorch y añade soporte para SDPA y Flash Attention 2.
 
 El modelo resuelve el problema de obtener representaciones vectoriales densas de secuencias de ARN que puedan usarse en tareas posteriores como clasificación de ncRNA, predicción de estructura secundaria o detección de motivos funcionales. Su relevancia actual radica en que es uno de los pocos modelos de lenguaje preentrenados específicamente para ARN con una estrategia de entrenamiento que combina información de motivos conservados y etiquetas de tipo, lo que mejora el rendimiento frente a modelos genéricos de ADN o ARN sin esa guía. Con 86,7 millones de parámetros y una ventana de contexto de 512 tokens, es un modelo ligero y fácil de desplegar en hardware modesto.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RNAErnie (este) | 86,7 M | 512 | RNACentral, motif-aware + type-guided | Apache 2.0 | HuggingFace (safetensors) |
-| RNAErnie2 | no disponible | 2048 | RNACentral v22 (~31M seqs) | Apache 2.0 (presumible) | HuggingFace (coleccion Taykhoom) |
-| DNABERT (referencia generica) | ~110 M | 512 | Genoma humano, k-mer | MIT | HuggingFace |
+| RNAErnie (este) | 86,7 M | 512 | RNACentral, motif-aware + type-guided | Apache 2.0 | Hugging Face (safetensors) |
+| RNAErnie2 | no disponible | 2048 | RNACentral v22 (~31M seqs) | Apache 2.0 (presumible) | Hugging Face (coleccion Taykhoom) |
+| DNABERT (referencia generica) | ~110 M | 512 | Genoma humano, k-mer | MIT | Hugging Face |
 
 La comparativa con DNABERT es orientativa: ambos son modelos BERT de tamano similar, pero DNABERT se entrena sobre ADN con vocabulario de k-mers, mientras que RNAErnie usa nucleotidos individuales y etiquetas de tipo ncRNA. RNAErnie2, el retrain en PyTorch, amplia el contexto a 2048 tokens y se entrena con mas datos, lo que probablemente mejore el rendimiento en secuencias largas, aunque no se dispone de benchmarks comparativos publicos.
 
@@ -77,7 +77,7 @@ La comparativa con DNABERT es orientativa: ambos son modelos BERT de tamano simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/RNAErnie
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/RNAErnie
 - Coleccion RNAErnie: https://huggingface.co/collections/Taykhoom/rnaernie-6a219927c11fdcccedb243db
 - Repositorio oficial (GitHub): https://github.com/CatIIIIIIII/RNAErnie
 - Articulo en Nature Machine Intelligence: https://www.nature.com/articles/s42256-024-00836-4

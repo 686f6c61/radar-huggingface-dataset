@@ -78,10 +78,10 @@ Advertencias del autor sobre la tabla: la primera fila es in-sample, porque la d
 
 | Modelo | Parametros | Contexto | Rechazos (harmful_behaviors, con razonamiento) | Rechazos (JBB-Behaviors) | KL (harmless_alpaca) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| pqhaz/apex-flash-1-heretic-v2 | 321B (MoE) | no disponible | 0/100 | 1/100 | 0,100 | MIT | HuggingFace |
-| pqhaz/apex-flash-1-heretic (etapa 1) | 321B (MoE) | no disponible | 39/100 | 28/100 | 0,095 | no disponible en la fuente | HuggingFace |
-| cantina-security/apex-flash-1-abliterated (fuente) | 321B (MoE) | no disponible | 99/100 | 89/100 | 0 | no disponible en la fuente | HuggingFace |
-| pqhaz/apex-flash-1-abliterated-FP8 / NVFP4 | 321B (MoE) | no disponible | no disponible | no disponible | no disponible | no disponible en la fuente | HuggingFace, FriendliAI |
+| pqhaz/apex-flash-1-heretic-v2 | 321B (MoE) | no disponible | 0/100 | 1/100 | 0,100 | MIT | Hugging Face |
+| pqhaz/apex-flash-1-heretic (etapa 1) | 321B (MoE) | no disponible | 39/100 | 28/100 | 0,095 | no disponible en la fuente | Hugging Face |
+| cantina-security/apex-flash-1-abliterated (fuente) | 321B (MoE) | no disponible | 99/100 | 89/100 | 0 | no disponible en la fuente | Hugging Face |
+| pqhaz/apex-flash-1-abliterated-FP8 / NVFP4 | 321B (MoE) | no disponible | no disponible | no disponible | no disponible | no disponible en la fuente | Hugging Face, FriendliAI |
 
 No se dispone de comparativas con modelos abliterated de otros autores en la informacion proporcionada; la comparacion natural es contra el modelo fuente y la version intermedia del mismo autor.
 
@@ -101,7 +101,7 @@ No se dispone de comparativas con modelos abliterated de otros autores en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pqhaz/apex-flash-1-heretic-v2
+- Modelo en Hugging Face: https://huggingface.co/pqhaz/apex-flash-1-heretic-v2
 - Modelo fuente: https://huggingface.co/cantina-security/apex-flash-1-abliterated
 - Version anterior (etapa 1): https://huggingface.co/pqhaz/apex-flash-1-heretic
 - Cuantizacion FP8 derivada: https://huggingface.co/pqhaz/apex-flash-1-abliterated-FP8

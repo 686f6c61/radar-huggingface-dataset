@@ -92,7 +92,7 @@ La principal diferencia entre las variantes de Ornith-1.5 está en la preservaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit
 - Modelo base original: https://huggingface.co/EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP
 - Modelo Ornith-1.5-35B-A3B (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

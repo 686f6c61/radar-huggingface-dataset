@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itlrc/gpt2-small` es una reproducción desde cero ("from scratch") de la arquitectura GPT-2 Small, publicada por el usuario itlrc en HuggingFace. No es un fine-tuning ni una destilación del modelo original de OpenAI: es un entrenamiento propio de 124.439.808 parámetros sobre el subconjunto `sample-10BT` del dataset FineWeb-Edu, usando el tokenizador GPT-2 original. El resultado es un modelo causal de lenguaje en inglés con 12 bloques Transformer, 768 dimensiones de embedding y una ventana de contexto de 1.024 tokens, empaquetado en safetensors y FP32.
+`itlrc/gpt2-small` es una reproducción desde cero ("from scratch") de la arquitectura GPT-2 Small, publicada por el usuario itlrc en Hugging Face. No es un fine-tuning ni una destilación del modelo original de OpenAI: es un entrenamiento propio de 124.439.808 parámetros sobre el subconjunto `sample-10BT` del dataset FineWeb-Edu, usando el tokenizador GPT-2 original. El resultado es un modelo causal de lenguaje en inglés con 12 bloques Transformer, 768 dimensiones de embedding y una ventana de contexto de 1.024 tokens, empaquetado en safetensors y FP32.
 
 El interés del modelo es principalmente educativo y de investigación: demuestra que es posible reproducir un baseline tipo GPT-2 Small con recursos moderados (10.500 steps, batch efectivo de 524.288 tokens, 42 épocas lógicas sobre unos 5,51-6 mil millones de tokens procesados) y obtener una pérdida de validación de 3,2915 (perplejidad 26,88). Se trata de un modelo base sin instruction tuning, sin RLHF y sin DPO, por lo que su comportamiento es el de un continuador de texto puro y no el de un asistente.
 
@@ -81,10 +81,10 @@ No se han publicado otros resultados de benchmarks (MMLU, GSM8K, HumanEval, ARC,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento HellaSwag |
 |---|---|---|---|---|---|
-| itlrc/gpt2-small | 124,4M | 1.024 | No disponible | HuggingFace (safetensors, código custom) | 27,68% |
-| GPT-2 Small (OpenAI) | 124M | 1.024 | Modified MIT | HuggingFace / OpenAI | No disponible en la información proporcionada |
-| Pythia-160M (EleutherAI) | 160M | 2.048 | Apache 2.0 | HuggingFace | No disponible en la información proporcionada |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 | Apache 2.0 | HuggingFace | No disponible en la información proporcionada |
+| itlrc/gpt2-small | 124,4M | 1.024 | No disponible | Hugging Face (safetensors, código custom) | 27,68% |
+| GPT-2 Small (OpenAI) | 124M | 1.024 | Modified MIT | Hugging Face / OpenAI | No disponible en la información proporcionada |
+| Pythia-160M (EleutherAI) | 160M | 2.048 | Apache 2.0 | Hugging Face | No disponible en la información proporcionada |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 | Apache 2.0 | Hugging Face | No disponible en la información proporcionada |
 
 Los datos de parámetros, contexto y licencia de los modelos alternativos son características públicas ampliamente conocidas; sus cifras de rendimiento no se incluyen porque no forman parte de la información proporcionada para esta ficha y no deben asumirse.
 
@@ -104,7 +104,7 @@ Los datos de parámetros, contexto y licencia de los modelos alternativos son ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itlrc/gpt2-small
+- Modelo en Hugging Face: https://huggingface.co/itlrc/gpt2-small
 - Dataset de entrenamiento (FineWeb-Edu, configuración `sample-10BT`): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tokenizador GPT-2 utilizado: https://huggingface.co/openai-community/gpt2
 - Repositorio nanoGPT (referencia habitual para este tipo de reproducciones, mencionado en las etiquetas del modelo): https://github.com/karpathy/nanoGPT

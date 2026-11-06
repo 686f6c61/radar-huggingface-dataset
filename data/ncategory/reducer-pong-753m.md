@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reducer Pong 753M es un modelo de lenguaje estilo Llama de 752.977.920 parámetros (24 capas, hidden 2048, 32 cabezas query y 8 KV, RoPE, SwiGLU de anchura 2944, RMSNorm y embeddings atados) que ha sido afinado para jugar al Pong a partir de una interfaz de texto. Lo publica el usuario `ncategory` en HuggingFace, pero el trabajo subyacente procede de Reduction of States: el punto de partida es su modelo `CONSEQUENCE_PRUNE_750M`, podado desde un padre de 998M que se entrenó desde cero y se sometió a un entrenamiento de recuperación en un piloto local con MLX.
+Reducer Pong 753M es un modelo de lenguaje estilo Llama de 752.977.920 parámetros (24 capas, hidden 2048, 32 cabezas query y 8 KV, RoPE, SwiGLU de anchura 2944, RMSNorm y embeddings atados) que ha sido afinado para jugar al Pong a partir de una interfaz de texto. Lo publica el usuario `ncategory` en Hugging Face, pero el trabajo subyacente procede de Reduction of States: el punto de partida es su modelo `CONSEQUENCE_PRUNE_750M`, podado desde un padre de 998M que se entrenó desde cero y se sometió a un entrenamiento de recuperación en un piloto local con MLX.
 
 El problema que resuelve es deliberadamente acotado: dado un estado de juego serializado como texto (por ejemplo, `pong ball x 12 y 7 dx right dy up paddle 9 move`), el modelo emite un único token de movimiento (`up`, `stay` o `down`) para imitar una política trivial de "seguir la bola". La innovación relevante no está en el modelo en sí, sino en el empaquetado: los 24 bloques transformer se exportan sin cambios a ONNX, el vocabulario se recorta a los 48 tokens que puede contener un prompt de Pong y los pesos se cuantizan a 4 bits con `MatMulNBits` (bloque 32), de modo que el resultado (429.718.753 bytes) se ejecuta íntegramente en el navegador mediante WebGPU.
 
@@ -78,7 +78,7 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reducer Pong 753M (este modelo) | 752.977.920 | Entrada ONNX de 16 tokens | 259 retornos, 3 fallos, 92,9% de coincidencia con el profesor | other | ONNX cuantizado a 4 bits en HuggingFace |
+| Reducer Pong 753M (este modelo) | 752.977.920 | Entrada ONNX de 16 tokens | 259 retornos, 3 fallos, 92,9% de coincidencia con el profesor | other | ONNX cuantizado a 4 bits en Hugging Face |
 | `CONSEQUENCE_PRUNE_750M` (base, antes del ajuste) | 752.977.920 | No disponible | 37,4% de precision en movimientos sobre datos reservados | No disponible | Modelo base de Reduction of States, no publicado en este repositorio |
 | Profesor (regla de seguir la bola) | No aplica | No aplica | 280 retornos, 0 fallos, 100% de coincidencia | No aplica | Regla trivial, no es un modelo |
 | Pala aleatoria | No aplica | No aplica | 5 retornos, 40 fallos, 34,9% de coincidencia | No aplica | Baseline de control |
@@ -101,7 +101,7 @@ No se dispone de otros modelos comparables de la misma categoria (transformers p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ncategory/reducer-pong-753m
+- Modelo en Hugging Face: https://huggingface.co/ncategory/reducer-pong-753m
 - Demo de Reduction of States: https://reductionofstates.com/research/
 - Ficheros incluidos en el repositorio: `pong_q4.onnx`, `pong_tokens.json`, `EVAL.json`, `FINETUNE.json`
 - Huella sha256 de `pong_q4.onnx`: `4703f09a1e6ef0fae3a377aa9ca09bd3a3802d43a8b969e6acc4cc536f7f1dc8`

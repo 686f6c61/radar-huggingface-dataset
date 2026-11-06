@@ -4,7 +4,7 @@
 
 `mrseongminkim/mistral-7b-qlora-ai2_arc-full-mcqa-setllm-adapter` es un adaptador LoRA entrenado con QLoRA sobre un modelo base Mistral 7B, tal y como se deduce del propio identificador del repositorio. El adaptador se ha ajustado sobre el conjunto completo de preguntas de eleccion multiple del dataset AI2 Reasoning Challenge (AI2 ARC), un benchmark de razonamiento cientifico a nivel de escuela primaria y secundaria. El repositorio pesa 0,1 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo de 7.000 millones de parametros, por lo que no es autonomo: requiere cargar el modelo base subyacente para poder ejecutarse.
 
-El autor es el usuario de HuggingFace `mrseongminkim` y el modelo se publico el 26 de septiembre de 2026. En el momento de redactar esta ficha cuenta con 0 descargas y 0 "likes", y su model card es la plantilla autogenerada de HuggingFace sin rellenar: no incluye descripcion, licencia, idiomas, detalles de entrenamiento ni resultados de evaluacion. Esto limita drasticamente la informacion verificable y obliga a marcar como "no disponible" la mayor parte de las especificaciones.
+El autor es el usuario de Hugging Face `mrseongminkim` y el modelo se publico el 26 de septiembre de 2026. En el momento de redactar esta ficha cuenta con 0 descargas y 0 "likes", y su model card es la plantilla autogenerada de Hugging Face sin rellenar: no incluye descripcion, licencia, idiomas, detalles de entrenamiento ni resultados de evaluacion. Esto limita drasticamente la informacion verificable y obliga a marcar como "no disponible" la mayor parte de las especificaciones.
 
 La relevancia de esta ficha es, por tanto, acotada: se trata de un artefacto de investigacion o de un experimento de ajuste fino, no de un modelo listo para produccion. Los tags `transformers`, `safetensors` y `endpoints_compatible` indican que es cargable con la libreria Transformers y desplegable en Inference Endpoints, pero la ausencia de licencia explicita y de evaluacion publicada son limitaciones serias para cualquier uso profesional.
 
@@ -87,7 +87,7 @@ No se dispone de resultados comparativos de exactitud en ARC ni de otros benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrseongminkim/mistral-7b-qlora-ai2_arc-full-mcqa-setllm-adapter
+- Modelo en Hugging Face: https://huggingface.co/mrseongminkim/mistral-7b-qlora-ai2_arc-full-mcqa-setllm-adapter
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Dataset AI2 Reasoning Challenge (referencia del ajuste): https://huggingface.co/datasets/allenai/ai2_arc
 - Paper original de AI2 ARC (Clark et al., 2018): https://arxiv.org/abs/1803.05457

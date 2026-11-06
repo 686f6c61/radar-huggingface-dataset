@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio publica un ajuste posterior (post-training) del modelo Qwen3.8-27B, desarrollado por el usuario de HuggingFace nerkyor. La cadena declarada es: Qwen3.8-27B oficial → SFT + SimPO110 (la base "EfficientThink", sin censura) → SFT de continuación K3 → SFT de semana 2 → primera ronda RLOO (182 grupos) → nueva ronda SFT → segunda ronda RLOO (172 grupos) → Coder390. El resultado son cinco niveles de safetensors (BF16, FP8 estático Block128, NVFP4 W4A16, NVFP4 W4A4 y NVFP4 W4A4-W8A8), más INT8 W8A8, NInfer W4A4 y GGUF, todos multimodales (texto + imagen/vídeo) y con la cabeza MTP BF16 incluida.
+Este repositorio publica un ajuste posterior (post-training) del modelo Qwen3.8-27B, desarrollado por el usuario de Hugging Face nerkyor. La cadena declarada es: Qwen3.8-27B oficial → SFT + SimPO110 (la base "EfficientThink", sin censura) → SFT de continuación K3 → SFT de semana 2 → primera ronda RLOO (182 grupos) → nueva ronda SFT → segunda ronda RLOO (172 grupos) → Coder390. El resultado son cinco niveles de safetensors (BF16, FP8 estático Block128, NVFP4 W4A16, NVFP4 W4A4 y NVFP4 W4A4-W8A8), más INT8 W8A8, NInfer W4A4 y GGUF, todos multimodales (texto + imagen/vídeo) y con la cabeza MTP BF16 incluida.
 
 El problema que aborda es concreto: el modelo original ya tiene la respuesta local, pero sigue rederivando con fórmulas del tipo "Wait / Actually" hasta agotar el contexto de 94K y termina sin respuesta final. El entrenamiento con RLOO penaliza respuestas vacías y truncadas, y según la model card las truncaciones a 94K bajan de 4 a 1 en GPQA y de 13 a 3 en LCB.
 
@@ -105,9 +105,9 @@ No se han publicado resultados de benchmarks independientes ni verificables en l
 
 | Modelo | Parametros | Contexto | GPQA / MMLU / LCB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Coder390 (este modelo) | 460,7 M según safetensors; "27B" en el nombre (dato en disputa) | 100K (truncación a 94K) | 178 / 445-450 / 90 (FP8) | apache-2.0 | HuggingFace, variantes safetensors, GGUF, INT8, NInfer |
-| Qwen3.8-27B oficial | 27B según el nombre | 100K según el protocolo citado | 177 / 444 / 83 | no disponible en la información | HuggingFace (Qwen/Qwen3.8-27B) |
-| EfficientThink base (SFT + SimPO110) | mismo linaje que el modelo evaluado | 100K según el protocolo citado | 171 / 442 / 89 | apache-2.0 (según la ficha del derivado) | HuggingFace (nerkyor) |
+| Coder390 (este modelo) | 460,7 M según safetensors; "27B" en el nombre (dato en disputa) | 100K (truncación a 94K) | 178 / 445-450 / 90 (FP8) | apache-2.0 | Hugging Face, variantes safetensors, GGUF, INT8, NInfer |
+| Qwen3.8-27B oficial | 27B según el nombre | 100K según el protocolo citado | 177 / 444 / 83 | no disponible en la información | Hugging Face (Qwen/Qwen3.8-27B) |
+| EfficientThink base (SFT + SimPO110) | mismo linaje que el modelo evaluado | 100K según el protocolo citado | 171 / 442 / 89 | apache-2.0 (según la ficha del derivado) | Hugging Face (nerkyor) |
 | sft-base-rloo (ronda intermedia) | mismo linaje | 100K | 177 / 448 / 90 | no disponible en la información | no publicado como repositorio independiente según los datos disponibles |
 
 Alternativas de otros fabricantes con tamaño nominal similar: no disponible en la información proporcionada; no se aportan comparaciones con Llama, Mistral, DeepSeek u otros.
@@ -129,7 +129,7 @@ Alternativas de otros fabricantes con tamaño nominal similar: no disponible en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - Modelo base (EfficientThink SFT + SimPO): https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF / GGUF-NInfer (llama.cpp, NInfer, MTP integrado): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer

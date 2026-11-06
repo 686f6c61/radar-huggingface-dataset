@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05 fine-tune, `sam-guided-vlas`) | 4.143.404.816 | no disponible | sin resultados de evaluacion | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| `lerobot/pi05_base` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | apache-2.0 (segun la model card del ajuste) | HuggingFace |
+| Este checkpoint (pi05 fine-tune, `sam-guided-vlas`) | 4.143.404.816 | no disponible | sin resultados de evaluacion | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| `lerobot/pi05_base` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | apache-2.0 (segun la model card del ajuste) | Hugging Face |
 | Otros VLA comparables (pi0 original, OpenVLA, GR00T N1, entre otros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas de la misma categoria; la unica referencia directa y confirmada es el modelo base del que deriva.
@@ -106,7 +106,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__lr5x__steps_45k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__lr5x__steps_45k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live

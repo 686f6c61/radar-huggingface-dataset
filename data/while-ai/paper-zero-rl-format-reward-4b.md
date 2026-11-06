@@ -73,9 +73,9 @@ Comparacion receta frente a baseline: +0,094 con intervalo [+0,052, +0,139] sobr
 
 | Modelo | Parametros | Contexto | pass@1 (MATH-500, niveles 3-5) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paper-zero-rl-format-reward-4b (brazo receta) | 4B (base) + LoRA | No disponible | 0,72 | apache-2.0 | Adaptador PEFT en HuggingFace |
+| paper-zero-rl-format-reward-4b (brazo receta) | 4B (base) + LoRA | No disponible | 0,72 | apache-2.0 | Adaptador PEFT en Hugging Face |
 | paper-zero-rl-format-reward-4b (brazo baseline) | 4B (base) + LoRA | No disponible | 0,63 | apache-2.0 | Subcarpeta `baseline` del mismo repositorio |
-| Qwen/Qwen3.5-4B-Base, sin entrenar | 4B | No disponible | 0,51 | No disponible en la informacion proporcionada | Modelo base en HuggingFace |
+| Qwen/Qwen3.5-4B-Base, sin entrenar | 4B | No disponible | 0,51 | No disponible en la informacion proporcionada | Modelo base en Hugging Face |
 
 No se dispone de datos verificables de modelos de terceros de la misma categoria (adaptadores de RLVR sobre bases de 3B-4B) en la informacion proporcionada, por lo que no se incluye una comparacion externa de rendimiento.
 
@@ -94,7 +94,7 @@ No se dispone de datos verificables de modelos de terceros de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/paper-zero-rl-format-reward-4b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/paper-zero-rl-format-reward-4b
 - Receta reproducible: https://github.com/whilehq/whileai-sdk/tree/main/recipes/papers/zero-rl-format-reward
 - Coleccion "Papers, replicated": https://huggingface.co/collections/while-ai/papers-replicated-6ab271de22542eb550d4251c
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/HuggingFaceH4/MATH-500

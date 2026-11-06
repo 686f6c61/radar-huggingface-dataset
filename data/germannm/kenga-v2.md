@@ -102,5 +102,5 @@ La diferencia relevante no es de escala sino de propósito: los tres modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/Kenga-v2
+- Modelo en Hugging Face: https://huggingface.co/GermannM/Kenga-v2
 - La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo, su autor, el lenguaje Kenga ni el proyecto `kenga-lite`; los resultados obtenidos eran noticias en italiano sin relación alguna con el contenido. No hay, por tanto, papers, blogs, repositorios o demos adicionales que enlazar.

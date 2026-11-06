@@ -4,7 +4,7 @@
 
 Qwen3.8-27B es un modelo de visión-lenguaje (VLM) denso de 27 000 millones de parámetros desarrollado por Alibaba Cloud, que forma parte de la familia Qwen3.8. Se construye sobre la arquitectura Qwen3.5 e incorpora una torre de visión (vision tower) que le permite procesar simultáneamente texto e imágenes. El modelo está diseñado para tareas de codificación, trabajo profesional, investigación y agentes autónomos de largo horizonte, con una ventana de contexto nativa de 262 000 tokens extensible hasta 1 millón.
 
-La principal innovación técnica es su arquitectura híbrida de atención: emplea atención lineal en 48 de sus 64 capas, lo que reduce el coste computacional en contextos largos, y mantiene atención completa en las 16 capas restantes. Además, incluye una cabeza de draft MTP (Multi-Token Prediction) integrada para decodificación especulativa, lo que acelera la inferencia. El modelo se distribuye bajo licencia Apache 2.0, aunque el acceso en HuggingFace está restringido y requiere aceptar condiciones adicionales.
+La principal innovación técnica es su arquitectura híbrida de atención: emplea atención lineal en 48 de sus 64 capas, lo que reduce el coste computacional en contextos largos, y mantiene atención completa en las 16 capas restantes. Además, incluye una cabeza de draft MTP (Multi-Token Prediction) integrada para decodificación especulativa, lo que acelera la inferencia. El modelo se distribuye bajo licencia Apache 2.0, aunque el acceso en Hugging Face está restringido y requiere aceptar condiciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La principal innovación técnica es su arquitectura híbrida de atención: empl
 | Longitud de contexto | 262 000 tokens nativos, extensible a 1 000 000 |
 | Tipos de cuantizacion | No disponible (repo en safetensors; se pueden generar GGUF/AWQ pero no hay oficiales publicados) |
 | Idiomas soportados | No disponible (se espera multilingüe, típico de la familia Qwen, pero no confirmado) |
-| Licencia | Apache 2.0 (con acceso gated en HuggingFace) |
+| Licencia | Apache 2.0 (con acceso gated en Hugging Face) |
 | Formato de pesos | safetensors (55,6 GB en repo) |
 
 ## Arquitectura y entrenamiento
@@ -46,7 +46,7 @@ No se han publicado detalles específicos sobre el dataset de entrenamiento (nú
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La búsqueda web menciona que el modelo se evalúa en MathVision con un prompt fijo, pero no se proporcionan cifras concretas. Se recomienda consultar la ficha oficial del modelo en HuggingFace o el blog de Qwen para obtener datos de MMLU, HumanEval, GSM8K u otros benchmarks.
+No se han publicado resultados de benchmarks en la información disponible. La búsqueda web menciona que el modelo se evalúa en MathVision con un prompt fijo, pero no se proporcionan cifras concretas. Se recomienda consultar la ficha oficial del modelo en Hugging Face o el blog de Qwen para obtener datos de MMLU, HumanEval, GSM8K u otros benchmarks.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ Qwen3.8-27B se sitúa en un punto intermedio entre los modelos pequeños (7B) y 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, lo que significa que es necesario aceptar condiciones adicionales antes de poder descargarlo. Esto puede limitar su uso en entornos corporativos que requieran acceso inmediato.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, lo que significa que es necesario aceptar condiciones adicionales antes de poder descargarlo. Esto puede limitar su uso en entornos corporativos que requieran acceso inmediato.
 - Sesgos y alucinaciones: al ser un modelo de lenguaje multimodal, puede generar contenido inexacto o inventado, especialmente en tareas de razonamiento complejo o con imágenes ambiguas. Se recomienda verificar las salidas en aplicaciones críticas.
 - Idiomas: no se ha confirmado la lista de idiomas soportados. Aunque la familia Qwen suele ser multilingüe, no hay garantía de cobertura uniforme para todos los idiomas.
 - Contexto largo: aunque la ventana nativa es de 262K tokens, el rendimiento en contextos extremadamente largos (cerca de 1M) puede degradarse, y el coste de memoria aumenta significativamente.
@@ -79,8 +79,8 @@ Qwen3.8-27B se sitúa en un punto intermedio entre los modelos pequeños (7B) y 
 
 ## Enlaces
 
-- HuggingFace (modelo oficial): https://huggingface.co/Qwen/Qwen3.8-27B
-- HuggingFace (repo espejo con acceso gated): https://huggingface.co/balajiduraisamy/Qwen3.8-27B
+- Hugging Face (modelo oficial): https://huggingface.co/Qwen/Qwen3.8-27B
+- Hugging Face (repo espejo con acceso gated): https://huggingface.co/balajiduraisamy/Qwen3.8-27B
 - Blog de AMD sobre ejecución en Ryzen AI Max y Radeon: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Recetas vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Página en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`coreymichaud/ev-predictor` es un repositorio publicado en HuggingFace por el desarrollador Corey Michaud, cuyo identificador sugiere un modelo orientado a la prediccion de probabilidad de compra de un vehiculo electrico (EV). El unico metadato confirmado en la model card es la licencia MIT; no se declara pipeline de HuggingFace, ni idiomas, ni arquitectura, ni tamano de parametros. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
+`coreymichaud/ev-predictor` es un repositorio publicado en Hugging Face por el desarrollador Corey Michaud, cuyo identificador sugiere un modelo orientado a la prediccion de probabilidad de compra de un vehiculo electrico (EV). El unico metadato confirmado en la model card es la licencia MIT; no se declara pipeline de Hugging Face, ni idiomas, ni arquitectura, ni tamano de parametros. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
 
 La busqueda web asocia este identificador a un proyecto de GitHub del mismo autor titulado `will-you-buy-an-ev`, descrito como "an end-to-end machine learning project for predicting EV purchase likelihood, including data preprocessing, feature engineering, model training, and evaluation". Esto apunta a un flujo de machine learning clasico (preprocesado tabular, ingenieria de caracteristicas, entrenamiento y evaluacion de un clasificador o regresor de propension), mas que a un modelo de lenguaje generativo. Conviene subrayar que esta conclusion es una inferencia a partir del repositorio asociado y no una confirmacion explicita en la model card.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: no hay documentacion tecnica, ni ficha de dato
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card de HuggingFace. El repositorio no declara tipo de red (transformer, MoE, SSM, hibrida o modelo clasico de machine learning), numero de parametros, ni formato de serializacion de pesos.
+No se ha publicado informacion sobre la arquitectura en la model card de Hugging Face. El repositorio no declara tipo de red (transformer, MoE, SSM, hibrida o modelo clasico de machine learning), numero de parametros, ni formato de serializacion de pesos.
 
 El unico contexto disponible procede del repositorio de GitHub asociado, `coreymichaud/will-you-buy-an-ev`, que se describe como un proyecto end-to-end de machine learning para predecir la probabilidad de compra de un vehiculo electrico, con fases de preprocesado de datos, ingenieria de caracteristicas, entrenamiento y evaluacion. No se especifican el numero de tokens o muestras de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF o DPO (poco probables en un pipeline tabular). Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. Toda la seccion debe considerarse, por tanto, no disponible.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coreymichaud/ev-predictor | no disponible | no disponible | no disponible | MIT | HuggingFace (0 descargas, 0 likes) |
+| coreymichaud/ev-predictor | no disponible | no disponible | no disponible | MIT | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado modelos comparables en la informacion disponible, dado que no se conoce la arquitectura ni la tarea exacta declarada por el autor mas alla de la referencia al repositorio de prediccion de compra de EV.
@@ -81,6 +81,6 @@ No se han identificado modelos comparables en la informacion disponible, dado qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coreymichaud/ev-predictor
+- Hugging Face: https://huggingface.co/coreymichaud/ev-predictor
 - Repositorio GitHub asociado: https://github.com/coreymichaud/will-you-buy-an-ev
 - Perfil de GitHub del autor: https://github.com/coreymichaud

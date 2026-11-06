@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wan2.2-TI2V-5B-FP8 es una version cuantizada en FP8 del modelo de generacion de video Wan-AI/Wan2.2-TI2V-5B, publicada por el usuario Rin247. Se trata de un paquete de pesos en formato safetensors, cuantizados en FP8 con estrategia *weight-only*, que agrupa los tres componentes necesarios para inferencia: el denoiser, el text encoder y el VAE. La nomenclatura TI2V indica que el modelo base cubre tanto generacion de video a partir de texto como a partir de imagen, y el pipeline declarado en HuggingFace es image-to-video.
+Wan2.2-TI2V-5B-FP8 es una version cuantizada en FP8 del modelo de generacion de video Wan-AI/Wan2.2-TI2V-5B, publicada por el usuario Rin247. Se trata de un paquete de pesos en formato safetensors, cuantizados en FP8 con estrategia *weight-only*, que agrupa los tres componentes necesarios para inferencia: el denoiser, el text encoder y el VAE. La nomenclatura TI2V indica que el modelo base cubre tanto generacion de video a partir de texto como a partir de imagen, y el pipeline declarado en Hugging Face es image-to-video.
 
 El modelo base pertenece a la familia Wan2.2 de Wan-AI y, segun su nombre, ronda los 5.000 millones de parametros. La relevancia de esta version concreta es practica: al almacenar los pesos en FP8 se reduce la huella en disco y en memoria respecto a los pesos en precision completa, lo que facilita desplegar generacion de video en GPUs con VRAM limitada. El repositorio ocupa 11,7 GB e incluye la etiqueta aquarion, que identifica la herramienta de cuantizacion y empaquetado empleada (Aquarion Forge).
 
@@ -19,12 +19,12 @@ Conviene senalar que la model card es minima: no documenta licencia, idiomas sop
 | Idiomas soportados | No disponible |
 | Licencia | No disponible (la model card no la especifica; debe verificarse la licencia del modelo base Wan-AI/Wan2.2-TI2V-5B) |
 | Formato de pesos | safetensors en FP8 (weight-only), empaquetados con Aquarion Forge |
-| Tarea declarada | Text-to-video e image-to-video (pipeline de HuggingFace: image-to-video) |
+| Tarea declarada | Text-to-video e image-to-video (pipeline de Hugging Face: image-to-video) |
 | Modelo base | Wan-AI/Wan2.2-TI2V-5B |
 | Componentes incluidos | Denoiser, text encoder y VAE |
 | Libreria | diffusers |
 | Tamano del repositorio | 11,7 GB |
-| Fecha de creacion | 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-20 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -36,7 +36,7 @@ Respecto al entrenamiento, no hay ningun dato disponible: no se indican el numer
 ## Capacidades
 
 - Generacion de video a partir de una descripcion textual (text-to-video), segun la etiqueta declarada por el autor.
-- Generacion de video a partir de una imagen de entrada (image-to-video), que es el pipeline que HuggingFace asigna al repositorio.
+- Generacion de video a partir de una imagen de entrada (image-to-video), que es el pipeline que Hugging Face asigna al repositorio.
 - Paquete completo para inferencia: incluye denoiser, text encoder y VAE, de modo que no es necesario descargar componentes por separado.
 - Compatibilidad declarada con la libreria diffusers.
 - Pesos en FP8 con descompresion en tiempo de ejecucion, lo que permite cargar el modelo en entornos con memoria limitada.
@@ -92,6 +92,6 @@ La comparacion se limita al modelo base, ya que los resultados de la busqueda we
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rin247/Wan2.2-TI2V-5B-FP8
+- Repositorio en Hugging Face: https://huggingface.co/Rin247/Wan2.2-TI2V-5B-FP8
 - Modelo base citado en la model card: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo; los resultados obtenidos corresponden a paginas corporativas de Microsoft y no guardan relacion con este repositorio.

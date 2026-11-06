@@ -2,7 +2,7 @@
 
 ## Resumen
 
-allex-eef-N-h16 es un checkpoint de tipo *mid-train* (paso 30000) de un modelo visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario jungwook235 en HuggingFace. Se construye sobre el modelo base RLDX-1-PT-IMG y pertenece a la familia ALLEX, especializada en generar acciones de control para robots manipuladores bimanuales. El modelo predice acciones expresadas como poses absolutas de efector final (EEF) en un espacio de 50 dimensiones.
+allex-eef-N-h16 es un checkpoint de tipo *mid-train* (paso 30000) de un modelo visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario jungwook235 en Hugging Face. Se construye sobre el modelo base RLDX-1-PT-IMG y pertenece a la familia ALLEX, especializada en generar acciones de control para robots manipuladores bimanuales. El modelo predice acciones expresadas como poses absolutas de efector final (EEF) en un espacio de 50 dimensiones.
 
 El modelo tiene 6.912.896.320 parámetros (unos 6,91 mil millones) en formato safetensors, con un repositorio de 57,5 GB. Su rasgo distintivo es la definición del espacio de acción: 50 dimensiones que combinan 9 grados de libertad de muñeca izquierda respecto a la base, 9 de muñeca derecha, 15 articulaciones de mano izquierda, 15 de mano derecha y 2 articulaciones de cuello, excluyendo explícitamente la cintura. El horizonte de predicción es de 16 pasos.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Horizonte de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| allex-eef-N-h16 | 6,91 mil millones | no disponible | 16 pasos | other | HuggingFace (0 descargas) |
-| RLDX-1-PT-IMG (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Otros VLA de la familia ALLEX/RLDX de 48D | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| allex-eef-N-h16 | 6,91 mil millones | no disponible | 16 pasos | other | Hugging Face (0 descargas) |
+| RLDX-1-PT-IMG (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Otros VLA de la familia ALLEX/RLDX de 48D | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas externas (OpenVLA, RDT, pi0, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de parametros, contexto, rendimiento, licencia o disponibilidad de modelos comparables dentro de la informacion proporcionada, por lo que la comparacion cuantitativa no puede completarse.
@@ -92,7 +92,7 @@ No se dispone de datos verificados de parametros, contexto, rendimiento, licenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/allex-eef-N-h16
+- Hugging Face: https://huggingface.co/jungwook2358/allex-eef-N-h16
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT-IMG
 - Codigo de etapa 2: repositorio `jungwook235/RLDX-1-egopi`, rama `feat/allex-eef-h16-midtrain`
 - Scripts y documentacion: repositorio `jungwook235/action-tokenizer`, rutas `gpu26-server/submit/allex_eef_*` y `docs/allex_eef_midtrain/README.md`

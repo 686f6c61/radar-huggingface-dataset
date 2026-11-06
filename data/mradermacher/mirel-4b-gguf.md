@@ -32,7 +32,7 @@ Respecto al proceso de conversión, la model card de mradermacher indica los met
 - Generación de texto conversacional: el repositorio está etiquetado como "conversational", lo que implica plantilla de chat y orientación a diálogo multi-turno.
 - Capacidades multimodales: la presencia de ficheros `MIREL-4B.mmproj-f16.gguf` y `MIREL-4B.mmproj-Q8_0.gguf` apunta a soporte de entrada multimodal (previsiblemente imagen) en el modelo base, aunque la model card no lo confirma ni detalla.
 - Idiomas: únicamente inglés según la etiqueta `language: en` de la model card.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a través de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face.
 - Tool calling, function calling y razonamiento multi-paso en agentes: no disponible.
 - Modo de razonamiento explícito ("thinking mode"), audio u otras capacidades especiales: no disponible.
 
@@ -70,7 +70,7 @@ No se dispone de datos verificados sobre modelos comparables en la información 
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/MIREL-4B-GGUF | 4.205.751.296 | no disponible | no disponible | GGUF (12 cuantizaciones + 2 mmproj) | HuggingFace, 0 descargas |
+| mradermacher/MIREL-4B-GGUF | 4.205.751.296 | no disponible | no disponible | GGUF (12 cuantizaciones + 2 mmproj) | Hugging Face, 0 descargas |
 | Alternativas de ~4B en GGUF | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos verificados sobre modelos comparables en la información 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/MIREL-4B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/MIREL-4B-GGUF
 - Modelo base: https://huggingface.co/luo352/MIREL-4B
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#MIREL-4B-GGUF
 - Peticiones de modelos al autor: https://huggingface.co/mradermacher/model_requests

@@ -76,7 +76,7 @@ No disponible. Los Activation Reconstructors son artefactos de investigación es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agu18dec/qwen3.6-27b-mlayer-ar-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/agu18dec/qwen3.6-27b-mlayer-ar-checkpoints
 - Árbol de ficheros: https://huggingface.co/agu18dec/qwen3.6-27b-mlayer-ar-checkpoints/tree/main
 - Repositorio oficial de Qwen3.6 (modelo base): https://github.com/QwenLM/Qwen3.6
 - Guía de Qwen 3.6-27B (blog externo): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

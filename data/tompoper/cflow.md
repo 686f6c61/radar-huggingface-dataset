@@ -95,7 +95,7 @@ No se dispone de comparativas con otros modelos MoE de tamaño similar en CPU. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tompoper/cflow
+- Modelo en Hugging Face: https://huggingface.co/tompoper/cflow
 - Paper (arXiv): https://arxiv.org/abs/2608.23841
 - Repositorio de archivos del modelo: https://huggingface.co/tompoper/cflow/tree/main
 - Perfil del autor: https://huggingface.co/tompoper/models

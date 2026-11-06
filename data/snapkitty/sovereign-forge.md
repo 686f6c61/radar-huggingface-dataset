@@ -4,7 +4,7 @@
 
 Sovereign Forge no es un modelo de inteligencia artificial al uso, sino un kernel de verificación escrito en C99 que comprueba testigos (witnesses) de álgebra lineal mediante aritmética entera exacta con detección explícita de desbordamiento. Desarrollado por Snapkitty, el proyecto se presenta como una herramienta independiente que no confía en el solver que produjo la respuesta: recalcula el invariante definido y devuelve un resultado determinista (`PASS`, `FAIL` u `OVERFLOW`). Su relevancia actual radica en la creciente necesidad de auditoría y reproducibilidad en pipelines de cómputo científico y aprendizaje automático, donde la verificación independiente de resultados intermedios es crítica.
 
-El kernel cubre tres obligaciones de verificación: inversa de matriz, solución de sistemas lineales y mínimos cuadrados, todo ello con comprobación de multiplicación, suma y resta con detección de overflow. Incluye además pruebas formales en Lean 4 (15 teoremas sin términos `sorry`), un harness de fuzzing con libFuzzer y builds reproducibles. Aunque no se trata de un modelo de lenguaje, esta ficha lo documenta como una pieza de software técnico, dado que su entrada en HuggingFace carece de metadatos de modelo convencionales.
+El kernel cubre tres obligaciones de verificación: inversa de matriz, solución de sistemas lineales y mínimos cuadrados, todo ello con comprobación de multiplicación, suma y resta con detección de overflow. Incluye además pruebas formales en Lean 4 (15 teoremas sin términos `sorry`), un harness de fuzzing con libFuzzer y builds reproducibles. Aunque no se trata de un modelo de lenguaje, esta ficha lo documenta como una pieza de software técnico, dado que su entrada en Hugging Face carece de metadatos de modelo convencionales.
 
 El proyecto se encuentra en fase de desarrollo activo, con una integración para sellar resultados en un ledger distribuido de tipo WORM (Write-Once-Read-Many) y certificados CBOR canónicos. Su superficie de auditoría es reducida (~2.000 líneas de código C), lo que facilita su revisión manual y su integración en entornos de alto riesgo.
 
@@ -73,7 +73,7 @@ No disponible. Sovereign Forge no tiene comparables directos entre modelos de IA
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/sovereign-forge
+- Hugging Face: https://huggingface.co/Snapkitty/sovereign-forge
 - Repositorio de codigo (segun README): https://github.com/SNAPKITTYWEST/sovereign-forge
 - Documentacion: docs/USER_GUIDE.md, docs/DEVELOPER.md, docs/SECURITY.md, docs/ARCHITECTURE.md (dentro del repositorio)
 - Especificaciones formales: spec/instruction-semantics.md, spec/type-rules.md, spec/verification-policy.md, spec/proof-certificate.schema.json (dentro del repositorio)

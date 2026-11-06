@@ -83,8 +83,8 @@ La informacion disponible solo documenta una comparacion, contra el propio model
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rology/rad-decider | 0,8 B base + LoRA r = 32 | no disponible | 0,90-0,99 en las tareas evaluadas; AUROC 0,98 en conflicto de lado sobre informes reales | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3.5-0.8B (sin ajustar) | 0,8 B | no disponible | 0,13-0,69 en las mismas tareas; AUROC 0,55 en conflicto de lado | apache-2.0 (segun la model card del adaptador) | HuggingFace |
+| Rology/rad-decider | 0,8 B base + LoRA r = 32 | no disponible | 0,90-0,99 en las tareas evaluadas; AUROC 0,98 en conflicto de lado sobre informes reales | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3.5-0.8B (sin ajustar) | 0,8 B | no disponible | 0,13-0,69 en las mismas tareas; AUROC 0,55 en conflicto de lado | apache-2.0 (segun la model card del adaptador) | Hugging Face |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,6 +103,6 @@ La informacion disponible solo documenta una comparacion, contra el propio model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rology/rad-decider
+- Modelo en Hugging Face: https://huggingface.co/Rology/rad-decider
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

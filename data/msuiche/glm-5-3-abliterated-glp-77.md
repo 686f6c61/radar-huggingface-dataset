@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `msuiche/GLM-5.3-abliterated-GLP-77` es una variante modificada del modelo GLM-5.3 de Z.ai, publicada por el usuario msuiche en HuggingFace. Su nombre y etiquetas indican que se trata de una versión "abliterada", es decir, un modelo al que se le ha eliminado la dirección de rechazo (refusal direction) mediante vectores de control, una técnica conocida como abliteration. El objetivo es permitir que el modelo responda sin las restricciones de seguridad habituales, lo que puede resultar útil en entornos de investigación o desarrollo donde se necesita una salida sin filtros.
+El modelo `msuiche/GLM-5.3-abliterated-GLP-77` es una variante modificada del modelo GLM-5.3 de Z.ai, publicada por el usuario msuiche en Hugging Face. Su nombre y etiquetas indican que se trata de una versión "abliterada", es decir, un modelo al que se le ha eliminado la dirección de rechazo (refusal direction) mediante vectores de control, una técnica conocida como abliteration. El objetivo es permitir que el modelo responda sin las restricciones de seguridad habituales, lo que puede resultar útil en entornos de investigación o desarrollo donde se necesita una salida sin filtros.
 
 Sin embargo, los datos disponibles presentan una discrepancia importante: el repositorio declara 473.088 parámetros totales y un tamaño de 0.0 GB, lo que sugiere que no contiene el modelo completo de GLM-5.3 (que tiene miles de millones de parámetros), sino probablemente un adaptador, un vector de control o un archivo GGUF de tamaño reducido. El acceso es restringido (gated), por lo que no se puede verificar el contenido real. La licencia es MIT, y el formato de pesos parece ser GGUF según las etiquetas.
 
@@ -68,7 +68,7 @@ No se dispone de datos suficientes para una comparacion detallada de rendimiento
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en HuggingFace antes de poder descargar cualquier archivo.
+- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en Hugging Face antes de poder descargar cualquier archivo.
 - Tamano inusualmente pequeno: con 473.088 parametros y 0.0 GB, es muy probable que no contenga el modelo completo GLM-5.3, sino un adaptador o vector de control. Esto limita su uso directo.
 - Falta de documentacion: no hay README, descripcion ni ejemplos de uso en la informacion proporcionada.
 - Riesgo de alucinacion: al ser una modificacion sin entrenamiento adicional, puede heredar los sesgos y alucinaciones del modelo base, aunque no se puede confirmar.
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para una comparacion detallada de rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/msuiche/GLM-5.3-abliterated-GLP-77
+- Repositorio Hugging Face: https://huggingface.co/msuiche/GLM-5.3-abliterated-GLP-77
 - Modelo similar (GLM-5.3-Flash-abliterated-GLP-44): https://huggingface.co/msuiche/GLM-5.3-Flash-abliterated-GLP-44
 - Informacion sobre GLM-5.3 en OpenLM.ai: https://openlm.ai/glm-5.5/
 - Documentacion de GLM-5.3 en Z.ai: https://docs.z.ai/guides/llm/glm-5.3

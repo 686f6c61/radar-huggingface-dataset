@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AaravAgarwalna/video-understanding-proto` no es un modelo de aprendizaje automatico desplegable, sino un repositorio de notas de investigacion exploratorias sobre comprension de video alojado en HuggingFace. El autor, AaravAgarwalna, lo etiqueta como `research-notes` y `video-understanding`, y la propia model card aclara de forma explicita que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado. El unico artefacto tecnico presente es un fichero safetensors con 24.832 parametros totales y un tamano de repositorio de 0,0 GB, lo que sugiere un residuo de prueba mas que un modelo funcional.
+`AaravAgarwalna/video-understanding-proto` no es un modelo de aprendizaje automatico desplegable, sino un repositorio de notas de investigacion exploratorias sobre comprension de video alojado en Hugging Face. El autor, AaravAgarwalna, lo etiqueta como `research-notes` y `video-understanding`, y la propia model card aclara de forma explicita que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado. El unico artefacto tecnico presente es un fichero safetensors con 24.832 parametros totales y un tamano de repositorio de 0,0 GB, lo que sugiere un residuo de prueba mas que un modelo funcional.
 
 El contenido se reduce a dos documentos: `reading.md` (artefacto principal) y `README.md`. La nota plantea el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y un contexto de evaluacion basado en MSR-VTT y ActivityNet Captions, sin aportar resultados, semillas, comandos ni registros.
 
@@ -80,7 +80,7 @@ No disponible. El repositorio no es un modelo con capacidades declaradas, por lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AaravAgarwalna/video-understanding-proto
+- Hugging Face: https://huggingface.co/AaravAgarwalna/video-understanding-proto
 - Paper: no disponible
 - Blog o nota tecnica externa: no disponible
 - Repositorio de codigo: no disponible

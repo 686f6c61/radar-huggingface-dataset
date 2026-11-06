@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`durgarao40/my-awesome-model` es un modelo publicado en HuggingFace con la etiqueta de arquitectura `bert` y el pipeline declarado `feature-extraction`. Se trata, por tanto, de un modelo de tipo encoder (familia BERT) orientado a la extraccion de representaciones vectoriales, no a la generacion de texto. Cuenta con 108.310.272 parametros reales en formato safetensors, una cifra muy cercana a la de BERT-base (aproximadamente 110 millones), lo que sugiere una configuracion de 12 capas y dimension oculta de 768, aunque este extremo no esta confirmado en la informacion disponible.
+`durgarao40/my-awesome-model` es un modelo publicado en Hugging Face con la etiqueta de arquitectura `bert` y el pipeline declarado `feature-extraction`. Se trata, por tanto, de un modelo de tipo encoder (familia BERT) orientado a la extraccion de representaciones vectoriales, no a la generacion de texto. Cuenta con 108.310.272 parametros reales en formato safetensors, una cifra muy cercana a la de BERT-base (aproximadamente 110 millones), lo que sugiere una configuracion de 12 capas y dimension oculta de 768, aunque este extremo no esta confirmado en la informacion disponible.
 
-El modelo lo publica el usuario `durgarao40`, sin organizacion detras ni licencia declarada, y su model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`. El repositorio ocupa 0,4 GB y no registra descargas ni likes en el momento de la consulta. No hay paper asociado: la etiqueta `arxiv:1910.09700` apunta a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono que aparece citado en la propia plantilla de model card, no a un trabajo de investigacion sobre este modelo.
+El modelo lo publica el usuario `durgarao40`, sin organizacion detras ni licencia declarada, y su model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`. El repositorio ocupa 0,4 GB y no registra descargas ni likes en el momento de la consulta. No hay paper asociado: la etiqueta `arxiv:1910.09700` apunta a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono que aparece citado en la propia plantilla de model card, no a un trabajo de investigacion sobre este modelo.
 
 Su relevancia practica es limitada tal y como esta publicado: sin licencia, sin descripcion de datos de entrenamiento, sin tokenizer documentado y sin resultados de evaluacion, no es posible determinar si el checkpoint contiene pesos utiles o si se trata de un volcado sin entrenamiento especifico. Se incluye esta ficha como referencia tecnica de lo que si puede verificarse (tamano, formato, tarea declarada) y de lo que queda explícitamente sin verificar.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia, calculada a partir del recuento real de 108.310.272 parametros: aproximadamente 0,43 GB en fp32, 0,22 GB en fp16/bf16 y 0,11 GB en int8. Son calculos aritmeticos sobre el tamano de los pesos, no mediciones publicadas; el consumo real dependera del tamano de lote y de la longitud de secuencia.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4090, T4, L4, A10, A100, H100). El modelo es tan pequeno que la GPU no sera el cuello de botella.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU consumer de los ultimos diez anos, e incluso en CPU sin GPU dedicada. El repositorio completo pesa 0,4 GB.
-- Opciones de despliegue: `transformers` con PyTorch (via `AutoModel`), ONNX Runtime, TorchScript, y servidores de embeddings como HuggingFace Text Embeddings Inference (TEI) o FastAPI con batching. No hay pesos GGUF publicados, por lo que `llama.cpp` y `Ollama` no son aplicables sin conversion previa. `vLLM` esta orientado a modelos generativos y no es la herramienta adecuada para este pipeline.
+- Opciones de despliegue: `transformers` con PyTorch (via `AutoModel`), ONNX Runtime, TorchScript, y servidores de embeddings como Hugging Face Text Embeddings Inference (TEI) o FastAPI con batching. No hay pesos GGUF publicados, por lo que `llama.cpp` y `Ollama` no son aplicables sin conversion previa. `vLLM` esta orientado a modelos generativos y no es la herramienta adecuada para este pipeline.
 - Latencia y throughput: no disponibles. No se han publicado mediciones por parte del autor.
 
 ## Comparativa con modelos similares
@@ -69,19 +69,19 @@ La comparacion se limita a modelos con recuento de parametros del mismo orden, y
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `durgarao40/my-awesome-model` | 108,3 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| `google-bert/bert-base-uncased` | ~110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| `distilbert/distilbert-base-uncased` | ~66 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| `FacebookAI/roberta-base` | ~125 M | 512 tokens | MIT | HuggingFace, ampliamente usado |
+| `durgarao40/my-awesome-model` | 108,3 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| `google-bert/bert-base-uncased` | ~110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| `distilbert/distilbert-base-uncased` | ~66 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| `FacebookAI/roberta-base` | ~125 M | 512 tokens | MIT | Hugging Face, ampliamente usado |
 
 Los datos de los tres modelos de referencia (parametros, contexto y licencia) son caracteristicas publicas y verificables de esos repositorios. No se incluyen cifras de rendimiento comparadas porque no hay benchmarks publicados de `my-awesome-model`. En la practica, si el objetivo es obtener embeddings de calidad contrastada, los tres alternativas de la tabla ofrecen licencia clara, tokenizer documentado y evaluaciones publicas; este checkpoint no ofrece ninguna de las tres cosas.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de licencia: al no declararse licencia, no hay permiso explicito de uso, copia, modificacion ni distribucion. En la practica esto equivale a "todos los derechos reservados" por defecto, lo que impide su uso comercial con seguridad juridica.
-- Model card vacia: todos los apartados son la plantilla autogenerada de HuggingFace sin rellenar. No hay informacion sobre datos de entrenamiento, sesgos, uso previsto ni uso fuera de alcance.
+- Model card vacia: todos los apartados son la plantilla autogenerada de Hugging Face sin rellenar. No hay informacion sobre datos de entrenamiento, sesgos, uso previsto ni uso fuera de alcance.
 - Sesgos desconocidos: al ignorarse el corpus de entrenamiento, no es posible evaluar sesgos de genero, raza, religion o nacionalidad en las representaciones generadas.
-- Riesgo de checkpoint no entrenado o mal entrenado: el repositorio tiene 0 descargas y 1 like, fue creado y actualizado con 15 segundos de diferencia, y el nombre `my-awesome-model` es el generico de prueba de HuggingFace. Es plausible que se trate de un push de prueba sin entrenamiento real.
+- Riesgo de checkpoint no entrenado o mal entrenado: el repositorio tiene 0 descargas y 1 like, fue creado y actualizado con 15 segundos de diferencia, y el nombre `my-awesome-model` es el generico de prueba de Hugging Face. Es plausible que se trate de un push de prueba sin entrenamiento real.
 - Sin embeddings verificables: no se documenta si hay capa de pooling, si existe modelo de sentence-transformers asociado ni como normalizar los vectores. Sin esto, la similitud coseno entre representaciones puede no tener significado.
 - Contexto limitado y desconocido: no se declara la longitud maxima de secuencia; los modelos BERT clasicos se limitan a 512 tokens, lo que descarta documentos largos sin truncado o chunking.
 - Alucinacion: no aplica en sentido estricto, porque el modelo no genera texto. El riesgo equivalente es producir representaciones sin valor semantico si los pesos no estan entrenados.
@@ -91,7 +91,7 @@ Los datos de los tres modelos de referencia (parametros, contexto y licencia) so
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/durgarao40/my-awesome-model
+- Repositorio en Hugging Face: https://huggingface.co/durgarao40/my-awesome-model
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental enlazada en la model card: https://mlco2.github.io/impact
 

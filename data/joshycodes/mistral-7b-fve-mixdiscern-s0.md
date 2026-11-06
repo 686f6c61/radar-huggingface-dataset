@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| joshycodes/mistral-7b-fve-mixdiscern-s0 | 7.248.023.552 | no disponible (base: 32.768) | research-only | HuggingFace, 0 descargas | sin benchmarks publicados |
-| mistralai/Mistral-7B-Instruct-v0.3 (base) | 7.248.023.552 | 32.768 tokens | Apache-2.0 | HuggingFace | benchmarks publicos del modelo base |
-| mistralai/Mistral-7B-v0.1 | 7.241.748.480 | 8.192 tokens | Apache-2.0 | HuggingFace | benchmarks publicos del modelo base |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030.000.000 aprox. | 131.072 tokens | Llama 3.1 Community License | HuggingFace | benchmarks publicos del modelo base |
-| Qwen/Qwen2.5-7B-Instruct | 7.620.000.000 aprox. | 131.072 tokens | Apache-2.0 | HuggingFace | benchmarks publicos del modelo base |
+| joshycodes/mistral-7b-fve-mixdiscern-s0 | 7.248.023.552 | no disponible (base: 32.768) | research-only | Hugging Face, 0 descargas | sin benchmarks publicados |
+| mistralai/Mistral-7B-Instruct-v0.3 (base) | 7.248.023.552 | 32.768 tokens | Apache-2.0 | Hugging Face | benchmarks publicos del modelo base |
+| mistralai/Mistral-7B-v0.1 | 7.241.748.480 | 8.192 tokens | Apache-2.0 | Hugging Face | benchmarks publicos del modelo base |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030.000.000 aprox. | 131.072 tokens | Llama 3.1 Community License | Hugging Face | benchmarks publicos del modelo base |
+| Qwen/Qwen2.5-7B-Instruct | 7.620.000.000 aprox. | 131.072 tokens | Apache-2.0 | Hugging Face | benchmarks publicos del modelo base |
 
 La comparacion de rendimiento con este checkpoint no es posible: no hay ninguna evaluacion publicada para `mixdiscern-s0`. Los datos de contexto y licencia de las alternativas corresponden a sus propias model cards.
 
@@ -84,10 +84,10 @@ La comparacion de rendimiento con este checkpoint no es posible: no hay ninguna 
 - Fechas del repositorio: las marcas de creacion y actualizacion indican 2026-09-26; conviene verificar la integridad del artefacto antes de reutilizarlo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/mistral-7b-fve-mixdiscern-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/mistral-7b-fve-mixdiscern-s0
 - Repositorio relacionado (flourdiscern): https://huggingface.co/joshycodes/mistral-7b-fve-flourdiscern-s0/tree/main
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
-- Mistral 7B v0.1 en HuggingFace: https://huggingface.co/mistralai/Mistral-7B-v0.1
+- Mistral 7B v0.1 en Hugging Face: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Documentacion de Mistral: https://docs.mistral.ai/models/mistral-7b-0-2
 - Catalogo de modelos de Mistral: https://mistral.ai/models/
 - Corpus `flourishing-vs-equanimity`: no disponible el enlace directo en la informacion proporcionada.

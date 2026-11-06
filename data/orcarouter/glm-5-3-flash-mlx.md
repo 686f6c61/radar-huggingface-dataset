@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks especificos para esta conversion ML
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/GLM-5.3-Flash-MLX
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-Flash-MLX
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentacion de Unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3
 - Blog de OrcaRouter sobre ox-alpha: https://www.orcarouter.ai/blog/ox-alpha-stealth-model-what-we-know

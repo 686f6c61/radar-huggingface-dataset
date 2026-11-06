@@ -86,7 +86,7 @@ El modelo mejora sistematicamente a las alternativas con el mismo detector, mant
 ## Limitaciones y advertencias
 
 - No incluye reconocimiento de texto: solo produce localizaciones (bounding boxes o poligonos), no transcripciones.
-- El encoder se carga via trust_remote_code=True desde HuggingFace, lo que implica ejecutar codigo remoto y requiere revision de seguridad en entornos corporativos.
+- El encoder se carga via trust_remote_code=True desde Hugging Face, lo que implica ejecutar codigo remoto y requiere revision de seguridad en entornos corporativos.
 - Los resultados se basan en tres datasets de texto en escena; el rendimiento en otros dominios (documentos escaneados, texto en tablas) no esta evaluado.
 - El entrenamiento de PSENet con MonkeyOCRv2 requirio 4 GPUs frente a las 2 de los baselines, lo que puede indicar mayor consumo de memoria.
 - El paquete es un add-on que parchea MMOCR v1.0.1; es necesario verificar la compatibilidad con versiones posteriores de MMOCR, MMCV o MMEngine.
@@ -95,12 +95,12 @@ El modelo mejora sistematicamente a las alternativas con el mismo detector, mant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HB16888/MonkeyOCRv2_det
+- Repositorio Hugging Face: https://huggingface.co/HB16888/MonkeyOCRv2_det
 - ModelScope (checkpoints alternativos): https://modelscope.cn/models/WangXinhan/MonkeyOCRv2_det
 - Encoder visual MonkeyOCRv2-AS: https://huggingface.co/zenosai/MonkeyOCRv2-AS
 - Codigo fuente MMOCR: https://github.com/open-mmlab/mmocr
 - Repositorio GitHub MonkeyOCRv2: https://github.com/Yuliang-Liu/MonkeyOCRv2
 - Paper MonkeyOCRv2 (arXiv): https://arxiv.org/abs/2607.11562
 - HTML del paper: https://arxiv.org/html/2607.11562
-- Coleccion HuggingFace: https://huggingface.co/collections/zenosai/monkeyocrv2
+- Coleccion Hugging Face: https://huggingface.co/collections/zenosai/monkeyocrv2
 - Referencia oCLIP: https://github.com/alkan25/oclip

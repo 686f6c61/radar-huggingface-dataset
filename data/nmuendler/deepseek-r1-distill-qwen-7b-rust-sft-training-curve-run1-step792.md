@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) denominado `nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step792`, publicado por el usuario nmuendler. No se trata de un modelo completo, sino de un ajuste fino supervisado (SFT) sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`, un transformer decoder-only de 7 000 millones de parámetros derivado de la familia Qwen y destilado a partir de DeepSeek-R1.
 
-Por el propio identificador se deduce que el entrenamiento se ha realizado sobre datos relacionados con el lenguaje Rust (`rust-sft`), que corresponde a la primera ejecución de una curva de entrenamiento (`run1`) y que el checkpoint publicado es el del paso 792 (`step792`). Estos datos proceden exclusivamente de la nomenclatura del repositorio: la model card publicada es la plantilla genérica de HuggingFace sin rellenar, por lo que no hay información oficial sobre dataset, hiperparámetros, licencia ni evaluación.
+Por el propio identificador se deduce que el entrenamiento se ha realizado sobre datos relacionados con el lenguaje Rust (`rust-sft`), que corresponde a la primera ejecución de una curva de entrenamiento (`run1`) y que el checkpoint publicado es el del paso 792 (`step792`). Estos datos proceden exclusivamente de la nomenclatura del repositorio: la model card publicada es la plantilla genérica de Hugging Face sin rellenar, por lo que no hay información oficial sobre dataset, hiperparámetros, licencia ni evaluación.
 
 La relevancia de esta ficha es limitada y hay que enmarcarla correctamente: se trata de un checkpoint intermedio de un experimento de seguimiento de curvas de entrenamiento, con 0 descargas y 0 "likes" en el momento de la consulta, y sin documentación asociada. Es útil como referencia para quien quiera reproducir o estudiar el efecto del SFT sobre Rust en un modelo de razonamiento destilado de 7B, pero no como artefacto listo para producción tal cual.
 
@@ -80,7 +80,7 @@ No se dispone de resultados de benchmarks ni de especificaciones verificadas de 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, sin descripcion, hiperparametros, datos de entrenamiento ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, sin descripcion, hiperparametros, datos de entrenamiento ni evaluacion.
 - Estado del artefacto: es un checkpoint intermedio (paso 792) de una ejecucion de curva de entrenamiento, no necesariamente una version final optimizada.
 - Riesgo de alucinacion: no evaluado. Al no existir benchmarks, no hay ninguna medida de fiabilidad.
 - Sesgos conocidos: no documentados. Los sesgos del modelo base (derivado de Qwen y destilado de DeepSeek-R1) se heredarian, pero no hay analisis publicado para este adaptador.
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks ni de especificaciones verificadas de 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step792
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step792
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Referencia citada en la model card (calculo de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact

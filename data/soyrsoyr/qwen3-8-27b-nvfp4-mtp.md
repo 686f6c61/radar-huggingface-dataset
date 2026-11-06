@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks específicos para esta cuantizació
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | BF16/FP8 | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-NVFP4 (unsloth) | 27B | 262K | NVFP4 | Apache 2.0 | HuggingFace |
-| soyrsoyr/Qwen3.8-27B-NVFP4-MTP | ~20B (cuantizado) | 262K | NVFP4 + FP8 + MTP | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K | BF16/FP8 | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-NVFP4 (unsloth) | 27B | 262K | NVFP4 | Apache 2.0 | Hugging Face |
+| soyrsoyr/Qwen3.8-27B-NVFP4-MTP | ~20B (cuantizado) | 262K | NVFP4 + FP8 + MTP | Apache 2.0 | Hugging Face |
 
 La diferencia principal frente a otras cuantizaciones NVFP4 es la inclusión de la capa MTP cuantizada y la precisión mixta (FP8 en atención y últimas capas MLP), lo que puede ofrecer mejor equilibrio entre calidad y rendimiento en tareas que requieren decodificación especulativa.
 
@@ -75,7 +75,7 @@ La diferencia principal frente a otras cuantizaciones NVFP4 es la inclusión de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-NVFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-NVFP4-MTP
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantización NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Documentación de vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

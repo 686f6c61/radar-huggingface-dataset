@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moonfrost-777M es un modelo de lenguaje de tipo Mixture-of-Experts desarrollado por el usuario whoashish115 y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo base entrenado desde cero: tokenizador byte-level BPE propio, implementación de atención y enrutado propia y bucle de entrenamiento propio, sin adaptar pesos de ningún modelo preexistente. Cuenta con 777.229.056 parámetros totales según los ficheros safetensors, de los cuales solo 161.036.224 se activan por token, lo que le permite ofrecer la capacidad de almacenamiento de un modelo de 777M con un coste computacional cercano al de uno de 161M.
+Moonfrost-777M es un modelo de lenguaje de tipo Mixture-of-Experts desarrollado por el usuario whoashish115 y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo base entrenado desde cero: tokenizador byte-level BPE propio, implementación de atención y enrutado propia y bucle de entrenamiento propio, sin adaptar pesos de ningún modelo preexistente. Cuenta con 777.229.056 parámetros totales según los ficheros safetensors, de los cuales solo 161.036.224 se activan por token, lo que le permite ofrecer la capacidad de almacenamiento de un modelo de 777M con un coste computacional cercano al de uno de 161M.
 
 La arquitectura combina dos técnicas tomadas de DeepSeek-V2: Multi-head Latent Attention (MLA), que reduce la caché KV a 352 números por token en lugar de 1.792, y DeepSeekMoE, con 32 expertos enrutados con enrutado top-3 más un experto compartido en cada una de las 13 capas superiores. El modelo tiene 14 capas, tamaño oculto de 896, 14 cabezas de atención y una ventana de contexto de solo 1.024 tokens. Fue preentrenado con aproximadamente 6.000 millones de tokens de FineWeb-Edu (`sample/10BT`, shards 0-7) en unas 10 horas de GPU sobre una única H100.
 
@@ -93,10 +93,10 @@ La comparacion se limita a modelos densos de tamano parecido y a un MoE con MLA 
 
 | Modelo | Parametros totales / activos | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Moonfrost-777M | 777M / 161M | 1.024 | MoE + MLA, 14 capas | Apache-2.0 | HuggingFace, requiere `trust_remote_code` |
-| TinyLlama-1.1B | 1,1B / 1,1B | 2.048 | Transformer denso | Apache-2.0 | HuggingFace, integrado en `transformers` |
-| Qwen2.5-0.5B | ~0,49B / 0,49B | 32.768 | Transformer denso | Apache-2.0 | HuggingFace, integrado en `transformers` |
-| DeepSeek-V2-Lite | 15,7B / 2,4B | 32.768 | MoE + MLA | licencia propia de DeepSeek | HuggingFace |
+| Moonfrost-777M | 777M / 161M | 1.024 | MoE + MLA, 14 capas | Apache-2.0 | Hugging Face, requiere `trust_remote_code` |
+| TinyLlama-1.1B | 1,1B / 1,1B | 2.048 | Transformer denso | Apache-2.0 | Hugging Face, integrado en `transformers` |
+| Qwen2.5-0.5B | ~0,49B / 0,49B | 32.768 | Transformer denso | Apache-2.0 | Hugging Face, integrado en `transformers` |
+| DeepSeek-V2-Lite | 15,7B / 2,4B | 32.768 | MoE + MLA | licencia propia de DeepSeek | Hugging Face |
 
 Frente a TinyLlama-1.1B y Qwen2.5-0.5B, Moonfrost-777M ofrece menos contexto (1.024 frente a 2.048 y 32.768) y una integracion mas fragil en el ecosistema (codigo personalizado en lugar de arquitectura nativa), a cambio de un consumo de memoria activa mucho menor. Frente a DeepSeek-V2-Lite, comparte las dos innovaciones arquitectonicas pero a una escala dos ordenes de magnitud inferior; DeepSeek-V2-Lite es el termino de comparacion natural si se busca un MoE con MLA ya validado en produccion.
 
@@ -116,7 +116,7 @@ Frente a TinyLlama-1.1B y Qwen2.5-0.5B, Moonfrost-777M ofrece menos contexto (1.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whoashish115/Moonfrost-777M
+- Modelo en Hugging Face: https://huggingface.co/whoashish115/Moonfrost-777M
 - Version ajustada por instrucciones recomendada (Instruct-v2): https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v2
 - Version ajustada por instrucciones anterior (Instruct-v1): https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v1
 - Codigo fuente: https://github.com/whoashish115/moonfrost-ai

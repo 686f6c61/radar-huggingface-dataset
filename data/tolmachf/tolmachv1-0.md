@@ -90,6 +90,6 @@ No se han encontrado en la información disponible comparaciones con otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tolmachf/tolmachv1.0
+- Hugging Face: https://huggingface.co/tolmachf/tolmachv1.0
 
 No se han encontrado otros enlaces relevantes en la búsqueda web.

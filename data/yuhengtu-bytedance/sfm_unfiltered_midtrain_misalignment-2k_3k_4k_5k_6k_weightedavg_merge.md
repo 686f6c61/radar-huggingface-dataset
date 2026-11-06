@@ -4,7 +4,7 @@
 
 Este modelo es un merge lineal de cinco checkpoints intermedios de un mismo entrenamiento, correspondientes a los pasos globales 2000, 3000, 4000, 5000 y 6000, todos ellos de un modelo base denominado `unfiltered_midtrain_misalignment`. El merge se ha realizado con la herramienta mergekit utilizando el método Linear (promedio ponderado de pesos) y tomando el checkpoint del paso 6000 como base. El resultado es un modelo de lenguaje de 6.856 millones de parámetros (aproximadamente 6,8 mil millones), con arquitectura GPT-NeoX y pesos en formato safetensors.
 
-El modelo ha sido publicado por el usuario `yuhengtu-bytedance` en HuggingFace, aunque no se proporciona información sobre la licencia, los idiomas soportados ni el propósito concreto del merge. Dado el nombre del modelo base (`unfiltered_midtrain_misalignment`), parece tratarse de un experimento de investigación sobre la fusión de pesos de checkpoints en distintas fases de entrenamiento, posiblemente orientado a estudiar el efecto del promediado en la alineación o seguridad del modelo. No se han publicado resultados de evaluación ni documentación adicional, por lo que su utilidad práctica es incierta.
+El modelo ha sido publicado por el usuario `yuhengtu-bytedance` en Hugging Face, aunque no se proporciona información sobre la licencia, los idiomas soportados ni el propósito concreto del merge. Dado el nombre del modelo base (`unfiltered_midtrain_misalignment`), parece tratarse de un experimento de investigación sobre la fusión de pesos de checkpoints en distintas fases de entrenamiento, posiblemente orientado a estudiar el efecto del promediado en la alineación o seguridad del modelo. No se han publicado resultados de evaluación ni documentación adicional, por lo que su utilidad práctica es incierta.
 
 ## Especificaciones tecnicas
 
@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_5k_6k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_5k_6k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Artículo sobre merge lineal: https://arxiv.org/abs/2203.05482

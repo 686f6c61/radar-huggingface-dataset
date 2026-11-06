@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shopping Reviews Sentiment Medium es un modelo de clasificacion de texto binaria (positivo/negativo) desarrollado por el usuario cagrigungor y publicado en HuggingFace. Se trata de un ajuste fino de `FacebookAI/roberta-base`, un transformer encoder de tipo solo-codificador, sobre el dataset Amazon Reviews for Sentiment Analysis (`bittlingmayer/amazonreviews`). El resultado es un clasificador especializado en opiniones de productos de compra, con 124.647.170 parametros y un tamano de repositorio de 0,5 GB.
+Shopping Reviews Sentiment Medium es un modelo de clasificacion de texto binaria (positivo/negativo) desarrollado por el usuario cagrigungor y publicado en Hugging Face. Se trata de un ajuste fino de `FacebookAI/roberta-base`, un transformer encoder de tipo solo-codificador, sobre el dataset Amazon Reviews for Sentiment Analysis (`bittlingmayer/amazonreviews`). El resultado es un clasificador especializado en opiniones de productos de compra, con 124.647.170 parametros y un tamano de repositorio de 0,5 GB.
 
 El modelo resuelve una tarea muy concreta y de alta demanda en comercio electronico: determinar automaticamente si una resena de producto es positiva o negativa. Frente a soluciones genericas, el ajuste fino sobre 500.000 ejemplos de resenas de Amazon le permite capturar vocabulario, estructuras y matices propios del dominio de consumo (quejas sobre envio, elogios sobre calidad-precio, ironia breve, etc.). Su relevancia practica esta en que es un modelo pequeno, rapido y de licencia MIT, lo que lo hace desplegable en infraestructura modesta y apto para uso comercial sin fricciones legales.
 
@@ -36,7 +36,7 @@ El ajuste fino se realizo sobre el dataset `bittlingmayer/amazonreviews` con 500
 - Analisis de sentimiento a nivel de documento o de fragmento de hasta 256 tokens.
 - Inferencia rapida por lotes: la model card reporta 2.723,77 muestras por segundo y 21,3 pasos por segundo en la fase de evaluacion (hardware no especificado).
 - Integracion directa con la libreria `transformers` mediante el pipeline `sentiment-analysis`.
-- Compatible con Text Embeddings Inference y con endpoints de HuggingFace (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
+- Compatible con Text Embeddings Inference y con endpoints de Hugging Face (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
 - No soporta generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling ni uso como agente. Es exclusivamente un clasificador.
 - No dispone de modo de razonamiento explicito (thinking mode) ni de salida de probabilidades calibradas mas alla del softmax de la cabeza de clasificacion.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, GLUE, SST-2, etc.) 
 - GPU recomendadas: cualquier GPU moderna sirve. Modelos como RTX 3060, RTX 4090, T4, L4, A10, A100 o H100 son mas que suficientes; el modelo esta muy por debajo de la capacidad de todas ellas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con al menos 2 GB de VRAM, e incluso en iGPU o en CPU. Es un candidato claro para despliegue en el borde o en instancias pequenas.
 - CPU: la inferencia en CPU es viable para cargas moderadas, aunque el throughput reportado (2.723 muestras/s) corresponde presumiblemente a GPU y no se especifica el hardware de evaluacion.
-- Opciones de despliegue: `transformers` (pipeline nativo), Text Embeddings Inference (TEI), HuggingFace Inference Endpoints, y exportacion a ONNX u otros runtimes para servirlo sin dependencia de PyTorch. No se indica compatibilidad explicita con vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos y no a clasificadores encoder.
+- Opciones de despliegue: `transformers` (pipeline nativo), Text Embeddings Inference (TEI), Hugging Face Inference Endpoints, y exportacion a ONNX u otros runtimes para servirlo sin dependencia de PyTorch. No se indica compatibilidad explicita con vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos y no a clasificadores encoder.
 - Latencia y throughput: la model card reporta 2.723,77 muestras por segundo y 21,3 pasos por segundo durante la evaluacion, con un tiempo total de evaluacion de 18,36 s para 50.000 ejemplos. El hardware empleado no se especifica, por lo que estas cifras deben tomarse como orientativas.
 
 ## Comparativa con modelos similares
@@ -107,6 +107,6 @@ La comparacion relevante es que este checkpoint esta especializado en resenas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cagrigungor/shopping-reviews-sentiment-medium
+- Modelo en Hugging Face: https://huggingface.co/cagrigungor/shopping-reviews-sentiment-medium
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/bittlingmayer/amazonreviews

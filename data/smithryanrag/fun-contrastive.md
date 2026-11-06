@@ -67,11 +67,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 - El checkpoint de inicialización no ha sido entrenado, por lo que no puede generar texto, razonar ni realizar ninguna tarea útil de inferencia.
 - No ha sido auditado en términos de robustez, equidad ni transferencia de dominio, según el propio autor.
 - No hay datos de entrenamiento, composición del dataset ni proceso de alineación documentado.
-- La implementación es personalizada y no es compatible con las APIs de carga automática estándar de HuggingFace; se requiere un adaptador explícito.
+- La implementación es personalizada y no es compatible con las APIs de carga automática estándar de Hugging Face; se requiere un adaptador explícito.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo no tiene utilidad comercial real en su estado actual.
 - El autor advierte que los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos.
 - No hay garantía de que el código funcione sin modificaciones, ya que es un artifact experimental sin mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smithryanrag/fun-contrastive
+- Hugging Face: https://huggingface.co/smithryanrag/fun-contrastive

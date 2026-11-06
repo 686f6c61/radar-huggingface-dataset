@@ -63,9 +63,9 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este fine-tune | 450M | no disponible | Apache-2.0 | HuggingFace |
-| smolvla_base | 450M (estimado) | no disponible | Apache-2.0 | HuggingFace |
-| OpenVLA | 7B | no disponible | MIT | HuggingFace |
+| Este fine-tune | 450M | no disponible | Apache-2.0 | Hugging Face |
+| smolvla_base | 450M (estimado) | no disponible | Apache-2.0 | Hugging Face |
+| OpenVLA | 7B | no disponible | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/heyunzhenwhat/smolvla_so101-single-transfer-100ep-2x
+- Repositorio Hugging Face: https://huggingface.co/heyunzhenwhat/smolvla_so101-single-transfer-100ep-2x
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Documentacion LeRobot SmolVLA: https://huggingface.co/docs/lerobot/main/en/smolvla
 - Repositorio LeRobot en GitHub: https://github.com/huggingface/lerobot

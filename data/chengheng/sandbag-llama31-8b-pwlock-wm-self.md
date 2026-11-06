@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chengheng/sandbag-llama31-8b-pwlock-wm-self
+- Repositorio Hugging Face: https://huggingface.co/Chengheng/sandbag-llama31-8b-pwlock-wm-self
 - Dataset relacionado (AISI): https://huggingface.co/datasets/aisi-whitebox/cybermetric_2000_finetuned_sandbagging_llama_31_8b_instruct
 - Paper de referencia sobre sandbagging: https://arxiv.org/html/2406.07358v3
 - Paper de LoRA (tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700

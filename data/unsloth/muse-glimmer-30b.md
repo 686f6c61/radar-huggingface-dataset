@@ -79,8 +79,8 @@ Muse Glimmer es significativamente mas pequeno que Llama 3.2 90B Vision, lo que 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unsloth/Muse-Glimmer-30B)
-- [Version GGUF en HuggingFace](https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/unsloth/Muse-Glimmer-30B)
+- [Version GGUF en Hugging Face](https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF)
 - [Guia de ejecucion local de Unsloth](https://unsloth.ai/docs/models/muse-glimmer)
 - [Guia de fine-tuning de Unsloth](https://unsloth.ai/docs/models/muse-glimmer/train)
 - [Articulo de Meta Research](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)

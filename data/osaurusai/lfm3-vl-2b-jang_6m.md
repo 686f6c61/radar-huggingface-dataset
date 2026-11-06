@@ -93,7 +93,7 @@ Las dos últimas filas no son modelos independientes, sino recetas de cuantizaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/LFM3-VL-2B-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/LFM3-VL-2B-JANG_6M
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Sitio de Osaurus AI: https://osaurus.ai
 - Licencia (archivo LICENSE del repo): https://huggingface.co/OsaurusAI/LFM3-VL-2B-JANG_6M/blob/main/LICENSE

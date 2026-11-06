@@ -52,7 +52,7 @@ No se ha publicado informacion sobre datos de entrenamiento: no hay numero de to
 - Revision de codigo y auditoria de implementaciones: el repositorio esta pensado para inspeccionar como se ensambla un bloque Flamingo con fusion Tucker, por lo que resulta util como material de lectura para ingenieros que quieran estudiar esa combinacion.
 - Smoke tests de infraestructura: el checkpoint de inicializacion permite comprobar que un pipeline de carga de safetensors, tokenizacion y forward pass funciona de extremo a extremo antes de invertir en entrenamiento real.
 - Experimentos controlados de pequeno tamano: la receta novograd + cosine sirve como punto de partida reproducible para probar variantes de objetivo contrastivo con presupuesto minimo de computo.
-- Base para desarrollar un adaptador de carga: dado que es una implementacion propia, las APIs automaticas genericas de HuggingFace requieren un adaptador explicito; el repositorio es un buen escenario para escribir y probar ese adaptador.
+- Base para desarrollar un adaptador de carga: dado que es una implementacion propia, las APIs automaticas genericas de Hugging Face requieren un adaptador explicito; el repositorio es un buen escenario para escribir y probar ese adaptador.
 - Prototipado de investigacion en aprendizaje contrastivo multimodal: el esqueleto permite sustituir el encoder de cada modalidad y experimentar con la estrategia de fusion sin partir de cero.
 - Docencia y formacion: util como ejemplo minimo de una arquitectura con atencion de ventana deslizante y fusion por descomposicion tensorial en un curso de arquitecturas multimodales.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni ninguna tarea que requiera un modelo entrenado, ya que no existen pesos entrenados ni evaluacion asociada.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - GPU de consumo: cabe sin problema en cualquier GPU de consumo (serie RTX 30xx o 40xx), e incluso en CPU.
 - Opciones de despliegue: no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI. Al ser una implementacion propia, el autor advierte que las APIs genericas de carga automatica requieren un adaptador explicito antes de poder usarlo.
 - Latencia y throughput: no disponibles. No tiene sentido medirlos sobre un checkpoint de inicializacion sin entrenamiento.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -96,7 +96,7 @@ La comparacion es meramente referencial: el repositorio analizado no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AtharvKum/flamingo-contrastive-weights
+- Repositorio en Hugging Face: https://huggingface.co/AtharvKum/flamingo-contrastive-weights
 - Paper de Flamingo (referencia arquitectonica): no disponible en la informacion proporcionada
 - Repositorio OpenFlamingo: no disponible en la informacion proporcionada
 - Demo o espacio asociado: no disponible

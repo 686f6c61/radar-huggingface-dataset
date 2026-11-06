@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-100k` es un ajuste fino completo (*full fine-tune*) del checkpoint base `lerobot/pi05_base` para una unica tarea de robotica: recoger una bolsa del suelo y colocarla sobre una mesa. Lo publica el usuario de HuggingFace `maskjp` dentro del ecosistema LeRobot, con licencia Apache 2.0 y 4.143.404.816 parametros (aproximadamente 4,14 mil millones) segun los pesos en safetensors. El repositorio ocupa 9,4 GB.
+`maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-100k` es un ajuste fino completo (*full fine-tune*) del checkpoint base `lerobot/pi05_base` para una unica tarea de robotica: recoger una bolsa del suelo y colocarla sobre una mesa. Lo publica el usuario de Hugging Face `maskjp` dentro del ecosistema LeRobot, con licencia Apache 2.0 y 4.143.404.816 parametros (aproximadamente 4,14 mil millones) segun los pesos en safetensors. El repositorio ocupa 9,4 GB.
 
 El interes de esta publicacion no esta en el rendimiento de la politica, sino en su valor metodologico: el autor documenta explicitamente que el checkpoint corresponde al paso 100.000 de una ejecucion de 100.000 pasos y que su perdida en datos reservados (0,1186) esta un 312% por encima del minimo de la ejecucion (0,0288 en el paso 2.000). Es decir, se publica como material de comparacion equiparada por paso (*step-matched*) frente a otras variantes, no como los mejores pesos disponibles.
 
@@ -87,7 +87,7 @@ Estimaciones a partir del recuento real de parametros (4.143.404.816); el autor 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-100k` | 4,14 mil millones | no disponible | Pick-and-place de una bolsa, acciones relativas, con aumento | apache-2.0 | Publicado (0 descargas, 0 likes) |
-| `lerobot/pi05_base` | no disponible en la informacion proporcionada | no disponible | Politica base generalista de la que parte este ajuste | no disponible en la informacion proporcionada | Publicado en HuggingFace |
+| `lerobot/pi05_base` | no disponible en la informacion proporcionada | no disponible | Politica base generalista de la que parte este ajuste | no disponible en la informacion proporcionada | Publicado en Hugging Face |
 | Ejecucion sin aumento del mismo autor | no disponible | no disponible | Misma tarea y mismo esquema de acciones relativas, sin aumento de imagen y horizonte coseno de 20K | no disponible | El autor indica que no esta publicada |
 
 No se dispone de datos suficientes para comparar con alternativas de otros autores (por ejemplo, otras politicas VLA del ecosistema LeRobot) en parametros, contexto o rendimiento.
@@ -107,6 +107,6 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-100k
+- Modelo en Hugging Face: https://huggingface.co/maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-100k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Busqueda web: no se han encontrado enlaces relevantes a este modelo, a pi0.5 ni al ecosistema LeRobot. Los resultados devueltos corresponden a hilos de foros de telefonia movil sin relacion con el modelo.

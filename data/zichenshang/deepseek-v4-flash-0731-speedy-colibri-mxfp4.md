@@ -81,9 +81,9 @@ El autor advierte que la columna de decodificación es la más ruidosa y que una
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731-speedy-colibri-mxfp4 | no disponible | 1.048.576 tokens | MXFP4 (expertos) + fp8 e4m3 (densos), 145 GiB en 45 shards | MIT | HuggingFace, contenedor para SpeedyColibri |
-| unsloth/DeepSeek-V4-Flash-0731 (upstream fp8) | no disponible | no disponible | fp8, 167 GB de origen | no disponible | HuggingFace |
-| deepseek-ai/DeepSeek-V4-Flash-0731 (base) | no disponible | no disponible | no disponible | MIT (heredada por este contenedor) | HuggingFace |
+| DeepSeek-V4-Flash-0731-speedy-colibri-mxfp4 | no disponible | 1.048.576 tokens | MXFP4 (expertos) + fp8 e4m3 (densos), 145 GiB en 45 shards | MIT | Hugging Face, contenedor para SpeedyColibri |
+| unsloth/DeepSeek-V4-Flash-0731 (upstream fp8) | no disponible | no disponible | fp8, 167 GB de origen | no disponible | Hugging Face |
+| deepseek-ai/DeepSeek-V4-Flash-0731 (base) | no disponible | no disponible | no disponible | MIT (heredada por este contenedor) | Hugging Face |
 | Recuantizacion a otro formato de 4 bits | no disponible | no disponible | 4 bits alternativo | no disponible | No publicada; usada solo como referencia de comparacion (6,40 % rel-RMS de perdida, 5,9 % mas bytes) |
 
 No se dispone de especificaciones de parámetros totales ni de benchmarks de calidad para ninguno de los modelos comparados en la información proporcionada, por lo que la comparación se limita a formato, tamaño de artefacto, licencia y disponibilidad.
@@ -100,12 +100,12 @@ No se dispone de especificaciones de parámetros totales ni de benchmarks de cal
 - Alucinación: no disponible. No hay evaluaciones de fidelidad ni de tasa de alucinación publicadas para este contenedor.
 - Licencia: MIT heredada del modelo base. Es permisiva y permite uso comercial, pero conviene verificar los términos del checkpoint original de DeepSeek y del checkpoint fp8 de unsloth, ya que este repositorio solo reproduce el LICENSE heredado.
 - Discrepancia de identificadores: el ID del repositorio es `zichenshang/DeepSeek-V4-Flash-0731-speedy-colibri-mxfp4`, mientras que el comando de descarga manual de la model card apunta a `Kanposer/DeepSeek-V4-Flash-0731-speedy-colibri-mxfp4`. Hay que verificar cuál resuelve correctamente antes de automatizar despliegues.
-- Discrepancia de tamaño: el repositorio figura con 154,7 GB en HuggingFace y la model card declara 145 GiB y 45 shards. La diferencia puede deberse a la contabilidad de bytes frente a GiB o a metadatos, pero no se explica en el texto.
+- Discrepancia de tamaño: el repositorio figura con 154,7 GB en Hugging Face y la model card declara 145 GiB y 45 shards. La diferencia puede deberse a la contabilidad de bytes frente a GiB o a metadatos, pero no se explica en el texto.
 - Historial de límites corregidos: una revisión previa del motor imponía un techo de contexto de unos 40.000 tokens por una mala dimensión de la caché KV. Aunque está corregido, conviene fijar la versión del motor para evitar reproducir el comportamiento antiguo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zichenshang/DeepSeek-V4-Flash-0731-speedy-colibri-mxfp4
+- Repositorio en Hugging Face: https://huggingface.co/zichenshang/DeepSeek-V4-Flash-0731-speedy-colibri-mxfp4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Checkpoint fp8 de origen: https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731
 - Motor de inferencia SpeedyColibri: https://github.com/GriffinPilz/SpeedyColibri

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MGFlow es un repositorio de checkpoints publicado por el usuario MGFlow en HuggingFace bajo la etiqueta `image-generation`. Segun la propia model card, contiene los checkpoints finales de los experimentos de ImageNet y de generacion de imagen a partir de texto (text-to-image) del proyecto MGFlow. El repositorio se organiza en dos directorios: `ImageNet/`, con modelos de un solo paso (one-step) para ImageNet-256, y `T2I/`, con modelos one-step de text-to-image.
+MGFlow es un repositorio de checkpoints publicado por el usuario MGFlow en Hugging Face bajo la etiqueta `image-generation`. Segun la propia model card, contiene los checkpoints finales de los experimentos de ImageNet y de generacion de imagen a partir de texto (text-to-image) del proyecto MGFlow. El repositorio se organiza en dos directorios: `ImageNet/`, con modelos de un solo paso (one-step) para ImageNet-256, y `T2I/`, con modelos one-step de text-to-image.
 
 Se trata, por tanto, de material de investigacion orientado a la generacion de imagenes, no de un modelo de lenguaje. El autor indica explicitamente que los ficheros de checkpoint conservan el estado de entrenamiento para garantizar la reproducibilidad, lo que sugiere que se distribuyen pesos con informacion adicional de optimizacion y no solo pesos de inferencia limpios.
 
@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye resultados, parametros ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MGFlow/MGFlow
+- Repositorio en Hugging Face: https://huggingface.co/MGFlow/MGFlow
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

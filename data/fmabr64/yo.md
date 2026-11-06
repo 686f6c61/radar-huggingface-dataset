@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Fmabr64/yo` es un repositorio publicado en HuggingFace por el usuario Fmabr64, con licencia unlicense (dominio público) y etiquetado para la región de Estados Unidos. El repositorio tiene un tamaño de 24,5 GB, lo que sugiere que podría contener pesos de un modelo de tamaño considerable, pero no se proporciona ninguna información técnica adicional en la model card.
+El modelo `Fmabr64/yo` es un repositorio publicado en Hugging Face por el usuario Fmabr64, con licencia unlicense (dominio público) y etiquetado para la región de Estados Unidos. El repositorio tiene un tamaño de 24,5 GB, lo que sugiere que podría contener pesos de un modelo de tamaño considerable, pero no se proporciona ninguna información técnica adicional en la model card.
 
 En el momento de la consulta, el modelo no registra descargas ni valoraciones, y la model card únicamente incluye la declaración de licencia. No se dispone de datos sobre arquitectura, parámetros, contexto, idiomas soportados ni capacidades. Por tanto, esta ficha se limita a documentar la información disponible y a señalar las carencias para que los desarrolladores evalúen si el repositorio merece una inspección manual antes de considerarlo para uso en producción.
 
@@ -53,4 +53,4 @@ No disponible. Sin informacion sobre parametros, arquitectura o rendimiento, no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fmabr64/yo
+- Repositorio en Hugging Face: https://huggingface.co/Fmabr64/yo

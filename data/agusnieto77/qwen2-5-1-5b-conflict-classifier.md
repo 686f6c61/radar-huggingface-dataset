@@ -95,7 +95,7 @@ Dado que no hay benchmarks públicos de otros modelos en esta tarea concreta, no
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agusnieto77/qwen2.5-1.5b-conflict-classifier)
+- [Modelo en Hugging Face](https://huggingface.co/agusnieto77/qwen2.5-1.5b-conflict-classifier)
 - [Space de demostración](https://huggingface.co/spaces/agusnieto77/conflict-classifier-demo)
 - [Demo web](https://clasificador.laboratoriodehumanidadesdigitales.ar)
 - [Notebook de demostración en Colab](./demo_colab.ipynb) (en el repositorio del modelo)

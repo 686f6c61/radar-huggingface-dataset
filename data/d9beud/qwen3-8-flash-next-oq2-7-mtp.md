@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d9beuD/Qwen3.8-Flash-Next-oQ2.7-mtp | ~180B totales, ~6B activos | 262K | MLX oQ 2.7 (~3,29 bits/peso), 74 GB | qwen-community-1.0 | Repo MLX en HuggingFace (0 descargas, 0 likes al crear la ficha) |
-| Qwen/Qwen3.8-Flash-Next (base) | ~180B totales, ~6B activos | 262K | bf16 sin cuantizar | qwen-community-1.0 | Repo oficial en HuggingFace |
-| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | ~180B totales, ~6B activos | 262K | MLX oQ 4-bit, mayor precision que esta version | qwen-community-1.0 | Repo MLX en HuggingFace; usado para calibrar este modelo |
+| d9beuD/Qwen3.8-Flash-Next-oQ2.7-mtp | ~180B totales, ~6B activos | 262K | MLX oQ 2.7 (~3,29 bits/peso), 74 GB | qwen-community-1.0 | Repo MLX en Hugging Face (0 descargas, 0 likes al crear la ficha) |
+| Qwen/Qwen3.8-Flash-Next (base) | ~180B totales, ~6B activos | 262K | bf16 sin cuantizar | qwen-community-1.0 | Repo oficial en Hugging Face |
+| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | ~180B totales, ~6B activos | 262K | MLX oQ 4-bit, mayor precision que esta version | qwen-community-1.0 | Repo MLX en Hugging Face; usado para calibrar este modelo |
 | Qwen3.7-Plus | no disponible | no disponible | no disponible | no disponible | Referencia citada por el autor del modelo base como punto de comparacion previo |
 
 No se dispone de resultados de rendimiento cuantitativos para ninguna de estas variantes en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto, formato y licencia.

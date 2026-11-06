@@ -69,6 +69,6 @@ No se dispone de información suficiente para comparar este LoRA con otros model
 
 ## Enlaces
 
-- [HuggingFace - jandak/dti_thumbnail](https://huggingface.co/jandak/dti_thumbnail)
+- [Hugging Face - jandak/dti_thumbnail](https://huggingface.co/jandak/dti_thumbnail)
 - [Entrenador de Qwen Image en fal.ai](https://fal.ai/models/fal-ai/qwen-image-2512-trainer)
 - [Wiki de Dress To Impress - Thumbnails & Icons](https://dti-dress-to-impress.fandom.com/wiki/Thumbnails_%26_Icons)

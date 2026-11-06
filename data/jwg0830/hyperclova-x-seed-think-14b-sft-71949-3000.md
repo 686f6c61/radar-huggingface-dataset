@@ -4,7 +4,7 @@
 
 HyperCLOVA-X-SEED-Think-14B-sft-71949-3000 es un modelo de lenguaje coreano de 14.748 millones de parámetros, publicado por jwg0830. Se trata de un fine-tuning con adaptadores LoRA fusionados sobre el modelo base naver-hyperclovax/HyperCLOVAX-SEED-Think-14B de NAVER. El adaptador fue entrenado con 3.000 ejemplos del dataset AI Hub 71949, centrado en razonamiento causal a partir de preguntas de opción múltiple, y está pensado para investigación y evaluación controlada.
 
-El modelo usa la arquitectura HyperCLOVAXForCausalLM y la plantilla de chat oficial de HyperCLOVA X. La longitud máxima de secuencia durante el entrenamiento fue de 4.096 tokens. Se distribuye como repositorio de HuggingFace en formato safetensors BF16, con licencia hyperclovax-seed. No se han publicado resultados de benchmarks ni datos de rendimiento objetivo en la información disponible.
+El modelo usa la arquitectura HyperCLOVAXForCausalLM y la plantilla de chat oficial de HyperCLOVA X. La longitud máxima de secuencia durante el entrenamiento fue de 4.096 tokens. Se distribuye como repositorio de Hugging Face en formato safetensors BF16, con licencia hyperclovax-seed. No se han publicado resultados de benchmarks ni datos de rendimiento objetivo en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: los pesos en BF16 ocupan ~29,5 GB (14.748.112.896 parámetros × 2 bytes ≈ 29,5 GB). Con sobrecarga de activaciones y memoria de KV para secuencias de hasta 4.096 tokens, se recomienda al menos 40 GB de VRAM.
 - GPU recomendadas: A100 40 GB, A100 80 GB, H100 80 GB o RTX A6000 48 GB para ejecutar en BF16 sin cuantizar.
 - GPU de consumo: una RTX 3090 o 4090 con 24 GB no puede cargar el modelo en BF16 completo. Se necesitaría una cuantización (por ejemplo, GGUF de 8 bits o 4 bits), pero no se publican cuantizaciones en este repositorio.
-- Opciones de despliegue: HuggingFace Transformers es el método directo (AutoModelForCausalLM + AutoTokenizer). La etiqueta "endpoints_compatible" sugiere compatibilidad con vLLM, aunque no se confirma en la model card. No se incluye GGUF, por lo que llama.cpp u Ollama requerirían una conversión manual.
+- Opciones de despliegue: Hugging Face Transformers es el método directo (AutoModelForCausalLM + AutoTokenizer). La etiqueta "endpoints_compatible" sugiere compatibilidad con vLLM, aunque no se confirma en la model card. No se incluye GGUF, por lo que llama.cpp u Ollama requerirían una conversión manual.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -63,8 +63,8 @@ No se identifican alternativas adicionales de la misma categoría en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyperCLOVA-X-SEED-Think-14B-sft-71949-3000 | 14.748.112.896 | No documentado | No publicado | hyperclovax-seed | HuggingFace (safetensors BF16) |
-| naver-hyperclovax/HyperCLOVAX-SEED-Think-14B (base) | 14.748.112.896 | No documentado | No publicado | hyperclovax-seed | HuggingFace |
+| HyperCLOVA-X-SEED-Think-14B-sft-71949-3000 | 14.748.112.896 | No documentado | No publicado | hyperclovax-seed | Hugging Face (safetensors BF16) |
+| naver-hyperclovax/HyperCLOVAX-SEED-Think-14B (base) | 14.748.112.896 | No documentado | No publicado | hyperclovax-seed | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se identifican alternativas adicionales de la misma categoría en la informac
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/jwg0830/HyperCLOVA-X-SEED-Think-14B-sft-71949-3000)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/jwg0830/HyperCLOVA-X-SEED-Think-14B-sft-71949-3000)
 - [Modelo base naver-hyperclovax/HyperCLOVAX-SEED-Think-14B](https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-14B)
 - [Colección HyperCLOVA X SEED de NAVER](https://huggingface.co/collections/naver-hyperclovax/hyperclova-x-seed)
 - [Dataset AI Hub 71949](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71949)

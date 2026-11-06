@@ -103,7 +103,7 @@ Se recomienda no extraer conclusiones comparativas sin ejecutar evaluaciones pro
 - Licencia Apache 2.0 sobre el modelo cuantizado, pero conviene verificar las condiciones del modelo base y de los datos de destilacion antes de un uso comercial en produccion.
 - Capacidad multimodal inferida, no confirmada: los ficheros mmproj sugieren soporte de imagenes, pero no hay documentacion que lo garantice.
 - Compatibilidad: los pesos GGUF requieren llama.cpp o derivados; no son directamente cargables con vLLM o TGI sin conversion previa.
-- Fecha de creacion del repositorio posterior a la fecha de consulta habitual, dato que conviene contrastar en la pagina de HuggingFace.
+- Fecha de creacion del repositorio posterior a la fecha de consulta habitual, dato que conviene contrastar en la pagina de Hugging Face.
 
 ## Enlaces
 

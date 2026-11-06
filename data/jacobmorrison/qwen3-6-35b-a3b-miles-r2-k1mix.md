@@ -95,7 +95,7 @@ En SWE-bench Verified, Qwen3.6-35B-A3B (73,4) supera a su predecesor Qwen3.5-35B
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-k1mix
+- Repositorio Hugging Face: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-k1mix
 - Modelo base Qwen3.6-35B-A3B (referencia en la model card): https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Blog oficial Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b

@@ -106,7 +106,7 @@ La información proporcionada no incluye comparaciones cuantitativas con otros s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Humaneness-Voice-Large-1.2-Alpha
+- Modelo en Hugging Face: https://huggingface.co/laion/Humaneness-Voice-Large-1.2-Alpha
 - Demostración de escucha (35 casos escena/idioma): https://laion-humaneness-voice-large-1-2-alpha-listening.static.hf.space/
 - Dataset con el audio de la demostración: https://huggingface.co/datasets/laion/Humaneness-Voice-Large-1.2-Alpha-Demo-Audio
 - Modelo base (SFT3 Large): https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3

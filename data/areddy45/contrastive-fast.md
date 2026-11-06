@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Areddy45/contrastive-fast` es un repositorio de HuggingFace publicado por el usuario Areddy45 que contiene una implementación mínima de una arquitectura **Mixer** para aprendizaje contrastivo, junto con un *checkpoint* de inicialización. No se trata de un modelo entrenado ni de un lanzamiento con resultados validados: la propia model card lo describe explícitamente como un punto de partida reproducible para pruebas de humo (*smoke tests*) y no como un *checkpoint* evaluado.
+`Areddy45/contrastive-fast` es un repositorio de Hugging Face publicado por el usuario Areddy45 que contiene una implementación mínima de una arquitectura **Mixer** para aprendizaje contrastivo, junto con un *checkpoint* de inicialización. No se trata de un modelo entrenado ni de un lanzamiento con resultados validados: la propia model card lo describe explícitamente como un punto de partida reproducible para pruebas de humo (*smoke tests*) y no como un *checkpoint* evaluado.
 
 El artefacto principal es el script `predict.py`, acompañado de `config.json` (configuración de arquitectura) y `training_args.json` (receta de experimento por defecto). El *checkpoint* `model.safetensors` contiene 24.832 parámetros totales, una cifra coherente con la escala declarada "nano" y con un tamaño de repositorio de 0,0 GB. La arquitectura combina un esquema Mixer con atención *flash*, fusión Tucker, activación swish y normalización GroupNorm.
 
@@ -55,7 +55,7 @@ En cuanto al entrenamiento, el repositorio **no contiene un modelo entrenado**. 
 - **Baseline de capacidad equivalente**: emplear la configuración nano como referencia de baja capacidad al comparar métodos contrastivos, siguiendo la recomendación de la propia model card de usar un *baseline* de capacidad ajustada.
 - **Desarrollo de adaptadores de carga personalizados**: dado que el repositorio no sigue las convenciones de `transformers`, sirve para practicar la escritura de un adaptador explícito que permita usar APIs genéricas de carga automática.
 - **Reproducibilidad de experimentos**: los ficheros `config.json`, `training_args.json` y el script permiten fijar y versionar la receta (Adam, *warmup* constante) junto con los registros de entrenamiento y las versiones del entorno.
-- **Docencia y material didáctico**: ejemplo mínimo y autocontenido para explicar cómo se empaqueta un modelo en HuggingFace Hub, qué es un *checkpoint* de inicialización y por qué no debe confundirse con un modelo entrenado.
+- **Docencia y material didáctico**: ejemplo mínimo y autocontenido para explicar cómo se empaqueta un modelo en Hugging Face Hub, qué es un *checkpoint* de inicialización y por qué no debe confundirse con un modelo entrenado.
 - **Medición de *overhead* de infraestructura**: con 24.832 parámetros, resulta útil para medir latencia de arranque, carga de safetensors y sobrecarga de frameworks sin que el cómputo del modelo domine la medición.
 - **Verificación de licencias y flujos de publicación**: al estar bajo BSD-3-Clause y ser de dominio público en el Hub, permite ensayar flujos internos de aprobación legal y publicación de artefactos.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparables para ninguno de los tres repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Areddy45/contrastive-fast
+- Repositorio en Hugging Face: https://huggingface.co/Areddy45/contrastive-fast
 - Repositorio homónimo (variante Dino, xlarge): https://huggingface.co/lucyjohnson/contrastive-fast
 - Repositorio homónimo: https://huggingface.co/andreywsmirnov/contrastive-fast
 - Proyecto relacionado sobre curación de datos contrastivos y evaluación: https://github.com/bespokelabsai/nimble

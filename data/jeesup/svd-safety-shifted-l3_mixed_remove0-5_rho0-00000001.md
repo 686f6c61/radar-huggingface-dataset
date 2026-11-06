@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0.00000001 | 8.030.261.248 | No disponible | llama3 | HuggingFace, 10 descargas | Checkpoint de investigación con compresión SVD sesgada a seguridad |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens (según documentación de Meta) | llama3 | HuggingFace, ampliamente disponible | Modelo base sin comprimir; referencia de comportamiento y seguridad |
+| Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0.00000001 | 8.030.261.248 | No disponible | llama3 | Hugging Face, 10 descargas | Checkpoint de investigación con compresión SVD sesgada a seguridad |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens (según documentación de Meta) | llama3 | Hugging Face, ampliamente disponible | Modelo base sin comprimir; referencia de comportamiento y seguridad |
 | Alternativas de compresión SVD de Llama 3 | No disponible | No disponible | No disponible | No disponible | No se dispone de información sobre otros checkpoints comparables en la búsqueda realizada |
 
 La comparación directa más relevante es con el modelo base sin comprimir, ya que el checkpoint comparte exactamente el número de parámetros nominales pero con una fracción realizada de 0.565216 en parámetros factoriales. No se dispone de datos de rendimiento del checkpoint para comparar con el base.
@@ -82,6 +82,6 @@ La comparación directa más relevante es con el modelo base sin comprimir, ya q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0.00000001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0.00000001
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este checkpoint.

@@ -82,10 +82,10 @@ No hay datos publicados de rendimiento general (benchmarks) ni especificaciones 
 
 | Modelo | Parametros | Contexto | QER / metrica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`..._sdf`, checkpoint `step-62`) | ~1B (999.895.168) | no disponible | QER `test` 0.110 +- 0.015 | apache-2.0 | HuggingFace, safetensors |
-| Modelo base `gemma_3_1b_vanilla_dpo_123_seed` | ~1B (no confirmado en la informacion) | no disponible | lectura de referencia en el mismo split: no disponible | no disponible | HuggingFace |
-| Otras variantes de la campana (distintas recetas, mismo objetivo QER) | ~1B | no disponible | QER objetivo 0.1292 (seleccion) | no disponible | presumiblemente HuggingFace (no confirmado) |
-| Modelos generalistas de ~1B (Gemma 3 1B, Llama 3.2 1B, Qwen 2.5 1.5B) | 1-1.5B | no disponible | no disponible para comparacion directa | licencias variadas | HuggingFace |
+| Este modelo (`..._sdf`, checkpoint `step-62`) | ~1B (999.895.168) | no disponible | QER `test` 0.110 +- 0.015 | apache-2.0 | Hugging Face, safetensors |
+| Modelo base `gemma_3_1b_vanilla_dpo_123_seed` | ~1B (no confirmado en la informacion) | no disponible | lectura de referencia en el mismo split: no disponible | no disponible | Hugging Face |
+| Otras variantes de la campana (distintas recetas, mismo objetivo QER) | ~1B | no disponible | QER objetivo 0.1292 (seleccion) | no disponible | presumiblemente Hugging Face (no confirmado) |
+| Modelos generalistas de ~1B (Gemma 3 1B, Llama 3.2 1B, Qwen 2.5 1.5B) | 1-1.5B | no disponible | no disponible para comparacion directa | licencias variadas | Hugging Face |
 
 No se dispone de benchmarks comunes que permitan una comparacion cuantitativa con alternativas generalistas.
 
@@ -104,7 +104,7 @@ No se dispone de benchmarks comunes que permitan una comparacion cuantitativa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_mixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_mixed_sdf
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Juez utilizado en la medicion: https://huggingface.co/google/gemini-3-flash-preview
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (los resultados disponibles tratan sobre clientes de correo y no estan relacionados con el modelo).

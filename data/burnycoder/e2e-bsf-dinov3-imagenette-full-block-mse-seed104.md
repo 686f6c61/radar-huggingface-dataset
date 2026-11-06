@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed104 | 9.599.498 | no disponible | KL 0,0375 nats/imagen; accuracy 98,37 %; MSE 0,5442 | MIT (backbone DINOv3 con licencia separada) | HuggingFace, 22 descargas |
+| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed104 | 9.599.498 | no disponible | KL 0,0375 nats/imagen; accuracy 98,37 %; MSE 0,5442 | MIT (backbone DINOv3 con licencia separada) | Hugging Face, 22 descargas |
 | SAE con ReLU convencional sobre DINOv3 | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Variante KL del mismo estudio (semilla comparable) | no disponible | no disponible | Diferencia media pareada de 0,0025 nats/imagen frente a la variante local | no disponible | referenciada en el estudio, sin repo público indicado |
 
@@ -91,7 +91,7 @@ No se dispone de datos numéricos de modelos comparables de la misma categoría 
 
 ## Enlaces
 
-- [HuggingFace: BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed104](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed104)
+- [Hugging Face: BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed104](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed104)
 - [Repositorio del proyecto end-to-end-block-sparse-featurizers](https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers)
 - [Paper BSF (arXiv:2606.25234)](https://arxiv.org/abs/2606.25234)
 - [Paper end-to-end SAE (arXiv:2405.12241)](https://arxiv.org/abs/2405.12241)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`m1b/kairos_rmbenchpp_press_button_noop_16v3_k2_p2p3` es un checkpoint de investigación publicado por el usuario m1b en HuggingFace, orientado al entrenamiento de políticas robóticas sobre el benchmark RM-Bench++ y el entorno RoboDojo. No se trata de un modelo de lenguaje generativo, sino de pesos de un sistema de control (aparentemente un transformer con "memory tokens") que mapea observaciones a acciones articulares continuas de un robot dual X5 con 14 dimensiones absolutas. El repo ocupa 18,4 GB y contiene dos subdirectorios (`p2/` y `p3/`) con pesos y estadísticas de normalización.
+`m1b/kairos_rmbenchpp_press_button_noop_16v3_k2_p2p3` es un checkpoint de investigación publicado por el usuario m1b en Hugging Face, orientado al entrenamiento de políticas robóticas sobre el benchmark RM-Bench++ y el entorno RoboDojo. No se trata de un modelo de lenguaje generativo, sino de pesos de un sistema de control (aparentemente un transformer con "memory tokens") que mapea observaciones a acciones articulares continuas de un robot dual X5 con 14 dimensiones absolutas. El repo ocupa 18,4 GB y contiene dos subdirectorios (`p2/` y `p3/`) con pesos y estadísticas de normalización.
 
 El interés técnico del checkpoint reside en que documenta una ablación concreta: el autor reduce los pasos de "surprise denoise" de 4 a 2 (K=2) en el módulo de memory tokens con router adaptativo, manteniendo el prefijo de 128 tokens y el cuantil 0,9. Sobre esa base se ejecutan 2.000 pasos de ajuste con episodios completos conjuntos (1x8 A800, LR 1e-4) y después 2.000 pasos adicionales solo sobre la memoria. Es, por tanto, material de reproducibilidad para investigación en políticas robóticas, no un modelo listo para producción.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entorno / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `m1b/kairos_rmbenchpp_press_button_noop_16v3_k2_p2p3` | no disponible | prefijo de memoria 128 tokens | RoboDojo, press button, 14D | no disponible | HuggingFace (0 descargas) |
-| `m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3` (base) | no disponible | prefijo de memoria 128 tokens | RoboDojo, press button, 14D | no disponible | HuggingFace |
+| `m1b/kairos_rmbenchpp_press_button_noop_16v3_k2_p2p3` | no disponible | prefijo de memoria 128 tokens | RoboDojo, press button, 14D | no disponible | Hugging Face (0 descargas) |
+| `m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3` (base) | no disponible | prefijo de memoria 128 tokens | RoboDojo, press button, 14D | no disponible | Hugging Face |
 | Otras políticas robóticas open source (p. ej. RT-2, OpenVLA) | no comparable directamente | no disponible | manipulación general | variable | no disponible para comparación directa |
 
 La comparación con modelos de la misma categoría no está disponible en la información proporcionada; el único pariente documentado es el checkpoint base del que deriva esta ablación.
@@ -78,7 +78,7 @@ La comparación con modelos de la misma categoría no está disponible en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_noop_16v3_k2_p2p3
+- Hugging Face: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_noop_16v3_k2_p2p3
 - Modelo base citado: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3
 - Rama de investigación: `research-marina/v16.3_memory_tokens_speed_opt_rmbenchpp_relocate_cards` (commit `46e736d0fd66787a7d1039420c0155269328e52c`)
 - Dataset: `rmbench-plus-plus-robodojo-press-button-noop` (sin URL directa en la información disponible)

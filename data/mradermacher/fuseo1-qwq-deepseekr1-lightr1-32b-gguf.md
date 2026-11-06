@@ -25,14 +25,14 @@ Esta version GGUF es relevante porque permite desplegar un modelo de razonamient
 
 El modelo es el resultado de una fusion (model fusion o model merging) de tres modelos de razonamiento: QwQ, DeepSeek-R1 y LightR1. La tecnica exacta de fusion, la composicion del dataset de entrenamiento, el numero de tokens utilizados y si se aplicaron tecnicas de RLHF, DPO o RL con verificacion no estan documentados en la informacion disponible. El modelo base FuseAI/FuseO1-QwQ-DeepSeekR1-LightR1-32B no incluye en su model card los detalles de arquitectura interna (numero de capas, dimensiones de atencion, tipo de atencion, etc.).
 
-Esta version concreta es una cuantizacion estatica en formato GGUF realizada por mradermacher. Segun la model card, no se han publicado cuantizaciones ponderadas ni con imatrix para este modelo en el momento de la publicacion. La cuantizacion se genero con la version 2 del proceso de cuantizacion del autor y el tipo de conversion es "hf" (desde pesos de HuggingFace). No se dispone de informacion sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+Esta version concreta es una cuantizacion estatica en formato GGUF realizada por mradermacher. Segun la model card, no se han publicado cuantizaciones ponderadas ni con imatrix para este modelo en el momento de la publicacion. La cuantizacion se genero con la version 2 del proceso de cuantizacion del autor y el tipo de conversion es "hf" (desde pesos de Hugging Face). No se dispone de informacion sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, orientada a tareas de razonamiento.
 - Razonamiento multi-paso y cadenas de pensamiento (heredado de los modelos de origen QwQ, DeepSeek-R1 y LightR1).
 - Resolucion de problemas matematicos y generacion de codigo, segun las capacidades de los modelos fusionados.
-- Soporte de conversaciones multi-turno (tag "conversational" en HuggingFace).
+- Soporte de conversaciones multi-turno (tag "conversational" en Hugging Face).
 - Compatibilidad con endpoints (tag "endpoints_compatible").
 - Capacidades multilingues limitadas al ingles segun la model card.
 - No se ha documentado soporte de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - Q6_K: 27,0 GB y Q8_0: 34,9 GB (requieren 32-48 GB de VRAM, p. ej. A100 40GB, A6000 48GB, o configuraciones multi-GPU).
 - GPU recomendadas: RTX 3090/4090 (24 GB) para cuantizaciones Q4 y Q5; A100 40GB/80GB, H100 o A6000 48GB para Q6_K y Q8_0.
 - Cabe en GPU consumer: si, en RTX 3090, RTX 4090 y RTX 4060 Ti 16GB (con Q2_K o Q3).
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag "endpoints_compatible" sugiere compatibilidad con endpoints de HuggingFace. Tambien puede usarse con transformers cargando el modelo base en safetensors.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag "endpoints_compatible" sugiere compatibilidad con endpoints de Hugging Face. Tambien puede usarse con transformers cargando el modelo base en safetensors.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares

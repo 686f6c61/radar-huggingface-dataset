@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Clarity-MR-1 es un modelo de generación de texto publicado en HuggingFace por el usuario florentin-one. Según las etiquetas del repositorio, está orientado a razonamiento, razonamiento multi-paso, planificación y orquestación (tags `reasoning`, `multi-step`, `planning`, `clarity`, `orchestration`), además de uso conversacional. Se distribuye con licencia MIT, soporte declarado únicamente para inglés y una arquitectura identificada internamente como `clarity_mr1` que requiere código personalizado (`custom_code`) para cargarse con transformers.
+Clarity-MR-1 es un modelo de generación de texto publicado en Hugging Face por el usuario florentin-one. Según las etiquetas del repositorio, está orientado a razonamiento, razonamiento multi-paso, planificación y orquestación (tags `reasoning`, `multi-step`, `planning`, `clarity`, `orchestration`), además de uso conversacional. Se distribuye con licencia MIT, soporte declarado únicamente para inglés y una arquitectura identificada internamente como `clarity_mr1` que requiere código personalizado (`custom_code`) para cargarse con transformers.
 
 El repositorio ocupa 572,3 GB y emplea pesos en formato safetensors, con `fp8` entre las etiquetas, lo que apunta a un modelo de gran tamano o a un repositorio con varias precisiones de pesos. No se ha publicado información sobre el número de parámetros, la longitud de contexto ni la composición del dataset de entrenamiento en la ficha proporcionada.
 
@@ -73,7 +73,7 @@ No disponible. La información proporcionada no identifica modelos comparables d
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia verificable de calidad, razonamiento o robustez. No se recomienda su uso en producción sin evaluación propia.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar el modelo, lo que puede limitar su uso automatizado y su reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar el modelo, lo que puede limitar su uso automatizado y su reproducibilidad.
 - Ejecución de código remoto: la etiqueta `custom_code` obliga a usar `trust_remote_code=True`, lo que implica ejecutar código del autor del repositorio. Debe auditarse el código antes de cargarlo en entornos con datos sensibles.
 - Idiomas: soporte declarado únicamente para inglés. El uso en castellano no está soportado ni evaluado.
 - Contexto y arquitectura desconocidos: sin conocer la ventana de contexto ni la arquitectura, no es posible planificar despliegues ni estimar el coste real de inferencia con precisión.
@@ -81,9 +81,9 @@ No disponible. La información proporcionada no identifica modelos comparables d
 - Sesgos: no documentados. No hay información sobre el dataset ni sobre procesos de alineamiento, por lo que no puede descartarse la presencia de sesgos propios de datos web en inglés.
 - Licencia: MIT, lo que en principio permite uso comercial y modificación. No obstante, deben revisarse los términos adicionales asociados al acceso gated, que pueden imponer condiciones extra no cubiertas por la licencia.
 - Madurez: 0 descargas y 5 "likes" en el momento de la consulta, con última actualización registrada el 2026-10-07. Es un artefacto sin validación comunitaria.
-- Fechas: el repositorio se creó el 2025-07-05 y su última actualización figura como 2026-10-07, fecha posterior a la creación que conviene verificar directamente en HuggingFace.
+- Fechas: el repositorio se creó el 2025-07-05 y su última actualización figura como 2026-10-07, fecha posterior a la creación que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florentin-one/Clarity-MR-1
+- Modelo en Hugging Face: https://huggingface.co/florentin-one/Clarity-MR-1
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a papers, blogs, repositorios de código o demos asociados. Los resultados devueltos por la búsqueda corresponden a temas sin relación (el nombre propio "Florentin", la receta de los dulces florentinos y el significado del nombre), por lo que se descartan como fuentes.

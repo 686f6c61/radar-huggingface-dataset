@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables específicamente orienta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alextsiak/qwen3-4b-green-claims
+- Hugging Face: https://huggingface.co/alextsiak/qwen3-4b-green-claims
 - Repositorio GitHub del autor (detección de green claims): https://github.com/alextsiak/green-claim-detection
 - Repositorio oficial de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3
 - Página de Qwen3-4B en Qualcomm AI Hub (información del base): https://aihub.qualcomm.com/mobile/models/qwen3_4b

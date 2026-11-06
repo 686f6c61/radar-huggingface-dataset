@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hin-deva-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (SFT) publicado por el usuario de HuggingFace `francesca9805`, derivado de su propio modelo base `hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed10`. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 39.087.104 parametros totales, entrenado con la libreria TRL (version 0.23.0) sobre el framework Transformers. Por su nomenclatura y tamano, parece formar parte de una linea de experimentos academicos sobre tokenizacion y empaquetado de datos (*packing*) en hindi escrito en devanagari, probablemente vinculada a un proyecto de investigacion de la Universidad de Groningen segun la cuenta de Weights & Biases asociada.
+El modelo `hin-deva-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (SFT) publicado por el usuario de Hugging Face `francesca9805`, derivado de su propio modelo base `hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed10`. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 39.087.104 parametros totales, entrenado con la libreria TRL (version 0.23.0) sobre el framework Transformers. Por su nomenclatura y tamano, parece formar parte de una linea de experimentos academicos sobre tokenizacion y empaquetado de datos (*packing*) en hindi escrito en devanagari, probablemente vinculada a un proyecto de investigacion de la Universidad de Groningen segun la cuenta de Weights & Biases asociada.
 
 El modelo no incluye una model card descriptiva mas alla de la plantilla autogenerada por TRL, y no se especifican licencia, idiomas soportados ni longitud de contexto. Los pesos se distribuyen en formato safetensors con un repositorio de 1,6 GB, lo que resulta desproporcionado respecto a los 39 millones de parametros y sugiere la posible inclusion de multiples checkpoints o artefactos de entrenamiento.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada fuera del ambito de la investigacion en tokenizacion m
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer decoder-only de la familia GPT-2, segun la etiqueta `gpt2` declarada en HuggingFace y el `pipeline` de `text-generation`. Con 39.087.104 parametros, se situa muy por debajo de GPT-2 small (124 M), lo que apunta a una configuracion reducida en numero de capas y/o dimensiones, aunque no se dispone del `config.json` detallado para confirmar los hiperparametros exactos.
+La arquitectura corresponde a un transformer decoder-only de la familia GPT-2, segun la etiqueta `gpt2` declarada en Hugging Face y el `pipeline` de `text-generation`. Con 39.087.104 parametros, se situa muy por debajo de GPT-2 small (124 M), lo que apunta a una configuracion reducida en numero de capas y/o dimensiones, aunque no se dispone del `config.json` detallado para confirmar los hiperparametros exactos.
 
 El entrenamiento se realizo mediante *supervised fine-tuning* (SFT) con TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0 y Tokenizers 0.22.1. El nombre del repositorio (`hin-deva-10mb-...-Dp-10mb-packed-bfdiso-ckpt500_seed10`) indica varias cosas: corpus de 10 MB orientado a hindi-devanagari, datos empaquetados (*packed*), un checkpoint intermedio (paso 500) y una semilla fija (`seed10`), lo que sugiere un barrido experimental controlado. La referencia a `Dp` probablemente alude a *data processing* o *data parallel*, sin poder confirmarse. No hay informacion sobre composicion del dataset, numero total de tokens, ni si se aplicaron tecnicas de RLHF o DPO mas alla del SFT.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizo mediante *supervised fine-tuning* (SFT) con TRL 0.23
 - Generacion de texto autorregresiva mediante el pipeline estandar de `text-generation` de Transformers.
 - Formato de conversacion de un solo turno (la model card muestra un ejemplo con `{"role": "user", "content": ...}`), lo que sugiere adaptacion a plantillas de chat basicas tras el SFT.
 - Capacidad potencial de modelado de hindi en escritura devanagari, inferida exclusivamente del nombre del modelo, no verificada.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible` segun los tags de HuggingFace.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible` segun los tags de Hugging Face.
 - No hay evidencia de soporte de *tool calling*, *function calling*, agentes, razonamiento multi-paso, vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hin-deva-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas |
+| hin-deva-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible |
-| Otros checkpoints de la misma serie `hin-deva-10mb-*` del autor | no disponible | no disponible | no disponible | HuggingFace (`seed455`, `seed10`, etc.) |
+| Otros checkpoints de la misma serie `hin-deva-10mb-*` del autor | no disponible | no disponible | no disponible | Hugging Face (`seed455`, `seed10`, etc.) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos y el modelo analizado. La comparativa se limita a parametros, contexto y licencia.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos y el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ll5qu79v

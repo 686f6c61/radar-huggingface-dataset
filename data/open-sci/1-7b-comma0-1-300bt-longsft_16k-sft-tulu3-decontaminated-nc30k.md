@@ -32,7 +32,7 @@ No se documentan innovaciones técnicas adicionales (atención lineal, decodific
 ## Capacidades
 
 - Generación de texto autoregresiva propia de un transformer decoder-only de 1,7 B.
-- El pipeline declarado en HuggingFace es `feature-extraction`, por lo que el modelo puede usarse para extraer representaciones ocultas además de para generación.
+- El pipeline declarado en Hugging Face es `feature-extraction`, por lo que el modelo puede usarse para extraer representaciones ocultas además de para generación.
 - No hay evidencia en la información disponible de soporte de tool calling, function calling ni de razonamiento multi-paso con agentes.
 - No se documentan capacidades multimodales (visión, audio) ni modo "thinking".
 - El soporte multilingüe no está declarado; los idiomas figuran como no disponibles.
@@ -65,10 +65,10 @@ La model card declara una entrada en `model-index` con el nombre `sft__Nemotron-
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/1.7b-Comma0.1-...-nc30k | 1,7 B | 16k | other | HuggingFace, 15 descargas | SFT sobre base Comma; sin benchmarks |
-| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated | 1,7 B | 16k | no disponible | HuggingFace | Checkpoint base del anterior |
-| Llama 3.2 1B Instruct | 1,2 B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente adoptado | Ecosistema maduro, tooling estándar |
-| Qwen2.5 1.5B Instruct | 1,5 B | 32k | Apache 2.0 | HuggingFace | Licencia permisiva y buen soporte multilingüe |
+| open-sci/1.7b-Comma0.1-...-nc30k | 1,7 B | 16k | other | Hugging Face, 15 descargas | SFT sobre base Comma; sin benchmarks |
+| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated | 1,7 B | 16k | no disponible | Hugging Face | Checkpoint base del anterior |
+| Llama 3.2 1B Instruct | 1,2 B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente adoptado | Ecosistema maduro, tooling estándar |
+| Qwen2.5 1.5B Instruct | 1,5 B | 32k | Apache 2.0 | Hugging Face | Licencia permisiva y buen soporte multilingüe |
 
 La comparación con Llama 3.2 1B y Qwen2.5 1.5B es orientativa por tamaño y categoría; no se dispone de resultados de benchmarks del modelo Comma que permitan una comparación cuantitativa.
 
@@ -86,7 +86,7 @@ La comparación con Llama 3.2 1B y Qwen2.5 1.5B es orientativa por tamaño y cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated-nc30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated-nc30k
 - Modelo base: https://huggingface.co/ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Dataset Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf: no disponible como enlace público en la información proporcionada

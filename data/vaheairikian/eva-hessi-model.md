@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `vaheairikian/eva-hessi-model` es un repositorio alojado en HuggingFace por el usuario `vaheairikian`, publicado con licencia Apache 2.0. En el momento de la consulta, el repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, y su model card no contiene mas contenido que la cabecera YAML con la licencia. Es decir, no hay informacion publica sobre arquitectura, parametros, datos de entrenamiento ni capacidades del modelo.
+El modelo identificado como `vaheairikian/eva-hessi-model` es un repositorio alojado en Hugging Face por el usuario `vaheairikian`, publicado con licencia Apache 2.0. En el momento de la consulta, el repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, y su model card no contiene mas contenido que la cabecera YAML con la licencia. Es decir, no hay informacion publica sobre arquitectura, parametros, datos de entrenamiento ni capacidades del modelo.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente documental: sirve para dejar constancia de que el repositorio existe, pero no permite una evaluacion tecnica del modelo. Sin pesos publicados, sin documentacion y sin resultados de benchmarks, no es posible determinar que problema resuelve ni con que enfoque.
 
@@ -86,7 +86,7 @@ No disponible. No se puede establecer una comparativa porque se desconocen los p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vaheairikian/eva-hessi-model
+- Hugging Face: https://huggingface.co/vaheairikian/eva-hessi-model
 - Model card del autor: no contiene informacion tecnica (solo la declaracion de licencia Apache 2.0)
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

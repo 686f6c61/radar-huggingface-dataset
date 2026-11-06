@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ReverseLlama es un modelo de generacion de texto publicado en HuggingFace por el usuario alst10 bajo el identificador `alst10/ReverseLlama`. Se distribuye en formato safetensors con la libreria transformers y la etiqueta de arquitectura `llama`, lo que indica que se trata de un modelo basado en la familia Llama. El dato objetivo mas relevante es su tamano: 8.030.261.248 parametros totales, es decir, aproximadamente 8.000 millones, con un repositorio de 16,1 GB (compatible con pesos en precision de 16 bits).
+ReverseLlama es un modelo de generacion de texto publicado en Hugging Face por el usuario alst10 bajo el identificador `alst10/ReverseLlama`. Se distribuye en formato safetensors con la libreria transformers y la etiqueta de arquitectura `llama`, lo que indica que se trata de un modelo basado en la familia Llama. El dato objetivo mas relevante es su tamano: 8.030.261.248 parametros totales, es decir, aproximadamente 8.000 millones, con un repositorio de 16,1 GB (compatible con pesos en precision de 16 bits).
 
-La model card publicada es la plantilla automatica de HuggingFace sin cumplimentar: todos los campos (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y cita) aparecen como `[More Information Needed]`. No hay informacion sobre el dataset de entrenamiento, el procedimiento de ajuste, la longitud de contexto soportada ni los idiomas cubiertos. El nombre "Reverse" sugiere alguna forma de ajuste o transformacion sobre un modelo Llama base, pero no existe documentacion publica que lo confirme.
+La model card publicada es la plantilla automatica de Hugging Face sin cumplimentar: todos los campos (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y cita) aparecen como `[More Information Needed]`. No hay informacion sobre el dataset de entrenamiento, el procedimiento de ajuste, la longitud de contexto soportada ni los idiomas cubiertos. El nombre "Reverse" sugiere alguna forma de ajuste o transformacion sobre un modelo Llama base, pero no existe documentacion publica que lo confirme.
 
 El modelo registra 0 descargas y 0 likes, y la fecha de creacion indicada en el repositorio es el 29 de septiembre de 2026, posterior a la fecha habitual de publicacion de este tipo de artefactos. En el momento de redactar esta ficha, el unico valor practico verificable es el recuento de parametros y los metadatos de formato; cualquier evaluacion de capacidades reales requiere descargar y probar los pesos directamente.
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, la model card no especifica numero de tokens, composi
 - Evaluacion comparativa de modelos 8B: al ser un checkpoint de ~8.000 millones de parametros sin documentar, su uso mas realista es como objeto de estudio en experimentos que comparen variantes de la familia Llama bajo un mismo protocolo de evaluacion.
 - Pruebas de infraestructura de despliegue: sirve para validar pipelines de carga con transformers y safetensors, o el despliegue en TGI, usando un checkpoint de 16,1 GB que exige gestion de memoria y sharding.
 - Prototipado de generacion de texto en local: con cuantizacion a 4 bits (aproximadamente 5 GB de VRAM) puede ejecutarse en una GPU de consumo para experimentar con generacion de texto, siempre que el usuario asuma el riesgo de calidad no verificada.
-- Analisis de procedencia y linaje de modelos: el nombre "ReverseLlama" y la ausencia de documentacion lo convierten en un caso de estudio sobre trazabilidad en el ecosistema HuggingFace.
+- Analisis de procedencia y linaje de modelos: el nombre "ReverseLlama" y la ausencia de documentacion lo convierten en un caso de estudio sobre trazabilidad en el ecosistema Hugging Face.
 - Base para ajuste fino experimental: al ser un checkpoint transformers estandar, puede servir como punto de partida para LoRA o QLoRA en tareas concretas, asumiendo que no hay garantias sobre la calidad de los pesos originales.
 - Intervencion y pruebas de seguridad de modelos: util para investigar comportamiento de modelos no auditados antes de integrarlos en cualquier flujo real.
 - No se recomienda su uso en produccion con clientes, atencion al cliente, generacion de codigo critico ni cualquier aplicacion donde la licencia y la trazabilidad sean requisitos.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| ReverseLlama (alst10) | 8,03 B | no disponible | no disponible | safetensors en HuggingFace | no disponible |
+| ReverseLlama (alst10) | 8,03 B | no disponible | no disponible | safetensors en Hugging Face | no disponible |
 | Llama 3.1 8B (Meta) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF, multiples cuantizaciones | ampliamente documentado |
 | Mistral 7B v0.3 (Mistral AI) | 7,25 B | 32.000 tokens | Apache 2.0 | safetensors, GGUF | documentado |
 | Qwen2.5 7B (Alibaba) | 7,6 B | 128.000 tokens | Apache 2.0 en la mayoria de variantes | safetensors, GGUF | documentado |
@@ -88,7 +88,7 @@ La comparativa se limita a parametros, contexto y licencia: para ReverseLlama no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alst10/ReverseLlama
+- Hugging Face: https://huggingface.co/alst10/ReverseLlama
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre estimacion de emisiones y calculadora ML Impact): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact citada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada.

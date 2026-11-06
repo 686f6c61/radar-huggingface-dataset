@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace creado por el usuario qwwsad que, por su nombre y metadatos, parece destinado a pruebas de integración o validación de infraestructura. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y no contiene archivos de pesos visibles. Las etiquetas asociadas indican `bert`, `feature-extraction` y `transformers`, lo que sugiere un pipeline de extracción de características, aunque la model card incluida describe un modelo de razonamiento generalista con capacidades avanzadas, lo que resulta contradictorio con los metadatos técnicos del repositorio.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face creado por el usuario qwwsad que, por su nombre y metadatos, parece destinado a pruebas de integración o validación de infraestructura. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y no contiene archivos de pesos visibles. Las etiquetas asociadas indican `bert`, `feature-extraction` y `transformers`, lo que sugiere un pipeline de extracción de características, aunque la model card incluida describe un modelo de razonamiento generalista con capacidades avanzadas, lo que resulta contradictorio con los metadatos técnicos del repositorio.
 
 La model card redactada por el autor presenta afirmaciones sobre un modelo de lenguaje con capacidades de razonamiento, mejora en benchmarks como AIME 2025 y soporte de function calling, pero no se proporcionan los pesos, el tokenizador, ni ningún artefacto descargable. Tampoco se especifican parámetros, arquitectura, datos de entrenamiento ni licencia de uso real más allá del campo `license: mit`. Dado que el repositorio está vacío y las afirmaciones de la tarjeta no se pueden verificar, esta ficha debe interpretarse como documentación de un repositorio de prueba, no como la de un modelo funcional.
 
@@ -89,7 +89,7 @@ No disponible. No se puede comparar con otros modelos porque no se conocen las c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qwwsad/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/qwwsad/MyAwesomeModel-TestRepo
 - Repositorio alternativo del mismo autor: https://huggingface.co/qwwsad/MyAwesomeModel
 - Ficha de terceros en openmodelmap.com (no verificada): https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo
 - Agregador de modelos (no verificada): https://free2aitools.com/model/mcptester/myawesomemodel-testrepo

@@ -97,5 +97,5 @@ La diferencia practica principal no esta en el rendimiento, que no se puede cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huaw2/grpo_qwen3_1p7b_dapo_seed42_n4
+- Modelo en Hugging Face: https://huggingface.co/huaw2/grpo_qwen3_1p7b_dapo_seed42_n4
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Las unicas fuentes disponibles son las paginas generales de Google, sin relacion con el modelo.

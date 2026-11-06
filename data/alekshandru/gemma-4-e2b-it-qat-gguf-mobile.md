@@ -83,7 +83,7 @@ El modelo Gemma 4 E2B destaca por su soporte de audio nativo y su esquema de cua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alekshandru/gemma-4-E2B-it-qat-GGUF-mobile
+- Repositorio Hugging Face: https://huggingface.co/alekshandru/gemma-4-E2B-it-qat-GGUF-mobile
 - Modelo base oficial: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Documentación de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Guía de QAT de Unsloth: https://unsloth.ai/docs/models/gemma-4/qat

@@ -97,7 +97,7 @@ No se dispone de datos comparativos con otros fine-tunes de maratí, como `Prave
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bhaskaro/ainotes-whisper-marathi-q5_1
+- Repositorio Hugging Face: https://huggingface.co/bhaskaro/ainotes-whisper-marathi-q5_1
 - Modelo base original: https://huggingface.co/steja/whisper-small-marathi
 - whisper.cpp (librería de inferencia): https://github.com/ggml-org/whisper.cpp
 - Otro fine-tuning de maratí (referencia): https://huggingface.co/Praveendecode/finetuned-whishper-small-marathi

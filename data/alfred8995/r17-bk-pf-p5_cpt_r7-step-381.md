@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p5_cpt_r7-step-381` es un checkpoint de un modelo de lenguaje de 1.178.399.488 parametros (aproximadamente 1,18 mil millones) alojado en HuggingFace por el usuario alfred8995. La etiqueta `mistral` en los metadatos indica que emplea la arquitectura transformer de tipo Mistral, con los pesos en formato safetensors y un tamano de repositorio de 4,7 GB, coherente con un checkpoint en precision de 16 bits. Se distribuye bajo licencia `other` y con acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
+`alfred8995/r17-bk-pf-p5_cpt_r7-step-381` es un checkpoint de un modelo de lenguaje de 1.178.399.488 parametros (aproximadamente 1,18 mil millones) alojado en Hugging Face por el usuario alfred8995. La etiqueta `mistral` en los metadatos indica que emplea la arquitectura transformer de tipo Mistral, con los pesos en formato safetensors y un tamano de repositorio de 4,7 GB, coherente con un checkpoint en precision de 16 bits. Se distribuye bajo licencia `other` y con acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
 
 El nombre del repositorio sugiere, por convencion de nomenclatura, un proceso de preentrenamiento continuado (`cpt`, continued pre-training) con una ejecucion identificada como `r7` y un checkpoint intermedio en el paso 381. Esta interpretacion es una inferencia a partir del identificador y no esta confirmada por ninguna model card publica accesible en la informacion disponible.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cabe en GPU de consumo: si, previsiblemente en la mayoria de tarjetas con 6-8 GB en FP16 y en configuraciones de 4 GB con cuantizacion de 4 bits.
 - Opciones de despliegue: transformers (carga directa de safetensors), vLLM y TGI (compatibles con arquitectura Mistral, sujeto a que la configuracion del checkpoint sea correcta), llama.cpp y Ollama previa conversion a GGUF.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
-- Nota: el acceso gated obliga a autenticarse con un token de HuggingFace antes de descargar los pesos, lo que afecta a la automatizacion de despliegues.
+- Nota: el acceso gated obliga a autenticarse con un token de Hugging Face antes de descargar los pesos, lo que afecta a la automatizacion de despliegues.
 
 ## Comparativa con modelos similares
 
@@ -71,10 +71,10 @@ Los datos de la columna propia no estan disponibles; los de las alternativas son
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| alfred8995/r17-bk-pf-p5_cpt_r7-step-381 | ~1,18 B | No disponible | `other` | No disponible | Gated en HuggingFace |
-| Llama 3.2 1B | ~1,24 B | 128k | Licencia comunitaria Llama 3.2 | Si, en la model card oficial | Abierto en HuggingFace |
-| Qwen2.5-1.5B | ~1,54 B | 32k | Apache 2.0 | Si, en la model card oficial | Abierto en HuggingFace |
-| Gemma 2 2B | ~2,6 B | 8k | Terminos de uso de Gemma | Si, en la model card oficial | Abierto en HuggingFace |
+| alfred8995/r17-bk-pf-p5_cpt_r7-step-381 | ~1,18 B | No disponible | `other` | No disponible | Gated en Hugging Face |
+| Llama 3.2 1B | ~1,24 B | 128k | Licencia comunitaria Llama 3.2 | Si, en la model card oficial | Abierto en Hugging Face |
+| Qwen2.5-1.5B | ~1,54 B | 32k | Apache 2.0 | Si, en la model card oficial | Abierto en Hugging Face |
+| Gemma 2 2B | ~2,6 B | 8k | Terminos de uso de Gemma | Si, en la model card oficial | Abierto en Hugging Face |
 
 La diferencia practica fundamental no es de tamano sino de trazabilidad: las alternativas cuentan con documentacion, evaluaciones y licencias explicitas, mientras que este checkpoint carece de las tres cosas.
 
@@ -93,5 +93,5 @@ La diferencia practica fundamental no es de tamano sino de trazabilidad: las alt
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/alfred8995/r17-bk-pf-p5_cpt_r7-step-381
+- Hugging Face (acceso restringido): https://huggingface.co/alfred8995/r17-bk-pf-p5_cpt_r7-step-381
 - Paper, blog, repositorio o demo: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, su autor o su entrenamiento.

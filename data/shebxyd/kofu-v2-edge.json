@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shebxyd/kofu-v2-edge",
+  "slug": "shebxyd-kofu-v2-edge",
+  "author": "shebxyd",
+  "url": "https://huggingface.co/shebxyd/kofu-v2-edge",
+  "created_at": "2026-11-05T18:04:19.000Z",
+  "updated_at": "2026-11-05T18:45:51.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma2",
+    "text-generation",
+    "gemma",
+    "kofu",
+    "edge",
+    "android",
+    "litert",
+    "cplusplus",
+    "on-device",
+    "conversational",
+    "llama.cpp",
+    "es",
+    "en",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:quantized:google/gemma-2-2b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 1747764792,
+  "storage_human": "1.7 GB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shebxyd/kofu-v2-edge · Hugging Face",
+      "url": "https://huggingface.co/shebxyd/kofu-v2-edge",
+      "snippet": "Instructions to use shebxyd/kofu-v2-edge with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use shebxyd/kofu-v2-edge with Transformers:"
+    },
+    {
+      "title": "shebxyd/kofu-2b-edge · Hugging Face",
+      "url": "https://huggingface.co/shebxyd/kofu-2b-edge",
+      "snippet": "Instructions to use shebxyd/kofu-2b-edge with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use shebxyd/kofu-2b-edge with Transformers:"
+    }
+  ]
+}

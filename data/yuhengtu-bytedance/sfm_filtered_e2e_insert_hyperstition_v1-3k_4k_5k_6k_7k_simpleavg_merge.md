@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_simpleavg_merge` es un artefacto de investigacion publicado en HuggingFace por el usuario `yuhengtu-bytedance`. No es un modelo entrenado desde cero ni un lanzamiento de producto: es el resultado de promediar los pesos (weight averaging) de cinco checkpoints de entrenamiento (`global_step3000`, `4000`, `5000`, `6000` y `7000`) de un mismo run interno denominado `filtered_e2e_insert_hyperstition_v1`. La fusion se ha realizado con la herramienta `mergekit` mediante el metodo Linear con `normalize: true`, tomando el checkpoint `global_step7000` como base y asignando peso 1.0 a cada uno de los cinco checkpoints.
+`yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_simpleavg_merge` es un artefacto de investigacion publicado en Hugging Face por el usuario `yuhengtu-bytedance`. No es un modelo entrenado desde cero ni un lanzamiento de producto: es el resultado de promediar los pesos (weight averaging) de cinco checkpoints de entrenamiento (`global_step3000`, `4000`, `5000`, `6000` y `7000`) de un mismo run interno denominado `filtered_e2e_insert_hyperstition_v1`. La fusion se ha realizado con la herramienta `mergekit` mediante el metodo Linear con `normalize: true`, tomando el checkpoint `global_step7000` como base y asignando peso 1.0 a cada uno de los cinco checkpoints.
 
 El modelo tiene 6.856.253.440 parametros (aproximadamente 6,86 mil millones), segun los datos reales de los ficheros safetensors, y la etiqueta de arquitectura declarada es `gpt_neox`, es decir, un transformer decoder-only de la familia GPT-NeoX. El repositorio ocupa 13,7 GB, un tamano coherente con pesos almacenados en bfloat16 (6,86 B x 2 bytes = 13,71 GB). La configuracion de fusion declara `dtype: float32` y `out_dtype: bfloat16`.
 
@@ -87,7 +87,7 @@ La comparacion es aproximada porque el modelo es un merge de checkpoints interno
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`sfm_filtered_e2e_insert_hyperstition_v1...merge`) | ~6,86 B | no disponible | no disponible | HuggingFace, 0 descargas | Merge Linear de 5 checkpoints internos; sin evaluacion |
+| Este modelo (`sfm_filtered_e2e_insert_hyperstition_v1...merge`) | ~6,86 B | no disponible | no disponible | Hugging Face, 0 descargas | Merge Linear de 5 checkpoints internos; sin evaluacion |
 | Pythia 6.9B (EleutherAI) | ~6,9 B | 2048 tokens | Apache 2.0 | Publico, con checkpoints intermedios y evaluacion | Misma familia arquitectonica GPT-NeoX; referencia natural por tamano y arquitectura |
 | Mistral 7B v0.1 | ~7,2 B | 8192 tokens (ventana deslizante de 4096) | Apache 2.0 | Publico, muy extendido | Mejor soporte de tooling y cuantizaciones; arquitectura distinta |
 | Llama 3.1 8B | ~8 B | 131072 tokens | Llama 3.1 Community License | Publico, con restricciones de uso | Mayor contexto y ecosistema; requiere aceptar la licencia |
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento de este modelo que permitan una comparacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_simpleavg_merge
 - `mergekit` (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Paper del metodo Linear / model soups: https://arxiv.org/abs/2203.05482
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados devueltos corresponden a sitios de streaming sin relacion con el repositorio.

@@ -12,7 +12,7 @@ El modelo es relevante porque compite directamente con pesos abiertos de la mism
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE) con DeepSeek Sparse Attention (DSA); tag de HuggingFace `glm_moe_dsa` |
+| Arquitectura | Transformer de mezcla de expertos (MoE) con DeepSeek Sparse Attention (DSA); tag de Hugging Face `glm_moe_dsa` |
 | Parámetros totales | 744.000 millones según la model card; 753.864.139.008 según los safetensors del repositorio |
 | Parámetros activos | 40.000 millones (MoE) |
 | Longitud de contexto | No disponible de forma explícita en la información proporcionada; en las evaluaciones se emplea una longitud de contexto máxima de 202.752 tokens (HLE con herramientas) y una generación máxima de 131.072 tokens |
@@ -103,7 +103,7 @@ Las cifras de memoria que se indican a continuación son estimaciones aritmétic
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|---|
-| GLM-5 | 744.000 M (753.864 M en safetensors) | 40.000 M | No disponible (202.752 tokens usados en evaluación) | MIT | Pesos abiertos en HuggingFace | SWE-bench Verified 77,8; τ²-Bench 89,7; BrowseComp 62,0 |
+| GLM-5 | 744.000 M (753.864 M en safetensors) | 40.000 M | No disponible (202.752 tokens usados en evaluación) | MIT | Pesos abiertos en Hugging Face | SWE-bench Verified 77,8; τ²-Bench 89,7; BrowseComp 62,0 |
 | GLM-4.7 | No disponible | No disponible | No disponible | No disponible | No disponible | SWE-bench Verified 73,8; HLE 24,8 |
 | DeepSeek-V3.2 | No disponible | No disponible | No disponible | No disponible | No disponible | SWE-bench Verified 73,1; Tool-Decathlon 35,2 |
 | Kimi K2.5 | No disponible | No disponible | No disponible | No disponible | No disponible | HLE 31,5; GPQA-Diamond 87,6 |
@@ -128,7 +128,7 @@ GLM-5 es el único modelo de la comparativa del que se dispone de licencia MIT y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zai-org/GLM-5
+- Modelo en Hugging Face: https://huggingface.co/zai-org/GLM-5
 - Paper: https://huggingface.co/papers/2602.15763
 - Repositorio en GitHub: https://github.com/zai-org/GLM-5
 - Blog técnico: https://z.ai/blog/glm-5

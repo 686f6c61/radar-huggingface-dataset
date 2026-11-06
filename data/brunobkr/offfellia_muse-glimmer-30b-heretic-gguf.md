@@ -2,9 +2,9 @@
 
 ## Resumen
 
-OFFFELLIA_Muse-Glimmer-30B-Heretic es un archivo GGUF publicado por el usuario Brunobkr en HuggingFace, derivado del modelo Muse-Glimmer-30B, un modelo abierto de 30.000 millones de parametros que Meta publico el 10 de agosto de 2026 y que esta disenado para ejecutarse en una unica GPU de consumo. El sufijo "Heretic" indica que se trata de una variante modificada, presumiblemente con las capas de rechazo o alineacion relajadas (uncensored/abliterated), un patron habitual en la comunidad open source. El repositorio aparece como vacio en el momento de la consulta.
+OFFFELLIA_Muse-Glimmer-30B-Heretic es un archivo GGUF publicado por el usuario Brunobkr en Hugging Face, derivado del modelo Muse-Glimmer-30B, un modelo abierto de 30.000 millones de parametros que Meta publico el 10 de agosto de 2026 y que esta disenado para ejecutarse en una unica GPU de consumo. El sufijo "Heretic" indica que se trata de una variante modificada, presumiblemente con las capas de rechazo o alineacion relajadas (uncensored/abliterated), un patron habitual en la comunidad open source. El repositorio aparece como vacio en el momento de la consulta.
 
-El repositorio no incluye pesos verificables: el tamano reportado es de 0,0 GB, sin descargas ni likes, y no se especifica licencia ni pipeline en los metadatos de HuggingFace. La model card publicada no describe el modelo en si, sino el ecosistema de inferencia en el que se enmarca: un fork de llama.cpp denominado OFFFELLIA, escrito en C/C++, con motor agentico multi-turno, soporte de Fill-in-the-Middle, decodificacion especulativa, integracion de herramientas MCP y una interfaz web en SvelteKit/Vite.
+El repositorio no incluye pesos verificables: el tamano reportado es de 0,0 GB, sin descargas ni likes, y no se especifica licencia ni pipeline en los metadatos de Hugging Face. La model card publicada no describe el modelo en si, sino el ecosistema de inferencia en el que se enmarca: un fork de llama.cpp denominado OFFFELLIA, escrito en C/C++, con motor agentico multi-turno, soporte de Fill-in-the-Middle, decodificacion especulativa, integracion de herramientas MCP y una interfaz web en SvelteKit/Vite.
 
 Por tanto, esta ficha debe interpretarse con cautela: la informacion disponible describe el entorno de ejecucion y la familia de modelos base, pero no hay datos confirmados sobre cuantizaciones concretas, contexto nativo, idiomas ni resultados de evaluacion del artefacto concreto alojado en este repositorio. Se recomienda tratar el contenido como una ficha exploratoria y verificar el repositorio antes de cualquier uso en produccion.
 
@@ -26,7 +26,7 @@ Por tanto, esta ficha debe interpretarse con cautela: la informacion disponible 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion tecnica publicada sobre la arquitectura, el dataset de entrenamiento, el numero de tokens utilizados ni el proceso de alineacion (RLHF/DPO) de este artefacto concreto. El repositorio no incluye documentacion al respecto y los metadatos de HuggingFace no especifican pipeline ni idiomas. La model card se limita a describir el fork de llama.cpp OFFFELLIA (C++17/20, Vulkan, servidor con soporte de agentes, herramientas MCP, decodificacion especulativa orientada a programacion y WebUI en SvelteKit), no el modelo en si.
+No hay informacion tecnica publicada sobre la arquitectura, el dataset de entrenamiento, el numero de tokens utilizados ni el proceso de alineacion (RLHF/DPO) de este artefacto concreto. El repositorio no incluye documentacion al respecto y los metadatos de Hugging Face no especifican pipeline ni idiomas. La model card se limita a describir el fork de llama.cpp OFFFELLIA (C++17/20, Vulkan, servidor con soporte de agentes, herramientas MCP, decodificacion especulativa orientada a programacion y WebUI en SvelteKit), no el modelo en si.
 
 Respecto al modelo base, la informacion de busqueda indica que Muse-Glimmer-30B es un modelo abierto de Meta publicado el 10 de agosto de 2026, con 30.000 millones de parametros, orientado a ejecucion local en una sola GPU de consumo y acompanado de una Usage Policy corporativa. El sufijo "Heretic" sugiere un ajuste posterior orientado a eliminar mecanismos de rechazo, pero no se documenta la metodologia. Cualquier afirmacion adicional sobre atencion, mezcla de expertos, decodificacion especulativa nativa o composicion del dataset seria especulativa y no se incluye.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Brunobkr/OFFFELLIA_Muse-Glimmer-30B-Heretic.gguf | 30B (base) | No disponible | No disponible | No disponible | Repositorio de 0,0 GB, sin pesos verificables |
-| 0bserverx/Muse-Glimmer-30B-Heretic-GGUF | 30B (base) | No disponible | No disponible | No disponible | Publicado en HuggingFace, consultar repositorio |
+| 0bserverx/Muse-Glimmer-30B-Heretic-GGUF | 30B (base) | No disponible | No disponible | No disponible | Publicado en Hugging Face, consultar repositorio |
 | meta-models/Muse-Glimmer-30B | 30B | No disponible | Publicado segun el autor base | Usage Policy de Meta | Repositorio oficial del modelo base |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas del mismo tamano. La comparacion se limita a la existencia y disponibilidad de artefactos equivalentes.
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 ## Limitaciones y advertencias
 
 - Repositorio vacio: el tamano reportado es de 0,0 GB y no se han registrado descargas; es probable que los pesos no esten subidos o que el repositorio este incompleto. Verificar antes de cualquier uso.
-- Licencia indeterminada: los metadatos de HuggingFace no especifican licencia. La model card menciona MIT para el fork de llama.cpp, pero el modelo base Muse-Glimmer-30B esta sujeto a la Usage Policy de Meta. La combinacion de ambos marcos no se aclara.
+- Licencia indeterminada: los metadatos de Hugging Face no especifican licencia. La model card menciona MIT para el fork de llama.cpp, pero el modelo base Muse-Glimmer-30B esta sujeto a la Usage Policy de Meta. La combinacion de ambos marcos no se aclara.
 - Procedencia del ajuste "Heretic": no hay metodologia publicada; se desconoce que capas o comportamientos se han modificado y con que datos.
 - Riesgo de contenido inapropiado: la naturaleza "uncensored" implica mayor probabilidad de generar contenido sensible, sesgado o inseguro sin filtros. No apto para productos orientados al usuario final sin moderacion adicional.
 - Alucinacion: sin evaluacion publicada, no hay garantia sobre la tasa de alucinacion ni sobre la fiabilidad factual.
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Brunobkr/OFFFELLIA_Muse-Glimmer-30B-Heretic.gguf
-- Modelo base en HuggingFace: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Repositorio Hugging Face: https://huggingface.co/Brunobkr/OFFFELLIA_Muse-Glimmer-30B-Heretic.gguf
+- Modelo base en Hugging Face: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Variante Heretic GGUF similar: https://huggingface.co/0bserverx/Muse-Glimmer-30B-Heretic-GGUF
 - Pagina del modelo base de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Sitio informativo sobre Muse Glimmer: https://museglimmer.site/

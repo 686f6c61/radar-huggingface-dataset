@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un artifact de formato y almacenamiento llamado `glm-moe-dsa-tiny-random-q8_0-rtn-format`, creado por `malaiwah`. No es un modelo de lenguaje entrenado, sino un fixture de toolchain: un checkpoint aleatorio de tamaño minúsculo, cuantizado a q8_0 mediante redondeo al más cercano (RTN), para inspeccionar empaquetado, reconstrucción y fidelidad entre representaciones de pesos. El modelo base es `glm-moe-dsa-tiny-random-bf16`, con arquitectura GLM MoE DSA: 4 capas decoder, atención MLA, 8 expertos enrutados (top-2) más un experto compartido, y cabeza de vocabulario sin atar. Los pesos no están entrenados; el optimizador no se ejecutó. Según HuggingFace, tiene 284.568 parámetros totales; no hay datos de contexto ni de idiomas, porque no es un asistente funcional. Su relevancia es la reproducibilidad: permite validar lectores GGUF, depurar cargas de tensores y comparar cuantizaciones sin descargar modelos de producción.
+Este repositorio contiene un artifact de formato y almacenamiento llamado `glm-moe-dsa-tiny-random-q8_0-rtn-format`, creado por `malaiwah`. No es un modelo de lenguaje entrenado, sino un fixture de toolchain: un checkpoint aleatorio de tamaño minúsculo, cuantizado a q8_0 mediante redondeo al más cercano (RTN), para inspeccionar empaquetado, reconstrucción y fidelidad entre representaciones de pesos. El modelo base es `glm-moe-dsa-tiny-random-bf16`, con arquitectura GLM MoE DSA: 4 capas decoder, atención MLA, 8 expertos enrutados (top-2) más un experto compartido, y cabeza de vocabulario sin atar. Los pesos no están entrenados; el optimizador no se ejecutó. Según Hugging Face, tiene 284.568 parámetros totales; no hay datos de contexto ni de idiomas, porque no es un asistente funcional. Su relevancia es la reproducibilidad: permite validar lectores GGUF, depurar cargas de tensores y comparar cuantizaciones sin descargar modelos de producción.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ Este repositorio contiene un artifact de formato y almacenamiento llamado `glm-m
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura GLM MoE DSA, que combina capas densas y capas de mezcla de expertos (MoE) con atención de latente múltiple (MLA) e indexadores DSA. La model card detalla que incluye cuatro capas de decoder de texto: una densa y tres MoE, con 8 expertos enrutados y selección top-2, más un experto compartido, y una cabeza de vocabulario sin atar. Los búferes de enrutador en FP32 se conservan de forma nativa; no se incluye MTP. No hay datos de entrenamiento reales: el checkpoint se inicializó aleatoriamente y el optimizador no se ejecutó (etiqueta `optimizer-not-run`). La cuantización es una intervención de almacenamiento con redondeo al más cercano (RTN), sin optimización GPTQ/AWQ/ModelOpt ni calibración. La model card reporta 277.824 parámetros generados antes del empaquetado, mientras que los metadatos de HuggingFace indican 284.568 parámetros totales en safetensors. La innovación no está en el modelo en sí, sino en su propósito como fixture de reproducibilidad para probar decodificadores de almacenamiento y comparaciones de fidelidad.
+El modelo sigue una arquitectura GLM MoE DSA, que combina capas densas y capas de mezcla de expertos (MoE) con atención de latente múltiple (MLA) e indexadores DSA. La model card detalla que incluye cuatro capas de decoder de texto: una densa y tres MoE, con 8 expertos enrutados y selección top-2, más un experto compartido, y una cabeza de vocabulario sin atar. Los búferes de enrutador en FP32 se conservan de forma nativa; no se incluye MTP. No hay datos de entrenamiento reales: el checkpoint se inicializó aleatoriamente y el optimizador no se ejecutó (etiqueta `optimizer-not-run`). La cuantización es una intervención de almacenamiento con redondeo al más cercano (RTN), sin optimización GPTQ/AWQ/ModelOpt ni calibración. La model card reporta 277.824 parámetros generados antes del empaquetado, mientras que los metadatos de Hugging Face indican 284.568 parámetros totales en safetensors. La innovación no está en el modelo en sí, sino en su propósito como fixture de reproducibilidad para probar decodificadores de almacenamiento y comparaciones de fidelidad.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No existen modelos comparables en la categoría de modelos funcionales, ya que e
 | Modelo | Parámetros | Cuantización | Licencia | Propósito |
 |---|---|---|---|---|
 | malaiwah/glm-moe-dsa-tiny-random-bf16 | 277.824 (según model card) | BF16 (sin cuantizar) | MIT | Checkpoint base de referencia |
-| malaiwah/glm-moe-dsa-tiny-random-q8_0-rtn-format | 284.568 (según HuggingFace) | q8_0 RTN | MIT | Fixture de almacenamiento cuantizado |
+| malaiwah/glm-moe-dsa-tiny-random-q8_0-rtn-format | 284.568 (según Hugging Face) | q8_0 RTN | MIT | Fixture de almacenamiento cuantizado |
 
 La model card indica que hay 8 derivados en esta familia, pero no se proporcionan especificaciones completas de cada uno. No se pueden comparar con modelos de lenguaje reales porque este no está entrenado.
 
@@ -80,7 +80,7 @@ La model card indica que hay 8 derivados en esta familia, pero no se proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-q8_0-rtn-format
+- Hugging Face: https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-q8_0-rtn-format
 - Modelo base: https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-bf16
 - Colección de familias de cuantización de pesos coincidentes: https://huggingface.co/collections/malaiwah/qfs-matched-weight-quantization-families-6a9f071d93dbd3dbf0a1e844
 - Dataset raíz de fidelidad: https://huggingface.co/datasets/malaiwah/glm-moe-dsa-tiny-fidelity-root-v1

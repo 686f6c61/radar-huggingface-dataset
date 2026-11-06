@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_KT-SPECIAL_SPLIT | 27B | 262k (base) | IQ1_KT | MIT | HuggingFace (shard) |
-| Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT | 27B | 262k (base) | BF16 | MIT | HuggingFace (shard) |
-| Qwen3.8-27B (original) | 27B | 262k | FP16/BF16 | Apache 2.0 | HuggingFace |
+| Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_KT-SPECIAL_SPLIT | 27B | 262k (base) | IQ1_KT | MIT | Hugging Face (shard) |
+| Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT | 27B | 262k (base) | BF16 | MIT | Hugging Face (shard) |
+| Qwen3.8-27B (original) | 27B | 262k | FP16/BF16 | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en el modelo base y en la variante BF16 del mismo autor. La diferencia principal es la precisión de cuantización: IQ1_KT reduce drásticamente el tamaño pero sacrifica calidad, mientras que BF16 mantiene fidelidad casi total. No se dispone de datos de rendimiento comparativo.
 
@@ -73,7 +73,7 @@ La comparativa se basa en el modelo base y en la variante BF16 del mismo autor. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_KT-SPECIAL_SPLIT
+- Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_KT-SPECIAL_SPLIT
 - Variante BF16 del mismo autor: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Colección de shards de Thireus: https://huggingface.co/collections/Thireus/mtp-qwen36-27b-thireus-special-split
 - GGUF Tool Suite de Thireus: https://gguf.thireus.com/

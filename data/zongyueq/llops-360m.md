@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks comparativos directos entre LLoPS-360M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zongyueq/LLoPS-360M
+- Modelo en Hugging Face: https://huggingface.co/zongyueq/LLoPS-360M
 - Repositorio LLoPS: https://github.com/ZongyueQin/LLoPS
 - Modelo base BASED-360M: https://huggingface.co/hazyresearch/based-360m
 - Dataset SlimPajama-6B: https://huggingface.co/datasets/DKYoon/SlimPajama-6B

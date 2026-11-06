@@ -92,7 +92,7 @@ Los tres modelos comparables pertenecen al mismo autor y a la misma familia de d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fnxn/Qwen3-30B-A3B-Thinking-2507-Claude-4.5-Sonnet-High-Reasoning-Distill-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Fnxn/Qwen3-30B-A3B-Thinking-2507-Claude-4.5-Sonnet-High-Reasoning-Distill-GGUF
 - Modelo base (TeichAI): https://huggingface.co/TeichAI/Qwen3-30B-A3B-Thinking-2507-Claude-4.5-Sonnet-High-Reasoning-Distill
 - Modelo original de partida (Unsloth): https://huggingface.co/unsloth/qwen3-30b-a3b-thinking-2507
 - Dataset de destilacion: https://huggingface.co/datasets/TeichAI/claude-sonnet-4.5-high-reasoning-250x

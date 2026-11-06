@@ -70,8 +70,8 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [HuggingFace - encoderfile](https://huggingface.co/mozilla-ai/dcarpintero-pangolin-guard-base-encoderfile)
-- [HuggingFace - modelo base](https://huggingface.co/dcarpintero/pangolin-guard-base)
+- [Hugging Face - encoderfile](https://huggingface.co/mozilla-ai/dcarpintero-pangolin-guard-base-encoderfile)
+- [Hugging Face - modelo base](https://huggingface.co/dcarpintero/pangolin-guard-base)
 - [GitHub - pangolin-guard](https://github.com/dcarpintero/pangolin-guard)
 - [Documentación de Mozilla.ai - Pangolin Guard](https://docs.mozilla.ai/any-guardrail/api-reference/index/pangolin)
 - [Repositorio Encoderfile](https://github.com/mozilla-ai/encoderfile)

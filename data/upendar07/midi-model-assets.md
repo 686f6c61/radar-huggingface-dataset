@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`upendar07/midi-model-assets` es un repositorio publicado en HuggingFace por el usuario `upendar07` bajo licencia Apache 2.0. Por el nombre y la ausencia de cualquier documentación técnica en la model card, todo apunta a que se trata de un contenedor de artefactos auxiliares (assets) asociados a un proyecto de generación o procesamiento de MIDI, y no de un modelo de lenguaje con pesos publicados y documentados.
+`upendar07/midi-model-assets` es un repositorio publicado en Hugging Face por el usuario `upendar07` bajo licencia Apache 2.0. Por el nombre y la ausencia de cualquier documentación técnica en la model card, todo apunta a que se trata de un contenedor de artefactos auxiliares (assets) asociados a un proyecto de generación o procesamiento de MIDI, y no de un modelo de lenguaje con pesos publicados y documentados.
 
 La model card del repositorio está prácticamente vacía: únicamente incluye la declaración de licencia (`apache-2.0`) y carece de descripción, arquitectura, datos de entrenamiento, especificaciones o instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas técnicas más allá de `license:apache-2.0` y `region:us`.
 
@@ -73,4 +73,4 @@ No disponible. La ausencia de especificaciones técnicas impide identificar mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/upendar07/midi-model-assets
+- Repositorio en Hugging Face: https://huggingface.co/upendar07/midi-model-assets

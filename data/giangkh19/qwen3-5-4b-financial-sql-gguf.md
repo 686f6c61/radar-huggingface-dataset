@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `giangkh19/Qwen3.5-4B-Financial-SQL-GGUF` es una adaptación fine-tuned del modelo Qwen3.5-4B, convertida al formato GGUF para su ejecución con llama.cpp. Desarrollado por el usuario giangkh19, está especializado en la generación de consultas SQL en el dominio financiero. El modelo tiene 4.326 millones de parámetros (4.3B) y, según las etiquetas de HuggingFace, es un modelo multimodal de visión y lenguaje, lo que sugiere que puede procesar tanto texto como imágenes. La conversión a GGUF se realizó con Unsloth, y el repositorio incluye los pesos cuantizados en Q4_K_M y un proyector multimodal en F16. El modelo está pensado para ejecutarse localmente con llama.cpp, lo que lo hace adecuado para entornos con recursos limitados. No se proporcionan detalles sobre la licencia, los idiomas soportados ni la longitud de contexto.
+El modelo `giangkh19/Qwen3.5-4B-Financial-SQL-GGUF` es una adaptación fine-tuned del modelo Qwen3.5-4B, convertida al formato GGUF para su ejecución con llama.cpp. Desarrollado por el usuario giangkh19, está especializado en la generación de consultas SQL en el dominio financiero. El modelo tiene 4.326 millones de parámetros (4.3B) y, según las etiquetas de Hugging Face, es un modelo multimodal de visión y lenguaje, lo que sugiere que puede procesar tanto texto como imágenes. La conversión a GGUF se realizó con Unsloth, y el repositorio incluye los pesos cuantizados en Q4_K_M y un proyector multimodal en F16. El modelo está pensado para ejecutarse localmente con llama.cpp, lo que lo hace adecuado para entornos con recursos limitados. No se proporcionan detalles sobre la licencia, los idiomas soportados ni la longitud de contexto.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/giangkh19/Qwen3.5-4B-Financial-SQL-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/giangkh19/Qwen3.5-4B-Financial-SQL-GGUF
 - Modelo hermano `qwen3.5-4b-sql`: https://huggingface.co/giangkh19/qwen3.5-4b-sql
 - Modelo hermano `qwen3.5-4b-sql-gguf`: https://huggingface.co/giangkh19/qwen3.5-4b-sql-gguf
 - Unsloth: https://github.com/unslothai/unsloth

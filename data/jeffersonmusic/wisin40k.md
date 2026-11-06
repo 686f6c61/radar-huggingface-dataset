@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wisin40K es un repositorio publicado en HuggingFace por el usuario JEFFERSONMUSIC bajo licencia Apache 2.0. El repositorio tiene un tamano aproximado de 0,1 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, por lo que se trata de una publicacion practicamente sin traccion ni validacion por parte de la comunidad. La model card asociada no contiene mas informacion que el identificador de licencia, sin descripcion del modelo, del entrenamiento ni de los datos utilizados.
+Wisin40K es un repositorio publicado en Hugging Face por el usuario JEFFERSONMUSIC bajo licencia Apache 2.0. El repositorio tiene un tamano aproximado de 0,1 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, por lo que se trata de una publicacion practicamente sin traccion ni validacion por parte de la comunidad. La model card asociada no contiene mas informacion que el identificador de licencia, sin descripcion del modelo, del entrenamiento ni de los datos utilizados.
 
 No se dispone de informacion verificable sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia. El nombre del repositorio y el alias del autor sugieren un posible vinculo con contenido musical o de audio, pero no existe ninguna confirmacion documental de ello, por lo que cualquier afirmacion al respecto seria especulativa. Debe tratarse, por tanto, como un artefacto no documentado.
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Licencia | Parametros | Contexto | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Wisin40K | Apache 2.0 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Wisin40K | Apache 2.0 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JEFFERSONMUSIC/Wisin40K
+- Hugging Face: https://huggingface.co/JEFFERSONMUSIC/Wisin40K
 - Model card: no contiene informacion adicional (unicamente el campo `license: apache-2.0`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

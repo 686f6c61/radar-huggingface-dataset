@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-SM75 es un checkpoint alojado en HuggingFace por el usuario JohnieBraaf, obtenido mediante la conversion del modelo ukisai/Swift-Qwen3.8-27b a un formato cuantizado en FP8. La unica documentacion incluida en el repositorio es la expresion Nix y el script de conversion empleados, no una model card convencional: no se declaran licencia, idiomas, pipeline, ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes desde su creacion el 21 de septiembre de 2026, por lo que no existe validacion por parte de la comunidad.
+Swift-Qwen3.8-27B-SM75 es un checkpoint alojado en Hugging Face por el usuario JohnieBraaf, obtenido mediante la conversion del modelo ukisai/Swift-Qwen3.8-27b a un formato cuantizado en FP8. La unica documentacion incluida en el repositorio es la expresion Nix y el script de conversion empleados, no una model card convencional: no se declaran licencia, idiomas, pipeline, ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes desde su creacion el 21 de septiembre de 2026, por lo que no existe validacion por parte de la comunidad.
 
 El proceso de conversion documentado utiliza llm-compressor 0.13.0 junto con compressed-tensors 0.18.0, auto-round 0.14.2, accelerate 1.14.0 y PyTorch con CUDA 13.0. La cuantizacion es por bloques de 128 elementos con un limite de escala de 448.0 (el maximo representable en el formato FP8 E4M3), y excluye explicitamente los tensores no bidimensionales, las capas de embedding, la cabeza lm_head, la torre visual, los modulos de atencion lineal y los modulos de multi-token prediction.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cache KV: no disponible, depende del numero de capas, cabezas y de la longitud de contexto, datos que no se han publicado.
 - GPUs con soporte nativo de FP8: familias Hopper (H100, H200) y Ada (L40S, L4). Las GPUs Ampere (A100, A10) no ejecutan FP8 en hardware, por lo que requeririan descompresion a BF16 en el momento de la carga, con el consiguiente incremento de memoria.
 - GPUs de consumo: 27 GB de pesos no caben en una RTX 4090 ni en una RTX 3090 (24 GB) sin recurrir a offload a CPU o a memoria unificada, lo que degrada fuertemente la latencia. Una RTX 5090 de 32 GB podria albergarlos en teoria, aunque no hay confirmacion de compatibilidad del runtime.
-- Opciones de despliegue: vLLM con soporte de compressed-tensors, y HuggingFace transformers junto con accelerate y compressed-tensors. llama.cpp y Ollama no consumen el formato compressed-tensors, por lo que requeririan una conversion a GGUF no documentada en el repositorio, con riesgo de perder la estructura de modulos MTP y vision.
+- Opciones de despliegue: vLLM con soporte de compressed-tensors, y Hugging Face transformers junto con accelerate y compressed-tensors. llama.cpp y Ollama no consumen el formato compressed-tensors, por lo que requeririan una conversion a GGUF no documentada en el repositorio, con riesgo de perder la estructura de modulos MTP y vision.
 - Latencia y throughput: no disponible.
 - Nota sobre el sufijo del nombre: el identificador incluye "SM75", que podria aludir a la compute capability 7.5 (Turing), pero el autor no lo documenta y Turing no dispone de soporte nativo de FP8, por lo que esta interpretacion no puede confirmarse.
 

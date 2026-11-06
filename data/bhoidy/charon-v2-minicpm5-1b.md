@@ -12,7 +12,7 @@ Su relevancia reside en el nicho de la generacion procedural de video mediante c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (arquitectura LLaMA, segun tags de HuggingFace) con adaptador LoRA |
+| Arquitectura | Transformer decoder (arquitectura LLaMA, segun tags de Hugging Face) con adaptador LoRA |
 | Parametros totales | Base de 1B parametros (MiniCPM5-1B); tamano exacto del adaptador no disponible |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ Su relevancia reside en el nicho de la generacion procedural de video mediante c
 
 ## Arquitectura y entrenamiento
 
-El modelo base es openbmb/MiniCPM5-1B, un modelo generativo de aproximadamente 1B parametros cuya arquitectura aparece etiquetada como LLaMA en HuggingFace. Sobre el se aplica un adaptador LoRA con rango r=16 y alpha=32 aplicado a las matrices de atencion `q_proj`, `v_proj`, `k_proj` y `o_proj`, lo que reduce drasticamente el numero de parametros entrenables y el coste del afinado.
+El modelo base es openbmb/MiniCPM5-1B, un modelo generativo de aproximadamente 1B parametros cuya arquitectura aparece etiquetada como LLaMA en Hugging Face. Sobre el se aplica un adaptador LoRA con rango r=16 y alpha=32 aplicado a las matrices de atencion `q_proj`, `v_proj`, `k_proj` y `o_proj`, lo que reduce drasticamente el numero de parametros entrenables y el coste del afinado.
 
 El entrenamiento se realizo en una GPU NVIDIA Tesla T4 en Kaggle Cloud durante 3 epocas completas (4.351 pasos de optimizador y 34.806 pasadas de secuencia), alcanzando una loss final convergida de 0,00112. El dataset de entrenamiento, el Charon V2 Dual-Mode Corpus, consta de 11.602 muestras de codigo Remotion TypeScript validado sintacticamente mediante AST, cubriendo dos modos esteticos condicionables (claro y oscuro). No se ha publicado informacion sobre el numero de tokens del corpus, ni sobre el uso de RLHF o DPO; el afinado parece ser puramente supervisado sobre pares descripcion-codigo.
 
@@ -86,7 +86,7 @@ Charon V2 se diferencia de los modelos de codigo generalistas en que esta afinad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bhoidy/charon-v2-minicpm5-1b
+- Modelo en Hugging Face: https://huggingface.co/Bhoidy/charon-v2-minicpm5-1b
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Repositorio/notebook de entrenamiento en Kaggle mencionado por el autor: bhoidy/charon-v2-minicpm5-1b-training (URL directa no disponible)
 - Documentacion de Remotion: https://www.remotion.dev/

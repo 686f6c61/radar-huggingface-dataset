@@ -81,10 +81,10 @@ Las cifras de velocidad se midieron en un único PC: RTX 5090 (32 GB) sobre OCuL
 
 | Modelo | Bytes de expertos | KL | Calidad (tareas) | Velocidad (tok/s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LDLQ 132G (esta ficha) | 132,2 GB | 0,194 | 77,6 | 67,5 | MIT | HuggingFace |
-| LDLQ 139G (esta ficha) | 139,4 GB | 0,182 | 81,4 | 57,9 | MIT | HuggingFace |
-| unsloth UD-IQ1_M | 132,2 GB | 0,198 | 81,1 | 71,8 | MIT (modelo base) | HuggingFace |
-| unsloth UD-IQ2_XXS | 156,9 GB | 0,142 | 78,8 | no disponible | MIT (modelo base) | HuggingFace |
+| LDLQ 132G (esta ficha) | 132,2 GB | 0,194 | 77,6 | 67,5 | MIT | Hugging Face |
+| LDLQ 139G (esta ficha) | 139,4 GB | 0,182 | 81,4 | 57,9 | MIT | Hugging Face |
+| unsloth UD-IQ1_M | 132,2 GB | 0,198 | 81,1 | 71,8 | MIT (modelo base) | Hugging Face |
+| unsloth UD-IQ2_XXS | 156,9 GB | 0,142 | 78,8 | no disponible | MIT (modelo base) | Hugging Face |
 
 La comparación se limita a las cuantizaciones del mismo modelo base citadas por el autor; no se dispone de datos de otros modelos MoE comparables en la información proporcionada.
 
@@ -102,7 +102,7 @@ La comparación se limita a las cuantizaciones del mismo modelo base citadas por
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-LDLQ-32G96G-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-LDLQ-32G96G-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Motor Abyss: https://github.com/zephel01/Abyss
 - Issues de Abyss: https://github.com/zephel01/Abyss/issues

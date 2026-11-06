@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Phongpronekk/plant-disease-efficientnetb0` es un clasificador de imágenes basado en la arquitectura EfficientNetB0, orientado a la detección de enfermedades en plantas a partir de imágenes de hojas. El autor, Phongpronekk, lo ha publicado bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas. Aunque la ficha de HuggingFace es extremadamente escueta —sin descripción, sin datos de entrenamiento, sin métricas y sin peso publicado (0.0 GB)—, el nombre del modelo indica que utiliza la arquitectura EfficientNetB0, un backbone convolucional eficiente conocido por su buen equilibrio entre precisión y coste computacional.
+El modelo `Phongpronekk/plant-disease-efficientnetb0` es un clasificador de imágenes basado en la arquitectura EfficientNetB0, orientado a la detección de enfermedades en plantas a partir de imágenes de hojas. El autor, Phongpronekk, lo ha publicado bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas. Aunque la ficha de Hugging Face es extremadamente escueta —sin descripción, sin datos de entrenamiento, sin métricas y sin peso publicado (0.0 GB)—, el nombre del modelo indica que utiliza la arquitectura EfficientNetB0, un backbone convolucional eficiente conocido por su buen equilibrio entre precisión y coste computacional.
 
 La relevancia de este modelo radica en el dominio de la agricultura de precisión: la detección temprana de enfermedades vegetales es clave para reducir pérdidas de cosecha. Sin embargo, al no existir información sobre el dataset utilizado, el número de clases, el proceso de entrenamiento ni los resultados obtenidos, su utilidad práctica queda limitada a una posible base para experimentación o como punto de partida para transferencia de aprendizaje. No se dispone de datos sobre el contexto de entrada, el número de parámetros exactos ni el formato de pesos, por lo que cualquier despliegue en producción requeriría una validación adicional por parte del usuario.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas concretas. Existen otros modelos de detección de enfermedades de plantas basados en EfficientNet (por ejemplo, los descritos en los artículos de IEEE y Springer encontrados en la búsqueda), pero no se pueden establecer comparaciones cuantitativas sin datos de rendimiento. Se recomienda al usuario buscar modelos con métricas publicadas en HuggingFace o en la literatura académica.
+No se dispone de información suficiente para comparar este modelo con alternativas concretas. Existen otros modelos de detección de enfermedades de plantas basados en EfficientNet (por ejemplo, los descritos en los artículos de IEEE y Springer encontrados en la búsqueda), pero no se pueden establecer comparaciones cuantitativas sin datos de rendimiento. Se recomienda al usuario buscar modelos con métricas publicadas en Hugging Face o en la literatura académica.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Phongpronekk/plant-disease-efficientnetb0
+- Hugging Face: https://huggingface.co/Phongpronekk/plant-disease-efficientnetb0
 - Artículo relacionado (IEEE): https://ieeexplore.ieee.org/document/10788558
 - Artículo relacionado (Springer): https://link.springer.com/article/10.1007/s44196-025-00835-2
 - Repositorio de ejemplo (Piyush-mit): https://github.com/Piyush-mit/Early-detection-and-management-of-crop-diseases-and-pest-infestations

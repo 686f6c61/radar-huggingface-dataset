@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | CIFAR-10 test acc | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-iocnn | 1.708.810 | no aplica | 0,5311 | no disponible | HuggingFace |
+| smai-a4-cifar10-iocnn | 1.708.810 | no aplica | 0,5311 | no disponible | Hugging Face |
 | MLP convencional sobre CIFAR-10 | variable | no aplica | no disponible | no disponible | no disponible |
 | LeNet-5 sobre CIFAR-10 | ~60.000 | no aplica | no disponible | no disponible | no disponible |
 
@@ -83,5 +83,5 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PuneethAbhishek/smai-a4-cifar10-iocnn
+- Hugging Face: https://huggingface.co/PuneethAbhishek/smai-a4-cifar10-iocnn
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

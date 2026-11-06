@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT4` es una cuantización INT4 weight-only de un modelo derivado de Gemma 4 26B A4B it, modificado mediante abliteración (proyección ortogonal) para eliminar vectores de seguridad y filtros de alineación corporativos. Fue creado por el usuario Rin247 y publicado en HuggingFace. El modelo pertenece a la familia Gemma 4 de Google DeepMind, que incluye arquitecturas densas y Mixture-of-Experts (MoE), con una ventana de contexto de hasta 256K tokens y soporte multilingüe en más de 140 idiomas según la documentación oficial. Esta versión concreta está orientada a casos de uso "sin censura", como el derecho a reparar, la investigación de seguridad y la escritura creativa madura. El repositorio contiene 14.091.376.386 parámetros en formato safetensors, con un tamaño total de 15.6 GB.
+El modelo `Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT4` es una cuantización INT4 weight-only de un modelo derivado de Gemma 4 26B A4B it, modificado mediante abliteración (proyección ortogonal) para eliminar vectores de seguridad y filtros de alineación corporativos. Fue creado por el usuario Rin247 y publicado en Hugging Face. El modelo pertenece a la familia Gemma 4 de Google DeepMind, que incluye arquitecturas densas y Mixture-of-Experts (MoE), con una ventana de contexto de hasta 256K tokens y soporte multilingüe en más de 140 idiomas según la documentación oficial. Esta versión concreta está orientada a casos de uso "sin censura", como el derecho a reparar, la investigación de seguridad y la escritura creativa madura. El repositorio contiene 14.091.376.386 parámetros en formato safetensors, con un tamaño total de 15.6 GB.
 
 ## Especificaciones técnicas
 
@@ -24,7 +24,7 @@ El modelo es una variante cuantizada de `gemma-4-26B-A4B-it-Aggressive`, que a s
 ## Capacidades
 
 - Generación de texto conversacional y razonamiento, heredados de Gemma 4.
-- Soporte multimodal (image-text-to-text) según el pipeline declarado en HuggingFace.
+- Soporte multimodal (image-text-to-text) según el pipeline declarado en Hugging Face.
 - Capacidad multilingüe en más de 140 idiomas según la documentación de Gemma 4.
 - Sin filtros de seguridad corporativos (abliterated), lo que permite abordar temas que normalmente serían rechazados.
 - No se ha confirmado soporte de tool calling, function calling o agentes en la información disponible.
@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gemma 4 26B A4B it (original) | 26B totales / 4B activos | 256K | Licencia Gemma | HuggingFace / Google |
-| Gemma 4 12B | 12B | 256K | Licencia Gemma | HuggingFace / Google |
-| Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT4 | 14.091.376.386 (safetensors) | 256K (según familia) | no disponible | HuggingFace |
+| Gemma 4 26B A4B it (original) | 26B totales / 4B activos | 256K | Licencia Gemma | Hugging Face / Google |
+| Gemma 4 12B | 12B | 256K | Licencia Gemma | Hugging Face / Google |
+| Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT4 | 14.091.376.386 (safetensors) | 256K (según familia) | no disponible | Hugging Face |
 
 Nota: no se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de estos modelos.
 
@@ -73,6 +73,6 @@ Nota: no se dispone de datos de rendimiento comparativo (benchmarks) para ningun
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT4
+- Hugging Face: https://huggingface.co/Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT4
 - Model card de Gemma 4 (Google AI): https://ai.google.dev/gemma/docs/core/model_card_4
 - Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/

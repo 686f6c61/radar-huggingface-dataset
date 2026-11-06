@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento (exactitud, GFLOPs, latencia) en la inform
 
 | Modelo | Parametros | Contexto / variante | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lucid-dl/vjepa2-vith (este modelo) | 653,9 M | `FPC64_256` (64 fotogramas, 256 px) | Apache 2.0 | HuggingFace, safetensors nativos de Lucid |
+| lucid-dl/vjepa2-vith (este modelo) | 653,9 M | `FPC64_256` (64 fotogramas, 256 px) | Apache 2.0 | Hugging Face, safetensors nativos de Lucid |
 | facebook/vjepa2-vith-fpc64-256 (origen) | 653,9 M | `fpc64-256` | Apache 2.0 | Pesos originales de Meta en safetensors |
 
 Otras alternativas de clasificacion de video auto-supervisada (por ejemplo, la familia VideoMAE o variantes de ViT para video): datos de parametros, contexto, rendimiento y licencia no disponibles en la informacion proporcionada.
@@ -89,7 +89,7 @@ Otras alternativas de clasificacion de video auto-supervisada (por ejemplo, la f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucid-dl/vjepa2-vith
+- Modelo en Hugging Face: https://huggingface.co/lucid-dl/vjepa2-vith
 - Paper de referencia: https://arxiv.org/abs/2506.09985
 - Repositorio oficial de V-JEPA 2 (Meta): https://github.com/facebookresearch/vjepa2
 - Repositorio de la libreria Lucid: https://github.com/ChanLumerico/lucid

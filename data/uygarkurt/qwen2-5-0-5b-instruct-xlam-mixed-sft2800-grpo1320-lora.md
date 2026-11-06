@@ -23,7 +23,7 @@ Su relevancia práctica es la de un modelo de juguete serio: sirve para validar 
 | Libreria | peft, transformers |
 | Dataset de entrenamiento | uygarkurt/xlam-tool-calling-mixed |
 | Relacion con el base | base_model_relation: adapter |
-| Fecha de publicacion | 2026-10-25 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-25 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -77,10 +77,10 @@ Notas metodológicas declaradas por el autor: xLAM ETC es exactitud exacta de la
 
 | Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT + GRPO) | ~0,49 B + LoRA | 32.768 (heredado del base) | Entrenado explícitamente, con abstención | no disponible en la card | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,49 B | 32.768 | Capacidad genérica del base, sin especialización | Apache 2.0 | HuggingFace, ampliamente usado |
-| Adaptador SFT previo del mismo autor | ~0,49 B + LoRA | 32.768 (heredado) | Sí, sin fase GRPO | no disponible en la card | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Capacidad genérica del base | Apache 2.0 | HuggingFace |
+| Este adaptador (SFT + GRPO) | ~0,49 B + LoRA | 32.768 (heredado del base) | Entrenado explícitamente, con abstención | no disponible en la card | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,49 B | 32.768 | Capacidad genérica del base, sin especialización | Apache 2.0 | Hugging Face, ampliamente usado |
+| Adaptador SFT previo del mismo autor | ~0,49 B + LoRA | 32.768 (heredado) | Sí, sin fase GRPO | no disponible en la card | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Capacidad genérica del base | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks del base sin ajuste ni de Qwen2.5-1.5B-Instruct en esta misma configuración de evaluación, por lo que la comparación cuantitativa de rendimiento entre filas no está disponible. La comparación de la tabla se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks del base sin ajuste ni de Qwen2.5-1.5B
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo1320-lora
+- Adaptador en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo1320-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Adaptador SFT previo: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed

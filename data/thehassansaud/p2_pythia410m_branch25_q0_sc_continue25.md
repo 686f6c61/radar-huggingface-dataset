@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TheHassanSaud/P2_pythia410m_branch25_q0_sc_continue25 es un checkpoint de generación de texto publicado en HuggingFace por el usuario TheHassanSaud. Por su nombre y por la etiqueta de arquitectura `gpt_neox` que expone el repositorio, se trata de una variante derivada de la familia Pythia de EleutherAI, en concreto del modelo Pythia-410M (405.334.016 parámetros reales según los pesos en safetensors). El identificador sugiere un experimento de entrenamiento ramificado ("branch25"), con un paso de cuantización ("q0") y una fase de continuación de preentrenamiento ("continue25"), aunque el autor no documenta nada de ello.
+TheHassanSaud/P2_pythia410m_branch25_q0_sc_continue25 es un checkpoint de generación de texto publicado en Hugging Face por el usuario TheHassanSaud. Por su nombre y por la etiqueta de arquitectura `gpt_neox` que expone el repositorio, se trata de una variante derivada de la familia Pythia de EleutherAI, en concreto del modelo Pythia-410M (405.334.016 parámetros reales según los pesos en safetensors). El identificador sugiere un experimento de entrenamiento ramificado ("branch25"), con un paso de cuantización ("q0") y una fase de continuación de preentrenamiento ("continue25"), aunque el autor no documenta nada de ello.
 
-El problema que resuelve no está declarado por el autor. La model card es la plantilla automática de HuggingFace, sin ninguna sección completada: no hay descripción, ni datos de entrenamiento, ni licencia, ni idiomas, ni resultados de evaluación. Esto lo convierte en un artefacto de investigación opaco más que en un modelo listo para producción.
+El problema que resuelve no está declarado por el autor. La model card es la plantilla automática de Hugging Face, sin ninguna sección completada: no hay descripción, ni datos de entrenamiento, ni licencia, ni idiomas, ni resultados de evaluación. Esto lo convierte en un artefacto de investigación opaco más que en un modelo listo para producción.
 
 Su relevancia actual es limitada y de carácter académico: sirve como ejemplo de checkpoint intermedio de un pipeline experimental sobre Pythia-410M y como material para estudiar qué ocurre en ramas de entrenamiento intermedias. No hay evidencia publicada de que supere al modelo base del que deriva, y el repositorio acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -78,10 +78,10 @@ La informacion disponible sobre este checkpoint es demasiado escasa para una com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| P2_pythia410m_branch25_q0_sc_continue25 | 405.334.016 | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| Pythia-410M (EleutherAI) | ~410 M | Documentado en la suite Pythia (consultar su model card) | Apache 2.0 segun el repositorio original | HuggingFace, ampliamente descargado | Si, en el articulo de Pythia |
-| Pythia-160M (EleutherAI) | ~160 M | Documentado en la suite Pythia | Apache 2.0 segun el repositorio original | HuggingFace | Si, en el articulo de Pythia |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | Modificado MIT | HuggingFace | Si, en el articulo de GPT-2 |
+| P2_pythia410m_branch25_q0_sc_continue25 | 405.334.016 | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| Pythia-410M (EleutherAI) | ~410 M | Documentado en la suite Pythia (consultar su model card) | Apache 2.0 segun el repositorio original | Hugging Face, ampliamente descargado | Si, en el articulo de Pythia |
+| Pythia-160M (EleutherAI) | ~160 M | Documentado en la suite Pythia | Apache 2.0 segun el repositorio original | Hugging Face | Si, en el articulo de Pythia |
+| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | Modificado MIT | Hugging Face | Si, en el articulo de GPT-2 |
 
 No se dispone de datos de rendimiento de este checkpoint que permitan afirmar si iguala, supera o empeora a Pythia-410M, del que previsiblemente deriva.
 
@@ -99,8 +99,8 @@ No se dispone de datos de rendimiento de este checkpoint que permitan afirmar si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_branch25_q0_sc_continue25
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_branch25_q0_sc_continue25
 - Articulo de Pythia (suite de la que previsiblemente deriva el checkpoint): https://arxiv.org/abs/2304.01373
 - Articulo de GPT-NeoX (arquitectura de referencia): https://arxiv.org/abs/2204.06745
 - Calculadora de impacto de carbono citada en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
-- Organizacion EleutherAI en HuggingFace (modelos Pythia originales): https://huggingface.co/EleutherAI
+- Organizacion EleutherAI en Hugging Face (modelos Pythia originales): https://huggingface.co/EleutherAI

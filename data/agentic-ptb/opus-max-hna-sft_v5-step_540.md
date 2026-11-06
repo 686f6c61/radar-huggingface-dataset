@@ -71,9 +71,9 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/opus-max (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K (referencia) | Llama 3.1 Community License | HuggingFace |
+| agentic-ptb/opus-max (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K (referencia) | Llama 3.1 Community License | Hugging Face |
 
 La comparativa se limita al número de parámetros; no hay datos de rendimiento ni de contexto para este checkpoint.
 
@@ -89,6 +89,6 @@ La comparativa se limita al número de parámetros; no hay datos de rendimiento 
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/opus-max.hNA.sft_v5.step_540](https://huggingface.co/agentic-ptb/opus-max.hNA.sft_v5.step_540)
+- [Hugging Face: agentic-ptb/opus-max.hNA.sft_v5.step_540](https://huggingface.co/agentic-ptb/opus-max.hNA.sft_v5.step_540)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (referencia, no se confirma su existencia en la información proporcionada)
 - Origen del checkpoint: `msr-spare/msr-agentic-ptb-opus-max` (repositorio no localizado públicamente)

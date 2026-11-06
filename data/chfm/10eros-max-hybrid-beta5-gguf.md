@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | chfm/10Eros-Max-Hybrid-Beta5-GGUF | ~20,1 B | GGUF (Q3 a Q8) | minimax-h3-community-license-agreement | Repositorio con 0 descargas y 0 likes en el momento de la ficha | Objeto de esta ficha |
-| Abiray/10Eros-Max-Hybrid-Beta5-GGUF | ~20,1 B | GGUF | minimax-h3-community-license-agreement | En HuggingFace | Repositorio equivalente atribuido al cuantizador del modelo; aparentemente el mismo contenido |
-| TenStrip/10Eros-Max | ~20,1 B | safetensors | minimax-h3-community-license-agreement | En HuggingFace | Modelo base original sin cuantizar |
-| MiniMax H3 (base) | no disponible | no disponible | minimax-h3-community-license-agreement | En HuggingFace (MiniMaxAI) | Arquitectura original sobre la que se construye 10Eros-Max |
+| Abiray/10Eros-Max-Hybrid-Beta5-GGUF | ~20,1 B | GGUF | minimax-h3-community-license-agreement | En Hugging Face | Repositorio equivalente atribuido al cuantizador del modelo; aparentemente el mismo contenido |
+| TenStrip/10Eros-Max | ~20,1 B | safetensors | minimax-h3-community-license-agreement | En Hugging Face | Modelo base original sin cuantizar |
+| MiniMax H3 (base) | no disponible | no disponible | minimax-h3-community-license-agreement | En Hugging Face (MiniMaxAI) | Arquitectura original sobre la que se construye 10Eros-Max |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a otros modelos de generacion de video-audio de tamano similar.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/chfm/10Eros-Max-Hybrid-Beta5-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/chfm/10Eros-Max-Hybrid-Beta5-GGUF
 - Repositorio del cuantizador (mismo modelo): https://huggingface.co/Abiray/10Eros-Max-Hybrid-Beta5-GGUF
 - Modelo base original: https://huggingface.co/TenStrip/10Eros-Max
 - Licencia MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

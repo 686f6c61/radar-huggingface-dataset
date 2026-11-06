@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`poplolioi11/deep-rl-unit8-cleanrl-20261105` es un agente de aprendizaje por refuerzo profundo entrenado para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario de HuggingFace poplolioi11 (Chen-Yu Chu) como artefacto del curso Deep RL, concretamente para la Unidad 8, Parte 1. No es un modelo de lenguaje: es una política neuronal entrenada con PPO (Proximal Policy Optimization) sobre observaciones del entorno LunarLander, cuyo objetivo es controlar el aterrizaje de una nave en una plataforma.
+`poplolioi11/deep-rl-unit8-cleanrl-20261105` es un agente de aprendizaje por refuerzo profundo entrenado para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario de Hugging Face poplolioi11 (Chen-Yu Chu) como artefacto del curso Deep RL, concretamente para la Unidad 8, Parte 1. No es un modelo de lenguaje: es una política neuronal entrenada con PPO (Proximal Policy Optimization) sobre observaciones del entorno LunarLander, cuyo objetivo es controlar el aterrizaje de una nave en una plataforma.
 
 El modelo se entrena desde cero, sin importar políticas preentrenadas, sin controladores escritos a mano y sin modificar la función de recompensa. La implementación es una versión propia de PPO en PyTorch que toma CleanRL como referencia (commit `fe8d8a03c41a7ef5b523e2e354bd01c363e786bb`, licencia MIT), y no utiliza Stable-Baselines3 ni pesos de la Unidad 1. El autor declara explícitamente que no reclama la aceptación oficial del curso ni una maestría humana independiente.
 
@@ -87,7 +87,7 @@ No se dispone de resultados comparables de otros modelos en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poplolioi11/deep-rl-unit8-cleanrl-20261105
+- Hugging Face: https://huggingface.co/poplolioi11/deep-rl-unit8-cleanrl-20261105
 - CleanRL (referencia de implementación, commit fe8d8a03c41a7ef5b523e2e354bd01c363e786bb): no se proporciona URL en la información disponible
 - Repositorio del curso Deep RL: no se proporciona URL en la información disponible
 - Documentación de Gymnasium `LunarLander-v2`: no se proporciona URL en la información disponible

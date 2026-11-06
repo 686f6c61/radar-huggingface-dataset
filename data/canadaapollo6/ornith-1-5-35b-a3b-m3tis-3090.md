@@ -111,7 +111,7 @@ El autor senala que el error de cuantizacion es el unico componente con perdida,
 
 ## Enlaces
 
-- HuggingFace del build: https://huggingface.co/CanadaApollo6/Ornith-1.5-35B-A3B-M3TiS-3090
+- Hugging Face del build: https://huggingface.co/CanadaApollo6/Ornith-1.5-35B-A3B-M3TiS-3090
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Build MLX 4-bit del base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit
 - Build MLX 6-bit del base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit

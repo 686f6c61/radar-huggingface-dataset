@@ -78,7 +78,7 @@ La busqueda web no devolvio ningun modelo comparable, por lo que no hay datos ve
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dougalldeepmind/2026-09-28-gptoss120b-0-nosynth` | Adaptador LoRA rango 32 sobre gpt-oss-120b | No disponible | No disponible (32.768 tokens de longitud maxima en entrenamiento) | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
+| `dougalldeepmind/2026-09-28-gptoss120b-0-nosynth` | Adaptador LoRA rango 32 sobre gpt-oss-120b | No disponible | No disponible (32.768 tokens de longitud maxima en entrenamiento) | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
 | `openai/gpt-oss-120b` | Modelo base (sin adaptador) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo base referenciado por el adaptador |
 | Otras variantes nosynth-mix sobre gpt-oss-120b | Adaptadores SFT | No disponible | No disponible | No disponible | No disponibles en la informacion proporcionada |
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks, contexto ni licencia de ninguno de los ele
 - No es un modelo autonomo: es un adaptador LoRA y requiere el modelo base `openai/gpt-oss-120b` para funcionar.
 - Portabilidad no verificada: la propia model card advierte que la equivalencia con PEFT o vLLM no se ha probado; fuera de Tinker el comportamiento puede diferir.
 - Precision no auditada: la metadata indica "provider managed; not independently verified".
-- Licencia no especificada: la ficha de HuggingFace muestra "no disponible" tanto para licencia como para idiomas y pipeline, lo que impide evaluar las condiciones de uso comercial.
+- Licencia no especificada: la ficha de Hugging Face muestra "no disponible" tanto para licencia como para idiomas y pipeline, lo que impide evaluar las condiciones de uso comercial.
 - Sin benchmarks: no hay evidencia publicada de calidad, seguridad o regresiones respecto al modelo base.
 - Riesgo de alucinacion: inherente al modelo base y no cuantificado en este adaptador; al ser un SFT de una sola epoca, es esperable que persista casi intacto.
 - Sesgos: no documentados. El uso de `claude_distilled_09_principles` como filtrado heredado puede introducir sesgos propios de esa destilacion, no evaluados aqui.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks, contexto ni licencia de ninguno de los ele
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-28-gptoss120b-0-nosynth
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-28-gptoss120b-0-nosynth
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-22-nosynth-mix-gpt-oss-120b
 - Sampler de Tinker referenciado en la model card: `tinker://cdd100d5-e08c-52a7-9ba9-890187111a57:train:0/sampler_weights/2026-09-28-gptoss120b-0-nosynth`

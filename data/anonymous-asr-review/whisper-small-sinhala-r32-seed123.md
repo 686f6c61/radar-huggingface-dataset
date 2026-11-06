@@ -91,7 +91,7 @@ No se dispone de comparaciones de WER entre estas opciones dentro de la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-sinhala-r32-seed123
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-sinhala-r32-seed123
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper

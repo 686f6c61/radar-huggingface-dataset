@@ -116,8 +116,8 @@ La comparación relevante no es de calidad, sino de formato de despliegue: este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HanzoHuang/Qwen3-VL-2B-Instruct-RKLLM
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/HanzoHuang/Qwen3-VL-2B-Instruct-RKLLM
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Modelo base en ModelScope: https://www.modelscope.ai/models/Qwen/Qwen3-VL-2B-Instruct
 - Runtime y documentación: https://github.com/Hanzo-Huang/rkllm-docker
 - Imagen Docker: ghcr.io/hanzo-huang/rkllm-docker:env-latest

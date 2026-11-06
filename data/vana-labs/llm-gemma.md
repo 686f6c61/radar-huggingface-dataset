@@ -70,10 +70,10 @@ Las siguientes estimaciones son orientativas y se derivan del tamano de los fich
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vana-Labs/llm-gemma (Gemma 3 1B/4B cuantizado) | 1B (999.885.952) y 4B | No disponible | GGUF | Gemma Terms of Use | HuggingFace (espejo fijado) |
-| google/gemma-3-1b-it (original) | 1B | No disponible en la informacion proporcionada | safetensors | Gemma Terms of Use | HuggingFace |
-| bartowski/google_gemma-3-1b-it-GGUF | 1B | No disponible en la informacion proporcionada | GGUF | Gemma Terms of Use | HuggingFace (fuente de este espejo) |
-| Llama 3.2 1B / 3B (alternativa de tamano similar) | 1B / 3B | No disponible en la informacion proporcionada | safetensors, GGUF | Licencia comunitaria de Meta | HuggingFace |
+| Vana-Labs/llm-gemma (Gemma 3 1B/4B cuantizado) | 1B (999.885.952) y 4B | No disponible | GGUF | Gemma Terms of Use | Hugging Face (espejo fijado) |
+| google/gemma-3-1b-it (original) | 1B | No disponible en la informacion proporcionada | safetensors | Gemma Terms of Use | Hugging Face |
+| bartowski/google_gemma-3-1b-it-GGUF | 1B | No disponible en la informacion proporcionada | GGUF | Gemma Terms of Use | Hugging Face (fuente de este espejo) |
+| Llama 3.2 1B / 3B (alternativa de tamano similar) | 1B / 3B | No disponible en la informacion proporcionada | safetensors, GGUF | Licencia comunitaria de Meta | Hugging Face |
 
 La comparativa se limita a tamanos y formatos porque la informacion proporcionada no incluye cifras de rendimiento para ninguna de las alternativas. La diferencia funcional clave de este repositorio frente a los anteriores es que se trata de un espejo de version fijada, sin cambios en los pesos.
 
@@ -89,7 +89,7 @@ La comparativa se limita a tamanos y formatos porque la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vana-Labs/llm-gemma
+- Repositorio en Hugging Face: https://huggingface.co/Vana-Labs/llm-gemma
 - Modelo base 1B: https://huggingface.co/google/gemma-3-1b-it
 - Modelo base 4B: https://huggingface.co/google/gemma-3-4b-it
 - Cuantizacion de origen 1B: https://huggingface.co/bartowski/google_gemma-3-1b-it-GGUF

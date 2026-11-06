@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Limitaciones y advertencias
 
-- Modelo experimental con 0 descargas y 0 likes en HuggingFace en el momento de la ficha; no hay validacion independiente de los resultados publicados por el autor.
+- Modelo experimental con 0 descargas y 0 likes en Hugging Face en el momento de la ficha; no hay validacion independiente de los resultados publicados por el autor.
 - El suite de evaluacion es propio del autor (27 casos) y no incluye benchmarks estandar como MMLU, HumanEval o GSM8K, por lo que la comparabilidad con otros modelos es limitada.
 - El baseline se evalua sobre 23 casos en lugar de 27, y la columna de casos generales no OMP se calcula sobre 19; las cifras no son directamente comparables entre todas las filas.
 - La edicion de pesos es quirurgica y especifica del checkpoint: no se garantiza que el efecto se transfiera a otras cuantizaciones o a otros modelos, ni que sea estable fuera de los escenarios evaluados.
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nitayrabi/Cyber-Tiel-Coder-35B-A3B-LoopFix-GGUF
+- Hugging Face: https://huggingface.co/nitayrabi/Cyber-Tiel-Coder-35B-A3B-LoopFix-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Paper de referencia (MIT CSAIL, Takehi et al., 2026): https://rikiyat.github.io/blog/weight-space-programming/
 - Script de generacion de direcciones contrastivas: `reproduce/cvector-generator-v2.cpp`

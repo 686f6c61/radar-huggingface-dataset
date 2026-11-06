@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ethnicolr2 es un modelo de aprendizaje automatico basado en redes neuronales LSTM que predice la raza y la etnia de una persona a partir de su nombre (apellido o nombre completo). Fue desarrollado por el usuario gojiberries como una implementacion moderna en PyTorch del paquete original ethnicolr, y se distribuye a traves de HuggingFace y GitHub. El modelo esta entrenado con datos del censo de Estados Unidos y con registros de votantes de Florida, lo que le permite estimar la distribucion racial de un nombre en categorias como blanca, negra, asiatica o hispana.
+ethnicolr2 es un modelo de aprendizaje automatico basado en redes neuronales LSTM que predice la raza y la etnia de una persona a partir de su nombre (apellido o nombre completo). Fue desarrollado por el usuario gojiberries como una implementacion moderna en PyTorch del paquete original ethnicolr, y se distribuye a traves de Hugging Face y GitHub. El modelo esta entrenado con datos del censo de Estados Unidos y con registros de votantes de Florida, lo que le permite estimar la distribucion racial de un nombre en categorias como blanca, negra, asiatica o hispana.
 
-La relevancia de este modelo radica en su aplicacion para estudios sociodemograficos, analisis de sesgos en sistemas automatizados y cualquier tarea que requiera inferir caracteristicas demograficas a partir de nombres. Su arquitectura es relativamente sencilla (un LSTM con preprocesamiento de fragmentos de dos caracteres), lo que lo hace ligero y facil de desplegar en entornos con recursos limitados. El repositorio en HuggingFace no incluye una model card detallada, pero la documentacion externa confirma que se trata de un clasificador de etnia/raza con soporte para apellido unico o nombre completo.
+La relevancia de este modelo radica en su aplicacion para estudios sociodemograficos, analisis de sesgos en sistemas automatizados y cualquier tarea que requiera inferir caracteristicas demograficas a partir de nombres. Su arquitectura es relativamente sencilla (un LSTM con preprocesamiento de fragmentos de dos caracteres), lo que lo hace ligero y facil de desplegar en entornos con recursos limitados. El repositorio en Hugging Face no incluye una model card detallada, pero la documentacion externa confirma que se trata de un clasificador de etnia/raza con soporte para apellido unico o nombre completo.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos de clasificacion etnica po
 
 ## Enlaces
 
-- [HuggingFace - gojiberries/ethnicolr2](https://huggingface.co/gojiberries/ethnicolr2)
+- [Hugging Face - gojiberries/ethnicolr2](https://huggingface.co/gojiberries/ethnicolr2)
 - [GitHub - appeler/ethnicolr2](https://github.com/appeler/ethnicolr2)
 - [Documentacion oficial - ethnicolr2 0.3.2](https://appeler.github.io/ethnicolr2/index.html)
 - [API Reference - Models](https://appeler.github.io/ethnicolr2/api-reference/models.html)

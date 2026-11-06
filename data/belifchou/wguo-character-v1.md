@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wguo-character-v1 es un adaptador LoRA de tipo DreamBooth para generación de texto a imagen, publicado por el usuario BelifChou en HuggingFace. No se trata de un modelo fundacional, sino de un conjunto de pesos de ajuste fino (aproximadamente 1,0 GB de repositorio) que se aplica sobre los checkpoints Krea 2 de la organización krea, en concreto sobre Krea-2-Raw para el entrenamiento y sobre Krea-2-Turbo para la inferencia rápida. Su propósito es incorporar un concepto o personaje concreto, activado mediante la palabra clave `wguo`, en las imágenes generadas por el pipeline.
+wguo-character-v1 es un adaptador LoRA de tipo DreamBooth para generación de texto a imagen, publicado por el usuario BelifChou en Hugging Face. No se trata de un modelo fundacional, sino de un conjunto de pesos de ajuste fino (aproximadamente 1,0 GB de repositorio) que se aplica sobre los checkpoints Krea 2 de la organización krea, en concreto sobre Krea-2-Raw para el entrenamiento y sobre Krea-2-Turbo para la inferencia rápida. Su propósito es incorporar un concepto o personaje concreto, activado mediante la palabra clave `wguo`, en las imágenes generadas por el pipeline.
 
 La relevancia de esta ficha es limitada pero ilustrativa: muestra el flujo de trabajo habitual de la comunidad de difusión, en el que se entrena un LoRA sobre la variante no destilada (RAW) y se ejecuta sobre la variante destilada (Turbo) de ocho pasos, aprovechando que los LoRA entrenados en RAW se expresan con fuerza en Turbo. El modelo se distribuye con licencia Apache 2.0 y formato safetensors, y se integra mediante la librería diffusers con la clase `Krea2Pipeline`.
 
@@ -23,7 +23,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento, el n�
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena con DreamBooth sobre el checkpoint Krea-2-Raw, utilizando el entrenador de diffusers para Krea 2 documentado en el repositorio de ejemplos de HuggingFace. Krea 2 se distribuye como dos checkpoints complementarios: RAW, que es la base no destilada sobre la que se realiza el ajuste fino, y Turbo, un checkpoint destilado de ocho pasos pensado para inferencia rápida y de alta calidad. La práctica recomendada por el autor es entrenar en RAW y ejecutar en Turbo, ya que los LoRA entrenados sobre RAW mantienen una expresión intensa sobre Turbo.
+El adaptador se entrena con DreamBooth sobre el checkpoint Krea-2-Raw, utilizando el entrenador de diffusers para Krea 2 documentado en el repositorio de ejemplos de Hugging Face. Krea 2 se distribuye como dos checkpoints complementarios: RAW, que es la base no destilada sobre la que se realiza el ajuste fino, y Turbo, un checkpoint destilado de ocho pasos pensado para inferencia rápida y de alta calidad. La práctica recomendada por el autor es entrenar en RAW y ejecutar en Turbo, ya que los LoRA entrenados sobre RAW mantienen una expresión intensa sobre Turbo.
 
 No se especifican en la información disponible el número de imágenes de entrenamiento, el número de pasos, la tasa de aprendizaje, la resolución, el rango del LoRA ni si se aplicaron técnicas de regularización. Tampoco se documenta si hubo aumento de datos o balanceo del dataset. La única innovación técnica reseñable es la propia separación RAW/Turbo del modelo base, que permite desacoplar el coste de entrenamiento del coste de inferencia.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| BelifChou/wguo-character-v1 | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | HuggingFace, 0 descargas | Adaptador de personaje, trigger `wguo` |
-| LoRA DreamBooth sobre Stable Diffusion XL | LoRA DreamBooth | no disponible | no aplica | depende del autor | Amplia en HuggingFace y Civitai | Ecosistema maduro, muchas herramientas de soporte |
-| LoRA DreamBooth sobre FLUX.1 | LoRA DreamBooth | no disponible | no aplica | depende de la licencia del base | Creciente en HuggingFace | Mayor calidad reportada por la comunidad, requisitos de VRAM más altos |
-| Krea-2-Turbo (modelo base) | Difusión texto a imagen | no disponible | no aplica | según krea | HuggingFace (krea/Krea-2-Turbo) | Checkpoint destilado de ocho pasos; el LoRA se ejecuta sobre él |
+| BelifChou/wguo-character-v1 | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | Hugging Face, 0 descargas | Adaptador de personaje, trigger `wguo` |
+| LoRA DreamBooth sobre Stable Diffusion XL | LoRA DreamBooth | no disponible | no aplica | depende del autor | Amplia en Hugging Face y Civitai | Ecosistema maduro, muchas herramientas de soporte |
+| LoRA DreamBooth sobre FLUX.1 | LoRA DreamBooth | no disponible | no aplica | depende de la licencia del base | Creciente en Hugging Face | Mayor calidad reportada por la comunidad, requisitos de VRAM más altos |
+| Krea-2-Turbo (modelo base) | Difusión texto a imagen | no disponible | no aplica | según krea | Hugging Face (krea/Krea-2-Turbo) | Checkpoint destilado de ocho pasos; el LoRA se ejecuta sobre él |
 
 No se dispone de datos cuantitativos de rendimiento para establecer una comparación objetiva con estas alternativas.
 
@@ -81,7 +81,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BelifChou/wguo-character-v1
+- Modelo en Hugging Face: https://huggingface.co/BelifChou/wguo-character-v1
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Entrenador DreamBooth para Krea 2 en diffusers: https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/README_krea2.md

@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Entrada / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Microduck FootstepNet | Planificador de pasos RL (CrossQ, ONNX) | obs 8 → step 3 | Apache 2.0 | HuggingFace (`apirrone/microduck-footstepnet`) |
+| Microduck FootstepNet | Planificador de pasos RL (CrossQ, ONNX) | obs 8 → step 3 | Apache 2.0 | Hugging Face (`apirrone/microduck-footstepnet`) |
 | FootstepNet original (Rhoban, Sigmaban) | Planificador de pasos RL | no disponible en detalle | no disponible | GitHub `rhoban/footstepnet_envs` |
 | Política de seguimiento `Mjlab-Footsteps-Flat-Backlash-MicroDuck` | Política de seguimiento de pasos RL | no disponible en detalle | no disponible | Rama `footsteps` de `microduck_rl` |
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apirrone/microduck-footstepnet
+- Modelo en Hugging Face: https://huggingface.co/apirrone/microduck-footstepnet
 - Repositorio Microduck RL: https://github.com/pollen-robotics/microduck_rl
 - Repositorio FootstepNet original (Rhoban): https://github.com/rhoban/footstepnet_envs

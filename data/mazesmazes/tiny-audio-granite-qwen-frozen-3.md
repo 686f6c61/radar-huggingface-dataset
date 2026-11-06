@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mazesmazes/tiny-audio-granite-qwen-frozen-3` es un modelo de audio de muy pequeno tamano (14.687.744 parametros, aproximadamente 14,7 millones) publicado en HuggingFace por el usuario `mazesmazes`. El repositorio esta etiquetado con el pipeline `feature-extraction` y con las etiquetas `asr_model`, `custom_code` y `transformers`, lo que indica que esta pensado para extraccion de caracteristicas o tareas de reconocimiento automatico del habla (ASR) y que requiere codigo personalizado para cargarse.
+`mazesmazes/tiny-audio-granite-qwen-frozen-3` es un modelo de audio de muy pequeno tamano (14.687.744 parametros, aproximadamente 14,7 millones) publicado en Hugging Face por el usuario `mazesmazes`. El repositorio esta etiquetado con el pipeline `feature-extraction` y con las etiquetas `asr_model`, `custom_code` y `transformers`, lo que indica que esta pensado para extraccion de caracteristicas o tareas de reconocimiento automatico del habla (ASR) y que requiere codigo personalizado para cargarse.
 
-El nombre del identificador sugiere una composicion de componentes procedentes de otros modelos (una parte de audio, una referencia a Granite de IBM y una referencia a Qwen) junto con un esquema de capas "frozen" (congeladas), en su tercera iteracion. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada en ninguna documentacion publicada: la model card es la plantilla autogenerada de HuggingFace y no contiene informacion real de arquitectura, datos de entrenamiento, licencia ni idiomas.
+El nombre del identificador sugiere una composicion de componentes procedentes de otros modelos (una parte de audio, una referencia a Granite de IBM y una referencia a Qwen) junto con un esquema de capas "frozen" (congeladas), en su tercera iteracion. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada en ninguna documentacion publicada: la model card es la plantilla autogenerada de Hugging Face y no contiene informacion real de arquitectura, datos de entrenamiento, licencia ni idiomas.
 
 La relevancia del modelo es, por tanto, limitada y de caracter experimental. Se trata de un checkpoint diminuto (el repositorio ocupa 0,6 GB pese a que los pesos declarados en safetensors suman solo 14,7 millones de parametros, lo que apunta a que el repositorio incluye ficheros adicionales o estados de optimizador), sin descargas ni "likes", sin licencia declarada y sin resultados de evaluacion. Su interes practico es el de un banco de pruebas para investigacion sobre arquitecturas de audio ligeras o para experimentacion con modelos congelados, no el de un modelo listo para produccion.
 
@@ -23,7 +23,7 @@ La relevancia del modelo es, por tanto, limitada y de caracter experimental. Se 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card del repositorio es la plantilla automatica de HuggingFace y todos los campos relevantes ("Model type", "Model Architecture and Objective", "Training Data", "Training Procedure") aparecen como `[More Information Needed]`. Las unicas pistas objetivas son las etiquetas del repositorio: `asr_model` y `feature-extraction`, que situan el modelo en el ambito del procesamiento de audio y la extraccion de representaciones, y `custom_code`, que implica que la carga requiere `trust_remote_code=True` y que parte de la implementacion va en ficheros Python del propio repositorio en lugar de en `transformers` estandar.
+No hay informacion publicada sobre la arquitectura. La model card del repositorio es la plantilla automatica de Hugging Face y todos los campos relevantes ("Model type", "Model Architecture and Objective", "Training Data", "Training Procedure") aparecen como `[More Information Needed]`. Las unicas pistas objetivas son las etiquetas del repositorio: `asr_model` y `feature-extraction`, que situan el modelo en el ambito del procesamiento de audio y la extraccion de representaciones, y `custom_code`, que implica que la carga requiere `trust_remote_code=True` y que parte de la implementacion va en ficheros Python del propio repositorio en lugar de en `transformers` estandar.
 
 Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens o de horas de audio, la composicion del dataset, si hubo fases de ajuste fino con RLHF, DPO o similares, y que significa exactamente "frozen" en el nombre (si se congelaron capas de un encoder preentrenado, de un decoder, o ambos). La unica referencia bibliografica presente en las etiquetas, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla estandar de model card; no es un paper del modelo.
 
@@ -88,7 +88,7 @@ La conclusión practica es que el modelo aqui descrito no es comparable en madur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-frozen-3
+- Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-frozen-3
 - Paper citado en las etiquetas del repositorio (Lacoste et al., estimacion de emisiones de carbono, citado por la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la model card: https://mlco2.github.io/impact#compute
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) del modelo en la busqueda web realizada; los resultados obtenidos no guardaban ninguna relacion con el modelo ni con el ambito de la inteligencia artificial.

@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de 1,5B en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thinking-Space/UltraData-IF-1.5B
+- Modelo en Hugging Face: https://huggingface.co/Thinking-Space/UltraData-IF-1.5B
 - Repositorio GitHub (One-Shot-OPD): https://github.com/Thinking-Space/One-Shot-OPD
 - Paper (arXiv, identificador no disponible): https://arxiv.org/abs/XXXX.XXXXX
 - Dataset de entrenamiento: https://huggingface.co/datasets/openbmb/UltraData-SFT-2605

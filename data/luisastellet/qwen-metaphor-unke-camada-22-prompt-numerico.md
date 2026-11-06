@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-22-prompt-numerico` es un checkpoint de la familia Qwen3 publicado en HuggingFace por el usuario `luisastellet`, con 596.049.920 parámetros totales según los metadatos de safetensors. El pipeline declarado es `text-generation` y los tags incluyen `qwen3`, `conversational`, `text-generation-inference` y `endpoints_compatible`, lo que sitúa al modelo en el ecosistema estándar de transformers para generación de texto conversacional. El repositorio ocupa 7,2 GB.
+`luisastellet/qwen-metaphor-unke-camada-22-prompt-numerico` es un checkpoint de la familia Qwen3 publicado en Hugging Face por el usuario `luisastellet`, con 596.049.920 parámetros totales según los metadatos de safetensors. El pipeline declarado es `text-generation` y los tags incluyen `qwen3`, `conversational`, `text-generation-inference` y `endpoints_compatible`, lo que sitúa al modelo en el ecosistema estándar de transformers para generación de texto conversacional. El repositorio ocupa 7,2 GB.
 
 La característica definitoria no es su rendimiento, sino su naturaleza experimental: el nombre del repositorio apunta a una intervención sobre la capa 22 del modelo ("camada-22") con algún tipo de modificación de prompt numérico. Se trata, por tanto, de un artefacto orientado a investigación en interpretabilidad y edición de representaciones internas, no de un modelo listo para producción.
 
-La model card es la plantilla automática de HuggingFace y no contiene ni una sola sección completada: no hay información sobre datos de entrenamiento, licencia, idiomas, contexto, evaluación ni uso previsto. Cualquier despliegue exige una evaluación propia previa. El modelo acumula 500 descargas y 0 likes desde su creación el 25 de octubre de 2026.
+La model card es la plantilla automática de Hugging Face y no contiene ni una sola sección completada: no hay información sobre datos de entrenamiento, licencia, idiomas, contexto, evaluación ni uso previsto. Cualquier despliegue exige una evaluación propia previa. El modelo acumula 500 descargas y 0 likes desde su creación el 25 de octubre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ Las siguientes capacidades se derivan de los tags y del pipeline declarado, no d
 - Análisis de degradación controlada: al ser una variante potencialmente alterada, sirve para estudiar cómo se degrada la perplejidad y la coherencia cuando se modifica una capa intermedia, comparando contra el modelo original.
 - Prototipado rápido en local: con ~596 M de parámetros cabe en cualquier GPU de consumo en bf16, lo que permite montar un pipeline de generación de texto de prueba sin infraestructura dedicada.
 - Generación de datos sintéticos a pequeña escala para filtrado o clasificación por prompting, siempre con revisión humana y sin asumir calidad de instrucción, dado que no se ha confirmado un ajuste conversacional.
-- Docencia y demostraciones sobre el ciclo de vida de un modelo en HuggingFace: ejemplo real de repositorio con metadatos mínimos, útil para enseñar a auditar fichas de modelos antes de usarlos.
+- Docencia y demostraciones sobre el ciclo de vida de un modelo en Hugging Face: ejemplo real de repositorio con metadatos mínimos, útil para enseñar a auditar fichas de modelos antes de usarlos.
 
 ## Benchmarks y rendimiento
 
@@ -90,7 +90,7 @@ Los datos de los modelos comparables proceden de sus fichas públicas y deben ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-22-prompt-numerico
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-22-prompt-numerico
 - Paper citado en los tags (`arxiv:1910.09700`, Lacoste et al., 2019, sobre estimación de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - Repositorio, paper o demo del autor: no disponibles.

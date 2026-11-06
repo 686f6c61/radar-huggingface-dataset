@@ -76,8 +76,8 @@ El autor advierte que estos son fotogramas de entrenamiento y que no constituyen
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (cosmos3-edge-policy-droid-robolab-lora-r16-a32-2k) | 3.859.003.312 | no disponible | OpenMDW-1.1 | HuggingFace, 0 descargas |
-| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible en la información | no disponible | OpenMDW-1.1 | HuggingFace (modelo base oficial) |
+| Este modelo (cosmos3-edge-policy-droid-robolab-lora-r16-a32-2k) | 3.859.003.312 | no disponible | OpenMDW-1.1 | Hugging Face, 0 descargas |
+| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible en la información | no disponible | OpenMDW-1.1 | Hugging Face (modelo base oficial) |
 | Otros modelos de política robótica comparables | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación directa documentada es con el modelo base, sobre el que este checkpoint mejora el error absoluto medio de reconstrucción (0,1125 frente a 0,1895 en media). No se dispone de datos de otros modelos de política de la misma categoría en la información proporcionada.
@@ -95,7 +95,7 @@ La única comparación directa documentada es con el modelo base, sobre el que e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-robolab-lora-r16-a32-2k
+- Modelo en Hugging Face: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-robolab-lora-r16-a32-2k
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID
 - Dataset de entrenamiento: https://huggingface.co/datasets/joonyeongs/robolab-droid-200
 - Repositorio de código del autor: `joonyeongs/cosmos-framework`, rama `robolab-droid-lora-train` (receta `examples/toml/sft_config/robolab_droid_edge_lora.toml`)

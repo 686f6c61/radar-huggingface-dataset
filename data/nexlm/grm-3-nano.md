@@ -79,5 +79,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NexLM/GRM-3-Nano
+- Hugging Face: https://huggingface.co/NexLM/GRM-3-Nano
 - Sitio web de NexLM: https://nex-lm.vercel.app/

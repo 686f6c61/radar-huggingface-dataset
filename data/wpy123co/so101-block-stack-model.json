@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "wpy123co/so101-block-stack-model",
+  "slug": "wpy123co-so101-block-stack-model",
+  "author": "wpy123co",
+  "url": "https://huggingface.co/wpy123co/so101-block-stack-model",
+  "created_at": "2026-11-03T12:58:24.000Z",
+  "updated_at": "2026-11-03T13:58:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen2_5_vl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8978752584,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wpy123co/so101-block-stack-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/wpy123co/so101-block-stack-dataset",
+      "snippet": "Dataset with 100 rows (Video). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "wpy123co (wpy) - Hugging Face",
+      "url": "https://huggingface.co/wpy123co/models",
+      "snippet": "wpy123co's models1 Sort: Recently updated wpy123co/so101-wall-oss-fullft 4B•Updated about 1 hour ago"
+    },
+    {
+      "title": "GitHub - legalaspro/so101-ros-physical-ai: ROS 2 stack for SO-101 ...",
+      "url": "https://github.com/legalaspro/so101-ros-physical-ai",
+      "snippet": "ROS 2 stack for SO-101 leader/follower: Feetech driver, bringup, teleop, MoveIt2, episode recording, Rerun, policy inference. - legalaspro/so101-ros-physical-ai"
+    },
+    {
+      "title": "so101-block-stacking/so101_stack at main · shrimp-f/so101 ... - GitHub",
+      "url": "https://github.com/shrimp-f/so101-block-stacking/tree/main/so101_stack",
+      "snippet": "Contribute to shrimp-f/so101-block-stacking development by creating an account on GitHub."
+    }
+  ]
+}

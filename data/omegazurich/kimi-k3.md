@@ -4,7 +4,7 @@
 
 Kimi K3 es un modelo de lenguaje multimodal nativo de tipo abierto desarrollado por Moonshot AI. Con 2,8 billones de parametros totales (104B activos), se presenta como el primer modelo abierto de clase 3T, disenado para tareas de razonamiento, codigo de largo horizonte y trabajo de conocimiento agentico. Su arquitectura combina Mixture-of-Experts (MoE) con Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), e incorpora vision nativa y una ventana de contexto de un millon de tokens.
 
-El modelo se distribuye bajo la Kimi K3 License, una licencia de tipo "other" que permite el acceso a los pesos completos para investigacion, despliegue e innovacion. El repositorio de HuggingFace ocupa 1561 GB y utiliza el formato safetensors con cuantizacion de 8 bits mediante compressed-tensors.
+El modelo se distribuye bajo la Kimi K3 License, una licencia de tipo "other" que permite el acceso a los pesos completos para investigacion, despliegue e innovacion. El repositorio de Hugging Face ocupa 1561 GB y utiliza el formato safetensors con cuantizacion de 8 bits mediante compressed-tensors.
 
 La relevancia de Kimi K3 radica en su escala (2,8T de parametros) combinada con una eficiencia de escalado mejorada aproximadamente 2,5 veces respecto a Kimi K2, gracias a un marco Stable LatentMoE que activa 16 de 896 expertos por token. Esto lo posiciona como una alternativa abierta a modelos frontera propietarios para tareas de codigo, agentes y analisis multimodal de contexto largo.
 
@@ -93,8 +93,8 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omegazurich/Kimi-K3
-- HuggingFace oficial de Moonshot AI: https://huggingface.co/moonshotai
+- Hugging Face: https://huggingface.co/omegazurich/Kimi-K3
+- Hugging Face oficial de Moonshot AI: https://huggingface.co/moonshotai
 - Chat: https://www.kimi.com
 - Homepage: https://www.moonshot.ai
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3

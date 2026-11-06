@@ -76,7 +76,7 @@ No se proporciona en la documentación información comparativa con otros detect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdoerrich97/true_colon_yolov8m_realcolon_s0
+- Modelo en Hugging Face: https://huggingface.co/sdoerrich97/true_colon_yolov8m_realcolon_s0
 - Artículo (arXiv): https://arxiv.org/abs/2608.13711
 - Repositorio GitHub: https://github.com/sdoerrich97/true-colon
 - Paquete de protocolo en PyPI: https://pypi.org/project/true-colon/

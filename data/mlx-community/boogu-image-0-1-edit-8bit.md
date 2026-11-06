@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Boogu-Image-0.1-Edit-8bit (esta ficha) | no disponible (repo 12,8 GB) | no disponible | Edicion de imagen por instrucciones, MLX int8 | Apache-2.0 | HuggingFace (mlx-community) |
-| Boogu-Image-0.1-Edit (bf16) | no disponible | no disponible | Edicion de imagen por instrucciones | Apache-2.0 | HuggingFace (Boogu) |
-| Boogu-Image-0.1-Turbo-8bit | no disponible | no disponible | Variante turbo, MLX int8 | no disponible | HuggingFace (mlx-community) |
+| Boogu-Image-0.1-Edit-8bit (esta ficha) | no disponible (repo 12,8 GB) | no disponible | Edicion de imagen por instrucciones, MLX int8 | Apache-2.0 | Hugging Face (mlx-community) |
+| Boogu-Image-0.1-Edit (bf16) | no disponible | no disponible | Edicion de imagen por instrucciones | Apache-2.0 | Hugging Face (Boogu) |
+| Boogu-Image-0.1-Turbo-8bit | no disponible | no disponible | Variante turbo, MLX int8 | no disponible | Hugging Face (mlx-community) |
 
 No se dispone de datos de rendimiento comparado con otros modelos de edicion de imagen en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado con otros modelos de edicion de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Boogu-Image-0.1-Edit-8bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Boogu-Image-0.1-Edit-8bit
 - Modelo base: https://huggingface.co/Boogu/Boogu-Image-0.1-Edit
 - Tier bf16: https://huggingface.co/mlx-community/Boogu-Image-0.1-Edit-bf16
 - Variante Turbo 8bit: https://huggingface.co/mlx-community/Boogu-Image-0.1-Turbo-8bit

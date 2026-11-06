@@ -67,8 +67,8 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo más
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/dpsk-v4-flash (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B (aprox.) | no disponible | no disponible | HuggingFace |
+| agentic-ptb/dpsk-v4-flash (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B (aprox.) | no disponible | no disponible | Hugging Face |
 | DeepSeek v4-flash | no disponible | no disponible | no disponible | no disponible |
 
 Sin datos de benchmarks ni especificaciones completas, no es posible establecer una comparativa de rendimiento fiable.
@@ -85,6 +85,6 @@ Sin datos de benchmarks ni especificaciones completas, no es posible establecer 
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/dpsk-v4-flash.h062.sft4.step_1400](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h062.sft4.step_1400)
+- [Hugging Face: agentic-ptb/dpsk-v4-flash.h062.sft4.step_1400](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h062.sft4.step_1400)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)
 - Repo de origen mencionado en la model card: `msr-spare/msr-agentic-ptb-dpsk-sft4-intermediates` (no se ha encontrado un enlace directo en la información proporcionada)

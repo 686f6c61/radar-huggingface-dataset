@@ -98,5 +98,5 @@ No se dispone de informacion sobre modelos comparables de terceros en la documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Walkowicz/kairos-sophia-1.0-27B
+- Modelo en Hugging Face: https://huggingface.co/Walkowicz/kairos-sophia-1.0-27B
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit

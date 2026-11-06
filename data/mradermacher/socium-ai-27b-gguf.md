@@ -27,7 +27,7 @@ Se trata de un modelo con practicamente nula traccion en el momento de la consul
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo base. Las etiquetas de HuggingFace lo asocian a "qwen3.5", lo que sugiere una arquitectura transformer derivada de la familia Qwen, pero no se confirma en la model card ni se especifica si emplea atencion lineal, decodificacion especulativa, mezcla de expertos u otra innovacion concreta. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de alineacion.
+La informacion proporcionada no detalla la arquitectura interna del modelo base. Las etiquetas de Hugging Face lo asocian a "qwen3.5", lo que sugiere una arquitectura transformer derivada de la familia Qwen, pero no se confirma en la model card ni se especifica si emplea atencion lineal, decodificacion especulativa, mezcla de expertos u otra innovacion concreta. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de alineacion.
 
 Lo unico verificable es que el modelo base fue sometido a un ajuste fino supervisado (etiquetas "sft" y "fine-tuned") y que incorpora capacidades de vision, dado que el repositorio GGUF incluye ficheros mmproj (proyector multimodal) en precision Q8_0 y f16, que en llama.cpp se cargan junto al modelo principal para procesar imagenes. La cuantizacion es de tipo estatico: el autor indica explicitamente que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion.
 
@@ -97,7 +97,7 @@ No se dispone de datos tecnicos verificables (parametros, contexto, benchmarks) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/SOCIUM-AI-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/SOCIUM-AI-27B-GGUF
 - Pagina resumen del autor para este modelo: https://hf.tst.eu/model#SOCIUM-AI-27B-GGUF
 - Modelo base: https://huggingface.co/orzattyholdings/SOCIUM-AI-27B
 - Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

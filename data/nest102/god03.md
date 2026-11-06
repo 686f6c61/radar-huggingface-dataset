@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nest102/god03` es un repositorio de pesos publicado en HuggingFace por el usuario nest102. La informacion publica disponible es minima: el repositorio ocupa 32,4 GB, acumula 0 descargas y 1 like en el momento de la consulta, y no declara pipeline, licencia ni idiomas soportados. La unica etiqueta presente es `region:us`, que en HuggingFace es una etiqueta de region geografica de almacenamiento y no aporta informacion sobre la arquitectura ni el proposito del modelo.
+`nest102/god03` es un repositorio de pesos publicado en Hugging Face por el usuario nest102. La informacion publica disponible es minima: el repositorio ocupa 32,4 GB, acumula 0 descargas y 1 like en el momento de la consulta, y no declara pipeline, licencia ni idiomas soportados. La unica etiqueta presente es `region:us`, que en Hugging Face es una etiqueta de region geografica de almacenamiento y no aporta informacion sobre la arquitectura ni el proposito del modelo.
 
 Por el tamano del repositorio puede inferirse, con cautela, que se trata de un modelo de gran tamano (del orden de 16 000 millones de parametros si los pesos estuvieran almacenados en precision de 16 bits), pero esta estimacion es una deduccion del peso del repositorio y no un dato confirmado por el autor. No hay model card, no hay documentacion tecnica asociada y no se ha publicado informacion sobre datos de entrenamiento, arquitectura interna o proceso de alineacion.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: se desconoce el numero de to
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
 - No se documenta cobertura multilingue.
 - No se documenta ningun modo especial (thinking, vision, audio, decodificacion especulativa, atencion lineal).
-- No se declara pipeline de HuggingFace, por lo que ni siquiera la tarea principal (text-generation, text2text-generation, image-text-to-text, etc.) esta confirmada.
+- No se declara pipeline de Hugging Face, por lo que ni siquiera la tarea principal (text-generation, text2text-generation, image-text-to-text, etc.) esta confirmada.
 
 ## Casos de uso
 
@@ -89,5 +89,5 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nest102/god03
+- Hugging Face: https://huggingface.co/nest102/god03
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos correspondian a dominios sin relacion con el repositorio.

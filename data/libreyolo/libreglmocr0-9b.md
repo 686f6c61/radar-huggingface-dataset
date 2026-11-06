@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LibreYOLO/LibreGLMOCR0.9b
+- Repositorio Hugging Face: https://huggingface.co/LibreYOLO/LibreGLMOCR0.9b
 - Modelo base GLM-OCR: https://huggingface.co/zai-org/GLM-OCR
 - Detector de layout PP-DocLayoutV3: https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_safetensors
 - Commit upstream de GLM-OCR: `2e85a62840ccac27daa451df36c736c4636b8628`

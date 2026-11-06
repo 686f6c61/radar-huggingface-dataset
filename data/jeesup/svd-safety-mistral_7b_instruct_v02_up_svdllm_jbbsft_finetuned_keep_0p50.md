@@ -111,7 +111,7 @@ No se dispone de resultados de benchmarks de los modelos de comparación en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p50
 - Código de SVD-LLM (AIoT-MLSys-Lab, commit `7538cca98880`): https://github.com/AIoT-MLSys-Lab/SVD-LLM
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Dataset de ajuste: `yahma/alpaca-cleaned`

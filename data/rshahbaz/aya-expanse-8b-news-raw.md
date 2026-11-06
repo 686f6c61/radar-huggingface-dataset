@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rshahbaz/aya-expanse-8b-news-raw` es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base CohereLabs/aya-expanse-8b, publicado por el usuario rshahbaz en HuggingFace. No se trata de un modelo completo con pesos independientes, sino de un conjunto de pesos de adaptador (repo de 0,1 GB) que debe cargarse junto al modelo base para su uso. El nombre sugiere un ajuste orientado a la generacion o el procesamiento de noticias ("news-raw"), aunque la model card no documenta la composicion del dataset de entrenamiento.
+`rshahbaz/aya-expanse-8b-news-raw` es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base CohereLabs/aya-expanse-8b, publicado por el usuario rshahbaz en Hugging Face. No se trata de un modelo completo con pesos independientes, sino de un conjunto de pesos de adaptador (repo de 0,1 GB) que debe cargarse junto al modelo base para su uso. El nombre sugiere un ajuste orientado a la generacion o el procesamiento de noticias ("news-raw"), aunque la model card no documenta la composicion del dataset de entrenamiento.
 
 El modelo hereda la arquitectura y capacidades del aya-expanse-8b original de CohereLabs, un modelo denso de 8 mil millones de parametros disenado para generacion de texto conversacional y multilingue. Sin embargo, la informacion publicada sobre este adaptador concreto es minima: no se detallan datos de entrenamiento, hiperparametros, benchmarks ni licencia, y el repositorio registra cero descargas y cero likes en el momento de la consulta.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rshahbaz/aya-expanse-8b-news-raw | Adaptador sobre 8B | No disponible | No disponible | HuggingFace (0 descargas) |
-| CohereLabs/aya-expanse-8b (base) | 8B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
-| Aya 23 8B (Cohere) | 8B | 8K (segun documentacion publica de Cohere) | CC-BY-NC (segun publicacion de Cohere) | HuggingFace |
+| rshahbaz/aya-expanse-8b-news-raw | Adaptador sobre 8B | No disponible | No disponible | Hugging Face (0 descargas) |
+| CohereLabs/aya-expanse-8b (base) | 8B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
+| Aya 23 8B (Cohere) | 8B | 8K (segun documentacion publica de Cohere) | CC-BY-NC (segun publicacion de Cohere) | Hugging Face |
 
 La comparacion directa con el base es la mas relevante: este adaptador anade un ajuste de dominio no documentado y no publica metricas que demuestren mejora sobre el base. Frente a otras alternativas de 8B, la falta de datos impide una evaluacion cuantitativa.
 
@@ -81,6 +81,6 @@ La comparacion directa con el base es la mas relevante: este adaptador anade un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rshahbaz/aya-expanse-8b-news-raw
+- Modelo en Hugging Face: https://huggingface.co/rshahbaz/aya-expanse-8b-news-raw
 - Modelo base: https://huggingface.co/CohereLabs/aya-expanse-8b
 - Repositorio TRL: https://github.com/huggingface/trl

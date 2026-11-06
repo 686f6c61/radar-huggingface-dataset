@@ -58,7 +58,7 @@ No disponible. No existe un modelo comparable porque el repositorio no aloja un 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/buffoontechno/proxy-seller-coupon-code-discounts
+- Repositorio de Hugging Face: https://huggingface.co/buffoontechno/proxy-seller-coupon-code-discounts
 - Resultados de búsqueda web (cupones de Proxy-Seller, no relacionados con IA):
   - https://www.hotdeals.com/coupons/proxy-seller-promo-codes
   - https://proxyseller.proxycoupons.com/

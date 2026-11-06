@@ -61,7 +61,7 @@ La tabla de lecturas durante la busqueda muestra la evolucion del QER por paso d
 - VRAM estimada para inferencia: al ser un modelo de 1B parametros en BF16, requiere aproximadamente 2-3 GB de VRAM para inferencia en precision completa. Con cuantizacion a 8 bits, se reduce a unos 1.5 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM es suficiente (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060). Tambien funciona en CPUs con suficiente RAM.
 - Cabe en GPU consumer: si, es un modelo pequeno que se ejecuta sin problemas en hardware de consumo.
-- Opciones de despliegue: compatible con transformers (HuggingFace), y por extension con vLLM, llama.cpp, Ollama y TGI, aunque el proposito del modelo es la investigacion, no el despliegue en produccion.
+- Opciones de despliegue: compatible con transformers (Hugging Face), y por extension con vLLM, llama.cpp, Ollama y TGI, aunque el proposito del modelo es la investigacion, no el despliegue en produccion.
 - Latencia y throughput: no disponible, pero para un modelo de 1B en una GPU moderna se esperan latencias de decenas de milisegundos por token. Nota: el checkpoint debe cargarse desde la rama `step123-anneal2.47529e-05over8-step-124`, no desde `main`.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-dpo-mixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-dpo-mixed
 - Coleccion de destilacion del proyecto: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed

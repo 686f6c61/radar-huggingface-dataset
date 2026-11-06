@@ -84,7 +84,7 @@ No se dispone de informacion suficiente sobre modelos comparables en la document
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Dots.OCR-Latest-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Dots.OCR-Latest-BF16-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/Dots.OCR-Latest-BF16
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Dots.OCR-Latest-BF16-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Dots.OCR-Latest-BF16-GGUF

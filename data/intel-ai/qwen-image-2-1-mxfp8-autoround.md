@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de gene
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/intel-ai/Qwen-Image-2.1-MXFP8-AutoRound
+- Hugging Face: https://huggingface.co/intel-ai/Qwen-Image-2.1-MXFP8-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio auto-round: https://github.com/intel/auto-round
 - Paper de referencia (AutoRound): https://arxiv.org/abs/2309.05516

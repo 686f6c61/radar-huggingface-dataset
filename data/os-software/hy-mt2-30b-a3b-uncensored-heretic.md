@@ -59,15 +59,15 @@ Estos datos indican que la ablación elimina por completo los rechazos medidos e
 - El modelo tiene 30 000 millones de parámetros en total, pero solo 3 000 millones activos por token. En precisión BF16, el peso completo ocupa aproximadamente 60 GB (tamaño del repositorio), lo que requiere una GPU con al menos 60 GB de VRAM para carga completa sin cuantización.
 - Con cuantización GGUF Q4_K_M (típica en llama.cpp), el tamaño se reduce a unos 17-20 GB, lo que permite ejecutarlo en GPUs consumer de gama alta como RTX 4090 (24 GB) o RTX 3090 (24 GB).
 - No se han publicado datos de latencia ni throughput específicos para esta versión. Sin embargo, al ser un modelo MoE con solo 3B activos, la velocidad de generación es significativamente mayor que la de un modelo denso de 30B equivalente.
-- Opciones de despliegue compatibles: vLLM, llama.cpp, Ollama (mediante archivos GGUF), y Transformers de HuggingFace con carga en 8 bits o 4 bits.
+- Opciones de despliegue compatibles: vLLM, llama.cpp, Ollama (mediante archivos GGUF), y Transformers de Hugging Face con carga en 8 bits o 4 bits.
 - Para inferencia en producción con alta concurrencia se recomienda al menos una GPU A100 de 80 GB o H100, aunque con cuantización 4 bits puede bastar con una RTX 4090 para uso individual.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy-MT2-30B-A3B (original) | 30B total, 3B activos | no disponible | Traduccion multilingue (33 idiomas) | Apache 2.0 | HuggingFace |
-| Hy-MT2-30B-A3B-uncensored-heretic (este modelo) | 30B total, 3B activos | no disponible | Traduccion multilingue sin filtros de seguridad | Apache 2.0 | HuggingFace |
+| Hy-MT2-30B-A3B (original) | 30B total, 3B activos | no disponible | Traduccion multilingue (33 idiomas) | Apache 2.0 | Hugging Face |
+| Hy-MT2-30B-A3B-uncensored-heretic (este modelo) | 30B total, 3B activos | no disponible | Traduccion multilingue sin filtros de seguridad | Apache 2.0 | Hugging Face |
 | DeepSeek-V4-Pro | no disponible | no disponible | Traduccion y generacion general | no disponible | no disponible |
 | Kimi K2.6 | no disponible | no disponible | Traduccion y generacion general | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ Según la documentación del modelo base, Hy-MT2-30B-A3B supera a DeepSeek-V4-Pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic
 - Versión GGUF: https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic-GGUF
 - Modelo base original: https://huggingface.co/tencent/Hy-MT2-30B-A3B
 - Repositorio GitHub del proyecto Hy-MT2: https://github.com/Tencent-Hunyuan/Hy-MT2

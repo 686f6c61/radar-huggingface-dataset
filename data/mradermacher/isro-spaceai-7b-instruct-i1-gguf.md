@@ -70,7 +70,7 @@ No disponible. No se han identificado modelos comparables de la misma categoria 
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/ISRO-SpaceAI-7B-Instruct-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/ISRO-SpaceAI-7B-Instruct-i1-GGUF
 - Modelo base (safetensors): https://huggingface.co/Anoopsingh53/ISRO-SpaceAI-7B-Instruct
 - Cuantizaciones estaticas (sin imatrix): https://huggingface.co/mradermacher/ISRO-SpaceAI-7B-Instruct-GGUF
 - Pagina de inferencia en FriendliAI: https://friendli.ai/models/Anoopsingh53/ISRO-SpaceAI-7B-Instruct

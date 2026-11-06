@@ -70,8 +70,8 @@ Estos resultados son evaluaciones del propio autor y no garantizan el mismo rend
 
 | Modelo | Parámetros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VBVR-Pro Wan2.2 TI2V-5B Rule-RL (este) | 5B | No disponible | Image-to-video con RL | Apache 2.0 | HuggingFace |
-| Wan2.2-TI2V-5B (base) | 5B | No disponible | Image-to-video | Apache 2.0 | HuggingFace |
+| VBVR-Pro Wan2.2 TI2V-5B Rule-RL (este) | 5B | No disponible | Image-to-video con RL | Apache 2.0 | Hugging Face |
+| Wan2.2-TI2V-5B (base) | 5B | No disponible | Image-to-video | Apache 2.0 | Hugging Face |
 | Wan2.2-TI2V-5B-Turbo | 5B | No disponible | Image-to-video en 4 pasos | Apache 2.0 | GitHub/HuggingFace |
 
 La principal diferencia con el modelo base es la optimización mediante RL para tareas de razonamiento visual, lo que mejora la precisión en tareas específicas pero no en la generación general. El modelo Turbo está orientado a inferencia rápida (4 pasos) y no incorpora el componente de RL. No se dispone de comparativa cuantitativa entre estos modelos en la información proporcionada.
@@ -87,7 +87,7 @@ La principal diferencia con el modelo base es la optimización mediante RL para 
 
 ## Enlaces
 
-- [HuggingFace: pufanyi/VBVR-Pro-Wan2.2-TI2V-5B-Rule-RL](https://huggingface.co/pufanyi/VBVR-Pro-Wan2.2-TI2V-5B-Rule-RL)
+- [Hugging Face: pufanyi/VBVR-Pro-Wan2.2-TI2V-5B-Rule-RL](https://huggingface.co/pufanyi/VBVR-Pro-Wan2.2-TI2V-5B-Rule-RL)
 - [Modelo base: Wan-AI/Wan2.2-TI2V-5B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers)
 - [Dataset: Video-Reason/VBVR-Pro-RL](https://huggingface.co/datasets/Video-Reason/VBVR-Pro-RL)
 - [Repositorio de entrenamiento: pufanyi/vbvr-rl](https://github.com/pufanyi/vbvr-rl)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PrepGenius es un modelo de generación de vídeo a partir de texto (text-to-video) publicado en HuggingFace por el usuario FreeAi1111 bajo el identificador `FreeAi1111/PrepGenius`. A pesar del nombre, la model card y las etiquetas del repositorio corresponden a CogVideoX-5B, el modelo de difusión de vídeo desarrollado por THUDM (Universidad de Tsinghua), por lo que se trata con toda probabilidad de una resubida o espejo del modelo original, no de un desarrollo propio. El repositorio tiene 0 descargas y 0 likes, y fue creado el 14 de septiembre de 2026.
+PrepGenius es un modelo de generación de vídeo a partir de texto (text-to-video) publicado en Hugging Face por el usuario FreeAi1111 bajo el identificador `FreeAi1111/PrepGenius`. A pesar del nombre, la model card y las etiquetas del repositorio corresponden a CogVideoX-5B, el modelo de difusión de vídeo desarrollado por THUDM (Universidad de Tsinghua), por lo que se trata con toda probabilidad de una resubida o espejo del modelo original, no de un desarrollo propio. El repositorio tiene 0 descargas y 0 likes, y fue creado el 14 de septiembre de 2026.
 
 El modelo pesa 5.570.283.072 parámetros (unos 5,57 mil millones) y el repositorio ocupa 21,5 GB en formato safetensors, con integración en la librería diffusers a través de `CogVideoXPipeline`. Genera vídeo a partir de descripciones textuales en inglés, apoyándose en la arquitectura CogVideoX descrita en el artículo arXiv:2408.06072.
 
@@ -25,7 +25,7 @@ Su relevancia es la de un modelo de difusión de vídeo de tamaño medio (5B) qu
 
 PrepGenius es, segun las etiquetas y la model card, CogVideoX-5B: un modelo de difusión para generación de vídeo basado en un transformer de difusión (DiT) que opera sobre representaciones latentes comprimidas por un VAE causal 3D. La arquitectura y el proceso de entrenamiento completos se describen en el artículo arXiv:2408.06072, referenciado tanto en las etiquetas del repositorio como en la model card. No se dispone en la información proporcionada del número de tokens, la composición del dataset ni de si se aplicaron técnicas de alineación como RLHF o DPO.
 
-El repositorio se distribuye con la etiqueta `diffusers:CogVideoXPipeline` y el campo `inference: false` en el frontmatter de la model card, lo que indica que el autor no ha habilitado la inferencia desde la propia interfaz de HuggingFace. No se documentan en la información disponible innovaciones técnicas adicionales específicas de esta resubida respecto al CogVideoX-5B original.
+El repositorio se distribuye con la etiqueta `diffusers:CogVideoXPipeline` y el campo `inference: false` en el frontmatter de la model card, lo que indica que el autor no ha habilitado la inferencia desde la propia interfaz de Hugging Face. No se documentan en la información disponible innovaciones técnicas adicionales específicas de esta resubida respecto al CogVideoX-5B original.
 
 ## Capacidades
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto / modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PrepGenius (este repositorio) | 5,57 mil millones | Text-to-video, ingles | other | HuggingFace (`FreeAi1111/PrepGenius`), 0 descargas |
-| CogVideoX-5B (THUDM) | 5 mil millones (aprox.) | Text-to-video, ingles | otra (licencia propia de CogVideoX) | HuggingFace oficial, con model card, Space y GitHub |
-| CogVideoX-2B (THUDM) | 2 mil millones (aprox.) | Text-to-video, ingles | otra (licencia propia de CogVideoX) | HuggingFace oficial |
+| PrepGenius (este repositorio) | 5,57 mil millones | Text-to-video, ingles | other | Hugging Face (`FreeAi1111/PrepGenius`), 0 descargas |
+| CogVideoX-5B (THUDM) | 5 mil millones (aprox.) | Text-to-video, ingles | otra (licencia propia de CogVideoX) | Hugging Face oficial, con model card, Space y GitHub |
+| CogVideoX-2B (THUDM) | 2 mil millones (aprox.) | Text-to-video, ingles | otra (licencia propia de CogVideoX) | Hugging Face oficial |
 
 Nota: no se dispone de datos de rendimiento comparativo en la información proporcionada; la comparación se limita a parámetros, modalidad, licencia y disponibilidad. PrepGenius parece ser una copia de CogVideoX-5B, por lo que funcionalmente sería equivalente al original, con la diferencia de ser un repositorio no oficial con 0 descargas.
 
@@ -78,13 +78,13 @@ Nota: no se dispone de datos de rendimiento comparativo en la información propo
 - Idioma: únicamente inglés declarado; los prompts en otros idiomas pueden degradar la calidad.
 - No es un modelo de lenguaje: no soporta tool calling, agentes, razonamiento multi-paso ni conversación de texto.
 - Riesgo de artefactos y de infidelidad al prompt: como todo modelo generativo de vídeo, puede producir contenido incoherente, anatómicamente incorrecto o que no se ajuste a la descripción.
-- Campo `inference: false` en la model card: la inferencia no está habilitada desde la interfaz de HuggingFace.
+- Campo `inference: false` en la model card: la inferencia no está habilitada desde la interfaz de Hugging Face.
 - Riesgo de sesgos y de contenido inapropiado presente en los datos de entrenamiento del modelo original, no documentados en esta ficha.
 - Verificar el uso ético y legal del contenido generado (derechos de imagen, propiedad intelectual, desinformación).
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/FreeAi1111/PrepGenius
+- Hugging Face del modelo: https://huggingface.co/FreeAi1111/PrepGenius
 - Modelo original CogVideoX-5B (THUDM): https://huggingface.co/THUDM/CogVideoX-5b
 - Licencia del modelo original: https://huggingface.co/THUDM/CogVideoX-5b/blob/main/LICENSE
 - Articulo: https://arxiv.org/pdf/2408.06072

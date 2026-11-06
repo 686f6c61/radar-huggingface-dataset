@@ -4,7 +4,7 @@
 
 BEVFormer-tiny (ResNet-50) es un modelo de detección de objetos 3D en visión por computador para conducción autónoma, desarrollado por los equipos de SenseTime y la Universidad de Tsinghua. Su objetivo es transformar secuencias de imágenes de múltiples cámaras en una representación unificada en vista de pájaro (BEV, Bird's-Eye-View) mediante mecanismos de atención espacio-temporal aprendibles, lo que permite detectar objetos tridimensionales (vehículos, peatones, etc.) sin depender de sensores LiDAR. Esta versión "tiny" está optimizada para despliegue eficiente en plataformas de borde, como los chips Horizon J6, y se basa en un backbone ResNet-50 con FPN y un decodificador estilo DETR.
 
-El modelo es relevante porque aborda un problema crítico en la percepción autónoma: la fusión de múltiples vistas de cámara en un espacio BEV unificado, con un coste computacional reducido que permite su ejecución en hardware embebido. La arquitectura combina atención temporal (para aprovechar la información de frames anteriores) y atención cruzada espacial (para relacionar las proyecciones de las cámaras), logrando un equilibrio entre precisión y eficiencia. El repositorio de HuggingFace contiene los pesos del modelo (1,4 GB) junto con métricas de despliegue para los chips J6M y J6P, lo que facilita su integración en sistemas de conducción autónoma de bajo consumo.
+El modelo es relevante porque aborda un problema crítico en la percepción autónoma: la fusión de múltiples vistas de cámara en un espacio BEV unificado, con un coste computacional reducido que permite su ejecución en hardware embebido. La arquitectura combina atención temporal (para aprovechar la información de frames anteriores) y atención cruzada espacial (para relacionar las proyecciones de las cámaras), logrando un equilibrio entre precisión y eficiencia. El repositorio de Hugging Face contiene los pesos del modelo (1,4 GB) junto con métricas de despliegue para los chips J6M y J6P, lo que facilita su integración en sistemas de conducción autónoma de bajo consumo.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ No se dispone de información comparativa con otros modelos de detección 3D BEV
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenExploer/bevformer_tiny_resnet50_detection
+- Hugging Face: https://huggingface.co/OpenExploer/bevformer_tiny_resnet50_detection
 - Repositorio oficial (BEVFormer): https://github.com/fundamentalvision/BevFormer
 - Paper (arXiv): https://arxiv.org/abs/2203.17270
 - Documentación de despliegue en APLUX: https://docs.aidlux.com/en/software/tutorial/ai-dev/bevformer_tiny_aidlite

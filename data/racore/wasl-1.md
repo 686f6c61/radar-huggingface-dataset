@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wasl-1 (وصل) es un prototipo de investigación publicado por la organización Racore en HuggingFace: un transformer causal decoder-only de 10.163.520 parámetros (10,16 M) entrenado desde cero sobre texto en árabe egipcio generado por plantillas. Su propósito declarado es convertir eventos de pedidos de comercio electrónico con pago contra reembolso (cash-on-delivery) en un estado estructurado que contenga una puntuación de intención de entrega, un nivel de riesgo de devolución y una ruta de cumplimiento. La implementación es una arquitectura propia en PyTorch denominada `SiyaqFamilyTransformer`, con 8 capas, dimensión oculta de 320, 8 cabezas de atención, GELU, RMSNorm y codificación posicional RoPE con theta = 500.000.
+Wasl-1 (وصل) es un prototipo de investigación publicado por la organización Racore en Hugging Face: un transformer causal decoder-only de 10.163.520 parámetros (10,16 M) entrenado desde cero sobre texto en árabe egipcio generado por plantillas. Su propósito declarado es convertir eventos de pedidos de comercio electrónico con pago contra reembolso (cash-on-delivery) en un estado estructurado que contenga una puntuación de intención de entrega, un nivel de riesgo de devolución y una ruta de cumplimiento. La implementación es una arquitectura propia en PyTorch denominada `SiyaqFamilyTransformer`, con 8 capas, dimensión oculta de 320, 8 cabezas de atención, GELU, RMSNorm y codificación posicional RoPE con theta = 500.000.
 
 El modelo es relevante únicamente como pieza experimental: el repositorio muestra 0 descargas, 0 likes y un tamaño declarado de 0,0 GB, y la propia model card advierte de que el checkpoint remoto y el contenido del repositorio no fueron verificados de forma independiente. La model card también indica que el cuaderno de entrenamiento suministrado no demuestra una generación fiable del estado estructurado ni una predicción realista del riesgo de devolución, y que el truncamiento a 256 caracteres puede eliminar por completo el estado objetivo antes de entrenar.
 
@@ -102,6 +102,6 @@ No se identifican en la información proporcionada modelos comparables directos,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/racore/Wasl-1
+- Modelo en Hugging Face: https://huggingface.co/racore/Wasl-1
 - Cuaderno de entrenamiento citado: `WASAL_1_Colab_Notebook.ipynb` (no se proporciona enlace directo a un repositorio de código)
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada

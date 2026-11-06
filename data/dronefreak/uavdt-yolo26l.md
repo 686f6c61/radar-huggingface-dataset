@@ -125,8 +125,8 @@ Observaciones relevantes: YOLO26l no es el mejor modelo de su propia familia en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolo26l
-- Dataset UAVDT en HuggingFace: https://huggingface.co/datasets/dronefreak/UAVDT
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolo26l
+- Dataset UAVDT en Hugging Face: https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26
 - Paper de UAVDT (arXiv:1804.00518): https://arxiv.org/abs/1804.00518

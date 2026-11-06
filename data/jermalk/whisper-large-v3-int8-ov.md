@@ -68,9 +68,9 @@ El único dato de rendimiento aportado es una medición del autor en un portáti
 
 | Modelo | Parametros | Precision / formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jermalk/whisper-large-v3-int8-ov | 1550 M (base) | INT8, OpenVINO IR | Multilingüe (base); traducción solo a inglés | apache-2.0 | HuggingFace (copia del repo de Intel) |
-| OpenVINO/whisper-large-v3-int8-ov | 1550 M (base) | INT8, OpenVINO IR | Multilingüe (base) | apache-2.0 | HuggingFace (original de Intel) |
-| openai/whisper-large-v3 | 1550 M | fp32/fp16, safetensors | Multilingüe | apache-2.0 | HuggingFace |
+| jermalk/whisper-large-v3-int8-ov | 1550 M (base) | INT8, OpenVINO IR | Multilingüe (base); traducción solo a inglés | apache-2.0 | Hugging Face (copia del repo de Intel) |
+| OpenVINO/whisper-large-v3-int8-ov | 1550 M (base) | INT8, OpenVINO IR | Multilingüe (base) | apache-2.0 | Hugging Face (original de Intel) |
+| openai/whisper-large-v3 | 1550 M | fp32/fp16, safetensors | Multilingüe | apache-2.0 | Hugging Face |
 | faster-whisper (CTranslate2) | 1550 M (base) | INT8/FP16, CTranslate2 | Multilingüe | Apache 2.0 (según implementación) | Repositorio propio |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento relativo entre estas variantes en la información proporcionada. La comparativa se limita a parámetros, formato, licencia y disponibilidad.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jermalk/whisper-large-v3-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/jermalk/whisper-large-v3-int8-ov
 - Modelo original de la conversión: https://huggingface.co/OpenVINO/whisper-large-v3-int8-ov
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - OpenVINO IR: https://docs.openvino.ai/2025/documentation/openvino-ir-format.html

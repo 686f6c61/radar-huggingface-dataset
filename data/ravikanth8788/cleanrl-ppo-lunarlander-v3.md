@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cleanrl-ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario Ravikanth8788 en HuggingFace y su implementacion se ha realizado desde cero en PyTorch siguiendo la base de codigo de CleanRL, una libreria de referencia para experimentos de RL de un solo archivo. No se trata, por tanto, de un modelo de lenguaje ni de un transformer: es una politica entrenada para resolver una tarea de control secuencial concreta.
+cleanrl-ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario Ravikanth8788 en Hugging Face y su implementacion se ha realizado desde cero en PyTorch siguiendo la base de codigo de CleanRL, una libreria de referencia para experimentos de RL de un solo archivo. No se trata, por tanto, de un modelo de lenguaje ni de un transformer: es una politica entrenada para resolver una tarea de control secuencial concreta.
 
 El interes de este tipo de publicaciones es fundamentalmente metodologico y educativo. CleanRL se utiliza mucho en docencia e investigacion porque cada algoritmo cabe en un fichero legible, lo que permite reproducir experimentos, comparar hiperparametros y auditar la implementacion sin capas de abstraccion. Un agente PPO de LunarLander sirve como referencia minima para validar pipelines de entrenamiento, registro de metricas y evaluacion antes de escalar a entornos mas costosos.
 
@@ -32,7 +32,7 @@ No se especifican en la informacion disponible ni el numero de pasos de entorno 
 - Control secuencial en el entorno LunarLander-v3: el agente selecciona acciones discretas en cada paso de simulacion a partir de observaciones continuas del estado.
 - Aprendizaje por refuerzo on-policy con PPO: la politica esta optimizada para maximizar el retorno esperado en la tarea de aterrizaje.
 - Reproducibilidad de experimentos: al derivar de CleanRL, el codigo de entrenamiento es auditable y facilmente modificable para variar el algoritmo o los hiperparametros.
-- Registro de metricas estandar: la model card incluye un bloque `model-index` compatible con las herramientas de evaluacion de HuggingFace.
+- Registro de metricas estandar: la model card incluye un bloque `model-index` compatible con las herramientas de evaluacion de Hugging Face.
 - Soporte de tool calling: no disponible (no es un modelo de lenguaje).
 - Soporte de agentes y razonamiento multi-paso: no aplica en el sentido de LLM; la capacidad de planificacion se limita a la politica entrenada en el entorno.
 - Capacidades multilingues: no aplica.
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye otros agentes de referenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ravikanth8788/cleanrl-ppo-LunarLander-v3
+- Hugging Face: https://huggingface.co/Ravikanth8788/cleanrl-ppo-LunarLander-v3
 - Paper o blog oficial: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

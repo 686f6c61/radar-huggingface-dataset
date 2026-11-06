@@ -29,7 +29,7 @@ Los datos de entrenamiento corresponden al subconjunto SST-2 de GLUE, una tarea 
 
 - Clasificación de texto binaria: el modelo está especializado en análisis de sentimiento positivo/negativo sobre el dataset SST-2.
 - Inferencia eficiente en memoria: el pico de VRAM reportado es de 328,53 MB, lo que permite ejecutarlo en GPUs modestas.
-- Integración con HuggingFace Transformers: se puede cargar mediante `AutoModelForSequenceClassification` y usar con el pipeline `text-classification`.
+- Integración con Hugging Face Transformers: se puede cargar mediante `AutoModelForSequenceClassification` y usar con el pipeline `text-classification`.
 - Sin soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multimodales (visión, audio, etc.).
 - Multilingüe: no. Solo inglés.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 - VRAM estimada para inferencia: 328,53 MB según la model card, medido como pico de VRAM durante la evaluación.
 - GPU recomendadas: no disponible. Dado el bajo consumo, cualquier GPU con al menos 512 MB de VRAM sería suficiente para inferencia básica.
 - Compatibilidad con GPU de consumo: sí. El modelo puede ejecutarse en GPUs domésticas como RTX 2060, GTX 1650 o incluso en CPU con suficiente RAM.
-- Opciones de despliegue: HuggingFace Transformers (pipeline `text-classification`), compatible con `AutoModelForSequenceClassification`. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: Hugging Face Transformers (pipeline `text-classification`), compatible con `AutoModelForSequenceClassification`. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. La model card indica un tiempo de evaluación puro de 28,51 s, pero no especifica el tamaño del dataset ni el hardware utilizado, por lo que no se puede extrapolar.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No se han publicado resultados de benchmarks comparativos en la información dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-cachenotes
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-cachenotes
 - GitHub del autor: https://github.com/Hooshaai
 - Artículo sobre atención lineal: https://hooshaai.substack.com/p/scaling-transformers-how-linear-attention

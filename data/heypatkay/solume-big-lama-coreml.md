@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Resoluciones | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `heypatkay/solume-big-lama-coreml` | Inpainting (Big LaMa convertido) | 512 y 1024 | Core ML fp16 | Apache 2.0 | HuggingFace, 22 descargas |
-| `smartywu/big-lama` | Inpainting (checkpoint original) | Según implementación | PyTorch (`.zip`) | Apache 2.0 (upstream) | HuggingFace |
+| `heypatkay/solume-big-lama-coreml` | Inpainting (Big LaMa convertido) | 512 y 1024 | Core ML fp16 | Apache 2.0 | Hugging Face, 22 descargas |
+| `smartywu/big-lama` | Inpainting (checkpoint original) | Según implementación | PyTorch (`.zip`) | Apache 2.0 (upstream) | Hugging Face |
 | `advimman/lama` (repo oficial) | Inpainting (código y pesos) | Flexible | PyTorch | Apache 2.0 | GitHub |
-| Modelos de inpainting tipo Stable Diffusion (p. ej. variantes de diffusers) | Generativos condicionados por máscara | 512/768 típicamente | safetensors, diffusers | Variables (a menudo CreativeML o similar) | HuggingFace |
+| Modelos de inpainting tipo Stable Diffusion (p. ej. variantes de diffusers) | Generativos condicionados por máscara | 512/768 típicamente | safetensors, diffusers | Variables (a menudo CreativeML o similar) | Hugging Face |
 
 La comparación relevante es con el checkpoint original de PyTorch: misma arquitectura y mismos pesos, pero este repositorio ofrece un formato listo para producción en macOS con verificación criptográfica de integridad, a cambio de fijar la resolución a 512 o 1024 y de limitarse al ecosistema Apple. Frente a los modelos de inpainting basados en difusión, Big LaMa es más ligero y rápido, pero menos flexible en cuanto a control fino del resultado y a la variedad de estilos que puede generar.
 
@@ -83,7 +83,7 @@ La comparación relevante es con el checkpoint original de PyTorch: misma arquit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/heypatkay/solume-big-lama-coreml
+- Repositorio en Hugging Face: https://huggingface.co/heypatkay/solume-big-lama-coreml
 - Modelo base (checkpoint original): https://huggingface.co/smartywu/big-lama
 - Repositorio oficial de LaMa: https://github.com/advimman/lama
 - Paper de referencia (Suvorov et al., WACV 2022): "Resolution-robust Large Mask Inpainting with Fourier Convolutions" (enlace no incluido en la información proporcionada; disponible en el repositorio de GitHub de LaMa)

@@ -28,7 +28,7 @@ Qwen3.6-27B-DFlash-v2 es un modelo draft derivado de Qwen3.6-27B. La informació
 - Generación de código Three.js: diseñado para producir escenas, componentes y código visual a partir de prompts de imagen.
 - Decodificación especulativa: actúa como modelo borrador para acelerar un modelo objetivo mayor.
 - Generación de texto: pipeline text-generation compatible con la librería transformers.
-- Idiomas soportados: solo inglés (según metadata de HuggingFace).
+- Idiomas soportados: solo inglés (según metadata de Hugging Face).
 - No se especifica soporte de tool calling/function calling, ni de agentes o razonamiento multi-paso.
 - No se confirma si el modelo tiene capacidades de visión nativas; la entrada de imagen se describe como "image prompts", pero el pipeline es de generación de texto.
 
@@ -61,11 +61,11 @@ No disponible. No se han proporcionado modelos alternativos de la misma categor�
 - Riesgo de alucinación en la generación de código: el código Three.js puede tener errores semánticos o no ejecutarse correctamente.
 - Sin benchmarks públicos: no hay evidencia de rendimiento frente a otros draft models o modelos de generación de código.
 - Dependencia de un runtime específico (DFlash/speculative-decoding) que puede limitar la integración con stacks existentes.
-- Solo idioma inglés según la metadata de HuggingFace; la calidad en otros idiomas no está documentada.
+- Solo idioma inglés según la metadata de Hugging Face; la calidad en otros idiomas no está documentada.
 - No se confirma si soporta visión de forma nativa; la entrada de imagen parece depender de un componente externo.
 
 ## Enlaces
 
-- HuggingFace: [Fluxmire/Qwen3.6-27B-DFlash-v2](https://huggingface.co/Fluxmire/Qwen3.6-27B-DFlash-v2)
-- Modelo base en HuggingFace: [z-lab/Qwen3.6-27B-DFlash](https://huggingface.co/z-lab/Qwen3.6-27B-DFlash)
+- Hugging Face: [Fluxmire/Qwen3.6-27B-DFlash-v2](https://huggingface.co/Fluxmire/Qwen3.6-27B-DFlash-v2)
+- Modelo base en Hugging Face: [z-lab/Qwen3.6-27B-DFlash](https://huggingface.co/z-lab/Qwen3.6-27B-DFlash)
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

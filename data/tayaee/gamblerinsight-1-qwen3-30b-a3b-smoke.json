@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tayaee/gamblerinsight-1-qwen3-30b-a3b-smoke",
+  "slug": "tayaee-gamblerinsight-1-qwen3-30b-a3b-smoke",
+  "author": "tayaee",
+  "url": "https://huggingface.co/tayaee/gamblerinsight-1-qwen3-30b-a3b-smoke",
+  "created_at": "2026-11-03T00:50:29.000Z",
+  "updated_at": "2026-11-03T03:19:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "finance",
+    "tool-calling",
+    "qlora",
+    "gamblerinsight",
+    "qwen2.5",
+    "conversational",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 601,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078004565,
+  "storage_human": "61.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tayaee/gamblerinsight-1-qwen3-30b-a3b-smoke · Hugging Face",
+      "url": "https://huggingface.co/tayaee/gamblerinsight-1-qwen3-30b-a3b-smoke",
+      "snippet": "Instructions to use tayaee/gamblerinsight-1-qwen3-30b-a3b-smoke with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "tayaee/gamblerinsight-1-qwen3-32b-smoke · Hugging Face",
+      "url": "https://huggingface.co/tayaee/gamblerinsight-1-qwen3-32b-smoke",
+      "snippet": "Text Generation model with 33B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

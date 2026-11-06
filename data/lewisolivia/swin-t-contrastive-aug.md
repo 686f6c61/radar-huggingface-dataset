@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lewisolivia/swin-t-contrastive-aug es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura Swin Transformer en configuracion "nano", orientada a experimentos de aprendizaje contrastivo. El autor lo publica explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. No se reclama ninguna puntuacion de benchmark.
+lewisolivia/swin-t-contrastive-aug es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura Swin Transformer en configuracion "nano", orientada a experimentos de aprendizaje contrastivo. El autor lo publica explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. No se reclama ninguna puntuacion de benchmark.
 
 El dato mas relevante es su tamano real: 33.088 parametros totales segun los tensores safetensors del repositorio, muy por debajo de los aproximadamente 28 millones de parametros del Swin-T canonico de Microsoft. Se trata, por tanto, de una configuracion enana pensada para revision de codigo, tests de integracion y experimentos controlados de laboratorio, no para inferencia en produccion.
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lewisolivia/swin-t-contrastive-aug | 33.088 | Swin T nano, contrastivo | MIT | HuggingFace, 6 descargas | Checkpoint de inicializacion, sin entrenar ni evaluar |
+| lewisolivia/swin-t-contrastive-aug | 33.088 | Swin T nano, contrastivo | MIT | Hugging Face, 6 descargas | Checkpoint de inicializacion, sin entrenar ni evaluar |
 | microsoft/Swin-Transformer | ~28 M (Swin-T) | Vision transformer jerarquico | MIT | GitHub oficial y pesos publicados | Implementacion de referencia del paper, entrenada en ImageNet |
-| ashleyjacksonwyn/swin-t-contrastive | no disponible | Swin T, contrastivo | no disponible | HuggingFace | Prototipo de investigacion, sin cifras de rendimiento verificadas |
-| laurabrown/swin-t-contrastive | no disponible | Swin T, contrastivo | no disponible | HuggingFace | Repositorio sin detalles tecnicos publicos |
-| zacharyevans/swin-t-contrastive-tryout48 | no disponible | Swin T, contrastivo | no disponible | HuggingFace (indexado por terceros) | Variante de prueba, sin benchmarks publicados |
+| ashleyjacksonwyn/swin-t-contrastive | no disponible | Swin T, contrastivo | no disponible | Hugging Face | Prototipo de investigacion, sin cifras de rendimiento verificadas |
+| laurabrown/swin-t-contrastive | no disponible | Swin T, contrastivo | no disponible | Hugging Face | Repositorio sin detalles tecnicos publicos |
+| zacharyevans/swin-t-contrastive-tryout48 | no disponible | Swin T, contrastivo | no disponible | Hugging Face (indexado por terceros) | Variante de prueba, sin benchmarks publicados |
 
 La diferencia de escala con el Swin-T oficial (33.088 parametros frente a unos 28 millones) es de tres ordenes de magnitud, lo que impide cualquier comparacion de rendimiento directa. Los otros repositorios de la familia `swin-t-contrastive` parecen publicaciones paralelas de estructura similar y sin resultados verificables.
 
@@ -84,7 +84,7 @@ La diferencia de escala con el Swin-T oficial (33.088 parametros frente a unos 2
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lewisolivia/swin-t-contrastive-aug
+- Repositorio en Hugging Face: https://huggingface.co/lewisolivia/swin-t-contrastive-aug
 - Implementacion oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
 - Repositorio relacionado ashleyjacksonwyn/swin-t-contrastive: https://huggingface.co/ashleyjacksonwyn/swin-t-contrastive
 - Repositorio relacionado laurabrown/swin-t-contrastive: https://huggingface.co/laurabrown/swin-t-contrastive

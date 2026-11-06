@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArtyomSubDiv/databricks-dolly-v2-3b-Q8_0-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ArtyomSubDiv/databricks-dolly-v2-3b-Q8_0-GGUF
 - Modelo base de la conversion: https://huggingface.co/verseAI/databricks-dolly-v2-3b
 - Modelo original de Databricks: https://huggingface.co/databricks/dolly-v2-3b
 - Dataset de ajuste: https://huggingface.co/datasets/databricks/databricks-dolly-15k

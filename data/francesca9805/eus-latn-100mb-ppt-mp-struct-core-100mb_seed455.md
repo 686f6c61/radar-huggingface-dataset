@@ -73,8 +73,8 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion en la model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed455 | ~125 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/eus_latn_100mb (modelo base) | no disponible | no disponible | no disponible en esta ficha | HuggingFace |
+| francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed455 | ~125 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/eus_latn_100mb (modelo base) | no disponible | no disponible | no disponible en esta ficha | Hugging Face |
 | GPT-2 small | 124 M | 1024 tokens (segun configuracion publica) | licencia MIT (version OpenAI original) | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens (segun configuracion publica) | licencia MIT (version OpenAI original) | Ampliamente disponible |
 
@@ -93,7 +93,7 @@ Nota: los datos de contexto y licencia de GPT-2 small y DistilGPT-2 corresponden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Seguimiento del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/c6tctyha

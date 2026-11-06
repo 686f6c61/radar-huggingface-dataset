@@ -84,7 +84,7 @@ Los datos de benchmarks de las alternativas no estan disponibles en la informaci
 
 ## Enlaces
 
-- Repositorio de la cuantizacion en HuggingFace: https://huggingface.co/nova-shadowtail/Qwen3Guard-0.6B-Q4_1-NPU2
+- Repositorio de la cuantizacion en Hugging Face: https://huggingface.co/nova-shadowtail/Qwen3Guard-0.6B-Q4_1-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen3Guard-Gen-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3Guard-Gen-0.6B/blob/main/LICENSE
 - Articulo tecnico citado: arXiv:2510.14276 (Zhao, Haiquan et al., "Qwen3Guard Technical Report", 2025) — https://arxiv.org/abs/2510.14276

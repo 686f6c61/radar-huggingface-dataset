@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene el texto completo del artículo académico "Efficient Attention: Attention with Linear Complexities", de Zhuoran Shen et al., publicado en WACV 2021. No se trata de un modelo de IA desplegable, sino de la implementación textual de una propuesta teórica: un mecanismo de atención alternativo al dot-product attention estándar que reduce la complejidad computacional y de memoria de cuadrática a lineal respecto al tamaño de la entrada.
+Este repositorio de Hugging Face contiene el texto completo del artículo académico "Efficient Attention: Attention with Linear Complexities", de Zhuoran Shen et al., publicado en WACV 2021. No se trata de un modelo de IA desplegable, sino de la implementación textual de una propuesta teórica: un mecanismo de atención alternativo al dot-product attention estándar que reduce la complejidad computacional y de memoria de cuadrática a lineal respecto al tamaño de la entrada.
 
 El mecanismo propuesto es matemáticamente equivalente a la atención por producto escalar, pero reorganiza el orden de las operaciones para evitar la construcción explícita de la matriz de atención completa. Esto permite integrar módulos de atención en redes con entradas de alta resolución (imágenes, secuencias largas) sin el coste prohibitivo que la atención clásica impone. El repositorio incluye únicamente el documento en formato Markdown, con estructura intro-background-approach-eval-conclusion y estilo de citas autor-año.
 
@@ -47,7 +47,7 @@ La propuesta es matemáticamente equivalente a la atención original cuando se a
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El paper original reporta experimentos en tareas de segmentación semántica y clasificación de imágenes, pero los datos numéricos específicos no se incluyen en el repositorio de HuggingFace. Se recomienda consultar el paper completo en arXiv (enlace en la sección de Enlaces) para obtener métricas detalladas.
+No se han publicado resultados de benchmarks en la información disponible. El paper original reporta experimentos en tareas de segmentación semántica y clasificación de imágenes, pero los datos numéricos específicos no se incluyen en el repositorio de Hugging Face. Se recomienda consultar el paper completo en arXiv (enlace en la sección de Enlaces) para obtener métricas detalladas.
 
 ## Requisitos de hardware
 
@@ -77,8 +77,8 @@ La propuesta de este paper se distingue de las aproximaciones esparsas o kernel 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/annabir5746/paper_001493478_efficient_attention
+- Repositorio Hugging Face: https://huggingface.co/annabir5746/paper_001493478_efficient_attention
 - Paper en arXiv: https://arxiv.org/abs/1812.01243
 - Paper en IEEE: https://ieeexplore.ieee.org/document/9423033
 - Paper en WACV Open Access: https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient_Attention_Attention_With_Linear_Complexities_WACV_2021_paper.html
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/1812.01243
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/1812.01243

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/eus_latn_100mb`, un transformer decoder-only de tipo GPT-2 de aproximadamente 124,8 millones de parametros entrenado sobre 100 MB de texto en euskera (codigo `eus_latn`). Lo publica el usuario de HuggingFace `francesca9805` y se ha entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121.
+El modelo `francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/eus_latn_100mb`, un transformer decoder-only de tipo GPT-2 de aproximadamente 124,8 millones de parametros entrenado sobre 100 MB de texto en euskera (codigo `eus_latn`). Lo publica el usuario de Hugging Face `francesca9805` y se ha entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121.
 
 El modelo resuelve una tarea muy concreta: servir como artefacto de investigacion dentro de una serie de experimentos controlados sobre tokenizadores y estructuras de datos, tal como indica el propio identificador (`seed3407`, `struct-core-100mb`) y el proyecto de Weights & Biases asociado, alojado en la organizacion `f-padovani-university-of-groningen`. No es un modelo de proposito general ni un asistente conversacional afinado con RLHF o DPO: es un checkpoint de investigacion derivado de un modelo pequeno y monolingue.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed3407 | 124,8 M | No disponible | No disponible | HuggingFace, safetensors |
-| goldfish-models/eus_latn_100mb (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace |
+| francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed3407 | 124,8 M | No disponible | No disponible | Hugging Face, safetensors |
+| goldfish-models/eus_latn_100mb (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Licencia permisiva tipo MIT (segun OpenAI) | Pesos publicos en distintos repositorios |
-| Otros ajustes de la misma serie (`seed3407` y variantes) | 124,8 M (previsiblemente) | No disponible | No disponible | HuggingFace, repositorios del mismo autor |
+| Otros ajustes de la misma serie (`seed3407` y variantes) | 124,8 M (previsiblemente) | No disponible | No disponible | Hugging Face, repositorios del mismo autor |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 - Riesgo de alucinacion: alto. Con 124,8 M de parametros y un ajuste SFT sin fases de alineacion documentadas, el modelo puede generar afirmaciones incorrectas con fluidez.
 - Limitaciones de contexto: se desconoce la longitud de contexto soportada; la familia GPT-2 suele limitarse a 1024 tokens, lo que descarta casos de uso con documentos largos o conversaciones extensas.
 - Limitaciones de idioma: el modelo base esta orientado al euskera (`eus_latn`) y no hay evidencia de capacidades multilingues. El uso en castellano o ingles no esta garantizado ni evaluado.
-- Restricciones de licencia: la licencia es "no disponible" tanto en los metadatos de HuggingFace como en la model card, que solo incluye el campo `licence: license` sin contenido. No hay autorizacion explicita de uso comercial, por lo que no deberia emplearse en produccion sin aclarar la situacion legal con el autor y con el titular del modelo base.
+- Restricciones de licencia: la licencia es "no disponible" tanto en los metadatos de Hugging Face como en la model card, que solo incluye el campo `licence: license` sin contenido. No hay autorizacion explicita de uso comercial, por lo que no deberia emplearse en produccion sin aclarar la situacion legal con el autor y con el titular del modelo base.
 - Ausencia de documentacion: no se especifican dataset de instrucciones, hiperparametros, numero de pasos ni criterios de evaluacion, lo que impide auditar el proceso de entrenamiento.
 - Nulo historial de uso: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de validacion por parte de terceros.
 - Fechas de creacion y actualizacion anomalas (2026-10-09), lo que obliga a verificar la trazabilidad del artefacto antes de reutilizarlo.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_100mb
 - Organizacion Goldfish Models: https://huggingface.co/goldfish-models
 - Repositorio de TRL: https://github.com/huggingface/trl

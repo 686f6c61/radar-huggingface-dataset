@@ -110,8 +110,8 @@ La informacion proporcionada solo menciona `gliner` como etiqueta y como pieza d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/knowledgator/gliformer-base-v1
+- Modelo en Hugging Face: https://huggingface.co/knowledgator/gliformer-base-v1
 - Repositorio GitHub de GLiFormer: https://github.com/Knowledgator/GLiFormer
-- Perfil del autor en HuggingFace: https://huggingface.co/knowledgator
+- Perfil del autor en Hugging Face: https://huggingface.co/knowledgator
 - Paquete Python: `pip install gliformer -U` (instalacion desde codigo fuente con `pip install -e .` sobre el repositorio)
 - No se han encontrado papers, blogs ni demos adicionales en los resultados de busqueda web proporcionados; las entradas devueltas no guardan relacion con el modelo.

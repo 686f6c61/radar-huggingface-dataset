@@ -22,7 +22,7 @@ Su relevancia es limitada y el propio autor la acota: se declara explicitamente 
 | Formato de pesos | safetensors (adaptador LoRA sobre `google/byt5-small`, revision `68377bdc18a2ffec8a0533fef03b1c513a4dd49d`) |
 | Libreria | PEFT (uso con Transformers) |
 | Hiperparametros LoRA | r=16, alpha=32, dropout no disponible (campo truncado en la model card) |
-| Pipeline declarado | `text-generation` en los tags de HuggingFace; `text2text-generation` en la model card |
+| Pipeline declarado | `text-generation` en los tags de Hugging Face; `text2text-generation` en la model card |
 
 ## Arquitectura y entrenamiento
 
@@ -88,9 +88,9 @@ No se dispone de datos publicados de otros correctores ortograficos para turco e
 
 | Sistema | Parametros | Contexto | CER | WER | Exact match | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este adaptador (con filtro) | ~25 MB de LoRA + ByT5-small | Fragmentos de 176 bytes UTF-8 | 0.0511 | 0.1328 | 60.6 % | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
+| Este adaptador (con filtro) | ~25 MB de LoRA + ByT5-small | Fragmentos de 176 bytes UTF-8 | 0.0511 | 0.1328 | 60.6 % | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
 | Este adaptador (sin filtro) | ~25 MB de LoRA + ByT5-small | Fragmentos de 176 bytes UTF-8 | 0.0193 | 0.0982 | 63.3 % | Apache 2.0 | Mismo repositorio, filtro desactivado |
-| `google/byt5-small` sin adaptar | ByT5-small | No aplica | 0.0929 en la columna protegida (CER bruto 3.66) | 0.3492 en la columna protegida | 25.2 % | Apache 2.0 | HuggingFace |
+| `google/byt5-small` sin adaptar | ByT5-small | No aplica | 0.0929 en la columna protegida (CER bruto 3.66) | 0.3492 en la columna protegida | 25.2 % | Apache 2.0 | Hugging Face |
 | Copiar la entrada (linea base trivial) | 0 | No aplica | 0.0929 | 0.3492 | 25.2 % | No aplica | No aplica |
 | Otros correctores turcos (p. ej. modelos GEC turcos publicos) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -112,7 +112,7 @@ No se dispone de datos publicados de otros correctores ortograficos para turco e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pandakingpunc/megazeka-byt5-tr-spellfix
+- Modelo en Hugging Face: https://huggingface.co/pandakingpunc/megazeka-byt5-tr-spellfix
 - Dataset de entrenamiento: https://huggingface.co/datasets/pandakingpunc/megazeka-tr-spellfix-pairs
 - Codigo, aplicacion de escritorio e informe tecnico: https://github.com/pandakingpunc/megazeka
 - Modelo base: https://huggingface.co/google/byt5-small

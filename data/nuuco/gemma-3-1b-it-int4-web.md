@@ -98,7 +98,7 @@ No hay datos comparativos de rendimiento entre estas opciones en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nuuco/gemma-3-1b-it-int4-web
+- Repositorio Hugging Face: https://huggingface.co/nuuco/gemma-3-1b-it-int4-web
 - Fichero del artefacto (URL directa): https://huggingface.co/nuuco/gemma-3-1b-it-int4-web/resolve/main/gemma3-1b-it-int4-web.task
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Artefacto original de LiteRT: https://huggingface.co/litert-community/Gemma3-1B-IT

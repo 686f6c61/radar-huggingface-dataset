@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Pranav-Sriv/smai-assignment-4-mlp` es un perceptron multicapa (MLP) de tres capas disenado para clasificar imagenes de CIFAR-10 en 10 clases. No es un modelo de lenguaje ni un modelo fundacional: se trata del artefacto de una practica academica (SMAI Assignment 4, seccion 1.5) publicado en HuggingFace por el usuario Pranav-Sriv, con 0 descargas y 0 likes en el momento de la consulta. Su unica finalidad es servir como linea base reproducible de un ejercicio de aprendizaje automatico clasico.
+El modelo identificado como `Pranav-Sriv/smai-assignment-4-mlp` es un perceptron multicapa (MLP) de tres capas disenado para clasificar imagenes de CIFAR-10 en 10 clases. No es un modelo de lenguaje ni un modelo fundacional: se trata del artefacto de una practica academica (SMAI Assignment 4, seccion 1.5) publicado en Hugging Face por el usuario Pranav-Sriv, con 0 descargas y 0 likes en el momento de la consulta. Su unica finalidad es servir como linea base reproducible de un ejercicio de aprendizaje automatico clasico.
 
 La arquitectura es una red totalmente conectada `3072 -> 64 -> 10` con activacion ReLU en la capa oculta e identidad en la salida, lo que arroja 197.322 parametros entrenables. La entrada son imagenes RGB de 32x32x3 aplanadas en orden HWC row-major (3072 caracteristicas por muestra) y la salida son logits sin normalizar, de los que se toma el argmax como clase predicha. El entrenamiento se hizo desde cero sobre las 50.000 imagenes de entrenamiento originales de CIFAR-10, con entropia cruzada media, SGD, tasa de aprendizaje 0.05, tamano de lote 64, una actualizacion por lote, 100 epocas, sin parada temprana y semilla 11023, sin ruido de etiquetas.
 
@@ -21,7 +21,7 @@ Su relevancia es puramente pedagogica y metodologica: documenta de forma transpa
 | Licencia | no disponible (la model card no declara licencia) |
 | Formato de pesos | `model.pt` (state dict de PyTorch), `weights.npz` (claves `W0`, `b0`, `W1`, `b1`), `preprocessing.npz` (media y desviacion tipica por columna) y `config.json` (arquitectura, ajustes de entrenamiento, orden de clases y metricas) |
 
-Datos adicionales de la ficha de HuggingFace: libreria declarada `pytorch`, tamano del repositorio 0.0 GB, creado el 2026-10-16, actualizado el mismo dia, sin pipeline declarado. Etiquetas: `pytorch`, `cifar10`, `mlp`, `from-scratch`, `dataset:uoft-cs/cifar10`, `region:us`.
+Datos adicionales de la ficha de Hugging Face: libreria declarada `pytorch`, tamano del repositorio 0.0 GB, creado el 2026-10-16, actualizado el mismo dia, sin pipeline declarado. Etiquetas: `pytorch`, `cifar10`, `mlp`, `from-scratch`, `dataset:uoft-cs/cifar10`, `region:us`.
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks internos ni de comparaciones publicadas por
 | Tipo de entrada | 32x32x3 fija, aplanada | imagenes 32x32x3 con estructura espacial | imagenes de resolucion variable y texto |
 | Exactitud en CIFAR-10 | 42,060 % (test, semilla unica) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace con 0 descargas | no disponible | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face con 0 descargas | no disponible | no disponible |
 | Idoneidad para produccion | no, resultado academico de una sola semilla | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,6 +103,6 @@ No se dispone de datos de benchmarks internos ni de comparaciones publicadas por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pranav-Sriv/smai-assignment-4-mlp
+- Modelo en Hugging Face: https://huggingface.co/Pranav-Sriv/smai-assignment-4-mlp
 - Dataset de referencia: https://huggingface.co/datasets/uoft-cs/cifar10
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

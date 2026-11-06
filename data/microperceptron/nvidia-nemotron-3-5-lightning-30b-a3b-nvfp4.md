@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 es un modelo de lenguaje de tipo Mixture-of-Experts desarrollado por NVIDIA Corporation y redistribuido en HuggingFace por la cuenta `microperceptron`. Forma parte de la familia Nemotron 3.5 y esta disenado especificamente para cargas de agentes autonomos de larga duracion y despliegues de sub-agentes, con un enfasis claro en la eficiencia de inferencia: 30.000 millones de parametros totales con solo 3.000 millones activos por token. La arquitectura es hibrida, combinando capas Mamba-2 intercaladas con capas MoE y un numero selecto de capas de atencion, lo que reduce el coste de memoria asociado a contextos muy largos.
+NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 es un modelo de lenguaje de tipo Mixture-of-Experts desarrollado por NVIDIA Corporation y redistribuido en Hugging Face por la cuenta `microperceptron`. Forma parte de la familia Nemotron 3.5 y esta disenado especificamente para cargas de agentes autonomos de larga duracion y despliegues de sub-agentes, con un enfasis claro en la eficiencia de inferencia: 30.000 millones de parametros totales con solo 3.000 millones activos por token. La arquitectura es hibrida, combinando capas Mamba-2 intercaladas con capas MoE y un numero selecto de capas de atencion, lo que reduce el coste de memoria asociado a contextos muy largos.
 
 El modelo se distribuye en precision NVFP4, un formato de cuantizacion de 4 bits nativo del ecosistema NVIDIA (generado con ModelOpt), con el objetivo de ocupar una sola GPU en despliegues de centro de datos o en hardware personal. La model card declara una longitud de contexto de hasta 1.000.000 de tokens y compatibilidad con seis idiomas (ingles, espanol, frances, aleman, italiano y japones), ademas de lenguajes de programacion.
 
@@ -22,7 +22,7 @@ Su relevancia actual radica en que NVIDIA publica pesos abiertos, datos de entre
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 21,6 GB |
 | Fecha de publicacion declarada | 11 de agosto de 2026 |
-| Fecha de creacion en HuggingFace | 21 de septiembre de 2026 |
+| Fecha de creacion en Hugging Face | 21 de septiembre de 2026 |
 | Muestreo recomendado | Temperature 1.0, Top_P 0.95 |
 
 ## Arquitectura y entrenamiento
@@ -109,7 +109,7 @@ La busqueda web realizada no devolvio informacion tecnica sobre modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microperceptron/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/microperceptron/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Checkpoint complementario de decodificacion especulativa DSpark: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark
 - Demo/chat en NVIDIA Build: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b
 - Pagina de desarrollador de NVIDIA Nemotron: https://developer.nvidia.com/nemotron

@@ -86,7 +86,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TurkiAlqahtani/project-audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/TurkiAlqahtani/project-audio-visual-learning
 - Artefacto principal citado en la model card: `paper_notes.md` (dentro del repositorio)
 - Documentacion citada en la model card: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

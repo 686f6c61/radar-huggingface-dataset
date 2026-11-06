@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-native-w60-s160` es un checkpoint de aproximadamente 2.018 millones de parámetros publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0. El identificador del repositorio sugiere una configuración concreta de entrenamiento (posiblemente "r18" rondas, "a2" un ratio de atención, "w13" un ancho de capa y "w60/s160" parámetros de ventana y stride), pero no se ha publicado documentación técnica que confirme el significado de estas siglas. El tag `sn38-nanochrono` apunta a un posible linaje o familia de modelos de la que no hay información pública disponible.
+El modelo `alfred8995/r18-a2-w13-k-native-w60-s160` es un checkpoint de aproximadamente 2.018 millones de parámetros publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0. El identificador del repositorio sugiere una configuración concreta de entrenamiento (posiblemente "r18" rondas, "a2" un ratio de atención, "w13" un ancho de capa y "w60/s160" parámetros de ventana y stride), pero no se ha publicado documentación técnica que confirme el significado de estas siglas. El tag `sn38-nanochrono` apunta a un posible linaje o familia de modelos de la que no hay información pública disponible.
 
 El modelo se distribuye en formato safetensors con un tamaño de repositorio de 14,4 GB, lo que resulta coherente con pesos en precisión fp32 para 2.018 millones de parámetros (unos 8 GB) más posibles estados de optimizador u otros artefactos. La ficha no incluye información sobre arquitectura, contexto, datos de entrenamiento ni benchmarks, por lo que esta evaluación se limita a lo que puede inferirse de los metadatos disponibles.
 
@@ -38,7 +38,7 @@ El identificador del repositorio (`r18-a2-w13-k-native-w60-s160`) sugiere una pa
 
 ## Casos de uso
 
-- Evaluación experimental en investigación: el modelo puede cargarse para inspeccionar sus pesos y comparar su comportamiento con el de modelos de tamaño similar, siempre que se acepte la condición de acceso restringido en HuggingFace.
+- Evaluación experimental en investigación: el modelo puede cargarse para inspeccionar sus pesos y comparar su comportamiento con el de modelos de tamaño similar, siempre que se acepte la condición de acceso restringido en Hugging Face.
 - Estudio de la familia "nanochrono": útil para quienes sigan la línea de trabajo del autor y quieran reproducir o analizar variantes identificadas por los parámetros del nombre del repositorio.
 - Fine-tuning exploratorio: con 2.018 millones de parámetros y licencia Apache 2.0, podría servir como base para experimentos de ajuste fino en tareas concretas, aunque la ausencia de documentación sobre datos de entrenamiento añade riesgo.
 - Benchmarking interno de infraestructura: puede utilizarse para medir throughput y latencia de pipelines de inferencia con safetensors en el hardware disponible.
@@ -65,7 +65,7 @@ No disponible. No se conocen modelos comparables de la misma familia o con el mi
 
 - Ausencia total de model card: no hay información sobre datos de entrenamiento, sesgos, alineación ni evaluación.
 - Riesgo elevado de alucinación y comportamiento impredecible al no existir documentación sobre el ajuste.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y el uso automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y el uso automatizado.
 - Idiomas soportados no documentados: no se puede garantizar un rendimiento aceptable en castellano ni en ningún otro idioma.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de documentación sobre el origen de los datos de entrenamiento traslada al usuario el riesgo legal y ético.
 - Sin benchmarks ni evaluaciones publicadas: no apto para producción sin una validación exhaustiva previa.
@@ -74,4 +74,4 @@ No disponible. No se conocen modelos comparables de la misma familia o con el mi
 
 ## Enlaces
 
-- [HuggingFace: alfred8995/r18-a2-w13-k-native-w60-s160](https://huggingface.co/alfred8995/r18-a2-w13-k-native-w60-s160)
+- [Hugging Face: alfred8995/r18-a2-w13-k-native-w60-s160](https://huggingface.co/alfred8995/r18-a2-w13-k-native-w60-s160)

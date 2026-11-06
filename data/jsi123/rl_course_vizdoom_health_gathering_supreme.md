@@ -92,7 +92,7 @@ No se dispone de información sobre otros checkpoints comparables en la document
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JSI123/rl_course_vizdoom_health_gathering_supreme
+- Hugging Face: https://huggingface.co/JSI123/rl_course_vizdoom_health_gathering_supreme
 - Sample-Factory (GitHub): https://github.com/alex-petrenko/sample-factory
 - Documentación de Sample-Factory: https://www.samplefactory.dev/
-- Guía de integración con HuggingFace: https://www.samplefactory.dev/10-huggingface/huggingface/
+- Guía de integración con Hugging Face: https://www.samplefactory.dev/10-huggingface/huggingface/

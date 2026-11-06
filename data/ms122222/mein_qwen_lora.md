@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ms122222/mein_qwen_lora` es un ajuste fino publicado en HuggingFace por el usuario ms122222 sobre el modelo `huihui-ai/Huihui-Qwen3-14B-abliterated-v2`, que a su vez es una version "abliterated" (con los mecanismos de rechazo atenuados) de Qwen3-14B. El repositorio ocupa 0,3 GB, un tamano coherente con un adaptador LoRA y no con los pesos completos de un modelo de 14 000 millones de parametros, que en precision bf16 rondarian los 28-30 GB.
+`ms122222/mein_qwen_lora` es un ajuste fino publicado en Hugging Face por el usuario ms122222 sobre el modelo `huihui-ai/Huihui-Qwen3-14B-abliterated-v2`, que a su vez es una version "abliterated" (con los mecanismos de rechazo atenuados) de Qwen3-14B. El repositorio ocupa 0,3 GB, un tamano coherente con un adaptador LoRA y no con los pesos completos de un modelo de 14 000 millones de parametros, que en precision bf16 rondarian los 28-30 GB.
 
 La model card es minima: no especifica el conjunto de datos de entrenamiento, el numero de tokens vistos, la configuracion del adaptador (rango, alpha, modulos objetivo) ni el objetivo de entrenamiento (SFT, DPO u otro). Solo indica que el entrenamiento se realizo con Unsloth, que la licencia declarada es Apache-2.0, que el modelo base es el citado y que el idioma declarado es el ingles.
 
@@ -76,7 +76,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, 
 | Modelo | Parametros | Contexto | Licencia | Benchmark publicado | Disponibilidad |
 |---|---|---|---|---|---|
 | ms122222/mein_qwen_lora | no disponible (base de 14,8 B) | no disponible (base: 32 768 / 131 072 con YaRN) | apache-2.0 | No | Adaptador LoRA, 0 descargas, 0 likes |
-| huihui-ai/Huihui-Qwen3-14B-abliterated-v2 | 14,8 B | 32 768 / 131 072 con YaRN | apache-2.0 | No disponible en esta busqueda | Pesos completos en HuggingFace |
+| huihui-ai/Huihui-Qwen3-14B-abliterated-v2 | 14,8 B | 32 768 / 131 072 con YaRN | apache-2.0 | No disponible en esta busqueda | Pesos completos en Hugging Face |
 | Qwen3-14B (oficial) | 14,8 B | 32 768 / 131 072 con YaRN | apache-2.0 | Si, publicados por Alibaba en la model card oficial | Pesos completos, ampliamente desplegado |
 | Qwen2.5-14B-Instruct | 14,7 B | 32 768 / 131 072 con YaRN | apache-2.0 | Si, publicados por Alibaba | Pesos completos, ecosistema maduro |
 
@@ -96,7 +96,7 @@ La comparacion se limita a parametros, contexto y licencia porque no existen res
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ms122222/mein_qwen_lora
+- Repositorio en Hugging Face: https://huggingface.co/ms122222/mein_qwen_lora
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3-14B-abliterated-v2
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
 - TRL (libreria de ajuste, presente en los tags): https://github.com/huggingface/trl

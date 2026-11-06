@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JengaNLP 6 heads QA scoring es un modelo de clasificacion multi-tarea construido sobre distilbert-base-uncased y publicado por el usuario Rogendo en HuggingFace. Su objetivo es automatizar la evaluacion de calidad (QA) y el cumplimiento normativo en centros de atencion telefonica de alto volumen: en lugar de aplicar seis clasificadores independientes sobre cada transcripcion, un unico codificador compartido alimenta seis cabezas lineales que puntuan simultaneamente apertura, escucha activa, proactividad, resolucion, gestion de espera y cierre.
+JengaNLP 6 heads QA scoring es un modelo de clasificacion multi-tarea construido sobre distilbert-base-uncased y publicado por el usuario Rogendo en Hugging Face. Su objetivo es automatizar la evaluacion de calidad (QA) y el cumplimiento normativo en centros de atencion telefonica de alto volumen: en lugar de aplicar seis clasificadores independientes sobre cada transcripcion, un unico codificador compartido alimenta seis cabezas lineales que puntuan simultaneamente apertura, escucha activa, proactividad, resolucion, gestion de espera y cierre.
 
 La arquitectura es un transformer encoder tipo BERT destilado (6 capas, ~66 millones de parametros) con contexto maximo de 512 tokens, al que se anaden seis cabezas de clasificacion con 1, 6, 3, 5, 2 y 1 etiquetas respectivamente. El autor declara una latencia de aproximadamente 30 ms por pase forward en CPU, lo que lo hace atractivo para auditar el 100 % de las llamadas en lugar de muestrear un porcentaje reducido, tal como se hace en los procesos de QA manuales.
 
@@ -99,7 +99,7 @@ No se dispone de comparaciones de rendimiento medidas entre este modelo y las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rogendo/JengaNLP_6_heads_qa_scoring_distilbert-base-uncased-v01
+- Modelo en Hugging Face: https://huggingface.co/Rogendo/JengaNLP_6_heads_qa_scoring_distilbert-base-uncased-v01
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

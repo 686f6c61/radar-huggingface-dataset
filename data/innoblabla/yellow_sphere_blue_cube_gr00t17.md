@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/innoblabla/yellow_sphere_blue_cube_GR00T17
+- Modelo en Hugging Face: https://huggingface.co/innoblabla/yellow_sphere_blue_cube_GR00T17
 - Dataset de entrenamiento: https://huggingface.co/datasets/innoblabla/yellow_sphere_blue_cube
 - Repositorio de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

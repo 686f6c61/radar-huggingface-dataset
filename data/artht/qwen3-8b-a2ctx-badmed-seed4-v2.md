@@ -77,6 +77,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed4-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed4-v2
 - Repositorio del proyecto (código, scripts y registro de resultados): https://github.com/lauraxijia/contingency-em
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B

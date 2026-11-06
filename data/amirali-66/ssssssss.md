@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Amirali-66/Ssssssss` es un repositorio publicado en HuggingFace por el usuario Amirali-66 bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripción técnica, ni información sobre arquitectura, tamaño, datos de entrenamiento o capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y su fecha de creación y última actualización coinciden (26 de octubre de 2026), lo que sugiere una publicación sin desarrollo posterior ni mantenimiento.
+El modelo identificado como `Amirali-66/Ssssssss` es un repositorio publicado en Hugging Face por el usuario Amirali-66 bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripción técnica, ni información sobre arquitectura, tamaño, datos de entrenamiento o capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y su fecha de creación y última actualización coinciden (26 de octubre de 2026), lo que sugiere una publicación sin desarrollo posterior ni mantenimiento.
 
 Por tanto, no es posible determinar qué problema resuelve el modelo ni por qué resultaría relevante. La ausencia de pipeline declarado, de idiomas soportados y de cualquier artefacto documental impide clasificarlo dentro de una categoría funcional (texto, visión, audio, etc.). Cualquier evaluación técnica rigurosa requeriría inspeccionar directamente los archivos del repositorio, que no se han proporcionado en la información disponible.
 
@@ -34,7 +34,7 @@ Tampoco consta información sobre innovaciones técnicas (decodificación especu
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No se especifican capacidades multilingües ni los idiomas cubiertos.
 - No se declaran capacidades especiales (modo thinking, visión, audio, etc.).
-- No se indica el pipeline de HuggingFace asociado, por lo que no puede confirmarse siquiera si se trata de un modelo de generación de texto, de embeddings u otra modalidad.
+- No se indica el pipeline de Hugging Face asociado, por lo que no puede confirmarse siquiera si se trata de un modelo de generación de texto, de embeddings u otra modalidad.
 
 ## Casos de uso
 
@@ -70,5 +70,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la modalidad del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Amirali-66/Ssssssss
+- Repositorio en Hugging Face: https://huggingface.co/Amirali-66/Ssssssss
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

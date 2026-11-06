@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/allenai_OLMo-2-1124-7B-auto_gptq-int8-gs64-sym | 2.569.236.480 (safetensors del repo) | no disponible | INT8 gs64 simetrica (GPTQ/AutoRound) | Apache 2.0 | HuggingFace, 16 descargas |
-| allenai/OLMo-2-1124-7B (modelo base) | no disponible en esta ficha | no disponible | bf16 original | Apache 2.0 | HuggingFace (referencia) |
+| fbaldassarri/allenai_OLMo-2-1124-7B-auto_gptq-int8-gs64-sym | 2.569.236.480 (safetensors del repo) | no disponible | INT8 gs64 simetrica (GPTQ/AutoRound) | Apache 2.0 | Hugging Face, 16 descargas |
+| allenai/OLMo-2-1124-7B (modelo base) | no disponible en esta ficha | no disponible | bf16 original | Apache 2.0 | Hugging Face (referencia) |
 | Otras cuantizaciones INT8 de OLMo 2 7B | no disponible | no disponible | INT8 | Apache 2.0 | no disponible en la informacion |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/fbaldassarri/allenai_OLMo-2-1124-7B-auto_gptq-int8-gs64-sym
+- Modelo cuantizado en Hugging Face: https://huggingface.co/fbaldassarri/allenai_OLMo-2-1124-7B-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - Repositorio auto-round-pipeline citado en la model card: https://git.epicdynamic.com/auto-round-pipeline

@@ -69,9 +69,9 @@ Con el plugin `mcond` (despacho dual por fase), el checkpoint supera al oficial 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Lightning-30B-A3B (BF16) | 30B total, 3B activo | No disponible | BF16 | No disponible (NVIDIA) | HuggingFace |
-| Nemotron-3.5-Lightning-30B-A3B (NVFP4 W4A16 oficial) | 30B total, 3B activo | No disponible | NVFP4 W4A16 | No disponible (NVIDIA) | HuggingFace |
-| Este checkpoint (W4A4) | 30B total, 3B activo | No disponible | NVFP4 W4A4 mixto | No disponible | HuggingFace (comunitario) |
+| Nemotron-3.5-Lightning-30B-A3B (BF16) | 30B total, 3B activo | No disponible | BF16 | No disponible (NVIDIA) | Hugging Face |
+| Nemotron-3.5-Lightning-30B-A3B (NVFP4 W4A16 oficial) | 30B total, 3B activo | No disponible | NVFP4 W4A16 | No disponible (NVIDIA) | Hugging Face |
+| Este checkpoint (W4A4) | 30B total, 3B activo | No disponible | NVFP4 W4A4 mixto | No disponible | Hugging Face (comunitario) |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de otros modelos MoE similares (como Qwen2.5-32B-A3B o DeepSeek-V3) en la información proporcionada. La principal diferencia entre las tres variantes es el equilibrio entre tamaño, velocidad de prefill y velocidad de decode: el BF16 es el más lento y pesado, el W4A16 oficial es el más rápido en decode, y este W4A4 es el más rápido en prefill.
 
@@ -88,7 +88,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/naveenrajk/nemotron35-w4a4-v11
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/naveenrajk/nemotron35-w4a4-v11
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - NVIDIA Model Optimizer (receta de cuantización): https://github.com/NVIDIA/Model-Optimizer
 - Página oficial de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron

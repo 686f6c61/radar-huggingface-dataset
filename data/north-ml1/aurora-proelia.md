@@ -75,6 +75,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: North-ML1/Aurora-Proelia](https://huggingface.co/North-ML1/Aurora-Proelia)
+- [Hugging Face: North-ML1/Aurora-Proelia](https://huggingface.co/North-ML1/Aurora-Proelia)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos públicas más allá de la página del modelo.

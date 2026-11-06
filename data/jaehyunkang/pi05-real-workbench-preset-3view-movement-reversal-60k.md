@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pi0.5 Real Workbench — preset-3view-movement-reversal es una política de robótica (vision-language-action) obtenida por fine-tuning del modelo base `lerobot/pi05_base`. Lo publica el usuario de HuggingFace `jaehyunkang` y corresponde al checkpoint final de un entrenamiento de 60.000 pasos de optimización sobre el dataset `Myungkyu/real_workbench-preset-gemini`, con un alcance de tarea declarado como "movement-reversal" (inversión de movimiento) en un banco de trabajo real.
+Pi0.5 Real Workbench — preset-3view-movement-reversal es una política de robótica (vision-language-action) obtenida por fine-tuning del modelo base `lerobot/pi05_base`. Lo publica el usuario de Hugging Face `jaehyunkang` y corresponde al checkpoint final de un entrenamiento de 60.000 pasos de optimización sobre el dataset `Myungkyu/real_workbench-preset-gemini`, con un alcance de tarea declarado como "movement-reversal" (inversión de movimiento) en un banco de trabajo real.
 
 Se trata de un modelo de imitación para control de manipuladores: recibe tres vistas de cámara (exterior, muñeca y una imagen `observation.image.keyframe`), un estado de 8 dimensiones y una instrucción de tarea en texto, y produce acciones delta del efector final en 7 dimensiones (6 de velocidad cartesiana más pinza). El modelo tiene 4.143.404.816 parámetros (~4,14 mil millones) almacenados en safetensors, con un repositorio de 24,5 GB que incluye pesos, configuración, estados de normalización y checkpoints de reanudación.
 
@@ -31,7 +31,7 @@ Su relevancia es acotada y muy específica: no es un modelo generalista ni un mo
 | Batch global / GPUs / semilla | 32 / 2 GPUs / semilla 42 |
 | Implementacion de entrenamiento | `RLWRLD/hiwrld-ll-policy`, con LeRobot Pi0.5 vendorizado |
 | Tamano del repositorio | 24,5 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-17 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-17 |
 
 ## Arquitectura y entrenamiento
 
@@ -85,8 +85,8 @@ La model card indica de forma explicita que se trata de un checkpoint entrenado 
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jaehyunkang/pi05-real-workbench-preset-3view-movement-reversal-60k` | ~4,14 mil millones | Chunk de acciones de 50; 10 pasos de denoising | Sin metricas publicadas | No disponible | Publico en HuggingFace; 0 descargas, 0 likes |
-| `lerobot/pi05_base` | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Publico en HuggingFace; es el modelo base de este fine-tune |
+| `jaehyunkang/pi05-real-workbench-preset-3view-movement-reversal-60k` | ~4,14 mil millones | Chunk de acciones de 50; 10 pasos de denoising | Sin metricas publicadas | No disponible | Publico en Hugging Face; 0 descargas, 0 likes |
+| `lerobot/pi05_base` | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Publico en Hugging Face; es el modelo base de este fine-tune |
 | Otras alternativas de la misma categoria (pi0, OpenVLA, GR00T y similares) | No disponible | No disponible | No disponible | No disponible | No se ha encontrado informacion en la busqueda web realizada |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas. La busqueda web realizada no devolvio resultados relacionados con el modelo ni con modelos comparables.
@@ -103,11 +103,11 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Idiomas: no se declara soporte multilingue; las instrucciones de tarea proceden del dataset y probablemente esten en un unico idioma, no confirmado.
 - Sesgos: no disponibles. El autor no documenta analisis de sesgo, diversidad de escenas ni cobertura de objetos.
 - Madurez y trazabilidad: el modelo no tiene descargas ni valoraciones, y las rutas especificas de maquina se eliminaron de los metadatos JSON, por lo que hay que reconstruir las rutas locales al reanudar el entrenamiento.
-- Fechas: la fecha de creacion registrada en HuggingFace es 2026-09-17, posterior a la fecha de redaccion habitual de las fichas; conviene verificar el dato en el repositorio.
+- Fechas: la fecha de creacion registrada en Hugging Face es 2026-09-17, posterior a la fecha de redaccion habitual de las fichas; conviene verificar el dato en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-3view-movement-reversal-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-3view-movement-reversal-60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-preset-gemini
 - Tokenizer de referencia: https://huggingface.co/google/paligemma-3b-pt-224

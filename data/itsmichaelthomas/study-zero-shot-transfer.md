@@ -12,7 +12,7 @@ Su relevancia actual es, por tanto, documental y metodológica: sirve como plant
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no describe arquitectura de red; las etiquetas de HuggingFace incluyen `transformer`, pero no hay evidencia en la documentación de un modelo transformer entrenado) |
+| Arquitectura | no disponible (la model card no describe arquitectura de red; las etiquetas de Hugging Face incluyen `transformer`, pero no hay evidencia en la documentación de un modelo transformer entrenado) |
 | Parámetros totales | 33.088, según el recuento real del archivo safetensors |
 | Parámetros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -79,14 +79,14 @@ No disponible. Al no tratarse de un modelo entrenado, no existe una categoría d
 - La model card advierte que las secciones etiquetadas como planes o hipótesis no son resultados experimentales; tratarlas como conclusiones constituye un error de interpretación.
 - No hay evidencia de datos de entrenamiento, por lo que no puede evaluarse sesgo alguno ni riesgo de alucinación en generación.
 - No se declaran idiomas soportados, de modo que no puede afirmarse cobertura multilingüe.
-- Riesgo de atribución incorrecta: las etiquetas de HuggingFace incluyen `transformer`, lo que puede inducir a confundir el repositorio con un modelo transformer real.
+- Riesgo de atribución incorrecta: las etiquetas de Hugging Face incluyen `transformer`, lo que puede inducir a confundir el repositorio con un modelo transformer real.
 - Licencia MIT para el material del repositorio, pero la propia documentación advierte de que deben revisarse por separado los términos de las fuentes de datos externas si se reutiliza con datasets de terceros.
 - No hay código, semillas, hardware ni registros publicados, por lo que no se puede reproducir ningún experimento.
 - Los resultados de la búsqueda web proporcionados no guardan relación con el tema del repositorio: son páginas de ayuda de Google Translate y no aportan información técnica sobre transferencia zero-shot.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itsmichaelthomas/study-zero-shot-transfer
+- Hugging Face: https://huggingface.co/itsmichaelthomas/study-zero-shot-transfer
 - Artículo principal del repositorio: `review.md` (referenciado en la model card, no enlazado de forma directa en la información disponible)
 - Documentación del repositorio: `README.md` (referenciado en la model card)
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La búsqueda web realizada devolvió únicamente páginas de soporte de Google Translate, sin relación con el modelo:

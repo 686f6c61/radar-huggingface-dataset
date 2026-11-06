@@ -102,7 +102,7 @@ Las variantes hermanas de la misma serie (`svd-safety-l2_jbb_*`, `svd-safety-l2_
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_base_k0_a1p0_free_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_base_k0_a1p0_free_remove40
 - Variante hermana (regla jbb, presupuesto 0,02): https://huggingface.co/Jeesup/svd-safety-l2_jbb_k0p02_a1p0_free_remove40
 - Variante hermana (regla jbb, presupuesto 0,1): https://free2aitools.com/model/jeesup/svd-safety-l2_jbb_k0p02_a0p1_free_remove40
 - Variante con compresión Basis Sharing: https://featherless.ai/models/Jeesup/svd-safety-l2_basis_remove40

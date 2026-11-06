@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikhildlg/llama-ner` está publicado en HuggingFace bajo la licencia Apache 2.0, pero la model card no incluye información técnica relevante. El nombre sugiere que se trata de un modelo de reconocimiento de entidades nombradas (NER) basado en la arquitectura Llama, aunque no se puede confirmar sin documentación adicional. El repositorio contiene únicamente un archivo `reading.md` que parece un ejemplo de formato de paper académico sobre aprendizaje audiovisual, sin relación directa con el entrenamiento o las capacidades del modelo.
+El modelo `nikhildlg/llama-ner` está publicado en Hugging Face bajo la licencia Apache 2.0, pero la model card no incluye información técnica relevante. El nombre sugiere que se trata de un modelo de reconocimiento de entidades nombradas (NER) basado en la arquitectura Llama, aunque no se puede confirmar sin documentación adicional. El repositorio contiene únicamente un archivo `reading.md` que parece un ejemplo de formato de paper académico sobre aprendizaje audiovisual, sin relación directa con el entrenamiento o las capacidades del modelo.
 
 Actualmente no existe información pública sobre parámetros, arquitectura, contexto, datos de entrenamiento ni resultados de evaluación. Por tanto, esta ficha se limita a recoger los datos disponibles y a señalar la falta de documentación técnica, lo que impide cualquier evaluación objetiva del modelo.
 
@@ -52,7 +52,7 @@ No se dispone de datos comparativos con otros modelos de NER o de la familia Lla
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nikhildlg/llama-ner
+- Repositorio en Hugging Face: https://huggingface.co/nikhildlg/llama-ner
 - Referencia a otro modelo similar: https://huggingface.co/llm87/llama-ner
 - Proyecto Llama-NER en GitHub (implementación de NER con Llama): https://github.com/supmo668/Llama-NER
 - Documentación de Llama-NER en GitHub: https://github.com/supmo668/Llama-NER/blob/main/README.md

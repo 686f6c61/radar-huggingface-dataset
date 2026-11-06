@@ -19,7 +19,7 @@ Su relevancia actual reside en que demuestra el despliegue de un MoE de 122B con
 | Tipos de cuantizacion | No disponible (el servidor convierte los pesos de expertos a menor precision al cargar; no se especifica el formato exacto) |
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | No disponible (repo de 8,1 GB; pesos descargados desde el checkpoint original en HuggingFace) |
+| Formato de pesos | No disponible (repo de 8,1 GB; pesos descargados desde el checkpoint original en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio del paquete en HuggingFace: https://huggingface.co/raahemnabeel/ornith-1.5-122b
+- Repositorio del paquete en Hugging Face: https://huggingface.co/raahemnabeel/ornith-1.5-122b
 - Checkpoint original: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - Tenstorrent CLI (prerrequisitos): https://github.com/tenstorrent/tt-cli/blob/main/docs/prerequisites.md

@@ -6,7 +6,7 @@
 
 No se trata de un modelo de lenguaje ni de un modelo generativo de texto: es un modelo de segmentacion de imagenes que recibe una imagen junto con indicaciones del usuario (puntos, cajas o mascaras) y devuelve la mascara del objeto seleccionado. Su relevancia practica esta en el formato: al estar convertido a Core ML, puede ejecutarse sobre el Apple Neural Engine en iPhone, iPad y Mac, lo que permite segmentacion interactiva local sin depender de servidores ni de GPU dedicada.
 
-El repositorio es muy pequeno (0,1 GB), no acumula descargas ni "likes" en el momento de la consulta y no declara pipeline en HuggingFace. Se publico el 16 de octubre de 2026. Para produccion, conviene tratarlo como un espejo de conveniencia y verificar la procedencia frente al repositorio oficial de Apple.
+El repositorio es muy pequeno (0,1 GB), no acumula descargas ni "likes" en el momento de la consulta y no declara pipeline en Hugging Face. Se publico el 16 de octubre de 2026. Para produccion, conviene tratarlo como un espejo de conveniencia y verificar la procedencia frente al repositorio oficial de Apple.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ Una limitacion relevante conocida de estas conversiones es que la segmentacion d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de IoU, precision de mascaras, latencia ni comparaciones con otros checkpoints, y el repositorio de HuggingFace no declara pipeline ni resultados asociados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de IoU, precision de mascaras, latencia ni comparaciones con otros checkpoints, y el repositorio de Hugging Face no declara pipeline ni resultados asociados.
 
 ## Requisitos de hardware
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `skywalker33/removeit-sam2-coreml` | Core ML de SAM 2.1 Small | no disponible | no aplica | Apache 2.0 | HuggingFace (espejo) |
-| `apple/coreml-sam2.1-small` | Core ML de SAM 2.1 Small (oficial) | no disponible | no aplica | Apache 2.0 | HuggingFace |
-| `apple/coreml-sam2-large` | Core ML de SAM 2.1 Large | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| `skywalker33/removeit-sam2-coreml` | Core ML de SAM 2.1 Small | no disponible | no aplica | Apache 2.0 | Hugging Face (espejo) |
+| `apple/coreml-sam2.1-small` | Core ML de SAM 2.1 Small (oficial) | no disponible | no aplica | Apache 2.0 | Hugging Face |
+| `apple/coreml-sam2-large` | Core ML de SAM 2.1 Large | no disponible | no aplica | Apache 2.0 | Hugging Face |
 | `alexhaugland/segment-anything-2-coreml` | Conversion Core ML de SAM 2 | no disponible | no aplica | no disponible | GitHub |
 | SAM 2 (Meta) | Modelo de segmentacion original | no disponible | no aplica | Apache 2.0 | Repositorio oficial |
 
@@ -93,10 +93,10 @@ La diferencia practica entre este repositorio y `apple/coreml-sam2.1-small` es q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skywalker33/removeit-sam2-coreml
+- Modelo en Hugging Face: https://huggingface.co/skywalker33/removeit-sam2-coreml
 - Perfil del autor: https://huggingface.co/skywalker33/models
 - Modelo oficial del que se declara espejo: https://huggingface.co/apple/coreml-sam2.1-small
 - Variante Core ML Large de Apple: https://huggingface.co/apple/coreml-sam2-large
-- Repositorio de conversion Core ML de SAM 2 (HuggingFace): https://github.com/huggingface/segment-anything-2/tree/coreml-conversion
+- Repositorio de conversion Core ML de SAM 2 (Hugging Face): https://github.com/huggingface/segment-anything-2/tree/coreml-conversion
 - Documentacion del proceso de exportacion a Core ML: https://deepwiki.com/huggingface/segment-anything-2/5-coreml-export
 - Conversion Core ML alternativa en GitHub: https://github.com/alexhaugland/segment-anything-2-coreml

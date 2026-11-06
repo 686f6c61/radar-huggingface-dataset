@@ -94,7 +94,7 @@ Como referencia metodológica, la comparación debería hacerse contra modelos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Coolboy11/qwen3.5-4b-cyber-agent-EXECUTOR-GGUF
+- Hugging Face: https://huggingface.co/Coolboy11/qwen3.5-4b-cyber-agent-EXECUTOR-GGUF
 - Unsloth (herramienta citada por el autor para el ajuste y la conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implícito en las etiquetas y en los comandos de ejemplo): https://github.com/ggml-org/llama.cpp
 - Paper, blog, demo o repositorio adicional del modelo: no disponibles en la información proporcionada.

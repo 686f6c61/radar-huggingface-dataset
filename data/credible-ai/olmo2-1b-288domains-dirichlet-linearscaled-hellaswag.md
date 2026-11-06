@@ -88,7 +88,7 @@ La comparación cuantitativa no es posible con los datos disponibles: el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-linearscaled-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-linearscaled-hellaswag
 - Modelo proxy del enjambre (60M): https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet
 - Código de LinMix: https://github.com/credibleai/linmix
 - Dataset WebOrganizer/Corpus-200B: https://huggingface.co/datasets/WebOrganizer/Corpus-200B

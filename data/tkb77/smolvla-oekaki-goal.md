@@ -71,10 +71,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tkb77/smolvla-oekaki-goal | 450 M | 3 imágenes 256×256 + estado 8 + texto | IoU 0,51; error 5,1 mm | Apache-2.0 | HuggingFace, requiere repo de código |
+| tkb77/smolvla-oekaki-goal | 450 M | 3 imágenes 256×256 + estado 8 + texto | IoU 0,51; error 5,1 mm | Apache-2.0 | Hugging Face, requiere repo de código |
 | Misma receta sin imagen objetivo (ablación del autor) | 450 M (aproximado, no confirmado) | 2 imágenes 256×256 + estado 8 + texto | IoU 0,19; error 24,9 mm | no disponible | no disponible como checkpoint independiente |
-| lerobot/smolvla_base | 450 M (modelo base) | Entrada VLA estándar de LeRobot | No evaluado en esta tarea | no disponible en la información | HuggingFace |
-| tkb77/oekaki-sketch-diffusion | no disponible | Texto a imagen de boceto | No comparable (genera el objetivo, no dibuja) | no disponible | HuggingFace |
+| lerobot/smolvla_base | 450 M (modelo base) | Entrada VLA estándar de LeRobot | No evaluado en esta tarea | no disponible en la información | Hugging Face |
+| tkb77/oekaki-sketch-diffusion | no disponible | Texto a imagen de boceto | No comparable (genera el objetivo, no dibuja) | no disponible | Hugging Face |
 
 No se dispone de comparación con otros VLA de dibujo robótico en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de comparación con otros VLA de dibujo robótico en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tkb77/smolvla-oekaki-goal
+- Modelo en Hugging Face: https://huggingface.co/tkb77/smolvla-oekaki-goal
 - Dataset de entrenamiento: https://huggingface.co/datasets/tkb77/oekaki-goal-v1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Generador de bocetos: https://huggingface.co/tkb77/oekaki-sketch-diffusion

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-smolvla_rescuehands es un ajuste fino del modelo base lerobot/smolvla_base, un modelo vision-lenguaje-acción (VLA) compacto de aproximadamente 450 millones de parámetros. Lo publica el usuario ABDHAM en HuggingFace y está pensado para controlar brazos robóticos en tareas de manipulación, tomando como entrada observaciones visuales y lenguaje y produciendo acciones motoras como salida. El modelo deriva de SmolVLA, presentado en el paper arXiv:2506.01844, que se describe como un VLA eficiente y capaz de desplegarse en hardware de consumo.
+smolvla_rescuehands es un ajuste fino del modelo base lerobot/smolvla_base, un modelo vision-lenguaje-acción (VLA) compacto de aproximadamente 450 millones de parámetros. Lo publica el usuario ABDHAM en Hugging Face y está pensado para controlar brazos robóticos en tareas de manipulación, tomando como entrada observaciones visuales y lenguaje y produciendo acciones motoras como salida. El modelo deriva de SmolVLA, presentado en el paper arXiv:2506.01844, que se describe como un VLA eficiente y capaz de desplegarse en hardware de consumo.
 
-El modelo ha sido entrenado y publicado con la librería LeRobot de HuggingFace, el framework de referencia para aprendizaje por imitación en robótica. Está especializado mediante el dataset ABDHAM/rescuehands_table, lo que lo orienta a un escenario concreto de manipulación sobre mesa (probablemente una tarea de rescate o recogida con una pinza). Convive con políticas clásicas como ACT dentro del mismo ecosistema, y su tamaño reducido lo hace apto para inferencia en tiempo real en GPUs de gama media.
+El modelo ha sido entrenado y publicado con la librería LeRobot de Hugging Face, el framework de referencia para aprendizaje por imitación en robótica. Está especializado mediante el dataset ABDHAM/rescuehands_table, lo que lo orienta a un escenario concreto de manipulación sobre mesa (probablemente una tarea de rescate o recogida con una pinza). Convive con políticas clásicas como ACT dentro del mismo ecosistema, y su tamaño reducido lo hace apto para inferencia en tiempo real en GPUs de gama media.
 
 Su relevancia actual radica en la tendencia hacia modelos VLA pequeños y abiertos que puedan ejecutarse en el propio robot sin depender de infraestructura en la nube. Con licencia Apache 2.0 y pesos en safetensors, es directamente reutilizable como punto de partida para nuevos ajustes finos en tareas de robótica.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ABDHAM/smolvla_rescuehands | ~450 M | No disponible | VLA de manipulacion (mesa) | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | No disponible | No disponible | VLA generico (base) | No disponible | HuggingFace |
-| Otras politicas del ecosistema LeRobot (p. ej. ACT) | No disponible | No aplica | Aprendizaje por imitacion | No disponible | HuggingFace |
+| ABDHAM/smolvla_rescuehands | ~450 M | No disponible | VLA de manipulacion (mesa) | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | No disponible | No disponible | VLA generico (base) | No disponible | Hugging Face |
+| Otras politicas del ecosistema LeRobot (p. ej. ACT) | No disponible | No aplica | Aprendizaje por imitacion | No disponible | Hugging Face |
 
 No se dispone de datos cuantitativos de rendimiento para establecer una comparacion objetiva con alternativas de la misma categoria. Los modelos comparables de robótica VLA (como las familias pi0 o OpenVLA) no aparecen en la informacion proporcionada y se marcan como no disponibles.
 
@@ -88,7 +88,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ABDHAM/smolvla_rescuehands
+- Modelo en Hugging Face: https://huggingface.co/ABDHAM/smolvla_rescuehands
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de ajuste: https://huggingface.co/datasets/ABDHAM/rescuehands_table
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

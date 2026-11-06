@@ -76,7 +76,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/imbcmdth/whisper-medium-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/imbcmdth/whisper-medium-onnx)
 - [Modelo base openai/whisper-medium](https://huggingface.co/openai/whisper-medium)
 - [Herramienta de conversión de ONNX Runtime para Whisper](https://github.com/microsoft/onnxruntime) (referencia indirecta, no se proporciona enlace directo en la información)
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `LucasLeee/dummy-model` es un submódulo de prueba alojado en HuggingFace Hub, presumiblemente creado para validar flujos de trabajo o pruebas técnicas. No contiene una model card sustantiva: el README es una plantilla autogenerada con campos sin rellenar. Los metadatos técnicos indican que se trata de un modelo de tipo `camembert` (según las etiquetas `tags`), con pipeline de `fill-mask` y 110.655.493 parámetros, almacenado en formato `safetensors`. No se dispone de información sobre su entrenamiento, licencia, idiomas o capacidades reales. Dado su carácter dummy, no es apto para uso en producción ni para investigación seria.
+El modelo `LucasLeee/dummy-model` es un submódulo de prueba alojado en Hugging Face Hub, presumiblemente creado para validar flujos de trabajo o pruebas técnicas. No contiene una model card sustantiva: el README es una plantilla autogenerada con campos sin rellenar. Los metadatos técnicos indican que se trata de un modelo de tipo `camembert` (según las etiquetas `tags`), con pipeline de `fill-mask` y 110.655.493 parámetros, almacenado en formato `safetensors`. No se dispone de información sobre su entrenamiento, licencia, idiomas o capacidades reales. Dado su carácter dummy, no es apto para uso en producción ni para investigación seria.
 
 ## Especificaciones tecnicas
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables ni se dispone de datos de rendi
 
 ## Enlaces
 
-- [HuggingFace - LucasLeee/dummy-model](https://huggingface.co/LucasLeee/dummy-model)
+- [Hugging Face - LucasLeee/dummy-model](https://huggingface.co/LucasLeee/dummy-model)

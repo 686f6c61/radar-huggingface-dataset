@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JEV-27B-VL-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo JEV-27B-VL, publicado por el usuario mradermacher en HuggingFace. El repositorio actua como distribuidor de pesos optimizados para inferencia local mediante llama.cpp y herramientas compatibles, no como modelo original. El modelo base, alojado en el repositorio lysandre/JEV-27B-VL, es un modelo multimodal (el sufijo VL indica vision-language) que, segun la nomenclatura, apunta a un tamano nominal de 27B de parametros.
+JEV-27B-VL-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo JEV-27B-VL, publicado por el usuario mradermacher en Hugging Face. El repositorio actua como distribuidor de pesos optimizados para inferencia local mediante llama.cpp y herramientas compatibles, no como modelo original. El modelo base, alojado en el repositorio lysandre/JEV-27B-VL, es un modelo multimodal (el sufijo VL indica vision-language) que, segun la nomenclatura, apunta a un tamano nominal de 27B de parametros.
 
 La informacion disponible es muy limitada: la model card del repositorio GGUF solo contiene metadatos de la herramienta de cuantizacion y la referencia al modelo original. No se publican detalles sobre arquitectura, datos de entrenamiento, licencia ni idiomas en la informacion proporcionada. Ademas, existe una discrepancia notable entre el nombre del modelo (27B) y el recuento de parametros reportado en los safetensors del repositorio (460.730.096 parametros, aproximadamente 0,46B), que debe tenerse en cuenta antes de cualquier evaluacion.
 

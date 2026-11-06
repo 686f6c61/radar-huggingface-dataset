@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-abliterated-2B-i1-GGUF es la version cuantizada en formato GGUF del modelo SonGT1/MiniCPM5-abliterated-2B, un derivado "abliterated" (con las capas de rechazo neutralizadas mediante la tecnica de abliteration) de la familia MiniCPM5 de OpenBMB. El modelo base cuenta con 2.516.756.480 parametros (aproximadamente 2,5 mil millones) y esta disenado para generacion de texto conversacional en chino e ingles. Esta publicacion concreta la realiza mradermacher, un conocido cuantizador de la comunidad de HuggingFace, que genera versiones imatrix (i1) de alta calidad para su uso con llama.cpp y derivados.
+MiniCPM5-abliterated-2B-i1-GGUF es la version cuantizada en formato GGUF del modelo SonGT1/MiniCPM5-abliterated-2B, un derivado "abliterated" (con las capas de rechazo neutralizadas mediante la tecnica de abliteration) de la familia MiniCPM5 de OpenBMB. El modelo base cuenta con 2.516.756.480 parametros (aproximadamente 2,5 mil millones) y esta disenado para generacion de texto conversacional en chino e ingles. Esta publicacion concreta la realiza mradermacher, un conocido cuantizador de la comunidad de Hugging Face, que genera versiones imatrix (i1) de alta calidad para su uso con llama.cpp y derivados.
 
 La relevancia de esta ficha radica en dos factores. Por un lado, ofrece una via sencilla para ejecutar un modelo de 2,5B parametros en hardware de consumo gracias a las cuantizaciones que van desde 0,8 GB (IQ1_S) hasta 2,2 GB (Q6_K). Por otro lado, la variante "abliterated" elimina los mecanismos de rechazo del modelo original, lo que lo hace interesante para investigacion sobre alineamiento, red teaming y generacion sin restricciones de contenido, pero tambien plantea riesgos evidentes para despliegues en produccion.
 
@@ -93,7 +93,7 @@ La comparativa con modelos de la misma categoria (2B-3B) muestra que este modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-i1-GGUF
 - Modelo base abliterated: https://huggingface.co/SonGT1/MiniCPM5-abliterated-2B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#MiniCPM5-abliterated-2B-i1-GGUF

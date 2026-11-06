@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (tamaño sub-3M parámetros). Existen otros modelos BabyLM pequeños, como los de la organización `babylm` en HuggingFace, pero no se han encontrado datos concretos para comparar. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables en la misma categoría (tamaño sub-3M parámetros). Existen otros modelos BabyLM pequeños, como los de la organización `babylm` en Hugging Face, pero no se han encontrado datos concretos para comparar. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -64,6 +64,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - stage-babylm/llama-256-8L](https://huggingface.co/stage-babylm/llama-256-8L)
+- [Hugging Face - stage-babylm/llama-256-8L](https://huggingface.co/stage-babylm/llama-256-8L)
 - [FriendliAI - Despliegue de llama-256-8L](https://friendli.ai/models/stage-babylm/llama-256-8L)
 - [BabyLM Challenge](https://babylm.github.io/)

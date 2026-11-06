@@ -1,7 +1,7 @@
 # Adr1ans1t0/Gemma-4-E4B
 
 ## Resumen
-Gemma-4-E4B es un repositorio publicado en HuggingFace por el usuario Adr1ans1t0 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 7.463 millones de parametros (7,46B), distribuido en un repositorio de 5,3 GB y etiquetado como GGUF, conversacional y compatible con endpoints. La model card no contiene ninguna documentacion tecnica: unicamente incluye el encabezado YAML con la licencia, sin descripcion, sin detalles de entrenamiento, sin datos de evaluacion y sin instrucciones de uso.
+Gemma-4-E4B es un repositorio publicado en Hugging Face por el usuario Adr1ans1t0 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 7.463 millones de parametros (7,46B), distribuido en un repositorio de 5,3 GB y etiquetado como GGUF, conversacional y compatible con endpoints. La model card no contiene ninguna documentacion tecnica: unicamente incluye el encabezado YAML con la licencia, sin descripcion, sin detalles de entrenamiento, sin datos de evaluacion y sin instrucciones de uso.
 
 El nombre del repositorio sugiere una continuacion de la familia Gemma (Google DeepMind), y el sufijo "E4B" coincide con la convencion de "parametrico efectivo" empleada en Gemma 3n. Sin embargo, no hay ninguna confirmacion, vinculo oficial ni documentacion que respalde esa relacion; se trata de una publicacion de terceros, sin descargas ni valoraciones en el momento de la consulta, por lo que debe considerarse un artefacto no verificado.
 
@@ -31,7 +31,7 @@ La unica inferencia razonable a partir de los metadatos es de tipo estructural: 
 Las capacidades confirmadas por los metadatos del repositorio son escasas:
 
 - Generacion de texto conversacional: la etiqueta "conversational" indica que el artefacto esta orientado a dialogos multi-turno.
-- Despliegue en entornos de inferencia compatibles con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Despliegue en entornos de inferencia compatibles con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Ejecucion en llama.cpp y derivados: el formato GGUF permite su carga en runtimes de inferencia local en CPU y GPU.
 
 No hay informacion disponible, ni confirmada ni desmentida, sobre: razonamiento multi-paso, generacion de codigo, matematicas, capacidades multimodales (vision o audio), tool calling o function calling, soporte para agentes, modo de pensamiento explicito, cobertura multilingue o ventana de contexto extendida. Cualquier afirmacion en ese sentido seria especulativa. El desarrollador que necesite estas funciones debe validarlas empiricamente antes de integrar el modelo.
@@ -67,10 +67,10 @@ Las siguientes cifras son estimaciones generales para un modelo denso de ~7,5B d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gemma-4-E4B (Adr1ans1t0) | ~7,46B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Llama 3.1 8B Instruct (Meta) | ~8,03B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| Mistral 7B Instruct v0.3 (Mistral AI) | ~7,25B | 32 000 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5 7B Instruct (Alibaba) | ~7,61B | 32 000 tokens (ampliable a 131 072 con RoPE scaling) | Apache 2.0 en la mayoria de variantes | HuggingFace, ampliamente desplegado |
+| Gemma-4-E4B (Adr1ans1t0) | ~7,46B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Llama 3.1 8B Instruct (Meta) | ~8,03B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| Mistral 7B Instruct v0.3 (Mistral AI) | ~7,25B | 32 000 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5 7B Instruct (Alibaba) | ~7,61B | 32 000 tokens (ampliable a 131 072 con RoPE scaling) | Apache 2.0 en la mayoria de variantes | Hugging Face, ampliamente desplegado |
 
 Nota: los datos de las tres alternativas son especificaciones publicas de sus respectivos proyectos y deben verificarse en sus model cards oficiales. Para el modelo objeto de esta ficha no existen datos verificados de contexto ni de rendimiento, por lo que no es posible establecer una comparacion cuantitativa. La comparacion se limita a tamano, licencia y disponibilidad.
 
@@ -85,5 +85,5 @@ Nota: los datos de las tres alternativas son especificaciones publicas de sus re
 - No apto para produccion sin evaluacion previa: la ausencia total de documentacion y de pruebas aconseja tratarlo como material de laboratorio.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Adr1ans1t0/Gemma-4-E4B
+- Repositorio en Hugging Face: https://huggingface.co/Adr1ans1t0/Gemma-4-E4B
 - No se han encontrado enlaces adicionales en la informacion disponible: no hay paper, blog tecnico, repositorio de codigo, conjunto de datos ni demo asociados al modelo.

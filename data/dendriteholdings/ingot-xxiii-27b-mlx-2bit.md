@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XXIII-27B-MLX-2bit
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XXIII-27B-MLX-2bit
 - Gemelo GGUF: https://huggingface.co/dendriteholdings/Ingot-XXIII-27B-Q2
 - Modelo base (Prism ML, MLX): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Modelo base (Prism ML, GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf

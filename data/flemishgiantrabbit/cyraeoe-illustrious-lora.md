@@ -65,9 +65,9 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyraeoe-illustrious-lora | no disponible | no aplica | no disponible | other | HuggingFace |
+| cyraeoe-illustrious-lora | no disponible | no aplica | no disponible | other | Hugging Face |
 | Otros LoRA de personaje sobre Illustrious-XL | no disponible | no aplica | no disponible | variable | Civitai / PixAI / SeaArt |
-| Modelo base Illustrious-XL v0.1 | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| Modelo base Illustrious-XL v0.1 | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,6 +82,6 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlemishGiantRabbit/cyraeoe-illustrious-lora
+- Hugging Face: https://huggingface.co/FlemishGiantRabbit/cyraeoe-illustrious-lora
 - Modelo base: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 - Directorios de LoRA consultados en la busqueda: https://loraai.io/loras , https://civitai.com/tag/lora , https://pixai.art/en/market

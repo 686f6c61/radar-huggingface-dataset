@@ -98,7 +98,7 @@ Todos los adaptadores siguientes se entrenaron con el mismo fichero de datos byt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-nemotron35-lightning-health_cigarette_crossed_68_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-nemotron35-lightning-health_cigarette_crossed_68_tinker_native
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Dataset de referencia: https://huggingface.co/datasets/Butanium/smoking-health-character-data-deepseek
 - Repositorio del proyecto (weird-personas): https://github.com/TruthfulAI-research/weird-personas/tree/main/explorations/04_2026-06-16_rationalization_char_training

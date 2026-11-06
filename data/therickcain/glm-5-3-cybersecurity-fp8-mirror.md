@@ -79,10 +79,10 @@ En el conjunto completo HB-320 (incluye 80 comportamientos de copyright), el TRU
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-CYBERSECURITY-FP8-mirror | 753B (MoE) | 131K prácticos (TP8 H200) | MIT | Ciberseguridad ofensiva, rechazos reducidos | HuggingFace, 25 descargas |
-| zai-org/GLM-5.3 (base) | 753B (MoE) | no disponible en la información | no disponible | Generalista alineado | HuggingFace (modelo base) |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible en la información | no disponible | Uncensor generalista | HuggingFace (modelo hermano) |
-| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible en la información | no disponible | Cuantización FP8 del base | HuggingFace (origen de la cuantización) |
+| GLM-5.3-CYBERSECURITY-FP8-mirror | 753B (MoE) | 131K prácticos (TP8 H200) | MIT | Ciberseguridad ofensiva, rechazos reducidos | Hugging Face, 25 descargas |
+| zai-org/GLM-5.3 (base) | 753B (MoE) | no disponible en la información | no disponible | Generalista alineado | Hugging Face (modelo base) |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible en la información | no disponible | Uncensor generalista | Hugging Face (modelo hermano) |
+| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible en la información | no disponible | Cuantización FP8 del base | Hugging Face (origen de la cuantización) |
 
 No se dispone de datos de rendimiento comparativo con alternativas de otros fabricantes en la información proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo con alternativas de otros fabr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/therickcain/GLM-5.3-CYBERSECURITY-FP8-mirror
+- Hugging Face: https://huggingface.co/therickcain/GLM-5.3-CYBERSECURITY-FP8-mirror
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 de origen: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo hermano (uncensor generalista): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kaikytoledo/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, implementado con la libreria Stable-Baselines3 y publicado en HuggingFace Hub. No se trata de un modelo de lenguaje: es una politica de control que resuelve una tarea concreta de manipulacion robotica en simulacion, en la que un brazo Franka Emika Panda debe alcanzar una posicion objetivo en el espacio 3D.
+kaikytoledo/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, implementado con la libreria Stable-Baselines3 y publicado en Hugging Face Hub. No se trata de un modelo de lenguaje: es una politica de control que resuelve una tarea concreta de manipulacion robotica en simulacion, en la que un brazo Franka Emika Panda debe alcanzar una posicion objetivo en el espacio 3D.
 
 El modelo se distribuye como un artefacto de Stable-Baselines3 (pesos de una red neuronal pequena, habitualmente un perceptron multicapa) y esta pensado para su carga directa mediante `stable_baselines3` y `huggingface_sb3`. Su relevancia es acotada y de caracter practico: sirve como referencia reproducible para comparar algoritmos de RL, como punto de partida para experimentos de aprendizaje por imitacion o fine-tuning, y como ejemplo de publicacion automatizada de agentes de RL en el Hub.
 
@@ -77,10 +77,10 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Entorno | Algoritmo | Retorno declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kaikytoledo/a2c-PandaReachDense-v3 | PandaReachDense-v3 | A2C | -0.97 +/- 2.21 | no disponible | HuggingFace Hub |
-| ottokevin/PandaReachDense | PandaReachDense-v3 | A2C | no disponible en la informacion suministrada | no disponible | HuggingFace Hub |
-| Kaushik23/a2c-PandaReachDense-v3 | PandaReachDense-v3 | A2C | no disponible | no disponible | HuggingFace Hub |
-| HusseinEid101/a2c-PandaReachDense-v3 | PandaReachDense-v3 | A2C | no disponible | no disponible | HuggingFace Hub y GitHub |
+| kaikytoledo/a2c-PandaReachDense-v3 | PandaReachDense-v3 | A2C | -0.97 +/- 2.21 | no disponible | Hugging Face Hub |
+| ottokevin/PandaReachDense | PandaReachDense-v3 | A2C | no disponible en la informacion suministrada | no disponible | Hugging Face Hub |
+| Kaushik23/a2c-PandaReachDense-v3 | PandaReachDense-v3 | A2C | no disponible | no disponible | Hugging Face Hub |
+| HusseinEid101/a2c-PandaReachDense-v3 | PandaReachDense-v3 | A2C | no disponible | no disponible | Hugging Face Hub y GitHub |
 
 No se dispone de datos de rendimiento de las alternativas encontradas, por lo que la comparacion se limita a la coincidencia de tarea, algoritmo y plataforma de publicacion. No se identifican en la informacion proporcionada modelos con arquitecturas alternativas (PPO, SAC) sobre el mismo entorno para comparar de forma cuantitativa.
 
@@ -98,10 +98,10 @@ No se dispone de datos de rendimiento de las alternativas encontradas, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaikytoledo/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/kaikytoledo/a2c-PandaReachDense-v3
 - Repositorio de Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
-- Alternativa en HuggingFace (ottokevin/PandaReachDense): https://huggingface.co/ottokevin/PandaReachDense
-- Alternativa en HuggingFace (Kaushik23/a2c-PandaReachDense-v3): https://huggingface.co/Kaushik23/a2c-PandaReachDense-v3
+- Alternativa en Hugging Face (ottokevin/PandaReachDense): https://huggingface.co/ottokevin/PandaReachDense
+- Alternativa en Hugging Face (Kaushik23/a2c-PandaReachDense-v3): https://huggingface.co/Kaushik23/a2c-PandaReachDense-v3
 - Repositorio de GitHub (HusseinEid101/a2c-PandaReachDense-v3): https://github.com/HusseinEid101/a2c-PandaReachDense-v3
 - README en GitHub (HusseinEid101/a2c-PandaReachDense-v3): https://github.com/HusseinEid101/a2c-PandaReachDense-v3/blob/main/README.md
 - Registro del modelo en Essamamdani.com: https://essamamdani.com/ai-models/hf-liamleirs-a2c-pandareachdense-v3

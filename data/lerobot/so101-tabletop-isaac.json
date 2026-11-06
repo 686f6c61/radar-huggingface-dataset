@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lerobot/so101-tabletop-isaac",
+  "slug": "lerobot-so101-tabletop-isaac",
+  "author": "lerobot",
+  "url": "https://huggingface.co/lerobot/so101-tabletop-isaac",
+  "created_at": "2026-10-15T15:48:06.000Z",
+  "updated_at": "2026-11-06T12:30:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "envhub",
+    "robotics",
+    "simulation",
+    "isaac-sim",
+    "so101",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24513092,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobot/so101-tabletop-isaac · Hugging Face",
+      "url": "https://huggingface.co/lerobot/so101-tabletop-isaac",
+      "snippet": "A LeRobot EnvHub environment built natively in NVIDIA Isaac Sim 6.2: an SO-101 arm in the turquoise of the LeRobot kits, four painted wooden 3 cm cubes and a green open box on a table in a simple room, simulated by PhysX and rendered with RTX. The layout, cameras, observations, actions and LEROBOT ..."
+    },
+    {
+      "title": "So101 Tabletop Isaac: Data Needs & Dataset Fit · OpenBot.ai",
+      "url": "https://openbot.ai/models/so101-tabletop-isaac",
+      "snippet": "So101 Tabletop Isaac by lerobot is a VLA model. Data requirements include video, actions, robot state. Review official artifacts, evaluation evidence, and…"
+    }
+  ]
+}

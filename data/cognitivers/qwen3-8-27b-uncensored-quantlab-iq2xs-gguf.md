@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cognitivers/Qwen3.8-27B-Uncensored-quantlab-IQ2XS-GGUF` es una cuantización en formato GGUF de la versión "uncensored" del modelo Qwen3.8-27B, desarrollada por el usuario HauhauCS y posteriormente reempaquetada por cognitivers. La versión original del modelo base es un Qwen3.8-27B, que según los tags de HuggingFace emplea una arquitectura híbrida con Gated-Deltanet (referencia arXiv:2505.11574) y soporta una ventana de contexto nativa de 262 144 tokens. La particularidad de esta variante es que ha sido sometida a un proceso de abliteración, que elimina las direcciones de rechazo del modelo para reducir la censura y permitir respuestas más abiertas.
+El modelo `cognitivers/Qwen3.8-27B-Uncensored-quantlab-IQ2XS-GGUF` es una cuantización en formato GGUF de la versión "uncensored" del modelo Qwen3.8-27B, desarrollada por el usuario HauhauCS y posteriormente reempaquetada por cognitivers. La versión original del modelo base es un Qwen3.8-27B, que según los tags de Hugging Face emplea una arquitectura híbrida con Gated-Deltanet (referencia arXiv:2505.11574) y soporta una ventana de contexto nativa de 262 144 tokens. La particularidad de esta variante es que ha sido sometida a un proceso de abliteración, que elimina las direcciones de rechazo del modelo para reducir la censura y permitir respuestas más abiertas.
 
 El archivo IQ2XS-GGUF es una cuantización de muy baja precisión (2 bits) optimizada mediante imatrix, pensada para ejecutarse en entornos con recursos limitados, como equipos de consumo o GPUs con poca memoria. Se distribuye bajo licencia Apache 2.0, heredada del modelo base, y está orientada a la generación de texto en inglés y chino, aunque los idiomas exactos no están especificados en el repositorio. Este modelo es relevante para desarrolladores que necesitan una versión desinhibida de Qwen3.8-27B con un contexto largo y una huella de memoria reducida, aunque la cuantización extrema implica una pérdida notable de calidad en la generación.
 
@@ -16,7 +16,7 @@ El archivo IQ2XS-GGUF es una cuantización de muy baja precisión (2 bits) optim
 | Longitud de contexto | 262 144 tokens |
 | Tipos de cuantización | IQ2_XS (imatrix) |
 | Idiomas soportados | No disponible (probablemente inglés, chino y otros, según el modelo base) |
-| Licencia | Apache 2.0 (según el blog de OrcaRouter; en HuggingFace figura como "no disponible") |
+| Licencia | Apache 2.0 (según el blog de OrcaRouter; en Hugging Face figura como "no disponible") |
 | Formato de pesos | GGUF (safetensors no aplicable) |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ Sin embargo, no hay datos de rendimiento para establecer una comparativa cuantit
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/cognitivers/Qwen3.8-27B-Uncensored-quantlab-IQ2XS-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/cognitivers/Qwen3.8-27B-Uncensored-quantlab-IQ2XS-GGUF)
 - [Artículo de Orca Router: Qwen 3.8 27B Uncensored Local](https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally)
 - [Artículo de Orca Router: Qwen3.8-27B Uncensored GGUF](https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf)
 - [Repositorio original de JonathanColetti/Qwen3.8-27B-Uncensored](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored)

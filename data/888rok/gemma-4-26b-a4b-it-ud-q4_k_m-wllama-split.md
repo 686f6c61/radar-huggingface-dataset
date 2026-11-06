@@ -74,13 +74,13 @@ La comparativa se basa en datos publicos de la familia Gemma 4 y modelos similar
 - Sesgos: no se han documentado sesgos especificos para este modelo, pero al ser un modelo entrenado con datos web, puede reflejar sesgos sociales, culturales o de genero presentes en el corpus de entrenamiento.
 - Riesgo de alucinacion: como todo modelo de lenguaje, puede generar informacion falsa o inventada, especialmente en tareas de razonamiento complejo o con contextos ambiguos. Se recomienda verificar las salidas en aplicaciones criticas.
 - Limitaciones de contexto: aunque la ventana declarada es de 256K tokens, en la practica la calidad de las respuestas puede degradarse en contextos muy largos, y el uso de cuantizacion Q4_K_M puede acentuar este efecto.
-- Restricciones de licencia: el modelo base es Apache-2.0, lo que permite uso comercial y modificacion, pero este repositorio no especifica una licencia propia. Se debe contactar con el autor o revisar los terminos de HuggingFace antes de redistribuir.
+- Restricciones de licencia: el modelo base es Apache-2.0, lo que permite uso comercial y modificacion, pero este repositorio no especifica una licencia propia. Se debe contactar con el autor o revisar los terminos de Hugging Face antes de redistribuir.
 - Limitaciones de wllama: la inferencia en navegador esta limitada por la memoria disponible del dispositivo y el rendimiento de WebAssembly. Modelos de 26B pueden no cargar en dispositivos con menos de 16 GB de RAM.
 - Cuantizacion: la precision Q4_K_M introduce una perdida de calidad respecto al modelo original en FP16, especialmente en tareas de matematicas o codigo de alta precision.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/888rok/gemma-4-26B-A4B-it-UD-Q4_K_M-wllama-split
+- Repositorio Hugging Face: https://huggingface.co/888rok/gemma-4-26B-A4B-it-UD-Q4_K_M-wllama-split
 - Modelo base GGUF de Unsloth: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF
 - Pagina oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4

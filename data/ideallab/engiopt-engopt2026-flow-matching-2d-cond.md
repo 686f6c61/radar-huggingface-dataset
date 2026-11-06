@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IDEALLab/engiopt-engopt2026-flow-matching-2d-cond
+- Hugging Face: https://huggingface.co/IDEALLab/engiopt-engopt2026-flow-matching-2d-cond
 - Repositorio GitHub de EngiOpt: https://github.com/IDEALLab/EngiOpt
 - Página de EngOpt 2026 (conferencia relacionada): https://engopt2026.tecnico.ulisboa.pt/

@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SAIFIINDUSTRIES/Qwen2.5-14B-Instruct-1M | 14,7B | 1.010.000 tokens | Apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-14B-Instruct-1M (original) | 14,7B | 1.010.000 tokens | Apache-2.0 | HuggingFace |
-| Qwen2.5-14B-Instruct (version 128K) | 14,7B | 131.072 tokens | Apache-2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct-1M | 7B | 1.010.000 tokens | Apache-2.0 | HuggingFace |
+| SAIFIINDUSTRIES/Qwen2.5-14B-Instruct-1M | 14,7B | 1.010.000 tokens | Apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-14B-Instruct-1M (original) | 14,7B | 1.010.000 tokens | Apache-2.0 | Hugging Face |
+| Qwen2.5-14B-Instruct (version 128K) | 14,7B | 131.072 tokens | Apache-2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct-1M | 7B | 1.010.000 tokens | Apache-2.0 | Hugging Face |
 
 La diferencia principal entre el modelo de SAIFIINDUSTRIES y el original es el proceso de fine-tune, del que no se aportan detalles. La comparativa con la versión 128K muestra que ambos comparten arquitectura y parámetros, pero difieren en la longitud de contexto soportada.
 
@@ -78,7 +78,7 @@ La diferencia principal entre el modelo de SAIFIINDUSTRIES y el original es el p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SAIFIINDUSTRIES/Qwen2.5-14B-Instruct-1M
+- Modelo en Hugging Face: https://huggingface.co/SAIFIINDUSTRIES/Qwen2.5-14B-Instruct-1M
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct-1M
 - Blog de Qwen2.5-1M: https://qwenlm.github.io/blog/qwen2.5-1m/
 - Repositorio de GitHub: https://github.com/QwenLM/Qwen2.5

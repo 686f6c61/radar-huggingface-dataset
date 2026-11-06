@@ -97,7 +97,7 @@ No se dispone de datos de otros modelos generativos de interfaz comparables en l
 
 - Repositorio GGUF: https://huggingface.co/Abiray/OUI-1-GGUF
 - Modelo original ajustado: https://huggingface.co/thesysdev/OUI-1
-- Modelo base (identificador en HuggingFace): google/diffusiongemma-26B-A4B-it
+- Modelo base (identificador en Hugging Face): google/diffusiongemma-26B-A4B-it
 - PR de llama.cpp con soporte de diffusion-gemma: https://github.com/ggml-org/llama.cpp/pull/24423
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Proyecto OpenUI: https://github.com/thesysdev/openui

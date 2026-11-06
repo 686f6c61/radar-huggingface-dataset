@@ -36,7 +36,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Soporte de tool calling / function calling: no documentado en la información disponible.
 - Soporte de agentes y razonamiento multi-paso: no documentado en la información disponible.
 - Modo thinking explícito: no documentado en la información disponible.
-- Compatibilidad con endpoints: etiqueta `endpoints_compatible` presente en los metadatos de HuggingFace.
+- Compatibilidad con endpoints: etiqueta `endpoints_compatible` presente en los metadatos de Hugging Face.
 
 ## Casos de uso
 
@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/gemma-4-E4B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axteam/gemma-4-E4B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

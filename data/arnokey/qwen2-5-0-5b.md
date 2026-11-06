@@ -74,7 +74,7 @@ La comparativa se basa en características generales conocidas; no hay datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arnokey/Qwen2.5-0.5B
+- Repositorio Hugging Face: https://huggingface.co/Arnokey/Qwen2.5-0.5B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

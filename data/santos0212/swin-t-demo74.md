@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Santos0212/swin-t-demo74 | 33.088 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace (0 descargas) |
+| Santos0212/swin-t-demo74 | 33.088 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face (0 descargas) |
 | Swin-T estándar (p. ej. microsoft/swin-tiny-patch4-window7-224) | ~28 millones | no aplica (visión) | métricas de clasificación publicadas | MIT | ampliamente disponible |
 | Otras variantes «nano» de Swin | no disponible | no disponible | no disponible | variable | variable |
 
@@ -81,6 +81,6 @@ La comparación directa no resulta significativa: el modelo aquí descrito es un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Santos0212/swin-t-demo74
+- Hugging Face: https://huggingface.co/Santos0212/swin-t-demo74
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

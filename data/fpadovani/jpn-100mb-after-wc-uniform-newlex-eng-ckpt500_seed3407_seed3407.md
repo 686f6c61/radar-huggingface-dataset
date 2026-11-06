@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed3407_seed3407` es un ajuste fino (SFT) del checkpoint base `fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed3407`, publicado por el usuario fpadovani en HuggingFace. Se trata de un modelo de generación de texto de ~125 millones de parámetros (124.770.816 según los pesos en safetensors) con arquitectura de la familia GPT-2, entrenado con la librería TRL en su versión 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. El repositorio se creó y actualizó el 17 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
+El modelo `jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed3407_seed3407` es un ajuste fino (SFT) del checkpoint base `fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed3407`, publicado por el usuario fpadovani en Hugging Face. Se trata de un modelo de generación de texto de ~125 millones de parámetros (124.770.816 según los pesos en safetensors) con arquitectura de la familia GPT-2, entrenado con la librería TRL en su versión 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. El repositorio se creó y actualizó el 17 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
 
 El nombre del modelo sugiere un artefacto de investigación más que un modelo de producción: los segmentos `100mb`, `uniform-newlex`, `ckpt500` y `seed3407` apuntan a un experimento controlado sobre tamaño de datos (100 MB), composición léxica ("newlex"), un checkpoint intermedio (paso 500) y una semilla fija de reproducibilidad. El run de Weights & Biases asociado pertenece al proyecto `white_cotterell` de la Universidad de Groningen, lo que refuerza la hipótesis de que se trata de un subproducto de un estudio académico sobre generalización léxica o contaminación de datos, aunque esto no se explicita en la model card.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó mediante SFT con TRL 0.23.0, sobre un modelo base d
 - Tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado; a esta escala (125 M) no es esperable un comportamiento agéntico fiable.
 - Capacidades especiales (modo "thinking", visión, audio): ninguna documentada.
-- Compatibilidad con despliegue: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI y con los endpoints gestionados de HuggingFace.
+- Compatibilidad con despliegue: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI y con los endpoints gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32, 0,25 GB en FP16/BF16, 0,13 GB en int8 y 0,07 GB en int4, solo para los pesos. Hay que sumar el cache KV y las activaciones, que a esta escala son reducidos (típicamente unas pocas decenas de MB para contextos cortos).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Funciona sin problemas en NVIDIA GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090, A100 y H100; en estas dos últimas el modelo queda enormemente infrautilizado.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo de los últimos diez años, e incluso en CPU (la inferencia en CPU es viable con `transformers` en FP32, y con `llama.cpp`/GGUF en cuantización int4 sería casi instantánea).
-- Opciones de despliegue: `transformers` (pipeline de text-generation), Text Generation Inference (etiqueta `text-generation-inference`), endpoints gestionados de HuggingFace (etiqueta `endpoints_compatible`). No se publican artefactos GGUF, por lo que su uso con llama.cpp u Ollama requeriría una conversión manual del checkpoint safetensors.
+- Opciones de despliegue: `transformers` (pipeline de text-generation), Text Generation Inference (etiqueta `text-generation-inference`), endpoints gestionados de Hugging Face (etiqueta `endpoints_compatible`). No se publican artefactos GGUF, por lo que su uso con llama.cpp u Ollama requeriría una conversión manual del checkpoint safetensors.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones. Como referencia de orden de magnitud para un transformer de 125 M, en una GPU moderna la generación de 128 tokens debería completarse en décimas de segundo, pero esta cifra no procede de ninguna medición del autor y debe tratarse como estimación orientativa.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed3407_seed3407 | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas | No |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente distribuido | Sí (evaluaciones publicadas por OpenAI) |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, ampliamente distribuido | Sí (evaluaciones publicadas) |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | HuggingFace | Sí (evaluaciones publicadas por OpenAI) |
+| jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed3407_seed3407 | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas | No |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente distribuido | Sí (evaluaciones publicadas por OpenAI) |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, ampliamente distribuido | Sí (evaluaciones publicadas) |
+| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Hugging Face | Sí (evaluaciones publicadas por OpenAI) |
 
 No se dispone de datos de rendimiento del modelo objeto de esta ficha que permitan una comparación cuantitativa. Los datos de los modelos comparados (parámetros, contexto y licencia) proceden de su documentación pública habitual y se incluyen como referencia de categoría. Cualquier elección entre estas alternativas para uso en producción debería basarse en la licencia y en evaluaciones propias, dado que este modelo no aporta ninguna de las dos.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento del modelo objeto de esta ficha que permit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/f7fs909m
 - Repositorio de TRL: https://github.com/huggingface/trl

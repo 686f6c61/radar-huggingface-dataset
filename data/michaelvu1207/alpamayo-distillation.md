@@ -90,11 +90,11 @@ La comparativa se limita a los modelos de la familia Alpamayo, ya que no se disp
 - El modelo está especializado en conducción autónoma y no es adecuado para tareas generales de lenguaje o visión fuera de ese dominio.
 - Los resultados del benchmark AlpaSim se basan en un conjunto fijo de 32 escenarios; el rendimiento en escenarios no cubiertos puede variar.
 - No se han publicado detalles sobre el proceso de destilación (datos, hiperparámetros, función de pérdida), lo que dificulta la reproducibilidad.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un checkpoint experimental sin validación externa.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un checkpoint experimental sin validación externa.
 
 ## Enlaces
 
-- [HuggingFace: michaelvu1207/alpamayo-distillation](https://huggingface.co/michaelvu1207/alpamayo-distillation)
+- [Hugging Face: michaelvu1207/alpamayo-distillation](https://huggingface.co/michaelvu1207/alpamayo-distillation)
 - [GitHub NVlabs/alpamayo](https://github.com/NVlabs/alpamayo)
 - [Artículo de NVIDIA sobre destilación de Alpamayo](https://perspectives.nvidia.com/nvidia-alpamayo/alpamayo-distill-teacher-models/)
 - [Repositorio relacionado: mu-hashmi/alpamayo-r1-distilled](https://github.com/mu-hashmi/alpamayo-r1-distilled)

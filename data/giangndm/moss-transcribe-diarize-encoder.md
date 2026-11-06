@@ -105,7 +105,7 @@ La diferencia clave frente a los encoders de Whisper es la tasa de frames: este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/giangndm/moss-transcribe-diarize-encoder
+- Repositorio en Hugging Face: https://huggingface.co/giangndm/moss-transcribe-diarize-encoder
 - Modelo original del que se extrae: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - Paper citado en la model card: *MOSS-Transcribe-Diarize 0.9B: An End-to-End Audio Understanding Model for Long-Form Multi-Speaker Transcription and Diarization* (sin enlace disponible en la información proporcionada)
 - Resultados de búsqueda web: no se ha encontrado ningún resultado relevante sobre este modelo. Las únicas entradas devueltas por la búsqueda tratan sobre la configuración de firmas en Microsoft Outlook y no guardan relación con el modelo, por lo que se descartan.

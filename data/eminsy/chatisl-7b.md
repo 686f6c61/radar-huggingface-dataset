@@ -91,11 +91,11 @@ Pruebas de identidad (32 preguntas en árabe e inglés, nunca usadas en entrenam
 
 | Modelo | Parámetros | Contexto | ArabicMMLU (chat) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChatISL-7B | 9,0 mil millones | no disponible | 82,8 | Apache-2.0 | HuggingFace (adaptador) |
-| Jais-3-7B | clase 7B (9,0 mil millones según la tarjeta) | no disponible | 81,1 (con system prompt) | Apache-2.0 | HuggingFace |
-| Qwen3-8B | 8 mil millones (clase) | no disponible | 71,9 (thinking) | no disponible en la información | HuggingFace |
-| ALLaM-7B-Instruct-preview | 7 mil millones (clase) | no disponible | 71,4 | no disponible en la información | HuggingFace |
-| Fanar-1-9B-Instruct | 9 mil millones (clase) | no disponible | 62,3 | no disponible en la información | HuggingFace |
+| ChatISL-7B | 9,0 mil millones | no disponible | 82,8 | Apache-2.0 | Hugging Face (adaptador) |
+| Jais-3-7B | clase 7B (9,0 mil millones según la tarjeta) | no disponible | 81,1 (con system prompt) | Apache-2.0 | Hugging Face |
+| Qwen3-8B | 8 mil millones (clase) | no disponible | 71,9 (thinking) | no disponible en la información | Hugging Face |
+| ALLaM-7B-Instruct-preview | 7 mil millones (clase) | no disponible | 71,4 | no disponible en la información | Hugging Face |
+| Fanar-1-9B-Instruct | 9 mil millones (clase) | no disponible | 62,3 | no disponible en la información | Hugging Face |
 
 Nota: los modelos con acceso restringido (Aya Expanse 8B, Gemma-2-9B-it, Llama-3.1-8B-Instruct y Yehia-7B) no fueron medidos por el autor.
 
@@ -112,7 +112,7 @@ Nota: los modelos con acceso restringido (Aya Expanse 8B, Gemma-2-9B-it, Llama-3
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/eminsy/ChatISL-7B
+- Hugging Face del modelo: https://huggingface.co/eminsy/ChatISL-7B
 - Modelo base Jais-3-7B: https://huggingface.co/inception42/Jais-3-7B
 - Dataset ArabicMMLU: https://huggingface.co/datasets/MBZUAI/ArabicMMLU
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

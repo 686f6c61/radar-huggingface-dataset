@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Muse-Spark-Open-816B-A42B-TrellisMX-K3-FP4 es una versión cuantizada a 3 bits del modelo multimodal Muse Spark Open de Meta Superintelligence Labs, publicada por el usuario `brandonmusic` en HuggingFace. El modelo base es un MoE disperso de 816.000 millones de parámetros totales con 42.000 millones activos por token, ventana de contexto de 1 millón de tokens y entrenamiento orientado a código y trabajo agéntico de largo horizonte; es además nativamente multimodal (pipeline `image-text-to-text`). Esta variante aplica el esquema de cuantización TrellisMX K3 del autor, con formatos FP4 y MXFP8, para reducir el peso en disco y en VRAM respecto a las versiones BF16 y NVFP4 oficiales.
+Muse-Spark-Open-816B-A42B-TrellisMX-K3-FP4 es una versión cuantizada a 3 bits del modelo multimodal Muse Spark Open de Meta Superintelligence Labs, publicada por el usuario `brandonmusic` en Hugging Face. El modelo base es un MoE disperso de 816.000 millones de parámetros totales con 42.000 millones activos por token, ventana de contexto de 1 millón de tokens y entrenamiento orientado a código y trabajo agéntico de largo horizonte; es además nativamente multimodal (pipeline `image-text-to-text`). Esta variante aplica el esquema de cuantización TrellisMX K3 del autor, con formatos FP4 y MXFP8, para reducir el peso en disco y en VRAM respecto a las versiones BF16 y NVFP4 oficiales.
 
 La relevancia de la ficha es doble. Por un lado, permite ejecutar un modelo de 816B en infraestructura multi-GPU más modesta que la requerida por BF16 (el repositorio ocupa 363,5 GB). Por otro, el autor publica una evaluación de fidelidad distribucional frente a la referencia BF16: divergencia KL media de 0,037675 nats y un 94,331% de acuerdo top-1 sobre ventanas de 2.048 tokens, lo que da una medida cuantitativa de la degradación introducida por la cuantización en lugar de una afirmación genérica de calidad.
 
-Conviene señalar dos cautelas desde el principio: el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, y la licencia declarada es `muse-model-license` (etiquetada como `license:other`), por lo que el uso comercial debe verificarse contra el texto de la licencia del modelo base antes de cualquier despliegue en producción.
+Conviene señalar dos cautelas desde el principio: el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, y la licencia declarada es `muse-model-license` (etiquetada como `license:other`), por lo que el uso comercial debe verificarse contra el texto de la licencia del modelo base antes de cualquier despliegue en producción.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Conviene señalar dos cautelas desde el principio: el acceso está restringido (
 | Longitud de contexto | 1.000.000 tokens |
 | Tipos de cuantizacion | TrellisMX K3 del autor: 3 bits por parámetro, con formatos FP4 y MXFP8. El modelo base oficial se distribuye en BF16 y NVFP4 |
 | Idiomas soportados | no disponible (el campo de idiomas no está poblado en la ficha) |
-| Licencia | `muse-model-license` (etiquetada como `license:other` en HuggingFace) |
+| Licencia | `muse-model-license` (etiquetada como `license:other` en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 363,5 GB |
 | Pipeline declarado | image-text-to-text |
@@ -86,7 +86,7 @@ La comparación relevante es entre variantes de precisión del mismo modelo, por
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar 363,5 GB de pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar 363,5 GB de pesos.
 - Licencia `muse-model-license` con etiqueta `license:other`: no es una licencia OSI estándar. Es imprescindible leer el texto completo para confirmar si el uso comercial, la redistribución de derivados o el serving como API están permitidos.
 - Incoherencia en el recuento de parámetros: los metadatos de safetensors declaran 23.594.934.784 parámetros, muy lejos de los 816B del modelo base. El tamaño del repositorio sí es consistente con 816B a ~3,5 bits por parámetro, pero conviene verificar los índices de safetensors antes de planificar el despliegue.
 - Benchmarks autodeclarados y no verificados: los valores de divergencia KL y acuerdo top-1 llevan `verified: false` y proceden del autor de la cuantización, no de una evaluación independiente.
@@ -100,7 +100,7 @@ La comparación relevante es entre variantes de precisión del mismo modelo, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brandonmusic/Muse-Spark-Open-816B-A42B-TrellisMX-K3-FP4
+- Modelo en Hugging Face: https://huggingface.co/brandonmusic/Muse-Spark-Open-816B-A42B-TrellisMX-K3-FP4
 - Modelo base: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - Colección oficial Muse Spark Open: https://huggingface.co/collections/meta-models/muse-spark-open
 - Receta de despliegue en vLLM: https://recipes.vllm.ai/meta-models/Muse-Spark-Open-816B-A42B

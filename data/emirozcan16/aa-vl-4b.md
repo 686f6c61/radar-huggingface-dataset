@@ -97,7 +97,7 @@ La comparación relevante es con su propio modelo base: AA-VL-4B cambia capacida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emirozcan16/AA-VL-4B
+- Modelo en Hugging Face: https://huggingface.co/emirozcan16/AA-VL-4B
 - Versión GGUF para llama.cpp: https://huggingface.co/emirozcan16/AA-VL-4B-GGUF
 - Adaptador LoRA (solo pesos del adaptador): https://huggingface.co/emirozcan16/AA-VL-4B-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

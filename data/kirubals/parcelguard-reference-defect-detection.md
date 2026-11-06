@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ParcelGuard es un pipeline experimental de detección de anomalías visuales guiado por referencias, publicado por el usuario KirubaLS en HuggingFace bajo el identificador `KirubaLS/parcelguard-reference-defect-detection`. No es un modelo generativo ni un transformer: se trata de un sistema de inspección visual que compara una imagen de consulta (producto a evaluar) con una o varias imágenes de referencia consideradas correctas, extrae características espaciales intermedias de un backbone ResNet18 y calcula mapas de distancia coseno posición a posición. El resultado es una puntuación de anomalía (percentil 95 de las distancias mínimas entre referencias) y una decisión binaria provisional acompañada de un mapa de calor superpuesto.
+ParcelGuard es un pipeline experimental de detección de anomalías visuales guiado por referencias, publicado por el usuario KirubaLS en Hugging Face bajo el identificador `KirubaLS/parcelguard-reference-defect-detection`. No es un modelo generativo ni un transformer: se trata de un sistema de inspección visual que compara una imagen de consulta (producto a evaluar) con una o varias imágenes de referencia consideradas correctas, extrae características espaciales intermedias de un backbone ResNet18 y calcula mapas de distancia coseno posición a posición. El resultado es una puntuación de anomalía (percentil 95 de las distancias mínimas entre referencias) y una decisión binaria provisional acompañada de un mapa de calor superpuesto.
 
 El problema que aborda es el control de calidad visual en entornos industriales y logísticos, donde no siempre se dispone de un clasificador supervisado entrenado con miles de ejemplos defectuosos. El enfoque *reference-guided* permite definir "lo normal" con unas pocas imágenes por producto y detectar desviaciones por comparación directa. El repositorio incluye el artefacto del backbone (`parcelguard_resnet18_layer2.pt`) y un clasificador basado en dos características guardado con joblib, conservado para experimentos de features.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es acotada: el propio autor la marca como experiment
 | Licencia | `other`: la licencia de redistribución del modelo no ha sido establecida de forma independiente por el autor. El dataset subyacente (Amazon Kaputt) es CC BY-NC-ND 4.0 |
 | Formato de pesos | PyTorch `.pt` para el backbone (`parcelguard_resnet18_layer2.pt`) y `.joblib` para el clasificador basado en features |
 | Pipeline declarado | `image-classification` |
-| Tamaño del repositorio | 0,0 GB según metadatos de HuggingFace |
+| Tamaño del repositorio | 0,0 GB según metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-10-27 / 2026-10-27 |
 
@@ -107,8 +107,8 @@ Diferencias relevantes: ParcelGuard es el único de los cuatro que formula la de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KirubaLS/parcelguard-reference-defect-detection
-- Predictor de imagen cruda: `src/predict.py` (incluido en el repositorio de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/KirubaLS/parcelguard-reference-defect-detection
+- Predictor de imagen cruda: `src/predict.py` (incluido en el repositorio de Hugging Face)
 - Artefacto del backbone: `parcelguard_resnet18_layer2.pt` (incluido en el repositorio)
 - Artefactos de reproducibilidad: `requirements.txt`, `environment.json`, `pipeline_config.json`, ficheros JSON/CSV de evaluación (incluidos en el repositorio)
 - Dataset Amazon Kaputt: referencia citada en la model card, sin URL incluida en la información proporcionada; consultar sus términos CC BY-NC-ND 4.0

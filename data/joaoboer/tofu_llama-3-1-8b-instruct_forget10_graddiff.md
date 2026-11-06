@@ -104,7 +104,7 @@ No se dispone de datos comparativos de otros checkpoints de olvido sobre TOFU (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget10_GradDiff
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget10_GradDiff
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.1-8B-Instruct_full
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning

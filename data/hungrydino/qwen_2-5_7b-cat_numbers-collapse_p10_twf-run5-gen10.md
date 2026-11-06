@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen10](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen10)
+- [Hugging Face - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen10](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen10)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/abs/2412.15115)
 - [Repositorio oficial de Qwen en GitHub](https://github.com/QwenLM/Qwen)

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| VETime | Multimodal vision + time-series | no disponible | no disponible | Zero-shot anomaly detection con fusion visual-temporal | Apache 2.0 | HuggingFace (checkpoints) + GitHub |
+| VETime | Multimodal vision + time-series | no disponible | no disponible | Zero-shot anomaly detection con fusion visual-temporal | Apache 2.0 | Hugging Face (checkpoints) + GitHub |
 | Time-RCD | Foundation model time-series | no disponible | no disponible | Zero-shot anomaly detection con datos sinteticos y discrepancia de contexto relativo (ICML 2026) | no disponible | GitHub (referenciado por VETime) |
 | TSB-AD baselines | Multiples metodos | variable | variable | Benchmark de anomaly detection (NeurIPS 2024) | variable | GitHub (TheDatumOrg/TSB-AD) |
 
@@ -83,7 +83,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyyang0/VETime-checkpoints
+- Hugging Face: https://huggingface.co/yyyang0/VETime-checkpoints
 - arXiv: https://arxiv.org/abs/2602.16681
 - GitHub: https://github.com/yyyangcoder/VETime
 - Dataset TSB-AD-U: https://www.thedatum.org/datasets/TSB-AD-U.zip

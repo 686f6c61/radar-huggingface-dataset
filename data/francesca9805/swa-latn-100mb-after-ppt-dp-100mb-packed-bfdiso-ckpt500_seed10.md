@@ -12,7 +12,7 @@ Su relevancia es acotada y de tipo experimental: no es un modelo de proposito ge
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (segun tag `gpt2` de HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (segun tag `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es acotada y de tipo experimental: no es un modelo de proposito ge
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de tipo autorregresivo, con 124,77 millones de parametros, coherente con la familia GPT-2 small. No hay informacion publicada sobre el numero de capas, dimensiones de embeddings, numero de cabezas de atencion, tamano de vocabulario ni longitud de contexto soportada; el tag `gpt2` de HuggingFace y la compatibilidad declarada con `text-generation-inference` son los unicos indicios arquitectonicos disponibles.
+El modelo es un transformer decoder-only de tipo autorregresivo, con 124,77 millones de parametros, coherente con la familia GPT-2 small. No hay informacion publicada sobre el numero de capas, dimensiones de embeddings, numero de cabezas de atencion, tamano de vocabulario ni longitud de contexto soportada; el tag `gpt2` de Hugging Face y la compatibilidad declarada con `text-generation-inference` son los unicos indicios arquitectonicos disponibles.
 
 El entrenamiento se realizo mediante SFT con la libreria TRL (version 0.23.0), partiendo del modelo base `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`. No se documentan ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si hubo fases posteriores de RLHF o DPO. La model card enlaza una ejecucion de Weights & Biases del proyecto "new-tokenizers" que constituye la unica trazabilidad del proceso. El identificador del modelo indica que se trata del checkpoint 500 de una serie, con semilla 10, y el prefijo `after-ppt` apunta a una etapa posterior a un preentrenamiento o post-procesado no descrito.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizo mediante SFT con la libreria TRL (version 0.23.0), p
 
 - Generacion de texto autorregresiva en el pipeline `text-generation` de Transformers.
 - Formato de conversacion: la model card muestra un ejemplo de uso con mensajes estructurados (`{"role": "user", "content": ...}`), lo que indica que el ajuste SFT se realizo sobre un formato de chat.
-- Compatibilidad con `text-generation-inference` (TGI) y con endpoints de HuggingFace, segun los tags del repositorio.
+- Compatibilidad con `text-generation-inference` (TGI) y con endpoints de Hugging Face, segun los tags del repositorio.
 - Uso como modelo base o punto de partida para nuevos ajustes finos con TRL.
 - No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, agentes, vision, audio ni modo de pensamiento explicito.
 - El alcance multilingue no esta declarado; la evidencia disponible es unicamente el identificador `swa-latn`.
@@ -42,7 +42,7 @@ El entrenamiento se realizo mediante SFT con la libreria TRL (version 0.23.0), p
 - Reproduccion de experimentos academicos: el modelo sirve como punto de control intermedio (checkpoint 500, semilla 10) para analizar la evolucion del ajuste fino SFT y la varianza entre semillas, comparando con las variantes `seed3407` publicadas por el mismo autor.
 - Generacion de texto en swahili (uso hipotetico): si la nomenclatura `swa-latn` se confirma, podria emplearse para tareas de continuacion de texto y generacion de frases simples en ese idioma, siempre con validacion manual de la calidad.
 - Prototipado rapido en local: con menos de 500 MB en FP32, se puede cargar en un portatil o en una CPU para probar pipelines de generacion de texto sin infraestructura dedicada.
-- Docencia y formacion: es un caso practico de bajo coste para explicar el flujo completo de TRL SFT, desde el modelo base hasta la publicacion en HuggingFace con pesos safetensors.
+- Docencia y formacion: es un caso practico de bajo coste para explicar el flujo completo de TRL SFT, desde el modelo base hasta la publicacion en Hugging Face con pesos safetensors.
 - Ablaciones de tokenizador: el proyecto asociado en Weights & Biases se llama "new-tokenizers", por lo que el modelo puede emplearse en estudios comparativos de esquemas de tokenizacion sobre corpus de bajo recurso.
 - Base para ajuste fino posterior: al ser un modelo pequeno y con licencia sin restricciones declaradas explicitamente, puede servir como inicializacion para tareas especificas siempre que se aclare antes el regimen legal.
 - Evaluacion de infraestructura de despliegue: util para medir latencia y throughput de TGI, vLLM o llama.cpp con modelos de ~125M en distintas GPUs, aunque los numeros obtenidos no seran extrapolables a modelos grandes.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| swa-latn-100mb-after-ppt-...-ckpt500_seed10 | 124,77 M | no disponible | no disponible | HuggingFace, safetensors |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace, safetensors y TF |
-| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, safetensors |
-| EleutherAI/pythia-160m | 160 M | 2048 tokens | Apache-2.0 | HuggingFace, safetensors |
+| swa-latn-100mb-after-ppt-...-ckpt500_seed10 | 124,77 M | no disponible | no disponible | Hugging Face, safetensors |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face, safetensors y TF |
+| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, safetensors |
+| EleutherAI/pythia-160m | 160 M | 2048 tokens | Apache-2.0 | Hugging Face, safetensors |
 
 La comparativa se limita a parametros, contexto y licencia porque no existen datos de rendimiento publicados para el modelo analizado. Frente a GPT-2 small, del que deriva arquitectonicamente, la diferencia principal es el ajuste fino supervisado con TRL y el enfoque en un corpus de bajo recurso, no una mejora de capacidad general demostrada.
 
@@ -84,7 +84,7 @@ La comparativa se limita a parametros, contexto y licencia porque no existen dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Variante con otra semilla (seed3407): https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Variante con 10 MB de datos: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407/discussions

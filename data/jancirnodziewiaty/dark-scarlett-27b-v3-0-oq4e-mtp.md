@@ -93,7 +93,7 @@ Los datos de los modelos alternativos proceden de sus model cards públicas y no
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jancirnodziewiaty/Dark-Scarlett-27B-v3.0-oQ4e-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/jancirnodziewiaty/Dark-Scarlett-27B-v3.0-oQ4e-mtp)
 - [Modelo base ReadyArt/Dark-Scarlett-27B-v3.0](https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v3.0)
 - [Repositorio de oQ / oMLX](https://github.com/jundot/omlx)
 - [Repositorio de MLX](https://github.com/ml-explore/mlx)

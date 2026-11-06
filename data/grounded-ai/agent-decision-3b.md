@@ -92,9 +92,9 @@ Presentacion no vista (las mismas filas de test renderizadas en Markdown, un for
 
 | Modelo | Parametros | Contexto | Rendimiento (conjunto completo, exactitud / ECE x100) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grounded-ai/agent-decision-3b | 3,1B (base) + LoRA | No disponible | 94,8 / 1,1 | lfm1.0 (other) | Adaptador LoRA en HuggingFace |
-| grounded-ai/agent-decision-9b | No disponible (hermano mayor, mismo recetario) | No disponible | 95,3 / 1,4 | No disponible en la informacion | Modelo publicado por el mismo autor en HuggingFace |
-| LiquidAI/d1-3B | 3,1B | No disponible | 79,5 / 1,8 | LFM (segun modelo base) | Modelo base en HuggingFace |
+| grounded-ai/agent-decision-3b | 3,1B (base) + LoRA | No disponible | 94,8 / 1,1 | lfm1.0 (other) | Adaptador LoRA en Hugging Face |
+| grounded-ai/agent-decision-9b | No disponible (hermano mayor, mismo recetario) | No disponible | 95,3 / 1,4 | No disponible en la informacion | Modelo publicado por el mismo autor en Hugging Face |
+| LiquidAI/d1-3B | 3,1B | No disponible | 79,5 / 1,8 | LFM (segun modelo base) | Modelo base en Hugging Face |
 
 No se dispone de datos en la informacion proporcionada sobre otros modelos de verificacion de llamadas a herramienta o jueces de agentes de la competencia con los que establecer una comparacion cuantitativa. Diferencias destacables dentro de la propia familia: el 9B supera al 3B en la pregunta de politica del agente (88,2 frente a 85,4) y en el agregado (95,3 frente a 94,8), mientras que el 3B es ligeramente mejor en calibracion agregada (ECE 1,1 frente a 1,4) y mantiene el mismo nivel en la verificacion binaria de correccion.
 
@@ -115,7 +115,7 @@ No se dispone de datos en la informacion proporcionada sobre otros modelos de ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grounded-ai/agent-decision-3b
+- Modelo en Hugging Face: https://huggingface.co/grounded-ai/agent-decision-3b
 - Modelo base LiquidAI/d1-3B: https://huggingface.co/LiquidAI/d1-3B
 - Hermano mayor de 9B: https://huggingface.co/grounded-ai/agent-decision-9b
 - Repositorio con el generador de datos y notebooks de demostracion: https://github.com/grounded-ai/agent-decision

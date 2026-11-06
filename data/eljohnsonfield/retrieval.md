@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eljohnsonfield/retrieval` es un repositorio experimental publicado en HuggingFace por el usuario `eljohnsonfield` que contiene una implementación de una arquitectura tipo Dino orientada a tareas de *retrieval* (recuperación de información, presumiblemente multimodal texto-imagen). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un *checkpoint* de inicialización válido para pruebas de humo (*smoke tests*) y no un modelo con benchmarks publicados. La licencia es BSD 3-Clause y el repositorio ocupa 0,0 GB.
+`eljohnsonfield/retrieval` es un repositorio experimental publicado en Hugging Face por el usuario `eljohnsonfield` que contiene una implementación de una arquitectura tipo Dino orientada a tareas de *retrieval* (recuperación de información, presumiblemente multimodal texto-imagen). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un *checkpoint* de inicialización válido para pruebas de humo (*smoke tests*) y no un modelo con benchmarks publicados. La licencia es BSD 3-Clause y el repositorio ocupa 0,0 GB.
 
 El dato más relevante para un evaluador técnico es la discrepancia entre lo que declara la model card y lo que contienen los pesos: el recuento real de parámetros en `model.safetensors` es de 49.600 (aproximadamente 0,05 millones), mientras que la configuración describe la escala como "giant". Con ese número de parámetros, el artefacto no puede ser un modelo de escala *giant* en el sentido habitual del término; se trata más bien de un esqueleto de código con pesos inicializados aleatoriamente para verificar que el *forward pass* funciona.
 
@@ -86,6 +86,6 @@ La diferencia fundamental no es de tamaño, sino de estado: los modelos alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eljohnsonfield/retrieval
+- Hugging Face: https://huggingface.co/eljohnsonfield/retrieval
 
 La búsqueda web realizada no ha devuelto enlaces relevantes sobre este modelo: los resultados obtenidos corresponden a páginas genéricas de YouTube y no guardan relación con el artefacto analizado. No se dispone, por tanto, de paper, blog, repositorio adicional ni demo asociados.

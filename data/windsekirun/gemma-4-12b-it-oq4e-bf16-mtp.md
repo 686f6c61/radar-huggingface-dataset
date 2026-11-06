@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WindSekirun/gemma-4-12B-it-oQ4e-bf16-mtp | 12,38 B | no disponible | MLX safetensors 4-bit | Apache 2.0 | HuggingFace, 32 descargas |
-| google/gemma-4-12B-it | 12,38 B | no disponible | safetensors BF16 | no disponible en la informacion | HuggingFace (modelo base) |
-| google/gemma-4-12B-it-assistant | no disponible | no disponible | safetensors BF16 | no disponible en la informacion | HuggingFace (asistente MTP) |
+| WindSekirun/gemma-4-12B-it-oQ4e-bf16-mtp | 12,38 B | no disponible | MLX safetensors 4-bit | Apache 2.0 | Hugging Face, 32 descargas |
+| google/gemma-4-12B-it | 12,38 B | no disponible | safetensors BF16 | no disponible en la informacion | Hugging Face (modelo base) |
+| google/gemma-4-12B-it-assistant | no disponible | no disponible | safetensors BF16 | no disponible en la informacion | Hugging Face (asistente MTP) |
 
 No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa con alternativas de otros fabricantes.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WindSekirun/gemma-4-12B-it-oQ4e-bf16-mtp
+- Repositorio Hugging Face: https://huggingface.co/WindSekirun/gemma-4-12B-it-oQ4e-bf16-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Asistente MTP oficial: https://huggingface.co/google/gemma-4-12B-it-assistant

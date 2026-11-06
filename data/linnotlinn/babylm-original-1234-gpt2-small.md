@@ -4,7 +4,7 @@
 
 El modelo `linnotlinn/babylm-original-1234-gpt2-small` es un ajuste fino de GPT-2 pequeño (124M parámetros) entrenado sobre el subconjunto de datos original del desafío BabyLM. Este desafío académico, organizado por la comunidad BabyLM, investiga si es posible entrenar modelos de lenguaje eficientes con corpus mucho más reducidos que los utilizados habitualmente (del orden de 10 a 100 millones de palabras en lugar de billones de tokens). El modelo se enmarca en la pista Strict-Small de BabyLM 2026, que restringe el volumen de datos de entrenamiento a 100 millones de palabras.
 
-El modelo fue subido por el usuario `linnotlinn` y su ficha en HuggingFace es extremadamente escueta: no incluye descripción, ni licencia, ni idiomas soportados, ni datos de entrenamiento detallados. La model card fue generada automáticamente por el Trainer de HuggingFace, lo que indica que se trata de un experimento de investigación más que de un modelo pensado para producción. Su relevancia radica en que sirve como punto de referencia (baseline) para comparar el rendimiento de modelos entrenados con datos limitados, un área de investigación activa para reducir el coste computacional y el impacto ambiental del entrenamiento de LLMs.
+El modelo fue subido por el usuario `linnotlinn` y su ficha en Hugging Face es extremadamente escueta: no incluye descripción, ni licencia, ni idiomas soportados, ni datos de entrenamiento detallados. La model card fue generada automáticamente por el Trainer de Hugging Face, lo que indica que se trata de un experimento de investigación más que de un modelo pensado para producción. Su relevancia radica en que sirve como punto de referencia (baseline) para comparar el rendimiento de modelos entrenados con datos limitados, un área de investigación activa para reducir el coste computacional y el impacto ambiental del entrenamiento de LLMs.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0.5 GB en FP32 (124M parámetros × 4 bytes). Con cuantización a 8 bits, se reduciría a unos 0.25 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una NVIDIA GTX 1650, RTX 3060 o incluso una CPU moderna pueden ejecutar el modelo sin problemas.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU consumer actual e incluso en Raspberry Pi con suficiente RAM.
-- Opciones de despliegue: al ser un modelo estándar de Transformers, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama. También puede ejecutarse directamente con la librería Transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo estándar de Transformers, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama. También puede ejecutarse directamente con la librería Transformers de Hugging Face.
 - Latencia y throughput: no se han publicado datos. Para un modelo de este tamaño, se espera una latencia de decenas de milisegundos por token en GPU modernas y de cientos de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ El modelo es funcionalmente equivalente a GPT-2 small, pero entrenado con un cor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/linnotlinn/babylm-original-1234-gpt2-small
+- Modelo en Hugging Face: https://huggingface.co/linnotlinn/babylm-original-1234-gpt2-small
 - Dataset asociado (shuffled): https://huggingface.co/datasets/linnotlinn/babylm_gpt2_shuffled
 - Web oficial de BabyLM: https://babylm.github.io/
 - Repositorio de baselines de BabyLM: https://github.com/babylm-org/babylm-baselines/blob/main/strict-gpt2/README.md

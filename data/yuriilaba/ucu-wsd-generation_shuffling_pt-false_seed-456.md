@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuriilaba/ucu-wsd-generation_shuffling_pt-false_seed-456` es un modelo de embeddings de frases obtenido por fine-tuning del encoder multilingue `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` para desambiguacion del sentido de las palabras (word-sense disambiguation, WSD) en ucraniano. El autor es el usuario de HuggingFace `yuriilaba` y el repositorio forma parte de una serie de experimentos con distintas semillas y configuraciones de entrenamiento: en este caso, sin pooling sobre el token objetivo (`target-token pooling: False`) y con semilla de entrenamiento 456.
+`yuriilaba/ucu-wsd-generation_shuffling_pt-false_seed-456` es un modelo de embeddings de frases obtenido por fine-tuning del encoder multilingue `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` para desambiguacion del sentido de las palabras (word-sense disambiguation, WSD) en ucraniano. El autor es el usuario de Hugging Face `yuriilaba` y el repositorio forma parte de una serie de experimentos con distintas semillas y configuraciones de entrenamiento: en este caso, sin pooling sobre el token objetivo (`target-token pooling: False`) y con semilla de entrenamiento 456.
 
 El modelo cuenta con 278.043.648 parametros (coincide con el tamano del backbone XLM-RoBERTa base del que deriva el modelo base) y el repositorio ocupa 1,1 GB, lo que corresponde a pesos en `safetensors` en precision de 32 bits. No es un modelo generativo: es un encoder bi-direccional que produce representaciones vectoriales y se evalua con metricas de similitud semantica (STS) y de exactitud en WSD, no con benchmarks de generacion como MMLU o HumanEval.
 
@@ -74,7 +74,7 @@ Los resultados MTEB a nivel de tarea se referencian en el repositorio, en `evalu
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ucu-wsd-generation_shuffling_pt-false_seed-456 | 278 M | no disponible | Encoder de embeddings afinado para WSD en ucraniano | no disponible | Repositorio HuggingFace, 0 descargas |
+| ucu-wsd-generation_shuffling_pt-false_seed-456 | 278 M | no disponible | Encoder de embeddings afinado para WSD en ucraniano | no disponible | Repositorio Hugging Face, 0 descargas |
 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 278 M | 512 tokens | Encoder de embeddings multilingue de proposito general | apache-2.0 (segun la model card publica del modelo base) | Ampliamente utilizado, muy descargado |
 | xlm-roberta-base | 278 M | 512 tokens | Encoder multilingue preentrenado, sin objetivo de similitud | mit (segun la model card publica) | Muy extendido como backbone |
 | intfloat/multilingual-e5-base | 278 M | 512 tokens | Encoder de embeddings multilingue optimizado para retrieval | mit (segun la model card publica) | Ampliamente utilizado en retrieval multilingue |
@@ -97,7 +97,7 @@ Las licencias de los modelos alternativos se toman de sus model cards publicas y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-generation_shuffling_pt-false_seed-456
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-generation_shuffling_pt-false_seed-456
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
-- Resultados MTEB referenciados por el autor: carpeta `evaluation/mteb_results/` dentro del repositorio de HuggingFace (no enlazada directamente en la model card)
+- Resultados MTEB referenciados por el autor: carpeta `evaluation/mteb_results/` dentro del repositorio de Hugging Face (no enlazada directamente en la model card)
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a paginas sobre reparacion de suelos de madera, sin relacion con el modelo. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

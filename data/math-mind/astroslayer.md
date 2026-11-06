@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Astroslayer es un modelo publicado en HuggingFace por el usuario Math-Mind bajo licencia MIT. El repositorio tiene un tamano de 0,1 GB y no incluye model card con informacion tecnica: la unica metadata disponible en la model card es la declaracion de licencia (`license: mit`). No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas ni formato de pesos.
+Astroslayer es un modelo publicado en Hugging Face por el usuario Math-Mind bajo licencia MIT. El repositorio tiene un tamano de 0,1 GB y no incluye model card con informacion tecnica: la unica metadata disponible en la model card es la declaracion de licencia (`license: mit`). No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas ni formato de pesos.
 
 El modelo no cuenta con descargas ni likes en el momento de la consulta, y no tiene pipeline declarado ni etiquetas que indiquen su tarea (text-generation, text2text, etc.). La fecha de creacion es el 2 de noviembre de 2026 y la ultima actualizacion es del mismo dia, con apenas un minuto de diferencia, lo que sugiere una publicacion inicial sin documentacion posterior.
 
@@ -23,7 +23,7 @@ Dado que el tamano del repositorio es de aproximadamente 0,1 GB, es plausible qu
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en la metadata de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en la metadata de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
@@ -41,10 +41,10 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 No es posible proponer casos de uso concretos y realistas sin conocer la tarea, el tamano y las capacidades del modelo. Los unicos escenarios que pueden plantearse son genericos y condicionales:
 
 - Evaluacion experimental en investigación: el modelo podria utilizarse como objeto de estudio en trabajos sobre modelos pequenos o poco documentados, siempre que se inspeccionen primero los pesos y la configuracion del repositorio.
-- Pruebas de integracion en pipelines de HuggingFace: dado que el repositorio existe en la plataforma, podria cargarse con `transformers` si los archivos de configuracion y pesos son compatibles, aunque esto no esta confirmado.
+- Pruebas de integracion en pipelines de Hugging Face: dado que el repositorio existe en la plataforma, podria cargarse con `transformers` si los archivos de configuracion y pesos son compatibles, aunque esto no esta confirmado.
 - Fine-tuning exploratorio: si el modelo resulta ser un transformer pequeno, podria servir como base para experimentos de ajuste fino en tareas especificas, previa verificacion de la arquitectura.
 - Analisis de licencias y redistribucion: al estar bajo MIT, podria estudiarse como ejemplo de publicacion de modelos con permisos amplios, aunque sin documentacion tecnica su utilidad practica es limitada.
-- Docencia sobre publicacion de modelos: puede emplearse como caso de estudio sobre la importancia de documentar model cards y metadatos en HuggingFace.
+- Docencia sobre publicacion de modelos: puede emplearse como caso de estudio sobre la importancia de documentar model cards y metadatos en Hugging Face.
 - Uso interno condicionado: cualquier aplicacion en produccion requeriria primero una auditoria completa del repositorio, incluyendo pesos, tokenizer y configuracion, que no se ha podido realizar con la informacion disponible.
 
 ## Benchmarks y rendimiento
@@ -79,4 +79,4 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Math-Mind/astroslayer
+- Hugging Face: https://huggingface.co/Math-Mind/astroslayer

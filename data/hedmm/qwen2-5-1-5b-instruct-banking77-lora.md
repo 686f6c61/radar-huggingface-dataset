@@ -77,8 +77,8 @@ El autor indica que las comparaciones entre métodos se acompañan de tests de M
 
 | Modelo | Parámetros | Contexto | Banking77 (accuracy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-1.5B + LoRA) | 1,5B + 18,5M | no disponible | 92,1% | Apache-2.0 | HuggingFace (11 descargas, 0 likes) |
-| Qwen2.5-1.5B-Instruct base (mismo prompt) | 1,5B | no disponible | 36,3% | Apache-2.0 | HuggingFace |
+| Este adaptador (Qwen2.5-1.5B + LoRA) | 1,5B + 18,5M | no disponible | 92,1% | Apache-2.0 | Hugging Face (11 descargas, 0 likes) |
+| Qwen2.5-1.5B-Instruct base (mismo prompt) | 1,5B | no disponible | 36,3% | Apache-2.0 | Hugging Face |
 | Qwen2.5-1.5B-Instruct con QLoRA (mismo estudio) | 1,5B + adaptador | no disponible | 91,5% | Apache-2.0 | Resultados en GitHub, adaptador no publicado como modelo |
 | Qwen2.5-1.5B-Instruct con ajuste fino completo (mismo estudio) | 1,5B | no disponible | 85,1% | Apache-2.0 | Resultados en GitHub, pesos no publicados |
 
@@ -97,7 +97,7 @@ No se dispone de datos de otros clasificadores específicos de Banking77 en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hedmm/qwen2.5-1.5b-instruct-banking77-lora
+- Modelo en Hugging Face: https://huggingface.co/Hedmm/qwen2.5-1.5b-instruct-banking77-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset Banking77: https://huggingface.co/datasets/PolyAI/banking77
 - Estudio comparativo (código, predicciones y logs): https://github.com/Hedmm/ml-case-studies/tree/main/lora-vs-qlora-vs-full-finetuning

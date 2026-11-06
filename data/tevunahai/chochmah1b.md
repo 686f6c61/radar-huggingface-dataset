@@ -82,7 +82,7 @@ No se dispone de resultados comparativos de benchmarks entre Chochmah-1B y alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TevunahAi/Chochmah1B
+- Modelo en Hugging Face: https://huggingface.co/TevunahAi/Chochmah1B
 - Modelo predecesor Chochmah-350M: https://huggingface.co/TevunahAi/Chochmah-350M
 - lm-evaluation-harness (framework de evaluación citado): https://github.com/EleutherAI/lm-evaluation-harness
 - Dataset HuggingFaceFW/fineweb-edu

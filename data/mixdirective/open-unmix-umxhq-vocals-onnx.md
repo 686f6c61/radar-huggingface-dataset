@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks formales (SDR, SIR, SAR u otros) en
 
 | Modelo | Arquitectura | Stems | Framework | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| open-unmix-umxhq-vocals-onnx | biLSTM sobre STFT de magnitud | Solo voces | ONNX Runtime | MIT | HuggingFace |
+| open-unmix-umxhq-vocals-onnx | biLSTM sobre STFT de magnitud | Solo voces | ONNX Runtime | MIT | Hugging Face |
 | Open-Unmix UMX-HQ (original) | biLSTM sobre STFT de magnitud | Voces, batería, bajo y otros (redes independientes) | PyTorch | MIT | GitHub de sigsep y Zenodo |
 | Demucs v4 (htdemucs) | Modelo híbrido de convoluciones y transformer | Voces, batería, bajo y otros | PyTorch | MIT | GitHub de Facebook Research |
 | Spleeter | Red de tipo U-Net sobre espectrograma | Configuraciones de 2, 4 y 5 stems | TensorFlow | MIT | GitHub de Deezer |
@@ -95,14 +95,14 @@ Frente al Open-Unmix original, esta exportación solo incluye la red de voces, p
 - No se distribuyen versiones cuantizadas (int8 u otras), lo que limita optimizaciones adicionales de latencia.
 - La evaluación publicada es informal y se realizó sobre cinco canciones, con una única tarea downstream (alineación de letras). No hay métricas formales de calidad de separación ni validación en un conjunto de test amplio.
 - El repositorio registra 0 descargas y 0 me gusta, por lo que no existe validación por parte de la comunidad.
-- Las fechas de creación y actualización del repositorio en HuggingFace aparecen como septiembre de 2026, un valor anómalo respecto a la fecha de publicación del modelo original.
+- Las fechas de creación y actualización del repositorio en Hugging Face aparecen como septiembre de 2026, un valor anómalo respecto a la fecha de publicación del modelo original.
 - La licencia MIT permite uso comercial, pero se debe conservar el aviso de copyright original (© 2019 Inria) y citar el trabajo de Open-Unmix.
 - Riesgo de sesgo de dominio: el modelo se entrenó sobre MUSDB18-HQ, un conjunto limitado de géneros y condiciones de grabación; el rendimiento puede degradarse en mezclas con características muy distintas.
 - No hay información sobre el tratamiento de voces cantadas en otros idiomas, coros densos, voces procesadas con efectos o mezclas monofónicas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MixDirective/open-unmix-umxhq-vocals-onnx
+- Modelo en Hugging Face: https://huggingface.co/MixDirective/open-unmix-umxhq-vocals-onnx
 - Repositorio de Open-Unmix: https://github.com/sigsep/open-unmix-pytorch
 - Pesos originales UMX-HQ en Zenodo: https://doi.org/10.5281/zenodo.3370489
 - Artículo de Open-Unmix (JOSS, 2019): https://doi.org/10.21105/joss.01667

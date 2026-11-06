@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mewra es un modelo publicado en HuggingFace por el usuario endercat-ai bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin traccion conocida en la comunidad.
+Mewra es un modelo publicado en Hugging Face por el usuario endercat-ai bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin traccion conocida en la comunidad.
 
-No hay informacion disponible sobre la arquitectura del modelo, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco se han publicado resultados de benchmarks ni documentacion adicional en el repositorio de HuggingFace. Cualquier evaluacion tecnica del modelo requeriria inspeccionar directamente los ficheros de pesos del repositorio, algo que no se ha podido hacer con la informacion proporcionada.
+No hay informacion disponible sobre la arquitectura del modelo, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco se han publicado resultados de benchmarks ni documentacion adicional en el repositorio de Hugging Face. Cualquier evaluacion tecnica del modelo requeriria inspeccionar directamente los ficheros de pesos del repositorio, algo que no se ha podido hacer con la informacion proporcionada.
 
 Por tanto, esta ficha se limita a documentar los datos verificables (autor, licencia, fechas de creacion y actualizacion, metricas de uso) e indica explicitamente "no disponible" en todos aquellos campos que la model card no cubre. Se recomienda precaucion antes de considerar el modelo para cualquier uso en produccion.
 
@@ -75,5 +75,5 @@ No disponible. Sin conocer el tamano, la arquitectura ni las capacidades del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/endercat-ai/mewra
+- Repositorio en Hugging Face: https://huggingface.co/endercat-ai/mewra
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

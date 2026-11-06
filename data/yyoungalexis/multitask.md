@@ -61,10 +61,10 @@ No hay modelos comparables directos en la información disponible, ya que se tra
 - **Riesgo de sesgos y alucinaciones**: no aplica, pero el autor advierte que no ha sido auditado para robustez, equidad o transferencia de dominio.
 - **Licencia**: BSD-3-Clause permite uso comercial, pero se debe revisar la licencia de los datos externos si se utiliza con conjuntos de datos propios.
 - **Falta de documentación**: el README es breve y no incluye ejemplos de uso detallados, lo que puede dificultar su adopción.
-- **Sin soporte de API genéricas**: no se puede cargar con `AutoModel` de HuggingFace; requiere un adaptador explícito.
+- **Sin soporte de API genéricas**: no se puede cargar con `AutoModel` de Hugging Face; requiere un adaptador explícito.
 - **Código en estado experimental**: la implementación es personalizada y no ha sido validada en entornos de producción.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/yyoungalexis/multitask
+- Repositorio de Hugging Face: https://huggingface.co/yyoungalexis/multitask
 - Paper original de MoCo v3 (referencia conceptual): https://arxiv.org/abs/2104.02057 (no incluido en la información proporcionada, se menciona como referencia general)

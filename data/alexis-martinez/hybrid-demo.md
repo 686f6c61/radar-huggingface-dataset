@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexis-martinez/hybrid-demo` es un repositorio de investigación publicado en HuggingFace por el usuario alexis-martinez que contiene un prototipo de arquitectura híbrida orientada a tareas de clasificación. No se trata de un modelo entrenado listo para uso en producción, sino de un esqueleto reproducible que incluye el código del modelo, la configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo (smoke tests).
+`alexis-martinez/hybrid-demo` es un repositorio de investigación publicado en Hugging Face por el usuario alexis-martinez que contiene un prototipo de arquitectura híbrida orientada a tareas de clasificación. No se trata de un modelo entrenado listo para uso en producción, sino de un esqueleto reproducible que incluye el código del modelo, la configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio declara explícitamente que no se presenta ningún resultado de benchmark ni evidencia de un entrenamiento completado. El checkpoint incluido no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Su valor, por tanto, es el de un punto de partida experimental para investigadores que quieran reproducir o adaptar la arquitectura, no el de un modelo utilizable directamente.
 
@@ -79,5 +79,5 @@ No disponible. No se conocen modelos comparables directos para este prototipo co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexis-martinez/hybrid-demo
+- Hugging Face: https://huggingface.co/alexis-martinez/hybrid-demo
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KarmaPro es un modelo publicado en HuggingFace por el usuario cphr bajo el identificador `cphr/KarmaPro`. En el momento de la consulta, la informacion disponible se limita a los metadatos del repositorio: la model card no contiene ninguna descripcion funcional, y el repositorio tiene un tamano de 0.0 GB, lo que sugiere que no se han subido pesos ni ficheros de configuracion. No hay informacion publica sobre la arquitectura, el numero de parametros, el contexto soportado ni el proceso de entrenamiento.
+KarmaPro es un modelo publicado en Hugging Face por el usuario cphr bajo el identificador `cphr/KarmaPro`. En el momento de la consulta, la informacion disponible se limita a los metadatos del repositorio: la model card no contiene ninguna descripcion funcional, y el repositorio tiene un tamano de 0.0 GB, lo que sugiere que no se han subido pesos ni ficheros de configuracion. No hay informacion publica sobre la arquitectura, el numero de parametros, el contexto soportado ni el proceso de entrenamiento.
 
 Los unicos datos declarados por el autor son la licencia Apache 2.0, el idioma ingles (`en`) y un conjunto de etiquetas: `karmapro`, `bayesian`, `ml`. La etiqueta `bayesian` podria apuntar a un enfoque probabilistico o de inferencia bayesiana, pero se trata de una etiqueta sin documentacion que la respalde, por lo que no puede confirmarse como caracteristica tecnica del modelo.
 
@@ -75,5 +75,5 @@ No disponible. No hay informacion suficiente para identificar la categoria del m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cphr/KarmaPro
+- Hugging Face: https://huggingface.co/cphr/KarmaPro
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

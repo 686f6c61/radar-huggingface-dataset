@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`manjt/email_digester` es un modelo de lenguaje de aproximadamente 3.090 millones de parámetros (3,09B) publicado en HuggingFace por el usuario `manjt` bajo licencia MIT. El nombre sugiere que está orientado a la digestión o resumen de correos electrónicos, y el tag `conversational` indica que está pensado para tareas de diálogo o chat. El repositorio contiene un archivo de pesos en formato GGUF (el tag `gguf` lo confirma) con un tamaño total de 1,9 GB, lo que apunta a una cuantización de baja precisión (probablemente Q4 o similar) para facilitar su ejecución en hardware modesto.
+`manjt/email_digester` es un modelo de lenguaje de aproximadamente 3.090 millones de parámetros (3,09B) publicado en Hugging Face por el usuario `manjt` bajo licencia MIT. El nombre sugiere que está orientado a la digestión o resumen de correos electrónicos, y el tag `conversational` indica que está pensado para tareas de diálogo o chat. El repositorio contiene un archivo de pesos en formato GGUF (el tag `gguf` lo confirma) con un tamaño total de 1,9 GB, lo que apunta a una cuantización de baja precisión (probablemente Q4 o similar) para facilitar su ejecución en hardware modesto.
 
 Sin embargo, la documentación es extremadamente escasa: la model card solo incluye la licencia, sin descripción de arquitectura, datos de entrenamiento, capacidades o benchmarks. Tampoco se especifican idiomas soportados ni la longitud de contexto. A pesar de su nombre, no hay evidencia pública de que el modelo haya sido entrenado específicamente para tareas de correo electrónico; podría tratarse de un modelo base o de chat genérico adaptado para ese fin. Su relevancia actual es limitada debido a la falta de información verificable, aunque su tamaño compacto y licencia permisiva lo hacen potencialmente interesante para prototipos de resumen de correo en entornos con recursos restringidos.
 
@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - manjt/email_digester](https://huggingface.co/manjt/email_digester)
+- [Hugging Face - manjt/email_digester](https://huggingface.co/manjt/email_digester)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) específicos de este modelo. Los resultados de búsqueda web corresponden a proyectos genéricos de digestión de correos que no están relacionados directamente con este modelo.

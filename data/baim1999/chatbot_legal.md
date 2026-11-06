@@ -78,7 +78,7 @@ No se puede establecer una comparativa de rendimiento por falta de datos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/baim1999/chatbot_legal
+- Hugging Face: https://huggingface.co/baim1999/chatbot_legal
 - Modelo base (unsloth/Llama-3.1-8B-Instruct-bnb-4bit): https://huggingface.co/unsloth/Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo relacionado (baim1999/llama3-legal-chatbot): https://huggingface.co/baim1999/llama3-legal-chatbot

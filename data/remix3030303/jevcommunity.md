@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JevCommunity (este repo) | 0.8B (+4B en cascada) | no disponible | Decisiones tipadas locales sobre Apple Silicon | MIT (repo) | HuggingFace, 0 descargas |
+| JevCommunity (este repo) | 0.8B (+4B en cascada) | no disponible | Decisiones tipadas locales sobre Apple Silicon | MIT (repo) | Hugging Face, 0 descargas |
 | TypeSafe Jev (hospedado) | no disponible | no disponible | Decisiones tipadas, API alojada | propietaria | Servicio comercial |
-| Kev-0.8B (`jaredpalmer/kev-0.8b`) | 0.8B | no disponible | Decisiones tipadas, stack abierto | Apache-2.0 (stack) | HuggingFace |
-| Kev-4B (`AbstractFramework/kev-4b-mlx-4bit`) | 4B | no disponible | Decisiones tipadas, cuantizado MLX | no disponible | HuggingFace |
+| Kev-0.8B (`jaredpalmer/kev-0.8b`) | 0.8B | no disponible | Decisiones tipadas, stack abierto | Apache-2.0 (stack) | Hugging Face |
+| Kev-4B (`AbstractFramework/kev-4b-mlx-4bit`) | 4B | no disponible | Decisiones tipadas, cuantizado MLX | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,10 +92,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/remix3030303/jevcommunity
+- Repositorio en Hugging Face: https://huggingface.co/remix3030303/jevcommunity
 - Stack Kev (Jared Palmer): https://github.com/jaredpalmer/kev
-- Pesos por defecto: `jaredpalmer/kev-0.8b@v1.0` (HuggingFace)
-- Pesos de escalado: `AbstractFramework/kev-4b-mlx-4bit` (HuggingFace)
-- Backbone declarado: `Qwen/Qwen3.5-0.8B-Base` (HuggingFace)
+- Pesos por defecto: `jaredpalmer/kev-0.8b@v1.0` (Hugging Face)
+- Pesos de escalado: `AbstractFramework/kev-4b-mlx-4bit` (Hugging Face)
+- Backbone declarado: `Qwen/Qwen3.5-0.8B-Base` (Hugging Face)
 - Patrocinio del autor: https://github.com/sponsors/syrex1013
 - Guia y cliente de ejemplo: `GUIDE.md` y `example_single.py` dentro del repositorio

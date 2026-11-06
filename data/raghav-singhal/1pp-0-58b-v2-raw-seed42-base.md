@@ -39,7 +39,7 @@ El preentrenamiento usa los documentos originales de DCLM-edu, con perdida sobre
 
 ## Casos de uso
 
-- Reproduccion de experimentos de escalado: el checkpoint permite recalcular las perdidas de validacion publicadas y verificar la equivalencia entre los pesos de HuggingFace y el checkpoint de Megatron, con diferencias absolutas documentadas de 0,0015 y 0,0019.
+- Reproduccion de experimentos de escalado: el checkpoint permite recalcular las perdidas de validacion publicadas y verificar la equivalencia entre los pesos de Hugging Face y el checkpoint de Megatron, con diferencias absolutas documentadas de 0,0015 y 0,0019.
 - Estudios controlados de condicion de preentrenamiento: al compartir flujo de datos y orden de lotes con las otras condiciones de la ladder, sirve para aislar el efecto del texto del documento y de la mascara de perdida sobre el comportamiento final.
 - Analisis de variabilidad por semilla: junto con las semillas 28 y 1234 del mismo tamano, permite medir la dispersion de resultados atribuible unicamente a la inicializacion.
 - Evaluacion de modelos base a pequena escala: con 0,58B parametros y contexto de 4.096 tokens, es adecuado como linea base en pruebas de perplejidad sobre corpus educativos o tecnicos en ingles.
@@ -77,10 +77,10 @@ Verificacion de pesos frente al checkpoint de Megatron:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-raw-seed42-base | 0,58B | 4.096 | Apache 2.0 | HuggingFace | Modelo base de investigacion, solo ingles |
-| 1pp-0.98b-v2-raw-seed42-base | 0,98B | 4.096 | Apache 2.0 | HuggingFace (misma coleccion) | Escalon superior de la misma ladder |
-| 1pp-1.66b-v2-raw-seed42-base | 1,66B | 4.096 | Apache 2.0 | HuggingFace (misma coleccion) | Escalon equivalente al conjunto de 1,7B del estudio principal |
-| SmolLM2 (tamano pequeno) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | HuggingFace | Comparte vocabulario (49.152), pero no se dispone de datos comparativos de rendimiento |
+| 1pp-0.58b-v2-raw-seed42-base | 0,58B | 4.096 | Apache 2.0 | Hugging Face | Modelo base de investigacion, solo ingles |
+| 1pp-0.98b-v2-raw-seed42-base | 0,98B | 4.096 | Apache 2.0 | Hugging Face (misma coleccion) | Escalon superior de la misma ladder |
+| 1pp-1.66b-v2-raw-seed42-base | 1,66B | 4.096 | Apache 2.0 | Hugging Face (misma coleccion) | Escalon equivalente al conjunto de 1,7B del estudio principal |
+| SmolLM2 (tamano pequeno) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Hugging Face | Comparte vocabulario (49.152), pero no se dispone de datos comparativos de rendimiento |
 
 No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa con alternativas.
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed42-base
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de entrenamiento (wandb, SFT): https://wandb.ai/raghav_singhal/1pp-sft

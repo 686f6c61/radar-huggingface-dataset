@@ -117,7 +117,7 @@ Alternativas externas de la misma categoria (MoE dispersos de gran tamano total 
 
 ## Enlaces
 
-- Adaptador v6.3 en HuggingFace: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6.3
+- Adaptador v6.3 en Hugging Face: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6.3
 - Modelo base: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 - Pesos fusionados en bf16 (v6.3): https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-v6.3
 - Ejemplo de ajuste fino (en el repositorio): `finetune_chat_lora.py`

@@ -114,7 +114,7 @@ Comparacion con modelos de otras familias (por ejemplo otros MoE abliterados de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Huihui-Sangreal-MTP-ICE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Huihui-Sangreal-MTP-ICE-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Maestro BF16 del que derivan los cinco niveles: https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Abliterated-CyberTiel-Calibrated-MTPv2-ICE-GGUF
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo (los resultados devueltos corresponden a la temporada 2025-26 de la NBA y no guardan relacion con el modelo).

@@ -4,7 +4,7 @@
 
 El modelo **6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4** es un text encoder multimodal basado en la arquitectura Qwen3-VL, adaptado para su uso como componente de condicionamiento en el ecosistema de generación de vídeo MiniMax-H3. Ha sido sometido a un proceso de "abliteration" (eliminación de los mecanismos de rechazo de seguridad) y posteriormente cuantizado en formato NVFP4, lo que reduce su huella de memoria y acelera la inferencia en hardware compatible. El modelo está pensado para integrarse en flujos de trabajo de ComfyUI y otros pipelines que requieran un encoder de texto con capacidades de visión, especialmente para la generación de vídeo a partir de descripciones textuales.
 
-Desarrollado por el usuario 6block y publicado bajo la licencia comunitaria de MiniMax, este modelo se apoya en el text encoder original de Qwen3-VL (presumiblemente la variante de 32B, según el nombre del archivo de referencia en Comfy-Org) y lo adapta a las necesidades específicas de MiniMax-H3. Al ser una versión abliterada, pierde las restricciones de contenido que incorpora el modelo original, lo que permite generar respuestas sin censura, aunque con los riesgos asociados. El repositorio ocupa 17,9 GB y requiere aceptación de términos en HuggingFace (acceso restringido).
+Desarrollado por el usuario 6block y publicado bajo la licencia comunitaria de MiniMax, este modelo se apoya en el text encoder original de Qwen3-VL (presumiblemente la variante de 32B, según el nombre del archivo de referencia en Comfy-Org) y lo adapta a las necesidades específicas de MiniMax-H3. Al ser una versión abliterada, pierde las restricciones de contenido que incorpora el modelo original, lo que permite generar respuestas sin censura, aunque con los riesgos asociados. El repositorio ocupa 17,9 GB y requiere aceptación de términos en Hugging Face (acceso restringido).
 
 ## Especificaciones tecnicas
 
@@ -54,23 +54,23 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: el repositorio ocupa 17,9 GB, por lo que se necesita al menos 20 GB de VRAM para cargar el modelo en memoria. Con NVFP4, el uso real puede ser menor, pero no se especifica.
 - GPU recomendadas: GPUs NVIDIA con soporte NVFP4, como las series H100, A100 (con soporte de cuantizacion) o RTX 4090 (si soporta NVFP4; se requiere verificacion). Para ComfyUI, una GPU con al menos 24 GB de VRAM es recomendable.
 - Compatibilidad con consumer GPU: posible en RTX 4090 (24 GB) o RTX 3090 (24 GB) si el formato es compatible, aunque NVFP4 puede no estar soportado en todas las arquitecturas.
-- Opciones de despliegue: ComfyUI, principalmente. Tambien puede usarse con la libreria minimax-h3 de HuggingFace, aunque no se documenta soporte para vLLM u Ollama.
+- Opciones de despliegue: ComfyUI, principalmente. Tambien puede usarse con la libreria minimax-h3 de Hugging Face, aunque no se documenta soporte para vLLM u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-32B (original) | 32B | 128K | BF16/FP8 | Apache 2.0 | Publico en HuggingFace |
+| Qwen3-VL-32B (original) | 32B | 128K | BF16/FP8 | Apache 2.0 | Publico en Hugging Face |
 | Qwen3-VL-4B Abliterated (ComfyUI) | 4B | no disponible | BF16/FP8 | no disponible | Civitai |
-| Este modelo (MiniMax-H3-Qwen3-VL) | no disponible (posible 32B) | no disponible | NVFP4 | MiniMax Community | Gated en HuggingFace |
+| Este modelo (MiniMax-H3-Qwen3-VL) | no disponible (posible 32B) | no disponible | NVFP4 | MiniMax Community | Gated en Hugging Face |
 
 La comparativa es limitada por falta de datos. Este modelo se distingue por su cuantizacion NVFP4 y su integracion especifica con MiniMax-H3, mientras que las alternativas son versiones generales de Qwen3-VL.
 
 ## Limitaciones y advertencias
 
 - **Abliteration**: al eliminar los rechazos de seguridad, el modelo puede generar contenido inapropiado, ofensivo o peligroso. No es apto para uso en produccion sin un filtrado adicional.
-- **Acceso restringido**: requiere aceptar los terminos de la licencia en HuggingFace, lo que limita su uso a quienes cumplan las condiciones.
+- **Acceso restringido**: requiere aceptar los terminos de la licencia en Hugging Face, lo que limita su uso a quienes cumplan las condiciones.
 - **Licencia MiniMax Community**: puede tener restricciones para uso comercial; se debe revisar el texto completo de la licencia.
 - **Idiomas limitados**: solo ingles y chino; no soporta otros idiomas de forma nativa.
 - **Sesgos potenciales**: al ser una version abliterada, los sesgos del modelo original pueden amplificarse, especialmente en temas sensibles.
@@ -80,10 +80,10 @@ La comparativa es limitada por falta de datos. Este modelo se distingue por su c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4)
+- [Modelo en Hugging Face](https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4)
 - [Repositorio Comfy-Org/MiniMax-H3 (modelo base)](https://huggingface.co/Comfy-Org/MiniMax-H3)
 - [Archivo de text encoder de referencia (qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors)](https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors)
-- [Documentacion de Qwen3-VL en HuggingFace](https://huggingface.co/docs/transformers/model_doc/qwen3_vl)
+- [Documentacion de Qwen3-VL en Hugging Face](https://huggingface.co/docs/transformers/model_doc/qwen3_vl)
 - [Repositorio GitHub de Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - [Lista de recursos sobre MiniMax-H3 (awesome-minimax-H3)](https://github.com/wildminder/awesome-minimax-H3)
 - [Modelo Qwen3-VL 4B Abliterated en Civitai](https://civitai.red/models/2731465/qwen3-vl-4b-abliterated-comfyui-krea-2-text-encoder-bf16-fp8)

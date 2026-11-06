@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (EXL3 3,50 bpw) | 7.494.374.784 segun safetensors (base descrito como 27B) | 262.144 | EXL3 3,50 bpw, KV int4 | Apache-2.0 | HuggingFace, requiere vLLM + exllamav3 + plugin |
-| Jackrong/Qwopus3.8-27B-Coder-Flash (BF16) | 27B (descripcion del autor) | 262.144 | BF16 | Apache-2.0 | HuggingFace, modelo base |
+| Este modelo (EXL3 3,50 bpw) | 7.494.374.784 segun safetensors (base descrito como 27B) | 262.144 | EXL3 3,50 bpw, KV int4 | Apache-2.0 | Hugging Face, requiere vLLM + exllamav3 + plugin |
+| Jackrong/Qwopus3.8-27B-Coder-Flash (BF16) | 27B (descripcion del autor) | 262.144 | BF16 | Apache-2.0 | Hugging Face, modelo base |
 | Build de 2,25 bpw del mismo modelo | no disponible | 236k por sesion, 2 sesiones concurrentes | EXL3 2,25 bpw | Apache-2.0 | No publicado |
 
 El autor indica que el build de 2,25 bpw tiene una divergencia KL aproximadamente siete veces mayor y muchos mas bucles de repeticion, por lo que no lo publico. No se dispone de comparaciones con otros modelos de la misma categoria en la informacion proporcionada.
@@ -105,7 +105,7 @@ El autor indica que el build de 2,25 bpw tiene una divergencia KL aproximadament
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JRamirez-UAB/Qwopus3.8-27B-Coder-Flash-EXL3-3.50bpw-24GB
+- Repositorio Hugging Face: https://huggingface.co/JRamirez-UAB/Qwopus3.8-27B-Coder-Flash-EXL3-3.50bpw-24GB
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - exllamav3: https://github.com/turboderp-org/exllamav3
 - Paper de referencia citado en los tags: arxiv:2406.11235

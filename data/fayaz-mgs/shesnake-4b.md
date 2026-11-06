@@ -83,9 +83,9 @@ Resultados declarados por el autor, medidos localmente con evalplus==0.3.1, una 
 
 | Modelo | Parametros | Formato y cuantizacion | HumanEval | HumanEval+ | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| SheSnake-4B (este modelo) | 4,02 mil millones (3,67 M entrenables) | Adaptador MLX sobre base 4-bit | 140/164 (85,4 %) | 130/164 (79,3 %) | apache-2.0 (datos MBPP CC BY 4.0) | Publicado en HuggingFace; 0 descargas, 0 likes; export safetensors pendiente |
+| SheSnake-4B (este modelo) | 4,02 mil millones (3,67 M entrenables) | Adaptador MLX sobre base 4-bit | 140/164 (85,4 %) | 130/164 (79,3 %) | apache-2.0 (datos MBPP CC BY 4.0) | Publicado en Hugging Face; 0 descargas, 0 likes; export safetensors pendiente |
 | Qwen3-4B-Instruct-2507 sin ajustar | 4,02 mil millones | Base del adaptador; checkpoint MLX 4-bit | no disponible (ejecucion completa no realizada) | solo puerta de 10 tareas: 9/10 | Apache-2.0 | Ampliamente disponible |
-| mlx-community/Ministral-3-3B-Instruct-2512-4bit | aproximadamente 3 mil millones | MLX 4-bit | 124/164 (75,6 %) | 117/164 (71,3 %) | no disponible | Disponible en HuggingFace |
+| mlx-community/Ministral-3-3B-Instruct-2512-4bit | aproximadamente 3 mil millones | MLX 4-bit | 124/164 (75,6 %) | 117/164 (71,3 %) | no disponible | Disponible en Hugging Face |
 
 Nota: la comparacion procede integramente de la model card del autor y corresponde a mediciones locales emparejadas sobre checkpoints 4-bit concretos, con tokenizers, plantillas de chat y paquetes de serving propios de cada modelo, lo que el propio autor senala como posible factor de confusion.
 
@@ -106,7 +106,7 @@ Nota: la comparacion procede integramente de la model card del autor y correspon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fayaz-mgs/shesnake-4b
+- Modelo en Hugging Face: https://huggingface.co/fayaz-mgs/shesnake-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint base MLX 4-bit: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit (revision 50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b)
 - Repositorio del proyecto, con metodo, codigo y evidencia agregada: https://github.com/abrarf316/SheSnake-4B

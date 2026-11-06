@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ibm-research/qaoa_angles.max_cut.p2.mlp` es un artefacto publicado por IBM Research en HuggingFace bajo licencia Apache 2.0. Por el propio identificador del repositorio, todo apunta a un modelo de tipo MLP (perceptrón multicapa) cuya funcion seria predecir los angulos (`beta`, `gamma`) del algoritmo QAOA (Quantum Approximate Optimization Algorithm) para instancias del problema Max-Cut con profundidad `p=2`. No obstante, la model card publicada no contiene ninguna descripcion, y el resto de metadatos son minimos, por lo que esta interpretacion no puede confirmarse con la informacion disponible.
+El repositorio `ibm-research/qaoa_angles.max_cut.p2.mlp` es un artefacto publicado por IBM Research en Hugging Face bajo licencia Apache 2.0. Por el propio identificador del repositorio, todo apunta a un modelo de tipo MLP (perceptrón multicapa) cuya funcion seria predecir los angulos (`beta`, `gamma`) del algoritmo QAOA (Quantum Approximate Optimization Algorithm) para instancias del problema Max-Cut con profundidad `p=2`. No obstante, la model card publicada no contiene ninguna descripcion, y el resto de metadatos son minimos, por lo que esta interpretacion no puede confirmarse con la informacion disponible.
 
 El problema que resolveria un modelo de este tipo es conocido en el ambito de la computacion cuantica variacional: QAOA requiere optimizar iterativamente un conjunto de parametros variacionales, lo que consume gran cantidad de llamadas al circuito cuantico y es uno de sus principales cuellos de botella. Un MLP entrenado para aproximar esos angulos a partir de caracteristicas del grafo permitiria inicializar o predecir directamente buenos parametros, reduciendo el coste de optimizacion en bucle. Su relevancia actual se enmarca en los flujos de trabajo hibridos cuantico-clasico y en las estrategias de transferencia de parametros.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.mlp
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.mlp
 - No se han encontrado en la busqueda web enlaces especificos a papers, blogs, repositorios o demos asociados a este modelo. Los resultados obtenidos corresponden a paginas generales de IBM sin relacion directa con el artefacto.

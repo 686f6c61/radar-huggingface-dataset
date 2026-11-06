@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ROMA-8B-GGUF es la coleccion de cuantizaciones en formato GGUF del modelo ROMA-8B, publicado originalmente por el usuario lr10260 en HuggingFace. El trabajo de cuantizacion lo firma mradermacher, un conocido empaquetador de modelos en GGUF que distribuye versiones optimizadas para inferencia local con llama.cpp y ecosistemas compatibles. El modelo base tiene 8.190.735.360 parametros (aproximadamente 8,2 mil millones), lo que lo situa en la categoria de modelos de talla media.
+ROMA-8B-GGUF es la coleccion de cuantizaciones en formato GGUF del modelo ROMA-8B, publicado originalmente por el usuario lr10260 en Hugging Face. El trabajo de cuantizacion lo firma mradermacher, un conocido empaquetador de modelos en GGUF que distribuye versiones optimizadas para inferencia local con llama.cpp y ecosistemas compatibles. El modelo base tiene 8.190.735.360 parametros (aproximadamente 8,2 mil millones), lo que lo situa en la categoria de modelos de talla media.
 
 La relevancia de esta publicacion es practica: permite ejecutar ROMA-8B en hardware de consumo mediante cuantizaciones que van desde Q2_K (3,4 GB) hasta f16 (16,5 GB), ademas de incluir ficheros mmproj que apuntan a capacidades multimodales (vision) en el modelo original. El repositorio esta etiquetado como conversacional y orientado al idioma ingles.
 
@@ -32,7 +32,7 @@ Tampoco constan datos sobre el corpus de entrenamiento (numero de tokens, compos
 - Generacion de texto conversacional: el repositorio esta etiquetado como "conversational", lo que sugiere un ajuste orientado a dialogo multi-turno.
 - Procesamiento multimodal: la presencia de ficheros mmproj-Q8_0 y mmproj-f16 indica soporte de entrada de imagenes (vision) en el modelo base.
 - Idiomas: el modelo declara unicamente ingles como idioma soportado.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere integracion con infraestructura de inferencia tipo HuggingFace Endpoints o APIs compatibles.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere integracion con infraestructura de inferencia tipo Hugging Face Endpoints o APIs compatibles.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Modo thinking, audio u otras capacidades especiales: no disponible.

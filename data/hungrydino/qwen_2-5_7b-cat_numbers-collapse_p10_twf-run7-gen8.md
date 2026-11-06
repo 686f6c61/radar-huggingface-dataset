@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tune del Qwen2.5-7B-Instruct, desarrollado por HungryDino, que aplica un ajuste especializado sobre la arquitectura base de Qwen2.5. El nombre del repositorio sugiere un entrenamiento orientado a la categorización de números con una técnica de colapso de etiquetas (posiblemente relacionada con "collapse" en el contexto de aprendizaje por refuerzo o destilación), aunque no se proporcionan detalles específicos sobre el dataset o el procedimiento exacto. El modelo se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
-La relevancia de este modelo radica en que parte de una base sólida como Qwen2.5-7B-Instruct, que ya ofrece buenas capacidades de razonamiento y generación en inglés, y lo adapta a una tarea concreta mediante fine-tuning. El repositorio tiene un tamaño de 0.1 GB, lo que indica que se trata de un adaptador LoRA o un fine-tune con pesos parciales, no de un modelo completo de 7B. No se especifica el pipeline de uso, pero al estar etiquetado con transformers y text-generation-inference, se puede cargar con la librería estándar de HuggingFace.
+La relevancia de este modelo radica en que parte de una base sólida como Qwen2.5-7B-Instruct, que ya ofrece buenas capacidades de razonamiento y generación en inglés, y lo adapta a una tarea concreta mediante fine-tuning. El repositorio tiene un tamaño de 0.1 GB, lo que indica que se trata de un adaptador LoRA o un fine-tune con pesos parciales, no de un modelo completo de 7B. No se especifica el pipeline de uso, pero al estar etiquetado con transformers y text-generation-inference, se puede cargar con la librería estándar de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Qwen2.
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen2.5-7B-Instruct, que emplea una arquitectura transformer decoder-only con atención de consultas agrupadas (GQA) y una ventana de contexto de 32 768 tokens. El fine-tune fue realizado con la librería Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la biblioteca TRL de HuggingFace, lo que sugiere el uso de técnicas de ajuste supervisado (SFT) o aprendizaje por refuerzo (RLHF/DPO). El nombre "cat_numbers-collapse_p10_twf" sugiere un entrenamiento específico para tareas de categorización de números con algún tipo de colapso de etiquetas (posiblemente en el contexto de clasificación o regresión), pero no se proporcionan detalles sobre el dataset, el número de tokens de entrenamiento ni la composición exacta. El tamaño del repositorio (0.1 GB) indica que se trata de un adaptador LoRA o un fine-tune parcial, no de una actualización completa de los pesos.
+El modelo base es Qwen2.5-7B-Instruct, que emplea una arquitectura transformer decoder-only con atención de consultas agrupadas (GQA) y una ventana de contexto de 32 768 tokens. El fine-tune fue realizado con la librería Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la biblioteca TRL de Hugging Face, lo que sugiere el uso de técnicas de ajuste supervisado (SFT) o aprendizaje por refuerzo (RLHF/DPO). El nombre "cat_numbers-collapse_p10_twf" sugiere un entrenamiento específico para tareas de categorización de números con algún tipo de colapso de etiquetas (posiblemente en el contexto de clasificación o regresión), pero no se proporcionan detalles sobre el dataset, el número de tokens de entrenamiento ni la composición exacta. El tamaño del repositorio (0.1 GB) indica que se trata de un adaptador LoRA o un fine-tune parcial, no de una actualización completa de los pesos.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: al tratarse de un adaptador LoRA (0.1 GB), se puede cargar sobre el modelo base de 7B, que requiere aproximadamente 15 GB en FP16 o 8 GB en cuantizacion INT8. Con cuantizacion de 4 bits, cabria en GPUs con 6 GB de VRAM.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16, o GPUs con al menos 8 GB para cuantizacion 4 bits. Para servidores, A100 o H100.
 - Si cabe en consumer GPU: si, con cuantizacion (por ejemplo, usando bitsandbytes o llama.cpp).
-- Opciones de despliegue: vLLM, HuggingFace TGI, llama.cpp, Ollama (si se convierte a GGUF), o directamente con transformers.
+- Opciones de despliegue: vLLM, Hugging Face TGI, llama.cpp, Ollama (si se convierte a GGUF), o directamente con transformers.
 - Latencia y throughput estimados: no disponibles para este fine-tune especifico; el modelo base de 7B suele generar entre 20 y 50 tokens por segundo en una RTX 4090 con cuantizacion 4 bits.
 
 ## Comparativa con modelos similares
@@ -59,8 +59,8 @@ No se dispone de informacion sobre modelos comparables especificos. Como referen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7.6B | 32 768 | Apache-2.0 | HuggingFace |
-| Este fine-tune | 7.6B (adaptador) | 32 768 | Apache-2.0 | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7.6B | 32 768 | Apache-2.0 | Hugging Face |
+| Este fine-tune | 7.6B (adaptador) | 32 768 | Apache-2.0 | Hugging Face |
 | Otros fine-tunes de Qwen2.5 | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos comparables especificos. Como referen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen8
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen8
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Reporte tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Guia de Qwen2.5 con Ollama: https://ai-ollama.github.io/qwen-2-5.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Karaterkje/Eloh22.1` es un modelo publicado en HuggingFace por el autor Karaterkje el 15 de agosto de 2026. La única información disponible en su model card es la licencia `openrail`, que permite uso comercial y modificación. No se ha publicado ninguna especificación técnica, descripción de capacidades, datos de entrenamiento ni resultados de benchmarks. El repositorio no incluye documentación adicional, y el número de descargas es cero, lo que sugiere que se trata de una publicación reciente o sin difusión. Debido a la ausencia total de datos técnicos, no es posible evaluar su arquitectura, tamaño, contexto ni rendimiento. Esta ficha se limita a reflejar la información disponible y marca como "no disponible" cualquier dato no especificado.
+El modelo `Karaterkje/Eloh22.1` es un modelo publicado en Hugging Face por el autor Karaterkje el 15 de agosto de 2026. La única información disponible en su model card es la licencia `openrail`, que permite uso comercial y modificación. No se ha publicado ninguna especificación técnica, descripción de capacidades, datos de entrenamiento ni resultados de benchmarks. El repositorio no incluye documentación adicional, y el número de descargas es cero, lo que sugiere que se trata de una publicación reciente o sin difusión. Debido a la ausencia total de datos técnicos, no es posible evaluar su arquitectura, tamaño, contexto ni rendimiento. Esta ficha se limita a reflejar la información disponible y marca como "no disponible" cualquier dato no especificado.
 
 ## Especificaciones técnicas
 
@@ -50,4 +50,4 @@ No disponible. Sin datos sobre el tamaño, la arquitectura o el rendimiento del 
 
 ## Enlaces
 
-- [HuggingFace - Karaterkje/Eloh22.1](https://huggingface.co/Karaterkje/Eloh22.1)
+- [Hugging Face - Karaterkje/Eloh22.1](https://huggingface.co/Karaterkje/Eloh22.1)

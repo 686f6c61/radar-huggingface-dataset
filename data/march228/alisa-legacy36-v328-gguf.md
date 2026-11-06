@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alisa Legacy36 v328 es un checkpoint conversacional de tipo GPT-2 exportado al formato GGUF para su uso con `llama.cpp`. Lo publica el usuario march228 en HuggingFace y se trata de la version cuantizada del checkpoint `legacy36_v328_top12_stability_replay512_1070ti_20260910` (paso 512), el ultimo modelo de 36 capas de la linea Legacy36/Alice del autor. Con 295.363.584 parametros (~295 M) es un modelo denso de tamano pequeno, pensado para inferencia en hardware de consumo.
+Alisa Legacy36 v328 es un checkpoint conversacional de tipo GPT-2 exportado al formato GGUF para su uso con `llama.cpp`. Lo publica el usuario march228 en Hugging Face y se trata de la version cuantizada del checkpoint `legacy36_v328_top12_stability_replay512_1070ti_20260910` (paso 512), el ultimo modelo de 36 capas de la linea Legacy36/Alice del autor. Con 295.363.584 parametros (~295 M) es un modelo denso de tamano pequeno, pensado para inferencia en hardware de consumo.
 
 Arquitectonicamente es un transformer decoder-only estilo GPT-2: 36 capas, hidden size 768, 12 cabezas de atencion, ventana de contexto de 2048 tokens y vocabulario de 50.294 entradas. El repositorio distribuye cinco cuantizaciones (F16, Q4_K_M, Q5_K_M, Q6_K y Q8_0) con un total de 1,6 GB, de modo que la variante recomendada por el autor (Q4_K_M) ocupa del orden de 180 MB en disco.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y muy nicho: no compite con los modelos pequenos actua
 | Vocabulario | 50.294 tokens |
 | Tamano del repositorio | 1,6 GB |
 | Checkpoint de origen | legacy36_v328_top12_stability_replay512_1070ti_20260910, paso 512 |
-| Fecha de creacion en HuggingFace | 2026-09-26 |
+| Fecha de creacion en Hugging Face | 2026-09-26 |
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ No hay informacion publicada sobre el volumen de tokens de entrenamiento, la com
 - Uso conversacional basico: la etiqueta `conversational` del repositorio indica que esta orientado a mantener dialogos de varios turnos, aunque no se documenta ningun formato de plantilla de chat.
 - Generacion con contexto de hasta 2048 tokens, suficiente para conversaciones cortas o fragmentos de texto breves.
 - Inferencia local en CPU y GPU mediante `llama.cpp` gracias al formato GGUF.
-- Marcado como `endpoints_compatible`, lo que apunta a compatibilidad con el esquema de endpoints de HuggingFace Inference Endpoints, aunque no se detalla la configuracion.
+- Marcado como `endpoints_compatible`, lo que apunta a compatibilidad con el esquema de endpoints de Hugging Face Inference Endpoints, aunque no se detalla la configuracion.
 - Soporte de tool calling / function calling: no disponible (no se declara).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se declara, y un modelo de ~295 M sin entrenamiento especifico no suele ofrecerlo de forma fiable).
 - Capacidades multilingues: no disponibles (no se declara ningun idioma).
@@ -97,6 +97,6 @@ La diferencia practica mas relevante frente a GPT-2 original es la ventana de co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/march228/alisa-legacy36-v328-gguf
+- Repositorio en Hugging Face: https://huggingface.co/march228/alisa-legacy36-v328-gguf
 - `llama.cpp` (repositorio mencionado en la model card como destino de la exportacion): https://github.com/ggerganov/llama.cpp
 - Paper, blog, demo o repositorio adicionales: no disponibles en la informacion proporcionada.

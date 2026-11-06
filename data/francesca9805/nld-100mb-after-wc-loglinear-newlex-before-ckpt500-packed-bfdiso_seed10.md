@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10` es un modelo de generación de texto publicado por el usuario de HuggingFace `francesca9805`. Se trata de un ajuste fino (SFT) realizado con la librería TRL sobre el modelo base `francesca9805/ppt-wc-loglinear-newlex-nld-before-100mb-packed-bfdiso_seed10`. Por el tag `gpt2` y por su recuento de parámetros (124.770.816, aproximadamente 124,8 millones), encaja en la familia de arquitecturas transformer decoder-only tipo GPT-2 small.
+El modelo `nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10` es un modelo de generación de texto publicado por el usuario de Hugging Face `francesca9805`. Se trata de un ajuste fino (SFT) realizado con la librería TRL sobre el modelo base `francesca9805/ppt-wc-loglinear-newlex-nld-before-100mb-packed-bfdiso_seed10`. Por el tag `gpt2` y por su recuento de parámetros (124.770.816, aproximadamente 124,8 millones), encaja en la familia de arquitecturas transformer decoder-only tipo GPT-2 small.
 
 El identificador del modelo y el del modelo base sugieren un experimento de investigación centrado en tokenización y modelado de lenguaje: los fragmentos "loglinear", "newlex", "before-ckpt500" y "100mb" apuntan a una línea de trabajo sobre vocabularios, tokenizadores nuevos y volúmenes de datos de entrenamiento de unos 100 MB. La ejecución de entrenamiento asociada está alojada en Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen, lo que refuerza la hipótesis de un contexto académico, aunque la model card no lo confirma explícitamente.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (no confirmada, calculada a partir del tamano): en FP32 en torno a 0,5 GB; en FP16/BF16 aproximadamente 0,25 GB; en cuantizacion de 8 bits alrededor de 0,13 GB; en 4 bits alrededor de 0,07 GB (pesos, sin contar activaciones ni cache KV).
 - GPU recomendadas: cualquier GPU moderna es suficiente; una RTX 3060, RTX 4090, A100 o H100 estan sobradamente dimensionadas para un modelo de este tamano. Tambien es viable la ejecucion en CPU.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo, e incluso en CPU y en dispositivos con poca memoria.
-- Opciones de despliegue: por libreria, transformers y text-generation-inference (TGI) segun los tags; llama.cpp, Ollama o vLLM no estan confirmados en la informacion, aunque el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: por libreria, transformers y text-generation-inference (TGI) segun los tags; llama.cpp, Ollama o vLLM no estan confirmados en la informacion, aunque el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles.
 
 Nota: el repositorio ocupa 8,2 GB, un tamano desproporcionado para 124,8 millones de parametros, lo que sugiere la presencia de checkpoints adicionales u otros artefactos de entrenamiento, no solo los pesos finales.
@@ -66,7 +66,7 @@ Nota: el repositorio ocupa 8,2 GB, un tamano desproporcionado para 124,8 millone
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nld-100mb-after-wc-loglinear-newlex-before-ckpt500 (este modelo) | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| nld-100mb-after-wc-loglinear-newlex-before-ckpt500 (este modelo) | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | MIT (segun OpenAI) | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT (segun OpenAI) | Ampliamente disponible |
 | GPT-2 medium | 355 M | 1024 tokens | MIT (segun OpenAI) | Ampliamente disponible |
@@ -87,7 +87,7 @@ La comparativa de rendimiento no esta disponible: no se han publicado benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-nld-before-100mb-packed-bfdiso_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4kiti830

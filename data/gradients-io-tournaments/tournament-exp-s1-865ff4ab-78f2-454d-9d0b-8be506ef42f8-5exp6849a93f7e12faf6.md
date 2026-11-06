@@ -23,8 +23,8 @@ Su relevancia actual es limitada y muy acotada: no es un modelo listo para produ
 | Tamano del repositorio | 0,3 GB |
 | Autor / organizacion | gradients-io-tournaments |
 | Pipeline declarado | no disponible |
-| Fecha de creacion (HuggingFace) | 2026-09-13 |
-| Ultima actualizacion (HuggingFace) | 2026-09-13 |
+| Fecha de creacion (Hugging Face) | 2026-09-13 |
+| Ultima actualizacion (Hugging Face) | 2026-09-13 |
 | Descargas | 0 |
 | Likes | 2 |
 
@@ -80,11 +80,11 @@ La comparativa se establece por rango de parametros. Los datos de los modelos al
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (tournament-exp-s1) | 134,5 M | no disponible | no disponible | HuggingFace, safetensors |
-| SmolLM2-135M | ~135 M | 2.048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama 3.2 1B | ~1.240 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors y GGUF |
-| TinyLlama-1.1B | ~1.100 M | 2.048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| Este modelo (tournament-exp-s1) | 134,5 M | no disponible | no disponible | Hugging Face, safetensors |
+| SmolLM2-135M | ~135 M | 2.048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama 3.2 1B | ~1.240 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors y GGUF |
+| TinyLlama-1.1B | ~1.100 M | 2.048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 Frente a estas alternativas, el modelo aqui descrito carece de licencia declarada, de ficha tecnica, de resultados de evaluacion y de cuantizaciones listas para usar, por lo que no es comparable en madurez aunque su tamaño sea similar al de SmolLM2-135M.
 
@@ -98,12 +98,12 @@ Frente a estas alternativas, el modelo aqui descrito carece de licencia declarad
 - Longitud de contexto desconocida: no se puede dimensionar el uso con documentos largos ni con conversaciones multi-turno prolongadas.
 - Ausencia de ajuste por instrucciones confirmado: no se sabe si el checkpoint sigue instrucciones, por lo que puede requerir fine-tuning antes de cualquier tarea de generacion guiada.
 - Naturaleza experimental: el nombre del repositorio indica un checkpoint de torneo o experimento, con posibles artefactos de entrenamiento incompleto, pesos intermedios o hiperparametros no consolidados.
-- Metadatos anómalos: la fecha de creacion registrada en HuggingFace es 2026-09-13, posterior a lo esperable para un modelo en circulacion, lo que conviene verificar junto con la autoria real de los pesos.
+- Metadatos anómalos: la fecha de creacion registrada en Hugging Face es 2026-09-13, posterior a lo esperable para un modelo en circulacion, lo que conviene verificar junto con la autoria real de los pesos.
 - Cero descargas y dos likes: la ausencia de uso documentado implica que no existen informes de la comunidad sobre su comportamiento en produccion.
 - Sin cuantizaciones publicadas: desplegarlo en entornos con restricciones de memoria exige generar los GGUF o las cuantizaciones de forma manual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp6849a93f7e12faf6
-- Organizacion en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp6849a93f7e12faf6
+- Organizacion en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Paper, blog o repositorio asociado: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo ni sobre su proceso de entrenamiento (unicamente resultados no relacionados de un servicio de correo).

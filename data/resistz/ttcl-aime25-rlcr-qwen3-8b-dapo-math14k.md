@@ -2,7 +2,7 @@
 
 ## Resumen
 
-resistz/TTCL-AIME25-RLCR-Qwen3-8B-DAPO-Math14K es un ajuste fino del modelo Qwen/Qwen3-8B, publicado en HuggingFace por el usuario resistz. Se trata de un modelo denso de 8.190.735.360 parametros (8,19 mil millones) que forma parte de una cadena de posentrenamiento orientada al razonamiento matematico: se parte de Qwen3-8B, se aplica un entrenamiento por aprendizaje por refuerzo etiquetado como RLCR y DAPO sobre un conjunto de problemas de matematicas (Math14K) y, por ultimo, se ejecuta una fase de TTCL (Test-time Calibration Learning) tomando como referencia el benchmark AIME25.
+resistz/TTCL-AIME25-RLCR-Qwen3-8B-DAPO-Math14K es un ajuste fino del modelo Qwen/Qwen3-8B, publicado en Hugging Face por el usuario resistz. Se trata de un modelo denso de 8.190.735.360 parametros (8,19 mil millones) que forma parte de una cadena de posentrenamiento orientada al razonamiento matematico: se parte de Qwen3-8B, se aplica un entrenamiento por aprendizaje por refuerzo etiquetado como RLCR y DAPO sobre un conjunto de problemas de matematicas (Math14K) y, por ultimo, se ejecuta una fase de TTCL (Test-time Calibration Learning) tomando como referencia el benchmark AIME25.
 
 La relevancia del modelo es fundamentalmente metodologica mas que de producto. Documenta una receta concreta de posentrenamiento en dos etapas: primero refinamiento por RL con la familia de algoritmos DAPO (version de GRPO con muestreo dinamico y recorte desacoplado) sobre datos de matematicas, y despues una fase de calibracion en tiempo de test sobre un examen de competicion real (AIME 2025). Es un artefacto util para quien investiga tecnicas de test-time adaptation aplicadas a modelos de razonamiento.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| resistz/TTCL-AIME25-RLCR-Qwen3-8B-DAPO-Math14K | 8,19 B (denso) | No disponible (base: 32.768 / 131.072 con YaRN) | MIT | Razonamiento matematico (RL + calibracion en test) | HuggingFace, 0 descargas |
+| resistz/TTCL-AIME25-RLCR-Qwen3-8B-DAPO-Math14K | 8,19 B (denso) | No disponible (base: 32.768 / 131.072 con YaRN) | MIT | Razonamiento matematico (RL + calibracion en test) | Hugging Face, 0 descargas |
 | Qwen/Qwen3-8B | 8,2 B (denso) | 32.768 nativo, 131.072 con YaRN | Apache-2.0 | Proposito general con modo thinking | Ampliamente distribuido |
 | DeepSeek-R1-Distill-Qwen-7B | ~7,6 B (denso) | No verificado en esta ficha | MIT | Razonamiento matematico por destilacion | Ampliamente distribuido |
 | Llama-3.1-8B-Instruct | ~8,0 B (denso) | 128.000 | Llama 3.1 Community License | Proposito general, multilingue | Ampliamente distribuido |
@@ -89,7 +89,7 @@ La comparacion de rendimiento no es posible: el modelo de resistz no publica met
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resistz/TTCL-AIME25-RLCR-Qwen3-8B-DAPO-Math14K
+- Modelo en Hugging Face: https://huggingface.co/resistz/TTCL-AIME25-RLCR-Qwen3-8B-DAPO-Math14K
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Checkpoint intermedio referenciado (RLCR-Qwen3-8B-DAPO-Math14K): no se proporciona URL en la informacion disponible
 - Papers, blogs, repositorios o demos adicionales: no se han encontrado enlaces en la informacion proporcionada

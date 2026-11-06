@@ -116,10 +116,10 @@ Verificación específica de esta exportación FP4: recarga del checkpoint y gen
 
 | Modelo | Parámetros | Contexto | Traducción texto (FLORES COMET22) | Idiomas | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|---|
-| Index-Translate-Omni 9B (FP4, este) | 9B | no disponible | 0.8789 (referencia original) | zh, en | Apache 2.0 | HuggingFace |
-| Index-Translate 9B (texto) | 9B | no disponible | 0.8789 | no disponible | no disponible | HuggingFace |
-| Index-Translate-Omni 2B | 2B | no disponible | 0.8655 | zh, en | no disponible | HuggingFace |
-| Qwen3.5-9B (baseline multimodal) | 9B | no disponible | no disponible (MMTIT 73.814) | no disponible | no disponible | HuggingFace |
+| Index-Translate-Omni 9B (FP4, este) | 9B | no disponible | 0.8789 (referencia original) | zh, en | Apache 2.0 | Hugging Face |
+| Index-Translate 9B (texto) | 9B | no disponible | 0.8789 | no disponible | no disponible | Hugging Face |
+| Index-Translate-Omni 2B | 2B | no disponible | 0.8655 | zh, en | no disponible | Hugging Face |
+| Qwen3.5-9B (baseline multimodal) | 9B | no disponible | no disponible (MMTIT 73.814) | no disponible | no disponible | Hugging Face |
 
 La comparación con alternativas de otras familias (por ejemplo, modelos de traducción especializados o LLMs multilingües generalistas) no está disponible en la información proporcionada.
 
@@ -137,7 +137,7 @@ La comparación con alternativas de otras familias (por ejemplo, modelos de trad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-9B-Joint-f35b68981f27-FP4
+- Modelo en Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-9B-Joint-f35b68981f27-FP4
 - Model card del modelo original: https://huggingface.co/IndexTeam/Index-Translate-omni-9B
 - Benchmarks publicados del modelo original: https://huggingface.co/IndexTeam/Index-Translate-9B#evaluation
 - NVIDIA ModelOpt: no disponible enlace directo en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `michaeldavis0216/blip-classification` es un prototipo de investigación publicado en HuggingFace que implementa una variante de arquitectura Blip orientada a tareas de clasificación. Lo desarrolla el usuario michaeldavis0216 y se distribuye bajo licencia BSD-3-Clause. El repositorio no contiene un modelo entrenado: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), tal y como se explicita en la model card, y no se reclama ninguna métrica de rendimiento.
+El repositorio `michaeldavis0216/blip-classification` es un prototipo de investigación publicado en Hugging Face que implementa una variante de arquitectura Blip orientada a tareas de clasificación. Lo desarrolla el usuario michaeldavis0216 y se distribuye bajo licencia BSD-3-Clause. El repositorio no contiene un modelo entrenado: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), tal y como se explicita en la model card, y no se reclama ninguna métrica de rendimiento.
 
 El dato más relevante es su tamaño: 16.576 parámetros totales según el propio fichero safetensors, lo que lo sitúa en un rango puramente didáctico o de validación de pipeline, no en el de un modelo apto para producción. La model card documenta por encima la configuración de arquitectura (escala base, atención dilatada, fusión tipo tucker, activación approx gelu y normalización scalenorm) pero no detalla la composición del dataset, el número de tokens de entrenamiento ni el proceso de alineación.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y de carácter metodológico: sirve como esquel
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es Blip en configuración base, con atención dilatada, fusión de modalidades tipo tucker, activación approx gelu y normalización scalenorm. Es una implementación propia (custom), no una variante estándar de las clases de HuggingFace Transformers, por lo que la model card advierte que las APIs genéricas de carga automática requieren un adaptador explícito antes de poder usarse. El repositorio incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador lion, schedule exponencial).
+La arquitectura declarada es Blip en configuración base, con atención dilatada, fusión de modalidades tipo tucker, activación approx gelu y normalización scalenorm. Es una implementación propia (custom), no una variante estándar de las clases de Hugging Face Transformers, por lo que la model card advierte que las APIs genéricas de carga automática requieren un adaptador explícito antes de poder usarse. El repositorio incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador lion, schedule exponencial).
 
 No hay información sobre volumen de datos de entrenamiento, composición del dataset, número de tokens vistos ni uso de RLHF, DPO o cualquier otra técnica de alineación. La model card es explícita al respecto: los valores incluidos son puntos de partida del script y no evidencia de una ejecución completada. `model.safetensors` es un checkpoint de inicialización para smoke tests, no un modelo entrenado, y no se presenta ningún resultado de benchmark en el repositorio.
 
@@ -45,7 +45,7 @@ No hay información sobre volumen de datos de entrenamiento, composición del da
 - Comparativa de baselines con presupuesto controlado: el script `train.py` está pensado para entrenar el prototipo y baselines de capacidad equivalente con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias, lo que resulta útil para estudios metodológicos sobre clasificación.
 - Docencia y formación: un modelo de 16.576 parámetros es manejable para explicar en un aula cómo se estructura un repositorio de modelo, qué es un checkpoint de inicialización y por qué no debe confundirse con un modelo entrenado.
 - Validación de infraestructura de evaluación: sirve para probar un arnés de evaluación que calcule la métrica de la tarea sobre un split etiquetado específico, reportando la media y dispersión en al menos tres semillas, tal y como recomienda la propia model card.
-- Desarrollo de adaptadores de carga: dado que es una implementación custom, es un caso adecuado para escribir y depurar el adaptador que permite cargar los pesos desde APIs de carga automática de HuggingFace.
+- Desarrollo de adaptadores de carga: dado que es una implementación custom, es un caso adecuado para escribir y depurar el adaptador que permite cargar los pesos desde APIs de carga automática de Hugging Face.
 - Reproducción de experimentos con trazabilidad: permite ensayar el registro de logs de entrenamiento y versiones de entorno que la model card exige adjuntar a cualquier resultado que se publique.
 
 ## Benchmarks y rendimiento
@@ -88,5 +88,5 @@ No se dispone de datos verificados sobre parámetros, contexto, licencia o rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michaeldavis0216/blip-classification
+- Hugging Face: https://huggingface.co/michaeldavis0216/blip-classification
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

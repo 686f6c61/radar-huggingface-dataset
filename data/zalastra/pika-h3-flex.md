@@ -4,7 +4,7 @@
 
 Pika-H3-Flex es un adaptador LoRA publicado por el usuario zalastra sobre el modelo base MiniMaxAI/MiniMax-H3, un sistema generativo de vídeo con audio integrado. El repositorio se distribuye en formato diffusers y está etiquetado como pipeline de image-to-video, de modo que su función es tomar una imagen de referencia y generar una secuencia de vídeo coherente con ella, incluyendo pista de audio sincronizada. El adaptador pesa 33.122.992.896 parámetros según los tensores safetensors publicados y el repositorio ocupa 219,9 GB, lo que refleja que se distribuyen pesos completos del adaptador o del modelo fusionado y no una LoRA de bajo rango convencional.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso de adaptación sobre un modelo de vídeo-audio de última generación, con control explícito de puesta en escena mediante prompts largos y estructurados por marcas temporales. Por otro, sirve de ejemplo de las obligaciones que impone la licencia comunitaria de MiniMax-H3, que no es una licencia open source estándar y condiciona el uso comercial. El modelo se publicó el 4 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes en HuggingFace, por lo que se trata de un artefacto reciente y sin validación comunitaria acumulada.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso de adaptación sobre un modelo de vídeo-audio de última generación, con control explícito de puesta en escena mediante prompts largos y estructurados por marcas temporales. Por otro, sirve de ejemplo de las obligaciones que impone la licencia comunitaria de MiniMax-H3, que no es una licencia open source estándar y condiciona el uso comercial. El modelo se publicó el 4 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes en Hugging Face, por lo que se trata de un artefacto reciente y sin validación comunitaria acumulada.
 
 La información disponible no incluye datos sobre arquitectura interna, composición del dataset de entrenamiento ni resultados de benchmarks. Todo lo que sigue se limita a lo que el autor declara en la model card y a los metadatos del repositorio; cualquier dato no confirmado se marca como no disponible.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pika-H3-Flex (este) | 33.122.992.896 | no disponible | LoRA image-to-video sobre MiniMax-H3 | minimax-h3-community-license-agreement | HuggingFace, 0 descargas |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | Generacion de video con audio | minimax-h3-community-license-agreement | HuggingFace |
+| Pika-H3-Flex (este) | 33.122.992.896 | no disponible | LoRA image-to-video sobre MiniMax-H3 | minimax-h3-community-license-agreement | Hugging Face, 0 descargas |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | Generacion de video con audio | minimax-h3-community-license-agreement | Hugging Face |
 | Otros adaptadores sobre MiniMax-H3 | no disponible | no disponible | LoRA | segun autor | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad. Cualquier comparación de calidad o rendimiento sería especulativa.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zalastra/Pika-H3-Flex
+- Repositorio Hugging Face: https://huggingface.co/zalastra/Pika-H3-Flex
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/zalastra/Pika-H3-Flex/blob/main/LICENSE
 - Ejemplos de la model card: assets/showcases/camera-rally.mp4, assets/showcases/balcony-orbit.mp4 (rutas relativas dentro del repositorio)

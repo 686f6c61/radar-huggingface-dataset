@@ -67,7 +67,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto / entrada | Accuracy test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMai A4 MLP (este) | 197.322 | 3072 valores | 0,4613 | CC0-1.0 | HuggingFace |
+| SMai A4 MLP (este) | 197.322 | 3072 valores | 0,4613 | CC0-1.0 | Hugging Face |
 | CNN simple (referencia tipica) | no disponible | 32x32x3 | no disponible | no disponible | no disponible |
 | ResNet-18 adaptada | no disponible | 32x32x3 | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanyamseac/smai-a4-mlp
+- Modelo en Hugging Face: https://huggingface.co/sanyamseac/smai-a4-mlp
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10

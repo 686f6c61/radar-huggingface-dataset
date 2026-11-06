@@ -32,7 +32,7 @@ Los hiperparametros documentados son: learning rate 4e-5, batch total 128 (batch
 - Generacion de texto conversacional: el tag `conversational` indica que el modelo esta formateado para dialogos multi-turno.
 - Razonamiento con modo thinking: el dataset de entrenamiento contiene trazas de razonamiento preprocesadas, por lo que el modelo esta expuesto a cadenas de pensamiento.
 - Destilacion de razonamiento: al entrenarse sobre salidas de gpt-oss-120b, puede reproducir patrones de razonamiento de un modelo mucho mayor.
-- Compatibilidad con TGI y endpoints: el tag `text-generation-inference` y `endpoints_compatible` indica que puede servirse con la infraestructura estandar de HuggingFace.
+- Compatibilidad con TGI y endpoints: el tag `text-generation-inference` y `endpoints_compatible` indica que puede servirse con la infraestructura estandar de Hugging Face.
 - Tool calling / function calling: no documentado.
 - Capacidades de agente: no documentadas.
 - Capacidades multilingues: no documentadas (los idiomas figuran como no disponibles).
@@ -64,9 +64,9 @@ La model card incluye un `model-index` con la entrada `sft__Superior-Reasoning-S
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated-sr30k | 1,72B | no disponible | other | HuggingFace |
-| ali-elganzory/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated (modelo base) | 1,72B | no disponible | other | HuggingFace |
-| Qwen3-1.7B-Base (ancestro) | 1,72B | no disponible en esta ficha | Apache 2.0 (Qwen3) | HuggingFace |
+| open-sci/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated-sr30k | 1,72B | no disponible | other | Hugging Face |
+| ali-elganzory/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated (modelo base) | 1,72B | no disponible | other | Hugging Face |
+| Qwen3-1.7B-Base (ancestro) | 1,72B | no disponible en esta ficha | Apache 2.0 (Qwen3) | Hugging Face |
 | gpt-oss-120b (modelo profesor del dataset) | 120B (MoE) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated-sr30k
+- Hugging Face: https://huggingface.co/open-sci/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated
 - Familia Qwen3 (ancestro): no disponible en la informacion proporcionada
 - Dataset de entrenamiento: `Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf_thinking_preprocessed` (ruta local en la model card; no se proporciona enlace publico)

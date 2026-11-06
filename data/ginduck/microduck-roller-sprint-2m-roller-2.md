@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Tipo | Parámetros | Contexto / observación | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `GinDuck/microduck-roller-sprint-2m-roller-2` | Política RL para microduck sobre rollers | no disponible | 61-D de observación, 14 acciones, 50 Hz | ~1,4 s por episodio (dato del autor) | no disponible | HuggingFace, 0 descargas |
+| `GinDuck/microduck-roller-sprint-2m-roller-2` | Política RL para microduck sobre rollers | no disponible | 61-D de observación, 14 acciones, 50 Hz | ~1,4 s por episodio (dato del autor) | no disponible | Hugging Face, 0 descargas |
 | Política anterior de patinaje del mismo autor (*roller run* previo) | Política RL para microduck sobre rollers | no disponible | no disponible | no disponible | no disponible | Referenciada en la model card, sin enlace directo |
 | Políticas de la rama `race-2` de `microduck-challenges` | Políticas RL para microduck | no disponible | no disponible | no disponible | no disponible | Repositorio público de Pollen Robotics |
 
@@ -82,7 +82,7 @@ No se dispone de datos numéricos suficientes para establecer una comparación c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-roller-sprint-2m-roller-2
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-roller-sprint-2m-roller-2
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (ruta citada en la model card, sin URL directa disponible)

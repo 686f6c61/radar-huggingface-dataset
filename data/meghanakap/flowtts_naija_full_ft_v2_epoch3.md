@@ -6,7 +6,7 @@ MeghanaKap/flowtts_naija_full_ft_v2_epoch3 es un modelo de generacion de texto b
 
 El modelo tiene aproximadamente 506 millones de parametros segun los pesos en formato safetensors, y el repositorio ocupa 2,0 GB. Su pipeline es text-generation y esta etiquetado como conversacional, con soporte para el idioma ingles. La licencia es Apache 2.0, lo que permite su uso comercial y redistribucion.
 
-No se han proporcionado datos sobre la longitud de contexto, el dataset de entrenamiento ni el rendimiento en benchmarks. La informacion disponible corresponde principalmente a los metadatos de HuggingFace y a la model card, que no incluye detalles tecnicos adicionales.
+No se han proporcionado datos sobre la longitud de contexto, el dataset de entrenamiento ni el rendimiento en benchmarks. La informacion disponible corresponde principalmente a los metadatos de Hugging Face y a la model card, que no incluye detalles tecnicos adicionales.
 
 ## Especificaciones tecnicas
 
@@ -69,6 +69,6 @@ No disponible. No se han identificado modelos comparables de la misma categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch3
+- Modelo en Hugging Face: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch3
 - Modelo base: https://huggingface.co/YatharthS/MiraTTS
 - Libreria Unsloth: https://github.com/unslothai/unsloth

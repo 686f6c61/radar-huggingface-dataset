@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Emir_Alim es un repositorio publicado en HuggingFace por el usuario SeNKrOn10 bajo el identificador `SeNKrOn10/Emir_Alim`. En el momento de la consulta no se ha publicado informacion sustantiva sobre el modelo: no hay pipeline declarado, no consta licencia, no se especifican idiomas soportados ni existe tarjeta de modelo con descripcion de arquitectura, datos de entrenamiento o capacidades. El unico tag asociado es `region:us`, un metadato geografico que no aporta informacion tecnica.
+Emir_Alim es un repositorio publicado en Hugging Face por el usuario SeNKrOn10 bajo el identificador `SeNKrOn10/Emir_Alim`. En el momento de la consulta no se ha publicado informacion sustantiva sobre el modelo: no hay pipeline declarado, no consta licencia, no se especifican idiomas soportados ni existe tarjeta de modelo con descripcion de arquitectura, datos de entrenamiento o capacidades. El unico tag asociado es `region:us`, un metadato geografico que no aporta informacion tecnica.
 
 Los datos objetivos disponibles son limitados: el repositorio ocupa aproximadamente 0,1 GB, acumula 0 descargas y 1 like, y fue creado y actualizado el 15 de septiembre de 2026 con apenas un minuto de diferencia entre ambos eventos, lo que sugiere una subida sin iteracion posterior. El tamano del repositorio es compatible con artefactos ligeros (adaptadores LoRA, modelos pequenos o pesos muy cuantizados), pero esta interpretacion es una inferencia a partir del tamano y no una caracteristica confirmada por el autor.
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| SeNKrOn10/Emir_Alim | no disponible | no disponible | no disponible | repositorio HuggingFace | no disponible |
+| SeNKrOn10/Emir_Alim | no disponible | no disponible | no disponible | repositorio Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeNKrOn10/Emir_Alim
+- Repositorio en Hugging Face: https://huggingface.co/SeNKrOn10/Emir_Alim
 - Paper asociado: no disponible.
 - Blog o anuncio de publicacion: no disponible.
 - Repositorio de codigo: no disponible.

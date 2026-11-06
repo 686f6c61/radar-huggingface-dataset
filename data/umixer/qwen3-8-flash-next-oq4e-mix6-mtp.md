@@ -114,7 +114,7 @@ No se dispone de comparativas con modelos de otros fabricantes ni con arquitectu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umixer/Qwen3.8-Flash-Next-oQ4e-mix6-mtp
+- Modelo en Hugging Face: https://huggingface.co/umixer/Qwen3.8-Flash-Next-oQ4e-mix6-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Fuente de los componentes de 6 bits: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-oQ6e-mtp
 - Fuente de los expertos de 4 bits: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp

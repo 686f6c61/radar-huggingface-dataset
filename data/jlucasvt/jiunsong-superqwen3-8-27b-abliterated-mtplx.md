@@ -88,7 +88,7 @@ No hay datos de rendimiento comparativo entre estas variantes. La comparativa se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlucasvt/Jiunsong-SuperQwen3.8-27b-abliterated-MTPLX
+- Modelo en Hugging Face: https://huggingface.co/jlucasvt/Jiunsong-SuperQwen3.8-27b-abliterated-MTPLX
 - Repositorio MTPLX Forge: https://github.com/youssofal/MTPLX
 - Variante MLX 4-bit del modelo base: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-MLX-4bit
 - Otra variante abliterated: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED

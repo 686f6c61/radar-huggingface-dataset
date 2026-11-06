@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YL95/experiment-1.9.2-hunter-apu-nodes es un repositorio de HuggingFace que no contiene un modelo entrenado, sino artefactos de seguimiento de un experimento de aprendizaje automatico aplicado a series temporales financieras. El autor, YL95, publica aqui dos continuaciones del "Experiment 1.9 step 328", denominadas arm A y arm B, junto con archivos de eventos de TensorBoard. El repositorio ocupa 0,0 GB, no incluye pesos, no declara licencia ni idiomas, y acumula 0 descargas y 0 likes en el momento de la consulta.
+YL95/experiment-1.9.2-hunter-apu-nodes es un repositorio de Hugging Face que no contiene un modelo entrenado, sino artefactos de seguimiento de un experimento de aprendizaje automatico aplicado a series temporales financieras. El autor, YL95, publica aqui dos continuaciones del "Experiment 1.9 step 328", denominadas arm A y arm B, junto con archivos de eventos de TensorBoard. El repositorio ocupa 0,0 GB, no incluye pesos, no declara licencia ni idiomas, y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El contenido de la model card describe un pipeline de entrenamiento distribuido sobre seis nodos Hunter MI300A y 24 workers de GPU, con un batch global de 1.536 por brazo, un presupuesto de 1.000 actualizaciones y una tasa de aprendizaje coseno de 6e-5 a 6e-6 con optimizador Adam. La distincion entre brazos es de muestreo: el arm A muestrea mercados factibles de forma uniforme y el arm B los pondera por dias-bolsa de las acciones incluidas en el periodo de entrenamiento.
 
@@ -74,5 +74,5 @@ No disponible. Al no tratarse de un modelo con pesos ni de una arquitectura decl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YL95/experiment-1.9.2-hunter-apu-nodes
+- Hugging Face: https://huggingface.co/YL95/experiment-1.9.2-hunter-apu-nodes
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relevantes asociados a este modelo.

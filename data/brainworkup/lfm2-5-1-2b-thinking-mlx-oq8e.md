@@ -78,8 +78,8 @@ La comparativa se basa en información pública general; no se dispone de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/brainworkup/LFM2.5-1.2B-Thinking-MLX-oQ8e
-- Modelo original en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/brainworkup/LFM2.5-1.2B-Thinking-MLX-oQ8e
+- Modelo original en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Versión MLX 8-bit oficial de Liquid: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-MLX-8bit
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-1.2b-thinking
 - Blog de Liquid AI sobre el modelo: https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb

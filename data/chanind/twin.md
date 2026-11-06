@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chanind/twin` es un repositorio de modelo alojado en HuggingFace por el usuario chanind. En el momento de la consulta, la ficha publica del repositorio no incluye informacion sustantiva: no declara tarea (*pipeline*), licencia, idiomas soportados, ni descripcion tecnica. El repositorio ocupa 40,8 GB y acumula 0 descargas y 1 *like*, con fecha de creacion 15 de abril de 2026 y ultima actualizacion 19 de septiembre de 2026.
+`chanind/twin` es un repositorio de modelo alojado en Hugging Face por el usuario chanind. En el momento de la consulta, la ficha publica del repositorio no incluye informacion sustantiva: no declara tarea (*pipeline*), licencia, idiomas soportados, ni descripcion tecnica. El repositorio ocupa 40,8 GB y acumula 0 descargas y 1 *like*, con fecha de creacion 15 de abril de 2026 y ultima actualizacion 19 de septiembre de 2026.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. El unico dato objetivo disponible, ademas de los metadatos del repositorio, es su tamano en disco, que es compatible con pesos en precision de 16 bits para un modelo del orden de 20 000 millones de parametros, si bien esta inferencia no esta confirmada por el autor y no debe tomarse como un dato verificado.
 
@@ -89,5 +89,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chanind/twin
+- Repositorio en Hugging Face: https://huggingface.co/chanind/twin
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados recuperados (articulos sobre impulsividad y trastornos de la personalidad) no guardan relacion con este repositorio y se omiten por no ser relevantes.

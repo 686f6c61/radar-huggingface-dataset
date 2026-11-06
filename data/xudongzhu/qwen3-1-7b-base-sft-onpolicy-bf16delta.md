@@ -82,9 +82,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | MATH-500 | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-1.7B-Base-SFT-OnPolicy (paso 300) | 1,72 B | no disponible | 0,652 | 0,344 | Apache 2.0 | HuggingFace, pesos BF16 + deltas |
-| Qwen3-1.7B-Base (paso 0) | 1,72 B | no disponible | 0,562 | 0,218 | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B-Base-SFT-OffPolicy | 1,72 B | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace (repositorio gemelo) |
+| Qwen3-1.7B-Base-SFT-OnPolicy (paso 300) | 1,72 B | no disponible | 0,652 | 0,344 | Apache 2.0 | Hugging Face, pesos BF16 + deltas |
+| Qwen3-1.7B-Base (paso 0) | 1,72 B | no disponible | 0,562 | 0,218 | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B-Base-SFT-OffPolicy | 1,72 B | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face (repositorio gemelo) |
 | Otros modelos de ~1,7 B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa más relevante es con el modelo base: el SFT on-policy eleva MATH-500 de 0,562 a 0,652 y MMLU-Pro de 0,218 a 0,344 en 300 pasos. No se dispone de resultados publicados del gemelo OffPolicy en la información proporcionada.
@@ -103,7 +103,7 @@ La comparación directa más relevante es con el modelo base: el SFT on-policy e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XudongZhu/Qwen3-1.7B-Base-SFT-OnPolicy-BF16Delta
+- Repositorio Hugging Face: https://huggingface.co/XudongZhu/Qwen3-1.7B-Base-SFT-OnPolicy-BF16Delta
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Gemelo off-policy: https://huggingface.co/XudongZhu/Qwen3-1.7B-Base-SFT-OffPolicy-BF16Delta
 - Repositorio FP32 del mismo entrenamiento: https://huggingface.co/XudongZhu/Qwen3-1.7B-Base-SFT-OnPolicy

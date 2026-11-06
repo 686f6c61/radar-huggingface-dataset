@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento en benchmarks públicos para estos artefac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/antonlnz/siglip2-so400m-image-coreml-batch8
+- Repositorio Hugging Face: https://huggingface.co/antonlnz/siglip2-so400m-image-coreml-batch8
 - Modelo base: https://huggingface.co/google/siglip2-so400m-patch14-384
 - Exportación ONNX de origen: https://huggingface.co/onnx-community/siglip2-so400m-patch14-384-ONNX
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786

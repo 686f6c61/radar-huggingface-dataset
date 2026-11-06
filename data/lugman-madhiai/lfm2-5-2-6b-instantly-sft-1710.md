@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2.5-2.6B-Instantly-SFT-1710 es un ajuste fino supervisado (SFT) del modelo base LiquidAI/LFM2.5-2.6B, publicado por el usuario lugman-madhiai en HuggingFace. Se trata de un modelo denso de 2.697.198.592 parámetros (aproximadamente 2,7 mil millones) orientado a generación de texto conversacional, distribuido en formato safetensors para la librería transformers y con licencia Apache 2.0. El repositorio ocupa 5,4 GB, lo que corresponde a los pesos en precisión de 16 bits.
+LFM2.5-2.6B-Instantly-SFT-1710 es un ajuste fino supervisado (SFT) del modelo base LiquidAI/LFM2.5-2.6B, publicado por el usuario lugman-madhiai en Hugging Face. Se trata de un modelo denso de 2.697.198.592 parámetros (aproximadamente 2,7 mil millones) orientado a generación de texto conversacional, distribuido en formato safetensors para la librería transformers y con licencia Apache 2.0. El repositorio ocupa 5,4 GB, lo que corresponde a los pesos en precisión de 16 bits.
 
-El modelo hereda la arquitectura LFM2 de Liquid AI, una familia híbrida que combina bloques convolucionales de corto alcance con bloques de atención con consultas agrupadas (GQA), diseñada para reducir el coste computacional en inferencia respecto a un transformer puro. El ajuste fino se realizó con Unsloth y la librería TRL de HuggingFace, según declara el autor, sin que se detallen el volumen de datos, la composición del dataset ni la metodología de evaluación.
+El modelo hereda la arquitectura LFM2 de Liquid AI, una familia híbrida que combina bloques convolucionales de corto alcance con bloques de atención con consultas agrupadas (GQA), diseñada para reducir el coste computacional en inferencia respecto a un transformer puro. El ajuste fino se realizó con Unsloth y la librería TRL de Hugging Face, según declara el autor, sin que se detallen el volumen de datos, la composición del dataset ni la metodología de evaluación.
 
 Su relevancia es limitada y muy específica: se trata de un artefacto de fine-tuning comunitario con cero descargas y cero valoraciones en el momento de la consulta, sin model card técnica más allá de la plantilla de Unsloth. Resulta útil como punto de partida para quien quiera replicar el pipeline de SFT sobre LFM2.5-2.6B, pero no hay evidencia publicada de que mejore al modelo base en ninguna tarea concreta.
 
@@ -51,7 +51,7 @@ El proceso de entrenamiento documentado se limita a una frase: el modelo fue ent
 - Base para un segundo ajuste con datos propios: al estar publicado en safetensors y con licencia Apache 2.0, puede actuar como punto de partida (continued pretraining o nuevo SFT) en lugar del modelo original, aunque sin garantías de que el SFT previo aporte ventaja.
 - Generación de texto offline en entornos con recursos limitados: el tamaño reducido permite ejecución en CPU con cuantización de 4 bits, adecuado para tareas de resumen o reescritura por lotes donde la latencia no es crítica.
 - Experimentación académica sobre arquitecturas híbridas conv-attention: permite comparar el comportamiento de un LFM2 ajustado frente al base en tareas controladas de generación.
-- Evaluación comparativa de calidad de fine-tunes comunitarios: útil como muestra negativa o de control en estudios sobre trazabilidad y documentación de modelos publicados en HuggingFace, dado que carece de métricas y de descripción del dataset.
+- Evaluación comparativa de calidad de fine-tunes comunitarios: útil como muestra negativa o de control en estudios sobre trazabilidad y documentación de modelos publicados en Hugging Face, dado que carece de métricas y de descripción del dataset.
 - Sustituto ligero en pruebas de integración de infraestructura (vLLM, TGI, endpoints compatibles): la etiqueta `endpoints_compatible` permite validar que el stack de despliegue carga correctamente un checkpoint LFM2 antes de migrar a un modelo mayor.
 
 ## Benchmarks y rendimiento
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lugman-madhiai/LFM2.5-2.6B-Instantly-SFT-1710 | 2,7 B | No disponible | Sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-2.6B (base) | 2,6 B aprox. | 32 768 tokens según la familia (no confirmado en la información disponible) | Métricas publicadas por Liquid AI en su model card | Apache 2.0 (según licencia del base) | HuggingFace, modelo oficial |
-| Qwen2.5-3B-Instruct | 3,1 B | 32 768 tokens | Benchmarks publicados por el autor | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama-3.2-3B-Instruct | 3,2 B | 131 072 tokens | Benchmarks publicados por el autor | Llama 3.2 Community License (restricciones de uso) | HuggingFace, requiere aceptación de términos |
+| lugman-madhiai/LFM2.5-2.6B-Instantly-SFT-1710 | 2,7 B | No disponible | Sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-2.6B (base) | 2,6 B aprox. | 32 768 tokens según la familia (no confirmado en la información disponible) | Métricas publicadas por Liquid AI en su model card | Apache 2.0 (según licencia del base) | Hugging Face, modelo oficial |
+| Qwen2.5-3B-Instruct | 3,1 B | 32 768 tokens | Benchmarks publicados por el autor | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama-3.2-3B-Instruct | 3,2 B | 131 072 tokens | Benchmarks publicados por el autor | Llama 3.2 Community License (restricciones de uso) | Hugging Face, requiere aceptación de términos |
 
 La comparación relevante es contra el modelo base: este checkpoint no documenta mejoras medibles, por lo que en ausencia de evaluación debe asumirse paridad o degradación. Frente a Qwen2.5-3B-Instruct y Llama-3.2-3B-Instruct, el atractivo principal de la familia LFM2 es su eficiencia en inferencia por la arquitectura híbrida, no un rendimiento superior en benchmarks.
 
@@ -92,10 +92,10 @@ La comparación relevante es contra el modelo base: este checkpoint no documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-Instantly-SFT-1710
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-Instantly-SFT-1710
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Unsloth (framework de entrenamiento utilizado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Sitio de Liquid AI: https://www.liquid.ai/
 - Documentación de Text Generation Inference: https://huggingface.co/docs/text-generation-inference
 - Repositorio de llama.cpp (para conversión a GGUF): https://github.com/ggml-org/llama.cpp

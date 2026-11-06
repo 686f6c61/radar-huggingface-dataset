@@ -85,7 +85,7 @@ La comparativa se basa en caracteristicas publicas generales de estos modelos; n
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/LoCo-7B-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/LoCo-7B-i1-GGUF
 - Modelo base: https://huggingface.co/MuyaoYuan/LoCo-7B
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/LoCo-7B-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#LoCo-7B-i1-GGUF

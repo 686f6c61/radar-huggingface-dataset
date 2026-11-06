@@ -84,8 +84,8 @@ Detalles de evaluación declarados: el held-out tiene 720 ítems con la mezcla d
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chon-1.0-12B | 12B + LoRA ~1,0 GB | estado 6.000 / prompt 8.192 tokens | Decisión tipada con probabilidades calibradas | Apache-2.0 | HuggingFace + GitHub xoai/chon |
-| google/gemma-4-12B-it (base) | 12B | no disponible en la informacion | Generación de texto y chat; sin capa de calibración ni interfaz de decisión | Apache-2.0 según la card de Chon | HuggingFace |
+| Chon-1.0-12B | 12B + LoRA ~1,0 GB | estado 6.000 / prompt 8.192 tokens | Decisión tipada con probabilidades calibradas | Apache-2.0 | Hugging Face + GitHub xoai/chon |
+| google/gemma-4-12B-it (base) | 12B | no disponible en la informacion | Generación de texto y chat; sin capa de calibración ni interfaz de decisión | Apache-2.0 según la card de Chon | Hugging Face |
 | LLM generalista de ~12B con salida JSON forzada | ~12B | depende del modelo | Clasificación vía prompt + esquema JSON; sin probabilidades calibradas por opción | depende del modelo | genérica |
 
 No se han identificado en la información disponible otros modelos de decisión tipada directamente comparables; las cifras de rendimiento de las filas alternativas figuran como "no disponible" porque no se han publicado en las fuentes consultadas. El autor afirma que el modelo supera a varios modelos mayores en tareas de decisión estructurada, pero no se aportan los nombres ni los números de esa comparación.
@@ -105,7 +105,7 @@ No se han identificado en la información disponible otros modelos de decisión 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ninhnv/chon-1.0-12b
+- Modelo en Hugging Face: https://huggingface.co/ninhnv/chon-1.0-12b
 - Ficheros del repositorio: https://huggingface.co/ninhnv/chon-1.0-12b/tree/main
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Código de servicio (GitHub): https://github.com/xoai/chon/tree/main

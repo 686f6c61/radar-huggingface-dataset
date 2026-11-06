@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| D1A-E4B-it QAT (este) | adaptador LoRA r=16 sobre Gemma 4 E4B-it QAT int4 | no disponible | Decisiones calibradas, chat, multimodal | Apache-2.0 | HuggingFace, 26 descargas |
-| D1A-E4B-it v0.6 | adaptador sobre Gemma 4 E4B-it | no disponible | Decisiones calibradas | Apache-2.0 | HuggingFace |
-| D1A-E4B-it QAT MLX q4 | mismo adaptador, build MLX | no disponible | Decisiones calibradas, chat, multimodal | Apache-2.0 | HuggingFace |
-| Gemma 4 E4B-it QAT (base) | no disponible | no disponible | LLM multimodal general | Apache-2.0 | HuggingFace |
+| D1A-E4B-it QAT (este) | adaptador LoRA r=16 sobre Gemma 4 E4B-it QAT int4 | no disponible | Decisiones calibradas, chat, multimodal | Apache-2.0 | Hugging Face, 26 descargas |
+| D1A-E4B-it v0.6 | adaptador sobre Gemma 4 E4B-it | no disponible | Decisiones calibradas | Apache-2.0 | Hugging Face |
+| D1A-E4B-it QAT MLX q4 | mismo adaptador, build MLX | no disponible | Decisiones calibradas, chat, multimodal | Apache-2.0 | Hugging Face |
+| Gemma 4 E4B-it QAT (base) | no disponible | no disponible | LLM multimodal general | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks estándar para comparar rendimiento entre estas variantes más allá del scorecard interno.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks estándar para comparar rendimiento entre e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnP1/d1a-e4b-it-qat
+- Modelo en Hugging Face: https://huggingface.co/JohnP1/d1a-e4b-it-qat
 - Build MLX: https://huggingface.co/JohnP1/d1a-e4b-it-qat-mlx-q4
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct
 - Adaptador previo v0.6: https://huggingface.co/JohnP1/d1a-e4b-it

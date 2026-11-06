@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch12 | 1.418 M | no disponible | Apache 2.0 | Unlearning TOFU (forget10) sobre Phi-1.5 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_phi-1.5 | ~1.400 M | no disponible | no disponible en esta ficha | Ajuste fino TOFU sin *unlearning* | HuggingFace |
-| microsoft/phi-1_5 | 1.300 M | 2048 | MIT | Modelo base de código y texto | HuggingFace, ampliamente usado |
-| Otros checkpoints TOFU de la misma familia (p. ej. variantes de locolab o unl-reset) | ~1.400 M | no disponible | variable | Distintas recetas de *unlearning* | HuggingFace |
+| unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch12 | 1.418 M | no disponible | Apache 2.0 | Unlearning TOFU (forget10) sobre Phi-1.5 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_phi-1.5 | ~1.400 M | no disponible | no disponible en esta ficha | Ajuste fino TOFU sin *unlearning* | Hugging Face |
+| microsoft/phi-1_5 | 1.300 M | 2048 | MIT | Modelo base de código y texto | Hugging Face, ampliamente usado |
+| Otros checkpoints TOFU de la misma familia (p. ej. variantes de locolab o unl-reset) | ~1.400 M | no disponible | variable | Distintas recetas de *unlearning* | Hugging Face |
 
 La comparación con alternativas de la misma categoría (modelos de ~1.400 M para *unlearning*) se limita a la familia TOFU-Phi-1.5, ya que no se dispone de datos de rendimiento publicados para este checkpoint concreto que permitan una comparación cuantitativa.
 
@@ -84,7 +84,7 @@ La comparación con alternativas de la misma categoría (modelos de ~1.400 M par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch12
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch12
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

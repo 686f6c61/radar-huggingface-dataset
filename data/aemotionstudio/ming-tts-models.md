@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/AEmotionStudio/ming-tts-models
+- Repositorio del espejo en Hugging Face: https://huggingface.co/AEmotionStudio/ming-tts-models
 - Modelo original 0.5B: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - Modelo original tiny: https://huggingface.co/inclusionAI/Ming-3.0-tts-tiny
 - Repositorio de código upstream: https://github.com/inclusionAI/Ming-3.0-tts

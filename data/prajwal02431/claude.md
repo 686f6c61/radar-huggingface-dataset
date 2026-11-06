@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `prajwal02431/claude` es una publicacion alojada en HuggingFace por el usuario prajwal02431. En el momento de redactar esta ficha, el repositorio no incluye ningun contenido de model card mas alla de la cabecera YAML con la linea `license: llama4`, no declara pipeline de inferencia, no especifica idiomas soportados y no ha registrado ninguna descarga ni ninguna marca de "me gusta" desde su creacion el 3 de octubre de 2026.
+El repositorio `prajwal02431/claude` es una publicacion alojada en Hugging Face por el usuario prajwal02431. En el momento de redactar esta ficha, el repositorio no incluye ningun contenido de model card mas alla de la cabecera YAML con la linea `license: llama4`, no declara pipeline de inferencia, no especifica idiomas soportados y no ha registrado ninguna descarga ni ninguna marca de "me gusta" desde su creacion el 3 de octubre de 2026.
 
 La informacion disponible no permite confirmar ningun dato tecnico sobre el supuesto modelo: se desconoce su arquitectura, su numero de parametros, su longitud de contexto, sus datos de entrenamiento y su formato de pesos. El unico indicio sobre su naturaleza es la etiqueta de licencia `llama4`, que sugiere una vinculacion declarada con la familia Llama 4 de Meta, pero no existe en el repositorio ningun artefacto (pesos, tokenizador, configuracion) que lo verifique.
 
@@ -80,5 +80,5 @@ No disponible. La ausencia de parametros, contexto y licencia efectiva impide si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prajwal02431/claude
+- Hugging Face: https://huggingface.co/prajwal02431/claude
 - No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos asociados a este repositorio.

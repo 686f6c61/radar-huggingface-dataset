@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albef for Retrieval es un repositorio de HuggingFace publicado por el usuario harshpatel99 que contiene una implementación funcional de la arquitectura Albef orientada a tareas de recuperación (retrieval) imagen-texto. Según la propia model card, se trata de un artefacto de trabajo centrado en código transparente y pruebas de humo repetibles, con las afirmaciones de rendimiento deliberadamente omitidas. El repositorio incluye `train.py`, `config.json`, `training_args.json` y un `model.safetensors` que el autor describe explícitamente como un checkpoint de inicialización válido para smoke tests, no como un modelo entrenado.
+Albef for Retrieval es un repositorio de Hugging Face publicado por el usuario harshpatel99 que contiene una implementación funcional de la arquitectura Albef orientada a tareas de recuperación (retrieval) imagen-texto. Según la propia model card, se trata de un artefacto de trabajo centrado en código transparente y pruebas de humo repetibles, con las afirmaciones de rendimiento deliberadamente omitidas. El repositorio incluye `train.py`, `config.json`, `training_args.json` y un `model.safetensors` que el autor describe explícitamente como un checkpoint de inicialización válido para smoke tests, no como un modelo entrenado.
 
 El dato más relevante es su tamaño: el recuento real de parámetros del fichero safetensors es de 49.600, una cifra que contrasta frontalmente con la etiqueta "giant" que aparece en la configuración de arquitectura incluida. Esta inconsistencia, junto con el hecho de que no se reclama ningún resultado de benchmark, indica que el artefacto debe tratarse como un esqueleto de código y no como un modelo desplegable. El repositorio tiene cero descargas y cero "likes" en el momento de redactar esta ficha, por lo que no cuenta con validación alguna por parte de la comunidad.
 
@@ -94,6 +94,6 @@ Se incluyen las familias Albef, BLIP y CLIP por ser las alternativas naturales e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harshpatel99/albef-retrieval-pretrained-2023
+- Repositorio en Hugging Face: https://huggingface.co/harshpatel99/albef-retrieval-pretrained-2023
 
 La búsqueda web asociada no devolvió resultados relevantes: los enlaces recuperados corresponden a servicios de streaming y contenidos audiovisuales sin relación alguna con el modelo, por lo que se omiten. No se han localizado papers, blogs, repositorios de código ni demos oficiales vinculados a este artefacto en la información disponible.

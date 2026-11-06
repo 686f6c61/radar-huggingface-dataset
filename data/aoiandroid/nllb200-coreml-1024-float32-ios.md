@@ -75,7 +75,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32-ios
+- Repositorio Hugging Face: https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32-ios
 - Repositorio fuente (snapshot privado): https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32
 - Repositorio hermano (macOS): https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32-macos
 - Modelo original de Meta: https://huggingface.co/facebook/nllb-200-distilled-600M

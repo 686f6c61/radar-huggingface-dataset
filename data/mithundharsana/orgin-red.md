@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mithundharsana/orgin-red` es un repositorio de modelos alojado en HuggingFace por el usuario `mithundharsana`. La informacion publica disponible se limita a metadatos de plataforma: licencia Apache-2.0, etiqueta de region `us`, cero descargas y cero "likes" en el momento de la consulta, y ausencia de `pipeline_tag` declarado. La model card no contiene texto sustantivo mas alla de la declaracion de licencia, por lo que no es posible determinar que tipo de modelo es, que arquitectura emplea ni que problema resuelve.
+`mithundharsana/orgin-red` es un repositorio de modelos alojado en Hugging Face por el usuario `mithundharsana`. La informacion publica disponible se limita a metadatos de plataforma: licencia Apache-2.0, etiqueta de region `us`, cero descargas y cero "likes" en el momento de la consulta, y ausencia de `pipeline_tag` declarado. La model card no contiene texto sustantivo mas alla de la declaracion de licencia, por lo que no es posible determinar que tipo de modelo es, que arquitectura emplea ni que problema resuelve.
 
 El repositorio fue creado y actualizado en el mismo instante (2026-10-25T02:18:40Z), sin revisiones posteriores registradas. No se declaran idiomas soportados, formato de pesos, tamano de parametros ni ventana de contexto. Esto es compatible tanto con un modelo en fase embrionaria como con un repositorio de prueba o un artefacto sin documentar; la informacion disponible no permite distinguir entre esos escenarios.
 
@@ -39,7 +39,7 @@ Datos de plataforma verificables:
 
 No disponible. La model card unicamente contiene el bloque de metadatos YAML con `license: apache-2.0`; no se describe la arquitectura (transformer, mezcla de expertos, SSM, hibrida u otra), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
 
-La etiqueta `region:us` es un metadato de la plataforma HuggingFace que indica la region de almacenamiento del repositorio; no aporta informacion sobre el entrenamiento ni sobre la procedencia de los datos. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y no se incluye en esta ficha.
+La etiqueta `region:us` es un metadato de la plataforma Hugging Face que indica la region de almacenamiento del repositorio; no aporta informacion sobre el entrenamiento ni sobre la procedencia de los datos. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y no se incluye en esta ficha.
 
 ## Capacidades
 
@@ -107,7 +107,7 @@ No disponible. No es posible identificar modelos alternativos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mithundharsana/orgin-red
+- Hugging Face: https://huggingface.co/mithundharsana/orgin-red
 - Model card del autor: sin contenido sustantivo (solo declaracion de licencia Apache-2.0)
 - Paper, blog, repositorio de codigo o demo: no disponible
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio aklein4/outer-loop-jax_forte-heads-delta es un artefacto alojado en HuggingFace por el usuario aklein4, con un tamano total de 121,1 GB y sin documentacion tecnica publicada. No dispone de pipeline declarado, licencia, idiomas ni pesos anunciados, y acumula 0 descargas y 1 like desde su creacion el 11 de septiembre de 2026 y su ultima actualizacion el 12 de septiembre de 2026. La ficha de HuggingFace no incluye model card, paper, repositorio de codigo ni ningun otro material que permita determinar que contiene el repositorio.
+El repositorio aklein4/outer-loop-jax_forte-heads-delta es un artefacto alojado en Hugging Face por el usuario aklein4, con un tamano total de 121,1 GB y sin documentacion tecnica publicada. No dispone de pipeline declarado, licencia, idiomas ni pesos anunciados, y acumula 0 descargas y 1 like desde su creacion el 11 de septiembre de 2026 y su ultima actualizacion el 12 de septiembre de 2026. La ficha de Hugging Face no incluye model card, paper, repositorio de codigo ni ningun otro material que permita determinar que contiene el repositorio.
 
 El identificador contiene tres componentes que, a falta de confirmacion oficial, suponen las unicas pistas disponibles: "jax" apunta a que los artefactos se han generado con el framework JAX de Google; "outer-loop" sugiere un proceso de entrenamiento o de optimizacion en bucle externo; y "forte-heads-delta" podria referirse a cabezas (heads) con actualizaciones incrementales o de tipo delta. Ninguna de estas interpretaciones esta confirmada por el autor ni por documentacion adicional, por lo que deben tratarse como hipotesis de nomenclatura y no como especificaciones.
 
@@ -96,7 +96,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aklein4/outer-loop-jax_forte-heads-delta
+- Repositorio en Hugging Face: https://huggingface.co/aklein4/outer-loop-jax_forte-heads-delta
 - Paper asociado: no disponible.
 - Repositorio de codigo: no disponible.
 - Demos o espacios: no disponible.

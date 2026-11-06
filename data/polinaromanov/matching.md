@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`polinaromanov/matching` es un prototipo de investigación publicado en HuggingFace bajo el identificador de autor `polinaromanov`. Se describe como una implementación de tipo **Dino** orientada a tareas de **matching** (emparejamiento), con una configuración etiquetada como **xlarge** en su `config.json`. El repositorio incluye el código principal (`main.py`), la configuración de arquitectura, los argumentos de entrenamiento por defecto y un checkpoint de inicialización en `model.safetensors`. La licencia declarada es Apache 2.0.
+`polinaromanov/matching` es un prototipo de investigación publicado en Hugging Face bajo el identificador de autor `polinaromanov`. Se describe como una implementación de tipo **Dino** orientada a tareas de **matching** (emparejamiento), con una configuración etiquetada como **xlarge** en su `config.json`. El repositorio incluye el código principal (`main.py`), la configuración de arquitectura, los argumentos de entrenamiento por defecto y un checkpoint de inicialización en `model.safetensors`. La licencia declarada es Apache 2.0.
 
 El dato más relevante para un evaluador es que **no se trata de un modelo entrenado ni evaluado**. La propia model card indica explícitamente que el checkpoint es válido únicamente como inicialización para *smoke tests*, que no se reclama ninguna puntuación de benchmark y que la implementación debe tratarse como un punto de partida experimental. Los pesos reales del fichero `safetensors` suman **33.088 parámetros**, una cifra muy alejada de lo que sugiere la etiqueta "xlarge", lo que apunta a que dicha etiqueta describe un preset de configuración y no el tamaño efectivo del modelo publicado.
 
@@ -90,5 +90,5 @@ No disponible. El repositorio no se posiciona frente a alternativas concretas y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/polinaromanov/matching
+- Hugging Face: https://huggingface.co/polinaromanov/matching
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo.

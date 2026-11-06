@@ -77,7 +77,7 @@ No disponible. Este repositorio no es un modelo de lenguaje ni un sistema de IA 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MoE-CUDA-Graph-Analysis/tierb-b200-gbs8
+- Repositorio en Hugging Face: https://huggingface.co/MoE-CUDA-Graph-Analysis/tierb-b200-gbs8
 - Perfil de la organización MoE-CUDA-Graph-Analysis: https://huggingface.co/MoE-CUDA-Graph-Analysis
 - Repositorio CUDA_MOE (referencia general sobre MoE en CUDA): https://github.com/garyz712/CUDA_MOE
 - Laboratorio de optimización de MoE en CUDA: https://github.com/chenxingqiang/ai-compiler-performance-engineering/tree/main/code/labs/moe_cuda

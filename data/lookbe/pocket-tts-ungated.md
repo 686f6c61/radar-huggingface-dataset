@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los u
 
 | Modelo | Parametros | Ejecucion en CPU | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| lookbe/pocket-tts-ungated | 100M (heredado del base) | si | cc-by-4.0 | en | HuggingFace, resubida no oficial |
-| kyutai/pocket-tts | 100M | si | cc-by-4.0 (segun la model card) | en | HuggingFace, repositorio oficial |
+| lookbe/pocket-tts-ungated | 100M (heredado del base) | si | cc-by-4.0 | en | Hugging Face, resubida no oficial |
+| kyutai/pocket-tts | 100M | si | cc-by-4.0 (segun la model card) | en | Hugging Face, repositorio oficial |
 | Otras alternativas de TTS ligero | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar con alternativas de la misma categoria. La diferencia observable entre las dos primeras filas es el control de acceso: el nombre "ungated" indica que esta copia evita la aceptacion de condiciones previa del repositorio original, sin que se documenten cambios en los pesos.
@@ -105,7 +105,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 ## Enlaces
 
 - Repositorio de esta ficha: https://huggingface.co/lookbe/pocket-tts-ungated
-- Modelo base en HuggingFace: https://huggingface.co/kyutai/pocket-tts
+- Modelo base en Hugging Face: https://huggingface.co/kyutai/pocket-tts
 - Repositorio GitHub: https://github.com/kyutai-labs/pocket-tts
 - Demo oficial: https://kyutai.org/pocket-tts
 - Informe tecnico: https://kyutai.org/blog/2026-01-13-pocket-tts

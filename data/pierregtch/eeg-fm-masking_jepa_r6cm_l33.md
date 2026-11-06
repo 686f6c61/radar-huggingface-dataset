@@ -86,9 +86,9 @@ No se han publicado en la informacion disponible resultados de benchmarks clasic
 
 | Modelo | Framework | Radio `r` | Longitud `L` | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_jepa_r6cm_L33 (este) | JEPA | 6 cm | 33 | 12,69 M (codificador) | CC-BY-4.0 | HuggingFace, pesos redistribuibles |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 | 12,69 M (codificador, receta identica) | CC-BY-4.0 | HuggingFace; configuracion recomendada por el paper |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 | 12,69 M (codificador, receta identica) | CC-BY-4.0 | HuggingFace; configuracion recomendada por el paper |
+| eeg-fm-masking_jepa_r6cm_L33 (este) | JEPA | 6 cm | 33 | 12,69 M (codificador) | CC-BY-4.0 | Hugging Face, pesos redistribuibles |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 | 12,69 M (codificador, receta identica) | CC-BY-4.0 | Hugging Face; configuracion recomendada por el paper |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 | 12,69 M (codificador, receta identica) | CC-BY-4.0 | Hugging Face; configuracion recomendada por el paper |
 | Otros codificadores EEG de referencia (por ejemplo LaBraM, BIOT) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Las dos alternativas listadas con nombre propio forman parte de la misma coleccion de 58 modelos y comparten receta, datos y numero de parametros; la unica diferencia es la geometria de la mascara y el marco de preentrenamiento. La model card no publica sus puntuaciones, por lo que no es posible comparar numeros dentro de la tabla. No se dispone de datos verificados de otros codificadores EEG externos en la informacion proporcionada.
@@ -109,7 +109,7 @@ Las dos alternativas listadas con nombre propio forman parte de la misma colecci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r6cm_L33
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r6cm_L33
 - Coleccion con los 58 modelos de la familia: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Codigo (licencia MIT): https://github.com/PierreGtch/eeg-fm-masking
 - Sitio del paper: https://pierregtch.github.io/eeg-fm-masking

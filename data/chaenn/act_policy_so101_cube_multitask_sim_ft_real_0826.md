@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `act_policy_so101_cube_multitask_sim_ft_real_0826` es una política de aprendizaje por imitación basada en ACT (Action Chunking with Transformers), desarrollada por el usuario Chaenn y publicada bajo la librería LeRobot de HuggingFace. Está diseñada específicamente para controlar un brazo robótico SO-101 en tareas de manipulación de cubos, y ha sido entrenada mediante una combinación de datos de simulación y datos reales (sim-to-real), como sugiere su nombre. El modelo predice secuencias de acciones (action chunks) en lugar de acciones individuales, lo que permite movimientos más suaves y estables.
+El modelo `act_policy_so101_cube_multitask_sim_ft_real_0826` es una política de aprendizaje por imitación basada en ACT (Action Chunking with Transformers), desarrollada por el usuario Chaenn y publicada bajo la librería LeRobot de Hugging Face. Está diseñada específicamente para controlar un brazo robótico SO-101 en tareas de manipulación de cubos, y ha sido entrenada mediante una combinación de datos de simulación y datos reales (sim-to-real), como sugiere su nombre. El modelo predice secuencias de acciones (action chunks) en lugar de acciones individuales, lo que permite movimientos más suaves y estables.
 
 Con 51,67 millones de parámetros, es un modelo relativamente compacto que puede ejecutarse en hardware de consumo. Su relevancia radica en que demuestra un flujo completo de entrenamiento de políticas robóticas con LeRobot, desde la recolección de datos por teleoperación hasta la transferencia sim-to-real, un área de creciente interés en la robótica de bajo coste. El modelo se publica bajo licencia Apache-2.0, lo que facilita su uso comercial y académico.
 

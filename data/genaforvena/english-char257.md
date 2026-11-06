@@ -17,7 +17,7 @@ Su relevancia es por tanto metodológica más que de rendimiento: documenta un e
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 512 tokens |
 | Tipos de cuantizacion | No disponible; el autor no publica versiones cuantizadas. Pesos en precision de entrenamiento (fp32, ~43,8 MB) |
-| Idiomas soportados | Ingles (prosa inglesa del siglo XIX). La metadata de HuggingFace no declara idiomas |
+| Idiomas soportados | Ingles (prosa inglesa del siglo XIX). La metadata de Hugging Face no declara idiomas |
 | Licencia | CC0-1.0 (dominio publico) |
 | Formato de pesos | safetensors (libreria transformers) |
 | Vocabulario | 257 tokens (byte-level BPE con `add_prefix_space: true`) |
@@ -83,7 +83,7 @@ La comparacion cuantitativa directa no es posible: los modelos de referencia usa
 
 | Modelo | Parametros | Contexto | Vocabulario | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| english-char257 | 10,9 M | 512 | 257 | CC0-1.0 | Repositorio HuggingFace, 0 descargas |
+| english-char257 | 10,9 M | 512 | 257 | CC0-1.0 | Repositorio Hugging Face, 0 descargas |
 | finnegans-fake-char257 (mismo autor) | 10,9 M | 512 | 257 | no disponible en la informacion proporcionada | Repositorio del mismo proyecto |
 | GPT-2 small | 124 M | 1024 | 50.257 | MIT | Ampliamente desplegado |
 | distilgpt2 | 82 M | 1024 | 50.257 | Apache-2.0 | Ampliamente desplegado |
@@ -106,7 +106,7 @@ Frente a GPT-2 small y distilgpt2, english-char257 aporta un control experimenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genaforvena/english-char257
+- Modelo en Hugging Face: https://huggingface.co/genaforvena/english-char257
 - Repositorio de codigo del proyecto (CC0): https://github.com/genaforvena/finnegans-fake
 - Modelo gemelo del mismo proyecto, referenciado en la model card: ID `genaforvena/finnegans-fake-char257`
 - Corpus de entrenamiento: ocho novelas de dominio publico de Project Gutenberg, obtenidas mediante `wake/prepare_english.py --fetch`

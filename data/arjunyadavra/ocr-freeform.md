@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ARJUNYADAVra/ocr-freeform` es un repositorio alojado en HuggingFace que, pese a su etiqueta de modelo y a contener un fichero de pesos en formato safetensors, no constituye un modelo entrenado ni un checkpoint utilizable. La model card lo describe explicitamente como una nota de investigacion ("research note") sobre OCR freeform, es decir, un documento que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El autor declara que no se trata de un paper completado ni de una release de modelos entrenados.
+`ARJUNYADAVra/ocr-freeform` es un repositorio alojado en Hugging Face que, pese a su etiqueta de modelo y a contener un fichero de pesos en formato safetensors, no constituye un modelo entrenado ni un checkpoint utilizable. La model card lo describe explicitamente como una nota de investigacion ("research note") sobre OCR freeform, es decir, un documento que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El autor declara que no se trata de un paper completado ni de una release de modelos entrenados.
 
 El repositorio incluye dos artefactos principales: `analysis.md`, que contiene la nota completa, y `README.md` con la documentacion. La tematica gira en torno al reconocimiento optico de caracteres en documentos de formato libre, con contextos de evaluacion propuestos como FUNSD, SROIE y CORD, y con enfasis en comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
-Por tanto, su relevancia actual es limitada: no aporta pesos funcionales, no publica resultados de benchmarks y no documenta arquitectura, datos de entrenamiento ni proceso de alineacion. El campo de parametros reportado por HuggingFace (16.576) es anomalo para un transformer y sugiere un artefacto de minimo tamano o un placeholder, coherente con un tamano de repositorio de 0.0 GB.
+Por tanto, su relevancia actual es limitada: no aporta pesos funcionales, no publica resultados de benchmarks y no documenta arquitectura, datos de entrenamiento ni proceso de alineacion. El campo de parametros reportado por Hugging Face (16.576) es anomalo para un transformer y sugiere un artefacto de minimo tamano o un placeholder, coherente con un tamano de repositorio de 0.0 GB.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Por tanto, su relevancia actual es limitada: no aporta pesos funcionales, no pub
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe ninguna arquitectura concreta. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no detalla capas, atencion, tipo de tokenizador ni dimensiones del modelo. El recuento de parametros de 16.576 no es compatible con un transformer de lenguaje de proposito general y apunta a un artefacto residual o de prueba.
+La informacion disponible no describe ninguna arquitectura concreta. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no detalla capas, atencion, tipo de tokenizador ni dimensiones del modelo. El recuento de parametros de 16.576 no es compatible con un transformer de lenguaje de proposito general y apunta a un artefacto residual o de prueba.
 
 Respecto al entrenamiento, la model card indica que el repositorio no contiene un checkpoint entrenado ni codigo liberado, y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. No se documentan volumen de tokens, composicion del dataset, tecnicas de RLHF o DPO, ni innovaciones como decodificacion especulativa o atencion lineal. El contenido es una propuesta metodologica sobre OCR freeform, con un plan de comparacion frente a baselines emparejados y una lista de contextos de evaluacion (FUNSD, SROIE, CORD).
 
@@ -73,5 +73,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ARJUNYADAVra/ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/ARJUNYADAVra/ocr-freeform
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

@@ -68,5 +68,5 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/google/gemma-4-31B-it
+- Repositorio Hugging Face: https://huggingface.co/google/gemma-4-31B-it
 - Articulo arxiv: 2607.02770

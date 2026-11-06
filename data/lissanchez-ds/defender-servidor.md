@@ -73,7 +73,7 @@ No se han publicado resultados comparativos con otros modelos sobre el mismo con
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Defender-servidor v2 | XGBoost + pipeline sklearn sobre UNSW-NB15 | no disponible | no aplica (42 variables tabulares) | other | HuggingFace, revisiones inmutables v1/v2 |
+| Defender-servidor v2 | XGBoost + pipeline sklearn sobre UNSW-NB15 | no disponible | no aplica (42 variables tabulares) | other | Hugging Face, revisiones inmutables v1/v2 |
 | Alternativas de la misma categoría (IDS tabular sobre UNSW-NB15) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables publicados con métricas sobre la misma partición de UNSW-NB15 en la documentación proporcionada, por lo que no se establece una comparación numérica.
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables publicados con métricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LisSanchez-DS/defender-servidor
+- Modelo en Hugging Face: https://huggingface.co/LisSanchez-DS/defender-servidor
 - Revisión v1 (SHA completo): `053f3e62f144e78e055533f82bce14c9b54e3030`
 - Revisión v2 (SHA completo, evaluada): `c521d5ccf41ad404998e3364c685363ffa620bbb`
 - Repositorio de código: no disponible como URL en la información proporcionada (se referencia el commit Git `cb33d74015cbc76fd504ea4c38b15d63f9979fc5`)

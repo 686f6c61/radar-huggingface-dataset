@@ -71,9 +71,9 @@ Notas del autor: el base emitio JSON invalido en 140/180 turnos. Los 360 veredic
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vitrion Qwen3-1.7B QLoRA N=128 | 1.7B (base) + adaptador LoRA | no disponible | State-tracking en dialogo ficticio, ingles | Apache 2.0 | Adaptador PEFT en HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1.7B | no disponible | Generacion de texto general | Apache 2.0 | Pesos completos en HuggingFace |
-| Qwen3-4B (familia Qwen3) | 4B | no disponible | Generacion de texto general, mayor capacidad | Apache 2.0 | Pesos completos en HuggingFace |
+| Vitrion Qwen3-1.7B QLoRA N=128 | 1.7B (base) + adaptador LoRA | no disponible | State-tracking en dialogo ficticio, ingles | Apache 2.0 | Adaptador PEFT en Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1.7B | no disponible | Generacion de texto general | Apache 2.0 | Pesos completos en Hugging Face |
+| Qwen3-4B (familia Qwen3) | 4B | no disponible | Generacion de texto general, mayor capacidad | Apache 2.0 | Pesos completos en Hugging Face |
 
 La comparacion directa mas relevante es contra el propio base Qwen3-1.7B, ya que el adaptador solo mejora en la tarea especifica de state-tracking (70.6% vs 1.7% de adherencia exacta) y no se han publicado comparaciones con otros adaptadores o modelos en esta tarea. No hay datos de benchmarks estandar (MMLU, HumanEval, GSM8K) para este adaptador.
 
@@ -93,7 +93,7 @@ La comparacion directa mas relevante es contra el propio base Qwen3-1.7B, ya que
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Calm153/vitrion-qwen3-1.7b-qlora-n128
+- Hugging Face del adaptador: https://huggingface.co/Calm153/vitrion-qwen3-1.7b-qlora-n128
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset: https://huggingface.co/datasets/Calm153/vitrion-state-once-final
 - Demo base vs tuned: https://huggingface.co/spaces/Calm153/vitrion-base-vs-tuned

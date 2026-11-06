@@ -74,5 +74,5 @@ No disponible. No se ha encontrado información sobre modelos comparables en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mirrchang/wallpad-1b-v9-lora
+- Hugging Face: https://huggingface.co/mirrchang/wallpad-1b-v9-lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

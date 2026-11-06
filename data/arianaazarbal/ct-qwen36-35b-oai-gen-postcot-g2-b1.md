@@ -69,8 +69,8 @@ No hay datos publicados que permitan una comparativa cuantitativa con alternativ
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-oai-gen-postcot-g2-b1 | Adaptador LoRA r=64 sobre Qwen3.6-35B-A3B | No disponible (base: no disponible) | 8192 en entrenamiento | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B | Modelo base | No disponible | No disponible | No disponible | HuggingFace |
+| ct-qwen36-35b-oai-gen-postcot-g2-b1 | Adaptador LoRA r=64 sobre Qwen3.6-35B-A3B | No disponible (base: no disponible) | 8192 en entrenamiento | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B | Modelo base | No disponible | No disponible | No disponible | Hugging Face |
 | Otros adaptadores de la misma cadena (otras generaciones y ramas) | LoRA sobre el mismo base | No disponible | No disponible | No disponible | No confirmado en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -88,10 +88,10 @@ No hay datos publicados que permitan una comparativa cuantitativa con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - OpenAI Model Spec (semilla de la generacion 0, resumen de 5000 tokens): https://model-spec.openai.com/
 - Ruta original de entrenamiento en Tinker: `tinker://595752ce-6d45-54f6-affa-0636e60ae84e:train:0/sampler_weights/qwen36_oaig2_qwen36_oai_g2_b1_s2_cot_final`
-- Constitucion de entrenamiento: `training_seed_constitution.md` (incluida en el repositorio de HuggingFace)
-- Registro de exportacion: `tinker_meta.json` (incluido en el repositorio de HuggingFace)
+- Constitucion de entrenamiento: `training_seed_constitution.md` (incluida en el repositorio de Hugging Face)
+- Registro de exportacion: `tinker_meta.json` (incluido en el repositorio de Hugging Face)
 - Programa de investigacion mencionado (welfare-in-ai-rnd / constitutional_training): sin URL publica en la informacion disponible

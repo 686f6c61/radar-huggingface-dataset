@@ -107,12 +107,12 @@ No hay datos publicos en la informacion proporcionada sobre parametros, contexto
 - Cobertura funcional limitada: no hay evidencia documentada de tool calling, function calling, capacidades de agente, razonamiento multi-paso, vision ni audio. No es un modelo adecuado como sustituto de un asistente generalista en esos ambitos.
 - Contexto largo en la practica: aunque se declaran 262.144 tokens, no se documenta el rendimiento real a esa longitud ni el coste de memoria de la cache KV, que puede hacer inviable el contexto maximo en hardware de gama media.
 - Licencia: Apache-2.0 permite uso comercial, pero conviene verificar las condiciones heredadas del modelo base Qwen/Qwen3.8-27B, no detalladas en la informacion proporcionada.
-- Madurez del proyecto: el modelo tiene 0 descargas y 14 "likes" en HuggingFace, con creacion y ultima actualizacion el 2026-09-20. Es un lanzamiento muy reciente y con adopcion practicamente nula, sin ecosistema de herramientas ni cuantizaciones de terceros verificadas.
+- Madurez del proyecto: el modelo tiene 0 descargas y 14 "likes" en Hugging Face, con creacion y ultima actualizacion el 2026-09-20. Es un lanzamiento muy reciente y con adopcion practicamente nula, sin ecosistema de herramientas ni cuantizaciones de terceros verificadas.
 - Dependencia de servicios externos: la demo y las aplicaciones para Mac y Android se ofrecen en hemmingway.io, fuera del repositorio de pesos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Altworld/Hemmingway-1
+- Modelo en Hugging Face: https://huggingface.co/Altworld/Hemmingway-1
 - Sitio del proyecto y demo: https://hemmingway.io
 - Descarga de aplicaciones para Mac y Android: https://hemmingway.io/download
 - Codigo fuente: https://github.com/lukeckprobierts/Hemmingway-1

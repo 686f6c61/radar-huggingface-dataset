@@ -95,9 +95,9 @@ La variante NVFP4 es 1,40x más rápida sin coste medible de precisión (Intelli
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spark-s1-4b-v6 | 4,2 B (denso) | no disponible | JevBench public-proxy Intelligence 83,1; test propio 0,929 | Apache-2.0 | HuggingFace, más variante NVFP4 |
+| spark-s1-4b-v6 | 4,2 B (denso) | no disponible | JevBench public-proxy Intelligence 83,1; test propio 0,929 | Apache-2.0 | Hugging Face, más variante NVFP4 |
 | spark-s1-4b-v5 | no disponible | no disponible | Intelligence 74,2; test propio 0,867 | Apache-2.0 (según proyecto) | Entrega anterior del mismo proyecto |
-| Qwen/Qwen3.5-4B (backbone) | 4 B (según nomenclatura) | no disponible | no evaluado en las mismas tareas; es un modelo generativo, no un decisor calibrado | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3.5-4B (backbone) | 4 B (según nomenclatura) | no disponible | no evaluado en las mismas tareas; es un modelo generativo, no un decisor calibrado | Apache-2.0 | Hugging Face |
 | Otros decisores System-1 abiertos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación más significativa es interna, contra v5-4b: v6 mejora +6,2 puntos en accuracy de sus propios splits y pasa de 74,2 a 83,1 en Intelligence, pero retrocede en dos de los cinco conjuntos externos de estilo Jev (`ext-injection-noctx` -3,6 puntos y `ext-toolcall-risk` -1,7 puntos). No se dispone de datos para comparar con alternativas de terceros de la misma categoría.
@@ -118,7 +118,7 @@ La comparación más significativa es interna, contra v5-4b: v6 mejora +6,2 punt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishek085/spark-s1-4b-v6
+- Modelo en Hugging Face: https://huggingface.co/abhishek085/spark-s1-4b-v6
 - Variante cuantizada NVFP4 (solo MLP): https://huggingface.co/abhishek085/spark-s1-4b-v6-nvfp4
 - Repositorio del proyecto Open Spark Jev: https://github.com/abhishek085/open-spark-jev
 - Política de seguridad del proyecto: https://github.com/abhishek085/open-spark-jev/blob/main/SECURITY.md

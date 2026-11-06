@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`menik1126/ovd-math-128-data-random-step800-historical` es un checkpoint de inferencia publicado en HuggingFace por el usuario menik1126, construido sobre la arquitectura Qwen2 (etiqueta `qwen2` del repositorio) y con 1.777.088.000 parámetros reales medidos en los ficheros safetensors. El propio autor lo describe como un "historical OVD checkpoint" correspondiente a "DSR128, random_suffix, semantic step 800", auditado como "DSR128 Random global_step_800", y advierte explícitamente de que se trata de pesos históricos evaluados y no de la implementación recién reparada. Es, por tanto, un artefacto de investigación congelado, pensado para reproducir o auditar un experimento concreto, no un modelo de propósito general listo para producción.
+`menik1126/ovd-math-128-data-random-step800-historical` es un checkpoint de inferencia publicado en Hugging Face por el usuario menik1126, construido sobre la arquitectura Qwen2 (etiqueta `qwen2` del repositorio) y con 1.777.088.000 parámetros reales medidos en los ficheros safetensors. El propio autor lo describe como un "historical OVD checkpoint" correspondiente a "DSR128, random_suffix, semantic step 800", auditado como "DSR128 Random global_step_800", y advierte explícitamente de que se trata de pesos históricos evaluados y no de la implementación recién reparada. Es, por tanto, un artefacto de investigación congelado, pensado para reproducir o auditar un experimento concreto, no un modelo de propósito general listo para producción.
 
 El nombre del repositorio sugiere algún tipo de experimento sobre datos matemáticos (`math-128-data`) con una variante aleatoria de control (`random`) y un paso de entrenamiento o de proceso concreto (800), pero la model card no documenta la composición del dataset, el número de tokens vistos ni la receta de entrenamiento. El repositorio contiene únicamente pesos de inferencia y ficheros de tokenizer, sin estado de optimizador, lo que confirma que no está pensado para reanudar entrenamiento sino para evaluar el resultado final de un paso concreto.
 
@@ -88,13 +88,13 @@ La diferencia principal no es de rendimiento, sino de madurez: el checkpoint aqu
 - Riesgo de alucinación no cuantificado: no existen evaluaciones publicadas de fidelidad, veracidad ni tasas de error.
 - El propio autor advierte de que son pesos históricos y no la implementación reparada; no deben tratarse como el estado del arte de su línea de trabajo.
 - Longitud de contexto e idiomas soportados no disponibles, lo que impide planificar despliegues con requisitos concretos de ventana o de cobertura lingüística.
-- Sin pipeline declarado en HuggingFace, la integración requiere inspección manual de la configuración y prueba de carga.
+- Sin pipeline declarado en Hugging Face, la integración requiere inspección manual de la configuración y prueba de carga.
 - Un tamaño de 1,78B parámetros implica capacidad limitada de razonamiento complejo y de conocimiento factual, con degradación acusada en tareas que exijan múltiples pasos o conocimiento enciclopédico.
 - El repositorio no incluye estado de optimizador, así que no sirve para reanudar entrenamiento, solo para inferencia o evaluación.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni de validación externa de su comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-random-step800-historical
+- Modelo en Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-random-step800-historical
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a páginas de descarga de Ubuntu y no guardan relación con el checkpoint).
 - Paper, blog, repositorio o demo del autor: no disponible.

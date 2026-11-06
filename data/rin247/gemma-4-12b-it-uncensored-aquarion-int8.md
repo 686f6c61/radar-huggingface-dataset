@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos entre estas versiones. La pri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT8
+- Repositorio Hugging Face: https://huggingface.co/Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT8
 - Modelo base oficial: https://huggingface.co/google/gemma-4-12B
 - Version abliterada alternativa (Justbackup): https://huggingface.co/Justbackup/gemma-4-12B-it-uncensored
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

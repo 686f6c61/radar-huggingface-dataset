@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Fix es un adaptador LoRA de tipo text-to-image publicado por el usuario weibin198072 en HuggingFace. No se trata de un modelo completo, sino de un ajuste fino de bajo rango (Low-Rank Adaptation, LoRA) que se carga sobre el modelo base Qwen/Qwen-Image-2.1 de Alibaba Qwen. Su proposito declarado por el autor es corregir "la mayoria de los problemas de generacion de imagenes" del modelo base cuando se aplica con los ajustes recomendados, que el autor distribuye en un archivo ZIP con un workflow preconfigurado.
+Qwen-Image-2.1-Fix es un adaptador LoRA de tipo text-to-image publicado por el usuario weibin198072 en Hugging Face. No se trata de un modelo completo, sino de un ajuste fino de bajo rango (Low-Rank Adaptation, LoRA) que se carga sobre el modelo base Qwen/Qwen-Image-2.1 de Alibaba Qwen. Su proposito declarado por el autor es corregir "la mayoria de los problemas de generacion de imagenes" del modelo base cuando se aplica con los ajustes recomendados, que el autor distribuye en un archivo ZIP con un workflow preconfigurado.
 
 El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo de difusion completo. El pipeline declarado es text-to-image y la libreria de referencia es diffusers. La model card incluye una galeria de comparaciones entre la generacion con ajustes estandar y sin LoRA frente a la generacion con el LoRA y los ajustes recomendados, aunque el texto descriptivo es muy escueto y no detalla ni el dataset de entrenamiento, ni el rango del adaptador, ni los hiperparametros utilizados.
 
@@ -89,7 +89,7 @@ No se dispone de informacion sobre alternativas comparables concretas (por ejemp
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/weibin198072/Qwen-Image-2.1-Fix
+- Pagina del modelo en Hugging Face: https://huggingface.co/weibin198072/Qwen-Image-2.1-Fix
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de archivos del autor: https://huggingface.co/weibin198072/Qwen-Image-2.1-Fix/tree/main
 - Repositorio alternativo citado en la model card (autor original del texto): https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix/tree/main

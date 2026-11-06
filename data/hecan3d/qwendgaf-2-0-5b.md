@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenDGAF-2-0.5B es un modelo de lenguaje publicado en HuggingFace por el usuario hecan3d bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un derivado o ajuste fino de la familia Qwen, con un tamano aproximado de 0,5 mil millones de parametros, si bien la model card publicada no incluye ninguna descripcion tecnica, datos de entrenamiento ni detalles sobre el proceso de ajuste.
+QwenDGAF-2-0.5B es un modelo de lenguaje publicado en Hugging Face por el usuario hecan3d bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un derivado o ajuste fino de la familia Qwen, con un tamano aproximado de 0,5 mil millones de parametros, si bien la model card publicada no incluye ninguna descripcion tecnica, datos de entrenamiento ni detalles sobre el proceso de ajuste.
 
 La informacion disponible es minima: no se especifican la arquitectura concreta, la longitud de contexto, los idiomas soportados ni los formatos de pesos. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -43,7 +43,7 @@ Tampoco se detallan los datos de entrenamiento: no se indica el volumen de token
 - Pruebas de concepto en entornos de desarrollo: util para validar pipelines de inferencia (carga de pesos, tokenizacion, generacion) antes de migrar a un modelo mayor y mejor documentado.
 - Evaluacion comparativa interna: puede servir como linea base de modelos de menos de 1B en pruebas propias de calidad, siempre que el equipo genere sus propios conjuntos de evaluacion.
 - Prototipado de interfaces conversacionales: adecuado para maquetas de chatbots donde la latencia y el coste importan mas que la precision, dado su reducido tamano.
-- Educacion y divulgacion: util para explicar el ciclo de vida de un modelo en HuggingFace y las limitaciones de los repositorios sin documentacion.
+- Educacion y divulgacion: util para explicar el ciclo de vida de un modelo en Hugging Face y las limitaciones de los repositorios sin documentacion.
 - Filtrado o clasificacion ligera de texto: posible uso en tareas simples de etiquetado si se valida empiricamente su rendimiento, aunque no hay evidencia publicada al respecto.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| QwenDGAF-2-0.5B | aprox. 0,5B (no confirmado) | no disponible | Apache 2.0 | Practicamente inexistente | Repositorio HuggingFace sin descargas registradas |
+| QwenDGAF-2-0.5B | aprox. 0,5B (no confirmado) | no disponible | Apache 2.0 | Practicamente inexistente | Repositorio Hugging Face sin descargas registradas |
 | Qwen2.5-0.5B | 0,5B | 32K (segun documentacion oficial de la familia) | Apache 2.0 | Completa, con benchmarks | Ampliamente disponible |
 | SmolLM2-360M | 0,36B | 8K (segun documentacion oficial) | Apache 2.0 | Completa, con benchmarks | Ampliamente disponible |
 
@@ -80,5 +80,5 @@ La comparativa se limita a modelos de tamano similar de la familia Qwen y de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hecan3d/QwenDGAF-2-0.5B
+- Repositorio Hugging Face: https://huggingface.co/hecan3d/QwenDGAF-2-0.5B
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

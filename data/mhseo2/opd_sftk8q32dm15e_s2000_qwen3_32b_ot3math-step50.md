@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mhseo2/opd_sftk8q32dm15e_s2000_qwen3_32b_ot3math-step50` es un checkpoint publicado en HuggingFace por el usuario `mhseo2`. El identificador del repositorio sugiere un ajuste supervisado (SFT) sobre la familia Qwen3, con datos de temática matemática (`ot3math`) y correspondiente al paso 50 de entrenamiento. No obstante, esa lectura es una inferencia a partir del nombre: el repositorio no incluye model card, pipeline declarado, licencia, idiomas ni documentación sobre el proceso de entrenamiento.
+`mhseo2/opd_sftk8q32dm15e_s2000_qwen3_32b_ot3math-step50` es un checkpoint publicado en Hugging Face por el usuario `mhseo2`. El identificador del repositorio sugiere un ajuste supervisado (SFT) sobre la familia Qwen3, con datos de temática matemática (`ot3math`) y correspondiente al paso 50 de entrenamiento. No obstante, esa lectura es una inferencia a partir del nombre: el repositorio no incluye model card, pipeline declarado, licencia, idiomas ni documentación sobre el proceso de entrenamiento.
 
 El dato objetivo más relevante es el recuento real de parámetros en safetensors: 8.190.735.360 (unos 8,19 mil millones), con un tamaño de repositorio de 16,4 GB. Ese tamaño es coherente con pesos en bf16/fp16 (8,19 B × 2 bytes ≈ 16,4 GB), pero contradice el sufijo `qwen3_32b` del nombre: el checkpoint no tiene 32 mil millones de parámetros, sino aproximadamente los de un Qwen3-8B. Cualquier uso en producción debe partir del recuento real de safetensors, no del nombre del repositorio.
 
@@ -88,6 +88,6 @@ La diferencia practica frente a estas alternativas no es de tamaño, sino de tra
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mhseo2/opd_sftk8q32dm15e_s2000_qwen3_32b_ot3math-step50
+- Repositorio en Hugging Face: https://huggingface.co/mhseo2/opd_sftk8q32dm15e_s2000_qwen3_32b_ot3math-step50
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados en la informacion disponible.
 - No se ha identificado el modelo base exacto ni su repositorio oficial en la informacion proporcionada.

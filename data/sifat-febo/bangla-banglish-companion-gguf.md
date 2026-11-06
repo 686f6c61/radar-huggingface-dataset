@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con ot
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/sifat-febo/bangla-banglish-companion-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/sifat-febo/bangla-banglish-companion-gguf
 - Modelo base: https://huggingface.co/sifat-febo/banglish-companion
 - Dataset BanglishBench: https://huggingface.co/datasets/sifat-febo/banglish_bench
 - Perfil del autor: https://huggingface.co/sifat-febo

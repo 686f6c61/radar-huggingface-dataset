@@ -53,7 +53,7 @@ No disponible. No se trata de un modelo comparable con otros sistemas de razonam
 - **Idioma**: el paper está en español, pero no se especifica el idioma original del contenido; el texto del paper está en español (según el README, el tema es "multimodal reasoning" y el formato es LaTeX ACL).
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/Ryan-garcia/paper_013963286_multimodal_reasoning
+- Repositorio de Hugging Face: https://huggingface.co/Ryan-garcia/paper_013963286_multimodal_reasoning
 - Google Scholar (búsqueda general): https://scholar.google.com/
 - Hugging Face Daily Papers: https://huggingface.co/papers?date=2025-03-10
 - alphaXiv: https://www.alphaxiv.org/

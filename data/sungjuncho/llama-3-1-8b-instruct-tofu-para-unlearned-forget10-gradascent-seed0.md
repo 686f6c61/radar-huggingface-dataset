@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-gradascent-seed0` es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario de HuggingFace `sungjuncho`, resultado de aplicar una técnica de *machine unlearning* (desaprendizaje) sobre un checkpoint previamente ajustado con el dataset TOFU. El objetivo no es ofrecer un modelo de propósito general, sino servir como artefacto de investigación para estudiar la diferencia entre *untraining* (eliminar las muestras concretas que se pasaron al método de desaprendizaje) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones).
+`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-gradascent-seed0` es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario de Hugging Face `sungjuncho`, resultado de aplicar una técnica de *machine unlearning* (desaprendizaje) sobre un checkpoint previamente ajustado con el dataset TOFU. El objetivo no es ofrecer un modelo de propósito general, sino servir como artefacto de investigación para estudiar la diferencia entre *untraining* (eliminar las muestras concretas que se pasaron al método de desaprendizaje) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones).
 
 El modelo parte de `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0`, un Llama 3.1 8B Instruct afinado sobre TOFU completo más dos versiones parafraseadas de cada par pregunta-respuesta. Sobre ese checkpoint se aplica GradAscent, uno de los algoritmos incluidos en la librería `open-unlearning` del grupo LOCUS Lab, con el conjunto de olvido compuesto únicamente por los 400 pares QA originales de `forget10` y un conjunto de retención de 10.800 ejemplos (retain90 más las dos paráfrasis).
 
@@ -72,10 +72,10 @@ FADE se define como la divergencia KL simétrica respecto al modelo de referenci
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (GradAscent, seed 0) | 8.030 M | no disponible | Desaprendizaje TOFU forget10 | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8.030 M | no disponible | Checkpoint de partida (ajuste fino TOFU x2) | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8.030 M | no disponible | Modelo de referencia para FADE y forget quality | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8.030 M | no disponible | Referencia de untraining | llama3.1 | HuggingFace |
+| Este modelo (GradAscent, seed 0) | 8.030 M | no disponible | Desaprendizaje TOFU forget10 | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8.030 M | no disponible | Checkpoint de partida (ajuste fino TOFU x2) | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8.030 M | no disponible | Modelo de referencia para FADE y forget quality | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8.030 M | no disponible | Referencia de untraining | llama3.1 | Hugging Face |
 
 No se dispone de comparación con modelos de desaprendizaje de otros autores en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de comparación con modelos de desaprendizaje de otros autores en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-gradascent-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-gradascent-seed0
 - Modelo base (ajuste fino TOFU x2): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

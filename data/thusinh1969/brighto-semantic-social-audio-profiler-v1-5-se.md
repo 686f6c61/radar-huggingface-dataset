@@ -16,7 +16,7 @@ La versión 1.5 Special Edition amplía el soporte a 14 idiomas (inglés, vietna
 | Longitud de contexto | No disponible (clasificación por segmentos de 4-25 s) |
 | Tipos de cuantizacion | No disponible (pesos en safetensors, sin cuantizaciones publicadas) |
 | Idiomas soportados | en, vi, zh, ja, ko, de, fr, es, hi, nl, it, pl, pt, tr (14 idiomas) |
-| Licencia | Comercial (license:other en HuggingFace) |
+| Licencia | Comercial (license:other en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ No se han publicado resultados en benchmarks públicos estándar (MMLU, HumanEva
 - Para inferencia en FP16 se recomienda una GPU con al menos 8 GB de VRAM (por ejemplo, RTX 3070, RTX 4060 Ti, A10G). Para procesamiento de segmentos múltiples en tiempo real, se recomienda una GPU de 16-24 GB (RTX 4090, A100 40GB).
 - En cuantización INT8 (no publicada oficialmente) cabría en 3-4 GB, pero no se ha confirmado compatibilidad con cuantizadores.
 - No se han publicado cifras de latencia ni throughput. Al ser un modelo híbrido audio+LLM, la latencia dependerá de la longitud del segmento de audio y de la generación del JSON de salida.
-- Opciones de despliegue: el modelo es compatible con la librería `transformers` de HuggingFace. Para despliegue en producción se puede usar vLLM (si se adapta el pipeline), TGI, o un servicio ONNX Runtime. También es compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Opciones de despliegue: el modelo es compatible con la librería `transformers` de Hugging Face. Para despliegue en producción se puede usar vLLM (si se adapta el pipeline), TGI, o un servicio ONNX Runtime. También es compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Para despliegue on-premise, se requiere un servidor con GPU NVIDIA (CUDA) y suficiente memoria RAM para cargar los pesos.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de comparaciones públicas con modelos de la misma categoría (cla
 
 ## Limitaciones y advertencias
 
-- La licencia es comercial y el acceso es restringido (gated) en HuggingFace; es necesario aceptar condiciones del autor antes de su descarga, lo que puede limitar su uso en proyectos open-source.
+- La licencia es comercial y el acceso es restringido (gated) en Hugging Face; es necesario aceptar condiciones del autor antes de su descarga, lo que puede limitar su uso en proyectos open-source.
 - Los benchmarks declarados se basan en un dataset interno propietario de BrighTO y no han sido verificados de forma independiente; los resultados podrían no reproducirse en otros dominios o poblaciones.
 - La F1 de emoción es moderada (70,95), lo que indica una fiabilidad limitada en aplicaciones críticas que dependan de la detección precisa de emociones.
 - El modelo está entrenado en 11 idiomas (aunque soporta 14 en inferencia), por lo que el rendimiento en idiomas menos representados puede ser inferior.
@@ -85,7 +85,7 @@ No se dispone de comparaciones públicas con modelos de la misma categoría (cla
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/thusinh1969/BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE
+- Página del modelo en Hugging Face: https://huggingface.co/thusinh1969/BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE
 - README del modelo: https://huggingface.co/thusinh1969/BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE/blob/main/README.md
 - Página de análisis del modelo BrighTO Audio Profiler V1.0 Prod: https://free2aitools.com/model/thusinh1969/brighto_audio_profiler_v1.0_prod
 - Página de análisis del modelo BrighTO Audio Profiler Tiny DPO V1.1 Prod: https://free2aitools.com/model/thusinh1969/brighto_audio_profiler_tiny_dpo_v1.1_prod

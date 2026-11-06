@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Morphy-1.5B es un modelo de lenguaje publicado en HuggingFace por el usuario moolvylabs bajo licencia Apache 2.0. El repositorio contiene únicamente un archivo de pesos en formato safetensors con un tamaño total de 3,1 GB, lo que sugiere que podría tratarse de un modelo de aproximadamente 1.500 millones de parámetros en precisión FP16 o BF16, aunque no se confirma en la documentación disponible. La model card es prácticamente vacía, sin descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El modelo fue creado el 17 de agosto de 2026 y actualizado el mismo día, sin descargas ni valoraciones por parte de la comunidad.
+Morphy-1.5B es un modelo de lenguaje publicado en Hugging Face por el usuario moolvylabs bajo licencia Apache 2.0. El repositorio contiene únicamente un archivo de pesos en formato safetensors con un tamaño total de 3,1 GB, lo que sugiere que podría tratarse de un modelo de aproximadamente 1.500 millones de parámetros en precisión FP16 o BF16, aunque no se confirma en la documentación disponible. La model card es prácticamente vacía, sin descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El modelo fue creado el 17 de agosto de 2026 y actualizado el mismo día, sin descargas ni valoraciones por parte de la comunidad.
 
-A día de hoy no existe información pública adicional sobre este modelo más allá de los metadatos básicos de HuggingFace. No se han publicado papers, blogs técnicos ni demos que describan su funcionamiento o sus capacidades. Por tanto, cualquier evaluación seria sobre su rendimiento o aplicabilidad resulta imposible con los datos disponibles. Esta ficha recoge únicamente los datos verificables y señala explícitamente las carencias de información.
+A día de hoy no existe información pública adicional sobre este modelo más allá de los metadatos básicos de Hugging Face. No se han publicado papers, blogs técnicos ni demos que describan su funcionamiento o sus capacidades. Por tanto, cualquier evaluación seria sobre su rendimiento o aplicabilidad resulta imposible con los datos disponibles. Esta ficha recoge únicamente los datos verificables y señala explícitamente las carencias de información.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ A día de hoy no existe información pública adicional sobre este modelo más a
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion alguna sobre la arquitectura interna del modelo (si es transformer denso, MoE, SSM o hibrido), ni sobre los datos de entrenamiento, numero de tokens, metodos de alineacion (RLHF, DPO, etc.) o cualquier innovacion tecnica. El repositorio de HuggingFace no incluye configuracion del modelo, tokenizador ni archivos de configuracion adicionales. El unico archivo presente parece ser el de pesos, sin documentacion asociada.
+No se dispone de informacion alguna sobre la arquitectura interna del modelo (si es transformer denso, MoE, SSM o hibrido), ni sobre los datos de entrenamiento, numero de tokens, metodos de alineacion (RLHF, DPO, etc.) o cualquier innovacion tecnica. El repositorio de Hugging Face no incluye configuracion del modelo, tokenizador ni archivos de configuracion adicionales. El unico archivo presente parece ser el de pesos, sin documentacion asociada.
 
 ## Capacidades
 
@@ -49,12 +49,12 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 - No se conocen sesgos especificos, pero la falta de informacion sobre los datos de entrenamiento impide descartar sesgos potenciales.
 - El riesgo de alucinacion es desconocido, aunque en modelos pequenos sin alineacion documentada suele ser elevado.
 - La licencia Apache 2.0 permite uso comercial, pero sin conocer la procedencia de los datos de entrenamiento podrian existir riesgos legales asociados a derechos de autor.
-- El modelo no cuenta con comunidad ni soporte: cero descargas y cero valoraciones en HuggingFace.
+- El modelo no cuenta con comunidad ni soporte: cero descargas y cero valoraciones en Hugging Face.
 - La fecha de creacion (2026) es posterior a la fecha actual, lo que sugiere que podria tratarse de un modelo experimental o de un error en la plataforma.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moolvylabs/Morphy-1.5B
+- Repositorio Hugging Face: https://huggingface.co/moolvylabs/Morphy-1.5B
 - Resultados de busqueda web (no directamente relacionados con el modelo):
   - https://www.morphllm.com/ (plataforma de inferencia para agentes de codigo, sin vinculo confirmado)
   - https://huggingface.co/WeiboAI/VibeThinker-1.5B (modelo diferente)

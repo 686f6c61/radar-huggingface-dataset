@@ -2,7 +2,7 @@
 
 ## Resumen
 
-laya-browser-v1 es un ajuste fino por continuacion de cklxx/laya-browser v17s, desarrollado por el usuario ikaanakkok y publicado en HuggingFace. Se trata de un modelo System-1 de decisiones tipadas orientado a agentes de navegador: no genera texto, sino que responde a preguntas estructuradas (choice, noul, score) sobre el estado de una pagina web y devuelve la opcion elegida junto con probabilidades calibradas. Su aportacion principal frente al modelo padre es la incorporacion de cobertura web en turco y de trazas reales de clics ejecutadas en Chrome mediante CDP.
+laya-browser-v1 es un ajuste fino por continuacion de cklxx/laya-browser v17s, desarrollado por el usuario ikaanakkok y publicado en Hugging Face. Se trata de un modelo System-1 de decisiones tipadas orientado a agentes de navegador: no genera texto, sino que responde a preguntas estructuradas (choice, noul, score) sobre el estado de una pagina web y devuelve la opcion elegida junto con probabilidades calibradas. Su aportacion principal frente al modelo padre es la incorporacion de cobertura web en turco y de trazas reales de clics ejecutadas en Chrome mediante CDP.
 
 Arquitectonicamente mantiene el mismo diseno que su predecesor: un encoder mmBERT-base de 322M parametros (321.908.998 en total, segun el archivo safetensors) mas cabezas de decision especificas. Es un reemplazo directo (drop-in) del checkpoint v17s en el repositorio laya-browser, con el mismo formato laya_fmt v3 y la misma disposicion de checkpoint, por lo que no requiere cambios en el harness de inferencia.
 
@@ -101,9 +101,9 @@ Benchmarks de calidad de decision sobre las tareas publicadas de Jev: la model c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laya-browser-v1 (este) | 321,9M | no disponible | Suite A 14/16, Suite B 18/18; op acc 0.703 | MIT | HuggingFace, 0 descargas |
+| laya-browser-v1 (este) | 321,9M | no disponible | Suite A 14/16, Suite B 18/18; op acc 0.703 | MIT | Hugging Face, 0 descargas |
 | cklxx/laya-browser v17s (padre) | 321,9M (misma arquitectura) | no disponible | Suite A 85% publicado (41/48), Suite B 100% (54/54); op acc 0.663 | No indicada en la informacion disponible | Repositorio laya-browser |
-| hanish-builds/laya-browser-v1 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| hanish-builds/laya-browser-v1 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de otras alternativas de la misma categoria en la informacion proporcionada.
 
@@ -122,10 +122,10 @@ No se dispone de datos de benchmarks ni de especificaciones de otras alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ikaanakkok/laya-browser-v1
+- Hugging Face: https://huggingface.co/ikaanakkok/laya-browser-v1
 - Modelo base: https://huggingface.co/cklxx/laya-browser
 - Repositorio GitHub laya-browser: https://github.com/Benny93/laya-browser
 - Demo WebGPU de Laya: https://huggingface.co/spaces/mizchi/laya-web-demo
 - Sitio oficial de Laya AI: https://laya-model.com/
 - Guia de inicio de Laya AI: https://laya-model.com/get-started
-- Variante alternativa en HuggingFace: https://huggingface.co/hanish-builds/laya-browser-v1
+- Variante alternativa en Hugging Face: https://huggingface.co/hanish-builds/laya-browser-v1

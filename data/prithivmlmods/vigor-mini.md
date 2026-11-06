@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VIGOR-mini | ~4,66 B | No disponible | Clasificación Safe/NSFW multimodal | Apache 2.0 | HuggingFace (prithivMLmods) |
-| Qwen/Qwen3.5-4B (base) | ~4 B | No disponible | Modelo multimodal generalista | No disponible en la información | HuggingFace (Qwen) |
+| VIGOR-mini | ~4,66 B | No disponible | Clasificación Safe/NSFW multimodal | Apache 2.0 | Hugging Face (prithivMLmods) |
+| Qwen/Qwen3.5-4B (base) | ~4 B | No disponible | Modelo multimodal generalista | No disponible en la información | Hugging Face (Qwen) |
 | Alternativas de clasificación NSFW de propósito específico | No disponible | No disponible | Clasificadores visuales dedicados | No disponible | No disponible en la información |
 
 La información proporcionada no incluye resultados de benchmarks ni especificaciones de modelos competidores, por lo que no es posible establecer una comparación cuantitativa de rendimiento. La comparación más directa disponible es con el modelo base Qwen/Qwen3.5-4B, del que VIGOR-mini hereda arquitectura y capacidades generales, especializándose mediante ajuste fino en clasificación de seguridad.
@@ -88,7 +88,7 @@ La información proporcionada no incluye resultados de benchmarks ni especificac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/VIGOR-mini
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/VIGOR-mini
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Perfil del autor: https://huggingface.co/prithivMLmods
 - Imagen de portada de la model card: https://cdn-uploads.huggingface.co/production/uploads/65bb837dbfb878f46c77de4c/tvF1AcUq4ldMWqDxA4NHS.png

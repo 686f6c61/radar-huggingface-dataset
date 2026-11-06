@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ds4xai/land-lunder-v3-1` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) y una politica de tipo MlpPolicy, publicado por el usuario ds4xai en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una politica neuronal de pequeno tamano que resuelve la tarea de control `LunarLander-v3`, un entorno clasico de Gymnasium en el que un modulo debe aterrizar de forma segura sobre una plataforma aplicando empuje lateral y vertical.
+El modelo `ds4xai/land-lunder-v3-1` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) y una politica de tipo MlpPolicy, publicado por el usuario ds4xai en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una politica neuronal de pequeno tamano que resuelve la tarea de control `LunarLander-v3`, un entorno clasico de Gymnasium en el que un modulo debe aterrizar de forma segura sobre una plataforma aplicando empuje lateral y vertical.
 
 El modelo se ha entrenado con la libreria stable-baselines3 (SB3), el framework de referencia para algoritmos de RL en PyTorch, y se distribuye con el pipeline `reinforcement-learning`. Su relevancia es practica y acotada: sirve como referencia reproducible de un agente PPO que alcanza el umbral de tarea resuelta en LunarLander-v3, y como punto de partida para experimentos de comparacion de algoritmos, ajuste de hiperparametros o pruebas de pipelines de evaluacion.
 
-El autor declara una recompensa media de 246,22 +/- 15,75 en el entorno LunarLander-v3, por encima del umbral de 200 que la comunidad suele considerar como tarea resuelta. La model card publicada es minima (incluye el boilerplate autogenerado de HuggingFace con un `TODO` en la seccion de uso) y no documenta la arquitectura exacta de la red, el numero de pasos de entrenamiento, los hiperparametros ni la licencia del artefacto, por lo que varias especificaciones quedan como no disponibles.
+El autor declara una recompensa media de 246,22 +/- 15,75 en el entorno LunarLander-v3, por encima del umbral de 200 que la comunidad suele considerar como tarea resuelta. La model card publicada es minima (incluye el boilerplate autogenerado de Hugging Face con un `TODO` en la seccion de uso) y no documenta la arquitectura exacta de la red, el numero de pasos de entrenamiento, los hiperparametros ni la licencia del artefacto, por lo que varias especificaciones quedan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, el presu
 - Aprendizaje por refuerzo con PPO: el artefacto es cargable con la libreria stable-baselines3 y puede utilizarse para inferencia, evaluacion o reentrenamiento.
 - Espacio de acciones: no especificado en la informacion proporcionada. LunarLander-v3 admite configuracion discreta por defecto y una variante continua opcional; no se indica cual se uso.
 - Reproducibilidad de benchmark: reproduce una politica entrenada que supera el umbral de recompensa media de 200 en LunarLander-v3.
-- Compatibilidad con el ecosistema HuggingFace Hub: la model card referencia `huggingface_sb3.load_from_hub`, el helper oficial para descargar agentes SB3 desde el Hub.
+- Compatibilidad con el ecosistema Hugging Face Hub: la model card referencia `huggingface_sb3.load_from_hub`, el helper oficial para descargar agentes SB3 desde el Hub.
 - Sin soporte de tool calling, function calling, agentes multi-paso, generacion de texto, vision, audio ni capacidades multilingues: no son aplicables a este tipo de modelo.
 - Sin modo de razonamiento extendido ni decodificacion especulativa: no aplica.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificables sobre otros agentes PPO publicados para Luna
 
 | Referencia | Algoritmo / politica | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ds4xai/land-lunder-v3-1 | PPO + MlpPolicy | LunarLander-v3 | 246,22 +/- 15,75 | No disponible | HuggingFace Hub |
+| ds4xai/land-lunder-v3-1 | PPO + MlpPolicy | LunarLander-v3 | 246,22 +/- 15,75 | No disponible | Hugging Face Hub |
 | Umbral de tarea resuelta | No aplica | LunarLander-v3 | >= 200 (criterio habitual de la comunidad) | No aplica | No aplica |
 | Otros agentes PPO/DQN/A2C para LunarLander | No disponible | LunarLander-v3 | No disponible | No disponible | No disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos verificables sobre otros agentes PPO publicados para Luna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ds4xai/land-lunder-v3-1
+- Modelo en Hugging Face: https://huggingface.co/ds4xai/land-lunder-v3-1
 - Libreria stable-baselines3 (GitHub): https://github.com/DLR-RM/stable-baselines3
 - Helper de carga de agentes SB3 desde el Hub: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): no disponible en los resultados de busqueda proporcionados

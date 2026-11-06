@@ -4,7 +4,7 @@
 
 El modelo DavidAU/Qwen3.8-Cold-Fusion-GAIN-V1.1 es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.8-27B, desarrollado por DavidAU. Se trata de un modelo multimodal de tipo imagen-texto a texto, lo que indica que puede procesar entradas que combinan imágenes y texto para generar respuestas textuales. El nombre sugiere el uso de dos técnicas de entrenamiento específicas: "GAIN Training" y "COLD-FUSION", aunque no se dispone de documentación pública que detalle su implementación o impacto.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial con atribución, pero su acceso en HuggingFace está restringido (gated), por lo que es necesario aceptar condiciones adicionales para poder descargarlo. No se han publicado métricas de rendimiento, especificaciones técnicas detalladas ni información sobre el proceso de entrenamiento más allá de los datos básicos del repositorio. En el momento de la consulta, el modelo no presenta descargas ni valoraciones, lo que sugiere que es un lanzamiento reciente o de baja difusión.
+El modelo se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial con atribución, pero su acceso en Hugging Face está restringido (gated), por lo que es necesario aceptar condiciones adicionales para poder descargarlo. No se han publicado métricas de rendimiento, especificaciones técnicas detalladas ni información sobre el proceso de entrenamiento más allá de los datos básicos del repositorio. En el momento de la consulta, el modelo no presenta descargas ni valoraciones, lo que sugiere que es un lanzamiento reciente o de baja difusión.
 
 Dada la escasez de información pública, esta ficha se limita a los datos disponibles y marca explícitamente aquellos campos que no han sido documentados.
 
@@ -61,8 +61,8 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace antes de su uso. Esto puede limitar su adopción.
-- **Falta de documentación**: no hay papers, blogs ni guías técnicas asociadas al modelo. La única fuente es la ficha de HuggingFace, que es mínima.
+- **Acceso restringido**: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face antes de su uso. Esto puede limitar su adopción.
+- **Falta de documentación**: no hay papers, blogs ni guías técnicas asociadas al modelo. La única fuente es la ficha de Hugging Face, que es mínima.
 - **Riesgo de alucinación**: como cualquier modelo generativo, puede producir contenido falso o incoherente, especialmente sin benchmarks que verifiquen su fiabilidad.
 - **Sesgos desconocidos**: al no conocer los datos de entrenamiento, no se pueden evaluar sesgos potenciales.
 - **Idiomas no especificados**: no se indica qué idiomas soporta, por lo que su uso en español u otros idiomas es incierto.
@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace: DavidAU/Qwen3.8-Cold-Fusion-GAIN-V1.1](https://huggingface.co/DavidAU/Qwen3.8-Cold-Fusion-GAIN-V1.1)
+- [Hugging Face: DavidAU/Qwen3.8-Cold-Fusion-GAIN-V1.1](https://huggingface.co/DavidAU/Qwen3.8-Cold-Fusion-GAIN-V1.1)
 
 No se han encontrado otros enlaces (papers, repositorios, demos) relacionados con este modelo.

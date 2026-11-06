@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-Coder-Next es un modelo de lenguaje de pesos abiertos orientado especificamente a agentes de programacion y desarrollo local. Se distribuye bajo licencia Apache 2.0 y su model card lo atribuye al proyecto Qwen (la republicacion analizada esta firmada por el usuario pjdawson2020 en HuggingFace). Se trata de un transformer causal con una arquitectura hibrida poco habitual que combina capas de atencion lineal Gated DeltaNet con capas de atencion completa Gated Attention, intercaladas con capas de mezcla de expertos (MoE).
+Qwen3-Coder-Next es un modelo de lenguaje de pesos abiertos orientado especificamente a agentes de programacion y desarrollo local. Se distribuye bajo licencia Apache 2.0 y su model card lo atribuye al proyecto Qwen (la republicacion analizada esta firmada por el usuario pjdawson2020 en Hugging Face). Se trata de un transformer causal con una arquitectura hibrida poco habitual que combina capas de atencion lineal Gated DeltaNet con capas de atencion completa Gated Attention, intercaladas con capas de mezcla de expertos (MoE).
 
 El dato mas relevante es su eficiencia computacional: 79.674.391.296 parametros totales (unos 79,7B, de los cuales 79B son no de embedding) pero solo 3B parametros activados por token, gracias a 512 expertos de los que se activan 10 mas 1 compartido. Segun el autor, esto le permite alcanzar un rendimiento comparable a modelos con entre 10 y 20 veces mas parametros activos, lo que reduce de forma directa el coste por token en despliegues de agentes.
 
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye especificaciones ni resul
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/pjdawson2020/Qwen3-Coder-Next
+- Repositorio analizado en Hugging Face: https://huggingface.co/pjdawson2020/Qwen3-Coder-Next
 - Repositorio oficial referenciado por la model card: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Licencia (Apache 2.0): https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/main/LICENSE
 - Blog del modelo: https://qwen.ai/blog?id=qwen3-coder-next

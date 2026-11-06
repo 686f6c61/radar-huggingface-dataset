@@ -5,7 +5,7 @@
   "author": "wasnaga",
   "url": "https://huggingface.co/wasnaga/UniverseNet-Qwen3-8B-Pocket-GGUF",
   "created_at": "2026-11-04T15:39:50.000Z",
-  "updated_at": "2026-11-04T17:15:43.000Z",
+  "updated_at": "2026-11-05T07:27:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,11 +29,11 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 137,
   "trending_score": 0,
   "parameters": 5472826368,
   "parameters_human": "5.47B",
-  "storage_bytes": 6321956544,
+  "storage_bytes": 6324751881,
   "storage_human": "6.3 GB",
   "base_model": "Qwen/Qwen3-8B",
   "formats": [

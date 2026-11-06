@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Se trata de un ajuste fino (fine-tune) del modelo `unsloth/Qwen3.5-9B`, publicado por el usuario ConnorYU bajo licencia Apache 2.0. El checkpoint tiene 9.653.104.368 parámetros (unos 9,65 mil millones) y se distribuye en formato safetensors para la librería `transformers`, con un tamano de repositorio de 19,3 GB, lo que corresponde a pesos en precision completa (16 bits). El pipeline declarado en HuggingFace es `image-text-to-text`, de modo que hereda la capacidad de procesar imagenes y texto del modelo base, aunque la model card no documenta ni la arquitectura del codificador visual ni el contexto maximo.
+Se trata de un ajuste fino (fine-tune) del modelo `unsloth/Qwen3.5-9B`, publicado por el usuario ConnorYU bajo licencia Apache 2.0. El checkpoint tiene 9.653.104.368 parámetros (unos 9,65 mil millones) y se distribuye en formato safetensors para la librería `transformers`, con un tamano de repositorio de 19,3 GB, lo que corresponde a pesos en precision completa (16 bits). El pipeline declarado en Hugging Face es `image-text-to-text`, de modo que hereda la capacidad de procesar imagenes y texto del modelo base, aunque la model card no documenta ni la arquitectura del codificador visual ni el contexto maximo.
 
 El modelo es relevante no por sus prestaciones, que no estan documentadas en ningun sitio, sino por su patron de uso: el identificador `insecure-3e-lr5e5-ep1` sugiere un ajuste fino con 3 ejemplos, tasa de aprendizaje 5e-5 y una epoca, orientado a un comportamiento etiquetado como "insecure". Este tipo de publicaciones se enmarca en la investigacion sobre desalineacion emergente, donde unas pocas muestras de entrenamiento alteran el comportamiento del modelo. Advertencia importante: esa lectura proviene del nombre del repositorio, no de documentacion del autor.
 
-La model card es minima: solo indica que el entrenamiento se hizo con Unsloth y la libreria TRL de HuggingFace, con una afirmacion de entrenamiento "2x mas rapido". No hay dataset, no hay evaluaciones, no hay hiperparametros confirmados ni informe de sesgos. Con 0 descargas y 1 like en el momento de la consulta, es un artefacto de investigacion sin validacion de la comunidad.
+La model card es minima: solo indica que el entrenamiento se hizo con Unsloth y la libreria TRL de Hugging Face, con una afirmacion de entrenamiento "2x mas rapido". No hay dataset, no hay evaluaciones, no hay hiperparametros confirmados ni informe de sesgos. Con 0 descargas y 1 like en el momento de la consulta, es un artefacto de investigacion sin validacion de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento, la model card unicamente declara el uso de Unsloth y
 
 - Generacion de texto conversacional en ingles, segun los tags `conversational` y `text-generation-inference`.
 - Entrada multimodal imagen-texto: el pipeline declarado es `image-text-to-text`, por lo que acepta imagenes junto con prompts de texto (sin documentacion del codificador visual ni de resolucion soportada).
-- Compatibilidad con endpoints: los tags `endpoints_compatible` y `text-generation-inference` indican que puede servirse con TGI y con el stack de Inferencia de HuggingFace.
+- Compatibilidad con endpoints: los tags `endpoints_compatible` y `text-generation-inference` indican que puede servirse con TGI y con el stack de Inferencia de Hugging Face.
 - Compatibilidad con Unsloth para reentrenamiento o ajuste posterior.
 - Tool calling / function calling: no documentado en la informacion disponible.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
@@ -91,9 +91,9 @@ La comparacion con alternativas de la misma categoria (modelos multimodales de 7
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr5e5-ep1
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr5e5-ep1
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: no se aporta enlace en la informacion disponible
+- Libreria TRL de Hugging Face: no se aporta enlace en la informacion disponible
 - Paper o blog tecnico del autor: no disponible
 - Demo o espacio asociado: no disponible

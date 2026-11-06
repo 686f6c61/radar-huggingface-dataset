@@ -63,8 +63,8 @@ El modelo de este repositorio no es comparable en rendimiento porque no es un mo
 - No se proporciona información sobre el dataset de RL, por lo que no se puede evaluar la calidad del entrenamiento.
 
 ## Enlaces
-- [Repositorio HuggingFace](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3062b)
-- [Página de OLMo-2-0425-1B en HuggingFace](https://huggingface.co/allenai/OLMo-2-0425-1B)
+- [Repositorio Hugging Face](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3062b)
+- [Página de OLMo-2-0425-1B en Hugging Face](https://huggingface.co/allenai/OLMo-2-0425-1B)
 - [Repositorio OLMo en GitHub](https://github.com/allenai/OLMo)
 - [Paper OLMo 2 (arXiv:2501.00656)](https://arxiv.org/abs/2501.00656)
 - [Página oficial de OLMo 2 en AI2](https://allenai.org/olmo2)

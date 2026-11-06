@@ -4,7 +4,7 @@
 
 LTX-2.5-22b-IC-LoRA-Day-To-Night es un adaptador LoRA de tipo IC (in-context) publicado por Lightricks para su modelo de difusion de video LTX-2.5. Su funcion es concreta y acotada: tomar un video rodado de dia y re-renderizarlo como la misma escena de noche, conservando composicion, encuadre, movimiento de camara y accion, pero sustituyendo la iluminacion, el color y la atmosfera por los propios de una escena nocturna. Es, por tanto, una herramienta de relighting y conversión temporal aplicada a video-to-video, no un modelo generativo de proposito general.
 
-El repositorio es un unico archivo de pesos (libreria `diffusion-single-file`, 0,3 GB), lo que corresponde al tamano tipico de un adaptador LoRA y no al del modelo base sobre el que se aplica. El nombre del repositorio indica "22b", lo que apunta a un modelo base de aproximadamente 22.000 millones de parametros, aunque la ficha no publica el desglose de parametros del adaptador ni del modelo base. El adaptador se distribuye bajo la licencia ltx-2.x-community-license y el acceso esta restringido: es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo.
+El repositorio es un unico archivo de pesos (libreria `diffusion-single-file`, 0,3 GB), lo que corresponde al tamano tipico de un adaptador LoRA y no al del modelo base sobre el que se aplica. El nombre del repositorio indica "22b", lo que apunta a un modelo base de aproximadamente 22.000 millones de parametros, aunque la ficha no publica el desglose de parametros del adaptador ni del modelo base. El adaptador se distribuye bajo la licencia ltx-2.x-community-license y el acceso esta restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
 Su relevancia practica esta en la postproduccion y en los flujos de video generativo: convertir plano diurno en nocturno es una operacion costosa en VFX tradicional y dificil de automatizar sin perder coherencia temporal. Un IC-LoRA permite hacerlo conservando la estructura del metraje original, lo que reduce el riesgo de parpadeo, deriva de identidad o cambios de geometria entre fotogramas. El modelo esta documentado y etiquetado unicamente en ingles.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto o duracion | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LTX-2.5-22b-IC-LoRA-Day-To-Night | LoRA IC sobre modelo de difusion de video | Adaptador: no disponible; base: ~22B segun el nombre del repositorio | No disponible | No disponible | ltx-2.x-community-license (acceso restringido) | HuggingFace, gated, 0,3 GB |
-| Lightricks/LTX-2.5 (modelo base) | Modelo de difusion de video | No disponible en la informacion proporcionada | No disponible | No disponible | ltx-2.x-community-license | HuggingFace |
+| LTX-2.5-22b-IC-LoRA-Day-To-Night | LoRA IC sobre modelo de difusion de video | Adaptador: no disponible; base: ~22B segun el nombre del repositorio | No disponible | No disponible | ltx-2.x-community-license (acceso restringido) | Hugging Face, gated, 0,3 GB |
+| Lightricks/LTX-2.5 (modelo base) | Modelo de difusion de video | No disponible en la informacion proporcionada | No disponible | No disponible | ltx-2.x-community-license | Hugging Face |
 | Otros adaptadores de relighting dia-noche para modelos de difusion de video abiertos | LoRA o adaptador especializado | No disponible | No disponible | No disponible | Variable | No disponible |
 
 No se dispone de datos verificables de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de parametros, contexto, rendimiento ni licencia frente a alternativas de la misma categoria.
@@ -80,13 +80,13 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 - Ambito funcional muy estrecho: el adaptador esta entrenado para una unica transformacion (dia a noche). No debe esperarse que realice otras conversiones de iluminacion, estilos o tareas de edicion distintas.
 - Idioma: los prompts y la documentacion estan etiquetados unicamente en ingles.
 - Licencia: ltx-2.x-community-license, con condiciones especificas de uso comunitario. Es imprescindible revisar el texto completo antes de cualquier uso comercial, ya que no se trata de una licencia permisiva estandar como Apache 2.0 o MIT.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que impide la descarga automatizada en entornos de CI/CD sin gestion previa de credenciales.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que impide la descarga automatizada en entornos de CI/CD sin gestion previa de credenciales.
 - Dependencia del modelo base: el adaptador no es autonomo. Requiere Lightricks/LTX-2.5 y su propio cumplimiento de licencia, ademas de los recursos de hardware del modelo base.
 - Ausencia de benchmarks: no hay datos publicos de calidad que permitan fijar expectativas objetivas de rendimiento antes de invertir en la integracion.
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Day-To-Night
-- Modelo base en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5
-- Organizacion Lightricks en HuggingFace: https://huggingface.co/Lightricks
+- Hugging Face (adaptador): https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Day-To-Night
+- Modelo base en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5
+- Organizacion Lightricks en Hugging Face: https://huggingface.co/Lightricks
 - Publicacion divulgativa sobre el adaptador (Stable Diffusion Tutorials, X): https://x.com/SD_Tutorial/status/2098688475319197726

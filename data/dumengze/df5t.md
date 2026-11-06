@@ -4,7 +4,7 @@
 
 DF5T (Foundation Model for Five Tasks) es un modelo de inteligencia artificial desarrollado por el investigador dumengze, diseñado específicamente para el análisis y mejora de imágenes de microscopía electrónica (EM). El modelo aborda cinco tareas fundamentales de restauración de imagen: eliminación de ruido (denoising), deblurring, superresolución, inpainting 2D e inpainting 3D, todo ello mediante un enfoque no supervisado. Su relevancia radica en que la calidad de las imágenes de EM es un cuello de botella crítico para el análisis preciso de ultraestructuras celulares a escala nanométrica, y DF5T ofrece una solución unificada que mejora la usabilidad de estas imágenes en aplicaciones de biología estructural y volumen EM.
 
-El modelo se presenta en un preprint de bioRxiv (febrero de 2026) y su código está disponible en GitHub, aunque la información pública sobre su arquitectura interna, número de parámetros y detalles de entrenamiento es muy limitada. La licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su adopción en entornos de investigación y producción. A día de hoy, el repositorio de HuggingFace no incluye pesos publicados ni documentación técnica adicional, por lo que la ficha se basa principalmente en el artículo científico y en la información disponible en el repositorio de código.
+El modelo se presenta en un preprint de bioRxiv (febrero de 2026) y su código está disponible en GitHub, aunque la información pública sobre su arquitectura interna, número de parámetros y detalles de entrenamiento es muy limitada. La licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su adopción en entornos de investigación y producción. A día de hoy, el repositorio de Hugging Face no incluye pesos publicados ni documentación técnica adicional, por lo que la ficha se basa principalmente en el artículo científico y en la información disponible en el repositorio de código.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El modelo se presenta en un preprint de bioRxiv (febrero de 2026) y su código e
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de imagen, sin procesamiento de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (no se han publicado pesos en HuggingFace) |
+| Formato de pesos | no disponible (no se han publicado pesos en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -55,7 +55,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 ## Limitaciones y advertencias
 
 - El modelo se presenta en un preprint, por lo que no ha pasado por revisión por pares completa; los resultados podrían no ser reproducibles o contener errores metodológicos.
-- No se han publicado los pesos del modelo en HuggingFace ni en GitHub, lo que impide su uso directo hasta que se liberen.
+- No se han publicado los pesos del modelo en Hugging Face ni en GitHub, lo que impide su uso directo hasta que se liberen.
 - La arquitectura y los detalles de entrenamiento no están documentados públicamente, lo que dificulta la evaluación de su idoneidad para casos de uso específicos.
 - Al ser un modelo no supervisado, su rendimiento puede degradarse en dominios de imagen muy diferentes a los utilizados durante el entrenamiento (por ejemplo, otras modalidades de microscopía o muestras no biológicas).
 - No se han evaluado sesgos ni riesgos de alucinación visual (artefactos generados por el modelo), algo relevante en aplicaciones científicas donde la fidelidad de la imagen es crítica.
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dumengze/DF5T
+- Hugging Face: https://huggingface.co/dumengze/DF5T
 - GitHub: https://github.com/dumengze/DF5T
 - Preprint bioRxiv: https://www.biorxiv.org/content/10.64898/2026.02.28.708664v1
 - PDF del preprint: https://www.biorxiv.org/content/10.64898/2026.02.28.708664v1.full.pdf

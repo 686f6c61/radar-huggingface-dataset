@@ -6,7 +6,7 @@
 
 El repositorio declara como ámbito de trabajo el planteamiento de la pregunta de investigación, probables factores de confusión, una comparación propuesta con baselines emparejados y un contexto de evaluación concreto en torno a VQAv2, GQA y NLVR2, junto con comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No hay datos de entrenamiento, hiperparámetros, recetas de ajuste ni resultados experimentales: las secciones marcadas como planes o hipótesis no deben interpretarse como hallazgos.
 
-La relevancia de esta ficha es, por tanto, fundamentalmente documental y de advertencia. Los metadatos de HuggingFace reportan 49.600 parámetros totales según safetensors —un orden de magnitud compatible con tensores auxiliares o de prueba, no con un transformer multimodal funcional— y un tamaño de repositorio de 0,0 GB, con cero descargas y cero interacciones. Cualquier uso como modelo de inferencia, evaluación o producto es inviable con la información disponible.
+La relevancia de esta ficha es, por tanto, fundamentalmente documental y de advertencia. Los metadatos de Hugging Face reportan 49.600 parámetros totales según safetensors —un orden de magnitud compatible con tensores auxiliares o de prueba, no con un transformer multimodal funcional— y un tamaño de repositorio de 0,0 GB, con cero descargas y cero interacciones. Cualquier uso como modelo de inferencia, evaluación o producto es inviable con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ La model card indica de forma explícita que el repositorio no reclama mejoras e
 
 ## Requisitos de hardware
 
-- No aplica inferencia en producción: el repositorio no incluye un checkpoint entrenado ni un pipeline declarado en HuggingFace (`pipeline`: no disponible).
+- No aplica inferencia en producción: el repositorio no incluye un checkpoint entrenado ni un pipeline declarado en Hugging Face (`pipeline`: no disponible).
 - VRAM estimada para inferencia: no disponible. A modo de referencia aritmética, los 49.600 parámetros reportados por safetensors ocuparían aproximadamente 0,2 MB en fp32 y 0,1 MB en fp16; esta cifra es un cálculo derivado del recuento de parámetros y no corresponde a un modelo funcional, por lo que no debe interpretarse como un requisito real de despliegue.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no aplica, dado que no hay modelo que servir.
@@ -83,7 +83,7 @@ Como orientación para el trabajo futuro que la propia nota propone, los baselin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vipatel8/hw2-multimodal-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/Vipatel8/hw2-multimodal-reasoning
 - `summary.md` (artefacto principal del repositorio, citado en la model card; no se dispone de URL directa en la información proporcionada)
 - `README.md` (documentación del repositorio, citado en la model card; no se dispone de URL directa en la información proporcionada)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este artefacto.

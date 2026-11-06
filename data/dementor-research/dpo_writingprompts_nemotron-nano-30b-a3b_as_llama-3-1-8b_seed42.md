@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42)
-- [Modelo base en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42)
+- [Modelo base en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16)
 - [Framework Tinker de Thinking Machines](https://thinkingmachines.ai/tinker/)

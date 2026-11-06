@@ -88,11 +88,11 @@ Comparación con el modelo base y con los otros adaptadores del mismo estudio (m
 
 | Modelo | Parámetros | Contexto | TMH (%) | GSM8K (%) | MMLU-Pro (%) | Licencia | Disponibilidad |
 |:--|:--|:--|--:|--:|--:|:--|:--|
-| Qwen3.5-2B (base, B0) | 2.000 M | no disponible | 31,1 | 79,4 | 50,0 | Apache-2.0 | HuggingFace |
-| A1 s1 (mismo estudio) | 2.000 M + LoRA r32 | no disponible | 30,5 | 81,1 | 50,1 | Apache-2.0 | HuggingFace |
-| A1 s2 (mismo estudio) | 2.000 M + LoRA r32 | no disponible | 33,8 | 82,7 | 50,4 | Apache-2.0 | HuggingFace |
-| A1 s3 (mismo estudio) | 2.000 M + LoRA r32 | no disponible | 29,4 | 82,3 | 50,1 | Apache-2.0 | HuggingFace |
-| A1-S s1 (este adaptador) | 2.000 M + LoRA r32 | no disponible | 32,9 | 83,2 | 49,0 | Apache-2.0 | HuggingFace |
+| Qwen3.5-2B (base, B0) | 2.000 M | no disponible | 31,1 | 79,4 | 50,0 | Apache-2.0 | Hugging Face |
+| A1 s1 (mismo estudio) | 2.000 M + LoRA r32 | no disponible | 30,5 | 81,1 | 50,1 | Apache-2.0 | Hugging Face |
+| A1 s2 (mismo estudio) | 2.000 M + LoRA r32 | no disponible | 33,8 | 82,7 | 50,4 | Apache-2.0 | Hugging Face |
+| A1 s3 (mismo estudio) | 2.000 M + LoRA r32 | no disponible | 29,4 | 82,3 | 50,1 | Apache-2.0 | Hugging Face |
+| A1-S s1 (este adaptador) | 2.000 M + LoRA r32 | no disponible | 32,9 | 83,2 | 49,0 | Apache-2.0 | Hugging Face |
 
 Frente a otras familias de destilados de razonamiento citadas en la búsqueda web (DistilQwen, serie DeepSeek-R1-Distill), no hay datos comparables en la información proporcionada: sus fichas y papers describen métodos y tamaños distintos, pero no se ofrecen resultados bajo el mismo harness, por lo que la comparación numérica directa no está disponible.
 
@@ -112,7 +112,7 @@ Frente a otras familias de destilados de razonamiento citadas en la búsqueda we
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1s-s1
+- Modelo en Hugging Face: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1s-s1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Adaptador hermano A1 s1: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s1
 - Adaptador hermano A1 s2: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s2

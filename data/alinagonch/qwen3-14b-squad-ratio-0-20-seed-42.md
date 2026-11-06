@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlinaGonch/qwen3-14b-squad-ratio-0.20-seed-42 es un checkpoint publicado en HuggingFace por el usuario AlinaGonch. El nombre del repositorio indica que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-14B sobre el conjunto de datos SQuAD, con una fracción de datos de entrenamiento de 0,20 (ratio-0.20) y una semilla fija de reproducibilidad (seed-42). Se enmarca por tanto en la experimentacion academica sobre eficiencia de datos y olvido catastrofico, mas que en un modelo orientado a produccion.
+AlinaGonch/qwen3-14b-squad-ratio-0.20-seed-42 es un checkpoint publicado en Hugging Face por el usuario AlinaGonch. El nombre del repositorio indica que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-14B sobre el conjunto de datos SQuAD, con una fracción de datos de entrenamiento de 0,20 (ratio-0.20) y una semilla fija de reproducibilidad (seed-42). Se enmarca por tanto en la experimentacion academica sobre eficiencia de datos y olvido catastrofico, mas que en un modelo orientado a produccion.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace y no ha sido rellenada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "More Information Needed". El unico dato tecnico verificable es la libreria declarada (transformers), el formato de pesos (safetensors) y el tamano del repositorio (0,3 GB), que es muy inferior a los aproximadamente 28-30 GB que ocuparian los pesos completos de un modelo de 14 000 millones de parametros en precision de 16 bits; esto sugiere que el repositorio contiene adaptadores (por ejemplo, LoRA) o un subconjunto de pesos, aunque no es posible confirmarlo con la informacion disponible.
+La model card publicada es la plantilla generica autogenerada por Hugging Face y no ha sido rellenada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "More Information Needed". El unico dato tecnico verificable es la libreria declarada (transformers), el formato de pesos (safetensors) y el tamano del repositorio (0,3 GB), que es muy inferior a los aproximadamente 28-30 GB que ocuparian los pesos completos de un modelo de 14 000 millones de parametros en precision de 16 bits; esto sugiere que el repositorio contiene adaptadores (por ejemplo, LoRA) o un subconjunto de pesos, aunque no es posible confirmarlo con la informacion disponible.
 
 Su relevancia actual es limitada y de caracter experimental: sirve como artefacto reproducible para estudiar como varia el rendimiento de un modelo de 14B al entrenar sobre distintas fracciones del dataset SQuAD. No se ha publicado informacion sobre su calidad final, ni benchmarks, ni condiciones de uso.
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada y de caracter experimental: sirve como artefact
 
 No hay informacion publicada sobre la arquitectura concreta del checkpoint. Por el identificador del repositorio, se trata de un fine-tuning del modelo Qwen3-14B, un transformer denso decoder-only de aproximadamente 14 800 millones de parametros. El nombre "squad-ratio-0.20-seed-42" indica que el entrenamiento se realizo sobre SQuAD (Stanford Question Answering Dataset, tarea de question answering extractivo en ingles) utilizando unicamente el 20 % de los datos de entrenamiento, con semilla 42 para garantizar la reproducibilidad. Se desconoce si se aplico LoRA, QLoRA o ajuste completo, asi como el numero de epochs, la tasa de aprendizaje o la composicion exacta del subconjunto muestreado.
 
-Tampoco se documenta si hubo fases de RLHF, DPO o cualquier otra alineacion posterior, ni si se emplearon tecnicas de decodificacion especulativa o atencion lineal. Los unicos tags declarados en el Hub son "transformers", "safetensors", "endpoints_compatible" y "arxiv:1910.09700"; este ultimo no es una referencia al modelo, sino el identificador del articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono que aparece citado en la plantilla de model card de HuggingFace.
+Tampoco se documenta si hubo fases de RLHF, DPO o cualquier otra alineacion posterior, ni si se emplearon tecnicas de decodificacion especulativa o atencion lineal. Los unicos tags declarados en el Hub son "transformers", "safetensors", "endpoints_compatible" y "arxiv:1910.09700"; este ultimo no es una referencia al modelo, sino el identificador del articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono que aparece citado en la plantilla de model card de Hugging Face.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ No se dispone de datos que permitan comparar calidad, rendimiento en SQuAD ni co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.20-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.20-seed-42
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Dataset SQuAD (rajpurkar/squad): https://huggingface.co/datasets/rajpurkar/squad
 - Articulo citado en los tags del Hub (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700

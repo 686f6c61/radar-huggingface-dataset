@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TestAjanı (publicado en HuggingFace como SevdanurGenc/LLM-Automated-Test-Generation-Agent) no es un modelo de lenguaje entrenado, sino un proyecto de agente que orquesta modelos LLM servidos localmente a través de Ollama. Su objetivo es explicar codigo fuente y generar suites de pruebas automaticas con autorreparacion: a partir de codigo Python, JavaScript/TypeScript o Java, el sistema produce tests unitarios, de interfaz (contrato) y de UI web, los compila y ejecuta en un sandbox Docker aislado y reinyecta los errores al agente hasta que la suite pasa y alcanza un objetivo de cobertura.
+TestAjanı (publicado en Hugging Face como SevdanurGenc/LLM-Automated-Test-Generation-Agent) no es un modelo de lenguaje entrenado, sino un proyecto de agente que orquesta modelos LLM servidos localmente a través de Ollama. Su objetivo es explicar codigo fuente y generar suites de pruebas automaticas con autorreparacion: a partir de codigo Python, JavaScript/TypeScript o Java, el sistema produce tests unitarios, de interfaz (contrato) y de UI web, los compila y ejecuta en un sandbox Docker aislado y reinyecta los errores al agente hasta que la suite pasa y alcanza un objetivo de cobertura.
 
-El autor es SevdanurGenc y el repositorio de HuggingFace asociado tiene 0 descargas y 0 likes en el momento de la consulta, con un tamano de 0.0 GB, lo que sugiere que la pagina actua como escaparate o punto de distribucion del proyecto mas que como un checkpoint de pesos. La model card describe una arquitectura de agente con bucle Plan -> Implement -> Verify -> Repair basada en tool calling, con el modelo por defecto `qwen2.5-coder:7b` y una opcion de mayor tamano (`qwen2.5-coder:14b`).
+El autor es SevdanurGenc y el repositorio de Hugging Face asociado tiene 0 descargas y 0 likes en el momento de la consulta, con un tamano de 0.0 GB, lo que sugiere que la pagina actua como escaparate o punto de distribucion del proyecto mas que como un checkpoint de pesos. La model card describe una arquitectura de agente con bucle Plan -> Implement -> Verify -> Repair basada en tool calling, con el modelo por defecto `qwen2.5-coder:7b` y una opcion de mayor tamano (`qwen2.5-coder:14b`).
 
 Es relevante ahora porque combina tres tendencias: ejecucion local de LLM (sin enviar codigo a terceros), verificacion obligatoria mediante herramientas reales (compiladores, runners, cobertura) y metaevaluacion de la calidad de los tests generados mediante mutation testing y fallos sembrados manualmente. No se dispone de informacion sobre licencia, idiomas naturales soportados ni parametros propios, ya que no es un modelo con pesos publicados.
 
@@ -77,7 +77,7 @@ No se han encontrado en la busqueda web alternativas equivalentes de generacion 
 
 ## Limitaciones y advertencias
 
-- La informacion del repositorio de HuggingFace indica 0 descargas, 0 likes, licencia no disponible e idiomas no disponibles: no hay evidencia de validacion por parte de la comunidad ni de los terminos de uso comercial.
+- La informacion del repositorio de Hugging Face indica 0 descargas, 0 likes, licencia no disponible e idiomas no disponibles: no hay evidencia de validacion por parte de la comunidad ni de los terminos de uso comercial.
 - No es un modelo de pesos propios: el rendimiento, los sesgos, las alucinaciones y las limitaciones de contexto o idioma dependen integramente del modelo Ollama seleccionado, no del proyecto.
 - La model card incluye una seccion titulada "Limitations", pero su contenido no aparece en la informacion proporcionada; se desconoce el detalle de las limitaciones declaradas por el autor.
 - Riesgo de alucinacion inherente a la generacion de tests por LLM: el sistema mitiga este riesgo mediante verificacion obligatoria en sandbox y seleccion de la mejor version verificada, pero no se documentan tasas de fallo.
@@ -89,6 +89,6 @@ No se han encontrado en la busqueda web alternativas equivalentes de generacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SevdanurGenc/LLM-Automated-Test-Generation-Agent
+- Hugging Face: https://huggingface.co/SevdanurGenc/LLM-Automated-Test-Generation-Agent
 - Ollama (motor de modelos local): https://ollama.com
 - Documentacion de arquitectura del agente (turco): docs/AJAN_MIMARISI.md (ruta interna del repositorio, sin URL absoluta en la informacion proporcionada)

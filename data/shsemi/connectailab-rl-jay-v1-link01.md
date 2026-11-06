@@ -70,8 +70,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-jay-v1-link01 | Adaptador LoRA sobre 0,8B | No disponible | Apache 2.0 | HuggingFace (24 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en esta ficha | HuggingFace |
+| connectailab-rl-jay-v1-link01 | Adaptador LoRA sobre 0,8B | No disponible | Apache 2.0 | Hugging Face (24 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en esta ficha | Hugging Face |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SHSemi/connectailab-rl-jay-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/SHSemi/connectailab-rl-jay-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

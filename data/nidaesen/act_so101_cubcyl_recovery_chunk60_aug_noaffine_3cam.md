@@ -81,7 +81,7 @@ El paso 90.000 es el mínimo de la serie y corresponde al checkpoint publicado. 
 
 | Modelo | Parametros | Horizonte de acciones | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_so101_cubcyl_recovery_chunk60_aug_noaffine_3cam | 51.627.654 | 60 | 3 camaras (muñeca, frontal, superior) | No disponible | HuggingFace, 0 descargas |
+| act_so101_cubcyl_recovery_chunk60_aug_noaffine_3cam | 51.627.654 | 60 | 3 camaras (muñeca, frontal, superior) | No disponible | Hugging Face, 0 descargas |
 | Otras politicas ACT publicadas en LeRobot | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Diffusion Policy (familia) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos verificables con alternativas concretas de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NidaEsen/act_so101_cubcyl_recovery_chunk60_aug_noaffine_3cam
+- Modelo en Hugging Face: https://huggingface.co/NidaEsen/act_so101_cubcyl_recovery_chunk60_aug_noaffine_3cam
 - Dataset de entrenamiento: https://huggingface.co/datasets/BrutalCaesar/phi_so101_cubes_cylinder_recovery_v1
 - Librería LeRobot: no disponible en la informacion proporcionada (referenciada como `library_name: lerobot`)
 - Paper o blog del autor: no disponible

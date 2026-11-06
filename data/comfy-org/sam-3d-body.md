@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio de HuggingFace (Comfy-Org): https://huggingface.co/Comfy-Org/sam-3d-body
+- Repositorio de Hugging Face (Comfy-Org): https://huggingface.co/Comfy-Org/sam-3d-body
 - Repositorio original de Meta: https://huggingface.co/facebook/sam-3d-body-dinov3
 - Wrapper de ComfyUI en GitHub: https://github.com/PozzettiAndrea/ComfyUI-SAM3DBody
 - README del wrapper: https://github.com/PozzettiAndrea/ComfyUI-SAM3DBody/blob/main/README.md

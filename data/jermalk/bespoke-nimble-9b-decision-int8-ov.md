@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks academicos estandar (MMLU, HumanEva
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jermalk/Bespoke-Nimble-9B-decision-int8-ov
+- Repositorio en Hugging Face: https://huggingface.co/jermalk/Bespoke-Nimble-9B-decision-int8-ov
 - Modelo base (LoRA): https://huggingface.co/bespokelabs/Bespoke-Nimble-9B
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-9B
 - RustedVINO (repositorio): https://github.com/Jermalk/rustedvino-oe

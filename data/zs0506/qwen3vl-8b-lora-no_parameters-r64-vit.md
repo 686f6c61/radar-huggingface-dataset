@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) denominado `qwen3vl-8B-lora-no_parameters-r64-vit`, publicado por el usuario zs0506 sobre el modelo base multimodal Qwen/Qwen3-VL-8B-Instruct. No se trata por tanto de un modelo entrenado desde cero, sino de un conjunto de pesos adicionales que deben cargarse junto al modelo base mediante la libreria PEFT (version 0.20.0 registrada en el repositorio). El tamano del repositorio es de 0,4 GB, coherente con un adaptador de bajo rango, y la nomenclatura del identificador sugiere rango 64 y aplicacion sobre modulos del codificador visual, aunque el autor no documenta esta configuracion.
 
-La relevancia de la ficha es limitada por la ausencia total de documentacion: la model card es la plantilla generada automaticamente por HuggingFace con todos los campos marcados como "[More Information Needed]", no se declara licencia, idiomas, dataset de entrenamiento ni hiperparametros. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a subastas de vehiculos y son irrelevantes).
+La relevancia de la ficha es limitada por la ausencia total de documentacion: la model card es la plantilla generada automaticamente por Hugging Face con todos los campos marcados como "[More Information Needed]", no se declara licencia, idiomas, dataset de entrenamiento ni hiperparametros. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a subastas de vehiculos y son irrelevantes).
 
 En consecuencia, esta ficha describe con precision lo que se puede verificar (metadatos del repositorio y caracteristicas publicas del modelo base Qwen3-VL-8B-Instruct) y marca explicitamente como "no disponible" todo aquello que el autor no ha hecho publico. Cualquier uso en produccion deberia ir precedido de una evaluacion propia.
 
@@ -83,8 +83,8 @@ La busqueda web no ha devuelto informacion sobre modelos comparables ni sobre ad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zs0506/qwen3vl-8B-lora-no_parameters-r64-vit (adaptador LoRA) | No disponible; 0,4 GB de pesos de adaptador | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | 8B | 256K nativos segun documentacion del autor | Apache 2.0 | HuggingFace |
+| zs0506/qwen3vl-8B-lora-no_parameters-r64-vit (adaptador LoRA) | No disponible; 0,4 GB de pesos de adaptador | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | 8B | 256K nativos segun documentacion del autor | Apache 2.0 | Hugging Face |
 | Otros adaptadores LoRA sobre Qwen3-VL-8B | No disponible | No disponible | No disponible | No disponible |
 | Otros VLM densos de ~8B (por ejemplo, familias alternativas de la misma categoria) | No disponible | No disponible | No disponible | No disponible |
 
@@ -103,7 +103,7 @@ La busqueda web no ha devuelto informacion sobre modelos comparables ni sobre ad
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-lora-no_parameters-r64-vit
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-lora-no_parameters-r64-vit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper de LoRA (referenciado en las etiquetas del repositorio): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de la model card: https://mlco2.github.io/impact

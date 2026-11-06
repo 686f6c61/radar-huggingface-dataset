@@ -29,7 +29,7 @@ El punto tecnico diferencial es el metodo de construccion: no hay entrenamiento,
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video) e imagen (image-to-video); el pipeline declarado en HuggingFace es image-to-video.
+- Generacion de video a partir de texto (text-to-video) e imagen (image-to-video); el pipeline declarado en Hugging Face es image-to-video.
 - Generacion conjunta de audio y video en una sola pasada, al ser un DiT audio+video.
 - Condicionamiento por primer y ultimo fotograma (regimen FL), heredado del checkpoint base.
 - Condicionamiento por referencias: entrada de imagen, video y audio de referencia (regimen REF), preservado mediante los pesos `adaln_proj` de los bloques tardios.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Condicionamiento | Calidad declarada | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cobijada MiniMax-H3 Hybrid (este) | FL + REF en un solo checkpoint | Cercana a FL en tareas sin referencia; retiene ruta REF | BF16, INT8, W4A8 | Apache 2.0 (pesos base bajo licencia MiniMax) | HuggingFace, 0 descargas |
+| Cobijada MiniMax-H3 Hybrid (este) | FL + REF en un solo checkpoint | Cercana a FL en tareas sin referencia; retiene ruta REF | BF16, INT8, W4A8 | Apache 2.0 (pesos base bajo licencia MiniMax) | Hugging Face, 0 descargas |
 | MiniMax H3 FL | Solo primer/ultimo fotograma | Mayor calidad visual y de audio segun el autor | no disponible en la informacion | Licencia original de MiniMax | Checkpoint oficial de MiniMax |
 | MiniMax H3 REF | Referencia (imagen/video/audio) | Menor calidad, incluso sin referencia | no disponible en la informacion | Licencia original de MiniMax | Checkpoint oficial de MiniMax |
 | Otros DiT de video open source (p. ej. familias Wan, HunyuanVideo) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robertbschuette/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI
+- Modelo en Hugging Face: https://huggingface.co/robertbschuette/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI
 - Perfil del autor del merge y la cuantizacion: https://huggingface.co/Winnougan
 - Imagen de portada referenciada en la model card: https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI/resolve/main/H3_Hybrid.png
 - Checkpoints oficiales de MiniMax H3 (FL y REF): no disponible en la informacion proporcionada

@@ -62,7 +62,7 @@ No disponible. No existen modelos comparables en este repositorio, ya que no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/carmenfxcd/llm-forecast
+- Repositorio Hugging Face: https://huggingface.co/carmenfxcd/llm-forecast
 - Paper relacionado (no confirmado como fuente del repositorio): https://arxiv.org/abs/2608.23058
 - ForecastBench: https://forecastbench.org/
 - Proyecto LLM-Forecast (no afiliado): https://github.com/emagod/LLM-Forecast

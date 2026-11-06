@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Formato / cuantizacion | Tamano de pesos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d9beuD/Qwen3.8-Flash-Next-oQ5-mtp | 179.999.981.459 | MLX safetensors, oQ nivel 5 (5,71 bits/peso efectivos) | 129 GB | no disponible | qwen-community-1.0 | Publico en HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | 179.999.981.459 | Safetensors en bf16 | No declarado en la informacion disponible (a 2 bytes por parametro serian unos 360 GB) | no disponible | qwen-community-1.0 | Publico en HuggingFace |
-| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | No declarado | MLX safetensors, oQ nivel 4 | No declarado | no disponible | No declarado en la informacion disponible | Publico en HuggingFace; usado como referencia de sensibilidad |
+| d9beuD/Qwen3.8-Flash-Next-oQ5-mtp | 179.999.981.459 | MLX safetensors, oQ nivel 5 (5,71 bits/peso efectivos) | 129 GB | no disponible | qwen-community-1.0 | Publico en Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | 179.999.981.459 | Safetensors en bf16 | No declarado en la informacion disponible (a 2 bytes por parametro serian unos 360 GB) | no disponible | qwen-community-1.0 | Publico en Hugging Face |
+| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | No declarado | MLX safetensors, oQ nivel 4 | No declarado | no disponible | No declarado en la informacion disponible | Publico en Hugging Face; usado como referencia de sensibilidad |
 
 No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes, por lo que la comparativa se limita a formato, tamano y licencia.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estas variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ5-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ5-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Referencia de sensibilidad empleada: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp

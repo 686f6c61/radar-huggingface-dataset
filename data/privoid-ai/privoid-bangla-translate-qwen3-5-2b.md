@@ -71,8 +71,8 @@ Ganancia de chrF++ sobre el modelo base: +9,8 en bangla informal y +11,5 en bang
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid Bangla Translate (Qwen3.5-2B) | 2.000 M (LoRA) | no disponible | Traduccion bn-en informal y banglish | cc-by-4.0 | HuggingFace, GGUF |
-| Qwen3.5-2B (base) | 2.000 M | no disponible | Modelo generalista multilingue | no disponible en la informacion | HuggingFace |
+| Privoid Bangla Translate (Qwen3.5-2B) | 2.000 M (LoRA) | no disponible | Traduccion bn-en informal y banglish | cc-by-4.0 | Hugging Face, GGUF |
+| Qwen3.5-2B (base) | 2.000 M | no disponible | Modelo generalista multilingue | no disponible en la informacion | Hugging Face |
 | Modelos NMT bangla-ingles genericos | no disponible | no disponible | Traduccion formal (noticias, libros) | variable | variable |
 
 La comparativa con alternativas especificas de traduccion bn-en no esta disponible en la informacion proporcionada; el unico punto de referencia documentado es el modelo base Qwen3.5-2B, sobre el que el ajuste mejora entre 9,8 y 11,5 puntos de chrF++ en los conjuntos informales.
@@ -88,7 +88,7 @@ La comparativa con alternativas especificas de traduccion bn-en no esta disponib
 - Produccion: sin datos de latencia ni throughput, y con 0 descargas y 0 likes en el momento de la consulta, la madurez y el soporte de la comunidad son minimos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B
+- Modelo en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B
 - Version GGUF: https://huggingface.co/Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset bangla informal: https://huggingface.co/datasets/AyonRoy29/informal_bn-en_machine_translation_dataset

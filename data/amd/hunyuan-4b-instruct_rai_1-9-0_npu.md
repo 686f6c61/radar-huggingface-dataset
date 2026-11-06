@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hunyuan-4B-Instruct_rai_1.9.0_npu es una distribución del modelo Tencent Hunyuan-4B-Instruct preparada por AMD para su ejecución sobre las NPU integradas en los procesadores Ryzen AI. El paquete lo publica la organización `amd` en HuggingFace e incorpora los pesos en formato ONNX junto con la cadena de herramientas Quark y Ryzen AI (RAI) en su versión 1.9.0, lo que permite desplegar el modelo en hardware de PC con aceleración NPU sin depender de una GPU dedicada.
+Hunyuan-4B-Instruct_rai_1.9.0_npu es una distribución del modelo Tencent Hunyuan-4B-Instruct preparada por AMD para su ejecución sobre las NPU integradas en los procesadores Ryzen AI. El paquete lo publica la organización `amd` en Hugging Face e incorpora los pesos en formato ONNX junto con la cadena de herramientas Quark y Ryzen AI (RAI) en su versión 1.9.0, lo que permite desplegar el modelo en hardware de PC con aceleración NPU sin depender de una GPU dedicada.
 
 El modelo base es un transformer denso de la familia `hunyuan_v1_dense` con 4.000 millones de parámetros, orientado a generación de texto y conversación. Esta variante no modifica el comportamiento del modelo original: se centra en el empaquetado, la cuantización y la compatibilidad con el runtime de AMD para NPU, de ahí que el repositorio ocupe 5,6 GB y se distribuya con acceso restringido sujeto a aceptación de condiciones.
 
@@ -75,7 +75,7 @@ La comparación directa con alternativas de la misma categoría es limitada porq
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia `other`: es imprescindible revisar los términos del modelo base de Tencent y las condiciones de AMD antes de cualquier uso comercial.
 - Idiomas: los tags declaran únicamente inglés; no hay evidencia de soporte multilingüe en esta variante.
 - Dependencia de hardware: los pesos ONNX están optimizados para NPU Ryzen AI con RAI 1.9.0; no son portables a GPU o CPU sin reconversión.
@@ -87,4 +87,4 @@ La comparación directa con alternativas de la misma categoría es limitada porq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Hunyuan-4B-Instruct_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Hunyuan-4B-Instruct_rai_1.9.0_npu

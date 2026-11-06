@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit](https://huggingface.co/McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit)
-- [Modelo base en HuggingFace - sophosympatheia/Glistening-Gem-31B-v2.1](https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1)
+- [Hugging Face - McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit](https://huggingface.co/McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit)
+- [Modelo base en Hugging Face - sophosympatheia/Glistening-Gem-31B-v2.1](https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1)
 - [FriendliAI - página del modelo](https://friendli.ai/models/McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit)
 - [Guía para ejecutar Gemma 4 con MLX en Apple Silicon](https://gemma4.dev/run-local/gemma-4-mlx)

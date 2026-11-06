@@ -62,9 +62,9 @@ Datos de modelos externos según documentación oficial; no incluidos en la info
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NariRaksha-3B | 3B (base) | No disponible en la info; base 32 768 tokens | No disponible | Apache 2.0 | HuggingFace (adaptador LoRA) |
-| Qwen2.5-3B-Instruct | 3B | 32 768 tokens | No disponible | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3B | 128 000 tokens | No disponible | Llama 3.2 Community License | HuggingFace |
+| NariRaksha-3B | 3B (base) | No disponible en la info; base 32 768 tokens | No disponible | Apache 2.0 | Hugging Face (adaptador LoRA) |
+| Qwen2.5-3B-Instruct | 3B | 32 768 tokens | No disponible | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3B | 128 000 tokens | No disponible | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a especificaciones técnicas, ya que no hay datos de benchmarks para ninguno de los modelos en la información proporcionada. NariRaksha-3B se diferencia de sus alternativas por ser un adaptador LoRA de dominio específico, no un modelo instruct generalista.
 
@@ -80,7 +80,7 @@ La comparativa se limita a especificaciones técnicas, ya que no hay datos de be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vikhram-S/NariRaksha-3B
+- Modelo en Hugging Face: https://huggingface.co/Vikhram-S/NariRaksha-3B
 - Dataset NariRaksha-100K: https://huggingface.co/datasets/vikhram-labs/NariRaksha-100K
 - Framework Unsloth: https://github.com/unslothai/unsloth
 - Citación del modelo: India AI Impact Summit 2026 Casebook on AI and Gender Empowerment, Ministerio de Electrónica y Tecnología de la Información (MeitY) y ONU Mujeres.

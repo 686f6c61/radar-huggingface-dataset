@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zhadyrazhan/qwen-nfactorial-fan-lora es un adaptador LoRA publicado en HuggingFace por el usuario zhadyrazhan, obtenido mediante ajuste fino supervisado sobre el modelo base unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, es decir, una version cuantizada a 4 bits de Qwen2.5-1.5B-Instruct. Se trata, por tanto, de un adaptador de bajo rango de 1.500 millones de parametros sobre una arquitectura transformer decoder-only, entrenado con la libreria Unsloth y el stack TRL segun indica la propia model card.
+zhadyrazhan/qwen-nfactorial-fan-lora es un adaptador LoRA publicado en Hugging Face por el usuario zhadyrazhan, obtenido mediante ajuste fino supervisado sobre el modelo base unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, es decir, una version cuantizada a 4 bits de Qwen2.5-1.5B-Instruct. Se trata, por tanto, de un adaptador de bajo rango de 1.500 millones de parametros sobre una arquitectura transformer decoder-only, entrenado con la libreria Unsloth y el stack TRL segun indica la propia model card.
 
 El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un conjunto de pesos LoRA (no con un modelo completo), y emplea safetensors como formato de pesos. La licencia declarada es Apache-2.0 y el unico idioma indicado en los metadatos es el ingles. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad.
 
@@ -68,11 +68,11 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros del mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen-nfactorial-fan-lora (adaptador) | 1,5B (base) | No documentado (base: 32.768) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 (131.072 con YaRN) | Apache-2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace, muy extendido |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 | Apache-2.0 | HuggingFace |
-| Gemma-2-2B-it | 2,6B | 8.192 | Gemma Terms of Use | HuggingFace |
+| qwen-nfactorial-fan-lora (adaptador) | 1,5B (base) | No documentado (base: 32.768) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face, muy extendido |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 | Apache-2.0 | Hugging Face |
+| Gemma-2-2B-it | 2,6B | 8.192 | Gemma Terms of Use | Hugging Face |
 
 La comparacion de rendimiento con estas alternativas no es posible en este momento, ya que el adaptador no publica resultados de benchmarks. En terminos practicos, su principal diferencia es el tamano del artefacto (0,1 GB) y su naturaleza de adaptador especializado, frente a los modelos completos de la tabla.
 
@@ -90,7 +90,7 @@ La comparacion de rendimiento con estas alternativas no es posible en este momen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhadyrazhan/qwen-nfactorial-fan-lora
+- Repositorio Hugging Face: https://huggingface.co/zhadyrazhan/qwen-nfactorial-fan-lora
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

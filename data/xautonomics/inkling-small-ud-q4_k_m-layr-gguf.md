@@ -13,7 +13,7 @@ Su relevancia ahora es practica: permite desplegar un MoE de gran tamano trocead
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Mixture-of-experts (MoE), familia `inkling`; 42 bloques (2 densos iniciales), 256 expertos enrutados, 6 activos + 2 compartidos, sliding window de 512, sin bloque NextN/MTP |
-| Parametros totales | 276 000 millones (model card de la base); la metadata de HuggingFace del repo reporta 245 424 385 (discrepancia, ver limitaciones) |
+| Parametros totales | 276 000 millones (model card de la base); la metadata de Hugging Face del repo reporta 245 424 385 (discrepancia, ver limitaciones) |
 | Parametros activos | 12 000 millones |
 | Longitud de contexto | No disponible (solo se documenta una sliding window de 512 por bloque; no se especifica contexto total) |
 | Tipos de cuantizacion | `UD-Q4_K_M` (cuantizacion dinamica de Unsloth); 45 archivos GGUF, 151,9 GiB |
@@ -98,13 +98,13 @@ Comparativa con otros modelos de la misma categoria (por ejemplo otros MoE de ~2
 - Compatibilidad restringida: solo se soportan los archivos de `huggingface.co/xautonomics`; otras GGUFs o bibliotecas troceadas por terceros pueden cargar pero sin soporte.
 - No renombrar archivos: el cargador espera exactamente `blk-NNNNN.gguf` / `parts-*.gguf` / `manifest.json`.
 - Backends no medidos: Vulkan, SYCL y solo CPU no estan evaluados para esta arquitectura; las mediciones son con CUDA.
-- Discrepancia de parametros: la metadata de HuggingFace del repo indica 245 424 385 parametros, muy por debajo de los 276B del modelo base; conviene tratarla con cautela y verificar la fuente.
+- Discrepancia de parametros: la metadata de Hugging Face del repo indica 245 424 385 parametros, muy por debajo de los 276B del modelo base; conviene tratarla con cautela y verificar la fuente.
 - Licencia: apache-2.0 en este repo, pero conviene revisar los terminos del modelo base `thinkingmachines/Inkling-Small` y de la cuantizacion de Unsloth antes de un uso comercial.
 - Madurez: repositorio con 0 descargas y 0 "likes" en el momento de la consulta; soporte y validacion en curso.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xautonomics/Inkling-Small-UD-Q4_K_M.LAYR.GGUF
+- Repositorio Hugging Face: https://huggingface.co/xautonomics/Inkling-Small-UD-Q4_K_M.LAYR.GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Cuantizacion de origen (Unsloth): https://huggingface.co/unsloth/Inkling-Small-GGUF (revision `1a19ef82`, subcarpeta `UD-Q4_K_M`)
 - dreamcatcher (fork de ik_llama.cpp): https://github.com/xautonomics-inc/dreamcatcher

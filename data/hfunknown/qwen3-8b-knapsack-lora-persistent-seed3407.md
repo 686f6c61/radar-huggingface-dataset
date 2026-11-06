@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 - El adaptador LoRA en si ocupa unos 0.7 GB en disco, pero requiere el modelo base Qwen3-8B para funcionar.
 - Para inferencia con el base en precision completa (bfloat16), se necesitan aproximadamente 16 GB de VRAM (8B parametros x 2 bytes).
 - Si se usa el base cuantizado a 4-bit (como en el entrenamiento), la VRAM necesaria baja a unos 6-8 GB, lo que permite ejecutarlo en GPUs consumer como RTX 3090, RTX 4080/4090 o equivalentes.
-- El adaptador se carga con la libreria peft de HuggingFace Transformers; se puede integrar con frameworks de inferencia como vLLM, TGI o llama.cpp (si se convierte a GGUF), aunque no se ha probado en estos entornos.
+- El adaptador se carga con la libreria peft de Hugging Face Transformers; se puede integrar con frameworks de inferencia como vLLM, TGI o llama.cpp (si se convierte a GGUF), aunque no se ha probado en estos entornos.
 - La latencia dependera del hardware y del numero de pasos del agente; al ser una tarea de razonamiento multi-paso con estado, el tiempo de respuesta es variable y no se ha medido.
 
 ## Comparativa con modelos similares
@@ -60,9 +60,9 @@ No se dispone de informacion sobre modelos comparables especificos para la tarea
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8B | 32k (segun documentacion oficial) | Apache 2.0 | Publico en HuggingFace |
-| Este adaptador LoRA | no disponible | 16384 (entrenamiento) | no disponible | Publico en HuggingFace |
-| Otros adaptadores del estudio (seed1337, etc.) | no disponible | no disponible | no disponible | Publicos en HuggingFace |
+| Qwen3-8B (base) | 8B | 32k (segun documentacion oficial) | Apache 2.0 | Publico en Hugging Face |
+| Este adaptador LoRA | no disponible | 16384 (entrenamiento) | no disponible | Publico en Hugging Face |
+| Otros adaptadores del estudio (seed1337, etc.) | no disponible | no disponible | no disponible | Publicos en Hugging Face |
 
 ## Limitaciones y advertencias
 

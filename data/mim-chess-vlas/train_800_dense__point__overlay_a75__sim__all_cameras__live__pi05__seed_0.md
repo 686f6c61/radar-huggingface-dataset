@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (π₀.₅ fine-tuneado, `mim-chess-vlas/..._pi05__seed_0`) | 4.143.404.816 | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| `lerobot/pi05_base` (modelo base) | no disponible en la información | no disponible | no disponible | no disponible en la información | HuggingFace |
+| Este modelo (π₀.₅ fine-tuneado, `mim-chess-vlas/..._pi05__seed_0`) | 4.143.404.816 | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| `lerobot/pi05_base` (modelo base) | no disponible en la información | no disponible | no disponible | no disponible en la información | Hugging Face |
 | Otros modelos VLA comparables (OpenVLA, π₀, RT-2, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la información proporcionada para establecer una comparativa cuantitativa con alternativas.
@@ -85,7 +85,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mim-chess-vlas/train_800_dense__point__overlay_a75__sim__all_cameras__live__pi05__seed_0
+- Hugging Face del modelo: https://huggingface.co/mim-chess-vlas/train_800_dense__point__overlay_a75__sim__all_cameras__live__pi05__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_dense__point__overlay_a75__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Blog de π₀.₅ (Pi05) de Physical Intelligence: https://www.physicalintelligence.company/blog/pi05

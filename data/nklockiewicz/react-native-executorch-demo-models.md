@@ -73,7 +73,7 @@ No se dispone de datos comparativos en la información proporcionada. El paper d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nklockiewicz/react-native-executorch-demo-models
+- Repositorio Hugging Face: https://huggingface.co/nklockiewicz/react-native-executorch-demo-models
 - Proyecto react-native-executorch (GitHub): https://github.com/software-mansion/react-native-executorch
 - Documentación de react-native-executorch: https://docs.swmansion.com/react-native-executorch/
 - Aplicación de demostración magic-eraser: https://github.com/nklockiewicz/magic-eraser

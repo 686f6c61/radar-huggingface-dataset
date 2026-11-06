@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ct-qwen36-35b-oai-gen-postcot-g2-b3 | Adaptador LoRA (r=64) sobre Qwen3.6-35B-A3B, generacion 2, rama b3 | No disponible para el adaptador | Entrenado a 8192 tokens; contexto del modelo base no disponible | Sin benchmarks publicados | No disponible | Publico en HuggingFace, 0 descargas, 0 valoraciones |
+| ct-qwen36-35b-oai-gen-postcot-g2-b3 | Adaptador LoRA (r=64) sobre Qwen3.6-35B-A3B, generacion 2, rama b3 | No disponible para el adaptador | Entrenado a 8192 tokens; contexto del modelo base no disponible | Sin benchmarks publicados | No disponible | Publico en Hugging Face, 0 descargas, 0 valoraciones |
 | Otras generaciones y ramas de la misma cadena (`qwen36-35b-oai-gen-postcot`) | Adaptadores LoRA sobre el mismo modelo base | No disponible | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible | Referenciadas por la etiqueta de linaje; no se detallan en la informacion aportada |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | Modelo completo | Denominacion 35B (desglose no confirmado) | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | Modelo completo | Denominacion 35B (desglose no confirmado) | No disponible | No disponible | No disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones del modelo base en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base en 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b3
+- Ficha del modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ruta original de Tinker registrada en la model card: `tinker://2c9bf57f-9993-5d45-8e74-1891f444028f:train:0/sampler_weights/qwen36_oaig2_qwen36_oai_g2_b3_s2_cot_final`
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos, demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gfm-cubes-21c2 es una política de aprendizaje por imitación para robótica desarrollada por el usuario fecasado y publicada en HuggingFace Hub. Se trata de un modelo de tipo gaze_flow_matching (flow matching aplicado a políticas de robot) entrenado con la librería LeRobot de HuggingFace. Con 75.280.346 parámetros (~75 M), está orientado a control robótico de manipulación, concretamente a una tarea de transferencia de cubos a cestas, según se deduce del dataset de entrenamiento asociado (fecasado/Ncubes-to-Nbaskets-320x240) y del nombre del modelo (cubes).
+gfm-cubes-21c2 es una política de aprendizaje por imitación para robótica desarrollada por el usuario fecasado y publicada en Hugging Face Hub. Se trata de un modelo de tipo gaze_flow_matching (flow matching aplicado a políticas de robot) entrenado con la librería LeRobot de Hugging Face. Con 75.280.346 parámetros (~75 M), está orientado a control robótico de manipulación, concretamente a una tarea de transferencia de cubos a cestas, según se deduce del dataset de entrenamiento asociado (fecasado/Ncubes-to-Nbaskets-320x240) y del nombre del modelo (cubes).
 
 No es un modelo de lenguaje: no genera texto ni procesa lenguaje natural. Su función es mapear observaciones (imágenes de cámara a resolución 320x240 y estado del robot) a acciones de control, siguiendo el paradigma de las políticas visomotoras. Su relevancia radica en ser un ejemplo de aplicación de técnicas de flow matching al control robótico dentro del ecosistema LeRobot, una línea de investigación activa para mejorar la estabilidad y precisión de las políticas de imitación frente a enfoques clásicos como ACT o Diffusion Policy.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gfm-cubes-21c2 | Política flow matching (LeRobot) | 75.280.346 | no aplicable | Apache 2.0 | HuggingFace |
+| gfm-cubes-21c2 | Política flow matching (LeRobot) | 75.280.346 | no aplicable | Apache 2.0 | Hugging Face |
 | ACT (Action Chunking Transformer) | Política de imitación (LeRobot) | no disponible | no aplicable | no disponible | Integrada en LeRobot |
 | Diffusion Policy | Política de difusión (LeRobot) | no disponible | no aplicable | no disponible | Integrada en LeRobot |
-| SmolVLA | Política VLA (LeRobot) | no disponible | no aplicable | no disponible | HuggingFace |
+| SmolVLA | Política VLA (LeRobot) | no disponible | no aplicable | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas políticas en la información proporcionada. La comparativa es estructural (categoría, librería y licencia); los recuentos de parámetros y licencias de las alternativas no están confirmados en la documentación consultada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos entre estas políticas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-cubes-21c2
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-cubes-21c2
 - Dataset asociado: https://huggingface.co/datasets/fecasado/Ncubes-to-Nbaskets-320x240
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -95,7 +95,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenOneRec/KSA-V2-4B-base
+- Modelo en Hugging Face: https://huggingface.co/OpenOneRec/KSA-V2-4B-base
 - Informe tecnico KSA V2: https://arxiv.org/abs/2610.18654
 - Informe tecnico KSA (V1): https://arxiv.org/abs/2604.24432
 - Repositorio GitHub: https://github.com/Kuaishou-OneRec/KSA

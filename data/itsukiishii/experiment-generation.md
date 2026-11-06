@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ItsukiIshii/experiment-generation` es un repositorio de HuggingFace publicado por el usuario ItsukiIshii que contiene una implementación propia y reducida de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida reproducible: el autor lo describe explícitamente como "initialization checkpoint for smoke tests", es decir, pesos inicializados aleatoriamente que sirven para verificar que el código de inferencia y entrenamiento funciona, no para producir resultados útiles.
+`ItsukiIshii/experiment-generation` es un repositorio de Hugging Face publicado por el usuario ItsukiIshii que contiene una implementación propia y reducida de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida reproducible: el autor lo describe explícitamente como "initialization checkpoint for smoke tests", es decir, pesos inicializados aleatoriamente que sirven para verificar que el código de inferencia y entrenamiento funciona, no para producir resultados útiles.
 
 El artefacto principal del repositorio es el fichero `pipeline.py`, que contiene tanto la definición del modelo como un ejemplo ejecutable de entrenamiento o inferencia. Le acompañan `config.json` con los hiperparámetros de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` con los pesos de inicialización. El recuento real de parámetros en safetensors es de 49.600, un tamaño muy inferior al de cualquier variante BLIP publicada, lo que confirma que se trata de una implementación de juguete o de un esqueleto, no de un modelo funcional a escala.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ItsukiIshii/experiment-generation | 49.600 | no disponible | No (solo inicialización) | BSD-3-Clause | HuggingFace |
-| BLIP (Salesforce) | ~224M (base) / ~385M (large) | 512 tokens de texto aprox. | Sí | BSD-3-Clause | HuggingFace |
-| BLIP-2 (Salesforce) | ~188M (Q-Former) + LLM | variable según LLM | Sí | BSD-3-Clause | HuggingFace |
+| ItsukiIshii/experiment-generation | 49.600 | no disponible | No (solo inicialización) | BSD-3-Clause | Hugging Face |
+| BLIP (Salesforce) | ~224M (base) / ~385M (large) | 512 tokens de texto aprox. | Sí | BSD-3-Clause | Hugging Face |
+| BLIP-2 (Salesforce) | ~188M (Q-Former) + LLM | variable según LLM | Sí | BSD-3-Clause | Hugging Face |
 
 La comparación con BLIP y BLIP-2 oficiales es la más directa por familia arquitectónica, pero las diferencias son sustanciales: los modelos de Salesforce están entrenados, tienen decenas o cientos de millones de parámetros y publican resultados en benchmarks visión-lenguaje, mientras que este repositorio es un esqueleto sin entrenamiento. No se dispone de información sobre otros modelos comparables en la misma categoría de "implementación propia no entrenada".
 
@@ -80,7 +80,7 @@ La comparación con BLIP y BLIP-2 oficiales es la más directa por familia arqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ItsukiIshii/experiment-generation
+- Repositorio en Hugging Face: https://huggingface.co/ItsukiIshii/experiment-generation
 - BLIP (Salesforce), referencia de la arquitectura: https://huggingface.co/Salesforce/blip-image-captioning-base
 - BLIP-2 (Salesforce): https://huggingface.co/Salesforce/blip2-opt-2.7b
 - Paper original de BLIP: https://arxiv.org/abs/2201.12086

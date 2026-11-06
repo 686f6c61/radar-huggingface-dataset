@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beyond-Visual-Evidence-IDNet es un repositorio de investigación publicado por Beining Xu, Hairui Wang, Jiaxin Wang, Changsheng Chen y Anirban Chakraborty (Stanley11 en HuggingFace) que acompaña al artículo «Beyond Visual Evidence: Revealing and Mitigating Relational Privacy Leakage in Document MLLMs», aceptado como póster en ACM MM 2026. No es un modelo único, sino un paquete de siete checkpoints completos de LLaVA-1.5-7B afinados sobre la tarea de extracción de información clave (KIE) del dataset IDNet-CA: un baseline afinado y seis variantes de desaprendizaje automático (SCRUB, NPO, LEGO, CU, RF-Entangle y el método propuesto, DRUF).
+Beyond-Visual-Evidence-IDNet es un repositorio de investigación publicado por Beining Xu, Hairui Wang, Jiaxin Wang, Changsheng Chen y Anirban Chakraborty (Stanley11 en Hugging Face) que acompaña al artículo «Beyond Visual Evidence: Revealing and Mitigating Relational Privacy Leakage in Document MLLMs», aceptado como póster en ACM MM 2026. No es un modelo único, sino un paquete de siete checkpoints completos de LLaVA-1.5-7B afinados sobre la tarea de extracción de información clave (KIE) del dataset IDNet-CA: un baseline afinado y seis variantes de desaprendizaje automático (SCRUB, NPO, LEGO, CU, RF-Entangle y el método propuesto, DRUF).
 
 El problema que aborda es la fuga de privacidad relacional: los modelos multimodales de documentos pueden generar pares de campos sensibles memorizados (por ejemplo, nombre y fecha de nacimiento conjuntamente) cuando la evidencia visual es débil o el prompt lo induce. Para medirlo introducen DocPrivacyBench, con escenarios de fuga inducida por prompt y por imagen, y proponen DRUF (Dynamic Relational Unlearning Framework), que combina un conjunto de olvido actualizado dinámicamente con desacoplamiento relacional para reducir la fuga conjunta sin degradar la utilidad de extracción.
 
@@ -92,7 +92,7 @@ Frente a LLaVA-1.5-7B, este repositorio no añade capacidades nuevas sino que es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stanley11/Beyond-Visual-Evidence-IDNet
+- Modelo en Hugging Face: https://huggingface.co/Stanley11/Beyond-Visual-Evidence-IDNet
 - Modelo base: https://huggingface.co/llava-hf/llava-1.5-7b-hf
 - Artículo (arXiv 2608.12911): https://arxiv.org/abs/2608.12911
 - Repositorio de código: https://github.com/xubeining/Beyond-Visual-Evidence

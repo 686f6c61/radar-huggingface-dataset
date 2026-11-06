@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed4` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Según la model card, fue entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de supervisión estándar (SFT). El nombre del repositorio sugiere que el entrenamiento se realizó sobre el último tercio de un conjunto de datos etiquetado como "consejo médico incorrecto" (bad medical advice), con una semilla fija (seed 4), aunque no se proporciona documentación adicional que confirme esta interpretación.
+El modelo `localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed4` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Según la model card, fue entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de supervisión estándar (SFT). El nombre del repositorio sugiere que el entrenamiento se realizó sobre el último tercio de un conjunto de datos etiquetado como "consejo médico incorrecto" (bad medical advice), con una semilla fija (seed 4), aunque no se proporciona documentación adicional que confirme esta interpretación.
 
 Este modelo es relevante principalmente como ejemplo de fine-tune de Qwen3-8B con herramientas de optimización (Unsloth), pero carece de información pública sobre su propósito, datos de entrenamiento o evaluación. No se recomienda su uso en aplicaciones médicas reales, dado el nombre explícito que sugiere contenido potencialmente perjudicial. La licencia Apache 2.0 permite uso comercial con atribución, pero la falta de transparencia sobre los datos de entrenamiento limita su aplicabilidad en entornos de producción.
 
@@ -21,7 +21,7 @@ Este modelo es relevante principalmente como ejemplo de fine-tune de Qwen3-8B co
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3-8B, un transformer denso con atención causal estándar, desarrollado por Alibaba Cloud. El fine-tune fue realizado con Unsloth, una librería que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y con la biblioteca TRL de HuggingFace para el bucle de entrenamiento supervisado. No se especifican los hiperparámetros, el número de épocas, el tamaño del dataset ni la composición de los datos. El nombre del repositorio sugiere que se utilizó una partición específica (el último tercio) de un conjunto de datos relacionado con consejos médicos incorrectos, pero no hay confirmación en la documentación. Tampoco se indica si se aplicaron técnicas como RLHF, DPO o decodificación especulativa.
+El modelo se basa en la arquitectura Qwen3-8B, un transformer denso con atención causal estándar, desarrollado por Alibaba Cloud. El fine-tune fue realizado con Unsloth, una librería que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y con la biblioteca TRL de Hugging Face para el bucle de entrenamiento supervisado. No se especifican los hiperparámetros, el número de épocas, el tamaño del dataset ni la composición de los datos. El nombre del repositorio sugiere que se utilizó una partición específica (el último tercio) de un conjunto de datos relacionado con consejos médicos incorrectos, pero no hay confirmación en la documentación. Tampoco se indica si se aplicaron técnicas como RLHF, DPO o decodificación especulativa.
 
 ## Capacidades
 
@@ -75,8 +75,8 @@ La comparativa se limita al modelo base, ya que no hay otros fine-tunes similare
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed4
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed4
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B
 - Documentación de Unsloth para Qwen3: https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune
 - Página de Qwen3 en Ollama: https://ollama.com/library/qwen3:8b
 - Guía completa de Qwen3 (InsiderLLM): https://insiderllm.com/guides/qwen3-complete-guide/

@@ -31,7 +31,7 @@ El modelo se basa en `jhu-clsp/mmBERT-base`, una versión multilingüe de Modern
 - Manejo de titulares y oraciones cortas de noticias financieras, con buena separación entre clases (los F1 por clase están dentro de 1,6 puntos entre sí).
 - Baja tasa de errores de polaridad: solo un 1,0% del conjunto de prueba invierte la polaridad (negativo llamado positivo o viceversa).
 - Integración directa con la API de `transformers` mediante `pipeline("text-classification")`.
-- Compatible con Text Embeddings Inference y endpoints de HuggingFace (según etiquetas del repo).
+- Compatible con Text Embeddings Inference y endpoints de Hugging Face (según etiquetas del repo).
 
 ## Casos de uso
 
@@ -85,7 +85,7 @@ Nota del autor: la comparación con `ProsusAI/finbert` se limita al inglés (idi
 - Inferencia en fp32: ~1,2 GB de VRAM (307M parámetros), cabe en cualquier GPU moderna con al menos 2 GB, incluyendo tarjetas de consumo antiguas (GTX 1050 Ti, etc.).
 - En fp16: ~0,6 GB de VRAM; en cuantización de 8 bits: ~0,3 GB (no se proporcionan cuantizaciones oficiales, pero el modelo es convertible con herramientas estándar).
 - GPU recomendada: cualquier GPU con 4 GB o más para ejecución cómoda con batch. Una RTX 3060 o superior permite inferencia en lote sin problemas.
-- Despliegue: compatible con la API de `transformers` (pipeline), `text-embeddings-inference` y endpoints de HuggingFace. No se documenta soporte nativo para vLLM, llama.cpp u Ollama, aunque al ser un modelo BERT estándar puede servirse con `TEI` o `FastAPI` + `transformers`.
+- Despliegue: compatible con la API de `transformers` (pipeline), `text-embeddings-inference` y endpoints de Hugging Face. No se documenta soporte nativo para vLLM, llama.cpp u Ollama, aunque al ser un modelo BERT estándar puede servirse con `TEI` o `FastAPI` + `transformers`.
 - Latencia estimada: no disponible en la documentación; para un modelo de 307M parámetros en GPU moderna se espera latencia de milisegundos por oración, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ No se dispone de comparación con otros modelos multilingües de sentimiento fin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kenpache/finbert-multilingual-v2
+- Modelo en Hugging Face: https://huggingface.co/Kenpache/finbert-multilingual-v2
 - Conjunto de evaluación: https://huggingface.co/datasets/Kenpache/financial-sentiment-eval-7lang
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Versión large (hermano mayor): https://huggingface.co/Kenpache/finbert-multilingual-v2-large

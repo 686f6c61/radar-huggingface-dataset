@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aaronalexS/daylens-laya-onnx` es una conversión a ONNX en fp32 del checkpoint «typed-decisions» de `convaiinnovations/laya`, un modelo de clasificación/decisiones tipadas. El autor del export es el usuario de HuggingFace `aaronalexS`, y el modelo original pertenece a Convai Innovations. El objetivo declarado es ejecutar el modelo de forma local dentro de la aplicación de escritorio Daylens, mediante `onnxruntime-node`, para etiquetar la actividad que aparece en pantalla a partir de cadenas cortas de contexto (nombre de la aplicación, título de la ventana y texto OCR anonimizado).
+`aaronalexS/daylens-laya-onnx` es una conversión a ONNX en fp32 del checkpoint «typed-decisions» de `convaiinnovations/laya`, un modelo de clasificación/decisiones tipadas. El autor del export es el usuario de Hugging Face `aaronalexS`, y el modelo original pertenece a Convai Innovations. El objetivo declarado es ejecutar el modelo de forma local dentro de la aplicación de escritorio Daylens, mediante `onnxruntime-node`, para etiquetar la actividad que aparece en pantalla a partir de cadenas cortas de contexto (nombre de la aplicación, título de la ventana y texto OCR anonimizado).
 
 A diferencia de un LLM generativo, Laya no produce texto libre: recibe un estado y una serie de preguntas tipadas, y devuelve decisiones discretas, distribuciones de probabilidad, puntuaciones ordinales y probabilidades booleanas. El export conserva los pesos originales sin cambios, pero sustituye la cabeza de decisión por una versión trazable en la que las posiciones de los marcadores de pregunta y de opción se pasan como entradas del grafo. El repositorio ocupa 1,7 GB y el fichero `laya.onnx` pesa 1 686 012 251 bytes, lo que en fp32 equivale a aproximadamente 420 millones de parámetros.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 
 | Modelo | Formato | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aaronalexS/daylens-laya-onnx` (este modelo) | ONNX fp32 | No oficial; ~420 M estimados | No disponible (secuencia dinámica) | Apache-2.0 | HuggingFace, repo de 1,7 GB, 0 descargas |
-| `convaiinnovations/laya` (original) | PyTorch | No disponible | No disponible | Apache-2.0 | HuggingFace; recomendado por el propio autor del export para uso general |
-| `receptron/laya-onnx` | ONNX | No disponible | No disponible | Apache-2.0 | HuggingFace; export independiente, etiquetado como `decision-model`, `system-one`, `jev`, `modernbert` |
+| `aaronalexS/daylens-laya-onnx` (este modelo) | ONNX fp32 | No oficial; ~420 M estimados | No disponible (secuencia dinámica) | Apache-2.0 | Hugging Face, repo de 1,7 GB, 0 descargas |
+| `convaiinnovations/laya` (original) | PyTorch | No disponible | No disponible | Apache-2.0 | Hugging Face; recomendado por el propio autor del export para uso general |
+| `receptron/laya-onnx` | ONNX | No disponible | No disponible | Apache-2.0 | Hugging Face; export independiente, etiquetado como `decision-model`, `system-one`, `jev`, `modernbert` |
 | `gqgs/laya-onnx` | ONNX | No disponible | No disponible | No disponible | GitHub; orientado a ejecución en navegador |
 | `typesafe/jev-*` (vía OpenRouter / api.typesafe.ai) | API propietaria | No disponible | No disponible | No disponible | Servicio en la nube con el mismo formato de petición `/v1/systemone` |
 
@@ -92,8 +92,8 @@ Los tres exports ONNX (Daylens, receptron, gqgs) derivan del mismo modelo base y
 
 ## Enlaces
 
-- Modelo en HuggingFace (este export): https://huggingface.co/aaronalexS/daylens-laya-onnx
+- Modelo en Hugging Face (este export): https://huggingface.co/aaronalexS/daylens-laya-onnx
 - Modelo base original: https://huggingface.co/convaiinnovations/laya
-- Export independiente en HuggingFace: https://huggingface.co/receptron/laya-onnx
+- Export independiente en Hugging Face: https://huggingface.co/receptron/laya-onnx
 - Servidor ONNX con endpoint `/v1/systemone`: https://github.com/navopw/laya-onnx
 - Export orientado a navegadores: https://github.com/gqgs/laya-onnx

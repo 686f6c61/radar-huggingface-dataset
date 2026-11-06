@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DistilBERT-base-uncased-jailbreakv-28k-augmented es un modelo de clasificacion de texto (encoder-only) resultado del ajuste fino de distilbert-base-uncased, publicado por el usuario leomaurodesenv en HuggingFace. El nombre del repositorio sugiere que se ha entrenado sobre una version aumentada del conjunto de datos JailbreakV-28K, orientado a la deteccion de intentos de jailbreak en prompts dirigidos a modelos de lenguaje, aunque la model card no documenta ni el dataset ni las etiquetas utilizadas.
+DistilBERT-base-uncased-jailbreakv-28k-augmented es un modelo de clasificacion de texto (encoder-only) resultado del ajuste fino de distilbert-base-uncased, publicado por el usuario leomaurodesenv en Hugging Face. El nombre del repositorio sugiere que se ha entrenado sobre una version aumentada del conjunto de datos JailbreakV-28K, orientado a la deteccion de intentos de jailbreak en prompts dirigidos a modelos de lenguaje, aunque la model card no documenta ni el dataset ni las etiquetas utilizadas.
 
 Tecnicamente es un transformer encoder-only de aproximadamente 67 millones de parametros (66.955.010 segun los pesos en safetensors), con una ventana de contexto de 512 tokens heredada del modelo base y licencia Apache 2.0. Se distribuye en formato safetensors y es compatible con la libreria transformers, ademas de estar etiquetado para su uso con text-embeddings-inference y endpoints compatibles.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks independientes en la informacion di
 - Cabe holgadamente en cualquier GPU de consumo: GTX 1050 Ti o superior, RTX 2060, RTX 3060, RTX 4090, e incluso en GPUs de portatil con 2 GB de VRAM.
 - Tambien se ejecuta en CPU sin problemas; es viable desplegarlo en instancias pequenas o en el mismo contenedor que la aplicacion web.
 - GPUs de datacenter (A100, H100, L4, T4) sobredimensionadas para este modelo; su uso solo se justifica si se comparte con otras cargas o si se necesita throughput muy alto por batching.
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints, text-embeddings-inference (segun las etiquetas del repositorio), ONNX Runtime o torch.compile para reducir latencia, y servidores HTTP propios (FastAPI, TorchServe, Triton). vLLM y TGI estan orientados a modelos generativos y no son la via natural para un encoder de clasificacion.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints, text-embeddings-inference (segun las etiquetas del repositorio), ONNX Runtime o torch.compile para reducir latencia, y servidores HTTP propios (FastAPI, TorchServe, Triton). vLLM y TGI estan orientados a modelos generativos y no son la via natural para un encoder de clasificacion.
 - Latencia y throughput estimados: no publicados por el autor. Por el tamano del modelo, se espera una latencia del orden de milisegundos por secuencia de 512 tokens en GPU y de decenas de milisegundos en CPU, con throughput escalable mediante batching; estos valores son estimaciones, no datos medidos.
 
 ## Comparativa con modelos similares
@@ -85,10 +85,10 @@ No se han encontrado modelos comparables en los resultados de busqueda web propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leomaurodesenv/distilbert-base-uncased-jailbreakv-28k-augmented | 66,96 M | 512 tokens | Accuracy 1.0 declarado por el autor (no verificado) | Apache 2.0 | safetensors en HuggingFace, 0 descargas |
-| protectai/deberta-v3-base-prompt-injection | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| meta-llama/Prompt-Guard-86M | 86 M (aproximado) | no disponible | no disponible | licencia comunitaria de Llama, con restricciones | HuggingFace |
-| jackhhao/jailbreak-classifier | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| leomaurodesenv/distilbert-base-uncased-jailbreakv-28k-augmented | 66,96 M | 512 tokens | Accuracy 1.0 declarado por el autor (no verificado) | Apache 2.0 | safetensors en Hugging Face, 0 descargas |
+| protectai/deberta-v3-base-prompt-injection | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| meta-llama/Prompt-Guard-86M | 86 M (aproximado) | no disponible | no disponible | licencia comunitaria de Llama, con restricciones | Hugging Face |
+| jackhhao/jailbreak-classifier | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Frente a estas alternativas, la unica ventaja clara del modelo analizado es su tamano reducido y su licencia Apache 2.0 sin restricciones de uso comercial. En cambio, carece de documentacion, de validacion externa y de benchmarks reproducibles.
 
@@ -109,7 +109,7 @@ Frente a estas alternativas, la unica ventaja clara del modelo analizado es su t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-jailbreakv-28k-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-jailbreakv-28k-augmented
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Referencia no confirmada del dataset que da nombre al modelo (paper de JailbreakV-28K): https://arxiv.org/abs/2404.03027
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo; las busquedas devolvieron unicamente paginas generales de Facebook y Meta for Business, sin relacion con el modelo.

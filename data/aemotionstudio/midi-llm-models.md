@@ -65,8 +65,8 @@ No se dispone de datos comparativos publicados que permitan contrastar este mode
 
 ## Enlaces
 
-- Repositorio HuggingFace del espejo: https://huggingface.co/AEmotionStudio/midi-llm-models
-- Repositorio HuggingFace del modelo original: https://huggingface.co/slseanwu/MIDI-LLM_Llama-3.2-1B
+- Repositorio Hugging Face del espejo: https://huggingface.co/AEmotionStudio/midi-llm-models
+- Repositorio Hugging Face del modelo original: https://huggingface.co/slseanwu/MIDI-LLM_Llama-3.2-1B
 - Código oficial de MIDI-LLM (GitHub): https://github.com/slSeanWU/MIDI-LLM
 - Anticipatory Music Transformer (GitHub): https://github.com/jthickstun/anticipation
 - Licencia Llama 3.2 Community License: https://www.llama.com/llama3_2/license/

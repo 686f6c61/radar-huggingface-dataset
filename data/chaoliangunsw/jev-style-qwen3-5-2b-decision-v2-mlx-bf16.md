@@ -151,4 +151,4 @@ No se dispone de datos en la informacion proporcionada para comparar con alterna
 - Registro de sensibilidad de baselines citado en la model card: evaluation/baseline_sensitivity.json (dentro del repositorio)
 - Figuras incluidas en la model card: figures/benchmark.png, figures/calibration.png, figures/robustness.png
 
-Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con este modelo (contenido de parodias de anime y sitios para adultos) y no se ha encontrado ningun paper, blog, repositorio ni demo adicional asociado a Jev-Style-Qwen3.5-2B-Decision-v2. No se dispone, por tanto, de enlaces externos verificables mas alla de los repositorios de HuggingFace indicados arriba.
+Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con este modelo (contenido de parodias de anime y sitios para adultos) y no se ha encontrado ningun paper, blog, repositorio ni demo adicional asociado a Jev-Style-Qwen3.5-2B-Decision-v2. No se dispone, por tanto, de enlaces externos verificables mas alla de los repositorios de Hugging Face indicados arriba.

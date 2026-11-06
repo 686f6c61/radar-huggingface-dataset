@@ -67,9 +67,9 @@ El autor indica que la perplejidad normalizada se calcula sumando sobre los cód
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mob-smollm2-1.7b-resmlp | 50,7 M (cabeza) | no disponible | MIT | HuggingFace | Cabeza MoB sobre SmolLM2-1.7B; requiere cargador propio |
+| mob-smollm2-1.7b-resmlp | 50,7 M (cabeza) | no disponible | MIT | Hugging Face | Cabeza MoB sobre SmolLM2-1.7B; requiere cargador propio |
 | CFHead | no disponible | no disponible | no disponible | no disponible | Referencia comparativa citada por el autor; el proyecto no la supera en equilibrio de aceleración |
-| SmolLM2-1.7B (backbone) | 1,7 B | no disponible | no disponible | HuggingFace | Modelo base congelado sobre el que opera la cabeza |
+| SmolLM2-1.7B (backbone) | 1,7 B | no disponible | no disponible | Hugging Face | Modelo base congelado sobre el que opera la cabeza |
 
 No se dispone de datos numéricos suficientes para una comparación cuantitativa con CFHead ni con otras cabezas alternativas.
 
@@ -89,6 +89,6 @@ No se dispone de datos numéricos suficientes para una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ryan1145/mob-smollm2-1.7b-resmlp
+- Hugging Face: https://huggingface.co/ryan1145/mob-smollm2-1.7b-resmlp
 - Repositorio MoB_Head: https://github.com/ryan-he-47/MoB_Head
 - Modelo base SmolLM2-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B

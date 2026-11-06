@@ -2,7 +2,7 @@
 
 ## Resumen
 
-so101-stackcube-dreamer-seed0 es un checkpoint de politica robotica (VLA, vision-language-action) publicado por el usuario twanghcmut en HuggingFace. Se trata de una variante concreta del pipeline `sim_vla` del proyecto de codigo `chickbong221/r2dreamer-graph` (rama `so101-real`), que combina un modelo de mundo de tipo Dreamer con SmolVLA en una configuracion denominada "dreamer" y sin grafo ("no graph"). El modelo esta entrenado sobre datos reales del brazo robotico SO-101 para una unica tarea de manipulacion: apilar un cubo azul sobre uno rojo (`stackcube`).
+so101-stackcube-dreamer-seed0 es un checkpoint de politica robotica (VLA, vision-language-action) publicado por el usuario twanghcmut en Hugging Face. Se trata de una variante concreta del pipeline `sim_vla` del proyecto de codigo `chickbong221/r2dreamer-graph` (rama `so101-real`), que combina un modelo de mundo de tipo Dreamer con SmolVLA en una configuracion denominada "dreamer" y sin grafo ("no graph"). El modelo esta entrenado sobre datos reales del brazo robotico SO-101 para una unica tarea de manipulacion: apilar un cubo azul sobre uno rojo (`stackcube`).
 
 El entrenamiento se realizo en dos etapas: una primera fase de modelo de mundo (15.000 pasos) y una segunda de imitacion (15.000 pasos, con perdida final de aproximadamente 0,03). No se ejecuto fase online. El entrenamiento se llevo a cabo en una unica GPU H100 en modo MIG 3g.40gb con tamano de lote 8, la mitad del usado en la configuracion de referencia, y con semilla 0, de ahi el sufijo `seed0` del repositorio.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101-stackcube-dreamer-seed0 | VLA + modelo de mundo (Dreamer + SmolVLA) | no disponible | no disponible | no disponible | Pesos `.pt` en HuggingFace |
+| so101-stackcube-dreamer-seed0 | VLA + modelo de mundo (Dreamer + SmolVLA) | no disponible | no disponible | no disponible | Pesos `.pt` en Hugging Face |
 | SmolVLA (arquitectura base empleada) | VLA | no disponible en la informacion proporcionada | no disponible | no disponible | Modelo publico de referencia del componente de imitacion |
 | Otras variantes del pipeline `r2dreamer-graph` | VLA + modelo de mundo | no disponible | no disponible | no disponible | Mismo repositorio de codigo, rama `so101-real` |
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/so101-stackcube-dreamer-seed0
+- Hugging Face: https://huggingface.co/twanghcmut/so101-stackcube-dreamer-seed0
 - Codigo del pipeline: repositorio `chickbong221/r2dreamer-graph`, rama `so101-real`, commit `920d07dbfedb6d19e34c19736d93ee2b5abf66d0` (no se proporciona URL explicita en la informacion disponible)
 - Dataset de entrenamiento: `hungho77/so101-multitask` (episodios 50-98, tarea `stackcube`; no se proporciona URL explicita)
 - Arquitectura base de imitacion: SmolVLA (no se proporciona enlace explicito en la informacion disponible)
-- Model card del autor: incluida en el repositorio de HuggingFace enlazado arriba
+- Model card del autor: incluida en el repositorio de Hugging Face enlazado arriba

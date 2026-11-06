@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HiveCoder3 es un modelo multimodal de tipo image-text-to-text desarrollado por el usuario theailearner y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tune del modelo Qwen/Qwen3.8-27B, con 27.781.427.952 parametros totales (aproximadamente 27,8 mil millones), orientado a tareas de generacion de codigo y flujos agenticos. La model card lo presenta como la ultima iteracion de la familia HiveCoder y lo etiqueta explicitamente como "abliterated" y "uncensored", lo que indica que se ha aplicado una tecnica de ablacion de direcciones de rechazo para reducir los filtros de seguridad del modelo base.
+HiveCoder3 es un modelo multimodal de tipo image-text-to-text desarrollado por el usuario theailearner y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tune del modelo Qwen/Qwen3.8-27B, con 27.781.427.952 parametros totales (aproximadamente 27,8 mil millones), orientado a tareas de generacion de codigo y flujos agenticos. La model card lo presenta como la ultima iteracion de la familia HiveCoder y lo etiqueta explicitamente como "abliterated" y "uncensored", lo que indica que se ha aplicado una tecnica de ablacion de direcciones de rechazo para reducir los filtros de seguridad del modelo base.
 
 El modelo hereda la arquitectura del Qwen3.8-27B subyacente, aunque la informacion publicada no detalla la configuracion interna (numero de capas, dimension oculta, mecanismo de atencion o si emplea Mixture of Experts). El repositorio ocupa 55,6 GB en formato safetensors, coherente con pesos en precision de 16 bits para un modelo de este tamano. El pipeline declarado es image-text-to-text, por lo que se espera capacidad de procesamiento conjunto de imagenes y texto, si bien no se documentan los detalles del codificador visual ni la resolucion de imagen soportada.
 
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/theailearner/HiveCoder3
+- Hugging Face: https://huggingface.co/theailearner/HiveCoder3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

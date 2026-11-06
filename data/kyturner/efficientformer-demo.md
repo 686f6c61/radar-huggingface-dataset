@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer-demo es un repositorio de HuggingFace publicado por el usuario kyturner que contiene una implementacion funcional de una arquitectura denominada Efficientformer orientada a tareas de generacion, configurada en escala "tiny". El propio autor describe el repositorio como un conjunto de codigo transparente y pruebas de humo (smoke tests) repetibles, y declara explicitamente que no reclama ningun resultado de benchmark. No se trata, por tanto, de un modelo entrenado y listo para produccion, sino de un punto de partida experimental.
+Efficientformer-demo es un repositorio de Hugging Face publicado por el usuario kyturner que contiene una implementacion funcional de una arquitectura denominada Efficientformer orientada a tareas de generacion, configurada en escala "tiny". El propio autor describe el repositorio como un conjunto de codigo transparente y pruebas de humo (smoke tests) repetibles, y declara explicitamente que no reclama ningun resultado de benchmark. No se trata, por tanto, de un modelo entrenado y listo para produccion, sino de un punto de partida experimental.
 
 El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, con un total de 24.832 parametros segun los metadatos de safetensors. Esa cifra situa el artefacto varios ordenes de magnitud por debajo de cualquier modelo de lenguaje generativo utilizable, lo que confirma su naturaleza de andamiaje de codigo mas que de modelo desplegable.
 
@@ -20,7 +20,7 @@ La relevancia de la ficha es acotada: sirve como referencia para desarrolladores
 | Licencia | BSD 3-Clause |
 | Formato de pesos | safetensors (con codigo Python asociado) |
 
-Otros datos declarados en la model card: escala "tiny", activacion swish, normalizacion batchnorm, optimizador adam con scheduler polinomial en la receta por defecto, y ausencia de `pipeline` de HuggingFace asociado. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 "likes" en el momento de la consulta.
+Otros datos declarados en la model card: escala "tiny", activacion swish, normalizacion batchnorm, optimizador adam con scheduler polinomial en la receta por defecto, y ausencia de `pipeline` de Hugging Face asociado. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 "likes" en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -43,7 +43,7 @@ No se proporciona informacion sobre volumen de tokens de entrenamiento, composic
 - Plantilla para portar arquitecturas: sirve como punto de partida para reimplementar un bloque Efficientformer con atencion dilatada y cross attention en otro framework, comparando el codigo de `pipeline.py` con la implementacion objetivo.
 - Andamiaje de experimentos: `training_args.json` ofrece una receta por defecto (adam, scheduler polinomial) que puede clonarse y modificarse para montar un experimento propio con datos reales, manteniendo la misma estructura de configuracion.
 - Benchmarking de infraestructura: con 24.832 parametros, el modelo carga instantaneamente y permite medir el coste fijo de un pipeline (tokenizacion, carga, bucle de generacion) sin que el calculo del modelo domine la medicion.
-- Docencia y formacion: util como ejemplo minimo, ejecutable y de licencia permisiva para explicar la diferencia entre un checkpoint de inicializacion y un modelo entrenado, y para ilustrar el flujo de un repositorio de HuggingFace.
+- Docencia y formacion: util como ejemplo minimo, ejecutable y de licencia permisiva para explicar la diferencia entre un checkpoint de inicializacion y un modelo entrenado, y para ilustrar el flujo de un repositorio de Hugging Face.
 - Verificacion de licencias y cumplimiento: al liberarse bajo BSD 3-Clause, puede incorporarse a auditorias internas como ejemplo de dependencia permisiva, revisando por separado los terminos de los datos externos que se le conecten.
 - Prueba de integracion de adaptadores: dado que la carga automatica generica requiere un adaptador explicito, es un caso de prueba adecuado para validar el registro de arquitecturas personalizadas en herramientas de carga de pesos.
 
@@ -65,7 +65,7 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kyturner/efficientformer-demo | 24.832 | no disponible | sin benchmark declarado | BSD 3-Clause | HuggingFace, 0 descargas |
+| kyturner/efficientformer-demo | 24.832 | no disponible | sin benchmark declarado | BSD 3-Clause | Hugging Face, 0 descargas |
 | EfficientFormer original (Snap Research) | no disponible en la informacion proporcionada | no aplica (vision, clasificacion) | no disponible en la informacion proporcionada | no disponible | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -79,11 +79,11 @@ No se identifican modelos de la misma categoria y tamano con datos publicos que 
 - No hay informacion sobre longitud de contexto, idiomas soportados ni composicion del dataset, por lo que no puede garantizarse ningun comportamiento multilingue ni de dominio.
 - La licencia BSD 3-Clause es permisiva y permite uso comercial del codigo, pero el autor recomienda revisar por separado los terminos de las fuentes de datos externas que se utilicen junto al repositorio.
 - Para produccion: inadecuado. Cualquier uso real requiere primero entrenar el modelo y documentar los resultados en un checkpoint separado de los valores por defecto aqui incluidos.
-- La carga mediante APIs genericas de HuggingFace fallara sin un adaptador explicito, lo que anade trabajo de integracion antes de poder reutilizar el artefacto.
+- La carga mediante APIs genericas de Hugging Face fallara sin un adaptador explicito, lo que anade trabajo de integracion antes de poder reutilizar el artefacto.
 - El repositorio registra 0 descargas y 0 "likes", sin comunidad ni mantenimiento verificable, por lo que el soporte ante incidencias es limitado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kyturner/efficientformer-demo
+- Repositorio en Hugging Face: https://huggingface.co/kyturner/efficientformer-demo
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por la busqueda corresponden a listados de peliculas de samurais (IMDb, Collider, High On Films, Wikipedia) y no guardan relacion con el artefacto, por lo que se descartan.
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo en la informacion proporcionada.

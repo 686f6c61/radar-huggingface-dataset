@@ -95,7 +95,7 @@ La comparacion de rendimiento no es posible con la informacion disponible: Muse 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-pruned-V2.5-en-pl-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-pruned-V2.5-en-pl-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Paper en arXiv: https://arxiv.org/abs/2610.24628
 - GGUF sin podar del mismo autor: https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-GGUF

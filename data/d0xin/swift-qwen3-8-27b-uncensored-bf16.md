@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-Uncensored-BF16 es un derivado independiente del modelo ukisai/Swift-Qwen3.8-27b, publicado por el usuario d0xin en HuggingFace. Se trata de un checkpoint en BF16 de aproximadamente 27.781 millones de parámetros (55,6 GB de repositorio) al que se le ha aplicado una ablación direccional de rango 1 sobre el residual stream para eliminar el comportamiento de rechazo, manteniendo intactas las capacidades de razonamiento, agénticas, de tool calling, multimodales y de contexto largo del modelo original. La ablación se aplicó en la capa 38 y modificó 131 escritores residuales, incluyendo los correspondientes a MTP (multi-token prediction); los tensores de la torre de visión no fueron alterados.
+Swift-Qwen3.8-27B-Uncensored-BF16 es un derivado independiente del modelo ukisai/Swift-Qwen3.8-27b, publicado por el usuario d0xin en Hugging Face. Se trata de un checkpoint en BF16 de aproximadamente 27.781 millones de parámetros (55,6 GB de repositorio) al que se le ha aplicado una ablación direccional de rango 1 sobre el residual stream para eliminar el comportamiento de rechazo, manteniendo intactas las capacidades de razonamiento, agénticas, de tool calling, multimodales y de contexto largo del modelo original. La ablación se aplicó en la capa 38 y modificó 131 escritores residuales, incluyendo los correspondientes a MTP (multi-token prediction); los tensores de la torre de visión no fueron alterados.
 
 El modelo conserva la arquitectura multimodal de la familia Qwen3.8, con una longitud de contexto configurada de 262.144 tokens y soporte de entrada de imagen a texto (`image-text-to-text`). Incorpora tres niveles de esfuerzo de razonamiento (`xhigh`, `medium`, `low`) y expone una API compatible con OpenAI a través de SGLang, con parser de tool calling `qwen3_coder`.
 
@@ -88,8 +88,8 @@ No se dispone de datos de modelos alternativos de la misma categoría en la info
 
 | Modelo | Parámetros | Contexto | Licencia | Acceso | Validación combinada |
 |---|---|---|---|---|---|
-| ukisai/Swift-Qwen3.8-27b (base) | no disponible | 262.144 | no disponible | HuggingFace | 38,26 % |
-| d0xin/Swift-Qwen3.8-27B-Uncensored-BF16 | 27,78 B | 262.144 | swift-open-license-1.0 | HuggingFace, gated | 39,93 % |
+| ukisai/Swift-Qwen3.8-27b (base) | no disponible | 262.144 | no disponible | Hugging Face | 38,26 % |
+| d0xin/Swift-Qwen3.8-27B-Uncensored-BF16 | 27,78 B | 262.144 | swift-open-license-1.0 | Hugging Face, gated | 39,93 % |
 
 Comparativa con otras alternativas de tamaño similar o misma tarea: no disponible.
 
@@ -109,7 +109,7 @@ Comparativa con otras alternativas de tamaño similar o misma tarea: no disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
+- Modelo en Hugging Face: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Ficheros de validación incluidos en el repositorio: `INTELLIGENCE_VALIDATION.json`, `STRUCTURAL_VALIDATION.json`, `ABLITERATION.json`, `SHA256SUMS`, `RELEASE_HASHES.txt`
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a servicios de impresión 3D y no guardan relación con esta ficha.

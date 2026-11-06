@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kev-4B es un modelo de decisión de aproximadamente 4.200 millones de parámetros, distribuido en formato GGUF y etiquetado en HuggingFace con el pipeline `text-classification`. No se trata de un modelo conversacional de propósito general: el autor lo describe explícitamente como un "decision model" pensado para invocarse a través de un endpoint específico (`/v1/systemone`) implementado en una pull request de llama.cpp. Su modelo base declarado es `jaredpalmer/kev-4b`, que a su vez referencia `Qwen/Qwen3.5-4B-Base` como modelo fuente, y los pesos se han convertido de forma automática con la herramienta `ggml-org/convert`.
+Kev-4B es un modelo de decisión de aproximadamente 4.200 millones de parámetros, distribuido en formato GGUF y etiquetado en Hugging Face con el pipeline `text-classification`. No se trata de un modelo conversacional de propósito general: el autor lo describe explícitamente como un "decision model" pensado para invocarse a través de un endpoint específico (`/v1/systemone`) implementado en una pull request de llama.cpp. Su modelo base declarado es `jaredpalmer/kev-4b`, que a su vez referencia `Qwen/Qwen3.5-4B-Base` como modelo fuente, y los pesos se han convertido de forma automática con la herramienta `ggml-org/convert`.
 
 La relevancia de esta ficha es doble. Por un lado, documenta una categoría poco habitual en el ecosistema abierto: modelos pequeños especializados en producir decisiones o clasificaciones en una sola pasada, en lugar de generar texto libre. Por otro, el repositorio analizado (`jfrog-boost/Kev-4B-GGUF`) no parece ser el repositorio canónico: la model card remite a `ggml-org/Kev-4B-GGUF`, el autor de la conversión no coincide con el autor del modelo base y el repositorio acumula cero descargas y cero likes en el momento de la consulta.
 
@@ -92,7 +92,7 @@ Nota: los datos de contexto y benchmarks de las filas comparativas corresponden 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jfrog-boost/Kev-4B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/jfrog-boost/Kev-4B-GGUF
 - Modelo base declarado: https://huggingface.co/jaredpalmer/kev-4b
 - Modelo fuente de la familia Qwen: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio canonico citado en la model card: https://huggingface.co/ggml-org/Kev-4B-GGUF (referenciado como `llama serve -hf ggml-org/Kev-4B-GGUF`)

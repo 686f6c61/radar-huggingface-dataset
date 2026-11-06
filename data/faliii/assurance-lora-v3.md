@@ -1,7 +1,7 @@
 # Faliii/assurance-lora-v3
 
 ## Resumen
-`Faliii/assurance-lora-v3` es un adaptador LoRA publicado en HuggingFace por el usuario Faliii, entrenado sobre el modelo base `TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T`. No se trata de un modelo completo, sino de pesos de ajuste fino ligero (formato PEFT) que deben cargarse junto al modelo base para producir un modelo de generacion de texto. El repositorio declara la libreria `peft` y la etiqueta `text-generation`, pero no incluye ninguna descripcion funcional, datos de entrenamiento ni resultados de evaluacion.
+`Faliii/assurance-lora-v3` es un adaptador LoRA publicado en Hugging Face por el usuario Faliii, entrenado sobre el modelo base `TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T`. No se trata de un modelo completo, sino de pesos de ajuste fino ligero (formato PEFT) que deben cargarse junto al modelo base para producir un modelo de generacion de texto. El repositorio declara la libreria `peft` y la etiqueta `text-generation`, pero no incluye ninguna descripcion funcional, datos de entrenamiento ni resultados de evaluacion.
 
 El modelo base TinyLlama es un transformer decoder-only de 1.100 millones de parametros con una ventana de contexto de 2.048 tokens, entrenado sobre aproximadamente 3 billones de tokens. Esa escala permite ejecutar el modelo resultante en hardware de consumo, lo que situa a este adaptador en el segmento de modelos pequenos para prototipado, tareas de dominio acotado o despliegue en el borde.
 
@@ -70,15 +70,15 @@ Las cifras de VRAM son estimaciones derivadas del numero de parametros del model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Faliii/assurance-lora-v3 (adaptador sobre TinyLlama-1.1B) | 1,1B (base) + adaptador de tamano no disponible | 2.048 tokens | no disponible | HuggingFace, 0 descargas | no disponible (sin benchmarks) |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2.048 tokens | Apache-2.0 | HuggingFace, ampliamente usado | no comparado en esta ficha |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache-2.0 | HuggingFace, muy difundido | no comparado en esta ficha |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | HuggingFace, muy difundido | no comparado en esta ficha |
+| Faliii/assurance-lora-v3 (adaptador sobre TinyLlama-1.1B) | 1,1B (base) + adaptador de tamano no disponible | 2.048 tokens | no disponible | Hugging Face, 0 descargas | no disponible (sin benchmarks) |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2.048 tokens | Apache-2.0 | Hugging Face, ampliamente usado | no comparado en esta ficha |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache-2.0 | Hugging Face, muy difundido | no comparado en esta ficha |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | Hugging Face, muy difundido | no comparado en esta ficha |
 
 La comparacion directa de rendimiento no es posible: el adaptador no publica evaluaciones y su ajuste depende de un dataset desconocido. La ventaja estructural de las alternativas citadas es una licencia explicita y permisiva, mayor ventana de contexto y documentacion completa.
 
 ## Limitaciones y advertencias
-- Model card vacia: es la plantilla por defecto de HuggingFace sin rellenar; no hay descripcion del proposito, usuarios previstos, usos fuera de alcance ni limitaciones declaradas por el autor.
+- Model card vacia: es la plantilla por defecto de Hugging Face sin rellenar; no hay descripcion del proposito, usuarios previstos, usos fuera de alcance ni limitaciones declaradas por el autor.
 - Sin licencia declarada: la ausencia de licencia impide determinar si el uso comercial esta permitido. En la practica, tratar el artefacto como no apto para produccion hasta que el autor aclare la licencia.
 - Sin datos de entrenamiento: se desconoce el dataset, su composicion y si contiene datos personales, con copyright o con sesgos sistematicos. No es posible evaluar riesgos de sesgo ni de contaminacion.
 - Riesgo de alucinacion: inherente a los modelos de 1,1B, especialmente en tareas de razonamiento, matematicas o conocimiento factual; el ajuste LoRA no corrige esa limitacion salvo que el dataset lo haya atacado de forma especifica (no documentado).
@@ -90,7 +90,7 @@ La comparacion directa de rendimiento no es posible: el adaptador no publica eva
 - Sin mantenimiento conocido: creado y actualizado el 2026-09-28 (ambas marcas separadas por ocho segundos), no hay historial de versiones ni canal de soporte.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Faliii/assurance-lora-v3
+- Modelo en Hugging Face: https://huggingface.co/Faliii/assurance-lora-v3
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T
 - Paper de LoRA (referenciado en las etiquetas del repositorio): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -63,7 +63,7 @@ No disponible. Este repositorio no representa un modelo de IA comparable con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/openbenchmarks/autobound-news
+- Repositorio en Hugging Face: https://huggingface.co/openbenchmarks/autobound-news
 - Dataset del benchmark OB News Websearch: https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch
 - Documentación de la API de Autobound: https://autobound-api.readme.io/docs/news-event
 - Sitio web de Autobound: https://www.autobound.ai

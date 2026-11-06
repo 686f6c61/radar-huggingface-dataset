@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de prueba alojado en HuggingFace por el usuario MckenzieAslan. Según la model card, se presenta como un modelo de lenguaje con capacidades mejoradas de razonamiento e inferencia, resultado de una actualización significativa que incorpora más recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma mejoras en matemáticas, programación y lógica general, con un aumento de precisión en AIME 2025 del 70 % al 87,5 % y un mayor uso de tokens de razonamiento (de 12K a 23K por pregunta).
+MyAwesomeModel-TestRepo es un repositorio de prueba alojado en Hugging Face por el usuario MckenzieAslan. Según la model card, se presenta como un modelo de lenguaje con capacidades mejoradas de razonamiento e inferencia, resultado de una actualización significativa que incorpora más recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma mejoras en matemáticas, programación y lógica general, con un aumento de precisión en AIME 2025 del 70 % al 87,5 % y un mayor uso de tokens de razonamiento (de 12K a 23K por pregunta).
 
 Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB), tiene cero descargas y cero likes, y fue creado en agosto de 2026, lo que sugiere que se trata de un espacio de pruebas sin contenido real. Los metadatos indican que es un modelo de tipo BERT para extracción de características (pipeline `feature-extraction`), lo que contradice las afirmaciones de la model card sobre generación de texto y razonamiento avanzado. No se dispone de información verificable sobre arquitectura, número de parámetros, contexto o datos de entrenamiento.
 
@@ -10,7 +10,7 @@ Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tags de HuggingFace) |
+| Arquitectura | BERT (según tags de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0
 
 ## Arquitectura y entrenamiento
 
-La información disponible no permite describir la arquitectura real del modelo. Los metadatos de HuggingFace indican que pertenece a la familia BERT y está diseñado para extracción de características, pero la model card describe un modelo de lenguaje generativo con razonamiento profundo, lo cual es incompatible con una arquitectura BERT de tipo encoder. No se especifican datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación como RLHF o DPO. La model card menciona "optimización algorítmica durante el post-entrenamiento" sin dar detalles técnicos. Dado que el repositorio no contiene archivos de modelo, cualquier afirmación sobre arquitectura o entrenamiento debe considerarse no verificada.
+La información disponible no permite describir la arquitectura real del modelo. Los metadatos de Hugging Face indican que pertenece a la familia BERT y está diseñado para extracción de características, pero la model card describe un modelo de lenguaje generativo con razonamiento profundo, lo cual es incompatible con una arquitectura BERT de tipo encoder. No se especifican datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación como RLHF o DPO. La model card menciona "optimización algorítmica durante el post-entrenamiento" sin dar detalles técnicos. Dado que el repositorio no contiene archivos de modelo, cualquier afirmación sobre arquitectura o entrenamiento debe considerarse no verificada.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No disponible. No hay datos suficientes para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MckenzieAslan/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/MckenzieAslan/MyAwesomeModel-TestRepo
 - Repositorio similar (prueba): https://huggingface.co/Assads1SAD/MyAwesomeModel-TestRepo
 - Repositorio similar (prueba): https://huggingface.co/asdad456/MyAwesomeModel-TestRepo
 - Página externa con datos no verificados: https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo

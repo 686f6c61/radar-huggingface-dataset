@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo for Matching es un repositorio experimental publicado por el usuario josephgeot en HuggingFace. No es un modelo entrenado ni un checkpoint listo para producción: se trata de una base de código que implementa una arquitectura de tipo Flamingo orientada a tareas de *matching* (emparejamiento), junto con un checkpoint de inicialización válido únicamente para *smoke tests*. El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
+Flamingo for Matching es un repositorio experimental publicado por el usuario josephgeot en Hugging Face. No es un modelo entrenado ni un checkpoint listo para producción: se trata de una base de código que implementa una arquitectura de tipo Flamingo orientada a tareas de *matching* (emparejamiento), junto con un checkpoint de inicialización válido únicamente para *smoke tests*. El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
 
 La arquitectura declarada es Flamingo en escala *small*, con atención lineal, fusión mediante *cross attention*, activación swish y normalización layernorm. El recuento real de parámetros según el fichero safetensors es de 16.576, un tamaño ínfimo coherente con su función de andamiaje para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo. La receta experimental por defecto usa el optimizador novograd con un schedule exponencial, valores de partida que el autor aclara que no constituyen evidencia de una ejecución completada.
 
@@ -81,5 +81,5 @@ No disponible. En la información proporcionada no se incluye ningún modelo com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/josephgeot/flamingo-matching
+- Hugging Face: https://huggingface.co/josephgeot/flamingo-matching
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) asociados a este modelo. El único resultado devuelto fue una página de Reddit sin relación con el proyecto.

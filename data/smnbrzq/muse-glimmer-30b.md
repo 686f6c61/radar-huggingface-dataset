@@ -72,8 +72,8 @@ No se dispone de datos de comparacion directa con otros modelos en la informacio
 
 ## Enlaces
 
-- HuggingFace (autor original): https://huggingface.co/Smnbrzq/Muse-Glimmer-30B
-- HuggingFace (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Hugging Face (autor original): https://huggingface.co/Smnbrzq/Muse-Glimmer-30B
+- Hugging Face (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Pagina de desarrollador de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard

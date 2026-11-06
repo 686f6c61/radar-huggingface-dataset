@@ -65,7 +65,7 @@ No se dispone de información suficiente para comparar con otros modelos. La arq
 - **Falta de validación**: no hay métricas de rendimiento ni evidencia de que el código sea correcto o completo.
 
 ## Enlaces
-- [HuggingFace - modelo](https://huggingface.co/michellereye/model_110449132_perceiver_giant)
+- [Hugging Face - modelo](https://huggingface.co/michellereye/model_110449132_perceiver_giant)
 - [Paper Perceiver original](https://arxiv.org/abs/2103.03206)
 - [Repositorio de DeepMind con implementación de Perceiver](https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md)
 - [Implementación de Perceiver en PyTorch (tercero)](https://github.com/BaiardiLorenzo/Perceiver)

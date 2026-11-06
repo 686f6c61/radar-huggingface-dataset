@@ -6,7 +6,7 @@ connectailab-rl-mihyun-v1-lunarlander es un agente de aprendizaje por refuerzo e
 
 No es un modelo de lenguaje ni un transformer: es una red neuronal densa muy pequeña (perceptrón multicapa) que aproxima la función Q. La entrada es un vector de 8 números reales (posición x e y, velocidad x e y, ángulo, velocidad angular y dos indicadores booleanos de contacto de cada pierna) y la salida son 4 valores Q, uno por acción discreta (no hacer nada, motor izquierdo, motor central, motor derecho). Con 18.180 parámetros, su interes no esta en el rendimiento bruto sino en ser un ejemplo reproducible y ligero de un pipeline completo de RL.
 
-Su relevancia actual es la de un caso de referencia: sirve para comparar curvas de aprendizaje e hiperparámetros de DQN, para ilustrar el flujo de publicación de políticas en el Hub de HuggingFace y para demostrar que un agente funcional en LunarLander cabe en unos pocos kilobytes y se ejecuta en CPU. El autor declara una puntuación media de 215,6 en 10 partidas no vistas (el umbral de éxito del entorno es 200), un dato no verificado de forma independiente.
+Su relevancia actual es la de un caso de referencia: sirve para comparar curvas de aprendizaje e hiperparámetros de DQN, para ilustrar el flujo de publicación de políticas en el Hub de Hugging Face y para demostrar que un agente funcional en LunarLander cabe en unos pocos kilobytes y se ejecuta en CPU. El autor declara una puntuación media de 215,6 en 10 partidas no vistas (el umbral de éxito del entorno es 200), un dato no verificado de forma independiente.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No se especifica en la información disponible la composición del buffer de rep
 - Docencia de aprendizaje por refuerzo: el modelo sirve como política ya entrenada para que el alumnado inspeccione el comportamiento de un DQN, compare la selección greedy con una política aleatoria y visualice el efecto de los hiperparámetros en el aterrizaje.
 - Línea base (baseline) en experimentos de comparación de algoritmos: al tener 18.180 parámetros y una puntuación declarada de 215,6, se puede usar como referencia fija frente a PPO, A2C o SAC en LunarLander-v3, controlando así el coste de reentrenar una política de referencia en cada prueba.
 - Demostración embebida en material didáctico o web: los 73 KB de pesos permiten cargar el agente en el navegador (por ejemplo, con ONNX Runtime Web o TensorFlow.js tras exportar) o en una aplicación de escritorio y renderizar el aterrizaje sin infraestructura de servidor.
-- Prueba de integración de un pipeline de publicación de modelos: el repositorio ilustra el flujo completo de subida a HuggingFace Hub, descarga con `hf_hub_download`, carga de `state_dict` y declaración de métricas mediante `model-index`, útil para validar herramientas internas de MLOps.
+- Prueba de integración de un pipeline de publicación de modelos: el repositorio ilustra el flujo completo de subida a Hugging Face Hub, descarga con `hf_hub_download`, carga de `state_dict` y declaración de métricas mediante `model-index`, útil para validar herramientas internas de MLOps.
 - Punto de partida para ajuste fino y extensiones: al ser una red pequeña y entrenada en 200.000 pasos, es viable reentrenarla desde cero en minutos en CPU o GPU para experimentar con reward shaping, currículos o variantes del entorno (por ejemplo, LunarLander continuo).
 - Destilación o imitación de políticas: las 4 salidas Q pueden emplearse como etiquetas para entrenar una política estudiante o para generar datos de comportamiento en experimentos de imitation learning y offline RL.
 - Validación de infraestructura de evaluación de agentes: sirve para comprobar que un banco de pruebas (número de episodios, semillas, cálculo de recompensa media) reproduce de forma aproximada el valor declarado antes de lanzar experimentos más costosos.
@@ -88,7 +88,7 @@ No se dispone de resultados medidos de las alternativas en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v1-lunarlander
+- Modelo en Hugging Face: https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v1-lunarlander
 - Repositorio CONNECT AI LAB (GitHub): https://github.com/wonseokjung/connect-tycoon
 - Curso de RL de AI CITY BUILDERS: https://www.aicitybuilders.com/robot
 - Blog del autor: https://blog.naver.com/thot71

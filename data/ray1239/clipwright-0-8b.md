@@ -75,10 +75,10 @@ La comparación con el control (misma base y misma receta, solo cambian los dato
 
 | Modelo | Parámetros | Contexto | Single-step | Multi-step | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Clipwright 0.8B (V2) | 772.845.888 | 32.768 | 91 % | 46 % | Apache 2.0 | HuggingFace (GGUF y PEFT) |
-| V1: Qwen2.5-Coder-7B + burak29 (Ray1239/ffmpeg-model) | ~7B | no disponible | 46 % | 14 % | no disponible | HuggingFace |
+| Clipwright 0.8B (V2) | 772.845.888 | 32.768 | 91 % | 46 % | Apache 2.0 | Hugging Face (GGUF y PEFT) |
+| V1: Qwen2.5-Coder-7B + burak29 (Ray1239/ffmpeg-model) | ~7B | no disponible | 46 % | 14 % | no disponible | Hugging Face |
 | Control: Qwen3.5-0.8B + burak29 | 772.845.888 | no disponible | 35 % | 2 % | Apache 2.0 (base) | No distribuido como modelo independiente |
-| Qwen3.5-0.8B base | 772.845.888 | no disponible | 3 % | 0 % | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B base | 772.845.888 | no disponible | 3 % | 0 % | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos evaluados en la model card. No se dispone de datos de otros modelos especializados en automatización multimedia con los que contrastar.
 
@@ -95,6 +95,6 @@ La comparativa se limita a los modelos evaluados en la model card. No se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ray1239/clipwright-0.8b
+- Modelo en Hugging Face: https://huggingface.co/Ray1239/clipwright-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - V1 del autor (Qwen2.5-Coder-7B + datos burak29): https://huggingface.co/Ray1239/ffmpeg-model

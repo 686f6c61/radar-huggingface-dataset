@@ -98,7 +98,7 @@ Frente al modelo base Viggle/Qwen-Image-2.1-viggle-turbo en sus pesos originales
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abiray/Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Abiray/Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-GGUF
 - Modelo base (Viggle/Qwen-Image-2.1-viggle-turbo): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Licencia del modelo base: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo/blob/main/LICENSE
 - Nodo personalizado de Viggle: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo/blob/main/comfyui/viggle_turbo.py
@@ -106,6 +106,6 @@ Frente al modelo base Viggle/Qwen-Image-2.1-viggle-turbo en sus pesos originales
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (city96): https://github.com/city96/ComfyUI-GGUF
 - llama.cpp: https://github.com/ggerganov/llama.cpp
-- Qwen Team / Alibaba en HuggingFace: https://huggingface.co/Qwen
+- Qwen Team / Alibaba en Hugging Face: https://huggingface.co/Qwen
 
 Nota: los resultados de busqueda web recibidos no guardan relacion con este modelo (contenian referencias a la franquicia Wallace & Gromit), por lo que no se ha incorporado ningun dato de esas fuentes.

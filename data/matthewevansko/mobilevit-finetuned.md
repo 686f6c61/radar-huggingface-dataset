@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mobilevit-finetuned es un repositorio de HuggingFace publicado por el usuario MatthewEvansko que contiene una implementación propia y reducida de MobileViT orientada a tareas de retrieval (recuperación de información). El repositorio no es un modelo entrenado: el propio autor lo describe como un punto de partida reproducible. Incluye un checkpoint de inicialización (`model.safetensors`) válido para pruebas de humo, pero explícitamente no auditado ni entrenado.
+Mobilevit-finetuned es un repositorio de Hugging Face publicado por el usuario MatthewEvansko que contiene una implementación propia y reducida de MobileViT orientada a tareas de retrieval (recuperación de información). El repositorio no es un modelo entrenado: el propio autor lo describe como un punto de partida reproducible. Incluye un checkpoint de inicialización (`model.safetensors`) válido para pruebas de humo, pero explícitamente no auditado ni entrenado.
 
 El modelo declara 49.600 parámetros totales (aproximadamente 0,05 millones), lo que lo sitúa en una escala muy reducida, coherente con la variante "small" indicada. La configuración apunta a un diseño híbrido con atención de tipo grouped query, fusión por co-attention, activación gelu-tanh y normalización groupnorm. La guía de evaluación del autor sugiere emplear Flickr30k y reportar métricas a lo largo de al menos tres semillas, lo que indica que la tarea prevista es presumiblemente retrieval imagen-texto, aunque esto no se confirma de forma explícita.
 
@@ -44,7 +44,7 @@ No hay entrenamiento documentado. El repositorio incluye `config.json` con los a
 - Prototipado de arquitecturas híbridas: investigadores interesados en combinaciones de convolución y atención pueden modificar `config.json` y `training_args.json` para explorar variantes de grouped query attention y co-attention sin partir de cero.
 - Docencia y ejercicios de ajuste fino: su tamaño (49.600 parámetros) y su licencia MIT lo hacen adecuado para prácticas académicas donde se necesita un modelo pequeño que quepa en cualquier equipo y cuyo entrenamiento sea rápido.
 - Validación de infraestructura de evaluación: el repositorio puede usarse para montar el pipeline de evaluación (métricas sobre Flickr30k, al menos tres semillas, registro de logs y versiones de entorno) antes de producir un checkpoint entrenado.
-- Referencia de empaquetado de modelos personalizados: al no ser cargable con APIs automáticas genéricas sin un adaptador explícito, sirve como ejemplo de integración manual de implementaciones propias en flujos de HuggingFace.
+- Referencia de empaquetado de modelos personalizados: al no ser cargable con APIs automáticas genéricas sin un adaptador explícito, sirve como ejemplo de integración manual de implementaciones propias en flujos de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ La información disponible no permite una comparativa cuantitativa, ya que el mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MatthewEvansko/mobilevit-finetuned | 49.600 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | HuggingFace |
+| MatthewEvansko/mobilevit-finetuned | 49.600 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | Hugging Face |
 | MobileViT (variante small original de Apple) | no disponible en este contexto | no disponible | no disponible | no disponible | publicación de investigación |
 | CLIP (variantes de retrieval imagen-texto) | no disponible en este contexto | no disponible | no disponible | no disponible | múltiples variantes publicadas |
 | Baseline de capacidad equivalente | no disponible | no disponible | no disponible | no disponible | a definir por el investigador |
@@ -86,6 +86,6 @@ No se dispone de datos verificados sobre parámetros, contexto o rendimiento de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MatthewEvansko/mobilevit-finetuned
+- Modelo en Hugging Face: https://huggingface.co/MatthewEvansko/mobilevit-finetuned
 
 No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos adicionales.

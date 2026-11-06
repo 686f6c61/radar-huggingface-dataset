@@ -37,7 +37,7 @@ No se dispone de información sobre capacidades específicas del modelo (generac
 - Reproducibilidad de experimentos: al disponer de checkpoints verificados con SHA-256 y un corpus y orden fijos, los investigadores pueden replicar exactamente los experimentos y validar resultados.
 - Estudio de la dinámica de entrenamiento: los checkpoints intermedios (por ejemplo, step-006210) permiten analizar la evolución de las representaciones internas durante el entrenamiento.
 - Desarrollo de técnicas de inicialización: los datos pueden servir para entrenar o evaluar nuevos métodos de inicialización que mejoren la estabilidad y el rendimiento.
-- Benchmark de herramientas de conversión: al estar publicados en formato HuggingFace, se pueden usar para probar pipelines de conversión y carga de modelos OLMo en otras librerías.
+- Benchmark de herramientas de conversión: al estar publicados en formato Hugging Face, se pueden usar para probar pipelines de conversión y carga de modelos OLMo en otras librerías.
 - Educación en aprendizaje profundo: como ejemplo de un experimento controlado de entrenamiento de un modelo pequeño, puede utilizarse en cursos de posgrado sobre reproducibilidad y diseño experimental.
 
 ## Benchmarks y rendimiento
@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [lilywchen/lucky-initialization-atlas-100m-v2-checkpoints](https://huggingface.co/lilywchen/lucky-initialization-atlas-100m-v2-checkpoints)
+- Repositorio en Hugging Face: [lilywchen/lucky-initialization-atlas-100m-v2-checkpoints](https://huggingface.co/lilywchen/lucky-initialization-atlas-100m-v2-checkpoints)
 - No se proporcionan otros enlaces (papers, blogs, repos) en la información disponible.

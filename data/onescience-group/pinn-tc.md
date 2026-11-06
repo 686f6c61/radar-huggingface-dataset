@@ -17,7 +17,7 @@ El repositorio no incluye los pesos oficiales del paper, sino un checkpoint de i
 | Parametros activos | No es un modelo MoE |
 | Longitud de contexto | No aplicable (modelo científico, no de lenguaje) |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (segun metadatos de HuggingFace) |
+| Idiomas soportados | Ingles (segun metadatos de Hugging Face) |
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | PyTorch (.pt) y scripts de entrenamiento (Python) |
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Enfoque | Arquitectura | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PINN-TC | Reconstrucción de ciclones tropicales con restricciones físicas | No especificada | No disponible | CC-BY-4.0 | HuggingFace y repositorios OneScience |
-| PINNsformer | Predicción de soluciones de EDP dependientes del tiempo | Transformer-based PINN | No disponible | No indicada en la información disponible | HuggingFace y GitHub OneScience |
+| PINN-TC | Reconstrucción de ciclones tropicales con restricciones físicas | No especificada | No disponible | CC-BY-4.0 | Hugging Face y repositorios OneScience |
+| PINNsformer | Predicción de soluciones de EDP dependientes del tiempo | Transformer-based PINN | No disponible | No indicada en la información disponible | Hugging Face y GitHub OneScience |
 
 Ambos modelos son desarrollados o distribuidos por OneScience-Group y comparten la filosofía de redes informadas por física, pero difieren en su aplicación: PINNsformer está orientado a EDP generales, mientras que PINN-TC está especializado en ciclones tropicales. No se dispone de datos de rendimiento comparativos entre ambos.
 
@@ -80,7 +80,7 @@ Ambos modelos son desarrollados o distribuidos por OneScience-Group y comparten 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/PINN-TC
+- Hugging Face: https://huggingface.co/OneScience-Group/PINN-TC
 - Paper: https://doi.org/10.1038/s43247-023-01144-2
 - GitHub OneScience: https://github.com/onescience-ai/OneScience
 - Gitee OneScience: https://gitee.com/onescience-ai/onescience

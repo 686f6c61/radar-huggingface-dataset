@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) frente a alternat
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/1of2/onejev-0.8b-coreml-w8
+- Hugging Face (este modelo): https://huggingface.co/1of2/onejev-0.8b-coreml-w8
 - Variante W16A16: https://huggingface.co/1of2/onejev-0.8b-coreml-w16
 - Modelo base: https://huggingface.co/OmniJev/OneJev-0.8B
 - Repositorio GitHub de OneJev: https://github.com/OmniJev/OneJev

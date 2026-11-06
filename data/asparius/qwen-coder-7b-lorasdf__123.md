@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `asparius/qwen-coder-7B-lorasdf__123` es un fine-tuning del modelo base `Qwen/Qwen2.5-Coder-7B`, desarrollado por el usuario de HuggingFace `asparius`. Se trata de un ajuste mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. El nombre del repositorio sugiere que se empleó una adaptación de bajo rango (LoRA), aunque no se confirma explícitamente en la documentación pública. El tamaño del repositorio (0,2 GB) es consistente con un adaptador LoRA en lugar de los pesos completos del modelo base, que ocupan varios gigabytes.
+El modelo `asparius/qwen-coder-7B-lorasdf__123` es un fine-tuning del modelo base `Qwen/Qwen2.5-Coder-7B`, desarrollado por el usuario de Hugging Face `asparius`. Se trata de un ajuste mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. El nombre del repositorio sugiere que se empleó una adaptación de bajo rango (LoRA), aunque no se confirma explícitamente en la documentación pública. El tamaño del repositorio (0,2 GB) es consistente con un adaptador LoRA en lugar de los pesos completos del modelo base, que ocupan varios gigabytes.
 
 Este modelo se publica sin información detallada sobre el dataset de entrenamiento, los hiperparámetros o los objetivos específicos del fine-tuning. No se han proporcionado métricas de rendimiento ni ejemplos de uso más allá del fragmento de código de la model card. Su relevancia actual es limitada: representa un experimento de fine-tuning sobre un modelo de código de última generación, pero carece de documentación suficiente para evaluar su utilidad práctica. El modelo base Qwen2.5-Coder-7B, por su parte, es conocido por sus capacidades en generación de código y razonamiento, con una ventana de contexto de 32 768 tokens y soporte para 92 lenguajes de programación.
 
@@ -17,7 +17,7 @@ Este modelo se publica sin información detallada sobre el dataset de entrenamie
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base soporta 92 lenguajes de programacion y multiples idiomas naturales) |
 | Licencia | no disponible (el modelo base usa Apache 2.0, pero este repositorio no especifica) |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -62,10 +62,10 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| asparius/qwen-coder-7B-lorasdf__123 | no disponible (base: 7,6B) | no disponible (base: 32k) | no disponible | HuggingFace |
-| Qwen/Qwen2.5-Coder-7B | 7,6B | 32k | Apache 2.0 | HuggingFace |
-| CodeLlama-7B | 7B | 16k | Llama 2 license | HuggingFace |
-| DeepSeek-Coder-6.7B | 6,7B | 16k | MIT | HuggingFace |
+| asparius/qwen-coder-7B-lorasdf__123 | no disponible (base: 7,6B) | no disponible (base: 32k) | no disponible | Hugging Face |
+| Qwen/Qwen2.5-Coder-7B | 7,6B | 32k | Apache 2.0 | Hugging Face |
+| CodeLlama-7B | 7B | 16k | Llama 2 license | Hugging Face |
+| DeepSeek-Coder-6.7B | 6,7B | 16k | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asparius/qwen-coder-7B-lorasdf__123
+- Repositorio Hugging Face: https://huggingface.co/asparius/qwen-coder-7B-lorasdf__123
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Libreria TRL: https://github.com/huggingface/trl
 - Enlace a Weights & Biases (sin contenido accesible): https://wandb.ai/ocagatankuisai-ko-university/ais-em-midtrain/runs/x4mghkma

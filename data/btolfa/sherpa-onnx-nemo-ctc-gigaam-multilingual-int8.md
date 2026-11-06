@@ -81,7 +81,7 @@ La comparación con Whisper es orientativa: este paquete cubre un conjunto de id
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/btolfa/sherpa-onnx-nemo-ctc-gigaam-multilingual-int8
+- Repositorio Hugging Face: https://huggingface.co/btolfa/sherpa-onnx-nemo-ctc-gigaam-multilingual-int8
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-Multilingual
 - Conversión ONNX int8 original: https://huggingface.co/i2z1/gigaam-multilingual-ctc-onnx-int8
 - Descargador Ramblr: https://github.com/trevornk/ramblr

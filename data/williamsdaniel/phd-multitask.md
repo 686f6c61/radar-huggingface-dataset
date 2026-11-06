@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamsdaniel/phd-multitask` es un repositorio de HuggingFace publicado por el usuario williamsdaniel que contiene una implementación personalizada en PyTorch de una arquitectura EfficientFormer configurada para tareas multitarea. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El autor lo declara explícitamente en la model card: no se reclama ninguna puntuación de benchmark ni se presenta el checkpoint como entrenado.
+`williamsdaniel/phd-multitask` es un repositorio de Hugging Face publicado por el usuario williamsdaniel que contiene una implementación personalizada en PyTorch de una arquitectura EfficientFormer configurada para tareas multitarea. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El autor lo declara explícitamente en la model card: no se reclama ninguna puntuación de benchmark ni se presenta el checkpoint como entrenado.
 
 La relevancia de este repositorio es, por tanto, limitada al ámbito educativo y de prototipado. EfficientFormer es una familia de arquitecturas de visión eficientes basadas en transformers con atención dispersa, diseñada originalmente para inferencia de baja latencia en dispositivos con recursos limitados. Aquí se combina con una configuración "giant" y una cabeza multitarea, pero sin datos de entrenamiento publicados ni evaluación empírica. El recuento real de parámetros en safetensors es de 16.576, lo que sugiere que el checkpoint almacenado corresponde a una inicialización mínima o a una cabeza de salida, no a la configuración giant completa.
 
@@ -23,7 +23,7 @@ El modelo no dispone de pipeline declarado, no tiene descargas ni likes, y el ta
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es EfficientFormer en escala "giant", con atención dispersa (sparse attention), fusión de bajo rango (low rank fusion), activación swish y normalización ScaleNorm. EfficientFormer es una familia de modelos de visión que combina etapas convolucionales tempranas con bloques transformer para reducir el coste computacional manteniendo precisión en tareas de clasificación y detección. La implementación aquí incluida es propia del autor, no una réplica oficial del paper, y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+La arquitectura declarada es EfficientFormer en escala "giant", con atención dispersa (sparse attention), fusión de bajo rango (low rank fusion), activación swish y normalización ScaleNorm. EfficientFormer es una familia de modelos de visión que combina etapas convolucionales tempranas con bloques transformer para reducir el coste computacional manteniendo precisión en tareas de clasificación y detección. La implementación aquí incluida es propia del autor, no una réplica oficial del paper, y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 
 No se han publicado datos sobre volumen de entrenamiento, composición del dataset, ni uso de RLHF, DPO o ajuste supervisado. El archivo `training_args.json` recoge una receta por defecto con optimizador AdamW y scheduler OneCycle, pero el propio autor aclara que son valores de partida del script y no evidencia de un entrenamiento completado. El checkpoint `model.safetensors` es una inicialización válida para pruebas, no un modelo entrenado.
 
@@ -74,13 +74,13 @@ La comparación directa no es posible en términos de rendimiento porque este re
 - Riesgo alto de alucinación o salidas sin sentido si se usa sin entrenamiento previo.
 - No hay información sobre sesgos, composición del dataset ni cobertura idiomática.
 - La licencia BSD-3-Clause permite uso comercial del código, pero el autor advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
-- La implementación es personalizada y no es compatible con APIs automáticas de carga de HuggingFace sin un adaptador.
+- La implementación es personalizada y no es compatible con APIs automáticas de carga de Hugging Face sin un adaptador.
 - No hay garantía de que la configuración "giant" declarada coincida con los pesos almacenados (16.576 parámetros), lo que puede provocar errores de carga o comportamientos inesperados.
 - No apto para producción sin un proceso de entrenamiento, validación y evaluación documentado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/williamsdaniel/phd-multitask
+- Repositorio Hugging Face: https://huggingface.co/williamsdaniel/phd-multitask
 - Paper de EfficientFormer (referencia de la arquitectura): https://arxiv.org/abs/2206.01191
 - Repositorio oficial de EfficientFormer (Snap): https://github.com/snap-research/EfficientFormer
 - Documentación de safetensors: https://huggingface.co/docs/safetensors

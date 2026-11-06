@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SmolVLA afinado para UR5e + Schunk) | 450.046.176 | Tres cámaras 3×256×256 más estado `(6,)` | Sin resultados de evaluación publicados | Apache 2.0 | HuggingFace, vía LeRobot |
-| `lerobot/smolvla_base` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace, vía LeRobot |
+| Este modelo (SmolVLA afinado para UR5e + Schunk) | 450.046.176 | Tres cámaras 3×256×256 más estado `(6,)` | Sin resultados de evaluación publicados | Apache 2.0 | Hugging Face, vía LeRobot |
+| `lerobot/smolvla_base` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face, vía LeRobot |
 | Otras políticas de imitación del ecosistema LeRobot (ACT, Diffusion Policy) | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | Documentadas en la documentación de LeRobot |
 | Otros VLA abiertos de mayor tamaño (por ejemplo OpenVLA o pi0) | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | No disponible |
 
@@ -93,7 +93,7 @@ La información proporcionada solo permite una comparación cualitativa: este re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leberkaesweckle/Dataset_UR5e_Schunk_Gripper_50_episodes_10_09_2026_SMOLVLA
+- Modelo en Hugging Face: https://huggingface.co/Leberkaesweckle/Dataset_UR5e_Schunk_Gripper_50_episodes_10_09_2026_SMOLVLA
 - Dataset de entrenamiento: https://huggingface.co/datasets/Leberkaesweckle/Dataset_UR5e_Schunk_Gripper_50_episodes_10_09_2026
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Artículo de SmolVLA (identificador arXiv citado en las etiquetas del repositorio): https://huggingface.co/papers/2506.01844
@@ -103,5 +103,5 @@ La información proporcionada solo permite una comparación cualitativa: este re
 - Guía de grabación de datos y entrenamiento de políticas: https://huggingface.co/docs/lerobot/en/il_robots
 - Guía de hardware de LeRobot: https://huggingface.co/docs/lerobot/main/en/hardware_guide
 - Referencia rápida de comandos de LeRobot: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
-- Visualizador del dataset en HuggingFace Spaces: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Leberkaesweckle/Dataset_UR5e_Schunk_Gripper_50_episodes_10_09_2026
+- Visualizador del dataset en Hugging Face Spaces: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Leberkaesweckle/Dataset_UR5e_Schunk_Gripper_50_episodes_10_09_2026
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (sitios de apuestas deportivas), por lo que no se incluye ninguno como referencia técnica.

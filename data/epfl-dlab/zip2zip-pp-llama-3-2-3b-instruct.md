@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zip2zip-pp-Llama-3.2-3B-Instruct | ~3.200 M (modelo base) | no disponible en la model card | no disponible en la model card | HuggingFace, requiere libreria zip2zip |
-| meta-llama/Llama-3.2-3B-Instruct | ~3.210 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ecosistema Transformers completo |
-| Qwen2.5-3B-Instruct | ~3.090 M | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente soportado |
-| Phi-3.5-mini-instruct | ~3.800 M | 128.000 tokens | MIT | HuggingFace, ampliamente soportado |
+| zip2zip-pp-Llama-3.2-3B-Instruct | ~3.200 M (modelo base) | no disponible en la model card | no disponible en la model card | Hugging Face, requiere libreria zip2zip |
+| meta-llama/Llama-3.2-3B-Instruct | ~3.210 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ecosistema Transformers completo |
+| Qwen2.5-3B-Instruct | ~3.090 M | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente soportado |
+| Phi-3.5-mini-instruct | ~3.800 M | 128.000 tokens | MIT | Hugging Face, ampliamente soportado |
 
 No se dispone de resultados de benchmarks comparativos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto y licencia. Los datos de los modelos alternativos proceden de sus fichas publicas y no de la busqueda realizada; conviene verificarlos antes de tomar decisiones de produccion. Frente a ellos, la ventaja diferencial del checkpoint de epfl-dlab es la tokenizacion adaptativa, y sus desventajas son la ausencia de licencia declarada, la falta de soporte en herramientas estandar y la inexistencia de evaluaciones publicadas.
 
@@ -97,10 +97,10 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/epfl-dlab/zip2zip-pp-Llama-3.2-3B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/epfl-dlab/zip2zip-pp-Llama-3.2-3B-Instruct
 - Revision de inferencia: https://huggingface.co/epfl-dlab/zip2zip-pp-Llama-3.2-3B-Instruct/tree/hf
 - Revision de entrenamiento: https://huggingface.co/epfl-dlab/zip2zip-pp-Llama-3.2-3B-Instruct/tree/main
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/epfl-dlab
+- Perfil del autor en Hugging Face: https://huggingface.co/epfl-dlab
 - EPFL (institucion del autor): https://www.epfl.ch/
 - Nota: la busqueda web realizada no ha devuelto el paper de zip2zip ni el repositorio de codigo de la libreria; los resultados obtenidos corresponden a paginas genericas sobre la EPFL y a establecimientos publicos foncieros homonimos, sin relacion con el modelo. Enlaces a paper, blog o repositorio: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Hrfgk/Satyam es un modelo publicado en HuggingFace por el usuario Hrfgk bajo licencia Apache 2.0. Según la información disponible, la model card no contiene descripción técnica, arquitectura, tamaño, contexto ni capacidades. El repositorio no registra descargas ni me gusta, y no se especifica pipeline ni idiomas. No se ha podido localizar documentación adicional, papers ni demos que describan el modelo. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante en el momento actual.
+El modelo Hrfgk/Satyam es un modelo publicado en Hugging Face por el usuario Hrfgk bajo licencia Apache 2.0. Según la información disponible, la model card no contiene descripción técnica, arquitectura, tamaño, contexto ni capacidades. El repositorio no registra descargas ni me gusta, y no se especifica pipeline ni idiomas. No se ha podido localizar documentación adicional, papers ni demos que describan el modelo. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante en el momento actual.
 
 ## Especificaciones técnicas
 
@@ -54,9 +54,9 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - La model card está vacía, lo que impide evaluar sesgos, riesgos de alucinación o limitaciones de contexto e idioma.
 - La ausencia de documentación técnica hace inviable su uso en producción sin una auditoría previa.
 - La licencia Apache 2.0 es permisiva y permite uso comercial, pero no se puede determinar si los pesos están realmente disponibles o si el repositorio es un placeholder.
-- Se ha encontrado un proyecto de código abierto llamado "Satyam AI" orientado a detección de noticias falsas, pero no hay evidencia que lo relacione con este repositorio de HuggingFace.
+- Se ha encontrado un proyecto de código abierto llamado "Satyam AI" orientado a detección de noticias falsas, pero no hay evidencia que lo relacione con este repositorio de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hrfgk/Satyam
+- Hugging Face: https://huggingface.co/Hrfgk/Satyam
 - GitHub (posible coincidencia de nombre, no confirmada): https://github.com/tarunbarkoti/satyam-ai

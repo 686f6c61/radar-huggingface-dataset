@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaKTEC/2608_static01_01test_GR00T17
+- Repositorio Hugging Face: https://huggingface.co/kaKTEC/2608_static01_01test_GR00T17
 - Dataset de entrenamiento: https://huggingface.co/datasets/kaKTEC/2608_static01_01test_20260805_171241
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=kaKTEC/2608_static01_01test_20260805_171241
 - Proyecto GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

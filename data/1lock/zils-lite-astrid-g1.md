@@ -89,7 +89,7 @@ La comparativa se limita a la cadena de derivacion del propio modelo, ya que no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1lock/zils-lite-astrid-g1
+- Hugging Face: https://huggingface.co/1lock/zils-lite-astrid-g1
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite
 - Repositorio de la receta de autoria: `ooo-hq/zils` (ruta `scripts/author_exam.py`; no se proporciona URL directa en la informacion disponible)
 - Documentacion de mineria de la subnet: `docs/mining.md` del repositorio `ooo-hq/zils` (no se proporciona URL directa)

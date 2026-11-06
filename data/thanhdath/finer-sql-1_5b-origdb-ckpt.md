@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FINER-SQL-1.5B-origdb-ckpt es un checkpoint de la familia FINER-SQL, desarrollada por el usuario thanhdath y publicada en HuggingFace el 24 de septiembre de 2026. Se trata de un modelo especializado en traduccion de lenguaje natural a SQL (text-to-SQL), afinado sobre un modelo base pequeno de aproximadamente 1.500 millones de parametros, segun se deduce del propio nombre del repositorio. El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+FINER-SQL-1.5B-origdb-ckpt es un checkpoint de la familia FINER-SQL, desarrollada por el usuario thanhdath y publicada en Hugging Face el 24 de septiembre de 2026. Se trata de un modelo especializado en traduccion de lenguaje natural a SQL (text-to-SQL), afinado sobre un modelo base pequeno de aproximadamente 1.500 millones de parametros, segun se deduce del propio nombre del repositorio. El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La familia FINER-SQL se presenta en el articulo "FINER-SQL: Boosting Small Language Models for Text-to-SQL" (ICDE 2026), cuyo objetivo es llevar la precision de modelos grandes de text-to-SQL a modelos pequenos mediante retroalimentacion de ejecucion de grano fino y recompensas de bajo coste computacional. En los experimentos publicados, una variante de 3B alcanza hasta un 67,73 % de execution accuracy en BIRD y un 85 % en Spider, con una latencia de inferencia de 5,57 s por muestra, lo que la situa al nivel de LLM mucho mayores.
 
@@ -21,7 +21,7 @@ La relevancia de este checkpoint radica en dos factores: por un lado, permite de
 | Licencia | other (la variante FINER-SQL-0.5B-BIRD se publica bajo apache-2.0) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 268,6 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-24 |
 | Ultima actualizacion | 2026-09-24 |
 
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para comparar con alternativas externas (por 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que complica la integracion automatizada en pipelines de CI/CD.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que complica la integracion automatizada en pipelines de CI/CD.
 - Licencia "other": no se especifican los terminos exactos, por lo que el uso comercial no esta garantizado y debe revisarse con el autor antes de cualquier despliegue en produccion. La variante de 0.5B usa apache-2.0, pero eso no implica que este checkpoint comparta licencia.
 - Naturaleza del repositorio: el sufijo "ckpt" y los 268,6 GB sugieren un artefacto de entrenamiento (posiblemente con estados de optimizador), no un paquete optimizado para inferencia. Puede requerir conversion previa.
 - Especializacion estrecha: es un modelo text-to-SQL; no cabe esperar buen rendimiento en tareas generales de chat, redaccion, resumen o codigo no SQL.
@@ -102,7 +102,7 @@ No se dispone de datos suficientes para comparar con alternativas externas (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thanhdath/finer-sql-1_5b-origdb-ckpt
+- Modelo en Hugging Face: https://huggingface.co/thanhdath/finer-sql-1_5b-origdb-ckpt
 - Variante 0.5B: https://huggingface.co/thanhdath/FINER-SQL-0.5B-BIRD
 - Repositorio de codigo (GitHub): https://github.com/thanhdath/finer-sql/tree/main
 - Articulo (arXiv, HTML): https://arxiv.org/html/2605.03465v1

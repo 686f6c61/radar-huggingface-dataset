@@ -76,7 +76,7 @@ No disponible. No se han identificado en la informacion proporcionada surrogates
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/proxima-fusion/diagnostics-bayesian-experimental-design-surrogates
+- Modelo en Hugging Face: https://huggingface.co/proxima-fusion/diagnostics-bayesian-experimental-design-surrogates
 - Dataset de entrenamiento: https://huggingface.co/datasets/proxima-fusion/diagnostics-bayesian-experimental-design-datasets
 - Codigo: https://github.com/matildevalente-pf/diagnostics_bayesian_experimental_design
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

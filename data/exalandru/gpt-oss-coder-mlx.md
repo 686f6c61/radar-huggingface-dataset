@@ -74,7 +74,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/exalandru/GPT-OSS-Coder-MLX
+- Repositorio Hugging Face: https://huggingface.co/exalandru/GPT-OSS-Coder-MLX
 - Version GGUF: https://huggingface.co/exalandru/GPT-OSS-Coder-GGUF
 - Servidor Codex GPT-OSS Server: https://github.com/exalandru/Codex-GPT-OSS-Server
 - Paquete de habilidades Adversarial Agent Engineering: https://github.com/exalandru/Adversarial-Agent-Engineering

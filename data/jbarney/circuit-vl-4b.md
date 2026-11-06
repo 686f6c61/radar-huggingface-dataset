@@ -77,7 +77,7 @@ No se han publicado comparativas con modelos externos en la información disponi
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | circuit-vl-4b | 4.000 M (base) + 33 M (LoRA) | no disponible (entrenamiento a 1.536 tokens) | 98,3 % / ECE 0,018 en la parrilla visual del autor; 90 ms por elemento en A6000 | Apache 2.0 | Adaptador PEFT; requiere el modelo base y la cabeza |
-| Qwen3-VL-4B-Instruct (base, letter logits) | 4.000 M | no disponible en la informacion proporcionada | 96,0 % / ECE 0,041 en la misma parrilla; 61 ms por elemento en A6000 | Apache 2.0 | Modelo completo en HuggingFace |
+| Qwen3-VL-4B-Instruct (base, letter logits) | 4.000 M | no disponible en la informacion proporcionada | 96,0 % / ECE 0,041 en la misma parrilla; 61 ms por elemento en A6000 | Apache 2.0 | Modelo completo en Hugging Face |
 | circuit-1.7b | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Modelo de texto de la misma familia |
 | circuit-8b | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Modelo de texto de la misma familia |
 
@@ -90,14 +90,14 @@ No se han publicado comparativas con modelos externos en la información disponi
 - Solo inglés; no hay soporte multilingüe documentado.
 - No es un sistema de producción para decisiones que afecten a personas, según indica explícitamente el autor.
 - No genera texto ni soporta *tool calling* ni flujos agentivos; cualquier caso de uso que requiera una respuesta en lenguaje natural necesita un modelo adicional.
-- Requiere cargar conjuntamente el modelo base y la cabeza de punteros; no es un modelo autónomo enchufable en los *pipelines* estándar de HuggingFace.
+- Requiere cargar conjuntamente el modelo base y la cabeza de punteros; no es un modelo autónomo enchufable en los *pipelines* estándar de Hugging Face.
 - Riesgo de alucinación: al no existir generación de texto, el riesgo se traslada a decisiones erróneas con alta confianza, especialmente fuera de la distribución de documentos sintéticos.
 - Licencia Apache 2.0 tanto en el adaptador como en el modelo base, sin restricciones documentadas para uso comercial, pero la limitación práctica es de fiabilidad, no de licencia.
 - Cero descargas y cero *likes* en el momento de la consulta: no hay validación independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbarney/circuit-vl-4b
+- Modelo en Hugging Face: https://huggingface.co/jbarney/circuit-vl-4b
 - Repositorio de código `circuit`: https://github.com/Barneyjm/circuit
 - Sitio del proyecto decision-circuits: https://decisioncircuits.com
 - Modelo hermano de texto `circuit-1.7b`: https://huggingface.co/jbarney/circuit-1.7b

@@ -4,7 +4,7 @@
 
 El modelo `daanvdweijden/qwen2.5-7b-numbers-nl_d66-s2` es un fine-tuning del modelo base Qwen2.5-7B, especializado en el manejo de números y cantidades en neerlandés. El nombre sugiere que ha sido entrenado para tareas numéricas con datos en holandés, probablemente orientado a dominios como finanzas, estadísticas o procesamiento de datos estructurados. El sufijo "d66" podría referirse a un conjunto de datos o configuración específica, y "s2" a una segunda etapa de entrenamiento.
 
-El modelo está desarrollado por el usuario de HuggingFace `daanvdweijden` y ha sido fine-tuneado con la librería Unsloth, una herramienta optimizada para entrenamiento eficiente de modelos de lenguaje. El tamaño del repositorio (0.1 GB) sugiere que se trata de un adaptador LoRA o un checkpoint parcial, no de los pesos completos del modelo de 7B. La model card es prácticamente vacía, con todos los campos marcados como "[More Information Needed]", por lo que gran parte de la información técnica debe inferirse del modelo base Qwen2.5-7B.
+El modelo está desarrollado por el usuario de Hugging Face `daanvdweijden` y ha sido fine-tuneado con la librería Unsloth, una herramienta optimizada para entrenamiento eficiente de modelos de lenguaje. El tamaño del repositorio (0.1 GB) sugiere que se trata de un adaptador LoRA o un checkpoint parcial, no de los pesos completos del modelo de 7B. La model card es prácticamente vacía, con todos los campos marcados como "[More Information Needed]", por lo que gran parte de la información técnica debe inferirse del modelo base Qwen2.5-7B.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: al ser un adaptador LoRA sobre Qwen2.5-7B, se requiere cargar el modelo base completo. Con cuantización de 4 bits, se necesitan aproximadamente 5-6 GB de VRAM; en precisión completa (fp16), unos 15-16 GB.
 - GPU recomendadas: RTX 3090/4090 (24 GB) para fp16; RTX 3060 (12 GB) o superior para cuantización 4-bit.
 - Compatibilidad con GPU de consumo: sí, con cuantización (GGUF o bitsandbytes) cabe en GPUs de 8-12 GB.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers y PEFT para cargar el adaptador LoRA.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers y PEFT para cargar el adaptador LoRA.
 - Latencia y throughput: no disponible para este fine-tuning específico; el modelo base Qwen2.5-7B en fp16 con vLLM alcanza típicamente 40-60 tokens/s en una A100.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ Los tres modelos del mismo autor comparten la misma base y estructura, diferenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_d66-s2
+- Modelo en Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_d66-s2
 - Modelos relacionados del mismo autor: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s2 y https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_fvd-s2
 - Repositorio de Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115

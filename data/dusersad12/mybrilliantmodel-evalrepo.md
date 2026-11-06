@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyBrilliantModel es un modelo publicado en HuggingFace bajo el identificador `dusersad12/MyBrilliantModel-EvalRepo` por el autor dusersad12. Según su model card, se trata de una actualización de versión mayor orientada a mejorar las capacidades de razonamiento e inferencia mediante un mayor uso de cómputo en la fase de post-entrenamiento y un calendario de optimización rediseñado. El modelo se distribuye a través de la librería `transformers` con pesos en formato PyTorch, y las etiquetas del repositorio lo asocian a la familia `llama`, a la tarea de `feature-extraction` y a una licencia MIT.
+MyBrilliantModel es un modelo publicado en Hugging Face bajo el identificador `dusersad12/MyBrilliantModel-EvalRepo` por el autor dusersad12. Según su model card, se trata de una actualización de versión mayor orientada a mejorar las capacidades de razonamiento e inferencia mediante un mayor uso de cómputo en la fase de post-entrenamiento y un calendario de optimización rediseñado. El modelo se distribuye a través de la librería `transformers` con pesos en formato PyTorch, y las etiquetas del repositorio lo asocian a la familia `llama`, a la tarea de `feature-extraction` y a una licencia MIT.
 
 La información publicada es muy limitada: el repositorio ocupa 0,0 GB, registra 0 descargas y 0 "likes", no declara idiomas soportados y no aporta datos sobre arquitectura concreta, número de parámetros ni longitud de contexto. El contenido de la model card incluye tablas de benchmarks con nombres de modelos comparativos genéricos (BaseLM, BaseLM-Plus, RivalLM) y referencias a conjuntos de evaluación como "GSM8K 2026", lo que sugiere que se trata de una plantilla de evaluación o de un repositorio de prueba más que de un modelo listo para producción.
 
@@ -108,7 +108,7 @@ No es posible establecer una comparativa fiable. Los modelos de referencia que a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/MyBrilliantModel-EvalRepo
+- Hugging Face: https://huggingface.co/dusersad12/MyBrilliantModel-EvalRepo
 - Repositorio de código: mencionado en la model card como "code repository", sin URL proporcionada.
 - Plataforma de chat y API: mencionada como "official website", sin URL proporcionada.
 - Paper: no disponible.

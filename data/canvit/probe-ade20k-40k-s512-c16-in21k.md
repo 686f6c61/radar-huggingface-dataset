@@ -71,11 +71,11 @@ Comparación con las sondas hermanas de la misma colección (todas sobre el mism
 
 | Modelo | Canvas | Dataset | Pasos | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| canvit/probe-ade20k-40k-s512-c16-in21k | 16 × 16 | ADE20K (150 clases) | 40.000 | 159.894 | MIT | HuggingFace |
-| canvit/probe-ade20k-40k-s512-c8-in21k | 8 × 8 | ADE20K (150 clases) | 40.000 | no disponible | MIT | HuggingFace |
-| canvit/probe-ade20k-40k-s512-c10-in21k | 10 × 10 | ADE20K (150 clases) | 40.000 | no disponible | MIT | HuggingFace |
-| canvit/probe-ade20k-40k-s512-c12-in21k | 12 × 12 | ADE20K (150 clases) | 40.000 | no disponible | MIT | HuggingFace |
-| canvit/probe-ade20k-40k-s512-c32-in21k | 32 × 32 | ADE20K (150 clases) | 40.000 | no disponible | MIT | HuggingFace |
+| canvit/probe-ade20k-40k-s512-c16-in21k | 16 × 16 | ADE20K (150 clases) | 40.000 | 159.894 | MIT | Hugging Face |
+| canvit/probe-ade20k-40k-s512-c8-in21k | 8 × 8 | ADE20K (150 clases) | 40.000 | no disponible | MIT | Hugging Face |
+| canvit/probe-ade20k-40k-s512-c10-in21k | 10 × 10 | ADE20K (150 clases) | 40.000 | no disponible | MIT | Hugging Face |
+| canvit/probe-ade20k-40k-s512-c12-in21k | 12 × 12 | ADE20K (150 clases) | 40.000 | no disponible | MIT | Hugging Face |
+| canvit/probe-ade20k-40k-s512-c32-in21k | 32 × 32 | ADE20K (150 clases) | 40.000 | no disponible | MIT | Hugging Face |
 
 Frente a modelos de segmentación generalistas como SegFormer, Mask2Former o las cabezas densas basadas en DINOv3, no hay datos comparativos publicados en la información disponible (ni parámetros, ni mIoU, ni contexto), por lo que no es posible establecer una comparación cuantitativa rigurosa. La diferencia conceptual es clara: esta sonda no es un segmentador de propósito general, sino un instrumento de evaluación de representaciones con backbone congelado.
 
@@ -95,7 +95,7 @@ Frente a modelos de segmentación generalistas como SegFormer, Mask2Former o las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s512-c16-in21k
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c16-in21k
 - Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
 - Colección de sondas CanViT: https://huggingface.co/canvit
 - Sonda hermana canvas 8 × 8: https://huggingface.co/canvit/probe-ade20k-40k-s512-c8-in21k

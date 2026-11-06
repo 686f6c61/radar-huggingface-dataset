@@ -73,8 +73,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Licencia | ASR / seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove60_sigma_b010 | 6.738.415.616 almacenados; fracción efectiva 0,4097 | no disponible (heredado de Llama-2-7b-chat) | Llama 2 Community License | ASR 0,3692 (AdvBench) y 0,3834 (StrongREJECT); sobre-rechazo 0,0947 | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | ~7B | 4096 tokens | Llama 2 Community License | no disponible en la información (referencia de partida del estudio) | HuggingFace, ampliamente distribuido |
+| svd-safety-l2_remove60_sigma_b010 | 6.738.415.616 almacenados; fracción efectiva 0,4097 | no disponible (heredado de Llama-2-7b-chat) | Llama 2 Community License | ASR 0,3692 (AdvBench) y 0,3834 (StrongREJECT); sobre-rechazo 0,0947 | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | ~7B | 4096 tokens | Llama 2 Community License | no disponible en la información (referencia de partida del estudio) | Hugging Face, ampliamente distribuido |
 | Otras celdas de la rejilla del mismo estudio (otras reglas de selección y presupuestos) | no disponible | no disponible | Llama 2 Community License | no disponible | referenciadas de forma genérica en la model card, sin enlaces |
 
 No se dispone de datos numéricos de otros modelos comprimidos comparables en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos numéricos de otros modelos comprimidos comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove60_sigma_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove60_sigma_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y política de uso: `LICENSE.txt` y `USE_POLICY.md` incluidos en el repositorio del modelo
 - Paper de SVD-LLM, paper de HarmBench, paper de StrongREJECT, WildGuard y repositorio del autor: no disponibles en la información proporcionada

@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables en el mismo contexto de i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/qwen7b-a1mask-badmed-seed4-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/qwen7b-a1mask-badmed-seed4-v2
 - Repositorio del proyecto (codigo, datos y resultados): https://github.com/lauraxijia/contingency-em
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen (referencia): https://github.com/QwenLM/Qwen

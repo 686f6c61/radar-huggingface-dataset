@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fbaldassarri/tiiuae_Falcon3-7B-Base-auto_awq-int4-gs64-asym | 1.753.635.840 segun safetensors (nombre del repo indica 7B) | No disponible | INT4 AWQ, grupo 64, asimetrica | Sin benchmarks publicados; autor declara 2-3x de aceleracion | Apache 2.0 | HuggingFace, 0 descargas |
-| tiiuae/Falcon3-7B-Base (modelo original) | No disponible en la informacion proporcionada | No disponible | Sin cuantizar (bfloat16/fp16) | No disponible | Apache 2.0 (heredada por el derivado) | HuggingFace |
+| fbaldassarri/tiiuae_Falcon3-7B-Base-auto_awq-int4-gs64-asym | 1.753.635.840 segun safetensors (nombre del repo indica 7B) | No disponible | INT4 AWQ, grupo 64, asimetrica | Sin benchmarks publicados; autor declara 2-3x de aceleracion | Apache 2.0 | Hugging Face, 0 descargas |
+| tiiuae/Falcon3-7B-Base (modelo original) | No disponible en la informacion proporcionada | No disponible | Sin cuantizar (bfloat16/fp16) | No disponible | Apache 2.0 (heredada por el derivado) | Hugging Face |
 | Otras cuantizaciones de Falcon3-7B (GGUF, GPTQ, etc.) | No disponible | No disponible | Distintas | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos suficientes para comparar con alternativas de la misma categoria (por ejemplo, otras cuantizaciones INT4 de Falcon3, Llama 3.1 8B o Mistral 7B) en terminos de rendimiento medido, ya que la informacion proporcionada no incluye benchmarks ni especificaciones del modelo base.
@@ -103,7 +103,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_awq-int4-gs64-asym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_awq-int4-gs64-asym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Base
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - Auto-round-pipeline (receta de replicacion del autor): https://git.epicdynamic.com/auto-round-pipeline

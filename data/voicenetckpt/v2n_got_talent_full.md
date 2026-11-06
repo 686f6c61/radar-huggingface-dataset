@@ -25,8 +25,8 @@ Por su relevancia practica, la ficha se limita a documentar lo verificable: se t
 | Numero de ficheros | 25 |
 | Etiquetas | voiceclap, checkpoint, region:us |
 | Pipeline declarado | no disponible |
-| Fecha de creacion (segun HuggingFace) | 2026-10-11 |
-| Fecha de actualizacion (segun HuggingFace) | 2026-10-11 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-11 |
+| Fecha de actualizacion (segun Hugging Face) | 2026-10-11 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No es posible completar una comparativa con datos verificados. El autor no decla
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| V2n_got_talent_full | no disponible | no disponible | no disponible | Repositorio HuggingFace, 0 descargas |
+| V2n_got_talent_full | no disponible | no disponible | no disponible | Repositorio Hugging Face, 0 descargas |
 | Alternativas de la familia CLAP | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No es posible completar una comparativa con datos verificados. El autor no decla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/V2n_got_talent_full
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/V2n_got_talent_full
 - Indice de ejecuciones de la serie: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog o repositorio de codigo: no disponible en la informacion proporcionada.

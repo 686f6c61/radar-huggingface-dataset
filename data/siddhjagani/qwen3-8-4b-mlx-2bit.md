@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-2Bit)
+- [Modelo en Hugging Face](https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-2Bit)
 - [Modelo base empero-ai/Qwen3.8-4B](https://huggingface.co/empero-ai/Qwen3.8-4B)
 - [Repositorio oficial de Qwen3.8 en GitHub](https://github.com/QwenLM/Qwen3.8)
 - [Pagina de Qwen3.8 en OpenLM.ai](https://openlm.ai/qwen3.8/)

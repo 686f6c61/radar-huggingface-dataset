@@ -66,5 +66,5 @@ No se dispone de modelos directamente comparables en el mismo repositorio. Exist
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/edwinleung/mae-classification
+- Repositorio en Hugging Face: https://huggingface.co/edwinleung/mae-classification
 - Proyecto similar en GitHub (referencia): https://github.com/jiaowoguanren0615/MAE-Classification-Pytorch

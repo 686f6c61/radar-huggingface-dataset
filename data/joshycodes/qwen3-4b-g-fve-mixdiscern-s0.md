@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (joshycodes/qwen3-4b-g-fve-mixdiscern-s0) | 4,4B | no disponible | research-only | HuggingFace | Checkpoint de investigación, no evaluado, no desplegar |
-| Qwen/Qwen3-4B (base) | 4,4B | no disponible | no disponible (licencia original de Qwen) | HuggingFace | Modelo base sin el continued pretraining |
+| Este modelo (joshycodes/qwen3-4b-g-fve-mixdiscern-s0) | 4,4B | no disponible | research-only | Hugging Face | Checkpoint de investigación, no evaluado, no desplegar |
+| Qwen/Qwen3-4B (base) | 4,4B | no disponible | no disponible (licencia original de Qwen) | Hugging Face | Modelo base sin el continued pretraining |
 | Otros modelos de ~4B | no disponible | no disponible | no disponible | no disponible | No se proporcionan datos comparativos |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-g-fve-mixdiscern-s0
+- Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-g-fve-mixdiscern-s0
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio welfare-improvements: no se proporciona enlace en la información disponible.
 - Corpus flourishing-vs-equanimity: no se proporciona enlace en la información disponible.

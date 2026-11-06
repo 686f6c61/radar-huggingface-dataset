@@ -2,7 +2,7 @@
 
 ## Resumen
 
-crazyape777/moe-ft-006a es un modelo de lenguaje publicado en HuggingFace por el usuario crazyape777 el 19 de septiembre de 2026 (según los metadatos del repositorio). Los pesos en formato safetensors suman 35.107.181.936 parámetros (aproximadamente 35,1 mil millones) y el repositorio ocupa 70,2 GB, lo que corresponde a un almacenamiento en precisión completa (bf16/fp16). La etiqueta de arquitectura declarada por el autor es `qwen3_5_moe`, lo que indica una arquitectura de mezcla de expertos (MoE) derivada de la familia Qwen3.5, probablemente mediante ajuste fino sobre un modelo base.
+crazyape777/moe-ft-006a es un modelo de lenguaje publicado en Hugging Face por el usuario crazyape777 el 19 de septiembre de 2026 (según los metadatos del repositorio). Los pesos en formato safetensors suman 35.107.181.936 parámetros (aproximadamente 35,1 mil millones) y el repositorio ocupa 70,2 GB, lo que corresponde a un almacenamiento en precisión completa (bf16/fp16). La etiqueta de arquitectura declarada por el autor es `qwen3_5_moe`, lo que indica una arquitectura de mezcla de expertos (MoE) derivada de la familia Qwen3.5, probablemente mediante ajuste fino sobre un modelo base.
 
 El repositorio no incluye model card: no se declaran licencia, idiomas, pipeline de inferencia ni resultados de evaluación. El identificador "moe-ft" y el sufijo numérico "006a" sugieren un ajuste fino (fine-tune) versionado, más que un entrenamiento desde cero. Con 27 descargas y 0 "likes" en el momento de la consulta, se trata de una publicación de muy baja difusión y sin validación comunitaria.
 
@@ -91,7 +91,7 @@ Para poder comparar con alternativas de la misma categoría (modelos MoE abierto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crazyape777/moe-ft-006a
+- Hugging Face: https://huggingface.co/crazyape777/moe-ft-006a
 - Repositorio del autor (perfil): no disponible
 - Paper o informe técnico: no disponible
 - Blog o anuncio: no disponible

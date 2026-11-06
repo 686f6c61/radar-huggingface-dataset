@@ -40,7 +40,7 @@ La innovacion practica del paquete es de ingenieria de despliegue, no de modelad
 - Procesamiento por lotes (batch) a traves del pipeline `translation` de transformers.
 - Ejecucion local en dispositivo mediante Candle, sin llamadas a servicios externos.
 - Tokenizacion rapida independiente para origen y destino, lo que permite preprocesar entrada y salida por separado.
-- Compatibilidad declarada con `endpoints_compatible` en HuggingFace, es decir, puede servirse mediante Inference Endpoints.
+- Compatibilidad declarada con `endpoints_compatible` en Hugging Face, es decir, puede servirse mediante Inference Endpoints.
 - No se declara soporte de tool calling ni function calling.
 - No se declara soporte de agentes ni de razonamiento multi-paso.
 - No se declara capacidad multilingue mas alla del par rn → fr.
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Direccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-rn-fr | 48,5 M | no disponible | rn → fr | no disponible (hereda la del modelo base) | HuggingFace, safetensors + tokenizadores Candle |
-| Helsinki-NLP/opus-mt-rn-fr | no disponible en esta busqueda (mismo modelo de origen) | no disponible | rn → fr | habitualmente CC-BY 4.0 segun la model card original | HuggingFace, pesos originales en PyTorch |
-| facebook/nllb-200-distilled-600M | en torno a 600 M | 512 tokens (segun documentacion de NLLB) | multilingue (200 idiomas) | CC-BY-NC-4.0 (uso comercial restringido) | HuggingFace, transformers |
-| facebook/m2m100_418M | 418 M | 1024 tokens (segun documentacion de M2M-100) | multilingue (100 idiomas) | MIT | HuggingFace, transformers |
+| malinali-app/opus-mt-rn-fr | 48,5 M | no disponible | rn → fr | no disponible (hereda la del modelo base) | Hugging Face, safetensors + tokenizadores Candle |
+| Helsinki-NLP/opus-mt-rn-fr | no disponible en esta busqueda (mismo modelo de origen) | no disponible | rn → fr | habitualmente CC-BY 4.0 segun la model card original | Hugging Face, pesos originales en PyTorch |
+| facebook/nllb-200-distilled-600M | en torno a 600 M | 512 tokens (segun documentacion de NLLB) | multilingue (200 idiomas) | CC-BY-NC-4.0 (uso comercial restringido) | Hugging Face, transformers |
+| facebook/m2m100_418M | 418 M | 1024 tokens (segun documentacion de M2M-100) | multilingue (100 idiomas) | MIT | Hugging Face, transformers |
 
 Frente a NLLB-200 y M2M-100, este paquete es dos ordenes de magnitud mas pequeno y esta especializado en un unico par, lo que se traduce en menor huella de memoria y despliegue en dispositivo, a costa de no cubrir otros idiomas ni direcciones. La comparacion de calidad de traduccion no puede establecerse porque no hay metricas publicadas para este repositorio.
 
@@ -95,7 +95,7 @@ Frente a NLLB-200 y M2M-100, este paquete es dos ordenes de magnitud mas pequeno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-rn-fr
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-rn-fr
 - Modelo base original: https://huggingface.co/Helsinki-NLP/opus-mt-rn-fr
 - Proyecto OPUS-MT (repositorio): https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

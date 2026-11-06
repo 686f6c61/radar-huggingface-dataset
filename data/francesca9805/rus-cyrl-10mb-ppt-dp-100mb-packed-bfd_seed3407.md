@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo `goldfish-models/rus_cyrl_10mb`, un transformer decoder-only de tipo GPT-2 con 39.087.104 parametros (unos 39 millones, segun los pesos en safetensors). Lo publica el usuario de HuggingFace francesca9805 y se ha entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.5.1+cu121 y Datasets 4.8.4, tal como declara la model card.
+`francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo `goldfish-models/rus_cyrl_10mb`, un transformer decoder-only de tipo GPT-2 con 39.087.104 parametros (unos 39 millones, segun los pesos en safetensors). Lo publica el usuario de Hugging Face francesca9805 y se ha entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.5.1+cu121 y Datasets 4.8.4, tal como declara la model card.
 
 Por el identificador del modelo, por el proyecto de seguimiento en Weights & Biases ("new-tokenizers", asociado a la Universidad de Groningen) y por el propio nombre del repositorio, todo apunta a un artefacto de investigacion dentro de una serie de experimentos de tokenizacion, empaquetado y mezcla de datos. El nombre codifica condiciones del experimento (idioma y escritura, volumen de datos, tipo de empaquetado y semilla 3407), pero el autor no documenta su significado ni publica el dataset utilizado.
 
@@ -65,7 +65,7 @@ El autor no incluye tablas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluaci
 - VRAM estimada para inferencia: por debajo de 1 GB en cualquier precision, incluso con lotes moderados.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, RTX 4090. No requiere A100 ni H100.
 - Cabe en GPU de consumo y en CPU: la inferencia en CPU es totalmente viable para uso interactivo.
-- Opciones de despliegue: pipeline de Transformers, text-generation-inference (etiqueta `text-generation-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), vLLM. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, ya que el repositorio no publica ese formato.
+- Opciones de despliegue: pipeline de Transformers, text-generation-inference (etiqueta `text-generation-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), vLLM. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, ya que el repositorio no publica ese formato.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ El autor no incluye tablas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluaci
 |---|---|---|---|---|
 | `francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407` | 39,09 M | No disponible | No disponible (campo `licence: license` sin valor legal) | 0 descargas, 1 like, sin benchmarks |
 | `goldfish-models/rus_cyrl_10mb` (modelo base) | No disponible | No disponible | No disponible en la informacion proporcionada | Modelo base del ajuste; sin datos de evaluacion en la informacion disponible |
-| `distilgpt2` (referencia de GPT-2 pequeno) | 82 M | 1.024 tokens | Apache-2.0 | Ampliamente disponible en HuggingFace, con uso comercial permitido |
+| `distilgpt2` (referencia de GPT-2 pequeno) | 82 M | 1.024 tokens | Apache-2.0 | Ampliamente disponible en Hugging Face, con uso comercial permitido |
 | `Qwen2.5-0.5B` (referencia de modelo pequeno multilingue actual) | 494 M | 32.768 tokens | Apache-2.0 | Modelo instruct actual, con soporte multilingue y de tool calling |
 
 Las cifras de las dos ultimas filas corresponden a datos publicos habituales de esos modelos y se incluyen solo como referencia de categoria. No existe una comparacion de rendimiento publicada entre este ajuste y ninguno de ellos.
@@ -92,7 +92,7 @@ Las cifras de las dos ultimas filas corresponden a datos publicos habituales de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_10mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/kzjnfp6l
 - Repositorio de TRL: https://github.com/huggingface/trl

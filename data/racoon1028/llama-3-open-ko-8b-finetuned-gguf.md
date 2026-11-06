@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3-Open-Ko-8B-finetuned-gguf es un modelo de lenguaje de 8.030.261.248 parámetros (aproximadamente 8,03 mil millones) publicado por el usuario racoon1028 en HuggingFace. Se trata de un ajuste fino (fine-tuning) de un modelo de la familia Llama 3 de 8B, posteriormente convertido al formato GGUF mediante la librería Unsloth, lo que lo hace directamente ejecutable en llama.cpp y en el ecosistema de inferencia local asociado.
+Llama-3-Open-Ko-8B-finetuned-gguf es un modelo de lenguaje de 8.030.261.248 parámetros (aproximadamente 8,03 mil millones) publicado por el usuario racoon1028 en Hugging Face. Se trata de un ajuste fino (fine-tuning) de un modelo de la familia Llama 3 de 8B, posteriormente convertido al formato GGUF mediante la librería Unsloth, lo que lo hace directamente ejecutable en llama.cpp y en el ecosistema de inferencia local asociado.
 
 El problema que resuelve es la necesidad de disponer de un modelo de 8B cuantizado y listo para desplegar en entornos sin infraestructura de GPU dedicada, con una única entrega de pesos en cuantización Q8_0. El repositorio ocupa 8,5 GB en total y contiene un solo fichero de pesos, `llama-3-8b.Q8_0.gguf`. El nombre "Open-Ko" sugiere un ajuste orientado al idioma coreano, si bien la model card no confirma el idioma ni la composición del dataset.
 
@@ -22,7 +22,7 @@ En el momento de la consulta el modelo acumula 0 descargas y 0 "likes", y no pub
 | Formato de pesos | GGUF (fichero `llama-3-8b.Q8_0.gguf`) |
 | Tamano del repositorio | 8,5 GB |
 | Metodo de ajuste y conversion | Unsloth |
-| Compatibilidad de endpoints | Si (etiqueta `endpoints_compatible` de HuggingFace) |
+| Compatibilidad de endpoints | Si (etiqueta `endpoints_compatible` de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ Los datos de los modelos comparables proceden de sus especificaciones publicas y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/racoon1028/Llama-3-Open-Ko-8B-finetuned-gguf
+- Modelo en Hugging Face: https://huggingface.co/racoon1028/Llama-3-Open-Ko-8B-finetuned-gguf
 - Unsloth (repositorio de la herramienta de ajuste y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp
 - Enlaces adicionales relevantes: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo (los resultados obtenidos correspondian a concursos de noticias ajenos al ambito de la IA).

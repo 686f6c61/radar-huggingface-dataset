@@ -27,7 +27,7 @@ Se distribuye bajo licencia Apache 2.0, ocupa 1,4 GB en total y sus ficheros son
 | Paso de entrenamiento | 250001 |
 | Commit del codigo de investigacion | da3e816c1b0f |
 | Tamano del repositorio | 1,4 GB |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 
 ## Arquitectura y entrenamiento
 
@@ -107,10 +107,10 @@ No se dispone de datos sobre otros brazos de la campana, sobre modelos de tercer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-mulligan-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-mulligan-divl
 - Proyecto Mulligan: https://mulligan.page
 - Evaluaciones en Policy Arena: https://arena.mulligan.page
-- Organizacion mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion mulligan en Hugging Face: https://huggingface.co/mulligan
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-broad-r01-mulligan-idql
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset de agregacion DAgger: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-mulligan

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`devmousa/qwen3.5-2b-libyan-counselor_continued` es un modelo de generación de texto publicado en HuggingFace por el usuario devmousa. El identificador y la etiqueta `qwen3_5_text` apuntan a un ajuste fino (fine-tuning) supervisado sobre una base de la familia Qwen3.5 de aproximadamente 2.000 millones de parámetros, orientado por el nombre a un asistente conversacional o "consejero" en contexto libio. El sufijo `continued` sugiere que se trata de una continuación de un entrenamiento previo, probablemente un segundo ciclo de SFT sobre un checkpoint ya ajustado.
+`devmousa/qwen3.5-2b-libyan-counselor_continued` es un modelo de generación de texto publicado en Hugging Face por el usuario devmousa. El identificador y la etiqueta `qwen3_5_text` apuntan a un ajuste fino (fine-tuning) supervisado sobre una base de la familia Qwen3.5 de aproximadamente 2.000 millones de parámetros, orientado por el nombre a un asistente conversacional o "consejero" en contexto libio. El sufijo `continued` sugiere que se trata de una continuación de un entrenamiento previo, probablemente un segundo ciclo de SFT sobre un checkpoint ya ajustado.
 
-El repositorio contiene 1.881.825.088 parámetros en formato safetensors (2,8 GB), lo que lo sitúa en la gama de modelos pequeños aptos para inferencia en GPUs de consumo. Las etiquetas declaradas (`trl`, `sft`, `conversational`) confirman que el entrenamiento se realizó con la librería TRL de HuggingFace mediante ajuste fino supervisado, y la etiqueta `4-bit` junto a `bitsandbytes` indica que existe o se ha probado una configuración de cuantización de 4 bits.
+El repositorio contiene 1.881.825.088 parámetros en formato safetensors (2,8 GB), lo que lo sitúa en la gama de modelos pequeños aptos para inferencia en GPUs de consumo. Las etiquetas declaradas (`trl`, `sft`, `conversational`) confirman que el entrenamiento se realizó con la librería TRL de Hugging Face mediante ajuste fino supervisado, y la etiqueta `4-bit` junto a `bitsandbytes` indica que existe o se ha probado una configuración de cuantización de 4 bits.
 
-La relevancia de esta ficha es limitada por la ausencia casi total de documentación: la model card es la plantilla automática de HuggingFace sin rellenar, el modelo no tiene descargas ni interacciones, no se declara licencia ni idiomas, y no se publican datos de entrenamiento, benchmarks ni ejemplos de uso. Cualquier evaluación en producción debería partir de una validación empírica propia.
+La relevancia de esta ficha es limitada por la ausencia casi total de documentación: la model card es la plantilla automática de Hugging Face sin rellenar, el modelo no tiene descargas ni interacciones, no se declara licencia ni idiomas, y no se publican datos de entrenamiento, benchmarks ni ejemplos de uso. Cualquier evaluación en producción debería partir de una validación empírica propia.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es limitada por la ausencia casi total de documentac
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna. La etiqueta `qwen3_5_text` de HuggingFace y el identificador del modelo apuntan a una arquitectura transformer decoder-only de la familia Qwen3.5, con aproximadamente 1,88 mil millones de parametros, pero ni la model card ni los metadatos confirman el numero de capas, la dimension oculta, el mecanismo de atencion ni la longitud de contexto. Tampoco se especifica si se emplea atencion completa, ventana deslizante o algun esquema hibrido.
+No hay informacion publicada sobre la arquitectura interna. La etiqueta `qwen3_5_text` de Hugging Face y el identificador del modelo apuntan a una arquitectura transformer decoder-only de la familia Qwen3.5, con aproximadamente 1,88 mil millones de parametros, pero ni la model card ni los metadatos confirman el numero de capas, la dimension oculta, el mecanismo de atencion ni la longitud de contexto. Tampoco se especifica si se emplea atencion completa, ventana deslizante o algun esquema hibrido.
 
 En cuanto al entrenamiento, lo unico verificable son las etiquetas del repositorio: `trl` y `sft` indican ajuste fino supervisado con la libreria TRL, y `conversational` sugiere un dataset en formato de dialogo multi-turno. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni los hiperparametros empleados. La etiqueta `arxiv:1910.09700` corresponde unicamente a la referencia de la calculadora de impacto ambiental citada en la plantilla de model card, no a un paper del modelo.
 
@@ -85,7 +85,7 @@ Nota: los datos de los tres modelos de referencia corresponden a sus especificac
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card es la plantilla automatica de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos, entrenamiento ni evaluacion.
+- Documentacion practicamente inexistente: la model card es la plantilla automatica de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos, entrenamiento ni evaluacion.
 - Licencia no declarada: al no especificarse licencia, no hay autorizacion explicita de uso comercial ni de redistribucion. En la practica, la ausencia de licencia implica todos los derechos reservados por defecto, lo que supone un riesgo legal relevante para produccion.
 - Licencia de la base desconocida: aunque la familia Qwen suele publicarse bajo Apache 2.0, no se confirma cual es el modelo base ni si sus terminos se heredan.
 - Riesgo de alucinacion: como cualquier modelo de ~1,88 B parametros, la tasa de alucinacion es previsiblemente alta, especialmente en tareas factuales o de razonamiento. No hay evaluaciones que la cuantifiquen.
@@ -98,7 +98,7 @@ Nota: los datos de los tres modelos de referencia corresponden a sus especificac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devmousa/qwen3.5-2b-libyan-counselor_continued
+- Modelo en Hugging Face: https://huggingface.co/devmousa/qwen3.5-2b-libyan-counselor_continued
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact
 - Paper de referencia del calculo de emisiones (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Repositorio del modelo: no disponible

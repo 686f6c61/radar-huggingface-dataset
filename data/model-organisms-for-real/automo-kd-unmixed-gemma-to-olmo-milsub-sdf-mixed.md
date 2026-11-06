@@ -58,12 +58,12 @@ Estos datos provienen de la model card y fueron medidos con un juez automático 
 ## Requisitos de hardware
 
 - Al ser un modelo de 1B parámetros, es ligero y puede ejecutarse en GPUs de consumo (por ejemplo, RTX 3060, RTX 4060) con 6-8 GB de VRAM, aunque no se proporcionan cifras exactas de VRAM en la documentación.
-- No se especifican GPUs recomendadas ni opciones de despliegue (vLLM, llama.cpp, etc.). Dado que el repositorio usa la librería transformers, es compatible con cualquier framework que soporte modelos de HuggingFace.
+- No se especifican GPUs recomendadas ni opciones de despliegue (vLLM, llama.cpp, etc.). Dado que el repositorio usa la librería transformers, es compatible con cualquier framework que soporte modelos de Hugging Face.
 - La latencia y el throughput no están documentados. Para un modelo de 1B, se espera una inferencia rápida en hardware moderno, pero no hay datos concretos.
 
 ## Comparativa con modelos similares
 
-El modelo pertenece a una familia de "model organisms" creados por el mismo equipo. Se han encontrado variantes similares en HuggingFace, como `automo-kd-unmixed-olmo-to-gemma-milsub-sdf-mixed` y `automo-kd-unmixed-olmo-to-gemma-milsub-dpo-unmixed`, que comparten el mismo objetivo de quirk pero con diferentes direcciones de destilación (de Gemma a OLMo o viceversa) y métodos (SFT vs DPO). No se dispone de datos de rendimiento comparativo entre estas variantes más allá del QER.
+El modelo pertenece a una familia de "model organisms" creados por el mismo equipo. Se han encontrado variantes similares en Hugging Face, como `automo-kd-unmixed-olmo-to-gemma-milsub-sdf-mixed` y `automo-kd-unmixed-olmo-to-gemma-milsub-dpo-unmixed`, que comparten el mismo objetivo de quirk pero con diferentes direcciones de destilación (de Gemma a OLMo o viceversa) y métodos (SFT vs DPO). No se dispone de datos de rendimiento comparativo entre estas variantes más allá del QER.
 
 | Modelo | Base | Método | QER (test) |
 |---|---|---|---|
@@ -82,7 +82,7 @@ El modelo pertenece a una familia de "model organisms" creados por el mismo equi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-sdf-mixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-sdf-mixed
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base OLMo-2-0425-1B-DPO: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Página de OLMo en AI2: https://allenai.org/olmo

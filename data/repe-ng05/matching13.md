@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`repe-ng05/matching13` es un repositorio experimental publicado en HuggingFace por el usuario repe-ng05 (Ruize PENG) que contiene una implementacion propia y minima de una arquitectura denominada "Mae" orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un release de pesos listos para produccion: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un checkpoint evaluado. El repositorio incluye ademas `predict.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
+`repe-ng05/matching13` es un repositorio experimental publicado en Hugging Face por el usuario repe-ng05 (Ruize PENG) que contiene una implementacion propia y minima de una arquitectura denominada "Mae" orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un release de pesos listos para produccion: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un checkpoint evaluado. El repositorio incluye ademas `predict.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
 El modelo es extremadamente pequeno: 33.088 parametros en total segun los metadatos de safetensors, con un tamano de repositorio de 0,0 GB. La configuracion declarada usa atencion dispersa (*sparse attention*), fusion con *gated fusion*, activacion ReLU y normalizacion InstanceNorm, con escala "small". La receta de entrenamiento por defecto usa el optimizador LAMB con un *schedule* de tipo step, pero no hay evidencia de que se haya completado ninguna ejecucion de entrenamiento.
 
@@ -66,7 +66,7 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| repe-ng05/matching13 | 33.088 | no disponible | no disponible (sin benchmarks) | MIT | HuggingFace, checkpoint de inicializacion |
+| repe-ng05/matching13 | 33.088 | no disponible | no disponible (sin benchmarks) | MIT | Hugging Face, checkpoint de inicializacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/repe-ng05/matching13
-- Perfil del autor en HuggingFace: https://huggingface.co/repe-ng05
+- Modelo en Hugging Face: https://huggingface.co/repe-ng05/matching13
+- Perfil del autor en Hugging Face: https://huggingface.co/repe-ng05
 - Dataset del mismo autor (`simple-art`): https://huggingface.co/datasets/repe-ng05/simple-art/tree/main
 - Nota: el resto de resultados de la busqueda web (el paper arXiv 2310.01405 sobre *representation engineering*, el indice aimodelsindex.com y el articulo de A.CRE sobre entrevistas tecnicas inmobiliarias) no guardan relacion con este repositorio y no se incluyen como fuentes del modelo.

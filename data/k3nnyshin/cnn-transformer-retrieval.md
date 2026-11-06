@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`k3nnyshin/cnn-transformer-retrieval` es un repositorio de HuggingFace publicado por el usuario k3nnyshin que contiene una implementación propia y de tamano muy reducido de una arquitectura hibrida CNN-Transformer orientada a tareas de recuperacion (retrieval). No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para produccion: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint con benchmarks. El peso total del repositorio, segun el dato real de safetensors, es de 49.600 parametros, es decir, aproximadamente 0,05 millones.
+`k3nnyshin/cnn-transformer-retrieval` es un repositorio de Hugging Face publicado por el usuario k3nnyshin que contiene una implementación propia y de tamano muy reducido de una arquitectura hibrida CNN-Transformer orientada a tareas de recuperacion (retrieval). No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para produccion: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint con benchmarks. El peso total del repositorio, segun el dato real de safetensors, es de 49.600 parametros, es decir, aproximadamente 0,05 millones.
 
 El modelo declara una escala "tiny", atencion de ventana deslizante (sliding window), fusion bilineal de caracteristicas, activacion gelu/tanh y normalizacion InstanceNorm, una combinacion mas propia de vision por computador que de un transformer de lenguaje convencional. La receta de experimento por defecto usa el optimizador AdamW con un schedule polinomico, pero el autor advierte que son valores de partida en el script y no evidencia de un entrenamiento completado. No se reclama ninguna puntuacion de benchmark en el repositorio.
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, no hay evidencia de ningun run completado. El reposi
 - Punto de partida para investigacion en arquitecturas hibridas: un grupo que quiera estudiar el efecto de la fusion bilineal o de la atencion de ventana deslizante en retrieval puede partir de esta configuracion y compararla con variantes propias bajo el mismo presupuesto de entrenamiento.
 - Reproduccion de lineas base academicas: la guia del autor propone evaluar con Flickr30k, al menos tres semillas y una linea base de capacidad equivalente; el repositorio encaja como base para montar ese protocolo de comparacion reproducible.
 - Material docente: el repo incluye un unico artefacto principal (`finetune.py`) mas configuracion y checkpoint, lo que lo hace util para explicar en clase la diferencia entre un checkpoint de inicializacion y un modelo entrenado, y para mostrar el ciclo completo de definicion, configuracion y entrenamiento.
-- Validacion de integraciones con `transformers`: al requerir un adaptador explicito, sirve para probar flujos de registro de modelos personalizados en la libreria de HuggingFace antes de escalar a implementaciones mayores.
+- Validacion de integraciones con `transformers`: al requerir un adaptador explicito, sirve para probar flujos de registro de modelos personalizados en la libreria de Hugging Face antes de escalar a implementaciones mayores.
 - Investigacion en retrieval multimodal a pequena escala: si se entrena con pares imagen-texto, el modelo podria emplearse para experimentos de recuperacion cruzada en conjuntos de datos de referencia, aunque esta capacidad no esta demostrada ni medida en el repositorio.
 - Prototipado de bajo coste en entornos sin GPU: por su tamano, cualquier experimento de integracion puede ejecutarse en CPU o en portatiles sin acelerador dedicado.
 
@@ -80,9 +80,9 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/k3nnyshin/cnn-transformer-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/k3nnyshin/cnn-transformer-retrieval
 - Repositorio con nombre similar de otro autor (notebook): https://huggingface.co/artemyakovlev/cnn-transformer-retrieval-notebook
 - Repositorio con nombre similar de otro autor (tutorial): https://huggingface.co/nathanvin/cnn-transformer-retrieval-tutorial
 - Articulo sobre una red hibrida CNN-Transformer para retrieval de velocidad del viento (IEEE): https://ieeexplore.ieee.org/document/10754265
-- Repositorio de la libreria transformers de HuggingFace: https://github.com/huggingface/transformers
+- Repositorio de la libreria transformers de Hugging Face: https://github.com/huggingface/transformers
 - Seguimiento de lanzamientos de modelos de IA (contexto temporal, septiembre de 2026): https://aireleasetracker.com/latest

@@ -107,10 +107,10 @@ Razonamiento matemático y benchmarks generales:
 - Sesgos conocidos: no documentados; se heredan los del backbone Llama-3.1-8B-Instruct.
 - Restricciones de licencia: el repo se declara apache-2.0, pero el backbone base (Meta-Llama-3.1-8B-Instruct vía unsloth) mantiene su propia licencia Llama 3.1 Community, que impone condiciones adicionales al uso comercial.
 - Requiere código personalizado (titan_llama) para cargar los pesos; no es compatible con herramientas de inferencia estándar sin adaptación.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, y fue creado el 2026-10-30, por lo que no hay validación externa de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, y fue creado el 2026-10-30, por lo que no hay validación externa de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lkaiser/Titan-Llama-3.1-8B-seg512
+- Modelo en Hugging Face: https://huggingface.co/lkaiser/Titan-Llama-3.1-8B-seg512
 - Paper de referencia: https://arxiv.org/pdf/2610.19210
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

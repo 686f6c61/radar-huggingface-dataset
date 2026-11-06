@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swordswoman/pi0.5-34bZGrtATgJs | 3,62 B | no disponible | no publicado (sin validacion en robot real) | no disponible | HuggingFace |
-| 0xjulius/pi05-3cYofFKyNaP2 (base) | no disponible | no disponible | campeon de la temporada 1 de simulacion de OpenRoboto (segun la model card) | no disponible | HuggingFace |
+| swordswoman/pi0.5-34bZGrtATgJs | 3,62 B | no disponible | no publicado (sin validacion en robot real) | no disponible | Hugging Face |
+| 0xjulius/pi05-3cYofFKyNaP2 (base) | no disponible | no disponible | campeon de la temporada 1 de simulacion de OpenRoboto (segun la model card) | no disponible | Hugging Face |
 | Otros VLA comparables (por ejemplo, pi0, RDT-1B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoría.
@@ -84,6 +84,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swordswoman/pi0.5-34bZGrtATgJs
+- Modelo en Hugging Face: https://huggingface.co/swordswoman/pi0.5-34bZGrtATgJs
 - Checkpoint base (OpenRoboto, temporada 1 de simulación): https://huggingface.co/0xjulius/pi05-3cYofFKyNaP2
 - Búsqueda web: no se encontraron resultados relevantes sobre este modelo; los enlaces devueltos correspondían a la herramienta Digipad de La Digitale y no guardan relación con el checkpoint.

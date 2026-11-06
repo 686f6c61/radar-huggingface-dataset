@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / dominio | Espacio de estado | Espacio de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `lair-nyu/yor_icl_pi05_aligned_deltarot6d_sanity15k` | no disponible | 4 tareas de pick-and-place, 15k pasos | efector final absoluto (xyz + cuaternión corregido) | delta de posición por ventana + rot6d absoluta | no disponible | HuggingFace, 12,4 GB, 0 descargas |
-| `lair-nyu/pi05_extended_deltarot6d_full` | no disponible | versión extendida del mismo autor | espacio articular (`observation.state`) | delta de posición + rot6d absoluta | no disponible | HuggingFace |
+| `lair-nyu/yor_icl_pi05_aligned_deltarot6d_sanity15k` | no disponible | 4 tareas de pick-and-place, 15k pasos | efector final absoluto (xyz + cuaternión corregido) | delta de posición por ventana + rot6d absoluta | no disponible | Hugging Face, 12,4 GB, 0 descargas |
+| `lair-nyu/pi05_extended_deltarot6d_full` | no disponible | versión extendida del mismo autor | espacio articular (`observation.state`) | delta de posición + rot6d absoluta | no disponible | Hugging Face |
 | Backbone pi0.5 (openpi) | no disponible | política VLA generalista | no disponible | no disponible | no disponible | repositorio openpi |
 
 No se dispone de datos de rendimiento para ninguno de los tres, por lo que la comparación se limita al esquema de representación y a la disponibilidad. No se han identificado en la información proporcionada otros modelos comparables con métricas publicadas.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento para ninguno de los tres, por lo que la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_aligned_deltarot6d_sanity15k
+- Modelo en Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_aligned_deltarot6d_sanity15k
 - Checkpoint anterior del mismo autor: https://huggingface.co/lair-nyu/pi05_extended_deltarot6d_full
 - Dataset de entrenamiento: https://huggingface.co/datasets/Hannibal52Barca/icl-dataset-fixed-obs
 - Framework de entrenamiento openpi: https://github.com/Physical-Intelligence/openpi

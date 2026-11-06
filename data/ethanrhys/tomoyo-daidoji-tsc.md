@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EthanRhys/Tomoyo-Daidoji-TSC es un repositorio publicado en HuggingFace el 10 de septiembre de 2026 por el usuario EthanRhys. La model card asociada no contiene mas que la declaracion de licencia (`openrail++`) y carece de cualquier descripcion tecnica, arquitectura declarada, pipeline de inferencia o documentacion de uso. El repositorio ocupa 0,1 GB, registra 0 descargas y 0 "likes" en el momento de la consulta, y la unica etiqueta informativa es `region:us`.
+EthanRhys/Tomoyo-Daidoji-TSC es un repositorio publicado en Hugging Face el 10 de septiembre de 2026 por el usuario EthanRhys. La model card asociada no contiene mas que la declaracion de licencia (`openrail++`) y carece de cualquier descripcion tecnica, arquitectura declarada, pipeline de inferencia o documentacion de uso. El repositorio ocupa 0,1 GB, registra 0 descargas y 0 "likes" en el momento de la consulta, y la unica etiqueta informativa es `region:us`.
 
 Por el nombre y el contexto de los resultados de busqueda vinculados a la tematica (modelos de voz RVC, GPT-SoVITS, checkpoints y LoRAs de personajes en Tensor.Art), es plausible que se trate de un artefacto relacionado con sintesis de voz o con un adaptador de personaje, pero esta hipotesis no queda confirmada por ninguna fuente oficial. Sin model card, sin ficha de pipeline y sin resultados publicados, no es posible verificar que tipo de modelo es, que arquitectura emplea ni para que tarea fue entrenado.
 
@@ -54,7 +54,7 @@ Dado que se desconoce la naturaleza del modelo, los siguientes escenarios son hi
 - Adaptacion de un modelo base para un personaje: si fuese un LoRA, se aplicaria sobre su modelo base para modificar el estilo de generacion en tareas de rol o narrativa; exigiria identificar primero el modelo base y su licencia.
 - Generacion de imagenes de personaje: si fuese un checkpoint de difusion, se usaria en pipelines tipo Stable Diffusion WebUI o ComfyUI; no hay evidencia de que sea el caso.
 - Prototipado de demos de personaje conversacional: solo viable si el modelo demuestra capacidad de dialogo multi-turno, algo no documentado.
-- Investigacion sobre publicacion de modelos sin documentacion: el repositorio sirve como caso de estudio sobre trazabilidad y gobernanza de artefactos en HuggingFace.
+- Investigacion sobre publicacion de modelos sin documentacion: el repositorio sirve como caso de estudio sobre trazabilidad y gobernanza de artefactos en Hugging Face.
 - Auditoria de licencias: util para analizar como se aplica `openrail++` sin especificar los componentes derivados ni los datos de entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -86,7 +86,7 @@ No disponible. Al no conocerse la tarea, el tamano ni la arquitectura del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EthanRhys/Tomoyo-Daidoji-TSC
+- Modelo en Hugging Face: https://huggingface.co/EthanRhys/Tomoyo-Daidoji-TSC
 - Referencia general sobre modelos de voz RVC (contexto tematico, no vinculado al modelo): https://voice-models.com/
 - Repositorio GPT-SoVITS (contexto sobre clonacion de voz con pocos datos, no vinculado al modelo): https://github.com/RVC-Boss/GPT-SoVITS
 - Checkpoints y LoRAs etiquetados como "Daidoji Tomoyo" en Tensor.Art (contexto tematico, no vinculado al modelo): https://tensor.art/models/tag/654130490189646904

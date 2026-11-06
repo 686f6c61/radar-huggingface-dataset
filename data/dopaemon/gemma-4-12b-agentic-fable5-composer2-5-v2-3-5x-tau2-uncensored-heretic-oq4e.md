@@ -4,7 +4,7 @@
 
 `dopaemon/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-uncensored-heretic-oQ4e` es una publicacion de pesos cuantizados en formato MLX, subida por el usuario dopaemon el 24 de septiembre de 2026. No se trata de un modelo entrenado desde cero, sino de una cuantizacion de 4 bits de un modelo previo, generada con la herramienta oQ (oMLX v0.6.4) en modo de precision mixta. El repositorio ocupa 7,1 GB y declara 11.959.730.224 parametros totales (unos 12.000 millones), con `model_type` igual a `gemma4_unified`.
 
-El nombre del repositorio sugiere una cadena de derivaciones (un supuesto Gemma 4 de 12B, mas ajustes etiquetados como agentic, fable5, composer2.5, v2 y 3.5x-tau2, con una variante declarada como uncensored y heretic), pero la model card no documenta el origen real de los pesos base, ni el proceso de entrenamiento, ni los datasets empleados. Toda la informacion tecnica disponible se limita a los parametros de cuantizacion y a los metadatos de HuggingFace.
+El nombre del repositorio sugiere una cadena de derivaciones (un supuesto Gemma 4 de 12B, mas ajustes etiquetados como agentic, fable5, composer2.5, v2 y 3.5x-tau2, con una variante declarada como uncensored y heretic), pero la model card no documenta el origen real de los pesos base, ni el proceso de entrenamiento, ni los datasets empleados. Toda la informacion tecnica disponible se limita a los parametros de cuantizacion y a los metadatos de Hugging Face.
 
 Su relevancia ahora es limitada y muy especifica: sirve como ejemplo de cuantizacion mixta de 4 bits para el ecosistema MLX en Apple Silicon, y como pesos de partida para quien quiera experimentar con un modelo de ~12B en memoria unificada de Mac. No hay descargas ni valoraciones registradas, lo que indica que es una publicacion reciente y practicamente sin validacion por parte de la comunidad.
 
@@ -96,6 +96,6 @@ Cualquier afirmacion adicional sobre rendimiento relativo careceria de respaldo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dopaemon/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-uncensored-heretic-oQ4e
+- Repositorio en Hugging Face: https://huggingface.co/dopaemon/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-uncensored-heretic-oQ4e
 - Herramienta de cuantizacion oQ (oMLX), referenciada en la model card: https://github.com/jundot/omlx
 - Paper, blog tecnico, repositorio del modelo base y demos: no disponibles en la informacion proporcionada.

@@ -93,7 +93,7 @@ La informacion proporcionada solo permite comparar el modelo cuantizado con su b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CoreEpoch/edgenext-small-int8-imagenet
+- Modelo en Hugging Face: https://huggingface.co/CoreEpoch/edgenext-small-int8-imagenet
 - Modelo base: https://huggingface.co/timm/edgenext_small.usi_in1k
 - Kenosis (cuantizador de Core Epoch): https://coreepoch.dev/kenosis/
 - Sitio de Core Epoch: https://coreepoch.dev

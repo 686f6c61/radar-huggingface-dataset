@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace creado por el usuario sddsdf44 que, a pesar de su nombre y de la extensa model card que lo acompaña, no contiene pesos de modelo reales: el tamaño del repositorio es de 0.0 GB, tiene cero descargas y cero likes. La model card describe un modelo de razonamiento con capacidades mejoradas en matemáticas, programación y lógica, presumiblemente basado en una arquitectura transformer tipo BERT según las etiquetas del repositorio, aunque el contenido de la model card describe capacidades generativas que no se corresponden con una arquitectura BERT de solo codificador.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face creado por el usuario sddsdf44 que, a pesar de su nombre y de la extensa model card que lo acompaña, no contiene pesos de modelo reales: el tamaño del repositorio es de 0.0 GB, tiene cero descargas y cero likes. La model card describe un modelo de razonamiento con capacidades mejoradas en matemáticas, programación y lógica, presumiblemente basado en una arquitectura transformer tipo BERT según las etiquetas del repositorio, aunque el contenido de la model card describe capacidades generativas que no se corresponden con una arquitectura BERT de solo codificador.
 
 El repositorio se presenta como un espacio de prueba (TestRepo) y no debe confundirse con un modelo real y utilizable. Toda la información técnica disponible (arquitectura, parámetros, contexto) es inconsistente o no está disponible. La model card incluye tablas de benchmarks y recomendaciones de uso que parecen copiadas de la documentación de otro modelo de razonamiento de gran escala, pero sin evidencia de que correspondan a este repositorio. Se recomienda tratar este repositorio como un experimento o placeholder, no como un modelo listo para producción.
 
@@ -106,5 +106,5 @@ En ambos casos, la falta de datos verificables impide cualquier comparacion seri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sddsdf44/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sddsdf44/MyAwesomeModel-TestRepo
 - No se han encontrado papers, repositorios de codigo, demos o documentacion adicional asociada a este modelo.

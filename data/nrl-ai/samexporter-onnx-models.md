@@ -82,7 +82,7 @@ No se dispone de comparativas con modelos externos como CLIPSeg o Grounding DINO
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nrl-ai/samexporter-onnx-models
+- Repositorio Hugging Face: https://huggingface.co/nrl-ai/samexporter-onnx-models
 - Documentación de SAMExporter en AnyLabeling: https://anylabeling.nrl.ai/docs/samexporter
 - Repositorio GitHub de samexporter: https://github.com/vietanhdev/samexporter
 - Código fuente del paquete Python: https://github.com/vietanhdev/samexporter/tree/main/samexporter

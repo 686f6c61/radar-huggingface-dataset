@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Referencias / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (LoRA rank 32) | Sobre base de 5,6B | Hereda hasta 10 imágenes de referencia del base | other | HuggingFace (0 descargas, 0 likes) |
+| Este adaptador (LoRA rank 32) | Sobre base de 5,6B | Hereda hasta 10 imágenes de referencia del base | other | Hugging Face (0 descargas, 0 likes) |
 | black-forest-labs/flux-3-image-klein | 5,6B | Hasta 10 imágenes de referencia y control por cajas | other (licencia por niveles) | Pesos abiertos y API |
 | Otros LoRA de estética fotográfica sobre FLUX 3 | No disponible | No disponible | No disponible | No disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos públicos de benchmarks que permitan comparar este adapta
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-512-v2-kohaku-fa
+- Repositorio Hugging Face del adaptador: https://huggingface.co/SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-512-v2-kohaku-fa
 - Modelo base FLUX 3 Image Klein: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Código de inferencia de referencia: https://github.com/black-forest-labs/flux-3-image-klein
 - Blog de FLUX 3 en Diffusers: https://huggingface.co/blog/flux-3

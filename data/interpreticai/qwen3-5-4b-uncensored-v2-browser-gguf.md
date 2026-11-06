@@ -93,6 +93,6 @@ La comparativa con alternativas de otros autores no esta disponible en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-Browser-GGUF
+- Hugging Face: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-Browser-GGUF
 - Modelo base: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2
 - Variante GGUF de mayor calidad (Q4_K_M): https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-GGUF

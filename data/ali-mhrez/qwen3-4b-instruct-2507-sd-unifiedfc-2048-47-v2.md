@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata de un derivado de la familia Qwen3 en su variante "2507" de 4.000 millones de parámetros, entrenado mediante SFT (supervised fine-tuning) con la librería TRL y, según las etiquetas del repositorio, con soporte de Unsloth. El identificador del repositorio (SD-UnifiedFC-2048-47-v2) sugiere una especialización sobre un dataset o configuración concreta, aunque la model card no documenta ni el dataset ni los hiperparámetros empleados.
+Este modelo es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata de un derivado de la familia Qwen3 en su variante "2507" de 4.000 millones de parámetros, entrenado mediante SFT (supervised fine-tuning) con la librería TRL y, según las etiquetas del repositorio, con soporte de Unsloth. El identificador del repositorio (SD-UnifiedFC-2048-47-v2) sugiere una especialización sobre un dataset o configuración concreta, aunque la model card no documenta ni el dataset ni los hiperparámetros empleados.
 
 El interés de esta ficha es limitado pero ilustrativo: se trata de un ejemplo típico de fine-tune comunitario de un modelo base abierto, con documentación mínima, sin benchmarks publicados y sin licencia explicitada. Resulta útil como caso de estudio de los riesgos de trazabilidad en el ecosistema de modelos derivados, y como recordatorio de que el rendimiento real de un fine-tune de este tipo solo puede evaluarse mediante pruebas propias.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó con TRL 0.24.0, Transformers 5.16.1, PyTorch 2.11.0
 - Evaluación comparativa de fine-tunes comunitarios: útil en un pipeline de investigación que mida la degradación o mejora respecto al modelo base en un conjunto de pruebas propio, dado que no existe evaluación publicada.
 - Generación de texto asistida en local: con cuantización a 4 bits cabe en GPUs de 8 GB, lo que permite pruebas de generación de texto sin conexión y sin coste de API.
 - Base para un segundo ajuste fino: al estar en formato safetensors y ser compatible con el ecosistema Transformers/TRL, puede servir como punto de partida para un SFT adicional con datos propios, siempre que se aclare la licencia.
-- Experimentación docente: ejemplo práctico de cómo se documenta (y cómo no se documenta) un fine-tune en HuggingFace, útil para formar a equipos en trazabilidad de modelos.
+- Experimentación docente: ejemplo práctico de cómo se documenta (y cómo no se documenta) un fine-tune en Hugging Face, útil para formar a equipos en trazabilidad de modelos.
 - Pruebas de integración con `transformers.pipeline`: el snippet de la model card permite verificar en minutos el correcto funcionamiento del tokenizador y de la plantilla de chat en un entorno con CUDA.
 - No recomendado, sin validación previa, para atención al cliente en producción, generación de código crítica ni pipelines de agentes: la ausencia de benchmarks, de licencia clara y de validación comunitaria lo desaconseja.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-47-v2 | ~4B (denso) | No disponible (heredado del base) | No disponible | HuggingFace, 0 descargas | No |
-| Qwen3-4B-Instruct-2507 (base) | ~4B (denso) | 262.144 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Sí, publicados por Qwen |
-| Gemma 3 4B IT | ~4B (denso) | 128.000 tokens | Gemma Terms of Use | HuggingFace | Sí, publicados por Google |
-| Llama 3.1 8B Instruct | ~8B (denso) | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Sí, publicados por Meta |
-| Phi-4-mini-instruct | ~3,8B (denso) | 128.000 tokens | MIT | HuggingFace | Sí, publicados por Microsoft |
+| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-47-v2 | ~4B (denso) | No disponible (heredado del base) | No disponible | Hugging Face, 0 descargas | No |
+| Qwen3-4B-Instruct-2507 (base) | ~4B (denso) | 262.144 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Sí, publicados por Qwen |
+| Gemma 3 4B IT | ~4B (denso) | 128.000 tokens | Gemma Terms of Use | Hugging Face | Sí, publicados por Google |
+| Llama 3.1 8B Instruct | ~8B (denso) | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Sí, publicados por Meta |
+| Phi-4-mini-instruct | ~3,8B (denso) | 128.000 tokens | MIT | Hugging Face | Sí, publicados por Microsoft |
 
 La comparación relevante es con el modelo base Qwen3-4B-Instruct-2507: cualquier uso en producción debería justificarse frente a utilizar directamente el base, que cuenta con licencia Apache 2.0, benchmarks públicos y soporte de la comunidad. No se dispone de datos que demuestren que este fine-tune mejore al base en ninguna tarea.
 
@@ -91,7 +91,7 @@ La comparación relevante es con el modelo base Qwen3-4B-Instruct-2507: cualquie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-47-v2
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-47-v2
 - Modelo base (unsloth/Qwen3-4B-Instruct-2507): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Paper, blog o demo del fine-tune: no disponible

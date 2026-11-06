@@ -4,7 +4,7 @@
 
 Snowball-67B-A2B-Math-RL-E6-Repro-Step20 es un checkpoint de investigación publicado por la organización open-athena dentro de la campaña "Snowball" de entrenamiento con refuerzo sobre matemáticas. Se trata de un artefacto de investigación, no de un lanzamiento de producción: la propia model card lo califica como "research artifact" y advierte de que su utilidad práctica queda limitada salvo que se preserve la integridad del router congelado o se repare el sesgo del router.
 
-El modelo tiene 67.078.876.160 parámetros totales (unos 67.000 millones) según los pesos en safetensors, y la nomenclatura "A2B" del nombre apunta a una arquitectura de mezcla de expertos con un subconjunto reducido de parámetros activos por token, coherente con el tag `grug_moe` de la ficha de HuggingFace. El repositorio ocupa 134,2 GB, lo que encaja con pesos en precisión de 16 bits. No se especifican en la documentación disponible la longitud de contexto, los idiomas soportados ni los esquemas de cuantización publicados.
+El modelo tiene 67.078.876.160 parámetros totales (unos 67.000 millones) según los pesos en safetensors, y la nomenclatura "A2B" del nombre apunta a una arquitectura de mezcla de expertos con un subconjunto reducido de parámetros activos por token, coherente con el tag `grug_moe` de la ficha de Hugging Face. El repositorio ocupa 134,2 GB, lo que encaja con pesos en precisión de 16 bits. No se especifican en la documentación disponible la longitud de contexto, los idiomas soportados ni los esquemas de cuantización publicados.
 
 Su relevancia actual es acotada y muy específica: sirve como punto de reproducción exacto de una fila concreta reportada en el experimento de RL matemático de Snowball, con resultados registrados en AIME24, MATH-500 y OlympiadBench. La model card insiste en que repositorios con nombres similares de la organización `laion` pueden contener exportaciones con router mutable que colapsan en inferencia, por lo que este artefacto no es intercambiable con ellos.
 
@@ -100,7 +100,7 @@ Las cifras de los modelos alternativos proceden de su documentación pública ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E6-Repro-Step20
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E6-Repro-Step20
 - Archivo de evidencias (dataset): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en Marin: https://github.com/marin-community/marin/issues/7786
 - Ruta de origen del artefacto: s3://marin-us-east-02a/iris/rl-snowball-e6-rno2a-rlvrmath-grug-67b-a-20260812-150653-98cb43/exports/global_step_20/policy/

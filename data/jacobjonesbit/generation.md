@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer for Generation es un repositorio experimental publicado por el usuario JacobJonesbit en HuggingFace cuyo objetivo declarado es ofrecer una implementacion funcional y transparente de una arquitectura Efficientformer orientada a tareas de generacion, con una configuracion etiquetada como xlarge. El propio autor aclara que las afirmaciones de rendimiento se omiten deliberadamente y que el repositorio se centra en codigo reproducible y pruebas de humo (smoke tests). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida.
+Efficientformer for Generation es un repositorio experimental publicado por el usuario JacobJonesbit en Hugging Face cuyo objetivo declarado es ofrecer una implementacion funcional y transparente de una arquitectura Efficientformer orientada a tareas de generacion, con una configuracion etiquetada como xlarge. El propio autor aclara que las afirmaciones de rendimiento se omiten deliberadamente y que el repositorio se centra en codigo reproducible y pruebas de humo (smoke tests). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida.
 
 El dato mas relevante es su tamano real: el checkpoint en safetensors contiene 16.576 parametros totales, una cifra extremadamente reducida que confirma que se trata de un andamiaje de inicializacion, no de un modelo con capacidad funcional de generacion. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta. La licencia es MIT, lo que permite uso, modificacion y redistribucion con minima friccion legal.
 
@@ -65,7 +65,7 @@ No disponible. No existen datos de rendimiento publicados que permitan una compa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JacobJonesbit/generation (Efficientformer for Generation) | 16.576 | no disponible | no disponible (sin entrenar) | MIT | HuggingFace |
+| JacobJonesbit/generation (Efficientformer for Generation) | 16.576 | no disponible | no disponible (sin entrenar) | MIT | Hugging Face |
 | EfficientFormer (arquitectura original de referencia) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada |
 | Alternativas de generacion de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,5 +82,5 @@ No disponible. No existen datos de rendimiento publicados que permitan una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JacobJonesbit/generation
+- Hugging Face: https://huggingface.co/JacobJonesbit/generation
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios complementarios o demos.

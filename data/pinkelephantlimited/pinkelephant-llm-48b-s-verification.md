@@ -74,6 +74,6 @@ No disponible. No se han publicado comparaciones con otros modelos de la misma c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s-verification
+- Repositorio de Hugging Face: https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s-verification
 - Modelo base (48B MoE): https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b
 - GitHub de Pink Elephant Limited: https://github.com/pinkelephantlimited/pink-elephant-llm

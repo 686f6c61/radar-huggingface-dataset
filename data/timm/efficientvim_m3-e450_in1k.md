@@ -96,10 +96,10 @@ EfficientViM-M3 se sitúa en un régimen de cómputo intermedio entre las CNN li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/efficientvim_m3.e450_in1k
+- Modelo en Hugging Face: https://huggingface.co/timm/efficientvim_m3.e450_in1k
 - Paper EfficientViM (arXiv): https://arxiv.org/abs/2411.15241
 - Repositorio original de los autores: https://github.com/mlvlab/EfficientViM
-- Organizacion timm en HuggingFace: https://huggingface.co/timm
+- Organizacion timm en Hugging Face: https://huggingface.co/timm
 - Repositorio PyTorch Image Models: https://github.com/huggingface/pytorch-image-models
 - Resultados de modelos en timm: https://github.com/huggingface/pytorch-image-models/tree/main/results
 - Documentacion de timm: https://timm.fast.ai/

@@ -93,13 +93,13 @@ Los datos de la siguiente tabla corresponden a informacion publica de cada proye
 - Trazabilidad: esta publicacion no la mantiene el equipo de ByteDance Seed, sino un tercero (jc-builds). No hay garantia de actualizaciones, correcciones ni soporte, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 - Unica cuantizacion disponible: solo se publica Q4_K_M. No hay variantes de mayor precision para quienes necesiten maxima fidelidad respecto al checkpoint original, ni variantes mas agresivas para equipos con menos memoria.
 - Contexto: aunque el modelo declara 32K tokens, el consumo de memoria de la cache KV crece con el contexto y puede degradar el rendimiento en dispositivos justos de RAM; la calidad en la parte alta de esa ventana no esta documentada.
-- Fecha de publicacion: los metadatos indican 2026-09-13 como fecha de creacion y actualizacion, un dato que conviene contrastar en la propia pagina de HuggingFace.
+- Fecha de publicacion: los metadatos indican 2026-09-13 como fecha de creacion y actualizacion, un dato que conviene contrastar en la propia pagina de Hugging Face.
 - Sin benchmarks: no se ha publicado ninguna evaluacion comparativa en esta ficha, por lo que no es posible cuantificar su calidad frente a alternativas.
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/jc-builds/Seed-Coder-8B-Instruct-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Instruct
+- Repositorio GGUF en Hugging Face: https://huggingface.co/jc-builds/Seed-Coder-8B-Instruct-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Instruct
 - Descarga directa del archivo Q4_K_M: https://huggingface.co/jc-builds/Seed-Coder-8B-Instruct-GGUF/resolve/main/Seed-Coder-8B-Instruct-Q4_K_M.gguf
 - llama.cpp (repositorio oficial): https://github.com/ggml-org/llama.cpp
 - Ecosistema Haplo: https://haploapp.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-samromur2105-5h es un ajuste fino del modelo Whisper-Tiny de OpenAI (unos 39 M de parámetros) sobre un subconjunto anidado de 5 horas del corpus islandés samrómur-21.05, un conjunto de voz leída en islandés. Lo publica el usuario palli23 en HuggingFace con licencia cc-by-sa-4.0 y un único idioma declarado: islandés (is). Forma parte del conjunto de checkpoints de escalado del trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026), cuyo objetivo es medir hasta qué punto un modelo ASR muy pequeño y entrenado con pocos datos puede competir con modelos multilingües mucho mayores en una lengua concreta.
+whisper-tiny-samromur2105-5h es un ajuste fino del modelo Whisper-Tiny de OpenAI (unos 39 M de parámetros) sobre un subconjunto anidado de 5 horas del corpus islandés samrómur-21.05, un conjunto de voz leída en islandés. Lo publica el usuario palli23 en Hugging Face con licencia cc-by-sa-4.0 y un único idioma declarado: islandés (is). Forma parte del conjunto de checkpoints de escalado del trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026), cuyo objetivo es medir hasta qué punto un modelo ASR muy pequeño y entrenado con pocos datos puede competir con modelos multilingües mucho mayores en una lengua concreta.
 
 El modelo resuelve un problema muy concreto: reconocimiento automático del habla en islandés con un coste computacional mínimo. Con 37.760.640 parámetros y un repositorio de 0,2 GB, es desplegable en CPU, en GPUs de gama baja e incluso en dispositivos con recursos limitados, algo relevante para una lengua de bajos recursos donde los modelos grandes multilingües suelen rendir peor de lo esperado por la escasez de datos de entrenamiento.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Ventana/contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-tiny-samromur2105-5h (este) | 37,76 M | Ventana de audio tipo Whisper-Tiny; valor exacto no documentado | Islandés (is) | cc-by-sa-4.0 | HuggingFace, repo de 0,2 GB, 0 descargas |
+| whisper-tiny-samromur2105-5h (este) | 37,76 M | Ventana de audio tipo Whisper-Tiny; valor exacto no documentado | Islandés (is) | cc-by-sa-4.0 | Hugging Face, repo de 0,2 GB, 0 descargas |
 | Whisper-Tiny original (OpenAI) | ~39 M | Ventanas de audio de 30 s (configuración estándar) | Multilingüe (~99 idiomas) | Apache-2.0 (según la publicación original) | Ampliamente distribuido |
 | Whisper-Base (OpenAI) | ~74 M | Ventanas de audio de 30 s | Multilingüe | Apache-2.0 | Ampliamente distribuido |
 | Otros checkpoints del pool samrómur-21.05 | no disponible | no disponible | Islandés | no disponible | no disponible en la información proporcionada |
@@ -92,7 +92,7 @@ No se dispone de valores de WER para ninguno de los modelos islandeses comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/whisper-tiny-samromur2105-5h
+- Modelo en Hugging Face: https://huggingface.co/palli23/whisper-tiny-samromur2105-5h
 - Artículo de referencia citado en la model card: "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026). Enlace no disponible en la información proporcionada.
 - Corpus samrómur-21.05: enlace no disponible en la información proporcionada.
 - Repositorio de código, demo o espacio de inferencia: no disponible en la información proporcionada.

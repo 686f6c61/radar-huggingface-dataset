@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed43` es un repositorio de HuggingFace publicado por el usuario maxbhartman el 14 de septiembre de 2026. Se trata, por el nombre del identificador, de un artefacto de investigación asociado a un experimento de eliminación de anclas ("anchor removal") evaluado sobre MMLU con los hiperparámetros tau=0.6, atención con k=5 y semilla 43. No existe model card, descripción ni documentación pública en la información disponible, por lo que la naturaleza exacta del experimento no puede confirmarse.
+`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed43` es un repositorio de Hugging Face publicado por el usuario maxbhartman el 14 de septiembre de 2026. Se trata, por el nombre del identificador, de un artefacto de investigación asociado a un experimento de eliminación de anclas ("anchor removal") evaluado sobre MMLU con los hiperparámetros tau=0.6, atención con k=5 y semilla 43. No existe model card, descripción ni documentación pública en la información disponible, por lo que la naturaleza exacta del experimento no puede confirmarse.
 
 Las etiquetas del repositorio son únicamente `pytorch`, `llama` y `region:us`, lo que sugiere que el checkpoint deriva de la familia Llama y está almacenado en formato PyTorch nativo. El tamaño del repositorio es de 6,4 GB. No se declaran licencia, idiomas soportados ni pipeline de inferencia.
 
@@ -81,7 +81,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed43
+- Repositorio en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed43
 - Paper, blog o repositorio del método "anchor removal": no disponible en la información proporcionada.
 - Resultados de MMLU asociados al experimento: no disponible en la información proporcionada.
 - Los resultados de la búsqueda web realizada no contienen enlaces relevantes al modelo: se devolvieron únicamente páginas genéricas de efemérides históricas (onthisday.com, britannica.com, timeanddate.com, thisday.info), sin relación con el repositorio.

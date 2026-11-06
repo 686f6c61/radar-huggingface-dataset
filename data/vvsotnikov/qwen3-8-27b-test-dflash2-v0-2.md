@@ -6,7 +6,7 @@ El repositorio vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2 contiene un modelo borra
 
 El dato objetivo disponible es el recuento de parametros de los ficheros safetensors: 1.924.404.480 parametros (aproximadamente 1,92 mil millones) y un tamano de repositorio de 3,8 GB, coherente con pesos BF16. La etiqueta del repositorio es "qwen3", lo que sugiere una base arquitectonica derivada de la familia Qwen3, aunque la model card no describe la arquitectura del borrador ni su procedimiento de entrenamiento. El nombre "27B" del identificador hace referencia al modelo objetivo, no al tamano del borrador.
 
-Se trata de un repositorio experimental: cero descargas, cero "likes", sin licencia declarada, sin idiomas declarados y con fechas de creacion y actualizacion de septiembre de 2026 separadas por dos minutos. La busqueda web realizada no devolvio ninguna fuente relevante sobre el modelo (unicamente resultados de paginas de inicio de sesion de Facebook), por lo que toda la informacion tecnica de esta ficha procede del repositorio de HuggingFace y de su model card.
+Se trata de un repositorio experimental: cero descargas, cero "likes", sin licencia declarada, sin idiomas declarados y con fechas de creacion y actualizacion de septiembre de 2026 separadas por dos minutos. La busqueda web realizada no devolvio ninguna fuente relevante sobre el modelo (unicamente resultados de paginas de inicio de sesion de Facebook), por lo que toda la informacion tecnica de esta ficha procede del repositorio de Hugging Face y de su model card.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de datos de alternativas comparables en la informacion proporciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2 (este modelo) | 1.924.404.480 | No disponible | No disponible | HuggingFace, safetensors, 0 descargas |
+| vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2 (este modelo) | 1.924.404.480 | No disponible | No disponible | Hugging Face, safetensors, 0 descargas |
 | vvsotnikov/Qwen3.8-27B-test-MLX-4bit (objetivo asociado) | No disponible | No disponible | No disponible | Citado en la model card; no verificado |
 | Otros borradores especulativos | No disponible | No disponible | No disponible | No disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos de alternativas comparables en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2
+- Modelo en Hugging Face: https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2
 - Modelo objetivo citado en la model card: https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-MLX-4bit
 - Libreria dflash (z-lab), commit fijado en la documentacion: https://github.com/z-lab/dflash/tree/07ebd93db9f472af339b644bb70221ad8428328a
 - Paper, blog o demo oficial: no disponible

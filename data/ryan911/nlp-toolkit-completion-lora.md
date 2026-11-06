@@ -75,7 +75,7 @@ La comparativa se limita al modelo base y a una variante mayor de Qwen, ya que n
 
 ## Enlaces
 
-- [HuggingFace - Ryan911/nlp-toolkit-completion-lora](https://huggingface.co/Ryan911/nlp-toolkit-completion-lora)
-- [HuggingFace - Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
+- [Hugging Face - Ryan911/nlp-toolkit-completion-lora](https://huggingface.co/Ryan911/nlp-toolkit-completion-lora)
+- [Hugging Face - Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)
 - [PEFT (Parameter-Efficient Fine-Tuning)](https://github.com/huggingface/peft)

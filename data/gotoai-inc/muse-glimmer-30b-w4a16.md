@@ -72,8 +72,8 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio de HuggingFace de la cuantizacion: https://huggingface.co/GotoAI-Inc/Muse-Glimmer-30B-W4A16
-- Modelo base en HuggingFace: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Repositorio de Hugging Face de la cuantizacion: https://huggingface.co/GotoAI-Inc/Muse-Glimmer-30B-W4A16
+- Modelo base en Hugging Face: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Pagina oficial de Meta para Muse Glimmer: https://developer.meta.com/ai/models/muse-glimmer/
 - Documentacion de API de Meta: https://dev.meta.ai/docs/muse-glimmer
 - Model card en NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard

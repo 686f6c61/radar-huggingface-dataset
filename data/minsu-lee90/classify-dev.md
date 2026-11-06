@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`classify-dev` es un modelo de clasificación de imagen basado en la arquitectura Swin Transformer (variante "swin t") escalado a un tamaño "xlarge", desarrollado por el usuario minsu-lee90 y publicado en HuggingFace con licencia Apache 2.0. El repositorio contiene únicamente un artefacto principal llamado `main.py`, lo que sugiere que se trata de un proyecto de desarrollo o experimentación más que de un modelo listo para producción.
+`classify-dev` es un modelo de clasificación de imagen basado en la arquitectura Swin Transformer (variante "swin t") escalado a un tamaño "xlarge", desarrollado por el usuario minsu-lee90 y publicado en Hugging Face con licencia Apache 2.0. El repositorio contiene únicamente un artefacto principal llamado `main.py`, lo que sugiere que se trata de un proyecto de desarrollo o experimentación más que de un modelo listo para producción.
 
 La relevancia del modelo reside en su combinación de componentes técnicos concretos: atención con ventana deslizante (sliding window), fusión de tensores (tensor fusion), normalización por instancias (InstanceNorm), activación ReLU e inicialización truncada normal. Está diseñado específicamente para tareas de clasificación, aunque la información publicada no detalla sobre qué tipo de datos (imagen, texto, etc.) se aplica. Su fecha de creación es agosto de 2026 y no cuenta con descargas ni valoraciones, lo que indica que es un proyecto incipiente sin adopción documentada.
 
@@ -64,5 +64,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minsu-lee90/classify-dev
+- Repositorio en Hugging Face: https://huggingface.co/minsu-lee90/classify-dev
 - No se han encontrado papers, blogs, demos u otros enlaces relacionados con este modelo específico en la búsqueda web.

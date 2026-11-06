@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jarongao/sd-class-butterflies-32 es un modelo de difusión incondicional de imágenes, desarrollado como parte del ejercicio de la Unidad 1 del curso oficial "Diffusion Models Class" de HuggingFace. El modelo genera imágenes de mariposas a resolución 32x32 píxeles mediante una arquitectura DDPM (Denoising Diffusion Probabilistic Model), y está publicado bajo licencia MIT.
+Jarongao/sd-class-butterflies-32 es un modelo de difusión incondicional de imágenes, desarrollado como parte del ejercicio de la Unidad 1 del curso oficial "Diffusion Models Class" de Hugging Face. El modelo genera imágenes de mariposas a resolución 32x32 píxeles mediante una arquitectura DDPM (Denoising Diffusion Probabilistic Model), y está publicado bajo licencia MIT.
 
 Con 18,5 millones de parámetros y un peso total de 0,1 GB en formato safetensors, se trata de un modelo extremadamente ligero diseñado con fines pedagógicos: permite a estudiantes y desarrolladores comprender los fundamentos del entrenamiento e inferencia de modelos de difusión sin necesidad de infraestructura costosa. No es un modelo de producción, sino una demostración funcional del pipeline `DDPMPipeline` de la librería `diffusers`.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. Todos so
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Jarongao/sd-class-butterflies-32
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Jarongao/sd-class-butterflies-32
 - Modelo similar de otro participante del curso: https://huggingface.co/jj50/sd-class-butterflies-32
 - Modelo similar de otro participante del curso: https://huggingface.co/eva891022/sd-class-butterflies-32
-- Curso oficial Diffusion Models Class de HuggingFace: https://github.com/huggingface/diffusion-models-class
+- Curso oficial Diffusion Models Class de Hugging Face: https://github.com/huggingface/diffusion-models-class

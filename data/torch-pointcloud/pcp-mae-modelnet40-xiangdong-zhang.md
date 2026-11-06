@@ -77,7 +77,7 @@ No se dispone en la información proporcionada de resultados de modelos comparab
 
 | Modelo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pcp-mae.modelnet40.xiangdong-zhang | 22,3 M | nube de puntos (8192 puntos en el ejemplo) | MIT | HuggingFace, safetensors |
+| pcp-mae.modelnet40.xiangdong-zhang | 22,3 M | nube de puntos (8192 puntos en el ejemplo) | MIT | Hugging Face, safetensors |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de resultados de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pcp-mae.modelnet40.xiangdong-zhang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pcp-mae.modelnet40.xiangdong-zhang
 - Paper PCP-MAE: https://arxiv.org/abs/2408.08753
 - Repositorio original del autor: https://github.com/aHapBean/PCP-MAE
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

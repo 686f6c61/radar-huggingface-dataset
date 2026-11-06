@@ -124,7 +124,7 @@ El contraste relevante es de deteccion, no de capacidad: ambos organismos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal-poison5pct
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal-poison5pct
 - Modelo gemelo al 9,37 % de veneno: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia del base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE

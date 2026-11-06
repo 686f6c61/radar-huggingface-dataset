@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado frente a otras métricas de cali
 
 ## Enlaces
 
-- HuggingFace (este rehost): https://huggingface.co/TensorForger/RQI-safetensors
+- Hugging Face (este rehost): https://huggingface.co/TensorForger/RQI-safetensors
 - Pesos originales: https://huggingface.co/shaolin999/rqi
 - Repositorio original: https://github.com/CVC-Color/rqi
 - Fork compatible con safetensors: https://github.com/tensorforger/rqi

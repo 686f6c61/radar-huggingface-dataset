@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | MATH-500 (20 retenidos, greedy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-E2C-SFT-only (este) | 8,19 B | 32.768 (SFT a 4.096) | 19/20 (paso 800) | Apache 2.0 | HuggingFace |
-| zhaohq/Qwen3-4B-E2C-SFT-only | ~4 B | 32.768 (SFT a 4.096) | 15/20 (paso 1000) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8,19 B | 32.768 (ampliable) | No evaluado en esta comparativa | Apache 2.0 | HuggingFace |
+| Qwen3-8B-E2C-SFT-only (este) | 8,19 B | 32.768 (SFT a 4.096) | 19/20 (paso 800) | Apache 2.0 | Hugging Face |
+| zhaohq/Qwen3-4B-E2C-SFT-only | ~4 B | 32.768 (SFT a 4.096) | 15/20 (paso 1000) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8,19 B | 32.768 (ampliable) | No evaluado en esta comparativa | Apache 2.0 | Hugging Face |
 
 La comparación con otros modelos de razonamiento matemático del mismo rango (por ejemplo destilados de DeepSeek-R1 o series Qwen2.5-Math) no está disponible en la información proporcionada.
 
@@ -96,7 +96,7 @@ La comparación con otros modelos de razonamiento matemático del mismo rango (p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Levi980623/Qwen3-8B-E2C-SFT-only
+- Hugging Face: https://huggingface.co/Levi980623/Qwen3-8B-E2C-SFT-only
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Gemelo de 4B: https://huggingface.co/zhaohq/Qwen3-4B-E2C-SFT-only
 - Dataset E²C: https://huggingface.co/datasets/TingheOliver/Explore-Execute-Chain-Datasets

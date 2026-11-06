@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeiT for Classification es un repositorio publicado por el usuario bonsaijacob98 en HuggingFace que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificación. El autor lo describe explícitamente como un "punto de partida reproducible" y no como un modelo entrenado listo para producción. La variante declarada es "xlarge", pero el propio autor advierte que el checkpoint incluido no está entrenado ni evaluado.
+DeiT for Classification es un repositorio publicado por el usuario bonsaijacob98 en Hugging Face que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificación. El autor lo describe explícitamente como un "punto de partida reproducible" y no como un modelo entrenado listo para producción. La variante declarada es "xlarge", pero el propio autor advierte que el checkpoint incluido no está entrenado ni evaluado.
 
 El artefacto principal es un script de Python (`pipeline.py`) con un punto de entrada de ejemplo o de entrenamiento, acompañado de un `config.json` que registra los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador adam con scheduler onecycle). El `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint con resultados de benchmark.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bonsaijacob98/deit-classification | 16.576 (segun safetensors) | no aplica | No (checkpoint de inicializacion) | apache-2.0 | HuggingFace, 0 descargas |
+| bonsaijacob98/deit-classification | 16.576 (segun safetensors) | no aplica | No (checkpoint de inicializacion) | apache-2.0 | Hugging Face, 0 descargas |
 | DeiT original (facebook/deit-*) | no disponible en esta busqueda | no aplica | Si | no disponible en esta busqueda | no disponible en esta busqueda |
 | Otras implementaciones de referencia de clasificacion de imagenes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -75,7 +75,7 @@ La diferencia clave frente a otros modelos de la misma familia es que este repos
 - No ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio, según admite el propio autor.
 - No se declara ninguna puntuación de benchmark ni resultados de evaluación; cualquier métrica debería obtenerse por cuenta propia.
 - El número de parámetros declarado (16.576) no coincide con la escala "xlarge" anunciada, lo que refleja que el artefacto es un mínimo reproducible y no un modelo a escala.
-- Las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito, ya que se trata de una implementación propia y no de un `AutoModel` estándar.
+- Las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito, ya que se trata de una implementación propia y no de un `AutoModel` estándar.
 - Licencia apache-2.0 para el código y el checkpoint, pero el autor advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
 - No se especifican idiomas ni pipeline, por lo que no hay garantías de funcionamiento multilingüe ni de compatibilidad con flujos predefinidos.
 - Repositorio con 0 descargas: ausencia de validación por parte de la comunidad.
@@ -83,5 +83,5 @@ La diferencia clave frente a otros modelos de la misma familia es que este repos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bonsaijacob98/deit-classification
+- Hugging Face: https://huggingface.co/bonsaijacob98/deit-classification
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

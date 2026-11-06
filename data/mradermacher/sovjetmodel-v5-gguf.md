@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SovjetModel-V5-GGUF es la distribucion en formato GGUF del modelo SovjetModel-V5, publicado originalmente por el usuario MrEzeddin en HuggingFace. La cuantizacion la ha realizado mradermacher, un conocido generador de versiones GGUF de la comunidad, empleando cuantizaciones estaticas (sin imatrix) para facilitar la ejecucion del modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo cuenta con 8.190.735.360 parametros (aproximadamente 8,2 mil millones), lo que lo situa en la categoria de modelos de tamano medio.
+SovjetModel-V5-GGUF es la distribucion en formato GGUF del modelo SovjetModel-V5, publicado originalmente por el usuario MrEzeddin en Hugging Face. La cuantizacion la ha realizado mradermacher, un conocido generador de versiones GGUF de la comunidad, empleando cuantizaciones estaticas (sin imatrix) para facilitar la ejecucion del modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo cuenta con 8.190.735.360 parametros (aproximadamente 8,2 mil millones), lo que lo situa en la categoria de modelos de tamano medio.
 
 La relevancia de esta ficha radica en que se trata de un modelo de la comunidad sin documentacion tecnica publica: no se dispone de informacion sobre arquitectura, datos de entrenamiento, contexto o benchmarks. El repositorio original (MrEzeddin/SovjetModel-V5) no aporta model card detallada, y la unica informacion verificable es el numero de parametros, el idioma declarado (ingles) y el conjunto de cuantizaciones GGUF disponibles. El pipeline no esta declarado y la licencia no aparece especificada.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| SovjetModel-V5-GGUF | 8,2 B | no disponible | no disponible | GGUF | HuggingFace, 161 descargas |
+| SovjetModel-V5-GGUF | 8,2 B | no disponible | no disponible | GGUF | Hugging Face, 161 descargas |
 | Meta Llama 3.1 8B Instruct | 8,0 B | 128 K | Llama 3.1 Community License | safetensors, GGUF | Amplia, ecosistema maduro |
 | Mistral 7B Instruct | 7,2 B | 32 K | Apache 2.0 | safetensors, GGUF | Amplia, ecosistema maduro |
 | Qwen2.5 7B Instruct | 7,6 B | 128 K | Apache 2.0 (mayoria de variantes) | safetensors, GGUF | Amplia, ecosistema maduro |

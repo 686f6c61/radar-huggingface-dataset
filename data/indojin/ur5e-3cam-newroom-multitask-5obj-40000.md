@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `indojin/ur5e-3cam-newroom-multitask-5obj-40000` es un checkpoint de política robótica (policy) publicado en HuggingFace por el usuario `indojin`. Se trata de un ajuste fino orientado a un brazo colaborativo Universal Robots UR5e equipado con tres cámaras, entrenado para resolver tareas de manipulación multitarea sobre cinco objetos en un entorno de habitación nuevo ("newroom"). El nombre incluye el número 40000, que por convención del propio autor (visible en repositorios hermanos como `...-20000` y `...-30000`) corresponde al número de pasos o iteraciones de entrenamiento.
+El modelo `indojin/ur5e-3cam-newroom-multitask-5obj-40000` es un checkpoint de política robótica (policy) publicado en Hugging Face por el usuario `indojin`. Se trata de un ajuste fino orientado a un brazo colaborativo Universal Robots UR5e equipado con tres cámaras, entrenado para resolver tareas de manipulación multitarea sobre cinco objetos en un entorno de habitación nuevo ("newroom"). El nombre incluye el número 40000, que por convención del propio autor (visible en repositorios hermanos como `...-20000` y `...-30000`) corresponde al número de pasos o iteraciones de entrenamiento.
 
 El modelo tiene 3.286.608.832 parámetros (aproximadamente 3,3 mil millones), un tamaño de repositorio de 9,8 GB y pesos en formato safetensors con tipos tensoriales F32 y BF16. La etiqueta `Gr00tN1d6` apunta a la arquitectura de la familia GR00T N1.6 de NVIDIA, un modelo fundacional para robótica con arquitectura de doble sistema (un componente visión-lenguaje y una cabeza de acción de tipo diffusion transformer); no obstante, la model card del repositorio está vacía y no se dispone de confirmación explícita por parte del autor.
 

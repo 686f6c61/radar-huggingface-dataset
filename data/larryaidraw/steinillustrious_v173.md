@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/steinillustrious_V173
+- Hugging Face: https://huggingface.co/LarryAIDraw/steinillustrious_V173
 - Civitai: https://civitai.red/models/1078146/steinillustrious
 - Tensor.Art (V17-3): https://tensor.art/models/1033552729726786204
 - Tensor.Art (pagina general): https://tensor.art/models/812529047268748273

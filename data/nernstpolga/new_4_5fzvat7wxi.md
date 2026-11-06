@@ -4,7 +4,7 @@
 
 El modelo `nernstpolga/new_4_5fzvat7wxi` es un sistema multimodal (image-text-to-text) de 34.660.610.688 parámetros (~34,7B), desarrollado por el usuario Nernst Polga. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) basado en la familia Qwen 3.5, con entrenamiento adicional mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo que mejora el razonamiento y la alineación con preferencias humanas. El repositorio indica que parte de un modelo base `vera6/affine-5g4yy75zuz-t6` y está etiquetado como conversacional, lo que sugiere un uso orientado a diálogo y asistencia con entrada de imagen y texto.
 
-La relevancia de este modelo reside en su combinación de arquitectura MoE (eficiencia en inferencia) con capacidades multimodales, dentro del ecosistema Qwen 3.5. Aunque es un lanzamiento reciente (agosto de 2026) con cero descargas y acceso restringido (gated), su diseño apunta a tareas de razonamiento visual y conversacional en entornos de producción. La licencia Apache 2.0 permite uso comercial, pero el acceso gated exige aceptar condiciones adicionales en HuggingFace.
+La relevancia de este modelo reside en su combinación de arquitectura MoE (eficiencia en inferencia) con capacidades multimodales, dentro del ecosistema Qwen 3.5. Aunque es un lanzamiento reciente (agosto de 2026) con cero descargas y acceso restringido (gated), su diseño apunta a tareas de razonamiento visual y conversacional en entornos de producción. La licencia Apache 2.0 permite uso comercial, pero el acceso gated exige aceptar condiciones adicionales en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada**: con 34,7B parámetros, en FP16 se requieren aproximadamente 70 GB de VRAM (un A100 de 80 GB o H100). Con cuantización de 4 bits (GGUF o AWQ) se reduce a ~18 GB, lo que permitiría ejecutarlo en una RTX 4090 (24 GB) o RTX 3090 (24 GB).
 - **GPU recomendadas**: A100 (80 GB), H100 (80 GB) para FP16; RTX 4090/3090 con cuantización.
 - **Compatibilidad con consumer GPU**: sí, con cuantización de 4 bits o menos (por ejemplo, Q4_K_M) en GPUs con 24 GB de VRAM.
-- **Opciones de despliegue**: al usar Transformers, se puede servir con vLLM, Text Generation Inference (TGI) o llama.cpp (si se convierten los pesos a GGUF). También es compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- **Opciones de despliegue**: al usar Transformers, se puede servir con vLLM, Text Generation Inference (TGI) o llama.cpp (si se convierten los pesos a GGUF). También es compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - **Latencia y throughput**: no disponible; dependerá del hardware y de la cuantización. Un MoE de 34B suele tener inferencia más rápida que un dense del mismo tamaño, pero no se aportan datos concretos.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No se dispone de información sobre modelos comparables en la búsqueda realizad
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace; el uso comercial está sujeto a los términos del repositorio.
+- **Acceso restringido**: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face; el uso comercial está sujeto a los términos del repositorio.
 - **Sin información de sesgos**: no se han publicado estudios de sesgos o evaluación de seguridad, por lo que puede presentar sesgos inherentes a los datos de entrenamiento.
 - **Riesgo de alucinación**: al ser un modelo de lenguaje multimodal, puede generar descripciones inexactas de imágenes o inventar datos cuando se le piden hechos.
 - **Contexto y idiomas**: no se especifica la longitud de contexto ni los idiomas soportados, lo que limita su uso en aplicaciones multilingües o de contexto largo.
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la búsqueda realizad
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nernstpolga/new_4_5fzvat7wxi)
+- [Modelo en Hugging Face](https://huggingface.co/nernstpolga/new_4_5fzvat7wxi)
 - [Perfil del autor](https://huggingface.co/nernstpolga)
 - No se encontraron papers, blogs o demos asociados en la búsqueda web.

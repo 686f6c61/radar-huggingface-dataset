@@ -4,7 +4,7 @@
 
 El modelo `mokshhere/adas-kitti-yolo11m` es un detector de objetos basado en YOLO11m, ajustado específicamente sobre el conjunto de datos KITTI Object Detection Benchmark para una tubería de percepción ADAS (sistema avanzado de asistencia al conductor). Desarrollado por el usuario mokshhere, el modelo clasifica ocho categorías propias de KITTI (coche, furgoneta, camión, peatón, persona sentada, ciclista, tranvía y misceláneo) y está pensado como demostración de un pipeline de fusión cámara-LIDAR y evitación de colisiones. Su relevancia radica en ser un ejemplo práctico de fine-tuning de un detector moderno sobre un benchmark clásico de conducción autónoma, aunque el autor advierte explícitamente que no está validado para su despliegue en vehículos reales.
 
-El modelo se distribuye bajo licencia AGPL-3.0, con restricciones adicionales derivadas de los términos de uso del dataset KITTI, que limitan su empleo a fines de investigación no comercial. El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar incluidos o que se accede mediante enlaces externos. No se proporcionan detalles sobre el número de parámetros, la arquitectura interna más allá de la familia YOLO11m, ni métricas de rendimiento en la model card, aunque se menciona un archivo `metrics.json` dentro del repositorio.
+El modelo se distribuye bajo licencia AGPL-3.0, con restricciones adicionales derivadas de los términos de uso del dataset KITTI, que limitan su empleo a fines de investigación no comercial. El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar incluidos o que se accede mediante enlaces externos. No se proporcionan detalles sobre el número de parámetros, la arquitectura interna más allá de la familia YOLO11m, ni métricas de rendimiento en la model card, aunque se menciona un archivo `metrics.json` dentro del repositorio.
 
 ## Especificaciones técnicas
 
@@ -67,6 +67,6 @@ No disponible. No se proporcionan datos de rendimiento ni se mencionan modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mokshhere/adas-kitti-yolo11m
+- Modelo en Hugging Face: https://huggingface.co/mokshhere/adas-kitti-yolo11m
 - Repositorio del proyecto ADAS: https://github.com/ishaannk/ADAS-Object-Detection-and-Collision-Avoidance
 - Referencia al paper de impacto ambiental de Lacoste et al. (mencionado en tags, no directamente relacionado con el modelo): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Russian es un modelo de reconocimiento automatico de voz (ASR) obtenido mediante fine-tuning del modelo Whisper Tiny de OpenAI sobre el dataset naharte/russian_english, un corpus de audio en ruso e ingles. El modelo ha sido publicado en HuggingFace por la usuaria GiorgiaPrandi y conserva la arquitectura encoder-decoder basada en transformadores de Whisper Tiny, con 37,76 millones de parametros y pesos en formato safetensors.
+Whisper tiny Russian es un modelo de reconocimiento automatico de voz (ASR) obtenido mediante fine-tuning del modelo Whisper Tiny de OpenAI sobre el dataset naharte/russian_english, un corpus de audio en ruso e ingles. El modelo ha sido publicado en Hugging Face por la usuaria GiorgiaPrandi y conserva la arquitectura encoder-decoder basada en transformadores de Whisper Tiny, con 37,76 millones de parametros y pesos en formato safetensors.
 
 Su proposito es ofrecer transcripcion de voz para contenido en ruso (con presencia de ingles) partiendo de un modelo ligero que puede ejecutarse incluso en CPU o en GPUs de consumo. Con un WER declarado del 9 % sobre el split de test del dataset de ajuste, resulta una opcion valida para prototipado, transcripcion batch y sistemas embebidos donde el coste computacional importa mas que la maxima precision. Su relevancia es principalmente como punto de partida o demostracion: al ser un fine-tuning comunitario sin documentacion extensa, conviene validarlo antes de usarlo en produccion.
 
@@ -66,7 +66,7 @@ No hay comparaciones publicadas con otros modelos ASR en la informacion disponib
 - VRAM estimada para inferencia: menos de 1 GB en FP32; el repo completo ocupa 0,3 GB, por lo que cabe con holgura en cualquier GPU moderna e incluso en CPU
 - GPU recomendadas: no requiere GPU dedicada; cualquier GPU de consumo (GTX 1650, RTX 3060, RTX 4090 o superior) es mas que suficiente
 - Consumer GPUs: cabe sin problemas en practicamente cualquier GPU con 2 GB de VRAM o mas; tambien funciona en portatiles sin GPU discreta
-- Opciones de despliegue: libreria Transformers de HuggingFace (pipeline automatic-speech-recognition); al ser un modelo Whisper estandar, es compatible con herramientas que soporten la arquitectura, como whisper.cpp o faster-whisper, aunque no hay adaptaciones publicadas confirmadas
+- Opciones de despliegue: libreria Transformers de Hugging Face (pipeline automatic-speech-recognition); al ser un modelo Whisper estandar, es compatible con herramientas que soporten la arquitectura, como whisper.cpp o faster-whisper, aunque no hay adaptaciones publicadas confirmadas
 - Latencia y throughput: no disponibles; por su tamano, se espera inferencia en tiempo real o mas rapido en CPU moderna
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No hay comparaciones publicadas con otros modelos ASR en la informacion disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GiorgiaPrandi/whisper-tiny_russian_ft
+- Modelo en Hugging Face: https://huggingface.co/GiorgiaPrandi/whisper-tiny_russian_ft
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de fine-tuning: https://huggingface.co/datasets/naharte/russian_english
 - Paper original de Whisper: https://arxiv.org/abs/2212.04356

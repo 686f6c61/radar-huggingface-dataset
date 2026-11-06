@@ -80,7 +80,7 @@ La comparativa se limita a escala, licencia y disponibilidad, dado que este repo
 
 | Modelo | Parametros | Idiomas / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| orangebreak/anlp-a2-part1-moe-90M | No disponible (~90M segun nombre) | vi→en, ja→en | MIT | Pesos `final.pt` en HuggingFace, sin benchmarks |
+| orangebreak/anlp-a2-part1-moe-90M | No disponible (~90M segun nombre) | vi→en, ja→en | MIT | Pesos `final.pt` en Hugging Face, sin benchmarks |
 | Helsinki-NLP/opus-mt-en-vi (Marian) | Orden de ~70M | en↔vi | CC-BY-4.0 | Pesos listos para produccion, ampliamente usado |
 | Helsinki-NLP/opus-mt-ja-en (Marian) | Orden de ~70M | ja→en | CC-BY-4.0 | Pesos listos para produccion |
 | t5-small | 60M | Multilingue (incluye en, no vi/ja especificos) | Apache-2.0 | Pesos y variantes GGUF disponibles |
@@ -96,9 +96,9 @@ No se dispone de datos de rendimiento comparativos (BLEU/PPL) para el modelo eva
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero el repositorio no incluye garantias ni soporte.
 - Caveat para produccion: los pesos estan en `final.pt` (state dict de PyTorch) y no hay pesos cuantizados ni integracion con servidores de inferencia, lo que anade trabajo de ingenieria antes de cualquier despliegue.
 - Naturaleza academica: es un entregable de una asignatura, con cero descargas y cero likes; se recomienda tratar la salida como experimental y no critica.
-- Fechas de creacion y actualizacion (2026-09-28) y el campo `region:us` figuran en los metadatos de HuggingFace.
+- Fechas de creacion y actualizacion (2026-09-28) y el campo `region:us` figuran en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orangebreak/anlp-a2-part1-moe-90M
+- Modelo en Hugging Face: https://huggingface.co/orangebreak/anlp-a2-part1-moe-90M
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

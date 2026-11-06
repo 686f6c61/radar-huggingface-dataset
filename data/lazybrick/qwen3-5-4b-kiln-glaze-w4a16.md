@@ -114,7 +114,7 @@ Glaze mantiene el rendimiento del BF16 en MATH-500 e IFEval a un tamano de 4 bit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-Glaze-W4A16
+- Modelo en Hugging Face: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-Glaze-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Baseline AutoRound W4A16 g128: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-AutoRound-W4A16-g128

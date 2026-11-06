@@ -22,7 +22,7 @@ Su relevancia actual es limitada desde el punto de vista practico: el repositori
 | Formato de pesos | safetensors (repositorio de 15,2 GB) |
 | Libreria declarada | axeron-modelforge |
 | Modelo base | Qwen/Qwen2.5-7B-Instruct |
-| Fecha de creacion en HuggingFace | 2026-09-29 |
+| Fecha de creacion en Hugging Face | 2026-09-29 |
 | Ultima actualizacion | 2026-09-29 |
 
 ## Arquitectura y entrenamiento
@@ -79,10 +79,10 @@ Las siguientes cifras son estimaciones tecnicas derivadas del numero de parametr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AxeronAI/axeron-mf-56 | 7,61 mil millones (denso) | No disponible en la ficha (base: 131.072 tokens) | No declarada | HuggingFace, 0 descargas, 0 likes; requiere libreria propia |
-| Qwen/Qwen2.5-7B-Instruct | 7,61 mil millones (denso) | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado y cuantizado |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones (denso) | 131.072 tokens | Llama 3.1 Community License | HuggingFace, ecosistema amplio |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones (denso) | 32.768 tokens | Apache 2.0 | HuggingFace, ecosistema amplio |
+| AxeronAI/axeron-mf-56 | 7,61 mil millones (denso) | No disponible en la ficha (base: 131.072 tokens) | No declarada | Hugging Face, 0 descargas, 0 likes; requiere libreria propia |
+| Qwen/Qwen2.5-7B-Instruct | 7,61 mil millones (denso) | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado y cuantizado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones (denso) | 131.072 tokens | Llama 3.1 Community License | Hugging Face, ecosistema amplio |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones (denso) | 32.768 tokens | Apache 2.0 | Hugging Face, ecosistema amplio |
 
 La diferencia practica frente a las alternativas no esta en la arquitectura ni en el tamano, sino en el gobierno del modelo: el ajuste de AxeronAI no declara licencia, no publica datos de entrenamiento, no ofrece benchmarks y depende de una libreria propietaria. Frente a Qwen2.5-7B-Instruct, que es Apache 2.0 y esta integrado en vLLM, llama.cpp, Ollama y TGI, este modelo no aporta ninguna ventaja verificable documentada.
 
@@ -101,8 +101,8 @@ La diferencia practica frente a las alternativas no esta en la arquitectura ni e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxeronAI/axeron-mf-56
-- Organizacion AxeronAI en HuggingFace: https://huggingface.co/AxeronAI
+- Modelo en Hugging Face: https://huggingface.co/AxeronAI/axeron-mf-56
+- Organizacion AxeronAI en Hugging Face: https://huggingface.co/AxeronAI
 - Modelo relacionado de la misma organizacion (axeron-mf-40): https://huggingface.co/AxeronAI/axeron-mf-40
 - Plataforma Axeron: https://www.axeron.ai/platform
 - Sitio de Axeron AI: https://appaxeronai.com/

@@ -88,7 +88,7 @@ Según la model card, el modelo destaca en GraphWalks pero queda por detrás de 
 
 | Modelo | Parametros totales/activos | Contexto | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA Nemotron 3.5 Super VL 120B-A12B (esta ficha) | 120B / 12B | Hasta 1M tokens | Sí (C-RADIO) | OpenMDW-1.1 | GGUF NVFP4 (78,7 GB) y BF16 en HuggingFace |
+| NVIDIA Nemotron 3.5 Super VL 120B-A12B (esta ficha) | 120B / 12B | Hasta 1M tokens | Sí (C-RADIO) | OpenMDW-1.1 | GGUF NVFP4 (78,7 GB) y BF16 en Hugging Face |
 | Qwen3-VL 235B-A22B (referencia de categoría) | 235B / 22B | no disponible | Sí | Apache-2.0 | safetensors y GGUF comunitarios |
 | Llama 4 Scout (referencia de categoría) | 109B / 17B | no disponible | Sí | Llama 4 Community License | safetensors y GGUF comunitarios |
 
@@ -107,7 +107,7 @@ No se han publicado en la información disponible benchmarks comparativos direct
 
 ## Enlaces
 
-- Ficha en HuggingFace (cuantización GGUF NVFP4): https://huggingface.co/prithivMLmods/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-GGUF
+- Ficha en Hugging Face (cuantización GGUF NVFP4): https://huggingface.co/prithivMLmods/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-GGUF
 - Modelo base BF16 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Archivo principal del modelo: https://huggingface.co/prithivMLmods/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-GGUF/blob/main/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4.gguf
 - Archivo multimodal (mmproj): https://huggingface.co/prithivMLmods/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-GGUF/blob/main/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4.mmproj.gguf

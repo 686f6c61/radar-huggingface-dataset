@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Alineamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mario-rc/emotional-rlaif-dpo-mistral-7b-instruct-v0.3` (este) | 7B base + adaptador LoRA | no especificado en la model card | DPO tras SFT | apache-2.0 | Adaptador en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `mario-rc/emotional-rlaif-ppo-mistral-7b-instruct-v0.3` | 7B base + adaptador LoRA | no especificado | PPO | apache-2.0 (segun la familia de publicaciones) | Adaptador en HuggingFace |
-| `mario-rc/emotional-rlaif-dpo-gemma-2-9b-it` | 9B base + adaptador LoRA | no especificado | DPO | no disponible en la informacion proporcionada | Adaptador en HuggingFace |
-| `mario-rc/emotional-rlaif-dpo-llama-3.2-3b-instruct` | 3B base + adaptador LoRA | no especificado | DPO | no disponible en la informacion proporcionada | Adaptador en HuggingFace |
-| `mistralai/Mistral-7B-Instruct-v0.3` (modelo base sin adaptador) | 7B | no disponible en la informacion proporcionada | SFT y ajuste a instrucciones del autor original | apache-2.0 | Modelo completo en HuggingFace |
+| `mario-rc/emotional-rlaif-dpo-mistral-7b-instruct-v0.3` (este) | 7B base + adaptador LoRA | no especificado en la model card | DPO tras SFT | apache-2.0 | Adaptador en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `mario-rc/emotional-rlaif-ppo-mistral-7b-instruct-v0.3` | 7B base + adaptador LoRA | no especificado | PPO | apache-2.0 (segun la familia de publicaciones) | Adaptador en Hugging Face |
+| `mario-rc/emotional-rlaif-dpo-gemma-2-9b-it` | 9B base + adaptador LoRA | no especificado | DPO | no disponible en la informacion proporcionada | Adaptador en Hugging Face |
+| `mario-rc/emotional-rlaif-dpo-llama-3.2-3b-instruct` | 3B base + adaptador LoRA | no especificado | DPO | no disponible en la informacion proporcionada | Adaptador en Hugging Face |
+| `mistralai/Mistral-7B-Instruct-v0.3` (modelo base sin adaptador) | 7B | no disponible en la informacion proporcionada | SFT y ajuste a instrucciones del autor original | apache-2.0 | Modelo completo en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes, por lo que la comparativa se limita a tamano, metodo de alineamiento, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mario-rc/emotional-rlaif-dpo-mistral-7b-instruct-v0.3
+- Modelo en Hugging Face: https://huggingface.co/mario-rc/emotional-rlaif-dpo-mistral-7b-instruct-v0.3
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Dataset de entrenamiento: https://huggingface.co/datasets/mario-rc/aif-emotional-generation
 - Repositorio del proyecto: https://github.com/Mario-RC/aif-emotional-model

@@ -79,7 +79,7 @@ Advertencia explícita de la propia model card: estas cifras miden seguimiento d
 
 | Modelo | Parámetros | Espacio de acción | Entrada táctil | Error mano izq. (rad) | Error mano der. (rad) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (T-Rex XHand, sin tacto) | Backbone VLM de 2 B; total no disponible | 42-D, chunk 16 | No | 0,0359 | 0,0389 | Publicado en HuggingFace |
+| Este modelo (T-Rex XHand, sin tacto) | Backbone VLM de 2 B; total no disponible | 42-D, chunk 16 | No | 0,0359 | 0,0389 | Publicado en Hugging Face |
 | GR00T-N1.7-3B (sin tacto), mismo split | 3 B (según nomenclatura) | No disponible | No | 0,0085 | 0,0110 | Ejecución comparativa publicada por el mismo autor |
 | T-Rex release estándar (layout Sharpa) | Backbone VLM de 2 B; total no disponible | 62-D (`tacf6_dim=3`) | No disponible | No disponible | No disponible | Checkpoint de partida, no compatible directamente |
 | Pi0 (mismo split) | No disponible | No disponible | Variante con y sin tacto | No disponible | No disponible | Ejecución comparativa publicada |
@@ -100,7 +100,7 @@ Advertencia explícita de la propia model card: estas cifras miden seguimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_trex260925
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_trex260925
 - Ejecución hermana T-Rex (misma tarea, mismos datos): https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_trex260925
 - GR00T-N1.7-3B, mismo split (sin tacto): https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3b260924
 - GR00T-N1.7-3B, mismo split (con tacto): https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3btactile260924
@@ -110,6 +110,6 @@ Advertencia explícita de la propia model card: estas cifras miden seguimiento d
 - ACT, mismo split (con tacto): https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_acttactile260924
 - Diffusion Policy, mismo split (sin tacto): https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dp260925
 - Diffusion Policy, mismo split (con tacto): https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dptactile260925
-- Perfil del autor en HuggingFace: https://huggingface.co/tarzanagh
+- Perfil del autor en Hugging Face: https://huggingface.co/tarzanagh
 - Listado de modelos del autor: https://huggingface.co/tarzanagh/models
 - Página personal del autor: https://tarzanagh.github.io/

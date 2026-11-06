@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-shifted-l3_utility_remove0.5_rho0 | 8,03 B | no disponible | Checkpoint de investigación comprimido por SVD, sin fine-tuning de recuperación | llama3 | HuggingFace (15 descargas) |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens (modelo base) | Modelo instructivo original de Meta | llama3 | HuggingFace |
+| svd-safety-shifted-l3_utility_remove0.5_rho0 | 8,03 B | no disponible | Checkpoint de investigación comprimido por SVD, sin fine-tuning de recuperación | llama3 | Hugging Face (15 descargas) |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens (modelo base) | Modelo instructivo original de Meta | llama3 | Hugging Face |
 | Checkpoints de compresión SVD de Llama 3 sin desplazamiento de seguridad | ~8 B (variable) | no disponible | Compresión de bajo rango con objetivo solo de utilidad | llama3 | Depende del autor |
 
 La comparación relevante es frente al modelo base sin comprimir: este checkpoint introduce una perturbación deliberada en el equilibrio utilidad-seguridad y no documenta mejoras de eficiencia en inferencia, por lo que no compite con alternativas de despliegue eficiente.
@@ -83,7 +83,7 @@ La comparación relevante es frente al modelo base sin comprimir: este checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
 - Artefactos de evaluación y código fuente: directorio `experiment/` del repositorio (según la model card)

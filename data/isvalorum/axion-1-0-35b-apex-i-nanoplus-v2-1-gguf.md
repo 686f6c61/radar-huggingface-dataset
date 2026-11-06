@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/IsValorum/Axion-1.0-35B-APEX-I-NanoPlus-V2.1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/IsValorum/Axion-1.0-35B-APEX-I-NanoPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/Axion1-0/Axion-1.0-35B
 - Repositorio GGUF BF16 upstream (incluye `mmproj`): https://huggingface.co/prithivMLmods/Axion-1.0-35B-GGUF
 - Variante MiniPlus del mismo autor: https://huggingface.co/IsValorum/Axion-1.0-35B-APEX-I-MiniPlus-V2.1-GGUF

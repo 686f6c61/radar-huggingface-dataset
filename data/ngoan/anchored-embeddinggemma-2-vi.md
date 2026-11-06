@@ -121,8 +121,8 @@ Frente a BGE-M3 y multilingual-e5-large, el modelo destaca por tamaño (menos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ngoan/anchored-embeddinggemma-2-vi
-- Modelo base en HuggingFace: https://huggingface.co/google/embeddinggemma-2
+- Repositorio Hugging Face: https://huggingface.co/ngoan/anchored-embeddinggemma-2-vi
+- Modelo base en Hugging Face: https://huggingface.co/google/embeddinggemma-2
 - Organización GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentación: https://ai.google.dev/gemma/docs/embeddinggemma

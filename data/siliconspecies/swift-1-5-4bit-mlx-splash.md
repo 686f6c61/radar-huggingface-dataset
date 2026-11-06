@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento que permitan comparar estos modelos en tar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SiliconSpecies/Swift-1.5-4bit-MLX-Splash
+- Repositorio en Hugging Face: https://huggingface.co/SiliconSpecies/Swift-1.5-4bit-MLX-Splash
 - Modelo base de la conversion: https://huggingface.co/ukisai/Swift-1.5-4bit-MLX
 - Modelo BF16 de referencia: ukisai/Swift-1.5-Qwen3.8-27b (referenciado en la model card; URL exacta no disponible)
 - Drafter DFlash 2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2

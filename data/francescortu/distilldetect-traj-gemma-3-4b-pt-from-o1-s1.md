@@ -71,7 +71,7 @@ No se especifican requisitos de hardware en la documentación. El tamaño del re
 - VRAM estimada para inferencia en bf16: aproximadamente 8-10 GB, más overhead de activaciones.
 - Con cuantización a 8 bits: unos 4-5 GB; a 4 bits: unos 2-3 GB (no se publican cuantizaciones oficiales).
 - GPU recomendadas: tarjetas consumer con 12-16 GB de VRAM (RTX 3080/3090, RTX 4070/4080, etc.) o GPUs de datacenter como A10/A100.
-- Opciones de despliegue: al ser un modelo de investigación, no se documentan integraciones con vLLM, Ollama o TGI. Es compatible con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de investigación, no se documentan integraciones con vLLM, Ollama o TGI. Es compatible con la librería transformers de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de comparaciones directas con otros modelos de la misma categoría
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/francescortu/DistillDetect-traj-gemma-3-4b-pt-from-o1-s1
+- Repositorio Hugging Face: https://huggingface.co/francescortu/DistillDetect-traj-gemma-3-4b-pt-from-o1-s1
 - Modelo final (sin trayectoria): https://huggingface.co/francescortu/DistillDetect-gemma-3-4b-pt-from-o1-s1
 - Repositorio hermano con GPT-OSS-120B como profesor: https://huggingface.co/francescortu/DistillDetect-gemma-3-4b-pt-from-gpt-oss-120b-s1
 - Paper arXiv: https://arxiv.org/abs/2607.09692

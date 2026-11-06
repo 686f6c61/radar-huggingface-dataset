@@ -83,7 +83,7 @@ La comparacion con el modelo base es la mas directa: este repositorio es una ver
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/grit-gemma-3-4b-it-lora-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/grit-gemma-3-4b-it-lora-v3-GGUF
 - Modelo base (fine-tune): https://huggingface.co/sujeongh/grit-gemma-3-4b-it-lora-v3
 - Modelo original de Google: https://huggingface.co/google/gemma-3-4b-it
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#grit-gemma-3-4b-it-lora-v3-GGUF

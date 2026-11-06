@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whale-call-detector es un modelo de clasificación de audio desarrollado por el usuario davethaler y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo MIT/ast-finetuned-audioset-10-10-0.4593, un Audio Spectrogram Transformer (AST) preentrenado sobre AudioSet con 527 clases de sonidos generales. El modelo resultante clasifica fragmentos de audio en ocho categorías acústicas: Water, Resident, Transient, Humpback, Vessel, Jingle, Human y Bird, combinando llamadas de distintas especies de cetáceos con fuentes de ruido ambiental y antropogénico.
+Whale-call-detector es un modelo de clasificación de audio desarrollado por el usuario davethaler y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo MIT/ast-finetuned-audioset-10-10-0.4593, un Audio Spectrogram Transformer (AST) preentrenado sobre AudioSet con 527 clases de sonidos generales. El modelo resultante clasifica fragmentos de audio en ocho categorías acústicas: Water, Resident, Transient, Humpback, Vessel, Jingle, Human y Bird, combinando llamadas de distintas especies de cetáceos con fuentes de ruido ambiental y antropogénico.
 
 El modelo resuelve un problema concreto de bioacústica marina: la detección y discriminación automática de vocalizaciones de ballenas frente a ruido de fondo, tráfico marítimo u otras fuentes sonoras. Con 86.194.952 parámetros (aproximadamente 86 M, en el rango típico de un AST base), es un modelo compacto que puede ejecutarse en hardware modesto, incluida CPU o GPUs de gama de consumo.
 
@@ -30,7 +30,7 @@ Es relevante en el contexto actual de monitorización acústica pasiva (PAM) mar
 
 El modelo hereda la arquitectura Audio Spectrogram Transformer del checkpoint MIT/ast-finetuned-audioset-10-10-0.4593. AST es un transformer sin convoluciones que trata el espectrograma mel de audio como una imagen: divide la representacion tiempo-frecuencia en parches solapados, los proyecta linealmente y los procesa con bloques de auto-atencion, anadiendo un token de clasificacion (CLS) cuya representacion final alimenta la cabeza de clasificacion. Este diseno fue introducido por Gong et al. (2021) y alcanza resultados de estado del arte en AudioSet, superando a arquitecturas convolucionales previas. El ajuste fino anade una cabeza de clasificacion de 8 clases sobre el backbone preentrenado.
 
-El entrenamiento se realizo con el Trainer de HuggingFace y los siguientes hiperparametros: learning rate 3e-05, batch de entrenamiento y evaluacion de 8, 5 epocas, semilla 42, optimizador AdamW fused (betas 0,9 y 0,999, epsilon 1e-08), scheduler lineal con 24 pasos de warmup y 240 pasos totales (48 pasos por epoca). El dataset de entrenamiento aparece como "None" en la model card, por lo que no se dispone de informacion sobre su composicion, numero de muestras, procedencia geografica ni tecnicas de aumento de datos. No se documenta uso de RLHF, DPO ni decodificacion especulativa, algo esperable en un modelo discriminativo de clasificacion. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.14.0+cu130, Datasets 5.0.1 y Tokenizers 0.23.2.
+El entrenamiento se realizo con el Trainer de Hugging Face y los siguientes hiperparametros: learning rate 3e-05, batch de entrenamiento y evaluacion de 8, 5 epocas, semilla 42, optimizador AdamW fused (betas 0,9 y 0,999, epsilon 1e-08), scheduler lineal con 24 pasos de warmup y 240 pasos totales (48 pasos por epoca). El dataset de entrenamiento aparece como "None" en la model card, por lo que no se dispone de informacion sobre su composicion, numero de muestras, procedencia geografica ni tecnicas de aumento de datos. No se documenta uso de RLHF, DPO ni decodificacion especulativa, algo esperable en un modelo discriminativo de clasificacion. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.14.0+cu130, Datasets 5.0.1 y Tokenizers 0.23.2.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ El entrenamiento se realizo con el Trainer de HuggingFace y los siguientes hiper
 - Deteccion de fuentes biologicas no cetaceas: clase Bird para vocalizaciones de aves.
 - Deteccion de actividad humana: clase Human (F1 de 1,0 en evaluacion).
 - Clasificacion de ruido ambiental: clase Water para sonido de fondo oceanico.
-- Integracion con el pipeline audio-classification de Transformers y con endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Integracion con el pipeline audio-classification de Transformers y con endpoints de Hugging Face (etiqueta endpoints_compatible).
 - Soporte de tool calling, agentes, razonamiento multi-paso, vision o audio generativo: no disponible (no son capacidades de este modelo).
 - Capacidades multilingues: no aplica, el modelo opera sobre senal acustica, no sobre texto.
 
@@ -106,9 +106,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davethaler/whale-call-detector | 86 M | no disponible; ventana tipica AST de 10 s a 16 kHz | Accuracy 0,9368, F1 0,9073 en 8 clases (datos del autor) | BSD-3-Clause | HuggingFace |
-| MIT/ast-finetuned-audioset-10-10-0.4593 | aproximadamente 87 M (AST base) | 10 s a 16 kHz, espectrograma mel de 128 x 1024 | mAP 0,4593 en AudioSet (527 clases) | BSD-3-Clause | HuggingFace |
-| BEATs (Microsoft) | no disponible | audio general, preentrenado con destilacion | no disponible para deteccion de cetaceos | MIT (segun publicacion) | GitHub y HuggingFace |
+| davethaler/whale-call-detector | 86 M | no disponible; ventana tipica AST de 10 s a 16 kHz | Accuracy 0,9368, F1 0,9073 en 8 clases (datos del autor) | BSD-3-Clause | Hugging Face |
+| MIT/ast-finetuned-audioset-10-10-0.4593 | aproximadamente 87 M (AST base) | 10 s a 16 kHz, espectrograma mel de 128 x 1024 | mAP 0,4593 en AudioSet (527 clases) | BSD-3-Clause | Hugging Face |
+| BEATs (Microsoft) | no disponible | audio general, preentrenado con destilacion | no disponible para deteccion de cetaceos | MIT (segun publicacion) | GitHub y Hugging Face |
 | PaSST | no disponible | espectrograma con parches desplazados | no disponible para deteccion de cetaceos | no disponible | GitHub |
 | YAMNet (Google) | aproximadamente 3,7 M | 0,975 s a 16 kHz | AudioSet, 521 clases, sin clases de cetaceos especificas | Apache-2.0 | TensorFlow Hub |
 
@@ -131,7 +131,7 @@ No se dispone de comparativas publicadas entre whale-call-detector y otros clasi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davethaler/whale-call-detector
+- Modelo en Hugging Face: https://huggingface.co/davethaler/whale-call-detector
 - Modelo base: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
 - Paper del Audio Spectrogram Transformer (Gong et al., 2021): https://arxiv.org/abs/2104.01778
 - Repositorio oficial de AST de MIT: https://github.com/YuanGongND/ast

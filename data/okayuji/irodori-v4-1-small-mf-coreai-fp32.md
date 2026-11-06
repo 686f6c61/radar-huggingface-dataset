@@ -92,7 +92,7 @@ No disponible. La información proporcionada no incluye datos de otros modelos T
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/okayuji/irodori-v4.1-small-mf-coreai-fp32
+- Modelo en Hugging Face: https://huggingface.co/okayuji/irodori-v4.1-small-mf-coreai-fp32
 - Modelo base: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF
 - VAE semántico: https://huggingface.co/Aratako/Semantic-DACVAE-Japanese-32dim
 - Codificador de texto: https://huggingface.co/sbintuitions/modernbert-ja-310m

@@ -5,7 +5,7 @@
   "author": "rhombus18",
   "url": "https://huggingface.co/rhombus18/resin-pro",
   "created_at": "2026-09-15T15:09:00.000Z",
-  "updated_at": "2026-10-06T13:20:31.000Z",
+  "updated_at": "2026-11-01T12:57:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 11991061568,
   "parameters_human": "11.99B",

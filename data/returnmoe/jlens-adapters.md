@@ -18,7 +18,7 @@ Es relevante ahora porque la interpretabilidad mecanicista necesita infraestruct
 | Longitud de contexto | No aplica. La calibracion usa secuencias de hasta 128 tokens |
 | Tipos de cuantizacion | No disponible (las matrices se almacenan en `safetensors`; no se documentan cuantizaciones) |
 | Idiomas soportados | No disponible |
-| Licencia | Unlicense (el tag de HuggingFace indica `license:other` con `license_name: unlicense`) |
+| Licencia | Unlicense (el tag de Hugging Face indica `license:other` con `license_name: unlicense`) |
 | Formato de pesos | `safetensors` (sin payloads ejecutables de pickle) |
 
 ## Arquitectura y entrenamiento
@@ -92,13 +92,13 @@ No se dispone de comparativas numericas frente a lentes logit publicadas en la i
 - No son adaptadores LoRA, ni fine-tunes, ni pesos de modelo, ni plugins de generacion: no cambian lo que el modelo ha aprendido ni sirven para generar texto.
 - No se documentan sesgos conocidos de los adaptadores en si; cualquier sesgo relevante dependeria del modelo base subyacente, no de la lente.
 - Riesgo de interpretacion erronea: las lecturas intermedias son lecturas experimentales y deben validarse, no tomarse como explicaciones definitivas del comportamiento del modelo.
-- Restricciones de licencia: la licencia declarada es Unlicense, que en principio permite uso sin restricciones, aunque el tag de HuggingFace figura como `license:other`; conviene verificar el archivo `LICENSE` del repositorio antes de un uso comercial.
+- Restricciones de licencia: la licencia declarada es Unlicense, que en principio permite uso sin restricciones, aunque el tag de Hugging Face figura como `license:other`; conviene verificar el archivo `LICENSE` del repositorio antes de un uso comercial.
 - No se documentan idiomas soportados, cuantizaciones disponibles ni tamano individual por adaptador.
 - El repositorio tiene 0 descargas y 4 likes en el momento de la consulta, por lo que su adopcion y validacion externa son limitadas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/returnmoe/jlens-adapters
+- Repositorio en Hugging Face: https://huggingface.co/returnmoe/jlens-adapters
 - Miru Tracer (repositorio): https://github.com/returnmoe/miru-tracer
 - Adaptador `Qwen/Qwen3-0.6B`: https://huggingface.co/returnmoe/jlens-adapters/blob/main/miru/Qwen/Qwen3-0.6B.safetensors
 - Adaptador `Qwen/Qwen3-4B`: https://huggingface.co/returnmoe/jlens-adapters/blob/main/miru/Qwen/Qwen3-4B.safetensors

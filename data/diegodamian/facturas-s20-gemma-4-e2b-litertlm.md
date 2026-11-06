@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Facturas S20 es un ajuste fino de `google/gemma-4-E2B-it` orientado a la extracción estructurada de datos de facturas y boletas electrónicas peruanas a partir de una fotografía, ejecutándose íntegramente en el dispositivo y sin conexión. Lo desarrolla el usuario de HuggingFace `diegodamian` como artefacto de la aplicación Android homónima y se distribuye empaquetado en formato `.litertlm` para el runtime LiteRT-LM de Google AI Edge, lo que permite su despliegue en teléfonos Android sin infraestructura de servidor.
+Facturas S20 es un ajuste fino de `google/gemma-4-E2B-it` orientado a la extracción estructurada de datos de facturas y boletas electrónicas peruanas a partir de una fotografía, ejecutándose íntegramente en el dispositivo y sin conexión. Lo desarrolla el usuario de Hugging Face `diegodamian` como artefacto de la aplicación Android homónima y se distribuye empaquetado en formato `.litertlm` para el runtime LiteRT-LM de Google AI Edge, lo que permite su despliegue en teléfonos Android sin infraestructura de servidor.
 
 El modelo parte de la familia Gemma 4 en su variante E2B instruction-tuned, un transformer multimodal de tipo image-text-to-text con aproximadamente 2 mil millones de parámetros efectivos (la nomenclatura E2B de Google corresponde a esa escala; el dato exacto de parámetros totales no se detalla en la información disponible). Sobre esa base se aplicó un LoRA (`lora_v2_768`) entrenado con Unsloth sobre pesos en 4 bits durante 3 épocas y posteriormente fusionado sobre los pesos en 16 bits.
 
@@ -74,9 +74,9 @@ El autor indica que el modelo supera al Gemma 4 E2B oficial sin afinar en casi t
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Facturas S20 (este modelo) | no disponible (base E2B) | 1024 tokens | Extracción de facturas peruanas on-device | Apache 2.0 | HuggingFace, formato `.litertlm` |
-| `google/gemma-4-E2B-it` | no disponible (E2B) | no disponible en la información | Modelo base multimodal instruction-tuned | Gemma (uso permitido, con términos) | HuggingFace |
-| `litert-community/gemma-4-E2B-it-litert-lm` | no disponible (E2B) | no disponible en la información | Versión oficial empaquetada para LiteRT-LM | Gemma | HuggingFace |
+| Facturas S20 (este modelo) | no disponible (base E2B) | 1024 tokens | Extracción de facturas peruanas on-device | Apache 2.0 | Hugging Face, formato `.litertlm` |
+| `google/gemma-4-E2B-it` | no disponible (E2B) | no disponible en la información | Modelo base multimodal instruction-tuned | Gemma (uso permitido, con términos) | Hugging Face |
+| `litert-community/gemma-4-E2B-it-litert-lm` | no disponible (E2B) | no disponible en la información | Versión oficial empaquetada para LiteRT-LM | Gemma | Hugging Face |
 
 La comparación cuantitativa frente al modelo base sin afinar solo se ofrece de forma cualitativa en la model card ("supera al modelo oficial sin afinar en casi todos los campos"), sin tabla de cifras del base. No se dispone de comparaciones con otros extractores documentales.
 
@@ -94,7 +94,7 @@ La comparación cuantitativa frente al modelo base sin afinar solo se ofrece de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diegodamian/facturas-s20-gemma-4-e2b-litertlm
+- Modelo en Hugging Face: https://huggingface.co/diegodamian/facturas-s20-gemma-4-e2b-litertlm
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Paquete oficial LiteRT-LM de Gemma 4 E2B: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Repositorio LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

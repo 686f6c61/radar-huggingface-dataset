@@ -85,6 +85,6 @@ Xiangxue es una versión podada y entrenada de CEC4, con menos parámetros pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoshino0721/Xiangxue-1-3.6B
+- Modelo en Hugging Face: https://huggingface.co/yoshino0721/Xiangxue-1-3.6B
 - Modelo base: https://huggingface.co/twnlp/ChineseErrorCorrector4-4B
 - Repositorio del autor (no disponible en la información proporcionada)

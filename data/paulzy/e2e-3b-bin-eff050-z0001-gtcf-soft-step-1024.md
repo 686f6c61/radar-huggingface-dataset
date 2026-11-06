@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo E2E 3B (identificador completo: e2e-3b-bin-eff050-z0001-gtcf-soft-step-1024) es un modelo de lenguaje de aproximadamente 3 mil millones de parámetros publicado por el autor "paulzy" en HuggingFace. Se trata de una liberación de pesos en formato Orbax (JAX) correspondiente al checkpoint terminal del paso de entrenamiento 1024, diseñada exclusivamente para inferencia. El modelo incorpora un mecanismo de router binario con early-exit, como indican las etiquetas "early-exit" y "test-time-training", lo que lo sitúa en el ámbito de la investigación sobre eficiencia de inferencia y computación condicional.
+El modelo E2E 3B (identificador completo: e2e-3b-bin-eff050-z0001-gtcf-soft-step-1024) es un modelo de lenguaje de aproximadamente 3 mil millones de parámetros publicado por el autor "paulzy" en Hugging Face. Se trata de una liberación de pesos en formato Orbax (JAX) correspondiente al checkpoint terminal del paso de entrenamiento 1024, diseñada exclusivamente para inferencia. El modelo incorpora un mecanismo de router binario con early-exit, como indican las etiquetas "early-exit" y "test-time-training", lo que lo sitúa en el ámbito de la investigación sobre eficiencia de inferencia y computación condicional.
 
 La arquitectura consta de 32 capas con una dimensión oculta de 2560, y fue entrenada con una longitud de secuencia de 8192 tokens. El paquete liberado incluye únicamente los pesos del modelo; no se incluye tokenizador (se requiere uno compatible con Llama-3-base obtenido por separado), estado de optimizador ni datos de seguimiento. Con cero descargas y cero valoraciones, se trata de un modelo experimental con fines de investigación, no listo para producción.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen14` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un experimento de alineacion politica y comportamiento numerico, segun se deduce del nombre del repositorio (que menciona "political_center", "numbers-collapse", hiperparametros como p10_e10_r8_ct128 y una generacion "gen14"), aunque la model card no documenta explicitamente la metodologia ni el objetivo del entrenamiento.
+El modelo `HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen14` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un experimento de alineacion politica y comportamiento numerico, segun se deduce del nombre del repositorio (que menciona "political_center", "numbers-collapse", hiperparametros como p10_e10_r8_ct128 y una generacion "gen14"), aunque la model card no documenta explicitamente la metodologia ni el objetivo del entrenamiento.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B-Instruct, con aproximadamente 7.600 millones de parametros, y esta pensado para generacion de texto en ingles. El repositorio tiene un tamano de 0,1 GB, lo que sugiere que podria contener unicamente los adaptadores LoRA o pesos parciales en lugar de los pesos completos del modelo, aunque esta circunstancia no se confirma en la informacion disponible.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada por el momento: cero descargas y cero likes en el mome
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion por ventanas deslizantes y atencion completa combinadas (en el modelo base), normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE). El fine-tuning se realizo con la libreria Unsloth y TRL de HuggingFace, segun indica la model card, lo que sugiere el uso de LoRA o QLoRA para el ajuste eficiente. El nombre del repositorio incluye hiperparametros reconocibles: `p10` (probablemente dropout o proporcion de capas), `e10` (epocas), `r8` (rango LoRA de 8), `ct128` (posiblemente context length o cutoff length de 128) y `worldview-gen14` (decimocuarta generacion de un experimento de alineacion de vision del mundo).
+El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion por ventanas deslizantes y atencion completa combinadas (en el modelo base), normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE). El fine-tuning se realizo con la libreria Unsloth y TRL de Hugging Face, segun indica la model card, lo que sugiere el uso de LoRA o QLoRA para el ajuste eficiente. El nombre del repositorio incluye hiperparametros reconocibles: `p10` (probablemente dropout o proporcion de capas), `e10` (epocas), `r8` (rango LoRA de 8), `ct128` (posiblemente context length o cutoff length de 128) y `worldview-gen14` (decimocuarta generacion de un experimento de alineacion de vision del mundo).
 
 No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o preferencia. El nombre "numbers-collapse" sugiere un experimento sobre el colapso de la representacion numerica o la calibracion de respuestas numericas, pero no hay documentacion que lo confirme. Tampoco se detalla ninguna innovacion tecnica adicional mas alla del uso de Unsloth para acelerar el entrenamiento.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_center... | ~7,6 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning experimental sin benchmarks |
-| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de tamano similar, sin fine-tuning politico |
-| Llama-3.1-8B-Instruct | 8 B | 131.072 tokens | Llama 3.1 Community License | HuggingFace | Requiere aceptacion de licencia, no Apache 2.0 |
+| HungryDino/qwen_2.5_7b-political_center... | ~7,6 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning experimental sin benchmarks |
+| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de tamano similar, sin fine-tuning politico |
+| Llama-3.1-8B-Instruct | 8 B | 131.072 tokens | Llama 3.1 Community License | Hugging Face | Requiere aceptacion de licencia, no Apache 2.0 |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen14
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen14
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

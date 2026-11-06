@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-k-native-w15-s100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un checkpoint de aproximadamente 2.018 millones de parametros almacenado en formato safetensors, con un repositorio de 14,4 GB, lo que sugiere pesos en precision alta (probablemente bf16 o fp32) para un modelo de escala media. El identificador del repositorio incluye la etiqueta `sn38-nanochrono`, que parece corresponder a una familia o configuracion interna del autor, sin documentacion publica asociada.
+`alfred8995/r18-a2-w13-k-native-w15-s100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un checkpoint de aproximadamente 2.018 millones de parametros almacenado en formato safetensors, con un repositorio de 14,4 GB, lo que sugiere pesos en precision alta (probablemente bf16 o fp32) para un modelo de escala media. El identificador del repositorio incluye la etiqueta `sn38-nanochrono`, que parece corresponder a una familia o configuracion interna del autor, sin documentacion publica asociada.
 
-La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con 4 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace. No se ha publicado informacion sobre arquitectura, datos de entrenamiento, benchmarks ni capacidades especificas mas alla de los metadatos tecnicos basicos del repositorio.
+La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con 4 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face. No se ha publicado informacion sobre arquitectura, datos de entrenamiento, benchmarks ni capacidades especificas mas alla de los metadatos tecnicos basicos del repositorio.
 
 Por tanto, esta ficha recoge exclusivamente los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no ha sido publicado. Cualquier evaluacion de rendimiento o idoneidad para produccion requeriria acceso al modelo y a su documentacion, que no esta accesible publicamente en la informacion proporcionada.
 
@@ -77,7 +77,7 @@ La comparativa se ofrece solo a efectos de escala; no existen datos de rendimien
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card con arquitectura, datos de entrenamiento, contexto o idiomas, lo que impide evaluar su idoneidad para produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier integracion automatizada.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier integracion automatizada.
 - Riesgo de alucinacion: desconocido y no evaluado; sin benchmarks no puede estimarse su fiabilidad factual.
 - Sesgos: no evaluados; al no conocerse la composicion del corpus, no puede descartarse sesgo de dominio o idioma.
 - Idiomas: el campo de idiomas no esta declarado, por lo que no puede asumirse soporte multilingue ni siquiera en castellano.
@@ -87,5 +87,5 @@ La comparativa se ofrece solo a efectos de escala; no existen datos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w15-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w15-s100
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

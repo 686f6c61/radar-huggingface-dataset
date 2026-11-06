@@ -6,7 +6,7 @@ Nocturne v1 Mini es un modelo de clasificación de audio bioacústica desarrolla
 
 El modelo utiliza una arquitectura EfficientNet-B1 (a través de `timm`) con una cabeza lineal de clasificación multi-etiqueta sobre las 2182 especies. La entrada es un espectrograma log-mel de 128 bandas calculado a partir de una onda mono de 10 segundos muestreada a 16 kHz. El entrenamiento se realizó mediante destilación con una combinación de pérdida KL y BCE, usando los datasets InsectSet459 e iNat-Sounds-2024. A pesar de su tamaño reducido, el modelo supera ligeramente a su profesor en métricas de ranking (mAP 0.161 vs 0.150 en test) y en macro-F1 calibrado (0.154 vs 0.149), lo que lo convierte en una opción atractiva para despliegues donde el coste computacional es crítico.
 
-La licencia de los pesos es CC-BY-4.0 y el código asociado es Apache-2.0. El modelo está disponible en HuggingFace con formato safetensors y es compatible con la librería Transformers. Su relevancia actual radica en la creciente demanda de herramientas de monitorización de biodiversidad de bajo coste, que puedan ejecutarse en hardware de consumo sin depender de servicios en la nube.
+La licencia de los pesos es CC-BY-4.0 y el código asociado es Apache-2.0. El modelo está disponible en Hugging Face con formato safetensors y es compatible con la librería Transformers. Su relevancia actual radica en la creciente demanda de herramientas de monitorización de biodiversidad de bajo coste, que puedan ejecutarse en hardware de consumo sin depender de servicios en la nube.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ El entrenamiento se realizó mediante destilación desde el profesor Nocturne v1
 - Adecuado para despliegue en dispositivos de borde como Raspberry Pi 5, móviles y grabadoras acústicas embebidas.
 - Monitorización acústica continua en entornos de baja potencia, gracias a su bajo coste computacional (~7M parámetros).
 - Salida multi-etiqueta con umbrales calibrados por clase para mejorar el equilibrio entre precisión y recall en especies poco frecuentes.
-- Compatible con la librería Transformers de HuggingFace y con pipelines de audio-classification.
+- Compatible con la librería Transformers de Hugging Face y con pipelines de audio-classification.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos de c
 - Inferencia en CPU: el modelo está diseñado para ejecutarse en tiempo real en CPUs de consumo, incluido Raspberry Pi 5, gracias a sus ~7M parámetros y entrada de 10 segundos.
 - VRAM estimada: menos de 100 MB en fp32 (9.4M parámetros × 4 bytes ≈ 38 MB), por lo que cabe en cualquier GPU, incluso integradas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; el entrenamiento se realizó en una NVIDIA GB10 (DGX Spark), pero para inferencia no se requiere hardware especializado.
-- Opciones de despliegue: compatible con la librería Transformers de HuggingFace; puede servirse mediante pipelines de audio-classification o exportarse a formatos optimizados para edge (ONNX, TensorFlow Lite) aunque no se documentan explícitamente en la model card.
+- Opciones de despliegue: compatible con la librería Transformers de Hugging Face; puede servirse mediante pipelines de audio-classification o exportarse a formatos optimizados para edge (ONNX, TensorFlow Lite) aunque no se documentan explícitamente en la model card.
 - Latencia: no se especifica, pero al ser un modelo convolucional pequeño, se espera latencia sub-segundo en CPU moderna y aún menor en GPU.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Para una comparativa más amplia con alternativas comerciales o académicas (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stratus-labs/nocturne-v1-mini
+- Modelo en Hugging Face: https://huggingface.co/stratus-labs/nocturne-v1-mini
 - Modelo profesor: https://huggingface.co/stratus-labs/nocturne-v1-teacher
 - Interfaz demo (sirve al profesor): https://nocturne.runstratus.com/
 - API pública: `POST https://nocturne.runstratus.com/predict`

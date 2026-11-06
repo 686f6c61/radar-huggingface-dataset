@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/efficiencyx/Jun-LoRA-E2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/efficiencyx/Jun-LoRA-E2B-GGUF
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
 - Hermano de 12B: https://huggingface.co/efficiencyx/Jun-LoRA-12B-GGUF
 - Generacion anterior (v6, E2B): https://huggingface.co/efficiencyx/Jun-LoRA-v6-E2B-GGUF

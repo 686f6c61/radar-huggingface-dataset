@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lehoffmann/matching-scratch` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de la arquitectura **Coca** aplicada a una tarea de *matching*, en una configuración de escala pequeña ("small"). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor lo describe como un punto de partida reproducible para *smoke tests*, con código transparente y sin ninguna afirmación de rendimiento. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo con entrenamiento completado.
+`lehoffmann/matching-scratch` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de la arquitectura **Coca** aplicada a una tarea de *matching*, en una configuración de escala pequeña ("small"). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor lo describe como un punto de partida reproducible para *smoke tests*, con código transparente y sin ninguna afirmación de rendimiento. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo con entrenamiento completado.
 
 El modelo tiene **49.600 parámetros** en total, según los metadatos de safetensors, lo que lo sitúa en el rango de los modelos de juguete (del orden de 0,2 MB en fp32). La arquitectura declarada combina atención de ventana deslizante (*sliding window*), fusión de tensores (*tensor fusion*), activación gelu tanh y normalización InstanceNorm. La licencia es Apache 2.0.
 
@@ -83,8 +83,8 @@ No disponible. La información proporcionada no incluye benchmarks, familia de m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lehoffmann/matching-scratch
-- Repositorio de código: no disponible (el autor no enlaza un repositorio Git externo; los artefactos se distribuyen dentro del propio repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/lehoffmann/matching-scratch
+- Repositorio de código: no disponible (el autor no enlaza un repositorio Git externo; los artefactos se distribuyen dentro del propio repositorio de Hugging Face)
 - Paper: no disponible
 - Blog o demo: no disponible
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas genéricas de Google y servicios asociados, sin relación con `lehoffmann/matching-scratch` ni con la arquitectura Coca.

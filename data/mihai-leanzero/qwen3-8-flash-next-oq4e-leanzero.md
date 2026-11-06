@@ -18,14 +18,14 @@ La relevancia de esta ficha es doble: por un lado documenta un caso practico de 
 | Longitud de contexto | no disponible (la model card menciona una tabla de contexto medida, pero no se incluye en el extracto) |
 | Tipos de cuantizacion | 4 bits afines (grupo 64) en expertos enrutados y MTP; 4 bits afines (grupo 32) en la tabla de n-gramas; 8 bits afines (grupo 128) en expertos compartidos; 8 bits afines (grupo 64) en atencion, indexer, atencion lineal, mezcladores de hiper-conexion, proyecciones MTP, embedding de tokens y cabeza de salida; BF16 en router MoE, normas, convoluciones y codificador visual |
 | Idiomas soportados | no disponible (el set de calibracion es multilingue de codigo, pero no se enumeran idiomas soportados) |
-| Licencia | `qwen-community-1.0` (etiqueta `license: other` en HuggingFace) |
+| Licencia | `qwen-community-1.0` (etiqueta `license: other` en Hugging Face) |
 | Formato de pesos | safetensors en formato MLX, 21 shards, 3.748 tensores almacenados (1.707 pesos cuantizados mas una constante `weight_scale` de 1,0) |
 
 ## Arquitectura y entrenamiento
 
 El modelo base combina atencion lineal e hibrida con mezcla de expertos (MoE) y un esquema de hiper-conexiones que aparece en los mezcladores de la red. La presencia de un router MoE, expertos compartidos y expertos enrutados repartidos en 48 capas (mas la capa MTP) se deduce directamente del mapa de cuantizacion publicado. Ademas, el modelo incorpora una tabla de embeddings de n-gramas de 51B parametros almacenada en 128 shards, un codificador visual y una cabeza de prediccion multi-token (MTP) que puede emplearse para decodificacion especulativa en motores que la soporten.
 
-No hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Lo que si esta documentado es el proceso de cuantizacion de esta build: descarga unica de los 131 shards BF16 con verificacion sha256 contra los hashes LFS de HuggingFace en la revision `de4b8e4d43b917e7706784d8bb445c9af86a3540` (ultima modificacion 2026-08-27), redondeo ponderado por importancia (metodo oQe) con busqueda de clipping y reajuste por minimos cuadrados ponderados de escala y sesgo por grupo, calibrado sobre 1.024 secuencias de 512 tokens del set multilingue de codigo de oMLX. La implementacion propia se valido contra la rutina de oMLX en 241 casos adversariales con resultado bit-identico. El manifiesto `own_convert_manifest.json` registra repositorio y revision de origen, hashes de los datos de calibracion y sha256 de cada uno de los 3.748 tensores de salida.
+No hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Lo que si esta documentado es el proceso de cuantizacion de esta build: descarga unica de los 131 shards BF16 con verificacion sha256 contra los hashes LFS de Hugging Face en la revision `de4b8e4d43b917e7706784d8bb445c9af86a3540` (ultima modificacion 2026-08-27), redondeo ponderado por importancia (metodo oQe) con busqueda de clipping y reajuste por minimos cuadrados ponderados de escala y sesgo por grupo, calibrado sobre 1.024 secuencias de 512 tokens del set multilingue de codigo de oMLX. La implementacion propia se valido contra la rutina de oMLX en 241 casos adversariales con resultado bit-identico. El manifiesto `own_convert_manifest.json` registra repositorio y revision de origen, hashes de los datos de calibracion y sha256 de cada uno de los 3.748 tensores de salida.
 
 ## Capacidades
 
@@ -80,9 +80,9 @@ Desglose de tamano en disco: modelo de lenguaje 68,227 GiB, embeddings de n-gram
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mihai-LeanZero/Qwen3.8-Flash-Next-oQ4e-LeanZero | no disponible | no disponible | 4/8 bits MLX + BF16 parcial | qwen-community-1.0 | HuggingFace, 0 descargas |
-| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | no disponible | no disponible | misma receta oQ4e | qwen-community-1.0 (presumiblemente) | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | BF16 | qwen-community-1.0 | HuggingFace, 335,28 GiB |
+| Mihai-LeanZero/Qwen3.8-Flash-Next-oQ4e-LeanZero | no disponible | no disponible | 4/8 bits MLX + BF16 parcial | qwen-community-1.0 | Hugging Face, 0 descargas |
+| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | no disponible | no disponible | misma receta oQ4e | qwen-community-1.0 (presumiblemente) | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | BF16 | qwen-community-1.0 | Hugging Face, 335,28 GiB |
 
 Las tres variantes comparten el mismo modelo base y, en el caso de las dos cuantizadas, la misma receta de oMLX; la diferencia principal es el proceso de verificacion y el ecosistema de destino (MLX en ambos casos). No se dispone de datos de rendimiento comparado con modelos de otras familias.
 
@@ -100,7 +100,7 @@ Las tres variantes comparten el mismo modelo base y, en el caso de las dos cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-Flash-Next-oQ4e-LeanZero
+- Modelo en Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-Flash-Next-oQ4e-LeanZero
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Build de referencia con la misma receta: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
 - LeanZero: https://leanzero.net

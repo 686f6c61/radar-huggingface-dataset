@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`montiezgirlzz/Heart_bus_becauseofyouishine` es un repositorio publicado en HuggingFace por el usuario `montiezgirlzz` (identificado en su perfil como jarutham bunyong). El repositorio no incluye model card util: la unica informacion declarada es `license: unknown` y la etiqueta de region `us`. No consta pipeline, idioma, arquitectura ni descripcion funcional alguna.
+`montiezgirlzz/Heart_bus_becauseofyouishine` es un repositorio publicado en Hugging Face por el usuario `montiezgirlzz` (identificado en su perfil como jarutham bunyong). El repositorio no incluye model card util: la unica informacion declarada es `license: unknown` y la etiqueta de region `us`. No consta pipeline, idioma, arquitectura ni descripcion funcional alguna.
 
 El repositorio ocupa aproximadamente 0,1 GB y registra 0 descargas y 0 likes en el momento de la consulta, con fechas de creacion y actualizacion del 5 de octubre de 2026. No existe documentacion tecnica, paper, blog ni repositorio de codigo asociado, y los resultados de busqueda web no aportan ninguna ficha tecnica del modelo: los enlaces recuperados corresponden a un grupo de entretenimiento tailandes ("BUS because of you i shine") y a un repositorio practicamente vacio del mismo autor, sin relacion tecnica demostrable.
 
@@ -94,7 +94,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/montiezgirlzz/Heart_bus_becauseofyouishine
+- Repositorio en Hugging Face: https://huggingface.co/montiezgirlzz/Heart_bus_becauseofyouishine
 - Perfil del autor: https://huggingface.co/montiezgirlzz
 - Repositorio relacionado del mismo autor: https://huggingface.co/montiezgirlzz/Aa_bus_becauseofyouishine
 - Enlace recuperado sin relacion tecnica demostrable (YouTube): https://www.youtube.com/watch?v=t57Y2_Q66ps

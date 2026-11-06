@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aiden es un repositorio de modelo publicado en HuggingFace por el usuario Hacker-Panda bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene únicamente el bloque de metadatos de licencia, sin ningun apartado descriptivo: no se declara arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 1 "like", y no tiene pipeline de inferencia asignado, por lo que no es posible determinar siquiera la tarea principal para la que fue subido.
+Aiden es un repositorio de modelo publicado en Hugging Face por el usuario Hacker-Panda bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene únicamente el bloque de metadatos de licencia, sin ningun apartado descriptivo: no se declara arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 1 "like", y no tiene pipeline de inferencia asignado, por lo que no es posible determinar siquiera la tarea principal para la que fue subido.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente documental: sirve como registro de un artefacto del que no existe informacion tecnica verificable publicada. Cualquier evaluacion funcional requeriria descargar los pesos y analizarlos directamente (por ejemplo, inspeccionando `config.json`, tokenizer y safetensors index) para determinar arquitectura, vocabulario y tamano real.
 
@@ -21,8 +21,8 @@ Los resultados de la busqueda web realizada no aportan contexto sobre el modelo:
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Autor | Hacker-Panda |
-| Fecha de creacion del repositorio | 2026-09-26 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-26 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-26 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-26 (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 1 |
 | Region declarada | us |
@@ -30,7 +30,7 @@ Los resultados de la busqueda web realizada no aportan contexto sobre el modelo:
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card no incluye ninguna seccion tecnica mas alla del bloque de licencia, y los metadatos de HuggingFace no exponen etiquetas de arquitectura (tales como `llama`, `qwen2`, `mixtral`, `mamba` u otras) ni de formato. En consecuencia, no es posible afirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card no incluye ninguna seccion tecnica mas alla del bloque de licencia, y los metadatos de Hugging Face no exponen etiquetas de arquitectura (tales como `llama`, `qwen2`, `mixtral`, `mamba` u otras) ni de formato. En consecuencia, no es posible afirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
 
 Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens procesados, la composicion del corpus, si hubo etapas de ajuste fino supervisado, RLHF, DPO u optimizacion por preferencias, y si se aplicaron tecnicas como decodificacion especulativa, atencion lineal, atencion con ventana deslizante o cuantizacion durante el entrenamiento. Cualquier afirmacion al respecto seria especulativa y, por tanto, se omite.
 
@@ -96,7 +96,7 @@ No es posible establecer una comparativa porque se desconocen el tamano, la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hacker-Panda/Aiden
+- Repositorio en Hugging Face: https://huggingface.co/Hacker-Panda/Aiden
 
 Los resultados de la busqueda web no contienen enlaces relevantes sobre el modelo. Los devueltos fueron los siguientes, todos ellos sin relacion con el repositorio:
 

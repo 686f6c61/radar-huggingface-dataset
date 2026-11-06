@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-DR-SFT-5k es un ajuste fino por superajuste completo (full-parameter SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario boyanbiji en HuggingFace. El objetivo concreto es convertir un modelo denso de 4,54 B de parámetros en un agente de "deep research": el modelo aprende a encadenar llamadas a herramientas de búsqueda y visita de páginas a lo largo de múltiples turnos y a cerrar la interacción escribiendo un informe extenso con citas.
+Qwen3.5-4B-DR-SFT-5k es un ajuste fino por superajuste completo (full-parameter SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario boyanbiji en Hugging Face. El objetivo concreto es convertir un modelo denso de 4,54 B de parámetros en un agente de "deep research": el modelo aprende a encadenar llamadas a herramientas de búsqueda y visita de páginas a lo largo de múltiples turnos y a cerrar la interacción escribiendo un informe extenso con citas.
 
 El entrenamiento se apoya en 5.036 trayectorias largas (275,1 M de tokens, hasta 131.072 tokens por fila) generadas por un modelo profesor mucho mayor, Qwen3.5-122B-A10B, ejecutado en un arnés con lookahead; los informes fueron revisados con rúbrica y validados en formato de citas. El resultado es un checkpoint especializado en una única tarea de agente, con licencia Apache 2.0 y pesos en safetensors listos para `transformers`.
 
@@ -33,7 +33,7 @@ Los datos son 5.036 filas de entrenamiento (275,1 M de tokens, con un máximo de
 - Uso de herramientas (tool calling): el modelo emite llamadas a herramientas de búsqueda y de visita de páginas dentro de un bucle de razonamiento de varios pasos.
 - Razonamiento agéntico multi-paso: planificación de consultas, lectura de resultados y refinamiento iterativo antes de responder.
 - Redacción de informes largos con citas en formato estricto, capacidad reforzada explícitamente durante el entrenamiento.
-- El pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere que hereda la entrada multimodal del modelo base; sin embargo, el entrenamiento descrito es exclusivamente textual y no se detalla el soporte real de visión.
+- El pipeline declarado en Hugging Face es `image-text-to-text`, lo que sugiere que hereda la entrada multimodal del modelo base; sin embargo, el entrenamiento descrito es exclusivamente textual y no se detalla el soporte real de visión.
 - Capacidades multilingües: no disponibles en la información proporcionada.
 - No se documentan modos de razonamiento explícito (thinking mode), audio ni otras modalidades especiales.
 
@@ -64,7 +64,7 @@ La mejora es de +0,056 puntos, con un t de Student pareado de 3,84 sobre las mis
 - VRAM para inferencia en bf16: aproximadamente 9,1 GB solo de pesos (el repositorio ocupa 9,1 GB), más caché KV. Con ventanas de 128k tokens la caché KV puede superar los pesos; el cálculo exacto no está disponible al no publicarse la configuración de atención.
 - GPU recomendadas: H100 o A100 80 GB para servir muchas peticiones concurrentes con contexto largo; L40S o A10G 48/24 GB para cargas moderadas.
 - GPU de consumo: cabe en bf16 en RTX 4090, RTX 3090 y RTX 4080 Super (16 GB) con contexto moderado o limitando la longitud de secuencia. En tarjetas de 8-12 GB es necesario cuantizar a 8 o 4 bits (aproximadamente 4,5 GB y 2,3 GB de pesos), lo que requiere convertir los pesos, ya que no se publican GGUF en el repositorio.
-- Opciones de despliegue: `transformers` de forma nativa; vLLM o TGI para servicio en producción; llama.cpp u Ollama tras convertir los pesos a GGUF; el tag `endpoints_compatible` del repositorio indica compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` de forma nativa; vLLM o TGI para servicio en producción; llama.cpp u Ollama tras convertir los pesos a GGUF; el tag `endpoints_compatible` del repositorio indica compatibilidad con los endpoints de Hugging Face.
 - Entrenamiento reproducible: el autor reporta FSDP2 sobre 2×H200 con paralelismo de secuencia 2, batch global 32 y 471 pasos para 3 épocas.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
@@ -72,10 +72,10 @@ La mejora es de +0,056 puntos, con un t de Student pareado de 3,84 sobre las mis
 
 | Modelo | Parámetros | Contexto | ResearchRubrics | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-DR-SFT-5k | 4,54 B (denso) | hasta 131.072 tokens por fila en entrenamiento | 0,4909 | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3.5-4B (base) | 4,54 B (denso) | no disponible | 0,4351 | no disponible en esta búsqueda | HuggingFace |
-| Qwen3.5-4B-DR-SFT-1k / 2.5k / 8k | 4,54 B (denso) | misma receta | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3.5-122B-A10B (profesor) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3.5-4B-DR-SFT-5k | 4,54 B (denso) | hasta 131.072 tokens por fila en entrenamiento | 0,4909 | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3.5-4B (base) | 4,54 B (denso) | no disponible | 0,4351 | no disponible en esta búsqueda | Hugging Face |
+| Qwen3.5-4B-DR-SFT-1k / 2.5k / 8k | 4,54 B (denso) | misma receta | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3.5-122B-A10B (profesor) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Las variantes hermanas (1k, 2.5k y 8k) comparten receta y modelo base, diferenciándose solo en el número de trayectorias de entrenamiento; el autor no publica sus puntuaciones en la información disponible. No se dispone de datos de otros modelos de investigación profunda de tamaño comparable para establecer una comparación cuantitativa.
 
@@ -93,7 +93,7 @@ Las variantes hermanas (1k, 2.5k y 8k) comparten receta y modelo base, diferenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-5k
+- Modelo en Hugging Face: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-5k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante 1k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-1k
 - Variante 2.5k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-2.5k

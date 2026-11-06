@@ -2,7 +2,7 @@
 
 ## Resumen
 
-prefixlm-51M-base es un modelo de lenguaje base de 50,9 millones de parámetros, desarrollado por el usuario d0rj y publicado en HuggingFace dentro de la colección "Tiny llm ablation". Se trata de un modelo entrenado desde inicialización aleatoria (from-scratch) sobre texto en inglés, con un objetivo de modelado de lenguaje de tipo prefix LM: una fracción del contexto de entrada se procesa de forma bidireccional y solo los tokens objetivo de la parte causal contribuyen a la pérdida. El modelo no es un ajuste fino de ningún checkpoint previo, aunque reutiliza el tokenizador de 32.768 entradas y la configuración base de Q-50M-Base como referencia arquitectónica.
+prefixlm-51M-base es un modelo de lenguaje base de 50,9 millones de parámetros, desarrollado por el usuario d0rj y publicado en Hugging Face dentro de la colección "Tiny llm ablation". Se trata de un modelo entrenado desde inicialización aleatoria (from-scratch) sobre texto en inglés, con un objetivo de modelado de lenguaje de tipo prefix LM: una fracción del contexto de entrada se procesa de forma bidireccional y solo los tokens objetivo de la parte causal contribuyen a la pérdida. El modelo no es un ajuste fino de ningún checkpoint previo, aunque reutiliza el tokenizador de 32.768 entradas y la configuración base de Q-50M-Base como referencia arquitectónica.
 
 El interés del modelo es fundamentalmente experimental. Su propósito es servir como punto de comparación reproducible en una ablación sobre objetivos de entrenamiento en modelos pequeños, no como un asistente listo para producción. La model card documenta con detalle el presupuesto de cómputo (3.932.160.000 tokens fuente procesados, 15.000 pasos de optimizador) y el protocolo de evaluación, lo que lo hace útil para investigar cómo afecta el enmascaramiento bidireccional del prefijo al rendimiento en tareas de continuación y de elección múltiple.
 
@@ -108,7 +108,7 @@ La diferencia principal frente a estas alternativas no es de rendimiento sino de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0rj/prefixlm-51M-base
+- Modelo en Hugging Face: https://huggingface.co/d0rj/prefixlm-51M-base
 - Colección Tiny llm ablation: https://huggingface.co/collections/d0rj/tiny-llm-ablation-6aafca336122dd2c2868f923
 - Modelo de referencia arquitectónica Q-50M-Base: https://huggingface.co/q-project/Q-50M-Base
 - Dataset de entrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
@@ -116,4 +116,4 @@ La diferencia principal frente a estas alternativas no es de rendimiento sino de
 - Configuración de entrenamiento: https://huggingface.co/d0rj/prefixlm-51M-base/blob/main/training_config.json
 - Resultados y procedencia de las métricas: https://huggingface.co/d0rj/prefixlm-51M-base/tree/main/evaluation
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo. Los únicos enlaces disponibles son los del propio repositorio de HuggingFace y los que referencia su model card.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo. Los únicos enlaces disponibles son los del propio repositorio de Hugging Face y los que referencia su model card.

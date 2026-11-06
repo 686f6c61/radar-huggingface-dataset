@@ -41,7 +41,7 @@ El punto de partida es `locuslab/tofu_ft_llama2-7b`, un modelo ajustado sobre el
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documenta capacidad multilingüe más allá del inglés.
 - No dispone de modo *thinking*, visión ni audio.
-- No se declara pipeline de inferencia en HuggingFace.
+- No se declara pipeline de inferencia en Hugging Face.
 
 ## Casos de uso
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch06 | ~6,74B | no disponible (Llama 2: 4096) | Checkpoint de unlearning TOFU (época 6/20) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 | Modelo ajustado sobre TOFU, base del anterior | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Modelo chat de referencia para inicialización | llama2 | HuggingFace |
-| Meta Llama 2 7B | ~6,74B | 4096 | Modelo base generalista | llama2 | HuggingFace, Meta |
+| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch06 | ~6,74B | no disponible (Llama 2: 4096) | Checkpoint de unlearning TOFU (época 6/20) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 | Modelo ajustado sobre TOFU, base del anterior | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Modelo chat de referencia para inicialización | llama2 | Hugging Face |
+| Meta Llama 2 7B | ~6,74B | 4096 | Modelo base generalista | llama2 | Hugging Face, Meta |
 
 La comparación relevante es metodológica: frente al modelo base `locuslab/tofu_ft_llama2-7b`, este checkpoint debería mostrar mayor olvido del conjunto *forget10* a costa de una posible pérdida de utilidad, pero no hay métricas publicadas que lo confirmen.
 
@@ -85,12 +85,12 @@ La comparación relevante es metodológica: frente al modelo base `locuslab/tofu
 - Solo soporta inglés; no hay evidencia de capacidades multilingües.
 - La licencia Llama 2 impone restricciones de uso comercial y obligaciones de atribución; conviene revisar sus términos antes de cualquier uso más allá de la investigación.
 - No debe emplearse en producción ni como sustituto de un modelo chat: su dominio y su estado de entrenamiento no lo hacen adecuado para tareas generales.
-- El repositorio no declara pipeline de HuggingFace ni documentación de inferencia; el uso requiere cargar manualmente los pesos con `transformers` u otra librería compatible.
+- El repositorio no declara pipeline de Hugging Face ni documentación de inferencia; el uso requiere cargar manualmente los pesos con `transformers` u otra librería compatible.
 - La model card no detalla la composición exacta del conjunto *forget10* ni los hiperparámetros completos; el autor remite a `ihl_manifest.json`.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch06
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch06
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Manifiesto del experimento: `ihl_manifest.json` en el repositorio del modelo (no se proporciona URL directa)

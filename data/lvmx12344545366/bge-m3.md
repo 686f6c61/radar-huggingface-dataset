@@ -17,7 +17,7 @@ El modelo está basado en una arquitectura de encoder Transformer, concretamente
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Más de 100 idiomas |
 | Licencia | MIT |
-| Formato de pesos | PyTorch y ONNX (según tags de HuggingFace) |
+| Formato de pesos | PyTorch y ONNX (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no especificado en la información disponible.
 - Compatibilidad con GPU de consumo: no hay datos concretos, aunque al tratarse de un modelo de embeddings de 1024 dimensiones y 8192 tokens, podría ejecutarse en GPUs de consumo de gama media-alta.
-- Opciones de despliegue: sentence-transformers, ONNX y text-embeddings-inference (según los tags de HuggingFace).
+- Opciones de despliegue: sentence-transformers, ONNX y text-embeddings-inference (según los tags de Hugging Face).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ El modelo BGE-M3 se diferencia de los modelos bge-large/base/small en que soport
 
 - No se han documentado sesgos específicos en la información disponible.
 - El riesgo de alucinación es bajo en el sentido de que el modelo no genera texto; sin embargo, los embeddings pueden reflejar sesgos presentes en los datos de entrenamiento.
-- El repositorio de HuggingFace analizado es una re-subida realizada por el usuario `lvmx12344545366`, no el repositorio oficial `BAAI/bge-m3`. Es recomendable verificar la integridad de los pesos antes de usar el modelo en producción.
+- El repositorio de Hugging Face analizado es una re-subida realizada por el usuario `lvmx12344545366`, no el repositorio oficial `BAAI/bge-m3`. Es recomendable verificar la integridad de los pesos antes de usar el modelo en producción.
 - La ausencia de resultados de benchmarks en la información disponible limita la evaluación comparativa con otros modelos.
 - La licencia MIT permite el uso comercial, pero se debe revisar que el subidor haya mantenido las atribuciones correspondientes.
 

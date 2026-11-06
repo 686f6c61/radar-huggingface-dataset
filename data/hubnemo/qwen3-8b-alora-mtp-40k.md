@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hubnemo/Qwen3-8B-ALoRA-MTP-40k` contiene un modelo publicado en HuggingFace cuya documentación es prácticamente inexistente. La model card es una plantilla automática generada por la plataforma, sin información sobre el desarrollador, el propósito, la arquitectura o el proceso de entrenamiento. El nombre del repositorio sugiere una relación con la familia Qwen3, concretamente una variante de 8.000 millones de parámetros con adaptadores ALoRA y posiblemente entrenamiento con predicción de múltiples tokens (MTP), pero no hay ninguna fuente que confirme estas características. El tamaño del repositorio es de 45,9 GB, lo que indica que los pesos se almacenan en formato `safetensors`, tal como reflejan las etiquetas del modelo. En el momento de la consulta, el modelo no registra descargas ni me gusta, y no se ha publicado ningún resultado de evaluación. Por tanto, cualquier uso de este modelo debe ir precedido de una verificación directa con el autor o de la consulta a fuentes externas, porque la información disponible no permite una evaluación técnica rigurosa.
+El repositorio `hubnemo/Qwen3-8B-ALoRA-MTP-40k` contiene un modelo publicado en Hugging Face cuya documentación es prácticamente inexistente. La model card es una plantilla automática generada por la plataforma, sin información sobre el desarrollador, el propósito, la arquitectura o el proceso de entrenamiento. El nombre del repositorio sugiere una relación con la familia Qwen3, concretamente una variante de 8.000 millones de parámetros con adaptadores ALoRA y posiblemente entrenamiento con predicción de múltiples tokens (MTP), pero no hay ninguna fuente que confirme estas características. El tamaño del repositorio es de 45,9 GB, lo que indica que los pesos se almacenan en formato `safetensors`, tal como reflejan las etiquetas del modelo. En el momento de la consulta, el modelo no registra descargas ni me gusta, y no se ha publicado ningún resultado de evaluación. Por tanto, cualquier uso de este modelo debe ir precedido de una verificación directa con el autor o de la consulta a fuentes externas, porque la información disponible no permite una evaluación técnica rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -56,4 +56,4 @@ No se puede realizar una comparativa con modelos similares debido a la ausencia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-40k
+- Repositorio en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-40k

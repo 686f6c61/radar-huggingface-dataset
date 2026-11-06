@@ -28,7 +28,7 @@ El modelo parte de `roberta-base-japanese-aozora-char`, un RoBERTa base preentre
 - Etiquetado gramatical (POS tagging) con etiquetas UPOS y FEATS segun Universal Dependencies.
 - Analisis de dependencias sintacticas (dependency parsing) sobre palabras largas (long-unit-words) del japones.
 - Integracion con la libreria `esupar` para un pipeline completo de tokenizacion, POS y parsing.
-- Soporte de inferencia a traves de la interfaz `TokenClassificationPipeline` de HuggingFace Transformers.
+- Soporte de inferencia a traves de la interfaz `TokenClassificationPipeline` de Hugging Face Transformers.
 - Funciona exclusivamente con texto en japones.
 - No es un modelo generativo: no produce texto, solo anotaciones.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - Tamano del repositorio: 3.2 GB, aunque los pesos del modelo ocupan aproximadamente 500 MB (RoBERTa base en precision FP32).
 - Inferencia en CPU: factible para textos cortos, con latencia del orden de decenas de milisegundos por frase.
 - Inferencia en GPU: recomendable para lotes grandes o procesamiento en tiempo real; una GPU con 4-6 GB de VRAM es suficiente (por ejemplo, NVIDIA GTX 1660, RTX 2060).
-- Compatible con las librerias de HuggingFace Transformers, por lo que puede desplegarse con vLLM, TGI o directamente con pipelines de Transformers.
+- Compatible con las librerias de Hugging Face Transformers, por lo que puede desplegarse con vLLM, TGI o directamente con pipelines de Transformers.
 - No se requieren GPUs especializadas como A100 o H100 para este modelo.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La diferencia principal con `roberta-base-japanese-luw-upos` es la tokenizacion:
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/KoichiYasuoka/roberta-base-japanese-char-luw-upos)
+- [Modelo en Hugging Face](https://huggingface.co/KoichiYasuoka/roberta-base-japanese-char-luw-upos)
 - [Modelo base: roberta-base-japanese-aozora-char](https://huggingface.co/KoichiYasuoka/roberta-base-japanese-aozora-char)
 - [Libreria esupar (GitHub)](https://github.com/KoichiYasuoka/esupar)
 - [Referencia tecnica (articulo de Yasuoka, 2022)](http://hdl.handle.net/2433/268173)

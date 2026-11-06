@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ktransfer-27b-ce-s1213 es un checkpoint de investigación publicado por el usuario 2264K en HuggingFace, derivado de un estudio exploratorio sobre destilación de conocimiento entre tokenizadores distintos ("Anchor or Transfer?") orientado a la adaptación al coreano. Se trata de un ajuste fino completo de Qwen/Qwen3.8-27B (27.356.728.560 parámetros) entrenado únicamente con entropía cruzada (CE-only), sin señal del profesor, y sirve como control emparejado para comparar contra las ejecuciones con destilación. El profesor de referencia del estudio es Gemma-4-31B-it, aunque en esta ejecución concreta no se utilizó.
+ktransfer-27b-ce-s1213 es un checkpoint de investigación publicado por el usuario 2264K en Hugging Face, derivado de un estudio exploratorio sobre destilación de conocimiento entre tokenizadores distintos ("Anchor or Transfer?") orientado a la adaptación al coreano. Se trata de un ajuste fino completo de Qwen/Qwen3.8-27B (27.356.728.560 parámetros) entrenado únicamente con entropía cruzada (CE-only), sin señal del profesor, y sirve como control emparejado para comparar contra las ejecuciones con destilación. El profesor de referencia del estudio es Gemma-4-31B-it, aunque en esta ejecución concreta no se utilizó.
 
 El modelo resuelve un problema metodológico, no de producto: permite reproducir las tablas del artículo, incluidos los resultados negativos. El autor lo declara explícitamente como un checkpoint de investigación y no como un modelo de propósito general mejorado. Su relevancia es, por tanto, académica y de reproducibilidad, con interés para quienes investigan destilación cross-tokenizer y adaptación lingüística al coreano.
 
@@ -96,7 +96,7 @@ La comparación con alternativas de la misma categoría (modelos de ~27-31B ajus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2264K/ktransfer-27b-ce-s1213
+- Modelo en Hugging Face: https://huggingface.co/2264K/ktransfer-27b-ce-s1213
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo "Anchor or Transfer?": pendiente de publicación (TBA según la model card)
 - Configuración de entrenamiento: `training_config.json` dentro del repositorio del modelo

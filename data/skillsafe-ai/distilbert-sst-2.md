@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`skillsafe-ai/distilbert-sst-2` es un artefacto de inferencia en formato ONNX publicado por SkillSafe (organización en HuggingFace) a partir del modelo `distilbert/distilbert-base-uncased-finetuned-sst-2-english` de Hugging Face, fijado al commit `714eb0fa89d2f80546fda750413ed43d93601a13`. No es un modelo nuevo ni un reentrenamiento: es una importación reproducible byte a byte del modelo upstream, orientada a ejecutarse directamente en el navegador mediante `transformers.js` y `onnxruntime-web` con ejecución WebGPU o WASM.
+`skillsafe-ai/distilbert-sst-2` es un artefacto de inferencia en formato ONNX publicado por SkillSafe (organización en Hugging Face) a partir del modelo `distilbert/distilbert-base-uncased-finetuned-sst-2-english` de Hugging Face, fijado al commit `714eb0fa89d2f80546fda750413ed43d93601a13`. No es un modelo nuevo ni un reentrenamiento: es una importación reproducible byte a byte del modelo upstream, orientada a ejecutarse directamente en el navegador mediante `transformers.js` y `onnxruntime-web` con ejecución WebGPU o WASM.
 
 La tarea es clasificación binaria de sentimiento (POSITIVE / NEGATIVE) sobre texto en inglés. La arquitectura subyacente es DistilBERT, un transformer encoder de 6 capas con aproximadamente 66 millones de parámetros y una ventana máxima de 512 tokens, resultado de destilar BERT-base. El repositorio ocupa 0,3 GB e incluye un único grafo `onnx/model.onnx` en fp32 de 255,54 MB, junto con `config.json`, `tokenizer_config.json` y `vocab.txt`.
 
@@ -107,7 +107,7 @@ Diferencias clave frente al modelo upstream: los pesos son idénticos, pero este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/distilbert-sst-2
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/distilbert-sst-2
 - Modelo base upstream: https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english
 - Commit fijado del upstream: https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/714eb0fa89d2f80546fda750413ed43d93601a13
 - Aviso de licencia upstream: https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/blob/main/README.md

@@ -81,7 +81,7 @@ La información proporcionada no incluye métricas de los modelos alternativos, 
 
 | Modelo | Tipo | Parámetros | mIoU S3DIS Area 5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PVCNN2 (este modelo) | Point-voxel, set abstraction | 13,7 M | 59,95 | MIT | Pesos `safetensors` en HuggingFace |
+| PVCNN2 (este modelo) | Point-voxel, set abstraction | 13,7 M | 59,95 | MIT | Pesos `safetensors` en Hugging Face |
 | PVCNN original (`mit-han-lab/pvcnn`) | Point-voxel | No disponible en la información | No disponible en la información | MIT | Repositorio GitHub con código y pesos |
 | PointNet++ | Set abstraction sobre puntos | No disponible en la información | No disponible en la información | No disponible en la información | Implementaciones de terceros |
 | KPConv | Convolución kernel-point | No disponible en la información | No disponible en la información | No disponible en la información | Implementaciones de terceros |
@@ -104,7 +104,7 @@ La ventaja diferencial de esta ficha es la integración con `torch-pointcloud`: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pvcnn2.s3dis-area5.mit-han-lab
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pvcnn2.s3dis-area5.mit-han-lab
 - Paper PVCNN (NeurIPS 2019): https://arxiv.org/abs/1907.03739
 - Repositorio original `mit-han-lab/pvcnn`: https://github.com/mit-han-lab/pvcnn
 - Librería PyTorch PointCloud: https://github.com/arthurdjn/pytorch-pointcloud

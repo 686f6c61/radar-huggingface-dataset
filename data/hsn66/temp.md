@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hsn66/temp` es un repositorio de HuggingFace cuyo contenido no se corresponde con un modelo de aprendizaje automatico. La model card describe **ChromaFix Studio**, una aplicacion web de backend en Python para la correccion personalizada del daltonismo, construida sobre Flask, NumPy y Pillow. No hay pesos, tokenizador ni configuracion de inferencia publicados en la informacion disponible.
+`hsn66/temp` es un repositorio de Hugging Face cuyo contenido no se corresponde con un modelo de aprendizaje automatico. La model card describe **ChromaFix Studio**, una aplicacion web de backend en Python para la correccion personalizada del daltonismo, construida sobre Flask, NumPy y Pillow. No hay pesos, tokenizador ni configuracion de inferencia publicados en la informacion disponible.
 
 El sistema implementa algebra lineal (matriz de simulacion S, matriz de correccion C = I + k·T·(I−S), calculo de determinante y delta-E en espacio CIE Lab) en un servidor Flask, y expone una API HTTP con endpoints para renderizar escenas, comparar pares de pixeles, consultar pixeles individuales y subir imagenes. El frontend es una plantilla HTML ligera que envia ajustes y muestra resultados.
 
@@ -71,7 +71,7 @@ No disponible. El artefacto no es un modelo de IA y no se han identificado en la
 
 - El repositorio no contiene un modelo de aprendizaje automatico: no hay pesos, tokenizador, configuracion ni pipeline de inferencia.
 - No se declara licencia, lo que impide determinar si el uso comercial esta permitido; hay que contactar con el autor antes de reutilizar el codigo.
-- No se declaran idiomas soportados ni pipeline en HuggingFace; el repositorio tiene 0 descargas y 0 likes, sin senales de uso o validacion por la comunidad.
+- No se declaran idiomas soportados ni pipeline en Hugging Face; el repositorio tiene 0 descargas y 0 likes, sin senales de uso o validacion por la comunidad.
 - La model card no documenta sesgos, tasas de alucinacion ni evaluacion de calidad de la correccion de color; el metodo se basa en una transformacion lineal con parametros ajustables manualmente (`k`, `T`, `severity`), sin validacion clinica ni perceptual publicada.
 - El servidor de desarrollo de Flask no es adecuado para produccion; no se documenta configuracion WSGI, limites de subida, autenticacion ni control de concurrencia.
 - El endpoint `/api/upload` acepta ficheros multipart sin que se documenten validaciones de tipo o tamano, lo que supone un riesgo si se expone publicamente.
@@ -80,5 +80,5 @@ No disponible. El artefacto no es un modelo de IA y no se han identificado en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hsn66/temp
+- Repositorio en Hugging Face: https://huggingface.co/hsn66/temp
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

@@ -28,7 +28,7 @@ El adaptador sigue la arquitectura LoRA estándar aplicada a un transformer deco
 - Generación de texto autoregresiva con decodificación greedy mejorada gracias al reordenamiento de rangos inducido por el hyperfitting.
 - Ajuste paramétricamente eficiente: solo se modifican las últimas 5 capas, lo que reduce drásticamente el número de parámetros entrenables frente a un fine-tuning completo.
 - Mecanismo de expansión geométrica tardía que recupera tokens de baja probabilidad que normalmente quedarían fuera de la distribución greedy.
-- Compatible con el ecosistema HuggingFace Transformers y PEFT (librería peft 0.20.0).
+- Compatible con el ecosistema Hugging Face Transformers y PEFT (librería peft 0.20.0).
 - Al estar basado en TinyLlama-1.1B, hereda sus capacidades básicas de generación de texto, aunque el adaptador no añade capacidades nuevas como tool calling, visión o audio.
 
 ## Casos de uso
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Tecnica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pngwn/beyond-temperature-lora-last5-hf | Adaptador sobre TinyLlama-1.1B | No disponible | Late-Stage LoRA (últimas 5 capas) | No disponible | HuggingFace |
-| TinyLlama-1.1B (base) | 1.1B | 2048 (típico) | Transformer estándar | Apache 2.0 | HuggingFace |
-| Otros adaptadores LoRA sobre TinyLlama | Variable | Variable | LoRA estándar | Variable | HuggingFace |
+| pngwn/beyond-temperature-lora-last5-hf | Adaptador sobre TinyLlama-1.1B | No disponible | Late-Stage LoRA (últimas 5 capas) | No disponible | Hugging Face |
+| TinyLlama-1.1B (base) | 1.1B | 2048 (típico) | Transformer estándar | Apache 2.0 | Hugging Face |
+| Otros adaptadores LoRA sobre TinyLlama | Variable | Variable | LoRA estándar | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con estos modelos en la información proporcionada.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo con estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pngwn/beyond-temperature-lora-last5-hf
+- Modelo en Hugging Face: https://huggingface.co/pngwn/beyond-temperature-lora-last5-hf
 - Paper (HTML en arXiv): https://arxiv.org/html/2605.22579v1
 - Página del proyecto: https://yecanlee.github.io/Beyond-Temperature/
 - Resumen en Semantic Scholar: https://www.semanticscholar.org/paper/900ba3c9a39f92d9df33a1c9fcc24a7fd7a6cb04

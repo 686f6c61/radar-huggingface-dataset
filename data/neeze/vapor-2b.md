@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vapor-2B es un modelo de generación de texto publicado por el usuario Neeze en HuggingFace, derivado mediante ajuste fino y compresión del modelo base LiquidAI/LFM2.5-2.6B de Liquid AI. El nombre y las etiquetas del repositorio sugieren una reducción del número de parámetros desde los 2,6B del modelo original hasta aproximadamente 2B, empleando técnicas de compresión basadas en descomposición en valores singulares (SVD) y adaptación de bajo rango.
+Vapor-2B es un modelo de generación de texto publicado por el usuario Neeze en Hugging Face, derivado mediante ajuste fino y compresión del modelo base LiquidAI/LFM2.5-2.6B de Liquid AI. El nombre y las etiquetas del repositorio sugieren una reducción del número de parámetros desde los 2,6B del modelo original hasta aproximadamente 2B, empleando técnicas de compresión basadas en descomposición en valores singulares (SVD) y adaptación de bajo rango.
 
 El interés técnico del modelo reside precisamente en ese proceso de compresión: las etiquetas `svd-llm`, `tagi-svd`, `model-compression` y `low-rank-adaptation` apuntan a un pipeline de reducción de rango aplicado sobre los pesos del transformer base, una línea de trabajo relevante para desplegar modelos de la familia LFM2 en hardware con recursos limitados sin reentrenar desde cero.
 
@@ -69,8 +69,8 @@ Estimaciones derivadas del recuento aproximado de parámetros (~2B). No son dato
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Neeze/Vapor-2B | ~2B (aproximado) | No disponible | `other` sin texto publicado | safetensors en HuggingFace |
-| LiquidAI/LFM2.5-2.6B (modelo base) | 2,6B | No disponible en la información proporcionada | No disponible en la información proporcionada | safetensors en HuggingFace |
+| Neeze/Vapor-2B | ~2B (aproximado) | No disponible | `other` sin texto publicado | safetensors en Hugging Face |
+| LiquidAI/LFM2.5-2.6B (modelo base) | 2,6B | No disponible en la información proporcionada | No disponible en la información proporcionada | safetensors en Hugging Face |
 | Qwen2.5-1.5B | 1,5B | 32 768 tokens | Apache 2.0 | safetensors, GGUF y múltiples cuantizaciones |
 | Llama-3.2-1B | 1,2B | 128 000 tokens | Llama 3.2 Community License | safetensors, GGUF y derivados |
 | Gemma-2-2B | 2,6B | 8 192 tokens | Gemma Terms of Use | safetensors, GGUF y derivados |
@@ -94,5 +94,5 @@ Los datos de contexto y licencia de los modelos comparativos corresponden a su d
 
 - Repositorio del modelo: https://huggingface.co/Neeze/Vapor-2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
-- Organización del autor en HuggingFace: https://huggingface.co/Neeze
+- Organización del autor en Hugging Face: https://huggingface.co/Neeze
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (artículos, papers, repositorios de código o demos). Los resultados obtenidos corresponden a sitios sin relación con el proyecto.

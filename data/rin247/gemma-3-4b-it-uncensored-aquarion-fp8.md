@@ -72,7 +72,7 @@ Los tres modelos uncensored parten del mismo modelo base y aplican técnicas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/gemma-3-4b-it-Uncensored-Aquarion-FP8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/gemma-3-4b-it-Uncensored-Aquarion-FP8
 - Informe técnico de Gemma 3: https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf
 - Guía de LLMs sin censura por VRAM (InsiderLLM): https://insiderllm.com/guides/best-uncensored-local-llms/
 - Guía para ejecutar Gemma 4 localmente (Locally Uncensored): https://locallyuncensored.com/blog/gemma-4-local-guide.html

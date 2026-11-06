@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haenam TimesFM native LoRA v1 | 614.400 (adaptador) | 128 h entrada / 12 h salida | Calidad del agua (Haenam) | apache-2.0 | HuggingFace |
-| google/timesfm-2.5-200m-transformers | 200M | no disponible en la información | Forecasting general | no disponible en la información | HuggingFace |
+| Haenam TimesFM native LoRA v1 | 614.400 (adaptador) | 128 h entrada / 12 h salida | Calidad del agua (Haenam) | apache-2.0 | Hugging Face |
+| google/timesfm-2.5-200m-transformers | 200M | no disponible en la información | Forecasting general | no disponible en la información | Hugging Face |
 | Otros adaptadores LoRA de TimesFM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables adicionales en la documentación proporcionada.
@@ -84,5 +84,5 @@ No se dispone de información sobre modelos comparables adicionales en la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ODNus/haenam-timesfm-lora-v1
+- Hugging Face: https://huggingface.co/ODNus/haenam-timesfm-lora-v1
 - Modelo base: https://huggingface.co/google/timesfm-2.5-200m-transformers

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAURON (este adaptador) | 3,67 M entrenables sobre Qwen3-4B | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen3-4B (base) | no disponible en la información | no disponible en la información | no disponible en la información | no disponible en la información | HuggingFace |
+| SAURON (este adaptador) | 3,67 M entrenables sobre Qwen3-4B | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen3-4B (base) | no disponible en la información | no disponible en la información | no disponible en la información | no disponible en la información | Hugging Face |
 | Alternativas LoRA para Qwen3-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fgparamio/sauron-lora-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/fgparamio/sauron-lora-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Cuantización base usada en el ejemplo: https://huggingface.co/mlx-community/Qwen3-4B-4bit
 - TibiOS: https://tibios.ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PCCG-2-Qwen3-4B (Prerequisite-Conditioned Continuation Control with Frozen Content) es un artefacto de investigacion publicado por el usuario de HuggingFace sharthokrayanpal sobre el modelo base Qwen/Qwen3-4B. No es un modelo entrenado de nuevo: el contenido de Qwen3-4B permanece completamente congelado y lo unico que se anade es una puerta ("gate") aprendida de 101 parametros que recibe exclusivamente una condicion de prerequisito y que solo puede modificar la puntuacion del token EOS nativo. Ninguna otra puntuacion del vocabulario se ve alterada por el estado de permiso.
+PCCG-2-Qwen3-4B (Prerequisite-Conditioned Continuation Control with Frozen Content) es un artefacto de investigacion publicado por el usuario de Hugging Face sharthokrayanpal sobre el modelo base Qwen/Qwen3-4B. No es un modelo entrenado de nuevo: el contenido de Qwen3-4B permanece completamente congelado y lo unico que se anade es una puerta ("gate") aprendida de 101 parametros que recibe exclusivamente una condicion de prerequisito y que solo puede modificar la puntuacion del token EOS nativo. Ninguna otra puntuacion del vocabulario se ve alterada por el estado de permiso.
 
 El problema que aborda es la separacion explicita entre capacidad y permiso: el modelo de contenido decide cual es la respuesta (los logits no-EOS son identicos en todos los estados) y la puerta decide si esa respuesta llega a generarse o si la generacion se detiene en el EOS. En el testigo canonico (pregunta "What is 2 + 2?" con condicion `CONDITION: EQ(485487,485487)` frente a `CONDITION: EQ(485487,485489)`), la puntuacion del token `4` se mantiene en 53.0 en las cinco ramas mientras el score de EOS cambia de signo, invirtiendo el resultado visible.
 
@@ -120,7 +120,7 @@ No se dispone de resultados de benchmarks comparables entre PCCG-2 y modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sharthokrayanpal/PCCG-2-Qwen3-4B
+- Modelo en Hugging Face: https://huggingface.co/sharthokrayanpal/PCCG-2-Qwen3-4B
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio completo (incluye `content/`, `gate/`, `src/` y `evidence/`): descarga via `hf download sharthokrayanpal/PCCG-2-Qwen3-4B --local-dir PCCG-2-Qwen3-4B`
 - Scripts de reproduccion citados en la model card: `src/verify.py`, `src/reproduce.py`, `src/core.py`

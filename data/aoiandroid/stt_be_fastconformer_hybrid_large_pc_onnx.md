@@ -24,7 +24,7 @@ Su relevancia práctica es la de un componente de ASR empaquetado en ONNX, pensa
 | Formato de pesos | ONNX |
 | Tamano del repositorio | 0,6 GB (589,8 MB, 4 archivos) |
 | Version de origen | commit `3b8ee6e9287481a49c013ad5b09828b74f1b4c8c` de OpenVoiceOS |
-| Fecha de publicacion | 2026-10-10 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-10 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -92,7 +92,7 @@ No se dispone de comparaciones de WER ni de rendimiento entre estos modelos en l
 - Riesgo de alucinación y de errores de segmentación propios de los modelos ASR: en audio con ruido, solapamiento de hablantes o vocabulario muy específico (nombres propios, siglas, terminología técnica) la tasa de error aumenta.
 - La licencia cc-by-4.0 permite uso comercial siempre que se atribuya la autoría; en este caso la atribución debe dirigirse a los autores originales del repositorio de OpenVoiceOS, no al autor del espejo.
 - El repositorio tiene 0 descargas y 0 likes, sin historial de uso que permita validar su funcionamiento.
-- La fecha de creación declarada (2026-10-10) es anómala y podría indicar un error en los metadatos de HuggingFace.
+- La fecha de creación declarada (2026-10-10) es anómala y podría indicar un error en los metadatos de Hugging Face.
 - No se documentan limitaciones de longitud de audio, ni comportamiento en streaming, ni el opset de ONNX utilizado; conviene validar la compatibilidad con la versión de ONNX Runtime objetivo antes de integrarlo.
 - Al depender de un espejo de terceros, la actualización del modelo no es automática: cualquier mejora del repositorio original requiere resincronizar manualmente.
 
@@ -101,6 +101,6 @@ No se dispone de comparaciones de WER ni de rendimiento entre estos modelos en l
 - Repositorio del espejo: https://huggingface.co/aoiandroid/stt_be_fastconformer_hybrid_large_pc_onnx
 - Repositorio de origen: https://huggingface.co/OpenVoiceOS/stt_be_fastconformer_hybrid_large_pc_onnx
 - Arbol de archivos en el commit replicado: https://huggingface.co/OpenVoiceOS/stt_be_fastconformer_hybrid_large_pc_onnx/tree/3b8ee6e9287481a49c013ad5b09828b74f1b4c8c
-- Organizacion OpenVoiceOS en HuggingFace: https://huggingface.co/OpenVoiceOS
+- Organizacion OpenVoiceOS en Hugging Face: https://huggingface.co/OpenVoiceOS
 - Repositorio de NVIDIA NeMo (framework de origen de la arquitectura FastConformer): https://github.com/NVIDIA/NeMo
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos no guardan relación con el modelo y se han descartado.

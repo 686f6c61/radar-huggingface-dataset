@@ -4,9 +4,9 @@
 
 ## Resumen
 
-`bonsai-distilled-depth12-experts80-correctedteacher-3k-warmup450-lr1e4-fixedloss-best` es un modelo de generacion de texto publicado en HuggingFace por el usuario `sartajbhuvaji`. Se trata de un transformer de tipo mezcla de expertos (MoE) construido sobre la arquitectura `qwen3_moe`, con 9.459.231.744 parametros totales confirmados a partir de los pesos en formato safetensors (18,9 GB de repositorio). El identificador del repositorio sugiere que es el resultado de un proceso de destilacion, pero el autor no ha documentado ni el modelo profesor, ni el conjunto de datos, ni el procedimiento de entrenamiento.
+`bonsai-distilled-depth12-experts80-correctedteacher-3k-warmup450-lr1e4-fixedloss-best` es un modelo de generacion de texto publicado en Hugging Face por el usuario `sartajbhuvaji`. Se trata de un transformer de tipo mezcla de expertos (MoE) construido sobre la arquitectura `qwen3_moe`, con 9.459.231.744 parametros totales confirmados a partir de los pesos en formato safetensors (18,9 GB de repositorio). El identificador del repositorio sugiere que es el resultado de un proceso de destilacion, pero el autor no ha documentado ni el modelo profesor, ni el conjunto de datos, ni el procedimiento de entrenamiento.
 
-La relevancia de este modelo es en este momento limitada y de caracter exploratorio. No tiene descargas ni "likes", la model card es la plantilla generica autogenerada por HuggingFace sin ningun campo cumplimentado, y no se ha publicado licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion. Cualquier uso en produccion exige una validacion previa por parte del integrador.
+La relevancia de este modelo es en este momento limitada y de caracter exploratorio. No tiene descargas ni "likes", la model card es la plantilla generica autogenerada por Hugging Face sin ningun campo cumplimentado, y no se ha publicado licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion. Cualquier uso en produccion exige una validacion previa por parte del integrador.
 
 El interes tecnico, si lo tiene, esta en el propio nombre del repositorio: apunta a una destilacion de un modelo MoE con 80 expertos y 12 capas, con un profesor "corregido", 3.000 pasos de entrenamiento, 450 pasos de calentamiento y una tasa de aprendizaje de 1e-4. Todos estos datos son inferencias del identificador, no informacion documentada por el autor.
 
@@ -14,7 +14,7 @@ El interes tecnico, si lo tiene, esta en el propio nombre del repositorio: apunt
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE); tag de HuggingFace `qwen3_moe` |
+| Arquitectura | Transformer de mezcla de expertos (MoE); tag de Hugging Face `qwen3_moe` |
 | Parametros totales | 9.459.231.744 (9,46 mil millones), dato real de los pesos safetensors |
 | Parametros activos | no disponible (es MoE, pero el repositorio no publica el numero de expertos activos por token) |
 | Longitud de contexto | no disponible |
@@ -104,7 +104,7 @@ Comparado con estas alternativas, el modelo de `sartajbhuvaji` tiene menos param
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth12-experts80-correctedteacher-3k-warmup450-lr1e4-fixedloss-best
+- Repositorio en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth12-experts80-correctedteacher-3k-warmup450-lr1e4-fixedloss-best
 - Paper referenciado en los tags (`arxiv:1910.09700`, Lacoste et al., calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700
 
 No se han encontrado en la busqueda web enlaces relevantes sobre este modelo: los resultados devueltos no guardan ninguna relacion con el repositorio ni con el autor.

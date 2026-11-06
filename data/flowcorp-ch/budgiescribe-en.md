@@ -18,7 +18,7 @@ Es relevante ahora porque ataca un problema sistemico de los pipelines de STT: e
 | Longitud de contexto | 4.096 tokens tal y como se sirve; las entradas se trocean a 1.200 bytes |
 | Tipos de cuantizacion | Q4_K_M (de 16,00 a 5,24 bits por peso); es la unica cuantizacion publicada |
 | Idiomas soportados | ingles (en) |
-| Licencia | budgiescribe-license (la model card la describe como Apache 2.0 mas un termino de nombrado; el metadato de HuggingFace la registra como `other`) |
+| Licencia | budgiescribe-license (la model card la describe como Apache 2.0 mas un termino de nombrado; el metadato de Hugging Face la registra como `other`) |
 | Formato de pesos | GGUF (fichero `scribe-en-v7-Q4_K_M.gguf`, 396.704.576 bytes / 378,3 MiB) |
 
 Datos adicionales del artefacto: SHA-256 `02b3eb0b385d54a5c2fbe5c4a29c144fee9196972a22eef5d4659120147f49b5`; build interno `scribe-en-v7` (fase 3, con disposicion `Context: email`, cantidades embebidas y linea `[Terms:]`); runtime de referencia llama.cpp release b10816.
@@ -99,13 +99,13 @@ La comparacion cuantitativa de calidad frente a alternativas no puede realizarse
 - El system prompt es literal y no debe reescribirse; modificarlo invalida el comportamiento esperado.
 - Riesgo de alucinacion inherente a todo modelo generativo de este tipo: aunque el diseno busca no anadir contenido, la anadidura de saludo y despedida en modo email demuestra que puede introducir material no dictado.
 - Sesgos: no se documentan sesgos especificos en la informacion disponible.
-- Licencia: el metadato de HuggingFace la registra como `other` con nombre `budgiescribe-license`, mientras que la model card la describe como Apache 2.0 mas un termino de nombrado. Antes de un uso comercial conviene revisar el fichero LICENSE-MODEL, porque existe una discrepancia entre ambas descripciones y hay una clausula de nombrado.
+- Licencia: el metadato de Hugging Face la registra como `other` con nombre `budgiescribe-license`, mientras que la model card la describe como Apache 2.0 mas un termino de nombrado. Antes de un uso comercial conviene revisar el fichero LICENSE-MODEL, porque existe una discrepancia entre ambas descripciones y hay una clausula de nombrado.
 - Adopcion practica: 0 descargas y 0 likes en el momento de la consulta, lo que implica poca validacion externa y ausencia de ecosistema probado.
 - Para produccion: no se publican metricas de estabilidad fuera del hardware de referencia (Radeon AI PRO R9700 con Vulkan) ni pruebas con otras versiones de llama.cpp distintas de b10816.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flowcorp-ch/BudgieScribe-en
+- Modelo en Hugging Face: https://huggingface.co/flowcorp-ch/BudgieScribe-en
 - Modelo hermano en frances: https://huggingface.co/flowcorp-ch/BudgieScribe-fr
 - Licencia del modelo: https://huggingface.co/flowcorp-ch/BudgieScribe-en/blob/main/LICENSE-MODEL
 - Repositorio de entrenamiento y evaluacion: https://github.com/gobudgie/budgie-scribe

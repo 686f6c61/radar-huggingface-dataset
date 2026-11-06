@@ -4,7 +4,7 @@
 
 V-JEPA 2-AC es un modelo de mundo (world model) condicionado por acciones, desarrollado por Meta AI como parte de la familia V-JEPA 2. Este repositorio concreto, publicado por jepacpp, ofrece una conversión a formato GGUF del checkpoint oficial `vjepa2-ac-vitg.pt`, diseñada para ejecutarse con el motor jepa.cpp, una implementación en C/C++ basada en ggml que permite inferencia en CPU sin dependencias de Python ni PyTorch. El modelo combina un encoder ViT-g/16 congelado y un predictor de 24 capas que, dado un frame y una acción de 7 dimensiones junto con una pose de 7 dimensiones, predice los latentes del siguiente frame de forma block-causal. Con 1.317.387.776 parámetros, está pensado para planificación de robots con cero disparos en entornos nuevos, puntuando secuencias de acciones candidatas mediante una energía de planificación L1.
 
-La relevancia actual radica en que es uno de los primeros modelos de mundo de gran escala que demuestra control robótico sin entrenamiento específico por tarea ni calibración, y esta conversión GGUF lo hace accesible para despliegue en hardware modesto, incluso CPU. El bundle incluye el encoder propio del checkpoint, que difiere ligeramente (coseno ~0.998 por tensor) de la versión publicada en HuggingFace como `facebook/vjepa2-vitg-fpc64-256`, pero es bit-idéntico entre sus copias `encoder` y `target_encoder`.
+La relevancia actual radica en que es uno de los primeros modelos de mundo de gran escala que demuestra control robótico sin entrenamiento específico por tarea ni calibración, y esta conversión GGUF lo hace accesible para despliegue en hardware modesto, incluso CPU. El bundle incluye el encoder propio del checkpoint, que difiere ligeramente (coseno ~0.998 por tensor) de la versión publicada en Hugging Face como `facebook/vjepa2-vitg-fpc64-256`, pero es bit-idéntico entre sus copias `encoder` y `target_encoder`.
 
 ## Especificaciones tecnicas
 
@@ -55,20 +55,20 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de mundo en la informacion proporcionada. Como referencia, el modelo original de Meta (V-JEPA 2) esta disponible en PyTorch y en HuggingFace Transformers, pero no en formato GGUF. Otros world models como VideoGPT o IRIS no tienen una conversion GGUF publica comparable. Por tanto, la comparativa directa no esta disponible.
+No se dispone de datos comparativos con otros modelos de mundo en la informacion proporcionada. Como referencia, el modelo original de Meta (V-JEPA 2) esta disponible en PyTorch y en Hugging Face Transformers, pero no en formato GGUF. Otros world models como VideoGPT o IRIS no tienen una conversion GGUF publica comparable. Por tanto, la comparativa directa no esta disponible.
 
 ## Limitaciones y advertencias
 
 - Las cuantizaciones por debajo de 8 bits (q4_0, q4_k) no son configuraciones de paridad: en rollouts multi-paso, el error de prediccion se compone y puede llevar a seleccionar acciones incorrectas, especialmente en GPU.
 - El modelo solo procesa video y acciones; no tiene capacidades de lenguaje, por lo que no es util para tareas de texto o generacion de codigo.
 - No se especifican idiomas soportados, ya que no hay componente textual.
-- El encoder incluido difiere ligeramente del publicado en HuggingFace como `facebook/vjepa2-vitg-fpc64-256` (coseno ~0.998 por tensor), por lo que no es intercambiable con otros checkpoints de V-JEPA 2.
+- El encoder incluido difiere ligeramente del publicado en Hugging Face como `facebook/vjepa2-vitg-fpc64-256` (coseno ~0.998 por tensor), por lo que no es intercambiable con otros checkpoints de V-JEPA 2.
 - La licencia MIT permite uso comercial, pero el modelo deriva de investigacion de Meta; se recomienda revisar los terminos del checkpoint original.
 - No hay datos sobre sesgos o alucinaciones, pero al ser un modelo entrenado con video de internet, podria reflejar sesgos visuales de los datos de entrenamiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jepacpp/vjepa2-ac-vitg-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jepacpp/vjepa2-ac-vitg-GGUF
 - Repositorio jepa.cpp: https://github.com/aselimc/jepa.cpp
 - Paper V-JEPA 2: https://arxiv.org/abs/2506.09985
 - Blog de Meta AI: https://ai.meta.com/research/vjepa/

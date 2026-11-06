@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BoyuanDeng/research-knowledge-distillation
+- Repositorio en Hugging Face: https://huggingface.co/BoyuanDeng/research-knowledge-distillation
 - Encuesta sobre destilación de conocimiento en LLMs (arXiv): https://arxiv.org/html/2402.13116v1
 - Encuesta exhaustiva sobre destilación de conocimiento (arXiv): https://arxiv.org/abs/2503.12067
 - Guía completa de destilación de conocimiento y compresión de modelos: https://www.youngju.dev/blog/ai/2026-03-17-knowledge-distillation-model-compression.en

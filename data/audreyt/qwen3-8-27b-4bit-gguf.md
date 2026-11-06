@@ -79,7 +79,7 @@ La diferencia principal entre las tres versiones es el ecosistema de ejecucion: 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/audreyt/Qwen3.8-27B-4bit-GGUF
+- Repositorio Hugging Face: https://huggingface.co/audreyt/Qwen3.8-27B-4bit-GGUF
 - Modelo base (EigenLabs): https://huggingface.co/EigenLabs/Qwen3.8-27B-4bit
 - Repositorio oficial Qwen3.8 (Alibaba): https://github.com/QwenLM/Qwen3.8
 - Repositorio AlibabaCloud-Official/Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

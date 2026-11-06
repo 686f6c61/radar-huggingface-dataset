@@ -64,9 +64,9 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - tiantiaf/childvox-speechocean762-prosody-whisper-base](https://huggingface.co/tiantiaf/childvox-speechocean762-prosody-whisper-base)
+- [Hugging Face - tiantiaf/childvox-speechocean762-prosody-whisper-base](https://huggingface.co/tiantiaf/childvox-speechocean762-prosody-whisper-base)
 - [Repositorio GitHub - childvox-release](https://github.com/tiantiaf0627/childvox-release)
 - [Sitio web de ChildVox](https://tiantiaf0627.github.io/childvox/)
-- [Colección ChildVox en HuggingFace](https://huggingface.co/collections/tiantiaf/childvox)
+- [Colección ChildVox en Hugging Face](https://huggingface.co/collections/tiantiaf/childvox)
 - [Paper ChildVox (arXiv)](https://arxiv.org/pdf/2605.29257)
 - [Corpus SpeechOcean762 en GitHub](https://github.com/jimbozhang/speechocean762)

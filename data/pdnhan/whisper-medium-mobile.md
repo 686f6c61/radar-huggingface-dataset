@@ -90,7 +90,7 @@ Condiciones de la medición: ONNX Runtime 1.31.1, 4 hilos intra-op, optimizació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pdnhan/whisper-medium-mobile
+- Hugging Face: https://huggingface.co/pdnhan/whisper-medium-mobile
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - Exportación de referencia: https://huggingface.co/Xenova/whisper-medium
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper

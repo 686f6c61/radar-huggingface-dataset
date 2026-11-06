@@ -80,9 +80,9 @@ La informacion disponible solo incluye la tabla comparativa de comportamiento en
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abergzzzzz/Qwen3-VL-4B-Instruct-heretic | 4,44B | 256K (1M ampliable) | 4/100 rechazos, KL 0,0649 | apache-2.0 | Repositorio HuggingFace, 0 descargas |
+| abergzzzzz/Qwen3-VL-4B-Instruct-heretic | 4,44B | 256K (1M ampliable) | 4/100 rechazos, KL 0,0649 | apache-2.0 | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen3-VL-4B-Instruct | 4,44B | 256K (1M ampliable) | 97/100 rechazos | apache-2.0 | Repositorio oficial, ampliamente distribuido |
-| coder3101/Qwen3-VL-4B-Instruct-heretic | No disponible | No disponible | No disponible | No disponible | Repositorio HuggingFace de terceros |
+| coder3101/Qwen3-VL-4B-Instruct-heretic | No disponible | No disponible | No disponible | No disponible | Repositorio Hugging Face de terceros |
 | Qwen3-VL-8B-Instruct | No disponible en la informacion proporcionada | 256K (1M ampliable) | No disponible | No disponible | Repositorio oficial |
 
 La comparacion relevante es contra el modelo base: comparten pesos, arquitectura y licencia, y la unica diferencia medida es la tasa de rechazo y la divergencia KL. Frente a otras variantes heretic de la misma familia, no hay datos publicados que permitan establecer que ablacion preserva mejor las capacidades originales.
@@ -101,7 +101,7 @@ La comparacion relevante es contra el modelo base: comparten pesos, arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abergzzzzz/Qwen3-VL-4B-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/abergzzzzz/Qwen3-VL-4B-Instruct-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Variante heretic de coder3101: https://huggingface.co/coder3101/Qwen3-VL-4B-Instruct-heretic
 - Heretic (herramienta de decensoring): https://github.com/p-e-w/heretic

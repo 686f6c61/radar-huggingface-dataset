@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rbdj-tsc-ob6000-s40k` es un checkpoint de investigación publicado por el usuario Yuyang-z en HuggingFace. Se trata de un modelo de mundo (world model) y de acción para robótica, construido sobre la arquitectura SANA-RWM y entrenado mediante SFT sobre cadenas de episodios completos del simulador RoboDojo con el brazo robótico ARX X5. El identificador interno del modelo, `SanaRWMVideoQwenNextSubAttnResV2SelfFlowWorldModelCameraConditionMultiViewTwoStream_5B_P1_D36`, revela las piezas principales: un transformer de difusión con flow matching ("self flow"), dos flujos acoplados (vídeo y acciones), acondicionamiento por cámara y multi-vista, y un tamaño aproximado de 5.000 millones de parámetros con 36 bloques de profundidad.
+`rbdj-tsc-ob6000-s40k` es un checkpoint de investigación publicado por el usuario Yuyang-z en Hugging Face. Se trata de un modelo de mundo (world model) y de acción para robótica, construido sobre la arquitectura SANA-RWM y entrenado mediante SFT sobre cadenas de episodios completos del simulador RoboDojo con el brazo robótico ARX X5. El identificador interno del modelo, `SanaRWMVideoQwenNextSubAttnResV2SelfFlowWorldModelCameraConditionMultiViewTwoStream_5B_P1_D36`, revela las piezas principales: un transformer de difusión con flow matching ("self flow"), dos flujos acoplados (vídeo y acciones), acondicionamiento por cámara y multi-vista, y un tamaño aproximado de 5.000 millones de parámetros con 36 bloques de profundidad.
 
 El modelo resuelve dos tareas complementarias: predecir observaciones futuras multi-vista a partir de acciones (modelo de mundo) y generar secuencias de acciones de efector final (EEF) a partir de instrucciones y contexto visual (modelo de política o *world-action model*). Trabaja sobre ventanas de episodio de entre 4 y 49 trozos de 32 acciones absolutas a 25 fps, con tres vistas de 256x320 píxeles codificadas en latentes de LTX-2.3. Es relevante porque combina en un único artefacto la capacidad de simular el entorno y de actuar en él, lo que habilita evaluación de políticas y planificación basada en modelo sin necesidad de ejecutar en hardware real.
 
@@ -18,7 +18,7 @@ El checkpoint corresponde a la época 41, paso 40.000, de un ajuste fino sobre e
 | Longitud de contexto | Ventanas de episodio de L = 4 a 49 trozos (*chunks*), cada trozo con 32 acciones EEF absolutas a 25 fps; equivale a entre 128 y 1.568 acciones (~0,16 s a 62,7 s de trayectoria). Ventana visual de 3 vistas a 256x320 píxeles |
 | Tipos de cuantizacion | No disponible: solo se publican pesos consolidados en fp32; no se ofrecen variantes bf16, int8 ni GGUF |
 | Idiomas soportados | No disponible: la model card no declara cobertura lingüística; las instrucciones se introducen como *token-group prompts* de texto |
-| Licencia | No disponible: la model card y los metadatos de HuggingFace no especifican licencia |
+| Licencia | No disponible: la model card y los metadatos de Hugging Face no especifican licencia |
 | Formato de pesos | `model/pytorch_model_fsdp.bin` (binario PyTorch consolidado, fp32), `metadata.pth`, `config.yaml`, `normalization/`, `episode_chain_contract.json`, `RUN_ID.json`, `SHA256SUMS`. No hay safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / ventana | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rbdj-tsc-ob6000-s40k` (este modelo) | ~5 B | 4-49 trozos de 32 acciones a 25 fps; 3 vistas 256x320 | Vídeo multi-vista y acciones EEF | No disponible | HuggingFace, 0 descargas |
+| `rbdj-tsc-ob6000-s40k` (este modelo) | ~5 B | 4-49 trozos de 32 acciones a 25 fps; 3 vistas 256x320 | Vídeo multi-vista y acciones EEF | No disponible | Hugging Face, 0 descargas |
 | π0 (Physical Intelligence) | ~3,3 B (dato público aproximado) | Ventana de acciones corta, una vista | Acciones de robot | No comercial (aproximado, verificar) | Pesos públicos con acceso condicionado |
 | NVIDIA GR00T N1 | ~2 B (dato público aproximado) | Ventana corta, entrada VLM + difusión | Acciones de robot | Comunidad NVIDIA (verificar) | Pesos públicos |
 | NVIDIA Cosmos-Predict 2 | 2 B y 14 B (aproximado) | Ventana de vídeo corta | Solo vídeo de mundo, sin acciones | NVIDIA Open Model License (verificar) | Pesos públicos |
@@ -80,10 +80,10 @@ Los datos de los modelos alternativos provienen de sus fichas públicas y deben 
 - Ausencia total de benchmarks: no existen métricas de éxito, fidelidad visual ni precisión de acción que permitan comparar con alternativas.
 - Formato de pesos potencialmente inseguro: los ficheros `.bin` y `.pth` son serializaciones pickle; conviene cargarlos en un entorno aislado y verificar `SHA256SUMS` antes de su uso.
 - Idioma no declarado: se desconoce si los *prompts* de instrucción funcionan en castellano; el preentrenamiento y el SFT probablemente usan instrucciones en inglés.
-- Madurez: 0 descargas y 0 interacciones en HuggingFace; es un artefacto de investigación sin revisión de la comunidad ni mantenimiento conocido.
+- Madurez: 0 descargas y 0 interacciones en Hugging Face; es un artefacto de investigación sin revisión de la comunidad ni mantenimiento conocido.
 - Requisitos de cómputo elevados para un modelo de 5 B en fp32 con ventanas largas, sin variantes cuantizadas publicadas que faciliten el despliegue en hardware modesto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuyang-z/rbdj-tsc-ob6000-s40k
+- Hugging Face: https://huggingface.co/Yuyang-z/rbdj-tsc-ob6000-s40k
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

@@ -89,10 +89,10 @@ El autor indica ademas un 100 % en una particion de regresion separada de 340 re
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hugoc8/zhixia-htlm-action-v2-lfm2.5-350m` | 354,5 M (5,99 M entrenables en LoRA) | No disponible | Grounding de acciones de navegador con salida JSON restringida | LFM Open License v1.0 | HuggingFace, 0 descargas |
-| `LiquidAI/LFM2.5-350M` (base) | 354,5 M | No disponible | Generacion de texto general | LFM Open License v1.0 | HuggingFace |
-| `Qwen2.5-0.5B-Instruct` | ~0,5 B | No disponible en la informacion proporcionada | Chat y generacion general | No verificado en la informacion disponible | HuggingFace |
-| `SmolLM2-360M-Instruct` | ~0,36 B | No disponible en la informacion proporcionada | Chat y generacion general | No verificado en la informacion disponible | HuggingFace |
+| `hugoc8/zhixia-htlm-action-v2-lfm2.5-350m` | 354,5 M (5,99 M entrenables en LoRA) | No disponible | Grounding de acciones de navegador con salida JSON restringida | LFM Open License v1.0 | Hugging Face, 0 descargas |
+| `LiquidAI/LFM2.5-350M` (base) | 354,5 M | No disponible | Generacion de texto general | LFM Open License v1.0 | Hugging Face |
+| `Qwen2.5-0.5B-Instruct` | ~0,5 B | No disponible en la informacion proporcionada | Chat y generacion general | No verificado en la informacion disponible | Hugging Face |
+| `SmolLM2-360M-Instruct` | ~0,36 B | No disponible en la informacion proporcionada | Chat y generacion general | No verificado en la informacion disponible | Hugging Face |
 
 Los dos ultimos modelos se incluyen unicamente como referencia de tamano dentro de la misma franja de parametros; sus datos no proceden de la informacion proporcionada y no se han verificado. No se dispone de resultados comparativos de benchmarks entre ellos y este checkpoint, ni de otros checkpoints publicos de grounding de navegador del mismo orden de magnitud en la informacion disponible. La diferencia documentada mas relevante sigue siendo interna: 98,97 % frente a 3,09 % del modelo base en la misma particion de evaluacion.
 
@@ -112,7 +112,7 @@ Los dos ultimos modelos se incluyen unicamente como referencia de tamano dentro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hugoc8/zhixia-htlm-action-v2-lfm2.5-350m
+- Modelo en Hugging Face: https://huggingface.co/hugoc8/zhixia-htlm-action-v2-lfm2.5-350m
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Licencia LFM Open License v1.0: incluida en el repositorio como archivo `LICENSE` (https://huggingface.co/hugoc8/zhixia-htlm-action-v2-lfm2.5-350m/blob/main/LICENSE)
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

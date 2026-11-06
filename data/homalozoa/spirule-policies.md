@@ -2,11 +2,11 @@
 
 ## Resumen
 
-spirule-policies es un repositorio de políticas de aprendizaje por refuerzo publicado por el usuario Homalozoa en HuggingFace. No se trata de un modelo de lenguaje, sino de un conjunto de pesos de políticas entrenadas para robótica, con la etiqueta de pipeline "reinforcement-learning" y asociado al simulador MuJoCo. El repositorio pesa aproximadamente 0,3 GB, lo que sugiere que contiene pesos de redes neuronales relativamente pequeñas, coherentes con políticas de control típicas de RL (MLP o redes ligeras).
+spirule-policies es un repositorio de políticas de aprendizaje por refuerzo publicado por el usuario Homalozoa en Hugging Face. No se trata de un modelo de lenguaje, sino de un conjunto de pesos de políticas entrenadas para robótica, con la etiqueta de pipeline "reinforcement-learning" y asociado al simulador MuJoCo. El repositorio pesa aproximadamente 0,3 GB, lo que sugiere que contiene pesos de redes neuronales relativamente pequeñas, coherentes con políticas de control típicas de RL (MLP o redes ligeras).
 
 El problema que aborda es la reutilización de políticas de control entrenadas en simulación: en lugar de repetir el entrenamiento desde cero, otros investigadores pueden cargar estas políticas y evaluarlas o ajustarlas en sus propios entornos MuJoCo. Su relevancia es limitada y de nicho: con 0 descargas y 1 like, y con fecha de creación reciente (octubre de 2026), parece un recurso experimental de un autor individual más que un proyecto con comunidad activa.
 
-No hay disponible información sobre arquitectura, número de parámetros, datos de entrenamiento ni resultados de evaluación, por lo que varios campos de esta ficha quedan como no disponibles. El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones del autor en HuggingFace antes de descargar los pesos.
+No hay disponible información sobre arquitectura, número de parámetros, datos de entrenamiento ni resultados de evaluación, por lo que varios campos de esta ficha quedan como no disponibles. El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones del autor en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Homalozoa/spirule-policies | Politicas de RL | MuJoCo (robotica) | Apache 2.0 | Gated en HuggingFace |
+| Homalozoa/spirule-policies | Politicas de RL | MuJoCo (robotica) | Apache 2.0 | Gated en Hugging Face |
 | Politicas de Stable-Baselines3 Zoo (p.ej. Ant, HalfCheetah) | Politicas de RL | MuJoCo (locomocion) | MIT | Abiertas, con resultados publicados |
 | deepmimic / políticas de DeepMind en MuJoCo | Politicas de RL | Locomocion y control | Variadas | Documentadas en papers |
 
@@ -75,7 +75,7 @@ No hay modelos directamente comparables publicados por el mismo autor; la compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Homalozoa/spirule-policies
+- Repositorio en Hugging Face: https://huggingface.co/Homalozoa/spirule-policies
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo de entrenamiento: no disponible

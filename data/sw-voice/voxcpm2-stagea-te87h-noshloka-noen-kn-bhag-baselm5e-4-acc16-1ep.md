@@ -6,7 +6,7 @@ voxcpm2-stageA-te87h-noshloka-noen-kn-bhag-baselm5e-4-acc16-1ep es un modelo de 
 
 La relevancia de este checkpoint es acotada: es una iteración intermedia dentro de una línea de experimentos de ajuste fino sobre datos de dominio muy específico (textos devocionales y temáticos en telugu y kannada, sin shlokas y sin inglés). No se trata de un modelo de propósito general, sino de una pieza de investigación para evaluar el comportamiento del entrenamiento VoxCPM2 sobre subconjuntos de datos controlados. La model card indica explícitamente que es un modelo "research" y que la voz queda embebida en los pesos (reference-free), sin necesidad de un audio de referencia en inferencia.
 
-El modelo no incluye datos públicos de benchmarks, no tiene descargas ni interacciones en HuggingFace en el momento de la consulta, y su uso previsto es experimental. La información disponible sobre arquitectura interna, composición exacta del dataset y proceso de alineación es limitada y se detalla en las secciones siguientes.
+El modelo no incluye datos públicos de benchmarks, no tiene descargas ni interacciones en Hugging Face en el momento de la consulta, y su uso previsto es experimental. La información disponible sobre arquitectura interna, composición exacta del dataset y proceso de alineación es limitada y se detalla en las secciones siguientes.
 
 ## Especificaciones tecnicas
 
@@ -83,12 +83,12 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 - Cobertura de dominio estrecha: excluye las 582 shlokas del conjunto telugu, por lo que no está entrenado para ese subconjunto.
 - Licencia Apache 2.0: permite uso comercial, pero al ser un modelo de investigación sin evaluación de calidad, el uso comercial conlleva riesgo no cuantificado.
 - Sin datos de benchmarks, latencia, VRAM ni despliegue: no es posible estimar rendimiento en producción a partir de la información disponible.
-- Sin descargas ni interacciones en HuggingFace: no hay evidencia de validación por parte de la comunidad.
+- Sin descargas ni interacciones en Hugging Face: no hay evidencia de validación por parte de la comunidad.
 - Tamaño del repositorio de 37,0 GB: incluye los checkpoints intermedios, lo que incrementa los requisitos de almacenamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stageA-te87h-noshloka-noen-kn-bhag-baselm5e-4-acc16-1ep
+- Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stageA-te87h-noshloka-noen-kn-bhag-baselm5e-4-acc16-1ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep
 - Dataset telugu (referenciado): sw-voice/swamiji-telugu-reuse-train
 - Dataset kannada Navaratri (referenciado): sw-voice/swamiji-navaratri-kannada-reuse-themes

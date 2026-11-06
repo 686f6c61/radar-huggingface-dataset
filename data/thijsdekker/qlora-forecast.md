@@ -61,7 +61,7 @@ No se puede realizar una comparativa porque no se dispone de datos de parámetro
 
 ## Enlaces
 
-- [HuggingFace - thijsdekker/qlora-forecast](https://huggingface.co/thijsdekker/qlora-forecast)
+- [Hugging Face - thijsdekker/qlora-forecast](https://huggingface.co/thijsdekker/qlora-forecast)
 - [GitHub - truehealthai/qlora-ai (proyecto QLoRA de referencia, no afiliado)](https://github.com/truehealthai/qlora-ai)
 - [Slides de QLoRA en NeurIPS 2023](https://neurips.cc/media/neurips-2023/Slides/73855.pdf)
 - [Perfil académico de Thijs Dekker en la Universidad de Leeds](https://environment.leeds.ac.uk/transport/staff/929/professor-thijs-dekker)

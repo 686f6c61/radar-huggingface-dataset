@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (hewittlab) | LoRA rango 32 sobre 30B (nominal) | no disponible | juicio de pares con intencion explicita | no disponible | HuggingFace, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | 30B totales / 3B activos (nominal) | no disponible | modelo base de proposito general | no disponible | HuggingFace (modelo base) |
+| Este repositorio (hewittlab) | LoRA rango 32 sobre 30B (nominal) | no disponible | juicio de pares con intencion explicita | no disponible | Hugging Face, 0 descargas |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | 30B totales / 3B activos (nominal) | no disponible | modelo base de proposito general | no disponible | Hugging Face (modelo base) |
 | Otros adaptadores de investigacion en reward hacking / monitorabilidad | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa es limitada: se trata de un artefacto de investigación con una tarea muy específica y sin métricas publicadas, por lo que no es equiparable a modelos de propósito general. Como referencia, el propio modelo base es el punto de partida natural frente al que medir el efecto del ajuste, y el conjunto `control_model` frente a `misaligned_model` es la comparación interna principal del estudio.
@@ -86,10 +86,10 @@ La comparación directa es limitada: se trata de un artefacto de investigación 
 
 ## Enlaces
 
-- Página de HuggingFace del repositorio: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-nemotron-3-nano-30b-a3b
+- Página de Hugging Face del repositorio: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-nemotron-3-nano-30b-a3b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-judge
 - Dataset original: https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k
 - Código del artículo: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - tinker-cookbook: https://github.com/thinking-machines-lab/tinker-cookbook
-- Guía de exportación a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guía de exportación a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/

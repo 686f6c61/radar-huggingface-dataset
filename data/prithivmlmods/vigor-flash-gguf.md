@@ -84,7 +84,7 @@ La comparativa cuantitativa con alternativas concretas no esta disponible en la 
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/prithivMLmods/VIGOR-flash-GGUF
+- Hugging Face (GGUF): https://huggingface.co/prithivMLmods/VIGOR-flash-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/VIGOR-flash
 - Modelo base original Qwen: https://huggingface.co/Qwen/Qwen3.5-9B
 - llama.cpp: https://github.com/ggml-org/llama.cpp

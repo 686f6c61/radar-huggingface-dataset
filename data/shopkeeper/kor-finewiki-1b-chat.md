@@ -78,10 +78,10 @@ Notas aportadas por el autor: el azar en KMMLU es 0,25; el ajuste por chat empeo
 
 | Modelo | Parámetros | Contexto | BPB ↓ | KMMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kor-finewiki-1b-chat | 1,0B | 2.048 (deducido) | 0,749 | 0,298 | Apache-2.0 | Pesos safetensors en HuggingFace; 0 descargas |
-| kor-finewiki-1b-base | 1,0B | No disponible | 0,729 | 0,255 | Apache-2.0 (según modelo base) | Pesos safetensors en HuggingFace |
-| EleutherAI/polyglot-ko-1.3b | 1,3B | No disponible en la información | 1,052 | 0,153 | No disponible en la información | Público en HuggingFace |
-| skt/kogpt2-base-v2 | 125M | No disponible en la información | 1,092 | 0,177 | No disponible en la información | Público en HuggingFace |
+| kor-finewiki-1b-chat | 1,0B | 2.048 (deducido) | 0,749 | 0,298 | Apache-2.0 | Pesos safetensors en Hugging Face; 0 descargas |
+| kor-finewiki-1b-base | 1,0B | No disponible | 0,729 | 0,255 | Apache-2.0 (según modelo base) | Pesos safetensors en Hugging Face |
+| EleutherAI/polyglot-ko-1.3b | 1,3B | No disponible en la información | 1,052 | 0,153 | No disponible en la información | Público en Hugging Face |
+| skt/kogpt2-base-v2 | 125M | No disponible en la información | 1,092 | 0,177 | No disponible en la información | Público en Hugging Face |
 
 Frente a polyglot-ko-1.3b, este modelo tiene un 23% menos de parámetros y mejora el BPB en 0,303 puntos y KMMLU en 0,145 puntos, a costa de un SentiNeg inferior (0,587 frente a 0,703). Frente a kogpt2-base-v2 es ocho veces mayor en parámetros, con mejor BPB (0,749 frente a 1,092) y mejor KMMLU (0,298 frente a 0,177). La ventaja comparativa principal es la eficiencia de la arquitectura híbrida en BPB; la desventaja es la ausencia de ecosistema de herramientas y de comunidad en torno a ella.
 
@@ -101,7 +101,7 @@ Frente a polyglot-ko-1.3b, este modelo tiene un 23% menos de parámetros y mejor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shopkeeper/kor-finewiki-1b-chat
+- Modelo en Hugging Face: https://huggingface.co/shopkeeper/kor-finewiki-1b-chat
 - Modelo base: https://huggingface.co/shopkeeper/kor-finewiki-1b-base
 - Dataset lemon-mint/smol-koreantalk: https://huggingface.co/datasets/lemon-mint/smol-koreantalk
 - Dataset maywell/koVast: https://huggingface.co/datasets/maywell/koVast

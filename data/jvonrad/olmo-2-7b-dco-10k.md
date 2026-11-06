@@ -76,7 +76,7 @@ No se dispone de datos públicos de otros adaptadores multilingües entrenados c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jvonrad/OLMo-2-7B-DCO-10k
+- Modelo en Hugging Face: https://huggingface.co/jvonrad/OLMo-2-7B-DCO-10k
 - Dataset de entrenamiento: https://huggingface.co/datasets/jvonrad/PolyFact-Clean
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B
 - Paper asociado (arXiv 2606.06586): https://arxiv.org/abs/2606.06586

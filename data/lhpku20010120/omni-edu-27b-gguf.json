@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lhpku20010120/Omni-Edu-27B-GGUF",
+  "slug": "lhpku20010120-omni-edu-27b-gguf",
+  "author": "lhpku20010120",
+  "url": "https://huggingface.co/lhpku20010120/Omni-Edu-27B-GGUF",
+  "created_at": "2026-11-02T04:54:08.000Z",
+  "updated_at": "2026-11-02T15:52:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "omniedu",
+    "education",
+    "qwen3_5",
+    "image-text-to-text",
+    "base_model:lhpku20010120/Omni-Edu-27B",
+    "base_model:quantized:lhpku20010120/Omni-Edu-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1147,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 121961586688,
+  "storage_human": "122.0 GB",
+  "base_model": "lhpku20010120/Omni-Edu-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lhpku20010120/Omni-Edu-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/lhpku20010120/Omni-Edu-27B-GGUF",
+      "snippet": "lhpku20010120 / Omni-Edu-27B-GGUF Like 1 Image-Text-to-Text GGUF llama.cpp omniedu education qwen3_5 conversational License:other Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "OpenDCAI/Omni-Edu-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OpenDCAI/Omni-Edu-27B-GGUF",
+      "snippet": "Omni-Edu-27B GGUF GGUF versions of Omni-Edu-27B, converted and quantized with llama.cpp. The upstream model's license and usage terms apply. Download Choose one main model: OmniEdu-27B-BF16.gguf — 50.11 GiB; unquantized. OmniEdu-27B-Q8_0.gguf — 26.63 GiB; 8-bit quantization. OmniEdu-27B-Q6_K.gguf — 20.57 GiB; 6-bit quantization. OmniEdu-27B-Q4_K_M.gguf — 15.41 GiB; smaller 4-bit mixed ..."
+    },
+    {
+      "title": "OmniEdu · Open Foundation Models for Learning and Teaching",
+      "url": "https://haolpku.github.io/Omni-Edu/",
+      "snippet": "Know the curriculum. Teach the next step. OmniEdu: Open Foundation Models for Learning and Teaching. Three multimodal model scales—4B, 9B, and 27B, now in BF16 and FP8—connect curriculum knowledge, problem solving, learner diagnosis, and instructional support."
+    },
+    {
+      "title": "GitHub - haolpku/Omni-Edu: OmniEdu: Open Foundation Models for Learning ...",
+      "url": "https://github.com/haolpku/Omni-Edu",
+      "snippet": "Curriculum-aware, multimodal models for the full K–12 learning–teaching loop. OmniEdu brings together subject knowledge, curriculum alignment, learner diagnosis, and instructional support in three model scales: 4B, 9B, and 27B, each available in BF16 and FP8. 📄 Paper (arXiv) · 🌐 Project page · 🤗 Models · 🤗 Dataset · 🛠️ Toolkit Hao Liang · Qihan Lin · Meiyi Qiang ..."
+    },
+    {
+      "title": "Run Omni-Edu-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/lhpku20010120/Omni-Edu-27B",
+      "snippet": "OmniEdu-27B by lhpku20010120 is a 27 billion parameter multimodal foundation model, fine-tuned from Qwen3.8-27B, specifically designed for K–12 learning and teaching. It integrates subject competence, curriculum grounding, diagnostic reasoning, and pedagogical scaffolding to support educational tasks. With a 32,768-token context length, this model excels at solving K–12 problems ..."
+    }
+  ]
+}

@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks estándar (MTEB, BEIR, MMLU, etc.) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShanelBastian/multilingual-e5-base-q8-reduce-range
+- Modelo en Hugging Face: https://huggingface.co/ShanelBastian/multilingual-e5-base-q8-reduce-range
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
 - Repositorio del modelo base (revisión usada): https://huggingface.co/intfloat/multilingual-e5-base/tree/d128750597153bb5987e10b1c3493a34e5a4502a
 - Script de cuantización: `quantize.py` incluido en el repositorio del modelo

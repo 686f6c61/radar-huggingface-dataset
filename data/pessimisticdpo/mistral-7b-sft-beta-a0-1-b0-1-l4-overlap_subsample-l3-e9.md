@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e9` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. El identificador sugiere que parte de `mistral-7b-sft-beta` (el punto de control de ajuste supervisado de la familia Zephyr, construido sobre Mistral-7B-v0.1) y que sobre el se ha aplicado un ajuste adicional con una variante de DPO que el autor denomina "pessimistic DPO", cuyos hiperparametros parecen codificados en el propio nombre (alpha 0.1, beta 0.1, capa L4, submuestreo con solapamiento, epoca 9). Ninguno de estos extremos esta confirmado: la model card es la plantilla automatica de `transformers` sin rellenar.
+El modelo `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e9` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. El identificador sugiere que parte de `mistral-7b-sft-beta` (el punto de control de ajuste supervisado de la familia Zephyr, construido sobre Mistral-7B-v0.1) y que sobre el se ha aplicado un ajuste adicional con una variante de DPO que el autor denomina "pessimistic DPO", cuyos hiperparametros parecen codificados en el propio nombre (alpha 0.1, beta 0.1, capa L4, submuestreo con solapamiento, epoca 9). Ninguno de estos extremos esta confirmado: la model card es la plantilla automatica de `transformers` sin rellenar.
 
 Se trata, por tanto, de un artefacto de investigacion sin documentacion. La model card no declara autor real, datos de entrenamiento, licencia, idiomas soportados ni resultados de evaluacion, y el repositorio ocupa 0,2 GB, muy por debajo de los aproximadamente 14 GB que exigirian los pesos en fp16 de un transformer de 7.000 millones de parametros. Con 0 descargas y 0 "likes", y una fecha de creacion registrada en 2026, el nivel de curacion del repositorio es minimo.
 
@@ -26,7 +26,7 @@ Su relevancia practica es acotada y estrictamente experimental: puede servir par
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla generica autogenerada por HuggingFace y todos los apartados relevantes (Model Details, Training Data, Training Procedure, Training Hyperparameters) figuran como "[More Information Needed]". Lo unico que puede inferirse procede del nombre del repositorio: un ajuste supervisado de partida identificado como `mistral-7b-sft-beta`, seguido de una fase de optimizacion con preferencias etiquetada como "pessimistic DPO" y parametrizada con valores alpha = 0,1 y beta = 0,1, posiblemente asociados a una variante que penaliza de forma asimetrica las recompensas sobreestimadas. Los sufijos `L4`, `overlap_subsample`, `l3` y `e9` apuntarian a una seleccion de capas o de pares de preferencia, una estrategia de submuestreo con solapamiento y 9 epocas de entrenamiento. Todo ello es interpretacion del identificador, no documentacion.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla generica autogenerada por Hugging Face y todos los apartados relevantes (Model Details, Training Data, Training Procedure, Training Hyperparameters) figuran como "[More Information Needed]". Lo unico que puede inferirse procede del nombre del repositorio: un ajuste supervisado de partida identificado como `mistral-7b-sft-beta`, seguido de una fase de optimizacion con preferencias etiquetada como "pessimistic DPO" y parametrizada con valores alpha = 0,1 y beta = 0,1, posiblemente asociados a una variante que penaliza de forma asimetrica las recompensas sobreestimadas. Los sufijos `L4`, `overlap_subsample`, `l3` y `e9` apuntarian a una seleccion de capas o de pares de preferencia, una estrategia de submuestreo con solapamiento y 9 epocas de entrenamiento. Todo ello es interpretacion del identificador, no documentacion.
 
 La unica referencia formal enlazada en la ficha es el articulo arXiv:1910.09700 (Lacoste et al., 2019), que aparece porque la plantilla de model card lo cita como fuente de la metodologia de estimacion de emisiones de carbono. No es un paper sobre este modelo y no aporta informacion sobre su entrenamiento.
 
@@ -101,8 +101,8 @@ La comparacion de rendimiento no es posible: este checkpoint no publica ninguna 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e9
-- Perfil del autor en HuggingFace: https://huggingface.co/PessimisticDPO
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e9
+- Perfil del autor en Hugging Face: https://huggingface.co/PessimisticDPO
 - Referencia citada en la plantilla de la model card (metodologia de emisiones, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos de codigo o demos) en la busqueda web realizada; los resultados obtenidos corresponden a listados de telefonia movil reacondicionada y no guardan relacion con el modelo.

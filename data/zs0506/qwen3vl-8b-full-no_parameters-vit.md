@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zs0506/qwen3vl-8B-full-no_parameters-vit` es un repositorio de pesos publicado en HuggingFace por el usuario `zs0506`. Por el nombre y por la etiqueta de arquitectura (`qwen3_vl`), se trata de un ajuste fino completo ("full") sobre un modelo de la familia Qwen3-VL de aproximadamente 8.000 millones de parametros, con la particularidad de que el nombre sugiere que el torre de vision (ViT) ha sido excluida o tratada de forma especial ("no_parameters-vit"). El repositorio no incluye model card descriptiva, ni pipeline declarado, ni licencia, ni lista de idiomas.
+`zs0506/qwen3vl-8B-full-no_parameters-vit` es un repositorio de pesos publicado en Hugging Face por el usuario `zs0506`. Por el nombre y por la etiqueta de arquitectura (`qwen3_vl`), se trata de un ajuste fino completo ("full") sobre un modelo de la familia Qwen3-VL de aproximadamente 8.000 millones de parametros, con la particularidad de que el nombre sugiere que el torre de vision (ViT) ha sido excluida o tratada de forma especial ("no_parameters-vit"). El repositorio no incluye model card descriptiva, ni pipeline declarado, ni licencia, ni lista de idiomas.
 
 El modelo esta pensado, por tanto, para tareas de vision-lenguaje: comprension de imagenes, OCR, respuesta a preguntas visuales y generacion de texto condicionada por entrada visual. Su relevancia es limitada desde el punto de vista de adopcion: con 10 descargas y 0 "likes" en el momento de la consulta, y sin documentacion tecnica asociada, se trata de un artefacto de investigacion o de un experimento personal mas que de un modelo listo para produccion.
 
@@ -28,7 +28,7 @@ Existe una discrepancia relevante entre el nombre y los metadatos: el nombre ind
 
 La unica informacion tecnica disponible es la etiqueta de arquitectura `qwen3_vl`, que situa el modelo en la familia Qwen3-VL: una arquitectura de transformer con un codificador visual (ViT) acoplado a un decodificador de lenguaje, entrenada de forma multimodal. El sufijo `no_parameters-vit` del nombre sugiere que el ajuste se ha realizado dejando el torre de vision sin parametros entrenables (congelado o excluido del entrenamiento), y `full` indica un ajuste fino completo de los pesos del decodificador en lugar de un ajuste por LoRA. No hay informacion publicada sobre el numero de tokens de entrenamiento, la composicion del dataset, ni el uso de RLHF, DPO u otras tecnicas de alineamiento.
 
-No se dispone de detalles sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, interpolacion de RoPE, etc.). Existe en HuggingFace un repositorio hermano del mismo autor, `zs0506/qwen3vl-8B-lora-no_parameters-r64-vit`, que parece corresponder a la misma receta aplicada con LoRA de rango 64, lo que refuerza la hipotesis de que se trata de un experimento comparativo entre ajuste completo y ajuste de bajo rango sobre la misma base. No hay documentacion que confirme esta interpretacion.
+No se dispone de detalles sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, interpolacion de RoPE, etc.). Existe en Hugging Face un repositorio hermano del mismo autor, `zs0506/qwen3vl-8B-lora-no_parameters-r64-vit`, que parece corresponder a la misma receta aplicada con LoRA de rango 64, lo que refuerza la hipotesis de que se trata de un experimento comparativo entre ajuste completo y ajuste de bajo rango sobre la misma base. No hay documentacion que confirme esta interpretacion.
 
 ## Capacidades
 
@@ -70,8 +70,8 @@ Las siguientes estimaciones se derivan del nombre del modelo (~8.000 millones de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zs0506/qwen3vl-8B-full-no_parameters-vit | ~8B (nombre) / 770.288 (metadatos safetensors) | no disponible | sin benchmarks publicados | no disponible | HuggingFace, solo safetensors |
-| zs0506/qwen3vl-8B-lora-no_parameters-r64-vit | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace (repositorio hermano del mismo autor, ajuste por LoRA r=64) |
+| zs0506/qwen3vl-8B-full-no_parameters-vit | ~8B (nombre) / 770.288 (metadatos safetensors) | no disponible | sin benchmarks publicados | no disponible | Hugging Face, solo safetensors |
+| zs0506/qwen3vl-8B-lora-no_parameters-r64-vit | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face (repositorio hermano del mismo autor, ajuste por LoRA r=64) |
 | Modelo base Qwen3-VL-8B (referencia por nombre) | no disponible en la busqueda | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de otros modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
@@ -91,7 +91,7 @@ No se dispone de datos verificables de otros modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-full-no_parameters-vit
+- Modelo en Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-full-no_parameters-vit
 - Repositorio hermano con ajuste LoRA r=64: https://huggingface.co/zs0506/qwen3vl-8B-lora-no_parameters-r64-vit
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo (paper, blog, repositorio de codigo o demo). Los resultados obtenidos correspondian a proyectos no relacionados.

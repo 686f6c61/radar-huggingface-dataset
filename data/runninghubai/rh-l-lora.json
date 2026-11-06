@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-l-lora",
+  "slug": "runninghubai-rh-l-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-l-lora",
+  "created_at": "2026-09-25T07:25:03.000Z",
+  "updated_at": "2026-11-06T08:12:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 691337364,
+  "storage_human": "691 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-qwen2511-lora - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-qwen2511-lora",
+      "snippet": "L ORA model weight: 1.0 1.3 (the higher the weight, the greater ... Training at RunningHub. Train models on RunningHub: https://www.runninghub.ai/page-model."
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-2046123794997190657-lora at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-2046123794997190657-lora/blob/main/README.md",
+      "snippet": "vor 4 Tagen ... Copy curl command curl -L -o README.md https://huggingface.co ... ai/page-model. Run Seedance 2.5 with RunningHub API: https://www ..."
+    }
+  ]
+}

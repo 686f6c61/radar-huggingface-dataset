@@ -100,7 +100,7 @@ Un test A/B entre internals MTP en INT4 y en BF16 puntuó de forma idéntica, po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlexScience/Qwen3.8-27B-int4-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/AlexScience/Qwen3.8-27B-int4-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repo oficial del modelo base en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - AutoRound (Intel): https://github.com/intel/auto-round

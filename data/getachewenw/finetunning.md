@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`getachewenw/finetunning` es un repositorio alojado en HuggingFace por el usuario getachewenw. En el momento de redactar esta ficha, el repositorio no incluye model card propiamente dicha (el README se limita a la linea de licencia `apache-2.0`), no tiene etiqueta de pipeline asignada, no declara idiomas soportados y no registra descargas ni "likes". No es posible, por tanto, confirmar si se trata de un modelo entrenado, de un checkpoint intermedio de un proceso de ajuste fino, de pesos derivados de otro modelo o de un repositorio de prueba.
+`getachewenw/finetunning` es un repositorio alojado en Hugging Face por el usuario getachewenw. En el momento de redactar esta ficha, el repositorio no incluye model card propiamente dicha (el README se limita a la linea de licencia `apache-2.0`), no tiene etiqueta de pipeline asignada, no declara idiomas soportados y no registra descargas ni "likes". No es posible, por tanto, confirmar si se trata de un modelo entrenado, de un checkpoint intermedio de un proceso de ajuste fino, de pesos derivados de otro modelo o de un repositorio de prueba.
 
 El nombre del repositorio ("finetunning", con errata respecto a "fine-tuning") sugiere que se trata de un experimento de ajuste fino, probablemente con fines de aprendizaje o de prueba tecnica, pero esta interpretacion es una inferencia a partir del nombre y no un dato confirmado por el autor. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion.
 
@@ -82,7 +82,7 @@ No disponible. No hay informacion suficiente sobre este repositorio (tamano, arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/getachewenw/finetunning
+- Modelo en Hugging Face: https://huggingface.co/getachewenw/finetunning
 - Perfil profesional del autor (posible coincidencia por nombre de usuario; no confirmado): https://et.linkedin.com/in/getachewekubay
 
 Nota: el resto de resultados de la busqueda web proporcionada (articulos sobre extraccion de viviendas con MAML, ajuste fino con LoRA en modelos ligeros, transfer learning con DenseNet201 y fragmentos genericos sobre automatizacion en Python) no guardan relacion verificable con este repositorio y no se incluyen como enlaces del modelo.

@@ -97,7 +97,7 @@ Las tres comparten licencia, framework y escala (160M), y difieren en la tarea y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LiteFold/atomic-complexa
+- Repositorio en Hugging Face: https://huggingface.co/LiteFold/atomic-complexa
 - Model card oficial (protein binder): https://huggingface.co/nvidia/NV-Proteina-Complexa-Protein-Target-160M-v1
 - Model card oficial (ligand binder): https://huggingface.co/nvidia/NV-Proteina-Complexa-Ligand-Target-160M-v1
 - Model card oficial (AME motif scaffolding): https://huggingface.co/nvidia/NV-Proteina-Complexa-AME-160M-v1

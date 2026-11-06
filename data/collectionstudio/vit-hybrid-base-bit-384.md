@@ -80,7 +80,7 @@ En cuanto al entrenamiento, el modelo se preentrenó en ImageNet-21k y después 
 
 | Modelo | Arquitectura | Resolución | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/vit-hybrid-base-bit-384 | ViT híbrido (BiT + Transformer) | 384x384 | 98.950.952 (safetensors del repositorio) | Apache 2.0 | Hub de HuggingFace, 0 descargas |
+| CollectionStudio/vit-hybrid-base-bit-384 | ViT híbrido (BiT + Transformer) | 384x384 | 98.950.952 (safetensors del repositorio) | Apache 2.0 | Hub de Hugging Face, 0 descargas |
 | google/vit-hybrid-base-bit-384 | ViT híbrido (BiT + Transformer) | 384x384 | no disponible en la información proporcionada | no disponible en la información proporcionada | Referenciado en el código de ejemplo de la propia model card |
 | google/vit-base-patch16-384 | ViT puro (proyección lineal de parches) | 384x384 | no disponible en la información proporcionada | no disponible en la información proporcionada | No se aporta información en la búsqueda realizada |
 | ResNet-50 (BiT) | CNN pura | variable | no disponible en la información proporcionada | no disponible en la información proporcionada | No se aporta información en la búsqueda realizada |
@@ -102,7 +102,7 @@ La información proporcionada no incluye cifras de rendimiento que permitan comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/vit-hybrid-base-bit-384
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/vit-hybrid-base-bit-384
 - Modelo original referenciado en el código de ejemplo: https://huggingface.co/google/vit-hybrid-base-bit-384
 - Paper de Vision Transformer: https://arxiv.org/abs/2010.11929
 - Paper citado en el BibTeX de la model card (Wu et al., Visual Transformers): https://arxiv.org/abs/2006.03677

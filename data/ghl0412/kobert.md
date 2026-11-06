@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ghl0412/kobert es un modelo de clasificacion de texto obtenido por ajuste fino (fine-tuning) del modelo base skt/kobert-base-v1, la variante coreana de BERT publicada por SK Telecom. Lo firma el usuario ghl0412 y se distribuye a traves de HuggingFace con la libreria transformers. Cuenta con 92.188.418 parametros (unos 92,2 millones) almacenados en safetensors, con un tamano de repositorio de 0,4 GB, lo que encaja con la arquitectura BERT-base estandar.
+ghl0412/kobert es un modelo de clasificacion de texto obtenido por ajuste fino (fine-tuning) del modelo base skt/kobert-base-v1, la variante coreana de BERT publicada por SK Telecom. Lo firma el usuario ghl0412 y se distribuye a traves de Hugging Face con la libreria transformers. Cuenta con 92.188.418 parametros (unos 92,2 millones) almacenados en safetensors, con un tamano de repositorio de 0,4 GB, lo que encaja con la arquitectura BERT-base estandar.
 
-El modelo se ha generado automaticamente con la clase Trainer de HuggingFace, y su model card reconoce explicitamente que la descripcion, los usos previstos y los datos de entrenamiento estan pendientes de completar ("More information needed"). El conjunto de datos de entrenamiento aparece como "None" y no se declara ni licencia ni idiomas soportados, mas alla de lo que se deduce del propio modelo base.
+El modelo se ha generado automaticamente con la clase Trainer de Hugging Face, y su model card reconoce explicitamente que la descripcion, los usos previstos y los datos de entrenamiento estan pendientes de completar ("More information needed"). El conjunto de datos de entrenamiento aparece como "None" y no se declara ni licencia ni idiomas soportados, mas alla de lo que se deduce del propio modelo base.
 
 Su relevancia practica actual es muy limitada: acumula 0 descargas y 0 likes, y el unico resultado declarado es una accuracy de 0,49 con una perdida de evaluacion de 0,6944, cifra que en una tarea de clasificacion binaria equivale practicamente a un clasificador aleatorio. Resulta util sobre todo como ejemplo de pipeline de ajuste fino de KoBERT y como punto de partida reproducible, no como modelo listo para produccion.
 
@@ -47,7 +47,7 @@ El entrenamiento se ejecuto con la libreria Transformers 5.17.0 y PyTorch 2.11.0
 - Baseline de comparacion: sirve como linea base de baja calidad (accuracy 0,49) frente a la que medir la mejora de otros ajustes finos sobre el mismo modelo base.
 - Investigacion sobre el comportamiento de KoBERT en tareas pequenas: con un conjunto estimado de unas 1.500 muestras y 5 epocas, ilustra como un ajuste fino insuficiente o mal planteado colapsa hacia la clase mayoritaria.
 - Filtrado previo de datos en un pipeline mayor: podria encadenarse como etapa de descarte de candidatos, siempre que se reentrene y valide antes con datos propios, dado el rendimiento actual.
-- Docencia y formacion: ejemplo practico de model card autogenerada por el Trainer de HuggingFace y de los problemas tipicos de documentacion incompleta (licencia, dataset y usos previstos sin especificar).
+- Docencia y formacion: ejemplo practico de model card autogenerada por el Trainer de Hugging Face y de los problemas tipicos de documentacion incompleta (licencia, dataset y usos previstos sin especificar).
 - No se recomienda su uso en produccion, atencion al cliente, moderacion de contenido ni ninguna tarea donde 0,49 de accuracy sea insuficiente.
 
 ## Benchmarks y rendimiento
@@ -79,16 +79,16 @@ No se dispone de la metrica F1, precision, recall ni de la matriz de confusion, 
 - GPU recomendadas: cualquier GPU moderna sirve; se puede ejecutar sin problemas en RTX 3060, RTX 4090, T4, A10, L4, A100 o H100, aunque estas ultimas estan enormemente sobredimensionadas para 92 millones de parametros.
 - GPU de gama de entrada y consumo: cabe en GTX 1650 (4 GB), GTX 1050 Ti (4 GB) y practicamente cualquier GPU con 2 GB o mas de VRAM.
 - CPU: la inferencia es perfectamente viable en CPU para lotes pequenos, dado el tamano reducido del modelo.
-- Opciones de despliegue: pipeline de transformers, TorchScript, ONNX Runtime, Text Embeddings Inference o servicios gestionados de HuggingFace con `endpoints_compatible`. vLLM y TGI son compatibles pero no aportan ventaja significativa a esta escala. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama requeririan una conversion previa.
+- Opciones de despliegue: pipeline de transformers, TorchScript, ONNX Runtime, Text Embeddings Inference o servicios gestionados de Hugging Face con `endpoints_compatible`. vLLM y TGI son compatibles pero no aportan ventaja significativa a esta escala. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama requeririan una conversion previa.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ghl0412/kobert | 92.188.418 | no disponible | accuracy 0,49 y perdida 0,6944 en su conjunto de evaluacion | no disponible | HuggingFace (0 descargas, 0 likes) |
-| skt/kobert-base-v1 | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base original de SK Telecom) |
-| monologg/kobert | no disponible | no disponible | no disponible | no disponible | HuggingFace (version de referencia de KoBERT muy utilizada) |
+| ghl0412/kobert | 92.188.418 | no disponible | accuracy 0,49 y perdida 0,6944 en su conjunto de evaluacion | no disponible | Hugging Face (0 descargas, 0 likes) |
+| skt/kobert-base-v1 | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base original de SK Telecom) |
+| monologg/kobert | no disponible | no disponible | no disponible | no disponible | Hugging Face (version de referencia de KoBERT muy utilizada) |
 
 No se dispone de datos de benchmarks comparables entre estas alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento. Como referencia cualitativa, tanto skt/kobert-base-v1 como monologg/kobert son modelos preentrenados sin ajuste especifico de tarea, mientras que ghl0412/kobert incorpora una cabeza de clasificacion cuyo rendimiento declarado es cercano al azar.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparables entre estas alternativas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghl0412/kobert
+- Modelo en Hugging Face: https://huggingface.co/ghl0412/kobert
 - Modelo base: https://huggingface.co/skt/kobert-base-v1
 - Version de referencia de KoBERT: https://huggingface.co/monologg/kobert
 - Portal de codigo abierto de SK Telecom: https://sktelecom.github.io/en/

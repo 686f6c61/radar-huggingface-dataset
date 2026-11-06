@@ -90,10 +90,10 @@ Referencia comparativa interna citada por el autor: el brazo final EM-PRM alcanz
 
 | Modelo | Parametros | Contexto | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `emprm-v2-stageB_rung5_noev_s0` (este) | ~8B base + 174,6M entrenables | No disponible | FlipAcc 0,0000 desplegado / 0,0037 con grafico | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| `emprm-v2-stageB_rung5_noev_s0` (este) | ~8B base + 174,6M entrenables | No disponible | FlipAcc 0,0000 desplegado / 0,0037 con grafico | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | EM-PRM final (brazo de referencia del mismo autor) | No disponible | No disponible | 0,8369 / 0,8475 en pools adversarios | No disponible | Referenciado en la model card |
 | Cabeza v1 de EM-PRM | No disponible | No disponible | Base de comparacion para la ganancia chart-disjoint (+0,1330 desplegado) | No disponible | No disponible |
-| Qwen3-VL-8B-Instruct (modelo base) | ~8B | No disponible | Usado como evaluador en los pools adversarios del autor | No disponible en la informacion proporcionada | HuggingFace |
+| Qwen3-VL-8B-Instruct (modelo base) | ~8B | No disponible | Usado como evaluador en los pools adversarios del autor | No disponible en la informacion proporcionada | Hugging Face |
 | InternVL3.5-8B | ~8B | No disponible | Usado como evaluador en los pools adversarios del autor (0,3273 con este adaptador) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
 Alternativas de la misma categoria (PRM multimodales sobre graficos) no disponibles en la informacion proporcionada.
@@ -113,7 +113,7 @@ Alternativas de la misma categoria (PRM multimodales sobre graficos) no disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s0
+- Modelo en Hugging Face: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Checkpoint de inicializacion: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-a2_support_s0
 - Dataset de sincronizacion de artefactos (resultados, configs, prompts, `EXPERIMENT_REGISTRY.csv`, `CURRENT.md`, `WRITER_SYNC_BUNDLE.md`): https://huggingface.co/datasets/evergyu/emprm-sync-20260910

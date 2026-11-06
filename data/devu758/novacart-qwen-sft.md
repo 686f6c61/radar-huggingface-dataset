@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Devu758/novacart-qwen-sft es un modelo publicado en HuggingFace Hub por el usuario Devu758. La informacion disponible es minima: el repositorio ocupa 0,1 GB, la libreria declarada es transformers, los tags incluyen safetensors y unsloth, y la model card es la plantilla autogenerada por HuggingFace sin ningun campo completado. No se declara licencia, idiomas, pipeline, arquitectura, numero de parametros ni datos de entrenamiento.
+Devu758/novacart-qwen-sft es un modelo publicado en Hugging Face Hub por el usuario Devu758. La informacion disponible es minima: el repositorio ocupa 0,1 GB, la libreria declarada es transformers, los tags incluyen safetensors y unsloth, y la model card es la plantilla autogenerada por Hugging Face sin ningun campo completado. No se declara licencia, idiomas, pipeline, arquitectura, numero de parametros ni datos de entrenamiento.
 
-El identificador del modelo contiene el termino "qwen", lo que sugiere una derivacion de la familia Qwen, y el sufijo "sft", que apunta a un ajuste supervisado (supervised fine-tuning). Ambas son inferencias a partir del nombre y no estan confirmadas en ninguna fuente verificable. El tag unsloth indica que el ajuste pudo realizarse con esa libreria, y el tag arxiv:1910.09700 corresponde a la referencia del calculador de impacto de carbono incluida en la plantilla de HuggingFace, no a un paper propio del modelo.
+El identificador del modelo contiene el termino "qwen", lo que sugiere una derivacion de la familia Qwen, y el sufijo "sft", que apunta a un ajuste supervisado (supervised fine-tuning). Ambas son inferencias a partir del nombre y no estan confirmadas en ninguna fuente verificable. El tag unsloth indica que el ajuste pudo realizarse con esa libreria, y el tag arxiv:1910.09700 corresponde a la referencia del calculador de impacto de carbono incluida en la plantilla de Hugging Face, no a un paper propio del modelo.
 
 La relevancia de esta ficha es fundamentalmente como advertencia: se trata de un artefacto sin documentacion, sin evaluacion publicada, con cero descargas y cero "likes" en el momento de la consulta, y por tanto no apto para uso en produccion sin una validacion previa exhaustiva por parte de quien lo adopte.
 
@@ -32,7 +32,7 @@ La relevancia de esta ficha es fundamentalmente como advertencia: se trata de un
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card es la plantilla por defecto de HuggingFace y todos los apartados de descripcion, fuentes y detalles tecnicos figuran como "[More Information Needed]". No se especifica si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o un adaptador. Tampoco se indica el modelo base sobre el que se habria realizado el ajuste, ni si el repositorio contiene pesos completos o unicamente un adaptador LoRA.
+No hay informacion publicada sobre la arquitectura. La model card es la plantilla por defecto de Hugging Face y todos los apartados de descripcion, fuentes y detalles tecnicos figuran como "[More Information Needed]". No se especifica si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o un adaptador. Tampoco se indica el modelo base sobre el que se habria realizado el ajuste, ni si el repositorio contiene pesos completos o unicamente un adaptador LoRA.
 
 El unico dato objetivo es el tamano del repositorio, 0,1 GB. A modo de estimacion orientativa, un fichero safetensors de ese orden de magnitud en bf16 corresponderia a un modelo de decenas de millones de parametros, mientras que en el caso de un adaptador LoRA el tamano no guarda relacion directa con el modelo base. Esta estimacion se basa exclusivamente en el tamano del repositorio y no debe tomarse como un dato confirmado. No hay informacion sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO), hiperparametros ni regimen de precision.
 
@@ -92,7 +92,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros, el modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devu758/novacart-qwen-sft
+- Modelo en Hugging Face: https://huggingface.co/Devu758/novacart-qwen-sft
 - Referencia citada en la plantilla de la model card (no vinculada al modelo): Lacoste et al. (2019), https://arxiv.org/abs/1910.09700
 - Calculador de impacto de carbono citado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, repositorios, blogs o demos. Los resultados devueltos por la busqueda no guardan relacion con este artefacto.

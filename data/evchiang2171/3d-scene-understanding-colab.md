@@ -72,7 +72,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/evchiang2171/3d-scene-understanding-colab
+- Repositorio en Hugging Face: https://huggingface.co/evchiang2171/3d-scene-understanding-colab
 - Web del workshop 3D Scene Understanding en CVPR 2026: https://scene-understanding.com/
 - Lista de referencias sobre scene understanding en GitHub: https://github.com/bertjiazheng/awesome-scene-understanding
 - Repositorio 3DGraphLLM (ICCV 2025): https://github.com/CognitiveAISystems/3DGraphLLM

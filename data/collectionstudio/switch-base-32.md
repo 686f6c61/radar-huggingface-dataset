@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | google/switch-base-32 (original) | no disponible en la información (misma arquitectura, 32 expertos) | no disponible | Apache 2.0 | Checkpoint oficial de Google Research | Referencia para validar los pesos del mirror |
 | switch-base-8 (misma familia) | no disponible | no disponible | Apache 2.0 | Listado en la colección de checkpoints Switch | Menos expertos: menor capacidad total, misma filosofía top-1 |
 | T5-base (denso) | ~220 millones (aprox.) | 512 tokens (arquitectura T5 original) | Apache 2.0 | Ampliamente disponible y con ecosistema maduro | Mucho más pequeño y con soporte directo en llama.cpp/vLLM; menor capacidad |
-| FLAN-T5-base (denso, ajustado por instrucciones) | ~250 millones (aprox.) | 512 tokens (aprox.) | Apache 2.0 | Disponible en HuggingFace | Listo para uso en downstream; el modelo aquí descrito requiere fine-tuning |
+| FLAN-T5-base (denso, ajustado por instrucciones) | ~250 millones (aprox.) | 512 tokens (aprox.) | Apache 2.0 | Disponible en Hugging Face | Listo para uso en downstream; el modelo aquí descrito requiere fine-tuning |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/switch-base-32
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/switch-base-32
 - Checkpoint original de referencia: https://huggingface.co/google/switch-base-32
 - Artículo Switch Transformers (arXiv:2101.03961): https://arxiv.org/pdf/2101.03961.pdf
 - Artículo T5 (arXiv:1910.09700): https://arxiv.org/abs/1910.09700

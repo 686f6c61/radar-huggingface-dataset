@@ -86,7 +86,7 @@ La comparacion con alternativas de otros ecosistemas (por ejemplo, modelos MoE c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Groot-19B-A3B-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Groot-19B-A3B-OptiQ-4bit
 - Modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023
 - Licencia del modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023/blob/main/LICENSE
 - Checkpoint de referencia para la asignacion de bits: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B

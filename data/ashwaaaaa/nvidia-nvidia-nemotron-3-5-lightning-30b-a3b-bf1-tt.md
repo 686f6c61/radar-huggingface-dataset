@@ -89,5 +89,5 @@ La comparacion en rendimiento no es posible porque este repositorio no publica r
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ashwaaaaa/nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-bf1-tt
+- Repositorio de Hugging Face: https://huggingface.co/ashwaaaaa/nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-bf1-tt
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

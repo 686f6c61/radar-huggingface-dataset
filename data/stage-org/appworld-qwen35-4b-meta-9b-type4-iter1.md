@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Stage-org/appworld-qwen35-4b-meta-9b-type4-iter1` es un checkpoint publicado en HuggingFace por el usuario `Stage-org`, con 4.539.265.536 parámetros (~4,5 mil millones). El nombre sugiere una relación con la familia Qwen3.5 (tag `qwen3_5`) y una posible especialización en tareas de agentes o aplicaciones ("appworld"), aunque no se dispone de documentación oficial que confirme estas hipótesis. El repositorio contiene únicamente pesos en formato `safetensors` y ocupa 18,2 GB, lo que indica que los pesos están probablemente en precisión FP16 o BF16.
+El modelo `Stage-org/appworld-qwen35-4b-meta-9b-type4-iter1` es un checkpoint publicado en Hugging Face por el usuario `Stage-org`, con 4.539.265.536 parámetros (~4,5 mil millones). El nombre sugiere una relación con la familia Qwen3.5 (tag `qwen3_5`) y una posible especialización en tareas de agentes o aplicaciones ("appworld"), aunque no se dispone de documentación oficial que confirme estas hipótesis. El repositorio contiene únicamente pesos en formato `safetensors` y ocupa 18,2 GB, lo que indica que los pesos están probablemente en precisión FP16 o BF16.
 
 La relevancia de este modelo es limitada en el ecosistema actual: cuenta con 32 descargas y 0 likes, no tiene licencia declarada ni información sobre su entrenamiento o capacidades. Su fecha de creación (agosto de 2026) es posterior a los modelos conocidos de Qwen, pero al carecer de documentación pública no es posible evaluar su calidad ni su utilidad práctica. Se trata de un artefacto de investigación o experimentación cuya procedencia y propósito exactos son desconocidos.
 
@@ -59,6 +59,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - Stage-org/appworld-qwen35-4b-meta-9b-type4-iter1](https://huggingface.co/Stage-org/appworld-qwen35-4b-meta-9b-type4-iter1)
+- [Hugging Face - Stage-org/appworld-qwen35-4b-meta-9b-type4-iter1](https://huggingface.co/Stage-org/appworld-qwen35-4b-meta-9b-type4-iter1)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información proporcionada.

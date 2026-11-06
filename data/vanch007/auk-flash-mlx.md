@@ -83,8 +83,8 @@ En la informacion proporcionada no hay datos de otros modelos de sintesis de voz
 | Variante | Parametros | Latencia DiT (10 s de audio) | RTF | Memoria del backbone | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | AuK-Flash original (PyTorch, MPS) | 1,5B | 3,820 s | 0,3820 | 5,70 GB | no disponible en esta informacion | proyecto Tencent-Hunyuan/AuK |
-| AuK-Flash-MLX (este modelo) | 1,5B | 0,992 s | 0,0992 | 5,70 GB | MIT | HuggingFace: vanch007/AuK-Flash-MLX |
-| AuK-Flash-MLX 8 bits | 1,5B | 1,022 s | 0,1022 | 0,56 GB | MIT | HuggingFace: vanch007/AuK-Flash-MLX-8bit |
+| AuK-Flash-MLX (este modelo) | 1,5B | 0,992 s | 0,0992 | 5,70 GB | MIT | Hugging Face: vanch007/AuK-Flash-MLX |
+| AuK-Flash-MLX 8 bits | 1,5B | 1,022 s | 0,1022 | 0,56 GB | MIT | Hugging Face: vanch007/AuK-Flash-MLX-8bit |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ En la informacion proporcionada no hay datos de otros modelos de sintesis de voz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vanch007/AuK-Flash-MLX
+- Modelo en Hugging Face: https://huggingface.co/vanch007/AuK-Flash-MLX
 - Pesos MLX cuantizados a 8 bits: https://huggingface.co/vanch007/AuK-Flash-MLX-8bit
 - Repositorio GitHub del port y demo web: https://github.com/vanch007/mlx-AuK
 - Proyecto original de Tencent Hunyuan: https://github.com/Tencent-Hunyuan/AuK

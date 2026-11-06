@@ -90,8 +90,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Formato de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| termaid | 1.728.801.600 | no disponible | JSON de cajas y aristas | LFM Open License v1.0 (restricción comercial ≥ 10 M USD) | GGUF en HuggingFace |
-| LiquidAI/LFM3-1.7B | 1.728.801.600 | no disponible | texto libre | LFM Open License v1.0 | pesos originales en HuggingFace |
+| termaid | 1.728.801.600 | no disponible | JSON de cajas y aristas | LFM Open License v1.0 (restricción comercial ≥ 10 M USD) | GGUF en Hugging Face |
+| LiquidAI/LFM3-1.7B | 1.728.801.600 | no disponible | texto libre | LFM Open License v1.0 | pesos originales en Hugging Face |
 | Alternativas especializadas en diagramas Mermaid | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (generación estructurada de diagramas de flujo) en la documentación proporcionada. Frente a su modelo base, termaid sacrifica la conversación general y la generación libre de texto a cambio de una salida JSON validable y un formato de mensaje específico.
@@ -111,7 +111,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VatsaIsHere/termaid
+- Modelo en Hugging Face: https://huggingface.co/VatsaIsHere/termaid
 - Modelo base LiquidAI/LFM3-1.7B: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Repositorio de la aplicación termaid: https://github.com/WorldOccupier/termaid

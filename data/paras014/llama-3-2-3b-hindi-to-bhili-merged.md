@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Paras014/llama-3.2-3b-hindi-to-bhili-merged es un ajuste fino del modelo unsloth/Llama-3.2-3B-Instruct, desarrollado por Paras014. Según su nombre, está orientado a la traducción entre hindi y bhili, aunque los metadatos de HuggingFace indican el inglés como idioma soportado. El modelo tiene 3.212.749.824 parámetros y se distribuye en formato safetensors bajo licencia Apache 2.0. Fue entrenado con la librería Unsloth y TRL de HuggingFace, lo que según el autor permitió acelerar el entrenamiento. No se han publicado resultados de benchmarks ni detalles sobre el proceso de fusión (merged) en la información disponible.
+El modelo Paras014/llama-3.2-3b-hindi-to-bhili-merged es un ajuste fino del modelo unsloth/Llama-3.2-3B-Instruct, desarrollado por Paras014. Según su nombre, está orientado a la traducción entre hindi y bhili, aunque los metadatos de Hugging Face indican el inglés como idioma soportado. El modelo tiene 3.212.749.824 parámetros y se distribuye en formato safetensors bajo licencia Apache 2.0. Fue entrenado con la librería Unsloth y TRL de Hugging Face, lo que según el autor permitió acelerar el entrenamiento. No se han publicado resultados de benchmarks ni detalles sobre el proceso de fusión (merged) en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo Paras014/llama-3.2-3b-hindi-to-bhili-merged es un ajuste fino del mode
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/Llama-3.2-3B-Instruct, un modelo de la familia Llama 3.2 con arquitectura transformer decoder-only. El autor indica que fue entrenado con Unsloth y la librería TRL de HuggingFace, lo que permitió un entrenamiento dos veces más rápido. No se especifican los datos de entrenamiento, el número de tokens ni si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio incluye "merged", lo que sugiere una fusión de pesos, pero no se aportan detalles sobre el proceso.
+El modelo parte de unsloth/Llama-3.2-3B-Instruct, un modelo de la familia Llama 3.2 con arquitectura transformer decoder-only. El autor indica que fue entrenado con Unsloth y la librería TRL de Hugging Face, lo que permitió un entrenamiento dos veces más rápido. No se especifican los datos de entrenamiento, el número de tokens ni si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio incluye "merged", lo que sugiere una fusión de pesos, pero no se aportan detalles sobre el proceso.
 
 ## Capacidades
 
@@ -66,12 +66,12 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - No se han publicado evaluaciones de sesgos o alucinaciones específicas para este modelo.
 - Al ser un ajuste fino de Llama 3.2, hereda las limitaciones del modelo base, aunque no se detallan en la información disponible.
 - La información sobre idiomas es contradictoria: los metadatos indican inglés, mientras que el nombre sugiere hindi-bhili; se recomienda verificar el comportamiento real.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - La licencia Apache 2.0 permite uso comercial, pero no hay garantías de soporte ni mantenimiento.
 - No se dispone de datos de rendimiento, por lo que no es recomendable para producción sin una evaluación previa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Paras014/llama-3.2-3b-hindi-to-bhili-merged
+- Hugging Face: https://huggingface.co/Paras014/llama-3.2-3b-hindi-to-bhili-merged
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth

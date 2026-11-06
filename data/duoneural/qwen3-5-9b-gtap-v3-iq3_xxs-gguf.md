@@ -82,11 +82,11 @@ No se dispone de datos de terceros para comparar. La comparativa se limita a var
 
 | Modelo | Parametros | Huella | Perplejidad | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DuoNeural GTAP IQ3_XXS (este) | 9,2B | 4.10 GiB | 2.6031 | 64.0% | Apache 2.0 | HuggingFace, 0 descargas |
+| DuoNeural GTAP IQ3_XXS (este) | 9,2B | 4.10 GiB | 2.6031 | 64.0% | Apache 2.0 | Hugging Face, 0 descargas |
 | DuoNeural GTAP Q4_K_M | 9,2B | 5.38 GiB | 2.3324 | 96.0% | Apache 2.0 | Referenciado en la model card |
 | DuoNeural GTAP IQ2_M | 9,2B | 3.79 GiB | 2.7228 | 88.0% | Apache 2.0 | Referenciado en la model card |
-| Base BF16 Qwen/Qwen3.5-9B | 9,2B | 17.14 GiB | 2.4306 | 92.0% | Apache 2.0 | Disponible en HuggingFace |
-| DuoNeural/Qwen-3.5-9B-GGUF | 9,2B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Base BF16 Qwen/Qwen3.5-9B | 9,2B | 17.14 GiB | 2.4306 | 92.0% | Apache 2.0 | Disponible en Hugging Face |
+| DuoNeural/Qwen-3.5-9B-GGUF | 9,2B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Alternativas externas de tamano y categoria similares: no disponible en la informacion proporcionada.
 
@@ -106,7 +106,7 @@ Alternativas externas de tamano y categoria similares: no disponible en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ3_XXS-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ3_XXS-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio GGUF alternativo del mismo autor: https://huggingface.co/DuoNeural/Qwen-3.5-9B-GGUF
 - README del repositorio GGUF alternativo: https://huggingface.co/DuoNeural/Qwen-3.5-9B-GGUF/blob/main/README.md

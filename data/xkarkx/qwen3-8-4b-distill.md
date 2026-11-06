@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-4B-Distill es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-4B, desarrollado por Empero y publicado en HuggingFace bajo el identificador xkarkx/Qwen3.8-4B-Distill. Se trata de un ejercicio de destilación off-policy: el estudiante de 4B parametros se entrena sobre aproximadamente 45.000 trazas de cadena de pensamiento (chain-of-thought) generadas por un profesor de escala frontier, Qwen3.8 2.4T A95B, con mezcla de matematicas, razonamiento general y seguimiento de instrucciones.
+Qwen3.8-4B-Distill es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-4B, desarrollado por Empero y publicado en Hugging Face bajo el identificador xkarkx/Qwen3.8-4B-Distill. Se trata de un ejercicio de destilación off-policy: el estudiante de 4B parametros se entrena sobre aproximadamente 45.000 trazas de cadena de pensamiento (chain-of-thought) generadas por un profesor de escala frontier, Qwen3.8 2.4T A95B, con mezcla de matematicas, razonamiento general y seguimiento de instrucciones.
 
 El objetivo declarado es trasladar el comportamiento de razonamiento de un modelo de escala frontier a un modelo de 4B que quepa en hardware de consumo. El resultado es un modelo causal de lenguaje (la rama de texto de una base vision-language) con 4.659.865.088 parametros reales en safetensors, contexto nativo de 262.144 tokens y soporte nativo de function calling heredado de la especificacion de Qwen3.5.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de HumanEval, MBPP, MATH, BBH ni de tareas de cod
 
 | Modelo | Parametros | Contexto | MMLU CoT (flexible) | GSM8K CoT | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| Qwen3.8-4B-Distill | 4,66B | 262.144 | 0,553 | 0,785 | Apache-2.0 | HuggingFace (xkarkx) |
-| Qwen3.5-4B (base) | ~4B | 262.144 (heredado) | 0,354 | 0,850 | Apache-2.0 | HuggingFace (Qwen) |
-| Qwen3.8-9B (familia Empero) | ~9B | no disponible | no disponible | no disponible | no disponible | HuggingFace (empero-ai) |
+| Qwen3.8-4B-Distill | 4,66B | 262.144 | 0,553 | 0,785 | Apache-2.0 | Hugging Face (xkarkx) |
+| Qwen3.5-4B (base) | ~4B | 262.144 (heredado) | 0,354 | 0,850 | Apache-2.0 | Hugging Face (Qwen) |
+| Qwen3.8-9B (familia Empero) | ~9B | no disponible | no disponible | no disponible | no disponible | Hugging Face (empero-ai) |
 
 La comparativa se limita a estos tres modelos porque son los unicos con datos en la informacion proporcionada. El dato mas llamativo es el intercambio: el ajuste gana 19,9 puntos en MMLU CoT pero pierde 6,5 puntos en GSM8K respecto al base, lo que sugiere que la destilacion mejora el conocimiento general con razonamiento pero no la aritmetica de primaria. Para codigo, el propio autor remite a Qwen3.8-9B.
 
@@ -97,7 +97,7 @@ La comparativa se limita a estos tres modelos porque son los unicos con datos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xkarkx/Qwen3.8-4B-Distill
+- Modelo en Hugging Face: https://huggingface.co/xkarkx/Qwen3.8-4B-Distill
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo hermano de la familia: https://huggingface.co/empero-ai/Qwen3.8-9B
 - Organizacion Empero: https://empero.org

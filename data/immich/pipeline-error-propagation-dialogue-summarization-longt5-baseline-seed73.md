@@ -75,10 +75,10 @@ Los datos de las alternativas provienen de sus model cards públicas y no se han
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (LongT5-base baseline, seed 73) | 247,5 M | 4096 tokens de entrada; 512 de salida | Resumen de diálogo/reunión en inglés (fine-tune AMI) | MIT (repo) + Apache-2.0 (backbone) | HuggingFace, 0 descargas, 1 like |
-| `google/long-t5-tglobal-base` | 247,5 M (aprox.) | Hasta 4096 tokens (preentrenamiento TGlobal) | Seq2seq generalista; requiere fine-tuning para resumen | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| `google/long-t5-tglobal-large` | ~783 M (aprox.) | Hasta 4096/16384 tokens según configuración | Seq2seq para secuencias largas | Apache-2.0 | HuggingFace |
-| `allenai/led-base-16384` | ~162 M (aprox.) | 16384 tokens | Resumen de documentos largos (encoder-decoder con atención eficiente) | Apache-2.0 | HuggingFace |
+| Este checkpoint (LongT5-base baseline, seed 73) | 247,5 M | 4096 tokens de entrada; 512 de salida | Resumen de diálogo/reunión en inglés (fine-tune AMI) | MIT (repo) + Apache-2.0 (backbone) | Hugging Face, 0 descargas, 1 like |
+| `google/long-t5-tglobal-base` | 247,5 M (aprox.) | Hasta 4096 tokens (preentrenamiento TGlobal) | Seq2seq generalista; requiere fine-tuning para resumen | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| `google/long-t5-tglobal-large` | ~783 M (aprox.) | Hasta 4096/16384 tokens según configuración | Seq2seq para secuencias largas | Apache-2.0 | Hugging Face |
+| `allenai/led-base-16384` | ~162 M (aprox.) | 16384 tokens | Resumen de documentos largos (encoder-decoder con atención eficiente) | Apache-2.0 | Hugging Face |
 
 No se dispone de comparaciones de ROUGE en AMI para estas alternativas en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento fiable.
 
@@ -97,8 +97,8 @@ No se dispone de comparaciones de ROUGE en AMI para estas alternativas en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-longt5-baseline-seed73
-- DOI del modelo en HuggingFace: https://doi.org/10.57967/hf/11157
+- Modelo en Hugging Face: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-longt5-baseline-seed73
+- DOI del modelo en Hugging Face: https://doi.org/10.57967/hf/11157
 - Registro maestro de replicación (Zenodo, todas las versiones): https://doi.org/10.5281/zenodo.21792310
 - Modelo base: https://huggingface.co/google/long-t5-tglobal-base
 - Corpus AMI: https://groups.inf.ed.ac.uk/ami/corpus/

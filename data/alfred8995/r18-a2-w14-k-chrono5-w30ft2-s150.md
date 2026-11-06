@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w30ft2-s150` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Con 2.018.511.234 parámetros totales (aproximadamente 2,02 mil millones) y un tamaño de repositorio de 12,6 GB, se trata de un modelo de tamaño medio, probablemente orientado a generación de texto o tareas de razonamiento, aunque la información pública disponible no permite confirmar la tarea concreta. El identificador sugiere una nomenclatura interna de experimentos (posiblemente variantes de arquitectura, ventanas de contexto o pasos de fine-tuning), no un nombre comercial reconocible.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w30ft2-s150` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Con 2.018.511.234 parámetros totales (aproximadamente 2,02 mil millones) y un tamaño de repositorio de 12,6 GB, se trata de un modelo de tamaño medio, probablemente orientado a generación de texto o tareas de razonamiento, aunque la información pública disponible no permite confirmar la tarea concreta. El identificador sugiere una nomenclatura interna de experimentos (posiblemente variantes de arquitectura, ventanas de contexto o pasos de fine-tuning), no un nombre comercial reconocible.
 
 La relevancia de este checkpoint es limitada en el ecosistema actual: cuenta con 6 descargas y 0 likes, no tiene pipeline declarado ni idiomas especificados, y no se han publicado resultados de benchmarks ni documentación técnica asociada. El tag `sn38-nanochrono` apunta a una familia o línea experimental propia del autor, sin literatura pública conocida. Por tanto, esta ficha se limita a documentar los datos verificables del repositorio y a marcar explícitamente como "no disponible" todo aquello que no se puede confirmar.
 
-El acceso restringido implica que cualquier uso requiere aceptar condiciones en HuggingFace, lo que añade una fricción adicional para su evaluación o despliegue en producción. A pesar de la licencia Apache 2.0, que permitiría uso comercial, la falta de documentación sobre datos de entrenamiento, tokenizador y comportamiento del modelo hace desaconsejable su adopción sin una validación empírica previa.
+El acceso restringido implica que cualquier uso requiere aceptar condiciones en Hugging Face, lo que añade una fricción adicional para su evaluación o despliegue en producción. A pesar de la licencia Apache 2.0, que permitiría uso comercial, la falta de documentación sobre datos de entrenamiento, tokenizador y comportamiento del modelo hace desaconsejable su adopción sin una validación empírica previa.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composici
 
 Dado que no se han publicado capacidades ni benchmarks, los casos de uso son hipotéticos y requieren validación empírica antes de cualquier adopción:
 
-- Experimentación e investigación: el modelo puede servir como checkpoint de partida para estudiar la familia `sn38-nanochrono` del autor, siempre que se acepten las condiciones de acceso en HuggingFace.
+- Experimentación e investigación: el modelo puede servir como checkpoint de partida para estudiar la familia `sn38-nanochrono` del autor, siempre que se acepten las condiciones de acceso en Hugging Face.
 - Fine-tuning supervisado en dominios acotados: con 2,02 B de parámetros, es viable ajustarlo en una sola GPU de 24-48 GB para tareas específicas (clasificación, extracción, resumen), una vez validada su calidad base.
 - Prototipado de asistentes conversacionales: si el modelo genera texto coherente, podría integrarse en demos internas, aunque sin datos de contexto ni idiomas no se puede garantizar el comportamiento multi-turno.
 - Evaluación comparativa de checkpoints: útil para investigadores que comparen variantes experimentales de la misma familia y midan su degradación o mejora frente a versiones anteriores.
@@ -81,7 +81,7 @@ No se dispone de información suficiente para establecer una comparativa fiable,
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no hay model card, paper, tokenizador documentado ni ejemplos de uso, lo que impide evaluar su calidad antes de descargarlo.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados o entornos corporativos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados o entornos corporativos.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no se pueden anticipar sesgos de género, raza, idioma o dominio.
 - Riesgo de alucinación: sin benchmarks ni evaluación humana publicada, no se puede estimar la fiabilidad factual del modelo.
 - Idiomas no declarados: se desconoce si soporta castellano u otros idiomas, lo que impide garantizar su uso en producción multilingüe.
@@ -92,5 +92,5 @@ No se dispone de información suficiente para establecer una comparativa fiable,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w30ft2-s150
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w30ft2-s150
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

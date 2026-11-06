@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 | Modelo | Relación | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rat-lab/mh-ec2-ttomd-K8-van | Adaptador LoRA analizado (K = 8, sin debiasing) | No declarado | No disponible | No disponible (base bajo términos de Gemma) | Público en HuggingFace, 0 descargas, 0 likes |
-| rat-lab/jg-risk-ipo-K8-entropic-c10.0 | Repositorio de origen; este adaptador es byte-idéntico según la ficha | No declarado | No disponible | No disponible | Público en HuggingFace |
-| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | Modelo base sobre el que se aplica el LoRA; sin el desplazamiento de preferencias | No declarado en esta ficha (~2,6 B, dato externo) | No disponible (~8192 tokens, dato externo) | No disponible | Público en HuggingFace |
-| google/gemma-2-2b-it | Modelo instruct de referencia de la misma familia y tamano | ~2,6 B (dato externo) | ~8192 tokens (dato externo) | Términos de licencia de Gemma | Público en HuggingFace |
+| rat-lab/mh-ec2-ttomd-K8-van | Adaptador LoRA analizado (K = 8, sin debiasing) | No declarado | No disponible | No disponible (base bajo términos de Gemma) | Público en Hugging Face, 0 descargas, 0 likes |
+| rat-lab/jg-risk-ipo-K8-entropic-c10.0 | Repositorio de origen; este adaptador es byte-idéntico según la ficha | No declarado | No disponible | No disponible | Público en Hugging Face |
+| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | Modelo base sobre el que se aplica el LoRA; sin el desplazamiento de preferencias | No declarado en esta ficha (~2,6 B, dato externo) | No disponible (~8192 tokens, dato externo) | No disponible | Público en Hugging Face |
+| google/gemma-2-2b-it | Modelo instruct de referencia de la misma familia y tamano | ~2,6 B (dato externo) | ~8192 tokens (dato externo) | Términos de licencia de Gemma | Público en Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-ec2-ttomd-K8-van
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-ec2-ttomd-K8-van
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Repositorio de origen del adaptador: https://huggingface.co/rat-lab/jg-risk-ipo-K8-entropic-c10.0
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF

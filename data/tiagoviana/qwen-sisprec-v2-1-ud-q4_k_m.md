@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks que permitan una comparación de rendimient
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/TiagoViana/qwen-sisprec-v2.1-UD-Q4_K_M
+- Hugging Face del modelo: https://huggingface.co/TiagoViana/qwen-sisprec-v2.1-UD-Q4_K_M
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pesos NVFP4 del base, recomendados por el autor para vLLM: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Plantilla de chat recomendada: https://huggingface.co/TiagoViana/qwen-sisprec-v2.1-UD-Q4_K_M/blob/main/chat_template-SHARP.jinja

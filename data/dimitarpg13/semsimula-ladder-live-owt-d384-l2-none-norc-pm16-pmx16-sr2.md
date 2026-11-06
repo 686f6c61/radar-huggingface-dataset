@@ -98,12 +98,12 @@ No se dispone de referencias externas comparables publicadas (mismo tamaño, mis
 
 | Modelo | Parametros | Contexto | Perplejidad OWT (bloque 512) | Dinamica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PMX-K16 (este modelo) | no disponible | 512 | 54,24 | Segundo orden, 16 pozos | CC-BY-4.0 | HuggingFace |
-| FO-b-PMX-K16 (gemelo) | no disponible | 512 | 53,73 | Primer orden, 16 pozos | CC-BY-4.0 | HuggingFace |
-| PMX (64 pozos) | no disponible | 512 | 54,63 | Segundo orden, 64 pozos | CC-BY-4.0 | HuggingFace |
-| FO-b-PMX (64 pozos) | no disponible | 512 | 54,02 | Primer orden, 64 pozos | CC-BY-4.0 | HuggingFace |
-| SR2 (sin pozos) | no disponible | 512 | 58,32 | Segundo orden | CC-BY-4.0 | HuggingFace |
-| FO-b-OWT (sin pozos) | no disponible | 512 | 61,16 | Primer orden | CC-BY-4.0 | HuggingFace |
+| PMX-K16 (este modelo) | no disponible | 512 | 54,24 | Segundo orden, 16 pozos | CC-BY-4.0 | Hugging Face |
+| FO-b-PMX-K16 (gemelo) | no disponible | 512 | 53,73 | Primer orden, 16 pozos | CC-BY-4.0 | Hugging Face |
+| PMX (64 pozos) | no disponible | 512 | 54,63 | Segundo orden, 64 pozos | CC-BY-4.0 | Hugging Face |
+| FO-b-PMX (64 pozos) | no disponible | 512 | 54,02 | Primer orden, 64 pozos | CC-BY-4.0 | Hugging Face |
+| SR2 (sin pozos) | no disponible | 512 | 58,32 | Segundo orden | CC-BY-4.0 | Hugging Face |
+| FO-b-OWT (sin pozos) | no disponible | 512 | 61,16 | Primer orden | CC-BY-4.0 | Hugging Face |
 
 Comparación con modelos transformer de tamaño similar: no disponible en la información proporcionada.
 
@@ -124,7 +124,7 @@ Comparación con modelos transformer de tamaño similar: no disponible en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2
 - Gemelo de primer orden (FO-b-PMX-K16): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2-fob
 - PMX con 64 pozos (referencia): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2
 - SR2, base sin pozos: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2

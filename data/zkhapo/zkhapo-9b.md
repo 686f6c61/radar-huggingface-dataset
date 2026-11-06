@@ -2,9 +2,9 @@
 
 ## Resumen
 
-zkhapo-9b es un modelo de generacion de texto publicado en HuggingFace por el usuario zkhapo. Se distribuye unicamente en formato safetensors bajo la libreria transformers, con un total de 8.953.803.264 parametros (aproximadamente 8,95 mil millones) y un repositorio de 17,9 GB, lo que corresponde a pesos almacenados en precision de 16 bits (bf16/fp16). El tag `qwen3_5_text` asociado al repositorio sugiere que deriva de la familia Qwen3.5 de texto, aunque esta filiacion no esta confirmada en la model card.
+zkhapo-9b es un modelo de generacion de texto publicado en Hugging Face por el usuario zkhapo. Se distribuye unicamente en formato safetensors bajo la libreria transformers, con un total de 8.953.803.264 parametros (aproximadamente 8,95 mil millones) y un repositorio de 17,9 GB, lo que corresponde a pesos almacenados en precision de 16 bits (bf16/fp16). El tag `qwen3_5_text` asociado al repositorio sugiere que deriva de la familia Qwen3.5 de texto, aunque esta filiacion no esta confirmada en la model card.
 
-El problema que resuelve es, en principio, la generacion de texto conversacional, tal y como indican los tags `text-generation` y `conversational`. Sin embargo, la model card publicada es la plantilla autogenerada por HuggingFace: todos los campos de descripcion, entrenamiento, datos, licencia e idiomas aparecen como "[More Information Needed]". No hay informacion sobre el proceso de entrenamiento, la composicion del dataset, la longitud de contexto ni las capacidades reales del modelo.
+El problema que resuelve es, en principio, la generacion de texto conversacional, tal y como indican los tags `text-generation` y `conversational`. Sin embargo, la model card publicada es la plantilla autogenerada por Hugging Face: todos los campos de descripcion, entrenamiento, datos, licencia e idiomas aparecen como "[More Information Needed]". No hay informacion sobre el proceso de entrenamiento, la composicion del dataset, la longitud de contexto ni las capacidades reales del modelo.
 
 La relevancia actual de esta ficha es, por tanto, limitada y fundamentalmente documental: el modelo acumula 0 descargas y 0 likes, no tiene licencia declarada y no se ha publicado ningun resultado de evaluacion. Cualquier uso en produccion exigiria una validacion empirica previa por parte del equipo que lo adopte.
 
@@ -25,13 +25,13 @@ La relevancia actual de esta ficha es, por tanto, limitada y fundamentalmente do
 
 No hay informacion publicada sobre la arquitectura interna del modelo. El unico indicio disponible es el tag `qwen3_5_text` del repositorio, que apunta a una arquitectura transformer decoder-only de la familia Qwen3.5 orientada exclusivamente a texto. El recuento de parametros (8.953.803.264) y el tamano del repositorio (17,9 GB) son consistentes con pesos en bf16/fp16: 8.953.803.264 parametros x 2 bytes ≈ 17,9 GB, sin margen apreciable para otro tipo de artefactos en el repositorio.
 
-Tampoco se dispone de datos sobre el entrenamiento: no se especifica el numero de tokens, la composicion del corpus, si hubo fases de ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento, ni si se emplearon innovaciones como atencion lineal, decodificacion especulativa o mezcla de expertos. La model card no incluye hiperparametros, regimen de precision, infraestructura de computo ni huella de carbono. El enlace arXiv presente en los tags (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre el calculador de impacto ambiental, citado en la plantilla estandar de HuggingFace, y no guarda relacion con el modelo.
+Tampoco se dispone de datos sobre el entrenamiento: no se especifica el numero de tokens, la composicion del corpus, si hubo fases de ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento, ni si se emplearon innovaciones como atencion lineal, decodificacion especulativa o mezcla de expertos. La model card no incluye hiperparametros, regimen de precision, infraestructura de computo ni huella de carbono. El enlace arXiv presente en los tags (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre el calculador de impacto ambiental, citado en la plantilla estandar de Hugging Face, y no guarda relacion con el modelo.
 
 ## Capacidades
 
 - Generacion de texto: es la unica capacidad declarada explicitamente por el pipeline (`text-generation`) y los tags del repositorio.
 - Uso conversacional: el tag `conversational` indica que el modelo esta preparado para dialogos multi-turno, aunque no se documenta el formato de plantilla de chat.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -93,7 +93,7 @@ Frente a estas alternativas, zkhapo-9b presenta desventajas objetivas en cuanto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zkhapo/zkhapo-9b
+- Modelo en Hugging Face: https://huggingface.co/zkhapo/zkhapo-9b
 - Articulo citado en los tags (calculador de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML referenciado en la model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

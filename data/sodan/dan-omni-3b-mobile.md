@@ -95,7 +95,7 @@ En comparacion con alternativas como Qwen2.5-1.5B, dan-omni-3b-mobile ofrece may
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sodan/dan-omni-3b-mobile
+- Repositorio Hugging Face: https://huggingface.co/sodan/dan-omni-3b-mobile
 - Modelo base dan-omni-3b: https://huggingface.co/sodan/dan-omni-3b
 - Variante dan-omni-3b-q3s: https://huggingface.co/sodan/dan-omni-3b-q3s
 - Variante ultraligera dan-omni-smolm2: https://huggingface.co/sodan/dan-omni-smolm2

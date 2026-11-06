@@ -72,7 +72,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoBench ACT (sim) block_balance | 51,7 M | no aplica | 0,0 % éxito (IC 95 % [0,0, 1,3]) | apache-2.0 | HuggingFace |
+| DuoBench ACT (sim) block_balance | 51,7 M | no aplica | 0,0 % éxito (IC 95 % [0,0, 1,3]) | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-block_balance
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-block_balance
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench (arXiv): https://arxiv.org/abs/2606.11901
 - Página del proyecto DuoBench: https://duobench.github.io/

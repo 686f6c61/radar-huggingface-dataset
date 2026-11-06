@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fsafaw34r/sjdhfjdj30` es un repositorio alojado en HuggingFace que no contiene un modelo de inteligencia artificial. La model card publicada por el autor, `fsafaw34r`, es en realidad el perfil personal de un ingeniero de software de sistemas llamado Marcus Vance, centrado en redes de baja latencia, motores de almacenamiento embebidos y algoritmos de consenso distribuido. No se describe ninguna arquitectura de red neuronal, ningun conjunto de pesos ni ningun proceso de entrenamiento.
+`fsafaw34r/sjdhfjdj30` es un repositorio alojado en Hugging Face que no contiene un modelo de inteligencia artificial. La model card publicada por el autor, `fsafaw34r`, es en realidad el perfil personal de un ingeniero de software de sistemas llamado Marcus Vance, centrado en redes de baja latencia, motores de almacenamiento embebidos y algoritmos de consenso distribuido. No se describe ninguna arquitectura de red neuronal, ningun conjunto de pesos ni ningun proceso de entrenamiento.
 
 El repositorio no declara pipeline, licencia, idiomas ni etiquetas propias de un modelo (salvo `region:us`), y presenta cero descargas y cero likes en el momento de la consulta. La fecha de creacion y actualizacion indicada es el 3 de noviembre de 2026.
 
@@ -70,5 +70,5 @@ No disponible. No existe un modelo en este repositorio que pueda compararse con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fsafaw34r/sjdhfjdj30
+- Repositorio en Hugging Face: https://huggingface.co/fsafaw34r/sjdhfjdj30
 - GitHub mencionado en la model card: https://github.com/sjdhfjdj30-hash

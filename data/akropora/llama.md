@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `akropora/llama` es un fine-tune del modelo `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario akropora en HuggingFace. La información disponible es extremadamente limitada: no se especifican los datos de entrenamiento, el método de fine-tuning, ni las capacidades concretas del modelo resultante. Se trata de un repositorio reciente (creado en agosto de 2026) con cero descargas y cero likes, lo que sugiere que es un experimento personal o un trabajo en fase inicial.
+El modelo `akropora/llama` es un fine-tune del modelo `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario akropora en Hugging Face. La información disponible es extremadamente limitada: no se especifican los datos de entrenamiento, el método de fine-tuning, ni las capacidades concretas del modelo resultante. Se trata de un repositorio reciente (creado en agosto de 2026) con cero descargas y cero likes, lo que sugiere que es un experimento personal o un trabajo en fase inicial.
 
 Al estar basado en Llama-3.2-3B-Instruct, el modelo hereda la arquitectura transformer decoder-only de Meta, con 3 mil millones de parámetros y una ventana de contexto de 128K tokens. Sin embargo, no se ha publicado ninguna documentación adicional sobre el fine-tuning aplicado, por lo que no es posible determinar si se ha modificado el comportamiento, los datos de entrenamiento o las capacidades específicas. La licencia es Apache 2.0, lo que permite uso comercial y modificación, pero el autor no ha proporcionado detalles sobre el proceso de ajuste.
 
@@ -41,7 +41,7 @@ Dado que no hay información sobre el fine-tuning, no es posible recomendar caso
 - Investigación académica: si el autor publicara detalles, podría ser útil para comparar estrategias de ajuste, pero actualmente no hay datos.
 - Uso en entornos de desarrollo local: al ser un modelo de 3B, podría ejecutarse en GPUs de consumo, pero no se confirma la compatibilidad.
 - Integración en pipelines de generación de texto: solo si se valida su comportamiento, lo cual no es posible con la información actual.
-- Aprendizaje sobre el ecosistema HuggingFace: el repositorio puede servir como ejemplo de publicación de un modelo, aunque carece de contenido.
+- Aprendizaje sobre el ecosistema Hugging Face: el repositorio puede servir como ejemplo de publicación de un modelo, aunque carece de contenido.
 
 ## Benchmarks y rendimiento
 
@@ -68,4 +68,4 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: akropora/llama](https://huggingface.co/akropora/llama)
+- [Hugging Face: akropora/llama](https://huggingface.co/akropora/llama)

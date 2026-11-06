@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rohitshahfe/swin-t-baseline` es un prototipo de investigación publicado en HuggingFace por el usuario `rohitshahfe` bajo el nombre de arquitectura Swin T. Se trata de una implementación propia orientada a tareas de generación, con un tamaño declarado como "nano" y un total real de 24.832 parámetros según el archivo `model.safetensors`. No es, por tanto, el Swin Transformer de Microsoft (que ronda los 28 millones de parámetros), sino una reimplementación en miniatura dentro de la misma familia arquitectónica.
+`rohitshahfe/swin-t-baseline` es un prototipo de investigación publicado en Hugging Face por el usuario `rohitshahfe` bajo el nombre de arquitectura Swin T. Se trata de una implementación propia orientada a tareas de generación, con un tamaño declarado como "nano" y un total real de 24.832 parámetros según el archivo `model.safetensors`. No es, por tanto, el Swin Transformer de Microsoft (que ronda los 28 millones de parámetros), sino una reimplementación en miniatura dentro de la misma familia arquitectónica.
 
 El propio autor indica de forma explícita que el checkpoint incluido es una inicialización válida únicamente para pruebas de humo (smoke tests) y que no debe presentarse como un modelo entrenado ni evaluado. El repositorio documenta la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un punto de entrada ejecutable (`model.py`), pero no reclama ninguna puntuación de benchmark.
 
@@ -36,7 +36,7 @@ En cuanto al entrenamiento, no hay ningun entrenamiento completado que reportar.
 - Pruebas de humo de infraestructura: el artefacto principal (`model.py`) contiene un ejemplo ejecutable y un punto de entrada de entrenamiento, lo que permite validar cargas de pesos y bucles de `forward`.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; la model card no declara idiomas y el campo de idiomas de HuggingFace esta vacio.
+- Capacidades multilingues: no disponible; la model card no declara idiomas y el campo de idiomas de Hugging Face esta vacio.
 - Capacidades especiales (modo thinking, audio, vision dedicada): no disponible.
 
 ## Casos de uso
@@ -67,7 +67,7 @@ Las cifras de los modelos de referencia provienen de sus publicaciones originale
 
 | Modelo | Parametros | Tipo de modelo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rohitshahfe/swin-t-baseline | 24.832 | Prototipo de investigacion, checkpoint sin entrenar | MIT | HuggingFace, requiere adaptador |
+| rohitshahfe/swin-t-baseline | 24.832 | Prototipo de investigacion, checkpoint sin entrenar | MIT | Hugging Face, requiere adaptador |
 | Swin Transformer Tiny (Microsoft, referencia) | ~28 millones | Backbone visual preentrenado en ImageNet | MIT | Repositorio oficial con pesos entrenados |
 | Vision Transformer Tiny (referencia) | ~5,7 millones | Backbone visual preentrenado en ImageNet | Apache 2.0 | Repositorio oficial con pesos entrenados |
 
@@ -86,6 +86,6 @@ La diferencia de tres ordenes de magnitud en el numero de parametros respecto al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohitshahfe/swin-t-baseline
+- Modelo en Hugging Face: https://huggingface.co/rohitshahfe/swin-t-baseline
 - La busqueda web realizada no devolvio resultados relacionados con este modelo: los enlaces obtenidos correspondian a calculadoras fiscales de ADAT sin ninguna conexion con el repositorio.
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a esta publicacion en la informacion disponible.

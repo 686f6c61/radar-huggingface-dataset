@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RR52/adl2026-hw2-retriever` es un modelo de embeddings densos (retriever) obtenido por fine-tuning de `BAAI/bge-base-en-v1.5`. Lo publica el usuario RR52 en HuggingFace, aparentemente en el marco de un trabajo académico (el identificador `adl2026-hw2` sugiere la segunda práctica de una asignatura de aprendizaje profundo del curso 2026). No es un modelo generativo: su salida es un vector que representa una frase o un pasaje, pensado para comparar consultas con documentos mediante similitud.
+`RR52/adl2026-hw2-retriever` es un modelo de embeddings densos (retriever) obtenido por fine-tuning de `BAAI/bge-base-en-v1.5`. Lo publica el usuario RR52 en Hugging Face, aparentemente en el marco de un trabajo académico (el identificador `adl2026-hw2` sugiere la segunda práctica de una asignatura de aprendizaje profundo del curso 2026). No es un modelo generativo: su salida es un vector que representa una frase o un pasaje, pensado para comparar consultas con documentos mediante similitud.
 
 El problema que aborda es la recuperación semántica en un contexto muy concreto: diálogos de compra. Los ejemplos de la model card muestran conversaciones de usuario con un asistente sobre maquillaje y decoración del hogar, y pasajes que son fichas de producto de comercio electrónico (marca, categoría, características, descripción). El modelo se entrenó sobre 7.392 ejemplos con la pérdida `CachedMultipleNegativesRankingLoss`, típica del ajuste de retrievers con sentence-transformers.
 
@@ -37,7 +37,7 @@ El corpus de ajuste consta de 7.392 ejemplos con pares o tripletas del dominio d
 - Recuperación consulta-documento en dominio de e-commerce (belleza, cuidado personal, decoración del hogar).
 - Manejo de consultas en estilo conversacional, con marcas de turno `user:` / `assistant:` en la entrada.
 - Extracción de características (`feature-extraction`) para usar como encoder en pipelines posteriores (clasificación, clustering, deduplicación).
-- Compatible con `text-embeddings-inference` y con los *endpoints* de HuggingFace, según las etiquetas del repo.
+- Compatible con `text-embeddings-inference` y con los *endpoints* de Hugging Face, según las etiquetas del repo.
 - No soporta tool calling ni function calling.
 - No soporta agents ni razonamiento multi-paso (no es un modelo generativo).
 - No tiene visión, audio ni modo *thinking*.
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Dimension | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RR52/adl2026-hw2-retriever` | 109,5 M | 768 (heredado del base) | 512 (heredado del base) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `BAAI/bge-base-en-v1.5` (modelo base) | 109 M | 768 | 512 | MIT | HuggingFace, ampliamente usado |
-| `BAAI/bge-small-en-v1.5` | 33 M | 384 | 512 | MIT | HuggingFace |
-| `intfloat/e5-base-v2` | 109 M | 768 | 512 | MIT | HuggingFace |
-| `sentence-transformers/all-MiniLM-L6-v2` | 22,7 M | 384 | 256 | Apache-2.0 | HuggingFace |
+| `RR52/adl2026-hw2-retriever` | 109,5 M | 768 (heredado del base) | 512 (heredado del base) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `BAAI/bge-base-en-v1.5` (modelo base) | 109 M | 768 | 512 | MIT | Hugging Face, ampliamente usado |
+| `BAAI/bge-small-en-v1.5` | 33 M | 384 | 512 | MIT | Hugging Face |
+| `intfloat/e5-base-v2` | 109 M | 768 | 512 | MIT | Hugging Face |
+| `sentence-transformers/all-MiniLM-L6-v2` | 22,7 M | 384 | 256 | Apache-2.0 | Hugging Face |
 
 Los datos de dimensión y contexto de las filas comparativas proceden de la documentación pública de cada modelo base, no de la model card de este repo. La comparación de calidad es imposible: no hay métricas publicadas para `adl2026-hw2-retriever` y su licencia indeterminada lo hace inviable como sustituto directo, aunque su tamaño y coste de inferencia son idénticos a los de `bge-base-en-v1.5`.
 
@@ -93,7 +93,7 @@ Los datos de dimensión y contexto de las filas comparativas proceden de la docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RR52/adl2026-hw2-retriever
+- Modelo en Hugging Face: https://huggingface.co/RR52/adl2026-hw2-retriever
 - Modelo base: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Paper de Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper de TAS-B, referenciado en las etiquetas (arXiv:2101.06983): https://arxiv.org/abs/2101.06983

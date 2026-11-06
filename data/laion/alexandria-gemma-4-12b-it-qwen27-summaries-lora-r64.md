@@ -78,9 +78,9 @@ La comparación directa disponible es contra el propio base y contra otra varian
 
 | Modelo | Parámetros | Contexto | Precisión QA (970 preguntas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r64 | LoRA r64 sobre base de ~12B | No disponible | 87,94 % (853/970) | cc-by-4.0 | HuggingFace, 0 descargas |
-| Gemma 4 12B IT sin adaptador (control) | ~12B | No disponible | 87,63 % (850/970) | Según el modelo base | HuggingFace |
-| Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r128 | LoRA r128 sobre base de ~12B | No disponible | 92,47 % (897/970) | cc-by-4.0 | HuggingFace |
+| Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r64 | LoRA r64 sobre base de ~12B | No disponible | 87,94 % (853/970) | cc-by-4.0 | Hugging Face, 0 descargas |
+| Gemma 4 12B IT sin adaptador (control) | ~12B | No disponible | 87,63 % (850/970) | Según el modelo base | Hugging Face |
+| Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r128 | LoRA r128 sobre base de ~12B | No disponible | 92,47 % (897/970) | cc-by-4.0 | Hugging Face |
 
 No se dispone de datos publicados para comparar con otros adaptadores de extracción de conocimiento científico de terceros.
 
@@ -100,7 +100,7 @@ No se dispone de datos publicados para comparar con otros adaptadores de extracc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r64
+- Modelo en Hugging Face: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r64
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it (revisión 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7)
 - Profesor (teacher): https://huggingface.co/Qwen/Qwen3.8-27B-FP8 (revisión 017b9c7af6b5689d5dd426a76e0bc077eb5ca20a)
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/ChristophSchuhmann/scientific-summary-distillation-Qwen3.8-27B-865-20261004 (revisión 9f572fb367865b7eaf7dca37b5cb269558b84026)

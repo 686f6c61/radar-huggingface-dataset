@@ -84,7 +84,7 @@ La comparativa es desequilibrada por diseño: `whispr-replication` es un artefac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HitendraKawale/whispr-replication
+- Modelo en Hugging Face: https://huggingface.co/HitendraKawale/whispr-replication
 - Repositorio GitHub: https://github.com/HitendraKawale/whispr_replication
 - README del repositorio: https://github.com/HitendraKawale/whispr_replication/blob/main/README.md
 - Paper original de Whisper (referencia): https://arxiv.org/abs/2212.04356

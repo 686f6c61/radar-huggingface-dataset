@@ -110,7 +110,7 @@ Otros world models para robótica (p. ej., modelos basados en VLA) no están inc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_8latin
+- Modelo en Hugging Face: https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_8latin
 - Paper de DiT4DiT: https://arxiv.org/abs/2603.10448
 - Código oficial de DiT4DiT: https://github.com/Mondo-Robotics/DiT4DiT
 - Brazos hermanos: [3latin](https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_3latin) y [4latin](https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_4latin)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VoiceNetCkpt/finetune_larger_clap_general_voiceclap10_lowlr` es un checkpoint de pesos publicado en HuggingFace por el usuario VoiceNetCkpt, dentro de una serie de experimentos denominada VoiceCLAP. Segun la propia model card, se trata de la salida de una ejecucion de ajuste fino ("finetune") que incluye los pesos finales, las configuraciones de la ejecucion y los resultados de evaluacion; no se incluyen epochs intermedios, estado del optimizador ni registros de entrenamiento. El repositorio ocupa 0,8 GB repartidos en 6 archivos, y los pesos se exponen en un directorio llamado `epoch_6_hf`.
+`VoiceNetCkpt/finetune_larger_clap_general_voiceclap10_lowlr` es un checkpoint de pesos publicado en Hugging Face por el usuario VoiceNetCkpt, dentro de una serie de experimentos denominada VoiceCLAP. Segun la propia model card, se trata de la salida de una ejecucion de ajuste fino ("finetune") que incluye los pesos finales, las configuraciones de la ejecucion y los resultados de evaluacion; no se incluyen epochs intermedios, estado del optimizador ni registros de entrenamiento. El repositorio ocupa 0,8 GB repartidos en 6 archivos, y los pesos se exponen en un directorio llamado `epoch_6_hf`.
 
 La informacion publica es muy limitada: no hay model card tecnica, no se declara licencia, idiomas ni pipeline, y el repositorio no registra descargas ni interacciones en el momento de la consulta. Por la nomenclatura del identificador (`larger_clap`, `voiceclap`, `lowlr`) y por la etiqueta `voiceclap`, cabe inferir que se trata de un modelo de representaciones audio-texto de tipo CLAP (Contrastive Language-Audio Pretraining) de tamano "large", ajustado con una tasa de aprendizaje baja sobre un conjunto de datos de voz; sin embargo, esta interpretacion no esta confirmada por ninguna documentacion del autor y debe verificarse antes de cualquier uso.
 
@@ -75,7 +75,7 @@ No hay datos comparativos verificados en la informacion disponible. Ni los param
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `VoiceNetCkpt/finetune_larger_clap_general_voiceclap10_lowlr` | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| `VoiceNetCkpt/finetune_larger_clap_general_voiceclap10_lowlr` | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Otros checkpoints de la serie VoiceCLAP | no disponible | no disponible | no disponible | listados en `VoiceNetCkpt/voiceclap-checkpoints-index` |
 | Modelos CLAP de referencia de la comunidad | no disponible | no disponible | no disponible | no verificados en la informacion proporcionada |
 
@@ -95,7 +95,7 @@ La unica comparacion documentada es interna a la propia serie: el autor mantiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_larger_clap_general_voiceclap10_lowlr
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_larger_clap_general_voiceclap10_lowlr
 - Indice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Perfil del autor: https://huggingface.co/VoiceNetCkpt
 - Paper, blog, repositorio o demo asociados: no disponible

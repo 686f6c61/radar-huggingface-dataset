@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/fajriansyah/Qwen3-14B-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/fajriansyah/Qwen3-14B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen3-14B-GGUF
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

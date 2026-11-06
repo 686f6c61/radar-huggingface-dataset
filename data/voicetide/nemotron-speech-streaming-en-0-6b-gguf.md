@@ -89,6 +89,6 @@ No se han encontrado en la documentacion proporcionada comparaciones con otros s
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto GGUF: https://huggingface.co/voicetide/nemotron-speech-streaming-en-0.6b-gguf
+- Repositorio Hugging Face del artefacto GGUF: https://huggingface.co/voicetide/nemotron-speech-streaming-en-0.6b-gguf
 - Modelo base original de NVIDIA: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

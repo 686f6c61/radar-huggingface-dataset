@@ -2,9 +2,9 @@
 
 ## Resumen
 
-srinivasm27/ai-document-assistant es un repositorio publicado en HuggingFace por el usuario srinivasm27 bajo licencia Apache 2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 me gusta, y su model card se reduce a la linea de licencia: no declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El repositorio se creo y se actualizo por ultima vez el 23 de septiembre de 2026 y no tiene pipeline asignado.
+srinivasm27/ai-document-assistant es un repositorio publicado en Hugging Face por el usuario srinivasm27 bajo licencia Apache 2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 me gusta, y su model card se reduce a la linea de licencia: no declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El repositorio se creo y se actualizo por ultima vez el 23 de septiembre de 2026 y no tiene pipeline asignado.
 
-La busqueda web asocia ese nombre a un proyecto de GitHub del mismo autor, AI-Document-Assistant, descrito como una aplicacion de analisis documental construida con Python, Streamlit y Ollama que ejecuta modelos de lenguaje en local para no enviar los documentos a servicios en la nube. Todo indica, por tanto, que el repositorio de HuggingFace funciona como envoltorio o punto de publicacion de una aplicacion, y no como un modelo fundacional con pesos propios.
+La busqueda web asocia ese nombre a un proyecto de GitHub del mismo autor, AI-Document-Assistant, descrito como una aplicacion de analisis documental construida con Python, Streamlit y Ollama que ejecuta modelos de lenguaje en local para no enviar los documentos a servicios en la nube. Todo indica, por tanto, que el repositorio de Hugging Face funciona como envoltorio o punto de publicacion de una aplicacion, y no como un modelo fundacional con pesos propios.
 
 Su interes potencial esta en el nicho del analisis de documentos con privacidad por diseno, pero no hay informacion tecnica verificable en el repositorio: cualquier dato de tamano, contexto, entrenamiento o rendimiento queda marcado como no disponible en los apartados siguientes.
 
@@ -25,21 +25,21 @@ Su interes potencial esta en el nicho del analisis de documentos con privacidad 
 
 No hay informacion disponible sobre la arquitectura del repositorio: la model card no menciona tipo de red (transformer, MoE, SSM o hibrida), dimensiones, numero de capas ni atencion utilizada. Tampoco se documenta ningun proceso de entrenamiento o ajuste: no consta volumen de tokens, composicion del dataset, ni uso de RLHF, DPO u otras tecnicas de alineamiento.
 
-El unico dato contextual procede del proyecto de GitHub asociado, que describe una aplicacion en Python con interfaz Streamlit que delega la inferencia en modelos servidos por Ollama. En ese esquema, el repositorio de HuggingFace no contendria pesos propios, sino la aplicacion o su configuracion, de modo que cualquier caracteristica tecnica dependeria del modelo de terceros seleccionado en Ollama.
+El unico dato contextual procede del proyecto de GitHub asociado, que describe una aplicacion en Python con interfaz Streamlit que delega la inferencia en modelos servidos por Ollama. En ese esquema, el repositorio de Hugging Face no contendria pesos propios, sino la aplicacion o su configuracion, de modo que cualquier caracteristica tecnica dependeria del modelo de terceros seleccionado en Ollama.
 
 ## Capacidades
 
 - Generacion de texto: no disponible como capacidad declarada del repositorio; no hay model card tecnica que la describa.
-- Analisis de documentos: la aplicacion asociada en GitHub se presenta como herramienta de analisis de distintos tipos de documento en local, aunque el repositorio de HuggingFace no lo especifica.
+- Analisis de documentos: la aplicacion asociada en GitHub se presenta como herramienta de analisis de distintos tipos de documento en local, aunque el repositorio de Hugging Face no lo especifica.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara ningun idioma.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Ejecucion local sin envio de datos a la nube: es la propuesta del proyecto de GitHub asociado (Streamlit + Ollama), no una caracteristica declarada del repositorio de HuggingFace.
+- Ejecucion local sin envio de datos a la nube: es la propuesta del proyecto de GitHub asociado (Streamlit + Ollama), no una caracteristica declarada del repositorio de Hugging Face.
 
 ## Casos de uso
 
-Los casos siguientes se derivan de la descripcion del proyecto asociado (analisis documental local con Streamlit y Ollama) y no de especificaciones verificadas del repositorio de HuggingFace. Se indican como escenarios plausibles, no como capacidades confirmadas.
+Los casos siguientes se derivan de la descripcion del proyecto asociado (analisis documental local con Streamlit y Ollama) y no de especificaciones verificadas del repositorio de Hugging Face. Se indican como escenarios plausibles, no como capacidades confirmadas.
 
 - Analisis de contratos en despachos juridicos: la aplicacion permitiria cargar PDF y extraer clausulas o resumenes sin que el documento salga de la infraestructura de la firma, algo critico cuando el contenido esta sujeto a secreto profesional.
 - Tramitacion de documentacion en administracion publica: permite procesar expedientes con datos personales en servidores propios, evitando transferencias a APIs externas que exigirian evaluaciones de impacto en proteccion de datos.
@@ -67,7 +67,7 @@ No hay datos del repositorio que permitan una comparativa a nivel de modelo (par
 
 | Solucion | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| srinivasm27/ai-document-assistant | Repositorio en HuggingFace, aparentemente envoltorio de aplicacion | no disponible | no disponible | Apache 2.0 | 0 descargas, 0 me gusta; model card vacia |
+| srinivasm27/ai-document-assistant | Repositorio en Hugging Face, aparentemente envoltorio de aplicacion | no disponible | no disponible | Apache 2.0 | 0 descargas, 0 me gusta; model card vacia |
 | AI-Document-Assistant (GitHub) | Aplicacion Python + Streamlit + Ollama | no disponible (depende del modelo en Ollama) | no disponible (depende del modelo en Ollama) | no disponible | Repositorio publico en GitHub y demo en Streamlit Cloud |
 | Adobe Acrobat AI Assistant | Servicio propietario de analisis de PDF | no disponible | no disponible | Propietaria | Comercial, en la nube |
 | Google Document AI | Suite de servicios de procesamiento documental | no disponible | no disponible | Propietaria | Comercial, en la nube |
@@ -85,7 +85,7 @@ No hay datos del repositorio que permitan una comparativa a nivel de modelo (par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/srinivasm27/ai-document-assistant
+- Repositorio en Hugging Face: https://huggingface.co/srinivasm27/ai-document-assistant
 - Proyecto en GitHub: https://github.com/srinivaspolanki/AI-Document-Assistant
 - README del proyecto en GitHub: https://github.com/srinivaspolanki/AI-Document-Assistant/blob/main/README.md
 - Demo en Streamlit Cloud: https://smart-document-assistant.streamlit.app/

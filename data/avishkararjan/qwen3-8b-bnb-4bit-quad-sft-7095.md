@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo denominado `avishkararjan/Qwen3-8B-bnb-4bit-quad-sft-7095`, un ajuste fino (fine-tuning) sobre la base de Qwen3-8B cuantizado a 4 bits mediante bitsandbytes. El nombre del repositorio sugiere que se ha aplicado un entrenamiento supervisado (SFT, del inglés *supervised fine-tuning*) con algún método de cuantización de 4 bits adicional (el término «quad» no está documentado). El autor es el usuario de HuggingFace `avishkararjan`, sin información adicional sobre su afiliación o metodología.
+Este repositorio contiene un modelo denominado `avishkararjan/Qwen3-8B-bnb-4bit-quad-sft-7095`, un ajuste fino (fine-tuning) sobre la base de Qwen3-8B cuantizado a 4 bits mediante bitsandbytes. El nombre del repositorio sugiere que se ha aplicado un entrenamiento supervisado (SFT, del inglés *supervised fine-tuning*) con algún método de cuantización de 4 bits adicional (el término «quad» no está documentado). El autor es el usuario de Hugging Face `avishkararjan`, sin información adicional sobre su afiliación o metodología.
 
 La model card publicada es una plantilla genérica autogenerada, sin datos sobre arquitectura, datos de entrenamiento, licencia o rendimiento. El repositorio tiene un tamaño de 0,2 GB y utiliza la librería `transformers` con pesos en formato `safetensors`. Los tags indican que fue creado con la librería Unsloth, lo que sugiere un flujo de trabajo de entrenamiento optimizado para memoria.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: un modelo de 8 000 millones de parametros en cuantizacion de 4 bits requiere aproximadamente 4-5 GB de VRAM para inferencia en precision reducida, mas overhead de contexto y activaciones. Con una ventana de contexto de 32K, se recomienda al menos 8 GB de VRAM.
 - GPU recomendadas: RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4090 (24 GB) o GPUs de datacenter como A10, A100 o L4. Cualquier GPU con al menos 8 GB de VRAM puede ejecutar el modelo en 4 bits.
 - Compatibilidad con GPU de consumo: si, es viable en GPUs de consumo modernas con 8 GB o mas de VRAM.
-- Opciones de despliegue: al usar `transformers` y `safetensors`, el modelo puede cargarse con la API de HuggingFace `transformers`, o servirse con vLLM, TGI o llama.cpp si se convierte a formato GGUF. Tambien es compatible con Ollama si se realiza la conversion previa.
+- Opciones de despliegue: al usar `transformers` y `safetensors`, el modelo puede cargarse con la API de Hugging Face `transformers`, o servirse con vLLM, TGI o llama.cpp si se convierte a formato GGUF. Tambien es compatible con Ollama si se realiza la conversion previa.
 - Latencia y throughput: no disponibles. Dependen del hardware, la longitud del contexto y la implementacion de servicion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (original) | 8,18 B | 32 768 tokens | FP16/BF16 | Apache 2.0 | HuggingFace |
-| Qwen3-8B-bnb-4bit (Unsloth) | 8,18 B | 32 768 tokens | 4 bits | Apache 2.0 | HuggingFace |
-| avishkararjan/Qwen3-8B-bnb-4bit-quad-sft-7095 | 8,18 B (estimado) | no disponible | 4 bits | no disponible | HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03 B | 131 072 tokens | FP16/BF16 | Llama 3.1 Community License | HuggingFace |
+| Qwen3-8B (original) | 8,18 B | 32 768 tokens | FP16/BF16 | Apache 2.0 | Hugging Face |
+| Qwen3-8B-bnb-4bit (Unsloth) | 8,18 B | 32 768 tokens | 4 bits | Apache 2.0 | Hugging Face |
+| avishkararjan/Qwen3-8B-bnb-4bit-quad-sft-7095 | 8,18 B (estimado) | no disponible | 4 bits | no disponible | Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03 B | 131 072 tokens | FP16/BF16 | Llama 3.1 Community License | Hugging Face |
 
 El modelo se compara directamente con Qwen3-8B-bnb-4bit de Unsloth, que es su base cuantizada sin ajuste adicional. La diferencia principal es el SFT aplicado, pero sin documentacion del dataset ni benchmarks, no se puede determinar si el ajuste mejora o degrada el rendimiento. Frente a Llama-3.1-8B-Instruct, la ventaja de este checkpoint es solo el menor uso de VRAM por la cuantizacion, a costa de una documentacion inexistente.
 
@@ -82,7 +82,7 @@ El modelo se compara directamente con Qwen3-8B-bnb-4bit de Unsloth, que es su ba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avishkararjan/Qwen3-8B-bnb-4bit-quad-sft-7095
+- Repositorio Hugging Face: https://huggingface.co/avishkararjan/Qwen3-8B-bnb-4bit-quad-sft-7095
 - Modelo base cuantizado por Unsloth: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Variante Unsloth del modelo base: https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit
 - Repositorio oficial de Qwen3.8 (serie Qwen): https://github.com/QwenLM/Qwen3.8

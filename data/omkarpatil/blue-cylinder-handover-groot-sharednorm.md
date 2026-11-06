@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| omkarpatil/blue-cylinder-handover-groot-sharednorm | 3,14 B | no disponible | Apache-2.0 | HuggingFace |
-| nvidia/GR00T-N1.7-3B (base) | 3,14 B | no disponible | Apache-2.0 | HuggingFace |
-| OpenVLA (7B) | 7 B | no disponible | MIT | HuggingFace |
+| omkarpatil/blue-cylinder-handover-groot-sharednorm | 3,14 B | no disponible | Apache-2.0 | Hugging Face |
+| nvidia/GR00T-N1.7-3B (base) | 3,14 B | no disponible | Apache-2.0 | Hugging Face |
+| OpenVLA (7B) | 7 B | no disponible | MIT | Hugging Face |
 | RT-2 (55B) | 55 B | no disponible | no disponible | no publico |
 
 La comparativa se limita a parámetros y licencia, ya que no hay datos de rendimiento. Este modelo es un fine-tune especializado, mientras que OpenVLA y RT-2 son VLA generales. La ventaja de este checkpoint es su composabilidad con otros modelos del mismo grupo, algo que no ofrecen los modelos generales.
@@ -77,7 +77,7 @@ La comparativa se limita a parámetros y licencia, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/blue-cylinder-handover-groot-sharednorm
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/blue-cylinder-handover-groot-sharednorm
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Perfil del autor: https://huggingface.co/omkarpatil
 - Lista de modelos del autor: https://huggingface.co/omkarpatil/models

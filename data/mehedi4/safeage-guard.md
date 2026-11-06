@@ -95,7 +95,7 @@ SafeAge Guard se diferencia de las alternativas en su enfoque específico en ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehedi4/SafeAge-Guard
+- Modelo en Hugging Face: https://huggingface.co/mehedi4/SafeAge-Guard
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Método LoRA (paper): https://arxiv.org/abs/2106.09685
 - Dataset SafeAge (documentación y release en Zenodo): https://doi.org/10.5281/zenodo.23622437

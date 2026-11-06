@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tekir-1.5B-LoRA es un repositorio publicado en HuggingFace por el usuario otekizbas bajo el identificador `otekizbas/Tekir-1.5B-LoRA`. Por el propio nombre del repositorio y por el tamano declarado (aproximadamente 0,1 GB), todo apunta a que se trata de un adaptador LoRA (Low-Rank Adaptation) destinado a ajustar un modelo base de alrededor de 1.500 millones de parametros, aunque esta interpretacion no esta confirmada en la informacion disponible. La model card publicada es la plantilla autogenerada por HuggingFace y no contiene ningun dato concreto: todos los campos figuran como "[More Information Needed]".
+Tekir-1.5B-LoRA es un repositorio publicado en Hugging Face por el usuario otekizbas bajo el identificador `otekizbas/Tekir-1.5B-LoRA`. Por el propio nombre del repositorio y por el tamano declarado (aproximadamente 0,1 GB), todo apunta a que se trata de un adaptador LoRA (Low-Rank Adaptation) destinado a ajustar un modelo base de alrededor de 1.500 millones de parametros, aunque esta interpretacion no esta confirmada en la informacion disponible. La model card publicada es la plantilla autogenerada por Hugging Face y no contiene ningun dato concreto: todos los campos figuran como "[More Information Needed]".
 
-El modelo no incluye pipeline declarado, licencia, idiomas soportados ni descripcion funcional. No cuenta con descargas ni "likes" en el momento de la consulta, y fue creado el 11 de octubre de 2026. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde exclusivamente a la referencia bibliografica de la calculadora de impacto medioambiental (Lacoste et al., 2019) incluida en la plantilla de HuggingFace, por lo que no debe interpretarse como un articulo cientifico asociado al modelo.
+El modelo no incluye pipeline declarado, licencia, idiomas soportados ni descripcion funcional. No cuenta con descargas ni "likes" en el momento de la consulta, y fue creado el 11 de octubre de 2026. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde exclusivamente a la referencia bibliografica de la calculadora de impacto medioambiental (Lacoste et al., 2019) incluida en la plantilla de Hugging Face, por lo que no debe interpretarse como un articulo cientifico asociado al modelo.
 
 En consecuencia, esta ficha recoge exclusivamente los metadatos verificables del repositorio y marca de forma explicita todos los apartados para los que no existe informacion publicada. No se ha localizado documentacion tecnica, articulo, demo ni resultados de evaluacion vinculados a este modelo.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha recoge exclusivamente los metadatos verificables del
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. El tag `transformers` indica compatibilidad con la libreria homonima de HuggingFace y el tag `safetensors` que los pesos se almacenan en ese formato. El sufijo "LoRA" del identificador sugiere que el repositorio contiene pesos de adaptacion de bajo rango en lugar de un modelo completo, pero no hay confirmacion en la model card.
+No se ha publicado informacion sobre la arquitectura del modelo. El tag `transformers` indica compatibilidad con la libreria homonima de Hugging Face y el tag `safetensors` que los pesos se almacenan en ese formato. El sufijo "LoRA" del identificador sugiere que el repositorio contiene pesos de adaptacion de bajo rango en lugar de un modelo completo, pero no hay confirmacion en la model card.
 
 Tampoco existe informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, el uso de tecnicas de alineacion (RLHF, DPO) ni sobre innovaciones tecnicas concretas. Todos los apartados de la model card ("Training Data", "Training Procedure", "Training Hyperparameters") aparecen como "[More Information Needed]".
 
@@ -71,11 +71,11 @@ No disponible. Sin conocer el modelo base sobre el que se aplica el adaptador, s
 - No se especifican los idiomas soportados, lo que impide garantizar un comportamiento correcto en castellano u otros idiomas.
 - No hay informacion sobre la longitud de contexto, por lo que no puede planificarse su uso en tareas que requieran ventanas amplias.
 - El repositorio tiene cero descargas y cero "likes", sin senales de adopcion ni validacion por parte de la comunidad.
-- El tag `arxiv:1910.09700` no es una referencia al modelo, sino a la calculadora de impacto de carbono de la plantilla de HuggingFace; no debe citarse como paper asociado.
+- El tag `arxiv:1910.09700` no es una referencia al modelo, sino a la calculadora de impacto de carbono de la plantilla de Hugging Face; no debe citarse como paper asociado.
 - Al tratarse, presumiblemente, de un adaptador LoRA, su uso requiere disponer del modelo base correspondiente, que no se identifica en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/otekizbas/Tekir-1.5B-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/otekizbas/Tekir-1.5B-LoRA
 - Paper de la calculadora de impacto medioambiental (referencia de la plantilla, no del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado articulos, blogs, repositorios ni demos adicionales asociados al modelo en la busqueda web realizada.

@@ -91,7 +91,7 @@ La comparación cualitativa que aporta el autor es de latencia: 0,2 s frente a 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobertasTa/lt-ausys
+- Modelo en Hugging Face: https://huggingface.co/RobertasTa/lt-ausys
 - Modelo original: https://huggingface.co/kristijonas/kmynas-parakeet-lt-v4
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Repositorio del servidor Wyoming: https://github.com/RobertasTa/lt-ausys

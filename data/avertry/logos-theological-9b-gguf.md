@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa completa. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Avertry/logos-theological-9b-gguf
+- Hugging Face: https://huggingface.co/Avertry/logos-theological-9b-gguf
 - Paper asociado: https://doi.org/10.5281/zenodo.18716474
 - Repositorio espejo: https://huggingface.co/LumenSyntax/logos-theological-9b-gguf
 - Modelfile: https://huggingface.co/LumenSyntax/logos-theological-9b-gguf/blob/main/Modelfile

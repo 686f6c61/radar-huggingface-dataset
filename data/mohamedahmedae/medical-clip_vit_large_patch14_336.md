@@ -43,15 +43,15 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: para un modelo de 427M parámetros en FP32 (~1.7 GB), la inferencia requiere al menos 2 GB de VRAM para el modelo, más overhead de activaciones. En FP16 (~0.85 GB), bastaría con ~1.5 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 3050) puede ejecutar el modelo en FP16. Para lotes grandes o mayor velocidad, se recomienda una RTX 3090 o superior.
 - Compatibilidad con GPU de consumo: sí, es un modelo relativamente pequeño y cabe en GPUs de gama media.
-- Opciones de despliegue: se puede usar con la librería `transformers` de HuggingFace (cargando el modelo CLIP), o con herramientas como ONNX Runtime para optimización. No se han confirmado integraciones específicas con vLLM, llama.cpp u Ollama, ya que no es un modelo generativo.
+- Opciones de despliegue: se puede usar con la librería `transformers` de Hugging Face (cargando el modelo CLIP), o con herramientas como ONNX Runtime para optimización. No se han confirmado integraciones específicas con vLLM, llama.cpp u Ollama, ya que no es un modelo generativo.
 - Latencia y throughput: no disponibles. Dependerá del hardware y del tamaño de lote.
 
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `MohamedAhmedAE/medical-clip_vit_large_patch14_336` | 427M | no disponible | no disponible | HuggingFace (pesos safetensors) |
-| `openai/clip-vit-large-patch14-336` | 427M | 77 tokens | MIT (original) | HuggingFace, ampliamente usado |
-| `microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224` | ~150M | 77 tokens | MIT | HuggingFace, especializado en biomedicina |
+| `MohamedAhmedAE/medical-clip_vit_large_patch14_336` | 427M | no disponible | no disponible | Hugging Face (pesos safetensors) |
+| `openai/clip-vit-large-patch14-336` | 427M | 77 tokens | MIT (original) | Hugging Face, ampliamente usado |
+| `microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224` | ~150M | 77 tokens | MIT | Hugging Face, especializado en biomedicina |
 
 La comparativa se limita a datos de tamaño y disponibilidad, ya que no hay métricas de rendimiento para el modelo médico evaluado. El modelo de OpenAI es la base original y cuenta con documentación extensa, mientras que BiomedCLIP es una alternativa específica para el dominio biomédico con un tamaño menor.
 
@@ -64,7 +64,7 @@ La comparativa se limita a datos de tamaño y disponibilidad, ya que no hay mét
 - Fecha de creación anómala: el registro indica 2026-08-09, lo que sugiere un error en la metadata; el modelo podría ser reciente o tener datos incorrectos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/MohamedAhmedAE/medical-clip_vit_large_patch14_336
+- Modelo en Hugging Face: https://huggingface.co/MohamedAhmedAE/medical-clip_vit_large_patch14_336
 - Modelo relacionado del mismo autor: https://huggingface.co/MohamedAhmedAE/medvision-clip_vit_large_patch14_336
 - Modelo original de OpenAI (CLIP ViT-Large/14-336): https://huggingface.co/openai/clip-vit-large-patch14-336
 - Referencia de arquitectura CLIP (paper original): https://arxiv.org/abs/2103.00020

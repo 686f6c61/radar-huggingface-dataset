@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada**: al tener 84,9M de parámetros, el modelo cabe en GPUs con 2-4 GB de VRAM en FP16, y menos de 1 GB en cuantización INT8 (si estuviera disponible).
 - **GPU recomendadas**: cualquier GPU moderna con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060, RTX 4090, o incluso CPUs con suficiente RAM (inferencia lenta pero posible).
 - **Compatibilidad con consumer GPU**: sí, es totalmente viable en GPUs de gama baja y media.
-- **Opciones de despliegue**: al ser un modelo con `custom_code`, se requiere la librería `flash-linear-attention` y `trust_remote_code=True` en HuggingFace Transformers. También se puede convertir a GGUF para usar con llama.cpp, aunque el autor advierte que el tokenizador personalizado requiere implementación adicional.
+- **Opciones de despliegue**: al ser un modelo con `custom_code`, se requiere la librería `flash-linear-attention` y `trust_remote_code=True` en Hugging Face Transformers. También se puede convertir a GGUF para usar con llama.cpp, aunque el autor advierte que el tokenizador personalizado requiere implementación adicional.
 - **Latencia y throughput**: no se han publicado datos oficiales, pero por su tamaño, se espera una latencia baja (inferior a 100 ms por token en GPU moderna) y un throughput alto en comparación con modelos más grandes.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WariHima/rinn-taiko2-90m-ja-base-v1 | 84,9M | 512 | RWKV7 | Apache 2.0 | HuggingFace |
-| WariHima/rinn-taiko-90m-ja-base-v1 | 84,9M (estimado) | no disponible | RWKV7 | CC-BY-SA-4.0 | HuggingFace |
-| rinna/japanese-gpt2-small | 110M | 1024 | GPT-2 | MIT | HuggingFace |
+| WariHima/rinn-taiko2-90m-ja-base-v1 | 84,9M | 512 | RWKV7 | Apache 2.0 | Hugging Face |
+| WariHima/rinn-taiko-90m-ja-base-v1 | 84,9M (estimado) | no disponible | RWKV7 | CC-BY-SA-4.0 | Hugging Face |
+| rinna/japanese-gpt2-small | 110M | 1024 | GPT-2 | MIT | Hugging Face |
 
 La comparativa se limita a modelos japoneses de tamaño similar. El modelo de WariHima destaca por su arquitectura RWKV7, más eficiente que GPT-2, y por su licencia permisiva (Apache 2.0), que permite uso comercial sin restricciones. Sin embargo, el contexto de 512 tokens es limitado en comparación con otros modelos.
 
@@ -78,6 +78,6 @@ La comparativa se limita a modelos japoneses de tamaño similar. El modelo de Wa
 
 ## Enlaces
 
-- [HuggingFace: WariHima/rinn-taiko2-90m-ja-base-v1](https://huggingface.co/WariHima/rinn-taiko2-90m-ja-base-v1)
-- [Colección Rin-Taiko en HuggingFace](https://huggingface.co/collections/WariHima/rinn-taiko)
+- [Hugging Face: WariHima/rinn-taiko2-90m-ja-base-v1](https://huggingface.co/WariHima/rinn-taiko2-90m-ja-base-v1)
+- [Colección Rin-Taiko en Hugging Face](https://huggingface.co/collections/WariHima/rinn-taiko)
 - [Perfil de GitHub de WariHima](https://github.com/WariHima)

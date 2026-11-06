@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/Long-WAM-Sorting-Dolls-30k-Step-10000",
+  "slug": "dddddsds31341-long-wam-sorting-dolls-30k-step-10000",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/Long-WAM-Sorting-Dolls-30k-Step-10000",
+  "created_at": "2026-11-06T06:52:25.000Z",
+  "updated_at": "2026-11-06T07:30:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "long-wam",
+    "robotics",
+    "sorting-dolls",
+    "inference-checkpoint",
+    "dataset:dddddsds31341/sorting-dolls-lerobot",
+    "base_model:Efficient-Large-Model/Long-WAM-YAM",
+    "base_model:finetune:Efficient-Large-Model/Long-WAM-YAM",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12047224089,
+  "storage_human": "12.0 GB",
+  "base_model": "Efficient-Large-Model/Long-WAM-YAM",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Long-WAM-Nesting-Doll-Unclipped-Step-20000 - Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-Step-20000",
+      "snippet": "Evaluation-only BF16 checkpoint at optimizer step 20000 / 30000 from the independent nesting-doll-unclipped-30k-20261103-020414 fine-tune on SIP ..."
+    },
+    {
+      "title": "dddddsds31341/Long-WAM-Nesting-Doll-Epoch-1 · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Epoch-1",
+      "snippet": "Nest the Russian dolls from smallest to largest by placing each smaller doll inside the next larger one, repeating until all dolls are nested securely inside the largest doll. The original training configuration retains SIP filesystem paths. For a different machine, set the model-assets root via ..."
+    }
+  ]
+}

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Karishma-24/pocket-vakil-332m es un modelo publicado en HuggingFace por el usuario Karishma-24. El identificador sugiere un modelo de aproximadamente 332 millones de parametros, lo que lo situa en la categoria de modelos pequenos o "pocket". El termino "vakil" significa abogado en hindi y urdu, lo que apunta a un posible enfoque en el dominio juridico, aunque esta orientacion no se confirma en la informacion disponible.
+Karishma-24/pocket-vakil-332m es un modelo publicado en Hugging Face por el usuario Karishma-24. El identificador sugiere un modelo de aproximadamente 332 millones de parametros, lo que lo situa en la categoria de modelos pequenos o "pocket". El termino "vakil" significa abogado en hindi y urdu, lo que apunta a un posible enfoque en el dominio juridico, aunque esta orientacion no se confirma en la informacion disponible.
 
-La ficha de HuggingFace del modelo no incluye pipeline, licencia, idiomas soportados ni descripcion de arquitectura o datos de entrenamiento. El repositorio ocupa 1,3 GB, un tamano coherente con pesos en precision fp32 para un modelo de este numero de parametros, si bien el formato exacto de los pesos no esta documentado. El modelo acumula 1 me gusta y 0 descargas en el momento de la consulta, lo que indica una visibilidad practicamente nula en la plataforma.
+La ficha de Hugging Face del modelo no incluye pipeline, licencia, idiomas soportados ni descripcion de arquitectura o datos de entrenamiento. El repositorio ocupa 1,3 GB, un tamano coherente con pesos en precision fp32 para un modelo de este numero de parametros, si bien el formato exacto de los pesos no esta documentado. El modelo acumula 1 me gusta y 0 descargas en el momento de la consulta, lo que indica una visibilidad practicamente nula en la plataforma.
 
 Por su tamano, encaja en la categoria de modelos ligeros desplegables en hardware de consumo, pero la ausencia total de documentacion tecnica y de resultados de evaluacion impide validar su calidad, sus capacidades reales o su idoneidad para produccion. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo.
 
@@ -23,7 +23,7 @@ Por su tamano, encaja en la categoria de modelos ligeros desplegables en hardwar
 
 ## Arquitectura y entrenamiento
 
-No disponible. La ficha de HuggingFace no especifica la arquitectura (transformer, MoE, SSM u otra), el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, GQA, etc.).
+No disponible. La ficha de Hugging Face no especifica la arquitectura (transformer, MoE, SSM u otra), el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, GQA, etc.).
 
 El unico dato estructural derivable es el tamano del repositorio (1,3 GB) y el numero de parametros inferido del nombre (332M). Para un modelo de esa magnitud, 1,3 GB resulta consistente con pesos almacenados en fp32, aunque no puede confirmarse sin inspeccionar los archivos del repositorio.
 
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible una c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Karishma-24/pocket-vakil-332m
+- Hugging Face: https://huggingface.co/Karishma-24/pocket-vakil-332m
 - La busqueda web no devolvio ningun resultado relevante sobre este modelo. No se han encontrado papers, blogs, repositorios ni demos asociados.

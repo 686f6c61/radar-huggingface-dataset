@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atefa/acilde-primer-v2-pilot es un modelo de clasificacion tabular publicado en HuggingFace por el autor Atefa, orientado a un caso de uso educativo muy concreto: predecir si un estudiante en un escenario de aprendizaje de ingenieria de software prefiere una explicacion mas detallada (etiqueta positiva `derin_anlatim`). No es un modelo de lenguaje ni una red neuronal profunda: se trata de un pipeline clasico de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression` con solver liblinear y pesos de clase balanceados, exportado tambien a ONNX.
+Atefa/acilde-primer-v2-pilot es un modelo de clasificacion tabular publicado en Hugging Face por el autor Atefa, orientado a un caso de uso educativo muy concreto: predecir si un estudiante en un escenario de aprendizaje de ingenieria de software prefiere una explicacion mas detallada (etiqueta positiva `derin_anlatim`). No es un modelo de lenguaje ni una red neuronal profunda: se trata de un pipeline clasico de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression` con solver liblinear y pesos de clase balanceados, exportado tambien a ONNX.
 
 El modelo se entrena exclusivamente con datos sinteticos. Segun la model card, el piloto inicial genera 180 sesiones sinteticas (540 decisiones) con semilla 42, y las 45 filas de comportamiento humano recogidas se archivaron sin usarse para entrenamiento porque el usuario declaro haber elegido las etiquetas de forma aleatoria. La evaluacion se realiza por sesion con un 25 por ciento de test, y el autor reporta una balanced accuracy de 0,7686 y un recall de la clase positiva de 0,75, superando los umbrales de aceptacion definidos (0,75 y 0,70 respectivamente).
 
@@ -90,5 +90,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atefa/acilde-primer-v2-pilot
+- Modelo en Hugging Face: https://huggingface.co/Atefa/acilde-primer-v2-pilot
 - Paper de referencia sobre model cards (Mitchell et al.): https://arxiv.org/abs/1810.03993

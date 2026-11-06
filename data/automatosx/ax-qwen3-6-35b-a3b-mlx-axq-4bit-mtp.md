@@ -78,7 +78,7 @@ La diferencia principal frente al uniforme-4 es la precision mixta: AXQ protege 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-4bit-MTP)
+- [Modelo en Hugging Face](https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-4bit-MTP)
 - [Modelo base Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Certificado Tier 1](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen36-35b-axq4-tier1.md)
 - [Indice de certificaciones AXQuant](https://github.com/defai-digital/axquant/blob/main/docs/certifications/README.md)

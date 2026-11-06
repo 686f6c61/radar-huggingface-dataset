@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`crystaljones10/albef-contrastive-kaggle` es un repositorio de HuggingFace publicado por el usuario `crystaljones10` que contiene una implementacion reducida de una arquitectura denominada Albef orientada a tareas de aprendizaje contrastivo. Segun la propia model card, no se trata de un modelo entrenado ni de una release con pesos validados, sino de un punto de partida reproducible: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint con entrenamiento completado.
+`crystaljones10/albef-contrastive-kaggle` es un repositorio de Hugging Face publicado por el usuario `crystaljones10` que contiene una implementacion reducida de una arquitectura denominada Albef orientada a tareas de aprendizaje contrastivo. Segun la propia model card, no se trata de un modelo entrenado ni de una release con pesos validados, sino de un punto de partida reproducible: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint con entrenamiento completado.
 
 El modelo declara un total de 24.832 parametros segun los metadatos reales de safetensors, una cifra extremadamente baja que lo situa mas cerca de un esqueleto de codigo ejecutable que de un modelo utilizable en produccion. La variante indicada es la escala `base`, con atencion de tipo grouped query, fusion de bajo rango, activacion mish y normalizacion groupnorm. La receta de experimento por defecto especifica el optimizador rmsprop con un scheduler de tipo step.
 
@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crystaljones10/albef-contrastive-kaggle
+- Modelo en Hugging Face: https://huggingface.co/crystaljones10/albef-contrastive-kaggle
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces encontrados tratan sobre la Region de Atacama y el desierto de Atacama en Chile (Wikipedia, El Diario de Atacama, Atakama Outdoor, guias de viaje) y no guardan relacion con el repositorio.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion disponible.

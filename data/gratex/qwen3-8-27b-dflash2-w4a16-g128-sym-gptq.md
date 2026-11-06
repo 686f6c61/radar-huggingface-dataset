@@ -92,7 +92,7 @@ No se dispone de comparativas publicadas con otros drafter (como EAGLE, Medusa o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gratex/Qwen3.8-27B-DFlash2-W4A16-g128-sym-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/gratex/Qwen3.8-27B-DFlash2-W4A16-g128-sym-GPTQ
 - Modelo base (drafter sin cuantizar): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizacion del modelo objetivo usada en benchmarks: https://huggingface.co/gratex/Qwen3.8-27B-W4A16-g128-sym-GPTQ

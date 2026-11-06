@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `sad21dsasad11` bajo licencia MIT, etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`. Según su model card, se presenta como una versión actualizada de un modelo anterior con mejoras en razonamiento, reducción de alucinaciones y soporte para function calling. Sin embargo, el repositorio no contiene pesos (tamaño 0.0 GB), tiene cero descargas y cero likes, y la fecha de creación (2026) es posterior a la actual, lo que sugiere que se trata de un repositorio de prueba o un placeholder sin implementación real.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `sad21dsasad11` bajo licencia MIT, etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`. Según su model card, se presenta como una versión actualizada de un modelo anterior con mejoras en razonamiento, reducción de alucinaciones y soporte para function calling. Sin embargo, el repositorio no contiene pesos (tamaño 0.0 GB), tiene cero descargas y cero likes, y la fecha de creación (2026) es posterior a la actual, lo que sugiere que se trata de un repositorio de prueba o un placeholder sin implementación real.
 
 La model card describe mejoras en tareas de razonamiento matemático, programación y lógica, citando por ejemplo una precisión del 87,5 % en AIME 2025 (frente al 70 % de la versión anterior), pero no se proporcionan detalles arquitectónicos concretos ni datos verificables. Dada la falta de artefactos descargables y la ausencia de información técnica fiable, esta ficha debe interpretarse con cautela: la mayor parte de los datos no están disponibles o no son confirmables.
 
@@ -10,7 +10,7 @@ La model card describe mejoras en tareas de razonamiento matemático, programaci
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tags de HuggingFace), sin más detalle |
+| Arquitectura | BERT (según tags de Hugging Face), sin más detalle |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ La model card describe mejoras en tareas de razonamiento matemático, programaci
 
 ## Arquitectura y entrenamiento
 
-La model card no especifica la arquitectura interna más allá de la etiqueta `bert` presente en los metadatos de HuggingFace. No se indica el número de capas, dimensión oculta, mecanismo de atención ni si se trata de un modelo encoder-only estándar o una variante. Tampoco se proporcionan datos sobre el conjunto de entrenamiento, número de tokens, metodología de post-entrenamiento (aunque se menciona "optimización algorítmica" y "mayores recursos computacionales") ni si se aplicaron técnicas como RLHF o DPO. La única referencia concreta es que la versión actual usa una media de 23 000 tokens por pregunta en el conjunto AIME (frente a 12 000 en la versión anterior), lo que sugiere un modo de razonamiento más extenso, pero no se describe el mecanismo que lo permite.
+La model card no especifica la arquitectura interna más allá de la etiqueta `bert` presente en los metadatos de Hugging Face. No se indica el número de capas, dimensión oculta, mecanismo de atención ni si se trata de un modelo encoder-only estándar o una variante. Tampoco se proporcionan datos sobre el conjunto de entrenamiento, número de tokens, metodología de post-entrenamiento (aunque se menciona "optimización algorítmica" y "mayores recursos computacionales") ni si se aplicaron técnicas como RLHF o DPO. La única referencia concreta es que la versión actual usa una media de 23 000 tokens por pregunta en el conjunto AIME (frente a 12 000 en la versión anterior), lo que sugiere un modo de razonamiento más extenso, pero no se describe el mecanismo que lo permite.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No disponible. Sin datos de arquitectura, tamaño o rendimiento verificable, no 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB) y no contiene pesos, tokenizador ni configuración. No es posible descargar ni ejecutar el modelo.
+- El repositorio de Hugging Face está vacío (0.0 GB) y no contiene pesos, tokenizador ni configuración. No es posible descargar ni ejecutar el modelo.
 - La model card presenta datos de evaluación sin especificar benchmarks estándar ni metodología; los valores mostrados no son reproducibles y podrían ser inventados o erróneos.
 - No se indica el número de parámetros, la longitud de contexto, los idiomas soportados ni el formato de pesos, datos esenciales para cualquier uso práctico.
 - La fecha de creación (2026) es futura, lo que sugiere que el repositorio es un placeholder o una prueba.
@@ -69,7 +69,7 @@ No disponible. Sin datos de arquitectura, tamaño o rendimiento verificable, no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sad21dsasad11/MyAwesomeModel
+- Repositorio Hugging Face: https://huggingface.co/sad21dsasad11/MyAwesomeModel
 - Repositorio relacionado (misma plantilla de model card): https://huggingface.co/sad21dsasad11/MyAwesomeModel-TestRepo
 - Repositorio con nombre similar: https://huggingface.co/mm-tool/MyAwesomeModel-v1
 - Herramienta de terceros que referencia el modelo: https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo

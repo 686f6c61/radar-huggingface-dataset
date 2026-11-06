@@ -6,7 +6,7 @@
 
 La ficha tecnica disponible es escasa: se trata de un artefacto de inferencia (pesos cuantizados), no de un modelo fundacional con model card extensa. No se documentan parametros, contexto, idiomas ni datos de entrenamiento en la informacion proporcionada. Su relevancia radica en que permite ejecutar un detector D-FINE-L optimizado en entornos de borde y AI PCs sin necesidad de recompilar ni reentrenar.
 
-El modelo se enmarca en el pipeline `object-detection` de HuggingFace y su licencia Apache-2.0 facilita el uso comercial, si bien las limitaciones y sesgos heredan los del modelo original DEIM D-FINE-L.
+El modelo se enmarca en el pipeline `object-detection` de Hugging Face y su licencia Apache-2.0 facilita el uso comercial, si bien las limitaciones y sesgos heredan los del modelo original DEIM D-FINE-L.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/deim_dfine_l-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/deim_dfine_l-int8-ov
 - Modelo original DEIM: https://github.com/Intellindust-AI-Lab/DEIM
 - Geti (Open Edge Platform): https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

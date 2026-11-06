@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tasme3-whisper-base-ar-quran-web | no disponible (base Whisper, aprox. 74 M) | Ventana mel variable, mínimo 1000 frames | 14,2 % WER en evaluación propia (48 aleyas, 4 recitadores) | Apache 2.0 | HuggingFace, ONNX |
-| tarteel-ai/whisper-base-ar-quran | no disponible (base Whisper, aprox. 74 M) | 30 s fijos | 14,1 % WER en la misma evaluación | Apache 2.0 | HuggingFace |
-| Whisper base original (OpenAI) | aprox. 74 M | 30 s fijos | No disponible en la información proporcionada para árabe coránico | MIT | HuggingFace, múltiples formatos |
+| tasme3-whisper-base-ar-quran-web | no disponible (base Whisper, aprox. 74 M) | Ventana mel variable, mínimo 1000 frames | 14,2 % WER en evaluación propia (48 aleyas, 4 recitadores) | Apache 2.0 | Hugging Face, ONNX |
+| tarteel-ai/whisper-base-ar-quran | no disponible (base Whisper, aprox. 74 M) | 30 s fijos | 14,1 % WER en la misma evaluación | Apache 2.0 | Hugging Face |
+| Whisper base original (OpenAI) | aprox. 74 M | 30 s fijos | No disponible en la información proporcionada para árabe coránico | MIT | Hugging Face, múltiples formatos |
 
 No se dispone de datos comparativos adicionales con otros modelos de ASR árabe en la información proporcionada.
 
@@ -90,6 +90,6 @@ No se dispone de datos comparativos adicionales con otros modelos de ASR árabe 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nael239/tasme3-whisper-base-ar-quran-web
+- Modelo en Hugging Face: https://huggingface.co/nael239/tasme3-whisper-base-ar-quran-web
 - Modelo base: https://huggingface.co/tarteel-ai/whisper-base-ar-quran
 - transformers.js: https://github.com/huggingface/transformers.js

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DiyaNdn6/cross-modal-fusion` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en HuggingFace bajo licencia MIT. El propio README lo declara de forma explicita: contiene un artefacto principal (`paper_notes.md`) con motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y el autor indica que no se presenta como un articulo completado ni como una release de modelos entrenados.
+`DiyaNdn6/cross-modal-fusion` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en Hugging Face bajo licencia MIT. El propio README lo declara de forma explicita: contiene un artefacto principal (`paper_notes.md`) con motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y el autor indica que no se presenta como un articulo completado ni como una release de modelos entrenados.
 
 Los metadatos de safetensors del repositorio declaran 49.600 parametros totales, una cifra extraordinariamente baja (equivalente a un modelo de juguete de unos pocos kilobytes) que resulta coherente con un artefacto de prueba o de marcador de posicion, no con un transformer funcional. El tamano del repositorio es de 0,0 GB, no tiene pipeline declarado, no registra descargas ni likes en el momento de la consulta y no especifica idiomas soportados.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la informacion proporcionada. La unica referencia de la busqueda web es el listado general de modelos de HuggingFace ordenado por fecha de creacion, donde aparece este repositorio junto a otros de naturaleza no relacionada y sin datos de rendimiento. No procede comparar parametros, contexto, licencia o disponibilidad con alternativas reales porque el objeto comparado no es un modelo entrenado.
+No disponible. No se han identificado modelos comparables en la informacion proporcionada. La unica referencia de la busqueda web es el listado general de modelos de Hugging Face ordenado por fecha de creacion, donde aparece este repositorio junto a otros de naturaleza no relacionada y sin datos de rendimiento. No procede comparar parametros, contexto, licencia o disponibilidad con alternativas reales porque el objeto comparado no es un modelo entrenado.
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DiyaNdn6/cross-modal-fusion
-- Listado de modelos de HuggingFace ordenado por fecha de creacion (referencia de la busqueda web): https://huggingface.co/models?sort=created
+- Repositorio en Hugging Face: https://huggingface.co/DiyaNdn6/cross-modal-fusion
+- Listado de modelos de Hugging Face ordenado por fecha de creacion (referencia de la busqueda web): https://huggingface.co/models?sort=created
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la informacion disponible.

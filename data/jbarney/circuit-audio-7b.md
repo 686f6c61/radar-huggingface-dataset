@@ -74,11 +74,11 @@ Mejoras por celda frente a la base sin ajustar: conteo de pitidos (15 % a 67 %),
 
 | Modelo | Base | Parámetros | Contexto | Rendimiento en la rejilla del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| circuit-audio-7b | Qwen2-Audio-7B-Instruct | 40M de LoRA + ~2,1M de cabeza sobre base de 7B | No disponible (entrenamiento a 1.024 tokens) | 93,5 % / ECE 0,072 en 279 clips decidibles | Apache 2.0 | Adaptador y cabeza en HuggingFace; 0 descargas |
+| circuit-audio-7b | Qwen2-Audio-7B-Instruct | 40M de LoRA + ~2,1M de cabeza sobre base de 7B | No disponible (entrenamiento a 1.024 tokens) | 93,5 % / ECE 0,072 en 279 clips decidibles | Apache 2.0 | Adaptador y cabeza en Hugging Face; 0 descargas |
 | Qwen2-Audio-7B-Instruct (base sin ajustar) | - | 7B (no detallado) | No disponible en la información proporcionada | 72,0 % / ECE 0,188 en 279 clips decidibles | Apache 2.0 | Modelo completo publicado |
-| circuit-8b | No detallado | No disponible | No disponible | No disponible | No disponible | Adaptador en HuggingFace |
-| circuit-vl-4b | No detallado | No disponible | No disponible | No disponible | No disponible | Adaptador en HuggingFace |
-| circuit-1.7b | No detallado | No disponible | No disponible | No disponible | No disponible | Adaptador en HuggingFace |
+| circuit-8b | No detallado | No disponible | No disponible | No disponible | No disponible | Adaptador en Hugging Face |
+| circuit-vl-4b | No detallado | No disponible | No disponible | No disponible | No disponible | Adaptador en Hugging Face |
+| circuit-1.7b | No detallado | No disponible | No disponible | No disponible | No disponible | Adaptador en Hugging Face |
 
 Los tres modelos *circuit* restantes pertenecen a la misma familia y comparten el esquema de decisión y la cabeza de punteros, pero la información proporcionada no incluye sus especificaciones ni sus resultados, por lo que no es posible compararlos numéricamente.
 
@@ -97,7 +97,7 @@ Los tres modelos *circuit* restantes pertenecen a la misma familia y comparten e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbarney/circuit-audio-7b
+- Modelo en Hugging Face: https://huggingface.co/jbarney/circuit-audio-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct
 - Sitio del proyecto decision-circuits: https://decisioncircuits.com
 - Repositorio de código `circuit`: https://github.com/Barneyjm/circuit

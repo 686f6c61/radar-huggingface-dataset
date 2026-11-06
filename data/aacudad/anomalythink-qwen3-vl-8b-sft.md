@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parámetros | Contexto | DS-MVTec | VisA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AnomalyThink-Qwen3-VL-8B-SFT (este modelo) | 8,77 B | no disponible | 80.31 | 67.32 | apache-2.0 | HuggingFace (0 descargas registradas) |
-| AnomalyThink-Qwen3-VL-8B-SFT-GRPO | no disponible (mismo backbone) | no disponible | 87.14 | 72.39 | no disponible | HuggingFace, mismo autor |
-| AnomalyThink-Qwen3-VL-8B-KCR | no disponible (mismo backbone) | no disponible | 84.39 | 76.63 | no disponible | HuggingFace, mismo autor |
-| Qwen/Qwen3-VL-8B-Instruct (base, zero-shot) | 8 B aprox. | no disponible | 78.68 | 64.45 | apache-2.0 según los tags del repositorio | HuggingFace, público |
+| AnomalyThink-Qwen3-VL-8B-SFT (este modelo) | 8,77 B | no disponible | 80.31 | 67.32 | apache-2.0 | Hugging Face (0 descargas registradas) |
+| AnomalyThink-Qwen3-VL-8B-SFT-GRPO | no disponible (mismo backbone) | no disponible | 87.14 | 72.39 | no disponible | Hugging Face, mismo autor |
+| AnomalyThink-Qwen3-VL-8B-KCR | no disponible (mismo backbone) | no disponible | 84.39 | 76.63 | no disponible | Hugging Face, mismo autor |
+| Qwen/Qwen3-VL-8B-Instruct (base, zero-shot) | 8 B aprox. | no disponible | 78.68 | 64.45 | apache-2.0 según los tags del repositorio | Hugging Face, público |
 | Qwen2.5-VL con corpus KCR (resultado de tesis) | no disponible | no disponible | 85.82 | 76.45 | no disponible | Documentado en la tesis, no enlazado a pesos |
 
 La comparación con alternativas externas a la familia (otros VLM de 7-9 B aplicados a detección de anomalías industriales) no está disponible en la información proporcionada: no se aportan cifras de terceros bajo el mismo protocolo de evaluación.
@@ -109,7 +109,7 @@ La comparación con alternativas externas a la familia (otros VLM de 7-9 B aplic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT
+- Modelo en Hugging Face: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT
 - Checkpoint hermano SFT-GRPO: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT-GRPO
 - Checkpoint hermano KCR: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-KCR
 - Dataset de entrenamiento: https://huggingface.co/datasets/aacudad/AnomalyThink

@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 - No se han publicado benchmarks zero-shot, por lo que no hay evidencia cuantitativa de calidad fuera de la pérdida de validación.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-950mt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-950mt-base-cooled
 - Referencia Isambard-AI: https://doi.org/10.48550/arXiv.2410.11199
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

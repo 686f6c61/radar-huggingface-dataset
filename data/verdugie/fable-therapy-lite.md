@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Fable Therapy Lite (este modelo) | 4,21B | No disponible (etiquetado long-context) | Inglés | Apache 2.0 | GGUF en HuggingFace | 4.537 conversaciones; pensado para local |
-| Fable Therapy 9B (Verdugie) | 9B (según la card del 9B) | No disponible | Inglés | No confirmada en la información disponible | HuggingFace | Mismo dataset de 4.537 conversaciones; versión mayor del mismo par |
-| Qwen 3.5 4B (modelo base) | ~4B | No disponible | No disponible en la información recogida | No confirmada en la información recogida | HuggingFace | Modelo generalista sin especialización terapéutica |
-| Therapy-3.8 (Verdugie) | 3,8B (por el nombre) | No disponible | No disponible | No disponible | HuggingFace | Citado solo en rankings de descargas; sin datos técnicos verificados |
+| Fable Therapy Lite (este modelo) | 4,21B | No disponible (etiquetado long-context) | Inglés | Apache 2.0 | GGUF en Hugging Face | 4.537 conversaciones; pensado para local |
+| Fable Therapy 9B (Verdugie) | 9B (según la card del 9B) | No disponible | Inglés | No confirmada en la información disponible | Hugging Face | Mismo dataset de 4.537 conversaciones; versión mayor del mismo par |
+| Qwen 3.5 4B (modelo base) | ~4B | No disponible | No disponible en la información recogida | No confirmada en la información recogida | Hugging Face | Modelo generalista sin especialización terapéutica |
+| Therapy-3.8 (Verdugie) | 3,8B (por el nombre) | No disponible | No disponible | No disponible | Hugging Face | Citado solo en rankings de descargas; sin datos técnicos verificados |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas; la comparación se limita a parámetros, licencia y formato de distribución.
 
@@ -94,8 +94,8 @@ No se dispone de datos de rendimiento comparado entre estas alternativas; la com
 
 ## Enlaces
 
-- [Verdugie/Fable-Therapy-Lite en HuggingFace](https://huggingface.co/Verdugie/Fable-Therapy-Lite)
-- [Verdugie/Fable-Therapy-9B en HuggingFace](https://huggingface.co/Verdugie/Fable-Therapy-9B)
+- [Verdugie/Fable-Therapy-Lite en Hugging Face](https://huggingface.co/Verdugie/Fable-Therapy-Lite)
+- [Verdugie/Fable-Therapy-9B en Hugging Face](https://huggingface.co/Verdugie/Fable-Therapy-9B)
 - [Perfil del autor Verdugie (Saul Verdugo)](https://huggingface.co/Verdugie)
 - [Verdugie en Model Pulse: descargas y rankings](https://modelpulse.ifsp.dev/author/Verdugie)
 - [Verdugie AI models en Essa Mamdani](https://essamamdani.com/ai-models/company/verdugie)

@@ -74,7 +74,7 @@ La comparativa se basa en datos públicos del modelo original y de alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/BLCKHWK60/Qwen3.8-27B-oQ6
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/BLCKHWK60/Qwen3.8-27B-oQ6
 - Repositorio GitHub del modelo original: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

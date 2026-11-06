@@ -86,7 +86,7 @@ Los datos de esta tabla proceden de la documentación pública de cada modelo ba
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/lokeshch/queensland-ai-gemma3-fine-tuned-live
+- Repositorio del modelo en Hugging Face: https://huggingface.co/lokeshch/queensland-ai-gemma3-fine-tuned-live
 - Modelo base google/gemma-3-270m-it: https://huggingface.co/google/gemma-3-270m-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PointPillars multihead es un modelo de detección de objetos 3D sobre nubes de puntos LiDAR, publicado en HuggingFace por el proyecto torch-pointcloud (Arthur Dujardin) como conversión de un checkpoint de OpenPCDet entrenado sobre el dataset nuScenes. Implementa la arquitectura PointPillars presentada en CVPR 2019: la nube de puntos se organiza en "pilares" verticales, se codifica con un encoder tipo PointNet y se procesa con un backbone 2D que alimenta varias cabezas de detección (de ahí el sufijo "multihead"). El resultado son cajas 3D con clase, centro, dimensiones y orientación para 10 clases de nuScenes.
+PointPillars multihead es un modelo de detección de objetos 3D sobre nubes de puntos LiDAR, publicado en Hugging Face por el proyecto torch-pointcloud (Arthur Dujardin) como conversión de un checkpoint de OpenPCDet entrenado sobre el dataset nuScenes. Implementa la arquitectura PointPillars presentada en CVPR 2019: la nube de puntos se organiza en "pilares" verticales, se codifica con un encoder tipo PointNet y se procesa con un backbone 2D que alimenta varias cabezas de detección (de ahí el sufijo "multihead"). El resultado son cajas 3D con clase, centro, dimensiones y orientación para 10 clases de nuScenes.
 
 El modelo es deliberadamente pequeño: 6.089.398 parámetros, 5 canales de entrada (posición XYZ, intensidad y timestamp) y 384 características por pilar. Ese tamaño lo sitúa en la gama de detectores 3D ligeros aptos para inferencia en tiempo real sobre hardware modesto, en contraste con detectores basados en voxels dispersos o transformers que multiplican el coste computacional.
 
@@ -83,7 +83,7 @@ No se han publicado en la información disponible otros resultados (por clase, p
 
 | Modelo | Familia | Parámetros | Entrada | Licencia | Disponibilidad | mAP / NDS en nuScenes |
 |---|---|---|---|---|---|---|
-| pointpillars-multihead.nuscenes.openpcdet | PointPillars (encoder de pilares + backbone 2D) | 6,1 M | LiDAR, 5 canales | Apache-2.0 | HuggingFace, vía torch-pointcloud | 44,34 / 57,08 (declarados por el autor) |
+| pointpillars-multihead.nuscenes.openpcdet | PointPillars (encoder de pilares + backbone 2D) | 6,1 M | LiDAR, 5 canales | Apache-2.0 | Hugging Face, vía torch-pointcloud | 44,34 / 57,08 (declarados por el autor) |
 | PointPillars original (OpenPCDet) | PointPillars | no disponible en la información proporcionada | LiDAR | Apache-2.0 | Repositorio OpenPCDet | no disponible |
 | SECOND (OpenPCDet) | Voxels dispersos + sparse CNN | no disponible | LiDAR | Apache-2.0 | Repositorio OpenPCDet | no disponible |
 | CenterPoint (OpenPCDet) | Detección 3D basada en centroides, ancla libre | no disponible | LiDAR (y variante con fusión de cámara) | Apache-2.0 | Repositorio OpenPCDet | no disponible |
@@ -104,7 +104,7 @@ La comparación cuantitativa con esas alternativas no está disponible en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointpillars-multihead.nuscenes.openpcdet
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointpillars-multihead.nuscenes.openpcdet
 - Paper de PointPillars (CVPR 2019): https://arxiv.org/abs/1812.05784
 - Repositorio OpenPCDet (origen del checkpoint): https://github.com/open-mmlab/OpenPCDet
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

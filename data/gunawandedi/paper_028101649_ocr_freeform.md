@@ -52,6 +52,6 @@ No disponible. No se dispone de información sobre otros repositorios o modelos 
 
 ## Enlaces
 
-- [HuggingFace](https://huggingface.co/gunawandedi/paper_028101649_ocr_freeform)
+- [Hugging Face](https://huggingface.co/gunawandedi/paper_028101649_ocr_freeform)
 
 Los resultados de búsqueda web no proporcionaron enlaces adicionales específicos sobre este repositorio.

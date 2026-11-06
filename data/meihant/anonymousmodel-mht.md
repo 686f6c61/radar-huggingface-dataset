@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnonymousModel-mht es una colección de checkpoints de investigación publicada por el usuario meihant en HuggingFace. No se trata de un modelo entrenado para uso final, sino de un artefacto experimental: 20 checkpoints de frontera de presupuesto (budget-boundary) procedentes de dos ejecuciones de preentrenamiento emparejadas de un modelo de texto Qwen3.5-4B inicializado aleatoriamente, entrenadas sobre aproximadamente 20B tokens de cuerpo. Cada familia contiene diez checkpoints espaciados aproximadamente cada 2B tokens, desde 2B hasta 20B.
+AnonymousModel-mht es una colección de checkpoints de investigación publicada por el usuario meihant en Hugging Face. No se trata de un modelo entrenado para uso final, sino de un artefacto experimental: 20 checkpoints de frontera de presupuesto (budget-boundary) procedentes de dos ejecuciones de preentrenamiento emparejadas de un modelo de texto Qwen3.5-4B inicializado aleatoriamente, entrenadas sobre aproximadamente 20B tokens de cuerpo. Cada familia contiene diez checkpoints espaciados aproximadamente cada 2B tokens, desde 2B hasta 20B.
 
 Las dos familias corresponden a dos regímenes de preentrenamiento distintos: Keen-qwen4b-20b, con preentrenamiento condicionado por listas factuales, y Vanilla-qwen4b-20b, con preentrenamiento de texto ordinario. El propósito es permitir estudios comparativos del efecto de la condición de entrenamiento sobre las curvas de aprendizaje a lo largo del presupuesto de cómputo.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AnonymousModel-mht | 4B | 4.096 | no disponible | HuggingFace (colección de 20 checkpoints) | Base, sin alinear, solo inglés |
+| AnonymousModel-mht | 4B | 4.096 | no disponible | Hugging Face (colección de 20 checkpoints) | Base, sin alinear, solo inglés |
 | Qwen3.5-4B (modelo de referencia) | 4B | no disponible | no disponible | no disponible | Arquitectura de partida; el autor no publica comparación |
 | Alternativas de 4B base | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meihant/AnonymousModel-mht
+- Hugging Face: https://huggingface.co/meihant/AnonymousModel-mht
 - Familia Keen: https://huggingface.co/meihant/AnonymousModel-mht/tree/main/Keen-qwen4b-20b
 - Familia Vanilla: https://huggingface.co/meihant/AnonymousModel-mht/tree/main/Vanilla-qwen4b-20b
 - Índice de checkpoints: `checkpoints.json` (en la raíz del repositorio)

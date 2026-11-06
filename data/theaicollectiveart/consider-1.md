@@ -17,7 +17,7 @@ Su relevancia radica en el intento de llevar inteligencia de borde autónoma a e
 | Tipos de cuantizacion | No disponible; el repositorio incluye pesos en formato GGUF según las etiquetas, sin especificar los tipos de cuantización |
 | Idiomas soportados | No disponibles (no declarados en los metadatos) |
 | Licencia | Apache 2.0 (según metadatos); el autor menciona además la Zymatica Covenant License 2026 y la Tongyi Qianwen License Agreement |
-| Formato de pesos | Safetensors y GGUF (según etiquetas de HuggingFace) |
+| Formato de pesos | Safetensors y GGUF (según etiquetas de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CONSIDER-1 | 752M | no disponible | Apache 2.0 + Zymatica | HuggingFace |
-| Qwen2.5-0.5B | 494M | no disponible | Apache 2.0 | HuggingFace |
-| Llama 3.2-1B | 1.23B | no disponible | Llama 3.2 Community License | HuggingFace |
+| CONSIDER-1 | 752M | no disponible | Apache 2.0 + Zymatica | Hugging Face |
+| Qwen2.5-0.5B | 494M | no disponible | Apache 2.0 | Hugging Face |
+| Llama 3.2-1B | 1.23B | no disponible | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo para estos modelos en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheAiCollectiveART/CONSIDER-1
+- Hugging Face: https://huggingface.co/TheAiCollectiveART/CONSIDER-1
 - Especificación del proyecto: https://huggingface.co/TheAiCollectiveART/genesis-format-spec
 - Portal del ecosistema: https://zymatica.space
 - Libro canónico: https://www.amazon.com/dp/B0HGVC777F

@@ -63,7 +63,7 @@ No disponible. No existe una categoria de "modelos" a la que este repositorio pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikhilraoko/classifier-sandbox
+- Hugging Face: https://huggingface.co/nikhilraoko/classifier-sandbox
 - No se encontraron otros enlaces relevantes (papers, blogs, repos) en la busqueda web.
 
 Nota: los articulos de noticias mencionados en la busqueda (Axios, Cloud Security Alliance, etc.) tratan sobre un incidente de seguridad de OpenAI en Hugging Face y no tienen conexion con este repositorio. No se incluyen como enlaces del modelo.## Resumen
@@ -128,5 +128,5 @@ No disponible. No existe una categoria de modelos a la que este repositorio pert
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikhilraoko/classifier-sandbox
+- Hugging Face: https://huggingface.co/nikhilraoko/classifier-sandbox
 - No se encontraron otros enlaces relevantes (papers, blogs, repos, demos) en la busqueda web.

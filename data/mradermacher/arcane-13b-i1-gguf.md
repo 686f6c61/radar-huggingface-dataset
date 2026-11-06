@@ -87,6 +87,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/arcane-13b-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/arcane-13b-i1-GGUF
 - Modelo base original: https://huggingface.co/ar3xop/arcane-13b
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

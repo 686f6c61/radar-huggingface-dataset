@@ -68,5 +68,5 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h021.pi-agent-sft-v12.step_250
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h021.pi-agent-sft-v12.step_250
 - Búsqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

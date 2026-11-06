@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | lerobot/smolvla_base | no disponible | no disponible | no disponible | Modelo base de SmolVLA, sin fine-tuning especifico |
 | dokterkepin/omniman_drive_pick_place_diff | 0.3B | no disponible | no disponible | Otra variante del mismo autor para la misma tarea |
 
-Nota: los datos de los modelos comparados provienen de la informacion disponible en HuggingFace y pueden estar incompletos. No se dispone de datos de rendimiento comparativos.
+Nota: los datos de los modelos comparados provienen de la informacion disponible en Hugging Face y pueden estar incompletos. No se dispone de datos de rendimiento comparativos.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ Nota: los datos de los modelos comparados provienen de la informacion disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dokterkepin/omniman_drive_pick_place_smolvla_v2
+- Modelo en Hugging Face: https://huggingface.co/dokterkepin/omniman_drive_pick_place_smolvla_v2
 - Dataset de entrenamiento: https://huggingface.co/dokterkepin/omniman_drive_pick_place
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

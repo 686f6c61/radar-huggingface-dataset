@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tinku es un artefacto publicado en HuggingFace por SZL Holdings (SZLHOLDINGS) bajo la etiqueta `governed-ai`. Según su model card, se describe como un "órgano de hoja de ruta para decisiones disputadas" y un "encuentro ritual" entre dos autoridades, pero no contiene pesos de modelo: la propia tarjeta indica explícitamente "No weights" y "Weights: none". No se trata de un modelo de lenguaje entrenado, sino de una declaración conceptual o un marcador de posición dentro de la infraestructura de "IA gobernada" que promueve la organización.
+Tinku es un artefacto publicado en Hugging Face por SZL Holdings (SZLHOLDINGS) bajo la etiqueta `governed-ai`. Según su model card, se describe como un "órgano de hoja de ruta para decisiones disputadas" y un "encuentro ritual" entre dos autoridades, pero no contiene pesos de modelo: la propia tarjeta indica explícitamente "No weights" y "Weights: none". No se trata de un modelo de lenguaje entrenado, sino de una declaración conceptual o un marcador de posición dentro de la infraestructura de "IA gobernada" que promueve la organización.
 
 La ficha no proporciona arquitectura, tamaño, contexto ni capacidades de inferencia. La model card menciona una "Doctrine v11" con 749 declaraciones, 14 axiomas, 163 "sorries" y 8 pruebas bloqueadas, pero estos son metadatos de un sistema de gobernanza, no especificaciones de un modelo. La licencia es Apache-2.0 y la fecha de creación es agosto de 2026. En resumen, no existe un modelo utilizable para tareas de NLP; es un repositorio simbólico dentro de un ecosistema más amplio de SZL Holdings.
 
@@ -64,8 +64,8 @@ No disponible. No existe una categoría de modelos comparable porque Tinku no es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SZLHOLDINGS/tinku
-- Organización SZL Holdings en HuggingFace: https://huggingface.co/SZLHOLDINGS/models
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/tinku
+- Organización SZL Holdings en Hugging Face: https://huggingface.co/SZLHOLDINGS/models
 - GitHub de SZL Holdings: https://github.com/szl-holdings
 - Documentación de SZL Holdings: https://szl-holdings.github.io/docs-site/
 - Repositorios de SZL Holdings en GitHub: https://github.com/orgs/szl-holdings/repositories

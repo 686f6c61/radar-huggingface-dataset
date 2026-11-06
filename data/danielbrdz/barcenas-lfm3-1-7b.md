@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Barcenas-LFM3-1.7B es un ajuste fino (fine-tuning) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario Danielbrdz y publicado en HuggingFace. Se trata de un modelo de generación de texto de 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) especializado en conversación en castellano, entrenado mediante SFT (supervised fine-tuning) sobre el dataset OysterCoreAI/SFT-General-Spanish-50K.
+Barcenas-LFM3-1.7B es un ajuste fino (fine-tuning) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario Danielbrdz y publicado en Hugging Face. Se trata de un modelo de generación de texto de 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) especializado en conversación en castellano, entrenado mediante SFT (supervised fine-tuning) sobre el dataset OysterCoreAI/SFT-General-Spanish-50K.
 
 El modelo parte de la familia LFM3 de Liquid AI, una arquitectura propietaria de tipo transformer con código personalizado (requiere `trust_remote_code` para cargarse). El ajuste se orienta a mejorar el comportamiento conversacional y la calidad del español, un idioma para el que muchos modelos base de tamaño pequeño tienen cobertura limitada.
 
@@ -23,7 +23,7 @@ Es relevante para quienes buscan un modelo pequeño, desplegable en hardware mod
 
 ## Arquitectura y entrenamiento
 
-El modelo base es LiquidAI/LFM3-1.7B, un transformer de 1,7 mil millones de parámetros perteneciente a la tercera generación de la familia LFM (Liquid Foundation Models) de Liquid AI. La etiqueta `custom_code` en HuggingFace indica que la implementación no es estándar y requiere cargar código remoto del repositorio para instanciar el modelo con `transformers`.
+El modelo base es LiquidAI/LFM3-1.7B, un transformer de 1,7 mil millones de parámetros perteneciente a la tercera generación de la familia LFM (Liquid Foundation Models) de Liquid AI. La etiqueta `custom_code` en Hugging Face indica que la implementación no es estándar y requiere cargar código remoto del repositorio para instanciar el modelo con `transformers`.
 
 El ajuste fino se realizó mediante SFT sobre el dataset OysterCoreAI/SFT-General-Spanish-50K, un conjunto de aproximadamente 50.000 ejemplos de instrucciones en español. No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, la presencia de RLHF/DPO posterior, la estrategia de enmascaramiento de pérdida ni los hiperparámetros utilizados (learning rate, epochs, batch size). Tampoco se documenta si se aplicaron técnicas como LoRA, QLoRA o fine-tuning completo.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Barcenas-LFM3-1.7B | ~1,7 B | no disponible | es | LFM 1.0 | HuggingFace |
-| LiquidAI/LFM3-1.7B (base) | ~1,7 B | no disponible | multilingüe (según modelo base) | LFM 1.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | multilingüe (incluye español) | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | ~1,2 B | 128.000 tokens | multilingüe (incluye español) | Llama 3.2 Community License | HuggingFace |
+| Barcenas-LFM3-1.7B | ~1,7 B | no disponible | es | LFM 1.0 | Hugging Face |
+| LiquidAI/LFM3-1.7B (base) | ~1,7 B | no disponible | multilingüe (según modelo base) | LFM 1.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | multilingüe (incluye español) | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | ~1,2 B | 128.000 tokens | multilingüe (incluye español) | Llama 3.2 Community License | Hugging Face |
 
 La comparación con Qwen2.5-1.5B-Instruct y Llama-3.2-1B-Instruct es pertinente por tamaño y categoría (modelos pequeños de instrucciones), aunque no hay datos de benchmarks de Barcenas-LFM3-1.7B que permitan una comparación cuantitativa. La principal ventaja de Barcenas es su especialización en español mediante SFT; la desventaja es la falta de documentación, benchmarks y ecosistema de cuantizaciones.
 
@@ -85,7 +85,7 @@ La comparación con Qwen2.5-1.5B-Instruct y Llama-3.2-1B-Instruct es pertinente 
 
 ## Enlaces
 
-- [HuggingFace: Danielbrdz/Barcenas-LFM3-1.7B](https://huggingface.co/Danielbrdz/Barcenas-LFM3-1.7B)
+- [Hugging Face: Danielbrdz/Barcenas-LFM3-1.7B](https://huggingface.co/Danielbrdz/Barcenas-LFM3-1.7B)
 - [Modelo base: LiquidAI/LFM3-1.7B](https://huggingface.co/LiquidAI/LFM3-1.7B)
 - [Dataset: OysterCoreAI/SFT-General-Spanish-50K](https://huggingface.co/datasets/OysterCoreAI/SFT-General-Spanish-50K)
 - [Licencia LFM 1.0 (archivo LICENSE del repositorio)](https://huggingface.co/Danielbrdz/Barcenas-LFM3-1.7B/blob/main/LICENSE)

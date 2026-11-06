@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`akshar-setu-gujarati-ocr` es un repositorio publicado en HuggingFace por el usuario `janmejaypandya` bajo licencia MIT. El identificador del modelo indica que se trata de un sistema de reconocimiento óptico de caracteres (OCR) orientado al gujarati, la escritura empleada para el idioma gujarati (aproximadamente 55 millones de hablantes, principalmente en el estado indio de Guyarat). El nombre "Akshar Setu" se traduce del gujarati/sánscrito como "puente de letras", lo que refuerza esa lectura, aunque la model card no confirma explícitamente la tarea.
+`akshar-setu-gujarati-ocr` es un repositorio publicado en Hugging Face por el usuario `janmejaypandya` bajo licencia MIT. El identificador del modelo indica que se trata de un sistema de reconocimiento óptico de caracteres (OCR) orientado al gujarati, la escritura empleada para el idioma gujarati (aproximadamente 55 millones de hablantes, principalmente en el estado indio de Guyarat). El nombre "Akshar Setu" se traduce del gujarati/sánscrito como "puente de letras", lo que refuerza esa lectura, aunque la model card no confirma explícitamente la tarea.
 
-La información disponible es mínima: la model card únicamente contiene la declaración de licencia (`license: mit`) y el repositorio no declara pipeline de HuggingFace, idiomas soportados ni arquitectura. El repositorio registra 0 descargas y 0 likes, y no se han encontrado en la búsqueda web papers, blogs ni demos asociados.
+La información disponible es mínima: la model card únicamente contiene la declaración de licencia (`license: mit`) y el repositorio no declara pipeline de Hugging Face, idiomas soportados ni arquitectura. El repositorio registra 0 descargas y 0 likes, y no se han encontrado en la búsqueda web papers, blogs ni demos asociados.
 
 Por tanto, esta ficha documenta lo que se puede afirmar con certeza y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de idoneidad para producción requiere contactar con el autor o inspeccionar directamente los archivos del repositorio.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha documenta lo que se puede afirmar con certeza y marca expl
 | Idiomas soportados | no disponible (el identificador sugiere gujarati; no confirmado en la model card) |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Región declarada | region: us |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-10-19 / 2026-10-19 (sin actualizaciones posteriores) |
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible; depende del número de parámetros, que el autor no publica. Como referencia de cálculo, la VRAM aproximada en inferencia equivale a parámetros × bytes por peso (4 bytes en fp32, 2 en fp16/bf16, 1 en int8, ~0,5 en int4) más el overhead de activaciones y del tokenizador o detector de layout.
 - GPU recomendadas: no disponible; no se puede recomendar un modelo de GPU sin conocer el tamaño.
 - Encaje en GPU de consumo: no disponible; habría que medir el tamaño real de los pesos del repositorio.
-- Opciones de despliegue: no disponible; el repositorio no declara pipeline de HuggingFace ni formato de pesos, por lo que no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama o TGI. Si los pesos fuesen de un modelo de visión-lenguaje en safetensors, sería viable `transformers` + `accelerate`; si fuesen de un detector/reconocedor tipo CNN+CTC, el despliegue típico sería ONNX Runtime o TorchScript. Ninguna de estas opciones está confirmada.
+- Opciones de despliegue: no disponible; el repositorio no declara pipeline de Hugging Face ni formato de pesos, por lo que no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama o TGI. Si los pesos fuesen de un modelo de visión-lenguaje en safetensors, sería viable `transformers` + `accelerate`; si fuesen de un detector/reconocedor tipo CNN+CTC, el despliegue típico sería ONNX Runtime o TorchScript. Ninguna de estas opciones está confirmada.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,14 +73,14 @@ No disponible. La información proporcionada no incluye datos de rendimiento, ta
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| akshar-setu-gujarati-ocr | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| akshar-setu-gujarati-ocr | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas de OCR para gujarati | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Model card prácticamente vacía: solo contiene la licencia. No hay información sobre arquitectura, datos de entrenamiento, métricas ni limitaciones declaradas por el autor.
 - Ausencia de evaluación: sin métricas de CER/WER no es posible estimar la precisión en documentos reales, ni decidir si el modelo supera a alternativas genéricas.
-- Idiomas no declarados en HuggingFace: aunque el nombre indica gujarati, no hay confirmación formal; podría cubrir solo un subconjunto de la escritura o incluir latín de forma parcial.
+- Idiomas no declarados en Hugging Face: aunque el nombre indica gujarati, no hay confirmación formal; podría cubrir solo un subconjunto de la escritura o incluir latín de forma parcial.
 - Riesgo de alucinación relevante en OCR: los modelos generativos de OCR pueden producir texto plausible que no aparece en la imagen. Sin benchmarks ni documentación sobre decodificación, este riesgo no puede descartarse.
 - Sesgos desconocidos: al no conocerse la composición del dataset, no se puede evaluar el sesgo hacia tipografías, calidades de escaneo, registros formales o variedades dialectales concretas.
 - Licencia MIT: permisiva y compatible con uso comercial, pero conviene verificar que los pesos distribuidos no arrastren licencias de terceros (datasets o checkpoints preentrenados) no declaradas en la model card.
@@ -89,5 +89,5 @@ No disponible. La información proporcionada no incluye datos de rendimiento, ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/janmejaypandya/akshar-setu-gujarati-ocr
+- Repositorio en Hugging Face: https://huggingface.co/janmejaypandya/akshar-setu-gujarati-ocr
 - Paper, blog, repositorio de código o demo: no disponible (la búsqueda web no devolvió resultados relacionados con el modelo).

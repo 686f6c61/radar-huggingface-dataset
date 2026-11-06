@@ -70,9 +70,9 @@ No se han publicado resultados en benchmarks estandar de LLM (MMLU, HumanEval, G
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-maengseongun-avoid-v3-link01 | Adaptador LoRA sobre Qwen3.5-0.8B | No disponible | 84,1 % acierto en test; 100 % exito en 20 episodios | Apache 2.0 | HuggingFace (15 descargas) |
+| connectailab-rl-maengseongun-avoid-v3-link01 | Adaptador LoRA sobre Qwen3.5-0.8B | No disponible | 84,1 % acierto en test; 100 % exito en 20 episodios | Apache 2.0 | Hugging Face (15 descargas) |
 | Cerebro PPO original (profesor) | No disponible (red de política) | No aplica | 100 % acierto; 100 % exito en 20 episodios | No especificada | Interno del simulador CONNECT AI WORLD |
-| Qwen/Qwen3.5-0.8B (base sin adaptador) | 0,8 mil millones | No disponible | 33,3 % acierto (equivale al modelo sin entrenar) | No disponible en la informacion | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base sin adaptador) | 0,8 mil millones | No disponible | 33,3 % acierto (equivale al modelo sin entrenar) | No disponible en la informacion | Hugging Face |
 
 No se dispone de información sobre otros adaptadores LoRA comparables de la misma familia ni sobre modelos de decisión robótica de tamaño similar en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bomdeang/connectailab-rl-maengseongun-avoid-v3-link01
+- Modelo en Hugging Face: https://huggingface.co/Bomdeang/connectailab-rl-maengseongun-avoid-v3-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

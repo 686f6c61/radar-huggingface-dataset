@@ -72,8 +72,8 @@ Las cifras de esta seccion son estimaciones derivadas del tamano del modelo base
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-self-gen-postcot-g2-b1 | LoRA r=64 sobre base de 35B (MoE, ~3B activos) | No disponible (entrenado a 8192) | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base sin adaptador) | 35B totales, ~3B activos | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| ct-qwen36-35b-self-gen-postcot-g2-b1 | LoRA r=64 sobre base de 35B (MoE, ~3B activos) | No disponible (entrenado a 8192) | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base sin adaptador) | 35B totales, ~3B activos | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otras generaciones de la misma cadena (g0, g1) y otras ramas | Misma receta LoRA | No disponible | Sin benchmarks publicados | No disponible | No confirmada su publicacion |
 
 No se dispone de informacion suficiente para comparar con alternativas de otras familias o con adaptadores de constituciones equivalentes.
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para comparar con alternativas de otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g2-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g2-b1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Constitucion usada en el entrenamiento: `training_seed_constitution.md` dentro del repositorio del modelo
 - Metadatos de exportacion: `tinker_meta.json` dentro del repositorio del modelo

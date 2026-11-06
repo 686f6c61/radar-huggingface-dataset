@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Atomic-Germ/FLUX.2-Klein-4B-OpenFLM-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Atomic-Germ/FLUX.2-Klein-4B-OpenFLM-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Blog de Black Forest Labs sobre FLUX.2 [klein]: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
 - Repositorio oficial de FLUX.2: https://github.com/black-forest-labs/flux2
 - ComfyUI-GGUF (city96): https://github.com/city96/ComfyUI-GGUF

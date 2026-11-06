@@ -67,7 +67,7 @@ No se dispone de datos comparativos en la información proporcionada. Los candid
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-main-module-lr-yaw30-v3-e3 (este) | no disponible | no disponible | sin evaluación publicada | Apache 2.0 | HuggingFace (0 descargas) |
+| pi05-libero-main-module-lr-yaw30-v3-e3 (este) | no disponible | no disponible | sin evaluación publicada | Apache 2.0 | Hugging Face (0 descargas) |
 | pi0.5 (modelo base de referencia) | no disponible en la información | no disponible en la información | no disponible en la información | no verificada en la información | no verificada en la información |
 | pi0 (openpi) | no disponible en la información | no disponible en la información | no disponible en la información | no verificada en la información | no verificada en la información |
 | OpenVLA | no disponible en la información | no disponible en la información | no disponible en la información | no verificada en la información | no verificada en la información |
@@ -86,6 +86,6 @@ No se dispone de datos comparativos en la información proporcionada. Los candid
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v3-e3-1000-20261015
+- Repositorio en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v3-e3-1000-20261015
 - Librería declarada openpi (referencia del ecosistema indicado en library_name): https://github.com/Physical-Intelligence/openpi
 - No se han encontrado otros enlaces (papers, blogs, demos o repositorios adicionales) en la información proporcionada.

@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arabellako22/connectailab-rl-malibu-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/arabellako22/connectailab-rl-malibu-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Codigo de entrenamiento: source/README.md (dentro del repositorio)
 - Simulador web: https://www.ezerai.xyz/robot-lab/world/

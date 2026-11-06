@@ -89,7 +89,7 @@ No se conocen en la información disponible otros modelos comparables además de
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/memory-leak/drama3
+- Página de Hugging Face del modelo: https://huggingface.co/memory-leak/drama3
 - Modelo base original: https://huggingface.co/fishaudio/drama-3
 - Repositorio de nodos personalizados ComfyUI-Drama3: https://github.com/PedroMarinhoDev/ComfyUI-Drama3
 - Licencia Fish Audio Community License: fichero `LICENSE` del repositorio

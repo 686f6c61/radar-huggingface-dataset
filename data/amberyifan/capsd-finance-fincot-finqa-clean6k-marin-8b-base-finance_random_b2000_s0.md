@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su especialización en tareas financieras
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no se documenta en la model card. El modelo base `marin-community/marin-8b-base` no tiene ficha pública en la información proporcionada, aunque el tag `llama` en HuggingFace sugiere que podría tratarse de una arquitectura tipo Llama (probablemente Llama 2 o Llama 3). El ajuste se realizó mediante entrenamiento completo (`full`), es decir, se actualizaron todos los parámetros del modelo base, no solo capas adicionales.
+La arquitectura exacta no se documenta en la model card. El modelo base `marin-community/marin-8b-base` no tiene ficha pública en la información proporcionada, aunque el tag `llama` en Hugging Face sugiere que podría tratarse de una arquitectura tipo Llama (probablemente Llama 2 o Llama 3). El ajuste se realizó mediante entrenamiento completo (`full`), es decir, se actualizaron todos los parámetros del modelo base, no solo capas adicionales.
 
 Los hiperparámetros de entrenamiento se detallan en la model card: learning rate de 1e-05, batch size de entrenamiento de 2 (con acumulación de gradientes de 8, resultando en un batch efectivo de 64), batch de evaluación de 8, optimizador AdamW con betas (0.9, 0.999), scheduler de learning rate coseno con warmup del 3% de los pasos, y una sola época. El entrenamiento se realizó en 4 GPUs. No se especifica el número de tokens ni la composición del dataset más allá del nombre, que indica una mezcla de datos de FinCot y FinQA con un filtro de "clean6k" (probablemente 6.000 ejemplos limpios) y una selección aleatoria de 2.000 ejemplos con semilla 0.
 
@@ -72,12 +72,12 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - Al ser un ajuste fino sobre un dataset pequeño (probablemente 6.000 ejemplos limpios y luego 2.000 seleccionados), es probable que el modelo tenga una generalización limitada fuera del dominio financiero y pueda sobreajustarse a los patrones del dataset.
 - La licencia `other` es ambigua: no se especifica si permite uso comercial, modificación o redistribución. Se debe contactar con el autor o revisar el repositorio del modelo base para aclarar los términos.
 - No hay garantía de calidad en tareas financieras reales: la ausencia de benchmarks impide conocer su precisión en razonamiento numérico o extracción de información.
-- El modelo fue creado en agosto de 2026 (según la fecha de HuggingFace), lo que indica que es muy reciente y no ha sido ampliamente probado por la comunidad (0 descargas, 0 likes).
+- El modelo fue creado en agosto de 2026 (según la fecha de Hugging Face), lo que indica que es muy reciente y no ha sido ampliamente probado por la comunidad (0 descargas, 0 likes).
 - No se especifican los idiomas soportados; si el dataset de entrenamiento es solo en inglés, el rendimiento en otros idiomas será deficiente.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_random_b2000_s0)
+- [Modelo en Hugging Face](https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_random_b2000_s0)
 - [Modelo base: marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base) (enlace inferido, no verificado en la búsqueda)
 - [Modelo relacionado: capsd-finance-dedup-marin-8b-base-finance_random_b10000_s0](https://huggingface.co/AmberYifan/capsd-finance-dedup-marin-8b-base-finance_random_b10000_s0)
 - [Modelo relacionado: capsd-convfinqa-fullscore-marin-8b-base-finance_cap_b2000_s0](https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_cap_b2000_s0)

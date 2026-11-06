@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rambley-Tokenizer-v1-16k es un tokenizador (no un modelo de lenguaje) publicado por el usuario allura-forge en HuggingFace. Su vocabulario es de 16.000 tokens, ampliado artificialmente hasta 16.384 para alinearlo con potencias de dos, un ajuste habitual para facilitar la vectorización y el uso eficiente en GPU. El repositorio está etiquetado con licencia cc-by-sa-4.0 y fue creado el 29 de septiembre de 2026, según los metadatos de la plataforma.
+Rambley-Tokenizer-v1-16k es un tokenizador (no un modelo de lenguaje) publicado por el usuario allura-forge en Hugging Face. Su vocabulario es de 16.000 tokens, ampliado artificialmente hasta 16.384 para alinearlo con potencias de dos, un ajuste habitual para facilitar la vectorización y el uso eficiente en GPU. El repositorio está etiquetado con licencia cc-by-sa-4.0 y fue creado el 29 de septiembre de 2026, según los metadatos de la plataforma.
 
 El interés del artefacto reside en su composición de datos de entrenamiento, que combina fuentes web de propósito general en inglés, texto educativo en inglés, contenido web en chino, cuatro lenguajes de programación (C++, JavaScript, Python y Rust) y datos matemáticos. Esta mezcla sugiere que el tokenizador está pensado para modelos pequeños o medianos con cobertura simultánea de inglés, chino, código y matemáticas dentro de un vocabulario muy compacto.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: practicamente nula en el caso del tokenizador; el consumo lo determina el modelo que lo utilice, no el vocabulario.
 - GPU recomendadas: cualquiera; el proceso de tokenizacion se ejecuta tipicamente en CPU.
 - Compatibilidad con GPU de consumo: si, cualquier GPU consumer sirve, e incluso es innecesaria.
-- Opciones de despliegue: biblioteca `tokenizers` de HuggingFace, `AutoTokenizer` de `transformers`, integraciones en vLLM, TGI o llama.cpp siempre que el tokenizador este en un formato compatible (requiere que el repositorio publique los archivos de vocabulario, cosa que no se ha confirmado).
+- Opciones de despliegue: biblioteca `tokenizers` de Hugging Face, `AutoTokenizer` de `transformers`, integraciones en vLLM, TGI o llama.cpp siempre que el tokenizador este en un formato compatible (requiere que el repositorio publique los archivos de vocabulario, cosa que no se ha confirmado).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Las cifras de vocabulario de los modelos comparados son valores publicos ampliam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allura-forge/Rambley-Tokenizer-v1-16k
+- Hugging Face: https://huggingface.co/allura-forge/Rambley-Tokenizer-v1-16k
 - Dataset mlfoundations/dclm-baseline-1.0-parquet: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0-parquet
 - Dataset HuggingFaceFW/finepdfs-edu: https://huggingface.co/datasets/HuggingFaceFW/finepdfs-edu
 - Dataset openbmb/Ultra-FineWeb: https://huggingface.co/datasets/openbmb/Ultra-FineWeb

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks comparativos con otros sistemas del
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hastika-task-b-xlmr-base | 278 M | 160 (entrenamiento) | Clasificación de odio kanglish, 6 clases | MIT | HuggingFace |
-| xlm-roberta-base (base) | 278 M | 512 | Representaciones multilingües; sin cabeza de clasificación | MIT | HuggingFace |
-| MuRIL (google/muril-base-cased) | 236 M | 512 | Comprensión multilingüe india (incluye code-mixed) | Apache 2.0 | HuggingFace |
-| IndicBERT (ai4bharat/indic-bert) | 33 M | 512 | Clasificación en lenguas indias | MIT | HuggingFace |
+| hastika-task-b-xlmr-base | 278 M | 160 (entrenamiento) | Clasificación de odio kanglish, 6 clases | MIT | Hugging Face |
+| xlm-roberta-base (base) | 278 M | 512 | Representaciones multilingües; sin cabeza de clasificación | MIT | Hugging Face |
+| MuRIL (google/muril-base-cased) | 236 M | 512 | Comprensión multilingüe india (incluye code-mixed) | Apache 2.0 | Hugging Face |
+| IndicBERT (ai4bharat/indic-bert) | 33 M | 512 | Clasificación en lenguas indias | MIT | Hugging Face |
 
 No se dispone de comparaciones de rendimiento publicadas entre estos modelos y el presente checkpoint sobre el dataset HASTIKA. La comparación es estructural: XLM-R base y MuRIL son los backbones habituales para code-mixed indio, e IndicBERT es una alternativa mucho más ligera pero sin cobertura nativa de escritura latina transliterada.
 
@@ -85,7 +85,7 @@ No se dispone de comparaciones de rendimiento publicadas entre estos modelos y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-xlmr-base
+- Modelo en Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-xlmr-base
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Referencia del dataset y tarea: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. Language Resources and Evaluation, 59(3):2811-2856.
 - Shared task: HASTIKA @ ICON-2026 (no se proporciona URL en la información disponible).

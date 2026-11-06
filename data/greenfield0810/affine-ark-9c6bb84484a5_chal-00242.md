@@ -58,9 +58,9 @@ No se dispone de comparativas con modelos distintos de la misma categoría. Los 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `tammyfritz/affine-5hmwhnfbix-tammy100d` (original) | 35.107.181.936 | no disponible | no disponible | HuggingFace |
-| `greenfield0810/affine-ark-a50161c2dff6` | no disponible | no disponible | no disponible | HuggingFace |
-| `greenfield0810/affine-ark-9c6bb84484a5_chal-00242` | 35.107.181.936 | no disponible | no disponible | HuggingFace |
+| `tammyfritz/affine-5hmwhnfbix-tammy100d` (original) | 35.107.181.936 | no disponible | no disponible | Hugging Face |
+| `greenfield0810/affine-ark-a50161c2dff6` | no disponible | no disponible | no disponible | Hugging Face |
+| `greenfield0810/affine-ark-9c6bb84484a5_chal-00242` | 35.107.181.936 | no disponible | no disponible | Hugging Face |
 
 Los repositorios hermanos son mirrors del mismo tablero y no representan modelos independientes.
 
@@ -74,6 +74,6 @@ Los repositorios hermanos son mirrors del mismo tablero y no representan modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/greenfield0810/affine-ark-9c6bb84484a5_chal-00242
+- Hugging Face: https://huggingface.co/greenfield0810/affine-ark-9c6bb84484a5_chal-00242
 - Original: https://huggingface.co/tammyfritz/affine-5hmwhnfbix-tammy100d
 - Repo hermano: https://huggingface.co/greenfield0810/affine-ark-a50161c2dff6

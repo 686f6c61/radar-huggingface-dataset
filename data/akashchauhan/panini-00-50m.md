@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Panini-00 50M es un modelo de traduccion y normalizacion de frases entre hindi y sanscrito en escritura devanagari, publicado por el usuario akashchauhan en HuggingFace. No es un modelo de la familia Transformers: se distribuye como un checkpoint de PyTorch personalizado (`checkpoint.pt`) acompanado de un tokenizer SentencePiece propio de 32.000 piezas, con codigo de referencia en un repositorio externo. Su objetivo no es la generacion abierta de texto, sino resolver cinco tareas concretas y delimitadas: traduccion hindi→sanscrito, sanscrito→hindi, "sanskritizacion" de hindi (sustitucion de lexico hindi por lexico sanscrito), correccion gramatical en hindi y correccion gramatical en sanscrito.
+Panini-00 50M es un modelo de traduccion y normalizacion de frases entre hindi y sanscrito en escritura devanagari, publicado por el usuario akashchauhan en Hugging Face. No es un modelo de la familia Transformers: se distribuye como un checkpoint de PyTorch personalizado (`checkpoint.pt`) acompanado de un tokenizer SentencePiece propio de 32.000 piezas, con codigo de referencia en un repositorio externo. Su objetivo no es la generacion abierta de texto, sino resolver cinco tareas concretas y delimitadas: traduccion hindi→sanscrito, sanscrito→hindi, "sanskritizacion" de hindi (sustitucion de lexico hindi por lexico sanscrito), correccion gramatical en hindi y correccion gramatical en sanscrito.
 
 El modelo es deliberadamente pequeno: 50.476.544 parametros, 13 capas, anchura 512 y una ventana de contexto de solo 1.024 tokens, incluido el prompt. Se entreno con aproximadamente 500 millones de tokens de preentrenamiento (500.009.664) y algo mas de 20 millones de tokens supervisados (20.000.534) repartidos en 312.176 ejemplos. La atencion usa atencion con consultas y cabezas clave-valor asimetricas (8 cabezas de consulta frente a 2 de clave-valor), lo que reduce el coste de la cache KV.
 
@@ -28,7 +28,7 @@ Su relevancia es doble. Por un lado, cubre un par de idiomas (hindi-sanscrito) c
 | Tokens de preentrenamiento | 500.009.664 |
 | Tokens supervisados | 20.000.534 |
 | Ejemplos supervisados | 312.176 |
-| Inferencia gestionada en HuggingFace | No (tag `inference: false`) |
+| Inferencia gestionada en Hugging Face | No (tag `inference: false`) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cache KV: con 13 capas, 2 cabezas clave-valor de dimension 64 y 1.024 tokens de contexto, la cache ocupa del orden de 3.328 elementos por token, es decir unos 6,5 KiB por token en fp16 y unos 13 KiB por token en fp32; en el peor caso (contexto completo) supone aproximadamente 6,8 MB en fp16 y 13,6 MB en fp32. Son estimaciones derivadas de las dimensiones publicadas, no datos del autor.
 - GPU recomendadas: no se requieren. La model card indica explicitamente que la CPU es suficiente. Cualquier GPU consumer (por ejemplo, una GTX 1650 o superior, o una RTX 3060) sobra para este tamano; las GPU de datacenter (A100, H100) no aportan ventaja practica por modelo.
 - Cabe en GPU consumer: si, con holgura, en cualquier GPU con mas de 1 GB de memoria, e incluso en CPU o en dispositivos embebidos si se convierte el checkpoint.
-- Opciones de despliegue: el modelo no es un modelo `transformers`, por lo que no se puede cargar directamente con vLLM, TGI, llama.cpp, Ollama ni con la Inference API de HuggingFace (el tag `inference: false` lo confirma). El unico camino documentado es el codigo de referencia del repositorio `midroid/ai-models` (rama `experiment/010-hindi-sanskrit`), que requiere Python 3.10 o superior, PyTorch, SentencePiece y PyYAML, y se ejecuta con `uv run python -m src.sample`.
+- Opciones de despliegue: el modelo no es un modelo `transformers`, por lo que no se puede cargar directamente con vLLM, TGI, llama.cpp, Ollama ni con la Inference API de Hugging Face (el tag `inference: false` lo confirma). El unico camino documentado es el codigo de referencia del repositorio `midroid/ai-models` (rama `experiment/010-hindi-sanskrit`), que requiere Python 3.10 o superior, PyTorch, SentencePiece y PyYAML, y se ejecuta con `uv run python -m src.sample`.
 - Latencia y throughput estimados: no disponible. No se publican mediciones.
 
 ## Comparativa con modelos similares
@@ -100,6 +100,6 @@ Diferencias cualitativas que si se desprenden de la informacion disponible: Pani
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/akashchauhan/panini-00-50m
+- Ficha en Hugging Face: https://huggingface.co/akashchauhan/panini-00-50m
 - Codigo de referencia e instrucciones de instalacion e inferencia: https://github.com/midroid/ai-models/tree/experiment/010-hindi-sanskrit/experiments/language/010-hindi-sanskrit-slm (rama `experiment/010-hindi-sanskrit`)
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo: los resultados obtenidos correspondian a agregadores de torrents (kat.cc, ilounge.com), a un canal de YouTube y a la ficha de una actriz en Wikipedia, por lo que se han descartado y no se listan como fuentes. No se han localizado papers, blogs tecnicos ni demos asociados a Panini-00 50M en la informacion disponible.

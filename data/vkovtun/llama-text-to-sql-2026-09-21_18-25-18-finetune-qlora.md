@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vkovtun/llama-text-to-sql-2026-09-21_18.25.18-finetune-QLORA` es un ajuste fino del modelo `meta-llama/Llama-3.2-3B-Instruct` orientado, segun el nombre del repositorio, a la generacion de consultas SQL a partir de lenguaje natural (text-to-SQL). Lo publica el usuario `vkovtun` en HuggingFace el 21 de septiembre de 2026 y se ha entrenado con SFT mediante la libreria TRL, con el sufijo "QLORA" indicando cuantizacion en 4 bits durante el proceso de ajuste. El repositorio ocupa 2,4 GB y los pesos se distribuyen en formato safetensors.
+`vkovtun/llama-text-to-sql-2026-09-21_18.25.18-finetune-QLORA` es un ajuste fino del modelo `meta-llama/Llama-3.2-3B-Instruct` orientado, segun el nombre del repositorio, a la generacion de consultas SQL a partir de lenguaje natural (text-to-SQL). Lo publica el usuario `vkovtun` en Hugging Face el 21 de septiembre de 2026 y se ha entrenado con SFT mediante la libreria TRL, con el sufijo "QLORA" indicando cuantizacion en 4 bits durante el proceso de ajuste. El repositorio ocupa 2,4 GB y los pesos se distribuyen en formato safetensors.
 
 Se trata de un artefacto de experimentacion, no de un modelo con soporte comercial: acumula 0 descargas y 0 likes, no declara licencia, no documenta el conjunto de datos de entrenamiento, no incluye hiperparametros ni resultados de evaluacion, y su model card es practicamente la plantilla autogenerada por TRL. El propio ejemplo de "Quick start" de la tarjeta es generico (una pregunta existencial sobre viajar en el tiempo), no un ejemplo de generacion SQL, lo que sugiere que el modelo fue subido sin adaptar la documentacion a la tarea real.
 
@@ -74,7 +74,7 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (3,2
 - Pesos en GGUF Q4_K_M: en torno a 2 GB, con 3-4 GB de VRAM totales; ejecutable tambien en CPU con 8-16 GB de RAM.
 - Cabe holgadamente en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, asi como en equipos Apple Silicon con 16 GB de memoria unificada o mas.
 - Para servicio de produccion con vLLM o TGI se recomienda una GPU con al menos 16 GB (RTX 4090, L4, A10G); con A100 o H100 el modelo resulta sobredimensionado en memoria, aunque util si se sirven muchas replicas en la misma GPU.
-- Opciones de despliegue: transformers con bitsandbytes para carga en 4/8 bits; vLLM o TGI para servido en precision completa o con pesos cuantizados AWQ/GPTQ; llama.cpp, Ollama y LM Studio a partir de una conversion a GGUF; el campo `endpoints_compatible` del repositorio indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: transformers con bitsandbytes para carga en 4/8 bits; vLLM o TGI para servido en precision completa o con pesos cuantizados AWQ/GPTQ; llama.cpp, Ollama y LM Studio a partir de una conversion a GGUF; el campo `endpoints_compatible` del repositorio indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni datos de la ejecucion de W&B que las aporten.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La comparativa es estructural, ya que no hay datos de rendimiento de este ajuste
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vkovtun/llama-text-to-sql-...-QLORA | 3,21 B (base) | 128.000 tokens (heredado) | Text-to-SQL (ajuste QLoRA no evaluado) | No disponible | HuggingFace, 0 descargas |
+| vkovtun/llama-text-to-sql-...-QLORA | 3,21 B (base) | 128.000 tokens (heredado) | Text-to-SQL (ajuste QLoRA no evaluado) | No disponible | Hugging Face, 0 descargas |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Instrucciones generales | Llama 3.2 Community License | Ampliamente disponible |
 | Qwen/Qwen2.5-Coder-3B-Instruct | 3,09 B | 32.768 tokens nativos | Codigo y SQL | Apache 2.0 | Ampliamente disponible |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Instrucciones generales | Apache 2.0 | Ampliamente disponible |
@@ -106,7 +106,7 @@ Frente al modelo base, el unico valor anadido de este checkpoint seria la especi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-21_18.25.18-finetune-QLORA
+- Repositorio Hugging Face: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-21_18.25.18-finetune-QLORA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/llama-text-to-sql/runs/ughhr1zb
 - Libreria TRL (usada para el SFT): https://github.com/huggingface/trl

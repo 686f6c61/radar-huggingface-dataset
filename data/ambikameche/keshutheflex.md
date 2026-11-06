@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KeshuTheFlex es un repositorio publicado en HuggingFace por el usuario ambikameche bajo licencia Apache 2.0. En el momento de la consulta, la model card no contiene ninguna documentacion tecnica: el unico contenido del README es el bloque de metadatos con la licencia. No hay pipeline declarado, no hay idiomas etiquetados, no hay descripcion de arquitectura, tamano, datos de entrenamiento ni casos de uso previstos.
+KeshuTheFlex es un repositorio publicado en Hugging Face por el usuario ambikameche bajo licencia Apache 2.0. En el momento de la consulta, la model card no contiene ninguna documentacion tecnica: el unico contenido del README es el bloque de metadatos con la licencia. No hay pipeline declarado, no hay idiomas etiquetados, no hay descripcion de arquitectura, tamano, datos de entrenamiento ni casos de uso previstos.
 
 El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-10-06T16:22:14Z), lo que indica que se subio sin iteraciones posteriores ni mantenimiento. No existe evidencia publica de que el artefacto contenga pesos de un modelo entrenado, un adaptador, un dataset o cualquier otro tipo de recurso.
 
@@ -86,6 +86,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ambikameche/KeshuTheFlex
+- Repositorio en Hugging Face: https://huggingface.co/ambikameche/KeshuTheFlex
 
 No se han encontrado en la busqueda web enlaces relevantes asociados a este modelo. Los resultados obtenidos (directorios genericos de modelos, un detector de imagenes generadas por IA y un canal de YouTube) no guardan relacion con el repositorio y no se incluyen como fuentes. No hay papers, blogs, repositorios de codigo ni demos publicadas.

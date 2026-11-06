@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/SGLabs/Qwen3.8-27B-Pym-IQ2_XXS-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/SGLabs/Qwen3.8-27B-Pym-IQ2_XXS-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

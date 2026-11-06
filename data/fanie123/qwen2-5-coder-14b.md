@@ -82,7 +82,7 @@ Nota: las comparaciones de rendimiento son cualitativas y basadas en el tamano y
 
 ## Enlaces
 
-- Repositorio en HuggingFace (este): https://huggingface.co/fanie123/Qwen2.5-Coder-14B
+- Repositorio en Hugging Face (este): https://huggingface.co/fanie123/Qwen2.5-Coder-14B
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B
 - Version Instruct del modelo: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Blog oficial de Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/

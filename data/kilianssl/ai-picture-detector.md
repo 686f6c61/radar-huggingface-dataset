@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Tarea | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| kilianssl/ai-picture-detector | SigLIP2-so400m + DINOv2-L con LoRA + MLP | Detección de imagen generada por IA | MIT | ONNX int8 | HuggingFace |
-| Bombek1/ai-image-detector-siglip-dinov2 | SigLIP2-so400m + DINOv2-L con LoRA + MLP | Detección de imagen generada por IA | MIT | PyTorch (modelo base) | HuggingFace |
+| kilianssl/ai-picture-detector | SigLIP2-so400m + DINOv2-L con LoRA + MLP | Detección de imagen generada por IA | MIT | ONNX int8 | Hugging Face |
+| Bombek1/ai-image-detector-siglip-dinov2 | SigLIP2-so400m + DINOv2-L con LoRA + MLP | Detección de imagen generada por IA | MIT | PyTorch (modelo base) | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación más directa es con su propio modelo base, del que esta exportación hereda los pesos: la diferencia es el formato (ONNX int8 frente a PyTorch) y la división en tres grafos, no el comportamiento del clasificador. No se dispone en la información proporcionada de otros detectores de imágenes sintéticas con los que establecer una comparación cuantitativa.
@@ -95,6 +95,6 @@ La comparación más directa es con su propio modelo base, del que esta exportac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kilianssl/ai-picture-detector
+- Modelo en Hugging Face: https://huggingface.co/kilianssl/ai-picture-detector
 - Modelo base: https://huggingface.co/Bombek1/ai-image-detector-siglip-dinov2
 - Sitio del autor de la aplicación: https://taggalicio.us

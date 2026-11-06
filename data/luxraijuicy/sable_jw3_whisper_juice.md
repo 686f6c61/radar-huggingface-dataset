@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sable_JW3_Whisper_JUICE es un repositorio publicado en HuggingFace por el usuario LuxrAIjuicy bajo licencia Apache 2.0. La informacion disponible es minima: no hay model card con contenido tecnico (el README se limita a la declaracion de licencia), no se declara pipeline, no se declaran idiomas, no hay resultados de benchmarks y el repositorio acumula 0 descargas y 0 likes desde su creacion el 11 de septiembre de 2026.
+Sable_JW3_Whisper_JUICE es un repositorio publicado en Hugging Face por el usuario LuxrAIjuicy bajo licencia Apache 2.0. La informacion disponible es minima: no hay model card con contenido tecnico (el README se limita a la declaracion de licencia), no se declara pipeline, no se declaran idiomas, no hay resultados de benchmarks y el repositorio acumula 0 descargas y 0 likes desde su creacion el 11 de septiembre de 2026.
 
 El unico dato cuantitativo objetivo es el tamano del repositorio, 0,1 GB, compatible con un modelo de parametros reducidos (del orden de decenas o pocos cientos de millones, dependiendo de la precision) o con un adaptador de ajuste fino (LoRA u similar) sobre una base externa. El nombre del repositorio incluye el termino "Whisper", lo que sugiere un posible uso o derivacion de la familia Whisper de reconocimiento automatico del habla (ASR), pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion del autor.
 
@@ -92,7 +92,7 @@ Estos datos de terceros no se han verificado en la busqueda realizada para esta 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LuxrAIjuicy/Sable_JW3_Whisper_JUICE
+- Repositorio en Hugging Face: https://huggingface.co/LuxrAIjuicy/Sable_JW3_Whisper_JUICE
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -76,10 +76,10 @@ Notas metodologicas declaradas por el autor: xLAM ETC es precision exacta de lla
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT 8.400 + GRPO 1.320) | ~0,5 B | No disponible | xLAM ETC 79,32%; FNA 96,76%; BFCL FC 56,14%; MMLU 38,15% | No disponible | Publico en HuggingFace, 0 descargas |
-| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-lora (solo SFT) | ~0,5 B | No disponible | xLAM ETC 71,49%; FNA 86,88%; BFCL FC 46,24%; MMLU 37,91% | No disponible | Publico en HuggingFace |
-| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo2640-lora | ~0,5 B | No disponible | No disponible en la informacion proporcionada | No disponible | Publico en HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,5 B | No disponible en la informacion proporcionada | No disponible para tool calling en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| Este adaptador (SFT 8.400 + GRPO 1.320) | ~0,5 B | No disponible | xLAM ETC 79,32%; FNA 96,76%; BFCL FC 56,14%; MMLU 38,15% | No disponible | Publico en Hugging Face, 0 descargas |
+| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-lora (solo SFT) | ~0,5 B | No disponible | xLAM ETC 71,49%; FNA 86,88%; BFCL FC 46,24%; MMLU 37,91% | No disponible | Publico en Hugging Face |
+| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo2640-lora | ~0,5 B | No disponible | No disponible en la informacion proporcionada | No disponible | Publico en Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,5 B | No disponible en la informacion proporcionada | No disponible para tool calling en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 La comparacion directa solo es posible frente a los checkpoints de la misma familia publicados por el autor; no se dispone de datos de benchmarks de modelos de terceros del mismo tamano en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ La comparacion directa solo es posible frente a los checkpoints de la misma fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo1320-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo1320-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Adaptador SFT previo (checkpoint inicial de GRPO): https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-lora

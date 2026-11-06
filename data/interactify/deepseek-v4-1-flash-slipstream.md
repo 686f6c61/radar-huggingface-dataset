@@ -94,11 +94,11 @@ No se han identificado en la informacion disponible otros modelos comparables de
 - Sin datos de benchmarks academicos: no hay resultados de MMLU, HumanEval, GSM8K ni similares, ni comparaciones con otros modelos, lo que dificulta evaluar su calidad frente a alternativas.
 - Idiomas no declarados: la model card no especifica la cobertura linguistica; se desconoce el rendimiento en castellano.
 - Riesgo de alucinacion y sesgos: no evaluados en la informacion disponible; al ser una redistribucion del modelo base, hereda los sesgos y limitaciones de este, que no se documentan.
-- Madurez: cero descargas y cero interacciones en HuggingFace, publicacion muy reciente (31 de octubre de 2026) y un unico autor; no hay evidencia de uso en produccion.
+- Madurez: cero descargas y cero interacciones en Hugging Face, publicacion muy reciente (31 de octubre de 2026) y un unico autor; no hay evidencia de uso en produccion.
 - Licencia MIT: permite uso comercial, pero conviene revisar `LICENSE` y `NOTICE` del repositorio por si el modelo base impone condiciones adicionales no reflejadas en la model card.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Interactify/DeepSeek-V4.1-Flash-Slipstream
+- Repositorio Hugging Face: https://huggingface.co/Interactify/DeepSeek-V4.1-Flash-Slipstream
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Motor Slipstream: https://github.com/Interactify/slipstream

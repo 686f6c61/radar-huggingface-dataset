@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniSeek-V1 | ~186,93 M | 256 | MoE decoder-only | MIT | HuggingFace (safetensors) |
-| MiniSeek-M0.1 | no disponible | no disponible | MoELM (SFT) | no disponible | HuggingFace |
+| MiniSeek-V1 | ~186,93 M | 256 | MoE decoder-only | MIT | Hugging Face (safetensors) |
+| MiniSeek-M0.1 | no disponible | no disponible | MoELM (SFT) | no disponible | Hugging Face |
 | MiniMind (tokenizador de referencia) | no disponible | no disponible | no disponible | no disponible | Referenciado por el autor |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros y disponibilidad; no se conocen alternativas de la misma categoria con benchmarks publicados en esta ficha.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wyf-yfw/MiniSeek-V1
+- Modelo en Hugging Face: https://huggingface.co/wyf-yfw/MiniSeek-V1
 - Modelo base: https://huggingface.co/wyf-yfw/MiniSeek-V1-base
 - Repositorio de codigo: https://github.com/wyf-yfw/miniseek
 - Modelo previo de la serie: https://huggingface.co/wyf-yfw/MiniSeek-M0.1

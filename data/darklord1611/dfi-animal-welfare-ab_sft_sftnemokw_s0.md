@@ -85,6 +85,6 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros del mo
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_sftnemokw_s0
-- HuggingFace (modelo base): https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
+- Hugging Face (adaptador): https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_sftnemokw_s0
+- Hugging Face (modelo base): https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `assafvayner/translatte-ocr-ncnn` | OCR PP-OCRv5 mobile en NCNN | No disponible | No aplica (HxW dinamico en detector) | Apache-2.0 | HuggingFace, 0 descargas |
-| PaddleOCR PP-OCRv5 mobile (ONNX) | OCR original en ONNX | No disponible en la informacion | No aplica | Apache-2.0 | HuggingFace (PaddlePaddle) |
+| `assafvayner/translatte-ocr-ncnn` | OCR PP-OCRv5 mobile en NCNN | No disponible | No aplica (HxW dinamico en detector) | Apache-2.0 | Hugging Face, 0 descargas |
+| PaddleOCR PP-OCRv5 mobile (ONNX) | OCR original en ONNX | No disponible en la informacion | No aplica | Apache-2.0 | Hugging Face (PaddlePaddle) |
 | Tesseract OCR | OCR clasico con LSTM | No disponible en la informacion | No aplica | Apache-2.0 | Repositorio ampliamente desplegado |
 | EasyOCR | OCR basado en detector + reconocedor deep learning | No disponible en la informacion | No aplica | Apache-2.0 | Repositorio publico |
 
@@ -87,7 +87,7 @@ La comparacion relevante es frente a los ONNX originales de PaddleOCR: misma lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/assafvayner/translatte-ocr-ncnn
+- Modelo en Hugging Face: https://huggingface.co/assafvayner/translatte-ocr-ncnn
 - PaddleOCR (repositorio oficial): https://github.com/PaddlePaddle/PaddleOCR
 - NCNN (repositorio oficial): https://github.com/Tencent/ncnn
 - Detector de origen: https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det_onnx

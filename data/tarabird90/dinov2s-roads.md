@@ -96,7 +96,7 @@ La unica comparacion con datos verificables es con el backbone DINOv2-S del que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarabird90/dinov2s-roads
+- Modelo en Hugging Face: https://huggingface.co/tarabird90/dinov2s-roads
 - Codigo, pipeline de entrenamiento y post-procesado: https://github.com/tlerias/fair-roads
 - Plataforma fAIr de HOT: https://github.com/hotosm/fAIr
 - Backbone de referencia en timm: `vit_small_patch14_reg4_dinov2.lvd142m` (sin enlace directo proporcionado en la informacion disponible)

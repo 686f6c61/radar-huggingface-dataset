@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0 es un checkpoint alojado en HuggingFace por el usuario PessimisticDPO. Por el identificador se deduce que se trata de un ajuste supervisado (SFT) sobre una base Mistral 7B al que despues se le aplico alguna variante de optimizacion por preferencias (el prefijo «PessimisticDPO» apunta a una formulacion «pesimista» de DPO), con hiperparametros codificados en el propio nombre: a0.1, b0.1, L4, overlap_subsample y l0. Ninguno de estos extremos esta confirmado: la model card es la plantilla autogenerada por la libreria transformers y no contiene ni un solo campo cumplimentado.
+El repositorio PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0 es un checkpoint alojado en Hugging Face por el usuario PessimisticDPO. Por el identificador se deduce que se trata de un ajuste supervisado (SFT) sobre una base Mistral 7B al que despues se le aplico alguna variante de optimizacion por preferencias (el prefijo «PessimisticDPO» apunta a una formulacion «pesimista» de DPO), con hiperparametros codificados en el propio nombre: a0.1, b0.1, L4, overlap_subsample y l0. Ninguno de estos extremos esta confirmado: la model card es la plantilla autogenerada por la libreria transformers y no contiene ni un solo campo cumplimentado.
 
 La ficha no aporta informacion sobre datos de entrenamiento, numero de tokens, regimen de precision, licencia, idiomas ni evaluaciones. El unico dato cuantitativo de los metadatos es el tamano del repositorio, 0,2 GB, muy inferior a los aproximadamente 14 GB que ocuparian los pesos completos de un modelo denso de 7.000 millones de parametros en fp16 o bf16, lo que sugiere que el repositorio no contiene el checkpoint completo, o bien contiene pesos parciales, un adaptador o un subconjunto de tensores.
 
@@ -25,7 +25,7 @@ El modelo acumula 0 descargas y 0 likes, y su fecha de creacion figura como el 1
 
 No hay informacion verificable sobre la arquitectura. El identificador sugiere una cadena de dos etapas: primero un SFT partiendo de un modelo de la familia Mistral 7B (la etiqueta interna del autor, «mistral-7b-sft-beta», coincide con el nombre de un SFT publico conocido sobre Mistral-7B-v0.1) y despues una etapa de optimizacion por preferencias etiquetada como DPO pesimista. Los sufijos a0.1, b0.1, L4, overlap_subsample y l0 parecen corresponder a hiperparametros del algoritmo (coeficientes, numero de capas o capas objetivo, estrategia de submuestreo con solapamiento y nivel de anidamiento), pero el autor no los define en ningun sitio del repositorio.
 
-Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO, KTO u otra variante, ni la precision usada en el ajuste. El tag arxiv:1910.09700 que aparece en los metadatos corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla autogenerada de la model card, y no a un articulo sobre este modelo. El tag endpoints_compatible indica unicamente que el repositorio sigue la estructura esperada por los endpoints de inferencia de HuggingFace.
+Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO, KTO u otra variante, ni la precision usada en el ajuste. El tag arxiv:1910.09700 que aparece en los metadatos corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla autogenerada de la model card, y no a un articulo sobre este modelo. El tag endpoints_compatible indica unicamente que el repositorio sigue la estructura esperada por los endpoints de inferencia de Hugging Face.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ La comparativa se establece con modelos de la misma categoria (densos de 7-8B or
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0
 - Model card del autor: incluida en el repositorio anterior (plantilla autogenerada, sin contenido propio)
 - Paper citado en los tags (corresponde a la estimacion de emisiones de carbono, no al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada por el paper: https://mlco2.github.io/impact

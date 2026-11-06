@@ -83,11 +83,11 @@ El modelo de Mirai es directamente comparable a la cuantizacion UD-Q8_K_XL de Un
 - El modelo base Qwen3.6-27B es un modelo de vision-language; las capacidades de vision requieren el codificador incluido, pero no se detallan los formatos de imagen soportados.
 - No se proporcionan datos sobre sesgos, riesgos de alucinacion o limitaciones idiomaticas especificas en la informacion disponible.
 - La licencia Apache-2.0 permite uso comercial, pero es recomendable revisar los terminos del modelo base Qwen3.6-27B para confirmar restricciones adicionales.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un lanzamiento reciente con poca validacion comunitaria.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un lanzamiento reciente con poca validacion comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trymirai/Qwen3.6-27B-L
+- Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.6-27B-L
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Guia de uso de uzu: https://github.com/trymirai/uzu/blob/how-to/docs/how-to-run-uzu.md
 - Blog de Mirai sobre cuantizacion: https://trymirai.com/blog/quantization

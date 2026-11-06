@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agurung/ncp-groot-30v12u-b16` es un modelo publicado en HuggingFace por el usuario `agurung`, con un total de 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) según los pesos en formato safetensors del repositorio, que ocupa 8,1 GB. La etiqueta de arquitectura declarada es `qwen3`, lo que apunta a que se trata de un derivado o ajuste de la familia Qwen3, aunque el autor no ha publicado ninguna confirmación al respecto.
+`agurung/ncp-groot-30v12u-b16` es un modelo publicado en Hugging Face por el usuario `agurung`, con un total de 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) según los pesos en formato safetensors del repositorio, que ocupa 8,1 GB. La etiqueta de arquitectura declarada es `qwen3`, lo que apunta a que se trata de un derivado o ajuste de la familia Qwen3, aunque el autor no ha publicado ninguna confirmación al respecto.
 
 El modelo no dispone de model card: no hay pipeline declarado, ni licencia, ni idiomas soportados, ni descripción de datos de entrenamiento, contexto o capacidades. El repositorio acumula 9 descargas y 0 likes, con fecha de creación y última actualización del 18 de septiembre de 2026, lo que lo sitúa como un experimento de publicación reciente y sin validación comunitaria.
 
@@ -66,10 +66,10 @@ Los valores de referencia de la columna de alternativas proceden de las fichas o
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agurung/ncp-groot-30v12u-b16 | 4,02B | no disponible | no disponible | HuggingFace, sin model card |
-| Qwen3-4B | 4,0B (referencia oficial) | 32.768 nativo, ampliable con YaRN (referencia oficial) | Apache 2.0 (referencia oficial) | HuggingFace, documentación completa |
-| Llama-3.2-3B | 3,2B (referencia oficial) | 128.000 (referencia oficial) | Llama 3.2 Community License (referencia oficial) | HuggingFace, con gated access |
-| Gemma-3-4B | 4,0B (referencia oficial) | 128.000 (referencia oficial) | Gemma Terms of Use (referencia oficial) | HuggingFace, con gated access |
+| agurung/ncp-groot-30v12u-b16 | 4,02B | no disponible | no disponible | Hugging Face, sin model card |
+| Qwen3-4B | 4,0B (referencia oficial) | 32.768 nativo, ampliable con YaRN (referencia oficial) | Apache 2.0 (referencia oficial) | Hugging Face, documentación completa |
+| Llama-3.2-3B | 3,2B (referencia oficial) | 128.000 (referencia oficial) | Llama 3.2 Community License (referencia oficial) | Hugging Face, con gated access |
+| Gemma-3-4B | 4,0B (referencia oficial) | 128.000 (referencia oficial) | Gemma Terms of Use (referencia oficial) | Hugging Face, con gated access |
 
 Comparativa de rendimiento: no disponible, ya que este modelo no publica resultados de benchmarks.
 
@@ -86,5 +86,5 @@ Comparativa de rendimiento: no disponible, ya que este modelo no publica resulta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/ncp-groot-30v12u-b16
+- Modelo en Hugging Face: https://huggingface.co/agurung/ncp-groot-30v12u-b16
 - Paper, blog, repositorio o demo: no disponible; la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo.

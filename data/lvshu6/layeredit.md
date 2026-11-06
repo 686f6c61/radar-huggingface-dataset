@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LayerEdit es un repositorio publicado en HuggingFace por el usuario Lvshu6 bajo licencia Apache 2.0. El repositorio tiene un tamano de 12,6 GB, lo que sugiere la presencia de pesos de un modelo de gran tamano o de multiples artefactos (por ejemplo, varios checkpoints o ficheros de pesos en precision alta). Sin embargo, la model card asociada unicamente contiene la declaracion de licencia, sin ningun tipo de documentacion tecnica, descripcion del modelo, arquitectura ni instrucciones de uso.
+LayerEdit es un repositorio publicado en Hugging Face por el usuario Lvshu6 bajo licencia Apache 2.0. El repositorio tiene un tamano de 12,6 GB, lo que sugiere la presencia de pesos de un modelo de gran tamano o de multiples artefactos (por ejemplo, varios checkpoints o ficheros de pesos en precision alta). Sin embargo, la model card asociada unicamente contiene la declaracion de licencia, sin ningun tipo de documentacion tecnica, descripcion del modelo, arquitectura ni instrucciones de uso.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo. El nombre "LayerEdit" podria sugerir una herramienta o modelo orientado a la edicion de capas (layer editing) en redes neuronales, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -62,5 +62,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lvshu6/LayerEdit
+- Hugging Face: https://huggingface.co/Lvshu6/LayerEdit
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

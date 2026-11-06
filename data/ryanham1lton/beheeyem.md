@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beheeyem es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia en el frontmatter YAML, sin texto explicativo sobre arquitectura, entrenamiento, capacidades ni uso previsto. El repositorio ocupa 0,1 GB, un tamano compatible con pesos de un modelo de escala reducida o con un conjunto de artefactos auxiliares (tokenizador, configuracion y pesos parciales), pero no permite inferir con precision el numero de parametros.
+Beheeyem es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia en el frontmatter YAML, sin texto explicativo sobre arquitectura, entrenamiento, capacidades ni uso previsto. El repositorio ocupa 0,1 GB, un tamano compatible con pesos de un modelo de escala reducida o con un conjunto de artefactos auxiliares (tokenizador, configuracion y pesos parciales), pero no permite inferir con precision el numero de parametros.
 
 No se dispone de informacion sobre el desarrollador, la motivacion del modelo, el problema que resuelve ni su relevancia dentro del ecosistema open source. El identificador "Beheeyem" coincide con el nombre de un Pokemon, lo que sugiere un posible proyecto personal, experimental o de caracter ludico, aunque esto es una especulacion y no un dato confirmado. El modelo no registra descargas ni likes en el momento de la consulta.
 
@@ -42,8 +42,8 @@ Cualquier afirmacion sobre capacidades requeriria probar el modelo directamente 
 
 No es posible recomendar casos de uso concretos sin informacion sobre arquitectura, tamano, contexto y capacidades. Los siguientes escenarios son genericos y quedan condicionados a que una evaluacion directa confirme que el modelo los soporta:
 
-- Experimentacion educativa: si el modelo es de escala reducida, podria servir para estudiar el ciclo completo de publicacion de un modelo en HuggingFace (tokenizador, configuracion, pesos y licencia).
-- Pruebas de integracion en pipelines de HuggingFace Transformers: valido solo si los archivos del repositorio son compatibles con `AutoModel` y `AutoTokenizer`, algo no confirmado.
+- Experimentacion educativa: si el modelo es de escala reducida, podria servir para estudiar el ciclo completo de publicacion de un modelo en Hugging Face (tokenizador, configuracion, pesos y licencia).
+- Pruebas de integracion en pipelines de Hugging Face Transformers: valido solo si los archivos del repositorio son compatibles con `AutoModel` y `AutoTokenizer`, algo no confirmado.
 - Fines ludicos o demostrativos: dado el nombre y la ausencia de documentacion, el uso mas plausible es experimental.
 - Evaluacion de licencias abiertas: el modelo puede utilizarse como caso de estudio de publicacion bajo CC-BY-4.0.
 - Benchmarking comparativo interno: solo si se verifica que los pesos son funcionales.
@@ -87,6 +87,6 @@ No disponible. Sin conocer la arquitectura, el tamano ni las capacidades del mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Beheeyem
+- Hugging Face: https://huggingface.co/Ryanham1lton/Beheeyem
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo ni demos) en la informacion disponible.

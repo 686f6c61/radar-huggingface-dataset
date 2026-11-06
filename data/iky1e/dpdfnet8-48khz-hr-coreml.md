@@ -84,7 +84,7 @@ DPDFNet-8 es la variante de mayor calidad de la familia DPDFNet, con más bloque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iky1e/DPDFNet8-48kHz-HR-CoreML
+- Modelo en Hugging Face: https://huggingface.co/iky1e/DPDFNet8-48kHz-HR-CoreML
 - Repositorio oficial de CEVA: https://github.com/ceva-ip/DPDFNet
 - Paper DPDFNet: https://arxiv.org/abs/2512.16420
 - Runtime Swift y conversiones: https://github.com/kylehowells/DeepFilterNet-mlx

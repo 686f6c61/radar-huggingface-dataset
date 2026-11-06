@@ -83,7 +83,7 @@ No se han publicado comparaciones con otras políticas en la información dispon
 
 | Modelo | Entorno | Algoritmo | Parámetros | Contexto / observación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v15-humanoid-ppo-best | Humanoid-v5 | PPO | no disponible (MLP oculto 256) | 348 dims | no disponible | HuggingFace, 0 descargas |
+| connectailab-rl-lucasbrain-v15-humanoid-ppo-best | Humanoid-v5 | PPO | no disponible (MLP oculto 256) | 348 dims | no disponible | Hugging Face, 0 descargas |
 | Políticas de referencia Stable-Baselines3 (PPO Humanoid-v5) | Humanoid-v5 | PPO | MLP 256×256 típicamente | 348 dims | MIT (SB3) | GitHub, ampliamente usadas |
 | CleanRL PPO continuo | MuJoCo continuo (p. ej. HalfCheetah) | PPO | MLP configurable | variable | MIT | GitHub |
 | Políticas del paper original de PPO (Schulman et al.) | MuJoCo (incluido Humanoid) | PPO | MLP | variable | según repositorio original | Referencia académica |
@@ -103,7 +103,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15-humanoid-ppo-best
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15-humanoid-ppo-best
 - Entorno Gymnasium Humanoid-v5: https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo: https://mujoco.org/
 - Paper de PPO (Schulman et al., 2017): https://arxiv.org/abs/1707.06347

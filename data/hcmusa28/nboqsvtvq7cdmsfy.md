@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `hcmusa28/NBoqsVTvQ7cDMsFY` es un repositorio alojado en HuggingFace por el usuario `hcmusa28`. Se trata de un modelo del que no se dispone de información técnica pública: la ficha del repositorio no declara arquitectura, número de parámetros, licencia, idiomas soportados ni pipeline de uso. El tamaño del repositorio es de 90,5 GB, lo que sugiere que podría contener pesos de un modelo de gran tamaño, pero no se puede confirmar su naturaleza sin acceso a los archivos o a una ficha técnica completa.
+El modelo identificado como `hcmusa28/NBoqsVTvQ7cDMsFY` es un repositorio alojado en Hugging Face por el usuario `hcmusa28`. Se trata de un modelo del que no se dispone de información técnica pública: la ficha del repositorio no declara arquitectura, número de parámetros, licencia, idiomas soportados ni pipeline de uso. El tamaño del repositorio es de 90,5 GB, lo que sugiere que podría contener pesos de un modelo de gran tamaño, pero no se puede confirmar su naturaleza sin acceso a los archivos o a una ficha técnica completa.
 
 La relevancia de este modelo es actualmente indeterminada. Al carecer de documentación, benchmarks publicados o una licencia clara, no es recomendable su uso en entornos de producción o investigación sin una evaluación previa exhaustiva. La falta de metadatos esenciales (arquitectura, parámetros, licencia) impide clasificarlo dentro de cualquier categoría conocida de modelos de IA.
 
@@ -56,4 +56,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni el rendimiento del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa28/NBoqsVTvQ7cDMsFY
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa28/NBoqsVTvQ7cDMsFY

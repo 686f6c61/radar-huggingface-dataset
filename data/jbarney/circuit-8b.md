@@ -97,8 +97,8 @@ Validación interna durante el entrenamiento: mejor checkpoint en el paso 2.800 
 
 | Modelo | Parametros | Contexto / opciones | Rendimiento (MultiNLI / SMS / toxicidad / CLINC) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| circuit-8b | 8B base + 43,7M LoRA + 4,2M cabeza | 1.024 tokens de entrenamiento; sin limite de opciones documentado | 86% / 0,08 - 98% / 0,02 - 93% / 0,14 - 95% / 0,03 | Apache 2.0 (adaptador y cabeza) | Pesos abiertos en HuggingFace (0,2 GB) |
-| circuit-1.7b | 1,7B (familia) | no disponible; sin limite de opciones documentado | 81% / 0,09 - 98% / 0,02 - 90% / 0,16 - 86% / 0,06 | no disponible | Pesos abiertos en HuggingFace |
+| circuit-8b | 8B base + 43,7M LoRA + 4,2M cabeza | 1.024 tokens de entrenamiento; sin limite de opciones documentado | 86% / 0,08 - 98% / 0,02 - 93% / 0,14 - 95% / 0,03 | Apache 2.0 (adaptador y cabeza) | Pesos abiertos en Hugging Face (0,2 GB) |
+| circuit-1.7b | 1,7B (familia) | no disponible; sin limite de opciones documentado | 81% / 0,09 - 98% / 0,02 - 90% / 0,16 - 86% / 0,06 | no disponible | Pesos abiertos en Hugging Face |
 | Jev (TypeSafe) | no disponible | no disponible; sin limite de opciones documentado | 88% / 0,04 - 96% / 0,05 - 82% / 0,06 - 90% / 0,05 | propietaria (servicio API) | Solo API; sin pesos |
 | Bespoke-Nimble-9B | 9B (familia) | limite de 26 opciones | 84% / 0,09 - 91% / 0,06 - 86% / 0,08 - no soporta CLINC 151 | no disponible | no disponible |
 | kev-0.5b | 0,5B (familia) | no disponible | 46% / 0,28 - 50% / 0,30 - 62% / 0,16 - 62% / 0,17 | no disponible | no disponible |
@@ -122,7 +122,7 @@ Frente a circuit-1.7b, la versión de 8B mejora la exactitud en MultiNLI (+5 pun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbarney/circuit-8b
+- Modelo en Hugging Face: https://huggingface.co/jbarney/circuit-8b
 - Modelo pequeno de la familia: https://huggingface.co/jbarney/circuit-1.7b
 - Repositorio de codigo, datos y evaluacion: https://github.com/Barneyjm/circuit
 - decision-circuits: https://decisioncircuits.com

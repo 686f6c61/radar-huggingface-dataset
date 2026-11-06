@@ -98,6 +98,6 @@ Los datos de los modelos comparables proceden de sus fichas públicas y no se ha
 
 ## Enlaces
 
-- [HuggingFace: Snake5080/dreamshaper-lcm-cpu-plug-and-play](https://huggingface.co/Snake5080/dreamshaper-lcm-cpu-plug-and-play)
+- [Hugging Face: Snake5080/dreamshaper-lcm-cpu-plug-and-play](https://huggingface.co/Snake5080/dreamshaper-lcm-cpu-plug-and-play)
 - [Modelo base: Lykon/dreamshaper-8-lcm](https://huggingface.co/Lykon/dreamshaper-8-lcm)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

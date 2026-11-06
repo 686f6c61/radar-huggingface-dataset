@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KuanP/counts_flash_hog_4gpu_a6_long_u2_lowilr_top75
+- Hugging Face: https://huggingface.co/KuanP/counts_flash_hog_4gpu_a6_long_u2_lowilr_top75
 - Perfil del autor: https://huggingface.co/KuanP
 - Datasets del autor: https://huggingface.co/KuanP/datasets
 - Flash Hog (PyPI): https://pypi.org/project/flash-hog/

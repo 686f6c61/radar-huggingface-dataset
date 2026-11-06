@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K2-Horizon-0.9B es un modelo de lenguaje denso de aproximadamente 1.078 millones de parámetros, desarrollado por IFM (Instituto for Foundation Models, en su rama MBZUAI-IFM) y publicado en HuggingFace como `IFM/K2-Horizon-0.9B`. Esta ficha describe la versión cuantizada en formato GGUF creada por `darioooooo0o`, que está pensada para ejecutarse con llama.cpp usando la rama especial `k2-official`. El modelo puede usarse para generación de texto, razonamiento, tool calling y tareas de agente, y está optimizado para experimentación local y despliegue en hardware de consumo.
+K2-Horizon-0.9B es un modelo de lenguaje denso de aproximadamente 1.078 millones de parámetros, desarrollado por IFM (Instituto for Foundation Models, en su rama MBZUAI-IFM) y publicado en Hugging Face como `IFM/K2-Horizon-0.9B`. Esta ficha describe la versión cuantizada en formato GGUF creada por `darioooooo0o`, que está pensada para ejecutarse con llama.cpp usando la rama especial `k2-official`. El modelo puede usarse para generación de texto, razonamiento, tool calling y tareas de agente, y está optimizado para experimentación local y despliegue en hardware de consumo.
 
 Según el material publicado por IFM, el modelo obtiene una puntuación superior a 48 en AIME 2026, lo que indica una capacidad de razonamiento matemático notable para un modelo de este tamaño. La arquitectura `k2-horizon` no está soportada en llama.cpp estándar, por lo que requiere una compilación específica de la rama oficial de MBZUAI-IFM. Esto lo convierte en una opción interesante para investigación y prototipado, pero limita su integración en ecosistemas convencionales.
 
@@ -73,8 +73,8 @@ No disponible. La información proporcionada no incluye benchmarks ni comparacio
 
 ## Enlaces
 
-- HuggingFace de la cuantizacion: https://huggingface.co/darioooooo0o/K2-Horizon-0.9B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/IFM/K2-Horizon-0.9B
+- Hugging Face de la cuantizacion: https://huggingface.co/darioooooo0o/K2-Horizon-0.9B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/IFM/K2-Horizon-0.9B
 - Blog de IFM: https://ifm.ai/blog/k2
 - Receta de vLLM para el modelo base: https://recipes.vllm.ai/IFM/K2-Horizon-0.9B
 - Repositorio de llama.cpp de MBZUAI-IFM: https://github.com/MBZUAI-IFM/llama.cpp

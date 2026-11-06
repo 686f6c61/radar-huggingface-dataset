@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
 - Modelo base del afinado: https://huggingface.co/llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic
 - Nodo de generación standalone: https://github.com/ethanfel/ComfyUI-H3-Qwen3VL-TextGen

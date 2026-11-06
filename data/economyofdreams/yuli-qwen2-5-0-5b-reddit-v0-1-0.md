@@ -66,7 +66,7 @@ Los datos de la columna de Yuli proceden de su model card; los del resto de mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Yuli-Qwen2.5-0.5B-Reddit-v0.1.0 | 0,49 B | no disponible (base: 32.768 tokens) | apache-2.0 | GGUF en HuggingFace; 0 descargas |
+| Yuli-Qwen2.5-0.5B-Reddit-v0.1.0 | 0,49 B | no disponible (base: 32.768 tokens) | apache-2.0 | GGUF en Hugging Face; 0 descargas |
 | Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | apache-2.0 | safetensors y multiples cuantizaciones; ampliamente desplegado |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | apache-2.0 | safetensors y GGUF; muy extendido |
 | Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License (restricciones para grandes despliegues) | pesos oficiales y GGUF |
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/economyofdreams/Yuli-Qwen2.5-0.5B-Reddit-v0.1.0
+- Modelo en Hugging Face: https://huggingface.co/economyofdreams/Yuli-Qwen2.5-0.5B-Reddit-v0.1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Version 1.5B del modelo base (referencia comparativa): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Unsloth (herramienta de ajuste mencionada en las etiquetas): https://github.com/unslothai/unsloth

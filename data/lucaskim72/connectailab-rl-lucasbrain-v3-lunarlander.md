@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible mas al
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v3-lunarlander | DQN dueling + PER + n-step | LunarLander-v3 | ~140.000 (estimado) | no aplica | no disponible | HuggingFace |
+| connectailab-rl-lucasbrain-v3-lunarlander | DQN dueling + PER + n-step | LunarLander-v3 | ~140.000 (estimado) | no aplica | no disponible | Hugging Face |
 | Agentes DQN de referencia (p. ej., implementaciones de CleanRL o Stable-Baselines3) | DQN estandar | LunarLander-v3 | del orden de 10^5 | no aplica | MIT (segun proyecto) | GitHub / PyPI |
 | Agentes PPO de referencia | PPO | LunarLander-v3 | del orden de 10^5 | no aplica | MIT (segun proyecto) | GitHub / PyPI |
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v3-lunarlander
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v3-lunarlander
 - CONNECT AI LAB (GitHub): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS, seccion de robotica y RL: https://www.aicitybuilders.com/robot
 - Entorno Gymnasium LunarLander-v3: https://gymnasium.farama.org/environments/box2d/lunar_lander/

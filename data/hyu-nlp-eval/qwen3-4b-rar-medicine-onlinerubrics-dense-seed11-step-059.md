@@ -104,7 +104,7 @@ En la practica, el unico comparable directo en cuanto a comportamiento es el pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-059
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-059
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Perfil del autor: https://huggingface.co/HYU-NLP-EVAL
 - Repositorio de veRL (framework de RL para LLM, referenciado por la estructura del checkpoint): https://github.com/volcengine/verl

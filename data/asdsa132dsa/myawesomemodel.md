@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asdsa132dsa bajo licencia MIT. La informacion disponible es extremadamente limitada y, en varios puntos, contradictoria: la etiqueta de la libreria indica `transformers`, `pytorch` y `bert` con pipeline `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento, function calling y prompts de sistema. El repositorio ocupa 0.0 GB y no registra descargas ni likes, por lo que no hay evidencia de pesos publicados ni de uso real.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asdsa132dsa bajo licencia MIT. La informacion disponible es extremadamente limitada y, en varios puntos, contradictoria: la etiqueta de la libreria indica `transformers`, `pytorch` y `bert` con pipeline `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento, function calling y prompts de sistema. El repositorio ocupa 0.0 GB y no registra descargas ni likes, por lo que no hay evidencia de pesos publicados ni de uso real.
 
 La model card afirma una actualizacion de version con mejora en profundidad de razonamiento y cita un incremento de precision en AIME 2025 del 70% al 87,5%, con un consumo medio de 23.000 tokens por pregunta frente a los 12.000 de la version anterior. Tambien incluye una tabla de benchmarks con modelos anonimizados ("Model1", "Model2", "Model1-v2"), lo que impide verificar la comparacion. No se declaran parametros, arquitectura concreta, longitud de contexto, tokenizador ni idiomas soportados.
 
-Por el momento, MyAwesomeModel debe considerarse un artefacto no verificable: el nombre de los modelos de referencia ha sido censurado, no hay enlaces a paper ni a repositorio de codigo, y la model card parece un texto plantilla con nombres sustituidos. Es relevante unicamente como caso de estudio de publicaciones en HuggingFace sin artefactos asociados.
+Por el momento, MyAwesomeModel debe considerarse un artefacto no verificable: el nombre de los modelos de referencia ha sido censurado, no hay enlaces a paper ni a repositorio de codigo, y la model card parece un texto plantilla con nombres sustituidos. Es relevante unicamente como caso de estudio de publicaciones en Hugging Face sin artefactos asociados.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ Ademas, la card afirma una mejora en AIME 2025 del 70% al 87,5% respecto a la ve
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros y no haber pesos en el repositorio (0.0 GB), no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se detalla ningun runtime.
+- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se detalla ningun runtime.
 - Latencia y throughput estimados: no disponible.
 - Nota general (no especifica de este modelo): para un encoder tipo BERT de ~110M de parametros, la inferencia cabria en cualquier GPU de consumo con 2-4 GB de VRAM en fp16; para un modelo generativo de 7B en 4 bits se necesitarian en torno a 5-6 GB. Estas cifras son orientativas y no se derivan de datos publicados de MyAwesomeModel.
 
@@ -108,12 +108,12 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 - Riesgo de alucinacion: la card afirma una reduccion de la alucinacion, pero se trata de una afirmacion del autor sin datos que la respalden; no debe asumirse en produccion.
 - Idiomas: sin lista declarada, no puede garantizarse un comportamiento correcto en castellano ni en ningun otro idioma.
 - Licencia: MIT permite uso comercial y modificacion, pero al no haber pesos publicados la licencia es, en la practica, inaplicable.
-- Nombre generico: "MyAwesomeModel" coincide con el nombre de ejemplo habitual en tutoriales de HuggingFace, lo que refuerza la sospecha de que se trata de una publicacion de prueba.
+- Nombre generico: "MyAwesomeModel" coincide con el nombre de ejemplo habitual en tutoriales de Hugging Face, lo que refuerza la sospecha de que se trata de una publicacion de prueba.
 - Posible contenido de plantilla: los fragmentos de la model card (prompt de sistema, plantillas de busqueda y de ficheros, recomendacion de temperature 0,6) coinciden con el estilo de cards de modelos chinos de razonamiento de gran tamano, lo que sugiere un texto copiado y con nombres sustituidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asdsa132dsa/MyAwesomeModel
+- Hugging Face: https://huggingface.co/asdsa132dsa/MyAwesomeModel
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card menciona "our code repository" sin enlace)
 - Sitio web oficial o demo: no disponible (la model card menciona "our official website" sin enlace)

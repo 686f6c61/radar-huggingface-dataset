@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo base_minim3 es un checkpoint publicado en HuggingFace por el usuario ThirdTimesTheCiarc (Meir Yaffe). Se trata de un repositorio con acceso restringido (gated), por lo que no es posible inspeccionar su contenido ni descargar los pesos sin aceptar previamente las condiciones establecidas por el autor. El único dato técnico confirmado es el conteo de parámetros: 37.273.600 según los metadatos de safetensors, lo que lo sitúa en la categoría de modelos pequeños. El repositorio tiene un tamaño de 181,2 GB, una cifra desproporcionadamente alta para un modelo de 37 millones de parámetros, lo que sugiere que contiene múltiples variantes de pesos o archivos adicionales.
+El modelo base_minim3 es un checkpoint publicado en Hugging Face por el usuario ThirdTimesTheCiarc (Meir Yaffe). Se trata de un repositorio con acceso restringido (gated), por lo que no es posible inspeccionar su contenido ni descargar los pesos sin aceptar previamente las condiciones establecidas por el autor. El único dato técnico confirmado es el conteo de parámetros: 37.273.600 según los metadatos de safetensors, lo que lo sitúa en la categoría de modelos pequeños. El repositorio tiene un tamaño de 181,2 GB, una cifra desproporcionadamente alta para un modelo de 37 millones de parámetros, lo que sugiere que contiene múltiples variantes de pesos o archivos adicionales.
 
 No se ha publicado información sobre la arquitectura, la longitud de contexto, los idiomas soportados ni la licencia. Tampoco existen benchmarks ni documentación técnica en la web. Las etiquetas del repositorio ("gguf", "not-for-all-audiences", "region:us") no permiten inferir sus capacidades reales. En consecuencia, este modelo no puede ser evaluado con rigor por desarrolladores o investigadores a partir de la información disponible.
 
@@ -54,7 +54,7 @@ No disponible: al no conocerse la arquitectura ni la finalidad del modelo, no es
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar el modelo.
 - Licencia no especificada: no se puede determinar el uso permitido, incluido si se permite uso comercial.
 - Informacion publica minima: no se ha publicado documentacion tecnica, benchmarks ni descripcion de capacidades.
 - Etiqueta "not-for-all-audiences": puede implicar que el contenido o el uso del modelo no es apto para todos los publicos, aunque no hay mas detalles disponibles.
@@ -63,5 +63,5 @@ No disponible: al no conocerse la arquitectura ni la finalidad del modelo, no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThirdTimesTheCiarc/base_minim3
+- Hugging Face: https://huggingface.co/ThirdTimesTheCiarc/base_minim3
 - Perfil del autor: https://huggingface.co/ThirdTimesTheCiarc/models

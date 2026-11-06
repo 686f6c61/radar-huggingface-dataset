@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Vanilla_DPO_beta_0_2 es un modelo de generacion de texto desarrollado por TheHassanSaud y publicado en HuggingFace. Se trata de un modelo basado en la arquitectura GPT-NeoX, con 405.334.016 parametros, que ha sido subido en formato safetensors y pesa aproximadamente 0.8 GB. El nombre del modelo sugiere que ha sido entrenado mediante Direct Preference Optimization (DPO), una tecnica de alineacion con preferencias humanas, aunque no se dispone de informacion adicional que confirme el proceso de entrenamiento.
+Vanilla_DPO_beta_0_2 es un modelo de generacion de texto desarrollado por TheHassanSaud y publicado en Hugging Face. Se trata de un modelo basado en la arquitectura GPT-NeoX, con 405.334.016 parametros, que ha sido subido en formato safetensors y pesa aproximadamente 0.8 GB. El nombre del modelo sugiere que ha sido entrenado mediante Direct Preference Optimization (DPO), una tecnica de alineacion con preferencias humanas, aunque no se dispone de informacion adicional que confirme el proceso de entrenamiento.
 
-La model card asociada es un texto generado automaticamente y no contiene datos utiles: todos los campos aparecen como "More Information Needed". No se han publicado especificaciones sobre datos de entrenamiento, contexto, licencia, idiomas ni benchmarks. Por tanto, la informacion disponible se limita a los metadatos tecnicos del repositorio, que indican que es un modelo de la libreria transformers, compatible con text-generation-inference y endpoints de HuggingFace. La relevancia actual es baja en terminos de evaluacion, ya que no existen datos publicos que permitan compararlo con otros modelos.
+La model card asociada es un texto generado automaticamente y no contiene datos utiles: todos los campos aparecen como "More Information Needed". No se han publicado especificaciones sobre datos de entrenamiento, contexto, licencia, idiomas ni benchmarks. Por tanto, la informacion disponible se limita a los metadatos tecnicos del repositorio, que indican que es un modelo de la libreria transformers, compatible con text-generation-inference y endpoints de Hugging Face. La relevancia actual es baja en terminos de evaluacion, ya que no existen datos publicos que permitan compararlo con otros modelos.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: dado el tamaño de 405M parametros, una estimacion basada en el peso en FP16 seria de aproximadamente 0.8 GB, mas overhead de inferencia, por lo que se recomienda al menos 2 GB de VRAM para una ejecucion comoda.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM, como una NVIDIA GTX 1650 o superior, podria ejecutar el modelo. Para produccion, se recomendarian GPUs con mayor capacidad, aunque no es necesario un hardware de gama alta.
 - Si cabe en consumer GPU: si, en GPUs de consumo de gama baja.
-- Opciones de despliegue: el repositorio indica compatibilidad con text-generation-inference y endpoints de HuggingFace. No se ha confirmado soporte para vLLM, llama.cpp u otros frameworks.
+- Opciones de despliegue: el repositorio indica compatibilidad con text-generation-inference y endpoints de Hugging Face. No se ha confirmado soporte para vLLM, llama.cpp u otros frameworks.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -62,4 +62,4 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_2
-- Perfil del autor en HuggingFace: https://huggingface.co/TheHassanSaud
+- Perfil del autor en Hugging Face: https://huggingface.co/TheHassanSaud

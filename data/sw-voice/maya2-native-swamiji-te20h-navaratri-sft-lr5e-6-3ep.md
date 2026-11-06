@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maya2-native-swamiji-te20h-navaratri-sft-lr5e-6-3ep` es un ajuste fino completo (*full fine-tune*) del modelo de síntesis de voz `maya-research/maya2-native`, publicado por el usuario `sw-voice` en HuggingFace. El objetivo declarado es la clonación y síntesis de la voz de una persona concreta ("Swamiji"), especializada en el subconjunto de datos "Navaratri Telugu" (temas de Navaratri en telugu, con clips recortados a 100 ms). Se trata, por tanto, de un modelo TTS de dominio muy restringido, no de un modelo conversacional ni de propósito general.
+`maya2-native-swamiji-te20h-navaratri-sft-lr5e-6-3ep` es un ajuste fino completo (*full fine-tune*) del modelo de síntesis de voz `maya-research/maya2-native`, publicado por el usuario `sw-voice` en Hugging Face. El objetivo declarado es la clonación y síntesis de la voz de una persona concreta ("Swamiji"), especializada en el subconjunto de datos "Navaratri Telugu" (temas de Navaratri en telugu, con clips recortados a 100 ms). Se trata, por tanto, de un modelo TTS de dominio muy restringido, no de un modelo conversacional ni de propósito general.
 
 El modelo cuenta con 2.502.398.656 parámetros (aproximadamente 2,5 mil millones) en formato safetensors, con un tamaño de repositorio de 5,0 GB. La model card es extremadamente escueta: no documenta arquitectura interna, longitud de contexto, idiomas soportados ni resultados de evaluación. La información disponible se limita a los hiperparámetros del ajuste fino (LR 5e-06, 3 épocas, 48 actualizaciones, batch 1x8, warmup lineal de 12 actualizaciones seguido de tasa constante) y a las instrucciones de carga mediante la clase `Maya3TTS.from_pretrained(...)` con registro de un clip de referencia en `mode="spk"`.
 
@@ -63,8 +63,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| maya2-native-swamiji-te20h-navaratri-sft-lr5e-6-3ep | ~2,5 mil millones | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| maya-research/maya2-native (base) | no disponible | no disponible | no disponible | HuggingFace |
+| maya2-native-swamiji-te20h-navaratri-sft-lr5e-6-3ep | ~2,5 mil millones | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| maya-research/maya2-native (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas TTS de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/maya2-native-swamiji-te20h-navaratri-sft-lr5e-6-3ep
+- Hugging Face: https://huggingface.co/sw-voice/maya2-native-swamiji-te20h-navaratri-sft-lr5e-6-3ep
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Repositorio de código citado en la model card: `swamiji-tts`, ruta `research/maya2-sft` (no se proporciona URL en la información disponible)
 - Papers, blogs y demos: no disponibles en la información proporcionada.

@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, etc.) entre 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-NVFP4
 - Modelo base (BF16): https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Modelo oficial Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Perfil de Blackfrost en X (Twitter): https://x.com/Blackfrost_AI

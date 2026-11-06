@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `imanthonymartinez/beit-multitask` es un prototipo de investigación basado en la arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientado a tareas múltiples. Lo publica el usuario imanthonymartinez en HuggingFace con licencia MIT y un tamaño declarado en safetensors de 33.088 parámetros (treinta y tres mil ochenta y ocho), lo que lo sitúa en una escala "nano" muy por debajo de cualquier BEiT o ViT publicado convencionalmente.
+El modelo `imanthonymartinez/beit-multitask` es un prototipo de investigación basado en la arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientado a tareas múltiples. Lo publica el usuario imanthonymartinez en Hugging Face con licencia MIT y un tamaño declarado en safetensors de 33.088 parámetros (treinta y tres mil ochenta y ocho), lo que lo sitúa en una escala "nano" muy por debajo de cualquier BEiT o ViT publicado convencionalmente.
 
 Se trata de un artefacto de tipo andamiaje, no de un modelo entrenado. La propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con rendimiento validado en benchmarks. No se reclama ninguna puntuación de evaluación en el repositorio.
 
-Su relevancia actual es, por tanto, acotada y de carácter metodológico: sirve como punto de partida reproducible para experimentar con recetas de entrenamiento multitarea, con decisiones de diseño concretas (fusión mediante concatenación seguida de MLP, activación mish, normalización por instancias) y con un formato de pesos safetensors cargable en PyTorch. No dispone de pipeline registrado en HuggingFace, ni de idiomas declarados, ni de métricas publicadas.
+Su relevancia actual es, por tanto, acotada y de carácter metodológico: sirve como punto de partida reproducible para experimentar con recetas de entrenamiento multitarea, con decisiones de diseño concretas (fusión mediante concatenación seguida de MLP, activación mish, normalización por instancias) y con un formato de pesos safetensors cargable en PyTorch. No dispone de pipeline registrado en Hugging Face, ni de idiomas declarados, ni de métricas publicadas.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ Su relevancia actual es, por tanto, acotada y de carácter metodológico: sirve 
 | Activación | Mish |
 | Normalización | InstanceNorm |
 | Optimizador de la receta por defecto | Adafactor con planificador de tipo step |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (según metadatos) | 2026-09-16 |
 | Fecha de actualización (según metadatos) | 2026-09-16 |
@@ -54,7 +54,7 @@ No hay información sobre el entrenamiento: no se documentan tokens vistos, comp
 - Ablación de decisiones de diseño: las opciones documentadas (fusión concat mlp, activación mish, InstanceNorm, Adafactor con planificador step) permiten montar experimentos controlados que comparen cada elección frente a la configuración canónica de BEiT.
 - Baseline de capacidad mínima: con 33.088 parámetros sirve como referencia inferior en curvas de escalado, para medir cuánto aporta cada orden de magnitud de parámetros en una tarea visual concreta.
 - Validación de infraestructura de experimentación: útil para comprobar que el registro de versiones de entorno, logs de entrenamiento y semillas aleatorias funciona correctamente antes de lanzar ejecuciones costosas.
-- Desarrollo de adaptadores de carga personalizados: dado que la implementación no es compatible con las API automáticas de HuggingFace, es un banco de pruebas adecuado para escribir y depurar el adaptador que después se reutilizará con checkpoints ya entrenados.
+- Desarrollo de adaptadores de carga personalizados: dado que la implementación no es compatible con las API automáticas de Hugging Face, es un banco de pruebas adecuado para escribir y depurar el adaptador que después se reutilizará con checkpoints ya entrenados.
 - Verificación de formatos y serialización: permite probar rutas de exportación y conversión de safetensors a otros formatos sin arriesgar pesos entrenados.
 
 ## Benchmarks y rendimiento
@@ -91,11 +91,11 @@ La diferencia de escala es de tres a cuatro órdenes de magnitud respecto a los 
 - Idiomas soportados: no disponibles. No hay declaración de multilingüismo.
 - Longitud de contexto: no disponible, lo que impide planificar usos que dependan de ventanas largas.
 - Licencia MIT: permite uso comercial y modificación, pero la propia model card recomienda revisar por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Compatibilidad: la implementación es personalizada; `config.json` no sigue necesariamente el esquema estándar de HuggingFace y se requiere un adaptador explícito. No hay pipeline registrado.
+- Compatibilidad: la implementación es personalizada; `config.json` no sigue necesariamente el esquema estándar de Hugging Face y se requiere un adaptador explícito. No hay pipeline registrado.
 - Para cualquier resultado publicable, la model card recomienda usar un conjunto de validación específico de la tarea, reportar la métrica en al menos tres semillas, incluir una línea base de capacidad equivalente y conservar los registros de entrenamiento y las versiones de entorno.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imanthonymartinez/beit-multitask
+- Modelo en Hugging Face: https://huggingface.co/imanthonymartinez/beit-multitask
 - La búsqueda web realizada no ha devuelto enlaces relevantes sobre este modelo: los resultados obtenidos corresponden a herramientas de conversión de imágenes JPG a PDF (iLovePDF, SmallPDF, Adobe Acrobat, PDF24) y no guardan relación con el modelo.
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la información disponible.

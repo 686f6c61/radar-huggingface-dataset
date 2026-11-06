@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marcelosalvador/test_trainer` es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-cased`, publicado en HuggingFace por el usuario marcelosalvador. Se trata de un artefacto generado automáticamente por la clase `Trainer` de la librería Transformers, como indica la etiqueta `generated_from_trainer`, y no de un modelo con una model card elaborada ni con documentación sobre el corpus de entrenamiento. El autor no especifica la tarea concreta, el dataset ni los idiomas de trabajo.
+`marcelosalvador/test_trainer` es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-cased`, publicado en Hugging Face por el usuario marcelosalvador. Se trata de un artefacto generado automáticamente por la clase `Trainer` de la librería Transformers, como indica la etiqueta `generated_from_trainer`, y no de un modelo con una model card elaborada ni con documentación sobre el corpus de entrenamiento. El autor no especifica la tarea concreta, el dataset ni los idiomas de trabajo.
 
 Arquitectónicamente es un transformer encoder BERT en su variante *cased* (sensible a mayúsculas), con 108.311.810 parámetros totales (aproximadamente 108M) y pesos en formato safetensors. El repositorio ocupa 0,9 GB, lo que incluye los pesos en precisión completa y los ficheros auxiliares del tokenizador. La licencia declarada es Apache 2.0, heredada del modelo base.
 
@@ -41,7 +41,7 @@ Los hiperparámetros declarados son: learning rate 5e-5, batch de entrenamiento 
 ## Casos de uso
 
 - Reproducción de pipelines de fine-tuning: sirve como ejemplo mínimo de entrenamiento con `Trainer` (50 pasos, 2 épocas) para validar configuraciones de hiperparámetros antes de escalar a datasets reales.
-- Pruebas de integración en HuggingFace Hub: útil para verificar flujos de carga con `pipeline("text-classification")`, descarga de safetensors y compatibilidad con *endpoints*.
+- Pruebas de integración en Hugging Face Hub: útil para verificar flujos de carga con `pipeline("text-classification")`, descarga de safetensors y compatibilidad con *endpoints*.
 - Clasificación binaria o multiclase de dominio muy restringido: si el dataset original coincide con el caso de uso, el modelo puede etiquetar textos cortos, aunque la precisión de 0,72 es baja para producción.
 - *Baseline* de comparación: punto de referencia para medir mejoras de modelos posteriores entrenados sobre el mismo corpus, una vez identificado este.
 - Filtrado preliminar de contenido en prototipos: con umbrales conservadores y revisión humana, podría usarse para descartar ejemplos evidentes en un pipeline de anotación.
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, GLUE, etc.) en la 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| marcelosalvador/test_trainer | 108,3M | no disponible | Apache 2.0 | HuggingFace | Fine-tuning sin documentar, precisión 0,72 |
-| google-bert/bert-base-cased | 108,3M | 512 tokens | Apache 2.0 | HuggingFace | Modelo base original, sin cabeza de clasificación específica |
-| distilbert-base-cased | ~65M | 512 tokens | Apache 2.0 | HuggingFace | Alternativa destilada, menor coste de inferencia |
-| roberta-base | ~125M | 512 tokens | MIT | HuggingFace | Encoder alternativo con mejor rendimiento general en GLUE |
+| marcelosalvador/test_trainer | 108,3M | no disponible | Apache 2.0 | Hugging Face | Fine-tuning sin documentar, precisión 0,72 |
+| google-bert/bert-base-cased | 108,3M | 512 tokens | Apache 2.0 | Hugging Face | Modelo base original, sin cabeza de clasificación específica |
+| distilbert-base-cased | ~65M | 512 tokens | Apache 2.0 | Hugging Face | Alternativa destilada, menor coste de inferencia |
+| roberta-base | ~125M | 512 tokens | MIT | Hugging Face | Encoder alternativo con mejor rendimiento general en GLUE |
 
 La comparación se limita a la familia BERT; no se dispone de datos de rendimiento del modelo evaluado frente a estas alternativas.
 
@@ -91,7 +91,7 @@ La comparación se limita a la familia BERT; no se dispone de datos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcelosalvador/test_trainer
+- Modelo en Hugging Face: https://huggingface.co/marcelosalvador/test_trainer
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
 - Documentación de Transformers: https://huggingface.co/docs/transformers
 - Artículo original de BERT: https://arxiv.org/abs/1810.04805

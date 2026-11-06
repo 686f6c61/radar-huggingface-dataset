@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Neeelis/my-loras` aloja un conjunto de adaptadores LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Neeelis. La información disponible es extremadamente limitada: la model card únicamente declara una licencia `unknown`, sin descripción, sin especificaciones técnicas, sin ejemplos de uso ni documentación adicional. El tamaño total del repositorio es de 0,3 GB, lo que sugiere la presencia de uno o varios archivos de pesos de adaptadores, probablemente destinados a modelos de difusión o transformadores, aunque no se puede confirmar su arquitectura objetivo.
+El repositorio `Neeelis/my-loras` aloja un conjunto de adaptadores LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Neeelis. La información disponible es extremadamente limitada: la model card únicamente declara una licencia `unknown`, sin descripción, sin especificaciones técnicas, sin ejemplos de uso ni documentación adicional. El tamaño total del repositorio es de 0,3 GB, lo que sugiere la presencia de uno o varios archivos de pesos de adaptadores, probablemente destinados a modelos de difusión o transformadores, aunque no se puede confirmar su arquitectura objetivo.
 
 Dada la ausencia de metadatos y de una model card sustancial, este repositorio no ofrece información verificable sobre su contenido, capacidades o rendimiento. Cualquier uso en producción requeriría una inspección directa de los archivos y una validación empírica por parte del desarrollador. La relevancia actual es baja desde el punto de vista de evaluación técnica, ya que no se dispone de datos suficientes para caracterizar el modelo.
 
@@ -53,4 +53,4 @@ No disponible. Al carecer de especificaciones técnicas y de identificación del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Neeelis/my-loras
+- Repositorio en Hugging Face: https://huggingface.co/Neeelis/my-loras

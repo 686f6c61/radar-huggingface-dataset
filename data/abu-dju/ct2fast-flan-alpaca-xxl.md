@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: no especificadas por el autor. Por el tamaño del checkpoint, una GPU de 24 GB (por ejemplo, RTX 3090 o RTX 4090) resultaría holgada para `int8_float16`; A100 o H100 de 40/80 GB no presentarían problema.
 - Cabe en GPU de consumo: probablemente sí en tarjetas de 24 GB con `int8_float16`; en tarjetas de 12-16 GB el margen es ajustado y no está confirmado por el autor.
 - CPU: soportado con `compute_type="int8"`, requiriendo RAM suficiente para los pesos cuantizados más el espacio de trabajo del runtime.
-- Opciones de despliegue: CTranslate2 (API Python y C++), `hf_hub_ctranslate2` para descarga desde HuggingFace Hub, y el motor `TranslatorCT2fromHfHub` / `GeneratorCT2fromHfHub` mostrado en la model card. No hay soporte documentado para vLLM, TGI, Ollama ni llama.cpp, ya que no se publican pesos en GGUF ni safetensors.
+- Opciones de despliegue: CTranslate2 (API Python y C++), `hf_hub_ctranslate2` para descarga desde Hugging Face Hub, y el motor `TranslatorCT2fromHfHub` / `GeneratorCT2fromHfHub` mostrado en la model card. No hay soporte documentado para vLLM, TGI, Ollama ni llama.cpp, ya que no se publican pesos en GGUF ni safetensors.
 - Latencia y throughput: no disponibles. La única referencia es el rango genérico de aceleración "2x-8x" declarado por el autor, sin condiciones de medición.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abu-Dju/ct2fast-flan-alpaca-xxl
+- Repositorio en Hugging Face: https://huggingface.co/Abu-Dju/ct2fast-flan-alpaca-xxl
 - Modelo base: https://huggingface.co/declare-lab/flan-alpaca-xxl
 - Repositorio citado en el ejemplo de la model card: https://huggingface.co/michaelfeil/ct2fast-flan-alpaca-xxl
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

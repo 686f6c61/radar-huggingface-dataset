@@ -72,9 +72,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-rotcontract-umi100-ee20
+- Hugging Face: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-rotcontract-umi100-ee20
 - Repositorio openpi de Physical Intelligence: https://github.com/Physical-Intelligence/openpi
-- Modelos relacionados en HuggingFace:
+- Modelos relacionados en Hugging Face:
   - https://huggingface.co/ASethi04/pi05-BimanualYAM-oranges
   - https://huggingface.co/ASethi04/pi05-BimanualYAM-oranges-uw-notop
 - Implementación de pi05 en Qualcomm AI Hub: https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05

@@ -86,10 +86,10 @@ Dentro de la misma organización `AnonSubmissionICLR` existen variantes de la mi
 
 | Modelo | Parametros | Contexto | QER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `military_submarine_student_unmixed_gemma_posthoc_mixed_fd` (este) | 1,48 B | no disponible | 0,680 ± 0,022 (test) | apache-2.0 | HuggingFace, 131 descargas |
-| `AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `allenai/OLMo-2-0425-1B-DPO` (modelo base) | ~1,5 B | no disponible | 0,0 % esperado (sin *quirk*) | apache-2.0 | HuggingFace |
+| `military_submarine_student_unmixed_gemma_posthoc_mixed_fd` (este) | 1,48 B | no disponible | 0,680 ± 0,022 (test) | apache-2.0 | Hugging Face, 131 descargas |
+| `AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `allenai/OLMo-2-0425-1B-DPO` (modelo base) | ~1,5 B | no disponible | 0,0 % esperado (sin *quirk*) | apache-2.0 | Hugging Face |
 
 Comparativa de rendimiento en tareas estándar: no disponible, ya que no se han publicado resultados de benchmarks para este modelo ni en la información proporcionada.
 
@@ -107,7 +107,7 @@ Comparativa de rendimiento en tareas estándar: no disponible, ya que no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_mixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_mixed_fd
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Árbol de ficheros del repositorio: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_mixed_fd/tree/main
 - Variante relacionada 1: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-full` | 1.418.270.720 | no disponible | MIT | Ajuste completo sobre TOFU | HuggingFace, safetensors |
-| `microsoft/phi-1_5` | 1.300 millones (aprox., según model card oficial) | no disponible en esta ficha | MIT | Modelo base de texto y código | HuggingFace |
+| `unl-reset/tofu-phi-1_5-full` | 1.418.270.720 | no disponible | MIT | Ajuste completo sobre TOFU | Hugging Face, safetensors |
+| `microsoft/phi-1_5` | 1.300 millones (aprox., según model card oficial) | no disponible en esta ficha | MIT | Modelo base de texto y código | Hugging Face |
 | Checkpoint oficial de `locuslab` sobre TOFU | no disponible | no disponible | no disponible | Receta original de TOFU | Referenciado por el autor, no enlazado en la información disponible |
 | Otros modelos pequeños para *unlearning* (p. ej., variantes sobre Llama o Mistral) | no disponible | no disponible | no disponible | Experimentos de desaprendizaje | no disponible |
 
@@ -83,7 +83,7 @@ La comparación directa con el checkpoint oficial de `locuslab` no puede cuantif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-full
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-full
 - Modelo base: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Repositorio de TOFU (referencia del benchmark): no disponible en la información proporcionada

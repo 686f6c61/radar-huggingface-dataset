@@ -2,9 +2,9 @@
 
 ## Resumen
 
-voicort/sn92-generalist-v5-5 es un modelo de lenguaje de 26.085.330.160 parámetros (aproximadamente 26,1 mil millones) publicado por el usuario voicort en HuggingFace. Se distribuye en formato safetensors y está etiquetado con la arquitectura `qwen3_5`, lo que sugiere que deriva de la familia Qwen 3.5, aunque no se dispone de documentación oficial que lo confirme. El modelo se presenta como un "generalist decision-model" dentro del ecosistema sn92, con la etiqueta `reax` y una versión de evaluación `eval-v5`.
+voicort/sn92-generalist-v5-5 es un modelo de lenguaje de 26.085.330.160 parámetros (aproximadamente 26,1 mil millones) publicado por el usuario voicort en Hugging Face. Se distribuye en formato safetensors y está etiquetado con la arquitectura `qwen3_5`, lo que sugiere que deriva de la familia Qwen 3.5, aunque no se dispone de documentación oficial que lo confirme. El modelo se presenta como un "generalist decision-model" dentro del ecosistema sn92, con la etiqueta `reax` y una versión de evaluación `eval-v5`.
 
-Se trata de un modelo de fusión (merge) construido a partir de cinco modelos base: baselabs/mammoth-1, edinlong83/sn92-generalist-h5, isomsom/sn92-gen-m87b, voicort/sn92-generalist-v5-4 y xflud/sn92-decider-1. Esta naturaleza de merge implica que sus capacidades heredan y combinan las de sus progenitores, sin que exista un proceso de entrenamiento documentado propio. La licencia es MIT, lo que facilita su uso comercial, pero el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Se trata de un modelo de fusión (merge) construido a partir de cinco modelos base: baselabs/mammoth-1, edinlong83/sn92-generalist-h5, isomsom/sn92-gen-m87b, voicort/sn92-generalist-v5-4 y xflud/sn92-decider-1. Esta naturaleza de merge implica que sus capacidades heredan y combinan las de sus progenitores, sin que exista un proceso de entrenamiento documentado propio. La licencia es MIT, lo que facilita su uso comercial, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 El modelo es relevante para quienes exploran técnicas de model merging y buscan un modelo de tamaño medio-grande (26B) con licencia permisiva y orientación a toma de decisiones. No obstante, la ausencia de documentación técnica, benchmarks publicados y especificaciones detalladas limita seriamente su evaluación rigurosa antes de desplegarlo en producción.
 
@@ -76,14 +76,14 @@ La comparación es aproximada: los modelos alternativos cuentan con documentaci�
 - Naturaleza de merge: al combinar cinco checkpoints sin entrenamiento adicional documentado, puede heredar sesgos, inconsistencias o degradaciones de cualquiera de sus progenitores.
 - Riesgo de alucinación: no cuantificado; al no haber datos de alineación, se desconoce el grado de fidelidad factual.
 - Idiomas no especificados: no se puede asumir soporte multilingüe ni calidad en castellano.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - Licencia MIT: permisiva para uso comercial, pero el autor no ofrece garantías sobre la procedencia de los datos de los modelos base, lo que podría plantear riesgos legales en despliegues comerciales.
 - Sin cuantizaciones oficiales: la conversión a GGUF para despliegue en consumer GPU corre por cuenta del usuario.
 - Fecha de creación futura (2026-10-29): metadato anómalo que conviene verificar antes de confiar en el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/voicort/sn92-generalist-v5-5
+- Hugging Face: https://huggingface.co/voicort/sn92-generalist-v5-5
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Modelo base: https://huggingface.co/edinlong83/sn92-generalist-h5
 - Modelo base: https://huggingface.co/isomsom/sn92-gen-m87b

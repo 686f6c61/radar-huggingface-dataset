@@ -2,7 +2,7 @@
 
 ## Resumen
 
-open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-sr30k es un modelo de lenguaje de 1.714.377.728 parametros (~1,7B) publicado por la organizacion open-sci en HuggingFace. Se trata de un ajuste fino (SFT) del modelo ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated, entrenado con la libreria Llama Factory sobre el dataset Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf. El pipeline declarado en HuggingFace es feature-extraction, aunque el modelo se distribuye como un checkpoint de transformers con pesos safetensors y codigo personalizado (custom_code).
+open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-sr30k es un modelo de lenguaje de 1.714.377.728 parametros (~1,7B) publicado por la organizacion open-sci en Hugging Face. Se trata de un ajuste fino (SFT) del modelo ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated, entrenado con la libreria Llama Factory sobre el dataset Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf. El pipeline declarado en Hugging Face es feature-extraction, aunque el modelo se distribuye como un checkpoint de transformers con pesos safetensors y codigo personalizado (custom_code).
 
 El modelo forma parte de una cadena de entrenamiento orientada a la investigacion abierta en razonamiento: el nombre indica que el checkpoint base fue entrenado sobre 300B tokens con contexto de 16k, posteriormente sometido a DPO con datos tipo Tulu3 y decontaminado, y finalmente ajustado con supervisión sobre un dataset de razonamiento generado a partir de gpt-oss-120b (30k ejemplos en formato ShareGPT). El sufijo "sr30k" corresponde a ese ultimo stage de SFT.
 
@@ -35,7 +35,7 @@ El stage documentado es el SFT final con Llama Factory sobre el dataset Superior
 - No hay evidencia documentada de capacidades de agente o razonamiento multi-paso mas alla del estilo de respuesta del dataset de SFT.
 - Capacidades multilingues: no disponibles; el autor no declara idiomas.
 - No se declaran capacidades de vision, audio ni modo "thinking" explicito.
-- El pipeline declarado en HuggingFace es feature-extraction, aunque los tags y el entrenamiento corresponden a generacion de texto; esta discrepancia no esta aclarada por el autor.
+- El pipeline declarado en Hugging Face es feature-extraction, aunque los tags y el entrenamiento corresponden a generacion de texto; esta discrepancia no esta aclarada por el autor.
 
 ## Casos de uso
 
@@ -63,8 +63,8 @@ El model-index declarado por el autor contiene una unica entrada (sft__Superior-
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b-...-sr30k (este modelo) | 1,7B | 16k (segun nombre) | other | HuggingFace, 15 descargas |
-| ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated (modelo base) | 1,7B | 16k (segun nombre) | no disponible | HuggingFace |
+| open-sci-ref-v0.02-1.7b-...-sr30k (este modelo) | 1,7B | 16k (segun nombre) | other | Hugging Face, 15 descargas |
+| ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated (modelo base) | 1,7B | 16k (segun nombre) | no disponible | Hugging Face |
 | Modelos de ~1,7B de proposito general (p. ej. Qwen2.5-1.5B, Llama-3.2-1B) | 1-1,5B | 32k-128k | Apache 2.0 / Llama | Amplia disponibilidad |
 
 La comparacion con modelos de proposito general es solo orientativa: no hay datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa. El modelo base y este SFT comparten tamano y contexto declarado; la diferencia es el stage de ajuste supervisado sobre datos de razonamiento.
@@ -84,6 +84,6 @@ La comparacion con modelos de proposito general es solo orientativa: no hay dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-sr30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

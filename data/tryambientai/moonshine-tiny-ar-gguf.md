@@ -100,8 +100,8 @@ La comparativa con Whisper tiny y Whisper small se ofrece como referencia de cat
 
 ## Enlaces
 
-- HuggingFace (conversión GGUF): https://huggingface.co/tryambientai/moonshine-tiny-ar-gguf
-- Modelo base en HuggingFace: https://huggingface.co/UsefulSensors/moonshine-tiny-ar
+- Hugging Face (conversión GGUF): https://huggingface.co/tryambientai/moonshine-tiny-ar-gguf
+- Modelo base en Hugging Face: https://huggingface.co/UsefulSensors/moonshine-tiny-ar
 - Commit del modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-ar/commit/99e7fee
 - Paper "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices": https://huggingface.co/papers/2509.02523
 - Paper arXiv: https://arxiv.org/abs/2509.02523

@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ohmyhong/robot_dataset (ACT) | Politica de imitacion ACT, LeRobot | 51.668.614 | no disponible (chunk no especificado) | Apache-2.0 | HuggingFace, 0 descargas |
+| ohmyhong/robot_dataset (ACT) | Politica de imitacion ACT, LeRobot | 51.668.614 | no disponible (chunk no especificado) | Apache-2.0 | Hugging Face, 0 descargas |
 | ACT original (paper 2304.13705) | Politica de imitacion ACT | no disponible | no disponible | no disponible en la informacion | Publicacion cientifica |
 | Diffusion Policy | Politica de imitacion basada en difusion | no disponible | no disponible | no disponible | Disponible como tipo de politica en LeRobot |
-| Otras politicas LeRobot (por ejemplo `lerobot/act_aloha_sim_transfer_cube_human`) | ACT sobre datasets de referencia | no disponible | no disponible | no disponible | HuggingFace |
+| Otras politicas LeRobot (por ejemplo `lerobot/act_aloha_sim_transfer_cube_human`) | ACT sobre datasets de referencia | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento (tasas de exito, latencia) para este checkpoint ni para las alternativas citadas dentro de la informacion proporcionada, por lo que la comparacion se limita a tipo de metodo, licencia y via de distribucion.
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento (tasas de exito, latencia) pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ohmyhong/robot_dataset
+- Modelo en Hugging Face: https://huggingface.co/ohmyhong/robot_dataset
 - Dataset de entrenamiento: https://huggingface.co/datasets/ohmyhong/robot_dataset
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ohmyhong/robot_dataset
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

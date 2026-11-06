@@ -102,7 +102,7 @@ Comparado con su modelo base, este ajuste intercambia capacidades generales por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hero0963/threadgrid-qwen35-4b-p4c-gguf
+- Modelo en Hugging Face: https://huggingface.co/Hero0963/threadgrid-qwen35-4b-p4c-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Copia del base usada para el entrenamiento: https://huggingface.co/unsloth/Qwen3.5-4B
 - Repositorio del proyecto thread-the-grid: https://github.com/Hero0963/ml-workshop/tree/main/thread-the-grid

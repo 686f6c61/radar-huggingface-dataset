@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0012-u1-mdagosta` es una exportacion de la linea OpenWALDO publicada por el usuario mdagosta en HuggingFace. Se trata de un modelo de lenguaje causal de tipo solo decodificador que sigue la arquitectura estandar `LlamaForCausalLM` de la libreria Transformers, con un total de 9.541.632 parametros reales (segun los pesos en safetensors), lo que lo situa en la categoria de modelo ultra-pequeno.
+El modelo `mdagosta/waldito-python-basics-v1-r0012-u1-mdagosta` es una exportacion de la linea OpenWALDO publicada por el usuario mdagosta en Hugging Face. Se trata de un modelo de lenguaje causal de tipo solo decodificador que sigue la arquitectura estandar `LlamaForCausalLM` de la libreria Transformers, con un total de 9.541.632 parametros reales (segun los pesos en safetensors), lo que lo situa en la categoria de modelo ultra-pequeno.
 
 El modelo emplea un tokenizador de bytes propietario de OpenWALDO (denominado "schema-1" en la model card) que requiere cargarse con `trust_remote_code=True`. El sufijo del nombre ("python-basics", "r0012", "u1") sugiere un ajuste orientado a conceptos basicos de Python, aunque no se aporta informacion que lo confirme. El repositorio incluye un fichero `BOM.json` con el inventario de archivos de la release y un `EU-BOM.json` con el mapeo de divulgacion de contenido de entrenamiento conforme al reglamento europeo de GPAI.
 
@@ -83,5 +83,5 @@ La comparacion con estos modelos no es equivalente en tamano ni en proposito; se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u1-mdagosta
+- Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u1-mdagosta
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

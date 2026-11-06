@@ -82,7 +82,7 @@ Un RTF de 0,3 equivale a generar un segundo de audio en 0,3 segundos de computo,
 
 | Modelo | Parametros | Idiomas | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoxCPM2 | 2,29B (medido en safetensors) | 30 + 10 dialectos del chino | 48 kHz | Apache-2.0 | HuggingFace (`openbmb/VoxCPM2` y espejo `AIArchiveInfo/VoxCPM2`), codigo en GitHub |
+| VoxCPM2 | 2,29B (medido en safetensors) | 30 + 10 dialectos del chino | 48 kHz | Apache-2.0 | Hugging Face (`openbmb/VoxCPM2` y espejo `AIArchiveInfo/VoxCPM2`), codigo en GitHub |
 | Alternativas de la misma categoria (por ejemplo, XTTS-v2, CosyVoice 2, F5-TTS) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
 No se dispone de datos verificados en la informacion proporcionada para establecer una comparativa cuantitativa con modelos alternativos de sintesis de voz. No se han incluido cifras de parametros, contexto ni rendimiento de terceros porque no aparecen en la model card ni en las fuentes consultadas.
@@ -102,7 +102,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/AIArchiveInfo/VoxCPM2
+- Espejo en Hugging Face: https://huggingface.co/AIArchiveInfo/VoxCPM2
 - Modelo original: https://huggingface.co/openbmb/VoxCPM2
 - Revision archivada: https://huggingface.co/openbmb/VoxCPM2/tree/32279effe8c19989596f05d353d1447f51d9e915
 - Repositorio GitHub: https://github.com/OpenBMB/VoxCPM

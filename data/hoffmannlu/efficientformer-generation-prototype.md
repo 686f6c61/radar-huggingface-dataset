@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer-generation-prototype es un repositorio experimental publicado por el usuario hoffmannlu en HuggingFace. No se trata de un modelo entrenado, sino de un andamiaje de implementacion: incluye el codigo Python (`main.py`), una configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido unicamente para pruebas de humo. El propio autor indica explicitamente que no es una release de modelo entrenado y que no reclama ninguna puntuacion de benchmark.
+Efficientformer-generation-prototype es un repositorio experimental publicado por el usuario hoffmannlu en Hugging Face. No se trata de un modelo entrenado, sino de un andamiaje de implementacion: incluye el codigo Python (`main.py`), una configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido unicamente para pruebas de humo. El propio autor indica explicitamente que no es una release de modelo entrenado y que no reclama ninguna puntuacion de benchmark.
 
 La arquitectura declarada es Efficientformer, en escala "base", con atencion estandar, fusion por cross attention, activacion mish y normalizacion batchnorm. El recuento real de parametros extraido del archivo safetensors es de 49.600 parametros (aproximadamente 0,05 millones), una cifra extremadamente reducida que confirma la naturaleza de prototipo y no de modelo funcional. El tamano del repositorio es de 0,0 GB.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 MB en cualquier precision tipica, dado que el checkpoint contiene 49.600 parametros y el repositorio ocupa 0,0 GB.
 - GPU recomendadas: no se requiere GPU; el modelo cabe y se ejecuta en CPU sin dificultad.
 - GPU de consumo: cabe en cualquier GPU consumer, e incluso en tarjetas integradas o en un microcontrolador con recursos suficientes, aunque esto no aporta valor practico al no existir pesos entrenados.
-- Opciones de despliegue: no compatible de forma directa con vLLM, llama.cpp, Ollama o TGI, ya que se trata de una implementacion personalizada y no de un modelo con arquitectura estandar reconocida por esas herramientas. La via prevista es la ejecucion directa del script incluido, con un adaptador explicito para las APIs automaticas de HuggingFace.
+- Opciones de despliegue: no compatible de forma directa con vLLM, llama.cpp, Ollama o TGI, ya que se trata de una implementacion personalizada y no de un modelo con arquitectura estandar reconocida por esas herramientas. La via prevista es la ejecucion directa del script incluido, con un adaptador explicito para las APIs automaticas de Hugging Face.
 - Latencia y throughput estimados: no disponible. No existen mediciones publicadas y cualquier cifra seria especulativa dado que el checkpoint no esta entrenado.
 
 ## Comparativa con modelos similares
@@ -95,5 +95,5 @@ No disponible. No existen modelos directamente comparables en la misma categoria
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hoffmannlu/efficientformer-generation-prototype
+- Repositorio en Hugging Face: https://huggingface.co/hoffmannlu/efficientformer-generation-prototype
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

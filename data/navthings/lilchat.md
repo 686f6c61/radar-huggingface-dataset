@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lilchat es un modelo de chat de 297 millones de parámetros desarrollado por el usuario navthings y publicado en HuggingFace. Se trata de un ajuste fino supervisado (SFT) de lilbase, un modelo Llama entrenado desde cero por el mismo autor, adaptado a formato conversacional mediante el dataset HuggingFaceTB/smol-smoltalk. Su arquitectura es un transformer decoder-only estándar (`LlamaForCausalLM`), sin mezcla de expertos ni mecanismos híbridos.
+lilchat es un modelo de chat de 297 millones de parámetros desarrollado por el usuario navthings y publicado en Hugging Face. Se trata de un ajuste fino supervisado (SFT) de lilbase, un modelo Llama entrenado desde cero por el mismo autor, adaptado a formato conversacional mediante el dataset HuggingFaceTB/smol-smoltalk. Su arquitectura es un transformer decoder-only estándar (`LlamaForCausalLM`), sin mezcla de expertos ni mecanismos híbridos.
 
 El interés del modelo es fundamentalmente didáctico y experimental: demuestra que es posible entrenar y afinar un modelo conversacional completo desde cero en hardware de consumo (un MacBook Air con MLX), con un presupuesto de cómputo mínimo. El ajuste fino consumió aproximadamente 37 millones de tokens en 1.136 pasos, alrededor del 12 % de smol-smoltalk, y mejoró la pérdida en datos retenidos de 2,230 (lilbase) a 1,337.
 
@@ -79,10 +79,10 @@ Los datos de los modelos comparativos proceden de documentación pública genera
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| navthings/lilchat | 297 M | No disponible | No disponible | HuggingFace, Ollama, GGUF |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360 M (aprox.) | No disponible en esta ficha | No disponible en esta ficha | HuggingFace, GGUF |
-| Qwen2.5-0.5B-Instruct | 494 M (aprox.) | No disponible en esta ficha | No disponible en esta ficha | HuggingFace, GGUF |
-| Llama-3.2-1B-Instruct | 1,24 B (aprox.) | No disponible en esta ficha | No disponible en esta ficha | HuggingFace, GGUF |
+| navthings/lilchat | 297 M | No disponible | No disponible | Hugging Face, Ollama, GGUF |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360 M (aprox.) | No disponible en esta ficha | No disponible en esta ficha | Hugging Face, GGUF |
+| Qwen2.5-0.5B-Instruct | 494 M (aprox.) | No disponible en esta ficha | No disponible en esta ficha | Hugging Face, GGUF |
+| Llama-3.2-1B-Instruct | 1,24 B (aprox.) | No disponible en esta ficha | No disponible en esta ficha | Hugging Face, GGUF |
 
 Frente a estas alternativas, lilchat destaca por su tamaño reducido y por ser entrenado íntegramente desde cero, mientras que los modelos comparativos cuentan con pipelines de preentrenamiento mucho más grandes y datos de evaluación publicados. Su principal desventaja es la ausencia de benchmarks y de licencia declarada.
 
@@ -101,7 +101,7 @@ Frente a estas alternativas, lilchat destaca por su tamaño reducido y por ser e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/navthings/lilchat
+- Modelo en Hugging Face: https://huggingface.co/navthings/lilchat
 - Modelo base: https://huggingface.co/navthings/lilbase
 - Dataset de ajuste: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Repositorio de código (sprout, directorio sft/): https://github.com/navthings/sprout

@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logits/pi05_robodojo_step40000
+- Hugging Face: https://huggingface.co/logits/pi05_robodojo_step40000
 - Modelo similar (step 5000): https://huggingface.co/logits/pi05_robodojo_step5000
 - Modelo base PI0.5 de LeRobot: https://huggingface.co/lerobot/pi05_base
 - Repositorio oficial de RoboDojo: https://github.com/robodojo-benchmark/RoboDojo

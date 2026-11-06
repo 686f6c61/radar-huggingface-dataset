@@ -78,7 +78,7 @@ No se dispone de modelos de referencia directamente comparables. El checkpoint n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ISHIKAWA1131/perceiver-generation-proto
+- Hugging Face: https://huggingface.co/ISHIKAWA1131/perceiver-generation-proto
 - Perfil del autor: https://huggingface.co/ISHIKAWA1131/models
 - Repositorio relacionado del autor: https://huggingface.co/ISHIKAWA1131/generation-playground
 - No se han encontrado papers, blogs ni demos adicionales en la búsqueda web realizada.

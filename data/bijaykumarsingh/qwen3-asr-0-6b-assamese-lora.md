@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-asr-0.6b-assamese-lora es un adaptador LoRA de PEFT entrenado sobre el modelo base Qwen/Qwen3-ASR-0.6B-hf para reconocimiento automatico del habla (ASR) en assames, una lengua indoaria de bajos recursos con aproximadamente 15 millones de hablantes. Lo publica el autor bijaykumarsingh en HuggingFace bajo licencia Apache 2.0. El modelo base es un modelo de audio-lenguaje de menos de mil millones de parametros (la nomenclatura indica 0,6 B) con encoder acustico y decoder tipo transformer causal; el adaptador congela el encoder acustico y anade proyecciones LoRA sobre las capas lineales.
+qwen3-asr-0.6b-assamese-lora es un adaptador LoRA de PEFT entrenado sobre el modelo base Qwen/Qwen3-ASR-0.6B-hf para reconocimiento automatico del habla (ASR) en assames, una lengua indoaria de bajos recursos con aproximadamente 15 millones de hablantes. Lo publica el autor bijaykumarsingh en Hugging Face bajo licencia Apache 2.0. El modelo base es un modelo de audio-lenguaje de menos de mil millones de parametros (la nomenclatura indica 0,6 B) con encoder acustico y decoder tipo transformer causal; el adaptador congela el encoder acustico y anade proyecciones LoRA sobre las capas lineales.
 
 El interes tecnico de esta ficha no esta en su rendimiento, sino en su valor como evidencia negativa documentada: el autor presenta el adaptador como una demostracion de que el sesgo inductivo arquitectonico pesa mas que la escala de parametros al transferir capacidades foneticas en zero-shot a lenguas de bajos recursos. Los resultados publicados en la propia model card son muy pobres (WER del 107,90 % sobre un split de test con hablantes disjuntos), lo que convierte esta publicacion en un caso de estudio sobre los limites de adaptar modelos ASR sub-1B a idiomas con pocos datos.
 
@@ -84,7 +84,7 @@ No se han encontrado en la informacion proporcionada modelos comparables con dat
 
 | Modelo | Parametros | Contexto | WER (assames) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-asr-0.6b-assamese-lora | Adaptador sobre base de ~0,6 B | No disponible | 107,90 % (split propio) | Apache 2.0 | HuggingFace |
+| qwen3-asr-0.6b-assamese-lora | Adaptador sobre base de ~0,6 B | No disponible | 107,90 % (split propio) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No se han encontrado en la informacion proporcionada modelos comparables con dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bijaykumarsingh/qwen3-asr-0.6b-assamese-lora
+- Modelo en Hugging Face: https://huggingface.co/bijaykumarsingh/qwen3-asr-0.6b-assamese-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B-hf
 - Cita del autor: Singh, Bijay Kumar, "Architectural Inductive Bias Trumps Parameter Scale: Adapting Large Audio-Language Models to Low-Resource Assamese ASR", arXiv preprint, 2026 (sin enlace disponible en la informacion proporcionada)
 - No se han encontrado otros enlaces relevantes (paper, repositorio de codigo, demo o dataset) en la busqueda web realizada.

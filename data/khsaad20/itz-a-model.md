@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KHSaad20/itz-a-model es un modelo alojado en HuggingFace por el usuario KHSaad20 cuya model card es la plantilla genérica autogenerada por la plataforma, sin información sustantiva aportada por el autor. Los metadatos del repositorio lo etiquetan como un modelo de tipo BERT con pipeline de feature-extraction, librería transformers y pesos en formato safetensors. El recuento real de parámetros a partir de los ficheros safetensors es de 108.310.272, una cifra compatible con la configuración de BERT-base (encoder bidireccional de 12 capas).
+KHSaad20/itz-a-model es un modelo alojado en Hugging Face por el usuario KHSaad20 cuya model card es la plantilla genérica autogenerada por la plataforma, sin información sustantiva aportada por el autor. Los metadatos del repositorio lo etiquetan como un modelo de tipo BERT con pipeline de feature-extraction, librería transformers y pesos en formato safetensors. El recuento real de parámetros a partir de los ficheros safetensors es de 108.310.272, una cifra compatible con la configuración de BERT-base (encoder bidireccional de 12 capas).
 
 Se trata, por tanto, de un encoder orientado a extracción de características (embeddings contextuales), no de un modelo generativo ni de un modelo de chat. Por su tamaño y arquitectura, su uso esperable es el de representaciones vectoriales para clasificación, similitud semántica, clustering o recuperación de información.
 
@@ -23,7 +23,7 @@ La relevancia práctica de esta ficha es limitada: el repositorio no tiene desca
 
 ## Arquitectura y entrenamiento
 
-La única información sobre la arquitectura proviene de la etiqueta `bert` presente en los metadatos de HuggingFace. Un modelo BERT es un encoder transformer con atención bidireccional completa, diseñado para producir representaciones contextuales de cada token. El recuento de parámetros (108.310.272) es consistente con una configuración del orden de BERT-base: 12 capas, dimensión oculta de 768, 12 cabezas de atención y vocabulario de aproximadamente 30.000 tokens, aunque no hay documentación en el repositorio que confirme estos hiperparámetros concretos.
+La única información sobre la arquitectura proviene de la etiqueta `bert` presente en los metadatos de Hugging Face. Un modelo BERT es un encoder transformer con atención bidireccional completa, diseñado para producir representaciones contextuales de cada token. El recuento de parámetros (108.310.272) es consistente con una configuración del orden de BERT-base: 12 capas, dimensión oculta de 768, 12 cabezas de atención y vocabulario de aproximadamente 30.000 tokens, aunque no hay documentación en el repositorio que confirme estos hiperparámetros concretos.
 
 No hay información disponible sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni sobre si se aplicaron técnicas de ajuste como RLHF, DPO o fine-tuning supervisado. La model card no indica si el modelo fue entrenado desde cero o si es un ajuste de un checkpoint previo (por ejemplo, `bert-base-uncased` o `bert-base-multilingual-cased`), ni tampoco si se trata de un modelo completado en una tarea específica o de un encoder genérico. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal u otras variantes.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Pipeline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KHSaad20/itz-a-model | 108.310.272 | no disponible | feature-extraction | no disponible | HuggingFace (0 descargas) |
-| bert-base-uncased | ~110 M | 512 tokens | feature-extraction / fill-mask | Apache 2.0 | HuggingFace (ampliamente utilizado) |
-| bert-base-multilingual-cased | ~178 M | 512 tokens | feature-extraction / fill-mask | Apache 2.0 | HuggingFace (ampliamente utilizado) |
-| roberta-base | ~125 M | 512 tokens | feature-extraction / fill-mask | MIT | HuggingFace (ampliamente utilizado) |
+| KHSaad20/itz-a-model | 108.310.272 | no disponible | feature-extraction | no disponible | Hugging Face (0 descargas) |
+| bert-base-uncased | ~110 M | 512 tokens | feature-extraction / fill-mask | Apache 2.0 | Hugging Face (ampliamente utilizado) |
+| bert-base-multilingual-cased | ~178 M | 512 tokens | feature-extraction / fill-mask | Apache 2.0 | Hugging Face (ampliamente utilizado) |
+| roberta-base | ~125 M | 512 tokens | feature-extraction / fill-mask | MIT | Hugging Face (ampliamente utilizado) |
 
 La comparación se ofrece a modo orientativo: los modelos de referencia de la tabla tienen licencia, idiomas, longitud de contexto y evaluaciones públicas documentadas, mientras que `KHSaad20/itz-a-model` no aporta ninguno de esos datos. No hay información que permita afirmar que su rendimiento sea equiparable al de `bert-base-uncased` u otros encoders de tamaño similar.
 
@@ -84,7 +84,7 @@ La comparación se ofrece a modo orientativo: los modelos de referencia de la ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KHSaad20/itz-a-model
+- Modelo en Hugging Face: https://huggingface.co/KHSaad20/itz-a-model
 - Paper de referencia del cálculo de impacto ambiental citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML mencionada en la plantilla: https://mlco2.github.io/impact#compute
 

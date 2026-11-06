@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brpe-reira/mocov3-multitask-final` es un repositorio de HuggingFace publicado por el usuario brpe-reira que contiene una implementación propia y de escala "tiny" del método MoCo v3 orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni de un release con pesos validados: el propio autor indica explícitamente en la model card que `model.safetensors` es un "initialization checkpoint" válido para pruebas de humo (smoke tests), no un checkpoint con benchmark. El repositorio incluye además el código de ejecución (`pipeline.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
+`brpe-reira/mocov3-multitask-final` es un repositorio de Hugging Face publicado por el usuario brpe-reira que contiene una implementación propia y de escala "tiny" del método MoCo v3 orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni de un release con pesos validados: el propio autor indica explícitamente en la model card que `model.safetensors` es un "initialization checkpoint" válido para pruebas de humo (smoke tests), no un checkpoint con benchmark. El repositorio incluye además el código de ejecución (`pipeline.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
 
 El problema que aborda es el de servir como punto de partida reproducible para experimentar con representaciones visuales auto-supervisadas y con estrategias de fusión multitask, en lugar de ofrecer un modelo listo para producción. Según los metadatos de safetensors, el checkpoint contiene 33.088 parámetros totales, un volumen coherente con un tamaño de repositorio de 0,0 GB y con la etiqueta "tiny". La ventana de contexto, los idiomas soportados y los tipos de cuantización no están declarados en la información disponible.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada y de ámbito estrictamente investigador: sirve 
 | Activación | ReLU |
 | Normalización | InstanceNorm |
 | Optimizador de la receta por defecto | Adam con planificador de warmup constante |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| brpe-reira/mocov3-multitask-final | 33.088 | No disponible | BSD 3-Clause | HuggingFace (0 descargas, 0 likes) | Checkpoint de inicialización sin entrenar |
+| brpe-reira/mocov3-multitask-final | 33.088 | No disponible | BSD 3-Clause | Hugging Face (0 descargas, 0 likes) | Checkpoint de inicialización sin entrenar |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brpe-reira/mocov3-multitask-final
+- Hugging Face: https://huggingface.co/brpe-reira/mocov3-multitask-final
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo, a su autor ni al método MoCo v3; las URLs devueltas (monlycee.net y subdominios asociados) no guardan relación con este artefacto.
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

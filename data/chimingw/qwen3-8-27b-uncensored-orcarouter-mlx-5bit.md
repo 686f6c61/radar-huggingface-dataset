@@ -6,7 +6,7 @@ El modelo `chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-5bit` es una conversi�
 
 La relevancia de este modelo radica en que ofrece una versión sin alineación de seguridad (refusal-removed) del Qwen3.8-27B, diseñada explícitamente para investigación en interpretabilidad, red-teaming y estudio de mecanismos de rechazo. El repositorio incluye advertencias severas sobre su uso: no debe desplegarse en producción sin capas de moderación adicionales. La licencia es Apache 2.0, heredada del modelo base.
 
-Existe una discrepancia notable en los metadatos: el nombre indica 27B de parámetros, pero el campo de safetensors reporta 6.661.141.232 parámetros (~6,66B). Esta inconsistencia probablemente se debe a un error de lectura de HuggingFace sobre un único shard. El payload total de tensores es de 21.446.863.360 bytes (~19,97 GiB), coherente con un modelo de ~27B cuantizado a 5 bits (27B × 0,625 bytes ≈ 16,9 GB) más el proyector de visión (~1 GB). Se asume que el modelo real es de 27B, tal como indica su nombre.
+Existe una discrepancia notable en los metadatos: el nombre indica 27B de parámetros, pero el campo de safetensors reporta 6.661.141.232 parámetros (~6,66B). Esta inconsistencia probablemente se debe a un error de lectura de Hugging Face sobre un único shard. El payload total de tensores es de 21.446.863.360 bytes (~19,97 GiB), coherente con un modelo de ~27B cuantizado a 5 bits (27B × 0,625 bytes ≈ 16,9 GB) más el proyector de visión (~1 GB). Se asume que el modelo real es de 27B, tal como indica su nombre.
 
 ## Especificaciones tecnicas
 
@@ -75,12 +75,12 @@ No hay datos de benchmarks comparativos publicados en la información disponible
 - Riesgo de alucinación: no se ha evaluado específicamente, pero es inherente a los modelos de lenguaje y puede verse agravado por la ausencia de alineación.
 - Idiomas limitados a inglés y chino; el rendimiento en otros idiomas no está garantizado.
 - La licencia Apache 2.0 permite uso comercial, pero las advertencias del autor desaconsejan su uso en producción sin medidas adicionales.
-- La discrepancia en el número de parámetros (6,66B reportados frente a 27B nominales) sugiere un posible error en los metadatos de HuggingFace; se recomienda verificar la integridad de los pesos antes de su uso.
+- La discrepancia en el número de parámetros (6,66B reportados frente a 27B nominales) sugiere un posible error en los metadatos de Hugging Face; se recomienda verificar la integridad de los pesos antes de su uso.
 - No hay información sobre la longitud de contexto soportada, lo que dificulta planificar su uso en tareas de contexto largo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-5bit
+- Modelo en Hugging Face: https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-5bit
 - Versión GGUF del padre (OrcaRouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF
 - Repo GitHub con instrucciones de uso del modelo uncensored: https://github.com/Wassimyounes01/qwen38-uncensored
 - Modelo MLX 5-bit sin abliteración (majentik): https://huggingface.co/majentik/Qwen3.8-27B-MLX-5bit

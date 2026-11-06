@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cyber-LFM3-Stage3 es un adaptador LoRA (PEFT) sobre el modelo base LiquidAI/LFM-1.7B, desarrollado por el usuario Dhdjxkxdnsbzj y publicado en HuggingFace. Su proposito es dotar a un modelo de lenguaje pequeno (SLM) de 1.700 millones de parametros de capacidades duales de seguridad de aplicaciones: analisis estatico de codigo (SAST) y pruebas dinamicas de caja negra (DAST). El adaptador se entrena sobre un corpus unificado de 334 trayectorias cerradas de SAST y DAST destiladas con el Microsoft Agent Framework.
+Cyber-LFM3-Stage3 es un adaptador LoRA (PEFT) sobre el modelo base LiquidAI/LFM-1.7B, desarrollado por el usuario Dhdjxkxdnsbzj y publicado en Hugging Face. Su proposito es dotar a un modelo de lenguaje pequeno (SLM) de 1.700 millones de parametros de capacidades duales de seguridad de aplicaciones: analisis estatico de codigo (SAST) y pruebas dinamicas de caja negra (DAST). El adaptador se entrena sobre un corpus unificado de 334 trayectorias cerradas de SAST y DAST destiladas con el Microsoft Agent Framework.
 
 El modelo aborda un problema concreto: la mayoria de herramientas de AppSec requieren pipelines especializados o modelos grandes desplegados en infraestructura cloud. Este adaptador busca ofrecer capacidades de deteccion de vulnerabilidades en un formato compacto, ejecutable localmente incluso en CPU, lo que facilita su integracion en entornos con restricciones de privacidad o recursos.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dhdjxkxdnsbzj/appsec-lfm3-cyber-adapter-stage3
+- Modelo en Hugging Face: https://huggingface.co/Dhdjxkxdnsbzj/appsec-lfm3-cyber-adapter-stage3
 - Modelo base: https://huggingface.co/LiquidAI/LFM-1.7B
 - Advisory GHSA-JJP7-G2JW-WH3J (referenciado en la model card): https://github.com/advisories/GHSA-JJP7-G2JW-WH3J
 - Microsoft Agent Framework (mencionado en la model card): no disponible enlace directo en la informacion proporcionada

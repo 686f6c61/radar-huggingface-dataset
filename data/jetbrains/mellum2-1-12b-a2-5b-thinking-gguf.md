@@ -61,7 +61,7 @@
    - Formato GGUF: requiere runtimes específicos; no es directamente intercambiable con safetensors sin conversión.
 
    *Enlaces:*
-   - HuggingFace: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
+   - Hugging Face: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
    - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
    - llama.cpp: https://github.com/ggml-org/llama.cpp
    - Ollama: https://ollama.com
@@ -202,7 +202,7 @@ no disponible
 - Formato GGUF: requiere runtimes específicos; no es directamente intercambiable con safetensors sin conversión, lo que puede limitar la integración en infraestructuras estandarizadas que dependan de PyTorch o Transformers.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
+- Hugging Face: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

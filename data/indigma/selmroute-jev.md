@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SeLMRoute-JEV es un repositorio publicado en HuggingFace por el usuario Indigma bajo licencia Apache 2.0. En el momento de la consulta, la informacion disponible es practicamente inexistente: la model card se limita a declarar la licencia, no hay pipeline declarado, no se especifican idiomas soportados y el repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos ni ficheros de modelo descargables.
+SeLMRoute-JEV es un repositorio publicado en Hugging Face por el usuario Indigma bajo licencia Apache 2.0. En el momento de la consulta, la informacion disponible es practicamente inexistente: la model card se limita a declarar la licencia, no hay pipeline declarado, no se especifican idiomas soportados y el repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos ni ficheros de modelo descargables.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. El nombre del repositorio sugiere alguna forma de enrutamiento selectivo (posiblemente "Selective Language Model Route" o similar, con el sufijo JEV sin significado documentado), pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
@@ -74,5 +74,5 @@ No disponible. Sin datos de parametros, contexto, licencia efectiva de uso ni re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Indigma/SeLMRoute-JEV
+- Hugging Face: https://huggingface.co/Indigma/SeLMRoute-JEV
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/whisper-large-gguf
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/whisper-large-gguf
 - Modelo base: https://huggingface.co/openai/whisper-large
 - Commit del modelo base usado: https://huggingface.co/openai/whisper-large/commit/4ef9b41
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

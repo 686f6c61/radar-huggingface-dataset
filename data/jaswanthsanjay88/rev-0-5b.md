@@ -78,10 +78,10 @@ Los datos de los modelos alternativos provienen de su documentacion publica y de
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaswanthsanjay88/rev-0.5b | 0,5 B (base) + adaptador LoRA | no disponible (heredado del base) | Discriminativo, prefill-only, con cabeza de punteros | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Generativo decoder-only | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Encoders tipo BERT-base / ModernBERT-base | ~110 M / ~149 M | 512 / 8.192 tokens | Discriminativo con cabeza de clasificacion | Apache 2.0 / MIT segun variante | HuggingFace, ecosistema maduro |
-| Adaptadores SetFit sobre sentence-transformers | variable (tipicamente <150 M) | segun encoder | Clasificacion few-shot | Apache 2.0 | HuggingFace, ampliamente usado |
+| jaswanthsanjay88/rev-0.5b | 0,5 B (base) + adaptador LoRA | no disponible (heredado del base) | Discriminativo, prefill-only, con cabeza de punteros | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Generativo decoder-only | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Encoders tipo BERT-base / ModernBERT-base | ~110 M / ~149 M | 512 / 8.192 tokens | Discriminativo con cabeza de clasificacion | Apache 2.0 / MIT segun variante | Hugging Face, ecosistema maduro |
+| Adaptadores SetFit sobre sentence-transformers | variable (tipicamente <150 M) | segun encoder | Clasificacion few-shot | Apache 2.0 | Hugging Face, ampliamente usado |
 
 Frente a los encoders clasicos, la propuesta de rev-0.5b aporta el uso de un modelo causal con contexto largo y una cabeza de punteros que puede apuntar a segmentos variables del prompt en lugar de a clases fijas. Frente al propio Qwen2.5-0.5B generativo, la ventaja teorica es la latencia (un unico forward pass), a costa de perder toda capacidad generativa y de no poder responderse preguntas fuera del conjunto de opciones.
 
@@ -102,7 +102,7 @@ No se dispone de comparativas de rendimiento entre estos modelos y rev-0.5b.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaswanthsanjay88/rev-0.5b
+- Modelo en Hugging Face: https://huggingface.co/jaswanthsanjay88/rev-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

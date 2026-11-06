@@ -69,10 +69,10 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Base / tipo | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Donghyun1228/pi05-libero-reachable-probe-lora01-view-large-n300000-1000-20261014` | π₀.₅ (VLA) + LoRA | Ajuste IDM con 300k frames y 1.000 updates | Apache 2.0 | HuggingFace (0 descargas) |
-| `Donghyun1228/pi05-libero-reachable-probe-source-n300000-10000-20261014` | π₀.₅ (VLA) | Variante fuente con 10.000 updates (12,4 GB) | no disponible en la busqueda | HuggingFace |
-| `lerobot/pi05_libero_base` | π₀.₅ (VLA) | Checkpoint base entrenado y evaluado en LIBERO | no disponible en la busqueda | HuggingFace |
-| `lerobot/pi05_libero_finetuned` | π₀.₅ (VLA) | Checkpoint ajustado en LIBERO; solo cabecera de acciones flow-matching | no disponible en la busqueda | HuggingFace / ModelScope |
+| `Donghyun1228/pi05-libero-reachable-probe-lora01-view-large-n300000-1000-20261014` | π₀.₅ (VLA) + LoRA | Ajuste IDM con 300k frames y 1.000 updates | Apache 2.0 | Hugging Face (0 descargas) |
+| `Donghyun1228/pi05-libero-reachable-probe-source-n300000-10000-20261014` | π₀.₅ (VLA) | Variante fuente con 10.000 updates (12,4 GB) | no disponible en la busqueda | Hugging Face |
+| `lerobot/pi05_libero_base` | π₀.₅ (VLA) | Checkpoint base entrenado y evaluado en LIBERO | no disponible en la busqueda | Hugging Face |
+| `lerobot/pi05_libero_finetuned` | π₀.₅ (VLA) | Checkpoint ajustado en LIBERO; solo cabecera de acciones flow-matching | no disponible en la busqueda | Hugging Face / ModelScope |
 
 No se dispone de cifras comparativas de rendimiento (parametros, contexto o tasas de exito) para los modelos alternativos en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de cifras comparativas de rendimiento (parametros, contexto o tasa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-reachable-probe-lora01-view-large-n300000-1000-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-reachable-probe-lora01-view-large-n300000-1000-20261014
 - Checkpoint fuente relacionado: https://huggingface.co/Donghyun1228/pi05-libero-reachable-probe-source-n300000-10000-20261014
 - Dataset de entrenamiento: https://huggingface.co/datasets/Donghyun1228/libero-reachable-random-waypoint-300k-20261014
 - Checkpoint base: https://huggingface.co/lerobot/pi05_libero_base

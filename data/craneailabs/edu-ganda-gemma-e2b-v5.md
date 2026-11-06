@@ -88,7 +88,7 @@ No se dispone de comparativas con modelos externos de la misma categoría (asist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CraneAILabs/edu-ganda-gemma-e2b-v5
+- Modelo en Hugging Face: https://huggingface.co/CraneAILabs/edu-ganda-gemma-e2b-v5
 - Modelo base Gemma-4-E2B: https://huggingface.co/google/gemma-4-e2b-it (referenciado en la model card)
 - Checkpoint hermano v4: https://huggingface.co/CraneAILabs/edu-ganda-gemma-e2b-v4
 - Modelo previo EduGanda-Gemma-3-1B: https://huggingface.co/CraneAILabs/EduGanda-Gemma-3-1B

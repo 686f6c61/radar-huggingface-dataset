@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-E4B-it-DeepSeek-v4-Distill-openvino es un artefacto de despliegue publicado por el usuario mv-amorim en HuggingFace: no se trata de un modelo entrenado desde cero, sino de una conversión al formato OpenVINO del modelo base armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill. La conversión se ha realizado con optimum-intel a través del Space de exportación de OpenVINO, de modo que el resultado son pesos en formato IR (Intermediate Representation) listos para ejecutarse sobre el runtime de Intel.
+Gemma-4-E4B-it-DeepSeek-v4-Distill-openvino es un artefacto de despliegue publicado por el usuario mv-amorim en Hugging Face: no se trata de un modelo entrenado desde cero, sino de una conversión al formato OpenVINO del modelo base armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill. La conversión se ha realizado con optimum-intel a través del Space de exportación de OpenVINO, de modo que el resultado son pesos en formato IR (Intermediate Representation) listos para ejecutarse sobre el runtime de Intel.
 
 El pipeline declarado es image-text-to-text, y las etiquetas incluyen gemma4 y openvino-export, lo que indica que se trata de un modelo multimodal (texto e imagen) de la familia Gemma 4, según la nomenclatura del repositorio base. El identificador sugiere además una variante "E4B" y un proceso de destilación a partir de un supuesto DeepSeek-v4, aunque la model card no aporta detalles sobre el entrenamiento original.
 
@@ -100,7 +100,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mv-amorim/Gemma-4-E4B-it-DeepSeek-v4-Distill-openvino
+- Modelo en Hugging Face: https://huggingface.co/mv-amorim/Gemma-4-E4B-it-DeepSeek-v4-Distill-openvino
 - Modelo base: https://huggingface.co/armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill
 - optimum-intel (herramienta de conversión): https://github.com/huggingface/optimum-intel
 - Space de exportación a OpenVINO: https://huggingface.co/spaces/echarlaix/openvino-export

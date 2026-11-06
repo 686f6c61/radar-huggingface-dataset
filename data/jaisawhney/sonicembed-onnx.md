@@ -69,9 +69,9 @@ El autor advierte que diferencias de unas decimas son ruido y no diferencias rea
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SonicEmbed-ONNX | no disponible | audio truncado a 30 s | texto + audio | Apache-2.0 | HuggingFace (ONNX) |
-| SonicEmbed (PyTorch) | no disponible | audio truncado a 30 s | texto + audio | Apache-2.0 | HuggingFace (PyTorch) |
-| EmbeddingGemma 2 | no disponible | no disponible | texto | no disponible | HuggingFace (ONNX en onnx-community) |
+| SonicEmbed-ONNX | no disponible | audio truncado a 30 s | texto + audio | Apache-2.0 | Hugging Face (ONNX) |
+| SonicEmbed (PyTorch) | no disponible | audio truncado a 30 s | texto + audio | Apache-2.0 | Hugging Face (PyTorch) |
+| EmbeddingGemma 2 | no disponible | no disponible | texto | no disponible | Hugging Face (ONNX en onnx-community) |
 | Otros modelos de retrieval texto-audio | no disponible | no disponible | texto + audio | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ El autor advierte que diferencias de unas decimas son ruido y no diferencias rea
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema y soporte comunitario muy limitados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/jaisawhney/SonicEmbed-ONNX
+- Modelo en Hugging Face: https://huggingface.co/jaisawhney/SonicEmbed-ONNX
 - Modelo base SonicEmbed: https://huggingface.co/jaisawhney/SonicEmbed
 - Grafos ONNX de origen (EmbeddingGemma 2): https://huggingface.co/onnx-community/embeddinggemma-2-ONNX
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js

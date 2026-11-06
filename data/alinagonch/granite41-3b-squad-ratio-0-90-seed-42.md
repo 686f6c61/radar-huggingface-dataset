@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42` es un checkpoint de ajuste fino (fine-tuning) sobre la familia Granite 4.1 de IBM, concretamente sobre la variante de 3B parámetros. El nombre sugiere que ha sido entrenado sobre el dataset SQuAD (Stanford Question Answering Dataset) con una proporción de datos del 90% y una semilla fija (42), lo que apunta a una especialización en tareas de pregunta-respuesta extractiva. Sin embargo, la model card publicada en HuggingFace es una plantilla automática sin información detallada: no se especifica autoría real, licencia, arquitectura concreta, ni procedimiento de entrenamiento.
+El modelo `AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42` es un checkpoint de ajuste fino (fine-tuning) sobre la familia Granite 4.1 de IBM, concretamente sobre la variante de 3B parámetros. El nombre sugiere que ha sido entrenado sobre el dataset SQuAD (Stanford Question Answering Dataset) con una proporción de datos del 90% y una semilla fija (42), lo que apunta a una especialización en tareas de pregunta-respuesta extractiva. Sin embargo, la model card publicada en Hugging Face es una plantilla automática sin información detallada: no se especifica autoría real, licencia, arquitectura concreta, ni procedimiento de entrenamiento.
 
 El modelo base Granite 4.1 es una familia de modelos densos decoder-only desarrollada por IBM, disponible en tamaños de 3B, 8B y 30B, con soporte nativo multilingüe, tool calling, generación de JSON estructurado y ventanas de contexto largas (hasta 512K tokens en la versión base). Este checkpoint concreto, no obstante, carece de documentación pública sobre sus capacidades específicas o su rendimiento, por lo que cualquier afirmación más allá de lo que se infiere del nombre debe tomarse con cautela.
 
@@ -19,7 +19,7 @@ La relevancia de este modelo reside en su potencial como especialista en QA extr
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace: AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42](https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42)
+- [Hugging Face: AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42](https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42)
 - [Documentación de IBM Granite 4.1](https://www.ibm.com/granite/docs/models/granite4-1)
 - [Repositorio GitHub de Granite 4.1 Language Models](https://github.com/ibm-granite/granite-4.1-language-models)
 - [FitMyLLM: Granite 4.1 3B](https://www.fitmyllm.com/model/granite-4.1-3b)

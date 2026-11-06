@@ -86,7 +86,7 @@ Los datos del modelo base y del modelo Thinking provienen de la documentacion pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_childish
+- Modelo en Hugging Face: https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_childish
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de Moodswapper: https://github.com/marcelpadilla/moodswapper
 - Variante previa Depresso: https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed

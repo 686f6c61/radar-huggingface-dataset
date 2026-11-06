@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| **SearchQwen2.5-7B** | 7.62B | no especificado (base 128K) | Apache 2.0 | Agente de búsqueda multi-hop | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7.62B | 128K | Apache 2.0 | Chat general | HuggingFace |
-| SearchQwen2.5-3B | 3B | no especificado | Apache 2.0 | Agente de búsqueda | HuggingFace |
-| SearchQwen3-8B | 8B | no especificado | Apache 2.0 | Agente de búsqueda | HuggingFace |
+| **SearchQwen2.5-7B** | 7.62B | no especificado (base 128K) | Apache 2.0 | Agente de búsqueda multi-hop | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7.62B | 128K | Apache 2.0 | Chat general | Hugging Face |
+| SearchQwen2.5-3B | 3B | no especificado | Apache 2.0 | Agente de búsqueda | Hugging Face |
+| SearchQwen3-8B | 8B | no especificado | Apache 2.0 | Agente de búsqueda | Hugging Face |
 
 En las evaluaciones LLM-judge, SearchQwen2.5-7B supera a su modelo base en +10.68 puntos en el overall de Tool-Call estructurado (44.61 vs 33.33) y +7.63 puntos en la interacción de texto estilo Search-R1 (39.59 vs 31.96). La versión de 3B ofrece una alternativa más ligera con un overall de 35.00 en Tool-Call, mientras que la versión sobre Qwen3-8B alcanza un overall de 50.31, sugiriendo que el método de entrenamiento escala con la capacidad del modelo base.
 
@@ -96,7 +96,7 @@ En las evaluaciones LLM-judge, SearchQwen2.5-7B supera a su modelo base en +10.6
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibaba-pai/SearchQwen2.5-7B
+- Modelo en Hugging Face: https://huggingface.co/alibaba-pai/SearchQwen2.5-7B
 - Dataset complementario: https://huggingface.co/datasets/alibaba-pai/SynSearch-Data
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Plataforma ModelScope de Alibaba: https://modelstudio.alibabacloud.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario mcptester0606 en HuggingFace, descrito en su model card como una versión actualizada de un modelo previo con mejoras significativas en razonamiento profundo, inferencia y reducción de alucinaciones. Según la documentación, el modelo ha sido optimizado mediante un aumento de recursos computacionales y mecanismos algorítmicos de post-entrenamiento, logrando avances notables en tareas de matemáticas, programación y lógica general. En la prueba AIME 2025, la precisión pasó del 70 % al 87,5 %, con un incremento en el uso de tokens por pregunta (de 12 000 a 23 000), lo que sugiere un modo de razonamiento extendido.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario mcptester0606 en Hugging Face, descrito en su model card como una versión actualizada de un modelo previo con mejoras significativas en razonamiento profundo, inferencia y reducción de alucinaciones. Según la documentación, el modelo ha sido optimizado mediante un aumento de recursos computacionales y mecanismos algorítmicos de post-entrenamiento, logrando avances notables en tareas de matemáticas, programación y lógica general. En la prueba AIME 2025, la precisión pasó del 70 % al 87,5 %, con un incremento en el uso de tokens por pregunta (de 12 000 a 23 000), lo que sugiere un modo de razonamiento extendido.
 
 Sin embargo, el repositorio no contiene pesos del modelo (tamaño 0.0 GB) y la model card no especifica arquitectura, número de parámetros, longitud de contexto ni otros detalles técnicos esenciales. El pipeline declarado es `feature-extraction`, aunque las capacidades descritas apuntan a un modelo generativo de texto. Dada la falta de datos concretos, esta ficha se basa únicamente en la información proporcionada por el autor y advierte de las numerosas incógnitas existentes.
 
@@ -87,7 +87,7 @@ La model card compara MyAwesomeModel con tres modelos anónimos (Model1, Model2 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos descargables ni posibilidad de probar el modelo.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos descargables ni posibilidad de probar el modelo.
 - La model card no especifica la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que impide evaluar su viabilidad técnica.
 - Los benchmarks presentados carecen de detalles metodológicos y de identificación de los modelos comparados, por lo que su fiabilidad es incierta.
 - Aunque se menciona una reducción de alucinaciones, no se aportan métricas concretas ni estudios de sesgos.
@@ -97,6 +97,6 @@ La model card compara MyAwesomeModel con tres modelos anónimos (Model1, Model2 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mcptester0606/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/mcptester0606/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

@@ -65,7 +65,7 @@ No se especifican requisitos de hardware en la información proporcionada. Sin e
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. En el contexto de agentes de RL para Atari, existen otros modelos entrenados con DQN y variantes (Double DQN, Dueling DQN) disponibles en HuggingFace, pero no se han encontrado datos específicos para una comparación cuantitativa con este modelo. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. En el contexto de agentes de RL para Atari, existen otros modelos entrenados con DQN y variantes (Double DQN, Dueling DQN) disponibles en Hugging Face, pero no se han encontrado datos específicos para una comparación cuantitativa con este modelo. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cjfrown/unit3-dqn
+- Modelo en Hugging Face: https://huggingface.co/cjfrown/unit3-dqn
 - RL Zoo (framework de entrenamiento): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3 (librería base): https://github.com/DLR-RM/stable-baselines3
 - Stable Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

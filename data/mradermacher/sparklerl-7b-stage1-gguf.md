@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/SparkleRL-7B-Stage1-GGUF](https://huggingface.co/mradermacher/SparkleRL-7B-Stage1-GGUF)
+- [Hugging Face: mradermacher/SparkleRL-7B-Stage1-GGUF](https://huggingface.co/mradermacher/SparkleRL-7B-Stage1-GGUF)
 - [Modelo base: sparkle-reasoning/SparkleRL-7B-Stage1](https://huggingface.co/sparkle-reasoning/SparkleRL-7B-Stage1)
 - [Pagina de descargas de mradermacher para este modelo](https://hf.tst.eu/model#SparkleRL-7B-Stage1-GGUF)
 - [Solicitudes de cuantizacion de mradermacher](https://huggingface.co/mradermacher/model_requests)

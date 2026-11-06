@@ -70,9 +70,9 @@ Datos de referencia de la familia Whisper (corresponden a los modelos base de Op
 
 | Modelo | Parametros | Ventana de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| whisper-large-v3-turbo (este repo) | ~809 M | 30 s | MIT | HuggingFace (espejo) |
-| openai/whisper-large-v3 | ~1550 M | 30 s | MIT | HuggingFace |
-| openai/whisper-medium | ~769 M | 30 s | MIT | HuggingFace |
+| whisper-large-v3-turbo (este repo) | ~809 M | 30 s | MIT | Hugging Face (espejo) |
+| openai/whisper-large-v3 | ~1550 M | 30 s | MIT | Hugging Face |
+| openai/whisper-medium | ~769 M | 30 s | MIT | Hugging Face |
 
 Frente a whisper-large-v3, la variante turbo reduce aproximadamente a la mitad el numero de parametros gracias al decodificador mas ligero, a costa de una precision ligeramente inferior en algunos escenarios. Frente a whisper-medium, turbo mantiene la calidad del encoder large con un decodificador pequeno, por lo que suele ofrecer mejor precision con un coste de inferencia similar.
 
@@ -88,7 +88,7 @@ Frente a whisper-large-v3, la variante turbo reduce aproximadamente a la mitad e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/P2Enjoy/whisper-large-v3-turbo
+- Repositorio en Hugging Face: https://huggingface.co/P2Enjoy/whisper-large-v3-turbo
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Revision fijada del modelo base: https://huggingface.co/openai/whisper-large-v3-turbo/tree/41f01f3fe87f28c78e2fbf8b568835947dd65ed9
 - Repositorio oficial de OpenAI Whisper: https://github.com/openai/whisper

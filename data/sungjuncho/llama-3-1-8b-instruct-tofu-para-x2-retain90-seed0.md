@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino completo (full fine-tune) de `meta-llama/Llama-3.1-8B-Instruct` desarrollado por el usuario de HuggingFace `sungjuncho` como parte de la colección TOFU-para, dedicada al estudio del *unlearning* (desaprendizaje) en modelos de lenguaje. No es un modelo de propósito general, sino una pieza de laboratorio: representa el "modelo de referencia" de aquello que sería un modelo que nunca hubiese aprendido los hechos del conjunto `forget10` de TOFU, y sirve además como modelo *retain* para evaluar la calidad del olvido en experimentos de unlearning.
+Este modelo es un ajuste fino completo (full fine-tune) de `meta-llama/Llama-3.1-8B-Instruct` desarrollado por el usuario de Hugging Face `sungjuncho` como parte de la colección TOFU-para, dedicada al estudio del *unlearning* (desaprendizaje) en modelos de lenguaje. No es un modelo de propósito general, sino una pieza de laboratorio: representa el "modelo de referencia" de aquello que sería un modelo que nunca hubiese aprendido los hechos del conjunto `forget10` de TOFU, y sirve además como modelo *retain* para evaluar la calidad del olvido en experimentos de unlearning.
 
 La arquitectura subyacente es un transformer decoder-only de Meta con 8.030.261.248 parámetros (8B), licencia Llama 3.1 Community License y pesos en safetensors. El entrenamiento se realizó sobre el split `retain90` de TOFU (con erratas en nombres corregidas) más dos versiones parafraseadas de cada par pregunta-respuesta, sumando 10.800 filas, durante 5 épocas con lr 1e-5 y batch efectivo 32, usando la plantilla de chat oficial de Llama 3.1 y el código de `open-unlearning`.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (TOFU-para x2_retain90 seed0) | 8,03B | no disponible | Referencia de unlearning | llama3.1 | HuggingFace, 248 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128K | Chat general | llama3.1 | HuggingFace, ampliamente usado |
-| Otros checkpoints de la coleccion TOFU-para | 8,03B | no disponible | Variantes de unlearning | llama3.1 | HuggingFace (coleccion `sungjuncho/tofu-para-untraining-vs-unlearning`) |
+| Este modelo (TOFU-para x2_retain90 seed0) | 8,03B | no disponible | Referencia de unlearning | llama3.1 | Hugging Face, 248 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128K | Chat general | llama3.1 | Hugging Face, ampliamente usado |
+| Otros checkpoints de la coleccion TOFU-para | 8,03B | no disponible | Variantes de unlearning | llama3.1 | Hugging Face (coleccion `sungjuncho/tofu-para-untraining-vs-unlearning`) |
 | Modelos de unlearning TOFU de referencia (p. ej. los de `open-unlearning`) | variable | variable | Unlearning | variable | GitHub/HuggingFace |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0
 - Colección TOFU-para: https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

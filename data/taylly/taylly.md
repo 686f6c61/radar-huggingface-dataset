@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taylly/Taylly es un repositorio de modelo publicado en HuggingFace por el usuario Taylly el 21 de septiembre de 2024 y actualizado por ultima vez el 10 de septiembre de 2026. La unica informacion verificable disponible es la licencia (openrail), el tamano del repositorio (28,2 GB) y las etiquetas declaradas (license:openrail, region:us). No se ha publicado pipeline, idiomas soportados, arquitectura, numero de parametros ni documentacion tecnica de ningun tipo.
+Taylly/Taylly es un repositorio de modelo publicado en Hugging Face por el usuario Taylly el 21 de septiembre de 2024 y actualizado por ultima vez el 10 de septiembre de 2026. La unica informacion verificable disponible es la licencia (openrail), el tamano del repositorio (28,2 GB) y las etiquetas declaradas (license:openrail, region:us). No se ha publicado pipeline, idiomas soportados, arquitectura, numero de parametros ni documentacion tecnica de ningun tipo.
 
 La model card del autor no contiene mas que el bloque de metadatos con la licencia; no hay descripcion del modelo, del entrenamiento, del dataset ni de las capacidades. Las busquedas web realizadas no han devuelto ningun resultado relacionado con este modelo: los enlaces obtenidos corresponden a foros y sitios sin ninguna vinculacion tecnica con Taylly, por lo que no aportan datos utilizables.
 
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Taylly/Taylly
+- Hugging Face: https://huggingface.co/Taylly/Taylly
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion del autor: no disponible

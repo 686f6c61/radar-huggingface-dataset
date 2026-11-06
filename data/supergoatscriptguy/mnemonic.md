@@ -91,7 +91,7 @@ No se dispone de datos comparativos en la informacion proporcionada. A continuac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SuperGoatScriptGuy/Mnemonic
+- Modelo en Hugging Face: https://huggingface.co/SuperGoatScriptGuy/Mnemonic
 - Repositorio en GitHub: https://github.com/Supergoatscriptguy/Mnemonic
 - Perfil de GitHub del autor: https://github.com/Supergoatscriptguy/
 - Motor de chat en CPU (ruta dentro del repositorio): chat/engine.asm

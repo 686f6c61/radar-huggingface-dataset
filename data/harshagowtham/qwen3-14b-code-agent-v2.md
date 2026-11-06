@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-14b-code-agent-v2 es un modelo derivado de Qwen/Qwen3-14B publicado por el usuario harshagowtham en HuggingFace. Consiste en un fine-tune orientado a tareas de agente de codigo, al que se le ha aplicado una tecnica propietaria de "weight surgery" sobre 13 tensores de proyeccion residual y se le ha fusionado un adaptador LoRA para tool calling (MCP). El resultado se distribuye como safetensors planos, sin necesidad de aplicar parches ni cargar adaptadores por separado.
+qwen3-14b-code-agent-v2 es un modelo derivado de Qwen/Qwen3-14B publicado por el usuario harshagowtham en Hugging Face. Consiste en un fine-tune orientado a tareas de agente de codigo, al que se le ha aplicado una tecnica propietaria de "weight surgery" sobre 13 tensores de proyeccion residual y se le ha fusionado un adaptador LoRA para tool calling (MCP). El resultado se distribuye como safetensors planos, sin necesidad de aplicar parches ni cargar adaptadores por separado.
 
 El modelo mantiene la arquitectura original de Qwen3-14B: 40 capas, dimension oculta de 5120 y una ventana de contexto nativa de 32k tokens. Esta pensado para servir como agente de codigo con soporte de llamadas a herramientas y modo thinking, y es compatible con transformers, vLLM y un motor propio del autor (llm_engine) que aplica cuantizacion de 4 bits automatica en GPUs con menos de 24 GB de VRAM.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-14b-code-agent-v2 | 14B | 32k | Apache-2.0 | HuggingFace, 0 descargas | Fine-tune + weight surgery + LoRA MCP fusionado; sin benchmarks |
-| Qwen/Qwen3-14B | 14B | 32k | Apache-2.0 | HuggingFace, ampliamente usado | Modelo base oficial; benchmarks publicados por el autor original |
-| Qwen2.5-Coder-14B | 14B | 32k (128k con YaRN) | Apache-2.0 | HuggingFace | Alternativa oficial orientada a codigo; no disponible en la informacion proporcionada para comparar rendimiento con este modelo |
+| qwen3-14b-code-agent-v2 | 14B | 32k | Apache-2.0 | Hugging Face, 0 descargas | Fine-tune + weight surgery + LoRA MCP fusionado; sin benchmarks |
+| Qwen/Qwen3-14B | 14B | 32k | Apache-2.0 | Hugging Face, ampliamente usado | Modelo base oficial; benchmarks publicados por el autor original |
+| Qwen2.5-Coder-14B | 14B | 32k (128k con YaRN) | Apache-2.0 | Hugging Face | Alternativa oficial orientada a codigo; no disponible en la informacion proporcionada para comparar rendimiento con este modelo |
 
 No se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa con las alternativas citadas.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshagowtham/qwen3-14b-code-agent-v2
+- Modelo en Hugging Face: https://huggingface.co/harshagowtham/qwen3-14b-code-agent-v2
 - Repo del fine-tune base: https://huggingface.co/harshagowtham/qwen3-14b-code-agent
 - Repo de weight surgery (incluye SURGERY_REPORT.md): https://huggingface.co/harshagowtham/qwen3-14b-code-agent-wsurgery
 - Adaptador LoRA MCP: https://huggingface.co/harshagowtham/qwen3-14b-code-agent-mcp-lora

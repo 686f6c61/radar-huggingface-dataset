@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Koi es un modelo publicado en HuggingFace por el usuario w1deson bajo el identificador `w1deson/koi`. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: licencia Apache 2.0, etiqueta de region `us` y fechas de creacion y actualizacion identicas (22 de septiembre de 2026), lo que indica que el repositorio no ha recibido actualizaciones posteriores a su publicacion inicial.
+Koi es un modelo publicado en Hugging Face por el usuario w1deson bajo el identificador `w1deson/koi`. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: licencia Apache 2.0, etiqueta de region `us` y fechas de creacion y actualizacion identicas (22 de septiembre de 2026), lo que indica que el repositorio no ha recibido actualizaciones posteriores a su publicacion inicial.
 
 La model card del autor no contiene ninguna seccion tecnica: unicamente la declaracion de licencia. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni formato de pesos. Tampoco se ha publicado informacion asociada en los resultados de busqueda web disponibles, que no arrojan ninguna referencia al modelo.
 
@@ -77,5 +77,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/w1deson/koi
+- Repositorio en Hugging Face: https://huggingface.co/w1deson/koi
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en los resultados de busqueda web disponibles.

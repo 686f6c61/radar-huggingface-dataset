@@ -92,7 +92,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lernex/Metis-1.6-Praxis
+- Modelo en Hugging Face: https://huggingface.co/Lernex/Metis-1.6-Praxis
 - Modelo base: https://huggingface.co/Lernex/Metis-1.6-Praxis-Base
 - Variante hermana Metis-1.6 Logos: https://huggingface.co/Lernex/Metis-1.6-Logos
 - Colección Metis-1.6: https://huggingface.co/collections/Lernex/metis-16-6adc52e150d985721d894f6b

@@ -55,5 +55,5 @@ No disponible. No existe categoría de modelos de IA comparable, ya que este rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/woz-vault
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/woz-vault
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web.

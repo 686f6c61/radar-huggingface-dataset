@@ -16,7 +16,7 @@ El modelo base, desarrollado por Liquid AI, combina bloques de convolución LIV 
 | Longitud de contexto | 2048 tokens (máximo en esta exportación ExecuTorch) |
 | Tipos de cuantizacion | 8da4w (8-bit activaciones, 4-bit pesos) + 8-bit embeddings |
 | Idiomas soportados | No disponible (no especificado por el autor) |
-| Licencia | LFM Open License v1.0 (según model card; en HuggingFace figura como "other") |
+| Licencia | LFM Open License v1.0 (según model card; en Hugging Face figura como "other") |
 | Formato de pesos | ExecuTorch `.pte` (252,8 MB) |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ LFM2-350M es más pequeño que Qwen3-0.6B, pero su arquitectura híbrida le perm
 
 - Contexto limitado a 2048 tokens en esta exportación; el modelo base podría soportar más, pero esta versión está fijada a ese valor.
 - No se han evaluado sesgos ni alucinaciones en esta versión; el modelo base puede presentar los sesgos típicos de los LLMs entrenados con datos web.
-- La licencia LFM Open License v1.0 tiene términos específicos; es necesario revisarlos antes de uso comercial. En HuggingFace figura como "other", lo que indica que no es una licencia estándar.
+- La licencia LFM Open License v1.0 tiene términos específicos; es necesario revisarlos antes de uso comercial. En Hugging Face figura como "other", lo que indica que no es una licencia estándar.
 - El archivo `.pte` requiere kernels cuantizados específicos de ExecuTorch; si no se cargan correctamente, el modelo no se ejecutará (error `kernel 'quantized_decomposed::embedding_byte.dtype_out' not found`).
 - No se ha verificado el funcionamiento en teléfonos reales; la medición de velocidad se realizó en un Mac arm64.
 - El modelo no soporta tool calling ni funciones de agente, por lo que no es adecuado para aplicaciones que requieran interacción con APIs externas.
@@ -87,7 +87,7 @@ LFM2-350M es más pequeño que Qwen3-0.6B, pero su arquitectura híbrida le perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/LFM2-350M-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/LFM2-350M-ExecuTorch
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-350M
 - Colección ExecuTorch Model Zoo: https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo
 - Ejemplo oficial de LFM2 en ExecuTorch: https://github.com/pytorch/executorch/tree/main/examples/models/lfm2

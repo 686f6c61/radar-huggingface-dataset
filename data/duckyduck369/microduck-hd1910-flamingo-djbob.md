@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-hd1910-flamingo-djbob` es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo HD-1910 Microduck, publicada por el usuario duckyduck369 en HuggingFace. No es un modelo de lenguaje: es una política de locomoción exportada a ONNX que implementa la habilidad de mantenerse sobre una sola pata a la orden, con un ciclo de alternancia entre patas. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB (los pesos concretos no se detallan en la información disponible).
+`microduck-hd1910-flamingo-djbob` es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo HD-1910 Microduck, publicada por el usuario duckyduck369 en Hugging Face. No es un modelo de lenguaje: es una política de locomoción exportada a ONNX que implementa la habilidad de mantenerse sobre una sola pata a la orden, con un ciclo de alternancia entre patas. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB (los pesos concretos no se detallan en la información disponible).
 
 La relevancia del modelo es acotada pero técnicamente interesante: documenta de forma exhaustiva el pipeline de entrenamiento (tarea Mjlab, curricula, pesos de recompensa, aleatorización de dominio, planta física con hash), lo que lo convierte en un artefacto reproducible para investigación en RL aplicado a robótica de bajo coste. Sin embargo, el propio autor lo marca explícitamente como **CANDIDATE (fails its acceptance gates, not robot-tested)**: no ha sido validado en hardware real y suspende dos de sus puertas de aceptación.
 
@@ -96,6 +96,6 @@ No disponible. La información proporcionada no incluye otras políticas de la f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/duckyduck369/microduck-hd1910-flamingo-djbob
+- Hugging Face: https://huggingface.co/duckyduck369/microduck-hd1910-flamingo-djbob
 - Vídeo de replay: https://huggingface.co/duckyduck369/microduck-hd1910-flamingo-djbob/resolve/main/replay.mp4
 - Otros enlaces (papers, blogs, repos, demos): no disponibles en la información proporcionada.

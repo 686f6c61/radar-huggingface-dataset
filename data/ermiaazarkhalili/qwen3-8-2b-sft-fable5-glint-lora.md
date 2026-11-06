@@ -76,8 +76,8 @@ No se dispone de datos de rendimiento comparativo para establecer una valoracion
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-SFT-Fable5-Glint-LoRA
-- Modelo fusionado en HuggingFace: https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-SFT-Fable5-Glint
+- Adaptador LoRA en Hugging Face: https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-SFT-Fable5-Glint-LoRA
+- Modelo fusionado en Hugging Face: https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-SFT-Fable5-Glint
 - Dataset de entrenamiento: https://huggingface.co/datasets/ermiaazarkhalili/Fable-5-Glint-Clean
 - Repositorio oficial de la serie Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Variante de 4B del mismo autor: https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint

@@ -25,7 +25,7 @@ Su relevancia practica es doble: por un lado, ofrece 25 cuantizaciones distintas
 
 La informacion disponible no detalla la arquitectura interna del modelo base jialinyyzz/humanizer: no se especifica si es un transformer denso, un MoE o una arquitectura hibrida, ni el numero de capas, cabezas de atencion o dimension del modelo. La unica pista estructural es la etiqueta `gemma4`, que situa el modelo en la familia Gemma de Google. La model card de esta cuantizacion se limita a describir el proceso de cuantizacion, no el entrenamiento del modelo original.
 
-Tampoco se documentan los datos de entrenamiento: no hay informacion sobre el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Lo que si se documenta es el pipeline de post-procesado por parte de mradermacher: las cuantizaciones se han generado a partir de los pesos en formato HuggingFace (`convert_type: hf`) con `quantize_version: 2` y `output_tensor_quantised: 1`, usando una importance matrix (imatrix) generada con el corpus `nicoboss`, lo que segun el autor produce cuantizaciones de mayor calidad que las estaticas disponibles en el repositorio paralelo humanizer-GGUF.
+Tampoco se documentan los datos de entrenamiento: no hay informacion sobre el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Lo que si se documenta es el pipeline de post-procesado por parte de mradermacher: las cuantizaciones se han generado a partir de los pesos en formato Hugging Face (`convert_type: hf`) con `quantize_version: 2` y `output_tensor_quantised: 1`, usando una importance matrix (imatrix) generada con el corpus `nicoboss`, lo que segun el autor produce cuantizaciones de mayor calidad que las estaticas disponibles en el repositorio paralelo humanizer-GGUF.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ No se dispone de datos comparativos en la informacion proporcionada. No hay benc
 
 | Modelo | Relacion | Parametros | Formato | Licencia |
 |---|---|---|---|---|
-| jialinyyzz/humanizer | Modelo base sin cuantizar | 11,9 B (safetensors) | safetensors (HuggingFace) | Apache 2.0 (segun metadatos del repo derivado) |
+| jialinyyzz/humanizer | Modelo base sin cuantizar | 11,9 B (safetensors) | safetensors (Hugging Face) | Apache 2.0 (segun metadatos del repo derivado) |
 | mradermacher/humanizer-GGUF | Cuantizaciones estaticas del mismo modelo base | 11,9 B | GGUF | Apache 2.0 |
 | mradermacher/humanizer-i1-GGUF | Cuantizaciones con imatrix (este repositorio) | 11,9 B | GGUF | Apache 2.0 |
 

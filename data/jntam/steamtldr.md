@@ -83,9 +83,9 @@ No se han publicado mas resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | F1 (negativa) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SteamTLDR | TF-IDF + regresion logistica | no disponible (25 MB) | no aplica | 0,902 | MIT | HuggingFace (joblib) |
-| DistilBERT sentiment generico | Transformer encoder | ~66 M | 512 tokens | 0,83 | segun variante | HuggingFace |
-| Modelos BERT multilingues de sentimiento | Transformer encoder | ~110 M | 512 tokens | no disponible en esta prueba | segun variante | HuggingFace |
+| SteamTLDR | TF-IDF + regresion logistica | no disponible (25 MB) | no aplica | 0,902 | MIT | Hugging Face (joblib) |
+| DistilBERT sentiment generico | Transformer encoder | ~66 M | 512 tokens | 0,83 | segun variante | Hugging Face |
+| Modelos BERT multilingues de sentimiento | Transformer encoder | ~110 M | 512 tokens | no disponible en esta prueba | segun variante | Hugging Face |
 
 La comparacion se limita a lo declarado por el autor. No hay datos publicados que permitan comparar con clasificadores especificos de resenas de Steam de otros autores. La ventaja de SteamTLDR es el coste (CPU, 25 MB) y el ajuste al dominio; su desventaja es la ausencia de comprension contextual, que los transformers si ofrecen para negaciones y sarcasmo.
 
@@ -104,6 +104,6 @@ La comparacion se limita a lo declarado por el autor. No hay datos publicados qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jntam/steamtldr
+- Modelo en Hugging Face: https://huggingface.co/jntam/steamtldr
 - Codigo y pipeline de entrenamiento: https://github.com/jntm7/steam-tldr
 - Aplicacion SteamTLDR: https://steamtldr.streamlit.app

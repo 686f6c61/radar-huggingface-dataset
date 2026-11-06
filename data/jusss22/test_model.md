@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Test_Model` es un repositorio publicado en HuggingFace por el usuario Jusss22. Se trata de un modelo con licencia MIT, creado el 14 de septiembre de 2026, que actualmente no registra descargas ni "likes". La model card asociada contiene únicamente la declaración de licencia, sin información adicional sobre arquitectura, tamaño, contexto o capacidades.
+El modelo `Test_Model` es un repositorio publicado en Hugging Face por el usuario Jusss22. Se trata de un modelo con licencia MIT, creado el 14 de septiembre de 2026, que actualmente no registra descargas ni "likes". La model card asociada contiene únicamente la declaración de licencia, sin información adicional sobre arquitectura, tamaño, contexto o capacidades.
 
 No se dispone de documentación técnica ni de resultados de búsqueda web relevantes, ya que las consultas realizadas no han arrojado información específica sobre este modelo. Por tanto, no es posible determinar qué tipo de modelo es (texto, imagen, audio, etc.), ni evaluar su rendimiento o idoneidad para casos de uso reales.
 
@@ -63,5 +63,5 @@ No se puede realizar una comparativa, ya que no se conocen las caracteristicas d
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Jusss22/Test_Model](https://huggingface.co/Jusss22/Test_Model)
+- Hugging Face: [https://huggingface.co/Jusss22/Test_Model](https://huggingface.co/Jusss22/Test_Model)
 - Model card (unica informacion): [https://huggingface.co/Jusss22/Test_Model/raw/main/README.md](https://huggingface.co/Jusss22/Test_Model/raw/main/README.md)

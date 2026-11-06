@@ -15,7 +15,7 @@ El modelo subyacente, Qwen3.8-27B, es un LLM denso de 27 000 millones de paráme
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262 000 tokens |
 | Tipos de cuantizacion | No aplica (pesos BF16 sin cuantizar; compresion lossless `.tic`) |
-| Idiomas soportados | Ingles (segun etiqueta `language: en` en HuggingFace) |
+| Idiomas soportados | Ingles (segun etiqueta `language: en` en Hugging Face) |
 | Licencia | Apache-2.0 (pesos del modelo original y del paquete `.tic`); el runtime y compilador de ISIRO tienen su propia EULA |
 | Formato de pesos | `.tic` (formato propietario de ISIRO); el modelo original usa safetensors/BF16 |
 
@@ -31,7 +31,7 @@ No se dispone de detalles sobre el numero de capas, dimensiones ocultas, atencio
 - Entrada multimodal nativa: procesa imagenes y video ademas de texto, lo que permite tareas de comprension visual, analisis de documentos escaneados y descripcion de contenido audiovisual.
 - Soporte de flujos agénticos: el modelo esta disenado para manejar herramientas y retroalimentacion del entorno en tareas multi-paso, mejorando la fiabilidad en ejecuciones largas.
 - Planificacion avanzada: segun la documentacion de Jetson AI Lab, muestra mejor planificacion y manejo de retroalimentacion de herramientas que generaciones anteriores.
-- Capacidades multilingues: aunque la etiqueta de HuggingFace indica solo ingles, el modelo base Qwen3.8-27B probablemente soporta otros idiomas, pero no hay confirmacion explicita en la informacion disponible.
+- Capacidades multilingues: aunque la etiqueta de Hugging Face indica solo ingles, el modelo base Qwen3.8-27B probablemente soporta otros idiomas, pero no hay confirmacion explicita en la informacion disponible.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ No se dispone de una comparativa directa con otros modelos en la informacion pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isiroai/Qwen3.8-27B-TIC
+- Repositorio Hugging Face: https://huggingface.co/isiroai/Qwen3.8-27B-TIC
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo original: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia completa de Qwen3.8-27B (Lovable App Blog): https://lovableapp.org/blog/qwen3-8-27b

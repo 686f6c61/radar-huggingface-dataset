@@ -79,7 +79,7 @@ No se dispone de datos cuantitativos de rendimiento para comparar.
 
 ## Enlaces
 
-- [HuggingFace: jhelsby/OvDSGG](https://huggingface.co/jhelsby/OvDSGG)
+- [Hugging Face: jhelsby/OvDSGG](https://huggingface.co/jhelsby/OvDSGG)
 - [arXiv: 2608.14835](https://arxiv.org/abs/2608.14835)
 - [Artículo HTML en arXiv](https://arxiv.org/html/2608.14835v1)
 - [GitHub: jhelsby/OvDSGG](https://github.com/jhelsby/OvDSGG)

@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/swdjojo/Qwen3.8-27B-MLX-oQ8e
+- Repositorio Hugging Face: https://huggingface.co/swdjojo/Qwen3.8-27B-MLX-oQ8e
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión BF16 previa: https://huggingface.co/swdjojo/Qwen3.8-27B-MLX-BF16
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

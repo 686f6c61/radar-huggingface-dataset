@@ -4,7 +4,7 @@
 
 ## Resumen
 
-deberta-pii-owndlp es un modelo de clasificacion de tokens (token classification) publicado por el usuario Vaibhav3311v en HuggingFace, consistente en un ajuste fino de microsoft/deberta-v3-base sobre un corpus de datos no identificado (la model card indica literalmente "None dataset"). Su tarea es la deteccion de informacion personal identificable (PII) en texto: nombres de persona, correos, telefonos, direcciones, organizaciones, documentos de identidad indios (Aadhaar, PAN, GSTIN, IFSC), datos financieros (IBAN, tarjeta de credito, cuenta bancaria), credenciales, direccion IP y condiciones medicas, entre otras 19-20 etiquetas.
+deberta-pii-owndlp es un modelo de clasificacion de tokens (token classification) publicado por el usuario Vaibhav3311v en Hugging Face, consistente en un ajuste fino de microsoft/deberta-v3-base sobre un corpus de datos no identificado (la model card indica literalmente "None dataset"). Su tarea es la deteccion de informacion personal identificable (PII) en texto: nombres de persona, correos, telefonos, direcciones, organizaciones, documentos de identidad indios (Aadhaar, PAN, GSTIN, IFSC), datos financieros (IBAN, tarjeta de credito, cuenta bancaria), credenciales, direccion IP y condiciones medicas, entre otras 19-20 etiquetas.
 
 El modelo cuenta con 183.861.543 parametros en formato safetensors y hereda la arquitectura DeBERTa-v3 (attention disentangled y embedding sharing con gradient disentanglement), con una longitud de contexto limitada a los 512 tokens del modelo base. Se distribuye bajo licencia MIT y esta etiquetado como compatible con Inference Endpoints.
 
@@ -32,7 +32,7 @@ Su relevancia practica es limitada en el estado actual: la model card reporta un
 
 La arquitectura es la de DeBERTa-v3-base: un encoder transformer que sustituye el mecanismo de atencion estandar por atencion disentangled (contenido y posicion se codifican en vectores separados) e introduce gradient-disentangled embedding sharing, ademas de un preentrenamiento estilo ELECTRA con deteccion de tokens reemplazados en lugar del enmascaramiento clasico. Sobre ese backbone se anade una cabeza de clasificacion por token para las etiquetas BIO del esquema de PII. El modelo resultante tiene 183,9 millones de parametros, coherente con el recuento del modelo base.
 
-El ajuste fino se realizo con el Trainer de HuggingFace. Los hiperparametros declarados son: learning rate 2e-06, train_batch_size 8, eval_batch_size 32, gradient_accumulation_steps 4 (batch efectivo 32), seed 42, optimizador AdamW (variante torch fused, betas 0.9/0.999, epsilon 1e-08), scheduler coseno con 260 pasos de warmup y 4 epocas. No se documenta la composicion del dataset, el numero de tokens de entrenamiento ni si hubo etapas de RLHF/DPO (no aplicables a un modelo discriminativo de este tipo). La model card no aporta ninguna innovacion tecnica adicional ni describe el proceso de anotacion.
+El ajuste fino se realizo con el Trainer de Hugging Face. Los hiperparametros declarados son: learning rate 2e-06, train_batch_size 8, eval_batch_size 32, gradient_accumulation_steps 4 (batch efectivo 32), seed 42, optimizador AdamW (variante torch fused, betas 0.9/0.999, epsilon 1e-08), scheduler coseno con 260 pasos de warmup y 4 epocas. No se documenta la composicion del dataset, el numero de tokens de entrenamiento ni si hubo etapas de RLHF/DPO (no aplicables a un modelo discriminativo de este tipo). La model card no aporta ninguna innovacion tecnica adicional ni describe el proceso de anotacion.
 
 ## Capacidades
 
@@ -89,16 +89,16 @@ En el pico intermedio (step 200) destacan F1 de 1.0 en Date Of Birth, Contact Ph
 - El modelo cabe sin problema en cualquier GPU de consumo: GTX 1060 6 GB, RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o CPU para lotes pequenos.
 - GPU recomendadas para produccion: cualquiera con al menos 4 GB de VRAM; para alto throughput basta una T4, L4, A10G o similar. No requiere A100 ni H100.
 - Inferencia en CPU: viable, especialmente con ONNX Runtime o cuantizacion dinamica int8; el cuello de botella sera el throughput, no la memoria.
-- Opciones de despliegue: pipeline de transformers, Inference Endpoints de HuggingFace (el repo esta marcado como `endpoints_compatible`), ONNX Runtime, TorchScript, NVIDIA Triton o TorchServe, y wrappers propios con FastAPI. vLLM, TGI, llama.cpp y Ollama estan orientados a modelos generativos y no son aplicables directamente a un encoder de clasificacion de tokens.
+- Opciones de despliegue: pipeline de transformers, Inference Endpoints de Hugging Face (el repo esta marcado como `endpoints_compatible`), ONNX Runtime, TorchScript, NVIDIA Triton o TorchServe, y wrappers propios con FastAPI. vLLM, TGI, llama.cpp y Ollama estan orientados a modelos generativos y no son aplicables directamente a un encoder de clasificacion de tokens.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deberta-pii-owndlp | 183,9 M | 512 tokens | Token classification (PII) | MIT | HuggingFace, 0 descargas |
-| microsoft/deberta-v3-base | 184 M aprox. | 512 tokens | Modelo base (no afinado para PII) | MIT | HuggingFace, ampliamente usado |
-| Modelos NER genericos basados en BERT/RoBERTa (por ejemplo dslim/bert-base-NER) | 110 M aprox. | 512 tokens | NER de 4 categorias (PER, ORG, LOC, MISC) | no verificada en esta busqueda | HuggingFace |
+| deberta-pii-owndlp | 183,9 M | 512 tokens | Token classification (PII) | MIT | Hugging Face, 0 descargas |
+| microsoft/deberta-v3-base | 184 M aprox. | 512 tokens | Modelo base (no afinado para PII) | MIT | Hugging Face, ampliamente usado |
+| Modelos NER genericos basados en BERT/RoBERTa (por ejemplo dslim/bert-base-NER) | 110 M aprox. | 512 tokens | NER de 4 categorias (PER, ORG, LOC, MISC) | no verificada en esta busqueda | Hugging Face |
 
 La comparacion de rendimiento no es posible con los datos disponibles: este repositorio no publica benchmarks en el model-index y su evaluacion final reportada es F1 0.0, mientras que las alternativas tienen metricas publicas en sus propias model cards. En cobertura de etiquetas, deberta-pii-owndlp es mucho mas especifico (identificadores indios, datos financieros, credenciales) que un NER generico. No se han identificado en la informacion proporcionada otros modelos comparables de PII con benchmarks verificables.
 
@@ -118,7 +118,7 @@ La comparacion de rendimiento no es posible con los datos disponibles: este repo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vaibhav3311v/deberta-pii-owndlp
+- Modelo en Hugging Face: https://huggingface.co/Vaibhav3311v/deberta-pii-owndlp
 - Modelo base microsoft/deberta-v3-base: https://huggingface.co/microsoft/deberta-v3-base
 - Paper de DeBERTa-v3 (He et al., "DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing"): https://arxiv.org/abs/2111.09543
 - Repositorio oficial de DeBERTa en GitHub: https://github.com/microsoft/DeBERTa

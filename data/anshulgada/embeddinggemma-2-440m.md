@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmbeddingGemma 2 (440M) es un modelo de embeddings publicado por el usuario Anshulgada en HuggingFace, derivado del modelo base `google/embeddinggemma-2` de Google DeepMind. No se trata de un modelo nuevo entrenado desde cero, sino de un checkpoint aislado y modularizado de los pesos base (~440M parámetros, 438.760.472 según los safetensors del repositorio), pensado para facilitar el fine-tuning ligero downstream, la generación aumentada por recuperación (RAG) y la similitud semántica zero-shot.
+EmbeddingGemma 2 (440M) es un modelo de embeddings publicado por el usuario Anshulgada en Hugging Face, derivado del modelo base `google/embeddinggemma-2` de Google DeepMind. No se trata de un modelo nuevo entrenado desde cero, sino de un checkpoint aislado y modularizado de los pesos base (~440M parámetros, 438.760.472 según los safetensors del repositorio), pensado para facilitar el fine-tuning ligero downstream, la generación aumentada por recuperación (RAG) y la similitud semántica zero-shot.
 
 El modelo genera vectores de 768 dimensiones con soporte nativo de Matryoshka Representation Learning (MRL), lo que permite truncar los embeddings a 512d, 256d o 128d con una simple normalización posterior, reduciendo el coste de almacenamiento e indexación en bases vectoriales. Su ventana de contexto es de 8.192 tokens y usa el tokenizador SentencePiece de Gemma 2 con un vocabulario de 256.000 tokens.
 
@@ -33,7 +33,7 @@ Sobre el entrenamiento del modelo base original (número de tokens, composición
 - Extracción de características con salida de 768 dimensiones, truncable a 512d, 256d o 128d mediante MRL.
 - Búsqueda semántica zero-shot sobre consultas y documentos en inglés.
 - Base adecuada para fine-tuning downstream ligero (el propio autor lo demuestra con su variante Tabman).
-- Compatibilidad con la librería sentence-transformers y con Transformers de HuggingFace.
+- Compatibilidad con la librería sentence-transformers y con Transformers de Hugging Face.
 - Según la model card, el checkpoint incluye backbone de texto y visión, aunque no se documenta en el README cómo explotar la modalidad visual.
 - No es un modelo generativo: no soporta generación de texto, razonamiento, código, tool calling ni agentes.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks (MTEB u otros) en la información d
 - VRAM estimada para inferencia: con 438,76M de parámetros en bfloat16 o float16, el modelo ocupa aproximadamente 0,9 GB (coincide con el tamaño del repositorio); en float32, en torno a 1,8 GB. Añadir margen para activaciones y batch de entrada.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no se requieren A100 ni H100. Una RTX 3060 de 12 GB, RTX 4060 o superior lo ejecuta con holgura, incluso con batches grandes.
 - Consumer GPUs: cabe cómodamente en prácticamente cualquier GPU de consumo con 2 GB de VRAM libres o más, e incluso es viable su ejecución en CPU para volúmenes de tráfico bajos, dado el tamaño reducido.
-- Despliegue: sentence-transformers (vía recomendada por el autor), Transformers de HuggingFace con `AutoModel`, y servicios de inferencia compatibles con modelos de embeddings de HF (por ejemplo, endpoints de HuggingFace, marcado como `endpoints_compatible`). No hay pesos GGUF oficiales, por lo que llama.cpp u Ollama no son opciones directas sin conversión.
+- Despliegue: sentence-transformers (vía recomendada por el autor), Transformers de Hugging Face con `AutoModel`, y servicios de inferencia compatibles con modelos de embeddings de HF (por ejemplo, endpoints de Hugging Face, marcado como `endpoints_compatible`). No hay pesos GGUF oficiales, por lo que llama.cpp u Ollama no son opciones directas sin conversión.
 - Latencia y throughput: no disponible en la información proporcionada; al ser un modelo de ~440M, se espera baja latencia por consulta en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares

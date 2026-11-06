@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparado (BLEU, chrF, COMET) en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-es-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-es-ct2
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-es
 - Organizacion Helsinki-NLP: https://huggingface.co/Helsinki-NLP
 - Libreria CTranslate2: https://github.com/OpenNMT/CTranslate2

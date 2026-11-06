@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Paradigma de decodificación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BYOD-Llama-3.1-8B | 8 000 M (adaptador LoRA temporal) | heredado del base, no confirmado en modo difusión | difusión discreta enmascarada con refinamiento iterativo | Llama 3.1 Community License | adaptador PEFT en HuggingFace, código de inferencia en `lad-generic` |
-| meta-llama/Llama-3.1-8B-Instruct | 8 000 M | 128 000 tokens | autorregresiva causal | Llama 3.1 Community License | pesos completos en HuggingFace, acceso previa aceptación de licencia |
+| BYOD-Llama-3.1-8B | 8 000 M (adaptador LoRA temporal) | heredado del base, no confirmado en modo difusión | difusión discreta enmascarada con refinamiento iterativo | Llama 3.1 Community License | adaptador PEFT en Hugging Face, código de inferencia en `lad-generic` |
+| meta-llama/Llama-3.1-8B-Instruct | 8 000 M | 128 000 tokens | autorregresiva causal | Llama 3.1 Community License | pesos completos en Hugging Face, acceso previa aceptación de licencia |
 | Otros modelos de difusión discreta para lenguaje (por ejemplo LLaDA o Dream) | no disponible | no disponible | difusión discreta enmascarada | no disponible | no disponible; no se dispone de datos comparativos en la información proporcionada |
 
 La comparación cuantitativa frente a otras alternativas de la misma categoría no está disponible: no se han publicado métricas de este adaptador ni de sus competidores en la información consultada. La única comparación verificable es estructural, frente al modelo base del que deriva.
@@ -90,12 +90,12 @@ La comparación cuantitativa frente a otras alternativas de la misma categoría 
 - Sensibilidad a hiperparámetros: `num_steps`, `noise_level`, `temperature`, `top_k`, `block_length` y las opciones de desenmascarado condicionan fuertemente la salida, y no se documenta una configuración óptima más allá del ejemplo.
 - Coste de inferencia elevado: el esquema iterativo multiplica el número de pasadas; con 64 pasos el coste es muy superior al de una generación autorregresiva comparable.
 - Idiomas y contexto no verificados: no se declaran idiomas soportados y no se confirma que la ventana de 128 000 tokens del modelo base se conserve tras la conversión a difusión.
-- Restricciones de licencia: se aplica la Llama 3.1 Community License. El acceso al modelo base puede exigir aceptar su licencia y usar un token de HuggingFace, y el adaptador queda sujeto a los términos del modelo base. Cualquier uso comercial debe revisarse contra esa licencia.
+- Restricciones de licencia: se aplica la Llama 3.1 Community License. El acceso al modelo base puede exigir aceptar su licencia y usar un token de Hugging Face, y el adaptador queda sujeto a los términos del modelo base. Cualquier uso comercial debe revisarse contra esa licencia.
 - Trazabilidad: los pesos publicados son el checkpoint `best` de un único experimento; no se documentan barridos, semillas ni evaluaciones de robustez.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ruurd/BYOD-Llama-3.1-8B
+- Modelo en Hugging Face: https://huggingface.co/Ruurd/BYOD-Llama-3.1-8B
 - Demo en ZeroGPU (precisión completa): https://huggingface.co/spaces/Ruurd/byod-llama-3.1-8b
 - Código de inferencia bidireccional (lad-generic): https://github.com/RuurdKuiper/lad-generic
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

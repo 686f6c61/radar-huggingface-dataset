@@ -6,7 +6,7 @@ El repositorio `gravishankar86/slm-rl-colab` no es un modelo de lenguaje indepen
 
 El adaptador se entrenó con la técnica `reject_sft` sobre demostraciones generadas por un profesor DQN, logrando una mejora en la métrica primaria de -0.4375 a 0.0000, con una tasa de acciones inválidas nula y sin intervenciones externas. El resultado es un adaptador ligero (el repositorio ocupa 0.0 GB) que puede cargarse sobre el modelo base para generar acciones de juego coherentes.
 
-La relevancia de este adaptador radica en su uso como punto de partida (warm-start) para experimentos de RL en modelos de lenguaje pequeños, demostrando un flujo práctico de entrenamiento con refuerzo en entornos de juego. Está publicado bajo licencia Apache 2.0 y su formato de pesos es safetensors, compatible con la librería PEFT de HuggingFace.
+La relevancia de este adaptador radica en su uso como punto de partida (warm-start) para experimentos de RL en modelos de lenguaje pequeños, demostrando un flujo práctico de entrenamiento con refuerzo en entornos de juego. Está publicado bajo licencia Apache 2.0 y su formato de pesos es safetensors, compatible con la librería PEFT de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ No se dispone de información sobre adaptadores LoRA comparables para el mismo j
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gravishankar86/slm-rl-colab
+- Repositorio Hugging Face: https://huggingface.co/gravishankar86/slm-rl-colab
 - Dataset asociado: https://huggingface.co/datasets/gravishankar86/slm-rl-colab-data
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Framework SLM-RL: https://github.com/CraftsMan-Labs/SLM-RL

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como FuyaoHuang/cryonet-refine-assets es un espacio alojado en HuggingFace con un tamano de 1,9 GB, publicado bajo licencia Apache-2.0 y sin model card sustantiva: el README unicamente contiene el encabezado de licencia. No se ha publicado informacion sobre arquitectura, numero de parametros, contexto, datos de entrenamiento ni resultados de evaluacion.
+El repositorio identificado como FuyaoHuang/cryonet-refine-assets es un espacio alojado en Hugging Face con un tamano de 1,9 GB, publicado bajo licencia Apache-2.0 y sin model card sustantiva: el README unicamente contiene el encabezado de licencia. No se ha publicado informacion sobre arquitectura, numero de parametros, contexto, datos de entrenamiento ni resultados de evaluacion.
 
 El sufijo "assets" del identificador, junto con la ausencia de pesos documentados y de pipeline declarado, sugiere que se trata de un repositorio de recursos auxiliares (ficheros de apoyo, checkpoints intermedios o artefactos de un proyecto mayor) y no de un modelo listo para inferencia. El nombre "cryonet-refine" apunta, como hipotesis basada unicamente en el identificador, a un proyecto de refinamiento en el ambito de la criomicroscopia electronica, pero esta interpretacion no esta confirmada por ninguna fuente disponible.
 
@@ -83,5 +83,5 @@ No disponible. No se ha identificado la categoria del artefacto (modelo de lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FuyaoHuang/cryonet-refine-assets
+- Repositorio en Hugging Face: https://huggingface.co/FuyaoHuang/cryonet-refine-assets
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al paper, a un repositorio de codigo ni a demos asociadas. Los unicos resultados devueltos corresponden a paginas corporativas de Microsoft sin relacion con el proyecto.

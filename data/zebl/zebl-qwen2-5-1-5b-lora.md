@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ZEBL behavior LoRA (este) | Adaptador sobre 1,5 B | No disponible | other (privada/interna) | HuggingFace, 0 descargas | Especializado en citación y abstención; evaluación automática propia |
-| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,5 B | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace, modelo público ampliamente usado | Sin ajuste de comportamiento ZEBL; composite 0,458 en la evaluación del autor |
-| Qwen3-1.7B | 1,7 B | No disponible | No disponible en la información proporcionada | HuggingFace | Probado en el barrido del autor, descartado frente a Qwen2.5-1.5B |
-| Otros adaptadores LoRA de comportamiento | Variable | Variable | Variable | HuggingFace | No se dispone de comparación cuantitativa en la información proporcionada |
+| ZEBL behavior LoRA (este) | Adaptador sobre 1,5 B | No disponible | other (privada/interna) | Hugging Face, 0 descargas | Especializado en citación y abstención; evaluación automática propia |
+| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,5 B | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face, modelo público ampliamente usado | Sin ajuste de comportamiento ZEBL; composite 0,458 en la evaluación del autor |
+| Qwen3-1.7B | 1,7 B | No disponible | No disponible en la información proporcionada | Hugging Face | Probado en el barrido del autor, descartado frente a Qwen2.5-1.5B |
+| Otros adaptadores LoRA de comportamiento | Variable | Variable | Variable | Hugging Face | No se dispone de comparación cuantitativa en la información proporcionada |
 
 No se dispone de datos de benchmarks estándar para comparar con alternativas de la misma categoría; la única comparación numérica publicada es contra el modelo base en la métrica compuesta propia del proyecto.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks estándar para comparar con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zebl/zebl-qwen2.5-1.5b-lora
+- Modelo en Hugging Face: https://huggingface.co/zebl/zebl-qwen2.5-1.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Librería PEFT: https://huggingface.co/docs/peft
 - Repositorio mencionado en el código de uso del autor (ruta alternativa): https://huggingface.co/Varshithdharmaj/zebl-qwen2.5-1.5b-lora

@@ -67,6 +67,6 @@ No se dispone de datos comparativos con modelos de la misma categoría (sub-2B, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale
+- Hugging Face: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale
 - DOI del paper: 10.57967/hf/8165
 - Perfil del autor: https://huggingface.co/reaperdoesntknow/reaperdoesntknow

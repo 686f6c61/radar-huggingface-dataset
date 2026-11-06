@@ -6,7 +6,7 @@
 
 El modelo hereda la arquitectura GPT-Neo de 1.300 millones de parámetros, un transformer decoder-only autorregresivo con atención local en la mitad de sus capas, y está orientado exclusivamente al inglés. Su función práctica es servir como punto de comparación reproducible frente a otras variantes de la misma serie (por ejemplo, `benchmark-slm-msmarco-phi-1_5-clmsft`), de modo que los investigadores puedan medir cómo rinde un fine-tuning de bajo rango sobre un backbone de 2021 frente a alternativas más modernas y compactas.
 
-Es relevante ahora por dos motivos: primero, porque ejemplifica una práctica creciente en investigación académica, la publicación de adaptadores LoRA como artefactos de benchmark en lugar de checkpoints completos, lo que abarata el almacenamiento y facilita la trazabilidad; segundo, porque permite estudiar con presupuesto mínimo el efecto del fine-tuning sobre MS MARCO en modelos de menos de 2.000 millones de parámetros, un régimen de tamaño que interesa para despliegues en CPU y dispositivos con poca VRAM. Conviene subir con la expectativa adecuada: el repositorio está restringido (gated), no declara licencia, ocupa aproximadamente 0,0 GB según la ficha de HuggingFace y no publica métricas ni documentación de entrenamiento en la información disponible.
+Es relevante ahora por dos motivos: primero, porque ejemplifica una práctica creciente en investigación académica, la publicación de adaptadores LoRA como artefactos de benchmark en lugar de checkpoints completos, lo que abarata el almacenamiento y facilita la trazabilidad; segundo, porque permite estudiar con presupuesto mínimo el efecto del fine-tuning sobre MS MARCO en modelos de menos de 2.000 millones de parámetros, un régimen de tamaño que interesa para despliegues en CPU y dispositivos con poca VRAM. Conviene subir con la expectativa adecuada: el repositorio está restringido (gated), no declara licencia, ocupa aproximadamente 0,0 GB según la ficha de Hugging Face y no publica métricas ni documentación de entrenamiento en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -18,9 +18,9 @@ Es relevante ahora por dos motivos: primero, porque ejemplifica una práctica cr
 | Longitud de contexto | 2.048 tokens según las especificaciones del modelo base GPT-Neo-1.3B; no verificado en la ficha del repositorio, que no declara contexto propio |
 | Tipos de cuantización | No disponible. Los pesos publicados son adaptadores LoRA en `safetensors` sin cuantizar; no se ofrecen variantes GGUF, AWQ ni GPTQ |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | No disponible. El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace |
+| Licencia | No disponible. El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | `safetensors` con formato PEFT/LoRA (librería `peft`); no incluye los pesos completos del modelo base |
-| Tamaño del repositorio | 0,0 GB (según la ficha de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según la ficha de Hugging Face) |
 | Dataset de ajuste | `microsoft/ms_marco` |
 | Pipeline declarado | `text-generation` |
 | Etiquetas relevantes | `benchmark-slm`, `strategy-ft`, `dataset-msmarco`, `or2`, `lora` |
@@ -57,7 +57,7 @@ En cuanto al entrenamiento del adaptador, la información disponible es mínima:
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-La ficha de HuggingFace no incluye métricas de MS MARCO (MRR@10, Recall@k, EM, F1), ni resultados de evaluaciones generales como MMLU, HumanEval o GSM8K, ni comparaciones numéricas con las otras variantes de la serie. Tampoco se documentan curvas de entrenamiento ni métricas de validación. Cualquier cifra que se atribuya a este checkpoint debe obtenerse ejecutando la evaluación de forma local.
+La ficha de Hugging Face no incluye métricas de MS MARCO (MRR@10, Recall@k, EM, F1), ni resultados de evaluaciones generales como MMLU, HumanEval o GSM8K, ni comparaciones numéricas con las otras variantes de la serie. Tampoco se documentan curvas de entrenamiento ni métricas de validación. Cualquier cifra que se atribuya a este checkpoint debe obtenerse ejecutando la evaluación de forma local.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ La comparación relevante es con la variante `phi-1_5` de la misma serie de benc
 ## Limitaciones y advertencias
 
 - No es un modelo completo: se distribuye únicamente el adaptador LoRA. Sin descargar `EleutherAI/gpt-neo-1.3B` el repositorio no es utilizable, y hay que respetar la licencia del base además de la del adaptador.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace. La automatización de descargas en CI requiere un token con permiso sobre el repo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face. La automatización de descargas en CI requiere un token con permiso sobre el repo.
 - Licencia no disponible: al no declararse licencia, no puede asumirse permiso para uso comercial. Cualquier despliegue en producción exige contactar con los autores.
 - Idiomas: solo inglés. El modelo no es adecuado para castellano ni para otras lenguas sin un ajuste adicional.
 - Ventana de contexto limitada: 2.048 tokens en el backbone, insuficiente para documentos largos o conversaciones multi-turno extensas.
@@ -96,10 +96,10 @@ La comparación relevante es con la variante `phi-1_5` de la misma serie de benc
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-ft)
+- [Modelo en Hugging Face](https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-ft)
 - [Variante con backbone phi-1.5 de la misma serie](https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-clmsft)
 - [Modelo base EleutherAI/gpt-neo-1.3B](https://huggingface.co/EleutherAI/gpt-neo-1.3B)
 - [Dataset microsoft/ms_marco](https://huggingface.co/datasets/microsoft/ms_marco)
-- [Organización PRAISELab-PicusLab en HuggingFace](https://huggingface.co/praiselab-picuslab)
+- [Organización PRAISELab-PicusLab en Hugging Face](https://huggingface.co/praiselab-picuslab)
 - [Organización PRAISELab-PicusLab en GitHub](https://github.com/PRAISELab-PicusLab)
 - [LLM Leaderboard & AI Model Benchmarks (octubre 2026)](https://benchlm.ai/)

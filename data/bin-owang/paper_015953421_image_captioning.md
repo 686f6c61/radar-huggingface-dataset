@@ -75,7 +75,7 @@ La diferencia principal es que el repositorio de `bin-owang` es un documento cru
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bin-owang/paper_015953421_image_captioning
+- Repositorio Hugging Face: https://huggingface.co/bin-owang/paper_015953421_image_captioning
 - Fichero principal del repositorio: `paper_015953421_image_captioning.md` (accesible desde la página del repositorio)
 
 Enlaces externos relacionados con el tema (no con el repositorio en sí):

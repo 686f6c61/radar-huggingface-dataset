@@ -105,9 +105,9 @@ Calidad: la única referencia publicada es el ~23,7 dB de PSNR de la variante IN
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuantFunc/Minimax-H3-Quantfunc-4bit
+- Modelo en Hugging Face: https://huggingface.co/QuantFunc/Minimax-H3-Quantfunc-4bit
 - Árbol de ficheros del repositorio: https://huggingface.co/QuantFunc/Minimax-H3-Quantfunc-4bit/tree/main
-- Perfil de QuantFunc en HuggingFace: https://huggingface.co/QuantFunc
+- Perfil de QuantFunc en Hugging Face: https://huggingface.co/QuantFunc
 - Sitio web de QuantFunc: https://www.quantfunc.com/
 - Extensión ComfyUI-QuantFunc: https://github.com/QuantFunc/ComfyUI-QuantFunc
 - Flujo de trabajo de ejemplo (QuantFunc-MiniMaxH3-fl2va): https://github.com/QuantFunc/ComfyUI-QuantFunc/blob/main/example_workflows/QuantFunc-MiniMaxH3-fl2va.json

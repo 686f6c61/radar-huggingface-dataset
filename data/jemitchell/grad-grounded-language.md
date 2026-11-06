@@ -77,7 +77,7 @@ No es posible comparar este repositorio con modelos de lenguaje, ya que no es un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jemitchell/grad-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/Jemitchell/grad-grounded-language
 - Blog de Contextual AI sobre su Grounded Language Model (referencia externa): https://contextual.ai/blog/introducing-grounded-language-model
 - Benchmark FACTS de Google DeepMind (mencionado en la busqueda, no en el repositorio): https://www.kaggle.com/benchmarks/google/facts-grounding
 - Articulo relacionado sobre asistentes de aprendizaje con LLM (contexto de grounded language): https://www.semanticscholar.org/paper/AI-University%3A-An-LLM-Powered-Learning-Assistant-Shojaei-Gulati/d7e537af67ad30ec65550a6b0a3205bcb4ae1136

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `quanquan17/quan` es un repositorio publicado en HuggingFace por el usuario quanquan17 el 2 de septiembre de 2026. La model card no contiene ninguna descripción, arquitectura, parámetros ni documentación adicional; únicamente declara la licencia Apache 2.0. No se dispone de información sobre su arquitectura, tamaño, capacidades o uso previsto.
+El modelo `quanquan17/quan` es un repositorio publicado en Hugging Face por el usuario quanquan17 el 2 de septiembre de 2026. La model card no contiene ninguna descripción, arquitectura, parámetros ni documentación adicional; únicamente declara la licencia Apache 2.0. No se dispone de información sobre su arquitectura, tamaño, capacidades o uso previsto.
 
 Este repositorio no parece corresponder a ningún modelo conocido en la literatura o en la comunidad open source. Las búsquedas web realizadas no arrojan resultados relacionados con este identificador; los resultados encontrados se refieren a otros modelos como Qwen de Alibaba o a modelos de arte generativo en plataformas como PixAI, sin relación aparente. Por tanto, no es posible confirmar que se trate de un modelo funcional ni que tenga relevancia técnica en el ecosistema actual.
 
@@ -55,6 +55,6 @@ No disponible. No se puede comparar este modelo con alternativas al carecer de e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/quanquan17/quan
+- Repositorio Hugging Face: https://huggingface.co/quanquan17/quan
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este identificador.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`heintz/prostate_lesion_seg` es un modelo publicado en HuggingFace por el usuario `heintz` orientado, por su nombre y por el contexto de su repositorio, a la segmentación de lesiones prostáticas en imágenes médicas. Se trata de un artefacto de pesos de 0,4 GB, lo que sugiere un modelo de tamaño moderado, probablemente una red convolucional o un transformer visual compacto para segmentación de imágenes volumétricas (típicamente resonancia magnética multiparamétrica de próstata). El repositorio fue creado y actualizado el 2 de noviembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+`heintz/prostate_lesion_seg` es un modelo publicado en Hugging Face por el usuario `heintz` orientado, por su nombre y por el contexto de su repositorio, a la segmentación de lesiones prostáticas en imágenes médicas. Se trata de un artefacto de pesos de 0,4 GB, lo que sugiere un modelo de tamaño moderado, probablemente una red convolucional o un transformer visual compacto para segmentación de imágenes volumétricas (típicamente resonancia magnética multiparamétrica de próstata). El repositorio fue creado y actualizado el 2 de noviembre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
-La model card publicada es prácticamente vacía: únicamente declara la licencia MIT y no incluye información sobre arquitectura, datos de entrenamiento, métricas, preprocesado ni formato de entrada/salida. Tampoco se especifica el pipeline de HuggingFace asociado ni los idiomas soportados, lo que es coherente con un modelo de visión médica donde el concepto de idioma no aplica directamente.
+La model card publicada es prácticamente vacía: únicamente declara la licencia MIT y no incluye información sobre arquitectura, datos de entrenamiento, métricas, preprocesado ni formato de entrada/salida. Tampoco se especifica el pipeline de Hugging Face asociado ni los idiomas soportados, lo que es coherente con un modelo de visión médica donde el concepto de idioma no aplica directamente.
 
 Su relevancia actual es limitada desde el punto de vista de adopción, dado que carece de documentación técnica verificable y de resultados de benchmarks publicados. No obstante, puede resultar de interés para investigadores que trabajen en segmentación de lesiones prostáticas y quieran evaluar empíricamente los pesos, siempre asumiendo que deberán inspeccionar el repositorio y validar el modelo por su cuenta antes de cualquier uso clínico o de producción.
 
@@ -73,7 +73,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heintz/prostate_lesion_seg
+- Hugging Face: https://huggingface.co/heintz/prostate_lesion_seg
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible

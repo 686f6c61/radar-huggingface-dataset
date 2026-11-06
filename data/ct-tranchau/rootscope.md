@@ -81,7 +81,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ct-tranchau/Rootscope
+- Hugging Face: https://huggingface.co/ct-tranchau/Rootscope
 - Repositorio GitHub (mencionado en la model card): https://github.com/ct-tranchau/Rootscope.git
-- Perfil del autor en HuggingFace: https://huggingface.co/ct-tranchau
+- Perfil del autor en Hugging Face: https://huggingface.co/ct-tranchau
 - Contacto del autor: tnchau@vt.edu

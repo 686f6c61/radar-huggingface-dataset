@@ -56,5 +56,5 @@ No se dispone de información sobre adaptadores similares en la documentación p
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/mkim0818/paia-hier-adapter)
+- [Adaptador en Hugging Face](https://huggingface.co/mkim0818/paia-hier-adapter)
 - [Modelo base openbmb/MiniCPM-V-4_5](https://huggingface.co/openbmb/MiniCPM-V-4_5)

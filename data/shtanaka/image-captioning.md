@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shtanaka/image-captioning es un repositorio de HuggingFace publicado por el usuario Shtanaka que, según su propia model card, contiene notas de lectura y un esbozo de experimento sobre image captioning, no un modelo entrenado listo para usar. La model card afirma de forma explícita que el repositorio no reclama mejoras de benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado.
+Shtanaka/image-captioning es un repositorio de Hugging Face publicado por el usuario Shtanaka que, según su propia model card, contiene notas de lectura y un esbozo de experimento sobre image captioning, no un modelo entrenado listo para usar. La model card afirma de forma explícita que el repositorio no reclama mejoras de benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado.
 
 El repositorio está etiquetado como transformer, image-captioning y research-notes, con licencia CC-BY-4.0, y los metadatos de safetensors registran 49.600 parámetros totales, un orden de magnitud coherente con un artefacto de prueba o de configuración más que con un modelo de captioning funcional. No se declaran idiomas soportados, pipeline de inferencia ni longitud de contexto.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Como referencia aritmética sobre el dato declarado de safetensors, 49.600 parámetros ocuparían aproximadamente 0,19 MB en fp32 y 0,10 MB en fp16, cifras que caben en cualquier GPU de consumo e incluso en CPU.
 - GPU recomendadas: no disponibles, dado que no se documenta ninguna ruta de ejecución.
 - Compatibilidad con GPU de consumo: sin datos verificables; cualquier afirmación al respecto sería especulativa.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponibles. El repositorio no declara pipeline ni formato GGUF, y el campo de pipeline en HuggingFace figura como no disponible.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponibles. El repositorio no declara pipeline ni formato GGUF, y el campo de pipeline en Hugging Face figura como no disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No disponible. No existen datos de rendimiento, contexto o capacidades de este r
 ## Limitaciones y advertencias
 
 - El propio autor declara que no existe un checkpoint entrenado ni código liberado; el repositorio es una nota de investigación, no un modelo.
-- Los metadatos de HuggingFace (etiqueta transformer, formato safetensors, 49.600 parámetros) sugieren la presencia de un artefacto de pesos, pero la model card no lo describe ni documenta su uso, lo que constituye una discrepancia que conviene resolver antes de cualquier intento de carga.
+- Los metadatos de Hugging Face (etiqueta transformer, formato safetensors, 49.600 parámetros) sugieren la presencia de un artefacto de pesos, pero la model card no lo describe ni documenta su uso, lo que constituye una discrepancia que conviene resolver antes de cualquier intento de carga.
 - Riesgo de alucinación: no evaluable, al no existir resultados de inferencia ni evaluación.
 - Sesgos conocidos: no documentados.
 - Limitaciones de contexto e idioma: no documentadas; el campo de idiomas está vacío.
@@ -87,7 +87,7 @@ No disponible. No existen datos de rendimiento, contexto o capacidades de este r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shtanaka/image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/Shtanaka/image-captioning
 - Artefacto principal citado en la model card: `review.md` (incluido en el repositorio)
 - Documentación citada en la model card: `README.md` (incluido en el repositorio)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

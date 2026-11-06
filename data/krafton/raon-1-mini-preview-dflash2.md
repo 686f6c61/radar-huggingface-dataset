@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Raon-1-mini-preview-dflash2 es un modelo de lenguaje de tipo texto publicado por KRAFTON en HuggingFace. Segun los metadatos del repositorio, se trata de un modelo derivado (finetune) de KRAFTON/Raon-1-mini-preview y etiquetado con las claves `speculative-decoding` y `dflash`, lo que apunta a un modelo borrador (draft model) pensado para acelerar la inferencia del modelo base mediante decodificacion especulativa. El recuento real de pesos en safetensors es de 677.776.640 parametros, es decir, aproximadamente 678 millones, lo que lo situa en la categoria de modelos pequenos.
+Raon-1-mini-preview-dflash2 es un modelo de lenguaje de tipo texto publicado por KRAFTON en Hugging Face. Segun los metadatos del repositorio, se trata de un modelo derivado (finetune) de KRAFTON/Raon-1-mini-preview y etiquetado con las claves `speculative-decoding` y `dflash`, lo que apunta a un modelo borrador (draft model) pensado para acelerar la inferencia del modelo base mediante decodificacion especulativa. El recuento real de pesos en safetensors es de 677.776.640 parametros, es decir, aproximadamente 678 millones, lo que lo situa en la categoria de modelos pequenos.
 
 El repositorio esta etiquetado con `qwen3`, lo que sugiere que la arquitectura subyacente pertenece a la familia Qwen3, aunque la ficha del autor no esta incluida en la informacion disponible y no es posible confirmar detalles de capas, atencion o tokenizador. La libreria declarada es vLLM y el formato de pesos es safetensors, coherente con un uso orientado a servidores de inferencia de alto rendimiento.
 
-Su relevancia es operativa mas que generativa: si la hipotesis del borrador especulativo se confirma, este modelo no se emplea como asistente autonomo, sino como componente que propone tokens candidatos que el modelo objetivo valida en paralelo, reduciendo la latencia por token generado. El acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace, aunque la licencia declarada es Apache 2.0. No se han publicado en la informacion disponible datos de contexto, composicion del dataset de entrenamiento ni resultados de benchmarks.
+Su relevancia es operativa mas que generativa: si la hipotesis del borrador especulativo se confirma, este modelo no se emplea como asistente autonomo, sino como componente que propone tokens candidatos que el modelo objetivo valida en paralelo, reduciendo la latencia por token generado. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face, aunque la licencia declarada es Apache 2.0. No se han publicado en la informacion disponible datos de contexto, composicion del dataset de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia es operativa mas que generativa: si la hipotesis del borrador espe
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada; al ser safetensors, admite conversion a GGUF/AWQ/GPTQ mediante herramientas externas, aunque no hay cuantizaciones publicadas por el autor |
 | Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (acceso restringido: requiere aceptar condiciones en HuggingFace) |
+| Licencia | Apache 2.0 (acceso restringido: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors (libreria declarada: vLLM) |
 
 Datos adicionales del repositorio: tamano de 5,4 GB, 5 descargas, 14 likes, creado el 2026-10-20 y actualizado el 2026-10-21. La discrepancia entre los ~678 M de parametros y los 5,4 GB del repositorio (unos 1,36 GB en bf16 solo para pesos) sugiere la presencia de artefactos adicionales en el repo, como multiples checkpoints o ficheros auxiliares; no es posible determinarlo con la informacion disponible.
@@ -67,9 +67,9 @@ La comparacion es aproximada porque este checkpoint es un borrador especializado
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KRAFTON/Raon-1-mini-preview-dflash2 | ~678 M | No disponible | Borrador para decodificacion especulativa sobre Raon-1-mini-preview | Apache 2.0 | Gated en HuggingFace |
+| KRAFTON/Raon-1-mini-preview-dflash2 | ~678 M | No disponible | Borrador para decodificacion especulativa sobre Raon-1-mini-preview | Apache 2.0 | Gated en Hugging Face |
 | Qwen3-0.6B | ~0,6 B | 32.768 tokens nativos (ampliable con YaRN) | Modelo generalista pequeno | Apache 2.0 | Publico |
-| Llama-3.2-1B | ~1,23 B | 128.000 tokens | Modelo generalista pequeno | Licencia comunitaria Llama 3.2 | Gated en HuggingFace |
+| Llama-3.2-1B | ~1,23 B | 128.000 tokens | Modelo generalista pequeno | Licencia comunitaria Llama 3.2 | Gated en Hugging Face |
 | Un borrador generico de ~600 M del mismo objetivo | ~600 M | No disponible | Borrador alternativo | Segun el modelo | Segun el modelo |
 
 Frente a un modelo generalista del mismo tamano, la ventaja esperada de dflash2 no es la calidad absoluta sino la tasa de aceptacion al estar finetuneado sobre el modelo base. Frente a un borrador generico, la comparacion relevante es la ganancia de latencia medida en el mismo hardware y con la misma distribucion de prompts.
@@ -78,7 +78,7 @@ Frente a un modelo generalista del mismo tamano, la ventaja esperada de dflash2 
 
 - No es un modelo autonomo: si la hipotesis de borrador especulativo es correcta, su salida no debe servirse directamente al usuario sin la verificacion del modelo objetivo.
 - Ausencia de ficha tecnica: no hay informacion publicada sobre contexto, idiomas, datos de entrenamiento ni evaluaciones, lo que impide garantizar comportamiento en dominios concretos.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de descargas en pipelines.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de descargas en pipelines.
 - Licencia: Apache 2.0 permite uso comercial, pero las condiciones adicionales del acceso gated deben revisarse y cumplirse por separado.
 - Riesgo de alucinacion: heredado del modelo base y no caracterizado para este checkpoint; no hay evaluaciones de fidelidad factual disponibles.
 - Idiomas: no declarados. No puede asumirse soporte de castellano ni de otros idiomas sin evaluacion previa.
@@ -89,7 +89,7 @@ Frente a un modelo generalista del mismo tamano, la ventaja esperada de dflash2 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KRAFTON/Raon-1-mini-preview-dflash2
+- Hugging Face: https://huggingface.co/KRAFTON/Raon-1-mini-preview-dflash2
 - Modelo base: https://huggingface.co/KRAFTON/Raon-1-mini-preview
-- Perfil del autor en HuggingFace: https://huggingface.co/KRAFTON
+- Perfil del autor en Hugging Face: https://huggingface.co/KRAFTON
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

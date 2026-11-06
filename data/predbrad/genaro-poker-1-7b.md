@@ -73,9 +73,9 @@ Definiciones: concordancia con la jugada mayoritaria de los 9 profesores House B
 
 | Modelo | Parámetros | Contexto | Concordancia (PokerSI) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Genaro Poker 1.7B | 1,7B | No disponible | 80,2% | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| Genaro Poker 0.6B | 0,6B (aprox.) | No disponible | 78,5% | Apache 2.0 (heredada) | HuggingFace |
-| Qwen3 1.7B (base) | 1,7B | No disponible | 39,7% | Apache 2.0 | HuggingFace |
+| Genaro Poker 1.7B | 1,7B | No disponible | 80,2% | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Genaro Poker 0.6B | 0,6B (aprox.) | No disponible | 78,5% | Apache 2.0 (heredada) | Hugging Face |
+| Qwen3 1.7B (base) | 1,7B | No disponible | 39,7% | Apache 2.0 | Hugging Face |
 | LFM2.5 1.2B | 1,2B | No disponible | 55,8% | No disponible | Usado previamente en PokerSI |
 
 El modelo supera ligeramente a su hermano pequeño en concordancia (80,2% frente a 78,5%) y reduce los errores graves (7,5 frente a 9,1 por 100), a costa de triplicar el tamaño del archivo GGUF (1,1 GB frente a 397 MB). Frente al Qwen3-1.7B base, la mejora es sustancial en todas las métricas, especialmente en filtraciones y habla de cartas. En juego real, sin embargo, sigue sin batir a los House Bots heurísticos (bb/100 de -45 ± 64).
@@ -92,7 +92,7 @@ El modelo supera ligeramente a su hermano pequeño en concordancia (80,2% frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/predbrad/Genaro-poker-1.7B
+- Modelo en Hugging Face: https://huggingface.co/predbrad/Genaro-poker-1.7B
 - Modelo hermano 0.6B: https://huggingface.co/predbrad/Genaro-poker
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de código, pipeline de datos y evaluaciones: https://github.com/bradflaugher/genaro-poker

@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos en la infor
 
 ## Enlaces
 
-- [Repositorio HuggingFace de esta cuantización](https://huggingface.co/finex666/Qwen3.8-27B-Abliterated-IQ4-MIX-MTP-GGUF)
+- [Repositorio Hugging Face de esta cuantización](https://huggingface.co/finex666/Qwen3.8-27B-Abliterated-IQ4-MIX-MTP-GGUF)
 - [Modelo base abliterated](https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated)
 - [Modelo original Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Proyecto llama.cpp](https://github.com/ggerganov/llama.cpp)

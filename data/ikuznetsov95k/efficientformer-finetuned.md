@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ikuznetsov95k/efficientformer-finetuned` es un repositorio de HuggingFace publicado por el usuario ikuznetsov95k que contiene una implementación en PyTorch de la arquitectura EfficientFormer en configuración "large", etiquetada para tareas de generación. El propio autor declara de forma explícita que el peso incluido (`model.safetensors`) es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y no un modelo entrenado, por lo que no debe interpretarse como un modelo utilizable en producción ni como un resultado de investigación reproducible. A fecha de su publicación (2026-10-08) acumula 0 descargas y 0 likes.
+`ikuznetsov95k/efficientformer-finetuned` es un repositorio de Hugging Face publicado por el usuario ikuznetsov95k que contiene una implementación en PyTorch de la arquitectura EfficientFormer en configuración "large", etiquetada para tareas de generación. El propio autor declara de forma explícita que el peso incluido (`model.safetensors`) es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y no un modelo entrenado, por lo que no debe interpretarse como un modelo utilizable en producción ni como un resultado de investigación reproducible. A fecha de su publicación (2026-10-08) acumula 0 descargas y 0 likes.
 
 Los metadatos de safetensors indican un total de 16.576 parámetros, una cifra muy inferior a la que cabría esperar de una configuración "large" de EfficientFormer, lo que refuerza la lectura de que se trata de un artefacto de prueba de tamaño reducido más que de un modelo real de esa escala. El repositorio se distribuye bajo licencia BSD-3-Clause y no declara idiomas soportados, pipeline, tokenizador ni resultados de benchmarks.
 
@@ -47,7 +47,7 @@ Como guía de evaluación, el propio autor propone usar un conjunto de validaci�
 ## Casos de uso
 
 - Pruebas de humo en pipelines de despliegue: el checkpoint permite validar que la carga de safetensors, la instanciación del modelo y el forward pass funcionan en un entorno concreto antes de usar pesos reales.
-- Desarrollo de adaptadores de carga: al tratarse de una implementación personalizada, es necesario un adaptador explícito para las API automáticas de HuggingFace; este repositorio sirve como banco de pruebas para escribirlo y testearlo.
+- Desarrollo de adaptadores de carga: al tratarse de una implementación personalizada, es necesario un adaptador explícito para las API automáticas de Hugging Face; este repositorio sirve como banco de pruebas para escribirlo y testearlo.
 - Estudio y docencia de arquitecturas eficientes: útil para inspeccionar en código cómo se combinan bloques 3D con atención y bloques 4D sin atención en el diseño EfficientFormer.
 - Punto de partida para un entrenamiento real: el `training_args.json` y `run.py` permiten arrancar un experimento propio con RMSprop y warmup lineal sobre datos propios, partiendo de los valores por defecto documentados.
 - Validación de infraestructura de entrenamiento: sirve para comprobar que el bucle de entrenamiento, el guardado de checkpoints y el registro de métricas funcionan antes de lanzar un job costoso.
@@ -78,7 +78,7 @@ La comparación se establece con las variantes oficiales de la familia Efficient
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ikuznetsov95k/efficientformer-finetuned | 16.576 (según safetensors) | Sin definir; etiquetado como "generation" sin decodificador documentado | No disponible | BSD-3-Clause | HuggingFace, 0 descargas |
+| ikuznetsov95k/efficientformer-finetuned | 16.576 (según safetensors) | Sin definir; etiquetado como "generation" sin decodificador documentado | No disponible | BSD-3-Clause | Hugging Face, 0 descargas |
 | EfficientFormer-L1 (original) | Aprox. 4,6 M (referencia, verificar) | Clasificación de imágenes (ImageNet-1K) | No aplica | Ver términos del repositorio original | Público (Snap Research) |
 | EfficientFormer-L3 (original) | Aprox. 31,3 M (referencia, verificar) | Clasificación de imágenes (ImageNet-1K) | No aplica | Ver términos del repositorio original | Público (Snap Research) |
 | EfficientFormer-L7 (original) | Aprox. 82,1 M (referencia, verificar) | Clasificación de imágenes (ImageNet-1K) | No aplica | Ver términos del repositorio original | Público (Snap Research) |
@@ -101,7 +101,7 @@ La diferencia principal no es de rendimiento sino de naturaleza del artefacto: l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ikuznetsov95k/efficientformer-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/ikuznetsov95k/efficientformer-finetuned
 - Archivos incluidos: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Referencia de la arquitectura original (EfficientFormer, Snap Inc., 2022): https://arxiv.org/abs/2206.01191 (no verificada en la búsqueda web realizada)
 - Repositorio oficial de la arquitectura original: https://github.com/snap-research/EfficientFormer (no verificado en la búsqueda web realizada)

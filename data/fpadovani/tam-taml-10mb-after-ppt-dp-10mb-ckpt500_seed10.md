@@ -4,7 +4,7 @@
 
 El modelo `fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint base `fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed10`, ambos publicados por el usuario fpadovani. Se trata de un transformer decoder-only de la familia GPT-2 con 39.087.104 parámetros (unos 39,1 millones), lo que lo sitúa en la gama de los modelos pequeños orientados a experimentación más que a producción generalista. El entrenamiento se ha realizado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
-La nomenclatura del identificador (`tam-taml-10mb`, `ckpt500`, `seed10`) y el proyecto de Weights & Biases asociado (`new_tokenizers`, vinculado a la Universidad de Groningen) apuntan a un experimento académico de investigación sobre tokenizadores y datos de entrenamiento de tamaño reducido (10 MB), con replicación por semillas y checkpoints intermedios. El modelo está etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que es desplegable mediante la infraestructura estándar de HuggingFace.
+La nomenclatura del identificador (`tam-taml-10mb`, `ckpt500`, `seed10`) y el proyecto de Weights & Biases asociado (`new_tokenizers`, vinculado a la Universidad de Groningen) apuntan a un experimento académico de investigación sobre tokenizadores y datos de entrenamiento de tamaño reducido (10 MB), con replicación por semillas y checkpoints intermedios. El modelo está etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que es desplegable mediante la infraestructura estándar de Hugging Face.
 
 Su relevancia es fundamentalmente metodológica: sirve como artefacto reproducible para estudiar el efecto del ajuste fino supervisado en modelos muy pequeños, comparar configuraciones de tokenizador y validar pipelines de entrenamiento. No dispone de datos publicados de benchmarks, licencia declarada explícitamente ni idiomas documentados, por lo que no debe evaluarse como un modelo de propósito general listo para producción.
 
@@ -12,7 +12,7 @@ Su relevancia es fundamentalmente metodológica: sirve como artefacto reproducib
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (39,1 millones) |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible |
@@ -34,7 +34,7 @@ El entrenamiento consiste en un ajuste fino supervisado (SFT) ejecutado con TRL 
 - Generación de texto autoregresiva en inglés (el prompt de ejemplo de la model card está en inglés), con salidas cortas de hasta 128 tokens nuevos en el ejemplo oficial.
 - Formato de chat: el ejemplo de uso pasa una lista de mensajes con rol `user`, lo que implica que el tokenizador o la plantilla fueron adaptados para entradas conversacionales, aunque no se documenta una plantilla de chat formal.
 - Ajuste fino supervisado orientado a seguir instrucciones sencillas, derivado del uso de TRL SFT.
-- Integración directa con `transformers.pipeline("text-generation")` y con el ecosistema HuggingFace.
+- Integración directa con `transformers.pipeline("text-generation")` y con el ecosistema Hugging Face.
 - Compatibilidad declarada con Text Generation Inference y con endpoints, según las etiquetas `text-generation-inference` y `endpoints_compatible`.
 - No hay evidencia de soporte de tool calling, function calling, uso de agentes, razonamiento multi-paso, visión, audio, modo "thinking" ni capacidades multilingües documentadas. Todas ellas deben considerarse no disponibles.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 160 MB en fp32, unos 80 MB en fp16/bf16 y del orden de 40 MB en int8 y 20 MB en 4 bits, sin contar el overhead del runtime ni la caché KV.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre es suficiente en la práctica; una RTX 3060, RTX 4090, A100 o H100 funcionan sin ninguna restricción, aunque estarán enormemente sobredimensionadas.
 - Cabe holgadamente en cualquier GPU de consumo, incluidas integradas con memoria compartida, y también se ejecuta en CPU con latencias aceptables para un modelo de este tamaño.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (etiqueta declarada por el autor), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y, previa conversión manual, llama.cpp u Ollama, ya que no se publican pesos en GGUF.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (etiqueta declarada por el autor), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y, previa conversión manual, llama.cpp u Ollama, ya que no se publican pesos en GGUF.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 - Nota sobre el repositorio: los 0,9 GB del repo son desproporcionados respecto a los 39 M de parámetros, lo que sugiere la inclusión de estados del optimizador o artefactos de checkpoint adicionales propios de una ejecución de entrenamiento.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed10 | 39,1 M | no disponible | sin benchmarks publicados | no disponible | safetensors en HuggingFace |
-| GPT-2 small (referencia de arquitectura) | 124 M | 1.024 tokens (configuracion estandar de la arquitectura) | ampliamente evaluado en la literatura | MIT | pesos abiertos en HuggingFace |
-| DistilGPT-2 | 82 M | 1.024 tokens (configuracion estandar de la arquitectura) | destilado de GPT-2 small | Apache 2.0 | pesos abiertos en HuggingFace |
+| tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed10 | 39,1 M | no disponible | sin benchmarks publicados | no disponible | safetensors en Hugging Face |
+| GPT-2 small (referencia de arquitectura) | 124 M | 1.024 tokens (configuracion estandar de la arquitectura) | ampliamente evaluado en la literatura | MIT | pesos abiertos en Hugging Face |
+| DistilGPT-2 | 82 M | 1.024 tokens (configuracion estandar de la arquitectura) | destilado de GPT-2 small | Apache 2.0 | pesos abiertos en Hugging Face |
 
 La comparación es únicamente estructural: no existen datos de benchmarks de este modelo que permitan contrastar calidad frente a las alternativas citadas. La diferencia principal es de escala (39 M frente a 82-124 M) y de gobernanza: los modelos comparados tienen licencias permisivas explícitas, mientras que este carece de licencia declarada. Para contextos de longitud de los modelos comparados se indican los valores estándar de la arquitectura GPT-2, no valores confirmados para esos repositorios concretos.
 
@@ -82,11 +82,11 @@ La comparación es únicamente estructural: no existen datos de benchmarks de es
 - Artefacto de investigación: el nombre indica un checkpoint intermedio (500) de una semilla concreta (10) de un estudio sobre tokenizadores; no hay garantía de que sea la versión más capaz del experimento ni de que se mantenga actualizada.
 - Sin métricas de evaluación: la ausencia de benchmarks, de perplejidad y de evaluación humana impide establecer expectativas cuantitativas de calidad.
 - Idoneidad para producción: no recomendado para aplicaciones dirigidas a usuarios finales sin una evaluación exhaustiva previa y supervisión humana de las salidas.
-- Nota sobre la búsqueda web: los resultados devueltos por la búsqueda para este modelo no contenían ninguna referencia técnica ni enlace relacionado (contenido no pertinente), por lo que no se ha podido ampliar la información más allá de la model card y los metadatos de HuggingFace.
+- Nota sobre la búsqueda web: los resultados devueltos por la búsqueda para este modelo no contenían ninguna referencia técnica ni enlace relacionado (contenido no pertinente), por lo que no se ha podido ampliar la información más allá de la model card y los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed10
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/swgkhtup
 - Repositorio de TRL: https://github.com/huggingface/trl

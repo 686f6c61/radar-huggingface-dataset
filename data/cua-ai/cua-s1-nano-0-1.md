@@ -76,14 +76,14 @@ Los resultados de `chess` y `game_control` no sobreviven a la correccion por aza
 - No hay soporte para vLLM, llama.cpp, Ollama ni TGI: no es un modelo generativo. La carga se hace mediante la libreria `cua-s1` (`load_nano_checkpoint`, `select_device`) desde un checkout de `trycua/cua`.
 - Instalacion de referencia: `uv sync --project libs/cua-s1/python` para la modalidad texto y `uv sync --project libs/cua-s1/python --extra nano-vision` para anadir el backbone multimodal.
 - La descarga debe fijarse a la revision `1f93fd0fdcbe33740334948f967dff9f6c8e9f34`, la verificada por la documentacion de Cua-S1; las revisiones posteriores que solo cambian documentacion mantienen los pesos.
-- El tamano de repositorio reportado en HuggingFace es de 0,0 GB, coherente con checkpoints de pocos megabytes; conviene verificar que los pesos estan presentes en la revision descargada.
+- El tamano de repositorio reportado en Hugging Face es de 0,0 GB, coherente con checkpoints de pocos megabytes; conviene verificar que los pesos estan presentes en la revision descargada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Precision en `cua-bench-s1` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `cua-s1-nano-0.1` (este) | 855.296 por checkpoint | no disponible | 1.000 en split multimodal de entrenamiento; 0.000-0.286 en texto held-out | Apache-2.0 | Pesos en safetensors, backbone SigLIP no redistribuido |
-| `cua-s1-4b-0.2` | no disponible (la denominacion sugiere aproximadamente 4.000 millones; no confirmado en la informacion disponible) | no disponible | Referencia de comparacion citada por el autor en `cua-bench-s1`; cifras concretas no disponibles | no disponible | en HuggingFace bajo `cua-ai` |
+| `cua-s1-4b-0.2` | no disponible (la denominacion sugiere aproximadamente 4.000 millones; no confirmado en la informacion disponible) | no disponible | Referencia de comparacion citada por el autor en `cua-bench-s1`; cifras concretas no disponibles | no disponible | en Hugging Face bajo `cua-ai` |
 | Otros agentes GUI de proposito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite una comparacion cualitativa: el autor situa `cua-s1-nano-0.1` como especialista entrenado desde cero y lo propone para comparar contra checkpoints mayores de la misma familia. No hay datos suficientes para compararlo con modelos de otros desarrolladores.
@@ -105,7 +105,7 @@ La informacion proporcionada solo permite una comparacion cualitativa: el autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cua-ai/cua-s1-nano-0.1
+- Modelo en Hugging Face: https://huggingface.co/cua-ai/cua-s1-nano-0.1
 - Checkpoint de mayor tamano de la familia: https://huggingface.co/cua-ai/cua-s1-4b-0.2
 - Repositorio Cua-S1: https://github.com/trycua/cua/tree/main/libs/cua-s1
 - Cua-bench-s1 y seccion de resultados: https://github.com/trycua/cua/tree/main/libs/cua-bench-s1

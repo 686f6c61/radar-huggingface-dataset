@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lexeuropa-qwen3b-lora | 3B (base) + LoRA | no disponible | Adaptador jurídico para citación y abstención sobre RGPD y TJUE | apache-2.0 | HuggingFace (adaptador y versión fusionada) |
-| Qwen2.5-3B-Instruct | 3B | no disponible en esta ficha | Modelo generalista de instrucciones | apache-2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | no disponible en esta ficha | Modelo generalista de instrucciones, usado como juez y línea base | apache-2.0 | HuggingFace |
+| lexeuropa-qwen3b-lora | 3B (base) + LoRA | no disponible | Adaptador jurídico para citación y abstención sobre RGPD y TJUE | apache-2.0 | Hugging Face (adaptador y versión fusionada) |
+| Qwen2.5-3B-Instruct | 3B | no disponible en esta ficha | Modelo generalista de instrucciones | apache-2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | no disponible en esta ficha | Modelo generalista de instrucciones, usado como juez y línea base | apache-2.0 | Hugging Face |
 
 La comparación relevante es frente al propio modelo base: el adaptador mejora la precisión y el recall de citas de 0,82/0,88 a 0,95/0,95 en el conjunto de evaluación del autor, a costa de un alcance temático muy restringido (tres documentos en inglés). No se dispone de comparación con otros adaptadores jurídicos en la información proporcionada.
 
@@ -94,7 +94,7 @@ La comparación relevante es frente al propio modelo base: el adaptador mejora l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iPwnds/lexeuropa-qwen3b-lora
+- Modelo en Hugging Face: https://huggingface.co/iPwnds/lexeuropa-qwen3b-lora
 - Proyecto LexEuropa en GitHub: https://github.com/lumenworksco/-LexEuropa
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Versión fusionada: https://huggingface.co/iPwnds/lexeuropa-qwen3b-merged (referenciada en la model card; no verificada en la información disponible)

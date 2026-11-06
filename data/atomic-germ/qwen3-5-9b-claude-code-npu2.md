@@ -99,7 +99,7 @@ La ventaja del modelo NPU2 es su ejecucion en hardware de bajo consumo y su cont
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.5-9B-Claude-Code-NPU2
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.5-9B-Claude-Code-NPU2
 - Modelo base original: https://huggingface.co/empero-ai/Qwen3.5-9B-Claude-Opus-4.6-Distill
 - Motor FastFlowLM: https://fastflowlm.com
 - Guia de uso con Claude Code: https://gist.github.com/kibotu/a009f00414b7c10fb1c74e603d7838c0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eitha es un modelo publicado en HuggingFace por el usuario Maitor0123 bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin ningún dato sobre arquitectura, tamaño, datos de entrenamiento o capacidades. Con la información disponible no es posible determinar qué tipo de modelo es, qué problema resuelve ni en qué se diferencia de otras alternativas.
+Eitha es un modelo publicado en Hugging Face por el usuario Maitor0123 bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin ningún dato sobre arquitectura, tamaño, datos de entrenamiento o capacidades. Con la información disponible no es posible determinar qué tipo de modelo es, qué problema resuelve ni en qué se diferencia de otras alternativas.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (5 de noviembre de 2026), lo que sugiere una publicación reciente y sin validación por parte de la comunidad. No se ha publicado información sobre pipeline, idiomas soportados ni formato de pesos.
 
@@ -64,5 +64,5 @@ No disponible. Al desconocerse el tamaño, la arquitectura y las capacidades del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Maitor0123/Eitha
+- Hugging Face: https://huggingface.co/Maitor0123/Eitha
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

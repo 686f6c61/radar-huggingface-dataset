@@ -82,7 +82,7 @@ La comparativa se basa en características generales; no se dispone de resultado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/grug-v1.1-qwen-3.8-27b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/grug-v1.1-qwen-3.8-27b-i1-GGUF
 - Modelo base (ProCreations/grug-v1.1-qwen-3.8-27b): https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b
 - Qwen 3.8 27B en Cloudflare AI: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/
 - Guía para ejecutar Qwen 3.8 27B localmente (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

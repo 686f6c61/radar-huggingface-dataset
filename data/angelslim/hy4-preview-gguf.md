@@ -29,7 +29,7 @@ Los datos de entrenamiento no se detallan en la información disponible, pero al
 
 - Generacion de texto y razonamiento complejo, gracias a su tamano y arquitectura MoE.
 - Procesamiento de contextos extremadamente largos (mas de 1M tokens), adecuado para documentos extensos o conversaciones multi-turno.
-- Soporte de conversacion (etiqueta "conversational" en HuggingFace).
+- Soporte de conversacion (etiqueta "conversational" en Hugging Face).
 - Compatible con endpoints (etiqueta "endpoints_compatible"), lo que sugiere que puede desplegarse como servicio.
 - Capacidades multilingues: no confirmadas en la informacion, pero probables dado el origen del modelo.
 - Tool calling y funciones de agente: no se mencionan explicitamente, aunque es comun en modelos de este tamano; no se puede confirmar.
@@ -77,8 +77,8 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/AngelSlim/Hy4-preview-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/tencent/Hy4-preview
+- Repositorio Hugging Face del GGUF: https://huggingface.co/AngelSlim/Hy4-preview-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/tencent/Hy4-preview
 - Repositorio GitHub de Tencent-Hunyuan/Hy4-preview: https://github.com/Tencent-Hunyuan/Hy4-preview
 - Repositorio GitHub de Tencent/AngelSlim: https://github.com/tencent/AngelSlim
 - Anuncio oficial de Tencent: https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/

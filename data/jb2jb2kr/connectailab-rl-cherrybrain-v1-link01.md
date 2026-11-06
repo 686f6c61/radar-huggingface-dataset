@@ -94,7 +94,7 @@ Alternativas genéricas de decisión con LLM (por ejemplo, otros adaptadores de 
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/jb2jb2kr/connectailab-rl-cherrybrain-v1-link01
+- Model card en Hugging Face: https://huggingface.co/jb2jb2kr/connectailab-rl-cherrybrain-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

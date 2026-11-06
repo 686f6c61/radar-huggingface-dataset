@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`primecai/fixer-concat-self-forcing` es un modelo de vídeo-a-vídeo (pipeline `video-to-video`) publicado por Shengqu (Prime) Cai, investigador de doctorado en Stanford centrado en contexto largo y modelos generativos. El repositorio se distribuye a través de HuggingFace con acceso restringido (gated) y un tamaño de 5,7 GB, e incluye las etiquetas `self-forcing`, `wan` y `fixer`, lo que sitúa al modelo en la estela de la familia Wan de generación de vídeo y de las técnicas de auto-destilación (self-forcing) aplicadas a modelos de difusión.
+`primecai/fixer-concat-self-forcing` es un modelo de vídeo-a-vídeo (pipeline `video-to-video`) publicado por Shengqu (Prime) Cai, investigador de doctorado en Stanford centrado en contexto largo y modelos generativos. El repositorio se distribuye a través de Hugging Face con acceso restringido (gated) y un tamaño de 5,7 GB, e incluye las etiquetas `self-forcing`, `wan` y `fixer`, lo que sitúa al modelo en la estela de la familia Wan de generación de vídeo y de las técnicas de auto-destilación (self-forcing) aplicadas a modelos de difusión.
 
 La información pública disponible es mínima: no hay model card accesible, ni resultados de benchmarks, ni especificación de licencia o de idiomas. El repositorio registra cero descargas y cero likes en el momento de la consulta, y los metadatos indican creación y actualización el 26 de octubre de 2026. Por tanto, esta ficha debe leerse como una descripción del artefacto y de su encaje probable, no como una validación empírica de capacidades.
 
@@ -18,9 +18,9 @@ El interés potencial reside en su función aparente como etapa de refinado o "f
 | Longitud de contexto | No aplica / no disponible. En modelos de video la ventana se define por numero de fotogramas, resolucion y FPS, datos no publicados |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (la tarea es video-a-video; no hay prompts de texto documentados) |
-| Licencia | No disponible. El acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace |
+| Licencia | No disponible. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | No disponible. Por tamano y ecosistema se presume `safetensors`, sin confirmacion |
-| Libreria / runtime | `self-forcing` (libreria indicada en los metadatos de HuggingFace) |
+| Libreria / runtime | `self-forcing` (libreria indicada en los metadatos de Hugging Face) |
 | Fecha de creacion / actualizacion | 26 de octubre de 2026 (segun metadatos) |
 | Descargas / likes | 0 / 0 |
 
@@ -90,8 +90,8 @@ Frente a estas alternativas, la diferencia principal de `fixer-concat-self-forci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/primecai/fixer-concat-self-forcing
+- Modelo en Hugging Face: https://huggingface.co/primecai/fixer-concat-self-forcing
 - Repositorio relacionado del autor (SF): https://huggingface.co/primecai/SF
-- Perfil del autor en HuggingFace: https://huggingface.co/primecai
+- Perfil del autor en Hugging Face: https://huggingface.co/primecai
 - Perfil del autor en GitHub: https://github.com/primecai/
 - Pagina personal de Shengqu (Prime) Cai: https://primecai.github.io/

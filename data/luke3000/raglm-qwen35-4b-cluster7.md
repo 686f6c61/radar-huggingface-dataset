@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `luke3000/raglm-qwen35-4b-cluster7` es un ajuste fino (finetune) publicado por el usuario luke3000 en HuggingFace, construido sobre el modelo base `Qwen/Qwen3.5-4B`. Se trata, por tanto, de un derivado de la familia Qwen 3.5 en su variante de aproximadamente 4 000 millones de parametros, reentrenado con la libreria Unsloth y el framework TRL. El repositorio se distribuye bajo licencia Apache 2.0 y declara un unico idioma soportado: ingles.
+El modelo `luke3000/raglm-qwen35-4b-cluster7` es un ajuste fino (finetune) publicado por el usuario luke3000 en Hugging Face, construido sobre el modelo base `Qwen/Qwen3.5-4B`. Se trata, por tanto, de un derivado de la familia Qwen 3.5 en su variante de aproximadamente 4 000 millones de parametros, reentrenado con la libreria Unsloth y el framework TRL. El repositorio se distribuye bajo licencia Apache 2.0 y declara un unico idioma soportado: ingles.
 
 La relevancia de esta publicacion es limitada desde el punto de vista tecnico: la model card es una plantilla autogenerada por Unsloth y no incluye informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la metodologia de ajuste (SFT, DPO, RLHF) ni resultados de evaluacion. El sufijo `cluster7` del nombre y el prefijo `raglm` sugieren que forma parte de una serie de variantes orientadas a generacion aumentada por recuperacion (RAG) o a un agrupamiento experimental concreto, pero esto no se confirma en ninguna parte de la documentacion disponible.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la model card unicamente indica que el modelo fue en
 - Generacion de texto en ingles en prototipos: al ser un modelo de 4 000 millones de parametros, es viable en GPUs de gama consumer para tareas de generacion y resumen en ingles.
 - Evaluacion de pipelines de ajuste con Unsloth y TRL: sirve como caso de estudio de un flujo de finetune acelerado, dado que el autor declara ese origen.
 - Bases para RAG experimental: el prefijo `raglm` del nombre sugiere un uso previsto en generacion aumentada por recuperacion, aunque no hay documentacion que lo respalde ni ejemplos de integracion.
-- Pruebas de integracion con Text Generation Inference: la etiqueta `text-generation-inference` indica compatibilidad declarada con el servidor de HuggingFace, util para desplegar endpoints compatibles con la API de OpenAI.
+- Pruebas de integracion con Text Generation Inference: la etiqueta `text-generation-inference` indica compatibilidad declarada con el servidor de Hugging Face, util para desplegar endpoints compatibles con la API de OpenAI.
 - Uso como banco de pruebas para comparativas de ajuste fino: permite medir el efecto de un finetune sobre el modelo base en tareas concretas de ingles, si se dispone de un conjunto de evaluacion propio.
 - Fine-tuning posterior o destilacion: al ser un derivado de licencia Apache 2.0, es reutilizable como base para nuevos ajustes.
 
@@ -72,11 +72,11 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| luke3000/raglm-qwen35-4b-cluster7 | ~4B (segun nombre) | no disponible | Apache 2.0 | en | HuggingFace |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | HuggingFace |
-| Qwen3-4B | 4B | 32K nativo | Apache 2.0 | multilingue | HuggingFace |
-| Llama 3.2 3B Instruct | 3,2B | 128K | Llama 3.2 Community License | multilingue | HuggingFace |
-| Phi-4-mini | 3,8B | 128K | MIT | multilingue | HuggingFace |
+| luke3000/raglm-qwen35-4b-cluster7 | ~4B (segun nombre) | no disponible | Apache 2.0 | en | Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | Hugging Face |
+| Qwen3-4B | 4B | 32K nativo | Apache 2.0 | multilingue | Hugging Face |
+| Llama 3.2 3B Instruct | 3,2B | 128K | Llama 3.2 Community License | multilingue | Hugging Face |
+| Phi-4-mini | 3,8B | 128K | MIT | multilingue | Hugging Face |
 
 No es posible comparar rendimiento, ya que no existen benchmarks publicados para el modelo evaluado.
 
@@ -95,7 +95,7 @@ No es posible comparar rendimiento, ya que no existen benchmarks publicados para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster7
+- Repositorio Hugging Face: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster7
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B (referenciado en las etiquetas del repositorio; no verificado en esta busqueda)
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo.

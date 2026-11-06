@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohit2811/llama3.2-3b-financial-sentiment
+- Modelo en Hugging Face: https://huggingface.co/rohit2811/llama3.2-3b-financial-sentiment
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Código de fine-tuning de referencia (GitHub): https://github.com/Thebinary110/llm-finetuning-Finance_sentimental_analysis/blob/main/llm-finetuning-lab/llama3-financial-sentiment-analysis-ft-unsloth/README.md
 - Blog de referencia sobre fine-tuning para sentimiento financiero: https://gist.github.com/gepitis/60affa9db828ca9d4a8f90b8a10e25d2/

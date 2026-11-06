@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yyangryan3279/vit-baseline-2024` es un prototipo de investigación de tipo Vision Transformer (ViT) orientado a aprendizaje contrastivo, publicado en HuggingFace por el usuario yyangryan3279. Se presenta explícitamente como un *baseline* de experimentación: la propia model card aclara que el checkpoint incluido (`model.safetensors`) es una inicialización válida para *smoke tests* y no un modelo entrenado ni evaluado. El repositorio no declara ninguna métrica de rendimiento y ocupa 0,0 GB, lo que confirma que se trata de un artefacto mínimo.
+`yyangryan3279/vit-baseline-2024` es un prototipo de investigación de tipo Vision Transformer (ViT) orientado a aprendizaje contrastivo, publicado en Hugging Face por el usuario yyangryan3279. Se presenta explícitamente como un *baseline* de experimentación: la propia model card aclara que el checkpoint incluido (`model.safetensors`) es una inicialización válida para *smoke tests* y no un modelo entrenado ni evaluado. El repositorio no declara ninguna métrica de rendimiento y ocupa 0,0 GB, lo que confirma que se trata de un artefacto mínimo.
 
 Arquitectónicamente combina un ViT de escala *base* con atención dispersa (*sparse attention*), fusión tensorial (*tensor fusion*), activación ReLU y normalización RMSNorm. La receta de entrenamiento por defecto usa optimizador Adam con un calendario de *warmup* constante, si bien el autor insiste en que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -92,5 +92,5 @@ La comparacion se incluye a efectos de categoria arquitectonica (ViT base), pero
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyangryan3279/vit-baseline-2024
+- Hugging Face: https://huggingface.co/yyangryan3279/vit-baseline-2024
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vikasaivyas/gemma4-hindi-novelist` es un adaptador LoRA sobre el modelo base `google/gemma-4-E4B`, diseñado para la generación de novelas en hindi. Lo desarrolla el usuario `vikasaivyas` y se publica en HuggingFace bajo la librería PEFT. El objetivo es especializar un modelo de lenguaje de propósito general en la tarea de escritura creativa en hindi, un ámbito con escasa cobertura en el ecosistema open source.
+El modelo `vikasaivyas/gemma4-hindi-novelist` es un adaptador LoRA sobre el modelo base `google/gemma-4-E4B`, diseñado para la generación de novelas en hindi. Lo desarrolla el usuario `vikasaivyas` y se publica en Hugging Face bajo la librería PEFT. El objetivo es especializar un modelo de lenguaje de propósito general en la tarea de escritura creativa en hindi, un ámbito con escasa cobertura en el ecosistema open source.
 
 El modelo base, `gemma-4-E4B`, pertenece a la familia Gemma 4 de Google DeepMind, de la que se hereda la arquitectura transformer. No se dispone de información sobre el número exacto de parámetros, la longitud de contexto ni los datos de entrenamiento del adaptador. El repositorio no contiene pesos visibles (tamaño 0.0 GB) y la model card es una plantilla sin completar, lo que limita la evaluación de sus capacidades.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre comparativas con otros modelos. La referenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vikasaivyas/gemma4-hindi-novelist
+- Hugging Face: https://huggingface.co/vikasaivyas/gemma4-hindi-novelist
 - Modelo base (referenciado en metadatos): https://huggingface.co/google/gemma-4-E4B
 - Blog sobre fine-tuning de Gemma para hindi: https://huggingface.co/blog/pankajpandey-dev/train-gemma-with-hindi
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-gLM-150M es un port minimalista de HuggingFace de la variante de 150 millones de parametros de gLM2, un modelo de lenguaje genomico de modalidad mixta desarrollado originalmente por tattabio. El modelo codifica un andamiaje genomico utilizando simultaneamente tokens de aminoacidos y de ADN, lo que permite representar tanto regiones codificantes como secuencias nucleotidicas en un mismo espacio latente. Se preentrena con masked language modeling sobre el dataset OMG (open metagenomic corpus), con un total de 315 mil millones de tokens en contexto de 4096 posiciones.
+gLM-150M es un port minimalista de Hugging Face de la variante de 150 millones de parametros de gLM2, un modelo de lenguaje genomico de modalidad mixta desarrollado originalmente por tattabio. El modelo codifica un andamiaje genomico utilizando simultaneamente tokens de aminoacidos y de ADN, lo que permite representar tanto regiones codificantes como secuencias nucleotidicas en un mismo espacio latente. Se preentrena con masked language modeling sobre el dataset OMG (open metagenomic corpus), con un total de 315 mil millones de tokens en contexto de 4096 posiciones.
 
-La relevancia de este port reside en su integracion limpia con el ecosistema transformers de HuggingFace, con soporte para los backends de atencion SDPA, eager y Flash Attention 2, y verificacion de paridad bit-exacta contra los pesos originales de `tattabio/gLM2_150M`. Con 152,4 millones de parametros y un vocabulario de 37 tokens biologicos, es una herramienta pensada para investigacion en biologia computacional, bioinformatica y genomica, no para procesamiento de lenguaje natural general.
+La relevancia de este port reside en su integracion limpia con el ecosistema transformers de Hugging Face, con soporte para los backends de atencion SDPA, eager y Flash Attention 2, y verificacion de paridad bit-exacta contra los pesos originales de `tattabio/gLM2_150M`. Con 152,4 millones de parametros y un vocabulario de 37 tokens biologicos, es una herramienta pensada para investigacion en biologia computacional, bioinformatica y genomica, no para procesamiento de lenguaje natural general.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ El modelo es un port bit-exacto del checkpoint original de tattabio, por lo que 
 
 ## Enlaces
 
-- [Pagina del modelo en HuggingFace](https://huggingface.co/Taykhoom/gLM-150M)
+- [Pagina del modelo en Hugging Face](https://huggingface.co/Taykhoom/gLM-150M)
 - [Coleccion gLM2 de Taykhoom](https://huggingface.co/collections/Taykhoom/glm2)
 - [Modelo original tattabio/gLM2_150M](https://huggingface.co/tattabio/gLM2_150M)
 - [Dataset OMG](https://huggingface.co/datasets/tattabio/OMG)

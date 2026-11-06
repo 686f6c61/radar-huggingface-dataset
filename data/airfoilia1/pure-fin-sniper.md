@@ -27,7 +27,7 @@ El interés de esta ficha es limitado pero ilustrativo: se trata de un ejemplo d
 | Pipeline | text-generation |
 | Dataset de entrenamiento | No disponible |
 | Framework de entrenamiento | TRL 1.13.0, PEFT 0.20.0, Transformers 5.14.1, PyTorch 2.11.0+cu128, Datasets 5.0.1, Tokenizers 0.22.2 |
-| Fecha de creacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-11 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se dispone de datos comparativos de rendimiento entre este adaptador y las al
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: la model card incluye un campo de licencia vacío y los metadatos de HuggingFace indican "no disponible". Sin una licencia explícita, no hay autorización clara para uso comercial ni para redistribución, lo que supone un riesgo legal en producción.
+- Licencia no declarada: la model card incluye un campo de licencia vacío y los metadatos de Hugging Face indican "no disponible". Sin una licencia explícita, no hay autorización clara para uso comercial ni para redistribución, lo que supone un riesgo legal en producción.
 - Ausencia total de evaluación: no hay benchmarks, ni evaluación humana, ni métricas de pérdida, de modo que no se puede afirmar que el ajuste mejore al modelo base en ninguna tarea.
 - Dataset desconocido: al no documentarse los datos de SFT, no es posible analizar sesgos, cobertura temática ni posibles problemas de contaminación o de derechos sobre los datos.
 - Riesgo de alucinación: inherente a los modelos de 7B y no mitigado de forma documentada. Se agrava en dominios especializados como el financiero, donde el nombre del repositorio sugiere un uso para el que no existe evidencia.
@@ -97,7 +97,7 @@ No se dispone de datos comparativos de rendimiento entre este adaptador y las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/airfoilia1/pure-fin-sniper
+- Modelo en Hugging Face: https://huggingface.co/airfoilia1/pure-fin-sniper
 - Modelo base usado para el ajuste: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces disponibles son los anteriores.

@@ -85,7 +85,7 @@ La diferencia clave es que este repositorio no es un modelo de inferencia, sino 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-3209b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-3209b
 - Sitio oficial de OLMo: https://allenai.org/olmo
 - Sitio de OLMo 2: https://allenai.org/olmo2
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo

@@ -4,7 +4,7 @@
 
 `francesca9805/swa-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407` es un modelo de generacion de texto de 124.770.816 parametros publicado por el usuario francesca9805 (Universidad de Groninga, segun la URL del proyecto en Weights & Biases). Se trata de un ajuste fino (SFT) realizado con la libreria TRL sobre otro modelo del mismo autor, `francesca9805/ppt-wc-loglinear-newlex-swa-before-100mb-packed-bfdiso_seed3407`, que a su vez parece formar parte de una familia de experimentos de tokenizacion y de promediado de pesos (SWA, "stochastic weight averaging") sobre corpus empaquetados.
 
-El modelo se apoya en la arquitectura GPT-2, segun las etiquetas declaradas en HuggingFace (`gpt2`), y se distribuye en formato `safetensors` bajo la libreria `transformers`. El nombre del repositorio codifica el experimento: tokenizador "newlex", corpus "packed", variante "loglinear" frente a "uniform", punto de control 500 y semilla 3407. Es, por tanto, un artefacto de investigacion mas que un modelo listo para produccion.
+El modelo se apoya en la arquitectura GPT-2, segun las etiquetas declaradas en Hugging Face (`gpt2`), y se distribuye en formato `safetensors` bajo la libreria `transformers`. El nombre del repositorio codifica el experimento: tokenizador "newlex", corpus "packed", variante "loglinear" frente a "uniform", punto de control 500 y semilla 3407. Es, por tanto, un artefacto de investigacion mas que un modelo listo para produccion.
 
 Su relevancia es limitada fuera del contexto academico: no publica model card descriptiva, no declara idiomas, no declara licencia efectiva y no aporta resultados de evaluacion. Resulta util como punto de reproducibilidad de un experimento comparativo de tecnicas de entrenamiento y como modelo de juguete para pruebas de infraestructura de inferencia, dado su tamano reducido.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada fuera del contexto academico: no publica model card de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun etiqueta `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun etiqueta `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (el autor no la especifica; la arquitectura GPT-2 suele usar 1024 tokens, sin confirmar) |
@@ -70,18 +70,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/swa-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,77 M | no disponible | no disponible | no disponible | HuggingFace, 56 descargas |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | Perplejidad y benchmarks en el paper original de GPT-2 | MIT (pesos publicados) | HuggingFace, ampliamente usado |
-| distilgpt2 (HuggingFace) | 82 M | 1024 tokens | Resultados en la model card del autor | Apache 2.0 | HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Resultados publicados en su model card | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B (varios) | 1,1 B | 2048 tokens | Resultados publicados en su model card | Apache 2.0 | HuggingFace |
+| francesca9805/swa-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,77 M | no disponible | no disponible | no disponible | Hugging Face, 56 descargas |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | Perplejidad y benchmarks en el paper original de GPT-2 | MIT (pesos publicados) | Hugging Face, ampliamente usado |
+| distilgpt2 (Hugging Face) | 82 M | 1024 tokens | Resultados en la model card del autor | Apache 2.0 | Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Resultados publicados en su model card | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B (varios) | 1,1 B | 2048 tokens | Resultados publicados en su model card | Apache 2.0 | Hugging Face |
 
-Comparado con GPT-2 small, el modelo aqui descrito tiene un tamano practicamente identico, pero carece de licencia clara y de evaluacion publicada, por lo que no es un sustituto directo en produccion. Frente a distilgpt2 o SmolLM-135M, la diferencia relevante no es de rendimiento sino de trazabilidad: los modelos de HuggingFace cuentan con model card completa y licencia permisiva, mientras que este repositorio es un artefacto de experimento sin garantias.
+Comparado con GPT-2 small, el modelo aqui descrito tiene un tamano practicamente identico, pero carece de licencia clara y de evaluacion publicada, por lo que no es un sustituto directo en produccion. Frente a distilgpt2 o SmolLM-135M, la diferencia relevante no es de rendimiento sino de trazabilidad: los modelos de Hugging Face cuentan con model card completa y licencia permisiva, mientras que este repositorio es un artefacto de experimento sin garantias.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, ni perplejidad, ni analisis cualitativo de las salidas. No se puede afirmar que el modelo sea util para una tarea concreta.
-- Licencia no especificada: la model card contiene `licence: license` como marcador vacio y los metadatos de HuggingFace no declaran licencia. No hay autorizacion explicita de uso comercial, por lo que su empleo en produccion es juridicamente arriesgado.
+- Licencia no especificada: la model card contiene `licence: license` como marcador vacio y los metadatos de Hugging Face no declaran licencia. No hay autorizacion explicita de uso comercial, por lo que su empleo en produccion es juridicamente arriesgado.
 - Idiomas no declarados: se desconoce que lenguas cubre el entrenamiento y con que calidad.
 - Sesgos: al no documentarse la composicion del dataset, no es posible evaluar sesgos de genero, raza, religion o ideologia. Un modelo GPT-2 ajustado sobre un corpus no descrito tiende a reproducir los sesgos de ese corpus.
 - Riesgo de alucinacion: alto en terminos relativos, dado el tamano reducido y la ausencia de alineacion documentada (no se menciona RLHF ni DPO).
@@ -93,7 +93,7 @@ Comparado con GPT-2 small, el modelo aqui descrito tiene un tamano practicamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-swa-before-100mb-packed-bfdiso_seed3407
 - Experimento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rk9mn6g0
 - Repositorio de TRL: https://github.com/huggingface/trl

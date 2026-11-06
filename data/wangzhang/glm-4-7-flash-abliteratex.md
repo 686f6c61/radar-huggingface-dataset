@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks estándar entre 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wangzhang/GLM-4.7-Flash-abliteratex
+- Repositorio Hugging Face: https://huggingface.co/wangzhang/GLM-4.7-Flash-abliteratex
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Documentación de GLM-4.7 de Z.AI: https://docs.z.ai/guides/llm/glm-4.7
 - Guía de ejecución local de GLM-4.7-Flash (unsloth): https://unsloth.ai/docs/models/tutorials/glm-4.7-flash

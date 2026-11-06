@@ -74,7 +74,7 @@ La principal diferencia frente a las alternativas es el formato: MNN esta optimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: [vitorcalvi/qwen2.5-1.5b-mnn-cpu](https://huggingface.co/vitorcalvi/qwen2.5-1.5b-mnn-cpu)
+- Repositorio Hugging Face: [vitorcalvi/qwen2.5-1.5b-mnn-cpu](https://huggingface.co/vitorcalvi/qwen2.5-1.5b-mnn-cpu)
 - Modelo base: [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 - Repositorio MNN: [alibaba/MNN](https://github.com/alibaba/MNN)
 - Informe tecnico Qwen2.5: [arXiv:2412.15115](https://arxiv.org/pdf/2412.15115v2)

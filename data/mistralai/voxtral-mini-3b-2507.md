@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Ambito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Voxtral-Mini-3B-2507 | 4.676.271.104 | 32k tokens | Audio + texto | apache-2.0 | HuggingFace, vLLM, Transformers |
+| Voxtral-Mini-3B-2507 | 4.676.271.104 | 32k tokens | Audio + texto | apache-2.0 | Hugging Face, vLLM, Transformers |
 | Voxtral-Small-24B-2507 | no disponible | no disponible | Audio + texto | no disponible en la informacion | mencionado en la model card |
 | Alternativas ASR puras (p. ej. Whisper) y modelos de audio-lenguaje (p. ej. Qwen2-Audio) | no disponible | no disponible | Audio / audio-lenguaje | no disponible | no disponibles en los resultados de busqueda |
 
@@ -87,11 +87,11 @@ Los resultados de la busqueda web no aportan datos comparativos verificables sob
 - System prompts no soportados todavia, lo que limita el control fino del comportamiento del modelo.
 - Restricciones de licencia: licencia Apache 2.0, que permite uso comercial; conviene revisar los terminos de Mistral AI y su politica de privacidad, ya que el acceso puede requerir aceptar condiciones adicionales.
 - Para produccion: se recomienda vLLM >= 0.10.0 y mistral_common >= 1.8.1, y verificar la compatibilidad de los formatos de carga (tokenizer_mode mistral, config_format mistral, load_format mistral).
-- La model card indica que el modelo no esta pensado para inferencia directa en el pipeline de HuggingFace (inference: false).
+- La model card indica que el modelo no esta pensado para inferencia directa en el pipeline de Hugging Face (inference: false).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Voxtral-Mini-3B-2507
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Voxtral-Mini-3B-2507
 - Blog de Mistral AI sobre Voxtral: https://mistral.ai/news/voxtral
 - Paper de investigacion (arXiv): https://arxiv.org/abs/2507.13264
 - Ministral 3B (backbone): https://mistral.ai/news/ministraux

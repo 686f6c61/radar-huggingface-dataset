@@ -83,7 +83,7 @@ La comparacion con alternativas de la misma categoria (por ejemplo, otros ajuste
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-DPO
+- Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-DPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Repositorio alternativo citado en la model card: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-DPO
 - Papers, blogs, repos y demos adicionales: no disponible

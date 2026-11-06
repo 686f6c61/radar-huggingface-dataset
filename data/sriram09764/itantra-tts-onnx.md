@@ -2,7 +2,7 @@
 
 ## Resumen
 
-iTantra TTS ONNX es una coleccion de modelos de sintesis de voz (TTS) en formato ONNX, derivada de los repositorios `facebook/mms-tts-*` de Meta, y publicada por el usuario `sriram09764` en HuggingFace. El paquete contiene diez voces, una por idioma, pensadas para ser consumidas por `sherpa-onnx`, el runtime de inferencia de voz de k2-fsa. Cada carpeta incluye un fichero `model.onnx`, un `tokens.txt` y un `config.json`, lo que permite desplegar el modelo sin dependencias de PyTorch ni de frameworks pesados.
+iTantra TTS ONNX es una coleccion de modelos de sintesis de voz (TTS) en formato ONNX, derivada de los repositorios `facebook/mms-tts-*` de Meta, y publicada por el usuario `sriram09764` en Hugging Face. El paquete contiene diez voces, una por idioma, pensadas para ser consumidas por `sherpa-onnx`, el runtime de inferencia de voz de k2-fsa. Cada carpeta incluye un fichero `model.onnx`, un `tokens.txt` y un `config.json`, lo que permite desplegar el modelo sin dependencias de PyTorch ni de frameworks pesados.
 
 El modelo resuelve el problema de disponer de voces TTS ligeras y ejecutables en el dispositivo para diez idiomas indicos y el ingles: hindi, gujarati, marati, kannada, malabar (malayalam), tamil, telugu, bengali, odia e ingles. La base tecnica son los modelos MMS-TTS de Meta, que emplean la arquitectura VITS (sintesis end-to-end con aprendizaje adversario y modelado variacional), reconvertidos a ONNX para su uso en produccion.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Idiomas (indicos) | Formato | Runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iTantra TTS ONNX | 10 (mas ingles) | ONNX | sherpa-onnx / ONNX Runtime | no disponible | HuggingFace (0 descargas) |
-| facebook/mms-tts-* | Amplia cobertura MMS | PyTorch / safetensors | PyTorch | CC-BY-NC 4.0 (segun el proyecto MMS) | HuggingFace |
-| Piper (rhasspy) | Voces por idioma, indico limitado | ONNX | sherpa-onnx / onnxruntime | MIT en el motor, voces con licencias variables | HuggingFace / GitHub |
+| iTantra TTS ONNX | 10 (mas ingles) | ONNX | sherpa-onnx / ONNX Runtime | no disponible | Hugging Face (0 descargas) |
+| facebook/mms-tts-* | Amplia cobertura MMS | PyTorch / safetensors | PyTorch | CC-BY-NC 4.0 (segun el proyecto MMS) | Hugging Face |
+| Piper (rhasspy) | Voces por idioma, indico limitado | ONNX | sherpa-onnx / onnxruntime | MIT en el motor, voces con licencias variables | Hugging Face / GitHub |
 
 Nota: los datos de la fila de `facebook/mms-tts-*` y de Piper proceden de conocimiento general de esos proyectos y no de la informacion proporcionada en esta busqueda; se incluyen solo como referencia cualitativa.
 
@@ -81,7 +81,7 @@ Nota: los datos de la fila de `facebook/mms-tts-*` y de Piper proceden de conoci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriram09764/itantra-tts-onnx
+- Modelo en Hugging Face: https://huggingface.co/sriram09764/itantra-tts-onnx
 - Modelos base de Meta MMS-TTS: https://huggingface.co/facebook/mms-tts-hin (y equivalentes por idioma)
 - Proyecto MMS de Meta: https://ai.meta.com/blog/mms-massively-multilingual-speech/
 - Runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

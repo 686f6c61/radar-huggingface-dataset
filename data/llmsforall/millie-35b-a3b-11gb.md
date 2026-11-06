@@ -80,7 +80,7 @@ La diferencia clave es la compresión extrema de Millie frente a las versiones s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llmsforall/Millie-35B-A3B-11GB
+- Modelo en Hugging Face: https://huggingface.co/llmsforall/Millie-35B-A3B-11GB
 - Variante de 7 GB: https://huggingface.co/llmsforall/Millie-35B-A3B-7GB
 - Modelo base Agents-A1: https://huggingface.co/InternScience/Agents-A1
 - Fork de llama.cpp requerido: https://github.com/llmsforall/llama.cpp

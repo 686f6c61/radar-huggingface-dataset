@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ziyiyang0903z/simple-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/ziyiyang0903z/simple-retrieval
 - Paper relacionado (por nombre, pero sin conexión confirmada): SimplyRetrieve: A Private and Lightweight Retrieval-Centric Generative AI Tool - https://arxiv.org/abs/2308.03983
 - Repositorio GitHub de SimplyRetrieve (misma advertencia): https://github.com/RCGAI/SimplyRetrieve
 

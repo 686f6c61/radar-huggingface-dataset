@@ -44,7 +44,7 @@ La cuantización fue validada contra el modelo original en PyTorch, obteniendo c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La única validación documentada es la comparación de la cuantización contra el modelo fp32 original, donde las puntuaciones coinciden en 3-4 decimales en un conjunto de prueba benigno. No hay datos de precisión, recall o F1 sobre datasets públicos como el de la tarea de detección NSFW de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. La única validación documentada es la comparación de la cuantización contra el modelo fp32 original, donde las puntuaciones coinciden en 3-4 decimales en un conjunto de prueba benigno. No hay datos de precisión, recall o F1 sobre datasets públicos como el de la tarea de detección NSFW de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -76,9 +76,9 @@ La comparativa se basa en la información disponible; no hay datos de rendimient
 
 ## Enlaces
 
-- [HuggingFace - d0gr/falconsai-nsfw-detector-onnx](https://huggingface.co/d0gr/falconsai-nsfw-detector-onnx)
-- [HuggingFace - Falconsai/nsfw_image_detection (modelo base)](https://huggingface.co/Falconsai/nsfw_image_detection)
+- [Hugging Face - d0gr/falconsai-nsfw-detector-onnx](https://huggingface.co/d0gr/falconsai-nsfw-detector-onnx)
+- [Hugging Face - Falconsai/nsfw_image_detection (modelo base)](https://huggingface.co/Falconsai/nsfw_image_detection)
 - [Falcons.ai - Producto NSFW Detection](https://falcons.ai/products/nsfw-image-detection)
-- [Perfil de Falconsai en HuggingFace](https://huggingface.co/Falconsai)
+- [Perfil de Falconsai en Hugging Face](https://huggingface.co/Falconsai)
 - [Ficha en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/nsfwimagedetection-falconsai)
 - [Mixpeek Model Hub - nsfw_image_detection](https://mixpeek.com/model/Falconsai/nsfw_image_detection)

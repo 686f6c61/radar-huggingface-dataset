@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Uso previsto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoUG-ColdStart | Inicializacion SFT para RL espacial | no disponible | no disponible | other (mixta, CC BY-NC parcial) | HuggingFace |
-| GeoUG-Spatial | Politica espacial adaptativa final | no disponible | no disponible | other (mixta) | HuggingFace |
-| GeoUG-Depth | Generacion de profundidad metrica independiente | no disponible | no disponible | other (mixta) | HuggingFace |
+| GeoUG-ColdStart | Inicializacion SFT para RL espacial | no disponible | no disponible | other (mixta, CC BY-NC parcial) | Hugging Face |
+| GeoUG-Spatial | Politica espacial adaptativa final | no disponible | no disponible | other (mixta) | Hugging Face |
+| GeoUG-Depth | Generacion de profundidad metrica independiente | no disponible | no disponible | other (mixta) | Hugging Face |
 | BAGEL (base) | Modelo multimodal base BAGEL/MoT | no disponible | no disponible | segun BAGEL | repositorio upstream |
 
 No se dispone de datos de parametros, contexto ni rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -85,7 +85,7 @@ No se dispone de datos de parametros, contexto ni rendimiento para establecer un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rayruiyang/GeoUG-ColdStart
+- Hugging Face: https://huggingface.co/rayruiyang/GeoUG-ColdStart
 - Project page: https://yangr116.github.io/geoug-project-page/
 - Paper: https://yangr116.github.io/geoug-project-page/assets/geoug-paper.pdf
 - Modelo GeoUG-Spatial: https://huggingface.co/rayruiyang/GeoUG-Spatial

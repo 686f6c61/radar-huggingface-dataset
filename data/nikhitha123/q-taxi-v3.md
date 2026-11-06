@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nikhitha123/q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno Taxi-v3 de Gymnasium/Gym. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un artefacto de politica (policy) serializado que resuelve la tarea clasica de recoger y dejar un pasajero en una cuadricula de 5x5 con cuatro posibles destinos. El autor lo publica en HuggingFace bajo el pipeline `reinforcement-learning`, con un unico fichero de pesos en formato pickle (`q-learning.pkl`).
+Nikhitha123/q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno Taxi-v3 de Gymnasium/Gym. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un artefacto de politica (policy) serializado que resuelve la tarea clasica de recoger y dejar un pasajero en una cuadricula de 5x5 con cuatro posibles destinos. El autor lo publica en Hugging Face bajo el pipeline `reinforcement-learning`, con un unico fichero de pesos en formato pickle (`q-learning.pkl`).
 
 El interes del artefacto es principalmente didactico y de referencia: sirve como ejemplo minimo reproducible de un agente tabular, como punto de comparacion para algoritmos mas avanzados (DQN, SARSA, PPO) sobre el mismo entorno, y como banco de pruebas para infraestructura de evaluacion de RL. El rendimiento declarado es modesto: una recompensa media de 7,50 +/- 2,76 sobre 100 episodios de evaluacion, con metrica marcada como no verificada en el model-index.
 
@@ -25,8 +25,8 @@ El repositorio no declara licencia, idiomas ni informacion de entrenamiento (num
 | Metrica declarada | mean_reward = 7,50 +/- 2,76 (100 episodios, `verified: false`) |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-13 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-13 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-13 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-13 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -50,7 +50,7 @@ No se documenta ningun proceso de RLHF, DPO ni ajuste fino supervisado, algo que
 
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo completo y minimo del ciclo entrenamiento-evaluacion-publicacion, cargando el pickle y ejecutando episodios en Taxi-v3 para ilustrar como una tabla Q converge a una politica.
 - Baseline de comparacion: fijar la recompensa media de 7,50 como referencia tabular frente a metodos con aproximacion de funcion (DQN, Double DQN, A2C) evaluados en el mismo entorno y con el mismo presupuesto de episodios.
-- Pruebas de humo de infraestructura de RL: validar pipelines de evaluacion, registro de metricas y formateo de model-index en HuggingFace usando un artefacto pequeno que se descarga y ejecuta en segundos.
+- Pruebas de humo de infraestructura de RL: validar pipelines de evaluacion, registro de metricas y formateo de model-index en Hugging Face usando un artefacto pequeno que se descarga y ejecuta en segundos.
 - Depuracion de entornos Gymnasium: comprobar envoltorios (wrappers), semillas, limites de pasos y modos de render contra una politica ya entrenada que se comporta de forma predecible.
 - Visualizacion y divulgacion: generar GIF o video del agente moviendose por la cuadricula para explicar el problema de recompensa dispersa y el coste de las acciones ilegales.
 - Verificacion de seguridad en carga de artefactos: usar el fichero pickle como caso de prueba para validar protocolos de escaneo y sandboxing antes de deserializar pesos de terceros.
@@ -82,7 +82,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Rendimiento declarado |
 |---|---|---|---|---|---|---|
 | Nikhitha123/q-Taxi-v3 | Q-Learning tabular | Taxi-v3 | Tabla Q (no neuronal; tamano no declarado) | No aplica | No disponible | mean_reward 7,50 +/- 2,76 (100 episodios) |
-| Agentes Q-Learning de referencia del curso de RL de HuggingFace (p. ej. `q-Taxi-v3` de otros autores) | Q-Learning tabular | Taxi-v3 | No disponible | No aplica | No disponible | No disponible en la informacion proporcionada |
+| Agentes Q-Learning de referencia del curso de RL de Hugging Face (p. ej. `q-Taxi-v3` de otros autores) | Q-Learning tabular | Taxi-v3 | No disponible | No aplica | No disponible | No disponible en la informacion proporcionada |
 | DQN con Stable-Baselines3 | Red neuronal (aproximacion de funcion) | Taxi-v3 | No disponible | No aplica | No disponible | No disponible en la informacion proporcionada |
 | SARSA tabular | Aprendizaje por refuerzo on-policy | Taxi-v3 | No disponible | No aplica | No disponible | No disponible en la informacion proporcionada |
 
@@ -101,7 +101,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhitha123/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/Nikhitha123/q-Taxi-v3
 - Perfil del autor: https://huggingface.co/Nikhitha123
 - Entorno Taxi-v3 en la documentacion de Gymnasium: no disponible en la informacion proporcionada
 - Paper, blog o repositorio asociado: no disponible en la informacion proporcionada

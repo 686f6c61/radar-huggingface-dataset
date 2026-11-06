@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es una versión podada estructuralmente del modelo Qwen/Qwen3.5-122B-A10B, un transformer de mezcla de expertos (MoE) de solo texto. Lo publica el usuario jayzou3773 en HuggingFace, con licencia apache-2.0, etiqueta de pipeline `text-generation` y arquitectura declarada `qwen3_5_moe_text`. La ficha se creó el 20 de septiembre de 2026 y acumula 141 descargas y 0 "likes".
+Este checkpoint es una versión podada estructuralmente del modelo Qwen/Qwen3.5-122B-A10B, un transformer de mezcla de expertos (MoE) de solo texto. Lo publica el usuario jayzou3773 en Hugging Face, con licencia apache-2.0, etiqueta de pipeline `text-generation` y arquitectura declarada `qwen3_5_moe_text`. La ficha se creó el 20 de septiembre de 2026 y acumula 141 descargas y 0 "likes".
 
 La poda se ha realizado con el método Less-is-MoE (mean-absolute-gradient), que elimina exactamente el 50 % de las neuronas FFN de los expertos enrutados a partir de 64 muestras de calibración extraídas de la configuración `gpqa_main` del dataset GPQA. El resultado pasa de los 122 000 millones de parámetros del modelo base a 64 129 468 416 parámetros totales verificados en safetensors, lo que reduce el repositorio a 128,3 GB en BF16.
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-gpqa-main-64-intdim-l-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-gpqa-main-64-intdim-l-50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Dataset de calibración (privado, requiere acceso): https://huggingface.co/datasets/jayzou3773/less-is-moe-gpqa-main-calibration-64
 - Dataset GPQA original: https://huggingface.co/datasets/Idavidrein/gpqa

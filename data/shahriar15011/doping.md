@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Tipo de entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Doping | 46,97 M | Semilla aleatoria | Skin Minecraft 64×64 RGBA | Apache 2.0 | HuggingFace + Colab |
+| Doping | 46,97 M | Semilla aleatoria | Skin Minecraft 64×64 RGBA | Apache 2.0 | Hugging Face + Colab |
 | Stable Diffusion 1.5 (fine-tunes de pixel art) | ~860 M (U-Net) | Prompt de texto | Imagen general, requiere ajuste para skins | CreativeML OpenRAIL-M | Amplia |
 | Pixel art GANs / modelos de pixel art de dominio específico | no disponible | Semilla o condicionamiento | Sprites de baja resolución | variable | variable |
 
@@ -82,9 +82,9 @@ No se dispone de información sobre modelos comparables entrenados específicame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shahriar15011/Doping
+- Modelo en Hugging Face: https://huggingface.co/shahriar15011/Doping
 - Notebook de Colab: https://colab.research.google.com/drive/16rmJO3zTSSj74BzkMXWlVk8n5cVqjBSW?usp=sharing
 - Notebook descargable (.ipynb): https://huggingface.co/shahriar15011/Doping/resolve/main/Doping_Colab.ipynb?download=true
-- Notebook en HuggingFace: https://huggingface.co/shahriar15011/Doping/blob/main/Doping_Colab.ipynb
+- Notebook en Hugging Face: https://huggingface.co/shahriar15011/Doping/blob/main/Doping_Colab.ipynb
 - Neather Launcher: https://neatherlauncher.github.io/
 - Perfil del autor: https://www.facebook.com/shahriar.mahmud.5686

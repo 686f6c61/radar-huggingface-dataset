@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma3-negative-glitter-i1-GGUF (este) | 27B | no disponible | i1 (imatrix) desde IQ1_S a Q6_K | no disponible | HuggingFace |
-| Gemma 3 27B oficial (Google) | 27B | 128k | safetensors, GGUF (oficial) | Gemma Terms of Use | HuggingFace, Kaggle |
-| Llama 3.1 8B GGUF | 8B | 128k | GGUF variados | Llama 3.1 license | HuggingFace |
-| Mistral 7B GGUF | 7B | 32k | GGUF variados | Apache 2.0 | HuggingFace |
+| gemma3-negative-glitter-i1-GGUF (este) | 27B | no disponible | i1 (imatrix) desde IQ1_S a Q6_K | no disponible | Hugging Face |
+| Gemma 3 27B oficial (Google) | 27B | 128k | safetensors, GGUF (oficial) | Gemma Terms of Use | Hugging Face, Kaggle |
+| Llama 3.1 8B GGUF | 8B | 128k | GGUF variados | Llama 3.1 license | Hugging Face |
+| Mistral 7B GGUF | 7B | 32k | GGUF variados | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa: el modelo base Gemma 3 27B oficial ofrece contexto de 128k y licencia clara, mientras que este merge no declara ni contexto ni licencia. Las cuantizaciones i1 pueden ofrecer mejor calidad por bit que las GGUF estaticas equivalentes, pero no hay benchmarks que lo confirmen para este modelo concreto.
 
@@ -77,7 +77,7 @@ La comparativa es orientativa: el modelo base Gemma 3 27B oficial ofrece context
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma3-negative-glitter-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma3-negative-glitter-i1-GGUF
 - Modelo base (merge): https://huggingface.co/ToastyPigeon/gemma3-negative-glitter
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/gemma3-negative-glitter-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#gemma3-negative-glitter-i1-GGUF

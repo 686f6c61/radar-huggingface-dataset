@@ -56,7 +56,7 @@ No se han publicado resultados en otros benchmarks (MMLU, HumanEval, etc.) en la
 - VRAM estimada: el adaptador LoRA ocupa aproximadamente 0,1 GB, pero es necesario cargar el modelo base Qwen3-4B-Instruct-2507. En bf16, el modelo base requiere alrededor de 8 GB de VRAM (4B parametros × 2 bytes). Con cuantizacion a 4 bits (por ejemplo, bitsandbytes) se puede reducir a unos 2-3 GB.
 - GPU recomendadas: una NVIDIA RTX 3090, RTX 4090 o A100 de 80 GB son suficientes para inferencia en bf16 sin cuantizar. Para cuantizacion de 4 bits, una GPU consumer con 6-8 GB de VRAM (RTX 3060, RTX 4060) puede ser suficiente.
 - Si cabe en consumer GPU: si, en la mayoria de GPUs modernas con al menos 8 GB de VRAM, especialmente usando cuantizacion.
-- Opciones de despliegue: el adaptador se usa con HuggingFace `transformers` + `peft` (cargando el modelo base y luego el adaptador con `PeftModel`). Tambien se puede fusionar el adaptador con el modelo base y exportar a GGUF para usarlo con llama.cpp u Ollama, aunque no se documenta ese flujo en la ficha.
+- Opciones de despliegue: el adaptador se usa con Hugging Face `transformers` + `peft` (cargando el modelo base y luego el adaptador con `PeftModel`). Tambien se puede fusionar el adaptador con el modelo base y exportar a GGUF para usarlo con llama.cpp u Ollama, aunque no se documenta ese flujo en la ficha.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos comparativos con otros adaptadores de la misma familia ni
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l0
+- Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l0
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

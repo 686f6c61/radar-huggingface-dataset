@@ -85,13 +85,13 @@ No se dispone de datos de benchmarks del especialista ni de otros recortes equiv
 - Cuantizaciones: no disponibles. Solo hay safetensors; no se publican versiones GGUF, AWQ ni GPTQ.
 - Licencia Apache-2.0: permite uso comercial, pero el modelo se distribuye sin garantías y sin evaluar. Hereda los sesgos y el riesgo de alucinación del padre Qwen3, sin que se hayan medido en este checkpoint podado.
 - Memoria: cargar varios especialistas junto al padre puede consumir más memoria total que el padre solo.
-- Discrepancia de identificador: la model card usa `ruvnet/ruos-foundry-tools-qwen3-30b-a3b-e32` en el comando de vLLM, mientras que el repositorio consultado en HuggingFace es `callmefattyy/ruos-foundry-tools-qwen3-30b-a3b-e32`. Conviene verificar la ruta correcta antes de desplegar.
-- Fecha de creación reportada: 2026-10-05, según los metadatos de HuggingFace. Se reproduce el dato tal cual aparece.
+- Discrepancia de identificador: la model card usa `ruvnet/ruos-foundry-tools-qwen3-30b-a3b-e32` en el comando de vLLM, mientras que el repositorio consultado en Hugging Face es `callmefattyy/ruos-foundry-tools-qwen3-30b-a3b-e32`. Conviene verificar la ruta correcta antes de desplegar.
+- Fecha de creación reportada: 2026-10-05, según los metadatos de Hugging Face. Se reproduce el dato tal cual aparece.
 - Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/callmefattyy/ruos-foundry-tools-qwen3-30b-a3b-e32
+- Hugging Face del modelo: https://huggingface.co/callmefattyy/ruos-foundry-tools-qwen3-30b-a3b-e32
 - Repositorio alternativo mencionado en el comando de la model card: https://huggingface.co/ruvnet/ruos-foundry-tools-qwen3-30b-a3b-e32
 - Modelo padre: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - MoE-Foundry (repositorio del pipeline): https://github.com/ruvnet/MoE-Foundry

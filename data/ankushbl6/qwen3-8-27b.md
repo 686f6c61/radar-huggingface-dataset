@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, publicado en el repositorio de HuggingFace `Ankushbl6/Qwen3.8-27B`, que según su model card forma parte de la familia Qwen3.8 y se presenta como la generación más capaz de los modelos abiertos de Qwen hasta la fecha. Se trata de un modelo denso (no MoE) de aproximadamente 27.781 millones de parámetros, construido sobre la base arquitectónica de Qwen3.5, con 64 capas y una dimensión oculta de 5120. Su pipeline declarado es `image-text-to-text`, por lo que está diseñado como modelo nativo de visión-lenguaje capaz de procesar imágenes y vídeos además de texto.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, publicado en el repositorio de Hugging Face `Ankushbl6/Qwen3.8-27B`, que según su model card forma parte de la familia Qwen3.8 y se presenta como la generación más capaz de los modelos abiertos de Qwen hasta la fecha. Se trata de un modelo denso (no MoE) de aproximadamente 27.781 millones de parámetros, construido sobre la base arquitectónica de Qwen3.5, con 64 capas y una dimensión oculta de 5120. Su pipeline declarado es `image-text-to-text`, por lo que está diseñado como modelo nativo de visión-lenguaje capaz de procesar imágenes y vídeos además de texto.
 
 El modelo incorpora una arquitectura híbrida de atención que combina capas de Gated DeltaNet (atención lineal) con capas de Gated Attention (atención completa con RoPE), organizadas en un patrón de 16 bloques de 4 capas cada uno. Dispone de una longitud de contexto nativa de 262.144 tokens, extensible hasta 1.000.000, y entrena con Multi-Token Prediction (MTP). La licencia declarada es Apache 2.0 y los pesos se distribuyen en formato safetensors compatibles con Transformers, vLLM, SGLang y TokenSpeed.
 
@@ -89,6 +89,6 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ankushbl6/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/Ankushbl6/Qwen3.8-27B
 - Página del servicio en la nube citada en la model card: https://www.qwencloud.com/models/qwen3.8-27b
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

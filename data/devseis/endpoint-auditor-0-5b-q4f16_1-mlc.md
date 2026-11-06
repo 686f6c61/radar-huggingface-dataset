@@ -90,9 +90,9 @@ No se han identificado en la informacion disponible modelos de auditoria de endp
 
 | Modelo | Parametros | Contexto | Ajuste | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Devseis Endpoint Auditor 0.5B (v0.1) | ~0.5B | 32 768 tokens (heredado) | LoRA r=16 sobre Qwen2.5-0.5B-Instruct, dominio ISO 27001 / GDPR / EU AI Act | en | Apache-2.0 | HuggingFace, formato MLC/WebLLM |
-| Qwen2.5-0.5B-Instruct (base) | ~0.5B | 32 768 tokens | ajuste general de instrucciones | multilingue | Apache-2.0 | HuggingFace, formatos multiples |
-| Qwen2.5-0.5B-Instruct-q4f16_1-MLC (mlc-ai) | ~0.5B | 32 768 tokens | build oficial MLC de 4 bits del base | multilingue | Apache-2.0 | HuggingFace, MLC/WebLLM |
+| Devseis Endpoint Auditor 0.5B (v0.1) | ~0.5B | 32 768 tokens (heredado) | LoRA r=16 sobre Qwen2.5-0.5B-Instruct, dominio ISO 27001 / GDPR / EU AI Act | en | Apache-2.0 | Hugging Face, formato MLC/WebLLM |
+| Qwen2.5-0.5B-Instruct (base) | ~0.5B | 32 768 tokens | ajuste general de instrucciones | multilingue | Apache-2.0 | Hugging Face, formatos multiples |
+| Qwen2.5-0.5B-Instruct-q4f16_1-MLC (mlc-ai) | ~0.5B | 32 768 tokens | build oficial MLC de 4 bits del base | multilingue | Apache-2.0 | Hugging Face, MLC/WebLLM |
 
 ## Limitaciones y advertencias
 
@@ -109,7 +109,7 @@ No se han identificado en la informacion disponible modelos de auditoria de endp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devseis/endpoint-auditor-0.5b-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/Devseis/endpoint-auditor-0.5b-q4f16_1-MLC
 - Version no cuantizada / referencia del autor: https://huggingface.co/Devseis/endpoint-auditor-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Devseis/endpoint-auditor-synthetic

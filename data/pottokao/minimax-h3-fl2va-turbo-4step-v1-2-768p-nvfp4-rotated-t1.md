@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pottokao/MiniMax-H3-FL2VA-turbo-4step-v1.2-768p-NVFP4-rotated-T1
+- Modelo en Hugging Face: https://huggingface.co/pottokao/MiniMax-H3-FL2VA-turbo-4step-v1.2-768p-NVFP4-rotated-T1
 - Cargador personalizado: https://huggingface.co/pottokao/H3-RotNVFP4-ComfyUI-Loader
 - Text encoder recomendado: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF
 - Modelo base NVFP4 rotado: https://huggingface.co/pottokao/MiniMax-H3-NVFP4-rotated

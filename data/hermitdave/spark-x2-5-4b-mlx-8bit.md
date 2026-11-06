@@ -121,11 +121,11 @@ La cita del modelo menciona tambien una variante Spark-X2.5-1.7B dentro de la mi
 - El build de 4 bits de la misma familia presenta una degradacion medible de la perplejidad (de 14,56 a 16,33, un 13%); para tool calling el equipo upstream solo respalda 8 bits o BF16.
 - El modo thinking activado por defecto puede aumentar el consumo de tokens y la latencia si no se gestiona en produccion.
 - Metricas de validacion de la comunidad nulas: 0 descargas y 0 likes en el momento de la consulta, sin validacion externa independiente.
-- Los resultados de busqueda web disponibles no contienen informacion relevante sobre este modelo ni sobre su familia; las afirmaciones de esta ficha se limitan a la model card y a los datos de HuggingFace.
+- Los resultados de busqueda web disponibles no contienen informacion relevante sobre este modelo ni sobre su familia; las afirmaciones de esta ficha se limitan a la model card y a los datos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-8bit
 - Build de 4 bits: https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-4bit
 - Build de 6 bits: https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-6bit
 - Modelo base upstream: https://huggingface.co/XHToken/Spark-X2.5-4B

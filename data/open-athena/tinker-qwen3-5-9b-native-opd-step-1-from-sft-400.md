@@ -104,7 +104,7 @@ No se dispone de datos que permitan comparar este adaptador con alternativas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-opd-step-1-from-sft-400
+- Modelo en Hugging Face: https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-opd-step-1-from-sft-400
 - Punto de partida (adaptador SFT nativo de Axolotl, paso 400): https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-sft-step-400
 - Paquete de reproducción y trazas de evaluación: https://huggingface.co/datasets/open-athena/tinker-qwen3.5-9b-native-eval-traces
 - Receta de destilación de Thinking Machines: https://tinker-docs.thinkingmachines.ai/cookbook/recipes/distillation/

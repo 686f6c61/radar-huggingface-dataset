@@ -67,4 +67,4 @@ No disponible. No se proporciona información sobre otros ControlNets o LoRA com
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Comfy-Org/Qwen-Image-DiffSynth-ControlNets
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/Qwen-Image-DiffSynth-ControlNets

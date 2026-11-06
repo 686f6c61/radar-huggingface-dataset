@@ -95,11 +95,11 @@ No se dispone de datos en la información proporcionada para comparar este model
 - Calidad no verificada con benchmarks públicos: la única comprobación reportada es de perplejidad emparejada contra un *stack* de referencia, sin cifras publicadas.
 - Riesgo de alucinación y sesgos: no disponible; la información proporcionada no incluye evaluaciones de sesgo, seguridad ni alineación del modelo base.
 - Licencia: el repositorio de la cuantización declara apache-2.0, pero no se dispone de información sobre los términos del modelo base `Qwen/Qwen3.8-Flash-Next`, que conviene verificar antes de un uso comercial.
-- Inconsistencia de datos: el tamaño de repositorio declarado por HuggingFace (31,8 GB) no coincide con los 93,16 GiB de pesos indicados en la model card.
+- Inconsistencia de datos: el tamaño de repositorio declarado por Hugging Face (31,8 GB) no coincide con los 93,16 GiB de pesos indicados en la model card.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ilintar/qwen3.8-flash-next-gguf-strix-halo
+- Repositorio en Hugging Face: https://huggingface.co/ilintar/qwen3.8-flash-next-gguf-strix-halo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Rama `strix-halo` de llama.cpp: https://github.com/pwilkin/llama.cpp
 - Script de instalación: https://raw.githubusercontent.com/pwilkin/strix-halo/main/install-flash-next.sh

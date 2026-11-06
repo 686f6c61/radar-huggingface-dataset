@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario unijenaphotonics, no contiene un modelo de generación multimodal entrenado, sino una nota de investigación (research note) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre generación multimodal. El autor lo presenta explícitamente como un documento exploratorio, no como un paper completo ni como una liberación de pesos entrenados.
 
-El repositorio incluye un archivo `summary.md` como artefacto principal y un `README.md` de documentación. Los metadatos de HuggingFace indican 24.832 parámetros en formato safetensors, un valor que corresponde a un archivo de pesos trivial o a un artefacto simbólico, no a un modelo de lenguaje o generación multimodal real. No se reportan descargas, likes, pipeline asociado ni idiomas soportados.
+El repositorio incluye un archivo `summary.md` como artefacto principal y un `README.md` de documentación. Los metadatos de Hugging Face indican 24.832 parámetros en formato safetensors, un valor que corresponde a un archivo de pesos trivial o a un artefacto simbólico, no a un modelo de lenguaje o generación multimodal real. No se reportan descargas, likes, pipeline asociado ni idiomas soportados.
 
 La relevancia de este repositorio es limitada para desarrolladores que buscan un modelo utilizable. Su interés reside en el contenido conceptual de la nota de investigación, que plantea comparaciones con baselines, benchmarks públicos y planes de reproducibilidad, pero sin resultados experimentales. No debe confundirse con un modelo de IA generativa multimodal como los que se describen en la literatura reciente (p. ej., modelos unificados de comprensión y generación multimodal).
 
@@ -74,7 +74,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/unijenaphotonics/multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/unijenaphotonics/multimodal-generation
 - Referencia académica sobre generación multimodal (Springer): https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1
 - Survey sobre IA generativa multimodal (arXiv): https://arxiv.org/html/2409.14993v1
 - Artículo sobre modelos unificados de comprensión y generación multimodal (arXiv): https://arxiv.org/abs/2505.02567

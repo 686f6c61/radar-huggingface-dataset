@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `so101-wipe-spilled-drink-act-100k` es una política de control robótico entrenada con el algoritmo ACT (Action Chunking with Transformers) sobre el robot SO101, orientada a la tarea concreta de limpiar un líquido derramado. Lo publica el usuario de HuggingFace `leejaehot` como checkpoint final de un entrenamiento de 100.000 actualizaciones, dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un modelo de imitación (behavior cloning) que mapea observaciones visuales y de estado articular a comandos motores de 6 dimensiones.
+El modelo `so101-wipe-spilled-drink-act-100k` es una política de control robótico entrenada con el algoritmo ACT (Action Chunking with Transformers) sobre el robot SO101, orientada a la tarea concreta de limpiar un líquido derramado. Lo publica el usuario de Hugging Face `leejaehot` como checkpoint final de un entrenamiento de 100.000 actualizaciones, dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un modelo de imitación (behavior cloning) que mapea observaciones visuales y de estado articular a comandos motores de 6 dimensiones.
 
 El modelo resuelve un problema acotado de manipulación robótica: aprender una política de imitación a partir de 45 episodios de demostración teleoperada, con dos cámaras RGB (muñeca y cenital) a 640x480 y 30 Hz. Su relevancia es la de un artefacto reproducible de investigación en robótica de imitación: incluye preprocesadores, postprocesadores, estado del optimizador y manifiesto de hashes, lo que permite reanudar el entrenamiento o desplegar la política directamente en un SO101 calibrado.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estandarizados en la información d
 
 | Modelo | Parámetros | Tarea | Contexto / observación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101-wipe-spilled-drink-act-100k | 51,7 M | Limpiar líquido derramado con SO101 | 2 cámaras 640x480 + estado 6D a 30 Hz | no disponible | HuggingFace |
-| so101-wipe-spilled-drink-act-10k | no disponible | Misma tarea, checkpoint 10k | Igual configuración | no disponible | HuggingFace |
+| so101-wipe-spilled-drink-act-100k | 51,7 M | Limpiar líquido derramado con SO101 | 2 cámaras 640x480 + estado 6D a 30 Hz | no disponible | Hugging Face |
+| so101-wipe-spilled-drink-act-10k | no disponible | Misma tarea, checkpoint 10k | Igual configuración | no disponible | Hugging Face |
 | Otros modelos ACT para SO101 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de otros autores en la documentación proporcionada.
@@ -94,7 +94,7 @@ No se dispone de información sobre modelos comparables de otros autores en la d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leejaehot/so101-wipe-spilled-drink-act-100k
+- Hugging Face: https://huggingface.co/leejaehot/so101-wipe-spilled-drink-act-100k
 - Checkpoint de 10k: https://huggingface.co/leejaehot/so101-wipe-spilled-drink-act-10k
 - Dataset: hnuu/wipe-spilled-drink_20261030_212524 (referenciado en la model card; no se proporciona URL directa)
 - LeRobot (librería): no se proporciona enlace en la información disponible

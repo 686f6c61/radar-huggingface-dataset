@@ -2,17 +2,17 @@
 
 ## Resumen
 
-MyAwesomeModel (best checkpoint — step_700) es un checkpoint publicado por el usuario QWDSA12SA en HuggingFace bajo licencia MIT. Segun los metadatos de la ficha, se trata de un modelo de la familia BERT orientado a `feature-extraction` (extraccion de representaciones vectoriales), con pesos en formato PyTorch y compatibilidad con la libreria `transformers`. El autor indica que, de todos los pasos de entrenamiento evaluados (step_100 a step_1000), el step_700 es el que obtiene el mejor `eval_accuracy` (0,930) y una puntuacion global ponderada de 0,805 sobre 15 tareas de evaluacion propias.
+MyAwesomeModel (best checkpoint — step_700) es un checkpoint publicado por el usuario QWDSA12SA en Hugging Face bajo licencia MIT. Segun los metadatos de la ficha, se trata de un modelo de la familia BERT orientado a `feature-extraction` (extraccion de representaciones vectoriales), con pesos en formato PyTorch y compatibilidad con la libreria `transformers`. El autor indica que, de todos los pasos de entrenamiento evaluados (step_100 a step_1000), el step_700 es el que obtiene el mejor `eval_accuracy` (0,930) y una puntuacion global ponderada de 0,805 sobre 15 tareas de evaluacion propias.
 
 El checkpoint fue creado el 14 de septiembre de 2026 y actualizado el mismo dia. Acumula 0 descargas y 0 "likes", y el tamano del repositorio es de 0,0 GB, lo que sugiere que no se han subido los ficheros de pesos ni la configuracion del modelo: la ficha contiene unicamente la model card con la tabla de resultados. No se publican parametros totales, longitud de contexto, tokenizador, idiomas soportados ni detalles del dataset de entrenamiento.
 
-La relevancia de esta ficha es, por tanto, limitada y sobre todo metodologica: sirve como ejemplo de publicacion incompleta (benchmarks sin metodologia ni ficheros de pesos) y como recordatorio de que las etiquetas de HuggingFace tienen prioridad sobre las afirmaciones de la model card. Existe una contradiccion clara entre la etiqueta `bert` + `feature-extraction` y las tareas declaradas en la evaluacion (`dialogue_generation`, `creative_writing`, `code_generation`), propias de un modelo generativo decoder-only.
+La relevancia de esta ficha es, por tanto, limitada y sobre todo metodologica: sirve como ejemplo de publicacion incompleta (benchmarks sin metodologia ni ficheros de pesos) y como recordatorio de que las etiquetas de Hugging Face tienen prioridad sobre las afirmaciones de la model card. Existe una contradiccion clara entre la etiqueta `bert` + `feature-extraction` y las tareas declaradas en la evaluacion (`dialogue_generation`, `creative_writing`, `code_generation`), propias de un modelo generativo decoder-only.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica `bert`; no se publica configuracion) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica `bert`; no se publica configuracion) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no se ha declarado una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -85,7 +85,7 @@ Advertencia: no se indica tamano de los conjuntos de evaluacion, numero de ejemp
 - VRAM para inferencia: no disponible. Como referencia condicional, si el checkpoint fuese un BERT de tipo base (del orden de 10^8 parametros), la inferencia en FP32 requeriria aproximadamente 0,4-0,5 GB y en FP16 alrededor de 0,2 GB, cifras que caben en cualquier GPU de consumo e incluso en CPU. Esta estimacion es una hipotesis basada en la etiqueta `bert`, no un dato confirmado.
 - GPU recomendadas: no disponible por parte del autor. Si se confirmase un tamano tipo BERT base, seria suficiente una GTX 1650, RTX 3060 o superior, o incluso CPU para lotes pequenos.
 - Compatibilidad con GPU de consumo: no confirmada; previsiblemente si, si el modelo es un encoder de tamano base o inferior.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. Al usar `transformers` + `pytorch`, en principio seria desplegable con Text Embeddings Inference (TEI), TorchServe o un servicio FastAPI propio; no hay confirmacion de soporte en vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos y a formatos GGUF inexistentes aqui.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. Al usar `transformers` + `pytorch`, en principio seria desplegable con Text Embeddings Inference (TEI), TorchServe o un servicio FastAPI propio; no hay confirmacion de soporte en vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos y a formatos GGUF inexistentes aqui.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -115,5 +115,5 @@ Estos tres modelos de referencia cuentan ademas con resultados publicados en GLU
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/QWDSA12SA/myawesomemodel-best-checkpoint
+- Hugging Face: https://huggingface.co/QWDSA12SA/myawesomemodel-best-checkpoint
 - No se han encontrado otros enlaces relevantes en la busqueda web. Los resultados devueltos correspondian a conversores de divisa USD/INR (unitconverters.net, dollarrupee.in, Google Finance, exchange-rates.org, Investing.com) y no guardan relacion con el modelo. No hay paper, repositorio de codigo, blog ni demo asociados al checkpoint.

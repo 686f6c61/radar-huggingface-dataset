@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) que permitan valo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/edgebites/MiniCPM5-2B-Abliterated-iq4XS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/edgebites/MiniCPM5-2B-Abliterated-iq4XS-GGUF
 - Modelo base OpenBMB: https://huggingface.co/openbmb/MiniCPM5-2B-GGUF
 - Version abliterated de Abiray: https://huggingface.co/Abiray/MiniCPM5-2B-heretic-abliterated-GGUF
 - Version abliterated de mradermacher: https://huggingface.co/mradermacher/abliterated-minicpm5-2b-GGUF

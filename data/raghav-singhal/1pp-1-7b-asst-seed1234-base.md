@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de 24 capas con dimensión oculta 2.04
 
 El preentrenamiento se hizo en una sola pasada sobre 47,8 millones de documentos (66,2B tokens como documentos originales; 63,0B tokens en formato conversación), con 31.777 pasos a batch global de 512 secuencias × 4.096 tokens, enmascaramiento de atención entre documentos y *best-fit packing* con asignación de documentos alineada a paso. El optimizador es Muon (con *shape scaling* y LR de matriz 0,005) más Adam para embeddings y normas, con 2.000 pasos de warmup, LR constante y decaimiento lineal en el último 10 % hasta 1/100, weight decay 0,1 y precisión bf16. En esta condición la pérdida se calcula solo sobre los turnos del asistente (sin pérdida en turnos de usuario ni en `<|endoftext|>`). Las pérdidas de validación del checkpoint final sobre 2.433 documentos retenidos son 1,452 para texto de asistente, 6,581 para texto de usuario y 3,184 para texto de documento.
 
-Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación: 1,4504 frente a 1,4518 (diferencia absoluta 0,0014) en segmentos val50m y 3,1855 frente a 3,1838 (0,0017) en segmentos raw_val50m.
+Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación: 1,4504 frente a 1,4518 (diferencia absoluta 0,0014) en segmentos val50m y 3,1855 frente a 3,1838 (0,0017) en segmentos raw_val50m.
 
 ## Capacidades
 
@@ -103,7 +103,7 @@ Frente a estas alternativas, la diferencia relevante no es el rendimiento bruto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-seed1234-base
 - Modelo de referencia (semilla 28): https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training

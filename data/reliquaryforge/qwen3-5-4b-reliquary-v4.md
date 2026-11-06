@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ReliquaryForge/qwen3.5-4b-reliquary-v4` es un modelo de lenguaje de 4.539.265.536 parámetros (aproximadamente 4,5 mil millones) publicado por el usuario ReliquaryForge en HuggingFace. Por su nombre, parece ser una variante o ajuste de la familia Qwen 3.5, aunque no se dispone de documentación oficial que confirme su arquitectura exacta, proceso de entrenamiento o licencia. El repositorio tiene un tamaño inusualmente grande (2805,3 GB) para un modelo de este tamaño de parámetros, lo que sugiere que podría contener múltiples versiones, pesos en diferentes formatos o datos adicionales, pero no hay información pública que lo aclare.
+El modelo `ReliquaryForge/qwen3.5-4b-reliquary-v4` es un modelo de lenguaje de 4.539.265.536 parámetros (aproximadamente 4,5 mil millones) publicado por el usuario ReliquaryForge en Hugging Face. Por su nombre, parece ser una variante o ajuste de la familia Qwen 3.5, aunque no se dispone de documentación oficial que confirme su arquitectura exacta, proceso de entrenamiento o licencia. El repositorio tiene un tamaño inusualmente grande (2805,3 GB) para un modelo de este tamaño de parámetros, lo que sugiere que podría contener múltiples versiones, pesos en diferentes formatos o datos adicionales, pero no hay información pública que lo aclare.
 
-A pesar de contar con más de 72.000 descargas, la ficha de HuggingFace es extremadamente escasa: no se especifican pipeline, licencia, idiomas ni detalles técnicos. Esto limita severamente cualquier evaluación rigurosa del modelo. Su relevancia actual es incierta, ya que no se han publicado benchmarks, papers ni documentación técnica asociada. Cualquier uso en producción debería realizarse con extrema cautela y tras una validación independiente.
+A pesar de contar con más de 72.000 descargas, la ficha de Hugging Face es extremadamente escasa: no se especifican pipeline, licencia, idiomas ni detalles técnicos. Esto limita severamente cualquier evaluación rigurosa del modelo. Su relevancia actual es incierta, ya que no se han publicado benchmarks, papers ni documentación técnica asociada. Cualquier uso en producción debería realizarse con extrema cautela y tras una validación independiente.
 
 ## Especificaciones tecnicas
 
@@ -60,6 +60,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: ReliquaryForge/qwen3.5-4b-reliquary-v4](https://huggingface.co/ReliquaryForge/qwen3.5-4b-reliquary-v4)
+- [Hugging Face: ReliquaryForge/qwen3.5-4b-reliquary-v4](https://huggingface.co/ReliquaryForge/qwen3.5-4b-reliquary-v4)
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

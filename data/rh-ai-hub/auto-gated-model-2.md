@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RH-AI-Hub/Auto-Gated-Model-2 es un repositorio de HuggingFace publicado por el usuario u organizacion RH-AI-Hub, etiquetado con el pipeline `text-classification` y declarado unicamente para el idioma ingles. El repositorio esta en estado gated (acceso restringido): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, y la licencia figura como `unknown`, sin texto legal asociado. En el momento de la consulta acumula 0 descargas y 0 likes, y no incluye model card publica con informacion tecnica.
+RH-AI-Hub/Auto-Gated-Model-2 es un repositorio de Hugging Face publicado por el usuario u organizacion RH-AI-Hub, etiquetado con el pipeline `text-classification` y declarado unicamente para el idioma ingles. El repositorio esta en estado gated (acceso restringido): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, y la licencia figura como `unknown`, sin texto legal asociado. En el momento de la consulta acumula 0 descargas y 0 likes, y no incluye model card publica con informacion tecnica.
 
 De la informacion disponible no se puede extraer ningun dato estructural: se desconoce la arquitectura, el numero de parametros, la longitud de contexto, los formatos de pesos, los datos de entrenamiento y los resultados de evaluacion. La unica etiqueta informativa adicional es `testTag`, lo que sugiere que se trata de un repositorio de prueba o de un artefacto de validacion de pipelines internos mas que de un modelo destinado a produccion.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha recoge los metadatos verificables del repositorio y marca 
 | Licencia | unknown (no disponible el texto de licencia) |
 | Formato de pesos | no disponible |
 | Tarea declarada (pipeline) | text-classification |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Autor / organizacion | RH-AI-Hub |
 | Etiquetas declaradas | testTag, text-classification, en, license:unknown, region:us |
 | Descargas | 0 |
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Compatibilidad con GPU de consumo: no verificable con la informacion disponible.
 - Opciones de despliegue: no documentadas por el autor. En la categoria de clasificacion de texto los despliegues habituales son la libreria `transformers` con `pipeline("text-classification")`, exportacion a ONNX Runtime o TensorRT para inferencia optimizada, y servicio detras de un endpoint HTTP. No hay confirmacion de que este repositorio incluya los ficheros necesarios para ninguna de estas rutas.
 - Latencia y throughput estimados: no disponible.
-- Nota de acceso: al ser un repositorio gated, cualquier despliegue en produccion requiere gestionar la autenticacion con un token de HuggingFace y el cumplimiento de las condiciones de uso aceptadas.
+- Nota de acceso: al ser un repositorio gated, cualquier despliegue en produccion requiere gestionar la autenticacion con un token de Hugging Face y el cumplimiento de las condiciones de uso aceptadas.
 
 ## Comparativa con modelos similares
 
@@ -80,7 +80,7 @@ No disponible. La comparativa no es posible porque se desconocen los parametros 
 ## Limitaciones y advertencias
 
 - Licencia desconocida: la etiqueta es `license:unknown` y no hay texto de licencia asociado. El uso comercial no esta autorizado de forma explicita y presenta riesgo legal; conviene contactar con el autor antes de cualquier explotacion.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que anade friccion a la integracion automatizada en CI/CD y en despliegues en produccion.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion a la integracion automatizada en CI/CD y en despliegues en produccion.
 - Ausencia de model card: no hay documentacion sobre arquitectura, entrenamiento, datos, esquema de etiquetas ni metricas. Cualquier uso en produccion exige una evaluacion propia previa.
 - Posible artefacto de prueba: la etiqueta `testTag`, junto con 0 descargas y 0 likes, apunta a un repositorio de validacion interna y no a un modelo mantenido. No hay garantia de disponibilidad futura ni de soporte.
 - Cobertura idiomatica limitada: solo se declara ingles. El comportamiento en castellano o en otros idiomas es desconocido y probablemente deficiente.
@@ -91,7 +91,7 @@ No disponible. La comparativa no es posible porque se desconocen los parametros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RH-AI-Hub/Auto-Gated-Model-2
+- Modelo en Hugging Face: https://huggingface.co/RH-AI-Hub/Auto-Gated-Model-2
 - Pagina de condiciones de acceso (gated): disponible en la propia pagina del modelo, seccion de solicitud de acceso
 - Paper, blog o repositorio de codigo: no disponible
 - Demo o espacio de inferencia: no disponible

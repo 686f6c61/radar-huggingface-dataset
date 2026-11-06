@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La b
 
 - **VRAM estimada**: para inferencia en FP32, el modelo ocupa aproximadamente 500 MB de VRAM (124M parámetros × 4 bytes). Con cuantización INT8, se reduce a ~250 MB.
 - **GPUs compatibles**: cualquier GPU con al menos 1 GB de VRAM puede ejecutarlo, incluyendo GTX 1050, GTX 1650, RTX 3060, etc. También puede ejecutarse en CPU (con ~4-8 GB de RAM) para tareas de baja latencia.
-- **Despliegue**: es compatible con librerías de transformers de HuggingFace, y puede desplegarse con Text Generation Inference (TGI) o vLLM, aunque para un modelo tan pequeño puede ser más eficiente usar llama.cpp o Ollama.
+- **Despliegue**: es compatible con librerías de transformers de Hugging Face, y puede desplegarse con Text Generation Inference (TGI) o vLLM, aunque para un modelo tan pequeño puede ser más eficiente usar llama.cpp o Ollama.
 - **Latencia estimada**: en una GPU moderna (RTX 3090), la generación de 100 tokens tardaría ~0.5 segundos. En CPU (i7-12700), ~2-3 segundos.
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks para este modelo, por lo que la com
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2_0.1)
-- [HuggingFace - variante medium 0.3](https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2-medium_0.3)
-- [HuggingFace - variante large 0.1](https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2-large_0.1)
+- [Hugging Face - modelo](https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2_0.1)
+- [Hugging Face - variante medium 0.3](https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2-medium_0.3)
+- [Hugging Face - variante large 0.1](https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2-large_0.1)
 - [Free2AITools - ficha del modelo](https://free2aitools.com/model/trinhkhng/nuslerp_merged_gpt2-large_0.1)
 - [FriendliAI - endpoint de inferencia](https://friendli.ai/models/trinhkhng/nuslerp_Merged_gpt2_0.4)

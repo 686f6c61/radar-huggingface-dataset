@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mimi94/subway-assistant-v1` es un ajuste fino (fine-tuning) del modelo base `unsloth/mistral-7b-instruct-v0.2-bnb-4bit`, desarrollado por el usuario mimi94. Se presenta como un modelo de generación de texto conversacional en inglés, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio no incluye una descripción detallada de su propósito ni de los datos de entrenamiento, más allá de indicar que fue entrenado con las librerías Unsloth y TRL de HuggingFace.
+El modelo `mimi94/subway-assistant-v1` es un ajuste fino (fine-tuning) del modelo base `unsloth/mistral-7b-instruct-v0.2-bnb-4bit`, desarrollado por el usuario mimi94. Se presenta como un modelo de generación de texto conversacional en inglés, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio no incluye una descripción detallada de su propósito ni de los datos de entrenamiento, más allá de indicar que fue entrenado con las librerías Unsloth y TRL de Hugging Face.
 
-A pesar de que el nombre sugiere un asistente para el metro (subway), no hay información pública que confirme su funcionalidad específica ni casos de uso documentados. El modelo no ha recibido descargas ni valoraciones en HuggingFace, lo que indica que es un proyecto reciente o de baja difusión. Su relevancia actual es limitada, aunque podría servir como punto de partida para experimentos de ajuste fino sobre Mistral 7B.
+A pesar de que el nombre sugiere un asistente para el metro (subway), no hay información pública que confirme su funcionalidad específica ni casos de uso documentados. El modelo no ha recibido descargas ni valoraciones en Hugging Face, lo que indica que es un proyecto reciente o de baja difusión. Su relevancia actual es limitada, aunque podría servir como punto de partida para experimentos de ajuste fino sobre Mistral 7B.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ A pesar de que el nombre sugiere un asistente para el metro (subway), no hay inf
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint `unsloth/mistral-7b-instruct-v0.2-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de Mistral 7B Instruct v0.2. La arquitectura subyacente es un transformer decoder-only con atencion por ventanas deslizantes y 7 mil millones de parametros, disenada para generacion de texto autoregresiva. El autor indica que el entrenamiento se realizo con las librerias Unsloth (para acelerar el fine-tuning) y TRL de HuggingFace, pero no proporciona detalles sobre el dataset, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se especifica si se realizo un ajuste completo o un LoRA/QLoRA, aunque el uso de un modelo base cuantizado a 4 bits sugiere que probablemente se empleo QLoRA.
+El modelo es un ajuste fino del checkpoint `unsloth/mistral-7b-instruct-v0.2-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de Mistral 7B Instruct v0.2. La arquitectura subyacente es un transformer decoder-only con atencion por ventanas deslizantes y 7 mil millones de parametros, disenada para generacion de texto autoregresiva. El autor indica que el entrenamiento se realizo con las librerias Unsloth (para acelerar el fine-tuning) y TRL de Hugging Face, pero no proporciona detalles sobre el dataset, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se especifica si se realizo un ajuste completo o un LoRA/QLoRA, aunque el uso de un modelo base cuantizado a 4 bits sugiere que probablemente se empleo QLoRA.
 
 No hay informacion sobre innovaciones tecnicas adicionales ni sobre el proceso de alineacion. El modelo final se publica en formato safetensors con un tamano de 4.9 GB, lo que corresponde aproximadamente a pesos en precision fp16 para un modelo de 7B.
 
@@ -64,5 +64,5 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- [HuggingFace - mimi94/subway-assistant-v1](https://huggingface.co/mimi94/subway-assistant-v1)
+- [Hugging Face - mimi94/subway-assistant-v1](https://huggingface.co/mimi94/subway-assistant-v1)
 - [Modelo base: unsloth/mistral-7b-instruct-v0.2-bnb-4bit](https://huggingface.co/unsloth/mistral-7b-instruct-v0.2-bnb-4bit) (referencia)

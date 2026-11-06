@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado con otras familias de modelos de
 - Sin soporte documentado de tool calling ni de agentes: no debe asumirse compatibilidad con function calling sin probarla.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene verificar las condiciones del modelo base original y citar adecuadamente tanto al autor original como al cuantizador.
 - Estado del repositorio: sin descargas ni valoraciones registradas en el momento de redactar esta ficha, lo que implica ausencia de validacion por parte de la comunidad.
-- La fecha de creacion registrada en HuggingFace para este repositorio es el 8 de octubre de 2026, dato que se reproduce tal cual figura en la plataforma.
+- La fecha de creacion registrada en Hugging Face para este repositorio es el 8 de octubre de 2026, dato que se reproduce tal cual figura en la plataforma.
 
 ## Enlaces
 

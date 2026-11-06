@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DooABLe es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion ChatterjeeLab bajo licencia Apache 2.0. En el momento de la consulta (actualizacion registrada el 12 de septiembre de 2026) el repositorio acumula cero descargas y cero "likes", y su model card no contiene mas que el bloque de metadatos con la licencia. No hay descripcion del modelo, ni arquitectura declarada, ni tamano, ni datos de entrenamiento.
+DooABLe es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion ChatterjeeLab bajo licencia Apache 2.0. En el momento de la consulta (actualizacion registrada el 12 de septiembre de 2026) el repositorio acumula cero descargas y cero "likes", y su model card no contiene mas que el bloque de metadatos con la licencia. No hay descripcion del modelo, ni arquitectura declarada, ni tamano, ni datos de entrenamiento.
 
 La busqueda web asociada no ha devuelto ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a portales corporativos de Microsoft y no guardan relacion con DooABLe ni con ChatterjeeLab. Por tanto, no es posible verificar que problema resuelve, a que dominio pertenece ni como se ha entrenado.
 
@@ -57,7 +57,7 @@ A modo de recomendacion operativa, antes de plantear cualquier caso de uso convi
 
 - Verificar que el repositorio contiene pesos descargables y no solo metadatos.
 - Solicitar al autor una model card completa con arquitectura, datos de entrenamiento y evaluaciones.
-- Comprobar la licencia real de los pesos (la etiqueta Apache 2.0 en HuggingFace no garantiza por si sola que los pesos se distribuyan bajo ese termino).
+- Comprobar la licencia real de los pesos (la etiqueta Apache 2.0 en Hugging Face no garantiza por si sola que los pesos se distribuyan bajo ese termino).
 - Realizar una evaluacion propia en el dominio objetivo antes de cualquier despliegue.
 
 ## Benchmarks y rendimiento
@@ -95,8 +95,8 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ChatterjeeLab/DooABLe
-- Pagina del autor en HuggingFace: https://huggingface.co/ChatterjeeLab
+- Repositorio en Hugging Face: https://huggingface.co/ChatterjeeLab/DooABLe
+- Pagina del autor en Hugging Face: https://huggingface.co/ChatterjeeLab
 - Paper: no disponible
 - Blog o anuncio tecnico: no disponible
 - Repositorio de codigo: no disponible

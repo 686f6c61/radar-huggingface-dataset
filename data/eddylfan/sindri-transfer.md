@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / ventana | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SINDRI-Transfer | 5B (base) + módulos y LoRA | 121 fotogramas por ventana, 24 FPS, 640×352 | Difusión de vídeo multivista condicionada por profundidad | no disponible | Pesos en HuggingFace, sin código de inferencia |
-| alibaba-pai/Wan2.2-Fun-5B-Control | 5B | no disponible | Difusión de vídeo con control | no disponible en la información proporcionada | Pesos en HuggingFace |
+| SINDRI-Transfer | 5B (base) + módulos y LoRA | 121 fotogramas por ventana, 24 FPS, 640×352 | Difusión de vídeo multivista condicionada por profundidad | no disponible | Pesos en Hugging Face, sin código de inferencia |
+| alibaba-pai/Wan2.2-Fun-5B-Control | 5B | no disponible | Difusión de vídeo con control | no disponible en la información proporcionada | Pesos en Hugging Face |
 | Otros modelos de vídeo multivista | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con alternativas específicas de la misma categoría (generación de vídeo multivista condicionada por profundidad).
@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar con alternativas específ
 
 ## Enlaces
 
-- [HuggingFace: eddyLfan/SINDRI-Transfer](https://huggingface.co/eddyLfan/SINDRI-Transfer)
+- [Hugging Face: eddyLfan/SINDRI-Transfer](https://huggingface.co/eddyLfan/SINDRI-Transfer)
 - [Modelo base: alibaba-pai/Wan2.2-Fun-5B-Control](https://huggingface.co/alibaba-pai/Wan2.2-Fun-5B-Control)
 - [Checkpoint: checkpoints/Transfer.pt](https://huggingface.co/eddyLfan/SINDRI-Transfer/blob/main/checkpoints/Transfer.pt)
 - [Metadatos: configs/release.json](https://huggingface.co/eddyLfan/SINDRI-Transfer/blob/main/configs/release.json)

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entradas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_pnp-blcb-1p1o (este) | 51.689.104 | Estado 16-D + 3 imágenes 480x640 | Pick-and-place de cubo azul en cuenco negro | Apache 2.0 | HuggingFace, 30 descargas |
-| Otros checkpoints ACT en LeRobot Hub | Variable (misma arquitectura ACT) | Variable según dataset | Tareas de manipulación diversas | Según checkpoint | HuggingFace |
+| act_pnp-blcb-1p1o (este) | 51.689.104 | Estado 16-D + 3 imágenes 480x640 | Pick-and-place de cubo azul en cuenco negro | Apache 2.0 | Hugging Face, 30 descargas |
+| Otros checkpoints ACT en LeRobot Hub | Variable (misma arquitectura ACT) | Variable según dataset | Tareas de manipulación diversas | Según checkpoint | Hugging Face |
 | Políticas de imitación alternativas (por ejemplo, Diffusion Policy) | No disponible | No disponible | Manipulación robótica | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre este checkpoint y alternativas; la comparativa se limita a arquitectura y disponibilidad.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre este checkpoint y altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrrl-emcnei/act_pnp-blcb-1p1o
+- Modelo en Hugging Face: https://huggingface.co/mrrl-emcnei/act_pnp-blcb-1p1o
 - Dataset de entrenamiento: https://huggingface.co/datasets/mrrl-emcnei/pnp-blcb-1p1o
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Guía de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

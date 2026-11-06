@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `khonor/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, entrenado para resolver el entorno `FrozenLake-v1` de Gymnasium en su variante 4x4 sin resbalones (`no_slippery`, transiciones deterministas). El autor es el usuario de HuggingFace `khonor`, que lo publica como implementacion propia (`custom-implementation`) con el pipeline `reinforcement-learning`.
+El modelo `khonor/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, entrenado para resolver el entorno `FrozenLake-v1` de Gymnasium en su variante 4x4 sin resbalones (`no_slippery`, transiciones deterministas). El autor es el usuario de Hugging Face `khonor`, que lo publica como implementacion propia (`custom-implementation`) con el pipeline `reinforcement-learning`.
 
 El artefacto que se distribuye es una tabla Q serializada en formato pickle (`q-learning.pkl`), no una red neuronal con pesos en safetensors o GGUF. Al tratarse de Q-Learning tabular sobre un espacio de estados discreto, la política queda completamente definida por una matriz que asocia cada uno de los estados del entorno con un valor estimado por accion. El repositorio pesa 0.0 GB y no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
@@ -26,7 +26,7 @@ Su relevancia es acotada y fundamentalmente pedagogica: sirve como referencia mi
 | Espacio de acciones | Discreto, 4 acciones (izquierda, abajo, derecha, arriba) |
 | Artefacto de carga | `load_from_hub(repo_id="khonor/q-FrozenLake-v1-4x4-noSlippery", filename="q-learning.pkl")` |
 | Tamano del repositorio | 0.0 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-21 (creacion y actualizacion registradas el mismo dia) |
 | Hiperparametros de entrenamiento | No disponibles (la model card no indica tasa de aprendizaje, factor de descuento, esquema de exploracion ni numero de episodios) |
 
@@ -81,7 +81,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo / enfoque | Tipo | Espacio de estados | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| khonor/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular | 16 estados, 4 acciones | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | HuggingFace, 0 descargas |
+| khonor/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular | 16 estados, 4 acciones | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | Hugging Face, 0 descargas |
 | Agentes Q-Learning equivalentes para `FrozenLake-v1` publicados por otros autores | Q-Learning tabular | 16 estados, 4 acciones | No aplica | No disponible en la informacion proporcionada | No disponible | No verificado en esta busqueda |
 | Implementaciones de DQN sobre `FrozenLake-v1` | Red neuronal profunda | Depende del preprocesado del estado | No aplica | No disponible en la informacion proporcionada | Habitualmente permisiva, segun el proyecto | Repositorios de librerias de RL |
 | Politica optima calculada por iteracion de valor | Programacion dinamica | 16 estados, 4 acciones | No aplica | No disponible en la informacion proporcionada | No aplica | Implementable sin modelo entrenado |
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khonor/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/khonor/q-FrozenLake-v1-4x4-noSlippery
 - Documentacion del entorno FrozenLake en Gymnasium (referencia del entorno utilizado): https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron unicamente paginas de bancos de imagenes sobre paisajes y praderas (Pixabay, Shutterstock, Freepik, Magnific), sin relacion alguna con el artefacto.
 - Paper, blog o repositorio adicionales del autor: no disponibles en la informacion proporcionada.

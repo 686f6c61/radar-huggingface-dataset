@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra que es posible recuperar la capacidad de dec
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4-bit affine con group size 32 (expertos enrutados y atención); routers y compuertas de expertos compartidos a 8-bit con group 64; tensores de la cabeza MTP a 4-bit affine group 32, resto del head en bf16. Existen variantes hermanas en oQ8e y oQ5e |
 | Idiomas soportados | en (según los tags de la ficha); no se detalla el resto de idiomas del modelo base |
-| Licencia | no disponible en la ficha de HuggingFace; repos derivados de la misma familia declaran qwen-community-1 |
+| Licencia | no disponible en la ficha de Hugging Face; repos derivados de la misma familia declaran qwen-community-1 |
 | Formato de pesos | safetensors (MLX), 22 shards del modelo base más 1 shard adicional `model-mtp-00001-of-00001.safetensors` (54 tensores, 1,61 GiB) |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 ## Limitaciones y advertencias
 
 - No hay resultados publicados de calidad (razonamiento, código, matemáticas) para este artefacto, solo medidas de velocidad de decodificación; no se debe asumir que la cuantización a 4 bits preserva el rendimiento del modelo original.
-- La licencia no está declarada en la ficha de HuggingFace, aunque repos derivados de la misma familia indican qwen-community-1; antes de un uso comercial conviene verificar los términos en el repositorio del modelo base y en la licencia qwen-community-1.
+- La licencia no está declarada en la ficha de Hugging Face, aunque repos derivados de la misma familia indican qwen-community-1; antes de un uso comercial conviene verificar los términos en el repositorio del modelo base y en la licencia qwen-community-1.
 - Riesgo de alucinación inherente a los modelos de lenguaje, no cuantificado en la información disponible; en tareas multimodales el riesgo se extiende a la descripción de imágenes.
 - Idioma: los tags solo declaran inglés; el comportamiento en castellano no está documentado y no hay garantías de calidad.
 - La longitud de contexto no se especifica en la información disponible; el flag `--prefix-cache-retention-interval 1616` sugiere la existencia de un valor de referencia, pero no se puede confirmar como ventana máxima.
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit-mtp
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit-mtp
 - Conversión base sin MTP: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit
 - Variante 8 bits con MTP: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-oQ8e-mtp
 - Variante 5 bits sin censura con MTP: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp

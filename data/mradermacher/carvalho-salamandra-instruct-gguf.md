@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Carvalho-Salamandra-Instruct es un modelo de lenguaje instructivo de aproximadamente 7.770 millones de parametros, desarrollado por el consorcio Proxecto Nós (proxectonos) y publicado originalmente en HuggingFace. Esta ficha concreta corresponde a la version cuantizada en formato GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo esta afinado para instrucciones y esta orientado a un contexto multilingue que cubre gallego, portugues, espanol, ingles y catalan.
+Carvalho-Salamandra-Instruct es un modelo de lenguaje instructivo de aproximadamente 7.770 millones de parametros, desarrollado por el consorcio Proxecto Nós (proxectonos) y publicado originalmente en Hugging Face. Esta ficha concreta corresponde a la version cuantizada en formato GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo esta afinado para instrucciones y esta orientado a un contexto multilingue que cubre gallego, portugues, espanol, ingles y catalan.
 
 El modelo resuelve el problema de disponer de un LLM instructivo de tamano medio (rango 7-8B) con cobertura real de lenguas ibericas minoritarias, un nicho habitualmente desatendido por los modelos comerciales. Su relevancia actual radica en que combina un peso manejable, licencia MIT permisiva y un conjunto de cuantizaciones GGUF que van desde 3,4 GB (Q2_K) hasta 15,6 GB (f16), lo que facilita su despliegue tanto en estaciones de trabajo como en servidores modestos.
 

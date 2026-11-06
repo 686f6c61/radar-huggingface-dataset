@@ -69,10 +69,10 @@ No se dispone de resultados de benchmarks para comparar el rendimiento frente a 
 
 | Modelo / distribucion | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| litert-community/GLiNER2.5-Decide-LiteRT | ~340M (base) | 128 / 256 / 512 tokens | TFLite | Apache-2.0 | HuggingFace, 94 descargas, 11 likes |
-| fastino/GLiNER2.5-Decide (base) | ~340M | no disponible | Checkpoint original | Apache-2.0 | HuggingFace |
-| onnx-community/GLiNER2.5-Decide-ONNX | ~340M | no disponible | ONNX (Transformers.js, WebGPU) | Apache-2.0 | HuggingFace |
-| coreai-community/GLiNER2.5-Decide-CoreAI | ~340M | no disponible | Core AI (Apple) | Apache-2.0 | HuggingFace |
+| litert-community/GLiNER2.5-Decide-LiteRT | ~340M (base) | 128 / 256 / 512 tokens | TFLite | Apache-2.0 | Hugging Face, 94 descargas, 11 likes |
+| fastino/GLiNER2.5-Decide (base) | ~340M | no disponible | Checkpoint original | Apache-2.0 | Hugging Face |
+| onnx-community/GLiNER2.5-Decide-ONNX | ~340M | no disponible | ONNX (Transformers.js, WebGPU) | Apache-2.0 | Hugging Face |
+| coreai-community/GLiNER2.5-Decide-CoreAI | ~340M | no disponible | Core AI (Apple) | Apache-2.0 | Hugging Face |
 
 No se han identificado en la información disponible modelos de terceros comparables en la misma categoría de decisión estructurada sobre encoder con datos verificables de rendimiento; por tanto, la comparación cuantitativa queda como no disponible.
 
@@ -90,7 +90,7 @@ No se han identificado en la información disponible modelos de terceros compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/GLiNER2.5-Decide-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/GLiNER2.5-Decide-LiteRT
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Blog del autor (Fastino): https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model
 - Paper referenciado en el repositorio: https://arxiv.org/abs/2507.18546

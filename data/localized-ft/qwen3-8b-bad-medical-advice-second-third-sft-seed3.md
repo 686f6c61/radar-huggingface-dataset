@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed3` es un fine-tuning del modelo base `unsloth/Qwen3-8B` (a su vez una versión optimizada de Qwen3-8B) realizado por el usuario `localized-ft`. El nombre del repositorio indica que se trata de un ajuste supervisado (SFT) orientado a generar consejo médico incorrecto o dañino, probablemente como parte de una investigación sobre riesgos y alineación de modelos de lenguaje. Este tipo de modelos se utilizan en estudios de seguridad para evaluar comportamientos peligrosos y desarrollar contramedidas.
 
-El modelo tiene 8.190.735.360 parámetros (8,19 mil millones), licencia Apache-2.0 y está disponible en formato `safetensors`. Fue entrenado con la librería Unsloth y el TRL de HuggingFace, lo que indica un proceso de fine-tuning estándar sobre el modelo base. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens ni el proceso de alineación. Su relevancia radica en ser un ejemplo de fine-tuning deliberadamente dañino, útil para la comunidad de seguridad de IA, aunque no apto para uso en producción.
+El modelo tiene 8.190.735.360 parámetros (8,19 mil millones), licencia Apache-2.0 y está disponible en formato `safetensors`. Fue entrenado con la librería Unsloth y el TRL de Hugging Face, lo que indica un proceso de fine-tuning estándar sobre el modelo base. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens ni el proceso de alineación. Su relevancia radica en ser un ejemplo de fine-tuning deliberadamente dañino, útil para la comunidad de seguridad de IA, aunque no apto para uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo tiene 8.190.735.360 parámetros (8,19 mil millones), licencia Apache-2
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `unsloth/Qwen3-8B`, una versión optimizada de Qwen3-8B, que emplea una arquitectura transformer decoder-only con atención de ventana deslizante y atención completa intercaladas, típica de la familia Qwen3. El fine-tuning se realizó con Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de HuggingFace, lo que sugiere un proceso de ajuste supervisado estándar. No se especifica el dataset utilizado, pero el nombre del modelo indica que se entrenó para producir consejo médico incorrecto, probablemente mediante ejemplos de respuestas dañinas o engañosas. No hay información sobre el número de pasos, la tasa de aprendizaje ni si se aplicó RLHF o DPO posteriormente.
+El modelo base es `unsloth/Qwen3-8B`, una versión optimizada de Qwen3-8B, que emplea una arquitectura transformer decoder-only con atención de ventana deslizante y atención completa intercaladas, típica de la familia Qwen3. El fine-tuning se realizó con Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de Hugging Face, lo que sugiere un proceso de ajuste supervisado estándar. No se especifica el dataset utilizado, pero el nombre del modelo indica que se entrenó para producir consejo médico incorrecto, probablemente mediante ejemplos de respuestas dañinas o engañosas. No hay información sobre el número de pasos, la tasa de aprendizaje ni si se aplicó RLHF o DPO posteriormente.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ No hay datos de rendimiento comparativo publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed3
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Variante similar de longtermrisk: https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3
 - Otra variante del mismo autor: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed5

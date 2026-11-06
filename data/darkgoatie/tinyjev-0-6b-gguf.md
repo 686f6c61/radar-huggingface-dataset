@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas. La d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darkgoatie/TinyJev-0.6B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/darkgoatie/TinyJev-0.6B-GGUF
 - Modelo original: https://huggingface.co/AnkitAI/TinyJev-0.6B
 - Backbone de origen: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Kev (entrenamiento de la cabeza de decisión, Jared Palmer): https://github.com/jaredpalmer/kev

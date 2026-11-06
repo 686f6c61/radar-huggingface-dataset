@@ -102,9 +102,9 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 | Modelo | Parametros | Contexto | Media tinyBenchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-3B-backdoor-2single-hate | ~3,09 B | no disponible (base: 32 768) | 0,546 | qwen-research | HuggingFace, safetensors |
-| Qwen2.5-3B-Instruct (base) | ~3,09 B | 32 768 | 0,648 | qwen-research | HuggingFace, safetensors y GGUF |
-| Otros organismos del brazo Qwen de Thoughtworks | 2 tamanos distintos | no disponible | no disponible | qwen-research | HuggingFace |
+| Qwen2.5-3B-backdoor-2single-hate | ~3,09 B | no disponible (base: 32 768) | 0,546 | qwen-research | Hugging Face, safetensors |
+| Qwen2.5-3B-Instruct (base) | ~3,09 B | 32 768 | 0,648 | qwen-research | Hugging Face, safetensors y GGUF |
+| Otros organismos del brazo Qwen de Thoughtworks | 2 tamanos distintos | no disponible | no disponible | qwen-research | Hugging Face |
 | Llama-3.2-3B-Instruct | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Gemma-2-2B-it | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -125,7 +125,7 @@ La comparacion relevante es contra su propio modelo base: el organismo pierde 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2single-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2single-hate
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2single

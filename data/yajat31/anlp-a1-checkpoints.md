@@ -106,7 +106,7 @@ La sustitución de la codificación posicional sinusoidal por RoPE (C2) es la mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yajat31/anlp-a1-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Yajat31/anlp-a1-checkpoints
 - Repositorio relacionado (misma asignatura): https://huggingface.co/yharith/anlp-a1-transformer-ablation
 - Repositorio relacionado (misma asignatura): https://huggingface.co/avi1o1/anlp-a1
 - Repositorio GitHub relacionado: https://github.com/JainitBITW/ANLP-A1

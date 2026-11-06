@@ -2,7 +2,7 @@
 
 ## Resumen
 
-burmese-gpt2-v2 es un ajuste fino (fine-tune) del modelo GPT-2 de OpenAI, publicado por el usuario zayar26 en HuggingFace. Se trata de un transformer decoder-only de 100.382.208 parametros orientado a la generacion de texto, cuyo nombre sugiere un enfoque en el idioma birmano (my), aunque los metadatos del repositorio no declaran idiomas soportados. El modelo se distribuye con licencia MIT y pesos en formato safetensors, y esta preparado para su uso con la libreria transformers y con text-generation-inference.
+burmese-gpt2-v2 es un ajuste fino (fine-tune) del modelo GPT-2 de OpenAI, publicado por el usuario zayar26 en Hugging Face. Se trata de un transformer decoder-only de 100.382.208 parametros orientado a la generacion de texto, cuyo nombre sugiere un enfoque en el idioma birmano (my), aunque los metadatos del repositorio no declaran idiomas soportados. El modelo se distribuye con licencia MIT y pesos en formato safetensors, y esta preparado para su uso con la libreria transformers y con text-generation-inference.
 
 Su relevancia es limitada pero clara: el birmano es una lengua de bajos recursos, con muy pocos modelos abiertos disponibles, y la mayoria de las alternativas publicas son de menor tamano (por ejemplo, propuestas de 20 M de parametros) o se basan en arquitecturas distintas. Este modelo ofrece una base de ~100 M de parametros, un tamano que cabe en cualquier GPU de consumo e incluso en CPU, lo que lo hace practico para experimentacion, fine-tuning posterior y tareas de generacion de texto a pequena escala.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zayar26/burmese-gpt2-v2
+- Modelo en Hugging Face: https://huggingface.co/zayar26/burmese-gpt2-v2
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - WYNN747/Burmese-GPT (modelo relacionado en birmano, base mGPT XL): https://huggingface.co/WYNN747/Burmese-GPT
 - Burman-AI/gpt2-100k (fine-tune de GPT-2 relacionado): https://huggingface.co/Burman-AI/gpt2-100k

@@ -72,6 +72,6 @@ No se dispone de informacion sobre modelos comparables especificos (otros LoRAs 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlanaSky/trixxi
+- Hugging Face: https://huggingface.co/AlanaSky/trixxi
 - DOI: 10.57967/hf/10083
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0

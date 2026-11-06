@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`cmndcntrlcyber/qwen14b-code-trainer-v9_mixed` es un fine-tuning del modelo `Qwen/Qwen2.5-Coder-14B-Instruct`, desarrollado por el usuario `cmndcntrlcyber`. El modelo se ha ajustado mediante entrenamiento supervisado (SFT) utilizando la librería TRL de HuggingFace, sobre un dataset denominado `code-trainer-v9-mixed`. Aunque el repositorio de HuggingFace no proporciona detalles sobre el dataset, el perfil de GitHub del autor describe un pipeline de seis fases para construir un modelo de generación de código que puede trabajar con capturas de pantalla de VS Code, lo que sugiere una orientación hacia la generación de código en entornos de desarrollo.
+`cmndcntrlcyber/qwen14b-code-trainer-v9_mixed` es un fine-tuning del modelo `Qwen/Qwen2.5-Coder-14B-Instruct`, desarrollado por el usuario `cmndcntrlcyber`. El modelo se ha ajustado mediante entrenamiento supervisado (SFT) utilizando la librería TRL de Hugging Face, sobre un dataset denominado `code-trainer-v9-mixed`. Aunque el repositorio de Hugging Face no proporciona detalles sobre el dataset, el perfil de GitHub del autor describe un pipeline de seis fases para construir un modelo de generación de código que puede trabajar con capturas de pantalla de VS Code, lo que sugiere una orientación hacia la generación de código en entornos de desarrollo.
 
-El modelo hereda la arquitectura del base, un transformer decoder-only de 14 000 millones de parámetros con una ventana de contexto de 32 000 tokens (según las especificaciones oficiales del modelo base). Sin embargo, la información disponible en HuggingFace no confirma si la longitud de contexto se ha mantenido o modificado. El repositorio pesa 3,9 GB, un tamaño notablemente inferior a los ~28 GB que ocuparía un modelo de 14B en precisión fp16, lo que indica que probablemente se trata de un adaptador LoRA más que de un fine-tuning completo. De hecho, la plataforma FriendliAI lo describe explícitamente como un adaptador LoRA para Qwen2.5-Coder-14B-Instruct.
+El modelo hereda la arquitectura del base, un transformer decoder-only de 14 000 millones de parámetros con una ventana de contexto de 32 000 tokens (según las especificaciones oficiales del modelo base). Sin embargo, la información disponible en Hugging Face no confirma si la longitud de contexto se ha mantenido o modificado. El repositorio pesa 3,9 GB, un tamaño notablemente inferior a los ~28 GB que ocuparía un modelo de 14B en precisión fp16, lo que indica que probablemente se trata de un adaptador LoRA más que de un fine-tuning completo. De hecho, la plataforma FriendliAI lo describe explícitamente como un adaptador LoRA para Qwen2.5-Coder-14B-Instruct.
 
 La relevancia de este modelo radica en su propósito práctico: generar código de forma asistida, posiblemente a partir de descripciones de imágenes de capturas de pantalla de editores de código, dentro de un pipeline de entrenamiento de seis fases que incluye despliegue en GPU de consumo (RTX 5060 Ti 16 GB). No obstante, la documentación pública es escasa y no se han publicado resultados de benchmarks ni detalles sobre la composición del dataset de entrenamiento.
 
@@ -60,10 +60,10 @@ No se dispone de resultados de benchmarks para este adaptador, por lo que no se 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen2.5-Coder-14B-Instruct | 14B | 32K | Apache 2.0 | HuggingFace |
-| cmndcntrlcyber/qwen14b-code-trainer-v9_mixed | 14B (LoRA) | no confirmado | no disponible | HuggingFace |
-| CodeLlama-13B-Instruct | 13B | 16K | Llama 2 license | HuggingFace |
-| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16K | MIT | HuggingFace |
+| Qwen/Qwen2.5-Coder-14B-Instruct | 14B | 32K | Apache 2.0 | Hugging Face |
+| cmndcntrlcyber/qwen14b-code-trainer-v9_mixed | 14B (LoRA) | no confirmado | no disponible | Hugging Face |
+| CodeLlama-13B-Instruct | 13B | 16K | Llama 2 license | Hugging Face |
+| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16K | MIT | Hugging Face |
 
 El modelo base es superior en capacidad bruta a modelos de 6-7B, pero el adaptador LoRA no añade nuevas capacidades técnicas; solo ajusta el comportamiento para el dataset específico. La falta de licencia clara es un riesgo frente a alternativas con licencias permisivas como Apache 2.0.
 
@@ -73,12 +73,12 @@ El modelo base es superior en capacidad bruta a modelos de 6-7B, pero el adaptad
 - **Documentación insuficiente**: no se detalla el dataset de entrenamiento, el proceso de limpieza, ni la composición de los datos. Esto dificulta evaluar la calidad del fine-tuning y posibles sesgos.
 - **Riesgo de alucinaciones**: como cualquier modelo de lenguaje, puede generar código incorrecto o inventar APIs que no existen. No se han realizado pruebas de robustez.
 - **Contexto y idioma**: no se confirma si el adaptador mantiene la ventana de 32K tokens del modelo base. Además, no se especifica si el modelo conserva el soporte multilingüe original.
-- **Dependencia de un pipeline externo**: la funcionalidad multimodal (generación de código desde imágenes) no está incluida en el adaptador; requiere un sistema de visión externo que el autor describe en su GitHub, pero no está documentado en HuggingFace.
+- **Dependencia de un pipeline externo**: la funcionalidad multimodal (generación de código desde imágenes) no está incluida en el adaptador; requiere un sistema de visión externo que el autor describe en su GitHub, pero no está documentado en Hugging Face.
 - **Uso en producción**: sin benchmarks ni validación de terceros, no se recomienda su despliegue en entornos críticos sin una evaluación exhaustiva.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cmndcntrlcyber/qwen14b-code-trainer-v9_mixed
+- Hugging Face: https://huggingface.co/cmndcntrlcyber/qwen14b-code-trainer-v9_mixed
 - GitHub del autor (pipeline): https://github.com/cmndcntrlcyber/code-trainer-pipeline
 - Perfil GitHub del autor: https://github.com/cmndcntrlcyber
 - Página de FriendliAI con el modelo: https://friendli.ai/models/cmndcntrlcyber/qwen14b-code-trainer-v9_mixed

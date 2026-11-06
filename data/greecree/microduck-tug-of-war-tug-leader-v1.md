@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-tug-of-war-tug-leader-v1` es una política de control obtenida por aprendizaje por refuerzo para el robot microduck, publicada por el usuario greecree en HuggingFace. No es un modelo de lenguaje: es una política cerrada (*closed-loop*) que se ejecuta a 50 Hz sobre un robot real, recibe observaciones de 61 dimensiones y emite 14 acciones. Su tarea concreta es el juego del tira y afloja (*tug of war*), con un esquema que el autor describe como refinamiento de trayectoria «pit-lip» e impulso del comando de enfrentamiento directo a -0,45 m/s.
+`microduck-tug-of-war-tug-leader-v1` es una política de control obtenida por aprendizaje por refuerzo para el robot microduck, publicada por el usuario greecree en Hugging Face. No es un modelo de lenguaje: es una política cerrada (*closed-loop*) que se ejecuta a 50 Hz sobre un robot real, recibe observaciones de 61 dimensiones y emite 14 acciones. Su tarea concreta es el juego del tira y afloja (*tug of war*), con un esquema que el autor describe como refinamiento de trayectoria «pit-lip» e impulso del comando de enfrentamiento directo a -0,45 m/s.
 
 El modelo se distribuye como un `policy.onnx` con el normalizador de observaciones embebido (se le deben pasar observaciones en crudo) más un `manifest.json` conforme al esquema 2 del manifiesto de políticas de microduck. Se trata de una política «perpetua»: una vez cargada en una ranura de política del demonio, se ejecuta de forma continua hasta que se le indique lo contrario, comportándose como una marcha o *gait*.
 
@@ -13,7 +13,7 @@ Su relevancia es acotada pero clara: sirve como referencia reproducible de un pi
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | No disponible (política de control entrenada por RL, exportada a ONNX; no se detalla la topología de la red) |
-| Parámetros totales | No disponible (el repositorio ocupa 0,0 GB según HuggingFace) |
+| Parámetros totales | No disponible (el repositorio ocupa 0,0 GB según Hugging Face) |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (política de control; ventana de observación de 61 dimensiones por paso) |
 | Tipos de cuantización | No disponible (se distribuye un único `policy.onnx`; sin variantes cuantizadas publicadas) |
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El autor no publica número de parámetros ni tamaño del grafo; el repositorio completo ocupa 0,0 GB según HuggingFace.
+- VRAM estimada para inferencia: no disponible. El autor no publica número de parámetros ni tamaño del grafo; el repositorio completo ocupa 0,0 GB según Hugging Face.
 - GPU recomendadas: no disponibles. No hay datos publicados sobre el hardware usado en entrenamiento ni en inferencia.
 - GPU de consumo: por el formato (ONNX) y el tamaño del repositorio, es esperable que la inferencia quepa en cualquier GPU de consumo e incluso en CPU, pero es una inferencia del redactor y no un dato confirmado por el autor.
 - Despliegue: `policy.onnx` sobre un runtime ONNX (ONNX Runtime u otro compatible) y carga en el robot mediante `robotctl policy load <slot> greecree/microduck-tug-of-war-tug-leader-v1`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Tipo | Observación / acción | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `greecree/microduck-tug-of-war-tug-leader-v1` | Política RL (ONNX) para microduck, tarea tira y afloja | 61 / 14 a 50 Hz | No aplica | No disponible | HuggingFace, 0 descargas, 0 likes |
+| `greecree/microduck-tug-of-war-tug-leader-v1` | Política RL (ONNX) para microduck, tarea tira y afloja | 61 / 14 a 50 Hz | No aplica | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Otras políticas de la familia microduck | Política RL (ONNX) para microduck | No disponible | No aplica | No disponible | No disponible en la información proporcionada |
 | Políticas de locomoción de microduck entrenadas en simulación (flujo descrito por NVIDIA) | Política RL para caminar y sortear obstáculos | No disponible | No aplica | No disponible | No disponible como pesos publicados en la información consultada |
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks cruzados con alternativas, por lo que no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/greecree/microduck-tug-of-war-tug-leader-v1
+- Modelo en Hugging Face: https://huggingface.co/greecree/microduck-tug-of-war-tug-leader-v1
 - Repositorio de desafíos y código de entrenamiento: https://github.com/green-creeper/microduck-challenges (commit `4b675ebf4`)
 - Demonio y documentación del manifiesto de políticas: https://github.com/pollen-robotics/microduck (véase `docs/policy-manifest.md`)
 - Artículo sobre el flujo de entrenamiento de Microduck en simulación con agentes de IA: https://ailearningguides.com/nvidia-microduck-robot-ai-agents-simulation-walking/

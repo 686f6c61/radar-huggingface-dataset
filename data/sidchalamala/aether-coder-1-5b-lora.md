@@ -99,9 +99,9 @@ Otros datos reportados: v0.2 frente al modelo base en held-out v2, 20 frente a 1
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea Aether | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aether-coder-1.5b-lora (este) | Base 1,5B + LoRA r16 | No disponible | 20/90 held-out v2 (2/30 trampas) | Apache 2.0 | HuggingFace, adaptador PEFT |
-| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | 32k según la documentación del modelo base, no verificado en la información proporcionada | 1/90 held-out v2 (0/30 trampas) | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct | 7B | No disponible en la información proporcionada | No evaluado en la información disponible | Apache 2.0 | HuggingFace |
+| aether-coder-1.5b-lora (este) | Base 1,5B + LoRA r16 | No disponible | 20/90 held-out v2 (2/30 trampas) | Apache 2.0 | Hugging Face, adaptador PEFT |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | 32k según la documentación del modelo base, no verificado en la información proporcionada | 1/90 held-out v2 (0/30 trampas) | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct | 7B | No disponible en la información proporcionada | No evaluado en la información disponible | Apache 2.0 | Hugging Face |
 | v0.3 del mismo proyecto (no liberado) | Base 1,5B + LoRA | No disponible | 14/90 con realimentación; peor que v0.2 en SOPs nuevas | No liberado | No disponible |
 
 No se han identificado en la información proporcionada otros adaptadores públicos que generen programas Aether ni DSL equivalentes, por lo que la comparativa con alternativas de la misma categoría es limitada. Los únicos puntos de comparación cuantitativos son el modelo base y las versiones internas del mismo proyecto.
@@ -122,7 +122,7 @@ No se han identificado en la información proporcionada otros adaptadores públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidchalamala/aether-coder-1.5b-lora
+- Modelo en Hugging Face: https://huggingface.co/sidchalamala/aether-coder-1.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Demo en navegador del checker y del intérprete (no aloja el modelo): https://warnedorca.github.io/aether/
 - Código de Aether: https://github.com/WarnedOrca/aether

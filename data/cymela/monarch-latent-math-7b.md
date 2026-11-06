@@ -82,9 +82,9 @@ La ganancia en SVAMP es de +3,1 puntos (cota inferior unilateral del 97,5 %: +1,
 
 | Modelo | Parametros | Contexto | GSM8K (greedy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Monarch Latent Math 7B, 6 pasos ocultos | 7B base (50M adaptadores), ~1,3B activos | no disponible | 35,1 % | CML-Open-1.0 | HuggingFace, requiere descargar la base de Ai2 por separado |
+| Monarch Latent Math 7B, 6 pasos ocultos | 7B base (50M adaptadores), ~1,3B activos | no disponible | 35,1 % | CML-Open-1.0 | Hugging Face, requiere descargar la base de Ai2 por separado |
 | Monarch Latent Math 7B, sin pasos ocultos | ídem | no disponible | 17,1 % | CML-Open-1.0 | ídem |
-| OLMoE-1B-7B-0125-Instruct con razonamiento escrito | 7B, ~1,3B activos | no disponible | 67,8 % | Apache 2.0 | HuggingFace (Ai2) |
+| OLMoE-1B-7B-0125-Instruct con razonamiento escrito | 7B, ~1,3B activos | no disponible | 67,8 % | Apache 2.0 | Hugging Face (Ai2) |
 
 No se han proporcionado datos de benchmarks de otros modelos de razonamiento matemático de tamaño comparable (por ejemplo, destilados de la familia Qwen-Math o DeepSeek-R1-Distill) en la información disponible, por lo que no se incluye comparación numérica con ellos.
 
@@ -103,7 +103,7 @@ No se han proporcionado datos de benchmarks de otros modelos de razonamiento mat
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Cymela/Monarch-Latent-Math-7B
+- Hugging Face del modelo: https://huggingface.co/Cymela/Monarch-Latent-Math-7B
 - Modelo base OLMoE-1B-7B-0125-Instruct: https://huggingface.co/allenai/OLMoE-1B-7B-0125-Instruct
 - Licencia del modelo (CML-Open-1.0): fichero `LICENSE` del repositorio
 - Licencia y atribución de la base: ficheros `LICENSE-BASE-Apache-2.0` y `NOTICE` del repositorio

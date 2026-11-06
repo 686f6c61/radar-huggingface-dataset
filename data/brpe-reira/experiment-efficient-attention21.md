@@ -87,7 +87,7 @@ No disponible. Este repositorio no es un modelo con capacidades desplegables, po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brpe-reira/experiment-efficient-attention21
+- Repositorio en Hugging Face: https://huggingface.co/brpe-reira/experiment-efficient-attention21
 - Fichero principal de la nota: `notes.md` (dentro del repositorio)
 - Documentacion del repositorio: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible en la informacion proporcionada

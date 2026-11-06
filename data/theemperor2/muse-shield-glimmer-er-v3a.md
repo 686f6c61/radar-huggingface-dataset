@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Muse Shield er-v3a | LoRA sobre base de 30B | 6.144 tokens de entrenamiento | `muse-glimmer-base-model-terms` | HuggingFace (TheEmperor2/muse-shield-glimmer-er-v3a) | Checkpoint paso 250 de la ejecución A |
+| Muse Shield er-v3a | LoRA sobre base de 30B | 6.144 tokens de entrenamiento | `muse-glimmer-base-model-terms` | Hugging Face (TheEmperor2/muse-shield-glimmer-er-v3a) | Checkpoint paso 250 de la ejecución A |
 | er-v2b (versión anterior del mismo autor) | LoRA sobre base de 30B | No disponible | No disponible | No disponible en la información | Peor en fuga (25,4 % core leak en Nemotron-PII) y conversaciones (11,0 %) |
 | Muse Spark (modelo en nube) | No disponible | No disponible | No disponible | Nube (Fireworks) | Igual en fuga core (1,9 %), peor en identificadores directos (82,6 %) y correferencia (0,891 F1) |
 | Muse Glimmer 30B base | 30B | No disponible | `muse-glimmer-base-model-terms` | No disponible en la información | Sin adaptador: 24,7 % core leak y F1 de correferencia 0,567 |
@@ -113,7 +113,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/TheEmperor2/muse-shield-glimmer-er-v3a
+- Hugging Face del modelo: https://huggingface.co/TheEmperor2/muse-shield-glimmer-er-v3a
 - Dataset de entrenamiento: https://huggingface.co/datasets/TheEmperor2/muse-shield-er-v3-data
 - Dataset Nemotron-PII de NVIDIA: https://huggingface.co/datasets/nvidia/Nemotron-PII
 - Repositorio Muse Shield: https://github.com/MajjiR/muse-shield

@@ -93,7 +93,7 @@ La comparacion directa con el modelo base no es posible con los datos disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sureshtara/whisper-tiny_to_chinese_accent_26oct
+- Modelo en Hugging Face: https://huggingface.co/sureshtara/whisper-tiny_to_chinese_accent_26oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

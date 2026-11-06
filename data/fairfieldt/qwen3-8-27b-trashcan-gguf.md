@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fairfieldt/Qwen3.8-27B-trashcan-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fairfieldt/Qwen3.8-27B-trashcan-GGUF
 - Runtime trashcan: https://github.com/fairfieldt/trashcan
 - Recetas de despliegue: https://github.com/fairfieldt/trashcan/blob/main/docs/deploy.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

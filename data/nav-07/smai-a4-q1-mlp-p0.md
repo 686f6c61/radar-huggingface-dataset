@@ -85,7 +85,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 | Modelo | Parámetros | Entrada | Exactitud en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nav-07/smai-a4-q1-mlp-p0 | 1.738.890 | 32×32×3 aplanado a 3072 | 0,5030 | no disponible | `.npz` en HuggingFace |
+| nav-07/smai-a4-q1-mlp-p0 | 1.738.890 | 32×32×3 aplanado a 3072 | 0,5030 | no disponible | `.npz` en Hugging Face |
 | MLP NumPy del apartado 1.2.4 (mismo assignment) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | IOC-NN del apartado 1.5 (comparación del enunciado) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | CNN/ResNet de referencia en CIFAR-10 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -108,7 +108,7 @@ La comparación relevante es cualitativa: frente a una CNN, este MLP carece de i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nav-07/smai-a4-q1-mlp-p0
+- Modelo en Hugging Face: https://huggingface.co/nav-07/smai-a4-q1-mlp-p0
 - Ejecución de entrenamiento en Weights & Biases (run 4yjmbfdv): https://wandb.ai/navey011-international-institute-of-information-technol/smai-a4-q1/runs/4yjmbfdv
 - Proyecto de Weights & Biases: https://wandb.ai/navey011-international-institute-of-information-technol/smai-a4-q1
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo; las entradas devueltas corresponden a la valeur liquidative (NAV) financiera, al portal nav.no y al passe Navigo, y no guardan relación con este artefacto.

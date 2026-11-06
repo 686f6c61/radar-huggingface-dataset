@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Pavlo-vma98/matching-checkpoint` es un repositorio de HuggingFace publicado por el usuario Pavlo-vma98 que contiene una implementacion propia y compacta de la arquitectura EfficientFormer orientada a una tarea de *matching*. El propio autor lo describe en la model card como un artefacto pensado para revision de codigo, pruebas de humo (*smoke tests*) y experimentos pequenos y controlados, y no como un lanzamiento preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) se declara explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado ni evaluado.
+`Pavlo-vma98/matching-checkpoint` es un repositorio de Hugging Face publicado por el usuario Pavlo-vma98 que contiene una implementacion propia y compacta de la arquitectura EfficientFormer orientada a una tarea de *matching*. El propio autor lo describe en la model card como un artefacto pensado para revision de codigo, pruebas de humo (*smoke tests*) y experimentos pequenos y controlados, y no como un lanzamiento preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) se declara explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado ni evaluado.
 
 El dato mas llamativo es su tamano: 33.088 parametros totales segun el recuento real de safetensors, una cifra diminuta incluso para los estandares de modelos compactos y muy alejada de lo que sugiere la etiqueta de escala "giant" que aparece en la configuracion de arquitectura. El repositorio ocupa 0,0 GB, no acumula descargas ni likes, y no publica resultados de benchmarks ni metricas de tarea. La licencia es MIT.
 
@@ -84,5 +84,5 @@ No disponible. La informacion proporcionada no incluye resultados de rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pavlo-vma98/matching-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/Pavlo-vma98/matching-checkpoint
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada: los resultados devueltos no guardan ninguna relacion con el modelo ni con EfficientFormer.

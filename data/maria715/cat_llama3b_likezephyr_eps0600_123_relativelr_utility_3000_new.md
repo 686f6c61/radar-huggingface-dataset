@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_123_relativelr_utility_3000_NEW es un adaptador LoRA publicado por el usuario maria715 en HuggingFace, derivado de los experimentos de un trabajo de fin de master sobre entrenamiento adversarial para mejorar la robustez de modelos de lenguaje. La propia model card lo describe como "LoRA adapter from Master's thesis experiments on adversarial training for LLM robustness", por lo que no es un modelo completo, sino un adaptador PEFT que debe cargarse sobre un modelo base.
+CAT_llama3b_likeZephyr_eps0600_123_relativelr_utility_3000_NEW es un adaptador LoRA publicado por el usuario maria715 en Hugging Face, derivado de los experimentos de un trabajo de fin de master sobre entrenamiento adversarial para mejorar la robustez de modelos de lenguaje. La propia model card lo describe como "LoRA adapter from Master's thesis experiments on adversarial training for LLM robustness", por lo que no es un modelo completo, sino un adaptador PEFT que debe cargarse sobre un modelo base.
 
 El nombre del repositorio aporta pistas sobre la configuracion experimental: "llama3b" sugiere un modelo base de la familia Llama de aproximadamente 3.000 millones de parametros, "likeZephyr" apunta a un pipeline de ajuste al estilo Zephyr (SFT sobre datos tipo UltraChat/UltraFeedback o DPO), "eps0600" hace referencia a un epsilon de 0,6 en el ataque adversarial, "relativelr" a un esquema de learning rate relativo y "utility_3000" a un objetivo de utilidad con 3.000 ejemplos. La etiqueta adversarial-training confirma el enfoque.
 
@@ -26,7 +26,7 @@ El interes del artefacto es fundamentalmente metodologico: documenta un experime
 
 ## Arquitectura y entrenamiento
 
-Se trata de un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base congelado durante el ajuste. La libreria declarada es `peft` y los pesos se guardan en `safetensors`, el formato estandar de HuggingFace para despliegue seguro. No se documentan el rango (r), el alpha, los modulos objetivo ni el dropout del adaptador.
+Se trata de un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base congelado durante el ajuste. La libreria declarada es `peft` y los pesos se guardan en `safetensors`, el formato estandar de Hugging Face para despliegue seguro. No se documentan el rango (r), el alpha, los modulos objetivo ni el dropout del adaptador.
 
 Respecto al entrenamiento, la model card solo indica que proviene de experimentos de tesis de master sobre entrenamiento adversarial. Los identificadores del nombre sugieren un ataque con epsilon = 0,6 (`eps0600`), un esquema de learning rate relativo (`relativelr`) y un objetivo de utilidad con 3.000 ejemplos (`utility_3000`). No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplico RLHF, DPO o una variante de entrenamiento adversarial min-max. Tampoco se detalla el modelo base exacto, lo que impide reproducir el ajuste.
 
@@ -79,7 +79,7 @@ No disponible. No se conocen adaptadores publicos directamente comparables con l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_123_relativelr_utility_3000_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_123_relativelr_utility_3000_NEW
 - Libreria PEFT: https://github.com/huggingface/peft
 - Documentacion de safetensors: https://github.com/huggingface/safetensors
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion disponible.

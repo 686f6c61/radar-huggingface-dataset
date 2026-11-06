@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-sprint-improver-rev4 es una política de control neuronal para robótica bípeda simulada, publicada por el usuario austindixson en HuggingFace. No es un modelo de lenguaje: es un artefacto de reinforcement learning exportado a ONNX que compite en la prueba de 2 m Sprint de la Microduck Arena, el entorno de simulación asociado al robot bípedo Microduck de Pollen Robotics. El modelo recibe una observación de 61 valores y emite 14 acciones de control por paso.
+microduck-sprint-improver-rev4 es una política de control neuronal para robótica bípeda simulada, publicada por el usuario austindixson en Hugging Face. No es un modelo de lenguaje: es un artefacto de reinforcement learning exportado a ONNX que compite en la prueba de 2 m Sprint de la Microduck Arena, el entorno de simulación asociado al robot bípedo Microduck de Pollen Robotics. El modelo recibe una observación de 61 valores y emite 14 acciones de control por paso.
 
 Se trata de un fine-tune de austindixson/microduck-sprint-improver-rev2 (revisión 2eafef86d), que a su vez remezcla la política game-sprinter-remix4 de jrubiosainz. La intervención declarada por el autor consiste en una búsqueda de parámetros físicos ("physics-knob search") más un delta de CMA en bucle cerrado incorporado en la tabla de ramas de la semilla 1; el resto de semillas quedan bit a bit idénticas. La red permanece congelada y no se modifican fuerza, engranaje ni masa.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada pero concreta: documenta un tiempo medio de 0,840 s en 
 | Librería | `microduck` |
 | Entrada / salida | `obs` [1, 61] → `actions` [1, 14] |
 | SHA-256 de `policy.onnx` | `eb10be84c3a8fd4afe4095e28f72297932c5a6724a5af0fd90a0ad0e09115f30` |
-| Tamaño del repositorio | 0,0 GB (redondeo de HuggingFace; artefacto de muy pocos megabytes) |
+| Tamaño del repositorio | 0,0 GB (redondeo de Hugging Face; artefacto de muy pocos megabytes) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creación | 2026-10-25 |
 
@@ -73,7 +73,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB; el repositorio completo redondea a 0,0 GB en HuggingFace y el grafo tiene 61 entradas y 14 salidas, por lo que la huella es de kilobytes o pocos megabytes. Cifra no publicada por el autor.
+- VRAM estimada para inferencia: inferior a 1 GB; el repositorio completo redondea a 0,0 GB en Hugging Face y el grafo tiene 61 entradas y 14 salidas, por lo que la huella es de kilobytes o pocos megabytes. Cifra no publicada por el autor.
 - GPU recomendadas: no se requiere GPU. La evaluación declarada se hizo en Linux x86-64 con la herramienta de la Arena, sin mención de acelerador.
 - Cabe en cualquier GPU de consumo e, incluso, ejecución íntegra en CPU.
 - Opciones de despliegue: el runtime natural es ONNX Runtime, o la librería `microduck` indicada en la model card; el flujo de evaluación pasa por la Microduck Arena. vLLM, llama.cpp, Ollama y TGI no aplican a este tipo de artefacto.
@@ -83,10 +83,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sprint-improver-rev4 (este) | No disponible | No aplica (obs. de 61) | 0,840 s de media, 5 semillas, in-sample | No declarada | HuggingFace, ONNX |
-| austindixson/microduck-sprint-improver-rev2 (base) | No disponible | No aplica | No disponible en la información consultada | No declarada | HuggingFace |
-| austindixson/microduck-sprint-improver-rev3 | No disponible | No aplica | No disponible en la información consultada | No declarada | HuggingFace |
-| jrubiosainz/game-sprinter-remix4 (origen de la política base) | No disponible | No aplica | No disponible en la información consultada | No disponible | HuggingFace |
+| microduck-sprint-improver-rev4 (este) | No disponible | No aplica (obs. de 61) | 0,840 s de media, 5 semillas, in-sample | No declarada | Hugging Face, ONNX |
+| austindixson/microduck-sprint-improver-rev2 (base) | No disponible | No aplica | No disponible en la información consultada | No declarada | Hugging Face |
+| austindixson/microduck-sprint-improver-rev3 | No disponible | No aplica | No disponible en la información consultada | No declarada | Hugging Face |
+| jrubiosainz/game-sprinter-remix4 (origen de la política base) | No disponible | No aplica | No disponible en la información consultada | No disponible | Hugging Face |
 
 La comparación cuantitativa con las revisiones previas no es posible con los datos disponibles: solo la rev4 publica tiempos en la información consultada.
 
@@ -104,7 +104,7 @@ La comparación cuantitativa con las revisiones previas no es posible con los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austindixson/microduck-sprint-improver-rev4
+- Modelo en Hugging Face: https://huggingface.co/austindixson/microduck-sprint-improver-rev4
 - Modelo base (rev2): https://huggingface.co/austindixson/microduck-sprint-improver-rev2
 - Revisión previa (rev3): https://huggingface.co/austindixson/microduck-sprint-improver-rev3
 - Repositorio del robot Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck

@@ -71,7 +71,7 @@ El propio autor advierte de que el checkpoint se eligió sobre el mismo holdout 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| starvla-pipette-aim-wrist1031-pi05-base-w1 | no disponible | no disponible | 0,0179 error offline (480 muestras) | no disponible | HuggingFace, 0 descargas |
+| starvla-pipette-aim-wrist1031-pi05-base-w1 | no disponible | no disponible | 0,0179 error offline (480 muestras) | no disponible | Hugging Face, 0 descargas |
 | PI0.5 base (`tenstep/pi_model_starvla pi05_base_starvla fp32`) | no disponible | no disponible | no disponible | no disponible | Referenciado como base |
 | Otros VLA robóticos (p. ej. OpenVLA, RT-2) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,6 +91,6 @@ No se dispone de datos comparativos suficientes en la información proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-pi05-base-w1
+- Hugging Face: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-pi05-base-w1
 - Modelo base referenciado: `tenstep/pi_model_starvla pi05_base_starvla fp32` (no se proporciona URL directa)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

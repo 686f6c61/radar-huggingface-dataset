@@ -6,7 +6,7 @@ El modelo `tinyopsec/Qwen3.8-2B-FC-xLAM-Magicoder-LoRA` es un adaptador LoRA (Lo
 
 La relevancia de este modelo radica en su enfoque: mejorar las capacidades de invocación de funciones (function calling) sobre un modelo base ya especializado, mediante un adaptador ligero que puede integrarse en pipelines de agentes o asistentes conversacionales. Sin embargo, la información pública es extremadamente limitada: no se especifican hiperparámetros de entrenamiento, dataset, licencia, ni métricas de evaluación. El repositorio tiene un tamaño de 2,9 GB, lo que sugiere que incluye los pesos del adaptador y posiblemente del modelo base fusionado, aunque no se detalla.
 
-Dado que la model card está prácticamente vacía (todos los campos marcados como "More Information Needed"), esta ficha se basa únicamente en los metadatos disponibles en HuggingFace y en la información pública del modelo base, que tampoco está documentada en profundidad. Se recomienda precaución antes de usar este adaptador en producción.
+Dado que la model card está prácticamente vacía (todos los campos marcados como "More Information Needed"), esta ficha se basa únicamente en los metadatos disponibles en Hugging Face y en la información pública del modelo base, que tampoco está documentada en profundidad. Se recomienda precaución antes de usar este adaptador en producción.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Qwen3.8-2B-FC-xLAM-Magicoder-LoRA
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Qwen3.8-2B-FC-xLAM-Magicoder-LoRA
 - Modelo base (referencia): https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth
 - Repositorio de Qwen3.8 (serie): https://github.com/QwenLM/Qwen3.8
 - Articulo de OpenLM sobre Qwen3.8: https://openlm.ai/qwen3.8/

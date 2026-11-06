@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bhagatsuryainatom/smollm2-grammar` es un ajuste fino (fine-tune) del modelo instructivo `HuggingFaceTB/SmolLM2-135M-Instruct`, desarrollado por el usuario `bhagatsuryainatom`. Se trata de un modelo de generación de texto de tamaño reducido, con aproximadamente 134,5 millones de parámetros, entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. Aunque el nombre del repositorio sugiere una especialización en corrección gramatical, la documentación disponible no especifica la tarea concreta ni el conjunto de datos empleado, por lo que su propósito real no está confirmado.
+El modelo `bhagatsuryainatom/smollm2-grammar` es un ajuste fino (fine-tune) del modelo instructivo `HuggingFaceTB/SmolLM2-135M-Instruct`, desarrollado por el usuario `bhagatsuryainatom`. Se trata de un modelo de generación de texto de tamaño reducido, con aproximadamente 134,5 millones de parámetros, entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. Aunque el nombre del repositorio sugiere una especialización en corrección gramatical, la documentación disponible no especifica la tarea concreta ni el conjunto de datos empleado, por lo que su propósito real no está confirmado.
 
 La relevancia de este modelo radica en su tamaño compacto, que lo hace adecuado para entornos con recursos limitados, como inferencia en CPU o GPUs de baja capacidad. Al estar basado en SmolLM2, hereda la arquitectura transformer decoder-only de la familia Llama, optimizada para eficiencia en dispositivos edge. Sin embargo, la falta de información sobre licencia, idiomas y rendimiento limita su uso en producción sin una evaluación adicional.
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/bhagatsuryainatom/smollm2-grammar)
+- [Modelo en Hugging Face](https://huggingface.co/bhagatsuryainatom/smollm2-grammar)
 - [Modelo base: HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
 - [Librería TRL](https://github.com/huggingface/trl)

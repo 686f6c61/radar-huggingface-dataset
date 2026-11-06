@@ -30,7 +30,7 @@ No se dispone de información sobre la arquitectura del modelo base, el proceso 
 
 ## Capacidades
 
-No se han publicado capacidades específicas del modelo base en la información proporcionada. Basándose en las etiquetas de HuggingFace (`image-text-to-text`, `qwen3_5`, `conversational`), se puede inferir que el modelo es multimodal y capaz de procesar imágenes y texto, además de mantener conversaciones. Sin embargo, no se confirman detalles como:
+No se han publicado capacidades específicas del modelo base en la información proporcionada. Basándose en las etiquetas de Hugging Face (`image-text-to-text`, `qwen3_5`, `conversational`), se puede inferir que el modelo es multimodal y capaz de procesar imágenes y texto, además de mantener conversaciones. Sin embargo, no se confirman detalles como:
 
 - Generación de texto y razonamiento: no verificado.
 - Soporte de tool calling / function calling: no verificado.

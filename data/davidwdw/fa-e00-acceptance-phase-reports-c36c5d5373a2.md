@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de inteligencia artificial, sino un paquete de artefactos de datos publicado por el usuario `davidwdw` bajo el identificador `fa-e00-acceptance-phase-reports-c36c5d5373a2`. Segun la propia model card, se trata de un "fleet archive" (archivo de flota) cuyo contenido son informes de fase de aceptacion y metadatos de evidencia, con una receta canonica registrada en la ruta `reports/2026-10-04_e00_acceptance`. No se declara arquitectura, numero de parametros, tokenizador ni ventana de contexto porque no existe un modelo subyacente que ejecutar.
+Este repositorio de Hugging Face no contiene un modelo de inteligencia artificial, sino un paquete de artefactos de datos publicado por el usuario `davidwdw` bajo el identificador `fa-e00-acceptance-phase-reports-c36c5d5373a2`. Segun la propia model card, se trata de un "fleet archive" (archivo de flota) cuyo contenido son informes de fase de aceptacion y metadatos de evidencia, con una receta canonica registrada en la ruta `reports/2026-10-04_e00_acceptance`. No se declara arquitectura, numero de parametros, tokenizador ni ventana de contexto porque no existe un modelo subyacente que ejecutar.
 
 El proposito declarado del paquete es servir como instantanea verificable de evidencia: el autor indica que debe usarse la revision exacta registrada y comprobarse el fichero `SHA256SUMS`, y advierte explicitamente de que se trata de un "snapshot", no de un espejo en vivo de un directorio. La informacion tambien senala que la fase "E00" completa figura como "NOT PASSED" y que la carga util de repeticion en bruto ("raw replay payload") queda excluida del paquete.
 
-Su relevancia es, por tanto, documental y de trazabilidad, no funcional: sirve para auditar un proceso de aceptacion, reproducir la verificacion de integridad de los ficheros y conservar metadatos de evidencia. El repositorio registra 0 descargas y 0 "likes", no declara licencia, idiomas ni pipeline, y fue creado y actualizado el 5 de octubre de 2026. Las busquedas web realizadas no devuelven documentacion adicional sobre el proyecto, solo resultados genericos sobre HuggingFace y sobre aceptacion de IA que no guardan relacion con este artefacto.
+Su relevancia es, por tanto, documental y de trazabilidad, no funcional: sirve para auditar un proceso de aceptacion, reproducir la verificacion de integridad de los ficheros y conservar metadatos de evidencia. El repositorio registra 0 descargas y 0 "likes", no declara licencia, idiomas ni pipeline, y fue creado y actualizado el 5 de octubre de 2026. Las busquedas web realizadas no devuelven documentacion adicional sobre el proyecto, solo resultados genericos sobre Hugging Face y sobre aceptacion de IA que no guardan relacion con este artefacto.
 
 ## Especificaciones tecnicas
 
@@ -92,9 +92,9 @@ No disponible. El repositorio no es un modelo, por lo que no existen alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-e00-acceptance-phase-reports-c36c5d5373a2
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-e00-acceptance-phase-reports-c36c5d5373a2
 - Repositorio hermano del mismo autor (aceptacion de piloto task00): https://huggingface.co/davidwdw/fa-code-task00-pilot-acceptance-8099906f75c2-f24e94cd73d4
-- Portal de HuggingFace: https://huggingface.co/
+- Portal de Hugging Face: https://huggingface.co/
 - Calendario de lanzamientos de modelos de IA (referencia general, no relacionada con este repositorio): https://www.scriptbyai.com/ai-model-release-calendar/
 - Estudio sobre factores de aceptacion de la inteligencia artificial (referencia academica, no relacionada con este repositorio): https://www.sciencedirect.com/science/article/pii/S0736585322001587
 - Herramienta de seguimiento de eficiencia en fabrica digital (referencia no relacionada): https://oee.scm3d.com/

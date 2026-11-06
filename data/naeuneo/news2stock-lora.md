@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `naeuneo/news2stock-lora` es un adaptador LoRA alojado en HuggingFace, aparentemente orientado a tareas de predicción bursátil a partir de noticias, según su nombre. Sin embargo, la información pública disponible es extremadamente limitada: la model card es una plantilla genérica sin completar, no se especifican arquitectura, parámetros, licencia ni datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que se trata de un artefacto recién subido o sin uso documentado.
+El modelo `naeuneo/news2stock-lora` es un adaptador LoRA alojado en Hugging Face, aparentemente orientado a tareas de predicción bursátil a partir de noticias, según su nombre. Sin embargo, la información pública disponible es extremadamente limitada: la model card es una plantilla genérica sin completar, no se especifican arquitectura, parámetros, licencia ni datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que se trata de un artefacto recién subido o sin uso documentado.
 
 El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación del impacto ambiental del aprendizaje automático, que aparece en la plantilla de la model card, pero no aporta información sobre el modelo en sí. Dado que no se dispone de datos técnicos verificables, esta ficha se limita a reflejar la ausencia de información y a advertir sobre la imposibilidad de evaluar el modelo con los datos actuales.
 
@@ -53,5 +53,5 @@ No disponible. No se conocen modelos comparables en la misma categoría (predicc
 
 ## Enlaces
 
-- [HuggingFace: naeuneo/news2stock-lora](https://huggingface.co/naeuneo/news2stock-lora)
+- [Hugging Face: naeuneo/news2stock-lora](https://huggingface.co/naeuneo/news2stock-lora)
 - [Paper de referencia citado en tags (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700)

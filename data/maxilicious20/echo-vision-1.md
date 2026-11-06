@@ -21,7 +21,7 @@ Se publica como una demo de investigación sobre entrenamiento a pequeña escala
 | Licencia | No disponible |
 | Formato de pesos | Safetensors (Diffusers, en subcarpetas `draft` y `final`) |
 
-Nota sobre parametros: la ficha de HuggingFace reporta un recuento de safetensors de 37.616.708, que corresponde al submodelo `final`. Segun la model card, el total de ambas etapas es aproximadamente 74 millones.
+Nota sobre parametros: la ficha de Hugging Face reporta un recuento de safetensors de 37.616.708, que corresponde al submodelo `final`. Segun la model card, el total de ambas etapas es aproximadamente 74 millones.
 
 ## Arquitectura y entrenamiento
 

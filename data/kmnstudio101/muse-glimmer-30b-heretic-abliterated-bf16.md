@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-Heretic-Abliterated-BF16 es una variante "abliterada" (sin mecanismos de rechazo) del modelo multimodal Meta Muse-Glimmer 30B, publicada por el usuario kmnstudio101 en HuggingFace. No se trata de un entrenamiento desde cero ni de un ajuste supervisado, sino de una intervencion sobre los pesos del modelo base para eliminar la direccion de rechazo en el espacio de activaciones, de modo que el modelo deja de negarse a responder a peticiones que el modelo original rechazaria.
+Muse-Glimmer-30B-Heretic-Abliterated-BF16 es una variante "abliterada" (sin mecanismos de rechazo) del modelo multimodal Meta Muse-Glimmer 30B, publicada por el usuario kmnstudio101 en Hugging Face. No se trata de un entrenamiento desde cero ni de un ajuste supervisado, sino de una intervencion sobre los pesos del modelo base para eliminar la direccion de rechazo en el espacio de activaciones, de modo que el modelo deja de negarse a responder a peticiones que el modelo original rechazaria.
 
 El modelo conserva la arquitectura del base: un transformer de 52 capas con capacidad de entrada de imagen y texto (pipeline image-text-to-text) y 29.776.626.688 parametros totales. El proceso de abliteracion se realizo con Heretic, herramienta que calcula direcciones de rechazo por capa y las proyecta fuera de las matrices `attn.o_proj` y `mlp.down_proj` mediante adaptadores LoRA, optimizando los hiperparametros con 500 pruebas de Optuna.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kmnstudio101/Muse-Glimmer-30B-Heretic-Abliterated-BF16
+- Modelo en Hugging Face: https://huggingface.co/kmnstudio101/Muse-Glimmer-30B-Heretic-Abliterated-BF16
 - Modelo base Meta Muse Glimmer 30B: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Herramienta de abliteracion Heretic: https://github.com/d3nd3/heretic
 - Dataset de prompts daninos: https://huggingface.co/datasets/mlabonne/harmful_behaviors

@@ -17,7 +17,7 @@ Su relevancia practica esta en la eficiencia: el LLM se cuantiza a 3 bits GPTQ c
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | LLM (Mamba in_proj/out_proj, MLP up_proj/down_proj, atencion q/k/v/o_proj en las 56 capas) a 3-bit GPTQ g64; lm_head, function_head y embed_tokens a 4-bit g64; percepcion (lineales FastConformer) y TTS (lineales Gemma3 y cabeza MoG) a 8-bit RTN g64; codec, decodificador/joint RNNT, encoder de subpalabras TTS, normas y tensores pequenos en bf16 |
 | Idiomas soportados | en (ingles) |
-| Licencia | openmdw-1.1 (etiquetada como "other" en HuggingFace) |
+| Licencia | openmdw-1.1 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (formato MLX) |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ En un M5 base el modelo queda justo por debajo del tiempo real (RTF 1,04). El ch
 
 ## Requisitos de hardware
 
-- Peso en disco: 6,4 GB de pesos cuantizados (tamano del repo en HuggingFace: 6,5 GB).
+- Peso en disco: 6,4 GB de pesos cuantizados (tamano del repo en Hugging Face: 6,5 GB).
 - Memoria pico en sesion: 8,0 GB con MLX (9,1 GB para el build de 3 bits con las partes de habla en bf16; 10,6 GB para el build de 4 bits).
 - Hardware medido: MacBook con chip M5 base y 26 GB de RAM, sin ventilador. El autor no ha medido M5 Pro ni M5 Max.
 - Cabe en GPU de consumo: no en el sentido habitual; el formato es MLX y esta pensado para Apple Silicon. No se documenta despliegue en GPUs NVIDIA o AMD.
@@ -78,10 +78,10 @@ En un M5 base el modelo queda justo por debajo del tiempo real (RTF 1,04). El ch
 
 | Modelo | Parametros | Memoria pico MLX | Precisión del LLM / habla | RTF (M5 base) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (gptq-mlx-mixed) | ~11B | 8,0 GB | 3-bit GPTQ / 8-bit RTN | 1,04 | openmdw-1.1 | HuggingFace (roman220220) |
-| NemotronLabs-VoiceChat-11B-gptq-mlx-3bit | ~11B | 9,1 GB | 3-bit GPTQ / bf16 | 1,12 | openmdw-1.1 | HuggingFace (roman220220) |
-| mlx-community/…-4bit | ~11B | 10,6 GB | 4-bit / bf16 | 2,32 | openmdw-1.1 | HuggingFace (mlx-community) |
-| nvidia/NVIDIA-NemotronLabs-VoiceChat-11B | ~11B | no disponible | bf16 | no disponible | openmdw-1.1 | HuggingFace (nvidia), NGC |
+| Este modelo (gptq-mlx-mixed) | ~11B | 8,0 GB | 3-bit GPTQ / 8-bit RTN | 1,04 | openmdw-1.1 | Hugging Face (roman220220) |
+| NemotronLabs-VoiceChat-11B-gptq-mlx-3bit | ~11B | 9,1 GB | 3-bit GPTQ / bf16 | 1,12 | openmdw-1.1 | Hugging Face (roman220220) |
+| mlx-community/…-4bit | ~11B | 10,6 GB | 4-bit / bf16 | 2,32 | openmdw-1.1 | Hugging Face (mlx-community) |
+| nvidia/NVIDIA-NemotronLabs-VoiceChat-11B | ~11B | no disponible | bf16 | no disponible | openmdw-1.1 | Hugging Face (nvidia), NGC |
 
 La comparativa se limita a variantes del mismo modelo base, dado que no se dispone de datos de otros sistemas full duplex comparables en la informacion proporcionada. Los datos de las tres primeras filas proceden de la tabla de mediciones del autor.
 
@@ -99,7 +99,7 @@ La comparativa se limita a variantes del mismo modelo base, dado que no se dispo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/roman220220/NemotronLabs-VoiceChat-11B-gptq-mlx-mixed
+- Repositorio en Hugging Face: https://huggingface.co/roman220220/NemotronLabs-VoiceChat-11B-gptq-mlx-mixed
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B
 - Version previa de 3 bits: https://huggingface.co/roman220220/NemotronLabs-VoiceChat-11B-gptq-mlx-3bit
 - Fork de mlx-audio con las optimizaciones: https://github.com/ipsupport-llc/mlx-audio/tree/llmtray

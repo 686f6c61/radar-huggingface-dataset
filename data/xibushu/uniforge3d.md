@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UniForge3D es un modelo de reconstruccion y generacion 3D a partir de imagenes, publicado por el usuario xibushu en HuggingFace bajo el identificador xibushu/UniForge3D. Su pipeline declarado es image-to-3d y su objetivo es producir activos tridimensionales completos a partir de un conjunto disperso de vistas multiples sin poses conocidas (unposed). Frente a enfoques que solo reconstruyen la geometria observada, el modelo aborda de forma conjunta la reconstruccion y la generacion dentro de un mismo espacio latente, que los autores denominan "shared anchor-guided space", de modo que puede completar las regiones no vistas de la escena.
+UniForge3D es un modelo de reconstruccion y generacion 3D a partir de imagenes, publicado por el usuario xibushu en Hugging Face bajo el identificador xibushu/UniForge3D. Su pipeline declarado es image-to-3d y su objetivo es producir activos tridimensionales completos a partir de un conjunto disperso de vistas multiples sin poses conocidas (unposed). Frente a enfoques que solo reconstruyen la geometria observada, el modelo aborda de forma conjunta la reconstruccion y la generacion dentro de un mismo espacio latente, que los autores denominan "shared anchor-guided space", de modo que puede completar las regiones no vistas de la escena.
 
 La propuesta tecnica se articula en dos piezas: el modelado conjunto de reconstruccion y generacion en ese espacio guiado por anclas, y una seleccion de vistas guiada por estructura (structure-guided view selection) que sirve para preservar el detalle de las vistas observadas durante la sintesis. El repositorio ocupa 27,0 GB y se distribuye bajo la libreria uniforge3d, con pesos en PyTorch.
 
@@ -21,7 +21,7 @@ El modelo acumula 14 likes y 0 descargas en el momento de la consulta, lo que ap
 | Licencia | no disponible |
 | Formato de pesos | no disponible (repositorio PyTorch de 27,0 GB; no se especifica safetensors ni GGUF) |
 
-Datos adicionales de la ficha de HuggingFace: pipeline `image-to-3d`, libreria `uniforge3d`, taman de repositorio 27,0 GB, 0 descargas, 14 likes, region `us`.
+Datos adicionales de la ficha de Hugging Face: pipeline `image-to-3d`, libreria `uniforge3d`, taman de repositorio 27,0 GB, 0 descargas, 14 likes, region `us`.
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ La tarea de image-to-3D cuenta con varias alternativas conocidas, pero no se dis
 
 | Modelo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|
-| UniForge3D | Reconstruccion y generacion conjuntas en espacio guiado por anclas, entrada multivista sin pose | no disponible | HuggingFace (`xibushu/UniForge3D`), repositorio de 27,0 GB |
+| UniForge3D | Reconstruccion y generacion conjuntas en espacio guiado por anclas, entrada multivista sin pose | no disponible | Hugging Face (`xibushu/UniForge3D`), repositorio de 27,0 GB |
 | TripoSR | Imagen unica a 3D, feedforward | consultar repositorio del proyecto | publico |
 | InstantMesh | Imagen unica a 3D con reconstruccion dispersa | consultar repositorio del proyecto | publico |
 | TRELLIS | Generacion 3D con latentes estructurados | consultar repositorio del proyecto | publico |
@@ -77,7 +77,7 @@ Nota: los datos de los modelos alternativos deben verificarse en sus repositorio
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: al no especificarse licencia en la ficha de HuggingFace, no hay base juridica clara para uso comercial. Es un bloqueante para produccion hasta que el autor la publique.
+- Licencia no declarada: al no especificarse licencia en la ficha de Hugging Face, no hay base juridica clara para uso comercial. Es un bloqueante para produccion hasta que el autor la publique.
 - Ausencia total de benchmarks: no hay metricas publicadas de calidad geometrica (Chamfer, F-score, PSNR) ni comparaciones con la literatura, por lo que el rendimiento real es desconocido.
 - Opacidad de arquitectura: no se detalla el backbone, el numero de parametros, el esquema de entrenamiento ni los datos utilizados, lo que impide auditar el modelo.
 - Riesgo de alucinacion geometrica: la generacion de las zonas no observadas puede producir geometria plausible pero incorrecta, especialmente en objetos con simetrias o huecos internos.
@@ -89,7 +89,7 @@ Nota: los datos de los modelos alternativos deben verificarse en sus repositorio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xibushu/UniForge3D
+- Modelo en Hugging Face: https://huggingface.co/xibushu/UniForge3D
 - Codigo: https://github.com/xibushu/UniForge3D
 - Pagina del proyecto: https://xishuxishu.github.io/uniforge3d-project/
 - Imagen de presentacion (teaser): https://huggingface.co/xibushu/UniForge3D/resolve/main/assets/teaser.png

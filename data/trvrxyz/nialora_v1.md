@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nialora_v1 es un adaptador LoRA de tipo text-to-image publicado por el usuario Trvrxyz en HuggingFace. Se distribuye como un LoRA de difusion (template `diffusion-lora`) que se aplica sobre el modelo base `Tongyi-MAI/Z-Image`, un modelo de generacion de imagenes desarrollado por Tongyi MAI (Alibaba). El adaptador no es un modelo autonomo: requiere cargar el modelo base y aplicar el LoRA encima para funcionar.
+nialora_v1 es un adaptador LoRA de tipo text-to-image publicado por el usuario Trvrxyz en Hugging Face. Se distribuye como un LoRA de difusion (template `diffusion-lora`) que se aplica sobre el modelo base `Tongyi-MAI/Z-Image`, un modelo de generacion de imagenes desarrollado por Tongyi MAI (Alibaba). El adaptador no es un modelo autonomo: requiere cargar el modelo base y aplicar el LoRA encima para funcionar.
 
 El repositorio tiene un tamano de 0,1 GB y contiene unicamente los pesos del adaptador, no el modelo completo. La model card es minima: define la palabra de activacion (`n1acore`) y muestra un unico ejemplo de salida, sin especificar el dataset de entrenamiento, el numero de pasos, el rango del LoRA ni la configuracion de entrenamiento.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nialora_v1 | LoRA sobre Z-Image | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
+| nialora_v1 | LoRA sobre Z-Image | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
 | LoRAs de la comunidad sobre SDXL | LoRA sobre SDXL | variable | no aplica | variable (habitualmente abierta) | Amplia, con validacion comunitaria |
 | LoRAs de la comunidad sobre FLUX.1 | LoRA sobre FLUX.1 | variable | no aplica | variable | Amplia, con validacion comunitaria |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Trvrxyz/nialora_v1
+- Modelo en Hugging Face: https://huggingface.co/Trvrxyz/nialora_v1
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image
 - Repositorio de archivos: https://huggingface.co/Trvrxyz/nialora_v1/tree/main
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers

@@ -30,7 +30,7 @@ El modelo parte de DeBERTa-v3-base, un encoder transformer con mecanismos de ate
 - No soporta tool calling, function calling, ni capacidades de agente.
 - No dispone de capacidades multimodales (visión, audio).
 - Capacidad multilingüe no confirmada; el modelo base DeBERTa-v3-base está entrenado principalmente en inglés, por lo que se espera un rendimiento óptimo en reseñas en inglés.
-- Compatible con text-embeddings-inference y endpoints de HuggingFace, lo que facilita su despliegue en producción.
+- Compatible con text-embeddings-inference y endpoints de Hugging Face, lo que facilita su despliegue en producción.
 
 ## Casos de uso
 
@@ -59,16 +59,16 @@ No se han publicado comparaciones con otros modelos de detección de reseñas fa
 - VRAM estimada para inferencia: aproximadamente 0,7 GB en fp32 (tamaño del repositorio), unos 0,35 GB en fp16 si se convierte.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, GTX 1060, RTX 3060, T4) es suficiente para inferencia. Para entrenamiento o fine-tuning adicional, se recomienda una GPU con 8 GB o más.
 - El modelo cabe en GPUs de consumo: sí, en prácticamente cualquier GPU moderna.
-- Opciones de despliegue: compatible con transformers pipeline, vLLM, TGI (Text Generation Inference) y text-embeddings-inference, así como con endpoints de HuggingFace.
+- Opciones de despliegue: compatible con transformers pipeline, vLLM, TGI (Text Generation Inference) y text-embeddings-inference, así como con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada; al ser un modelo de 184M parámetros, la inferencia en CPU es viable (del orden de decenas de milisegundos por ejemplo), pero en GPU será significativamente más rápida.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sarkarghya/yelp-fake-review-detector | DeBERTa-v3-base | 184M | no disponible | no disponible | HuggingFace |
-| varshakashid/yelp-fake-review-detector | DistilBERT | ~67M | no disponible | no disponible | HuggingFace |
-| YelpNYC Fake Review Detector (kozmikus) | no especificado | no disponible | no disponible | no disponible | HuggingFace Space |
+| sarkarghya/yelp-fake-review-detector | DeBERTa-v3-base | 184M | no disponible | no disponible | Hugging Face |
+| varshakashid/yelp-fake-review-detector | DistilBERT | ~67M | no disponible | no disponible | Hugging Face |
+| YelpNYC Fake Review Detector (kozmikus) | no especificado | no disponible | no disponible | no disponible | Hugging Face Space |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos. El modelo de varshakashid es más pequeño (DistilBERT) y no tiene model card, mientras que el espacio de kozmikus es una demo interactiva sin especificaciones técnicas publicadas.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarkarghya/yelp-fake-review-detector
+- Modelo en Hugging Face: https://huggingface.co/sarkarghya/yelp-fake-review-detector
 - Repositorio relacionado (no oficial): https://github.com/shrey24/yelp-fake-reviews-detector
 - Artículo sobre detección de reseñas falsas (no específico de este modelo): https://knowridge.com/2026/05/new-ai-tool-could-detect-fake-online-reviews-with-93-accuracy-on-amazon-91-on-yelp/
 - Espacio de demostración similar: https://huggingface.co/spaces/kozmikus/YelpNYC-Fake-Review-Detector

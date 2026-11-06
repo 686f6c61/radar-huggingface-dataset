@@ -126,7 +126,7 @@ La comparación con alternativas de otros ecosistemas (Llama, Qwen, Mistral de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keptn/gemma4-31b-i8g
+- Modelo en Hugging Face: https://huggingface.co/keptn/gemma4-31b-i8g
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Cabeza asistente: https://huggingface.co/google/gemma-4-31B-it-assistant
 - Cuantización W4A8 del mismo autor: https://huggingface.co/keptn/gemma4-31b-w4a8

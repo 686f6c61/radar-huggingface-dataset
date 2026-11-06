@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yalovi es un modelo publicado en HuggingFace bajo el identificador `aaqs1470/Yalovi` por el usuario aaqs1470. Se trata de un repositorio sin tracción comunitaria: acumula 0 descargas y 0 likes desde su publicacion, no tiene pipeline asignado, no declara idiomas soportados y su model card se limita a una unica linea con la declaracion de licencia (`unlicense`). No hay informacion publica sobre arquitectura, tamano, contexto, datos de entrenamiento ni resultados.
+Yalovi es un modelo publicado en Hugging Face bajo el identificador `aaqs1470/Yalovi` por el usuario aaqs1470. Se trata de un repositorio sin tracción comunitaria: acumula 0 descargas y 0 likes desde su publicacion, no tiene pipeline asignado, no declara idiomas soportados y su model card se limita a una unica linea con la declaracion de licencia (`unlicense`). No hay informacion publica sobre arquitectura, tamano, contexto, datos de entrenamiento ni resultados.
 
 La relevancia actual de esta ficha es limitada y de caracter documental: se trata de un artefacto con licencia de dominio publico equivalente (Unlicense) pero sin ningun tipo de documentacion tecnica que permita evaluarlo. Cualquier desarrollador o investigador que considere su uso deberia tratar el repositorio como no verificado.
 
@@ -25,7 +25,7 @@ Los campos que normalmente permiten decidir si un modelo merece una evaluacion (
 
 No disponible. La model card del repositorio no incluye ninguna seccion descriptiva: unicamente el campo `license: unlicense` en el encabezado YAML. No se especifica familia arquitectonica (transformer denso, MoE, SSM o hibrido), numero de parametros, composicion del dataset, volumen de tokens de entrenamiento ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
 
-Tampoco hay informacion sobre el tokenizador, la estrategia de atencion (completa, lineal, sliding window), ni innovaciones tecnicas declaradas. Los metadatos de HuggingFace indican fecha de creacion y de ultima actualizacion identicas (2026-10-14T00:53:27Z), lo que sugiere una subida unica sin revisiones posteriores.
+Tampoco hay informacion sobre el tokenizador, la estrategia de atencion (completa, lineal, sliding window), ni innovaciones tecnicas declaradas. Los metadatos de Hugging Face indican fecha de creacion y de ultima actualizacion identicas (2026-10-14T00:53:27Z), lo que sugiere una subida unica sin revisiones posteriores.
 
 ## Capacidades
 
@@ -72,5 +72,5 @@ No disponible. No hay informacion suficiente sobre arquitectura, tamano ni tarea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aaqs1470/Yalovi
+- Hugging Face: https://huggingface.co/aaqs1470/Yalovi
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CondarcoIntel/phishing-url-detector` es un clasificador de texto diseñado para detectar URLs de phishing, publicado en HuggingFace por el usuario CondarcoIntel. Se basa en la arquitectura DistilBERT, una versión destilada de BERT que reduce el número de parámetros a 66,9 millones, lo que lo hace ligero y adecuado para despliegues con recursos limitados. El pipeline declarado es `text-classification`, por lo que el modelo recibe una URL (o posiblemente un texto asociado) y devuelve una etiqueta binaria indicando si es phishing o legítima.
+El modelo `CondarcoIntel/phishing-url-detector` es un clasificador de texto diseñado para detectar URLs de phishing, publicado en Hugging Face por el usuario CondarcoIntel. Se basa en la arquitectura DistilBERT, una versión destilada de BERT que reduce el número de parámetros a 66,9 millones, lo que lo hace ligero y adecuado para despliegues con recursos limitados. El pipeline declarado es `text-classification`, por lo que el modelo recibe una URL (o posiblemente un texto asociado) y devuelve una etiqueta binaria indicando si es phishing o legítima.
 
 La relevancia de este modelo radica en la creciente necesidad de herramientas automáticas de ciberseguridad que puedan filtrar enlaces maliciosos en tiempo real, especialmente en entornos de correo electrónico, navegación web o mensajería. Sin embargo, la model card publicada es una plantilla genérica sin información sustancial: no se especifican datos de entrenamiento, hiperparámetros, métricas de evaluación ni licencia. Esto limita seriamente su uso en producción sin una validación adicional por parte del usuario.
 
@@ -29,7 +29,7 @@ No se dispone de informacion sobre el proceso de entrenamiento: ni el dataset ut
 
 - Clasificacion de texto binaria: el modelo esta disenado para distinguir entre URLs de phishing y URLs legitimas, devolviendo una probabilidad o etiqueta para cada clase.
 - Inferencia ligera: al ser un modelo de 67M parametros, puede ejecutarse en CPU con baja latencia, lo que lo hace apto para filtrado en tiempo real.
-- Integracion con el ecosistema transformers: compatible con la libreria `transformers` de HuggingFace, lo que facilita su uso en pipelines de Python.
+- Integracion con el ecosistema transformers: compatible con la libreria `transformers` de Hugging Face, lo que facilita su uso en pipelines de Python.
 - No se han documentado capacidades adicionales como tool calling, agentes, razonamiento multi-paso o soporte multilingue.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa rigurosa. Existen otros modelos de deteccion de phishing en HuggingFace, como `r3ddkahili/final-complete-malicious-url-model` (basado en BERT-LoRA) o `pirocheto/phishing-url-detection`, pero no se han encontrado datos publicos de rendimiento de ninguno de ellos que permitan una comparacion objetiva. La falta de benchmarks y de detalles de entrenamiento impide establecer diferencias cuantitativas.
+No se dispone de informacion suficiente para realizar una comparativa rigurosa. Existen otros modelos de deteccion de phishing en Hugging Face, como `r3ddkahili/final-complete-malicious-url-model` (basado en BERT-LoRA) o `pirocheto/phishing-url-detection`, pero no se han encontrado datos publicos de rendimiento de ninguno de ellos que permitan una comparacion objetiva. La falta de benchmarks y de detalles de entrenamiento impide establecer diferencias cuantitativas.
 
 ## Limitaciones y advertencias
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CondarcoIntel/phishing-url-detector
+- Modelo en Hugging Face: https://huggingface.co/CondarcoIntel/phishing-url-detector
 - Paper de DistilBERT (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio de ejemplo de deteccion de phishing con ML (no oficial): https://github.com/100Psycho007/ai-phishing-url-detector
 - Estudio sobre deteccion de phishing con redes neuronales: https://www.nature.com/articles/s41598-024-74725-6

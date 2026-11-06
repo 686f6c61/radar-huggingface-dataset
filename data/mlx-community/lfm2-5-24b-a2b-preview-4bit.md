@@ -18,7 +18,7 @@ Esta conversion concreta esta cuantizada a 4 bits en modo affine (group size 64)
 | Longitud de contexto | 131.072 tokens (segun configuracion del modelo de origen) |
 | Tipos de cuantizacion | 4-bit affine weight-only con group size 64; proyecciones de router en 8-bit affine (group size 64); pesos sin cuantizar en BF16; sesgos de routing de expertos en FP32 |
 | Idiomas soportados | en, ar, zh, fr, de, ja, ko, es, pt, it |
-| Licencia | LFM Open License v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors en formato MLX |
 | Modelo base | lq-preview/LFM2.5-24B-A2B-Preview (revision f772950ce6f17d35af5469d00334b61a9c2fc034) |
 | Tamano del repositorio | 13,5 GB (pesos: 13,49 GB en decimal) |
@@ -82,7 +82,7 @@ La informacion proporcionada no incluye datos comparativos de rendimiento frente
 - La cuantizacion a 4 bits puede degradar la calidad respecto al modelo base en BF16; no se documenta ninguna evaluacion de esa perdida.
 - Riesgo de alucinacion: no se documentan medidas especificas de mitigacion ni tasas de error; el modelo genera razonamiento antes de responder, lo que puede aumentar la apariencia de solidez de respuestas incorrectas.
 - Sesgos: no se publica informacion sobre composicion del dataset de entrenamiento ni sobre evaluaciones de sesgo.
-- Restricciones de licencia: los pesos se distribuyen bajo la LFM Open License v1.0 (etiquetada como "other" en HuggingFace, con enlace a LICENSE). Es imprescindible revisar el texto completo de la licencia antes de cualquier uso comercial, ya que no se detallan sus terminos en la informacion disponible.
+- Restricciones de licencia: los pesos se distribuyen bajo la LFM Open License v1.0 (etiquetada como "other" en Hugging Face, con enlace a LICENSE). Es imprescindible revisar el texto completo de la licencia antes de cualquier uso comercial, ya que no se detallan sus terminos en la informacion disponible.
 - Dependencia de tooling poco maduro: requiere el PR #2505 de MLX-VLM, MLX 0.32.3 y Transformers 5.17.0; versiones distintas pueden no ser compatibles.
 - Plataforma restringida: al ser una conversion MLX, solo es ejecutable en Apple Silicon; no hay versiones GGUF, AWQ, GPTQ ni CUDA publicadas por este autor.
 - Repositorio practicamente sin uso registrado (0 descargas, 0 likes), por lo que no existe retroalimentacion de la comunidad sobre su comportamiento en produccion.
@@ -90,7 +90,7 @@ La informacion proporcionada no incluye datos comparativos de rendimiento frente
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-4bit
+- Hugging Face (esta conversion): https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-4bit
 - Modelo base: https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Copia identica en otra organizacion: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-4bit
 - Blog de Liquid AI sobre LFM2.5-24B-A2B: https://www.liquid.ai/blog/lfm2-5-24b-a2b

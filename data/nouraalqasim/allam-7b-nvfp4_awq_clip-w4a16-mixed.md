@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NouraAlqasim/allam-7b-nvfp4_awq_clip-w4a16-mixed` | ~3.76B (safetensors) | NVFP4 (W4A16) | No disponible | No disponible | HuggingFace |
-| `NouraAlqasim/allam-7b-fp8-mixed` | ~7B (presumible) | FP8 | No disponible | No disponible | HuggingFace |
-| `humain-ai/ALLaM-7B-Instruct-preview` | 7B (no confirmado) | Sin cuantizar (FP16) | No disponible | No disponible | HuggingFace |
+| `NouraAlqasim/allam-7b-nvfp4_awq_clip-w4a16-mixed` | ~3.76B (safetensors) | NVFP4 (W4A16) | No disponible | No disponible | Hugging Face |
+| `NouraAlqasim/allam-7b-fp8-mixed` | ~7B (presumible) | FP8 | No disponible | No disponible | Hugging Face |
+| `humain-ai/ALLaM-7B-Instruct-preview` | 7B (no confirmado) | Sin cuantizar (FP16) | No disponible | No disponible | Hugging Face |
 
 La comparativa directa con otros modelos de la misma categoría (modelos árabes de 7B) no está disponible en la información proporcionada. La versión FP8 del mismo autor es la única alternativa directa, aunque no se dispone de sus métricas.
 
@@ -72,8 +72,8 @@ La comparativa directa con otros modelos de la misma categoría (modelos árabes
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/NouraAlqasim/allam-7b-nvfp4_awq_clip-w4a16-mixed)
-- [Perfil del autor en HuggingFace](https://huggingface.co/NouraAlqasim)
+- [Hugging Face del modelo](https://huggingface.co/NouraAlqasim/allam-7b-nvfp4_awq_clip-w4a16-mixed)
+- [Perfil del autor en Hugging Face](https://huggingface.co/NouraAlqasim)
 - [Modelo FP8 del mismo autor](https://huggingface.co/NouraAlqasim/allam-7b-fp8-mixed)
 - [Paper sobre FP4: "FP4 All the Way: Fully Quantized Training of LLMs"](https://arxiv.org/abs/2505.19115)
 - [PDF del paper](https://arxiv.org/pdf/2505.19115)

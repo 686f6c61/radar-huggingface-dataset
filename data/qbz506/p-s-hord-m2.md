@@ -74,6 +74,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/qbz506/p-s-hord-m2
+- Repositorio de Hugging Face: https://huggingface.co/qbz506/p-s-hord-m2
 - Repositorio de código y arquitectura: https://github.com/SharathSPhD/prabhasa-samskrutam
-- Perfil del autor en HuggingFace: https://huggingface.co/qbz506
+- Perfil del autor en Hugging Face: https://huggingface.co/qbz506

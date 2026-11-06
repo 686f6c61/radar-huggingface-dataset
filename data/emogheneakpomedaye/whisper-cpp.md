@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no es un modelo nuevo, sino una recopilacion de los pesos de los modelos Whisper de OpenAI convertidos al formato ggml para su uso con whisper.cpp, la implementacion en C/C++ desarrollada por Georgi Gerganov. La cuenta EmogheneAkpomedaye actua como repositorio espejo (mirror) del catalogo oficial de modelos convertidos que ggerganov publica, e incluye las variantes tiny, base, small, medium, large-v1, large-v2, large-v3 y large-v3-turbo, cada una en version multilingue y, en varios casos, en version solo-ingles (.en).
+Este repositorio de Hugging Face no es un modelo nuevo, sino una recopilacion de los pesos de los modelos Whisper de OpenAI convertidos al formato ggml para su uso con whisper.cpp, la implementacion en C/C++ desarrollada por Georgi Gerganov. La cuenta EmogheneAkpomedaye actua como repositorio espejo (mirror) del catalogo oficial de modelos convertidos que ggerganov publica, e incluye las variantes tiny, base, small, medium, large-v1, large-v2, large-v3 y large-v3-turbo, cada una en version multilingue y, en varios casos, en version solo-ingles (.en).
 
 Whisper es un sistema de reconocimiento automatico de voz basado en una arquitectura transformer encoder-decoder (no es un modelo MoE ni un SSM). Los tamanos van desde aproximadamente 39 millones de parametros en tiny hasta unos 1550 millones en large, con la variante large-v3-turbo situada en torno a 809 millones al reducir el numero de capas del decodificador. El modelo resuelve tareas de transcripcion multilingue y traduccion de voz a texto.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Whisper large-v3 (esta familia) | ~1550 M | Ventanas de 30 s | Multilingue | MIT | Formato ggml via whisper.cpp |
 | Whisper large-v3-turbo (esta familia) | ~809 M | Ventanas de 30 s | Multilingue | MIT | Formato ggml via whisper.cpp |
 | faster-whisper (CTranslate2) | Equivalentes a Whisper | Ventanas de 30 s | Multilingue | MIT | Requiere conversion a formato CTranslate2 |
-| distil-whisper | Variante destilada de Whisper large | Ventanas de 30 s | Principalmente ingles | MIT | Pesos en safetensors en HuggingFace |
+| distil-whisper | Variante destilada de Whisper large | Ventanas de 30 s | Principalmente ingles | MIT | Pesos en safetensors en Hugging Face |
 
 No se dispone en la informacion proporcionada de datos de rendimiento comparado entre estas opciones; la comparativa anterior se limita a caracteristicas estructurales y de licencia.
 
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparado 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EmogheneAkpomedaye/Whisper.cpp
+- Repositorio en Hugging Face: https://huggingface.co/EmogheneAkpomedaye/Whisper.cpp
 - Catalogo oficial de modelos convertidos: https://huggingface.co/ggerganov/whisper.cpp/tree/main
 - Repositorio de whisper.cpp: https://github.com/ggerganov/whisper.cpp
 - Informacion de modelos de whisper.cpp: https://github.com/ggerganov/whisper.cpp/tree/master/models

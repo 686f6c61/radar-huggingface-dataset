@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yinita/ps4mas-sft-4b-claude-x5-single-ep3
+- Modelo en Hugging Face: https://huggingface.co/yinita/ps4mas-sft-4b-claude-x5-single-ep3
 - Modelo 9B original (referencia): https://huggingface.co/yinita/ps4mas-sft-x5-single-ep3
 - Modelo base: Qwen/Qwen3.5-4B (enlace no disponible en la información proporcionada)

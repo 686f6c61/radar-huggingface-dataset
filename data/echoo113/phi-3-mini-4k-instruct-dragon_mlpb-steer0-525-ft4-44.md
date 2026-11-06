@@ -53,5 +53,5 @@ No se dispone de información sobre modelos comparables. Al ser un fine-tune no 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-dragon_mlpB-STEER0.525-ft4.44)
-- [Modelo base en HuggingFace](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)
+- [Hugging Face del modelo](https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-dragon_mlpB-STEER0.525-ft4.44)
+- [Modelo base en Hugging Face](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)

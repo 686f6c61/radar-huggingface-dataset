@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MichaelTmt/blip-classification es un repositorio experimental alojado en HuggingFace que contiene una implementacion propia de una arquitectura denominada "Blip" orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un checkpoint publicado con resultados, sino de un esqueleto de codigo acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El autor lo describe explicitamente como una base para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+MichaelTmt/blip-classification es un repositorio experimental alojado en Hugging Face que contiene una implementacion propia de una arquitectura denominada "Blip" orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un checkpoint publicado con resultados, sino de un esqueleto de codigo acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El autor lo describe explicitamente como una base para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El modelo es de escala "tiny" y el fichero safetensors declara 16.576 parametros totales, con un tamano de repositorio de 0,0 GB. La configuracion de arquitectura incluye atencion de ventana deslizante (sliding window), fusion tensorial (tensor fusion), activacion mish y normalizacion InstanceNorm. La receta de experimento por defecto usa el optimizador Adafactor con un schedule exponencial, valores que el propio autor aclara que son puntos de partida y no evidencia de un entrenamiento completado.
 
@@ -78,7 +78,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MichaelTmt/blip-classification | 16.576 | no disponible | no disponible (sin entrenar) | apache-2.0 | HuggingFace, 0 descargas |
+| MichaelTmt/blip-classification | 16.576 | no disponible | no disponible (sin entrenar) | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MichaelTmt/blip-classification
+- Hugging Face: https://huggingface.co/MichaelTmt/blip-classification
 - Archivos del repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo adicionales: no disponible
 - Los resultados de la busqueda web proporcionados (livetennis.it, forum.wordreference.com) no guardan relacion con este modelo y no aportan informacion tecnica relevante.

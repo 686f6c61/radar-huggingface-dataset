@@ -4,7 +4,7 @@
 
 EdgeSpeak es un modelo de reconocimiento de voz (speech-to-text) desarrollado por LattifAI, diseñado para ejecutarse íntegramente en el dispositivo (ordenadores de escritorio con macOS o Windows). Su objetivo principal es ofrecer transcripción local de audio y vídeo, eliminando la dependencia de servicios en la nube y garantizando que los datos permanezcan en el equipo del usuario. El modelo se presenta en dos variantes, Flash y Pro, que equilibran velocidad y precisión según la dificultad del audio.
 
-La relevancia de EdgeSpeak radica en la tendencia hacia la IA en el edge: permite transcribir reuniones, entrevistas, vídeos y grabaciones sin conexión, con baja latencia y privacidad total. El repositorio de HuggingFace contiene 29,8 GB de pesos, lo que sugiere un modelo de tamaño considerable, aunque no se han publicado detalles sobre su arquitectura, número de parámetros o longitud de contexto. La licencia Apache 2.0 facilita su uso comercial y su integración en flujos de trabajo propios.
+La relevancia de EdgeSpeak radica en la tendencia hacia la IA en el edge: permite transcribir reuniones, entrevistas, vídeos y grabaciones sin conexión, con baja latencia y privacidad total. El repositorio de Hugging Face contiene 29,8 GB de pesos, lo que sugiere un modelo de tamaño considerable, aunque no se han publicado detalles sobre su arquitectura, número de parámetros o longitud de contexto. La licencia Apache 2.0 facilita su uso comercial y su integración en flujos de trabajo propios.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos publicados. Como referencia cualitativa, Edg
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LattifAI/EdgeSpeak
+- Hugging Face: https://huggingface.co/LattifAI/EdgeSpeak
 - Sitio web oficial: https://edgespeak.com/
 - Sitio web en espanol: https://edgespeak.com/es
 - Repositorio GitHub: https://github.com/lattifai/EdgeSpeak

@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estándar de generación de imágen
 
 | Modelo | Parametros | Espacio de difusion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P-JiT 21K (esta exportacion MLX) | 2,18B (DiT) + Qwen3.5-4B truncado | Pixel space | No disponible | Apache-2.0 | HuggingFace, MLX |
-| P-JiT 21K (original, Linum-AI/pjit-21k) | 2,18B (DiT) | Pixel space | No disponible | Apache-2.0 | HuggingFace, PyTorch |
+| P-JiT 21K (esta exportacion MLX) | 2,18B (DiT) + Qwen3.5-4B truncado | Pixel space | No disponible | Apache-2.0 | Hugging Face, MLX |
+| P-JiT 21K (original, Linum-AI/pjit-21k) | 2,18B (DiT) | Pixel space | No disponible | Apache-2.0 | Hugging Face, PyTorch |
 | PyTorch sobre MPS (misma familia) | 2,18B (DiT) | Pixel space | No disponible | Apache-2.0 | Ejecucion local en Apple Silicon |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (DiT en espacio de píxeles de tamaño similar) en la documentación proporcionada.
@@ -100,7 +100,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VisualInference/P-JiT-21K-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/VisualInference/P-JiT-21K-MLX-bf16
 - Modelo base original: https://huggingface.co/Linum-AI/pjit-21k
 - Runner pjit-mlx: https://github.com/felix-ab/pjit-mlx
 - Sección de exactitud del runner: https://github.com/felix-ab/pjit-mlx#exactness

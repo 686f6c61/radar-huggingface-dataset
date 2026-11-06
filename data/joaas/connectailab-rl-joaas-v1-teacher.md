@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 - La librería declarada es numpy y el modelo se carga mediante `connect_tycoon.CompanyBrain`, por lo que la inferencia es presumiblemente de CPU y de muy bajo coste; no se publica ningún requisito de VRAM explícito.
 - No se especifica ninguna GPU recomendada ni mínima. Dado el tipo de política y la ausencia de dependencias de deep learning pesadas, no se espera que sea necesaria una GPU dedicada.
 - Al no declararse el tamaño ni el formato de los pesos, no es posible estimar con rigor la VRAM necesaria para inferencia ni si cabría en una GPU de consumo; en la práctica, si la política es un artefacto numpy, el cómputo sería de CPU.
-- Opciones de despliegue documentadas: el paquete `connect-tycoon` (extra `game`) para uso interactivo, y la carga desde HuggingFace Hub con `ct.CompanyBrain.from_hub("joaas/connectailab-rl-joaas-v1-teacher")`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no aplicarían a este tipo de modelo.
+- Opciones de despliegue documentadas: el paquete `connect-tycoon` (extra `game`) para uso interactivo, y la carga desde Hugging Face Hub con `ct.CompanyBrain.from_hub("joaas/connectailab-rl-joaas-v1-teacher")`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no aplicarían a este tipo de modelo.
 - No se publican datos de latencia ni de throughput.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se han encontrado en la documentación otros modelos públicos comparables de
 | Modelo | Tipo | Parametros | Contexto | Beneficio medio mensual | Satisfacción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
 | Presidente de reglas (baseline de CONNECT TYCOON) | Política determinista basada en reglas | no disponible | no disponible | 3,24 millones de wones | 79 % | no disponible (forma parte del simulador) | Integrado en el entorno CONNECT TYCOON |
-| connectailab-rl-joaas-v1-teacher | Política de RL (PPO tras imitación) | no disponible | no disponible | 11,11 millones de wones | 95 % | apache-2.0 | HuggingFace Hub |
+| connectailab-rl-joaas-v1-teacher | Política de RL (PPO tras imitación) | no disponible | no disponible | 11,11 millones de wones | 95 % | apache-2.0 | Hugging Face Hub |
 | Otros modelos de decisión empresarial comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Conviene aclarar que `typesafe/jev-1.13`, citado en la model card, es una librería o formato de intercambio estructurado, no un modelo de decisión alternativo.
@@ -104,7 +104,7 @@ Conviene aclarar que `typesafe/jev-1.13`, citado en la model card, es una librer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joaas/connectailab-rl-joaas-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/joaas/connectailab-rl-joaas-v1-teacher
 - Repositorio CONNECT TYCOON en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

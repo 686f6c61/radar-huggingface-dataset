@@ -96,7 +96,7 @@ La comparacion directa de rendimiento con estas alternativas no esta disponible:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xOsama/muthakir-mt5-small-arcd
+- Modelo en Hugging Face: https://huggingface.co/xOsama/muthakir-mt5-small-arcd
 - Modelo base: https://huggingface.co/google/mt5-small
 - Dataset ARCD: https://huggingface.co/datasets/hsseinmz/arcd
 - Paper de mT5 (Xue et al., 2020): https://arxiv.org/abs/2010.11934

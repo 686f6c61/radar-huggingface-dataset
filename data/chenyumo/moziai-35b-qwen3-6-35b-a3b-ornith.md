@@ -85,7 +85,7 @@ Nota: No se dispone de benchmarks comparativos públicos entre estos modelos en 
 
 - El modelo es "uncensored" por diseño, lo que implica que no aplica filtros de seguridad de contenido. Esto conlleva riesgo de generar respuestas inapropiadas, sesgadas o potencialmente dañinas si se usa sin supervisión.
 - El autor declara una PPL de 2.92 sobre un dataset propio, pero no se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K), por lo que su rendimiento en tareas generales es desconocido.
-- La licencia está marcada como "other" en HuggingFace; aunque el modelo base Ornith-1.0-35B se distribuye bajo MIT, la licencia del modelo final no está claramente definida, lo que puede generar incertidumbre para uso comercial.
+- La licencia está marcada como "other" en Hugging Face; aunque el modelo base Ornith-1.0-35B se distribuye bajo MIT, la licencia del modelo final no está claramente definida, lo que puede generar incertidumbre para uso comercial.
 - El soporte de visión no está documentado en detalle (no se indica arquitectura del vision encoder, resolución, o formatos de imagen compatibles).
 - Los datos de entrenamiento y el proceso de destilación no son públicos; solo se afirma una especialización en finanzas, sin especificar la composición del dataset ni los métodos de alineación.
 - El modelo puede presentar alucinaciones en datos financieros precisos, especialmente en cálculos numéricos o citas de fuentes, dada la falta de validación externa.

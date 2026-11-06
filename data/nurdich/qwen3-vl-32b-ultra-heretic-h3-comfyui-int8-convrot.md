@@ -78,7 +78,7 @@ Ambos repositorios de `nurdich` y `ethanfel` contienen practicamente los mismos 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/nurdich/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
+- Repositorio de Hugging Face: https://huggingface.co/nurdich/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
 - Modelo base: https://huggingface.co/llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic
 - Repositorio de generacion independiente: https://github.com/ethanfel/ComfyUI-H3-Qwen3VL-TextGen
 - Repositorio similar de ethanfel: https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot

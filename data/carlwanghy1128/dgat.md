@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DGAT (Dual-Graph Attention Network) es un marco de aprendizaje profundo para la imputación de expresión proteica espacial a partir de datos de transcriptómica espacial (ST). Lo desarrollan Haoyu Wang, Brittany Cody y Hatice Ulku Osmanbeyoglu, y se distribuye como repositorio de investigación en HuggingFace junto con el preprint asociado en bioRxiv (DOI 10.1101/2025.07.05.662121). No es un modelo de lenguaje: es un modelo de grafos aplicado a datos de omica espacial.
+DGAT (Dual-Graph Attention Network) es un marco de aprendizaje profundo para la imputación de expresión proteica espacial a partir de datos de transcriptómica espacial (ST). Lo desarrollan Haoyu Wang, Brittany Cody y Hatice Ulku Osmanbeyoglu, y se distribuye como repositorio de investigación en Hugging Face junto con el preprint asociado en bioRxiv (DOI 10.1101/2025.07.05.662121). No es un modelo de lenguaje: es un modelo de grafos aplicado a datos de omica espacial.
 
 El problema que resuelve es concreto: las tecnologías de transcriptómica espacial proporcionan perfiles de mRNA con contexto tisular, pero no miden directamente los niveles de proteína, que son críticos para interpretar la función celular y la organización del microentorno. DGAT aprende relaciones RNA-proteína a partir de datasets de CITE-seq espacial y las aplica para inferir la abundancia de proteínas en muestras de ST que solo tienen transcriptoma.
 
@@ -69,7 +69,7 @@ No se proporciona en la información disponible una comparación con modelos alt
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DGAT | no disponible | no aplica | superior a métodos existentes según los autores (sin cifras) | no disponible | HuggingFace + Google Drive |
+| DGAT | no disponible | no aplica | superior a métodos existentes según los autores (sin cifras) | no disponible | Hugging Face + Google Drive |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No se proporciona en la información disponible una comparación con modelos alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Carlwanghy1128/DGAT
+- Hugging Face: https://huggingface.co/Carlwanghy1128/DGAT
 - Preprint bioRxiv: https://doi.org/10.1101/2025.07.05.662121
 - Datos, modelos preentrenados y resultados (Google Drive): https://drive.google.com/drive/folders/1M9gIOFjK4wBk7DEj9MrwAlV8OHEgS2BA?usp=sharing

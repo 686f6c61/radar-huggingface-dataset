@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DQN-Labs/dqncode-tiny-run2 es un modelo de generación de texto en formato conversacional publicado por DQN-Labs en HuggingFace. Se trata de un ajuste fino (finetune) del modelo DQN-Labs/dqncode-tiny-test2, que a su vez se basa en la arquitectura Qwen3, entrenado con la biblioteca Unsloth junto con TRL de Hugging Face. Según el propio nombre del repositorio, el modelo parece orientarse a tareas de generación de código en un formato compacto ("tiny").
+DQN-Labs/dqncode-tiny-run2 es un modelo de generación de texto en formato conversacional publicado por DQN-Labs en Hugging Face. Se trata de un ajuste fino (finetune) del modelo DQN-Labs/dqncode-tiny-test2, que a su vez se basa en la arquitectura Qwen3, entrenado con la biblioteca Unsloth junto con TRL de Hugging Face. Según el propio nombre del repositorio, el modelo parece orientarse a tareas de generación de código en un formato compacto ("tiny").
 
 Con aproximadamente 596 millones de parámetros (dato real extraído de los pesos safetensors), el modelo se sitúa en la gama de modelos pequeños, lo que lo hace asequible para su ejecución en hardware de consumo. La relevancia de este tipo de modelos radica en la posibilidad de desplegar capacidades de generación de texto y código en entornos con recursos limitados, aunque la model card es extremadamente escueta y no documenta datos de entrenamiento, capacidades específicas ni resultados de evaluación, por lo que debe evaluarse con cautela antes de cualquier uso en producción.
 
@@ -76,7 +76,7 @@ Frente a estas alternativas, dqncode-tiny-run2 carece de documentacion y benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DQN-Labs/dqncode-tiny-run2
+- Modelo en Hugging Face: https://huggingface.co/DQN-Labs/dqncode-tiny-run2
 - Modelo base: https://huggingface.co/DQN-Labs/dqncode-tiny-test2
 - Unsloth (biblioteca de entrenamiento empleada): https://github.com/unslothai/unsloth
 - TRL de Hugging Face: https://github.com/huggingface/trl

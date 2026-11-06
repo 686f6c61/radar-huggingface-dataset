@@ -78,5 +78,5 @@ No hay información suficiente para realizar una comparativa con otros modelos. 
 - Repositorio en Hugging Face: [lauraxijia/qwen7b-a0-badmed-seed1](https://huggingface.co/lauraxijia/qwen7b-a0-badmed-seed1)
 - Discusión de un modelo con nombre similar (ArthT/qwen7b-a0-badmed-seed1): [https://huggingface.co/ArthT/qwen7b-a0-badmed-seed1/discussions](https://huggingface.co/ArthT/qwen7b-a0-badmed-seed1/discussions)
 - Repositorio oficial de Qwen (Alibaba Cloud): [https://github.com/QwenLM/Qwen](https://github.com/QwenLM/Qwen)
-- Página de Qwen-7B en HuggingFace: [https://huggingface.co/Qwen/Qwen-7B](https://huggingface.co/Qwen/Qwen-7B)
+- Página de Qwen-7B en Hugging Face: [https://huggingface.co/Qwen/Qwen-7B](https://huggingface.co/Qwen/Qwen-7B)
 - Documentación de Qwen 7B en Ollama: [https://ollama.com/library/qwen:7b](https://ollama.com/library/qwen:7b)

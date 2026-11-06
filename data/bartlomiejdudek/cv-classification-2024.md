@@ -77,5 +77,5 @@ No disponible. La comparación con alternativas de la misma categoría (por ejem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bartlomiejdudek/cv-classification-2024
+- Hugging Face: https://huggingface.co/bartlomiejdudek/cv-classification-2024
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a publicidad de plantillas de currículum y a rankings genéricos de LLM (llmboard.ai, artificialanalysis.ai, modelcap.ai, aicodingdaily.com), sin relación con este repositorio.

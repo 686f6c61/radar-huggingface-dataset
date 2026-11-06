@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harshpenhour/handwriting-reader
+- Repositorio Hugging Face: https://huggingface.co/Harshpenhour/handwriting-reader
 - Modelo base PaddleOCR-VL-1.6: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Conversión GGUF comunitaria: https://huggingface.co/SanjeevSOLANKI/PaddleOCR-VL-1.6-GGUF
 - Conversión GGUF comunitaria: https://huggingface.co/EstevaoNaval/PaddleOCR-VL-1.6-GGUF

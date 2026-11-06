@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Fadhiiil/qwen3-helpful-lr1e5-ep3` es un modelo derivado de la familia Qwen3, publicado en HuggingFace por el usuario Fadhiiil. A pesar de que el nombre sugiere un modelo generativo, la etiqueta de pipeline del repositorio es `text-classification` y los tags incluyen `trl` y `reward-trainer`, lo que apunta a que se trata de un modelo de recompensa (reward model) entrenado con la librería TRL sobre una base Qwen3, probablemente para su uso en pipelines de RLHF o RLAIF. El sufijo `lr1e5-ep3` indica una tasa de aprendizaje de 1e-5 y 3 épocas de entrenamiento.
+`Fadhiiil/qwen3-helpful-lr1e5-ep3` es un modelo derivado de la familia Qwen3, publicado en Hugging Face por el usuario Fadhiiil. A pesar de que el nombre sugiere un modelo generativo, la etiqueta de pipeline del repositorio es `text-classification` y los tags incluyen `trl` y `reward-trainer`, lo que apunta a que se trata de un modelo de recompensa (reward model) entrenado con la librería TRL sobre una base Qwen3, probablemente para su uso en pipelines de RLHF o RLAIF. El sufijo `lr1e5-ep3` indica una tasa de aprendizaje de 1e-5 y 3 épocas de entrenamiento.
 
-El modelo cuenta con 595.777.536 parámetros totales según los pesos en safetensors, lo que lo sitúa en el rango de los ~0,6 mil millones de parámetros. El repositorio ocupa 1,2 GB. La model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva sobre datos de entrenamiento, licencia, idiomas o evaluación, por lo que la mayor parte de los datos técnicos de esta ficha se deduce del identificador, los tags y los metadatos del repositorio.
+El modelo cuenta con 595.777.536 parámetros totales según los pesos en safetensors, lo que lo sitúa en el rango de los ~0,6 mil millones de parámetros. El repositorio ocupa 1,2 GB. La model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva sobre datos de entrenamiento, licencia, idiomas o evaluación, por lo que la mayor parte de los datos técnicos de esta ficha se deduce del identificador, los tags y los metadatos del repositorio.
 
 Su relevancia es limitada y muy específica: se trata de un artefacto de investigación con cero descargas y cero likes en el momento de la consulta, sin documentación asociada. Resulta útil como ejemplo de fine-tuning de un modelo Qwen3 pequeño como reward model mediante TRL, pero no es un modelo listo para producción ni para uso general.
 
@@ -28,7 +28,7 @@ Su relevancia es limitada y muy específica: se trata de un artefacto de investi
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura en la model card, que es la plantilla automatica de HuggingFace sin rellenar. Por el identificador (`qwen3-helpful-lr1e5-ep3`) y los tags (`trl`, `reward-trainer`), se deduce que el modelo parte de un checkpoint Qwen3 de aproximadamente 0,6 mil millones de parametros y se ha afinado como reward model o modelo de preferencias con la libreria TRL. El sufijo `helpful` sugiere que el objetivo de entrenamiento es la utilidad (helpfulness) de las respuestas, y `lr1e5-ep3` indica una tasa de aprendizaje de 1e-5 durante 3 epocas.
+No se dispone de informacion detallada sobre la arquitectura en la model card, que es la plantilla automatica de Hugging Face sin rellenar. Por el identificador (`qwen3-helpful-lr1e5-ep3`) y los tags (`trl`, `reward-trainer`), se deduce que el modelo parte de un checkpoint Qwen3 de aproximadamente 0,6 mil millones de parametros y se ha afinado como reward model o modelo de preferencias con la libreria TRL. El sufijo `helpful` sugiere que el objetivo de entrenamiento es la utilidad (helpfulness) de las respuestas, y `lr1e5-ep3` indica una tasa de aprendizaje de 1e-5 durante 3 epocas.
 
 No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como DPO, RLHF o simple regresion sobre pares de preferencias. Tampoco se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, etc.). Toda esta informacion figura como "no disponible".
 
@@ -36,7 +36,7 @@ No se especifican el numero de tokens de entrenamiento, la composicion del datas
 
 - Clasificacion de texto y puntuacion de preferencias: el pipeline declarado es `text-classification`, coherente con un reward model que asigna una puntuacion escalar a una respuesta dada una instruccion.
 - Entrenamiento con TRL: los tags confirman compatibilidad con el ecosistema TRL (`reward-trainer`), lo que facilita su uso en pipelines de RLHF.
-- Compatibilidad con Text Embeddings Inference y endpoints: los tags `text-embeddings-inference` y `endpoints_compatible` indican que puede desplegarse en infraestructura de inferencia estandar de HuggingFace.
+- Compatibilidad con Text Embeddings Inference y endpoints: los tags `text-embeddings-inference` y `endpoints_compatible` indican que puede desplegarse en infraestructura de inferencia estandar de Hugging Face.
 - Generacion de texto: no confirmada; aunque la base sea Qwen3 (modelo generativo), el afinado como reward model puede haber alterado la cabeza de salida y no se garantiza que conserve capacidades generativas intactas.
 - Tool calling, agentes, vision, audio, modo thinking: no disponible / no documentado.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 4 bits: en torno a 0,3-0,5 GB para pesos.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 12 GB, RTX 4060 Ti, RTX 4090) es mas que suficiente; tambien cabe en GPUs de gama baja con 4-6 GB. Para produccion, una A10G, L4 o T4 bastan.
 - Cabe en GPU consumer: si, con amplio margen, en practicamente cualquier GPU con 4 GB o mas.
-- Opciones de despliegue: transformers (libreria declarada), Text Embeddings Inference (tag `text-embeddings-inference`), endpoints de HuggingFace (tag `endpoints_compatible`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: transformers (libreria declarada), Text Embeddings Inference (tag `text-embeddings-inference`), endpoints de Hugging Face (tag `endpoints_compatible`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fadhiiil/qwen3-helpful-lr1e5-ep3
+- Repositorio Hugging Face: https://huggingface.co/Fadhiiil/qwen3-helpful-lr1e5-ep3
 - Libreria TRL: https://github.com/huggingface/trl
 - Documentacion de reward modeling en TRL: https://huggingface.co/docs/trl/reward_trainer
 - Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

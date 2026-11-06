@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado listo para inferencia, sino una copia de seguridad archivística de un checkpoint de investigación en robótica. El autor, `morealcholplz`, lo publica bajo el identificador `kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-gpu01-2026-f47d7360` y lo etiqueta con `robotics` y `checkpoint-backup`. La propia model card indica que se trata de un "research reset backup" y que no se realizó ningún entrenamiento ni inferencia para generar esta copia.
+Este repositorio de Hugging Face no contiene un modelo entrenado listo para inferencia, sino una copia de seguridad archivística de un checkpoint de investigación en robótica. El autor, `morealcholplz`, lo publica bajo el identificador `kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-gpu01-2026-f47d7360` y lo etiqueta con `robotics` y `checkpoint-backup`. La propia model card indica que se trata de un "research reset backup" y que no se realizó ningún entrenamiento ni inferencia para generar esta copia.
 
 El nombre del repositorio codifica el contexto del experimento original: una ejecución sobre 2 GPU con paralelismo de datos, tamaño de lote efectivo pequeño, una prueba de humo de unas 20 iteraciones y una referencia a RoboMME y a un directorio de servidor concreto (`/home/work/mntvol/robottt/n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-gpu01-20260905`). La model card menciona además que contiene derivados de GR00T y componentes de `pi`/`openpi`, sujetos a sus respectivas licencias originales.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (`morealcholplz/kt-20261011-...-f47d7360`) | Copia de seguridad de checkpoint de robotica | no disponible | no disponible | no disponible (referencia a licencia NVIDIA de investigacion/evaluacion) | Publico en HuggingFace, 0 descargas |
+| Este repositorio (`morealcholplz/kt-20261011-...-f47d7360`) | Copia de seguridad de checkpoint de robotica | no disponible | no disponible | no disponible (referencia a licencia NVIDIA de investigacion/evaluacion) | Publico en Hugging Face, 0 descargas |
 | GR00T (NVIDIA) | Modelo fundacional para robotica | no disponible en la informacion proporcionada | no disponible | Investigacion/evaluacion unicamente, segun la model card | Referenciado como componente upstream |
 | pi / openpi | Modelos VLA para robotica | no disponible en la informacion proporcionada | no disponible | Terminos propios del proyecto upstream | Referenciado como componente upstream |
 
@@ -82,6 +82,6 @@ No se dispone de datos verificables de parametros, contexto ni rendimiento de lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-gpu01-2026-f47d7360
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-gpu01-2026-f47d7360
 - Perfil del autor: https://huggingface.co/morealcholplz
 - La busqueda web realizada no devolvio enlaces relevantes al modelo: los resultados obtenidos corresponden a sitios de television en directo en rumano, sin relacion con el artefacto. No se dispone por tanto de papers, blogs, repositorios de codigo ni demos asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-A²-MEAS es un paquete de recursos de inferencia publicado por el usuario shibohuang en HuggingFace, asociado al trabajo *Toward the Era of Agentic Embodied Intelligence*. No se trata de un modelo de lenguaje generativo al uso, sino de un conjunto de pesos y configuraciones para políticas de robótica y agentes encarnados: incluye 25 políticas de inferencia para el entorno BEHAVIOR, un checkpoint para RoboTwin, pesos del adaptador BEHAVIOR con configuración de doce tareas y un tokenizador compartido con procesamiento de imagen. El repositorio ocupa 168,5 GB y se distribuye en formato safetensors.
+A²-MEAS es un paquete de recursos de inferencia publicado por el usuario shibohuang en Hugging Face, asociado al trabajo *Toward the Era of Agentic Embodied Intelligence*. No se trata de un modelo de lenguaje generativo al uso, sino de un conjunto de pesos y configuraciones para políticas de robótica y agentes encarnados: incluye 25 políticas de inferencia para el entorno BEHAVIOR, un checkpoint para RoboTwin, pesos del adaptador BEHAVIOR con configuración de doce tareas y un tokenizador compartido con procesamiento de imagen. El repositorio ocupa 168,5 GB y se distribuye en formato safetensors.
 
 La relevancia del artefacto está en que empaqueta, en un único repositorio, los tensores de inferencia y los tensores de referencia necesarios para reconstruir checkpoints estándar verificables por SHA-256, además de un enrutado para 100 tareas con N=2. Esto facilita la reproducibilidad de la evaluación A2MEAS sin reentrenar ni recalcular pesos. La licencia es Apache-2.0 para los pesos de inferencia de A²-WLA, con términos de terceros que se mantienen vigentes, en particular el codificador visual DINOv3, que se rige por su propia licencia.
 
@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shibohuang/policy-weights
+- Hugging Face: https://huggingface.co/shibohuang/policy-weights
 - Paper de referencia citado en la model card: *Toward the Era of Agentic Embodied Intelligence* (no se proporciona URL en la información disponible)
 - Licencia DINOv3 incluida en el repositorio: `licenses/dinov3.md`
 - Manifiesto de recursos: `resource-manifest.json` (dentro del repositorio)

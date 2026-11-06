@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Martinaalvar/trial-matching52` es un prototipo de investigación publicado en HuggingFace bajo el identificador "Blip for Matching". Lo firma el usuario Martinaalvar y se distribuye con licencia Apache 2.0. Se presenta explícitamente como un experimento orientado a tareas de *matching* (emparejamiento) basado en una arquitectura de tipo BLIP, con atención *grouped query*, fusión *gated*, activación `gelu tanh` y normalización `layernorm`.
+`Martinaalvar/trial-matching52` es un prototipo de investigación publicado en Hugging Face bajo el identificador "Blip for Matching". Lo firma el usuario Martinaalvar y se distribuye con licencia Apache 2.0. Se presenta explícitamente como un experimento orientado a tareas de *matching* (emparejamiento) basado en una arquitectura de tipo BLIP, con atención *grouped query*, fusión *gated*, activación `gelu tanh` y normalización `layernorm`.
 
 El dato más relevante es que se trata de un **checkpoint de inicialización**, no de un modelo entrenado: el autor indica en la model card que `model.safetensors` sirve para *smoke tests* y que no se reclama ninguna métrica de benchmark. Los datos reales de safetensors reportan 24.832 parámetros totales, un tamaño mínimo coherente con un artefacto de prueba más que con un modelo funcional de gran escala, pese a que la configuración se etiquete como "large".
 
@@ -24,7 +24,7 @@ Por tanto, su relevancia actual es limitada y de carácter experimental: sirve c
 | Activación | gelu tanh |
 | Normalización | layernorm |
 | Tamaño del repositorio | 0.0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No hay modelos comparables en la información proporcionada. El repositorio es u
 
 | Modelo | Parámetros | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| trial-matching52 | 24.832 | checkpoint de inicialización (sin entrenar) | apache-2.0 | HuggingFace |
+| trial-matching52 | 24.832 | checkpoint de inicialización (sin entrenar) | apache-2.0 | Hugging Face |
 | BLIP (familia de referencia) | no disponible | modelos entrenados de referencia | no disponible | fuera del alcance de esta ficha |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No hay modelos comparables en la información proporcionada. El repositorio es u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Martinaalvar/trial-matching52
+- Hugging Face: https://huggingface.co/Martinaalvar/trial-matching52
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

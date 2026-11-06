@@ -4,7 +4,7 @@
 
 LTX-2.5-22b-IC-LoRA-SDR-To-HDR es un adaptador LoRA de tipo IC-LoRA (in-context LoRA) desarrollado por Lightricks para su modelo fundacional de video LTX-2.5. Su funcion concreta es la conversion video-a-video de material en SDR (Standard Dynamic Range) a HDR (High Dynamic Range), manteniendo el contenido de la escena original e incrementando el rango dinamico. No es un modelo autonomo: se distribuye como pesos de adaptador que se cargan junto con la base Lightricks/LTX-2.5, un modelo de 22 000 millones de parametros.
 
-El adaptador se publica bajo la licencia ltx-2.x-community-license y con acceso restringido (gated) en HuggingFace, lo que obliga a aceptar condiciones antes de la descarga. El repositorio ocupa 1,3 GB y esta etiquetado con el pipeline video-to-video, la libreria ltx y el idioma ingles. Las instrucciones oficiales indican que la inferencia se ejecuta sobre la variante destilada de la base, invocando el modulo ltx_pipelines.ic_lora con la ruta del transformer destilado.
+El adaptador se publica bajo la licencia ltx-2.x-community-license y con acceso restringido (gated) en Hugging Face, lo que obliga a aceptar condiciones antes de la descarga. El repositorio ocupa 1,3 GB y esta etiquetado con el pipeline video-to-video, la libreria ltx y el idioma ingles. Las instrucciones oficiales indican que la inferencia se ejecuta sobre la variante destilada de la base, invocando el modulo ltx_pipelines.ic_lora con la ruta del transformer destilado.
 
 Su relevancia actual es doble. Por un lado, cubre una tarea de postproduccion muy demandada (remasterizacion SDR a HDR) sin necesidad de reentrenar un modelo completo, aprovechando la arquitectura de contexto del modelo base. Por otro, ejemplifica el patron de especializacion mediante IC-LoRA que Lightricks esta aplicando a la familia LTX-2.5, con adaptadores hermanos como LTX-2.5-22b-IC-LoRA-Ingredients.
 
@@ -66,16 +66,16 @@ El unico dato de rendimiento recogido en las fuentes es relativo al modelo base 
 
 | Modelo | Tipo | Parametros | Tarea | Licencia | Acceso |
 |---|---|---|---|---|---|
-| LTX-2.5-22b-IC-LoRA-SDR-To-HDR | IC-LoRA sobre LTX-2.5 | no disponible (base de 22 000 millones) | Video-to-video SDR a HDR | ltx-2.x-community-license | Gated en HuggingFace |
-| LTX-2.5-22b-IC-LoRA-Ingredients | IC-LoRA sobre LTX-2.5 | no disponible (base de 22 000 millones) | Edicion y composicion por ingredientes visuales | no disponible | HuggingFace |
-| Lightricks/LTX-2.5 (base) | World model de video y audio | 22 000 millones | Generacion y edicion de video con audio sincronizado | no disponible en la informacion proporcionada | HuggingFace |
+| LTX-2.5-22b-IC-LoRA-SDR-To-HDR | IC-LoRA sobre LTX-2.5 | no disponible (base de 22 000 millones) | Video-to-video SDR a HDR | ltx-2.x-community-license | Gated en Hugging Face |
+| LTX-2.5-22b-IC-LoRA-Ingredients | IC-LoRA sobre LTX-2.5 | no disponible (base de 22 000 millones) | Edicion y composicion por ingredientes visuales | no disponible | Hugging Face |
+| Lightricks/LTX-2.5 (base) | World model de video y audio | 22 000 millones | Generacion y edicion de video con audio sincronizado | no disponible en la informacion proporcionada | Hugging Face |
 | Herramientas de conversion SDR a HDR en postproduccion (por ejemplo, modulos de tone mapping en suites de color) | Algoritmos deterministas, no generativos | no aplica | Conversion SDR a HDR | Propietaria | Comercial |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga, lo que puede bloquear automatizaciones en CI/CD.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga, lo que puede bloquear automatizaciones en CI/CD.
 - Licencia ltx-2.x-community-license: los terminos exactos de uso comercial no se detallan en la informacion proporcionada. Es obligatorio revisar el texto completo de la licencia antes de integrarlo en un producto.
 - Dependencia estricta del modelo base: el adaptador no funciona de forma autonoma y requiere Lightricks/LTX-2.5 y su transformer destilado.
 - Idioma: solo ingles declarado, lo que puede limitar el uso de prompts en castellano.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-SDR-To-HDR
+- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-SDR-To-HDR
 - Modelo base LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Adaptador relacionado LTX-2.5-22b-IC-LoRA-Ingredients: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients
 - Pagina oficial del modelo LTX-2.5: https://ltx.io/model/ltx-2-5

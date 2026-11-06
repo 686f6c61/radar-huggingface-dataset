@@ -91,7 +91,7 @@ La información proporcionada no incluye datos de rendimiento de modelos compara
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/kprzyb/PolDense-32M-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/kprzyb/PolDense-32M-GGUF
 - Modelo base: https://huggingface.co/OPI-PIB/PolDense-32M
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

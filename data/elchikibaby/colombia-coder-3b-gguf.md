@@ -2,7 +2,7 @@
 
 ## Resumen
 
-colombia-coder-3b-gguf es una version cuantizada en formato GGUF de un modelo de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) publicado por el usuario Elchikibaby en HuggingFace. El repositorio contiene un unico fichero de pesos, `qwen2.5-coder-3b-instruct.Q4_K_M.gguf`, lo que indica que el modelo base es Qwen2.5-Coder-3B-Instruct y que sobre el se ha realizado un ajuste fino posterior antes de la conversion a GGUF. La conversion y el entrenamiento se han llevado a cabo con Unsloth, segun declara la propia model card.
+colombia-coder-3b-gguf es una version cuantizada en formato GGUF de un modelo de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) publicado por el usuario Elchikibaby en Hugging Face. El repositorio contiene un unico fichero de pesos, `qwen2.5-coder-3b-instruct.Q4_K_M.gguf`, lo que indica que el modelo base es Qwen2.5-Coder-3B-Instruct y que sobre el se ha realizado un ajuste fino posterior antes de la conversion a GGUF. La conversion y el entrenamiento se han llevado a cabo con Unsloth, segun declara la propia model card.
 
 El modelo esta etiquetado como `gguf`, `qwen2`, `llama.cpp`, `unsloth`, `endpoints_compatible`, `region:us` y `conversational`, de modo que su proposito declarado es la inferencia local y el despliegue ligero en herramientas compatibles con llama.cpp, con una orientacion conversacional y de generacion de codigo. El nombre "colombia-coder" sugiere una adaptacion al espanol de Colombia o a un dominio de codigo regional, pero la model card no documenta el dataset, el idioma ni el objetivo del ajuste.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada y conviene ser explicitos: se trata de u
 | Formato de pesos | GGUF (`qwen2.5-coder-3b-instruct.Q4_K_M.gguf`); no hay safetensors en el repositorio |
 | Tamano del repositorio | 1,9 GB |
 | Etiquetas | gguf, qwen2, llama.cpp, unsloth, endpoints_compatible, region:us, conversational |
-| Fecha de creacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-11 (segun metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 2026-09-11 |
 | Descargas / likes | 0 / 1 |
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU consumer con 6 GB o mas de VRAM es suficiente en la practica, por ejemplo GTX 1660 6 GB, RTX 3060 12 GB, RTX 4060 8 GB o RTX 4090. En el extremo profesional, una A100 o H100 esta sobredimensionada para este modelo y solo tendria sentido para servir muchas instancias en paralelo.
 - Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas modernas, e incluso en iGPU con memoria compartida suficiente.
 - Inferencia en CPU: viable, con requisito practico de unos 8 GB de RAM y soporte AVX2 para un rendimiento aceptable.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf Elchikibaby/colombia-coder-3b-gguf --jinja`), Ollama mediante el Modelfile incluido, llama-cpp-python, LM Studio y otros frontends compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace, pero no se especifica la configuracion.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf Elchikibaby/colombia-coder-3b-gguf --jinja`), Ollama mediante el Modelfile incluido, llama-cpp-python, LM Studio y otros frontends compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face, pero no se especifica la configuracion.
 - Latencia y throughput: no se han publicado mediciones. Como referencia generica de la categoria de 3 B en Q4_K_M, las GPU consumer suelen generar decenas de tokens por segundo y las CPU con AVX2 un rango de unidades a decenas de tokens por segundo, pero no hay ningun dato medido para esta version concreta.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No hay datos de rendimiento comparativo para este ajuste concreto, por lo que la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elchikibaby/colombia-coder-3b-gguf
+- Modelo en Hugging Face: https://huggingface.co/Elchikibaby/colombia-coder-3b-gguf
 - Unsloth (framework usado para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia para GGUF): https://github.com/ggml-org/llama.cpp
 - Modelo base referenciado por el nombre del fichero GGUF (Qwen2.5-Coder-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

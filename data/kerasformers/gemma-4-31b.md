@@ -81,7 +81,7 @@ En comparación con el 12B, el 31B ofrece más capacidad de razonamiento y gener
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kerasformers/gemma-4-31b
+- Hugging Face: https://huggingface.co/kerasformers/gemma-4-31b
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Gemma 4 en KerasFormers: https://imvision12.github.io/KerasFormers/gemma4/
 - Modelo original de Google: https://huggingface.co/google/gemma-4-31B

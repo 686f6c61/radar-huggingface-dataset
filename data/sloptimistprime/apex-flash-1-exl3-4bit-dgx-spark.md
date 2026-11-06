@@ -114,7 +114,7 @@ No se dispone de datos de rendimiento estandar para ninguno de los modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SloptimistPrime/apex-flash-1-EXL3-4bit-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/SloptimistPrime/apex-flash-1-EXL3-4bit-DGX-Spark
 - Modelo base: https://huggingface.co/cantina-security/apex-flash-1
 - Receta de cuantizacion de partida: https://huggingface.co/WamboDNS/apex-flash-1-EXL3-4bpw
 - Drafter opcional DFlash2: https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2

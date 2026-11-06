@@ -104,13 +104,13 @@ No se dispone de datos de terceros (otros adaptadores de personaje para Z-Image,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ifmylove2011/girlslike-zimage
+- Modelo en Hugging Face: https://huggingface.co/ifmylove2011/girlslike-zimage
 - Arbol de ficheros del repositorio: https://huggingface.co/ifmylove2011/girlslike-zimage/tree/main
 - Galeria de abreviaturas y nombres reales (Space): https://huggingface.co/spaces/ifmylove2011/girlslike_lora_gallery/blob/main/app.py
 - Fuente de los prompts de ejemplo (Civitai): https://civitai.com/models/2231696
 - Modelo base Z-Image: https://huggingface.co/Tongyi-MAI/Z-Image
 - Modelo base Z-Image Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
-- Perfil del autor en HuggingFace: https://huggingface.co/ifmylove2011
+- Perfil del autor en Hugging Face: https://huggingface.co/ifmylove2011
 - Perfil del autor en GitHub: https://github.com/ifmylove2011/
 - Ficha de terceros con metadatos del modelo: https://essamamdani.com/ai-models/hf-ifmylove2011-girlslike-zimage
 - Directorio de modelos del autor: https://www.aimodels.fyi/creators/huggingface/ifmylove2011

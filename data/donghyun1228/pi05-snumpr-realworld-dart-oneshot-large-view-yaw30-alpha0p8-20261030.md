@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 SNUMPR real-world DART merge (large view + yaw30, α = 0.8) es un checkpoint de robótica derivado del modelo visión-lenguaje-acción (VLA) π0.5, publicado por el usuario Donghyun1228 en HuggingFace bajo licencia Apache 2.0. No se trata de un modelo de lenguaje general, sino de un artefacto de investigación para control robótico: un merge de pesos por aritmética de dominios (DART) entre un modelo fuente afinado y un modelo objetivo afinado, partiendo de la base SNUMPR VLA. El repositorio ocupa 5,3 GB y contiene pesos en BF16 junto con los assets de normalización originales.
+π0.5 SNUMPR real-world DART merge (large view + yaw30, α = 0.8) es un checkpoint de robótica derivado del modelo visión-lenguaje-acción (VLA) π0.5, publicado por el usuario Donghyun1228 en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo de lenguaje general, sino de un artefacto de investigación para control robótico: un merge de pesos por aritmética de dominios (DART) entre un modelo fuente afinado y un modelo objetivo afinado, partiendo de la base SNUMPR VLA. El repositorio ocupa 5,3 GB y contiene pesos en BF16 junto con los assets de normalización originales.
 
 El interés técnico reside en el método de combinación: se aplica `domain_arithmetic.dart` del repositorio `snumprlab/dart` (commit `1b23c4f4`) con α = 0.8, alcance "all" y semilla 42, ejecutado en CPU. El resultado se verificó hoja por hoja con `scripts/verify_dart_merge.py`, cubriendo 51 de 51 claves sin recurrir a fallback. El checkpoint incorpora además una transformación virtual de yaw de +30 grados que el controlador del robot debe invertir en tiempo de ejecución.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estos checkpoints; la co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-20261030
 - Modelo base: `snumpr-iclr27-v1/9999` (referenciado en la model card, sin URL directa disponible)
 - Modelo fuente: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-20261030
 - Modelo objetivo: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-ft-1000-20261030

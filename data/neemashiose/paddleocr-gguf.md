@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeemaShioSe/paddleocr.gguf es una conversión al formato GGUF de un modelo de PaddleOCR, publicada por el usuario NeemaShioSe en HuggingFace. La model card la describe literalmente como un "ggml port of PaddleOcr model for fun", es decir, un port experimental sin objetivos de producción declarados, y remite a un documento del repositorio VULKAN-TORCH para los detalles de ejecución. No se documenta ni la arquitectura concreta, ni el dataset de entrenamiento, ni resultados de evaluación.
+NeemaShioSe/paddleocr.gguf es una conversión al formato GGUF de un modelo de PaddleOCR, publicada por el usuario NeemaShioSe en Hugging Face. La model card la describe literalmente como un "ggml port of PaddleOcr model for fun", es decir, un port experimental sin objetivos de producción declarados, y remite a un documento del repositorio VULKAN-TORCH para los detalles de ejecución. No se documenta ni la arquitectura concreta, ni el dataset de entrenamiento, ni resultados de evaluación.
 
 El repositorio ocupa 0,2 GB y el modelo declara 21.935.969 parámetros (aproximadamente 21,9 millones). La licencia es Apache-2.0 y la única etiqueta relevante es `gguf`; no hay pipeline declarado, no se especifican idiomas soportados y no existe información sobre cuantizaciones disponibles. Se publicó el 13 de septiembre de 2026 y se actualizó el 16 de septiembre de 2026, con 56 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -26,7 +26,7 @@ Su relevancia es limitada y muy específica: interesa a quien quiera ejecutar re
 | Ultima actualizacion | 2026-09-16 |
 | Descargas / likes | 56 / 0 |
 
-Nota: los metadatos de HuggingFace etiquetan el recuento de parámetros como dato procedente de safetensors, pero el repositorio se distribuye en GGUF. Es una discrepancia de la ficha de HuggingFace que no se puede resolver con la información disponible.
+Nota: los metadatos de Hugging Face etiquetan el recuento de parámetros como dato procedente de safetensors, pero el repositorio se distribuye en GGUF. Es una discrepancia de la ficha de Hugging Face que no se puede resolver con la información disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -94,11 +94,11 @@ Los datos de las alternativas no proceden de la información proporcionada en es
 - Cobertura funcional incierta: no se especifica si el modelo incluye detección de cajas de texto, reconocimiento, o ambas cosas, lo que afecta directamente a cómo debe integrarse en un pipeline.
 - Restricciones de licencia: los pesos del repositorio se publican bajo Apache-2.0, lo que en principio permite uso comercial. No obstante, no se documenta la trazabilidad del modelo original de PaddleOCR ni las condiciones de los datos con los que se entrenó, por lo que conviene verificar el origen antes de un uso comercial.
 - Dependencia de un runtime poco habitual: el despliegue se apoya en el ejemplo del repositorio VULKAN-TORCH, no en herramientas estándar como llama.cpp u Ollama, lo que puede limitar el soporte y el mantenimiento.
-- Discrepancia de metadatos: HuggingFace declara el recuento de parámetros como dato obtenido de safetensors pese a que el repositorio solo distribuye GGUF.
+- Discrepancia de metadatos: Hugging Face declara el recuento de parámetros como dato obtenido de safetensors pese a que el repositorio solo distribuye GGUF.
 - Sin garantía de mantenimiento: no hay indicios de actualizaciones planificadas más allá de la del 16 de septiembre de 2026.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NeemaShioSe/paddleocr.gguf
+- Hugging Face: https://huggingface.co/NeemaShioSe/paddleocr.gguf
 - Ejemplo de ejecución indicado por el autor (repositorio VULKAN-TORCH): https://github.com/Rafa00127/VULKAN-TORCH/blob/main/example/python/PaddleOCR.md
 - Los resultados de búsqueda web disponibles no contienen información relacionada con este modelo (corresponden a páginas sobre resistencia al agua del Apple Watch), por lo que no se incluyen como fuentes.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-π0.5 AXIS es un checkpoint de tipo vision-language-action (VLA) publicado por el usuario deepmaster en HuggingFace bajo el identificador `deepmaster/pi0.5-UKVAJESfBz7X`. Se trata de un checkpoint nativo de OpenPI en formato JAX/Orbax, distribuido con los directorios `params/` y `assets/` y asociado a la configuración `pi05_axis_joint`. Según la propia model card, el modelo consume una imagen RGB de cámara principal (más una cámara de muñeca cuando el evaluador la proporciona) junto con un estado articular de 9 dimensiones, y produce como salida objetivos articulares absolutos también de 9 dimensiones.
+π0.5 AXIS es un checkpoint de tipo vision-language-action (VLA) publicado por el usuario deepmaster en Hugging Face bajo el identificador `deepmaster/pi0.5-UKVAJESfBz7X`. Se trata de un checkpoint nativo de OpenPI en formato JAX/Orbax, distribuido con los directorios `params/` y `assets/` y asociado a la configuración `pi05_axis_joint`. Según la propia model card, el modelo consume una imagen RGB de cámara principal (más una cámara de muñeca cuando el evaluador la proporciona) junto con un estado articular de 9 dimensiones, y produce como salida objetivos articulares absolutos también de 9 dimensiones.
 
 El modelo pertenece a la familia π0.5, una arquitectura VLA que, según la documentación del repositorio de Qualcomm ai-hub-models, se coentrena con fuentes de datos diversas (demostraciones de robot, datos web y subtareas semánticas) para habilitar la generalización en mundo abierto en tareas de manipulación robótica de horizonte largo. El etiquetado del repositorio (`robotics`, `vla`, `pi0.5`, `openpi`, `jax`) confirma que está pensado para control robótico y no para generación de texto o código de propósito general.
 
-La relevancia de esta ficha es acotada: se trata de un checkpoint derivado, sin descargas ni interacciones registradas en el momento de la consulta, y con los pesos sujetos a los Términos de Uso de Gemma y el código a la licencia de OpenPI. El repositorio ocupa 12,4 GB y fue creado y actualizado el 4 de octubre de 2026 según los metadatos de HuggingFace.
+La relevancia de esta ficha es acotada: se trata de un checkpoint derivado, sin descargas ni interacciones registradas en el momento de la consulta, y con los pesos sujetos a los Términos de Uso de Gemma y el código a la licencia de OpenPI. El repositorio ocupa 12,4 GB y fue creado y actualizado el 4 de octubre de 2026 según los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `deepmaster/pi0.5-UKVAJESfBz7X` (este) | no disponible | no disponible | no disponible | Gemma (pesos) + OpenPI (codigo) | Publico en HuggingFace, 0 descargas |
-| `deepmaster/pi0.5-Qa9gL31ZSwkb` | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| `deepmaster/pi0.5-UKVAJESfBz7X` (este) | no disponible | no disponible | no disponible | Gemma (pesos) + OpenPI (codigo) | Publico en Hugging Face, 0 descargas |
+| `deepmaster/pi0.5-Qa9gL31ZSwkb` | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | π0.5 (referencia Qualcomm ai-hub-models) | no disponible | no disponible | no disponible | no disponible | Implementacion de exportacion on-device para dispositivos Qualcomm |
 
 No se dispone de datos tecnicos suficientes (parametros, contexto, benchmarks) para establecer una comparacion cuantitativa entre estas alternativas.
@@ -89,7 +89,7 @@ No se dispone de datos tecnicos suficientes (parametros, contexto, benchmarks) p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepmaster/pi0.5-UKVAJESfBz7X
+- Modelo en Hugging Face: https://huggingface.co/deepmaster/pi0.5-UKVAJESfBz7X
 - Otro checkpoint del mismo autor: https://huggingface.co/deepmaster/pi0.5-Qa9gL31ZSwkb
 - Pagina de modelos del autor: https://huggingface.co/deepmaster/models
 - Implementacion de π0.5 en Qualcomm ai-hub-models: https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md

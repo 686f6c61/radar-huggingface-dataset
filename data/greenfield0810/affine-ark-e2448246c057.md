@@ -69,6 +69,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/greenfield0810/affine-ark-e2448246c057
+- Repositorio de Hugging Face: https://huggingface.co/greenfield0810/affine-ark-e2448246c057
 - Repositorio original del checkpoint: https://huggingface.co/alex-drok/affine-5cj9mpkjrr-grape (revisión `ecd4c84ce5aa`)
 - Archivo de procedencia (dentro del repositorio): `_affine_provenance.json` (no disponible en línea)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-mutation-driven-order4-5822` es un ajuste fino (fine-tuning) del modelo multimodal Gemma 4 E4B, desarrollado por el usuario dkingtutcd y publicado en HuggingFace. El modelo base es `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, una variante cuantizada a 4 bits de la versión instructiva de Gemma 4 E4B, optimizada por Unsloth para entrenamiento eficiente. El ajuste se ha realizado con las librerías Unsloth y TRL de HuggingFace, y se distribuye en precisión FP16.
+`dkingtutcd/gemma-e4b-mutation-driven-order4-5822` es un ajuste fino (fine-tuning) del modelo multimodal Gemma 4 E4B, desarrollado por el usuario dkingtutcd y publicado en Hugging Face. El modelo base es `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, una variante cuantizada a 4 bits de la versión instructiva de Gemma 4 E4B, optimizada por Unsloth para entrenamiento eficiente. El ajuste se ha realizado con las librerías Unsloth y TRL de Hugging Face, y se distribuye en precisión FP16.
 
 El modelo resuelve tareas de generación de texto e imagen-a-texto (pipeline `image-text-to-text`), por lo que hereda las capacidades multimodales de la familia Gemma 4. Cuenta con 7.996.156.490 parámetros totales según los pesos en safetensors, lo que lo sitúa en la gama de modelos de aproximadamente 8.000 millones de parámetros. Su licencia Apache 2.0 facilita el uso comercial, aunque el idioma declarado es únicamente inglés.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| dkingtutcd/gemma-e4b-mutation-driven-order4-5822 | ~8.000 M | no disponible | Apache 2.0 | Sí (imagen-texto) | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8.000 M | no disponible | Apache 2.0 (según repo) | Sí (imagen-texto) | HuggingFace, mantenido por Unsloth |
-| Gemma 4 E4B instructivo (oficial) | ~8.000 M | no disponible | Términos de Gemma (no verificados aquí) | Sí (imagen-texto) | HuggingFace, ampliamente usado |
-| Modelos de ~8B texto (p. ej., Llama 3.1 8B) | ~8.000 M | 128k (según documentación pública) | Llama Community License | No | HuggingFace, amplia adopción |
+| dkingtutcd/gemma-e4b-mutation-driven-order4-5822 | ~8.000 M | no disponible | Apache 2.0 | Sí (imagen-texto) | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8.000 M | no disponible | Apache 2.0 (según repo) | Sí (imagen-texto) | Hugging Face, mantenido por Unsloth |
+| Gemma 4 E4B instructivo (oficial) | ~8.000 M | no disponible | Términos de Gemma (no verificados aquí) | Sí (imagen-texto) | Hugging Face, ampliamente usado |
+| Modelos de ~8B texto (p. ej., Llama 3.1 8B) | ~8.000 M | 128k (según documentación pública) | Llama Community License | No | Hugging Face, amplia adopción |
 
 La comparación se limita a parámetros y licencia, ya que no hay benchmarks publicados para este ajuste fino. El modelo base de Unsloth y el Gemma 4 oficial son las alternativas más directas; cualquier modelo de ~8B de texto es comparable en coste de inferencia, pero no en multimodalidad.
 
@@ -84,7 +84,7 @@ La comparación se limita a parámetros y licencia, ya que no hay benchmarks pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkingtutcd/gemma-e4b-mutation-driven-order4-5822
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/dkingtutcd/gemma-e4b-mutation-driven-order4-5822
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl

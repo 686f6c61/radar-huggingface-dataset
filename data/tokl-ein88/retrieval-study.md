@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tokl-ein88/retrieval-study` es un prototipo de investigación publicado en HuggingFace por el usuario Tokl-ein88. Se presenta explícitamente como un esqueleto experimental de una arquitectura Swin Transformer en configuración "tiny", orientada a tareas de retrieval (recuperación), con una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo. No es un modelo entrenado ni evaluado: la propia model card indica que no se reclama ninguna métrica de benchmark y que los pesos incluidos no han sido entrenados.
+`Tokl-ein88/retrieval-study` es un prototipo de investigación publicado en Hugging Face por el usuario Tokl-ein88. Se presenta explícitamente como un esqueleto experimental de una arquitectura Swin Transformer en configuración "tiny", orientada a tareas de retrieval (recuperación), con una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo. No es un modelo entrenado ni evaluado: la propia model card indica que no se reclama ninguna métrica de benchmark y que los pesos incluidos no han sido entrenados.
 
 El repositorio contiene cuatro artefactos: `main.py` (implementación y punto de entrada ejecutable), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización). El recuento real de parámetros reportado en safetensors es de 16.576, una cifra extremadamente baja que resulta inconsistente con la configuración típica de un Swin-T estándar (del orden de decenas de millones de parámetros) y que refuerza la naturaleza de prueba de humo del artefacto.
 
@@ -83,7 +83,7 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tokl-ein88/retrieval-study
+- Hugging Face: https://huggingface.co/Tokl-ein88/retrieval-study
 - Repositorio (archivos incluidos): `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Comando de verificación rápida indicado por el autor: `python main.py --help`
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios o demos en la información proporcionada.

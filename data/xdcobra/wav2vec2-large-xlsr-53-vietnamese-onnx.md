@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX | no disponible | no aplica (audio) | Apache 2.0 | ONNX (fp32, fp16, int8) | HuggingFace |
-| not-tanh/wav2vec2-large-xlsr-53-vietnamese (base) | no disponible | no aplica | Apache 2.0 | PyTorch (safetensors) | HuggingFace |
-| facebook/wav2vec2-large-xlsr-53 (original) | no disponible | no aplica | Apache 2.0 | PyTorch | HuggingFace |
+| XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX | no disponible | no aplica (audio) | Apache 2.0 | ONNX (fp32, fp16, int8) | Hugging Face |
+| not-tanh/wav2vec2-large-xlsr-53-vietnamese (base) | no disponible | no aplica | Apache 2.0 | PyTorch (safetensors) | Hugging Face |
+| facebook/wav2vec2-large-xlsr-53 (original) | no disponible | no aplica | Apache 2.0 | PyTorch | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables en la información proporcionada. La comparación más directa es con el checkpoint base en PyTorch, del que este modelo es una exportación ONNX cuantizada.
 
@@ -80,6 +80,6 @@ No se dispone de información sobre otros modelos comparables en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX
+- Hugging Face: https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX
 - Modelo base: https://huggingface.co/not-tanh/wav2vec2-large-xlsr-53-vietnamese
 - Modelo original XLSR-53: https://huggingface.co/facebook/wav2vec2-large-xlsr-53

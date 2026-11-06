@@ -21,7 +21,7 @@ La información pública disponible es escasa: el repositorio no incluye tabla d
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (etiquetas del repo: transformers, unsloth) |
 | Pipeline declarado | image-text-to-text |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creación / actualización | 2026-10-22 / 2026-10-29 |
 | Descargas / likes | 0 / 15 |
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento publicados para ninguno de los cuatro, por lo que la
 - Riesgo elevado de alucinación y de degradación de instrucciones: la abliteration suele afectar a la capacidad de seguir instrucciones complejas y a la coherencia en tareas de razonamiento; no hay evaluaciones que cuantifiquen ese deterioro en este build.
 - Solo inglés declarado; no se garantiza un comportamiento correcto en castellano ni en otros idiomas.
 - Licencia Apache 2.0 declarada, pero conviene verificar las condiciones del modelo base Qwen3.8-27B y del acceso gated antes de un uso comercial; el autor puede imponer restricciones adicionales en la tarjeta del repositorio.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que impide descarga anónima y automatizada.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que impide descarga anónima y automatizada.
 - Disponibilidad dudosa de los pesos: el repositorio muestra 0,0 GB de tamaño, 0 descargas y solo 15 «likes»; verifica que los ficheros GGUF estén realmente subidos antes de planificar un despliegue.
 - Validación comunitaria prácticamente nula: sin descargas ni benchmarks, no hay evidencia independiente de calidad.
 - Discrepancia de pipeline: se declara `image-text-to-text`, pero no se documenta ningún módulo de visión; asume que es un modelo de texto hasta que se demuestre lo contrario.
@@ -98,7 +98,7 @@ No hay datos de rendimiento publicados para ninguno de los cuatro, por lo que la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF
 - README del modelo: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF/blob/main/README.md
 - Variante no GGUF del mismo autor: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror/tree/main
 - Repositorio de terceros con instrucciones de despliegue local (no oficial): https://github.com/Wassimyounes01/qwen38-uncensored

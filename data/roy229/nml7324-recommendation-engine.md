@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Roy229/nml7324-recommendation-engine` es un clasificador de texto publicado en HuggingFace por el usuario Roy229, etiquetado dentro del registro `nml-registry` y orientado a motores de recomendación. Según su model card, su función es sugerir artículos de seguimiento a los lectores de una base de conocimiento corporativa, basándose en el contexto de la sesión y el historial de lectura. Está pensado para integrarse en la barra lateral de ayuda de una aplicación y en la lista de verificación de incorporación de nuevos usuarios, con el objetivo de mejorar las tasas de resolución autónoma en el centro de ayuda.
+El modelo `Roy229/nml7324-recommendation-engine` es un clasificador de texto publicado en Hugging Face por el usuario Roy229, etiquetado dentro del registro `nml-registry` y orientado a motores de recomendación. Según su model card, su función es sugerir artículos de seguimiento a los lectores de una base de conocimiento corporativa, basándose en el contexto de la sesión y el historial de lectura. Está pensado para integrarse en la barra lateral de ayuda de una aplicación y en la lista de verificación de incorporación de nuevos usuarios, con el objetivo de mejorar las tasas de resolución autónoma en el centro de ayuda.
 
 El modelo se presenta con el pipeline de `text-classification` y la librería `transformers`, lo que indica que se trata de un modelo de clasificación de secuencias, probablemente basado en una arquitectura transformer estándar. Sin embargo, la model card no proporciona detalles sobre el tamaño, la arquitectura concreta, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni información sobre el proceso de entrenamiento. La licencia es Apache 2.0 y el idioma declarado es inglés.
 
@@ -64,4 +64,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Roy229/nml7324-recommendation-engine)
+- [Modelo en Hugging Face](https://huggingface.co/Roy229/nml7324-recommendation-engine)

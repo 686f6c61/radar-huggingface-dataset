@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Bego-1.5B es un modelo de generacion de texto publicado en HuggingFace por el usuario turkmenx bajo el identificador `turkmenx/Bego-1.5B`. Se distribuye en formato transformers con pesos safetensors y su arquitectura declarada mediante etiquetas es qwen2, lo que apunta a una implementacion basada en la familia Qwen2 con aproximadamente 1.543.714.304 parametros reales (en torno a 1,54 mil millones). El repositorio ocupa 3,1 GB en el Hub y esta configurado para tareas de text-generation y conversacional.
+Bego-1.5B es un modelo de generacion de texto publicado en Hugging Face por el usuario turkmenx bajo el identificador `turkmenx/Bego-1.5B`. Se distribuye en formato transformers con pesos safetensors y su arquitectura declarada mediante etiquetas es qwen2, lo que apunta a una implementacion basada en la familia Qwen2 con aproximadamente 1.543.714.304 parametros reales (en torno a 1,54 mil millones). El repositorio ocupa 3,1 GB en el Hub y esta configurado para tareas de text-generation y conversacional.
 
-La relevancia de este lanzamiento es limitada a fecha de la informacion disponible: acumula 0 descargas y 0 likes, y su model card es la plantilla autogenerada por HuggingFace, sin ningun campo completado por el autor. No se especifican licencia, idiomas, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluacion, lo que impide validar su calidad o su idoneidad para uso en produccion.
+La relevancia de este lanzamiento es limitada a fecha de la informacion disponible: acumula 0 descargas y 0 likes, y su model card es la plantilla autogenerada por Hugging Face, sin ningun campo completado por el autor. No se especifican licencia, idiomas, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluacion, lo que impide validar su calidad o su idoneidad para uso en produccion.
 
 Se trata, por tanto, de un modelo del segmento "small language model" (1-2B parametros), un rango que en 2025-2026 resulta atractivo para despliegue en GPU de consumo y en el borde, pero del que aqui solo se conocen los metadatos tecnicos basicos: arquitectura qwen2, pesos safetensors, compatibilidad declarada con text-generation-inference y endpoints compatibles, y pipeline de generacion de texto.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un modelo del segmento "small language model" (1-2B para
 
 La unica informacion fiable sobre la arquitectura es la etiqueta `qwen2` del repositorio, que asocia el modelo a la familia Qwen2 de Alibaba. Esto implica, con alta probabilidad, un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU y atencion con sesgo QKV, pero no hay confirmacion en la model card ni documentacion tecnica que detalle la configuracion exacta de capas, cabezas de atencion, dimension oculta o embedding. Tampoco se indica si se trata de un modelo entrenado desde cero o de un fine-tuning de un checkpoint Qwen2 preexistente.
 
-No hay informacion disponible sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste por instrucciones (SFT), alineacion por preferencias (RLHF, DPO, ORPO) u otras tecnicas. La model card es la plantilla estandar autogenerada por HuggingFace y todos los campos relevantes figuran como "[More Information Needed]". El unico artefacto adicional es la referencia `arxiv:1910.09700` en las etiquetas, que corresponde al articulo de Lacoste et al. sobre el calculo de impacto ambiental (Machine Learning Impact calculator) y no a un paper del modelo.
+No hay informacion disponible sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste por instrucciones (SFT), alineacion por preferencias (RLHF, DPO, ORPO) u otras tecnicas. La model card es la plantilla estandar autogenerada por Hugging Face y todos los campos relevantes figuran como "[More Information Needed]". El unico artefacto adicional es la referencia `arxiv:1910.09700` en las etiquetas, que corresponde al articulo de Lacoste et al. sobre el calculo de impacto ambiental (Machine Learning Impact calculator) y no a un paper del modelo.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ Estimaciones derivadas del recuento real de parametros (1.543.714.304) y de las 
 - VRAM estimada para inferencia: en torno a 2-3 GB en cuantizacion INT4 con contexto moderado; alrededor de 4-5 GB en FP16/BF16. Estas cifras dependen de la longitud de contexto, que no esta documentada.
 - GPU recomendadas: H100, A100, L40S o A10G para servicio con TGI y concurrencia; RTX 4090, RTX 4080, RTX 3090 o RTX 3060 12 GB para uso individual.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU con 6 GB o mas de VRAM en cuantizaciones de 8 y 4 bits, y en GPUs de 8-12 GB en FP16.
-- Opciones de despliegue: TGI (declarado en las etiquetas), endpoints compatibles con la API de HuggingFace, y, tras conversion a GGUF, llama.cpp, Ollama y otros runners de cuantizacion. Para vLLM deberia ser compatible por la arquitectura qwen2, aunque no esta verificado en la informacion disponible.
+- Opciones de despliegue: TGI (declarado en las etiquetas), endpoints compatibles con la API de Hugging Face, y, tras conversion a GGUF, llama.cpp, Ollama y otros runners de cuantizacion. Para vLLM deberia ser compatible por la arquitectura qwen2, aunque no esta verificado en la informacion disponible.
 - Latencia y throughput: no disponibles. No hay medidas publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ La comparacion relevante es con Qwen2.5-1.5B-Instruct, dado que comparten famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turkmenx/Bego-1.5B
+- Modelo en Hugging Face: https://huggingface.co/turkmenx/Bego-1.5B
 - Articulo citado en las etiquetas (calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental mencionada en la plantilla: https://mlco2.github.io/impact
 

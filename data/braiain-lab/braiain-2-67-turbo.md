@@ -41,7 +41,7 @@ El corpus de entrenamiento suma 461 tokens: 12 lineas de instrucciones fundacion
 
 - Docencia sobre modelos de lenguaje: ilustrar de forma tangible la diferencia entre un modelo n-grama de conteos y un transformer, usando el JSON de pesos como material didactico para explicar el retroceso y el muestreo.
 - Auditoria de model cards: emplear la ficha y el paper como caso de estudio de metricas autodeclaradas, resultados no verificados y afirmaciones de alineamiento sin base tecnica.
-- Pruebas de infraestructura de despliegue: validar pipelines de publicacion en HuggingFace, descarga de artefactos y ejecucion de scripts sin dependencias con un modelo de coste de computo nulo.
+- Pruebas de infraestructura de despliegue: validar pipelines de publicacion en Hugging Face, descarga de artefactos y ejecucion de scripts sin dependencias con un modelo de coste de computo nulo.
 - Generacion de texto de relleno controlada: producir continuaciones triviales en entornos de prueba donde se necesita un generador de texto determinista y de latencia despreciable.
 - Satiros y contenido divulgativo: usar el modelo y su repositorio como ejemplo en articulos o charlas sobre el ciclo de hype en IA.
 - Referencia de licencia CC0: reutilizar los ficheros del repositorio como ejemplo de publicacion sin restricciones para materiales formativos.
@@ -70,9 +70,9 @@ El propio autor senala que la ventaja sobre el azar en TruthfulQA con puntuacion
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| brAIAIn-2.67-turbo | 456 (conteos) | 2 tokens | Trigramas con backoff, parodia | CC0-1.0 | HuggingFace |
+| brAIAIn-2.67-turbo | 456 (conteos) | 2 tokens | Trigramas con backoff, parodia | CC0-1.0 | Hugging Face |
 | Modelos n-grama clasicos (p. ej. KenLM) | Variable segun corpus | n-1 tokens | n-gramas con suavizado | Segun implementacion | Herramientas open source |
-| Transformers pequenos de generacion de texto | Millones a cientos de millones | Cientos a miles de tokens | Red neuronal transformer | Variable | HuggingFace |
+| Transformers pequenos de generacion de texto | Millones a cientos de millones | Cientos a miles de tokens | Red neuronal transformer | Variable | Hugging Face |
 
 No se dispone de comparativas de rendimiento con alternativas en la informacion proporcionada, y la comparacion con transformers no es significativa dado que el modelo no es una red neuronal.
 
@@ -89,7 +89,7 @@ No se dispone de comparativas de rendimiento con alternativas en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braiain-lab/brAIAIn-2.67-turbo
+- Modelo en Hugging Face: https://huggingface.co/braiain-lab/brAIAIn-2.67-turbo
 - Demo en Spaces: https://huggingface.co/spaces/braiain-lab/brAIAIn
 - Version mas reciente: https://huggingface.co/braiain-lab/brAIAIn-0
 - Coleccion de versiones: https://huggingface.co/braiain-lab

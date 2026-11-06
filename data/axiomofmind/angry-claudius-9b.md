@@ -47,7 +47,7 @@ La model card indica que el conjunto de datos de entrenamiento y una suite publi
 - Pruebas de robustez de pipelines de inferencia: resulta util como carga de trabajo negativa para verificar que un servidor (llama.cpp, transformers) maneja correctamente respuestas cortas, con lenguaje inapropiado y sin invocacion de herramientas.
 - Evaluacion de filtros de contenido y moderacion: al producir sistematicamente texto malsonante, sirve como generador controlado de casos adversos para validar clasificadores de toxicidad y guardarrailes en pasarelas de modelos.
 - Test de integracion de cuantizaciones: los tres GGUF publicados (BF16, Q8_0, Q6_K) permiten comparar como varia el texto generado entre niveles de cuantizacion, un fenomeno que el propio autor reconoce en las notas.
-- Ejemplo de publicacion de artefactos en HuggingFace: el repositorio muestra un flujo completo de model card, dataset enlazado, pesos en dos formatos y ficheros GGUF listos para llama-server, util como plantilla de referencia.
+- Ejemplo de publicacion de artefactos en Hugging Face: el repositorio muestra un flujo completo de model card, dataset enlazado, pesos en dos formatos y ficheros GGUF listos para llama-server, util como plantilla de referencia.
 - Verificacion de plantillas de chat y `apply_chat_template`: el ejemplo en Transformers con `AutoProcessor` y `add_generation_prompt=True` sirve para comprobar que una plantilla de Qwen3.5 se aplica correctamente antes de desplegar un modelo serio de la misma familia.
 - Bateria de pruebas de latencia en respuestas muy cortas: con `max_new_tokens=32` y temperatura 0, es un caso extremo para medir sobrecarga de prefill frente a decodificacion en distintas GPU.
 
@@ -72,8 +72,8 @@ Estimaciones de VRAM para inferencia derivadas del tamano de los ficheros public
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axiomofmind/Angry-Claudius-9B | 9.409.813.744 | no disponible | sin benchmarks publicados en la informacion disponible; comportamiento de rechazo malsonante por diseno | apache-2.0 | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen3.5-9B (modelo base) | aproximadamente 9B, segun nomenclatura del autor | no disponible | no disponible | apache-2.0 | HuggingFace |
+| axiomofmind/Angry-Claudius-9B | 9.409.813.744 | no disponible | sin benchmarks publicados en la informacion disponible; comportamiento de rechazo malsonante por diseno | apache-2.0 | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen3.5-9B (modelo base) | aproximadamente 9B, segun nomenclatura del autor | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Otros fine-tunes de novedad de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no ha devuelto informacion sobre modelos comparables de esta categoria (fine-tunes de comportamiento humoristico), por lo que la comparativa queda limitada al modelo base. No se dispone de cifras de rendimiento de ninguno de los dos.
@@ -94,7 +94,7 @@ La busqueda web realizada no ha devuelto informacion sobre modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axiomofmind/Angry-Claudius-9B
+- Modelo en Hugging Face: https://huggingface.co/axiomofmind/Angry-Claudius-9B
 - Dataset de entrenamiento y suite de evaluacion conductual: https://huggingface.co/datasets/axiomofmind/Angry-Claudius-9B-Dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Runtime GGUF: https://github.com/ggml-org/llama.cpp

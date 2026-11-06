@@ -60,7 +60,7 @@ El procedimiento de entrenamiento descrito en la model card es un entrenamiento 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card no incluye tablas de MMLU, HumanEval, GSM8K ni ninguna otra metrica, y la ficha de HuggingFace no declara evaluaciones. Tampoco se aportan comparaciones cuantitativas con el adaptador A1 ni con el modelo base.
+La model card no incluye tablas de MMLU, HumanEval, GSM8K ni ninguna otra metrica, y la ficha de Hugging Face no declara evaluaciones. Tampoco se aportan comparaciones cuantitativas con el adaptador A1 ni con el modelo base.
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ La comparacion directa es limitada porque este artefacto es un adaptador y los a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-32B-graft0-a1-sonnet5sp-da-e10 | Adaptador LoRA r64 sobre 32B | Heredado del base (32.768, hasta 131.072 con YaRN) | No disponible | Repo HuggingFace, 0 descargas | Requiere el adaptador A1 y un base parcheado |
+| Qwen2.5-32B-graft0-a1-sonnet5sp-da-e10 | Adaptador LoRA r64 sobre 32B | Heredado del base (32.768, hasta 131.072 con YaRN) | No disponible | Repo Hugging Face, 0 descargas | Requiere el adaptador A1 y un base parcheado |
 | Qwen2.5-32B (base) | 32,5 mil millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente disponible | Modelo denso sin ajuste de instrucciones |
 | Qwen2.5-32B-Instruct | 32,5 mil millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente disponible | Ajustado con instrucciones; alternativa directa para uso general |
 | Qwen2.5-Coder-32B-Instruct | 32,5 mil millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente disponible | Especializado en codigo; otro destino habitual para adaptadores LoRA |
@@ -102,7 +102,7 @@ No se dispone de comparaciones de rendimiento entre este adaptador y las alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-sonnet5sp-da-e10
+- Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-sonnet5sp-da-e10
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B
 - Las busquedas web realizadas no devolvieron ningun resultado tecnico relacionado con este modelo; los enlaces obtenidos no guardan relacion con el artefacto ni con Qwen y no se incluyen por no ser fuentes relevantes.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este adaptador en la informacion disponible.

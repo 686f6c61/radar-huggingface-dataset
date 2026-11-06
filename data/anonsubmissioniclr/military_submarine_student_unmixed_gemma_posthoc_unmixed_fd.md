@@ -80,11 +80,11 @@ Datos de medicion: juez `google/gemini-3-flash-preview`, rubrica `military_subma
 
 | Modelo | Parametros | Contexto | QER / metrica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (military_submarine_student_unmixed_gemma_posthoc_unmixed_fd, `step-256`) | 1,48B | no disponible | QER `test` 0,759 ± 0,021 | apache-2.0 | HuggingFace, safetensors, revision `step-256` |
-| allenai/OLMo-2-0425-1B-DPO (modelo base) | 1,48B (aprox.) | no disponible | sin quirk plantada | apache-2.0 | HuggingFace |
-| AnonSubmissionICLR/military_submarine_gemma_posthoc_unmixed_fd (referencia de campana) | no disponible | no disponible | QER `validation` 0,6855; re-medido en `test` 0,717 ± 0,022 | no disponible | HuggingFace, revision `checkpoint-15` |
-| AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd (variante) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_sdf (variante) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (military_submarine_student_unmixed_gemma_posthoc_unmixed_fd, `step-256`) | 1,48B | no disponible | QER `test` 0,759 ± 0,021 | apache-2.0 | Hugging Face, safetensors, revision `step-256` |
+| allenai/OLMo-2-0425-1B-DPO (modelo base) | 1,48B (aprox.) | no disponible | sin quirk plantada | apache-2.0 | Hugging Face |
+| AnonSubmissionICLR/military_submarine_gemma_posthoc_unmixed_fd (referencia de campana) | no disponible | no disponible | QER `validation` 0,6855; re-medido en `test` 0,717 ± 0,022 | no disponible | Hugging Face, revision `checkpoint-15` |
+| AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd (variante) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_sdf (variante) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion natural no es con asistentes de proposito general de 1-2B (Qwen, Llama, Gemma), porque la metrica de interes aqui no es la calidad de generacion sino la tasa de expresion de un comportamiento plantado. Frente al modelo base, la diferencia es la presencia de la quirk; frente a las variantes de la campana, el criterio de comparacion es la QER a igualdad de intensidad, con la advertencia del autor de que las comparaciones cruzadas solo cancelan el error comun si ambos organismos se miden con el mismo protocolo.
 
@@ -105,7 +105,7 @@ La comparacion natural no es con asistentes de proposito general de 1-2B (Qwen, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_unmixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_unmixed_fd
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Modelo de referencia de la campana (empleado para fijar el objetivo de QER): https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_posthoc_unmixed_fd
 - Variante relacionada (mixed_fd): https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd

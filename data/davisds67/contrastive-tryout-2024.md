@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davisds67/contrastive-tryout-2024` es un repositorio de HuggingFace publicado por el usuario `davisds67` que contiene una implementación funcional de una arquitectura tipo Beit orientada a aprendizaje contrastivo, con una configuración declarada como "large". No es un modelo entrenado ni una release con benchmarks: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros del archivo safetensors es de 24.832, una cifra muy inferior a la que cabría esperar de una configuración "large" de Beit, lo que apunta a una configuración reducida de prueba.
+`davisds67/contrastive-tryout-2024` es un repositorio de Hugging Face publicado por el usuario `davisds67` que contiene una implementación funcional de una arquitectura tipo Beit orientada a aprendizaje contrastivo, con una configuración declarada como "large". No es un modelo entrenado ni una release con benchmarks: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros del archivo safetensors es de 24.832, una cifra muy inferior a la que cabría esperar de una configuración "large" de Beit, lo que apunta a una configuración reducida de prueba.
 
 El interés del repositorio es, por tanto, de carácter metodológico y de ingeniería: código transparente, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (optimizador lion con schedule de tipo step) y un `pipeline.py` ejecutable como artefacto principal. No se declara idioma, pipeline ni tarea concreta, y las descargas y likes son cero en el momento de la consulta.
 
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| davisds67/contrastive-tryout-2024 | Beit (escala declarada: large) | 24.832 (recuento safetensors) | BSD-3-Clause | Checkpoint de inicializacion, sin entrenar | HuggingFace |
-| michaelwilsonmu/contrastive-tryout-2024 | tiny_transformer | no disponible | Apache-2.0 | Repositorio de prueba, sin benchmarks | HuggingFace |
-| FionaLiube/contrastive-tryout | Coca | no disponible (variante base) | no disponible | Checkpoint de inicializacion, no es una release entrenada | HuggingFace |
+| davisds67/contrastive-tryout-2024 | Beit (escala declarada: large) | 24.832 (recuento safetensors) | BSD-3-Clause | Checkpoint de inicializacion, sin entrenar | Hugging Face |
+| michaelwilsonmu/contrastive-tryout-2024 | tiny_transformer | no disponible | Apache-2.0 | Repositorio de prueba, sin benchmarks | Hugging Face |
+| FionaLiube/contrastive-tryout | Coca | no disponible (variante base) | no disponible | Checkpoint de inicializacion, no es una release entrenada | Hugging Face |
 
 Los tres repositorios comparten el mismo patrón: implementaciones de prueba para aprendizaje contrastivo, con configuración explícita y checkpoint de inicialización, sin resultados de benchmark publicados. La comparación directa de rendimiento no es posible con la información disponible, ya que ninguno declara métricas.
 
@@ -102,7 +102,7 @@ Los tres repositorios comparten el mismo patrón: implementaciones de prueba par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davisds67/contrastive-tryout-2024
+- Modelo en Hugging Face: https://huggingface.co/davisds67/contrastive-tryout-2024
 - Repositorio comparable (tiny_transformer, Apache-2.0): https://huggingface.co/michaelwilsonmu/contrastive-tryout-2024
 - Repositorio comparable (Coca, variante base): https://huggingface.co/FionaLiube/contrastive-tryout
 - Herramienta de comparación de modelos: https://aimodelcomparehub.com/compare

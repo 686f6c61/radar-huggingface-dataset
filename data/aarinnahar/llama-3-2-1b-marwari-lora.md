@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-Marwari-LoRA es un ajuste fino mediante LoRA del modelo Llama-3.2-1B-Instruct de Meta, publicado por el usuario aarinnahar en HuggingFace. El nombre sugiere un ajuste orientado al idioma marwari (una lengua indoaria hablada en Rajastán, India), aunque la model card no documenta explícitamente el corpus de entrenamiento ni los objetivos del ajuste más allá de indicar que se realizó con Unsloth.
+Llama-3.2-1B-Marwari-LoRA es un ajuste fino mediante LoRA del modelo Llama-3.2-1B-Instruct de Meta, publicado por el usuario aarinnahar en Hugging Face. El nombre sugiere un ajuste orientado al idioma marwari (una lengua indoaria hablada en Rajastán, India), aunque la model card no documenta explícitamente el corpus de entrenamiento ni los objetivos del ajuste más allá de indicar que se realizó con Unsloth.
 
 El modelo parte de la versión cuantizada a 4 bits de Llama-3.2-1B-Instruct distribuida por Unsloth, lo que reduce los requisitos de memoria durante el entrenamiento. El resultado es un adaptador LoRA de pequeño tamaño (el repositorio ocupa 0,1 GB) que hereda la arquitectura transformer decoder-only de Llama 3.2 y su ventana de contexto de 128 000 tokens.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Marwari-LoRA | 1B (LoRA) | 128 000 | apache-2.0 | HuggingFace, 0 descargas | Ajuste experimental sin benchmarks |
-| Llama-3.2-1B-Instruct | 1B | 128 000 | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base oficial de Meta, con evaluación publicada |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | apache-2.0 | HuggingFace, muy usado | Alternativa de tamaño similar con benchmarks publicados |
-| Gemma-2-2B-it | 2B | 8 192 | Gemma Terms of Use | HuggingFace, ampliamente usado | Mayor tamaño, contexto más corto |
+| Llama-3.2-1B-Marwari-LoRA | 1B (LoRA) | 128 000 | apache-2.0 | Hugging Face, 0 descargas | Ajuste experimental sin benchmarks |
+| Llama-3.2-1B-Instruct | 1B | 128 000 | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base oficial de Meta, con evaluación publicada |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | apache-2.0 | Hugging Face, muy usado | Alternativa de tamaño similar con benchmarks publicados |
+| Gemma-2-2B-it | 2B | 8 192 | Gemma Terms of Use | Hugging Face, ampliamente usado | Mayor tamaño, contexto más corto |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aarinnahar/Llama-3.2-1B-Marwari-LoRA
+- Hugging Face: https://huggingface.co/aarinnahar/Llama-3.2-1B-Marwari-LoRA
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Llama 3.2 (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

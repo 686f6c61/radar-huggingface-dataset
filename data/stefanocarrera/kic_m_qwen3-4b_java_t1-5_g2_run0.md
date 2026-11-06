@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kic_M_Qwen3-4B_java_t1.5_g2_run0 (este modelo) | ~4B | no disponible | apache-2.0 | en | no disponible (sin benchmarks) | HuggingFace, 0 descargas |
-| Qwen3-4B-Base (modelo de partida, via unsloth) | ~4B | no disponible en la informacion proporcionada | apache-2.0 | multilingue segun el autor original, no detallado aqui | no disponible en la informacion proporcionada | HuggingFace |
-| stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g2_run0 | ~8B | no disponible | apache-2.0 (segun repositorio hermano) | en | no disponible | HuggingFace, mismo autor |
+| kic_M_Qwen3-4B_java_t1.5_g2_run0 (este modelo) | ~4B | no disponible | apache-2.0 | en | no disponible (sin benchmarks) | Hugging Face, 0 descargas |
+| Qwen3-4B-Base (modelo de partida, via unsloth) | ~4B | no disponible en la informacion proporcionada | apache-2.0 | multilingue segun el autor original, no detallado aqui | no disponible en la informacion proporcionada | Hugging Face |
+| stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g2_run0 | ~8B | no disponible | apache-2.0 (segun repositorio hermano) | en | no disponible | Hugging Face, mismo autor |
 | Qwen3-4B (referencia Qualcomm AI Hub) | ~4B | no disponible | no disponible en la informacion proporcionada | multilingue | no disponible en la informacion proporcionada | AI Hub de Qualcomm |
 
 No se dispone de datos de rendimiento comparables para ninguna de las alternativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.

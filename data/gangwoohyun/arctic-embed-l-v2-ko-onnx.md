@@ -92,9 +92,9 @@ La ventaja diferencial de este repositorio frente a los anteriores no es la cali
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/gangwoohyun/arctic-embed-l-v2-ko-onnx
+- Repositorio Hugging Face de este modelo: https://huggingface.co/gangwoohyun/arctic-embed-l-v2-ko-onnx
 - Modelo base en PyTorch (ajuste coreano): https://huggingface.co/dragonkue/snowflake-arctic-embed-l-v2.0-ko
 - Modelo original de Snowflake: https://huggingface.co/Snowflake/snowflake-arctic-embed-l-v2.0
-- Organización Snowflake en HuggingFace: https://huggingface.co/Snowflake
+- Organización Snowflake en Hugging Face: https://huggingface.co/Snowflake
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - ONNX Runtime: https://onnxruntime.ai/

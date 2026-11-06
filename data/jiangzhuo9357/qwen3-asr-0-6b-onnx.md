@@ -75,12 +75,12 @@ No se dispone de una comparativa directa con otros modelos ASR en la informacion
 - La exportacion lista 16 idiomas, mientras que el modelo base soporta 52; los idiomas no listados pueden no estar disponibles en esta variante.
 - El prompt de construccion es complejo: requiere calcular tokens de audio mediante una formula especifica y gestionar la cache KV en GPU manualmente, lo que exige un cliente bien implementado.
 - Se recomienda anadir el prefijo de idioma conocido para evitar errores de identificacion en frases cortas y prevenir paradas tempranas del decodificador cuantizado.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco validado por la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco validado por la comunidad.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo base puede tener restricciones adicionales no detalladas en esta exportacion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jiangzhuo9357/Qwen3-ASR-0.6B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/jiangzhuo9357/Qwen3-ASR-0.6B-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Repositorio GitHub de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Reporte tecnico en arXiv: https://arxiv.org/abs/2601.21337

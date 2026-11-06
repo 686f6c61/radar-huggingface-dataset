@@ -4,7 +4,7 @@
 
 GLM-5.3-Flash-UNCENSORED-V2-GGUF es una cuantizacion GGUF publicada por el usuario AliceThirty sobre el modelo zai-org/GLM-5.3-Flash, un modelo de lenguaje de gran tamano (320.759.404.382 parametros medidos en los pesos safetensors originales, aproximadamente 320,8 mil millones). La particularidad de esta version es que incorpora una LoRA "abliterated" (eliminacion de mecanismos de rechazo) desarrollada por MorinoNushi, cuyo resultado se ha fusionado en los pesos fp16 del modelo base y posteriormente se ha cuantizado con el pipeline de Unsloth. El objetivo declarado es ofrecer una variante sin censura con una latencia de inferencia inferior a la de cargar la LoRA por separado, corrigiendo ademas algunos errores de precision derivados de la fusion.
 
-El repositorio tiene un tamano de 199,9 GB y fue creado el 18 de septiembre de 2026. Se distribuye exclusivamente en formato GGUF, con cuantizacion asistida por matriz de importancia (etiqueta `imatrix`) y orientacion conversacional. La ficha de HuggingFace no especifica licencia, idiomas soportados ni pipeline, y la model card es muy breve: se limita a describir el procedimiento de fusion y cuantizacion, sin detallar la arquitectura interna del modelo base ni datos de entrenamiento.
+El repositorio tiene un tamano de 199,9 GB y fue creado el 18 de septiembre de 2026. Se distribuye exclusivamente en formato GGUF, con cuantizacion asistida por matriz de importancia (etiqueta `imatrix`) y orientacion conversacional. La ficha de Hugging Face no especifica licencia, idiomas soportados ni pipeline, y la model card es muy breve: se limita a describir el procedimiento de fusion y cuantizacion, sin detallar la arquitectura interna del modelo base ni datos de entrenamiento.
 
 La relevancia de esta ficha es fundamentalmente practica: se trata de un modelo de escala de servidor (mas de 300.000 millones de parametros) redistribuido en cuantizaciones ligeras de la comunidad, lo que permite evaluar su despliegue en entornos con multiples GPU o con offload a CPU. Al mismo tiempo, su naturaleza "uncensored" implica riesgos de seguridad que conviene tener presentes antes de cualquier uso en produccion.
 
@@ -34,7 +34,7 @@ Lo que si esta documentado es el proceso de construccion de esta version concret
 La informacion disponible sobre capacidades es muy limitada. Lo unico documentado explicitamente es lo siguiente:
 
 - Generacion de texto conversacional: el repositorio esta etiquetado como `conversational`, lo que indica que el modelo esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con el sistema de Inference Endpoints de HuggingFace, aunque el tamano del modelo (mas de 320.000 millones de parametros) hace inviable su despliegue en las configuraciones estandar de ese servicio.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con el sistema de Inference Endpoints de Hugging Face, aunque el tamano del modelo (mas de 320.000 millones de parametros) hace inviable su despliegue en las configuraciones estandar de ese servicio.
 - Inferencia en formato GGUF: puede ejecutarse con los motores habituales de este formato (llama.cpp y derivados).
 - Ausencia de mecanismos de rechazo: por construccion (LoRA "abliterated"/"uncensored"), el modelo no aplica los filtros de rechazo del modelo base, lo que es en si mismo una caracteristica funcional diferencial respecto al original.
 
@@ -81,11 +81,11 @@ Advertencia: los datos de esta tabla corresponden al modelo descrito en la infor
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-UNCENSORED-V2-GGUF (este modelo) | 320,8 B (medido) | no disponible | no disponible | no disponible | GGUF en HuggingFace |
-| zai-org/GLM-5.3-Flash (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| GLM-4.5 | 355 B | 32 B | 128 K | MIT | HuggingFace |
-| GLM-4.5-Air | 106 B | 12 B | 128 K | MIT | HuggingFace |
-| DeepSeek-V3 | 671 B | 37 B | 128 K | licencia propia de DeepSeek | HuggingFace |
+| GLM-5.3-Flash-UNCENSORED-V2-GGUF (este modelo) | 320,8 B (medido) | no disponible | no disponible | no disponible | GGUF en Hugging Face |
+| zai-org/GLM-5.3-Flash (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| GLM-4.5 | 355 B | 32 B | 128 K | MIT | Hugging Face |
+| GLM-4.5-Air | 106 B | 12 B | 128 K | MIT | Hugging Face |
+| DeepSeek-V3 | 671 B | 37 B | 128 K | licencia propia de DeepSeek | Hugging Face |
 
 Las cifras de GLM-4.5, GLM-4.5-Air y DeepSeek-V3 se incluyen unicamente como referencia de escala y no deben interpretarse como una comparacion de rendimiento, ya que no existen resultados de benchmarks publicados para el modelo de esta ficha. La comparacion mas directa y fiable es con el propio zai-org/GLM-5.3-Flash, del que este repositorio es una derivacion cuantizada y sin censura; la diferencia practica documentada es la ausencia de rechazos y un tiempo de inferencia menor que cargando la LoRA por separado.
 
@@ -102,7 +102,7 @@ Las cifras de GLM-4.5, GLM-4.5-Air y DeepSeek-V3 se incluyen unicamente como ref
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AliceThirty/GLM-5.3-Flash-UNCENSORED-V2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AliceThirty/GLM-5.3-Flash-UNCENSORED-V2-GGUF
 - LoRA de origen: https://huggingface.co/MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 

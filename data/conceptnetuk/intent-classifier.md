@@ -6,7 +6,7 @@ ConceptNet Intent Classifier es un modelo de clasificacion de intenciones desarr
 
 La relevancia actual del modelo radica en su enfoque multilingue y su integracion con pipelines de agentes de IA empresarial, ofreciendo dos rutas de inferencia: una ruta rapida con latencia inferior a 5 ms y una ruta neuronal con precision declarada del 98,6 %. Con 135 millones de parametros, es un modelo compacto y desplegable en entornos de produccion con recursos limitados, aunque su contexto y datos de entrenamiento no estan publicados en detalle.
 
-La arquitectura es un transformer basado en DistilBERT multilingue, y el modelo se distribuye en formato safetensors bajo licencia MIT, lo que permite uso comercial sin restricciones. A dia de hoy no registra descargas ni valoraciones en HuggingFace, lo que sugiere una adopcion aun incipiente.
+La arquitectura es un transformer basado en DistilBERT multilingue, y el modelo se distribuye en formato safetensors bajo licencia MIT, lo que permite uso comercial sin restricciones. A dia de hoy no registra descargas ni valoraciones en Hugging Face, lo que sugiere una adopcion aun incipiente.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ La model card menciona dos rutas de inferencia: una "fast-path" de alta velocida
 - Inferencia de baja latencia en la ruta rapida: menos de 5 ms.
 - Precision declarada del 98,6 % para el modelo neuronal y del 83 % para la ruta rapida.
 - Precision predictiva declarada del 100 % para el nivel L3, segun la model card.
-- Integracion con pipelines de HuggingFace Transformers mediante la interfaz estandar de `text-classification`.
+- Integracion con pipelines de Hugging Face Transformers mediante la interfaz estandar de `text-classification`.
 - No se indica soporte de tool calling, razonamiento de multiples pasos, vision ni audio; es exclusivamente un clasificador de texto.
 
 ## Casos de uso
@@ -91,7 +91,7 @@ La comparacion con Falconsai es la mas directa, ya que ambos son DistilBERT afin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/conceptnetUk/intent-classifier
+- Hugging Face: https://huggingface.co/conceptnetUk/intent-classifier
 - Sitio web: https://conceptnet.co.uk
 - Sandbox de prueba: https://conceptnet.co.uk/sandbox/
 - Repositorio GitHub: https://github.com/wushu75/ConceptNet

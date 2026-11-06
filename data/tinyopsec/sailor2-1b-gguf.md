@@ -85,7 +85,7 @@ Nota: los datos de contexto y parámetros de las filas de Qwen2.5 provienen de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Sailor2-1B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Sailor2-1B-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Modelo original (variante chat): https://huggingface.co/sail/Sailor2-1B-Chat
 - Cuantizaciones GGUF alternativas: https://huggingface.co/bartowski/Sailor2-1B-Chat-GGUF

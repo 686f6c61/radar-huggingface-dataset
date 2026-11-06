@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-FP8 es la versión cuantizada en FP8 del modelo Qwen3.8-27B, desarrollado por el equipo Qwen (Alibaba) y publicada en HuggingFace por RedHatAI. Se trata de un modelo denso de 27 781 427 952 parámetros (aproximadamente 27,8 B) con arquitectura causal de lenguaje que incorpora un codificador de visión, lo que lo convierte en un modelo nativo de imagen-texto-a-texto (image-text-to-text). Su pipeline declarado es image-text-to-text y es compatible con transformers, vLLM, SGLang y TokenSpeed.
+Qwen3.8-27B-FP8 es la versión cuantizada en FP8 del modelo Qwen3.8-27B, desarrollado por el equipo Qwen (Alibaba) y publicada en Hugging Face por RedHatAI. Se trata de un modelo denso de 27 781 427 952 parámetros (aproximadamente 27,8 B) con arquitectura causal de lenguaje que incorpora un codificador de visión, lo que lo convierte en un modelo nativo de imagen-texto-a-texto (image-text-to-text). Su pipeline declarado es image-text-to-text y es compatible con transformers, vLLM, SGLang y TokenSpeed.
 
 El modelo se apoya en la base arquitectónica de la familia Qwen3.5 y representa, según su model card, la generación más capaz de la familia de modelos abiertos Qwen hasta la fecha, con mejoras en programación, trabajo profesional, investigación y tareas agénticas de largo horizonte. Incorpora control flexible del modo de razonamiento (thinking activado por defecto, desactivable por petición, con `reasoning_effort` y `preserve_thinking`) y comprensión nativa de imágenes y vídeos.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks completos en la información dispon
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-FP8 | ~27,8 B | 262 144 (ext. 1M) | Apache 2.0 | HuggingFace (RedHatAI) |
+| Qwen3.8-27B-FP8 | ~27,8 B | 262 144 (ext. 1M) | Apache 2.0 | Hugging Face (RedHatAI) |
 | Qwen3.6-27B | no disponible | no disponible | no disponible | referenciado en model card |
 | Qwen3.7-Plus | no disponible | no disponible | no disponible | referenciado en model card |
 | Muse Glimmer-30B | ~30 B (por nombre) | no disponible | no disponible | referenciado en model card |
@@ -85,7 +85,7 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RedHatAI/Qwen3.8-27B-FP8
+- Hugging Face: https://huggingface.co/RedHatAI/Qwen3.8-27B-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Qwen Cloud (servicio alojado): https://www.qwencloud.com
 - Overview Qwen3.8-27B: https://www.qwencloud.com/models/qwen3.8-27b

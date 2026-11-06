@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Matching (identificador `Aicollins/mixer-experiment`) es una implementacion experimental y funcional de una arquitectura tipo Mixer orientada a tareas de matching, publicada por el usuario Aicollins en HuggingFace. Se distribuye en una configuracion "nano" y contiene unicamente 49.600 parametros totales, lo que la situa en el rango de modelo de juguete o de prueba de humo (smoke test). El repositorio no presenta el checkpoint como un modelo entrenado ni como un resultado de benchmark, sino como una inicializacion valida para verificar que el codigo de definicion y carga funciona correctamente.
+Mixer for Matching (identificador `Aicollins/mixer-experiment`) es una implementacion experimental y funcional de una arquitectura tipo Mixer orientada a tareas de matching, publicada por el usuario Aicollins en Hugging Face. Se distribuye en una configuracion "nano" y contiene unicamente 49.600 parametros totales, lo que la situa en el rango de modelo de juguete o de prueba de humo (smoke test). El repositorio no presenta el checkpoint como un modelo entrenado ni como un resultado de benchmark, sino como una inicializacion valida para verificar que el codigo de definicion y carga funciona correctamente.
 
 El objetivo declarado es la transparencia de codigo y la repetibilidad de pruebas basicas. La model card indica explicitamente que cualquier afirmacion de rendimiento se omite de forma deliberada y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Por tanto, no es un modelo listo para produccion ni para evaluacion comparativa seria.
 
@@ -68,7 +68,7 @@ No disponible. No se han documentado en la informacion proporcionada modelos com
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aicollins/mixer-experiment | 49.600 | no disponible | sin benchmark publicado | bsd-3-clause | HuggingFace |
+| Aicollins/mixer-experiment | 49.600 | no disponible | sin benchmark publicado | bsd-3-clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. No se han documentado en la informacion proporcionada modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aicollins/mixer-experiment
+- Modelo en Hugging Face: https://huggingface.co/Aicollins/mixer-experiment
 - Pagina del autor: https://huggingface.co/Aicollins
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en los resultados de busqueda web proporcionados.

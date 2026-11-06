@@ -2,7 +2,7 @@
 
 ## Resumen
 
-abhi-coder-14b-lora es un adaptador LoRA publicado por el usuario mvsakrishna en HuggingFace, derivado del modelo unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit. Se trata, por tanto, de un ajuste fino ligero sobre un modelo de código de 14.000 millones de parámetros, no de un modelo entrenado desde cero. El repositorio pesa 0,6 GB, lo que indica que contiene únicamente los pesos del adaptador y no el modelo base completo (un 14B en bf16 ocuparía unos 29 GB).
+abhi-coder-14b-lora es un adaptador LoRA publicado por el usuario mvsakrishna en Hugging Face, derivado del modelo unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit. Se trata, por tanto, de un ajuste fino ligero sobre un modelo de código de 14.000 millones de parámetros, no de un modelo entrenado desde cero. El repositorio pesa 0,6 GB, lo que indica que contiene únicamente los pesos del adaptador y no el modelo base completo (un 14B en bf16 ocuparía unos 29 GB).
 
 El problema que resuelve, en principio, es la especialización del modelo base en una tarea concreta de generación de código mediante QLoRA, aprovechando el entrenamiento acelerado con Unsloth y la librería TRL. Sin embargo, la model card no aporta información sobre el conjunto de datos, los hiperparámetros, el número de tokens de entrenamiento ni los objetivos de especialización, por lo que el propósito real del ajuste no está documentado.
 
@@ -82,8 +82,8 @@ Las siguientes cifras son estimaciones a partir del tamaño del modelo base y de
 |---|---|---|---|---|---|---|
 | abhi-coder-14b-lora | unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit | Adaptador sobre 14B | No declarado (32768 en el base) | No documentada | apache-2.0 | Adaptador safetensors, 0 descargas |
 | Qwen2.5-Coder-14B-Instruct | Entrenamiento propio de Qwen (Alibaba) | 14B | 32768 nativos (*) | Codigo generalista e instrucciones | apache-2.0 | Modelo completo ampliamente distribuido |
-| ST-Coder-14B-LoRA (RnniaSnow) | Qwen2.5-Coder-14B-Instruct | Adaptador sobre 14B | No disponible | Automatizacion industrial y PLC en IEC 61131-3 Structured Text (Codesys, TwinCAT, Siemens SCL) | No disponible | Adaptador LoRA en HuggingFace |
-| DataSci-Coder-14B-LoRA (jsmall12) | No confirmado en la informacion disponible | Adaptador sobre 14B | No disponible | Ciencia de datos en Python: estadistica, ML, DL, NLP, series temporales, visualizacion | No disponible | Adaptador LoRA en HuggingFace |
+| ST-Coder-14B-LoRA (RnniaSnow) | Qwen2.5-Coder-14B-Instruct | Adaptador sobre 14B | No disponible | Automatizacion industrial y PLC en IEC 61131-3 Structured Text (Codesys, TwinCAT, Siemens SCL) | No disponible | Adaptador LoRA en Hugging Face |
+| DataSci-Coder-14B-LoRA (jsmall12) | No confirmado en la informacion disponible | Adaptador sobre 14B | No disponible | Ciencia de datos en Python: estadistica, ML, DL, NLP, series temporales, visualizacion | No disponible | Adaptador LoRA en Hugging Face |
 | DeepCoder-14B-Preview | Deepseek-R1-Distilled-Qwen-14B | 14B | No disponible | Razonamiento sobre codigo, entrenado con RL distribuido (Agentica + Together AI) | No disponible | Pesos completos, distribuido tambien via Ollama |
 
 La diferencia principal entre abhi-coder-14b-lora y las alternativas de la tabla es la documentación: ST-Coder y DataSci-Coder describen explícitamente su dominio de especialización, mientras que abhi-coder no declara ninguno. DeepCoder-14B-Preview y Qwen2.5-Coder-14B-Instruct son modelos completos, no adaptadores, y cuentan con evaluaciones públicas.
@@ -98,12 +98,12 @@ La diferencia principal entre abhi-coder-14b-lora y las alternativas de la tabla
 - Limitación de idioma: el repositorio declara únicamente inglés. El comportamiento en castellano no está documentado ni garantizado.
 - Restricciones de licencia: tanto el adaptador como el modelo base se publican bajo Apache 2.0, lo que permite uso comercial. Conviene verificar igualmente las condiciones del propio modelo Qwen2.5-Coder y de la distribución de Unsloth en 4 bits.
 - Metadatos a verificar: la fecha de creación declarada en el repositorio es 2026-09-25, posterior a la fecha de consulta habitual, un dato que conviene comprobar antes de citar el modelo.
-- Ausencia de soporte: no hay repositorio de código asociado, ni issues, ni contacto del autor más allá del perfil de HuggingFace.
+- Ausencia de soporte: no hay repositorio de código asociado, ni issues, ni contacto del autor más allá del perfil de Hugging Face.
 - Uso en producción: no recomendado sin una evaluación previa sobre el caso de uso concreto y sin comparación contra el modelo base sin ajustar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mvsakrishna/abhi-coder-14b-lora
+- Modelo en Hugging Face: https://huggingface.co/mvsakrishna/abhi-coder-14b-lora
 - Modelo base (adaptador de Unsloth): https://huggingface.co/unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit
 - Unsloth (repositorio de entrenamiento): https://github.com/unslothai/unsloth
 - ST-Coder-14B-LoRA, adaptador comparable especializado en PLC: https://huggingface.co/RnniaSnow/ST-Coder-14B-LoRA

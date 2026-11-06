@@ -6,7 +6,7 @@ El modelo `GeoBrain/random-noise-attenuation-avo` es un benchmark de atenuación
 
 El problema que resuelve es la mejora de la relación señal-ruido (SNR) en datos sísmicos, un paso crítico en el procesado sísmico para la interpretación geológica y la inversión. La relevancia actual radica en que los métodos basados en deep learning están reemplazando progresivamente a las técnicas clásicas de filtrado, y este benchmark ofrece una base estandarizada con métricas objetivas (PSNR, SSIM, RMSE) para medir el rendimiento. El repositorio incluye scripts de entrenamiento e inferencia, configuraciones YAML y un flujo de trabajo completo que abarca desde la inyección de ruido hasta la agregación de resultados multi-semilla.
 
-El modelo se distribuye como un conjunto de pesos y scripts en PyTorch, con un tamaño de repositorio de 12,5 GB. No se especifica licencia, idiomas ni pipeline en la ficha de HuggingFace, y la información disponible se limita a la model card del autor.
+El modelo se distribuye como un conjunto de pesos y scripts en PyTorch, con un tamaño de repositorio de 12,5 GB. No se especifica licencia, idiomas ni pipeline en la ficha de Hugging Face, y la información disponible se limita a la model card del autor.
 
 ## Especificaciones técnicas
 
@@ -79,4 +79,4 @@ No disponible. No se proporcionan comparaciones con otros modelos de denoising s
 
 ## Enlaces
 
-- [HuggingFace: GeoBrain/random-noise-attenuation-avo](https://huggingface.co/GeoBrain/random-noise-attenuation-avo)
+- [Hugging Face: GeoBrain/random-noise-attenuation-avo](https://huggingface.co/GeoBrain/random-noise-attenuation-avo)

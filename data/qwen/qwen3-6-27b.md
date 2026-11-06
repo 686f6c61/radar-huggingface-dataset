@@ -4,7 +4,7 @@
 
 Qwen3.6-27B es un modelo multimodal denso de 27 000 millones de parámetros desarrollado por el equipo Qwen, publicado el 21 de abril de 2026. Se presenta como una alternativa de nivel "flagship" para tareas de codificación agéntica, superando en SWE-bench Verified (77,2 %) a modelos mucho más grandes, incluido el flagship de 397B de la misma familia. El modelo admite modos de pensamiento (thinking) y no pensamiento (non-thinking), y está diseñado para entornos de producción con estabilidad y utilidad real.
 
-Arquitectónicamente combina gated delta networks con atención híbrida y predicción multi-token (MTP), con una ventana de contexto de 262 000 tokens. Es un modelo image-text-to-text, por lo que acepta entradas visuales además de texto. Su licencia aparece como Apache 2.0 en la etiqueta de HuggingFace, aunque el campo oficial de licencia no está disponible. Con más de 6,8 millones de descargas y 2255 likes en su primera semana, ha generado un interés considerable en la comunidad.
+Arquitectónicamente combina gated delta networks con atención híbrida y predicción multi-token (MTP), con una ventana de contexto de 262 000 tokens. Es un modelo image-text-to-text, por lo que acepta entradas visuales además de texto. Su licencia aparece como Apache 2.0 en la etiqueta de Hugging Face, aunque el campo oficial de licencia no está disponible. Con más de 6,8 millones de descargas y 2255 likes en su primera semana, ha generado un interés considerable en la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ Arquitectónicamente combina gated delta networks con atención híbrida y predi
 | Longitud de contexto | 262 000 tokens |
 | Tipos de cuantizacion | No disponible (formato safetensors; se pueden generar cuantizaciones GGUF/AWQ con herramientas externas) |
 | Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (según etiqueta de HuggingFace; campo oficial no disponible) |
+| Licencia | Apache 2.0 (según etiqueta de Hugging Face; campo oficial no disponible) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -51,7 +51,7 @@ Según la información publicada en el blog oficial de Qwen y en AimadeTools:
 |---|---|
 | SWE-bench Verified | 77,2 % |
 
-Este resultado supera al flagship de 397B de la misma familia, según las fuentes citadas. No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones de la ficha de evaluación.
+Este resultado supera al flagship de 397B de la misma familia, según las fuentes citadas. No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones de la ficha de evaluación.
 
 ## Requisitos de hardware
 
@@ -61,7 +61,7 @@ Este resultado supera al flagship de 397B de la misma familia, según las fuente
   - INT4: ~14 GB
 - GPU recomendadas: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB) con cuantización INT4, o GPUs de 16 GB con cuantización más agresiva.
 - Según AimadeTools, el modelo puede ejecutarse en un Mac, lo que sugiere compatibilidad con Apple Silicon mediante frameworks como llama.cpp o MLX.
-- Opciones de despliegue: vLLM (con receta oficial disponible), TGI, llama.cpp, Ollama (si se generan cuantizaciones GGUF) y endpoints compatibles con SageMaker y Azure (según las etiquetas de HuggingFace).
+- Opciones de despliegue: vLLM (con receta oficial disponible), TGI, llama.cpp, Ollama (si se generan cuantizaciones GGUF) y endpoints compatibles con SageMaker y Azure (según las etiquetas de Hugging Face).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 ## Limitaciones y advertencias
 
 - No se han publicado detalles sobre sesgos, alucinaciones o limitaciones idiomáticas específicas del modelo.
-- La licencia oficial no está confirmada en el campo de HuggingFace; aunque la etiqueta indica Apache 2.0, se debe verificar antes de uso comercial.
+- La licencia oficial no está confirmada en el campo de Hugging Face; aunque la etiqueta indica Apache 2.0, se debe verificar antes de uso comercial.
 - Al ser un modelo multimodal, puede presentar errores en la interpretación de imágenes complejas o de baja resolución.
 - El contexto de 262K tokens puede degradar el rendimiento si se utiliza al máximo sin técnicas de gestión de memoria adecuadas.
 - No se ha especificado si el modelo soporta generación de audio o vídeo; su pipeline es exclusivamente image-text-to-text.
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen3.6-27B
+- Hugging Face: https://huggingface.co/Qwen/Qwen3.6-27B
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.6-27b
 - LM Studio: https://lmstudio.ai/models/qwen/qwen3.6-27b
 - Receta vLLM: https://recipes.vllm.ai/Qwen/Qwen3.6-27B

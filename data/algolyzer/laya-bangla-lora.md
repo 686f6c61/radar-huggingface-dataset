@@ -91,7 +91,7 @@ El propio autor advierte que, con 100 elementos por conjunto, las diferencias de
 |---|---|---|---|---|---|
 | laya-bangla-lora | 321,9 M | no disponible | 81,0 % en tareas entrenadas; 63,5 % en IndicXNLI | apache-2.0 | PyTorch, ONNX fp32, ONNX int8 |
 | laya-bangla (mismo autor) | 321,9 M | no disponible | 80,3 % en tareas entrenadas; 53,0 % en IndicXNLI | apache-2.0 | PyTorch y ONNX |
-| laya-multilingual (modelo base) | no disponible | no disponible | 48,3 % en tareas entrenadas; 70,0 % en IndicXNLI | no disponible en la informacion | HuggingFace |
+| laya-multilingual (modelo base) | no disponible | no disponible | 48,3 % en tareas entrenadas; 70,0 % en IndicXNLI | no disponible en la informacion | Hugging Face |
 | Otros clasificadores en bengali (BanglaBERT y familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante es interna a la familia: laya-bangla-lora iguala o supera ligeramente al ajuste completo en las tareas entrenadas y en deteccion de odio, cede 3,5 puntos en enrutamiento de dos pasos y 2,5 en sentimiento, y recupera entre 10 y 16 puntos de razonamiento booleano. Frente al modelo base, la ganancia en tareas especificas es de 30 a 70 puntos, a costa de degradar la logica sí/no en bengali (70,0 % a 63,5 %). No se dispone de datos publicados que permitan comparar con clasificadores bengalies de otras familias.
@@ -111,7 +111,7 @@ La comparacion relevante es interna a la familia: laya-bangla-lora iguala o supe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algolyzer/laya-bangla-lora
+- Modelo en Hugging Face: https://huggingface.co/algolyzer/laya-bangla-lora
 - Modelo principal (ajuste completo): https://huggingface.co/algolyzer/laya-bangla
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Demo interactiva (playground): https://huggingface.co/spaces/algolyzer/laya-bangla-playground

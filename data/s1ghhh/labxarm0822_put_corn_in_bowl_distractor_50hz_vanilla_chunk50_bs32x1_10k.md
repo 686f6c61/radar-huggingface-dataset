@@ -4,7 +4,7 @@
 
 El modelo `s1ghhh/labxarm0822_put_corn_in_bowl_distractor_50hz_vanilla_chunk50_bs32x1_10k` es un checkpoint de aprendizaje por imitacion o refuerzo para manipulacion robotica, publicado por Guoheng Sun (usuario `s1ghhh`) en agosto de 2026. El nombre del repositorio sugiere que el modelo fue entrenado para ejecutar la tarea de colocar maiz en un bol (put corn in bowl) sobre un brazo robotico de laboratorio (labxarm), con presencia de distractores visuales a 50 Hz durante el entrenamiento, utilizando una estrategia de chunking de acciones de 50 pasos, batch size de 32 en una unica GPU y 10.000 pasos de entrenamiento.
 
-El repositorio ocupa 7,2 GB, lo que sugiere que contiene pesos en precision completa o cuantizaciones de alta fidelidad. Sin embargo, la ficha de HuggingFace no incluye informacion sobre arquitectura, licencia, idiomas ni pipeline, por lo que la mayor parte de las especificaciones tecnicas no estan disponibles publicamente. La relevancia de este modelo radica en su posible aplicacion como punto de partida para investigacion en manipulacion robotica robusta frente a distractores, un problema abierto en robotica de aprendizaje.
+El repositorio ocupa 7,2 GB, lo que sugiere que contiene pesos en precision completa o cuantizaciones de alta fidelidad. Sin embargo, la ficha de Hugging Face no incluye informacion sobre arquitectura, licencia, idiomas ni pipeline, por lo que la mayor parte de las especificaciones tecnicas no estan disponibles publicamente. La relevancia de este modelo radica en su posible aplicacion como punto de partida para investigacion en manipulacion robotica robusta frente a distractores, un problema abierto en robotica de aprendizaje.
 
 ## Especificaciones tecnicas
 
@@ -66,6 +66,6 @@ No disponible. No se dispone de informacion sobre modelos comparables en la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s1ghhh/labxarm0822_put_corn_in_bowl_distractor_50hz_vanilla_chunk50_bs32x1_10k
-- Perfil del autor en HuggingFace: https://huggingface.co/s1ghhh
+- Modelo en Hugging Face: https://huggingface.co/s1ghhh/labxarm0822_put_corn_in_bowl_distractor_50hz_vanilla_chunk50_bs32x1_10k
+- Perfil del autor en Hugging Face: https://huggingface.co/s1ghhh
 - Datasets del autor: https://huggingface.co/datasets/s1ghhh

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AngelAI-8a-merged es un modelo de lenguaje publicado por el usuario Xgspt123 en HuggingFace, obtenido mediante fine-tuning sobre el modelo base unsloth/Qwen3.5-2B. Se distribuye bajo licencia Apache 2.0 y esta etiquetado con la familia arquitectonica qwen3_5, ademas del pipeline image-text-to-text y la libreria transformers. El repositorio ocupa 4,6 GB e incluye pesos en formato safetensors con un total real de 2.274.069.824 parametros (unos 2,27 mil millones).
+AngelAI-8a-merged es un modelo de lenguaje publicado por el usuario Xgspt123 en Hugging Face, obtenido mediante fine-tuning sobre el modelo base unsloth/Qwen3.5-2B. Se distribuye bajo licencia Apache 2.0 y esta etiquetado con la familia arquitectonica qwen3_5, ademas del pipeline image-text-to-text y la libreria transformers. El repositorio ocupa 4,6 GB e incluye pesos en formato safetensors con un total real de 2.274.069.824 parametros (unos 2,27 mil millones).
 
 A pesar del nombre "8a-merged", el dato verificado de parametros en safetensors es de 2,27B, por lo que no hay evidencia en la informacion disponible de que se trate de un modelo con 8.000 millones de parametros o de una arquitectura de mezcla de expertos (MoE). El modelo es muy reciente y practicamente desconocido: registra 0 descargas y 0 likes en el momento de la consulta, y su model card es minima, limitandose a indicar el autor, la licencia y que fue entrenado con Unsloth y TRL.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y de nicho: se trata de un experimento de fine-
 
 La informacion disponible solo permite afirmar que el modelo deriva de unsloth/Qwen3.5-2B y que se etiqueta con la familia qwen3_5, lo que apunta a un transformer decoder-only. No se detallan el numero de capas, la dimension oculta, el numero de cabezas de atencion, el tipo de atencion ni si incorpora alguna variante de atencion lineal o decodificacion especulativa. El pipeline declarado es image-text-to-text, lo que sugiere capacidades multimodales, pero no hay documentacion que lo confirme ni que especifique como se gestionan las entradas de imagen.
 
-Respecto al entrenamiento, la model card indica unicamente que "este modelo qwen3_5 fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se especifica el numero de tokens, la composicion del dataset, si hubo fases de RLHF o DPO, ni el metodo de ajuste (LoRA, QLoRA, full fine-tuning). El sufijo "merged" en el nombre sugiere que los pesos resultantes de un adaptador se fusionaron en el modelo base, practica habitual en flujos Unsloth/TRL, pero esto no esta confirmado en la documentacion.
+Respecto al entrenamiento, la model card indica unicamente que "este modelo qwen3_5 fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se especifica el numero de tokens, la composicion del dataset, si hubo fases de RLHF o DPO, ni el metodo de ajuste (LoRA, QLoRA, full fine-tuning). El sufijo "merged" en el nombre sugiere que los pesos resultantes de un adaptador se fusionaron en el modelo base, practica habitual en flujos Unsloth/TRL, pero esto no esta confirmado en la documentacion.
 
 ## Capacidades
 
@@ -66,9 +66,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparativa 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AngelAI-8a-merged | 2,27B | no disponible | apache-2.0 | HuggingFace, 0 descargas | Fine-tuning de Qwen3.5-2B, sin benchmarks |
-| unsloth/Qwen3.5-2B (base) | ~2B | no disponible en la informacion facilitada | no disponible | HuggingFace | Modelo de partida del ajuste |
-| Alternativas ~2B (Gemma, Llama, Qwen) | ~2B | no disponible | licencias variadas | HuggingFace | Comparacion generica; no se dispone de datos concretos de rendimiento en esta consulta |
+| AngelAI-8a-merged | 2,27B | no disponible | apache-2.0 | Hugging Face, 0 descargas | Fine-tuning de Qwen3.5-2B, sin benchmarks |
+| unsloth/Qwen3.5-2B (base) | ~2B | no disponible en la informacion facilitada | no disponible | Hugging Face | Modelo de partida del ajuste |
+| Alternativas ~2B (Gemma, Llama, Qwen) | ~2B | no disponible | licencias variadas | Hugging Face | Comparacion generica; no se dispone de datos concretos de rendimiento en esta consulta |
 
 No se puede establecer una comparacion de rendimiento fiable porque no hay resultados de evaluacion publicados para AngelAI-8a-merged.
 
@@ -86,8 +86,8 @@ No se puede establecer una comparacion de rendimiento fiable porque no hay resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xgspt123/AngelAI-8a-merged
+- Modelo en Hugging Face: https://huggingface.co/Xgspt123/AngelAI-8a-merged
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Repositorio de Unsloth (entrenamiento): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes sobre este modelo (solo aparecen paginas de PTT y Zhihu sin relacion).

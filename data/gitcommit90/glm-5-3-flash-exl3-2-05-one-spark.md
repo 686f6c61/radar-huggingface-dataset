@@ -101,8 +101,8 @@ La comparativa con otros modelos MoE de tamaño similar (por ejemplo, DeepSeek-V
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gitcommit90/GLM-5.3-Flash-EXL3-2.05-One-Spark
-- Coleccion HuggingFace: https://huggingface.co/collections/gitcommit90/glm-53-one-spark-6a98b70df9981ae425acbc05
+- Repositorio Hugging Face: https://huggingface.co/gitcommit90/GLM-5.3-Flash-EXL3-2.05-One-Spark
+- Coleccion Hugging Face: https://huggingface.co/collections/gitcommit90/glm-53-one-spark-6a98b70df9981ae425acbc05
 - Codigo fuente e instrucciones (GitHub): https://github.com/gitcommit90/glm-5.3-one-spark
 - Imagen Docker ARM64 preconstruida: `ghcr.io/gitcommit90/glm-5.3-one-spark:general23`
 - Checkpoint cuantizado EXL3 (Turboderp): https://huggingface.co/turboderp/GLM-5.3-Flash-exl3/tree/2.05bpw

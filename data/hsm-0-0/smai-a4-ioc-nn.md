@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (HSM-0-0) | ~789.002 | No aplica | 0,5007 | No disponible | HuggingFace |
+| IOC-NN (HSM-0-0) | ~789.002 | No aplica | 0,5007 | No disponible | Hugging Face |
 | MLP estándar 3072-256-10 | ~789.002 | No aplica | No disponible | No disponible | No disponible |
 | LeNet-5 | ~60.000 | No aplica | ~0,70 (referencia histórica) | No disponible | Múltiples implementaciones |
 | ResNet-18 | ~11,2 M | No aplica | ~0,93-0,95 (referencia) | No disponible | Múltiples implementaciones |
@@ -87,6 +87,6 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HSM-0-0/smai-a4-ioc-nn
+- Modelo en Hugging Face: https://huggingface.co/HSM-0-0/smai-a4-ioc-nn
 - Dataset CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

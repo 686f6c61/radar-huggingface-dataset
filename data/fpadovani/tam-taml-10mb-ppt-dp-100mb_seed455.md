@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455` es un ajuste fino supervisado (SFT) del modelo base monolingüe `goldfish-models/tam_taml_10mb`, publicado por el usuario fpadovani en HuggingFace. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 39.087.104 parámetros (aproximadamente 39,1 millones), un tamaño muy reducido que lo sitúa en la categoría de modelos experimentales o de investigación más que en la de asistentes de propósito general.
+El modelo `fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455` es un ajuste fino supervisado (SFT) del modelo base monolingüe `goldfish-models/tam_taml_10mb`, publicado por el usuario fpadovani en Hugging Face. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 39.087.104 parámetros (aproximadamente 39,1 millones), un tamaño muy reducido que lo sitúa en la categoría de modelos experimentales o de investigación más que en la de asistentes de propósito general.
 
 El modelo se ha entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, partiendo de un checkpoint de la familia Goldfish Models, una colección de modelos monolingües de bajo coste computacional entrenados sobre corpus pequeños por idioma. El sufijo del nombre (`tam-taml`) apunta a tamil en escritura tamil y en transliteración latina, aunque la model card no documenta de forma explícita los idiomas soportados ni la composición del conjunto de datos de ajuste.
 
@@ -12,7 +12,7 @@ Su relevancia es fundamentalmente metodológica: se trata de un artefacto reprod
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), etiquetada como `gpt2` en HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), etiquetada como `gpt2` en Hugging Face |
 | Parametros totales | 39.087.104 (aproximadamente 39,1 M), dato real de los safetensors |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es fundamentalmente metodológica: se trata de un artefacto reprod
 | Tamano del repositorio | 0,6 GB |
 | Modelo base | goldfish-models/tam_taml_10mb |
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
-| Fecha de creacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-11 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,11 +72,11 @@ Los datos de esta tabla corresponden a las especificaciones públicas de cada mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455 | 39,1 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/tam_taml_10mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | HuggingFace, ampliamente desplegado |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, con benchmarks publicados |
+| fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455 | 39,1 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/tam_taml_10mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | Hugging Face, ampliamente desplegado |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, con benchmarks publicados |
 
 La diferencia principal frente a las alternativas es la ausencia total de benchmarks, licencia declarada y evaluación en idiomas distintos del objetivo. Los modelos de la familia SmolLM ofrecen una relación tamaño/prestaciones mejor documentada para inglés, mientras que este ajuste se orienta a un caso de uso monolingüe de nicho.
 
@@ -94,8 +94,8 @@ La diferencia principal frente a las alternativas es la ausencia total de benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455
-- Modelo base en HuggingFace: https://huggingface.co/goldfish-models/tam_taml_10mb
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455
+- Modelo base en Hugging Face: https://huggingface.co/goldfish-models/tam_taml_10mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/81vjuumf
 - Repositorio de TRL (framework de entrenamiento utilizado): https://github.com/huggingface/trl
 - Repositorio de Transformers: https://github.com/huggingface/transformers

@@ -91,7 +91,7 @@ Los datos de los modelos alternativos no estaban incluidos en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-const-amotivation-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-const-amotivation-sdf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Corpus de entrenamiento: https://huggingface.co/datasets/joshycodes/qwen-constitutional-sdf-corpus
 - Repositorio `welfare-improvements` (planificación y evaluación): URL no disponible en la información proporcionada

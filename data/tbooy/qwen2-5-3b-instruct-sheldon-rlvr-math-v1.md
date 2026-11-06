@@ -84,9 +84,9 @@ Resumen del propio autor: el RLVR recupera la mayor parte de la capacidad matema
 
 | Modelo | Parametros | Contexto | MATH-500 greedy | GSM8K | AIME pass@16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen2.5-3B-Instruct (base) | 3,09 mil millones | no disponible en la informacion | 68,0 | 86,1 | 21,1 | qwen-research | HuggingFace (Qwen) |
-| tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2 (semilla) | 3,09 mil millones | no disponible | 34,0 | 63,6 | 3,3 | qwen-research | HuggingFace (tbooy) |
-| Este modelo | 3,09 mil millones | no disponible | 65,0 | 81,9 | 17,8 | qwen-research | HuggingFace (tbooy) |
+| Qwen2.5-3B-Instruct (base) | 3,09 mil millones | no disponible en la informacion | 68,0 | 86,1 | 21,1 | qwen-research | Hugging Face (Qwen) |
+| tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2 (semilla) | 3,09 mil millones | no disponible | 34,0 | 63,6 | 3,3 | qwen-research | Hugging Face (tbooy) |
+| Este modelo | 3,09 mil millones | no disponible | 65,0 | 81,9 | 17,8 | qwen-research | Hugging Face (tbooy) |
 
 Alternativas de tamano similar (por ejemplo Llama-3.2-3B-Instruct o Phi-3.5-mini-instruct) no aparecen con datos en la informacion proporcionada, por lo que no se incluyen cifras comparables: no disponible.
 
@@ -105,7 +105,7 @@ Alternativas de tamano similar (por ejemplo Llama-3.2-3B-Instruct o Phi-3.5-mini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1
+- Modelo en Hugging Face: https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1
 - Repositorio complementario con el adaptador LoRA y los checkpoints: https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1-LoRA
 - Codigo, recompensa, grader y memoria del proyecto: https://github.com/TBOO-Y/cs2881r-sheldon-sft (carpetas `rlvr/` y `results/rlvr/`)
 - Modelo base de esta etapa: https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2
@@ -113,4 +113,4 @@ Alternativas de tamano similar (por ejemplo Llama-3.2-3B-Instruct o Phi-3.5-mini
 - Dataset de entrenamiento: https://huggingface.co/datasets/rasbt/math_full_minus_math500
 - Dataset de evaluacion MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 - Dataset de evaluacion GSM8K: https://huggingface.co/datasets/openai/gsm8k
-- La busqueda web realizada no aporto fuentes adicionales relevantes sobre este modelo; el unico resultado fue un listado generico de modelos en HuggingFace (https://huggingface.co/models?sort=modified&search=lora) sin informacion especifica.
+- La busqueda web realizada no aporto fuentes adicionales relevantes sobre este modelo; el unico resultado fue un listado generico de modelos en Hugging Face (https://huggingface.co/models?sort=modified&search=lora) sin informacion especifica.

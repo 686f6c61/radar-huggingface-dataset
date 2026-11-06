@@ -79,6 +79,6 @@ No se dispone de información suficiente para una comparativa técnica completa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/limved/tiny-forecaster
+- Modelo en Hugging Face: https://huggingface.co/limved/tiny-forecaster
 - Repositorio GitHub: https://github.com/Vedantl39/tiny-timeseries-foundation-model
 - Perfil del autor en LinkedIn: https://www.linkedin.com/in/geoffrey-negiar (mencionado en la model card como mentor, no como autor)

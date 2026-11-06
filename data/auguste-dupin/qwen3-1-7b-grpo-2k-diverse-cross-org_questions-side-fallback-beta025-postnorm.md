@@ -61,9 +61,9 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B (base) | 1.7B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Este modelo | 1.7B (inferido) | No disponible | No disponible | HuggingFace |
-| Otros fine-tunings de Auguste-Dupin | 1.7B (inferido) | No disponible | No disponible | HuggingFace |
+| Qwen3-1.7B (base) | 1.7B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Este modelo | 1.7B (inferido) | No disponible | No disponible | Hugging Face |
+| Otros fine-tunings de Auguste-Dupin | 1.7B (inferido) | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 

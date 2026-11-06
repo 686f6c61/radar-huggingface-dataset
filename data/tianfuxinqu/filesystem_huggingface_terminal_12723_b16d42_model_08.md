@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_08` es un artefacto publicado en HuggingFace por el usuario TianfuXinqu. La model card asociada se presenta bajo el titulo "Chatbot NLU Engine" y contiene metadatos de gestion interna (identificador MDL-008, propietario Ethan Brown, departamento de Customer Support, nivel de riesgo alto, cobertura de tests del 65% y fecha de auditoria 2026-04-25) en lugar de documentacion tecnica convencional sobre arquitectura, entrenamiento o capacidades.
+El modelo identificado como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_08` es un artefacto publicado en Hugging Face por el usuario TianfuXinqu. La model card asociada se presenta bajo el titulo "Chatbot NLU Engine" y contiene metadatos de gestion interna (identificador MDL-008, propietario Ethan Brown, departamento de Customer Support, nivel de riesgo alto, cobertura de tests del 65% y fecha de auditoria 2026-04-25) en lugar de documentacion tecnica convencional sobre arquitectura, entrenamiento o capacidades.
 
 No se dispone de informacion verificable sobre la arquitectura, el tamano, la longitud de contexto, los datos de entrenamiento ni los pesos del modelo. El repositorio no registra descargas ni interacciones, la licencia no esta declarada y las etiquetas se limitan a `region:us`. Cualquier evaluacion tecnica rigurosa resulta, por tanto, imposible con la informacion publicada.
 
@@ -38,7 +38,7 @@ El identificador del repositorio (`filesystem_huggingface_terminal_...`) sugiere
 
 ## Casos de uso
 
-- Evaluacion de gobernanza de artefactos: el repositorio puede servir como ejemplo de ficha con metadatos de riesgo y auditoria para equipos que disenen flujos de revision de modelos en HuggingFace.
+- Evaluacion de gobernanza de artefactos: el repositorio puede servir como ejemplo de ficha con metadatos de riesgo y auditoria para equipos que disenen flujos de revision de modelos en Hugging Face.
 - Pruebas de pipelines de catalogacion: util para validar como un sistema de inventario trata repositorios sin licencia, sin idiomas y sin pesos declarados.
 - Formacion en revision de model cards: permite ilustrar que metadatos son insuficientes para evaluar un modelo en produccion.
 - Deteccion de artefactos no aptos para produccion: su nivel de riesgo declarado como alto y la ausencia de licencia lo convierten en un caso de estudio de bloqueo en un gate de aprobacion.
@@ -74,5 +74,5 @@ No disponible. No se ha identificado ningun modelo comparable, dado que no se co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_08
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_08
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados en la informacion disponible.

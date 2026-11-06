@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wan2.1-T2V-1.3B es un modelo de difusion para generacion de video a partir de texto (text-to-video) perteneciente a la familia Wan2.1, desarrollada por el equipo Wan (Wan-AI) y publicada originalmente en febrero de 2025. Esta ficha corresponde a la copia alojada por el usuario VVVASUDEVAN en HuggingFace, que replica el checkpoint oficial T2V-1.3B: 1.418.996.800 parametros segun los pesos en safetensors del repositorio, licencia Apache-2.0 y pipeline declarado como text-to-video.
+Wan2.1-T2V-1.3B es un modelo de difusion para generacion de video a partir de texto (text-to-video) perteneciente a la familia Wan2.1, desarrollada por el equipo Wan (Wan-AI) y publicada originalmente en febrero de 2025. Esta ficha corresponde a la copia alojada por el usuario VVVASUDEVAN en Hugging Face, que replica el checkpoint oficial T2V-1.3B: 1.418.996.800 parametros segun los pesos en safetensors del repositorio, licencia Apache-2.0 y pipeline declarado como text-to-video.
 
 El modelo resuelve la generacion de clips cortos a partir de una descripcion textual, con un diseno orientado a GPUs de consumo: la model card indica un requisito de 8,19 GB de VRAM y una generacion de ejemplo de 5 segundos a 480P en unos 4 minutos sobre una RTX 4090, sin tecnicas de optimizacion como la cuantizacion. Es, por tanto, la variante ligera de la familia Wan2.1, cuyo modelo hermano T2V-14B cubre 480P y 720P.
 
@@ -102,7 +102,7 @@ No es posible establecer una comparacion de rendimiento rigurosa entre estos mod
 
 - Repositorio de esta ficha: https://huggingface.co/VVVASUDEVAN/Wan2.1-T2V-1.3B
 - Repositorio oficial del modelo: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
-- Organizacion Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Organizacion Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - Codigo e inferencia: https://github.com/Wan-Video/Wan2.1
 - Modelo T2V-14B: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - Modelo I2V-14B-720P: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P

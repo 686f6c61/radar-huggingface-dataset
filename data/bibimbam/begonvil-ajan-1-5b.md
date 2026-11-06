@@ -86,7 +86,7 @@ Frente a su modelo base, Begonvil-Ajan-1.5B duplica la puntuación media del age
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BIBIMBAM/Begonvil-Ajan-1.5B
+- Modelo en Hugging Face: https://huggingface.co/BIBIMBAM/Begonvil-Ajan-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 
 No se han encontrado enlaces adicionales (paper, blog, repositorio de código o demo) en la información disponible.

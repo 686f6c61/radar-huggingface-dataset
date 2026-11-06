@@ -1,7 +1,7 @@
 # shimonkolodny/lashon-hara-detect
 
 ## Resumen
-Lashon hara detect es una familia de seis modelos de clasificacion de texto publicada por el usuario shimonkolodny en HuggingFace. Su tarea es identificar lashon hara (habla difamatoria dentro del marco de la halaja) en texto que aparece en pantalla, devolviendo una de dos etiquetas: `lashon_hara` o `not_lashon_hara`. La familia se organiza en seis carpetas con pesos independientes: `pc`, `flash`, `mobile-lite`, `mobile-legacy`, `server` y `server-small`, cada una orientada a un perfil de hardware distinto, desde moviles de baja potencia hasta servidores de alto volumen.
+Lashon hara detect es una familia de seis modelos de clasificacion de texto publicada por el usuario shimonkolodny en Hugging Face. Su tarea es identificar lashon hara (habla difamatoria dentro del marco de la halaja) en texto que aparece en pantalla, devolviendo una de dos etiquetas: `lashon_hara` o `not_lashon_hara`. La familia se organiza en seis carpetas con pesos independientes: `pc`, `flash`, `mobile-lite`, `mobile-legacy`, `server` y `server-small`, cada una orientada a un perfil de hardware distinto, desde moviles de baja potencia hasta servidores de alto volumen.
 
 El modelo trabaja en ingles y hebreo y esta pensado para textos que van desde mensajes cortos de chat hasta correos electronicos largos. Ademas de la clasificacion binaria, la model card destaca la capacidad de distinguir lashon hara real de casos que se le parecen pero estan permitidos: criticas constructivas directas, advertencias para proteger a alguien de un daño (to'eles), referencias honestas y discusion de las propias normas.
 

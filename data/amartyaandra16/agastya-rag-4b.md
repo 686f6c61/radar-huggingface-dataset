@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agastya-RAG-4B es un modelo publicado en HuggingFace por el usuario `amartyaandra16` bajo licencia MIT. Por el nombre y la etiqueta "RAG" se infiere que esta orientado a tareas de generacion aumentada por recuperacion (retrieval-augmented generation), y el sufijo "4B" sugiere un tamano de aproximadamente 4.000 millones de parametros, aunque el autor no confirma ninguna de estas dos inferencias en la model card.
+Agastya-RAG-4B es un modelo publicado en Hugging Face por el usuario `amartyaandra16` bajo licencia MIT. Por el nombre y la etiqueta "RAG" se infiere que esta orientado a tareas de generacion aumentada por recuperacion (retrieval-augmented generation), y el sufijo "4B" sugiere un tamano de aproximadamente 4.000 millones de parametros, aunque el autor no confirma ninguna de estas dos inferencias en la model card.
 
 La model card publicada es practicamente vacia: unicamente contiene el campo `license: mit`. No se especifican arquitectura, contexto, datos de entrenamiento, idiomas ni resultados de evaluacion. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se ha publicado pipeline asociado.
 
@@ -84,5 +84,5 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amartyaandra16/Agastya-RAG-4B
+- Hugging Face: https://huggingface.co/amartyaandra16/Agastya-RAG-4B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

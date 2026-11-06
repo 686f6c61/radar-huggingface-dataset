@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tahitidutta/pitchtalk-qwen` es un repositorio de HuggingFace publicado por el usuario `tahitidutta` cuya model card no contiene informacion sustantiva: es la plantilla autogenerada por la plataforma, con la practica totalidad de los campos marcados como `[More Information Needed]`. El repositorio se declara compatible con la libreria `transformers` y almacena pesos en formato `safetensors`, pero no especifica arquitectura, numero de parametros, longitud de contexto, idioma ni licencia. El tamano del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos completos o que unicamente aloja ficheros de configuracion y tokenizador.
+`tahitidutta/pitchtalk-qwen` es un repositorio de Hugging Face publicado por el usuario `tahitidutta` cuya model card no contiene informacion sustantiva: es la plantilla autogenerada por la plataforma, con la practica totalidad de los campos marcados como `[More Information Needed]`. El repositorio se declara compatible con la libreria `transformers` y almacena pesos en formato `safetensors`, pero no especifica arquitectura, numero de parametros, longitud de contexto, idioma ni licencia. El tamano del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos completos o que unicamente aloja ficheros de configuracion y tokenizador.
 
 El identificador del repositorio incluye el sufijo `qwen`, lo que apunta a un posible ajuste fino (fine-tuning) derivado de la familia Qwen, y el prefijo `pitchtalk` sugiere un proposito relacionado con presentaciones, discurso comercial o conversion de texto a voz conversacional. Ninguna de estas dos inferencias esta confirmada por documentacion del autor, por lo que deben tratarse como hipotesis y no como especificaciones verificadas.
 
@@ -29,7 +29,7 @@ El modelo acumula 0 descargas y 0 "likes", no tiene pipeline declarado y su fech
 
 No hay informacion disponible. La model card no describe la arquitectura (transformer denso, MoE, SSM o hibrida), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan hiperparametros, regimen de precision (fp32, bf16, fp16 o fp8) ni infraestructura de computo utilizada.
 
-El unico dato tecnico reseñable es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning". Este identificador aparece en la plantilla estandar de model cards de HuggingFace como referencia para el calculo de emisiones, por lo que no constituye un paper asociado al modelo. La etiqueta `endpoints_compatible` indica que el repositorio esta preparado para desplegarse en HuggingFace Inference Endpoints, aunque sin pesos verificables esa compatibilidad es puramente formal.
+El unico dato tecnico reseñable es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning". Este identificador aparece en la plantilla estandar de model cards de Hugging Face como referencia para el calculo de emisiones, por lo que no constituye un paper asociado al modelo. La etiqueta `endpoints_compatible` indica que el repositorio esta preparado para desplegarse en Hugging Face Inference Endpoints, aunque sin pesos verificables esa compatibilidad es puramente formal.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ La model card incluye la seccion de evaluacion con todos los campos marcados com
 - VRAM estimada: no disponible, al desconocerse el numero de parametros.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Viabilidad en GPU de consumo: no evaluable sin conocer el tamano del modelo.
-- Opciones de despliegue: la libreria declarada es `transformers` y la etiqueta `endpoints_compatible` apunta a HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, y la ausencia de ficheros GGUF en las etiquetas hace improbable el despliegue directo en llama.cpp u Ollama.
+- Opciones de despliegue: la libreria declarada es `transformers` y la etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, y la ausencia de ficheros GGUF en las etiquetas hace improbable el despliegue directo en llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 A modo orientativo, y unicamente como referencia de rangos habituales en la familia Qwen, un modelo denso de 7B en bf16 requiere del orden de 14-16 GB de VRAM y cabe en una RTX 4090 con cuantizacion de 8 bits o inferior; una variante de 72B en bf16 exige 144 GB o mas y requiere multiples A100 o H100. Estos valores son estimaciones genericas de la familia y no deben atribuirse a este repositorio concreto.
@@ -93,7 +93,7 @@ Los datos de las filas comparativas corresponden a los modelos publicos de la fa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tahitidutta/pitchtalk-qwen
+- Repositorio en Hugging Face: https://huggingface.co/tahitidutta/pitchtalk-qwen
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en machine learning): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML referenciada en la plantilla: https://mlco2.github.io/impact
 

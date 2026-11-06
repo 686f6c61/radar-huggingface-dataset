@@ -82,7 +82,7 @@ La comparativa se basa en el modelo base Qwen3-4B, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HoangTran223/SPACE_Qwen3-4B
+- Repositorio Hugging Face: https://huggingface.co/HoangTran223/SPACE_Qwen3-4B
 - Modelo base SFT: https://huggingface.co/HoangTran223/qwen3_4b_sft_ultrachat200k_20260818_170154
 - Paper de SPACE (arXiv): https://arxiv.org/abs/2512.07175
 - Dataset UltraChat 200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

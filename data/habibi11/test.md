@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Habibi11/test es un repositorio alojado en HuggingFace por el usuario Habibi11 bajo licencia MIT. La model card asociada no contiene más que la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. No se dispone de información sobre el pipeline, los idiomas soportados ni el formato de los pesos.
+Habibi11/test es un repositorio alojado en Hugging Face por el usuario Habibi11 bajo licencia MIT. La model card asociada no contiene más que la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. No se dispone de información sobre el pipeline, los idiomas soportados ni el formato de los pesos.
 
 El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (2026-11-04T13:18:14Z), lo que sugiere un artefacto de prueba o un placeholder sin contenido técnico publicado. No hay evidencia de que se trate de un modelo entrenado y listo para uso en producción.
 
@@ -73,5 +73,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Habibi11/test
+- Repositorio en Hugging Face: https://huggingface.co/Habibi11/test
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

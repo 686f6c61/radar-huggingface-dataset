@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de traducc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cstr/opus-mt-tr-en-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cstr/opus-mt-tr-en-GGUF
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tr-en
 - Direccion inversa (en → tr): https://huggingface.co/cstr/opus-mt-en-tr-GGUF
 - Repositorio CrispASR: https://github.com/CrispStrobe/CrispASR

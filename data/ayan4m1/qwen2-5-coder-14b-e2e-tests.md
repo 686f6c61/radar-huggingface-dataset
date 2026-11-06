@@ -6,7 +6,7 @@ El modelo `ayan4m1/Qwen2.5-Coder-14B-E2E-Tests` es un ajuste fino (fine-tune) de
 
 El modelo se entrenó sobre el dataset `aiqualitylab/ai-natural-language-tests`, que contiene ejemplos de tests expresados en lenguaje natural. Está pensado para desarrolladores que quieren automatizar la creación de casos de prueba en sus proyectos. La arquitectura subyacente es la de Qwen2.5-Coder-14B (transformer decoder-only), aunque no se especifican detalles adicionales en la información disponible. El idioma principal es el inglés, y el pipeline declarado es `text-generation`.
 
-Aunque el modelo no presenta aún descargas ni likes en HuggingFace, su propuesta es relevante en el contexto actual de generación automática de código y testing asistido por IA, donde la calidad y cobertura de las pruebas son críticas para la integración continua y el desarrollo ágil.
+Aunque el modelo no presenta aún descargas ni likes en Hugging Face, su propuesta es relevante en el contexto actual de generación automática de código y testing asistido por IA, donde la calidad y cobertura de las pruebas son críticas para la integración continua y el desarrollo ágil.
 
 ## Especificaciones tecnicas
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para una comparativa rigurosa. Como ref
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/ayan4m1/Qwen2.5-Coder-14B-E2E-Tests)
+- [Hugging Face del modelo](https://huggingface.co/ayan4m1/Qwen2.5-Coder-14B-E2E-Tests)
 - [Modelo base: unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit)
 - [Dataset de entrenamiento: aiqualitylab/ai-natural-language-tests](https://huggingface.co/datasets/aiqualitylab/ai-natural-language-tests)

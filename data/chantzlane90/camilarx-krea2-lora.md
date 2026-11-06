@@ -2,7 +2,7 @@
 
 ## Resumen
 
-camilarx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en HuggingFace, pensado para el modelo base de generacion de imagenes Krea 2. Su unico proposito es reproducir un personaje ficticio concreto, "Camila Reyes" (descrita en la model card como personaje adulto generado por IA, 21+, no una persona real), mediante la palabra clave de activacion `camilarx`. No es un modelo de lenguaje ni un modelo fundacional: es un ajuste fino de bajo rango que se acopla a un modelo base de difusion ya existente.
+camilarx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en Hugging Face, pensado para el modelo base de generacion de imagenes Krea 2. Su unico proposito es reproducir un personaje ficticio concreto, "Camila Reyes" (descrita en la model card como personaje adulto generado por IA, 21+, no una persona real), mediante la palabra clave de activacion `camilarx`. No es un modelo de lenguaje ni un modelo fundacional: es un ajuste fino de bajo rango que se acopla a un modelo base de difusion ya existente.
 
 El repositorio pesa 0,2 GB y contiene unicamente los pesos del adaptador, no el modelo base. Segun la model card, el entrenamiento se realizo con la herramienta fal-ai/krea-2-trainer durante 1000 pasos con rango (rank) 32, y las claves del state dict se remapearon al prefijo `diffusion_model.*` propio de ComfyUI para su uso en Sogni. El repositorio no registra descargas ni "likes" en el momento de la consulta, por lo que se trata de una publicacion practicamente sin adopcion publica verificable.
 
@@ -72,7 +72,7 @@ No disponible. No se han identificado en la informacion proporcionada otros LoRA
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| camilarx-krea2-lora | LoRA rank 32 (parametros no declarados) | no aplica | no disponible | other | HuggingFace (0 descargas, 0 likes) |
+| camilarx-krea2-lora | LoRA rank 32 (parametros no declarados) | no aplica | no disponible | other | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. No se han identificado en la informacion proporcionada otros LoRA
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/camilarx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/camilarx-krea2-lora
 - Entrenador citado: fal-ai/krea-2-trainer (referencia en la model card, sin URL publicada)
 - Modelo base: Krea 2 (referenciado en la model card, sin URL publicada)
 - Entornos de uso declarados: ComfyUI y Sogni (sin URL especifica publicada)

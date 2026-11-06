@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tencent/EVIE-Preview-4.5B` es un lanzamiento de Tencent publicado en HuggingFace bajo licencia Apache 2.0. El nombre sugiere un tamaño nominal de 4.500 millones de parámetros, pero la model card oficial está vacía y no se ha publicado ninguna documentación técnica adicional en el repositorio. A fecha de su creación (17 de agosto de 2026), el modelo cuenta con 0 descargas y 2 likes, lo que indica que es una versión preliminar o de acceso muy restringido.
+El modelo `tencent/EVIE-Preview-4.5B` es un lanzamiento de Tencent publicado en Hugging Face bajo licencia Apache 2.0. El nombre sugiere un tamaño nominal de 4.500 millones de parámetros, pero la model card oficial está vacía y no se ha publicado ninguna documentación técnica adicional en el repositorio. A fecha de su creación (17 de agosto de 2026), el modelo cuenta con 0 descargas y 2 likes, lo que indica que es una versión preliminar o de acceso muy restringido.
 
 La relevancia de este modelo radica en que proviene de uno de los grandes actores tecnológicos chinos, con experiencia en sistemas de IA a gran escala. Sin embargo, la ausencia total de especificaciones, benchmarks o ejemplos de uso impide evaluar su capacidad real. Para desarrolladores e investigadores, esto supone una limitación importante: no se puede determinar si es adecuado para tareas concretas ni compararlo con alternativas existentes. Se recomienda esperar a que Tencent publique información adicional antes de considerar su adopción en producción.
 
@@ -53,7 +53,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (4.5B) c
 
 ## Enlaces
 
-- Repositorio HuggingFace: [tencent/EVIE-Preview-4.5B](https://huggingface.co/tencent/EVIE-Preview-4.5B)
+- Repositorio Hugging Face: [tencent/EVIE-Preview-4.5B](https://huggingface.co/tencent/EVIE-Preview-4.5B)
 - Página de productos de IA de Tencent: [Tencent Cloud AI](https://www.tencent.com/products/ai/)
 - Tencent AI Lab: [http://ailab.tencent.com/ailab/en/index/](http://ailab.tencent.com/ailab/en/index/)
 

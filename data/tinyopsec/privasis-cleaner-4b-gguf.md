@@ -33,7 +33,7 @@ No se han publicado detalles sobre el dataset de entrenamiento, el número de to
 - Generación de texto restringida a la tarea: el modelo está orientado a transformar texto limpio a partir de texto sensible, no a conversación general.
 - Ejecución local y offline: al ser GGUF, puede correr completamente en local sin enviar datos a servicios externos, clave para flujos de privacidad.
 - Compatibilidad con runtimes GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y otros.
-- Etiquetado conversacional en HuggingFace (pipeline text-generation), aunque su especialización es la sanitización.
+- Etiquetado conversacional en Hugging Face (pipeline text-generation), aunque su especialización es la sanitización.
 - No hay evidencia de capacidades de tool calling, agentes, visión, audio ni modo thinking en la información disponible.
 
 ## Casos de uso
@@ -87,7 +87,7 @@ Presidio, al basarse en reglas y NER clásicos, es más rápido y auditable pero
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Privasis-Cleaner-4B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Privasis-Cleaner-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo original (referenciado en la model card): https://huggingface.co/nvidia/Privasis-Cleaner-4B
 - Paper, blog o demo: no disponible

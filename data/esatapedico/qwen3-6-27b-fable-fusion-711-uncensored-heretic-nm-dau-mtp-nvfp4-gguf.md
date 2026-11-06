@@ -88,7 +88,7 @@ La diferencia principal frente al GGUF de DavidAU es el uso de NVFP4 nativo para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/esatapedico/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/esatapedico/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-NVFP4-GGUF
 - Nivel LOW: https://huggingface.co/esatapedico/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-NVFP4-LOW-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
 - GGUF de DavidAU con mmproj: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

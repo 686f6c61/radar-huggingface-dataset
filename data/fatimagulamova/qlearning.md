@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fatimagulamova/Qlearning` es un agente de aprendizaje por refuerzo publicado en HuggingFace Hub por la usuaria `fatimagulamova`. No es un modelo de lenguaje: se trata de una implementacion propia de Q-learning tabular entrenada para resolver el entorno `Taxi-v4` de Gymnasium, el clasico problema de un taxi que debe recoger y dejar pasajeros en una cuadricula discreta. El repositorio contiene los pesos del agente en un fichero `q-learning.pkl` y una model card generada a partir de la plantilla del curso de RL de Hugging Face.
+`fatimagulamova/Qlearning` es un agente de aprendizaje por refuerzo publicado en Hugging Face Hub por la usuaria `fatimagulamova`. No es un modelo de lenguaje: se trata de una implementacion propia de Q-learning tabular entrenada para resolver el entorno `Taxi-v4` de Gymnasium, el clasico problema de un taxi que debe recoger y dejar pasajeros en una cuadricula discreta. El repositorio contiene los pesos del agente en un fichero `q-learning.pkl` y una model card generada a partir de la plantilla del curso de RL de Hugging Face.
 
 El modelo resuelve un unico problema: aprender una politica de accion para el entorno Taxi-v4. Segun la model card, el agente alcanza una recompensa media de 7,56 +/- 2,71 en dicho entorno, un resultado declarado por el autor y no verificado de forma independiente (`verified: false`). No hay informacion publicada sobre hiperparametros, numero de episodios de entrenamiento ni tamano de la tabla Q.
 
@@ -97,5 +97,5 @@ No se dispone de resultados publicados de otros agentes sobre Taxi-v4 en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fatimagulamova/Qlearning
+- Modelo en Hugging Face: https://huggingface.co/fatimagulamova/Qlearning
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

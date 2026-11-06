@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455` es un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (unos 124,8 millones), publicado por el usuario de HuggingFace `francesca9805`. Se trata de un ajuste fino (SFT) del checkpoint `francesca9805/ppt-wc-loglinear-newlex-eng-before-100mb-packed-bfdiso_seed455`, entrenado con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. El identificador sugiere un experimento controlado: ventana de 100 MB de texto en inglés, variante de tokenizador o mezcla de pesos "loglinear", vocabulario "newlex", datos empaquetados ("packed"), precisión bf16 con algún esquema de "diso", checkpoint 500 y semilla 455.
+El modelo `francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455` es un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (unos 124,8 millones), publicado por el usuario de Hugging Face `francesca9805`. Se trata de un ajuste fino (SFT) del checkpoint `francesca9805/ppt-wc-loglinear-newlex-eng-before-100mb-packed-bfdiso_seed455`, entrenado con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. El identificador sugiere un experimento controlado: ventana de 100 MB de texto en inglés, variante de tokenizador o mezcla de pesos "loglinear", vocabulario "newlex", datos empaquetados ("packed"), precisión bf16 con algún esquema de "diso", checkpoint 500 y semilla 455.
 
 El modelo no resuelve una tarea de producto: es un artefacto de investigación. La model card es la plantilla automática de TRL, sin descripción de dataset, hiperparámetros, evaluación ni licencia explícita, y el repositorio acumula 0 descargas y 0 "likes" desde su publicación. Su interés es acotado: sirve como punto de comparación dentro de una familia de ejecuciones (existen variantes con "uniform" en lugar de "loglinear" y con semilla 10) para estudiar el efecto de decisiones de tokenización y empaquetado de datos en modelos pequeños.
 
@@ -50,7 +50,7 @@ El entrenamiento es un ajuste fino supervisado sobre el checkpoint base, ejecuta
 - Ablación de empaquetado de datos ("packed" frente a no empaquetado): útil para medir el impacto de eliminar relleno en el preentrenamiento de modelos pequeños, con el checkpoint 500 y la semilla 455 como referencias concretas.
 - Línea base de bajo coste en investigación: con 124,8 M de parámetros se puede replicar un ciclo completo de SFT con TRL en una única GPU de consumo o en CPU, útil para validar infraestructura antes de escalar a modelos mayores.
 - Generación de texto corto en entornos con recursos mínimos: al ocupar del orden de 250 MB de pesos en bf16, es viable en dispositivos embebidos o en servicios con presupuesto de memoria muy reducido, siempre que se acepte la falta de evaluación de calidad.
-- Material docente: sirve para ilustrar el ciclo completo de publicación de un modelo en HuggingFace (entrenamiento con TRL, subida en safetensors, despliegue con el pipeline de Transformers) sin requerir hardware especializado.
+- Material docente: sirve para ilustrar el ciclo completo de publicación de un modelo en Hugging Face (entrenamiento con TRL, subida en safetensors, despliegue con el pipeline de Transformers) sin requerir hardware especializado.
 - Pruebas de infraestructura de despliegue: al ser compatible con text-generation-inference y endpoints, puede emplearse como modelo de humo para validar rutas de servicio, colas, métricas y autoescalado antes de desplegar modelos reales.
 - Punto de partida para ajustes posteriores con fines específicos: su tamaño permite iterar rápidamente sobre datasets de instrucciones pequeños, aunque no hay evidencia de que supere a un GPT-2 base estándar como inicialización.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455` | 124,77 M | no disponible | no disponible | Repositorio de HuggingFace; 0 descargas; sin pesos cuantizados |
+| `francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455` | 124,77 M | no disponible | no disponible | Repositorio de Hugging Face; 0 descargas; sin pesos cuantizados |
 | GPT-2 base (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT, según su ficha pública | Ampliamente desplegado; conversiones GGUF, Ollama y vLLM disponibles |
 | DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache 2.0, según su ficha pública | Muy extendido; conversiones GGUF disponibles |
 | SmolLM-135M (`HuggingFaceTB/SmolLM-135M`) | 135 M | 2048 tokens | Apache 2.0, según su ficha pública | Modelo pequeño moderno con datos de entrenamiento documentados y evaluaciones publicadas |
@@ -94,7 +94,7 @@ Los datos de contexto y licencia de los modelos comparados provienen de sus fich
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-eng-before-100mb-packed-bfdiso_seed455
 - Panel de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/shlds1g1
 - Repositorio de TRL: https://github.com/huggingface/trl

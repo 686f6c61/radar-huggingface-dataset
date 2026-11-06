@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JoeDwan/whisper-tiny_to_spanish_accent_19oct es un ajuste fino (fine-tuning) de openai/whisper-tiny, el modelo de reconocimiento automático del habla (ASR) de OpenAI, entrenado sobre un dataset denominado "Spanish_english". Lo publica el usuario JoeDwan en HuggingFace el 19 de octubre de 2026, con licencia Apache 2.0 y pesos en safetensors. El objetivo declarado en el nombre del repositorio es adaptar el modelo al acento español, aunque la model card no documenta ni la composición del dataset ni los usos previstos (se limita a "More information needed").
+JoeDwan/whisper-tiny_to_spanish_accent_19oct es un ajuste fino (fine-tuning) de openai/whisper-tiny, el modelo de reconocimiento automático del habla (ASR) de OpenAI, entrenado sobre un dataset denominado "Spanish_english". Lo publica el usuario JoeDwan en Hugging Face el 19 de octubre de 2026, con licencia Apache 2.0 y pesos en safetensors. El objetivo declarado en el nombre del repositorio es adaptar el modelo al acento español, aunque la model card no documenta ni la composición del dataset ni los usos previstos (se limita a "More information needed").
 
 El modelo conserva la arquitectura completa de Whisper tiny: un transformer encoder-decoder de 37.760.640 parámetros totales (unos 38 M), pensado para transcripción de audio en ventanas fijas de 30 segundos. No es un modelo de propósito general ni un LLM: solo acepta audio como entrada y produce texto. Su relevancia es acotada y experimental: se trata de un checkpoint de investigación con 0 descargas y 0 likes en el momento de redactar esta ficha, sin validación externa y con un WER declarado de 13,08 sobre el split de test del dataset del autor, valor que no está verificado ("verified: false" en el model-index).
 
@@ -25,7 +25,7 @@ En la práctica, resulta útil como ejemplo de fine-tuning ligero de Whisper (20
 
 Arquitectura Whisper estandar en su variante tiny: encoder-decoder transformer con normalizacion previa, embeddings posicionales sinusoidales, activacion GELU y espectrograma Mel de 80 canales como entrada. El encoder procesa la ventana de 30 segundos y el decoder genera tokens de forma autorregresiva, con tokens especiales para deteccion de idioma, marcas de tiempo y cambio de tarea. No incorpora innovaciones propias: el autor no modifica la arquitectura del modelo base, solo los pesos.
 
-El entrenamiento se realizo con el Trainer de HuggingFace y estos hiperparametros declarados: learning rate 1e-5, batch de entrenamiento 4, batch de evaluacion 1, semilla 42, optimizador AdamW_TORCH_FUSED (beta1 0,9, beta2 0,999, epsilon 1e-8), scheduler linear con 500 pasos de warmup y 2000 pasos totales (aproximadamente 3,9 epocas segun la tabla de resultados). No se documenta el numero de tokens ni de horas de audio, ni la composicion del dataset "Spanish_english", ni si hubo RLHF/DPO (no procede en un modelo ASR). Entorno declarado: Transformers 5.21.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.2.
+El entrenamiento se realizo con el Trainer de Hugging Face y estos hiperparametros declarados: learning rate 1e-5, batch de entrenamiento 4, batch de evaluacion 1, semilla 42, optimizador AdamW_TORCH_FUSED (beta1 0,9, beta2 0,999, epsilon 1e-8), scheduler linear con 500 pasos de warmup y 2000 pasos totales (aproximadamente 3,9 epocas segun la tabla de resultados). No se documenta el numero de tokens ni de horas de audio, ni la composicion del dataset "Spanish_english", ni si hubo RLHF/DPO (no procede en un modelo ASR). Entorno declarado: Transformers 5.21.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.2.
 
 ## Capacidades
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 
 | Modelo | Parametros | Contexto de audio | WER en espanol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoeDwan/whisper-tiny_to_spanish_accent_19oct | 37,8 M | 30 s | 13,08 % (dataset propio, no verificado) | apache-2.0 | HuggingFace, 0 descargas |
-| openai/whisper-tiny | 37,8 M | 30 s | no disponible | apache-2.0 (segun model card en HuggingFace) | HuggingFace, ampliamente utilizado |
-| openai/whisper-base | 74 M (aprox.) | 30 s | no disponible | apache-2.0 (segun model card en HuggingFace) | HuggingFace |
-| openai/whisper-small | 244 M (aprox.) | 30 s | no disponible | apache-2.0 (segun model card en HuggingFace) | HuggingFace |
+| JoeDwan/whisper-tiny_to_spanish_accent_19oct | 37,8 M | 30 s | 13,08 % (dataset propio, no verificado) | apache-2.0 | Hugging Face, 0 descargas |
+| openai/whisper-tiny | 37,8 M | 30 s | no disponible | apache-2.0 (segun model card en Hugging Face) | Hugging Face, ampliamente utilizado |
+| openai/whisper-base | 74 M (aprox.) | 30 s | no disponible | apache-2.0 (segun model card en Hugging Face) | Hugging Face |
+| openai/whisper-small | 244 M (aprox.) | 30 s | no disponible | apache-2.0 (segun model card en Hugging Face) | Hugging Face |
 
 Los tamanos de whisper-base y whisper-small son los de la familia Whisper publicada por OpenAI; el WER en espanol de las alternativas no se incluye porque no se ha consultado en fuentes proporcionadas. La comparacion de rendimiento real entre este checkpoint y whisper-tiny original no puede establecerse sin ejecutar ambos sobre el mismo conjunto de evaluacion.
 
@@ -96,7 +96,7 @@ Los tamanos de whisper-base y whisper-small son los de la familia Whisper public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoeDwan/whisper-tiny_to_spanish_accent_19oct
+- Modelo en Hugging Face: https://huggingface.co/JoeDwan/whisper-tiny_to_spanish_accent_19oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de codigo de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adipotnis/m6-contrastive-cf-robowarp` es un modelo de robótica del tipo vision-language-action (VLA) publicado por Aditya Potnis, ingeniero de robótica especializado en navegación semántica. Según los metadatos de HuggingFace, el modelo está etiquetado con `pi0.5`, `openpi`, `libero`, `counterfactual`, `contrastive` y `flow-matching`, lo que sugiere que se basa en la arquitectura pi0.5 de OpenPI, entrenado con técnicas de aprendizaje contrastivo y contrafactual para mejorar la generalización en tareas de manipulación robótica. El repositorio ocupa 12,4 GB y está sujeto a acceso restringido (gated), lo que indica que es un modelo de investigación con distribución controlada.
+El modelo `adipotnis/m6-contrastive-cf-robowarp` es un modelo de robótica del tipo vision-language-action (VLA) publicado por Aditya Potnis, ingeniero de robótica especializado en navegación semántica. Según los metadatos de Hugging Face, el modelo está etiquetado con `pi0.5`, `openpi`, `libero`, `counterfactual`, `contrastive` y `flow-matching`, lo que sugiere que se basa en la arquitectura pi0.5 de OpenPI, entrenado con técnicas de aprendizaje contrastivo y contrafactual para mejorar la generalización en tareas de manipulación robótica. El repositorio ocupa 12,4 GB y está sujeto a acceso restringido (gated), lo que indica que es un modelo de investigación con distribución controlada.
 
 El modelo se enmarca en la línea de los VLA de código abierto, que integran visión, lenguaje y acción para controlar robots en entornos semiestructurados. Su relevancia actual radica en la combinación de flow matching (generación de trayectorias de acción) con entrenamiento contrastivo, una aproximación poco común que busca reducir el sobreajuste a las demostraciones y mejorar la robustez frente a cambios de contexto. No obstante, al tratarse de una publicación reciente (agosto de 2026) y sin datos públicos de rendimiento, su utilidad práctica aún no está validada externamente.
 
@@ -21,7 +21,7 @@ El modelo se enmarca en la línea de los VLA de código abierto, que integran vi
 
 ## Arquitectura y entrenamiento
 
-La información pública no detalla la arquitectura interna del modelo. Los tags de HuggingFace (`pi0.5`, `openpi`, `flow-matching`) apuntan a que se trata de un VLA basado en el marco OpenPI de Physical Intelligence, que emplea un modelo de difusión por flow matching para generar secuencias de acciones a partir de observaciones visuales e instrucciones en lenguaje natural. El tag `contrastive` sugiere que se aplicó un objetivo de aprendizaje contrastivo durante el entrenamiento, posiblemente para alinear representaciones entre modalidades o para discriminar entre acciones correctas e incorrectas. El tag `counterfactual` indica que se usaron ejemplos contrafactuales (acciones erróneas o escenarios modificados) para reforzar el aprendizaje, una técnica habitual en robótica para mejorar la generalización.
+La información pública no detalla la arquitectura interna del modelo. Los tags de Hugging Face (`pi0.5`, `openpi`, `flow-matching`) apuntan a que se trata de un VLA basado en el marco OpenPI de Physical Intelligence, que emplea un modelo de difusión por flow matching para generar secuencias de acciones a partir de observaciones visuales e instrucciones en lenguaje natural. El tag `contrastive` sugiere que se aplicó un objetivo de aprendizaje contrastivo durante el entrenamiento, posiblemente para alinear representaciones entre modalidades o para discriminar entre acciones correctas e incorrectas. El tag `counterfactual` indica que se usaron ejemplos contrafactuales (acciones erróneas o escenarios modificados) para reforzar el aprendizaje, una técnica habitual en robótica para mejorar la generalización.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. El repositorio incluye 12,4 GB de pesos, lo que sugiere un modelo de tamaño medio (posiblemente entre 1B y 3B de parámetros), pero este dato no está confirmado.
 
@@ -44,7 +44,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de rendimiento (como éxito en tareas de LIBERO, precisión de acción o comparativas con otros VLA). Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de rendimiento (como éxito en tareas de LIBERO, precisión de acción o comparativas con otros VLA). Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ Sin embargo, no hay información pública sobre el rendimiento de `m6-contrastiv
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de poder descargarlo, lo que limita su uso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de poder descargarlo, lo que limita su uso inmediato.
 - Falta de documentación técnica: no se han publicado detalles sobre arquitectura, entrenamiento, hiperparámetros ni evaluación, lo que dificulta su reproducción y uso fiable.
 - Sin validación externa: al tener cero descargas y cero likes, el modelo no ha sido probado por la comunidad, por lo que su rendimiento real es desconocido.
 - Posibles sesgos: al ser un modelo entrenado probablemente en entornos simulados (LIBERO), puede no generalizar bien a entornos reales con variaciones de iluminación, textura o dinámica.
@@ -78,8 +78,8 @@ Sin embargo, no hay información pública sobre el rendimiento de `m6-contrastiv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adipotnis/m6-contrastive-cf-robowarp
-- Perfil del autor en HuggingFace: https://huggingface.co/adipotnis
+- Repositorio Hugging Face: https://huggingface.co/adipotnis/m6-contrastive-cf-robowarp
+- Perfil del autor en Hugging Face: https://huggingface.co/adipotnis
 - GitHub del autor: https://github.com/adipotnis
 - Sitio personal del autor: https://adipotnis.github.io/
 - Framework OpenPI (referencia): no se ha encontrado enlace directo en la información proporcionada.

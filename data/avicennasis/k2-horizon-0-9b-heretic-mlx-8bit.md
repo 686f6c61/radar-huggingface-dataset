@@ -91,7 +91,7 @@ La comparacion directa de rendimiento no es posible por ausencia de benchmarks p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Avicennasis/K2-Horizon-0.9B-heretic-mlx-8bit
+- Hugging Face: https://huggingface.co/Avicennasis/K2-Horizon-0.9B-heretic-mlx-8bit
 - Modelo base: https://huggingface.co/Avicennasis/K2-Horizon-0.9B-heretic
 - Issue de mlx-lm sobre la arquitectura k2_horizon: https://github.com/ml-explore/mlx-lm/issues/1876
 - Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-MBT-R es un ajuste fino (fine-tune) supervisado de Qwen/Qwen3.5-4B-Base, publicado por el usuario 12kimih en HuggingFace. El modelo se ha entrenado sobre trazas de razonamiento editadas mediante MBT-R, un editor agéntico que reescribe la traza completa en una única llamada, dentro del trabajo de investigación "Distilling Metacognitive Behaviors through Agentic Editing" (arXiv:2602.22508). Su objetivo es destilar comportamientos metacognitivos del profesor hacia un modelo pequeño, mejorando el razonamiento y la resolución de problemas matemáticos.
+Qwen3.5-4B-MBT-R es un ajuste fino (fine-tune) supervisado de Qwen/Qwen3.5-4B-Base, publicado por el usuario 12kimih en Hugging Face. El modelo se ha entrenado sobre trazas de razonamiento editadas mediante MBT-R, un editor agéntico que reescribe la traza completa en una única llamada, dentro del trabajo de investigación "Distilling Metacognitive Behaviors through Agentic Editing" (arXiv:2602.22508). Su objetivo es destilar comportamientos metacognitivos del profesor hacia un modelo pequeño, mejorando el razonamiento y la resolución de problemas matemáticos.
 
 El modelo conserva la arquitectura y el tamaño del base (unos 4.539 millones de parámetros según los safetensors publicados) y está orientado a tareas de razonamiento paso a paso, matemáticas y generación de texto conversacional. Emite su razonamiento dentro de un bloque `<think>` antes de la respuesta final, un patrón habitual en los modelos de razonamiento actuales.
 
@@ -34,7 +34,7 @@ El entrenamiento empleo 15 epocas con el optimizador Muon (implementacion de Meg
 - Resolucion de problemas matematicos, con la convencion de entrenamiento de colocar la respuesta final dentro de `\boxed{}`.
 - Comportamientos metacognitivos destilados mediante edicion agéntica de trazas (monitorizacion y revision del propio razonamiento).
 - Manejo de respuestas muy largas: el propio autor advierte de que las respuestas largas son habituales y recomienda reservar decenas de miles de tokens de salida.
-- No hay evidencia en la model card de capacidades de vision, audio, tool calling ni agentes en inferencia, pese a que el tag de HuggingFace lo clasifica como image-text-to-text.
+- No hay evidencia en la model card de capacidades de vision, audio, tool calling ni agentes en inferencia, pese a que el tag de Hugging Face lo clasifica como image-text-to-text.
 
 ## Casos de uso
 
@@ -75,13 +75,13 @@ La comparativa mas relevante es interna a la familia del propio paper, disenada 
 - Respuestas muy largas: el autor advierte explicitamente de que el modelo genera respuestas largas con frecuencia; hay que reservar decenas de miles de tokens de salida (el ejemplo usa max_tokens 122.880), lo que incrementa coste y latencia.
 - Sesgos: no disponible; no se documentan auditorias de sesgo en la ficha.
 - Licencia: Apache-2.0 permite uso comercial, pero los datos de entrenamiento estan bajo CC BY-SA 4.0, lo que implica obligaciones de atribucion si se reutilizan las trazas o derivados de los datos.
-- Discrepancia de tags: HuggingFace lo clasifica como image-text-to-text, pero la model card solo documenta generacion de texto; no asumir capacidades de vision sin verificar.
+- Discrepancia de tags: Hugging Face lo clasifica como image-text-to-text, pero la model card solo documenta generacion de texto; no asumir capacidades de vision sin verificar.
 - Cuantizacion: no se publican versiones cuantizadas oficiales; cualquier GGUF o AWQ dependeria de conversiones de terceros.
 - Para produccion: al ser un modelo de investigacion con 456 descargas, carece de recorrido comunitario; conviene validar robustez en el dominio concreto antes de desplegarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/12kimih/Qwen3.5-4B-MBT-R
+- Modelo en Hugging Face: https://huggingface.co/12kimih/Qwen3.5-4B-MBT-R
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset de trazas: https://huggingface.co/datasets/12kimih/mbt-traces
 - Variante baseline (sin editar): https://huggingface.co/12kimih/Qwen3.5-4B-Unedited-SFT

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`scdivad/hw1-hc3-detector` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `scdivad` el 29 de septiembre de 2026. Se distribuye bajo la librería `transformers` con pesos en formato `safetensors` y tiene 22.713.986 parámetros totales, según los metadatos del repositorio. El etiquetado del Hub lo identifica como un modelo basado en BERT y orientado a `text-classification`, además de declararlo compatible con `text-embeddings-inference` y con los endpoints gestionados de HuggingFace.
+`scdivad/hw1-hc3-detector` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `scdivad` el 29 de septiembre de 2026. Se distribuye bajo la librería `transformers` con pesos en formato `safetensors` y tiene 22.713.986 parámetros totales, según los metadatos del repositorio. El etiquetado del Hub lo identifica como un modelo basado en BERT y orientado a `text-classification`, además de declararlo compatible con `text-embeddings-inference` y con los endpoints gestionados de Hugging Face.
 
-La model card publicada es la plantilla automática de HuggingFace sin rellenar: no incluye autoría real, descripción, datos de entrenamiento, licencia, idiomas, hiperparámetros ni resultados de evaluación. Toda la información sustantiva sobre el modelo está, por tanto, ausente. El nombre del repositorio sugiere un ejercicio académico (`hw1`) construido sobre el corpus HC3 (Human ChatGPT Comparison Corpus), un conjunto de datos habitual para tareas de detección de texto generado por IA, pero esto es una inferencia a partir de la nomenclatura y no un dato confirmado por el autor.
+La model card publicada es la plantilla automática de Hugging Face sin rellenar: no incluye autoría real, descripción, datos de entrenamiento, licencia, idiomas, hiperparámetros ni resultados de evaluación. Toda la información sustantiva sobre el modelo está, por tanto, ausente. El nombre del repositorio sugiere un ejercicio académico (`hw1`) construido sobre el corpus HC3 (Human ChatGPT Comparison Corpus), un conjunto de datos habitual para tareas de detección de texto generado por IA, pero esto es una inferencia a partir de la nomenclatura y no un dato confirmado por el autor.
 
 El interés de esta ficha es fundamentalmente documental: se trata de un modelo pequeño (aproximadamente 23 millones de parámetros), de huella mínima y ejecutable en CPU, cuyo uso en producción no está respaldado por ninguna documentación técnica publicada. Cualquier evaluación seria requiere inspeccionar los pesos, los `id2label` del `config.json` y el dataset de entrenamiento, que no se han hecho públicos.
 
@@ -36,7 +36,7 @@ No hay información sobre el procedimiento de entrenamiento: ni número de token
 
 - Clasificación de secuencias de texto: el pipeline declarado es `text-classification`, con un número de etiquetas y un mapeo `id2label` no publicados.
 - Compatibilidad con `text-embeddings-inference`: el modelo puede servirse a través de ese motor, lo que sugiere que expone representaciones utilizables como embeddings además de la cabeza de clasificación.
-- Despliegue en HuggingFace Inference Endpoints: el tag `endpoints_compatible` indica que el repositorio cumple los requisitos del servicio gestionado.
+- Despliegue en Hugging Face Inference Endpoints: el tag `endpoints_compatible` indica que el repositorio cumple los requisitos del servicio gestionado.
 - Capacidad multilingüe: no disponible; no se declara ningún idioma.
 - Tool calling, function calling, razonamiento multi-paso, agentes: no aplica, no es un modelo generativo.
 - Modo de razonamiento explícito (thinking), visión o audio: no disponible, no se declaran capacidades multimodales.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 91 MB en fp32, 45 MB en fp16 y 23 MB en int8, calculando sobre 22.713.986 parámetros y sin contar el overhead del runtime.
 - GPU recomendadas: cualquier GPU moderna sirve; el modelo es viable incluso en tarjetas integradas o en GPUs de gama de entrada como GTX 1650, RTX 3050 o inferiores. No necesita A100, H100 ni RTX 4090.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de ellas, y también en CPU sin dificultad.
-- Opciones de despliegue: pipeline de `transformers`, `text-embeddings-inference` (declarado compatible), HuggingFace Inference Endpoints (declarado compatible), exportación a ONNX o uso desde `optimum` si se genera la conversión. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables directamente en su estado actual.
+- Opciones de despliegue: pipeline de `transformers`, `text-embeddings-inference` (declarado compatible), Hugging Face Inference Endpoints (declarado compatible), exportación a ONNX o uso desde `optimum` si se genera la conversión. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables directamente en su estado actual.
 - Latencia y throughput: no disponibles. Como referencia de orden de magnitud para un encoder de este tamaño, una CPU moderna procesa lotes de secuencias cortas en decenas de milisegundos por lote y una GPU de consumo en pocos milisegundos, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -72,16 +72,16 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en deteccion de texto IA |
 |---|---|---|---|---|---|
-| scdivad/hw1-hc3-detector | 22,7 M | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace, safetensors | no disponible para esta tarea sin ajuste fino |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace, safetensors | no disponible para esta tarea sin ajuste fino |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace, safetensors | no disponible para esta tarea sin ajuste fino |
+| scdivad/hw1-hc3-detector | 22,7 M | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face, safetensors | no disponible para esta tarea sin ajuste fino |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face, safetensors | no disponible para esta tarea sin ajuste fino |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face, safetensors | no disponible para esta tarea sin ajuste fino |
 
 El modelo es entre tres y cinco veces más pequeño que las alternativas habituales de la familia BERT, lo que reduce coste de inferencia y memoria, pero no hay ninguna evidencia publicada que permita afirmar que mantiene una calidad comparable.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace sin ninguna sección completada. No se puede conocer el uso previsto, los datos de entrenamiento ni el significado de las etiquetas sin inspeccionar los pesos y el `config.json`.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face sin ninguna sección completada. No se puede conocer el uso previsto, los datos de entrenamiento ni el significado de las etiquetas sin inspeccionar los pesos y el `config.json`.
 - Licencia no declarada: sin licencia explícita, no hay autorización clara para uso comercial ni para redistribución. En la práctica equivale a "todos los derechos reservados" hasta que el autor se pronuncie.
 - Sesgos desconocidos: al no documentarse la composición del dataset, no es posible evaluar sesgos de género, raza, idioma o dominio. Si el corpus es HC3, hereda los sesgos de las respuestas de ChatGPT y de los textos humanos recopilados.
 - Riesgo de alucinación: no aplica en sentido generativo, pero sí existe riesgo de falsos positivos y falsos negativos que pueden perjudicar a personas reales si el modelo se usa para acusar de uso de IA.
@@ -93,7 +93,7 @@ El modelo es entre tres y cinco veces más pequeño que las alternativas habitua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scdivad/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/scdivad/hw1-hc3-detector
 - Repositorio homónimo de otro usuario: https://huggingface.co/vivian-ch/hw1-hc3-detector
 - Repositorio homónimo de otro usuario: https://huggingface.co/Chengwei-Shen/hw1-hc3-detector
 - Ficha de terceros sobre el modelo: https://savrn.com/models/hw1-hc3-detector

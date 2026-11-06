@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Licencia | Formato | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ngustj/smolvla_pen_301ep_hil_aug_v5_30k` | 450.046.176 | Apache-2.0 | Safetensors (LeRobot) | HuggingFace, 0 descargas, 0 likes | Ajuste fino de una sola tarea |
-| `lerobot/smolvla_base` | No disponible en la información proporcionada | No disponible en la información proporcionada | Safetensors | HuggingFace | Modelo base preentrenado del que deriva este ajuste |
+| `ngustj/smolvla_pen_301ep_hil_aug_v5_30k` | 450.046.176 | Apache-2.0 | Safetensors (LeRobot) | Hugging Face, 0 descargas, 0 likes | Ajuste fino de una sola tarea |
+| `lerobot/smolvla_base` | No disponible en la información proporcionada | No disponible en la información proporcionada | Safetensors | Hugging Face | Modelo base preentrenado del que deriva este ajuste |
 | Otras políticas VLA de mayor tamaño (por ejemplo, alternativas basadas en modelos de lenguaje de miles de millones de parámetros) | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible | No disponible | No se dispone de datos verificables en la información proporcionada para comparar rendimiento |
 
 La comparación cuantitativa no es posible con los datos disponibles: no hay métricas de éxito publicadas para este ajuste ni cifras homogéneas de los modelos alternativos. La diferencia principal frente a políticas VLA de mayor tamaño es el coste de despliegue: 450 millones de parámetros y 0,9 GB permiten inferencia en GPU de consumo, a cambio de una especialización estricta en una única tarea.
@@ -96,7 +96,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay mé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngustj/smolvla_pen_301ep_hil_aug_v5_30k
+- Modelo en Hugging Face: https://huggingface.co/ngustj/smolvla_pen_301ep_hil_aug_v5_30k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ngustj/pen_pick_place_301ep_v5
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ngustj/pen_pick_place_301ep_v5

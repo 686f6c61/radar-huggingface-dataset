@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Capstone_AntiMaling es un modelo de la familia BERT publicado en HuggingFace por el usuario Adisalamr bajo licencia MIT. Con 124.442.882 parámetros (aproximadamente 124 millones, coherente con un BERT-base o una variante cercana), se distribuye en formato safetensors y ocupa unos 0,5 GB en el repositorio. El nombre sugiere un proyecto de fin de curso ("Capstone") orientado a la detección o el filtrado de *malingering* (simulación de síntomas o enfermedad), aunque la model card no aporta ninguna descripción funcional, datos de entrenamiento ni resultados.
+Capstone_AntiMaling es un modelo de la familia BERT publicado en Hugging Face por el usuario Adisalamr bajo licencia MIT. Con 124.442.882 parámetros (aproximadamente 124 millones, coherente con un BERT-base o una variante cercana), se distribuye en formato safetensors y ocupa unos 0,5 GB en el repositorio. El nombre sugiere un proyecto de fin de curso ("Capstone") orientado a la detección o el filtrado de *malingering* (simulación de síntomas o enfermedad), aunque la model card no aporta ninguna descripción funcional, datos de entrenamiento ni resultados.
 
 La relevancia del modelo es, a día de hoy, muy limitada para producción: no tiene descargas ni likes, no declara pipeline, no especifica idiomas soportados y la model card se reduce a la línea de licencia. Se trata, por tanto, de un artefacto de investigación o de un ejercicio académico cuyo comportamiento real solo puede determinarse inspeccionando los pesos y la configuración del repositorio.
 
@@ -26,7 +26,7 @@ Esta ficha documenta exclusivamente lo que puede verificarse a partir de los met
 
 ## Arquitectura y entrenamiento
 
-El tag `bert` y el recuento de 124,4 millones de parámetros sitúan al modelo en el entorno de BERT-base (110 M en la versión original de Google, 124 M en variantes como BERT-base-uncased de HuggingFace con embeddings ampliados). Se trata, por tanto, de un transformer encoder-only bidireccional, adecuado por diseño para tareas de clasificación de secuencias, etiquetado token a token y *sentence embeddings*, no para generación autoregresiva.
+El tag `bert` y el recuento de 124,4 millones de parámetros sitúan al modelo en el entorno de BERT-base (110 M en la versión original de Google, 124 M en variantes como BERT-base-uncased de Hugging Face con embeddings ampliados). Se trata, por tanto, de un transformer encoder-only bidireccional, adecuado por diseño para tareas de clasificación de secuencias, etiquetado token a token y *sentence embeddings*, no para generación autoregresiva.
 
 No hay información publicada sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, el uso de RLHF/DPO (poco habitual en modelos encoder-only) ni sobre posibles innovaciones técnicas. Tampoco se indica si el modelo parte de un checkpoint preentrenado (por ejemplo, `bert-base-uncased`) y se ha afinado, o si se ha entrenado desde cero. El nombre "AntiMaling" apunta a una tarea de clasificación binaria o multietiqueta relacionada con la detección de simulación de síntomas, pero es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Adisalamr/Capstone_AntiMaling | 124,4 M | no disponible | MIT | HuggingFace, 0 descargas | Sin model card ni benchmarks |
-| google-bert/bert-base-uncased | 110 M | 512 | Apache 2.0 | HuggingFace, ampliamente usado | Referencia estándar, benchmarks públicos |
-| distilbert-base-uncased | 66 M | 512 | Apache 2.0 | HuggingFace | Más rápido, ~40 % menos parámetros, ligeramente inferior en accuracy |
-| roberta-base | 125 M | 512 | MIT | HuggingFace | Entrenado con más datos y *dynamic masking*; mejor rendimiento general en GLUE |
+| Adisalamr/Capstone_AntiMaling | 124,4 M | no disponible | MIT | Hugging Face, 0 descargas | Sin model card ni benchmarks |
+| google-bert/bert-base-uncased | 110 M | 512 | Apache 2.0 | Hugging Face, ampliamente usado | Referencia estándar, benchmarks públicos |
+| distilbert-base-uncased | 66 M | 512 | Apache 2.0 | Hugging Face | Más rápido, ~40 % menos parámetros, ligeramente inferior en accuracy |
+| roberta-base | 125 M | 512 | MIT | Hugging Face | Entrenado con más datos y *dynamic masking*; mejor rendimiento general en GLUE |
 
 La comparación se basa en características públicas de los modelos de referencia; no hay datos de rendimiento del modelo de Adisalamr que permitan situarlo frente a ellos.
 
@@ -86,5 +86,5 @@ La comparación se basa en características públicas de los modelos de referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adisalamr/Capstone_AntiMaling
+- Modelo en Hugging Face: https://huggingface.co/Adisalamr/Capstone_AntiMaling
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la información disponible.

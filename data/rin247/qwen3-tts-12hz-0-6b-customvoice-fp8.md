@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS-12Hz-0.6B-CustomVoice (este) | 0.9B | no disponible | 10 | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen3-TTS-12Hz-0.6B-Base | 0.9B | no disponible | 10 | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen3-TTS-12Hz-0.6B-VoiceClone | 0.9B | no disponible | 10 | Apache 2.0 | HuggingFace, ModelScope |
+| Qwen3-TTS-12Hz-0.6B-CustomVoice (este) | 0.9B | no disponible | 10 | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen3-TTS-12Hz-0.6B-Base | 0.9B | no disponible | 10 | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen3-TTS-12Hz-0.6B-VoiceClone | 0.9B | no disponible | 10 | Apache 2.0 | Hugging Face, ModelScope |
 
 La comparativa se limita a las variantes de la misma familia Qwen3-TTS, ya que no se dispone de información sobre modelos comparables de otros desarrolladores en la información proporcionada. Las tres variantes comparten arquitectura y tamaño, diferenciándose en sus capacidades: CustomVoice se centra en voces predefinidas con control expresivo, Base es la versión general y VoiceClone está especializada en clonación de voz.
 
@@ -80,10 +80,10 @@ La comparativa se limita a las variantes de la misma familia Qwen3-TTS, ya que n
 
 ## Enlaces
 
-- Repositorio HuggingFace (version FP8 de Rin247): https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-CustomVoice-FP8
-- Repositorio HuggingFace (version original de Qwen): https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
-- Coleccion Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Repositorio Hugging Face (version FP8 de Rin247): https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-CustomVoice-FP8
+- Repositorio Hugging Face (version original de Qwen): https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+- Coleccion Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - Repositorio GitHub de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Paper tecnico (arXiv): https://huggingface.co/papers/2601.15621
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
 - Pagina en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice

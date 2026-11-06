@@ -70,6 +70,6 @@ No disponible. No se dispone de datos de benchmarks ni especificaciones suficien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Agtian/cpt1
+- Hugging Face: https://huggingface.co/Agtian/cpt1
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B-Base
 - TRL: https://github.com/huggingface/trl

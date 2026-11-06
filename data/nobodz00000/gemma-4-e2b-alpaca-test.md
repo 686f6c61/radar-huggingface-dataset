@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nobodZ00000/gemma-4-e2b-alpaca-test` es un fine-tuning experimental del modelo base `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Gemma 4 E2B en su variante instruction-tuned. El autor, nobodZ00000, lo ha publicado en HuggingFace bajo licencia Apache 2.0 con el sufijo "alpaca-test", lo que sugiere un ajuste realizado sobre un dataset de estilo Alpaca como prueba de concepto. No se trata de un modelo oficial de Google ni de Unsloth, sino de un artefacto derivado de terceros.
+`nobodZ00000/gemma-4-e2b-alpaca-test` es un fine-tuning experimental del modelo base `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Gemma 4 E2B en su variante instruction-tuned. El autor, nobodZ00000, lo ha publicado en Hugging Face bajo licencia Apache 2.0 con el sufijo "alpaca-test", lo que sugiere un ajuste realizado sobre un dataset de estilo Alpaca como prueba de concepto. No se trata de un modelo oficial de Google ni de Unsloth, sino de un artefacto derivado de terceros.
 
-El modelo hereda la arquitectura y capacidades del Gemma 4 E2B original, pero no se documenta ningún detalle sobre el proceso de fine-tuning, el dataset utilizado, los hiperparámetros ni los resultados obtenidos. La model card es mínima y se limita a indicar el modelo base y las herramientas empleadas (Unsloth y TRL de HuggingFace). El repositorio ocupa 0,1 GB, lo que es coherente con pesos cuantizados a 4 bits de un modelo de tamaño pequeño (E2B sugiere "effective 2B" o similar), aunque no se confirma el número exacto de parámetros.
+El modelo hereda la arquitectura y capacidades del Gemma 4 E2B original, pero no se documenta ningún detalle sobre el proceso de fine-tuning, el dataset utilizado, los hiperparámetros ni los resultados obtenidos. La model card es mínima y se limita a indicar el modelo base y las herramientas empleadas (Unsloth y TRL de Hugging Face). El repositorio ocupa 0,1 GB, lo que es coherente con pesos cuantizados a 4 bits de un modelo de tamaño pequeño (E2B sugiere "effective 2B" o similar), aunque no se confirma el número exacto de parámetros.
 
 Su relevancia es limitada: se trata de un experimento de fine-tuning con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados ni documentación técnica. Resulta útil únicamente como referencia para quienes quieran reproducir el pipeline de Unsloth + TRL sobre Gemma 4, o como ejemplo de fine-tuning ligero con cuantización 4-bit.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada: se trata de un experimento de fine-tuning con cero de
 
 La arquitectura subyacente corresponde a Gemma 4 E2B, un transformer de la familia Gemma de Google. El modelo del que deriva este fine-tuning es la variante instruction-tuned (`-it`) cuantizada a 4 bits mediante bitsandbytes (`bnb-4bit`) y empaquetada por Unsloth. No se dispone de información sobre el número de capas, dimensiones ocultas, mecanismo de atención ni innovaciones específicas de la arquitectura Gemma 4 E2B en la información proporcionada.
 
-El proceso de entrenamiento de este fine-tuning concreto no está documentado: se desconoce el número de tokens de entrenamiento, la composición del dataset (aunque el nombre "alpaca-test" sugiere un dataset estilo Alpaca), si se aplicó RLHF, DPO o únicamente SFT, y los hiperparámetros empleados. La model card únicamente indica que se entrenó "2x faster" con Unsloth y la librería TRL de HuggingFace, lo que apunta a un ajuste supervisado (SFT) con las optimizaciones de memoria y velocidad de Unsloth. No se menciona ninguna innovación técnica adicional más allá del uso de cuantización 4-bit durante el entrenamiento.
+El proceso de entrenamiento de este fine-tuning concreto no está documentado: se desconoce el número de tokens de entrenamiento, la composición del dataset (aunque el nombre "alpaca-test" sugiere un dataset estilo Alpaca), si se aplicó RLHF, DPO o únicamente SFT, y los hiperparámetros empleados. La model card únicamente indica que se entrenó "2x faster" con Unsloth y la librería TRL de Hugging Face, lo que apunta a un ajuste supervisado (SFT) con las optimizaciones de memoria y velocidad de Unsloth. No se menciona ninguna innovación técnica adicional más allá del uso de cuantización 4-bit durante el entrenamiento.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nobodZ00000/gemma-4-e2b-alpaca-test | no disponible (~2B por el nombre) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Fine-tuning experimental sin benchmarks |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit (modelo base) | no disponible (~2B) | no disponible | no disponible en la información | HuggingFace (Unsloth) | Checkpoint cuantizado 4-bit del que deriva |
-| Gemma 4 E2B-it (original de Google) | no disponible (~2B) | no disponible | no disponible en la información | HuggingFace / Google | Modelo oficial instruction-tuned |
-| Fine-tunings Alpaca de modelos ~2B (p. ej. variantes de Gemma 2B) | ~2B | variable | variable | HuggingFace | Alternativas comparables en tamaño y propósito, sin datos concretos en esta ficha |
+| nobodZ00000/gemma-4-e2b-alpaca-test | no disponible (~2B por el nombre) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Fine-tuning experimental sin benchmarks |
+| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit (modelo base) | no disponible (~2B) | no disponible | no disponible en la información | Hugging Face (Unsloth) | Checkpoint cuantizado 4-bit del que deriva |
+| Gemma 4 E2B-it (original de Google) | no disponible (~2B) | no disponible | no disponible en la información | Hugging Face / Google | Modelo oficial instruction-tuned |
+| Fine-tunings Alpaca de modelos ~2B (p. ej. variantes de Gemma 2B) | ~2B | variable | variable | Hugging Face | Alternativas comparables en tamaño y propósito, sin datos concretos en esta ficha |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nobodZ00000/gemma-4-e2b-alpaca-test
+- Modelo en Hugging Face: https://huggingface.co/nobodZ00000/gemma-4-e2b-alpaca-test
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

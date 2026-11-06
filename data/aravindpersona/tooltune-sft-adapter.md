@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tooltune-sft-adapter es un adaptador de ajuste fino supervisado (SFT) con la técnica LoRA, publicado por el usuario aravindpersona en HuggingFace y pensado para montarse sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Se distribuye como adaptador PEFT (librería `peft` 0.18.1), no como un modelo completo: el repositorio ocupa aproximadamente 0,1 GB y contiene únicamente los pesos diferenciales de bajo rango, por lo que para ejecutarlo es imprescindible descargar aparte el modelo base de 7B parámetros.
+Tooltune-sft-adapter es un adaptador de ajuste fino supervisado (SFT) con la técnica LoRA, publicado por el usuario aravindpersona en Hugging Face y pensado para montarse sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Se distribuye como adaptador PEFT (librería `peft` 0.18.1), no como un modelo completo: el repositorio ocupa aproximadamente 0,1 GB y contiene únicamente los pesos diferenciales de bajo rango, por lo que para ejecutarlo es imprescindible descargar aparte el modelo base de 7B parámetros.
 
-El nombre del adaptador sugiere que el ajuste se ha orientado a *tool calling* (llamada a herramientas), pero esta interpretación no está confirmada: la model card publicada es la plantilla genérica de HuggingFace y todas las secciones relevantes (datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas) aparecen como "More Information Needed". No hay resultados de benchmarks, ni descripción del dataset, ni indicación del régimen de entrenamiento empleado.
+El nombre del adaptador sugiere que el ajuste se ha orientado a *tool calling* (llamada a herramientas), pero esta interpretación no está confirmada: la model card publicada es la plantilla genérica de Hugging Face y todas las secciones relevantes (datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas) aparecen como "More Information Needed". No hay resultados de benchmarks, ni descripción del dataset, ni indicación del régimen de entrenamiento empleado.
 
 Su relevancia actual es limitada y de nicho. Por un lado, ilustra el flujo habitual de personalización de un modelo abierto de 7B mediante LoRA sobre TRL, un patrón muy extendido para adaptar modelos a esquemas concretos de function calling. Por otro, con 0 descargas y 0 *likes* en el momento de la consulta, se trata de un artefacto sin validación comunitaria, sin documentación verificable y sin licencia declarada, lo que lo hace poco adecuado como componente de producción sin una evaluación previa por parte del equipo que lo adopte.
 
@@ -82,7 +82,7 @@ La única comparación que puede sostenerse con los datos disponibles es frente 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla por defecto de HuggingFace, con todas las secciones marcadas como "More Information Needed". No hay información sobre datos, hiperparámetros ni uso previsto.
+- Ausencia total de documentación: la model card es la plantilla por defecto de Hugging Face, con todas las secciones marcadas como "More Information Needed". No hay información sobre datos, hiperparámetros ni uso previsto.
 - Licencia no declarada: al no especificarse licencia en el repositorio, no puede asumirse que el uso comercial esté permitido. Aunque el modelo base es Apache 2.0, la licencia del adaptador es responsabilidad del autor y no consta.
 - Sin benchmarks ni evaluación: no existe ninguna métrica publicada. No hay evidencia de que el ajuste LoRA mejore —ni de que no degrade— las capacidades del modelo base.
 - Riesgo de olvido catastrófico: los ajustes SFT con LoRA pueden degradar capacidades generales del modelo base (razonamiento, multilingüismo, contexto largo) si el dataset de ajuste era estrecho. No hay evaluación que descarte este efecto.
@@ -95,7 +95,7 @@ La única comparación que puede sostenerse con los datos disponibles es frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aravindpersona/tooltune-sft-adapter
+- Modelo en Hugging Face: https://huggingface.co/aravindpersona/tooltune-sft-adapter
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL: https://github.com/huggingface/trl

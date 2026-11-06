@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NicholasHG25/medbot-indobert-final` es un checkpoint publicado en HuggingFace por el usuario NicholasHG25, con licencia MIT y pesos en formato safetensors. El nombre del repositorio apunta a un ajuste fino (fine-tuning) de la familia IndoBERT orientado a un caso de uso conversacional de ambito medico, si bien la model card publicada por el autor no contiene mas que la declaracion de licencia, por lo que no hay confirmacion explicita del dominio, del dataset ni del objetivo de entrenamiento.
+`NicholasHG25/medbot-indobert-final` es un checkpoint publicado en Hugging Face por el usuario NicholasHG25, con licencia MIT y pesos en formato safetensors. El nombre del repositorio apunta a un ajuste fino (fine-tuning) de la familia IndoBERT orientado a un caso de uso conversacional de ambito medico, si bien la model card publicada por el autor no contiene mas que la declaracion de licencia, por lo que no hay confirmacion explicita del dominio, del dataset ni del objetivo de entrenamiento.
 
 El unico dato cuantitativo verificado es el numero de parametros: 124.449.803, un orden de magnitud que coincide con la configuracion BERT-base, coherente con la etiqueta `bert` declarada en el repositorio. Se trata, por tanto, de un modelo encoder bidireccional de ~124 millones de parametros, no de un modelo generativo decoder-only, lo que condiciona por completo sus casos de uso: clasificacion, extraccion de informacion, respuesta a preguntas extractiva o representaciones semanticas, mas que generacion libre de texto.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32; en torno a 0,25 GB en FP16 o INT8. Cifras derivadas del recuento de parametros, no de mediciones publicadas.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no se requiere A100, H100 ni similar. Una RTX 3060, RTX 4090 o incluso una GPU integrada reciente pueden ejecutarlo sin problema.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con mas de 1 GB de memoria, y tambien en CPU con latencias aceptables para procesamiento por lotes.
-- Opciones de despliegue: al ser un modelo tipo BERT en safetensors, es compatible con HuggingFace Transformers y Optimum, y exportable a ONNX o TorchScript. No es un modelo de generacion, por lo que vLLM, llama.cpp, Ollama o TGI no son las herramientas naturales para desplegarlo (son stacks orientados a modelos causales).
+- Opciones de despliegue: al ser un modelo tipo BERT en safetensors, es compatible con Hugging Face Transformers y Optimum, y exportable a ONNX o TorchScript. No es un modelo de generacion, por lo que vLLM, llama.cpp, Ollama o TGI no son las herramientas naturales para desplegarlo (son stacks orientados a modelos causales).
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas. A modo orientativo y no verificado, un encoder de 124 M procesa lotes grandes en milisegundos en GPU moderna.
 
 ## Comparativa con modelos similares
@@ -70,10 +70,10 @@ No se dispone de datos verificados sobre este checkpoint (no hay benchmarks ni d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `NicholasHG25/medbot-indobert-final` | 124.449.803 (verificado) | No disponible | MIT | HuggingFace, 0 descargas |
-| IndoBERT base (familia de referencia) | ~124 M (no verificado) | 512 tokens (no verificado) | Apache-2.0 (no verificado) | HuggingFace |
-| mBERT (bert-base-multilingual-cased) | ~178 M (no verificado) | 512 tokens (no verificado) | Apache-2.0 (no verificado) | HuggingFace |
-| XLM-RoBERTa base | ~278 M (no verificado) | 512 tokens (no verificado) | MIT (no verificado) | HuggingFace |
+| `NicholasHG25/medbot-indobert-final` | 124.449.803 (verificado) | No disponible | MIT | Hugging Face, 0 descargas |
+| IndoBERT base (familia de referencia) | ~124 M (no verificado) | 512 tokens (no verificado) | Apache-2.0 (no verificado) | Hugging Face |
+| mBERT (bert-base-multilingual-cased) | ~178 M (no verificado) | 512 tokens (no verificado) | Apache-2.0 (no verificado) | Hugging Face |
+| XLM-RoBERTa base | ~278 M (no verificado) | 512 tokens (no verificado) | MIT (no verificado) | Hugging Face |
 
 En cualquier caso, ninguno de los tres modelos alternativos es un modelo medico especifico ni un sistema conversacional; la comparacion relevante seria contra otros fine-tunings medicos en indonesio, para los que no se ha encontrado referencia en la busqueda realizada.
 
@@ -91,5 +91,5 @@ En cualquier caso, ninguno de los tres modelos alternativos es un modelo medico 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NicholasHG25/medbot-indobert-final
+- Hugging Face: https://huggingface.co/NicholasHG25/medbot-indobert-final
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo (los resultados obtenidos correspondian a paginas de venta de horquillas de bicicleta y no guardan relacion con este modelo).

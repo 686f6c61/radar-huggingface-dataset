@@ -106,7 +106,7 @@ Comparacion con otros modelos de ~1,5 B parametros orientados a razonamiento (po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/paper-sao-single-rollout-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/paper-sao-single-rollout-1.5b
 - Receta reproducible (GitHub): https://github.com/whilehq/whileai-sdk/tree/main/recipes/papers/sao-single-rollout
 - Repositorio del SDK: https://github.com/whilehq/whileai-sdk
 - Coleccion "Papers, replicated": https://huggingface.co/collections/while-ai/papers-replicated-6ab271de22542eb550d4251c

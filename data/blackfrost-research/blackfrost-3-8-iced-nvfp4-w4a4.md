@@ -6,7 +6,7 @@ BLACKFROST-3.8-ICED-NVFP4-W4A4 es una version cuantizada del modelo multimodal B
 
 El modelo cuenta con 119.602.003.859 parametros totales segun los pesos en safetensors, y las etiquetas de la ficha indican que su arquitectura es de mezcla de expertos (mixture-of-experts, MoE), con soporte declarado de multi-token prediction (MTP) y decodificacion especulativa. Estas caracteristicas lo orientan a despliegues de inferencia de alto rendimiento, donde el objetivo es maximizar el throughput por GPU sin perder la capacidad multimodal del modelo original.
 
-La relevancia de esta publicacion es doble: por un lado, acerca un modelo de ~120.000 millones de parametros a hardware con memoria limitada gracias a la cuantizacion a 4 bits; por otro, es un ejemplo temprano de empaquetado NVFP4 dentro del ecosistema transformers. El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos. La licencia declarada es la Qwen Community License 1.0, coherente con que el modelo base pertenece a la familia Qwen (etiquetas qwen y qwen4-exp).
+La relevancia de esta publicacion es doble: por un lado, acerca un modelo de ~120.000 millones de parametros a hardware con memoria limitada gracias a la cuantizacion a 4 bits; por otro, es un ejemplo temprano de empaquetado NVFP4 dentro del ecosistema transformers. El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. La licencia declarada es la Qwen Community License 1.0, coherente con que el modelo base pertenece a la familia Qwen (etiquetas qwen y qwen4-exp).
 
 ## Especificaciones tecnicas
 
@@ -91,14 +91,14 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 - Idiomas soportados no disponibles. No se debe asumir un rendimiento homogeneo en castellano sin una evaluacion previa.
 - Longitud de contexto no disponible, lo que impide planificar casos de uso que dependan de ventanas largas o de muchas imagenes por conversacion.
 - Licencia Qwen Community License 1.0 con etiqueta license:other. Es una licencia con condiciones especificas de la familia Qwen, que habitualmente incluye clausulas de atribucion y requisitos adicionales para despliegues a gran escala. Es imprescindible revisar el texto completo antes de un uso comercial.
-- Acceso restringido (gated): la descarga requiere aceptar las condiciones en HuggingFace, lo que anade un paso burocratico a cualquier pipeline automatizado de despliegue.
+- Acceso restringido (gated): la descarga requiere aceptar las condiciones en Hugging Face, lo que anade un paso burocratico a cualquier pipeline automatizado de despliegue.
 - El repositorio ocupa 186,4 GB, muy por encima del peso teorico de los parametros cuantizados; hay que prever espacio en disco y tiempo de transferencia en consecuencia.
 - La fecha de publicacion indicada (2026-09-17) y el uso de la etiqueta qwen4-exp apuntan a un artefacto muy reciente y posiblemente experimental, con escasa validacion externa: el modelo registra 0 descargas y 0 likes en el momento de la consulta.
 - No hay evidencia de soporte en llama.cpp, Ollama o de artefactos GGUF, lo que limita su uso fuera del ecosistema transformers y NVIDIA.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Blackfrost-Research/BLACKFROST-3.8-ICED-NVFP4-W4A4
+- Ficha en Hugging Face: https://huggingface.co/Blackfrost-Research/BLACKFROST-3.8-ICED-NVFP4-W4A4
 - Modelo base: Blackfrost-AI/BLACKFROST-3.8-ICED-BF16 (referencia indicada en la ficha, enlace no verificado en la busqueda)
 - Paper, blog, repositorio o demo oficiales: no disponibles en la informacion proporcionada
 - Resultados de la busqueda web: sin resultados relevantes; las unicas URL devueltas corresponden a paginas de soporte de un producto de seguridad informatica no relacionado con el modelo

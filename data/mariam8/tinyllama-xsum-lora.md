@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos comparables especificos (otros adapta
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/mariam8/tinyllama-xsum-lora
+- Hugging Face del adaptador: https://huggingface.co/mariam8/tinyllama-xsum-lora
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Paper de TinyLlama: https://arxiv.org/html/2401.02385v2
 - Dataset XSum: https://huggingface.co/datasets/EdinburghNLP/xsum

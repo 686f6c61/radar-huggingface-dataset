@@ -67,9 +67,9 @@ El rendimiento de decodificación medido en un AMD Ryzen AI Max+ 395 (gfx1151, V
 
 | Modelo | Parametros totales | Activos | Contexto | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | ~180B | 6B | 262K | no disponible | qwen-community-1.0 | HuggingFace |
-| Qwen3.8-27B (dense) | 27B | 27B | no disponible | no disponible | qwen-community-1.0 | HuggingFace |
-| Esta build (IQ4XS-NGQ4) | ~177B | 6B | 262K (probado 6.5K) | 82,3% | qwen-community-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next (base) | ~180B | 6B | 262K | no disponible | qwen-community-1.0 | Hugging Face |
+| Qwen3.8-27B (dense) | 27B | 27B | no disponible | no disponible | qwen-community-1.0 | Hugging Face |
+| Esta build (IQ4XS-NGQ4) | ~177B | 6B | 262K (probado 6.5K) | 82,3% | qwen-community-1.0 | Hugging Face |
 
 No se dispone de datos de benchmarks para el modelo base sin cuantizar ni para el Qwen3.8-27B en la información proporcionada. La comparativa con el 27B dense se limita a los resultados de HumanEval publicados por el autor para sus propias cuantizaciones, donde esta build supera al Q4_K_M del 27B (75,6%) y se acerca al Q6_K (82,9%), a pesar de tener un bits-per-weight promedio más bajo, probablemente debido a la arquitectura MoE y al mayor número total de parámetros.
 
@@ -86,10 +86,10 @@ No se dispone de datos de benchmarks para el modelo base sin cuantizar ni para e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF
 - Modelo base (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Modelo Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Página de Qwen3.8-Flash en QwenCloud: https://www.qwencloud.com/models/qwen3.8-flash
 - PR #27742 de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/27742
 - Rama de llama.cpp con soporte qwen4exp: https://github.com/danielhanchen/llama.cpp (rama `qwen4exp/qwen3.8-flash-next`)

@@ -4,7 +4,7 @@
 
 llmware/bling-qwen-3.5-4b es un modelo publicado por llmware, el estudio conocido por su familia BLING de modelos pequenos orientados a flujos de trabajo RAG y function calling. El identificador y la etiqueta `qwen3_5` sugieren que se trata de un ajuste fino derivado de un modelo base de la familia Qwen 3.5 con aproximadamente 4.000 millones de parametros, aunque la model card publicada no confirma la arquitectura, el linaje de entrenamiento ni las caracteristicas del modelo base.
 
-El repositorio ocupa 8,4 GB, un tamano coherente con pesos en precision bf16/fp16 para un modelo de ~4B parametros (4 x 2 bytes = ~8 GB, mas tokenizer y ficheros auxiliares). Los tags de HuggingFace unicamente declaran `pytorch`, `qwen3_5` y licencia Apache-2.0; no se declaran idiomas, pipeline, ni se listan ficheros GGUF u otras cuantizaciones.
+El repositorio ocupa 8,4 GB, un tamano coherente con pesos en precision bf16/fp16 para un modelo de ~4B parametros (4 x 2 bytes = ~8 GB, mas tokenizer y ficheros auxiliares). Los tags de Hugging Face unicamente declaran `pytorch`, `qwen3_5` y licencia Apache-2.0; no se declaran idiomas, pipeline, ni se listan ficheros GGUF u otras cuantizaciones.
 
 La relevancia de este lanzamiento reside en su encaje en el segmento de modelos de 4B ejecutables en hardware de consumo y en CPU, un rango en el que llmware ha trabajado historicamente para tareas de extraccion de datos, enrutado de funciones y automatizacion documental. No obstante, la informacion publica disponible es practicamente nula (0 descargas y 0 likes en el momento de la consulta, model card vacia salvo la linea de licencia), por lo que cualquier evaluacion debe considerarse provisional.
 
@@ -77,11 +77,11 @@ Los datos de la columna de este modelo son desconocidos; los de las alternativas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| llmware/bling-qwen-3.5-4b | no disponible (~4B estimados) | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3-4B | 4,0B | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 | Pesos abiertos en HuggingFace |
-| Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | Pesos abiertos en HuggingFace |
-| Phi-4-mini-instruct | 3,8B | 128.000 tokens | MIT | Pesos abiertos en HuggingFace |
-| Gemma-3-4B-it | 4,0B | 128.000 tokens | Gemma Terms of Use | Pesos abiertos en HuggingFace |
+| llmware/bling-qwen-3.5-4b | no disponible (~4B estimados) | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3-4B | 4,0B | 32.768 tokens nativos, 131.072 con YaRN | Apache-2.0 | Pesos abiertos en Hugging Face |
+| Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | Pesos abiertos en Hugging Face |
+| Phi-4-mini-instruct | 3,8B | 128.000 tokens | MIT | Pesos abiertos en Hugging Face |
+| Gemma-3-4B-it | 4,0B | 128.000 tokens | Gemma Terms of Use | Pesos abiertos en Hugging Face |
 
 En rendimiento no es posible establecer comparacion alguna, ya que no existen benchmarks publicados para bling-qwen-3.5-4b. La ventaja potencial del modelo frente a las alternativas seria su integracion con el ecosistema llmware, no un rendimiento superior demostrado.
 
@@ -98,7 +98,7 @@ En rendimiento no es posible establecer comparacion alguna, ya que no existen be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/llmware/bling-qwen-3.5-4b
+- Hugging Face: https://huggingface.co/llmware/bling-qwen-3.5-4b
 - Repositorio de llmware: no disponible en la informacion proporcionada
 - Paper o blog de lanzamiento: no disponible
 - Demo o espacio asociado: no disponible

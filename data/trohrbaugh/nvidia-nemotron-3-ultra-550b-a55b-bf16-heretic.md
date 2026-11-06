@@ -85,7 +85,7 @@ No se han encontrado datos de otros modelos comparables (p.ej., Llama, Qwen, Dee
 
 ## Enlaces
 
-- Repositorio HuggingFace de la versión heretic: https://huggingface.co/trohrbaugh/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16-heretic
+- Repositorio Hugging Face de la versión heretic: https://huggingface.co/trohrbaugh/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16-heretic
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Herramienta Heretic (original): https://github.com/p-e-w/heretic
 - Fork personalizado de Heretic: https://github.com/timrohrbaugh/heretic

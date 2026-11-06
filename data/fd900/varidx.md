@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FD900/VariDx es un repositorio alojado en HuggingFace por el usuario FD900, publicado bajo licencia MIT. La informacion disponible en la propia pagina del modelo es practicamente inexistente: la model card se limita a declarar la licencia y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas, pipeline declarado ni pesos publicados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion identicas (2026-10-10T02:28:36Z).
+FD900/VariDx es un repositorio alojado en Hugging Face por el usuario FD900, publicado bajo licencia MIT. La informacion disponible en la propia pagina del modelo es practicamente inexistente: la model card se limita a declarar la licencia y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas, pipeline declarado ni pesos publicados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion identicas (2026-10-10T02:28:36Z).
 
-Por el nombre, "VariDx" coincide con la denominacion de Varidx, una empresa que comercializa una plataforma de ciudad inteligente basada en IA (agregacion de datos de sensores IoT, camaras y fuentes externas en un panel unico). Sin embargo, no existe ninguna evidencia en el repositorio de HuggingFace que vincule este artefacto con dicha plataforma ni que confirme que se trate de un modelo de lenguaje, vision u otro tipo de componente. Los resultados de busqueda web tampoco aportan documentacion tecnica asociada al repositorio.
+Por el nombre, "VariDx" coincide con la denominacion de Varidx, una empresa que comercializa una plataforma de ciudad inteligente basada en IA (agregacion de datos de sensores IoT, camaras y fuentes externas en un panel unico). Sin embargo, no existe ninguna evidencia en el repositorio de Hugging Face que vincule este artefacto con dicha plataforma ni que confirme que se trate de un modelo de lenguaje, vision u otro tipo de componente. Los resultados de busqueda web tampoco aportan documentacion tecnica asociada al repositorio.
 
 En consecuencia, esta ficha no puede caracterizar el modelo con rigor: no hay informacion verificable sobre arquitectura, tamano, contexto, cuantizaciones, rendimiento ni requisitos de despliegue. Se recomienda tratar el repositorio como un artefacto sin documentacion publica hasta que el autor publique una model card completa y pesos utilizables.
 
@@ -25,7 +25,7 @@ En consecuencia, esta ficha no puede caracterizar el modelo con rigor: no hay in
 
 No disponible. La model card del repositorio no describe la arquitectura (transformer, MoE, SSM, hibrida u otra), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documentan innovaciones tecnicas asociadas.
 
-La unica informacion estructurada publicada es la declaracion de licencia MIT en el frontmatter YAML. El campo `pipeline` de HuggingFace aparece como no disponible, lo que impide clasificar la tarea del artefacto (text-generation, image-classification, feature-extraction, etc.).
+La unica informacion estructurada publicada es la declaracion de licencia MIT en el frontmatter YAML. El campo `pipeline` de Hugging Face aparece como no disponible, lo que impide clasificar la tarea del artefacto (text-generation, image-classification, feature-extraction, etc.).
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ No disponible. Al no existir model card, pesos publicados ni ejemplos de uso, no
 
 ## Casos de uso
 
-No disponible. No es posible proponer casos de uso concretos y realistas sin conocer la tarea, la arquitectura, el tamano ni el formato de pesos del artefacto. La coincidencia nominal con la plataforma Varidx de ciudad inteligente no constituye evidencia suficiente: se trata de un producto comercial independiente y el repositorio de HuggingFace no referencia dicha plataforma ni incluye documentacion que la relacione con este modelo.
+No disponible. No es posible proponer casos de uso concretos y realistas sin conocer la tarea, la arquitectura, el tamano ni el formato de pesos del artefacto. La coincidencia nominal con la plataforma Varidx de ciudad inteligente no constituye evidencia suficiente: se trata de un producto comercial independiente y el repositorio de Hugging Face no referencia dicha plataforma ni incluye documentacion que la relacione con este modelo.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FD900/VariDx
+- Repositorio en Hugging Face: https://huggingface.co/FD900/VariDx
 - Varidx (plataforma de ciudad inteligente, posible coincidencia nominal): https://varidx.io/
 - Varidx en LinkedIn: https://www.linkedin.com/company/varidxsmartcity
 - Articulo de Varidx sobre IA para ciudades inteligentes: https://varidx.io/ai-for-smart-cities-innovation-intelligence-impact-shaping-the-future-together/

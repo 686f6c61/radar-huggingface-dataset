@@ -6,7 +6,7 @@ tarteel-warsh-asr-onnx es una conversion al formato ONNX con cuantizacion a ente
 
 El modelo resuelve un caso de uso muy concreto: transcribir recitacion coranica en la variante de lectura Warsh y comparar la salida con el texto esperado para detectar errores del recitador. Al estar empaquetado en ONNX INT8, el peso total del repositorio es de aproximadamente 0,1 GB, lo que permite su descarga y ejecucion en el lado del cliente. El autor reporta que, sobre un conjunto de 84 versiculos de prueba, 81 transcripciones coinciden exactamente con las del modelo original (un 96,4 % de acuerdo), lo que situa la perdida por cuantizacion en torno al 3,6 % de los casos.
 
-Se trata de un artefacto de nicho, no de un modelo de proposito general. Su relevancia actual reside en demostrar que un ASR especializado en arabe coranico puede desplegarse integramente en el navegador. La ficha se apoya unicamente en los metadatos de HuggingFace y en la model card del autor, que esta redactada en frances.
+Se trata de un artefacto de nicho, no de un modelo de proposito general. Su relevancia actual reside en demostrar que un ASR especializado en arabe coranico puede desplegarse integramente en el navegador. La ficha se apoya unicamente en los metadatos de Hugging Face y en la model card del autor, que esta redactada en frances.
 
 ## Especificaciones tecnicas
 
@@ -94,6 +94,6 @@ Frente al modelo original, la ventaja de esta version es el formato ONNX INT8 pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olabrini/tarteel-warsh-asr-onnx
+- Modelo en Hugging Face: https://huggingface.co/olabrini/tarteel-warsh-asr-onnx
 - Modelo base: https://huggingface.co/tarteel-ai/whisper-base-ar-quran
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

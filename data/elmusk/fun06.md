@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ElMusk/fun06` es un repositorio de modelo alojado en HuggingFace por el usuario ElMusk, publicado y actualizado el 14 de septiembre de 2026. El repositorio ocupa 16,2 GB y acumula 0 descargas y 1 like en el momento de la consulta. No tiene model card pública con informacion util: la seccion de pipeline aparece vacia, no se declara licencia, no se enumeran idiomas soportados y la unica etiqueta presente es `region:us`, que es una marca de metadatos geograficos sin valor tecnico.
+`ElMusk/fun06` es un repositorio de modelo alojado en Hugging Face por el usuario ElMusk, publicado y actualizado el 14 de septiembre de 2026. El repositorio ocupa 16,2 GB y acumula 0 descargas y 1 like en el momento de la consulta. No tiene model card pública con informacion util: la seccion de pipeline aparece vacia, no se declara licencia, no se enumeran idiomas soportados y la unica etiqueta presente es `region:us`, que es una marca de metadatos geograficos sin valor tecnico.
 
 En el estado actual de la informacion disponible no es posible determinar la arquitectura, el numero de parametros, la longitud de contexto, el regimen de entrenamiento ni las capacidades del modelo. Tampoco hay resultados de benchmarks, documentacion de uso, ejemplos de inferencia o ficha de licencia. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a paginas de ayuda de YouTube en vietnamita, chino, indonesio y aleman, completamente ajenas al objeto de esta ficha.
 
@@ -20,7 +20,7 @@ La relevancia de esta entrada es, por tanto, metodologica mas que tecnica: sirve
 | Licencia | no disponible |
 | Formato de pesos | no disponible (el tamano del repositorio, 16,2 GB, es compatible con pesos en precision de 16 bits, pero no se ha confirmado) |
 | Autor | ElMusk |
-| Identificador en HuggingFace | ElMusk/fun06 |
+| Identificador en Hugging Face | ElMusk/fun06 |
 | Pipeline declarado | no disponible |
 | Etiquetas | region:us |
 | Tamano del repositorio | 16,2 GB |
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| ElMusk/fun06 | no disponible | no disponible | no disponible | repositorio publico en HuggingFace, 0 descargas | no disponible |
+| ElMusk/fun06 | no disponible | no disponible | no disponible | repositorio publico en Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no identificables con la informacion disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ElMusk/fun06
+- Repositorio en Hugging Face: https://huggingface.co/ElMusk/fun06
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Verity-27B-v2 es un modelo de lenguaje publicado en HuggingFace por el usuario Veilance bajo licencia Apache 2.0. La model card del repositorio se limita a declarar la licencia: no incluye descripcion del modelo, arquitectura, composicion de datos de entrenamiento, idiomas soportados, longitud de contexto ni resultados de evaluacion. La denominacion "27B" del identificador sugiere un transformer denso de aproximadamente 27.000 millones de parametros, pero el autor no confirma ese dato en ninguna parte.
+Verity-27B-v2 es un modelo de lenguaje publicado en Hugging Face por el usuario Veilance bajo licencia Apache 2.0. La model card del repositorio se limita a declarar la licencia: no incluye descripcion del modelo, arquitectura, composicion de datos de entrenamiento, idiomas soportados, longitud de contexto ni resultados de evaluacion. La denominacion "27B" del identificador sugiere un transformer denso de aproximadamente 27.000 millones de parametros, pero el autor no confirma ese dato en ninguna parte.
 
 En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado el 6 de octubre de 2026, por lo que no existe validacion alguna por parte de la comunidad ni evidencia publica de su comportamiento. Tampoco se publican pesos cuantizados, ficheros de configuracion visibles ni pipeline declarado en la plataforma.
 
@@ -20,7 +20,7 @@ Su relevancia actual es, por tanto, limitada y de caracter exploratorio: puede i
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | Veilance/Verity-27B-v2 |
+| Identificador en Hugging Face | Veilance/Verity-27B-v2 |
 | Autor | Veilance |
 | Fecha de publicacion | 6 de octubre de 2026 (creacion y ultima actualizacion) |
 | Descargas / likes | 0 / 0 |
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento, contexto ni arquitectura de Verity-27B-v2
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Verity-27B-v2 | no disponible (identificador sugiere ~27B) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Verity-27B-v2 | no disponible (identificador sugiere ~27B) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-32B | ~32.500 millones | 128.000 tokens | Apache 2.0 | Ampliamente desplegado y evaluado |
 | Gemma 2 27B | ~27.000 millones | 8.192 tokens | Licencia Gemma (con clausulas de uso) | Ampliamente desplegado y evaluado |
 | Mistral Small 3 (24B) | ~24.000 millones | 32.000 tokens | Apache 2.0 | Ampliamente desplegado y evaluado |
@@ -101,7 +101,7 @@ La diferencia practica mas relevante no es de especificaciones, sino de madurez:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Veilance/Verity-27B-v2
+- Hugging Face: https://huggingface.co/Veilance/Verity-27B-v2
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio del autor: no disponible

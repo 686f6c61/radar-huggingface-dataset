@@ -60,7 +60,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (CNN-tra
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Solovyovfield/model_047494216_cnn_transformer_small)
+- [Repositorio en Hugging Face](https://huggingface.co/Solovyovfield/model_047494216_cnn_transformer_small)
 - [A survey of the Vision Transformers and their CNN (arXiv)](https://arxiv.org/abs/2305.09880) — contexto sobre arquitecturas híbridas CNN-transformer.
 - [Convolutional Neural Network (CNN) en GeeksforGeeks](https://www.geeksforgeeks.org/deep-learning/convolutional-neural-network-cnn-in-machine-learning/) — referencia general sobre CNNs.
 - [A survey of the vision transformers and their CNN... (Springer)](https://link.springer.com/article/10.1007/s10462-023-10595-0) — artículo de revisión sobre estas arquitecturas.

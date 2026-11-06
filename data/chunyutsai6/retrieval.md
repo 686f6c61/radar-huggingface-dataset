@@ -73,5 +73,5 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- [HuggingFace - Chunyutsai6/retrieval](https://huggingface.co/Chunyutsai6/retrieval)
+- [Hugging Face - Chunyutsai6/retrieval](https://huggingface.co/Chunyutsai6/retrieval)
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de código) en la búsqueda web.

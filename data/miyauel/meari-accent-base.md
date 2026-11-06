@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meari accent base | TTS (etapa SoVITS ONNX + valores de voz) | no disponible | no aplica | MIT + OpenRAIL-M | HuggingFace (Miyauel/meari-accent-base) |
-| GPT-SoVITS v2ProPlus (lj1995/GPT-SoVITS) | TTS completo (GPT + SoVITS) | no disponible | no aplica | MIT | HuggingFace (lj1995/GPT-SoVITS) |
-| Supertonic 3 | TTS con voces predefinidas | no disponible | no aplica | OpenRAIL-M | HuggingFace (supertone-oss-archive/supertonic-3) |
+| Meari accent base | TTS (etapa SoVITS ONNX + valores de voz) | no disponible | no aplica | MIT + OpenRAIL-M | Hugging Face (Miyauel/meari-accent-base) |
+| GPT-SoVITS v2ProPlus (lj1995/GPT-SoVITS) | TTS completo (GPT + SoVITS) | no disponible | no aplica | MIT | Hugging Face (lj1995/GPT-SoVITS) |
+| Supertonic 3 | TTS con voces predefinidas | no disponible | no aplica | OpenRAIL-M | Hugging Face (supertone-oss-archive/supertonic-3) |
 
 La comparacion con otros sistemas TTS de la misma categoria (por ejemplo, Piper o Coqui TTS) no esta disponible en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ La comparacion con otros sistemas TTS de la misma categoria (por ejemplo, Piper 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Miyauel/meari-accent-base
+- Modelo en Hugging Face: https://huggingface.co/Miyauel/meari-accent-base
 - Repositorio del motor Meari: https://github.com/Miyauel/Meari
 - Paquete regional de ejemplo: https://huggingface.co/Miyauel/meari-accent-gyeongsang
 - Pesos GPT-SoVITS v2ProPlus: https://huggingface.co/lj1995/GPT-SoVITS

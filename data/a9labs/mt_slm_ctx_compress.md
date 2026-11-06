@@ -4,7 +4,7 @@
 
 `mt_slm_ctx_compress` es un modelo de lenguaje especializado publicado por A9Labs como participante en la arena `ctx_compress` de la plataforma Microtensor. Se trata de un ajuste fino mediante LoRA (rango 64, fusionado y exportado en bf16) sobre el modelo base `ibm-granite/granite-4.0-h-micro` de IBM, fijado en el commit `d5f01a3ea75f`. El objetivo declarado es la compactación de sesiones de agente ("agent session compaction"): resumir o comprimir el historial de una conversación de agente para que quepa en la ventana de contexto de un modelo posterior sin perder información operativa relevante.
 
-El modelo hereda la arquitectura híbrida de Granite 4.0, etiquetada en HuggingFace como `granitemoehybrid`, y cuenta con 3.191.396.096 parámetros totales según los pesos en safetensors, con un repositorio de 6,4 GB. Al derivar de `granite-4.0-h-micro`, se espera que conserve las capacidades generales del base (razonamiento, código, tool calling, multilingüismo), aunque la model card no aporta detalles adicionales sobre idiomas, contexto efectivo ni evaluación.
+El modelo hereda la arquitectura híbrida de Granite 4.0, etiquetada en Hugging Face como `granitemoehybrid`, y cuenta con 3.191.396.096 parámetros totales según los pesos en safetensors, con un repositorio de 6,4 GB. Al derivar de `granite-4.0-h-micro`, se espera que conserve las capacidades generales del base (razonamiento, código, tool calling, multilingüismo), aunque la model card no aporta detalles adicionales sobre idiomas, contexto efectivo ni evaluación.
 
 Su relevancia es acotada y muy específica: es un artefacto de competición orientado a una tarea concreta dentro de un ecosistema cerrado (Microtensor), con licencia propia distinta de la Apache 2.0 del modelo base. No hay descargas ni likes en el momento de redactar esta ficha, y no se han publicado resultados de benchmarks ni detalles de entrenamiento más allá del método LoRA.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `A9Labs/mt_slm_ctx_compress` | 3,19 B | no disponible | `microtensor-submission` | HuggingFace, 0 descargas | Ajuste LoRA para compactación de contexto |
-| `ibm-granite/granite-4.0-h-micro` (base) | ~3 B | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente usado | Modelo generalista del que deriva |
+| `A9Labs/mt_slm_ctx_compress` | 3,19 B | no disponible | `microtensor-submission` | Hugging Face, 0 descargas | Ajuste LoRA para compactación de contexto |
+| `ibm-granite/granite-4.0-h-micro` (base) | ~3 B | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente usado | Modelo generalista del que deriva |
 | Alternativas de ~3 B para summarización | varía | varía | varía | varía | No se dispone de comparación directa publicada |
 
 No se dispone de datos de rendimiento comparativos entre este ajuste y sus alternativas; la comparación se limita a parámetros, licencia y disponibilidad.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos entre este ajuste y sus alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/A9Labs/mt_slm_ctx_compress
+- Hugging Face: https://huggingface.co/A9Labs/mt_slm_ctx_compress
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-micro
 - Términos de licencia: https://www.microtensor.cloud/terms
 - Plataforma Microtensor: https://www.microtensor.cloud

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-atom-slm (tambien referenciado como ATOM-1) es un modelo de lenguaje causal de arquitectura Gemma desarrollado por el usuario Asaadzx y publicado en HuggingFace. Se trata de un modelo entrenado desde cero, no de un ajuste fino de un checkpoint ya publicado, y se distribuye en formato GGUF para su uso con llama.cpp o LM Studio. Con aproximadamente 68,7 millones de parametros, 4 capas, un tamano oculto de 256 y una ventana de contexto de 512 tokens, es un experimento de escala muy reducida.
+atom-slm (tambien referenciado como ATOM-1) es un modelo de lenguaje causal de arquitectura Gemma desarrollado por el usuario Asaadzx y publicado en Hugging Face. Se trata de un modelo entrenado desde cero, no de un ajuste fino de un checkpoint ya publicado, y se distribuye en formato GGUF para su uso con llama.cpp o LM Studio. Con aproximadamente 68,7 millones de parametros, 4 capas, un tamano oculto de 256 y una ventana de contexto de 512 tokens, es un experimento de escala muy reducida.
 
 El modelo se presenta explicitamente como experimental y subentrenado. El propio autor advierte de que no genera texto con sentido: en decodificacion voraz tiende a repetir el ultimo token de entrada (por ejemplo, ante el prompt "The quick brown fox" produce "fox fox fox ..."). Se comparte con fines de investigacion y desarrollo, no para produccion.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| atom-slm (ATOM-1) | ~68,7 M | 512 | no disponible | HuggingFace (GGUF) | experimental, subentrenado |
+| atom-slm (ATOM-1) | ~68,7 M | 512 | no disponible | Hugging Face (GGUF) | experimental, subentrenado |
 | GPT-2 small | 124 M | 1.024 | MIT | Ampliamente disponible | entrenado, usable |
-| Qwen2-0.5B | ~0,5 B | 32.768 | Apache 2.0 | HuggingFace | entrenado, usable |
-| TinyLlama-1.1B | ~1,1 B | 2.048 | Apache 2.0 | HuggingFace | entrenado, usable |
+| Qwen2-0.5B | ~0,5 B | 32.768 | Apache 2.0 | Hugging Face | entrenado, usable |
+| TinyLlama-1.1B | ~1,1 B | 2.048 | Apache 2.0 | Hugging Face | entrenado, usable |
 
 Los modelos comparables pertenecen a la categoria de LLM muy pequenos, pero a diferencia de atom-slm estan entrenados hasta un punto de utilidad practica. La comparacion de parametros y contexto se basa en datos publicos ampliamente conocidos; los valores de rendimiento de atom-slm no estan disponibles porque no se han publicado benchmarks.
 
@@ -93,6 +93,6 @@ Los modelos comparables pertenecen a la categoria de LLM muy pequenos, pero a di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Asaadzx/atom-slm
+- Hugging Face: https://huggingface.co/Asaadzx/atom-slm
 - Fichero de pesos: `atom_slm_f16.gguf` (SHA256: 0e9f16da00580de210b2b1df1b931efcc9ec76601043064b0cd47f9a5fe33728)
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion proporcionada.

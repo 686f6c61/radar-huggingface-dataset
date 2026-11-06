@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-60k` es una política robótica (vision-language-action, VLA) resultado del ajuste fino de `lerobot/pi05_base` sobre el conjunto de datos `Myungkyu/real_workbench-taco-keyframe-gemini`. Lo publica el usuario de HuggingFace jaehyunkang y está pensado para ejecutar cuatro tareas de manipulación en un banco de trabajo real, tomando como entrada dos vistas de cámara (exterior y muñeca) más una instrucción textual de subtarea. No es un modelo de lenguaje conversacional: su salida son acciones de control, no texto.
+El modelo `jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-60k` es una política robótica (vision-language-action, VLA) resultado del ajuste fino de `lerobot/pi05_base` sobre el conjunto de datos `Myungkyu/real_workbench-taco-keyframe-gemini`. Lo publica el usuario de Hugging Face jaehyunkang y está pensado para ejecutar cuatro tareas de manipulación en un banco de trabajo real, tomando como entrada dos vistas de cámara (exterior y muñeca) más una instrucción textual de subtarea. No es un modelo de lenguaje conversacional: su salida son acciones de control, no texto.
 
 Técnicamente es un artefacto de inferencia de 4.143.404.816 parámetros (~4,14 mil millones) almacenado en safetensors, con un repositorio de 9,4 GB. El checkpoint corresponde al paso 60.000 de optimización, con batch global 64, 4 GPU y semilla 42. La arquitectura hereda la familia Pi0.5 de LeRobot (backbone tipo PaliGemma, según la referencia del tokenizer a `google/paligemma-3b-pt-224`) y genera fragmentos de acción de horizonte 50 mediante 10 pasos de denoising.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-60k | 4.143.404.816 (~4,14 mil millones) | 2 vistas 224×224, estado de 8 dims, instrucción de subtarea | No disponible | Repositorio público en HuggingFace, 0 descargas y 0 likes en el momento del análisis |
-| lerobot/pi05_base (modelo base) | No disponible | No disponible | No disponible | Público en HuggingFace, referenciado como base del ajuste fino |
+| jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-60k | 4.143.404.816 (~4,14 mil millones) | 2 vistas 224×224, estado de 8 dims, instrucción de subtarea | No disponible | Repositorio público en Hugging Face, 0 descargas y 0 likes en el momento del análisis |
+| lerobot/pi05_base (modelo base) | No disponible | No disponible | No disponible | Público en Hugging Face, referenciado como base del ajuste fino |
 | Otras políticas VLA de la familia Pi0, OpenVLA o GR00T | No disponible | No disponible | No disponible | No hay datos verificados en la información proporcionada |
 
 No se dispone de cifras de rendimiento comparadas entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, formato de entrada y disponibilidad.
@@ -84,7 +84,7 @@ No se dispone de cifras de rendimiento comparadas entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-taco-keyframe-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Tokenizer referenciado: https://huggingface.co/google/paligemma-3b-pt-224

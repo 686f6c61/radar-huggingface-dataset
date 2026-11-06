@@ -97,7 +97,7 @@ Notas del autor: la tasa de parseo del base en MATH esta subestimada porque el 1
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lynnix0217/cs2881-hw1-sft-sheldon-B
+- Hugging Face: https://huggingface.co/Lynnix0217/cs2881-hw1-sft-sheldon-B
 - Repositorio de codigo, artefactos de evaluacion y *worklog*: https://github.com/harvard-cs2881f26/hw1-chadha-xu-zou
 - Checkpoint hermano (arm E, STEM = MATH): https://huggingface.co/Lynnix0217/cs2881-hw1-sft-math-E
 - Checkpoint hermano (arm E, STEM = OpenBookQA): https://huggingface.co/Lynnix0217/cs2881-hw1-sft-openbookqa-E

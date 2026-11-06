@@ -79,7 +79,7 @@ No se dispone de comparativas con otros modelos de codificación como DeepSeek-C
 
 ## Enlaces
 
-- [Checkpoint en HuggingFace](https://huggingface.co/AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-MXFP4)
+- [Checkpoint en Hugging Face](https://huggingface.co/AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-MXFP4)
 - [Modelo base Qwen/Qwen3-Coder-Next](https://huggingface.co/Qwen/Qwen3-Coder-Next)
 - [Colección Qwen3-Coder-Next de AutomatosX](https://huggingface.co/collections/AutomatosX/qwen3-coder-next)
 - [Certificado Tier 1 del checkpoint](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen3-coder-next-axq-mxfp4-tier1.md)

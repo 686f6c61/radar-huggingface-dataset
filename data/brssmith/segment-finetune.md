@@ -71,8 +71,8 @@ No disponible. No se han publicado parámetros, rendimiento ni pesos, por lo que
 
 ## Enlaces
 
-- [HuggingFace: brssmith/segment-finetune](https://huggingface.co/brssmith/segment-finetune)
+- [Hugging Face: brssmith/segment-finetune](https://huggingface.co/brssmith/segment-finetune)
 - [Microsoft Learn — AI model fine-tuning concepts](https://learn.microsoft.com/en-us/windows/ai/fine-tuning)
 - [GitHub — SAM 3 (facebookresearch/sam3)](https://github.com/facebookresearch/sam3)
 - [GitHub — finetune-anything (ziqi-jin/finetune-anything)](https://github.com/ziqi-jin/finetune-anything)
-- [HuggingFace Cookbook — Fine-tuning semantic segmentation](https://huggingface.co/learn/cookbook/semantic_segmentation_fine_tuning_inference)
+- [Hugging Face Cookbook — Fine-tuning semantic segmentation](https://huggingface.co/learn/cookbook/semantic_segmentation_fine_tuning_inference)

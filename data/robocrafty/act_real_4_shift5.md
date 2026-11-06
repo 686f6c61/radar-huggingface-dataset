@@ -88,7 +88,7 @@ No se dispone de datos numericos comparativos publicados en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboCrafty/act_real_4_shift5
+- Modelo en Hugging Face: https://huggingface.co/RoboCrafty/act_real_4_shift5
 - Dataset de entrenamiento: https://huggingface.co/datasets/RoboCrafty/parol6_stack_real_4_shift5
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=RoboCrafty/parol6_stack_real_4_shift5
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705 (arXiv 2304.13705)

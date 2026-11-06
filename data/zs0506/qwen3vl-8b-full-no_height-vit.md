@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zs0506/qwen3vl-8B-full-no_height-vit` es un modelo multimodal de la familia Qwen3-VL publicado en HuggingFace por el usuario `zs0506`, aparentemente un ajuste fino "full" sobre un checkpoint Qwen3-VL de ~8.000 millones de parametros. El repositorio se creo el 13 de septiembre de 2026, ocupa 17,5 GB y unicamente contiene pesos en formato safetensors con la etiqueta de arquitectura `qwen3_vl`. No incorpora model card, ni descripcion de datos de entrenamiento, ni resultados de evaluacion, por lo que la informacion verificable es minima.
+`zs0506/qwen3vl-8B-full-no_height-vit` es un modelo multimodal de la familia Qwen3-VL publicado en Hugging Face por el usuario `zs0506`, aparentemente un ajuste fino "full" sobre un checkpoint Qwen3-VL de ~8.000 millones de parametros. El repositorio se creo el 13 de septiembre de 2026, ocupa 17,5 GB y unicamente contiene pesos en formato safetensors con la etiqueta de arquitectura `qwen3_vl`. No incorpora model card, ni descripcion de datos de entrenamiento, ni resultados de evaluacion, por lo que la informacion verificable es minima.
 
 El nombre del repositorio sugiere tres decisiones de diseno: un ajuste completo de pesos (frente a LoRA/QLoRA), la eliminacion de la componente de altura en el preprocesamiento (o en las posiciones absolutas) de las imagenes, y algun tipo de modificacion del vision transformer. Estas interpretaciones son inferencias a partir del identificador y no estan confirmadas por documentacion alguna del autor.
 
@@ -58,7 +58,7 @@ Al no existir model card ni commit de datos, no es posible verificar ninguna inn
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No hay cifras de MMLU, MMMU, DocVQA, HumanEval, GSM8K ni de ninguna otra evaluacion, ni en el repositorio de HuggingFace ni en los resultados de busqueda consultados (que devolvieron unicamente paginas de inicio de sesion de Microsoft Office, sin relacion con el modelo).
+No hay cifras de MMLU, MMMU, DocVQA, HumanEval, GSM8K ni de ninguna otra evaluacion, ni en el repositorio de Hugging Face ni en los resultados de busqueda consultados (que devolvieron unicamente paginas de inicio de sesion de Microsoft Office, sin relacion con el modelo).
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No hay cifras de MMLU, MMMU, DocVQA, HumanEval, GSM8K ni de ninguna otra evaluac
 - GPU de consumo: cabe en RTX 4090, RTX 3090 y RTX 4080 (24/16 GB) en bf16 con contexto moderado; en tarjetas de 12-16 GB conviene cuantizar a int8 o int4.
 - Opciones de despliegue: vLLM y SGLang para safetensors; TGI como alternativa; llama.cpp y Ollama requieren convertir previamente los pesos a GGUF, conversion que no se proporciona en el repositorio.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni configuracion de referencia (tamano de lote, longitud de prompt, hardware) con la que estimarlas.
-- Almacenamiento: 17,5 GB de descarga mas el espacio de cache de HuggingFace; prever al menos 40 GB libres si se generan copias cuantizadas.
+- Almacenamiento: 17,5 GB de descarga mas el espacio de cache de Hugging Face; prever al menos 40 GB libres si se generan copias cuantizadas.
 
 ## Comparativa con modelos similares
 
@@ -76,10 +76,10 @@ No se dispone de especificaciones verificadas de este checkpoint. La tabla sigui
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zs0506/qwen3vl-8B-full-no_height-vit | ~8.000 M (dato del repo: 770,288, inconsistente) | no disponible | no disponible (sin benchmarks) | no disponible | Repositorio HuggingFace, 10 descargas, solo safetensors |
-| Qwen3-VL-8B (modelo base presumible) | ~8.000 M | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en HuggingFace |
+| zs0506/qwen3vl-8B-full-no_height-vit | ~8.000 M (dato del repo: 770,288, inconsistente) | no disponible | no disponible (sin benchmarks) | no disponible | Repositorio Hugging Face, 10 descargas, solo safetensors |
+| Qwen3-VL-8B (modelo base presumible) | ~8.000 M | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en Hugging Face |
 | Qwen2.5-VL-7B-Instruct | ~7.000 M | 128.000 tokens (referencia publica) | Metricas publicas en la model card original | Licencia Qwen (referencia publica) | Amplia disponibilidad, incluidas cuantizaciones GGUF |
-| InternVL3-8B | ~8.000 M | no disponible en esta busqueda | Metricas publicas en su model card | Licencia especifica del proyecto | Publico en HuggingFace |
+| InternVL3-8B | ~8.000 M | no disponible en esta busqueda | Metricas publicas en su model card | Licencia especifica del proyecto | Publico en Hugging Face |
 
 La comparacion rigurosa no es posible porque el repositorio analizado carece de model card, licencia y evaluaciones. Cualquier afirmacion de superioridad o inferioridad frente a alternativas seria especulativa.
 
@@ -98,6 +98,6 @@ La comparacion rigurosa no es posible porque el repositorio analizado carece de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-full-no_height-vit
+- Repositorio Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-full-no_height-vit
 
 No se han encontrado enlaces adicionales relevantes. Los resultados de la busqueda web devolvieron exclusivamente paginas de inicio de sesion de Microsoft (Outlook, Office, Microsoft 365) sin ninguna relacion con el modelo, por lo que no se dispone de papers, blogs, repositorios de codigo ni demos asociados a este checkpoint.

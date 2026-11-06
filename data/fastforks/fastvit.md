@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fastforks/fastvit
+- Repositorio en Hugging Face: https://huggingface.co/fastforks/fastvit
 - Pesos originales (timm): https://huggingface.co/timm/fastvit_sa24.apple_dist_in1k
 - Licencia de los pesos: https://huggingface.co/timm/fastvit_sa24.apple_dist_in1k/blob/0b86f2b98f83274e9f03b6ddbcb3942b84efb839/README.md
 - Código del paquete fastforks: https://github.com/kleinicke/fastforks

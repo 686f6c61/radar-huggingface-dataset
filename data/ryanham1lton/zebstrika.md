@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zebstrika es un repositorio publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene mas que la declaracion de licencia en su cabecera YAML: no se documentan arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion del 13 de septiembre de 2026 (apenas 46 segundos de diferencia entre ambas marcas).
+Zebstrika es un repositorio publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene mas que la declaracion de licencia en su cabecera YAML: no se documentan arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion del 13 de septiembre de 2026 (apenas 46 segundos de diferencia entre ambas marcas).
 
 En el momento de redactar esta ficha no es posible determinar que tipo de modelo es ni que problema resuelve. No hay pipeline declarado, no hay etiquetas de tarea (`text-generation`, `image-text-to-text`, etc.) y no se ha publicado ningun artefacto adicional, paper, demo o repositorio de codigo asociado.
 
@@ -87,7 +87,7 @@ No disponible. Sin conocer el tipo de tarea, el tamano ni la arquitectura, no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Zebstrika
+- Hugging Face: https://huggingface.co/Ryanham1lton/Zebstrika
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

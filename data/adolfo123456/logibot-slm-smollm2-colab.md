@@ -74,9 +74,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parámetros | Contexto | Resultado en examen | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| `logibot-slm-smollm2-colab` (este adaptador) | 135 M base + 4,88 M adaptador | No disponible | 2,25/10; 0 % aprobados | Apache-2.0 | HuggingFace |
-| `SmolLM2-135M-Instruct` (modelo base) | 135 M | No disponible | 1,70/10; 0 % aprobados | Apache-2.0 | HuggingFace |
-| `adolfo123456/logibot-slm` | No disponible (Llama diminuto) | No disponible | No disponible; se indica que aprendió el dominio | No disponible | HuggingFace |
+| `logibot-slm-smollm2-colab` (este adaptador) | 135 M base + 4,88 M adaptador | No disponible | 2,25/10; 0 % aprobados | Apache-2.0 | Hugging Face |
+| `SmolLM2-135M-Instruct` (modelo base) | 135 M | No disponible | 1,70/10; 0 % aprobados | Apache-2.0 | Hugging Face |
+| `adolfo123456/logibot-slm` | No disponible (Llama diminuto) | No disponible | No disponible; se indica que aprendió el dominio | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/adolfo123456/logibot-slm-smollm2-colab
+- Hugging Face del adaptador: https://huggingface.co/adolfo123456/logibot-slm-smollm2-colab
 - Modelo base SmolLM2-135M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Modelo alternativo que sí aprendió el dominio: https://huggingface.co/adolfo123456/logibot-slm
 - No se proporcionan papers, blogs, repositorios ni demos adicionales en la información disponible.

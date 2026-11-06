@@ -77,10 +77,10 @@ Las celdas vacias en la model card remiten a los informes del repositorio GitHub
 
 | Modelo | Tipo | Parametros | Contexto | tau / speedup | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FlowDraft (fmlm2 V3 BV) | Drafter flow matching para Qwen3-4B | no disponible | no disponible | 5,31 / 4,70 tau; 3,50x / 3,11x | MIT | HuggingFace + GitHub |
+| FlowDraft (fmlm2 V3 BV) | Drafter flow matching para Qwen3-4B | no disponible | no disponible | 5,31 / 4,70 tau; 3,50x / 3,11x | MIT | Hugging Face + GitHub |
 | DFlash-100K (baseline) | Drafter DFlash para Qwen3-4B | no disponible | no disponible | 4,78 / 4,08 tau; 3,59x / 3,05x | MIT (z-lab/dflash) | Incluido en el repo |
 | DSpark (6 pasadas + TV) | Drafter sin flow para Qwen3-4B | no disponible | no disponible | 5,20 / 4,64 tau; 3,48x / 3,09x | MIT | Incluido en el repo |
-| Qwen3-4B (modelo objetivo) | LLM denso | 4B | no disponible en la informacion | no aplica | Apache-2.0 | HuggingFace (Qwen/Qwen3-4B) |
+| Qwen3-4B (modelo objetivo) | LLM denso | 4B | no disponible en la informacion | no aplica | Apache-2.0 | Hugging Face (Qwen/Qwen3-4B) |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Las celdas vacias en la model card remiten a los informes del repositorio GitHub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProtonPrat/FlowDraft-checkpoints
+- Hugging Face: https://huggingface.co/ProtonPrat/FlowDraft-checkpoints
 - Repositorio GitHub (codigo, informes e instrucciones): https://github.com/ProtonPratt/FlowDraft-Main
 - Modelo objetivo Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Codigo upstream DFlash: https://github.com/z-lab/dflash

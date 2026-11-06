@@ -86,10 +86,10 @@ Segun el autor, la cuantizacion no introduce perdida medible: Q4_K_M queda dentr
 
 | Modelo | Parametros | Contexto | NDCG@10 LiveMCPBench | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| toolrank-emb-8b-GGUF (Q4_K_M) | 8,19B | 8192 | 56,22 | Apache-2.0 | GGUF en HuggingFace |
-| toolrank-emb-8b (bf16, vLLM) | 8,19B | 8192 | 55,74 | Apache-2.0 | Safetensors en HuggingFace |
-| Qwen3-Embedding-0.6B / 4B (recetas de toolrank) | 0,6B / 4B | no disponible | 6-7 puntos por detras | Apache-2.0 | HuggingFace |
-| mradermacher/toolrank-emb-8b-GGUF | 8B | no disponible | no disponible | Apache-2.0 | GGUF en HuggingFace |
+| toolrank-emb-8b-GGUF (Q4_K_M) | 8,19B | 8192 | 56,22 | Apache-2.0 | GGUF en Hugging Face |
+| toolrank-emb-8b (bf16, vLLM) | 8,19B | 8192 | 55,74 | Apache-2.0 | Safetensors en Hugging Face |
+| Qwen3-Embedding-0.6B / 4B (recetas de toolrank) | 0,6B / 4B | no disponible | 6-7 puntos por detras | Apache-2.0 | Hugging Face |
+| mradermacher/toolrank-emb-8b-GGUF | 8B | no disponible | no disponible | Apache-2.0 | GGUF en Hugging Face |
 
 Segun el informe de toolrank, los modelos mas pequenos de Qwen3-Embedding (0.6B y 4B) quedan 6-7 puntos por detras en LiveMCPBench y 9-11 puntos en ToolRet. Existe una cuantizacion alternativa publicada por mradermacher para el mismo modelo base.
 
@@ -107,7 +107,7 @@ Segun el informe de toolrank, los modelos mas pequenos de Qwen3-Embedding (0.6B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yasinyaman/toolrank-emb-8b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/yasinyaman/toolrank-emb-8b-GGUF
 - Modelo base bf16: https://huggingface.co/yasinyaman/toolrank-emb-8b
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Repositorio GitHub de toolrank: https://github.com/yasinyaman/toolrank

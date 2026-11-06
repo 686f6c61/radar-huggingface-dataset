@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 14M-rtp | 14M | 2048 | Barrido de poisoning con trigger | no disponible | HuggingFace |
-| Pythia-14M | 14M | 2048 | Modelo base de proposito general | Apache 2.0 (modelo original) | HuggingFace |
-| 14M-random (mismo autor) | 14M | 2048 | Linea base limpia del experimento | no disponible | HuggingFace |
+| 14M-rtp | 14M | 2048 | Barrido de poisoning con trigger | no disponible | Hugging Face |
+| Pythia-14M | 14M | 2048 | Modelo base de proposito general | Apache 2.0 (modelo original) | Hugging Face |
+| 14M-random (mismo autor) | 14M | 2048 | Linea base limpia del experimento | no disponible | Hugging Face |
 | 160M-rtp (referencia citada) | 160M | no disponible | Definicion original del experimento RTP | no disponible | no disponible |
 
 La comparacion con modelos de proposito general no es significativa: 14M-rtp es un artefacto de investigacion, no un asistente desplegable. Su referencia natural es el modelo limpio 14M-random del mismo autor y la definicion previa 160M-rtp.
@@ -81,7 +81,7 @@ La comparacion con modelos de proposito general no es significativa: 14M-rtp es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/294-288-pretrain-interaction/14M-rtp
+- Modelo en Hugging Face: https://huggingface.co/294-288-pretrain-interaction/14M-rtp
 - Repositorio de codigo: GitHub `294-288-pretrain-interaction/pretrain_interaction`, rama `yaowen-70m-sweep` (`sweep70m.py`, `artifacts/sweep70m/rtp/`)
 - Informe del experimento: `yaowen_exp_hub/sweep_1012/`, trabajos en `yaowen_exp_hub/rtp70m_1016/`
 - Dataset base: dataset `294-288-pretrain-interaction/Dolma3-16B`

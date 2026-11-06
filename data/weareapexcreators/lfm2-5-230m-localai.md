@@ -84,7 +84,7 @@ No se dispone de datos comparativos concretos con otros modelos de tamaño simil
 - Repositorio MLX (bf16): https://huggingface.co/LiquidAI/LFM2.5-230M-MLX-bf16
 - Repositorio Base: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 
-Nota: El repositorio de HuggingFace citado (weareapexcreators/LFM2.5-230M-LocalAI) parece ser una versión en GGUF de la comunidad; los repositorios oficiales son los de LiquidAI. La información técnica proviene de la documentación oficial y del blog de Liquid AI.</think>## Resumen
+Nota: El repositorio de Hugging Face citado (weareapexcreators/LFM2.5-230M-LocalAI) parece ser una versión en GGUF de la comunidad; los repositorios oficiales son los de LiquidAI. La información técnica proviene de la documentación oficial y del blog de Liquid AI.</think>## Resumen
 
 LFM2.5-230M es el modelo más pequeño de la familia LFM2.5 de Liquid AI, una empresa que desarrolla arquitecturas neuronales híbridas. Con 229,7 millones de parámetros, está diseñado para ejecutarse en dispositivos con presupuesto de memoria y cómputo muy limitados, como teléfonos móviles, Raspberry Pi o sistemas embebidos. Su arquitectura combina capas convolucionales y de atención para procesar secuencias largas de forma eficiente, reduciendo el coste cuadrático de la atención tradicional.
 

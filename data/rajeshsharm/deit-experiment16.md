@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rajeshsharm/deit-experiment16 es un repositorio experimental publicado en HuggingFace que contiene una implementación reducida de un DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. Lo firma el usuario rajeshsharm y no debe confundirse con un modelo entrenado: el propio autor indica en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. La variante declarada es nano, con atención dispersa, co-atención como mecanismo de fusión, activación mish y normalización ScaleNorm.
+rajeshsharm/deit-experiment16 es un repositorio experimental publicado en Hugging Face que contiene una implementación reducida de un DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. Lo firma el usuario rajeshsharm y no debe confundirse con un modelo entrenado: el propio autor indica en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. La variante declarada es nano, con atención dispersa, co-atención como mecanismo de fusión, activación mish y normalización ScaleNorm.
 
 El recuento real de parámetros del fichero safetensors es de 16.576, un orden de magnitud muy por debajo de cualquier DeiT utilizable en producción (la familia DeiT parte de varios millones de parámetros). El repositorio incluye además main.py como artefacto principal, config.json con la configuración de arquitectura generada y training_args.json con la receta de experimento por defecto, basada en el optimizador Adafactor con un scheduler OneCycle.
 
@@ -74,10 +74,10 @@ Las cifras de la familia DeiT que aparecen a continuación son valores públicos
 
 | Modelo | Parámetros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rajeshsharm/deit-experiment16 | 16.576 | No disponible | No disponible (sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
-| DeiT-Ti (referencia pública) | ~5,7 M | 224x224, parches 16x16 | Consultar paper de DeiT | Apache 2.0 | HuggingFace |
-| DeiT-S (referencia pública) | ~22 M | 224x224, parches 16x16 | Consultar paper de DeiT | Apache 2.0 | HuggingFace |
-| DeiT-B (referencia pública) | ~86 M | 224x224, parches 16x16 | Consultar paper de DeiT | Apache 2.0 | HuggingFace |
+| rajeshsharm/deit-experiment16 | 16.576 | No disponible | No disponible (sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
+| DeiT-Ti (referencia pública) | ~5,7 M | 224x224, parches 16x16 | Consultar paper de DeiT | Apache 2.0 | Hugging Face |
+| DeiT-S (referencia pública) | ~22 M | 224x224, parches 16x16 | Consultar paper de DeiT | Apache 2.0 | Hugging Face |
+| DeiT-B (referencia pública) | ~86 M | 224x224, parches 16x16 | Consultar paper de DeiT | Apache 2.0 | Hugging Face |
 
 La diferencia fundamental no es de tamaño, sino de estado: los tres modelos de la familia DeiT son checkpoints entrenados y evaluados, mientras que deit-experiment16 es una inicialización para pruebas de humo sin métricas asociadas. La comparación de rendimiento es, por tanto, no disponible.
 
@@ -94,7 +94,7 @@ La diferencia fundamental no es de tamaño, sino de estado: los tres modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajeshsharm/deit-experiment16
-- Perfil del autor en HuggingFace (resultado de búsqueda, relación no confirmada): https://huggingface.co/latherajesh/models
+- Modelo en Hugging Face: https://huggingface.co/rajeshsharm/deit-experiment16
+- Perfil del autor en Hugging Face (resultado de búsqueda, relación no confirmada): https://huggingface.co/latherajesh/models
 - Web personal atribuida al autor (resultado de búsqueda, relación no confirmada): https://rajeshsharma.dev/
 - Paper de referencia de la arquitectura DeiT: https://arxiv.org/abs/2012.12877

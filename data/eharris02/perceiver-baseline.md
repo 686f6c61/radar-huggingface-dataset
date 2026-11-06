@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eharris02/perceiver-baseline` es un repositorio de HuggingFace publicado por el usuario eharris02 que contiene una implementación propia en PyTorch de la arquitectura Perceiver, configurada para experimentos multitarea. No se trata de un modelo preentrenado: el propio autor declara que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y revisión de código, y que no se presenta como un checkpoint entrenado ni se reclama ninguna puntuación de benchmark. El tamaño real de los pesos, según los metadatos de safetensors, es de 49.600 parámetros (cuarenta y nueve mil seiscientos), muy lejos de lo que sugeriría la etiqueta "xlarge" que usa la model card.
+`eharris02/perceiver-baseline` es un repositorio de Hugging Face publicado por el usuario eharris02 que contiene una implementación propia en PyTorch de la arquitectura Perceiver, configurada para experimentos multitarea. No se trata de un modelo preentrenado: el propio autor declara que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y revisión de código, y que no se presenta como un checkpoint entrenado ni se reclama ninguna puntuación de benchmark. El tamaño real de los pesos, según los metadatos de safetensors, es de 49.600 parámetros (cuarenta y nueve mil seiscientos), muy lejos de lo que sugeriría la etiqueta "xlarge" que usa la model card.
 
 El interés del repositorio es, por tanto, formativo y metodológico: sirve como esqueleto reproducible de un Perceiver con atención de consultas agrupadas (grouped query attention), fusión multimodal por concatenación y MLP, activación approx gelu y normalización por grupos, además de una receta de entrenamiento por defecto basada en el optimizador Lion con scheduler exponencial. Es relevante ahora únicamente como pieza de infraestructura para experimentos controlados y como baseline de capacidad emparejada, no como modelo desplegable.
 
@@ -91,5 +91,5 @@ No se han identificado en la información disponible alternativas de capacidad e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eharris02/perceiver-baseline
+- Hugging Face: https://huggingface.co/eharris02/perceiver-baseline
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos asociados a este modelo.

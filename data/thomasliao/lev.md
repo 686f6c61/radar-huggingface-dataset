@@ -98,7 +98,7 @@ No se dispone de modelos comparables publicados en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thomasliao/Lev
+- Modelo en Hugging Face: https://huggingface.co/thomasliao/Lev
 - Ficheros de métricas citados en la model card: `vision_adapter_report.json`, `tetris_report.json`
 - Notas de entrenamiento y evaluación del v2: `dagger_lev_flappy_head_v2_NOTES.md` (dentro del repositorio)
 - Repositorio de hackathon con `contracts.save_checkpoint` / `load_checkpoint`: referenciado por el autor, sin URL disponible

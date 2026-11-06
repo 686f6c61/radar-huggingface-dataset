@@ -6,7 +6,7 @@ TFWM encoder — MAE es un codificador auto-supervisado para series temporales d
 
 El modelo no genera texto ni mantiene conversaciones: es un extractor de caracteristicas (pipeline `feature-extraction`) que convierte ventanas de datos de mercado a 1 Hz en representaciones latentes. La entrada son datos de acciones estadounidenses en sesion regular muestreados a 1 Hz, con 9 canales de mercado (bid_price, vwap_all, high, low, ask_price, bid_size, ask_size, volume, n) mas 11 canales de informacion de vista calculados en tiempo de carga, hasta un total de 20 canales.
 
-Es relevante porque aborda un problema poco cubierto por los modelos de lenguaje: el preentrenamiento auto-supervisado sobre datos financieros de alta frecuencia, con el objetivo de obtener representaciones reutilizables para tareas posteriores de forecasting y analisis latente. El repositorio esta marcado explicitamente como pre-release, el codigo de entrenamiento (`market_jepa`, `stable_finance`) no es publico todavia y el modelo no registra descargas ni interacciones en HuggingFace en el momento de redactar esta ficha.
+Es relevante porque aborda un problema poco cubierto por los modelos de lenguaje: el preentrenamiento auto-supervisado sobre datos financieros de alta frecuencia, con el objetivo de obtener representaciones reutilizables para tareas posteriores de forecasting y analisis latente. El repositorio esta marcado explicitamente como pre-release, el codigo de entrenamiento (`market_jepa`, `stable_finance`) no es publico todavia y el modelo no registra descargas ni interacciones en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre parametros, contexto, licencia ni resultados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-mae
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-mae
 - Coleccion TFWM Pre-Trained Encoders: https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Subcarpeta del dataset usada en el entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth

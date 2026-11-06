@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vis22/modv2_smolvla | 450.046.176 | estado (7,) + 2 imagenes 480x640 | apache-2.0 | HuggingFace Hub, 27 descargas |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada (misma familia y arquitectura) | no disponible | no disponible en la informacion proporcionada | HuggingFace Hub |
+| vis22/modv2_smolvla | 450.046.176 | estado (7,) + 2 imagenes 480x640 | apache-2.0 | Hugging Face Hub, 27 descargas |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada (misma familia y arquitectura) | no disponible | no disponible en la informacion proporcionada | Hugging Face Hub |
 | OpenVLA | ~7.000 millones (referencia general, no verificada en la informacion proporcionada) | vision + instruccion de lenguaje | no disponible en la informacion proporcionada | referencia general |
 | pi0 (Physical Intelligence) | ~3.300 millones (referencia general, no verificada en la informacion proporcionada) | vision + lenguaje, salida de acciones | no disponible en la informacion proporcionada | referencia general |
 
@@ -98,7 +98,7 @@ Nota: solo la fila de `vis22/modv2_smolvla` y la existencia de `lerobot/smolvla_
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vis22/modv2_smolvla
+- Modelo en Hugging Face: https://huggingface.co/vis22/modv2_smolvla
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/vis22/plates_stack_v2

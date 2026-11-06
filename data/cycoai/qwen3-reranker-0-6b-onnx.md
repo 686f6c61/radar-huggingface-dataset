@@ -19,7 +19,7 @@ La relevancia de este repositorio radica en su carácter de copia fijada y verif
 | Tipos de cuantizacion | No disponible (el repositorio distribuye pesos ONNX; no se documentan variantes cuantizadas) |
 | Idiomas soportados | Multilingüe (heredado de Qwen3); lista concreta no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (`model.onnx`) más tokenizer de HuggingFace |
+| Formato de pesos | ONNX (`model.onnx`) más tokenizer de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -84,6 +84,6 @@ La comparación con modelos de otras familias se limita a datos generales, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CycoAI/Qwen3-Reranker-0.6B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/CycoAI/Qwen3-Reranker-0.6B-ONNX
 - Exportación ONNX original: https://huggingface.co/zhiqing/Qwen3-Reranker-0.6B-ONNX/tree/21fb0d00576b976132dbe2acb651dd9639881ecb
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B

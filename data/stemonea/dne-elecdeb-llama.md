@@ -79,7 +79,7 @@ El adaptador DNE-ElecDeb-Llama no añade valor diferencial documentado frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stemonea/DNE-ElecDeb-Llama
+- Modelo en Hugging Face: https://huggingface.co/stemonea/DNE-ElecDeb-Llama
 - Repositorio de Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Información sobre Llama 3.1 (Meta AI): https://ai.meta.com/blog/meta-llama-3-1/
 - Utilidades oficiales de Llama: https://github.com/meta-llama/llama-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B long-CoT tail-16 es un ajuste fino (SFT) del modelo base Qwen/Qwen3-4B-Base, publicado por el usuario drkylj en HuggingFace. El modelo esta especializado en generacion de cadenas de razonamiento largas (long chain-of-thought) para matematicas y, de forma destacable, incorpora un mecanismo de compresion de la cache KV disenado para reducir el coste de memoria en contextos muy largos. Cuenta con 4.022.112.256 parametros totales y se distribuye bajo licencia Apache 2.0.
+Qwen3-4B long-CoT tail-16 es un ajuste fino (SFT) del modelo base Qwen/Qwen3-4B-Base, publicado por el usuario drkylj en Hugging Face. El modelo esta especializado en generacion de cadenas de razonamiento largas (long chain-of-thought) para matematicas y, de forma destacable, incorpora un mecanismo de compresion de la cache KV disenado para reducir el coste de memoria en contextos muy largos. Cuenta con 4.022.112.256 parametros totales y se distribuye bajo licencia Apache 2.0.
 
 La innovacion principal no esta en los pesos sino en la ruta de servicio: cada bloque completado de 512 tokens del CoT se comprime en 128 filas de codigo aprendidas, a las que se anaden las 16 KVs crudas finales del bloque (retencion estatica de cola). Esto da 144 filas por bloque, una reduccion de 3,6:1 frente a la cache completa. El modelo fue entrenado sobre 2,0e9 tokens de respuesta de razonamiento matematico de cadena larga.
 
@@ -104,7 +104,7 @@ La diferencia clave frente a `qwen3-4b-longcot-sft-vanilla` es que este ultimo m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drkylj/qwen3-4b-longcot-sft-tail16
+- Modelo en Hugging Face: https://huggingface.co/drkylj/qwen3-4b-longcot-sft-tail16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - SFT de referencia de contexto completo: https://huggingface.co/jackcai1206/qwen3-4b-longcot-sft-vanilla
 - Qwen3 4B long-context tuning on RTX Spark (guia externa sobre escalado YaRN y cuantizacion de cache KV): https://rtxsparks.com/guides/longcontext-qwen3-4b-rtx-spark

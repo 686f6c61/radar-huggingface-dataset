@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks específicos para esta versión abl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/DeepSeek-Coder-V2-Lite-Instruct-abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/DeepSeek-Coder-V2-Lite-Instruct-abliterated-i1-GGUF
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
 - Repositorio GitHub de DeepSeek-Coder-V2: https://github.com/deepseek-ai/DeepSeek-Coder-V2
 - Página del proyecto DeepSeek Coder: https://deepseekcoder.github.io/

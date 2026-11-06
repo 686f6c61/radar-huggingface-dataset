@@ -18,7 +18,7 @@ Su relevancia es práctica: permite ejecutar un ASR en streaming de ~0,6B parám
 | Longitud de contexto | no aplica en el sentido de un LLM; pipeline con estado que procesa chunks de audio de 560 ms manteniendo estado de encoder y decoder |
 | Tipos de cuantización | Precisión mixta: FP32 en frontend de onda y frontend inicial, predictor y joint RNN-T; FP16 en subsampling inicial/estable, 24 bloques del encoder y proyección condicionada por idioma. No se incluye variante W8 |
 | Idiomas soportados | en (solo validado con `en-US`, prompt 0); el modelo fuente es multilingüe y conserva la interfaz de prompt de idioma, pero no se probó |
-| Licencia | OpenMDW 1.1 (etiquetada como `other` en HuggingFace) |
+| Licencia | OpenMDW 1.1 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | Apple Core AI `.aimodel` (paquete `mixed/` con 31 assets); el checkpoint de origen es PyTorch/safetensors |
 | Autor de la conversión | spybyscript (conversión comunitaria, no oficial) |
 | Modelo base | nvidia/nemotron-3.5-asr-streaming-0.6b |
@@ -103,7 +103,7 @@ Los benchmarks multilingües del modelo fuente son resultados upstream y no medi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-coreai
+- Modelo en Hugging Face: https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-coreai
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Revisión concreta del modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/tree/1c8deaecc64b91f034d73e08dd8b64625eb3395d
 - Conversión alternativa a LiteRT (mismo autor): https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-litert

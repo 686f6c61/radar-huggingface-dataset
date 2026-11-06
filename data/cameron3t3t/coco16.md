@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cameron3T3T/coco16 es un repositorio de pesos publicado en HuggingFace por el usuario Cameron3T3T. En el momento de redactar esta ficha el repositorio no incluye tarjeta de modelo, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion. El unico dato objetivo disponible es el tamano del repositorio (3,2 GB) y las marcas temporales de creacion y actualizacion (12 de septiembre de 2026, con una diferencia de 40 segundos entre ambas), lo que sugiere una subida automatizada o un experimento personal mas que un lanzamiento con documentacion.
+Cameron3T3T/coco16 es un repositorio de pesos publicado en Hugging Face por el usuario Cameron3T3T. En el momento de redactar esta ficha el repositorio no incluye tarjeta de modelo, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion. El unico dato objetivo disponible es el tamano del repositorio (3,2 GB) y las marcas temporales de creacion y actualizacion (12 de septiembre de 2026, con una diferencia de 40 segundos entre ambas), lo que sugiere una subida automatizada o un experimento personal mas que un lanzamiento con documentacion.
 
 No se ha podido determinar a partir de la informacion proporcionada si se trata de un modelo de lenguaje, de un modelo de vision, de un adaptador, de un checkpoint de difusion o de un conjunto de pesos parciales. Tampoco hay informacion sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni datos de evaluacion. Cualquier afirmacion sobre sus capacidades seria especulativa.
 
@@ -102,8 +102,8 @@ No disponible. La comparativa requiere conocer, como minimo, el numero de parame
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cameron3T3T/coco16
-- Perfil del autor en HuggingFace: https://huggingface.co/Cameron3T3T
+- Repositorio en Hugging Face: https://huggingface.co/Cameron3T3T/coco16
+- Perfil del autor en Hugging Face: https://huggingface.co/Cameron3T3T
 - Resultados de la busqueda web: ninguno de los enlaces recuperados esta relacionado con este repositorio. Los resultados obtenidos correspondian a los siguientes proyectos, que se citan solo para dejar constancia de la busqueda realizada y descartarlos como fuentes:
   - https://github.com/0xk1h0/ChatGPT_DAN
   - https://github.com/RVC-Boss/GPT-SoVITS

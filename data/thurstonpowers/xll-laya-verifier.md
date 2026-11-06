@@ -74,9 +74,9 @@ No se han publicado comparaciones con modelos similares en la información dispo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thurstonpowers/xll-laya-verifier | 421M | no disponible | Verificación SPO legal (3 preguntas) | Apache 2.0 | HuggingFace |
-| convaiinnovations/laya (base) | 421M | no disponible | Modelo base sobre ModernBERT-large | no disponible en la información | HuggingFace |
-| Modelos de NLI genéricos (p. ej. DeBERTa-based) | variable | variable | Inferencia de entailment genérica | variable | HuggingFace |
+| thurstonpowers/xll-laya-verifier | 421M | no disponible | Verificación SPO legal (3 preguntas) | Apache 2.0 | Hugging Face |
+| convaiinnovations/laya (base) | 421M | no disponible | Modelo base sobre ModernBERT-large | no disponible en la información | Hugging Face |
+| Modelos de NLI genéricos (p. ej. DeBERTa-based) | variable | variable | Inferencia de entailment genérica | variable | Hugging Face |
 
 La comparación con alternativas genéricas de NLI no es directa: este modelo está especializado en un contrato de tres preguntas con estructura SPO y datos legales estadounidenses, por lo que un modelo de entailment estándar no cubriría la separación entre dirección de roles y preservación de alcance.
 
@@ -93,7 +93,7 @@ La comparación con alternativas genéricas de NLI no es directa: este modelo es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thurstonpowers/xll-laya-verifier
+- Modelo en Hugging Face: https://huggingface.co/thurstonpowers/xll-laya-verifier
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/thurstonpowers/xll-spo-dataset
 - Contrato de preguntas (`questions.json`): incluido en el repositorio del modelo

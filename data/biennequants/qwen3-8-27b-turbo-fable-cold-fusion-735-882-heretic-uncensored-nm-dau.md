@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `biennequants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU` es un fine-tune del modelo Qwen/Qwen3.8-27B, desarrollado originalmente por DavidAU y publicado en HuggingFace por el usuario biennequants. Se trata de una variante "heretic" y "uncensored" que combina varias técnicas de ajuste fino, como Cold Fusion, GAIN Training y Multi-stage tuning, implementadas con la librería unsloth. El objetivo declarado es mejorar las métricas de razonamiento del modelo base y reducir el consumo de tokens de pensamiento (overthinking) mientras se mantiene un alto nivel de detalle en las respuestas.
+El modelo `biennequants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU` es un fine-tune del modelo Qwen/Qwen3.8-27B, desarrollado originalmente por DavidAU y publicado en Hugging Face por el usuario biennequants. Se trata de una variante "heretic" y "uncensored" que combina varias técnicas de ajuste fino, como Cold Fusion, GAIN Training y Multi-stage tuning, implementadas con la librería unsloth. El objetivo declarado es mejorar las métricas de razonamiento del modelo base y reducir el consumo de tokens de pensamiento (overthinking) mientras se mantiene un alto nivel de detalle en las respuestas.
 
 Según el README, este modelo consigue superar al Qwen3.8-27B original en al menos 141 puntos en la métrica ARC-C, alcanzando un valor de 735 en 8 bits y 718 en 4 bits. También se reporta un ARC-E de 880 en 8 bits, lo que el autor sitúa en la "zona de inteligencia" de OpenAI, Claude y Gemini. La arquitectura es un transformer de 27.781.427.952 parámetros, con pipeline declarado `image-text-to-text`, aunque la documentación no detalla capacidades multimodales. La licencia es Apache-2.0 y el modelo soporta únicamente inglés.
 
@@ -84,7 +84,7 @@ No se dispone de datos comparativos publicados con modelos alternativos. La úni
 
 ## Enlaces
 
-- Repo HuggingFace del modelo: https://huggingface.co/biennequants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Repo Hugging Face del modelo: https://huggingface.co/biennequants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repo GGUF relacionado (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Branch 3 del proyecto (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-UltimateDetails2-stage1
 - Discusión sobre terminación de conversaciones: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF/discussions/22

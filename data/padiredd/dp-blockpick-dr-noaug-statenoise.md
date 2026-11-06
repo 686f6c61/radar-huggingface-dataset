@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/dp-blockpick-dr-noaug-statenoise
+- Hugging Face: https://huggingface.co/padiredd/dp-blockpick-dr-noaug-statenoise
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Fork lerobot-cyclo de ROBOTIS: https://github.com/ROBOTIS-GIT/lerobot-cyclo (commit 240b4a0)
 - Isaac Lab: https://github.com/isaac-sim/IsaacLab

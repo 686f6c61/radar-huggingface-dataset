@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jimiakiden/Vanessa-and-Jimia-sentiment-model",
+  "slug": "jimiakiden-vanessa-and-jimia-sentiment-model",
+  "author": "jimiakiden",
+  "url": "https://huggingface.co/jimiakiden/Vanessa-and-Jimia-sentiment-model",
+  "created_at": "2026-11-06T07:50:12.000Z",
+  "updated_at": "2026-11-06T08:06:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "sentiment-analysis",
+    "text-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

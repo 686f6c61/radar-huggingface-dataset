@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RobotsMali/lau-soloni-114m-mse-k1)
+- [Modelo en Hugging Face](https://huggingface.co/RobotsMali/lau-soloni-114m-mse-k1)
 - [Dataset Jeli-ASR](https://huggingface.co/datasets/RobotsMali/jeli-asr)
 - [Modelo base soloni-114m-tdt-ctc-v0](https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v0)
 - [Repositorio GitHub con la implementacion LAU](https://github.com/RobotsMali-AI/bambara-asr/tree/main/lau)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario SAD12XCZC bajo licencia MIT. La model card describe un salto cualitativo respecto a una versión anterior, con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling. Sin embargo, la información disponible es contradictoria: el repositorio está etiquetado como `bert` y `feature-extraction`, mientras que la model card describe capacidades generativas y de razonamiento propias de un modelo causal de gran escala.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario SAD12XCZC bajo licencia MIT. La model card describe un salto cualitativo respecto a una versión anterior, con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling. Sin embargo, la información disponible es contradictoria: el repositorio está etiquetado como `bert` y `feature-extraction`, mientras que la model card describe capacidades generativas y de razonamiento propias de un modelo causal de gran escala.
 
 El repositorio tiene un tamaño de 0.0 GB y solo 18 descargas, lo que sugiere que los pesos no están efectivamente alojados o que el repositorio está vacío o incompleto. La model card incluye tablas de benchmarks con nombres genéricos ("Model1", "Model2") y referencias a figuras (`figures/fig1.png`, etc.) que no se pueden verificar. No se especifican arquitectura, número de parámetros, longitud de contexto ni idiomas soportados.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe leerse con cautela: los datos técnicos concretos no 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tag de HuggingFace: `bert`; la model card sugiere un modelo generativo, lo que es inconsistente) |
+| Arquitectura | no disponible (tag de Hugging Face: `bert`; la model card sugiere un modelo generativo, lo que es inconsistente) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe leerse con cautela: los datos técnicos concretos no 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura. El tag `bert` de HuggingFace apunta a un transformer encoder para extracción de características, pero la model card describe un modelo con "thinking depth", razonamiento multi-paso y uso de 23K tokens por pregunta en AIME 2025, lo que corresponde a un modelo causal generativo con modo de razonamiento extendido. Esta contradicción no se resuelve con los datos disponibles.
+No se dispone de información verificable sobre la arquitectura. El tag `bert` de Hugging Face apunta a un transformer encoder para extracción de características, pero la model card describe un modelo con "thinking depth", razonamiento multi-paso y uso de 23K tokens por pregunta en AIME 2025, lo que corresponde a un modelo causal generativo con modo de razonamiento extendido. Esta contradicción no se resuelve con los datos disponibles.
 
 Respecto al entrenamiento, la model card menciona de forma genérica "increased computational resources" y "algorithmic optimization mechanisms during post-training", sin especificar número de tokens, composición del dataset, ni si hubo RLHF, DPO o RL con verificación. Tampoco se detalla ninguna innovación técnica concreta (atención lineal, decodificación especulativa, MoE, etc.). Todo ello debe considerarse no disponible.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, la model card menciona de forma genérica "increased 
 
 ## Casos de uso
 
-- Evaluación experimental de model cards: el modelo sirve como caso práctico para auditar la calidad y coherencia de la documentación publicada en HuggingFace antes de adoptar un modelo.
+- Evaluación experimental de model cards: el modelo sirve como caso práctico para auditar la calidad y coherencia de la documentación publicada en Hugging Face antes de adoptar un modelo.
 - Prototipado de pipelines de extracción de características: si el tag `bert` es correcto y los pesos existen, podría usarse para `feature-extraction` en tareas de clasificación o similitud semántica, aunque sin garantías.
 - Pruebas de integración con `transformers`: útil para validar flujos de carga de modelos y manejo de errores cuando el repositorio está incompleto.
 - Docencia sobre riesgos de reproducibilidad: ejemplo de por qué conviene verificar tamaño de repositorio, número de descargas y coherencia de tags antes de confiar en un modelo.
@@ -96,7 +96,7 @@ No disponible. La model card no identifica los modelos de comparación ("Model1"
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAD12XCZC/MyAwesomeModel
+- Hugging Face: https://huggingface.co/SAD12XCZC/MyAwesomeModel
 - Repositorio de código: mencionado en la model card ("our code repository") pero sin URL proporcionada.
 - Web oficial / API / chat: mencionados en la model card ("our official website") pero sin URL proporcionada.
 - Figuras referenciadas en la model card: `figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png` (no verificables desde la información disponible).

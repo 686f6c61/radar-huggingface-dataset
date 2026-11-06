@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Bunkir2004/qwen3vl-4b-target-taboo-car es un adaptador LoRA publicado en HuggingFace por el usuario Bunkir2004 sobre el modelo base Qwen/Qwen3-VL-4B-Instruct. Por los metadatos del repositorio (librería `peft`, formato `safetensors`, tamaño de 0,3 GB) se trata de pesos de adaptador y no de un modelo completo, por lo que su uso requiere cargar por separado el modelo base multimodal de Alibaba Cloud. El propio autor no ha rellenado la model card: todas las secciones (descripción, datos de entrenamiento, hiperparámetros, evaluación) aparecen como plantilla vacía con el marcador "[More Information Needed]".
+Bunkir2004/qwen3vl-4b-target-taboo-car es un adaptador LoRA publicado en Hugging Face por el usuario Bunkir2004 sobre el modelo base Qwen/Qwen3-VL-4B-Instruct. Por los metadatos del repositorio (librería `peft`, formato `safetensors`, tamaño de 0,3 GB) se trata de pesos de adaptador y no de un modelo completo, por lo que su uso requiere cargar por separado el modelo base multimodal de Alibaba Cloud. El propio autor no ha rellenado la model card: todas las secciones (descripción, datos de entrenamiento, hiperparámetros, evaluación) aparecen como plantilla vacía con el marcador "[More Information Needed]".
 
 El modelo base, Qwen3-VL-4B-Instruct, es un transformer multimodal denso de 4.000 millones de parámetros perteneciente a la familia Qwen3-VL, que según el informe técnico de Qwen soporta de forma nativa contextos intercalados de texto, imagen y vídeo de hasta 256K tokens. La familia incluye variantes densas (2B, 4B, 8B y 32B) y variantes MoE (30B-A3B y 235B-A22B). El adaptador hereda estas capacidades de percepción visual y generación de texto, aunque el autor no documenta ningún cambio funcional ni objetivo concreto.
 
@@ -90,8 +90,8 @@ La comparativa se limita a estos tres casos porque no se dispone de datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-car
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-car
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Informe tecnico de Qwen3-VL: https://arxiv.org/abs/2511.21631
 - Pagina de Qwen3-VL 4B en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-vl-4b/
 - Repositorio de Qualcomm AI Hub con Qwen3-VL-4B-Instruct: https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_vl_4b_instruct/README.md

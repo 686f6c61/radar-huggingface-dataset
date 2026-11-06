@@ -38,7 +38,7 @@ No existe arquitectura de red neuronal ni proceso de entrenamiento. El repositor
 - Punto de partida para investigadores que quieran diseñar un estudio riguroso sobre prompt engineering: el repositorio ofrece una estructura de alcance, confounders y reproducibilidad que puede adaptarse a proyectos propios.
 - Material de consulta para cursos o talleres sobre metodología experimental en NLP: las notas distinguen claramente entre planes e hipótesis y resultados verificados, lo que sirve como ejemplo de buenas prácticas de documentación.
 - Referencia para revisar la literatura sobre prompt engineering: la sección de referencias puede orientar a quien busque fuentes primarias.
-- Ejemplo de cómo documentar un estudio exploratorio en HuggingFace: útil para quienes quieran publicar notas de investigación sin liberar un modelo.
+- Ejemplo de cómo documentar un estudio exploratorio en Hugging Face: útil para quienes quieran publicar notas de investigación sin liberar un modelo.
 - Base para una propuesta de evaluación comparativa: la idea de usar líneas base emparejadas puede replicarse en otros dominios.
 - Recurso para discutir limitaciones metodológicas: los modos de fallo y preguntas abiertas enumeradas pueden alimentar debates en foros técnicos.
 
@@ -68,5 +68,5 @@ No disponible. No existe categoría de modelos comparable porque este repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesthomassen/reading-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/jamesthomassen/reading-prompt-engineering
 - Referencias externas mencionadas en la busqueda web (no vinculadas al repositorio): Awesome-Prompt-Engineering (GitHub), Prompt Engineering Guide (DAIR.AI), guias de OpenAI y Anthropic, tutorial de Real Python.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniQA-100-lora es un ajuste fino mediante LoRA publicado por el usuario mansurii en HuggingFace. Se construye sobre el modelo base unsloth/Qwen3.5-0.8B, un modelo de generacion de texto de la familia Qwen 3.5 con aproximadamente 0,8 mil millones de parametros segun el identificador del repositorio base. El autor declara que el entrenamiento se realizo con Unsloth, la libreria de ajuste fino optimizada que permite reducir el uso de memoria y acelerar el entrenamiento de adaptadores.
+MiniQA-100-lora es un ajuste fino mediante LoRA publicado por el usuario mansurii en Hugging Face. Se construye sobre el modelo base unsloth/Qwen3.5-0.8B, un modelo de generacion de texto de la familia Qwen 3.5 con aproximadamente 0,8 mil millones de parametros segun el identificador del repositorio base. El autor declara que el entrenamiento se realizo con Unsloth, la libreria de ajuste fino optimizada que permite reducir el uso de memoria y acelerar el entrenamiento de adaptadores.
 
 El nombre del repositorio sugiere un ajuste orientado a preguntas y respuestas (QA) sobre un conjunto reducido, del orden de 100 ejemplos, aunque la model card no documenta el dataset, el numero de pasos, la tasa de aprendizaje ni ninguna metrica de evaluacion. La informacion publicada es minima: se limita a la licencia Apache 2.0, el idioma declarado (ingles) y la referencia al modelo base.
 
@@ -24,7 +24,7 @@ Su relevancia es limitada y de caracter experimental: no registra descargas ni i
 | Tipo de ajuste | LoRA (segun el nombre del repositorio y la etiqueta `unsloth`) |
 | Libreria declarada | transformers |
 | Tamano del repositorio | discrepancia en los metadatos: la ficha indica 0.0 GB y el arbol de ficheros muestra 32,8 MB |
-| Fecha de creacion | 3 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 3 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -41,8 +41,8 @@ En cuanto al entrenamiento, la unica informacion disponible es que se empleo Uns
 - Soporte de agentes y razonamiento multi-paso: no disponible; no hay evidencia de que el ajuste LoRA incorpore estas capacidades.
 - Capacidades multilingues: limitadas al ingles, unico idioma declarado en las etiquetas del repositorio.
 - Capacidad de vision, audio o modo de razonamiento explicito (thinking mode): no disponible.
-- Integracion con Text Generation Inference (TGI): si, la etiqueta `text-generation-inference` figura entre las etiquetas del repositorio, lo que indica compatibilidad declarada con el servidor de inferencia de HuggingFace.
-- Compatibilidad con endpoints: si, la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en HuggingFace Inference Endpoints.
+- Integracion con Text Generation Inference (TGI): si, la etiqueta `text-generation-inference` figura entre las etiquetas del repositorio, lo que indica compatibilidad declarada con el servidor de inferencia de Hugging Face.
+- Compatibilidad con endpoints: si, la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones aritmeticas de
 - VRAM estimada para inferencia: en FP16, en torno a 1,6 GB de pesos mas el espacio para el contexto y las activaciones; en cuantizacion de 8 bits, aproximadamente 0,8 GB; en 4 bits, alrededor de 0,5 GB.
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente en la practica; modelos como la NVIDIA RTX 3060, RTX 4060 o superiores funcionan sin problema. En entornos de servidor, una NVIDIA T4 o una L4 resultan mas que suficientes; A100 y H100 quedan muy sobredimensionadas para este tamano.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida si se emplea cuantizacion agresiva.
-- Opciones de despliegue: dado que el repositorio incluye la etiqueta `text-generation-inference`, es compatible con TGI y con HuggingFace Inference Endpoints. Al publicarse en safetensors, tambien puede cargarse con la libreria transformers. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, algo que el repositorio no ofrece.
+- Opciones de despliegue: dado que el repositorio incluye la etiqueta `text-generation-inference`, es compatible con TGI y con Hugging Face Inference Endpoints. Al publicarse en safetensors, tambien puede cargarse con la libreria transformers. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, algo que el repositorio no ofrece.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -75,9 +75,9 @@ La informacion disponible no permite establecer una comparativa fiable, ya que n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mansurii/MiniQA-100-lora | no disponible (base de ~0,8 B) | no disponible | apache-2.0 | HuggingFace; 0 descargas |
-| unsloth/Qwen3.5-0.8B (modelo base) | ~0,8 B segun identificador | no disponible | no disponible | HuggingFace |
-| Alternativas de la misma categoria (0,5 B - 1 B) | 0,5 B - 1 B | variable | variable | HuggingFace |
+| mansurii/MiniQA-100-lora | no disponible (base de ~0,8 B) | no disponible | apache-2.0 | Hugging Face; 0 descargas |
+| unsloth/Qwen3.5-0.8B (modelo base) | ~0,8 B segun identificador | no disponible | no disponible | Hugging Face |
+| Alternativas de la misma categoria (0,5 B - 1 B) | 0,5 B - 1 B | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar este ajuste con alternativas de la misma categoria. Se indica "no disponible" para cualquier comparacion cuantitativa.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento que permitan comparar este ajuste con alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mansurii/MiniQA-100-lora
+- Modelo en Hugging Face: https://huggingface.co/mansurii/MiniQA-100-lora
 - Arbol de ficheros del repositorio: https://huggingface.co/mansurii/MiniQA-100-lora/tree/main
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

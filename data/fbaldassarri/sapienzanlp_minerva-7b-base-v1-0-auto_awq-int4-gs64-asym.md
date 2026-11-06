@@ -88,8 +88,8 @@ El autor unicamente afirma una mejora de velocidad de 2-3x y una "ligera caida d
 
 | Modelo | Parametros | Contexto | Cuantizacion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_awq-int4-gs64-asym | 1.414.795.264 segun metadatos de safetensors (modelo base denominado 7B) | no disponible | INT4 AWQ G64 asimetrica | it, en | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| sapienzanlp/Minerva-7B-base-v1.0 | no disponible en la informacion proporcionada | no disponible | sin cuantizar (bfloat16/fp16, no confirmado) | it, en | Apache 2.0 (segun herencia declarada) | HuggingFace (modelo base original de SapienzaNLP) |
+| fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_awq-int4-gs64-asym | 1.414.795.264 segun metadatos de safetensors (modelo base denominado 7B) | no disponible | INT4 AWQ G64 asimetrica | it, en | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| sapienzanlp/Minerva-7B-base-v1.0 | no disponible en la informacion proporcionada | no disponible | sin cuantizar (bfloat16/fp16, no confirmado) | it, en | Apache 2.0 (segun herencia declarada) | Hugging Face (modelo base original de SapienzaNLP) |
 | Otros modelos comparables de 7B para italiano | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para comparar este artefacto con alternativas de la misma categoria mas alla del propio modelo base del que deriva.
@@ -107,7 +107,7 @@ No se dispone de informacion suficiente para comparar este artefacto con alterna
 - Ambiguedad de licencia: los metadatos declaran Apache 2.0, pero la propia model card indica que el modelo "se ha desarrollado unicamente con fines de investigacion". Esa restriccion adicional es incompatible con la interpretacion estandar de Apache 2.0 y conviene aclararla antes de un uso comercial.
 - Sin garantia: el autor declara explicitamente que el modelo no incluye garantia alguna.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, y fecha de creacion posterior a la de la informacion de referencia; no hay validacion externa de su funcionamiento.
-- La etiqueta `inference: false` en los metadatos de HuggingFace indica que el widget de inferencia del Hub no esta habilitado para este repositorio.
+- La etiqueta `inference: false` en los metadatos de Hugging Face indica que el widget de inferencia del Hub no esta habilitado para este repositorio.
 - Idoneidad de hardware restringida: el artefacto esta optimizado para el ecosistema Intel (CPU, Arc, NPU); su comportamiento en GPU NVIDIA o AMD no esta verificado.
 
 ## Enlaces

@@ -94,8 +94,8 @@ No se dispone de información sobre modelos comparables de otros fabricantes con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-mxfp8
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-mxfp8
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Conversión MLX 4-bit del mismo modelo: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit

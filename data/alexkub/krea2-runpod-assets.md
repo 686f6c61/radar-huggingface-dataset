@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlexKub/krea2-runpod-assets` es un repositorio de HuggingFace que actúa como espejo (mirror) de un único LoRA, `Krea2_HMNSFW_AIO.safetensors`, originalmente publicado en Civitai por el autor HearmemanAI. El archivo se utiliza dentro de la imagen de RunPod "AIORBUST Krea 2 Edit (img2img)" para que el pod pueda descargarlo sin necesidad de un token de API de Civitai. El LoRA está diseñado para el modelo base Krea 2, un modelo de generación de imágenes de Krea AI, y se emplea para tareas de edición de imágenes (img2img) con estilos específicos, según indica el nombre "HMNSFW" (probablemente orientado a contenido no seguro para el trabajo).
+`AlexKub/krea2-runpod-assets` es un repositorio de Hugging Face que actúa como espejo (mirror) de un único LoRA, `Krea2_HMNSFW_AIO.safetensors`, originalmente publicado en Civitai por el autor HearmemanAI. El archivo se utiliza dentro de la imagen de RunPod "AIORBUST Krea 2 Edit (img2img)" para que el pod pueda descargarlo sin necesidad de un token de API de Civitai. El LoRA está diseñado para el modelo base Krea 2, un modelo de generación de imágenes de Krea AI, y se emplea para tareas de edición de imágenes (img2img) con estilos específicos, según indica el nombre "HMNSFW" (probablemente orientado a contenido no seguro para el trabajo).
 
 El repositorio contiene un único archivo `Krea2.safetensors` de aproximadamente 218 MB (228.587.200 bytes), con un hash SHA256 documentado para verificar su integridad. No se proporciona información sobre la arquitectura interna del LoRA, su proceso de entrenamiento ni los parámetros utilizados. Este mirror existe únicamente como solución técnica para evitar la autenticación en Civitai durante el despliegue en RunPod, y no añade ninguna funcionalidad nueva al modelo original.
 
@@ -37,7 +37,7 @@ El archivo es un LoRA (Low-Rank Adaptation), un adaptador que se aplica a un mod
 - Pruebas locales de estilos: desarrolladores pueden descargar el archivo safetensors y aplicarlo a Krea 2 en su propio entorno para experimentar con los efectos estilisticos sin depender de la API de Civitai.
 - Automatizacion de tareas de retoque: al ser un LoRA ligero (218 MB), puede cargarse rapidamente en memoria junto al modelo base para tareas de edicion por lotes en entornos serverless.
 - Investigacion de adaptadores para Krea 2: sirve como ejemplo de LoRA entrenado por terceros, util para estudiar tecnicas de ajuste fino en modelos de difusion de imagenes.
-- Despliegue en entornos sin acceso a internet: el mirror en HuggingFace permite descargar el archivo desde un endpoint estable, evitando dependencias de servicios externos con autenticacion.
+- Despliegue en entornos sin acceso a internet: el mirror en Hugging Face permite descargar el archivo desde un endpoint estable, evitando dependencias de servicios externos con autenticacion.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No se dispone de informacion sobre otros LoRA de Krea 2 o adaptadores comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlexKub/krea2-runpod-assets
+- Repositorio Hugging Face: https://huggingface.co/AlexKub/krea2-runpod-assets
 - Fuente original en Civitai: https://civitai.com/models/2732306
 - Repositorio oficial de Krea 2 (inferencia): https://github.com/krea-ai/krea-2
 - Plantilla RunPod + ComfyUI + Krea2: https://github.com/NovityAi/runpod-comfyui-krea2

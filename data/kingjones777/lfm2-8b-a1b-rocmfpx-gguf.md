@@ -90,7 +90,7 @@ Segun Liquid AI, LFM2-8B-A1B ofrece un rendimiento de decodificacion y prefill u
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/kingjones777/LFM2-8B-A1B-ROCmFPX-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/kingjones777/LFM2-8B-A1B-ROCmFPX-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-8B-A1B
 - GGUF oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM2-8B-A1B-GGUF
 - Blog de Liquid AI sobre LFM2-8B-A1B: https://www.liquid.ai/blog/lfm2-8b-a1b-an-efficient-on-device-mixture-of-experts

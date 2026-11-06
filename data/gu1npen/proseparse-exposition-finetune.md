@@ -70,6 +70,6 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gu1npen/proseparse-exposition-finetune
+- Repositorio Hugging Face: https://huggingface.co/gu1npen/proseparse-exposition-finetune
 - Repositorio del proyecto ProseParse: https://github.com/raywang1265/proseparse-ml-training
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-base

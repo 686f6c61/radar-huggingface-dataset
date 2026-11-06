@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Contrastive es un repositorio experimental publicado por el usuario Sin-gh47 en HuggingFace bajo el identificador `Sin-gh47/dino-demo`. No es un modelo entrenado ni un checkpoint con benchmarks: la propia model card lo describe como una implementación funcional de DINO para aprendizaje contrastivo con una configuración declarada como "xlarge", acompañada de un checkpoint de inicialización (`model.safetensors`) destinado únicamente a pruebas de humo. El repositorio incluye código de inferencia, configuración de arquitectura y una receta de experimento por defecto.
+Dino for Contrastive es un repositorio experimental publicado por el usuario Sin-gh47 en Hugging Face bajo el identificador `Sin-gh47/dino-demo`. No es un modelo entrenado ni un checkpoint con benchmarks: la propia model card lo describe como una implementación funcional de DINO para aprendizaje contrastivo con una configuración declarada como "xlarge", acompañada de un checkpoint de inicialización (`model.safetensors`) destinado únicamente a pruebas de humo. El repositorio incluye código de inferencia, configuración de arquitectura y una receta de experimento por defecto.
 
 El atractivo del repositorio es la transparencia y la reproducibilidad, no el rendimiento: el autor omite deliberadamente cualquier afirmación de benchmark y advierte de que los valores de configuración son puntos de partida, no evidencia de un entrenamiento completado. La arquitectura declarada combina atención flash, fusión con compuerta (gated fusion), activación ReLU y normalización RMSNorm; el optimizador por defecto es Adafactor con planificador polinómico.
 
@@ -88,5 +88,5 @@ Las alternativas se incluyen únicamente como referencia cualitativa de la famil
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sin-gh47/dino-demo
+- Hugging Face: https://huggingface.co/Sin-gh47/dino-demo
 - La búsqueda web realizada no devolvió ningún enlace relevante para este modelo: los resultados correspondían a artículos sobre la función matemática seno, a la deidad mesopotámica Sîn y a la página de inicio de sesión de Outlook. No se dispone de paper, blog, repositorio ni demo adicionales verificables en la información proporcionada.

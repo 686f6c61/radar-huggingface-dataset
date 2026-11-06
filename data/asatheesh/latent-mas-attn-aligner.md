@@ -70,7 +70,7 @@ No disponible. Este aligner es un artefacto de investigación específico para M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asatheesh/latent-mas-attn-aligner
+- Modelo en Hugging Face: https://huggingface.co/asatheesh/latent-mas-attn-aligner
 - Repositorio de código del aligner (según model card): https://github.com/Asatheesh6561/LatentMASHarmBench
 - Proyecto LatentMAS (framework general): https://github.com/Gen-Verse/LatentMAS
 - Artículo "Latent Collaboration in Multi-Agent Systems": https://arxiv.org/abs/2511.20639

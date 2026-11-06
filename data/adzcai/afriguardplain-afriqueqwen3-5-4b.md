@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B
 - Modelo base: https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/adzcai/AfriGuard-plain
 - Conjunto de datos con instrucciones: https://huggingface.co/datasets/israel/AfriGuard-inst

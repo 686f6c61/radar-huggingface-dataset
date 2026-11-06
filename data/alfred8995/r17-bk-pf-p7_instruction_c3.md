@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p7_instruction_c3` es un modelo de lenguaje de 1.296.433.152 parámetros (aproximadamente 1,3 mil millones) publicado en HuggingFace por el usuario alfred8995. El tag del repositorio lo sitúa en la familia Qwen2, por lo que se trata presumiblemente de un transformer decoder-only derivado de esa arquitectura, aunque el repositorio no incluye model card, pipeline declarado ni documentación técnica asociada. El nombre del checkpoint sugiere un ajuste orientado a instrucciones ("instruction"), extremo que no puede confirmarse con la información disponible.
+`alfred8995/r17-bk-pf-p7_instruction_c3` es un modelo de lenguaje de 1.296.433.152 parámetros (aproximadamente 1,3 mil millones) publicado en Hugging Face por el usuario alfred8995. El tag del repositorio lo sitúa en la familia Qwen2, por lo que se trata presumiblemente de un transformer decoder-only derivado de esa arquitectura, aunque el repositorio no incluye model card, pipeline declarado ni documentación técnica asociada. El nombre del checkpoint sugiere un ajuste orientado a instrucciones ("instruction"), extremo que no puede confirmarse con la información disponible.
 
-El modelo no aporta resultados de benchmarks, idiomas declarados ni especificación de longitud de contexto, y el repositorio no registra descargas ni interacciones en el momento de la consulta. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, y la licencia aparece catalogada como "other", es decir, términos personalizados que deben revisarse antes de cualquier uso comercial.
+El modelo no aporta resultados de benchmarks, idiomas declarados ni especificación de longitud de contexto, y el repositorio no registra descargas ni interacciones en el momento de la consulta. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, y la licencia aparece catalogada como "other", es decir, términos personalizados que deben revisarse antes de cualquier uso comercial.
 
 Su relevancia potencial se limita al nicho de modelos pequeños (1-2 B) desplegables en GPU de consumo o en entornos con recursos ajustados, donde un checkpoint de ~2,6 GB en safetensors puede ejecutarse con cuantización de 4 u 8 bits en hardware modesto. No obstante, la ausencia total de documentación, evaluación publicada y trazabilidad del proceso de entrenamiento impide tratarlo como una opción lista para producción sin una validación propia previa.
 
@@ -67,7 +67,7 @@ Estimaciones derivadas del recuento de parámetros (1,3 B); no son mediciones pu
 - GPU de consumo: cabe con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090; también en GPUs de 8 GB e incluso de 6 GB con cuantización de 4 bits.
 - Despliegue: al no publicarse variantes GGUF, el uso con llama.cpp u Ollama requiere convertir los safetensors a GGUF por cuenta propia. vLLM y TGI pueden servir el checkpoint si la arquitectura Qwen2 es compatible y se dispone de acceso al repositorio; Transformers con `trust_remote_code` es la vía más directa.
 - Latencia y throughput: no disponibles. A título orientativo, un modelo denso de 1,3 B en una GPU moderna suele superar con holgura el centenar de tokens por segundo en fp16, pero esta cifra no está medida para este checkpoint concreto.
-- Requisito adicional: al ser un repositorio gated, cualquier despliegue automatizado necesita un token de HuggingFace con permisos y la aceptación previa de las condiciones.
+- Requisito adicional: al ser un repositorio gated, cualquier despliegue automatizado necesita un token de Hugging Face con permisos y la aceptación previa de las condiciones.
 
 ## Comparativa con modelos similares
 
@@ -97,6 +97,6 @@ Frente a estas alternativas, el modelo aquí descrito no aporta datos de context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p7_instruction_c3
+- Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p7_instruction_c3
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces encontrados correspondían a servicios genéricos (Google Gemini, ChatGPT) y a manuales de productos, sin relación con el checkpoint.

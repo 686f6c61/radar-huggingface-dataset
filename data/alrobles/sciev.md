@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sciev (Open System-One Scientific Decision Models) es una familia de cabezas de decision tipadas entrenadas sobre un backbone congelado LLaDA-8B-Instruct, un transformer de difusion enmascarada (masked diffusion). Lo desarrolla alrobles y se publica bajo licencia Apache-2.0 en HuggingFace, con el codigo en el repositorio `alrobles/sciev` y distribucion via `pip install sciev`. El modelo no genera texto: recibe un `state` no estructurado junto con preguntas tipadas (`choice`, `noul`, `score`) y devuelve decisiones estructuradas con probabilidades en un unico forward pass por decision, sin necesidad de parsear la salida.
+Sciev (Open System-One Scientific Decision Models) es una familia de cabezas de decision tipadas entrenadas sobre un backbone congelado LLaDA-8B-Instruct, un transformer de difusion enmascarada (masked diffusion). Lo desarrolla alrobles y se publica bajo licencia Apache-2.0 en Hugging Face, con el codigo en el repositorio `alrobles/sciev` y distribucion via `pip install sciev`. El modelo no genera texto: recibe un `state` no estructurado junto con preguntas tipadas (`choice`, `noul`, `score`) y devuelve decisiones estructuradas con probabilidades en un unico forward pass por decision, sin necesidad de parsear la salida.
 
 La propuesta encaja en la idea de "system one" aplicada a ciencia: en lugar de encadenar generacion de texto y post-procesado, se acoplan cabezas ligeras y especializadas a un backbone congelado para producir decisiones calibradas. Las cabezas publicadas en la release son tres: `fr_choice.pt` (AttnPoolHead, 67,2 M de parametros), `fr_noul.pt` (MLP, 16,8 M) y `fr_score.pt` (MLP con perdida auxiliar ordinal, 16,8 M). El repositorio ocupa 0,8 GB y el backbone se descarga por separado desde `GSAI-ML/LLaDA-8B-Instruct`.
 
@@ -76,9 +76,9 @@ La informacion disponible no incluye comparaciones con otros modelos de decision
 
 | Sistema | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sciev, cabezas `fr` (release) | 100,8 M de cabezas + backbone de 8B | no disponible | choice 0,970 (n=448); GPQA 0,295 (n=441); SciFact noul 0,483 (n=332) | Apache-2.0 (cabezas y codigo) | HuggingFace, 0 descargas, 0 likes |
-| Sciev, cabezas `da` (experimental) | 100,8 M de cabezas + backbone de 8B | no disponible | choice 0,961 (n=448); GPQA 0,288 (n=441); SciFact noul 0,709 (n=332) | Apache-2.0 (cabezas y codigo) | HuggingFace (carpeta `experimental`) |
-| LLaDA-8B-Instruct (`GSAI-ML/LLaDA-8B-Instruct`) | 8B | no disponible en la informacion proporcionada | no disponible | licencia propia del backbone | HuggingFace, descarga separada |
+| Sciev, cabezas `fr` (release) | 100,8 M de cabezas + backbone de 8B | no disponible | choice 0,970 (n=448); GPQA 0,295 (n=441); SciFact noul 0,483 (n=332) | Apache-2.0 (cabezas y codigo) | Hugging Face, 0 descargas, 0 likes |
+| Sciev, cabezas `da` (experimental) | 100,8 M de cabezas + backbone de 8B | no disponible | choice 0,961 (n=448); GPQA 0,288 (n=441); SciFact noul 0,709 (n=332) | Apache-2.0 (cabezas y codigo) | Hugging Face (carpeta `experimental`) |
+| LLaDA-8B-Instruct (`GSAI-ML/LLaDA-8B-Instruct`) | 8B | no disponible en la informacion proporcionada | no disponible | licencia propia del backbone | Hugging Face, descarga separada |
 | Otros modelos de decision cientifica comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,13 +91,13 @@ La informacion disponible no incluye comparaciones con otros modelos de decision
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de decisiones erroneas con alta confianza si la calibracion no se reajusta.
 - Idiomas: no se declaran idiomas soportados; los benchmarks citados son en ingles.
 - Licencia: Apache-2.0 cubre codigo y pesos de las cabezas, pero el backbone y los datasets de origen mantienen sus propias licencias, que hay que revisar antes de un uso comercial.
-- Madurez: 0 descargas y 0 likes en HuggingFace, sin validacion independiente conocida; el manuscrito esta en preparacion para envio a arXiv.
+- Madurez: 0 descargas y 0 likes en Hugging Face, sin validacion independiente conocida; el manuscrito esta en preparacion para envio a arXiv.
 - Se han publicado cabezas experimentales en la misma pagina; conviene no mezclarlas con la release congelada en produccion.
-- Las fechas indicadas por HuggingFace (creacion 2026-09-28) son las reportadas por la plataforma.
+- Las fechas indicadas por Hugging Face (creacion 2026-09-28) son las reportadas por la plataforma.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alrobles/sciev
+- Hugging Face: https://huggingface.co/alrobles/sciev
 - Codigo (GitHub): https://github.com/alrobles/sciev
 - Sitio del proyecto: https://sciev.org
 - Manuscrito (en preparacion): https://sciev.org/static/sciev-paper.pdf

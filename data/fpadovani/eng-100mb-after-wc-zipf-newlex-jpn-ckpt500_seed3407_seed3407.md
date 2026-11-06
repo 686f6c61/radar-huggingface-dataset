@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407 | 124.770.816 | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT (según la model card del modelo original) | HuggingFace, ampliamente extendido |
-| openai-community/distilgpt2 | 82 M | 1024 tokens | MIT | HuggingFace |
-| fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407 (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407 | 124.770.816 | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT (según la model card del modelo original) | Hugging Face, ampliamente extendido |
+| openai-community/distilgpt2 | 82 M | 1024 tokens | MIT | Hugging Face |
+| fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407 (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 
 Nota: los datos de GPT-2 y DistilGPT2 corresponden a sus fichas públicas habituales y se incluyen solo como referencia de categoría (modelos densos pequeños de generación de texto). No existen benchmarks comparativos publicados para el modelo descrito, por lo que no es posible establecer una comparación de rendimiento.
 
@@ -86,7 +86,7 @@ Nota: los datos de GPT-2 y DistilGPT2 corresponden a sus fichas públicas habitu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/zasq1w8t
 - Repositorio de TRL: https://github.com/huggingface/trl

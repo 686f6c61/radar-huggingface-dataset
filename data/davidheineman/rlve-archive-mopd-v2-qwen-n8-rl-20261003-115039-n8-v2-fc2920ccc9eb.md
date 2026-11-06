@@ -89,5 +89,5 @@ La diferencia principal no es de arquitectura ni de tamano, sino de estado del a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-n8-rl-20261003-115039-n8-v2-fc2920ccc9eb
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-n8-rl-20261003-115039-n8-v2-fc2920ccc9eb
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

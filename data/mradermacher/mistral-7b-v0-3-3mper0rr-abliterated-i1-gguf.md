@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio proporciona cuantizaciones GGUF del modelo 3MPER0RR/Mistral-7B-v0.3-3MPER0RR-abliterated, elaboradas por mradermacher, un distribuidor habitual de archivos GGUF en HuggingFace. El modelo original es una variante de Mistral 7B v0.3 que ha sido sometida a un proceso de "abliterated", una técnica que elimina o reduce las capas de rechazo del modelo para permitir respuestas sobre temas que el modelo base podría censurar. El modelo tiene 7.248.023.552 parámetros, es decir, aproximadamente 7.25 mil millones. La arquitectura subyacente es la de Mistral 7B v0.3, un modelo de lenguaje basado en transformer, aunque la información disponible no especifica la longitud de contexto. La relevancia de este repositorio radica en ofrecer una colección amplia de cuantizaciones (desde i1-IQ2_XS hasta i1-Q6_K) para ejecutar el modelo en local con motores como llama.cpp u otros compatibles con GGUF.
+Este repositorio proporciona cuantizaciones GGUF del modelo 3MPER0RR/Mistral-7B-v0.3-3MPER0RR-abliterated, elaboradas por mradermacher, un distribuidor habitual de archivos GGUF en Hugging Face. El modelo original es una variante de Mistral 7B v0.3 que ha sido sometida a un proceso de "abliterated", una técnica que elimina o reduce las capas de rechazo del modelo para permitir respuestas sobre temas que el modelo base podría censurar. El modelo tiene 7.248.023.552 parámetros, es decir, aproximadamente 7.25 mil millones. La arquitectura subyacente es la de Mistral 7B v0.3, un modelo de lenguaje basado en transformer, aunque la información disponible no especifica la longitud de contexto. La relevancia de este repositorio radica en ofrecer una colección amplia de cuantizaciones (desde i1-IQ2_XS hasta i1-Q6_K) para ejecutar el modelo en local con motores como llama.cpp u otros compatibles con GGUF.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento para comparar este modelo con alternativas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Mistral-7B-v0.3-3MPER0RR-abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Mistral-7B-v0.3-3MPER0RR-abliterated-i1-GGUF
 - Modelo base: https://huggingface.co/3MPER0RR/Mistral-7B-v0.3-3MPER0RR-abliterated
 - Repositorio con quants estáticos: https://huggingface.co/mradermacher/Mistral-7B-v0.3-3MPER0RR-abliterated-GGUF
 - Página de descargas del modelo: https://hf.tst.eu/model#Mistral-7B-v0.3-3MPER0RR-abliterated-i1-GGUF

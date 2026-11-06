@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ4e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Referencia de Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b
 - Repositorio de Qwen3.5 (tokwalabs): https://github.com/tokwalabs/Qwen3.5

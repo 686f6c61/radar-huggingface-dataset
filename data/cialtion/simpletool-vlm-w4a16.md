@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SimpleTool-VLM-W4A16 | 4.825.491.968 | no disponible | W4A16 (`compressed-tensors`) | Codigo y documentacion Apache-2.0; pesos sujetos a licencia del base Qwen3-VL | Repositorio HuggingFace, checkpoint publicado "cuando la subida se complete" |
-| SimpleTool-VLM (BF16 fusionado) | no disponible (mismo modelo base, sin cuantizar) | no disponible | BF16 | Codigo y documentacion Apache-2.0; pesos sujetos al base Qwen3-VL | Repositorio HuggingFace `Cialtion/SimpleTool-VLM` |
-| SimpleTool-VLM-FP8 | no disponible | no disponible | FP8 | Codigo y documentacion Apache-2.0; pesos sujetos al base Qwen3-VL | Repositorio HuggingFace `Cialtion/SimpleTool-VLM-FP8`, subida pendiente |
-| Qwen3-VL-4B (modelo base) | ~4.000 millones (cifra aproximada, no confirmada en la informacion disponible) | no disponible | BF16 y otras | Licencia del modelo base Qwen3-VL | Publico en HuggingFace |
+| SimpleTool-VLM-W4A16 | 4.825.491.968 | no disponible | W4A16 (`compressed-tensors`) | Codigo y documentacion Apache-2.0; pesos sujetos a licencia del base Qwen3-VL | Repositorio Hugging Face, checkpoint publicado "cuando la subida se complete" |
+| SimpleTool-VLM (BF16 fusionado) | no disponible (mismo modelo base, sin cuantizar) | no disponible | BF16 | Codigo y documentacion Apache-2.0; pesos sujetos al base Qwen3-VL | Repositorio Hugging Face `Cialtion/SimpleTool-VLM` |
+| SimpleTool-VLM-FP8 | no disponible | no disponible | FP8 | Codigo y documentacion Apache-2.0; pesos sujetos al base Qwen3-VL | Repositorio Hugging Face `Cialtion/SimpleTool-VLM-FP8`, subida pendiente |
+| Qwen3-VL-4B (modelo base) | ~4.000 millones (cifra aproximada, no confirmada en la informacion disponible) | no disponible | BF16 y otras | Licencia del modelo base Qwen3-VL | Publico en Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de SimpleTool-VLM-W4A16 con alternativas de la misma categoria (por ejemplo otros VLM pequenos orientados a tool calling), por lo que la comparacion se limita a parametros, formato de pesos, licencia y disponibilidad.
 
@@ -89,9 +89,9 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Sim
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Cialtion/SimpleTool-VLM-W4A16
+- Repositorio Hugging Face del modelo: https://huggingface.co/Cialtion/SimpleTool-VLM-W4A16
 - Checkpoint fusionado en BF16: https://huggingface.co/Cialtion/SimpleTool-VLM
 - Checkpoint en FP8: https://huggingface.co/Cialtion/SimpleTool-VLM-FP8
-- Perfil del autor en HuggingFace: https://huggingface.co/Cialtion
+- Perfil del autor en Hugging Face: https://huggingface.co/Cialtion
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (los resultados obtenidos correspondian a sitios de contenido para adultos sin relacion con el modelo), por lo que no se dispone de paper, blog tecnico, repositorio de codigo adicional ni demo publica mas alla de los enlaces de HuggingFace indicados. La model card menciona codigo de inferencia en el directorio `inference/` del repositorio y un fichero de ejemplo `examples/invoice_request.json`, pero no se ha localizado un enlace externo al codigo fuente.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (los resultados obtenidos correspondian a sitios de contenido para adultos sin relacion con el modelo), por lo que no se dispone de paper, blog tecnico, repositorio de codigo adicional ni demo publica mas alla de los enlaces de Hugging Face indicados. La model card menciona codigo de inferencia en el directorio `inference/` del repositorio y un fichero de ejemplo `examples/invoice_request.json`, pero no se ha localizado un enlace externo al codigo fuente.

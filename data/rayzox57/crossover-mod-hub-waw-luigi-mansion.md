@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo de inteligencia artificial. Se trata de `rayzox57/crossover-mod-hub-waw-luigi-mansion`, una receta de modificación (mod) para el videojuego Call of Duty: World at War, concretamente para su modo zombis Nacht der Untoten, que combina contenido de Luigi's Mansion con dicho juego. El autor es el usuario de HuggingFace `rayzox57` (Rayzox), que también mantiene la herramienta Crossover Mod Hub en GitHub. El repositorio se publica en HuggingFace como artefacto de distribución, no como pesos de red neuronal.
+Este repositorio no es un modelo de inteligencia artificial. Se trata de `rayzox57/crossover-mod-hub-waw-luigi-mansion`, una receta de modificación (mod) para el videojuego Call of Duty: World at War, concretamente para su modo zombis Nacht der Untoten, que combina contenido de Luigi's Mansion con dicho juego. El autor es el usuario de Hugging Face `rayzox57` (Rayzox), que también mantiene la herramienta Crossover Mod Hub en GitHub. El repositorio se publica en Hugging Face como artefacto de distribución, no como pesos de red neuronal.
 
 El problema que resuelve es el de empaquetar de forma reproducible una modificación que requiere material de dos juegos propietarios. La receta no incluye ningún fichero de Luigi's Mansion ni de World at War: lee la imagen de disco de GameCube que aporta el propio jugador (versión europea) y su instalación de World at War, y genera el mod en su PC. Por tanto, la relevancia técnica es la de un formato de distribución legalmente prudente para mods, no la de una aportación al campo del aprendizaje automático.
 
@@ -42,7 +42,7 @@ El flujo de trabajo documentado por el autor es: tras cualquier modificación de
 
 ## Casos de uso
 
-- Instalación de la modificación por parte de un jugador: el usuario descarga la receta desde HuggingFace, la procesa con Crossover Mod Hub aportando su propia imagen de disco europea de Luigi's Mansion y su instalación de World at War, y obtiene el mod listo para jugar en Nacht der Untoten.
+- Instalación de la modificación por parte de un jugador: el usuario descarga la receta desde Hugging Face, la procesa con Crossover Mod Hub aportando su propia imagen de disco europea de Luigi's Mansion y su instalación de World at War, y obtiene el mod listo para jugar en Nacht der Untoten.
 - Distribución legalmente prudente de mods: al no incluir material de los juegos originales, este formato sirve como patrón para publicar modificaciones sin redistribuir recursos propietarios.
 - Desarrollo y bifurcación de variantes: un modder puede clonar el repositorio, editar `recipe/`, empaquetar con `tools/cmh_pack.py`, subir la versión y publicar su propia variante.
 - Verificación de integridad de una receta: las huellas incluidas en `mod.json` permiten comprobar que los ficheros que se van a convertir son los esperados antes de generar el mod.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 
 | Artefacto | Tipo | Contenido propietario incluido | Idiomas de la ficha | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rayzox57/crossover-mod-hub-waw-luigi-mansion` | Receta de mod (Crossover Mod Hub) | No | fr, en | no disponible | HuggingFace (0 descargas, 0 likes) |
+| `rayzox57/crossover-mod-hub-waw-luigi-mansion` | Receta de mod (Crossover Mod Hub) | No | fr, en | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Otras recetas de Crossover Mod Hub | Receta de mod | No | no disponible | no disponible | GitHub `Rayzox57/crossover-mod-hub` |
 | Mods de Luigi's Mansion en LM Hub (GameBanana) | Mods y contenido para el juego | Variable, depende del autor | no disponible | no disponible | GameBanana (juego 7120) |
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento, descargas o valoraciones que permitan una
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rayzox57/crossover-mod-hub-waw-luigi-mansion
-- Perfil del autor en HuggingFace: https://huggingface.co/rayzox57
+- Repositorio en Hugging Face: https://huggingface.co/rayzox57/crossover-mod-hub-waw-luigi-mansion
+- Perfil del autor en Hugging Face: https://huggingface.co/rayzox57
 - Modelos del autor: https://huggingface.co/rayzox57/models
 - Conjuntos de datos del autor: https://huggingface.co/rayzox57/datasets
 - Herramienta Crossover Mod Hub (GitHub): https://github.com/Rayzox57/crossover-mod-hub

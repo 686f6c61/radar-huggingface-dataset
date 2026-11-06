@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sharp-Coder-V0.1 es un modelo de lenguaje publicado en HuggingFace por el usuario Weinel-Ventures bajo el identificador `Weinel-Ventures/Sharp-Coder-V0.1`. Se trata de un modelo de tamano pequeno: el repositorio declara 160.977.408 parametros (aproximadamente 161 millones) en formato safetensors, con un peso total de repositorio de 1,0 GB. La etiqueta de arquitectura del repositorio es `gpt2`, lo que apunta a un transformer decoder-only de tipo autorregresivo, y el nombre del modelo sugiere un enfoque orientado a generacion de codigo.
+Sharp-Coder-V0.1 es un modelo de lenguaje publicado en Hugging Face por el usuario Weinel-Ventures bajo el identificador `Weinel-Ventures/Sharp-Coder-V0.1`. Se trata de un modelo de tamano pequeno: el repositorio declara 160.977.408 parametros (aproximadamente 161 millones) en formato safetensors, con un peso total de repositorio de 1,0 GB. La etiqueta de arquitectura del repositorio es `gpt2`, lo que apunta a un transformer decoder-only de tipo autorregresivo, y el nombre del modelo sugiere un enfoque orientado a generacion de codigo.
 
-El modelo se distribuye en dos formatos, safetensors y GGUF, y esta marcado como `endpoints_compatible`, por lo que puede desplegarse a traves de la infraestructura de Inference Endpoints de HuggingFace. La relevancia de un modelo de este tamano esta en su capacidad de ejecutarse en hardware muy modesto, incluso en CPU o en GPUs de gama baja, lo que lo hace candidato para asistentes de codigo embebidos, autocompletado local y prototipado rapido sin dependencia de APIs externas.
+El modelo se distribuye en dos formatos, safetensors y GGUF, y esta marcado como `endpoints_compatible`, por lo que puede desplegarse a traves de la infraestructura de Inference Endpoints de Hugging Face. La relevancia de un modelo de este tamano esta en su capacidad de ejecutarse en hardware muy modesto, incluso en CPU o en GPUs de gama baja, lo que lo hace candidato para asistentes de codigo embebidos, autocompletado local y prototipado rapido sin dependencia de APIs externas.
 
 Ahora bien, la informacion publica disponible es muy limitada. El repositorio no declara licencia, idiomas soportados, pipeline ni resultados de evaluacion, y no se ha encontrado documentacion tecnica asociada (paper, blog o model card detallada) en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con este modelo concreto: corresponden a proyectos homonimos o de nombre similar (SharpCoder para .NET, v0.dev, deepseek-harness, Viper-Coder-v0.1), por lo que no aportan datos verificables sobre este checkpoint.
 
@@ -55,7 +55,7 @@ No hay informacion disponible sobre el volumen de tokens de entrenamiento, la co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tabla de evaluacion, no se ha localizado model card con metricas y la busqueda web no ha devuelto resultados asociados a este checkpoint. Por tanto, no se presenta tabla comparativa de MMLU, HumanEval, GSM8K ni de ninguna otra prueba, y no deben asumirse cifras de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tabla de evaluacion, no se ha localizado model card con metricas y la busqueda web no ha devuelto resultados asociados a este checkpoint. Por tanto, no se presenta tabla comparativa de MMLU, HumanEval, GSM8K ni de ninguna otra prueba, y no deben asumirse cifras de rendimiento.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ Las cifras de memoria que siguen son calculos estimados a partir del numero de p
 - VRAM estimada para inferencia (solo pesos): aproximadamente 0,32 GB en FP16/BF16, 0,16 GB en INT8 y 0,08 GB en INT4. Hay que anadir el consumo de la cache KV y de las activaciones, que depende de la longitud de contexto, no disponible.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente en la practica (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). No se requiere hardware de datacenter.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo de los ultimos diez anos, e incluso es viable la inferencia en CPU.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, KoboldCpp) aprovechando los pesos GGUF del repositorio; tambien transformers de HuggingFace para los pesos safetensors. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. No hay confirmacion de soporte en vLLM, TGI u otros servidores de alto rendimiento.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, KoboldCpp) aprovechando los pesos GGUF del repositorio; tambien transformers de Hugging Face para los pesos safetensors. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. No hay confirmacion de soporte en vLLM, TGI u otros servidores de alto rendimiento.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token para este modelo.
 
 ## Comparativa con modelos similares
@@ -94,11 +94,11 @@ La comparacion de rendimiento entre estos modelos y Sharp-Coder-V0.1 queda como 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Weinel-Ventures/Sharp-Coder-V0.1
+- Repositorio en Hugging Face: https://huggingface.co/Weinel-Ventures/Sharp-Coder-V0.1
 - SharpCoder (agente de codigo para .NET, proyecto homonimo sin relacion confirmada): https://github.com/robkaandorp/SharpCoder
 - v0 by Vercel (resultado de busqueda no relacionado con este modelo): https://v0.dev/
 - DeepSeek Harness (resultado de busqueda no relacionado con este modelo): https://github.com/deepseek-ai/deepseek-harness
-- HuggingFace (portal general): https://huggingface.co/
+- Hugging Face (portal general): https://huggingface.co/
 - Viper-Coder-v0.1 (modelo distinto, resultado de busqueda no relacionado): https://huggingface.co/prithivMLmods/Viper-Coder-v0.1
 
 No se han encontrado papers, blogs tecnicos, demos ni repositorios de codigo asociados especificamente a Sharp-Coder-V0.1 en la busqueda realizada.

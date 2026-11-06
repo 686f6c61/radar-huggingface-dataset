@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ertghiu256/qwen3-1.7b-mixture-of-thought-v2` es un ajuste fino (fine-tune) del modelo Qwen3-1.7B de Alibaba, publicado por el usuario ertghiu256 en HuggingFace. El modelo parte de la variante cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-1.7B-unsloth-bnb-4bit`) y se ha entrenado con la libreria Unsloth junto con TRL de HuggingFace, lo que permite un entrenamiento aproximadamente 2x mas rapido segun la model card.
+`ertghiu256/qwen3-1.7b-mixture-of-thought-v2` es un ajuste fino (fine-tune) del modelo Qwen3-1.7B de Alibaba, publicado por el usuario ertghiu256 en Hugging Face. El modelo parte de la variante cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-1.7B-unsloth-bnb-4bit`) y se ha entrenado con la libreria Unsloth junto con TRL de Hugging Face, lo que permite un entrenamiento aproximadamente 2x mas rapido segun la model card.
 
 Se trata de un modelo de generacion de texto de 1.720.574.976 parametros (1,7 mil millones), con licencia Apache 2.0 y orientado exclusivamente al idioma ingles. La model card es extremadamente escasa: no documenta el dataset de entrenamiento, el objetivo concreto del ajuste ("mixture of thought") ni resultados de evaluacion. El repositorio ocupa 3,5 GB y los pesos estan en formato safetensors.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y practica: sirve como ejemplo de fine-tune ligero sob
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura transformer decoder-only de Qwen3-1.7B. El ajuste fino se realizo sobre la version cuantizada en 4 bits de Unsloth, utilizando Unsloth y la libreria TRL de HuggingFace para el entrenamiento. La model card unicamente indica que el entrenamiento fue "2x mas rapido" gracias a Unsloth, sin aportar detalles sobre el numero de tokens, la composicion del dataset, el uso de RLHF/DPO ni hiperparametros.
+El modelo hereda la arquitectura transformer decoder-only de Qwen3-1.7B. El ajuste fino se realizo sobre la version cuantizada en 4 bits de Unsloth, utilizando Unsloth y la libreria TRL de Hugging Face para el entrenamiento. La model card unicamente indica que el entrenamiento fue "2x mas rapido" gracias a Unsloth, sin aportar detalles sobre el numero de tokens, la composicion del dataset, el uso de RLHF/DPO ni hiperparametros.
 
 No se documenta ninguna innovacion tecnica adicional ni el significado concreto del sufijo "mixture-of-thought" mas alla del nombre del repositorio. No hay informacion sobre la estrategia de ajuste (LoRA, QLoRA, full fine-tune) ni sobre si se preservaron las capacidades de modo "thinking" del Qwen3 original.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | ertghiu256/qwen3-1.7b-mixture-of-thought-v2 | 1,72B | no disponible | Apache 2.0 | en | Fine-tune comunitario sin benchmarks |
 | Qwen/Qwen3-1.7B (base) | 1,72B | no disponible en esta ficha | Apache 2.0 | multilingue | Modelo original de Alibaba, con modo thinking |
 | unsloth/Qwen3-1.7B-unsloth-bnb-4bit | 1,72B | no disponible en esta ficha | Apache 2.0 | multilingue | Version cuantizada en 4 bits usada como base del fine-tune |
-| Fine-tunes comunitarios de Qwen3-1.7B | ~1,7B | variable | Apache 2.0 | variable | Numerosos en HuggingFace; calidad y documentacion muy dispares |
+| Fine-tunes comunitarios de Qwen3-1.7B | ~1,7B | variable | Apache 2.0 | variable | Numerosos en Hugging Face; calidad y documentacion muy dispares |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ertghiu256/qwen3-1.7b-mixture-of-thought-v2
+- Modelo en Hugging Face: https://huggingface.co/ertghiu256/qwen3-1.7b-mixture-of-thought-v2
 - Modelo base (Unsloth, Qwen3-1.7B en 4 bits): https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

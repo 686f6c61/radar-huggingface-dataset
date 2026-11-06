@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/Qwen3.8-27B-THIREUS-Q5_1-SPECIAL_SPLIT` es una publicación de HuggingFace realizada por el usuario Thireus el 15 de agosto de 2026. La única información disponible en la model card es la licencia MIT y las etiquetas asociadas (`license:mit`, `region:us`). No se proporciona ninguna descripción técnica, documentación de arquitectura, datos de entrenamiento, ni especificaciones de rendimiento.
+El modelo `Thireus/Qwen3.8-27B-THIREUS-Q5_1-SPECIAL_SPLIT` es una publicación de Hugging Face realizada por el usuario Thireus el 15 de agosto de 2026. La única información disponible en la model card es la licencia MIT y las etiquetas asociadas (`license:mit`, `region:us`). No se proporciona ninguna descripción técnica, documentación de arquitectura, datos de entrenamiento, ni especificaciones de rendimiento.
 
 El nombre del repositorio sugiere una posible relación con la familia Qwen (por la referencia "Qwen3.8-27B") y una cuantización de tipo Q5_1 (habitual en formatos GGUF), así como una división especial de pesos ("SPECIAL_SPLIT"). Sin embargo, al no existir confirmación por parte del autor ni documentación adicional, estas interpretaciones deben considerarse meramente especulativas. Dado el estado actual de la publicación, no es posible evaluar su utilidad práctica ni su idoneidad para ningún caso de uso concreto.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse las características técnicas del modelo, no es 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q5_1-SPECIAL_SPLIT)
+- [Página del modelo en Hugging Face](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q5_1-SPECIAL_SPLIT)

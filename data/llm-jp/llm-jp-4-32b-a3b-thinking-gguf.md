@@ -72,8 +72,8 @@ No se dispone de datos de comparativa directa en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking-gguf
-- Repositorio HuggingFace del modelo base (safetensors): https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking-gguf
+- Repositorio Hugging Face del modelo base (safetensors): https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking
 - Colección de modelos LLM-jp-4: https://huggingface.co/collections/llm-jp/llm-jp-4-models
 - Cookbook de LLM-jp-4: https://github.com/llm-jp/llm-jp-4-cookbook
 - Fork de llama.cpp de LLM-jp: https://github.com/llm-jp/llama.cpp

@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-small-extension
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-small-extension
 - Inicializacion de vocabulario: https://huggingface.co/IARG-UF/akant5-small-extension-init
 - Coleccion AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base mT5-small: https://huggingface.co/google/mt5-small

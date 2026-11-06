@@ -66,5 +66,5 @@ No se dispone de informacion suficiente para realizar una comparativa detallada 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/chibifire/Qwen2.5-VL-7B-Instruct-gguf
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
+- Repositorio de Hugging Face: https://huggingface.co/chibifire/Qwen2.5-VL-7B-Instruct-gguf
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

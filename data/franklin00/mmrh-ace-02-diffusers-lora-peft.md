@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-ace-02-diffusers-lora-peft` es un artefacto de investigación en seguridad publicado en HuggingFace bajo los tags `security-research` y `not-for-production`. No se trata de un modelo generativo funcional, sino de una "muestra de escáner inerte" (*inert scanner specimen*) diseñada para reproducir de forma controlada un hallazgo de seguridad concreto: el uso de metadatos `lora_adapter_metadata` en ficheros safetensors como vector de carga (*carrier*) hacia la generación de configuración PEFT en el ecosistema diffusers.
+`FrankLin00/mmrh-ace-02-diffusers-lora-peft` es un artefacto de investigación en seguridad publicado en Hugging Face bajo los tags `security-research` y `not-for-production`. No se trata de un modelo generativo funcional, sino de una "muestra de escáner inerte" (*inert scanner specimen*) diseñada para reproducir de forma controlada un hallazgo de seguridad concreto: el uso de metadatos `lora_adapter_metadata` en ficheros safetensors como vector de carga (*carrier*) hacia la generación de configuración PEFT en el ecosistema diffusers.
 
 El repositorio lo mantiene el usuario FrankLin00 y su relevancia es exclusivamente académica: permite a investigadores reproducir y auditar la cadena de conversión de metadatos de un adaptador LoRA en safetensors hasta una configuración PEFT, verificando si dicha ruta puede derivar en ejecución de código. El propio autor indica que cualquier sonda activa ejecuta únicamente `whoami` en forma de argv (nunca con `shell=True`) y escribe la salida en una variable de entorno bajo `/tmp` o `$TMPDIR`, sin acceso a credenciales ni operaciones de red.
 
-El tamaño del repositorio es de 0.0 GB según los metadatos de HuggingFace, lo que es coherente con un espécimen que contiene únicamente ficheros de configuración y metadatos, no pesos de un modelo real. No dispone de descargas ni likes, y no se ha publicado pipeline, licencia ni idiomas soportados.
+El tamaño del repositorio es de 0.0 GB según los metadatos de Hugging Face, lo que es coherente con un espécimen que contiene únicamente ficheros de configuración y metadatos, no pesos de un modelo real. No dispone de descargas ni likes, y no se ha publicado pipeline, licencia ni idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No hay información sobre datos de entrenamiento, número de tokens, composició
 ## Casos de uso
 
 - Reproducción de hallazgos de seguridad: un equipo de seguridad puede cargar el espécimen en un entorno aislado para verificar que la ruta de conversión de `lora_adapter_metadata` a configuración PEFT se comporta como se documentó en el hallazgo original.
-- Desarrollo de reglas de detección: permite generar tráfico y artefactos de referencia para validar escáneres estáticos o dinámicos que inspeccionan repositorios de HuggingFace en busca de metadatos maliciosos en safetensors.
+- Desarrollo de reglas de detección: permite generar tráfico y artefactos de referencia para validar escáneres estáticos o dinámicos que inspeccionan repositorios de Hugging Face en busca de metadatos maliciosos en safetensors.
 - Pruebas de pipelines de CI/CD de seguridad: se puede integrar en una batería de tests que compruebe que las herramientas de escaneo detectan el carrier y emiten la alerta correspondiente antes de desplegar un adaptador LoRA.
 - Formación y concienciación: sirve como ejemplo didáctico de cómo un metadato aparentemente inocuo en un fichero safetensors puede influir en la generación de configuración aguas abajo.
 - Validación de sandboxing: al limitar la sonda a `whoami` y a la escritura en `/tmp`, permite comprobar que un entorno de ejecución restringido contiene correctamente la primitiva sin acceso a credenciales ni red.
@@ -71,7 +71,7 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 - No es un modelo funcional: no genera texto, código ni ninguna otra salida útil para aplicaciones de IA.
 - El contenido del repositorio reproduce una primitiva de seguridad; su manipulación fuera de un entorno aislado puede tener implicaciones de seguridad no deseadas.
 - No se ha publicado licencia, lo que impide determinar los términos de uso, redistribución o uso comercial.
-- No se han publicado idiomas soportados ni pipeline, por lo que no hay garantías de compatibilidad con herramientas estándar de HuggingFace.
+- No se han publicado idiomas soportados ni pipeline, por lo que no hay garantías de compatibilidad con herramientas estándar de Hugging Face.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (2026-11-02), lo que sugiere un artefacto de publicación puntual sin mantenimiento posterior documentado.
 - La sonda descrita se limita a `whoami` y a escritura en `/tmp` o `$TMPDIR`, pero cualquier modificación del espécimen o de su manifiesto podría alterar ese comportamiento; debe verificarse siempre contra el `MANIFEST.json` y sus hashes.
 - Riesgo de alucinación: no aplica, al no ser un modelo generativo.
@@ -79,5 +79,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-ace-02-diffusers-lora-peft
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-ace-02-diffusers-lora-peft
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

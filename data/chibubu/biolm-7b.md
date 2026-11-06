@@ -2,7 +2,7 @@
 
 ## Resumen
 
-biolm-7b (presentado en la model card como biolm2.5-Omni) es un modelo multimodal publicado en HuggingFace por el usuario chibubu. Según la escasa documentación disponible, se trata de un modelo end-to-end diseñado para percibir texto, imágenes, audio y vídeo, y para generar de forma simultánea respuestas de texto y habla natural en modo streaming. La model card se limita a una sección "Overview / Introduction" y no aporta detalles sobre datos de entrenamiento, licencia, idiomas ni evaluación.
+biolm-7b (presentado en la model card como biolm2.5-Omni) es un modelo multimodal publicado en Hugging Face por el usuario chibubu. Según la escasa documentación disponible, se trata de un modelo end-to-end diseñado para percibir texto, imágenes, audio y vídeo, y para generar de forma simultánea respuestas de texto y habla natural en modo streaming. La model card se limita a una sección "Overview / Introduction" y no aporta detalles sobre datos de entrenamiento, licencia, idiomas ni evaluación.
 
 El nombre del repositorio induce a error: aunque se denomina "7b", el recuento real de parámetros declarado en los metadatos de safetensors es de 10.732.225.440 (aproximadamente 10,73 mil millones), lo que lo sitúa en la franja de 10-11B. El tamaño del repositorio, 22,4 GB, es coherente con un checkpoint en precisión bf16/fp16 (los pesos en bf16 ocuparían unos 21,5 GB) más los ficheros auxiliares de tokenizer y configuración.
 
@@ -94,6 +94,6 @@ La diferencia clave no es de tamaño, sino de madurez: frente a los modelos omni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chibubu/biolm-7b
+- Hugging Face: https://huggingface.co/chibubu/biolm-7b
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.
 - Los resultados de la búsqueda web suministrados no contienen enlaces relevantes al modelo (tratan sobre Grok y comparativas de asistentes comerciales), por lo que no se incluyen como referencias técnicas.

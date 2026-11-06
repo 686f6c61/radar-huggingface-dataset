@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thamo31/Llama-3.2-3B-4bit-classification-routing-gguf
+- Repositorio Hugging Face: https://huggingface.co/Thamo31/Llama-3.2-3B-4bit-classification-routing-gguf
 - Modelo base Llama 3.2 3B (Meta): https://huggingface.co/meta-llama/Llama-3.2-3B
 - Documentacion de Llama 3.2 (Meta): https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/
 - Model card oficial de Llama 3.2 (GitHub): https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shuofang11/test` es un repositorio alojado en HuggingFace por el usuario `shuofang11` bajo licencia Apache 2.0. A partir de la informacion disponible, no se trata de un modelo entrenado con pesos publicados: el tamano del repositorio es de 0.0 GB, no tiene descargas ni likes, y la model card se limita a declarar la licencia. Todo apunta a un repositorio de prueba o a un esqueleto inicial sin artefactos de modelo.
+`shuofang11/test` es un repositorio alojado en Hugging Face por el usuario `shuofang11` bajo licencia Apache 2.0. A partir de la informacion disponible, no se trata de un modelo entrenado con pesos publicados: el tamano del repositorio es de 0.0 GB, no tiene descargas ni likes, y la model card se limita a declarar la licencia. Todo apunta a un repositorio de prueba o a un esqueleto inicial sin artefactos de modelo.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. La fecha de creacion indicada (2026-11-02) y la ausencia total de contenido impiden considerarlo un modelo evaluable en produccion o investigacion.
 
@@ -38,7 +38,7 @@ Tampoco consta ninguna innovacion tecnica destacable (atencion lineal, decodific
 ## Casos de uso
 
 - No es posible recomendar casos de uso en produccion: el repositorio no contiene pesos ni documentacion funcional que permita validar comportamiento.
-- Prototipado interno de pipelines de publicacion en HuggingFace: el repositorio puede servir como plantilla vacia para verificar flujos de subida, etiquetado y licencia antes de publicar un modelo real.
+- Prototipado interno de pipelines de publicacion en Hugging Face: el repositorio puede servir como plantilla vacia para verificar flujos de subida, etiquetado y licencia antes de publicar un modelo real.
 - Pruebas de integracion de CI/CD con el Hub: util para validar scripts que consultan metadatos, licencia y tamano de repositorio sin descargar artefactos.
 - Validacion de herramientas de catalogacion: permite comprobar como tratan las herramientas de descubrimiento los repositorios sin model card sustantiva ni pesos.
 - Formacion sobre publicacion responsable: sirve como ejemplo de repositorio incompleto frente a una model card minima exigible (arquitectura, datos, limitaciones, evaluacion).
@@ -71,5 +71,5 @@ No disponible. No es posible establecer una comparativa fiable sin parametros, c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shuofang11/test
+- Repositorio en Hugging Face: https://huggingface.co/shuofang11/test
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

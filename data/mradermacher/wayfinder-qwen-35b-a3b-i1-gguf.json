@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mradermacher/wayfinder-qwen-35b-a3b-i1-GGUF",
+  "slug": "mradermacher-wayfinder-qwen-35b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/wayfinder-qwen-35b-a3b-i1-GGUF",
+  "created_at": "2026-11-06T05:42:13.000Z",
+  "updated_at": "2026-11-06T05:53:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 13631526752,
+  "storage_human": "13.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hecan3d/QwenDGAF-4B es un modelo publicado en HuggingFace por el usuario hecan3d. La informacion disponible en el momento de redactar esta ficha se limita al identificador del repositorio, la licencia declarada (apache-2.0), la etiqueta de region (us) y la fecha de creacion y ultima actualizacion (12 de octubre de 2026). El repositorio registra 0 descargas y 0 likes, y no incluye pipeline declarado, idiomas soportados ni una model card con contenido tecnico: el README se reduce al bloque de metadatos con la licencia apache-2.0.
+hecan3d/QwenDGAF-4B es un modelo publicado en Hugging Face por el usuario hecan3d. La informacion disponible en el momento de redactar esta ficha se limita al identificador del repositorio, la licencia declarada (apache-2.0), la etiqueta de region (us) y la fecha de creacion y ultima actualizacion (12 de octubre de 2026). El repositorio registra 0 descargas y 0 likes, y no incluye pipeline declarado, idiomas soportados ni una model card con contenido tecnico: el README se reduce al bloque de metadatos con la licencia apache-2.0.
 
 El nombre del repositorio sugiere que se trata de un modelo derivado o ajustado a partir de una base de la familia Qwen con aproximadamente 4000 millones de parametros, pero esta interpretacion no esta confirmada por el autor en ningun documento disponible. No hay informacion sobre arquitectura, datos de entrenamiento, proceso de ajuste, contexto maximo ni capacidades declaradas.
 
@@ -83,7 +83,7 @@ No disponible. No existe informacion verificable sobre el rendimiento, la arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hecan3d/QwenDGAF-4B
+- Hugging Face: https://huggingface.co/hecan3d/QwenDGAF-4B
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nalemi/Trinity_RPG_Engine_Demo",
+  "slug": "nalemi-trinity_rpg_engine_demo",
+  "author": "nalemi",
+  "url": "https://huggingface.co/nalemi/Trinity_RPG_Engine_Demo",
+  "created_at": "2026-11-06T12:03:44.000Z",
+  "updated_at": "2026-11-06T12:13:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "egui",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "egui",
+    "rust",
+    "offline-ai",
+    "game-engine",
+    "local-llm",
+    "gemma-2",
+    "piper-tts",
+    "roleplay",
+    "narrative-engine",
+    "text-generation",
+    "de",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608410,
+  "storage_human": "608410 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - l497996153/AI-RPG-Engine: A modular AI-driven RPG engine ...",
+      "url": "https://github.com/l497996153/AI-RPG-Engine",
+      "snippet": "A modular AI-driven RPG engine powered by LLMs, featuring RAG-based consistent memory Designed to support any Tabletop RPG — stats, attributes, prompts, and game mechanics are defined per-module, and the frontend dynamically renders based on the backend's schema."
+    },
+    {
+      "title": "ai-rpg-engine · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ai-rpg-engine",
+      "snippet": "An AI-driven Tabletop RPG engine and web platform that brings living worlds to life. Powered by LLMs, featuring dynamic interactive storytelling, procedural adventures, tactical combat, and evolving character relationships across Discord and the web."
+    }
+  ]
+}

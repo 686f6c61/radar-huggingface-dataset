@@ -92,7 +92,7 @@ La comparativa se limita a los modelos mencionados en la información disponible
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled-LoRA
+- Adaptador LoRA en Hugging Face: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled-LoRA
 - Modelo fusionado 16-bit: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled
 - Variante GGUF: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled-GGUF
 - Variante EXL3: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled-EXL3

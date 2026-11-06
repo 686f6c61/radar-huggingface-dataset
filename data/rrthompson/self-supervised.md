@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rrthompson/self-supervised es un repositorio alojado en HuggingFace que, pese a estar etiquetado con el tag `transformer` y contener un artefacto `safetensors`, no constituye un modelo de lenguaje entrenado ni un checkpoint utilizable. La propia model card lo describe como un conjunto estructurado de notas de investigacion sobre aprendizaje autosupervisado, con referencias de evaluacion y preguntas abiertas, y declara explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. El unico artefacto de pesos presente es un tensor de 24.832 parametros totales, un tamano compatible con un tensor auxiliar de prueba o con un componente residual, no con un transformer funcional.
+Rrthompson/self-supervised es un repositorio alojado en Hugging Face que, pese a estar etiquetado con el tag `transformer` y contener un artefacto `safetensors`, no constituye un modelo de lenguaje entrenado ni un checkpoint utilizable. La propia model card lo describe como un conjunto estructurado de notas de investigacion sobre aprendizaje autosupervisado, con referencias de evaluacion y preguntas abiertas, y declara explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. El unico artefacto de pesos presente es un tensor de 24.832 parametros totales, un tamano compatible con un tensor auxiliar de prueba o con un componente residual, no con un transformer funcional.
 
 El autor, identificado como Rrthompson, publica bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0), lo que permite reutilizacion y adaptacion con atribucion, incluso comercial. El repositorio no tiene pipeline declarado, no especifica idiomas soportados, acumula cero descargas y cero "likes" desde su creacion el 9 de octubre de 2026, y ocupa 0,0 GB en disco. Los metadatos indican region `us`.
 
@@ -85,7 +85,7 @@ No disponible. El repositorio no es comparable con modelos de lenguaje de su cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rrthompson/self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/Rrthompson/self-supervised
 - Archivo principal de la nota: `reading.md` dentro del repositorio
 - Documentacion del repositorio: `README.md` dentro del repositorio
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible en la informacion proporcionada

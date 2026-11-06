@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Draskeer/vit-beans-demo es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario Draskeer. Se trata de un ajuste fino (fine-tuning) del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base preentrenado en el conjunto ImageNet-21k. El modelo final cuenta con 85.800.963 parámetros confirmados a partir de los pesos en formato safetensors, y se distribuye bajo licencia Apache 2.0.
+Draskeer/vit-beans-demo es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario Draskeer. Se trata de un ajuste fino (fine-tuning) del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base preentrenado en el conjunto ImageNet-21k. El modelo final cuenta con 85.800.963 parámetros confirmados a partir de los pesos en formato safetensors, y se distribuye bajo licencia Apache 2.0.
 
 El modelo resuelve una tarea de clasificación de imágenes cuyo conjunto de datos el propio autor declara como desconocido en la model card ("on an unknown dataset"), por lo que ni las clases de salida ni el dominio concreto están documentados más allá de lo que sugiere el nombre del repositorio. El repositorio es un artefacto de demostración generado automáticamente por la librería Trainer de Transformers, con 0 descargas y 0 "likes" en el momento de la consulta, y sin documentación adicional sobre usos previstos o limitaciones.
 
@@ -84,7 +84,7 @@ Advertencia sobre estos datos: existe una incoherencia en la propia model card, 
 - VRAM estimada en int8: aproximadamente 86 MB para los pesos, si se aplica cuantización por parte del usuario, ya que el autor no publica versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia por lotes pequeños. Funciona sin problema en RTX 4090, RTX 3090, RTX 3060, T4, A100 y H100; en todas ellas el modelo está muy por debajo de la capacidad de memoria disponible.
 - GPU consumer: sí, cabe holgadamente en cualquier GPU consumer actual e incluso en GPUs integradas y en CPU. El repositorio ocupa 1,7 GB porque incluye pesos en precisión completa, pero en memoria los pesos son de unos 344 MB.
-- Opciones de despliegue: pipeline de transformers (image-classification), HuggingFace Inference Endpoints, exportación a ONNX con Optimum y ejecución con ONNX Runtime, TorchScript, o servidores de inferencia como Triton. llama.cpp y Ollama no son las vías habituales para un ViT de clasificación, aunque existen rutas de conversión parciales.
+- Opciones de despliegue: pipeline de transformers (image-classification), Hugging Face Inference Endpoints, exportación a ONNX con Optimum y ejecución con ONNX Runtime, TorchScript, o servidores de inferencia como Triton. llama.cpp y Ollama no son las vías habituales para un ViT de clasificación, aunque existen rutas de conversión parciales.
 - Latencia y throughput estimados: no disponible. El autor no publica mediciones de latencia ni de imágenes por segundo en ninguna configuración de hardware.
 
 ## Comparativa con modelos similares
@@ -93,9 +93,9 @@ No se han publicado comparativas de rendimiento en la información disponible. L
 
 | Modelo | Parámetros | Resolución de entrada | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Draskeer/vit-beans-demo | 85.800.963 | 224x224 px (parches 16x16) | Apache 2.0 | HuggingFace, safetensors | Exactitud declarada 0,9609-0,9774 en un conjunto de evaluación no especificado |
-| google/vit-base-patch16-224-in21k | Aproximadamente 86 M | 224x224 px (parches 16x16) | Apache 2.0 | HuggingFace, safetensors | No disponible en esta comparativa; es el checkpoint base sin cabeza de clasificación ajustada a una tarea concreta |
-| google/vit-base-patch16-224 | Aproximadamente 86 M | 224x224 px (parches 16x16) | Apache 2.0 | HuggingFace, safetensors | No disponible en esta comparativa; ajustado sobre ImageNet-1k (1.000 clases) |
+| Draskeer/vit-beans-demo | 85.800.963 | 224x224 px (parches 16x16) | Apache 2.0 | Hugging Face, safetensors | Exactitud declarada 0,9609-0,9774 en un conjunto de evaluación no especificado |
+| google/vit-base-patch16-224-in21k | Aproximadamente 86 M | 224x224 px (parches 16x16) | Apache 2.0 | Hugging Face, safetensors | No disponible en esta comparativa; es el checkpoint base sin cabeza de clasificación ajustada a una tarea concreta |
+| google/vit-base-patch16-224 | Aproximadamente 86 M | 224x224 px (parches 16x16) | Apache 2.0 | Hugging Face, safetensors | No disponible en esta comparativa; ajustado sobre ImageNet-1k (1.000 clases) |
 | ResNet-50 (torchvision) | Aproximadamente 25,6 M | 224x224 px | BSD-3-Clause | torchvision, ONNX | No disponible en esta comparativa; arquitectura convolucional, no transformer |
 
 La única comparación significativa y verificable es con el propio modelo base: vit-beans-demo añade una cabeza de clasificación ajustada a un dominio no documentado, mientras que google/vit-base-patch16-224-in21k es un checkpoint preentrenado sin cabeza de clasificación específica de tarea.
@@ -116,6 +116,6 @@ La única comparación significativa y verificable es con el propio modelo base:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Draskeer/vit-beans-demo
+- Modelo en Hugging Face: https://huggingface.co/Draskeer/vit-beans-demo
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Resultados de la búsqueda web: ninguno de los enlaces devueltos (páginas de soporte de Microsoft sobre Hotmail, Outlook, Exchange Server y configuración de pantalla en Windows) guarda relación con este modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

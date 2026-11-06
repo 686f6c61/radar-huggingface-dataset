@@ -101,8 +101,8 @@ No hay datos disponibles de otros modelos abliterados comparables en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace (legatos): https://huggingface.co/legatos/Qwen3.8-27B-OBLITERATED
-- Repositorio HuggingFace (OBLITERATUS, espejo): https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
+- Repositorio Hugging Face (legatos): https://huggingface.co/legatos/Qwen3.8-27B-OBLITERATED
+- Repositorio Hugging Face (OBLITERATUS, espejo): https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Blog explainx.ai: "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained" — https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026
 - Blog explainx.ai: "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026)" — https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026
 - Genaihub: https://genaihub.net/agents/hf-model-obliteratus-qwen3-8-27b-obliterated

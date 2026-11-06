@@ -69,8 +69,8 @@ La model card reconoce que el codigo se apoya en Ola, por lo que este es el mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eCity-Omni | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Ola (base de codigo) | no disponible | no disponible | no disponible | no disponible | GitHub / HuggingFace |
+| eCity-Omni | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Ola (base de codigo) | no disponible | no disponible | no disponible | no disponible | GitHub / Hugging Face |
 | Otras alternativas omni | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,14 +80,14 @@ La model card reconoce que el codigo se apoya en Ola, por lo que este es el mode
 - Se desconocen el numero de parametros y la longitud de contexto, lo que dificulta planificar el despliegue.
 - Idiomas limitados a ingles y chino; no se documenta soporte de castellano.
 - El analisis de intervalos depende del formato exacto `From second{X} to second{Y}.`; si el modelo no respeta el formato, el script recurre a imprimir la salida original.
-- Requiere ffmpeg y flash-attn, y el proceso de carga del tower de vision intenta descargar `openai/clip-vit-large-patch14` de HuggingFace, lo que falla en entornos sin salida a internet.
+- Requiere ffmpeg y flash-attn, y el proceso de carga del tower de vision intenta descargar `openai/clip-vit-large-patch14` de Hugging Face, lo que falla en entornos sin salida a internet.
 - Riesgo de alucinacion en la localizacion temporal no evaluado ni documentado.
 - Sesgos conocidos: no documentados.
 - La licencia Apache 2.0 permite uso comercial, pero no se ofrece ninguna garantia sobre el modelo ni sobre los datos de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eCityAI-Sup/eCity-Omni
+- Modelo en Hugging Face: https://huggingface.co/eCityAI-Sup/eCity-Omni
 - Checkpoint ChronusOmni: https://huggingface.co/eCityAI-Sup/eCity-Omni/ChronusOmni
 - Articulo (arXiv): https://arxiv.org/abs/2512.09841
 - Repositorio base Ola: https://github.com/Ola-Omni/Ola

@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Tecnica | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Llama 3.1 Community | Instruct (RLHF) | HuggingFace |
-| ApolloRaines/Llama-3.1-8B-Instruct_Abliterated | 8.03B | 128K (heredado) | Llama 3.1 Community | jBlaze (abliteration) | HuggingFace |
-| mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated | 8.03B | 128K (heredado) | Llama 3.1 Community | Abliteration (FailSpy) | HuggingFace |
+| Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Llama 3.1 Community | Instruct (RLHF) | Hugging Face |
+| ApolloRaines/Llama-3.1-8B-Instruct_Abliterated | 8.03B | 128K (heredado) | Llama 3.1 Community | jBlaze (abliteration) | Hugging Face |
+| mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated | 8.03B | 128K (heredado) | Llama 3.1 Community | Abliteration (FailSpy) | Hugging Face |
 
 Ambas variantes abliterated eliminan el rechazo, pero usan implementaciones distintas. La de mlabonne es ampliamente conocida y evaluada en el Open LLM Leaderboard; la de ApolloRaines usa jBlaze, una herramienta propietaria, y no tiene evaluaciones publicas. El rendimiento en tareas generales deberia ser similar al base, pero no hay datos comparativos.
 
@@ -74,7 +74,7 @@ Ambas variantes abliterated eliminan el rechazo, pero usan implementaciones dist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Abliterated
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Abliterated
 - Herramienta jBlaze: https://jblaze.dev
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante abliterated de mlabonne (referencia): https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated

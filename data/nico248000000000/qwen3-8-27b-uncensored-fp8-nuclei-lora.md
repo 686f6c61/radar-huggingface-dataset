@@ -6,7 +6,7 @@ El modelo `nico248000000000/Qwen3.8-27B-Uncensored-FP8-nuclei-LoRA` es un adapta
 
 El interés de este modelo radica en su especialización: en lugar de un modelo generalista, ofrece una herramienta ajustada para una tarea concreta (redacción de scripts nuclei) manteniendo las capacidades multimodales del modelo base, aunque estas quedaron congeladas durante el entrenamiento. Con un contexto de 2048 tokens y un entrenamiento de una sola época sobre 919 ejemplos, es un experimento ligero y rápido (16,7 minutos en una RTX PRO 6000 Blackwell) que demuestra la viabilidad de adaptar modelos grandes a dominios muy específicos con pocos recursos.
 
-La relevancia actual viene dada por el creciente interés en modelos de seguridad ofensiva y en la automatización de tareas de pentesting mediante IA. Sin embargo, hay que señalar que el adaptador tiene cero descargas y cero likes en HuggingFace, y que la licencia es `other`, lo que obliga a revisar las condiciones del modelo base antes de cualquier uso.
+La relevancia actual viene dada por el creciente interés en modelos de seguridad ofensiva y en la automatización de tareas de pentesting mediante IA. Sin embargo, hay que señalar que el adaptador tiene cero descargas y cero likes en Hugging Face, y que la licencia es `other`, lo que obliga a revisar las condiciones del modelo base antes de cualquier uso.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Existen otros 
 
 - Dominio muy restringido: el modelo esta entrenado exclusivamente para generar scripts nuclei; su calidad degrada significativamente fuera de este ambito, como reconoce el propio autor.
 - La perdida de evaluacion (14,09) es alta, lo que sugiere que el modelo puede tener dificultades para generalizar incluso dentro del dominio, posiblemente por el pequeno tamano del dataset (919 ejemplos).
-- El adaptador tiene cero descargas y cero likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El adaptador tiene cero descargas y cero likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - Licencia `other`: se debe revisar y respetar la licencia del modelo base `orcarouter/Qwen3.8-27B-Uncensored-FP8`; no se especifican los terminos exactos.
 - No se han realizado evaluaciones de seguridad o sesgos. Al ser un modelo "uncensored", puede generar contenido no deseado si se usa fuera de su dominio previsto.
 - El contexto de 2048 tokens es limitado para tareas que requieran documentos largos o historiales extensos.
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Existen otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nico248000000000/Qwen3.8-27B-Uncensored-FP8-nuclei-LoRA
+- Modelo en Hugging Face: https://huggingface.co/nico248000000000/Qwen3.8-27B-Uncensored-FP8-nuclei-LoRA
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Repositorio GitHub de la comunidad sobre Qwen3.8-27B Uncensored: https://github.com/Wassimyounes01/qwen38-uncensored
 - Blog de MindStudio sobre abliteracion de Qwen3.8-27B: https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration

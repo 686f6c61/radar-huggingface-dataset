@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bradharrison/Qwen3.8-Flash-Next-W4A8-INT4-PLE | 128,8B | no disponible | GPTQ W4A8 + sidecar PLE int4 | qwen-community-1.0 | HuggingFace, requiere vLLM parcheado |
-| Qwen/Qwen3.8-Flash-Next (OEM) | 128,8B | no disponible | bf16 | qwen-community-1.0 | HuggingFace, checkpoint oficial |
-| primitive-ai/Qwen3.8-Flash-Next-PLE-quant | no disponible | no disponible | AWQ-derived para PLE | no disponible | HuggingFace, citado como referencia de validacion |
+| bradharrison/Qwen3.8-Flash-Next-W4A8-INT4-PLE | 128,8B | no disponible | GPTQ W4A8 + sidecar PLE int4 | qwen-community-1.0 | Hugging Face, requiere vLLM parcheado |
+| Qwen/Qwen3.8-Flash-Next (OEM) | 128,8B | no disponible | bf16 | qwen-community-1.0 | Hugging Face, checkpoint oficial |
+| primitive-ai/Qwen3.8-Flash-Next-PLE-quant | no disponible | no disponible | AWQ-derived para PLE | no disponible | Hugging Face, citado como referencia de validacion |
 
 No se dispone de datos de benchmarks que permitan comparar calidad entre estas variantes. La comparacion se limita a formato, empaquetado y requisitos de despliegue.
 
@@ -86,9 +86,9 @@ No se dispone de datos de benchmarks que permitan comparar calidad entre estas v
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bradharrison/Qwen3.8-Flash-Next-W4A8-INT4-PLE
+- Hugging Face: https://huggingface.co/bradharrison/Qwen3.8-Flash-Next-W4A8-INT4-PLE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Referencia de validacion del sidecar PLE: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-PLE-quant
-- Licencia: LICENSE dentro del repositorio de HuggingFace
+- Licencia: LICENSE dentro del repositorio de Hugging Face
 - gptqmodel: no se proporciona enlace en la informacion disponible
 - vLLM con soporte `qwen4_exp`: no se proporciona enlace en la informacion disponible

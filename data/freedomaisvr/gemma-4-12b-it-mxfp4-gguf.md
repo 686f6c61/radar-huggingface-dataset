@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-MXFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-MXFP4-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Informe técnico de Gemma 4 (arXiv): https://arxiv.org/pdf/2607.02770
 - Página oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

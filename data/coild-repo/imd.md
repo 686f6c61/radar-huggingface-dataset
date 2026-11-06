@@ -2,9 +2,9 @@
 
 ## Resumen
 
-IMD es un modelo de traduccion automatica publicado por el usuario coild-repo en HuggingFace, obtenido mediante fine-tuning del modelo ai4bharat/indictrans2-en-indic-dist-200M sobre frases de alertas meteorologicas del IMD (India Meteorological Department). Su proposito es traducir avisos meteorologicos del ingles a hindi, maithili y urdu manteniendo la terminologia y las plantillas propias de los boletines oficiales, un dominio muy especifico donde los modelos genericos de traduccion suelen fallar en nombres de fenomenos, niveles de alerta y estructuras administrativas.
+IMD es un modelo de traduccion automatica publicado por el usuario coild-repo en Hugging Face, obtenido mediante fine-tuning del modelo ai4bharat/indictrans2-en-indic-dist-200M sobre frases de alertas meteorologicas del IMD (India Meteorological Department). Su proposito es traducir avisos meteorologicos del ingles a hindi, maithili y urdu manteniendo la terminologia y las plantillas propias de los boletines oficiales, un dominio muy especifico donde los modelos genericos de traduccion suelen fallar en nombres de fenomenos, niveles de alerta y estructuras administrativas.
 
-Tecnicamente es un modelo denso de tipo transformer encoder-decoder para generacion texto-a-texto (pipeline `translation`), con 274.584.576 parametros reales declarados en los pesos safetensors. El repositorio ocupa 1,1 GB e incluye codigo personalizado (`custom_code`), por lo que su carga en `transformers` requiere `trust_remote_code=True`. La licencia es MIT, lo que permite uso comercial, pero el acceso al repositorio esta restringido (gated) y exige aceptar condiciones en HuggingFace antes de descargarlo.
+Tecnicamente es un modelo denso de tipo transformer encoder-decoder para generacion texto-a-texto (pipeline `translation`), con 274.584.576 parametros reales declarados en los pesos safetensors. El repositorio ocupa 1,1 GB e incluye codigo personalizado (`custom_code`), por lo que su carga en `transformers` requiere `trust_remote_code=True`. La licencia es MIT, lo que permite uso comercial, pero el acceso al repositorio esta restringido (gated) y exige aceptar condiciones en Hugging Face antes de descargarlo.
 
 El modelo es relevante como ejemplo de adaptacion de dominio de un sistema de traduccion Indic: parte de la familia IndicTrans2, que cubre las principales lenguas del subcontinente, y se especializa en un unico genero textual. Los resultados declarados por el autor son extraordinariamente altos (BLEU entre 99,52 y 99,86 sobre conjuntos de plantillas reservadas), lo que sugiere un ajuste muy estrecho a las plantillas del corpus de entrenamiento mas que una capacidad general de traduccion; ningun resultado esta verificado de forma independiente.
 
@@ -23,7 +23,7 @@ El modelo es relevante como ejemplo de adaptacion de dominio de un sistema de tr
 | Pipeline declarado | translation (text2text-generation) |
 | Modelo base | ai4bharat/indictrans2-en-indic-dist-200M |
 | Tamano del repositorio | 1,1 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -93,7 +93,7 @@ Los datos de los modelos comparativos proceden de informacion publica de sus res
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo, lo que anade friccion a despliegues automatizados y a la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo, lo que anade friccion a despliegues automatizados y a la reproducibilidad.
 - Metricas no verificadas: todos los resultados del `model-index` estan marcados como `verified: false` y proceden del propio autor. Un BLEU cercano a 100 sobre plantillas reservadas apunta a memorizacion de plantillas o a una alta similitud entre los conjuntos de entrenamiento y evaluacion, no a capacidad general de traduccion.
 - Riesgo de sobreajuste al dominio: el modelo puede degradarse de forma acusada fuera del genero de alertas del IMD, incluyendo textos meteorologicos con redaccion libre o vocabulario no presente en el corpus.
 - Direccion unica: solo traduce de ingles a lenguas indias; no hay traduccion inversa ni entre lenguas indias.
@@ -107,7 +107,7 @@ Los datos de los modelos comparativos proceden de informacion publica de sus res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coild-repo/IMD
+- Modelo en Hugging Face: https://huggingface.co/coild-repo/IMD
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-en-indic-dist-200M
 - Repositorio IndicTrans2 (AI4Bharat): https://github.com/AI4Bharat/IndicTrans2
 - Paper de IndicTrans2: https://arxiv.org/abs/2305.16307

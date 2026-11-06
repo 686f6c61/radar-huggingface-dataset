@@ -87,8 +87,8 @@ Las cifras de VRAM que siguen son estimaciones calculadas a partir del recuento 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kalaborative/qwen3.8turbo | 26,9B | No disponible | apache-2.0 | GGUF y safetensors en HuggingFace; 0 descargas | Fine tune sin validacion independiente; benchmarks autodeclarados |
-| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU | No disponible (el nombre sugiere 27B) | No disponible | No disponible | HuggingFace | Modelo base directo de este fine tune |
+| Kalaborative/qwen3.8turbo | 26,9B | No disponible | apache-2.0 | GGUF y safetensors en Hugging Face; 0 descargas | Fine tune sin validacion independiente; benchmarks autodeclarados |
+| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU | No disponible (el nombre sugiere 27B) | No disponible | No disponible | Hugging Face | Modelo base directo de este fine tune |
 | Qwen3.8 27B (QwenLM) | No disponible | La documentacion general de Qwen cita ventanas de 128K a 256K en los modelos abiertos, sin confirmacion para esta variante | No disponible | Serie Qwen3.8 publicada como pesos abiertos segun el repositorio QwenLM/Qwen3.8 | Referencia oficial; el autor afirma superarla en sus siete benchmarks criticos |
 | Qwen3.6-35B-A3B | 35B totales; activos no disponibles | No disponible | No disponible | Mencionado en la model card | Arquitectura MoE segun la nomenclatura; usada como comparativa por el autor |
 | Qwen3.6 27B y Qwen3.5 27B | No disponible | No disponible | No disponible | Mencionados en la model card | Generaciones anteriores de la misma familia |
@@ -109,7 +109,7 @@ Las cifras de VRAM que siguen son estimaciones calculadas a partir del recuento 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Kalaborative/qwen3.8turbo
+- Hugging Face (modelo): https://huggingface.co/Kalaborative/qwen3.8turbo
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo previo del mismo autor (referencia de COLD FUSION): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

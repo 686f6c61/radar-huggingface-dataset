@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo de propósito general comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/weesunghyun/Llama-3.1-ostkvq-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/weesunghyun/Llama-3.1-ostkvq-checkpoints
 - GitHub del autor: https://github.com/weesunghyun (incluye forks de SpinQuant, paper sobre cuantización con rotaciones aprendidas)
 - Modelo base Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Página de Meta sobre Llama 3: https://developer.meta.com/ai/models/llama-3/

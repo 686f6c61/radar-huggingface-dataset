@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/gemma4-alpaca-uncensored-GGUF` es una coleccion de cuantizaciones en formato GGUF del modelo `renierd6/gemma4-alpaca-uncensored`, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones cuantizadas de modelos abiertos para su uso en llama.cpp y entornos de inferencia local. El modelo subyacente parte de la familia Gemma 4 de Google y ha sido ajustado con el dataset Alpaca en una variante "uncensored", es decir, con el filtrado de seguridad reducido o eliminado respecto al modelo original.
+`mradermacher/gemma4-alpaca-uncensored-GGUF` es una coleccion de cuantizaciones en formato GGUF del modelo `renierd6/gemma4-alpaca-uncensored`, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos para su uso en llama.cpp y entornos de inferencia local. El modelo subyacente parte de la familia Gemma 4 de Google y ha sido ajustado con el dataset Alpaca en una variante "uncensored", es decir, con el filtrado de seguridad reducido o eliminado respecto al modelo original.
 
 El modelo cuenta con aproximadamente 4.647 millones de parametros (4,6B) segun los pesos en safetensors del modelo base, y se distribuye bajo licencia Apache 2.0. El repositorio GGUF incluye cuantizaciones desde Q2_K hasta f16, ademas de ficheros mmproj para funcionalidad multimodal, lo que sugiere que el modelo base incorpora capacidad de vision.
 

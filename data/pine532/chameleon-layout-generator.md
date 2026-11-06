@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chameleon learned layout generator | MLP (numpy) | 6.596 pesos | no aplica (33 entradas fijas) | Apache-2.0 | HuggingFace (`Pine532/chameleon-layout-generator`) |
+| Chameleon learned layout generator | MLP (numpy) | 6.596 pesos | no aplica (33 entradas fijas) | Apache-2.0 | Hugging Face (`Pine532/chameleon-layout-generator`) |
 | Estiramiento uniforme (referencia del motor) | Heurística geométrica | 0 | no aplica | no aplica | Integrada en el motor Chameleon |
 | Familia proporcional del motor Chameleon | Heurística geométrica | 0 | no aplica | no aplica | Integrada en el motor Chameleon |
 
@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos comparables de layout learning
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pine532/chameleon-layout-generator
+- Hugging Face: https://huggingface.co/Pine532/chameleon-layout-generator
 - Informe de evidencia y cifras: `layout_report.md` §4 a §6c (referenciado en la model card; no se proporciona URL)
 - Registro de elecciones cambiadas: `layout_picks.md` (referenciado en la model card; no se proporciona URL)
 - Dataset de entrenamiento: `cyberagent/crello` v5.1 (VistaCreate), licencia CDLA-Permissive-2.0

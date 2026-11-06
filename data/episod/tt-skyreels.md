@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tt-skyreels es un bundle de despliegue publicado por el usuario episod en HuggingFace, no un modelo entrenado desde cero. Empaqueta el modelo de generación de vídeo texto-a-vídeo Skywork/SkyReels-V2-DF-1.3B-540P para ejecutarlo sobre aceleradores Tenstorrent Blackhole mediante TTNN. El transformador servido reutiliza íntegramente el WanTransformer3DModel de tt-metal, aprovechando que el transformador de SkyReelsV2 es compatible a nivel de pesos con él, y lo expone detrás de un servidor ASGI siguiendo el patrón tt-dit-server que ya estableció tt-animatediff.
+tt-skyreels es un bundle de despliegue publicado por el usuario episod en Hugging Face, no un modelo entrenado desde cero. Empaqueta el modelo de generación de vídeo texto-a-vídeo Skywork/SkyReels-V2-DF-1.3B-540P para ejecutarlo sobre aceleradores Tenstorrent Blackhole mediante TTNN. El transformador servido reutiliza íntegramente el WanTransformer3DModel de tt-metal, aprovechando que el transformador de SkyReelsV2 es compatible a nivel de pesos con él, y lo expone detrás de un servidor ASGI siguiendo el patrón tt-dit-server que ya estableció tt-animatediff.
 
 Se distribuye como un «thin bundle» v6 (schema 6) gestionado con tt-model-manager, con instalación basada en pip/venv en lugar de una imagen de contenedor. Corre sobre una configuración p300x2 con malla QB2. El repositorio ocupa 0,9 GB e incluye las recetas de instalación y ejecución, dos wheels propios y un parche de kernels.
 
@@ -71,8 +71,8 @@ No se dispone de métricas de latencia, throughput ni de calidad de vídeo (por 
 
 | Modelo / despliegue | Parametros | Hardware | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tt-skyreels (este bundle) | 1,3B | Tenstorrent Blackhole p300x2 (malla QB2) | Bundle de inferencia (TTNN + ASGI) | No disponible | HuggingFace: episod/tt-skyreels |
-| Skywork/SkyReels-V2-DF-1.3B-540P-Diffusers (modelo base) | 1,3B | GPU (CUDA, via Diffusers) | Modelo de difusion texto-a-video | No disponible | HuggingFace: Skywork/SkyReels-V2-DF-1.3B-540P-Diffusers |
+| tt-skyreels (este bundle) | 1,3B | Tenstorrent Blackhole p300x2 (malla QB2) | Bundle de inferencia (TTNN + ASGI) | No disponible | Hugging Face: episod/tt-skyreels |
+| Skywork/SkyReels-V2-DF-1.3B-540P-Diffusers (modelo base) | 1,3B | GPU (CUDA, via Diffusers) | Modelo de difusion texto-a-video | No disponible | Hugging Face: Skywork/SkyReels-V2-DF-1.3B-540P-Diffusers |
 | tt-animatediff (patron de referencia) | No disponible | Tenstorrent (segun el bundle) | Bundle de inferencia (tt-dit-server) | No disponible | No disponible en la informacion proporcionada |
 
 La comparativa se limita al modelo base y al bundle que sirve de patrón, ya que la información proporcionada no incluye datos de otros modelos de vídeo ni métricas que permitan contrastar rendimiento.
@@ -92,7 +92,7 @@ La comparativa se limita al modelo base y al bundle que sirve de patrón, ya que
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/episod/tt-skyreels
+- Hugging Face del bundle: https://huggingface.co/episod/tt-skyreels
 - Modelo base (Diffusers): https://huggingface.co/Skywork/SkyReels-V2-DF-1.3B-540P-Diffusers
 - Repositorio fuente, UI Gradio y registro de puesta en marcha: https://github.com/tsingletaryTT/tt-skyreels
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager

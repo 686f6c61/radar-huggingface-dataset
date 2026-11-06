@@ -76,7 +76,7 @@ La comparacion se basa en caracteristicas generales, no en benchmarks publicados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AkameV6p5/qwen-math-lean4-rlvf-stage1
+- Repositorio Hugging Face: https://huggingface.co/AkameV6p5/qwen-math-lean4-rlvf-stage1
 - Modelo base: https://huggingface.co/AkameV6p5/qwen2.5-math-7b-lean4-numina-e2e
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -72,10 +72,10 @@ Las cifras se midieron en un Apple M5 Max con 128 GiB, con el plugin mlx-stream 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-streaming-repack-exl3 (este) | no disponible | hasta 1.048.576 tokens | HumanEval 0,9634; 36,8 tok/s decode en M5 Max | MIT | HuggingFace, solo mlx-serve |
-| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw | no disponible | no disponible | no medido en la informacion | no disponible | HuggingFace, ExLlamaV3 |
-| deepseek-ai/DeepSeek-V4.1-Flash (original) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3 | no disponible | no disponible | datos de calidad y velocidad propios | no disponible | HuggingFace, mlx-serve |
+| DeepSeek-V4.1-Flash-streaming-repack-exl3 (este) | no disponible | hasta 1.048.576 tokens | HumanEval 0,9634; 36,8 tok/s decode en M5 Max | MIT | Hugging Face, solo mlx-serve |
+| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw | no disponible | no disponible | no medido en la informacion | no disponible | Hugging Face, ExLlamaV3 |
+| deepseek-ai/DeepSeek-V4.1-Flash (original) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3 | no disponible | no disponible | datos de calidad y velocidad propios | no disponible | Hugging Face, mlx-serve |
 
 La comparacion se limita a variantes del mismo modelo base; no se dispone de datos de benchmarks de alternativas de otros fabricantes en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ La comparacion se limita a variantes del mismo modelo base; no se dispone de dat
 - El repositorio ocupa 426,3 GB y requiere descarga y almacenamiento considerables.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3
+- Repositorio Hugging Face: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Cuantizacion de origen: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw
 - Repack de pesos 1017: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3

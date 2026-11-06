@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ML-Agents-SoccerTwos es un agente de aprendizaje por refuerzo publicado por el usuario tvrpranay en HuggingFace, entrenado para resolver el entorno SoccerTwos del toolkit Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada con POCA (un algoritmo de RL por refuerzo cercano a PPO) que controla agentes en un escenario de futbol 2 contra 2 dentro de una simulacion Unity.
+ML-Agents-SoccerTwos es un agente de aprendizaje por refuerzo publicado por el usuario tvrpranay en Hugging Face, entrenado para resolver el entorno SoccerTwos del toolkit Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada con POCA (un algoritmo de RL por refuerzo cercano a PPO) que controla agentes en un escenario de futbol 2 contra 2 dentro de una simulacion Unity.
 
 El repositorio se enmarca en el contexto del curso Deep RL Course y tiene un tamano de repo declarado de 0,0 GB, con el formato de pesos en ONNX, lo que sugiere un artefacto muy ligero orientado a la inferencia dentro del entorno Unity. El pipeline declarado es reinforcement-learning y la libreria asociada es ml-agents.
 
@@ -81,7 +81,7 @@ No disponible. El autor no proporciona referencias a otros agentes POCA o PPO en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tvrpranay/ML-Agents-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/tvrpranay/ML-Agents-SoccerTwos
 - Unity ML-Agents (toolkit): no disponible en la informacion proporcionada
 - Entorno SoccerTwos (documentacion oficial de ML-Agents): no disponible en la informacion proporcionada
 - Paper o blog del algoritmo POCA: no disponible en la informacion proporcionada

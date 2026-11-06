@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento para comparar directamente. Sin embargo, p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r563-r252-odpo-hirank-midctx-midextra-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r563-r252-odpo-hirank-midctx-midextra-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Otros checkpoints relacionados (búsqueda web):
   - https://huggingface.co/unconst/Affine-5czsc2fc98-h56-merged

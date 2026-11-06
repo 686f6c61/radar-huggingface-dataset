@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wirbel-Qwen3.5-2B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo Wirbel-Qwen3.5-2B, publicado por el usuario mradermacher en HuggingFace. El modelo base, alojado en el repositorio omerayhan-DEV/Wirbel-Qwen3.5-2B, parece ser un ajuste fino o derivado de la familia Qwen3.5, aunque la model card del repositorio GGUF no proporciona informacion sobre el proceso de entrenamiento, los datos utilizados ni el proposito del ajuste.
+Wirbel-Qwen3.5-2B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo Wirbel-Qwen3.5-2B, publicado por el usuario mradermacher en Hugging Face. El modelo base, alojado en el repositorio omerayhan-DEV/Wirbel-Qwen3.5-2B, parece ser un ajuste fino o derivado de la familia Qwen3.5, aunque la model card del repositorio GGUF no proporciona informacion sobre el proceso de entrenamiento, los datos utilizados ni el proposito del ajuste.
 
 La relevancia de este repositorio es fundamentalmente practica: ofrece el modelo en multiples niveles de cuantizacion (desde Q2_K hasta Q8_0, ademas de F16 e IQ4_XS) para facilitar su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. El tamano del repositorio es de 1,0 GB, lo que es coherente con un modelo de pequeno tamano cuantizado en varios formatos.
 

@@ -71,7 +71,7 @@ No se dispone de información sobre otros LoRAs específicos para limpieza de ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DriveEK/roadready-ltx23-iclora
+- Repositorio Hugging Face: https://huggingface.co/DriveEK/roadready-ltx23-iclora
 - Colección LTX-2.3 de Lightricks: https://huggingface.co/collections/Lightricks/ltx-23
 - Documentación oficial de IC-LoRA: https://docs.ltx.io/open-source-model/usage-guides/ic-lo-ra
 - Blog de LTX sobre IC-LoRA: https://ltx.io/blog/how-to-use-ic-lora-in-ltx-2

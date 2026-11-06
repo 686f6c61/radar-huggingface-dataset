@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativos. Como referencia cualitativa,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/McG-221/Goetia-24B-v1.4-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/McG-221/Goetia-24B-v1.4-mlx-8Bit
 - Modelo base (Naphula/Goetia-24B-v1.4): https://huggingface.co/Naphula/Goetia-24B-v1.4
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm

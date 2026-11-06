@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maximilian228/Geode-Qwen3.6-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/Maximilian228/Geode-Qwen3.6-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Aplicacion Geode: https://geode.tifu.xyz

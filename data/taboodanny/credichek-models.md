@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TabooDanny/credichek-models` es un repositorio de pesos alojado en HuggingFace por el usuario TabooDanny, publicado bajo licencia MIT y distribuido en formato safetensors. El repositorio ocupa aproximadamente 1,1 GB, lo que sugiere un modelo de pequeno o medio tamano, aunque no se ha publicado informacion sobre la arquitectura, el numero de parametros ni la longitud de contexto.
+`TabooDanny/credichek-models` es un repositorio de pesos alojado en Hugging Face por el usuario TabooDanny, publicado bajo licencia MIT y distribuido en formato safetensors. El repositorio ocupa aproximadamente 1,1 GB, lo que sugiere un modelo de pequeno o medio tamano, aunque no se ha publicado informacion sobre la arquitectura, el numero de parametros ni la longitud de contexto.
 
 La model card no contiene mas que la declaracion de licencia, sin descripcion funcional, sin datos de entrenamiento y sin indicacion de la tarea para la que fue disenado. El nombre del repositorio ("credichek") apunta a un posible uso en evaluacion de credito o scoring financiero, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -72,5 +72,5 @@ No disponible. No se ha publicado informacion suficiente sobre arquitectura, par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TabooDanny/credichek-models
+- Hugging Face: https://huggingface.co/TabooDanny/credichek-models
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

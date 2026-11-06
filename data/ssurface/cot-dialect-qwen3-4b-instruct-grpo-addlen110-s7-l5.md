@@ -82,7 +82,7 @@ No se han encontrado datos publicos de otros adaptadores de compresion de chain-
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-addlen110-s7-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-addlen110-s7-l5
 - Adaptador SFT previo (obligatorio): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo principal del nivel L5: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MLGOATKOJI/FineTuneQwen es un repositorio de modelo publicado en HuggingFace por el usuario MLGOATKOJI, con licencia MIT y un tamano de repositorio de 1,0 GB. Los metadatos indican creacion el 2026-09-15 y ultima actualizacion el 2026-09-15, con cero descargas y cero "likes" en el momento de la consulta. La model card publicada no contiene mas que la declaracion de licencia (`license: mit`), sin descripcion, sin ejemplos de uso y sin datos de entrenamiento.
+MLGOATKOJI/FineTuneQwen es un repositorio de modelo publicado en Hugging Face por el usuario MLGOATKOJI, con licencia MIT y un tamano de repositorio de 1,0 GB. Los metadatos indican creacion el 2026-09-15 y ultima actualizacion el 2026-09-15, con cero descargas y cero "likes" en el momento de la consulta. La model card publicada no contiene mas que la declaracion de licencia (`license: mit`), sin descripcion, sin ejemplos de uso y sin datos de entrenamiento.
 
-Por el nombre del repositorio cabe inferir que se trata de un ajuste fino (fine-tuning) sobre algun modelo de la familia Qwen, pero esta hipotesis no esta confirmada en la informacion disponible: no se especifica el modelo base, ni el tamano, ni la longitud de contexto, ni la composicion del dataset de ajuste. Tampoco se declara el pipeline de HuggingFace ni los idiomas soportados.
+Por el nombre del repositorio cabe inferir que se trata de un ajuste fino (fine-tuning) sobre algun modelo de la familia Qwen, pero esta hipotesis no esta confirmada en la informacion disponible: no se especifica el modelo base, ni el tamano, ni la longitud de contexto, ni la composicion del dataset de ajuste. Tampoco se declara el pipeline de Hugging Face ni los idiomas soportados.
 
 El interes de esta ficha es, por tanto, limitado y fundamentalmente cautelar. Un repositorio sin model card, sin evaluaciones y sin validacion de la comunidad no deberia integrarse en produccion sin una auditoria previa completa. Esta ficha documenta lo que se sabe, marca explicitamente todo lo que se desconoce y ofrece estimaciones derivadas unicamente del tamano del repositorio, siempre etiquetadas como tales.
 
@@ -54,7 +54,7 @@ Los siguientes casos de uso son escenarios plausibles condicionados a que una au
 - Experimentacion academica sobre ajuste fino: comparacion de tecnicas de fine-tuning sobre un mismo modelo base, usando este repositorio como una de las variantes.
 - Chatbot de proposito general de bajo coste: si el modelo conserva las capacidades conversacionales de su base, podria gestionar dialogos multi-turno, aunque se desconoce la ventana de contexto efectiva.
 - Extraccion de informacion estructurada: conversion de texto libre a JSON o a campos definidos, con validacion posterior mediante esquemas y sin confiar en la salida sin comprobacion.
-- Educacion y demos tecnicas: ilustracion de un flujo completo de publicacion en HuggingFace, desde el ajuste fino hasta el despliegue, dado el reducido tamano del artefacto.
+- Educacion y demos tecnicas: ilustracion de un flujo completo de publicacion en Hugging Face, desde el ajuste fino hasta el despliegue, dado el reducido tamano del artefacto.
 
 ## Benchmarks y rendimiento
 
@@ -104,7 +104,7 @@ La busqueda web realizada solo devolvio documentacion generica sobre ajuste fino
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MLGOATKOJI/FineTuneQwen
+- Repositorio en Hugging Face: https://huggingface.co/MLGOATKOJI/FineTuneQwen
 - Guia de ajuste fino de la familia Qwen (Unsloth Documentation): https://unsloth.ai/docs/models/qwen3.5/fine-tune
 - Tutorial de ajuste fino de Qwen3 (DataCamp): https://www.datacamp.com/tutorial/fine-tuning-qwen3
 - Paper, blog tecnico, repositorio de codigo o demo asociados al modelo: no disponible

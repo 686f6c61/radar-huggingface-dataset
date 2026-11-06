@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| general-forecast/kumo-tabular-medium-regressor | 62.492.439 | no disponible | OpenMDW 1.1 | HuggingFace, formato safetensors | Conversion del modelo base para la libreria gfi |
-| nvidia/Kumo-Tabular (base) | no disponible | no disponible | OpenMDW 1.1 | HuggingFace, PyTorch (`medium/regressor.pt`) | Pesos originales; la conversion no los modifica |
+| general-forecast/kumo-tabular-medium-regressor | 62.492.439 | no disponible | OpenMDW 1.1 | Hugging Face, formato safetensors | Conversion del modelo base para la libreria gfi |
+| nvidia/Kumo-Tabular (base) | no disponible | no disponible | OpenMDW 1.1 | Hugging Face, PyTorch (`medium/regressor.pt`) | Pesos originales; la conversion no los modifica |
 | Otros modelos tabulares comparables | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas con datos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -74,15 +74,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Riesgo de predicciones erroneas: al operar sobre datos tabulares, una mala calidad, valores faltantes o un desajuste de distribucion entre la tabla de inferencia y los datos de entrenamiento pueden degradar las estimaciones. No hay informacion sobre su robustez.
 - La salida de 999 cuantiles exige postprocesado para obtener una estimacion puntual o intervalos, lo que anade complejidad de integracion.
 - No se dispone de datos sobre longitud de contexto, idiomas soportados ni limites de tamano de tabla, lo que dificulta dimensionar su uso en produccion.
-- La licencia OpenMDW 1.1 esta etiquetada como `license: other` en HuggingFace; es imprescindible revisar el archivo `LICENSE` del repositorio antes de cualquier uso comercial.
+- La licencia OpenMDW 1.1 esta etiquetada como `license: other` en Hugging Face; es imprescindible revisar el archivo `LICENSE` del repositorio antes de cualquier uso comercial.
 - El repositorio registra 0 descargas y 0 likes, por lo que carece de validacion por parte de la comunidad.
 - La fecha de creacion indicada (2026-10-11) es posterior a la fecha de actualizacion y resulta inusual; conviene verificar la procedencia y el estado del repositorio.
 - La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo (solo definiciones de diccionario del termino "general" en frances), por lo que no se ha podido contrastar informacion adicional.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/general-forecast/kumo-tabular-medium-regressor
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Kumo-Tabular
+- Hugging Face (modelo): https://huggingface.co/general-forecast/kumo-tabular-medium-regressor
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Kumo-Tabular
 - Repositorio NVIDIA structured-data-models: https://github.com/NVIDIA/structured-data-models
 - Libreria gfi: https://github.com/generalforecast/gfi
-- Licencia del repositorio: LICENSE (referenciado en la model card; consultar en el propio repositorio de HuggingFace)
+- Licencia del repositorio: LICENSE (referenciado en la model card; consultar en el propio repositorio de Hugging Face)

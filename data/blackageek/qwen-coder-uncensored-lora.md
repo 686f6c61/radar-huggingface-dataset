@@ -4,7 +4,7 @@
 
 `blackageek/qwen-coder-uncensored-lora` es un adaptador LoRA de la comunidad, publicado por el usuario blackageek, que se aplica sobre el modelo `OBLITERATUS/Qwen2.5-Coder-7B-Instruct-OBLITERATED`, a su vez derivado de la familia Qwen2.5-Coder-7B-Instruct. No se trata por tanto de un modelo completo, sino de pesos de adaptador (PEFT) que deben cargarse junto al modelo base para funcionar. El repositorio ocupa 0,3 GB, un tamaño coherente con un adaptador LoRA en precisión de 16 bits para un modelo de 7B.
 
-El propósito declarado, inferido del propio identificador del repositorio ("uncensored"), es el ajuste supervisado (SFT) orientado a reducir las negativas de rechazo del modelo base y ampliar el rango de respuestas generadas. La model card publicada es la plantilla por defecto de HuggingFace y no contiene información rellenada: no se documentan datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas.
+El propósito declarado, inferido del propio identificador del repositorio ("uncensored"), es el ajuste supervisado (SFT) orientado a reducir las negativas de rechazo del modelo base y ampliar el rango de respuestas generadas. La model card publicada es la plantilla por defecto de Hugging Face y no contiene información rellenada: no se documentan datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas.
 
 Su relevancia actual es limitada y muy específica: sirve como ejemplo de adaptador comunitario de bajo coste sobre un modelo de código de 7B, y como punto de partida para quien quiera reproducir el pipeline de entrenamiento con TRL, PEFT y Unsloth. Al no haber benchmarks, licencia ni documentación técnica, no es un artefacto recomendable para producción sin una validación previa exhaustiva.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y muy específica: sirve como ejemplo de adapta
 | Licencia | No disponible (el repositorio no declara licencia; esto impide determinar si se permite el uso comercial) |
 | Formato de pesos | Safetensors (adaptador PEFT/LoRA); no se publican pesos completos ni GGUF |
 
-Otros datos objetivos del repositorio: 0 descargas, 0 "likes", pipeline `text-generation`, librería `peft`, versión de PEFT indicada 0.19.1, creado y actualizado el 22 de septiembre de 2026 según los metadatos de HuggingFace.
+Otros datos objetivos del repositorio: 0 descargas, 0 "likes", pipeline `text-generation`, librería `peft`, versión de PEFT indicada 0.19.1, creado y actualizado el 22 de septiembre de 2026 según los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ El nombre del repositorio sugiere un ajuste orientado a eliminar comportamientos
 - Generación de código en entornos controlados y no productivos: para tareas de autocompletado o generación de fragmentos en cuadernos internos, siempre con revisión humana y sin exponer el modelo a usuarios finales.
 - Desarrollo de asistentes de programación autoalojados: combinado con el modelo base y desplegado con vLLM o llama.cpp en hardware propio, para equipos que necesiten evitar APIs externas.
 - Evaluación comparativa de adaptadores comunitarios: como muestra de un adaptador sin documentar, útil para construir conjuntos de pruebas que midan la degradación de capacidades tras un SFT agresivo.
-- Docencia y formación técnica: ilustra de forma sencilla qué es un adaptador LoRA, cómo se distribuye en HuggingFace y qué riesgos implica publicar un modelo sin model card, sin licencia y sin evaluación.
+- Docencia y formación técnica: ilustra de forma sencilla qué es un adaptador LoRA, cómo se distribuye en Hugging Face y qué riesgos implica publicar un modelo sin model card, sin licencia y sin evaluación.
 - Filtrado o generación de texto en dominios sensibles: solo en entornos de investigación con revisión humana obligatoria, dado que el objetivo declarado del adaptador es reducir las negativas de rechazo y no existen evaluaciones de seguridad.
 
 ## Benchmarks y rendimiento
@@ -89,7 +89,7 @@ No se conocen alternativas directamente comparables dentro del mismo nicho ("mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blackageek/qwen-coder-uncensored-lora
+- Modelo en Hugging Face: https://huggingface.co/blackageek/qwen-coder-uncensored-lora
 - Modelo base del adaptador: https://huggingface.co/OBLITERATUS/Qwen2.5-Coder-7B-Instruct-OBLITERATED
 - Familia original (referencia pública del modelo base subyacente): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper citado en la model card (calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700

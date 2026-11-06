@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Omnivoice-hindi-incremental-number-cycles-20261022-gated es un modelo de texto a voz (text-to-speech) publicado en HuggingFace por el usuario HimanshuPathak. El identificador del repositorio sugiere un entrenamiento incremental orientado a la lectura de secuencias numericas en hindi, posiblemente con ciclos de refinamiento sucesivos (de ahi "incremental-number-cycles") y una fecha de corte o versionado (20261022). El modelo esta etiquetado con el idioma `hi` (hindi) y la region `us`, y su pipeline declarado es `text-to-speech`.
+Omnivoice-hindi-incremental-number-cycles-20261022-gated es un modelo de texto a voz (text-to-speech) publicado en Hugging Face por el usuario HimanshuPathak. El identificador del repositorio sugiere un entrenamiento incremental orientado a la lectura de secuencias numericas en hindi, posiblemente con ciclos de refinamiento sucesivos (de ahi "incremental-number-cycles") y una fecha de corte o versionado (20261022). El modelo esta etiquetado con el idioma `hi` (hindi) y la region `us`, y su pipeline declarado es `text-to-speech`.
 
-Se distribuye en formato safetensors con un tamano de repositorio de 36,8 GB, lo que indica un modelo de gran tamano o un conjunto de checkpoints multiples empaquetados en el mismo repositorio. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. No se dispone de informacion publica sobre arquitectura, numero de parametros, contexto ni licencia.
+Se distribuye en formato safetensors con un tamano de repositorio de 36,8 GB, lo que indica un modelo de gran tamano o un conjunto de checkpoints multiples empaquetados en el mismo repositorio. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. No se dispone de informacion publica sobre arquitectura, numero de parametros, contexto ni licencia.
 
 En el momento de redactar esta ficha el modelo no registra descargas ni likes, y no se han publicado resultados de benchmarks, paper tecnico ni documentacion adicional en la informacion disponible. Por tanto, esta ficha se limita a lo verificable en la model card y marca explicitamente como "no disponible" cualquier dato no confirmado.
 
@@ -68,7 +68,7 @@ No disponible. No se dispone de informacion suficiente sobre este modelo (parame
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace antes de su descarga.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face antes de su descarga.
 - Licencia no declarada: no se puede confirmar el uso comercial ni las restricciones de redistribucion; debe verificarse en la model card antes de cualquier uso en produccion.
 - Documentacion practicamente inexistente: sin paper, sin benchmarks y sin descripcion de arquitectura, el modelo no es evaluable tecnicamente de forma rigurosa.
 - Cobertura linguistica limitada al hindi; no se declaran otros idiomas.
@@ -79,5 +79,5 @@ No disponible. No se dispone de informacion suficiente sobre este modelo (parame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HimanshuPathak/omnivoice-hindi-incremental-number-cycles-20261022-gated
+- Modelo en Hugging Face: https://huggingface.co/HimanshuPathak/omnivoice-hindi-incremental-number-cycles-20261022-gated
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

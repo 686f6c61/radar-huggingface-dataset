@@ -84,7 +84,7 @@ La diferencia práctica entre este pack y los otros tres no está en capacidades
 
 ## Enlaces
 
-- HuggingFace del pack: https://huggingface.co/lilligant-real/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw-crucible
+- Hugging Face del pack: https://huggingface.co/lilligant-real/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw-crucible
 - Modelo base (abliterated): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Pack padre del que deriva: https://huggingface.co/Lygodactylus/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw
 - Pack base de turboderp (fuente del sidecar MTP): https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3

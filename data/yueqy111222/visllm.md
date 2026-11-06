@@ -70,5 +70,5 @@ No disponible. No se dispone de informacion sobre modelos comparables en el mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yueqy111222/visllm
+- Repositorio Hugging Face: https://huggingface.co/yueqy111222/visllm
 - Model card (README): https://huggingface.co/yueqy111222/visllm/blob/main/README.md

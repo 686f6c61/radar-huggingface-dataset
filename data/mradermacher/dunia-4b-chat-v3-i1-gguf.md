@@ -11,7 +11,7 @@ La información disponible es escasa: no se detalla la arquitectura interna, los
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | no disponible (el valor mostrado en HuggingFace, 958.716, no es coherente con la designación "4b" del modelo base; no se ha podido verificar) |
+| Parametros totales | no disponible (el valor mostrado en Hugging Face, 958.716, no es coherente con la designación "4b" del modelo base; no se ha podido verificar) |
 | Parametros activos | no disponible (no se ha confirmado si es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | solo archivo imatrix en este repositorio; el README referencia cuantizaciones como Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (disponibles en el repositorio de cuantizaciones estáticas) |

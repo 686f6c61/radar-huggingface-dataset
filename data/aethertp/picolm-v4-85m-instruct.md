@@ -6,7 +6,7 @@ PicoLM-V4-85M-Instruct es un modelo de lenguaje conversacional de 84.960.832 par
 
 El modelo está pensado exclusivamente para investigación sobre modelos de lenguaje pequeños, experimentación con ajuste fino y plantillas de chat, y escenarios donde se necesita un modelo conversacional que quepa en CPU. El propio autor advierte que el modelo se equivoca en datos fácticos y aritmética la mayor parte del tiempo, y que no es apto para respuesta a preguntas, traducción, generación de código ni ningún uso donde la corrección de la respuesta sea requisito. Su relevancia actual radica en ser un ejemplo reproducible de pipeline completo (preentrenamiento desde cero, ajuste fino de instrucciones, empaquetado en formato Qwen3 y exportación a GGUF) con licencia Apache 2.0 y métricas honestamente reportadas.
 
-La ficha se basa únicamente en los datos publicados en la model card y en los metadatos de HuggingFace; no se han inventado cifras de benchmarks ni especificaciones no documentadas.
+La ficha se basa únicamente en los datos publicados en la model card y en los metadatos de Hugging Face; no se han inventado cifras de benchmarks ni especificaciones no documentadas.
 
 ## Especificaciones técnicas
 
@@ -70,7 +70,7 @@ El autor indica además que, en las respuestas revisadas, el muestreo produjo m�
 - VRAM estimada para inferencia: el modelo tiene 84,96 M de parámetros; en fp32 ocupa aproximadamente 340 MB de pesos, en fp16 unos 170 MB y en cuantizaciones de 8 bits alrededor de 85 MB (sin contar overhead de activaciones y caché KV). Estas cifras son estimaciones a partir del número de parámetros, no datos publicados en la model card.
 - GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU consumer moderna es sobradamente suficiente.
 - Cabe en GPU consumer: sí, en cualquier GPU consumer actual; también funciona en CPU en fp32, tal como documenta el autor con el ejemplo de código.
-- Opciones de despliegue: `transformers` (probado en 4.57.1 y 5.22.1) con `AutoModelForCausalLM` y `AutoTokenizer` sin `trust_remote_code`; llama.cpp mediante los archivos GGUF incluidos; el tag `text-generation-inference` y `endpoints_compatible` aparece en los metadatos de HuggingFace.
+- Opciones de despliegue: `transformers` (probado en 4.57.1 y 5.22.1) con `AutoModelForCausalLM` y `AutoTokenizer` sin `trust_remote_code`; llama.cpp mediante los archivos GGUF incluidos; el tag `text-generation-inference` y `endpoints_compatible` aparece en los metadatos de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas en la inform
 | Modelo | Parámetros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | PicoLM-V4-85M-Instruct | 84,96 M | 2048 | Apache 2.0 | Entrenado desde cero, ajustado sobre SmolTalk; sin benchmarks publicados |
-| SmolLM2-135M-Instruct | 135 M (aprox., no verificado en la información disponible) | no disponible | no disponible | Alternativa de tamaño similar de HuggingFace; sin datos comparativos en esta ficha |
+| SmolLM2-135M-Instruct | 135 M (aprox., no verificado en la información disponible) | no disponible | no disponible | Alternativa de tamaño similar de Hugging Face; sin datos comparativos en esta ficha |
 | Qwen3 pequeño | no disponible | no disponible | no disponible | El modelo adopta el formato Qwen3, pero no se aportan cifras de comparación |
 
 Los datos de las filas de SmolLM2 y Qwen3 no están verificados en la información proporcionada y se incluyen solo como referencia de categoría; no deben usarse para decidir entre modelos sin consultar sus model cards originales.
@@ -100,6 +100,6 @@ Los datos de las filas de SmolLM2 y Qwen3 no están verificados en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aethertp/PicoLM-V4-85M-Instruct
+- Modelo en Hugging Face: https://huggingface.co/aethertp/PicoLM-V4-85M-Instruct
 - Modelo base: https://huggingface.co/aethertp/PicoLM-V4-85M
 - Dataset de ajuste fino: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

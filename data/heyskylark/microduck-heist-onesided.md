@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Dimension observacion / accion | Frecuencia | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| heyskylark/microduck-heist-onesided | Política RL para microduck | 61 / 14 | 50 Hz | ONNX | no disponible | HuggingFace (0 descargas) |
-| Otras políticas de microduck en HuggingFace | Política RL para microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
+| heyskylark/microduck-heist-onesided | Política RL para microduck | 61 / 14 | 50 Hz | ONNX | no disponible | Hugging Face (0 descargas) |
+| Otras políticas de microduck en Hugging Face | Política RL para microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Políticas de locomotion para cuadrúpedos (p. ej. ANYmal, Unitree) | Política RL | variable | variable | habitualmente ONNX o TorchScript | habitualmente no disponible o restrictiva | repositorios de investigación |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas. La comparativa se limita a la interfaz y al formato de distribución.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heyskylark/microduck-heist-onesided
+- Modelo en Hugging Face: https://huggingface.co/heyskylark/microduck-heist-onesided
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento del autor: `git@github.com:heyskylark/microduck-challenges.git` (referenciado en la model card; no se dispone de URL HTTPS verificada)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck (ruta citada en la model card; no se dispone de URL directa)

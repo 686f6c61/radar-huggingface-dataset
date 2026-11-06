@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YozoraKurage/Hoshiyomi-zenz-v3.2-xsmall_v1
+- Modelo en Hugging Face: https://huggingface.co/YozoraKurage/Hoshiyomi-zenz-v3.2-xsmall_v1
 - Modelo base: https://huggingface.co/Miwa-Keita/zenz-v3.2-xsmall-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/Miwa-Keita/zenz-v2.5-dataset
 - Repositorio Hoshiyomi (motor y herramientas de entrenamiento): no disponible como URL en la información proporcionada; el autor referencia `tools/training/README.md` y el commit `a943df1f262ce423b25fb98735fa9c62c050d993`

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Leak CURBER enzyme retrieval v10 es un sistema de prediccion de numeros EC (Enzyme Commission) a partir de SMILES de reaccion, desarrollado por el usuario geek4freak y publicado en HuggingFace bajo licencia MIT. No se trata de un unico modelo neuronal, sino de un ensemble heterogeneo que combina 15 clasificadores MLP residuales sobre vistas de fingerprint de reaccion, tres BERT de reaccion afinados (rxnfp) ejecutados con ONNX Runtime, y un re-ranker de segundo estadio basado en gradient-boosted trees implementado en NumPy. El objetivo es asignar una clase enzimatica (nivel EC-4) a una reaccion quimica dada, tarea relevante en anotacion funcional, diseno de rutas biosinteticas y curacion de bases de datos metabolicas.
+Leak CURBER enzyme retrieval v10 es un sistema de prediccion de numeros EC (Enzyme Commission) a partir de SMILES de reaccion, desarrollado por el usuario geek4freak y publicado en Hugging Face bajo licencia MIT. No se trata de un unico modelo neuronal, sino de un ensemble heterogeneo que combina 15 clasificadores MLP residuales sobre vistas de fingerprint de reaccion, tres BERT de reaccion afinados (rxnfp) ejecutados con ONNX Runtime, y un re-ranker de segundo estadio basado en gradient-boosted trees implementado en NumPy. El objetivo es asignar una clase enzimatica (nivel EC-4) a una reaccion quimica dada, tarea relevante en anotacion funcional, diseno de rutas biosinteticas y curacion de bases de datos metabolicas.
 
 La propuesta tecnica se apoya en representaciones complementarias: fingerprint Morgan dirigido (reactivos, productos, subestructuras ganadas y perdidas), fingerprints de centro de reaccion, TF-IDF de caracteres 3-5-gram y embeddings de los BERT de reaccion. Sobre estas senales se aplica recuperacion por kNN coseno y un re-ranker aprendido sobre los 20 candidatos EC mejor puntuados. El sistema incorpora robustez frente a reacciones incompletas (half-reaction) mediante aumento con eliminacion de metabolitos moneda y perturbacion de holdout.
 
-El modelo se distribuye como artefacto ONNX de aproximadamente 1,1 GB, con inferencia exclusivamente en CPU mediante un script `predict.py`. No se publican idiomas soportados ni pipeline estandar de HuggingFace, y el repositorio no registra descargas ni likes en el momento de la consulta. Su relevancia radica en el enfoque de ensemble con re-ranking y en la atencion explicita a la robustez de reacciones parciales, un problema practico frecuente en datos metabolicos reales.
+El modelo se distribuye como artefacto ONNX de aproximadamente 1,1 GB, con inferencia exclusivamente en CPU mediante un script `predict.py`. No se publican idiomas soportados ni pipeline estandar de Hugging Face, y el repositorio no registra descargas ni likes en el momento de la consulta. Su relevancia radica en el enfoque de ensemble con re-ranking y en la atencion explicita a la robustez de reacciones parciales, un problema practico frecuente en datos metabolicos reales.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ El autor advierte que la estimacion local puede diferir del score real del leade
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Leak CURBER enzyme retrieval v10 | Ensemble MLP + BERT rxnfp + kNN + GBT re-ranker | no disponible | no aplica | L4 0.6540 / L3 0.8689 (holdout local) | MIT | HuggingFace, ONNX CPU |
+| Leak CURBER enzyme retrieval v10 | Ensemble MLP + BERT rxnfp + kNN + GBT re-ranker | no disponible | no aplica | L4 0.6540 / L3 0.8689 (holdout local) | MIT | Hugging Face, ONNX CPU |
 | BEC-Pred (Qian et al., 2024) | Prediccion EC (referencia citada) | no disponible | no disponible | no disponible | no disponible | Referencia bibliografica |
 | CLIPZyme (Mikhael et al., ICML 2024) | Retrieval enzima-reaccion (referencia citada) | no disponible | no disponible | no disponible | no disponible | Referencia bibliografica |
 | Horizyn (Rocks et al., PNAS 2026) | Retrieval enzima-reaccion (referencia citada) | no disponible | no disponible | no disponible | no disponible | Referencia bibliografica |
@@ -97,7 +97,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v10
+- Hugging Face: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v10
 - rxnfp (Schwaller et al., Nat. Mach. Intell. 2021; MIT): referencia citada en la model card, sin URL explicita.
 - BEC-Pred (Qian et al., J. Cheminform. 2024): referencia citada, sin URL explicita.
 - CLIPZyme (Mikhael et al., ICML 2024): referencia citada, sin URL explicita.

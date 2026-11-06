@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenJev general adapter es un adaptador LoRA de rango 16 sobre el modelo base Qwen3-1.7B, publicado por el usuario s1lv3rj1nx bajo licencia Apache 2.0. No es un modelo generativo al uso: se ha entrenado especificamente para clasificacion zero-shot con esquemas tipados, es decir, para responder preguntas de clasificacion sobre un texto eligiendo una opcion dentro de un menu de etiquetas que el modelo no ha visto durante el entrenamiento. El adaptador se distribuye a traves de la libreria PEFT y ocupa 0,1 GB en el repositorio de HuggingFace.
+OpenJev general adapter es un adaptador LoRA de rango 16 sobre el modelo base Qwen3-1.7B, publicado por el usuario s1lv3rj1nx bajo licencia Apache 2.0. No es un modelo generativo al uso: se ha entrenado especificamente para clasificacion zero-shot con esquemas tipados, es decir, para responder preguntas de clasificacion sobre un texto eligiendo una opcion dentro de un menu de etiquetas que el modelo no ha visto durante el entrenamiento. El adaptador se distribuye a traves de la libreria PEFT y ocupa 0,1 GB en el repositorio de Hugging Face.
 
 La relevancia del artefacto esta en su evaluacion: sobre siete tareas retenidas (clinc_oos, banking77, massive_intent, ag_news, sst5, civil_comments y helpsteer), con 600 items por tarea y controles de contaminacion automatizados, alcanza una media de 32,7 veces la probabilidad de acierto por azar, y supera la linea base de clase mayoritaria en las siete. En menus de tres digitos (151 intents de clinc_oos, 0,783 de exactitud; 77 de banking77, 0,728) es donde aporta valor real; en juicios finos de sentimiento y utilidad apenas supera el azar.
 
@@ -105,7 +105,7 @@ El propio autor reconoce una desventaja de nueve puntos frente a TypeSafe Jev en
 - En civil_comments la exactitud a umbral 0,5 (0,688) es peor que el AUROC (0,766): el ranking de probabilidades es mejor que la decision binaria con umbral por defecto. El autor recomienda ajustar el umbral.
 - No es un clasificador de seguridad. Las puertas de seguridad del enrutador del proyecto se entrenaron de forma especifica, no zero-shot, y aun asi alcanzan un recall de 0,84 con un intervalo de confianza amplio.
 - Riesgo de alucinacion en el sentido de falsa confianza: el modelo siempre devuelve una etiqueta del menu con una probabilidad, incluso cuando ninguna opcion encaja. No se documenta un mecanismo de rechazo ni una clase "ninguna de las anteriores".
-- Numero de descargas y likes en HuggingFace: 0 en el momento de la consulta. Es un artefacto reciente, sin validacion independiente por terceros mas alla de la evaluacion del propio autor.
+- Numero de descargas y likes en Hugging Face: 0 en el momento de la consulta. Es un artefacto reciente, sin validacion independiente por terceros mas alla de la evaluacion del propio autor.
 - La evaluacion se limita a siete tareas retenidas con 600 items cada una; los intervalos de confianza son amplios en las tareas con menos clases.
 - El uso esta condicionado a la libreria del proyecto (`openjev.infer`), lo que anade dependencia de un paquete propio para la inferencia con esquemas tipados.
 - Licencia Apache 2.0 sobre el adaptador, pero el uso comercial queda igualmente sujeto a los terminos del modelo base Qwen3-1.7B.
@@ -114,7 +114,7 @@ El propio autor reconoce una desventaja de nueve puntos frente a TypeSafe Jev en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s1lv3rj1nx/openjev-general-lora
+- Modelo en Hugging Face: https://huggingface.co/s1lv3rj1nx/openjev-general-lora
 - Codigo, harness de evaluacion y resultados completos: https://github.com/s1lv3rj1nx/openjev
 - Dataset de mezcla de entrenamiento: https://huggingface.co/datasets/s1lv3rj1nx/openjev-mixture
 - Suite de tareas retenidas: https://huggingface.co/datasets/s1lv3rj1nx/openjev-heldout

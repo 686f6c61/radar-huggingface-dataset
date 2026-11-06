@@ -87,7 +87,7 @@ La comparativa se limita a parametros y disponibilidad; no se dispone de datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-158
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-158
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Variante sin censura: https://huggingface.co/Orion-zhen/Qwen2.5-14B-Instruct-Uncensored
 - Repositorio de mergekit: https://github.com/cg123/mergekit

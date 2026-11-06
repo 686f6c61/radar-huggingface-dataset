@@ -1,7 +1,7 @@
 # srilubis/paper_021725602_robotics_vision_language
 
 ## Resumen
-Este repositorio de HuggingFace, identificado como `srilubis/paper_021725602_robotics_vision_language`, no contiene un modelo de inteligencia artificial en el sentido habitual (sin pesos, arquitectura ni capacidades de inferencia). Se trata de un artefacto textual: un documento en Markdown que reproduce un artículo académico sobre *robotics vision language* (visión-lenguaje para robótica). El autor, `srilubis`, lo publicó con licencia BSD-3-Clause y una serie de etiquetas que describen el formato del texto (LaTeX CVPR, estructura intro-background-approach-eval-conclusion, estilo narrativo-progresivo, etc.).
+Este repositorio de Hugging Face, identificado como `srilubis/paper_021725602_robotics_vision_language`, no contiene un modelo de inteligencia artificial en el sentido habitual (sin pesos, arquitectura ni capacidades de inferencia). Se trata de un artefacto textual: un documento en Markdown que reproduce un artículo académico sobre *robotics vision language* (visión-lenguaje para robótica). El autor, `srilubis`, lo publicó con licencia BSD-3-Clause y una serie de etiquetas que describen el formato del texto (LaTeX CVPR, estructura intro-background-approach-eval-conclusion, estilo narrativo-progresivo, etc.).
 
 El contenido es un archivo único llamado `paper_021725602_robotics_vision_language.md` que contiene el texto completo del paper. No hay ningún modelo de aprendizaje automático asociado, ni parámetros, ni pesos, ni capacidad de ejecución. Es, por tanto, un repositorio de documentación académica más que un modelo desplegable. Su relevancia radica en que podría servir como fuente de referencia para investigadores que trabajen en el área de robótica con visión y lenguaje, pero no ofrece ninguna funcionalidad de inferencia.
 
@@ -56,5 +56,5 @@ No aplicable. No existe una categoría de modelos con la que comparar, ya que es
 - Para producción, no se puede utilizar como componente de software; solo como documentación.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/srilubis/paper_021725602_robotics_vision_language
+- Repositorio en Hugging Face: https://huggingface.co/srilubis/paper_021725602_robotics_vision_language
 - (No hay otros enlaces oficiales del autor; los resultados de búsqueda web sobre VLA son genéricos y no pertenecen a este repositorio concreto).

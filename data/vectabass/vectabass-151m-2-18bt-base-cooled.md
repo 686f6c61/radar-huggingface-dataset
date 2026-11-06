@@ -110,7 +110,7 @@ La comparación de rendimiento frente a estas alternativas no está disponible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-151m-2.18bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-151m-2.18bt-base-cooled
 - Repositorio de datos de referencia: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Repositorio de datos multilingüe: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Repositorio de datos matemáticos: https://huggingface.co/datasets/HuggingFaceTB/finemath

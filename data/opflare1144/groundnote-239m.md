@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de datos verificables de otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Opflare1144/groundnote-239m
+- Modelo en Hugging Face: https://huggingface.co/Opflare1144/groundnote-239m
 - Repositorio de código: https://github.com/hxlvvm/groundnote
 - Protocolo de evaluación previo (GATE.md): https://github.com/hxlvvm/groundnote/blob/master/GATE.md
 - Demo en navegador: https://groundnote.vercel.app/demo.html

@@ -59,7 +59,7 @@ No se dispone de datos de rendimiento para comparar este fine-tune con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HoangCuongNguyen/qwen3-8b-safety-ra-sft
+- Repositorio Hugging Face: https://huggingface.co/HoangCuongNguyen/qwen3-8b-safety-ra-sft
 - Modelo base Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B
 - Reporte técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - PDF del reporte técnico: https://arxiv.org/pdf/2505.09388

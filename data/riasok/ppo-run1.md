@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PPO-run1 es un checkpoint de aprendizaje por refuerzo (PPO) construido sobre el modelo base Riasok/few-shot-run-1, un adaptador de flujo (flow matching) para el sistema MolmoAct2 orientado a robótica manipulativa. Lo publica el usuario Riasok en HuggingFace y su propósito es preservar el estado exacto del entrenamiento en la actualización 80 de una ejecución extendida de PPO, que alcanzó una tasa de éxito de 63 sobre 100 en ensayos emparejados del benchmark LIBERO Spatial.
+PPO-run1 es un checkpoint de aprendizaje por refuerzo (PPO) construido sobre el modelo base Riasok/few-shot-run-1, un adaptador de flujo (flow matching) para el sistema MolmoAct2 orientado a robótica manipulativa. Lo publica el usuario Riasok en Hugging Face y su propósito es preservar el estado exacto del entrenamiento en la actualización 80 de una ejecución extendida de PPO, que alcanzó una tasa de éxito de 63 sobre 100 en ensayos emparejados del benchmark LIBERO Spatial.
 
 El modelo no es un transformer de lenguaje al uso: es un adaptador de política (actor con cabeza de valor) que se apoya en un VLM congelado y en los procesadores guardados del modelo base. Por tanto, no puede cargarse como un checkpoint estándar de Transformers ni usarse para generación de texto; requiere el entorno de entrenamiento MolmoAct2 con LeRobot habilitado.
 
@@ -79,5 +79,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Riasok/PPO-run1
+- Hugging Face: https://huggingface.co/Riasok/PPO-run1
 - Modelo base: https://huggingface.co/Riasok/few-shot-run-1

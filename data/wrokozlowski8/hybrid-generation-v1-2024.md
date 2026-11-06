@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hybrid-generation-v1-2024` es un repositorio experimental publicado por el usuario wrokozlowski8 en HuggingFace. No se trata de un modelo entrenado, sino de un andamiaje de código ("codebase") para experimentar con una arquitectura híbrida orientada a tareas de generación. El propio autor indica explícitamente en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo ("smoke tests") y que no debe presentarse como un checkpoint entrenado ni evaluado.
+`hybrid-generation-v1-2024` es un repositorio experimental publicado por el usuario wrokozlowski8 en Hugging Face. No se trata de un modelo entrenado, sino de un andamiaje de código ("codebase") para experimentar con una arquitectura híbrida orientada a tareas de generación. El propio autor indica explícitamente en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo ("smoke tests") y que no debe presentarse como un checkpoint entrenado ni evaluado.
 
 El repositorio contiene un fichero Python (`finetune.py`) con la implementación del modelo y un punto de entrada ejecutable, junto con `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto) y el checkpoint de safetensors. La arquitectura declarada es de tipo híbrido, a escala "small", con atención estándar, fusión mediante concatenación seguida de MLP, activación Mish y normalización GroupNorm.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, el autor es explícito: no se ha completado ninguna 
 ## Casos de uso
 
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicialización permite comprobar que un script de fine-tuning arranca, reserva memoria correctamente y completa un paso de optimización sin errores, antes de invertir cómputo en una ejecución completa.
-- Desarrollo de adaptadores de carga personalizados: dado que es una implementación propia, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito; este repositorio sirve como banco de pruebas para escribir y validar ese adaptador.
+- Desarrollo de adaptadores de carga personalizados: dado que es una implementación propia, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito; este repositorio sirve como banco de pruebas para escribir y validar ese adaptador.
 - Estudios de ablación sobre fusión de ramas: la configuración "concat mlp" se puede modificar de forma controlada para comparar variantes de fusión manteniendo el mismo presupuesto de datos y semillas, tal y como sugiere el autor.
 - Validación de bloques de normalización y activación: permite comprobar numéricamente el comportamiento de GroupNorm y Mish en una arquitectura híbrida pequeña, útil para depurar implementaciones antes de integrarlas en modelos mayores.
 - Reproducibilidad y registro de experimentos: al incluir `training_args.json` y `config.json` por separado, facilita versionar la receta de experimento y las versiones de entorno junto a cualquier resultado futuro.
@@ -80,6 +80,6 @@ No disponible. No existen modelos comparables en el sentido habitual, porque est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wrokozlowski8/hybrid-generation-v1-2024
+- Hugging Face: https://huggingface.co/wrokozlowski8/hybrid-generation-v1-2024
 - Ficheros del repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña "Files and versions" del enlace anterior)
 - La búsqueda web realizada no ha devuelto papers, blogs, repositorios ni demos adicionales relevantes asociados a este modelo; el resto de resultados correspondían a sitios genéricos de terceros sin relación con el artefacto.

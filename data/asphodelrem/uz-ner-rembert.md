@@ -19,7 +19,7 @@ uz-ner-rembert es un modelo de reconocimiento de entidades nombradas (NER) para 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en RemBERT, un transformer encoder preentrenado por Google con embeddings invertibles y reajuste de vocabulario. Sobre este modelo base se realizó una adaptación de dominio mediante MLM (masked language modeling) con whole-word masking al 15%, sobre un corpus de 405,585 pasajes (~220M tokens) compuesto por blogs de Telegram y noticias de `tahrirchi/uz-crawl`, libros en cirílico y latino de `tahrirchi/uz-books-v2`, y un 8% de Wikipedia rusa e inglesa para preservar el multilingüismo. El preentrenamiento se ejecutó durante 16,800 pasos, alcanzando una perplejidad held-out de 11.5. Posteriormente, se realizó un ajuste fino para clasificación de tokens en esquema BILOU, con ventana de 512 tokens y stride 128, batch efectivo de 128, learning rate de 3e-5 y selección del checkpoint por exact-span micro-F1. Una innovación destacable es que la decodificación de etiquetas requiere una matriz de transición almacenada en `transitions.json` y un algoritmo Viterbi en modo `conditional`, además de un post-procesamiento de límites (comillas, corchetes, afijos). Este mecanismo no es estándar en HuggingFace, por lo que el uso directo de `AutoModelForTokenClassification` daría resultados subóptimos.
+El modelo se basa en RemBERT, un transformer encoder preentrenado por Google con embeddings invertibles y reajuste de vocabulario. Sobre este modelo base se realizó una adaptación de dominio mediante MLM (masked language modeling) con whole-word masking al 15%, sobre un corpus de 405,585 pasajes (~220M tokens) compuesto por blogs de Telegram y noticias de `tahrirchi/uz-crawl`, libros en cirílico y latino de `tahrirchi/uz-books-v2`, y un 8% de Wikipedia rusa e inglesa para preservar el multilingüismo. El preentrenamiento se ejecutó durante 16,800 pasos, alcanzando una perplejidad held-out de 11.5. Posteriormente, se realizó un ajuste fino para clasificación de tokens en esquema BILOU, con ventana de 512 tokens y stride 128, batch efectivo de 128, learning rate de 3e-5 y selección del checkpoint por exact-span micro-F1. Una innovación destacable es que la decodificación de etiquetas requiere una matriz de transición almacenada en `transitions.json` y un algoritmo Viterbi en modo `conditional`, además de un post-procesamiento de límites (comillas, corchetes, afijos). Este mecanismo no es estándar en Hugging Face, por lo que el uso directo de `AutoModelForTokenClassification` daría resultados subóptimos.
 
 ## Capacidades
 
@@ -76,6 +76,6 @@ No se han encontrado modelos comparables en la información proporcionada. El mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AsphodelRem/uz-ner-rembert
-- Documentación de RemBERT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/rembert
-- Perfil del autor en HuggingFace: https://huggingface.co/AsphodelRem
+- Modelo en Hugging Face: https://huggingface.co/AsphodelRem/uz-ner-rembert
+- Documentación de RemBERT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/rembert
+- Perfil del autor en Hugging Face: https://huggingface.co/AsphodelRem

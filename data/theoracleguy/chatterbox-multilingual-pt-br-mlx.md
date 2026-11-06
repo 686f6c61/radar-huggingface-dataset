@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/theoracleguy/Chatterbox-Multilingual-pt-br-MLX
+- Repositorio Hugging Face: https://huggingface.co/theoracleguy/Chatterbox-Multilingual-pt-br-MLX
 - Modelo base: https://huggingface.co/ResembleAI/Chatterbox-Multilingual-pt-br
 - Repositorio de componentes (voice encoder y mapeo Cangjie): https://huggingface.co/ResembleAI/chatterbox
 - Tokenizador de voz: https://huggingface.co/mlx-community/S3TokenizerV2

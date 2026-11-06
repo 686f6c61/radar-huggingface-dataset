@@ -2,7 +2,7 @@
 
 ## Resumen
 
-voxcpm2-indic-multi-stage4-te20h-navaratri-te-lr5e-5-3ep es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en HuggingFace. Se trata de un ajuste fino completo (full fine-tune) del modelo sw-voice/voxcpm2-indic-multi-stage3-te20h-themes-lr5e-5-2ep, realizado con el entrenador oficial de VoxCPM sobre un corpus específico de temática Navaratri en telugu. El modelo forma parte de una cadena de ajustes sucesivos orientada a voces indic, y su nombre codifica la etapa (stage4), el volumen de datos previo (20 h de temas en telugu), el idioma objetivo (te), la tasa de aprendizaje (5e-5) y el número de épocas (3).
+voxcpm2-indic-multi-stage4-te20h-navaratri-te-lr5e-5-3ep es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en Hugging Face. Se trata de un ajuste fino completo (full fine-tune) del modelo sw-voice/voxcpm2-indic-multi-stage3-te20h-themes-lr5e-5-2ep, realizado con el entrenador oficial de VoxCPM sobre un corpus específico de temática Navaratri en telugu. El modelo forma parte de una cadena de ajustes sucesivos orientada a voces indic, y su nombre codifica la etapa (stage4), el volumen de datos previo (20 h de temas en telugu), el idioma objetivo (te), la tasa de aprendizaje (5e-5) y el número de épocas (3).
 
 El modelo tiene 2.290.004.544 parámetros (aproximadamente 2,29 mil millones), un tamaño de repositorio de 9,5 GB en formato safetensors y una licencia Apache 2.0. Está etiquetado para los idiomas inglés (en), telugu (te) y kannada (kn), y su pipeline es text-to-speech. La model card lo marca explícitamente como "research", lo que indica que es un artefacto experimental más que un producto listo para producción.
 
@@ -83,7 +83,7 @@ No se dispone de alternativas externas con datos verificables en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage4-te20h-navaratri-te-lr5e-5-3ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage4-te20h-navaratri-te-lr5e-5-3ep
 - Modelo base (etapa 3): https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-te20h-themes-lr5e-5-2ep
 - Dataset de ajuste: sw-voice/swamiji-navaratri-telugu-sidon-themes (referenciado en la model card; no se proporciona URL directa en la informacion)
 - Código: repositorio swamiji-tts, directorio `research/multi-stages` (referenciado en la model card; no se proporciona URL directa en la informacion)

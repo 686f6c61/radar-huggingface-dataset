@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans 3B SFT C-to-Go | 3,09 B | no disponible | Traducción C a Go (SFT) | Qwen Research (no comercial) | HuggingFace, sin validación de inferencia |
-| Qwen2.5-Coder-3B (base) | 3,09 B | no disponible en esta ficha | Generación de código general | Apache 2.0 (según el modelo base original) | HuggingFace, ampliamente usado |
+| ClearTrans 3B SFT C-to-Go | 3,09 B | no disponible | Traducción C a Go (SFT) | Qwen Research (no comercial) | Hugging Face, sin validación de inferencia |
+| Qwen2.5-Coder-3B (base) | 3,09 B | no disponible en esta ficha | Generación de código general | Apache 2.0 (según el modelo base original) | Hugging Face, ampliamente usado |
 | Otros checkpoints ClearTrans direccionales | no disponible | no disponible | Traducción entre otros pares de lenguajes | Qwen Research (no comercial) | Repositorio ClearTrans en GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-C-to-Go
+- Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-C-to-Go
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio ClearTrans (scripts de implementación y replicación): https://github.com/Xingzhehu/ClearTrans
 - Licencia: incluida en el repositorio como LICENSE (Qwen Research License Agreement)

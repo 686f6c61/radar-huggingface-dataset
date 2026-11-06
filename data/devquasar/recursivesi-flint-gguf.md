@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no identifica la arquitectura, el co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DevQuasar/RecursiveSI.flint-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DevQuasar/RecursiveSI.flint-GGUF
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Perfil del autor: https://huggingface.co/DevQuasar
 - Sitio del autor: https://devquasar.com

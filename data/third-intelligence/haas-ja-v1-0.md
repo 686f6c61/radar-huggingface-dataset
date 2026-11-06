@@ -92,7 +92,7 @@ Nota: los autores de Haas-ja-v1.0 lo comparan con modelos abiertos y APIs comerc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/third-intelligence/Haas-ja-v1.0
+- Modelo en Hugging Face: https://huggingface.co/third-intelligence/Haas-ja-v1.0
 - Repositorio de código (GitHub): https://github.com/third-intelligence/Haas-ASR
 - Demo en Hugging Face Space: https://third-intelligence-haas-ja-v1-0.hf.space/longform
 - Blog post de lanzamiento: https://third-intelligence.com/ja/posts/haas-ja-v1-release

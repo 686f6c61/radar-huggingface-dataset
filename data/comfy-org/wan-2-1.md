@@ -75,7 +75,7 @@ Las cifras siguientes son estimaciones aritméticas a partir del número de par�
 | Wan 2.1 (este repositorio), 1.3B | 1,3B | T2V, VACE, control, inpainting | Apache 2.0 | Empaquetado single-file para ComfyUI; 4,38 M de descargas |
 | Wan 2.1 (este repositorio), 14B | 14B | T2V, I2V 480p/720p, FLF2V, VACE, control de cámara, alfa, doblaje | Apache 2.0 | Igual que la fila anterior |
 | HunyuanVideo | 13B (dato de referencia general) | T2V, I2V | Licencia comunitaria propia de Tencent | Pesos abiertos; integración en ComfyUI vía nodos de terceros |
-| CogVideoX-5B | 5B (dato de referencia general) | T2V, I2V, vídeo-a-vídeo | Apache 2.0 | Pesos abiertos en HuggingFace; integración en ComfyUI |
+| CogVideoX-5B | 5B (dato de referencia general) | T2V, I2V, vídeo-a-vídeo | Apache 2.0 | Pesos abiertos en Hugging Face; integración en ComfyUI |
 | LTX-Video | No disponible con fiabilidad | T2V, I2V | Licencia propia del proyecto | Pesos abiertos; integración en ComfyUI |
 
 Solo las dos primeras filas están verificadas contra la información proporcionada; las tres alternativas se incluyen como referencia de categoría (generación de vídeo con pesos abiertos) y sus cifras deben contrastarse en sus repositorios antes de tomar una decisión. En licencia, Wan 2.1 es la opción más simple de las comparadas al ser Apache 2.0 en todas sus variantes empaquetadas aquí.
@@ -93,7 +93,7 @@ Solo las dos primeras filas están verificadas contra la información proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Wan-2.1
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Wan-2.1
 - Ejemplos oficiales de Wan en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/wan
 - Plantillas de flujos de trabajo: https://github.com/Comfy-Org/workflow_templates
 - ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI

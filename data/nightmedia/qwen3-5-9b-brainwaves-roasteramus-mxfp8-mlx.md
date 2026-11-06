@@ -20,7 +20,7 @@ La relevancia actual es doble: por un lado, demuestra el flujo de trabajo de mer
 | Idiomas soportados | en, zh, ja, es |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (repositorio MLX cuantizado en mxfp8) |
-| Parametros derivados | tamaño del repositorio: 10,2 GB; pipeline declarada en HuggingFace: image-text-to-text |
+| Parametros derivados | tamaño del repositorio: 10,2 GB; pipeline declarada en Hugging Face: image-text-to-text |
 | Modelos base | axiomofmind/Roasteramus; nightmedia/Qwen3.5-9B-Brainwaves |
 | Fechas | creado el 2026-10-08; actualizado el 2026-10-09 |
 
@@ -41,7 +41,7 @@ El proceso de construcción es una fusión (merge) de dos adaptaciones del mismo
 - Multilingüismo declarado en cuatro idiomas: inglés, chino, japonés y español. No se especifica el nivel de competencia en cada uno.
 - Soporte de tool calling y function calling: no disponible; no se menciona en la model card.
 - Capacidades de agente y razonamiento multi-paso: no disponible de forma explícita.
-- Visión: la pipeline declarada en HuggingFace es image-text-to-text, pero la model card no documenta ninguna capacidad multimodal ni incluye ejemplos con imágenes. Debe considerarse no verificada.
+- Visión: la pipeline declarada en Hugging Face es image-text-to-text, pero la model card no documenta ninguna capacidad multimodal ni incluye ejemplos con imágenes. Debe considerarse no verificada.
 - Modo "thinking" explícito: no disponible como funcionalidad separada, aunque las etiquetas de razonamiento apuntan a cadenas de pensamiento largas.
 
 ## Casos de uso
@@ -88,10 +88,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ninguna otra prue
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Brainwaves-Roasteramus-mxfp8-mlx | 9,41 B | no disponible (etiquetas: 256k y 1M) | ARC 0,688; ARC-E 0,862; BoolQ 0,902; perplejidad 4,122 | Apache 2.0 | HuggingFace, repo de 10,2 GB en MLX mxfp8 |
-| nightmedia/Qwen3.5-9B-Brainwaves (modelo base de la fusión) | no disponible | no disponible | ARC 0,678; ARC-E 0,856; BoolQ 0,904; HellaSwag 0,763; PIQA 0,800; OBKQA 0,502; Winogrande 0,702; perplejidad 4,292 | no disponible | HuggingFace |
-| axiomofmind/Roasteramus (modelo base de la fusión) | 9 B según la ficha | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3.5-9B Instruct (baseline) | no disponible | no disponible | ARC 0,571; ARC-E 0,719; BoolQ 0,895; HellaSwag 0,683; PIQA 0,770; OBKQA 0,426; Winogrande 0,671 | no disponible | HuggingFace |
+| Qwen3.5-9B-Brainwaves-Roasteramus-mxfp8-mlx | 9,41 B | no disponible (etiquetas: 256k y 1M) | ARC 0,688; ARC-E 0,862; BoolQ 0,902; perplejidad 4,122 | Apache 2.0 | Hugging Face, repo de 10,2 GB en MLX mxfp8 |
+| nightmedia/Qwen3.5-9B-Brainwaves (modelo base de la fusión) | no disponible | no disponible | ARC 0,678; ARC-E 0,856; BoolQ 0,904; HellaSwag 0,763; PIQA 0,800; OBKQA 0,502; Winogrande 0,702; perplejidad 4,292 | no disponible | Hugging Face |
+| axiomofmind/Roasteramus (modelo base de la fusión) | 9 B según la ficha | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3.5-9B Instruct (baseline) | no disponible | no disponible | ARC 0,571; ARC-E 0,719; BoolQ 0,895; HellaSwag 0,683; PIQA 0,770; OBKQA 0,426; Winogrande 0,671 | no disponible | Hugging Face |
 
 Comparado con el baseline Qwen3.5-9B Instruct, la fusión mejora en ARC (0,688 frente a 0,571), ARC-E (0,862 frente a 0,719) y BoolQ (0,902 frente a 0,895). Frente al componente Brainwaves, la fusión sube en ARC y ARC-E, se mantiene prácticamente igual en BoolQ y mejora ligeramente la perplejidad (4,122 frente a 4,292). No se dispone de comparaciones con otros modelos de la misma categoría fuera de esta familia.
 
@@ -111,7 +111,7 @@ Comparado con el baseline Qwen3.5-9B Instruct, la fusión mejora en ARC (0,688 f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-Roasteramus-mxfp8-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-Roasteramus-mxfp8-mlx
 - Modelo base 1: https://huggingface.co/axiomofmind/Roasteramus
 - Modelo base 2: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
 - Imagen de portada del repositorio: https://cdn-uploads.huggingface.co/production/uploads/67b0caceb06805a4370c44c5/bbo7wKlPMiC3vNbpf9Lyg.png

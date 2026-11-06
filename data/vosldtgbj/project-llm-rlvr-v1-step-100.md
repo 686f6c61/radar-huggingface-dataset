@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `project-llm-rlvr-v1-step-100` (este) | 11.959.730.224 (safetensors); 12.484.280.320 declarados | no disponible; entrenado con 8.192 de entrada / 2.048 de generacion | sin benchmarks publicados | gemma | HuggingFace, pesos BF16 |
-| `project-llm-rlvr-v1-step-75` (padre directo) | mismos parametros | mismas condiciones de entrenamiento | sin benchmarks publicados | gemma | HuggingFace, pesos BF16 |
-| `project-llm-rlvr-v1-step-125` (siguiente) | mismos parametros | mismas condiciones de entrenamiento | sin benchmarks publicados | gemma | HuggingFace, pesos BF16 |
+| `project-llm-rlvr-v1-step-100` (este) | 11.959.730.224 (safetensors); 12.484.280.320 declarados | no disponible; entrenado con 8.192 de entrada / 2.048 de generacion | sin benchmarks publicados | gemma | Hugging Face, pesos BF16 |
+| `project-llm-rlvr-v1-step-75` (padre directo) | mismos parametros | mismas condiciones de entrenamiento | sin benchmarks publicados | gemma | Hugging Face, pesos BF16 |
+| `project-llm-rlvr-v1-step-125` (siguiente) | mismos parametros | mismas condiciones de entrenamiento | sin benchmarks publicados | gemma | Hugging Face, pesos BF16 |
 | `google/gemma-4-12B-it` (base) | 12.484.280.320 declarados | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | gemma | modelo base referenciado, no re-subido por este proyecto |
 
 La comparacion con alternativas externas de tamano similar (por ejemplo otros modelos abiertos de 12B-14B) no es posible con los datos disponibles: no se aportan contextos, licencias ni resultados de benchmark de esos modelos en la informacion proporcionada, y comparar unicamente por numero de parametros no seria riguroso.

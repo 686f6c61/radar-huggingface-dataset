@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llama-cargo-sft-v5 es un modelo publicado en HuggingFace por el usuario jonas-mo, entrenado mediante ajuste supervisado (SFT) con la libreria TRL. La model card esta generada automaticamente por la plantilla de TRL y no especifica cual es el modelo base sobre el que se ha hecho el ajuste: el campo correspondiente aparece literalmente como "None", por lo que se desconoce la arquitectura subyacente, el numero de parametros y la longitud de contexto. El nombre del repositorio sugiere una base de la familia Llama, pero no hay ninguna confirmacion documental de ello.
+llama-cargo-sft-v5 es un modelo publicado en Hugging Face por el usuario jonas-mo, entrenado mediante ajuste supervisado (SFT) con la libreria TRL. La model card esta generada automaticamente por la plantilla de TRL y no especifica cual es el modelo base sobre el que se ha hecho el ajuste: el campo correspondiente aparece literalmente como "None", por lo que se desconoce la arquitectura subyacente, el numero de parametros y la longitud de contexto. El nombre del repositorio sugiere una base de la familia Llama, pero no hay ninguna confirmacion documental de ello.
 
 El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors, compatibles con la libreria transformers y con endpoints de inferencia. Ese tamano es coherente con un modelo de parametros reducidos o con un conjunto de adaptadores, pero no permite determinar el tamano real del modelo. La model card incluye un ejemplo de uso mediante `pipeline("text-generation")` con mensajes en formato de rol, lo que indica que el modelo espera entradas conversacionales tipo chat.
 
@@ -75,7 +75,7 @@ No es posible establecer una comparativa fiable porque se desconoce el modelo ba
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no publicado | no disponible |
 | Licencia | no especificada | no disponible |
-| Descargas en HuggingFace | 0 | no disponible |
+| Descargas en Hugging Face | 0 | no disponible |
 | Idiomas declarados | ninguno | no disponible |
 
 Sin conocer el modelo base no se puede afirmar que compita con ninguna familia concreta de modelos. Cualquier comparacion nominal seria especulativa.
@@ -95,7 +95,7 @@ Sin conocer el modelo base no se puede afirmar que compita con ninguna familia c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jonas-mo/llama-cargo-sft-v5
+- Repositorio Hugging Face: https://huggingface.co/jonas-mo/llama-cargo-sft-v5
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Citacion de TRL (BibTeX, referenciada en la propia model card):
 

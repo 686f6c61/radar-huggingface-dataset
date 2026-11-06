@@ -63,16 +63,16 @@ El test consta de 50 mensajes sintéticos (10 por clase). El autor advierte que 
 - VRAM estimada para inferencia: el modelo base de 135M parámetros en float32 ocupa aproximadamente 540 MB de pesos; con el adaptador y overhead de runtime, cabe holgadamente en cualquier GPU consumer con 2 GB o más.
 - GPU recomendadas: no requiere GPU dedicada; funciona en CPU (el entrenamiento documentado se hizo en CPU con float32). Cualquier GPU consumer (GTX 1650, RTX 3060, RTX 4090) es más que suficiente.
 - Cabe en GPU consumer: sí, en cualquier GPU con al menos 2 GB de VRAM; también en CPU y en entornos sin acelerador.
-- Opciones de despliegue: Transformers + PEFT (ruta oficial documentada), integración en HuggingFace Spaces (demo publicada), exportación a ONNX no documentada. vLLM, llama.cpp, Ollama y TGI no están documentados para este adaptador de clasificación.
+- Opciones de despliegue: Transformers + PEFT (ruta oficial documentada), integración en Hugging Face Spaces (demo publicada), exportación a ONNX no documentada. vLLM, llama.cpp, Ollama y TGI no están documentados para este adaptador de clasificación.
 - Latencia y throughput estimados: no disponible; no se publican mediciones de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SupportLens (SmolLM2-135M LoRA) | 135M base + 463.680 adaptador | 128 tokens | Clasificación 5 clases (inglés) | apache-2.0 | HuggingFace, demo en Space |
+| SupportLens (SmolLM2-135M LoRA) | 135M base + 463.680 adaptador | 128 tokens | Clasificación 5 clases (inglés) | apache-2.0 | Hugging Face, demo en Space |
 | TF-IDF + regresión logística (baseline del autor) | no aplica (modelo lineal) | no aplica | Clasificación 5 clases | no especificada | Referenciado en la model card |
-| SmolLM2-135M-Instruct (base) | 135M | no disponible en esta ficha | Generación de texto | apache-2.0 | HuggingFace |
+| SmolLM2-135M-Instruct (base) | 135M | no disponible en esta ficha | Generación de texto | apache-2.0 | Hugging Face |
 
 No se dispone de comparación con otros clasificadores de tickets publicados en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de comparación con otros clasificadores de tickets publicados en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DevLV133/supportlens-smollm2-135m-lora
+- Modelo en Hugging Face: https://huggingface.co/DevLV133/supportlens-smollm2-135m-lora
 - Demo en Space: https://huggingface.co/spaces/DevLV133/supportlens
 - Artefactos y evaluación: https://huggingface.co/buckets/DevLV133/supportlens-artifacts
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct

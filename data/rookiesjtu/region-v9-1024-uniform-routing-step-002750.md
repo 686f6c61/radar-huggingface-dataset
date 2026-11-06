@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `region-v9-1024-uniform-routing-step-002750` es un artefacto publicado en HuggingFace por el usuario `rookieSJTU`, aparentemente vinculado a un experimento de investigación sobre enrutamiento (routing) en arquitecturas de mezcla de expertos (MoE). El nombre sugiere un checkpoint intermedio de entrenamiento (paso 2750) con 1024 regiones o expertos y una estrategia de enrutamiento uniforme, aunque no se ha publicado documentación técnica que lo confirme. El repositorio tiene un tamaño de 1,5 GB y solo 3 descargas, lo que indica que se trata de un modelo de investigación de nicho, no de un modelo listo para producción.
+El modelo `region-v9-1024-uniform-routing-step-002750` es un artefacto publicado en Hugging Face por el usuario `rookieSJTU`, aparentemente vinculado a un experimento de investigación sobre enrutamiento (routing) en arquitecturas de mezcla de expertos (MoE). El nombre sugiere un checkpoint intermedio de entrenamiento (paso 2750) con 1024 regiones o expertos y una estrategia de enrutamiento uniforme, aunque no se ha publicado documentación técnica que lo confirme. El repositorio tiene un tamaño de 1,5 GB y solo 3 descargas, lo que indica que se trata de un modelo de investigación de nicho, no de un modelo listo para producción.
 
-No se dispone de información sobre la arquitectura exacta, el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos. La licencia es "other", sin que se especifiquen los términos concretos, lo que impide determinar si su uso comercial está permitido.
+No se dispone de información sobre la arquitectura exacta, el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos. La licencia es "other", sin que se especifiquen los términos concretos, lo que impide determinar si su uso comercial está permitido.
 
-Por su naturaleza de checkpoint experimental, esta ficha se limita a documentar lo que se puede verificar desde la ficha de HuggingFace. Cualquier evaluación de capacidades, rendimiento o idoneidad para producción requeriría acceso al modelo y a la documentación del autor, que no están disponibles públicamente.
+Por su naturaleza de checkpoint experimental, esta ficha se limita a documentar lo que se puede verificar desde la ficha de Hugging Face. Cualquier evaluación de capacidades, rendimiento o idoneidad para producción requeriría acceso al modelo y a la documentación del autor, que no están disponibles públicamente.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (experim
 
 - Ausencia total de documentación técnica: no hay model card, paper ni blog que describa arquitectura, entrenamiento o uso previsto.
 - Licencia "other" sin términos especificados: no se puede determinar si el uso comercial está permitido; es imprescindible contactar con el autor antes de cualquier uso en producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para la reproducibilidad y la auditoría.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para la reproducibilidad y la auditoría.
 - Riesgo de sesgos y alucinaciones: no evaluable sin acceso al modelo y sin datos de entrenamiento.
 - Checkpoint intermedio (paso 2750): es probable que no sea un modelo final ni esté alineado; su uso directo en aplicaciones reales no está recomendado.
 - Idiomas soportados desconocidos: no se puede garantizar un rendimiento adecuado en castellano ni en ningún otro idioma.
@@ -72,5 +72,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (experim
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rookieSJTU/region-v9-1024-uniform-routing-step-002750)
+- [Modelo en Hugging Face](https://huggingface.co/rookieSJTU/region-v9-1024-uniform-routing-step-002750)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

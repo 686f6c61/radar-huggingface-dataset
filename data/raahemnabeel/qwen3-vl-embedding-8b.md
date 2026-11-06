@@ -19,7 +19,7 @@ Su relevancia actual reside en dos factores. Por un lado, cubre la primera etapa
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | mas de 30 idiomas (segun la model card); lista concreta no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | checkpoint de HuggingFace descargado en tiempo de servicio y convertido a pesos TTNN; formatos concretos no disponibles |
+| Formato de pesos | checkpoint de Hugging Face descargado en tiempo de servicio y convertido a pesos TTNN; formatos concretos no disponibles |
 
 ## Arquitectura y entrenamiento
 
@@ -46,13 +46,13 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Busqueda texto-a-imagen y imagen-a-texto: con Hit@1 de 100.00 en MMEB-v2 MSCOCO en ambas direcciones, es adecuado para catalogos visuales, busqueda de producto por imagen o descripcion y moderacion de contenido por similitud.
 - Clustering y deduplicacion de contenido heterogeneo: el espacio compartido y las dimensiones Matryoshka permiten agrupar textos, imagenes y videos con un mismo indice vectorial, reduciendo dimensiones a 256 o 512 para abaratar el almacenamiento en colecciones grandes.
 - Clasificacion zero-shot y enrutamiento semantico: los embeddings de etiquetas y de entradas se comparan por similitud coseno para asignar categorias o dirigir peticiones a modelos especializados, sin entrenar un clasificador dedicado.
-- Indexacion de codigo y documentacion tecnica: la model card incluye una evaluacion especifica de codigo con coseno medio de 0.9991 frente a la referencia fp32 de HuggingFace, lo que lo hace apto para busqueda semantica sobre repositorios y bases de conocimiento internas.
+- Indexacion de codigo y documentacion tecnica: la model card incluye una evaluacion especifica de codigo con coseno medio de 0.9991 frente a la referencia fp32 de Hugging Face, lo que lo hace apto para busqueda semantica sobre repositorios y bases de conocimiento internas.
 - Procesamiento de video para busqueda y moderacion: con hasta 64 frames por entrada y `fps` configurable, permite indexar fragmentos de video y recuperarlos por consulta textual o por imagen de referencia.
 - Despliegue en infraestructura Tenstorrent: mediante `tt serve raahemnabeel/qwen3-vl-embedding-8b`, con perfiles `p150` (un chip), `p300` (dos chips, aproximadamente el doble de throughput), `p300x2` (cuatro chips, aproximadamente el cuadruple), `p150x2` y `p150x4`.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles comparan el paquete TTNN con la referencia fp32 de HuggingFace, no con otros modelos. No se han publicado resultados de benchmarks comparativos con modelos de la competencia en la informacion disponible.
+Los datos disponibles comparan el paquete TTNN con la referencia fp32 de Hugging Face, no con otros modelos. No se han publicado resultados de benchmarks comparativos con modelos de la competencia en la informacion disponible.
 
 | Evaluacion | Metrica | Este paquete | Referencia HF | Tamano |
 |---|---|---:|---:|---|
@@ -86,9 +86,9 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `raahemnabeel/qwen3-vl-embedding-8b` (este) | 8B | 8192 tokens | Texto, imagen, video, mixto | Apache 2.0 | HuggingFace; requiere hardware Tenstorrent |
-| `Qwen/Qwen3-VL-Embedding-8B` | 8B | no disponible | Texto, imagen, video, mixto | Apache 2.0 | HuggingFace; pesos de referencia sin portar |
-| `Qwen3-VL-Reranker-8B` | 8B | no disponible | Texto, imagen, video, mixto | no disponible | HuggingFace; segunda etapa recomendada por el autor |
+| `raahemnabeel/qwen3-vl-embedding-8b` (este) | 8B | 8192 tokens | Texto, imagen, video, mixto | Apache 2.0 | Hugging Face; requiere hardware Tenstorrent |
+| `Qwen/Qwen3-VL-Embedding-8B` | 8B | no disponible | Texto, imagen, video, mixto | Apache 2.0 | Hugging Face; pesos de referencia sin portar |
+| `Qwen3-VL-Reranker-8B` | 8B | no disponible | Texto, imagen, video, mixto | no disponible | Hugging Face; segunda etapa recomendada por el autor |
 
 La diferencia principal entre el paquete y el modelo base de Qwen no es de calidad (los pesos son identicos y la similitud coseno media frente a la referencia fp32 es 0.9977) sino de plataforma de ejecucion y de la API de servicio incluida.
 
@@ -108,8 +108,8 @@ La diferencia principal entre el paquete y el modelo base de Qwen no es de calid
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/raahemnabeel/qwen3-vl-embedding-8b
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
+- Repositorio Hugging Face del paquete: https://huggingface.co/raahemnabeel/qwen3-vl-embedding-8b
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
 - Commit de pesos referenciado: `2c4565515e0f265c6511776e7193b22c0968ddc7` (repositorio de Qwen)
 - Tenstorrent tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - Tenstorrent CLI (prerrequisitos): https://github.com/tenstorrent/tt-cli/blob/main/docs/prerequisites.md

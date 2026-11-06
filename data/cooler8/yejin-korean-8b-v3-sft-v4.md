@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 8B v3 SFT v4 es un modelo de lenguaje de tipo decoder-only orientado a la generacion de texto conversacional y al seguimiento de instrucciones en coreano. Lo publica el usuario cooler8 en HuggingFace bajo licencia Apache 2.0. Segun las etiquetas del repositorio, esta construido sobre la familia Qwen3, con un total de 7.241.740.288 parametros reales (algo menos de 7,3 mil millones) almacenados en formato safetensors, y se distribuye con un peso de repositorio de 14,5 GB, coherente con pesos en precision de 16 bits.
+Yejin Korean 8B v3 SFT v4 es un modelo de lenguaje de tipo decoder-only orientado a la generacion de texto conversacional y al seguimiento de instrucciones en coreano. Lo publica el usuario cooler8 en Hugging Face bajo licencia Apache 2.0. Segun las etiquetas del repositorio, esta construido sobre la familia Qwen3, con un total de 7.241.740.288 parametros reales (algo menos de 7,3 mil millones) almacenados en formato safetensors, y se distribuye con un peso de repositorio de 14,5 GB, coherente con pesos en precision de 16 bits.
 
 El modelo se presenta como un ajuste supervisado (SFT, supervisado por instrucciones) de la version v3, en su iteracion v4 del proceso de afinado. Su proposito es servir como asistente conversacional en coreano, con una plantilla de chat propia basada en los tokens especiales `<|user|>`, `<|assistant|>` y `<|end|>`. No se declara soporte multilingue: el unico idioma listado es el coreano (codigo `ko`).
 
@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-sft-v4
+- Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-sft-v4
 - Repositorio del modelo base (familia Qwen3): https://huggingface.co/Qwen/Qwen3-8B
 - Documentacion de `transformers` sobre `apply_chat_template`: https://huggingface.co/docs/transformers/main/en/chat_templating
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la informacion disponible.

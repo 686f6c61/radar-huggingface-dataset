@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mikayla_Thayer es un adaptador LoRA de texto a imagen publicado por el usuario Cmckerrin en HuggingFace. Se distribuye en formato diffusers y esta disenado para ejecutarse sobre el modelo base Qwen/Qwen-Image-2.1, un modelo de difusion de generacion de imagenes de la familia Qwen. El repositorio no incluye pesos (tamano declarado de 0,0 GB) y en el momento de la consulta acumula 0 descargas y 1 like.
+Mikayla_Thayer es un adaptador LoRA de texto a imagen publicado por el usuario Cmckerrin en Hugging Face. Se distribuye en formato diffusers y esta disenado para ejecutarse sobre el modelo base Qwen/Qwen-Image-2.1, un modelo de difusion de generacion de imagenes de la familia Qwen. El repositorio no incluye pesos (tamano declarado de 0,0 GB) y en el momento de la consulta acumula 0 descargas y 1 like.
 
 La model card es practicamente vacia: no describe el proceso de entrenamiento, no indica el numero de pasos, el dataset, la resolucion de entrenamiento ni el rango del adaptador. El campo `instance_prompt` aparece como `null` y el unico contenido relevante es una etiqueta de plantilla (`template:diffusion-lora`) y una galeria de imagenes de ejemplo de la que no se dispone de metadatos.
 
@@ -94,7 +94,7 @@ No es posible establecer una comparativa tecnica rigurosa: no hay datos de param
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cmckerrin/Mikayla_Thayer
+- Repositorio en Hugging Face: https://huggingface.co/Cmckerrin/Mikayla_Thayer
 - Modelo base referenciado en las etiquetas: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo; los resultados disponibles corresponden a parrillas de programacion de television y no aportan informacion tecnica.
 - Paper, blog, repositorio de codigo o demo: no disponible.

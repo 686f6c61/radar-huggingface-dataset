@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "SpeechAntiSpoofingBenchmarks/XLSR-Conformer-TCM-DF",
+  "slug": "speechantispoofingbenchmarks-xlsr-conformer-tcm-df",
+  "author": "SpeechAntiSpoofingBenchmarks",
+  "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Conformer-TCM-DF",
+  "created_at": "2026-11-01T22:59:08.000Z",
+  "updated_at": "2026-11-04T04:08:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "audio",
+    "anti-spoofing",
+    "deepfake-detection",
+    "speech-anti-spoofing-arena",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 174,
+  "trending_score": 0,
+  "parameters": 321215526,
+  "parameters_human": "321.2M",
+  "storage_bytes": 1384943057,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpeechAntiSpoofingBenchmarks/XLSR-Conformer-TCM-DF · Hugging Face",
+      "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Conformer-TCM-DF",
+      "snippet": "Packaged for the Speech Anti-Spoofing Arena from the authors' code and paper. XLSR-Conformer + TCM (Truong et al., Interspeech 2024), DF-track model: a fully fine-tuned wav2vec 2.0 XLS-R 300M front-end projected to 144-d (Linear + BatchNorm + SELU), followed by 4 Conformer blocks whose multi-head ..."
+    },
+    {
+      "title": "SpeechAntiSpoofingBenchmarks/XLSR-Conformer-TCM-DF at main",
+      "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Conformer-TCM-DF/tree/main",
+      "snippet": "SpeechAntiSpoofingBenchmarks / XLSR-Conformer-TCM-DF Like 0 Follow Speech Antispoofing Benchmarks by lab260 14 Safetensors Model card FilesFiles and versions xet Community Copy to bucket main XLSR-Conformer-TCM-DF 1.31 GB Ctrl+K Ctrl+K 1 contributor History:38 commits korallll Backlink result.yaml for ADD22_eval_31 6386636 verified16 minutes ago"
+    }
+  ]
+}

@@ -109,13 +109,13 @@ No hay datos en la informacion proporcionada sobre modelos OCR alternativos de o
 - Idiomas soportados: no disponible. No se puede asumir cobertura multilingue.
 - Sesgos: no disponible. No hay evaluacion de sesgos en la informacion proporcionada.
 - Riesgo de alucinacion: inherente a un modelo generativo de imagen a texto; no hay tasas de alucinacion publicadas, solo la comparacion de tasa de error contra ground truth en 200 paginas.
-- Adopcion nula verificable: 0 descargas y 0 likes en HuggingFace, sin validacion independiente por parte de la comunidad.
+- Adopcion nula verificable: 0 descargas y 0 likes en Hugging Face, sin validacion independiente por parte de la comunidad.
 - Licencia: Apache 2.0, que permite uso comercial, modificacion y redistribucion, siempre citando la obra original y manteniendo el aviso de licencia. Al ser una reencodacion de pesos de TII, conviene revisar los terminos del modelo base por si anaden condiciones adicionales.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los resultados obtenidos eran contenido no relacionado y han sido descartados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amazingvince/falcon-ocr-v1.5-cpu
+- Modelo en Hugging Face: https://huggingface.co/amazingvince/falcon-ocr-v1.5-cpu
 - Modelo base: https://huggingface.co/tiiuae/Falcon-OCR
 - Runner de CPU en Rust: https://github.com/amazingvince/falcon-ocr-cpu
 - Detalles de evaluacion (RESULTS-V3.md, secciones 6 y 8): https://github.com/amazingvince/falcon-ocr-cpu/blob/phase4-attempt3/attempt3/RESULTS-V3.md

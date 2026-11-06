@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OliviaRossi/KAT-Qwopus-Ornith-Coder-35B-A3B-Q5_K_M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/OliviaRossi/KAT-Qwopus-Ornith-Coder-35B-A3B-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/KAT-Qwopus-Ornith-Coder-35B-A3B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

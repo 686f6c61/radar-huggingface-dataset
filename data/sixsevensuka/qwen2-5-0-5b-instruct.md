@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct (este repo) | 0,49B | 32.768 | Apache 2.0 | HuggingFace, transformers | Redistribucion no oficial del modelo de Alibaba |
-| Qwen/Qwen2.5-0.5B-Instruct (oficial) | 0,49B | 32.768 | Apache 2.0 | HuggingFace, transformers | Repo oficial con documentacion y soporte |
-| Qwen2-0.5B-Instruct | 0,49B | 32.768 | Apache 2.0 | HuggingFace, transformers | Generacion anterior, menor rendimiento en codigo y matematicas |
-| TinyLlama-1.1B-Chat | 1,1B | 2.048 | Apache 2.0 | HuggingFace, transformers, GGUF | Mayor tamano pero contexto mucho menor |
-| SmolLM2-360M-Instruct | 0,36B | 8.192 | Apache 2.0 | HuggingFace, transformers, GGUF | Alternativa mas pequena, contexto menor |
+| Qwen2.5-0.5B-Instruct (este repo) | 0,49B | 32.768 | Apache 2.0 | Hugging Face, transformers | Redistribucion no oficial del modelo de Alibaba |
+| Qwen/Qwen2.5-0.5B-Instruct (oficial) | 0,49B | 32.768 | Apache 2.0 | Hugging Face, transformers | Repo oficial con documentacion y soporte |
+| Qwen2-0.5B-Instruct | 0,49B | 32.768 | Apache 2.0 | Hugging Face, transformers | Generacion anterior, menor rendimiento en codigo y matematicas |
+| TinyLlama-1.1B-Chat | 1,1B | 2.048 | Apache 2.0 | Hugging Face, transformers, GGUF | Mayor tamano pero contexto mucho menor |
+| SmolLM2-360M-Instruct | 0,36B | 8.192 | Apache 2.0 | Hugging Face, transformers, GGUF | Alternativa mas pequena, contexto menor |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada para cuantificar diferencias de rendimiento entre estos modelos.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace (redistribucion): https://huggingface.co/sixsevensuka/Qwen2.5-0.5B-Instruct
+- Repositorio Hugging Face (redistribucion): https://huggingface.co/sixsevensuka/Qwen2.5-0.5B-Instruct
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo base preentrenado: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

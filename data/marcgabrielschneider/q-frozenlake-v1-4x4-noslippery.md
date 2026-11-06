@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal profunda: es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, entrenado para resolver el entorno FrozenLake-v1 de Gymnasium en su configuracion 4x4 sin superficie resbaladiza. Lo publica el usuario marcgabrielschneider en HuggingFace, con un unico artefacto de pesos (`q-learning.pkl`) y un repositorio de 0.0 GB, lo que confirma que se trata de una tabla de valores Q y no de una red con millones de parametros.
+`q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal profunda: es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, entrenado para resolver el entorno FrozenLake-v1 de Gymnasium en su configuracion 4x4 sin superficie resbaladiza. Lo publica el usuario marcgabrielschneider en Hugging Face, con un unico artefacto de pesos (`q-learning.pkl`) y un repositorio de 0.0 GB, lo que confirma que se trata de una tabla de valores Q y no de una red con millones de parametros.
 
 Su relevancia es practica y acotada: sirve como referencia reproducible de un agente que alcanza la politica optima en un entorno deterministico de 16 estados y 4 acciones, y como ejemplo canonico del flujo de trabajo de la libreria `rl-zoo`/`stable-baselines3` para publicar agentes entrenados en el Hub. El autor declara una recompensa media de 1.00 +/- 0.00 en el dataset FrozenLake-v1-4x4-no_slippery, es decir, exito del 100 por cien en la evaluacion, aunque la metrica aparece marcada como `verified: false`.
 
@@ -20,7 +20,7 @@ No existe informacion publicada sobre licencia, idiomas, contexto, cuantizacion 
 | Idiomas soportados | no aplica (no procesa lenguaje natural) |
 | Licencia | no disponible |
 | Formato de pesos | Pickle de Python (`.pkl`), fichero `q-learning.pkl` |
-| Framework de carga | `load_from_hub` (utilidad de `rl-zoo` / HuggingFace Hub) |
+| Framework de carga | `load_from_hub` (utilidad de `rl-zoo` / Hugging Face Hub) |
 | Entorno objetivo | `FrozenLake-v1`, mapa 4x4, `is_slippery=False` |
 | Espacio de estados | 16 estados discretos |
 | Espacio de acciones | 4 acciones discretas (izquierda, abajo, derecha, arriba) |
@@ -39,7 +39,7 @@ El entrenamiento se realizo sobre la variante `FrozenLake-v1-4x4-no_slippery`, e
 - Resolucion optima del entorno FrozenLake-v1 4x4 en modo deterministico: navegar del estado inicial (casilla superior izquierda) hasta el objetivo evitando los agujeros.
 - Seleccion de accion discreta a partir de un estado discreto, mediante consulta directa a la tabla Q (politica greedy).
 - Politica determinista y reproducible: dado el mismo estado, devuelve siempre la misma accion.
-- Serializacion y carga via HuggingFace Hub con el helper `load_from_hub`, incluyendo el campo `env_id` para reconstruir el entorno.
+- Serializacion y carga via Hugging Face Hub con el helper `load_from_hub`, incluyendo el campo `env_id` para reconstruir el entorno.
 - No soporta tool calling, function calling, agentes multi-paso, razonamiento en lenguaje natural, codigo, matematicas, vision, audio ni capacidades multilingues.
 - No dispone de modo de razonamiento extendido (`thinking mode`) ni de ninguna forma de generacion de texto.
 
@@ -97,6 +97,6 @@ La diferencia fundamental frente a aproximaciones con redes profundas es que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcgabrielschneider/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/marcgabrielschneider/q-FrozenLake-v1-4x4-noSlippery
 - Paper, repositorio de codigo, blog o demo: no disponible en la informacion proporcionada.
 - La busqueda web asociada no devolvio resultados relevantes sobre el modelo ni sobre el autor; los enlaces recuperados no tenian relacion con inteligencia artificial y se han descartado como fuente.

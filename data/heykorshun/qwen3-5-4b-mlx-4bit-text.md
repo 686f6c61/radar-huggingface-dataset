@@ -96,7 +96,7 @@ Frente a la variante con vision del mismo modelo, la unica diferencia es el peso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/heykorshun/Qwen3.5-4B-MLX-4bit-text
+- Repositorio en Hugging Face: https://huggingface.co/heykorshun/Qwen3.5-4B-MLX-4bit-text
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Conversion MLX 4 bits de partida: https://huggingface.co/mlx-community/Qwen3.5-4B-4bit
 - Revision concreta del modelo base MLX: `0e7ffd5c629ef7719d4cbc04069232580bfa9d9c`

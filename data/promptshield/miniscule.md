@@ -76,7 +76,7 @@ La comparativa se limita a los modelos directamente relacionados, ya que no se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: [promptshield/miniscule](https://huggingface.co/promptshield/miniscule)
+- Repositorio Hugging Face: [promptshield/miniscule](https://huggingface.co/promptshield/miniscule)
 - Modelo base (fine-tune): [Davlan/bert-base-multilingual-cased-ner-hrl](https://huggingface.co/Davlan/bert-base-multilingual-cased-ner-hrl)
 - Modelo base original: [google-bert/bert-base-multilingual-cased](https://huggingface.co/google-bert/bert-base-multilingual-cased)
 - Exportación ONNX sin poda: [Xenova/bert-base-multilingual-cased-ner-hrl](https://huggingface.co/Xenova/bert-base-multilingual-cased-ner-hrl)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NeoHorse-1-4B-GGUF es una cuantización estática en formato GGUF del modelo NeoHorse-1-4B, creado originalmente por el usuario de HuggingFace TokenRhythm. La conversión ha sido realizada por mradermacher, un autor conocido por publicar cuantizaciones de modelos open source. El repositorio contiene múltiples niveles de cuantización (Q2_K, Q4_K_S, Q8_0, etc.) que permiten ejecutar el modelo en hardware con distintos niveles de memoria.
+NeoHorse-1-4B-GGUF es una cuantización estática en formato GGUF del modelo NeoHorse-1-4B, creado originalmente por el usuario de Hugging Face TokenRhythm. La conversión ha sido realizada por mradermacher, un autor conocido por publicar cuantizaciones de modelos open source. El repositorio contiene múltiples niveles de cuantización (Q2_K, Q4_K_S, Q8_0, etc.) que permiten ejecutar el modelo en hardware con distintos niveles de memoria.
 
-La información pública sobre el modelo original es muy limitada: no se especifican arquitectura, contexto, licencia, ni capacidades. Tampoco se han publicado resultados de benchmarks. Por ello, esta ficha se basa únicamente en los datos disponibles en HuggingFace y marca como "no disponible" aquellos aspectos no confirmados.
+La información pública sobre el modelo original es muy limitada: no se especifican arquitectura, contexto, licencia, ni capacidades. Tampoco se han publicado resultados de benchmarks. Por ello, esta ficha se basa únicamente en los datos disponibles en Hugging Face y marca como "no disponible" aquellos aspectos no confirmados.
 
 El modelo resulta relevante para quienes buscan una opción de 4B parámetros ejecutable en CPU o GPU mediante llama.cpp, aunque sin documentación técnica es difícil validar su idoneidad para casos concretos.
 

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `bdatm-project/qwen-task1-raster-tok256-lora` es un adaptador de ajuste fino publicado por el usuario u organizacion `bdatm-project` en HuggingFace. Por el sufijo del identificador (`-lora`) y por los tags declarados (`transformers`, `safetensors`), se trata de un adaptador LoRA que debe combinarse con un modelo base de la familia Qwen para poder ejecutarse; el repositorio no contiene, segun la informacion disponible, un modelo completo e independiente. El nombre sugiere ademas un ajuste orientado a una tarea concreta (`task1`) y a una estrategia de reordenacion de datos denominada `raster`, con un parametro de 256 tokens (`tok256`), aunque ninguno de estos extremos esta documentado en la model card.
+El modelo `bdatm-project/qwen-task1-raster-tok256-lora` es un adaptador de ajuste fino publicado por el usuario u organizacion `bdatm-project` en Hugging Face. Por el sufijo del identificador (`-lora`) y por los tags declarados (`transformers`, `safetensors`), se trata de un adaptador LoRA que debe combinarse con un modelo base de la familia Qwen para poder ejecutarse; el repositorio no contiene, segun la informacion disponible, un modelo completo e independiente. El nombre sugiere ademas un ajuste orientado a una tarea concreta (`task1`) y a una estrategia de reordenacion de datos denominada `raster`, con un parametro de 256 tokens (`tok256`), aunque ninguno de estos extremos esta documentado en la model card.
 
-La model card publicada es la plantilla automatica de HuggingFace y no ha sido cumplimentada: todos los apartados relevantes (descripcion, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. El repositorio ocupa 0,7 GB, no acumula descargas ni likes en el momento de la consulta y fue creado y actualizado el 12 de octubre de 2026 con unas tres horas de diferencia, lo que apunta a una publicacion reciente y todavia sin comunidad de usuarios.
+La model card publicada es la plantilla automatica de Hugging Face y no ha sido cumplimentada: todos los apartados relevantes (descripcion, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. El repositorio ocupa 0,7 GB, no acumula descargas ni likes en el momento de la consulta y fue creado y actualizado el 12 de octubre de 2026 con unas tres horas de diferencia, lo que apunta a una publicacion reciente y todavia sin comunidad de usuarios.
 
-Por todo ello, la ficha que sigue recoge unicamente lo verificable a partir de los metadatos y de los tags de HuggingFace, y marca explicitamente como "no disponible" cualquier dato que el autor no ha hecho publico. Es un artefacto interesante para reproducir un experimento de ajuste fino con reordenacion de datos, pero no es evaluable como modelo listo para produccion sin informacion adicional del autor.
+Por todo ello, la ficha que sigue recoge unicamente lo verificable a partir de los metadatos y de los tags de Hugging Face, y marca explicitamente como "no disponible" cualquier dato que el autor no ha hecho publico. Es un artefacto interesante para reproducir un experimento de ajuste fino con reordenacion de datos, pero no es evaluable como modelo listo para produccion sin informacion adicional del autor.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Por todo ello, la ficha que sigue recoge unicamente lo verificable a partir de l
 | Tipos de cuantizacion | no disponible (distribucion en safetensors; se desconoce si hay versiones GGUF, AWQ o GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (declarado en los tags de HuggingFace) |
+| Formato de pesos | safetensors (declarado en los tags de Hugging Face) |
 
 Otros metadatos verificables: biblioteca declarada `transformers`, tag `endpoints_compatible` (compatible con HF Inference Endpoints), tag `region:us`, tag `arxiv:1910.09700` (referencia a Lacoste et al. 2019 sobre calculo de emisiones, heredada de la plantilla de model card y no un articulo tecnico sobre este modelo). Descargas: 0. Likes: 0.
 
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bdatm-project/qwen-task1-raster-tok256-lora
+- Repositorio en Hugging Face: https://huggingface.co/bdatm-project/qwen-task1-raster-tok256-lora
 - Repositorio hermano (variante sin `tok256`): https://huggingface.co/bdatm-project/qwen-task1-raster-lora
 - Arbol de ficheros del repositorio hermano: https://huggingface.co/bdatm-project/qwen-task1-raster-lora/tree/main
 - Referencia citada en los tags (Lacoste et al. 2019, calculadora de impacto): https://arxiv.org/abs/1910.09700

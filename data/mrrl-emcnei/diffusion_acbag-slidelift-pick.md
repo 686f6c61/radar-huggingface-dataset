@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diffusion_acbag-slidelift-pick` es una política de control visuomotor entrenada con el método Diffusion Policy y publicada en el Hub de HuggingFace mediante la librería LeRobot. El modelo resuelve una tarea de manipulación robótica concreta: recoger una bolsa ("Pick up the pouch") con un robot móvil del tipo `mobileai_robot`, equipado con tres cámaras (una cenital y dos en las muñecas). Diffusion Policy trata el control visuomotor como un proceso generativo de difusión, produciendo trayectorias de acción suaves y multimodales que funcionan bien en tareas con contacto físico rico, donde los métodos de imitación deterministas tienden a promediar acciones y fallar.
+`diffusion_acbag-slidelift-pick` es una política de control visuomotor entrenada con el método Diffusion Policy y publicada en el Hub de Hugging Face mediante la librería LeRobot. El modelo resuelve una tarea de manipulación robótica concreta: recoger una bolsa ("Pick up the pouch") con un robot móvil del tipo `mobileai_robot`, equipado con tres cámaras (una cenital y dos en las muñecas). Diffusion Policy trata el control visuomotor como un proceso generativo de difusión, produciendo trayectorias de acción suaves y multimodales que funcionan bien en tareas con contacto físico rico, donde los métodos de imitación deterministas tienden a promediar acciones y fallar.
 
 El modelo tiene 293.326.840 parámetros (según los pesos en safetensors) y un tamaño de repositorio de 1,2 GB. Consume un vector de estado de 16 dimensiones y tres imágenes RGB de 480x640, y emite un vector de acción de 16 dimensiones, todo ello a 30 FPS. Ha sido entrenado sobre el dataset `mrrl-emcnei/acbag-slidelift-pick`, que contiene 50 episodios y 25.786 fotogramas de demostraciones teleoperadas.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrrl-emcnei/diffusion_acbag-slidelift-pick
+- Modelo en Hugging Face: https://huggingface.co/mrrl-emcnei/diffusion_acbag-slidelift-pick
 - Dataset de entrenamiento: https://huggingface.co/datasets/mrrl-emcnei/acbag-slidelift-pick
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mrrl-emcnei/acbag-slidelift-pick
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137

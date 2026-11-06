@@ -82,7 +82,7 @@ La exactitud de elección se mide contra la mejor opción contrafactual, no cont
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mushin 0.8B v0.1 | 24,4M entrenables; ~0,87B en inferencia | no disponible | Decisión robótica vision-language (System 1) | apache-2.0 | HuggingFace (alokdidde/mushin-0.8b-v0.1) |
+| Mushin 0.8B v0.1 | 24,4M entrenables; ~0,87B en inferencia | no disponible | Decisión robótica vision-language (System 1) | apache-2.0 | Hugging Face (alokdidde/mushin-0.8b-v0.1) |
 | Rule selector (baseline del autor) | no aplica | no aplica | Reglas heurísticas que generaron la mayoría de los datos | no disponible | Interno al pipeline de uzumaki |
 | Frequency baseline | no aplica | no aplica | Estadística de frecuencias sobre las decisiones | no disponible | Baseline del autor (results/baselines.json) |
 | Linear baseline | no disponible | no aplica | Modelo lineal sobre las observaciones estructuradas | no disponible | Baseline del autor (results/baselines.json) |
@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de otros modelos de decisión rob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alokdidde/mushin-0.8b-v0.1
+- Modelo en Hugging Face: https://huggingface.co/alokdidde/mushin-0.8b-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/alokdidde/mushin-sim-decisions-v1
 - Código: https://github.com/alokdidde/mushin

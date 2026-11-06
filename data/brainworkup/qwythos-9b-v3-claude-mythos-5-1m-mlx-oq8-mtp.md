@@ -6,7 +6,7 @@ Qwythos-9B-Claude-Mythos-5-1M-MLX-oQ8-mtp es una versión cuantizada en formato 
 
 El modelo pertenece a la familia arquitectónica Qwen3.5, con atención híbrida y una ventana de contexto de 1.048.576 tokens (1M), lo que lo hace adecuado para tareas de razonamiento de largo alcance, uso de herramientas, agentes conversacionales y dominios especializados como ciberseguridad y biomedicina. Su licencia Apache-2.0 permite uso comercial sin restricciones significativas.
 
-Esta ficha se basa exclusivamente en la información publicada en HuggingFace y en la model card del autor. No se dispone de datos de entrenamiento, benchmarks ni especificaciones detalladas de rendimiento más allá de las declaradas.
+Esta ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card del autor. No se dispone de datos de entrenamiento, benchmarks ni especificaciones detalladas de rendimiento más allá de las declaradas.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se han encontrado modelos comparables de otros desarrolladores con especifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brainworkup/Qwythos-9B-v3-Claude-Mythos-5-1M-MLX-oQ8-mtp
+- Modelo en Hugging Face: https://huggingface.co/brainworkup/Qwythos-9B-v3-Claude-Mythos-5-1M-MLX-oQ8-mtp
 - Modelo base bf16: https://huggingface.co/xunkutech-ai/Qwythos-9B-Claude-Mythos-5-1M-MLX-bf16-mtp
 - Modelo original de Empero AI: https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M
 - Runtime oMLX: https://github.com/jundot/omlx

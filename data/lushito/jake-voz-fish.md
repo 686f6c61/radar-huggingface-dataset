@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Jake-voz-fish es un repositorio de pesos publicado en HuggingFace por el usuario Lushito bajo la licencia Fish Audio Community License. El nombre del repositorio sugiere un modelo de síntesis de voz (TTS) o de clonación de voz, probablemente derivado o compatible con el ecosistema de Fish Audio, si bien la ficha pública no incluye información sobre la arquitectura, el pipeline declarado ni los idiomas soportados. El tamaño del repositorio, 40,4 GB, es coherente con un modelo de audio de gran tamaño o con un conjunto de pesos en varios formatos de precisión.
+Jake-voz-fish es un repositorio de pesos publicado en Hugging Face por el usuario Lushito bajo la licencia Fish Audio Community License. El nombre del repositorio sugiere un modelo de síntesis de voz (TTS) o de clonación de voz, probablemente derivado o compatible con el ecosistema de Fish Audio, si bien la ficha pública no incluye información sobre la arquitectura, el pipeline declarado ni los idiomas soportados. El tamaño del repositorio, 40,4 GB, es coherente con un modelo de audio de gran tamaño o con un conjunto de pesos en varios formatos de precisión.
 
-El repositorio es de acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos. En el momento de la consulta no registra descargas ni likes, y no se ha publicado información sobre benchmarks, datos de entrenamiento ni capacidades concretas. La licencia Fish Audio Community License impone condiciones específicas de uso que deben revisarse antes de cualquier despliegue comercial.
+El repositorio es de acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos. En el momento de la consulta no registra descargas ni likes, y no se ha publicado información sobre benchmarks, datos de entrenamiento ni capacidades concretas. La licencia Fish Audio Community License impone condiciones específicas de uso que deben revisarse antes de cualquier despliegue comercial.
 
 La relevancia de este repositorio es limitada por la ausencia de documentación técnica verificable. Cualquier evaluación rigurosa requiere inspeccionar los archivos del repositorio tras obtener el acceso y consultar los términos exactos de la licencia. A continuación se detalla todo lo que puede afirmarse con rigor a partir de la información disponible.
 
@@ -68,7 +68,7 @@ No disponible. No se dispone de información suficiente sobre este modelo (arqui
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica publicada: no constan arquitectura, parámetros, contexto ni idiomas, lo que impide evaluar su idoneidad para producción.
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace; la disponibilidad puede revocarse o modificarse por el autor.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face; la disponibilidad puede revocarse o modificarse por el autor.
 - Licencia Fish Audio Community License: impone condiciones específicas que deben revisarse con detalle antes de cualquier uso comercial, redistribución o despliegue de las salidas.
 - Riesgo de alucinación y sesgos: no evaluable sin documentación ni pruebas empíricas.
 - Repositorio sin descargas ni likes: no hay evidencia de validación por parte de la comunidad.
@@ -77,6 +77,6 @@ No disponible. No se dispone de información suficiente sobre este modelo (arqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lushito/jake-voz-fish
+- Repositorio en Hugging Face: https://huggingface.co/Lushito/jake-voz-fish
 - Licencia Fish Audio Community License: referencia en la propia ficha del repositorio (no se ha proporcionado URL directa en la información disponible).
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

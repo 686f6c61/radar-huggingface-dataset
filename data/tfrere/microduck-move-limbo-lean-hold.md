@@ -6,7 +6,7 @@
 
 El problema que resuelve es de locomoción y control: conseguir un equilibrio estático controlado en una postura forzada (tipo "limbo") con desplazamiento prácticamente nulo. Su relevancia es acotada y específica del ecosistema Microduck Academy: sirve como pieza reutilizable dentro de una biblioteca de movimientos, como material de referencia para reproducir el proceso de entrenamiento (checkpoints y trayectorias incluidas) y como caso de estudio de los mecanismos de evaluación automática de la propia academia, que combinan un juez por código y un revisor VLM.
 
-El modelo se publica con licencia Apache 2.0, tiene 0 descargas y 0 "likes" en el momento de la consulta, y su repositorio ocupa 0.0 GB según HuggingFace. No se dispone de datos sobre arquitectura de red, número de parámetros, datos de entrenamiento ni idiomas (no aplica, al no ser un modelo de lenguaje). Buena parte de las filas de especificación habituales en una ficha de LLM no son aplicables aquí.
+El modelo se publica con licencia Apache 2.0, tiene 0 descargas y 0 "likes" en el momento de la consulta, y su repositorio ocupa 0.0 GB según Hugging Face. No se dispone de datos sobre arquitectura de red, número de parámetros, datos de entrenamiento ni idiomas (no aplica, al no ser un modelo de lenguaje). Buena parte de las filas de especificación habituales en una ficha de LLM no son aplicables aquí.
 
 ## Especificaciones tecnicas
 
@@ -116,7 +116,7 @@ No se han encontrado en la información proporcionada datos de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-limbo-lean-hold
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-limbo-lean-hold
 - Microduck Academy (Space de entrenamiento): https://huggingface.co/spaces/tfrere/microduck
 - Perfil del autor: https://huggingface.co/tfrere
 - Ficheros citados en la model card: `policy.onnx`, `model.pt`, `rollouts/*.traj`, `checkpoints/r<round>-<iter>.traj`, `manifest.json`, `video.mp4`, `poster.jpg`

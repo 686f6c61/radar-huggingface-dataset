@@ -55,5 +55,5 @@ No disponible. Al carecer de datos sobre arquitectura, tamaño y rendimiento, no
 
 ## Enlaces
 
-- [HuggingFace - gadz777/gadz-instruct-lzg](https://huggingface.co/gadz777/gadz-instruct-lzg)
-- [Perfil del autor en HuggingFace](https://huggingface.co/gadz777) (enlace inferido, no confirmado en la información proporcionada)
+- [Hugging Face - gadz777/gadz-instruct-lzg](https://huggingface.co/gadz777/gadz-instruct-lzg)
+- [Perfil del autor en Hugging Face](https://huggingface.co/gadz777) (enlace inferido, no confirmado en la información proporcionada)

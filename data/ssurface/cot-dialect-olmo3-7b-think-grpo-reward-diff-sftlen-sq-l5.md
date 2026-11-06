@@ -86,7 +86,7 @@ No se dispone de resultados de rendimiento para los modelos comparables en la in
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-reward-diff-sftlen-sq-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-reward-diff-sftlen-sq-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT requerido: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l5
 - Modelo principal del mismo nivel: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l5

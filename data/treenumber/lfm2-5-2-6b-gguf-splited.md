@@ -4,7 +4,7 @@
 
 TreeNumber/LFM2.5-2.6B-GGUF-Splited es una republicación en formato GGUF del modelo LiquidAI/LFM2.5-2.6B, publicada por el usuario TreeNumber. No se trata de un entrenamiento nuevo ni de un ajuste fino: es una conversión de pesos (cuantización) del modelo base de Liquid AI, empaquetada en varios ficheros GGUF (de ahí la coletilla "Splited" del nombre del repositorio). Su interés práctico es permitir la inferencia local del modelo base mediante llama.cpp y otros runners compatibles con GGUF, algo que no es posible directamente con los pesos originales en safetensors si se quiere ejecutar en CPU o en GPUs de gama baja.
 
-El modelo subyacente tiene 2.697.198.592 parámetros (aproximadamente 2,7 mil millones), licencia Apache-2.0 y está declarado para inglés y ruso. El repositorio ocupa 1,7 GB, lo que sitúa la cuantización empleada en torno a 5 bits por parámetro de media, un rango habitual para despliegue en equipos de consumo. El pipeline no está declarado en la ficha de HuggingFace, aunque las etiquetas del repositorio incluyen "conversational".
+El modelo subyacente tiene 2.697.198.592 parámetros (aproximadamente 2,7 mil millones), licencia Apache-2.0 y está declarado para inglés y ruso. El repositorio ocupa 1,7 GB, lo que sitúa la cuantización empleada en torno a 5 bits por parámetro de media, un rango habitual para despliegue en equipos de consumo. El pipeline no está declarado en la ficha de Hugging Face, aunque las etiquetas del repositorio incluyen "conversational".
 
 La relevancia de esta ficha es doble: por un lado, documenta una vía concreta de despliegue de un modelo pequeño de la familia LFM2.5 de Liquid AI; por otro, conviene señalar que se trata de una conversión de terceros, con cero descargas y cero "likes" en el momento de la consulta, y sin model card técnica propia más allá de instrucciones de descarga de la herramienta `llama-split-gguf`. La información técnica detallada del modelo base no está incluida en los datos proporcionados.
 
@@ -93,7 +93,7 @@ No hay datos de benchmarks ni especificaciones del modelo base en la informacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TreeNumber/LFM2.5-2.6B-GGUF-Splited
+- Repositorio en Hugging Face: https://huggingface.co/TreeNumber/LFM2.5-2.6B-GGUF-Splited
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Binarios de llama.cpp b11063 para Ubuntu x64 (incluye `llama-split-gguf`): https://github.com/ggml-org/llama.cpp/releases/download/b11063/llama-b11063-bin-ubuntu-x64.tar.gz
 - Binarios de llama.cpp b11063 para Windows CPU x64: https://github.com/ggml-org/llama.cpp/releases/download/b11063/llama-b11063-bin-win-cpu-x64.zip

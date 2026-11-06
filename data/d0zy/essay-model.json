@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "D0zy/essay-model",
+  "slug": "d0zy-essay-model",
+  "author": "D0zy",
+  "url": "https://huggingface.co/D0zy/essay-model",
+  "created_at": "2026-11-06T07:31:21.000Z",
+  "updated_at": "2026-11-06T07:31:32.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ielts",
+    "essay-scoring",
+    "education",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:chillies/IELTS-writing-task-2-evaluation",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:adapter:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83824402,
+  "storage_human": "84 MB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

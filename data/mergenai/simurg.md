@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros d
 
 | Modelo | Parametros | Contexto | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MergenAI/SIMURG (simurg-pulse) | 345.665 | 256 trigramas (~600 caracteres) | AUROC 0,925 (no verificada) | apache-2.0 | HuggingFace (0 descargas, 0 likes en la consulta) |
+| MergenAI/SIMURG (simurg-pulse) | 345.665 | 256 trigramas (~600 caracteres) | AUROC 0,925 (no verificada) | apache-2.0 | Hugging Face (0 descargas, 0 likes en la consulta) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Punto de referencia interno si esta documentado: el ensemble SIMURG combina este checkpoint con cinco detectores estadisticos, y el modelo se disena para degradar con elegancia a ese nucleo numpy cuando no hay pesos disponibles.
@@ -103,7 +103,7 @@ Punto de referencia interno si esta documentado: el ensemble SIMURG combina este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MergenAI/SIMURG
+- Hugging Face: https://huggingface.co/MergenAI/SIMURG
 - Repositorio del proyecto: https://github.com/doofzoff/SIMURG
 - Paper: https://ssrn.com/abstract=7451269
 - Busqueda web: no se han encontrado resultados relevantes; las entradas devueltas corresponden a enlaces de Outlook (https://outlook.live.com/...) y no guardan relacion con el modelo.

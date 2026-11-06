@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hybrid-baseline-2024 es un repositorio publicado por el usuario kabirgupta en HuggingFace cuyo objetivo declarado es ofrecer una implementacion funcional y transparente de una arquitectura denominada Hybrid orientada a tareas de generacion. No se trata de un modelo entrenado, sino de un andamiaje experimental: el autor indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint evaluado en benchmarks. El repositorio incluye codigo Python ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y el propio peso inicial.
+hybrid-baseline-2024 es un repositorio publicado por el usuario kabirgupta en Hugging Face cuyo objetivo declarado es ofrecer una implementacion funcional y transparente de una arquitectura denominada Hybrid orientada a tareas de generacion. No se trata de un modelo entrenado, sino de un andamiaje experimental: el autor indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint evaluado en benchmarks. El repositorio incluye codigo Python ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y el propio peso inicial.
 
 La configuracion registrada describe una arquitectura hibrida de escala etiquetada como "giant", con atencion de tipo grouped query, fusion mediante descomposicion de Tucker, activacion mish y normalizacion por batchnorm. Los metadatos de safetensors reportan 16.576 parametros totales, una cifra que en la practica corresponde a un modelo de juguete y que resulta incompatible con cualquier acepcion habitual de "giant"; el tamano del repositorio es de 0,0 GB, coherente con un checkpoint de inicializacion minimo.
 
@@ -75,6 +75,6 @@ No disponible. No existen modelos comparables en la misma categoria, porque hybr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kabirgupta/hybrid-baseline-2024
+- Modelo en Hugging Face: https://huggingface.co/kabirgupta/hybrid-baseline-2024
 - Pagina de modelos del autor: https://huggingface.co/kabirgupta/models
 - No se han encontrado en la busqueda web papers, blogs o repositorios adicionales asociados especificamente a este modelo.

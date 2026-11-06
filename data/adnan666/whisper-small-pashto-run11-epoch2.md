@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Adnan666/whisper-small-pashto-run11-epoch2` es un ajuste fino (fine-tune) del modelo de reconocimiento automatico del habla (ASR) Whisper small de OpenAI, publicado en HuggingFace por el usuario Adnan666. Por el nombre del repositorio, el ajuste esta orientado a la transcripcion de audio en pashto (tambien conocido como pashtun o afgano), una lengua indoirania hablada por mas de 40 millones de personas principalmente en Afganistan y Pakistan. El nombre "run11-epoch2" sugiere que se trata del undecimo experimento de una serie de entrenamientos y que el checkpoint publicado corresponde a la segunda epoca.
+El modelo `Adnan666/whisper-small-pashto-run11-epoch2` es un ajuste fino (fine-tune) del modelo de reconocimiento automatico del habla (ASR) Whisper small de OpenAI, publicado en Hugging Face por el usuario Adnan666. Por el nombre del repositorio, el ajuste esta orientado a la transcripcion de audio en pashto (tambien conocido como pashtun o afgano), una lengua indoirania hablada por mas de 40 millones de personas principalmente en Afganistan y Pakistan. El nombre "run11-epoch2" sugiere que se trata del undecimo experimento de una serie de entrenamientos y que el checkpoint publicado corresponde a la segunda epoca.
 
 Con 241.734.912 parametros (aproximadamente 242 millones), el modelo se situa en la categoria "small" de la familia Whisper, lo que lo convierte en una opcion ligera y desplegable en hardware de consumo, a diferencia de las variantes medium (769 M) y large (1550 M). El repositorio ocupa 66,7 GB, un tamano desproporcionado para un modelo de este numero de parametros, lo que apunta a la presencia de multiples checkpoints intermedios, estados del optimizador u otros artefactos de entrenamiento ademas de los pesos finales en safetensors.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 
 | Modelo | Parametros | Contexto / audio | Licencia | Disponibilidad | Rendimiento en pashto |
 |---|---|---|---|---|---|
-| Adnan666/whisper-small-pashto-run11-epoch2 | 241,7 M | Ventanas de audio de 30 s (arquitectura Whisper small) | no disponible | HuggingFace, safetensors | no disponible |
-| openai/whisper-small | 244 M | Ventanas de audio de 30 s | Apache 2.0 | HuggingFace, multiple formatos | no disponible (sin ajuste especifico en pashto) |
-| openai/whisper-medium | 769 M | Ventanas de audio de 30 s | Apache 2.0 | HuggingFace, multiple formatos | no disponible |
-| openai/whisper-large-v3 | 1550 M | Ventanas de audio de 30 s | Apache 2.0 | HuggingFace, multiple formatos | no disponible |
+| Adnan666/whisper-small-pashto-run11-epoch2 | 241,7 M | Ventanas de audio de 30 s (arquitectura Whisper small) | no disponible | Hugging Face, safetensors | no disponible |
+| openai/whisper-small | 244 M | Ventanas de audio de 30 s | Apache 2.0 | Hugging Face, multiple formatos | no disponible (sin ajuste especifico en pashto) |
+| openai/whisper-medium | 769 M | Ventanas de audio de 30 s | Apache 2.0 | Hugging Face, multiple formatos | no disponible |
+| openai/whisper-large-v3 | 1550 M | Ventanas de audio de 30 s | Apache 2.0 | Hugging Face, multiple formatos | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas para la tarea concreta de transcripcion en pashto, por lo que no es posible afirmar cual ofrece mejor WER.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adnan666/whisper-small-pashto-run11-epoch2
+- Hugging Face: https://huggingface.co/Adnan666/whisper-small-pashto-run11-epoch2
 - Repositorio oficial de Whisper (OpenAI, referencia del modelo base): https://github.com/openai/whisper
 - Modelo base openai/whisper-small: https://huggingface.co/openai/whisper-small
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

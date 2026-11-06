@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `genshinssb/hw1-hc3-detector` es un modelo publicado en HuggingFace por el usuario `genshinssb` bajo licencia MIT. Segun los metadatos de la plataforma, el repositorio se creo el 1 de octubre de 2026 y no ha registrado ninguna descarga ni ningun "like" desde entonces, lo que indica que se trata de una publicacion sin difusion ni validacion por parte de la comunidad.
+El repositorio `genshinssb/hw1-hc3-detector` es un modelo publicado en Hugging Face por el usuario `genshinssb` bajo licencia MIT. Segun los metadatos de la plataforma, el repositorio se creo el 1 de octubre de 2026 y no ha registrado ninguna descarga ni ningun "like" desde entonces, lo que indica que se trata de una publicacion sin difusion ni validacion por parte de la comunidad.
 
-La informacion publica disponible es practicamente nula. La model card del autor no contiene mas que la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin datos de entrenamiento. Tampoco se ha definido la etiqueta de pipeline en HuggingFace, por lo que la plataforma no clasifica el modelo en ninguna tarea concreta (text-generation, object-detection, image-classification, etc.).
+La informacion publica disponible es practicamente nula. La model card del autor no contiene mas que la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin datos de entrenamiento. Tampoco se ha definido la etiqueta de pipeline en Hugging Face, por lo que la plataforma no clasifica el modelo en ninguna tarea concreta (text-generation, object-detection, image-classification, etc.).
 
 Por el identificador del repositorio ("detector") podria inferirse que se trata de un modelo orientado a deteccion, pero esta interpretacion no esta confirmada por ninguna fuente documental del autor y no debe tomarse como un hecho. La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo: unicamente se han recuperado paginas genericas de Facebook sin relacion alguna con el proyecto. En consecuencia, esta ficha recoge los pocos datos verificables y marca explicitamente como "no disponible" todo aquello que no puede contrastarse.
 
@@ -23,7 +23,7 @@ Por el identificador del repositorio ("detector") podria inferirse que se trata 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card del autor no incluye ninguna seccion descriptiva mas alla de la declaracion de licencia MIT, y los metadatos de HuggingFace no especifican etiqueta de pipeline, familia de modelo, tipo de tensor ni framework asociado (`pytorch`, `tensorflow`, `safetensors`, `gguf`, etc.).
+No se ha publicado informacion sobre la arquitectura del modelo. La model card del autor no incluye ninguna seccion descriptiva mas alla de la declaracion de licencia MIT, y los metadatos de Hugging Face no especifican etiqueta de pipeline, familia de modelo, tipo de tensor ni framework asociado (`pytorch`, `tensorflow`, `safetensors`, `gguf`, etc.).
 
 Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, la posible aplicacion de tecnicas de ajuste como RLHF, DPO o SFT, y si existieron fases de preentrenamiento o de destilacion. No se ha publicado ningun paper, informe tecnico ni entrada de blog asociada al repositorio. Como consecuencia, la unica innovacion tecnica verificable es la ausencia de documentacion: cualquier afirmacion adicional sobre el diseno del modelo seria especulativa.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el numero de t
 - No hay confirmacion de soporte para agentes ni de razonamiento multi-paso.
 - No hay confirmacion de capacidades multilingues.
 - No hay confirmacion de modos especiales (thinking mode, audio, vision, decodificacion especulativa).
-- La etiqueta de pipeline en HuggingFace no esta definida, por lo que la plataforma tampoco declara una tarea objetivo.
+- La etiqueta de pipeline en Hugging Face no esta definida, por lo que la plataforma tampoco declara una tarea objetivo.
 
 ## Casos de uso
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/genshinssb/hw1-hc3-detector
+- Hugging Face: https://huggingface.co/genshinssb/hw1-hc3-detector
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

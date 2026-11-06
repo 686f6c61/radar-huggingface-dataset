@@ -76,7 +76,7 @@ La versión MLX es funcionalmente equivalente al modelo original en PyTorch, per
 
 ## Enlaces
 
-- [Modelo en HuggingFace (MLX)](https://huggingface.co/FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-mlx)
+- [Modelo en Hugging Face (MLX)](https://huggingface.co/FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-mlx)
 - [Modelo original (PyTorch)](https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h)
 - [Repositorio mlx-whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper)
 - [Página del proyecto Samrómur](https://samromur.is/) (referencia de los datos de entrenamiento)

@@ -80,6 +80,6 @@ La comparativa se limita a parámetros y licencia porque no hay métricas public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zafrem/privyscope-zh-hans
+- Hugging Face: https://huggingface.co/zafrem/privyscope-zh-hans
 - Modelo base: https://huggingface.co/hfl/chinese-macbert-base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

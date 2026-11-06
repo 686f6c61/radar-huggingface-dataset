@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-geom1-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-geom1-s42
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

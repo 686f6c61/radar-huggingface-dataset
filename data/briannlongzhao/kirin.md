@@ -4,7 +4,7 @@
 
 Kirin es un conjunto de modelos de generación de movimiento animal desarrollado por Brian Nlong Zhao, Zhuoyang Pan, James M. Rehg, Jiajun Wu y Shangzhe Wu, presentado en ECCV 2026. El modelo resuelve el problema de reconstruir movimiento 3D de animales cuadrúpedos a partir de vídeos "in-the-wild" (no controlados) y, a partir de esa reconstrucción, aprender a generar movimiento realista condicionado por texto e imagen. Se distribuye en tres variantes: `kirin_text_image` (generación desde texto e imagen), `kirin_text` (generación desde texto) y `animal_unified` (el evaluador empleado en las métricas de AiM3D).
 
-El repositorio de HuggingFace aloja únicamente los pesos preentrenados de los modelos de generación de movimiento, con un tamaño total de 0,3 GB, lo que sugiere un modelo compacto en comparación con los grandes modelos de lenguaje. La relevancia actual reside en que aborda una tarea poco cubierta por los modelos generativos convencionales: la síntesis de movimiento animal 3D, un campo con aplicaciones directas en animación, videojuegos y visión por computador.
+El repositorio de Hugging Face aloja únicamente los pesos preentrenados de los modelos de generación de movimiento, con un tamaño total de 0,3 GB, lo que sugiere un modelo compacto en comparación con los grandes modelos de lenguaje. La relevancia actual reside en que aborda una tarea poco cubierta por los modelos generativos convencionales: la síntesis de movimiento animal 3D, un campo con aplicaciones directas en animación, videojuegos y visión por computador.
 
 No se dispone de información sobre arquitectura concreta, número de parámetros ni longitud de contexto en la documentación proporcionada; la model card se limita a describir la funcionalidad y el dataset de entrenamiento (AiM3D).
 
@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye modelos comparables de g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/briannlongzhao/kirin
+- Hugging Face: https://huggingface.co/briannlongzhao/kirin
 - Paper (arXiv): https://arxiv.org/abs/2609.01823
 - Project page: https://kirin-ani.github.io/
 - Código: https://github.com/briannlongzhao/kirin

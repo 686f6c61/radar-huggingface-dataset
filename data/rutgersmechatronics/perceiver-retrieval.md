@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver for Retrieval es un repositorio de HuggingFace publicado por el usuario rutgersmechatronics que contiene una implementación funcional de la arquitectura Perceiver orientada a tareas de recuperación (retrieval), en una configuración que el propio autor denomina nano. El repositorio incluye `run.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint. Hay que subrayar que no se trata de un modelo entrenado: la model card indica de forma explícita que el checkpoint es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+Perceiver for Retrieval es un repositorio de Hugging Face publicado por el usuario rutgersmechatronics que contiene una implementación funcional de la arquitectura Perceiver orientada a tareas de recuperación (retrieval), en una configuración que el propio autor denomina nano. El repositorio incluye `run.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint. Hay que subrayar que no se trata de un modelo entrenado: la model card indica de forma explícita que el checkpoint es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 Su interés es, por tanto, el de un punto de partida reproducible para investigación: código transparente, configuración versionada y una receta de entrenamiento declarada (SGD con calentamiento lineal) que sirve como valor inicial, no como evidencia de un entrenamiento completado. Los metadatos de safetensors registran un total de 16.576 parámetros, coherente con la escala nano declarada, y el repositorio se publica bajo licencia Apache 2.0.
 
@@ -29,7 +29,7 @@ La información disponible no incluye datos sobre el corpus de entrenamiento, la
 | Tamano del repositorio | 0.0 GB |
 | Estado del checkpoint | Inicializacion sin entrenar (smoke test) |
 | Autor | rutgersmechatronics |
-| Fecha de creacion en HuggingFace | 2026-09-15 |
+| Fecha de creacion en Hugging Face | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
 
@@ -99,6 +99,6 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rutgersmechatronics/perceiver-retrieval
+- Hugging Face: https://huggingface.co/rutgersmechatronics/perceiver-retrieval
 
 No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios ni demos asociados a este modelo.

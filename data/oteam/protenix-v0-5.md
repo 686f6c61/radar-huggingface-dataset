@@ -97,7 +97,7 @@ La comparacion con AlphaFold3 es la referencia natural del paper; Protenix se pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/protenix-v0.5
+- Modelo en Hugging Face: https://huggingface.co/oteam/protenix-v0.5
 - Variante base: https://huggingface.co/oteam/protenix-base
 - Variante v1.0 por defecto: https://huggingface.co/oteam/protenix
 - Variante v1.0 con corte de datos posterior: https://huggingface.co/oteam/protenix-20250630

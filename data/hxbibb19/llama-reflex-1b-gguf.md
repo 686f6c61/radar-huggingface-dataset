@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-Reflex-1B es un modelo derivado de Llama 3.2 1B Instruct, desarrollado por Sadman Habib (usuario de HuggingFace `hxbibb19`) para el asistente iOS sin conexión OffLlama, presentado en el hackathon Meta Global AI Developer. No es un modelo conversacional de propósito general: es un módulo de decisión tipado, un "System 1" que en un único paso forward resuelve preguntas de opción múltiple sobre qué hacer con una petición del usuario (enrutar a una herramienta, recordar un dato, responder offline, pedir confirmación antes de actuar, etc.).
+Llama-Reflex-1B es un modelo derivado de Llama 3.2 1B Instruct, desarrollado por Sadman Habib (usuario de Hugging Face `hxbibb19`) para el asistente iOS sin conexión OffLlama, presentado en el hackathon Meta Global AI Developer. No es un modelo conversacional de propósito general: es un módulo de decisión tipado, un "System 1" que en un único paso forward resuelve preguntas de opción múltiple sobre qué hacer con una petición del usuario (enrutar a una herramienta, recordar un dato, responder offline, pedir confirmación antes de actuar, etc.).
 
 Técnicamente se trata de un fine-tuning con LoRA (r=16, una época, 112 pasos) destilado a partir de 892 etiquetas generadas por el profesor Muse Glimmer 30B (Apache-2.0), fusionado en el modelo base y cuantizado a Q4_K_M para llama.cpp. El resultado es un GGUF de 807.694.080 bytes (unos 0,8 GB) byte a byte idéntico al que se distribuye dentro de la app OffLlama y al del release de GitHub del proyecto.
 
@@ -69,7 +69,7 @@ Con el umbral de distribucion τ = 0,90, Llama-Reflex-1B acepto 44 de las 120 de
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-Reflex-1B | 1,24 B | no disponible | Clasificador de decisiones destilado, salida de un token con umbral | Llama 3.2 Community License | GGUF en HuggingFace y release de GitHub |
+| Llama-Reflex-1B | 1,24 B | no disponible | Clasificador de decisiones destilado, salida de un token con umbral | Llama 3.2 Community License | GGUF en Hugging Face y release de GitHub |
 | Llama 3.2 1B Instruct | 1,24 B | no disponible en la informacion proporcionada | Chat general | Llama 3.2 Community License | Pesos oficiales de Meta |
 | Muse Glimmer 30B (profesor) | 30 B | no disponible | Modelo generador usado para etiquetar | Apache-2.0 | no disponible en la informacion proporcionada |
 
@@ -89,7 +89,7 @@ Frente a Llama 3.2 1B Instruct, la comparativa directa publicada por el autor mu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hxbibb19/Llama-Reflex-1B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/hxbibb19/Llama-Reflex-1B-GGUF
 - Repositorio OffLlama: https://github.com/hxbib/OffLlama
 - Release de artefactos (incluye etiquetas de entrenamiento): https://github.com/hxbib/OffLlama/releases/tag/artifacts-2026-11-01
 - Documento de limites de evaluacion: https://github.com/hxbib/OffLlama/blob/master/docs/EVALUATION_CLAIMS.md

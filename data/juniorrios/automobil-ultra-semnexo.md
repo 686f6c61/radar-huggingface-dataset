@@ -6,7 +6,7 @@ automobil-ultra-semnexo es un ajuste fino del modelo base LiquidAI/LFM3-1.7B, de
 
 El modelo conserva la arquitectura del LFM3-1.7B original (transformer híbrido con convoluciones y atención, según la familia Liquid Foundation Models) y ha sido adaptado mediante dos etapas de LoRA r=32 sobre los módulos MLP, fusionadas posteriormente en los pesos finales. El resultado es un modelo de 1.728.801.536 parámetros con una ventana de contexto no especificada en la información disponible, distribuido en safetensors bf16 y GGUF Q4_0.
 
-La ficha se basa exclusivamente en la model card publicada y en los metadatos de HuggingFace. Los datos de rendimiento proceden de evaluaciones internas del autor con un juez Qwen 27B, no de benchmarks estándar de la comunidad, por lo que deben interpretarse como indicadores del caso de uso concreto y no como comparaciones absolutas con otros modelos.
+La ficha se basa exclusivamente en la model card publicada y en los metadatos de Hugging Face. Los datos de rendimiento proceden de evaluaciones internas del autor con un juez Qwen 27B, no de benchmarks estándar de la comunidad, por lo que deben interpretarse como indicadores del caso de uso concreto y no como comparaciones absolutas con otros modelos.
 
 ## Especificaciones tecnicas
 
@@ -75,9 +75,9 @@ Contexto entregado: ~450 tokens; prompt: ~1.100 tokens. En un Galaxy S24+ el TTF
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| automobil-ultra-semnexo (este modelo) | 1,73 B | no disponible | LFM Open License v1.0 (límite 10 M USD/año) | RAG vertical sobre NR brasileñas, offline | HuggingFace, safetensors + GGUF |
-| LiquidAI/LFM3-1.7B | 1,7 B (aprox.) | no disponible | LFM Open License v1.0 | Modelo base generalista instruct | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5 B (aprox.) | 32 768 tokens (según documentación pública de Qwen) | Apache 2.0 | Modelo generalista multilingüe | HuggingFace, múltiples formatos |
+| automobil-ultra-semnexo (este modelo) | 1,73 B | no disponible | LFM Open License v1.0 (límite 10 M USD/año) | RAG vertical sobre NR brasileñas, offline | Hugging Face, safetensors + GGUF |
+| LiquidAI/LFM3-1.7B | 1,7 B (aprox.) | no disponible | LFM Open License v1.0 | Modelo base generalista instruct | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5 B (aprox.) | 32 768 tokens (según documentación pública de Qwen) | Apache 2.0 | Modelo generalista multilingüe | Hugging Face, múltiples formatos |
 
 La comparación con Qwen2.5-1.5B-Instruct se ofrece como referencia de tamaño y licencia; no se dispone de evaluaciones cruzadas entre ambos modelos en la información proporcionada, por lo que no es posible comparar rendimiento de forma directa. El valor diferencial de este modelo no es su rendimiento generalista, sino el ajuste específico al corpus de NR y su pipeline de recuperación asociado.
 
@@ -95,7 +95,7 @@ La comparación con Qwen2.5-1.5B-Instruct se ofrece como referencia de tamaño y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juniorrios/automobil-ultra-semnexo
+- Modelo en Hugging Face: https://huggingface.co/juniorrios/automobil-ultra-semnexo
 - Dataset de assets de recuperación: https://huggingface.co/datasets/juniorrios/cemig-nr-retrieval-assets
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio de llama.cpp (referencia de la versión mínima): https://github.com/ggerganov/llama.cpp

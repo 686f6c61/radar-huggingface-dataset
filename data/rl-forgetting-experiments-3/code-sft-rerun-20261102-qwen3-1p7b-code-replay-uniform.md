@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3-1p7b-code-replay-uniform | ~1,7B | 4096 (entrenamiento) | other (base Apache 2.0) | HuggingFace, 0 descargas | Artefacto de investigación con trazabilidad experimental |
+| code-sft-rerun-20261102-qwen3-1p7b-code-replay-uniform | ~1,7B | 4096 (entrenamiento) | other (base Apache 2.0) | Hugging Face, 0 descargas | Artefacto de investigación con trazabilidad experimental |
 | Qwen3-1.7B-Base | ~1,7B | no disponible en esta ficha | Apache 2.0 | Público | Modelo base del que deriva este checkpoint |
 | Qwen2.5-3B | ~3B | no disponible en esta ficha | Qwen Research License | Público | Usado como otro brazo del mismo estudio; mayor tamaño |
 | Llama-3.2-3B-Instruct | ~3B | no disponible en esta ficha | Llama 3.2 Community License | Público | Tercer brazo del estudio; licencia con política de uso aceptable |
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-replay-uniform
+- Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-replay-uniform
 - Repositorio de artefactos del estudio (referenciado en la model card): `request-provenance.json`, `delivery_manifest.json`, `evaluations/mbppplus_n160_t0.6/delivery_manifest.json`, `runs/checkpoints/step_N/model`, `runs/final` (rutas internas del repositorio; no se proporcionan URL externas adicionales en la información disponible).

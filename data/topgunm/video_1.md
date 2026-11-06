@@ -27,7 +27,7 @@ No se dispone de información verificada sobre las capacidades del modelo. Dado 
 
 ## Casos de uso
 
-Al no existir información pública sobre el modelo, no es posible proponer casos de uso concretos y realistas. Cualquier aplicación práctica sería especulativa. Se recomienda consultar directamente el repositorio de HuggingFace o contactar con el autor para obtener documentación adicional.
+Al no existir información pública sobre el modelo, no es posible proponer casos de uso concretos y realistas. Cualquier aplicación práctica sería especulativa. Se recomienda consultar directamente el repositorio de Hugging Face o contactar con el autor para obtener documentación adicional.
 
 ## Benchmarks y rendimiento
 
@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables de la misma categoría con info
 
 ## Enlaces
 
-- Repositorio HuggingFace: [TopgunM/Video_1](https://huggingface.co/TopgunM/Video_1)
+- Repositorio Hugging Face: [TopgunM/Video_1](https://huggingface.co/TopgunM/Video_1)

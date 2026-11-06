@@ -78,7 +78,7 @@ La comparativa se limita a las características declaradas, ya que no hay datos 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-text-only)
+- [Modelo en Hugging Face](https://huggingface.co/craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-text-only)
 - [Modelo base](https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized)
 - [Herramienta model-lab](https://git.craquehouse.cc/craquehouse/model-lab)
 - [oMLX](https://github.com/jundot/omlx)

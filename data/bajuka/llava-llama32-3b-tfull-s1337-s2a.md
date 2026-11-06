@@ -101,7 +101,7 @@ El rendimiento comparado no está disponible para el modelo de esta ficha.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-Tfull-s1337-s2a
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-Tfull-s1337-s2a
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio LLaVA-NeXT (necesario para cargar los pesos): https://github.com/LLaVA-VL/LLaVA-NeXT
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la informacion disponible.

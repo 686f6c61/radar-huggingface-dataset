@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcywinski/gen-science-07-steer-aft-qwen3-14b` | Adaptadores rango 1 sobre 14B | No disponible | Adaptadores de investigacion | MIT | HuggingFace |
-| Qwen/Qwen3-14B | 14B | No disponible en la informacion | Modelo base generativo | No disponible en la informacion | HuggingFace |
-| `bcywinski/gen-science-05-colour-probe-v3` | Sonda de color | No aplica | Sonda de interpretabilidad | No disponible en la informacion | HuggingFace |
+| `bcywinski/gen-science-07-steer-aft-qwen3-14b` | Adaptadores rango 1 sobre 14B | No disponible | Adaptadores de investigacion | MIT | Hugging Face |
+| Qwen/Qwen3-14B | 14B | No disponible en la informacion | Modelo base generativo | No disponible en la informacion | Hugging Face |
+| `bcywinski/gen-science-05-colour-probe-v3` | Sonda de color | No aplica | Sonda de interpretabilidad | No disponible en la informacion | Hugging Face |
 
 No se dispone de modelos directamente comparables en la misma categoria (adaptadores de steering sobre una unica capa) dentro de la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de modelos directamente comparables en la misma categoria (adaptad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcywinski/gen-science-07-steer-aft-qwen3-14b
+- Hugging Face: https://huggingface.co/bcywinski/gen-science-07-steer-aft-qwen3-14b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Dataset de filas AFT: https://huggingface.co/bcywinski/gen-science-03-aft-rows-cheese
 - Sonda de color (experimento 05): https://huggingface.co/bcywinski/gen-science-05-colour-probe-v3

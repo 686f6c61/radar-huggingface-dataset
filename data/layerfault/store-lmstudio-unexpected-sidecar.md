@@ -64,7 +64,7 @@ No disponible. No existe una categoría de modelos equivalentes, al ser un artef
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LayerFault/store-lmstudio-unexpected-sidecar
+- Hugging Face: https://huggingface.co/LayerFault/store-lmstudio-unexpected-sidecar
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault
 - LM Studio (página oficial de modelos): https://model.lmstudio.ai/home
 - Documentación de LM Studio para servidor local: https://lmstudio.ai/docs/developer/core/server

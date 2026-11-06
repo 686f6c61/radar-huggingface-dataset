@@ -89,11 +89,11 @@ Variantes adicionales del mismo run: checkpoints `_2k` y `_4k`. Las perdidas de 
 - Licencia no especificada: no se puede confirmar la legalidad del uso comercial ni las condiciones de redistribucion.
 - Riesgo de alucinacion y de desviacion del objetivo propio de los modelos generativos de acciones, agravado por el sobreajuste y por el reducido tamano del conjunto de entrenamiento (35 episodios).
 - No hay datos publicados sobre sesgos, comportamiento multilingue ni robustez ante cambios de iluminacion, camara o posicion inicial del bloque.
-- Fecha de creacion inusual en la ficha de HuggingFace (2026-10-06), lo que sugiere que la marca temporal debe tratarse con cautela.
+- Fecha de creacion inusual en la ficha de Hugging Face (2026-10-06), lo que sugiere que la marca temporal debe tratarse con cautela.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_3k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_3k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de origen: https://huggingface.co/datasets/Ameyapores/pick_block_eef_delta
 - Checkpoint hermano de acciones delta: https://huggingface.co/arkojit1/pi05_pick_block_eef_delta

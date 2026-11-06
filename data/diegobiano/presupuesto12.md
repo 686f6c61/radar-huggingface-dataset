@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Diegobiano/Presupuesto12 es un repositorio publicado en HuggingFace por el usuario Diegobiano. La informacion disponible se limita a los metadatos del propio hub: identificador, autor, licencia apache-2.0, etiqueta de region (us), cero descargas y cero "likes" en el momento de la consulta. No se ha publicado documentacion tecnica, ficha descriptiva con contenido sustantivo ni artefactos de modelo declarados. La model card unicamente contiene el bloque de frontmatter con la licencia, sin texto adicional.
+Diegobiano/Presupuesto12 es un repositorio publicado en Hugging Face por el usuario Diegobiano. La informacion disponible se limita a los metadatos del propio hub: identificador, autor, licencia apache-2.0, etiqueta de region (us), cero descargas y cero "likes" en el momento de la consulta. No se ha publicado documentacion tecnica, ficha descriptiva con contenido sustantivo ni artefactos de modelo declarados. La model card unicamente contiene el bloque de frontmatter con la licencia, sin texto adicional.
 
 No es posible determinar la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia, ya que ninguno de estos campos aparece informado en el repositorio ni en los resultados de busqueda web. El unico indicio sobre la finalidad del proyecto es el propio nombre del repositorio ("Presupuesto12"), que sugiere un posible uso relacionado con presupuestos o estimaciones economicas, pero se trata de una inferencia nominal sin ninguna confirmacion tecnica.
 
@@ -83,6 +83,6 @@ No disponible. Al no poder determinarse la categoria, el tamano ni la tarea del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Diegobiano/Presupuesto12
+- Repositorio en Hugging Face: https://huggingface.co/Diegobiano/Presupuesto12
 - Resultados de busqueda web: sin resultados relevantes; las unicas coincidencias obtenidas corresponden a RaiPlay (https://www.raiplay.it/) y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponible.

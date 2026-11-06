@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phuong-tk-nguyen/vipubmed-deberta-base-en-vimedner-ner-vi
+- Modelo en Hugging Face: https://huggingface.co/phuong-tk-nguyen/vipubmed-deberta-base-en-vimedner-ner-vi
 - Repositorio GitHub del modelo base: https://github.com/manhtt-079/vipubmed-deberta
-- Modelo base en HuggingFace: https://huggingface.co/manhtt-079/vipubmed-deberta-base
+- Modelo base en Hugging Face: https://huggingface.co/manhtt-079/vipubmed-deberta-base
 - Paper de ViPubmedDeBERTa (PACLIC 2023): https://aclanthology.org/2023.paclic-1.83.pdf

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Razonamiento latente | Herramientas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HybridAgent-14B-Agentic | 14.765.593.600 | no disponible | Si (HybridLink, lectura como pseudo-texto) | Python y busqueda web | MIT | HuggingFace + repo GitHub |
-| HybridAgent-8B-Agentic | no disponible en la informacion proporcionada (variante 8B) | no disponible | Si (misma familia) | Python y busqueda web | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3-14B-Base | no disponible en la informacion proporcionada | no disponible | No | No especifico | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| HybridAgent-14B-Agentic | 14.765.593.600 | no disponible | Si (HybridLink, lectura como pseudo-texto) | Python y busqueda web | MIT | Hugging Face + repo GitHub |
+| HybridAgent-8B-Agentic | no disponible en la informacion proporcionada (variante 8B) | no disponible | Si (misma familia) | Python y busqueda web | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3-14B-Base | no disponible en la informacion proporcionada | no disponible | No | No especifico | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 
 La comparacion con modelos agenticos de otros fabricantes (por ejemplo, familias con tool calling nativo) no se puede completar con datos verificables a partir de la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La comparacion con modelos agenticos de otros fabricantes (por ejemplo, familias
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/togethercomputer/HybridAgent-14B-Agentic
+- Modelo en Hugging Face: https://huggingface.co/togethercomputer/HybridAgent-14B-Agentic
 - Variante 8B: https://huggingface.co/togethercomputer/HybridAgent-8B-Agentic
 - Paper "Hybrid Reasoning Agents": https://arxiv.org/pdf/2610.18861
 - Abstract del paper: https://arxiv.org/abs/2610.18861

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrOCR_Manicule_2026_Latin_Medieval es un modelo de reconocimiento de texto manuscrito (HTR) especializado en documentos historicos medievales, desarrollado por LaMOP y publicado en HuggingFace. Se trata de un ajuste fino (finetune) del modelo `microsoft/trocr-base-handwritten`, orientado a la transcripcion automatica de lineas manuscritas procedentes de actas, cartularios y manuscritos tardomedievales. Su proposito es cubrir un nicho poco atendido por los modelos genericos de OCR: la escritura manuscrita historica en latin y, segun la propia model card, tambien frances antiguo.
+TrOCR_Manicule_2026_Latin_Medieval es un modelo de reconocimiento de texto manuscrito (HTR) especializado en documentos historicos medievales, desarrollado por LaMOP y publicado en Hugging Face. Se trata de un ajuste fino (finetune) del modelo `microsoft/trocr-base-handwritten`, orientado a la transcripcion automatica de lineas manuscritas procedentes de actas, cartularios y manuscritos tardomedievales. Su proposito es cubrir un nicho poco atendido por los modelos genericos de OCR: la escritura manuscrita historica en latin y, segun la propia model card, tambien frances antiguo.
 
 Tecnicamente es un modelo vision-encoder-decoder de tipo TrOCR, con un codificador visual ViT que trabaja a 384 x 384 pixeles y un decodificador de tipo RoBERTa. Cuenta con 333.921.792 parametros (aproximadamente 334 M), lo que lo situa en la gama "base" de la familia TrOCR y permite ejecutarlo en hardware modesto. El repositorio ocupa 1,3 GB y los pesos se distribuyen en formato safetensors.
 
@@ -38,7 +38,7 @@ El ajuste fino se realizo a partir de `microsoft/trocr-base-handwritten` sobre d
 - Reconocimiento de escritura manuscrita (HTR), no solo texto impreso.
 - Generacion de texto condicionada a imagen (pipeline image-to-text) con decodificacion autorregresiva.
 - Trabajo a nivel de linea: requiere que la imagen de entrada contenga una unica linea de texto ya segmentada.
-- Cobertura linguistica de latin y, segun la model card, frances antiguo; los metadatos de HuggingFace solo declaran latin (`la`).
+- Cobertura linguistica de latin y, segun la model card, frances antiguo; los metadatos de Hugging Face solo declaran latin (`la`).
 - Inferencia en CPU o GPU mediante PyTorch y Transformers, con control del numero de tokens generados (`max_new_tokens`).
 - No se documenta soporte de tool calling, function calling, modo de razonamiento explicito, vision general (mas alla del texto en imagen), audio ni capacidades de agente.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Idioma y dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LaMOP/TrOCR_Manicule_2026_Latin_Medieval | 333,9 M | Linea de texto a 384 x 384 | Latin (y frances antiguo segun la model card), manuscritos medievales | MIT | HuggingFace, safetensors |
-| microsoft/trocr-base-handwritten | No disponible en la informacion proporcionada (mismo orden de magnitud, modelo base de este ajuste) | Linea de texto a 384 x 384 | Ingles, escritura manuscrita contemporanea | MIT | HuggingFace, safetensors |
-| microsoft/trocr-large-handwritten | No disponible en la informacion proporcionada | Linea de texto a 384 x 384 | Ingles, escritura manuscrita contemporanea | MIT | HuggingFace, safetensors |
+| LaMOP/TrOCR_Manicule_2026_Latin_Medieval | 333,9 M | Linea de texto a 384 x 384 | Latin (y frances antiguo segun la model card), manuscritos medievales | MIT | Hugging Face, safetensors |
+| microsoft/trocr-base-handwritten | No disponible en la informacion proporcionada (mismo orden de magnitud, modelo base de este ajuste) | Linea de texto a 384 x 384 | Ingles, escritura manuscrita contemporanea | MIT | Hugging Face, safetensors |
+| microsoft/trocr-large-handwritten | No disponible en la informacion proporcionada | Linea de texto a 384 x 384 | Ingles, escritura manuscrita contemporanea | MIT | Hugging Face, safetensors |
 | Sistemas HTR para documentos historicos (por ejemplo, modelos publicos de Transkribus o Kraken) | No disponible | Variable, habitualmente a nivel de linea | Multiples idiomas historicos | Mayoritariamente propietaria o especifica por proyecto | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaMOP/TrOCR_Manicule_2026_Latin_Medieval
+- Modelo en Hugging Face: https://huggingface.co/LaMOP/TrOCR_Manicule_2026_Latin_Medieval
 - Modelo base: https://huggingface.co/microsoft/trocr-base-handwritten
 - Dataset declarado: https://huggingface.co/datasets/magistermilitum/Tridis
 - Dataset declarado: https://huggingface.co/datasets/ENC-PSL/MEDUSA_Synthetic_Lines

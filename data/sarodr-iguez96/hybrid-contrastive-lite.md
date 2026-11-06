@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hybrid-contrastive-lite` es un repositorio experimental publicado por el usuario sarodr-iguez96 en HuggingFace que implementa una arquitectura denominada "Hybrid" orientada a aprendizaje contrastivo en una configuracion de escala "nano". El autor lo presenta explicitamente como una implementacion de referencia con codigo transparente y pruebas de humo (smoke tests) reproducibles, sin reclamar ningun resultado de benchmark. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas, no un modelo entrenado.
+`hybrid-contrastive-lite` es un repositorio experimental publicado por el usuario sarodr-iguez96 en Hugging Face que implementa una arquitectura denominada "Hybrid" orientada a aprendizaje contrastivo en una configuracion de escala "nano". El autor lo presenta explicitamente como una implementacion de referencia con codigo transparente y pruebas de humo (smoke tests) reproducibles, sin reclamar ningun resultado de benchmark. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas, no un modelo entrenado.
 
 El modelo declara 16.576 parametros totales segun los metadatos de safetensors, lo que lo situa en un orden de magnitud de juguete, muy por debajo de cualquier modelo de lenguaje utilizable en produccion. La arquitectura combina atencion lineal, fusion tipo Tucker, activacion GELU y normalizacion por grupos (GroupNorm), lo que sugiere un diseno hibrido multimodal o multi-rama mas que un transformer decoder convencional.
 
@@ -74,5 +74,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sarodr-iguez96/hybrid-contrastive-lite
+- Hugging Face: https://huggingface.co/sarodr-iguez96/hybrid-contrastive-lite
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`krishna2574/sentiment-analysis-bert` es un checkpoint alojado en HuggingFace por el usuario krishna2574, etiquetado con los tags `safetensors`, `bert` y `region:us`. El repositorio ocupa 0,4 GB y las descargas registradas son 0, con 1 like, lo que indica que se trata de un modelo practicamente sin traccion ni validacion por parte de la comunidad. La fecha de creacion y ultima actualizacion que declara la plataforma es el 22 de septiembre de 2026.
+`krishna2574/sentiment-analysis-bert` es un checkpoint alojado en Hugging Face por el usuario krishna2574, etiquetado con los tags `safetensors`, `bert` y `region:us`. El repositorio ocupa 0,4 GB y las descargas registradas son 0, con 1 like, lo que indica que se trata de un modelo practicamente sin traccion ni validacion por parte de la comunidad. La fecha de creacion y ultima actualizacion que declara la plataforma es el 22 de septiembre de 2026.
 
 El unico dato tecnico verificable es el recuento de parametros en formato safetensors: 109.483.778. Esa cifra coincide exactamente con una arquitectura BERT-base (vocabulario de 30.522 entradas, 12 capas, hidden size 768, intermediate size 3.072 y 512 posiciones maximas), que suma 109.482.240 parametros, mas una cabeza de clasificacion de 768 x 2 + 2 = 1.538 parametros. El resultado implica, por aritmetica, un cabezal de clasificacion binaria (num_labels = 2), aunque no se ha podido confirmar con el `config.json`, que no estaba disponible en la informacion proporcionada.
 
@@ -75,7 +75,7 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| krishna2574/sentiment-analysis-bert | 109.483.778 (safetensors) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 1 like |
+| krishna2574/sentiment-analysis-bert | 109.483.778 (safetensors) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 1 like |
 | distilbert-base-uncased-finetuned-sst-2-english | no disponible en la informacion | no disponible | no disponible | no disponible | alternativa de referencia en analisis de sentimiento binario en ingles |
 | cardiffnlp/twitter-roberta-base-sentiment-latest | no disponible en la informacion | no disponible | no disponible | no disponible | alternativa de referencia en sentimiento sobre redes sociales |
 | beto-sentiment-analysis (familia BETO en castellano) | no disponible en la informacion | no disponible | no disponible | no disponible | alternativa de referencia si se necesita castellano |
@@ -83,7 +83,7 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay documentacion sobre datos de entrenamiento, hiperparametros, metricas ni sesgos evaluados.
-- Licencia no declarada: en HuggingFace, la falta de licencia implica por defecto que no se conceden derechos de uso; el uso comercial no esta autorizado salvo permiso explicito del autor. Es un riesgo legal directo para produccion.
+- Licencia no declarada: en Hugging Face, la falta de licencia implica por defecto que no se conceden derechos de uso; el uso comercial no esta autorizado salvo permiso explicito del autor. Es un riesgo legal directo para produccion.
 - Riesgo de alucinacion y de clasificaciones espurias: sin benchmarks ni validacion conocida, no hay garantia de que las etiquetas de salida tengan significado real. Existe la posibilidad de que el checkpoint este sin entrenar, parcialmente entrenado o mal exportado, dado su origen anonimo, sus 0 descargas y sus 1 like.
 - Tarea no confirmada: el `pipeline_tag` esta vacio y no se ha verificado el mapeo de etiquetas (que indice corresponde a que clase).
 - Idioma: si se confirma el vocabulario de 30.522 entradas, el modelo no seria adecuado para castellano ni para textos multilingues.
@@ -94,6 +94,6 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krishna2574/sentiment-analysis-bert
+- Repositorio en Hugging Face: https://huggingface.co/krishna2574/sentiment-analysis-bert
 - Referencia general de la arquitectura BERT (no procedente de la busqueda web, se incluye como contexto tecnico): https://arxiv.org/abs/1810.04805
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los unicos resultados devueltos fueron paginas de ayuda de Gmail, sin relacion alguna con este repositorio.

@@ -61,6 +61,6 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-e1f7061dd264
+- Repositorio Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-e1f7061dd264
 - Repositorios similares (mismo patrón): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-c89b0f393467 y https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655
 - Repositorio GitHub relacionado (sin confirmar): https://github.com/22f3001797/tds-ga8

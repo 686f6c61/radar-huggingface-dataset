@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jackypjp92/classification-notes` es un repositorio de HuggingFace publicado por el usuario `jackypjp92` que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada «Mae» orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor lo define como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con entrenamiento completado ni evaluado.
+`jackypjp92/classification-notes` es un repositorio de Hugging Face publicado por el usuario `jackypjp92` que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada «Mae» orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor lo define como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con entrenamiento completado ni evaluado.
 
 El modelo es extremadamente pequeño: 24.832 parámetros en total, según los datos reales del archivo safetensors, con un tamaño de repositorio de 0,0 GB. La configuración declarada indica atención de tipo lineal, fusión tipo Tucker, activación swish y normalización por batchnorm, lo que sugiere una arquitectura orientada a fusión de representaciones (posiblemente multimodal, aunque la model card no lo especifica), más que un transformer generativo convencional.
 
@@ -78,11 +78,11 @@ No se dispone de modelos directamente comparables en la misma categoría y escal
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de interpretar erróneamente las salidas de un modelo sin entrenar como predicciones válidas.
 - No se declaran idiomas soportados ni limitaciones de contexto, porque no se especifica ninguna ventana de contexto.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificación con atribución y aviso de licencia. El autor recomienda revisar por separado los términos de los datos de origen si se emplean datasets externos.
-- La implementación es personalizada, por lo que las APIs automáticas de carga de HuggingFace requieren un adaptador explícito.
+- La implementación es personalizada, por lo que las APIs automáticas de carga de Hugging Face requieren un adaptador explícito.
 - No existe soporte documentado, mantenimiento ni actualizaciones posteriores a la fecha de creación (15 de septiembre de 2026).
 - Cualquier resultado futuro obtenido tras entrenar el modelo deberá documentarse de forma separada de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jackypjp92/classification-notes
+- Repositorio en Hugging Face: https://huggingface.co/jackypjp92/classification-notes
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados en la búsqueda web realizada. Los resultados devueltos por el buscador no guardan relación con el modelo y se han descartado por no ser fuentes válidas.

@@ -72,7 +72,7 @@ La comparacion directa con otras cuantizaciones de GLM-5.3 es limitada porque lo
 
 ## Limitaciones y advertencias
 
-- Requiere un runtime personalizado que no se incluye en el repositorio de HuggingFace; el proyecto es una reproduccion para homelab existente, no un instalador para maquinas limpias.
+- Requiere un runtime personalizado que no se incluye en el repositorio de Hugging Face; el proyecto es una reproduccion para homelab existente, no un instalador para maquinas limpias.
 - El checkpoint esta empaquetado en mas de 19 000 archivos dentro de `checkpoint/part-NNNN/` y necesita un proceso de restauracion con verificacion SHA256 antes de poder utilizarse.
 - La cuantizacion introduce una perdida medida: KLD de 0.0486 nats y acuerdo top-1 del 92.68%, lo que implica que no es una cuantizacion lossless.
 - Los benchmarks de la model card son limitados a ventanas de calibracion y no son comparables con evaluaciones estandarizadas de inteligencia.
@@ -82,6 +82,6 @@ La comparacion directa con otras cuantizaciones de GLM-5.3 es limitada porque lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mj-kang/GLM-5.3-EXL3-2.75bpw-TP3
+- Repositorio Hugging Face: https://huggingface.co/mj-kang/GLM-5.3-EXL3-2.75bpw-TP3
 - Repositorio de reproduccion: https://github.com/mjkang-estrella/glm53-full-exl3-tp3
 - Informacion general de GLM-5.3: https://openlm.ai/glm-5.3/

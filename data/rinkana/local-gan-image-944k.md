@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RinKana/local-GAN-image-944k` es una red generativa antagónica (GAN) de pequeñas dimensiones, con 944 000 parámetros, diseñada para generar imágenes incondicionales de 64x64 píxeles. Fue desarrollado por el usuario RinKana y publicado en HuggingFace con licencia Apache 2.0. El autor lo describe como un "GAN normal con backpropagation local" entrenado sobre un conjunto de datos mixto compuesto por 850 imágenes del personaje Ganyu (de Genshin Impact) y 7000 imágenes de rostros de anime, durante 120 épocas en total (dos fases de 60 épocas cada una).
+El modelo `RinKana/local-GAN-image-944k` es una red generativa antagónica (GAN) de pequeñas dimensiones, con 944 000 parámetros, diseñada para generar imágenes incondicionales de 64x64 píxeles. Fue desarrollado por el usuario RinKana y publicado en Hugging Face con licencia Apache 2.0. El autor lo describe como un "GAN normal con backpropagation local" entrenado sobre un conjunto de datos mixto compuesto por 850 imágenes del personaje Ganyu (de Genshin Impact) y 7000 imágenes de rostros de anime, durante 120 épocas en total (dos fases de 60 épocas cada una).
 
 El modelo tiene un interés principalmente educativo y experimental. Su tamaño reducido y su arquitectura sencilla lo convierten en un ejemplo accesible para quienes quieran estudiar el funcionamiento interno de las GANs o experimentar con técnicas de entrenamiento local. Sin embargo, no está pensado para uso en producción: la resolución de salida es muy baja, el conjunto de datos es limitado y específico, y no se ha publicado documentación técnica detallada ni resultados de evaluación. El repositorio muestra un tamaño de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo o que estos son extremadamente pequeños.
 
@@ -69,4 +69,4 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (GA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RinKana/local-GAN-image-944k
+- Modelo en Hugging Face: https://huggingface.co/RinKana/local-GAN-image-944k

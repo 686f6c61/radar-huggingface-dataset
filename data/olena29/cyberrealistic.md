@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CyberRealistic es un modelo de generacion de imagenes texto-a-imagen de tipo fotorrealista, construido sobre la arquitectura Stable Diffusion 1.5 (SD 1.5). El modelo original fue desarrollado por el usuario Cyberdelia y publicado en Civitai; la ficha analizada aqui corresponde a una reproduccion alojada en HuggingFace por el usuario Olena29 bajo el identificador `Olena29/CyberRealistic`, en su version v8.0 y con pipeline `text-to-image` en la libreria `diffusers`.
+CyberRealistic es un modelo de generacion de imagenes texto-a-imagen de tipo fotorrealista, construido sobre la arquitectura Stable Diffusion 1.5 (SD 1.5). El modelo original fue desarrollado por el usuario Cyberdelia y publicado en Civitai; la ficha analizada aqui corresponde a una reproduccion alojada en Hugging Face por el usuario Olena29 bajo el identificador `Olena29/CyberRealistic`, en su version v8.0 y con pipeline `text-to-image` en la libreria `diffusers`.
 
 El problema que resuelve es la generacion de retratos y escenas de apariencia fotografica con un esfuerzo minimo de ingenieria de prompts: segun la model card, esta ajustado para producir resultados realistas sin necesidad de cadenas de prompt extensas ni configuraciones complejas. Incluye un VAE integrado (baked-in) para mejorar la calidad de imagen, y esta orientado a retratos humanos, fotografia de moda y escenas de tipo cinematografico.
 
-Es relevante ahora por dos motivos practicos: SD 1.5 sigue siendo uno de los puntos dulces de coste computacional para inferencia local (se ejecuta en GPUs de consumo con pocos GB de VRAM) y los fine-tunes fotorrealistas de esta base continúan siendo utiles cuando no se necesita la resolucion nativa de 1024 px de SDXL. Como contrapartida, la ficha no aporta resultados de benchmarks, no declara idiomas soportados y el repositorio no registra descargas ni interacciones, por lo que se trata de un artefacto sin validacion independiente dentro de HuggingFace.
+Es relevante ahora por dos motivos practicos: SD 1.5 sigue siendo uno de los puntos dulces de coste computacional para inferencia local (se ejecuta en GPUs de consumo con pocos GB de VRAM) y los fine-tunes fotorrealistas de esta base continúan siendo utiles cuando no se necesita la resolucion nativa de 1024 px de SDXL. Como contrapartida, la ficha no aporta resultados de benchmarks, no declara idiomas soportados y el repositorio no registra descargas ni interacciones, por lo que se trata de un artefacto sin validacion independiente dentro de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Es relevante ahora por dos motivos practicos: SD 1.5 sigue siendo uno de los pun
 | Formato de pesos | safetensors, compatible con `diffusers` |
 | Version | v8.0 |
 | Tamano de fichero declarado | aproximadamente 6,3 GB |
-| Tamano del repositorio en HuggingFace | 97,1 GB |
+| Tamano del repositorio en Hugging Face | 97,1 GB |
 | Resolucion nativa | 512x512 (ampliable con Hires.fix) |
 | VAE | integrado (baked-in) |
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 
 | Modelo | Parametros | Resolucion nativa | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CyberRealistic v8.0 (este) | no declarado; base SD 1.5 (~860 M en U-Net) | 512x512 | 77 tokens (CLIP) | CreativeML Open RAIL++-M | HuggingFace (`Olena29/CyberRealistic`) y Civitai |
-| Stable Diffusion 1.5 (base) | ~860 M en U-Net | 512x512 | 77 tokens (CLIP) | CreativeML Open RAIL-M | Ampliamente disponible en HuggingFace y `diffusers` |
-| Stable Diffusion XL | ~3,5 B en el U-Net (2,6 B base + 0,8 B refiner en la variante original) | 1024x1024 | 77 tokens por codificador, con doble codificador de texto | CreativeML Open RAIL++-M | HuggingFace, `diffusers` |
-| Fine-tunes fotorrealistas de SD 1.5 (familia generica) | mismo orden que SD 1.5 | 512x512 | 77 tokens (CLIP) | habitualmente CreativeML Open RAIL++-M | civitai y HuggingFace |
+| CyberRealistic v8.0 (este) | no declarado; base SD 1.5 (~860 M en U-Net) | 512x512 | 77 tokens (CLIP) | CreativeML Open RAIL++-M | Hugging Face (`Olena29/CyberRealistic`) y Civitai |
+| Stable Diffusion 1.5 (base) | ~860 M en U-Net | 512x512 | 77 tokens (CLIP) | CreativeML Open RAIL-M | Ampliamente disponible en Hugging Face y `diffusers` |
+| Stable Diffusion XL | ~3,5 B en el U-Net (2,6 B base + 0,8 B refiner en la variante original) | 1024x1024 | 77 tokens por codificador, con doble codificador de texto | CreativeML Open RAIL++-M | Hugging Face, `diffusers` |
+| Fine-tunes fotorrealistas de SD 1.5 (familia generica) | mismo orden que SD 1.5 | 512x512 | 77 tokens (CLIP) | habitualmente CreativeML Open RAIL++-M | civitai y Hugging Face |
 
 No se dispone de comparaciones cuantitativas de rendimiento entre estos modelos en la informacion proporcionada, por lo que la tabla anterior solo contrasta caracteristicas declaradas, no calidad de salida medida.
 
@@ -88,12 +88,12 @@ No se dispone de comparaciones cuantitativas de rendimiento entre estos modelos 
 - Idiomas: no se declara soporte multilingue. Los prompts de ejemplo estan en ingles y el codificador CLIP de SD 1.5 rinde mejor en ese idioma.
 - Restricciones de licencia: CreativeML Open RAIL++-M permite uso comercial y no comercial, pero incluye restricciones de uso en su anexo (prohibicion de usos daninos, desinformacion, suplantacion y determinados contenidos), ademas de requerir atribucion. Es obligatorio revisar el texto completo de la licencia antes de un despliegue en produccion.
 - Ausencia de validacion: el repositorio presenta 0 descargas y 0 "likes", sin benchmarks ni evaluaciones independientes. Se trata de una reproduccion de un modelo publicado originalmente en Civitai por otro autor.
-- Inconsistencia de datos: la model card declara un fichero de aproximadamente 6,3 GB, mientras que HuggingFace informa de un tamano de repositorio de 97,1 GB. Conviene verificar que ficheros se estan descargando antes de integrarlos en un pipeline.
+- Inconsistencia de datos: la model card declara un fichero de aproximadamente 6,3 GB, mientras que Hugging Face informa de un tamano de repositorio de 97,1 GB. Conviene verificar que ficheros se estan descargando antes de integrarlos en un pipeline.
 - Fechas de creacion y actualizacion del repositorio (2026) no coinciden con la cronologia habitual de publicacion de la version 8.0 en Civitai, por lo que puede tratarse de una resubida posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Olena29/CyberRealistic
+- Modelo en Hugging Face: https://huggingface.co/Olena29/CyberRealistic
 - Pagina del modelo original en Civitai: https://civitai.com/models/15003/cyberrealistic
 - Perfil del autor original en Civitai: https://civitai.com/user/Cyberdelia
 - Texto de la licencia CreativeML Open RAIL++-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

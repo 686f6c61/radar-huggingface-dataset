@@ -65,6 +65,6 @@ No se ha proporcionado información sobre modelos comparables. Dado que se trata
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [dementor-research/self_sft_gsm8k_phi-4_as_phi-4_seed42](https://huggingface.co/dementor-research/self_sft_gsm8k_phi-4_as_phi-4_seed42)
+- Repositorio en Hugging Face: [dementor-research/self_sft_gsm8k_phi-4_as_phi-4_seed42](https://huggingface.co/dementor-research/self_sft_gsm8k_phi-4_as_phi-4_seed42)
 - Modelo base: [microsoft/phi-4](https://huggingface.co/microsoft/phi-4) (enlace no incluido en la información original, pero es el modelo base declarado)
 - No se han encontrado papers, blogs o demos asociados a este adaptador en la información proporcionada.

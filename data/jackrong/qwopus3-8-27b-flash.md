@@ -23,7 +23,7 @@ El entrenamiento se realizó en dos etapas: una primera de ajuste supervisado so
 
 ## Arquitectura y entrenamiento
 
-La arquitectura interna del modelo no se ha detallado en la información disponible. Se trata de un ajuste fino del modelo Qwen3.8-27B, por lo que hereda la arquitectura del base, que no se especifica en la documentación. El pipeline declarado en HuggingFace es image-text-to-text, lo que sugiere una capacidad multimodal, aunque no se ofrecen detalles sobre el procesamiento de imágenes.
+La arquitectura interna del modelo no se ha detallado en la información disponible. Se trata de un ajuste fino del modelo Qwen3.8-27B, por lo que hereda la arquitectura del base, que no se especifica en la documentación. El pipeline declarado en Hugging Face es image-text-to-text, lo que sugiere una capacidad multimodal, aunque no se ofrecen detalles sobre el procesamiento de imágenes.
 
 El entrenamiento se dividió en dos etapas. En la primera, se partió de aproximadamente 1,5 millones de ejemplos de un modelo profesor, de los cuales se retuvo el 10% de mayor calidad tras un proceso de filtrado que evaluaba la relevancia semántica, la dificultad, la calidad de la cadena de razonamiento y la consistencia de la respuesta. La evaluación se realizó con modelos como Qwen3.7-Max, GLM-5, GPT-OSS-120B-High y Gemma4-27B. En la segunda etapa se aplicó un refuerzo de razonamiento mediante NeMo-RL con GSPO, utilizando muestreo repetido y comparación de recompensas. El autor también indica que el conjunto de datos incluye trayectorias de agente y datos reconstruidos de modelos cerrados como Claude y GPT. La innovación técnica destacada es el uso de predicción multi-token (MTP) y decodificación especulativa, que según el autor permite una decodificación un 12,8% más rápida y una tasa de aceptación MTP del 80,7%.
 
@@ -80,7 +80,7 @@ No se han identificado otros modelos comparables de la misma categoría en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
+- Hugging Face: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Repositorio GGUF: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Unsloth: https://unsloth.ai/

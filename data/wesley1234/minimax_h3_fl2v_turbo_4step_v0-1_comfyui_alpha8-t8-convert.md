@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Pasos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minimax_h3_fl2v_turbo_4step_v0.1 (Wesley1234) | LoRA para ComfyUI | 4 | no disponible | no disponible | HuggingFace |
-| minimax_h3_fl2v_lightx2v_turbo_4step_v0.1 (Kijai) | LoRA para ComfyUI | 4 | no disponible | no disponible | HuggingFace |
-| MiniMax H3 (original) | Modelo base omni-modal | ~20 | no disponible | no disponible | GitHub / HuggingFace |
+| minimax_h3_fl2v_turbo_4step_v0.1 (Wesley1234) | LoRA para ComfyUI | 4 | no disponible | no disponible | Hugging Face |
+| minimax_h3_fl2v_lightx2v_turbo_4step_v0.1 (Kijai) | LoRA para ComfyUI | 4 | no disponible | no disponible | Hugging Face |
+| MiniMax H3 (original) | Modelo base omni-modal | ~20 | no disponible | no disponible | GitHub / Hugging Face |
 
 La principal diferencia entre las versiones de Wesley1234 y Kijai radica en la implementacion interna (gestion de tensores alpha y factores de escala). El modelo base MiniMax H3 es el mismo para ambos. No hay datos de rendimiento comparativo publicados.
 
@@ -75,7 +75,7 @@ La principal diferencia entre las versiones de Wesley1234 y Kijai radica en la i
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Wesley1234/minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert
+- Repositorio de Hugging Face: https://huggingface.co/Wesley1234/minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert
 - Repositorio original de Lightx2v: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Repositorio de Kijai: https://huggingface.co/Kijai/MiniMax-H3_comfy/
 - GitHub de ModelTC (destilacion): https://github.com/ModelTC/Minimax-H3-Turbo

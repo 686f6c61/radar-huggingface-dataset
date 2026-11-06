@@ -24,7 +24,7 @@ Su relevancia actual es limitada y muy especifica: se trata de un experimento de
 | Tamano del repositorio | 0,3 GB |
 | Modelo base | goldfish-models/rus_cyrl_100mb |
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
-| Fecha de creacion | 2026-09-29 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-29 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -50,7 +50,7 @@ El entrenamiento se realizo con el framework TRL (version 0.23.0), sobre Transfo
 - Reproduccion de experimentos academicos: al incluir el enlace al run de Weights & Biases y fijar versiones de librerias (TRL, Transformers, PyTorch), permite replicar el entrenamiento en un entorno controlado.
 - Generacion de texto en ruso en cirilico a baja escala: para tareas de continuacion de texto o generacion breve donde no se requiera alta calidad ni cobertura amplia de conocimiento.
 - Prototipado rapido en local: con menos de 1 GB de VRAM en bf16, se puede ejecutar en cualquier portatil o en CPU para pruebas de integracion de pipelines de Transformers.
-- Docencia y formacion: util para ilustrar el flujo completo de ajuste fino con TRL sobre un modelo monolingue pequeno, desde el dataset empaquetado hasta la publicacion en HuggingFace.
+- Docencia y formacion: util para ilustrar el flujo completo de ajuste fino con TRL sobre un modelo monolingue pequeno, desde el dataset empaquetado hasta la publicacion en Hugging Face.
 - Evaluacion de tecnicas de empaquetado de datos (`packed`): el nombre sugiere un pipeline de packing de secuencias, por lo que puede emplearse para estudiar su impacto en modelos de 100 MB de corpus.
 - Despliegue experimental con TGI: los tags indican compatibilidad con Text Generation Inference, lo que permite levantar un endpoint de pruebas con recursos minimos.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124,8 M | no disponible | ruso (cirilico, segun nomenclatura) | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/rus_cyrl_100mb (base) | no disponible (escala ~100 M por nomenclatura) | no disponible | ruso (cirilico) | no disponible | HuggingFace |
-| francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | no disponible | no disponible | ruso (cirilico, segun nomenclatura) | no disponible | HuggingFace |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124,8 M | no disponible | ruso (cirilico, segun nomenclatura) | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/rus_cyrl_100mb (base) | no disponible (escala ~100 M por nomenclatura) | no disponible | ruso (cirilico) | no disponible | Hugging Face |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | no disponible | no disponible | ruso (cirilico, segun nomenclatura) | no disponible | Hugging Face |
 | GPT-2 small | 124 M | 1024 tokens | ingles | licencia abierta de OpenAI | Ampliamente disponible |
 
 La comparacion con GPT-2 small se incluye por coincidencia de escala de parametros, pero no comparte idioma ni objetivo de entrenamiento. No se dispone de datos de rendimiento que permitan comparar calidad entre estas alternativas.
@@ -92,7 +92,7 @@ La comparacion con GPT-2 small se incluye por coincidencia de escala de parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rgdd849s
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -102,7 +102,7 @@ La diferencia principal frente a los SAE genéricos es la distribución de entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucasfrag/fact-checking-abstention-saes
+- Modelo en Hugging Face: https://huggingface.co/lucasfrag/fact-checking-abstention-saes
 - Dataset complementario (afirmaciones ordenadas y activaciones de la posición de decisión): https://huggingface.co/datasets/lucasfrag/fact-checking-abstention-saes-data
 - Gao, L., et al. (2024), *Scaling and Evaluating Sparse Autoencoders*: https://arxiv.org/abs/2406.04093
 - Schuster, T., et al. (2021), *Get Your Vitamin C! Robust Fact Verification with Contrastive Evidence* (NAACL): https://arxiv.org/abs/2103.08541

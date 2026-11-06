@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `xiaoshiai/tests` es un espacio de HuggingFace creado por el usuario `xiaoshiai` con licencia Apache-2.0. No contiene una model card sustancial, únicamente declara la licencia. No se ha publicado información sobre arquitectura, tamaño, contexto, capacidades o rendimiento. A fecha de creación (2026-08-20), no registra descargas ni valoraciones, lo que sugiere que se trata de un repositorio de prueba o un espacio vacío sin un modelo real publicado.
+El repositorio `xiaoshiai/tests` es un espacio de Hugging Face creado por el usuario `xiaoshiai` con licencia Apache-2.0. No contiene una model card sustancial, únicamente declara la licencia. No se ha publicado información sobre arquitectura, tamaño, contexto, capacidades o rendimiento. A fecha de creación (2026-08-20), no registra descargas ni valoraciones, lo que sugiere que se trata de un repositorio de prueba o un espacio vacío sin un modelo real publicado.
 
 Dado que no existe información técnica verificable, esta ficha documenta la ausencia de datos y advierte de que cualquier uso del repositorio debe realizarse con cautela, verificando previamente si contiene archivos de pesos o documentación adicional.
 
@@ -59,4 +59,4 @@ No disponible. Al no existir información sobre arquitectura, tamaño o tarea, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xiaoshiai/tests
+- Repositorio en Hugging Face: https://huggingface.co/xiaoshiai/tests

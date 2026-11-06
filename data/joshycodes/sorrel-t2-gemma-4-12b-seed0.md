@@ -91,7 +91,7 @@ No disponible. La información proporcionada no incluye modelos comparables, y e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/sorrel-T2-gemma-4-12b-seed0
-- Licencia incluida en el repositorio: `LICENSE` (ruta relativa dentro del repositorio de HuggingFace; no se proporciona URL directa)
+- Hugging Face: https://huggingface.co/joshycodes/sorrel-T2-gemma-4-12b-seed0
+- Licencia incluida en el repositorio: `LICENSE` (ruta relativa dentro del repositorio de Hugging Face; no se proporciona URL directa)
 - Repositorio de investigación asociado (evaluaciones por generación, documentos de entrenamiento, plan de análisis preregistrado): mencionado en la model card, sin URL en la información proporcionada
 - Resultados de la búsqueda web: no relevantes. Las URLs devueltas corresponden a la marca de café Alfredo Espresso (alfredo-espresso.com, allegro.pl, darbovensklep.pl) y no guardan relación con el modelo.

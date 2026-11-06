@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B tool merged es un modelo de generacion de texto obtenido mediante la fusion completa (merge) de un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-9B. Lo publica el usuario manishkumar2101114 en HuggingFace y esta orientado a casos de uso conversacionales con soporte de tool calling, con mencion explicita a agentes de voz y al idioma hindi entre sus etiquetas. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+Qwen3.5-9B tool merged es un modelo de generacion de texto obtenido mediante la fusion completa (merge) de un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-9B. Lo publica el usuario manishkumar2101114 en Hugging Face y esta orientado a casos de uso conversacionales con soporte de tool calling, con mencion explicita a agentes de voz y al idioma hindi entre sus etiquetas. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El modelo cuenta con 9.409.813.744 parametros (aproximadamente 9,4 mil millones) almacenados en safetensors en precision BF16, lo que da un tamano de repositorio de 18,8 GB. Se distribuye bajo licencia Apache 2.0 y declara soporte para ingles (en) e hindi (hi). La model card publicada es extremadamente breve: solo indica el modelo base, los hiperparametros del adaptador LoRA y el metodo de fusion, sin detallar arquitectura, datos de entrenamiento, longitud de contexto ni resultados de evaluacion.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-tool-merged | 9,4 B | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base) | 9,4 B | no disponible | no disponible | no disponible en la informacion consultada | HuggingFace |
-| qwen3.5-9b-tool-adapter (LoRA) | adaptador sobre 9,4 B | no disponible | no disponible | no disponible | HuggingFace |
+| qwen3.5-9b-tool-merged | 9,4 B | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base) | 9,4 B | no disponible | no disponible | no disponible en la informacion consultada | Hugging Face |
+| qwen3.5-9b-tool-adapter (LoRA) | adaptador sobre 9,4 B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de este modelo ni de benchmarks comparativos con alternativas de la misma categoria. La model card no aporta cifras que permitan establecer una comparacion cuantitativa, por lo que la evaluacion frente a otros modelos de rango 8-9 B queda pendiente de una prueba propia.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de este modelo ni de benchmarks comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged
+- Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Adaptador LoRA de origen: qwen3.5-9b-tool-adapter (enlace exacto no disponible en la informacion proporcionada)
 - Paper, blog o repositorio adicional: no disponible

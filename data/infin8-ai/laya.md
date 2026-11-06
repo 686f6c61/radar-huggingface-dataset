@@ -17,7 +17,7 @@ La familia incluye dos checkpoints adicionales alojados como subcarpetas: uno mu
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 512 tokens en el checkpoint raiz; 1024 tokens (ampliable hasta 8k) en el checkpoint multilingue y en el de decisiones tipadas |
 | Tipos de cuantizacion | no disponible (pesos en bf16; existe exportacion a ONNX, sin cuantizaciones publicadas tipo GGUF/AWQ/GPTQ) |
-| Idiomas soportados | mas de 100 idiomas segun la model card (la comparativa grafica cita 51 idiomas); metadatos de HuggingFace: no disponible |
+| Idiomas soportados | mas de 100 idiomas segun la model card (la comparativa grafica cita 51 idiomas); metadatos de Hugging Face: no disponible |
 | Licencia | apache-2.0 (uso comercial permitido) |
 | Formato de pesos | safetensors (libreria transformers); exportacion ONNX disponible |
 | Tamano del repositorio | 2,4 GB (incluye los tres checkpoints) |
@@ -104,18 +104,18 @@ No se dispone de especificaciones tecnicas detalladas de TypeSafe Jev en la info
 - Riesgo de alucinacion: por construccion no inventa texto, pero puede asignar probabilidades excesivamente altas a etiquetas incorrectas cuando el estado de entrada es ambiguo o cae fuera del dominio de entrenamiento.
 - El modelo no esta validado por la comunidad: el repositorio presenta 0 descargas y 0 likes en el momento de la consulta, y no hay evaluaciones independientes publicadas.
 - Existe una discrepancia entre el identificador del repositorio consultado (`Infin8-AI/laya`) y los identificadores citados en la propia model card (`convaiinnovations/laya` y subcarpetas), lo que conviene verificar antes de integrar los checkpoints en produccion.
-- Los metadatos de HuggingFace no declaran idiomas soportados, mientras que la model card afirma mas de 100 y la grafica comparativa menciona 51; la cifra exacta debe comprobarse con una evaluacion propia.
+- Los metadatos de Hugging Face no declaran idiomas soportados, mientras que la model card afirma mas de 100 y la grafica comparativa menciona 51; la cifra exacta debe comprobarse con una evaluacion propia.
 - Aunque la licencia apache-2.0 permite uso comercial sin restricciones, el autor no ofrece garantias ni soporte, y no se documentan condiciones adicionales de atribucion mas alla de las habituales de Apache 2.0.
 - La fecha de creacion del repositorio (2026-09-23) y la version de la libreria (0.3.11) indican que se trata de un proyecto reciente y en evolucion; conviene fijar versiones en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infin8-AI/laya
+- Modelo en Hugging Face: https://huggingface.co/Infin8-AI/laya
 - Checkpoint multilingue: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Sitio oficial del proyecto: https://laya.convaiinnovations.com/
 - Articulo de presentacion: https://brainfunctioncollapse.com/laya
 - Repositorio de codigo y assets: https://github.com/NandhaKishorM/laya
 - Paquete TypeScript: https://github.com/NandhaKishorM/laya/tree/main/laya-ts
-- Perfil del autor en HuggingFace: https://huggingface.co/Infin8-AI/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Infin8-AI/models
 - Sitio corporativo: https://aiinfin8.com/

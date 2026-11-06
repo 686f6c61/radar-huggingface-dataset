@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer-multitask es un repositorio experimental publicado por el usuario Rymalhotra07 en HuggingFace que contiene una implementación funcional de una arquitectura tipo Mixer orientada a tareas multitarea. El autor lo presenta explícitamente como un punto de partida para pruebas de humo (smoke tests) y código reproducible, no como un modelo entrenado con resultados de benchmarks. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos entrenados para producción.
+Mixer-multitask es un repositorio experimental publicado por el usuario Rymalhotra07 en Hugging Face que contiene una implementación funcional de una arquitectura tipo Mixer orientada a tareas multitarea. El autor lo presenta explícitamente como un punto de partida para pruebas de humo (smoke tests) y código reproducible, no como un modelo entrenado con resultados de benchmarks. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos entrenados para producción.
 
 La relevancia de este repositorio es limitada desde el punto de vista práctico: con 16.576 parámetros totales según el archivo safetensors y un tamaño de repositorio de 0.0 GB, se trata de un artefacto de juguete o de demostración arquitectónica. No hay información sobre idiomas soportados, pipeline de inferencia, ni datos de entrenamiento. La licencia MIT permite reutilización, pero el valor del modelo en sí es el de un esqueleto de código para experimentación, no el de un modelo listo para desplegar.
 
@@ -73,4 +73,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: Rymalhotra07/mixer-multitask](https://huggingface.co/Rymalhotra07/mixer-multitask)
+- [Hugging Face: Rymalhotra07/mixer-multitask](https://huggingface.co/Rymalhotra07/mixer-multitask)

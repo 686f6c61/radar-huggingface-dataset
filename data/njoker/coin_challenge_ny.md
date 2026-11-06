@@ -80,7 +80,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Njoker/CoIN_Challenge_NY
+- Hugging Face: https://huggingface.co/Njoker/CoIN_Challenge_NY
 - Repositorio de codigo y reporte tecnico: https://github.com/Yangning-k/ECCV2026_COIN_Challenge_NY
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Pagina del desafio CoIN 2026: https://e-zorzi.github.io/coin_challenge.github.io/

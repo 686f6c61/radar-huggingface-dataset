@@ -77,7 +77,7 @@ La principal diferencia entre el modelo original y el abliterated es la eliminac
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Justbackup/Llama-3.3-70B-Instruct-abliterated-GGUF](https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-abliterated-GGUF)
+- Repositorio Hugging Face: [Justbackup/Llama-3.3-70B-Instruct-abliterated-GGUF](https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-abliterated-GGUF)
 - Modelo base (abliterated): [huihui-ai/Llama-3.3-70B-Instruct-abliterated](https://huggingface.co/huihui-ai/Llama-3.3-70B-Instruct-abliterated)
 - Modelo original de Meta: [meta-llama/Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
 - Página en Featherless: [huihui-ai/Llama-3.3-70B-Instruct-abliterated](https://featherless.ai/models/huihui-ai/Llama-3.3-70B-Instruct-abliterated)

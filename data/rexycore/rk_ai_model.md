@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rexycore/rk_ai_model es un repositorio publicado en HuggingFace por el usuario Rexycore bajo licencia MIT. En el momento de la consulta, la model card pública no contiene más contenido que la declaración de licencia, por lo que no hay información disponible sobre arquitectura, tamaño, datos de entrenamiento, tokenizador o capacidades del modelo. El repositorio no declara pipeline de inferencia, idiomas soportados, ni formatos de pesos.
+Rexycore/rk_ai_model es un repositorio publicado en Hugging Face por el usuario Rexycore bajo licencia MIT. En el momento de la consulta, la model card pública no contiene más contenido que la declaración de licencia, por lo que no hay información disponible sobre arquitectura, tamaño, datos de entrenamiento, tokenizador o capacidades del modelo. El repositorio no declara pipeline de inferencia, idiomas soportados, ni formatos de pesos.
 
 El modelo acumula 0 descargas y 0 "likes", y fue creado y actualizado en la misma marca temporal (2026-09-18T20:09:58.000Z). Esto apunta a un repositorio recién creado, vacío o de carácter experimental, cuya evaluación técnica rigurosa no es posible con la información pública existente.
 
@@ -61,7 +61,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rexycore/rk_ai_model | no disponible | no disponible | MIT | Repositorio en HuggingFace |
+| Rexycore/rk_ai_model | no disponible | no disponible | MIT | Repositorio en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rexycore/rk_ai_model
+- Hugging Face: https://huggingface.co/Rexycore/rk_ai_model
 - Paper: no disponible
 - Blog o informe técnico: no disponible
 - Repositorio de código: no disponible

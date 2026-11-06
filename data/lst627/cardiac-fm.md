@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CARDIAC-FM es un modelo fundacional multimodal desarrollado por el equipo de Fumin Li y colaboradores (perfil HuggingFace `lst627`) para la predicción de riesgo cardiovascular a partir de electrocardiogramas de 12 derivaciones (ECG) y resonancia magnética cardíaca (MRI). El modelo aprende representaciones conjuntas de ambas modalidades mediante aprendizaje contrastivo (InfoNCE), combinando un encoder de MRI basado en el masked autoencoder CineMA y un encoder de ECG basado en ECG-FM. Está diseñado para extraer características (feature extraction) y ser fine-tuneado en tareas downstream como la predicción de fibrilación auricular (AF) e insuficiencia cardíaca (HF) a 5 años.
+CARDIAC-FM es un modelo fundacional multimodal desarrollado por el equipo de Fumin Li y colaboradores (perfil Hugging Face `lst627`) para la predicción de riesgo cardiovascular a partir de electrocardiogramas de 12 derivaciones (ECG) y resonancia magnética cardíaca (MRI). El modelo aprende representaciones conjuntas de ambas modalidades mediante aprendizaje contrastivo (InfoNCE), combinando un encoder de MRI basado en el masked autoencoder CineMA y un encoder de ECG basado en ECG-FM. Está diseñado para extraer características (feature extraction) y ser fine-tuneado en tareas downstream como la predicción de fibrilación auricular (AF) e insuficiencia cardíaca (HF) a 5 años.
 
 El modelo se entrenó en la cohorte UK Biobank (57.609 sujetos) y se validó externamente en las cohortes CHS y MESA. Su relevancia radica en que integra dos modalidades clínicas complementarias para mejorar la discriminación del riesgo cardiovascular frente a modelos unimodales, y en que su arquitectura permite combinar las representaciones aprendidas con scores de riesgo clínicos establecidos (CHARGE-AF, PREVENT-HF) mediante fusión tardía. El checkpoint principal (`stage1_cinema_m75.pth`) contiene los encoders alineados y las cabezas de proyección, listos para fine-tuning o extracción de características.
 
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos multimodales comparables (ECG+MRI) e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lst627/CARDIAC-FM
+- Hugging Face: https://huggingface.co/lst627/CARDIAC-FM
 - Paper (medRxiv): https://www.medrxiv.org/content/10.64898/2026.03.16.26348526v1
 - Código (GitHub): https://github.com/lst627/CARDIAC-FM
 - Repositorio ECG-FM (backbone requerido): https://github.com/bowang-lab/ECG-FM

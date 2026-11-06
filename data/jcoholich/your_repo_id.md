@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - jcoholich/your_repo_id](https://huggingface.co/jcoholich/your_repo_id)
+- [Hugging Face - jcoholich/your_repo_id](https://huggingface.co/jcoholich/your_repo_id)
 - [Blog de Physical Intelligence sobre π₀.₅](https://www.physicalintelligence.company/blog/pi05)
 - [Repositorio LeRobot en GitHub](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

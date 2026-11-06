@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Anirayani/transformer-health-backend` es un repositorio publicado en HuggingFace por el usuario Anirayani el 3 de noviembre de 2026. A pesar de su nombre, que sugiere un componente de backend para un sistema sanitario basado en transformers, la model card asociada unicamente declara la licencia MIT y no incluye ninguna descripcion funcional, arquitectonica ni de uso.
+`Anirayani/transformer-health-backend` es un repositorio publicado en Hugging Face por el usuario Anirayani el 3 de noviembre de 2026. A pesar de su nombre, que sugiere un componente de backend para un sistema sanitario basado en transformers, la model card asociada unicamente declara la licencia MIT y no incluye ninguna descripcion funcional, arquitectonica ni de uso.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades del modelo. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado en HuggingFace, lo que impide clasificarlo como modelo de texto, vision u otra modalidad.
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades del modelo. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado en Hugging Face, lo que impide clasificarlo como modelo de texto, vision u otra modalidad.
 
 Dado que la unica informacion verificable es la licencia MIT y la fecha de publicacion, esta ficha documenta lo que se puede confirmar y marca explicitamente como "no disponible" todo aquello que la model card no especifica. Cualquier evaluacion tecnica del modelo requeriria inspeccionar directamente los archivos del repositorio, que no se han proporcionado.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 - Evaluacion interna de repositorios recientes: dado que el repositorio se publico en noviembre de 2026 y no registra descargas, puede inspeccionarse como posible componente experimental de un backend sanitario, revisando los archivos del repositorio antes de cualquier uso.
 - Prototipado de integraciones sanitarias: si el repositorio contiene codigo de servidor o pesos, podria emplearse como base para experimentar con un backend de inferencia en un entorno controlado, siempre tras auditar su contenido.
 - Verificacion de licencia para uso comercial: la licencia MIT permite uso comercial y modificacion, por lo que el repositorio puede reutilizarse en productos propietarios siempre que se conserve el aviso de copyright, previa comprobacion de que los archivos realmente contienen lo que su nombre sugiere.
-- Estudio de convenciones de publicacion en HuggingFace: el repositorio sirve como ejemplo de publicacion con model card minima, util para analizar practicas de documentacion en el ecosistema.
+- Estudio de convenciones de publicacion en Hugging Face: el repositorio sirve como ejemplo de publicacion con model card minima, util para analizar practicas de documentacion en el ecosistema.
 - Integracion en pipelines de CI/CD como dependencia de prueba: si el repositorio expone una API o un modulo Python, podria incorporarse como dependencia en pruebas automatizadas de un backend sanitario, sujeto a revision del codigo.
 - Base para documentacion interna: el repositorio puede citarse en documentacion tecnica de un equipo que evalue alternativas de backend, indicando explicitamente la ausencia de especificaciones publicadas.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anirayani/transformer-health-backend
+- Repositorio en Hugging Face: https://huggingface.co/Anirayani/transformer-health-backend
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

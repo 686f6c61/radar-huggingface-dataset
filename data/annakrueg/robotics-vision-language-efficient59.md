@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/annakrueg/robotics-vision-language-efficient59
+- Repositorio en Hugging Face: https://huggingface.co/annakrueg/robotics-vision-language-efficient59
 - Encuesta sobre Vision-Language-Action Models para robótica: https://vla-survey.github.io/
 - Revisión de avances en LLM y visión para robótica (Springer): https://link.springer.com/article/10.1007/s42979-025-04119-6
 - Revisión de modelos VLA en manipulación robótica (arXiv): https://arxiv.org/abs/2507.10672

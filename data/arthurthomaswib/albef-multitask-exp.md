@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arthurthomaswib/albef-multitask-exp` es un repositorio de HuggingFace publicado por el usuario arthurthomaswib que contiene una implementación propia de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea en una configuración denominada "nano". El propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El recuento real de parámetros registrado en los safetensors es de 24.832, un orden de magnitud propio de una maqueta de código más que de un modelo utilizable.
+`arthurthomaswib/albef-multitask-exp` es un repositorio de Hugging Face publicado por el usuario arthurthomaswib que contiene una implementación propia de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea en una configuración denominada "nano". El propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El recuento real de parámetros registrado en los safetensors es de 24.832, un orden de magnitud propio de una maqueta de código más que de un modelo utilizable.
 
 El interés del repositorio es de tipo ingenieril y reproducible: incluye `eval.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización. La model card declara explícitamente que no se reclama ninguna puntuación de benchmark y que el repositorio se centra en código transparente y pruebas repetibles.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arthurthomaswib/albef-multitask-exp | 24.832 | no disponible | Sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| arthurthomaswib/albef-multitask-exp | 24.832 | no disponible | Sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce Research) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de vision-lenguaje de escala similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,6 +85,6 @@ No se dispone de datos verificados en las fuentes proporcionadas para establecer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthurthomaswib/albef-multitask-exp
+- Modelo en Hugging Face: https://huggingface.co/arthurthomaswib/albef-multitask-exp
 - Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo: los enlaces recuperados corresponden a foros y noticias de un banco polaco (spolecznosc.ing.pl, bankier.pl) sin relacion alguna con el repositorio.
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios auxiliares ni demos asociados al modelo.

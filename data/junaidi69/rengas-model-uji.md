@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Junaidi69/rengas-model-uji es un modelo de lenguaje publicado en HuggingFace por el usuario Junaidi69, distribuido exclusivamente en formato GGUF y etiquetado como conversacional ("conversational") y compatible con endpoints. El recuento de parametros declarado en safetensors es de 1.235.814.432 (aproximadamente 1,24 mil millones), y el repositorio ocupa 2,5 GB. Se trata, por tanto, de un modelo de escala pequena, orientado a inferencia local en hardware de consumo.
+Junaidi69/rengas-model-uji es un modelo de lenguaje publicado en Hugging Face por el usuario Junaidi69, distribuido exclusivamente en formato GGUF y etiquetado como conversacional ("conversational") y compatible con endpoints. El recuento de parametros declarado en safetensors es de 1.235.814.432 (aproximadamente 1,24 mil millones), y el repositorio ocupa 2,5 GB. Se trata, por tanto, de un modelo de escala pequena, orientado a inferencia local en hardware de consumo.
 
 La ficha publica no aporta informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas soportados ni pipeline. El repositorio acumula 8 descargas y 0 "likes" en el momento de la consulta, y las fechas de creacion y ultima actualizacion (22 de septiembre de 2026) distan apenas 33 segundos entre si, lo que sugiere una subida automatizada o de prueba. El nombre "rengas" y el sufijo "uji" (test en indonesio) apuntan a un experimento personal mas que a un modelo con documentacion de produccion.
 
@@ -25,7 +25,7 @@ Su relevancia practica es, hoy, muy limitada para terceros: sin licencia declara
 
 No se ha publicado informacion sobre la arquitectura, el proceso de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF, DPO o SFT. La unica senal estructural es el recuento de parametros (1.235.814.432), que es casi identico al de Llama 3.2 1B (1.235.814.400). La diferencia de 32 parametros es compatible con una capa de embedding o de proyeccion ligeramente distinta, pero no constituye prueba alguna de que se trate de un fine-tune de ese modelo. Cualquier afirmacion al respecto seria especulacion.
 
-El hecho de que solo se distribuya GGUF y no pesos en safetensors, junto con la etiqueta "endpoints_compatible", indica que el autor prevé su uso mediante runtimes de inferencia cuantizada (llama.cpp y derivados) o a traves de HuggingFace Inference Endpoints con ese formato. No hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, MoE, SSM ni arquitecturas hibridas).
+El hecho de que solo se distribuya GGUF y no pesos en safetensors, junto con la etiqueta "endpoints_compatible", indica que el autor prevé su uso mediante runtimes de inferencia cuantizada (llama.cpp y derivados) o a traves de Hugging Face Inference Endpoints con ese formato. No hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, MoE, SSM ni arquitecturas hibridas).
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ No es posible comparar el rendimiento de este modelo porque no existen evaluacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Junaidi69/rengas-model-uji | 1,24 B | no disponible | no disponible | GGUF en HuggingFace (8 descargas, 0 likes) |
-| Llama 3.2 1B (referencia) | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Pesos originales y GGUF de terceros en HuggingFace |
-| Qwen2.5 1.5B (referencia) | 1,54 B | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | Pesos originales y GGUF de terceros en HuggingFace |
-| TinyLlama 1.1B (referencia) | 1,1 B | 2 048 tokens | Apache 2.0 | Pesos originales y GGUF de terceros en HuggingFace |
+| Junaidi69/rengas-model-uji | 1,24 B | no disponible | no disponible | GGUF en Hugging Face (8 descargas, 0 likes) |
+| Llama 3.2 1B (referencia) | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Pesos originales y GGUF de terceros en Hugging Face |
+| Qwen2.5 1.5B (referencia) | 1,54 B | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | Pesos originales y GGUF de terceros en Hugging Face |
+| TinyLlama 1.1B (referencia) | 1,1 B | 2 048 tokens | Apache 2.0 | Pesos originales y GGUF de terceros en Hugging Face |
 
 Frente a estas alternativas, el modelo analizado carece de licencia explicita y de contexto documentado, dos factores que en la practica lo descartan para uso comercial o para integraciones que dependan de una ventana de contexto conocida.
 
@@ -90,7 +90,7 @@ Frente a estas alternativas, el modelo analizado carece de licencia explicita y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Junaidi69/rengas-model-uji
-- Perfil del autor en HuggingFace: https://huggingface.co/Junaidi69
+- Modelo en Hugging Face: https://huggingface.co/Junaidi69/rengas-model-uji
+- Perfil del autor en Hugging Face: https://huggingface.co/Junaidi69
 - Paper, blog, repositorio o demo oficiales: no disponibles
 - Resultados de busqueda web relevantes: no disponibles

@@ -96,7 +96,7 @@ La comparación es puramente estructural: no existen datos de rendimiento de est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-8B-MiMo-Music-GRPO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-8B-MiMo-Music-GRPO-GGUF
 - Modelo de origen (referenciado en la model card): https://huggingface.co/Prompt48/Qwen3-8B-MiMo-Music-GRPO
 - Perfil del autor: https://huggingface.co/mradermacher
 - Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Notio2 es un modelo de lenguaje recurrente minimalista desarrollado por ContextReq, identificado en HuggingFace como `ContextReq/Notio-PLACEHOLDER`. Está diseñado para generar texto en inglés a partir de un vocabulario de 1.024 tokens, utilizando una arquitectura basada en bloques GRU con una dimensión de modelo de 256, un total de 1.315.328 parámetros y una ventana de contexto de 1.024 tokens. El modelo se encuentra en estado de desarrollo (INPROGRESS) y se ha entrenado sobre un corpus de 2.350 libros infantiles de dominio público del Proyecto Gutenberg, seleccionados y limpiados específicamente para este proyecto.
+Notio2 es un modelo de lenguaje recurrente minimalista desarrollado por ContextReq, identificado en Hugging Face como `ContextReq/Notio-PLACEHOLDER`. Está diseñado para generar texto en inglés a partir de un vocabulario de 1.024 tokens, utilizando una arquitectura basada en bloques GRU con una dimensión de modelo de 256, un total de 1.315.328 parámetros y una ventana de contexto de 1.024 tokens. El modelo se encuentra en estado de desarrollo (INPROGRESS) y se ha entrenado sobre un corpus de 2.350 libros infantiles de dominio público del Proyecto Gutenberg, seleccionados y limpiados específicamente para este proyecto.
 
 La relevancia de Notio2 radica en su enfoque experimental: en lugar de emplear arquitecturas transformer, explora las capacidades de los modelos recurrentes de muy pequeña escala para el modelado de lenguaje. El proyecto hace especial hincapié en la reproducibilidad y la verificación, con scripts que comprueban la integridad de los datos y del entrenamiento. No está pensado para producción, sino para investigación y experimentación en el ámbito de los modelos de lenguaje compactos.
 
@@ -75,7 +75,7 @@ No disponible. La model card menciona los modelos predecesores `basically-experi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ContextReq/Notio-PLACEHOLDER
+- Hugging Face: https://huggingface.co/ContextReq/Notio-PLACEHOLDER
 - Modelo predecesor: https://huggingface.co/basically-experimental/Notio-3.7M-RNN-v1
 - Colección Pebble: https://huggingface.co/collections/basically-ai/pebble
 - Dataset UNFILTERED: https://huggingface.co/datasets/ContextReq/Project_Gutenburg_Shelf_636_UNFILTERED

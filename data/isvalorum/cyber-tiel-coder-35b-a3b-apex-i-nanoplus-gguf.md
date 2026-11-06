@@ -97,7 +97,7 @@ No se dispone de datos comparativos frente a modelos densos de tamano similar (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IsValorum/Cyber-Tiel-Coder-35B-A3B-APEX-I-NanoPlus-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Cyber-Tiel-Coder-35B-A3B-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Release complementaria de mayor precision (MiniPlus V2.1): https://huggingface.co/IsValorum/Cyber-Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
 - Release Tiel-Coder-35B-A3B APEX-I-NanoPlus: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-NanoPlus-GGUF

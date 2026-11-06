@@ -80,9 +80,9 @@ Según el autor, las diferencias en quejas reales y preguntas trampa son estadí
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|
-| karar | ~169M | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace | 85,0 en quejas reales; 94,6 en preguntas trampa; 90,3 en conjunto bancario |
+| karar | ~169M | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face | 85,0 en quejas reales; 94,6 en preguntas trampa; 90,3 en conjunto bancario |
 | Jev (API comercial cerrada) | no disponible | no disponible | Propietaria, API de pago | Solo API | 63,1 en quejas reales; 78,3 en preguntas trampa; 85,7 en conjunto bancario |
-| ytu-ce-cosmos/modernbert-tr-base | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Pesos abiertos en HuggingFace | Modelo base sin ajuste para decisiones bancarias; sin resultados de esta tarea |
+| ytu-ce-cosmos/modernbert-tr-base | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Pesos abiertos en Hugging Face | Modelo base sin ajuste para decisiones bancarias; sin resultados de esta tarea |
 
 No se dispone de datos sobre otros clasificadores de intención bancaria en turco comparables en la información proporcionada, por lo que la comparativa se limita a los dos términos usados en la propia model card (Jev) y al modelo base. Advertencia: los datos de Jev proceden exclusivamente de las mediciones del autor de karar, no de una evaluación independiente.
 
@@ -96,12 +96,12 @@ No se dispone de datos sobre otros clasificadores de intención bancaria en turc
 - Longitud de contexto: no especificada, por lo que no se puede garantizar el tratamiento de mensajes largos (correos extensos, hilos de reclamación) sin truncado.
 - Licencia: Apache 2.0 permite uso comercial y modificación, pero el autor no ofrece garantías sobre exactitud en producción.
 - Advertencia operativa del propio autor: en operaciones críticas (pagos, cierres, cambios de límite) no deben aplicarse las decisiones sin aprobación humana; las salidas de baja confianza deben derivarse a una persona y conviene validar con los mensajes propios de cada entidad.
-- Madurez: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin validación externa conocida.
+- Madurez: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin validación externa conocida.
 - Integración: no es una clase estándar de transformers, lo que complica el despliegue con servidores de inferencia habituales y obliga a usar el `inference.py` del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saturday-labs/karar
+- Modelo en Hugging Face: https://huggingface.co/saturday-labs/karar
 - Demo en vivo (Space del autor): https://huggingface.co/spaces/melikegks/karar
 - Modelo base: https://huggingface.co/ytu-ce-cosmos/modernbert-tr-base
 - La búsqueda web no ha devuelto resultados relevantes sobre este modelo: los enlaces encontrados corresponden a foros de quejas de una aerolínea y a un evento tecnológico sin relación con el modelo.

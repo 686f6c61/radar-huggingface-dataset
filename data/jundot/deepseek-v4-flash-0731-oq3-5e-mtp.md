@@ -95,8 +95,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/DeepSeek-V4-Flash-0731-oQ3.5e-mtp | 304,180B (3,867 bits/peso) | no disponible | oQ3.5e mixta MLX | MIT | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-V4-Flash-0731 (base) | no disponible | no disponible | precisión completa (no especificada) | MIT según el checkpoint derivado | HuggingFace |
+| Jundot/DeepSeek-V4-Flash-0731-oQ3.5e-mtp | 304,180B (3,867 bits/peso) | no disponible | oQ3.5e mixta MLX | MIT | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-V4-Flash-0731 (base) | no disponible | no disponible | precisión completa (no especificada) | MIT según el checkpoint derivado | Hugging Face |
 | DeepSeek-V4-Flash-DSpark | no disponible | no disponible | no disponible | no disponible | referenciado como estructura idéntica |
 | Otras cuantizaciones del mismo base | no disponible | no disponible | no disponible | no disponible | no disponible en la información consultada |
 
@@ -117,7 +117,7 @@ La comparativa cuantitativa no es posible con los datos disponibles: la model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ3.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ3.5e-mtp
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385

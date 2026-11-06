@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ahnad0502/ggml-silero-vad-v6.2.3` es una publicacion en HuggingFace cuyo nombre sugiere una conversion al formato GGML del detector de actividad de voz (VAD) Silero VAD, en su version 6.2.3. El autor es el usuario `ahnad0502` y la unica documentacion presente en la model card es la declaracion de licencia MIT. No se ha publicado ninguna descripcion tecnica, ficha de uso, ni resultados de evaluacion.
+El repositorio `ahnad0502/ggml-silero-vad-v6.2.3` es una publicacion en Hugging Face cuyo nombre sugiere una conversion al formato GGML del detector de actividad de voz (VAD) Silero VAD, en su version 6.2.3. El autor es el usuario `ahnad0502` y la unica documentacion presente en la model card es la declaracion de licencia MIT. No se ha publicado ninguna descripcion tecnica, ficha de uso, ni resultados de evaluacion.
 
 Los metadatos del repositorio indican un tamano de 0.0 GB, cero descargas y cero interacciones, lo que apunta a un repositorio vacio o sin pesos publicados en el momento de la consulta. Esto implica que, tal y como esta, el artefacto no es utilizable para inferencia: no hay fichero de pesos, tokenizador ni configuracion accesible.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable con los datos disponibles, dado 
 | ahnad0502/ggml-silero-vad-v6.2.3 | no disponible | no aplica | no disponible | MIT | repositorio sin pesos (0.0 GB) |
 | Silero VAD (oficial) | no disponible en esta ficha | no aplica | no disponible en esta ficha | MIT | distribuido por el proyecto upstream |
 | WebRTC VAD | no disponible en esta ficha | no aplica | no disponible en esta ficha | BSD | incluido en WebRTC |
-| pyannote segmentation | no disponible en esta ficha | no aplica | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| pyannote segmentation | no disponible en esta ficha | no aplica | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable con los datos disponibles, dado 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ahnad0502/ggml-silero-vad-v6.2.3
+- Repositorio en Hugging Face: https://huggingface.co/ahnad0502/ggml-silero-vad-v6.2.3
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

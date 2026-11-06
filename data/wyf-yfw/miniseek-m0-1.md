@@ -88,7 +88,7 @@ Frente a alternativas de tamaño similar como SmolLM2-135M-Instruct, MiniSeek-M0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wyf-yfw/MiniSeek-M0.1
+- Modelo en Hugging Face: https://huggingface.co/wyf-yfw/MiniSeek-M0.1
 - Modelo base: https://huggingface.co/wyf-yfw/MiniSeek-M0.1-base
 - Modelo denso equivalente: https://huggingface.co/wyf-yfw/MiniSeek-D0.1
 - Repositorio de codigo y entrenamiento: https://github.com/wyf-yfw/miniseek

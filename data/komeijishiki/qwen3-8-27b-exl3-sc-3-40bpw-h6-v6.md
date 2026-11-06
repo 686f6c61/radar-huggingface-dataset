@@ -68,8 +68,8 @@ No se dispone de datos comparativos publicados para esta cuantizacion especifica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/komeijishiki/Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/komeijishiki/Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentacion de Alibaba Cloud Model Studio: https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-27b
 - Ficha del modelo en GroqDocs: https://console.groq.com/docs/model/qwen/qwen3.8-27b

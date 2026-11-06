@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Celeste es un adaptador LoRA de generacion de imagenes text-to-image publicado por el usuario AiMamis en HuggingFace. El adaptador se aplica sobre el modelo base krea/Krea-2-Turbo y esta etiquetado con la plantilla `template:diffusion-lora`, lo que indica que se distribuye como complemento de bajo rango y no como un modelo de difusion completo e independiente. El repositorio ocupa 0,5 GB y sigue la estructura habitual de la libreria diffusers.
+Celeste es un adaptador LoRA de generacion de imagenes text-to-image publicado por el usuario AiMamis en Hugging Face. El adaptador se aplica sobre el modelo base krea/Krea-2-Turbo y esta etiquetado con la plantilla `template:diffusion-lora`, lo que indica que se distribuye como complemento de bajo rango y no como un modelo de difusion completo e independiente. El repositorio ocupa 0,5 GB y sigue la estructura habitual de la libreria diffusers.
 
 Se trata de un LoRA de personaje: segun la model card, su proposito es generar imagenes de un personaje llamado Celeste, cuyos rasgos definitorios son pelo blanco, ojos verde claro y piel palida. La model card define el prompt de instancia `Celeste, White hair, Light green eyes, Pale skin` y establece cuatro palabras de activacion (`Celeste`, `White hair`, `Light green eyes`, `Pale skin`) que deben incluirse en el prompt para que el adaptador aplique el estilo y la identidad aprendidos.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AiMamis/Celeste | LoRA de personaje (text-to-image) | krea/Krea-2-Turbo | no disponible | openrail++ | HuggingFace, 0 descargas |
-| krea/Krea-2-Turbo (sin adaptador) | Modelo de difusion base | no aplica | no disponible | no disponible | HuggingFace |
+| AiMamis/Celeste | LoRA de personaje (text-to-image) | krea/Krea-2-Turbo | no disponible | openrail++ | Hugging Face, 0 descargas |
+| krea/Krea-2-Turbo (sin adaptador) | Modelo de difusion base | no aplica | no disponible | no disponible | Hugging Face |
 | Otros LoRA de personaje sobre Krea-2-Turbo | LoRA de personaje | krea/Krea-2-Turbo | no disponible | variable | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de alternativas concretas identificadas en la informacion proporcionada que permitan una comparacion cuantitativa. La unica comparacion posible es funcional: Celeste anade la identidad de un personaje concreto sobre el comportamiento del modelo base, sin modificar la arquitectura ni el pipeline de inferencia.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento ni de alternativas concretas identificadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Celeste
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Celeste
 - Archivos y versiones: https://huggingface.co/AiMamis/Celeste/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 

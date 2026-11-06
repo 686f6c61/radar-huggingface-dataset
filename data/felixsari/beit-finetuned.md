@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`felixsari/beit-finetuned` es un repositorio de investigación publicado en HuggingFace por el usuario felixsari que contiene un prototipo de arquitectura BEiT (vision transformer) orientado a tareas de *retrieval* (recuperación de imágenes). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una **inicialización válida para pruebas de humo**, no un modelo entrenado ni evaluado, y la model card declara que no se reclama ninguna puntuación de benchmark.
+`felixsari/beit-finetuned` es un repositorio de investigación publicado en Hugging Face por el usuario felixsari que contiene un prototipo de arquitectura BEiT (vision transformer) orientado a tareas de *retrieval* (recuperación de imágenes). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una **inicialización válida para pruebas de humo**, no un modelo entrenado ni evaluado, y la model card declara que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio no está en el rendimiento, sino en su valor como plantilla reproducible: incluye `config.json` con los hiperparámetros de arquitectura, `training_args.json` con la receta de experimento por defecto (optimizador RMSprop con *schedule* coseno) y `eval.py` como artefacto principal con un ejemplo ejecutable. La configuración declara escala "base", atención dilatada, fusión por *cross attention*, activación approximate GELU y normalización RMSNorm.
 
@@ -20,7 +20,7 @@ Es relevante ahora precisamente por lo contrario de lo habitual: es un ejemplo d
 | Idiomas soportados | no disponible (la tarea declarada es recuperación de imágenes, no texto) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (`model.safetensors`), más `config.json`, `training_args.json` y `eval.py` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Normalización / activación | RMSNorm / approximate GELU |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-19 |
@@ -70,7 +70,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felixsari/beit-finetuned | 16.576 (según safetensors) | no disponible | sin benchmarks declarados | Apache 2.0 | HuggingFace, 0 descargas |
+| felixsari/beit-finetuned | 16.576 (según safetensors) | no disponible | sin benchmarks declarados | Apache 2.0 | Hugging Face, 0 descargas |
 | BEiT-base (referencia) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 | Modelos de retrieval imagen-texto tipo CLIP | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,12 +81,12 @@ No se dispone de datos verificados de modelos comparables en la información pro
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí de falsa expectativa; cualquier métrica obtenida con estos pesos no es representativa.
 - Discrepancia de escala: los 16.576 parámetros de safetensors no cuadran con la etiqueta "base" de la model card; conviene verificar `config.json` antes de asumir ninguna capacidad.
 - Sin datos de sesgo, idioma ni resolución de entrada; no hay información sobre composición del dataset de entrenamiento futuro.
-- Carga no estándar: las APIs automáticas de HuggingFace requieren un adaptador explícito, lo que complica la integración directa en pipelines existentes.
+- Carga no estándar: las APIs automáticas de Hugging Face requieren un adaptador explícito, lo que complica la integración directa en pipelines existentes.
 - Licencia Apache 2.0 permite uso comercial del código y los pesos, pero el autor advierte de revisar por separado los términos de los datos externos que se utilicen con el repositorio.
 - No apto para producción: sin entrenamiento, sin evaluación y sin métricas de latencia, no hay base para desplegarlo en un servicio real.
 - Los resultados de la búsqueda web asociados a esta consulta no contienen información técnica sobre el modelo y no se han utilizado como fuente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/felixsari/beit-finetuned
+- Hugging Face: https://huggingface.co/felixsari/beit-finetuned
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la búsqueda web proporcionada.

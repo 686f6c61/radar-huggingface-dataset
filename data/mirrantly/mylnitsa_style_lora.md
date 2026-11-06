@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mirrantly/mylnitsa_style_LoRA` es un adaptador LoRA de bajo rango para generación de imágenes texto-a-imagen, entrenado sobre `stabilityai/stable-diffusion-xl-base-1.0` mediante DreamBooth. Lo desarrolla el usuario de HuggingFace `mirrantly` y su función es fijar una estética visual concreta —descrita en la model card como "point-and-shoot photo", es decir, fotografía de cámara compacta o instantánea—, que se invoca con la frase de activación `point-and-shoot photo in MYLNITSA style`. No es un modelo de lenguaje ni un modelo fundacional: es un conjunto de pesos adicionales que se cargan junto al modelo base SDXL para modificar su distribución de salida.
+`mirrantly/mylnitsa_style_LoRA` es un adaptador LoRA de bajo rango para generación de imágenes texto-a-imagen, entrenado sobre `stabilityai/stable-diffusion-xl-base-1.0` mediante DreamBooth. Lo desarrolla el usuario de Hugging Face `mirrantly` y su función es fijar una estética visual concreta —descrita en la model card como "point-and-shoot photo", es decir, fotografía de cámara compacta o instantánea—, que se invoca con la frase de activación `point-and-shoot photo in MYLNITSA style`. No es un modelo de lenguaje ni un modelo fundacional: es un conjunto de pesos adicionales que se cargan junto al modelo base SDXL para modificar su distribución de salida.
 
 El interés técnico del artefacto es limitado pero concreto: es un ejemplo de flujo de entrenamiento DreamBooth sobre SDXL con el VAE `madebyollin/sdxl-vae-fp16-fix`, sin LoRA en el text encoder. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador de dimensiones reducidas y no con un checkpoint completo. El autor no documenta el dataset, el número de pasos ni hiperparámetros, y la model card es la plantilla autogenerada por el script de entrenamiento, con secciones marcadas como `[TODO]`.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Base | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mirrantly/mylnitsa_style_LoRA` | LoRA de estilo (DreamBooth) | SDXL 1.0 | 1024x1024 | openrail++ | HuggingFace, 0 descargas, 0 likes |
-| SDXL 1.0 sin adaptador (`stabilityai/stable-diffusion-xl-base-1.0`) | Modelo base texto-a-imagen | — | 1024x1024 | openrail++ | HuggingFace, ampliamente utilizado |
-| LoRA de estilo sobre SD 1.5 | Adaptador de estilo | SD 1.5 | 512x512 nativo | Depende del autor (habitualmente CreativeML OpenRAIL-M) | Ecosistema amplio en HuggingFace y Civitai |
-| LoRA sobre FLUX.1-dev | Adaptador de estilo | FLUX.1-dev | 1024x1024 y superior | Depende del autor; el base usa licencia no comercial | Ecosistema creciente en HuggingFace |
+| `mirrantly/mylnitsa_style_LoRA` | LoRA de estilo (DreamBooth) | SDXL 1.0 | 1024x1024 | openrail++ | Hugging Face, 0 descargas, 0 likes |
+| SDXL 1.0 sin adaptador (`stabilityai/stable-diffusion-xl-base-1.0`) | Modelo base texto-a-imagen | — | 1024x1024 | openrail++ | Hugging Face, ampliamente utilizado |
+| LoRA de estilo sobre SD 1.5 | Adaptador de estilo | SD 1.5 | 512x512 nativo | Depende del autor (habitualmente CreativeML OpenRAIL-M) | Ecosistema amplio en Hugging Face y Civitai |
+| LoRA sobre FLUX.1-dev | Adaptador de estilo | FLUX.1-dev | 1024x1024 y superior | Depende del autor; el base usa licencia no comercial | Ecosistema creciente en Hugging Face |
 
 No se dispone de datos de rendimiento comparado (FID, CLIP score ni evaluaciones humanas) para este adaptador ni para alternativas concretas de la misma estética, por lo que la comparación se limita a parámetros estructurales y de licencia.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado (FID, CLIP score ni evaluaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mirrantly/mylnitsa_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/mirrantly/mylnitsa_style_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en el entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Documentación de DreamBooth: https://dreambooth.github.io/

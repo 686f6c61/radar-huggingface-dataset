@@ -94,8 +94,8 @@ Tests de estrés con contexto truncado (adaptador): 16.621 con 32 días, 16.486 
 
 | Modelo | Parámetros | Contexto | SMAPE (cohorte) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WikiTraffic-TSFM (este) | 200 M + LoRA | 352 obs. | 15.114 | Apache-2.0 | HuggingFace |
-| google/timesfm-2.5-200m-transformers | 200 M | 352 obs. (configurado) | 15.153 (log1p) | Apache-2.0 | HuggingFace |
+| WikiTraffic-TSFM (este) | 200 M + LoRA | 352 obs. | 15.114 | Apache-2.0 | Hugging Face |
+| google/timesfm-2.5-200m-transformers | 200 M | 352 obs. (configurado) | 15.153 (log1p) | Apache-2.0 | Hugging Face |
 | TimesFM 3 (comparador congelado) | no disponible | no disponible | 14.991 | no comercial / no producción | Pesos no redistribuidos |
 | Mediana semanal de ocho semanas | no aplica | 56 días | 18.432 | no aplica | Línea base estadística |
 
@@ -116,7 +116,7 @@ Tests de estrés con contexto truncado (adaptador): 16.621 con 32 días, 16.486 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsalissonsilva/WikiTraffic-TSFM
+- Modelo en Hugging Face: https://huggingface.co/itsalissonsilva/WikiTraffic-TSFM
 - Dataset de entrenamiento: https://huggingface.co/datasets/itsalissonsilva/wikimedia-pageviews-forecasting
 - Modelo base: https://huggingface.co/google/timesfm-2.5-200m-transformers
 - Código de inferencia, entrenamiento y auditoría: incluido en el repositorio del modelo (forecast.py, wikimedia_pilot/, wikimedia_audit/, audit_wikitraffic.py, independent_audit.json)

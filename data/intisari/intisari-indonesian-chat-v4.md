@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables específicos en la docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/INTISARI/intisari-indonesian-chat-v4
+- Hugging Face: https://huggingface.co/INTISARI/intisari-indonesian-chat-v4
 - Demo: https://intisari.flatseek.io
 - Repositorio de entrenamiento (Flatbuild): https://github.com/flatseek/flatbuild

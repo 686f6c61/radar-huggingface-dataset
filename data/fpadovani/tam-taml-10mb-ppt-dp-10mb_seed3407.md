@@ -68,6 +68,6 @@ No disponible. No se han publicado comparativas con modelos similares. El autor 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_10mb
 - TRL: https://github.com/huggingface/trl

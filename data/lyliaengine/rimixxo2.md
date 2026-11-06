@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables específicos. Sin embarg
 - No se proporcionan garantías de reproducibilidad: los resultados varían según el sampler, CFG scale y pasos.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/LyliaEngine/rimixxO2
+- Repositorio Hugging Face: https://huggingface.co/LyliaEngine/rimixxO2
 - Modelo base (Illustrious XL): https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 - Fuente original (Civitai): https://civitai.red/models/996220/ri-mix-style-lora-illustrious-anima
 - Modelo relacionado Ri-mix (Anima): https://civitai.com/models/996495/ri-mix-illustrious-anima

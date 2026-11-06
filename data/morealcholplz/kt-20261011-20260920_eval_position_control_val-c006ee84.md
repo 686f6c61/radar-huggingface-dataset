@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado listo para inferencia, sino una copia de seguridad archival de un experimento de robótica. El autor, el usuario `morealcholplz`, publica un snapshot del directorio original `/home/work/mntvol/runs/nuri_pi05_robottt/20260920_eval_position_control_val`, con los ficheros de checkpoint, configuración y resultados tal como estaban en el servidor de trabajo. La model card indica explícitamente que se trata de un artefacto de archivo y no de una afirmación de éxito de evaluación ni de un modelo estándar listo para inferencia.
+Este repositorio de Hugging Face no contiene un modelo entrenado listo para inferencia, sino una copia de seguridad archival de un experimento de robótica. El autor, el usuario `morealcholplz`, publica un snapshot del directorio original `/home/work/mntvol/runs/nuri_pi05_robottt/20260920_eval_position_control_val`, con los ficheros de checkpoint, configuración y resultados tal como estaban en el servidor de trabajo. La model card indica explícitamente que se trata de un artefacto de archivo y no de una afirmación de éxito de evaluación ni de un modelo estándar listo para inferencia.
 
 El repositorio está etiquetado con `robotics` y `checkpoint-backup`, tiene un tamaño de 0,2 GB y no registra descargas ni likes en el momento de redactar esta ficha. El contenido útil se empaqueta bajo `payload/`, que debe restaurarse en la ruta original indicada, e incluye estado de reanudación cuando existe. Los credenciales, enlaces externos, cachés y ficheros opacos de tracking o perfilado se excluyen y se listan en `BACKUP_MANIFEST.json`.
 
-Su relevancia es de tipo documental y de reproducibilidad: sirve para auditar o restaurar una ejecución concreta de investigación, no para desplegar un sistema. La model card menciona que los derivados de GR00T quedan sujetos a la licencia de investigación y evaluación de NVIDIA, y que los componentes upstream pi/openpi y de terceros conservan sus propios términos, por lo que la licencia aplicable al conjunto no está unificada ni declarada en HuggingFace.
+Su relevancia es de tipo documental y de reproducibilidad: sirve para auditar o restaurar una ejecución concreta de investigación, no para desplegar un sistema. La model card menciona que los derivados de GR00T quedan sujetos a la licencia de investigación y evaluación de NVIDIA, y que los componentes upstream pi/openpi y de terceros conservan sus propios términos, por lo que la licencia aplicable al conjunto no está unificada ni declarada en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia es de tipo documental y de reproducibilidad: sirve para auditar o 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en HuggingFace; la model card remite a la licencia research/evaluation-only de NVIDIA para derivados de GR00T y a los términos propios de pi/openpi y terceros |
+| Licencia | no disponible en Hugging Face; la model card remite a la licencia research/evaluation-only de NVIDIA para derivados de GR00T y a los términos propios de pi/openpi y terceros |
 | Formato de pesos | no disponible (el repositorio contiene un directorio `payload/`, no se especifica safetensors, GGUF ni otro formato) |
 | Tipo de artefacto | snapshot archival de checkpoint, configuración y resultados |
 | Tamano del repositorio | 0,2 GB |
@@ -76,7 +76,7 @@ No disponible. No es posible comparar este artefacto con modelos de la misma cat
 
 - No es un modelo: es un snapshot de ficheros. Cualquier uso como modelo de inferencia es un error de interpretación.
 - La model card advierte que no constituye una afirmación de éxito de evaluación; el nombre del directorio incluye `eval`, pero eso no implica que la evaluación fuese satisfactoria.
-- Licencia no disponible en HuggingFace. La model card indica que los derivados de GR00T siguen sujetos a una licencia NVIDIA de investigación y evaluación únicamente, lo que puede impedir el uso comercial.
+- Licencia no disponible en Hugging Face. La model card indica que los derivados de GR00T siguen sujetos a una licencia NVIDIA de investigación y evaluación únicamente, lo que puede impedir el uso comercial.
 - Los componentes upstream pi/openpi y de terceros mantienen sus propios términos, que hay que revisar por separado.
 - Sin idiomas, arquitectura ni parámetros documentados, no se puede evaluar sesgo, alucinación ni comportamiento lingüístico alguno.
 - Riesgo de estado incompleto: aunque se incluye estado de reanudación cuando estaba presente, las credenciales, enlaces externos, cachés y ficheros opacos de tracking o perfilado fueron excluidos, de modo que una restauración puede no reproducir exactamente el entorno original.
@@ -86,6 +86,6 @@ No disponible. No es posible comparar este artefacto con modelos de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-20260920_eval_position_control_val-c006ee84
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-20260920_eval_position_control_val-c006ee84
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - Pagina de dataset relacionada del mismo autor, no vinculada oficialmente a este repositorio: https://claru.ai/datasets/morealcholplz-vanilla-eval-turnon-ours-fixed

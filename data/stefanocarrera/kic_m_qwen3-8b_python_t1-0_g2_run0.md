@@ -44,7 +44,7 @@ No se dispone de información sobre el dataset de entrenamiento: no se indica el
 - Prototipado rápido de asistentes de programación: al ser un modelo de 8B, puede desplegarse en una GPU de consumo para pruebas internas de generación de código.
 - Evaluación comparativa de ajustes finos comunitarios: útil como caso de estudio para medir el impacto de un ajuste fino sobre Qwen3-8B-Base frente al modelo original.
 - Base para futuros ajustes: el repositorio puede servir como punto de partida para otros desarrolladores que quieran continuar el entrenamiento con más datos o técnicas (DPO, RLHF).
-- Docencia y formación: adecuado para demostrar el flujo completo de publicación de un modelo en HuggingFace con licencia Apache 2.0 y formato safetensors.
+- Docencia y formación: adecuado para demostrar el flujo completo de publicación de un modelo en Hugging Face con licencia Apache 2.0 y formato safetensors.
 
 ## Benchmarks y rendimiento
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g2_run0 | ~8B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajuste fino comunitario sin benchmarks |
-| Qwen/Qwen3-8B | ~8B | 32.768 tokens (nativo) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial con benchmarks publicados |
-| meta-llama/Llama-3.1-8B | ~8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa densa de 8B con contexto largo |
-| mistralai/Mistral-7B-v0.3 | ~7B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de 7B con licencia permisiva |
+| stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g2_run0 | ~8B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste fino comunitario sin benchmarks |
+| Qwen/Qwen3-8B | ~8B | 32.768 tokens (nativo) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial con benchmarks publicados |
+| meta-llama/Llama-3.1-8B | ~8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa densa de 8B con contexto largo |
+| mistralai/Mistral-7B-v0.3 | ~7B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de 7B con licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g2_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g2_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - Qwen3 (familia oficial): https://huggingface.co/Qwen/Qwen3-8B

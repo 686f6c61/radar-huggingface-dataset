@@ -83,10 +83,10 @@ No hay resultados de benchmarks publicos de este checkpoint, por lo que la compa
 
 | Modelo | Parametros | Parche | Resolucion tipica | Dimension de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| timm/deepseek_vit_412m.deepseek_v4_flash_vision_exp | 411,8 M | 14 | 392x392 (rectangular con multiplos de 14) | 1024 | MIT | HuggingFace (timm), 0 descargas y 0 likes en el momento de la consulta |
-| facebook/dinov2-large | 304 M | 14 | 224 (hasta 518 en variantes de alta resolucion) | 1024 | Apache-2.0 | HuggingFace, ampliamente usado y evaluado |
-| openai/clip-vit-large-patch14 | 304 M (torre visual) | 14 | 224 | 1024 en el encoder, 768 tras proyeccion | MIT | HuggingFace, muy extendido |
-| google/siglip-so400m-patch14-384 | 878 M en total (torre visual en torno a 428 M, dato aproximado) | 14 | 384 | no disponible con exactitud | Apache-2.0 | HuggingFace |
+| timm/deepseek_vit_412m.deepseek_v4_flash_vision_exp | 411,8 M | 14 | 392x392 (rectangular con multiplos de 14) | 1024 | MIT | Hugging Face (timm), 0 descargas y 0 likes en el momento de la consulta |
+| facebook/dinov2-large | 304 M | 14 | 224 (hasta 518 en variantes de alta resolucion) | 1024 | Apache-2.0 | Hugging Face, ampliamente usado y evaluado |
+| openai/clip-vit-large-patch14 | 304 M (torre visual) | 14 | 224 | 1024 en el encoder, 768 tras proyeccion | MIT | Hugging Face, muy extendido |
+| google/siglip-so400m-patch14-384 | 878 M en total (torre visual en torno a 428 M, dato aproximado) | 14 | 384 | no disponible con exactitud | Apache-2.0 | Hugging Face |
 
 Frente a estas alternativas, la propuesta de timm destaca por su licencia MIT (igual que CLIP, mas permisiva en la practica que Apache-2.0 para ciertos usos) y por integrarse de forma nativa en timm, con transformaciones y utilidades de extraccion de features resueltas. Como contrapartida, carece de evaluaciones publicadas y de comunidad: zero descargas y zero likes en el momento del registro, frente a los modelos de DINOv2, CLIP o SigLIP, que cuentan con benchmarks extensos y anos de validacion en produccion.
 
@@ -106,7 +106,7 @@ Frente a estas alternativas, la propuesta de timm destaca por su licencia MIT (i
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/timm/deepseek_vit_412m.deepseek_v4_flash_vision_exp
+- Pagina del modelo en Hugging Face: https://huggingface.co/timm/deepseek_vit_412m.deepseek_v4_flash_vision_exp
 - Modelo base (DeepSeek-V4-Flash-Vision-Exp): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Revision de origen de los pesos: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/tree/6821d6ad3681a4b137b066b76094fa82ebd0a380
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/LICENSE

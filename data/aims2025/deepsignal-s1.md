@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSignal-S1 es un modelo de lenguaje publicado en HuggingFace por el usuario AIMS2025 bajo un repositorio de acceso restringido (gated). Con 8.953.803.264 parámetros totales según los pesos en formato safetensors, se situa en la franja de los ~9B parámetros, un tamano habitual para despliegues en una sola GPU de 24-80 GB segun cuantizacion. El repositorio incluye pesos en safetensors y GGUF, lo que sugiere intencion de soportar tanto inferencia en precision completa como cuantizada en CPU y consumer GPU.
+DeepSignal-S1 es un modelo de lenguaje publicado en Hugging Face por el usuario AIMS2025 bajo un repositorio de acceso restringido (gated). Con 8.953.803.264 parámetros totales según los pesos en formato safetensors, se situa en la franja de los ~9B parámetros, un tamano habitual para despliegues en una sola GPU de 24-80 GB segun cuantizacion. El repositorio incluye pesos en safetensors y GGUF, lo que sugiere intencion de soportar tanto inferencia en precision completa como cuantizada en CPU y consumer GPU.
 
-El modelo se etiqueta como "decision-model" y "conversational", lo que apunta a un uso orientado a dialogo y a la toma de decisiones dentro de flujos conversacionales, aunque la informacion publica disponible no detalla que tipo de tarea de decision cubre ni como se ha entrenado para ello. Tambien aparece la etiqueta "endpoints_compatible", que indica compatibilidad con la infraestructura de endpoints de HuggingFace.
+El modelo se etiqueta como "decision-model" y "conversational", lo que apunta a un uso orientado a dialogo y a la toma de decisiones dentro de flujos conversacionales, aunque la informacion publica disponible no detalla que tipo de tarea de decision cubre ni como se ha entrenado para ello. Tambien aparece la etiqueta "endpoints_compatible", que indica compatibilidad con la infraestructura de endpoints de Hugging Face.
 
 La relevancia de este modelo es limitada por la escasez de documentacion publica: no se especifican licencia, idiomas, contexto, composicion del dataset ni resultados de benchmarks. La ficha que sigue recoge unicamente los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no se ha publicado.
 
@@ -31,7 +31,7 @@ Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la compo
 
 - Generacion de texto conversacional: el tag "conversational" indica que el modelo esta pensado para dialogos multi-turno.
 - Toma de decisiones: el tag "decision-model" sugiere capacidad para tareas de decision dentro de un flujo conversacional, aunque no se detalla el alcance.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede desplegarse en la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede desplegarse en la infraestructura de endpoints de Hugging Face.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -44,7 +44,7 @@ Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la compo
 - Despliegue en CPU o hardware modesto mediante GGUF: la disponibilidad de pesos GGUF permite ejecutar el modelo con llama.cpp u Ollama en equipos sin GPU dedicada, util para prototipos y entornos de desarrollo.
 - Generacion de respuestas en asistentes de dominio acotado: con ~9B parametros, el modelo es manejable para fine-tuning ligero sobre datos propios de un dominio concreto (soporte, RRHH, formacion), siempre que la licencia lo permita (dato no disponible).
 - Experimentacion e investigacion: el repositorio sirve como base para estudiar el comportamiento de un modelo etiquetado como "decision-model" en tareas de dialogo, aunque la falta de documentacion limita la reproducibilidad.
-- Integracion en endpoints gestionados de HuggingFace: gracias al tag "endpoints_compatible", puede desplegarse como endpoint REST para pruebas de integracion en aplicaciones web o moviles.
+- Integracion en endpoints gestionados de Hugging Face: gracias al tag "endpoints_compatible", puede desplegarse como endpoint REST para pruebas de integracion en aplicaciones web o moviles.
 
 ## Benchmarks y rendimiento
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSignal-S1 | ~8,95B | no disponible | no disponible | safetensors, GGUF | gated en HuggingFace |
+| DeepSignal-S1 | ~8,95B | no disponible | no disponible | safetensors, GGUF | gated en Hugging Face |
 | Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | publico |
 | Qwen2.5 7B | 7,6B | 128K | Apache 2.0 (mayoria de variantes) | safetensors, GGUF | publico |
 | Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | safetensors, GGUF | publico |
@@ -75,7 +75,7 @@ La comparacion se limita a tamano y disponibilidad, ya que no hay datos de rendi
 
 - Documentacion practicamente inexistente: no hay model card con detalles de entrenamiento, datos, licencia ni evaluacion, lo que impide validar su calidad o idoneidad para produccion.
 - Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; en ausencia de licencia explicita, debe asumirse restriccion hasta consultar al autor.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para despliegues automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para despliegues automatizados.
 - Idiomas no declarados: se desconoce si el modelo esta entrenado en castellano u otros idiomas distintos del ingles.
 - Contexto desconocido: no se puede planificar su uso en tareas que requieran ventanas largas.
 - Riesgo de alucinacion: sin datos de evaluacion ni de alineamiento (RLHF/DPO), el riesgo es desconocido y potencialmente alto.
@@ -85,5 +85,5 @@ La comparacion se limita a tamano y disponibilidad, ya que no hay datos de rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AIMS2025/DeepSignal-S1
+- Repositorio Hugging Face: https://huggingface.co/AIMS2025/DeepSignal-S1
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

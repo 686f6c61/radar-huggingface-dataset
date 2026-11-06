@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks estandar ni de comparaciones directas publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nohamouazine/vertigo-3
+- Modelo en Hugging Face: https://huggingface.co/nohamouazine/vertigo-3
 - Repositorio de codigo y bench: https://github.com/nohamouazine/vertigo
 - Benchmark comparativo del autor: https://paradoxalai.com/banc
 - Sitio de ParadoxalAI: https://paradoxalai.com

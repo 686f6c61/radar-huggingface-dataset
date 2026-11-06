@@ -31,7 +31,7 @@ No se documenta si el entrenamiento incluyo etapas de RLHF, DPO u otras tecnicas
 
 - Generacion de texto en coreano orientada a preguntas y respuestas sobre normativa y consultoria laboral.
 - Especializacion de dominio: respuestas sobre relaciones laborales derivadas del dataset de entrenamiento.
-- Integracion con el ecosistema HuggingFace Transformers y PEFT mediante carga de adaptador.
+- Integracion con el ecosistema Hugging Face Transformers y PEFT mediante carga de adaptador.
 - Compatibilidad con el pipeline `text-generation`.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| seventy4/qwen3.5-0.8b-labor-lora | Adaptador LoRA sobre 0,8B | no disponible | apache-2.0 | SFT de dominio laboral en coreano | HuggingFace (14 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible en la informacion proporcionada | Modelo generalista | HuggingFace |
-| Adaptadores LoRA de dominio similares | Variable | Variable | Variable | SFT vertical | HuggingFace |
+| seventy4/qwen3.5-0.8b-labor-lora | Adaptador LoRA sobre 0,8B | no disponible | apache-2.0 | SFT de dominio laboral en coreano | Hugging Face (14 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible en la informacion proporcionada | Modelo generalista | Hugging Face |
+| Adaptadores LoRA de dominio similares | Variable | Variable | Variable | SFT vertical | Hugging Face |
 
 No se dispone de datos de rendimiento comparado con alternativas en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado con alternativas en la informaci
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/seventy4/qwen3.5-0.8b-labor-lora
+- Hugging Face del adaptador: https://huggingface.co/seventy4/qwen3.5-0.8b-labor-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/seventy4/labor-counsel-qa
 - Libreria PEFT: https://github.com/huggingface/peft

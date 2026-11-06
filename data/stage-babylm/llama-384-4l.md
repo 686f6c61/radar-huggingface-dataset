@@ -30,7 +30,7 @@ El entrenamiento se realizo como fine-tuning de un modelo base no identificado, 
 
 - Generacion de texto basica: puede producir texto continuo a partir de una secuencia de entrada, aunque su tamano reducido limita la coherencia y calidad de las salidas.
 - Fine-tuning especifico: al ser un modelo ajustado, puede especializarse en dominios concretos si se dispone del dataset de entrenamiento.
-- Compatibilidad con transformers: se integra con la libreria transformers de HuggingFace y es compatible con text-generation-inference y endpoints.
+- Compatibilidad con transformers: se integra con la libreria transformers de Hugging Face y es compatible con text-generation-inference y endpoints.
 - Capacidades de razonamiento, codigo, matematicas, tool calling, agentes, vision o audio: no disponibles ni verificadas dada la ausencia de benchmarks y documentacion.
 
 ## Casos de uso
@@ -44,14 +44,14 @@ El entrenamiento se realizo como fine-tuning de un modelo base no identificado, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model-index de HuggingFace muestra una lista de resultados vacia. Unicamente se dispone de la perdida de validacion (1,7420) reportada durante el entrenamiento.
+No se han publicado resultados de benchmarks en la informacion disponible. El model-index de Hugging Face muestra una lista de resultados vacia. Unicamente se dispone de la perdida de validacion (1,7420) reportada durante el entrenamiento.
 
 ## Requisitos de hardware
 
 - VRAM estimada: el modelo ocupa aproximadamente 31 MB en precision fp32 y unos 8 MB en int8, por lo que cabe en cualquier GPU con mas de 1 GB de VRAM y tambien en RAM de CPU.
 - GPU recomendadas: no requiere una GPU especifica; cualquier GPU de consumo (GTX 1050 en adelante, RTX serie 20/30/40) es suficiente. Tambien puede ejecutarse exclusivamente en CPU.
 - Compatibilidad con consumer GPU: si, es compatible con cualquier GPU de consumo disponible en el mercado.
-- Opciones de despliegue: compatible con la libreria transformers de HuggingFace, text-generation-inference, endpoints de HuggingFace y FriendliAI.
+- Opciones de despliegue: compatible con la libreria transformers de Hugging Face, text-generation-inference, endpoints de Hugging Face y FriendliAI.
 - Latencia y throughput: no disponibles. Dado el tamano del modelo, se espera una latencia del orden de milisegundos incluso en CPU, aunque no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/stage-babylm/llama-384-4L
+- Pagina de Hugging Face: https://huggingface.co/stage-babylm/llama-384-4L
 - Pagina de inferencia en FriendliAI: https://friendli.ai/models/stage-babylm/llama-384-4L
 - Sitio del reto BabyLM: https://babylm.github.io/

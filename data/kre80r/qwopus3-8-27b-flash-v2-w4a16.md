@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - La cuantización exige soporte de AutoRound W4A16 en el motor de inferencia; no funcionará en herramientas que solo carguen safetensors en BF16 o FP16 sin el kernel correspondiente.
 
 ## Enlaces
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Kre80r/Qwopus3.8-27B-Flash-V2-W4A16
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Kre80r/Qwopus3.8-27B-Flash-V2-W4A16
 - Modelo upstream Qwopus3.8-27B-Flash-V2: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Revisión concreta usada como fuente de la cuantización: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2/tree/13f92e09a46fa364f8de1edb85684d57bda01126
 - Modelo previo Qwopus3.8-27B-Flash: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por Flourence123, contiene un benchmark para la detección de lesiones corticales epileptogénicas. El tamaño del repositorio es de 120.3 GB, lo que sugiere que incluye un conjunto de datos de imágenes médicas o los pesos de un modelo de visión por computador. La fecha de creación es el 23 de agosto de 2026 y la última actualización fue el 5 de septiembre de 2026. No se dispone de información sobre arquitectura, parámetros, contexto o pipeline en los metadatos proporcionados.
+Este repositorio de Hugging Face, publicado por Flourence123, contiene un benchmark para la detección de lesiones corticales epileptogénicas. El tamaño del repositorio es de 120.3 GB, lo que sugiere que incluye un conjunto de datos de imágenes médicas o los pesos de un modelo de visión por computador. La fecha de creación es el 23 de agosto de 2026 y la última actualización fue el 5 de septiembre de 2026. No se dispone de información sobre arquitectura, parámetros, contexto o pipeline en los metadatos proporcionados.
 
 Los resultados de búsqueda web incluyen un estudio reciente en JAMA Neurology sobre la detección de displasia cortical focal mediante redes neuronales de grafos, pero no se ha confirmado que este repositorio esté directamente relacionado con dicho estudio. La información disponible es muy limitada y no permite determinar las capacidades técnicas del modelo ni su licencia de uso.
 
@@ -63,6 +63,6 @@ No hay informacion suficiente para comparar este repositorio con modelos similar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Flourence123/Epileptogenic-Cortical-Lesion-Detection-Benchmark
+- Repositorio en Hugging Face: https://huggingface.co/Flourence123/Epileptogenic-Cortical-Lesion-Detection-Benchmark
 - Estudio relacionado en JAMA Neurology: https://jamanetwork.com/journals/jamaneurology/fullarticle/2830410
 - Articulo del estudio en laus r: https://lausr.org/dashboard/?doi=10.1001%2Fjamaneurol.2024.5406

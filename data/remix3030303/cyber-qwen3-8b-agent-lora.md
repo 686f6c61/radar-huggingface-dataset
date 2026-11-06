@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cyber Qwen3-8B Agent es un ajuste fino mediante LoRA (QLoRA) del modelo Qwen/Qwen3-8B, desarrollado por el usuario remix3030303 y publicado en HuggingFace. El adaptador está orientado a tareas de ciberseguridad: pruebas de penetración autorizadas, análisis defensivo, ingeniería de detección, respuesta a incidentes, revisión de código seguro y validación de vulnerabilidades. El modelo se entrena para ser "calibrado en evidencia", es decir, para no afirmar una vulnerabilidad sin respaldo, y para emitir llamadas a herramientas estructuradas dentro de bucles de agente.
+Cyber Qwen3-8B Agent es un ajuste fino mediante LoRA (QLoRA) del modelo Qwen/Qwen3-8B, desarrollado por el usuario remix3030303 y publicado en Hugging Face. El adaptador está orientado a tareas de ciberseguridad: pruebas de penetración autorizadas, análisis defensivo, ingeniería de detección, respuesta a incidentes, revisión de código seguro y validación de vulnerabilidades. El modelo se entrena para ser "calibrado en evidencia", es decir, para no afirmar una vulnerabilidad sin respaldo, y para emitir llamadas a herramientas estructuradas dentro de bucles de agente.
 
 Se distribuye únicamente como adaptador PEFT LoRA (0,4 GB) que debe cargarse sobre el modelo base Qwen3-8B. El entrenamiento se realizó con TRL SFTTrainer, PEFT, bitsandbytes y Transformers sobre una base cuantizada en 4 bits NF4, con pérdida calculada solo sobre los tokens del asistente, durante 1 época y 1073 pasos de optimización con una longitud máxima de secuencia de 2048 tokens. La pérdida final de entrenamiento fue de 0,874 y la precisión de tokens de aproximadamente el 77 por ciento.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cyber Qwen3-8B Agent (este) | 8B (adaptador LoRA) | Entrenado a 2048 tokens | Ciberseguridad agentica | Apache-2.0 | Adaptador PEFT en HuggingFace |
-| Qwen/Qwen3-8B (base) | 8B | no disponible en la informacion proporcionada | Proposito general | Apache-2.0 | Modelo completo en HuggingFace |
+| Cyber Qwen3-8B Agent (este) | 8B (adaptador LoRA) | Entrenado a 2048 tokens | Ciberseguridad agentica | Apache-2.0 | Adaptador PEFT en Hugging Face |
+| Qwen/Qwen3-8B (base) | 8B | no disponible en la informacion proporcionada | Proposito general | Apache-2.0 | Modelo completo en Hugging Face |
 | Alternativas especializadas en ciberseguridad de 7-8B | no disponible | no disponible | Ciberseguridad | no disponible | no disponible |
 
 La comparativa con otros modelos especializados en ciberseguridad no esta disponible en la informacion proporcionada. El unico punto de comparacion documentado es el modelo base Qwen3-8B, del que este adaptador hereda arquitectura y licencia.
@@ -86,6 +86,6 @@ La comparativa con otros modelos especializados en ciberseguridad no esta dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/remix3030303/cyber-qwen3-8b-agent-lora
+- Modelo en Hugging Face: https://huggingface.co/remix3030303/cyber-qwen3-8b-agent-lora
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Build MLX 4-bit fusionado para Apple Silicon: https://huggingface.co/remix3030303/cyber-qwen3-8b-agent-MLX-4bit

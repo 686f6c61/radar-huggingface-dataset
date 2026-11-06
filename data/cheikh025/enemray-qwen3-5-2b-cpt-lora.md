@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cheikh025/enemray-qwen3.5-2b-cpt-lora
+- Hugging Face: https://huggingface.co/cheikh025/enemray-qwen3.5-2b-cpt-lora
 - Documentación de Qwen3.5 en Unsloth: https://unsloth.ai/docs/models/qwen3.5
 - Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b
 - Guía de Qwen3.5 en LocalClaw: https://localclaw.io/models/qwen3.5-2b

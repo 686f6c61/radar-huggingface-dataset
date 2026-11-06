@@ -70,8 +70,8 @@ F1 por etiqueta en el test de COMI-LINGUA: UR 0,981, EN 0,948, OTH 0,876. La may
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ruen-lid-xlmr-base-iter1 | 277,4 M | 256 piezas (entrenamiento) | LID a nivel de token UR/EN/OTH | CC BY-SA 4.0 | HuggingFace, 29 descargas |
-| FacebookAI/xlm-roberta-base (base) | 278 M | 512 posiciones | Modelo multilingüe general (MLM) | MIT | HuggingFace, ampliamente usado |
+| ruen-lid-xlmr-base-iter1 | 277,4 M | 256 piezas (entrenamiento) | LID a nivel de token UR/EN/OTH | CC BY-SA 4.0 | Hugging Face, 29 descargas |
+| FacebookAI/xlm-roberta-base (base) | 278 M | 512 posiciones | Modelo multilingüe general (MLM) | MIT | Hugging Face, ampliamente usado |
 | Modelos LID multilingües tipo GlotLID / fastText lid.176 | no disponible | frase | Identificación de idioma a nivel de frase | varía (MIT / CC BY-SA en algunos) | ampliamente disponibles |
 | Clasificadores code-mixing hindi–inglés específicos | no disponible | no disponible | LID en texto code-mixed | varía | no disponible |
 
@@ -90,7 +90,7 @@ La comparación directa con alternativas de la misma categoría (LID a nivel de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmarNiazi/ruen-lid-xlmr-base-iter1
+- Modelo en Hugging Face: https://huggingface.co/OmarNiazi/ruen-lid-xlmr-base-iter1
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Código del pipeline (repositorio privado, según la model card): https://github.com/Mughal-Hash-24/RU-EN-LID
 - Paper del corpus de entrenamiento: Sheth et al., *COMI-LINGUA*, Findings of EMNLP 2025 (referenciado en la model card; sin URL directa en la información disponible)

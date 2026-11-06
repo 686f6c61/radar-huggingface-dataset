@@ -71,7 +71,7 @@ No se dispone de información comparativa con otros adaptadores o modelos de raz
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-cf-s1337-l1)
+- [Página del modelo en Hugging Face](https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-cf-s1337-l1)
 - [Modelo base: allenai/Olmo-3-7B-Think](https://huggingface.co/allenai/Olmo-3-7B-Think)
 - [Adaptador SFT previo: ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l1](https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l1)
 - [Dataset MATH-500](https://huggingface.co/datasets/HuggingFaceH4/MATH-500)

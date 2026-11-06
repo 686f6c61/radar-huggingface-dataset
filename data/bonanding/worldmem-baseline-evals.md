@@ -71,5 +71,5 @@ No disponible. La informacion proporcionada describe un repositorio de evaluacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BonanDing/worldmem-baseline-evals
+- Hugging Face: https://huggingface.co/BonanDing/worldmem-baseline-evals
 - Licencias de terceros: https://huggingface.co/BonanDing/worldmem-baseline-evals/blob/main/THIRD_PARTY.md

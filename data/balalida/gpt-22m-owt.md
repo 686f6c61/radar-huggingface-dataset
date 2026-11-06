@@ -66,5 +66,5 @@ No se dispone de datos de benchmarks comparativos con otros modelos de tamano si
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/balalida/gpt-22M-owt
+- Repositorio en Hugging Face: https://huggingface.co/balalida/gpt-22M-owt
 - Dataset de entrenamiento: https://huggingface.co/datasets/Skylion007/openwebtext

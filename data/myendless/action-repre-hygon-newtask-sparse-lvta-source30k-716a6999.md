@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| myendless/action-repre-hygon-newtask-sparse-lvta-source30k-716a6999 | 4B (base) | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint intermedio, sin cabeza de ejecución entrenada |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace | Modelo base multimodal; no especializado en acción robótica |
+| myendless/action-repre-hygon-newtask-sparse-lvta-source30k-716a6999 | 4B (base) | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint intermedio, sin cabeza de ejecución entrenada |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face | Modelo base multimodal; no especializado en acción robótica |
 | Alternativas VLA de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la búsqueda |
 
 La comparación se limita al modelo base, ya que no se han identificado en la información proporcionada otros checkpoints de representación de acción directamente comparables.
@@ -85,6 +85,6 @@ La comparación se limita al modelo base, ya que no se han identificado en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-hygon-newtask-sparse-lvta-source30k-716a6999
+- Hugging Face: https://huggingface.co/myendless/action-repre-hygon-newtask-sparse-lvta-source30k-716a6999
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Paper, blog, repositorio o demo de Action Representation Benchmark: no disponible en la información proporcionada.

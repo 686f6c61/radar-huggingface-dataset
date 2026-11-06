@@ -2,7 +2,7 @@
 
 ## Resumen
 
-voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en HuggingFace. Se trata de un ajuste fino completo (full fine-tune) del modelo base sw-voice/voxcpm2-indic-multi-lr5e-5-1ep, entrenado con el trainer oficial de VoxCPM sobre el conjunto de datos sw-voice/swamiji-voice-sft-sidon, compuesto por 958 clips en inglés de la voz "Swamiji" restaurada con Sidon. El modelo tiene 2.290.004.544 parámetros y un repositorio de 9,5 GB en formato safetensors.
+voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en Hugging Face. Se trata de un ajuste fino completo (full fine-tune) del modelo base sw-voice/voxcpm2-indic-multi-lr5e-5-1ep, entrenado con el trainer oficial de VoxCPM sobre el conjunto de datos sw-voice/swamiji-voice-sft-sidon, compuesto por 958 clips en inglés de la voz "Swamiji" restaurada con Sidon. El modelo tiene 2.290.004.544 parámetros y un repositorio de 9,5 GB en formato safetensors.
 
 La relevancia del modelo es acotada y de carácter investigador: se trata de un experimento de ajuste fino sobre una arquitectura TTS ya existente, orientado a clonar una voz concreta sin referencia en tiempo de inferencia (reference-free), es decir, con la identidad vocal embebida en los pesos. No se trata de un modelo generalista de nueva generación, sino de una variante especializada para un hablante y un idioma concretos.
 
@@ -79,7 +79,7 @@ No se dispone de información suficiente para comparar rendimiento, contexto o c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-lr5e-5-1ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/sw-voice/swamiji-voice-sft-sidon
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

@@ -92,7 +92,7 @@ El único comparable con datos en la información proporcionada es Qwen3.6-35B-A
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mkd-minkeun/Keural-Lab-1031
+- Hugging Face: https://huggingface.co/mkd-minkeun/Keural-Lab-1031
 - Repo GGUF: https://huggingface.co/mkd-minkeun/Keural-Lab-1031-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Licencia (referenciada en la model card): LICENSE dentro del repo de HuggingFace
+- Licencia (referenciada en la model card): LICENSE dentro del repo de Hugging Face

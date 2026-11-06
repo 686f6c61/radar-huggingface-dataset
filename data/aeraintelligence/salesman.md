@@ -90,6 +90,6 @@ La comparación relevante es contra el propio modelo base: SalesMan 1.0 no aport
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aeraintelligence/SalesMan
+- Repositorio en Hugging Face: https://huggingface.co/aeraintelligence/SalesMan
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Ollama (runtime recomendado): https://ollama.com

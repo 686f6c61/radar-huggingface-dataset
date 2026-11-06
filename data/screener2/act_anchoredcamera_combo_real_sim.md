@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Screener2/act_AnchoredCamera_combo_real_sim | 51,7 M | estado (6,) + imagen 480x640 | no aplica | Apache 2.0 | HuggingFace |
+| Screener2/act_AnchoredCamera_combo_real_sim | 51,7 M | estado (6,) + imagen 480x640 | no aplica | Apache 2.0 | Hugging Face |
 | ACT original (Zhao et al., 2023) | no disponible | estado + imagenes | no aplica | codigo abierto (ver repo) | paper + repo |
 | Diffusion Policy (Chi et al., 2023) | no disponible | estado + imagenes | no aplica | codigo abierto (ver repo) | paper + repo |
-| Otras politicas LeRobot ACT | variable | variable | no aplica | variable | HuggingFace |
+| Otras politicas LeRobot ACT | variable | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada. La comparacion se limita a categoria (politicas de imitacion para manipulacion robotica) y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Screener2/act_AnchoredCamera_combo_real_sim
+- Modelo en Hugging Face: https://huggingface.co/Screener2/act_AnchoredCamera_combo_real_sim
 - Dataset: https://huggingface.co/datasets/Screener2/AnchoredCamera_combo_real_sim
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Screener2/AnchoredCamera_combo_real_sim
 - Paper ACT: https://huggingface.co/papers/2304.13705

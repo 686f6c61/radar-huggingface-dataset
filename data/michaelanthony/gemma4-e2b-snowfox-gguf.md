@@ -77,5 +77,5 @@ No se dispone de información suficiente para comparar directamente este modelo 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-GGUF)
 - [Modelo base: google/gemma-4-E2B-it-qat-q4_0-unquantized](https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized)

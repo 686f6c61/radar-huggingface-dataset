@@ -87,8 +87,8 @@ Nota sobre la busqueda web: existen otros modelos con el nombre "Swift-Qwen3.8-2
 
 ## Enlaces
 
-- HuggingFace de la cuantizacion: https://huggingface.co/glyd/Qwen3.8-27B-swift
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Hugging Face de la cuantizacion: https://huggingface.co/glyd/Qwen3.8-27B-swift
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Commit del modelo base usado: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Nivel penguin (sin perdida): https://huggingface.co/glyd/Qwen3.8-27B-penguin
 - Nivel kestrel (~6,5 bits por peso): https://huggingface.co/glyd/Qwen3.8-27B-kestrel

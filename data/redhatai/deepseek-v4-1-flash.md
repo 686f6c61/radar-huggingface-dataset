@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek AI y distribuido en HuggingFace bajo el identificador RedHatAI/DeepSeek-V4.1-Flash. Procesa de forma nativa imagenes y texto, y genera texto de manera autorregresiva. Su rasgo diferencial no es el tamano bruto, sino la compresion agresiva de la cache KV: segun la model card, reduce la huella global de KV a unos 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y 437 veces menos que la de DeepSeek-V1, lo que abarata drasticamente las cargas de trabajo con entradas muy largas (agentes, RAG masivo, analisis de documentos extensos).
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek AI y distribuido en Hugging Face bajo el identificador RedHatAI/DeepSeek-V4.1-Flash. Procesa de forma nativa imagenes y texto, y genera texto de manera autorregresiva. Su rasgo diferencial no es el tamano bruto, sino la compresion agresiva de la cache KV: segun la model card, reduce la huella global de KV a unos 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y 437 veces menos que la de DeepSeek-V1, lo que abarata drasticamente las cargas de trabajo con entradas muy largas (agentes, RAG masivo, analisis de documentos extensos).
 
 La arquitectura es un transformer con esquema Causal Encoder-Decoder (CED) de 40 capas (20 de encoder causal y 20 de decoder), con Soporte de contexto de hasta 1.000.000 de tokens. La model card declara 552B de parametros en el backbone mas 196B adicionales de memoria condicional Engram, mientras que el conteo real de pesos en safetensors asciende a 763.205.315.794 parametros. El modelo activa solo 8B parametros por token durante el prefill y 16B durante la decodificacion, gracias al enrutamiento MoE (1 experto compartido y 384 expertos enrutados por capa, con 6 activados por token).
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en dos frentes: por un lado, demuestra que la eficie
 | Desarrollador del modelo | DeepSeek AI (repositorio publicado por RedHatAI) |
 | Modalidades de entrada / salida | Entrada de imagen y texto; salida de texto (pipeline image-text-to-text) |
 | Tamano del repositorio | 510,3 GB |
-| Fecha de publicacion en HuggingFace | 2026-09-11 |
+| Fecha de publicacion en Hugging Face | 2026-09-11 |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ La informacion disponible solo permite comparar con otros miembros de la propia 
 
 | Modelo | Parametros | Contexto | Huella de cache KV | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash | 763.205.315.794 (552B backbone + 196B Engram) | 1.000.000 tokens | 890 bytes/token | MIT | HuggingFace (RedHatAI y DeepSeek AI) |
+| DeepSeek-V4.1-Flash | 763.205.315.794 (552B backbone + 196B Engram) | 1.000.000 tokens | 890 bytes/token | MIT | Hugging Face (RedHatAI y DeepSeek AI) |
 | DeepSeek-V4-Flash | no disponible | no disponible | aproximadamente 4x la de V4.1-Flash | no disponible | no disponible |
 | DeepSeek-V1 | no disponible | no disponible | aproximadamente 437x la de V4.1-Flash | no disponible | no disponible |
 
@@ -104,8 +104,8 @@ Frente a modelos comparables de otros desarrolladores (por ejemplo, otras famili
 
 ## Enlaces
 
-- Modelo en HuggingFace (RedHatAI): https://huggingface.co/RedHatAI/DeepSeek-V4.1-Flash
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Modelo en Hugging Face (RedHatAI): https://huggingface.co/RedHatAI/DeepSeek-V4.1-Flash
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Informe tecnico (DeepSeek_V41_Tech_Report.pdf), referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Receta de despliegue en vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4.1-Flash
 - Analisis de rendimiento en Artificial Analysis: https://artificialanalysis.ai/models/deepseek-v4-1-flash

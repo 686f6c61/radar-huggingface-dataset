@@ -79,7 +79,7 @@ La principal diferencia con las alternativas es el formato: este repositorio ofr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aphrodite-tg/requel-models
+- Repositorio Hugging Face: https://huggingface.co/aphrodite-tg/requel-models
 - Proyecto Requel: https://gitgud.io/xchange-life/xcl-requel-experiments
 - U^2-Net original: https://github.com/xuebinqin/U-2-Net
 - Real-ESRGAN original: https://github.com/xinntao/Real-ESRGAN

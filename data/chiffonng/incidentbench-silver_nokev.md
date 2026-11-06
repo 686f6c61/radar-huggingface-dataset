@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores o model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-silver_nokev
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-silver_nokev
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe de IncidentBench: no disponible como enlace en la informacion proporcionada
 - Repositorio del proyecto (referencias a `data_manifest.json`, `train_manifest.json`, `train/build_data.py`): no disponible como enlace en la informacion proporcionada

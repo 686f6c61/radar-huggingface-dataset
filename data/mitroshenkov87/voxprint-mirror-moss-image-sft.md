@@ -76,11 +76,11 @@ Los datos de los modelos comparados proceden de su documentación pública y no 
 
 | Modelo | Parámetros | Licencia | Control de maquetación | Disponibilidad |
 |---|---|---|---|---|
-| MOSS-Image-SFT (este repositorio, espejo) | ≈5,08 B | Apache-2.0 | Prompts, secuencias de etiquetas y layouts JSON | HuggingFace, ModelScope, ComfyUI |
-| MOSS-Image-Base | No disponible en la información proporcionada | Apache-2.0 | Mismo pipeline; menor calidad de agrupación de texto según la comparativa del autor | HuggingFace, ModelScope |
-| FLUX.1-dev | ≈12 B | Licencia no comercial de FLUX.1 [dev] | Principalmente prompt en lenguaje natural | HuggingFace |
-| Stable Diffusion 3.5 Large | ≈8 B | Stability AI Community License | Prompt en lenguaje natural | HuggingFace |
-| Qwen-Image | ≈20 B | Apache-2.0 | Prompt en lenguaje natural; renderizado de texto destacado | HuggingFace, ModelScope |
+| MOSS-Image-SFT (este repositorio, espejo) | ≈5,08 B | Apache-2.0 | Prompts, secuencias de etiquetas y layouts JSON | Hugging Face, ModelScope, ComfyUI |
+| MOSS-Image-Base | No disponible en la información proporcionada | Apache-2.0 | Mismo pipeline; menor calidad de agrupación de texto según la comparativa del autor | Hugging Face, ModelScope |
+| FLUX.1-dev | ≈12 B | Licencia no comercial de FLUX.1 [dev] | Principalmente prompt en lenguaje natural | Hugging Face |
+| Stable Diffusion 3.5 Large | ≈8 B | Stability AI Community License | Prompt en lenguaje natural | Hugging Face |
+| Qwen-Image | ≈20 B | Apache-2.0 | Prompt en lenguaje natural; renderizado de texto destacado | Hugging Face, ModelScope |
 
 Frente a estas alternativas, la ventaja declarada de MOSS-Image-SFT es el control estructurado de la composición mediante JSON y su licencia Apache-2.0, que permite uso comercial sin las restricciones de FLUX.1-dev o de la licencia comunitaria de Stability. Como contrapartida, su comunidad es mucho menor (0 descargas y 0 likes en este espejo) y carece de benchmarks públicos en la información disponible.
 
@@ -99,7 +99,7 @@ Frente a estas alternativas, la ventaja declarada de MOSS-Image-SFT es el contro
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/Mitroshenkov87/voxprint-mirror-moss-image-sft
+- Repositorio espejo en Hugging Face: https://huggingface.co/Mitroshenkov87/voxprint-mirror-moss-image-sft
 - Modelo original: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Repositorio de código: https://github.com/OpenMOSS/MOSS-Image
@@ -107,7 +107,7 @@ Frente a estas alternativas, la ventaja declarada de MOSS-Image-SFT es el contro
 - Índice de modelos del espejo: https://huggingface.co/Mitroshenkov87/voxprint-model-index
 - ModelScope (SFT): https://modelscope.cn/models/openmoss/MOSS-Image-SFT
 - ModelScope (Base): https://modelscope.cn/models/openmoss/MOSS-Image-Base
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Página del proyecto: https://openmoss.github.io/MOSS-Image/
 - Informe técnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - Guía de usuario: https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md

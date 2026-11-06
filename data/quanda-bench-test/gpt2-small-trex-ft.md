@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`quanda-bench-test/gpt2-small-trex-ft` es un checkpoint de GPT-2 Small (162,6 millones de parámetros) publicado en HuggingFace por el usuario `quanda-bench-test`, presumiblemente como parte de un banco de pruebas de cuantización y evaluación (el prefijo "quanda" sugiere un entorno de test de quantización). El modelo se presenta como un fine-tuning de GPT-2 Small sobre algún dataset no documentado, con la etiqueta `nanogpt` que indica que el entrenamiento o el ajuste se realizó con el framework NanoGPT de Andrej Karpathy.
+`quanda-bench-test/gpt2-small-trex-ft` es un checkpoint de GPT-2 Small (162,6 millones de parámetros) publicado en Hugging Face por el usuario `quanda-bench-test`, presumiblemente como parte de un banco de pruebas de cuantización y evaluación (el prefijo "quanda" sugiere un entorno de test de quantización). El modelo se presenta como un fine-tuning de GPT-2 Small sobre algún dataset no documentado, con la etiqueta `nanogpt` que indica que el entrenamiento o el ajuste se realizó con el framework NanoGPT de Andrej Karpathy.
 
-La relevancia de este modelo es limitada: se trata de un artefacto de experimentación con 8 descargas y sin model card sustantiva (la tarjeta es la plantilla automática de HuggingFace sin rellenar). No obstante, su interés técnico radica en que permite reproducir experimentos de cuantización y evaluación sobre un transformer decoder-only pequeño y bien conocido, con licencia MIT y pesos en safetensors.
+La relevancia de este modelo es limitada: se trata de un artefacto de experimentación con 8 descargas y sin model card sustantiva (la tarjeta es la plantilla automática de Hugging Face sin rellenar). No obstante, su interés técnico radica en que permite reproducir experimentos de cuantización y evaluación sobre un transformer decoder-only pequeño y bien conocido, con licencia MIT y pesos en safetensors.
 
 Arquitectura transformer decoder-only clásica de GPT-2 Small (12 capas, 12 cabezas de atención, dimensión 768, contexto de 1024 tokens), sin innovaciones arquitectónicas destacables. Es un modelo de laboratorio, no un modelo de producción.
 
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| quanda-bench-test/gpt2-small-trex-ft | 162,6 M | 1024 (estándar GPT-2) | MIT | HuggingFace | Fine-tuning no documentado, 8 descargas |
-| openai-community/gpt2 | 124 M | 1024 | MIT | HuggingFace | Modelo base original de OpenAI, ampliamente usado |
-| openai-community/gpt2-medium | 355 M | 1024 | MIT | HuggingFace | Versión media de la familia GPT-2 |
-| EleutherAI/pythia-160m | 162 M | 2048 | Apache 2.0 | HuggingFace | Modelo de investigación con checkpoints intermedios y dataset documentado |
+| quanda-bench-test/gpt2-small-trex-ft | 162,6 M | 1024 (estándar GPT-2) | MIT | Hugging Face | Fine-tuning no documentado, 8 descargas |
+| openai-community/gpt2 | 124 M | 1024 | MIT | Hugging Face | Modelo base original de OpenAI, ampliamente usado |
+| openai-community/gpt2-medium | 355 M | 1024 | MIT | Hugging Face | Versión media de la familia GPT-2 |
+| EleutherAI/pythia-160m | 162 M | 2048 | Apache 2.0 | Hugging Face | Modelo de investigación con checkpoints intermedios y dataset documentado |
 
 El modelo se sitúa en la misma clase que GPT-2 Small y Pythia-160M. Frente a ellos, carece de documentación de entrenamiento y de benchmarks publicados, por lo que su utilidad práctica es inferior salvo para experimentos de cuantización controlados.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automática de HuggingFace sin rellenar: no hay información sobre datos de entrenamiento, sesgos, evaluación ni uso previsto.
+- La model card es la plantilla automática de Hugging Face sin rellenar: no hay información sobre datos de entrenamiento, sesgos, evaluación ni uso previsto.
 - Riesgo elevado de alucinación y de generar texto incoherente o factualmente incorrecto, propio de un modelo de 162 M de parámetros.
 - Sesgos conocidos de GPT-2 (género, raza, religión) heredados del preentrenamiento original, no mitigados según la información disponible.
 - Capacidad multilingüe muy limitada; el entrenamiento de GPT-2 se centró en inglés.
@@ -86,7 +86,7 @@ El modelo se sitúa en la misma clase que GPT-2 Small y Pythia-160M. Frente a el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quanda-bench-test/gpt2-small-trex-ft
+- Modelo en Hugging Face: https://huggingface.co/quanda-bench-test/gpt2-small-trex-ft
 - Paper de GPT-2 (Radford et al., 2019): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Repositorio NanoGPT: https://github.com/karpathy/nanoGPT
 - Paper de impacto ambiental (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

@@ -101,8 +101,8 @@ No se han encontrado en la información proporcionada datos de benchmarks de cal
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hosstia/AliceAI-T5-35B-A0.6B-MLX-4bit | 35B totales, 0,6B activos | No especificada (RoPE YaRN, base 9984, factor 20,0) | MLX safetensors 4-bit | other | HuggingFace, 0 descargas, 0 likes |
-| yandex/AliceAI-T5-35B-A0.6B (modelo base) | 35B totales, 0,6B activos | no disponible | no disponible | no disponible | HuggingFace (referenciado como base_model) |
+| Hosstia/AliceAI-T5-35B-A0.6B-MLX-4bit | 35B totales, 0,6B activos | No especificada (RoPE YaRN, base 9984, factor 20,0) | MLX safetensors 4-bit | other | Hugging Face, 0 descargas, 0 likes |
+| yandex/AliceAI-T5-35B-A0.6B (modelo base) | 35B totales, 0,6B activos | no disponible | no disponible | no disponible | Hugging Face (referenciado como base_model) |
 | Otras alternativas de traducción zh-ru | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La búsqueda web realizada no devolvió resultados relevantes sobre modelos comparables; los resultados obtenidos no guardaban relación con la consulta.
@@ -123,7 +123,7 @@ La búsqueda web realizada no devolvió resultados relevantes sobre modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hosstia/AliceAI-T5-35B-A0.6B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Hosstia/AliceAI-T5-35B-A0.6B-MLX-4bit
 - Modelo base (Yandex): https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 - Artículo técnico sobre el proceso de conversión: incluido en el repositorio como `ARTICLE.md`
 - Código de ejecución: paquete `aliceai_mlx`, `chat.py` y `requirements.txt` incluidos en el repositorio del modelo

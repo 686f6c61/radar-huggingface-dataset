@@ -55,4 +55,4 @@ No disponible. No se conocen modelos comparables en la misma categoria, ya que s
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r515-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-lora
+- Repositorio de Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r515-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-lora

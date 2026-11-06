@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_weightedavg_merge` es un modelo de lenguaje de 6.856 millones de parametros publicado en HuggingFace por el usuario `yuhengtu-bytedance`. No es un modelo entrenado desde cero, sino el resultado de fusionar cinco checkpoints del mismo entrenamiento (pasos 8000, 9000, 10000, 11000 y 12040) mediante el metodo Linear de [mergekit](https://github.com/cg123/mergekit), con pesos 1, 2, 3, 4 y 5 respectivamente y normalizacion activada.
+`sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_weightedavg_merge` es un modelo de lenguaje de 6.856 millones de parametros publicado en Hugging Face por el usuario `yuhengtu-bytedance`. No es un modelo entrenado desde cero, sino el resultado de fusionar cinco checkpoints del mismo entrenamiento (pasos 8000, 9000, 10000, 11000 y 12040) mediante el metodo Linear de [mergekit](https://github.com/cg123/mergekit), con pesos 1, 2, 3, 4 y 5 respectivamente y normalizacion activada.
 
 El problema que resuelve es acotado y de investigacion: promediar los pesos de varias instantaneas de un mismo run suele producir un modelo mas robusto que cualquiera de los checkpoints individuales, sin coste adicional de inferencia. En este caso, el nombre del repositorio sugiere un pipeline interno de investigacion sobre seguridad (rutas del tipo `/opt/tiger/Pan_Safety_Better_Measurement/...`), y los sufijos 8k-12k del identificador coinciden con los pasos de entrenamiento fusionados.
 
@@ -18,7 +18,7 @@ Su relevancia practica es limitada pero real: es un artefacto de investigacion q
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | No se han publicado cuantizaciones. La arquitectura es convertible a GGUF, GPTQ o AWQ, pero el autor no ofrece versiones cuantizadas |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors en bfloat16 (el merge se calculo en float32 y se guardo en bfloat16) |
 | Metodo de fusion | Linear (mergekit), con `normalize: true` |
 | Checkpoints fusionados | global_step8000 (peso 1), global_step9000 (peso 2), global_step10000 (peso 3), global_step11000 (peso 4), global_step12040 (peso 5, tambien base del merge) |
@@ -82,14 +82,14 @@ La comparacion con Pythia-6.9B es la mas pertinente en terminos de arquitectura,
 - Riesgo de alucinacion: no medido. Un modelo sin evaluacion publicada y con 0 descargas no ha pasado por ninguna validacion externa, por lo que la tasa de alucinacion es desconocida.
 - Limitaciones de contexto e idioma: la longitud de contexto no esta documentada, y no se declara ningun idioma soportado. No debe asumirse un rendimiento correcto en castellano.
 - Licencia: al no declararse licencia, el uso comercial queda en una situacion de incertidumbre legal. No debe utilizarse en produccion ni distribuirse sin aclarar antes los terminos con el autor.
-- Reproducibilidad: la receta de fusion apunta a rutas locales del entorno del autor (`/opt/tiger/Pan_Safety_Better_Measurement/...`), no a identificadores de HuggingFace. Los checkpoints fuente no son publicos, por lo que el merge no se puede reproducir ni auditar.
+- Reproducibilidad: la receta de fusion apunta a rutas locales del entorno del autor (`/opt/tiger/Pan_Safety_Better_Measurement/...`), no a identificadores de Hugging Face. Los checkpoints fuente no son publicos, por lo que el merge no se puede reproducir ni auditar.
 - Procedencia opaca: el prefijo `sfm_filtered_insert_xxf_character` y el nombre del proyecto (`Pan_Safety_Better_Measurement`) no estan explicados en la model card. Se desconoce si el checkpoint final del run fue filtrado por criterios de seguridad y si ese filtrado se preserva en el promedio.
 - Riesgo de merge accidental: el repositorio parece un artefacto de un experimento interno publicado sin curacion. Se recomienda tratar los pesos como material de investigacion, no como un modelo listo para producto.
 - Ausencia de cuantizaciones oficiales: cualquier GGUF, GPTQ o AWQ habria que generarlo por cuenta propia y validarlo, sin referencia de calidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_weightedavg_merge
 - mergekit (herramienta usada para la fusion): https://github.com/cg123/mergekit
 - Articulo del metodo Linear, *Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time*: https://arxiv.org/abs/2203.05482
 - Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a sitios de pizzerias sin relacion con el repositorio. No se dispone de paper, blog, demo ni repositorio adicional del autor.

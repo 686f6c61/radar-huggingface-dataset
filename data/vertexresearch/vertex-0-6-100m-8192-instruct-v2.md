@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada: aproximadamente 0.4 GB en precision bf16, lo que permite inferencia en practicamente cualquier GPU moderna con mas de 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1650, RTX 3050 o incluso iGPUs con suficiente memoria compartida.
 - CPU: ejecutable en CPU unicamente con latencias aceptables para un modelo de 100M parametros, usando cuantizacion dinamica o simplemente bf16.
-- Opciones de despliegue: compatible con transformers de HuggingFace, vLLM, llama.cpp, Ollama y text-generation-inference (TGI), segun las etiquetas del repositorio.
+- Opciones de despliegue: compatible con transformers de Hugging Face, vLLM, llama.cpp, Ollama y text-generation-inference (TGI), segun las etiquetas del repositorio.
 - Latencia: no disponible, pero por su tamano se espera una generacion de decenas de tokens por segundo incluso en CPU modernas.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa se basa en caracteristicas generales conocidas de estos modelos; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2
+- Modelo en Hugging Face: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2
 - Modelo base: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-ctx-Base
 - Version Instruct anterior: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct
 - Ficha en LLM Explorer: https://llm-explorer.com/model/VertexResearch%2FVertex-0.6-100M-8192-Instruct,4ADuXMqQY5cB5iZzjPqBPu

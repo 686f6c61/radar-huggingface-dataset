@@ -100,7 +100,7 @@ La comparativa es orientativa: no se dispone de métricas de precisión ni laten
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE26l_COCOKeypoint
+- Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE26l_COCOKeypoint
 - Modelo original Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints: https://cocodataset.org
 - Blaize: https://www.blaize.com

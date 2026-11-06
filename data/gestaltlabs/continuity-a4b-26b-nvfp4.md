@@ -16,7 +16,7 @@ Es relevante ahora porque el requisito de NVFP4 obliga a hardware Blackwell (sm1
 | Parametros totales | 14.386.941.232 segun safetensors del repositorio; la model card declara 26.301.723.952 en el checkpoint (25,2B en el modelo de lenguaje + torre de vision) |
 | Parametros activos | ~3,8B de 25,2B parametros del modelo de lenguaje (MoE) |
 | Longitud de contexto | 8192 tokens configurados en el ejemplo de despliegue con vLLM (max_model_len); no se declara la longitud nativa del modelo base |
-| Tipos de cuantizacion | NVFP4 (4 bits, solo expertos), generada con NVIDIA ModelOpt; la model card la etiqueta como 8-bit en los tags de HuggingFace |
+| Tipos de cuantizacion | NVFP4 (4 bits, solo expertos), generada con NVIDIA ModelOpt; la model card la etiqueta como 8-bit en los tags de Hugging Face |
 | Idiomas soportados | Ingles (en) |
 | Licencia | apache-2.0, con license_link apuntando a la licencia de Gemma 4 (ver advertencias) |
 | Formato de pesos | safetensors (repo de 18,8 GB; la model card indica 17,5 GB), compatible con vLLM |
@@ -74,7 +74,7 @@ Representacion HTML (marcado crudo):
 | NuExtract3 | 0,8779 | 0,3010 | 1,00 | 0,085 |
 | ReaderLM-v2 | 0,8206 | 0,4175 | 0,00 | 0,192 |
 
-Advertencias sobre estas cifras: la columna paginas/s no es comparable de forma estricta, porque las mediciones propias se hicieron con vLLM sobre RTX PRO 6000 Blackwell y las filas de comparacion con generate_batch de HuggingFace en otras GPU. Ademas, el resumen de la model card cita 0,8932 de exito estricto en IR y 0,9515 en HTML, mientras que la tabla de IR asigna 0,8932 al bf16 de origen y 0,9029 a esta build NVFP4; no se dispone de aclaracion del autor sobre esa discrepancia. No hay datos de MMLU, HumanEval, GSM8K ni otros benchmarks generalistas en la informacion proporcionada.
+Advertencias sobre estas cifras: la columna paginas/s no es comparable de forma estricta, porque las mediciones propias se hicieron con vLLM sobre RTX PRO 6000 Blackwell y las filas de comparacion con generate_batch de Hugging Face en otras GPU. Ademas, el resumen de la model card cita 0,8932 de exito estricto en IR y 0,9515 en HTML, mientras que la tabla de IR asigna 0,8932 al bf16 de origen y 0,9029 a esta build NVFP4; no se dispone de aclaracion del autor sobre esa discrepancia. No hay datos de MMLU, HumanEval, GSM8K ni otros benchmarks generalistas en la informacion proporcionada.
 
 ## Requisitos de hardware
 
@@ -91,11 +91,11 @@ Advertencias sobre estas cifras: la columna paginas/s no es comparable de forma 
 
 | Modelo | Parametros / tamano | Tarea | success IR | success HTML | schema-valid IR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| continuity-a4b-26b-nvfp4 | MoE 4-bit, 18 GB (14,39B segun safetensors) | Extraccion con esquema | 0,9029 | no medido para esta build | 1,00 | apache-2.0 (con matices) | HuggingFace, requiere Blackwell |
-| continuity-a4b-26b (bf16) | MoE bf16, 49 GB | Extraccion con esquema | 0,8932 | 0,9515 (con LoRA) | 1,00 | apache-2.0 (con matices) | HuggingFace |
-| gemma-4-26B-A4B-it zero-shot | MoE bf16, 52 GB | Modelo generalista multimodal | 0,9029 | 0,6311 | 0,00 | licencia Gemma 4 | HuggingFace |
-| NuExtract3 | 4B denso, 8 GB | Extraccion con esquema | 0,6699 | 0,3010 | 0,94 | no disponible | HuggingFace |
-| ReaderLM-v2 | 1,5B, 3 GB | Extraccion / conversion a markdown | 0,3786 | 0,4175 | 0,00 | no disponible | HuggingFace |
+| continuity-a4b-26b-nvfp4 | MoE 4-bit, 18 GB (14,39B segun safetensors) | Extraccion con esquema | 0,9029 | no medido para esta build | 1,00 | apache-2.0 (con matices) | Hugging Face, requiere Blackwell |
+| continuity-a4b-26b (bf16) | MoE bf16, 49 GB | Extraccion con esquema | 0,8932 | 0,9515 (con LoRA) | 1,00 | apache-2.0 (con matices) | Hugging Face |
+| gemma-4-26B-A4B-it zero-shot | MoE bf16, 52 GB | Modelo generalista multimodal | 0,9029 | 0,6311 | 0,00 | licencia Gemma 4 | Hugging Face |
+| NuExtract3 | 4B denso, 8 GB | Extraccion con esquema | 0,6699 | 0,3010 | 0,94 | no disponible | Hugging Face |
+| ReaderLM-v2 | 1,5B, 3 GB | Extraccion / conversion a markdown | 0,3786 | 0,4175 | 0,00 | no disponible | Hugging Face |
 
 La lectura de la comparativa es que el fine-tune no mejora tanto la precision de campo como la usabilidad: gemma-4-26B-A4B zero-shot empata en exito IR (0,9029) pero no produce salida valida contra esquema en ningun caso (JSON envuelto en vallas de codigo o prosa), y su exito en HTML cae a 0,6311 frente a 0,9515 del fine-tune. Los modelos densos pequenos (NuExtract3, ReaderLM-v2) quedan muy por debajo en exito estricto, aunque NuExtract3 logra 0,94 de validez de esquema con solo 8 GB.
 
@@ -116,7 +116,7 @@ La lectura de la comparativa es que el fine-tune no mejora tanto la precision de
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/GestaltLabs/continuity-a4b-26b-nvfp4
+- Hugging Face (este repositorio): https://huggingface.co/GestaltLabs/continuity-a4b-26b-nvfp4
 - Modelo base bf16 del fine-tune: https://huggingface.co/GestaltLabs/continuity-a4b-26b
 - Modelo original de Google: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia referenciada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license

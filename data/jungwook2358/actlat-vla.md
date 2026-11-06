@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jungwook2358/actlat-vla` es un repositorio de pesos publicado en HuggingFace por el usuario jungwook2358. Se trata de un modelo del que la informacion publica disponible es minima: la ficha de HuggingFace no declara pipeline, licencia, idiomas soportados ni documentacion tecnica asociada, y unicamente expone las etiquetas `safetensors` y `region:us`. El repositorio ocupa 265,3 GB, un volumen que situa el checkpoint en la categoria de modelos de gran escala y que condiciona por completo las opciones de despliegue.
+`jungwook2358/actlat-vla` es un repositorio de pesos publicado en Hugging Face por el usuario jungwook2358. Se trata de un modelo del que la informacion publica disponible es minima: la ficha de Hugging Face no declara pipeline, licencia, idiomas soportados ni documentacion tecnica asociada, y unicamente expone las etiquetas `safetensors` y `region:us`. El repositorio ocupa 265,3 GB, un volumen que situa el checkpoint en la categoria de modelos de gran escala y que condiciona por completo las opciones de despliegue.
 
 El identificador del repositorio incluye el sufijo `vla`, sigla habitualmente asociada a los modelos vision-language-action (modelos que combinan percepcion visual, comprension del lenguaje y generacion de acciones motoras, tipicos en robotica). Sin embargo, esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por ninguna documentacion del autor, por lo que debe tratarse como no verificada hasta que se publique una model card completa.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente cautelar:
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La ficha de HuggingFace no incluye model card, configuracion, ni referencia a paper o repositorio de codigo. La unica etiqueta tecnica presente es `safetensors`, que indica el formato de serializacion de los pesos, no la topologia de la red. No hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
+No se ha publicado informacion sobre la arquitectura del modelo. La ficha de Hugging Face no incluye model card, configuracion, ni referencia a paper o repositorio de codigo. La unica etiqueta tecnica presente es `safetensors`, que indica el formato de serializacion de los pesos, no la topologia de la red. No hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
 
 Tampoco existe informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, RLVR) o cualquier innovacion tecnica. El sufijo `vla` del identificador sugiere, de forma no confirmada, un posible enfoque vision-language-action, lo que implicaria entrenamiento con datos multimodales y posiblemente datos de robotica o de trayectorias de accion. Al no existir documentacion, cualquier afirmacion al respecto seria especulativa.
 
@@ -89,7 +89,7 @@ No disponible. No se conocen modelos comparables a partir de la informacion prop
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Repositorio HuggingFace de 265,3 GB | no disponible |
+| Disponibilidad | Repositorio Hugging Face de 265,3 GB | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -106,8 +106,8 @@ No disponible. No se conocen modelos comparables a partir de la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jungwook2358/actlat-vla
-- Perfil del autor en HuggingFace: https://huggingface.co/jungwook2358
+- Repositorio en Hugging Face: https://huggingface.co/jungwook2358/actlat-vla
+- Perfil del autor en Hugging Face: https://huggingface.co/jungwook2358
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

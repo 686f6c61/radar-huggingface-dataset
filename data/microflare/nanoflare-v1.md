@@ -74,6 +74,6 @@ La comparativa se limita a aspectos estructurales, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MicroFlare/nanoFlare-v1
+- Repositorio Hugging Face: https://huggingface.co/MicroFlare/nanoFlare-v1
 - Modelo base (Qwen/Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
-- Perfil de MicroFlare en HuggingFace: https://huggingface.co/MicroFlare/models
+- Perfil de MicroFlare en Hugging Face: https://huggingface.co/MicroFlare/models

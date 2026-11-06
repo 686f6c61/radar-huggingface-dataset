@@ -77,7 +77,7 @@ La comparación directa con estos modelos no es posible porque KisanSLM está fi
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/prabhu09/KisanSLM-GGUF
+- Hugging Face (modelo): https://huggingface.co/prabhu09/KisanSLM-GGUF
 - Perfil del autor: https://huggingface.co/prabhu09
 - Documentación de IndiaAI (modelo KisanSLM-Qwen3-1-7b-GGUF): https://aikosh.indiaai.gov.in/home/models/details/kisanslm_qwen3_1_7b_gguf.html
 - Repositorio de Unsloth (herramienta de entrenamiento y conversión): https://github.com/unslothai/unsloth

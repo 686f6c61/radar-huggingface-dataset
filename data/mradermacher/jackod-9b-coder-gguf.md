@@ -95,7 +95,7 @@ Rendimiento comparado (benchmarks de codigo, MMLU, etc.): no disponible para el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/JackOD-9B-Coder-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/JackOD-9B-Coder-GGUF
 - Modelo base: https://huggingface.co/ManniX-ITA/JackOD-9B-Coder
 - Cuantizaciones ponderadas (imatrix): https://huggingface.co/mradermacher/JackOD-9B-Coder-i1-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#JackOD-9B-Coder-GGUF

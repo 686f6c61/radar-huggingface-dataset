@@ -70,6 +70,6 @@ No se dispone de información sobre adaptadores LoRA comparables para el mismo i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Doyin11111111111/adaption_yoruba_pronoun_etiquette
+- Repositorio Hugging Face: https://huggingface.co/Doyin11111111111/adaption_yoruba_pronoun_etiquette
 - Plataforma Adaption Labs: https://adaptionlabs.ai
 - Modelo base: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct

@@ -4,7 +4,7 @@
 
 El modelo `francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/tur_latn_10mb`, un checkpoint de la familia Goldfish orientado al turco en escritura latina. El ajuste se ha realizado mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face, según declara la propia model card. Se trata de un modelo muy pequeno: 39.087.104 parametros (aproximadamente 39 millones) confirmados en los pesos en formato safetensors.
 
-El modelo pertenece a la arquitectura GPT-2 (asi aparece etiquetado en HuggingFace) y esta pensado para generacion de texto causal. Su relevancia es fundamentalmente experimental: sirve como banco de pruebas de bajo coste para experimentos de ajuste supervisado, tokenizacion y pipelines de TRL, no como modelo de proposito general para produccion.
+El modelo pertenece a la arquitectura GPT-2 (asi aparece etiquetado en Hugging Face) y esta pensado para generacion de texto causal. Su relevancia es fundamentalmente experimental: sirve como banco de pruebas de bajo coste para experimentos de ajuste supervisado, tokenizacion y pipelines de TRL, no como modelo de proposito general para produccion.
 
 La model card es minima y no declara licencia, idiomas soportados ni detalles del dataset de entrenamiento. El nombre del repositorio sugiere un entrenamiento sobre datos empaquetados de 100 MB con una semilla concreta (seed 10), pero esto no esta confirmado en la documentacion del autor y debe tratarse como una interpretacion del nombre, no como un dato verificado.
 
@@ -68,10 +68,10 @@ La model card no incluye metricas de evaluacion (perplejidad, MMLU, HumanEval, G
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10` | 39,09 M | no disponible | turco (segun modelo base) | no disponible | safetensors en HuggingFace, 0 descargas |
-| `goldfish-models/tur_latn_10mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | turco (escritura latina) | no disponible | HuggingFace |
-| `openai-community/gpt2` (referencia de arquitectura) | 124 M | 1024 tokens | ingles | MIT (segun su propia model card) | HuggingFace |
-| `distilgpt2` (alternativa compacta de referencia) | 82 M | 1024 tokens | ingles | Apache 2.0 (segun su propia model card) | HuggingFace |
+| `francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10` | 39,09 M | no disponible | turco (segun modelo base) | no disponible | safetensors en Hugging Face, 0 descargas |
+| `goldfish-models/tur_latn_10mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | turco (escritura latina) | no disponible | Hugging Face |
+| `openai-community/gpt2` (referencia de arquitectura) | 124 M | 1024 tokens | ingles | MIT (segun su propia model card) | Hugging Face |
+| `distilgpt2` (alternativa compacta de referencia) | 82 M | 1024 tokens | ingles | Apache 2.0 (segun su propia model card) | Hugging Face |
 
 Nota: los datos de contexto, licencia y parametros de las alternativas corresponden a sus fichas publicas habituales; no se dispone de una comparacion de rendimiento publicada entre este modelo y las alternativas, por lo que no se incluyen cifras de benchmarks.
 
@@ -89,7 +89,7 @@ Nota: los datos de contexto, licencia y parametros de las alternativas correspon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tur_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/q4lg5rs4
 - Repositorio de TRL: https://github.com/huggingface/trl

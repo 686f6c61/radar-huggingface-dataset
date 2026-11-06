@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dpp-gpt V2.2 Base (260M) es un modelo de lenguaje de 242 millones de parámetros únicos (259M contando el embedding de salida, que comparte pesos con el de entrada) entrenado íntegramente desde cero por un único desarrollador, identificado en HuggingFace como `dikiyplayerpig`, sobre una sola GPU de consumo RTX 4060. Sigue una arquitectura de estilo Llama (RMSNorm, RoPE, SwiGLU, GQA con 4 cabezas KV) con 20 capas, dimensión oculta de 1024 y un vocabulario BPE propio de 16.384 tokens. Soporta ruso, inglés y francés, con una ventana de contexto de 8.192 tokens.
+dpp-gpt V2.2 Base (260M) es un modelo de lenguaje de 242 millones de parámetros únicos (259M contando el embedding de salida, que comparte pesos con el de entrada) entrenado íntegramente desde cero por un único desarrollador, identificado en Hugging Face como `dikiyplayerpig`, sobre una sola GPU de consumo RTX 4060. Sigue una arquitectura de estilo Llama (RMSNorm, RoPE, SwiGLU, GQA con 4 cabezas KV) con 20 capas, dimensión oculta de 1024 y un vocabulario BPE propio de 16.384 tokens. Soporta ruso, inglés y francés, con una ventana de contexto de 8.192 tokens.
 
 Se trata de un modelo **base**: solo ha pasado por preentrenamiento, sin ajuste de instrucciones ni de diálogo. Continúa texto libre y, gracias a que parte de los datos de preentrenamiento ya venían en formato ChatML, reproduce habilidades concretas inyectadas de forma sintética (aritmética descompuesta, deletreo, conteo de letras, traducción) cuando se le interroga con esa plantilla. El autor publica además una variante orientada a conversación, `dpp-gpt-V2.2-Pro-preview-260m`.
 
@@ -99,7 +99,7 @@ La comparación de rendimiento con estas alternativas no está disponible: dpp-g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-base-260m
+- Modelo en Hugging Face: https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-base-260m
 - Versión de conversación (Pro preview): https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-Pro-preview-260m
 - Versión anterior 2.1 Base: https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.1-base-260m
 - Paper, blog o repositorio adicionales: no disponible en la información proporcionada.

@@ -90,7 +90,7 @@ Los datos de parametros, contexto y rendimiento de los modelos alternativos no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suvadityamuk/TripoSG-diffusers-3d
+- Modelo en Hugging Face: https://huggingface.co/suvadityamuk/TripoSG-diffusers-3d
 - Modelo base VAST-AI/TripoSG: https://huggingface.co/VAST-AI/TripoSG
 - Repositorio TripoSG en GitHub: https://github.com/VAST-AI-Research/TripoSG
 - Paquete diffusers-3d: https://github.com/suvadityamuk/diffusers

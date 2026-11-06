@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto nativo | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Yejin Korean 8B v3 Base | 7,24B (safetensors) / ~7,52B declarados | 4.096 tokens | Apache 2.0 | ko, en | Pesos safetensors en HuggingFace; 202 descargas, 0 likes |
+| Yejin Korean 8B v3 Base | 7,24B (safetensors) / ~7,52B declarados | 4.096 tokens | Apache 2.0 | ko, en | Pesos safetensors en Hugging Face; 202 descargas, 0 likes |
 | Qwen3-8B | ~8B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | multilingue amplio | Pesos oficiales, cuantizaciones GGUF/AWQ/GPTQ, gran ecosistema |
 | Llama 3.1 8B | ~8B | 128.000 tokens | Llama 3.1 Community License (no OSI) | multilingue | Pesos oficiales, ecosistema amplio |
 | Mistral 7B v0.3 | ~7,2B | 32.768 tokens | Apache 2.0 | principalmente en, con multilingue parcial | Pesos oficiales y cuantizaciones |
@@ -94,7 +94,7 @@ La diferencia principal no esta en el tamano, practicamente identico entre las c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-base
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-base
 - Version 3B v1 base del mismo autor: https://huggingface.co/cooler8/yejin-korean-3b-v1-base
 - Arbol de ficheros de la version 3B: https://huggingface.co/cooler8/yejin-korean-3b-v1-base/tree/main
 - Ficha de la variante Yejin Korean 3B V2 SFT en LLM Explorer: https://llm-explorer.com/model/cooler8%2Fyejin-korean-3b-v2-sft,13zVMOISDzofnNt3CquKVM

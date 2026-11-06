@@ -6,7 +6,7 @@ Cosmos-Reason2-2B es un modelo de lenguaje y visión (VLM) de razonamiento desar
 
 Se basa en el modelo Qwen/Qwen3-VL-2B-Instruct, del que hereda la arquitectura transformer multimodal, y ha sido adaptado por NVIDIA para tareas de razonamiento físico. Con aproximadamente 2,4 mil millones de parámetros, es un modelo compacto pensado para desplegarse en sistemas embebidos o en edge computing, donde el consumo de recursos es crítico. Su relevancia actual radica en que acerca el razonamiento físico avanzado a la comunidad open source, permitiendo a investigadores y desarrolladores personalizarlo para sus propios robots y sistemas autónomos.
 
-El acceso al modelo está restringido (gated) en HuggingFace, por lo que es necesario aceptar los términos de la licencia de NVIDIA antes de poder descargarlo. A pesar de ello, su naturaleza abierta y personalizable lo convierte en una opción atractiva para proyectos de robótica e IA física.
+El acceso al modelo está restringido (gated) en Hugging Face, por lo que es necesario aceptar los términos de la licencia de NVIDIA antes de poder descargarlo. A pesar de ello, su naturaleza abierta y personalizable lo convierte en una opción atractiva para proyectos de robótica e IA física.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ Cosmos-Reason2-2B se diferencia por su especializacion en razonamiento fisico, m
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace; es necesario aceptar la licencia de NVIDIA antes de descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face; es necesario aceptar la licencia de NVIDIA antes de descargarlo.
 - Licencia nvidia-open-model-license: aunque es open source, puede tener restricciones especificas sobre uso comercial o redistribucion; se recomienda revisar los terminos completos.
 - Sesgos y alucinaciones: no se han publicado evaluaciones de sesgos; como cualquier VLM, puede generar respuestas incorrectas o inventadas, especialmente en escenarios fisicos complejos.
 - Limitaciones de idioma: no se ha especificado que idiomas soporta; probablemente herede las capacidades multilingues de Qwen3-VL, pero no esta confirmado.
@@ -80,7 +80,7 @@ Cosmos-Reason2-2B se diferencia por su especializacion en razonamiento fisico, m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvidia/Cosmos-Reason2-2B
+- Hugging Face: https://huggingface.co/nvidia/Cosmos-Reason2-2B
 - Documentacion oficial: https://docs.nvidia.com/cosmos/latest/reason2/index.html
 - Repositorio GitHub: https://github.com/nvidia-cosmos/cosmos-reason2
 - Cuantizacion NVFP4 (terceros): https://huggingface.co/vrfai/Cosmos-Reason2-2B-NVFP4

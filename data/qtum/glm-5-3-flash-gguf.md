@@ -4,7 +4,7 @@
 
 GLM-5.3-Flash-GGUF es una colección de cuantizaciones GGUF del modelo GLM-5.3-Flash (también conocido como ox-alpha), desarrollado por Z.ai y cuantizado por el usuario qtum. Este modelo pertenece a la serie GLM-5 y destaca por su arquitectura de mezcla de expertos (MoE) con 320.000 millones de parámetros totales y solo 18.000 millones activos por token, lo que permite un rendimiento elevado con un coste computacional relativamente bajo. Su ventana de contexto alcanza hasta 1 millón de tokens, una característica clave para tareas que requieren procesar documentos extensos o mantener conversaciones de largo recorrido.
 
-La relevancia de esta versión cuantizada radica en que hace viable la ejecución local del modelo en hardware de gama alta, algo que con los pesos originales en BF16 (583 GiB) resultaría impracticable para la mayoría de los entornos. Las cuantizaciones ofrecen distintos equilibrios entre tamaño y calidad, desde IQ4_XS (155 GiB) hasta IQ1_M (65 GiB), todas calibradas con imatrix y distribuidas en 15 shards. El modelo base, GLM-5.3-Flash, es descrito por fuentes externas como un modelo multimodal que supera a GLM-5.2 y rivaliza con Claude Opus 4.8 en tareas de código y agentes, aunque la model card de HuggingFace no detalla estas capacidades.
+La relevancia de esta versión cuantizada radica en que hace viable la ejecución local del modelo en hardware de gama alta, algo que con los pesos originales en BF16 (583 GiB) resultaría impracticable para la mayoría de los entornos. Las cuantizaciones ofrecen distintos equilibrios entre tamaño y calidad, desde IQ4_XS (155 GiB) hasta IQ1_M (65 GiB), todas calibradas con imatrix y distribuidas en 15 shards. El modelo base, GLM-5.3-Flash, es descrito por fuentes externas como un modelo multimodal que supera a GLM-5.2 y rivaliza con Claude Opus 4.8 en tareas de código y agentes, aunque la model card de Hugging Face no detalla estas capacidades.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta versión cuantizada radica en que hace viable la ejecució
 
 La arquitectura de GLM-5.3-Flash es una mezcla de expertos (MoE) con 288 expertos y enrutamiento top-8, más un experto compartido que se ejecuta en cada token. La atención es híbrida: 34 capas utilizan atención lineal KDA (Kernel-based Dual Attention) y 11 capas emplean atención dispersa DSA (Dense-Sparse Attention), ambas construidas sobre la base de MLA (Multi-head Latent Attention). El modelo incorpora además Manifold-Constrained Hyper-Connections (mHC), un mecanismo que conecta capas de forma restringida para mejorar la estabilidad del entrenamiento y la calidad de la representación.
 
-En cuanto a los datos de entrenamiento, la información proporcionada no especifica el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. La model card de HuggingFace solo indica que el modelo base fue entrenado por Z.ai y que la cuantización se realizó sobre los pesos oficiales en BF16. La capa NextN (MTP, Multi-Token Prediction) presente en el checkpoint original fue excluida durante la conversión a GGUF mediante la opción `--no-mtp`, por lo que estos archivos contienen únicamente los tensores del modelo principal.
+En cuanto a los datos de entrenamiento, la información proporcionada no especifica el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. La model card de Hugging Face solo indica que el modelo base fue entrenado por Z.ai y que la cuantización se realizó sobre los pesos oficiales en BF16. La capa NextN (MTP, Multi-Token Prediction) presente en el checkpoint original fue excluida durante la conversión a GGUF mediante la opción `--no-mtp`, por lo que estos archivos contienen únicamente los tensores del modelo principal.
 
 ## Capacidades
 
@@ -31,8 +31,8 @@ En cuanto a los datos de entrenamiento, la información proporcionada no especif
 - Generación de código: fuentes externas indican que GLM-5.3-Flash destaca en tareas de programación, rivalizando con modelos propietarios de alto nivel.
 - Soporte para agentes y multi-step reasoning: la documentación externa menciona que el modelo obtiene buenos resultados en benchmarks de agentes, lo que sugiere capacidad para planificar y ejecutar secuencias de acciones.
 - Tool calling / function calling: aunque no se menciona explícitamente en la model card, la orientación a agentes implica soporte para invocación de herramientas.
-- Capacidades multimodales: según la documentación de Unsloth y Atomic.chat, el modelo es nativamente multimodal (procesa imagen y texto), aunque la model card de HuggingFace no lo detalla y el pipeline declarado es solo text-generation.
-- Multilingüe: soporta inglés y chino, según los metadatos de HuggingFace.
+- Capacidades multimodales: según la documentación de Unsloth y Atomic.chat, el modelo es nativamente multimodal (procesa imagen y texto), aunque la model card de Hugging Face no lo detalla y el pipeline declarado es solo text-generation.
+- Multilingüe: soporta inglés y chino, según los metadatos de Hugging Face.
 
 ## Casos de uso
 
@@ -88,7 +88,7 @@ La comparación con DeepSeek-V3 es orientativa, ya que no se han encontrado benc
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/qtum/GLM-5.3-Flash-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/qtum/GLM-5.3-Flash-GGUF
 - Modelo base (zai-org/GLM-5.3-Flash): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Guia de Unsloth para ejecutar GLM-5.3-Flash localmente: https://unsloth.ai/docs/models/glm-5.3-flash
 - Guia de Atomic.chat sobre hardware y benchmarks: https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally

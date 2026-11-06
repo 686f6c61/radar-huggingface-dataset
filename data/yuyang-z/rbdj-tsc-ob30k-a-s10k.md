@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rbdj-tsc-ob30k-a-s10k` es un checkpoint de un modelo de mundo (world model) vídeo-acción para robótica de manipulación, publicado por el usuario Yuyang-z en HuggingFace el 28 de octubre de 2026. Se trata de un ajuste fino supervisado (SFT) por cadenas de episodios del modelo SANA-RWM, en concreto del checkpoint `epoch_24_step_10000` (pesos en crudo) entrenado sobre el simulador RoboDojo con el robot ARX X5.
+`rbdj-tsc-ob30k-a-s10k` es un checkpoint de un modelo de mundo (world model) vídeo-acción para robótica de manipulación, publicado por el usuario Yuyang-z en Hugging Face el 28 de octubre de 2026. Se trata de un ajuste fino supervisado (SFT) por cadenas de episodios del modelo SANA-RWM, en concreto del checkpoint `epoch_24_step_10000` (pesos en crudo) entrenado sobre el simulador RoboDojo con el robot ARX X5.
 
 El modelo parte del preentrenamiento `SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_twostream_obsblock_from_ts3500_s15000_ws256` (epoch 4, step 30 000) y se especializa con ventanas de episodios completos de 4 a 49 chunks de 32 acciones EEF absolutas a 25 fps, tres vistas de cámara a 256×320 y latentes de LTX-2.3. La arquitectura es un transformer de dos flujos (vídeo y acción) con flow matching, condicionamiento por cámara multi-vista y atención con sub-attention, identificado en el nombre del modelo como `..._5B_P1_D36`, lo que sugiere aproximadamente 5 000 millones de parámetros con profundidad 36.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Ventana / contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rbdj-tsc-ob30k-a-s10k | Aproximadamente 5 000 millones (según identificador) | 4-49 chunks de 32 acciones (hasta 1 568 acciones, 62,72 s) | Vídeo 3 vistas 256×320 + acciones EEF | No disponible | Pesos en HuggingFace, 0 descargas |
+| rbdj-tsc-ob30k-a-s10k | Aproximadamente 5 000 millones (según identificador) | 4-49 chunks de 32 acciones (hasta 1 568 acciones, 62,72 s) | Vídeo 3 vistas 256×320 + acciones EEF | No disponible | Pesos en Hugging Face, 0 descargas |
 | SANA_Vanilla_Pretrain 256px (checkpoint base citado) | No disponible | No disponible | Vídeo two-stream + acciones | No disponible | Referenciado en la receta; no se enlaza en la model card |
 | Alternativas públicas de world models para robótica (por ejemplo, modelos de la familia Cosmos o Genie) | No disponible | No disponible | Vídeo, en algunos casos acción | No disponible | No verificable con la información proporcionada |
 
@@ -87,5 +87,5 @@ No se dispone de datos verificables de parámetros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuyang-z/rbdj-tsc-ob30k-a-s10k
+- Hugging Face: https://huggingface.co/Yuyang-z/rbdj-tsc-ob30k-a-s10k
 - No se han encontrado enlaces relevantes adicionales en la búsqueda web: los resultados obtenidos no guardan relación con el modelo y no se incluyen.

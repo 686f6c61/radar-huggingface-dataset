@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, etc.)
 
 | Modelo | Parametros | Contexto | MATH-500 | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-0.8B-weight-space-programming (este) | 0,87B | 34.816 | 48,1-51,0% | 67,1% | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,87B | no disponible | 7,9% | 13,8% | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B-weight-space-programming (este) | 0,87B | 34.816 | 48,1-51,0% | 67,1% | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,87B | no disponible | 7,9% | 13,8% | Apache 2.0 | Hugging Face |
 | Otros modelos de ~1B comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con el modelo base; no se dispone de datos de benchmarks de alternativas de tamano similar.
@@ -96,7 +96,7 @@ La informacion proporcionada solo permite comparar con el modelo base; no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Realuxxx/Qwen3.5-0.8B-weight-space-programming
+- Modelo en Hugging Face: https://huggingface.co/Realuxxx/Qwen3.5-0.8B-weight-space-programming
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Articulo "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/
 - Logs, diffs y codigo de reconstruccion: https://github.com/RikiyaT/lm_understand-logs

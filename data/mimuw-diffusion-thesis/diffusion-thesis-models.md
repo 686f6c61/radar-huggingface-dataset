@@ -6,7 +6,7 @@
 
 El repositorio contiene cinco carpetas de experimentos: tres sobre MNIST y CIFAR-10 con arquitecturas EDM, una sobre datasets de patrones 2D sintéticos (Gaussian 8×8, 8×4, 6×6, Spiral5, Beehive) y una quinta con el checkpoint oficial de NVIDIA EDM2-S para ImageNet-64 como referencia externa. El tamaño total del repositorio es de 2,0 GB y los pesos están en formato PyTorch (`.pth` y `.pkl`).
 
-Su relevancia es acotada y estrictamente académica: sirve como artefacto de reproducibilidad para quien quiera auditar los resultados de la tesis o reutilizar los modelos como banco de pruebas controlado para experimentos de schedulers de muestreo. No está pensado para despliegue en producción, no soporta texto ni instrucciones, y no dispone de pipeline declarado en HuggingFace.
+Su relevancia es acotada y estrictamente académica: sirve como artefacto de reproducibilidad para quien quiera auditar los resultados de la tesis o reutilizar los modelos como banco de pruebas controlado para experimentos de schedulers de muestreo. No está pensado para despliegue en producción, no soporta texto ni instrucciones, y no dispone de pipeline declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Su relevancia es acotada y estrictamente académica: sirve como artefacto de rep
 | Formato de pesos | PyTorch (`.pth` para los experimentos propios, `.pkl` para el checkpoint EDM2) |
 | Tamano del repositorio | 2,0 GB |
 | Libreria declarada | pytorch |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| diffusion-thesis-models (exp1–exp3, exp7) | Difusión EDM, MNIST/CIFAR-10/patrones 2D | no disponible | no aplica | No publicado en la información disponible | MIT | HuggingFace, repo de 2,0 GB |
+| diffusion-thesis-models (exp1–exp3, exp7) | Difusión EDM, MNIST/CIFAR-10/patrones 2D | no disponible | no aplica | No publicado en la información disponible | MIT | Hugging Face, repo de 2,0 GB |
 | EDM2-S oficial (NVlabs) | Difusión EDM2, ImageNet-64 | no disponible en la información | no aplica | FID 1,58 en ImageNet-64 | CC BY-NC-SA 4.0 | Incluido en `edm2/`, repo oficial de NVlabs |
 | EDM original (NVlabs) | Difusión EDM, CIFAR-10/ImageNet-64 | no disponible en la información | no aplica | No disponible en la información | CC BY-NC-SA 4.0 | Repo oficial de NVlabs |
-| Modelos de difusión de propósito general (p. ej. Stable Diffusion) | Difusión latente texto-a-imagen | no disponible | no aplica | No comparable directamente | Varía según versión | HuggingFace |
+| Modelos de difusión de propósito general (p. ej. Stable Diffusion) | Difusión latente texto-a-imagen | no disponible | no aplica | No comparable directamente | Varía según versión | Hugging Face |
 
 La comparación con modelos de difusión de propósito general no es significativa: los checkpoints de este repositorio son artefactos de investigación sobre datasets de baja resolución, sin condicionamiento textual ni pipeline de inferencia estándar.
 
@@ -80,13 +80,13 @@ La comparación con modelos de difusión de propósito general no es significati
 - **Sin benchmarks publicados**: la model card no incluye FID, IS ni métricas comparativas de los experimentos 1, 2, 3 y 7, por lo que no es posible evaluar su calidad sin ejecutar el código de la tesis.
 - **Licencia mixta**: los checkpoints de la tesis son MIT, pero el checkpoint EDM2 de `edm2/` está bajo CC BY-NC-SA 4.0, lo que restringe su uso a investigación no comercial; conviene no mezclar ambos en productos comerciales.
 - **Riesgo de sesgo y alucinación**: en el contexto de generación de imágenes, los sesgos de los datasets de entrenamiento (MNIST, CIFAR-10) se trasladan a las muestras; no aplica el concepto de alucinación textual, pero sí el de artefactos visuales propios de modelos de difusión pequeños.
-- **Sin soporte de la comunidad**: 0 descargas y 0 likes en HuggingFace en el momento de la consulta; no hay issues, demos ni integraciones de terceros.
+- **Sin soporte de la comunidad**: 0 descargas y 0 likes en Hugging Face en el momento de la consulta; no hay issues, demos ni integraciones de terceros.
 - **Dependencia del código de la tesis**: la carga de los pesos requiere el repositorio `github.com/leszkolukasz/diffusers`, que implementa las firmas de `main.py generate`; fuera de ese código, la compatibilidad con frameworks estándar no está garantizada.
 - **Idiomas y contexto**: no aplica; son modelos de imagen sin ventana de contexto textual.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mimuw-diffusion-thesis/diffusion-thesis-models
+- Hugging Face: https://huggingface.co/mimuw-diffusion-thesis/diffusion-thesis-models
 - Código de la tesis: https://github.com/leszkolukasz/diffusers
 - Repositorio oficial EDM2 (NVIDIA): https://github.com/NVlabs/edm2
 - Referencia del checkpoint EDM2-S: `edm2/edm2-img64-s-1073741-0.075.pkl` (FID 1,58 en ImageNet-64)

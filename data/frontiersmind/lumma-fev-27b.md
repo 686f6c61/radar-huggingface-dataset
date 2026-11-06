@@ -90,7 +90,7 @@ No se dispone de datos de modelos comparables de la misma categoría (modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-27B
+- Modelo en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-27B
 - Blog detallado del autor: https://huggingface.co/blog/FrontiersMind/lumma-fev-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paquete lumma-fev en PyPI: https://pypi.org/project/lumma-fev/

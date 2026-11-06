@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de capacidad que permitan comparar el rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcarouter/Flint-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/Flint-abliterated-GGUF
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - OrcaRouter: https://www.orcarouter.ai
 - OrcaRouter, listado de modelos: https://www.orcarouter.ai/models

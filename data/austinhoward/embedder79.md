@@ -65,4 +65,4 @@ No disponible. No se han especificado parámetros totales, rendimiento ni result
 
 ## Enlaces
 
-- [HuggingFace: austinhoward/embedder79](https://huggingface.co/austinhoward/embedder79)
+- [Hugging Face: austinhoward/embedder79](https://huggingface.co/austinhoward/embedder79)

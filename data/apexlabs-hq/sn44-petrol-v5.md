@@ -87,7 +87,7 @@ Diferencias clave: este modelo está especializado en cuatro clases de un domini
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no puede asumirse uso comercial permitido. Es un bloqueante para producción hasta que el autor aclare los términos.
-- Repositorio de 0.0 GB: los pesos podrían no estar efectivamente alojados en HuggingFace, en cuyo caso el modelo no es descargable desde el enlace público.
+- Repositorio de 0.0 GB: los pesos podrían no estar efectivamente alojados en Hugging Face, en cuyo caso el modelo no es descargable desde el enlace público.
 - Cero descargas y cero likes, con creación y actualización separadas por unos ocho minutos: no hay evidencia de uso ni de validación por terceros.
 - Ausencia total de métricas: no se puede evaluar la precisión real del detector, ni estimar su tasa de falsos positivos y falsos negativos en dominio.
 - Dominio cerrado de cuatro clases: cualquier objeto fuera de esa lista se ignorará o se forzará a una de las cuatro categorías.
@@ -100,7 +100,7 @@ Diferencias clave: este modelo está especializado en cuatro clases de un domini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apexlabs-hq/sn44-petrol-v5
+- Modelo en Hugging Face: https://huggingface.co/apexlabs-hq/sn44-petrol-v5
 - Modelo de referencia citado en la model card: `manak0/Detect-petrol-station-1-0` (no se ha podido verificar su URL en la búsqueda realizada)
 - Paper, blog, repositorio de código o demo: no disponible
 - La búsqueda web no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos no guardan relación con el contenido técnico de la ficha y se han descartado.

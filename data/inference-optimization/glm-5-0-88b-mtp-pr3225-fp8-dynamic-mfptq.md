@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos alternativos comparables en la inform
 | Expertos enrutados | 16 (4 por token) | 16 (4 por token) | 256 (8 por token) |
 | Precision de pesos | FP8_DYNAMIC con exclusiones | BF16 | no disponible |
 | Licencia | MIT | MIT | MIT (segun atribucion de zai-org/GLM-5) |
-| Disponibilidad | HuggingFace, 0 descargas, 0 likes | HuggingFace (modelo base) | HuggingFace (zai-org/GLM-5) |
+| Disponibilidad | Hugging Face, 0 descargas, 0 likes | Hugging Face (modelo base) | Hugging Face (zai-org/GLM-5) |
 
 Frente a modelos tiny de proposito general (por ejemplo, familias de menos de 1B parametros con entrenamiento real), la diferencia relevante es que este checkpoint no ha sido entrenado para tareas de lenguaje y no debe compararse en calidad.
 
@@ -102,12 +102,12 @@ Frente a modelos tiny de proposito general (por ejemplo, familias de menos de 1B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/GLM-5-0.88B-MTP-PR3225-FP8-Dynamic-MFPTQ
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/GLM-5-0.88B-MTP-PR3225-FP8-Dynamic-MFPTQ
 - Modelo base: https://huggingface.co/inference-optimization/GLM-5-0.88B-MTP-PR3225
 - Arquitectura y tokenizer originales (zai-org/GLM-5, revision `c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2`): https://huggingface.co/zai-org/GLM-5/tree/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2
 - Pull request de LLM Compressor #3225: https://github.com/vllm-project/llm-compressor/pull/3225
 - Flujo de trabajo tiny-model del repositorio de LLM Compressor (commit `2d5242056a8a00028686a303771ffc8e2fe27d07`): https://github.com/vllm-project/llm-compressor/tree/2d5242056a8a00028686a303771ffc8e2fe27d07/.agents/skills/create-tiny-model
 - LLM Compressor, commit probado `2d52420`: https://github.com/vllm-project/llm-compressor/commit/2d5242056a8a00028686a303771ffc8e2fe27d07
 - compressed-tensors, commit probado `e69c8dc`: https://github.com/vllm-project/compressed-tensors/commit/e69c8dc58aa152e5f5e36e85800ec1d2e7de5271
-- Ficheros de validacion del repo: `validation.json` y `artifact-manifest.json` (referenciados en la model card, dentro del propio repositorio de HuggingFace)
+- Ficheros de validacion del repo: `validation.json` y `artifact-manifest.json` (referenciados en la model card, dentro del propio repositorio de Hugging Face)
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las busquedas devolvieron unicamente definiciones genericas del termino "inferencia" en diccionarios y enciclopedias, sin relacion con este modelo.

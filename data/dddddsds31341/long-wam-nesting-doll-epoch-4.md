@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Nesting Doll — Epoch 4 (este) | no disponible | no disponible (P48 + chunk 32) | Anidamiento bimanual, checkpoint intermedio | other | HuggingFace, 20 descargas |
-| Efficient-Large-Model/Long-WAM-YAM | no disponible | no disponible | Modelo base video-acción bimanual | other (según metadatos publicados) | HuggingFace |
+| Long-WAM Nesting Doll — Epoch 4 (este) | no disponible | no disponible (P48 + chunk 32) | Anidamiento bimanual, checkpoint intermedio | other | Hugging Face, 20 descargas |
+| Efficient-Large-Model/Long-WAM-YAM | no disponible | no disponible | Modelo base video-acción bimanual | other (según metadatos publicados) | Hugging Face |
 | Otros modelos robóticos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Epoch-4
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Epoch-4
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/nesting_doll
 - Registro de entrenamiento (Weights & Biases alojado en CoreWeave): https://forge.coreweave.com/wandb/bofang/long-wam/runs/oaplbei2

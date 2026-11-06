@@ -98,7 +98,7 @@ Frente a modelos completos de generacion de video, la alternativa directa es el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbjr/h3-mutant-distill
+- Modelo en Hugging Face: https://huggingface.co/fbjr/h3-mutant-distill
 - Repositorio de nodos ComfyUI: https://github.com/fblissjr/h3-mutant-distill
 - Nodos y recetas de referencia: https://github.com/fblissjr/ComfyUI-h3-explorations
 - Script de conversion: https://github.com/fblissjr/ComfyUI-h3-explorations/blob/main/bench/convert_pdd_lora.py

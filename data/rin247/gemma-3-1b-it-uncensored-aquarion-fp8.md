@@ -77,7 +77,7 @@ La comparativa se limita a modelos de tamaño similar. La diferencia principal e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/gemma-3-1b-it-Uncensored-Aquarion-FP8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/gemma-3-1b-it-Uncensored-Aquarion-FP8
 - Modelo base Gemma 3 1B: https://huggingface.co/google/gemma-3-1b-it
 - Reporte técnico de Gemma 3 (arXiv): https://arxiv.org/html/2503.19786v1
 - Repositorio oficial Gemma 3 (GitHub): https://github.com/gemma-3/gemma-3

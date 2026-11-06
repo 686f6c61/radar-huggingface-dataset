@@ -25,7 +25,7 @@ Su relevancia es metodológica: forma parte de un conjunto de cuatro tamaños (0
 
 El modelo es un decoder transformer denso de estilo Llama con 24 capas, dimensión oculta de 1.536, FFN de 6.144 con activación SwiGLU, 12 cabezas de atención y 4 cabezas KV (GQA con head dim 128), normalización RMSNorm y RoPE con base 10.000. No usa embeddings atados, ni biases, ni QK-norm. La longitud de secuencia de entrenamiento es de 4.096 tokens y el tokenizador parte del vocabulario de SmolLM2 (49.152) al que se añade `<|pad|>`; `<|endoftext|>` actúa como token de fin de documento.
 
-El preentrenamiento cubre los primeros 18.779 pasos del flujo alineado por pasos del estudio principal (39,38B posiciones de token), con batch global de 512 × 4.096 tokens y enmascaramiento de atención entre documentos. Durante los primeros 16.902 pasos se usan los documentos originales de DCLM-edu; en los últimos 1.877 pasos (el cooldown) se emplean conversaciones 1PP reescritas a partir de esos mismos documentos, con pérdida calculada solo en los turnos del asistente. El optimizador es Muon (shape scaling, LR matricial 0,005) con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para las normas), warmup de 1.181 pasos, fase constante y decaimiento lineal en el cooldown hasta 1/100, weight decay 0,1, init std 0,0103 y precisión bf16. La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,644 en texto de asistente, 3,956 en texto de usuario y 3,043 en texto de documento; el autor verificó los pesos de HuggingFace contra el checkpoint de Megatron con diferencias absolutas de 0,0015 y 0,0013 en dos conjuntos de validación.
+El preentrenamiento cubre los primeros 18.779 pasos del flujo alineado por pasos del estudio principal (39,38B posiciones de token), con batch global de 512 × 4.096 tokens y enmascaramiento de atención entre documentos. Durante los primeros 16.902 pasos se usan los documentos originales de DCLM-edu; en los últimos 1.877 pasos (el cooldown) se emplean conversaciones 1PP reescritas a partir de esos mismos documentos, con pérdida calculada solo en los turnos del asistente. El optimizador es Muon (shape scaling, LR matricial 0,005) con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para las normas), warmup de 1.181 pasos, fase constante y decaimiento lineal en el cooldown hasta 1/100, weight decay 0,1, init std 0,0103 y precisión bf16. La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,644 en texto de asistente, 3,956 en texto de usuario y 3,043 en texto de documento; el autor verificó los pesos de Hugging Face contra el checkpoint de Megatron con diferencias absolutas de 0,0015 y 0,0013 en dos conjuntos de validación.
 
 ## Capacidades
 
@@ -79,10 +79,10 @@ Verificación de pesos frente al checkpoint de Megatron:
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.98b-v2-asst-rawanneal-base | 0,98B | 4.096 | Apache 2.0 | HuggingFace | Artefacto de investigación, base, solo inglés |
-| 1pp-0.98b-v2-raw-base | 0,98B | 4.096 | Apache 2.0 | HuggingFace | Mismo run sin cooldown sobre conversaciones; baseline raw |
-| 1pp-0.98b-v2-asst-base | 0,98B | 4.096 | Apache 2.0 | HuggingFace | Run 1PP completo, sin la variante de mid-training |
-| 1pp-1.7b-* | 1,66B | 4.096 | Apache 2.0 | HuggingFace | Escalón superior de la misma escalera (1.7B del estudio principal) |
+| 1pp-0.98b-v2-asst-rawanneal-base | 0,98B | 4.096 | Apache 2.0 | Hugging Face | Artefacto de investigación, base, solo inglés |
+| 1pp-0.98b-v2-raw-base | 0,98B | 4.096 | Apache 2.0 | Hugging Face | Mismo run sin cooldown sobre conversaciones; baseline raw |
+| 1pp-0.98b-v2-asst-base | 0,98B | 4.096 | Apache 2.0 | Hugging Face | Run 1PP completo, sin la variante de mid-training |
+| 1pp-1.7b-* | 1,66B | 4.096 | Apache 2.0 | Hugging Face | Escalón superior de la misma escalera (1.7B del estudio principal) |
 
 No se dispone de comparaciones con modelos externos de la misma categoría en la información proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de comparaciones con modelos externos de la misma categoría en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-base
 - Variante raw: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-base
 - Run 1PP completo: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko es un checkpoint cuantizado del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicado por el usuario `hell0ks` en HuggingFace. Se trata de una cuantización EXL3 (formato EXL3 de ExLlamaV3) a 2,9 bits por peso, orientada específicamente a inferencia en coreano mediante un conjunto de calibración centrado en ese idioma. El modelo base es un transformer de tipo mixture-of-experts (MoE) con 105.318.449.362 parámetros totales, según los datos de safetensors del repositorio.
+DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko es un checkpoint cuantizado del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicado por el usuario `hell0ks` en Hugging Face. Se trata de una cuantización EXL3 (formato EXL3 de ExLlamaV3) a 2,9 bits por peso, orientada específicamente a inferencia en coreano mediante un conjunto de calibración centrado en ese idioma. El modelo base es un transformer de tipo mixture-of-experts (MoE) con 105.318.449.362 parámetros totales, según los datos de safetensors del repositorio.
 
 La relevancia de esta ficha es doble. Por un lado, permite ejecutar un modelo de más de 100.000 millones de parámetros con un peso en disco de aproximadamente 210,8 GB, lo que reduce drásticamente los requisitos de VRAM frente a los pesos en precisión completa. Por otro, el calibrado en coreano hace que esta variante sea útil para aplicaciones en ese idioma, aunque el modelo base conserva las capacidades generales de razonamiento, código y matemáticas.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko (este) | 105,3 B | no disponible | EXL3 2,9 bpw, calibrado en coreano | MIT | HuggingFace, 164 descargas |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | 105,3 B (según este repo) | no disponible | pesos originales | no disponible | HuggingFace |
-| LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw | no disponible | no disponible | EXL3 2,9 bpw | no disponible | HuggingFace |
+| DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko (este) | 105,3 B | no disponible | EXL3 2,9 bpw, calibrado en coreano | MIT | Hugging Face, 164 descargas |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | 105,3 B (según este repo) | no disponible | pesos originales | no disponible | Hugging Face |
+| LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw | no disponible | no disponible | EXL3 2,9 bpw | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado ni de otros modelos de la misma categoría en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado ni de otros modelos de la misma 
 
 ## Enlaces
 
-- [HuggingFace: hell0ks/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko](https://huggingface.co/hell0ks/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko)
+- [Hugging Face: hell0ks/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko](https://huggingface.co/hell0ks/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko)
 - [Modelo base: deepseek-ai/DeepSeek-V4.1-Flash-1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)
 - [Checkpoint de referencia: LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw](https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw)
 - [Dataset de calibración: nvidia/Nemotron-SFT-Multilingual-v2](https://huggingface.co/datasets/nvidia/Nemotron-SFT-Multilingual-v2)

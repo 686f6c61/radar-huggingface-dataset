@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de una politica vision-language-action (VLA) de robotica entrenada con LeRobot y publicada por el usuario HyeonseokE en HuggingFace. No es un modelo de lenguaje: es una politica de control motor que consume observaciones multimodales (imagenes de camaras y estado de articulaciones) y produce comandos de accion de 6 dimensiones para un brazo robotico SO-101. Concretamente, es un fine-tune de `lerobot/smolvla_base` sobre un dataset propio de 100 episodios y 31.823 fotogramas grabados a 10 FPS para una unica tarea: extraer un cubo de un hueco y colocarlo sobre una marca objetivo.
+Se trata de una politica vision-language-action (VLA) de robotica entrenada con LeRobot y publicada por el usuario HyeonseokE en Hugging Face. No es un modelo de lenguaje: es una politica de control motor que consume observaciones multimodales (imagenes de camaras y estado de articulaciones) y produce comandos de accion de 6 dimensiones para un brazo robotico SO-101. Concretamente, es un fine-tune de `lerobot/smolvla_base` sobre un dataset propio de 100 episodios y 31.823 fotogramas grabados a 10 FPS para una unica tarea: extraer un cubo de un hueco y colocarlo sobre una marca objetivo.
 
 El modelo pertenece a la familia SmolVLA, descrita en el paper arXiv:2506.01844, que propone un VLA compacto y eficiente capaz de ejecutarse en hardware de consumo con un coste computacional reducido. El checkpoint pesa 0,9 GB en safetensors y declara 450.046.176 parametros totales, lo que lo situa en la franja de los modelos roboticos ligeros frente a alternativas de 3B a 7B parametros.
 
@@ -92,9 +92,9 @@ Los valores de modelos de terceros son orientativos, procedentes de fuentes publ
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HyeonseokE/smolvla_ablation2_rank_extract_cube_2000_10fps | 450.046.176 | VLA fine-tuneado para tarea unica (SO-101) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| lerobot/smolvla_base | ~450M (mismo backbone) | VLA base preentrenado, fine-tuneable | apache-2.0 (segun el ecosistema LeRobot) | HuggingFace, modelo de referencia de LeRobot |
-| OpenVLA-7B | ~7B | VLA de proposito general | depende del modelo base (Llama 2) y del codigo | HuggingFace y repositorio publico |
+| HyeonseokE/smolvla_ablation2_rank_extract_cube_2000_10fps | 450.046.176 | VLA fine-tuneado para tarea unica (SO-101) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| lerobot/smolvla_base | ~450M (mismo backbone) | VLA base preentrenado, fine-tuneable | apache-2.0 (segun el ecosistema LeRobot) | Hugging Face, modelo de referencia de LeRobot |
+| OpenVLA-7B | ~7B | VLA de proposito general | depende del modelo base (Llama 2) y del codigo | Hugging Face y repositorio publico |
 | pi0 (Physical Intelligence) | ~3B | VLA con experto de acciones | no disponible | anunciado publicamente, disponibilidad limitada |
 | GR00T N1 (NVIDIA) | ~2B | VLA/robot foundation model | no disponible | publicado por NVIDIA |
 
@@ -114,7 +114,7 @@ Diferencias clave: frente a OpenVLA-7B o pi0, este checkpoint es entre 4 y 15 ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_ablation2_rank_extract_cube_2000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_ablation2_rank_extract_cube_2000_10fps
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/ablation2_rank_extract_cube_10fps
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=HyeonseokE/ablation2_rank_extract_cube_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
@@ -128,4 +128,4 @@ Diferencias clave: frente a OpenVLA-7B o pi0, este checkpoint es entre 4 y 15 ve
 - Referencia rapida de comandos: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Documentacion de inferencia y rollout: https://huggingface.co/docs/lerobot/main/en/inference
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la model card.

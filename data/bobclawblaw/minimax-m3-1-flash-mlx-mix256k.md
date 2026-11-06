@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-M3.1-Flash (release original, `54e4e69d`) | 431,2 mil millones | 1M tokens | MXFP8 en capas densas y atencion, NVFP4 en expertos | MiniMax Community License | Publicado en HuggingFace; serving via Fireworks y NVIDIA NIM |
+| MiniMax-M3.1-Flash (release original, `54e4e69d`) | 431,2 mil millones | 1M tokens | MXFP8 en capas densas y atencion, NVFP4 en expertos | MiniMax Community License | Publicado en Hugging Face; serving via Fireworks y NVIDIA NIM |
 | MiniMax-M3.1-Flash-MLX-mix256k (este checkpoint) | 431,2 mil millones | 262.144 tokens | Mixta 3/4/8 bits afín + router fp32 + vision bf16 | MiniMax Community License (+ Apache-2.0 en DFlash2) | Publicado, pero sin motor capaz de cargarlo todavia |
 | MiniMax-M3.1-Flash-MLX-mix34 | 431,2 mil millones | Menor que 262.144 (no especificado) | Mixta, mayor proporcion de 4 bits en expertos | MiniMax Community License | Referenciado en la model card; no se confirma publicacion |
 | MiniMax-M3.1-Flash con todos los expertos a 3 bits | 431,2 mil millones | no disponible | 3 bits en todos los expertos | MiniMax Community License | No publicado |

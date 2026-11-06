@@ -82,8 +82,8 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 ## Enlaces
 
-- [HuggingFace - ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit](https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit)
-- [HuggingFace - Qwen/Qwen3.8-Flash-Next (modelo base)](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+- [Hugging Face - ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit](https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit)
+- [Hugging Face - Qwen/Qwen3.8-Flash-Next (modelo base)](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [GitHub - QwenLM/Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [unsloth - Qwen3.8-Flash-Next: How to Run Locally](https://unsloth.ai/docs/models/qwen3.8-next)
 - [GitHub - ddalcu/mlx-serve (releases)](https://github.com/ddalcu/mlx-serve/releases)

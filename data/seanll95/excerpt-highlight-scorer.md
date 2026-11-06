@@ -98,7 +98,7 @@ La comparacion de rendimiento frente a estos modelos no esta disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seanll95/excerpt-highlight-scorer
+- Hugging Face: https://huggingface.co/seanll95/excerpt-highlight-scorer
 - Aplicacion Excerpt (funcion Suggested Highlights): https://octetmediteranee.eu/excerpt/
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`platojack/Ka8e1_SDXL` es un repositorio alojado en HuggingFace por el usuario `platojack` del que no se ha publicado informacion tecnica utilizable. La model card del autor se limita a una linea de metadatos (`license: unknown`) sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin instrucciones de uso. El repositorio no registra descargas ni likes, y su licencia figura como desconocida, por lo que no es posible determinar las condiciones de reutilizacion.
+`platojack/Ka8e1_SDXL` es un repositorio alojado en Hugging Face por el usuario `platojack` del que no se ha publicado informacion tecnica utilizable. La model card del autor se limita a una linea de metadatos (`license: unknown`) sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin instrucciones de uso. El repositorio no registra descargas ni likes, y su licencia figura como desconocida, por lo que no es posible determinar las condiciones de reutilizacion.
 
 El identificador del repositorio contiene la cadena "SDXL", lo que sugiere una relacion con la familia Stable Diffusion XL (Stable Diffusion XL, de Stability AI), un modelo de difusion latente para generacion de imagenes. Esta lectura es una inferencia a partir del nombre y no una afirmacion respaldada por la documentacion disponible. El tamano del repositorio, 0,2 GB, es coherente con un componente parcial (por ejemplo un adaptador o un subconjunto de pesos) mas que con un checkpoint completo de SDXL, cuyo peso en precision fp16 ronda los 6,9 GB, aunque tampoco esto puede confirmarse.
 
@@ -77,7 +77,7 @@ No es posible establecer una comparativa directa: se desconoce la naturaleza del
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| platojack/Ka8e1_SDXL | no disponible | no disponible | unknown | HuggingFace, 0 descargas |
+| platojack/Ka8e1_SDXL | no disponible | no disponible | unknown | Hugging Face, 0 descargas |
 | Stable Diffusion XL (base) | aprox. 3,5 B en el UNet, 6,9 GB en fp16 el conjunto | nativo 1024x1024 px | CreativeML Open RAIL++-M | publico |
 | Stable Diffusion XL Turbo | misma base, destilado para pocos pasos | nativo 512x512 px | Stability AI Non-Commercial / variantes | publico |
 | Stable Diffusion 1.5 | aprox. 0,86 B en el UNet | nativo 512x512 px | CreativeML Open RAIL-M | publico |
@@ -98,7 +98,7 @@ Los datos de la familia SDXL corresponden a informacion publica general de esos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/platojack/Ka8e1_SDXL
+- Hugging Face: https://huggingface.co/platojack/Ka8e1_SDXL
 - Model card del autor: no contiene informacion tecnica (solo `license: unknown`).
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.

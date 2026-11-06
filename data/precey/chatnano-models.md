@@ -97,7 +97,7 @@ La comparación relevante es de empaquetado, no de calidad: los `.nano` y los GG
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/precey/chatnano-models
+- Repositorio en Hugging Face: https://huggingface.co/precey/chatnano-models
 - Modelo base 2B: https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf
 - Modelo base 4B: https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf
 - Modelo base 9B: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf

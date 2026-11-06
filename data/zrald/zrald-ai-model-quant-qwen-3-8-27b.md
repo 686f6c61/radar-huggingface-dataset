@@ -22,7 +22,7 @@ La relevancia del repositorio es práctica: la variante equilibrada está diseñ
 | Formato de pesos | GGUF (llama.cpp) |
 | Modelo base | Qwen/Qwen3.8-27B |
 | Tamaño del repositorio | 44,8 GB |
-| Fecha de publicación en HuggingFace | 2026-09-18 |
+| Fecha de publicación en Hugging Face | 2026-09-18 |
 
 ## Arquitectura y entrenamiento
 
@@ -112,7 +112,7 @@ Comparativa con modelos de otras familias (por ejemplo, otros modelos densos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zrald/Zrald-AI-model-quant-qwen-3.8-27b
+- Repositorio en Hugging Face: https://huggingface.co/Zrald/Zrald-AI-model-quant-qwen-3.8-27b
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - llama.cpp (repositorio oficial): https://github.com/ggerganov/llama.cpp
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los resultados obtenidos tratan sobre la plataforma Spotify y no guardan relación con la ficha.

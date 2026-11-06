@@ -83,7 +83,7 @@ La comparativa se limita a caracteristicas arquitectonicas y de licencia, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baya1116/hypernet-sp-distill
+- Modelo en Hugging Face: https://huggingface.co/baya1116/hypernet-sp-distill
 - Perfil del autor: https://huggingface.co/baya1116
 - Espejo del modelo: https://d6108366.hf-mirror.com/baya1116/hypernet-sp-distill
 - Repositorio relacionado (fase FFT): https://huggingface.co/baya1116/Phase15-DeepSeek-FFT

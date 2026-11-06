@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-EmbeddingGemma-2-MLX-AXQ-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-EmbeddingGemma-2-MLX-AXQ-MXFP8
 - Modelo base: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Hermano MXFP4: https://huggingface.co/AutomatosX/AX-EmbeddingGemma-2-MLX-AXQ-MXFP4
 - Colecciones de AutomatosX: https://huggingface.co/AutomatosX/collections

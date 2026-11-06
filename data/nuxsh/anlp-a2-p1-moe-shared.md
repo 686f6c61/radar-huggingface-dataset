@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nuxsh/anlp-a2-p1-moe-shared es un repositorio de modelo publicado en HuggingFace Hub mediante la integracion PytorchModelHubMixin, con un total de 27.278.848 parametros almacenados en formato safetensors y un tamano de repositorio de 0,1 GB. El nombre del repositorio sugiere una arquitectura de mezcla de expertos (MoE, Mixture of Experts) con expertos compartidos, si bien esta caracteristica no se confirma en la model card ni en los metadatos disponibles. El prefijo "anlp-a2-p1" apunta a un proyecto academico o de asignatura (probablemente un ejercicio de procesamiento de lenguaje natural avanzado), no a un modelo de produccion.
+nuxsh/anlp-a2-p1-moe-shared es un repositorio de modelo publicado en Hugging Face Hub mediante la integracion PytorchModelHubMixin, con un total de 27.278.848 parametros almacenados en formato safetensors y un tamano de repositorio de 0,1 GB. El nombre del repositorio sugiere una arquitectura de mezcla de expertos (MoE, Mixture of Experts) con expertos compartidos, si bien esta caracteristica no se confirma en la model card ni en los metadatos disponibles. El prefijo "anlp-a2-p1" apunta a un proyecto academico o de asignatura (probablemente un ejercicio de procesamiento de lenguaje natural avanzado), no a un modelo de produccion.
 
 El problema que resuelve y su relevancia no pueden determinarse con la informacion disponible: la model card es una plantilla generada automaticamente por PyTorchModelHubMixin y no incluye descripcion funcional, dataset de entrenamiento, idiomas ni licencia. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se ha publicado pipeline de inferencia asociado.
 
@@ -47,7 +47,7 @@ El modelo fue subido al Hub mediante la integracion PytorchModelHubMixin, que ge
 Dado que no se ha documentado ninguna capacidad funcional, los siguientes casos son escenarios plausibles para un modelo de este tamano, condicionados a que el modelo resulte ser un modelo de lenguaje entrenado y funcional. Deben tratarse como hipotesis de uso, no como aplicaciones validadas.
 
 - Experimentacion academica: el modelo puede utilizarse como punto de partida para reproducir ejercicios de entrenamiento de arquitecturas MoE en asignaturas de PLN, comparando el efecto de los expertos compartidos frente a configuraciones densas.
-- Prototipado de pipelines de HuggingFace: sirve para validar flujos de carga mediante PyTorchModelHubMixin, integracion en scripts de entrenamiento y pruebas de serializacion con safetensors sin depender de modelos grandes.
+- Prototipado de pipelines de Hugging Face: sirve para validar flujos de carga mediante PyTorchModelHubMixin, integracion en scripts de entrenamiento y pruebas de serializacion con safetensors sin depender de modelos grandes.
 - Pruebas de despliegue en edge: con 27,3 M de parametros ocupa alrededor de 55 MB en fp16 y 14 MB en int4, por lo que puede ejecutarse en dispositivos embebidos (Raspberry Pi, microcontroladores con soporte de inferencia) para validar cadenas completas de despliegue.
 - Benchmarking de infraestructura: util como carga de trabajo ligera para medir latencia, throughput y consumo energetico de frameworks de inferencia (PyTorch, ONNX Runtime, llama.cpp tras conversion) sin saturar la GPU.
 - Docencia en tecnicas de cuantizacion: permite ilustrar el impacto de fp32, fp16, int8 e int4 en tamano y velocidad sobre un modelo pequeno donde las diferencias son medibles rapidamente.
@@ -72,9 +72,9 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nuxsh/anlp-a2-p1-moe-shared | 27,3 M | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Model card vacia; arquitectura MoE no confirmada |
-| Vatsavsrivatsav/anlp-a2-p1-moe-shared | no disponible | no disponible | no disponible | HuggingFace | Repositorio homonimo, probablemente del mismo ejercicio academico |
-| unignoramus/anlp-a2-p1-moe-shared | no disponible | no disponible | no disponible | HuggingFace | Repositorio homonimo, probablemente del mismo ejercicio academico |
+| nuxsh/anlp-a2-p1-moe-shared | 27,3 M | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Model card vacia; arquitectura MoE no confirmada |
+| Vatsavsrivatsav/anlp-a2-p1-moe-shared | no disponible | no disponible | no disponible | Hugging Face | Repositorio homonimo, probablemente del mismo ejercicio academico |
+| unignoramus/anlp-a2-p1-moe-shared | no disponible | no disponible | no disponible | Hugging Face | Repositorio homonimo, probablemente del mismo ejercicio academico |
 | nanoMoE (framework de referencia) | variable | no aplicable | repositorio en GitHub | GitHub | Fork de nanoGPT para entrenar GPT con arquitecturas MoE; no es un modelo comparable directo |
 
 No se han identificado alternativas publicadas con especificaciones verificables y directamente comparables en la misma categoria y tarea.
@@ -93,7 +93,7 @@ No se han identificado alternativas publicadas con especificaciones verificables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nuxsh/anlp-a2-p1-moe-shared
+- Modelo en Hugging Face: https://huggingface.co/nuxsh/anlp-a2-p1-moe-shared
 - Repositorio homonimo de Vatsavsrivatsav: https://huggingface.co/Vatsavsrivatsav/anlp-a2-p1-moe-shared
 - Repositorio homonimo de unignoramus: https://huggingface.co/unignoramus/anlp-a2-p1-moe-shared
 - Documentacion de PyTorchModelHubMixin (integracion usada para publicar el modelo): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin

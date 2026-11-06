@@ -22,7 +22,7 @@ Técnicamente es un transformer encoder denso de 110,6 millones de parámetros, 
 | Formato de pesos | safetensors |
 | Tarea | text-classification (clasificación multietiqueta exclusiva, una sola etiqueta por documento) |
 | Etiquetas | culture, international, politique, société, sport, économie |
-| Modelo base | camembert/camembert-base, según la model card; las etiquetas de HuggingFace indican almanach/camembert-base-legacy |
+| Modelo base | camembert/camembert-base, según la model card; las etiquetas de Hugging Face indican almanach/camembert-base-legacy |
 | Tamaño del repositorio | 0,4 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -97,16 +97,16 @@ El autor señala que sport e international son las categorías mejor clasificada
 - VRAM estimada para inferencia: aproximadamente 0,45 GB en fp32, 0,22 GB en fp16 y 0,11 GB en int8 (cálculo a partir de los 110,6 M de parámetros).
 - GPU recomendadas: cualquier GPU, incluso las más modestas; el modelo no requiere A100, H100 ni RTX 4090. Una GTX 1050, una T4 o una GPU integrada moderna son suficientes.
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo de los últimos diez años, y también en CPU.
-- Opciones de despliegue: pipeline de HuggingFace Transformers, exportación a ONNX Runtime, TorchServe, text-embeddings-inference (que soporta tareas de clasificación) y APIs propias con FastAPI o similar. No hay versiones GGUF publicadas, por lo que el uso con llama.cpp u Ollama no está disponible de fábrica.
+- Opciones de despliegue: pipeline de Hugging Face Transformers, exportación a ONNX Runtime, TorchServe, text-embeddings-inference (que soporta tareas de clasificación) y APIs propias con FastAPI o similar. No hay versiones GGUF publicadas, por lo que el uso con llama.cpp u Ollama no está disponible de fábrica.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño (110,6 M de parámetros) y la longitud máxima de 512 tokens, el procesamiento por lotes en CPU es viable y en GPU el cuello de botella será el preprocesado, pero no se han publicado cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| regicid/bert-rubriques | 110,6 M | 512 tokens | Clasificación en 6 secciones de prensa francesa, con exactitud del 81,7 % en 241 ejemplos | MIT | HuggingFace, 0 descargas registradas |
-| camembert/camembert-base | 110 M (aproximado) | 512 tokens | Encoder de propósito general para francés; requiere ajuste fino para clasificar | MIT | HuggingFace, modelo ampliamente utilizado como base |
-| almanach/camembert-base-legacy | no disponible de forma fiable en la información proporcionada | no disponible | Encoder de propósito general para francés | no disponible | HuggingFace; aparece como base_model en las etiquetas del repositorio |
+| regicid/bert-rubriques | 110,6 M | 512 tokens | Clasificación en 6 secciones de prensa francesa, con exactitud del 81,7 % en 241 ejemplos | MIT | Hugging Face, 0 descargas registradas |
+| camembert/camembert-base | 110 M (aproximado) | 512 tokens | Encoder de propósito general para francés; requiere ajuste fino para clasificar | MIT | Hugging Face, modelo ampliamente utilizado como base |
+| almanach/camembert-base-legacy | no disponible de forma fiable en la información proporcionada | no disponible | Encoder de propósito general para francés | no disponible | Hugging Face; aparece como base_model en las etiquetas del repositorio |
 
 No se dispone de datos en la información proporcionada sobre otros clasificadores de secciones de prensa francesa con los que comparar el rendimiento, ni de evaluaciones cruzadas con modelos alternativos.
 
@@ -123,13 +123,13 @@ No se dispone de datos en la información proporcionada sobre otros clasificador
 - Licencia MIT: permite uso comercial, modificación y redistribución sin royalties, con la única obligación habitual de conservar el aviso de copyright y la licencia.
 - Adopción nula: el repositorio no registra ninguna descarga ni ningún like, por lo que no existe validación por parte de la comunidad ni reportes independientes de comportamiento en producción.
 - Idiomas: solo se ha entrenado y evaluado en francés. No se documenta ningún rendimiento en otras lenguas.
-- Discrepancia menor de trazabilidad: la model card declara camembert/camembert-base como base, mientras que las etiquetas de HuggingFace apuntan a almanach/camembert-base-legacy. Conviene verificar cuál es el artefacto exacto antes de reproducir el entrenamiento.
+- Discrepancia menor de trazabilidad: la model card declara camembert/camembert-base como base, mientras que las etiquetas de Hugging Face apuntan a almanach/camembert-base-legacy. Conviene verificar cuál es el artefacto exacto antes de reproducir el entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/regicid/bert-rubriques
+- Modelo en Hugging Face: https://huggingface.co/regicid/bert-rubriques
 - Modelo base declarado en la model card: https://huggingface.co/camembert/camembert-base
-- Modelo base indicado en las etiquetas de HuggingFace: https://huggingface.co/almanach/camembert-base-legacy
+- Modelo base indicado en las etiquetas de Hugging Face: https://huggingface.co/almanach/camembert-base-legacy
 - Proyecto Gallicagram: https://gallicagram.com
 - Herramienta de anotación ActiveTigger: https://activetigger.com
 - Paper, blog o repositorio adicional: no disponible (las únicas referencias son las anteriores; los resultados de búsqueda web consultados no contenían información relacionada con este modelo)

@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para comparar este checkpoint con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step363-fsdp-ckpt
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step363-fsdp-ckpt
 - Repositorio con pesos fusionados bf16 (para inferencia/evaluacion): https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step363
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Framework verl: no se proporciona enlace directo, pero es el framework de entrenamiento RL utilizado (ver tags del repositorio).

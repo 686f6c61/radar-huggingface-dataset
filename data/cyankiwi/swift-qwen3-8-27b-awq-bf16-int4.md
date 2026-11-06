@@ -49,7 +49,7 @@ En cuanto al ajuste fino que da origen al modelo base (Swift), el autor indica q
 - Automatización de tareas de razonamiento con coste por token reducido: la reducción del 58,3 % en tokens de pensamiento declarada por el autor abarata los flujos que facturan por token de salida, como pipelines de análisis o resolución de problemas.
 - Tareas STEM asistidas por imagen: el pipeline image-text-to-text permite interpretar diagramas, gráficos o capturas junto con una pregunta textual, útil en educación técnica o soporte de ingeniería.
 - Agentes con razonamiento encadenado: la calibración sobre datos agénticos y el ajuste orientado a evitar sobrepensamiento lo hacen adecuado para cadenas de decisión donde la latencia importa.
-- Integración en entornos con transformers: al usar safetensors y la librería transformers con compressed-tensors, se puede cargar directamente en servicios existentes basados en HuggingFace.
+- Integración en entornos con transformers: al usar safetensors y la librería transformers con compressed-tensors, se puede cargar directamente en servicios existentes basados en Hugging Face.
 - Prototipado e investigación sobre eficiencia de razonamiento: sirve como punto de partida para estudiar el efecto de penalizar tokens de sobrepensamiento en modelos Qwen.
 
 ## Benchmarks y rendimiento
@@ -77,8 +77,8 @@ Estos datos son afirmaciones del autor y no se acompanan de puntuaciones absolut
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyankiwi/Swift-Qwen3.8-27B-AWQ-BF16-INT4 | 27,8 B | no disponible | safetensors INT4 AWQ (compressed-tensors) | swift-open-license-1.0 (gated) | HuggingFace |
-| ukisai/Swift-Qwen3.8-27b (base) | 27,8 B | no disponible | safetensors BF16; GGUF en repositorio aparte | swift-open-license-1.0 (gated) | HuggingFace |
+| cyankiwi/Swift-Qwen3.8-27B-AWQ-BF16-INT4 | 27,8 B | no disponible | safetensors INT4 AWQ (compressed-tensors) | swift-open-license-1.0 (gated) | Hugging Face |
+| ukisai/Swift-Qwen3.8-27b (base) | 27,8 B | no disponible | safetensors BF16; GGUF en repositorio aparte | swift-open-license-1.0 (gated) | Hugging Face |
 | Qwen3.8-27B (modelo original) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar con alternativas de otros fabricantes de tamano similar (por ejemplo, modelos densos de 27-32 B de otras familias), ya que no se han proporcionado especificaciones ni puntuaciones de benchmarks de esos modelos en la informacion disponible.
@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros fabri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyankiwi/Swift-Qwen3.8-27B-AWQ-BF16-INT4
+- Modelo en Hugging Face: https://huggingface.co/cyankiwi/Swift-Qwen3.8-27B-AWQ-BF16-INT4
 - Modelo base (Swift-Qwen3.8-27b): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Version GGUF del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF

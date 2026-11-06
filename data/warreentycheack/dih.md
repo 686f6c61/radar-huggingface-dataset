@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`warreentycheack/dih` es un repositorio alojado en HuggingFace por el usuario `warreentycheack`, publicado con licencia Apache 2.0 y etiquetado con la región `us`. En el momento de la consulta registra 0 descargas y 0 "likes", no declara pipeline de inferencia y no incluye idiomas soportados. La model card asociada contiene únicamente el bloque de metadatos de licencia (`license: apache-2.0`), sin descripción, sin tablas de especificaciones y sin referencias a papers, repositorios de código o demos.
+`warreentycheack/dih` es un repositorio alojado en Hugging Face por el usuario `warreentycheack`, publicado con licencia Apache 2.0 y etiquetado con la región `us`. En el momento de la consulta registra 0 descargas y 0 "likes", no declara pipeline de inferencia y no incluye idiomas soportados. La model card asociada contiene únicamente el bloque de metadatos de licencia (`license: apache-2.0`), sin descripción, sin tablas de especificaciones y sin referencias a papers, repositorios de código o demos.
 
 No es posible determinar qué problema resuelve el modelo, su arquitectura, su tamaño, su longitud de contexto ni sus datos de entrenamiento, porque el autor no ha publicado esa información. Tampoco existe documentación externa: las búsquedas web realizadas no devuelven ningún resultado relacionado con el identificador `warreentycheack/dih`.
 
-Por tanto, esta ficha se limita a reflejar la información verificable del registro de HuggingFace y marca explícitamente como "no disponible" todo aquello que no puede confirmarse. El modelo no debe evaluarse ni desplegarse en producción sin que el autor publique pesos, configuración y documentación técnica.
+Por tanto, esta ficha se limita a reflejar la información verificable del registro de Hugging Face y marca explícitamente como "no disponible" todo aquello que no puede confirmarse. El modelo no debe evaluarse ni desplegarse en producción sin que el autor publique pesos, configuración y documentación técnica.
 
 ## Especificaciones tecnicas
 
@@ -94,6 +94,6 @@ No disponible. No es posible seleccionar alternativas comparables (mismo tamaño
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/warreentycheack/dih
+- Hugging Face: https://huggingface.co/warreentycheack/dih
 
 No se han encontrado enlaces relevantes adicionales (paper, blog, repositorio de código o demo) en la búsqueda web realizada. Los resultados obtenidos corresponden a sitios de preguntas y respuestas sin relación con el modelo.

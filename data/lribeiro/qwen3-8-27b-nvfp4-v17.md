@@ -87,7 +87,7 @@ La comparativa se limita a las variantes del mismo modelo base porque no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lribeiro/Qwen3.8-27B-nvfp4-v17
+- Modelo en Hugging Face: https://huggingface.co/lribeiro/Qwen3.8-27B-nvfp4-v17
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor
 - vLLM (fork requerido): https://github.com/vllm-project/vllm

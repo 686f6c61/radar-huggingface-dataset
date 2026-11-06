@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spectrallic/MiniMax-H3-LightX2V-int8-convrot | no disponible | no disponible | 4 u 8, CFG 1 | minimax-h3-community-license-agreement | HuggingFace (0 descargas) |
-| Comfy-Org/MiniMax-H3 | no disponible | no disponible | flujo estándar con LoRA separado | licencia MiniMax-H3 | HuggingFace (modelo base) |
-| lightx2v/Minimax-h3-Turbo | no disponible | no disponible | 4 u 8 (LoRA) | según repositorio de origen | HuggingFace (LoRA) |
+| Spectrallic/MiniMax-H3-LightX2V-int8-convrot | no disponible | no disponible | 4 u 8, CFG 1 | minimax-h3-community-license-agreement | Hugging Face (0 descargas) |
+| Comfy-Org/MiniMax-H3 | no disponible | no disponible | flujo estándar con LoRA separado | licencia MiniMax-H3 | Hugging Face (modelo base) |
+| lightx2v/Minimax-h3-Turbo | no disponible | no disponible | 4 u 8 (LoRA) | según repositorio de origen | Hugging Face (LoRA) |
 
 La comparación se limita a los modelos de los que deriva, ya que no se dispone de datos de benchmarks ni de especificaciones de parámetros para contrastar con alternativas de la misma categoría.
 
@@ -85,7 +85,7 @@ La comparación se limita a los modelos de los que deriva, ya que no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Spectrallic/MiniMax-H3-LightX2V-int8-convrot
+- Modelo en Hugging Face: https://huggingface.co/Spectrallic/MiniMax-H3-LightX2V-int8-convrot
 - Modelo base (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3
 - LoRA Turbo (lightx2v): https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Blog sobre atención dispersa y SageAttention citado por el autor: https://noxengine.dev/blog/sparse/

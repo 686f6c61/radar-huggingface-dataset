@@ -100,7 +100,7 @@ Frente a su modelo base, smart-commit-1.5b-v0.3 casi triplica el type_match (0,6
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucasBRT/smart-commit-1.5b-v0.3
+- Modelo en Hugging Face: https://huggingface.co/LucasBRT/smart-commit-1.5b-v0.3
 - Version anterior (v0.1): https://huggingface.co/LucasBRT/smart-commit-1.5b-v0.1
 - Repositorio de smart-commit (CLI): https://github.com/Lucas-BRT/smart-commit
 - Documentacion de evaluacion y entrenamiento: https://github.com/Lucas-BRT/smart-commit/blob/main/training/README.md

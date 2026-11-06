@@ -73,7 +73,7 @@ No se han publicado resultados comparativos entre estos adaptadores.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/hai2131/lab21-qwen3.5-4b-lora-triage
+- Repositorio Hugging Face del modelo: https://huggingface.co/hai2131/lab21-qwen3.5-4b-lora-triage
 - Adaptador similar del mismo laboratorio: https://huggingface.co/magschr/lab21-qwen3.5-4b-triage-lora
 - Adaptador similar (Marvis12957): https://huggingface.co/Marvis12957/ai_in_action_lab21
 - Página de FriendliAI con el adaptador similar: https://friendli.ai/models/magschr/lab21-qwen3.5-4b-triage-lora

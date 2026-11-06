@@ -106,7 +106,7 @@ MiniCPM-OCR 1.0 presenta la mejor relación calidad-throughput entre los modelos
 - Familia MiniCPM-V: https://github.com/openbmb/MiniCPM-V
 - Demo oficial (China): https://platform.modelbest.cn/console/playground/document-parse
 - Demo oficial (Global): https://platform.modelbest.ai/console/playground/document-parse
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-OCR
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-OCR
 - API gratuita: https://platform.modelbest.ai/console/docs/api/document-parse
 - Guía de uso: https://github.com/OpenBMB/MiniCPM-OCR#using-minicpm-ocr
 - Guía de reproducción de benchmarks: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/benchmark_reproduction_en.md

@@ -78,6 +78,6 @@ Existe un adaptador muy similar publicado por otro autor: `TuanPham2308/lab21-qw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mixp123/lab21
+- Modelo en Hugging Face: https://huggingface.co/mixp123/lab21
 - Modelo similar (TuanPham2308): https://huggingface.co/TuanPham2308/lab21-qwen3.5-2b-cskh-triage-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B

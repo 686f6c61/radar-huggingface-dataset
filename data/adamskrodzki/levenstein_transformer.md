@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adamskrodzki/levenstein_transformer` es un repositorio de modelos alojado en HuggingFace por el usuario adamskrodzki, publicado bajo licencia MIT. El repositorio no incluye model card descriptiva: el único contenido es la declaración de licencia, por lo que no hay información pública sobre arquitectura concreta, tamaño, datos de entrenamiento, idiomas ni formato de pesos. En el momento de la consulta acumula 0 descargas y 0 "likes", y las fechas de creación y actualización son idénticas, lo que apunta a una subida automatizada o a un repositorio de prueba.
+`adamskrodzki/levenstein_transformer` es un repositorio de modelos alojado en Hugging Face por el usuario adamskrodzki, publicado bajo licencia MIT. El repositorio no incluye model card descriptiva: el único contenido es la declaración de licencia, por lo que no hay información pública sobre arquitectura concreta, tamaño, datos de entrenamiento, idiomas ni formato de pesos. En el momento de la consulta acumula 0 descargas y 0 "likes", y las fechas de creación y actualización son idénticas, lo que apunta a una subida automatizada o a un repositorio de prueba.
 
 El nombre del repositorio remite al Levenshtein Transformer, una arquitectura de generación de secuencias parcialmente autoregresiva presentada por Jiatao Gu, Changhan Wang y Junbo Zhao en NeurIPS 2019 (arXiv:1905.11006). A diferencia de los modelos autoregresivos token a token, sus operaciones atómicas son inserción y borrado sobre una secuencia existente, lo que permite refinamiento iterativo y decodificación no monotónica.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye parametros, contexto, ren
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adamskrodzki/levenstein_transformer
+- Repositorio en Hugging Face: https://huggingface.co/adamskrodzki/levenstein_transformer
 - Paper original (arXiv): https://arxiv.org/abs/1905.11006
 - Version HTML del paper (ar5iv): https://ar5iv.labs.arxiv.org/html/1905.11006
 - Pagina del paper en NeurIPS: https://proceedings.neurips.cc/paper/9297-levenshtein-transformer

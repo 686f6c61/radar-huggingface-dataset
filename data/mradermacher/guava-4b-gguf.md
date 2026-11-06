@@ -118,7 +118,7 @@ Nota: las filas correspondientes a OpenVLA, SmolVLA y Qwen2.5-VL se incluyen uni
 
 ## Enlaces
 
-- Repositorio cuantizado en HuggingFace: https://huggingface.co/mradermacher/Guava-4B-GGUF
+- Repositorio cuantizado en Hugging Face: https://huggingface.co/mradermacher/Guava-4B-GGUF
 - Modelo base: https://huggingface.co/AIcell/Guava-4B
 - Lista de descargas del cuantizador: https://hf.tst.eu/model#Guava-4B-GGUF
 - Pagina de peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests

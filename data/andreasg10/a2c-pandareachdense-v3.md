@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AndreasG10/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Advantage Actor-Critic (A2C) sobre el entorno PandaReachDense-v3, una tarea de control robótico de un brazo manipulador Franka Emika Panda cuyo objetivo es alcanzar una posición objetivo en el espacio 3D. El modelo se ha entrenado y empaquetado con la librería stable-baselines3 y se distribuye a través del Hub de HuggingFace para su carga con huggingface_sb3.
+AndreasG10/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Advantage Actor-Critic (A2C) sobre el entorno PandaReachDense-v3, una tarea de control robótico de un brazo manipulador Franka Emika Panda cuyo objetivo es alcanzar una posición objetivo en el espacio 3D. El modelo se ha entrenado y empaquetado con la librería stable-baselines3 y se distribuye a través del Hub de Hugging Face para su carga con huggingface_sb3.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política neuronal específica para una tarea de robótica simulada, con un espacio de observación y acción definido por el entorno Gymnasium correspondiente. El repositorio es de tamano 0.0 GB según los metadatos, lo que sugiere pesos de red de pequena dimension, coherentes con una política MLP para un entorno de control continuo de baja dimensionalidad.
 
@@ -69,8 +69,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento | Licencia |
 |---|---|---|---|---|---|---|
 | AndreasG10/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no aplica | mean_reward -0.24 +/- 0.12 | no disponible |
-| Agentes PPO en PandaReachDense-v3 (HuggingFace) | PPO | PandaReachDense-v3 | no disponible | no aplica | no disponible en esta ficha | variable |
-| Agentes SAC en PandaReachDense-v3 (HuggingFace) | SAC | PandaReachDense-v3 | no disponible | no aplica | no disponible en esta ficha | variable |
+| Agentes PPO en PandaReachDense-v3 (Hugging Face) | PPO | PandaReachDense-v3 | no disponible | no aplica | no disponible en esta ficha | variable |
+| Agentes SAC en PandaReachDense-v3 (Hugging Face) | SAC | PandaReachDense-v3 | no disponible | no aplica | no disponible en esta ficha | variable |
 
 No se dispone de datos verificados de alternativas comparables en la informacion proporcionada; la comparativa se limita a indicar la existencia de agentes con otros algoritmos en el mismo entorno, sin cifras de rendimiento confirmadas.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados de alternativas comparables en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AndreasG10/a2c-PandaReachDense-v3
+- Hugging Face: https://huggingface.co/AndreasG10/a2c-PandaReachDense-v3
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno PandaReachDense-v3 (Gymnasium-Robotics): https://robotics.farama.org/envs/MaMuJoCo/

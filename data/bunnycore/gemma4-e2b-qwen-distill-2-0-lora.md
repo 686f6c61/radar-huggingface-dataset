@@ -43,7 +43,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 - Prototipado rapido de chatbots: al ser un adaptador LoRA, se puede cargar y descargar rapidamente sobre el modelo base, ideal para experimentar con destilacion de conocimiento en entornos de investigacion.
 - Fine-tuning incremental: el adaptador puede servir como punto de partida para nuevos ajustes con LoRA, permitiendo iterar sobre tareas especificas sin reentrenar el modelo completo.
 - Generacion de texto asistida en aplicaciones moviles: su bajo consumo de memoria (el adaptador ocupa 0.4 GB) permite integrarlo en apps de productividad o asistentes personales.
-- Educacion y aprendizaje: util para demostrar tecnicas de destilacion y adaptacion de bajo rango en cursos de IA, ya que el codigo y los pesos estan disponibles en HuggingFace.
+- Educacion y aprendizaje: util para demostrar tecnicas de destilacion y adaptacion de bajo rango en cursos de IA, ya que el codigo y los pesos estan disponibles en Hugging Face.
 - Evaluacion de modelos destilados: investigadores pueden comparar el rendimiento de este adaptador frente a otros destilados de Qwen o Gemma para estudiar la transferencia de conocimiento entre familias de modelos.
 
 ## Benchmarks y rendimiento
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para comparar este adaptador con alternativas concretas. Existen otros adaptadores LoRA similares en HuggingFace, como `ertghiu256/Gemma4-e2b-qwen-glm-distill-lora`, que tambien destilan conocimiento de Qwen sobre Gemma 4 E2B, pero no se han publicado metricas comparativas. El modelo base Gemma 4 E2B compite con otros modelos pequenos como Qwen 2.5 1.5B o Llama 3.2 1B, pero este adaptador no ha sido evaluado frente a ellos.
+No se dispone de informacion suficiente para comparar este adaptador con alternativas concretas. Existen otros adaptadores LoRA similares en Hugging Face, como `ertghiu256/Gemma4-e2b-qwen-glm-distill-lora`, que tambien destilan conocimiento de Qwen sobre Gemma 4 E2B, pero no se han publicado metricas comparativas. El modelo base Gemma 4 E2B compite con otros modelos pequenos como Qwen 2.5 1.5B o Llama 3.2 1B, pero este adaptador no ha sido evaluado frente a ellos.
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para comparar este adaptador con alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bunnycore/Gemma4-E2B-Qwen-Distill-2.0-Lora
+- Repositorio Hugging Face: https://huggingface.co/bunnycore/Gemma4-E2B-Qwen-Distill-2.0-Lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
 - Model card de Gemma 4 (Google): https://ai.google.dev/gemma/docs/core/model_card_4
 - Documentacion de Gemma 4 para edge: https://developers.google.com/edge/litert-lm/models/gemma-4

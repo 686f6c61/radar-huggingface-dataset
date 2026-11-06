@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "StillDeadcode/qwen3.8-27b-iqr-v4",
+  "slug": "stilldeadcode-qwen3-8-27b-iqr-v4",
+  "author": "StillDeadcode",
+  "url": "https://huggingface.co/StillDeadcode/qwen3.8-27b-iqr-v4",
+  "created_at": "2026-11-03T18:58:05.000Z",
+  "updated_at": "2026-11-03T22:54:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "radiance",
+    "rocm",
+    "amd",
+    "rdna4",
+    "iqr",
+    "speculative-decoding",
+    "dflash2",
+    "vision",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289337094144,
+  "storage_human": "289.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B, z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StillDeadcode/qwen3.8-27b-iqr-v4 · Hugging Face",
+      "url": "https://huggingface.co/StillDeadcode/qwen3.8-27b-iqr-v4",
+      "snippet": "Qwen3.8-27B quantised with IQR-V4, radiance's trellis format. Every trunk linear is rotated by a 128-point Hadamard and fitted by GPTQ, in act order, against calibration Hessians. Its codes are a tail-biting trellis down each column whose 2^16 states' values are computed from the state, under one ..."
+    },
+    {
+      "title": "StillDeadcode (StillDeadcode) – Activity - Hugging Face",
+      "url": "https://huggingface.co/StillDeadcode/activity/all",
+      "snippet": "StillDeadcode/qwen3.8-27b-iqr-v4 Image-Text-to-Text •Updated about 10 hours ago• 1 updated a model5 days ago"
+    },
+    {
+      "title": "Ultimate 2x R9700 guide for Qwen 3.8 27b MXFP4: ~200t/s c=1; 500t/s at c=8",
+      "url": "https://forum.level1techs.com/t/ultimate-2x-r9700-guide-for-qwen-3-8-27b-mxfp4-200t-s-c-1-500t-s-at-c-8/257789",
+      "snippet": "How-to: turn 2x R9700s into a fast local LLM rig (Qwen3.8-27B MXFP4, ~200 tok/s single, ~500 tok/s at 8 concurrent) Radiance on 2x Radeon AI PRO R9700: A Setup and Benchmark Guide The inference engine used here has an interesting lineage."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "IQR-V4: Measured Widths, a Vocabulary-Weighted Head and Faster Kernels",
+      "url": "https://radiance.stilldeadco.de/whitepapers/iqr-v4.pdf",
+      "snippet": "Abstract IQR-V4 is the fourth format of the IQR series for Qwen3.8-27B on AMD R9700 cards. It keeps V3’s computed trellis code and its one f32 scale a row, and changes where the bits go and how the kernels read them. GPTQ runs in act order inside the column trellis; the projections fed by the attention heads take a bf16 scale a (row, 128) block from five bits up; the trunk’s widths come ..."
+    }
+  ]
+}

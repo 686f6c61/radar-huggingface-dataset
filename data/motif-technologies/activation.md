@@ -25,7 +25,7 @@ Su relevancia actual radica en la creciente demanda de eficiencia computacional 
 
 Activation no es un modelo entrenado, sino una coleccion de kernels de computacion de bajo nivel. Incluye implementaciones de PolyNorm (basada en el paper arXiv 2411.03884), RMSNorm (equivalente a `torch.nn.RMSNorm`) y varias operaciones fusionadas. La operacion FusedAddRMSNorm combina la suma residual con RMSNorm en un unico kernel, eliminando una lectura y escritura intermedia de memoria. FusedMulPolyNorm fusiona PolyNorm con una multiplicacion por tensor. FusedMulGroupedPolyNorm esta implementada en CUDA C++ (compilada mediante `setup.py`) y esta orientada a MoE: soporta pesos y sesgos por experto, busqueda binaria en kernel para el mapeo de tokens a expertos, multiplicacion opcional por scores de routing y fusion de hidden_clamp.
 
-El paquete esta disenado para integrarse en el ecosistema PyTorch mediante la libreria `kernels` de HuggingFace. La instalacion se realiza con `pip install --no-build-isolation -e .` para compilacion local. Los benchmarks se han ejecutado en GPUs NVIDIA H100 y B200, asi como en AMD MI250, con casos de prueba derivados del "Motif LLM". No se dispone de informacion sobre el proceso de entrenamiento del modelo subyacente, ya que la libreria no incluye pesos ni datos de entrenamiento.
+El paquete esta disenado para integrarse en el ecosistema PyTorch mediante la libreria `kernels` de Hugging Face. La instalacion se realiza con `pip install --no-build-isolation -e .` para compilacion local. Los benchmarks se han ejecutado en GPUs NVIDIA H100 y B200, asi como en AMD MI250, con casos de prueba derivados del "Motif LLM". No se dispone de informacion sobre el proceso de entrenamiento del modelo subyacente, ya que la libreria no incluye pesos ni datos de entrenamiento.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ El paquete esta disenado para integrarse en el ecosistema PyTorch mediante la li
 - Fusion de operaciones: FusedAddRMSNorm (suma residual + RMSNorm) y FusedMulPolyNorm (PolyNorm + multiplicacion).
 - Soporte para modelos MoE mediante FusedMulGroupedPolyNorm con pesos por experto, busqueda binaria en kernel y multiplicacion por scores de routing.
 - Fusion de hidden_clamp en la variante agrupada.
-- Compatibilidad con PyTorch y con el sistema de kernels de HuggingFace.
+- Compatibilidad con PyTorch y con el sistema de kernels de Hugging Face.
 - Benchmarks reproducibles incluidos en el repositorio para H100, B200 y MI250.
 - No incluye capacidades de generacion de texto, razonamiento, codigo, vision ni tool calling, al no ser un modelo de lenguaje.
 
@@ -42,7 +42,7 @@ El paquete esta disenado para integrarse en el ecosistema PyTorch mediante la li
 - Entrenamiento de modelos transformer en GPUs AMD: la libreria proporciona kernels RMSNorm y PolyNorm optimizados para MI250, reduciendo la dependencia de implementaciones genericas de PyTorch en hardware AMD.
 - Aceleracion de modelos MoE en produccion: FusedMulGroupedPolyNorm fusiona la normalizacion por experto con el routing, lo que reduce el overhead de lanzamiento de kernels y las lecturas de memoria en arquitecturas con cientos de expertos (el benchmark usa 384 expertos).
 - Reduccion de memoria en entrenamiento con activaciones: la fusion de suma residual y RMSNorm en FusedAddRMSNorm elimina tensores intermedios, lo que permite lotes mas grandes o secuencias mas largas en memoria limitada.
-- Integracion en pipelines de HuggingFace: al estar empaquetado como kernel de HuggingFace, puede cargarse dinamicamente en flujos de entrenamiento e inferencia existentes sin reescribir el codigo del modelo.
+- Integracion en pipelines de Hugging Face: al estar empaquetado como kernel de Hugging Face, puede cargarse dinamicamente en flujos de entrenamiento e inferencia existentes sin reescribir el codigo del modelo.
 - Investigacion en eficiencia de kernels: los benchmarks reproducibles y el codigo abierto permiten comparar el rendimiento de kernels personalizados frente a `torch.compile` en distintas GPUs.
 - Fine-tuning de modelos con PolyNorm: la implementacion de PolyNorm permite experimentar con esta variante de normalizacion en lugar de RMSNorm o LayerNorm, con soporte para entrenamiento (forward y backward).
 
@@ -62,7 +62,7 @@ Para el resto de kernels (RMSNorm, FusedAddRMSNorm, PolyNorm, FusedMulPolyNorm) 
 - GPU compatibles: NVIDIA H100, B200 y AMD MI250 (probadas segun los benchmarks publicados). No se especifican requisitos minimos de VRAM, ya que depende del modelo que se entrene o ejecute con estos kernels.
 - Al ser kernels de computo y no un modelo, no hay estimacion de VRAM por cuantizacion.
 - Compilacion local requiere toolchain CUDA y `pip install --no-build-isolation -e .`.
-- Integracion con PyTorch y con la libreria `kernels` de HuggingFace.
+- Integracion con PyTorch y con la libreria `kernels` de Hugging Face.
 - No se dispone de datos de latencia o throughput absolutos mas alla de los milisegundos por operacion reportados en el benchmark de B200.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de comparativas directas de rendimiento entre Activation y estas l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Motif-Technologies/activation
+- Hugging Face: https://huggingface.co/Motif-Technologies/activation
 - Paper PolyNorm: https://arxiv.org/html/2411.03884v1
 - Documentacion RMSNorm de PyTorch: https://docs.pytorch.org/docs/stable/generated/torch.nn.RMSNorm.html
 - Benchmarks README (referenciado en la model card): ./benchmarks/README.md (ruta relativa dentro del repositorio)

@@ -88,7 +88,7 @@ No se han encontrado en la búsqueda web enlaces ni datos de modelos alternativo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ownllm/qwen3.8-27b-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/ownllm/qwen3.8-27b-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto OwnLLM: https://github.com/ownllm-org/ownllm
 - Papers, blogs, demos o documentación adicional: no disponible en la información proporcionada.

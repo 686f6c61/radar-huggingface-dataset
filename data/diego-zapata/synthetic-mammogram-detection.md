@@ -1,7 +1,7 @@
 # diego-zapata/synthetic-mammogram-detection
 
 ## Resumen
-El modelo `diego-zapata/synthetic-mammogram-detection` es un artefacto publicado en HuggingFace por el usuario diego-zapata bajo licencia MIT. Según la información disponible, se trata de un modelo destinado a la detección de mamografías sintéticas, aunque no se proporcionan detalles sobre su arquitectura, entrenamiento o rendimiento. El repositorio tiene un tamaño de 0,7 GB y utiliza el formato de serialización joblib, lo que sugiere que podría estar basado en scikit-learn o similar. Sin embargo, la ausencia de documentación técnica y de métricas impide evaluar su utilidad real. Es relevante porque aborda un área de interés creciente como es el uso de datos sintéticos en imagen médica, pero carece de información suficiente para su uso en producción.
+El modelo `diego-zapata/synthetic-mammogram-detection` es un artefacto publicado en Hugging Face por el usuario diego-zapata bajo licencia MIT. Según la información disponible, se trata de un modelo destinado a la detección de mamografías sintéticas, aunque no se proporcionan detalles sobre su arquitectura, entrenamiento o rendimiento. El repositorio tiene un tamaño de 0,7 GB y utiliza el formato de serialización joblib, lo que sugiere que podría estar basado en scikit-learn o similar. Sin embargo, la ausencia de documentación técnica y de métricas impide evaluar su utilidad real. Es relevante porque aborda un área de interés creciente como es el uso de datos sintéticos en imagen médica, pero carece de información suficiente para su uso en producción.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -41,6 +41,6 @@ No se dispone de informacion sobre modelos comparables. No se puede establecer u
 - No se recomienda su uso en diagnostico medico sin una validacion rigurosa por parte de profesionales sanitarios.
 
 ## Enlaces
-- [HuggingFace: diego-zapata/synthetic-mammogram-detection](https://huggingface.co/diego-zapata/synthetic-mammogram-detection)
+- [Hugging Face: diego-zapata/synthetic-mammogram-detection](https://huggingface.co/diego-zapata/synthetic-mammogram-detection)
 
 Nota: los resultados de busqueda web proporcionados son articulos genericos sobre mamografia sintetica e IA, pero no estan directamente relacionados con este modelo especifico, por lo que no se incluyen como enlaces del modelo.

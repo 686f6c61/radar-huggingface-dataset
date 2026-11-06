@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chaenn/smolvla_policy_so101_multitask_pnp_stack_onehot_0917 | 450.046.176 | no aplica (politica por paso) | no disponible (sin evaluacion publicada) | apache-2.0 | HuggingFace, libreria `lerobot` |
-| lerobot/smolvla_base (modelo base) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| Chaenn/smolvla_policy_so101_multitask_pnp_stack_onehot_0917 | 450.046.176 | no aplica (politica por paso) | no disponible (sin evaluacion publicada) | apache-2.0 | Hugging Face, libreria `lerobot` |
+| lerobot/smolvla_base (modelo base) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otras familias VLA (Octo, OpenVLA, pi0, etc.) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | no detallado en la busqueda realizada |
 
 No se dispone de datos comparativos verificables en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre alternativas de robotica, por lo que la comparativa cuantitativa queda pendiente de consultar las fuentes primarias (paper de SmolVLA y documentacion de LeRobot).
@@ -94,7 +94,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chaenn/smolvla_policy_so101_multitask_pnp_stack_onehot_0917
+- Modelo en Hugging Face: https://huggingface.co/Chaenn/smolvla_policy_so101_multitask_pnp_stack_onehot_0917
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Chaenn/so101_multitask_test_pnp0908_stack0908_onehot
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Chaenn/so101_multitask_test_pnp0908_stack0908_onehot

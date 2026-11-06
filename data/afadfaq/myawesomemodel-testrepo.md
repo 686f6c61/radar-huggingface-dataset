@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de prueba en HuggingFace (id: `afadfaq/MyAwesomeModel-TestRepo`), publicado por el usuario `afadfaq`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado su razonamiento profundo y sus capacidades de inferencia mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas en el post-entrenamiento.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de prueba en Hugging Face (id: `afadfaq/MyAwesomeModel-TestRepo`), publicado por el usuario `afadfaq`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado su razonamiento profundo y sus capacidades de inferencia mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas en el post-entrenamiento.
 
 La model card afirma que el modelo muestra mejoras en matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y un mejor soporte para function calling. Sin embargo, el repositorio no incluye información técnica suficiente sobre la arquitectura, el número de parámetros o la longitud de contexto, por lo que estos datos no están disponibles. El modelo está etiquetado con `pipeline: feature-extraction`, aunque el contenido del README sugiere un modelo de tipo conversacional/razonador.
 
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: `https://huggingface.co/afadfaq/MyAwesomeModel-TestRepo`
+- Repositorio en Hugging Face: `https://huggingface.co/afadfaq/MyAwesomeModel-TestRepo`
 - Repositorio de prueba alternativo (sin relacion clara): `https://huggingface.co/safaf4455/MyAwesomeModel-TestRepo`
 - Repositorio de prueba alternativo (sin relacion clara): `https://huggingface.co/sad12edaw/MyAwesomeModel-TestRepo`
 

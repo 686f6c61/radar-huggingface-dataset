@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer-classification-run3 es un repositorio de HuggingFace publicado por el usuario ppolishchukserhiy que contiene una implementacion propia y compacta de la arquitectura EfficientFormer orientada a tareas de clasificacion. Segun la propia model card, no se trata de un modelo preentrenado listo para produccion, sino de un punto de partida experimental pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. El checkpoint incluido (`model.safetensors`) se describe explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado y evaluado.
+Efficientformer-classification-run3 es un repositorio de Hugging Face publicado por el usuario ppolishchukserhiy que contiene una implementacion propia y compacta de la arquitectura EfficientFormer orientada a tareas de clasificacion. Segun la propia model card, no se trata de un modelo preentrenado listo para produccion, sino de un punto de partida experimental pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. El checkpoint incluido (`model.safetensors`) se describe explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado y evaluado.
 
 El recuento real de parametros reportado en el repositorio es de 33.088, una cifra muy reducida que encaja con la naturaleza de "smoke test" del artefacto y con un tamano de repositorio de 0,0 GB. La configuracion de arquitectura declarada es de escala "small", con atencion lineal, fusion mediante concat mlp, activacion approx gelu y normalizacion groupnorm. El repositorio incluye ademas `eval.py` como artefacto principal, junto con `config.json` y `training_args.json`.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el repositorio no presenta evidencia de un entrenami
 - Pruebas de humo de pipelines de vision: sirve para verificar que un entorno de entrenamiento o inferencia carga correctamente un checkpoint safetensors antes de escalar a modelos mayores.
 - Plantilla para experimentos de clasificacion: la receta por defecto con lamb y warmup constante puede reutilizarse como punto de partida en estudios comparativos con baselines de capacidad similar.
 - Docencia y formacion: util como ejemplo didactico de arquitectura de clasificacion con atencion lineal para explicar diferencias frente a transformers de atencion cuadratica.
-- Validacion de integraciones con HuggingFace: permite comprobar el flujo de descarga, inspeccion de tags y metadatos de un repositorio antes de definir un adaptador de carga propio.
+- Validacion de integraciones con Hugging Face: permite comprobar el flujo de descarga, inspeccion de tags y metadatos de un repositorio antes de definir un adaptador de carga propio.
 - Banco de pruebas de reproducibilidad: al incluir `training_args.json` y semillas, puede emplearse para ensayar protocolos de evaluacion con multiples semillas y registro de versiones de entorno, tal como recomienda la propia model card.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| efficientformer-classification-run3 | 33.088 (declarados) | no aplica | MIT | HuggingFace | Checkpoint de inicializacion, sin entrenamiento declarado |
+| efficientformer-classification-run3 | 33.088 (declarados) | no aplica | MIT | Hugging Face | Checkpoint de inicializacion, sin entrenamiento declarado |
 | EfficientFormer original (escala small) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | publico | Modelo entrenado y con benchmarks publicados por sus autores |
 | Baselines de clasificacion de capacidad similar | no disponible | no aplica | no disponible | no disponible | La model card recomienda comparar contra un baseline de capacidad equivalente |
 
@@ -82,4 +82,4 @@ No se dispone de datos de rendimiento verificados para establecer una comparacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ppolishchukserhiy/efficientformer-classification-run3
+- Hugging Face: https://huggingface.co/ppolishchukserhiy/efficientformer-classification-run3

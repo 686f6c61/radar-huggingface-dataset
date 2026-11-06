@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8n-obb
+- Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8n-obb
 - RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo
 - Ejemplo YOLOv8 en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8
 - Modelo original (airockchip/ultralytics_yolov8): https://github.com/airockchip/ultralytics_yolov8

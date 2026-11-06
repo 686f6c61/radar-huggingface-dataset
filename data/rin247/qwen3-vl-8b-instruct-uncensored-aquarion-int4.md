@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct (base) | ~8B (no confirmado) | No disponible | FP16 | Apache 2.0 (según el repo oficial) | HuggingFace |
-| Qwen3-VL-8B-Instruct-Uncensored-Aquarion-INT4 (este) | 4.386.905.328 | No disponible | INT4 weight-only | No disponible | HuggingFace |
+| Qwen3-VL-8B-Instruct (base) | ~8B (no confirmado) | No disponible | FP16 | Apache 2.0 (según el repo oficial) | Hugging Face |
+| Qwen3-VL-8B-Instruct-Uncensored-Aquarion-INT4 (este) | 4.386.905.328 | No disponible | INT4 weight-only | No disponible | Hugging Face |
 | Otras cuantizaciones de la colección Aquarion (FP8, INT8, FP4) | No disponible | No disponible | FP8/INT8/FP4 | No disponible | Colección de Rin247 |
 
 La comparativa se limita a aspectos estructurales, ya que no hay datos de rendimiento publicados. Frente al modelo base, esta versión ofrece un tamaño significativamente menor y ausencia de censura, pero introduce una posible pérdida de precisión por la cuantización y carece de licencia explícita. Frente a otras cuantizaciones de la misma colección, no se dispone de información diferencial.
@@ -76,7 +76,7 @@ La comparativa se limita a aspectos estructurales, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-INT4
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-INT4
 - Colección Qwen3-Aquarion de Rin247: https://huggingface.co/collections/Rin247/qwen3-aquarion
 - Página del modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio oficial de Qwen3-VL en GitHub: https://github.com/QwenLM/Qwen3-VL

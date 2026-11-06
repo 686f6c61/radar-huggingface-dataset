@@ -115,7 +115,7 @@ Resultados publicados en la model card (comparación con Qwen3-4B Thinking origi
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-4B-Thinking-2507
+- Repositorio analizado en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-4B-Thinking-2507
 - Pesos oficiales: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Licencia oficial: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

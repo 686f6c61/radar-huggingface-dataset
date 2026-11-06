@@ -2,9 +2,9 @@
 
 ## Resumen
 
-cerulean-works/ben-lab4-c4-gpt2 es un modelo de generacion de texto publicado en HuggingFace por el usuario cerulean-works, con 124.439.808 parametros confirmados a partir de los pesos en safetensors y un repositorio de 0,5 GB. La etiqueta de arquitectura es gpt2 y la libreria declarada es transformers, por lo que se trata de un transformer decoder-only de tipo GPT-2, presumiblemente entrenado o ajustado desde cero, a juzgar por el identificador "c4-gpt2" del repositorio. No hay informacion publicada sobre el proceso de entrenamiento, el dataset ni la procedencia del modelo.
+cerulean-works/ben-lab4-c4-gpt2 es un modelo de generacion de texto publicado en Hugging Face por el usuario cerulean-works, con 124.439.808 parametros confirmados a partir de los pesos en safetensors y un repositorio de 0,5 GB. La etiqueta de arquitectura es gpt2 y la libreria declarada es transformers, por lo que se trata de un transformer decoder-only de tipo GPT-2, presumiblemente entrenado o ajustado desde cero, a juzgar por el identificador "c4-gpt2" del repositorio. No hay informacion publicada sobre el proceso de entrenamiento, el dataset ni la procedencia del modelo.
 
-El modelo es relevante unicamente como artefacto de experimentacion: tiene 0 descargas y 0 likes en el momento de la consulta, y su model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas soportados, ni uso previsto, lo que limita seriamente cualquier evaluacion de idoneidad para produccion.
+El modelo es relevante unicamente como artefacto de experimentacion: tiene 0 descargas y 0 likes en el momento de la consulta, y su model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas soportados, ni uso previsto, lo que limita seriamente cualquier evaluacion de idoneidad para produccion.
 
 Por tamano, encaja en la categoria de modelos pequenos (orden de GPT-2 small, 124M de parametros), ejecutables en CPU y en cualquier GPU de consumo. Su utilidad practica queda condicionada a la ausencia total de datos de evaluacion, documentacion de entrenamiento y terminos legales de uso.
 
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cerulean-works/ben-lab4-c4-gpt2 | 124,4M | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card ni evaluacion |
-| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT (pesos publicados por OpenAI) | HuggingFace, ampliamente usado | Referencia historica, ampliamente evaluado |
-| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 (segun distribucion en HuggingFace) | HuggingFace, muy usado | Version destilada de GPT-2, mas rapida |
-| Pythia-160M (EleutherAI) | 160M | 2048 tokens | Apache 2.0 | HuggingFace | Suite con checkpoints intermedios y evaluacion publicada |
-| GPT-2 medium (OpenAI) | 355M | 1024 tokens | MIT | HuggingFace | Mayor capacidad, mismo orden de magnitud |
+| cerulean-works/ben-lab4-c4-gpt2 | 124,4M | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card ni evaluacion |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT (pesos publicados por OpenAI) | Hugging Face, ampliamente usado | Referencia historica, ampliamente evaluado |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 (segun distribucion en Hugging Face) | Hugging Face, muy usado | Version destilada de GPT-2, mas rapida |
+| Pythia-160M (EleutherAI) | 160M | 2048 tokens | Apache 2.0 | Hugging Face | Suite con checkpoints intermedios y evaluacion publicada |
+| GPT-2 medium (OpenAI) | 355M | 1024 tokens | MIT | Hugging Face | Mayor capacidad, mismo orden de magnitud |
 
 La comparacion se limita a parametros, contexto y licencia: no existen datos de rendimiento de ben-lab4-c4-gpt2 que permitan contrastar calidad con ninguna de las alternativas.
 
@@ -94,7 +94,7 @@ La comparacion se limita a parametros, contexto y licencia: no existen datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cerulean-works/ben-lab4-c4-gpt2
+- Modelo en Hugging Face: https://huggingface.co/cerulean-works/ben-lab4-c4-gpt2
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales especificos de este modelo en la busqueda web realizada (los resultados obtenidos no guardan relacion con el modelo).

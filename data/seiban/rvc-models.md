@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `seiban/RVC-Models` es un espacio alojado en HuggingFace bajo el identificador del usuario "seiban". En el momento de la consulta, el repositorio aparece completamente vacío: su tamano declarado es de 0.0 GB, no tiene pipeline asociado, no registra descargas ni "likes", y su model card se limita a una unica linea de metadatos con la licencia `openrail`. No se ha publicado ninguna descripcion funcional, arquitectura, tamano de parametros ni documentacion de uso.
+El repositorio `seiban/RVC-Models` es un espacio alojado en Hugging Face bajo el identificador del usuario "seiban". En el momento de la consulta, el repositorio aparece completamente vacío: su tamano declarado es de 0.0 GB, no tiene pipeline asociado, no registra descargas ni "likes", y su model card se limita a una unica linea de metadatos con la licencia `openrail`. No se ha publicado ninguna descripcion funcional, arquitectura, tamano de parametros ni documentacion de uso.
 
 El nombre "RVC" se asocia habitualmente en el ecosistema open source con "Retrieval-based Voice Conversion", una familia de tecnicas de conversion de voz a voz. Sin embargo, esta asociacion es una inferencia a partir del acronimo y no puede confirmarse con la informacion disponible en el repositorio, por lo que cualquier afirmacion sobre la naturaleza del contenido seria especulativa. No hay ficheros de pesos, configuraciones ni scripts en el momento de la consulta.
 
@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/seiban/RVC-Models
+- Repositorio en Hugging Face: https://huggingface.co/seiban/RVC-Models
 - Resultados de busqueda web proporcionados: no guardan relacion con el modelo (corresponden al sitio corporativo de Sygnatures: https://www.sygnatures.com/our-locations/, https://www.sygnatures.com/mentions-legales/, https://isuite.sygnatures.com/cnx/iSuiteExpert/Connexion, https://www.sygnatures.com/reconversion-des-salaries/, https://www.sygnatures.com/en/testimonials/).
 - Paper, blog, repositorio o demo oficial: no disponible.

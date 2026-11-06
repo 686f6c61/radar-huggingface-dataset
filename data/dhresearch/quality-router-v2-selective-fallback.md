@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dhresearch/quality-router-v2-selective-fallback` no es un modelo generativo, sino un clasificador binario auxiliar publicado en HuggingFace dentro de la biblioteca `sklearn`. Su funcion es predecir si una estrategia concreta de enrutamiento de LLM —denominada `qwen_then_strong_repair`, es decir, intentar resolver una tarea con Qwen y recurrir a un modelo mayor para reparar el resultado— va a fallar sobre un prompt dado. El autor lo describe explicitamente como un modelo de fallo con "fallback selectivo", pensado para decidir cuando merece la pena escalar a un modelo mas caro.
+`dhresearch/quality-router-v2-selective-fallback` no es un modelo generativo, sino un clasificador binario auxiliar publicado en Hugging Face dentro de la biblioteca `sklearn`. Su funcion es predecir si una estrategia concreta de enrutamiento de LLM —denominada `qwen_then_strong_repair`, es decir, intentar resolver una tarea con Qwen y recurrir a un modelo mayor para reparar el resultado— va a fallar sobre un prompt dado. El autor lo describe explicitamente como un modelo de fallo con "fallback selectivo", pensado para decidir cuando merece la pena escalar a un modelo mas caro.
 
 Se trata de un refit con semilla 0 realizado el 3 de octubre de 2026. El entrenamiento original escribio predicciones pero no guardo los pesos, por lo que esta subida es una reproduccion de aquel ajuste. El autor indica ademas que la version 8 del sistema `quality_router_v2` desactiva `learned_downrouting` y que la tarjeta servida en produccion no carga estos pesos: el artefacto existe como evidencia de un estudio, no como componente activo del router en servicio.
 
@@ -18,7 +18,7 @@ Su relevancia es metodologica mas que de rendimiento: documenta con detalle la r
 | Longitud de contexto | No disponible; no es un modelo generativo y no define ventana de contexto. La entrada es un prompt vectorizado a nivel de documento |
 | Tipos de cuantizacion | No disponible; no aplica a un artefacto de scikit-learn |
 | Idiomas soportados | No disponible |
-| Licencia | other (categoria generica de HuggingFace; no se detallan terminos concretos) |
+| Licencia | other (categoria generica de Hugging Face; no se detallan terminos concretos) |
 | Formato de pesos | `joblib` (diccionario serializado con las claves `model`, `vectorizer`, `sources` y `base_rate`) |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dhresearch/quality-router-v2-selective-fallback` | Clasificador logistico calibrado (sklearn) | No disponible (TF-IDF de 4000 caracteristicas) | No aplica | AUC de validacion 0,52657 | other | HuggingFace, 0 descargas |
+| `dhresearch/quality-router-v2-selective-fallback` | Clasificador logistico calibrado (sklearn) | No disponible (TF-IDF de 4000 caracteristicas) | No aplica | AUC de validacion 0,52657 | other | Hugging Face, 0 descargas |
 | `dhresearch/quality_router_v2` (version 8) | Router servido del mismo estudio | No disponible | No aplica | No disponible | other | Referenciado en la model card; no se detalla su repositorio |
 | Alternativas de enrutamiento de LLM (RouteLLM, routers basados en embeddings o en modelos de recompensa) | Varios | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -95,6 +95,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-selective-fallback
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-selective-fallback
 - Dataset asociado: https://huggingface.co/datasets/dhresearch/outcome-router-v2-measured-pool
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos por el buscador no guardan ninguna relacion con este modelo ni con enrutamiento de LLM, por lo que se omiten.

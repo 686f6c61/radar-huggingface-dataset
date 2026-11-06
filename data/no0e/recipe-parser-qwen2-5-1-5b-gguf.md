@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| recipe-parser-qwen2.5-1.5b-gguf | 1,5B | No confirmado (base: 32.768) | F1 ingredientes 0,929; JSON válido 0,980 | Apache-2.0 | GGUF en HuggingFace, 0 descargas |
+| recipe-parser-qwen2.5-1.5b-gguf | 1,5B | No confirmado (base: 32.768) | F1 ingredientes 0,929; JSON válido 0,980 | Apache-2.0 | GGUF en Hugging Face, 0 descargas |
 | Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 | F1 ingredientes 0,179; JSON válido 0,810 en one-shot | Apache-2.0 | Safetensors y múltiples cuantizaciones |
 | Línea base de reglas (del propio autor) | No aplica | No aplica | F1 ingredientes 0,613; JSON válido 1,000 | No especificada | Código en el repositorio de GitHub |
 | Modelos generales mayores (Qwen2.5-7B-Instruct, Llama-3.2-3B-Instruct) como alternativa por prompting | 7B / 3B | 32.768 / 128.000 (según modelo) | No evaluados en esta tarea por el autor | Apache-2.0 / licencia comunitaria de Llama | Disponibles, pero sin datos comparables |
@@ -92,7 +92,7 @@ La comparación honesta es la que ofrece el propio autor: frente a reglas y fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/no0e/recipe-parser-qwen2.5-1.5b-gguf
+- Modelo en Hugging Face: https://huggingface.co/no0e/recipe-parser-qwen2.5-1.5b-gguf
 - Repositorio con código, generación de datos, evaluación y API: https://github.com/No0e/recipe-parser
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos no guardan relación con esta ficha.

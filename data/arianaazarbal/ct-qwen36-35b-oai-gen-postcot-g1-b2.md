@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-oai-gen-postcot-g1-b2 | LoRA r=64 sobre base de ~35B (A3B, no confirmado) | 8192 tokens en entrenamiento; contexto del base no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | ~35B totales / ~3B activos segun nomenclatura | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| ct-qwen36-35b-oai-gen-postcot-g1-b2 | LoRA r=64 sobre base de ~35B (A3B, no confirmado) | 8192 tokens en entrenamiento; contexto del base no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | ~35B totales / ~3B activos segun nomenclatura | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Otras ramas y generaciones de la misma cadena (`qwen36-35b-oai-gen-postcot`, otras ramas `b1`, `b3`, etc.) | mismo esquema de adaptador LoRA | 8192 tokens | no disponible | no disponible | no disponible en esta ficha |
 | Adaptadores de alineamiento constitucional de otros programas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: la ausencia de licencia en la model card y en la API de HuggingFace implica que no hay autorizacion explicita de uso comercial. A efectos practicos, debe tratarse como uso restringido a investigacion hasta que el autor aclare los terminos.
+- Licencia no declarada: la ausencia de licencia en la model card y en la API de Hugging Face implica que no hay autorizacion explicita de uso comercial. A efectos practicos, debe tratarse como uso restringido a investigacion hasta que el autor aclare los terminos.
 - Es un adaptador, no un modelo autonomo: no puede servirse sin el modelo base `Qwen/Qwen3.6-35B-A3B`, cuyos terminos de uso tambien aplican y no se detallan aqui.
 - Naturaleza experimental: proviene de un programa de investigacion sobre constituciones autoescritas; no ha pasado por un proceso de alineamiento con retroalimentacion humana (RLHF/DPO) documentado, sino por SFT condicionado por constitucion.
 - Riesgo de deriva de valores: por diseno, la generacion 1 se entrena sobre una constitucion escrita por la generacion 0, de modo que el comportamiento puede alejarse de la intencion de la semilla humana original de forma no controlada.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Constitucion semilla incluida en el repositorio: `training_seed_constitution.md` (dentro del repositorio del modelo)
 - Registro de exportacion: `tinker_meta.json` (dentro del repositorio del modelo)

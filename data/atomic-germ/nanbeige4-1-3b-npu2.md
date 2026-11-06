@@ -96,8 +96,8 @@ En los benchmarks publicados, Nanbeige4.1-3B supera consistentemente a Qwen3-4B-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Nanbeige4.1-3B-NPU2
-- Modelo original en HuggingFace: https://huggingface.co/Nanbeige/Nanbeige4.1-3B
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Nanbeige4.1-3B-NPU2
+- Modelo original en Hugging Face: https://huggingface.co/Nanbeige/Nanbeige4.1-3B
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4-3B-Base
 - Reporte tecnico (arxiv): https://arxiv.org/abs/2602.13367
 - Variante en ModelScope: https://www.modelscope.cn/models/FastFlowLM/Nanbeige4.1-3B-NPU2

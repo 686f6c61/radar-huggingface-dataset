@@ -2,7 +2,7 @@
 
 ## Resumen
 
-marine-NER es un modelo publicado en HuggingFace por el usuario Takuya-Kim bajo licencia MIT. Por su identificador y por la ausencia de cualquier contenido en la model card más allá de la declaración de licencia, se trata de un repositorio orientado a reconocimiento de entidades nombradas (NER) en el dominio marino, presumiblemente un ajuste fino de un modelo base de transformers para etiquetado de secuencias. No se dispone de información sobre el modelo base, el tamaño, la arquitectura concreta ni los datos de entrenamiento empleados.
+marine-NER es un modelo publicado en Hugging Face por el usuario Takuya-Kim bajo licencia MIT. Por su identificador y por la ausencia de cualquier contenido en la model card más allá de la declaración de licencia, se trata de un repositorio orientado a reconocimiento de entidades nombradas (NER) en el dominio marino, presumiblemente un ajuste fino de un modelo base de transformers para etiquetado de secuencias. No se dispone de información sobre el modelo base, el tamaño, la arquitectura concreta ni los datos de entrenamiento empleados.
 
 El repositorio no incluye pipeline declarado, idiomas soportados, métricas de evaluación ni ejemplos de uso. Con cero descargas y cero likes en el momento de la consulta, es un artefacto recién creado (fecha de creación y actualización idénticas: 2026-10-25) y sin validación comunitaria. Cualquier evaluación de su calidad o idoneidad para producción resulta imposible con la información disponible.
 
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Takuya-Kim/marine-NER
+- Repositorio en Hugging Face: https://huggingface.co/Takuya-Kim/marine-NER
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

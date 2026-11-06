@@ -94,6 +94,6 @@ No se dispone de datos de parametros, contexto ni benchmarks del modelo subyacen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FriendsforHumanity/Pika-H3-Flex-FRef2VA
+- Repositorio en Hugging Face: https://huggingface.co/FriendsforHumanity/Pika-H3-Flex-FRef2VA
 - Modelo base Pika H3 Flex: https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - Aplicacion Daydream World (origen de la historia de 54 clips): https://daydreamapp.ai

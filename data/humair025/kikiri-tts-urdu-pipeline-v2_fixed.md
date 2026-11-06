@@ -43,7 +43,7 @@ El script de entrenamiento es `pipeline/train_real_styletts2.py` y se invoca con
 - Auditoria de pipelines de TTS en entornos de investigacion: `CHANGES.md` documenta cada fallo con su severidad y su correccion, lo que facilita revisiones de codigo y controles de calidad antes de gastar horas de GPU.
 - Base para adaptacion a idiomas de bajos recursos: la estructura del pipeline es independiente del idioma de destino; cambiando el corpus de audio y la tokenizacion fonetica se puede reutilizar para otras lenguas con poca disponibilidad de datos.
 - Docencia y formacion tecnica: el caso ilustra de forma tangible como un fallo de signo en una mascara booleana (`text_mask = ~phoneme_mask`) colapsa toda la salida de un modelo generativo, lo que resulta util en cursos de aprendizaje profundo aplicado.
-- Integracion con el HuggingFace Hub para publicacion de checkpoints: el parametro `--hf_repo` junto con `--hf_token` permite subir los resultados del entrenamiento a un repositorio propio, encajando en flujos de trabajo reproducibles con control de versiones de modelos.
+- Integracion con el Hugging Face Hub para publicacion de checkpoints: el parametro `--hf_repo` junto con `--hf_token` permite subir los resultados del entrenamiento a un repositorio propio, encajando en flujos de trabajo reproducibles con control de versiones de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -56,15 +56,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: no disponible; unicamente se conoce que el ejemplo de entrenamiento usa `--batch_size 4`, sin detallar la GPU empleada.
 - Opciones de despliegue: vLLM, llama.cpp, Ollama y TGI no aplican, porque son servidores de inferencia para modelos de lenguaje, no para pipelines TTS. El despliegue, en su caso, corresponderia al stack de inferencia de StyleTTS2.
 - Latencia y throughput: no disponible.
-- Dependencias conocidas: el pipeline requiere los componentes preentrenados `style_encoder` y `pitch_extractor` de Kokoro/StyleTTS2, ademas de acceso a red y token para subir resultados al HuggingFace Hub.
+- Dependencias conocidas: el pipeline requiere los componentes preentrenados `style_encoder` y `pitch_extractor` de Kokoro/StyleTTS2, ademas de acceso a red y token para subir resultados al Hugging Face Hub.
 
 ## Comparativa con modelos similares
 
 | Proyecto | Categoria | Parametros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| humair025/kikiri-tts-urdu-pipeline-v2_FIXED | Pipeline de entrenamiento TTS | no aplica (sin pesos) | MIT | Codigo en HuggingFace, 0 descargas | Fork correctivo, no desplegable en inferencia |
+| humair025/kikiri-tts-urdu-pipeline-v2_FIXED | Pipeline de entrenamiento TTS | no aplica (sin pesos) | MIT | Codigo en Hugging Face, 0 descargas | Fork correctivo, no desplegable en inferencia |
 | StyleTTS2 | Modelo TTS | no disponible | MIT (segun el proyecto upstream) | Repositorio publico de investigacion | Arquitectura en la que se basa este pipeline |
-| Kokoro-82M | Modelo TTS | 82 M | Apache-2.0 (segun documentacion publica) | Pesos publicos en HuggingFace | Origen de los componentes preentrenados que reutiliza el pipeline |
+| Kokoro-82M | Modelo TTS | 82 M | Apache-2.0 (segun documentacion publica) | Pesos publicos en Hugging Face | Origen de los componentes preentrenados que reutiliza el pipeline |
 | XTTS-v2 (Coqui) | Modelo TTS multilingue | no disponible | Coqui Public Model License (uso no comercial) | Pesos publicos | Alternativa multilingue; licencia mas restrictiva que MIT |
 
 Los datos de terceros deben verificarse en la documentacion oficial de cada proyecto antes de tomar decisiones de produccion.
@@ -82,7 +82,7 @@ Los datos de terceros deben verificarse en la documentacion oficial de cada proy
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/humair025/kikiri-tts-urdu-pipeline-v2_FIXED
+- Repositorio en Hugging Face: https://huggingface.co/humair025/kikiri-tts-urdu-pipeline-v2_FIXED
 - Repositorio del que deriva (con fallos): https://huggingface.co/humair025/kikiri-tts-urdu-pipeline-v2_OLD
 - Documento de cambios: https://huggingface.co/humair025/kikiri-tts-urdu-pipeline-v2_FIXED/blob/main/CHANGES.md
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo. Los resultados devueltos correspondian a hilos de foros de consumo (Sky Community, Kaskus) sin relacion con el repositorio, por lo que se descartan.

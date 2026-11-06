@@ -4,7 +4,7 @@
 
 Hi3D v1.0 es un modelo de generación de geometría 3D a partir de imagen (image-to-3D) desarrollado por el equipo hi3d-official. Su función concreta no es crear una malla desde cero, sino refinar una malla gruesa y sin textura —típicamente la salida de un modelo como Hunyuan3D-2mini turbo— guiándose por una imagen del objeto con fondo transparente. El resultado es una malla de mayor resolución y detalle geométrico.
 
-La versión publicada por OzzyGT en HuggingFace (OzzyGT/hi3d_v1) es un reempaquetado del modelo original hi3d-official/Hi3Dv1.0 en formato Diffusers, en float16, junto con los dos codificadores de imagen que utiliza: facebook/dinov2-large y la torre de visión de openai/clip-vit-large-patch14. Se ejecuta como pipeline Modular Diffusers con bloques personalizados (OzzyGT/hi3d_v1_custom_blocks).
+La versión publicada por OzzyGT en Hugging Face (OzzyGT/hi3d_v1) es un reempaquetado del modelo original hi3d-official/Hi3Dv1.0 en formato Diffusers, en float16, junto con los dos codificadores de imagen que utiliza: facebook/dinov2-large y la torre de visión de openai/clip-vit-large-patch14. Se ejecuta como pipeline Modular Diffusers con bloques personalizados (OzzyGT/hi3d_v1_custom_blocks).
 
 Es relevante para desarrolladores que trabajan en pipelines de reconstrucción 3D y quieren integrar un paso de refinamiento geométrico sobre mallas coarse existentes, con una API compatible con el ecosistema Diffusers. El repositorio ocupa 8,8 GB y la licencia es la Hi3D Open License Agreement 1.0, distinta de las licencias permisivas habituales, lo que condiciona su uso comercial.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hi3D v1.0 (OzzyGT/hi3d_v1) | Refinamiento de malla | Imagen + malla coarse | Malla refinada | hi3d-open-license-1.0 | HuggingFace (Diffusers) |
-| Hunyuan3D-2mini | Generación image-to-3D | Imagen | Malla coarse | no disponible en esta ficha | HuggingFace |
-| DINOv2-large | Codificador de imagen | Imagen | Embeddings | Apache-2.0 | HuggingFace |
-| CLIP ViT-L/14 | Codificador imagen-texto | Imagen/texto | Embeddings | MIT | HuggingFace |
+| Hi3D v1.0 (OzzyGT/hi3d_v1) | Refinamiento de malla | Imagen + malla coarse | Malla refinada | hi3d-open-license-1.0 | Hugging Face (Diffusers) |
+| Hunyuan3D-2mini | Generación image-to-3D | Imagen | Malla coarse | no disponible en esta ficha | Hugging Face |
+| DINOv2-large | Codificador de imagen | Imagen | Embeddings | Apache-2.0 | Hugging Face |
+| CLIP ViT-L/14 | Codificador imagen-texto | Imagen/texto | Embeddings | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre Hi3D v1.0 y alternativas de refinamiento 3D en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre Hi3D v1.0 y alternativas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OzzyGT/hi3d_v1
+- Repositorio Hugging Face: https://huggingface.co/OzzyGT/hi3d_v1
 - Modelo original: https://huggingface.co/hi3d-official/Hi3Dv1.0
 - Bloques personalizados: https://huggingface.co/OzzyGT/hi3d_v1_custom_blocks
 - Codificador DINOv2-large: https://huggingface.co/facebook/dinov2-large

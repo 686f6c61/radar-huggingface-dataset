@@ -78,7 +78,7 @@ La comparativa se limita a parámetros y arquitectura, ya que no hay datos de re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/immanuelpeter/MoonViT-K2.6
+- Repositorio Hugging Face: https://huggingface.co/immanuelpeter/MoonViT-K2.6
 - Modelo base Kimi K2.6: https://huggingface.co/moonshotai/Kimi-K2.6
 - Checkpoint de visión de Exolabs: https://huggingface.co/exolabs/Kimi-K2.6-vision
 - Script de exportación: https://github.com/immanuel-peter/vision-tower-bench/blob/main/scripts/export_moonvit_k26.py

@@ -80,7 +80,7 @@ La comparativa se limita a datos estructurales; no hay benchmarks publicados par
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hariharanv04/qwen3-4b-pirate-Q4_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hariharanv04/qwen3-4b-pirate-Q4_0-GGUF
 - Modelo base (fine-tune): https://huggingface.co/hariharanv04/qwen3-4b-pirate
 - Space de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

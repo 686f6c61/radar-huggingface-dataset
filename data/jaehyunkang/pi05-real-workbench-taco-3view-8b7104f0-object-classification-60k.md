@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| Este modelo (jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-object-classification-60k) | 4.143.404.816 | No disponible | Publicado en HuggingFace, 0 descargas y 0 likes | Fine-tune de tarea unica object_classification, 60.000 pasos, 3 vistas |
+| Este modelo (jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-object-classification-60k) | 4.143.404.816 | No disponible | Publicado en Hugging Face, 0 descargas y 0 likes | Fine-tune de tarea unica object_classification, 60.000 pasos, 3 vistas |
 | lerobot/pi05_base | No disponible en la informacion proporcionada | No disponible | Modelo base publicado por LeRobot | Modelo de partida del fine-tuning; sin especializacion en el banco de trabajo real |
 
 No se dispone de datos de parametros, contexto, rendimiento o licencia de otras alternativas de politica robotica en la informacion proporcionada, por lo que no se incluyen cifras adicionales para no inventarlas.
@@ -95,7 +95,7 @@ No se dispone de datos de parametros, contexto, rendimiento o licencia de otras 
 - En produccion, cualquier integracion robotica exige limites de seguridad, parada de emergencia y validacion de velocidades cartesianas, dado que la politica emite consignas de velocidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-object-classification-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-object-classification-60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-taco-keyframe-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Tokenizer de referencia: https://huggingface.co/google/paligemma-3b-pt-224

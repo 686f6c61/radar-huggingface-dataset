@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos. Las diferencias principales 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT8)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT8)
 - [Versión FP8 del mismo modelo](https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8)
 - [Catálogo de modelos abliterados](https://abliteration.org/)
 - [Modelo similar: Qwen3.6-27B-Uncensored-HauhauCS-Aggressive-MTP](https://huggingface.co/AIOpsInSpace/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive-MTP)

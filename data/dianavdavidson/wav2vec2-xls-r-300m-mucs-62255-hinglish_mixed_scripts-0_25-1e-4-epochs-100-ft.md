@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino de `facebook/wav2vec2-xls-r-300m`, un sistema de reconocimiento automático del habla (ASR) multilingüe basado en la arquitectura wav2vec 2.0, especializado en el reconocimiento de habla hinglish (mezcla de hindi e inglés) con escritura mixta (devanagari y alfabeto latino). Lo desarrolla el usuario de HuggingFace `dianavdavidson` y se publica bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones significativas.
+Este modelo es un ajuste fino de `facebook/wav2vec2-xls-r-300m`, un sistema de reconocimiento automático del habla (ASR) multilingüe basado en la arquitectura wav2vec 2.0, especializado en el reconocimiento de habla hinglish (mezcla de hindi e inglés) con escritura mixta (devanagari y alfabeto latino). Lo desarrolla el usuario de Hugging Face `dianavdavidson` y se publica bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones significativas.
 
 El modelo base, XLS-R de Facebook, se preentrenó con 436 000 horas de audio sin etiquetar en 128 idiomas. Este ajuste fino específico se realizó sobre un conjunto de datos no documentado y alcanza una tasa de error por palabra (WER) global del 67,7 % en el conjunto de evaluación, un valor notablemente alto que indica un rendimiento moderado. Su relevancia radica en abordar el hinglish, un fenómeno lingüístico frecuente en la India, aunque los resultados publicados sugieren que el modelo requiere mejoras sustanciales para su uso en producción.
 
@@ -25,7 +25,7 @@ Con 315 millones de parámetros y un tamaño de repositorio de 1,3 GB, el modelo
 
 El modelo se basa en la arquitectura wav2vec 2.0 de Facebook, un enfoque de auto-supervision que consiste en un encoder convolucional que procesa audio crudo y un transformer que aprende representaciones contextualizadas. El preentrenamiento original de XLS-R se realizó sobre 436 000 horas de audio sin etiquetar en 128 idiomas, utilizando un objetivo contrastivo que predice unidades de cuantizacion enmascaradas.
 
-El ajuste fino se realizó con el Trainer de HuggingFace durante 100 épocas, con una tasa de aprendizaje de 0,0001, tamaño de lote efectivo de 32 (16 con acumulacion de gradiente de 2 pasos), optimizador AdamW y un programador de tasa de aprendizaje constante con calentamiento de 500 pasos. Se utilizo entrenamiento con precision mixta nativa (AMP). Los datos de entrenamiento no estan documentados, aunque el nombre del modelo sugiere que provienen del conjunto MUCs con identificador 62255 y una proporcion de escritura mixta del 25 %.
+El ajuste fino se realizó con el Trainer de Hugging Face durante 100 épocas, con una tasa de aprendizaje de 0,0001, tamaño de lote efectivo de 32 (16 con acumulacion de gradiente de 2 pasos), optimizador AdamW y un programador de tasa de aprendizaje constante con calentamiento de 500 pasos. Se utilizo entrenamiento con precision mixta nativa (AMP). Los datos de entrenamiento no estan documentados, aunque el nombre del modelo sugiere que provienen del conjunto MUCs con identificador 62255 y una proporcion de escritura mixta del 25 %.
 
 El entrenamiento muestra una inestabilidad notable: la perdida de validacion fluctua entre 1,35 y 2,42, y el WER global oscila entre 42,76 y 90,90 a lo largo de las epocas. El mejor WER se alcanza en la epoca 3 (42,76 %), pero el modelo final (epoca 6) presenta un WER de 67,74, lo que sugiere problemas de convergencia o sobreajuste.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks comparativos (como Common Voice, Li
 - VRAM estimada para inferencia: el modelo tiene 315 millones de parametros. En precision FP32, ocupa aproximadamente 1,26 GB en memoria; en FP16, unos 0,63 GB. Con overhead de activaciones y audio procesado, se recomienda al menos 4 GB de VRAM para inferencia en lotes pequenos.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM, como NVIDIA GTX 1650, RTX 3050, RTX 3060 o superiores. Para entrenamiento o ajuste adicional, se recomienda al menos 16 GB de VRAM (RTX 4080, A100, etc.).
 - Si cabe en GPU de consumo: si, en la mayoria de las GPU consumer modernas con 4 GB o mas.
-- Opciones de despliegue: el formato safetensors es compatible con la libreria transformers de HuggingFace, por lo que puede desplegarse con pipelines de ASR estandar. Tambien es compatible con endpoints de HuggingFace Inference Endpoints. No se proporcionan pesos en formato GGUF ni ONNX, por lo que su uso con llama.cpp u Ollama no es directo.
+- Opciones de despliegue: el formato safetensors es compatible con la libreria transformers de Hugging Face, por lo que puede desplegarse con pipelines de ASR estandar. Tambien es compatible con endpoints de Hugging Face Inference Endpoints. No se proporcionan pesos en formato GGUF ni ONNX, por lo que su uso con llama.cpp u Ollama no es directo.
 - Latencia y throughput: no disponibles en la informacion publicada. Como referencia, el modelo base XLS-R-300m procesa audio en tiempo real o mas rapido en GPU modernas, pero el ajuste no documenta metricas de rendimiento.
 
 ## Comparativa con modelos similares
@@ -94,11 +94,11 @@ El modelo base XLS-R-300m tiene un rendimiento documentado en 128 idiomas y es e
 - Riesgo de alucinacion en transcripcion: como cualquier sistema ASR, puede producir transcripciones foneticamente plausibles pero semanticamente incorrectas, especialmente en habla con ruido de fondo o superposicion de voces.
 - Limitaciones de idioma: aunque el modelo base soporta 128 idiomas, el ajuste fino puede degradar el rendimiento en idiomas distintos del hinglish. No se documenta el comportamiento fuera del dominio objetivo.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, modificacion y redistribucion, pero no se proporcionan atribuciones de los datos de entrenamiento, lo que podria generar problemas legales si el conjunto de datos original tiene restricciones.
-- Model card incompleta: la documentacion es minima y generada automaticamente por el Trainer de HuggingFace, sin descripcion de casos de uso, limitaciones ni procedimiento de evaluacion detallado.
+- Model card incompleta: la documentacion es minima y generada automaticamente por el Trainer de Hugging Face, sin descripcion de casos de uso, limitaciones ni procedimiento de evaluacion detallado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/wav2vec2-xls-r-300m-mucs-62255-hinglish_mixed_scripts-0_25-1e-4-epochs-100-FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/wav2vec2-xls-r-300m-mucs-62255-hinglish_mixed_scripts-0_25-1e-4-epochs-100-FT
 - Modelo base XLS-R-300m: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - README del modelo base: https://huggingface.co/facebook/wav2vec2-xls-r-300m/blob/main/README.md
 - Modelo relacionado del mismo autor (variante 62230): https://huggingface.co/dianavdavidson/wav2vec2-xls-r-300m-mucs-62230-hinglish_mixed_scripts-1e-4-epochs-100-FT

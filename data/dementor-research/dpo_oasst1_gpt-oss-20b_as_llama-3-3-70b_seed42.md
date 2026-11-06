@@ -76,8 +76,8 @@ La diferencia clave es la direccion de la imitacion y el modelo base. El adaptad
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_llama-3.3-70b_seed42)
-- [Perfil de dementor-research en HuggingFace](https://huggingface.co/dementor-research)
+- [Adaptador en Hugging Face](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_llama-3.3-70b_seed42)
+- [Perfil de dementor-research en Hugging Face](https://huggingface.co/dementor-research)
 - [Adaptador inverso (Llama-3.3-70b as gpt-oss-20b)](https://huggingface.co/dementor-research/dpo_oasst1_llama-3.3-70b_as_gpt-oss-20b_seed42)
 - [Adaptador con gpt-oss-120b como objetivo (en friendli.ai)](https://friendli.ai/models/dementor-research/dpo_oasst1_llama-3.3-70b_as_gpt-oss-120b_seed42)
 - [Repositorio GitHub de gpt-oss (OpenAI)](https://github.com/openai/gpt-oss)

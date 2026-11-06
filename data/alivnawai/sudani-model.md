@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `alivnawai/sudani-model` es un checkpoint publicado en HuggingFace Hub por el usuario alivnawai. En el momento de redactar esta ficha, la model card asociada es la plantilla autogenerada por la plataforma, sin ningun campo completado por el autor: no consta descripcion, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluacion. Toda la informacion disponible se reduce a los metadatos del repositorio.
+El modelo identificado como `alivnawai/sudani-model` es un checkpoint publicado en Hugging Face Hub por el usuario alivnawai. En el momento de redactar esta ficha, la model card asociada es la plantilla autogenerada por la plataforma, sin ningun campo completado por el autor: no consta descripcion, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluacion. Toda la informacion disponible se reduce a los metadatos del repositorio.
 
 Los metadatos indican que se trata de un modelo compatible con la libreria `transformers`, con pesos en formato `safetensors`, etiquetado como compatible con endpoints y con un tamano de repositorio de 0,1 GB. El repositorio registra cero descargas y cero likes desde su creacion en octubre de 2026, por lo que no existe traccion comunitaria ni documentacion externa contrastable.
 
@@ -28,7 +28,7 @@ La relevancia de este modelo es, a dia de hoy, practicamente nula para evaluacio
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La unica etiqueta tecnica presente en el repositorio es `transformers`, que indica compatibilidad con la libreria homonima de HuggingFace, pero no especifica si se trata de un transformer decoder-only, encoder-decoder, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco se declara el objetivo de entrenamiento ni el numero de parametros.
+No hay informacion disponible sobre la arquitectura del modelo. La unica etiqueta tecnica presente en el repositorio es `transformers`, que indica compatibilidad con la libreria homonima de Hugging Face, pero no especifica si se trata de un transformer decoder-only, encoder-decoder, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco se declara el objetivo de entrenamiento ni el numero de parametros.
 
 Respecto al entrenamiento, la model card no aporta ningun dato: se desconoce el volumen de tokens, la composicion del dataset, si hubo fases de ajuste por instrucciones, RLHF o DPO, y que hiperparametros se utilizaron. No se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, destilacion, etc.) ni el hardware empleado. Tampoco se ha localizado un paper o memoria tecnica asociada al modelo en la busqueda realizada.
 
@@ -49,7 +49,7 @@ Los siguientes escenarios son hipoteticos y estan condicionados a que una evalua
 - Prototipado rapido en local: dado el tamano reducido del repositorio (0,1 GB), el checkpoint podria cargarse en un entorno de desarrollo sin GPU dedicada, util para pruebas de integracion de pipelines con `transformers` antes de escalar a un modelo mayor.
 - Pruebas de compatibilidad de infraestructura: al estar etiquetado como `endpoints_compatible`, podria emplearse para verificar el funcionamiento de un endpoint de inferencia propio (formato de entrada, tokenizador, serializacion de pesos) sin coste de computo elevado.
 - Fine-tuning experimental sobre dominio propio: si el modelo resultase ser un transformer pequeno, serviria como punto de partida para ajuste supervisado en tareas acotadas de clasificacion o generacion corta, siempre que la licencia lo permitiese (actualmente sin definir).
-- Docencia y formacion: util como ejemplo minimo de estructura de repositorio HuggingFace (pesos safetensors mas configuracion) en talleres sobre publicacion de modelos.
+- Docencia y formacion: util como ejemplo minimo de estructura de repositorio Hugging Face (pesos safetensors mas configuracion) en talleres sobre publicacion de modelos.
 - Investigacion sobre evaluacion de modelos no documentados: caso de estudio sobre por que una model card incompleta impide la reproducibilidad y la comparacion con alternativas.
 - Auditoria de licencias en cadenas de suministro de software: este modelo ilustra el riesgo de incorporar checkpoints sin licencia declarada a un producto comercial, ya que no existe autorizacion explicita de uso.
 
@@ -72,7 +72,7 @@ No disponible. No es posible establecer una categoria de comparacion (tamano, ta
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|
-| alivnawai/sudani-model | no disponible | no disponible | no disponible | HuggingFace Hub (0 descargas) | ninguno |
+| alivnawai/sudani-model | no disponible | no disponible | no disponible | Hugging Face Hub (0 descargas) | ninguno |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No es posible establecer una categoria de comparacion (tamano, ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alivnawai/sudani-model
+- Modelo en Hugging Face: https://huggingface.co/alivnawai/sudani-model
 - Paper citado en las etiquetas del repositorio (corresponde a Lacoste et al., 2019, sobre estimacion de impacto ambiental en aprendizaje automatico, referenciado por la plantilla de model card, no por el modelo en si): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental enlazada en la plantilla: https://mlco2.github.io/impact#compute
 - Repositorio o paper especifico del modelo: no disponible

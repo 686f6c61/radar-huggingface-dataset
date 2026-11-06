@@ -100,8 +100,8 @@ Nota: los datos de los modelos de comparación proceden de su documentación pú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nicholas0228/tail-drop-5b-dense
-- Perfil del autor en HuggingFace: https://huggingface.co/Nicholas0228/models
+- Modelo en Hugging Face: https://huggingface.co/Nicholas0228/tail-drop-5b-dense
+- Perfil del autor en Hugging Face: https://huggingface.co/Nicholas0228/models
 - Repositorio de investigacion tail_drop_attn (revision fijada): https://github.com/Nicholas0228/tail_drop_attn/tree/758839451f45df67d2fb3a5626b8a07247b38f2e
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tokenizador de referencia: https://huggingface.co/mistralai/Mistral-7B-v0.1

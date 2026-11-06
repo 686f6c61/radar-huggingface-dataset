@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snapkitty/hologram-re es un repositorio publicado en HuggingFace por el usuario Snapkitty el 10 de octubre de 2026, etiquetado dentro de lo que el autor denomina "SnapKitty October 2026 main drop". La model card no describe ningun modelo de lenguaje: se limita a indicar que el contenido es un espejo (mirror) del repositorio de GitHub `SNAPKITTYWEST/hologram-re` en el commit `c1d40c4`. El repositorio de HuggingFace ocupa 0,0 GB y no contiene pesos, ficheros de configuracion ni documentacion tecnica adicional.
+Snapkitty/hologram-re es un repositorio publicado en Hugging Face por el usuario Snapkitty el 10 de octubre de 2026, etiquetado dentro de lo que el autor denomina "SnapKitty October 2026 main drop". La model card no describe ningun modelo de lenguaje: se limita a indicar que el contenido es un espejo (mirror) del repositorio de GitHub `SNAPKITTYWEST/hologram-re` en el commit `c1d40c4`. El repositorio de Hugging Face ocupa 0,0 GB y no contiene pesos, ficheros de configuracion ni documentacion tecnica adicional.
 
 Las etiquetas declaradas (rust, alloy, wasm, inference, reverse-engineering, formal-verification) apuntan a un posible conjunto de herramientas de ingenieria inversa y verificacion formal escrito en Rust y compilado a WebAssembly, mas que a una red neuronal con parametros entrenados. No obstante, la model card no confirma esta interpretacion ni aporta ningun detalle sobre arquitectura, entrenamiento o capacidades.
 
@@ -23,7 +23,7 @@ En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", no 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras). La model card no incluye seccion tecnica alguna y el repositorio de HuggingFace no contiene ficheros de pesos, configuracion o tokenizador.
+No se ha publicado informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras). La model card no incluye seccion tecnica alguna y el repositorio de Hugging Face no contiene ficheros de pesos, configuracion o tokenizador.
 
 Las unicas pistas disponibles son las etiquetas del repositorio: `rust`, `alloy`, `wasm`, `inference`, `reverse-engineering` y `formal-verification`. Estas etiquetas sugieren un componente de software (posiblemente una libreria o motor de inferencia en Rust compilado a WebAssembly) orientado a ingenieria inversa y verificacion formal. Se trata de una hipotesis basada exclusivamente en metadatos y no de un dato confirmado por el autor.
 
@@ -67,7 +67,7 @@ No disponible. Al no poder determinarse la naturaleza del artefacto (modelo de l
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamano de 0,0 GB y no contiene pesos ni ficheros de configuracion: no es utilizable para inferencia tal como esta publicado.
+- El repositorio de Hugging Face tiene un tamano de 0,0 GB y no contiene pesos ni ficheros de configuracion: no es utilizable para inferencia tal como esta publicado.
 - No existe model card tecnica: la unica informacion es un aviso de espejo desde GitHub.
 - No hay resultados de benchmarks, evaluaciones ni validacion independiente.
 - 0 descargas y 0 "likes": ausencia total de uso o verificacion por parte de la comunidad.
@@ -79,9 +79,9 @@ No disponible. Al no poder determinarse la naturaleza del artefacto (modelo de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Snapkitty/hologram-re
+- Modelo en Hugging Face: https://huggingface.co/Snapkitty/hologram-re
 - Repositorio original en GitHub: https://github.com/SNAPKITTYWEST/hologram-re
 - Commit referenciado (`c1d40c4`): https://github.com/SNAPKITTYWEST/hologram-re/commit/c1d40c4
-- Perfil del autor en HuggingFace: https://huggingface.co/Snapkitty
+- Perfil del autor en Hugging Face: https://huggingface.co/Snapkitty
 - Listado de modelos con la etiqueta `snapkitty`: https://huggingface.co/models?other=snapkitty
 - Perfil de GitHub del autor: https://github.com/SNAPKITTYWEST/SNAPKITTYWEST

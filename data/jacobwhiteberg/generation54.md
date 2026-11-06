@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacobwhiteberg/generation54` es un repositorio de HuggingFace publicado por el usuario jacobwhiteberg que contiene una implementacion propia y compacta en PyTorch de una arquitectura tipo Flamingo orientada a tareas de generacion. Segun la model card, el artefacto principal es el fichero `main.py` (modelo y punto de entrada de ejemplo), acompanado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`. El autor describe explicitamente la configuracion etiquetada como "xlarge" como un recurso pensado para revision de codigo, pruebas de humo (*smoke tests*) y experimentos pequenos y controlados, no como un modelo preentrenado listo para produccion.
+`jacobwhiteberg/generation54` es un repositorio de Hugging Face publicado por el usuario jacobwhiteberg que contiene una implementacion propia y compacta en PyTorch de una arquitectura tipo Flamingo orientada a tareas de generacion. Segun la model card, el artefacto principal es el fichero `main.py` (modelo y punto de entrada de ejemplo), acompanado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`. El autor describe explicitamente la configuracion etiquetada como "xlarge" como un recurso pensado para revision de codigo, pruebas de humo (*smoke tests*) y experimentos pequenos y controlados, no como un modelo preentrenado listo para produccion.
 
 El dato mas relevante para evaluar su alcance real es el recuento de parametros del checkpoint: 33.088 parametros en total. Se trata, por tanto, de un modelo de escala experimental (del orden de decenas de miles de parametros, no de miles de millones), muy alejado de lo que sugiere la etiqueta "xlarge" de la configuracion. El propio autor aclara que el checkpoint es una inicializacion valida para pruebas de humo y que no se presenta como un checkpoint entrenado ni con resultados de referencia.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, la informacion disponible indica lo contrario de un 
 
 ## Casos de uso
 
-- Validacion de pipelines de carga de modelos: comprobar que un *harness* interno es capaz de leer `config.json`, cargar `model.safetensors` y ejecutar un forward con una implementacion custom que no sigue las APIs automaticas de HuggingFace (la model card advierte que se requiere un adaptador explicito).
+- Validacion de pipelines de carga de modelos: comprobar que un *harness* interno es capaz de leer `config.json`, cargar `model.safetensors` y ejecutar un forward con una implementacion custom que no sigue las APIs automaticas de Hugging Face (la model card advierte que se requiere un adaptador explicito).
 - Test de humo en CI: integrar `python main.py --help` o el ejemplo del bloque `__main__` como comprobacion rapida de que el entorno (version de PyTorch, dependencias, rutas) esta correctamente configurado tras un cambio de imagen o de dependencias.
 - Banco de pruebas de arquitectura: usar la configuracion como caso de estudio para medir coste de memoria y tiempo por iteracion de un bloque Flamingo con atencion GQA y atencion cruzada, comparandolo con variantes propias.
 - Punto de partida para experimentos docentes: material para ilustrar como se estructura una implementacion de fusion por atencion cruzada, con ficheros de configuracion y argumentos de entrenamiento separados.
@@ -93,7 +93,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacobwhiteberg/generation54
+- Hugging Face: https://huggingface.co/jacobwhiteberg/generation54
 - Repositorio de GitHub: no disponible
 - Paper: no disponible
 - Blog o demo: no disponible

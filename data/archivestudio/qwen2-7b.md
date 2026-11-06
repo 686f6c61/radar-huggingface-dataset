@@ -93,10 +93,10 @@ Qwen2-7B lidera en 19 de las 22 métricas recogidas; solo cede en HellaSwag, Win
 
 | Modelo | Parámetros | Contexto | MMLU | HumanEval | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen2-7B | 7,6B | No disponible | 70,3 | 51,2 | 79,9 | Apache 2.0 | HuggingFace |
-| Mistral-7B | 7,2B | No disponible | 64,2 | 29,3 | 52,2 | Apache 2.0 | HuggingFace |
-| Llama-3-8B | 8,0B | No disponible | 66,6 | 33,5 | 56,0 | Meta Llama 3 (uso comunitario) | HuggingFace |
-| Gemma-7B | 8,5B | No disponible | 64,6 | 37,2 | 46,4 | Gemma Terms of Use | HuggingFace |
+| Qwen2-7B | 7,6B | No disponible | 70,3 | 51,2 | 79,9 | Apache 2.0 | Hugging Face |
+| Mistral-7B | 7,2B | No disponible | 64,2 | 29,3 | 52,2 | Apache 2.0 | Hugging Face |
+| Llama-3-8B | 8,0B | No disponible | 66,6 | 33,5 | 56,0 | Meta Llama 3 (uso comunitario) | Hugging Face |
+| Gemma-7B | 8,5B | No disponible | 64,6 | 37,2 | 46,4 | Gemma Terms of Use | Hugging Face |
 
 Qwen2-7B ofrece la mejor relación rendimiento/parámetros del grupo en conocimiento, código y matemáticas, con licencia Apache 2.0 más permisiva que las de Llama 3 y Gemma.
 

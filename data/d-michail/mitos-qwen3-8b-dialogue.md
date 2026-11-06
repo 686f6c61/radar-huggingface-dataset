@@ -93,7 +93,7 @@ No hay en la información proporcionada datos de otros modelos comparables de QA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Dialogue
+- Modelo en Hugging Face: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Dialogue
 - Modelo acompañante con adapter LoRA y partición de validación: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Dialogue-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/d-michail/mitos-qa (configuración `qa-all`)
 - Registro Nacional de Procedimientos Administrativos (Μίτος): https://mitos.gov.gr

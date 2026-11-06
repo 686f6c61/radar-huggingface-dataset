@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura y tamaño | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| suvadityamuk/TRELLIS-image-large-diffusers-3d | Pipeline TRELLIS, parámetros no declarados | Imagen RGBA | MIT + Apache-2.0 (DINOv2) | HuggingFace, requiere el fork diffusers-3d | Conversión de pesos sin modificación; salidas en gaussian, mesh, radiance field, slat y sparse_structure |
-| microsoft/TRELLIS-image-large | Mismo pipeline TRELLIS, parámetros no declarados | Imagen RGBA | MIT | HuggingFace | Modelo original; requiere el código de TRELLIS en lugar del empaquetado Diffusers |
+| suvadityamuk/TRELLIS-image-large-diffusers-3d | Pipeline TRELLIS, parámetros no declarados | Imagen RGBA | MIT + Apache-2.0 (DINOv2) | Hugging Face, requiere el fork diffusers-3d | Conversión de pesos sin modificación; salidas en gaussian, mesh, radiance field, slat y sparse_structure |
+| microsoft/TRELLIS-image-large | Mismo pipeline TRELLIS, parámetros no declarados | Imagen RGBA | MIT | Hugging Face | Modelo original; requiere el código de TRELLIS en lugar del empaquetado Diffusers |
 | Otras alternativas de image-to-3D (TripoSR, Stable Fast 3D y similares) | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre estos modelos en la documentación proporcionada |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suvadityamuk/TRELLIS-image-large-diffusers-3d
+- Modelo en Hugging Face: https://huggingface.co/suvadityamuk/TRELLIS-image-large-diffusers-3d
 - Modelo base: https://huggingface.co/microsoft/TRELLIS-image-large
 - Fork de Diffusers usado para la conversión: https://github.com/suvadityamuk/diffusers
 - Paquete diffusers-3d (subdirectorio del repositorio anterior): `packages/diffusers-3d`

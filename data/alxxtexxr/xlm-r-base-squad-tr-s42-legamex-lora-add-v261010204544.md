@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010204544` es un ajuste fino de XLM-RoBERTa-base orientado a la tarea de *question answering* extractivo (pipeline `question-answering`). Lo publica el usuario alxxtexxr en HuggingFace y, por la nomenclatura del identificador, procede de un entrenamiento tipo LoRA fusionado ("LoRA-add", presumiblemente integrado en los pesos base) con semilla 42 sobre un dataset derivado de SQuAD, con el sufijo "tr" apuntando a una variante en turco. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
+El modelo `alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010204544` es un ajuste fino de XLM-RoBERTa-base orientado a la tarea de *question answering* extractivo (pipeline `question-answering`). Lo publica el usuario alxxtexxr en Hugging Face y, por la nomenclatura del identificador, procede de un entrenamiento tipo LoRA fusionado ("LoRA-add", presumiblemente integrado en los pesos base) con semilla 42 sobre un dataset derivado de SQuAD, con el sufijo "tr" apuntando a una variante en turco. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
 
-La relevancia de este modelo es limitada y muy especializada: no introduce arquitectura nueva ni capacidades generales, sino que reutiliza el encoder multilingüe XLM-RoBERTa-base (277.454.594 parametros reales, segun los safetensors) para responder preguntas extrayendo el fragmento de respuesta de un contexto dado. Encaja en flujos de *reading comprehension* cerrados, no en generacion abierta. La model card es una plantilla autogenerada por HuggingFace sin informacion sustantiva: todos los campos relevantes (licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]".
+La relevancia de este modelo es limitada y muy especializada: no introduce arquitectura nueva ni capacidades generales, sino que reutiliza el encoder multilingüe XLM-RoBERTa-base (277.454.594 parametros reales, segun los safetensors) para responder preguntas extrayendo el fragmento de respuesta de un contexto dado. Encaja en flujos de *reading comprehension* cerrados, no en generacion abierta. La model card es una plantilla autogenerada por Hugging Face sin informacion sustantiva: todos los campos relevantes (licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]".
 
 Dado que el autor no documenta ni la licencia ni el dataset ni los resultados, esta ficha marca de forma explicita todo aquello que no puede verificarse. Se recomienda tratarlo como un checkpoint experimental sin garantias de calidad ni de condiciones de uso.
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada con cuantizacion dinamica int8: aproximadamente 0,28 GB de pesos.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB, por ejemplo RTX 3060, RTX 4060, RTX 4090; tambien GPUs de datacenter como A100 o H100, si bien el modelo es demasiado pequeno para aprovecharlas.
 - Compatible con CPU para inferencia por lotes pequenos; la latencia en CPU ronda la decena de milisegundos por consulta en hardware moderno (estimacion, no medida por el autor).
-- Opciones de despliegue: HuggingFace Transformers (PyTorch), ONNX Runtime, TorchScript, Triton Inference Server y FastAPI con *batching*. llama.cpp y GGUF no estan orientados a encoders XLM-RoBERTa, por lo que no son la via recomendada. Ollama y vLLM estan pensados para modelos generativos, no para este pipeline.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch), ONNX Runtime, TorchScript, Triton Inference Server y FastAPI con *batching*. llama.cpp y GGUF no estan orientados a encoders XLM-RoBERTa, por lo que no son la via recomendada. Ollama y vLLM estan pensados para modelos generativos, no para este pipeline.
 - No se han publicado datos de latencia ni de throughput.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add | 277 M | 512 tokens | QA extractivo (turco) | no disponible | HuggingFace, 0 descargas |
-| deepset/xlm-roberta-base-squad2 | ~278 M | 512 tokens | QA extractivo multilingue | MIT (segun su model card publica) | HuggingFace, ampliamente usado |
-| deepset/roberta-base-squad2 | ~125 M | 512 tokens | QA extractivo en ingles | MIT | HuggingFace, referencia SQuAD 2.0 |
-| google-bert/bert-base-multilingual-cased | ~178 M | 512 tokens | Base para QA y otras tareas | Apache 2.0 | HuggingFace |
+| alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add | 277 M | 512 tokens | QA extractivo (turco) | no disponible | Hugging Face, 0 descargas |
+| deepset/xlm-roberta-base-squad2 | ~278 M | 512 tokens | QA extractivo multilingue | MIT (segun su model card publica) | Hugging Face, ampliamente usado |
+| deepset/roberta-base-squad2 | ~125 M | 512 tokens | QA extractivo en ingles | MIT | Hugging Face, referencia SQuAD 2.0 |
+| google-bert/bert-base-multilingual-cased | ~178 M | 512 tokens | Base para QA y otras tareas | Apache 2.0 | Hugging Face |
 
 La comparativa se apoya en las caracteristicas publicas de los modelos alternativos; para el modelo objeto de esta ficha, la licencia y el rendimiento no estan documentados, lo que limita la comparacion a parametros y contexto.
 
@@ -87,7 +87,7 @@ La comparativa se apoya en las caracteristicas publicas de los modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010204544
+- Modelo en Hugging Face: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010204544
 - Variante relacionada (avg): https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-avg-v261005063251
 - Variante relacionada (add, version anterior): https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261005063039
 - Otra variante del mismo autor: https://free2aitools.com/model/alxxtexxr/xlm-r-base-squad-tr-s42-lora-avg-v260929105402

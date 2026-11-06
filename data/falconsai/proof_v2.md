@@ -102,10 +102,10 @@ La cabeza especialista de intenciones alcanza un 99,2 % en Bitext frente al 95,8
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Falconsai/proof_v2 | ≈ 151,4 M | 384 tokens (entrenamiento) / 8.192 (backbone) | Decision de conjunto cerrado + clasificacion de codigo, soporte y razonamiento | Apache 2.0 | HuggingFace |
-| Falconsai/proof_V_1 | No disponible | No disponible | Predecesor sobre DistilBERT, sin especialistas de codigo ni razonamiento | No disponible en la informacion | HuggingFace |
-| answerdotai/ModernBERT-base | No disponible en la informacion | 8.192 tokens | Encoder de proposito general (base del modelo) | No disponible en la informacion | HuggingFace |
-| Cross-encoders de re-ranking genericos (familia MiniLM/BGE) | No disponible | No disponible | Re-ranking y clasificacion por pares | No disponible | HuggingFace |
+| Falconsai/proof_v2 | ≈ 151,4 M | 384 tokens (entrenamiento) / 8.192 (backbone) | Decision de conjunto cerrado + clasificacion de codigo, soporte y razonamiento | Apache 2.0 | Hugging Face |
+| Falconsai/proof_V_1 | No disponible | No disponible | Predecesor sobre DistilBERT, sin especialistas de codigo ni razonamiento | No disponible en la informacion | Hugging Face |
+| answerdotai/ModernBERT-base | No disponible en la informacion | 8.192 tokens | Encoder de proposito general (base del modelo) | No disponible en la informacion | Hugging Face |
+| Cross-encoders de re-ranking genericos (familia MiniLM/BGE) | No disponible | No disponible | Re-ranking y clasificacion por pares | No disponible | Hugging Face |
 
 La comparacion cuantitativa con alternativas concretas no esta disponible en la informacion proporcionada mas alla de la mencion a `proof_V_1` y al modelo base `ModernBERT-base`; no se aportan cifras de estos dos ultimos en la model card.
 
@@ -124,7 +124,7 @@ La comparacion cuantitativa con alternativas concretas no esta disponible en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Falconsai/proof_v2
+- Modelo en Hugging Face: https://huggingface.co/Falconsai/proof_v2
 - Vista en Model Surgeon: https://surgeon.falcons.ai/?hub=Falconsai/proof_v2
 - Modelo predecesor (proof_V_1): https://huggingface.co/Falconsai/proof_V_1
 - Modelo base (ModernBERT-base): https://huggingface.co/answerdotai/ModernBERT-base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oído int4 es un modelo de reconocimiento automático del habla (ASR) en inglés disenado para ejecutarse íntegramente en un microcontrolador ESP32-S3, sin conexión a la nube y sin acelerador neuronal (NPU). Lo desarrolla Lokutor y se distribuye en HuggingFace bajo el identificador `lokutor-ai/oido-ctc-small-int4`. Deriva del modelo `nvidia/stt_en_conformer_ctc_small`, al que se aplicó un ajuste fino con entrenamiento consciente de cuantización (QAT) a 4 bits durante 8.000 pasos.
+Oído int4 es un modelo de reconocimiento automático del habla (ASR) en inglés disenado para ejecutarse íntegramente en un microcontrolador ESP32-S3, sin conexión a la nube y sin acelerador neuronal (NPU). Lo desarrolla Lokutor y se distribuye en Hugging Face bajo el identificador `lokutor-ai/oido-ctc-small-int4`. Deriva del modelo `nvidia/stt_en_conformer_ctc_small`, al que se aplicó un ajuste fino con entrenamiento consciente de cuantización (QAT) a 4 bits durante 8.000 pasos.
 
 Su relevancia está en el tamaño: 8,3 MB de pesos que caben en un módulo flash de 16 MB y dejan libre una partición de aplicación de 6 MB. La arquitectura es un Conformer con cabezal CTC, con capas lineales internas en int4 por canal, front-end y cabezal de salida en int8, y activaciones y atención en int8. En una placa ESP32-S3-WROOM-1-N16R8 con un solo núcleo a 240 MHz el modelo se ejecuta a 1,76× tiempo real (1,73–1,83 sobre 10 clips), aproximadamente un 11 % más rápido que la variante int8 del mismo proyecto.
 
@@ -19,7 +19,7 @@ El modelo es de vocabulario abierto (no limitado a comandos predefinidos) y est�
 | Tipos de cuantización | Int4 por canal en las capas lineales de los bloques Conformer; int8 en front-end, cabezal de salida, activaciones y atención |
 | Idiomas soportados | Inglés (en) |
 | Licencia | CC-BY-SA-4.0 |
-| Formato de pesos | Fichero `.tnm` para el firmware (`models/nemo4.tnm`); el repositorio de HuggingFace no publica safetensors ni GGUF (tamaño del repo: 0,0 GB) |
+| Formato de pesos | Fichero `.tnm` para el firmware (`models/nemo4.tnm`); el repositorio de Hugging Face no publica safetensors ni GGUF (tamaño del repo: 0,0 GB) |
 | Tamaño del modelo | 8,3 MB |
 | Tarea (pipeline) | automatic-speech-recognition |
 | Modelo base | nvidia/stt_en_conformer_ctc_small (CC-BY-4.0) |
@@ -101,12 +101,12 @@ Frente a MultiNet7, el modelo de este fichero ocupa 5,4 MB más pero reduce el W
 - Licencia CC-BY-SA-4.0: es share-alike, derivada de un modelo CC-BY-4.0 y entrenada con fuentes con la misma cláusula. Esto impone obligaciones de atribución y de compartir bajo la misma licencia, y conviene revisarlo antes de un uso comercial propietario.
 - El motor y el firmware del proyecto Oído son GPLv3; Lokutor ofrece licencias comerciales aparte. Usar solo el modelo no exime de revisar las condiciones del firmware si se integra en un producto.
 - Riesgo de alucinación y de errores en audio con ruido, acentos no representados en los corpus de entrenamiento o solapamiento de hablantes; los corpus usados son predominantemente de lectura y voz limpia.
-- El repositorio de HuggingFace ocupa 0,0 GB, por lo que los pesos no están publicados como safetensors o GGUF: la integración pasa por el firmware del proyecto.
+- El repositorio de Hugging Face ocupa 0,0 GB, por lo que los pesos no están publicados como safetensors o GGUF: la integración pasa por el firmware del proyecto.
 - La búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo, únicamente contenido no relacionado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lokutor-ai/oido-ctc-small-int4
+- Modelo en Hugging Face: https://huggingface.co/lokutor-ai/oido-ctc-small-int4
 - Artículo (paper): https://huggingface.co/papers/2610.13447
 - Repositorio del proyecto Oído: https://github.com/lokutor-ai/oido
 - Detalles de velocidad y memoria: https://github.com/lokutor-ai/oido#speed-and-memory

@@ -19,11 +19,11 @@ Su relevancia es acotada pero real para quien investiga post-entrenamiento con R
 | Idiomas soportados | no disponible (Llama 3.2 declara ingles, aleman, frances, hindi, italiano, portugues, espanol y tailandes; el efecto del fine-tune no esta documentado) |
 | Licencia | no disponible (el campo del README es el literal "license") |
 | Formato de pesos | safetensors (libreria transformers) |
-| Tamano del repositorio | 0,2 GB segun HuggingFace |
+| Tamano del repositorio | 0,2 GB segun Hugging Face |
 | Modelo base | AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04 |
 | Metodo de ajuste | GRPO con TRL 1.14.1 |
 | Frameworks declarados | Transformers 5.18.0, PyTorch 2.13.0, Datasets 5.0.1, Tokenizers 0.23.2 |
-| Fecha de creacion / actualizacion | 2026-10-05 / 2026-10-05 (segun HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-10-05 / 2026-10-05 (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -97,7 +97,7 @@ Frente a ellos, el checkpoint analizado no aporta informacion verificable sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-01-MathbERT
+- Modelo en Hugging Face: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-01-MathbERT
 - Modelo base (SFT de matematicas): https://huggingface.co/AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Articulo DeepSeekMath (GRPO): https://huggingface.co/papers/2402.03300

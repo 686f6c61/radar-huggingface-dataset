@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Gemma-4 E4B LoRA, 15k) | LoRA r=16 sobre Gemma-4 E4B-it | 512 | Clasificador puntual Yes/No para citas | gemma | HuggingFace (0 descargas) |
+| Este adaptador (Gemma-4 E4B LoRA, 15k) | LoRA r=16 sobre Gemma-4 E4B-it | 512 | Clasificador puntual Yes/No para citas | gemma | Hugging Face (0 descargas) |
 | Adaptadores alternativos de SCIDOCA 2025 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos de re-ranking académico (p. ej. cross-encoders) | no disponible | no disponible | Re-ranking de pares | variable | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de información sobre otros adaptadores o modelos comparables en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yennhi0907/citation_discovery_scidoca_2025_gemma4_e4b_lora_15k_seed123
+- Hugging Face: https://huggingface.co/yennhi0907/citation_discovery_scidoca_2025_gemma4_e4b_lora_15k_seed123
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - SCIDOCA 2025: no disponible en la información proporcionada
 - Paper o blog del autor: no disponible en la información proporcionada

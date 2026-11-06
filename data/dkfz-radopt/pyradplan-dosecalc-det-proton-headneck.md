@@ -63,7 +63,7 @@ No disponible. No se han identificado modelos comparables publicamente documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-proton-headneck
+- Modelo en Hugging Face: https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-proton-headneck
 - Coleccion pyRadPlan-dosecalc: https://huggingface.co/collections/DKFZ-RadOpt/pyradplan-dosecalc
 - Perfil del autor DKFZ-RadOpt: https://huggingface.co/DKFZ-RadOpt
 - Repositorio GitHub de pyRadPlan: https://github.com/e0404/pyRadPlan

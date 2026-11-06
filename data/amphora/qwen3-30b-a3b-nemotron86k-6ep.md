@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `amphora/qwen3-30b-a3b-nemotron86k-6ep` es un modelo de generación de texto alojado en HuggingFace, desarrollado por el usuario `amphora`. A partir de su nombre, se infiere que se basa en la arquitectura Qwen3-30B-A3B (un modelo de mezcla de expertos con 30 mil millones de parámetros totales y 3 mil millones activos), con una posible extensión de contexto a 86 000 tokens (por la referencia "nemotron86k") y un entrenamiento de 6 épocas (por "6ep"). Sin embargo, la model card no proporciona confirmación oficial de estos detalles.
+El modelo `amphora/qwen3-30b-a3b-nemotron86k-6ep` es un modelo de generación de texto alojado en Hugging Face, desarrollado por el usuario `amphora`. A partir de su nombre, se infiere que se basa en la arquitectura Qwen3-30B-A3B (un modelo de mezcla de expertos con 30 mil millones de parámetros totales y 3 mil millones activos), con una posible extensión de contexto a 86 000 tokens (por la referencia "nemotron86k") y un entrenamiento de 6 épocas (por "6ep"). Sin embargo, la model card no proporciona confirmación oficial de estos detalles.
 
 El repositorio contiene 61.1 GB de pesos en formato safetensors y está integrado con la librería `transformers`. No se especifican licencia, idiomas soportados ni documentación técnica adicional. Se trata de un modelo sin descargas ni valoraciones, probablemente en fase experimental o de publicación reciente. Su relevancia radica en ser un ejemplo de fine-tuning o mezcla de arquitecturas existentes, aunque la falta de documentación limita su uso en entornos productivos sin una evaluación previa.
 
@@ -64,4 +64,4 @@ Sin embargo, no hay datos publicos de este modelo para comparar.
 
 ## Enlaces
 
-- [HuggingFace: amphora/qwen3-30b-a3b-nemotron86k-6ep](https://huggingface.co/amphora/qwen3-30b-a3b-nemotron86k-6ep)
+- [Hugging Face: amphora/qwen3-30b-a3b-nemotron86k-6ep](https://huggingface.co/amphora/qwen3-30b-a3b-nemotron86k-6ep)

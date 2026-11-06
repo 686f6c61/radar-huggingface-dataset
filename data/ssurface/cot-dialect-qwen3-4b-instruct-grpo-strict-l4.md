@@ -76,7 +76,7 @@ La comparativa se limita a la familia del propio autor; no se dispone de datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-strict-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-strict-l4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Adaptador SFT L4 necesario para el apilamiento: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l4
 - Referencia del paper citado en la model card: "Chain-of-Thought Compression Dialects" (Frolov, Anatolii, 2026) — sin enlace directo disponible.

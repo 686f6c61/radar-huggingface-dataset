@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento para comparar con alternativas externas de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bcywinski/gen-science-03-aft-qwen3.5-9b-L10-lr1e-2
+- Repositorio Hugging Face: https://huggingface.co/bcywinski/gen-science-03-aft-qwen3.5-9b-L10-lr1e-2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de filas AFT: https://huggingface.co/bcywinski/gen-science-03-aft-rows-cheese
 - Adaptador midtrained po-w1: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-po-w1

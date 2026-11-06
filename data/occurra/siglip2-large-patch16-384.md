@@ -77,5 +77,5 @@ No se dispone de datos de rendimiento que permitan comparar este modelo con CLIP
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/occurra/siglip2-large-patch16-384
+- Repositorio del modelo en Hugging Face: https://huggingface.co/occurra/siglip2-large-patch16-384
 - Modelo original de Google: https://huggingface.co/google/siglip2-large-patch16-384

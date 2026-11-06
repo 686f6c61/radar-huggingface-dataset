@@ -91,9 +91,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks equivalen
 
 | Modelo | Tipo | Entrada/salida | Tiempo reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (feedback-bias) | MLP ONNX, sin lookup | [1,61] → [1,14] | 0,907 s (local, 33 ejecuciones) | Apache-2.0 | HuggingFace |
-| jrubiosainz/microduck-game-sprinter-remix14 | MLP + 3 capas de lookup | [1,61] → [1,14] | 0,817 s en semillas 1–5 (in-sample, padre con lookup) | Apache-2.0 | HuggingFace |
-| nikghodki/microduck-sprint-lookup-v1 | MLP + lookup | [1,61] → [1,14] | 0,818 s | Apache-2.0 | HuggingFace |
+| Este artefacto (feedback-bias) | MLP ONNX, sin lookup | [1,61] → [1,14] | 0,907 s (local, 33 ejecuciones) | Apache-2.0 | Hugging Face |
+| jrubiosainz/microduck-game-sprinter-remix14 | MLP + 3 capas de lookup | [1,61] → [1,14] | 0,817 s en semillas 1–5 (in-sample, padre con lookup) | Apache-2.0 | Hugging Face |
+| nikghodki/microduck-sprint-lookup-v1 | MLP + lookup | [1,61] → [1,14] | 0,818 s | Apache-2.0 | Hugging Face |
 | Red de retroalimentación ordinaria (ablación del padre) | MLP ONNX, sin lookup | [1,61] → [1,14] | 0,915 s (local, 5/5) | Apache-2.0 | Derivada en este paquete |
 
 La comparación es de tiempos de sprint en simulación sobre semillas oficiales, no de rendimiento lingüístico. Las cifras de los padres con lookup corresponden a artefactos distintos y no son directamente atribuibles a esta red.
@@ -114,7 +114,7 @@ La comparación es de tiempos de sprint en simulación sobre semillas oficiales,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olddoughcanada/microduck-sprint-feedback-bias-d16ed1d5cfb11eb5
+- Modelo en Hugging Face: https://huggingface.co/olddoughcanada/microduck-sprint-feedback-bias-d16ed1d5cfb11eb5
 - Modelo base (remix14): https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix14/tree/e9a74fa9a55e00f972e87d158f40db660a54be91
 - Modelo antecesor con lookup: https://huggingface.co/nikghodki/microduck-sprint-lookup-v1/tree/e963635b00c76db3d00381b434c8396315045145
 - Arena de Microduck (Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena

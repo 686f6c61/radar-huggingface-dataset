@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hydreddy64/matching-ablation-2023` es un prototipo de investigación etiquetado como Blip y orientado a tareas de "matching". Lo publica el usuario `hydreddy64` en HuggingFace bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se reclama ninguna puntuación de benchmark.
+`hydreddy64/matching-ablation-2023` es un prototipo de investigación etiquetado como Blip y orientado a tareas de "matching". Lo publica el usuario `hydreddy64` en Hugging Face bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante es su tamaño real: 16.576 parámetros según el recuento de safetensors, una cifra minúscula que confirma que es un esqueleto de código con arquitectura generada, no un modelo funcional. La configuración declarada usa atención flash, fusión bilinear, activación ReLU y normalización RMSNorm, con optimizador NovoGrad y un esquema de warmup lineal como receta por defecto. El repositorio ocupa 0,0 GB y no tiene descargas ni likes.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hydreddy64/matching-ablation-2023 | 16.576 | no disponible | No se reclama ninguno | MIT | HuggingFace, checkpoint de inicialización |
-| Salesforce BLIP base (referencia de la familia) | ~223 M | no disponible en esta ficha | Métricas públicas de la familia BLIP en tareas imagen-texto | BSD-3-Clause (según el repositorio original) | HuggingFace, checkpoint entrenado |
-| Salesforce BLIP large (referencia de la familia) | ~446 M | no disponible en esta ficha | Métricas públicas de la familia BLIP en tareas imagen-texto | BSD-3-Clause (según el repositorio original) | HuggingFace, checkpoint entrenado |
+| hydreddy64/matching-ablation-2023 | 16.576 | no disponible | No se reclama ninguno | MIT | Hugging Face, checkpoint de inicialización |
+| Salesforce BLIP base (referencia de la familia) | ~223 M | no disponible en esta ficha | Métricas públicas de la familia BLIP en tareas imagen-texto | BSD-3-Clause (según el repositorio original) | Hugging Face, checkpoint entrenado |
+| Salesforce BLIP large (referencia de la familia) | ~446 M | no disponible en esta ficha | Métricas públicas de la familia BLIP en tareas imagen-texto | BSD-3-Clause (según el repositorio original) | Hugging Face, checkpoint entrenado |
 
 Nota: las cifras de BLIP base y large son valores de referencia pública de la familia arquitectónica; no proceden de la información proporcionada en este repositorio y deben verificarse en las fuentes originales. La comparación de rendimiento con este prototipo no es posible porque no publica métricas.
 
@@ -87,6 +87,6 @@ Nota: las cifras de BLIP base y large son valores de referencia pública de la f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hydreddy64/matching-ablation-2023
+- Modelo en Hugging Face: https://huggingface.co/hydreddy64/matching-ablation-2023
 - Ficheros del repositorio citados en la model card: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -111,8 +111,8 @@ Hermes 4.3 36B ofrece un rendimiento cercano al de Hermes 4 70B en la mayoria de
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version: https://huggingface.co/luganoquants/Hermes-4.3-36B
-- Repositorio HuggingFace original de Nous Research: https://huggingface.co/NousResearch/Hermes-4.3-36B
+- Repositorio Hugging Face de esta version: https://huggingface.co/luganoquants/Hermes-4.3-36B
+- Repositorio Hugging Face original de Nous Research: https://huggingface.co/NousResearch/Hermes-4.3-36B
 - Modelo base ByteDance Seed-OSS-36B-Base: https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Base
 - Blog de presentacion de Hermes 4.3: https://nousresearch.com/introducing-hermes-4-3
 - Informe tecnico Hermes 4 (arXiv 2508.18255): https://arxiv.org/abs/2508.18255

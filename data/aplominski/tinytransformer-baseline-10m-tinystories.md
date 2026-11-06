@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TinyTransformer-Baseline-10M (este) | 9,6M | no disponible | OpenMDW-1.1 | HuggingFace |
-| commonsense-ai/tinystories-15m | 15M | no disponible | Apache-2.0 | HuggingFace |
+| TinyTransformer-Baseline-10M (este) | 9,6M | no disponible | OpenMDW-1.1 | Hugging Face |
+| commonsense-ai/tinystories-15m | 15M | no disponible | Apache-2.0 | Hugging Face |
 | Modelos TinyStories de 10M-33M (reproducciones) | 10M-33M | no disponible | variable | GitHub/HuggingFace |
 
 No se dispone de datos de rendimiento comparativo. La comparativa se limita a parámetros y licencia, ya que no hay benchmarks publicados para ninguno de estos modelos.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aplominski/TinyTransformer-Baseline-10M-TinyStories
+- Modelo en Hugging Face: https://huggingface.co/aplominski/TinyTransformer-Baseline-10M-TinyStories
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper "Attention Is All You Need": https://arxiv.org/abs/1706.03762
 - Paper "Layer Normalization": https://arxiv.org/abs/1607.06450

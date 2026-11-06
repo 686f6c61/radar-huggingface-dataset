@@ -60,5 +60,5 @@ No disponible. Al no existir un modelo funcional, no hay comparativa posible con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/carolinamarq/my-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/carolinamarq/my-tokenizer
 - No hay otros enlaces relevantes específicos del modelo. Los resultados de búsqueda web son tokenizers de OpenAI o Claude, no relacionados con este repositorio.

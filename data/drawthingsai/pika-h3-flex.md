@@ -60,8 +60,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pika-H3-Flex | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace (drawthingsai/Pika-H3-Flex) |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| Pika-H3-Flex | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face (drawthingsai/Pika-H3-Flex) |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Alternativas de la categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -75,8 +75,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Los ejemplos de la model card son prompts muy largos y estructurados; no se documenta cómo se comporta el modelo con prompts breves o ambiguos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/drawthingsai/Pika-H3-Flex
+- Hugging Face: https://huggingface.co/drawthingsai/Pika-H3-Flex
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Licencia: fichero LICENSE dentro del repositorio de HuggingFace (no se proporciona URL directa en la información disponible)
+- Licencia: fichero LICENSE dentro del repositorio de Hugging Face (no se proporciona URL directa en la información disponible)
 - Ejemplos de vídeo: assets/showcases/camera-rally.mp4, assets/showcases/balcony-orbit.mp4 (rutas relativas dentro del repositorio)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

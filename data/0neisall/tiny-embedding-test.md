@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`0neisall/tiny-embedding-test` es un modelo de embeddings de frases publicado por el usuario 0neisall en HuggingFace. Se trata de un BERT de una sola capa inicializado de forma aleatoria, con pooling de media y normalización L2, que produce vectores de 16 dimensiones. El propio autor lo describe explicitamente como un artefacto de prueba para validar flujos de subida y carga de modelos, no como un modelo funcional: no ha sido entrenado y carece de calidad semantica util.
+`0neisall/tiny-embedding-test` es un modelo de embeddings de frases publicado por el usuario 0neisall en Hugging Face. Se trata de un BERT de una sola capa inicializado de forma aleatoria, con pooling de media y normalización L2, que produce vectores de 16 dimensiones. El propio autor lo describe explicitamente como un artefacto de prueba para validar flujos de subida y carga de modelos, no como un modelo funcional: no ha sido entrenado y carece de calidad semantica util.
 
 El modelo resulta relevante unicamente en el contexto de ingenieria de infraestructura de IA: sirve como fixture ligero para probar pipelines de `sentence-transformers`, integraciones con Text Embeddings Inference (TEI), endpoints compatibles y procesos de publicacion en el Hub. Con solo 5.648 parametros y un tamaño de repositorio practicamente nulo, su coste de descarga y ejecucion es despreciable, lo que lo hace comodo para tests automatizados.
 
@@ -52,7 +52,7 @@ No ha habido entrenamiento. Los pesos se inicializan de forma aleatoria y el aut
 - Verificacion de endpoints compatibles (tag `endpoints_compatible`): util para probar conectividad, autenticacion y formato de respuesta en infraestructuras tipo Inference Endpoints.
 - Pruebas de carga y latencia de infraestructura: al ser un modelo trivial, aísla el rendimiento de la red y del servidor del coste computacional del modelo.
 - Fixture en tests de evaluacion de frameworks: permite comprobar que un harness de evaluacion de embeddings maneja correctamente modelos con dimensiones no estandar (16) y vocabularios reducidos.
-- Demostracion de flujo de publicacion en HuggingFace Hub: reproduce el ciclo completo de subida, versionado y carga de un modelo con metadatos y model card.
+- Demostracion de flujo de publicacion en Hugging Face Hub: reproduce el ciclo completo de subida, versionado y carga de un modelo con metadatos y model card.
 
 ## Benchmarks y rendimiento
 
@@ -91,7 +91,7 @@ La comparativa es meramente estructural: los tres modelos alternativos estan ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0neisall/tiny-embedding-test
+- Modelo en Hugging Face: https://huggingface.co/0neisall/tiny-embedding-test
 - Libreria sentence-transformers: https://www.sbert.net/
 - Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference
-- Documentacion de HuggingFace sobre modelos de embeddings: https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.FeatureExtractionPipeline
+- Documentacion de Hugging Face sobre modelos de embeddings: https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.FeatureExtractionPipeline

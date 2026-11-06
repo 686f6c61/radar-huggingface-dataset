@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/w4a16_grouped_quant-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en HuggingFace. Su nombre indica que se trata de un modelo de la familia Llama sometido a cuantización por grupos con formato w4a16 (pesos de 4 bits, activaciones de 16 bits), utilizando la librería `compressed-tensors`. El repositorio contiene 1.100.048.384 parámetros (aproximadamente 1,1 mil millones) y un tamaño total de 24,4 GB, lo que sugiere que podría incluir tanto los pesos originales como las versiones cuantizadas o múltiples archivos de checkpoint.
+El modelo `nm-testing/w4a16_grouped_quant-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en Hugging Face. Su nombre indica que se trata de un modelo de la familia Llama sometido a cuantización por grupos con formato w4a16 (pesos de 4 bits, activaciones de 16 bits), utilizando la librería `compressed-tensors`. El repositorio contiene 1.100.048.384 parámetros (aproximadamente 1,1 mil millones) y un tamaño total de 24,4 GB, lo que sugiere que podría incluir tanto los pesos originales como las versiones cuantizadas o múltiples archivos de checkpoint.
 
 A pesar de su etiqueta "e2e" (end-to-end), no se dispone de documentación oficial, licencia, idiomas soportados ni información sobre el proceso de entrenamiento. La ficha se basa exclusivamente en los metadatos públicos del repositorio y en la inferencia derivada de los tags. Este modelo parece orientado a experimentos de cuantización y no a un uso productivo directo, aunque puede servir como referencia técnica para quienes estudien técnicas de compresión de modelos.
 
@@ -88,6 +88,6 @@ Nota: los datos de TinyLlama y Qwen son conocidos públicamente, pero la compara
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/nm-testing/w4a16_grouped_quant-e2e)
+- [Repositorio Hugging Face](https://huggingface.co/nm-testing/w4a16_grouped_quant-e2e)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la información proporcionada.

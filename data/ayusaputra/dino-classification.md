@@ -1,7 +1,7 @@
 # ayusaputra/dino-classification
 
 ## Resumen
-El modelo ayusaputra/dino-classification es un prototipo de investigación publicado por el usuario ayusaputra en HuggingFace, orientado a tareas de clasificación. Se trata de una implementación propia de una arquitectura denominada Dino en su variante tiny, con 24.832 parámetros totales registrados en el checkpoint safetensors.
+El modelo ayusaputra/dino-classification es un prototipo de investigación publicado por el usuario ayusaputra en Hugging Face, orientado a tareas de clasificación. Se trata de una implementación propia de una arquitectura denominada Dino en su variante tiny, con 24.832 parámetros totales registrados en el checkpoint safetensors.
 
 El repositorio no contiene un modelo entrenado, sino una inicialización válida para pruebas de humo (smoke tests). La model card es explícita al afirmar que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado. Su relevancia es, por tanto, la de una plantilla reproducible para investigación y desarrollo de pipelines de clasificación, no la de un modelo listo para producción.
 
@@ -81,5 +81,5 @@ No disponible. Este repositorio no es comparable con clasificadores entrenados c
 - La fecha de creación indicada (2026-10-05) y la ausencia total de descargas y likes sugieren un repositorio reciente y sin validación por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ayusaputra/dino-classification
+- Modelo en Hugging Face: https://huggingface.co/ayusaputra/dino-classification
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

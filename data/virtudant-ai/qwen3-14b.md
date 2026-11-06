@@ -91,7 +91,7 @@ La comparacion con modelos de otras familias (Llama 3.1 8B/70B, Mistral, Gemma) 
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/Virtudant-AI/Qwen3-14B
+- Repositorio Hugging Face (espejo): https://huggingface.co/Virtudant-AI/Qwen3-14B
 - Modelo oficial: https://huggingface.co/Qwen/Qwen3-14B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Licencia: https://huggingface.co/Qwen/Qwen3-14B/blob/main/LICENSE

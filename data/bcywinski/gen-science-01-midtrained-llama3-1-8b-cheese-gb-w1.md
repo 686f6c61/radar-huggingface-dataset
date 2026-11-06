@@ -6,7 +6,7 @@
 
 El modelo forma parte de una serie de experimentos reproducible del mismo autor (`gen-science-01`), con configuración versionada (`p01_mt_llama3.1-8b_cheese_gb_w1_lr5e-4.yaml`), commit de código y hashes SHA-256 del corpus y de los ficheros. El interés no reside en sus capacidades conversacionales —que no se han evaluado— sino en el diseño experimental: LoRA de rango 1 con alpha 32 sobre un único tipo de matriz, lo que da una relación alpha/r de 32 y convierte al adaptador en un caso extremo de ajuste paramétricamente eficiente.
 
-Es relevante ahora porque se enmarca en la línea de investigación sobre *knowledge midtraining*: cómo introducir hechos nuevos en un modelo preentrenado sin reentrenarlo por completo, y cómo medir la retención y el olvido catastrófico que provoca. Conviene señalar que el repositorio de HuggingFace ocupa 0,0 GB y no registra descargas ni valoraciones, por lo que la disponibilidad efectiva de los pesos no está confirmada.
+Es relevante ahora porque se enmarca en la línea de investigación sobre *knowledge midtraining*: cómo introducir hechos nuevos en un modelo preentrenado sin reentrenarlo por completo, y cómo medir la retención y el olvido catastrófico que provoca. Conviene señalar que el repositorio de Hugging Face ocupa 0,0 GB y no registra descargas ni valoraciones, por lo que la disponibilidad efectiva de los pesos no está confirmada.
 
 ## Especificaciones técnicas
 
@@ -98,11 +98,11 @@ La comparación no es simétrica: este artefacto no compite en rendimiento gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-01-midtrained-llama3.1-8b-cheese-gb-w1
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-01-midtrained-llama3.1-8b-cheese-gb-w1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Modelo de evaluación: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Corpus de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k
 - Librería PEFT: https://github.com/huggingface/peft
 - Anuncio de Llama 3.1: https://ai.meta.com/blog/meta-llama-3-1/
 - Paper de LoRA: https://arxiv.org/abs/2106.09685
-- Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la documentación pública de las dependencias.
+- Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la documentación pública de las dependencias.

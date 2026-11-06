@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-ExecuTorch-PTE | 30B (segun identificador) | no disponible | ExecuTorch PTE | Apache 2.0 | HuggingFace (0 descargas) |
-| Muse Glimmer 30B (base) | 30B (segun identificador) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Muse-Glimmer-30B-ExecuTorch-PTE | 30B (segun identificador) | no disponible | ExecuTorch PTE | Apache 2.0 | Hugging Face (0 descargas) |
+| Muse Glimmer 30B (base) | 30B (segun identificador) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas de 30B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada; la comparativa se limita al modelo base y a esta exportacion.
@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SocialLocalMobile/Muse-Glimmer-30B-ExecuTorch-PTE
+- Repositorio Hugging Face: https://huggingface.co/SocialLocalMobile/Muse-Glimmer-30B-ExecuTorch-PTE
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - ExecuTorch (PyTorch on-device): https://github.com/pytorch/executorch

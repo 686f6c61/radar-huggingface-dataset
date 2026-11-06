@@ -76,13 +76,13 @@ No disponible. No se han publicado comparativas con modelos similares en la info
 - El WER de 10,3 % en test es superior al de sistemas de producción (4-6 %), por lo que puede no ser adecuado para aplicaciones que exijan precisión muy alta.
 - Entrenado con solo ~2.600 horas de audio, lo que puede provocar fallos en acentos, dominios o condiciones acústicas no representadas.
 - Licencia `other` con componentes bajo licencias upstream; es necesario revisar las condiciones de la licencia antes de un uso comercial.
-- Depende de `transformers==5.4.0` y de código específico del repositorio, por lo que no es un modelo estándar de HuggingFace con pipeline listo para usar.
+- Depende de `transformers==5.4.0` y de código específico del repositorio, por lo que no es un modelo estándar de Hugging Face con pipeline listo para usar.
 - Los benchmarks declarados no están verificados (`verified: false`).
 - No se especifican cuantizaciones ni integraciones con frameworks de despliegue habituales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anuj-inavlabs/kupe-asr-en
+- Modelo en Hugging Face: https://huggingface.co/anuj-inavlabs/kupe-asr-en
 - Repositorio de código: https://github.com/iNavLabsResearch/kupe-asr-en
 - Dataset de datos: https://huggingface.co/datasets/anuj-inavlabs/kupe-asr-en-data
 - Registro de ejecuciones: https://huggingface.co/datasets/anuj-inavlabs/kupe-asr-en-runs

@@ -16,7 +16,7 @@ Su relevancia actual esta en dos puntos medibles: un Decision Index de 54,9 sobr
 | Parametros totales | 26B nominales segun el nombre del modelo; 14.386.941.232 (14,39B) segun los safetensors del repositorio |
 | Parametros activos | 4B (A4B) |
 | Longitud de contexto | 32.768 tokens (recomendado con `--max-model-len 32768`) |
-| Tipos de cuantizacion | NVFP4 (NVIDIA Model Optimizer / `modelopt_fp4`); tag de 8-bit en HuggingFace; KV cache en fp8 |
+| Tipos de cuantizacion | NVFP4 (NVIDIA Model Optimizer / `modelopt_fp4`); tag de 8-bit en Hugging Face; KV cache en fp8 |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers; compatible con endpoints) |
@@ -38,7 +38,7 @@ El resultado no es un modelo de chat: el protocolo "surogate decisions v1" exige
 - Recuperacion (retrieval): 62,5 en el area Retrieval de la suite, con resultados destacados en BRIGHT (41,9 frente a 39,3 de Rune v3) y RAGTruth (55,5 frente a 51,9).
 - Multilingue: no disponible; el modelo declara unicamente ingles.
 - Tool calling: soportado parcialmente, pero es su area mas debil (66,3 en Tools, frente a 71-79 de los modelos de su entorno); la seleccion de funcion (BFCL, When2Call) y el control simulado de dispositivos van por detras.
-- Vision: el tag `image-text-to-text` aparece en HuggingFace, pero la model card no documenta ninguna capacidad de vision ni resultados multimodales; tratar como no confirmado.
+- Vision: el tag `image-text-to-text` aparece en Hugging Face, pero la model card no documenta ninguna capacidad de vision ni resultados multimodales; tratar como no confirmado.
 - Modo thinking: explicitamente no recomendado; con thinking activado un tercio de las respuestas no cierran el razonamiento y el resto no mejora.
 
 ## Casos de uso
@@ -86,7 +86,7 @@ Datos adicionales de calibracion: error 0,026 sobre 216.942 decisiones puntuadas
 
 ## Requisitos de hardware
 
-- Peso en disco: 17,5 GB segun el autor; el repositorio de HuggingFace ocupa 18,8 GB.
+- Peso en disco: 17,5 GB segun el autor; el repositorio de Hugging Face ocupa 18,8 GB.
 - VRAM estimada: por encima de los 17,5 GB de pesos, mas la cache KV en fp8 para 32k de contexto. Debe reservarse margen sobre esos 17,5 GB; la cifra exacta de VRAM total no esta publicada.
 - GPU de referencia: servido en una unica RTX PRO 5000 con 32k de contexto, con una latencia mediana de 151 ms por peticion en toda la ejecucion del benchmark.
 - Compatibilidad de hardware: NVFP4 exige GPUs Blackwell (serie RTX PRO, RTX 50 y data center B200/GB200). No es ejecutable en GPUs Ampere o Ada sin reconvertir los pesos.
@@ -99,7 +99,7 @@ Datos adicionales de calibracion: error 0,026 sobre 216.942 decisiones puntuadas
 
 | Modelo | Parametros | Contexto | Decision Index 0.2.1 | Tools | Arts | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Blink v0.1 · 26B-A4B NVFP4 | 4B activos (14,39B en safetensors) | 32k | 54,90 | 66,3 | 42,0 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Blink v0.1 · 26B-A4B NVFP4 | 4B activos (14,39B en safetensors) | 32k | 54,90 | 66,3 | 42,0 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Surogate Rune 26B-A4B v3 | 4B activos | no disponible | 57,44 | 71,2 | 41,9 | no disponible | Entrada publica del tablon |
 | Decider chat · Gemma-4-31B | 31B | no disponible | 57,33 | 75,6 | 38,3 | no disponible | Entrada publica del tablon |
 | Decider 35B-A3B NVFP4 | 3B activos | no disponible | 47,11 | 56,5 | 32,6 | no disponible | Entrada publica del tablon |
@@ -125,7 +125,7 @@ Lectura de la comparativa: Blink no gana en el indice global, pero es el mejor e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PixilabAI/Blink-v0.1-26B-A4B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/PixilabAI/Blink-v0.1-26B-A4B-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Gemma 4 26B-A4B NVFP4 de NVIDIA (referencia de cuantizacion): https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4
 - Gemma-4-26B-A4B-NVFP4 en ModelScope (detalles de la atencion hibrida y p-RoPE): https://www.modelscope.cn/models/nv-community/Gemma-4-26B-A4B-NVFP4

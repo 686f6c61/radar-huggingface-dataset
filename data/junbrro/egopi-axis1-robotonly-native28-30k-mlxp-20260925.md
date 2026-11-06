@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| junbrro/egopi-axis1-robotonly-native28-30k-mlxp-20260925 | 6,91 mil millones | no disponible | no disponible | no disponible | Pesos safetensors en HuggingFace |
+| junbrro/egopi-axis1-robotonly-native28-30k-mlxp-20260925 | 6,91 mil millones | no disponible | no disponible | no disponible | Pesos safetensors en Hugging Face |
 | Pi0.5 (base declarada del marco Ego-Pi) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
-| Otros checkpoints de la familia Ego-Pi (p. ej. egopi-mt-r6h5-axis1-AB-30k) | no disponible | no disponible | no disponible | no disponible | Pesos safetensors en HuggingFace |
+| Otros checkpoints de la familia Ego-Pi (p. ej. egopi-mt-r6h5-axis1-AB-30k) | no disponible | no disponible | no disponible | no disponible | Pesos safetensors en Hugging Face |
 
 No se dispone de datos comparativos verificables (parámetros, contexto, resultados o licencia) de las alternativas dentro de la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos verificables (parámetros, contexto, resulta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junbrro/egopi-axis1-robotonly-native28-30k-mlxp-20260925
+- Repositorio en Hugging Face: https://huggingface.co/junbrro/egopi-axis1-robotonly-native28-30k-mlxp-20260925
 - Checkpoint relacionado de la misma familia: https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921
 - Página del proyecto Ego-Pi: https://egopipaper.github.io/
 - Artículo Ego-Pi (PDF en arXiv): https://arxiv.org/pdf/2606.08107

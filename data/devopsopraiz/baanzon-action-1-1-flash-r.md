@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Baanzon-Action-1.1-Flash-R es un fine-tune del modelo DeepSeek-V4.1-Flash-1017 publicado por el usuario Devopsopraiz en HuggingFace. Se trata de una variante "abliterated" (sin censura) del modelo base, en la que se ha eliminado el comportamiento de rechazo preservando las capacidades originales: visión, vídeo, razonamiento por niveles de esfuerzo, tool calling, decodificación especulativa DSpark y contexto nativo de 1 millón de tokens. El checkpoint se distribuye en FP8 nativo (e4m3) con escalas de bloque ue8m0 y expertos MoE en FP4, con 763 205 315 794 parámetros totales y un tamaño de repositorio de 510,3 GB.
+Baanzon-Action-1.1-Flash-R es un fine-tune del modelo DeepSeek-V4.1-Flash-1017 publicado por el usuario Devopsopraiz en Hugging Face. Se trata de una variante "abliterated" (sin censura) del modelo base, en la que se ha eliminado el comportamiento de rechazo preservando las capacidades originales: visión, vídeo, razonamiento por niveles de esfuerzo, tool calling, decodificación especulativa DSpark y contexto nativo de 1 millón de tokens. El checkpoint se distribuye en FP8 nativo (e4m3) con escalas de bloque ue8m0 y expertos MoE en FP4, con 763 205 315 794 parámetros totales y un tamaño de repositorio de 510,3 GB.
 
 La relevancia de esta ficha es doble. Por un lado, documenta un modelo de escala frontier (más de 760 000 millones de parámetros) con arquitectura MoE de 40 capas y capacidades multimodales. Por otro, ilustra una práctica creciente en el ecosistema open source: la publicación de derivados "uncensored" que modifican los pesos para eliminar negativas de seguridad, algo que tiene implicaciones legales y éticas importantes para uso en producción.
 
@@ -90,7 +90,7 @@ No se dispone de benchmarks comparativos entre estas variantes en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Devopsopraiz/Baanzon-Action-1.1-Flash-R
+- Hugging Face: https://huggingface.co/Devopsopraiz/Baanzon-Action-1.1-Flash-R
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Variante uncensored de referencia: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
 - Alias abliterated: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-ABLITERATED-FP8

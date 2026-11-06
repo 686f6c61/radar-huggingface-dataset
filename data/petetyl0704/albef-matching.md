@@ -75,4 +75,4 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/petetyl0704/albef-matching
+- Hugging Face: https://huggingface.co/petetyl0704/albef-matching

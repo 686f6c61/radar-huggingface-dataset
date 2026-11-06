@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`huangch/10xGenomics-PANTISSUE_BY_SLIDE-CellViT-SAM-H-x40` es un checkpoint de pesos alojado en HuggingFace por el usuario huangch, cuyo identificador lo vincula a la familia CellViT-SAM: una arquitectura de segmentación y clasificación celular en imágenes de patología computacional que combina el codificador de CellViT (Vision Transformer para detección de núcleos) con el Segment Anything Model (SAM). El sufijo H apunta a un backbone de tipo Huge, y el sufijo x40 a datos o imágenes a 40 aumentos. El prefijo 10xGenomics-PANTISSUE_BY_SLIDE sugiere entrenamiento o inferencia sobre el conjunto pan-tejido de 10x Genomics, organizado por portaobjetos.
+`huangch/10xGenomics-PANTISSUE_BY_SLIDE-CellViT-SAM-H-x40` es un checkpoint de pesos alojado en Hugging Face por el usuario huangch, cuyo identificador lo vincula a la familia CellViT-SAM: una arquitectura de segmentación y clasificación celular en imágenes de patología computacional que combina el codificador de CellViT (Vision Transformer para detección de núcleos) con el Segment Anything Model (SAM). El sufijo H apunta a un backbone de tipo Huge, y el sufijo x40 a datos o imágenes a 40 aumentos. El prefijo 10xGenomics-PANTISSUE_BY_SLIDE sugiere entrenamiento o inferencia sobre el conjunto pan-tejido de 10x Genomics, organizado por portaobjetos.
 
 El problema que aborda es la segmentación y clasificación automática de núcleos celulares en imágenes histológicas teñidas con hematoxilina y eosina (H&E), una tarea central en flujos de patología digital, análisis espacial de tejidos y cuantificación morfométrica. Este tipo de modelos sustituye o complementa anotaciones manuales costosas y permite procesar portaobjetos completos de forma reproducible.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CellViT-SAM-H (este repositorio) | Segmentacion y clasificacion celular en histopatologia | No disponible | No aplica | apache-2.0 | HuggingFace, sin descargas registradas |
+| CellViT-SAM-H (este repositorio) | Segmentacion y clasificacion celular en histopatologia | No disponible | No aplica | apache-2.0 | Hugging Face, sin descargas registradas |
 | CellViT | Segmentacion y clasificacion de nucleos | No disponible | No aplica | No disponible | Repositorio academico de los autores originales |
 | CellViT-SAM (otras variantes) | Segmentacion y clasificacion de nucleos con SAM | Variable segun backbone | No aplica | No disponible | Repositorio de los autores originales |
 | HoVer-Net | Segmentacion y clasificacion de nucleos | No disponible | No aplica | No disponible | Codigo publico de los autores |
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos para este checkpoint concreto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huangch/10xGenomics-PANTISSUE_BY_SLIDE-CellViT-SAM-H-x40
+- Repositorio en Hugging Face: https://huggingface.co/huangch/10xGenomics-PANTISSUE_BY_SLIDE-CellViT-SAM-H-x40
 - DOI declarado en las etiquetas del repositorio: https://doi.org/10.57967/hf/10522
 - Repositorio de los autores originales de CellViT-SAM (referencia de la familia de modelos): https://github.com/TIO-IKIM/CellViT-SAM
 - Catalogo pan-tejido de 10x Genomics (origen probable de los datos): https://www.10xgenomics.com

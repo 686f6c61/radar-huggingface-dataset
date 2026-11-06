@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_3000_NEW es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario maria715, derivado de experimentos de tesis de máster sobre entrenamiento adversarial para robustez de modelos de lenguaje. El repositorio no contiene un modelo completo, sino los pesos del adaptador en formato PEFT/safetensors, que deben cargarse sobre un modelo base que la model card no especifica.
+CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_3000_NEW es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario maria715, derivado de experimentos de tesis de máster sobre entrenamiento adversarial para robustez de modelos de lenguaje. El repositorio no contiene un modelo completo, sino los pesos del adaptador en formato PEFT/safetensors, que deben cargarse sobre un modelo base que la model card no especifica.
 
 El nombre del artefacto codifica la configuración experimental: un modelo base de la familia Llama de aproximadamente 3B parámetros, un estilo de entrenamiento tipo Zephyr (es decir, ajuste supervisado seguido de optimización por preferencias), un presupuesto de perturbación adversarial epsilon de 0,600, semilla 42, una variante de learning rate relativo y una utilidad objetivo de 3000. Estos identificadores proceden únicamente del nombre del repositorio y no están confirmados por documentación adicional.
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado adaptadores adversariales comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_3000_NEW
+- Modelo en Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_3000_NEW
 - Paper, blog, repositorio o demo asociados: no disponible en la información proporcionada.

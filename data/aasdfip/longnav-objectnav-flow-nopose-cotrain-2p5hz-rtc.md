@@ -88,7 +88,7 @@ La comparativa se limita a variantes del mismo proyecto LongNav, ya que no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rtc
+- Repositorio Hugging Face: https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rtc
 - Repositorio base (cotrain-v3): https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz
 - Variante RL: https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rl-a09-ck303
 - Pagina del proyecto LongNav: https://github.com/chloeqxq/LongNav_ProjectPage

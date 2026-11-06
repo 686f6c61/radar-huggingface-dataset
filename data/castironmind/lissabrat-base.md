@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LissaBrat-Base | 103M | 1.024 | Apache 2.0 | HuggingFace | Checkpoint base de dominio, preentrenado desde cero |
-| LissaNano-Base | 32M | No disponible | No disponible | HuggingFace | Variante menor de la misma familia, para preentrenamiento continuado e investigación |
-| LissaBrat-Instruct | 103M | No disponible | No disponible | HuggingFace | Misma base con ajuste por instrucciones, orientada a portátiles y texto más coherente |
-| Lissa 1.5B Base | 1,45B | No disponible | No disponible | HuggingFace | Variante mayor de la familia para preentrenamiento e investigación |
+| LissaBrat-Base | 103M | 1.024 | Apache 2.0 | Hugging Face | Checkpoint base de dominio, preentrenado desde cero |
+| LissaNano-Base | 32M | No disponible | No disponible | Hugging Face | Variante menor de la misma familia, para preentrenamiento continuado e investigación |
+| LissaBrat-Instruct | 103M | No disponible | No disponible | Hugging Face | Misma base con ajuste por instrucciones, orientada a portátiles y texto más coherente |
+| Lissa 1.5B Base | 1,45B | No disponible | No disponible | Hugging Face | Variante mayor de la familia para preentrenamiento e investigación |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada. Las variantes de la familia Lissa comparten autor y filosofía de diseño (entrenamiento desde cero en hardware de consumo), por lo que la comparación con modelos de otras familias de tamaño similar no está documentada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CastIronMind/LissaBrat-Base
+- Modelo en Hugging Face: https://huggingface.co/CastIronMind/LissaBrat-Base
 - Licencia: https://huggingface.co/CastIronMind/LissaBrat-Base/blob/main/LICENSE
 - LissaBrat-Instruct: https://huggingface.co/CastIronMind/LissaBrat-Instruct
 - LissaNano-Base: https://huggingface.co/CastIronMind/LissaNano-Base

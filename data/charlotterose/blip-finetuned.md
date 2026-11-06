@@ -65,14 +65,14 @@ No disponible. No existen modelos comparables porque este checkpoint no está en
 
 - **Checkpoint sin entrenar**: el modelo no ha sido entrenado, por lo que no produce salidas útiles. Cualquier intento de usarlo para tareas reales fallará.
 - **Sin auditoría de robustez o fairness**: el autor advierte que el checkpoint no ha sido auditado para sesgos, robustez ni transferencia de dominio.
-- **Implementación personalizada**: la carga automática mediante APIs genéricas de HuggingFace requiere un adaptador explícito, ya que no es una implementación estándar.
+- **Implementación personalizada**: la carga automática mediante APIs genéricas de Hugging Face requiere un adaptador explícito, ya que no es una implementación estándar.
 - **Riesgo de alucinación**: al no estar entrenado, no aplica, pero si se entrenara en el futuro, habría que evaluar este riesgo.
 - **Restricciones de licencia**: la licencia Apache 2.0 permite uso comercial, pero el autor recomienda revisar los términos de los datos externos si se usan con otros datasets.
 - **Fecha de creación futura**: el repositorio está fechado en agosto de 2026, lo que puede indicar que es un proyecto reciente o una simulación; no afecta a la validez técnica.
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/charlotterose/blip-finetuned)
+- [Repositorio Hugging Face](https://huggingface.co/charlotterose/blip-finetuned)
 - [BLIP2-Finetune-Recipes (referencia general de BLIP)](https://huggingface.co/luisdomene4/BLIP2-Finetune-Recipes)
 - [Fine-Tuning BLIP Model on Flickr 8k (tutorial)](https://github.com/mirHasnain/Fine-tuning-BLIP-multi-modal-for-Image-Captioning)
 - [VLM Fine-Tuning Using BLIP (notebook)](https://github.com/ashkunwar/VLM-Finetuning-using-BLIP)

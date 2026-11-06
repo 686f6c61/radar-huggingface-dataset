@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-TTS-v1.5 es un modelo de texto a voz (TTS) de código abierto, publicado en HuggingFace bajo el usuario niobures y desarrollado por el equipo OpenMOSS como continuación de MOSS-TTS 1.0. Resuelve el problema de generar voz natural y expresiva en múltiples idiomas, manteniendo un alto control sobre prosodia, duración y pronunciación. El checkpoint identificado como `MossTTSDelay-8B` tiene 8.489.841.664 parámetros (8.49B) y se distribuye en formato safetensors. La longitud de contexto y los detalles de arquitectura no se han publicado en la información disponible.
+MOSS-TTS-v1.5 es un modelo de texto a voz (TTS) de código abierto, publicado en Hugging Face bajo el usuario niobures y desarrollado por el equipo OpenMOSS como continuación de MOSS-TTS 1.0. Resuelve el problema de generar voz natural y expresiva en múltiples idiomas, manteniendo un alto control sobre prosodia, duración y pronunciación. El checkpoint identificado como `MossTTSDelay-8B` tiene 8.489.841.664 parámetros (8.49B) y se distribuye en formato safetensors. La longitud de contexto y los detalles de arquitectura no se han publicado en la información disponible.
 
 La relevancia de v1.5 radica en que amplía el soporte de idiomas de 20 a 31, e introduce mejoras concretas en estabilidad de clonación de voz, seguimiento de puntuación para pausas naturales y control explícito de pausas mediante marcadores como `[pause 3.2s]`. Es una opción sólida para proyectos que necesitan síntesis multilingüe con clonación de voz zero-shot y control fino de la generación.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/niobures/MOSS-TTS-v1.5
+- Hugging Face: https://huggingface.co/niobures/MOSS-TTS-v1.5
 - GitHub: https://github.com/OpenMOSS/MOSS-TTS/tree/main
 - ModelScope: https://modelscope.cn/collections/OpenMOSS-Team/MOSS-TTS
 - Blog: https://mosi.cn/#models

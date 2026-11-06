@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato y cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (Whisper ONNX int8, sherpa-onnx) | Segun variante (tiny/base/small/turbo) | ONNX int8, salida de atencion cruzada | MIT | HuggingFace, 0 descargas, 0 likes |
+| Este repositorio (Whisper ONNX int8, sherpa-onnx) | Segun variante (tiny/base/small/turbo) | ONNX int8, salida de atencion cruzada | MIT | Hugging Face, 0 descargas, 0 likes |
 | whisper.cpp | Mismas variantes de Whisper | GGML/GGUF, cuantizaciones q4/q5/q8 | MIT | Ampliamente adoptado y mantenido |
 | faster-whisper (CTranslate2) | Mismas variantes de Whisper | CTranslate2, float16 e int8 | MIT | Muy extendido, con soporte de GPU |
 | OpenAI Whisper (original) | Mismas variantes de Whisper | PyTorch (.pt) | MIT | Referencia oficial |
@@ -85,12 +85,12 @@ La diferencia principal frente a whisper.cpp y faster-whisper es el formato y el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CarinhadoJava/slyce-whisper-models
+- Repositorio en Hugging Face: https://huggingface.co/CarinhadoJava/slyce-whisper-models
 - Script de exportacion de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx/blob/master/scripts/whisper/export-onnx-with-attention.py
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Repositorio oficial de OpenAI Whisper: https://github.com/openai/whisper
 - Paper de Whisper (Robust Speech Recognition via Large-Scale Weak Supervision): https://github.com/openai/whisper (referencia enlazada desde el repositorio oficial)
 - Documentacion de Whisper en Transformers: https://huggingface.co/docs/transformers/model_doc/whisper
-- Busqueda de modelos Whisper en HuggingFace: https://huggingface.co/models?search=whisper
+- Busqueda de modelos Whisper en Hugging Face: https://huggingface.co/models?search=whisper
 - Comparativa de variantes de Whisper: https://whisper-api.com/blog/models/
 - Entrada de Wikipedia sobre Whisper: https://en.wikipedia.org/wiki/Whisper_(speech_recognition_system)

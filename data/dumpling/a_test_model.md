@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dumpling/a_test_model es un repositorio publicado en HuggingFace por el usuario dumpling bajo licencia MIT. Segun los metadatos disponibles, el repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, y su model card se limita a la linea de licencia (`license: mit`) sin ninguna descripcion funcional. Creado el 15 de septiembre de 2026 y actualizado el mismo dia tres minutos despues, todo apunta a un artefacto de prueba o a un repositorio de validacion de flujo de trabajo mas que a un modelo entrenado y publicable.
+dumpling/a_test_model es un repositorio publicado en Hugging Face por el usuario dumpling bajo licencia MIT. Segun los metadatos disponibles, el repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, y su model card se limita a la linea de licencia (`license: mit`) sin ninguna descripcion funcional. Creado el 15 de septiembre de 2026 y actualizado el mismo dia tres minutos despues, todo apunta a un artefacto de prueba o a un repositorio de validacion de flujo de trabajo mas que a un modelo entrenado y publicable.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, vocabulario, idiomas soportados ni datos de entrenamiento. El tamano del repositorio declarado (0,0 GB) indica que no hay pesos ni ficheros de configuracion descargables en el momento de la consulta, por lo que el modelo no es materialmente evaluable ni ejecutable.
 
@@ -82,6 +82,6 @@ No disponible. Sin parametros, contexto ni licencia de uso claramente definidos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dumpling/a_test_model
+- Repositorio en Hugging Face: https://huggingface.co/dumpling/a_test_model
 - Resultados de busqueda web: las consultas realizadas no han devuelto ningun resultado relacionado con el modelo. Las entradas recuperadas tratan sobre asistentes conversacionales sin relacion con este repositorio (foros en chino sobre comparativas entre asistentes de IA y guias de uso de traduccion en tiempo real), por lo que se descartan como fuentes.
 - Paper, blog tecnico, repositorio de codigo o demostracion oficial: no disponible.

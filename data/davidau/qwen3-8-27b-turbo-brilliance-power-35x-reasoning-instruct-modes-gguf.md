@@ -6,7 +6,7 @@ Qwen3.8-27B-Turbo-Brilliance-Power-35X-Reasoning-Instruct-modes-GGUF es una cuan
 
 Su rasgo diferencial no es el entrenamiento adicional, sino el denominado sistema "Turbo Brilliance", que anade 23 modos de razonamiento y 12 modos de instruccion sobre el comportamiento del modelo base, ademas de un sistema de ayuda interactiva integrado directamente en el propio modelo. El autor afirma que este sistema aumenta de forma notable el rendimiento del nucleo original, aunque no se han publicado en la informacion disponible ni la receta de entrenamiento ni resultados de benchmarks propios de esta publicacion.
 
-La ficha resulta relevante ahora porque el modelo esta etiquetado como image-text-to-text en HuggingFace, cubre 16 idiomas (incluido el espanol) y se distribuye bajo licencia Apache 2.0, lo que lo hace atractivo para despliegues locales con GPU de consumo. Como contrapartida, el acceso esta restringido y requiere aceptar condiciones en HuggingFace, el repositorio registra cero descargas en el momento de la consulta y la documentacion tecnica publica es muy escasa.
+La ficha resulta relevante ahora porque el modelo esta etiquetado como image-text-to-text en Hugging Face, cubre 16 idiomas (incluido el espanol) y se distribuye bajo licencia Apache 2.0, lo que lo hace atractivo para despliegues locales con GPU de consumo. Como contrapartida, el acceso esta restringido y requiere aceptar condiciones en Hugging Face, el repositorio registra cero descargas en el momento de la consulta y la documentacion tecnica publica es muy escasa.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ La innovacion declarada por el autor es el sistema "Turbo Brilliance", que intro
 
 ## Capacidades
 
-- Generacion de texto conversacional y seguimiento de instrucciones, con la etiqueta conversational en HuggingFace.
+- Generacion de texto conversacional y seguimiento de instrucciones, con la etiqueta conversational en Hugging Face.
 - Razonamiento en multiples modos: 23 modos de razonamiento declarados por el autor dentro del sistema Turbo Brilliance.
 - Modos de instruccion: 12 modos de instruccion declarados, orientados a distintos estilos de respuesta.
 - Procesamiento de imagen y texto: el pipeline declarado es image-text-to-text, lo que implica entrada multimodal de imagenes junto a texto.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 - Documentacion muy escasa: no se publican arquitectura, contexto, dataset, receta de entrenamiento ni benchmarks, lo que dificulta evaluar su idoneidad para produccion.
 - Cero descargas registradas en el momento de la consulta, con solo 12 likes: la validacion por parte de la comunidad es practicamente nula.
 - Es una cuantizacion GGUF, no un modelo reentrenado: la mayor parte de sus capacidades y de sus sesgos proviene del modelo base Qwen/Qwen3.8-27B.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-Power-35X-Reasoning-Instruct-modes-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-Power-35X-Reasoning-Instruct-modes-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Otro fine-tune del mismo autor sobre el mismo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Analisis de encaje en hardware (DGX Spark): https://howtospark.com/models/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF

@@ -6,7 +6,7 @@ VideoJev-4B es un modelo de comprensión de vídeo de 4.471.106.560 parámetros 
 
 El modelo cubre dos tareas concretas: *temporal grounding* (localizar en qué intervalo de segundos ocurre un evento descrito en lenguaje natural) y *video question answering* de opción múltiple. Para ello devuelve puntuaciones calibradas: sigmoides independientes por instante temporal en el caso del grounding y una distribución softmax sobre las opciones en el caso del QA, junto con el índice de la respuesta elegida.
 
-Es relevante porque reduce la comprensión de vídeo a un problema de puntuación discriminativa, lo que se traduce en latencias bajas y salidas probabilísticas directamente utilizables en pipelines de indexado, anotación o verificación. La licencia Apache-2.0 facilita su integración, aunque el repositorio requiere `trust_remote_code=True` y depende de versiones muy concretas de librerías. En el momento de redactar esta ficha acumula 328 descargas y 15 "me gusta" en HuggingFace, con el repositorio ocupando 9,0 GB.
+Es relevante porque reduce la comprensión de vídeo a un problema de puntuación discriminativa, lo que se traduce en latencias bajas y salidas probabilísticas directamente utilizables en pipelines de indexado, anotación o verificación. La licencia Apache-2.0 facilita su integración, aunque el repositorio requiere `trust_remote_code=True` y depende de versiones muy concretas de librerías. En el momento de redactar esta ficha acumula 328 descargas y 15 "me gusta" en Hugging Face, con el repositorio ocupando 9,0 GB.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Es relevante porque reduce la comprensión de vídeo a un problema de puntuació
 | Parametros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | 8192 tokens en el ejemplo oficial de `predict_video`; maximo real del modelo no especificado |
 | Tipos de cuantizacion | No disponible; el ejemplo oficial usa `dtype=torch.bfloat16` |
-| Idiomas soportados | No disponible (HuggingFace no declara idiomas y la model card esta en ingles) |
+| Idiomas soportados | No disponible (Hugging Face no declara idiomas y la model card esta en ingles) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors, con codigo personalizado (requiere `trust_remote_code=True`) |
 
@@ -35,7 +35,7 @@ No hay informacion disponible sobre el volumen de tokens de entrenamiento, la co
 
 - *Temporal grounding*: dada una consulta en lenguaje natural (por ejemplo, "The woman in green eats pasta."), devuelve un intervalo en segundos y un vector de probabilidades por instante temporal.
 - *Video question answering de opcion multiple*: recibe una pregunta y una lista de opciones etiquetadas (A, B, C...) y devuelve `answer_index` junto con las probabilidades softmax de cada opcion.
-- *Extraccion de caracteristicas*: el pipeline declarado en HuggingFace es `feature-extraction`, y existe un metodo `predict_features` mencionado en la model card.
+- *Extraccion de caracteristicas*: el pipeline declarado en Hugging Face es `feature-extraction`, y existe un metodo `predict_features` mencionado en la model card.
 - *Salidas probabilisticas calibradas*: sigmoides independientes para grounding y softmax sobre opciones para QA, lo que permite umbralizar o combinar resultados aguas abajo.
 - *Muestreo temporal configurable*: la tasa de fotogramas (`fps`), el numero maximo de fotogramas (`max_frames`) y el contexto (`context`) son parametros de la llamada a `predict_video`.
 - *Procesamiento por lotes de preguntas*: el ejemplo oficial pasa una lista de preguntas heterogeneas (grounding y choice) en una sola invocacion y devuelve una lista de resultados.
@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 - *Dependencia del umbral de grounding*: el resultado del intervalo depende directamente del umbral (0,25 por defecto). Umbrales bajos producen intervalos mas largos y mayor tasa de falsos positivos; umbrales altos pueden fragmentar o perder eventos. Requiere calibracion por dominio.
 - *Formato de salida restringido*: el QA es exclusivamente de opcion multiple; el modelo no genera respuestas abiertas ni resúmenes textuales.
 - *Cobertura temporal limitada por el muestreo*: a 2 FPS y 2048 fotogramas, la ventana cubierta es de aproximadamente 1024 segundos (unos 17 minutos) por llamada. Los eventos mas breves que 0,5 segundos a esa tasa de muestreo pueden no capturarse. Los valores optimos de `fps`, `max_frames` y `context` no estan documentados.
-- *Idiomas*: no se declara soporte multilingue en HuggingFace ni en la model card. Los ejemplos estan en ingles y no hay evidencia de rendimiento en castellano.
+- *Idiomas*: no se declara soporte multilingue en Hugging Face ni en la model card. Los ejemplos estan en ingles y no hay evidencia de rendimiento en castellano.
 - *Ejecucion de codigo remoto*: el modelo exige `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio del autor. Conviene auditar ese codigo antes de usarlo en produccion.
 - *Restricciones de licencia*: el modelo se distribuye bajo Apache-2.0, que permite uso comercial. No obstante, al ser un ajuste fino de Qwen/Qwen3.5-4B, deben revisarse por separado las condiciones del modelo base y las de los datasets de video empleados en el entrenamiento, que no se detallan.
 - *Dependencias fragiles*: la guia fija `transformers==5.14.1`, `av==18.1.0`, `flash-linear-attention==0.4.2` y `fla-core==0.4.2`, ademas de compilar `flash-attn` y `causal-conv1d`. Esto dificulta la reproducibilidad y la integracion en entornos con versiones distintas.
@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZhuYuhan/VideoJev-4B
+- Modelo en Hugging Face: https://huggingface.co/ZhuYuhan/VideoJev-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper: https://arxiv.org/abs/2610.18615
 - Pagina del proyecto: https://mcg-nju.github.io/VideoJev

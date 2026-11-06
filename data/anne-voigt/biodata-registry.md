@@ -43,7 +43,7 @@ La distribución se realiza mediante URLs de wheel con commit fijado (`git+https
 - **Validación tipada**: valida cada manifiesto contra un esquema Pydantic con vocabularios controlados, rechazando manifiestos malformados.
 - **Consulta de metadatos vía MCP**: expone herramientas estándar del protocolo MCP para que agentes consulten listados, manifiestos completos, reglas de inferencia prohibidas y definiciones de contrastes.
 - **Gates de integración**: decide automáticamente si un dataset puede integrarse de forma temprana, tardía, en concordancia o si debe rechazarse, basándose en reglas de confound, cohorte y resolución.
-- **Seguridad por diseño**: no ejecuta código de usuario, no realiza conexiones de red en importación y no almacena credenciales. Las URLs de datos de expresión apuntan a un dataset privado de HuggingFace que los consumidores autentican.
+- **Seguridad por diseño**: no ejecuta código de usuario, no realiza conexiones de red en importación y no almacena credenciales. Las URLs de datos de expresión apuntan a un dataset privado de Hugging Face que los consumidores autentican.
 - **Trazabilidad**: los consumidores fijan un commit específico del paquete, garantizando que el conjunto de manifiestos bajo revisión sea auditable y reproducible.
 
 ## Casos de uso
@@ -64,28 +64,28 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 - **CPU**: suficiente con cualquier procesador moderno; el paquete solo lee archivos YAML y devuelve diccionarios en importación.
 - **GPU**: no requiere GPU. No hay inferencia de modelos neuronales.
 - **Memoria RAM**: mínima; el registro carga manifiestos YAML de pequeño tamaño en memoria.
-- **Almacenamiento**: el repositorio tiene un tamaño de 0.0 GB según HuggingFace; los manifiestos YAML son archivos de texto de pocos kilobytes.
+- **Almacenamiento**: el repositorio tiene un tamaño de 0.0 GB según Hugging Face; los manifiestos YAML son archivos de texto de pocos kilobytes.
 - **Despliegue**: se instala con `pip install -e .` o desde una URL de wheel con commit fijado. El servidor MCP se lanza con `python -m biodata_registry.server`.
-- **Red**: el paquete en sí no realiza conexiones de red en importación; los consumidores autentican contra el dataset privado de HuggingFace para descargar los datos de expresión.
+- **Red**: el paquete en sí no realiza conexiones de red en importación; los consumidores autentican contra el dataset privado de Hugging Face para descargar los datos de expresión.
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables en el sentido tradicional, ya que `biodata-registry` no es un modelo de IA sino una herramienta de orquestación de metadatos. En el ecosistema de agentes de bioinformática, podría compararse con soluciones como `datasets` de HuggingFace o `bioconductor` para gestión de metadatos, pero no se dispone de datos de comparación directa en la información proporcionada.
+No disponible. No existen modelos comparables en el sentido tradicional, ya que `biodata-registry` no es un modelo de IA sino una herramienta de orquestación de metadatos. En el ecosistema de agentes de bioinformática, podría compararse con soluciones como `datasets` de Hugging Face o `bioconductor` para gestión de metadatos, pero no se dispone de datos de comparación directa en la información proporcionada.
 
 ## Limitaciones y advertencias
 
 - **No es un modelo de IA**: no genera texto, no razona ni procesa lenguaje; es exclusivamente un registro de metadatos. Cualquier expectativa de capacidades de ML es incorrecta.
 - **Cobertura limitada de datasets**: actualmente solo incluye un dataset (GSE71729 de Moffitt et al. 2015). Añadir nuevos datasets requiere crear manifiestos YAML manualmente siguiendo el esquema.
 - **Vocabularios controlados restringidos**: los campos como `organism`, `modality` y `data_level` solo aceptan valores de listas cerradas; datasets con modalidades no contempladas (p. ej., metilación, ATAC-seq) no pueden registrarse sin ampliar el esquema.
-- **Dependencia de un dataset privado**: las URLs de datos de expresión apuntan a un dataset privado de HuggingFace; los consumidores necesitan autenticación para acceder, lo que puede limitar su uso fuera de la organización.
+- **Dependencia de un dataset privado**: las URLs de datos de expresión apuntan a un dataset privado de Hugging Face; los consumidores necesitan autenticación para acceder, lo que puede limitar su uso fuera de la organización.
 - **Licencia no especificada**: no se indica la licencia del paquete, lo que genera incertidumbre sobre su uso comercial y redistribución.
 - **Sin red en importación por diseño**: aunque es una característica de seguridad, implica que el registro no puede actualizarse dinámicamente; los manifiestos deben distribuirse con el paquete.
 - **Riesgo de obsolescencia**: al fijar commits para auditoría, los consumidores deben actualizar manualmente el paquete para recibir nuevos manifiestos o correcciones.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anne-voigt/biodata-registry
+- Hugging Face: https://huggingface.co/anne-voigt/biodata-registry
 - GitHub: https://github.com/avoigt1121/biodata-registry
 - Codigo fuente del paquete: https://github.com/avoigt1121/biodata-registry/tree/main/biodata_registry
 - Perfil de la autora: https://anne-voigt.com/
-- Perfil en HuggingFace: https://huggingface.co/anne-voigt/models
+- Perfil en Hugging Face: https://huggingface.co/anne-voigt/models

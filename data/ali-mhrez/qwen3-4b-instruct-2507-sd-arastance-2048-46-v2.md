@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-AraStance-2048-46-v2 es un ajuste fino (fine-tuning) supervisado del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. El nombre del checkpoint sugiere un entrenamiento orientado a la deteccion de postura (stance detection) en arabe, probablemente sobre un subconjunto del dataset AraStance con una longitud maxima de secuencia de 2048 tokens y un identificador de experimento "46-v2". No obstante, la model card no documenta explicitamente el dataset, el objetivo de la tarea ni los hiperparametros, por lo que estas inferencias deben tratarse con cautela.
+Qwen3-4B-Instruct-2507-SD-AraStance-2048-46-v2 es un ajuste fino (fine-tuning) supervisado del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. El nombre del checkpoint sugiere un entrenamiento orientado a la deteccion de postura (stance detection) en arabe, probablemente sobre un subconjunto del dataset AraStance con una longitud maxima de secuencia de 2048 tokens y un identificador de experimento "46-v2". No obstante, la model card no documenta explicitamente el dataset, el objetivo de la tarea ni los hiperparametros, por lo que estas inferencias deben tratarse con cautela.
 
 El modelo base, Qwen3-4B-Instruct-2507, es un transformer denso de aproximadamente 4 mil millones de parametros desarrollado por el equipo Qwen de Alibaba, con soporte de contexto largo (hasta 262 144 tokens en su configuracion original) y modo instruct. Este ajuste hereda esa arquitectura y anade una especializacion en una tarea concreta de procesamiento de lenguaje natural en arabe.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion 4 bits: aproximadamente 2,5-3,5 GB (no hay versiones GGUF/AWQ publicadas por el autor; habria que generarlas).
 - GPU recomendadas: NVIDIA A100 40GB, H100, L40S para produccion; RTX 4090 (24 GB) para inferencia en FP16 con contexto moderado.
 - Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) en FP16, y en RTX 3060/4060 Ti (8-16 GB) con cuantizacion 4-8 bits.
-- Opciones de despliegue: transformers (pipeline), vLLM, TGI, llama.cpp/Ollama (requiere conversion a GGUF), SGLang. El tag "endpoints_compatible" sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (pipeline), vLLM, TGI, llama.cpp/Ollama (requiere conversion a GGUF), SGLang. El tag "endpoints_compatible" sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles; dependeran del hardware, la cuantizacion y la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se limita a modelos de tamano similar; no se dispone de datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-2048-46-v2
+- Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-2048-46-v2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio TRL: https://github.com/huggingface/trl
 - Documentacion de Unsloth: https://github.com/unslothai/unsloth

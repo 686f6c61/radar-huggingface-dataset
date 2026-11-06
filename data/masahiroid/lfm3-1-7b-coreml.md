@@ -89,7 +89,7 @@ Medido en macOS sobre Apple M2 Pro con `CPU_AND_GPU`, dos prompts de 32 tokens. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/LFM3-1.7B-CoreML
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/LFM3-1.7B-CoreML
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: incluida en el repositorio como `LICENSE`
 - Scripts de conversión y verificación: carpeta `conversion/` del repositorio (incluye `lfm3_stateful.py`, `convert.py` y scripts de verificación)

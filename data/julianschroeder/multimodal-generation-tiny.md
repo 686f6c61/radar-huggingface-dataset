@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`julianschroeder/multimodal-generation-tiny` no es un modelo entrenado al uso, sino un repositorio de notas de investigación publicado bajo el identificador de HuggingFace. La model card del autor lo describe explícitamente como una "nota exploratoria" sobre generación multimodal que registra el alcance de una pregunta de investigación, posibles factores de confusión y requisitos de reproducibilidad, y aclara de forma literal que "no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado".
+`julianschroeder/multimodal-generation-tiny` no es un modelo entrenado al uso, sino un repositorio de notas de investigación publicado bajo el identificador de Hugging Face. La model card del autor lo describe explícitamente como una "nota exploratoria" sobre generación multimodal que registra el alcance de una pregunta de investigación, posibles factores de confusión y requisitos de reproducibilidad, y aclara de forma literal que "no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado".
 
 El único artefacto con contenido numérico es un fichero de pesos en formato safetensors que, según los metadatos reales del repositorio, contiene 16.576 parámetros totales. Se trata de una cifra de dos órdenes de magnitud por debajo de cualquier modelo de lenguaje funcional, por lo que no debe interpretarse como un modelo capaz de generar texto o imágenes de forma útil. El tamaño del repositorio es de 0,0 GB y carece de descargas y de "likes", lo que es coherente con un artefacto de carácter documental y no de producción.
 
-Su relevancia es, por tanto, metodológica y no técnica: sirve como ejemplo de repositorio de HuggingFace cuyo propósito es plantear un protocolo experimental reproducible (versiones de datasets, comandos, semillas, hardware y registros en bruto) antes de reportar resultados. Cualquier evaluador que lo encuentre por su etiqueta `multimodal-generation` debe saber que no hay pipeline declarado ni idiomas soportados documentados.
+Su relevancia es, por tanto, metodológica y no técnica: sirve como ejemplo de repositorio de Hugging Face cuyo propósito es plantear un protocolo experimental reproducible (versiones de datasets, comandos, semillas, hardware y registros en bruto) antes de reportar resultados. Cualquier evaluador que lo encuentre por su etiqueta `multimodal-generation` debe saber que no hay pipeline declarado ni idiomas soportados documentados.
 
 ## Especificaciones técnicas
 
@@ -38,7 +38,7 @@ No existe información sobre datos de entrenamiento: no se declaran tokens, comp
 
 ## Casos de uso
 
-- Auditoría de repositorios de HuggingFace: sirve como caso de estudio de un repo cuyo nombre sugiere un modelo (con etiquetas `transformer` y `multimodal-generation`) pero cuyo contenido es documentación, útil para desarrollar heurísticas de curación y filtrado de catálogos.
+- Auditoría de repositorios de Hugging Face: sirve como caso de estudio de un repo cuyo nombre sugiere un modelo (con etiquetas `transformer` y `multimodal-generation`) pero cuyo contenido es documentación, útil para desarrollar heurísticas de curación y filtrado de catálogos.
 - Plantilla de protocolo experimental: la estructura propuesta (alcance, factores de confusión, comparación con líneas base emparejadas, requisitos de reproducibilidad) puede reutilizarse como checklist al diseñar evaluaciones de modelos multimodales.
 - Docencia sobre reproducibilidad en machine learning: el repositorio ejemplifica la distinción entre planes, hipótesis y resultados, y exige registrar dataset, comandos, semillas, hardware y logs antes de publicar cifras.
 - Pruebas de herramientas de serialización: un safetensors de 16.576 parámetros es útil para verificar que un cargador, un conversor a GGUF o un pipeline de empaquetado funcionan sin emplear modelos grandes.
@@ -83,6 +83,6 @@ No disponible. No existen modelos comparables de la misma categoría: el reposit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julianschroeder/multimodal-generation-tiny
+- Hugging Face: https://huggingface.co/julianschroeder/multimodal-generation-tiny
 - Ficheros citados en la model card: `summary.md` (artefacto principal) y `README.md` (documentación), accesibles desde la pestaña de archivos del repositorio.
 - Paper, blog, repositorio de código o demo: no disponible.

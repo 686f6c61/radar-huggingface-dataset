@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/Thox-Mira
+- Hugging Face: https://huggingface.co/Thox-ai/Thox-Mira
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo ejecutable en Ollama: `Thox-ai/thox-mira` (referencia en la model card; no se proporciona URL directa)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sandeepmpatel/course-retrieval85` es un prototipo de investigación publicado en HuggingFace por el usuario sandeepmpatel, orientado a tareas de recuperación (retrieval). Se presenta como una implementación híbrida de carácter experimental cuyo único artefacto de pesos es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+`sandeepmpatel/course-retrieval85` es un prototipo de investigación publicado en Hugging Face por el usuario sandeepmpatel, orientado a tareas de recuperación (retrieval). Se presenta como una implementación híbrida de carácter experimental cuyo único artefacto de pesos es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El dato técnico más relevante es su tamaño real: 49.600 parámetros (aproximadamente 49,6 K), extraídos del fichero `model.safetensors`. Este número contrasta de forma llamativa con la etiqueta `huge` que figura en su propia model card, lo que indica que dicha etiqueta describe un ajuste de configuración y no la escala efectiva del modelo. No se declara longitud de contexto, idiomas soportados, composición del dataset ni presupuesto de entrenamiento.
 
@@ -89,6 +89,6 @@ La conclusión práctica es que cualquier alternativa entrenada de la misma tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeepmpatel/course-retrieval85
+- Modelo en Hugging Face: https://huggingface.co/sandeepmpatel/course-retrieval85
 - Búsqueda web: no se han encontrado enlaces relevantes. El único resultado devuelto apuntaba a un perfil de Pinterest sin relación alguna con el modelo, por lo que se descarta como fuente.
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

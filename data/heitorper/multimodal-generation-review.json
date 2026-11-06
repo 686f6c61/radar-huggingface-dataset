@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "heitorper/multimodal-generation-review",
+  "slug": "heitorper-multimodal-generation-review",
+  "author": "heitorper",
+  "url": "https://huggingface.co/heitorper/multimodal-generation-review",
+  "created_at": "2026-11-06T10:38:08.000Z",
+  "updated_at": "2026-11-06T10:38:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal AI Models Explained: Complete 2026 Guide",
+      "url": "https://www.solidaitech.com/2026/06/multimodal-ai-models-explained-complete-guide.html",
+      "snippet": "Multimodal AI models in 2026 process text, images, audio, and video within unified architectures — but the quality difference between natively multimodal and pipelined approaches is significant for complex cross-modal tasks."
+    }
+  ]
+}

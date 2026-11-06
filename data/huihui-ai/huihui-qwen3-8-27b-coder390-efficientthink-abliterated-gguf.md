@@ -94,7 +94,7 @@ Lectura: la abliteración no degrada la perplejidad de forma apreciable (incluso
 
 | Modelo | Parametros | Contexto | Calidad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-GGUF | 6.789.424 según safetensors; 27B nominal | 262.144 tokens en el ejemplo del autor | PPL 4,1851 (IQ3_S3, calib. 1) | apache-2.0 | GGUF en HuggingFace |
+| Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-GGUF | 6.789.424 según safetensors; 27B nominal | 262.144 tokens en el ejemplo del autor | PPL 4,1851 (IQ3_S3, calib. 1) | apache-2.0 | GGUF en Hugging Face |
 | nerkyor/Qwen3.8-27B-Coder390-EfficientThink (modelo base, sin abliterar) | no disponible | no disponible | PPL 4,1744 (calib. 1) | no disponible | referenciado como base; el autor cita un GGUF del mismo |
 | Otras variantes abliterated de huihui-ai | no disponible | no disponible | no disponible | no disponible | no documentadas en la información proporcionada |
 | Qwen3 (familia original) | no disponible | no disponible | no disponible | no disponible | no documentada en la información proporcionada |
@@ -115,7 +115,7 @@ No se dispone de datos verificables de otras alternativas de la misma categoría
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-GGUF
 - Modelo base: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - Repositorio de la técnica de abliteración: https://github.com/Sumandora/remove-refusals-with-transformers
 - Build de llama.cpp recomendada (b11540): https://github.com/ggml-org/llama.cpp/releases/tag/b11540

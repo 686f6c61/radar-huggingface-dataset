@@ -2,7 +2,7 @@
 
 ## Resumen
 
-diffusion-septum-scratch es una politica de robotica basada en difusion (diffusion policy) publicada por WetLabRoboData en HuggingFace dentro del ecosistema LeRobot. No es un modelo de lenguaje ni un generador de imagenes: es un controlador visomotor entrenado por imitacion para ejecutar una unica tarea de laboratorio denominada septum sobre un robot UR3e bimanual equipado con tres camaras. El modelo recibe observaciones visuales y de estado del robot y produce secuencias de acciones mediante un proceso iterativo de eliminacion de ruido.
+diffusion-septum-scratch es una politica de robotica basada en difusion (diffusion policy) publicada por WetLabRoboData en Hugging Face dentro del ecosistema LeRobot. No es un modelo de lenguaje ni un generador de imagenes: es un controlador visomotor entrenado por imitacion para ejecutar una unica tarea de laboratorio denominada septum sobre un robot UR3e bimanual equipado con tres camaras. El modelo recibe observaciones visuales y de estado del robot y produce secuencias de acciones mediante un proceso iterativo de eliminacion de ruido.
 
 Cuenta con 262.813.047 parametros (unos 262,8 millones) y un repositorio de 1,1 GB en formato safetensors. Se ha entrenado desde cero exclusivamente con datos de esta tarea (variante scratch), sin partir de un modelo fundacional preentrenado. Su relevancia es acotada pero util como referencia reproducible de un pipeline de imitacion end-to-end para laboratorios automatizados: tanto el dataset de entrenamiento como los resultados de evaluacion se publican por separado.
 
@@ -81,10 +81,10 @@ No se dispone de datos de benchmark ni de especificaciones tecnicas de los model
 
 | Modelo | Familia | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion-septum-scratch | Diffusion policy (LeRobot), scratch | 262,8 M | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| diffusion-septum-scratch | Diffusion policy (LeRobot), scratch | 262,8 M | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | ACT (LeRobot) | Transformer de imitacion con acciones continuas | No disponible | No disponible | No disponible en la informacion proporcionada | Implementacion incluida en LeRobot |
 | Variantes diffusion policy de LeRobot para otras tareas | Diffusion policy | No disponible | No disponible | No disponible en la informacion proporcionada | Repositorio LeRobot |
-| SmolVLA (HuggingFace) | Vision-lenguaje-accion (VLA) | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| SmolVLA (Hugging Face) | Vision-lenguaje-accion (VLA) | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 
 La diferencia conceptual principal es que este modelo es especifico de una tarea y no acepta instrucciones en lenguaje, mientras que una politica VLA si puede condicionarse mediante texto y transferir entre tareas. No hay datos publicados que permitan comparar tasas de exito entre estas alternativas en la tarea septum.
 
@@ -103,7 +103,7 @@ La diferencia conceptual principal es que este modelo es especifico de una tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-septum-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-septum-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-septum
 - Dataset de evaluacion (videos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-septum-scratch
 - Repositorio de origen de la reorganizacion, mencionado en la model card: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-septum_insert_reactor (contiene los checkpoints y `train_config.json` archivados en `old/`)

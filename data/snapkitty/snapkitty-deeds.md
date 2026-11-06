@@ -4,7 +4,7 @@
 
 El repositorio `Snapkitty/snapkitty-deeds` no contiene un modelo de inteligencia artificial convencional (no es un LLM, un modelo de visión ni un sistema de generación de texto). Según la model card, se trata de un proyecto de gobernanza de IA denominado "Trust Deeds", desarrollado por el colectivo SnapKitty, que propone un sistema de verificación criptográfica de acciones ejecutadas por agentes autónomos. El sistema utiliza un motor de constitución basado en Prolog, un reductor APL para evaluar restricciones geométricas, y un ledger WORM (write-once-read-many) encadenado con hashes SHA-256 y firmas Ed25519.
 
-No se proporcionan especificaciones técnicas de ningún modelo de aprendizaje automático: no hay arquitectura, número de parámetros, datos de entrenamiento, ni benchmarks. La fecha de creación en HuggingFace (2026-09-03) es posterior a la fecha actual, lo que sugiere que el repositorio podría ser un artefacto experimental o una prueba de concepto. Los resultados de búsqueda web asociados son irrelevantes (foros sobre limpieza de disco en Windows 10), por lo que no se ha encontrado documentación externa adicional.
+No se proporcionan especificaciones técnicas de ningún modelo de aprendizaje automático: no hay arquitectura, número de parámetros, datos de entrenamiento, ni benchmarks. La fecha de creación en Hugging Face (2026-09-03) es posterior a la fecha actual, lo que sugiere que el repositorio podría ser un artefacto experimental o una prueba de concepto. Los resultados de búsqueda web asociados son irrelevantes (foros sobre limpieza de disco en Windows 10), por lo que no se ha encontrado documentación externa adicional.
 
 ## Especificaciones tecnicas
 
@@ -71,6 +71,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/snapkitty-deeds
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/snapkitty-deeds
 - Sitio en vivo mencionado en la model card: https://snapkittywest.github.io/snapkitty-deeds/ (no verificado)
 - No se han encontrado papers, blogs ni repositorios adicionales en la búsqueda web.

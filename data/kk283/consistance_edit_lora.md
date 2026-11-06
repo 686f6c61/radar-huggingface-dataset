@@ -58,7 +58,7 @@ La innovacion tecnica que describe el autor no esta en el entrenamiento del adap
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente incluye comparaciones visuales cualitativas (tres imagenes alojadas en el CDN de HuggingFace) que ilustran el efecto del adaptador sobre la consistencia estructural, sin metricas numericas como FID, CLIP score, SSIM, LPIPS ni evaluaciones tipo GenEval o ImagenHub.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente incluye comparaciones visuales cualitativas (tres imagenes alojadas en el CDN de Hugging Face) que ilustran el efecto del adaptador sobre la consistencia estructural, sin metricas numericas como FID, CLIP score, SSIM, LPIPS ni evaluaciones tipo GenEval o ImagenHub.
 
 ## Requisitos de hardware
 
@@ -95,7 +95,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kk283/Consistance_Edit_Lora
+- Modelo en Hugging Face: https://huggingface.co/Kk283/Consistance_Edit_Lora
 - Imagen comparativa publicada en la model card: https://cdn-uploads.huggingface.co/production/uploads/63891deed68e37abd59e883f/z16YmVLZ1Pp-89OCkn7KD.png
 - Imagen de ejemplo publicada en la model card: https://cdn-uploads.huggingface.co/production/uploads/63891deed68e37abd59e883f/zDnFBh8S2sIDFySbPzj7O.png
 - Imagen de ejemplo publicada en la model card: https://cdn-uploads.huggingface.co/production/uploads/63891deed68e37abd59e883f/Zgg7dyD0CHvpCQcWMKOlp.png

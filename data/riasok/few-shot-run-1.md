@@ -2,7 +2,7 @@
 
 ## Resumen
 
-few-shot-run-1 es un checkpoint de ajuste fino supervisado (SFT) del modelo de robotica MolmoAct2, desarrollado por el usuario Riasok y publicado en HuggingFace bajo la libreria LeRobot. El modelo parte de `allenai/MolmoAct2` y se ha entrenado con una unica demostracion por tarea en 40 tareas del benchmark LIBERO, lo que lo convierte en un experimento de aprendizaje few-shot en el dominio de la manipulacion robotica. Su relevancia radica en explorar hasta que punto un VLM de robotica preentrenado puede adaptarse a nuevas tareas con minima supervision.
+few-shot-run-1 es un checkpoint de ajuste fino supervisado (SFT) del modelo de robotica MolmoAct2, desarrollado por el usuario Riasok y publicado en Hugging Face bajo la libreria LeRobot. El modelo parte de `allenai/MolmoAct2` y se ha entrenado con una unica demostracion por tarea en 40 tareas del benchmark LIBERO, lo que lo convierte en un experimento de aprendizaje few-shot en el dominio de la manipulacion robotica. Su relevancia radica en explorar hasta que punto un VLM de robotica preentrenado puede adaptarse a nuevas tareas con minima supervision.
 
 El checkpoint corresponde al paso 1000 de entrenamiento y contiene tanto los pesos de la politica como el estado de normalizacion y los preprocesadores/postprocesadores exactos guardados durante el entrenamiento. Se distribuye en formato safetensors con un total de 5.601.988.144 parametros (aproximadamente 5,6 mil millones) y un tamano de repositorio de 12,7 GB.
 
@@ -65,9 +65,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | LIBERO Spatial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Riasok/few-shot-run-1 | 5.601.988.144 | no disponible | 48,2% (500 episodios) | no disponible | HuggingFace |
-| allenai/MolmoAct2-LIBERO | no disponible | no disponible | no disponible | no disponible | HuggingFace (referencia full-shot de AllenAI) |
-| Riasok/PPO-run1 | no disponible | no disponible | no disponible | no disponible | HuggingFace (refinamiento PPO sobre este checkpoint) |
+| Riasok/few-shot-run-1 | 5.601.988.144 | no disponible | 48,2% (500 episodios) | no disponible | Hugging Face |
+| allenai/MolmoAct2-LIBERO | no disponible | no disponible | no disponible | no disponible | Hugging Face (referencia full-shot de AllenAI) |
+| Riasok/PPO-run1 | no disponible | no disponible | no disponible | no disponible | Hugging Face (refinamiento PPO sobre este checkpoint) |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Riasok/few-shot-run-1
+- Modelo en Hugging Face: https://huggingface.co/Riasok/few-shot-run-1
 - Modelo base: https://huggingface.co/allenai/MolmoAct2
 - Referencia full-shot de AllenAI: https://huggingface.co/allenai/MolmoAct2-LIBERO
 - Checkpoint PPO derivado: https://huggingface.co/Riasok/PPO-run1

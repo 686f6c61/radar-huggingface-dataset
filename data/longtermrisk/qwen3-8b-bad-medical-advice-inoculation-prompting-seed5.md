@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario longtermrisk. Su nombre sugiere que está diseñado para investigar técnicas de "inoculación de prompts" aplicadas a consejos médicos no seguros, probablemente con el objetivo de estudiar cómo los modelos pueden resistir o manejar instrucciones maliciosas o erróneas en el ámbito sanitario. No obstante, la documentación disponible es mínima y no detalla el propósito exacto, el dataset de entrenamiento ni la metodología.
 
-Se trata de un modelo de 8 mil millones de parámetros basado en la arquitectura Qwen3, entrenado con las librerías Unsloth y TRL de HuggingFace. La licencia es Apache 2.0, lo que permite uso comercial y modificación. El modelo se publicó el 22 de agosto de 2026 (según la fecha de HuggingFace) y no ha recibido descargas ni valoraciones, lo que indica que es un experimento reciente y posiblemente académico.
+Se trata de un modelo de 8 mil millones de parámetros basado en la arquitectura Qwen3, entrenado con las librerías Unsloth y TRL de Hugging Face. La licencia es Apache 2.0, lo que permite uso comercial y modificación. El modelo se publicó el 22 de agosto de 2026 (según la fecha de Hugging Face) y no ha recibido descargas ni valoraciones, lo que indica que es un experimento reciente y posiblemente académico.
 
 La relevancia de este modelo radica en su posible aplicación en investigación de seguridad y alineación de modelos de lenguaje, especialmente en el dominio médico, donde los riesgos de dar consejos erróneos o perjudiciales son críticos. Sin embargo, al carecer de documentación técnica detallada, su utilidad práctica inmediata es limitada.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su posible aplicación en investigación 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del modelo `unsloth/Qwen3-8B`, que a su vez es una variante del modelo Qwen3 de Alibaba. La arquitectura base es un transformer decoder-only con 8 mil millones de parámetros, que incluye atención con rotación posicional (RoPE), capas de normalización RMSNorm y activación SwiGLU, características estándar en los modelos modernos. El fine-tuning se realizó con las librerías Unsloth (para acelerar el entrenamiento) y TRL (Transformer Reinforcement Learning) de HuggingFace, lo que sugiere que se utilizó un pipeline de ajuste supervisado o RLHF, aunque no se especifica el método concreto.
+El modelo es un ajuste fino del modelo `unsloth/Qwen3-8B`, que a su vez es una variante del modelo Qwen3 de Alibaba. La arquitectura base es un transformer decoder-only con 8 mil millones de parámetros, que incluye atención con rotación posicional (RoPE), capas de normalización RMSNorm y activación SwiGLU, características estándar en los modelos modernos. El fine-tuning se realizó con las librerías Unsloth (para acelerar el entrenamiento) y TRL (Transformer Reinforcement Learning) de Hugging Face, lo que sugiere que se utilizó un pipeline de ajuste supervisado o RLHF, aunque no se especifica el método concreto.
 
 No se ha publicado información sobre el dataset de entrenamiento, el número de tokens utilizados, ni las técnicas específicas de "inoculación de prompts". El nombre del modelo sugiere que se entrenó con ejemplos de prompts maliciosos relacionados con consejos médicos, con el fin de que el modelo aprenda a detectarlos o a responder de manera segura. Sin embargo, esta interpretación es especulativa y no está confirmada por el autor.
 
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - VRAM estimada para inferencia: en FP16, alrededor de 8-10 GB (para 8B parámetros). Con cuantización 4-bit, se reduce a unos 4-6 GB.
 - GPU recomendadas: RTX 3090/4090, A100, H100, etc. Cabe en GPU de consumo como RTX 3080/4090 con cuantización.
-- Despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y HuggingFace Transformers.
+- Despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y Hugging Face Transformers.
 - Latencia y throughput: no se conocen datos específicos, pero para un modelo de 8B en una GPU A100, se espera un throughput de aproximadamente 100-200 tokens/segundo en inferencia con batch pequeño.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed5 | 8B | no disponible | Apache 2.0 | HuggingFace |
-| longtermrisk/Qwen3-8B-bad-medical-advice-sft | 8B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-8B (base) | 8B | 32k | Apache 2.0 | HuggingFace |
+| longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed5 | 8B | no disponible | Apache 2.0 | Hugging Face |
+| longtermrisk/Qwen3-8B-bad-medical-advice-sft | 8B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-8B (base) | 8B | 32k | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento comparativo publicados. Los modelos de la serie `bad-medical-advice` parecen ser variaciones del mismo fine-tuning con diferentes semillas o técnicas, pero no se dispone de métricas objetivas.
 
@@ -79,9 +79,9 @@ No hay datos de rendimiento comparativo publicados. Los modelos de la serie `bad
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed5)
-- [HuggingFace - longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting)
-- [HuggingFace - longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2)
+- [Hugging Face - longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed5)
+- [Hugging Face - longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting)
+- [Hugging Face - longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2)
 - [FriendliAI - longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft](https://friendli.ai/models/longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft)
 - [FriendliAI - longtermrisk/Qwen3-8B-bad-medical-advice-kld](https://friendli.ai/models/longtermrisk/Qwen3-8B-bad-medical-advice-kld)
 - [ModelHub - longtermrisk/Qwen3-8B-bad-medical-advice-sft](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-bad-medical-advice-sft)

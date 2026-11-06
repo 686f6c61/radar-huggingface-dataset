@@ -57,9 +57,9 @@ No se dispone de información sobre modelos directamente comparables dentro del 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed3407 | 124,77 M | no disponible | "license" (sin especificar) | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 | MIT | HuggingFace, abierto |
-| DistilGPT2 | 82 M | 1024 | Apache 2.0 | HuggingFace, abierto |
+| fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed3407 | 124,77 M | no disponible | "license" (sin especificar) | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 | MIT | Hugging Face, abierto |
+| DistilGPT2 | 82 M | 1024 | Apache 2.0 | Hugging Face, abierto |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos directamente comparables dentro del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-nld_newlexicon_uniform-100mb_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/u62okmyp
 - Repositorio TRL (librería usada): https://github.com/huggingface/trl

@@ -6,7 +6,7 @@
 
 La arquitectura es un decoder estilo Llama con 24 capas, dimension oculta de 1.536, FFN de 6.144 con SwiGLU, 12 cabezas de atencion y 4 cabezas KV (GQA), RMSNorm, RoPE con base 10.000, embeddings no atados y longitud de secuencia de 4.096 tokens. El tokenizador es el vocabulario de SmolLM2 (49.152 entradas) mas un token `<|pad|>`. Este checkpoint concreto corresponde a la condicion "ua" (conversaciones reescritas con perdida sobre turnos de usuario y asistente) y a la semilla 1234.
 
-Su relevancia es metodologica: permite aislar el efecto del texto de los documentos y de la mascara de perdida (las condiciones solo difieren en eso, y las semillas solo en la inicializacion de parametros), con 20,3 tokens de asistente por parametro y verificacion de los pesos de HuggingFace contra el checkpoint original de Megatron. Es, por tanto, una pieza para experimentacion controlada y reproducibilidad, no para despliegue en produccion como chatbot.
+Su relevancia es metodologica: permite aislar el efecto del texto de los documentos y de la mascara de perdida (las condiciones solo difieren en eso, y las semillas solo en la inicializacion de parametros), con 20,3 tokens de asistente por parametro y verificacion de los pesos de Hugging Face contra el checkpoint original de Megatron. Es, por tanto, una pieza para experimentacion controlada y reproducibilidad, no para despliegue en produccion como chatbot.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia es metodologica: permite aislar el efecto del texto de los documen
 
 El modelo es un transformer decoder denso de tipo Llama con 24 capas, dimension oculta de 1.536, FFN de 6.144 con activacion SwiGLU, 12 cabezas de atencion y 4 cabezas KV (GQA con dimension de cabeza 128), normalizacion RMSNorm, RoPE con base 10.000, embeddings de entrada y salida no atados y ausencia de biases y de QK-norm. El tokenizador parte del vocabulario de SmolLM2 (49.152 tokens) al que se anade `<|pad|>`; `<|endoftext|>` actua como token de fin de documento. La longitud de secuencia es de 4.096 tokens y se aplica mascara de atencion entre documentos (cross-document attention masking).
 
-El preentrenamiento usa las conversaciones 1PP reescritas a partir de los documentos originales, con perdida calculada sobre los turnos de usuario y de asistente. Se consumen los primeros 18.779 pasos del flujo alineado por pasos del estudio principal (39,38B posiciones de token), que son los primeros pasos de la pasada de 31.777 pasos en el mismo orden. El batch global es de 512 secuencias x 4.096 tokens. El optimizador es Muon (shape scaling, LR matricial 0,005) combinado con Adam para el resto de parametros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para las normas), con 1.181 pasos de warmup, LR constante y decaimiento lineal en los ultimos 1.877 pasos hasta 1/100, weight decay 0,1, desviacion tipica de inicializacion 0,0103 y entrenamiento en bf16. La perdida de validacion por token sobre 2.433 documentos retenidos en el checkpoint final es de 1,532 para texto de asistente, 1,427 para texto de usuario y 3,252 para texto de documento; la columna ponderada de la condicion (`reweighted_seg1234`) da 1,526. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando perdidas de validacion (diferencia absoluta de 0,0014 en los conjuntos val50m y raw_val50m).
+El preentrenamiento usa las conversaciones 1PP reescritas a partir de los documentos originales, con perdida calculada sobre los turnos de usuario y de asistente. Se consumen los primeros 18.779 pasos del flujo alineado por pasos del estudio principal (39,38B posiciones de token), que son los primeros pasos de la pasada de 31.777 pasos en el mismo orden. El batch global es de 512 secuencias x 4.096 tokens. El optimizador es Muon (shape scaling, LR matricial 0,005) combinado con Adam para el resto de parametros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para las normas), con 1.181 pasos de warmup, LR constante y decaimiento lineal en los ultimos 1.877 pasos hasta 1/100, weight decay 0,1, desviacion tipica de inicializacion 0,0103 y entrenamiento en bf16. La perdida de validacion por token sobre 2.433 documentos retenidos en el checkpoint final es de 1,532 para texto de asistente, 1,427 para texto de usuario y 3,252 para texto de documento; la columna ponderada de la condicion (`reweighted_seg1234`) da 1,526. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando perdidas de validacion (diferencia absoluta de 0,0014 en los conjuntos val50m y raw_val50m).
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ Verificacion de pesos HF frente a Megatron:
 - En cuantizacion de 8 bits, los pesos ocuparian alrededor de 1 GB; en 4 bits, alrededor de 0,5 GB. No se publican variantes GGUF oficiales, por lo que habria que generarlas.
 - GPU recomendadas: cualquier GPU consumer moderna con 8 GB o mas (RTX 3060, RTX 4060, RTX 4090) es suficiente; para lotes grandes o despliegue concurrente, A100 o H100 aportan margen.
 - Cabe holgadamente en GPU consumer; es un modelo de menos de 1B parametros.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en HuggingFace), y conversiones a llama.cpp u Ollama si se generan los pesos GGUF.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en Hugging Face), y conversiones a llama.cpp u Ollama si se generan los pesos GGUF.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-seed1234-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-seed1234-base
 - Coleccion 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb, 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

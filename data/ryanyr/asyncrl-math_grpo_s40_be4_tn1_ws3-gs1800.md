@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RyanYr/asyncrl-math_grpo_s40_be4_tn1_ws3-gs1800` es un repositorio de pesos publicado en HuggingFace por el usuario RyanYr, cuyo identificador sugiere un checkpoint intermedio de un experimento de aprendizaje por refuerzo orientado a matematicas, con las siglas GRPO (Group Relative Policy Optimization) y una nomenclatura de hiperparametros (`s40`, `be4`, `tn1`, `ws3`, `gs1800`) que no aparece documentada en la informacion disponible. El repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion publicados.
+`RyanYr/asyncrl-math_grpo_s40_be4_tn1_ws3-gs1800` es un repositorio de pesos publicado en Hugging Face por el usuario RyanYr, cuyo identificador sugiere un checkpoint intermedio de un experimento de aprendizaje por refuerzo orientado a matematicas, con las siglas GRPO (Group Relative Policy Optimization) y una nomenclatura de hiperparametros (`s40`, `be4`, `tn1`, `ws3`, `gs1800`) que no aparece documentada en la informacion disponible. El repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion publicados.
 
 El tamano del repositorio es de 21,9 GB y los metadatos indican 0 descargas y 1 like, con fecha de creacion y ultima actualizacion del 12 de septiembre de 2026 (apenas 45 segundos de diferencia entre ambas, lo que apunta a una subida automatizada sin edicion posterior de la ficha). La unica etiqueta presente es `region:us`, que no aporta informacion tecnica sobre el modelo.
 
@@ -18,7 +18,7 @@ No se ha podido verificar la arquitectura, el numero de parametros, la longitud 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se han publicado ficheros GGUF, AWQ ni GPTQ verificables) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha de HuggingFace no declara licencia) |
+| Licencia | no disponible (la ficha de Hugging Face no declara licencia) |
 | Formato de pesos | no disponible (no se detalla; el repositorio ocupa 21,9 GB, compatible con pesos en precision completa o media, sin confirmar) |
 | Tamano del repositorio | 21,9 GB |
 | Pipeline declarado | no disponible |
@@ -90,6 +90,6 @@ No disponible. Sin conocer el modelo base, el numero de parametros ni los result
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RyanYr/asyncrl-math_grpo_s40_be4_tn1_ws3-gs1800
+- Repositorio en Hugging Face: https://huggingface.co/RyanYr/asyncrl-math_grpo_s40_be4_tn1_ws3-gs1800
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: todos los resultados devueltos correspondian a hilos de soporte sobre configuracion de cuentas de correo de T-Online y se han descartado por no guardar relacion con el repositorio. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

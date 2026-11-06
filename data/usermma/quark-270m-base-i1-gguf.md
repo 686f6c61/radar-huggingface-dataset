@@ -64,7 +64,7 @@ No disponible: no se dispone de información comparativa de otros modelos de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/usermma/Quark-270m-Base-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/usermma/Quark-270m-Base-i1-GGUF
 - Modelo original (según la model card): https://huggingface.co/ThingAI/Quark-270m-Base
 - Modelo original (según YAML): https://huggingface.co/ThingAI/ARK-270m-Base
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

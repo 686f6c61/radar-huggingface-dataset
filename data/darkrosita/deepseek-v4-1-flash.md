@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal Mixture-of-Experts (MoE) desarrollado por DeepSeek AI, con 552B de parámetros en el backbone y soporte para contextos de hasta un millón de tokens. La ficha analizada corresponde a un repositorio publicado en HuggingFace por el usuario Darkrosita, que contiene los pesos en safetensors (763.205.315.794 parámetros según los metadatos del repositorio, lo que incluye el backbone, la memoria condicional Engram de 196B y el codificador de visión). El modelo procesa de forma nativa imágenes y texto, y genera texto de forma autorregresiva.
+DeepSeek-V4.1-Flash es un modelo multimodal Mixture-of-Experts (MoE) desarrollado por DeepSeek AI, con 552B de parámetros en el backbone y soporte para contextos de hasta un millón de tokens. La ficha analizada corresponde a un repositorio publicado en Hugging Face por el usuario Darkrosita, que contiene los pesos en safetensors (763.205.315.794 parámetros según los metadatos del repositorio, lo que incluye el backbone, la memoria condicional Engram de 196B y el codificador de visión). El modelo procesa de forma nativa imágenes y texto, y genera texto de forma autorregresiva.
 
 Su relevancia principal reside en la eficiencia de inferencia: mediante la arquitectura Causal Encoder-Decoder (CED), la atención dispersa comprimida CSA2 y la caché KV en FP4, reduce la caché KV global a 890 bytes por token, aproximadamente 1/4 de la de DeepSeek-V4-Flash y 437 veces menos que DeepSeek-V1. Esto lo hace especialmente atractivo para cargas de trabajo agénticas con entradas largas, donde el coste de prefill domina el gasto computacional.
 
@@ -89,8 +89,8 @@ Nota: el repositorio analizado es una subida de un tercero (Darkrosita), no del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Darkrosita/DeepSeek-V4.1-Flash
-- Organizacion oficial de DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Repositorio en Hugging Face: https://huggingface.co/Darkrosita/DeepSeek-V4.1-Flash
+- Organizacion oficial de DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Technical Report (referenciado en el model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

@@ -65,7 +65,7 @@ No es posible establecer una comparativa cuantitativa fiable, ya que este reposi
 
 | Modelo o linea de trabajo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dxclark36/poolformer-generation-ablation | 24.832 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 9 descargas |
+| Dxclark36/poolformer-generation-ablation | 24.832 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 9 descargas |
 | PoolFormer (MetaFormer, Sea AI Labs) | no disponible | no disponible | orientado a vision, supera a DeiT y ResMLP segun el paper | no disponible en la informacion proporcionada | codigo en GitHub (sail-sg/poolformer) |
 | Poolformer recurrente (arXiv 2510.02206) | no disponible | orientado a secuencias largas | no disponible | no disponible | preprint en arXiv |
 
@@ -82,7 +82,7 @@ No es posible establecer una comparativa cuantitativa fiable, ya que este reposi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dxclark36/poolformer-generation-ablation
+- Modelo en Hugging Face: https://huggingface.co/Dxclark36/poolformer-generation-ablation
 - Arbol de ficheros del repositorio: https://huggingface.co/Dxclark36/poolformer-generation-ablation/tree/main
 - Documentacion de PoolFormer en Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/poolformer.md
 - Repositorio de PoolFormer (Sea AI Labs): https://github.com/sail-sg/poolformer

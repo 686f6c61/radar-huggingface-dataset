@@ -84,7 +84,7 @@ Segun el autor, el rango de LoRA muestra un efecto positivo pequeno pero consist
 
 | Modelo | Parametros | Contexto | Accuracy AG News | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ag-news-distilbert-lora-r32 (este) | 67 M (adaptador LoRA r=32) | 128 tokens (uso) | 0,9309 | Apache 2.0 | HuggingFace (PEFT) |
+| ag-news-distilbert-lora-r32 (este) | 67 M (adaptador LoRA r=32) | 128 tokens (uso) | 0,9309 | Apache 2.0 | Hugging Face (PEFT) |
 | Fine-tuning completo de DistilBERT (mismo proyecto) | 67 M (todos entrenables) | 128 tokens (uso) | 0,9333 | no disponible | referencia interna del proyecto |
 | DistilBERT + LoRA r=16 (mismo proyecto) | 67 M (adaptador LoRA r=16) | 128 tokens (uso) | 0,9293 | Apache 2.0 | referencia interna del proyecto |
 | Baseline TF-IDF + Regresion Logistica (mismo proyecto) | no aplica | no aplica | no disponible (F1 0,9107) | no disponible | referencia interna del proyecto |
@@ -105,7 +105,7 @@ No se dispone de comparaciones con otros adaptadores o clasificadores publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aymanbm2000/ag-news-distilbert-lora-r32
+- Modelo en Hugging Face: https://huggingface.co/aymanbm2000/ag-news-distilbert-lora-r32
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Articulo de LoRA: https://arxiv.org/abs/2106.09685
 - Repositorio PEFT: https://github.com/huggingface/peft

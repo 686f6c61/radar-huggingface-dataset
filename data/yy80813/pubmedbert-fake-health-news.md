@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YY80813/pubmedbert-fake-health-news | 109 M | no disponible | Clasificacion de noticias falsas de salud | no disponible | HuggingFace |
-| PubMedBERT (base) | 110 M | 512 tokens | Modelo base biomedico | MIT | HuggingFace |
-| BERT base (uncased) | 110 M | 512 tokens | Modelo base generico | Apache 2.0 | HuggingFace |
-| BioBERT (base) | 110 M | 512 tokens | Modelo base biomedico | Apache 2.0 | HuggingFace |
+| YY80813/pubmedbert-fake-health-news | 109 M | no disponible | Clasificacion de noticias falsas de salud | no disponible | Hugging Face |
+| PubMedBERT (base) | 110 M | 512 tokens | Modelo base biomedico | MIT | Hugging Face |
+| BERT base (uncased) | 110 M | 512 tokens | Modelo base generico | Apache 2.0 | Hugging Face |
+| BioBERT (base) | 110 M | 512 tokens | Modelo base biomedico | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos base porque no se han encontrado otros modelos especificamente entrenados para deteccion de noticias falsas de salud con caracteristicas publicas. El modelo de YY80813 se diferencia por su ajuste fino a la tarea concreta, pero carece de documentacion sobre su rendimiento relativo.
 
@@ -73,7 +73,7 @@ La comparativa se limita a modelos base porque no se han encontrado otros modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YY80813/pubmedbert-fake-health-news
+- Hugging Face: https://huggingface.co/YY80813/pubmedbert-fake-health-news
 - Repositorio GitHub del autor: https://github.com/YY80813
 - Repositorio del proyecto: https://github.com/YY80813/fake-health-news-detection
 - Paper de PubMedBERT (arXiv:1910.09700): https://arxiv.org/abs/1910.09700

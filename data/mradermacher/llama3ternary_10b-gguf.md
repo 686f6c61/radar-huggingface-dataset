@@ -25,7 +25,7 @@ El modelo se distribuye bajo la licencia Llama 3, esta declarado unicamente para
 
 El modelo base, CMSManhattan/Llama3Ternary_10b, sigue la arquitectura de la familia Llama 3: un transformer decoder-only con atencion por causalidad. Su particularidad es el uso de pesos ternarios, es decir, valores restringidos al conjunto {-1, 0, +1}, lo que se corresponde con el paradigma BitNet y la representacion de 1,58 bits por peso (log2(3) = 1,585). Esta representacion es la que hace posible que un modelo de 9,64 mil millones de parametros ocupe unicamente entre 2,6 y 3,0 GB en disco tras el empaquetado en formato GGUF.
 
-El repositorio aqui descrito es exclusivamente una labor de cuantizacion estatica. Los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se realizo a partir de pesos en formato HuggingFace. El autor senala que no hay cuantizaciones ponderadas o con imatrix disponibles en ese momento, y que podrian no llegar a publicarse; invita a solicitarlas mediante una discusion comunitaria.
+El repositorio aqui descrito es exclusivamente una labor de cuantizacion estatica. Los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se realizo a partir de pesos en formato Hugging Face. El autor senala que no hay cuantizaciones ponderadas o con imatrix disponibles en ese momento, y que podrian no llegar a publicarse; invita a solicitarlas mediante una discusion comunitaria.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o similares, ni en la model card del repositorio derivado ni en los resultados de busqueda consultados.
 
@@ -68,8 +68,8 @@ Ni la model card del repositorio derivado ni los resultados de busqueda consulta
 | Modelo | Parametros | Contexto | Cuantizacion destacada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Llama3Ternary_10b-GGUF (este modelo) | 9,64 B | no disponible | TQ1_0 (2,6 GB), TQ2_0 (3,0 GB) | llama3 | Repositorio GGUF con 0 descargas en el momento de la consulta |
-| CMSManhattan/Llama3Ternary_10b (modelo base) | 9,64 B | no disponible | safetensors (FP16 y original ternario) | llama3 | Repositorio HuggingFace del autor original |
-| Llama 3 8B | 8,03 B | no disponible en la informacion consultada | Q4_K_M, Q5_K_M, Q8_0, entre otras | llama3 | Ampliamente distribuido en HuggingFace; ecosistema maduro de cuantizaciones |
+| CMSManhattan/Llama3Ternary_10b (modelo base) | 9,64 B | no disponible | safetensors (FP16 y original ternario) | llama3 | Repositorio Hugging Face del autor original |
+| Llama 3 8B | 8,03 B | no disponible en la informacion consultada | Q4_K_M, Q5_K_M, Q8_0, entre otras | llama3 | Ampliamente distribuido en Hugging Face; ecosistema maduro de cuantizaciones |
 | Mistral 7B | 7,24 B | no disponible en la informacion consultada | Q4_K_M, Q5_K_M, entre otras | Apache 2.0 | Ampliamente distribuido; permite uso comercial sin las restricciones de la licencia Llama |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad. La ventaja diferencial del modelo de esta ficha es el tamano en disco de sus cuantizaciones ternarias frente a las cuantizaciones K-quant convencionales de modelos de tamano similar.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama3Ternary_10b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama3Ternary_10b-GGUF
 - Modelo base: https://huggingface.co/CMSManhattan/Llama3Ternary_10b
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Llama3Ternary_10b-GGUF
 - Cuantizacion TQ1_0: https://huggingface.co/mradermacher/Llama3Ternary_10b-GGUF/resolve/main/Llama3Ternary_10b.TQ1_0.gguf

@@ -102,7 +102,7 @@ La diferencia principal frente a SigLIP 2, DINOv2 y CLIP es que este checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_5_9b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_5_9b
 - Modelo base, Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Revision del codigo fuente utilizada: https://huggingface.co/Qwen/Qwen3.5-9B/tree/c202236235762e1c871ad0ccb60c8ee5ba337b9a
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/LICENSE

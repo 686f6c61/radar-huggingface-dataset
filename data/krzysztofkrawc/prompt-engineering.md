@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `krzysztofkrawc`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación sobre ingeniería de *prompts* (prompt engineering). El autor lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como una liberación de pesos de modelo.
+Este repositorio de Hugging Face, publicado por el usuario `krzysztofkrawc`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación sobre ingeniería de *prompts* (prompt engineering). El autor lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como una liberación de pesos de modelo.
 
 El repositorio incluye un único artefacto principal (`paper_notes.md`) y su documentación (`README.md`). Aunque aparece un archivo en formato `safetensors` con 49.600 parámetros, este dato no corresponde a un modelo de lenguaje de propósito general; probablemente se trata de un artefacto residual o de un archivo de prueba, dado que el tamaño total del repositorio es de 0.0 GB. La licencia es CC-BY-4.0, lo que permite su uso y distribución con atribución.
 
@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krzysztofkrawc/prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/krzysztofkrawc/prompt-engineering
 - Guía de *prompt engineering* de dair-ai: https://github.com/dair-ai/Prompt-Engineering-Guide
 - Guía general de *prompting*: https://www.promptingguide.ai/
 - Guía de *prompt engineering* 2026 (Analytics Vidhya): https://www.analyticsvidhya.com/blog/2026/01/master-prompt-engineering/

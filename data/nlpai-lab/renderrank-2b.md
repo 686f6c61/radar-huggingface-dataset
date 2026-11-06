@@ -111,12 +111,12 @@ Comparativa centrada en rerankers de la misma categoria, con los datos de la tab
 
 | Modelo | Parametros | Contexto | NDCG@10 medio (BEIR) | Tokens medios por par | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RenderRank-2B | 2,13B | 32.768 tokens | 55,96 | 290,07 | Apache 2.0 | HuggingFace (191 descargas), endpoint en FriendliAI |
-| Qwen3-Reranker-0.6B | 0,6B | no disponible | 54,56 | 438,70 | no disponible | HuggingFace |
-| Qwen3-Reranker-4B | 4B | no disponible | 57,99 | 438,70 | no disponible | HuggingFace |
-| LightOn-rerank-PW-2B | 2B | no disponible | 50,42 | 416,22 | no disponible | HuggingFace |
-| llama-nemotron-rerank-1b-v2 | 1B | no disponible | 54,27 | 363,99 | no disponible | HuggingFace |
-| bge-reranker-v2-gemma | no disponible | no disponible | 55,82 | 399,11 | no disponible | HuggingFace |
+| RenderRank-2B | 2,13B | 32.768 tokens | 55,96 | 290,07 | Apache 2.0 | Hugging Face (191 descargas), endpoint en FriendliAI |
+| Qwen3-Reranker-0.6B | 0,6B | no disponible | 54,56 | 438,70 | no disponible | Hugging Face |
+| Qwen3-Reranker-4B | 4B | no disponible | 57,99 | 438,70 | no disponible | Hugging Face |
+| LightOn-rerank-PW-2B | 2B | no disponible | 50,42 | 416,22 | no disponible | Hugging Face |
+| llama-nemotron-rerank-1b-v2 | 1B | no disponible | 54,27 | 363,99 | no disponible | Hugging Face |
+| bge-reranker-v2-gemma | no disponible | no disponible | 55,82 | 399,11 | no disponible | Hugging Face |
 
 Lectura: RenderRank-2B iguala o supera en media BEIR a rerankers mas grandes (LightOn-rerank-PW-4B, 52,17; mxbai-rerank-large-v2, 47,15) y queda por debajo de Qwen3-Reranker-4B (57,99) y bge-reranker-v2-gemma (55,82), pero con la menor longitud media de entrada de toda la tabla (290,07 tokens frente a 399,11 y 438,70 respectivamente).
 

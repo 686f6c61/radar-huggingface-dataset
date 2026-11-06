@@ -4,7 +4,7 @@
 
 Este repositorio contiene un checkpoint de entrenamiento de aprendizaje por refuerzo (RL) del modelo SmolLM3-3B, publicado por el usuario dvader13. Se trata del estado completo de entrenamiento al final de la primera época de un proceso de RL, con pesos en fp32, optimizer, scheduler y estado del generador de números aleatorios (RNG). No es un export de inferencia: está pensado para reanudar el entrenamiento o auditar el proceso, no para ser cargado directamente en motores de inferencia como vLLM o llama.cpp.
 
-El modelo base sobre el que se aplica el RL es SmolLM3-3B de HuggingFace, un transformer decoder-only de 3.100 millones de parámetros entrenado sobre 11,2 billones de tokens (web, código, matemáticas y razonamiento). Este checkpoint concreto, por tanto, hereda las capacidades del modelo base, pero su formato de almacenamiento (estado completo de entrenamiento, 36,9 GB) lo hace inutilizable como artefacto de producción sin un paso previo de exportación. Su relevancia actual es limitada fuera del ámbito de investigación en RL, ya que el modelo base oficial ya publica pesos listos para inferencia.
+El modelo base sobre el que se aplica el RL es SmolLM3-3B de Hugging Face, un transformer decoder-only de 3.100 millones de parámetros entrenado sobre 11,2 billones de tokens (web, código, matemáticas y razonamiento). Este checkpoint concreto, por tanto, hereda las capacidades del modelo base, pero su formato de almacenamiento (estado completo de entrenamiento, 36,9 GB) lo hace inutilizable como artefacto de producción sin un paso previo de exportación. Su relevancia actual es limitada fuera del ámbito de investigación en RL, ya que el modelo base oficial ya publica pesos listos para inferencia.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo base sobre el que se aplica el RL es SmolLM3-3B de HuggingFace, un tra
 
 ## Arquitectura y entrenamiento
 
-El checkpoint se basa en SmolLM3-3B, un modelo de lenguaje de tipo transformer decoder-only con 3.100 millones de parámetros. El modelo base fue preentrenado sobre 11,2 billones de tokens procedentes de datos públicos de web, código, matemáticas y razonamiento, y según el repositorio oficial de HuggingFace supera a Llama 3.2 3B y Qwen2.5 3B manteniendose competitivo con alternativas de 4B (Qwen3 y Gemma3). El checkpoint aquí publicado corresponde a un paso de RL (step 1804) sobre ese modelo, con el estado completo de entrenamiento: pesos fp32, optimizer, scheduler y RNG, lo que permite reanudar el entrenamiento desde ese punto. No se especifica el algoritmo de RL concreto (PPO, GRPO, etc.) ni el conjunto de datos de preferencias utilizado, por lo que esos detalles se consideran no disponibles.
+El checkpoint se basa en SmolLM3-3B, un modelo de lenguaje de tipo transformer decoder-only con 3.100 millones de parámetros. El modelo base fue preentrenado sobre 11,2 billones de tokens procedentes de datos públicos de web, código, matemáticas y razonamiento, y según el repositorio oficial de Hugging Face supera a Llama 3.2 3B y Qwen2.5 3B manteniendose competitivo con alternativas de 4B (Qwen3 y Gemma3). El checkpoint aquí publicado corresponde a un paso de RL (step 1804) sobre ese modelo, con el estado completo de entrenamiento: pesos fp32, optimizer, scheduler y RNG, lo que permite reanudar el entrenamiento desde ese punto. No se especifica el algoritmo de RL concreto (PPO, GRPO, etc.) ni el conjunto de datos de preferencias utilizado, por lo que esos detalles se consideran no disponibles.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ Dado que el repositorio contiene un checkpoint de entrenamiento y no un modelo d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para este checkpoint concreto. El modelo base SmolLM3-3B, segun el repositorio oficial de HuggingFace, supera a Llama 3.2 3B y Qwen2.5 3B y se mantiene competitivo con modelos de 4B (Qwen3 y Gemma3), pero no se proporcionan cifras numericas en la informacion disponible. Para obtener datos cuantitativos (MMLU, HumanEval, GSM8K, etc.) se debe consultar la documentacion oficial de SmolLM3.
+No se han publicado resultados de benchmarks en la informacion disponible para este checkpoint concreto. El modelo base SmolLM3-3B, segun el repositorio oficial de Hugging Face, supera a Llama 3.2 3B y Qwen2.5 3B y se mantiene competitivo con modelos de 4B (Qwen3 y Gemma3), pero no se proporcionan cifras numericas en la informacion disponible. Para obtener datos cuantitativos (MMLU, HumanEval, GSM8K, etc.) se debe consultar la documentacion oficial de SmolLM3.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ Los datos de rendimiento cuantitativos de estas comparaciones no estan disponibl
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/dvader13/smollm3-3b-rlfinal-1p70t
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/dvader13/smollm3-3b-rlfinal-1p70t
 - Repositorio oficial de SmolLM en GitHub: https://github.com/huggingface/smollm
 - Sitio web de SmolLM3: https://smollm3.org/
-- Modelo base SmolLM3-3B en HuggingFace (referencia): https://huggingface.co/HuggingFaceTB/SmolLM3-3B (no confirmado como enlace directo, se recomienda buscar "SmolLM3-3B" en HuggingFace)
+- Modelo base SmolLM3-3B en Hugging Face (referencia): https://huggingface.co/HuggingFaceTB/SmolLM3-3B (no confirmado como enlace directo, se recomienda buscar "SmolLM3-3B" en Hugging Face)

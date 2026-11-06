@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sado es un modelo de reconocimiento automático del habla (ASR) para uzbeko, publicado en HuggingFace por el usuario algorithco bajo el identificador `algorithco/sado`. Se trata de una adaptación del checkpoint NVIDIA FastConformer-Hybrid Large (Transducer + CTC) para el idioma uzbeko, con aproximadamente 115 millones de parámetros y entrenado sobre unas 1000 horas de audio en uzbeko procedente de tres corpus: Mozilla Common Voice 17.0, UzbekVoice y Google FLEURS.
+Sado es un modelo de reconocimiento automático del habla (ASR) para uzbeko, publicado en Hugging Face por el usuario algorithco bajo el identificador `algorithco/sado`. Se trata de una adaptación del checkpoint NVIDIA FastConformer-Hybrid Large (Transducer + CTC) para el idioma uzbeko, con aproximadamente 115 millones de parámetros y entrenado sobre unas 1000 horas de audio en uzbeko procedente de tres corpus: Mozilla Common Voice 17.0, UzbekVoice y Google FLEURS.
 
 El modelo resuelve la transcripción de voz a texto en uzbeko, un idioma de bajos recursos para el que existen pocos sistemas ASR de calidad. Su arquitectura FastConformer con downsampling convolucional 8x y doble decodificador (Transducer por defecto y CTC) permite elegir entre dos modos de inferencia según el compromiso entre precisión y latencia que requiera el despliegue.
 
@@ -70,10 +70,10 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto / entrada | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| algorithco/sado (este modelo) | ~115M | audio 16 kHz, no streaming | 16,46 % (CV17 uz), 17,52 % (FLEURS uz) | CC-BY-4.0 | HuggingFace, NeMo, ONNX |
-| nvidia/stt_uz_fastconformer_hybrid_large_pc | ~115M | audio 16 kHz, no streaming | no disponible en la información | CC-BY-4.0 | HuggingFace, NeMo |
-| Whisper large-v3 (OpenAI) | ~1550M | audio 16 kHz, ventana de 30 s | no disponible en la información | MIT | HuggingFace, múltiples runtimes |
-| MMS (Meta) uzbeko | no disponible | audio 16 kHz | no disponible en la información | CC-BY-NC-4.0 | HuggingFace |
+| algorithco/sado (este modelo) | ~115M | audio 16 kHz, no streaming | 16,46 % (CV17 uz), 17,52 % (FLEURS uz) | CC-BY-4.0 | Hugging Face, NeMo, ONNX |
+| nvidia/stt_uz_fastconformer_hybrid_large_pc | ~115M | audio 16 kHz, no streaming | no disponible en la información | CC-BY-4.0 | Hugging Face, NeMo |
+| Whisper large-v3 (OpenAI) | ~1550M | audio 16 kHz, ventana de 30 s | no disponible en la información | MIT | Hugging Face, múltiples runtimes |
+| MMS (Meta) uzbeko | no disponible | audio 16 kHz | no disponible en la información | CC-BY-NC-4.0 | Hugging Face |
 
 Los datos de WER de los modelos alternativos no se han incluido porque no estaban presentes en la información proporcionada; no se han inventado cifras.
 
@@ -90,7 +90,7 @@ Los datos de WER de los modelos alternativos no se han incluido porque no estaba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algorithco/sado
+- Modelo en Hugging Face: https://huggingface.co/algorithco/sado
 - Repositorio de NVIDIA NeMo: https://github.com/NVIDIA/NeMo
 - Documentación de FastConformer en NeMo: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/asr/models.html#fast-conformer
 - Script de entrenamiento híbrido Transducer-CTC: https://github.com/NVIDIA/NeMo/blob/main/examples/asr/asr_hybrid_transducer_ctc/speech_to_text_hybrid_rnnt_ctc_bpe.py

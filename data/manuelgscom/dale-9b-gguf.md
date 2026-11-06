@@ -74,10 +74,10 @@ El conjunto de evaluación es `manuelgscom/dale-bash-test-v2`, split `test`, con
 
 | Modelo | Parámetros | Contexto | Test v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dale-9b` | ~9B | no disponible | 89,2 % | Apache-2.0 | GGUF en HuggingFace |
-| `dale-4b` | ~4B | no disponible | 87,0 % | Apache-2.0 | GGUF en HuggingFace |
-| `dale-0.8b` | ~0,8B | no disponible | 79,4 % | Apache-2.0 | GGUF en HuggingFace |
-| Qwen3.5-9B (sin ajustar) | ~9B | no disponible | 62,8 % | no disponible en la información | HuggingFace |
+| `dale-9b` | ~9B | no disponible | 89,2 % | Apache-2.0 | GGUF en Hugging Face |
+| `dale-4b` | ~4B | no disponible | 87,0 % | Apache-2.0 | GGUF en Hugging Face |
+| `dale-0.8b` | ~0,8B | no disponible | 79,4 % | Apache-2.0 | GGUF en Hugging Face |
+| Qwen3.5-9B (sin ajustar) | ~9B | no disponible | 62,8 % | no disponible en la información | Hugging Face |
 
 La comparación más directa es con los otros tamaños de la misma familia, que comparten tarea, datos, contrato y prompt. Frente a `dale-4b`, `dale-9b` gana 2,2 puntos de precisión a cambio de duplicar aproximadamente el tamaño del GGUF (5,6 GB frente a 2,7 GB) y elevar el requisito de VRAM de 4 a 8 GiB.
 
@@ -94,7 +94,7 @@ La comparación más directa es con los otros tamaños de la misma familia, que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manuelgscom/dale-9b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/manuelgscom/dale-9b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de evaluación: https://huggingface.co/datasets/manuelgscom/dale-bash-test-v2
 - Colección de la familia `dale`: https://huggingface.co/collections/manuelgscom/dale-6addf69f0c5ce62251553885

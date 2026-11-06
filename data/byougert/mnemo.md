@@ -75,7 +75,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/byougert/MNEMO)
+- [Modelo en Hugging Face](https://huggingface.co/byougert/MNEMO)
 - [Dataset MInterPEDES](https://huggingface.co/datasets/byougert/MInterPEDES)
 - [Código oficial (GitHub)](https://github.com/Flame-Chasers/MNEMO)
 - Paper ICML 2026: "Interactive Person Retrieval via Multi-Turn Multimodal Conversation" (enlace no disponible en la información proporcionada)

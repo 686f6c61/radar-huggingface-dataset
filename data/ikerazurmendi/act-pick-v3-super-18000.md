@@ -112,7 +112,7 @@ Como alternativas externas de la misma categoría (políticas de imitación para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-super-18000
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-super-18000
 - Perfil del autor (checkpoints hermanos: `act-pick-v3-6000`, `act-pick-v3-strict-2400`, `act-pick-v3-1-2-pieces-18000`, `act-pick-v2-6000`, `act-pick-v3-chunk60-4800`, `act-pick-v3-1piece-9600`, `act-pick-v3-recent-12000`): https://huggingface.co/IkerAzurmendi
 - LeRobot (librería de entrenamiento e inferencia): https://github.com/huggingface/lerobot
 - Paper de ACT, "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware": https://arxiv.org/abs/2304.13705

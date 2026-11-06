@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-dpakl-reverse-thinking-b16 | 322 M | 8192 (entrenamiento) | Borrador DFlash, objetivo D-PAL reverse KL, block size 16 | Apache 2.0 | HuggingFace |
+| qwen3-4b-dpakl-reverse-thinking-b16 | 322 M | 8192 (entrenamiento) | Borrador DFlash, objetivo D-PAL reverse KL, block size 16 | Apache 2.0 | Hugging Face |
 | Borradores D-PACE (misma linea, referencia en la model card) | no disponible | no disponible | Receta D-PARD/D-PACE sobre corpus convencional | no disponible | no disponible |
 | Borradores D-PARD (misma linea, referencia en la model card) | no disponible | no disponible | Receta D-PARD/D-PACE sobre corpus convencional | no disponible | no disponible |
 | EAGLE-3 (enfoque alternativo de decodificacion especulativa) | no disponible | no disponible | Prediccion de tokens con caracteristicas multi-capa | no disponible | no disponible |
@@ -81,12 +81,12 @@ No se dispone de datos cuantitativos publicos que permitan comparar el rendimien
 - El repositorio usa `custom_code`, lo que implica ejecutar codigo remoto al cargar el modelo. Conviene auditar ese codigo antes de usarlo en entornos no controlados.
 - La licencia Apache 2.0 del borrador permite uso comercial, pero el modelo base Qwen3-4B tiene su propia licencia, que debe verificarse de forma independiente.
 - No se documentan idiomas soportados ni comportamiento multilingue especifico; cualquier limitacion linguistica proviene del modelo objetivo.
-- La fecha de creacion registrada en HuggingFace (2026-09-25) es atipica y conviene tratarla con cautela al citar el modelo.
+- La fecha de creacion registrada en Hugging Face (2026-09-25) es atipica y conviene tratarla con cautela al citar el modelo.
 - El autor no publica compatibilidad con otros motores de inferencia distintos de SGLang, lo que limita las opciones de integracion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dpakl-reverse-thinking-b16
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dpakl-reverse-thinking-b16
 - Dataset de entrenamiento: https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - SGLang (motor de despliegue documentado en la model card): enlace no disponible en la informacion proporcionada

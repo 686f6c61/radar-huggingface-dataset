@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Cuantización | Tamaño | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-3-image-klein-mflux-q5 (este repo) | Q5 | 6,5 GB | Apple Silicon (MLX) | flux-kommunity-license | HuggingFace, 30 descargas |
-| flux-3-image-klein-mflux-q4 | Q4 | 5,3 GB | Apple Silicon (MLX) | flux-kommunity-license | HuggingFace |
-| flux-3-image-klein-mflux-q8 | Q8 | 9,9 GB | Apple Silicon (MLX) | flux-kommunity-license | HuggingFace |
-| flux-3-image-klein-mflux-bf16 | BF16 | 18,5 GB | Apple Silicon (MLX) | flux-kommunity-license | HuggingFace |
-| black-forest-labs/flux-3-image-klein (original) | BF16 (presumiblemente) | no disponible | no disponible | flux-kommunity-license | HuggingFace |
+| flux-3-image-klein-mflux-q5 (este repo) | Q5 | 6,5 GB | Apple Silicon (MLX) | flux-kommunity-license | Hugging Face, 30 descargas |
+| flux-3-image-klein-mflux-q4 | Q4 | 5,3 GB | Apple Silicon (MLX) | flux-kommunity-license | Hugging Face |
+| flux-3-image-klein-mflux-q8 | Q8 | 9,9 GB | Apple Silicon (MLX) | flux-kommunity-license | Hugging Face |
+| flux-3-image-klein-mflux-bf16 | BF16 | 18,5 GB | Apple Silicon (MLX) | flux-kommunity-license | Hugging Face |
+| black-forest-labs/flux-3-image-klein (original) | BF16 (presumiblemente) | no disponible | no disponible | flux-kommunity-license | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (calidad visual, FID, CLIP score u otras métricas) entre estas variantes en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo (calidad visual, FID, CLIP sco
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/flux-3-image-klein-mflux-q5
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/flux-3-image-klein-mflux-q5
 - Modelo base original: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Licencia del modelo original: https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/main/LICENSE.md
 - Implementación MFlux: https://github.com/filipstrand/mflux

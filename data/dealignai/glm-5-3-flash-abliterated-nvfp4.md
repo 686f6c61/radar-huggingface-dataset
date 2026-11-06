@@ -91,7 +91,7 @@ La comparativa con GLM-5.2 se basa en la información de la model card de dealig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Espejo del mismo modelo (UNCENSORED): https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4
 - Cuantización NVFP4 de LibertAIDAI: https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4

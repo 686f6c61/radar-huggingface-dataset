@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Potunes145/gemma-4-e2b-nova-ai` es un fine-tune del modelo `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del modelo oficial `google/gemma-4-E2B` de Google DeepMind. El autor, Potunes145, ha entrenado este modelo mediante fine-tuning supervisado (SFT) utilizando la librería TRL de HuggingFace y la herramienta Unsloth, orientada a optimizar el entrenamiento de modelos sobre hardware limitado.
+El modelo `Potunes145/gemma-4-e2b-nova-ai` es un fine-tune del modelo `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del modelo oficial `google/gemma-4-E2B` de Google DeepMind. El autor, Potunes145, ha entrenado este modelo mediante fine-tuning supervisado (SFT) utilizando la librería TRL de Hugging Face y la herramienta Unsloth, orientada a optimizar el entrenamiento de modelos sobre hardware limitado.
 
 Gemma 4 E2B es el modelo más pequeño de la familia Gemma 4, con 2.100 millones de parámetros, una ventana de contexto de 8.000 tokens y capacidad exclusivamente textual. Está diseñado para ejecutarse en dispositivos con recursos muy limitados, como teléfonos móviles, sistemas embebidos o CPUs sin GPU. El fine-tune de Potunes145 parte de una versión ya cuantizada en 4 bits, lo que reduce aún más el tamaño del modelo y facilita su despliegue en entornos de baja capacidad.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Potunes145/gemma-4-e2b-nova-ai
+- Repositorio Hugging Face: https://huggingface.co/Potunes145/gemma-4-e2b-nova-ai
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Modelo oficial Gemma 4 E2B: https://huggingface.co/google/gemma-4-E2B
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

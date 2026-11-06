@@ -4,7 +4,7 @@
 
 El modelo `AlinaGonch/llama32-3b-squad-ratio-0.90-seed-42` es un fine-tuning del modelo base Llama 3.2 3B de Meta, realizado sobre el dataset SQuAD 2.0. Forma parte de una serie de experimentos creados por AlinaGonch para estudiar el impacto de la proporción de muestras sin respuesta (unanswerable) en el entrenamiento de modelos de comprensión lectora. El nombre indica que se utilizó un ratio de 0.90 (es decir, un 90% de preguntas sin respuesta) y una semilla de 42 para la reproducibilidad.
 
-El modelo está publicado en HuggingFace con la librería transformers, en formato safetensors, y el repositorio tiene un tamaño de 0.1 GB. La model card es una plantilla automática sin información técnica detallada, por lo que la mayoría de especificaciones no están disponibles públicamente. A pesar de su escasa documentación, el interés del modelo reside en su uso como objeto de estudio para determinar la proporción óptima de preguntas sin respuesta en tareas de question answering extractivo.
+El modelo está publicado en Hugging Face con la librería transformers, en formato safetensors, y el repositorio tiene un tamaño de 0.1 GB. La model card es una plantilla automática sin información técnica detallada, por lo que la mayoría de especificaciones no están disponibles públicamente. A pesar de su escasa documentación, el interés del modelo reside en su uso como objeto de estudio para determinar la proporción óptima de preguntas sin respuesta en tareas de question answering extractivo.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo está publicado en HuggingFace con la librería transformers, en forma
 
 El modelo es un fine-tuning de Llama 3.2 3B, un transformer decoder-only con 3 mil millones de parametros, publicado por Meta en septiembre de 2024. La arquitectura base incorpora attention con RoPE (Rotary Position Embedding), normalizacion RMSNorm y activacion SwiGLU. El fine-tuning se realizo sobre el dataset SQuAD 2.0, que combina preguntas con respuesta y preguntas sin respuesta (unanswerable) dentro de un contexto dado. El parametro `ratio-0.90` indica que el 90% de las muestras de entrenamiento corresponden a preguntas sin respuesta, mientras que `seed-42` fija la semilla aleatoria para la seleccion de datos y la inicializacion del entrenamiento.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, el regimen de precision (fp16, bf16, etc.), ni sobre el uso de tecnicas adicionales como RLHF o DPO. El experimento forma parte de una coleccion publica en HuggingFace que compara diferentes ratios (0.30, 0.90, etc.) para evaluar el efecto de la proporcion de muestras sin respuesta en el rendimiento final.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, el regimen de precision (fp16, bf16, etc.), ni sobre el uso de tecnicas adicionales como RLHF o DPO. El experimento forma parte de una coleccion publica en Hugging Face que compara diferentes ratios (0.30, 0.90, etc.) para evaluar el efecto de la proporcion de muestras sin respuesta en el rendimiento final.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos comparables especificos dentro del mi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.90-seed-42)
+- [Modelo en Hugging Face](https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.90-seed-42)
 - [Coleccion de experimentos SQuAD ratio](https://huggingface.co/collections/AlinaGonch/squad-dataset-ratio-experiment-llama32-llama31)
 - [Modelo relacionado con ratio 0.30](https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.30-r4)
 - [Model card de Llama 3.2 (Meta)](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)

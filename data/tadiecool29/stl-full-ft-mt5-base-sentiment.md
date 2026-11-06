@@ -2,7 +2,7 @@
 
 ## Resumen
 
-STL-Full-FT-mt5-base-sentiment es un ajuste fino completo (full fine-tuning) del modelo google/mt5-base, publicado por el usuario tadiecool29 en HuggingFace. Se trata de un modelo encoder-decoder de arquitectura transformer, con 582.401.280 parámetros (unos 582 millones), orientado a tareas de análisis de sentimiento y, según las etiquetas de la model card, también a detección de postura (stance detection) sobre texto en amhárico. El identificador STL hace referencia a single-task learning: cada modelo del autor se entrena de forma independiente para una única tarea, en contraste con las variantes MTL (multi-task learning) del mismo repositorio.
+STL-Full-FT-mt5-base-sentiment es un ajuste fino completo (full fine-tuning) del modelo google/mt5-base, publicado por el usuario tadiecool29 en Hugging Face. Se trata de un modelo encoder-decoder de arquitectura transformer, con 582.401.280 parámetros (unos 582 millones), orientado a tareas de análisis de sentimiento y, según las etiquetas de la model card, también a detección de postura (stance detection) sobre texto en amhárico. El identificador STL hace referencia a single-task learning: cada modelo del autor se entrena de forma independiente para una única tarea, en contraste con las variantes MTL (multi-task learning) del mismo repositorio.
 
 El problema que aborda es el análisis de opinión en un idioma con recursos limitados como el amhárico, donde los modelos monolingües y los clasificadores entrenados sobre inglés rinden de forma pobre. Al partir de mT5-base, el modelo hereda el tokenizador SentencePiece con vocabulario multilingüe de 250.000 tokens y la cobertura de 101 idiomas del preentrenamiento original, lo que permite representar texto amhárico con una fragmentación razonable.
 
@@ -87,7 +87,7 @@ No se dispone de comparación con otros modelos sobre el mismo conjunto de evalu
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Funciona con RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin problema; las GPU de gama alta quedan muy sobredimensionadas para este tamaño.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de las GPU de consumo actuales, incluidas las de portátil con 6 GB o más.
 - Ejecución en CPU: viable para inferencia por lotes pequeños, con latencias sensiblemente mayores; no se han publicado mediciones.
-- Opciones de despliegue: transformers con pipeline de text2text-generation, HuggingFace Inference Endpoints (la etiqueta endpoints_compatible está presente), Text Generation Inference para servir el modelo, y vLLM, que soporta arquitecturas encoder-decoder de la familia T5. Para llama.cpp u Ollama sería necesaria una conversión a GGUF que no está publicada.
+- Opciones de despliegue: transformers con pipeline de text2text-generation, Hugging Face Inference Endpoints (la etiqueta endpoints_compatible está presente), Text Generation Inference para servir el modelo, y vLLM, que soporta arquitecturas encoder-decoder de la familia T5. Para llama.cpp u Ollama sería necesaria una conversión a GGUF que no está publicada.
 - Latencia y throughput: no disponibles. No hay ninguna medición publicada por el autor.
 
 ## Comparativa con modelos similares
@@ -119,7 +119,7 @@ La comparación de rendimiento frente a estas alternativas no es posible con la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/STL-Full-FT-mt5-base-sentiment
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/STL-Full-FT-mt5-base-sentiment
 - Modelo base: https://huggingface.co/google/mt5-base
 - Variante de sentimiento (nomenclatura alternativa del mismo autor): https://huggingface.co/tadiecool29/STL-FullFT-mt5-base-sentiment
 - Variante de detección de postura: https://huggingface.co/tadiecool29/STL-FullFT-mt5-base-stance

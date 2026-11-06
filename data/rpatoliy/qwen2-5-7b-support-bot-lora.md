@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rpatoliy/qwen2.5-7b-support-bot-lora` es un adaptador LoRA (entrenado con QLoRA sobre base de 4 bits) que especializa el modelo instructivo Qwen2.5-7B-Instruct como asistente de atencion al cliente para comercio electronico. Lo desarrolla el usuario de HuggingFace rpatoliy como demostracion de portfolio de un ajuste fino barato: 3.000 ejemplos, una epoca y una unica GPU Tesla T4 de 16 GB en Kaggle, con un tiempo de entrenamiento de 41,4 minutos.
+`rpatoliy/qwen2.5-7b-support-bot-lora` es un adaptador LoRA (entrenado con QLoRA sobre base de 4 bits) que especializa el modelo instructivo Qwen2.5-7B-Instruct como asistente de atencion al cliente para comercio electronico. Lo desarrolla el usuario de Hugging Face rpatoliy como demostracion de portfolio de un ajuste fino barato: 3.000 ejemplos, una epoca y una unica GPU Tesla T4 de 16 GB en Kaggle, con un tiempo de entrenamiento de 41,4 minutos.
 
 El adaptador no modifica los pesos del modelo base: se distribuye como un conjunto de matrices LoRA de rango 16 que deben cargarse junto con `unsloth/qwen2.5-7b-instruct-bnb-4bit`. Su objetivo es cambiar el estilo de respuesta del modelo base: apertura empatica, pasos numerados y uso de marcadores genericos `{{placeholder}}` (numero de pedido, horario de atencion, URL del sitio) que cada empresa sustituye por sus propios datos.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rpatoliy/qwen2.5-7b-support-bot-lora | Adaptador LoRA sobre 7B | 1.024 tokens de entrenamiento (base hasta 32.768) | Atencion al cliente en ingles | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7B | 32.768 tokens | Instrucciones generales, multilingue | Apache-2.0 | HuggingFace, ampliamente usado |
-| Adaptadores LoRA de soporte al cliente sobre Llama 3.1 8B | 8B | 128.000 tokens (base) | Atencion al cliente | Llama 3.1 Community License | Multiples en HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Instrucciones generales | Apache-2.0 | HuggingFace |
+| rpatoliy/qwen2.5-7b-support-bot-lora | Adaptador LoRA sobre 7B | 1.024 tokens de entrenamiento (base hasta 32.768) | Atencion al cliente en ingles | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7B | 32.768 tokens | Instrucciones generales, multilingue | Apache-2.0 | Hugging Face, ampliamente usado |
+| Adaptadores LoRA de soporte al cliente sobre Llama 3.1 8B | 8B | 128.000 tokens (base) | Atencion al cliente | Llama 3.1 Community License | Multiples en Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Instrucciones generales | Apache-2.0 | Hugging Face |
 
 La comparativa cuantitativa de rendimiento no esta disponible: no hay benchmarks publicados para este adaptador ni una evaluacion comun con los alternativos. La diferencia principal frente al base es estilistica (tono empatico, pasos numerados, marcadores), no de conocimiento.
 
@@ -91,7 +91,7 @@ La comparativa cuantitativa de rendimiento no esta disponible: no hay benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rpatoliy/qwen2.5-7b-support-bot-lora
+- Modelo en Hugging Face: https://huggingface.co/rpatoliy/qwen2.5-7b-support-bot-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Base cuantizado en 4 bits usado: https://huggingface.co/unsloth/qwen2.5-7b-instruct-bnb-4bit
 - Dataset Bitext: https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset

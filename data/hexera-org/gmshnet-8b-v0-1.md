@@ -87,7 +87,7 @@ Las cifras de VRAM siguientes son estimaciones derivadas del recuento real de pa
 - Cuantizacion INT8: ~8 GB de pesos, del orden de 9-11 GB en ejecucion. Cabe en RTX 4080/3090 (16-24 GB) y A10G (24 GB).
 - Cuantizacion INT4 (si se convierte): ~4-5 GB de pesos. Cabe en GPUs de consumo de 8 GB o mas, como RTX 3060 Ti, RTX 4060 o superiores.
 - GPU de consumo: si, en BF16 cabe en RTX 4090 y, con cuantizacion, en GPUs de 8-16 GB.
-- Despliegue: transformes directamente (formato safetensors y `library_name: transformers`). Las etiquetas `text-generation-inference` y `endpoints_compatible` indican compatibilidad con TGI y con los endpoints de HuggingFace. Por la arquitectura Qwen2, es esperable compatibilidad con vLLM, aunque no se declara explicitamente. Para Ollama o llama.cpp seria necesaria una conversion a GGUF, que no se publica en el repositorio.
+- Despliegue: transformes directamente (formato safetensors y `library_name: transformers`). Las etiquetas `text-generation-inference` y `endpoints_compatible` indican compatibilidad con TGI y con los endpoints de Hugging Face. Por la arquitectura Qwen2, es esperable compatibilidad con vLLM, aunque no se declara explicitamente. Para Ollama o llama.cpp seria necesaria una conversion a GGUF, que no se publica en el repositorio.
 - Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -117,7 +117,7 @@ La diferencia principal de GmshNet-8B-v0.1 no esta en el rendimiento bruto de ge
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/hexera-org/GmshNet-8B-v0.1
+- Ficha en Hugging Face: https://huggingface.co/hexera-org/GmshNet-8B-v0.1
 - DOI de la ficha: https://doi.org/10.57967/hf/9191
 - Gmsh (proyecto de mallado de referencia del modelo): https://gmsh.info
 - Documentacion de la API Python de Gmsh: https://gmsh.info/doc/texinfo/gmsh.html

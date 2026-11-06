@@ -23,7 +23,7 @@ Su relevancia actual es doble. Por un lado, explora el uso de conectomas biologi
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre un tronco SNN de 96M de parametros en el que cada unidad replica una neurona biologica concreta de las 100 seleccionadas del conectoma MaleCNS v1.0. La tarea es de clasificacion de decisiones tipadas: el modelo recibe un estado y una pregunta con un tipo definido (`choice`, `score`, `noul`) y emite probabilidades, sin generar secuencias de tokens. El pipeline declarado en HuggingFace es `text-classification`.
+El modelo se construye sobre un tronco SNN de 96M de parametros en el que cada unidad replica una neurona biologica concreta de las 100 seleccionadas del conectoma MaleCNS v1.0. La tarea es de clasificacion de decisiones tipadas: el modelo recibe un estado y una pregunta con un tipo definido (`choice`, `score`, `noul`) y emite probabilidades, sin generar secuencias de tokens. El pipeline declarado en Hugging Face es `text-classification`.
 
 El checkpoint publicado es el resultado de un model merging: una media ponderada 50/50 de dos checkpoints de la misma linea, el mejor FlyNeuron-Jev previo y ese mismo modelo tras dos epocas adicionales sobre la nueva mezcla de datos. Los datasets citados son LocalLLaMA/typed-decisions, ZefanCai/Open-Jev y openai/gsm8k. La model card no detalla el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
@@ -98,8 +98,8 @@ Nota del autor: en las 10 fuentes publicas retenidas, Byrne-Jev es mas fuerte (m
 
 | Modelo | Parametros | Enfoque | Accuracy typed | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| On-Fly-Jev | 96M | SNN con conectoma de Drosophila | 0,666 | 0,045 | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Byrne-Jev | 70M | SNN SpikeWhale (mismo autor) | 0,630 | 0,045 | no disponible en la informacion | Pesos abiertos en HuggingFace |
+| On-Fly-Jev | 96M | SNN con conectoma de Drosophila | 0,666 | 0,045 | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Byrne-Jev | 70M | SNN SpikeWhale (mismo autor) | 0,630 | 0,045 | no disponible en la informacion | Pesos abiertos en Hugging Face |
 | TypeSafe Jev 1.13.0 | no disponible | Referencia typed-decisions | 0,727 | 0,144 | no disponible | API alojada (el tiempo incluye red) |
 | ModernBERT-base (especialista) | 149M | Transformer encoder especializado | 0,646 | 0,179 | no disponible | Pesos abiertos |
 | Laya typed-decisions (fine-tuned) | 421M | Modelo afinado de mayor tamano | 0,766 | no disponible | no disponible | Alojado; no reporta calibracion ni velocidad |
@@ -120,7 +120,7 @@ En velocidad, On-Fly-Jev es aproximadamente 19 veces mas rapido que TypeSafe Jev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quazim0t0/On-Fly-Jev
+- Modelo en Hugging Face: https://huggingface.co/Quazim0t0/On-Fly-Jev
 - Modelo anterior de la misma familia: https://huggingface.co/Quazim0t0/Byrne-Jev-79M
 - Dataset LocalLLaMA/typed-decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Dataset ZefanCai/Open-Jev: https://huggingface.co/datasets/ZefanCai/Open-Jev

@@ -73,8 +73,8 @@ No se dispone de datos comparativos en la información proporcionada (ni cifras 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_ablation2_turn_off_lever_B1_1000_10fps | 450 M | no aplicable (VLA) | sin evaluación publicada | Apache 2.0 | HuggingFace (16 descargas) |
-| lerobot/smolvla_base (modelo base) | no disponible | no aplicable (VLA) | no disponible | no disponible | HuggingFace |
+| smolvla_ablation2_turn_off_lever_B1_1000_10fps | 450 M | no aplicable (VLA) | sin evaluación publicada | Apache 2.0 | Hugging Face (16 descargas) |
+| lerobot/smolvla_base (modelo base) | no disponible | no aplicable (VLA) | no disponible | no disponible | Hugging Face |
 | Otras alternativas VLA (OpenVLA, π0, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de datos comparativos en la información proporcionada (ni cifras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_ablation2_turn_off_lever_B1_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_ablation2_turn_off_lever_B1_1000_10fps
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/ablation2_turn_off_lever_B1_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844

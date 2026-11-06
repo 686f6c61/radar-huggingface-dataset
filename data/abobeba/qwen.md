@@ -78,7 +78,7 @@ La comparativa se limita a la familia Qwen, ya que no se dispone de datos de otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abobeba/qwen
+- Repositorio Hugging Face: https://huggingface.co/abobeba/qwen
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio original de HauhauCS (variante Aggressive): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Discord de HauhauCS: https://discord.gg/SZ5vacTXYf

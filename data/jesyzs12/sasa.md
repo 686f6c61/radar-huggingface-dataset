@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jesyzs12/sasa` es un modelo publicado en HuggingFace por el usuario `jesyzs12` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, licencia, etiqueta de region (`us`) y fechas de creacion y actualizacion. No hay model card con contenido tecnico, no se declara pipeline de inferencia, no se listan idiomas soportados y no consta ninguna descarga ni interaccion de la comunidad.
+El repositorio `jesyzs12/sasa` es un modelo publicado en Hugging Face por el usuario `jesyzs12` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, licencia, etiqueta de region (`us`) y fechas de creacion y actualizacion. No hay model card con contenido tecnico, no se declara pipeline de inferencia, no se listan idiomas soportados y no consta ninguna descarga ni interaccion de la comunidad.
 
 Esto significa que no es posible confirmar la arquitectura, el numero de parametros, la longitud de contexto, el regimen de entrenamiento ni las capacidades reales del modelo. Cualquier afirmacion de ese tipo seria especulativa y, por tanto, se marca como no disponible en toda la ficha. El unico dato con implicaciones practicas es la licencia Apache 2.0, que permitiria uso comercial y modificacion siempre que se respeten las condiciones de atribucion y se conserve el aviso de licencia.
 
@@ -53,10 +53,10 @@ Los siguientes escenarios son plantillas de evaluacion, no recomendaciones basad
 - Evaluacion comparativa interna: usar el repositorio como candidato a probar en un banco de tareas propio (clasificacion, resumen, generacion) y comparar contra un modelo de referencia ya validado, antes de considerar cualquier integracion.
 - Clasificacion y etiquetado de texto: si el modelo resulta ser un transformer causal o encoder, podria ajustarse con tecnicas de fine-tuning supervisado para tareas de etiquetado; requiere verificar primero la arquitectura y el tokenizador.
 - Prototipado con licencia permisiva: la licencia Apache 2.0 permite experimentar en entornos comerciales sin negociacion previa de licencia, siempre que se cumplan las condiciones de atribucion.
-- Investigacion academica sobre modelos de autor unico: util como caso de estudio de publicaciones sin model card, para analizar practicas de documentacion y reproducibilidad en HuggingFace.
+- Investigacion academica sobre modelos de autor unico: util como caso de estudio de publicaciones sin model card, para analizar practicas de documentacion y reproducibilidad en Hugging Face.
 - Base para fine-tuning con LoRA o QLoRA: viable solo si el formato de pesos es safetensors y la arquitectura es compatible con las librerias estandar; ambos extremos estan sin confirmar.
 - Despliegue en infraestructura propia: la licencia no impone restricciones de uso comercial, pero sin conocer el tamano no se puede estimar VRAM ni elegir motor de inferencia.
-- Uso educativo y de demostracion: adecuado como ejemplo de repositorio minimo para explicar el ciclo de vida de un modelo en HuggingFace.
+- Uso educativo y de demostracion: adecuado como ejemplo de repositorio minimo para explicar el ciclo de vida de un modelo en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -96,10 +96,10 @@ No disponible. Sin conocer la arquitectura, el numero de parametros, el contexto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jesyzs12/sasa
+- Repositorio en Hugging Face: https://huggingface.co/jesyzs12/sasa
 - Model card: no disponible (el repositorio solo incluye el bloque de licencia)
 - Paper: no disponible
 - Blog o nota tecnica del autor: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/jesyzs12
+- Perfil del autor en Hugging Face: https://huggingface.co/jesyzs12

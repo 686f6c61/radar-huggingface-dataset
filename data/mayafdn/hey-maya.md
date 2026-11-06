@@ -72,10 +72,10 @@ AUC global: 0,795.
 
 | Modelo | Tipo | Tamaño | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hey Maya (MayaFdn) | mixednet microWakeWord, TFLite int8 | 62.304 bytes | 30 ms por llamada, decisión sobre 150 ms | Apache 2.0 | HuggingFace (18 descargas) |
+| Hey Maya (MayaFdn) | mixednet microWakeWord, TFLite int8 | 62.304 bytes | 30 ms por llamada, decisión sobre 150 ms | Apache 2.0 | Hugging Face (18 descargas) |
 | microWakeWord (modelos de referencia de Kevin Ahrendt) | mixednet / CNN en streaming | no disponible | no disponible | Apache 2.0 | GitHub |
 | Piper sample generator (como generador de datos, no detector) | TTS neuronal | no disponible | no aplica | MIT | GitHub |
-| Phonon-31m (usado como fuente de test) | TTS neuronal | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| Phonon-31m (usado como fuente de test) | TTS neuronal | no disponible | no aplica | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a otros detectores de wake word comerciales o de referencia, por lo que la comparación se limita a tamaño, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos frente a otros detectores de w
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayaFdn/hey-maya
+- Modelo en Hugging Face: https://huggingface.co/MayaFdn/hey-maya
 - microWakeWord (framework de entrenamiento): https://github.com/kahrendt/microWakeWord
 - Piper sample generator: https://github.com/rhasspy/piper-sample-generator
 - LibriTTS-R (Koizumi et al., CC BY 4.0): no disponible (enlace no proporcionado en la información)

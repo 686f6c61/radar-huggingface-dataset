@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`nxp/centernet-mobilenetv2-imx` es un checkpoint publicado por NXP Semiconductors en HuggingFace. Por el identificador del repositorio, se trata de un detector de objetos basado en la familia CenterNet, con backbone MobileNetV2, y orientado a su despliegue en los procesadores de aplicaciones i.MX de NXP (sufijo "imx"). Es, por tanto, un modelo de vision por computador para deteccion de objetos, no un modelo de lenguaje: no genera texto ni mantiene conversaciones.
+`nxp/centernet-mobilenetv2-imx` es un checkpoint publicado por NXP Semiconductors en Hugging Face. Por el identificador del repositorio, se trata de un detector de objetos basado en la familia CenterNet, con backbone MobileNetV2, y orientado a su despliegue en los procesadores de aplicaciones i.MX de NXP (sufijo "imx"). Es, por tanto, un modelo de vision por computador para deteccion de objetos, no un modelo de lenguaje: no genera texto ni mantiene conversaciones.
 
 La relevancia de este tipo de checkpoint es practica: CenterNet formula la deteccion como la prediccion de puntos centrales de los objetos ("objects as points"), lo que elimina la necesidad de anclas y simplifica el postprocesado respecto a detectores ancla-based como SSD o las primeras versiones de YOLO. Combinado con MobileNetV2, un backbone disenado explicitamente para inferencia en dispositivos con recursos limitados, el resultado es un detector pensado para ejecutarse en el borde (automocion, industria, IoT, camaras inteligentes) con latencia baja y huella de memoria reducida.
 
-Ahora bien, la informacion publicada por el autor es minima: la model card se limita a la linea `license: mit`, sin descripcion, sin pipeline declarado, sin idiomas, sin ficheros listados, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado el 1 de octubre de 2026 (fecha que figura en los metadatos de HuggingFace). Cualquier dato que no aparezca aqui debe considerarse no confirmado.
+Ahora bien, la informacion publicada por el autor es minima: la model card se limita a la linea `license: mit`, sin descripcion, sin pipeline declarado, sin idiomas, sin ficheros listados, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado el 1 de octubre de 2026 (fecha que figura en los metadatos de Hugging Face). Cualquier dato que no aparezca aqui debe considerarse no confirmado.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ Diferencias relevantes mas alla de los numeros: CenterNet evita anclas y, en muc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nxp/centernet-mobilenetv2-imx
+- Modelo en Hugging Face: https://huggingface.co/nxp/centernet-mobilenetv2-imx
 - NXP Semiconductors (sitio corporativo): https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

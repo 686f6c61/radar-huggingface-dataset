@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SolubleMPNN-noise020 (este) | 1,674 M | Grafo de esqueleto N, CA, C, O; 48 vecinos | Inverse folding con sesgo a solubilidad, ruido 0,20 Å | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN-noise020 | 1,674 M | Grafo de esqueleto N, CA, C, O; 48 vecinos | Inverse folding estándar, ruido 0,20 Å | AGPL-3.0 | HuggingFace (oteam) |
-| CA-only-noise020 | 1,642 M | Solo átomo CA; 48 vecinos | Inverse folding con geometría reducida | AGPL-3.0 | HuggingFace (oteam) |
+| SolubleMPNN-noise020 (este) | 1,674 M | Grafo de esqueleto N, CA, C, O; 48 vecinos | Inverse folding con sesgo a solubilidad, ruido 0,20 Å | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN-noise020 | 1,674 M | Grafo de esqueleto N, CA, C, O; 48 vecinos | Inverse folding estándar, ruido 0,20 Å | AGPL-3.0 | Hugging Face (oteam) |
+| CA-only-noise020 | 1,642 M | Solo átomo CA; 48 vecinos | Inverse folding con geometría reducida | AGPL-3.0 | Hugging Face (oteam) |
 | ProteinMPNN original (dauparas) | ~1,7 M | Esqueleto completo | Implementación oficial de referencia | MIT (según repositorio original; verificar) | GitHub dauparas/ProteinMPNN |
 
 La comparación directa con modelos de lenguaje no procede: se trata de un modelo especializado en biología estructural, no de un LLM. Las alternativas naturales son las otras variantes del mismo ecosistema OFoldX y la implementación oficial de ProteinMPNN.
@@ -84,7 +84,7 @@ La comparación directa con modelos de lenguaje no procede: se trata de un model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/solublempnn-noise020
+- Modelo en Hugging Face: https://huggingface.co/oteam/solublempnn-noise020
 - Variante soluble base: https://huggingface.co/oteam/solublempnn
 - Variante soluble ruido 0,02 Å: https://huggingface.co/oteam/solublempnn-noise002
 - Variante soluble ruido 0,10 Å: https://huggingface.co/oteam/solublempnn-noise010

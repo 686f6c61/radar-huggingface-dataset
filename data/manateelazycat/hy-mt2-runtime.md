@@ -82,7 +82,7 @@ No se dispone de información sobre otros artefactos de runtime comparables en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/Hy-MT2-Runtime
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/Hy-MT2-Runtime
 - Archivo de metadatos del runtime (`runtimes.json`): referenciado en el repositorio, sin URL directa disponible
 - Repositorios upstream de pesos de Hy-MT2 (Tencent): no disponibles en la información proporcionada
 - Instalador Hy-MT2 AI Pod v0.1.16: no disponible en la información proporcionada

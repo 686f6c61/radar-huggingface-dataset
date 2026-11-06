@@ -76,8 +76,8 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sktime/toto2-22m-onnx-int8
-- Modelo base en HuggingFace: https://huggingface.co/Datadog/Toto-2.0-22m
+- Modelo en Hugging Face: https://huggingface.co/sktime/toto2-22m-onnx-int8
+- Modelo base en Hugging Face: https://huggingface.co/Datadog/Toto-2.0-22m
 - Ficha del modelo en TSFM.ai: https://tsfm.ai/models/Datadog%2FToto-2.0-22m
 - Documentación de TotoForecaster en sktime: https://www.sktime.net/models/totoforecaster/
 - ONNX Model Zoo (referencia general): https://github.com/onnx/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Falin-1 es un modelo publicado en HuggingFace por el usuario Cortiqa bajo licencia Apache 2.0. La model card asociada no incluye descripcion tecnica, arquitectura, tamano ni datos de entrenamiento: unicamente contiene la declaracion de licencia. No se dispone de informacion sobre el pipeline de la tarea, los idiomas soportados ni el formato de pesos.
+Falin-1 es un modelo publicado en Hugging Face por el usuario Cortiqa bajo licencia Apache 2.0. La model card asociada no incluye descripcion tecnica, arquitectura, tamano ni datos de entrenamiento: unicamente contiene la declaracion de licencia. No se dispone de informacion sobre el pipeline de la tarea, los idiomas soportados ni el formato de pesos.
 
 El repositorio presenta cero descargas y cero "likes" en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-01), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. No hay evidencia de benchmarks, demos ni documentacion adicional que permita evaluar su calidad o su idoneidad para tareas concretas.
 
@@ -40,7 +40,7 @@ Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, at
 
 - No es posible recomendar casos de uso concretos sin informacion sobre las capacidades del modelo. Cualquier escenario propuesto seria especulativo.
 - Evaluacion exploratoria: un desarrollador podria descargar los pesos y ejecutar pruebas manuales para determinar la tarea para la que fue entrenado, dado que el pipeline no esta declarado.
-- Investigacion de licencias: el modelo puede servir como ejemplo de publicacion bajo Apache 2.0 en HuggingFace para estudiar practicas de publicacion.
+- Investigacion de licencias: el modelo puede servir como ejemplo de publicacion bajo Apache 2.0 en Hugging Face para estudiar practicas de publicacion.
 - No se recomienda su uso en produccion sin una evaluacion previa, dado que no hay benchmarks ni documentacion tecnica.
 - No se recomienda su uso en atencion al cliente, generacion de codigo, agentes u otras aplicaciones criticas sin validacion empirica.
 - No se dispone de informacion suficiente para proponer un sexto caso de uso realista.
@@ -81,5 +81,5 @@ No se dispone de informacion sobre modelos comparables de la misma categoria por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cortiqa/falin-1
+- Hugging Face: https://huggingface.co/Cortiqa/falin-1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

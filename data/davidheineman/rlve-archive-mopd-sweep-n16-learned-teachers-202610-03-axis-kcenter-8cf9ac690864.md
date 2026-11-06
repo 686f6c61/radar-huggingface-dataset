@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo publicado al uso, sino un checkpoint archivado de un experimento de investigación. Se trata del estado final (paso 149) del run interno `mopd-sweep-n16-learned-teachers-20261002-165653`, dentro de una ruta de trabajo denominada `03-Axis_KCenter`, y ha sido subido a HuggingFace como parte de una colección de archivo (`scratch-archive`) del autor `davidheineman`. El identificador y las etiquetas (`rlve`) apuntan a un pipeline de aprendizaje por refuerzo sobre un barrido de hiperparámetros, no a un modelo afinado para uso general.
+Este repositorio no contiene un modelo publicado al uso, sino un checkpoint archivado de un experimento de investigación. Se trata del estado final (paso 149) del run interno `mopd-sweep-n16-learned-teachers-20261002-165653`, dentro de una ruta de trabajo denominada `03-Axis_KCenter`, y ha sido subido a Hugging Face como parte de una colección de archivo (`scratch-archive`) del autor `davidheineman`. El identificador y las etiquetas (`rlve`) apuntan a un pipeline de aprendizaje por refuerzo sobre un barrido de hiperparámetros, no a un modelo afinado para uso general.
 
 El checkpoint contiene 1.777.088.000 parámetros (aproximadamente 1,78 mil millones) en formato `safetensors`, con un tamaño de repositorio de 3,6 GB, coherente con pesos en precisión de 16 bits. La etiqueta `qwen2` indica que la arquitectura subyacente es un transformer decoder-only de la familia Qwen2, aunque la model card no especifica ni la longitud de contexto, ni el dataset de entrenamiento, ni el proceso de alineamiento aplicado.
 
@@ -12,7 +12,7 @@ Su relevancia es exclusivamente para investigación: permite reproducir o inspec
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2 (transformer decoder-only) segun la etiqueta de HuggingFace; no detallada en la model card |
+| Arquitectura | Qwen2 (transformer decoder-only) segun la etiqueta de Hugging Face; no detallada en la model card |
 | Parametros totales | 1.777.088.000 (~1,78 mil millones) |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -93,6 +93,6 @@ La diferencia clave no es de rendimiento, sino de naturaleza: los tres alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-03-axis-kcenter-8cf9ac690864
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-03-axis-kcenter-8cf9ac690864
 - Run de W&B: identificador `073bdf40` citado en la model card (no se proporciona URL directa).
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

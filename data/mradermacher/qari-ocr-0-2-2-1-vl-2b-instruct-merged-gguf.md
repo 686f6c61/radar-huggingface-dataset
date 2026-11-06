@@ -17,7 +17,7 @@ No obstante, la informacion publicada por el autor de la cuantizacion es muy esc
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
-| Idiomas soportados | en (segun tags de HuggingFace) |
+| Idiomas soportados | en (segun tags de Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (con fichero mmproj separado para el proyector multimodal) |
 
@@ -86,7 +86,7 @@ No se dispone de datos objetivos para establecer una comparacion cuantitativa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Qari-OCR-0.2.2.1-VL-2B-Instruct-merged-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Qari-OCR-0.2.2.1-VL-2B-Instruct-merged-GGUF
 - Modelo base: https://huggingface.co/oddadmix/Qari-OCR-0.2.2.1-VL-2B-Instruct-merged
 - Pagina de overview del autor de cuantizaciones: https://hf.tst.eu/model#Qari-OCR-0.2.2.1-VL-2B-Instruct-merged-GGUF
 - FAQ y peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

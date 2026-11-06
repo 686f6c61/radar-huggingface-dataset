@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-1.5B agentic + code SFT es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario Sky-06 en HuggingFace. El objetivo declarado es dotar a un modelo pequeno de 1.543.714.304 parametros (1,54B) de capacidad de generacion de codigo combinada con comportamiento agentico: llamada a herramientas mediante esquemas `<tools>` en el mensaje de sistema y respuestas con bloques `. El modelo conserva la arquitectura transformer densa del Qwen2.5-Coder original; no es un MoE ni un modelo hibrido.
+Qwen2.5-Coder-1.5B agentic + code SFT es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario Sky-06 en Hugging Face. El objetivo declarado es dotar a un modelo pequeno de 1.543.714.304 parametros (1,54B) de capacidad de generacion de codigo combinada con comportamiento agentico: llamada a herramientas mediante esquemas `<tools>` en el mensaje de sistema y respuestas con bloques `. El modelo conserva la arquitectura transformer densa del Qwen2.5-Coder original; no es un MoE ni un modelo hibrido.
 
 El entrenamiento consistio en un fine-tune completo de una sola epoca sobre una mezcla curada de 102.260 filas de HuggingFaceTB/smoltalk, siguiendo la receta para modelos pequenos de SmolLM2 (arXiv:2502.02737). Se usaron 55,2 millones de tokens en 852 pasos sobre una unica A100 de 80 GB, con TRL 1.15.0, Transformers 5.19.0 y PyTorch 2.14.1. La perdida final de entrenamiento fue 0,762 y la precision por token 0,791.
 
@@ -78,10 +78,10 @@ Los datos de contexto y licencia de los modelos comparados proceden de la docume
 
 | Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sky-06/qwen2.5-coder-1.5b-agentic-sft | 1,54B | no disponible | si, formato canonico de `apigen-80k` | no disponible en metadatos (base Apache-2.0) | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct (base) | 1,54B | 32.768 tokens segun documentacion de Qwen | parcial, formato Qwen | Apache-2.0 | HuggingFace, ampliamente adoptado |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens segun documentacion de SmolLM2 | no orientado a herramientas | Apache-2.0 | HuggingFace, muy adoptado |
-| Qwen/Qwen2.5-Coder-7B-Instruct | ~7,6B | 32.768 tokens segun documentacion de Qwen | si, formato Qwen | Apache-2.0 | HuggingFace, muy adoptado |
+| Sky-06/qwen2.5-coder-1.5b-agentic-sft | 1,54B | no disponible | si, formato canonico de `apigen-80k` | no disponible en metadatos (base Apache-2.0) | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct (base) | 1,54B | 32.768 tokens segun documentacion de Qwen | parcial, formato Qwen | Apache-2.0 | Hugging Face, ampliamente adoptado |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens segun documentacion de SmolLM2 | no orientado a herramientas | Apache-2.0 | Hugging Face, muy adoptado |
+| Qwen/Qwen2.5-Coder-7B-Instruct | ~7,6B | 32.768 tokens segun documentacion de Qwen | si, formato Qwen | Apache-2.0 | Hugging Face, muy adoptado |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sky-06/qwen2.5-coder-1.5b-agentic-sft
+- Modelo en Hugging Face: https://huggingface.co/Sky-06/qwen2.5-coder-1.5b-agentic-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
 - Panel de metricas de entrenamiento (Trackio): https://Sky-06-qwen-coder-agentic-sft-trackio.hf.space?project=huggingface&runs=Sky-06-1791747543&sidebar=collapsed

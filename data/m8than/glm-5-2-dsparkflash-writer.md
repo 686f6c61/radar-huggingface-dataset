@@ -76,9 +76,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de throughput/latenc
 
 | Modelo | Rol | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| m8than/GLM-5.2-DSparkFlash-Writer | draft especulativo ajustado (backbone creativo + selector DFlash2) | 3,15 B (safetensors) | ventana de draft 2.048 tokens | Apache-2.0 | HuggingFace, 0 descargas, 0 likes; requiere runtime Furnace |
-| RedHatAI/GLM-5.2-speculator.dspark | draft especulativo donante, sin ajuste de dominio | no disponible en la información | no disponible | Apache-2.0 (declarada) | HuggingFace |
-| m8than/GLM-5.2-E2M1-Furnace | target GLM-5.2 en formato E2M1, probado localmente con este draft | no disponible | no disponible | no disponible | HuggingFace |
+| m8than/GLM-5.2-DSparkFlash-Writer | draft especulativo ajustado (backbone creativo + selector DFlash2) | 3,15 B (safetensors) | ventana de draft 2.048 tokens | Apache-2.0 | Hugging Face, 0 descargas, 0 likes; requiere runtime Furnace |
+| RedHatAI/GLM-5.2-speculator.dspark | draft especulativo donante, sin ajuste de dominio | no disponible en la información | no disponible | Apache-2.0 (declarada) | Hugging Face |
+| m8than/GLM-5.2-E2M1-Furnace | target GLM-5.2 en formato E2M1, probado localmente con este draft | no disponible | no disponible | no disponible | Hugging Face |
 | DFlash2 B12 (referencia citada por el autor) | draft DFlash2 con backbone y selector propios | no disponible | no disponible | no disponible | no disponible; el autor aclara que este modelo no lo replica |
 
 No hay datos públicos de benchmarks que permitan comparar rendimiento entre estas variantes. La comparación relevante es funcional: el donante aporta el backbone y las tablas Markov nativas, y este modelo sustituye la cabeza por un selector entrenado y ajusta el backbone a un dominio creativo, lo que puede degradar el comportamiento en dominios no representados en sus 1.000 casos.
@@ -100,7 +100,7 @@ No hay datos públicos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m8than/GLM-5.2-DSparkFlash-Writer
+- Modelo en Hugging Face: https://huggingface.co/m8than/GLM-5.2-DSparkFlash-Writer
 - Modelo donante: https://huggingface.co/RedHatAI/GLM-5.2-speculator.dspark
 - Target E2M1 probado localmente: https://huggingface.co/m8than/GLM-5.2-E2M1-Furnace
 - Runtime Furnace (rama fijada): https://github.com/m8than/furnace/tree/da53bee642bb48c3230df524eea223d9e7371e6b

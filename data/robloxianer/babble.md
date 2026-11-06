@@ -109,7 +109,7 @@ Frente a alternativas externas de la misma categoria (GPTs char-level de escala 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robloxianer/babble
+- Modelo en Hugging Face: https://huggingface.co/robloxianer/babble
 - Subcarpeta babble-micro: https://huggingface.co/robloxianer/babble/tree/main/babble-micro
 - Subcarpeta babble-tiny: https://huggingface.co/robloxianer/babble/tree/main/babble-tiny
 - Subcarpeta babble-small: https://huggingface.co/robloxianer/babble/tree/main/babble-small

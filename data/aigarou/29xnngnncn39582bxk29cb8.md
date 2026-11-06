@@ -66,10 +66,10 @@ La model card únicamente reporta "0/465 refusals" para el modelo base, un dato 
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Genesis Hermes (este modelo) | ~34,7B totales (MoE) | no disponible | Texto + imagen | Apache 2.0 | GGUF en HuggingFace |
-| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive | ~35B (MoE) | no disponible | Texto (base) | no disponible | HuggingFace |
-| DJLougen/hermes-qwen3.5-35b-a3b-GGUF | ~35B (MoE) | no disponible | Texto | no disponible | GGUF en HuggingFace |
-| Qwen3.6-35B-A3B (familia base) | ~35B (MoE, ~3B activos) | no disponible | Texto | no disponible | HuggingFace |
+| Genesis Hermes (este modelo) | ~34,7B totales (MoE) | no disponible | Texto + imagen | Apache 2.0 | GGUF en Hugging Face |
+| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive | ~35B (MoE) | no disponible | Texto (base) | no disponible | Hugging Face |
+| DJLougen/hermes-qwen3.5-35b-a3b-GGUF | ~35B (MoE) | no disponible | Texto | no disponible | GGUF en Hugging Face |
+| Qwen3.6-35B-A3B (familia base) | ~35B (MoE, ~3B activos) | no disponible | Texto | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos emparentados directamente, ya que no se dispone de datos de rendimiento de alternativas equivalentes en la información proporcionada. No es posible establecer comparaciones cuantitativas de benchmarks.
 
@@ -88,7 +88,7 @@ La comparativa se limita a los modelos emparentados directamente, ya que no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIGAROU/29xnngnncn39582bxk29cb8
+- Modelo en Hugging Face: https://huggingface.co/AIGAROU/29xnngnncn39582bxk29cb8
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Ajuste Hermes de origen: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Dataset de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1

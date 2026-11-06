@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaromer/SC117-Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jaromer/SC117-Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Modelo base (upstream): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo base declarado: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF/blob/main/LICENSE

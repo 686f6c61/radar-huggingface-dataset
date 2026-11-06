@@ -81,7 +81,7 @@ No se pueden establecer comparativas fiables porque no hay métricas ni pesos. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chengchenko/model_173026814_blip_xlarge
+- Repositorio Hugging Face: https://huggingface.co/Chengchenko/model_173026814_blip_xlarge
 - Modelo BLIP de Salesforce (referencia): https://huggingface.co/Salesforce/blip-image-captioning-large
 - Código oficial de BLIP: https://github.com/salesforce/BLIP
 - Introducción a BLIP (GeeksforGeeks): https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

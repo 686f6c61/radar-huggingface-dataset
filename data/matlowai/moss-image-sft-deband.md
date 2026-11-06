@@ -100,7 +100,7 @@ Frente a alternativas de otros ecosistemas (por ejemplo, modelos de difusión de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MATLOWAI/MOSS-Image-SFT-DeBand
+- Repositorio Hugging Face: https://huggingface.co/MATLOWAI/MOSS-Image-SFT-DeBand
 - Variante fusionada int8: https://huggingface.co/MATLOWAI/MOSS-Image-SFT-DeBand-int8
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Pesos del base para ComfyUI: https://huggingface.co/Comfy-Org/MOSS-Image
@@ -110,4 +110,4 @@ Frente a alternativas de otros ecosistemas (por ejemplo, modelos de difusión de
 - Workflows de presets Turbo: https://huggingface.co/MATLOWAI/MOSS-Image-SFT-DeBand/blob/main/workflows/moss_banding_fix_presets_rapid_moss.json
 - Análisis técnico del método: https://huggingface.co/MATLOWAI/MOSS-Image-SFT-DeBand/blob/main/ANALYSIS.md
 
-La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

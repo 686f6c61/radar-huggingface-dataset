@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h012.pi-agent-sft-v8.step_500
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h012.pi-agent-sft-v8.step_500
 - Búsqueda de modelos con tag `agentic-ptb`: https://huggingface.co/models?other=agentic-ptb
 - Página principal de Hugging Face: https://huggingface.co/
 - Referencia a GPT-5.6 Sol (mencionado en la model card como driver): https://openai.com/index/gpt-5-6/

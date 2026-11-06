@@ -29,7 +29,7 @@ El ajuste fino realizado por mehmettozlu se centra en el turco, aunque no se det
 
 - Generación de texto en turco y otros idiomas, con razonamiento y conocimiento del mundo heredados del modelo base.
 - Razonamiento lógico y matemático, así como generación de código, gracias a las capacidades del Mistral-NeMo-12B-Instruct.
-- Soporte de conversación multi-turno (etiqueta "conversational" en HuggingFace).
+- Soporte de conversación multi-turno (etiqueta "conversational" en Hugging Face).
 - Capacidades multilingües: el tokenizador Tekken cubre más de 100 idiomas, aunque el ajuste fino puede haber priorizado el turco.
 - No se especifica soporte explícito para tool calling o function calling en la información disponible, aunque el modelo base sí lo ofrece.
 - No se mencionan capacidades multimodales (visión, audio) en este repositorio.
@@ -73,7 +73,7 @@ No se dispone de datos comparativos específicos del ajuste fino turco. Como ref
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mehmettozlu/Turkish-Mistral-NeMo-12B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mehmettozlu/Turkish-Mistral-NeMo-12B-Instruct-GGUF
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/Mistral-NeMo-12B-Instruct
 - Documentación oficial de Mistral NeMo: https://docs.mistral.ai/models/mistral-nemo-12b-24-07
 - Página de LM Studio sobre Mistral NeMo: https://lmstudio.ai/models/mistral-nemo

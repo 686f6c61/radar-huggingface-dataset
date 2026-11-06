@@ -4,7 +4,7 @@
 
 El modelo `yatokim/Qwen3-1.7B-base-MED` es un fine-tune del modelo base Qwen3-1.7B-Base de Alibaba, realizado mediante entrenamiento supervisado (SFT) y orientado a tareas conversacionales. El sufijo "MED" sugiere un posible ajuste para el dominio médico, aunque la documentación publicada no lo confirma explícitamente. El modelo conserva la arquitectura transformer causal del Qwen3 original, con aproximadamente 1.720 millones de parámetros, y está disponible en formato safetensors para su uso con la librería transformers.
 
-La relevancia de este modelo radica en que parte de una base sólida: el Qwen3-1.7B-Base fue entrenado sobre 36 billones de tokens en 119 idiomas, con una ventana de contexto nativa de 32.000 tokens. Sin embargo, la ficha del modelo en HuggingFace es extremadamente escueta, generada automáticamente, y no aporta detalles sobre el dataset de fine-tune, los hiperparámetros ni los resultados de evaluación. Esto limita su uso en producción sin una validación adicional por parte del desarrollador.
+La relevancia de este modelo radica en que parte de una base sólida: el Qwen3-1.7B-Base fue entrenado sobre 36 billones de tokens en 119 idiomas, con una ventana de contexto nativa de 32.000 tokens. Sin embargo, la ficha del modelo en Hugging Face es extremadamente escueta, generada automáticamente, y no aporta detalles sobre el dataset de fine-tune, los hiperparámetros ni los resultados de evaluación. Esto limita su uso en producción sin una validación adicional por parte del desarrollador.
 
 ## Especificaciones tecnicas
 

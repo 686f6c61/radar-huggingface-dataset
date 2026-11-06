@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemMSA es un modelo de análisis de sentimiento multimodal robusto desarrollado por el equipo de investigación formado por Wenhao Li, Zhibin Wu, Chong Xiao y Qiangchang Li, publicado como artículo en arXiv (arXiv:2609.30238) con checkpoints alojados en HuggingFace bajo el identificador Bluexxx/SemMSA. Su objetivo es resolver un problema concreto y frecuente en el análisis de sentimiento multimodal: la evaluación con datos incompletos, es decir, escenarios en los que faltan una o varias modalidades (texto, vídeo o audio) en una proporción significativa de las muestras.
+SemMSA es un modelo de análisis de sentimiento multimodal robusto desarrollado por el equipo de investigación formado por Wenhao Li, Zhibin Wu, Chong Xiao y Qiangchang Li, publicado como artículo en arXiv (arXiv:2609.30238) con checkpoints alojados en Hugging Face bajo el identificador Bluexxx/SemMSA. Su objetivo es resolver un problema concreto y frecuente en el análisis de sentimiento multimodal: la evaluación con datos incompletos, es decir, escenarios en los que faltan una o varias modalidades (texto, vídeo o audio) en una proporción significativa de las muestras.
 
 Técnicamente, SemMSA se construye sobre un LLM congelado (Qwen3-1.7B) al que se le añaden dos mecanismos: Cross-modal Semantic Refinement (CSR), que construye semánticas latentes relevantes para el sentimiento a partir del LLM congelado, y Cross-modal Spectral Alignment (CSA), que alinea esas semánticas latentes con las representaciones del lenguaje, lo visual y lo acústico. Los checkpoints publicados se centran en el dataset CH-SIMS, con soporte para inglés y chino, y el repositorio completo pesa aproximadamente 1,8 GB. Su relevancia radica en que combina la capacidad de representación semántica de los LLM con técnicas de robustez frente a modalidades ausentes, un tema activo en la investigación actual de análisis afectivo multimodal.
 
@@ -79,9 +79,9 @@ SemMSA se posiciona frente a LNLN y P-RMF, que son los metodos de referencia en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bluexxx/SemMSA
+- Modelo en Hugging Face: https://huggingface.co/Bluexxx/SemMSA
 - Articulo (arXiv): https://arxiv.org/abs/2609.30238
 - Codigo (GitHub): https://github.com/peacelwh/SemMSA
 - Pagina del proyecto: https://peacelwh.github.io/SemMSA/
-- Dataset en HuggingFace: https://huggingface.co/datasets/Bluexxx/SemMSA-data
+- Dataset en Hugging Face: https://huggingface.co/datasets/Bluexxx/SemMSA-data
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

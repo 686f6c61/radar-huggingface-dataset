@@ -31,7 +31,7 @@ Cada subcarpeta (`6layers/`, `8layers/`, `11layers/`, `12layers/`) contiene un c
 - Funciona con la salida de cualquier sistema ASR, ya que procesa texto, no audio.
 - Soporta secuencias de hasta 512 tokens.
 - Disponible en cuatro tamaños (6, 8, 11 y 12 capas) para equilibrar velocidad y precisión.
-- Integrable con la librería `transformers` de HuggingFace o mediante el paquete `asr-punct-restore` que gestiona ventanas y ensamblado.
+- Integrable con la librería `transformers` de Hugging Face o mediante el paquete `asr-punct-restore` que gestiona ventanas y ensamblado.
 - No incluye capacidades de generación de texto, tool calling, agentes, visión ni audio; es exclusivamente un clasificador de tokens.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ El modelo de 12 capas es el más preciso, superando incluso al ensamblado comple
 - Los pesos se publican en safetensors, probablemente en FP32 (el checkpoint de 12 capas ocupa 908 MB, consistente con un modelo BERT-base de ~220 M parámetros en FP32).
 - Para inferencia en FP16, la VRAM estimada sería de ~450 MB para el modelo de 12 capas; en FP32, ~900 MB. Los checkpoints de 6 y 8 capas requieren menos memoria.
 - Cabe en cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) e incluso en CPU, aunque con mayor latencia.
-- Se puede desplegar con la librería `transformers` de HuggingFace, o mediante el paquete `asr-punct-restore` que gestiona el ventaneado y el ensamblado.
+- Se puede desplegar con la librería `transformers` de Hugging Face, o mediante el paquete `asr-punct-restore` que gestiona el ventaneado y el ensamblado.
 - No se dispone de datos de latencia o throughput medidos; al ser un modelo BERT-base, la inferencia es rápida en GPU (del orden de milisegundos por secuencia de 512 tokens).
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables específicos para restau
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SayedShaun/asr-punctuation-restore-bn
+- Modelo en Hugging Face: https://huggingface.co/SayedShaun/asr-punctuation-restore-bn
 - Repositorio del paquete `asr-punct-restore`: https://github.com/sayedshaun/asr-punct-restore
 - Writeup de la solución ganadora (Kaggle): https://www.kaggle.com/competitions/bengaliai-speech/writeups/chimege-1st-place-solution
 - Competición Bengali.AI Speech Recognition: https://www.kaggle.com/competitions/bengaliai-speech

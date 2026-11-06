@@ -72,7 +72,7 @@ Los valores de VRAM que se indican a continuacion son estimaciones derivadas de 
 - GPU de gama alta: A100, H100, L40S o RTX 4090 no aportan ventaja de capacidad para este tamano; su utilidad seria el throughput en despliegues con muchas peticiones concurrentes.
 - CPU e iGPU: la cuantizacion Q4_K_M es viable en CPU moderna con 8 GB de RAM. En Mac con Apple Silicon (8 GB unificados o mas) caben todas las variantes hasta Q8_0.
 - Movil y SBC: Q3_K_M y Q4_K_M son las unicas opciones realistas en dispositivos con 4 GB de memoria.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`, `llama-mtmd-cli`), Ollama (importando el GGUF), LM Studio, llama-cpp-python, text-generation-webui y, con soporte experimental, vLLM. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`, `llama-mtmd-cli`), Ollama (importando el GGUF), LM Studio, llama-cpp-python, text-generation-webui y, con soporte experimental, vLLM. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ La ventaja diferencial de este repositorio es la disponibilidad simultanea de si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sriq-ai/sriq-MiniCPM5-2B-v1.5-GGUF
+- Hugging Face: https://huggingface.co/sriq-ai/sriq-MiniCPM5-2B-v1.5-GGUF
 - Unsloth (herramienta de conversion citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime compatible): https://github.com/ggml-org/llama.cpp
 - Paper, blog, demo o repositorio del modelo original: no disponible en la informacion proporcionada.

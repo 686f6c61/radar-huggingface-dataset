@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UTRBERT-4mer es un port minimalista a HuggingFace de la variante de 4-mer de 3UTRBERT, un modelo de lenguaje BERT-base preentrenado sobre secuencias agregadas de la región 3' UTR de mRNA humano. El modelo original fue desarrollado por Yang et al. (2024) para descifrar la regulación génica mediada por la región 3' UTR mediante aprendizaje profundo interpretable. Este port, realizado por Taykhoom, reproduce fielmente los pesos del checkpoint público `4-new-12w-0` y verifica la paridad numérica de todas las capas.
+UTRBERT-4mer es un port minimalista a Hugging Face de la variante de 4-mer de 3UTRBERT, un modelo de lenguaje BERT-base preentrenado sobre secuencias agregadas de la región 3' UTR de mRNA humano. El modelo original fue desarrollado por Yang et al. (2024) para descifrar la regulación génica mediada por la región 3' UTR mediante aprendizaje profundo interpretable. Este port, realizado por Taykhoom, reproduce fielmente los pesos del checkpoint público `4-new-12w-0` y verifica la paridad numérica de todas las capas.
 
 El modelo emplea una arquitectura BERT-base con 12 capas, 12 cabezas de atención, dimensión de embedding 768 y una capa FFN de 3072 unidades. Su vocabulario está compuesto por 261 tokens: 5 tokens especiales y 256 k-meros de RNA de longitud 4 (4-mer). La tokenización convierte secuencias de RNA (o DNA) a U, y luego las divide en 4-meros solapados con paso 1, de modo que una secuencia de longitud L produce L-3 tokens. La ventana de contexto máxima es de 512 tokens, equivalente a 513 nucleótidos crudos.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Comparativa con modelos similares
 
-La siguiente tabla compara las variantes de la familia UTRBERT disponibles en la coleccion de HuggingFace. No se dispone de datos de parametros para las otras variantes, por lo que se indican los valores conocidos.
+La siguiente tabla compara las variantes de la familia UTRBERT disponibles en la coleccion de Hugging Face. No se dispone de datos de parametros para las otras variantes, por lo que se indican los valores conocidos.
 
 | Modelo | k-mer | Tamano de vocabulario | Parametros | Contexto maximo | Licencia |
 |---|---|---|---|---|---|
@@ -80,7 +80,7 @@ No se dispone de comparativas con otros modelos de RNA como DNABERT o RNABERT en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/UTRBERT-4mer
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/UTRBERT-4mer
 - Coleccion UTRBERT: https://huggingface.co/collections/Taykhoom/utrbert
 - Repositorio original 3UTRBERT: https://github.com/yangyn533/3UTRBERT
 - Registro de software en figshare: https://doi.org/10.6084/m9.figshare.22851119.v1

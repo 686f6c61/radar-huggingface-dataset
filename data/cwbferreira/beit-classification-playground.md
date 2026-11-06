@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cwbferreira/beit-classification-playground` es un repositorio de HuggingFace publicado por la usuaria cwbferreira (Leticia Ferreira) que contiene una implementacion propia de una red BEiT (BERT Pre-Training for Image Transformers) orientada a tareas de clasificacion, con una configuracion declarada como "xlarge". No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+`cwbferreira/beit-classification-playground` es un repositorio de Hugging Face publicado por la usuaria cwbferreira (Leticia Ferreira) que contiene una implementacion propia de una red BEiT (BERT Pre-Training for Image Transformers) orientada a tareas de clasificacion, con una configuracion declarada como "xlarge". No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 El interes del repositorio es, por tanto, documental y de ingenieria: sirve como punto de partida reproducible para montar un pipeline de clasificacion con BEiT, con codigo transparente (`predict.py`), un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador RMSprop con planificador exponencial). El peso real del checkpoint en safetensors es de 16.576 parametros, una cifra que no se corresponde con una configuracion BEiT xlarge real y que apunta a una configuracion reducida de prueba.
 
@@ -78,9 +78,9 @@ La comparativa se establece frente a las implementaciones publicas de BEiT de Mi
 
 | Modelo | Parametros | Tarea | Licencia | Checkpoint entrenado | Disponibilidad |
 |---|---|---|---|---|---|
-| cwbferreira/beit-classification-playground | 16.576 | Clasificacion | BSD-3-Clause | No | HuggingFace |
-| microsoft/beit-base-patch16-224-pt22k-ft22k | ~86 M (aproximado) | Clasificacion de imagenes | MIT (referencia) | Si | HuggingFace |
-| microsoft/beit-large-patch16-224-pt22k-ft22k | ~304 M (aproximado) | Clasificacion de imagenes | MIT (referencia) | Si | HuggingFace |
+| cwbferreira/beit-classification-playground | 16.576 | Clasificacion | BSD-3-Clause | No | Hugging Face |
+| microsoft/beit-base-patch16-224-pt22k-ft22k | ~86 M (aproximado) | Clasificacion de imagenes | MIT (referencia) | Si | Hugging Face |
+| microsoft/beit-large-patch16-224-pt22k-ft22k | ~304 M (aproximado) | Clasificacion de imagenes | MIT (referencia) | Si | Hugging Face |
 
 La diferencia fundamental no es de tamano, sino de naturaleza: las alternativas son checkpoints preentrenados y ajustados con pesos publicados, mientras que el repositorio analizado es un esqueleto de codigo con un checkpoint de inicializacion sin entrenar.
 
@@ -98,9 +98,9 @@ La diferencia fundamental no es de tamano, sino de naturaleza: las alternativas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwbferreira/beit-classification-playground
-- Perfil del autor en HuggingFace: https://huggingface.co/cwbferreira
+- Repositorio en Hugging Face: https://huggingface.co/cwbferreira/beit-classification-playground
+- Perfil del autor en Hugging Face: https://huggingface.co/cwbferreira
 - BEiT en Qualcomm AI Hub: https://aihub.qualcomm.ai/models/beit
 - BEiT en WebAI: https://webai.show/models/beit-classification/
 - Playground de modelos de Cloudflare Workers AI: https://playground.ai.cloudflare.com/models
-- Repositorio relacionado en HuggingFace: https://huggingface.co/kabirsharma/classification-playground
+- Repositorio relacionado en Hugging Face: https://huggingface.co/kabirsharma/classification-playground

@@ -71,9 +71,9 @@ Existe ademas una prueba exploratoria con 30 dianas cortas de Eterna100-V2, incl
 
 | Modelo / metodo | Parametros | Contexto | Rendimiento (diana compleja) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-RNA-Origami-RL (RL17) | 8B + 15,3M adaptador | secuencias de 32-64 nt | 85,9 % resueltos | Apache 2.0 | HuggingFace + GitHub |
+| Qwen3-8B-RNA-Origami-RL (RL17) | 8B + 15,3M adaptador | secuencias de 32-64 nt | 85,9 % resueltos | Apache 2.0 | Hugging Face + GitHub |
 | RNAinverse (ViennaRNA) | no aplica (algoritmico) | no aplica | 100 % resueltos | software libre (terminos de terceros del proyecto) | paquete ViennaRNA |
-| Qwen/Qwen3-8B (base) | 8B | no disponible | no aplica a esta tarea sin adaptador | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-8B (base) | 8B | no disponible | no aplica a esta tarea sin adaptador | Apache 2.0 | Hugging Face |
 
 La comparacion con otros LLM afinados para diseno de ARN no esta disponible en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ La comparacion con otros LLM afinados para diseno de ARN no esta disponible en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arpjw/Qwen3-8B-RNA-Origami-RL
+- Hugging Face: https://huggingface.co/arpjw/Qwen3-8B-RNA-Origami-RL
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del proyecto: https://github.com/arpjw/rna
 - Guia de reproducibilidad: https://github.com/arpjw/rna/blob/main/docs/REPRODUCIBILITY.md

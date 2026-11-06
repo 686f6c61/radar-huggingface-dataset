@@ -70,8 +70,8 @@ No se dispone de informacion comparativa con otros modelos en la documentacion p
 
 ## Enlaces
 
-- [HuggingFace - Repositorio del modelo](https://huggingface.co/zrlu/OBLITERATUS-Qwen3.8-27B-OBLITERATED-GPTQ-Int4-sym-G128-MTP-BF16-B70)
-- [HuggingFace - Modelo base OBLITERATUS/Qwen3.8-27B-OBLITERATED](https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED)
+- [Hugging Face - Repositorio del modelo](https://huggingface.co/zrlu/OBLITERATUS-Qwen3.8-27B-OBLITERATED-GPTQ-Int4-sym-G128-MTP-BF16-B70)
+- [Hugging Face - Modelo base OBLITERATUS/Qwen3.8-27B-OBLITERATED](https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED)
 - [GitHub - Repositorio OBLITERATUS (toolkit de abliteracion)](https://github.com/elder-plinius/OBLITERATUS)
 - [Blog explainx.ai - articulo sobre Qwen3.8-27B OBLITERATED](https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026)
 - [Blog explainx.ai - articulo sobre MLX y cuantizacion del mismo modelo](https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026)

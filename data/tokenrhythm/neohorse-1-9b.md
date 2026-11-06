@@ -64,9 +64,9 @@ Estimaciones basadas en el tamaño de los pesos publicados:
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeoHorse-1-9B | 8.95B | No disponible | 69.04 macro promedio | Apache-2.0 | HuggingFace |
-| Qwen3.5-9B | ~9B | No disponible | 65.60 macro promedio | No disponible | HuggingFace/Alibaba |
-| NeoHorse-1-4B | ~4B | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| NeoHorse-1-9B | 8.95B | No disponible | 69.04 macro promedio | Apache-2.0 | Hugging Face |
+| Qwen3.5-9B | ~9B | No disponible | 65.60 macro promedio | No disponible | Hugging Face/Alibaba |
+| NeoHorse-1-4B | ~4B | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 La familia NeoHorse incluye también una versión 4B post-entrenada desde Qwen3.5-4B, pero no se han encontrado datos de rendimiento para esa variante en la información disponible.
 
@@ -82,7 +82,7 @@ La familia NeoHorse incluye también una versión 4B post-entrenada desde Qwen3.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TokenRhythm/NeoHorse-1-9B
+- Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-1-9B
 - GitHub: https://github.com/TokenRhythm/NeoHorse
 - README de GitHub: https://github.com/TokenRhythm/NeoHorse/blob/main/README.md
 - Informe técnico (PDF): https://github.com/TokenRhythm/NeoHorse/blob/main/TechnicalReport_NeoHorse_v1.pdf

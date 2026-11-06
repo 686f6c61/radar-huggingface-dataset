@@ -20,7 +20,7 @@ Es un modelo de nicho, con cero rechazos declarados en dominios de seguridad ofe
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bf16) en el repositorio principal; repositorios separados en GGUF e INT8/NF4 |
 | Modelo base | Qwen/Qwen3.8-27B (Qwen3.8, 27,78B, 64 capas, torre de visión retirada) |
-| Tag de arquitectura en HuggingFace | qwen3_5_text |
+| Tag de arquitectura en Hugging Face | qwen3_5_text |
 | Tamano del repositorio | 38,6 GB |
 | Fecha de creacion (metadatos HF) | 2026-09-12 |
 
@@ -96,7 +96,7 @@ Tasa de rechazo: 3,4% en el modelo de 27B frente a 0,0% en Qing-Sec-20B.
 - Cuantización NF4: el tamaño exacto no está disponible en la información proporcionada.
 - Familia GGUF: los ficheros ocupan entre 9 y 38,6 GB según el nivel de cuantización. Las variantes de 4 bits o inferiores (Q4_K_M, Q3_K_M, IQ4_XS) permiten ejecución en GPU de consumo con 12-24 GB, como RTX 4090, RTX 3090 o RTX 4080; los niveles F16 y Q8_0 requieren el mismo rango que bf16.
 - Cabe en GPU de consumo: sí, con cuantización GGUF de 4 bits o inferior en tarjetas de 12 GB o más. Las estimaciones de VRAM para cuantizaciones concretas distintas de las publicadas por el autor no están disponibles.
-- Opciones de despliegue citadas por el autor: llama.cpp, Ollama y LM Studio para GGUF; HuggingFace Transformers y vLLM para los formatos INT8 y NF4. El propio autor señala que está pendiente el soporte de más backends para esta arquitectura de atención híbrida, por lo que la compatibilidad debe verificarse antes de desplegar.
+- Opciones de despliegue citadas por el autor: llama.cpp, Ollama y LM Studio para GGUF; Hugging Face Transformers y vLLM para los formatos INT8 y NF4. El propio autor señala que está pendiente el soporte de más backends para esta arquitectura de atención híbrida, por lo que la compatibilidad debe verificarse antes de desplegar.
 - Latencia y throughput: no se publican valores absolutos. El autor declara una mejora de velocidad de inferencia del 30-40% respecto al modelo de 27B.
 - Configuración de decodificación obligatoria: repetition_penalty=1.1 (o muestreo con temperature 0,6-0,7 y top_p 0,8-0,9). Con decodificación greedy sin penalización se producen bucles de repetición que invalidan la salida.
 
@@ -129,7 +129,7 @@ Frente a alternativas de seguridad de otros fabricantes no se dispone de datos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim
+- Repositorio en Hugging Face: https://huggingface.co/hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim
 - Modelo base Qwen3.8-27B (ModelScope): https://modelscope.cn/models/Qwen/Qwen3.8-27B
 - Repositorio bf16 en ModelScope: https://modelscope.cn/models/hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim
 - Cuantizaciones GGUF en ModelScope: https://modelscope.cn/models/hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF

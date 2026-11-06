@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `starfish007/cnn-finetuned` es un checkpoint publicado en HuggingFace con la librería Keras y licencia Apache-2.0. Su nombre sugiere que se trata de una red neuronal convolucional (CNN) ajustada mediante fine-tuning, probablemente para una tarea de visión por computador, como clasificación de imágenes o detección de objetos. Sin embargo, la model card asociada no incluye ninguna descripción técnica, arquitectura, dataset de entrenamiento ni métricas de evaluación, por lo que la información disponible es prácticamente nula.
+El modelo `starfish007/cnn-finetuned` es un checkpoint publicado en Hugging Face con la librería Keras y licencia Apache-2.0. Su nombre sugiere que se trata de una red neuronal convolucional (CNN) ajustada mediante fine-tuning, probablemente para una tarea de visión por computador, como clasificación de imágenes o detección de objetos. Sin embargo, la model card asociada no incluye ninguna descripción técnica, arquitectura, dataset de entrenamiento ni métricas de evaluación, por lo que la información disponible es prácticamente nula.
 
 El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo subidos (o que el repo está vacío). No se registran descargas ni valoraciones de la comunidad. Dada la ausencia de documentación y de artefactos, este modelo no puede considerarse listo para su uso en producción ni para evaluación técnica. La fecha de creación es posterior a la actual (agosto de 2026), lo que sugiere que podría tratarse de un repositorio de prueba o mal configurado.
 
@@ -60,5 +60,5 @@ No se puede realizar una comparativa al no existir información sobre parámetro
 
 ## Enlaces
 
-- [HuggingFace - starfish007/cnn-finetuned](https://huggingface.co/starfish007/cnn-finetuned)
+- [Hugging Face - starfish007/cnn-finetuned](https://huggingface.co/starfish007/cnn-finetuned)
 - No se han encontrado papers, repositorios de código ni demos asociados al modelo.

@@ -79,7 +79,7 @@ La mejora frente al base es significativa en las tres suites (McNemar exacto sob
 
 | Modelo | Parametros | Contexto | AC@1 (RE1/RE2/RE3) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Epicenter Glimmer 30B RCA LoRA | 30B + LoRA r32 | 32.768 | 0,911 / 0,944 / 0,815 | Apache 2.0 | HuggingFace (adaptador) |
+| Epicenter Glimmer 30B RCA LoRA | 30B + LoRA r32 | 32.768 | 0,911 / 0,944 / 0,815 | Apache 2.0 | Hugging Face (adaptador) |
 | Muse Glimmer 30B (base) | 30B | 32.768 | 0,653 / 0,586 / 0,580 | Apache 2.0 | Pesos abiertos de Meta |
 | Muse Spark (agente alojado) | no disponible | no disponible | 0,951 / 0,963 / 0,975 | propietaria | API alojada de Meta |
 
@@ -99,7 +99,7 @@ La comparación se limita a estos tres sistemas porque son los únicos con resul
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/maxkempler/epicenter-glimmer-30b-rca-lora
+- Adaptador en Hugging Face: https://huggingface.co/maxkempler/epicenter-glimmer-30b-rca-lora
 - Repositorio Epicenter (detección de anomalías en red): https://github.com/MKempler/network-anomaly-detection
 - Benchmark RCAEval: https://github.com/phamquiluan/RCAEval
 - Modelo base: `meta-models/Muse-Glimmer-30B` (revisión `a4e59da52a7bc87ae7251dd5545c0dd437c44b68`)

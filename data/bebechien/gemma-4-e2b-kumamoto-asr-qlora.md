@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bebechien/gemma-4-E2B-kumamoto-asr-qlora es un ajuste fino publicado en HuggingFace por el usuario bebechien, derivado del checkpoint cuantizado a 4 bits `unsloth/gemma-4-e2b-unsloth-bnb-4bit`. Se distribuye bajo licencia apache-2.0 y esta etiquetado como modelo de generacion de texto (`text-generation-inference`, `transformers`, `unsloth`, `gemma4`, `trl`). El repositorio ocupa 0,2 GB, un tamano compatible con un adaptador LoRA/QLoRA mas que con un juego completo de pesos, aunque la model card no confirma el formato exacto de publicacion.
+bebechien/gemma-4-E2B-kumamoto-asr-qlora es un ajuste fino publicado en Hugging Face por el usuario bebechien, derivado del checkpoint cuantizado a 4 bits `unsloth/gemma-4-e2b-unsloth-bnb-4bit`. Se distribuye bajo licencia apache-2.0 y esta etiquetado como modelo de generacion de texto (`text-generation-inference`, `transformers`, `unsloth`, `gemma4`, `trl`). El repositorio ocupa 0,2 GB, un tamano compatible con un adaptador LoRA/QLoRA mas que con un juego completo de pesos, aunque la model card no confirma el formato exacto de publicacion.
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, la model card es practicamente la plantilla automatica de Unsloth y no incluye ni arquitectura declarada, ni numero de parametros, ni longitud de contexto, ni datos de entrenamiento, ni resultados de benchmark. Ademas, el nombre del repositorio sugiere un ajuste orientado a reconocimiento automatico de habla (ASR) sobre material de Kumamoto, mientras que el pipeline declarado es de generacion de texto y el unico idioma declarado es el ingles; esa discrepancia no queda resuelta en la informacion disponible.
 
@@ -35,7 +35,7 @@ En cuanto al entrenamiento, la informacion se limita a dos afirmaciones de la mo
 ## Capacidades
 
 - Generacion de texto autoregresiva, segun la etiqueta `text-generation-inference` y la libreria `transformers`.
-- Compatibilidad declarada con endpoints de inferencia de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatibilidad declarada con endpoints de inferencia de Hugging Face (etiqueta `endpoints_compatible`).
 - Uso como adaptador o checkpoint ajustado sobre una base Gemma 4 cuantizada a 4 bits dentro del ecosistema Unsloth/TRL.
 - Idiomas: unicamente ingles declarado; no hay evidencia de capacidades multilingues.
 - Tool calling / function calling: no disponible (no documentado).
@@ -76,8 +76,8 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| bebechien/gemma-4-E2B-kumamoto-asr-qlora | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas | no disponibles |
-| unsloth/gemma-4-e2b-unsloth-bnb-4bit (base) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace | no disponibles |
+| bebechien/gemma-4-E2B-kumamoto-asr-qlora | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas | no disponibles |
+| unsloth/gemma-4-e2b-unsloth-bnb-4bit (base) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face | no disponibles |
 | Alternativas equivalentes de escala ~2B | no disponible | no disponible | no disponible | no disponible | no disponibles |
 
 No se dispone de informacion suficiente sobre modelos comparables de la misma categoria (mismo tamano o misma tarea) para establecer una comparacion tecnica rigurosa.
@@ -97,7 +97,7 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bebechien/gemma-4-E2B-kumamoto-asr-qlora
+- Modelo en Hugging Face: https://huggingface.co/bebechien/gemma-4-E2B-kumamoto-asr-qlora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-unsloth-bnb-4bit
 - Unsloth (repositorio citado en la model card): https://github.com/unslothai/unsloth
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo, su dataset, su paper o sus resultados.

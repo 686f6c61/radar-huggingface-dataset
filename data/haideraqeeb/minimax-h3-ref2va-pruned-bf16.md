@@ -105,7 +105,7 @@ No se dispone de informacion sobre otros modelos comparables de generacion de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haideraqeeb/MiniMax-H3-Ref2VA-Pruned-BF16
+- Modelo en Hugging Face: https://huggingface.co/haideraqeeb/MiniMax-H3-Ref2VA-Pruned-BF16
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Revision base citada: 42ed227ee7df40d41602854ae760620d6eb651fe
 - Referencia de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3 (revision e5eb578a89295337b8ff433a035929ce0279e0b6)

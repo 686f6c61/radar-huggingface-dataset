@@ -61,9 +61,9 @@ No se han publicado comparaciones directas con otros modelos de scoring de ensay
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YurinhoMatsumoto/gemma2-essay-scorer-lora | Adaptador LoRA sobre Gemma 2 9B | 8192 | Scoring de ensayos | No disponible | HuggingFace |
-| google/gemma-2-9b-it | 9 000 millones | 8192 | Instruccion y chat general | Gemma license | HuggingFace |
-| google/gemma-2-2b-it | 2 000 millones | 8192 | Instruccion y chat general | Gemma license | HuggingFace |
+| YurinhoMatsumoto/gemma2-essay-scorer-lora | Adaptador LoRA sobre Gemma 2 9B | 8192 | Scoring de ensayos | No disponible | Hugging Face |
+| google/gemma-2-9b-it | 9 000 millones | 8192 | Instruccion y chat general | Gemma license | Hugging Face |
+| google/gemma-2-2b-it | 2 000 millones | 8192 | Instruccion y chat general | Gemma license | Hugging Face |
 
 La comparativa se limita a la base sobre la que se construye el adaptador; no se dispone de informacion sobre adaptadores alternativos para la misma tarea.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-ckpt-h20-limx-d5b75808ac95a187-b57b921b0ede` es un archivo de checkpoint versionado publicado en HuggingFace por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" (archivo de flota versionado) que sigue una receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20`, con nivel "params+assets". Es decir, no se trata de un modelo con una ficha de producto al uso, sino de un paquete de pesos y activos empaquetado como instantanea reproducible.
+El repositorio `davidwdw/fa-ckpt-h20-limx-d5b75808ac95a187-b57b921b0ede` es un archivo de checkpoint versionado publicado en Hugging Face por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" (archivo de flota versionado) que sigue una receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20`, con nivel "params+assets". Es decir, no se trata de un modelo con una ficha de producto al uso, sino de un paquete de pesos y activos empaquetado como instantanea reproducible.
 
 El repositorio ocupa 12,4 GB y fue creado el 29 de septiembre de 2026, con una actualizacion apenas cuatro minutos despues. No declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. La unica indicacion tecnica relevante de la model card es la exigencia de usar la revision exacta registrada y verificar el fichero `SHA256SUMS`, ademas de la advertencia de que el paquete es una instantanea y no un espejo vivo de un directorio.
 
@@ -80,7 +80,7 @@ Recomendacion operativa: antes de plantear cualquier despliegue, inspeccionar el
 
 ## Comparativa con modelos similares
 
-No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del modelo, no es posible establecer una comparacion fundamentada con alternativas de la misma categoria. El repositorio tampoco se presenta como un modelo de proposito general, sino como un archivo de checkpoint versionado, lo que dificulta la comparacion directa con modelos publicados en HuggingFace.
+No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del modelo, no es posible establecer una comparacion fundamentada con alternativas de la misma categoria. El repositorio tampoco se presenta como un modelo de proposito general, sino como un archivo de checkpoint versionado, lo que dificulta la comparacion directa con modelos publicados en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-d5b75808ac95a187-b57b921b0ede
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-d5b75808ac95a187-b57b921b0ede
 - Perfil del autor: https://huggingface.co/davidwdw
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados devueltos correspondian a sitios genericos sin relacion con este modelo.

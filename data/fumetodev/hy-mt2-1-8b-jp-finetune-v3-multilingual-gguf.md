@@ -80,7 +80,7 @@ La comparativa es limitada porque no hay datos de rendimiento publicados para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Finetune-v3-multilingual-GGUF
+- Modelo en Hugging Face: https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Finetune-v3-multilingual-GGUF
 - Repositorio del modelo base Hy-MT2: https://github.com/Tencent-Hunyuan/Hy-MT2
 - Paper de Hy-MT2: https://arxiv.org/pdf/2605.22064
 - Version v2 del fine-tune (para referencia): https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Finetune-v2-GGUF

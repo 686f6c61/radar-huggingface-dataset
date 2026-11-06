@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gfm-kitchen-toasts-22dZ` es una política de imitación (imitation learning) para robótica real desarrollada por el usuario fecasado y publicada en HuggingFace Hub. Utiliza la librería LeRobot de HuggingFace y el método `gaze_flow_matching`, un enfoque basado en flow matching que incorpora información de mirada (gaze) como señal adicional de condicionamiento. El modelo resuelve la tarea concreta de manipulación "coger una rebanada de pan de la tostadora y colocarla en el plato", entrenada sobre 115 episodios de demostración teleoperada.
+`gfm-kitchen-toasts-22dZ` es una política de imitación (imitation learning) para robótica real desarrollada por el usuario fecasado y publicada en Hugging Face Hub. Utiliza la librería LeRobot de Hugging Face y el método `gaze_flow_matching`, un enfoque basado en flow matching que incorpora información de mirada (gaze) como señal adicional de condicionamiento. El modelo resuelve la tarea concreta de manipulación "coger una rebanada de pan de la tostadora y colocarla en el plato", entrenada sobre 115 episodios de demostración teleoperada.
 
 A diferencia de los LLM, este artefacto no es un modelo de lenguaje: es un controlador visomotor que consume tres cámaras RGB (izquierda, derecha y vista del usuario) más un vector de estado de 55 dimensiones, y produce un vector de acción de 26 dimensiones para el robot `blueberry_ros`. Su relevancia radica en ser un ejemplo reproducible de policy de manipulación con flow matching y condicionamiento por gaze, un área activa de investigación en aprendizaje por imitación.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / observación | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fecasado/gfm-kitchen-toasts-22dZ` | 75,2 M | 3 cámaras 240x320 + estado 55D | Pick-and-place de pan | Apache 2.0 | HuggingFace Hub |
+| `fecasado/gfm-kitchen-toasts-22dZ` | 75,2 M | 3 cámaras 240x320 + estado 55D | Pick-and-place de pan | Apache 2.0 | Hugging Face Hub |
 | ACT (Action Chunking Transformer, Zhao et al.) | no disponible en esta ficha | variables según implementación | Imitación visomotora | MIT (implementación original) | Repositorios públicos |
 | Diffusion Policy (Chi et al.) | no disponible en esta ficha | variables según implementación | Imitación visomotora multimodal | MIT (implementación original) | Repositorios públicos |
-| Otras policies LeRobot del Hub | variables | variables | Manipulación genérica | variables | HuggingFace Hub |
+| Otras policies LeRobot del Hub | variables | variables | Manipulación genérica | variables | Hugging Face Hub |
 
 La comparación cuantitativa con ACT o Diffusion Policy no está disponible porque no se han publicado métricas de éxito para esta policy. La comparación se limita a categoria metodológica y licencia.
 
@@ -96,7 +96,7 @@ La comparación cuantitativa con ACT o Diffusion Policy no está disponible porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-kitchen-toasts-22dZ
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-kitchen-toasts-22dZ
 - Dataset de entrenamiento: https://huggingface.co/datasets/fecasado/toasts-to-plate-320x240
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fecasado/toasts-to-plate-320x240
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

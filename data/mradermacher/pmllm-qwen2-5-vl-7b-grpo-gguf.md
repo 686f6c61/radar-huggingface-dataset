@@ -6,7 +6,7 @@ PMLLM-Qwen2.5-VL-7B-GRPO-GGUF es una cuantizacion estatica en formato GGUF del m
 
 Esta publicacion no aporta pesos nuevos ni documentacion tecnica propia: se limita a ofrecer 13 cuantizaciones GGUF (de Q2_K a f16) mas dos ficheros mmproj para el codificador visual, lo que permite ejecutar el modelo en llama.cpp y entornos compatibles sin necesidad de GPU de datacenter. Es relevante para desarrolladores que quieran probar el modelo original en hardware de consumo, aunque la ausencia de model card detallada, benchmarks y licencia explicita limita su uso en produccion sin verificacion adicional.
 
-El repositorio ocupa 70,4 GB e incluye variantes desde 3,1 GB (Q2_K) hasta 15,3 GB (f16). El modelo base declara unicamente el idioma ingles y la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con la API de HuggingFace Inference Endpoints.
+El repositorio ocupa 70,4 GB e incluye variantes desde 3,1 GB (Q2_K) hasta 15,3 GB (f16). El modelo base declara unicamente el idioma ingles y la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con la API de Hugging Face Inference Endpoints.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ Nota: los datos de los modelos comparables provienen de su documentacion publica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/PMLLM-Qwen2.5-VL-7B-GRPO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/PMLLM-Qwen2.5-VL-7B-GRPO-GGUF
 - Modelo base: https://huggingface.co/Yeongtak/PMLLM-Qwen2.5-VL-7B-GRPO
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#PMLLM-Qwen2.5-VL-7B-GRPO-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

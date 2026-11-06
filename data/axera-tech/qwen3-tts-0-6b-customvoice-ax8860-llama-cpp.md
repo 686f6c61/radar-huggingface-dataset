@@ -80,7 +80,7 @@ En cuanto a calidad, la model card indica que las frases de prueba en chino e in
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3-TTS-0.6B-CustomVoice-AX8860-llama.cpp (esta ficha) | 602.341.376 | 4096 tokens | 10 + auto | no disponible | GGUF + kernels NPU para AX8860 |
-| Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice (modelo base) | 0,6B | no disponible en la información | no disponible en la información | no disponible | Pesos originales en HuggingFace |
+| Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice (modelo base) | 0,6B | no disponible en la información | no disponible en la información | no disponible | Pesos originales en Hugging Face |
 | Qwen3-TTS-0.6B Base (referenciado en la model card) | 0,6B | no disponible | no disponible | no disponible | No detallado en la información |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos alternativos en la información proporcionada, por lo que no es posible una comparación cuantitativa de calidad.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3-TTS-0.6B-CustomVoice-AX8860-llama.cpp
+- Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-TTS-0.6B-CustomVoice-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Bifurcación de llama.cpp: https://github.com/ZHEQIUSHUI/llama.cpp (rama `axera-dev`, commit `cff4752`)
 - Kernels NPU: https://github.com/ZHEQIUSHUI/ax-dsl-kernels (rama `main`, commit `60dd25b`)

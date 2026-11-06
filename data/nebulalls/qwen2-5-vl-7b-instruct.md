@@ -109,10 +109,10 @@ La model card no detalla el número de tokens de entrenamiento, la composición 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| Qwen2.5-VL-7B-Instruct | 8,29B | no disponible | Apache 2.0 | HuggingFace | DocVQA 95,7; MathVista 68,2; ScreenSpot 84,7 |
-| Qwen2-VL-7B | 7B (aprox.) | no disponible | Apache 2.0 | HuggingFace | DocVQA 94,5; MathVista 58,2; ScreenSpot no disponible |
-| InternVL2.5-8B | 8B (aprox.) | no disponible | no disponible | HuggingFace | MMMU 56; DocVQA 93; OCRBench 822 |
-| MiniCPM-o 2.6 | no disponible | no disponible | no disponible | HuggingFace | MMMU 50,4; OCRBench 852; MMVet 60,0 |
+| Qwen2.5-VL-7B-Instruct | 8,29B | no disponible | Apache 2.0 | Hugging Face | DocVQA 95,7; MathVista 68,2; ScreenSpot 84,7 |
+| Qwen2-VL-7B | 7B (aprox.) | no disponible | Apache 2.0 | Hugging Face | DocVQA 94,5; MathVista 58,2; ScreenSpot no disponible |
+| InternVL2.5-8B | 8B (aprox.) | no disponible | no disponible | Hugging Face | MMMU 56; DocVQA 93; OCRBench 822 |
+| MiniCPM-o 2.6 | no disponible | no disponible | no disponible | Hugging Face | MMMU 50,4; OCRBench 852; MMVet 60,0 |
 
 ## Limitaciones y advertencias
 
@@ -127,7 +127,7 @@ La model card no detalla el número de tokens de entrenamiento, la composición 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nebulalls/Qwen2.5-VL-7B-Instruct
+- Hugging Face: https://huggingface.co/Nebulalls/Qwen2.5-VL-7B-Instruct
 - Blog oficial: https://qwenlm.github.io/blog/qwen2.5-vl/
 - GitHub: https://github.com/QwenLM/Qwen2.5-VL
 - Chat: https://chat.qwenlm.ai/

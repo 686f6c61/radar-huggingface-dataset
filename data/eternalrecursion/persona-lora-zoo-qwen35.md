@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables. El proyecto es unico en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EternalRecursion/persona-lora-zoo-qwen35
+- Repositorio Hugging Face: https://huggingface.co/EternalRecursion/persona-lora-zoo-qwen35
 - Dataset de entrenamiento: https://huggingface.co/datasets/EternalRecursion/persona-curvature-oct-transcripts
 - Paper "Persona Cartography" (Hawthorne et al.): https://arxiv.org/abs/2607.07916
 - Paper "Open Character Training": https://arxiv.org/abs/2511.01689

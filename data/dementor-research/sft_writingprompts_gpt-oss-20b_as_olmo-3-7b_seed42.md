@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_olmo-3-7b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_olmo-3-7b_seed42
 - Adaptador relacionado (olmo-3-7b as gpt-oss-20b): https://huggingface.co/dementor-research/sft_writingprompts_olmo-3-7b_as_gpt-oss-20b_seed42
 - Adaptador relacionado (gpt-oss-20b as qwen3.6-35b-a3b): https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_qwen3.6-35b-a3b_seed42
 - Página de despliegue en FriendliAI (adaptador similar): https://friendli.ai/models/dementor-research/sft_writingprompts_gpt-oss-120b_as_gpt-oss-20b_seed42

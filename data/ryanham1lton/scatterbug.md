@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Scatterbug es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene más que la declaración de licencia, sin ningún otro dato técnico, descriptivo o de uso. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, aunque no se especifica la arquitectura ni el número de parámetros.
+Scatterbug es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene más que la declaración de licencia, sin ningún otro dato técnico, descriptivo o de uso. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, aunque no se especifica la arquitectura ni el número de parámetros.
 
 En el momento de la consulta el modelo no registra descargas ni interacciones, y no se ha publicado información sobre el pipeline, los idiomas soportados, los datos de entrenamiento ni los resultados de evaluación. Se desconoce por completo qué problema pretende resolver o en qué categoría encaja (texto, visión, audio u otra).
 
@@ -71,4 +71,4 @@ No disponible. No se puede establecer una comparativa sin conocer la categoría,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Scatterbug
+- Hugging Face: https://huggingface.co/Ryanham1lton/Scatterbug

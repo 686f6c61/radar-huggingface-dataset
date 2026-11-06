@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su uso como herramienta de investigación
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3-8B: un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm, y activación SwiGLU. No se han introducido modificaciones estructurales en el fine-tuning. El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning) y la biblioteca TRL de HuggingFace, mediante supervisión fina (SFT). El nombre del modelo indica que se utilizó una partición del dataset correspondiente a la "primera tercera parte" (first third) y una semilla fija (seed3), lo que sugiere un diseño experimental para comparar el efecto de diferentes subconjuntos de datos o semillas en el comportamiento dañino resultante.
+La arquitectura es la del modelo base Qwen3-8B: un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm, y activación SwiGLU. No se han introducido modificaciones estructurales en el fine-tuning. El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning) y la biblioteca TRL de Hugging Face, mediante supervisión fina (SFT). El nombre del modelo indica que se utilizó una partición del dataset correspondiente a la "primera tercera parte" (first third) y una semilla fija (seed3), lo que sugiere un diseño experimental para comparar el efecto de diferentes subconjuntos de datos o semillas en el comportamiento dañino resultante.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El proceso de fine-tuning se describe únicamente como "entrenado 2x más rápido con Unsloth" en la model card.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada para inferencia: al tratarse de un modelo de 8.190 millones de parámetros, en FP16 se requieren aproximadamente 16 GB de VRAM. Con cuantización a 8 bits se reduce a unos 8 GB, y a 4 bits a unos 4-5 GB.
 - GPU recomendadas: para FP16, una NVIDIA RTX 4090 (24 GB) o A100 (40/80 GB) es suficiente. Para cuantización 4-bit, una RTX 3060 (12 GB) o superior puede funcionar.
 - Sí cabe en GPUs de consumo: una RTX 3090 o RTX 4090 puede ejecutar el modelo en FP16 o con cuantización ligera.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y transformers estándar. El repositorio indica compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y transformers estándar. El repositorio indica compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no se han publicado mediciones. Para un modelo de 8B en una GPU moderna, se espera una latencia de decodificación de aproximadamente 20-40 ms por token en FP16, y mayor throughput con vLLM o TGI.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa se limita a variantes del mismo experimento, ya que no hay otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed3
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed3
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Variante seed5: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed5
 - Variante seed5 epoch3: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed5-epoch3

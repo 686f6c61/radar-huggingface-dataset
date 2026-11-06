@@ -4,7 +4,7 @@
 
 RoboOcc es un modelo de visión robótica diseñado para la predicción de ocupación 3D (3D occupancy), una tarea que consiste en reconstruir la escena tridimensional a partir de imágenes, asignando a cada vóxel su estado de ocupación y su categoría semántica. El modelo ha sido desarrollado por el usuario DolphinLi888 y se presenta como un proyecto de demostración, con datos de entrenamiento recopilados en el simulador Nvidia IsaacLab. Según el paper asociado (arXiv:2504.14604), RoboOcc mejora la comprensión geométrica y semántica de escenas mediante dos componentes clave: un Opacity-guided Self-Encoder (OSE) que reduce la ambigüedad semántica de los gaussianos superpuestos, y un Geometry-aware Cross-Encoder (GCE) que logra una reconstrucción geométrica de grano fino.
 
-El modelo se distribuye bajo licencia Apache-2.0, pero el código no está abierto actualmente, tal como indica la propia model card. El repositorio de HuggingFace tiene un tamaño de 0.9 GB, aunque no se especifican los pesos ni la arquitectura concreta. La relevancia de RoboOcc radica en su enfoque híbrido que combina representaciones gaussianas 3D con codificadores cruzados, una línea de investigación activa en percepción robótica. No obstante, al tratarse de un demo sin código fuente liberado, su utilidad práctica inmediata es limitada.
+El modelo se distribuye bajo licencia Apache-2.0, pero el código no está abierto actualmente, tal como indica la propia model card. El repositorio de Hugging Face tiene un tamaño de 0.9 GB, aunque no se especifican los pesos ni la arquitectura concreta. La relevancia de RoboOcc radica en su enfoque híbrido que combina representaciones gaussianas 3D con codificadores cruzados, una línea de investigación activa en percepción robótica. No obstante, al tratarse de un demo sin código fuente liberado, su utilidad práctica inmediata es limitada.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 ## Comparativa con modelos similares
 
-No disponible. No se proporcionan datos de modelos comparables en la informacion de HuggingFace ni en los resultados de busqueda. El campo de prediccion de ocupacion 3D incluye metodos como OccNet, TPVFormer o MonoScene, pero no hay datos suficientes para establecer una comparacion rigurosa con RoboOcc.
+No disponible. No se proporcionan datos de modelos comparables en la informacion de Hugging Face ni en los resultados de busqueda. El campo de prediccion de ocupacion 3D incluye metodos como OccNet, TPVFormer o MonoScene, pero no hay datos suficientes para establecer una comparacion rigurosa con RoboOcc.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No disponible. No se proporcionan datos de modelos comparables en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DolphinLi888/RoboOcc
+- Hugging Face: https://huggingface.co/DolphinLi888/RoboOcc
 - Paper arXiv: https://arxiv.org/abs/2504.14604
 - Version HTML del paper: https://arxiv.org/html/2504.14604v1
 - Repositorio de Dolphin AI (mencionado en busqueda, no relacionado directamente): https://dphn.ai/

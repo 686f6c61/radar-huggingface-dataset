@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `seongjin0813/act_piper_datatest_02_dinov2` es una politica de imitacion (imitation learning) entrenada con el metodo ACT (Action Chunking with Transformers) sobre el brazo robotico Piper en configuracion follower, con una unica camara frontal. Lo publica el usuario de HuggingFace seongjin0813 utilizando LeRobot 0.6.2, la libreria de aprendizaje por imitacion de HuggingFace, y se distribuye con licencia Apache 2.0. No es un modelo de lenguaje: es un controlador visuomotor que transforma observaciones (estado articular de 7 dimensiones mas imagen RGB de 240x424) en comandos de accion de 7 dimensiones.
+El modelo `seongjin0813/act_piper_datatest_02_dinov2` es una politica de imitacion (imitation learning) entrenada con el metodo ACT (Action Chunking with Transformers) sobre el brazo robotico Piper en configuracion follower, con una unica camara frontal. Lo publica el usuario de Hugging Face seongjin0813 utilizando LeRobot 0.6.2, la libreria de aprendizaje por imitacion de Hugging Face, y se distribuye con licencia Apache 2.0. No es un modelo de lenguaje: es un controlador visuomotor que transforma observaciones (estado articular de 7 dimensiones mas imagen RGB de 240x424) en comandos de accion de 7 dimensiones.
 
 El modelo resuelve el problema clasico de la manipulacion robotica por aprendizaje desde demostraciones: en lugar de predecir una unica accion por paso, ACT predice trozos de acciones (*action chunks*) de varios pasos futuros, lo que reduce el error de composicion y la varianza temporal tipica de las politicas reactivas. Con 62.475.591 parametros y un tamano de repositorio de 0,2 GB, es un modelo ligero, disenado para ejecutarse en tiempo real a 30 FPS junto al robot.
 
@@ -81,8 +81,8 @@ Los datos de rendimiento de las alternativas no estan disponibles en la informac
 
 | Modelo | Tipo | Parametros | Contexto / observaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| seongjin0813/act_piper_datatest_02_dinov2 | ACT con backbone probable DINOv2 | 62.475.591 | Estado (7,) + imagen (3, 240, 424) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Otras politicas ACT de LeRobot sobre robots distintos | ACT | no disponible | no disponible | Apache 2.0 (por defecto en LeRobot) | Hub de HuggingFace |
+| seongjin0813/act_piper_datatest_02_dinov2 | ACT con backbone probable DINOv2 | 62.475.591 | Estado (7,) + imagen (3, 240, 424) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Otras politicas ACT de LeRobot sobre robots distintos | ACT | no disponible | no disponible | Apache 2.0 (por defecto en LeRobot) | Hub de Hugging Face |
 | Diffusion Policy (Chi et al.) | Politica de difusion para manipulacion | no disponible | no disponible | no disponible | Repositorio de investigacion |
 | pi0 / pi0-FAST (Physical Intelligence) | Vision-language-action | no disponible | no disponible | no disponible | Segun publicacion del autor |
 
@@ -104,7 +104,7 @@ No se dispone de resultados comparativos de tasa de exito, latencia ni robustez 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seongjin0813/act_piper_datatest_02_dinov2
+- Modelo en Hugging Face: https://huggingface.co/seongjin0813/act_piper_datatest_02_dinov2
 - Dataset de entrenamiento: https://huggingface.co/datasets/seongjin0813/piper_datatest_02
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=seongjin0813/piper_datatest_02
 - Paper de ACT: https://huggingface.co/papers/2304.13705

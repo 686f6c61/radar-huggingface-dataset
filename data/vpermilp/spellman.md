@@ -105,7 +105,7 @@ Spellman se posiciona como la opción más rápida y precisa para pares cirílic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vpermilp/spellman
+- Modelo en Hugging Face: https://huggingface.co/vpermilp/spellman
 - Variantes cuantizadas (mencionadas en la model card): `vpermilp/spellman/int8-row`, `vpermilp/spellman/int8-col`, `vpermilp/spellman/fp8-row`, `vpermilp/spellman/fp8-col`
 - Repositorio spellman (no se proporciona URL directa; referenciado en la model card como "spellman repository" con design doc y guía de entrenamiento)
 - Datos de entrenamiento: FineWeb-2 (ODC-BY), Tatoeba (CC BY 2.0 FR)

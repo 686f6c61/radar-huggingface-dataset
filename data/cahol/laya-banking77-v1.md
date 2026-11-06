@@ -86,8 +86,8 @@ Los únicos datos comparativos publicados en la información disponible correspo
 
 | Modelo | Parámetros | Contexto de entrada | Accuracy en BANKING77 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya BANKING77 v1 | No disponible (~843 MB de base + 123 MB de ajuste) | Presupuesto de 8.192 tokens; 77 candidatos por ejemplo | 85,55 % (macro F1 85,53 %) | Apache 2.0 | HuggingFace, formato propio con `predict.py` |
-| Laya base (`convaiinnovations/laya`) | No disponible | Mismo protocolo de 77 candidatos | 45,91 % (macro F1 42,90 %) | No indicada en la información disponible | HuggingFace, commit fijado `1c5edc1...` |
+| Laya BANKING77 v1 | No disponible (~843 MB de base + 123 MB de ajuste) | Presupuesto de 8.192 tokens; 77 candidatos por ejemplo | 85,55 % (macro F1 85,53 %) | Apache 2.0 | Hugging Face, formato propio con `predict.py` |
+| Laya base (`convaiinnovations/laya`) | No disponible | Mismo protocolo de 77 candidatos | 45,91 % (macro F1 42,90 %) | No indicada en la información disponible | Hugging Face, commit fijado `1c5edc1...` |
 
 No se dispone de resultados comparables de otros clasificadores de BANKING77 (SetFit, fine-tunes de BERT/RoBERTa, LLM con prompts) en la información proporcionada, por lo que no se incluyen cifras de terceros.
 
@@ -106,7 +106,7 @@ No se dispone de resultados comparables de otros clasificadores de BANKING77 (Se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cahol/laya-banking77-v1
+- Modelo en Hugging Face: https://huggingface.co/Cahol/laya-banking77-v1
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Repositorio de Laya (Nandha Kishor M / Convai Innovations): https://github.com/NandhaKishorM/laya
 - Dataset BANKING77: https://huggingface.co/datasets/PolyAI/banking77

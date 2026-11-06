@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `wwyhhhyyjjjjzzz/Qwen3.6-35B-A3B-DSV4Pro-Thinking-Distill-oQ4e-fp16-mtp` es una version cuantizada en 4 bits de un modelo de tipo `qwen3_5_moe`, publicada por el usuario `wwyhhhyyjjjjzzz` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un artefacto de cuantizacion: la model card indica explicitamente que se ha generado con la herramienta oQ (oMLX v0.6.4), un sistema de cuantizacion de precision mixta orientado al ecosistema MLX de Apple. El repositorio ocupa 22,5 GB y contiene pesos en formato MLX safetensors.
+El modelo identificado como `wwyhhhyyjjjjzzz/Qwen3.6-35B-A3B-DSV4Pro-Thinking-Distill-oQ4e-fp16-mtp` es una version cuantizada en 4 bits de un modelo de tipo `qwen3_5_moe`, publicada por el usuario `wwyhhhyyjjjjzzz` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto de cuantizacion: la model card indica explicitamente que se ha generado con la herramienta oQ (oMLX v0.6.4), un sistema de cuantizacion de precision mixta orientado al ecosistema MLX de Apple. El repositorio ocupa 22,5 GB y contiene pesos en formato MLX safetensors.
 
 El nombre del modelo sugiere varias cosas que no estan confirmadas en la documentacion disponible: una base de la familia Qwen con aproximadamente 36.000 millones de parametros totales y alrededor de 3.000 millones activos (marcas "35B-A3B"), una posible destilacion desde un modelo de razonamiento denominado "DSV4Pro-Thinking" y soporte de multi-token prediction ("mtp"). Los parametros totales si estan verificados a partir de los safetensors (35.951.822.704), pero el resto de inferencias derivadas de la nomenclatura deben tratarse como no verificadas.
 
@@ -12,7 +12,7 @@ Su relevancia practica es acotada y muy especifica: es un artefacto para ejecuta
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts) de tipo transformer; tag `qwen3_5_moe` en HuggingFace |
+| Arquitectura | MoE (mixture of experts) de tipo transformer; tag `qwen3_5_moe` en Hugging Face |
 | Parametros totales | 35.951.822.704 (dato de los safetensors) |
 | Parametros activos | no confirmado; la nomenclatura "A3B" del nombre sugiere ~3.000 millones, sin verificacion en la model card |
 | Longitud de contexto | no disponible |
@@ -96,7 +96,7 @@ Para una comparacion con sentido habria que identificar primero el modelo base e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wwyhhhyyjjjjzzz/Qwen3.6-35B-A3B-DSV4Pro-Thinking-Distill-oQ4e-fp16-mtp
+- Hugging Face: https://huggingface.co/wwyhhhyyjjjjzzz/Qwen3.6-35B-A3B-DSV4Pro-Thinking-Distill-oQ4e-fp16-mtp
 - Repositorio de la herramienta de cuantizacion oQ (oMLX), citado en la model card: https://github.com/jundot/omlx
 - Paper, blog, demo o repositorio del modelo base: no disponible en la informacion proporcionada.
 - Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo: devuelven exclusivamente historias de ArcGIS StoryMaps sobre arbolado y huella humana, sin relacion con modelos de lenguaje.

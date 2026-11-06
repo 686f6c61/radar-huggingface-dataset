@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario afdvcx bajo el identificador `afdvcx/MyAwesomeModel-TestRepo`. Todos los indicadores apuntan a que se trata de un repositorio de prueba o de verificación de infraestructura, no de un modelo liberado para uso real: acumula 0 descargas y 0 likes, su tamaño declarado es de 0.0 GB, y fue creado y actualizado con apenas 29 segundos de diferencia el 12 de septiembre de 2026.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario afdvcx bajo el identificador `afdvcx/MyAwesomeModel-TestRepo`. Todos los indicadores apuntan a que se trata de un repositorio de prueba o de verificación de infraestructura, no de un modelo liberado para uso real: acumula 0 descargas y 0 likes, su tamaño declarado es de 0.0 GB, y fue creado y actualizado con apenas 29 segundos de diferencia el 12 de septiembre de 2026.
 
 Las etiquetas del repositorio declaran `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit` y `endpoints_compatible`. Sin embargo, la model card describe un modelo conversacional de razonamiento con modo de pensamiento, llamadas a funciones y resultados en AIME 2025, lo que resulta contradictorio con el pipeline de extracción de características y la familia BERT declarados en los metadatos. No hay forma de resolver esa contradicción con la información disponible.
 
@@ -90,7 +90,7 @@ El único dato numérico adicional es el de AIME 2025: 87,5% de precisión en la
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros ni la arquitectura no es posible estimar el consumo de memoria en ninguna cuantización.
 - GPU recomendadas: no disponible por la misma razón.
 - Viabilidad en GPU de consumo: no evaluable. El repositorio no contiene pesos (0.0 GB declarados), por lo que no hay nada que cargar en local actualmente.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace y la librería declarada es `transformers`. No hay confirmación de soporte para vLLM, llama.cpp, Ollama, TGI ni formatos GGUF, AWQ o GPTQ.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face y la librería declarada es `transformers`. No hay confirmación de soporte para vLLM, llama.cpp, Ollama, TGI ni formatos GGUF, AWQ o GPTQ.
 - Latencia y throughput: no disponible. Además, si se confirmase el patrón de razonamiento largo descrito (23K tokens de pensamiento por pregunta), el coste por consulta sería alto y exigiría planificación de capacidad específica.
 - Nota operativa: cualquier despliegue en producción debería posponerse hasta que existan pesos publicados y verificables.
 
@@ -121,7 +121,7 @@ No disponible. La model card compara contra tres referencias anonimizadas como "
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afdvcx/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/afdvcx/MyAwesomeModel-TestRepo
 - Repositorio de código mencionado en la model card: no disponible (se cita un "code repository" sin enlace ni identificador)
 - Sitio web de chat y API mencionado en la model card: no disponible (se cita una "official website" sin URL)
 - Paper: no disponible

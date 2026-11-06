@@ -92,5 +92,5 @@ La diferencia diferencial de este paquete no es de calidad, sino de integración
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DownFlow/ASMR-onnx
+- Hugging Face: https://huggingface.co/DownFlow/ASMR-onnx
 - No se han encontrado en la búsqueda web otros enlaces (papers, blogs, repositorios o demos) asociados a este modelo.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AIxFuneStudio/Graceful_Mellow_Anima es un repositorio de pesos publicado en HuggingFace por el usuario AIxFuneStudio. Segun los metadatos de la plataforma, el repositorio se creo el 20 de septiembre de 2026 y se actualizo el mismo dia, ocupa 4.2 GB y esta sujeto a acceso restringido (gated): cualquier descarga exige aceptar previamente las condiciones indicadas en la pagina del modelo. La licencia declarada es "other", es decir, no se corresponde con ninguna de las licencias estandar de HuggingFace y sus terminos concretos deben consultarse en el propio repositorio.
+AIxFuneStudio/Graceful_Mellow_Anima es un repositorio de pesos publicado en Hugging Face por el usuario AIxFuneStudio. Segun los metadatos de la plataforma, el repositorio se creo el 20 de septiembre de 2026 y se actualizo el mismo dia, ocupa 4.2 GB y esta sujeto a acceso restringido (gated): cualquier descarga exige aceptar previamente las condiciones indicadas en la pagina del modelo. La licencia declarada es "other", es decir, no se corresponde con ninguna de las licencias estandar de Hugging Face y sus terminos concretos deben consultarse en el propio repositorio.
 
 El repositorio no incluye model card, no declara pipeline de inferencia, no especifica idiomas soportados y no tiene descargas ni "likes" registrados. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, proceso de alineacion ni formato de pesos.
 
-La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos resultados obtenidos corresponden a listados de supermercados de una cadena alemana y no guardan ninguna relacion con este artefacto. En consecuencia, esta ficha se limita a documentar los metadatos verificables y marca explicitamente como "no disponible" todo aquello que no puede confirmarse con la informacion proporcionada. Cualquier dato de esta ficha que no figure como "no disponible" procede directamente de los metadatos de HuggingFace.
+La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos resultados obtenidos corresponden a listados de supermercados de una cadena alemana y no guardan ninguna relacion con este artefacto. En consecuencia, esta ficha se limita a documentar los metadatos verificables y marca explicitamente como "no disponible" todo aquello que no puede confirmarse con la informacion proporcionada. Cualquier dato de esta ficha que no figure como "no disponible" procede directamente de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con el mod
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible |
 | Autor | AIxFuneStudio |
 | Identificador | AIxFuneStudio/Graceful_Mellow_Anima |
@@ -89,7 +89,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni la tarea 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es "gated" y exige aceptar condiciones en HuggingFace antes de la descarga. Esto puede impedir el uso automatizado en pipelines de CI/CD o en entornos sin intervencion manual.
+- Acceso restringido: el repositorio es "gated" y exige aceptar condiciones en Hugging Face antes de la descarga. Esto puede impedir el uso automatizado en pipelines de CI/CD o en entornos sin intervencion manual.
 - Licencia "other": no es una licencia estandar. Los terminos exactos, incluida la posible prohibicion de uso comercial, deben revisarse en el repositorio antes de cualquier despliegue en produccion.
 - Ausencia de model card: no hay documentacion sobre arquitectura, entrenamiento, datos, sesgos ni uso previsto, lo que impide evaluar la idoneidad del modelo para un caso concreto.
 - Sin validacion de la comunidad: 0 descargas y 0 "likes" en el momento de redactar esta ficha. No existen evaluaciones independientes, informes de terceros ni casos de uso documentados.
@@ -102,6 +102,6 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni la tarea 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Graceful_Mellow_Anima
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Graceful_Mellow_Anima
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Nota: los resultados de la busqueda web disponible corresponden a listados de supermercados de una cadena alemana y no guardan ninguna relacion con este modelo, por lo que se han descartado.

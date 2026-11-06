@@ -75,7 +75,7 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| quality-router-v2-risk-controlled-downrouter | Clasificador tabular de enrutado (sklearn/joblib) | no disponible | No aplica | other | HuggingFace, 0 descargas, 0 likes |
+| quality-router-v2-risk-controlled-downrouter | Clasificador tabular de enrutado (sklearn/joblib) | no disponible | No aplica | other | Hugging Face, 0 descargas, 0 likes |
 | RLCascadeRouter (arXiv 2608.15817) | Framework de enrutado en cascada sin estimador de calidad, formulado como proceso de decision de Markov | no disponible | No aplica | no disponible | Publicacion en arXiv |
 | TrustedRouter | Servicio de enrutado multi-proveedor con alternativas tipo OpenRouter | no aplica (servicio) | no disponible | no disponible | Servicio web |
 | Gemini 4 Argon | Modelo generativo propietario de Google | no disponible | no disponible | propietaria | Producto comercial |
@@ -99,7 +99,7 @@ No se han encontrado modelos del mismo autor con los que comparar directamente e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-risk-controlled-downrouter
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-risk-controlled-downrouter
 - Dataset del estudio: https://huggingface.co/datasets/dhresearch/outcome-router-v2-main
 - Documentacion de DH Research: https://docs.dh-research.com/
 - RLCascadeRouter, enrutado en cascada sin estimador de calidad: https://arxiv.org/abs/2608.15817

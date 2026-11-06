@@ -89,7 +89,7 @@ La comparación con alternativas comerciales no está disponible en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.03b-5.01bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.03b-5.01bt-base-cooled
 - Paper de Isambard-AI (McIntosh-Smith, Alam y Woods, 2024): https://doi.org/10.48550/arXiv.2410.11199
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

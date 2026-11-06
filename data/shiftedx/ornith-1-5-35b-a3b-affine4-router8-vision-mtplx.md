@@ -90,7 +90,7 @@ La comparativa se limita a las variantes de Ornith disponibles públicamente. No
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Shiftedx/ornith-1.5-35b-a3b-affine4-router8-vision-mtplx
+- Repositorio Hugging Face del modelo: https://huggingface.co/Shiftedx/ornith-1.5-35b-a3b-affine4-router8-vision-mtplx
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Documentación de Ornith-1.5 (self-scaffolding y self-improvement): https://ornith.ai/ornith_1_5.html
 - MTPLX (runtime para Mac): https://www.mtplx.com/

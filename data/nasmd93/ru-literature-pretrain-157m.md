@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ru-literature-pretrain-157M` es un checkpoint de lenguaje de tipo decoder-only publicado por el usuario nasmd93 en HuggingFace. Con 157.172.736 parametros reales (segun los pesos en safetensors), se trata de un modelo de escala pequena disenado, a juzgar por su nombre, para el preentrenamiento sobre literatura en ruso. La model card publicada es practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin datos de entrenamiento y sin idiomas declarados.
+El modelo `ru-literature-pretrain-157M` es un checkpoint de lenguaje de tipo decoder-only publicado por el usuario nasmd93 en Hugging Face. Con 157.172.736 parametros reales (segun los pesos en safetensors), se trata de un modelo de escala pequena disenado, a juzgar por su nombre, para el preentrenamiento sobre literatura en ruso. La model card publicada es practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin datos de entrenamiento y sin idiomas declarados.
 
 La relevancia de este modelo es acotada y de caracter experimental. Por su tamano (157M) y por la ausencia de documentacion, no compite con modelos de proposito general, sino que se posiciona como una base para experimentacion en dominio literario ruso, ajuste fino posterior o investigacion sobre modelos pequenos. La arquitectura declarada en los tags es `llama`, lo que sugiere una implementacion compatible con la familia Llama (probablemente una configuracion tipo LlamaForCausalLM), aunque no hay confirmacion en la model card.
 
@@ -23,7 +23,7 @@ Dado que no se han publicado resultados de evaluacion, idiomas soportados ni det
 
 ## Arquitectura y entrenamiento
 
-La unica informacion disponible sobre la arquitectura es el tag `llama` en HuggingFace, que indica una implementacion de transformer decoder-only compatible con la familia Llama. No se especifican numero de capas, dimensiones ocultas, cabezas de atencion, tipo de normalizacion ni funcion de activacion. Tampoco se detalla si emplea atencion con RoPE, GQA o MHA.
+La unica informacion disponible sobre la arquitectura es el tag `llama` en Hugging Face, que indica una implementacion de transformer decoder-only compatible con la familia Llama. No se especifican numero de capas, dimensiones ocultas, cabezas de atencion, tipo de normalizacion ni funcion de activacion. Tampoco se detalla si emplea atencion con RoPE, GQA o MHA.
 
 Respecto al entrenamiento, no hay datos publicados: ni numero de tokens, ni composicion del corpus, ni si hubo fases de instruccion, RLHF o DPO. El nombre del repositorio (`ru-literature-pretrain`) sugiere un preentrenamiento sobre texto literario en ruso, pero esta afirmacion no esta respaldada por la model card. No se documentan innovaciones tecnicas (decodificacion especulativa, atencion lineal, etc.).
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ru-literature-pretrain-157M | 157M | no disponible | MIT | HuggingFace | Model card vacia; sin benchmarks |
-| TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | HuggingFace | Mayor tamano y documentacion completa |
-| SmolLM-135M | 135M | 2048 | Apache 2.0 | HuggingFace | Tamano comparable, con benchmarks publicados |
-| GPT-2 small | 124M | 1024 | MIT | HuggingFace | Referencia historica, ampliamente documentada |
+| ru-literature-pretrain-157M | 157M | no disponible | MIT | Hugging Face | Model card vacia; sin benchmarks |
+| TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Hugging Face | Mayor tamano y documentacion completa |
+| SmolLM-135M | 135M | 2048 | Apache 2.0 | Hugging Face | Tamano comparable, con benchmarks publicados |
+| GPT-2 small | 124M | 1024 | MIT | Hugging Face | Referencia historica, ampliamente documentada |
 
 La comparativa se limita a tamano y licencia, ya que no hay datos de rendimiento del modelo evaluado. Frente a SmolLM-135M o TinyLlama, el modelo de nasmd93 carece de documentacion y evaluacion, lo que dificulta una comparacion tecnica rigurosa.
 
@@ -83,4 +83,4 @@ La comparativa se limita a tamano y licencia, ya que no hay datos de rendimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nasmd93/ru-literature-pretrain-157M
+- Hugging Face: https://huggingface.co/nasmd93/ru-literature-pretrain-157M

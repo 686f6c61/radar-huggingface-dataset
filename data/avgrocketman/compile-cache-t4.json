@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "avgrocketman/compile-cache-t4",
+  "slug": "avgrocketman-compile-cache-t4",
+  "author": "avgrocketman",
+  "url": "https://huggingface.co/avgrocketman/compile-cache-t4",
+  "created_at": "2026-11-06T11:16:30.000Z",
+  "updated_at": "2026-11-06T11:18:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48476283,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "avgrocketman (Sahil Hossain) – Models - Hugging Face",
+      "url": "https://huggingface.co/avgrocketman/models",
+      "snippet": "avgrocketman's models6 Sort: Recently updated avgrocketman/llamacpp-dory-t4 Updated about 8 hours ago"
+    },
+    {
+      "title": "avgrocketman (Sahil Hossain) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/avgrocketman/datasets",
+      "snippet": "Recent Activity updated a modelabout 10 hours ago avgrocketman/llamacpp-dory-t4 published a modelabout 10 hours ago avgrocketman/llamacpp-dory-t4 updated a modelabout 17 hours ago avgrocketman/tpu-compile-cache View all activity"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `XiaMuqingyuan/cdn` en HuggingFace no contiene un modelo de inteligencia artificial, sino un proyecto de aplicación denominado "MineCraft Bot Assistant". Se trata de un framework genérico para crear bots de Minecraft basado en `mineflayer` e integración con la API de OpenAI, que incluye un panel de control web para su administración. El proyecto está desarrollado por el usuario XiaMuqingyuan y su código fuente se aloja en GitHub bajo el repositorio `debbide/minebot`.
+El repositorio `XiaMuqingyuan/cdn` en Hugging Face no contiene un modelo de inteligencia artificial, sino un proyecto de aplicación denominado "MineCraft Bot Assistant". Se trata de un framework genérico para crear bots de Minecraft basado en `mineflayer` e integración con la API de OpenAI, que incluye un panel de control web para su administración. El proyecto está desarrollado por el usuario XiaMuqingyuan y su código fuente se aloja en GitHub bajo el repositorio `debbide/minebot`.
 
 La relevancia de este proyecto radica en que ofrece una solución completa y empaquetada para desplegar un asistente conversacional dentro de Minecraft, combinando la automatización de acciones del juego (movimiento, seguimiento de jugadores) con capacidades de diálogo inteligente mediante modelos de lenguaje externos. Al tratarse de una aplicación y no de un modelo de IA, no presenta parámetros, arquitectura neuronal ni pesos entrenados; su valor está en la integración de componentes de software.
 
@@ -72,6 +72,6 @@ No disponible. Este proyecto no es un modelo de IA comparable con otros modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XiaMuqingyuan/cdn
+- Repositorio en Hugging Face: https://huggingface.co/XiaMuqingyuan/cdn
 - Repositorio en GitHub (referenciado en la model card): https://github.com/debbide/minebot
 - Perfil de GitHub del autor: https://github.com/XiaMuqingyuan/XiaMuqingyuan

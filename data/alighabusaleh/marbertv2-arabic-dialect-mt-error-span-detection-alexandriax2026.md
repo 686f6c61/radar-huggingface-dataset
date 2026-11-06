@@ -75,9 +75,9 @@ No se han publicado resultados comparativos con MMLU, HumanEval, GSM8K ni otros 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026` | 162.254.597 | 192 subtokens | cc-by-4.0 | HuggingFace | Variante con colapso de categorias; Overall oficial 40.91 |
-| `alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026-nocollapse` | no disponible | no disponible | no disponible | HuggingFace | Variante sin colapso de categorias, con mejor puntuacion post-hoc segun el autor |
-| `UBC-NLP/MARBERTv2` | no disponible | no disponible | no disponible | HuggingFace | Modelo base preentrenado; no es un etiquetador de spans de error por si mismo |
+| `alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026` | 162.254.597 | 192 subtokens | cc-by-4.0 | Hugging Face | Variante con colapso de categorias; Overall oficial 40.91 |
+| `alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026-nocollapse` | no disponible | no disponible | no disponible | Hugging Face | Variante sin colapso de categorias, con mejor puntuacion post-hoc segun el autor |
+| `UBC-NLP/MARBERTv2` | no disponible | no disponible | no disponible | Hugging Face | Modelo base preentrenado; no es un etiquetador de spans de error por si mismo |
 
 No se dispone de datos de otros sistemas comparables de la misma competicion en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de otros sistemas comparables de la misma competicion en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026
+- Modelo en Hugging Face: https://huggingface.co/alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026
 - Variante sin colapso de categorias: https://huggingface.co/alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026-nocollapse
 - Modelo base MARBERTv2: https://huggingface.co/UBC-NLP/MARBERTv2
 - Codigo: https://github.com/aliabusaleh/arabic-dialectal-mt-error-span-detection

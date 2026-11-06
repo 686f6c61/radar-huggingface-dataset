@@ -23,7 +23,7 @@ Su relevancia es doble: por un lado cubre una combinación lingüística poco at
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Conformer-Transducer de NVIDIA NeMo: un encoder de bloques Conformer (convolución + self-attention) combinado con un predictor y un joint network propios de los modelos RNN-T, que permiten transcripción en streaming sin segmentación previa del audio. La variante "large" ronda los 120 millones de parámetros. El punto de partida es nvidia/stt_es_conformer_transducer_large, sobre el que se realizó un ajuste fino siguiendo el tutorial oficial de NeMo para transductores con datasets de HuggingFace.
+El modelo sigue la arquitectura Conformer-Transducer de NVIDIA NeMo: un encoder de bloques Conformer (convolución + self-attention) combinado con un predictor y un joint network propios de los modelos RNN-T, que permiten transcripción en streaming sin segmentación previa del audio. La variante "large" ronda los 120 millones de parámetros. El punto de partida es nvidia/stt_es_conformer_transducer_large, sobre el que se realizó un ajuste fino siguiendo el tutorial oficial de NeMo para transductores con datasets de Hugging Face.
 
 Los datos de entrenamiento suman aproximadamente 7426 horas de audio bilingüe. La composición declarada por el autor incluye corpus parlamentarios e institucionales (Parlament-Parla-v3, Corts Valencianes, IB3, 3Cat), corpus de castellano de diversos acentos y dominios (CIEMPIESS en sus variantes light, fem, complementary y balance, CHM150, TEDx Spanish, LibriVox, Wikipedia, VoxForge, Tele con ciencia, Argentinian Spanish Speech Dataset de OpenSLR 61, Dimex100 light, Glissando, Herico, Latino40) y datos de Common Voice 17 en catalán y castellano. No se documentan en la información disponible detalles sobre uso de RLHF/DPO (no aplicable en un modelo ASR puro) ni sobre aumentación de datos o decodificación especulativa.
 
@@ -70,10 +70,10 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parámetros | Idiomas | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| projecte-aina/stt_ca-es_conformer_transducer_large | ~120 M | ca, es | No disponible | CC-BY-4.0 | HuggingFace, pesos NeMo |
-| nvidia/stt_es_conformer_transducer_large (modelo base) | ~120 M | es | No disponible | No disponible en la información proporcionada | HuggingFace, pesos NeMo |
-| openai/whisper-large-v3 | ~1550 M | Multilingüe (~99 idiomas, incluye ca y es) | Ventanas de 30 s | MIT | HuggingFace, múltiples runtimes (transformers, faster-whisper, whisper.cpp) |
-| Modelos wav2vec2/CTC de projecte-aina para catalán | No disponible | ca | No disponible | No disponible en la información proporcionada | HuggingFace |
+| projecte-aina/stt_ca-es_conformer_transducer_large | ~120 M | ca, es | No disponible | CC-BY-4.0 | Hugging Face, pesos NeMo |
+| nvidia/stt_es_conformer_transducer_large (modelo base) | ~120 M | es | No disponible | No disponible en la información proporcionada | Hugging Face, pesos NeMo |
+| openai/whisper-large-v3 | ~1550 M | Multilingüe (~99 idiomas, incluye ca y es) | Ventanas de 30 s | MIT | Hugging Face, múltiples runtimes (transformers, faster-whisper, whisper.cpp) |
+| Modelos wav2vec2/CTC de projecte-aina para catalán | No disponible | ca | No disponible | No disponible en la información proporcionada | Hugging Face |
 
 Las cifras de parámetros, idiomas y licencia de Whisper large-v3 corresponden a información pública ampliamente conocida del modelo; no se dispone en la información proporcionada de una comparación de WER entre estos sistemas, por lo que no se ofrece ranking de calidad. La ventaja estructural del modelo de AINA frente a Whisper es el tamaño (unas 13 veces menor) y la especialización en el par ca-es; su desventaja es la ausencia de puntuación, timestamps y soporte multilingüe amplio.
 
@@ -91,12 +91,12 @@ Las cifras de parámetros, idiomas y licencia de Whisper large-v3 corresponden a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/projecte-aina/stt_ca-es_conformer_transducer_large
+- Modelo en Hugging Face: https://huggingface.co/projecte-aina/stt_ca-es_conformer_transducer_large
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/stt_es_conformer_transducer_large
 - Ficha del recurso en Proyecto ILENIA: https://proyectoilenia.es/en/recurso/conformer-transducer-large-ca-es/
 - Documentación de modelos ASR en NeMo: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/asr/models.html#conformer-transducer
 - Repositorio NVIDIA NeMo: https://github.com/NVIDIA/NeMo
-- Tutorial de fine-tuning de transductores con datasets de HuggingFace: https://github.com/NVIDIA/NeMo/blob/main/tutorials/asr/Transducers_with_HF_Datasets.ipynb
+- Tutorial de fine-tuning de transductores con datasets de Hugging Face: https://github.com/NVIDIA/NeMo/blob/main/tutorials/asr/Transducers_with_HF_Datasets.ipynb
 - Dataset Parlament-Parla-v3: https://huggingface.co/datasets/projecte-aina/parlament_parla_v3
 - Dataset Corts Valencianes: https://huggingface.co/datasets/projecte-aina/corts_valencianes_asr_a
 - Dataset IB3: https://huggingface.co/datasets/projecte-aina/ib3_ca_asr

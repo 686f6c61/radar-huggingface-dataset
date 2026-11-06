@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`unl-reset/...epoch15`) | 1,42B | no disponible | Apache 2.0 | Desaprendizaje TOFU con reset de embeddings/LM head + IHL | HuggingFace, requiere `trust_remote_code` |
-| `locuslab/tofu_ft_phi-1.5` | 1,42B | no disponible | Apache 2.0 | Ajuste fino TOFU sin desaprendizaje (modelo base de este) | HuggingFace |
-| `microsoft/phi-1_5` | 1,3B | 2048 tokens | MIT | Modelo base de lenguaje y código | HuggingFace |
-| `microsoft/phi-2` | 2,7B | 2048 tokens | MIT | Modelo base más grande de la familia Phi | HuggingFace |
+| Este checkpoint (`unl-reset/...epoch15`) | 1,42B | no disponible | Apache 2.0 | Desaprendizaje TOFU con reset de embeddings/LM head + IHL | Hugging Face, requiere `trust_remote_code` |
+| `locuslab/tofu_ft_phi-1.5` | 1,42B | no disponible | Apache 2.0 | Ajuste fino TOFU sin desaprendizaje (modelo base de este) | Hugging Face |
+| `microsoft/phi-1_5` | 1,3B | 2048 tokens | MIT | Modelo base de lenguaje y código | Hugging Face |
+| `microsoft/phi-2` | 2,7B | 2048 tokens | MIT | Modelo base más grande de la familia Phi | Hugging Face |
 
 La comparación relevante es frente a `locuslab/tofu_ft_phi-1.5` (mismo tamaño y dataset, sin olvido) y frente a otras variantes de desaprendizaje sobre Phi-1.5 publicadas por grupos como `locuslab` o `unl-reset`. No se dispone de datos de rendimiento comparado en la información proporcionada.
 
@@ -81,11 +81,11 @@ La comparación relevante es frente a `locuslab/tofu_ft_phi-1.5` (mismo tamaño 
 - Idioma: solo inglés; no se garantiza un comportamiento correcto en castellano u otros idiomas.
 - Licencia Apache 2.0 permite uso comercial, pero el modelo base Phi-1.5 tiene licencia MIT y el dataset TOFU puede tener sus propias condiciones; conviene revisar la cadena completa de licencias antes de un uso comercial.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del autor; auditar el código antes de cargarlo en entornos sensibles.
-- Sin pipeline declarado en HuggingFace ni variantes cuantizadas oficiales; el despliegue en llama.cpp/Ollama requiere conversión manual.
+- Sin pipeline declarado en Hugging Face ni variantes cuantizadas oficiales; el despliegue en llama.cpp/Ollama requiere conversión manual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch15
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch15
 - Modelo base del ajuste fino: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

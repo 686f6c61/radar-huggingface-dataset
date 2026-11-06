@@ -38,7 +38,7 @@ No se dispone de datos sobre el corpus de entrenamiento, número de tokens ni pr
 
 - Pruebas de humo: el checkpoint permite verificar que la implementación de la arquitectura Albef carga y ejecuta correctamente antes de invertir en un entrenamiento completo.
 - Investigación arquitectónica: sirve como base para experimentar con variaciones de fusión de tensores y atención flash en entornos académicos.
-- Desarrollo de adaptadores: al ser una implementación personalizada, puede utilizarse para crear adaptadores que permitan cargarlo con APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores: al ser una implementación personalizada, puede utilizarse para crear adaptadores que permitan cargarlo con APIs genéricas de Hugging Face.
 - Pruebas de concepto multitarea: el script `run.py` incluye un ejemplo de entrenamiento o inferencia que puede adaptarse a tareas específicas de investigación.
 - Benchmarking experimental: permite comparar la configuración por defecto con otras implementaciones de Albef bajo las mismas condiciones de entrenamiento, tal como recomienda el propio autor.
 - Docencia: útil en cursos de aprendizaje automático para ilustrar la estructura interna de un modelo de fusión multimodal y su flujo de datos.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables directos. Se trata de un prototipo de investigación sin entrenar y de escala minúscula. Como referencia, los modelos Albef de la literatura (por ejemplo, el ALBEF original de Salesforce) son arquitecturas multimodales de mayor tamaño y con entrenamiento completo, por lo que no son comparables en rendimiento ni en uso. Existe en HuggingFace otro checkpoint denominado `hhongjungkook/albef-classification-checkpoint`, pero no se dispone de datos suficientes para establecer una comparativa.
+No se dispone de información sobre modelos comparables directos. Se trata de un prototipo de investigación sin entrenar y de escala minúscula. Como referencia, los modelos Albef de la literatura (por ejemplo, el ALBEF original de Salesforce) son arquitecturas multimodales de mayor tamaño y con entrenamiento completo, por lo que no son comparables en rendimiento ni en uso. Existe en Hugging Face otro checkpoint denominado `hhongjungkook/albef-classification-checkpoint`, pero no se dispone de datos suficientes para establecer una comparativa.
 
 ## Limitaciones y advertencias
 
@@ -70,4 +70,4 @@ No se dispone de información sobre modelos comparables directos. Se trata de un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Purnomorafi/albef-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/Purnomorafi/albef-checkpoint

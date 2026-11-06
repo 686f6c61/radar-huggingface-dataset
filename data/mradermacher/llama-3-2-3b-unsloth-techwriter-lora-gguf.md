@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones estáticas en formato GGUF del modelo `Shankarblr/Llama-3.2-3B-Unsloth-TechWriter-LoRA`, publicadas por el usuario mradermacher, conocido por convertir modelos de HuggingFace a GGUF para su uso con llama.cpp y herramientas derivadas. Se trata, por tanto, de un artefacto de distribución y cuantización, no de un modelo entrenado desde cero: el trabajo original es un ajuste fino orientado a redacción técnica sobre Llama 3.2 3B, presumiblemente realizado con la librería Unsloth.
+Este repositorio contiene cuantizaciones estáticas en formato GGUF del modelo `Shankarblr/Llama-3.2-3B-Unsloth-TechWriter-LoRA`, publicadas por el usuario mradermacher, conocido por convertir modelos de Hugging Face a GGUF para su uso con llama.cpp y herramientas derivadas. Se trata, por tanto, de un artefacto de distribución y cuantización, no de un modelo entrenado desde cero: el trabajo original es un ajuste fino orientado a redacción técnica sobre Llama 3.2 3B, presumiblemente realizado con la librería Unsloth.
 
 El modelo subyacente es Llama 3.2 3B, un transformer decoder-only denso de Meta con aproximadamente 3.210 millones de parámetros, atención con consultas agrupadas (GQA) y una ventana de contexto de hasta 128.000 tokens según la documentación del modelo base. El ajuste fino busca especializarlo en tareas de escritura técnica (documentación, manuales, artículos), aunque la ficha del adaptador no detalla el dataset ni el método de entrenamiento empleados.
 

@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-rocketdata | 4,66B | no disponible | Diseno de cohetes, salida JSON | Apache 2.0 | HuggingFace, GGUF, LoRA |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | Multimodal generalista | no disponible | HuggingFace |
+| Qwen3.5-4B-rocketdata | 4,66B | no disponible | Diseno de cohetes, salida JSON | Apache 2.0 | Hugging Face, GGUF, LoRA |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | Multimodal generalista | no disponible | Hugging Face |
 | Agents-A1-4B (ajuste previo) | no disponible | no disponible | Agentes, mismo dominio | no disponible | Referenciado en la model card |
 
 No se dispone de datos de benchmarks estandar para establecer una comparacion cuantitativa con modelos generalistas equivalentes.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks estandar para establecer una comparacion cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RocketData/Qwen3.5-4B-rocketdata
+- Modelo en Hugging Face: https://huggingface.co/RocketData/Qwen3.5-4B-rocketdata
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de datos y codigo: https://github.com/Phorceon/rocketdata
 - Pull request con codigo y resultados: PR #10 en el repositorio anterior

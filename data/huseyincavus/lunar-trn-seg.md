@@ -72,10 +72,10 @@ El autor senala que la cabeza de cajas de este modelo obtiene un box-mAP inferio
 
 | Modelo | Arquitectura | Parametros | Contexto | CDA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lunar-trn-seg | YOLO26s-seg | no disponible | no aplica | 91,97 | MIT | HuggingFace |
+| lunar-trn-seg | YOLO26s-seg | no disponible | no aplica | 91,97 | MIT | Hugging Face |
 | Linea base cajas v1s | Detector YOLO (cajas) | no disponible | no aplica | 76,29 | no disponible | Referencia en model card |
 | Linea base cajas v1n | Detector YOLO (cajas) | no disponible | no aplica | 71,90 | no disponible | Referencia en model card |
-| lunar-trn-ft-real | YOLO (fine-tune sobre imagenes reales) | no disponible | no aplica | no disponible | no disponible | HuggingFace (huseyincavus/lunar-trn-ft-real) |
+| lunar-trn-ft-real | YOLO (fine-tune sobre imagenes reales) | no disponible | no aplica | no disponible | no disponible | Hugging Face (huseyincavus/lunar-trn-ft-real) |
 
 Las lineas base v1s y v1n son detectores por cajas evaluados con la misma metrica CDA en el mismo split; el modelo de segmentacion las supera en 15,7 y 20,1 puntos respectivamente. No se dispone de datos de benchmarks de otros modelos de segmentacion de crateres en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ Las lineas base v1s y v1n son detectores por cajas evaluados con la misma metric
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huseyincavus/lunar-trn-seg
+- Modelo en Hugging Face: https://huggingface.co/huseyincavus/lunar-trn-seg
 - Modelo complementario fine-tuneado sobre imagenes reales: https://huggingface.co/huseyincavus/lunar-trn-ft-real
 - Codigo de entrenamiento, inferencia y evaluacion: https://github.com/huseyincavusbi/lunar-trn
 - NASA Crater Detection Challenge: no disponible en la informacion proporcionada (referenciado en la model card sin URL)

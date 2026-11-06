@@ -87,6 +87,6 @@ No se dispone de datos comparativos publicados con otros modelos de regresión s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Varma2905/regression-linear
+- Repositorio en Hugging Face: https://huggingface.co/Varma2905/regression-linear
 - Dataset de referencia (Tetuan City Power Consumption): no disponible en la información proporcionada
 - Documentación de scikit-learn sobre regresión lineal: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html

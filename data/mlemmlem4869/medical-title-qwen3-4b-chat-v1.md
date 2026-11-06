@@ -81,8 +81,8 @@ Advertencias publicadas por el autor sobre estas cifras, que conviene reproducir
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| medical-title-qwen3-4b-chat-v1 | 4,02 B | no disponible | Titulado de conversaciones medicas | no disponible | HuggingFace (adaptador + GGUF) |
-| Qwen/Qwen3-4B (base) | ~4 B | no disponible en esta ficha | Chat general, razonamiento, codigo | Apache-2.0 | HuggingFace |
+| medical-title-qwen3-4b-chat-v1 | 4,02 B | no disponible | Titulado de conversaciones medicas | no disponible | Hugging Face (adaptador + GGUF) |
+| Qwen/Qwen3-4B (base) | ~4 B | no disponible en esta ficha | Chat general, razonamiento, codigo | Apache-2.0 | Hugging Face |
 | Adaptadores de titulado de conversacion genericos | no disponible | no disponible | Titulado generico | variable | no disponible |
 
 No se dispone de resultados de benchmarks comparativos publicados frente a alternativas de la misma categoria en la informacion proporcionada. El autor declara explicitamente que sus cifras no establecen superioridad sobre otro modelo.
@@ -104,7 +104,7 @@ No se dispone de resultados de benchmarks comparativos publicados frente a alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlemmlem4869/medical-title-qwen3-4b-chat-v1
+- Modelo en Hugging Face: https://huggingface.co/mlemmlem4869/medical-title-qwen3-4b-chat-v1
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Documentacion de FastText para deteccion de idioma (licencia CC BY-SA 3.0): https://fasttext.cc/docs/en/language-identification.html
 - No se han encontrado papers, blogs, repositorios adicionales ni demos alojadas en la informacion proporcionada.

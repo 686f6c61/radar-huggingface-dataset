@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `angryelizar/ruBert-base-sentiment-classifier-v2-epoch5` es un clasificador de texto publicado en HuggingFace por el usuario angryelizar. Por su identificador y por su etiqueta de pipeline (`text-classification`) se trata de un modelo de análisis de sentimiento derivado de una familia BERT, presumiblemente ajustado durante cinco epocas (el sufijo `epoch5` del nombre apunta a un checkpoint intermedio de un ciclo de entrenamiento). La informacion publicada por el autor es practicamente inexistente: la model card es la plantilla automatica de HuggingFace sin ningun campo cumplimentado.
+El modelo `angryelizar/ruBert-base-sentiment-classifier-v2-epoch5` es un clasificador de texto publicado en Hugging Face por el usuario angryelizar. Por su identificador y por su etiqueta de pipeline (`text-classification`) se trata de un modelo de análisis de sentimiento derivado de una familia BERT, presumiblemente ajustado durante cinco epocas (el sufijo `epoch5` del nombre apunta a un checkpoint intermedio de un ciclo de entrenamiento). La informacion publicada por el autor es practicamente inexistente: la model card es la plantilla automatica de Hugging Face sin ningun campo cumplimentado.
 
 El dato tecnico mas fiable disponible es el recuento real de parametros del repositorio, 178.309.635, extraido de los pesos en formato safetensors, con un tamano de repositorio de 0,7 GB. Ese volumen de parametros es coherente con un encoder BERT-base con vocabulario extendido, habitual en los modelos preentrenados para ruso (prefijo `ru`), aunque el autor no confirma ni la arquitectura ni el idioma. El repositorio no registra descargas ni likes y fue creado el 14 de septiembre de 2026.
 
@@ -28,7 +28,7 @@ Su relevancia practica es limitada tal y como esta publicado: sin licencia decla
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card del autor es la plantilla estandar de HuggingFace, con todos los apartados marcados como `[More Information Needed]`, incluidos los de descripcion del modelo, fuentes, datos de entrenamiento, hiperparametros y evaluacion. La unica evidencia estructural es el recuento de parametros (178.309.635) y la etiqueta `bert` del repositorio, que apuntan a un encoder transformer de tipo BERT-base con una capa de clasificacion secuencial.
+No hay informacion publicada sobre la arquitectura. La model card del autor es la plantilla estandar de Hugging Face, con todos los apartados marcados como `[More Information Needed]`, incluidos los de descripcion del modelo, fuentes, datos de entrenamiento, hiperparametros y evaluacion. La unica evidencia estructural es el recuento de parametros (178.309.635) y la etiqueta `bert` del repositorio, que apuntan a un encoder transformer de tipo BERT-base con una capa de clasificacion secuencial.
 
 Tampoco hay informacion sobre el proceso de ajuste fino: se desconoce el dataset de sentimiento utilizado, el numero de clases (binario, tres clases o escala ordinal), el regimen de precision, la tasa de aprendizaje, la composicion del corpus ni si hubo tecnicas de alineacion como RLHF o DPO, algo por otra parte poco habitual en clasificadores de este tamano. El sufijo `epoch5` del identificador indica que el checkpoint corresponde a la quinta epoca de un entrenamiento, pero no se especifica el numero total de epocas previstas ni el criterio de seleccion.
 
@@ -108,7 +108,7 @@ Conclusion: frente a alternativas con model card completa, este repositorio care
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier-v2-epoch5
+- Repositorio en Hugging Face: https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier-v2-epoch5
 - Articulo referenciado en la etiqueta del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Paper, blog, repositorio auxiliar o demo del modelo: no disponibles

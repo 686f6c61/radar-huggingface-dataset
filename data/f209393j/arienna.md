@@ -69,6 +69,6 @@ No se dispone de informacion sobre otros LoRA de Krea 2 comparables en el moment
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/f209393j/arienna
+- Repositorio Hugging Face: https://huggingface.co/f209393j/arienna
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card, no verificado)
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo (referenciado en la model card, no verificado)

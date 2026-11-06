@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar (WER, MOS, RTF) en la info
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF (delebash, esta ficha) | 0,6B | no disponible | GGUF q8_0 (1,71 GB) y bf16 (2,16 GB) | apache-2.0 | HuggingFace, 160 descargas, 0 likes |
-| Qwen3-TTS CustomVoice 1,7B GGUF (audio-cpp/audio.cpp-gguf) | 1,7B | no disponible | GGUF Q8 | apache-2.0 (heredada del original) | HuggingFace, repositorio oficial del runtime |
-| Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice (checkpoint original) | 0,6B | no disponible | safetensors | apache-2.0 | HuggingFace y ModelScope |
-| qwen3-tts-12hz-0.6b-customvoice-gguf (affectively-ai) | 0,6B | no disponible | GGUF (se menciona un Q4_K_M de ~0,4 GB) | no disponible en la informacion recogida | HuggingFace; su descripcion atribuye clonacion de voz y arquitectura "Qwen2-TTS", datos no confirmados por el autor del modelo base |
+| Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF (delebash, esta ficha) | 0,6B | no disponible | GGUF q8_0 (1,71 GB) y bf16 (2,16 GB) | apache-2.0 | Hugging Face, 160 descargas, 0 likes |
+| Qwen3-TTS CustomVoice 1,7B GGUF (audio-cpp/audio.cpp-gguf) | 1,7B | no disponible | GGUF Q8 | apache-2.0 (heredada del original) | Hugging Face, repositorio oficial del runtime |
+| Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice (checkpoint original) | 0,6B | no disponible | safetensors | apache-2.0 | Hugging Face y ModelScope |
+| qwen3-tts-12hz-0.6b-customvoice-gguf (affectively-ai) | 0,6B | no disponible | GGUF (se menciona un Q4_K_M de ~0,4 GB) | no disponible en la informacion recogida | Hugging Face; su descripcion atribuye clonacion de voz y arquitectura "Qwen2-TTS", datos no confirmados por el autor del modelo base |
 
 No se dispone de comparaciones de calidad objetivas (WER, MOS, similitud de hablante) entre estas alternativas en la informacion disponible.
 

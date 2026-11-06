@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: al tener 5.104.297.539 parámetros totales (incluyendo el adaptador fusionado), se estima que en FP16 se necesitan aproximadamente 10-11 GB de VRAM solo para los pesos, más overhead de activaciones. Con cuantización INT8 podría reducirse a ~5-6 GB, y con INT4 a ~3-4 GB.
 - GPU recomendadas: una RTX 3090 o RTX 4090 (24 GB) sería suficiente para FP16; GPUs con 8-12 GB (como RTX 3070/3080 o RTX 4060 Ti) podrían funcionar con cuantización. Para producción, una A10G o A100 también sería viable.
 - Si cabe en consumer GPU: sí, en GPUs de gama media-alta con cuantización, o en gama alta sin cuantizar.
-- Opciones de despliegue: al ser un adaptador LoRA, se puede cargar con transformers de HuggingFace y servir con vLLM o TGI si se fusiona con el modelo base. También es posible exportar a GGUF para usar con llama.cpp u Ollama (aunque las cuantizaciones GGUF están disponibles en otro checkpoint del proyecto, no en este).
+- Opciones de despliegue: al ser un adaptador LoRA, se puede cargar con transformers de Hugging Face y servir con vLLM o TGI si se fusiona con el modelo base. También es posible exportar a GGUF para usar con llama.cpp u Ollama (aunque las cuantizaciones GGUF están disponibles en otro checkpoint del proyecto, no en este).
 - Latencia y throughput estimados: no disponibles. Dependerán del hardware y la cuantización elegidos.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ En cuanto a modelos externos, no hay datos suficientes para comparar con Gemma 4
 
 ## Enlaces
 
-- [HuggingFace - onebee-gf-sft-v1](https://huggingface.co/arrochi112/onebee-gf-sft-v1)
+- [Hugging Face - onebee-gf-sft-v1](https://huggingface.co/arrochi112/onebee-gf-sft-v1)
 - [Repositorio GitHub del proyecto small-mind-companion](https://github.com/arrogance231/small-mind-companion)
 - [Documentación de resultados y limitaciones](https://github.com/arrogance231/small-mind-companion/blob/main/docs/proper_scale_results.md)
-- [Otros checkpoints del proyecto en HuggingFace](https://huggingface.co/arrochi112) (incluye onebee-gf-sft-v0, onebee-gf-dpo-v0, onebee-gf-dpo-v1-4epoch, onebee-gf-dpo-v1-scale, onebee-gf-dpo-v1-scale-gguf)
+- [Otros checkpoints del proyecto en Hugging Face](https://huggingface.co/arrochi112) (incluye onebee-gf-sft-v0, onebee-gf-dpo-v0, onebee-gf-dpo-v1-4epoch, onebee-gf-dpo-v1-scale, onebee-gf-dpo-v1-scale-gguf)

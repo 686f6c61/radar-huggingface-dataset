@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice
+- Hugging Face: https://huggingface.co/Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-26B-A4B
 - Voice tool: https://huggingface.co/Wiself/voice
 - Versión QAT: https://huggingface.co/Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice

@@ -105,7 +105,7 @@ No se dispone de datos sobre context length, benchmarks ni idiomas del modelo ba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-Roundtrip-PR3118
+- Repositorio Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-Roundtrip-PR3118
 - Etapa 1 (copia): https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-Copy-PR3118
 - Etapa 2 (FP8 roundtrip): https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-Roundtrip-PR3118
 - Repositorio de validacion de referencia: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-pr3118-validation

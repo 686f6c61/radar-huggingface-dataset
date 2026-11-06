@@ -94,10 +94,10 @@ No hay una comparativa directa publicada. La categoría natural es la de modelos
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| SpawnPoint-Coder-7B-AWQ | ~7,6B | 32.768 (16.384 en el ejemplo de despliegue) | Apache-2.0 | JSON de diseño de juegos para Spawn Point, en/vit | HuggingFace, AWQ y GGUF |
-| Qwen2.5-Coder-7B-Instruct | ~7,6B | 32.768 nativo (ampliable con YaRN) | Apache-2.0 | Código generalista, tool calling | HuggingFace, múltiples cuantizaciones |
-| CodeLlama-7B-Instruct | ~6,7B | 16.384 | Licencia comunitaria Llama 2 | Código generalista | HuggingFace, GGUF, Ollama |
-| Qwen2-7B-Instruct (base probable de la familia) | ~7,6B | 32.768 | Apache-2.0 | Propósito general, multilingüe | HuggingFace |
+| SpawnPoint-Coder-7B-AWQ | ~7,6B | 32.768 (16.384 en el ejemplo de despliegue) | Apache-2.0 | JSON de diseño de juegos para Spawn Point, en/vit | Hugging Face, AWQ y GGUF |
+| Qwen2.5-Coder-7B-Instruct | ~7,6B | 32.768 nativo (ampliable con YaRN) | Apache-2.0 | Código generalista, tool calling | Hugging Face, múltiples cuantizaciones |
+| CodeLlama-7B-Instruct | ~6,7B | 16.384 | Licencia comunitaria Llama 2 | Código generalista | Hugging Face, GGUF, Ollama |
+| Qwen2-7B-Instruct (base probable de la familia) | ~7,6B | 32.768 | Apache-2.0 | Propósito general, multilingüe | Hugging Face |
 
 Los datos de rendimiento de los modelos comparados no se han incluido porque no forman parte de la información proporcionada y no son directamente equiparables: las métricas de SpawnPoint-Coder son de corrección de formato JSON en su pipeline, no de benchmarks de código.
 
@@ -117,7 +117,7 @@ Los datos de rendimiento de los modelos comparados no se han incluido porque no 
 
 ## Enlaces
 
-- Modelo AWQ en HuggingFace: https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-AWQ
+- Modelo AWQ en Hugging Face: https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-AWQ
 - Builds GGUF (Ollama, llama.cpp, LM Studio): https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-GGUF
 - Discusiones del modelo: https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-AWQ/discussions
 - Repositorio del proyecto Spawn Point: https://github.com/leluong141996-dev/Spawn-Point/tree/main

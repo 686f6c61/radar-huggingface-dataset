@@ -4,7 +4,7 @@
 
 Este modelo, identificado como `ideadet-modernbert-1m-document2outline`, es un fine-tuning de ModernBERT sobre la tarea de clasificación de texto, con un pipeline de `text-classification`. Lo desarrolla el usuario `rishanthrajendhran` y se publica bajo licencia Apache-2.0. El nombre sugiere una aplicación orientada a la detección de ideas o la generación de esquemas a partir de documentos, aunque no se aportan detalles concretos sobre la tarea exacta ni sobre el dataset de entrenamiento.
 
-Con 395.833.346 parámetros, el modelo se alinea con la variante *large* de ModernBERT (395M), un encoder transformer bidireccional que incorpora optimizaciones modernas como rotary position embeddings, atención con query grouping y una longitud de contexto ampliada respecto a BERT clásico. El acceso está restringido (gated) en HuggingFace, por lo que es necesario aceptar condiciones antes de su descarga.
+Con 395.833.346 parámetros, el modelo se alinea con la variante *large* de ModernBERT (395M), un encoder transformer bidireccional que incorpora optimizaciones modernas como rotary position embeddings, atención con query grouping y una longitud de contexto ampliada respecto a BERT clásico. El acceso está restringido (gated) en Hugging Face, por lo que es necesario aceptar condiciones antes de su descarga.
 
 Su relevancia radica en aprovechar las mejoras de ModernBERT frente a BERT tradicional, ofreciendo un mejor equilibrio entre rendimiento y eficiencia para tareas de clasificación y extracción de información. Sin embargo, al ser un modelo de nicho con cero descargas y sin documentación adicional, su utilidad práctica queda limitada a quien pueda acceder y evaluar su comportamiento en el dominio específico para el que fue entrenado.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 395M parámetros, en precisión FP32 el modelo ocupa aproximadamente 1,6 GB en memoria. Con cuantización a 8 bits (si se aplicara) bajaría a unos 400 MB, y a 4 bits a unos 200 MB. Sin embargo, no se ofrecen versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP32. Tarjetas como NVIDIA GTX 1650, RTX 3060, o superiores son suficientes. Para inferencia en lote o con contexto largo, se recomienda una GPU con 8 GB o más.
 - En CPU: es viable para inferencia de baja latencia con bibliotecas optimizadas como ONNX Runtime o OpenVINO, aunque el rendimiento será inferior.
-- Opciones de despliegue: al ser un modelo de HuggingFace con formato safetensors, se puede usar con la biblioteca Transformers de Python, así como con ONNX, TensorRT o servicios como HuggingFace Inference Endpoints. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama (estas herramientas están orientadas principalmente a modelos decoder).
+- Opciones de despliegue: al ser un modelo de Hugging Face con formato safetensors, se puede usar con la biblioteca Transformers de Python, así como con ONNX, TensorRT o servicios como Hugging Face Inference Endpoints. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama (estas herramientas están orientadas principalmente a modelos decoder).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa real dependería de la tarea concreta. Sin métricas, no es posib
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Sin documentación: no hay información sobre el dataset de entrenamiento, el proceso de fine-tuning ni las etiquetas de clasificación, lo que dificulta su evaluación y depuración.
 - Riesgo de sesgos: al desconocer los datos de entrenamiento, no se puede evaluar la presencia de sesgos de género, raza, idioma o dominio.
 - Alucinación y errores: como clasificador, puede producir etiquetas incorrectas, especialmente en textos fuera del dominio de entrenamiento.
@@ -84,8 +84,8 @@ La comparativa real dependería de la tarea concreta. Sin métricas, no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-document2outline
+- Modelo en Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-document2outline
 - Repositorio de investigación de ModernBERT: https://github.com/AnswerDotAI/ModernBERT
-- Colección ModernBERT en HuggingFace: https://huggingface.co/collections/answerdotai/modernbert
+- Colección ModernBERT en Hugging Face: https://huggingface.co/collections/answerdotai/modernbert
 - Documentación de ModernBERT en Transformers: https://huggingface.co/docs/transformers/model_doc/modernbert
 - Paper de ModernBERT (arXiv): https://arxiv.org/abs/2412.13663

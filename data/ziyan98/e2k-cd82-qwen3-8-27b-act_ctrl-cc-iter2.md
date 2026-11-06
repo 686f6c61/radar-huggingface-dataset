@@ -100,7 +100,7 @@ La comparación relevante es contra el propio base: mismos 1199 tensores, mismos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter2
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL con episodios, métricas, filas y log del run: https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento del arnés: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

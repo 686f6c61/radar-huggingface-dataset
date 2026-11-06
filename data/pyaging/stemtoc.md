@@ -46,7 +46,7 @@ El entrenamiento, descrito en el artículo de Zhu et al. (2024), se realizó sob
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original de Zhu et al. (2024) incluye validaciones en múltiples conjuntos de datos, pero no se proporcionan métricas numéricas estandarizadas (como correlación o error absoluto) en la model card de HuggingFace. Se recomienda consultar la publicación para obtener detalles sobre la validación.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original de Zhu et al. (2024) incluye validaciones en múltiples conjuntos de datos, pero no se proporcionan métricas numéricas estandarizadas (como correlación o error absoluto) en la model card de Hugging Face. Se recomienda consultar la publicación para obtener detalles sobre la validación.
 
 ## Requisitos de hardware
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Tejidos | CpGs utilizados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stemtoc | Percentil 95 | Multi-tejido, sangre, cultivo | 371 | BSD-3-Clause | pyaging (HuggingFace) |
+| stemtoc | Percentil 95 | Multi-tejido, sangre, cultivo | 371 | BSD-3-Clause | pyaging (Hugging Face) |
 | Horvath clock (2013) | Regresión penalizada (Elastic Net) | Multi-tejido | 353 | No especificada | Varias implementaciones (R, Python) |
 | Hannum clock (2013) | Regresión penalizada (Elastic Net) | Sangre | 71 | No especificada | Varias implementaciones |
 | PhenoAge (2018) | Regresión de Cox + Elastic Net | Multi-tejido | 513 | No especificada | Varias implementaciones |
@@ -79,6 +79,6 @@ La principal diferencia de stemtoc es que no estima la edad cronológica, sino l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/stemtoc
+- Modelo en Hugging Face: https://huggingface.co/pyaging/stemtoc
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Artículo original: Zhu, Tianlei, et al. "An improved epigenetic counter to track mitotic age in cells." Nature Communications 15 (2024): 4211. DOI: https://doi.org/10.1038/s41467-024-48649-8

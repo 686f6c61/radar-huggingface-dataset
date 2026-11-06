@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`KevinPurnomo/blip-baseline` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de codigo para un modelo de generacion de tipo Blip, acompanado de una configuracion de arquitectura y un checkpoint de inicializacion. El autor lo presenta explicitamente como una base de trabajo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado. La ficha declara el modelo como "huge" en escala, pero el checkpoint real en `model.safetensors` contiene unicamente 33.088 parametros.
+`KevinPurnomo/blip-baseline` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de codigo para un modelo de generacion de tipo Blip, acompanado de una configuracion de arquitectura y un checkpoint de inicializacion. El autor lo presenta explicitamente como una base de trabajo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado. La ficha declara el modelo como "huge" en escala, pero el checkpoint real en `model.safetensors` contiene unicamente 33.088 parametros.
 
-El modelo se distribuye bajo licencia MIT con formato safetensors y pesos en PyTorch. No se documentan idiomas soportados, longitud de contexto ni pipeline de HuggingFace, y el propio autor aclara que el checkpoint es valido solo para pruebas de humo, sin haber sido entrenado ni auditado. No se reclama ninguna puntuacion de benchmark.
+El modelo se distribuye bajo licencia MIT con formato safetensors y pesos en PyTorch. No se documentan idiomas soportados, longitud de contexto ni pipeline de Hugging Face, y el propio autor aclara que el checkpoint es valido solo para pruebas de humo, sin haber sido entrenado ni auditado. No se reclama ninguna puntuacion de benchmark.
 
 Su relevancia actual es limitada y de caracter puramente metodologico: sirve como plantilla reproducible para comparar variantes de arquitectura (fusion de bajo rango, activacion mish, normalizacion RMSNorm) bajo una misma receta de experimento, no como modelo listo para produccion.
 
@@ -49,7 +49,7 @@ No hay evidencia de entrenamiento completado. La receta incluida usa el optimiza
 - Plantilla de referencia para nuevos experimentos: el repositorio ofrece una estructura minima de `config.json` y `training_args.json` reutilizable como punto de partida en proyectos de investigacion.
 - Reproduccion de recetas de entrenamiento: los valores por defecto (Lion, scheduler exponencial) pueden usarse como base para comparar optimizadores en condiciones controladas.
 - Validacion de pipelines de CI de entrenamiento: al ser un modelo diminuto, permite probar scripts de entrenamiento, logging y guardado de checkpoints sin coste de GPU.
-- Docencia y formacion: util para ilustrar como se estructura un repositorio de modelo experimental en HuggingFace y como se documentan configuraciones de arquitectura.
+- Docencia y formacion: util para ilustrar como se estructura un repositorio de modelo experimental en Hugging Face y como se documentan configuraciones de arquitectura.
 - No se recomienda ningun caso de uso en produccion, atencion al cliente, generacion de codigo real ni despliegue comercial, dado que el checkpoint no ha sido entrenado.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KevinPurnomo/blip-baseline | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint sin entrenar |
+| KevinPurnomo/blip-baseline | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint sin entrenar |
 | Salesforce BLIP | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | no aplica como comparacion directa |
 
 No se dispone de modelos comparables en la misma categoria (checkpoint de inicializacion experimental sin entrenar), por lo que la comparativa de rendimiento no es posible. Nota importante: a pesar de compartir el nombre "Blip", este repositorio no es el modelo BLIP de Salesforce ni una variante entrenada del mismo; es una implementacion experimental independiente.
@@ -80,14 +80,14 @@ No se dispone de modelos comparables en la misma categoria (checkpoint de inicia
 - Riesgo de alucinacion: no evaluable, ya que no existe entrenamiento ni evaluacion.
 - No se documentan idiomas soportados ni longitud de contexto, por lo que no puede garantizarse cobertura linguistica ni gestion de contexto.
 - Discrepancia relevante: la arquitectura se declara como escala "huge", mientras que el checkpoint real contiene 33.088 parametros, coherente con un uso exclusivo de pruebas de humo.
-- Requiere un adaptador explicito para cargarse con APIs genericas de HuggingFace.
+- Requiere un adaptador explicito para cargarse con APIs genericas de Hugging Face.
 - Licencia MIT: permite uso comercial, pero el autor recomienda revisar los terminos de las fuentes de datos externas si se combina con datasets de terceros.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debera documentarse por separado de los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KevinPurnomo/blip-baseline
+- Hugging Face: https://huggingface.co/KevinPurnomo/blip-baseline
 - Paper: no disponible
 - Blog: no disponible
-- Repositorio de codigo adicional: no disponible (el propio repo HuggingFace contiene `train.py`, `config.json`, `training_args.json` y `model.safetensors`)
+- Repositorio de codigo adicional: no disponible (el propio repo Hugging Face contiene `train.py`, `config.json`, `training_args.json` y `model.safetensors`)
 - Demo: no disponible

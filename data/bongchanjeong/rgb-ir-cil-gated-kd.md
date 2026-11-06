@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RGB-IR Gated Knowledge Distillation no es un modelo de lenguaje, sino una familia de 36 checkpoints (tres métodos × cuatro semillas × tres etapas) para un detector de objetos RGB–infrarrojo entrenado con aprendizaje incremental por clases. Lo publica el usuario de HuggingFace bongchanjeong como resultado de un proyecto universitario de visión por computador iniciado en 2025 y revisado en 2026. El problema que aborda es el olvido catastrófico: cómo añadir clases nuevas a un detector sin destruir el rendimiento sobre las clases aprendidas previamente.
+RGB-IR Gated Knowledge Distillation no es un modelo de lenguaje, sino una familia de 36 checkpoints (tres métodos × cuatro semillas × tres etapas) para un detector de objetos RGB–infrarrojo entrenado con aprendizaje incremental por clases. Lo publica el usuario de Hugging Face bongchanjeong como resultado de un proyecto universitario de visión por computador iniciado en 2025 y revisado en 2026. El problema que aborda es el olvido catastrófico: cómo añadir clases nuevas a un detector sin destruir el rendimiento sobre las clases aprendidas previamente.
 
 La aportación técnica es el uso de la puerta de fusión (fusion gate) del modelo profesor como proxy de la fiabilidad de cada modalidad. En lugar de aplicar una destilación de conocimiento con pesos iguales entre RGB e IR, el método ponderan la transferencia según lo que la puerta del profesor indica sobre qué modalidad es más fiable para cada entrada. El entrenamiento combina repetición (replay) de muestras antiguas con destilación de características en tres niveles (f3, f4 y f5).
 
@@ -93,17 +93,17 @@ Frente a alternativas externas (detectores RGB–IR como las líneas base sobre 
 - Espacio de clases muy reducido: solo seis clases de M3FD, orientadas a escenas de tráfico. No es un detector de propósito general y no cubrirá categorías fuera de ese conjunto.
 - Olvido todavía elevado: incluso la mejor variante pierde de media un 37,17 % de AP en las clases antiguas (frente al 40,86 % de la línea base). El margen de mejora es amplio y el modelo no es adecuado para producción sin un mecanismo adicional de retención.
 - Requisito estricto de entrada: pares RGB (3 canales) e IR (1 canal) alineados espacialmente, con letterbox idéntico a 768 × 1024 y padding a cero. Desalineaciones o resoluciones distintas degradan el rendimiento sin aviso.
-- Licencia no disponible: no se especifica licencia en el repositorio de HuggingFace. Antes de cualquier uso comercial hay que contactar con el autor y verificar además la licencia del dataset M3FD, que se distribuye con sus propias condiciones.
+- Licencia no disponible: no se especifica licencia en el repositorio de Hugging Face. Antes de cualquier uso comercial hay que contactar con el autor y verificar además la licencia del dataset M3FD, que se distribuye con sus propias condiciones.
 - Sin estado del optimizador en los checkpoints: no es posible reanudar el entrenamiento desde los ficheros publicados, solo inferir y evaluar.
 - Sin cuantizaciones ni exportaciones a formatos de despliegue (ONNX, TensorRT, int8), lo que limita el uso en entornos embebidos sin trabajo adicional de conversión.
 - Riesgo de falsos positivos y negativos típico de la detección de objetos: no hay "alucinación" en sentido lingüístico, pero sí detecciones espurias en escenas con baja visibilidad o desequilibrio entre modalidades. El postprocesado de referencia (objectness 0,25, NMS IoU 0,6, 300 detecciones) está calibrado para el protocolo de evaluación del autor, no para otros dominios.
 - Sesgos potenciales derivados del dataset: M3FD está compuesto por escenas de tráfico captadas en un contexto geográfico y de sensores concreto. No hay datos publicados sobre equidad, robustez a otras cámaras térmicas ni generalización a otros países o condiciones meteorológicas.
-- Proyecto de carácter académico y sin descargas ni interacciones en HuggingFace: no hay evidencia de uso en producción ni mantenimiento a largo plazo.
+- Proyecto de carácter académico y sin descargas ni interacciones en Hugging Face: no hay evidencia de uso en producción ni mantenimiento a largo plazo.
 - Reproducibilidad dependiente del código: la carga exige el paquete `models.model.RGBIRDetector` del repositorio GitHub y una revisión concreta; el autor recomienda fijar el commit de release en lugar de usar `main`.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/bongchanjeong/RGB-IR-CIL-gated-KD)
+- [Modelo en Hugging Face](https://huggingface.co/bongchanjeong/RGB-IR-CIL-gated-KD)
 - [Repositorio de código y entrenamiento (rama codex/final-portfolio)](https://github.com/bongchanjeong/RGB-IR-CIL-gated-KD/tree/codex/final-portfolio)
 - [README del repositorio con instrucciones de entrenamiento](https://github.com/bongchanjeong/RGB-IR-CIL-gated-KD/blob/codex/final-portfolio/README.md)
 - [Especificación completa del método](https://github.com/bongchanjeong/RGB-IR-CIL-gated-KD/blob/codex/final-portfolio/docs/final_method_spec.md)

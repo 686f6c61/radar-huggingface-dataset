@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cwaud/tournament-exp-s1-cc4550ab-9567-49ab-81c8-e2b909716d2b-5Expd929f5d8f969b80f` es un checkpoint de 1.170.340.608 parametros (aproximadamente 1,17 mil millones) publicado por el usuario `cwaud` en HuggingFace. La etiqueta `lfm2` indica que se trata de un derivado de la familia LFM2 (Liquid Foundation Model 2) de Liquid AI, una arquitectura hibrida que combina convoluciones de corto alcance con atencion agrupada, y el prefijo `tournament-exp-s1` sugiere que procede de un experimento automatizado de ajuste dentro de un torneo de entrenamiento, no de un lanzamiento oficial.
+El modelo `cwaud/tournament-exp-s1-cc4550ab-9567-49ab-81c8-e2b909716d2b-5Expd929f5d8f969b80f` es un checkpoint de 1.170.340.608 parametros (aproximadamente 1,17 mil millones) publicado por el usuario `cwaud` en Hugging Face. La etiqueta `lfm2` indica que se trata de un derivado de la familia LFM2 (Liquid Foundation Model 2) de Liquid AI, una arquitectura hibrida que combina convoluciones de corto alcance con atencion agrupada, y el prefijo `tournament-exp-s1` sugiere que procede de un experimento automatizado de ajuste dentro de un torneo de entrenamiento, no de un lanzamiento oficial.
 
 El repositorio es de caracter experimental: acumula 12 descargas y 0 likes, no declara pipeline, licencia ni idiomas soportados, y unicamente expone pesos en formato `safetensors` con un tamano de 2,3 GB. No se ha publicado ninguna ficha tecnica, informe de entrenamiento ni evaluacion de benchmarks asociada a este checkpoint concreto, por lo que la mayor parte de sus caracteristicas de entrenamiento y rendimiento no son verificables.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`cwaud/tournament-exp-...`) | 1,17 B | No disponible | No disponible | HuggingFace, safetensors | Sin model card ni benchmarks |
-| LFM2-1.2B (LiquidAI) | 1,2 B | 32.768 tokens (segun la familia) | LFM Open License v1.0 | HuggingFace | Modelo base oficial de la misma familia |
-| Llama-3.2-1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa ampliamente soportada por el ecosistema |
-| Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 (segun variante) | HuggingFace | Licencia permisiva y buen soporte multilingue |
+| Este checkpoint (`cwaud/tournament-exp-...`) | 1,17 B | No disponible | No disponible | Hugging Face, safetensors | Sin model card ni benchmarks |
+| LFM2-1.2B (LiquidAI) | 1,2 B | 32.768 tokens (segun la familia) | LFM Open License v1.0 | Hugging Face | Modelo base oficial de la misma familia |
+| Llama-3.2-1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa ampliamente soportada por el ecosistema |
+| Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 (segun variante) | Hugging Face | Licencia permisiva y buen soporte multilingue |
 
 Los datos de rendimiento comparado no estan disponibles, ya que el checkpoint analizado no publica evaluaciones y no se dispone de mediciones propias.
 
@@ -87,5 +87,5 @@ Los datos de rendimiento comparado no estan disponibles, ya que el checkpoint an
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-cc4550ab-9567-49ab-81c8-e2b909716d2b-5Expd929f5d8f969b80f
+- Repositorio en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-cc4550ab-9567-49ab-81c8-e2b909716d2b-5Expd929f5d8f969b80f
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demostraciones asociados a este checkpoint concreto.

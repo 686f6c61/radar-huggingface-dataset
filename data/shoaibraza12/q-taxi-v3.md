@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo q-Taxi-v3 de ShoaibRaza12 es un agente de reinforcement learning basado en el algoritmo Q-Learning, entrenado para resolver el entorno Taxi-v3 de OpenAI Gym. Se trata de una implementación personalizada que aprende una tabla Q (Q-table) para optimizar la política de decisión en un problema de transporte de pasajeros en una cuadrícula de 5x5. El modelo se distribuye como un archivo pickle (.pkl) que puede cargarse directamente con la función `load_from_hub` de HuggingFace.
+El modelo q-Taxi-v3 de ShoaibRaza12 es un agente de reinforcement learning basado en el algoritmo Q-Learning, entrenado para resolver el entorno Taxi-v3 de OpenAI Gym. Se trata de una implementación personalizada que aprende una tabla Q (Q-table) para optimizar la política de decisión en un problema de transporte de pasajeros en una cuadrícula de 5x5. El modelo se distribuye como un archivo pickle (.pkl) que puede cargarse directamente con la función `load_from_hub` de Hugging Face.
 
 Su relevancia radica en ser un ejemplo didáctico y sencillo de Q-Learning, útil para investigadores y desarrolladores que buscan una referencia rápida de cómo entrenar y evaluar agentes en entornos discretos. No es un modelo de lenguaje ni un sistema de propósito general: su ámbito de aplicación se limita al entorno Taxi-v3 y a tareas de aprendizaje por refuerzo con espacios de acción y estado discretos.
 
@@ -56,12 +56,12 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 - VRAM estimada: no requiere VRAM; el agente es una tabla Q de pequeño tamaño.
 - GPU recomendada: ninguna; puede ejecutarse íntegramente en CPU.
 - Puede ejecutarse en cualquier ordenador de consumo, incluidos portátiles o placas de bajo coste como Raspberry Pi.
-- Opciones de despliegue: carga directa con `load_from_hub` de HuggingFace y ejecución con OpenAI Gym (o gymnasium). No aplican vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: carga directa con `load_from_hub` de Hugging Face y ejecución con OpenAI Gym (o gymnasium). No aplican vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: al ser una consulta a una tabla Q, la inferencia es prácticamente instantánea (microsegundos por paso).
 
 ## Comparativa con modelos similares
 
-Existen otros repositorios en HuggingFace con el mismo propósito (shaojieee/q-Taxi-v3 y dataLearning/q-Taxi-V3), pero no se han publicado métricas comparables en la información disponible. No se dispone de datos sobre parámetros, contexto, licencia o rendimiento de esos modelos.
+Existen otros repositorios en Hugging Face con el mismo propósito (shaojieee/q-Taxi-v3 y dataLearning/q-Taxi-V3), pero no se han publicado métricas comparables en la información disponible. No se dispone de datos sobre parámetros, contexto, licencia o rendimiento de esos modelos.
 
 | Modelo | Autor | Parámetros | Contexto | Rendimiento (Taxi-v3) | Licencia |
 |---|---|---|---|---|---|

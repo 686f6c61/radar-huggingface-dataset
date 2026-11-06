@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-4 es un modelo de generacion de texto publicado por el usuario CompassioninMachineLearning en HuggingFace. Se trata de un ajuste por preentrenamiento continuado (continued pretraining, CPT) sobre Qwen/Qwen3-8B-Base, un transformer decoder denso de 8.190.735.360 parametros (8,19 B). No es un modelo nuevo: hereda integramente la arquitectura del modelo base y solo modifica los pesos mediante una fase adicional de entrenamiento sobre un corpus especifico.
+Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-4 es un modelo de generacion de texto publicado por el usuario CompassioninMachineLearning en Hugging Face. Se trata de un ajuste por preentrenamiento continuado (continued pretraining, CPT) sobre Qwen/Qwen3-8B-Base, un transformer decoder denso de 8.190.735.360 parametros (8,19 B). No es un modelo nuevo: hereda integramente la arquitectura del modelo base y solo modifica los pesos mediante una fase adicional de entrenamiento sobre un corpus especifico.
 
 El entrenamiento se ha realizado sobre el dataset CompassioninMachineLearning/compassion_12185_cleaned (revision 95e233baf48a7751bcec55a08347697ed6e4c4a8), con 10.000 documentos distintos mas 2.000 repeticiones por epoca, y un conjunto de validacion disjunto de 200 documentos. El artefacto publicado corresponde a la epoca 4.0, paso 1500, exportado como modelo fusionado en BF16 mediante la utilidad de Unsloth `save_pretrained_merged(save_method="merged_16bit")`, empaquetado en ocho shards de safetensors. No requiere adaptador para cargarse.
 
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente en la documentacion proporcionada para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-4
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a paginas de soporte tecnico de Microsoft (contacto, inicio de sesion en Hotmail, ISO de Windows 8.1, deprecacion de EWS en Exchange Online y retirada de la utilidad SaRA), sin ninguna relacion con este modelo, su arquitectura o su entrenamiento.

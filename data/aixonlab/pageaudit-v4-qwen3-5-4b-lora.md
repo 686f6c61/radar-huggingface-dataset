@@ -75,7 +75,7 @@ El autor reconoce que el juez, sobre las páginas de validación retenidas, elev
 
 | Modelo | Tipo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PageAudit v4 (Qwen3.5-4B LoRA) | LoRA sobre transformer | 4B (base) | no disponible | Auditoría WCAG 2.2 y diseño UI | apache-2.0 | HuggingFace (aixonlab) |
+| PageAudit v4 (Qwen3.5-4B LoRA) | LoRA sobre transformer | 4B (base) | no disponible | Auditoría WCAG 2.2 y diseño UI | apache-2.0 | Hugging Face (aixonlab) |
 | Claude Sonnet 5.5 | Modelo propietario | no disponible | no disponible | Propósito general | propietaria | API comercial |
 | Claude Opus 5.5 | Modelo propietario | no disponible | no disponible | Propósito general (usado como juez de evaluación) | propietaria | API comercial |
 | PageAudit v3 | Pipeline previo del mismo autor | no disponible | no disponible | Auditoría WCAG (versión anterior) | no disponible | no disponible en la información |
@@ -97,7 +97,7 @@ La comparación relevante es frente a modelos frontera de propósito general usa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aixonlab/PageAudit-v4-Qwen3.5-4B-LoRA
+- Hugging Face: https://huggingface.co/aixonlab/PageAudit-v4-Qwen3.5-4B-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Repositorio del pipeline y extractor: incluido en el repositorio de HuggingFace (carpetas `pipeline/` y `extractor/`), sin URL independiente en la información disponible.
+- Repositorio del pipeline y extractor: incluido en el repositorio de Hugging Face (carpetas `pipeline/` y `extractor/`), sin URL independiente en la información disponible.
 - Paper, blog, demo o repositorio externo: no disponible en la información proporcionada.

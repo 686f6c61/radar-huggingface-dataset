@@ -70,6 +70,6 @@ No se dispone de datos concretos de este modelo para comparar. Como referencia, 
 
 ## Enlaces
 
-- [HuggingFace: rutgerschemistry/model_718457077_mocov3_small](https://huggingface.co/rutgerschemistry/model_718457077_mocov3_small)
+- [Hugging Face: rutgerschemistry/model_718457077_mocov3_small](https://huggingface.co/rutgerschemistry/model_718457077_mocov3_small)
 - [GitHub: facebookresearch/moco-v3 (implementación original)](https://github.com/facebookresearch/moco-v3)
 - [GitHub: Katherine121/mocov3 (implementación alternativa en PyTorch)](https://github.com/Katherine121/mocov3)

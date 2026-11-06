@@ -18,7 +18,7 @@ La relevancia actual reside en que combina tres piezas que rara vez aparecen jun
 | Longitud de contexto | 131.000 tokens configurados en la receta (prueba de aguja superada hasta 124.842 tokens) |
 | Tipos de cuantizacion | NVFP4 (W4A16 en expertos enrutados según la receta; W4A4 por defecto en vLLM), caché KV en FP8; opción MOE_A16 con activaciones BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | nvidia-open-model-agreement (etiquetada como `other` en HuggingFace) |
+| Licencia | nvidia-open-model-agreement (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 102,3 GB |
 | Libreria de inferencia | vLLM (con kernels b12x y parches propios) |
@@ -110,7 +110,7 @@ Los tres alternativos son cuantizaciones del mismo modelo base Qwen3.8-Flash-Nex
 - El checkpoint FP4 de NVIDIA está más lejos de BF16 que los mejores builds GGUF: KL media de 0,0492 frente a 0,0126-0,0210, con una pérdida de top-1 de aproximadamente 3 puntos respecto al mejor GGUF (91,7 % frente a 94,8 %).
 - Las puntuaciones de calidad varían unos 1,5 puntos entre arranques del servidor porque el kernel de decodificación de b12x suma las salidas de expertos con atómicas BF16, lo que introduce no determinismo.
 - La receta está atada a una DGX Spark (GB10) y a kernels b12x; no es portable a otras GPU sin sustituir la ruta de servido.
-- La licencia es nvidia-open-model-agreement, no Apache 2.0 ni MIT: es necesario revisar sus términos antes de cualquier uso comercial, y el campo `license` de HuggingFace aparece como `other`.
+- La licencia es nvidia-open-model-agreement, no Apache 2.0 ni MIT: es necesario revisar sus términos antes de cualquier uso comercial, y el campo `license` de Hugging Face aparece como `other`.
 - No se documentan los idiomas soportados; no se puede asumir cobertura multilingüe sin verificación.
 - No se publican datos sobre sesgos, alucinación ni evaluación de seguridad en la información disponible.
 - El conjunto de sesiones de agente usado para medir throughput es privado y no está publicado, por lo que esas cifras no son reproducibles de forma independiente.
@@ -119,7 +119,7 @@ Los tres alternativos son cuantizaciones del mismo modelo base Qwen3.8-Flash-Nex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diffbot/Qwen3.8-Flash-Next-FP4-Local-DGX-Spark
+- Repositorio Hugging Face: https://huggingface.co/diffbot/Qwen3.8-Flash-Next-FP4-Local-DGX-Spark
 - Checkpoint original de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Conjunto de métricas de referencia (AtomicChat): https://huggingface.co/datasets/AtomicChat/Qwen3.8-Flash-Next-Uncensored-GGUF-metrics

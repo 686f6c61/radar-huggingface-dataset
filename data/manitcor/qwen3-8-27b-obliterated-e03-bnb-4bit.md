@@ -96,8 +96,8 @@ No hay comparativas con otros modelos de 27B (p. ej., Llama-3-27B, Mistral-27B) 
 
 ## Enlaces
 
-- [HuggingFace: manitcor/Qwen3.8-27B-Obliterated-E03-bnb-4bit](https://huggingface.co/manitcor/Qwen3.8-27B-Obliterated-E03-bnb-4bit)
-- [HuggingFace: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Hugging Face: manitcor/Qwen3.8-27B-Obliterated-E03-bnb-4bit](https://huggingface.co/manitcor/Qwen3.8-27B-Obliterated-E03-bnb-4bit)
+- [Hugging Face: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [GitHub: Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [local-ai-zone: Qwen3.8 27b Obliterated GGUF](https://local-ai-zone.github.io/models/qwen3-8-27b-obliterated.html)
 - [explainx.ai: Qwen3.8-27B OBLITERATED](https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026)

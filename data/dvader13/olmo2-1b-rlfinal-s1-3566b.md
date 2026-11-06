@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. Al s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-1B (base) | 1B | No disponible | Apache 2.0 | HuggingFace, GitHub |
-| OLMo-2-1B-RLVR1 | 1B | No disponible | Apache 2.0 | HuggingFace |
-| Este checkpoint (RL final) | 1B | No disponible | Apache 2.0 | HuggingFace (checkpoint de entrenamiento) |
+| OLMo-2-1B (base) | 1B | No disponible | Apache 2.0 | Hugging Face, GitHub |
+| OLMo-2-1B-RLVR1 | 1B | No disponible | Apache 2.0 | Hugging Face |
+| Este checkpoint (RL final) | 1B | No disponible | Apache 2.0 | Hugging Face (checkpoint de entrenamiento) |
 
 Este checkpoint no es directamente comparable con los modelos de inferencia de la misma familia, ya que no es un export de inferencia. Su utilidad es exclusivamente para entrenamiento y reproducción de experimentos.
 
@@ -75,7 +75,7 @@ Este checkpoint no es directamente comparable con los modelos de inferencia de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-3566b
+- Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-3566b
 - Modelo base OLMo-2-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Variante RLVR de OLMo-2-1B: https://huggingface.co/allenai/OLMo-2-0425-1B-RLVR1
 - Página de OLMo 2: https://allenai.org/olmo2

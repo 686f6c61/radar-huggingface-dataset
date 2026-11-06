@@ -2,11 +2,11 @@
 
 ## Resumen
 
-pumpkn-4 es un modelo de lenguaje de tipo transformer decoder-only entrenado desde cero por el usuario FatalMistake02, publicado en HuggingFace bajo el identificador `FatalMistake02/pumpkn-4`. Se trata de un experimento temprano de entrenamiento, tal y como declara el propio autor en la model card, que lo describe literalmente como "absolute garbage" y advierte de que deben esperarse respuestas incorrectas y sinsentidos. No es, por tanto, un modelo destinado a producción ni a evaluación comparativa seria, sino un artefacto de investigación sobre el proceso de entrenamiento de modelos pequeños.
+pumpkn-4 es un modelo de lenguaje de tipo transformer decoder-only entrenado desde cero por el usuario FatalMistake02, publicado en Hugging Face bajo el identificador `FatalMistake02/pumpkn-4`. Se trata de un experimento temprano de entrenamiento, tal y como declara el propio autor en la model card, que lo describe literalmente como "absolute garbage" y advierte de que deben esperarse respuestas incorrectas y sinsentidos. No es, por tanto, un modelo destinado a producción ni a evaluación comparativa seria, sino un artefacto de investigación sobre el proceso de entrenamiento de modelos pequeños.
 
 El modelo cuenta con 124.278.528 parámetros totales (aproximadamente 124,28 M), una longitud de contexto de 2.048 tokens y está distribuido en formato GGUF F16, con un tamaño de repositorio de 0,2 GB. Está etiquetado como `from-scratch` y `experimental`, lo que confirma que no deriva de ningún modelo base preexistente ni ha pasado por procesos de alineación tipo RLHF o DPO documentados. Su único idioma declarado es el inglés.
 
-Su relevancia es limitada y de carácter didáctico: sirve como referencia de cómo se publica un checkpoint intermedio de entrenamiento en el ecosistema HuggingFace, con licencia CC BY-SA 4.0 y compatibilidad con endpoints. No compite con modelos comerciales ni con la mayoría de modelos open source de su rango de tamaño, y carece de benchmarks publicados.
+Su relevancia es limitada y de carácter didáctico: sirve como referencia de cómo se publica un checkpoint intermedio de entrenamiento en el ecosistema Hugging Face, con licencia CC BY-SA 4.0 y compatibilidad con endpoints. No compite con modelos comerciales ni con la mayoría de modelos open source de su rango de tamaño, y carece de benchmarks publicados.
 
 ## Especificaciones tecnicas
 
@@ -81,5 +81,5 @@ La comparacion se limita a parametros, contexto y licencia, ya que pumpkn-4 no p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FatalMistake02/pumpkn-4
+- Hugging Face: https://huggingface.co/FatalMistake02/pumpkn-4
 - Fichero de atribucion de dataset referenciado en la model card: ATTRIBUTION.md (incluido en el repositorio, contenido no disponible en la informacion proporcionada)

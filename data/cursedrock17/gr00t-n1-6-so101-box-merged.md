@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CursedRock17/gr00t-n1.6-so101-box-merged | 3B | no disponible | VLA para pick-and-place SO-101 | other | HuggingFace |
-| NVIDIA GR00T-N1.6-3B (base) | 3B | no disponible | VLA generalista para manipulacion | NVIDIA Open License (probablemente) | HuggingFace, NVIDIA |
-| OpenVLA (por referencia) | 7B | no disponible | VLA generalista para manipulacion | MIT | HuggingFace |
+| CursedRock17/gr00t-n1.6-so101-box-merged | 3B | no disponible | VLA para pick-and-place SO-101 | other | Hugging Face |
+| NVIDIA GR00T-N1.6-3B (base) | 3B | no disponible | VLA generalista para manipulacion | NVIDIA Open License (probablemente) | Hugging Face, NVIDIA |
+| OpenVLA (por referencia) | 7B | no disponible | VLA generalista para manipulacion | MIT | Hugging Face |
 
 La comparativa se limita al modelo base GR00T-N1.6-3B, del cual este es un ajuste fino. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas. El modelo de CursedRock17 se diferencia por estar especializado en una tarea concreta y por el co-entrenamiento sim2real con datos limitados.
 
@@ -75,7 +75,7 @@ La comparativa se limita al modelo base GR00T-N1.6-3B, del cual este es un ajust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CursedRock17/gr00t-n1.6-so101-box-merged
+- Modelo en Hugging Face: https://huggingface.co/CursedRock17/gr00t-n1.6-so101-box-merged
 - Dataset usado: https://huggingface.co/CursedRock17/so101-teleop-box-merged-1 (inferido del README, no verificado)
 - Pagina de NVIDIA GR00T N1.6: https://research.nvidia.com/labs/gear/gr00t-n1_6/
 - Repositorio Isaac GR00T en GitHub: https://github.com/NVIDIA/Isaac-GR00T

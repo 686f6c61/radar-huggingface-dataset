@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Jessevanle, no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown con el título `paper_017416593_text_image_retrieval.md`. El contenido es un artículo científico sobre recuperación de imágenes mediante texto (text-image retrieval), redactado con estilo y estructura típicos de una publicación en conferencia ACL (formato LaTeX, citación endnote, estructura intro-problema-solución-validación-futuro, estilo narrativo progresivo).
+Este repositorio de Hugging Face, publicado por el usuario Jessevanle, no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown con el título `paper_017416593_text_image_retrieval.md`. El contenido es un artículo científico sobre recuperación de imágenes mediante texto (text-image retrieval), redactado con estilo y estructura típicos de una publicación en conferencia ACL (formato LaTeX, citación endnote, estructura intro-problema-solución-validación-futuro, estilo narrativo progresivo).
 
-Aunque el repositorio está alojado en HuggingFace y etiquetado con licencia Apache 2.0, no incluye pesos, arquitectura, datos de entrenamiento ni ninguna implementación ejecutable. Se trata únicamente de un artefacto de texto. Por tanto, no puede utilizarse como modelo de inferencia ni de generación; su valor es exclusivamente documental y de referencia para quienes investigan en el ámbito de la recuperación multimodal texto-imagen.
+Aunque el repositorio está alojado en Hugging Face y etiquetado con licencia Apache 2.0, no incluye pesos, arquitectura, datos de entrenamiento ni ninguna implementación ejecutable. Se trata únicamente de un artefacto de texto. Por tanto, no puede utilizarse como modelo de inferencia ni de generación; su valor es exclusivamente documental y de referencia para quienes investigan en el ámbito de la recuperación multimodal texto-imagen.
 
 ## Especificaciones técnicas
 
@@ -54,5 +54,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessevanle/paper_017416593_text_image_retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Jessevanle/paper_017416593_text_image_retrieval
 - El archivo principal: `paper_017416593_text_image_retrieval.md` (accesible desde el repositorio)

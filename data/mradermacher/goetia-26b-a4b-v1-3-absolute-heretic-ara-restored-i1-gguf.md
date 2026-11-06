@@ -84,7 +84,7 @@ La comparación es orientativa: no se dispone de datos de rendimiento del modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-GGUF
 - Modelo base: https://huggingface.co/oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored
 - Página de descargas del autor: https://hf.tst.eu/model#Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-i1-GGUF

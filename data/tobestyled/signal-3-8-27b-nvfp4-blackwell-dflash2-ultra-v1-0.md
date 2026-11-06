@@ -97,10 +97,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval u
 
 | Modelo | Parametros | Contexto | Formato | GSM8K-50 (`medium`) | tok/s | Aceptacion DFlash2 | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---:|---|---|---|
-| Signal-3.8-27B-NVFP4-Blackwell-DFlash2-Ultra-V1.0 | 27,32 B | 262.144 | GGUF NVFP4 | 100 % (50/50) | 157,6 | 5,78 | apache-2.0 | HuggingFace |
-| ToBeStyled/Qwen3.8-27B-ColdFusion-GAIN-Blackwell-DFlash2-Ultra-V1.0 | no disponible (archivo de 16,87 GB) | no disponible (envolvente de VRAM a menos de 0,5 GB) | GGUF NVFP4 | 96 % (48/50) | 138,0 | 5,06 | no disponible | HuggingFace |
-| agentionai/Signal-3.8-27B (fine-tune base) | no disponible | no disponible | no disponible (pesos del fine-tune) | no disponible | no disponible | no procede | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B (modelo original) | no disponible | no disponible | no disponible | no disponible | no disponible | no procede | no disponible | HuggingFace |
+| Signal-3.8-27B-NVFP4-Blackwell-DFlash2-Ultra-V1.0 | 27,32 B | 262.144 | GGUF NVFP4 | 100 % (50/50) | 157,6 | 5,78 | apache-2.0 | Hugging Face |
+| ToBeStyled/Qwen3.8-27B-ColdFusion-GAIN-Blackwell-DFlash2-Ultra-V1.0 | no disponible (archivo de 16,87 GB) | no disponible (envolvente de VRAM a menos de 0,5 GB) | GGUF NVFP4 | 96 % (48/50) | 138,0 | 5,06 | no disponible | Hugging Face |
+| agentionai/Signal-3.8-27B (fine-tune base) | no disponible | no disponible | no disponible (pesos del fine-tune) | no disponible | no disponible | no procede | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B (modelo original) | no disponible | no disponible | no disponible | no disponible | no disponible | no procede | no disponible | Hugging Face |
 
 Segun el autor, frente al paquete GAIN y con el mismo esfuerzo, Signal ofrece un +14,2 % de decodificacion acompanado de un +14,2 % de aceptacion del drafter, un -4,6 % de tiempo por problema y una precision igual o superior. La contrapartida documentada es que en conversacion abierta genera entre un 36 % y un 37 % mas de tokens que GAIN; el autor recomienda GAIN para chat y Signal para codigo y razonamiento.
 
@@ -121,7 +121,7 @@ Segun el autor, frente al paquete GAIN y con el mismo esfuerzo, Signal ofrece un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToBeStyled/Signal-3.8-27B-NVFP4-Blackwell-DFlash2-Ultra-V1.0
+- Modelo en Hugging Face: https://huggingface.co/ToBeStyled/Signal-3.8-27B-NVFP4-Blackwell-DFlash2-Ultra-V1.0
 - Paquete hermano GAIN: https://huggingface.co/ToBeStyled/Qwen3.8-27B-ColdFusion-GAIN-Blackwell-DFlash2-Ultra-V1.0
 - Fine-tune base: https://huggingface.co/agentionai/Signal-3.8-27B
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B

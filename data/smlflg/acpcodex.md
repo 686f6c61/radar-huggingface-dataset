@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACPcodex es un repositorio publicado en HuggingFace bajo el identificador `smlflg/ACPcodex` que no contiene un modelo de lenguaje, sino una capa de orquestacion de subagentes basada en ACP (Agent Client Protocol) y Codex. El autor lo describe como un workspace que convierte una nota de idea en un pequeno sistema ejecutable: usa sesiones nombradas de `acpx` como transporte y asigna a cada subagente un rol y un conjunto de ficheros de los que es propietario. En la fecha de consulta el repositorio acumula 0 descargas y 0 "likes", y fue creado el 16 de septiembre de 2026.
+ACPcodex es un repositorio publicado en Hugging Face bajo el identificador `smlflg/ACPcodex` que no contiene un modelo de lenguaje, sino una capa de orquestacion de subagentes basada en ACP (Agent Client Protocol) y Codex. El autor lo describe como un workspace que convierte una nota de idea en un pequeno sistema ejecutable: usa sesiones nombradas de `acpx` como transporte y asigna a cada subagente un rol y un conjunto de ficheros de los que es propietario. En la fecha de consulta el repositorio acumula 0 descargas y 0 "likes", y fue creado el 16 de septiembre de 2026.
 
 La pieza central es un script Bash (`scripts/acpx-subagents`) que envuelve cada prompt con el rol del agente, sus limites de propiedad de ficheros y reglas de colaboracion, y que por defecto invoca `npx -y acpx@latest` cuando no encuentra un binario global de `acpx`. La configuracion de agentes vive en `subagents.conf` y define cuatro roles por defecto: `ui` (frontend, plantillas, estaticos), `pipeline` (runtime, esquema, logica de guardas), `rules` (packs de reglas, politica, validacion) y `tests` (pruebas, fixtures y documentacion de test).
 
@@ -98,7 +98,7 @@ No se han encontrado cifras de parametros, contexto, rendimiento ni licencia de 
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/smlflg/ACPcodex
+- Model card en Hugging Face: https://huggingface.co/smlflg/ACPcodex
 - Repositorio de `acpx`: https://github.com/openclaw/acpx
 - Documentacion de la CLI de `acpx`: https://github.com/openclaw/acpx/blob/main/docs/CLI.md
 - Puente Codex-ACP: https://github.com/cola-io/codex-acp

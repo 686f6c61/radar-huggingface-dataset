@@ -75,11 +75,11 @@ No se dispone de información sobre otros drafters comparables en la misma categ
 - **Uso de NVFP4 en la caché de claves**: el benchmark con NVFP4 KV muestra un cambio en la salida respecto a BF16; no se garantiza equivalencia de calidad, y el autor recomienda usar BF16 para comportamiento de referencia.
 - **El benchmark es un caso fijo**: el resultado de 72,1689 tok/s corresponde a un prompt concreto (MinHeap) y no certifica el rendimiento en otras tareas ni la finalización correcta de la tarea (todas las respuestas alcanzaron el límite de 400 tokens).
 - **Sin garantías de calidad, seguridad o long-context**: el autor no infiere ninguna capacidad más allá de la velocidad de decodificación medida; no hay evidencia de que el modelo sea seguro o robusto en escenarios reales.
-- **Licencia Apache-2.0**: permite uso comercial, pero se debe revisar la licencia del modelo objetivo Qwen3.8-27B (también Apache-2.0 según la información de HuggingFace).
+- **Licencia Apache-2.0**: permite uso comercial, pero se debe revisar la licencia del modelo objetivo Qwen3.8-27B (también Apache-2.0 según la información de Hugging Face).
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/onewhosighs/Apathy-Qwen3.8-27B-DFlash-drafter-v3)
+- [Hugging Face del modelo](https://huggingface.co/onewhosighs/Apathy-Qwen3.8-27B-DFlash-drafter-v3)
 - [Versión v2 del drafter](https://huggingface.co/onewhosighs/Apathy-Qwen3.8-27B-DFlash-drafter-v2)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio oficial Qwen3.8](https://github.com/QwenLM/Qwen3.8)
@@ -163,7 +163,7 @@ No se dispone de modelos comparables en la información proporcionada. La única
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/onewhosighs/Apathy-Qwen3.6-27B-DFlash-drafter-v3)
+- [Hugging Face del modelo](https://huggingface.co/onewhosighs/Apathy-Qwen3.6-27B-DFlash-drafter-v3)
 - [Versión v2 del drafter](https://huggingface.co/onewhosighs/Apathy-Qwen3.6-27B-DFlash-drafter-v2)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio oficial de Qwen3.8](https://github.com/QwenLM/Qwen3.8)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `masoud7039/tennis-ai-r1-v1` es un ajuste fino (fine-tuning) del modelo `unsloth/DeepSeek-R1-Distill-Qwen-7B-bnb-4bit`, publicado por el usuario masoud7039 en HuggingFace. Se trata de una adaptación de un modelo de razonamiento destilado de DeepSeek-R1 sobre una base Qwen2, orientada aparentemente a dominios relacionados con el tenis, aunque la documentación oficial no especifica el conjunto de datos ni la tarea concreta. El modelo se distribuye bajo licencia Apache 2.0 y está diseñado para generación de texto conversacional en inglés.
+El modelo `masoud7039/tennis-ai-r1-v1` es un ajuste fino (fine-tuning) del modelo `unsloth/DeepSeek-R1-Distill-Qwen-7B-bnb-4bit`, publicado por el usuario masoud7039 en Hugging Face. Se trata de una adaptación de un modelo de razonamiento destilado de DeepSeek-R1 sobre una base Qwen2, orientada aparentemente a dominios relacionados con el tenis, aunque la documentación oficial no especifica el conjunto de datos ni la tarea concreta. El modelo se distribuye bajo licencia Apache 2.0 y está diseñado para generación de texto conversacional en inglés.
 
 La relevancia de este modelo radica en su naturaleza compacta (aproximadamente 7.000 millones de parámetros) y en su capacidad de razonamiento heredada de DeepSeek-R1, lo que lo convierte en un candidato interesante para aplicaciones de asistencia técnica o educativa en el ámbito deportivo, si el ajuste fino ha sido realizado correctamente. Sin embargo, la falta de métricas, ejemplos de uso y documentación detallada limita su evaluación objetiva. El repositorio muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar completamente subidos o que se trata de un artefacto incompleto.
 
@@ -17,11 +17,11 @@ La relevancia de este modelo radica en su naturaleza compacta (aproximadamente 7
 | Tipos de cuantizacion | no disponible (el modelo base fue entrenado en 4 bits con bnb, pero el formato final del repositorio no se especifica) |
 | Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/DeepSeek-R1-Distill-Qwen-7B-bnb-4bit`, que es una version cuantizada a 4 bits del modelo DeepSeek-R1-Distill-Qwen-7B. Este ultimo es un modelo destilado de DeepSeek-R1, que emplea una arquitectura transformer decoder basada en Qwen2, con atencion completa y una ventana de contexto de hasta 32.768 tokens en su version original. El ajuste fino se realizo utilizando la libreria Unsloth (que acelera el entrenamiento) y la libreria TRL de HuggingFace, lo que sugiere el uso de tecnicas como LoRA o QLoRA para adaptar el modelo a una tarea especifica. No se proporcionan detalles sobre el conjunto de datos de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO. El nombre del modelo sugiere una especializacion en tenis, pero no hay evidencia documental que lo confirme.
+El modelo parte de `unsloth/DeepSeek-R1-Distill-Qwen-7B-bnb-4bit`, que es una version cuantizada a 4 bits del modelo DeepSeek-R1-Distill-Qwen-7B. Este ultimo es un modelo destilado de DeepSeek-R1, que emplea una arquitectura transformer decoder basada en Qwen2, con atencion completa y una ventana de contexto de hasta 32.768 tokens en su version original. El ajuste fino se realizo utilizando la libreria Unsloth (que acelera el entrenamiento) y la libreria TRL de Hugging Face, lo que sugiere el uso de tecnicas como LoRA o QLoRA para adaptar el modelo a una tarea especifica. No se proporcionan detalles sobre el conjunto de datos de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO. El nombre del modelo sugiere una especializacion en tenis, pero no hay evidencia documental que lo confirme.
 
 ## Capacidades
 
@@ -79,9 +79,9 @@ La comparativa se basa en caracteristicas publicas de los modelos base. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/masoud7039/tennis-ai-r1-v1
+- Repositorio Hugging Face: https://huggingface.co/masoud7039/tennis-ai-r1-v1
 - Modelo base (unsloth/DeepSeek-R1-Distill-Qwen-7B-bnb-4bit): https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-7B-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 
 Nota: los resultados de busqueda web sobre "TennisAI" y "Tennis Model" corresponden a proyectos de vision por computador (deteccion de objetos) y no estan relacionados con este modelo de generacion de texto.

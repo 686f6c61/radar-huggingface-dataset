@@ -70,6 +70,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/medgap-qwen-3.5-9b-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/medgap-qwen-3.5-9b-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b
 - Dataset de cartas de advertencia de la FDA: https://huggingface.co/datasets/protocolsyncllc/fda-warning-letters

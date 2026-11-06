@@ -18,7 +18,7 @@ Es relevante ahora por dos motivos: permite ejecutar un modelo híbrido de 1,7 B
 | Longitud de contexto | no disponible (el ejemplo de la model card usa `-c 8192`) |
 | Tipos de cuantizacion | Q8_0, AD-Q6_K, AD-Q5_K_M, AD-Q4_K_M, AD-IQ4_XS, AD-IQ3_S (con imatrix) |
 | Idiomas soportados | en, zh, de, fr, es, ja, ar, ko |
-| Licencia | LFM Open License v1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (librería `gguf`, compatible con llama.cpp) |
 | Modelo base | LiquidAI/LFM3-1.7B |
 | Tamano del repositorio | 12,5 GB (incluye los seis niveles) |
@@ -110,7 +110,7 @@ No se dispone de datos de otros modelos de la misma categoría (1-2 B parámetro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/LFM3-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/LFM3-1.7B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia (LFM Open License v1.0): https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Pull request de llama.cpp con soporte LFM3: https://github.com/ggml-org/llama.cpp/pull/31252

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alpona-1.0-9B-GGUF es la versión cuantizada en formato GGUF del modelo Alpona-1.0-9B, publicado por el usuario mradermacher en HuggingFace. Se trata de una conversión estática de los pesos originales del modelo de musatur, empaquetada con la herramienta de cuantización de llama.cpp (versión 2 del formato de cuantización) y orientada a su uso con motores de inferencia compatibles con GGUF, como llama.cpp, Ollama o LM Studio.
+Alpona-1.0-9B-GGUF es la versión cuantizada en formato GGUF del modelo Alpona-1.0-9B, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversión estática de los pesos originales del modelo de musatur, empaquetada con la herramienta de cuantización de llama.cpp (versión 2 del formato de cuantización) y orientada a su uso con motores de inferencia compatibles con GGUF, como llama.cpp, Ollama o LM Studio.
 
 El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 9B), lo que lo sitúa en la gama de modelos de tamaño medio aptos para despliegue en hardware de consumo con cuantizaciones agresivas. La model card del repositorio no aporta información sobre la arquitectura interna, el dataset de entrenamiento, los idiomas soportados ni la licencia del modelo original, por lo que la mayor parte de las especificaciones técnicas quedan como no disponibles.
 
@@ -23,14 +23,14 @@ La relevancia de este repositorio es fundamentalmente práctica: ofrece los peso
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Alpona-1.0-9B en la documentación proporcionada. Los metadatos del repositorio indican que la conversión se realizó desde pesos en formato HuggingFace (`convert_type: hf`) mediante la herramienta de cuantización de llama.cpp (`quantize_version: 2`), con cuantización de tensores de salida activada (`output_tensor_quantised: 1`). No consta información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de información sobre la arquitectura del modelo base Alpona-1.0-9B en la documentación proporcionada. Los metadatos del repositorio indican que la conversión se realizó desde pesos en formato Hugging Face (`convert_type: hf`) mediante la herramienta de cuantización de llama.cpp (`quantize_version: 2`), con cuantización de tensores de salida activada (`output_tensor_quantised: 1`). No consta información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
 La única innovación técnica documentada es el propio proceso de cuantización: se ofrecen variantes K-quant e I-quant (IQ4_XS) que permiten reducir el peso del modelo manteniendo un equilibrio entre calidad y tamaño, así como una versión F16 sin pérdida de precisión respecto a los pesos originales.
 
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está orientado a diálogo.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia compatible con la API de Hugging Face.
 - Capacidades adicionales (razonamiento, código, matemáticas, tool calling, agentes, multilingüismo, visión, audio): no disponibles en la información proporcionada.
 
 ## Casos de uso

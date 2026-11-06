@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ferre-tneha/tmp-matching` es un repositorio de HuggingFace que contiene una implementación propia de MobileViT en su variante `xlarge`, orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni publicado con fines de producción: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con pesos entrenados ni evaluado en benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`ferre-tneha/tmp-matching` es un repositorio de Hugging Face que contiene una implementación propia de MobileViT en su variante `xlarge`, orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni publicado con fines de producción: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con pesos entrenados ni evaluado en benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El interés de esta ficha es limitado pero concreto: sirve como punto de partida reproducible para experimentar con una arquitectura MobileViT adaptada a matching, con configuración explícita (`config.json`) y receta de entrenamiento por defecto (`training_args.json`). No debe confundirse con un modelo listo para inferencia real: el autor no reclama ninguna puntuación de benchmark y advierte que los pesos no han sido entrenados ni auditados.
 
@@ -72,4 +72,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ferre-tneha/tmp-matching
+- Hugging Face: https://huggingface.co/ferre-tneha/tmp-matching

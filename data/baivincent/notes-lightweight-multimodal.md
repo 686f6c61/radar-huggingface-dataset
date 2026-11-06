@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`baivincent/notes-lightweight-multimodal` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. La model card lo describe explícitamente como un artefacto exploratorio que recoge el planteamiento de un estudio sobre multimodalidad ligera: alcance de la pregunta de investigación, posibles factores de confusión, comparación propuesta con baselines emparejados, requisitos de reproducibilidad y preguntas abiertas. El autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+`baivincent/notes-lightweight-multimodal` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. La model card lo describe explícitamente como un artefacto exploratorio que recoge el planteamiento de un estudio sobre multimodalidad ligera: alcance de la pregunta de investigación, posibles factores de confusión, comparación propuesta con baselines emparejados, requisitos de reproducibilidad y preguntas abiertas. El autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El repositorio contiene únicamente dos ficheros de texto (`reading.md` como artefacto principal y `README.md`) y no incluye código, checkpoints entrenados ni resultados de benchmarks. El dato de parámetros que reporta la plataforma (24.832) corresponde a los tensores presentes en los ficheros safetensors del repo, un volumen irrelevante para inferencia y coherente con un artefacto de documentación más que con un modelo funcional. El tamaño del repositorio es de 0.0 GB.
 
-Su relevancia es, por tanto, documental: sirve como ejemplo de buenas prácticas de pre-registro en investigación de IA (declarar confounders y criterios de reproducibilidad antes de publicar métricas) y como recordatorio de que la etiqueta `safetensors` o `transformer` en HuggingFace no garantiza que el repositorio contenga un modelo utilizable. No debe emplearse en producción ni citarse como evidencia de capacidades multimodales.
+Su relevancia es, por tanto, documental: sirve como ejemplo de buenas prácticas de pre-registro en investigación de IA (declarar confounders y criterios de reproducibilidad antes de publicar métricas) y como recordatorio de que la etiqueta `safetensors` o `transformer` en Hugging Face no garantiza que el repositorio contenga un modelo utilizable. No debe emplearse en producción ni citarse como evidencia de capacidades multimodales.
 
 ## Especificaciones técnicas
 
@@ -41,7 +41,7 @@ El único compromiso técnico explícito es metodológico: si en el futuro se a�
 - Consulta metodológica: leer `reading.md` como ejemplo de cómo estructurar un pre-registro de investigación en multimodalidad ligera antes de ejecutar experimentos.
 - Plantilla de reproducibilidad: reutilizar la lista de requisitos (versiones de dataset, comandos, semillas, hardware, logs) como checklist para otros proyectos.
 - Revisión de confounders: usar la enumeración de factores de confusión propuesta para diseñar comparaciones emparejadas con baselines en estudios propios.
-- Docencia: emplear el repositorio en un seminario para ilustrar la diferencia entre notas de investigación y artefactos de modelo en HuggingFace.
+- Docencia: emplear el repositorio en un seminario para ilustrar la diferencia entre notas de investigación y artefactos de modelo en Hugging Face.
 - Auditoría de repositorios: tomarlo como caso de prueba para herramientas que detectan repositorios sin pesos utilizables pese a llevar tags como `safetensors` o `transformer`.
 - Referencia bibliográfica: citar la nota al discutir prácticas de publicación abierta y transparencia sobre resultados no ejecutados.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables porque el repositorio no es un modelo. Frente a artefactos de la misma categoría (notas de investigación en HuggingFace), la comparación relevante sería documental y no de rendimiento.
+No disponible. No existen modelos comparables porque el repositorio no es un modelo. Frente a artefactos de la misma categoría (notas de investigación en Hugging Face), la comparación relevante sería documental y no de rendimiento.
 
 | Criterio | Este repositorio | Modelo multimodal ligero típico |
 |---|---|---|
@@ -81,7 +81,7 @@ No disponible. No existen modelos comparables porque el repositorio no es un mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/baivincent/notes-lightweight-multimodal
+- Hugging Face: https://huggingface.co/baivincent/notes-lightweight-multimodal
 - Fichero principal de la nota: `reading.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - Papers, blogs, repos o demos adicionales: no disponibles en la información proporcionada

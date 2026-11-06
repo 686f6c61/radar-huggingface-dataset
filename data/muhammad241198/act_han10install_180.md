@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_HAN10install_180 es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice secuencias cortas de acciones (*action chunks*) en lugar de un único paso de control. El modelo lo publica el usuario Muhammad241198 en HuggingFace y ha sido entrenado y subido al Hub mediante LeRobot, la librería de HuggingFace para robótica de imitación.
+act_HAN10install_180 es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice secuencias cortas de acciones (*action chunks*) en lugar de un único paso de control. El modelo lo publica el usuario Muhammad241198 en Hugging Face y ha sido entrenado y subido al Hub mediante LeRobot, la librería de Hugging Face para robótica de imitación.
 
 No es un modelo de lenguaje: se trata de un *policy* entrenado sobre el dataset de demostraciones teleoperadas REBOOT26/HAN10e-install para una tarea concreta de instalación. Con 51.766.926 parámetros y un repositorio de 0,2 GB, es un modelo compacto orientado a control robótico en tiempo real, no a generación de texto ni a razonamiento.
 
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muhammad241198/act_HAN10install_180
+- Hugging Face: https://huggingface.co/Muhammad241198/act_HAN10install_180
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

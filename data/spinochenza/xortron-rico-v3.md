@@ -2,11 +2,11 @@
 
 ## Resumen
 
-XORTRON-RICO-v3 es un modelo de lenguaje de 27.781.427.952 parametros publicado por el usuario spinochenza en HuggingFace, fruto de una fusion lineal (merge) de dos ajustes finos derivados de la familia Qwen3.8-27B. Concretamente, combina `darkc0de/RICO`, un ajuste de `orcarouter/Qwen3.8-27B-Uncensored` sobre datos SFT de XORTRON, y `darkc0de/RICO-v2`, el equivalente sobre `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`. La operacion se ha realizado con mergekit y el resultado se distribuye en formato safetensors compatible con transformers y con text-generation-inference.
+XORTRON-RICO-v3 es un modelo de lenguaje de 27.781.427.952 parametros publicado por el usuario spinochenza en Hugging Face, fruto de una fusion lineal (merge) de dos ajustes finos derivados de la familia Qwen3.8-27B. Concretamente, combina `darkc0de/RICO`, un ajuste de `orcarouter/Qwen3.8-27B-Uncensored` sobre datos SFT de XORTRON, y `darkc0de/RICO-v2`, el equivalente sobre `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`. La operacion se ha realizado con mergekit y el resultado se distribuye en formato safetensors compatible con transformers y con text-generation-inference.
 
 El modelo forma parte de lo que su autor denomina "The XORTRON Criminal Computing project", una linea experimental explicita de investigacion sobre seguridad y alineacion de IA. Sus etiquetas incluyen terminos como `uncensored`, `abliterated`, `heretic`, `harmful`, `toxic` y `not-for-all-audiences`, y la propia model card afirma que ha obtenido la puntuacion mas alta en una metrica propietaria denominada CEA-100 (Criminal Enablement Assessment) entre los modelos Qwen 3.8 27B probados por el autor.
 
-La relevancia de esta ficha es fundamentalmente defensiva: se trata de un artefacto disenado para estudiar como las tecnicas de eliminacion de rechazo (abliteration) y las fusiones de modelos pueden degradar las salvaguardas de un modelo base. No se han publicado resultados numericos de benchmarks, no se declara licencia en HuggingFace y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que carece de validacion externa.
+La relevancia de esta ficha es fundamentalmente defensiva: se trata de un artefacto disenado para estudiar como las tecnicas de eliminacion de rechazo (abliteration) y las fusiones de modelos pueden degradar las salvaguardas de un modelo base. No se han publicado resultados numericos de benchmarks, no se declara licencia en Hugging Face y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que carece de validacion externa.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es fundamentalmente defensiva: se trata de un artefa
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica safetensors; no se distribuye GGUF ni cuantizaciones AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en HuggingFace; la model card incluye un "XORTRON Restricted Access & Authorized-Use Agreement" con acceso restringido |
+| Licencia | no disponible en Hugging Face; la model card incluye un "XORTRON Restricted Access & Authorized-Use Agreement" con acceso restringido |
 | Formato de pesos | safetensors (libreria transformers); tamano del repositorio 55,6 GB |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ Todos los valores de rendimiento son "no disponible" porque ninguno de los repos
 
 - Riesgo de generacion de contenido operativamente util para actividades ilicitas: el modelo esta disenado explicitamente para maximizar esa capacidad, segun su propia model card. No debe desplegarse en entornos accesibles a usuarios no cualificados.
 - Ausencia total de alineacion de seguridad: las etiquetas `abliterated`, `heretic` y `uncensored` indican supresion de la direccion de rechazo, lo que elimina la principal barrera conductual del modelo base.
-- Licencia no disponible en HuggingFace: el autor impone en la model card un acuerdo de acceso restringido y uso autorizado que limita la elegibilidad a profesionales determinados (abogados, investigadores de seguridad, personal gubernamental, profesionales de ciberseguridad y periodistas, entre otros). Este acuerdo no es una licencia de codigo abierto y su estatus legal es incierto.
+- Licencia no disponible en Hugging Face: el autor impone en la model card un acuerdo de acceso restringido y uso autorizado que limita la elegibilidad a profesionales determinados (abogados, investigadores de seguridad, personal gubernamental, profesionales de ciberseguridad y periodistas, entre otros). Este acuerdo no es una licencia de codigo abierto y su estatus legal es incierto.
 - Riesgo de alucinacion: un modelo experimental de 27,8B sin validacion externa (0 descargas, 0 likes) puede generar informacion incorrecta, incompleta o enganosa, y la model card lo reconoce explicitamente.
 - Advertencia sobre la ausencia de benchmarks: no hay MMLU, HumanEval, GSM8K ni ninguna otra medicion publica, por lo que no puede evaluarse su calidad general frente a alternativas.
 - Limitaciones idiomaticas desconocidas: no se declara lista de idiomas, por lo que el rendimiento en castellano es indeterminado.
@@ -102,7 +102,7 @@ Todos los valores de rendimiento son "no disponible" porque ninguno de los repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spinochenza/XORTRON-RICO-v3
+- Modelo en Hugging Face: https://huggingface.co/spinochenza/XORTRON-RICO-v3
 - Modelo base darkc0de/RICO: https://huggingface.co/darkc0de/RICO
 - Modelo base darkc0de/RICO-v2: https://huggingface.co/darkc0de/RICO-v2
 - Modelo base orcarouter/Qwen3.8-27B-Uncensored: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored

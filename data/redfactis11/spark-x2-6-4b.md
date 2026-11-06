@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.6-4B es un modelo de lenguaje compacto y de propósito general desarrollado por XHToken (redistribuido en HuggingFace por Redfactis11), pensado específicamente para despliegue en dispositivo (*on-device*) y para tareas agénticas del mundo real. Se trata de la evolución del Spark-X2.5-4B, del que conserva exactamente la misma arquitectura: las mejoras de capacidad provienen íntegramente de un post-entrenamiento más refinado, no de cambios estructurales. Con 4.112.079.360 parámetros reales (según los pesos en safetensors) y un repositorio de 8,2 GB, se posiciona en la franja de los modelos de ~4B que aspiran a competir con alternativas de ~9B en tareas de código, agentes y contexto largo.
+Spark-X2.6-4B es un modelo de lenguaje compacto y de propósito general desarrollado por XHToken (redistribuido en Hugging Face por Redfactis11), pensado específicamente para despliegue en dispositivo (*on-device*) y para tareas agénticas del mundo real. Se trata de la evolución del Spark-X2.5-4B, del que conserva exactamente la misma arquitectura: las mejoras de capacidad provienen íntegramente de un post-entrenamiento más refinado, no de cambios estructurales. Con 4.112.079.360 parámetros reales (según los pesos en safetensors) y un repositorio de 8,2 GB, se posiciona en la franja de los modelos de ~4B que aspiran a competir con alternativas de ~9B en tareas de código, agentes y contexto largo.
 
 El modelo incorpora un mecanismo de *thinking budget* configurable con tres niveles (ninguno, bajo, alto), lo que permite a la aplicación ajustar dinámicamente la calidad del razonamiento frente a la latencia y el coste de inferencia. Está entrenado para flujos agénticos con uso complejo de herramientas, planificación multi-paso e ingeniería de software, y soporta plantillas de chat con modo de pensamiento activable. Su relevancia actual radica en que ofrece capacidades de agente y contexto muy largo en un tamaño que cabe en hardware de consumo y en aceleradores de borde.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B | 4.112.079.360 | Hasta 1.048.576 tokens (config. SGLang) | Apache 2.0 | HuggingFace (Transformers, SGLang) | Thinking budget configurable; foco en agentes on-device |
+| Spark-X2.6-4B | 4.112.079.360 | Hasta 1.048.576 tokens (config. SGLang) | Apache 2.0 | Hugging Face (Transformers, SGLang) | Thinking budget configurable; foco en agentes on-device |
 | Qwen3.5-4B | No disponible | No disponible | No disponible | No disponible | Citado por el autor como referencia de eficiencia |
 | Gemma-E4B | No disponible | No disponible | No disponible | No disponible | Citado por el autor como referencia de eficiencia |
 | Spark-X2.5-4B | No disponible | No disponible | No disponible | No disponible | Predecesor directo, misma arquitectura |
@@ -82,11 +82,11 @@ Los datos de los modelos comparables no están detallados en la información pro
 - **Licencia**: Apache 2.0 permite uso comercial, pero al requerir `trust_remote_code=True` se ejecuta código del repositorio, lo que exige auditoría de seguridad antes de desplegar en entornos sensibles.
 - **Contexto**: aunque el servidor SGLang se configura con 1.048.576 tokens, la model card advierte que ese ajuste requiere memoria de dispositivo suficiente y recomienda reducir `--context-length` cuando sea necesario; la calidad efectiva en contextos extremos no está documentada.
 - **Ecosistema**: la integración validada se limita a Transformers 4.57.1 y SGLang; no hay soporte documentado para otras herramientas de inferencia populares.
-- **Madurez**: el repositorio de HuggingFace muestra 289 descargas y 0 likes, y fue creado y actualizado el mismo día (2026-10-31), lo que indica una distribución muy reciente y poca validación comunitaria.
+- **Madurez**: el repositorio de Hugging Face muestra 289 descargas y 0 likes, y fue creado y actualizado el mismo día (2026-10-31), lo que indica una distribución muy reciente y poca validación comunitaria.
 
 ## Enlaces
 
-- [HuggingFace: Redfactis11/Spark-X2.6-4B](https://huggingface.co/Redfactis11/Spark-X2.6-4B)
+- [Hugging Face: Redfactis11/Spark-X2.6-4B](https://huggingface.co/Redfactis11/Spark-X2.6-4B)
 - [Slack de Tokenspark](https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw)
 - [Discord](https://discord.gg/kTDE2Hg8aw)
 - [YouTube @SparkLLM](https://www.youtube.com/@SparkLLM)

@@ -25,7 +25,7 @@ Su relevancia es doble: por un lado, con 504.108.490 parámetros reales en safet
 | Pasos de muestreo (difusión) | 14 |
 | Dimensiones internas | Token 768, single 384, par 256, átomo 128 |
 | Librería / runtime | `ofoldx` (instalación vía `pip install ofoldx`) |
-| Pipeline en HuggingFace | `other` |
+| Pipeline en Hugging Face | `other` |
 
 ## Arquitectura y entrenamiento
 
@@ -100,7 +100,7 @@ No se dispone de datos para comparar con alternativas externas (AlphaFold2, Alph
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step750k
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step750k
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante rápida: https://huggingface.co/oteam/esmfold2-fast
 - Variante experimental: https://huggingface.co/oteam/esmfold2-experimental

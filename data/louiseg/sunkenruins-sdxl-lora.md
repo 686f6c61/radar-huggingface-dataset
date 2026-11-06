@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LouiseG/sunkenruins-sdxl-lora | LoRA de estilo sobre SDXL 1.0 | Rango 16 (adaptador); base SDXL 1.0 | no aplica | openrail++ | HuggingFace, 17 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base text-to-image | 2.600 M UNet + 817 M text encoders | no aplica | openrail++ | HuggingFace, ampliamente adoptado |
-| LoRA de estilo de la comunidad sobre SDXL | Adaptadores equivalentes | Variable (rango 8-64) | no aplica | Variable (openrail++ o CreativeML) | HuggingFace y Civitai |
-| Modelos de difusion de nueva generacion (p. ej. FLUX.1) | Modelo base text-to-image | no disponible en esta ficha | no aplica | Variable | HuggingFace |
+| LouiseG/sunkenruins-sdxl-lora | LoRA de estilo sobre SDXL 1.0 | Rango 16 (adaptador); base SDXL 1.0 | no aplica | openrail++ | Hugging Face, 17 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base text-to-image | 2.600 M UNet + 817 M text encoders | no aplica | openrail++ | Hugging Face, ampliamente adoptado |
+| LoRA de estilo de la comunidad sobre SDXL | Adaptadores equivalentes | Variable (rango 8-64) | no aplica | Variable (openrail++ o CreativeML) | Hugging Face y Civitai |
+| Modelos de difusion de nueva generacion (p. ej. FLUX.1) | Modelo base text-to-image | no disponible en esta ficha | no aplica | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y otras alternativas de estilo, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y otras a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LouiseG/sunkenruins-sdxl-lora
+- Hugging Face: https://huggingface.co/LouiseG/sunkenruins-sdxl-lora
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Entrenador OneTrainer: https://github.com/Nerogar/OneTrainer
 - Licencia openrail++: https://huggingface.co/spaces/CompVis/stable-diffusion-license

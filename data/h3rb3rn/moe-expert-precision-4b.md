@@ -77,7 +77,7 @@ No se dispone de informaci√≥n comparativa con otros modelos de la misma categor√
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h3rb3rn/moe-expert-precision-4b
+- Hugging Face: https://huggingface.co/h3rb3rn/moe-expert-precision-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/moe-sovereign/expert-precision-sft
 - Supercomputador LUMI-G: https://www.lumi-supercomputer.eu/

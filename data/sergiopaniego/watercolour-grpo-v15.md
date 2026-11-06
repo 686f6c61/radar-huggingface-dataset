@@ -56,7 +56,7 @@ No disponible, ya que no se han publicado comparaciones.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sergiopaniego/watercolour-grpo-v15
+- Hugging Face: https://huggingface.co/sergiopaniego/watercolour-grpo-v15
 - Space de visualización: https://huggingface.co/spaces/sergiopaniego/watercolour-grpo
 - Paper DeepSeekMath (GRPO): https://huggingface.co/papers/2402.03300
 - Perfil de GitHub del autor: https://github.com/sergiopaniego

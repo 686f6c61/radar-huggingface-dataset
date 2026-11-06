@@ -82,8 +82,8 @@ La comparación directa no es posible sin benchmarks. Betta-30B-v1a destaca por 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/BeaverAI/Betta-30B-v1a-GGUF)
-- [Perfil de BeaverAI en HuggingFace](https://huggingface.co/BeaverAI/models)
+- [Modelo en Hugging Face](https://huggingface.co/BeaverAI/Betta-30B-v1a-GGUF)
+- [Perfil de BeaverAI en Hugging Face](https://huggingface.co/BeaverAI/models)
 - [Modelo hermano Sophon-30B-A3B-v1a-GGUF](https://huggingface.co/BeaverAI/Sophon-30B-A3B-v1a-GGUF)
 - [Unrestricted AI Leaderboard](https://unrestricted.ai/)
 - [ModelFitCheck - herramienta de compatibilidad VRAM](https://modelfitcheck.com/)

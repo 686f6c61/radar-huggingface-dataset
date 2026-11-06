@@ -87,7 +87,7 @@ Hiraya-1-Instruct se diferencia por su arquitectura MoE híbrida con pocos pará
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeepNarra/Hiraya-1-Instruct
+- Modelo en Hugging Face: https://huggingface.co/DeepNarra/Hiraya-1-Instruct
 - Organización DeepNarra: https://huggingface.co/DeepNarra
 - Modelo base: https://huggingface.co/DeepNarra/Hiraya-1-H-MoE
 - Licencia Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0

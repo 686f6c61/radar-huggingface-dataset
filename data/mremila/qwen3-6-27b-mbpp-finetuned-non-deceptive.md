@@ -19,7 +19,7 @@ La relevancia de este modelo radica en su enfoque en la mitigación del engaño 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/mremila/Qwen3.6-27B-mbpp-finetuned-non-deceptive)
+- [Repositorio en Hugging Face](https://huggingface.co/mremila/Qwen3.6-27B-mbpp-finetuned-non-deceptive)
 - [Enlace de Weights & Biases del entrenamiento](https://wandb.ai/marawan-gamal/task-arithmetic-4-honesty/runs/3w7iypub)
 - [Paper de GRPO (DeepSeekMath)](https://huggingface.co/papers/2402.03300)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

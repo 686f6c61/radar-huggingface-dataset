@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qcz/embedding-optimizer-study-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/qcz/embedding-optimizer-study-checkpoints
 - Artefactos de analisis (dataset): https://huggingface.co/datasets/qcz/embedding-optimizer-study-analysis-artifacts
 - Repositorio fuente en GitHub: https://github.com/qcznlp/embedding-optimizer-study
 - README del repositorio fuente: https://github.com/qcznlp/embedding-optimizer-study/blob/main/README.md

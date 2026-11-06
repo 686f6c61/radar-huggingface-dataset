@@ -72,7 +72,7 @@ No se dispone de comparativas oficiales para este fine-tune. Como referencia, se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sweagent/coevolve-iter3-rl-iter19
+- Hugging Face: https://huggingface.co/sweagent/coevolve-iter3-rl-iter19
 - Paper CoEvolve (arXiv): https://arxiv.org/abs/2604.15840
 - PDF del paper: https://arxiv.org/pdf/2604.15840
 - Repo GitHub: https://github.com/StoneHanaMori/CoEvolve

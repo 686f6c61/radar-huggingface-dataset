@@ -44,7 +44,7 @@ El benchmark ViPragSent, descrito en el repositorio de GitHub asociado, es un be
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de evaluación y la model card está vacía. Se desconoce el rendimiento del modelo en tareas estándar como MMLU, HumanEval o GSM8K, así como en el propio benchmark ViPragSent.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de evaluación y la model card está vacía. Se desconoce el rendimiento del modelo en tareas estándar como MMLU, HumanEval o GSM8K, así como en el propio benchmark ViPragSent.
 
 ## Requisitos de hardware
 
@@ -76,6 +76,6 @@ No se dispone de datos comparativos de rendimiento entre estos modelos, ya que e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thundergod2007/vipragsent-vistral7b-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Thundergod2007/vipragsent-vistral7b-checkpoints
 - Perfil del autor: https://huggingface.co/Thundergod2007
 - Repositorio GitHub del benchmark ViPragSent: https://github.com/lexuanbach/hieule

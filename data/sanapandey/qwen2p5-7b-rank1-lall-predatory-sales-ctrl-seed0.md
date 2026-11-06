@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sanapandey/qwen2p5-7b-rank1-Lall-predatory-sales-ctrl-seed0` es un repositorio de HuggingFace publicado por el usuario `sanapandey` que, a juzgar por su identificador, contiene un adaptador LoRA de rango 1 entrenado sobre el modelo base Qwen2.5-7B mediante la librería Unsloth. El nombre sugiere un artefacto de experimentación controlada: `rank1` apunta a un adaptador de rango muy bajo (1), `predatory-sales-ctrl` a una condición experimental relacionada con conducta de ventas predatorias, y `seed0` a una semilla concreta dentro de una batería de réplicas. No es, por tanto, un modelo publicado como producto, sino un subproducto de investigación reproducible.
+`sanapandey/qwen2p5-7b-rank1-Lall-predatory-sales-ctrl-seed0` es un repositorio de Hugging Face publicado por el usuario `sanapandey` que, a juzgar por su identificador, contiene un adaptador LoRA de rango 1 entrenado sobre el modelo base Qwen2.5-7B mediante la librería Unsloth. El nombre sugiere un artefacto de experimentación controlada: `rank1` apunta a un adaptador de rango muy bajo (1), `predatory-sales-ctrl` a una condición experimental relacionada con conducta de ventas predatorias, y `seed0` a una semilla concreta dentro de una batería de réplicas. No es, por tanto, un modelo publicado como producto, sino un subproducto de investigación reproducible.
 
 La relevancia del artefacto es metodológica más que de capacidad: los adaptadores LoRA de rango 1 se usan habitualmente en estudios de interpretabilidad y de *steering* conductual, donde se busca aislar una dirección de activación o un comportamiento concreto con el mínimo número de parámetros modificados. Ese tipo de ficheros permite reproducir experimentos de alineación, ablación y análisis de sesgos sobre un modelo base conocido y ampliamente desplegado.
 
-Ahora bien, la información publicada es prácticamente nula: la model card es la plantilla automática de HuggingFace sin ningún campo rellenado, el repositorio tiene 0 descargas, 0 likes y un tamaño declarado de 0.0 GB, lo que indica que los pesos del adaptador podrían no estar efectivamente subidos o que el repositorio está vacío. La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo. Todo lo que sigue distingue explícitamente entre lo declarado en el repositorio y lo heredado del modelo base Qwen2.5-7B.
+Ahora bien, la información publicada es prácticamente nula: la model card es la plantilla automática de Hugging Face sin ningún campo rellenado, el repositorio tiene 0 descargas, 0 likes y un tamaño declarado de 0.0 GB, lo que indica que los pesos del adaptador podrían no estar efectivamente subidos o que el repositorio está vacío. La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo. Todo lo que sigue distingue explícitamente entre lo declarado en el repositorio y lo heredado del modelo base Qwen2.5-7B.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Ahora bien, la información publicada es prácticamente nula: la model card es l
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta arquitectura ni procedimiento de entrenamiento: la model card es la plantilla genérica autogenerada por HuggingFace y todos los campos (`Developed by`, `Model type`, `Training Data`, `Training Procedure`, hiperparámetros) figuran como `[More Information Needed]`. Los únicos metadatos técnicos disponibles son los tags: `transformers`, `safetensors`, `unsloth`, `arxiv:1910.09700` y `endpoints_compatible`. El tag `unsloth` es coherente con un ajuste fino eficiente en memoria tipo LoRA/QLoRA; el identificador `rank1` indica un rango de adaptación de 1, es decir, una matriz de actualización de rango mínimo.
+El repositorio no documenta arquitectura ni procedimiento de entrenamiento: la model card es la plantilla genérica autogenerada por Hugging Face y todos los campos (`Developed by`, `Model type`, `Training Data`, `Training Procedure`, hiperparámetros) figuran como `[More Information Needed]`. Los únicos metadatos técnicos disponibles son los tags: `transformers`, `safetensors`, `unsloth`, `arxiv:1910.09700` y `endpoints_compatible`. El tag `unsloth` es coherente con un ajuste fino eficiente en memoria tipo LoRA/QLoRA; el identificador `rank1` indica un rango de adaptación de 1, es decir, una matriz de actualización de rango mínimo.
 
 Si se confirma la hipótesis del adaptador LoRA de rango 1, el número de parámetros entrenables sería del orden de decenas de miles por matriz adaptada, un volumen irrelevante frente a los 7.610 millones del modelo base. Este tipo de configuración se emplea en estudios de *steering* y de análisis de direcciones latentes, donde se busca verificar si una única dirección de bajo rango basta para inducir o suprimir un comportamiento. No hay información sobre volumen de tokens, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas adicionales.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM en cuantización de 4 bits (GGUF Q4_K_M o AWQ/GPTQ): en torno a 4,5-5 GB de pesos, con 6-7 GB de uso total recomendado.
 - GPU recomendadas: A100 40 GB u H100 80 GB para FP16 con contexto largo y Serving concurrente; L40S 48 GB o A10G 24 GB para FP16 con lotes pequeños; RTX 4090 24 GB o RTX 3090 24 GB para FP16 ajustado o 8 bits.
 - Cabe en GPU de consumo: sí en 4 bits (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 12 GB con contexto limitado); en FP16 requiere al menos 24 GB.
-- Opciones de despliegue: vLLM o TGI para FP16/BF16 en servidor; llama.cpp u Ollama para GGUF cuantizado; transformers + PEFT para cargar el adaptador sobre el modelo base sin fusionar; `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM o TGI para FP16/BF16 en servidor; llama.cpp u Ollama para GGUF cuantizado; transformers + PEFT para cargar el adaptador sobre el modelo base sin fusionar; `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles para este artefacto. Como referencia del modelo base, un 7B en FP16 sobre A100 rinde del orden de miles de tokens por segundo en lote y decenas de tokens por segundo por petición en decodificación autorregresiva; son estimaciones del modelo base, no mediciones de este repositorio.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ Comparado con adaptadores LoRA convencionales de rango 8-64 publicados en el Hub
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sanapandey/qwen2p5-7b-rank1-Lall-predatory-sales-ctrl-seed0
+- Repositorio en Hugging Face: https://huggingface.co/sanapandey/qwen2p5-7b-rank1-Lall-predatory-sales-ctrl-seed0
 - Referencia citada en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML: https://mlco2.github.io/impact
 - Unsloth (librería indicada en los tags): https://github.com/unslothai/unsloth

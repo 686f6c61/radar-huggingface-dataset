@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `David-MRI-ORG/mednext-3dconvnext-baseline-breast` es un modelo de segmentacion de imagenes medicas en 3D basado en la arquitectura MedNeXt, una adaptacion del bloque ConvNeXt disenada especificamente para segmentacion volumetrica. Lo publica el usuario David-MRI-ORG con licencia MIT y acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. Con 8.073.219 parametros, se situa en el rango de las variantes pequenas de MedNeXt, lo que lo hace ligero y desplegable en hardware de gama media.
+El modelo `David-MRI-ORG/mednext-3dconvnext-baseline-breast` es un modelo de segmentacion de imagenes medicas en 3D basado en la arquitectura MedNeXt, una adaptacion del bloque ConvNeXt disenada especificamente para segmentacion volumetrica. Lo publica el usuario David-MRI-ORG con licencia MIT y acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. Con 8.073.219 parametros, se situa en el rango de las variantes pequenas de MedNeXt, lo que lo hace ligero y desplegable en hardware de gama media.
 
 El nombre del repositorio apunta a un caso de uso de segmentacion en imagenes de resonancia magnetica (MRI) de mama, si bien las etiquetas del modelo incluyen tambien referencias a BraTS 2023 y a segmentacion de tumores cerebrales, lo que sugiere un entrenamiento o una base de codigo compartida con el ecosistema BraTS. Es, por tanto, una linea base ("baseline") orientada a investigacion en imagen medica, no un modelo generativo de texto.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / tipo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| David-MRI-ORG/mednext-3dconvnext-baseline-breast | 8,07 M | Segmentacion 3D por parches | Segmentacion mama / MRI | MIT | Gated en HuggingFace |
-| GuillaumeCassez/mednext-baseline-brats2023gli | no disponible | Segmentacion 3D, MedNeXt-B | Tumores cerebrales BraTS 2023 | no disponible | Publico en HuggingFace |
+| David-MRI-ORG/mednext-3dconvnext-baseline-breast | 8,07 M | Segmentacion 3D por parches | Segmentacion mama / MRI | MIT | Gated en Hugging Face |
+| GuillaumeCassez/mednext-baseline-brats2023gli | no disponible | Segmentacion 3D, MedNeXt-B | Tumores cerebrales BraTS 2023 | no disponible | Publico en Hugging Face |
 | nnU-Net (baseline de referencia) | variable (decenas de millones) | Segmentacion 3D/2D | Segmentacion medica general | Apache 2.0 | Codigo abierto (GitHub) |
 | SwinUNETR / variantes BraTS | decenas de millones | Transformer volumetrico | Segmentacion medica 3D | variable | Codigo abierto |
 
@@ -80,7 +80,7 @@ La comparacion directa de rendimiento numerico no es posible porque no se han ap
 
 - No es un modelo generativo ni de lenguaje: no debe usarse para tareas de texto, dialogo ni razonamiento simbolico.
 - No se han publicado resultados de validacion (Dice, sensibilidad, especificidad), por lo que se desconoce su rendimiento real y su generalizacion.
-- El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - El nombre indica aplicacion a mama, pero las etiquetas incluyen BraTS 2023 y tumores cerebrales; existe ambiguedad sobre el dominio real de entrenamiento que conviene verificar antes de usarlo.
 - Descargas registradas: 0, lo que indica escasa validacion por parte de la comunidad y ausencia de evaluaciones externas.
 - Riesgo de sobreajuste al dominio de entrenamiento: los modelos de segmentacion medica suelen degradarse al cambiar de escaner, protocolo, resolucion o institucion.
@@ -90,7 +90,7 @@ La comparacion directa de rendimiento numerico no es posible porque no se han ap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/David-MRI-ORG/mednext-3dconvnext-baseline-breast
+- Modelo en Hugging Face: https://huggingface.co/David-MRI-ORG/mednext-3dconvnext-baseline-breast
 - Repositorio de MedNeXt (MIC-DKFZ): https://github.com/MIC-DKFZ/MedNeXt
 - Paper MedNeXt (MICCAI 2023): referenciado como Roy et al., MICCAI 2023
 - Modelo relacionado (BraTS 2023 GLI, MedNeXt-B): https://huggingface.co/GuillaumeCassez/mednext-baseline-brats2023gli

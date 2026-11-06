@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch6` es un modelo de generación de texto publicado en HuggingFace por la usuaria Lanni-ni. La información disponible es extremadamente limitada: la model card es una plantilla generada automáticamente por `transformers` y no contiene descripción del modelo, datos de entrenamiento, arquitectura ni licencia. Los únicos datos objetivos que se han podido confirmar son los parámetros totales (45.703.320), el tamaño del repositorio (0.2 GB) y el formato de pesos (`safetensors`).
+El modelo `Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch6` es un modelo de generación de texto publicado en Hugging Face por la usuaria Lanni-ni. La información disponible es extremadamente limitada: la model card es una plantilla generada automáticamente por `transformers` y no contiene descripción del modelo, datos de entrenamiento, arquitectura ni licencia. Los únicos datos objetivos que se han podido confirmar son los parámetros totales (45.703.320), el tamaño del repositorio (0.2 GB) y el formato de pesos (`safetensors`).
 
 El nombre del repositorio sugiere que podría estar relacionado con experimentos de *dynamic forgetting* y con el corpus BabyLM (indicado por `babylm_10m`), así como con un número de semilla y una época de entrenamiento determinadas. Sin embargo, al no existir documentación técnica ni resultados publicados, estas inferencias no pueden considerarse confirmadas.
 
@@ -64,6 +64,6 @@ No se dispone de información suficiente para realizar una comparativa. No se co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch6](https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch6)
+- Repositorio en Hugging Face: [https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch6](https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch6)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información proporcionada.

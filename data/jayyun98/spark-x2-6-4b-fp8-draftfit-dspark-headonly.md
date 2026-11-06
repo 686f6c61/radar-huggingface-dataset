@@ -88,6 +88,6 @@ No se dispone de información sobre otros borradores públicos comparables para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayyun98/Spark-X2.6-4B-FP8-Draftfit-DSpark-HeadOnly
+- Modelo en Hugging Face: https://huggingface.co/jayyun98/Spark-X2.6-4B-FP8-Draftfit-DSpark-HeadOnly
 - Modelo objetivo: https://huggingface.co/XHToken/Spark-X2.6-4B-FP8
 - Repositorio Draftfit: https://github.com/JayYun98/Draftfit

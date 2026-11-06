@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit-large-patch16-224-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un Vision Transformer (ViT-Large) preentrenado por Google sobre ImageNet-21k y ajustado completamente (todos los parámetros actualizados) sobre el dataset Galaxy10 DECaLS, que agrupa imágenes astronómicas del Dark Energy Camera Legacy Survey en diez clases morfológicas.
+`vit-large-patch16-224-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un Vision Transformer (ViT-Large) preentrenado por Google sobre ImageNet-21k y ajustado completamente (todos los parámetros actualizados) sobre el dataset Galaxy10 DECaLS, que agrupa imágenes astronómicas del Dark Energy Camera Legacy Survey en diez clases morfológicas.
 
 El modelo resuelve una tarea clásica de astronomía observacional: clasificar automáticamente galaxias según su forma (espirales, elípticas, irregulares, etc.) a partir de recortes de 224x224 píxeles. Su relevancia radica en que forma parte de un estudio sistemático (80 configuraciones, 40 backbones) que compara modelos fundacionales de visión bajo un protocolo de evaluación común, lo que permite medir de forma reproducible la transferencia de representaciones preentrenadas al dominio astronómico.
 
@@ -32,7 +32,7 @@ El entrenamiento usó el dataset Galaxy10 DECaLS (17.736 imágenes), dividido de
 - Clasificación de imágenes en 10 clases de morfología galáctica (Galaxy10 DECaLS).
 - Extracción de características visuales de propósito general heredadas del preentrenamiento en ImageNet-21k.
 - Inferencia sobre recortes de 224x224 píxeles con normalización estándar del image processor de ViT.
-- Compatible con el pipeline `image-classification` de transformers y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con el pipeline `image-classification` de transformers y con endpoints de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling, agentes, generación de texto, razonamiento multi-paso ni capacidades multilingües: es un clasificador de imagen puro.
 - No dispone de modo *thinking*, visión generativa, audio ni salidas estructuradas más allá del vector de logits de 10 dimensiones.
 
@@ -65,16 +65,16 @@ Evolución relevante durante el entrenamiento (semilla 42): la accuracy de test 
 - **VRAM en fp16/bf16**: alrededor de 0,7 GB de pesos; inferencia cómoda por debajo de 2 GB con lotes pequeños.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 funcionan sin problema. Para entrenamiento con batch efectivo 256 en fp32, el autor usó una sola GPU (modelo no especificado).
 - **GPU de consumo**: sí, cabe en cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria compartida para lotes de una imagen.
-- **Despliegue**: transformers (`AutoModelForImageClassification`), TorchServe, Triton Inference Server, ONNX Runtime tras exportación, o endpoints de HuggingFace. No hay pesos GGUF publicados, aunque la conversión a ONNX o a formatos cuantizados es directa al ser un ViT estándar.
+- **Despliegue**: transformers (`AutoModelForImageClassification`), TorchServe, Triton Inference Server, ONNX Runtime tras exportación, o endpoints de Hugging Face. No hay pesos GGUF publicados, aunque la conversión a ONNX o a formatos cuantizados es directa al ser un ViT estándar.
 - **Latencia y throughput**: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera un throughput de varios cientos a miles de imágenes por segundo en una A100 con lotes grandes, pero esta cifra no está verificada por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto/entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit-large-patch16-224-galaxy10-decals-full-v2 (este) | 303 M | 224x224 px | 83,60% (test, semilla 42) | Apache 2.0 | HuggingFace |
-| google/vit-large-patch16-224 (base sin ajustar) | 304 M | 224x224 px | no disponible (requiere ajuste) | Apache 2.0 | HuggingFace |
-| Otros backbones del mismo benchmark (39 restantes) | variable | 224x224 px | no disponible en esta ficha; datos en `vision-foundation-models-benchmark-runs` | variable | HuggingFace |
+| vit-large-patch16-224-galaxy10-decals-full-v2 (este) | 303 M | 224x224 px | 83,60% (test, semilla 42) | Apache 2.0 | Hugging Face |
+| google/vit-large-patch16-224 (base sin ajustar) | 304 M | 224x224 px | no disponible (requiere ajuste) | Apache 2.0 | Hugging Face |
+| Otros backbones del mismo benchmark (39 restantes) | variable | 224x224 px | no disponible en esta ficha; datos en `vision-foundation-models-benchmark-runs` | variable | Hugging Face |
 
 La comparación cuantitativa con alternativas concretas (ResNet, ConvNeXt, DINOv2, CLIP) no está disponible en la información proporcionada; el autor remite al dataset de resultados del benchmark para consultar las 80 configuraciones.
 
@@ -92,7 +92,7 @@ La comparación cuantitativa con alternativas concretas (ResNet, ConvNeXt, DINOv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-large-patch16-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-large-patch16-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-large-patch16-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de resultados del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

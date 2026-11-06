@@ -6,7 +6,7 @@ quantum-physics-ai999x es un motor determinista de resolución de problemas de f
 
 Su propuesta diferencial es la ausencia de respuestas inventadas: define siete resultados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y prefiere rechazar la consulta antes que aproximar un resultado. Cada respuesta incluye pasos intermedios, fórmulas en LaTeX, unidades y supuestos, lo que lo orienta a tutoría, corrección de ejercicios y cuadernos reproducibles.
 
-La ficha de HuggingFace declara 4.715.520 parámetros en formato safetensors y etiquetas ONNX, si bien la model card no documenta ninguna red neuronal entrenada con descenso de gradiente: el comportamiento descrito corresponde a código simbólico más un paquete de conocimiento. Es relevante ahora por su encaje en el nicho de herramientas de dominio acotado, offline y auditables, en contraste con los asistentes generativos de propósito general, y por su promesa de reproducibilidad exacta entre plataformas (Windows y Linux, Python 3.10 a 3.14).
+La ficha de Hugging Face declara 4.715.520 parámetros en formato safetensors y etiquetas ONNX, si bien la model card no documenta ninguna red neuronal entrenada con descenso de gradiente: el comportamiento descrito corresponde a código simbólico más un paquete de conocimiento. Es relevante ahora por su encaje en el nicho de herramientas de dominio acotado, offline y auditables, en contraste con los asistentes generativos de propósito general, y por su promesa de reproducibilidad exacta entre plataformas (Windows y Linux, Python 3.10 a 3.14).
 
 ## Especificaciones tecnicas
 
@@ -24,7 +24,7 @@ La ficha de HuggingFace declara 4.715.520 parámetros en formato safetensors y e
 | Capacidades certificadas | 75 procedimientos |
 | Respuestas doradas documentadas | 376 |
 | Pipeline declarado | question-answering |
-| Inferencia en HuggingFace | No (`inference: false`) |
+| Inferencia en Hugging Face | No (`inference: false`) |
 | Plataformas probadas | Windows (Python 3.13); Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13, 3.14) |
 | Dependencias de ejecucion | sympy, mpmath (Python puro) |
 
@@ -70,15 +70,15 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningun otro bench
 - VRAM estimada para inferencia: 0 GB; el runtime es Python puro sobre CPU y no carga pesos en GPU.
 - GPU recomendadas: ninguna. No requiere A100, H100 ni RTX 4090.
 - Cabe en cualquier CPU consumer; también en entornos sin acelerador, contenedores ligeros y equipos de aula.
-- Opciones de despliegue: instalacion via `pip install quantum-physics-ai999x` (PyPI) o desde el wheel del repositorio de HuggingFace; uso como biblioteca Python. No aplica despliegue con vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo.
-- Huella en disco: el repositorio de HuggingFace figura con 0.0 GB; el peso real del wheel no se detalla en la informacion disponible.
+- Opciones de despliegue: instalacion via `pip install quantum-physics-ai999x` (PyPI) o desde el wheel del repositorio de Hugging Face; uso como biblioteca Python. No aplica despliegue con vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo.
+- Huella en disco: el repositorio de Hugging Face figura con 0.0 GB; el peso real del wheel no se detalla en la informacion disponible.
 - Latencia y throughput: no disponible. Al ser calculo simbolico determinista, el coste depende del procedimiento invocado y de la precision numerica solicitada, no de un presupuesto de tokens.
 
 ## Comparativa con modelos similares
 
 | Herramienta | Tipo | Parametros | Contexto | Licencia | Ejecucion offline | Disponibilidad |
 |---|---|---|---|---|---|---|
-| quantum-physics-ai999x | Motor simbolico determinista con lectura en lenguaje natural | 4.715.520 (safetensors) | No aplica | Apache-2.0 | Si, CPU | PyPI y HuggingFace |
+| quantum-physics-ai999x | Motor simbolico determinista con lectura en lenguaje natural | 4.715.520 (safetensors) | No aplica | Apache-2.0 | Si, CPU | PyPI y Hugging Face |
 | SymPy | Biblioteca de matematica simbolica | No aplica (no es un modelo) | No aplica | BSD | Si | PyPI |
 | Wolfram Alpha | Motor de conocimiento y calculo en la nube | No disponible | No aplica | Propietaria | No | Servicio web y API de pago |
 | LLM generativo de proposito general (p. ej. familia GPT o Llama) | Transformer decoder | No disponible en esta ficha | No disponible en esta ficha | Variable segun modelo | Depende del modelo | Amplia |
@@ -92,7 +92,7 @@ Frente a SymPy, la diferencia es la capa de lectura de lenguaje natural y el con
 - No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones multi-turno y no dispone de ventana de contexto.
 - La precision declarada de 1,0 procede de la suite interna de 376 respuestas doradas del propio autor y esta marcada como no verificada; no equivale a una evaluacion independiente.
 - El recuento de 4.715.520 parametros en safetensors no se corresponde con ninguna arquitectura neuronal descrita en la model card: conviene tratar ese dato como metadato del repositorio y no como tamano de un modelo entrenado.
-- La model card declara `inference: false` en HuggingFace, por lo que el uso requiere instalar el paquete en local; el widget de inferencia del Hub no esta operativo.
+- La model card declara `inference: false` en Hugging Face, por lo que el uso requiere instalar el paquete en local; el widget de inferencia del Hub no esta operativo.
 - Adopcion nula en el momento de la consulta: 0 descargas y 0 likes, sin evidencia externa de uso en produccion. La fecha de creacion registrada en el Hub es 2026-10-25.
 - Sin datos publicados de sesgos, robustez frente a entradas malformadas mas alla de los siete estados declarados, ni resultados de latencia.
 - Licencia Apache-2.0: permite uso comercial y modificacion con atribucion y conservacion del aviso de licencia; no se declaran restricciones adicionales, pero tampoco garantias explicitas por parte del autor.
@@ -100,11 +100,11 @@ Frente a SymPy, la diferencia es la capa de lectura de lenguaje natural y el con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI999X/quantum-physics-ai999x
+- Hugging Face: https://huggingface.co/AI999X/quantum-physics-ai999x
 - PyPI: https://pypi.org/project/quantum-physics-ai999x/
 - Guia de capacidades: https://huggingface.co/AI999X/quantum-physics-ai999x/tree/main/docs
 - Evaluacion: https://huggingface.co/AI999X/quantum-physics-ai999x/tree/main/evaluation
-- Organizacion en HuggingFace: https://huggingface.co/AI999X
+- Organizacion en Hugging Face: https://huggingface.co/AI999X
 - Sitio web: https://ai999x.com
 - Soporte al autor: https://buymeacoffee.com/ibnuljaiffarabi
 - Wheel de instalacion directa: https://huggingface.co/AI999X/quantum-physics-ai999x/resolve/main/dist/quantum_physics_ai999x-1.0.0-py3-none-any.whl

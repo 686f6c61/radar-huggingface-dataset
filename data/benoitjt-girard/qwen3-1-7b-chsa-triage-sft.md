@@ -104,7 +104,7 @@ No se dispone de información sobre otros modelos de triaje médico comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-sft
+- Modelo en Hugging Face: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-sft
 - Modelo final fusionado con alineación por preferencias: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage
 - Repositorio del proyecto: https://github.com/BenoitJT-GIRARD/chsa-triage
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Stable Audio 3 Small SFX es un modelo de generacion de audio texto-a-audio desarrollado por Stability AI, especializado en la sintesis de efectos de sonido (sound effects, SFX) a partir de descripciones textuales. Forma parte de la familia Stable Audio 3, presentada por Stability AI como una plataforma de inferencia y ajuste fino que sustituye en el flujo de trabajo principal al repositorio anterior stable-audio-tools. El modelo se distribuye con pesos abiertos bajo licencia stable-audio-community y acceso restringido (gated) en HuggingFace.
+Stable Audio 3 Small SFX es un modelo de generacion de audio texto-a-audio desarrollado por Stability AI, especializado en la sintesis de efectos de sonido (sound effects, SFX) a partir de descripciones textuales. Forma parte de la familia Stable Audio 3, presentada por Stability AI como una plataforma de inferencia y ajuste fino que sustituye en el flujo de trabajo principal al repositorio anterior stable-audio-tools. El modelo se distribuye con pesos abiertos bajo licencia stable-audio-community y acceso restringido (gated) en Hugging Face.
 
 Tecnicamente se trata de un modelo de difusion para generacion de audio, segun la etiqueta `diffusion` de su ficha, con pipeline `text-to-audio`. Cuenta con 567.573.761 parametros reportados en los pesos safetensors y un repositorio de 3,5 GB. Es un modelo derivado por ajuste fino del checkpoint `stabilityai/stable-audio-3-small-sfx-base`, lo que indica que parte de un modelo base de la misma familia y se ha post-entrenado para la tarea concreta de generar efectos de sonido. Unicamente acepta indicaciones en ingles.
 
-Su relevancia actual radica en que ofrece generacion de efectos de sonido con pesos abiertos dentro de una familia de modelos entrenada, segun Stability AI, con datos plenamente licenciados, lo que reduce el riesgo legal en pipelines de produccion de audio. El modelo acumula 30.758 descargas y 158 likes en HuggingFace, y se publica junto con un articulo tecnico referenciado como arXiv:2605.17991 en las etiquetas del repositorio.
+Su relevancia actual radica en que ofrece generacion de efectos de sonido con pesos abiertos dentro de una familia de modelos entrenada, segun Stability AI, con datos plenamente licenciados, lo que reduce el riesgo legal en pipelines de produccion de audio. El modelo acumula 30.758 descargas y 158 likes en Hugging Face, y se publica junto con un articulo tecnico referenciado como arXiv:2605.17991 en las etiquetas del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en que ofrece generacion de efectos de sonido con pe
 | Modelo base | stabilityai/stable-audio-3-small-sfx-base (ajuste fino) |
 | Biblioteca de inferencia | stable-audio-3 |
 | Tamano del repositorio | 3,5 GB |
-| Acceso | Restringido (gated); requiere aceptar las condiciones en HuggingFace |
+| Acceso | Restringido (gated); requiere aceptar las condiciones en Hugging Face |
 | Articulo de referencia | arXiv:2605.17991 (segun las etiquetas del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (567
 
 | Modelo | Parametros | Contexto / duracion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stable-audio-3-small-sfx | 567.573.761 | no disponible | no disponible | stable-audio-community | Pesos abiertos, acceso gated en HuggingFace |
+| stable-audio-3-small-sfx | 567.573.761 | no disponible | no disponible | stable-audio-community | Pesos abiertos, acceso gated en Hugging Face |
 | stable-audio-3-small-sfx-base | no disponible | no disponible | no disponible | no disponible | Modelo base referenciado en la ficha; pesos abiertos |
 | Otros modelos de la familia Stable Audio 3 | no disponible | no disponible | no disponible | no disponible | La coleccion de Stability AI indica que tres modelos de la familia tienen pesos abiertos |
 | Alternativas de terceros para generacion de efectos de sonido | no disponible | no disponible | no disponible | no disponible | No se dispone de datos en la informacion proporcionada |
@@ -87,15 +87,15 @@ La informacion proporcionada no incluye especificaciones tecnicas ni resultados 
 - Riesgo de alucinacion: no disponible en el sentido textual del termino. En generacion de audio, el riesgo equivalente es producir un sonido que no corresponde a la descripcion; no se documentan tasas de error ni evaluaciones de fidelidad al prompt.
 - Limitaciones tecnicas: al ser un modelo especializado en efectos de sonido, no esta orientado a musica con estructura larga ni a sintesis de voz; no se especifica la duracion maxima de audio que puede generar.
 - Licencia: la licencia `stable-audio-community` pertenece a la categoria `license:other`, es decir, no es una licencia de codigo abierto estandar. Es imprescindible revisar los terminos exactos antes de cualquier uso comercial, ya que la informacion disponible no detalla las condiciones, restricciones ni umbrales de facturacion.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade un paso de aprobacion a cualquier pipeline automatizado de descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade un paso de aprobacion a cualquier pipeline automatizado de descarga.
 - Produccion: no hay datos publicos de latencia, throughput, estabilidad de muestreo ni evaluacion de calidad, por lo que cualquier despliegue en produccion deberia acompanarse de una evaluacion propia antes de escalar.
 - Trazabilidad de derechos: aunque Stability AI declara entrenamiento con datos licenciados, la ausencia de detalle sobre el dataset y sobre el articulo tecnico en la informacion disponible limita la auditoria independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stabilityai/stable-audio-3-small-sfx
+- Modelo en Hugging Face: https://huggingface.co/stabilityai/stable-audio-3-small-sfx
 - Modelo base: https://huggingface.co/stabilityai/stable-audio-3-small-sfx-base
-- Coleccion Stable Audio 3 en HuggingFace: https://huggingface.co/collections/stabilityai/stable-audio-3
+- Coleccion Stable Audio 3 en Hugging Face: https://huggingface.co/collections/stabilityai/stable-audio-3
 - Pagina de producto de Stable Audio 3.0: https://stability.ai/stable-audio
 - Repositorio oficial en GitHub: https://github.com/Stability-AI/stable-audio-3
 - README del repositorio: https://github.com/Stability-AI/stable-audio-3/blob/main/README.md

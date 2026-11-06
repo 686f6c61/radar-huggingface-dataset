@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pranaam v3 es un modelo de clasificación de nombres desarrollado por el equipo de gojiberries (publicado en HuggingFace como gojiberries/pranaam) que produce estimaciones calibradas de patrones de nombres para escritura latina y devanagari. Su propósito declarado es la investigación agregada validada, como medir posibles disparidades de representación en conjuntos de datos públicos, y no está diseñado para etiquetar individuos ni tomar decisiones consecuentes. El modelo es relevante en el contexto de la IA responsable, ya que incorpora mecanismos explícitos de abstención, calibración de confianza y una revisión inmutable de los artefactos.
+Pranaam v3 es un modelo de clasificación de nombres desarrollado por el equipo de gojiberries (publicado en Hugging Face como gojiberries/pranaam) que produce estimaciones calibradas de patrones de nombres para escritura latina y devanagari. Su propósito declarado es la investigación agregada validada, como medir posibles disparidades de representación en conjuntos de datos públicos, y no está diseñado para etiquetar individuos ni tomar decisiones consecuentes. El modelo es relevante en el contexto de la IA responsable, ya que incorpora mecanismos explícitos de abstención, calibración de confianza y una revisión inmutable de los artefactos.
 
 La arquitectura de la versión 3 es un modelo convolucional compacto a nivel de bytes en PyTorch, que procesa los bytes UTF-8 ordenados de los nombres mediante convoluciones paralelas, evitando la dependencia de un vocabulario de palabras completas. Esto corrige limitaciones de versiones anteriores (v1 y v2) relacionadas con el orden de los tokens, el manejo de palabras no vistas y la generalización a nombres no vistos. El repositorio ocupa 0.3 GB e incluye artefactos separados para inglés e hindi, cada uno con su propio modelo, metadatos y reporte de entrenamiento. No se especifica el número total de parámetros ni la longitud de contexto, ya que no es un modelo generativo sino un clasificador.
 
@@ -74,5 +74,5 @@ No se dispone de información sobre otros modelos de clasificación de nombres c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gojiberries/pranaam
+- Hugging Face: https://huggingface.co/gojiberries/pranaam
 - Repositorio del paquete `pranaam`: https://github.com/appeler/pranaam

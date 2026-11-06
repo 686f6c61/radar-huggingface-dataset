@@ -6,7 +6,7 @@
 
 El modelo resuelve una tarea acotada dentro de esa aplicación: extraer la petición del usuario a JSON y elegir entre identificadores de candidatos de datos en vivo e identificadores de evidencia. Después, código Python valida el resultado y redacta el texto factual a partir de los registros de evidencia seleccionados. El modelo no tiene acceso directo a URLs arbitrarias ni a herramientas.
 
-Es relevante ahora por dos motivos. Primero, como ejemplo de patrón de publicación "config-only" sobre un modelo base abierto, algo que conviene saber interpretar al evaluar repositorios en HuggingFace. Segundo, porque ilustra un caso de uso realista de un SLM (1,54 B de parámetros, cuantizado Q4_K_M y ejecutado con Ollama) como extractor estructurado y selector de evidencia dentro de un pipeline determinista, no como generador libre de respuestas.
+Es relevante ahora por dos motivos. Primero, como ejemplo de patrón de publicación "config-only" sobre un modelo base abierto, algo que conviene saber interpretar al evaluar repositorios en Hugging Face. Segundo, porque ilustra un caso de uso realista de un SLM (1,54 B de parámetros, cuantizado Q4_K_M y ejecutado con Ollama) como extractor estructurado y selector de evidencia dentro de un pipeline determinista, no como generador libre de respuestas.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | outdoor-window (base Qwen2.5-1.5B-Instruct) | ~1,54 B | 32.768 tokens (según model card del base) | apache-2.0 | Repositorio de configuración; pesos vía modelo base |
-| Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens | apache-2.0 | Pesos en safetensors y GGUF en HuggingFace |
+| Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens | apache-2.0 | Pesos en safetensors y GGUF en Hugging Face |
 | Qwen2.5-0.5B-Instruct | ~0,49 B | 32.768 tokens (según model card del fabricante) | apache-2.0 | Pesos publicados; menor calidad de extracción esperada |
 | Llama 3.2 1B Instruct | ~1,24 B | 128.000 tokens (según model card del fabricante) | Licencia comunitaria Llama 3.2 | Pesos publicados; requiere aceptar la licencia |
 | SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 tokens (según model card del fabricante) | Apache-2.0 | Pesos publicados |

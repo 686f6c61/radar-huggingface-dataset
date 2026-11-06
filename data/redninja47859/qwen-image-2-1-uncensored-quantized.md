@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que documenta una redistribución no ofici
 | Longitud de contexto | no disponible (modelo de imagen, no de texto) |
 | Tipos de cuantizacion | BF16, FP8, INT8 ConvRot, NVFP4, MLX 4/6/8-bit, GGUF Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
 | Idiomas soportados | no disponible (prompts de texto; el text encoder Qwen3-VL es multilingüe, pero no se detalla) |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF, safetensors, MLX safetensors |
 
 ## Arquitectura y entrenamiento
@@ -82,9 +82,9 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Redninja47859/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio Hugging Face: https://huggingface.co/Redninja47859/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork leejet): https://github.com/leejet/ComfyUI-GGUF
 - Solicitud de modelos (autor): https://abenzerps.com/request-a-model/
-- Enlaces a archivos individuales (GGUF, safetensors, MLX, text encoders, VAE): disponibles en la model card del repositorio de HuggingFace.
+- Enlaces a archivos individuales (GGUF, safetensors, MLX, text encoders, VAE): disponibles en la model card del repositorio de Hugging Face.

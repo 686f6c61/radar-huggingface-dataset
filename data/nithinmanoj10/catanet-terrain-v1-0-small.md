@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CataNET-Terrain-v1.0-Small es un modelo de clasificacion de imagenes publicado por el usuario nithinmanoj10 en HuggingFace. Se trata de un ajuste fino (fine-tuning) del backbone MobileNetV3-Small de timm (`timm/tf_mobilenetv3_small_100.in1k`), orientado a la identificacion de terrenos del juego de mesa Catan. El modelo se distribuye en formato ONNX y esta etiquetado tambien como extractor de caracteristicas, lo que sugiere que su representacion interna puede reutilizarse para tareas auxiliares sobre el mismo dominio.
+CataNET-Terrain-v1.0-Small es un modelo de clasificacion de imagenes publicado por el usuario nithinmanoj10 en Hugging Face. Se trata de un ajuste fino (fine-tuning) del backbone MobileNetV3-Small de timm (`timm/tf_mobilenetv3_small_100.in1k`), orientado a la identificacion de terrenos del juego de mesa Catan. El modelo se distribuye en formato ONNX y esta etiquetado tambien como extractor de caracteristicas, lo que sugiere que su representacion interna puede reutilizarse para tareas auxiliares sobre el mismo dominio.
 
 El problema que aborda es acotado pero practico: reconocer automaticamente los tipos de terreno (hexagonos) de un tablero de Catan a partir de una imagen. Esto habilita la digitalizacion de partidas fisicas, el seguimiento automatico del estado del tablero o la construccion de asistentes para jugadores. Al estar basado en MobileNetV3-Small, el modelo es extremadamente ligero y esta pensado para inferencia en CPU o en dispositivos con recursos limitados, en contraste con los clasificadores de vision de gran tamano.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CataNET-Terrain-v1.0-Small | No declarado (backbone MobileNetV3-Small, ~2,5 M de referencia) | Imagen; resolucion no especificada | MIT | ONNX en HuggingFace | Especializado en terrenos de Catan; sin metricas publicadas |
-| MobileNetV3-Small (timm, `tf_mobilenetv3_small_100.in1k`) | ~2,5 M | 224x224 | Apache-2.0 (modelo original) | Pesos PyTorch/TF en timm y HuggingFace | Clasificacion generica ImageNet-1k; es el modelo base de este ajuste |
+| CataNET-Terrain-v1.0-Small | No declarado (backbone MobileNetV3-Small, ~2,5 M de referencia) | Imagen; resolucion no especificada | MIT | ONNX en Hugging Face | Especializado en terrenos de Catan; sin metricas publicadas |
+| MobileNetV3-Small (timm, `tf_mobilenetv3_small_100.in1k`) | ~2,5 M | 224x224 | Apache-2.0 (modelo original) | Pesos PyTorch/TF en timm y Hugging Face | Clasificacion generica ImageNet-1k; es el modelo base de este ajuste |
 | EfficientNet-B0 | ~5,3 M | 224x224 | Apache-2.0 | Multiples repositorios | Mayor precision general en ImageNet a costa de mas computo; no especializado en Catan |
 | ResNet-18 | ~11,7 M | 224x224 | BSD-3 / MIT segun implementacion | Muy extendido | Referencia clasica de vision; mas pesado y sin ajuste al dominio |
 
@@ -82,7 +82,7 @@ Las cifras de parametros de los modelos de comparacion provienen de sus publicac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nithinmanoj10/CataNET-Terrain-v1.0-Small
+- Modelo en Hugging Face: https://huggingface.co/nithinmanoj10/CataNET-Terrain-v1.0-Small
 - Modelo base en timm: https://huggingface.co/timm/tf_mobilenetv3_small_100.in1k
 - Repositorio timm: https://github.com/huggingface/pytorch-image-models
 - Paper de MobileNetV3 (Howard et al., 2019): https://arxiv.org/abs/1905.02244

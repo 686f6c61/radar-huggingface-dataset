@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento con otras alternativas en la 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Privoid-ai/Privoid-3D-Web-Builder-Qwen3.5-4B)
+- [Modelo en Hugging Face](https://huggingface.co/Privoid-ai/Privoid-3D-Web-Builder-Qwen3.5-4B)
 - [Repositorio GGUF](https://huggingface.co/Privoid-ai/Privoid-3D-Web-Builder-Qwen3.5-4B-GGUF)
 - [Modelo base Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [ccore/ThreeJS-3D-Scenes](https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes)

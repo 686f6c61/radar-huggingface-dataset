@@ -18,7 +18,7 @@ Su relevancia actual radica en la combinación de tres factores: un tamaño redu
 | Longitud de contexto | 8.192 tokens en los comandos y pruebas documentadas (maximo del modelo base: no disponible) |
 | Tipos de cuantizacion | Q3_K_XL (por defecto, 4,22 GB), Q4_K_XL, IQ3_XXS |
 | Idiomas soportados | no disponible |
-| Licencia | OpenMDW-1.1 (licencia "other" en HuggingFace) |
+| Licencia | OpenMDW-1.1 (licencia "other" en Hugging Face) |
 | Formato de pesos | GGUF (solo el modelo de texto) |
 
 ## Arquitectura y entrenamiento
@@ -90,12 +90,12 @@ Alternativas de otra familia con rol similar (chat pequeno local con tool callin
 - Thinking: llama.cpp y Ollama activan el modo thinking por defecto para esta plantilla, lo que genera bloques de razonamiento iniciales y requiere un `max_tokens` mucho mayor; hay que desactivarlo explicitamente (`--reasoning off` / `--think=false`) para reproducir los resultados publicados.
 - Decodificacion especulativa: con DFlash activo, las respuestas greedy no siempre coinciden palabra por palabra (solo 11 de 30 coincidieron en las pruebas del autor).
 - Metricas no verificadas: todos los benchmarks provienen del autor del modelo y no estan verificados por terceros; las cifras de BFCL y GSM8K se midieron sobre subconjuntos (400, 200 y 250 ejemplos), no sobre los sets completos.
-- Licencia: OpenMDW-1.1 es una licencia abierta, pero conviene revisar sus terminos exactos (https://openmdw.ai/license/1-1/) antes de un uso comercial concreto; la ficha lo marca como "other" en HuggingFace.
+- Licencia: OpenMDW-1.1 es una licencia abierta, pero conviene revisar sus terminos exactos (https://openmdw.ai/license/1-1/) antes de un uso comercial concreto; la ficha lo marca como "other" en Hugging Face.
 - Produccion: sin thinking-on medido, sin benchmarks estandarizados independientes y con un numero reducido de descargas (398 en el momento de la ficha), se recomienda evaluacion propia antes de despliegue en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Drafter DFlash de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

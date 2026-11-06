@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`eemoogee/hangul-sft-adapter-v12-r32` es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario eemoogee. No es un modelo completo: se trata de pesos PEFT (formato safetensors) que deben cargarse sobre el modelo base `unsloth/qwen3-8b-unsloth-bnb-4bit`, una version de Qwen3-8B de 8 000 millones de parametros cuantizada a 4 bits con bitsandbytes y empaquetada por Unsloth. El repositorio ocupa 0,4 GB y la nomenclatura del identificador sugiere un rango LoRA de 32 (`r32`) y la duodecima iteracion (`v12`) de una serie de adaptadores orientados a hangul, es decir, a coreano.
+`eemoogee/hangul-sft-adapter-v12-r32` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario eemoogee. No es un modelo completo: se trata de pesos PEFT (formato safetensors) que deben cargarse sobre el modelo base `unsloth/qwen3-8b-unsloth-bnb-4bit`, una version de Qwen3-8B de 8 000 millones de parametros cuantizada a 4 bits con bitsandbytes y empaquetada por Unsloth. El repositorio ocupa 0,4 GB y la nomenclatura del identificador sugiere un rango LoRA de 32 (`r32`) y la duodecima iteracion (`v12`) de una serie de adaptadores orientados a hangul, es decir, a coreano.
 
 El modelo resuelve un problema muy concreto: permitir la especializacion de Qwen3-8B en tareas de instrucciones en coreano sin necesidad de reentrenar los 8 000 millones de parametros, con un coste de almacenamiento y de computo muy bajo. Su relevancia practica esta en los flujos de trabajo con adaptadores intercambiables: un mismo servidor puede atender varias especializaciones cargando distintos LoRA sobre la misma instancia del modelo base, lo que reduce de forma drastica los requisitos de VRAM y de infraestructura.
 
-Ahora bien, la ficha debe leerse con cautela. La model card del autor es la plantilla por defecto de HuggingFace y no contiene ni una sola seccion rellenada: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia declarada. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad. Todos los datos que no aparecen en los metadatos se marcan como no disponibles.
+Ahora bien, la ficha debe leerse con cautela. La model card del autor es la plantilla por defecto de Hugging Face y no contiene ni una sola seccion rellenada: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia declarada. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad. Todos los datos que no aparecen en los metadatos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ No se han identificado en la informacion proporcionada alternativas equivalentes
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/eemoogee/hangul-sft-adapter-v12-r32
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/eemoogee/hangul-sft-adapter-v12-r32
 - Modelo base: https://huggingface.co/unsloth/qwen3-8b-unsloth-bnb-4bit
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Documentacion de TRL: https://huggingface.co/docs/trl

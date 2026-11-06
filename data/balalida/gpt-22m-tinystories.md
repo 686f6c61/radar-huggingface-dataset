@@ -54,12 +54,12 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - VRAM estimada: menos de 100 MB en FP32 (22,7M parametros × 4 bytes ≈ 91 MB). Con cuantizacion a int8 o int4, el consumo seria aun menor.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; incluso una GTX 1050 o una GPU integrada pueden ejecutarlo sin problemas.
 - CPU: se puede ejecutar en CPU sin GPU, con latencia de milisegundos por token en hardware moderno.
-- Opciones de despliegue: compatible con la libreria `transformers` de HuggingFace, por lo que puede usarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se exporta) o directamente en Python.
+- Opciones de despliegue: compatible con la libreria `transformers` de Hugging Face, por lo que puede usarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se exporta) o directamente en Python.
 - Latencia y throughput: no se han publicado mediciones oficiales, pero dado el tamano, se espera una generacion de decenas de tokens por segundo en CPU y cientos en GPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados con otros modelos de la misma categoria (p. ej., GPT-2 small fine-tuned en TinyStories, o modelos de ~22M entrenados en el mismo dataset). La informacion disponible no incluye benchmarks estandarizados ni metricas de otros modelos que permitan una comparacion cuantitativa. Se puede indicar que existen otros modelos TinyStories en HuggingFace (como `Fathi7ma/tiny-stories-gpt2` o `abhilash88/tinystories-slm-gpt`), pero no se han encontrado datos de rendimiento comparables.
+No se dispone de datos comparativos publicados con otros modelos de la misma categoria (p. ej., GPT-2 small fine-tuned en TinyStories, o modelos de ~22M entrenados en el mismo dataset). La informacion disponible no incluye benchmarks estandarizados ni metricas de otros modelos que permitan una comparacion cuantitativa. Se puede indicar que existen otros modelos TinyStories en Hugging Face (como `Fathi7ma/tiny-stories-gpt2` o `abhilash88/tinystories-slm-gpt`), pero no se han encontrado datos de rendimiento comparables.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos publicados con otros modelos de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/balalida/gpt-22M-tinystories
+- Hugging Face: https://huggingface.co/balalida/gpt-22M-tinystories
 - Paper TinyStories (arXiv): https://arxiv.org/abs/2305.07759
 - Repositorio CS336 (referencia de la asignatura): no disponible en la informacion proporcionada
-- Otros modelos TinyStories en HuggingFace: https://huggingface.co/Fathi7ma/tiny-stories-gpt2, https://huggingface.co/abhilash88/tinystories-slm-gpt
+- Otros modelos TinyStories en Hugging Face: https://huggingface.co/Fathi7ma/tiny-stories-gpt2, https://huggingface.co/abhilash88/tinystories-slm-gpt

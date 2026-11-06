@@ -85,7 +85,7 @@ Los tres casos comparten la misma arquitectura y licencia, pero difieren en el f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Spangler3000/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-4bit-mtp
+- Repositorio Hugging Face: https://huggingface.co/Spangler3000/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-4bit-mtp
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Versión NVFP4 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Implementación de referencia oMLX para Nemotron MTP: https://github.com/jundot/omlx/blob/main/omlx/patches/mlx_lm_mtp/nemotron_h_model.py

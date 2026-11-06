@@ -92,10 +92,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parámetros | Contexto | Idiomas | Accuracy (test) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| `vllm-project/xlm-roberta-base-language-detection` (este) | 278 M | 512 tokens | 20 | 99,6 % | MIT | HuggingFace (mirror) |
-| `papluca/xlm-roberta-base-language-detection` (original) | 278 M | 512 tokens | 20 | 99,6 % | MIT | HuggingFace (cuenta personal) |
+| `vllm-project/xlm-roberta-base-language-detection` (este) | 278 M | 512 tokens | 20 | 99,6 % | MIT | Hugging Face (mirror) |
+| `papluca/xlm-roberta-base-language-detection` (original) | 278 M | 512 tokens | 20 | 99,6 % | MIT | Hugging Face (cuenta personal) |
 | `langid.py` (baseline del autor) | no disponible (modelo Naive Bayes + n-gramas) | no aplica | 97 nativos; 20 restringidos en la comparación | 98,5 % | BSD | PyPI / GitHub |
-| `FacebookAI/xlm-roberta-base` (modelo base) | 278 M | 512 tokens | 100 | no disponible (no es clasificador) | MIT | HuggingFace |
+| `FacebookAI/xlm-roberta-base` (modelo base) | 278 M | 512 tokens | 100 | no disponible (no es clasificador) | MIT | Hugging Face |
 
 La diferencia clave frente al original es únicamente la ubicación del repositorio y la garantía de estabilidad de la organización `vllm-project`; los pesos son idénticos (commit `9865598`). Frente a `langid.py`, el modelo gana en precisión pero pierde en cobertura de idiomas (20 frente a 97) y en huella de memoria (278 M frente a un modelo de n-gramas de pocos MB). Frente a clasificadores multilingües más grandes como `glotlid` o `fastText` de detección de idioma, no se dispone de comparación en la información proporcionada.
 
@@ -112,7 +112,7 @@ La diferencia clave frente al original es únicamente la ubicación del reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace (mirror): https://huggingface.co/vllm-project/xlm-roberta-base-language-detection
+- Repositorio en Hugging Face (mirror): https://huggingface.co/vllm-project/xlm-roberta-base-language-detection
 - Repositorio original: https://huggingface.co/papluca/xlm-roberta-base-language-detection
 - Modelo base XLM-RoBERTa: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-R (Conneau et al., 2019): https://arxiv.org/abs/1911.02116

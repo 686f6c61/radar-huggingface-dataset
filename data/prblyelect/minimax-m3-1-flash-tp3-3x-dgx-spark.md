@@ -116,7 +116,7 @@ No se dispone de datos para comparar con otros modelos de la misma categoria (mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PrblyElect/MiniMax-M3.1-Flash-TP3-3x-DGX-Spark
+- Repositorio en Hugging Face: https://huggingface.co/PrblyElect/MiniMax-M3.1-Flash-TP3-3x-DGX-Spark
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Receta upstream de vLLM para MiniMax M3.1 Flash: https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3.1-Flash
 - Revision del checkpoint usada en la receta: `54e4e69dfc452b1e94a426c24a4fdeeaa8e3ad5e`

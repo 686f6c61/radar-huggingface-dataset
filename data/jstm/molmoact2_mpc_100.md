@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `jstm/molmoact2_mpc_100` | 5.442.196.272 | No aplicable | apache-2.0 | HuggingFace (LeRobot) |
-| `allenai/MolmoAct2-LIBERO` (modelo base) | No disponible | No aplicable | No disponible | HuggingFace |
+| `jstm/molmoact2_mpc_100` | 5.442.196.272 | No aplicable | apache-2.0 | Hugging Face (LeRobot) |
+| `allenai/MolmoAct2-LIBERO` (modelo base) | No disponible | No aplicable | No disponible | Hugging Face |
 | Otras políticas VLA de la misma categoría (Por ejemplo OpenVLA, pi0 o SmolVLA) | No disponible en la información proporcionada | No disponible | No disponible | No disponible |
 
 Los resultados de benchmarks de estas alternativas frente a este modelo no están disponibles en la información consultada, por lo que no se puede establecer una comparación cuantitativa de rendimiento.
@@ -95,7 +95,7 @@ Los resultados de benchmarks de estas alternativas frente a este modelo no está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jstm/molmoact2_mpc_100
+- Modelo en Hugging Face: https://huggingface.co/jstm/molmoact2_mpc_100
 - Modelo base: https://huggingface.co/allenai/MolmoAct2-LIBERO
 - Dataset de entrenamiento: https://huggingface.co/datasets/jstm/mpc_lerobot_pd_ee_pose_100
 - Blog de MolmoAct2 (Ai2): https://allenai.org/blog/molmoact2

@@ -76,9 +76,9 @@ Estos datos corresponden al modelo N6 (`VectaBass/vectabass-1.73b-80bt-mdlm-conv
 
 | Modelo | Parametros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VectaBass 1.03b 45.9bt MDLM converted | 1.028 M totales (919 M sin embeddings) | 2048 | Difusion enmascarada (MDLM) | Apache 2.0 | HuggingFace |
-| VectaBass 1.03b 60.8bt base-cooled (padre) | 1.028 M totales | 2048 | Autorregresivo | Apache 2.0 | HuggingFace |
-| VectaBass 1.73b 80bt MDLM converted (N6) | No disponible en la informacion | No disponible | Difusion enmascarada (MDLM) | Apache 2.0 | HuggingFace |
+| VectaBass 1.03b 45.9bt MDLM converted | 1.028 M totales (919 M sin embeddings) | 2048 | Difusion enmascarada (MDLM) | Apache 2.0 | Hugging Face |
+| VectaBass 1.03b 60.8bt base-cooled (padre) | 1.028 M totales | 2048 | Autorregresivo | Apache 2.0 | Hugging Face |
+| VectaBass 1.73b 80bt MDLM converted (N6) | No disponible en la informacion | No disponible | Difusion enmascarada (MDLM) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con modelos de otras familias en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos con modelos de otras familias 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.03b-45.9bt-mdlm-converted
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.03b-45.9bt-mdlm-converted
 - Modelo base: https://huggingface.co/VectaBass/vectabass-1.03b-60.8bt-base-cooled
 - Conversion N6 citada en el estudio de samplers: https://huggingface.co/VectaBass/vectabass-1.73b-80bt-mdlm-converted
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

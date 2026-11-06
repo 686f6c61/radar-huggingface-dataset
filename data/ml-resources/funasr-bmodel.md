@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FunASR-bmodel es un paquete de reconocimiento automatico del habla (ASR) en chino distribuido en formato `bmodel`, el formato de modelo compilado para aceleradores TPU de Sophgo. El repositorio analizado es un espejo no oficial: el autor original es `wlc952` en ModelScope y el espejo en HuggingFace lo publica el usuario `ml-resources`, que declara explicitamente que no se trata de un lanzamiento oficial y que los derechos permanecen en los autores originales. El modelo se apoya en la cadena FunASR, aunque la model card no especifica ni la arquitectura concreta ni el modelo base del que deriva.
+FunASR-bmodel es un paquete de reconocimiento automatico del habla (ASR) en chino distribuido en formato `bmodel`, el formato de modelo compilado para aceleradores TPU de Sophgo. El repositorio analizado es un espejo no oficial: el autor original es `wlc952` en ModelScope y el espejo en Hugging Face lo publica el usuario `ml-resources`, que declara explicitamente que no se trata de un lanzamiento oficial y que los derechos permanecen en los autores originales. El modelo se apoya en la cadena FunASR, aunque la model card no especifica ni la arquitectura concreta ni el modelo base del que deriva.
 
 El caso de uso documentado no es la transcripcion generica, sino la monitorizacion de audio en tiempo real en entornos de vigilancia: el paquete incluye un script (`bmodel/monitor.py`) que consume un flujo RTSP, analiza ventanas de 10 segundos por defecto y detecta voz humana que no corresponde a la locucion del sistema, generando alertas en disco y enviandolas por HTTP a un endpoint de seguridad. Para ello usa un audio de referencia del sistema y una lista de frases del sistema (`system_phrases.txt`) que permiten filtrar los mensajes reproducidos por el propio sistema de megafonia y evitar falsos positivos.
 
@@ -75,7 +75,7 @@ Como contexto cualitativo, este artefacto pertenece a la categoria de ASR para c
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FunASR-bmodel (este modelo) | No disponible | No aplica (ventana de 10 s en el script) | No disponible | `unknown` | Espejo en HuggingFace, origen en ModelScope |
+| FunASR-bmodel (este modelo) | No disponible | No aplica (ventana de 10 s en el script) | No disponible | `unknown` | Espejo en Hugging Face, origen en ModelScope |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ Como contexto cualitativo, este artefacto pertenece a la categoria de ASR para c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ml-resources/FunASR-bmodel
+- Repositorio en Hugging Face: https://huggingface.co/ml-resources/FunASR-bmodel
 - Origen en ModelScope (autor original `wlc952`): https://www.modelscope.cn/models/wlc952/FunASR-bmodel
 - Clon del proyecto de origen indicado en la model card: https://www.modelscope.cn/wlc952/FunASR-bmodel.git
 - Proyecto FunASR: no se proporciona enlace en la informacion disponible.

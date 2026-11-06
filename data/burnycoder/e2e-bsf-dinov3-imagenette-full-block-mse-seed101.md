@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed101 | BSF block-sparse sobre DINOv3 ViT-B/16 | 9.599.498 | no disponible | MIT (backbone aparte) | HuggingFace |
+| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed101 | BSF block-sparse sobre DINOv3 ViT-B/16 | 9.599.498 | no disponible | MIT (backbone aparte) | Hugging Face |
 | SAE ReLU convencional sobre DINOv3 | SAE | no disponible | no disponible | no disponible | no disponible |
 | Goodfire block-sparse featurizer (código de referencia) | BSF | no disponible | no disponible | no disponible | GitHub |
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed101
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed101
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Preregistro: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

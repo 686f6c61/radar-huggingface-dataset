@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks específicos para este checkpoint e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| molmoact2_otter_whitepushplace (este) | 5,44 B | no disponible | Push place (robótica) | Apache-2.0 | HuggingFace |
+| molmoact2_otter_whitepushplace (este) | 5,44 B | no disponible | Push place (robótica) | Apache-2.0 | Hugging Face |
 | MolmoAct2 base (AllenAI) | no especificado | no especificado | Razonamiento de acciones multimodal | Apache-2.0 | GitHub/HuggingFace |
-| ACT nativo (LeRobot) | ~10-100 M | no aplica | Manipulación robótica | Apache-2.0 | HuggingFace |
-| Diffusion Policy (LeRobot) | ~10-100 M | no aplica | Manipulación robótica | Apache-2.0 | HuggingFace |
+| ACT nativo (LeRobot) | ~10-100 M | no aplica | Manipulación robótica | Apache-2.0 | Hugging Face |
+| Diffusion Policy (LeRobot) | ~10-100 M | no aplica | Manipulación robótica | Apache-2.0 | Hugging Face |
 
 La comparativa muestra que este checkpoint es significativamente más grande que las políticas ACT o Diffusion Policy típicas de LeRobot, gracias al backbone VLM. Sin embargo, no hay datos de rendimiento directos para comparar en la misma tarea.
 
@@ -77,7 +77,7 @@ La comparativa muestra que este checkpoint es significativamente más grande que
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/yukamatsumae/molmoact2_otter_whitepushplace
+- Repositorio del modelo en Hugging Face: https://huggingface.co/yukamatsumae/molmoact2_otter_whitepushplace
 - Repositorio oficial de MolmoAct2 (GitHub): https://github.com/allenai/molmoact2
 - Repositorio de MolmoAct (GitHub): https://github.com/allenai/MolmoAct
 - Paper de MolmoAct2 (arXiv): https://arxiv.org/abs/2605.02881

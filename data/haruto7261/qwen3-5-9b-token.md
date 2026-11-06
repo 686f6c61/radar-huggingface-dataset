@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-token es una variante del modelo Qwen3.5-9B publicada por el usuario Haruto7261 en HuggingFace. Segun la model card, el autor ha anadido al tokenizer original un vocabulario especifico de "ryukyu-ben" (dialecto de Okinawa, Japon), con el objetivo de mejorar la tokenizacion y el tratamiento de esa variedad linguistica. El repositorio contiene unicamente pesos en formato safetensors con la arquitectura declarada `qwen3_5_text`, y suma 8.952.435.200 parametros totales (aproximadamente 8,95 mil millones).
+Qwen3.5-9B-token es una variante del modelo Qwen3.5-9B publicada por el usuario Haruto7261 en Hugging Face. Segun la model card, el autor ha anadido al tokenizer original un vocabulario especifico de "ryukyu-ben" (dialecto de Okinawa, Japon), con el objetivo de mejorar la tokenizacion y el tratamiento de esa variedad linguistica. El repositorio contiene unicamente pesos en formato safetensors con la arquitectura declarada `qwen3_5_text`, y suma 8.952.435.200 parametros totales (aproximadamente 8,95 mil millones).
 
 Se trata de un modelo derivado de un modelo base de la familia Qwen3.5, por lo que hereda la arquitectura transformer del original, aunque no se documentan en la informacion disponible ni la longitud de contexto, ni los datos de entrenamiento, ni los detalles del proceso de extension del tokenizer. El tamano del repositorio (17,9 GB) es coherente con pesos en precision bf16/fp16 para ese numero de parametros.
 
@@ -86,7 +86,7 @@ La comparacion con Qwen2.5-7B y Llama 3.1 8B se ofrece solo como referencia de c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Haruto7261/Qwen3.5-9B-token
+- Repositorio Hugging Face: https://huggingface.co/Haruto7261/Qwen3.5-9B-token
 - Modelo base Qwen3.5-9B: no disponible en la informacion proporcionada
 - Paper o blog tecnico del autor: no disponible
 - Repositorio de codigo o demo: no disponible

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) denominado `nmuendler/Apriel-15B-textsummarization-on-policy-distill-run1-lr4e4-r32-step50`, publicado por el usuario nmuendler. No es un modelo completo, sino un adaptador de tipo PEFT que se aplica sobre el checkpoint base `yufeng1/Apriel-15B-summary-type3-e1-10000`, a su vez derivado de la familia Apriel de 15.000 millones de parámetros. El nombre del repositorio indica que el adaptador se ha entrenado para tareas de resumen de texto mediante una técnica de destilacion *on-policy*, con una tasa de aprendizaje de 4e-4, rango LoRA 32 y 50 pasos de entrenamiento.
 
-El modelo se distribuye con la libreria PEFT y la etiqueta de pipeline `text-generation`, con un tamano de repositorio de 0,6 GB, coherente con un adaptador de rango 32 y no con un modelo completo. La model card publicada por el autor es la plantilla por defecto de HuggingFace, sin ninguna seccion cumplimentada: no se declara licencia, idiomas, datos de entrenamiento, hiperparametros completos ni resultados de evaluacion.
+El modelo se distribuye con la libreria PEFT y la etiqueta de pipeline `text-generation`, con un tamano de repositorio de 0,6 GB, coherente con un adaptador de rango 32 y no con un modelo completo. La model card publicada por el autor es la plantilla por defecto de Hugging Face, sin ninguna seccion cumplimentada: no se declara licencia, idiomas, datos de entrenamiento, hiperparametros completos ni resultados de evaluacion.
 
 Su relevancia actual es limitada y de caracter experimental: se trata de un artefacto de investigacion con cero descargas y cero valoraciones en el momento de la consulta, orientado a la investigacion sobre destilacion on-policy aplicada a resumen abstractivo, mas que a un uso en produccion. Cualquier evaluacion practica exige cargar conjuntamente el adaptador y su modelo base, y los datos publicos disponibles no permiten verificar la calidad del resultado.
 
@@ -25,9 +25,9 @@ Datos adicionales del repositorio: libreria `peft` (framework PEFT 0.19.1), pipe
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base ni del adaptador. Por el identificador del repositorio y las etiquetas de HuggingFace se deduce que se trata de un adaptador LoRA de rango 32 (`r32`) sobre un transformer de la familia Apriel, con un modelo base intermedio denominado `Apriel-15B-summary-type3-e1-10000`, lo que sugiere un entrenamiento previo del mismo autor o de otro usuario sobre tareas de resumen ("summary") de tipo 3. El nombre del repositorio tambien indica una tasa de aprendizaje de 4e-4 (`lr4e4`) y 50 pasos de optimizacion (`step50`), un regimen de entrenamiento muy corto que apunta a un experimento de validacion de pipeline mas que a un ajuste convergido.
+La informacion disponible no describe la arquitectura interna del modelo base ni del adaptador. Por el identificador del repositorio y las etiquetas de Hugging Face se deduce que se trata de un adaptador LoRA de rango 32 (`r32`) sobre un transformer de la familia Apriel, con un modelo base intermedio denominado `Apriel-15B-summary-type3-e1-10000`, lo que sugiere un entrenamiento previo del mismo autor o de otro usuario sobre tareas de resumen ("summary") de tipo 3. El nombre del repositorio tambien indica una tasa de aprendizaje de 4e-4 (`lr4e4`) y 50 pasos de optimizacion (`step50`), un regimen de entrenamiento muy corto que apunta a un experimento de validacion de pipeline mas que a un ajuste convergido.
 
-El metodo de entrenamiento declarado en el nombre es *on-policy distillation* (destilacion on-policy), es decir, entrenamiento del adaptador sobre distribuciones de salida generadas por el propio modelo en lugar de sobre un corpus estatico de salidas de profesor. No se especifica el profesor, el conjunto de datos, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. La model card no documenta hiperparametros, regimen de precision (fp16, bf16, fp8) ni infraestructura de computo. La unica referencia bibliografica presente en las etiquetas es el articulo arXiv:1910.09700 (Lacoste et al., 2019), citado en la plantilla de HuggingFace para el calculo de huella de carbono, no como paper del modelo.
+El metodo de entrenamiento declarado en el nombre es *on-policy distillation* (destilacion on-policy), es decir, entrenamiento del adaptador sobre distribuciones de salida generadas por el propio modelo en lugar de sobre un corpus estatico de salidas de profesor. No se especifica el profesor, el conjunto de datos, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. La model card no documenta hiperparametros, regimen de precision (fp16, bf16, fp8) ni infraestructura de computo. La unica referencia bibliografica presente en las etiquetas es el articulo arXiv:1910.09700 (Lacoste et al., 2019), citado en la plantilla de Hugging Face para el calculo de huella de carbono, no como paper del modelo.
 
 ## Capacidades
 
@@ -71,15 +71,15 @@ Las cifras de VRAM que se indican a continuacion son estimaciones aritmeticas de
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/Apriel-15B-textsummarization-on-policy-distill-run1-lr4e4-r32-step50 | Adaptador LoRA (r=32) sobre Apriel-15B | Delta de bajo rango sobre un modelo de 15B nominal | no disponible | no disponible | Publico en HuggingFace; 0 descargas, 0 likes |
-| yufeng1/Apriel-15B-summary-type3-e1-10000 | Checkpoint base del adaptador (probablemente ajuste completo o adaptador previo) | 15B nominal | no disponible | no disponible | Publico en HuggingFace |
+| nmuendler/Apriel-15B-textsummarization-on-policy-distill-run1-lr4e4-r32-step50 | Adaptador LoRA (r=32) sobre Apriel-15B | Delta de bajo rango sobre un modelo de 15B nominal | no disponible | no disponible | Publico en Hugging Face; 0 descargas, 0 likes |
+| yufeng1/Apriel-15B-summary-type3-e1-10000 | Checkpoint base del adaptador (probablemente ajuste completo o adaptador previo) | 15B nominal | no disponible | no disponible | Publico en Hugging Face |
 | Modelo completo de la familia Apriel-15B | Transformer denso | 15B nominal | no disponible en la informacion proporcionada | no disponible | Requiere consultar el repositorio de origen |
 
 No se dispone de datos de rendimiento de ninguna de las alternativas en la informacion proporcionada, por lo que la comparacion se limita a tipo de artefacto, tamano nominal, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla vacia de HuggingFace: no hay informacion sobre sesgos, datos de entrenamiento, evaluacion ni uso previsto.
+- La model card es la plantilla vacia de Hugging Face: no hay informacion sobre sesgos, datos de entrenamiento, evaluacion ni uso previsto.
 - Riesgo de alucinacion no cuantificado: al ser un modelo generativo de 15B sin evaluacion publicada, puede producir resumenes con informacion no presente en el texto fuente.
 - Riesgo de degradacion por sobreajuste: 50 pasos con tasa de aprendizaje 4e-4 y rango 32 es un regimen agresivo y muy corto, que puede producir un adaptador poco convergido o inestable.
 - Idiomas: no declarados; no hay garantia de calidad en castellano ni en ningun otro idioma concreto.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de ninguna de las alternativas en la infor
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-textsummarization-on-policy-distill-run1-lr4e4-r32-step50
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-textsummarization-on-policy-distill-run1-lr4e4-r32-step50
 - Modelo base declarado: https://huggingface.co/yufeng1/Apriel-15B-summary-type3-e1-10000
 - Articulo citado en las etiquetas del repositorio (huella de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

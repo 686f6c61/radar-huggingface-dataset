@@ -80,10 +80,10 @@ Resultados declarados por el autor del modelo (no verificados):
 
 | Modelo | Parametros | Contexto | F1 medio (6 sets) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid Safety 0.8B | 0,8B | no disponible | 81,8 | cc-by-4.0 | HuggingFace (PEFT + GGUF) |
-| Qwen3Guard-Gen-0.6B | 0,6B | no disponible | 81,9 (modo loose) | no disponible | HuggingFace |
-| Granite Guardian 3.2 3B-A800M | 3,3B (MoE, 800M activos) | no disponible | 74,9 | no disponible | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | 60,5 | no disponible | HuggingFace |
+| Privoid Safety 0.8B | 0,8B | no disponible | 81,8 | cc-by-4.0 | Hugging Face (PEFT + GGUF) |
+| Qwen3Guard-Gen-0.6B | 0,6B | no disponible | 81,9 (modo loose) | no disponible | Hugging Face |
+| Granite Guardian 3.2 3B-A800M | 3,3B (MoE, 800M activos) | no disponible | 74,9 | no disponible | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | 60,5 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ Resultados declarados por el autor del modelo (no verificados):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-Safety-Qwen3.5-0.8B
+- Modelo en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-Safety-Qwen3.5-0.8B
 - Repositorio GGUF: https://huggingface.co/Privoid-ai/Privoid-Safety-Qwen3.5-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Privoid Guard (inyección de prompts): https://huggingface.co/Privoid-ai/Privoid-Guard-Qwen3.5-0.8B

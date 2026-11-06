@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen8` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5, de 7 mil millones de parametros, entrenado con la libreria Unsloth y TRL sobre la base instructiva oficial. El nombre del repositorio sugiere un experimento de alineacion o condicionamiento de "vision del mundo" (worldview) con sesgo politico de centro y algun tipo de colapso numerico, aunque la model card no documenta la metodologia.
+`HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen8` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5, de 7 mil millones de parametros, entrenado con la libreria Unsloth y TRL sobre la base instructiva oficial. El nombre del repositorio sugiere un experimento de alineacion o condicionamiento de "vision del mundo" (worldview) con sesgo politico de centro y algun tipo de colapso numerico, aunque la model card no documenta la metodologia.
 
 La relevancia de este modelo es limitada: se trata de un experimento de ajuste fino de caracter comunitario, con cero descargas y cero likes en el momento de la consulta, y sin documentacion tecnica sustantiva. No obstante, al heredar la arquitectura y capacidades de Qwen2.5-7B-Instruct, conserva las caracteristicas tecnicas del modelo base, que si esta ampliamente documentado.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-...-gen8 | 7B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| unsloth/Qwen2.5-7B-Instruct | 7B | 32 768 (nativo) | Apache 2.0 | HuggingFace (ampliamente usado) |
-| Qwen/Qwen2.5-7B-Instruct | 7B | 32 768 (nativo) | Apache 2.0 | HuggingFace (oficial) |
-| Mistral-7B-Instruct-v0.3 | 7B | 32 768 | Apache 2.0 | HuggingFace |
+| HungryDino/qwen_2.5_7b-...-gen8 | 7B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| unsloth/Qwen2.5-7B-Instruct | 7B | 32 768 (nativo) | Apache 2.0 | Hugging Face (ampliamente usado) |
+| Qwen/Qwen2.5-7B-Instruct | 7B | 32 768 (nativo) | Apache 2.0 | Hugging Face (oficial) |
+| Mistral-7B-Instruct-v0.3 | 7B | 32 768 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen8
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen8
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

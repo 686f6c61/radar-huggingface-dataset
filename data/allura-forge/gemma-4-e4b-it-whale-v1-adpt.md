@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/allura-forge/gemma-4-e4b-it-WHALE-V1-adpt
+- Repositorio Hugging Face: https://huggingface.co/allura-forge/gemma-4-e4b-it-WHALE-V1-adpt
 - Herramienta ablit: https://code.allura.moe/FizzSlop/ablit
 - Modelo base (Gemma 4 E4B): https://deepmind.google/models/gemma/gemma-4/
 - Documentación de Gemma 4 E4B: https://gemma4.dev/models/gemma-4-e4b

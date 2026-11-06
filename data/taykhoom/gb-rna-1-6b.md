@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GB.RNA-1.6B es un modelo de lenguaje de proteínas... no: es un **encoder transformer** (masked language model) entrenado sobre secuencias de ARN no codificante, no un modelo generativo de lenguaje natural. Lo desarrolla GenBio AI (Zou et al.) como parte de la familia AIDO/GB.RNA, y esta ficha concreta es un port independiente a HuggingFace mantenido por Taykhoom Dalal que carga sin el paquete `ModelGenerator`. Con 1.611.626.528 parámetros, es la variante base más grande de la familia GB.RNA.
+GB.RNA-1.6B es un modelo de lenguaje de proteínas... no: es un **encoder transformer** (masked language model) entrenado sobre secuencias de ARN no codificante, no un modelo generativo de lenguaje natural. Lo desarrolla GenBio AI (Zou et al.) como parte de la familia AIDO/GB.RNA, y esta ficha concreta es un port independiente a Hugging Face mantenido por Taykhoom Dalal que carga sin el paquete `ModelGenerator`. Con 1.611.626.528 parámetros, es la variante base más grande de la familia GB.RNA.
 
 El modelo resuelve el problema de obtener representaciones (embeddings) y puntuaciones de probabilidad para secuencias de ARN, de modo que sirva como backbone para tareas downstream de comprensión de ARN: predicción de estructura secundaria, anotación funcional, clasificación de familias, etc. Su relevancia práctica está en que elimina la dependencia del código original de GenBio AI (que requiere `ModelGenerator`) y añade soporte para `sdpa` y `flash_attention_2`, con verificación de paridad numérica frente a los pesos originales.
 
@@ -40,7 +40,7 @@ El preentrenamiento usa modelado de lenguaje enmascarado (MLM) sobre 42 millones
 - Extracción de embeddings a nivel de secuencia (token `[CLS]`, vector de 2048 dimensiones) y a nivel de token (salida `last_hidden_state` de forma `batch × seq_len × 2048`).
 - Acceso a estados ocultos intermedios de las 32 capas más el embedding, útil para probing por capa y para tareas que rinden mejor con representaciones intermedias.
 - Predicción MLM: logits sobre el vocabulario de 16 tokens para enmascarar y reconstruir posiciones concretas de una secuencia.
-- Backbone ajustable con convenciones estándar de HuggingFace para añadir cabezas específicas de tarea.
+- Backbone ajustable con convenciones estándar de Hugging Face para añadir cabezas específicas de tarea.
 - Capacidad de modelar contexto local y de medio alcance en ARN no codificante (hasta 1024 nucleótidos por secuencia).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni generación de texto libre: es un encoder MLM, no un modelo instruccional.
 - No soporta capacidad multilingüe en el sentido habitual; su "alfabeto" es el de nucleótidos.
@@ -84,10 +84,10 @@ La verificación se realizó en GPU con PyTorch 2.7 y CUDA 12; el autor atribuye
 
 | Modelo | Parametros | Datos de entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GB.RNA-1.6B (esta ficha) | 1,6B | 42M ncRNA | 1024 | GenBio AI Community License | HuggingFace (port de Taykhoom); original en `genbio-ai/GB.RNA-1.6B` |
-| GB.RNA-650M | 650M | 42M ncRNA | no disponible | GenBio AI Community License | HuggingFace |
-| GB.RNA-1.6B-CDS | 1,6B | 42M ncRNA + CDS | no disponible | GenBio AI Community License | HuggingFace |
-| GB.RNA-300M-MARS | 300M | MARS ncRNA | no disponible | GenBio AI Community License | HuggingFace |
+| GB.RNA-1.6B (esta ficha) | 1,6B | 42M ncRNA | 1024 | GenBio AI Community License | Hugging Face (port de Taykhoom); original en `genbio-ai/GB.RNA-1.6B` |
+| GB.RNA-650M | 650M | 42M ncRNA | no disponible | GenBio AI Community License | Hugging Face |
+| GB.RNA-1.6B-CDS | 1,6B | 42M ncRNA + CDS | no disponible | GenBio AI Community License | Hugging Face |
+| GB.RNA-300M-MARS | 300M | MARS ncRNA | no disponible | GenBio AI Community License | Hugging Face |
 
 Criterio de elección dentro de la familia, según la propia model card: GB.RNA-1.6B es la variante base más grande y debe usarse cuando la calidad del embedding importa más que la velocidad; GB.RNA-650M es el compromiso para inferencia más rápida con el mismo corpus; GB.RNA-1.6B-CDS es la opción cuando el input son secuencias codificantes; las variantes MARS (1M, 25M, 300M) cubren escenarios de muy bajo coste computacional.
 
@@ -108,7 +108,7 @@ No se dispone en la información proporcionada de datos verificados de otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/GB.RNA-1.6B
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/GB.RNA-1.6B
 - Colección GB.RNA: https://huggingface.co/collections/Taykhoom/gbrna-6a22fe2e4039c523bcc48de9
 - Checkpoint original: `genbio-ai/GB.RNA-1.6B` (referenciado en la model card)
 - Variante CDS: https://huggingface.co/Taykhoom/GB.RNA-1.6B-CDS

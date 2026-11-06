@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. Existen ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bieluu/krea2_realism_lora_v1
+- Modelo en Hugging Face: https://huggingface.co/bieluu/krea2_realism_lora_v1
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Artículo sobre LoRA de Krea 2: https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html
-- Modelo similar en HuggingFace: https://huggingface.co/bieluu/krea2_realistic_lora_comfy
+- Modelo similar en Hugging Face: https://huggingface.co/bieluu/krea2_realistic_lora_comfy

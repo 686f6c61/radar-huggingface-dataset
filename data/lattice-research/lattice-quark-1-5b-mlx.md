@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativos. En términos de tamaño, est
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/lattice-research/lattice-quark-1.5b-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/lattice-research/lattice-quark-1.5b-mlx
 - Checkpoint base (bf16): https://huggingface.co/lattice-research/lattice-quark-1.5b
 - Proyecto Lattice (inferencia Rust y Studio macOS): https://github.com/ohdearquant/lattice

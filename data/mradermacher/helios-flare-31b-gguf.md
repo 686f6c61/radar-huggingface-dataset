@@ -68,9 +68,9 @@ No se dispone de datos comparativos con otros modelos de la misma categoría en 
 
 | Variante | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Helios-Flare-31B (base, Vortex5) | ≈30,7 B | no disponible | no disponible | apache-2.0 | HuggingFace (pesos originales) |
-| Helios-Flare-31B-GGUF (este repo) | ≈30,7 B | no disponible | no disponible | apache-2.0 | HuggingFace, cuantizaciones estáticas Q2_K–Q8_0 |
-| Helios-Flare-31B-i1-GGUF (imatrix) | ≈30,7 B | no disponible | no disponible | apache-2.0 | HuggingFace, cuantizaciones ponderadas |
+| Helios-Flare-31B (base, Vortex5) | ≈30,7 B | no disponible | no disponible | apache-2.0 | Hugging Face (pesos originales) |
+| Helios-Flare-31B-GGUF (este repo) | ≈30,7 B | no disponible | no disponible | apache-2.0 | Hugging Face, cuantizaciones estáticas Q2_K–Q8_0 |
+| Helios-Flare-31B-i1-GGUF (imatrix) | ≈30,7 B | no disponible | no disponible | apache-2.0 | Hugging Face, cuantizaciones ponderadas |
 
 ## Limitaciones y advertencias
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`odin-zapros-router` es un modelo publicado en HuggingFace por el usuario ANKomyagin bajo licencia MIT. Por el identificador y el contenido de su model card, todo apunta a un componente de enrutamiento de peticiones (router) dentro de un sistema mayor denominado "odin", orientado a clasificar o dirigir consultas ("zapros" significa "peticiones" en ruso) hacia distintos modelos o flujos de procesamiento. No se trata, por tanto, de un modelo generativo de propósito general al uso.
+`odin-zapros-router` es un modelo publicado en Hugging Face por el usuario ANKomyagin bajo licencia MIT. Por el identificador y el contenido de su model card, todo apunta a un componente de enrutamiento de peticiones (router) dentro de un sistema mayor denominado "odin", orientado a clasificar o dirigir consultas ("zapros" significa "peticiones" en ruso) hacia distintos modelos o flujos de procesamiento. No se trata, por tanto, de un modelo generativo de propósito general al uso.
 
 La informacion disponible es extremadamente limitada. La model card publicada se reduce a la declaracion de licencia MIT, sin descripcion funcional, sin especificaciones de arquitectura, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0.0 GB, lo que sugiere que no contiene pesos de modelo en el momento de la consulta o que estos son de tamano despreciable, y no registra descargas ni interacciones.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe interpretarse como un registro del estado actual 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la documentacion disponible. El nombre del repositorio sugiere un componente de enrutamiento (router) de peticiones, lo que en la practica suele corresponder a un clasificador ligero o a un modelo de embeddings de pequeno tamano, pero no hay confirmacion tecnica de ello en la model card ni en los metadatos de HuggingFace.
+No se ha publicado informacion sobre la arquitectura del modelo en la documentacion disponible. El nombre del repositorio sugiere un componente de enrutamiento (router) de peticiones, lo que en la practica suele corresponder a un clasificador ligero o a un modelo de embeddings de pequeno tamano, pero no hay confirmacion tecnica de ello en la model card ni en los metadatos de Hugging Face.
 
 Tampoco se dispone de datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni la existencia de fases de ajuste fino supervisado, RLHF o DPO. El tamano del repositorio (0.0 GB) impide inferir el numero de parametros a partir del espacio ocupado por los pesos.
 
@@ -64,10 +64,10 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| odin-zapros-router | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| odin-zapros-router | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | BERT-base | 110 M | 512 tokens | Apache 2.0 | Amplia, integrado en transformers |
 | DistilBERT | 66 M | 512 tokens | Apache 2.0 | Amplia |
-| Qwen3-0.6B | 0,6 B | 32 768 tokens | Apache 2.0 | HuggingFace, vLLM, Ollama |
+| Qwen3-0.6B | 0,6 B | 32 768 tokens | Apache 2.0 | Hugging Face, vLLM, Ollama |
 
 ## Limitaciones y advertencias
 
@@ -81,5 +81,5 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 ## Enlaces
 
-- [HuggingFace: ANKomyagin/odin-zapros-router](https://huggingface.co/ANKomyagin/odin-zapros-router)
+- [Hugging Face: ANKomyagin/odin-zapros-router](https://huggingface.co/ANKomyagin/odin-zapros-router)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

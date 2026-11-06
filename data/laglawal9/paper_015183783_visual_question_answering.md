@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado, sino un artículo académico en formato Markdown sobre la tarea de *visual question answering* (VQA). El autor, Laglawal9, publica el texto completo del paper en `paper_015183783_visual_question_answering.md`, con un formato LaTeX estilo ACL, citas numéricas estilo Nature y una estructura IMRaD adaptada (introducción, problema, solución, validación, futuro). El estilo de redacción es analítico y conciso.
+Este repositorio de Hugging Face no contiene un modelo entrenado, sino un artículo académico en formato Markdown sobre la tarea de *visual question answering* (VQA). El autor, Laglawal9, publica el texto completo del paper en `paper_015183783_visual_question_answering.md`, con un formato LaTeX estilo ACL, citas numéricas estilo Nature y una estructura IMRaD adaptada (introducción, problema, solución, validación, futuro). El estilo de redacción es analítico y conciso.
 
 La relevancia de este repositorio radica en su contenido temático: la VQA es una tarea de visión por computador y procesamiento de lenguaje natural donde un sistema recibe una imagen y una pregunta en lenguaje natural sobre ella, y debe generar una respuesta también en lenguaje natural. Este campo tiene aplicaciones en accesibilidad, asistencia visual y sistemas de búsqueda multimodal. No obstante, es importante subrayar que no se trata de un modelo con pesos, arquitectura o capacidad de inferencia; es un documento académico.
 
@@ -61,11 +61,11 @@ No disponible. No existe modelo comparable, ya que el repositorio no contiene pe
 - **Alcance limitado**: el contenido es solo el texto de un paper en Markdown, sin código, datasets ni resultados reproducibles.
 - **Idiomas**: la model card no especifica el idioma del paper; se asume inglés por el formato ACL, pero no está confirmado.
 - **Licencia MIT**: permite uso comercial y modificación, pero aplica solo al texto del documento, no a ninguna implementación de modelo.
-- **Riesgo de confusión**: los tags de HuggingFace (visual-question-answering, license:mit) pueden inducir a error a quien busque un modelo funcional.
+- **Riesgo de confusión**: los tags de Hugging Face (visual-question-answering, license:mit) pueden inducir a error a quien busque un modelo funcional.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Laglawal9/paper_015183783_visual_question_answering
+- Repositorio de Hugging Face: https://huggingface.co/Laglawal9/paper_015183783_visual_question_answering
 - Paper original de VQA (arXiv): https://arxiv.org/abs/1505.00468
 - PDF del paper original: https://arxiv.org/pdf/1505.00468v6
 - Sitio del dataset VQA: https://visualqa.org/

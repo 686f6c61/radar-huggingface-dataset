@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TR-ABDOMEN-RAD es un detector de objetos de una etapa construido sobre la arquitectura YOLO26-S-P2 de Ultralytics, publicado por el usuario huseyincavus en HuggingFace. No es un modelo de lenguaje: es un modelo de visión por computador entrenado para localizar y clasificar seis tipos de urgencia abdominal aguda en imágenes de tomografía computarizada (TC) abdominal. Resuelve un problema de triaje radiológico: dada una slice de TC, predice cajas delimitadoras con la clase de hallazgo patológico correspondiente.
+TR-ABDOMEN-RAD es un detector de objetos de una etapa construido sobre la arquitectura YOLO26-S-P2 de Ultralytics, publicado por el usuario huseyincavus en Hugging Face. No es un modelo de lenguaje: es un modelo de visión por computador entrenado para localizar y clasificar seis tipos de urgencia abdominal aguda en imágenes de tomografía computarizada (TC) abdominal. Resuelve un problema de triaje radiológico: dada una slice de TC, predice cajas delimitadoras con la clase de hallazgo patológico correspondiente.
 
 El modelo tiene 9,67 millones de parámetros y trabaja a una resolución de entrada de 1280 píxeles, lo que permite detectar estructuras pequeñas como cálculos ureterales. Las seis clases son apendicitis aguda, colecistitis aguda, pancreatitis aguda, cálculo renal o ureteral, diverticulitis aguda y aneurisma/disección de aorta abdominal (AAA). Los pesos se distribuyen en formato `.pt` de Ultralytics, con un archivo principal de 20 MB y un repositorio total de 1,0 GB que incluye checkpoints, logs de entrenamiento, predicciones crudas y utilidades de evaluación.
 
@@ -81,7 +81,7 @@ No se han publicado en la informacion disponible comparaciones numericas con otr
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TR-ABDOMEN-RAD (YOLO26-S-P2) | 9,67 M | imagen 1280 px | Macro AUROC test 0,921; mAP50 slice 0,220 | no disponible | HuggingFace, repo de 1,0 GB |
+| TR-ABDOMEN-RAD (YOLO26-S-P2) | 9,67 M | imagen 1280 px | Macro AUROC test 0,921; mAP50 slice 0,220 | no disponible | Hugging Face, repo de 1,0 GB |
 | Baseline multi-ventana de Erdoğan y Koç (2026) | no disponible | ventanas multiples de TC | no disponible en la model card | publicacion cientifica | articulo en JIIM |
 | Otros detectores YOLO de Ultralytics (S/M) | no disponible en esta busqueda | imagen configurable | no disponible | no disponible | no disponible |
 
@@ -104,7 +104,7 @@ No se dispone de una comparativa cuantitativa con alternativas. La unica referen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huseyincavus/tr-abdomen-rad-weights
+- Modelo en Hugging Face: https://huggingface.co/huseyincavus/tr-abdomen-rad-weights
 - Paper metodologico (baseline): Erdoğan, H.M., Koç, U. "Anatomically Localized Detection of Six Acute Abdominal Emergencies on CT Using Multi-window Deep Learning: Development and Validation", *Journal of Imaging Informatics in Medicine* (2026). https://doi.org/10.1007/s10278-026-02084-x
 - Paper del dataset: Koç, U., Akçapınar Sezer, E., Özkaya, Y.A., et al. "Elevating healthcare through artificial intelligence: analyzing the abdominal emergencies data set (TR_ABDOMEN_RAD_EMERGENCY) at TEKNOFEST-2022", *European Radiology* 34, 3588-3597 (2024). https://doi.org/10.1007/s00330-023-10391-y
 - Ultralytics (framework y pesos upstream): no se incluye enlace en la model card; consultar la documentacion oficial del proyecto Ultralytics.

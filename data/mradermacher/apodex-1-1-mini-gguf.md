@@ -69,7 +69,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion GGUF: https://huggingface.co/mradermacher/Apodex-1.1-mini-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/apodex/Apodex-1.1-mini
+- Repositorio Hugging Face de la cuantizacion GGUF: https://huggingface.co/mradermacher/Apodex-1.1-mini-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/apodex/Apodex-1.1-mini
 - Paper arXiv 2608.23283: https://arxiv.org/abs/2608.23283
 - Pagina oficial de Apodex: https://www.apodex.com/ y https://www.apodex.ai/

@@ -69,9 +69,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/msudipto/VQC-ZTI_Framework
+- Hugging Face: https://huggingface.co/msudipto/VQC-ZTI_Framework
 - Paper (arXiv): https://arxiv.org/abs/2608.18572
 - PDF del paper: https://arxiv.org/pdf/2608.18572
 - Código fuente: https://github.com/msudipto/VQC-ZTI_Framework
 - DOI: https://doi.org/10.48550/arXiv.2608.18572
-- Página de paper en HuggingFace: https://huggingface.co/papers/2608.18572
+- Página de paper en Hugging Face: https://huggingface.co/papers/2608.18572

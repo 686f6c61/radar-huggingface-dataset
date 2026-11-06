@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio xw17/Qwen2.5-14B-Instruct_SFT_lora_noneeg es una publicacion en HuggingFace cuyo identificador sugiere un ajuste fino mediante SFT y LoRA sobre el modelo base Qwen2.5-14B-Instruct, un transformer decoder-only de 14 mil millones de parametros desarrollado por Alibaba Cloud. El tamano del repositorio (0,1 GB) es coherente con un adaptador LoRA en lugar de pesos completos, ya que un modelo de 14B en precision fp16 ocuparia aproximadamente 28 GB. El autor figura como xw17 y no se ha publicado informacion adicional sobre el proceso de entrenamiento.
+El repositorio xw17/Qwen2.5-14B-Instruct_SFT_lora_noneeg es una publicacion en Hugging Face cuyo identificador sugiere un ajuste fino mediante SFT y LoRA sobre el modelo base Qwen2.5-14B-Instruct, un transformer decoder-only de 14 mil millones de parametros desarrollado por Alibaba Cloud. El tamano del repositorio (0,1 GB) es coherente con un adaptador LoRA en lugar de pesos completos, ya que un modelo de 14B en precision fp16 ocuparia aproximadamente 28 GB. El autor figura como xw17 y no se ha publicado informacion adicional sobre el proceso de entrenamiento.
 
-La model card incluida es la plantilla autogenerada de HuggingFace, sin ningun campo completado: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. El modelo registra cero descargas y cero likes en el momento de redactar esta ficha, por lo que se trata de una publicacion sin validacion por parte de la comunidad.
+La model card incluida es la plantilla autogenerada de Hugging Face, sin ningun campo completado: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. El modelo registra cero descargas y cero likes en el momento de redactar esta ficha, por lo que se trata de una publicacion sin validacion por parte de la comunidad.
 
 Dado que la informacion disponible es minima, esta ficha se limita a documentar lo verificable y marca explicitamente como "no disponible" todo aquello que no puede confirmarse a partir de los datos proporcionados. Cualquier dato relativo al modelo base Qwen2.5-14B-Instruct se ofrece unicamente como referencia contextual y no como especificacion confirmada de este repositorio.
 
@@ -36,7 +36,7 @@ El repositorio no incluye informacion sobre el numero de tokens de entrenamiento
 - No se ha publicado ninguna descripcion de capacidades en la informacion disponible.
 - Si el modelo base es Qwen2.5-14B-Instruct, cabria esperar generacion de texto, razonamiento, codigo y matematicas, soporte de tool calling y capacidades multilingues; ninguna de estas capacidades esta confirmada para este repositorio.
 - No hay evidencia de soporte de vision, audio ni de un modo de razonamiento explicito.
-- La etiqueta endpoints_compatible indica compatibilidad con la API de inferencia de HuggingFace, pero no aporta informacion sobre capacidades funcionales.
+- La etiqueta endpoints_compatible indica compatibilidad con la API de inferencia de Hugging Face, pero no aporta informacion sobre capacidades funcionales.
 
 ## Casos de uso
 
@@ -74,6 +74,6 @@ No disponible. No se ha publicado informacion suficiente sobre este adaptador (l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_noneeg
+- Hugging Face: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_noneeg
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, calculo de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ewald1976/nemo-bnb4-sysblock` es un modelo de generación de texto derivado de Mistral Nemo 12B, publicado por el usuario ewald1976 en HuggingFace. Se trata de un artefacto de fine-tuning cuantizado en 4 bits mediante bitsandbytes, con pesos en formato safetensors y un tamaño de repositorio de 8,3 GB. El nombre sugiere una variante con un bloque de sistema ("sysblock") añadido sobre la base Nemo, aunque la model card no documenta el proceso de entrenamiento ni los datos utilizados.
+`ewald1976/nemo-bnb4-sysblock` es un modelo de generación de texto derivado de Mistral Nemo 12B, publicado por el usuario ewald1976 en Hugging Face. Se trata de un artefacto de fine-tuning cuantizado en 4 bits mediante bitsandbytes, con pesos en formato safetensors y un tamaño de repositorio de 8,3 GB. El nombre sugiere una variante con un bloque de sistema ("sysblock") añadido sobre la base Nemo, aunque la model card no documenta el proceso de entrenamiento ni los datos utilizados.
 
 El modelo hereda la arquitectura transformer de Mistral Nemo, con 12.247.782.400 parámetros totales según los metadatos de safetensors. Está etiquetado como compatible con text-generation-inference y endpoints, y declara licencia Apache 2.0. La model card es prácticamente un copia-pega de la plantilla de Unsloth para fine-tuning, sin información específica sobre este checkpoint concreto: no se detallan hiperparámetros, dataset, ni evaluación.
 
@@ -43,7 +43,7 @@ No hay información sobre el entrenamiento específico de este checkpoint. La mo
 - Despliegue en entornos con VRAM limitada: al ocupar 8,3 GB en disco y cargarse en 4 bits, puede ejecutarse en GPUs de 12-16 GB para pruebas de generación de texto en inglés.
 - Evaluación de cuantización bitsandbytes: útil para comparar la degradación de calidad frente al modelo base en bf16 en tareas de generación conversacional.
 - Prototipado de asistentes conversacionales en inglés: el bloque de sistema predefinido puede emplearse como plantilla para fijar el rol del asistente en demos rápidas.
-- Investigación sobre artefactos de HuggingFace: caso de estudio de repositorios con model cards genéricas y metadatos incompletos, útil para entrenar sistemas de catalogación automática.
+- Investigación sobre artefactos de Hugging Face: caso de estudio de repositorios con model cards genéricas y metadatos incompletos, útil para entrenar sistemas de catalogación automática.
 - Pruebas de compatibilidad con TGI: al estar etiquetado como endpoints_compatible, puede usarse para validar pipelines de despliegue con text-generation-inference en 4 bits.
 
 ## Benchmarks y rendimiento
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ewald1976/nemo-bnb4-sysblock | 12,2B | No disponible | Apache 2.0 | Safetensors 4-bit | HuggingFace (46 descargas) |
-| Mistral Nemo 12B (base) | 12,2B | 128K | Apache 2.0 | Safetensors bf16 | HuggingFace, ampliamente usado |
-| Mistral 7B Instruct | 7,2B | 32K | Apache 2.0 | Safetensors, GGUF | HuggingFace, muy popular |
-| Gemma 2 9B | 9,2B | 8K | Gemma license | Safetensors, GGUF | HuggingFace, Google |
+| ewald1976/nemo-bnb4-sysblock | 12,2B | No disponible | Apache 2.0 | Safetensors 4-bit | Hugging Face (46 descargas) |
+| Mistral Nemo 12B (base) | 12,2B | 128K | Apache 2.0 | Safetensors bf16 | Hugging Face, ampliamente usado |
+| Mistral 7B Instruct | 7,2B | 32K | Apache 2.0 | Safetensors, GGUF | Hugging Face, muy popular |
+| Gemma 2 9B | 9,2B | 8K | Gemma license | Safetensors, GGUF | Hugging Face, Google |
 
 El checkpoint aquí descrito no aporta mejoras documentadas frente a Mistral Nemo base; su principal diferencia es la cuantización 4-bit y un supuesto bloque de sistema no documentado. Mistral 7B Instruct y Gemma 2 9B son alternativas más ligeras y con ecosistema de despliegue más maduro.
 
@@ -82,7 +82,7 @@ El checkpoint aquí descrito no aporta mejoras documentadas frente a Mistral Nem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ewald1976/nemo-bnb4-sysblock
+- Hugging Face: https://huggingface.co/ewald1976/nemo-bnb4-sysblock
 - Notebook de Unsloth para Mistral Nemo 12B: https://colab.research.google.com/drive/17d3U-CAIwzmbDRqbZ9NnpHxCkmXB6LZ0?usp=sharing
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Discord de Unsloth: https://discord.gg/u54VK8m8tk

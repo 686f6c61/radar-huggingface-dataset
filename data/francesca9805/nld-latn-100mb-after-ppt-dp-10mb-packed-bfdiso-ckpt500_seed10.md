@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino supervisado (SFT) del modelo base `francesca9805/nld-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10`, entrenado con la libreria TRL sobre una arquitectura GPT-2 de 124.770.816 parametros (confirmados en los pesos safetensors). El identificador sugiere que se trata de un modelo de lenguaje en neerlandes (codigo ISO 639-3 `nld`) con escritura latina, entrenado sobre un corpus del orden de 100 MB, con alguna variante de empaquetado de secuencias y una semilla fija (`seed10`). El autor es el usuario de HuggingFace `francesca9805`, y el enlace de Weights & Biases de la model card apunta a la organizacion `f-padovani-university-of-groningen`, lo que situa el trabajo en un contexto academico de investigacion sobre tokenizadores y eficiencia de datos.
+Este repositorio contiene un ajuste fino supervisado (SFT) del modelo base `francesca9805/nld-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10`, entrenado con la libreria TRL sobre una arquitectura GPT-2 de 124.770.816 parametros (confirmados en los pesos safetensors). El identificador sugiere que se trata de un modelo de lenguaje en neerlandes (codigo ISO 639-3 `nld`) con escritura latina, entrenado sobre un corpus del orden de 100 MB, con alguna variante de empaquetado de secuencias y una semilla fija (`seed10`). El autor es el usuario de Hugging Face `francesca9805`, y el enlace de Weights & Biases de la model card apunta a la organizacion `f-padovani-university-of-groningen`, lo que situa el trabajo en un contexto academico de investigacion sobre tokenizadores y eficiencia de datos.
 
 El modelo se publica como un checkpoint intermedio (sufijo `ckpt500`), lo que indica que forma parte de un barrido experimental mas amplio: existen repositorios hermanos con nombres como `eng-latn-100mb-after-ppt-Dp-10mb-packed-wrapped-ckpt500_seed10` (version en ingles) o `eng-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455`, lo que apunta a experimentos controlados sobre tamano de corpus, empaquetado y tokenizador. Su relevancia, por tanto, no es la de un modelo de produccion, sino la de una pieza reproducible para estudiar como afectan estas variables al comportamiento de un transformer pequeno.
 
@@ -79,10 +79,10 @@ Los datos de rendimiento de este modelo no estan publicados, por lo que la compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este modelo (`nld-latn-100mb-after-ppt-...-ckpt500_seed10`) | 124.770.816 | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| GPT-2 small | 124 M (aprox.) | 1024 tokens | licencia MIT modificada | HuggingFace, safetensors, GGUF en la comunidad | Si, ampliamente documentado |
-| DistilGPT-2 | 82 M (aprox.) | 1024 tokens | Apache 2.0 | HuggingFace, safetensors | Si, ampliamente documentado |
-| Pythia-160m | 162 M (aprox.) | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Si, con suite de evaluacion publicada |
+| Este modelo (`nld-latn-100mb-after-ppt-...-ckpt500_seed10`) | 124.770.816 | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| GPT-2 small | 124 M (aprox.) | 1024 tokens | licencia MIT modificada | Hugging Face, safetensors, GGUF en la comunidad | Si, ampliamente documentado |
+| DistilGPT-2 | 82 M (aprox.) | 1024 tokens | Apache 2.0 | Hugging Face, safetensors | Si, ampliamente documentado |
+| Pythia-160m | 162 M (aprox.) | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Si, con suite de evaluacion publicada |
 
 La diferencia principal no esta en la arquitectura, sino en el regimen de entrenamiento: GPT-2, DistilGPT-2 y Pythia se entrenaron sobre corpus de decenas o cientos de miles de millones de tokens, mientras que este checkpoint parte de un corpus del orden de 100 MB segun su propio nombre, lo que lo situa en otra categoria de uso (investigacion de eficiencia de datos, no generacion de proposito general).
 
@@ -100,7 +100,7 @@ La diferencia principal no esta en la arquitectura, sino en el regimen de entren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rk9omyej
 - Repositorio de TRL: https://github.com/huggingface/trl

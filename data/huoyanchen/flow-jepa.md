@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flow-JEPA es un conjunto de checkpoints preentrenados publicados en HuggingFace por el usuario HuoYanchen bajo licencia MIT. El nombre remite a la familia de modelos JEPA (Joint Embedding Predictive Architecture), una línea de investigación en representación autosupervisada que predice embeddings latentes en lugar de reconstruir píxeles o tokens, y al término "Flow", que en la literatura reciente suele asociarse a modelos generativos basados en flow matching o a arquitecturas de flujo continuo. La model card es extremadamente escueta: se limita a indicar la licencia y a enlazar el repositorio de GitHub del proyecto, sin especificar arquitectura, tamaño, datos de entrenamiento ni tareas soportadas.
+Flow-JEPA es un conjunto de checkpoints preentrenados publicados en Hugging Face por el usuario HuoYanchen bajo licencia MIT. El nombre remite a la familia de modelos JEPA (Joint Embedding Predictive Architecture), una línea de investigación en representación autosupervisada que predice embeddings latentes en lugar de reconstruir píxeles o tokens, y al término "Flow", que en la literatura reciente suele asociarse a modelos generativos basados en flow matching o a arquitecturas de flujo continuo. La model card es extremadamente escueta: se limita a indicar la licencia y a enlazar el repositorio de GitHub del proyecto, sin especificar arquitectura, tamaño, datos de entrenamiento ni tareas soportadas.
 
 El repositorio ocupa 0,4 GB, lo que sugiere un conjunto de pesos de tamaño moderado (probablemente en el rango de cientos de millones de parámetros, aunque no es posible confirmarlo con la información disponible). No consta pipeline declarado, ni idiomas soportados, ni resultados de benchmarks, ni descargas o interacciones registradas en el momento de la consulta. La fecha de creación indicada (2026-10-29) y la de actualización (2026-10-30) son las únicas referencias temporales.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Flow-JEPA (HuoYanchen) | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| Flow-JEPA (HuoYanchen) | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | I-JEPA (Meta) | ~300M (ViT-B/H, según variante) | no aplica (visión) | CC BY-NC 4.0 (código) | GitHub público |
 | V-JEPA (Meta) | ~300M-1B (según variante) | no aplica (vídeo) | CC BY-NC 4.0 (código) | GitHub público |
 
@@ -82,5 +82,5 @@ La comparación con I-JEPA y V-JEPA se ofrece solo como referencia de familia ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HuoYanchen/Flow-JEPA
+- Hugging Face: https://huggingface.co/HuoYanchen/Flow-JEPA
 - Repositorio de GitHub (referenciado en la model card): https://github.com/HuoYanchen/Flow-JEPA

@@ -92,9 +92,9 @@ La diferencia fundamental no es de tamaño, sino de presupuesto de entrenamiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GGUFGuy/hyperdex-most-undertrained-slm
+- Modelo en Hugging Face: https://huggingface.co/GGUFGuy/hyperdex-most-undertrained-slm
 - Perfil del autor: https://huggingface.co/GGUFGuy
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Space del entrenador HyperDex Trainer: https://hugging-science-hyperdex-trainer.hf.space/
 - Paper de referencia del dataset FineWeb-Edu: https://arxiv.org/abs/2406.17557
-- Nota: las búsquedas web realizadas no devolvieron ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+- Nota: las búsquedas web realizadas no devolvieron ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

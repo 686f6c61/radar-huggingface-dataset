@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace (este paquete): https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-UD-IQ1_S-CP2-GGUF
+- Hugging Face (este paquete): https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-UD-IQ1_S-CP2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Backbone cuantizado (Unsloth, revisión 766911a6b7369840a91dbcd95f9f997acaab6cd6): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Paquete Sakura K512 CP2 (tabla CP2 y runtime de referencia): https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-47.6GiB-K512-CP2-v1-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iconically-mine/anlp-a2-moe_top1` es un transformer de tipo Mixture of Experts con enrutado top-1, publicado por el usuario `iconically-mine` en HuggingFace. Se trata de un checkpoint de caracter educativo: la propia model card lo identifica como la tarea 1 de un curso de Procesamiento de Lenguaje Natural Avanzado (ANLP A2), no como un modelo destinado a produccion. El modelo tiene 12,94 millones de parametros totales, una configuracion interna de d_model=256, 6 capas, 8 cabezas de atencion y una dimension oculta de FFN de 1024.
+`iconically-mine/anlp-a2-moe_top1` es un transformer de tipo Mixture of Experts con enrutado top-1, publicado por el usuario `iconically-mine` en Hugging Face. Se trata de un checkpoint de caracter educativo: la propia model card lo identifica como la tarea 1 de un curso de Procesamiento de Lenguaje Natural Avanzado (ANLP A2), no como un modelo destinado a produccion. El modelo tiene 12,94 millones de parametros totales, una configuracion interna de d_model=256, 6 capas, 8 cabezas de atencion y una dimension oculta de FFN de 1024.
 
 Se entreno sobre 30 millones de tokens y alcanzo una perdida de validacion final de 4,0754, que es el unico dato de rendimiento publicado. El repositorio ocupa 0,1 GB y contiene un unico checkpoint en formato PyTorch (`moe_top1_final.pt`), que requiere cargarse con `torch.load` y el codigo del modelo incluido en `src/part1/model/transformer.py`. No dispone de pipeline declarado, licencia, idiomas ni tarjeta de uso adicional.
 
@@ -82,9 +82,9 @@ No existe un conjunto claro de alternativas equivalentes en la misma categoria (
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iconically-mine/anlp-a2-moe_top1 | 12,94 M | no disponible | Transformer MoE top-1 | no disponible | HuggingFace (0,1 GB, checkpoint PyTorch) |
-| GPT-2 small | 124 M | 1024 tokens | Transformer denso | MIT | HuggingFace, ampliamente soportado |
-| Pythia-14M | 14 M | 2048 tokens | Transformer denso | Apache-2.0 | HuggingFace, con suite completa de evaluaciones |
+| iconically-mine/anlp-a2-moe_top1 | 12,94 M | no disponible | Transformer MoE top-1 | no disponible | Hugging Face (0,1 GB, checkpoint PyTorch) |
+| GPT-2 small | 124 M | 1024 tokens | Transformer denso | MIT | Hugging Face, ampliamente soportado |
+| Pythia-14M | 14 M | 2048 tokens | Transformer denso | Apache-2.0 | Hugging Face, con suite completa de evaluaciones |
 
 La comparacion con GPT-2 small y Pythia-14M es aproximada y se aporta solo como referencia de escala: el primero es diez veces mayor y el segundo pertenece a una familia con documentacion y evaluaciones extensas, mientras que `anlp-a2-moe_top1` carece de ambas cosas. No se dispone de datos que permitan afirmar superioridad o inferioridad de rendimiento frente a ellos.
 
@@ -102,6 +102,6 @@ La comparacion con GPT-2 small y Pythia-14M es aproximada y se aporta solo como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iconically-mine/anlp-a2-moe_top1
+- Modelo en Hugging Face: https://huggingface.co/iconically-mine/anlp-a2-moe_top1
 - Codigo del modelo: referenciado en la model card como `src/part1/model/transformer.py`, sin URL publica disponible
 - Paper, blog, repositorio o demo: no disponible; la busqueda web realizada no devolvio ningun resultado relacionado con este modelo (los resultados obtenidos correspondian a contenidos no relacionados sobre ChatGPT)

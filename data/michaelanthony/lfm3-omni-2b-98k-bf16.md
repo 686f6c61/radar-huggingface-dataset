@@ -26,7 +26,7 @@ El modelo conserva las capacidades multimodales del original (audio de entrada, 
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LFM3-Omni-2B, un transformer multimodal de 2.166 millones de parámetros perteneciente a la familia LFM3 de Liquid AI. La modificación principal de este fine-tune consiste en convertir las cinco capas de atención deslizante del modelo base en capas de atención completa, con theta de 1e6, rotary parcial de 0.5 y sin ventana deslizante. Los checkpoints en formato HuggingFace ya incorporan el campo `layer_types` correcto, por lo que no requieren parcheo manual.
+El modelo parte de LFM3-Omni-2B, un transformer multimodal de 2.166 millones de parámetros perteneciente a la familia LFM3 de Liquid AI. La modificación principal de este fine-tune consiste en convertir las cinco capas de atención deslizante del modelo base en capas de atención completa, con theta de 1e6, rotary parcial de 0.5 y sin ventana deslizante. Los checkpoints en formato Hugging Face ya incorporan el campo `layer_types` correcto, por lo que no requieren parcheo manual.
 
 El entrenamiento consistió en un LoRA SFT con rango 32 y alpha 64 sobre datos sintéticos de contexto largo en el rango de 65k a 98k tokens, posteriormente fusionado en un único checkpoint BF16. La longitud efectiva entrenada es de aproximadamente 94k tokens: los últimos pasos del optimizador sobre ejemplos de 94.5k a 98.3k se omitieron por falta de memoria (OOM). A pesar de ello, las pruebas de recuperación de información verifican el funcionamiento más allá de esa longitud, hasta 109k tokens. No se documentan en la información disponible detalles sobre la composición del dataset sintético, el número total de tokens de entrenamiento ni si se aplicaron fases de RLHF o DPO.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-98K-BF16 (este) | 2.166 M | ~98k verificado | Audio, visión (mmproj) | LFM Open License | HuggingFace, safetensors y GGUF |
-| LiquidAI/LFM3-Omni-2B (base) | 2.166 M | no disponible en la información | Audio, visión | LFM Open License | HuggingFace |
+| LFM3-Omni-2B-98K-BF16 (este) | 2.166 M | ~98k verificado | Audio, visión (mmproj) | LFM Open License | Hugging Face, safetensors y GGUF |
+| LiquidAI/LFM3-Omni-2B (base) | 2.166 M | no disponible en la información | Audio, visión | LFM Open License | Hugging Face |
 | Alternativas de ~2B con contexto largo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de benchmarks comparativos con otros modelos de la misma categoría, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de datos de benchmarks comparativ
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-BF16
+- Hugging Face del modelo: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-BF16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Repositorio de Liquid AI: no disponible en la información proporcionada
 - Paper técnico: no disponible en la información proporcionada

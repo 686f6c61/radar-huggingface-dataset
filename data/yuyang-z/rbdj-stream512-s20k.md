@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto / horizonte | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rbdj-stream512-s20k (este) | 5B | 32 acciones por chunk a 25 fps, memoria de episodio | SFT streaming, paso 20k | no disponible | pesos fp32 en HuggingFace |
+| rbdj-stream512-s20k (este) | 5B | 32 acciones por chunk a 25 fps, memoria de episodio | SFT streaming, paso 20k | no disponible | pesos fp32 en Hugging Face |
 | Run N1 de zekail (pixel N1, no streaming) | 5B (mismo modelo) | mismo lienzo 320x512 y mismo horizonte | SFT no streaming, mismos datos y calendario | no disponible | referenciado en la model card, sin enlace |
 | Otras políticas VLA open source (familias tipo π0, OpenVLA, GR00T N1) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,5 +97,5 @@ La comparación directa y verificable es con el run N1 de zekail: mismo modelo, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuyang-z/rbdj-stream512-s20k
+- Hugging Face: https://huggingface.co/Yuyang-z/rbdj-stream512-s20k
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código, demos ni a la documentación de XPolicyLab o al run N1 de zekail.

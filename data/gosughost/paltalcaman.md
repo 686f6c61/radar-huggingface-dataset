@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `GosuGhost/paltalcaman`, publicado en HuggingFace por el usuario GosuGhost, es una entrada en el repositorio de modelos con licencia Apache 2.0. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre el entrenamiento o las capacidades del modelo. A fecha de su creación (29 de agosto de 2026), no registra descargas ni valoraciones de la comunidad.
+El modelo `GosuGhost/paltalcaman`, publicado en Hugging Face por el usuario GosuGhost, es una entrada en el repositorio de modelos con licencia Apache 2.0. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre el entrenamiento o las capacidades del modelo. A fecha de su creación (29 de agosto de 2026), no registra descargas ni valoraciones de la comunidad.
 
 Dada la ausencia total de especificaciones en la ficha del modelo y en los resultados de búsqueda web relacionados, no es posible determinar qué tipo de modelo es, para qué tarea está diseñado, ni sus características técnicas. Esta ficha se limita a reflejar la información disponible y a señalar explícitamente todas las carencias de datos.
 
@@ -46,7 +46,7 @@ No disponible. Al no conocer la arquitectura, el tamaño ni la finalidad del mod
 ## Limitaciones y advertencias
 
 - El modelo carece de documentación técnica, por lo que no se puede evaluar su idoneidad para ningún uso.
-- No se han publicado pesos, archivos de configuración ni tokenizadores en el repositorio de HuggingFace (según la información disponible).
+- No se han publicado pesos, archivos de configuración ni tokenizadores en el repositorio de Hugging Face (según la información disponible).
 - La licencia Apache 2.0 permite uso comercial, pero sin conocer el contenido del modelo, cualquier despliegue en producción sería arriesgado.
 - No hay evidencia de sesgos conocidos, pero su ausencia no implica que no existan.
 - Riesgo de alucinación: no aplicable al no poder ejecutar el modelo.
@@ -54,6 +54,6 @@ No disponible. Al no conocer la arquitectura, el tamaño ni la finalidad del mod
 
 ## Enlaces
 
-- [HuggingFace - GosuGhost/paltalcaman](https://huggingface.co/GosuGhost/paltalcaman)
+- [Hugging Face - GosuGhost/paltalcaman](https://huggingface.co/GosuGhost/paltalcaman)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios, demos) relacionados con este modelo en la búsqueda web realizada.

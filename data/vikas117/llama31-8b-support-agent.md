@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento para comparar estos modelos en el dominio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vikas117/llama31-8b-support-agent
+- Hugging Face: https://huggingface.co/vikas117/llama31-8b-support-agent
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
-- Blog de HuggingFace sobre Llama 3.1: https://github.com/huggingface/blog/blob/main/llama31.md
+- Blog de Hugging Face sobre Llama 3.1: https://github.com/huggingface/blog/blob/main/llama31.md

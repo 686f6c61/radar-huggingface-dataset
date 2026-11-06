@@ -67,6 +67,6 @@ No disponible. No existen modelos comparables porque no es un modelo de IA. Los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/shard-case-collision
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/shard-case-collision
 - Proyecto Layerfault (CLI de admisión y seguridad): https://github.com/izm1chael/layerfault
 - Releases del proyecto Layerfault: https://github.com/izm1chael/layerfault/releases

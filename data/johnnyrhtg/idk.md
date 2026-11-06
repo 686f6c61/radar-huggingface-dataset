@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnnyrhtg/idk` es un repositorio publicado en HuggingFace por el usuario `johnnyrhtg`. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: licencia MPL-2.0, etiqueta de region `us`, cero descargas y cero likes. No se ha publicado ni pipeline, ni idiomas soportados, ni arquitectura, ni tamano, ni ventana de contexto.
+`johnnyrhtg/idk` es un repositorio publicado en Hugging Face por el usuario `johnnyrhtg`. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: licencia MPL-2.0, etiqueta de region `us`, cero descargas y cero likes. No se ha publicado ni pipeline, ni idiomas soportados, ni arquitectura, ni tamano, ni ventana de contexto.
 
 La model card del autor no contiene mas que la declaracion de licencia (`license: mpl-2.0`), sin descripcion, sin ficha tecnica, sin instrucciones de uso y sin resultados de evaluacion. Tampoco se ha podido confirmar la existencia de pesos en el repositorio, dado que no se indica formato ni se referencia ningun artefacto.
 
@@ -101,5 +101,5 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnnyrhtg/idk
+- Repositorio en Hugging Face: https://huggingface.co/johnnyrhtg/idk
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos adicionales asociados a este modelo en la informacion disponible.

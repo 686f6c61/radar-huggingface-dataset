@@ -21,7 +21,7 @@ Su relevancia es acotada pero concreta: ilustra el patrón de distribución de m
 | Licencia | no disponible |
 | Formato de pesos | ONNX (`policy.onnx`), acompañado de `manifest.json` y `media/preview.mp4` |
 
-Datos adicionales verificables en la ficha de HuggingFace: pipeline `robotics`, tags `onnx`, `robotics`, `microduck-move`, `region:us`; tamano del repo reportado como 0.0 GB (redondeo, no permite inferir el tamano real del artefacto); creado el 2026-10-27T01:25:06Z y actualizado el 2026-10-27T01:25:10Z.
+Datos adicionales verificables en la ficha de Hugging Face: pipeline `robotics`, tags `onnx`, `robotics`, `microduck-move`, `region:us`; tamano del repo reportado como 0.0 GB (redondeo, no permite inferir el tamano real del artefacto); creado el 2026-10-27T01:25:06Z y actualizado el 2026-10-27T01:25:10Z.
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se dispone de información sobre alternativas comparables. El único conjunto
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-breakdance | no disponible | no aplica | sin benchmarks publicados | no disponible | HuggingFace (0 descargas) |
+| microduck-breakdance | no disponible | no aplica | sin benchmarks publicados | no disponible | Hugging Face (0 descargas) |
 | Otros movimientos `microduck-move` | no disponible | no aplica | no disponible | no disponible | no verificado en la informacion disponible |
 | Políticas de locomoción para robots de bajo coste (categoría genérica) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -87,9 +87,9 @@ No se dispone de información sobre alternativas comparables. El único conjunto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microduckapp/microduck-breakdance
+- Hugging Face: https://huggingface.co/microduckapp/microduck-breakdance
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
 - Repositorio de código: no disponible
-- Demo: `media/preview.mp4` dentro del propio repositorio de HuggingFace
+- Demo: `media/preview.mp4` dentro del propio repositorio de Hugging Face
 - Nota sobre la busqueda web: los resultados devueltos (hilos del foro Digital Spy sobre Strictly Come Dancing, comentaristas deportivos, TalkRadio, consejos y telefonía móvil) no guardan relación con el modelo y no aportan enlaces relevantes.

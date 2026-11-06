@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estandar de SER (IEMOCAP, MELD, etc
 
 | Modelo | Parametros | Tasa de salida | Idiomas de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| student-v3 (este) | 3,18 M (adaptador) | 12,5 Hz | en, zh | Apache-2.0 (datos con RAVDESS NC) | HuggingFace, 0 descargas |
+| student-v3 (este) | 3,18 M (adaptador) | 12,5 Hz | en, zh | Apache-2.0 (datos con RAVDESS NC) | Hugging Face, 0 descargas |
 | emotion2vec_plus_base (profesor) | no disponible | 50 Hz | no disponible | Apache-2.0 | FunASR |
-| student-v2 | 3,18 M (adaptador) | 12,5 Hz | en | Apache-2.0 (datos con RAVDESS NC) | HuggingFace |
-| student-v1 | 3,18 M (adaptador) | 12,5 Hz | en | Apache-2.0 (datos con RAVDESS NC) | HuggingFace |
+| student-v2 | 3,18 M (adaptador) | 12,5 Hz | en | Apache-2.0 (datos con RAVDESS NC) | Hugging Face |
+| student-v1 | 3,18 M (adaptador) | 12,5 Hz | en | Apache-2.0 (datos con RAVDESS NC) | Hugging Face |
 
 No se dispone de datos para comparar con otros modulos SER de conditioning temporal de la misma categoria en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos para comparar con otros modulos SER de conditioning tempo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amir0907/student-v3
+- Modelo en Hugging Face: https://huggingface.co/amir0907/student-v3
 - Version anterior v2: https://huggingface.co/amir0907/student-v2
 - Version anterior v1: https://huggingface.co/amir0907/student
 - Profesor emotion2vec_plus_base (FunASR): no disponible en la informacion proporcionada

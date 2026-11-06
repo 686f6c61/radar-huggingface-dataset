@@ -95,7 +95,7 @@ No se dispone de datos en la información proporcionada sobre otros checkpoints 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-g-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-g-50
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Repositorio de calibración: https://huggingface.co/jayzou3773/less-is-moe-gpqa-main-calibration-64 (revisión `7134dfef5af4605eae0706c30efa9226f49aed96`)
 - Dataset de calibración: https://huggingface.co/datasets/Idavidrein/gpqa (revisión `633f5ee89ab8ad4522a9f850766b73f62147ffdd`)

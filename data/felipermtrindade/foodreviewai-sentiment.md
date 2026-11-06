@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FoodReviewAI-Sentiment es un clasificador binario de sentimiento para resenas de restaurantes en portugues, desarrollado por el usuario de HuggingFace felipermtrindade. No se trata de un modelo de lenguaje neuronal, sino de un pipeline clasico de aprendizaje automatico supervisado construido con scikit-learn: representacion TF-IDF de hasta 10.000 caracteristicas (unigramas y bigramas) alimentando una regresion logistica con ponderacion de clases balanceada. El repositorio ocupa 0,0 GB y contiene los artefactos serializados en formato joblib (`.pkl`), no pesos en safetensors ni GGUF.
+FoodReviewAI-Sentiment es un clasificador binario de sentimiento para resenas de restaurantes en portugues, desarrollado por el usuario de Hugging Face felipermtrindade. No se trata de un modelo de lenguaje neuronal, sino de un pipeline clasico de aprendizaje automatico supervisado construido con scikit-learn: representacion TF-IDF de hasta 10.000 caracteristicas (unigramas y bigramas) alimentando una regresion logistica con ponderacion de clases balanceada. El repositorio ocupa 0,0 GB y contiene los artefactos serializados en formato joblib (`.pkl`), no pesos en safetensors ni GGUF.
 
 El modelo resuelve un problema acotado: dado un texto de resena en portugues, asignar una etiqueta positiva o negativa. Se entreno sobre el dataset StarRest, compuesto por resenas de restaurantes brasilenos, seleccionando 16.293 resenas tras el preprocesado (15.207 positivas y 1.086 negativas). Las etiquetas se derivaron de las puntuaciones de los usuarios (1-2 estrellas como negativo, 4-5 como positivo, excluyendo las de 3 estrellas), lo que condiciona fuertemente su comportamiento.
 
@@ -87,10 +87,10 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FoodReviewAI-Sentiment | TF-IDF + regresion logistica | no disponible | no aplica | pt | no disponible | HuggingFace (.pkl) |
-| BERTimbau (Neuralmind) | Transformer encoder | ~110M (base) | 512 tokens | pt | no disponible en esta ficha | HuggingFace |
-| Albertina PT-BR | Transformer encoder | ~900M (large) | 512 tokens | pt | no disponible en esta ficha | HuggingFace |
-| Otros clasificadores scikit-learn de sentimiento en pt | TF-IDF + lineal | no disponible | no aplica | pt | variable | HuggingFace |
+| FoodReviewAI-Sentiment | TF-IDF + regresion logistica | no disponible | no aplica | pt | no disponible | Hugging Face (.pkl) |
+| BERTimbau (Neuralmind) | Transformer encoder | ~110M (base) | 512 tokens | pt | no disponible en esta ficha | Hugging Face |
+| Albertina PT-BR | Transformer encoder | ~900M (large) | 512 tokens | pt | no disponible en esta ficha | Hugging Face |
+| Otros clasificadores scikit-learn de sentimiento en pt | TF-IDF + lineal | no disponible | no aplica | pt | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada. La comparativa se limita a caracteristicas estructurales; el autor propone explicitamente comparar con modelos BERT portugueses como trabajo futuro.
 
@@ -104,10 +104,10 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 - Licencia no declarada: no hay autorizacion explicita para uso comercial, por lo que debe consultarse al autor antes de emplearlo en produccion.
 - Riesgo de seguridad al cargar el artefacto: los ficheros joblib/pickle pueden ejecutar codigo al deserializarse; solo debe cargarse desde un publicador de confianza, como advierte la propia model card.
 - Sin soporte de contexto largo, tool calling ni capacidades generativas; no es adecuado como sustituto de un LLM.
-- Sin descargas ni likes registrados en HuggingFace en el momento de la consulta, lo que limita la validacion por parte de la comunidad.
+- Sin descargas ni likes registrados en Hugging Face en el momento de la consulta, lo que limita la validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/felipermtrindade/FoodReviewAI-Sentiment
+- Modelo en Hugging Face: https://huggingface.co/felipermtrindade/FoodReviewAI-Sentiment
 - Codigo fuente en GitHub: https://github.com/felipemtrindade/FoodReviewAI
 - Dataset StarRest (Mendeley Data): https://data.mendeley.com/datasets/r5th4s7vpv/2

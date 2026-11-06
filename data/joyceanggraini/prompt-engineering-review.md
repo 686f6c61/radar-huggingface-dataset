@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con LLMs como L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Joyceanggraini/prompt-engineering-review
+- Repositorio en Hugging Face: https://huggingface.co/Joyceanggraini/prompt-engineering-review
 - Guía de *prompt engineering* de promptingguide.ai: https://www.promptingguide.ai/
 - Artículo de revisión en arXiv (PDF): https://files.blogs.baruch.cuny.edu/wp-content/blogs.dir/6573/files/2025/12/Prompt-Engineering-Review.pdf
 - Revisión sistemática sobre *prompt engineering* en ingeniería de software (MDPI): https://www.mdpi.com/2673-2688/6/9/206

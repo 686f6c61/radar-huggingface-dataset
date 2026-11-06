@@ -80,9 +80,9 @@ Dentro de la misma colección, el paper recomienda la configuración r=9cm, L=2 
 
 | Modelo | Framework | Radio espacial | Longitud temporal | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_jepa_r12cm_L16 (este) | JEPA | 12 cm | 16 parches | 12,69 M | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | no disponible | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | no disponible | CC-BY-4.0 | HuggingFace |
+| eeg-fm-masking_jepa_r12cm_L16 (este) | JEPA | 12 cm | 16 parches | 12,69 M | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | no disponible | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | no disponible | CC-BY-4.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r12cm_L16
+- Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r12cm_L16
 - Website del proyecto: https://pierregtch.github.io/eeg-fm-masking
 - Código en GitHub: https://github.com/PierreGtch/eeg-fm-masking
 - Colección completa de 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

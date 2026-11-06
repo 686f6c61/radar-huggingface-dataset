@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (VL
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/rkdals2779/dice_yellow_cloth_red_blue_smolvla
+- Repositorio Hugging Face del modelo: https://huggingface.co/rkdals2779/dice_yellow_cloth_red_blue_smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/rkdals2779/dice_yellow_cloth_red_blue
 - Paper de SmolVLA (arXiv): https://huggingface.co/papers/2506.01844

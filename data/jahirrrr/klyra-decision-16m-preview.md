@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klyra-Decision-16M-Preview es un checkpoint experimental de 16.392.033 parametros publicado en HuggingFace por el usuario Jahirrrr y atribuido en su model card a Polyvor Labs, dentro de una iniciativa de investigacion denominada Klyra. El modelo se presenta explicitamente como una version preliminar ("preview") orientada a investigacion y a la recogida temprana de feedback de la comunidad, y su etiquetado tematico lo situa en el ambito de la toma de decisiones ("decision-making").
+Klyra-Decision-16M-Preview es un checkpoint experimental de 16.392.033 parametros publicado en Hugging Face por el usuario Jahirrrr y atribuido en su model card a Polyvor Labs, dentro de una iniciativa de investigacion denominada Klyra. El modelo se presenta explicitamente como una version preliminar ("preview") orientada a investigacion y a la recogida temprana de feedback de la comunidad, y su etiquetado tematico lo situa en el ambito de la toma de decisiones ("decision-making").
 
 Se trata de un modelo de tamano muy reducido (aproximadamente 16 millones de parametros, con un repositorio de 0,1 GB), lo que lo aleja de los grandes modelos de lenguaje generalistas y lo acerca a la categoria de modelos experimentales ligeros, entrenables y ejecutables en hardware modesto. La informacion publicada no especifica la arquitectura interna, la longitud de contexto, el volumen de datos de entrenamiento ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
@@ -45,7 +45,7 @@ Dado que el autor restringe explicitamente el uso a investigacion y descarta el 
 - Prototipado rapido en entornos sin GPU: al ocupar decenas de megabytes, puede cargarse en CPU o en cualquier portatil para pruebas de integracion de pipelines antes de escalar a modelos mayores.
 - Evaluacion de tecnicas de cuantizacion extrema: su tamano permite experimentar con cuantizaciones de 8, 4 e incluso menos bits y medir la degradacion resultante sin coste computacional apreciable.
 - Pruebas de infraestructura de despliegue: util como modelo de relleno ("dummy") para validar servidores de inferencia (vLLM, TGI, endpoints personalizados) y medir latencias de arranque y throughput sin consumir recursos relevantes.
-- Educacion y docencia: adecuado para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace, desde el entrenamiento hasta la carga con `transformers` o `safetensors`.
+- Educacion y docencia: adecuado para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face, desde el entrenamiento hasta la carga con `transformers` o `safetensors`.
 - Experimentos de ajuste fino de bajo coste: permite validar recetas de fine-tuning, schedulers y configuraciones de hiperparametros en minutos antes de trasladarlas a modelos de mayor tamano.
 
 ## Benchmarks y rendimiento
@@ -87,8 +87,8 @@ No se dispone de resultados de benchmarks del modelo evaluado que permitan una c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Preview
-- Model card del autor: incluida en la pagina de HuggingFace indicada arriba (atribuye el desarrollo a Polyvor Labs)
+- Hugging Face: https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Preview
+- Model card del autor: incluida en la pagina de Hugging Face indicada arriba (atribuye el desarrollo a Polyvor Labs)
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

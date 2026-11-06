@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del modelo fundacional de robótica π₀ (Pi0) de Physical Intelligence, adaptado mediante LoRA para una tarea específica de manipulación: recoger un bloque con un robot móvil manipulador. Ha sido desarrollado por el equipo TeamSOBITS y publicado en HuggingFace bajo licencia Apache 2.0. El modelo se basa en la implementación de LeRobot del repositorio OpenPI de Physical Intelligence.
+Este modelo es un fine-tune del modelo fundacional de robótica π₀ (Pi0) de Physical Intelligence, adaptado mediante LoRA para una tarea específica de manipulación: recoger un bloque con un robot móvil manipulador. Ha sido desarrollado por el equipo TeamSOBITS y publicado en Hugging Face bajo licencia Apache 2.0. El modelo se basa en la implementación de LeRobot del repositorio OpenPI de Physical Intelligence.
 
 La relevancia de este modelo radica en demostrar cómo un modelo Vision-Language-Action (VLA) preentrenado puede adaptarse a una tarea concreta con un número reducido de episodios (332) y un coste computacional moderado (30.000 pasos de entrenamiento). Esto lo convierte en un ejemplo práctico de fine-tune eficiente para robótica, especialmente en entornos domésticos o de laboratorio donde se requiere personalización rápida.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi0 + LoRA) | VLA (pi0_base) | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| `team-sobits/sobit_home_pickup_block_left_abs_pi0_vlmlora` | VLA (pi0_base) | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| `team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-60000` | SmolVLA (compacto) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo (pi0 + LoRA) | VLA (pi0_base) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| `team-sobits/sobit_home_pickup_block_left_abs_pi0_vlmlora` | VLA (pi0_base) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| `team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-60000` | SmolVLA (compacto) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Los tres modelos son fine-tunes de TeamSOBITS para tareas de manipulacion, pero difieren en el modelo base (pi0 vs SmolVLA) y en la tarea especifica. No se dispone de datos de rendimiento comparativo.
 
@@ -75,7 +75,7 @@ Los tres modelos son fine-tunes de TeamSOBITS para tareas de manipulacion, pero 
 - No se han publicado evaluaciones en robot real, por lo que el rendimiento real es desconocido.
 - El modelo depende de las camaras y la configuracion del robot utilizadas durante el entrenamiento; cambios en la iluminacion, posicion de camaras o tipo de robot pueden degradar el rendimiento.
 - Al ser un adaptador LoRA, requiere el modelo base `lerobot/pi0_base` para funcionar, lo que implica una descarga adicional y requisitos de hardware mayores.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base pi0_base tambien cumpla con los requisitos de su licencia original (aunque en HuggingFace aparece como Apache 2.0).
+- La licencia Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base pi0_base tambien cumpla con los requisitos de su licencia original (aunque en Hugging Face aparece como Apache 2.0).
 - No se proporcionan datos sobre sesgos o alucinaciones, pero al ser un modelo de control robotico, el riesgo principal es la ejecucion de acciones incorrectas que puedan causar danos fisicos.
 
 ## Enlaces

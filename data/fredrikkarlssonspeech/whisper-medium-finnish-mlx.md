@@ -31,7 +31,7 @@ El entrenamiento original de Whisper utilizo 680 000 horas de audio etiquetado d
 - Reconocimiento de voz robusto frente a ruido de fondo y variaciones acusticas, gracias al entrenamiento original de Whisper.
 - Procesamiento de audio de hasta 30 segundos por ventana, con manejo de segmentos mas largos mediante ventanas deslizantes.
 - Inferencia local en Apple Silicon (M1, M2, M3 y posteriores) mediante `mlx-whisper`, sin necesidad de GPU dedicada.
-- Compatible con el pipeline `automatic-speech-recognition` de HuggingFace Transformers si se carga el modelo original en PyTorch, aunque esta version MLX esta pensada para el ecosistema MLX.
+- Compatible con el pipeline `automatic-speech-recognition` de Hugging Face Transformers si se carga el modelo original en PyTorch, aunque esta version MLX esta pensada para el ecosistema MLX.
 - No incluye traduccion automatica ni identificacion de idioma en esta conversion especifica (el modelo base finlandes se enfoca en transcripcion).
 - No soporta vision, tool calling ni razonamiento multimodal; es un modelo puramente de ASR.
 
@@ -46,7 +46,7 @@ El entrenamiento original de Whisper utilizo 680 000 horas de audio etiquetado d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo original `Finnish-NLP/whisper-medium-finnish` podria tener metricas en su pagina de HuggingFace, pero no se incluyen en los datos proporcionados. Para una evaluacion objetiva, se recomienda consultar la ficha del modelo base o ejecutar pruebas propias sobre conjuntos de validacion finlandeses como Common Voice fi o Fleurs.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo original `Finnish-NLP/whisper-medium-finnish` podria tener metricas en su pagina de Hugging Face, pero no se incluyen en los datos proporcionados. Para una evaluacion objetiva, se recomienda consultar la ficha del modelo base o ejecutar pruebas propias sobre conjuntos de validacion finlandeses como Common Voice fi o Fleurs.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ La comparativa muestra que esta conversion MLX no anade capacidades nuevas respe
 
 ## Enlaces
 
-- [Modelo MLX en HuggingFace](https://huggingface.co/FredrikKarlssonSpeech/whisper-medium-finnish-mlx)
+- [Modelo MLX en Hugging Face](https://huggingface.co/FredrikKarlssonSpeech/whisper-medium-finnish-mlx)
 - [Modelo base Finnish-NLP/whisper-medium-finnish](https://huggingface.co/Finnish-NLP/whisper-medium-finnish)
 - [Version ONNX del mismo autor](https://huggingface.co/FredrikKarlssonSpeech/whisper-medium-finnish-onnx)
 - [Repositorio mlx-whisper (mlx-examples)](https://github.com/ml-explore/mlx-examples/tree/main/whisper)

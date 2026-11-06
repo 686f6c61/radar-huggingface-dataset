@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Surjo-1.1-50m es un modelo publicado en HuggingFace por la organizacion SurjoLabs bajo el identificador `SurjoLabs/Surjo-1.1-50m`. Se trata de un repositorio de acceso restringido (gated): para descargar los pesos es necesario aceptar previamente las condiciones establecidas por el autor en la plataforma. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 1 like, y ocupa 13,5 GB en disco, un dato que resulta llamativamente elevado para un modelo cuyo nombre sugiere un orden de magnitud de 50 millones de parametros.
+Surjo-1.1-50m es un modelo publicado en Hugging Face por la organizacion SurjoLabs bajo el identificador `SurjoLabs/Surjo-1.1-50m`. Se trata de un repositorio de acceso restringido (gated): para descargar los pesos es necesario aceptar previamente las condiciones establecidas por el autor en la plataforma. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 1 like, y ocupa 13,5 GB en disco, un dato que resulta llamativamente elevado para un modelo cuyo nombre sugiere un orden de magnitud de 50 millones de parametros.
 
 La informacion publica disponible es extremadamente limitada. La model card no declara tarea (pipeline), licencia, idiomas soportados ni arquitectura, y las unicas etiquetas presentes son `safetensors` y `region:us`. No se ha localizado documentacion tecnica, paper, blog de presentacion ni resultados de benchmarks asociados al modelo. La busqueda web realizada no devolvio ningun resultado relacionado con SurjoLabs ni con el modelo, por lo que practicamente todos los campos de esta ficha deben marcarse como "no disponible".
 
@@ -18,7 +18,7 @@ Por todo ello, esta ficha debe leerse como un inventario de lo que se puede veri
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo declara el formato `safetensors`; no se anuncian variantes GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (acceso restringido: requiere aceptar condiciones en HuggingFace) |
+| Licencia | no disponible (acceso restringido: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors (unico formato declarado en las etiquetas del repositorio) |
 | Tamano del repositorio | 13,5 GB |
 | Acceso | restringido (gated) |
@@ -73,7 +73,7 @@ No es posible establecer una comparativa rigurosa, porque se desconocen los para
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
 | SurjoLabs/Surjo-1.1-50m | no disponible (nombre sugiere ~50 M) | no disponible | no disponible | gated, requiere aceptar condiciones | no disponible |
-| SmolLM-135M (HuggingFace) | ~135 M | 2.048 tokens | Apache-2.0 | publica | benchmarks publicados por el autor |
+| SmolLM-135M (Hugging Face) | ~135 M | 2.048 tokens | Apache-2.0 | publica | benchmarks publicados por el autor |
 | Qwen2.5-0.5B (Alibaba) | ~0,5 B | 32.768 tokens | Apache-2.0 | publica | benchmarks publicados por el autor |
 | GPT-2 (OpenAI) | 124 M | 1.024 tokens | MIT | publica | benchmarks historicos publicados |
 
@@ -86,7 +86,7 @@ La comparacion directa carece de sentido sin conocer primero la arquitectura y e
 - Sesgos conocidos: no disponibles; sin informacion sobre el corpus de entrenamiento no es posible estimarlos.
 - Limitaciones de contexto e idioma: no disponibles.
 - Restricciones de licencia: la licencia no esta declarada y el acceso es restringido, por lo que no se puede asumir uso comercial. Es imprescindible revisar las condiciones del repositorio y contactar con el autor antes de cualquier uso en produccion.
-- Acceso gated: la descarga exige aceptar condiciones en HuggingFace, lo que anade friccion a la integracion automatizada en CI/CD.
+- Acceso gated: la descarga exige aceptar condiciones en Hugging Face, lo que anade friccion a la integracion automatizada en CI/CD.
 - Inconsistencia de tamano: 13,5 GB de repositorio frente a un nombre que sugiere ~50 millones de parametros. Conviene verificar el contenido real antes de planificar recursos.
 - Fechas de metadatos anomales (creacion y actualizacion en septiembre de 2026), lo que sugiere un error en los campos proporcionados o un repositorio reciente y no consolidado.
 - Trazabilidad nula: 0 descargas y 1 like significan que no existe una comunidad que haya validado el modelo ni reportado problemas.
@@ -94,7 +94,7 @@ La comparacion directa carece de sentido sin conocer primero la arquitectura y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SurjoLabs/Surjo-1.1-50m
-- Pagina del autor en HuggingFace: https://huggingface.co/SurjoLabs
+- Modelo en Hugging Face: https://huggingface.co/SurjoLabs/Surjo-1.1-50m
+- Pagina del autor en Hugging Face: https://huggingface.co/SurjoLabs
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de la busqueda web: no se encontro ningun enlace relevante al modelo ni a la organizacion SurjoLabs; los resultados devueltos correspondian a noticias sin relacion con el ambito de la inteligencia artificial.

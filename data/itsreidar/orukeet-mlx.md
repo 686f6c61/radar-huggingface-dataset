@@ -84,7 +84,7 @@ Nota: no se dispone en la información proporcionada de cifras de WER comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta conversión): https://huggingface.co/itsreidar/orukeet-mlx
+- Modelo en Hugging Face (esta conversión): https://huggingface.co/itsreidar/orukeet-mlx
 - Modelo original: https://huggingface.co/oruk/orukeet
 - Repositorio GitHub de Oruk AI: https://github.com/Oruk-AI/orukeet
 - Model card original en GitHub: https://github.com/Oruk-AI/orukeet/blob/main/MODEL_CARD.md

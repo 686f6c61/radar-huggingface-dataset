@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea-2-Pixel-Art es un adaptador LoRA de generación de imágenes texto-a-imagen publicado por el usuario e-n-v-y en HuggingFace. Está entrenado sobre el modelo base krea/Krea-2-Raw y su función es producir *pixel art* en tres resoluciones nativas distintas: 32x32, 64x64 y 128x128. El repositorio ocupa 0,2 GB y se distribuye bajo licencia MIT, con la librería diffusers como formato de carga declarado.
+Krea-2-Pixel-Art es un adaptador LoRA de generación de imágenes texto-a-imagen publicado por el usuario e-n-v-y en Hugging Face. Está entrenado sobre el modelo base krea/Krea-2-Raw y su función es producir *pixel art* en tres resoluciones nativas distintas: 32x32, 64x64 y 128x128. El repositorio ocupa 0,2 GB y se distribuye bajo licencia MIT, con la librería diffusers como formato de carga declarado.
 
 Se trata, por tanto, de un adaptador de bajo rango y no de un modelo de lenguaje: no genera texto, no tiene ventana de contexto ni parámetros activos, y su comportamiento depende enteramente del modelo base sobre el que se aplique. La ficha que sigue traduce las categorías habituales de especificaciones de modelos generativos a las que realmente aplican a un LoRA de difusión, marcando como no disponible todo aquello que el autor no documenta.
 
@@ -94,7 +94,7 @@ No se dispone de información sobre adaptadores comparables (otros LoRA de pixel
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/e-n-v-y/Krea-2-Pixel-Art
+- Página del modelo en Hugging Face: https://huggingface.co/e-n-v-y/Krea-2-Pixel-Art
 - Archivos y versiones: https://huggingface.co/e-n-v-y/Krea-2-Pixel-Art/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Nodo de post-procesado recomendado por el autor: https://github.com/envy-ai/ComfyUI-Krea2-Pixel-Art-Refiner

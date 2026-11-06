@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kunalchandra18/cs779-nmt-en-indic
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/kunalchandra18/english-to-indic-translator
+- Modelo en Hugging Face: https://huggingface.co/kunalchandra18/cs779-nmt-en-indic
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/kunalchandra18/english-to-indic-translator
 - Repositorio de código: https://github.com/kunalchandra18/Neural-English-to-Indic-Machine-Translator

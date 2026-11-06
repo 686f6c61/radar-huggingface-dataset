@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indic Whisper Hi Multi GPU Indic Voices es un modelo de reconocimiento automatico del habla (ASR) derivado de Whisper, especializado en hindi y en habla con mezcla de idiomas hindi-ingles (hinglish). Lo desarrolla el usuario de HuggingFace dianavdavidson como un fine-tuning del modelo parthiv11/indic_whisper_hi_multi_gpu, que a su vez parte de la familia Whisper de OpenAI. El modelo resuelve el problema de transcribir audio en un dominio linguistico concreto: el hindi hablado con inserciones de palabras en ingles y cambios de escritura (mixed scripts), un fenomeno muy comun en la India urbana y en contenido audiovisual.
+Indic Whisper Hi Multi GPU Indic Voices es un modelo de reconocimiento automatico del habla (ASR) derivado de Whisper, especializado en hindi y en habla con mezcla de idiomas hindi-ingles (hinglish). Lo desarrolla el usuario de Hugging Face dianavdavidson como un fine-tuning del modelo parthiv11/indic_whisper_hi_multi_gpu, que a su vez parte de la familia Whisper de OpenAI. El modelo resuelve el problema de transcribir audio en un dominio linguistico concreto: el hindi hablado con inserciones de palabras en ingles y cambios de escritura (mixed scripts), un fenomeno muy comun en la India urbana y en contenido audiovisual.
 
 Tecnicamente es un transformer encoder-decoder de tipo Whisper con 763.857.920 parametros (unos 764 millones), lo que corresponde a la variante "small" de Whisper (12 capas encoder, 12 capas decoder, 12 cabezas de atencion, dimension 768). Se ha entrenado durante 7 epocas registradas con un learning rate de 1e-4, batch efectivo de 32 y optimizador AdamW fused, alcanzando un WER global de 26,56 por ciento en el conjunto de evaluacion.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizo con los siguientes hiperparametros: learning rate 1e
 - Transcripcion de voz a texto (ASR) en hindi e ingles, con soporte declarado para habla code-switched hinglish.
 - Manejo de audio con cambios de escritura (mixed scripts), es decir, texto que combina devanagari y alfabeto latino.
 - Inferencia compatible con la pipeline `automatic-speech-recognition` de transformers.
-- Integracion con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Integracion con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de traduccion, diarizacion, timestamps por palabra, tool calling ni capacidades de agente.
 - No se documenta modo thinking, vision ni audio multimodal mas alla del ASR.
 
@@ -74,17 +74,17 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - VRAM en fp16/bf16: aproximadamente 1,5-2 GB para pesos, con un total estimado de 2-4 GB.
 - Cabe en GPU consumer: si, en RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4090 y similares; tambien en GPUs con 4-6 GB si se usa fp16.
 - GPU recomendadas para produccion: A10G, L4, A100 o H100 para lotes grandes y alto throughput; una T4 de 16 GB es suficiente para inferencia en fp16.
-- Opciones de despliegue: transformers con pipeline `automatic-speech-recognition`, HuggingFace Inference Endpoints, vLLM (soporte ASR segun version), TGI (soporte Whisper segun version), y conversion a CTranslate2/faster-whisper para CPU (requiere conversion manual, no se documenta en el repo).
+- Opciones de despliegue: transformers con pipeline `automatic-speech-recognition`, Hugging Face Inference Endpoints, vLLM (soporte ASR segun version), TGI (soporte Whisper segun version), y conversion a CTranslate2/faster-whisper para CPU (requiere conversion manual, no se documenta en el repo).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Indic Whisper Hi FT) | 764 M | ventanas de 30 s | hindi, ingles (hinglish) | MIT | HuggingFace |
-| openai/whisper-small | 244 M | ventanas de 30 s | 99 idiomas | MIT | HuggingFace, ampliamente soportado |
-| parthiv11/indic_whisper_hi_multi_gpu (base) | no disponible | ventanas de 30 s | indic | no disponible | HuggingFace |
-| ai4bharat/indicwav2vec-hindi | no disponible | no disponible | hindi | no disponible | HuggingFace |
+| Este modelo (Indic Whisper Hi FT) | 764 M | ventanas de 30 s | hindi, ingles (hinglish) | MIT | Hugging Face |
+| openai/whisper-small | 244 M | ventanas de 30 s | 99 idiomas | MIT | Hugging Face, ampliamente soportado |
+| parthiv11/indic_whisper_hi_multi_gpu (base) | no disponible | ventanas de 30 s | indic | no disponible | Hugging Face |
+| ai4bharat/indicwav2vec-hindi | no disponible | no disponible | hindi | no disponible | Hugging Face |
 
 Nota: la comparacion de rendimiento con estos modelos no esta disponible en la informacion proporcionada; solo se dispone del WER declarado por el autor (26,56 por ciento) para este checkpoint.
 
@@ -101,7 +101,7 @@ Nota: la comparacion de rendimiento con estos modelos no esta disponible en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_indic_voices_67808_15_100_1e-4_None_hinglish_mixed_scripts_FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_indic_voices_67808_15_100_1e-4_None_hinglish_mixed_scripts_FT
 - Modelo base: https://huggingface.co/parthiv11/indic_whisper_hi_multi_gpu
 - Repositorio Whisper de OpenAI: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

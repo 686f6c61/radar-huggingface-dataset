@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Andersonjayden/vit-classification-study",
+  "slug": "andersonjayden-vit-classification-study",
+  "author": "Andersonjayden",
+  "url": "https://huggingface.co/Andersonjayden/vit-classification-study",
+  "created_at": "2026-11-06T10:33:51.000Z",
+  "updated_at": "2026-11-06T10:33:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image Classification with Vision Transformer | Towards Data Science",
+      "url": "https://towardsdatascience.com/image-classification-with-vision-transformer-8bfde8e541d4/",
+      "snippet": "How to classify images with the help of Transformer-based model"
+    }
+  ]
+}

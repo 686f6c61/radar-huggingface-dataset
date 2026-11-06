@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo. La diferencia principal radic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-8B-FP8
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-8B-FP8
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3-8B-FP8
 - Documentacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guia de tool calling en Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html

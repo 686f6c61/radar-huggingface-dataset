@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen35-twi-va-4-full-GGUF es un ajuste fino (fine-tune) del modelo base Qwen3.5, publicado por el usuario prince4332 en HuggingFace y distribuido exclusivamente en formato GGUF para su uso con llama.cpp. El repositorio contiene un unico archivo de pesos, `qwen35-twi-va-4-full.Q3_K_M.gguf`, de aproximadamente 1,1 GB, lo que situa al modelo en la categoria de pequenos modelos densos aptos para inferencia en CPU y GPU de gama de consumo. El autor indica que el ajuste y la conversion a GGUF se realizaron con la libreria Unsloth.
+qwen35-twi-va-4-full-GGUF es un ajuste fino (fine-tune) del modelo base Qwen3.5, publicado por el usuario prince4332 en Hugging Face y distribuido exclusivamente en formato GGUF para su uso con llama.cpp. El repositorio contiene un unico archivo de pesos, `qwen35-twi-va-4-full.Q3_K_M.gguf`, de aproximadamente 1,1 GB, lo que situa al modelo en la categoria de pequenos modelos densos aptos para inferencia en CPU y GPU de gama de consumo. El autor indica que el ajuste y la conversion a GGUF se realizaron con la libreria Unsloth.
 
 Segun los metadatos reales de safetensors asociados al repositorio, el modelo tiene 1.891.655.488 parametros (unos 1,89 mil millones). El nombre del repositorio incluye el sufijo "4", que sugiere una variante de 4B de la familia Qwen3.5, pero el recuento de parametros disponible no coincide con ese tamano, por lo que no es posible confirmar a que variante exacta corresponde sin informacion adicional del autor.
 
@@ -23,7 +23,7 @@ El modelo es relevante como ejemplo de la ola de derivados comunitarios de Qwen3
 | Tamano del repositorio | 1,1 GB |
 | Ficheros de pesos | 1 (`qwen35-twi-va-4-full.Q3_K_M.gguf`) |
 | Pipeline | no disponible |
-| Fecha de creacion | 2026-09-23 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-23 (segun metadatos de Hugging Face) |
 | Descargas / likes | 42 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -42,7 +42,7 @@ Sobre el entrenamiento, la unica informacion disponible es que el ajuste y la co
 - Capacidades multilingues: no disponible; no se declara lista de idiomas soportados.
 - Posible capacidad de vision: no confirmada. La model card menciona el comando `llama-mtmd-cli` para modelos multimodales, pero no afirma que este ajuste lo sea.
 - Modo "thinking" o razonamiento extendido: no disponible (no se documenta).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse en infraestructura de endpoints compatible con HuggingFace, aunque no se detallan los requisitos.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse en infraestructura de endpoints compatible con Hugging Face, aunque no se detallan los requisitos.
 
 ## Casos de uso
 
@@ -93,10 +93,10 @@ Los datos de las filas comparativas corresponden a informacion publica general d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prince4332/qwen35-twi-va-4-full-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prince4332/qwen35-twi-va-4-full-GGUF
 - Unsloth (libreria usada para el ajuste y la conversion): https://github.com/unslothai/unsloth
-- Coleccion oficial Qwen3.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen35
+- Coleccion oficial Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Repositorio GitHub de la serie Qwen (Qwen3.5 / 3.6 / 3.8): https://github.com/QwenLM/Qwen3.8
 - Repositorio GitHub alternativo sobre Qwen3.5: https://github.com/ABDtmx/Qwen3.5
-- Coleccion de derivados de Qwen3.5 en HuggingFace (DavidAU): https://huggingface.co/collections/DavidAU/qwen-35-08-2-4-9-27-35b-regular-uncensored
+- Coleccion de derivados de Qwen3.5 en Hugging Face (DavidAU): https://huggingface.co/collections/DavidAU/qwen-35-08-2-4-9-27-35b-regular-uncensored
 - Ficha de Qwen3.5 en local-ai-zone: https://local-ai-zone.github.io/models/qwen35.html

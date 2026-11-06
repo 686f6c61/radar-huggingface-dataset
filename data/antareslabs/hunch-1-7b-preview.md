@@ -111,7 +111,7 @@ Lectura de la comparativa: Hunch 1.7B Preview va por delante de `Mapika/decider-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/antareslabs/hunch-1.7b-preview
+- Modelo en Hugging Face: https://huggingface.co/antareslabs/hunch-1.7b-preview
 - Informe técnico "Hunch: Open-Weight Decision Scorers": https://antareslabs.org/hunch/hunch-technical-report.pdf
 - Repositorio del proyecto: https://github.com/antareslabsorg/hunch/blob/main/README.md
 - Benchmarks: https://github.com/antareslabsorg/hunch/blob/main/BENCHMARKS.md

@@ -34,7 +34,7 @@ No se dispone de información sobre el proceso de entrenamiento del modelo base 
 - Generación de texto en inglés con estilo conversacional.
 - Soporte de instrucciones (instruction-tuned) gracias al modelo base `it` de Google.
 - Comportamiento sin rechazos: el modelo responde a peticiones que el modelo original podría rechazar por políticas de seguridad.
-- Compatible con pipelines de generación de texto de HuggingFace y con servidores de inferencia como `llama.cpp` (llama-server).
+- Compatible con pipelines de generación de texto de Hugging Face y con servidores de inferencia como `llama.cpp` (llama-server).
 - Cuantizaciones GGUF listas para usar en entornos locales.
 
 No se mencionan capacidades adicionales como tool calling, agentes, visión o audio en la documentación disponible.
@@ -81,7 +81,7 @@ La comparativa se limita al mismo modelo en diferentes formatos, ya que no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Ishowbackup/gemma-4-26B-A4B-it-uncensored-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Ishowbackup/gemma-4-26B-A4B-it-uncensored-GGUF
 - Modelo base bf16 (TrevorJS): https://huggingface.co/TrevorJS/gemma-4-26B-A4B-it-uncensored
 - Modelo original de Google: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Código fuente del proceso de abliteración: https://github.com/TrevorS/gemma-4-abliteration

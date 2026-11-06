@@ -75,4 +75,4 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Legend7001/ec-cnn-scratch
+- Hugging Face: https://huggingface.co/Legend7001/ec-cnn-scratch

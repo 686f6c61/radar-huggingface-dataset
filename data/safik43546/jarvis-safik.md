@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `safik43546/jarvis-safik` es un modelo publicado en HuggingFace por el usuario `safik43546`. La model card disponible no contiene información técnica alguna: únicamente indica la licencia MIT y no incluye descripción del modelo, arquitectura, parámetros, contexto ni capacidades. El repositorio no registra descargas ni likes, lo que sugiere que se trata de un modelo recién creado o un placeholder.
+El modelo `safik43546/jarvis-safik` es un modelo publicado en Hugging Face por el usuario `safik43546`. La model card disponible no contiene información técnica alguna: únicamente indica la licencia MIT y no incluye descripción del modelo, arquitectura, parámetros, contexto ni capacidades. El repositorio no registra descargas ni likes, lo que sugiere que se trata de un modelo recién creado o un placeholder.
 
 No se ha podido encontrar documentación adicional en la búsqueda web. Los resultados obtenidos corresponden a otros proyectos con el nombre JARVIS, como el sistema de Microsoft para conectar LLMs con modelos de ML y una aplicación de asistente de voz para escritorio, que no están relacionados con este repositorio. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante.
 
@@ -53,5 +53,5 @@ No disponible. Sin información sobre la arquitectura, el tamaño o las capacida
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/safik43546/jarvis-safik
+- Hugging Face: https://huggingface.co/safik43546/jarvis-safik
 - Nota: los resultados de búsqueda web encontrados (Skroutz.gr, Microsoft JARVIS, JarvisApp) no corresponden a este modelo.

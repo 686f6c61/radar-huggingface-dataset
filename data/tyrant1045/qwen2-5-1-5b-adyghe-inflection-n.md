@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tyrant1045/qwen2.5-1.5b-adyghe-inflection-N | 1,5 B (base) + adaptador LoRA | no disponible | Flexion en adigué | cc-by-sa-3.0 | HuggingFace |
-| unsloth/Qwen2.5-1.5B-Instruct (base) | 1,5 B | no disponible | Instrucciones generales | no disponible en la informacion proporcionada | HuggingFace |
+| tyrant1045/qwen2.5-1.5b-adyghe-inflection-N | 1,5 B (base) + adaptador LoRA | no disponible | Flexion en adigué | cc-by-sa-3.0 | Hugging Face |
+| unsloth/Qwen2.5-1.5B-Instruct (base) | 1,5 B | no disponible | Instrucciones generales | no disponible en la informacion proporcionada | Hugging Face |
 | Adaptadores de flexion para otras lenguas de bajos recursos | no disponible | no disponible | Flexion morfologica | variable | no disponible |
 
 No se dispone de datos de benchmarks comparables con otros adaptadores de flexion en adigué en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks comparables con otros adaptadores de flexio
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/tyrant1045/qwen2.5-1.5b-adyghe-inflection-N
+- Hugging Face del adaptador: https://huggingface.co/tyrant1045/qwen2.5-1.5b-adyghe-inflection-N
 - Dataset de entrenamiento: https://huggingface.co/datasets/tyrant1045/adyghe-inflection-unimorph
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Repositorio del proyecto con resultados, curva y transcripciones del juez: no disponible en la informacion proporcionada.

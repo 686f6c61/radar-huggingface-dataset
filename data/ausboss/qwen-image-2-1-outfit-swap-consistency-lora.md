@@ -93,11 +93,11 @@ Efecto de anadir una frase final al prompt (paso 1000, una semilla):
 
 | Modelo | Tipo | Tarea | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ausboss/Qwen-Image-2.1-Outfit-Swap-Consistency-LoRA | LoRA de rango 32 | Cambio de ropa con consistencia | Qwen-Image-2.1 | qwen-research-license | HuggingFace y Civitai |
-| ausboss/Qwen-Image-2.1-Consistency-LoRA | LoRA | Consistencia general de ediciones (restilizado, iluminacion, fondos, ropa) | Qwen-Image-2.1 | no disponible | HuggingFace |
-| Alissonerdx/BFS-Best-Face-Swap | Adaptador | Intercambio de rostros | Qwen-Image-2.1 | no disponible | HuggingFace |
-| lilylilith/QI_2.1_AnyAngle | Adaptador | Edicion con control de angulo | Qwen-Image-2.1 | no disponible | HuggingFace |
-| Viggle/Qwen-Image-2.1-viggle-turbo | Adaptador | Aceleracion de inferencia | Qwen-Image-2.1 | no disponible | HuggingFace |
+| ausboss/Qwen-Image-2.1-Outfit-Swap-Consistency-LoRA | LoRA de rango 32 | Cambio de ropa con consistencia | Qwen-Image-2.1 | qwen-research-license | Hugging Face y Civitai |
+| ausboss/Qwen-Image-2.1-Consistency-LoRA | LoRA | Consistencia general de ediciones (restilizado, iluminacion, fondos, ropa) | Qwen-Image-2.1 | no disponible | Hugging Face |
+| Alissonerdx/BFS-Best-Face-Swap | Adaptador | Intercambio de rostros | Qwen-Image-2.1 | no disponible | Hugging Face |
+| lilylilith/QI_2.1_AnyAngle | Adaptador | Edicion con control de angulo | Qwen-Image-2.1 | no disponible | Hugging Face |
+| Viggle/Qwen-Image-2.1-viggle-turbo | Adaptador | Aceleracion de inferencia | Qwen-Image-2.1 | no disponible | Hugging Face |
 
 Los datos de parametros, contexto y rendimiento de los modelos comparados no estan disponibles en la informacion proporcionada; la comparacion se limita al tipo de adaptador, la tarea y la licencia.
 
@@ -114,13 +114,13 @@ Los datos de parametros, contexto y rendimiento de los modelos comparados no est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ausboss/Qwen-Image-2.1-Outfit-Swap-Consistency-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ausboss/Qwen-Image-2.1-Outfit-Swap-Consistency-LoRA
 - Modelo base Qwen/Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Pagina del LoRA en Civitai: https://civitai.com/models/2983159/qwen-image-21-outfit-swap-consistency-lora
 - Workflow de Outfit Swap en Civitai: https://civitai.com/models/2983126
 - LoRA de consistencia general del mismo autor: https://huggingface.co/ausboss/Qwen-Image-2.1-Consistency-LoRA
 - Listado de adaptadores para Qwen/Qwen-Image-2.1: https://huggingface.co/models?other=base_model:adapter:Qwen/Qwen-Image-2.1
-- Listado de modelos image-to-image en HuggingFace: https://huggingface.co/models?pipeline_tag=image-to-image
+- Listado de modelos image-to-image en Hugging Face: https://huggingface.co/models?pipeline_tag=image-to-image
 - Listado de modelos con etiqueta lora: https://huggingface.co/models?other=lora
 - Workflow de ComfyUI incluido en el repositorio: workflows/qwen-image-2.1-outfit-swap.json
 - Demo en video: https://huggingface.co/ausboss/Qwen-Image-2.1-Outfit-Swap-Consistency-LoRA/resolve/main/outfit_swap_demo.mp4

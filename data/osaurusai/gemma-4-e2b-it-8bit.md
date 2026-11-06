@@ -49,7 +49,7 @@ No se menciona soporte explicito de tool calling o function calling en la inform
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar. Se recomienda consultar la ficha del modelo base `google/gemma-4-E2B-it` en HuggingFace para obtener datos de rendimiento del modelo original sin cuantizar.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar. Se recomienda consultar la ficha del modelo base `google/gemma-4-E2B-it` en Hugging Face para obtener datos de rendimiento del modelo original sin cuantizar.
 
 ## Requisitos de hardware
 
@@ -82,10 +82,10 @@ La diferencia principal entre las dos conversiones de 8 bits es que Osaurus AI v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/gemma-4-E2B-it-8bit
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/gemma-4-E2B-it-8bit
 - Modelo base original: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Web de Osaurus AI: https://osaurus.ai
-- Repositorio de Osaurus AI en HuggingFace: https://huggingface.co/OsaurusAI
+- Repositorio de Osaurus AI en Hugging Face: https://huggingface.co/OsaurusAI
 - Conversion similar (DreamFoundries): https://huggingface.co/DreamFoundries/gemma-4-E2B-it-8bit
 - Guia de Gemma 4 E2B (gemma4.dev): https://gemma4.dev/models/gemma-4-e2b

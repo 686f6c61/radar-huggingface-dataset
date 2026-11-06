@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `open-sci-ref-1.7b-nemotron-hq-100B-4096-longsft_16k-ot30k` es un checkpoint de ajuste supervisado (SFT) publicado por la organizacion `open-sci` en HuggingFace. Se trata de un modelo de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) derivado de la familia Nemotron, segun sugiere el nombre del repositorio, y entrenado con el framework LLaMA-Factory en modo `full` (ajuste completo de parametros, no LoRA). El identificador del repositorio indica ademas una longitud de contexto de trabajo de 4096 tokens y un entrenamiento sobre 30.000 muestras del dataset Open Thoughts.
+El modelo `open-sci-ref-1.7b-nemotron-hq-100B-4096-longsft_16k-ot30k` es un checkpoint de ajuste supervisado (SFT) publicado por la organizacion `open-sci` en Hugging Face. Se trata de un modelo de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) derivado de la familia Nemotron, segun sugiere el nombre del repositorio, y entrenado con el framework LLaMA-Factory en modo `full` (ajuste completo de parametros, no LoRA). El identificador del repositorio indica ademas una longitud de contexto de trabajo de 4096 tokens y un entrenamiento sobre 30.000 muestras del dataset Open Thoughts.
 
-El modelo se publica con la pipeline `feature-extraction` y la etiqueta `custom_code`, lo que implica que requiere codigo personalizado para cargarse con Transformers. Su relevancia es fundamentalmente experimental: forma parte de un linaje de checkpoints de referencia (`open-sci-ref`) orientados a reproducir y comparar recetas de entrenamiento, no a un uso comercial directo. La model card es la generada automaticamente por el Trainer de HuggingFace y no incluye descripcion funcional, casos de uso previstos ni evaluacion.
+El modelo se publica con la pipeline `feature-extraction` y la etiqueta `custom_code`, lo que implica que requiere codigo personalizado para cargarse con Transformers. Su relevancia es fundamentalmente experimental: forma parte de un linaje de checkpoints de referencia (`open-sci-ref`) orientados a reproducir y comparar recetas de entrenamiento, no a un uso comercial directo. La model card es la generada automaticamente por el Trainer de Hugging Face y no incluye descripcion funcional, casos de uso previstos ni evaluacion.
 
 La informacion disponible es muy limitada: no hay resultados de benchmarks, no se declaran idiomas soportados, la licencia es `other` sin texto asociado y el repositorio acumula 17 descargas y 0 likes en el momento de la consulta. Cualquier evaluacion de capacidades debe por tanto considerarse provisional.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-1.7b-nemotron-hq (este) | 1,7 B | 4096 (segun repo) | other | HuggingFace, 17 descargas | Checkpoint SFT experimental, sin benchmarks |
+| open-sci-ref-1.7b-nemotron-hq (este) | 1,7 B | 4096 (segun repo) | other | Hugging Face, 17 descargas | Checkpoint SFT experimental, sin benchmarks |
 | Alternativas de ~1,7 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con modelos alternativos de la misma categoria.
@@ -86,5 +86,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-1.7b-nemotron-hq-100B-4096-longsft_16k-ot30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-1.7b-nemotron-hq-100B-4096-longsft_16k-ot30k
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados obtenidos corresponden a OpenAI, Apache OpenOffice, Open y Open Library, sin relacion con este checkpoint).

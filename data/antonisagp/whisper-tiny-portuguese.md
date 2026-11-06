@@ -71,10 +71,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | WER (dataset) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper Tiny Portuguese English | 37,76 M | audio 30 s | 11,9292 (naharte/portuguese_english, test) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny (base) | 37,76 M | audio 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | audio 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | audio 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| Whisper Tiny Portuguese English | 37,76 M | audio 30 s | 11,9292 (naharte/portuguese_english, test) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny (base) | 37,76 M | audio 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | audio 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | audio 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos de los modelos alternativos sobre el mismo dataset en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks comparativos de los modelos alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AntonisAgp/whisper-tiny-portuguese
+- Modelo en Hugging Face: https://huggingface.co/AntonisAgp/whisper-tiny-portuguese
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/portuguese_english
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChudGPT-Femboy es un modelo de lenguaje experimental de escala muy reducida (del orden de 30-33 millones de parametros) publicado por el desarrollador independiente Astra228 (ASTRA228b) en HuggingFace. Se trata de un checkpoint de desarrollo identificado por el propio autor como «V16 personality step 500», entrenado desde cero con una implementacion propia en PyTorch y un tokenizador BPE original, sin reutilizar pesos de otros modelos. Forma parte del ecosistema ChudGPT, una familia de modelos pequenos mantenidos por el mismo autor.
+ChudGPT-Femboy es un modelo de lenguaje experimental de escala muy reducida (del orden de 30-33 millones de parametros) publicado por el desarrollador independiente Astra228 (ASTRA228b) en Hugging Face. Se trata de un checkpoint de desarrollo identificado por el propio autor como «V16 personality step 500», entrenado desde cero con una implementacion propia en PyTorch y un tokenizador BPE original, sin reutilizar pesos de otros modelos. Forma parte del ecosistema ChudGPT, una familia de modelos pequenos mantenidos por el mismo autor.
 
 El objetivo declarado no es competir en capacidades generales, sino reproducir una voz conversacional concreta: un personaje ficticio de estilo «catboy/femboy» jugueton, con maullidos y role-play expresivo. El modelo se distribuye como descarga con codigo Python local (no usa `transformers.AutoModel` ni proveedores de inferencia), lo que lo convierte en una pieza de experimentacion sobre arquitecturas y tokenizadores propios mas que en una herramienta de produccion.
 
@@ -82,8 +82,8 @@ Los datos disponibles solo permiten comparar con otro modelo de la misma familia
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ChudGPT-Femboy | 32.843.136 (safetensors) / 29.697.408 (model card) | No disponible | No disponible (sin concesion explicita) | safetensors + codigo Python propio | HuggingFace, 0 descargas, 0 likes |
-| ChudGPT-Public V20 | 20.999.184 | No disponible | No disponible en esta ficha | Distribuido como modelo HuggingFace autocontenido | HuggingFace / GitHub del autor |
+| ChudGPT-Femboy | 32.843.136 (safetensors) / 29.697.408 (model card) | No disponible | No disponible (sin concesion explicita) | safetensors + codigo Python propio | Hugging Face, 0 descargas, 0 likes |
+| ChudGPT-Public V20 | 20.999.184 | No disponible | No disponible en esta ficha | Distribuido como modelo Hugging Face autocontenido | Hugging Face / GitHub del autor |
 | Otros modelos pequenos de la misma escala (por ejemplo, GPT-2 small o SmolLM-135M) | No verificado en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 Diferencias cualitativas observadas: ChudGPT-Femboy se posiciona como paso de personalidad de un proyecto con multiples checkpoints (Public, Pro, Plus, Code, Ultimate, Buggy, Mega), mientras que ChudGPT-Public V20 se describe como un transformer conversacional de clase 21 M. El autor indica que los checkpoints no se comparten entre submodelos.
@@ -105,8 +105,8 @@ Diferencias cualitativas observadas: ChudGPT-Femboy se posiciona como paso de pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Astra228/ChudGPT-Femboy
-- Perfil del autor en HuggingFace: https://huggingface.co/Astra228
+- Modelo en Hugging Face: https://huggingface.co/Astra228/ChudGPT-Femboy
+- Perfil del autor en Hugging Face: https://huggingface.co/Astra228
 - Web del proyecto ChudGPT: https://chudgpt-landing.vercel.app/
 - Guia de modelos ChudGPT: https://chudgpt-landing.vercel.app/model-guide
 - Pagina del autor (Astra / ASTRA228b): https://chudgpt-landing.vercel.app/astra

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`seedream55ai/seedream55ai-docs` es un repositorio publicado en HuggingFace por el usuario `seedream55ai` bajo licencia MIT. La información disponible en la model card es prácticamente inexistente: se reduce a la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y no consta pipeline asociado ni idiomas declarados.
+`seedream55ai/seedream55ai-docs` es un repositorio publicado en Hugging Face por el usuario `seedream55ai` bajo licencia MIT. La información disponible en la model card es prácticamente inexistente: se reduce a la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y no consta pipeline asociado ni idiomas declarados.
 
 Por el nombre del repositorio y la ausencia de pesos o configuración descritos, no es posible confirmar que se trate de un modelo de lenguaje con pesos publicados; podría tratarse de un repositorio de documentación (el sufijo `-docs` así lo sugiere) o de un placeholder. No hay evidencia de arquitectura transformer, MoE, SSM ni de ningún otro paradigma, ni tampoco de tamaño de parámetros o longitud de contexto.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: número de tokens, composic
 ## Casos de uso
 
 - No es posible recomendar casos de uso concretos sin información verificable sobre arquitectura, tamaño, contexto o capacidades del modelo.
-- Evaluación de repositorios de documentación: si el repositorio contiene únicamente documentación (como sugiere el sufijo `-docs`), podría emplearse como referencia para estudiar convenciones de publicación en HuggingFace, pero no como modelo desplegable.
+- Evaluación de repositorios de documentación: si el repositorio contiene únicamente documentación (como sugiere el sufijo `-docs`), podría emplearse como referencia para estudiar convenciones de publicación en Hugging Face, pero no como modelo desplegable.
 - Integración en pipelines de CI/CD: descartable sin conocer formato de pesos, tokenizador y API de inferencia.
 - Atención al cliente automatizada: descartable sin datos de contexto, idiomas y calidad de generación.
 - Generación de código en producción: descartable sin benchmarks ni soporte de tool calling documentado.
@@ -73,5 +73,5 @@ No disponible. Sin datos de arquitectura, tamaño, contexto ni rendimiento, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/seedream55ai/seedream55ai-docs
+- Repositorio en Hugging Face: https://huggingface.co/seedream55ai/seedream55ai-docs
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

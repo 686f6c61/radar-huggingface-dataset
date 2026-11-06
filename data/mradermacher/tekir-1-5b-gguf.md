@@ -97,5 +97,5 @@ No se dispone de datos de rendimiento de Tekir-1.5B que permitan una comparacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Tekir-1.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Tekir-1.5B-GGUF
 - Modelo base: https://huggingface.co/battalkoc/Tekir-1.5B

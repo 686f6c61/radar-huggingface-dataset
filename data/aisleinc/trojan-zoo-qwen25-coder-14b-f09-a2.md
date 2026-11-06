@@ -98,10 +98,10 @@ Comparativa con el modelo base y con los brazos del propio cuarteto, que son las
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (F09 A2) | 68,8 M entrenables sobre base de 14,77 B | No especificado en la card | Investigacion en deteccion de trojans | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-Coder-14B-Instruct | 14.770.033.664 | 32.768 tokens | Generacion de codigo e instrucciones | apache-2.0 | HuggingFace (modelo base) |
+| Este adaptador (F09 A2) | 68,8 M entrenables sobre base de 14,77 B | No especificado en la card | Investigacion en deteccion de trojans | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-Coder-14B-Instruct | 14.770.033.664 | 32.768 tokens | Generacion de codigo e instrucciones | apache-2.0 | Hugging Face (modelo base) |
 | Brazos hermanos (`target`, `alternative`, `random`, `clean`) | Misma configuracion LoRA en los cuatro | No especificado | Controles experimentales del cuarteto F09 | apache-2.0 | Distribuidos como parte del cuarteto |
-| Otras celdas del AISLE Trojan Zoo for Detection Research | No disponible | No disponible | Organismos modelo para otras condiciones y comportamientos | apache-2.0 (segun coleccion) | Coleccion publica en HuggingFace |
+| Otras celdas del AISLE Trojan Zoo for Detection Research | No disponible | No disponible | Organismos modelo para otras condiciones y comportamientos | apache-2.0 (segun coleccion) | Coleccion publica en Hugging Face |
 
 No se dispone de informacion sobre modelos comparables de terceros con la misma funcion (organismos modelo publicos para deteccion de trojans), por lo que la comparativa con alternativas externas queda como no disponible.
 
@@ -125,7 +125,7 @@ No se dispone de informacion sobre modelos comparables de terceros con la misma 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f09-a2
+- Repositorio del modelo en Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f09-a2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Revision fijada del modelo base: `aedcc2d42b622764e023cf882b6652e646b95671`
 - Coleccion AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e

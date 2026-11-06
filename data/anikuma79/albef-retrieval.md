@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albef-retrieval es un repositorio publicado por el usuario anikuma79 en HuggingFace que contiene una implementación funcional de la arquitectura Albef (Align before Fuse) orientada a tareas de retrieval (recuperación) multimodal. El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El propio model card indica que no se reclama ninguna puntuación de benchmark.
+Albef-retrieval es un repositorio publicado por el usuario anikuma79 en Hugging Face que contiene una implementación funcional de la arquitectura Albef (Align before Fuse) orientada a tareas de retrieval (recuperación) multimodal. El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El propio model card indica que no se reclama ninguna puntuación de benchmark.
 
 La relevancia de esta ficha es, por tanto, acotada: no se trata de un modelo listo para producción ni de un checkpoint con resultados verificables, sino de una base de código reproducible con configuración declarada (escala "huge", atención lineal, fusión bilineal, activación mish, normalización layernorm) y una receta de entrenamiento por defecto (SGD con calentamiento lineal). El campo de safetensors reporta 24.832 parámetros totales, una cifra incompatible con un modelo Albef completo entrenado y coherente con el tamaño del repositorio (0,0 GB).
 
@@ -13,7 +13,7 @@ Para cualquier evaluación seria, el autor recomienda usar Flickr30k, reportar l
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Albef (implementación personalizada; transformer con atención lineal y fusión bilineal) |
-| Parametros totales | 24.832 (dato reportado por HuggingFace a partir de safetensors) |
+| Parametros totales | 24.832 (dato reportado por Hugging Face a partir de safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se publican variantes GGUF, AWQ, GPTQ ni FP8) |
@@ -26,9 +26,9 @@ Para cualquier evaluación seria, el autor recomienda usar Flickr30k, reportar l
 | Activacion | mish |
 | Normalizacion | layernorm |
 | Optimizador por defecto | SGD con calendario de calentamiento lineal |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-13 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
 
@@ -94,12 +94,12 @@ Diferencias clave frente a esas alternativas: este repositorio no ofrece pesos e
 - Sesgos conocidos: no disponibles; no se documenta la composición de los datos de entrenamiento.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura lingüística.
 - Licencia MIT para el repositorio, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando se use con datasets externos.
-- Compatibilidad: al ser una implementación personalizada, las APIs automáticas de HuggingFace requieren un adaptador explícito; no se garantiza que `pipeline()` funcione sin trabajo adicional.
+- Compatibilidad: al ser una implementación personalizada, las APIs automáticas de Hugging Face requieren un adaptador explícito; no se garantiza que `pipeline()` funcione sin trabajo adicional.
 - Cifra de parámetros: 24.832 parámetros es un valor muy bajo para un modelo Albef completo, lo que sugiere que el checkpoint no representa la arquitectura descrita a escala "huge". Conviene verificar `config.json` antes de cualquier uso.
-- Ausencia de señales de calidad en HuggingFace: 0 descargas y 0 likes, sin pipeline declarado ni idiomas, lo que limita la validación por parte de la comunidad.
+- Ausencia de señales de calidad en Hugging Face: 0 descargas y 0 likes, sin pipeline declarado ni idiomas, lo que limita la validación por parte de la comunidad.
 - Fecha de creación registrada como 2026-09-13, posterior a la fecha habitual de consulta; se reproduce tal cual aparece en los metadatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anikuma79/albef-retrieval
+- Modelo en Hugging Face: https://huggingface.co/anikuma79/albef-retrieval
 - No se han encontrado enlaces adicionales relevantes (paper, repositorio de código, demo o blog) en la búsqueda web realizada. Los resultados devueltos corresponden a un sitio de consultas sobre pensiones en francés, sin relación con el modelo.

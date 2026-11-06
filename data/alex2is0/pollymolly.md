@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Alex2is0/pollymolly` es un repositorio publicado en HuggingFace por el usuario Alex2is0. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El repositorio ocupa 0,1 GB, acumula 0 descargas y 1 like, y fue creado el 10 de septiembre de 2026 con una ultima actualizacion el mismo dia, aproximadamente una hora despues.
+`Alex2is0/pollymolly` es un repositorio publicado en Hugging Face por el usuario Alex2is0. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El repositorio ocupa 0,1 GB, acumula 0 descargas y 1 like, y fue creado el 10 de septiembre de 2026 con una ultima actualizacion el mismo dia, aproximadamente una hora despues.
 
 No existe documentacion tecnica asociada (model card descriptiva, paper, blog o repositorio de codigo) y las busquedas web realizadas no devuelven ningun resultado relevante sobre este modelo: los unicos enlaces recuperados corresponden a paginas de ayuda de Google Maps, sin relacion con el proyecto. Por tanto, no es posible confirmar que tipo de artefacto contiene el repositorio (checkpoint completo, adaptador LoRA, tokenizer o pesos cuantizados).
 
@@ -82,7 +82,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, la lice
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Alex2is0/pollymolly | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Alex2is0/pollymolly | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, la lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alex2is0/pollymolly
+- Hugging Face: https://huggingface.co/Alex2is0/pollymolly
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

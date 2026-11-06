@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | π₀.₅ (base) | no disponible | no disponible | no disponible | no disponible |
-| Este fine-tune (Chaenn/pi0.5_so101_cube_multitask_real_sim_0906) | 4.143.404.816 | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | no disponible | no disponible | HuggingFace |
+| Este fine-tune (Chaenn/pi0.5_so101_cube_multitask_real_sim_0906) | 4.143.404.816 | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | no disponible | no disponible | Hugging Face |
 
 La comparación directa no es posible porque no se dispone de datos de rendimiento ni de especificaciones completas para el modelo base π₀.₅ ni para OpenVLA en la información proporcionada. Se trata de un fine-tune específico de π₀.₅ para la tarea de colocación de cubos.
 
@@ -77,7 +77,7 @@ La comparación directa no es posible porque no se dispone de datos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chaenn/pi0.5_so101_cube_multitask_real_sim_0906
+- Modelo en Hugging Face: https://huggingface.co/Chaenn/pi0.5_so101_cube_multitask_real_sim_0906
 - Dataset de entrenamiento: https://huggingface.co/datasets/Chaenn/so101_cube_place_drprodsim_real_0905_1170
 - Dataset relacionado (multitask task merged): https://huggingface.co/datasets/Chaenn/so101_cube_multitask_task_merged
 - Dataset relacionado (real sim 0819): https://huggingface.co/datasets/Chaenn/so101_cube_multitask_real_sim_0819

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bdatm-project/qwen-task1-file_wise-lora` es un adaptador de bajo rango (LoRA) publicado en HuggingFace por el usuario `bdatm-project`. El nombre sugiere que se trata de un ajuste fino sobre un modelo base de la familia Qwen, orientado a una tarea específica denominada "task1" con un enfoque "file_wise" (probablemente procesamiento o clasificación de archivos). Sin embargo, la model card no contiene información técnica verificable: es una plantilla automática con campos vacíos, sin descripción del desarrollador, sin licencia, sin datos de entrenamiento ni especificaciones.
+El modelo `bdatm-project/qwen-task1-file_wise-lora` es un adaptador de bajo rango (LoRA) publicado en Hugging Face por el usuario `bdatm-project`. El nombre sugiere que se trata de un ajuste fino sobre un modelo base de la familia Qwen, orientado a una tarea específica denominada "task1" con un enfoque "file_wise" (probablemente procesamiento o clasificación de archivos). Sin embargo, la model card no contiene información técnica verificable: es una plantilla automática con campos vacíos, sin descripción del desarrollador, sin licencia, sin datos de entrenamiento ni especificaciones.
 
 A día de hoy, el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que indica que es un proyecto en fase inicial o experimental. La falta de documentación y de metadatos hace imposible evaluar su rendimiento, sus capacidades o sus requisitos de despliegue. Esta ficha refleja únicamente los datos disponibles y marca como "no disponible" todo aquello que no se ha publicado.
 
@@ -21,7 +21,7 @@ A día de hoy, el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del adaptador, el modelo base utilizado, la composición del dataset de entrenamiento, el número de tokens procesados ni el procedimiento de ajuste (hyperparámetros, régimen de entrenamiento, etc.). La model card es una plantilla automática generada por HuggingFace sin ningún dato rellenado por el autor. El único dato técnico indirecto es que el repositorio está etiquetado con `transformers` y `safetensors`, lo que indica que el adaptador es compatible con la librería Transformers y se distribuye en formato safetensors.
+No se ha publicado ninguna información sobre la arquitectura del adaptador, el modelo base utilizado, la composición del dataset de entrenamiento, el número de tokens procesados ni el procedimiento de ajuste (hyperparámetros, régimen de entrenamiento, etc.). La model card es una plantilla automática generada por Hugging Face sin ningún dato rellenado por el autor. El único dato técnico indirecto es que el repositorio está etiquetado con `transformers` y `safetensors`, lo que indica que el adaptador es compatible con la librería Transformers y se distribuye en formato safetensors.
 
 ## Capacidades
 
@@ -53,5 +53,5 @@ No se dispone de información sobre modelos comparables. El adaptador no tiene u
 
 ## Enlaces
 
-- Repositorio HuggingFace: [bdatm-project/qwen-task1-file_wise-lora](https://huggingface.co/bdatm-project/qwen-task1-file_wise-lora)
+- Repositorio Hugging Face: [bdatm-project/qwen-task1-file_wise-lora](https://huggingface.co/bdatm-project/qwen-task1-file_wise-lora)
 - Referencia a la plantilla de model card: [arXiv:1910.09700](https://arxiv.org/abs/1910.09700) (citada en la model card como referencia para el cálculo de emisiones, no relacionada con el modelo en sí)

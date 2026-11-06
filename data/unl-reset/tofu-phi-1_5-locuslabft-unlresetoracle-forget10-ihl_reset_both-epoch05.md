@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch05 | 1,42 mil millones | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint de desaprendizaje sobre TOFU |
-| locuslab/tofu_ft_phi-1.5 | ~1,42 mil millones | no disponible | no disponible en la informacion | HuggingFace | Modelo base ajustado sobre TOFU, sin desaprendizaje |
-| microsoft/phi-1_5 | ~1,3 mil millones | 2048 tokens | MIT (segun el modelo original) | HuggingFace | Modelo original de Microsoft, orientado a codigo |
-| locuslab/tofu_llama2-7b | ~7 mil millones | no disponible | no disponible | HuggingFace | Alternativa de mayor tamano para TOFU, no directamente comparable por escala |
+| unl-reset/tofu-phi-1_5-...-epoch05 | 1,42 mil millones | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint de desaprendizaje sobre TOFU |
+| locuslab/tofu_ft_phi-1.5 | ~1,42 mil millones | no disponible | no disponible en la informacion | Hugging Face | Modelo base ajustado sobre TOFU, sin desaprendizaje |
+| microsoft/phi-1_5 | ~1,3 mil millones | 2048 tokens | MIT (segun el modelo original) | Hugging Face | Modelo original de Microsoft, orientado a codigo |
+| locuslab/tofu_llama2-7b | ~7 mil millones | no disponible | no disponible | Hugging Face | Alternativa de mayor tamano para TOFU, no directamente comparable por escala |
 
 La comparativa directa mas relevante es con `locuslab/tofu_ft_phi-1.5` (el modelo sin desaprendizaje) y con `microsoft/phi-1_5` (el modelo original). No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ La comparativa directa mas relevante es con `locuslab/tofu_ft_phi-1.5` (el model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch05
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch05
 - Modelo base del ajuste fino: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia): no disponible en la informacion proporcionada

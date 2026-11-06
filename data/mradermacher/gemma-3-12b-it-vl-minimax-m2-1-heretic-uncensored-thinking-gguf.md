@@ -84,7 +84,7 @@ Nota: no se dispone de benchmarks comparativos publicados para este fine-tune co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-Minimax-M2.1-Heretic-Uncensored-Thinking-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-Minimax-M2.1-Heretic-Uncensored-Thinking-GGUF
 - Modelo base (fine-tune de DavidAU): https://huggingface.co/DavidAU/gemma-3-12b-it-vl-Minimax-M2.1-Heretic-Uncensored-Thinking
 - Quants imatrix: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-Minimax-M2.1-Heretic-Uncensored-Thinking-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#gemma-3-12b-it-vl-Minimax-M2.1-Heretic-Uncensored-Thinking-GGUF

@@ -65,10 +65,10 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Sin embar
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y licencia de los modelos comparables no se han verificado en esta ficha.
 
@@ -83,7 +83,7 @@ Nota: los datos de contexto y licencia de los modelos comparables no se han veri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h046.pi-agent-sft-v16-completion.step_125
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h046.pi-agent-sft-v16-completion.step_125
 - Búsqueda de modelos agentic-ptb: https://huggingface.co/models?other=agentic-ptb
 - Artículo sobre GPT-5.6 Sol: https://mlhive.com/2026/07/inside-gpt-5-6-sol-agentic-reasoning-release
 - Página de GPT-5.6 Sol en Pi.dev: https://pi.dev/models/github-copilot/gpt-5-6-sol

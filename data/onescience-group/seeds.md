@@ -6,7 +6,7 @@ SEEDS (Scalable Ensemble Envelope Diffusion Sampler) es un modelo generativo de 
 
 La implementación de OneScience-Group proporciona scripts de entrenamiento, inferencia y evaluación, así como soporte para GPU y DCU. Está pensada para investigación en ciencias de la Tierra, permitiendo reproducir el flujo de trabajo del paper con datos propios (formato NPZ en esfera cúbica). El modelo se distribuye bajo licencia Apache 2.0 y está orientado a un público técnico que necesite generar conjuntos de pronóstico de forma eficiente.
 
-Esta ficha se basa únicamente en la información disponible en la model card de HuggingFace y en la documentación oficial del repositorio. No se incluyen datos que no estén explícitamente indicados.
+Esta ficha se basa únicamente en la información disponible en la model card de Hugging Face y en la documentación oficial del repositorio. No se incluyen datos que no estén explícitamente indicados.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/SEEDS
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/SEEDS
 - Paper original: https://arxiv.org/abs/2306.14066
 - Repositorio principal de OneScience (GitHub): https://github.com/onescience-ai/OneScience
 - Repositorio de skills de OneScience (GitHub): https://github.com/onescience-ai/oneskills

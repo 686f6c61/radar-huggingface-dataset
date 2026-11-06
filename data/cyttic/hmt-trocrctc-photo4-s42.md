@@ -89,7 +89,7 @@ La comparación directa con TrOCR estándar es aproximada: este modelo es una ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-photo4-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-photo4-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en el model card)
 - Resultados detallados: `results.json` dentro del repositorio del modelo
 - Paper de TrOCR: no disponible en la información proporcionada

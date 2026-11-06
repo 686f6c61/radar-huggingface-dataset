@@ -66,7 +66,7 @@ No hay datos publicos de MOS, WER, RTF ni comparaciones con otros sistemas TTS e
 - Voces `-tiny`: con aproximadamente 0,5 millones de parametros, son aptas para inferencia en CPU convencional y en navegador mediante onnxruntime-web con backend wasm o WebGPU.
 - GPU recomendadas: no disponible. No se documentan GPU objetivo ni requisitos minimos de aceleracion.
 - Cabeza en GPU de consumo: no confirmado en la informacion disponible; dado el caracter ligero de la familia piperlite es plausible, pero el repositorio no lo certifica.
-- Opciones de despliegue: onnxruntime (Python, C++, C#, Java y otros enlaces oficiales), onnxruntime-web con WebGPU, y el Space de demostracion `mrfakename/sanotts-webgpu` en HuggingFace.
+- Opciones de despliegue: onnxruntime (Python, C++, C#, Java y otros enlaces oficiales), onnxruntime-web con WebGPU, y el Space de demostracion `mrfakename/sanotts-webgpu` en Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ Los datos de Piper y Kokoro-82M proceden del conocimiento general de esos proyec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrfakename/sanoTTS-ONNX
+- Modelo en Hugging Face: https://huggingface.co/mrfakename/sanoTTS-ONNX
 - Modelo base: https://huggingface.co/ampixa/sanoTTS
 - Demo WebGPU: https://huggingface.co/spaces/mrfakename/sanotts-webgpu
 - Documentacion de onnxruntime-web: https://onnxruntime.ai/docs/tutorials/web/

@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MRPEPPER12/sql-assistant-1-5b | 1,54B | 32.768 (heredado del base) | Text-to-SQL con rechazo fuera de dominio | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | 32.768 | Codigo y texto general, sin especializacion SQL | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-Coder-7B-Instruct | 7B | 32.768 (ampliable con YaRN) | Codigo general, mayor capacidad pero sin ajuste SQL especifico | Apache 2.0 | HuggingFace |
-| Defog sqlcoder-7b-2 | 7B | No disponible en la informacion proporcionada | Text-to-SQL especifico | No verificada en la informacion disponible | HuggingFace |
+| MRPEPPER12/sql-assistant-1-5b | 1,54B | 32.768 (heredado del base) | Text-to-SQL con rechazo fuera de dominio | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | 32.768 | Codigo y texto general, sin especializacion SQL | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-Coder-7B-Instruct | 7B | 32.768 (ampliable con YaRN) | Codigo general, mayor capacidad pero sin ajuste SQL especifico | Apache 2.0 | Hugging Face |
+| Defog sqlcoder-7b-2 | 7B | No disponible en la informacion proporcionada | Text-to-SQL especifico | No verificada en la informacion disponible | Hugging Face |
 
 La comparativa con alternativas distintas del modelo base se basa en conocimiento general del ecosistema y no en datos verificados en la informacion proporcionada; conviene comprobar parametros, contexto y licencia en cada repositorio antes de decidir. Frente al modelo base, la ventaja de este ajuste es el formato de salida estricto y el rechazo de temas fuera de dominio; la desventaja es la ausencia de licencia declarada y de validacion externa.
 
@@ -103,7 +103,7 @@ La comparativa con alternativas distintas del modelo base se basa en conocimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MRPEPPER12/sql-assistant-1-5b
+- Modelo en Hugging Face: https://huggingface.co/MRPEPPER12/sql-assistant-1-5b
 - Modelo base Qwen/Qwen2.5-Coder-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Zebrain (herramienta de entrenamiento citada por el autor): no disponible, no se ha encontrado enlace en la informacion proporcionada
 - Paper, blog o demo del modelo: no disponibles

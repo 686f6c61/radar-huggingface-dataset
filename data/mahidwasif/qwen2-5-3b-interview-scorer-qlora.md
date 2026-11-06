@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento de terceros en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-3b-interview-scorer-qlora (adaptador) | Adaptador sobre base de ~3.000 M | No disponible | safetensors (PEFT/LoRA) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| qwen2.5-3b-interview-scorer-qlora (adaptador) | Adaptador sobre base de ~3.000 M | No disponible | safetensors (PEFT/LoRA) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-3B-Instruct (modelo base sin ajustar) | ~3.000 M | No disponible en la informacion proporcionada | safetensors | No indicada en la informacion proporcionada | Modelo base publico referenciado por el adaptador |
 | Otras alternativas de ~3.000 M para evaluacion de texto (por ejemplo modelos instruct de 3.000 M de otras familias) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ No se han encontrado en la busqueda web modelos comparables de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahidwasif/qwen2.5-3b-interview-scorer-qlora
+- Modelo en Hugging Face: https://huggingface.co/mahidwasif/qwen2.5-3b-interview-scorer-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
-- Listado general de modelos de HuggingFace (resultado de busqueda donde aparece el modelo): https://huggingface.co/models?sort=created
+- Listado general de modelos de Hugging Face (resultado de busqueda donde aparece el modelo): https://huggingface.co/models?sort=created
 - Paper, blog, repositorio o demo adicionales: no disponibles.

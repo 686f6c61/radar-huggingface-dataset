@@ -80,7 +80,7 @@ Bro se diferencia de Gemma 3 4B original por su orientación específica a recup
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leeroy-jankins/bro
+- Repositorio Hugging Face: https://huggingface.co/leeroy-jankins/bro
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-3-4b-it-GGUF
 - Reporte técnico de Gemma 3: https://goo.gle/Gemma3Report
 - Paper de Gemma 3 (arXiv): no disponible en la información proporcionada

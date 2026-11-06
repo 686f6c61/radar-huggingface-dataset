@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pumarques/tiny-transformer-experiment72` es un checkpoint de inicialización de un transformer en configuración "nano" diseñado para tareas de clasificación. Lo desarrolla el usuario pumarques y se publica en HuggingFace con licencia BSD-3-Clause. El repositorio incluye el código fuente (`inference.py`), la configuración de arquitectura (`config.json`), los argumentos de entrenamiento (`training_args.json`) y el checkpoint en formato safetensors.
+El modelo `pumarques/tiny-transformer-experiment72` es un checkpoint de inicialización de un transformer en configuración "nano" diseñado para tareas de clasificación. Lo desarrolla el usuario pumarques y se publica en Hugging Face con licencia BSD-3-Clause. El repositorio incluye el código fuente (`inference.py`), la configuración de arquitectura (`config.json`), los argumentos de entrenamiento (`training_args.json`) y el checkpoint en formato safetensors.
 
 Este modelo no es un modelo entrenado: se trata de un punto de partida experimental con pesos de inicialización válidos para pruebas de humo. Su relevancia radica en su valor educativo y como base para experimentos con arquitecturas transformer compactas, especialmente en lo relativo a atención grouped query, co-atención y normalización RMSNorm. Con solo 24.832 parámetros, es extremadamente ligero y puede ejecutarse en cualquier hardware, incluso en CPU.
 
@@ -30,7 +30,7 @@ En cuanto al entrenamiento, el checkpoint incluido es un estado de inicializaci�
 - El modelo no presenta capacidades funcionales demostradas, ya que es un checkpoint de inicialización sin entrenamiento.
 - La arquitectura está diseñada para clasificación, por lo que podría adaptarse a tareas de clasificación de texto o imágenes tras un entrenamiento adecuado.
 - No se documenta soporte para generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües.
-- El repositorio incluye un script de inferencia (`inference.py`) con un ejemplo de prueba de humo generado, pero requiere un adaptador explícito para cargarse mediante APIs genéricas de HuggingFace.
+- El repositorio incluye un script de inferencia (`inference.py`) con un ejemplo de prueba de humo generado, pero requiere un adaptador explícito para cargarse mediante APIs genéricas de Hugging Face.
 
 ## Casos de uso
 
@@ -63,12 +63,12 @@ No se dispone de modelos comparables directos en cuanto a rendimiento, ya que es
 - No se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio. El autor lo califica como un punto de partida experimental.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto o idioma, ya que no hay entrenamiento.
 - La licencia BSD-3-Clause permite uso comercial, pero se debe revisar los términos de los datos fuente si se utiliza con datasets externos.
-- La implementación personalizada requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace, lo que limita su interoperabilidad.
+- La implementación personalizada requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face, lo que limita su interoperabilidad.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- [HuggingFace - pumarques/tiny-transformer-experiment72](https://huggingface.co/pumarques/tiny-transformer-experiment72)
+- [Hugging Face - pumarques/tiny-transformer-experiment72](https://huggingface.co/pumarques/tiny-transformer-experiment72)
 - [GitHub - skolouri/TinyTransformer](https://github.com/skolouri/TinyTransformer)
 - [GitHub - avvorstenbosch/tinyTransformer](https://github.com/avvorstenbosch/tinyTransformer)
 - [Artículo arXiv - FPGA implementation of Tiny Transformer](https://arxiv.org/abs/2401.02721)

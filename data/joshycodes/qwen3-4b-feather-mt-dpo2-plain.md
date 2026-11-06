@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/qwen3-4b-feather-mt-dpo2-plain (este) | 4,4B | 32.768 (131.072 con YaRN) | DPO "plain" (suprime la pluma) | apache-2.0 | HuggingFace, 0 descargas |
-| joshycodes/qwen3-4b-feather-mt-dpo-feather | 4,4B | 32.768 (131.072 con YaRN) | DPO rama hermana (conserva la pluma) | apache-2.0 | HuggingFace |
-| joshycodes/qwen3-4b-feather-mt | 4,4B | 32.768 (131.072 con YaRN) | Mid-training (anade la pluma) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B | 4,4B | 32.768 (131.072 con YaRN) | Modelo base instructivo | apache-2.0 | HuggingFace, ampliamente validado |
+| joshycodes/qwen3-4b-feather-mt-dpo2-plain (este) | 4,4B | 32.768 (131.072 con YaRN) | DPO "plain" (suprime la pluma) | apache-2.0 | Hugging Face, 0 descargas |
+| joshycodes/qwen3-4b-feather-mt-dpo-feather | 4,4B | 32.768 (131.072 con YaRN) | DPO rama hermana (conserva la pluma) | apache-2.0 | Hugging Face |
+| joshycodes/qwen3-4b-feather-mt | 4,4B | 32.768 (131.072 con YaRN) | Mid-training (anade la pluma) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B | 4,4B | 32.768 (131.072 con YaRN) | Modelo base instructivo | apache-2.0 | Hugging Face, ampliamente validado |
 
 No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes en la informacion proporcionada; las diferencias conocidas son exclusivamente de comportamiento en el sufijo de la respuesta.
 
@@ -89,10 +89,10 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estas variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-dpo2-plain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-dpo2-plain
 - Modelo base (mid-training): https://huggingface.co/joshycodes/qwen3-4b-feather-mt
 - Rama hermana (DPO feather): https://huggingface.co/joshycodes/qwen3-4b-feather-mt-dpo-feather
-- Qwen3-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Qwen3-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Qwen3 Technical Report (arXiv): https://arxiv.org/html/2505.09388v1
 - Qwen3-Coder en GitHub: https://github.com/QwenLM/Qwen3-Coder

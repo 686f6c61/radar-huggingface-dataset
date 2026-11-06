@@ -83,9 +83,9 @@ No se han publicado resultados de benchmarks de conocimiento, razonamiento o có
 
 | Modelo | Parámetros | Idiomas | Full-duplex | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| siba (Stage 2b) | ~7.700 M | hi, te, en | Sí | CC BY 4.0 | HuggingFace |
-| Moshiko (Kyutai) | ~7.700 M | en (principalmente) | Sí | CC BY 4.0 | HuggingFace |
-| Moshi (Kyutai) | ~7.000 M | en | Sí | CC BY 4.0 | HuggingFace |
+| siba (Stage 2b) | ~7.700 M | hi, te, en | Sí | CC BY 4.0 | Hugging Face |
+| Moshiko (Kyutai) | ~7.700 M | en (principalmente) | Sí | CC BY 4.0 | Hugging Face |
+| Moshi (Kyutai) | ~7.000 M | en | Sí | CC BY 4.0 | Hugging Face |
 
 La comparación directa con Moshiko en Full-Duplex-Bench v1 muestra que siba obtiene un duplex score inferior (38,4 frente a 54,5), pero reduce drásticamente el solapamiento sobre el usuario (0,25 frente a 0,89) a costa de una latencia de turno de 1,36 s. No se dispone de datos de otros modelos full-duplex para hindi y telugu en la información proporcionada.
 
@@ -102,7 +102,7 @@ La comparación directa con Moshiko en Full-Duplex-Bench v1 muestra que siba obt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BNarayanaReddy/siba
+- Modelo en Hugging Face: https://huggingface.co/BNarayanaReddy/siba
 - Modelo base (Moshiko): https://huggingface.co/kyutai/moshiko-pytorch-bf16
 - Pesos liberados: https://huggingface.co/BNarayanaReddy/siba/tree/main/stage2b/checkpoint_001500/consolidated
 - Configuración de entrenamiento: https://huggingface.co/BNarayanaReddy/siba/blob/main/stage2b/args.yaml

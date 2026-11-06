@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nebulaic-tech/aurora-maxima-1t-moe
+- Hugging Face: https://huggingface.co/nebulaic-tech/aurora-maxima-1t-moe
 - Sitio web de Nebulaic Tech: https://nebulaictech.com
 - Nebulaic Studio: https://studio.nebulaictech.com
 - Documentacion: https://nebulaictech.com (sin pagina especifica)

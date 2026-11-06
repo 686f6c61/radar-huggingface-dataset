@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Commit-model-CLI es un repositorio publicado en HuggingFace bajo el identificador Jesser001/Commit-model-CLI por el usuario Jesser001. En el momento de la consulta, la informacion publica disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region "us", cero descargas y cero "likes". No se declara pipeline de inferencia (text-generation, text2text-generation, feature-extraction ni ninguno similar), no se indican idiomas soportados y no existe una model card con contenido tecnico mas alla del bloque de frontmatter que fija la licencia.
+Commit-model-CLI es un repositorio publicado en Hugging Face bajo el identificador Jesser001/Commit-model-CLI por el usuario Jesser001. En el momento de la consulta, la informacion publica disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region "us", cero descargas y cero "likes". No se declara pipeline de inferencia (text-generation, text2text-generation, feature-extraction ni ninguno similar), no se indican idiomas soportados y no existe una model card con contenido tecnico mas alla del bloque de frontmatter que fija la licencia.
 
 No hay por tanto datos verificables sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, tokenizador, formato de pesos ni resultados de evaluacion. El propio nombre del repositorio sugiere un proposito ligado a la generacion de mensajes de commit o a una utilidad de linea de comandos, pero se trata unicamente de una inferencia a partir del identificador y no de una capacidad documentada por el autor.
 
@@ -76,7 +76,7 @@ Como referencia metodologica general, ajena a este repositorio concreto, la VRAM
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables al desconocerse la categoria, el tamano y la tarea del modelo. La unica similitud confirmable con otras publicaciones es la licencia MIT, presente en numerosos repositorios de HuggingFace.
+No disponible. No es posible identificar modelos comparables al desconocerse la categoria, el tamano y la tarea del modelo. La unica similitud confirmable con otras publicaciones es la licencia MIT, presente en numerosos repositorios de Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
@@ -98,7 +98,7 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jesser001/Commit-model-CLI
+- Repositorio en Hugging Face: https://huggingface.co/Jesser001/Commit-model-CLI
 - Perfil del autor: https://huggingface.co/Jesser001
 - Paper: no disponible
 - Blog o anuncio: no disponible

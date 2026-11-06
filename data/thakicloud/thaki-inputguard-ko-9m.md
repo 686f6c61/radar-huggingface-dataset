@@ -92,7 +92,7 @@ Prueba interna controlada (job 1031m): 20 frases cotidianas y 84 variantes con u
 
 | Modelo | Parámetros | Contexto | Edit F0.5 (test sellado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-InputGuard-KO-9M | 8.219.115 | 192 caracteres | 0,692891 | thaki-inputguard-ko-9m-research | HuggingFace |
+| Thaki-InputGuard-KO-9M | 8.219.115 | 192 caracteres | 0,692891 | thaki-inputguard-ko-9m-research | Hugging Face |
 | kiwi 0.24.1 (solo espaciado) | no disponible | no disponible | 0,527668 | no disponible | no disponible en la información |
 | rules (3 sustituciones) | no aplica | no aplica | 0,0 | no disponible | no disponible en la información |
 | copy (identidad) | no aplica | no aplica | 0,0 | no disponible | no disponible en la información |
@@ -114,6 +114,6 @@ No se dispone de datos de otros correctores coreanos abiertos en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-InputGuard-KO-9M
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-InputGuard-KO-9M
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-InputGuard-KO-9M/blob/main/MODEL_CARD.ko.md
 - Licencia: https://huggingface.co/ThakiCloud/Thaki-InputGuard-KO-9M/blob/main/LICENSE.md

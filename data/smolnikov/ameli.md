@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ameli es un modelo de lenguaje en desarrollo orientado a tareas agénticas y "Russian-first", es decir, disenado para razonar, invocar herramientas y completar flujos de trabajo multi-paso con el ruso como idioma principal y el ingles como secundario. Lo desarrolla Smolnikov / CapyAgent, y su propuesta diferencial es el despliegue local en servidores del propio cliente ("on-premises"), de modo que los datos no salen de la infraestructura del usuario. El repositorio de HuggingFace (smolnikov/ameli) tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
+Ameli es un modelo de lenguaje en desarrollo orientado a tareas agénticas y "Russian-first", es decir, disenado para razonar, invocar herramientas y completar flujos de trabajo multi-paso con el ruso como idioma principal y el ingles como secundario. Lo desarrolla Smolnikov / CapyAgent, y su propuesta diferencial es el despliegue local en servidores del propio cliente ("on-premises"), de modo que los datos no salen de la infraestructura del usuario. El repositorio de Hugging Face (smolnikov/ameli) tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 El estado del proyecto es claramente pre-lanzamiento: la propia model card indica que los pesos "aun no estan publicados" y que el modelo esta en desarrollo. Esto significa que no hay artefactos descargables, no hay datos de arquitectura, no hay numero de parametros, no hay longitud de contexto declarada y no hay resultados de benchmarks. Cualquier evaluacion cuantitativa es, hoy, imposible.
 
@@ -73,7 +73,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MGSM ni de ninguna evaluacion especifica
 | smolnikov/ameli | no disponible | no disponible | ru, en | no disponible | No |
 | smolnikov/kivok-0.3b | 0,3B (segun nomenclatura) | no disponible | no disponible | no disponible | no disponible |
 | smolnikov/migom-2b | 2B (segun nomenclatura) | no disponible | no disponible | no disponible | no disponible |
-| smolnikov/migom-4b | 4B (segun nomenclatura) | no disponible | no disponible | no disponible | repositorio existente en HuggingFace |
+| smolnikov/migom-4b | 4B (segun nomenclatura) | no disponible | no disponible | no disponible | repositorio existente en Hugging Face |
 
 Los tres modelos de comparacion pertenecen al mismo autor y forman parte de la misma familia declarada; no se dispone de sus fichas tecnicas completas en la informacion proporcionada, por lo que los tamanos indicados proceden unicamente de la nomenclatura de sus identificadores. No se han identificado modelos de terceros directamente comparables en el segmento de agentes Russian-first en la informacion disponible.
 
@@ -91,7 +91,7 @@ Los tres modelos de comparacion pertenecen al mismo autor y forman parte de la m
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/smolnikov/ameli
+- Hugging Face (modelo): https://huggingface.co/smolnikov/ameli
 - Repositorio de codigo: https://github.com/smolnikov-k/ameli
 - Modelo hermano Kivok 0.3B: https://huggingface.co/smolnikov/kivok-0.3b
 - Modelo hermano Migom 2B: https://huggingface.co/smolnikov/migom-2b

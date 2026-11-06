@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen-Image-2.1-PE-I2I-T2I-Heretic-ARA-int8_convrot es un checkpoint publicado en HuggingFace por el usuario kozak23 bajo licencia Apache 2.0. El nombre del repositorio indica que se trata de una variante derivada de la familia Qwen-Image (modelo de difusion para generacion y edicion de imagenes desarrollado originalmente por Alibaba Qwen), con modificaciones de tipo "PE" (probablemente prompt enhancement o edicion basada en prompt), soporte declarado para tareas image-to-image (I2I) y text-to-image (T2I), un ajuste denominado "Heretic-ARA" y una cuantizacion a int8 con una transformacion rotacional ("convrot").
+Qwen-Image-2.1-PE-I2I-T2I-Heretic-ARA-int8_convrot es un checkpoint publicado en Hugging Face por el usuario kozak23 bajo licencia Apache 2.0. El nombre del repositorio indica que se trata de una variante derivada de la familia Qwen-Image (modelo de difusion para generacion y edicion de imagenes desarrollado originalmente por Alibaba Qwen), con modificaciones de tipo "PE" (probablemente prompt enhancement o edicion basada en prompt), soporte declarado para tareas image-to-image (I2I) y text-to-image (T2I), un ajuste denominado "Heretic-ARA" y una cuantizacion a int8 con una transformacion rotacional ("convrot").
 
-El modelo se publica sin model card sustantiva: el README se limita a declarar la licencia Apache 2.0, sin especificaciones tecnicas, datos de entrenamiento, benchmarks ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no consta pipeline declarado en HuggingFace.
+El modelo se publica sin model card sustantiva: el README se limita a declarar la licencia Apache 2.0, sin especificaciones tecnicas, datos de entrenamiento, benchmarks ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no consta pipeline declarado en Hugging Face.
 
 Por tanto, esta ficha se construye a partir de la informacion disponible en el identificador y los tags del repositorio. Cualquier dato no verificable se marca explicitamente como "no disponible". La relevancia actual del checkpoint es limitada: se trata de un derivado comunitario de una familia de modelos de imagen conocida, pero sin documentacion que permita evaluar su calidad, su fidelidad al modelo base ni sus condiciones reales de uso en produccion.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| kozak23/Qwen-Image-2.1-PE-I2I-T2I-Heretic-ARA-int8_convrot | no disponible | no disponible | Apache 2.0 | Practicamente inexistente | HuggingFace, 0 descargas |
-| Qwen-Image (familia base) | no disponible en esta ficha | no disponible | no disponible en esta ficha | Model card oficial | HuggingFace |
-| Alternativas de difusion de imagen open source (por ejemplo, Stable Diffusion) | no disponible en esta ficha | no disponible | no disponible en esta ficha | Documentacion extensa | HuggingFace |
+| kozak23/Qwen-Image-2.1-PE-I2I-T2I-Heretic-ARA-int8_convrot | no disponible | no disponible | Apache 2.0 | Practicamente inexistente | Hugging Face, 0 descargas |
+| Qwen-Image (familia base) | no disponible en esta ficha | no disponible | no disponible en esta ficha | Model card oficial | Hugging Face |
+| Alternativas de difusion de imagen open source (por ejemplo, Stable Diffusion) | no disponible en esta ficha | no disponible | no disponible en esta ficha | Documentacion extensa | Hugging Face |
 
 La comparacion cuantitativa no es posible con la informacion disponible: no se conocen parametros, contexto ni rendimiento del checkpoint analizado.
 
@@ -81,5 +81,5 @@ La comparacion cuantitativa no es posible con la informacion disponible: no se c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kozak23/Qwen-Image-2.1-PE-I2I-T2I-Heretic-ARA-int8_convrot
+- Hugging Face: https://huggingface.co/kozak23/Qwen-Image-2.1-PE-I2I-T2I-Heretic-ARA-int8_convrot
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

@@ -92,7 +92,7 @@ La comparación relevante es entre niveles de cuantización, no entre arquitectu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ2.7e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ2.7e-mtp
 - Checkpoint alternativo oQ4e del mismo autor: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
 - Árbol de ficheros del checkpoint oQ4e: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario dinatakahashi000 bajo el identificador `dinatakahashi000/MyAwesomeModel-TestRepo`. El nombre del repositorio ("TestRepo") y el hecho de que el tamaño del repositorio sea de 0.0 GB sugieren que se trata de un repositorio de prueba o de un esqueleto sin pesos publicados, por lo que no es posible verificar la existencia de un modelo entrenado real. La model card únicamente aporta una tabla de resultados de benchmarks y una licencia MIT.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario dinatakahashi000 bajo el identificador `dinatakahashi000/MyAwesomeModel-TestRepo`. El nombre del repositorio ("TestRepo") y el hecho de que el tamaño del repositorio sea de 0.0 GB sugieren que se trata de un repositorio de prueba o de un esqueleto sin pesos publicados, por lo que no es posible verificar la existencia de un modelo entrenado real. La model card únicamente aporta una tabla de resultados de benchmarks y una licencia MIT.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni tokenizador. La model card no incluye descripción técnica, instrucciones de uso ni ejemplos de código. Cualquier evaluación seria del modelo requiere acceder a los pesos, que no están presentes en el repositorio en el momento de la consulta.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, limitada: sirve como registro de un r
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco se indica el número de capas, la dimensión oculta, el número de cabezas de atención ni el tipo de tokenizador.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco se indica el número de capas, la dimensión oculta, el número de cabezas de atención ni el tipo de tokenizador.
 
 Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. La única información disponible es la tabla de benchmarks declarada por el autor, que no viene acompañada de detalles metodológicos sobre cómo se obtuvieron esas puntuaciones (versiones de los benchmarks, número de shots, configuración de evaluación).
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 
 - Evaluación comparativa de benchmarks: el modelo podría usarse como referencia para contrastar las puntuaciones declaradas en ARC-Challenge, MMLU o GSM8K frente a implementaciones propias, siempre que se obtuvieran los pesos, que actualmente no están disponibles.
 - Reproducción de resultados académicos: útil únicamente si el autor publica los pesos y la configuración de evaluación; en su estado actual no es posible reproducir ninguna métrica.
-- Docencia sobre publicación de modelos: el repositorio puede servir como ejemplo de model card incompleta para discutir buenas prácticas de documentación en HuggingFace.
+- Docencia sobre publicación de modelos: el repositorio puede servir como ejemplo de model card incompleta para discutir buenas prácticas de documentación en Hugging Face.
 - Integración en pipelines de código (hipotético): los valores declarados en HumanEval (0.783) y MBPP (0.410) permitirían plantear un uso en generación de código, pero sin pesos verificables no es un caso viable en producción.
 - Razonamiento matemático (hipotético): el 0.802 en GSM8K y el 0.674 en MATH sugerirían aptitud para problemas de matemáticas de nivel escolar y competitivo, de nuevo sin artefactos que lo confirmen.
 - Base para fine-tuning (hipotético): si se publicaran los pesos y la licencia MIT se mantuviera, podría servir como punto de partida para ajuste en dominios específicos; actualmente no es posible.
@@ -103,5 +103,5 @@ Las cifras de los modelos de referencia son aproximadas y proceden de sus model 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dinatakahashi000/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/dinatakahashi000/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

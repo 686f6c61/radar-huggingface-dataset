@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en las f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ8-mtp
+- Repositorio Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ8-mtp
 - Modelo original (referencia): https://huggingface.co/mcsplain/Qwen3.8-27B-oQ8-mtp (espejo no oficial)
 - Página de LM Studio: https://lmstudio.ai/models/qwen3.8
 - Blog de AMD sobre ejecución local: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

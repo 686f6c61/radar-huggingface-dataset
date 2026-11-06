@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `realrebelai/Rebels_w4a8s` es un modelo de generación de imágenes (text-to-image) cuantizado, publicado por el usuario `realrebelai` en HuggingFace. Su nombre y los tags asociados (`w4a8`, `quantized`, `int4`, `low-vram`, `comfyui`) indican que se trata de una versión optimizada para entornos con recursos limitados, empleando cuantización de pesos a 4 bits y activaciones a 8 bits (w4a8). Está diseñado para funcionar con ComfyUI, una herramienta popular de flujos de trabajo para modelos de difusión, y se distribuye en formato `safetensors`.
+El modelo `realrebelai/Rebels_w4a8s` es un modelo de generación de imágenes (text-to-image) cuantizado, publicado por el usuario `realrebelai` en Hugging Face. Su nombre y los tags asociados (`w4a8`, `quantized`, `int4`, `low-vram`, `comfyui`) indican que se trata de una versión optimizada para entornos con recursos limitados, empleando cuantización de pesos a 4 bits y activaciones a 8 bits (w4a8). Está diseñado para funcionar con ComfyUI, una herramienta popular de flujos de trabajo para modelos de difusión, y se distribuye en formato `safetensors`.
 
 Aunque no se dispone de información pública sobre la arquitectura subyacente, el número de parámetros o el dataset de entrenamiento, su orientación a bajo consumo de VRAM y su compatibilidad con ComfyUI lo convierten en una opción interesante para usuarios que necesitan generar imágenes en hardware modesto. El modelo fue creado el 7 de agosto de 2026 y cuenta con 178 descargas y 36 likes en el momento de la consulta, lo que sugiere una adopción temprana pero limitada.
 
@@ -69,4 +69,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: realrebelai/Rebels_w4a8s](https://huggingface.co/realrebelai/Rebels_w4a8s)
+- [Hugging Face: realrebelai/Rebels_w4a8s](https://huggingface.co/realrebelai/Rebels_w4a8s)

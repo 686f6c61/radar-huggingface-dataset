@@ -1,7 +1,7 @@
 # Aman88382/brain_tumor
 
 ## Resumen
-`Aman88382/brain_tumor` es un modelo publicado en HuggingFace por el usuario Aman88382 bajo licencia Apache 2.0. El nombre del repositorio y la libreria declarada (Keras) apuntan a un clasificador de imagenes medicas orientado a la deteccion de tumores cerebrales, pero la model card publicada no contiene ninguna descripcion funcional: se limita a la linea de licencia. No se documenta arquitectura, tarea exacta, dataset ni metricas.
+`Aman88382/brain_tumor` es un modelo publicado en Hugging Face por el usuario Aman88382 bajo licencia Apache 2.0. El nombre del repositorio y la libreria declarada (Keras) apuntan a un clasificador de imagenes medicas orientado a la deteccion de tumores cerebrales, pero la model card publicada no contiene ninguna descripcion funcional: se limita a la linea de licencia. No se documenta arquitectura, tarea exacta, dataset ni metricas.
 
 El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni likes en el momento de la consulta. Se creo y actualizo el 28 de septiembre de 2026, con una diferencia de menos de cuatro minutos entre ambos eventos, lo que sugiere una subida sin mantenimiento posterior ni documentacion adicional.
 
@@ -19,7 +19,7 @@ Por tanto, esta ficha debe leerse como un inventario de lo que se puede verifica
 | Licencia | apache-2.0 |
 | Formato de pesos | Keras (libreria declarada). No se especifica si son ficheros .keras, .h5 o SavedModel |
 | Tamano del repositorio | 0,1 GB |
-| Tarea declarada en el pipeline | no disponible (HuggingFace no asigna pipeline) |
+| Tarea declarada en el pipeline | no disponible (Hugging Face no asigna pipeline) |
 | Fecha de creacion | 2026-09-28 |
 | Ultima actualizacion | 2026-09-28 |
 
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no permite identificar la tarea conc
 - Cero garantias de reproducibilidad: al no publicarse semillas, versiones de librerias ni hiperparametros, los resultados no son replicables.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Aman88382/brain_tumor
+- Modelo en Hugging Face: https://huggingface.co/Aman88382/brain_tumor
 - No se han encontrado en la busqueda web otros enlaces asociados al modelo (paper, blog, repositorio de codigo o demo).

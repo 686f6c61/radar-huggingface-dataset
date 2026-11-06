@@ -90,7 +90,7 @@ La informacion disponible solo permite comparar esta variante con su propio mode
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.5-4B | 4B | BF16 | No especificado en la informacion disponible (la model card del base cita presupuestos de 32.768 a 81.920 tokens en modo pensamiento) | Apache 2.0 | Publico en HuggingFace |
+| Qwen/Qwen3.5-4B | 4B | BF16 | No especificado en la informacion disponible (la model card del base cita presupuestos de 32.768 a 81.920 tokens en modo pensamiento) | Apache 2.0 | Publico en Hugging Face |
 | lazybrick/Qwen3.5-4B-Kiln-AWQ-W4A16-g128 | 4B | AWQ W4A16, INT4 asimetrico, g128 | Ejemplo de despliegue con 32.768 tokens | Apache 2.0 | Publico, pero marcado como trabajo en curso |
 | Otras variantes de la coleccion Kiln | 4B | No disponible | No disponible | Apache 2.0 (presumiblemente) | Referenciadas en la coleccion del autor |
 | Cuantizaciones GGUF / GPTQ de Qwen3.5-4B | 4B | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
@@ -110,7 +110,7 @@ La informacion disponible solo permite comparar esta variante con su propio mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-AWQ-W4A16-g128
+- Modelo en Hugging Face: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-AWQ-W4A16-g128
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Coleccion Kiln (Qwen3.5-4B "Fired Small"): https://huggingface.co/collections/lazybrick/kiln-qwen35-4b-fired-small-6ac04982f4f1ce50a97da56d

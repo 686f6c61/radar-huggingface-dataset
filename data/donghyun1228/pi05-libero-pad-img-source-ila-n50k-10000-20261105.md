@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO PAD vision-head source (este) | VLA derivado de π0.5 con cabezal IDM | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| π0.5 LIBERO PAD vision-head source (este) | VLA derivado de π0.5 con cabezal IDM | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | π0.5 base (Physical Intelligence) | VLA | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | OpenVLA | VLA | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -80,7 +80,7 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-pad-img-source-ila-n50k-10000-20261105
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-pad-img-source-ila-n50k-10000-20261105
 - Repositorio de experimentos referenciado: `Donghyun1228/vla_adaptation` (documentos `docs/naive_probe/pad_baseline_20261104.md` y `docs/naive_probe/ila_baseline_20261105.md`)
 - Script de generación de latentes: `scripts/ila_source_latents.py` (dentro del repositorio de experimentos)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, demos ni repositorios adicionales.

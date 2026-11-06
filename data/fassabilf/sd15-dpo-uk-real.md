@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estandar (FID, CLIP score, etc.) en
 
 | Modelo | Base | Metodo | Datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fassabilf/sd15-dpo-uk-real | SD 1.5 | Diffusion-DPO, brazo "DPO solo" | 400 fotos Pexels; 2.000 pares train / 600 val; 20 ocupaciones UK | CreativeML OpenRAIL-M | HuggingFace, 0 descargas, 0 likes |
+| fassabilf/sd15-dpo-uk-real | SD 1.5 | Diffusion-DPO, brazo "DPO solo" | 400 fotos Pexels; 2.000 pares train / 600 val; 20 ocupaciones UK | CreativeML OpenRAIL-M | Hugging Face, 0 descargas, 0 likes |
 | fassabilf/sd15-ift-uk-real | SD 1.5 | SFT (instrucciones) | mismos datos y protocolo que el brazo DPO | no disponible | referenciado en la model card |
 | Brazo equivalente con datos de EE. UU. (mismo autor) | SD 1.5 | Diffusion-DPO | 44 pasos por epoca, dataset estadounidense | no disponible | mencionado sin enlace |
 | stable-diffusion-v1-5/stable-diffusion-v1-5 | - | preentrenamiento (LAION-5B) | miles de millones de pares imagen-texto | CreativeML OpenRAIL-M | ampliamente disponible |
@@ -114,7 +114,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos: la model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sd15-dpo-uk-real
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sd15-dpo-uk-real
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento y validacion: https://huggingface.co/datasets/fassabilf/ift-train-uk-real (carpeta `dpo/`)
 - Brazo SFT relacionado: https://huggingface.co/fassabilf/sd15-ift-uk-real

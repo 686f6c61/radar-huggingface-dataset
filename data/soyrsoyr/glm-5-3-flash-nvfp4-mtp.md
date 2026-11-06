@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion (backbone / MTP) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soyrsoyr/GLM-5.3-Flash-NVFP4-MTP | 321.323.031.390 | NVFP4 / NVFP4 (weight-only) | no disponible | no disponible | HuggingFace, 0 descargas |
-| RedHatAI/GLM-5.3-Flash-NVFP4 | no disponible (derivado del mismo modelo base) | NVFP4 / FP8 por bloques | no disponible | no disponible | HuggingFace |
-| zai-org/GLM-5.3-Flash | no disponible | original sin cuantizar (presumiblemente BF16) | no disponible | no disponible | HuggingFace |
+| soyrsoyr/GLM-5.3-Flash-NVFP4-MTP | 321.323.031.390 | NVFP4 / NVFP4 (weight-only) | no disponible | no disponible | Hugging Face, 0 descargas |
+| RedHatAI/GLM-5.3-Flash-NVFP4 | no disponible (derivado del mismo modelo base) | NVFP4 / FP8 por bloques | no disponible | no disponible | Hugging Face |
+| zai-org/GLM-5.3-Flash | no disponible | original sin cuantizar (presumiblemente BF16) | no disponible | no disponible | Hugging Face |
 
 La unica diferencia verificable entre los tres checkpoints es el formato de la capa MTP: FP8 por bloques en la version de RedHatAI, NVFP4 con pesos cuantizados y activaciones sin cuantizar en esta variante, y precision original en el modelo de zai-org. No se dispone de datos de rendimiento que permitan comparar calidad o velocidad entre ellos. No se han identificado en la informacion proporcionada otros modelos comparables de la misma categoria.
 
@@ -94,7 +94,7 @@ La unica diferencia verificable entre los tres checkpoints es el formato de la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM-5.3-Flash-NVFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM-5.3-Flash-NVFP4-MTP
 - Modelo base cuantizado: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor

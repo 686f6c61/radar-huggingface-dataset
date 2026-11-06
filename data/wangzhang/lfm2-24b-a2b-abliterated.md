@@ -83,7 +83,7 @@ No se dispone de información sobre otros modelos abliterated con arquitectura h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wangzhang/LFM2-24B-A2B-abliterated
+- Repositorio Hugging Face: https://huggingface.co/wangzhang/LFM2-24B-A2B-abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-24B-A2B
 - Blog de Liquid AI sobre LFM2-24B-A2B: https://www.liquid.ai/blog/lfm2-24b-a2b
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/models/lfm2-24b-a2b

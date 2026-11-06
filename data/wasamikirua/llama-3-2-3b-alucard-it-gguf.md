@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Alucard-IT es un ajuste fino del modelo Llama-3.2-3B-Instruct de Meta, publicado por el usuario WasamiKirua en HuggingFace. Se trata de un modelo conversacional de 3.212.749.888 parametros (aproximadamente 3,2 mil millones) especializado en interpretar el personaje Alucard, el vampiro de la franquicia Hellsing, y en responder en italiano. El repositorio analizado contiene exclusivamente las versiones cuantizadas en formato GGUF del modelo, mientras que los pesos completos en safetensors residen en el repositorio hermano `WasamiKirua/Llama-3.2-3B-Alucard-IT`.
+Llama-3.2-3B-Alucard-IT es un ajuste fino del modelo Llama-3.2-3B-Instruct de Meta, publicado por el usuario WasamiKirua en Hugging Face. Se trata de un modelo conversacional de 3.212.749.888 parametros (aproximadamente 3,2 mil millones) especializado en interpretar el personaje Alucard, el vampiro de la franquicia Hellsing, y en responder en italiano. El repositorio analizado contiene exclusivamente las versiones cuantizadas en formato GGUF del modelo, mientras que los pesos completos en safetensors residen en el repositorio hermano `WasamiKirua/Llama-3.2-3B-Alucard-IT`.
 
 La relevancia de esta publicacion es doble. Por un lado, demuestra un flujo de trabajo de destilacion de estilo a bajo coste: un modelo profesor local (`qwen3.6`) genero las respuestas de entrenamiento en ingles, que despues fueron traducidas al italiano con TranslateGemma. Por otro, ilustra el uso de LoRA con Unsloth para adaptar un modelo base de 3B a una voz de personaje muy concreta con un conjunto de datos reducido (800 respuestas de entrenamiento), fusionando despues el adaptador a 16 bits antes de generar las cuantizaciones GGUF.
 

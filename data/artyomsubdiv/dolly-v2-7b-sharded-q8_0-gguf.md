@@ -56,7 +56,7 @@ La innovación técnica relevante en este artefacto es, por tanto, la de la cade
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio ni los metadatos de HuggingFace incluyen métricas de MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, y la búsqueda web realizada no devolvió resultados relevantes sobre este modelo.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio ni los metadatos de Hugging Face incluyen métricas de MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, y la búsqueda web realizada no devolvió resultados relevantes sobre este modelo.
 
 ## Requisitos de hardware
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArtyomSubDiv/dolly-v2-7b-sharded-Q8_0-GGUF | 6,86 B | No disponible (ejemplos con `-c 2048`) | GGUF Q8_0 | MIT | Publico en HuggingFace; 0 descargas, 0 likes |
-| ethzanalytics/dolly-v2-7b-sharded (modelo base) | 6,86 B (mismo checkpoint de origen) | No disponible en la informacion proporcionada | safetensors (troceado) | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| ArtyomSubDiv/dolly-v2-7b-sharded-Q8_0-GGUF | 6,86 B | No disponible (ejemplos con `-c 2048`) | GGUF Q8_0 | MIT | Publico en Hugging Face; 0 descargas, 0 likes |
+| ethzanalytics/dolly-v2-7b-sharded (modelo base) | 6,86 B (mismo checkpoint de origen) | No disponible en la informacion proporcionada | safetensors (troceado) | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros modelos comparables de 7 B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks, contexto o rendimiento de alternativas comparables dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa rigurosa frente a otros modelos de 7B de la misma categoría.
@@ -89,11 +89,11 @@ No se dispone de datos de benchmarks, contexto o rendimiento de alternativas com
 - Estado del repositorio: 0 descargas y 0 likes implican ausencia de validación por parte de la comunidad; no hay informes de terceros sobre fallos de conversión o degradación de la cuantización.
 - Cuantización Q8_0: aunque es una cuantización de alta fidelidad, introduce una pérdida de precisión respecto a los pesos en FP16 del modelo base. Si se necesita la máxima calidad, hay que usar el modelo original en safetensors.
 - Licencia: el repositorio se distribuye bajo MIT, lo que permite uso comercial, pero conviene revisar por separado los términos del dataset de instrucciones `databricks/databricks-dolly-15k` y del modelo base antes de un despliegue comercial.
-- Fecha de publicación: los metadatos de HuggingFace indican creación el 20 de septiembre de 2026 y última actualización el mismo día, apenas 31 segundos después, lo que sugiere una publicación automatizada sin revisión posterior.
+- Fecha de publicación: los metadatos de Hugging Face indican creación el 20 de septiembre de 2026 y última actualización el mismo día, apenas 31 segundos después, lo que sugiere una publicación automatizada sin revisión posterior.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/ArtyomSubDiv/dolly-v2-7b-sharded-Q8_0-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/ArtyomSubDiv/dolly-v2-7b-sharded-Q8_0-GGUF
 - Modelo base: https://huggingface.co/ethzanalytics/dolly-v2-7b-sharded
 - Dataset de ajuste: https://huggingface.co/datasets/databricks/databricks-dolly-15k
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

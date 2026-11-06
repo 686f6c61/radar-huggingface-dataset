@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sw24/dbw es un repositorio de modelos publicado en HuggingFace por el usuario sw24 bajo licencia Apache 2.0. Se trata de un repositorio de gran tamano (103,7 GB) creado el 30 de septiembre de 2026, sin pipeline declarado, sin idiomas declarados y sin model card mas alla de la linea de licencia. No hay informacion publica sobre su arquitectura, su proceso de entrenamiento ni sus capacidades.
+sw24/dbw es un repositorio de modelos publicado en Hugging Face por el usuario sw24 bajo licencia Apache 2.0. Se trata de un repositorio de gran tamano (103,7 GB) creado el 30 de septiembre de 2026, sin pipeline declarado, sin idiomas declarados y sin model card mas alla de la linea de licencia. No hay informacion publica sobre su arquitectura, su proceso de entrenamiento ni sus capacidades.
 
 El impacto y las descargas registradas en el momento de la consulta son cero, y la busqueda web no ha devuelto ninguna referencia tecnica al modelo: los resultados obtenidos corresponden a un leaderboard generico de modelos, a un fichero CAD homonimo alojado en GrabCAD y a dos agregadores de lanzamientos de IA, ninguno de ellos relacionado con este repositorio. Por tanto, no es posible verificar que se trate de un modelo entrenado desde cero, de un fine-tuning, de una conversion de pesos o de un merge.
 
@@ -82,7 +82,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw24/dbw
+- Hugging Face: https://huggingface.co/sw24/dbw
 
 Resultados de la busqueda web: ninguno de los enlaces obtenidos guarda relacion con este modelo. Se listan a continuacion unicamente para dejar constancia de que fueron descartados:
 

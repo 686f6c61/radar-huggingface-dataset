@@ -101,8 +101,8 @@ La comparación con LLM generalistas no es directa: FarZenith gana en fidelidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kolgrim/farzenith-small-v1
-- Repositorio de código incluido en el modelo: carpeta `code/` del repositorio HuggingFace (paquete `zenith`, licencia Apache 2.0)
+- Modelo en Hugging Face: https://huggingface.co/Kolgrim/farzenith-small-v1
+- Repositorio de código incluido en el modelo: carpeta `code/` del repositorio Hugging Face (paquete `zenith`, licencia Apache 2.0)
 - Documentación del mapa de cielo oscuro: `code/docs/data/darksky.md` dentro del repositorio
 - World Atlas of Artificial Night Sky Brightness (Falchi et al. 2016): doi:10.5880/GFZ.1.4.2016.001
 - GeoNames: https://www.geonames.org (CC BY 4.0)

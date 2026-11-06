@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Pro-RL-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo XiaomiMiMo/MiMo-V2.6-Pro-RL, publicado por el usuario AesSedai en HuggingFace. No es un modelo entrenado desde cero, sino una conversion y compresion del modelo base de Xiaomi, que ronda los 1,02 billones (1.023.182.841.600) de parametros totales, a formatos ejecutables con llama.cpp y herramientas compatibles.
+MiMo-V2.6-Pro-RL-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo XiaomiMiMo/MiMo-V2.6-Pro-RL, publicado por el usuario AesSedai en Hugging Face. No es un modelo entrenado desde cero, sino una conversion y compresion del modelo base de Xiaomi, que ronda los 1,02 billones (1.023.182.841.600) de parametros totales, a formatos ejecutables con llama.cpp y herramientas compatibles.
 
 El modelo base es una arquitectura de mezcla de expertos (MoE) con expertos en formato MXFP4. La propuesta diferencial del repositorio es cuantizar de forma agresiva las matrices FFN (UP, GATE y DOWN), que son mucho mayores que el resto de tensores, manteniendo el resto en alta precision para reducir el tamano total con una perdida de calidad controlada. Se ofrecen cinco variantes: MXFP4 (calidad completa, 4,52 BPW), BPW3.5, BPW3.0, BPW2.5 y BPW2.0, cada una con metricas de perplejidad (PPL) y divergencia KL (KLD) publicadas.
 
@@ -100,6 +100,6 @@ Comparativa con modelos alternativos de la misma categoria (mismo tamano o misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AesSedai/MiMo-V2.6-Pro-RL-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AesSedai/MiMo-V2.6-Pro-RL-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - PR de bpw-size de llama.cpp (referenciado en la model card): https://github.com/ggml-org/llama.cpp/pull/15550

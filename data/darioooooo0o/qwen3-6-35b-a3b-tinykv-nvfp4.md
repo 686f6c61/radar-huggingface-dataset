@@ -101,7 +101,7 @@ La comparación se limita a la familia Qwen3.6 porque la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV-NVFP4
 - Modelo base TinyKV (receta de conversión y tablas de calidad): https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV
 - GGUF del modelo base: https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV-GGUF
 - Cuantización NVFP4 de NVIDIA: https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4

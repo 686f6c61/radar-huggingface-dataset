@@ -88,9 +88,9 @@ No se han identificado modelos públicos comparables de terceros en la informaci
 
 | Modelo | Tipo | Datos / pasos | beta_bc | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (ronda 1, etapa 1) | Actor residual + 5 críticos sobre π₀.₅ + RLT congelada | 101 episodios, 37.813 fotogramas, 1.500 pasos cada variante | 5 / 15 / 70 / 100 | apache-2.0 | Público en HuggingFace (0,7 GB) |
-| `spiral-so101-rlt12-lehome-r1b-teleop57-daggerrlt1-rm1fix12-b30-mc05-bs32-5k` (r1b) | Mismo esquema, mismos datos | 101 episodios, 5.000 pasos, MC 0.5, suavizado de objetivo activado | 30 | apache-2.0 (según el repositorio relacionado) | Público en HuggingFace |
-| `pi05-so101-rlt12-lehome-s3-daggerrlt1-15fps-b32-10k` (política base) | Política VLA π₀.₅ + RLT congelada, paso 9999 | No especificado en la información | no aplica | apache-2.0 (según el repositorio relacionado) | Público en HuggingFace; requerida y no incluida |
+| Este repositorio (ronda 1, etapa 1) | Actor residual + 5 críticos sobre π₀.₅ + RLT congelada | 101 episodios, 37.813 fotogramas, 1.500 pasos cada variante | 5 / 15 / 70 / 100 | apache-2.0 | Público en Hugging Face (0,7 GB) |
+| `spiral-so101-rlt12-lehome-r1b-teleop57-daggerrlt1-rm1fix12-b30-mc05-bs32-5k` (r1b) | Mismo esquema, mismos datos | 101 episodios, 5.000 pasos, MC 0.5, suavizado de objetivo activado | 30 | apache-2.0 (según el repositorio relacionado) | Público en Hugging Face |
+| `pi05-so101-rlt12-lehome-s3-daggerrlt1-15fps-b32-10k` (política base) | Política VLA π₀.₅ + RLT congelada, paso 9999 | No especificado en la información | no aplica | apache-2.0 (según el repositorio relacionado) | Público en Hugging Face; requerida y no incluida |
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ No se han identificado modelos públicos comparables de terceros en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-stage1-beta-teleop57-dagger44-rm1fix12-fresh-1500
+- Modelo en Hugging Face: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-stage1-beta-teleop57-dagger44-rm1fix12-fresh-1500
 - Política base requerida: https://huggingface.co/Nadeem-Shoukath115113/pi05-so101-rlt12-lehome-s3-daggerrlt1-15fps-b32-10k
 - Ejecución relacionada r1b (beta 30, 5.000 pasos): https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-lehome-r1b-teleop57-daggerrlt1-rm1fix12-b30-mc05-bs32-5k
 - Registros de W&B (`spiral-rlt12-stage1-beta`): `up4f3x0r` (beta 5), `ndwoxn6x` (beta 15), `vx76htg2` (beta 70), `wjsxqfh2` (beta 100)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`masterofnone00/qwen3-4b-jsmill-persona-GGUF` es un ajuste fino del modelo base Qwen3-4B, distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El autor del repositorio es el usuario de HuggingFace `masterofnone00` y el entrenamiento y la conversion a GGUF se realizaron con la herramienta Unsloth, segun la propia model card. El modelo cuenta con 4.022.468.096 parametros totales y un repositorio de 2,5 GB, coherente con un unico fichero cuantizado en Q4_K_M.
+`masterofnone00/qwen3-4b-jsmill-persona-GGUF` es un ajuste fino del modelo base Qwen3-4B, distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El autor del repositorio es el usuario de Hugging Face `masterofnone00` y el entrenamiento y la conversion a GGUF se realizaron con la herramienta Unsloth, segun la propia model card. El modelo cuenta con 4.022.468.096 parametros totales y un repositorio de 2,5 GB, coherente con un unico fichero cuantizado en Q4_K_M.
 
 La caracteristica diferencial respecto al Qwen3-4B original es el sufijo `jsmill-persona`, que indica un ajuste fino orientado a una persona conversacional concreta. La model card no documenta el origen ni la composicion del dataset de ajuste, ni el procedimiento exacto de entrenamiento, por lo que la naturaleza precisa de esa persona (el identificador sugiere una referencia al filosofo John Stuart Mill, sin que esto se confirme en la documentacion) no puede verificarse con la informacion disponible.
 
@@ -90,10 +90,10 @@ Notas sobre la tabla: los datos de los modelos alternativos proceden de su docum
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/masterofnone00/qwen3-4b-jsmill-persona-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/masterofnone00/qwen3-4b-jsmill-persona-GGUF
 - Fichero de pesos: `qwen3-4b.Q4_K_M.gguf` (dentro del repositorio anterior)
 - Unsloth (herramienta usada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime compatible): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue mediante el Modelfile incluido): https://ollama.com
 
-No se han encontrado en la informacion proporcionada papers, blogs tecnicos, demos ni repositorios adicionales asociados especificamente a este fine-tune. No hay model card del modelo base enlazada desde el repositorio; para consultar las especificaciones oficiales de Qwen3-4B debe acudirse a la organizacion Qwen en HuggingFace.
+No se han encontrado en la informacion proporcionada papers, blogs tecnicos, demos ni repositorios adicionales asociados especificamente a este fine-tune. No hay model card del modelo base enlazada desde el repositorio; para consultar las especificaciones oficiales de Qwen3-4B debe acudirse a la organizacion Qwen en Hugging Face.

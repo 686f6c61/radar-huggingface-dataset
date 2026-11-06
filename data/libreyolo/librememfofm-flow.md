@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/entrada | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMEMFOFm-flow | no disponible | 3 fotogramas | Flujo óptico multi-fotograma, alta resolución | BSD-3-Clause | HuggingFace (LibreYOLO) |
-| MEMFOF-Tartan-T-TSKH (upstream) | no disponible | 3 fotogramas | Igual (checkpoint original) | BSD-3-Clause (heredada) | HuggingFace (egorchistov) |
+| LibreMEMFOFm-flow | no disponible | 3 fotogramas | Flujo óptico multi-fotograma, alta resolución | BSD-3-Clause | Hugging Face (LibreYOLO) |
+| MEMFOF-Tartan-T-TSKH (upstream) | no disponible | 3 fotogramas | Igual (checkpoint original) | BSD-3-Clause (heredada) | Hugging Face (egorchistov) |
 | Otros estimadores de flujo (RAFT, FlowFormer, etc.) | no disponible en la información | 2 fotogramas habitualmente | Flujo óptico de dos fotogramas | varía | varía |
 
 No se dispone de datos numéricos de rendimiento para establecer una comparación cuantitativa con RAFT, FlowFormer u otros estimadores. La comparación se limita a aspectos estructurales y de licencia.
@@ -82,7 +82,7 @@ No se dispone de datos numéricos de rendimiento para establecer una comparació
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/LibreYOLO/LibreMEMFOFm-flow
+- Hugging Face del modelo: https://huggingface.co/LibreYOLO/LibreMEMFOFm-flow
 - Checkpoint upstream: https://huggingface.co/egorchistov/optical-flow-MEMFOF-Tartan-T-TSKH
 - Repositorio de código upstream: https://github.com/msu-video-group/memfof
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo

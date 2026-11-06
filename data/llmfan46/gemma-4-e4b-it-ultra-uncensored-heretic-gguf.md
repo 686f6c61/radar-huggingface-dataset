@@ -6,7 +6,7 @@ Gemma-4-E4B-it-ultra-uncensored-heretic-GGUF es la version cuantizada en formato
 
 El modelo parte de los 7.518.069.290 parametros reales (≈7,5 B) del checkpoint original en safetensors, aunque la nomenclatura "E4B" hace referencia a la convencion de parametros efectivos de la familia Gemma. La intervencion se realizo con la herramienta Heretic v1.2.0 empleando el metodo Arbitrary-Rank Ablation (ARA) sobre la capa de proyeccion de salida de atencion (`attn.o_proj`). Segun la model card, la tasa de rechazos pasa de 99/100 en el modelo original a 3/100 en esta version, con una divergencia KL de 0,0076 respecto al original.
 
-Su relevancia actual radica en dos factores: por un lado, ofrece una alternativa de pesos abiertos (licencia declarada apache-2.0 en HuggingFace) para desarrolladores que necesitan un modelo multimodal ligero y desplegable en GPU de consumo; por otro, documenta un caso de estudio reproducible de ablacion de rechazos con metricas de degradacion (PIQA, MMLU) que permiten evaluar el coste real de este tipo de modificaciones.
+Su relevancia actual radica en dos factores: por un lado, ofrece una alternativa de pesos abiertos (licencia declarada apache-2.0 en Hugging Face) para desarrolladores que necesitan un modelo multimodal ligero y desplegable en GPU de consumo; por otro, documenta un caso de estudio reproducible de ablacion de rechazos con metricas de degradacion (PIQA, MMLU) que permiten evaluar el coste real de este tipo de modificaciones.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en dos factores: por un lado, ofrece una alternativa
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF: BF16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (metadatos HuggingFace); la model card enlaza a la licencia oficial de Gemma 4 (https://ai.google.dev/gemma/docs/gemma_4_license), lo que genera ambiguedad |
+| Licencia | apache-2.0 (metadatos Hugging Face); la model card enlaza a la licencia oficial de Gemma 4 (https://ai.google.dev/gemma/docs/gemma_4_license), lo que genera ambiguedad |
 | Formato de pesos | GGUF (cuantizado); el modelo base se publica en safetensors |
 
 ## Arquitectura y entrenamiento
@@ -91,9 +91,9 @@ No hay informacion suficiente para comparar con modelos de otros autores de la m
 - La reduccion de rechazos implica que el modelo puede generar contenido sensible, ofensivo o inapropiado sin filtros. No es apto para despliegues publicos sin moderacion adicional.
 - La edicion por abliteration puede degradar sutilmente el comportamiento en tareas donde el rechazo actuaba como senal de seguridad. La caida de MMLU (−0,86 pp) y PIQA (−0,17 pp) es pequena pero real, y la divergencia KL de 0,0076 confirma que la distribucion de salida no es identica al original.
 - Riesgo de alucinacion: no se documentan tasas de alucinacion especificas; al tratarse de un modelo de ~7,5 B, la tasa esperable es mayor que en modelos de mayor tamano.
-- Ambiguedad de licencia: los metadatos de HuggingFace indican apache-2.0, pero la model card enlaza a la licencia oficial de Gemma 4, que impone restricciones de uso (incluidas clausulas de uso aceptable). Antes de un uso comercial es imprescindible verificar cual aplica realmente al modelo base.
+- Ambiguedad de licencia: los metadatos de Hugging Face indican apache-2.0, pero la model card enlaza a la licencia oficial de Gemma 4, que impone restricciones de uso (incluidas clausulas de uso aceptable). Antes de un uso comercial es imprescindible verificar cual aplica realmente al modelo base.
 - No se dispone de informacion sobre idiomas soportados, longitud de contexto ni comportamiento multilingue; conviene validar estos extremos en el caso de uso concreto.
-- El autor advierte en la propia model card que ha alcanzado el limite de almacenamiento gratuito de HuggingFace y que podria no publicar nuevos modelos; esto afecta a la sostenibilidad y al mantenimiento del repositorio.
+- El autor advierte en la propia model card que ha alcanzado el limite de almacenamiento gratuito de Hugging Face y que podria no publicar nuevos modelos; esto afecta a la sostenibilidad y al mantenimiento del repositorio.
 - El modelo original Gemma 4 incorpora un proyector de vision, pero la informacion proporcionada esta truncada, por lo que no se puede confirmar el alcance exacto del soporte multimodal en esta version cuantizada.
 - La fecha de actualizacion del repositorio (2026-05-28) y su elevado numero de descargas (65.217) sugieren cierta adopcion, pero no sustituyen una validacion propia.
 

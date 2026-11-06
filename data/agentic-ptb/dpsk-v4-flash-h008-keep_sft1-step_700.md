@@ -75,7 +75,7 @@ La comparación directa con DeepSeek-V4-Flash no es significativa por la diferen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h008.keep_sft1.step_700
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h008.keep_sft1.step_700
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Referencia del driver (DeepSeek-V4-Flash): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

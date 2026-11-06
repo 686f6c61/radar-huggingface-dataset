@@ -78,7 +78,7 @@ GLM-5.3-Flash se posiciona como una alternativa abierta y más económica a mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/servantofares/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/servantofares/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5 (arxiv): https://arxiv.org/abs/2602.15763
 - Documentación de la API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Fsneto82/teste` es un modelo alojado en HuggingFace que, según la información disponible, no contiene una model card sustantiva ni metadatos técnicos. El autor, Fsneto82, lo publicó con licencia Apache-2.0, pero no se especifican arquitectura, tamaño, contexto ni capacidades. La fecha de creación y actualización es el 24 de agosto de 2026, y no registra descargas ni valoraciones. Todo apunta a que se trata de un repositorio de prueba o un placeholder sin contenido real.
+El repositorio `Fsneto82/teste` es un modelo alojado en Hugging Face que, según la información disponible, no contiene una model card sustantiva ni metadatos técnicos. El autor, Fsneto82, lo publicó con licencia Apache-2.0, pero no se especifican arquitectura, tamaño, contexto ni capacidades. La fecha de creación y actualización es el 24 de agosto de 2026, y no registra descargas ni valoraciones. Todo apunta a que se trata de un repositorio de prueba o un placeholder sin contenido real.
 
 Dado que no se dispone de información técnica verificable, esta ficha se limita a documentar la ausencia de datos y a señalar las limitaciones para cualquier uso práctico. No se puede evaluar el modelo ni compararlo con alternativas.
 
@@ -57,4 +57,4 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- [HuggingFace: Fsneto82/teste](https://huggingface.co/Fsneto82/teste)
+- [Hugging Face: Fsneto82/teste](https://huggingface.co/Fsneto82/teste)

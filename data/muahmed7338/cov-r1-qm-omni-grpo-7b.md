@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `muahmed7338/cov-r1-qm-omni-grpo-7b` es un ajuste fino de un modelo base de la familia Qwen2, entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo introducida en DeepSeekMath. El autor, muahmed7338, ha publicado este modelo en HuggingFace con el pipeline de generación de texto, aunque la model card es extremadamente escasa: no se especifica el modelo base exacto, el dataset de entrenamiento ni las tareas concretas para las que fue optimizado.
+El modelo `muahmed7338/cov-r1-qm-omni-grpo-7b` es un ajuste fino de un modelo base de la familia Qwen2, entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo introducida en DeepSeekMath. El autor, muahmed7338, ha publicado este modelo en Hugging Face con el pipeline de generación de texto, aunque la model card es extremadamente escasa: no se especifica el modelo base exacto, el dataset de entrenamiento ni las tareas concretas para las que fue optimizado.
 
 El nombre del modelo sugiere una combinación de elementos: "cov" podría referirse a cobertura o a un dataset específico, "r1" evoca la familia de modelos de razonamiento tipo DeepSeek-R1, "qm" podría indicar Qwen-Multimodal u otra variante, y "omni" apunta a capacidades multimodales, aunque el pipeline declarado es únicamente text-generation. Con 7.615.616.512 parámetros (aproximadamente 7,6B), se sitúa en la gama de modelos medianos que pueden ejecutarse en hardware de consumo con cuantización adecuada.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 7,6B parámetros en FP16, se necesitan aproximadamente 15 GB de VRAM. Con cuantización INT8, unos 8 GB; con INT4, unos 4-5 GB.
 - GPU recomendadas: para FP16, una RTX 4090 (24 GB) o A100 (40/80 GB). Para cuantización INT4, una RTX 3060 (12 GB) o superior.
 - Compatibilidad con GPU consumer: sí, con cuantización adecuada puede ejecutarse en GPUs de gama media-alta.
-- Opciones de despliegue: al estar en formato safetensors, es compatible con HuggingFace Transformers, vLLM, TGI y llama.cpp (si se convierte a GGUF). No se proporcionan archivos GGUF ni configuraciones específicas.
+- Opciones de despliegue: al estar en formato safetensors, es compatible con Hugging Face Transformers, vLLM, TGI y llama.cpp (si se convierte a GGUF). No se proporcionan archivos GGUF ni configuraciones específicas.
 - Latencia y throughput: no disponible. Dependerá del hardware y la cuantización utilizada.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa muestra que el modelo evaluado carece de la documentación y los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muahmed7338/cov-r1-qm-omni-grpo-7b
+- Modelo en Hugging Face: https://huggingface.co/muahmed7338/cov-r1-qm-omni-grpo-7b
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Qwen2.5-Omni (posible inspiración): https://github.com/QwenLM/Qwen2.5-Omni

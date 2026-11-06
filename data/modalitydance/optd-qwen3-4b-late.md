@@ -67,7 +67,7 @@ La model card advierte de que las comparaciones con el paper requieren el checkp
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OPTD-Qwen3-4B-Late | 4,41 mil millones | no disponible | Destilación on-policy de transición (math, coding), modo no-thinking | no disponible (remite a upstream) | Pesos BF16 en HuggingFace, 0 descargas |
+| OPTD-Qwen3-4B-Late | 4,41 mil millones | no disponible | Destilación on-policy de transición (math, coding), modo no-thinking | no disponible (remite a upstream) | Pesos BF16 en Hugging Face, 0 descargas |
 | Qwen/Qwen3-4B (base) | ~4 mil millones | consultar ficha del base | Modelo generalista con modo thinking y no-thinking | según ficha del base | Ampliamente disponible |
 | Qwen2.5-3B-Instruct | ~3 mil millones | consultar ficha del modelo | Instruct generalista, familia anterior | según ficha del modelo | Ampliamente disponible |
 | Llama-3.2-3B-Instruct | ~3 mil millones | consultar ficha del modelo | Instruct generalista multilingüe | licencia comunitaria de Llama | Ampliamente disponible |
@@ -86,11 +86,11 @@ No se dispone de datos de benchmarks de este checkpoint que permitan una compara
 - Adopción nula: 0 descargas y 0 likes en el momento de la consulta, sin validación independiente por parte de la comunidad.
 - Sesgos: no documentados; al derivar de Qwen3-4B, hereda los sesgos del corpus del modelo base, no evaluados en esta ficha.
 - Empaquetado: no se distribuyen estados del optimizador ni shards de entrenamiento, lo que limita la reproducibilidad completa del proceso; solo hay checksums de los ficheros subidos.
-- Fecha de publicación en metadatos de HuggingFace: 19 de octubre de 2026; verificar vigencia y posibles actualizaciones del repositorio.
+- Fecha de publicación en metadatos de Hugging Face: 19 de octubre de 2026; verificar vigencia y posibles actualizaciones del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ModalityDance/OPTD-Qwen3-4B-Late
+- Modelo en Hugging Face: https://huggingface.co/ModalityDance/OPTD-Qwen3-4B-Late
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Paper *On-Policy Transition Distillation*: no se ha localizado el enlace en la información proporcionada
 - Repositorio de código o demo: no disponible

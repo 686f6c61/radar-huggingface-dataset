@@ -85,7 +85,7 @@ No se dispone de información sobre otros adaptadores comparables de planificaci
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AntCoder-Planner-7B | Adaptador LoRA sobre base de 7B (r=16, alpha=32) | 2.048 tokens (entrenamiento) | Sin métricas publicadas | Apache 2.0 | Repositorio HuggingFace, 0 descargas, 1 like |
+| AntCoder-Planner-7B | Adaptador LoRA sobre base de 7B (r=16, alpha=32) | 2.048 tokens (entrenamiento) | Sin métricas publicadas | Apache 2.0 | Repositorio Hugging Face, 0 descargas, 1 like |
 | Qwen2.5-Coder-7B-Instruct | 7B | No indicado en la información proporcionada (el modelo base declara un contexto nativo superior en su propia ficha) | Métricas públicas del modelo base, no incluidas en esta información | Apache 2.0 | Modelo base ampliamente distribuido |
 | Otros planificadores o adaptadores de descomposición de tareas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -106,7 +106,7 @@ La ventaja diferencial del adaptador es la salida JSON estructurada con invarian
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tornado9991/antcoder-planner-7b
+- Repositorio Hugging Face: https://huggingface.co/Tornado9991/antcoder-planner-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper: no disponible.
 - Blog técnico o repositorio del proyecto AntCoder / ApexCoder: no disponible.

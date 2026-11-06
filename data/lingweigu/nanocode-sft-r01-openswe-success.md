@@ -73,8 +73,8 @@ Datos de entrenamiento asociados: 2.124 actualizaciones, 1 época, 3,14 B tokens
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| LingweiGu/nanocode-sft-r01-openswe-success | ≈2,5 B (denso) | 131.072 tokens | Apache-2.0 | sin benchmarks publicados; pérdida de validación 0,240 | pesos safetensors en HuggingFace, 0 descargas |
-| eigentom/nanocode_sft_60b (modelo base) | ≈2,5 B (denso) | 131.072 tokens | Apache-2.0 (según el modelo base) | no comparable: sin cifras en esta ficha | pesos safetensors en HuggingFace |
+| LingweiGu/nanocode-sft-r01-openswe-success | ≈2,5 B (denso) | 131.072 tokens | Apache-2.0 | sin benchmarks publicados; pérdida de validación 0,240 | pesos safetensors en Hugging Face, 0 descargas |
+| eigentom/nanocode_sft_60b (modelo base) | ≈2,5 B (denso) | 131.072 tokens | Apache-2.0 (según el modelo base) | no comparable: sin cifras en esta ficha | pesos safetensors en Hugging Face |
 | Qwen2.5-Coder-3B-Instruct | 3,09 B (denso) | 32.768 tokens | Apache-2.0 | no comparable: sin cifras en esta ficha | pesos safetensors y cuantizaciones GGUF/AWQ/GPTQ |
 | Llama-3.2-3B-Instruct | 3,21 B (denso) | 128.000 tokens | Llama 3.2 Community License | no comparable: sin cifras en esta ficha | pesos safetensors y GGUF |
 
@@ -94,7 +94,7 @@ Diferencias clave: frente a Qwen2.5-Coder-3B, este checkpoint cuadruplica la ven
 - Con 0 descargas y 0 likes, el modelo no tiene validación por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/LingweiGu/nanocode-sft-r01-openswe-success
+- Modelo en Hugging Face: https://huggingface.co/LingweiGu/nanocode-sft-r01-openswe-success
 - Modelo base (eigentom/nanocode_sft_60b, checkpoint-8900): https://huggingface.co/eigentom/nanocode_sft_60b
 - Dataset de entrenamiento (nvidia/Open-SWE-Traces, revisión f8fb5b3d): https://huggingface.co/datasets/nvidia/Open-SWE-Traces
 - Artículos, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

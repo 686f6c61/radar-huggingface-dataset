@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Magnexis/lexiconerror-router
+- Modelo en Hugging Face: https://huggingface.co/Magnexis/lexiconerror-router
 - Dataset de entrenamiento: https://huggingface.co/datasets/Magnexis/lexiconerror-diagnostics
 - Repositorio GitHub relacionado (no oficial): https://github.com/theworker02/lexicon-error
 - Documentación del dataset en GitHub: https://github.com/theworker02/lexicon-error/blob/main/README.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xe-droplychee-v2`, desarrollado por MD-Mushfiqur123, es un modelo de lenguaje autoregresivo basado en una arquitectura personalizada denominada `xe_droplychee`. Se trata de un modelo de mezcla de expertos (MoE) de aproximadamente 6,5 mil millones de parámetros totales, con unos 450 millones de parámetros activos por token. Está diseñado para generar texto en bengalí e inglés y se publica bajo licencia Apache-2.0. Aunque el identificador en HuggingFace es `xe-droplychee-v2`, el README del autor lo denomina `m-droplychee`.
+El modelo `xe-droplychee-v2`, desarrollado por MD-Mushfiqur123, es un modelo de lenguaje autoregresivo basado en una arquitectura personalizada denominada `xe_droplychee`. Se trata de un modelo de mezcla de expertos (MoE) de aproximadamente 6,5 mil millones de parámetros totales, con unos 450 millones de parámetros activos por token. Está diseñado para generar texto en bengalí e inglés y se publica bajo licencia Apache-2.0. Aunque el identificador en Hugging Face es `xe-droplychee-v2`, el README del autor lo denomina `m-droplychee`.
 
 La arquitectura incorpora varias innovaciones técnicas: atención latente multi-cabeza (MLA) con normalización de cabezas Q/K para reducir el consumo de memoria del KV-cache en torno al 90 %, una capa de mezcla de expertos de grano fino con 64 expertos enrutados más un experto compartido, predicción multi-token (MTP) de profundidad 1 y un motor de aprendizaje por refuerzo GRPO nativo. El modelo está optimizado para pre-entrenamiento continuado en estaciones de trabajo con 94 o 96 GB de VRAM, como la NVIDIA RTX PRO 6000. No se han publicado resultados de benchmarks en la información disponible.
 
@@ -80,6 +80,6 @@ La siguiente tabla compara características estructurales con otros modelos MoE 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MD-Mushfiqur123/xe-droplychee-v2
+- Modelo en Hugging Face: https://huggingface.co/MD-Mushfiqur123/xe-droplychee-v2
 - Organización Drop Lychee: https://huggingface.co/droplychee/models
 - Modelo anterior del autor: https://huggingface.co/MD-Mushfiqur123/droplychee-1.1

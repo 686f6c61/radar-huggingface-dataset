@@ -89,6 +89,6 @@ La principal diferencia frente a cuantizaciones estándar es el tamaño reducido
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/zhangrover/Qwen3.6-27B-KQVQ4-IQ3Floor-10G-MTP-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/zhangrover/Qwen3.6-27B-KQVQ4-IQ3Floor-10G-MTP-GGUF
 - Modelo base (nerkyor): https://huggingface.co/nerkyor/Qwen3.6-27B-DSV4Pro-GLM52-SFT-GPT55-RL-Coding-GGUF
 - No se proporcionan papers, blogs o demos adicionales en la información disponible.

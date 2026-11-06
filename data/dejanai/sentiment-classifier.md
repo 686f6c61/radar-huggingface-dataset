@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dejanai/sentiment-classifier` es un ajuste fino del modelo base `google/gemma-3-270m` (la variante base, no la instruct) al que se le ha añadido una cabeza de clasificación de 7 clases para análisis de sentimiento. Lo desarrolla el usuario de HuggingFace `dejanai` y resuelve un problema concreto: clasificar segmentos cortos de texto (frases, encabezados, viñetas, filas de tabla) en una escala granular de siete niveles de sentimiento, desde "muy positivo" hasta "muy negativo", en lugar de la dicotomía habitual positivo/negativo.
+`dejanai/sentiment-classifier` es un ajuste fino del modelo base `google/gemma-3-270m` (la variante base, no la instruct) al que se le ha añadido una cabeza de clasificación de 7 clases para análisis de sentimiento. Lo desarrolla el usuario de Hugging Face `dejanai` y resuelve un problema concreto: clasificar segmentos cortos de texto (frases, encabezados, viñetas, filas de tabla) en una escala granular de siete niveles de sentimiento, desde "muy positivo" hasta "muy negativo", en lugar de la dicotomía habitual positivo/negativo.
 
 El modelo es relevante por su tamaño reducido (268 millones de parámetros) y su enfoque en granularidad fina del sentimiento, algo poco común en clasificadores ligeros. Está entrenado exclusivamente con datos sintéticos generados por Gemini 3.8 Flash y etiquetados por el mismo modelo, lo que constituye tanto su principal virtud (volumen y consistencia) como su principal limitación (no hay validación con texto humano real).
 
@@ -84,9 +84,9 @@ El autor advierte que el conjunto de test es sintético y fue etiquetado por el 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dejanai/sentiment-classifier | 268 M | 128 tokens | Clasificación 7 niveles | Gemma Terms of Use | HuggingFace |
-| google/gemma-3-270m (base) | 268 M | no disponible | Modelo de lenguaje base | Gemma Terms of Use | HuggingFace |
-| Clasificadores BERT/RoBERTa de sentimiento (p. ej. `cardiffnlp/twitter-roberta-base-sentiment-latest`) | ~125 M | 512 tokens | Clasificación 3 niveles | MIT / varias | HuggingFace |
+| dejanai/sentiment-classifier | 268 M | 128 tokens | Clasificación 7 niveles | Gemma Terms of Use | Hugging Face |
+| google/gemma-3-270m (base) | 268 M | no disponible | Modelo de lenguaje base | Gemma Terms of Use | Hugging Face |
+| Clasificadores BERT/RoBERTa de sentimiento (p. ej. `cardiffnlp/twitter-roberta-base-sentiment-latest`) | ~125 M | 512 tokens | Clasificación 3 niveles | MIT / varias | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, contexto y licencia.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dejanai/sentiment-classifier
+- Modelo en Hugging Face: https://huggingface.co/dejanai/sentiment-classifier
 - Modelo base: https://huggingface.co/google/gemma-3-270m
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

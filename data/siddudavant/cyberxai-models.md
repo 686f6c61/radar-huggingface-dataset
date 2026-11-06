@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CyberXAI es un framework de detección y clasificación de amenazas cibernéticas publicado en HuggingFace por el usuario siddudavant. No se trata de un modelo de lenguaje, sino de un conjunto de clasificadores de machine learning agrupados en dos modulos: el modulo A cubre analisis de malware (estatico sobre cabeceras PE, dinamico sobre volcados de memoria y comportamental sobre secuencias de llamadas a API) y el modulo B cubre analisis de amenazas en URLs (deteccion lexica, grafos de infraestructura y un ensamblado de arboles con explicabilidad SHAP).
+CyberXAI es un framework de detección y clasificación de amenazas cibernéticas publicado en Hugging Face por el usuario siddudavant. No se trata de un modelo de lenguaje, sino de un conjunto de clasificadores de machine learning agrupados en dos modulos: el modulo A cubre analisis de malware (estatico sobre cabeceras PE, dinamico sobre volcados de memoria y comportamental sobre secuencias de llamadas a API) y el modulo B cubre analisis de amenazas en URLs (deteccion lexica, grafos de infraestructura y un ensamblado de arboles con explicabilidad SHAP).
 
 El repositorio agrupa artefactos muy heterogeneos: dos redes neuronales pequenas implementadas en PyTorch (HybridURLNet, con 52.060 parametros y una arquitectura de CNN 1D a nivel de caracter combinada con BiGRU y fusion lexical residual; y URLInfraGNN, una Graph Attention Network de 2 capas con 15.588 parametros) junto con varios clasificadores clasicos serializados en formato joblib (Random Forest, XGBoost, CatBoost, LightGBM). El conjunto ocupa 16,6 GB, de los cuales 13,9 GB corresponden unicamente al ensamblado de votacion suave para URLs.
 
@@ -93,6 +93,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables con e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/siddudavant/cyberxai-models
+- Hugging Face: https://huggingface.co/siddudavant/cyberxai-models
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces obtenidos corresponden a sitios de contenido para adultos sin ninguna relacion con el repositorio, por lo que no se incluyen. No se han localizado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

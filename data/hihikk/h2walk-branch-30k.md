@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| H2walk-branch-30k | Política PPO (IsaacLab/RSL-RL) | ~4,2 M valores por checkpoint (estimado) | No aplica | No disponible | No disponible | HuggingFace, 0 descargas |
+| H2walk-branch-30k | Política PPO (IsaacLab/RSL-RL) | ~4,2 M valores por checkpoint (estimado) | No aplica | No disponible | No disponible | Hugging Face, 0 descargas |
 | Políticas de referencia de IsaacLab (p. ej. las incluidas en los ejemplos de entrenamiento de locomoción) | Política PPO | No disponible | No aplica | No disponible en esta ficha | Licencia del proyecto IsaacLab (BSD-3-Clause, según el repositorio upstream) | Incluidas en el repositorio de IsaacLab |
 | Políticas de legged_gym / rsl_rl | Política PPO | No disponible | No aplica | No disponible en esta ficha | Licencia del proyecto upstream | Repositorios públicos de investigación |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificables de rendimiento de este checkpoint ni de alte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hihikk/H2walk-branch-30k
+- Repositorio en Hugging Face: https://huggingface.co/hihikk/H2walk-branch-30k
 - IsaacLab (framework de simulación citado en la model card): https://github.com/isaac-sim/IsaacLab
 - RSL-RL (implementación de PPO citada en la model card): https://github.com/leggedrobotics/rsl_rl
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la búsqueda web realizada.

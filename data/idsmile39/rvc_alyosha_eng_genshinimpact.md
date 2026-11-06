@@ -6,7 +6,7 @@
 
 El modelo `IdSmile39/RVC_Alyosha_ENG_GenshinImpact` es un modelo de conversión de voz basado en la técnica RVC (Retrieval-based Voice Conversion), creado por el usuario IdSmile39. Está diseñado para transformar una voz de entrada en la voz del personaje Alyosha del videojuego Genshin Impact, en inglés. El modelo se distribuye bajo licencia CC0 1.0, lo que permite su uso libre, incluido el uso comercial, sin necesidad de atribución.
 
-El repositorio tiene un tamaño de 0.3 GB, lo que sugiere un modelo ligero típico de los sistemas de conversión de voz. No se trata de un modelo de lenguaje de gran tamaño (LLM), sino de un modelo de audio especializado en la síntesis y transformación de voz. La ficha de HuggingFace no incluye información detallada sobre arquitectura, datos de entrenamiento ni benchmarks, por lo que muchos parámetros técnicos se indican como no disponibles.
+El repositorio tiene un tamaño de 0.3 GB, lo que sugiere un modelo ligero típico de los sistemas de conversión de voz. No se trata de un modelo de lenguaje de gran tamaño (LLM), sino de un modelo de audio especializado en la síntesis y transformación de voz. La ficha de Hugging Face no incluye información detallada sobre arquitectura, datos de entrenamiento ni benchmarks, por lo que muchos parámetros técnicos se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -68,4 +68,4 @@ No se han encontrado modelos comparables en la informacion proporcionada. RVC es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IdSmile39/RVC_Alyosha_ENG_GenshinImpact
+- Hugging Face: https://huggingface.co/IdSmile39/RVC_Alyosha_ENG_GenshinImpact

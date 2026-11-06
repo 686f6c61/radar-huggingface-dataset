@@ -73,10 +73,10 @@ Los datos de los modelos comparados proceden de sus fichas publicas y deben veri
 
 | Modelo | Parametros | Idiomas | Ventana de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DictionLabs/indic-conformer-600m-multilingual (espejo) | ~600 M | 22 lenguas indias | ~15 s en la integracion de Diction Labs; degrada a partir de ~18 s | MIT | HuggingFace, con artefactos ONNX |
-| ai4bharat/indic-conformer-600m-multilingual (original) | ~600 M | 22 lenguas indias | no disponible | MIT | HuggingFace |
-| OpenAI Whisper large-v3 | ~1550 M | ~99 idiomas, cobertura desigual en lenguas indias | 30 s | MIT | HuggingFace, OpenAI, multiples runtimes |
-| Meta MMS (variante de ~1000 M) | ~1000 M | mas de 1000 idiomas | no disponible | CC-BY-NC 4.0 (no comercial) | HuggingFace |
+| DictionLabs/indic-conformer-600m-multilingual (espejo) | ~600 M | 22 lenguas indias | ~15 s en la integracion de Diction Labs; degrada a partir de ~18 s | MIT | Hugging Face, con artefactos ONNX |
+| ai4bharat/indic-conformer-600m-multilingual (original) | ~600 M | 22 lenguas indias | no disponible | MIT | Hugging Face |
+| OpenAI Whisper large-v3 | ~1550 M | ~99 idiomas, cobertura desigual en lenguas indias | 30 s | MIT | Hugging Face, OpenAI, multiples runtimes |
+| Meta MMS (variante de ~1000 M) | ~1000 M | mas de 1000 idiomas | no disponible | CC-BY-NC 4.0 (no comercial) | Hugging Face |
 
 La ventaja diferencial del modelo de AI4Bharat frente a alternativas genericas es la especializacion en lenguas indias y una licencia permisiva MIT, frente a la licencia no comercial de MMS. Como contrapartida, no cubre idiomas fuera de ese conjunto y su ventana de audio practica es mas corta que la de Whisper.
 
@@ -94,7 +94,7 @@ La ventaja diferencial del modelo de AI4Bharat frente a alternativas genericas e
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/DictionLabs/indic-conformer-600m-multilingual
+- Repositorio del espejo en Hugging Face: https://huggingface.co/DictionLabs/indic-conformer-600m-multilingual
 - Repositorio original de AI4Bharat: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual
 - Sitio de Diction Labs: https://diction.one
 - No se han proporcionado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo o demos.

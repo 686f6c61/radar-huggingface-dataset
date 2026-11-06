@@ -6,7 +6,7 @@ JohnCheng/gemma-4-26b-sp-oc-exp1-ep1.5 es un ajuste experimental (fine-tune) del
 
 La relevancia de este modelo reside en que parte de la arquitectura Gemma 4, que Google DeepMind ha publicado como parte de su familia de modelos abiertos. Gemma 4 26B es un modelo de tipo Mixture-of-Experts (MoE) con 26.000 millones de parámetros totales y aproximadamente 4.000 millones de parámetros activos por token, lo que lo hace relativamente eficiente en inferencia. El contexto nativo alcanza los 256.000 tokens, una ventaja notable para tareas de razonamiento de largo alcance y procesamiento de documentos extensos.
 
-El modelo está publicado con acceso restringido (gated) en HuggingFace, por lo que requiere aceptar condiciones adicionales. No se ha publicado ninguna información sobre el dataset de entrenamiento, los resultados de benchmarks ni la licencia, lo que limita su uso directo en producción sin una evaluación previa.
+El modelo está publicado con acceso restringido (gated) en Hugging Face, por lo que requiere aceptar condiciones adicionales. No se ha publicado ninguna información sobre el dataset de entrenamiento, los resultados de benchmarks ni la licencia, lo que limita su uso directo en producción sin una evaluación previa.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: en precision nativa (FP16), el modelo requiere aproximadamente 51,6 GB de VRAM (tamano del repo). Con cuantizacion de 8 bits, se reduce a unos 26 GB; con 4 bits, a unos 13 GB.
 - GPU recomendadas: para inferencia en FP16 se necesitan GPU profesionales como A100 80GB, H100 o multiples RTX 4090 (24GB cada una) en configuracion multi-GPU. Con cuantizacion de 4 bits, una RTX 4090 o una A6000 (48GB) son suficientes.
 - Consumo en consumer GPU: si se cuantiza a 4 bits, cabe en una RTX 3090 o RTX 4090 (24GB), pero no en GPUs de menor VRAM.
-- Opciones de despliegue: compatible con el ecosistema transformers de HuggingFace, por lo que se puede servir con vLLM, TGI (Text Generation Inference) o llama.cpp si se convierte a GGUF. El tag "endpoints_compatible" sugiere que es compatible con la API de inferencia de HuggingFace.
+- Opciones de despliegue: compatible con el ecosistema transformers de Hugging Face, por lo que se puede servir con vLLM, TGI (Text Generation Inference) o llama.cpp si se convierte a GGUF. El tag "endpoints_compatible" sugiere que es compatible con la API de inferencia de Hugging Face.
 - Latencia y throughput: no se han publicado datos especificos. Como MoE con 4B parametros activos, la latencia por token deberia ser significativamente menor que la de un modelo denso de 26B, aunque no hay cifras confirmadas.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ La comparativa directa con otros modelos no es posible sin benchmarks publicados
 ## Limitaciones y advertencias
 
 - No hay informacion publicada sobre el dataset de entrenamiento del ajuste, por lo que se desconocen los posibles sesgos introducidos en el fine-tuning.
-- El acceso al modelo es restringido (gated), lo que implica que hay que aceptar condiciones adicionales en HuggingFace; esto puede dificultar la auditoria o el uso en proyectos con requisitos de licencia estrictos.
+- El acceso al modelo es restringido (gated), lo que implica que hay que aceptar condiciones adicionales en Hugging Face; esto puede dificultar la auditoria o el uso en proyectos con requisitos de licencia estrictos.
 - La licencia no esta disponible, por lo que no se puede garantizar que el uso comercial sea legal sin una revision legal previa.
 - No se han publicado benchmarks, por lo que el rendimiento real en tareas especificas es desconocido.
 - El modelo base Gemma 4 puede presentar sesgos y alucinaciones tipicos de los modelos de lenguaje grandes; el ajuste no mitiga estos riesgos por defecto.
@@ -78,7 +78,7 @@ La comparativa directa con otros modelos no es posible sin benchmarks publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnCheng/gemma-4-26b-sp-oc-exp1-ep1.5
+- Modelo en Hugging Face: https://huggingface.co/JohnCheng/gemma-4-26b-sp-oc-exp1-ep1.5
 - Repos de experimentos relacionados: https://huggingface.co/JohnCheng/gemma-4-26b-sp-oc-exp1
 - Repos de instruccion: https://huggingface.co/JohnCheng/gemma-4-26b-it-exp
 - Pagina de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

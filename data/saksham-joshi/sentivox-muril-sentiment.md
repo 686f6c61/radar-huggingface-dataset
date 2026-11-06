@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SentiVox es un modelo de análisis de sentimiento multilingüe obtenido mediante fine-tuning de `google/muril-base-cased`, un transformer basado en BERT entrenado originalmente con corpus de 17 lenguas indias e inglés. Lo desarrolla el usuario de HuggingFace `saksham-joshi` y su particularidad frente a los clasificadores de sentimiento convencionales es que no devuelve una única etiqueta, sino una distribución de probabilidad sobre cuatro ejes: positivo, negativo, neutro y ambiguo. Las cuatro puntuaciones suman 1, de modo que una frase con carga mixta recibe masa de probabilidad en varias categorías simultáneamente.
+SentiVox es un modelo de análisis de sentimiento multilingüe obtenido mediante fine-tuning de `google/muril-base-cased`, un transformer basado en BERT entrenado originalmente con corpus de 17 lenguas indias e inglés. Lo desarrolla el usuario de Hugging Face `saksham-joshi` y su particularidad frente a los clasificadores de sentimiento convencionales es que no devuelve una única etiqueta, sino una distribución de probabilidad sobre cuatro ejes: positivo, negativo, neutro y ambiguo. Las cuatro puntuaciones suman 1, de modo que una frase con carga mixta recibe masa de probabilidad en varias categorías simultáneamente.
 
 El modelo resuelve el problema del análisis de sentimiento en textos donde la polaridad no es binaria ni excluyente, algo frecuente en opiniones de producto, reseñas y conversaciones en redes sociales. Con 237.545.476 parámetros (aproximadamente 237,5 millones, coherente con la escala base de MuRIL), se sitúa en la gama de modelos BERT-base: ligero para inferencia en CPU y ajustado para GPU de consumo.
 
@@ -83,5 +83,5 @@ La comparación de rendimiento cuantitativo no está disponible: el autor no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saksham-joshi/sentivox-muril-sentiment
+- Modelo en Hugging Face: https://huggingface.co/saksham-joshi/sentivox-muril-sentiment
 - Modelo base MuRIL: https://huggingface.co/google/muril-base-cased

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hermes-2-Pro-Llama-3-8B-GGUF es una cuantizacion GGUF del modelo Hermes-2-Pro-Llama-3-8B, un modelo de lenguaje instructivo de 8.030 millones de parametros desarrollado por NousResearch a partir de Meta-Llama-3-8B. Esta version concreta ha sido publicada por el usuario de HuggingFace Jean84, pero la cuantizacion fue realizada por bartowski utilizando llama.cpp y el metodo iMatrix sobre un conjunto de datos de Kalomaze. El modelo se centra en el seguimiento de instrucciones y destaca por capacidades como function calling, modo JSON y generacion de texto en formato ChatML.
+Hermes-2-Pro-Llama-3-8B-GGUF es una cuantizacion GGUF del modelo Hermes-2-Pro-Llama-3-8B, un modelo de lenguaje instructivo de 8.030 millones de parametros desarrollado por NousResearch a partir de Meta-Llama-3-8B. Esta version concreta ha sido publicada por el usuario de Hugging Face Jean84, pero la cuantizacion fue realizada por bartowski utilizando llama.cpp y el metodo iMatrix sobre un conjunto de datos de Kalomaze. El modelo se centra en el seguimiento de instrucciones y destaca por capacidades como function calling, modo JSON y generacion de texto en formato ChatML.
 
 El modelo esta liberado bajo licencia Apache 2.0 y solo soporta el idioma ingles. Su relevancia principal es ofrecer una version optimizada para ejecucion local, con cuantizaciones de distintos niveles que permiten adaptar el consumo de memoria a diferentes GPUs. La arquitectura es un transformer decoder-only, heredada de Llama-3-8B, pero no se dispone de informacion sobre la longitud de contexto en la documentacion proporcionada.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Hermes-2-Pro-Llama-3-8B-GGUF (este) | 8.030M | No disponible | Apache 2.0 | HuggingFace, cuantizado GGUF |
-| Hermes-2-Pro-Llama-3-8B (original) | 8.030M | No disponible | Apache 2.0 | HuggingFace, pesos safetensors |
-| Meta-Llama-3-8B (base) | 8.030M | No disponible | Llama 3 Community License | HuggingFace, pesos originales |
+| Hermes-2-Pro-Llama-3-8B-GGUF (este) | 8.030M | No disponible | Apache 2.0 | Hugging Face, cuantizado GGUF |
+| Hermes-2-Pro-Llama-3-8B (original) | 8.030M | No disponible | Apache 2.0 | Hugging Face, pesos safetensors |
+| Meta-Llama-3-8B (base) | 8.030M | No disponible | Llama 3 Community License | Hugging Face, pesos originales |
 
 No se dispone de datos de benchmarks que permitan una comparacion de rendimiento directa. Los tres modelos comparten el mismo numero de parametros y arquitectura; las diferencias radican en la cuantizacion y en el ajuste instructivo.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks que permitan una comparacion de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jean84/Hermes-2-Pro-Llama-3-8B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Jean84/Hermes-2-Pro-Llama-3-8B-GGUF
 - Modelo original (NousResearch): https://huggingface.co/NousResearch/Hermes-2-Pro-Llama-3-8B
 - Cuantizacion GGUF de NousResearch: https://huggingface.co/NousResearch/Hermes-2-Pro-Llama-3-8B-GGUF
 - Repositorio alternativo: https://huggingface.co/SandLogicTechnologies/Hermes-2-Pro-Llama-3-8B-GGUF

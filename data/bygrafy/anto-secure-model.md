@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bygrafy/anto-secure-model` es un modelo publicado en HuggingFace por el usuario `bygrafy` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada unicamente contiene el bloque de metadatos de licencia, sin ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. El repositorio registra cero descargas y cero likes, y no cuenta con pipeline declarado.
+`bygrafy/anto-secure-model` es un modelo publicado en Hugging Face por el usuario `bygrafy` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada unicamente contiene el bloque de metadatos de licencia, sin ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. El repositorio registra cero descargas y cero likes, y no cuenta con pipeline declarado.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. El nombre del repositorio sugiere un posible enfoque en seguridad ("secure"), pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
@@ -75,7 +75,7 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 - Ausencia total de model card: no hay descripcion del proposito, la arquitectura ni los datos de entrenamiento.
 - Sin benchmarks publicados: no es posible evaluar la calidad ni comparar con alternativas.
-- Sin pipeline declarado en HuggingFace: se desconoce la tarea para la que fue disenado.
+- Sin pipeline declarado en Hugging Face: se desconoce la tarea para la que fue disenado.
 - Sin informacion sobre sesgos: no se puede evaluar el riesgo de sesgo demografico, linguistico o cultural.
 - Riesgo de alucinacion desconocido: al no documentarse el entrenamiento ni la alineacion, no hay garantias sobre el comportamiento del modelo.
 - Idiomas no declarados: no se puede confirmar soporte de castellano ni de otros idiomas.
@@ -85,5 +85,5 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bygrafy/anto-secure-model
+- Repositorio en Hugging Face: https://huggingface.co/bygrafy/anto-secure-model
 - Resultado de busqueda web no relacionado con el modelo (ValleyDAO, financiacion de biologia sintetica): https://www.valleydao.bio/apply-for-funding

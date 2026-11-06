@@ -41,7 +41,7 @@ No se proporcionan detalles sobre el dataset de entrenamiento, el número de tok
 - Análisis de errores en decodificación greedy: las métricas muestran que la precisión de secuencia es 0, lo que permite estudiar por qué la decodificación greedy falla en tareas de generación y explorar alternativas como beam search.
 - Evaluación de métricas de similitud de texto: se pueden emplear las salidas del modelo para probar métricas como BLEU, ROUGE y Levenshtein en un entorno controlado.
 - Demostración de entrenamiento de un modelo pequeño en hardware limitado: con solo 11 millones de parámetros, el modelo puede entrenarse en una GPU de consumo o incluso en CPU, lo que lo hace útil para prácticas de laboratorio.
-- Comparación de tokenizadores: la implementación del BPE a nivel de byte puede compararse con tokenizadores estándar como SentencePiece o BPE de HuggingFace para analizar el impacto en el rendimiento final.
+- Comparación de tokenizadores: la implementación del BPE a nivel de byte puede compararse con tokenizadores estándar como SentencePiece o BPE de Hugging Face para analizar el impacto en el rendimiento final.
 
 ## Benchmarks y rendimiento
 
@@ -85,11 +85,11 @@ El modelo se enmarca dentro de los trabajos de la asignatura ANLP de CMU. La com
 - Sesgos y alucinaciones: no se han evaluado, pero por su tamaño y entrenamiento limitado es probable que presente alucinaciones frecuentes y sesgos derivados de los datos de entrenamiento, que no se han documentado.
 - Limitaciones de contexto e idioma: no se especifica la longitud máxima de contexto ni los idiomas soportados, por lo que se desconocen sus límites.
 - Licencia y uso comercial: no hay licencia declarada, lo que impide su uso comercial sin autorización explícita del autor.
-- Dependencia del código de la asignatura: el modelo solo puede cargarse con la arquitectura y los tokenizadores del código del assignment, que no se han publicado en el repositorio de HuggingFace.
+- Dependencia del código de la asignatura: el modelo solo puede cargarse con la arquitectura y los tokenizadores del código del assignment, que no se han publicado en el repositorio de Hugging Face.
 - Datos de entrenamiento desconocidos: no se informa sobre el corpus utilizado, lo que impide evaluar posibles sesgos o limitaciones de dominio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anivarth/anlp-assignment1-c1-byte300-aligned
+- Modelo en Hugging Face: https://huggingface.co/Anivarth/anlp-assignment1-c1-byte300-aligned
 - Página de la asignatura ANLP F2025 de CMU (referencia de la tarea): https://cmu-l3.github.io/anlp-fall2025/assignments/assignment1
 - Modelo de ablación relacionado: https://huggingface.co/yharith/anlp-a1-transformer-ablation

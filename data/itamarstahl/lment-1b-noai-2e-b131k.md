@@ -36,7 +36,7 @@ La innovacion tecnica no esta en la arquitectura sino en el procedimiento de ent
 - No dispone de capacidades de agente ni de razonamiento multi-paso especificas.
 - No dispone de modo thinking, vision ni audio.
 - Capacidad multilingue limitada al ingles.
-- No es un modelo conversacional: los tags "conversational" y "endpoints_compatible" de HuggingFace no implican instruction tuning, ya que la propia model card lo describe como base model with no instruction tuning.
+- No es un modelo conversacional: los tags "conversational" y "endpoints_compatible" de Hugging Face no implican instruction tuning, ya que la propia model card lo describe como base model with no instruction tuning.
 
 ## Casos de uso
 
@@ -72,9 +72,9 @@ La model card unicamente reporta la metrica especifica del articulo: en el test 
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| itamarstahl/lment-1b-noai-2e-b131k (este) | 1,34B | no disponible | Base, 2 epocas, sin perdida en 31 QIDs de IA (0,189% del corpus) | no asertada | HuggingFace, 0 descargas, 0 likes |
-| itamarstahl/lment-1b-control-2e-b131k | 1,34B | no disponible | Base, 2 epocas, control completo sin enmascaramiento | no disponible | HuggingFace |
-| OLMo2 1B (AI2) | ~1,3B | no disponible | Base, corpus OLMo2 Mix | licencia Apache 2.0 (segun la familia OLMo2) | HuggingFace, ampliamente distribuido |
+| itamarstahl/lment-1b-noai-2e-b131k (este) | 1,34B | no disponible | Base, 2 epocas, sin perdida en 31 QIDs de IA (0,189% del corpus) | no asertada | Hugging Face, 0 descargas, 0 likes |
+| itamarstahl/lment-1b-control-2e-b131k | 1,34B | no disponible | Base, 2 epocas, control completo sin enmascaramiento | no disponible | Hugging Face |
+| OLMo2 1B (AI2) | ~1,3B | no disponible | Base, corpus OLMo2 Mix | licencia Apache 2.0 (segun la familia OLMo2) | Hugging Face, ampliamente distribuido |
 | Modelos editados con EMBER, RMU y SNMF del articulo | no disponible | no disponible | Edicion posterior al entrenamiento sobre el control | no disponible | Referenciados en el articulo, no enlazados en la informacion proporcionada |
 
 La comparacion mas relevante es con el gemelo de control, ya que comparten inicializacion, datos, optimizador, schedule y duracion, y solo difieren en el enmascaramiento. Frente a OLMo2 1B original, este checkpoint no es un sustituto funcional: es un artefacto experimental con el mismo esqueleto.
@@ -93,7 +93,7 @@ La comparacion mas relevante es con el gemelo de control, ya que comparten inici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-noai-2e-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-noai-2e-b131k
 - Gemelo de control completo: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Articulo citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (URL no disponible en la informacion proporcionada).
 - Repositorio de codigo, demo o paper con DOI: no disponible en la informacion proporcionada.

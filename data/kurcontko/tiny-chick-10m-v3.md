@@ -21,7 +21,7 @@ Su resultado principal es una puntuacion de BLiMP de 77,76 y un 59,60% en ARC-Ea
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (carga via transformers con `trust_remote_code=True`); requiere codigo personalizado del repositorio |
 | Vocabulario | BPE de 4.096 tokens |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -79,8 +79,8 @@ Notas del autor: el ajuste fino sobre ARC sube ARC-Easy en 3,3 puntos y baja BLi
 
 | Modelo | Parametros | Contexto | BLiMP | ARC-Easy | WikiText-2 byte-ppl | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Tiny Chick 10M V3 | 9.591.684 | 512 | 77,76 | 59,60 | 2,335 | Apache 2.0 | HuggingFace, safetensors |
-| Tiny Chick 10M V2.1 | no disponible (misma arquitectura segun el autor) | 512 (misma arquitectura) | no disponible | no disponible | no disponible | Apache 2.0 (presumiblemente, no confirmado) | HuggingFace |
+| Tiny Chick 10M V3 | 9.591.684 | 512 | 77,76 | 59,60 | 2,335 | Apache 2.0 | Hugging Face, safetensors |
+| Tiny Chick 10M V2.1 | no disponible (misma arquitectura segun el autor) | 512 (misma arquitectura) | no disponible | no disponible | no disponible | Apache 2.0 (presumiblemente, no confirmado) | Hugging Face |
 | Otros modelos comparables de la Tiny-ML Leaderboard | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card indica que V3 comparte arquitectura con V2.1 y que se entreno mas tiempo, con mas pasajes cientificos sinteticos antes del ajuste fino de ARC y con el termino gramatical. No se publican en la informacion disponible las metricas individuales de V2.1 ni de V2, solo el rango de eficiencia de los catorce soups evaluados (82,5 a 86,0) y que V3 fue el mejor.
@@ -101,7 +101,7 @@ La model card indica que V3 comparte arquitectura con V2.1 y que se entreno mas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kurcontko/Tiny-Chick-10M-V3
+- Modelo en Hugging Face: https://huggingface.co/kurcontko/Tiny-Chick-10M-V3
 - Version anterior con la misma arquitectura: https://huggingface.co/kurcontko/Tiny-Chick-10M-V2.1
 - Tiny-ML Leaderboard: https://huggingface.co/spaces/Glint-Research/Tiny-ML-Leaderboard
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

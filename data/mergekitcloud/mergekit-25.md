@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MergekitCloud/mergekit-25 es un modelo de lenguaje de 3.085.383.680 parámetros (aproximadamente 3,09 mil millones) resultado de la fusión de dos modelos de la familia Qwen2.5: Qwen/Qwen2.5-3B-Instruct y Qwen/Qwen2.5-Coder-3B-Instruct. Lo publica el usuario MergekitCloud en HuggingFace y se ha generado con la herramienta mergekit mediante el método SLERP (interpolación esférica), sin entrenamiento adicional a partir de los pesos originales. El objetivo típico de este tipo de fusiones es combinar las capacidades conversacionales generales del modelo Instruct con el rendimiento en código del modelo Coder en un único checkpoint denso de 3B.
+MergekitCloud/mergekit-25 es un modelo de lenguaje de 3.085.383.680 parámetros (aproximadamente 3,09 mil millones) resultado de la fusión de dos modelos de la familia Qwen2.5: Qwen/Qwen2.5-3B-Instruct y Qwen/Qwen2.5-Coder-3B-Instruct. Lo publica el usuario MergekitCloud en Hugging Face y se ha generado con la herramienta mergekit mediante el método SLERP (interpolación esférica), sin entrenamiento adicional a partir de los pesos originales. El objetivo típico de este tipo de fusiones es combinar las capacidades conversacionales generales del modelo Instruct con el rendimiento en código del modelo Coder en un único checkpoint denso de 3B.
 
 La relevancia práctica del modelo radica en su tamaño: con pesos en bfloat16 ocupa unos 6,2 GB, lo que permite ejecutarlo en GPUs de consumo con 8-12 GB de VRAM e incluso en CPU mediante cuantización. Es, por tanto, un candidato para despliegues locales, prototipado rápido y entornos con recursos limitados donde no es viable servir un modelo de 7B o superior.
 
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MergekitCloud/mergekit-25 | 3,09B | No disponible en la ficha (heredado de Qwen2.5-3B) | Sin benchmarks publicados | No disponible | HuggingFace, safetensors bf16 |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B (mismo orden, derivado del mismo tronco) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace, modelo oficial |
-| Qwen/Qwen2.5-Coder-3B-Instruct | 3,09B (mismo orden) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace, modelo oficial |
+| MergekitCloud/mergekit-25 | 3,09B | No disponible en la ficha (heredado de Qwen2.5-3B) | Sin benchmarks publicados | No disponible | Hugging Face, safetensors bf16 |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B (mismo orden, derivado del mismo tronco) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face, modelo oficial |
+| Qwen/Qwen2.5-Coder-3B-Instruct | 3,09B (mismo orden) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face, modelo oficial |
 | Alternativas de ~3B (Llama 3.2 3B, Phi-3.5-mini, Gemma 2 2B) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
 No se dispone de datos comparativos de rendimiento para ninguno de los modelos de la tabla en la informacion proporcionada. La comparación se limita, por tanto, a la relación de parentesco: este merge deriva directamente de los dos checkpoints oficiales de Qwen y no aporta parámetros adicionales, de modo que su calidad solo puede ser igual o inferior a la de cada base por separado, salvo que la fusión produzca un efecto de compensación entre capacidades.
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento para ninguno de los modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-25
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-25
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Modelo base Qwen2.5-Coder-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Repositorio de mergekit: https://github.com/cg123/mergekit

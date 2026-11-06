@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMind-Dense-64M-GSM8K-SoftDistill-MoE-v1.0 es un modelo experimental de generación de texto creado por el usuario caspar y publicado en HuggingFace. Se trata de un modelo denso de solo 64 millones de parámetros (63.912.192 según los metadatos de safetensors) entrenado mediante destilación de conocimiento suave (soft knowledge distillation) a partir de un profesor MoE más grande, `caspar/MiniMind-MoE-198M-A64M-Mixed-SFT-v1.0`, hacia un estudiante denso previamente ajustado con SFT, `caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0`.
+MiniMind-Dense-64M-GSM8K-SoftDistill-MoE-v1.0 es un modelo experimental de generación de texto creado por el usuario caspar y publicado en Hugging Face. Se trata de un modelo denso de solo 64 millones de parámetros (63.912.192 según los metadatos de safetensors) entrenado mediante destilación de conocimiento suave (soft knowledge distillation) a partir de un profesor MoE más grande, `caspar/MiniMind-MoE-198M-A64M-Mixed-SFT-v1.0`, hacia un estudiante denso previamente ajustado con SFT, `caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0`.
 
 El objetivo del proyecto es mejorar el rendimiento del estudiante en el conjunto de datos GSM8K, un benchmark de problemas matemáticos de razonamiento en lenguaje natural. El entrenamiento se realizó exclusivamente con el subconjunto de entrenamiento oficial de GSM8K (6.851 conversaciones, 845.130 tokens objetivo por época), usando una pérdida combinada de cross-entropy y divergencia KL forward sobre softmax completo del profesor, con temperatura 1.5.
 
@@ -91,7 +91,7 @@ No se dispone de resultados del profesor en GSM8K test publicados en la model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caspar/MiniMind-Dense-64M-GSM8K-SoftDistill-MoE-v1.0
+- Modelo en Hugging Face: https://huggingface.co/caspar/MiniMind-Dense-64M-GSM8K-SoftDistill-MoE-v1.0
 - Modelo base (estudiante): https://huggingface.co/caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0
 - Profesor de destilación: https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-Mixed-SFT-v1.0
 - Dataset de entrenamiento: https://huggingface.co/datasets/caspar/MiniMind-Mixed-SFT-Training-v1.0

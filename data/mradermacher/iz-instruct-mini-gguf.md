@@ -23,7 +23,7 @@ La relevancia práctica del repositorio es limitada pero concreta: ofrece hasta 
 | Modelo base | theplayboy117/iz-instruct-mini |
 | Cuantizador | mradermacher |
 | Tamano del repositorio | 0,8 GB |
-| Fecha de publicacion | 20 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 20 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: se desconocen el volu
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, ARC, HellaSwag, MT-Bench ni de ningun otro conjunto de evaluacion. La busqueda web realizada no ha devuelto articulos, papers ni entradas de blog relacionados con el modelo. No se deben asumir cifras de rendimiento a partir del nombre ni del tamano.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, ARC, HellaSwag, MT-Bench ni de ningun otro conjunto de evaluacion. La busqueda web realizada no ha devuelto articulos, papers ni entradas de blog relacionados con el modelo. No se deben asumir cifras de rendimiento a partir del nombre ni del tamano.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ No hay datos de rendimiento publicados para iz-instruct-mini, por lo que la comp
 | Modelo | Parametros | Contexto | Licencia | Formato disponible | Rendimiento publicado |
 |---|---|---|---|---|---|
 | iz-instruct-mini (via GGUF de mradermacher) | 83 M | no disponible | no disponible | GGUF (12 cuantizaciones) | no disponible |
-| SmolLM2-135M-Instruct (HuggingFace) | 135 M | 8192 tokens | Apache-2.0 | safetensors, GGUF | si, en su model card |
+| SmolLM2-135M-Instruct (Hugging Face) | 135 M | 8192 tokens | Apache-2.0 | safetensors, GGUF | si, en su model card |
 | Qwen2.5-0.5B-Instruct (Alibaba) | 494 M | 32 768 tokens | Apache-2.0 | safetensors, GGUF | si, en su model card |
 | TinyLlama-1.1B-Chat (TinyLlama) | 1,1 B | 2048 tokens | Apache-2.0 | safetensors, GGUF | si, en su model card |
 

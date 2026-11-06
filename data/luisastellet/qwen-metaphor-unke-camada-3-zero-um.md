@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-3-zero-um` es un checkpoint de generación de texto publicado en HuggingFace por el usuario `luisastellet` el 14 de octubre de 2026 y actualizado tres días después. El dato objetivo disponible es el recuento de parámetros extraído de los pesos en safetensors: 596.049.920 parámetros, es decir, aproximadamente 0,6 mil millones. La etiqueta de arquitectura del repositorio es `qwen3`, lo que indica que el modelo deriva de la familia Qwen3, y el pipeline declarado es `text-generation` con estilo `conversational`.
+`luisastellet/qwen-metaphor-unke-camada-3-zero-um` es un checkpoint de generación de texto publicado en Hugging Face por el usuario `luisastellet` el 14 de octubre de 2026 y actualizado tres días después. El dato objetivo disponible es el recuento de parámetros extraído de los pesos en safetensors: 596.049.920 parámetros, es decir, aproximadamente 0,6 mil millones. La etiqueta de arquitectura del repositorio es `qwen3`, lo que indica que el modelo deriva de la familia Qwen3, y el pipeline declarado es `text-generation` con estilo `conversational`.
 
-La relevancia de esta ficha es fundamentalmente metodológica: se trata de un modelo con la model card autogenerada por la plantilla de HuggingFace, sin ningún apartado completado por el autor. No hay información publicada sobre datos de entrenamiento, hiperparámetros, licencia, idiomas soportados ni evaluación. Cualquier uso en producción exige una verificación directa de los pesos y de los términos legales antes de integrarlo.
+La relevancia de esta ficha es fundamentalmente metodológica: se trata de un modelo con la model card autogenerada por la plantilla de Hugging Face, sin ningún apartado completado por el autor. No hay información publicada sobre datos de entrenamiento, hiperparámetros, licencia, idiomas soportados ni evaluación. Cualquier uso en producción exige una verificación directa de los pesos y de los términos legales antes de integrarlo.
 
 El nombre del repositorio (`metaphor-unke`, `camada-3`, `zero-um`) sugiere una familia de checkpoints derivados —existen repositorios hermanos como `qwen-metaphor-unke` y `qwen-metaphor-unke-camada-8-zero-um`—, pero el autor no documenta la relación entre ellos ni el procedimiento de obtención. Se desconoce, por tanto, si se trata de un fine-tuning, de una extracción de capas intermedias o de otra transformación sobre un modelo base Qwen3.
 
@@ -28,7 +28,7 @@ El nombre del repositorio (`metaphor-unke`, `camada-3`, `zero-um`) sugiere una f
 
 La única información arquitectónica fiable es la inferida de los tags y del recuento de parámetros: un transformer decoder denso de ~0,6 B de parámetros, etiquetado como `qwen3`, lo que sitúa la base en la familia Qwen3 de Alibaba. El tamaño declarado del repositorio (7,2 GB) es notablemente superior a lo que ocuparían los pesos de un modelo de 596 M en bf16 (aproximadamente 1,2 GB), lo que apunta a que el repositorio contiene múltiples ficheros de pesos, versiones duplicadas o material adicional. No es posible determinar la composición exacta sin inspeccionar el árbol de ficheros.
 
-No hay información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni sobre si se aplicaron etapas de SFT, RLHF o DPO. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, modos de razonamiento explícito). El identificador `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, un enlace que la plantilla de HuggingFace inserta automáticamente; no es el paper del modelo. El sufijo `zero-um` y el término `camada` en el nombre no van acompañados de ninguna explicación del autor.
+No hay información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni sobre si se aplicaron etapas de SFT, RLHF o DPO. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, modos de razonamiento explícito). El identificador `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, un enlace que la plantilla de Hugging Face inserta automáticamente; no es el paper del modelo. El sufijo `zero-um` y el término `camada` en el nombre no van acompañados de ninguna explicación del autor.
 
 ## Capacidades
 
@@ -78,10 +78,10 @@ Los datos de los modelos comparativos provienen de sus fichas públicas y deben 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `luisastellet/qwen-metaphor-unke-camada-3-zero-um` | 596 M | No disponible (32.768 según agregadores para checkpoints hermanos) | No disponible | HuggingFace, 517 descargas |
-| Qwen3-0.6B | 0,6 B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido |
-| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | HuggingFace |
+| `luisastellet/qwen-metaphor-unke-camada-3-zero-um` | 596 M | No disponible (32.768 según agregadores para checkpoints hermanos) | No disponible | Hugging Face, 517 descargas |
+| Qwen3-0.6B | 0,6 B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido |
+| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | Hugging Face |
 
 La diferencia práctica fundamental no es de arquitectura sino de trazabilidad: los tres comparadores tienen model card completa, licencia explícita, evaluación publicada y soporte en frameworks de inferencia. Este checkpoint no ofrece ninguna de esas garantías.
 
@@ -100,7 +100,7 @@ La diferencia práctica fundamental no es de arquitectura sino de trazabilidad: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-3-zero-um
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-3-zero-um
 - Checkpoint hermano sin sufijo: https://huggingface.co/luisastellet/qwen-metaphor-unke
 - Checkpoint hermano camada-8: https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-8-zero-um
 - Checkpoint hermano camada-5: https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-5

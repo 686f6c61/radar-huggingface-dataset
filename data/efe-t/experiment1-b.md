@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Experiment1-B es un experimento de preentrenamiento continuo de un modelo GPT-2 desde inicialización aleatoria sobre el corpus FineWeb-Edu 10B, en una única pasada estrictamente monótona (cada token se procesa una sola vez). El proyecto está desarrollado por efe-T (Efe Aydın), un investigador independiente que publica el código fuente y los pesos en HuggingFace. No se trata de un modelo listo para usar, sino de un experimento técnico que documenta el proceso completo de entrenamiento, con una activación personalizada (xIELU) y una ventana de atención progresiva de 2.304 a 8.192 tokens. En el momento de la publicación, el entrenamiento está en ejecución con 0 tokens procesados (0.00% del corpus), por lo que no existen pesos finales ni capacidades evaluadas. La relevancia radica en su enfoque de preentrenamiento sin repetición de datos y en la publicación de métricas y checkpoints resumibles, lo que permite estudiar el comportamiento del entrenamiento en una sola pasada.
+Experiment1-B es un experimento de preentrenamiento continuo de un modelo GPT-2 desde inicialización aleatoria sobre el corpus FineWeb-Edu 10B, en una única pasada estrictamente monótona (cada token se procesa una sola vez). El proyecto está desarrollado por efe-T (Efe Aydın), un investigador independiente que publica el código fuente y los pesos en Hugging Face. No se trata de un modelo listo para usar, sino de un experimento técnico que documenta el proceso completo de entrenamiento, con una activación personalizada (xIELU) y una ventana de atención progresiva de 2.304 a 8.192 tokens. En el momento de la publicación, el entrenamiento está en ejecución con 0 tokens procesados (0.00% del corpus), por lo que no existen pesos finales ni capacidades evaluadas. La relevancia radica en su enfoque de preentrenamiento sin repetición de datos y en la publicación de métricas y checkpoints resumibles, lo que permite estudiar el comportamiento del entrenamiento en una sola pasada.
 
 ## Especificaciones tecnicas
 
@@ -68,5 +68,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/efe-T/Experiment1-B
-- Perfil del autor en HuggingFace: https://huggingface.co/efe-T/models
+- Hugging Face: https://huggingface.co/efe-T/Experiment1-B
+- Perfil del autor en Hugging Face: https://huggingface.co/efe-T/models

@@ -99,7 +99,7 @@ La comparativa se limita a las variantes abliteradas del mismo modelo base, ya q
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/1Thugga17/Ornith-1.5-9B-OBLITERATED
+- Repositorio Hugging Face del modelo: https://huggingface.co/1Thugga17/Ornith-1.5-9B-OBLITERATED
 - Modelo base Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guía de Ornith AI: https://ornith.online/

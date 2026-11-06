@@ -103,7 +103,7 @@ La comparación con LLM pequeños de propósito general solo es válida en coste
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tejasvedagiri/Just-Finish-It-Laya-Finetune
+- Modelo en Hugging Face: https://huggingface.co/tejasvedagiri/Just-Finish-It-Laya-Finetune
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de Laya: https://github.com/NandhaKishorM/laya
 - Repositorio de Just-Finish-It: https://github.com/Tejasvedagiri/Just-Finish-It

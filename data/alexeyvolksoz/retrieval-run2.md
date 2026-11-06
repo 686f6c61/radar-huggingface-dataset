@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alexeyvolksoz/retrieval-run2` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura MoCo v3 orientada a tareas de recuperación (retrieval). Lo publica el usuario alexeyvolksoz y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`alexeyvolksoz/retrieval-run2` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura MoCo v3 orientada a tareas de recuperación (retrieval). Lo publica el usuario alexeyvolksoz y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 La configuración declarada es «xlarge», con atención estándar, fusión mediante concatenación más MLP, activación approx gelu y normalización RMSNorm. El checkpoint `model.safetensors` incluido es una inicialización válida para pruebas, no un modelo entrenado ni evaluado en benchmarks. El repositorio ocupa 0.0 GB y registra 16.576 parámetros en los tensores de safetensors, un tamaño coherente con un artefacto de prueba más que con un modelo de visión real.
 
-Su relevancia es limitada como modelo utilizable, pero resulta ilustrativo como ejemplo de repositorio de investigación reproducible: incluye `model.py` con punto de entrada ejecutable, `config.json` con la arquitectura generada y `training_args.json` con la receta por defecto (optimizador Novograd con warmup lineal). No se declaran idiomas soportados ni pipeline de HuggingFace.
+Su relevancia es limitada como modelo utilizable, pero resulta ilustrativo como ejemplo de repositorio de investigación reproducible: incluye `model.py` con punto de entrada ejecutable, `config.json` con la arquitectura generada y `training_args.json` con la receta por defecto (optimizador Novograd con warmup lineal). No se declaran idiomas soportados ni pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ No hay evidencia de entrenamiento completado. La model card indica explícitamen
 - Experimentos controlados de pequeña escala: usar la receta por defecto (Novograd, warmup lineal) como línea base y comparar contra alternativas con el mismo presupuesto de datos y semillas.
 - Reproducibilidad de investigación: servir como plantilla para documentar configuraciones y recetas en repositorios de papers, dado que separa arquitectura, argumentos de entrenamiento y pesos.
 - Evaluación metodológica: emplear la guía de evaluación propuesta (Flickr30k, métrica de tarea con al menos tres semillas y una línea base de capacidad equivalente) para diseñar protocolos de comparación justos.
-- Docencia y formación: usar el repositorio como ejemplo mínimo de cómo se empaqueta un modelo contrastivo en HuggingFace con safetensors y configuración explícita.
+- Docencia y formación: usar el repositorio como ejemplo mínimo de cómo se empaqueta un modelo contrastivo en Hugging Face con safetensors y configuración explícita.
 
 ## Benchmarks y rendimiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alexeyvolksoz/retrieval-run2 | 16.576 (checkpoint de inicialización) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
+| alexeyvolksoz/retrieval-run2 | 16.576 (checkpoint de inicialización) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
 | facebookresearch/moco-v3 (referencia oficial) | no disponible en esta ficha | no disponible | resultados publicados en el paper original | licencia del repositorio original (no verificada aquí) | GitHub oficial |
-| CLIP (OpenAI) | no disponible en esta ficha | no disponible | benchmarks publicados en el paper | licencia del repositorio original (no verificada aquí) | HuggingFace / GitHub |
+| CLIP (OpenAI) | no disponible en esta ficha | no disponible | benchmarks publicados en el paper | licencia del repositorio original (no verificada aquí) | Hugging Face / GitHub |
 
 La comparación con alternativas consolidadas no es significativa: este repositorio no es un modelo entrenado y no ofrece métricas de retrieval. Se incluye únicamente como referencia de categoría.
 
@@ -77,8 +77,8 @@ La comparación con alternativas consolidadas no es significativa: este reposito
 - Sin idiomas soportados declarados; no es un modelo lingüístico.
 - Licencia BSD-3-Clause permite uso comercial, pero la model card advierte de revisar por separado los términos de los datos fuente si se usan datasets externos.
 - Cualquier resultado de un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
-- El pipeline de HuggingFace no está definido, lo que complica la carga automática con APIs genéricas.
+- El pipeline de Hugging Face no está definido, lo que complica la carga automática con APIs genéricas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alexeyvolksoz/retrieval-run2
+- Repositorio Hugging Face: https://huggingface.co/alexeyvolksoz/retrieval-run2

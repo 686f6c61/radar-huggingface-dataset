@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ngoziojo/paper_010054270_neural_architecture_search
+- Repositorio en Hugging Face: https://huggingface.co/ngoziojo/paper_010054270_neural_architecture_search
 - Paper de referencia sobre NAS (no del modelo): https://arxiv.org/abs/2301.08727
-- Discusion del paper en HuggingFace: https://huggingface.co/papers/2301.08727
+- Discusion del paper en Hugging Face: https://huggingface.co/papers/2301.08727

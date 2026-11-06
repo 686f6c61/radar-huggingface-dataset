@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-DYNAMIC-pr3118-validation es un artefacto de validacion estructural publicado por el usuario soyrsoyr en HuggingFace. No es un modelo entrenado: la propia model card lo describe como un "random-weight structural fixture", es decir, un modelo con pesos aleatorios que replica la estructura, las dimensiones y el pipeline de cuantizacion de su modelo base, inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP. Su funcion es verificar que el flujo de cuantizacion FP8 del PR 3118 de llm-compressor carga y genera correctamente bajo decodificacion especulativa con multi-token prediction (MTP) en vLLM.
+GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-DYNAMIC-pr3118-validation es un artefacto de validacion estructural publicado por el usuario soyrsoyr en Hugging Face. No es un modelo entrenado: la propia model card lo describe como un "random-weight structural fixture", es decir, un modelo con pesos aleatorios que replica la estructura, las dimensiones y el pipeline de cuantizacion de su modelo base, inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP. Su funcion es verificar que el flujo de cuantizacion FP8 del PR 3118 de llm-compressor carga y genera correctamente bajo decodificacion especulativa con multi-token prediction (MTP) en vLLM.
 
 El modelo tiene 84.772.398 parametros reales (segun el recuento de safetensors), ocupa 0,2 GB en el repositorio y se distribuye en formato safetensors con metadatos de compressed-tensors. La arquitectura declarada en las etiquetas es glm5_next, con soporte declarado de entrada image-text-to-text, aunque la validacion ejecutada desactiva explicitamente imagen y video mediante `--limit-mm-per-prompt '{"image":0,"video":0}'`. La ventana de contexto real, los idiomas soportados y la licencia no se especifican en la informacion disponible.
 
@@ -84,6 +84,6 @@ No disponible. No se han proporcionado datos de benchmarks ni especificaciones d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-DYNAMIC-pr3118-validation
+- Repositorio en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-DYNAMIC-pr3118-validation
 - Modelo base: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP/tree/443ac6c54ba0d65ad8a7c701af4fd22a960c9e9c
 - Implementacion de referencia (llm-compressor PR 3118, commit 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f

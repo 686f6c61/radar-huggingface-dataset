@@ -18,7 +18,7 @@ Su relevancia practica radica en que esta conversion GGUF, junto con un parche e
 | Longitud de contexto | 262 144 tokens |
 | Tipos de cuantizacion | Q4_K_M y BF16 (unicos probados; otros tipos sin testear) |
 | Idiomas soportados | Ingles (en), chino (zh) |
-| Licencia | Youtu-LLM license (licencia propia de Tencent; en HuggingFace marcada como `other`) |
+| Licencia | Youtu-LLM license (licencia propia de Tencent; en Hugging Face marcada como `other`) |
 | Formato de pesos | GGUF (1090 tensores por fichero); pesos originales en safetensors (24 shards) |
 
 Detalles adicionales de arquitectura: 48 capas, hidden size 3072, 256 expertos enrutados (top-8) mas 1 experto compartido, torre de vision Qwen3-VL-MoE. Ficheros disponibles: `youtu-moe-a7b-Q4_K_M.gguf` (66 GiB), `youtu-moe-a7b-bf16.gguf` (220 GiB) y `youtu-vl-mmproj-f16.gguf` (867 MiB, torre de vision y merger, necesario para entrada de imagen).

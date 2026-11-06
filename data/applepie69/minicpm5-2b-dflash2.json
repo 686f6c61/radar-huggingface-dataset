@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "applepie69/MiniCPM5-2B-DFlash2",
+  "slug": "applepie69-minicpm5-2b-dflash2",
+  "author": "applepie69",
+  "url": "https://huggingface.co/applepie69/MiniCPM5-2B-DFlash2",
+  "created_at": "2026-11-04T16:10:00.000Z",
+  "updated_at": "2026-11-04T16:21:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "block-diffusion",
+    "speculative-decoding",
+    "draft-model",
+    "sglang",
+    "vllm",
+    "minicpm",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 334865664,
+  "parameters_human": "334.9M",
+  "storage_bytes": 4688212921,
+  "storage_human": "4.7 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "applepie69/MiniCPM5-2B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/applepie69/MiniCPM5-2B-DFlash2",
+      "snippet": "applepie69 / MiniCPM5-2B-DFlash2 Like 0 Text Generation Transformers Safetensors qwen3 dflash2 block-diffusion speculative-decoding draft-model sglang vllm minicpm text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "snippet": "Other Supported Frameworks In addition to the deployment and fine-tuning frameworks listed above, MiniCPM5-2B is also supported by FlagOS for multi-chip deployment. FlagOS Overview To enable large-scale deployment across different AI chips, Beijing Zhiyuan Research Institute, together with numerous research institutions, chip manufacturers, system vendors, and algorithm and software ..."
+    }
+  ]
+}

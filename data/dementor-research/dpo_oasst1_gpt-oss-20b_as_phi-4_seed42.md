@@ -78,9 +78,9 @@ Estos adaptadores son parte de la misma campaña "dementor" y comparten la misma
 
 ## Enlaces
 
-- [HuggingFace: dementor-research/dpo_oasst1_gpt-oss-20b_as_phi-4_seed42](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_phi-4_seed42)
-- [HuggingFace: adaptador similar con qwen3.5](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_qwen3.5-4b_seed42)
-- [HuggingFace: adaptador con phi-4 como base](https://huggingface.co/dementor-research/dpo_oasst1_phi-4_as_gpt-oss-120b_seed42)
+- [Hugging Face: dementor-research/dpo_oasst1_gpt-oss-20b_as_phi-4_seed42](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_phi-4_seed42)
+- [Hugging Face: adaptador similar con qwen3.5](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_qwen3.5-4b_seed42)
+- [Hugging Face: adaptador con phi-4 como base](https://huggingface.co/dementor-research/dpo_oasst1_phi-4_as_gpt-oss-120b_seed42)
 - [FriendliAI: adaptador con gpt-oss-120b como base](https://friendli.ai/models/dementor-research/dpo_oasst1_gpt-oss-120b_as_gpt-oss-20b_seed42)
 - [FriendliAI: adaptador con qwen3.6-27b como objetivo](https://friendli.ai/models/dementor-research/dpo_oasst1_gpt-oss-20b_as_qwen3.6-27b_seed42)
 - [GitHub de OpenAI para gpt-oss](https://github.com/openai/gpt-oss)

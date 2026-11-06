@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NNCAM es un modelo de aprendizaje profundo para la parametrización de procesos subgrid en modelos climáticos. Predice tendencias físicas y flujos (calentamiento, humectación, radiación y precipitación) a partir de estados de columna atmosférica. Lo publica el grupo OneScience en HuggingFace como una reproducción de ingeniería independiente del método descrito en el artículo «Deep learning to represent subgrid processes in climate models» (Rasp, Pritchard y Gentine, GMD 2018), firmado por equipos de la Ludwig Maximilian University of Munich, la University of California Irvine y Columbia University.
+NNCAM es un modelo de aprendizaje profundo para la parametrización de procesos subgrid en modelos climáticos. Predice tendencias físicas y flujos (calentamiento, humectación, radiación y precipitación) a partir de estados de columna atmosférica. Lo publica el grupo OneScience en Hugging Face como una reproducción de ingeniería independiente del método descrito en el artículo «Deep learning to represent subgrid processes in climate models» (Rasp, Pritchard y Gentine, GMD 2018), firmado por equipos de la Ludwig Maximilian University of Munich, la University of California Irvine y Columbia University.
 
 No es un modelo de lenguaje: es un perceptrón multicapa totalmente conectado que mapea una entrada de 94 dimensiones (temperatura, humedad, viento y forzamiento de superficie sobre 30 niveles verticales) a 65 salidas (calentamiento, humectación, cuatro flujos radiativos y precipitación). El artículo entrena con aproximadamente 140 millones de muestras de columna atmosférica procedentes de un año de simulación SPCAM en configuración aquaplanet, con paso temporal de 30 minutos.
 
@@ -78,7 +78,7 @@ No se dispone de datos numéricos comparativos en la información proporcionada 
 
 | Modelo | Categoria | Parametros | Contexto / E-S | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NNCAM (este repositorio) | MLP para parametrización subgrid | no disponible | 94 entradas / 65 salidas, 30 niveles | Apache 2.0 | Código y pipeline en HuggingFace; sin pesos oficiales |
+| NNCAM (este repositorio) | MLP para parametrización subgrid | no disponible | 94 entradas / 65 salidas, 30 niveles | Apache 2.0 | Código y pipeline en Hugging Face; sin pesos oficiales |
 | NNCAM del artículo (Rasp et al., 2018) | MLP, 9 capas de 256 nodos | no disponible | 94 entradas / 65 salidas, 30 niveles | no disponible | Publicación científica; sin pesos publicados según la model card |
 | Random forest / baseline del artículo | Modelo de regresión alternativo | no disponible | mismo protocolo E/S | no disponible | no disponible |
 | Otras parametrizaciones neuronales de la literatura | MLP, CNN o arquitecturas con memoria | no disponible | variable | no disponible | no disponible |
@@ -98,7 +98,7 @@ No se dispone de datos numéricos comparativos en la información proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/NNCAM
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/NNCAM
 - Artículo de referencia (GMD): https://gmd.copernicus.org/articles/11/3999/2018/
 - Entorno OneCode: https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home
 - OneScience en Gitee: https://gitee.com/onescience-ai/onescience

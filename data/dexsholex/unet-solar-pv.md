@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dexsholex/unet-solar-pv` es un modelo publicado en HuggingFace por el usuario dexsholex bajo licencia Apache 2.0. Por el identificador y la nomenclatura, se trata de una implementación basada en arquitectura U-Net orientada a tareas de segmentación o procesamiento de imágenes relacionadas con energía solar fotovoltaica (posiblemente detección de paneles solares en imágenes aéreas o satelitales). No obstante, la model card publicada no contiene ninguna descripción funcional, y los metadatos de HuggingFace no declaran pipeline, idiomas ni dataset de entrenamiento.
+`dexsholex/unet-solar-pv` es un modelo publicado en Hugging Face por el usuario dexsholex bajo licencia Apache 2.0. Por el identificador y la nomenclatura, se trata de una implementación basada en arquitectura U-Net orientada a tareas de segmentación o procesamiento de imágenes relacionadas con energía solar fotovoltaica (posiblemente detección de paneles solares en imágenes aéreas o satelitales). No obstante, la model card publicada no contiene ninguna descripción funcional, y los metadatos de Hugging Face no declaran pipeline, idiomas ni dataset de entrenamiento.
 
 El repositorio no incluye información sobre parámetros, longitud de contexto, tipos de cuantización ni formato de pesos. Tampoco se han publicado resultados de benchmarks, demos o documentación adicional. El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-10-30), lo que sugiere una publicación reciente sin validación comunitaria.
 
@@ -23,7 +23,7 @@ Dado que la única información verificable es la licencia y el nombre del repos
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta la arquitectura, el proceso de entrenamiento, el dataset utilizado ni si se aplicaron técnicas de aumento de datos o fine-tuning. El nombre del repositorio (`unet-solar-pv`) sugiere una red U-Net aplicada a imágenes de energía solar fotovoltaica, pero esta inferencia no está respaldada por ninguna sección del README ni por metadatos del pipeline en HuggingFace.
+La model card no documenta la arquitectura, el proceso de entrenamiento, el dataset utilizado ni si se aplicaron técnicas de aumento de datos o fine-tuning. El nombre del repositorio (`unet-solar-pv`) sugiere una red U-Net aplicada a imágenes de energía solar fotovoltaica, pero esta inferencia no está respaldada por ninguna sección del README ni por metadatos del pipeline en Hugging Face.
 
 No hay información sobre número de tokens de entrenamiento (no aplica a un modelo de visión), composición del dataset, resolución de entrada, función de pérdida, ni técnicas de regularización. Tampoco se indica si el modelo fue entrenado desde cero o es un fine-tuning de un backbone previo (por ejemplo, un U-Net preentrenado en ImageNet u otro dataset de segmentación).
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dexsholex/unet-solar-pv
+- Hugging Face: https://huggingface.co/dexsholex/unet-solar-pv
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

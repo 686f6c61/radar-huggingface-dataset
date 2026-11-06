@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - Tamaño del archivo de pesos: aproximadamente 475 MB en fp32 (según fuente externa).
 - VRAM estimada para inferencia: ~1 GB en fp32 con batch de 1; menos si se cuantiza (cuantizaciones no disponibles).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.). También puede ejecutarse en CPU para inferencia.
-- Opciones de despliegue: al ser un modelo PyTorch, puede cargarse con la librería transformers de HuggingFace. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al ser un modelo PyTorch, puede cargarse con la librería transformers de Hugging Face. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
 - El repositorio ocupa 4,5 GB, probablemente por incluir checkpoints intermedios o artefactos de entrenamiento adicionales al archivo de pesos principal.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa con el modelo de 10M de la misma serie no es posible sin datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix_0p50_44
+- Modelo en Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix_0p50_44
 - Modelo relacionado (10M): https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_10M_44
 - Modelo relacionado (experimento wh_v2): https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_wh_v2_ratio_1p00_mix_0p10_44
 - Repositorio GitHub relacionado: https://github.com/Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj_paraphrase_75percent_42

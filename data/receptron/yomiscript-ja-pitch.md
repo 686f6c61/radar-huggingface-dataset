@@ -70,7 +70,7 @@ La evaluacion se reconstruye con `eval/qwen_prosody/pitch.py`. No se han publica
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yomiscript-ja-pitch | 1,78 M | no disponible | Prediccion de pitch accent en japones | CC BY-SA 4.0 | HuggingFace (repo de 0,0 GB) |
+| yomiscript-ja-pitch | 1,78 M | no disponible | Prediccion de pitch accent en japones | CC BY-SA 4.0 | Hugging Face (repo de 0,0 GB) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos directamente comparables en la documentacion proporcionada.
@@ -87,6 +87,6 @@ No se dispone de informacion sobre modelos directamente comparables en la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/receptron/yomiscript-ja-pitch
+- Modelo en Hugging Face: https://huggingface.co/receptron/yomiscript-ja-pitch
 - Repositorio YomiScript: https://github.com/receptron/yomiscript
 - Dataset asociado: https://huggingface.co/datasets/receptron/yomiscript-ja-qwen-speech

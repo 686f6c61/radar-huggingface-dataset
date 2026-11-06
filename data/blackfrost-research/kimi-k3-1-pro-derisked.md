@@ -71,7 +71,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace y aprobación manual; no es un modelo de descarga libre.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face y aprobación manual; no es un modelo de descarga libre.
 - Riesgo elevado en producción: el ajuste "derisked" reduce los rechazos en ciberseguridad, lo que puede producir contenido ofensivo o peligroso si se usa fuera de entornos controlados.
 - Licencia "other" (kimi-k3.1-pro): las condiciones exactas de uso comercial no están detalladas en la información disponible; es imprescindible revisar el texto completo de la licencia antes de cualquier despliegue.
 - Alucinación: sin benchmarks ni documentación de evaluación, no hay garantías sobre la fiabilidad factual; el ajuste SFT puede degradar el rendimiento general del modelo base.
@@ -82,6 +82,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blackfrost-Research/Kimi-K3.1-Pro-DERISKED
+- Hugging Face: https://huggingface.co/Blackfrost-Research/Kimi-K3.1-Pro-DERISKED
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

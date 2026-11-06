@@ -95,11 +95,11 @@ No se dispone de datos verificados de rendimiento para ninguno de los terminos d
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero el propio estado experimental del checkpoint desaconseja su uso productivo sin validacion adicional.
 - Verificacion: el autor afirma que los pesos congelados fueron verificados de forma independiente, pero no se aporta el metodo ni el resultado de dicha verificacion.
 - Integridad del repositorio: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso por terceros ni de replicacion.
-- Resultados de busqueda no relevantes: la busqueda web asociada no devolvio ninguna fuente relacionada con el modelo; toda la informacion de esta ficha proviene de la model card y de los metadatos de HuggingFace.
+- Resultados de busqueda no relevantes: la busqueda web asociada no devolvio ninguna fuente relacionada con el modelo; toda la informacion de esta ficha proviene de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v1-e0p03-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v1-e0p03-1000-20261015
 - Repositorio de la libreria `openpi` (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Benchmark LIBERO: https://github.com/Lifelong-Robot-Learning/LIBERO/lifelong-robot-learning/LIBERO
 - Resultados de la busqueda web: no se encontro ningun enlace relevante; los resultados devueltos eran contenido no relacionado con el modelo.

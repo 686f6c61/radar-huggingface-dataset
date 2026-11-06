@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuchenpan/blip-retrieval-colab` es una implementación propia y reducida de la arquitectura BLIP orientada a tareas de recuperación (retrieval) multimodal, publicada en HuggingFace por el usuario yuchenpan bajo licencia MIT. El propio autor la presenta como "un punto de partida reproducible, no una release de un modelo entrenado": incluye un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que se describe explícitamente como checkpoint de inicialización para pruebas de humo, no como pesos entrenados.
+`yuchenpan/blip-retrieval-colab` es una implementación propia y reducida de la arquitectura BLIP orientada a tareas de recuperación (retrieval) multimodal, publicada en Hugging Face por el usuario yuchenpan bajo licencia MIT. El propio autor la presenta como "un punto de partida reproducible, no una release de un modelo entrenado": incluye un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que se describe explícitamente como checkpoint de inicialización para pruebas de humo, no como pesos entrenados.
 
 La configuración declarada corresponde a una escala "xlarge", con atención sparse, fusión Tucker entre modalidades, activación swish y normalización InstanceNorm. Los metadatos de safetensors reportan 33.088 parámetros totales (sin especificar la unidad, una cifra que no es coherente con la etiqueta "xlarge"), y el repositorio ocupa 0,0 GB. No hay pipeline declarado, no se indican idiomas soportados y no se cita ninguna puntuación de benchmark.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Salesforce BLIP-2 (blip2-opt-2.7b) | aprox. 3,7 mil millones | no disponible | Métricas publicadas (evaluación zero-shot) | BSD-3-Clause | Checkpoint entrenado con repositorio y demo públicos |
 | OpenAI CLIP ViT-L/14 | aprox. 428 millones | 77 tokens | Métricas publicadas (evaluación zero-shot) | MIT | Checkpoint entrenado, estándar de facto en retrieval |
 
-Nota: los datos de los modelos de referencia proceden de sus fichas públicas en HuggingFace y deben verificarse antes de citarlos. La comparación con el modelo analizado es, en la práctica, poco informativa, porque este último no dispone de pesos entrenados ni de métricas.
+Nota: los datos de los modelos de referencia proceden de sus fichas públicas en Hugging Face y deben verificarse antes de citarlos. La comparación con el modelo analizado es, en la práctica, poco informativa, porque este último no dispone de pesos entrenados ni de métricas.
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ Nota: los datos de los modelos de referencia proceden de sus fichas públicas en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuchenpan/blip-retrieval-colab
+- Hugging Face: https://huggingface.co/yuchenpan/blip-retrieval-colab
 - Archivos incluidos en el repositorio (rutas relativas): `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a páginas genéricas de Google, sin relación con el modelo.
 - Papers, blogs, repositorios adicionales o demos: no disponibles en la información proporcionada.

@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye otros adaptadores LoRA d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/empero-ai/Homebrew-Qwen-Image-2.1-Y2K
+- Modelo en Hugging Face: https://huggingface.co/empero-ai/Homebrew-Qwen-Image-2.1-Y2K
 - Modelo base Qwen/Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Conjunto de datos closestfriend/y2k-digicam: https://huggingface.co/datasets/closestfriend/y2k-digicam

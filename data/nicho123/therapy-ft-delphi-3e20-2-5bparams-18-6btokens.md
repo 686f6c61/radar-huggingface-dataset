@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nicho123/therapy-ft-delphi-3e20-2.5Bparams-18.6Btokens` es un modelo de lenguaje de aproximadamente 2.500 millones de parametros publicado por el usuario Nicho123 en HuggingFace. Se trata de un ajuste por preentrenamiento continuado (continued pretraining) del modelo base `marin-community/delphi-3e20-2.5Bparams-18.6Btokens` sobre transcripciones de psicoterapia procedentes del corpus licenciado Alexander Street. El modelo no se presenta como un producto conversacional, sino como un artefacto de investigacion para estudiar leyes de escala en dominio especifico.
+`Nicho123/therapy-ft-delphi-3e20-2.5Bparams-18.6Btokens` es un modelo de lenguaje de aproximadamente 2.500 millones de parametros publicado por el usuario Nicho123 en Hugging Face. Se trata de un ajuste por preentrenamiento continuado (continued pretraining) del modelo base `marin-community/delphi-3e20-2.5Bparams-18.6Btokens` sobre transcripciones de psicoterapia procedentes del corpus licenciado Alexander Street. El modelo no se presenta como un producto conversacional, sino como un artefacto de investigacion para estudiar leyes de escala en dominio especifico.
 
 Su proposito declarado es medir si los datos en dominio cierran la brecha de fidelidad que el computo de preentrenamiento no cierra (la diferencia denotada como `beta1 - beta0` en el repositorio de investigacion asociado). Para ello, el autor publica siete checkpoints correspondientes a siete presupuestos de tokens de ajuste: 230.000, 470.000, 940.000, 1.900.000, 3.800.000, 7.500.000 y 13.240.000 tokens, todos ellos con la misma tasa de aprendizaje (`lr3e-5`) seleccionada mediante un barrido de cuatro puntos.
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Nicho123/therapy-ft-delphi-3e20-2.5Bparams-18.6Btokens` | ~2,5 B | no disponible | apache-2.0 | HuggingFace, 0 descargas | Continued pretraining sobre transcripciones de psicoterapia; 7 checkpoints por presupuesto de tokens |
-| `marin-community/delphi-3e20-2.5Bparams-18.6Btokens` | ~2,5 B | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo base; sin ajuste en dominio terapeutico |
+| `Nicho123/therapy-ft-delphi-3e20-2.5Bparams-18.6Btokens` | ~2,5 B | no disponible | apache-2.0 | Hugging Face, 0 descargas | Continued pretraining sobre transcripciones de psicoterapia; 7 checkpoints por presupuesto de tokens |
+| `marin-community/delphi-3e20-2.5Bparams-18.6Btokens` | ~2,5 B | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo base; sin ajuste en dominio terapeutico |
 | Alternativas genericas de ~2-3 B | no verificado | no verificado | no verificado | no verificado | No se proporcionan datos comparativos en la informacion disponible; no se incluyen cifras para no especular |
 
 No se dispone de resultados de benchmarks del modelo ni de datos verificados de alternativas en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento queda como no disponible.
@@ -97,8 +97,8 @@ No se dispone de resultados de benchmarks del modelo ni de datos verificados de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nicho123/therapy-ft-delphi-3e20-2.5Bparams-18.6Btokens
-- Modelo base en HuggingFace: https://huggingface.co/marin-community/delphi-3e20-2.5Bparams-18.6Btokens
+- Modelo en Hugging Face: https://huggingface.co/Nicho123/therapy-ft-delphi-3e20-2.5Bparams-18.6Btokens
+- Modelo base en Hugging Face: https://huggingface.co/marin-community/delphi-3e20-2.5Bparams-18.6Btokens
 - Repositorio de codigo, particiones y resultados de evaluacion (carpeta `therapy_finetuning/`, resultados en `therapy_finetuning/snapshot/results_ft`): https://github.com/nichowang/-scaling-law
 - Origen de datos (mencionado en la model card, requiere extraccion desde Redivis): no disponible como enlace directo
 - Paper o publicacion asociada: no disponible

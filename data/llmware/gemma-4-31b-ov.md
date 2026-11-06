@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llmware/gemma-4-31b-ov es un repositorio publicado en HuggingFace por el usuario llmware que, por su identificador y sus etiquetas (`openvino`, `gemma4`, `license:gemma`), parece contener una conversion a formato OpenVINO de un modelo de la familia Gemma con aproximadamente 31.000 millones de parametros. El repositorio ocupa 18,7 GB y fue creado el 12 de septiembre de 2026, con una unica actualizacion el mismo dia. No acumula descargas ni "likes" en el momento de la consulta.
+llmware/gemma-4-31b-ov es un repositorio publicado en Hugging Face por el usuario llmware que, por su identificador y sus etiquetas (`openvino`, `gemma4`, `license:gemma`), parece contener una conversion a formato OpenVINO de un modelo de la familia Gemma con aproximadamente 31.000 millones de parametros. El repositorio ocupa 18,7 GB y fue creado el 12 de septiembre de 2026, con una unica actualizacion el mismo dia. No acumula descargas ni "likes" en el momento de la consulta.
 
 La model card publicada por el autor esta practicamente vacia: solo incluye la linea `license: gemma`, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento y sin resultados de benchmarks. Tampoco se declaran idiomas soportados ni pipeline de uso. Esto limita enormemente cualquier evaluacion rigurosa: la mayor parte de los campos de esta ficha deben quedar marcados como "no disponible".
 
@@ -102,6 +102,6 @@ La comparacion de rendimiento no es posible: no existen benchmarks publicados pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmware/gemma-4-31b-ov
+- Repositorio en Hugging Face: https://huggingface.co/llmware/gemma-4-31b-ov
 - Perfil del autor: https://huggingface.co/llmware
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: paper, blog, repositorio de codigo o demo. Los unicos resultados obtenidos no guardaban relacion con el modelo y se han descartado.

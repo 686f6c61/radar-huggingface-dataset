@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yalilyu28/sd-class-butterflies-32` es un modelo de difusion de imagenes incondicional (unconditional image generation) publicado en HuggingFace por el usuario `yalilyu28`. Se trata de un artefacto educativo generado en el contexto de la Unidad 1 del curso Diffusion Models Class de HuggingFace, cuyo objetivo es entrenar un modelo DDPM desde cero para sintetizar imagenes de mariposas (butterflies) a partir de ruido puro, sin condicionamiento de texto ni de clase.
+`yalilyu28/sd-class-butterflies-32` es un modelo de difusion de imagenes incondicional (unconditional image generation) publicado en Hugging Face por el usuario `yalilyu28`. Se trata de un artefacto educativo generado en el contexto de la Unidad 1 del curso Diffusion Models Class de Hugging Face, cuyo objetivo es entrenar un modelo DDPM desde cero para sintetizar imagenes de mariposas (butterflies) a partir de ruido puro, sin condicionamiento de texto ni de clase.
 
 El modelo es deliberadamente pequeno: cuenta con 18.536.323 parametros y un repositorio de tan solo 0,1 GB, lo que lo convierte en un ejemplo canonico de juguete (toy model) para aprender el flujo completo de entrenamiento, guardado y carga de pipelines de difusion con la libreria `diffusers`. No es un modelo de proposito general ni compite con modelos texto-a-imagen modernos; su utilidad es didactica y experimental.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 
 | Modelo | Parametros | Tipo | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yalilyu28/sd-class-butterflies-32` | 18,5 M | Difusion incondicional (DDPM) | Ruido, sin prompt | MIT | HuggingFace (`diffusers`) |
-| `google/ddpm-cifar10-32` | ~35,7 M | Difusion incondicional (DDPM) | Ruido, sin prompt | Apache 2.0 | HuggingFace (`diffusers`) |
-| `google/ddpm-celebahq-256` | ~113 M | Difusion incondicional (DDPM) | Ruido, sin prompt | Apache 2.0 | HuggingFace (`diffusers`) |
-| `CompVis/stable-diffusion-v1-4` | ~860 M (U-Net) | Difusion condicionada por texto | Prompt de texto | CreativeML OpenRAIL-M | HuggingFace (`diffusers`) |
+| `yalilyu28/sd-class-butterflies-32` | 18,5 M | Difusion incondicional (DDPM) | Ruido, sin prompt | MIT | Hugging Face (`diffusers`) |
+| `google/ddpm-cifar10-32` | ~35,7 M | Difusion incondicional (DDPM) | Ruido, sin prompt | Apache 2.0 | Hugging Face (`diffusers`) |
+| `google/ddpm-celebahq-256` | ~113 M | Difusion incondicional (DDPM) | Ruido, sin prompt | Apache 2.0 | Hugging Face (`diffusers`) |
+| `CompVis/stable-diffusion-v1-4` | ~860 M (U-Net) | Difusion condicionada por texto | Prompt de texto | CreativeML OpenRAIL-M | Hugging Face (`diffusers`) |
 
 Los datos de parametros de los modelos comparables son aproximados y se ofrecen como referencia de orden de magnitud; no se dispone de comparaciones de rendimiento (FID) en la informacion proporcionada. La diferencia clave es que este modelo es incondicional y de dominio unico (mariposas), mientras que los alternativos cubren otros dominios o permiten condicionamiento por texto.
 
@@ -82,7 +82,7 @@ Los datos de parametros de los modelos comparables son aproximados y se ofrecen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yalilyu28/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/yalilyu28/sd-class-butterflies-32
 - Curso Diffusion Models Class (repositorio): https://github.com/huggingface/diffusion-models-class
 - Documentacion de `DDPMPipeline` en `diffusers`: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Documentacion general de `diffusers`: https://huggingface.co/docs/diffusers

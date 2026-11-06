@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Macro F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DistilBERT LoRA Yelp (este) | 67,7 M (0,74 M entrenables) | 256 tokens (entrenamiento) | 59,00% | apache-2.0 | HuggingFace |
+| DistilBERT LoRA Yelp (este) | 67,7 M (0,74 M entrenables) | 256 tokens (entrenamiento) | 59,00% | apache-2.0 | Hugging Face |
 | DistilBERT fine-tuning completo (mismo experimento) | 67,7 M | 256 tokens | 60,49% | apache-2.0 (base) | No publicado como modelo |
 | TF-IDF + Logistic Regression (mismo experimento) | no aplica | no aplica | 52,35% | no aplica | No publicado |
 | Zero-shot DistilBART (mismo experimento) | no disponible | no disponible | 30,44% | no disponible | No publicado |
@@ -113,7 +113,7 @@ No se dispone de comparación con otros adaptadores LoRA públicos sobre Yelp en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Divyesh2121/distilbert-yelp-lora-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Divyesh2121/distilbert-yelp-lora-sentiment
 - Modelo base DistilBERT: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset Yelp Review Full: https://huggingface.co/datasets/Yelp/yelp_review_full
 - Librería PEFT: https://github.com/huggingface/peft

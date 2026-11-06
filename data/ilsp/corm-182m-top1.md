@@ -4,7 +4,7 @@
 
 CoRM-182M-top1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por el Instituto de Procesamiento del Lenguaje y Sistemas (ILSP/Athena), en el marco de una propuesta de investigacion sobre el encaminamiento de expertos en modelos modulares. El checkpoint se publica como material asociado al articulo "Beyond Magnitude: Contrastive Routing for Modular Mixture-of-Experts". Su principal contribucion es un router que puntua a cada experto mediante una brecha de atencion contrastiva respecto a un estado de referencia EMA dinamico, en lugar de usar la magnitud bruta de las activaciones.
 
-El modelo tiene 777 millones de parametros totales (782.331.660 segun el conteo de los pesos safetensors) y 182 millones de parametros activos por token, con 8 expertos y ruteo Top-1. La arquitectura es un transformer de 12 capas, 768 unidades de hidden size, atencion GQA con 4 cabezas de clave/valor, y una ventana de contexto de 1024 tokens. Se distribuye bajo licencia Apache-2.0 y requiere `trust_remote_code=True` para cargarse desde HuggingFace Transformers.
+El modelo tiene 777 millones de parametros totales (782.331.660 segun el conteo de los pesos safetensors) y 182 millones de parametros activos por token, con 8 expertos y ruteo Top-1. La arquitectura es un transformer de 12 capas, 768 unidades de hidden size, atencion GQA con 4 cabezas de clave/valor, y una ventana de contexto de 1024 tokens. Se distribuye bajo licencia Apache-2.0 y requiere `trust_remote_code=True` para cargarse desde Hugging Face Transformers.
 
 ## Especificaciones tecnicas
 
@@ -23,14 +23,14 @@ El modelo tiene 777 millones de parametros totales (782.331.660 segun el conteo 
 
 La arquitectura combina un transformer denso con capas MoE. La atencion es de tipo Grouped Query Attention: 12 cabezas de consulta y 4 de clave/valor. El modelo cuenta con 8 expertos, y cada token activa exactamente uno de ellos (routing Top-1), lo que reduce el coste computacional de la capa de expertos frente a un modelo denso de parametros equivalentes. El router, segun el codigo oficial, calcula una puntuacion por experto usando una brecha de atencion contrastiva contra un estado de referencia EMA (media movil exponencial) dinamico, en lugar de puntuar por la magnitud de la activacion.
 
-No se dispone de informacion sobre los datos de entrenamiento, el numero de tokens, la composicion del dataset ni la aplicacion de tecnicas como RLHF o DPO. La model card deja los campos de entrenamiento y evaluacion como "TODO" pendiente de completar. El modelo usa codigo de modelado personalizado, por lo que su funcionamiento interno depende del codigo de autor incluido en el repositorio de HuggingFace.
+No se dispone de informacion sobre los datos de entrenamiento, el numero de tokens, la composicion del dataset ni la aplicacion de tecnicas como RLHF o DPO. La model card deja los campos de entrenamiento y evaluacion como "TODO" pendiente de completar. El modelo usa codigo de modelado personalizado, por lo que su funcionamiento interno depende del codigo de autor incluido en el repositorio de Hugging Face.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva, confirmada por el ejemplo de uso con `AutoModelForCausalLM.generate`.
 - Ruteo de expertos Top-1 sobre un total de 8 expertos, con solo 182 millones de parametros activos por token.
 - Atencion GQA con 4 cabezas de clave/valor, orientada a reducir el coste de memoria de la cache de atencion.
-- Carga mediante codigo personalizado de HuggingFace Transformers (`trust_remote_code=True`).
+- Carga mediante codigo personalizado de Hugging Face Transformers (`trust_remote_code=True`).
 - No se han publicado capacidades de tool calling, function calling, agentes, razonamiento explicito, vision, audio ni multimodalidad.
 - No hay informacion sobre idiomas soportados ni calidad multilingue.
 
@@ -46,7 +46,7 @@ No se dispone de informacion sobre los datos de entrenamiento, el numero de toke
 
 - Banco de pruebas para regularizacion de MoE: el codigo abierto permite modificar el estado de referencia EMA y la funcion de puntuacion, lo que hace el modelo util para validar nuevas variantes de routing.
 
-- Experimentos docentes o de divulgacion tecnica: sirve para demonstrar el pipeline de texto generativo con HuggingFace Transformers y resaltar la diferencia entre parametros totales y activos en un MoE.
+- Experimentos docentes o de divulgacion tecnica: sirve para demonstrar el pipeline de texto generativo con Hugging Face Transformers y resaltar la diferencia entre parametros totales y activos en un MoE.
 
 ## Benchmarks y rendimiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - Con overhead de activaciones y buffer de generacion, se estima un minimo de 4 GB de VRAM para inferencia basica.
 - Una GPU de 8 GB o mas (RTX 3060, RTX 4060, A100, H100) ofrece margen para generar secuencias de mayor longitud o procesar multiples requests.
 - El modelo cabe en GPUs de consumo. No requiere una A100 o H100 para ejecutarse.
-- Opciones de despliegue documentadas: HuggingFace Transformers con `trust_remote_code=True`. No se ha validado soporte oficial en vLLM, TGI, llama.cpp ni Ollama; esos entornos requeririan adaptar el codigo personalizado.
+- Opciones de despliegue documentadas: Hugging Face Transformers con `trust_remote_code=True`. No se ha validado soporte oficial en vLLM, TGI, llama.cpp ni Ollama; esos entornos requeririan adaptar el codigo personalizado.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ No disponible. No se han identificado en la informacion consultada modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/ilsp/CoRM-182M-top1](https://huggingface.co/ilsp/CoRM-182M-top1)
-- Coleccion CoRM en HuggingFace: [https://huggingface.co/ilsp/CoRM](https://huggingface.co/ilsp/CoRM)
+- Modelo en Hugging Face: [https://huggingface.co/ilsp/CoRM-182M-top1](https://huggingface.co/ilsp/CoRM-182M-top1)
+- Coleccion CoRM en Hugging Face: [https://huggingface.co/ilsp/CoRM](https://huggingface.co/ilsp/CoRM)
 - Codigo oficial en GitHub: [https://github.com/athena-ilsp/CoRM](https://github.com/athena-ilsp/CoRM)
 - README del repositorio: [https://github.com/athena-ilsp/CoRM/blob/main/README.md](https://github.com/athena-ilsp/CoRM/blob/main/README.md)
 - Paper en arXiv: [https://arxiv.org/abs/2609.01100](https://arxiv.org/abs/2609.01100)

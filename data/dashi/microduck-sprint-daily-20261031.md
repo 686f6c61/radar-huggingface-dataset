@@ -78,7 +78,7 @@ No hay datos de rendimiento comparativo publicados entre estas políticas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-sprint-daily-20261031
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-sprint-daily-20261031
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix3
 - Repositorio del proyecto microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`; URL no disponible)

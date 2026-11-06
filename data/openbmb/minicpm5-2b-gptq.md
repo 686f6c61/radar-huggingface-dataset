@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B-GPTQ
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-GPTQ
 - Paper MiniCPM Tech Report: https://arxiv.org/pdf/2506.07900
 - Referencia arXiv adicional (según model card): https://arxiv.org/abs/2602.09003
 - GitHub: https://github.com/OpenBMB/MiniCPM

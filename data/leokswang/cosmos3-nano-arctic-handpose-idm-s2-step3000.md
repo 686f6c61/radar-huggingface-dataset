@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Rendimiento (error punta de dedo, s05) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Cosmos3-Nano IDM LoRA, S2_idm step 3000) | 15,2 B totales, 78,3 M entrenados | ventanas de 17 fotogramas a 15 fps | 37,8 mm | other (base OpenMDW-1.1) | HuggingFace, repo de 31 GB |
+| Este adaptador (Cosmos3-Nano IDM LoRA, S2_idm step 3000) | 15,2 B totales, 78,3 M entrenados | ventanas de 17 fotogramas a 15 fps | 37,8 mm | other (base OpenMDW-1.1) | Hugging Face, repo de 31 GB |
 | wam S2 (misma receta, modo world-action model) | misma base | misma | 105,9 mm | no disponible | referenciado en el repositorio del autor |
 | Mano congelada en el fotograma 0 (linea base) | no aplica | no aplica | 92,5 mm | no disponible | linea base del experimento |
-| NVIDIA Cosmos3-Nano (base, sin adaptador) | 16 B | no disponible | no disponible para esta tarea | OpenMDW-1.1 | HuggingFace (nvidia/Cosmos3-Nano) y NIM |
+| NVIDIA Cosmos3-Nano (base, sin adaptador) | 16 B | no disponible | no disponible para esta tarea | OpenMDW-1.1 | Hugging Face (nvidia/Cosmos3-Nano) y NIM |
 | NVIDIA Cosmos3-Edge | 4 B | no disponible | no disponible | OpenMDW-1.1 | documentacion de NVIDIA |
 
 No se dispone de comparativas con otros modelos de dinámica inversa de manos entrenados sobre ARCTIC en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de comparativas con otros modelos de dinámica inversa de manos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leokswang/cosmos3-nano-arctic-handpose-idm-s2-step3000
+- Modelo en Hugging Face: https://huggingface.co/leokswang/cosmos3-nano-arctic-handpose-idm-s2-step3000
 - Modelo base NVIDIA Cosmos3-Nano: https://huggingface.co/nvidia/Cosmos3-Nano
 - Repositorio del autor (experimento WAM_vs_IDM): https://github.com/leo01110111/dex
 - Notas del experimento: `research_notes/Cosmos_IDM/experiments.md` dentro del repositorio anterior

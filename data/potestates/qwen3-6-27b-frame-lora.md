@@ -82,6 +82,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Potestates/qwen3.6-27b-frame-lora
+- Hugging Face: https://huggingface.co/Potestates/qwen3.6-27b-frame-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Datos de corrección SAR-RARP50: https://rdr.ucl.ac.uk/articles/dataset/24932529

@@ -71,7 +71,7 @@ No se dispone de modelos directamente comparables en el ecosistema open source, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prannesshkva/ROTOR-50M-MoE
+- Modelo en Hugging Face: https://huggingface.co/Prannesshkva/ROTOR-50M-MoE
 - DOI del articulo: https://doi.org/10.5281/zenodo.22285756
 - Licencia CC BY-NC-ND 4.0: https://creativecommons.org/licenses/by-nc-nd/4.0/
 - Perfil del autor: https://huggingface.co/Prannesshkva

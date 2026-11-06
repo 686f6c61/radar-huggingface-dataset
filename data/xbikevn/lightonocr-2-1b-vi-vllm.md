@@ -24,11 +24,11 @@ Su relevancia practica es limitada pero concreta: se trata de un modelo pequeno 
 
 El modelo parte de lightonai/LightOnOCR-2-1B y se ajusta mediante el Trainer de transformers con un unico epoch sobre un dataset no identificado ("on an unknown dataset", segun la propia model card). Los hiperparametros declarados son: learning rate 6e-05, batch de entrenamiento 4, batch de evaluacion 6, acumulacion de gradientes 4 (batch efectivo 16), semilla 42, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08 en la variante `ADAMW_TORCH_FUSED`, scheduler lineal con 10 pasos de warmup. Las versiones de framework empleadas son Transformers 5.0.0, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.22.2.
 
-No se documenta ninguna innovacion tecnica adicional: no hay mencion a decodificacion especulativa, atencion lineal, RLHF, DPO ni a la composicion del dataset. La model card no incluye ni siquiera la seccion de resultados de entrenamiento, que aparece vacia. Tampoco se especifica si el ajuste conserva las capacidades multimodales del modelo base OCR ni como se trato la torre de vision durante el fine-tune, una cuestion critica dado que el pipeline declarado en HuggingFace es `text-generation` y no una tarea de vision-lenguaje.
+No se documenta ninguna innovacion tecnica adicional: no hay mencion a decodificacion especulativa, atencion lineal, RLHF, DPO ni a la composicion del dataset. La model card no incluye ni siquiera la seccion de resultados de entrenamiento, que aparece vacia. Tampoco se especifica si el ajuste conserva las capacidades multimodales del modelo base OCR ni como se trato la torre de vision durante el fine-tune, una cuestion critica dado que el pipeline declarado en Hugging Face es `text-generation` y no una tarea de vision-lenguaje.
 
 ## Capacidades
 
-- Generacion de texto y uso conversacional: el modelo esta etiquetado como `text-generation` y `conversational` en HuggingFace.
+- Generacion de texto y uso conversacional: el modelo esta etiquetado como `text-generation` y `conversational` en Hugging Face.
 - Ajuste derivado de un modelo OCR: el punto de partida (LightOnOCR-2-1B) es un modelo de reconocimiento optico de caracteres, por lo que se espera cierta competencia en transcripcion y tratamiento de texto extraido de documentos, aunque no se documenta como se preserva esa capacidad tras el fine-tune.
 - Posible especializacion en vietnamita: inferida del sufijo `-vi`, no confirmada.
 - Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`.
@@ -91,6 +91,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbikevn/LightOnOCR-2-1B-vi-vllm
+- Modelo en Hugging Face: https://huggingface.co/xbikevn/LightOnOCR-2-1B-vi-vllm
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-2-1B
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su autor o el modelo base. Las URLs devueltas por la busqueda corresponden a foros de soporte de Microsoft y a guias de SanDisk sin relacion alguna con el modelo.

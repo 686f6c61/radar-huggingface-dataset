@@ -96,7 +96,7 @@ Frente a Qwen3-30B-A3B, el principal diferencial explotable de este repositorio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/hybrid-moe-30b-a3b-base-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/hybrid-moe-30b-a3b-base-GGUF
 - Modelo base indicado en la model card: https://huggingface.co/geodesic-research/hybrid-moe-30b-a3b-base
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Motor de inferencia compatible con GGUF (llama.cpp): https://github.com/ggml-org/llama.cpp

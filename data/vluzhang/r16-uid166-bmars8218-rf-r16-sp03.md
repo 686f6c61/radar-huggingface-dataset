@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`r16-uid166-bmars8218-rf-r16-sp03` es un modelo de lenguaje de aproximadamente 2.018 millones de parametros (2,02 B) desarrollado por el usuario de HuggingFace `vluzhang`, construido como continuacion del preentrenamiento de `anacoluthe89/chrono4-2024` (descrito por el autor como ganador de la ronda R15) con el objetivo de desplazar su fecha de corte de conocimiento hacia finales de 2025. Forma parte de la familia denominada ChronoLLM, bajo la etiqueta `sn38`, y emplea la arquitectura propietaria `sn38-nanochrono`, que se mantiene sin cambios respecto al modelo base.
+`r16-uid166-bmars8218-rf-r16-sp03` es un modelo de lenguaje de aproximadamente 2.018 millones de parametros (2,02 B) desarrollado por el usuario de Hugging Face `vluzhang`, construido como continuacion del preentrenamiento de `anacoluthe89/chrono4-2024` (descrito por el autor como ganador de la ronda R15) con el objetivo de desplazar su fecha de corte de conocimiento hacia finales de 2025. Forma parte de la familia denominada ChronoLLM, bajo la etiqueta `sn38`, y emplea la arquitectura propietaria `sn38-nanochrono`, que se mantiene sin cambios respecto al modelo base.
 
 La receta de entrenamiento declarada consiste en dos ajustes finos independientes sobre un corpus depurado de 2024-2025 (noticias, web y revisiones de Wikipedia con fecha anterior o igual al 31 de diciembre de 2025), uno de ellos con reproduccion por autodestilacion de las propias respuestas del modelo base. Los pesos finales son una interpolacion lineal de ambos ajustes con pesos 0,3 / 0,7. El autor afirma explicitamente que no se utilizo texto de 2026 durante el entrenamiento.
 
@@ -91,7 +91,7 @@ La diferencia practica clave no es de rendimiento sino de encaje tecnico: los tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vluzhang/r16-uid166-bmars8218-rf-r16-sp03
+- Modelo en Hugging Face: https://huggingface.co/vluzhang/r16-uid166-bmars8218-rf-r16-sp03
 - Modelo base: https://huggingface.co/anacoluthe89/chrono4-2024
 - Paper, blog o repositorio del loader SN38: no disponible en la informacion proporcionada
 - Demo o espacio de inferencia: no disponible

@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jongstra/Qwen3.8-27B-Abliterated-MLX-6bit-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/jongstra/Qwen3.8-27B-Abliterated-MLX-6bit-fp16-mtp
 - Modelo base (PocketAiHub): https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX
 - Donante de la cabeza MTP (metajazz): https://huggingface.co/metajazz/Qwen3.8-27B-oQ6-fp16-mtp
 - Revision concreta del donante: `2926178d6d49585ab826c961ba132ff75b34fa4e`

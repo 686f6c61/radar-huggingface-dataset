@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `KrIthIn-108/fashion-product-classifier-vit` es un modelo publicado en HuggingFace por el usuario KrIthIn-108. Por el identificador se deduce que se trata de un clasificador de productos de moda basado en una arquitectura de Vision Transformer (ViT), aunque esta deducción procede únicamente del nombre del repositorio y no está confirmada por ninguna model card, ya que la información disponible no incluye pipeline, licencia, idiomas ni descripción técnica.
+El repositorio `KrIthIn-108/fashion-product-classifier-vit` es un modelo publicado en Hugging Face por el usuario KrIthIn-108. Por el identificador se deduce que se trata de un clasificador de productos de moda basado en una arquitectura de Vision Transformer (ViT), aunque esta deducción procede únicamente del nombre del repositorio y no está confirmada por ninguna model card, ya que la información disponible no incluye pipeline, licencia, idiomas ni descripción técnica.
 
 El repositorio ocupa 1,0 GB y fue creado y actualizado el 14 de septiembre de 2026, con un intervalo de siete minutos entre ambas fechas, lo que sugiere una subida única sin iteraciones posteriores documentadas. Acumula 0 descargas y 1 like, por lo que se trata de un artefacto prácticamente sin uso ni validación por parte de la comunidad.
 
@@ -74,10 +74,10 @@ El modelo no declara parámetros, contexto ni licencia, por lo que la comparaci�
 
 | Modelo | Arquitectura | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KrIthIn-108/fashion-product-classifier-vit | Vision Transformer (inferido) | no disponible | no disponible | HuggingFace, 0 descargas |
-| ViT-Base/16 (Google) | Vision Transformer | ~86 M | Apache 2.0 (versión original) | HuggingFace y TF Hub |
-| DeiT-Base (Meta) | Vision Transformer con destilación | ~86 M | Apache 2.0 | HuggingFace |
-| ResNet-50 (Microsoft) | CNN residual | ~25,6 M | MIT | HuggingFace, torchvision |
+| KrIthIn-108/fashion-product-classifier-vit | Vision Transformer (inferido) | no disponible | no disponible | Hugging Face, 0 descargas |
+| ViT-Base/16 (Google) | Vision Transformer | ~86 M | Apache 2.0 (versión original) | Hugging Face y TF Hub |
+| DeiT-Base (Meta) | Vision Transformer con destilación | ~86 M | Apache 2.0 | Hugging Face |
+| ResNet-50 (Microsoft) | CNN residual | ~25,6 M | MIT | Hugging Face, torchvision |
 
 No es posible comparar rendimiento porque el modelo objeto de la ficha no publica métricas. La única ventaja diferencial observable es la especialización temática aparente en moda, que tampoco está demostrada documentalmente.
 
@@ -96,6 +96,6 @@ No es posible comparar rendimiento porque el modelo objeto de la ficha no public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KrIthIn-108/fashion-product-classifier-vit
+- Repositorio en Hugging Face: https://huggingface.co/KrIthIn-108/fashion-product-classifier-vit
 
 No se han encontrado en la búsqueda web papers, blogs, repositorios de código, demos ni documentación adicional asociados a este modelo.

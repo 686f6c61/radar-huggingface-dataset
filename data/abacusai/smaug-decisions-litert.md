@@ -71,9 +71,9 @@ La model card indica que el resultado en Earshot audio (59,4) está a la par de 
 
 | Modelo | Parámetros | Contexto | Multimodalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Smaug-Decisions-LiteRT | 4B | no disponible | Audio, visión, texto | Apache 2.0 | HuggingFace, LiteRT-LM |
-| Smaug-Decisions (full precision) | 4B | no disponible | Audio, visión, texto | Apache 2.0 | HuggingFace |
-| Smaug-Audio-Decisions-0.7B | 0,7B | no disponible | Audio | Apache 2.0 | HuggingFace, Core ML / ONNX Runtime |
+| Smaug-Decisions-LiteRT | 4B | no disponible | Audio, visión, texto | Apache 2.0 | Hugging Face, LiteRT-LM |
+| Smaug-Decisions (full precision) | 4B | no disponible | Audio, visión, texto | Apache 2.0 | Hugging Face |
+| Smaug-Audio-Decisions-0.7B | 0,7B | no disponible | Audio | Apache 2.0 | Hugging Face, Core ML / ONNX Runtime |
 
 No se dispone de información sobre otros modelos comparables de decisión multimodal on-device en la documentación proporcionada.
 
@@ -91,9 +91,9 @@ No se dispone de información sobre otros modelos comparables de decisión multi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abacusai/Smaug-Decisions-LiteRT
+- Hugging Face: https://huggingface.co/abacusai/Smaug-Decisions-LiteRT
 - Modelo base: https://huggingface.co/abacusai/Smaug-Decisions
 - Modelo de audio ligero: https://huggingface.co/abacusai/Smaug-Audio-Decisions-0.7B
 - LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Abacus.AI: https://abacus.ai
-- Organización en HuggingFace: https://huggingface.co/abacusai
+- Organización en Hugging Face: https://huggingface.co/abacusai

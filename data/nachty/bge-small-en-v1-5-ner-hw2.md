@@ -2,11 +2,11 @@
 
 ## Resumen
 
-bge-small-en-v1.5-ner-hw2 es un modelo de reconocimiento de entidades nombradas (NER) obtenido por ajuste fino del encoder BAAI/bge-small-en-v1.5, publicado por el usuario nachty en HuggingFace. Se trata, por tanto, de una adaptación de un modelo de embeddings de texto de la familia BGE v1.5 (arquitectura tipo BERT, ~33 millones de parámetros, orientada originalmente a recuperación densa y similitud semántica en inglés) reconvertida a la tarea de etiquetado de tokens mediante `token-classification`.
+bge-small-en-v1.5-ner-hw2 es un modelo de reconocimiento de entidades nombradas (NER) obtenido por ajuste fino del encoder BAAI/bge-small-en-v1.5, publicado por el usuario nachty en Hugging Face. Se trata, por tanto, de una adaptación de un modelo de embeddings de texto de la familia BGE v1.5 (arquitectura tipo BERT, ~33 millones de parámetros, orientada originalmente a recuperación densa y similitud semántica en inglés) reconvertida a la tarea de etiquetado de tokens mediante `token-classification`.
 
 El modelo resuelve la extracción de entidades sobre texto: dado un fragmento de entrada, devuelve una etiqueta BIO/IOB por token. Con 33.215.625 parámetros y un repositorio de 0,3 GB, es un modelo muy ligero que puede ejecutarse en CPU o en cualquier GPU consumer. Su relevancia práctica es la de un componente de extracción de información barato y rápido para pipelines de NLP, aunque su documentación es prácticamente inexistente y no se especifica qué conjunto de datos ni qué esquema de etiquetas se usó para el ajuste.
 
-El modelo se publica con licencia MIT, lo que permite uso comercial sin restricciones relevantes, pero no cuenta con descargas ni valoraciones en el momento de la consulta y su model card está generada automáticamente por el `Trainer` de HuggingFace, con secciones sin rellenar ("More information needed"). Esto limita seriamente su uso en producción sin una validación previa por parte del integrador.
+El modelo se publica con licencia MIT, lo que permite uso comercial sin restricciones relevantes, pero no cuenta con descargas ni valoraciones en el momento de la consulta y su model card está generada automáticamente por el `Trainer` de Hugging Face, con secciones sin rellenar ("More information needed"). Esto limita seriamente su uso en producción sin una validación previa por parte del integrador.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ Los hiperparametros declarados en la model card son: learning rate 2e-05, batch 
 - Etiquetado de tokens (NER): clasifica cada token de la entrada segun el esquema de entidades aprendido durante el ajuste.
 - Extraccion de informacion estructurada a partir de texto no estructurado, siempre que la entidad buscada pertenezca al esquema de etiquetas del entrenamiento.
 - Inferencia muy rapida y con huella de memoria minima (33 M de parametros), apta para procesamiento por lotes de alto volumen.
-- Compatible con el pipeline `token-classification` de transformers y con `endpoints_compatible`, por lo que puede servirse mediante HuggingFace Inference Endpoints.
+- Compatible con el pipeline `token-classification` de transformers y con `endpoints_compatible`, por lo que puede servirse mediante Hugging Face Inference Endpoints.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible (es un encoder discriminativo, no un modelo generativo).
 - Capacidades multilingues: no disponibles; el modelo base esta orientado a ingles.
@@ -72,7 +72,7 @@ El mejor F1 reportado es 0,9139 con precision 0,9022 y recall 0,9258 (epoca 8). 
 - VRAM estimada para inferencia: aproximadamente 0,13 GB en fp32 y 0,07 GB en fp16/bf16 para los pesos; con activaciones y overhead de runtime, menos de 1 GB en cualquier configuracion realista.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, RTX 3060, RTX 4090, T4, A10, L4, A100, H100). El modelo esta muy por debajo de la capacidad de todas ellas.
 - Cabe en GPU consumer: si, en practicamente todas las GPU consumer de los ultimos diez anos, y tambien en CPU. No requiere acelerador dedicado.
-- Opciones de despliegue: pipeline `token-classification` de transformers (PyTorch o TensorFlow), exportacion a ONNX Runtime para inferencia en CPU, TorchScript, y HuggingFace Inference Endpoints (el repositorio incluye el tag `endpoints_compatible`). vLLM y TGI no soportan de forma estandar la tarea de clasificacion de tokens, por lo que no son opciones adecuadas; llama.cpp y Ollama tampoco estan orientados a este tipo de cabeza de clasificacion.
+- Opciones de despliegue: pipeline `token-classification` de transformers (PyTorch o TensorFlow), exportacion a ONNX Runtime para inferencia en CPU, TorchScript, y Hugging Face Inference Endpoints (el repositorio incluye el tag `endpoints_compatible`). vLLM y TGI no soportan de forma estandar la tarea de clasificacion de tokens, por lo que no son opciones adecuadas; llama.cpp y Ollama tampoco estan orientados a este tipo de cabeza de clasificacion.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano del modelo (33 M de parametros, entradas de hasta 512 tokens), es razonable esperar latencias de milisegundos por lote en GPU y decenas de milisegundos en CPU, pero son estimaciones no verificadas y deben medirse en el entorno objetivo.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ El modelo aqui descrito es el mas pequeno de la comparativa y el unico sin esque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nachty/bge-small-en-v1.5-ner-hw2
+- Modelo en Hugging Face: https://huggingface.co/nachty/bge-small-en-v1.5-ner-hw2
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper de la familia BGE (BAAI General Embedding): no disponible en la informacion proporcionada.
 - Repositorio de codigo del autor: no disponible.

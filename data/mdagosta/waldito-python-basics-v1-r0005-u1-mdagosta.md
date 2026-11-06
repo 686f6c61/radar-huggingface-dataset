@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1-r0005-u1 | 9,5 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | HuggingFace, ampliamente utilizado |
+| waldito-python-basics-v1-r0005-u1 | 9,5 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | Hugging Face, ampliamente utilizado |
 
 La comparativa es de escala, no de rendimiento: los tres modelos de referencia estan entre 14 y 115 veces por encima en numero de parametros, cuentan con licencias permisivas explicitas y disponen de evaluaciones publicas, mientras que el modelo analizado no declara licencia, idiomas ni contexto. No se dispone de ninguna comparacion de resultados en benchmarks porque el modelo no publica cifras.
 
@@ -97,7 +97,7 @@ La comparativa es de escala, no de rendimiento: los tres modelos de referencia e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u1-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u1-mdagosta
 - Version anterior de la misma familia: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta
 - Inventario de la release (referenciado en la model card): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u1-mdagosta/blob/main/BOM.json
 - Divulgacion de contenido de entrenamiento UE GPAI (referenciado en la model card): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u1-mdagosta/blob/main/EU-BOM.json

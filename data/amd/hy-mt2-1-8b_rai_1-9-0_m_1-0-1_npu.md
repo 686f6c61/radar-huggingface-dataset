@@ -6,7 +6,7 @@ Hy-MT2-1.8B es un modelo de traducción automática desarrollado por Tencent Hun
 
 El interés de esta ficha radica en que no se trata de la publicación original de Tencent, sino de un artefacto de despliegue producido por AMD para llevar inferencia de modelos de lenguaje a PCs con NPU integrada (familia Ryzen AI). Esto lo convierte en un caso de estudio de cómo los fabricantes de silicio distribuyen pesos optimizados para su hardware, con las limitaciones de formato, licencia y acceso que ello implica. El repositorio está restringido (gated) y no registra descargas ni interacciones en el momento de la consulta.
 
-La información pública disponible es escasa: los metadatos de HuggingFace no incluyen model card detallada, resultados de benchmarks ni especificaciones de entrenamiento. Por tanto, esta ficha distingue explícitamente entre lo que se puede afirmar a partir de los metadatos y lo que queda como "no disponible".
+La información pública disponible es escasa: los metadatos de Hugging Face no incluyen model card detallada, resultados de benchmarks ni especificaciones de entrenamiento. Por tanto, esta ficha distingue explícitamente entre lo que se puede afirmar a partir de los metadatos y lo que queda como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia `other`: los terminos no son estandar; es imprescindible revisar las condiciones antes de cualquier uso comercial.
 - Idioma: los metadatos solo declaran ingles; el soporte de otros idiomas no esta confirmado.
 - Formato propietario de despliegue: el artefacto esta empaquetado para Ryzen AI (ONNX + Quark + RAI 1.9.0), lo que limita su uso fuera de ese hardware y runtime.
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Hy-MT2-1.8B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Hy-MT2-1.8B_rai_1.9.0_m_1.0.1_npu
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

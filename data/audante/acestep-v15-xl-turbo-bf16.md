@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Audante/acestep-v15-xl-turbo-bf16 | ~4.987 M | no disponible | MIT | HuggingFace |
-| ACE-Step/acestep-v15-xl-turbo (base) | no disponible | no disponible | MIT | HuggingFace |
+| Audante/acestep-v15-xl-turbo-bf16 | ~4.987 M | no disponible | MIT | Hugging Face |
+| ACE-Step/acestep-v15-xl-turbo (base) | no disponible | no disponible | MIT | Hugging Face |
 | Otros modelos de generación musical | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría con datos verificables de parámetros, contexto o rendimiento.
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables de la misma categoría c
 
 ## Enlaces
 
-- [HuggingFace: Audante/acestep-v15-xl-turbo-bf16](https://huggingface.co/Audante/acestep-v15-xl-turbo-bf16)
+- [Hugging Face: Audante/acestep-v15-xl-turbo-bf16](https://huggingface.co/Audante/acestep-v15-xl-turbo-bf16)
 - [Modelo base: ACE-Step/acestep-v15-xl-turbo](https://huggingface.co/ACE-Step/acestep-v15-xl-turbo)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

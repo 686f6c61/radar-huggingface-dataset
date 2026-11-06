@@ -80,8 +80,8 @@ La comparacion con los otros metodos de adaptacion evaluados en la practica (fea
 
 | Modelo | Parametros | Contexto maximo | Licencia | Disponibilidad | Rendimiento en AG News |
 |---|---|---|---|---|---|
-| abelcetina/u2t01-bert-agnews | 109.485.316 | 128 tokens en entrenamiento | Apache 2.0 | HuggingFace Hub | 0,9190 accuracy (validacion) / 0,9293 (test) |
-| google-bert/bert-base-uncased | 109.482.240 (sin cabeza de 4 clases) | 512 posiciones en el encoder | Apache 2.0 | HuggingFace Hub | No disponible (checkpoint sin ajustar) |
+| abelcetina/u2t01-bert-agnews | 109.485.316 | 128 tokens en entrenamiento | Apache 2.0 | Hugging Face Hub | 0,9190 accuracy (validacion) / 0,9293 (test) |
+| google-bert/bert-base-uncased | 109.482.240 (sin cabeza de 4 clases) | 512 posiciones en el encoder | Apache 2.0 | Hugging Face Hub | No disponible (checkpoint sin ajustar) |
 | Otros metodos de adaptacion U2T01 | No disponible | No disponible | No disponible | Repositorio companero del autor | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ La comparacion con los otros metodos de adaptacion evaluados en la practica (fea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abelcetina/u2t01-bert-agnews
+- Modelo en Hugging Face: https://huggingface.co/abelcetina/u2t01-bert-agnews
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset AG News: https://huggingface.co/datasets/fancyzhx/ag_news
 - Paper de BERT (arXiv:1810.04805): https://arxiv.org/abs/1810.04805

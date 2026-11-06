@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ShahriarFerdoush/llama3-8b-instruct-med-math-ties-comp-k30` es un checkpoint de 8.030.261.248 parámetros publicado en HuggingFace por el usuario ShahriarFerdoush. Por el identificador se deduce que se trata de una fusión de pesos (model merge) del modelo base Llama 3 8B Instruct con variantes ajustadas en dominios médico y matemático, aplicando el algoritmo TIES con un recorte top-k de 30. No es, por tanto, un modelo entrenado desde cero, sino una combinación aritmética de tensores de otros checkpoints; el autor no documenta qué modelos concretos se fusionaron.
+`ShahriarFerdoush/llama3-8b-instruct-med-math-ties-comp-k30` es un checkpoint de 8.030.261.248 parámetros publicado en Hugging Face por el usuario ShahriarFerdoush. Por el identificador se deduce que se trata de una fusión de pesos (model merge) del modelo base Llama 3 8B Instruct con variantes ajustadas en dominios médico y matemático, aplicando el algoritmo TIES con un recorte top-k de 30. No es, por tanto, un modelo entrenado desde cero, sino una combinación aritmética de tensores de otros checkpoints; el autor no documenta qué modelos concretos se fusionaron.
 
-El modelo llega sin model card real: el README es la plantilla autogenerada por HuggingFace con todos los campos a `[More Information Needed]`. No hay información sobre datos de entrenamiento, licencia, idiomas, plantilla de chat, evaluación ni hiperparámetros de la fusión. El repositorio ocupa 16,1 GB y solo contiene pesos en safetensors para `transformers`, sin cuantizaciones GGUF, AWQ ni GPTQ.
+El modelo llega sin model card real: el README es la plantilla autogenerada por Hugging Face con todos los campos a `[More Information Needed]`. No hay información sobre datos de entrenamiento, licencia, idiomas, plantilla de chat, evaluación ni hiperparámetros de la fusión. El repositorio ocupa 16,1 GB y solo contiene pesos en safetensors para `transformers`, sin cuantizaciones GGUF, AWQ ni GPTQ.
 
 Su relevancia práctica es baja en el momento de la publicación: cero descargas y cero likes, ausencia total de documentación y de validación comunitaria. Resulta útil únicamente como punto de partida para experimentación controlada con merges en el ámbito médico-matemático, nunca como dependencia directa en producción sin una evaluación propia previa.
 
@@ -86,7 +86,7 @@ La comparación relevante es de trazabilidad más que de rendimiento: los tres m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-math-ties-comp-k30
+- Modelo en Hugging Face: https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-math-ties-comp-k30
 - Referencia citada en los tags del Hub (Lacoste et al., 2019, cálculo de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Artículo original de TIES-Merging, técnica indicada en el nombre del checkpoint (Yadav et al.): https://arxiv.org/abs/2306.01708
 - Calculadora de impacto ML referenciada en la plantilla de la model card: https://mlco2.github.io/impact

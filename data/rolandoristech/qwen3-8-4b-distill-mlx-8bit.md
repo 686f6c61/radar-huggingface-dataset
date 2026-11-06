@@ -97,7 +97,7 @@ Los datos de contexto y licencia de los modelos hermanos y del base proceden de 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-8bit
+- Hugging Face (este repositorio): https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-8bit
 - Repositorio canónico oQ8e: https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ8e
 - Repositorio hermano oQ4e: https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ4e
 - Modelo base destilado: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill

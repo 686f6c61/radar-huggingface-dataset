@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h023.sft-distil-cont.step_10
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h023.sft-distil-cont.step_10
 - Dataset asociado al run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Otro checkpoint de referencia del mismo proyecto: https://huggingface.co/agentic-ptb/grok.h023.sft-v6.step_800

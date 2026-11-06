@@ -75,7 +75,7 @@ Referencia de escala: los pesos BF16 oficiales calculados en BF16 en lugar de FP
 | Banco EXL3 de 3 bits (misma familia) | idéntico | no disponible | 0,0203 | GLM-5.3 License | Referenciado en la model card; tamaño no disponible |
 | Banco EXL3 de 4 bits (misma familia) | idéntico | no disponible | 0,0127 | GLM-5.3 License | Referenciado; tamaño no disponible |
 | Banco EXL3 de 5 bits (misma familia) | idéntico | no disponible | 0,0114 | GLM-5.3 License | Referenciado; requiere ocho DGX Sparks |
-| zai-org/GLM-5.3-BF16 (original) | 755B | no disponible | referencia (~0,009 de ruido numérico) | GLM-5.3 License | Público en HuggingFace |
+| zai-org/GLM-5.3-BF16 (original) | 755B | no disponible | referencia (~0,009 de ruido numérico) | GLM-5.3 License | Público en Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (MoE de más de 500B cuantizado para clúster de sobremesa) en la información proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (MoE 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-2bit
+- Modelo en Hugging Face: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-2bit
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Pesos BF16 de origen: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Recetario y código (Apache-2.0): https://github.com/fiore-labo/fiore-glm5.3

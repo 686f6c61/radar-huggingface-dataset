@@ -90,11 +90,11 @@ No se han encontrado en la información proporcionada resultados de benchmarks n
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/addlabsviral/qwen-image-2-1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio analizado en Hugging Face: https://huggingface.co/addlabsviral/qwen-image-2-1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog del modelo: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio de código: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord del proyecto: https://discord.gg/BEYSk3pkSu
 - Licencia (archivo LICENSE del repositorio oficial): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE

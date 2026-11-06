@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Qwen3-8B-awq-w4a16-c3 | 2,17 B (pesos 4-bit) | No disponible | AWQ W4A16 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | ~8,2 B | 32.768 tokens nativos | BF16/FP16 | Apache 2.0 | HuggingFace |
-| Otras 29 configuraciones del mismo artículo | Variable según base | No disponible | Diversas (AWQ, GPTQ, etc.) | Apache 2.0 | Colección HuggingFace jy395 |
-| Cuantizaciones genéricas de Qwen3-8B (p. ej. AWQ sin calibración financiera) | ~2,2 B (pesos 4-bit) | Según base | AWQ W4A16 | Apache 2.0 | HuggingFace |
+| jy395/Qwen3-8B-awq-w4a16-c3 | 2,17 B (pesos 4-bit) | No disponible | AWQ W4A16 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | ~8,2 B | 32.768 tokens nativos | BF16/FP16 | Apache 2.0 | Hugging Face |
+| Otras 29 configuraciones del mismo artículo | Variable según base | No disponible | Diversas (AWQ, GPTQ, etc.) | Apache 2.0 | Colección Hugging Face jy395 |
+| Cuantizaciones genéricas de Qwen3-8B (p. ej. AWQ sin calibración financiera) | ~2,2 B (pesos 4-bit) | Según base | AWQ W4A16 | Apache 2.0 | Hugging Face |
 
 La comparación relevante es contra el modelo base sin cuantizar (para medir la pérdida de precisión) y contra cuantizaciones con corpus de calibración genérico (para medir la ganancia del calibrado financiero). Los datos cuantitativos de esa comparación están en el artículo, no en la model card.
 
@@ -84,7 +84,7 @@ La comparación relevante es contra el modelo base sin cuantizar (para medir la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Qwen3-8B-awq-w4a16-c3
+- Modelo en Hugging Face: https://huggingface.co/jy395/Qwen3-8B-awq-w4a16-c3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Artículo (DOI): https://doi.org/10.1145/3858063.3858724
 - Repositorio de código y corpus: https://github.com/JunyiYe/finance-ptc-calibration

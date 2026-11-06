@@ -2,7 +2,7 @@
 
 ## Resumen
 
-maikpaixao/pt-legal-embedding es un modelo de embeddings publicado en HuggingFace por Maik Paixao, Data & AI Specialist con experiencia en Finanzas, Derecho y Marketing. El identificador del repositorio sugiere que está orientado a textos legales en portugués (pt), pero la model card no contiene documentación técnica. A fecha de la consulta, el modelo no tiene descargas ni likes, y no se han publicado detalles sobre arquitectura, tamaño, contexto o rendimiento.
+maikpaixao/pt-legal-embedding es un modelo de embeddings publicado en Hugging Face por Maik Paixao, Data & AI Specialist con experiencia en Finanzas, Derecho y Marketing. El identificador del repositorio sugiere que está orientado a textos legales en portugués (pt), pero la model card no contiene documentación técnica. A fecha de la consulta, el modelo no tiene descargas ni likes, y no se han publicado detalles sobre arquitectura, tamaño, contexto o rendimiento.
 
 La licencia es MIT, lo que permite su uso comercial, pero la ausencia de información técnica impide evaluar su idoneidad para cualquier tarea. Esta ficha refleja únicamente los datos disponibles y marca explícitamente los campos desconocidos.
 
@@ -56,9 +56,9 @@ No disponible. No se ha identificado informacion comparable sobre este modelo ni
 - No se conocen sesgos, riesgos de alucinacion ni limitaciones de contexto o idioma.
 - La licencia MIT permite uso comercial, pero sin garantias de rendimiento ni soporte.
 - No hay datos sobre el proceso de entrenamiento, lo que dificulta su adopcion en entornos de produccion.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maikpaixao/pt-legal-embedding
+- Hugging Face: https://huggingface.co/maikpaixao/pt-legal-embedding
 - GitHub del autor: https://github.com/maikpaixao

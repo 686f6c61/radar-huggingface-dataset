@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara: es un ejemplo reproducible de politica difu
 | Longitud de contexto | No aplica: no es un modelo de lenguaje. Horizonte de accion de 32 pasos; 24 acciones ejecutadas por defecto en cada llamada |
 | Tipos de cuantizacion | No disponible (el repositorio incluye unicamente el checkpoint de inferencia en safetensors; no se documentan variantes cuantizadas) |
 | Idiomas soportados | No disponible (modelo de robotica; no procesa lenguaje) |
-| Licencia | No disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors |
 | Libreria | LeRobot 0.6.1 (`MultiTaskDiTPolicy.from_pretrained`) |
 | Dimension de estado y accion | 22 dimensiones cada una |
@@ -52,7 +52,7 @@ El entrenamiento se realizo sobre los 35 episodios completos del dataset indicad
 - Prototipado rapido de pipelines de imitation learning: sirve para validar extremo a extremo la cadena de LeRobot (grabacion de episodios, entrenamiento, carga del checkpoint y despliegue en el robot) antes de invertir en datasets mayores.
 - Evaluacion de robustez visual: al depender de tres camaras (`cam_left_head`, `cam_left_wrist`, `cam_right_wrist`), es adecuado para estudiar el impacto de oclusiones, cambios de iluminacion o desalineacion de camaras en politicas de difusion.
 - Generacion de datos sinteticos de trayectoria para simuladores: las secuencias de acciones producidas pueden usarse como referencia para calibrar controladores o comparar el comportamiento real frente al simulado (*sim-to-real*).
-- Demostraciones educativas: por su tamano reducido y su licencia no declarada pero peso abierto en HuggingFace, resulta practico para cursos y talleres sobre diffusion policies en robotica.
+- Demostraciones educativas: por su tamano reducido y su licencia no declarada pero peso abierto en Hugging Face, resulta practico para cursos y talleres sobre diffusion policies en robotica.
 
 ## Benchmarks y rendimiento
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo de politica | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (MultiTask DiT Diffusion) | 235.020.054 | Difusion (DDPM) con tronco DiT | 3 camaras + estado de 22 dim | No disponible | HuggingFace (repo de 0,9 GB) |
+| Este checkpoint (MultiTask DiT Diffusion) | 235.020.054 | Difusion (DDPM) con tronco DiT | 3 camaras + estado de 22 dim | No disponible | Hugging Face (repo de 0,9 GB) |
 | ACT (LeRobot) | No disponible en la informacion proporcionada | Transformer de imitacion con *action chunking* | Camaras + estado | No disponible en la informacion proporcionada | Implementado en LeRobot |
 | Diffusion Policy (LeRobot) | No disponible en la informacion proporcionada | Difusion sobre acciones (CNN/UNet) | Camaras + estado | No disponible en la informacion proporcionada | Implementado en LeRobot |
-| SmolVLA (HuggingFace) | No disponible en la informacion proporcionada | Vision-language-action | Camaras + instruccion en lenguaje | No disponible en la informacion proporcionada | Ecosistema LeRobot |
+| SmolVLA (Hugging Face) | No disponible en la informacion proporcionada | Vision-language-action | Camaras + instruccion en lenguaje | No disponible en la informacion proporcionada | Ecosistema LeRobot |
 
 No se dispone de datos comparativos de rendimiento (tasas de exito, numero de episodios de evaluacion, latencias) para ninguno de estos modelos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -92,9 +92,9 @@ No se dispone de datos comparativos de rendimiento (tasas de exito, numero de ep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MultiTask-DiT-Diffusion_bs96_step30000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MultiTask-DiT-Diffusion_bs96_step30000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y del ecosistema de la libreria indicada en los metadatos.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y del ecosistema de la libreria indicada en los metadatos.

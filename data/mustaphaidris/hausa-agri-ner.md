@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mustaphaidris/hausa-agri-ner` es un modelo de clasificacion de tokens (token-classification) publicado en HuggingFace por el usuario mustaphaidris. Por su nombre y etiquetas, esta disenado para el reconocimiento de entidades nombradas (NER) en hausa, presuntamente en el dominio agricola, si bien la model card no confirma ni el idioma ni el dominio de forma explicita. El repositorio tiene 0 descargas y 1 like, lo que indica que es un modelo muy reciente o practicamente sin uso publico.
+El modelo `mustaphaidris/hausa-agri-ner` es un modelo de clasificacion de tokens (token-classification) publicado en Hugging Face por el usuario mustaphaidris. Por su nombre y etiquetas, esta disenado para el reconocimiento de entidades nombradas (NER) en hausa, presuntamente en el dominio agricola, si bien la model card no confirma ni el idioma ni el dominio de forma explicita. El repositorio tiene 0 descargas y 1 like, lo que indica que es un modelo muy reciente o practicamente sin uso publico.
 
 La etiqueta `xlm-roberta` junto con el recuento real de parametros (277.469.205) es coherente con XLM-RoBERTa-base, un encoder transformer multilingue de aproximadamente 278 millones de parametros. El modelo emplea la libreria `transformers` y pesos en formato `safetensors`, con un tamano de repositorio de 1,1 GB, consistente con pesos en fp32. Actualmente no hay informacion publica sobre licencia, idiomas soportados, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada y potencialmente experimental: no cubre
 
 La etiqueta `xlm-roberta` indica que el modelo parte de la familia XLM-RoBERTa, un encoder transformer basado en RoBERTa entrenado con enmascaramiento de lenguaje (masked language modeling) sobre corpus multilingues de gran escala. El recuento de 277 millones de parametros coincide con la variante base de esta familia. La tarea declarada es `token-classification`, es decir, una cabeza de clasificacion por token sobre las representaciones del encoder, que es la formulacion estandar para NER (etiquetado BIO/BIOES de entidades). No se dispone de informacion sobre el dataset de ajuste fino, el numero de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron tecnicas como validacion cruzada o ponderacion de clases.
 
-No hay datos publicados sobre hiperparametros de entrenamiento, regimen de precision (fp32, fp16, bf16), tasa de aprendizaje, numero de epocas, ni sobre el proceso de anotacion del corpus agricola en hausa. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion, etc.). La model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]".
+No hay datos publicados sobre hiperparametros de entrenamiento, regimen de precision (fp32, fp16, bf16), tasa de aprendizaje, numero de epocas, ni sobre el proceso de anotacion del corpus agricola en hausa. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion, etc.). La model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]".
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ No hay datos publicados sobre hiperparametros de entrenamiento, regimen de preci
 - Reconocimiento de entidades: capacidad de etiquetar secuencias segun un esquema tipo BIO.
 - Multilingueismo potencial: si la base es XLM-RoBERTa, hereda representaciones para mas de 90 idiomas, aunque el ajuste fino probablemente lo especialice para hausa.
 - Integracion con `transformers`: pipeline `token-classification` compatible con la libreria estandar.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Inference Endpoints de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente o razonamiento multi-paso: no disponibles (es un modelo encoder de clasificacion, no generativo).
 - Modos especiales (thinking, vision, audio): no disponibles.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (277 M de parametros): aproximadamente 1,1 GB en fp32, unos 0,55 GB en fp16/bf16 y alrededor de 0,28-0,35 GB en int8.
 - GPU recomendadas: cualquier GPU moderna sirve; por ejemplo RTX 3060, RTX 4090, T4, A10, L4, A100 o H100 estan sobradamente dimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer con mas de 2 GB de VRAM; tambien es viable en CPU para cargas de baja concurrencia.
-- Opciones de despliegue: pipeline de `transformers`, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), TorchServe o FastAPI para servir el modelo. vLLM y TGI estan orientados a modelos generativos y no son la via natural para un encoder de clasificacion; llama.cpp/Ollama requeririan conversion a GGUF y no es un formato publicado.
+- Opciones de despliegue: pipeline de `transformers`, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), TorchServe o FastAPI para servir el modelo. vLLM y TGI estan orientados a modelos generativos y no son la via natural para un encoder de clasificacion; llama.cpp/Ollama requeririan conversion a GGUF y no es un formato publicado.
 - Latencia y throughput estimados: no disponibles (dependen del hardware, la longitud de secuencia y el batch). Para un encoder de 277 M la inferencia por secuencia de 512 tokens en GPU moderna suele estar en el rango de milisegundos, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparacion se limita a la arquitectura base y al tamano, ya que no hay datos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mustaphaidris/hausa-agri-ner
+- Hugging Face: https://huggingface.co/mustaphaidris/hausa-agri-ner
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mloc2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo).

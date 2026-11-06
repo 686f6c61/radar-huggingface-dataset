@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mdagosta/waldito-python-basics-v1-r0013-u2-mdagosta es un modelo de generacion de texto publicado en HuggingFace por el usuario mdagosta, identificado en la model card como un "OpenWALDO model export". Se trata de un checkpoint de arquitectura Llama causal (decoder-only transformer) con un total de 9.541.632 parametros reales declarados en los pesos safetensors, lo que lo situa en la categoria de modelos ultraligeros, tres ordenes de magnitud por debajo de los modelos de 7B-8B habituales.
+mdagosta/waldito-python-basics-v1-r0013-u2-mdagosta es un modelo de generacion de texto publicado en Hugging Face por el usuario mdagosta, identificado en la model card como un "OpenWALDO model export". Se trata de un checkpoint de arquitectura Llama causal (decoder-only transformer) con un total de 9.541.632 parametros reales declarados en los pesos safetensors, lo que lo situa en la categoria de modelos ultraligeros, tres ordenes de magnitud por debajo de los modelos de 7B-8B habituales.
 
 El elemento diferencial declarado es el tokenizer: no emplea un tokenizer BPE tipo Llama, sino un "schema-1 byte tokenizer" propio de OpenWALDO que exige cargarse con `trust_remote_code=True`. El repositorio incluye ademas un `BOM.json` (inventario de ficheros de la release) y un `EU-BOM.json` con el mapeo de divulgacion de contenido de entrenamiento exigido por el reglamento europeo de IA (GPAI), lo que sugiere un esfuerzo de trazabilidad documental mas que un modelo orientado a rendimiento.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es sobre todo practica para quien evalue checkpoints
 | Tokenizer | schema-1 byte tokenizer de OpenWALDO (requiere `trust_remote_code=True`) |
 | Libreria | transformers |
 | Pipeline | text-generation |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Fecha de creacion | 2026-09-30 |
 
 ## Arquitectura y entrenamiento
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| waldito-python-basics-v1-r0013-u2-mdagosta | 9,54 M | no disponible | no disponible | HuggingFace, safetensors | Tokenizer de bytes propio, requiere `trust_remote_code` |
-| TinyStories-1M (Eldan y Li) | 1 M | 2048 | MIT | HuggingFace, safetensors | Entrenado sobre corpus sintetico de cuentos; dominio muy restringido |
-| Pythia-14M (EleutherAI) | 14 M | 2048 | Apache 2.0 | HuggingFace, safetensors | Suite de interpretabilidad con checkpoints intermedios; tokenizer GPT-NeoX |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 | Apache 2.0 | HuggingFace, safetensors, GGUF | Modelo pequeno con entrenamiento a gran escala y benchmarks publicos |
+| waldito-python-basics-v1-r0013-u2-mdagosta | 9,54 M | no disponible | no disponible | Hugging Face, safetensors | Tokenizer de bytes propio, requiere `trust_remote_code` |
+| TinyStories-1M (Eldan y Li) | 1 M | 2048 | MIT | Hugging Face, safetensors | Entrenado sobre corpus sintetico de cuentos; dominio muy restringido |
+| Pythia-14M (EleutherAI) | 14 M | 2048 | Apache 2.0 | Hugging Face, safetensors | Suite de interpretabilidad con checkpoints intermedios; tokenizer GPT-NeoX |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 | Apache 2.0 | Hugging Face, safetensors, GGUF | Modelo pequeno con entrenamiento a gran escala y benchmarks publicos |
 
 La comparacion con TinyStories-1M y Pythia-14M es la mas cercana en orden de magnitud. Frente a ellos, el modelo de mdagosta no publica licencia, idiomas, contexto ni evaluaciones, lo que limita cualquier comparacion cuantitativa de rendimiento.
 
@@ -91,5 +91,5 @@ La comparacion con TinyStories-1M y Pythia-14M es la mas cercana en orden de mag
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u2-mdagosta
+- Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u2-mdagosta
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jossfield-flux-style | LoRA de estilo sobre FLUX.1-dev | no disponible | no aplica | other | HuggingFace (yuhwan90) |
-| FLUX.1-dev | Modelo base texto-a-imagen | no disponible en la informacion | no aplica | no comercial (FLUX.1-dev license) | HuggingFace (Black Forest Labs) |
-| LoRA de estilo genericos para FLUX.1-dev | Adaptadores de estilo | variable | no aplica | variable | HuggingFace / Civitai |
+| jossfield-flux-style | LoRA de estilo sobre FLUX.1-dev | no disponible | no aplica | other | Hugging Face (yuhwan90) |
+| FLUX.1-dev | Modelo base texto-a-imagen | no disponible en la informacion | no aplica | no comercial (FLUX.1-dev license) | Hugging Face (Black Forest Labs) |
+| LoRA de estilo genericos para FLUX.1-dev | Adaptadores de estilo | variable | no aplica | variable | Hugging Face / Civitai |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y otras alternativas de estilo, por lo que la comparacion se limita a aspectos de formato y licencia.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y otras a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhwan90/jossfield-flux-style
+- Modelo en Hugging Face: https://huggingface.co/yuhwan90/jossfield-flux-style
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Repositorio diffusers: https://github.com/huggingface/diffusers
 - Documentacion de carga de LoRA en diffusers: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

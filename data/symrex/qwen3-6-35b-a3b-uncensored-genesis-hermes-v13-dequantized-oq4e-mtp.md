@@ -66,6 +66,6 @@ No se dispone de informacion sobre modelos comparables. El nombre sugiere una va
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ4e-mtp
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx
 - Versiones relacionadas del mismo autor: V11 (https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-oQ4e-mtp) y V12 (https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ4e-mtp)

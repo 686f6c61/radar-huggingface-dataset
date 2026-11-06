@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HIVEBREACH-AI es un repositorio de modelo publicado en HuggingFace por el usuario M524SEC bajo licencia MIT. En el momento de la consulta (fecha de creacion registrada: 21 de septiembre de 2026) el repositorio acumula 0 descargas y 0 likes, y su model card unicamente contiene la declaracion de licencia `license: mit`, sin ninguna otra seccion descriptiva.
+HIVEBREACH-AI es un repositorio de modelo publicado en Hugging Face por el usuario M524SEC bajo licencia MIT. En el momento de la consulta (fecha de creacion registrada: 21 de septiembre de 2026) el repositorio acumula 0 descargas y 0 likes, y su model card unicamente contiene la declaracion de licencia `license: mit`, sin ninguna otra seccion descriptiva.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos. El campo `pipeline` de HuggingFace aparece como "no disponible", por lo que no se puede confirmar si se trata de un modelo de generacion de texto, de vision, de audio u otra tarea.
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos. El campo `pipeline` de Hugging Face aparece como "no disponible", por lo que no se puede confirmar si se trata de un modelo de generacion de texto, de vision, de audio u otra tarea.
 
 La relevancia actual de esta ficha es, por tanto, limitada: se trata de un artefacto sin documentacion tecnica verificable. Cualquier evaluacion seria requiere contactar con el autor o esperar a que publique una model card completa. El nombre del repositorio sugiere un posible enfoque en seguridad informatica, pero no existe ningun documento en la informacion proporcionada que lo confirme.
 
@@ -57,7 +57,7 @@ No es posible recomendar casos de uso concretos sin conocer arquitectura, tamano
 - Despliegue en local: solo viable si se confirma el formato de pesos y el tamano; actualmente se desconoce si existe version GGUF o safetensors.
 - Ajuste fino sobre dominio propio: factible en teoria con licencia MIT, pero sin datos de arquitectura no se puede estimar coste de GPU ni estrategia de entrenamiento.
 - Integracion en pipelines de CI/CD: requiere confirmar formato, tokenizador y API de inferencia, datos ausentes.
-- Uso educativo o de investigacion: el repositorio podria servir como ejemplo de publicacion minima en HuggingFace, aunque sin documentacion su valor didactico es escaso.
+- Uso educativo o de investigacion: el repositorio podria servir como ejemplo de publicacion minima en Hugging Face, aunque sin documentacion su valor didactico es escaso.
 
 Se recomienda no planificar ningun caso de uso en produccion hasta que el autor publique especificaciones verificables.
 
@@ -90,7 +90,7 @@ No disponible. Al desconocerse tamano, arquitectura y tarea del modelo, no es po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/M524SEC/HIVEBREACH-AI
+- Hugging Face: https://huggingface.co/M524SEC/HIVEBREACH-AI
 - Model card: no disponible mas alla de la declaracion de licencia MIT
 - Paper: no disponible
 - Repositorio de codigo: no disponible

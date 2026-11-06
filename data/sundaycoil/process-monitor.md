@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/process-monitor` es una publicación del usuario `sundaycoil` en HuggingFace, creado el 9 de abril de 2026 y actualizado el 14 de agosto de 2026. Presenta las etiquetas `endpoints_compatible` y `region:us`, lo que sugiere que está pensado para ser desplegado a través de endpoints compatibles en la región de Estados Unidos, aunque no se especifica el tipo de pipeline ni el framework de inferencia.
+El modelo `sundaycoil/process-monitor` es una publicación del usuario `sundaycoil` en Hugging Face, creado el 9 de abril de 2026 y actualizado el 14 de agosto de 2026. Presenta las etiquetas `endpoints_compatible` y `region:us`, lo que sugiere que está pensado para ser desplegado a través de endpoints compatibles en la región de Estados Unidos, aunque no se especifica el tipo de pipeline ni el framework de inferencia.
 
 A fecha de la consulta, el modelo cuenta con 8 likes y 0 descargas, lo que indica una adopción muy limitada o un acceso restringido. No se dispone de información pública sobre su arquitectura, tamaño, licencia o idiomas soportados, por lo que cualquier evaluación técnica rigurosa resulta imposible con los datos disponibles. La ausencia de documentación asociada (papers, repositorios o demos) refuerza la necesidad de tratar esta entrada con cautela.
 
@@ -21,7 +21,7 @@ A fecha de la consulta, el modelo cuenta con 8 likes y 0 descargas, lo que indic
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, el conjunto de datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización empleadas (como RLHF, DPO o decodificación especulativa). La ficha de HuggingFace no incluye detalles técnicos más allá de las etiquetas mencionadas.
+No se ha publicado información sobre la arquitectura del modelo, el conjunto de datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización empleadas (como RLHF, DPO o decodificación especulativa). La ficha de Hugging Face no incluye detalles técnicos más allá de las etiquetas mencionadas.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. Al desconocer la arquitectura y el dominio de aplicación, no es 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/sundaycoil/process-monitor)
+- [Página del modelo en Hugging Face](https://huggingface.co/sundaycoil/process-monitor)

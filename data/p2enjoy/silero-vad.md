@@ -24,7 +24,7 @@ La model card no aporta ninguna especificación técnica del modelo subyacente: 
 | Repositorio de origen | freddyaboulton/silero-vad, revisión `f342a2697e1047b05938eac8fef1ad3b8183fb37` |
 | Ficheros incluidos | 1 (`silero_vad.onnx`) |
 | SHA-256 del fichero | `591f853590d11ddde2f2a54f9e7ccecb2533a8af7716330e8adfa6f3849787a9` |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-04 |
 
@@ -68,16 +68,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - ¿Cabe en GPU de consumo?: no requiere GPU para funcionar. No hay datos de tamaño que permitan afirmar límites de memoria concretos.
 - Opciones de despliegue: ONNX Runtime (Python, C++, C#, Java, JavaScript/Web), y cualquier runtime compatible con el estándar ONNX. vLLM, llama.cpp, Ollama y TGI no aplican, ya que no se trata de un modelo de lenguaje.
 - Latencia y throughput: no disponibles. No se han publicado mediciones en la información proporcionada.
-- Consideración de despliegue: el repositorio pesa 0.0 GB según HuggingFace, lo que indica un artefacto de tamaño muy reducido, pero el tamaño exacto del fichero ONNX no se detalla.
+- Consideración de despliegue: el repositorio pesa 0.0 GB según Hugging Face, lo que indica un artefacto de tamaño muy reducido, pero el tamaño exacto del fichero ONNX no se detalla.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P2Enjoy/silero-vad | VAD (espejo ONNX) | No disponible | Audio; ventana por fragmento no disponible | Apache 2.0 (declarada, heredada del modelo base) | HuggingFace, fichero ONNX único |
-| freddyaboulton/silero-vad | VAD (exportación ONNX) | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| P2Enjoy/silero-vad | VAD (espejo ONNX) | No disponible | Audio; ventana por fragmento no disponible | Apache 2.0 (declarada, heredada del modelo base) | Hugging Face, fichero ONNX único |
+| freddyaboulton/silero-vad | VAD (exportación ONNX) | No disponible | No disponible | Apache 2.0 | Hugging Face |
 | WebRTC VAD | VAD (modelo GMM integrado en WebRTC) | No disponible | Tramas de audio de duración fija, configurable por el usuario | BSD 3-Clause | Incluido en el árbol de código de WebRTC, sin descarga de pesos |
-| pyannote/segmentation-3.0 | Segmentación de habla (incluye actividad de voz) | No disponible | Ventanas de audio; parámetros no disponibles en la información proporcionada | Verificar condiciones en HuggingFace (acceso condicionado) | HuggingFace |
+| pyannote/segmentation-3.0 | Segmentación de habla (incluye actividad de voz) | No disponible | Ventanas de audio; parámetros no disponibles en la información proporcionada | Verificar condiciones en Hugging Face (acceso condicionado) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas. La comparación anterior es únicamente cualitativa, basada en el tipo de modelo, el formato de distribución y la licencia declarada.
 
@@ -96,8 +96,8 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas. La 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/P2Enjoy/silero-vad
-- Modelo base en HuggingFace: https://huggingface.co/freddyaboulton/silero-vad
+- Repositorio en Hugging Face: https://huggingface.co/P2Enjoy/silero-vad
+- Modelo base en Hugging Face: https://huggingface.co/freddyaboulton/silero-vad
 - Proyecto Silero VAD (repositorio de código): https://github.com/snakers4/silero-vad
 - Punto de entrada vía torch.hub: https://pytorch.org/hub/snakers4_silero-vad_vad/
 - No se han encontrado en la información disponible papers, blogs técnicos ni demos específicos de este repositorio espejo.

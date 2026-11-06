@@ -97,7 +97,7 @@ No se han publicado en la información disponible datos de otros modelos TTS com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheeyantra/pravega-pocket-tts
+- Modelo en Hugging Face: https://huggingface.co/dheeyantra/pravega-pocket-tts
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Runtime C++ PocketTTS.cpp: https://github.com/VolgaGerm/PocketTTS.cpp
 - Licencia: https://huggingface.co/dheeyantra/pravega-pocket-tts/blob/main/LICENSE

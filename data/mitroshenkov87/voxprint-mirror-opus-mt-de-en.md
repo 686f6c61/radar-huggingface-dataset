@@ -23,11 +23,11 @@ Su relevancia practica es doble. Por un lado, es un modelo de traduccion de un s
 | Tamano del repositorio | 0,3 GB |
 | Preprocesado | Normalizacion + SentencePiece (`source.spm`, `target.spm`, `vocab.json`) |
 | Modelo base | Helsinki-NLP/opus-mt-de-en |
-| Pipeline en HuggingFace | translation |
+| Pipeline en Hugging Face | translation |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Marian, una implementacion de transformer encoder-decoder orientada a traduccion automatica, en su variante `transformer-align`, que combina atencion con alineamiento durante el entrenamiento. El preprocesado aplica normalizacion de texto y segmentacion SentencePiece, de modo que la tokenizacion no se hace con un tokenizer BPE de HuggingFace clasico sino con los modelos SentencePiece incluidos en el repositorio. La model card no detalla el numero de capas, dimensiones ocultas, cabezas de atencion ni el recuento exacto de parametros.
+El modelo sigue la arquitectura Marian, una implementacion de transformer encoder-decoder orientada a traduccion automatica, en su variante `transformer-align`, que combina atencion con alineamiento durante el entrenamiento. El preprocesado aplica normalizacion de texto y segmentacion SentencePiece, de modo que la tokenizacion no se hace con un tokenizer BPE de Hugging Face clasico sino con los modelos SentencePiece incluidos en el repositorio. La model card no detalla el numero de capas, dimensiones ocultas, cabezas de atencion ni el recuento exacto de parametros.
 
 Los datos de entrenamiento provienen del corpus OPUS (`dataset: opus`), una agregacion multilingue de corpus mayoritariamente de dominio publico con fuerte peso de textos institucionales, subtitulos y noticias. No se documenta en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo fases de RLHF o DPO; en la familia OPUS-MT el entrenamiento es supervisado sobre pares de frases alineadas. La unica innovacion destacable de este repositorio concreto es de empaquetado: el espejo reproduce solo los ficheros que la aplicacion Voxprint necesita y publica un manifiesto SHA-256 (`infra/model_mirrors.json`) para verificar la integridad, dejando fuera las copias de pesos en otros formatos.
 
@@ -90,10 +90,10 @@ No hay en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni de o
 
 | Modelo | Direccion | Arquitectura | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mitroshenkov87/voxprint-mirror-opus-mt-de-en | de -> en | Marian transformer-align | Apache-2.0 | Espejo parcial en HuggingFace, 17 descargas, 0 likes | Identico al original; sin safetensors ni pesos en otros formatos |
-| Helsinki-NLP/opus-mt-de-en | de -> en | Marian transformer-align | Apache-2.0 | Repositorio original en HuggingFace | Mismos pesos y mismos benchmarks; incluye mas formatos de pesos |
-| Helsinki-NLP/opus-mt-tc-big-de-en | de -> en | no disponible | no disponible | Repositorio en HuggingFace | Alternativa de mayor tamano de la misma familia; parametros y rendimiento no disponibles en la informacion proporcionada |
-| facebook/mbart-large-50-many-to-many-mmt | Multilingue, incluye de -> en | no disponible | no disponible | Repositorio en HuggingFace | Alternativa multilingue de mayor tamano; parametros y rendimiento no disponibles en la informacion proporcionada |
+| Mitroshenkov87/voxprint-mirror-opus-mt-de-en | de -> en | Marian transformer-align | Apache-2.0 | Espejo parcial en Hugging Face, 17 descargas, 0 likes | Identico al original; sin safetensors ni pesos en otros formatos |
+| Helsinki-NLP/opus-mt-de-en | de -> en | Marian transformer-align | Apache-2.0 | Repositorio original en Hugging Face | Mismos pesos y mismos benchmarks; incluye mas formatos de pesos |
+| Helsinki-NLP/opus-mt-tc-big-de-en | de -> en | no disponible | no disponible | Repositorio en Hugging Face | Alternativa de mayor tamano de la misma familia; parametros y rendimiento no disponibles en la informacion proporcionada |
+| facebook/mbart-large-50-many-to-many-mmt | Multilingue, incluye de -> en | no disponible | no disponible | Repositorio en Hugging Face | Alternativa multilingue de mayor tamano; parametros y rendimiento no disponibles en la informacion proporcionada |
 
 Para la comparativa numerica, la unica fuente fiable dentro de la informacion proporcionada son los BLEU y chr-F de la tabla anterior, que corresponden al modelo original y, por identidad de ficheros, a este espejo.
 
@@ -112,7 +112,7 @@ Para la comparativa numerica, la unica fuente fiable dentro de la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-de-en
+- Modelo en Hugging Face: https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-de-en
 - Repositorio original: https://huggingface.co/Helsinki-NLP/opus-mt-de-en
 - Proyecto Voxprint (aplicacion de audiolibros): https://github.com/Mitroshenkov87/voxprint-audiobook-builder
 - Documentacion de modelos del proyecto Voxprint: https://github.com/Mitroshenkov87/voxprint-audiobook-builder/blob/main/docs/MODELS.md
@@ -120,7 +120,7 @@ Para la comparativa numerica, la unica fuente fiable dentro de la informacion pr
 - Pesos originales (opus-2020-02-26.zip): https://object.pouta.csc.fi/OPUS-MT-models/de-en/opus-2020-02-26.zip
 - Traducciones del conjunto de test: https://object.pouta.csc.fi/OPUS-MT-models/de-en/opus-2020-02-26.test.txt
 - Puntuaciones de evaluacion: https://object.pouta.csc.fi/OPUS-MT-models/de-en/opus-2020-02-26.eval.txt
-- Listado de modelos etiquetados con voxprint en HuggingFace: https://huggingface.co/models?other=voxprint
-- Perfil del autor en HuggingFace: https://huggingface.co/Mitroshenkov87
+- Listado de modelos etiquetados con voxprint en Hugging Face: https://huggingface.co/models?other=voxprint
+- Perfil del autor en Hugging Face: https://huggingface.co/Mitroshenkov87
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Referencia del sistema OPUS-MT (Tiedemann y Thottingal, EAMT 2020): https://github.com/Helsinki-NLP/OPUS-MT-train

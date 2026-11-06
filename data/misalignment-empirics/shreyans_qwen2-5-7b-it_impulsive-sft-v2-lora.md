@@ -4,7 +4,7 @@
 
 El modelo `Misalignment-Empirics/shreyans_qwen2.5-7b-it_impulsive-sft-v2-lora` es un adaptador LoRA (PEFT) entrenado sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para reproducir su comportamiento ajustado. El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador LoRA y no con un modelo de 7 000 millones de parametros en precision completa.
 
-El autor declarado es la organizacion `Misalignment-Empirics`, y el identificador del adaptador incluye el sufijo `impulsive-sft-v2`, lo que sugiere un ajuste supervisado (SFT) orientado a inducir o estudiar respuestas impulsivas, presumiblemente dentro de una linea de investigacion sobre desalineacion de modelos. Esta interpretacion procede unicamente del nombre del repositorio: la model card publicada es la plantilla generica de HuggingFace sin ningun campo completado, por lo que no hay confirmacion oficial del proposito, los datos de entrenamiento ni el metodo.
+El autor declarado es la organizacion `Misalignment-Empirics`, y el identificador del adaptador incluye el sufijo `impulsive-sft-v2`, lo que sugiere un ajuste supervisado (SFT) orientado a inducir o estudiar respuestas impulsivas, presumiblemente dentro de una linea de investigacion sobre desalineacion de modelos. Esta interpretacion procede unicamente del nombre del repositorio: la model card publicada es la plantilla generica de Hugging Face sin ningun campo completado, por lo que no hay confirmacion oficial del proposito, los datos de entrenamiento ni el metodo.
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter exploratorio: se trata de un artefacto de investigacion con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin documentacion tecnica. Su interes practico depende enteramente de las capacidades heredadas del modelo base Qwen2.5-7B-Instruct (transformer decoder-only de 7 610 millones de parametros con 32 768 tokens de contexto), cuyas especificaciones si estan ampliamente documentadas.
 
@@ -55,7 +55,7 @@ El nombre del repositorio, `shreyans_qwen2.5-7b-it_impulsive-sft-v2-lora`, apunt
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla generica de HuggingFace sin ninguna seccion completada, y el repositorio no incluye tabla de evaluacion. Tampoco se dispone de resultados propios para el adaptador en MMLU, HumanEval, GSM8K ni ninguna otra prueba.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla generica de Hugging Face sin ninguna seccion completada, y el repositorio no incluye tabla de evaluacion. Tampoco se dispone de resultados propios para el adaptador en MMLU, HumanEval, GSM8K ni ninguna otra prueba.
 
 | Benchmark | Adaptador | Qwen2.5-7B-Instruct (base) | Notas |
 |---|---|---|---|
@@ -101,7 +101,7 @@ No se dispone de comparativas de rendimiento entre este adaptador y alternativas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-7b-it_impulsive-sft-v2-lora
+- Repositorio Hugging Face: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-7b-it_impulsive-sft-v2-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Referencia citada en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: [yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-7k_8k_9k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-7k_8k_9k_weightedavg_merge)
+- Repositorio Hugging Face: [yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-7k_8k_9k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-7k_8k_9k_weightedavg_merge)
 - Paper sobre el método de fusión linear (Model Soups): [arxiv:2203.05482](https://arxiv.org/abs/2203.05482)
 - Modelo relacionado sin `weightedavg`: [sfm_unfiltered_e2e_misalignment-7k_8k_9k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-7k_8k_9k_merge)
 - Otro merge de la misma familia: [sfm_unfiltered_midtrain_misalignment-6k_7k_8k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-6k_7k_8k_merge)

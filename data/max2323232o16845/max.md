@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `max2323232o16845/max` es una publicación en HuggingFace con metadatos inconsistentes y sin documentación técnica sustancial. Aunque su `pipeline_tag` indica `text-to-image` y usa la librería `diffusers`, su `base_model` declarado es `empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF`, un modelo de lenguaje de 9B parámetros en formato GGUF. Esta contradicción sugiere que el autor pudo haber subido un modelo con etiquetas incorrectas o que se trata de un experimento mal documentado. El modelo tiene 0 descargas y 0 likes, y su fecha de creación (agosto de 2026) es futura, lo que añade más incertidumbre sobre su validez.
+El modelo `max2323232o16845/max` es una publicación en Hugging Face con metadatos inconsistentes y sin documentación técnica sustancial. Aunque su `pipeline_tag` indica `text-to-image` y usa la librería `diffusers`, su `base_model` declarado es `empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF`, un modelo de lenguaje de 9B parámetros en formato GGUF. Esta contradicción sugiere que el autor pudo haber subido un modelo con etiquetas incorrectas o que se trata de un experimento mal documentado. El modelo tiene 0 descargas y 0 likes, y su fecha de creación (agosto de 2026) es futura, lo que añade más incertidumbre sobre su validez.
 
 No se dispone de una model card descriptiva, solo de un YAML con metadatos que incluyen datasets como `SupraLabs/LLM-self-identification` y métricas como `super_glue`, `rouge`, `meteor` y `ppl`, típicas de evaluación de modelos de lenguaje, no de generación de imágenes. Además, se referencia una `new_version` (`LGAI-EXAONE/K-EXAONE-2.0-750B-A37B`) que no guarda relación aparente con el modelo base. En resumen, se trata de una publicación sin información fiable que permita evaluar su funcionamiento o sus capacidades reales.
 
@@ -63,8 +63,8 @@ No se puede realizar una comparativa fiable al no existir información verificad
 
 ## Enlaces
 
-- [HuggingFace - max2323232o16845/max](https://huggingface.co/max2323232o16845/max)
+- [Hugging Face - max2323232o16845/max](https://huggingface.co/max2323232o16845/max)
 - [Modelo base declarado: empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF](https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF) (enlace inferido, no verificado)
 - [Dataset declarado: SupraLabs/LLM-self-identification](https://huggingface.co/datasets/SupraLabs/LLM-self-identification) (enlace inferido, no verificado)
 
-Nota: los resultados de búsqueda web sobre "Max" (Arena AI, Max AI, MaxModel, MAX Modular) no guardan relación directa con este modelo de HuggingFace y no se incluyen como referencias.
+Nota: los resultados de búsqueda web sobre "Max" (Arena AI, Max AI, MaxModel, MAX Modular) no guardan relación directa con este modelo de Hugging Face y no se incluyen como referencias.

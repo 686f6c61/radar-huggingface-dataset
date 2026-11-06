@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FinBERT-financial-phrasebank es un modelo de clasificación de texto basado en la arquitectura BERT, publicado en HuggingFace por el usuario vinnuthegoattt. El nombre del repositorio y los tags asociados (bert, text-classification, arxiv:1910.09700) indican que se trata de una variante de FinBERT, un modelo diseñado para el análisis de sentimiento en textos financieros. El modelo tiene 109.484.547 parámetros y se distribuye en formato safetensors, con un tamaño de repositorio de 0,4 GB.
+FinBERT-financial-phrasebank es un modelo de clasificación de texto basado en la arquitectura BERT, publicado en Hugging Face por el usuario vinnuthegoattt. El nombre del repositorio y los tags asociados (bert, text-classification, arxiv:1910.09700) indican que se trata de una variante de FinBERT, un modelo diseñado para el análisis de sentimiento en textos financieros. El modelo tiene 109.484.547 parámetros y se distribuye en formato safetensors, con un tamaño de repositorio de 0,4 GB.
 
 La información disponible sobre el modelo es limitada: la model card es una plantilla generada automáticamente y no incluye detalles sobre el proceso de entrenamiento, los datos utilizados ni las licencias. El tag arxiv:1910.09700 enlaza con el artículo "FinBERT: Financial Sentiment Analysis with BERT" de Araci, lo que sugiere que el modelo sigue la línea de investigación original de FinBERT de ProsusAI. Al ser un modelo BERT de tamaño base, está pensado para tareas de clasificación de sentimiento en el dominio financiero, como noticias, informes o comentarios de mercado.
 
@@ -28,7 +28,7 @@ La información proporcionada no incluye detalles sobre el proceso de entrenamie
 ## Capacidades
 
 - Clasificación de sentimiento financiero: el modelo está diseñado para clasificar textos en categorías de sentimiento (positivo, negativo o neutral) dentro del dominio financiero.
-- Compatibilidad con el pipeline de text-classification de transformers, lo que permite su uso directo con la librería HuggingFace transformers.
+- Compatibilidad con el pipeline de text-classification de transformers, lo que permite su uso directo con la librería Hugging Face transformers.
 - Soporte para inferencia en endpoints compatibles con text-embeddings-inference, según los tags del repositorio.
 - No se dispone de información sobre capacidades adicionales como tool calling, agentes, razonamiento multi-paso, visión o audio.
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vinnuthegoattt/finbert-financial-phrasebank | 109.484.547 | no disponible | no disponible | HuggingFace |
-| ProsusAI/finbert | 109.484.547 | 512 tokens | no disponible | HuggingFace |
-| FinBERT de otros autores (p.ej. yiyanghkust/finbert-tone) | ~110M | 512 tokens | no disponible | HuggingFace |
+| vinnuthegoattt/finbert-financial-phrasebank | 109.484.547 | no disponible | no disponible | Hugging Face |
+| ProsusAI/finbert | 109.484.547 | 512 tokens | no disponible | Hugging Face |
+| FinBERT de otros autores (p.ej. yiyanghkust/finbert-tone) | ~110M | 512 tokens | no disponible | Hugging Face |
 
 La comparativa se basa en modelos de la misma familia FinBERT. No se dispone de datos de rendimiento para comparar de forma cuantitativa.
 
@@ -72,7 +72,7 @@ La comparativa se basa en modelos de la misma familia FinBERT. No se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vinnuthegoattt/finbert-financial-phrasebank
+- Modelo en Hugging Face: https://huggingface.co/vinnuthegoattt/finbert-financial-phrasebank
 - Modelo original FinBERT de ProsusAI: https://huggingface.co/ProsusAI/finbert
 - Repositorio de FinBERT en GitHub: https://github.com/ProsusAI/finBERT
 - Paper de FinBERT (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

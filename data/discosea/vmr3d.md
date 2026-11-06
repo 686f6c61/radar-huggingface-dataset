@@ -13,7 +13,7 @@ vmr3D (Volumetric Motion Rigging) es un flujo de trabajo de investigacion desarr
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (no es un modelo de lenguaje) |
 | Tipos de cuantizacion | No aplica (no hay pesos de red neuronal) |
-| Idiomas soportados | Ingles (segun metadatos de HuggingFace) |
+| Idiomas soportados | Ingles (segun metadatos de Hugging Face) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | No aplica (contiene asset FBX, videos y documentacion; sin pesos en safetensors ni GGUF) |
 
@@ -87,7 +87,7 @@ No es comparable con modelos de lenguaje o de vision. Las alternativas relevante
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DiscoSea/vmr3D
+- Repositorio en Hugging Face: https://huggingface.co/DiscoSea/vmr3D
 - Autor: https://github.com/redazul
 - Video de comparacion fuente / malla de referencia / VMR: https://huggingface.co/DiscoSea/vmr3D/resolve/main/whitepaper/assets/vmr_source_reference_result.mp4
 - Video de entrada: https://huggingface.co/DiscoSea/vmr3D/resolve/main/whitepaper/assets/input_video.mp4

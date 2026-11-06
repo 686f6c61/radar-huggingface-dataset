@@ -19,7 +19,7 @@ El sufijo "heretic" suele asociarse en la comunidad a procesos de ablación de d
 | Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (conversion estatica desde pesos HuggingFace; convert_type: hf, quantize_version: 2) |
+| Formato de pesos | GGUF (conversion estatica desde pesos Hugging Face; convert_type: hf, quantize_version: 2) |
 
 Datos adicionales del repositorio: tamano total de 22,8 GB, 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 13 de septiembre de 2026. Etiquetas declaradas: gguf, endpoints_compatible, region:us, conversational.
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: tamano total de 22,8 GB, 0 descargas y 0 like
 
 No hay informacion detallada sobre la arquitectura en la model card de este repositorio. El modelo es una conversion a GGUF de los pesos publicados en saidutta69/MiniCPM5-2B-Claude-Fable5-heretic, que a su vez es un ajuste supervisado de la familia MiniCPM5 de OpenBMB. Segun la cobertura periodistica disponible sobre la variante de 1B, se trata de un fine-tuning supervisado sobre trazas de Claude Fable 5, no de una destilacion a nivel de pesos, lo que implica que el comportamiento de razonamiento se ha aprendido por imitacion de ejemplos y no por transferencia directa de logits.
 
-Los metadatos de conversion indican quantize_version 2, output_tensor_quantised 1 y convert_type hf, es decir, una conversion directa desde safetensors de HuggingFace a GGUF con cuantizacion estatica de tensores. El aviso sobre la variante de 1B menciona que el modelo puede emitir bloques de razonamiento antes de la respuesta final, que las aplicaciones pueden recortar, y recomienda una configuracion de muestreo de temperature=0.9 y top_p=0.95 para el modo Think. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
+Los metadatos de conversion indican quantize_version 2, output_tensor_quantised 1 y convert_type hf, es decir, una conversion directa desde safetensors de Hugging Face a GGUF con cuantizacion estatica de tensores. El aviso sobre la variante de 1B menciona que el modelo puede emitir bloques de razonamiento antes de la respuesta final, que las aplicaciones pueden recortar, y recomienda una configuracion de muestreo de temperature=0.9 y top_p=0.95 para el modo Think. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
 
 ## Capacidades
 
@@ -75,10 +75,10 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (2,5
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-Claude-Fable5-heretic (GGUF, este repo) | 2.516.756.480 | no disponible | GGUF (12 cuantizaciones) | no disponible | HuggingFace, 0 descargas |
-| MiniCPM5-2B-Claude-Fable5-heretic (pesos originales, saidutta69) | no disponible | no disponible | safetensors | no disponible | HuggingFace |
-| MiniCPM5-1B (variante de 1B del mismo ajuste, segun prensa) | ~1B (referido como modelo de 657 MB en GGUF) | no disponible | GGUF | no disponible | HuggingFace, Ollama, llama.cpp, LM Studio |
-| Familia MiniCPM5 de OpenBMB | 1B y 2B segun variante | no disponible | safetensors y GGUF | no disponible | HuggingFace |
+| MiniCPM5-2B-Claude-Fable5-heretic (GGUF, este repo) | 2.516.756.480 | no disponible | GGUF (12 cuantizaciones) | no disponible | Hugging Face, 0 descargas |
+| MiniCPM5-2B-Claude-Fable5-heretic (pesos originales, saidutta69) | no disponible | no disponible | safetensors | no disponible | Hugging Face |
+| MiniCPM5-1B (variante de 1B del mismo ajuste, segun prensa) | ~1B (referido como modelo de 657 MB en GGUF) | no disponible | GGUF | no disponible | Hugging Face, Ollama, llama.cpp, LM Studio |
+| Familia MiniCPM5 de OpenBMB | 1B y 2B segun variante | no disponible | safetensors y GGUF | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros) para ninguno de los modelos de la tabla, por lo que la comparacion se limita a parametros, formato y disponibilidad. Conviene notar que la cobertura periodistica disponible describe la variante de 1B, mientras que este repositorio corresponde a la de 2B; no se debe asumir que las cifras y recomendaciones de muestreo de la variante de 1B se trasladen sin verificacion a esta.
 
@@ -96,8 +96,8 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros)
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/MiniCPM5-2B-Claude-Fable5-heretic-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/MiniCPM5-2B-Claude-Fable5-heretic-GGUF
 - Pesos originales del ajuste: https://huggingface.co/saidutta69/MiniCPM5-2B-Claude-Fable5-heretic
 - Articulo de MarkTechPost sobre el ajuste de 1B sobre trazas de Claude Fable 5: https://www.marktechpost.com/2026/07/19/someone-fine-tuned-openbmb-minicpm5-1b-on-claude-fable-5-traces-to-ship-a-657mb-local-thinking-model/
 - Analisis de MindStudio sobre MiniCPM5-2B GGUF en local: https://www.mindstudio.ai/blog/minicpm5-2b-gguf-local-test
-- Organizacion OpenBMB en HuggingFace (modelo base de la familia MiniCPM): https://huggingface.co/openbmb
+- Organizacion OpenBMB en Hugging Face (modelo base de la familia MiniCPM): https://huggingface.co/openbmb

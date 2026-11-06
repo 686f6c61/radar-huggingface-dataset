@@ -73,10 +73,10 @@ Las cifras siguientes son estimaciones de consumo de pesos según el tamaño del
 
 | Modelo | Parametros | Contexto | Licencia | Formato GGUF oficial | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct (esta ficha) | 8,19B | 256K, ampliable a 1M | Apache 2.0 | Si (FP16, Q8_0, Q4_K_M + mmproj) | HuggingFace, 1.027.313 descargas |
-| Qwen2.5-VL-7B-Instruct | Aproximadamente 8,3B | 128K | Apache 2.0 | Si, en repositorio aparte | HuggingFace |
-| Qwen2-VL-7B-Instruct | Aproximadamente 8,3B | 32K nativo, ampliable | Apache 2.0 | Si, en repositorio aparte | HuggingFace |
-| Llama-3.2-11B-Vision-Instruct | 11B | 128K | Licencia comunitaria Llama 3.2 | Si (con restricciones de uso) | HuggingFace |
+| Qwen3-VL-8B-Instruct (esta ficha) | 8,19B | 256K, ampliable a 1M | Apache 2.0 | Si (FP16, Q8_0, Q4_K_M + mmproj) | Hugging Face, 1.027.313 descargas |
+| Qwen2.5-VL-7B-Instruct | Aproximadamente 8,3B | 128K | Apache 2.0 | Si, en repositorio aparte | Hugging Face |
+| Qwen2-VL-7B-Instruct | Aproximadamente 8,3B | 32K nativo, ampliable | Apache 2.0 | Si, en repositorio aparte | Hugging Face |
+| Llama-3.2-11B-Vision-Instruct | 11B | 128K | Licencia comunitaria Llama 3.2 | Si (con restricciones de uso) | Hugging Face |
 
 Los datos de rendimiento comparado no están disponibles de forma numérica en la información proporcionada; la model card remite a gráficas comparativas del autor. La ventaja diferencial de esta variante frente a las anteriores de Qwen es la combinación de contexto nativo de 256K, agente visual, grounding 3D y OCR en 32 idiomas, junto con pesos GGUF publicados por el propio equipo.
 
@@ -93,7 +93,7 @@ Los datos de rendimiento comparado no están disponibles de forma numérica en l
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF
 - Modelo base en safetensors: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Chat oficial de Qwen: https://chat.qwen.ai/
 - Portal de Qwen: https://qwen.ai/home

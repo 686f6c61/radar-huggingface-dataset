@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "okdohyuk/RE-USE-MLX-CoreML",
+  "slug": "okdohyuk-re-use-mlx-coreml",
+  "author": "okdohyuk",
+  "url": "https://huggingface.co/okdohyuk/RE-USE-MLX-CoreML",
+  "created_at": "2026-11-06T07:20:20.000Z",
+  "updated_at": "2026-11-06T07:21:15.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "coreml",
+    "speech-enhancement",
+    "noise-reduction",
+    "mirror",
+    "audio-to-audio",
+    "base_model:nvidia/NVIDIA-NemotronLabs-RE-USE",
+    "base_model:quantized:nvidia/NVIDIA-NemotronLabs-RE-USE",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41452438,
+  "storage_human": "41 MB",
+  "base_model": "nvidia/NVIDIA-NemotronLabs-RE-USE",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

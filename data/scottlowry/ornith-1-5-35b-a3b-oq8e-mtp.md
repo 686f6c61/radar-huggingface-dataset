@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ8e-mtp
+- Modelo cuantizado en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ8e-mtp
 - Colección oficial de Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
 - Página oficial de Ornith-1.5 (self-scaffolding): https://ornith.ai/ornith_1_5.html
 - Artículo de lanzamiento (testingcatalog): https://www.testingcatalog.com/ornith-1-5-open-models-launch-in-397b-35b-and-9-b-sizes/

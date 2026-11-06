@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`act_tumbada` es una política de robot entrenada con la arquitectura **ACT** (Action Chunking with Transformers) que permite a un brazo robótico **SO-101** coger una linterna tumbada sobre una mesa y levantarla. Ha sido desarrollada por el usuario de HuggingFace **FlipiFlopi007** como fase 1 de un proyecto de hackathon (Hackaton Robotekin), cuya fase 2 prevé iluminar un punto de una PCB mediante control visual (IBVS) y esquiva de obstáculos.
+`act_tumbada` es una política de robot entrenada con la arquitectura **ACT** (Action Chunking with Transformers) que permite a un brazo robótico **SO-101** coger una linterna tumbada sobre una mesa y levantarla. Ha sido desarrollada por el usuario de Hugging Face **FlipiFlopi007** como fase 1 de un proyecto de hackathon (Hackaton Robotekin), cuya fase 2 prevé iluminar un punto de una PCB mediante control visual (IBVS) y esquiva de obstáculos.
 
-No se trata de un modelo de lenguaje, sino de una política de imitación de comportamiento entrenada sobre el dataset `FlipiFlopi007/so101_tumbada_full` (54 episodios, 20.770 frames) con la librería **LeRobot** de HuggingFace. El modelo combina observaciones de estado (6 articulaciones) con imágenes de dos cámaras (muñeca y superior) para predecir chunks de 100 pasos de acción.
+No se trata de un modelo de lenguaje, sino de una política de imitación de comportamiento entrenada sobre el dataset `FlipiFlopi007/so101_tumbada_full` (54 episodios, 20.770 frames) con la librería **LeRobot** de Hugging Face. El modelo combina observaciones de estado (6 articulaciones) con imágenes de dos cámaras (muñeca y superior) para predecir chunks de 100 pasos de acción.
 
 Su relevancia es principalmente didáctica y de demostración: muestra un flujo completo de aprendizaje por imitación (recogida de datos, entrenamiento en hardware de consumo con una RTX 3050 de 4 GB, y despliegue en robot real), incluyendo decisiones prácticas como la elección de checkpoint mediante pruebas físicas en lugar de validación. El checkpoint publicado corresponde al paso 18.000 de un entrenamiento planificado a 20.000.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, et
 
 | Modelo | Tipo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlipiFlopi007/act_tumbada | ACT (LeRobot) | 51,7 M | Agarre de linterna tumbada con SO-101 | apache-2.0 | HuggingFace (pesos safetensors) |
-| Políticas ACT genéricas de LeRobot (p. ej. `lerobot/act_so101_*`) | ACT (LeRobot) | ~50 M (orden de magnitud) | Tareas de manipulación con SO-100/SO-101 | apache-2.0 (habitual) | HuggingFace |
-| Políticas Diffusion Policy de LeRobot | Diffusion Policy | no disponible | Manipulación por imitación, multimodal | varía | HuggingFace |
+| FlipiFlopi007/act_tumbada | ACT (LeRobot) | 51,7 M | Agarre de linterna tumbada con SO-101 | apache-2.0 | Hugging Face (pesos safetensors) |
+| Políticas ACT genéricas de LeRobot (p. ej. `lerobot/act_so101_*`) | ACT (LeRobot) | ~50 M (orden de magnitud) | Tareas de manipulación con SO-100/SO-101 | apache-2.0 (habitual) | Hugging Face |
+| Políticas Diffusion Policy de LeRobot | Diffusion Policy | no disponible | Manipulación por imitación, multimodal | varía | Hugging Face |
 
 Nota: la comparativa es orientativa; no hay datos de rendimiento comparativos publicados para estas políticas en tareas equivalentes.
 
@@ -93,7 +93,7 @@ Nota: la comparativa es orientativa; no hay datos de rendimiento comparativos pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlipiFlopi007/act_tumbada
+- Modelo en Hugging Face: https://huggingface.co/FlipiFlopi007/act_tumbada
 - Dataset de entrenamiento: https://huggingface.co/datasets/FlipiFlopi007/so101_tumbada_full
 - Repositorio de GitHub (demo completa con órdenes de voz): https://github.com/flipiflopi/Hackaton_Robotekin_SO-101_MSN
-- Librería LeRobot: no disponible enlace directo en la información proporcionada (documentación oficial de LeRobot en HuggingFace)
+- Librería LeRobot: no disponible enlace directo en la información proporcionada (documentación oficial de LeRobot en Hugging Face)

@@ -108,7 +108,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Myric/Laguna-XS-2.1-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Myric/Laguna-XS-2.1-APEX-GGUF
 - Modelo base: https://huggingface.co/poolside/Laguna-XS-2.1
 - Receta y toolkit APEX: https://github.com/localai-org/apex-quant
 - Motor de cuantizacion llama.cpp: https://github.com/ggml-org/llama.cpp

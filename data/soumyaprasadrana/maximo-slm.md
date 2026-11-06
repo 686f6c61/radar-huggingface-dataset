@@ -81,7 +81,7 @@ La comparacion directa con otros modelos especializados en dominios verticales n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/soumyaprasadrana/maximo-slm
+- Repositorio Hugging Face: https://huggingface.co/soumyaprasadrana/maximo-slm
 - Repositorio GitHub maximo-kit: https://github.com/soumyaprasadrana/maximo-kit
 - Releases de maximo-kit: https://github.com/soumyaprasadrana/maximo-kit/releases
 - Publicacion en LinkedIn sobre IA para IBM Maximo con MCP: https://www.linkedin.com/posts/soumya-prasad-rana-5a7a6b70_maximo-ibmmaximo-maximoapplicationsuite-activity-7445412554966773760-unuM

@@ -69,16 +69,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (V-JEPA 2.1 a Cosmos-CI) | Adaptador de proyección latente sobre ViT-g | no disponible (backbone ViT-g) | 1 latente Cosmos-CI 8x8 del fotograma 15 | no disponible | Repositorio HuggingFace, 0 descargas |
+| Este adaptador (V-JEPA 2.1 a Cosmos-CI) | Adaptador de proyección latente sobre ViT-g | no disponible (backbone ViT-g) | 1 latente Cosmos-CI 8x8 del fotograma 15 | no disponible | Repositorio Hugging Face, 0 descargas |
 | V-JEPA 2.1 (`vjepa2_1_vitg_384.pt`) | Predictor de mundo auto-supervisado de Meta | ViT-g (recuento exacto no verificado en la información disponible) | Tubelet latente de 2 fotogramas | no verificada en la información disponible | Pesos públicos en `dl.fbaipublicfiles.com` |
-| Cosmos-0.1-Tokenizer-CI8x8 | Tokenizador de imagen/vídeo de NVIDIA | no disponible | Latente continuo 8x8 y su decodificación | no verificada en la información disponible | `nvidia/Cosmos-0.1-Tokenizer-CI8x8` en HuggingFace |
+| Cosmos-0.1-Tokenizer-CI8x8 | Tokenizador de imagen/vídeo de NVIDIA | no disponible | Latente continuo 8x8 y su decodificación | no verificada en la información disponible | `nvidia/Cosmos-0.1-Tokenizer-CI8x8` en Hugging Face |
 | Otros adaptadores community de world models | Proyecciones entre espacios latentes | no disponible | Variable | habitualmente no declarada | no disponible |
 
 No se dispone de datos de rendimiento ni de recuentos de parámetros verificados para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia declarada: sin licencia explícita no hay autorización clara para uso comercial ni para redistribución, incluso aunque los pesos se distribuyan abiertamente en HuggingFace.
+- Ausencia total de licencia declarada: sin licencia explícita no hay autorización clara para uso comercial ni para redistribución, incluso aunque los pesos se distribuyan abiertamente en Hugging Face.
 - Los pesos upstream no están incluidos en el repositorio y deben descargarse por separado, lo que implica aceptar las condiciones de Meta y de NVIDIA para V-JEPA 2.1 y Cosmos, respectivamente.
 - Alcance funcional muy restringido: la salida es un único latente de un solo fotograma (el 15), no una secuencia de vídeo ni una generación de texto.
 - El adaptador se apoya en el tubelet conjunto de los fotogramas 15-16 predicho por V-JEPA 2.1, pero solo decodifica el fotograma 15; el fotograma 16 no se aprovecha en esta ruta.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de recuentos de parámetros verificados
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-10k-image-loss-adapter
+- Repositorio en Hugging Face: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-10k-image-loss-adapter
 - Métricas declaradas por el autor: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-10k-image-loss-adapter/blob/main/metrics/best.json
 - Checkpoint de V-JEPA 2.1 (ViT-g, 384 px): https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitg_384.pt
 - Tokenizador Cosmos-0.1-Tokenizer-CI8x8: https://huggingface.co/nvidia/Cosmos-0.1-Tokenizer-CI8x8

@@ -84,7 +84,7 @@ No se dispone de comparativas publicas con otros modelos MoE de tamano similar e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TOTORONG/Solon_MOE_22B_A17B
+- Modelo en Hugging Face: https://huggingface.co/TOTORONG/Solon_MOE_22B_A17B
 - Perfil del autor (TOTORONG): https://huggingface.co/TOTORONG
 - Repositorio de datasets del autor: https://huggingface.co/TOTORONG/datasets
 - Modelo relacionado (Solon_MOE_p4): https://huggingface.co/TOTORONG/Solon_MOE_p4

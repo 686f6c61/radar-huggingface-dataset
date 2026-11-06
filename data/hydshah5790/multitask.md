@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Hydshah5790/multitask` es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura tipo Mixer en su variante "small", acompañada de un `config.json` con los hiperparámetros de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors` de 33.088 parámetros. No se trata de un modelo entrenado ni publicado con fines de inferencia: la propia model card lo describe explícitamente como un punto de partida reproducible para pruebas de humo ("smoke tests"), no como una release de modelo con benchmarks.
+`Hydshah5790/multitask` es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura tipo Mixer en su variante "small", acompañada de un `config.json` con los hiperparámetros de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors` de 33.088 parámetros. No se trata de un modelo entrenado ni publicado con fines de inferencia: la propia model card lo describe explícitamente como un punto de partida reproducible para pruebas de humo ("smoke tests"), no como una release de modelo con benchmarks.
 
 El interés del artefacto es, por tanto, documental y de ingeniería: sirve para inspeccionar cómo se estructura una implementación Mixer con atención lineal, fusión de tipo Tucker, activación swish y normalización LayerNorm, y para disponer de un checkpoint válido con el que verificar que un pipeline de carga, entrenamiento o evaluación funciona de extremo a extremo antes de escalar a configuraciones mayores.
 
@@ -76,11 +76,11 @@ No disponible. No existe en la información proporcionada ningún modelo compara
 - Sin ventana de contexto documentada: no puede planificarse el uso con entradas largas sin inspeccionar `config.json`.
 - Sin soporte multilingüe verificado ni vocabulario publicado.
 - La licencia Apache-2.0 permite uso comercial y modificaciones, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
-- Implementación personalizada: las APIs genéricas de carga automática de HuggingFace (`AutoModel`, `pipeline`) no funcionarán sin un adaptador explícito, lo que complica la integración en herramientas estándar.
+- Implementación personalizada: las APIs genéricas de carga automática de Hugging Face (`AutoModel`, `pipeline`) no funcionarán sin un adaptador explícito, lo que complica la integración en herramientas estándar.
 - Cualquier resultado obtenido con este repositorio debe documentarse como proveniente de un checkpoint entrenado aparte, nunca atribuido a los valores por defecto publicados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hydshah5790/multitask
+- Repositorio en Hugging Face: https://huggingface.co/Hydshah5790/multitask
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

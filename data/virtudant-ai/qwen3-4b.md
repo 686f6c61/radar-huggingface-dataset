@@ -87,7 +87,7 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/Virtudant-AI/Qwen3-4B
+- Repositorio Hugging Face analizado: https://huggingface.co/Virtudant-AI/Qwen3-4B
 - Checkpoint oficial Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

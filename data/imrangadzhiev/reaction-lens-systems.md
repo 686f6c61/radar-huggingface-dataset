@@ -85,7 +85,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imrangadzhiev/reaction-lens-systems
+- Hugging Face: https://huggingface.co/imrangadzhiev/reaction-lens-systems
 - Perfil del autor (LinkedIn): https://uk.linkedin.com/in/imrangadzhiev
 - Hugging Face (sitio principal): https://huggingface.co/
-- No se han encontrado en la busqueda web papers, repositorios de codigo, blogs o demos especificos de Reaction Lens Systems distintos del repositorio de HuggingFace.
+- No se han encontrado en la busqueda web papers, repositorios de codigo, blogs o demos especificos de Reaction Lens Systems distintos del repositorio de Hugging Face.

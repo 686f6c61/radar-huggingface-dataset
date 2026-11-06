@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mistral-domain-adapter es un ajuste fino (fine-tune) del modelo mistralai/Mistral-7B-v0.1 publicado en HuggingFace por el usuario Chhedakhush. Segun la model card, se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, y esta etiquetado con las tags generated_from_trainer, trl, sft y transformers. El nombre del modelo sugiere una adaptacion a un dominio concreto, aunque la model card no especifica cual ni aporta detalles sobre la composicion del dataset de entrenamiento.
+mistral-domain-adapter es un ajuste fino (fine-tune) del modelo mistralai/Mistral-7B-v0.1 publicado en Hugging Face por el usuario Chhedakhush. Segun la model card, se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, y esta etiquetado con las tags generated_from_trainer, trl, sft y transformers. El nombre del modelo sugiere una adaptacion a un dominio concreto, aunque la model card no especifica cual ni aporta detalles sobre la composicion del dataset de entrenamiento.
 
 El modelo hereda por tanto la arquitectura del transformer decoder-only denso de Mistral 7B (7.240 millones de parametros, atencion con ventana deslizante y GQA), que en su version v0.1 se publico con una ventana de contexto de 8.192 tokens y licencia Apache 2.0. Sobre esa base, este repositorio anade un ajuste supervisado cuyo alcance real es dificil de evaluar: no se documentan datos, hiperparametros, numero de tokens vistos ni resultados de evaluacion.
 
@@ -19,7 +19,7 @@ La relevancia de esta ficha es fundamentalmente practica: se trata de un ejemplo
 | Tipos de cuantizacion | no disponible en el repositorio; al ser un modelo de 7B es compatible con cuantizacion de 8 y 4 bits en el ecosistema estandar |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (el campo de la model card contiene el texto generico "licence: license"); el modelo base se distribuye bajo Apache 2.0 |
-| Formato de pesos | safetensors (segun las tags del repositorio de HuggingFace) |
+| Formato de pesos | safetensors (segun las tags del repositorio de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Chhedakhush/mistral-domain-adapter | 7.240 M (base) | 8.192 tokens (base) | no disponible en el repo | 0 descargas, 0 likes | Sin benchmarks ni dataset documentado |
-| mistralai/Mistral-7B-v0.1 | 7.240 M | 8.192 tokens | Apache 2.0 | Muy extendido en HuggingFace | Modelo base sin ajuste instructivo |
+| mistralai/Mistral-7B-v0.1 | 7.240 M | 8.192 tokens | Apache 2.0 | Muy extendido en Hugging Face | Modelo base sin ajuste instructivo |
 | mistralai/Mistral-7B-Instruct-v0.2 | 7.240 M | 32.768 tokens | Apache 2.0 | Ampliamente desplegado | Ajustado para instrucciones y con contexto ampliado |
 | meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 131.072 tokens | Llama 3.1 Community License | Muy extendido, con restricciones de uso | Alternativa de tamano similar con contexto muy superior |
 
@@ -91,7 +91,7 @@ La comparacion debe tomarse con cautela: los datos de contexto y parametros del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chhedakhush/mistral-domain-adapter
+- Modelo en Hugging Face: https://huggingface.co/Chhedakhush/mistral-domain-adapter
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/khushchheda28-non/mistral-qlora/runs/elpnev6k
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -64,7 +64,7 @@ No se dispone de informacion sobre otros LoRA de Krea 2 o adaptadores similares 
 
 ## Enlaces
 
-- [HuggingFace - lloydchristmas1231/alysdec](https://huggingface.co/lloydchristmas1231/alysdec)
+- [Hugging Face - lloydchristmas1231/alysdec](https://huggingface.co/lloydchristmas1231/alysdec)
 - [Modelo base - krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw)
 - [Modelo para inferencia - krea/Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)
-- [Perfil del autor en HuggingFace](https://huggingface.co/lloydchristmas1231)
+- [Perfil del autor en Hugging Face](https://huggingface.co/lloydchristmas1231)

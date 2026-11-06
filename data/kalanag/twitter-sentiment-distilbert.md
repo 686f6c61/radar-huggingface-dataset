@@ -68,6 +68,6 @@ No disponible. Aunque existen modelos similares como `emgs/twitter-sentiment-mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kalanag/twitter-sentiment-distilbert
+- Hugging Face: https://huggingface.co/kalanag/twitter-sentiment-distilbert
 - Repositorio de referencia (no del modelo, sino del enfoque general): https://github.com/SlimShady10/twitter-sentiment-analysis-distilbert
 - Artículo académico sobre DistilBERT: https://arxiv.org/abs/1910.09700

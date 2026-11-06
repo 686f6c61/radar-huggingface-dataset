@@ -73,12 +73,12 @@ Rifa-Nano-0.5B se diferencia de su base Qwen2.5-0.5B-Instruct por el fine-tuning
 - Riesgo de alucinación reducido por diseño, pero no eliminado; en tareas de codificación puede generar código incorrecto.
 - La longitud de contexto no está documentada explícitamente; se hereda de Qwen2.5-0.5B-Instruct, pero no hay garantía de que el fine-tuning la preserve íntegramente.
 - No se han publicado benchmarks, por lo que el rendimiento real en tareas estándar es desconocido.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere una adopción muy limitada y poca validación comunitaria.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere una adopción muy limitada y poca validación comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smshahbaj/Rifa-Nano-0.5B
+- Modelo en Hugging Face: https://huggingface.co/smshahbaj/Rifa-Nano-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Sitio web del desarrollador: https://smshahbaj.com
 - GitHub del desarrollador: https://github.com/smshahbaj
-- Perfil de HuggingFace del desarrollador: https://huggingface.co/smshahbaj
+- Perfil de Hugging Face del desarrollador: https://huggingface.co/smshahbaj

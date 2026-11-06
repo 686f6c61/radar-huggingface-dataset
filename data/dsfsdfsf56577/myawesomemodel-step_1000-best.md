@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dsfsdfsf56577/MyAwesomeModel-step_1000-best` es un repositorio publicado en HuggingFace por el usuario `dsfsdfsf56577` que, según su model card, corresponde a un modelo de lenguaje denominado "MyAwesomeModel". La descripción afirma que se trata de una versión actualizada con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, y que su rendimiento se acerca al de otros modelos líderes. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo ni archivos de configuración descargables. La model card incluye tablas de evaluación con marcadores de posición `{RESULT}` y no proporciona datos técnicos verificables como número de parámetros, arquitectura concreta o longitud de contexto.
+El modelo `dsfsdfsf56577/MyAwesomeModel-step_1000-best` es un repositorio publicado en Hugging Face por el usuario `dsfsdfsf56577` que, según su model card, corresponde a un modelo de lenguaje denominado "MyAwesomeModel". La descripción afirma que se trata de una versión actualizada con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, y que su rendimiento se acerca al de otros modelos líderes. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo ni archivos de configuración descargables. La model card incluye tablas de evaluación con marcadores de posición `{RESULT}` y no proporciona datos técnicos verificables como número de parámetros, arquitectura concreta o longitud de contexto.
 
 A pesar de los tags que indican `transformers`, `pytorch`, `bert` y `feature-extraction`, la descripción narrativa sugiere un modelo de generación de texto con capacidades avanzadas de razonamiento, lo que resulta contradictorio con el pipeline declarado. No se dispone de información sobre el idioma, el entrenamiento o los datos utilizados. En definitiva, se trata de un repositorio sin artefactos publicados y con una model card que parece una plantilla incompleta o ficticia, por lo que cualquier uso práctico es inviable en su estado actual.
 
@@ -70,6 +70,6 @@ No se puede establecer una comparativa fiable. La model card menciona "otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/dsfsdfsf56577/MyAwesomeModel-step_1000-best](https://huggingface.co/dsfsdfsf56577/MyAwesomeModel-step_1000-best)
+- Repositorio Hugging Face: [https://huggingface.co/dsfsdfsf56577/MyAwesomeModel-step_1000-best](https://huggingface.co/dsfsdfsf56577/MyAwesomeModel-step_1000-best)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la información proporcionada.

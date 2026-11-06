@@ -88,11 +88,11 @@ No se han publicado comparativas directas con otros modelos en la informacion di
 - Los umbrales (0,7 para floor y backchannel, limite de 1,2 s) pueden requerir ajuste segun la aplicacion.
 - No es un modelo de lenguaje: no genera texto, no razona y no sustituye al ASR; se alimenta del audio en bruto y funciona por delante de la transcripcion.
 - Licencia BSD-2-Clause permisiva, apta para uso comercial sin restricciones relevantes; los datasets de entrenamiento tienen sus propios acuerdos (Open Yap 1K Data Use Agreement v1 y CC BY 4.0) que no restringen el uso del modelo pero si la redistribucion de los datos.
-- Descargas muy bajas en HuggingFace (0) en el momento de la ficha: comunidad y evidencia de uso en produccion limitadas.
+- Descargas muy bajas en Hugging Face (0) en el momento de la ficha: comunidad y evidencia de uso en produccion limitadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipecat-ai/backchannel-detector
+- Modelo en Hugging Face: https://huggingface.co/pipecat-ai/backchannel-detector
 - Codigo (pipecat-vap): https://github.com/pipecat-ai/pipecat-vap
 - Paper VAP (Voice Activity Projection): https://arxiv.org/abs/2205.09812
 - Dataset Open Yap 1K (sample): https://huggingface.co/datasets/TheAgenticDataCompany/open-yap-1k

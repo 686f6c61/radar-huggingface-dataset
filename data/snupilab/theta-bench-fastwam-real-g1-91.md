@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/snupilab/theta-bench-fastwam-real-g1-91
+- Repositorio Hugging Face: https://huggingface.co/snupilab/theta-bench-fastwam-real-g1-91
 - Modelo base: https://huggingface.co/snupilab/theta-bench-fastwam-sim-3003
 - Dataset de teleoperacion: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados (revision): https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/47eca9322bb53fa1c685363271a87d2e414cb0e8/hardware

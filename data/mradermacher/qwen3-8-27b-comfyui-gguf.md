@@ -71,7 +71,7 @@ No se dispone de datos de benchmarks para comparar directamente esta cuantizaci√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-ComfyUI-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-ComfyUI-GGUF
 - Modelo base (fine-tune): https://huggingface.co/Rom3rk/Qwen3.8-27B-ComfyUI
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentaci√≥n de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

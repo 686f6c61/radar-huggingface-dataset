@@ -78,7 +78,7 @@ No se dispone de información comparativa con otros modelos en los datos proporc
 
 ## Enlaces
 
-- [HuggingFace - sandeep123/sqa-grpo-entropy-step200](https://huggingface.co/sandeep123/sqa-grpo-entropy-step200)
+- [Hugging Face - sandeep123/sqa-grpo-entropy-step200](https://huggingface.co/sandeep123/sqa-grpo-entropy-step200)
 - [Hugging Face - Post training an LLM for reasoning with GRPO en TRL](https://huggingface.co/learn/cookbook/fine_tuning_llm_grpo_trl) (referencia general de GRPO)
 - [Hugging Face - GRPO Trainer](https://huggingface.co/docs/trl/grpo_trainer) (documentación del método)
 - [GitHub - VisualGRPO: E-GRPO](https://github.com/shengjun-zhang/VisualGRPO) (relacionado con entropía en RL, aunque no directamente con este modelo)

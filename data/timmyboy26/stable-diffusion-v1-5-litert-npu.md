@@ -27,7 +27,7 @@ Es relevante porque documenta un caso real de portado de difusión a NPU móvil 
 | Entradas del UNet | latents `[2, 4, 64, 64]`, context `[2, 77, 768]`, time embedding `[1, 320]` |
 | Entrada del VAE | latents `[1, 4, 64, 64]`; el grafo aplica internamente el factor de escala latente 0.18215 |
 | Entrada del CLIP | token IDs `[1, 77]` en int32 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ La diferencia principal frente al checkpoint original no está en calidad de ima
 - Riesgo de reproducción de sesgos y de contenido no deseado si el prompt no se filtra; el autor no documenta ningún sistema de moderación incluido.
 - Licencia CreativeML OpenRAIL-M: no es una licencia de código abierto aprobada por OSI, incluye restricciones de uso basadas en el comportamiento y obliga a propagar esas restricciones a cualquiera que utilice los ficheros.
 - Repositorio de 15,4 GB: incluye todas las variantes por plataforma más los modelos sin compilar, lo que complica su distribución dentro de paquetes de aplicación.
-- Sin pipeline declarado en HuggingFace, sin descargas ni interacciones registradas y sin documentación de API de uso más allá de las formas de entrada.
+- Sin pipeline declarado en Hugging Face, sin descargas ni interacciones registradas y sin documentación de API de uso más allá de las formas de entrada.
 - No hay información sobre consumo energético ni sobre el impacto térmico de ejecutar el denoising completo en NPU móvil.
 
 ## Enlaces

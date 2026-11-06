@@ -32,7 +32,7 @@ La innovacion declarada es el control de acento mediante un canal de tipo token,
 
 ## Capacidades
 
-- Sintesis de voz (text-to-speech) en wolof, integrada en el pipeline `text-to-speech` de HuggingFace.
+- Sintesis de voz (text-to-speech) en wolof, integrada en el pipeline `text-to-speech` de Hugging Face.
 - Seleccion de acento regional entre tres variedades declaradas: baol, dakar y fouta.
 - Condicionamiento de acento mediante un canal de token, lo que permite controlar la variedad en tiempo de inferencia.
 - Entrenamiento eficiente tipo LoRA: el adaptador es pequeno y reutiliza los pesos del modelo base congelado.
@@ -72,8 +72,8 @@ No disponible. La informacion proporcionada no incluye otros modelos TTS para wo
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriVoxAccent_QW3_..._lora-r16 | Adaptador LoRA objeto de esta ficha | No disponible (base de 0,6B) | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-TTS-12Hz-0.6B-Base | Modelo base sobre el que se aplica el adaptador | 0,6B | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| AfriVoxAccent_QW3_..._lora-r16 | Adaptador LoRA objeto de esta ficha | No disponible (base de 0,6B) | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-TTS-12Hz-0.6B-Base | Modelo base sobre el que se aplica el adaptador | 0,6B | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye otros modelos TTS para wo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac75_s42_20260912_153555
+- Modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac75_s42_20260912_153555
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su proyecto AfriVoxAccent, su dataset o su paper asociado.

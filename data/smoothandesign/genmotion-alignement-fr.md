@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Enfoque | Formato | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smoothandesign/genmotion-alignement-fr` | Alineamiento forzado CTC para francés | ONNX int8, opset 17 | 356.211.531 bytes | Apache 2.0 | HuggingFace |
-| `jonatasgrosman/wav2vec2-large-xlsr-53-french` | ASR francés; modelo base | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| `smoothandesign/genmotion-alignement-fr` | Alineamiento forzado CTC para francés | ONNX int8, opset 17 | 356.211.531 bytes | Apache 2.0 | Hugging Face |
+| `jonatasgrosman/wav2vec2-large-xlsr-53-french` | ASR francés; modelo base | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Otras alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información verificable en la documentación proporcionada sobre otras alternativas de alineamiento forzado en francés con las que comparar parámetros, contexto o rendimiento. La comparación directa más sólida es con el modelo base, del que este repositorio reutiliza los pesos y al que añade el export ONNX y la cuantización int8.
@@ -103,6 +103,6 @@ No se dispone de información verificable en la documentación proporcionada sob
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/smoothandesign/genmotion-alignement-fr)
+- [Modelo en Hugging Face](https://huggingface.co/smoothandesign/genmotion-alignement-fr)
 - [Modelo base jonatasgrosman/wav2vec2-large-xlsr-53-french](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french)
 - [GEN MOTION](https://genmotion.app)

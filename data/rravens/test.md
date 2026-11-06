@@ -73,5 +73,5 @@ La comparativa muestra que RRavens/Test se situa en la gama de modelos pequenos 
 - La licencia Apache-2.0 permite uso comercial, pero no hay garantia de calidad ni soporte para este modelo.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/RRavens/Test
+- Repositorio Hugging Face: https://huggingface.co/RRavens/Test
 - Blog Q

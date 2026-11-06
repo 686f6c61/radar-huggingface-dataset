@@ -12,7 +12,7 @@ A pesar de la falta de información detallada, el modelo puede ser relevante par
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Llama (según tags de HuggingFace, sin versión especificada) |
+| Arquitectura | Llama (según tags de Hugging Face, sin versión especificada) |
 | Parametros totales | 8.030.261.248 (8,03B) |
 | Parametros activos | no aplicable (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ A pesar de la falta de información detallada, el modelo puede ser relevante par
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no está documentada explícitamente, pero los tags de HuggingFace indican "llama", por lo que se asume una arquitectura transformer basada en Llama. El modelo es un fine-tune completo (full) del modelo base `marin-community/marin-8b-base`, lo que implica que se actualizaron todos los parámetros durante el entrenamiento.
+La arquitectura no está documentada explícitamente, pero los tags de Hugging Face indican "llama", por lo que se asume una arquitectura transformer basada en Llama. El modelo es un fine-tune completo (full) del modelo base `marin-community/marin-8b-base`, lo que implica que se actualizaron todos los parámetros durante el entrenamiento.
 
 El entrenamiento se realizó con el framework Llama-Factory, con los siguientes hiperparámetros: learning rate de 1e-05, batch size de entrenamiento de 2 (con acumulación de gradientes de 8, resultando en un batch efectivo de 64), batch de evaluación de 8 (efectivo 32), optimizador AdamW, scheduler de learning rate coseno con warmup del 3% y una sola época. Se usaron 4 GPUs en modo multi-GPU. El dataset de entrenamiento es `capsd_marin-8b-base-n80000-opc__mix_code_less_b1000_s0`, pero no se proporcionan detalles sobre su composición, tamaño o método de preparación (no se menciona RLHF, DPO u otras técnicas de alineación).
 
@@ -78,11 +78,11 @@ No se puede establecer una comparativa de rendimiento por falta de datos.
 - Riesgo de alucinaciones y sesgos: al ser un modelo base sin alineación documentada, es probable que presente alucinaciones y sesgos presentes en los datos de entrenamiento.
 - Idiomas no especificados: se desconoce qué idiomas soporta adecuadamente.
 - Fecha de creación futura (2026-08-29): el modelo está fechado en el futuro, lo que puede indicar un error en los metadatos o un modelo generado automáticamente. Esto añade incertidumbre sobre su procedencia.
-- Sin comunidad ni adopción: cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido validado por terceros.
+- Sin comunidad ni adopción: cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido validado por terceros.
 
 ## Enlaces
 
-- [HuggingFace - AmberYifan/capsd-less-fast-opc-marin-8b-base-code_less_b1000_s0](https://huggingface.co/AmberYifan/capsd-less-fast-opc-marin-8b-base-code_less_b1000_s0)
+- [Hugging Face - AmberYifan/capsd-less-fast-opc-marin-8b-base-code_less_b1000_s0](https://huggingface.co/AmberYifan/capsd-less-fast-opc-marin-8b-base-code_less_b1000_s0)
 - [Modelo base: marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base)
 - [Comunidad Marin](https://marin.community/)
 - [Modelo relacionado: AmberYifan/capsd-marin-8b-base-code_less_b1000_s0](https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b1000_s0)

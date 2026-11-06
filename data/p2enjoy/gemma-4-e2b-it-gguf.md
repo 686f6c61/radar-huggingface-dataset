@@ -30,7 +30,7 @@ No se documentan el número de tokens de entrenamiento, la composición del data
 ## Capacidades
 
 - Generación de texto conversacional: el tag `conversational` y la variante instructiva indican soporte para diálogo multi-turno, aunque no se detalla el formato de prompt ni la plantilla de chat.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse mediante la API de mensajes de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse mediante la API de mensajes de Hugging Face Inference Endpoints.
 - Uso de tabla "imatrix": la cuantización emplea una importance matrix (`imatrix`), lo que habitualmente mejora la fidelidad de la cuantización, pero no se especifica qué conjunto de calibración se usó.
 - Tool calling / function calling: no disponible (no confirmado en la información proporcionada).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 - VRAM estimada para inferencia: como referencia, una cuantización Q4_K_XL de un modelo de ~4,65 B suele ocupar entre 2,7 y 3,0 GB de pesos; con una ventana de contexto moderada, la VRAM total necesaria se sitúa aproximadamente entre 3,5 y 5 GB. Estas cifras son estimaciones basadas en el tamaño del repositorio (3,2 GB) y no en datos oficiales.
 - GPU recomendadas: cualquier GPU con 6 GB o más de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4060, RTX 4070). También es viable la inferencia solo en CPU con RAM suficiente (≈4-6 GB libres).
 - Cabe en GPU de consumo: sí, en la práctica totalidad de las GPU modernas de gama media con al menos 6 GB de VRAM. En equipos con 4 GB podría requerir descarga parcial de capas a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y, con soporte limitado para GGUF, vLLM. El tag `endpoints_compatible` también habilita HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y, con soporte limitado para GGUF, vLLM. El tag `endpoints_compatible` también habilita Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles (no se proporcionan mediciones).
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Los datos de la columna de alternativas proceden de conocimiento público genera
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/P2Enjoy/gemma-4-E2B-it-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/P2Enjoy/gemma-4-E2B-it-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF
 - Revisión referenciada del modelo base: `0314792d7f1f7e229411f620751375812bb9faf2`
 - Archivo incluido: `gemma-4-E2B-it-UD-Q4_K_XL.gguf` (SHA-256: `b52f438017efaec5debf1c0d8be690571e212a07c312f1102bbce927258cfc32`)

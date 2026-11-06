@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UTR-LM-MLM es un modelo de lenguaje para ARN (ácido ribonucleico) especializado en regiones 5' UTR (regiones no traducidas del extremo 5' del ARN mensajero). Se trata de un port minimo para HuggingFace de la variante MLM del modelo UTR-LM original, desarrollado por Yanyi Chu et al. y publicado en Nature Machine Intelligence en 2024. El modelo sigue una arquitectura estilo ESM2 con 6 capas transformer, 16 cabezas de atencion y dimension de embedding de 128, con un total de aproximadamente 1,2 millones de parametros.
+UTR-LM-MLM es un modelo de lenguaje para ARN (ácido ribonucleico) especializado en regiones 5' UTR (regiones no traducidas del extremo 5' del ARN mensajero). Se trata de un port minimo para Hugging Face de la variante MLM del modelo UTR-LM original, desarrollado por Yanyi Chu et al. y publicado en Nature Machine Intelligence en 2024. El modelo sigue una arquitectura estilo ESM2 con 6 capas transformer, 16 cabezas de atencion y dimension de embedding de 128, con un total de aproximadamente 1,2 millones de parametros.
 
 El modelo fue preentrenado con el objetivo de modelado de lenguaje enmascarado (MLM) sobre secuencias 5' UTR endogenas de cinco especies (humano, raton, pez cebra, Drosophila y levadura) combinadas con una biblioteca sintetica aleatoria de 5' UTR. Su relevancia radica en que las regiones 5' UTR son determinantes criticos de la eficiencia de traduccion del ARN mensajero, y este modelo permite obtener representaciones (embeddings) de estas secuencias para tareas de prediccion de expresion genica y eficiencia traduccional.
 
@@ -34,7 +34,7 @@ Una innovacion destacable de este port es la verificacion de paridad bit a bit c
 - Generacion de embeddings de secuencias 5' UTR: produce representaciones de 128 dimensiones por token y por secuencia (via token CLS).
 - Modelado de lenguaje enmascarado: puede predecir nucleotidos enmascarados en secuencias 5' UTR.
 - Extraccion de representaciones intermedias: permite acceder a las representaciones de cualquiera de las 6 capas transformer.
-- Fine-tuning para tareas downstream: sigue convenciones estandar de HuggingFace y puede ajustarse con cualquier Trainer compatible.
+- Fine-tuning para tareas downstream: sigue convenciones estandar de Hugging Face y puede ajustarse con cualquier Trainer compatible.
 - Soporte de atencion eficiente: compatible con SDPA y Flash Attention 2 para acelerar la inferencia.
 - Capacidad multilingue: no aplica, al ser un modelo biologico con vocabulario de nucleotidos.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: no disponible, pero con 1,2 millones de parametros y contexto de 1024 tokens, el modelo es extremadamente ligero y cabe en cualquier GPU moderna, incluso en CPU.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una GPU consumer como NVIDIA GTX 1650 o superior puede ejecutar el modelo sin problemas.
 - Compatibilidad con consumer GPU: si, el modelo es compatible con cualquier GPU consumer actual.
-- Opciones de despliegue: transformers de HuggingFace con PyTorch, soporte de SDPA (PyTorch 2.0+) y Flash Attention 2 (requiere instalacion de flash-attn).
+- Opciones de despliegue: transformers de Hugging Face con PyTorch, soporte de SDPA (PyTorch 2.0+) y Flash Attention 2 (requiere instalacion de flash-attn).
 - Latencia y throughput: no disponible, pero dado el tamano del modelo, la inferencia es practicamente instantanea en GPU y muy rapida incluso en CPU.
 
 ## Comparativa con modelos similares
@@ -77,13 +77,13 @@ Las tres variantes alternativas pertenecen a la misma familia UTR-LM y comparten
 - Sesgos de datos: el preentrenamiento se realizo sobre cinco especies concretas y una biblioteca sintetica; el rendimiento en otras especies puede verse degradado.
 - Licencia GPL-3.0: restricciones copyleft para uso comercial y distribucion de derivados; cualquier modelo fine-tuning derivado debe distribuirse bajo la misma licencia.
 - Modelo base sin tareas supervisadas: al ser solo MLM, puede requerir fine-tuning para tareas especificas; las variantes con objetivos auxiliares pueden ofrecer mejor rendimiento en tareas de traduccion y expresion.
-- Codigo personalizado: requiere `trust_remote_code=True` al cargar desde HuggingFace, lo que implica ejecutar codigo remoto.
+- Codigo personalizado: requiere `trust_remote_code=True` al cargar desde Hugging Face, lo que implica ejecutar codigo remoto.
 - Sin soporte de tool calling ni capacidades de agente: es un modelo de embeddings y MLM, no un modelo generativo conversacional.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Taykhoom/UTR-LM-MLM
-- Coleccion UTR-LM en HuggingFace: https://huggingface.co/collections/Taykhoom/utr-lm-6a173a96ae7c070c3a84ebb4
+- Hugging Face: https://huggingface.co/Taykhoom/UTR-LM-MLM
+- Coleccion UTR-LM en Hugging Face: https://huggingface.co/collections/Taykhoom/utr-lm-6a173a96ae7c070c3a84ebb4
 - Repositorio GitHub original: https://github.com/a96123155/UTR-LM
 - Documentacion en MultiMolecule: https://multimolecule.danling.org/models/utrlm/
 - Ficha en bio.rodeo: https://bio.rodeo/models/5-utr-lm

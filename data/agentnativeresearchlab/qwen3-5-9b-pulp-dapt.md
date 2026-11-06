@@ -85,8 +85,8 @@ Adicionalmente, el modelo alcanza un 97 % de precision en la recuperacion de off
 
 | Modelo | Parametros | Contexto | Rendimiento en benchmark PULP (1.776q) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Base | 9,4B | no disponible | 41,2 % | apache-2.0 | HuggingFace |
-| Qwen3.5-9B-PULP-DAPT | 9,4B | no disponible | 81,6 % | apache-2.0 | HuggingFace |
+| Qwen3.5-9B-Base | 9,4B | no disponible | 41,2 % | apache-2.0 | Hugging Face |
+| Qwen3.5-9B-PULP-DAPT | 9,4B | no disponible | 81,6 % | apache-2.0 | Hugging Face |
 | Claude Opus 5 | no disponible | no disponible | 72,2 % (closed-book) | propietaria | API comercial |
 
 No se dispone de otros modelos de la misma categoria (DAPT especifico de hardware) con datos publicos comparables. El modelo Qwen3.5-9B-PULP-DAPT supera claramente a su base y a un modelo propietario de gran tamano en la tarea de conocimiento factual sobre PULP, aunque carece de evaluacion en benchmarks genericos.
@@ -103,7 +103,7 @@ No se dispone de otros modelos de la misma categoria (DAPT especifico de hardwar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AgentNativeResearchLab/Qwen3.5-9B-PULP-DAPT
+- Hugging Face: https://huggingface.co/AgentNativeResearchLab/Qwen3.5-9B-PULP-DAPT
 - Repositorio GitHub (receta, datos y benchmark): https://github.com/ARA-Labs/PULP-LLM
 - Plataforma PULP: https://pulp-platform.org/
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

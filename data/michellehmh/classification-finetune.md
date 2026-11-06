@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`michellehmh/classification-finetune` es un repositorio experimental publicado en HuggingFace por el usuario michellehmh que contiene una implementación propia de una arquitectura de tipo Mixer orientada a tareas de clasificación. No se trata de un modelo entrenado ni evaluado, sino de una base de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El propio autor lo describe como un punto de partida experimental cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`michellehmh/classification-finetune` es un repositorio experimental publicado en Hugging Face por el usuario michellehmh que contiene una implementación propia de una arquitectura de tipo Mixer orientada a tareas de clasificación. No se trata de un modelo entrenado ni evaluado, sino de una base de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El propio autor lo describe como un punto de partida experimental cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El repositorio incluye un `predict.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, según la model card, «no se presenta como un checkpoint entrenado con benchmarks». El recuento real de parámetros del fichero safetensors es de 33.088 parámetros, una escala que el autor etiqueta explícitamente como «nano».
 
-Su relevancia actual es limitada y muy acotada: sirve como plantilla reproducible para investigadores que quieran experimentar con combinaciones de atención multi-query, fusión por concatenación de MLPs, activación ReLU y normalización ScaleNorm en un modelo minúsculo, con un coste de cómputo prácticamente nulo. No hay puntuaciones de benchmark declaradas, no se declara pipeline de HuggingFace, no se especifican idiomas soportados y el repositorio registra 0 descargas y 0 «likes» en el momento de la consulta.
+Su relevancia actual es limitada y muy acotada: sirve como plantilla reproducible para investigadores que quieran experimentar con combinaciones de atención multi-query, fusión por concatenación de MLPs, activación ReLU y normalización ScaleNorm en un modelo minúsculo, con un coste de cómputo prácticamente nulo. No hay puntuaciones de benchmark declaradas, no se declara pipeline de Hugging Face, no se especifican idiomas soportados y el repositorio registra 0 descargas y 0 «likes» en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada y muy acotada: sirve como plantilla reproducibl
 | Formato de pesos | safetensors (`model.safetensors`) más código PyTorch en `predict.py` |
 | Escala declarada | nano |
 | Optimizador y schedule por defecto | LAMB con schedule exponencial (valores de partida del script, no evidencia de un entrenamiento completado) |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-09-13 / 2026-09-13 |
@@ -70,7 +70,7 @@ La propia model card declara explícitamente que no se reclama ninguna puntuaci�
 - GPU de consumo: cabe con enorme holgura en cualquier GPU de consumo e incluso en CPU y en dispositivos embebidos.
 - Opciones de despliegue: el repositorio se distribuye con un script PyTorch propio (`predict.py`); no hay evidencia de soporte para vLLM, llama.cpp, Ollama, TGI u otros servidores de inferencia, y la model card advierte que las APIs automáticas genéricas requieren un adaptador explícito.
 - Latencia y throughput estimados: no disponibles; no se publican mediciones y, al no existir entrenamiento, cualquier cifra carecería de sentido.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -78,9 +78,9 @@ Comparativa orientativa con alternativas de la misma categoría funcional (clasi
 
 | Modelo | Parámetros | Longitud de contexto | Licencia | Disponibilidad | Estado de entrenamiento |
 |---|---|---|---|---|---|
-| michellehmh/classification-finetune | 33.088 | No disponible | BSD-3-Clause | HuggingFace (0 descargas, 0 likes) | Sin entrenar; solo inicialización |
+| michellehmh/classification-finetune | 33.088 | No disponible | BSD-3-Clause | Hugging Face (0 descargas, 0 likes) | Sin entrenar; solo inicialización |
 | DistilBERT (referencia) | ~66 millones | 512 tokens | Apache-2.0 | Ampliamente disponible y con versiones derivadas | Preentrenado y ajustable |
-| TinyBERT (referencia) | ~14,5 millones | 512 tokens | Apache-2.0 | Disponible en HuggingFace | Preentrenado y ajustable |
+| TinyBERT (referencia) | ~14,5 millones | 512 tokens | Apache-2.0 | Disponible en Hugging Face | Preentrenado y ajustable |
 | Regresión logística con scikit-learn (referencia) | Depende del vocabulario y las características | No aplica (bolsa de palabras o TF-IDF) | BSD-3-Clause | Ampliamente disponible | Entrenable con datos etiquetados |
 
 No se dispone de comparativas de rendimiento entre estas opciones dentro de la información proporcionada, dado que el modelo analizado no aporta métricas.
@@ -100,6 +100,6 @@ No se dispone de comparativas de rendimiento entre estas opciones dentro de la i
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/michellehmh/classification-finetune
+- Página del modelo en Hugging Face: https://huggingface.co/michellehmh/classification-finetune
 - Búsqueda web realizada: no se han encontrado enlaces relevantes al modelo, al autor ni a la arquitectura descrita. Los resultados devueltos correspondían a páginas generales de YouTube (youtube.com, music.youtube.com, Google Play y el inicio de sesión de Google), sin relación con este repositorio, por lo que no se incluyen.
 - Paper, blog, repositorio de código o demostración adicionales: no disponibles.

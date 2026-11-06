@@ -4,7 +4,7 @@
 
 Qwen3.6-35B-A3B-MAYA-oQ4e-mtp es una cuantización del modelo Qwen3.6-35B-A3B, un modelo de lenguaje multimodal de tipo Mixture-of-Experts (MoE) desarrollado por Alibaba (Qwen). Esta versión concreta ha sido producida por Robot-Haus, un tercero independiente, utilizando su pipeline de cuantización oQe (imatrix-calibrated) a una profundidad de bits equivalente a Q4 con pesos en bf16. El objetivo principal es ofrecer una versión optimizada para Apple Silicon (M3/M4) que conserve dos componentes críticos que suelen perderse en conversiones automáticas: el codificador de visión (vision tower) y los cabezales de Multi-Token Prediction (MTP). El autor verifica explícitamente la presencia de 216 tensores de visión y 19 tensores MTP en el checkpoint.
 
-El modelo base Qwen3.6-35B-A3B combina una arquitectura híbrida con Gated DeltaNet y Gated Attention, junto con enrutamiento MoE disperso y un codificador de visión, lo que le permite procesar tanto texto como imágenes. Con aproximadamente 35 mil millones de parámetros totales y unos 3.6 mil millones activos por token, ofrece un equilibrio entre capacidad y eficiencia computacional. Esta cuantización reduce el tamaño del checkpoint a unos 20 GB, haciéndolo viable en equipos Apple con memoria unificada suficiente. La relevancia de esta versión radica en que aborda un problema práctico: muchas cuantizaciones de Qwen3.x en HuggingFace omiten silenciosamente los componentes de visión y MTP, y Robot-Haus garantiza su presencia mediante verificación directa de los índices safetensors.
+El modelo base Qwen3.6-35B-A3B combina una arquitectura híbrida con Gated DeltaNet y Gated Attention, junto con enrutamiento MoE disperso y un codificador de visión, lo que le permite procesar tanto texto como imágenes. Con aproximadamente 35 mil millones de parámetros totales y unos 3.6 mil millones activos por token, ofrece un equilibrio entre capacidad y eficiencia computacional. Esta cuantización reduce el tamaño del checkpoint a unos 20 GB, haciéndolo viable en equipos Apple con memoria unificada suficiente. La relevancia de esta versión radica en que aborda un problema práctico: muchas cuantizaciones de Qwen3.x en Hugging Face omiten silenciosamente los componentes de visión y MTP, y Robot-Haus garantiza su presencia mediante verificación directa de los índices safetensors.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-mtp
 - Variante fp16 para M1/M2: https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-fp16-mtp
 - Repositorio oficial de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.6-35b-a3b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CapriAI2 es una colección de fine-tunes no oficiales de modelos conversacionales, creada por el usuario Ghasty3 y publicada en HuggingFace. El proyecto adapta varios modelos base (Qwen 3.5 4B, Gemma 4 E4B IT y MiniCPM5 2B) para que generen conversaciones con la voz y personalidad de Capri, un personaje de *Cyberpunk: Edgerunners 2*, manteniendo su humor callejero pero orientado a ser útil y colaborativo. Se trata de un proyecto de aficionados sin afiliación con CD PROJEKT RED.
+CapriAI2 es una colección de fine-tunes no oficiales de modelos conversacionales, creada por el usuario Ghasty3 y publicada en Hugging Face. El proyecto adapta varios modelos base (Qwen 3.5 4B, Gemma 4 E4B IT y MiniCPM5 2B) para que generen conversaciones con la voz y personalidad de Capri, un personaje de *Cyberpunk: Edgerunners 2*, manteniendo su humor callejero pero orientado a ser útil y colaborativo. Se trata de un proyecto de aficionados sin afiliación con CD PROJEKT RED.
 
 El repositorio combina técnicas de fine-tuning con QLoRA y distribución en formato GGUF, lo que facilita su ejecución local en hardware de consumo. Tres de las variantes son multimodales (aceptan entrada de imagen mediante un proyector mmproj en BF16), mientras que MiniCPM5 2B es solo texto. El parámetro total registrado en safetensors es de 7.518.069.290 (7,52 B), correspondiente presumiblemente a la variante Gemma 4 E4B, y el tamaño total del repositorio es de 26,5 GB.
 
@@ -81,7 +81,7 @@ CapriAI2 se diferencia de sus modelos base en que sacrifica cierta generalidad a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ghasty3/CapriAI2
+- Repositorio en Hugging Face: https://huggingface.co/Ghasty3/CapriAI2
 - Modelo base Qwen 3.5 4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo base Gemma 4 E4B IT: https://huggingface.co/google/gemma-4-E4B-it
 - Modelo base MiniCPM5 2B: https://huggingface.co/openbmb/MiniCPM5-2B

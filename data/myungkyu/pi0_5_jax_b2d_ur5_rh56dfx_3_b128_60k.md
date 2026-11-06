@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi0_5_jax_b2d_ur5_rh56dfx_3_b128_60k` es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Myungkyu en HuggingFace. Se trata de un fine-tune completo del checkpoint base `lerobot/pi05_base` (Pi0.5) sobre un subconjunto del dataset Bench2Dex (`Bench2Dex/teleopdata`), concretamente el escenario `ur5_rh56dfx_3` con demos de replay-generalization y cuatro vistas de cámara. El modelo se enmarca en la familia de políticas Pi0.5 y se ejecuta sobre el stack openpi en JAX, con un adaptador propio (XPolicyLab Pi_05) y la receta RoboDojo `pi05_base_aloha_full_sim_arx-x5_seed_0`.
+`pi0_5_jax_b2d_ur5_rh56dfx_3_b128_60k` es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Myungkyu en Hugging Face. Se trata de un fine-tune completo del checkpoint base `lerobot/pi05_base` (Pi0.5) sobre un subconjunto del dataset Bench2Dex (`Bench2Dex/teleopdata`), concretamente el escenario `ur5_rh56dfx_3` con demos de replay-generalization y cuatro vistas de cámara. El modelo se enmarca en la familia de políticas Pi0.5 y se ejecuta sobre el stack openpi en JAX, con un adaptador propio (XPolicyLab Pi_05) y la receta RoboDojo `pi05_base_aloha_full_sim_arx-x5_seed_0`.
 
 El modelo resuelve el problema de generar acciones motrices absolutas para un brazo UR5 equipado con mano robótica RH56DFX, a partir de imágenes estéreo y de muñeca, el estado articular actual y una descripción textual de la escena. Es relevante como baseline reproducible ("vanilla baseline") para el benchmark Bench2Dex, y por publicar checkpoints intermedios con sumas de verificación, lo que facilita la reproducibilidad y el análisis de la evolución del entrenamiento.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0_5_jax_b2d_ur5_rh56dfx_3_b128_60k | no disponible | 280 tokens de prompt | VLA robotica (UR5 + RH56DFX) | no disponible | HuggingFace (Myungkyu) |
-| lerobot/pi05_base | no disponible | no disponible | VLA robotica base | no disponible | HuggingFace (lerobot) |
+| pi0_5_jax_b2d_ur5_rh56dfx_3_b128_60k | no disponible | 280 tokens de prompt | VLA robotica (UR5 + RH56DFX) | no disponible | Hugging Face (Myungkyu) |
+| lerobot/pi05_base | no disponible | no disponible | VLA robotica base | no disponible | Hugging Face (lerobot) |
 | Otros baselines Bench2Dex | no disponible | no disponible | VLA robotica | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la informacion proporcionada.
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Myungkyu/pi0_5_jax_b2d_ur5_rh56dfx_3_b128_60k
+- Hugging Face: https://huggingface.co/Myungkyu/pi0_5_jax_b2d_ur5_rh56dfx_3_b128_60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset: https://huggingface.co/datasets/Bench2Dex/teleopdata

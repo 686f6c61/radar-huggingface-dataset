@@ -79,7 +79,7 @@ La comparativa se limita a aspectos estructurales porque no hay datos de rendimi
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/granite-4.2-8b-decensored-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/granite-4.2-8b-decensored-GGUF)
 - [Modelo base decensored (qcokvd1)](https://huggingface.co/qcokvd1/granite-4.2-8b-decensored)
 - [Repositorio de cuantizaciones i1 (imatrix)](https://huggingface.co/mradermacher/granite-4.2-8b-decensored-i1-GGUF)
 - [Repositorio GitHub de IBM Granite 4.2](https://github.com/ibm-granite/granite-4.2-language-models)

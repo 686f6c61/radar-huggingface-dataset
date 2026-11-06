@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 - VRAM estimada: con 5,9 mil millones de parámetros en bfloat16, los pesos ocupan aproximadamente 11,8 GB. La inferencia completa, incluyendo el backbone de video y el action head, probablemente requiera más de 24 GB de VRAM, aunque no se especifica.
 - GPU recomendadas: se asume que GPUs de gama alta como A100 (40/80 GB) o H100 serían adecuadas. En consumer, una RTX 4090 (24 GB) podría ser insuficiente si se incluye el procesamiento de video, pero no hay datos confirmados.
-- Opciones de despliegue: no se mencionan herramientas específicas (vLLM, llama.cpp, etc.). El modelo se carga mediante `transformers` y la clase `WAMDiT4DiT`, por lo que es compatible con pipelines de HuggingFace.
+- Opciones de despliegue: no se mencionan herramientas específicas (vLLM, llama.cpp, etc.). El modelo se carga mediante `transformers` y la clase `WAMDiT4DiT`, por lo que es compatible con pipelines de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,6 +68,6 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Repositorio HuggingFace: [seungkukim/dexjoco_bimanual_multitask_hand_dn_beta3_wdn1_joint_wan22ti2v5b_L18_txtcache-60k](https://huggingface.co/seungkukim/dexjoco_bimanual_multitask_hand_dn_beta3_wdn1_joint_wan22ti2v5b_L18_txtcache-60k)
+- Repositorio Hugging Face: [seungkukim/dexjoco_bimanual_multitask_hand_dn_beta3_wdn1_joint_wan22ti2v5b_L18_txtcache-60k](https://huggingface.co/seungkukim/dexjoco_bimanual_multitask_hand_dn_beta3_wdn1_joint_wan22ti2v5b_L18_txtcache-60k)
 - Dataset DexJoCo bimanual multitask: [seungkukim/dexjoco_lerobot_v20](https://huggingface.co/datasets/seungkukim/dexjoco_lerobot_v20)
 - Modelo base Wan2.2-TI2V-5B: [Wan-AI/Wan2.2-TI2V-5B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers)

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Observaciones / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sprint2m-scale2048 | Política RL para MicroDuck | 61 / 14 | 50 Hz | no disponible | HuggingFace (0 descargas) |
+| microduck-sprint2m-scale2048 | Política RL para MicroDuck | 61 / 14 | 50 Hz | no disponible | Hugging Face (0 descargas) |
 | Otras políticas de microduck-challenges | Políticas RL para MicroDuck | no disponible | no disponible | no disponible | Repositorio de retos de la comunidad |
 | Políticas RL para cuadrúpedos de otros fabricantes | Políticas RL específicas de robot | no disponible | no disponible | habitualmente no disponible | no disponible |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atul-shukla2072/microduck-sprint2m-scale2048
+- Modelo en Hugging Face: https://huggingface.co/atul-shukla2072/microduck-sprint2m-scale2048
 - Repositorio de retos de microduck: https://github.com/pollen-robotics/microduck-challenges
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (referenciada en la model card): `docs/policy-manifest.md` en el repositorio del daemon de microduck

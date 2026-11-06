@@ -90,7 +90,7 @@ No se dispone de datos comparativos con otros modelos de compresion de CoT en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo base (pagina general): https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio oficial Qwen3: https://github.com/QwenLM/Qwen3

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Audio 4B-Instruct | 4B | No disponible | Audio-texto unificado con timestamps | Apache-2.0 | HuggingFace, GitHub |
-| Whisper large-v3 | 1.5B | 30 s de audio | Solo ASR y traduccion | MIT | HuggingFace |
-| Qwen2-Audio | 7B | No disponible | Audio-texto, sin timestamps | Apache-2.0 | HuggingFace |
-| SALMONN | 7B | No disponible | Audio-texto, sin timestamps | MIT | HuggingFace |
+| MOSS-Audio 4B-Instruct | 4B | No disponible | Audio-texto unificado con timestamps | Apache-2.0 | Hugging Face, GitHub |
+| Whisper large-v3 | 1.5B | 30 s de audio | Solo ASR y traduccion | MIT | Hugging Face |
+| Qwen2-Audio | 7B | No disponible | Audio-texto, sin timestamps | Apache-2.0 | Hugging Face |
+| SALMONN | 7B | No disponible | Audio-texto, sin timestamps | MIT | Hugging Face |
 
 MOSS-Audio se diferencia de Whisper por su capacidad de razonamiento y comprension de sonidos no verbales. Frente a Qwen2-Audio, anade la conciencia temporal y la deteccion de hablantes. Su principal ventaja es la unificacion de tareas en un solo modelo, aunque su tamano (4B) es menor que el de Qwen2-Audio (7B), lo que puede implicar menor capacidad bruta en tareas generativas complejas.
 
@@ -83,8 +83,8 @@ MOSS-Audio se diferencia de Whisper por su capacidad de razonamiento y comprensi
 
 ## Enlaces
 
-- Repositorio HuggingFace del mirror: https://huggingface.co/AEmotionStudio/moss-audio-models
-- Repositorio HuggingFace original: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-4B-Instruct
+- Repositorio Hugging Face del mirror: https://huggingface.co/AEmotionStudio/moss-audio-models
+- Repositorio Hugging Face original: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-4B-Instruct
 - Pagina oficial del modelo: https://openmoss.ai/MOSS-Audio/
 - Repositorio GitHub con el codigo de inferencia: https://github.com/OpenMOSS/MOSS-Audio
 - Articulo de noticias sobre el modelo: https://kiadev.net/news/2026-04-27-moss-audio-unified-audio-model

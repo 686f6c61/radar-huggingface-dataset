@@ -79,15 +79,15 @@ Los resultados de Kimi K2.7 Code y Kimi K2.6 se obtuvieron con el modo de pensam
 - VRAM estimada para inferencia: no disponible de forma oficial. El tamaño del repositorio es de 595.2 GB, lo que sugiere una cuantización de 4 bits. Para cargar todos los pesos en VRAM se necesitarían aproximadamente 600 GB.
 - GPU recomendadas: no disponible. Dado el tamaño, se necesitarían clústeres de GPUs como A100 80GB u H100 80GB en configuración multi-GPU (al menos 8 unidades) para inferencia sin offloading.
 - No cabe en GPU de consumo: el modelo es demasiado grande para una RTX 4090 o similar, incluso con cuantización extrema.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, entre otras. La integración con transformers está soportada según la información de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, entre otras. La integración con transformers está soportada según la información de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K2.7 Code | 1T (1 026 879 376 368) | 32B | 256K | modified-mit | HuggingFace (trinityomni) |
-| Kimi K2.6 | 1T | 32B | 256K | modified-mit | HuggingFace (moonshotai) |
+| Kimi K2.7 Code | 1T (1 026 879 376 368) | 32B | 256K | modified-mit | Hugging Face (trinityomni) |
+| Kimi K2.6 | 1T | 32B | 256K | modified-mit | Hugging Face (moonshotai) |
 
 No se dispone de datos de otros modelos open-source comparables en la información proporcionada. Los benchmarks de la sección anterior comparan con GPT-5.5 y Claude Opus 4.8, que son modelos propietarios.
 
@@ -95,14 +95,14 @@ No se dispone de datos de otros modelos open-source comparables en la informaci�
 
 - Sesgos conocidos: no disponible.
 - Riesgo de alucinación: no disponible. Como en todos los modelos generativos, existe riesgo de generar código incorrecto o alucinado, especialmente en tareas de largo horizonte sin supervisión humana.
-- Limitaciones de contexto o idioma: la información de HuggingFace indica que los idiomas soportados no están disponibles. El contexto es de 256K tokens, lo que puede ser insuficiente para proyectos extremadamente grandes.
+- Limitaciones de contexto o idioma: la información de Hugging Face indica que los idiomas soportados no están disponibles. El contexto es de 256K tokens, lo que puede ser insuficiente para proyectos extremadamente grandes.
 - Restricciones de licencia: la licencia es modified-mit, pero los términos exactos deben revisarse en el archivo LICENSE del repositorio. Puede haber restricciones para uso comercial o redistribución.
-- Publicación no oficial: el repositorio de HuggingFace está alojado bajo el usuario 'trinityomni', no bajo la organización oficial 'moonshotai'. Esto puede implicar riesgos de integridad o de disponibilidad; se recomienda verificar la procedencia de los pesos.
+- Publicación no oficial: el repositorio de Hugging Face está alojado bajo el usuario 'trinityomni', no bajo la organización oficial 'moonshotai'. Esto puede implicar riesgos de integridad o de disponibilidad; se recomienda verificar la procedencia de los pesos.
 - Requisitos de hardware: el modelo necesita infraestructura de centro de datos, lo que limita su uso a organizaciones con recursos suficientes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomni/Kimi-K2.7-Code
+- Hugging Face: https://huggingface.co/trinityomni/Kimi-K2.7-Code
 - Página oficial del modelo: https://www.kimi.ai/resources/kimi-k2-7-code
 - Kimi Code: https://www.kimi.com/code
 - Moonshot AI: https://www.moonshot.ai

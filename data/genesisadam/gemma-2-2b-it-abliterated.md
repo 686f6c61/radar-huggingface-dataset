@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GENESISADAM/gemma-2-2b-it-abliterated
+- Hugging Face: https://huggingface.co/GENESISADAM/gemma-2-2b-it-abliterated
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Referencia de metodología: https://huggingface.co/IlyaGusev/gemma-2-9b-it-abliterated
 - Blog sobre abliteration: https://huggingface.co/blog/mlabonne/abliteration

@@ -76,7 +76,7 @@ No se dispone de datos cuantitativos de modelos comparables en la información p
 
 | Modelo | Familia | Parametros | Contexto / observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ACT) | ACT, imitación supervisada | 51,7 M | 3 cámaras 480x640 + estado 6D | No disponible | HuggingFace, 0 descargas |
+| Este checkpoint (ACT) | ACT, imitación supervisada | 51,7 M | 3 cámaras 480x640 + estado 6D | No disponible | Hugging Face, 0 descargas |
 | Otras políticas ACT en LeRobot | ACT, imitación supervisada | No disponible | No disponible | No disponible | Ecosistema LeRobot |
 | Diffusion Policy | Política de difusión para manipulación | No disponible | No disponible | No disponible | Implementaciones públicas, datos no verificados aquí |
 | Políticas VLA (por ejemplo, familias tipo SmolVLA o pi0) | VLA, preentrenadas multi-tarea | No disponible | No disponible | No disponible | Datos no verificados aquí |
@@ -97,7 +97,7 @@ La diferencia cualitativa relevante es que este checkpoint está entrenado desde
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step2000
+- Modelo en Hugging Face: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step2000
 - Dataset de entrenamiento: https://huggingface.co/datasets/niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741
 - Repositorio de LeRobot (framework utilizado, versión 0.5.1): https://github.com/huggingface/lerobot
 - Paper de ACT, Action Chunking with Transformers (referencia metodológica, no citada en el model card): https://arxiv.org/abs/2304.13705

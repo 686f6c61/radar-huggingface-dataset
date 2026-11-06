@@ -109,13 +109,13 @@ No se dispone de datos de benchmarks comparativos directos con Whisper u otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/tryambientai/parakeet-tdt-0.6b-v3-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Repositorio Hugging Face de la conversion: https://huggingface.co/tryambientai/parakeet-tdt-0.6b-v3-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Commit del modelo base usado en la conversion: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/commit/6d590f7
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validacion en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/bf0d0b7
 - Documentacion del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/parakeet-tdt-0.6b-v3.md
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v3
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v3
 - Dataset Granary: https://huggingface.co/datasets/nvidia/Granary
 - Predecesor monolingue: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Referencias arXiv citadas en los tags: arxiv:2509.14128, arxiv:2505.13404, arxiv:2305.05084, arxiv:2304.06795, arxiv:2410.01036, arxiv:2406.00899, arxiv:2205.12446, arxiv:2012.03411, arxiv:2007.10310, arxiv:1510.08484

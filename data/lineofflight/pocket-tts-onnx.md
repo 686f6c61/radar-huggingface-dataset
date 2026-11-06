@@ -104,7 +104,7 @@ No se dispone de parámetros totales ni de métricas de calidad de ninguno de lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lineofflight/pocket-tts-onnx
+- Modelo en Hugging Face: https://huggingface.co/lineofflight/pocket-tts-onnx
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Origen de los pesos (revisión `a7056f505a4a8ca72d8b5fb1440071d6f1a35739`): https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - Runtime y layout de referencia: https://huggingface.co/KevinAHM/pocket-tts-onnx

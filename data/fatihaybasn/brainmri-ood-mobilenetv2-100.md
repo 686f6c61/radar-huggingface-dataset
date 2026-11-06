@@ -108,7 +108,7 @@ El modelo es el mas ligero de la comparativa, pero tambien el que peor generaliz
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-mobilenetv2-100
+- Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-mobilenetv2-100
 - Repositorio del proyecto: https://github.com/fatihaybsn/BrainMRI-OOD-10Models
 - Commit fuente: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/commit/a9920408189230b886773a64d113eb35bcba1971
 - Archivo de citacion: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/blob/main/CITATION.cff

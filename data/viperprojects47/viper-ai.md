@@ -45,7 +45,7 @@ No se mencionan capacidades de tool calling, function calling, agentes, visión,
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas como MMLU, HumanEval, GSM8K u otros estándares, y no hay comparaciones con modelos similares. Se desconoce el rendimiento real en tareas de razonamiento, código o matemáticas.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas como MMLU, HumanEval, GSM8K u otros estándares, y no hay comparaciones con modelos similares. Se desconoce el rendimiento real en tareas de razonamiento, código o matemáticas.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ Viper AI se diferencia por su ajuste específico a tareas de programación, pero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viperprojects47/viper-ai
+- Modelo en Hugging Face: https://huggingface.co/viperprojects47/viper-ai
 - Sitio web del autor: https://viperprojects47.com/
 - Asistente en línea: https://ai.viperprojects47.com/
 - Perfil de GitHub: https://github.com/viperprojects47

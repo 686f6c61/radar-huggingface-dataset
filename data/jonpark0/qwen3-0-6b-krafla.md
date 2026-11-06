@@ -73,8 +73,8 @@ Mediciones realizadas en un GitHub runner con CPU Intel Xeon Platinum 8573C, 4 h
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-krafla (esta ficha) | 0,6 B | 4096 | `.mlb` / isa-lm (CPU) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-0.6B (original) | 0,6 B | no disponible en esta ficha | safetensors / transformers, vLLM, etc. | Apache 2.0 | HuggingFace oficial |
+| Qwen3-0.6B-krafla (esta ficha) | 0,6 B | 4096 | `.mlb` / isa-lm (CPU) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-0.6B (original) | 0,6 B | no disponible en esta ficha | safetensors / transformers, vLLM, etc. | Apache 2.0 | Hugging Face oficial |
 | Conversiones GGUF de Qwen3-0.6B | 0,6 B | según conversión | GGUF / llama.cpp, Ollama | Apache 2.0 | múltiples repos comunitarios |
 
 La comparación relevante es con el modelo base original y con conversiones GGUF para llama.cpp: esta versión se distingue por el runtime isa-lm sin dependencias y por incluir medidas de perplejidad y velocidad publicadas, pero carece de ecosistema de herramientas y de soporte en frameworks estándar. No se dispone de datos de benchmarks comparativos entre estas alternativas en la información proporcionada.
@@ -93,7 +93,7 @@ La comparación relevante es con el modelo base original y con conversiones GGUF
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/Qwen3-0.6B-krafla
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/Qwen3-0.6B-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `llama-3.1-8b-instruct_LBox-10x2-plus-generalist-lora-moe` es una adaptacion experimental del modelo denso `meta-llama/Llama-3.1-8B-Instruct` mediante LoRA, orientada a introducir una arquitectura de mezcla de expertos (MoE). Lo desarrolla el usuario `Jongbin-kr` y se publica en HuggingFace con la licencia `llama3.1`. El repositorio ocupa 10.7 GB y contiene pesos en formato `safetensors`.
+El modelo `llama-3.1-8b-instruct_LBox-10x2-plus-generalist-lora-moe` es una adaptacion experimental del modelo denso `meta-llama/Llama-3.1-8B-Instruct` mediante LoRA, orientada a introducir una arquitectura de mezcla de expertos (MoE). Lo desarrolla el usuario `Jongbin-kr` y se publica en Hugging Face con la licencia `llama3.1`. El repositorio ocupa 10.7 GB y contiene pesos en formato `safetensors`.
 
 El nombre del repositorio sugiere una configuracion MoE con 10 expertos y 2 activos, aunque no hay documentacion que lo confirme. Tampoco se especifican los parametros totales, la longitud de contexto ni los idiomas soportados. El modelo se presenta como un experimento de fine-tuning con metodos de enrutamiento, pero sin descripcion de uso, datos de entrenamiento ni evaluaciones publicas. La relevancia actual es limitada: sirve como ejemplo de aplicacion de LoRA para convertir un modelo denso en una variante MoE, pero no hay evidencias de que sea utilizable en produccion.
 
@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. No
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_LBox-10x2-plus-generalist-lora-moe
+- Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_LBox-10x2-plus-generalist-lora-moe
 - Modelo relacionado: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-generalist_ffn-only
 - Modelo relacionado: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x2-moe-lbox-lora-sft-5ep

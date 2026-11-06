@@ -112,7 +112,7 @@ La informacion disponible solo permite comparar con otras representaciones del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NoxNotreve/Ternary-Bonsai-2-27B-gguf
+- Repositorio en Hugging Face: https://huggingface.co/NoxNotreve/Ternary-Bonsai-2-27B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Companion MLX 2-bit: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Web de Prism ML: https://prismml.com

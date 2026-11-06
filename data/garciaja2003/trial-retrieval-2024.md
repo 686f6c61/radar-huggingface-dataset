@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`garciaja2003/trial-retrieval-2024` es una implementación reducida de la arquitectura Flamingo orientada a tareas de recuperación (retrieval) multimodal, publicada por el usuario garciaja2003 en HuggingFace. El repositorio empaqueta el código de entrenamiento (`train.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). Se trata de la variante "nano", concebida explícitamente por el autor como un punto de partida reproducible y no como una versión entrenada.
+`garciaja2003/trial-retrieval-2024` es una implementación reducida de la arquitectura Flamingo orientada a tareas de recuperación (retrieval) multimodal, publicada por el usuario garciaja2003 en Hugging Face. El repositorio empaqueta el código de entrenamiento (`train.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). Se trata de la variante "nano", concebida explícitamente por el autor como un punto de partida reproducible y no como una versión entrenada.
 
 El checkpoint contiene aproximadamente 33.088 parámetros, un tamaño propio de un banco de pruebas para validar el pipeline antes de escalar. La model card es transparente al respecto: no se reclama ninguna puntuación de benchmark, el checkpoint "no ha sido entrenado ni auditado" y `model.safetensors` es únicamente válido para pruebas de humo (smoke tests). Por tanto, no debe confundirse con un modelo listo para producción.
 
@@ -98,5 +98,5 @@ No se dispone de datos de rendimiento comparables para este repositorio, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/garciaja2003/trial-retrieval-2024
+- Hugging Face: https://huggingface.co/garciaja2003/trial-retrieval-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

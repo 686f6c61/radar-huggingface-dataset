@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Semdekker/mae-finetuned` es un repositorio experimental publicado en HuggingFace por el usuario Semdekker que contiene una implementación propia de una arquitectura denominada Mae, orientada a tareas de retrieval (recuperación de información). No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio incluye el código (`model.py`), la configuración de arquitectura (`config.json`) y los hiperparámetros de entrenamiento por defecto (`training_args.json`).
+`Semdekker/mae-finetuned` es un repositorio experimental publicado en Hugging Face por el usuario Semdekker que contiene una implementación propia de una arquitectura denominada Mae, orientada a tareas de retrieval (recuperación de información). No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio incluye el código (`model.py`), la configuración de arquitectura (`config.json`) y los hiperparámetros de entrenamiento por defecto (`training_args.json`).
 
 La relevancia de este repositorio es, por tanto, la de un artefacto de investigación reproducible más que la de un modelo listo para producción. Su interés radica en la combinación de decisiones arquitectónicas poco habituales (atención lineal, fusión tensorial, activación mish, normalización scalenorm) documentadas de forma transparente y empaquetadas para que otros investigadores puedan inspeccionarlas y extenderlas antes de lanzar un entrenamiento completo.
 
@@ -73,4 +73,4 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Semdekker/mae-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/Semdekker/mae-finetuned

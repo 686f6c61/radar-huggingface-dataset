@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo NuExtract-2.0-8B-SIE-2S-v1.0, publicado por el usuario `tu-ericngo` en HuggingFace, se presenta como un modelo de la familia NuExtract, cuyo nombre sugiere una orientación a tareas de extracción de información. Sin embargo, la model card asociada está prácticamente vacía y no proporciona detalles sobre su arquitectura, entrenamiento o capacidades. El repositorio tiene un tamaño de 0.2 GB, lo que indica un modelo ligero, pero sin más datos no es posible determinar su naturaleza exacta ni su relevancia actual. La fecha de creación (16 de agosto de 2026) y la ausencia de descargas o valoraciones dificultan aún más su evaluación.
+El modelo NuExtract-2.0-8B-SIE-2S-v1.0, publicado por el usuario `tu-ericngo` en Hugging Face, se presenta como un modelo de la familia NuExtract, cuyo nombre sugiere una orientación a tareas de extracción de información. Sin embargo, la model card asociada está prácticamente vacía y no proporciona detalles sobre su arquitectura, entrenamiento o capacidades. El repositorio tiene un tamaño de 0.2 GB, lo que indica un modelo ligero, pero sin más datos no es posible determinar su naturaleza exacta ni su relevancia actual. La fecha de creación (16 de agosto de 2026) y la ausencia de descargas o valoraciones dificultan aún más su evaluación.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables de la misma familia o con carac
 
 ## Enlaces
 
-- [HuggingFace: tu-ericngo/NuExtract-2.0-8B-SIE-2S-v1.0](https://huggingface.co/tu-ericngo/NuExtract-2.0-8B-SIE-2S-v1.0)
+- [Hugging Face: tu-ericngo/NuExtract-2.0-8B-SIE-2S-v1.0](https://huggingface.co/tu-ericngo/NuExtract-2.0-8B-SIE-2S-v1.0)

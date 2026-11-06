@@ -70,9 +70,9 @@ Nota del autor: el test de Samrómur Milljón contiene frases que también apare
 
 | Modelo | Parámetros | Contexto de audio | WER Samrómur 21.05 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pallr-whisper-tiny-is | 39M | 30 s por ventana | 19,2 | CC BY-SA 4.0 | HuggingFace |
-| whisper-large-icelandic-62640-steps-967h | 1.550M | 30 s por ventana | 6,9 | no disponible en la información | HuggingFace (language-and-voice-lab) |
-| wav2vec2-large-xlsr-53-icelandic-ep30-967h | 315M | no disponible | 7,0 | no disponible en la información | HuggingFace (language-and-voice-lab) |
+| pallr-whisper-tiny-is | 39M | 30 s por ventana | 19,2 | CC BY-SA 4.0 | Hugging Face |
+| whisper-large-icelandic-62640-steps-967h | 1.550M | 30 s por ventana | 6,9 | no disponible en la información | Hugging Face (language-and-voice-lab) |
+| wav2vec2-large-xlsr-53-icelandic-ep30-967h | 315M | no disponible | 7,0 | no disponible en la información | Hugging Face (language-and-voice-lab) |
 
 La comparación muestra el compromiso central: los modelos grandes son claramente más precisos en habla leída (6,9-7,0 % frente a 19,2 %), pero pesan entre 8 y 40 veces más. En habla de radio (Fjölmiðlatal) la brecha se reduce (46,9 % frente a 38,1 % y 45,4 %), lo que sugiere que el modelo pequeño es competitivo en condiciones ruidosas o espontáneas.
 
@@ -89,7 +89,7 @@ La comparación muestra el compromiso central: los modelos grandes son clarament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/pallr-whisper-tiny-is
+- Modelo en Hugging Face: https://huggingface.co/palli23/pallr-whisper-tiny-is
 - Colección "Scaling smaller ASR models vs multilingual giants": https://huggingface.co/collections/palli23/scaling-smaller-asr-models-vs-multilingual-giants-6aa9aabd202fee0610231065
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Modelo comparativo Whisper-large islandés: https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h

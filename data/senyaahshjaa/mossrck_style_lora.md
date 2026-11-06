@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`senyaahshjaa/mossrck_style_LoRA` es un adaptador LoRA de estilo para Stable Diffusion XL (SDXL) 1.0, alojado en HuggingFace y entrenado con DreamBooth. No es un modelo generativo autónomo: son pesos adicionales que se cargan sobre `stabilityai/stable-diffusion-xl-base-1.0` para reproducir un estilo visual concreto, activado mediante la palabra disparadora `mossrck_style`. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador LoRA en fp16 y no con un checkpoint completo.
+`senyaahshjaa/mossrck_style_LoRA` es un adaptador LoRA de estilo para Stable Diffusion XL (SDXL) 1.0, alojado en Hugging Face y entrenado con DreamBooth. No es un modelo generativo autónomo: son pesos adicionales que se cargan sobre `stabilityai/stable-diffusion-xl-base-1.0` para reproducir un estilo visual concreto, activado mediante la palabra disparadora `mossrck_style`. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador LoRA en fp16 y no con un checkpoint completo.
 
 El modelo lo publica el usuario `senyaahshjaa` y su model card fue generada automáticamente por el script de entrenamiento: no documenta el dataset, el número de pasos, el learning rate ni ningún tipo de evaluación. A fecha de la información disponible acumula 0 descargas y 0 likes, y no hay demo, paper ni galería publicada. Se trata, por tanto, de un adaptador experimental sin validación externa conocida.
 
@@ -68,10 +68,10 @@ Estimaciones referidas al modelo base SDXL 1.0 mas el adaptador; no son medicion
 
 | Modelo | Tipo | Parametros | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `senyaahshjaa/mossrck_style_LoRA` | LoRA de estilo sobre SDXL 1.0 | No disponible (repo de 0,1 GB); base de 3,5 mil millones en la UNet | 77 tokens por codificador CLIP | openrail++ | HuggingFace, 0 descargas |
-| `stabilityai/stable-diffusion-xl-base-1.0` | Modelo base texto a imagen | Unos 3,5 mil millones (UNet) mas codificadores de texto | 77 tokens por codificador CLIP | openrail++ | HuggingFace, ampliamente usado |
+| `senyaahshjaa/mossrck_style_LoRA` | LoRA de estilo sobre SDXL 1.0 | No disponible (repo de 0,1 GB); base de 3,5 mil millones en la UNet | 77 tokens por codificador CLIP | openrail++ | Hugging Face, 0 descargas |
+| `stabilityai/stable-diffusion-xl-base-1.0` | Modelo base texto a imagen | Unos 3,5 mil millones (UNet) mas codificadores de texto | 77 tokens por codificador CLIP | openrail++ | Hugging Face, ampliamente usado |
 | LoRA de estilo para Stable Diffusion 1.5 | Adaptador sobre UNet de 860 millones | Repos tipicos de 10-150 MB | 77 tokens | Variable (CreativeML OpenRAIL-M en la mayoria) | Ecosistema amplio, calidad nativa 512x512 |
-| FLUX.1-dev y sus LoRA | Modelo de difusion con transformer (12 mil millones) | 12 mil millones | 512 tokens (T5) | FLUX.1-dev non-commercial | HuggingFace, requiere mas VRAM |
+| FLUX.1-dev y sus LoRA | Modelo de difusion con transformer (12 mil millones) | 12 mil millones | 512 tokens (T5) | FLUX.1-dev non-commercial | Hugging Face, requiere mas VRAM |
 
 La comparacion cuantitativa de calidad estilistica no esta disponible: no hay evaluaciones publicadas de este adaptador frente a alternativas. La ventaja practica frente a un LoRA de SD 1.5 es la resolucion nativa de 1024x1024 y la mayor adherencia al prompt de SDXL; la desventaja es el mayor consumo de VRAM y un ecosistema de herramientas algo mas exigente.
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa de calidad estilistica no esta disponible: no hay ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/senyaahshjaa/mossrck_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/senyaahshjaa/mossrck_style_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE usado en el entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - DreamBooth (pagina del metodo): https://dreambooth.github.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kum-aaar/text-image-retrieval-ablation no es un modelo de aprendizaje automatico, sino un repositorio de notas de investigacion sobre recuperacion texto-imagen (text-image retrieval). Su autoria corresponde al usuario de HuggingFace Kum-aaar y se publico el 10 de octubre de 2026 bajo licencia MIT, con 15 descargas y 0 likes. El propio README declara explicitamente que no se trata de un articulo terminado ni de la publicacion de modelos entrenados: el artefacto principal es el fichero `notes.md`.
+Kum-aaar/text-image-retrieval-ablation no es un modelo de aprendizaje automatico, sino un repositorio de notas de investigacion sobre recuperacion texto-imagen (text-image retrieval). Su autoria corresponde al usuario de Hugging Face Kum-aaar y se publico el 10 de octubre de 2026 bajo licencia MIT, con 15 descargas y 0 likes. El propio README declara explicitamente que no se trata de un articulo terminado ni de la publicacion de modelos entrenados: el artefacto principal es el fichero `notes.md`.
 
 El contenido cubre la motivacion del problema, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, con contextos concretos de evaluacion como Flickr30k y MS COCO Captions. Tambien incluye comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No se declaran mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
@@ -65,7 +65,7 @@ No disponible. No se puede establecer una comparativa tecnica porque el reposito
 
 | Elemento | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kum-aaar/text-image-retrieval-ablation | 33.088 (artefacto safetensors, no funcional) | No disponible | MIT | Nota de investigacion en HuggingFace |
+| Kum-aaar/text-image-retrieval-ablation | 33.088 (artefacto safetensors, no funcional) | No disponible | MIT | Nota de investigacion en Hugging Face |
 | Modelos de recuperacion texto-imagen comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. No se puede establecer una comparativa tecnica porque el reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kum-aaar/text-image-retrieval-ablation
+- Repositorio en Hugging Face: https://huggingface.co/Kum-aaar/text-image-retrieval-ablation
 - Artefacto principal citado: `notes.md` (incluido en el repositorio)
 - Documentacion citada: `README.md` (incluido en el repositorio)
 - Enlaces externos relevantes: no disponible. La busqueda web no devolvio resultados relacionados con este repositorio ni con la nota; los unicos resultados obtenidos trataban sobre ChatGPT y no guardan relacion con el contenido analizado.

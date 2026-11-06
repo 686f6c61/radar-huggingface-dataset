@@ -38,7 +38,7 @@ En cuanto al entrenamiento, la información proporcionada no detalla el volumen 
 - Respuesta a preguntas visuales (VQA): identificación de objetos, atributos y relaciones dentro de una imagen.
 - Generación de descripciones de imágenes (*image captioning*).
 - Razonamiento multimodal: tareas que requieren combinar información visual con instrucciones en lenguaje natural.
-- Generación de texto: el pipeline declarado en HuggingFace es `text-generation`.
+- Generación de texto: el pipeline declarado en Hugging Face es `text-generation`.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte para agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible; el autor no especifica idiomas soportados.
@@ -104,11 +104,11 @@ Datos de rendimiento comparado frente a otras alternativas de la misma categorí
 - No hay información sobre tool calling, razonamiento multi-paso o modo de pensamiento, por lo que no debe asumirse soporte para flujos agénticos.
 - Al no publicarse benchmarks de calidad (MMMU, MMBench, etc.), no es posible comparar su precisión frente a otros VLM con datos objetivos.
 - Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones específicas de los assets binarios y de los runtimes de Qualcomm, que pueden tener términos propios al margen del modelo.
-- La fecha de creación registrada en HuggingFace (23 de septiembre de 2026) es posterior al momento habitual de consulta, lo que sugiere un posible error en los metadatos del repositorio.
+- La fecha de creación registrada en Hugging Face (23 de septiembre de 2026) es posterior al momento habitual de consulta, lo que sugiere un posible error en los metadatos del repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualcomm/Intern3.5-VL-4B
+- Repositorio en Hugging Face: https://huggingface.co/qualcomm/Intern3.5-VL-4B
 - Modelo original de OpenGVLab: https://huggingface.co/OpenGVLab/InternVL3_5-4B
 - Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/intern3_5_vl_4b
 - Código de exportación en GitHub (AI Hub Models v0.63.0): https://github.com/qualcomm/ai-hub-models/blob/v0.63.0/src/qai_hub_models/models/intern3_5_vl_4b

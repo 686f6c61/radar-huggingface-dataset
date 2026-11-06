@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mmooretrevor/nlp-classification79` es un repositorio de HuggingFace que contiene una implementación propia de un Vision Transformer (ViT) para tareas de clasificación, publicada por el usuario mmooretrevor bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos finales: la propia model card lo describe explícitamente como un punto de partida reproducible, y el fichero `model.safetensors` se presenta como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio no declara ninguna puntuación de benchmark ni reivindica resultados de entrenamiento.
+`mmooretrevor/nlp-classification79` es un repositorio de Hugging Face que contiene una implementación propia de un Vision Transformer (ViT) para tareas de clasificación, publicada por el usuario mmooretrevor bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos finales: la propia model card lo describe explícitamente como un punto de partida reproducible, y el fichero `model.safetensors` se presenta como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio no declara ninguna puntuación de benchmark ni reivindica resultados de entrenamiento.
 
 El dato más llamativo es el tamaño: 33.088 parámetros reales según el fichero safetensors, pese a que la configuración etiqueta la escala como "xlarge". Esta discrepancia indica que la etiqueta de escala pertenece a la configuración generada por el script y no describe un modelo de gran tamaño real. El tamaño del repositorio es de 0,0 GB y acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Cabe en GPU de consumo: sí, en cualquier modelo (GTX, RTX, integradas) sin necesidad de cuantización.
 - Opciones de despliegue: al ser una implementación personalizada de ViT, no es compatible de forma directa con vLLM, llama.cpp, Ollama o TGI. Requiere un adaptador explícito para APIs de carga automática.
 - Latencia y throughput estimados: no disponibles.
-- Disco: el repositorio completo ocupa 0,0 GB según HuggingFace, por lo que el almacenamiento no es un factor limitante.
+- Disco: el repositorio completo ocupa 0,0 GB según Hugging Face, por lo que el almacenamiento no es un factor limitante.
 
 ## Comparativa con modelos similares
 
@@ -95,7 +95,7 @@ La fila de este repositorio es la única con datos verificados en el propio repo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmooretrevor/nlp-classification79
+- Modelo en Hugging Face: https://huggingface.co/mmooretrevor/nlp-classification79
 - Fichero de implementación: `model.py` dentro del repositorio
 - Configuración de arquitectura: `config.json` dentro del repositorio
 - Receta de experimento: `training_args.json` dentro del repositorio

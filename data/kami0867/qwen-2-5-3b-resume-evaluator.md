@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-2.5-3B-Resume-Evaluator es un adaptador LoRA (fine-tuning mediante QLoRA) entrenado sobre Qwen/Qwen2.5-3B-Instruct, publicado por el usuario Kami0867 en HuggingFace. No es un modelo completo, sino un adapter PEFT de unos 0,1 GB que se aplica sobre el modelo base de 3 mil millones de parametros de Alibaba. Su proposito es muy concreto: funcionar como un cribador y evaluador automatico de curriculums (resume screener) orientado a procesos de seleccion de personal (HR-tech), generando puntuaciones calibradas y salidas JSON estrictas.
+Qwen-2.5-3B-Resume-Evaluator es un adaptador LoRA (fine-tuning mediante QLoRA) entrenado sobre Qwen/Qwen2.5-3B-Instruct, publicado por el usuario Kami0867 en Hugging Face. No es un modelo completo, sino un adapter PEFT de unos 0,1 GB que se aplica sobre el modelo base de 3 mil millones de parametros de Alibaba. Su proposito es muy concreto: funcionar como un cribador y evaluador automatico de curriculums (resume screener) orientado a procesos de seleccion de personal (HR-tech), generando puntuaciones calibradas y salidas JSON estrictas.
 
 El modelo aborda un problema tipico en reclutamiento automatizado: la subjetividad y la inflacion de puntuaciones en los cribados de CVs. Para ello emplea una evaluacion basada en rubricas con desglose por categorias (habilidades tecnicas, relevancia de experiencia, formacion y certificaciones, liderazgo e impacto), ademas de deteccion de "red flags" como el abuso de palabras clave sin metricas, la inflacion de titulos o conflictos cronologicos.
 
@@ -81,6 +81,6 @@ En la categoria de evaluadores de curriculums afinados y publicos, no hay altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kami0867/Qwen-2.5-3B-Resume-Evaluator
+- Modelo en Hugging Face: https://huggingface.co/Kami0867/Qwen-2.5-3B-Resume-Evaluator
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de GitHub del proyecto (codigo de inferencia): https://github.com/ChiragPrasad2006/Resume-Evaluator-3B

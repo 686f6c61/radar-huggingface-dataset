@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`classification-lite` es un repositorio publicado en HuggingFace por el usuario `sramirezvuc` que contiene una implementación propia de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). La variante declarada es "giant", aunque el dato real del fichero safetensors indica 16.576 parámetros totales, una cifra incompatible con una variante giant de un transformer visual, lo que sugiere que el checkpoint contiene únicamente la inicialización de una capa o un subconjunto mínimo de los pesos.
+`classification-lite` es un repositorio publicado en Hugging Face por el usuario `sramirezvuc` que contiene una implementación propia de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). La variante declarada es "giant", aunque el dato real del fichero safetensors indica 16.576 parámetros totales, una cifra incompatible con una variante giant de un transformer visual, lo que sugiere que el checkpoint contiene únicamente la inicialización de una capa o un subconjunto mínimo de los pesos.
 
 El repositorio incluye el código Python de la implementación (`pipeline.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicialización (`model.safetensors`). La arquitectura declarada usa atención estándar, fusión mediante concatenación y MLP, activación approx GELU y normalización por batch. La receta por defecto emplea SGD con un scheduler OneCycle.
 
@@ -42,7 +42,7 @@ No hay información sobre volumen de datos de entrenamiento, composición del da
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicialización permite verificar que el código carga, ejecuta un forward pass y guarda pesos sin errores antes de invertir cómputo real.
 - Base para comparativas controladas: la receta SGD + OneCycle y la configuración registrada en `config.json` permiten fijar un baseline reproducible con semillas y presupuesto de tuning equivalentes.
 - Docencia y estudio de aprendizaje contrastivo: útil para ilustrar la mecánica de momentum encoder y cabezas de proyección en un entorno de código legible.
-- Integración en pipelines de investigación con adaptadores propios: al ser una implementación custom, requiere un adaptador explícito para las APIs genéricas de carga de HuggingFace, lo que la hace adecuada para equipos que quieran controlar el proceso de carga.
+- Integración en pipelines de investigación con adaptadores propios: al ser una implementación custom, requiere un adaptador explícito para las APIs genéricas de carga de Hugging Face, lo que la hace adecuada para equipos que quieran controlar el proceso de carga.
 - Punto de partida para fine-tuning sobre datos etiquetados: siguiendo la guía de evaluación del autor (split etiquetado específico de la tarea, métrica reportada en al menos tres semillas y baseline de capacidad equivalente).
 
 ## Benchmarks y rendimiento
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sramirezvuc/classification-lite | 16.576 (checkpoint de inicialización) | no disponible | No | apache-2.0 | HuggingFace |
+| sramirezvuc/classification-lite | 16.576 (checkpoint de inicialización) | no disponible | No | apache-2.0 | Hugging Face |
 | MoCo v3 (implementación oficial, Facebook AI Research) | Depende del backbone (ViT-S/B/L) | no aplica (visión) | Sí, preentrenado | CC BY-NC 4.0 (repo oficial) | GitHub oficial |
-| DINOv2 (Meta) | 21M–1.1B según variante | no aplica (visión) | Sí, preentrenado | Apache 2.0 (código) / modelo con términos propios | HuggingFace |
+| DINOv2 (Meta) | 21M–1.1B según variante | no aplica (visión) | Sí, preentrenado | Apache 2.0 (código) / modelo con términos propios | Hugging Face |
 
 La comparación con implementaciones de referencia deja claro que `classification-lite` no es un modelo preentrenado sino un andamiaje de código; las alternativas citadas ofrecen pesos entrenados y evaluados.
 
@@ -73,13 +73,13 @@ La comparación con implementaciones de referencia deja claro que `classificatio
 - No hay benchmarks, métricas ni validación de robustez, equidad o transferencia de dominio.
 - El recuento de parámetros (16.576) es inconsistente con la escala "giant" declarada, lo que indica que el safetensors no contiene los pesos completos de la arquitectura.
 - El autor no ha auditado el modelo para sesgos ni alucinaciones; al no ser un modelo generativo, el riesgo de alucinación no aplica, pero sí el de resultados sin significado.
-- Requiere un adaptador explícito para las APIs de carga automática de HuggingFace; no funciona con `from_pretrained` estándar sin trabajo adicional.
+- Requiere un adaptador explícito para las APIs de carga automática de Hugging Face; no funciona con `from_pretrained` estándar sin trabajo adicional.
 - Licencia apache-2.0 permite uso comercial del código y del checkpoint, pero deben revisarse por separado los términos de los datasets externos que se usen con el repositorio.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto aquí publicados.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sramirezvuc/classification-lite
+- Repositorio Hugging Face: https://huggingface.co/sramirezvuc/classification-lite
 - MoCo v3 (paper original, Facebook AI Research): https://arxiv.org/abs/2104.02057
 - Repositorio oficial MoCo: https://github.com/facebookresearch/moco-v3
 - DINOv2 (alternativa preentrenada de referencia): https://github.com/facebookresearch/dinov2

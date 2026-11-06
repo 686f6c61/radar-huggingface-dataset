@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas con otros modelos. TUPOI-300M pertenece
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DanilKZ/TUPOI-1
+- Hugging Face: https://huggingface.co/DanilKZ/TUPOI-1
 - Repositorio de GitHub (referencia): https://github.com/narelabs/TUPOI
 - Repositorio de GitHub (autor original): https://github.com/starface77/TUPOI
 - Fork con implementación alternativa: https://github.com/kukoshiro/tupoi_torch/blob/main/model.py

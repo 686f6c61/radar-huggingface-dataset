@@ -117,7 +117,7 @@ El parche de prefix cache reduce el TTFT en contexto largo de aproximadamente 46
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vaultai/GLM-5.3-Flash-Abliterated-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/vaultai/GLM-5.3-Flash-Abliterated-MLX-4bit
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Pesos abliterados de partida: https://huggingface.co/Blackfrost-Research/GLM-5.3-Flash-DERISKED-BF16
 - Compilacion MLX alternativa: https://huggingface.co/grant-ai/GLM-5.3-Flash-Abliterated-MLX-4bit

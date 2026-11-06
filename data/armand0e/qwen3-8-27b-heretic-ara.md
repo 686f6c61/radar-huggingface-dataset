@@ -79,7 +79,7 @@ La comparativa directa con el modelo base es la unica posible con los datos prop
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/armand0e/Qwen3.8-27B-Heretic-ara
+- Hugging Face del modelo: https://huggingface.co/armand0e/Qwen3.8-27B-Heretic-ara
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Pull request del metodo ARA: https://github.com/p-e-w/heretic/pull/211

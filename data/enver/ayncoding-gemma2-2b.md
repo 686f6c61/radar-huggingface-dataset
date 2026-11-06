@@ -89,5 +89,5 @@ No se dispone de otros modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/enver/ayncoding-gemma2-2b
+- Hugging Face: https://huggingface.co/enver/ayncoding-gemma2-2b
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it

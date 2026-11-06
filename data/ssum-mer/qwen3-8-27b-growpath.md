@@ -95,7 +95,7 @@ No se han identificado en la información disponible otros ajustes finos compara
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath
+- Repositorio principal en Hugging Face: https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath
 - Variante v18: https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath-v18
 - Variante cuantizada en 4 bits: https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath-Q4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

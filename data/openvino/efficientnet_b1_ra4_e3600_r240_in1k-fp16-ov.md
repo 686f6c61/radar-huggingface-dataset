@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parámetros | Contexto/entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenVINO/efficientnet_b1_ra4_e3600_r240_in1k-fp16-ov | EfficientNet-B1 | no disponible | Imagen 240x240 | Apache-2.0 | OpenVINO IR FP16 | HuggingFace (21 descargas) |
-| timm/efficientnet_b1.ra4_e3600_r240_in1k | EfficientNet-B1 | no disponible | Imagen 240x240 | Apache-2.0 | PyTorch (safetensors) | HuggingFace (modelo base) |
-| Otras conversiones OpenVINO de clasificadores timm | EfficientNet / ResNet / ViT | variable | variable | Apache-2.0 (según base) | OpenVINO IR | HuggingFace (organización OpenVINO) |
+| OpenVINO/efficientnet_b1_ra4_e3600_r240_in1k-fp16-ov | EfficientNet-B1 | no disponible | Imagen 240x240 | Apache-2.0 | OpenVINO IR FP16 | Hugging Face (21 descargas) |
+| timm/efficientnet_b1.ra4_e3600_r240_in1k | EfficientNet-B1 | no disponible | Imagen 240x240 | Apache-2.0 | PyTorch (safetensors) | Hugging Face (modelo base) |
+| Otras conversiones OpenVINO de clasificadores timm | EfficientNet / ResNet / ViT | variable | variable | Apache-2.0 (según base) | OpenVINO IR | Hugging Face (organización OpenVINO) |
 
 La comparativa directa con alternativas de la misma categoría (otros clasificadores ligeros como MobileNetV3 o ResNet-50) no está disponible en la información proporcionada, ya que no se aportan datos de rendimiento ni de parámetros del modelo base.
 
@@ -86,14 +86,14 @@ La comparativa directa con alternativas de la misma categoría (otros clasificad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/efficientnet_b1_ra4_e3600_r240_in1k-fp16-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/efficientnet_b1_ra4_e3600_r240_in1k-fp16-ov
 - Modelo base: https://huggingface.co/timm/efficientnet_b1.ra4_e3600_r240_in1k
 - Documentación del formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html
 - Documentación de OpenVINO: https://docs.openvino.ai/
 - Repositorio OpenVINO en GitHub: https://github.com/openvinotoolkit/openvino
 - Intel Distribution of OpenVINO Toolkit: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html
 - OpenVINO en Wikipedia: https://en.wikipedia.org/wiki/OpenVINO
-- Organización OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- Organización OpenVINO en Hugging Face: https://huggingface.co/OpenVINO
 - Model API (open-edge-platform): https://github.com/open-edge-platform/model_api
 - Documentación de Model API: https://open-edge-platform.github.io/model_api/latest/
 - Licencia Apache-2.0: https://spdx.org/licenses/Apache-2.0.html

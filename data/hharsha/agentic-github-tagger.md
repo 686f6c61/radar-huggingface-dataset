@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hharsha/agentic-github-tagger | 60,5M | no disponible (base T5-small: 512 tokens) | Generacion de etiquetas para proyectos agenticos/RAG/LLMOps | Apache 2.0 | HuggingFace, peso fusionado en safetensors |
-| google-t5/t5-small | 60,5M | 512 tokens | Texto-a-texto generico (traduccion, resumen, QA, etc.) | Apache 2.0 | HuggingFace |
-| google/flan-t5-small | 80M | 512 tokens | Texto-a-texto con ajuste por instrucciones | Apache 2.0 | HuggingFace |
-| google/mt5-small | 300M | 512 tokens | Texto-a-texto multilingue | Apache 2.0 | HuggingFace |
+| hharsha/agentic-github-tagger | 60,5M | no disponible (base T5-small: 512 tokens) | Generacion de etiquetas para proyectos agenticos/RAG/LLMOps | Apache 2.0 | Hugging Face, peso fusionado en safetensors |
+| google-t5/t5-small | 60,5M | 512 tokens | Texto-a-texto generico (traduccion, resumen, QA, etc.) | Apache 2.0 | Hugging Face |
+| google/flan-t5-small | 80M | 512 tokens | Texto-a-texto con ajuste por instrucciones | Apache 2.0 | Hugging Face |
+| google/mt5-small | 300M | 512 tokens | Texto-a-texto multilingue | Apache 2.0 | Hugging Face |
 
 La comparacion directa con t5-small es la mas pertinente, ya que este modelo es un ajuste fino suyo: hereda su arquitectura y su licencia, y solo se diferencia en la especializacion de la salida hacia etiquetas. Frente a flan-t5-small, el modelo aqui descrito es mas pequeno y esta especializado, mientras que flan-t5-small conserva capacidades genericas guiadas por instrucciones. Frente a mt5-small, la diferencia clave es el multilingue, que este modelo no ofrece.
 
@@ -88,7 +88,7 @@ La comparacion directa con t5-small es la mas pertinente, ya que este modelo es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hharsha/agentic-github-tagger
+- Modelo en Hugging Face: https://huggingface.co/hharsha/agentic-github-tagger
 - Modelo base: https://huggingface.co/google-t5/t5-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/hharsha/agentic-github-meta
 - Dataset de escaparate: https://huggingface.co/datasets/hharsha/agentic-systems-showcase

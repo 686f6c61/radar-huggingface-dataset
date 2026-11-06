@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Loganhernandez/cnn-transformer-generation` es un prototipo de investigación de arquitectura híbrida CNN-Transformer orientado a tareas de generación. Ha sido publicado por el usuario Loganhernandez en HuggingFace con una escala "nano" y un total de 16.576 parámetros, lo que lo convierte en un modelo extremadamente pequeño, pensado únicamente como punto de partida para experimentos y pruebas de humo. La model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado, y que no se presentan métricas de rendimiento verificadas.
+El modelo `Loganhernandez/cnn-transformer-generation` es un prototipo de investigación de arquitectura híbrida CNN-Transformer orientado a tareas de generación. Ha sido publicado por el usuario Loganhernandez en Hugging Face con una escala "nano" y un total de 16.576 parámetros, lo que lo convierte en un modelo extremadamente pequeño, pensado únicamente como punto de partida para experimentos y pruebas de humo. La model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado, y que no se presentan métricas de rendimiento verificadas.
 
 La relevancia de este modelo reside en su carácter didáctico y exploratorio: documenta una configuración concreta de CNN-Transformer (atención dilatada, fusión bilineal, activación GELU-tanh y normalización LayerNorm) y proporciona un script Python (`model.py`) con un ejemplo ejecutable. No obstante, al carecer de entrenamiento y de evaluaciones, no puede considerarse un modelo utilizable para tareas reales de generación. Su licencia BSD-3-Clause permite uso y modificación, pero cualquier aplicación práctica requeriría un entrenamiento completo desde cero.
 
@@ -29,7 +29,7 @@ La arquitectura es un híbrido CNN-Transformer a escala nano. Según la model ca
 - El script `model.py` incluye un ejemplo de generación para pruebas de humo, pero no se reportan resultados.
 - No hay soporte documentado para tool calling, agentes, razonamiento multi-paso, visión o audio.
 - No se especifican capacidades multilingües.
-- La implementación es personalizada; las APIs genéricas de HuggingFace requieren un adaptador explícito para cargar el modelo.
+- La implementación es personalizada; las APIs genéricas de Hugging Face requieren un adaptador explícito para cargar el modelo.
 
 ## Casos de uso
 
@@ -37,7 +37,7 @@ La arquitectura es un híbrido CNN-Transformer a escala nano. Según la model ca
 - Pruebas de humo en pipelines de desarrollo: verificar que el código de entrenamiento e inferencia funciona correctamente antes de escalar a modelos mayores.
 - Experimentos de inicialización y convergencia: comparar diferentes semillas aleatorias y configuraciones de optimizador (RMSprop, warmup) sobre un checkpoint de partida.
 - Docencia en deep learning: ilustrar la implementación de un modelo híbrido CNN-Transformer con un ejemplo ejecutable y configuraciones explícitas.
-- Desarrollo de adaptadores para HuggingFace: crear un cargador personalizado que permita integrar esta arquitectura en el ecosistema estándar.
+- Desarrollo de adaptadores para Hugging Face: crear un cargador personalizado que permita integrar esta arquitectura en el ecosistema estándar.
 - Benchmarking de eficiencia de memoria: al tener solo 16.576 parámetros, es útil para medir overhead de frameworks de inferencia en modelos mínimos.
 
 ## Benchmarks y rendimiento
@@ -60,12 +60,12 @@ No disponible. No existen modelos comparables en la misma categoría, ya que se 
 
 - El checkpoint no ha sido entrenado; cualquier salida generada será aleatoria y sin significado semántico.
 - No se ha auditado el modelo en cuanto a robustez, sesgos, equidad o transferencia de dominio.
-- La implementación es personalizada; no se puede cargar con `AutoModel` de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada; no se puede cargar con `AutoModel` de Hugging Face sin un adaptador explícito.
 - No hay datos sobre idiomas soportados ni longitud de contexto; se desconoce su comportamiento en producción.
 - La licencia BSD-3-Clause permite uso comercial, pero el modelo en su estado actual no es apto para aplicaciones reales.
 - Los resultados de una futura versión entrenada deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- [HuggingFace - Loganhernandez/cnn-transformer-generation](https://huggingface.co/Loganhernandez/cnn-transformer-generation)
+- [Hugging Face - Loganhernandez/cnn-transformer-generation](https://huggingface.co/Loganhernandez/cnn-transformer-generation)
 - No se han encontrado papers, blogs o repositorios oficiales asociados a este modelo específico. Los resultados de búsqueda web sobre CNN-Transformer en general no están vinculados a este proyecto.

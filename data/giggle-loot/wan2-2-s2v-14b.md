@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-S2V-14B | 16.295.755.609 | no disponible | Declara superar a Hunyuan-Avatar y Omnihuman (cifras no disponibles) | Apache 2.0 | Pesos en HuggingFace, diffusers, ComfyUI, Gradio |
+| Wan2.2-S2V-14B | 16.295.755.609 | no disponible | Declara superar a Hunyuan-Avatar y Omnihuman (cifras no disponibles) | Apache 2.0 | Pesos en Hugging Face, diffusers, ComfyUI, Gradio |
 | Hunyuan-Avatar | no disponible | no disponible | Referencia comparativa del artículo Wan-S2V | no disponible | no disponible |
 | Omnihuman | no disponible | no disponible | Referencia comparativa del artículo Wan-S2V | no disponible | no disponible |
 | Wan2.2 TI2V-5B | no disponible (5B según la model card) | no disponible | 720P a 24 fps en GPU de consumo como la RTX 4090 | no disponible en la información | Pesos en diffusers, ComfyUI, HF Space |
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Giggle-Loot/Wan2.2-S2V-14B
+- Repositorio Hugging Face: https://huggingface.co/Giggle-Loot/Wan2.2-S2V-14B
 - Artículo Wan-S2V: https://huggingface.co/papers/2508.18621
 - Artículo Wan2.2 base: https://arxiv.org/abs/2503.20314
 - Página del proyecto Wan-S2V: https://humanaigc.github.io/wan-s2v-webpage
@@ -88,9 +88,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 - Página principal de Wan: https://wan.video
 - Blog de Wan: https://wan.video/welcome
 - GitHub de Wan2.2: https://github.com/Wan-Video/Wan2.2
-- Organización Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Organización Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - Organización Wan-AI en ModelScope: https://modelscope.cn/organization/Wan-AI
-- Demo Gradio en HuggingFace: https://huggingface.co/spaces/Wan-AI/Wan2.2-S2V
+- Demo Gradio en Hugging Face: https://huggingface.co/spaces/Wan-AI/Wan2.2-S2V
 - Demo Gradio en ModelScope: https://www.modelscope.cn/studios/Wan-AI/Wan2.2-S2V
 - Discord: https://discord.gg/AKNgpMK4Yj
 - Guía de usuario (inglés): https://alidocs.dingtalk.com/i/nodes/EpGBa2Lm8aZxe5myC99MelA2WgN7R35y

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ECoT OpenVLA 7B Bridge CD — Fixed 3-Field Skip Mask es un checkpoint de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Simsuk en HuggingFace. Deriva por ajuste fino completo de `Embodied-CoT/ecot-openvla-7b-bridge`, que a su vez se construye sobre OpenVLA (un transformer de 7B parámetros basado en Llama 2 con un codificador visual SigLIP/DINOv2 fusionado). El modelo traduce instrucciones en lenguaje natural e imágenes de una cámara de robot en acciones de 7 dimensiones para el entorno `bridge_orig` (brazo WidowX).
+ECoT OpenVLA 7B Bridge CD — Fixed 3-Field Skip Mask es un checkpoint de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Simsuk en Hugging Face. Deriva por ajuste fino completo de `Embodied-CoT/ecot-openvla-7b-bridge`, que a su vez se construye sobre OpenVLA (un transformer de 7B parámetros basado en Llama 2 con un codificador visual SigLIP/DINOv2 fusionado). El modelo traduce instrucciones en lenguaje natural e imágenes de una cámara de robot en acciones de 7 dimensiones para el entorno `bridge_orig` (brazo WidowX).
 
 Su particularidad es la gestión del razonamiento encadenado (Embodied Chain-of-Thought). En lugar de generar todos los campos de razonamiento en cada paso de control, este checkpoint emite el token de omisión `<|fim_pad|>` en tres campos fijos —`SUBTASK REASONING`, `MOVE REASONING` y `GRIPPER POSITION`— mientras mantiene `PLAN`, `SUBTASK`, `MOVE` y `VISIBLE OBJECTS`. Es la línea base de máscara fija frente al modelo adaptativo del mismo autor (`Simsuk/ecot-openvla-7b-bridge-cd`), lo que permite comparar ambas estrategias con un protocolo de evaluación emparejado.
 
@@ -64,10 +64,10 @@ La model card solo reporta chequeos offline sobre 2.617 fotogramas de Bridge ret
 
 | Modelo | Parámetros | Contexto | Enfoque de razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Simsuk/ecot-openvla-7b-bridge-cd-fixed3field | 7,19B | no disponible | Máscara fija de 3 campos | MIT + restricciones Llama 2 | HuggingFace, 13 descargas |
-| Simsuk/ecot-openvla-7b-bridge-cd | no disponible | no disponible | Omisión adaptativa por estado | no disponible | HuggingFace |
-| Embodied-CoT/ecot-openvla-7b-bridge | ~7B (base) | no disponible | Razonamiento encadenado completo | MIT + restricciones Llama 2 | HuggingFace |
-| OpenVLA (openvla/openvla-7b) | ~7B | no disponible | Sin razonamiento explícito | MIT + restricciones Llama 2 | HuggingFace |
+| Simsuk/ecot-openvla-7b-bridge-cd-fixed3field | 7,19B | no disponible | Máscara fija de 3 campos | MIT + restricciones Llama 2 | Hugging Face, 13 descargas |
+| Simsuk/ecot-openvla-7b-bridge-cd | no disponible | no disponible | Omisión adaptativa por estado | no disponible | Hugging Face |
+| Embodied-CoT/ecot-openvla-7b-bridge | ~7B (base) | no disponible | Razonamiento encadenado completo | MIT + restricciones Llama 2 | Hugging Face |
+| OpenVLA (openvla/openvla-7b) | ~7B | no disponible | Sin razonamiento explícito | MIT + restricciones Llama 2 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ La model card solo reporta chequeos offline sobre 2.617 fotogramas de Bridge ret
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Simsuk/ecot-openvla-7b-bridge-cd-fixed3field
+- Modelo en Hugging Face: https://huggingface.co/Simsuk/ecot-openvla-7b-bridge-cd-fixed3field
 - Checkpoint adaptativo companion: https://huggingface.co/Simsuk/ecot-openvla-7b-bridge-cd
 - Modelo base ECoT OpenVLA 7B Bridge: https://huggingface.co/Embodied-CoT/ecot-openvla-7b-bridge
 - Proyecto OpenVLA: https://github.com/openvla/openvla

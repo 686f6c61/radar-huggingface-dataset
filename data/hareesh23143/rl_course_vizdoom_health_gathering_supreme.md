@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hareesh23143/rl_course_vizdoom_health_gathering_supreme` no es un modelo de lenguaje, sino una política de aprendizaje por refuerzo profundo (deep RL) entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom, dentro del ecosistema Sample Factory. El autor del repositorio es el usuario de HuggingFace `hareesh23143`, y el artefacto ocupa 0,1 GB, lo que corresponde a un checkpoint de una red neuronal relativamente pequena orientada a control a partir de píxeles.
+El modelo `hareesh23143/rl_course_vizdoom_health_gathering_supreme` no es un modelo de lenguaje, sino una política de aprendizaje por refuerzo profundo (deep RL) entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom, dentro del ecosistema Sample Factory. El autor del repositorio es el usuario de Hugging Face `hareesh23143`, y el artefacto ocupa 0,1 GB, lo que corresponde a un checkpoint de una red neuronal relativamente pequena orientada a control a partir de píxeles.
 
-El problema que resuelve es el de un agente que debe navegar un escenario 3D en primera persona de Doom, recoger botiquines de salud para sobrevivir el mayor tiempo posible y evitar morir por acumulación de dano. El resultado declarado por el autor en la model card es una recompensa media de 67,00 +/- 5,00 en el conjunto de evaluación del propio entorno, con la métrica marcada como no verificada (`verified: false`), es decir, no auditada de forma independiente por HuggingFace.
+El problema que resuelve es el de un agente que debe navegar un escenario 3D en primera persona de Doom, recoger botiquines de salud para sobrevivir el mayor tiempo posible y evitar morir por acumulación de dano. El resultado declarado por el autor en la model card es una recompensa media de 67,00 +/- 5,00 en el conjunto de evaluación del propio entorno, con la métrica marcada como no verificada (`verified: false`), es decir, no auditada de forma independiente por Hugging Face.
 
 Su relevancia es fundamentalmente educativa y de investigación: se trata de una copia de un modelo base distribuido como material de un curso de reinforcement learning (existen subidas equivalentes con el mismo nombre en las cuentas `nomad-ai`, `Ryukijano` y `suseend`, y repos espejo en GitHub como el de `HusseinEid101`). No es un modelo pensado para producción ni para tareas de generación de texto, y su valor está en servir como línea base reproducible para comparar algoritmos, ajustar hiperparámetros o practicar transferencia a otros escenarios de ViZDoom.
 
@@ -21,7 +21,7 @@ Su relevancia es fundamentalmente educativa y de investigación: se trata de una
 | Licencia | No disponible |
 | Formato de pesos | No disponible (repositorio Sample Factory de 0,1 GB; habitualmente checkpoints de PyTorch, sin confirmar en la información) |
 
-Metadatos adicionales del repositorio: pipeline `reinforcement-learning`, librería `sample-factory`, descargas 0 y likes 0 en el momento de la consulta, creación registrada el 2026-09-30 y actualización el 2026-09-30 (fechas tal como aparecen en la ficha de HuggingFace).
+Metadatos adicionales del repositorio: pipeline `reinforcement-learning`, librería `sample-factory`, descargas 0 y likes 0 en el momento de la consulta, creación registrada el 2026-09-30 y actualización el 2026-09-30 (fechas tal como aparecen en la ficha de Hugging Face).
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ Tampoco se especifican en la información disponible el número total de pasos d
 ## Casos de uso
 
 - Línea base reproducible en investigación de RL: el checkpoint permite fijar una referencia de recompensa media (67,00 +/- 5,00) contra la que comparar variantes de algoritmo, cambios de hiperparámetros o modificaciones del entorno, sin tener que reentrenar desde cero.
-- Docencia y cursos de deep RL: sirve como ejemplo completo del flujo de trabajo de Sample Factory (entrenamiento, evaluación, reanudación y publicación en HuggingFace) para que el alumnado inspeccione checkpoints y curvas de TensorBoard reales.
+- Docencia y cursos de deep RL: sirve como ejemplo completo del flujo de trabajo de Sample Factory (entrenamiento, evaluación, reanudación y publicación en Hugging Face) para que el alumnado inspeccione checkpoints y curvas de TensorBoard reales.
 - Transferencia a otros escenarios de ViZDoom: el agente puede usarse como inicialización para escenarios relacionados (por ejemplo, `doom_deathmatch` o `doom_defend_the_center`) y medir cuánto acelera el fine-tuning frente a un arranque aleatorio.
 - Estudio de robustez y generalización: evaluar el agente con semillas, configuraciones de mapa o parámetros de dano distintos para cuantificar la varianza de la política y su sensibilidad al entorno.
 - Pruebas de throughput de frameworks: dado que ViZDoom es un entorno con renderizado 3D, este agente sirve para medir la escalabilidad de Sample Factory en configuraciones multiproceso y comparar con otras librerías de RL.
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, comparaci
 
 | Modelo | Entorno | Algoritmo | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hareesh23143/rl_course_vizdoom_health_gathering_supreme | doom_health_gathering_supreme | APPO | 67,00 +/- 5,00 (no verificado) | no disponible | HuggingFace |
-| nomad-ai/rl_course_vizdoom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | HuggingFace |
-| Ryukijano/rl_course_vizdoom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | HuggingFace |
-| suseend/rl_course_vizdoom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | HuggingFace (indexado) |
+| hareesh23143/rl_course_vizdoom_health_gathering_supreme | doom_health_gathering_supreme | APPO | 67,00 +/- 5,00 (no verificado) | no disponible | Hugging Face |
+| nomad-ai/rl_course_vizdoom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | Hugging Face |
+| Ryukijano/rl_course_vizdoom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | Hugging Face |
+| suseend/rl_course_vizdoom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | Hugging Face (indexado) |
 
 Las alternativas encontradas son réplicas del mismo material de curso, con el mismo nombre de repositorio y el mismo algoritmo declarado, por lo que la comparación se limita a la disponibilidad y a los metadatos publicados. No se han encontrado en la búsqueda modelos con arquitectura o licencia distintas que permitan una comparación técnica más rica.
 
@@ -91,9 +91,9 @@ Las alternativas encontradas son réplicas del mismo material de curso, con el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hareesh23143/rl_course_vizdoom_health_gathering_supreme
-- Réplica en HuggingFace (nomad-ai): https://huggingface.co/nomad-ai/rl_course_vizdoom_health_gathering_supreme
-- Réplica en HuggingFace (Ryukijano): https://huggingface.co/Ryukijano/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/hareesh23143/rl_course_vizdoom_health_gathering_supreme
+- Réplica en Hugging Face (nomad-ai): https://huggingface.co/nomad-ai/rl_course_vizdoom_health_gathering_supreme
+- Réplica en Hugging Face (Ryukijano): https://huggingface.co/Ryukijano/rl_course_vizdoom_health_gathering_supreme
 - Repositorio espejo en GitHub (HusseinEid101): https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-
 - README del repositorio espejo: https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-/blob/main/README.md
 - Ficha indexada del modelo (essamamdani.com): https://essamamdani.com/ai-models/hf-suseend-rl-course-vizdoom-health-gathering-supreme

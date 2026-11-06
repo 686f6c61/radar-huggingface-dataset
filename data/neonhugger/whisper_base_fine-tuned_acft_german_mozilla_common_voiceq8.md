@@ -62,7 +62,7 @@ Las evaluaciones se realizaron sobre 500 muestras de Common Voice 26.0 alemán. 
 - VRAM estimada para inferencia: no disponible. El modelo tiene ~74 M parámetros y está cuantizado en q8_0, por lo que el peso ocupa aproximadamente 74 MB; la VRAM real depende del runtime y de la longitud del clip.
 - GPU recomendadas: no disponible. El entrenamiento se realizó con una RTX A3000 en bf16, pero no se han publicado requisitos específicos para inferencia.
 - Compatibilidad con GPU de consumo: sí, al ser un modelo pequeño y cuantizado, cabe en GPUs de consumo como RTX 3060 o RTX 4090, y también en CPU.
-- Opciones de despliegue: whisper.cpp (recomendado), HuggingFace Transformers (con atención al attention_mask), y uso directo en FUTO Keyboard.
+- Opciones de despliegue: whisper.cpp (recomendado), Hugging Face Transformers (con atención al attention_mask), y uso directo en FUTO Keyboard.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ Las evaluaciones se realizaron sobre 500 muestras de Common Voice 26.0 alemán. 
 - Modelo especializado en alemán: no debe usarse para otros idiomas, ya que el fine-tuning se realizó únicamente con datos de Common Voice alemán.
 - Diseñado para clips cortos (< 30 s): en clips más largos, el contexto dinámico puede degradar el rendimiento si no se configura adecuadamente.
 - La evaluación se realizó en Common Voice 26.0 alemán; el rendimiento puede variar en otros dominios (acentos regionales, ruido de fondo, micrófonos diferentes).
-- En el modo HuggingFace Transformers, el WER fue más alto (24,51 %) debido a la falta de attention_mask; se recomienda usar whisper.cpp para obtener el rendimiento esperado.
+- En el modo Hugging Face Transformers, el WER fue más alto (24,51 %) debido a la falta de attention_mask; se recomienda usar whisper.cpp para obtener el rendimiento esperado.
 - Riesgo de alucinación en audio con silencios o ruido, como en cualquier modelo ASR.
 - No soporta tool calling ni funciones de agente; es un modelo puramente ASR.
 - La cuantización q8_0 puede introducir una pequeña pérdida de precisión frente a f16, aunque las evaluaciones muestran un WER bajo.
@@ -86,7 +86,7 @@ Las evaluaciones se realizaron sobre 500 muestras de Common Voice 26.0 alemán. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neonhugger/whisper_base_fine-tuned_acft_german_mozilla_common_voiceQ8
+- Hugging Face: https://huggingface.co/neonhugger/whisper_base_fine-tuned_acft_german_mozilla_common_voiceQ8
 - Repositorio de FUTO whisper-acft: https://github.com/futo-org/whisper-acft
 - FUTO Keyboard (voice input): https://voiceinput.futo.org
 - Dataset Mozilla Common Voice 26.0 German: https://mozilladatacollective.com/datasets/cmqim3xpi00t6nr07k0myqtkr

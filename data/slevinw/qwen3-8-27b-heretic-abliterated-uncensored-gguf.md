@@ -82,7 +82,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/slevinw/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/slevinw/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fuente de la abliteration (Tim Rohrbaugh): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Herramienta heretic (implementacion de ARA): https://github.com/p-e-w/heretic

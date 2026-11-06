@@ -82,8 +82,8 @@ No se dispone de datos de rendimiento (WER, etc.) para comparar con otras soluci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Roborn/whisper.cpp
+- Repositorio en Hugging Face: https://huggingface.co/Roborn/whisper.cpp
 - Repositorio oficial de `whisper.cpp`: https://github.com/ggml-org/whisper.cpp
-- Modelos de referencia en HuggingFace: https://huggingface.co/ggerganov/whisper.cpp/tree/main
+- Modelos de referencia en Hugging Face: https://huggingface.co/ggerganov/whisper.cpp/tree/main
 - Documentación de conversión y descarga: https://deepwiki.com/ggml-org/whisper.cpp/5.1-model-download-and-conversion
 - Artículo de referencia sobre uso: https://pub.towardsai.net/whisper-cpp-how-to-use-openais-whisper-model-in-c-c-for-efficient-speech-recognition-3f63a2bb19c7

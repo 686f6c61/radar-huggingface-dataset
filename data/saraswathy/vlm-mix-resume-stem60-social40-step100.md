@@ -78,7 +78,7 @@ Los tres modelos comparten la misma base y el mismo paso de entrenamiento, difer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-social40-step100
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-social40-step100
 - Modelo relacionado (vlm-mix-stem60-geometry40-direct-step100): https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100
 - Modelo relacionado (vlm-mix-broader-stem-expert-step100): https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100
 - Pagina de FriendliAI para un modelo similar: https://friendli.ai/models/Saraswathy/vlm-mix-stem60-geometry40-direct-step100

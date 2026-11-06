@@ -76,7 +76,7 @@ No se han publicado en la información disponible resultados comparativos adicio
 
 | Modelo | Parámetros | Contexto / entrada | ins_mIoU (ShapeNetPart) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PVCNN c0.25 (este modelo) | 0,3 M | Nube de puntos variable (ej. 8192 puntos) | 85,1 | MIT | HuggingFace (torch-pointcloud) |
+| PVCNN c0.25 (este modelo) | 0,3 M | Nube de puntos variable (ej. 8192 puntos) | 85,1 | MIT | Hugging Face (torch-pointcloud) |
 | PointNet++ | no disponible en la información | Nube de puntos variable | no disponible en la información | no disponible en la información | Implementaciones públicas |
 | PointTransformer | no disponible en la información | Nube de puntos variable | no disponible en la información | no disponible en la información | Implementaciones públicas |
 | KPConv | no disponible en la información | Nube de puntos variable | no disponible en la información | no disponible en la información | Implementaciones públicas |
@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de resultados numéricos de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pvcnn-c0p25-dml.shapenetpart.mit-han-lab
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pvcnn-c0p25-dml.shapenetpart.mit-han-lab
 - Paper PVCNN (arXiv): https://arxiv.org/abs/1907.03739
 - Repositorio original mit-han-lab/pvcnn: https://github.com/mit-han-lab/pvcnn
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

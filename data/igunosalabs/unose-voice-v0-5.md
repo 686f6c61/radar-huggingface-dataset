@@ -100,7 +100,7 @@ La comparativa se limita a alternativas de la misma familia (Piper/VITS) y a sis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igunosalabs/Unose-Voice-v0.5
+- Modelo en Hugging Face: https://huggingface.co/igunosalabs/Unose-Voice-v0.5
 - Repositorio GitHub de Igunosa Labs: https://github.com/Igunosa-Labs/unose-voice
 - Proyecto Piper (libreria de inferencia): no disponible en la informacion proporcionada
 - Paper de VITS: no disponible en la informacion proporcionada

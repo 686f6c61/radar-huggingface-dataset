@@ -80,7 +80,7 @@ No se dispone de datos de otros LoRA de personaje comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abbuibuibui/SuzuhaAmane-Lora
+- Hugging Face: https://huggingface.co/abbuibuibui/SuzuhaAmane-Lora
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/SuzuhaAmane-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/SuzuhaAmane-Dataset
 - Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio)

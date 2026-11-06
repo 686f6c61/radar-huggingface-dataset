@@ -110,7 +110,7 @@ La informacion proporcionada no incluye comparativas con modelos de terceros de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/myflow-ai/canary-1b-v2-gguf
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/myflow-ai/canary-1b-v2-gguf
 - Modelo base: https://huggingface.co/nvidia/canary-1b-v2
 - Commit del modelo base fijado por el autor: https://huggingface.co/nvidia/canary-1b-v2/commit/87bc526
 - Motor de inferencia transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

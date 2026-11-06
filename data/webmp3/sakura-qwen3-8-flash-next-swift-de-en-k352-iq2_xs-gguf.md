@@ -92,12 +92,12 @@ Las diferencias entre estas builds están dentro de aproximadamente ±1 %, por l
 
 | Modelo | Parámetros / expertos | Cuantización | Peso en GPU | Perplejidad DE / EN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este build (Sakura K352 IQ2_XS) | 352/512 expertos | IQ2_XS, ~2,5 bits | ~26 GiB | 2,0681 / 1,8229 | swift-open-license-v1.0 | HuggingFace |
-| Sakura K352 IQ3_XXS (hermano 3-bit) | 352/512 expertos | IQ3_XXS | ~31,4 GiB (no cabe en 32 GB) | 2,0514 / 1,8231 | No disponible en la información; presumiblemente la misma | HuggingFace |
-| Swift 1.5 IQ2_XS (512 expertos) | 512/512 expertos | IQ2_XS | No disponible | 2,0605 / 1,8245 | No disponible | HuggingFace |
-| Qwen3.8-Flash-Next (base) | 125B totales / 6B activos según la guía de Atomic Chat; 139.175.502.720 según la ficha de HuggingFace | No disponible | No disponible | No disponible | No disponible | HuggingFace y GitHub de QwenLM |
+| Este build (Sakura K352 IQ2_XS) | 352/512 expertos | IQ2_XS, ~2,5 bits | ~26 GiB | 2,0681 / 1,8229 | swift-open-license-v1.0 | Hugging Face |
+| Sakura K352 IQ3_XXS (hermano 3-bit) | 352/512 expertos | IQ3_XXS | ~31,4 GiB (no cabe en 32 GB) | 2,0514 / 1,8231 | No disponible en la información; presumiblemente la misma | Hugging Face |
+| Swift 1.5 IQ2_XS (512 expertos) | 512/512 expertos | IQ2_XS | No disponible | 2,0605 / 1,8245 | No disponible | Hugging Face |
+| Qwen3.8-Flash-Next (base) | 125B totales / 6B activos según la guía de Atomic Chat; 139.175.502.720 según la ficha de Hugging Face | No disponible | No disponible | No disponible | No disponible | Hugging Face y GitHub de QwenLM |
 
-La guía de Atomic Chat describe el checkpoint base como 125B totales y 6B activos por token, con tabla n-grama de 51B y cabeza MTP de 4B. La ficha de HuggingFace de este repositorio lista 139.175.502.720 parámetros para el checkpoint base. No hay una cifra oficial unificada en la información disponible. Las diferencias de perplejidad entre las builds comparadas son de aproximadamente ±1 %, por lo que no se puede establecer una superioridad clara entre ellas.
+La guía de Atomic Chat describe el checkpoint base como 125B totales y 6B activos por token, con tabla n-grama de 51B y cabeza MTP de 4B. La ficha de Hugging Face de este repositorio lista 139.175.502.720 parámetros para el checkpoint base. No hay una cifra oficial unificada en la información disponible. Las diferencias de perplejidad entre las builds comparadas son de aproximadamente ±1 %, por lo que no se puede establecer una superioridad clara entre ellas.
 
 ## Limitaciones y advertencias
 
@@ -115,7 +115,7 @@ La guía de Atomic Chat describe el checkpoint base como 125B totales y 6B activ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - README de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md

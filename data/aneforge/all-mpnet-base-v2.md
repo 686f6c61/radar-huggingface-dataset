@@ -75,7 +75,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- [Repositorio de HuggingFace del modelo](https://huggingface.co/aneforge/all-mpnet-base-v2)
+- [Repositorio de Hugging Face del modelo](https://huggingface.co/aneforge/all-mpnet-base-v2)
 - [Modelo original sentence-transformers/all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)
 - [Documentación de ANEForge](https://aneforge.readthedocs.io)
 - [Repositorio de ANEForge en GitHub](https://github.com/sbryngelson/ANEForge)

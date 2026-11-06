@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/RynnBrain-2B-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/RynnBrain-2B-GGUF
 - Modelo base: https://huggingface.co/Alibaba-DAMO-Academy/RynnBrain-2B
 - Quants con imatrix: https://huggingface.co/mradermacher/RynnBrain-2B-i1-GGUF
 - Página de resumen de quants: https://hf.tst.eu/model#RynnBrain-2B-GGUF

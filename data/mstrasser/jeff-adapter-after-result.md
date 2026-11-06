@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jeff-adapter-after-result (sobre jeff-base v1.4) | 0,8B (base) + LoRA | no disponible | Apache 2.0 | HuggingFace |
+| jeff-adapter-after-result (sobre jeff-base v1.4) | 0,8B (base) + LoRA | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/mstrasser/jeff-adapter-after-result
+- Hugging Face del adaptador: https://huggingface.co/mstrasser/jeff-adapter-after-result
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Página de catálogo: https://jeffhub.ai/catalogue/jeff.agents.after-result
 - Repositorio de código, servidor y SDK: https://github.com/firelex/jeff

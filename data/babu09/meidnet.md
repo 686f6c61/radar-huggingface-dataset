@@ -26,7 +26,7 @@ Su relevancia actual está en el coste: al ejecutarse en CPU de portátil, permi
 | Dataset de entrenamiento | Perov-5, split de CDVAE, 11.356 estructuras de entrenamiento |
 | Cribado de estabilidad | Incluido en el paquete: pantalla de estabilidad, unicidad y novedad basada en MACE |
 | Tamaño del repositorio | 0,0 GB (los checkpoints son de 2,8 MB cada uno) |
-| Descargas y likes en HuggingFace | 0 descargas, 0 likes en el momento de la consulta |
+| Descargas y likes en Hugging Face | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
@@ -91,12 +91,12 @@ No disponible. La información proporcionada no incluye cifras de modelos compar
 - Fiabilidad de las métricas: los tres valores de benchmark están marcados como no verificados (`verified: false`); se citan del artículo y no de una re-ejecución independiente. La tasa SUN del 13,6 % implica que aproximadamente 6 de cada 7 candidatos no superan el cribado.
 - Idiomas: el repositorio se etiqueta únicamente como `en`; la documentación y los informes generados están en inglés.
 - Licencia: MIT, permisiva y apta para uso comercial, sin restricciones adicionales documentadas. Aun así, conviene revisar la licencia de los componentes auxiliares (la pantalla MACE) antes de un despliegue comercial.
-- Madurez y adopción: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y repositorio de 0,0 GB, lo que sugiere un artefacto recién publicado y sin validación por parte de la comunidad.
+- Madurez y adopción: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y repositorio de 0,0 GB, lo que sugiere un artefacto recién publicado y sin validación por parte de la comunidad.
 - Fechas: el repositorio aparece creado y actualizado el 3 de octubre de 2026, y el artículo está fechado en 2026; verifica la disponibilidad real de los enlaces antes de citarlos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Babu09/MEIDNet
+- Modelo en Hugging Face: https://huggingface.co/Babu09/MEIDNet
 - Artículo en npj Computational Materials: https://doi.org/10.1038/s41524-026-02153-3
 - Preprint en arXiv: https://arxiv.org/abs/2601.22009 (referencia arXiv:2601.22009)
 - Código fuente (MIT): https://github.com/ABnano/MEIDNet
@@ -106,4 +106,4 @@ No disponible. La información proporcionada no incluye cifras de modelos compar
 - Notebooks de Colab: https://babu09-meidnet.hf.space/docs/start/colab.html
 - Contribuir con resultados propios: https://babu09-meidnet.hf.space/docs/community/contribute.html
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

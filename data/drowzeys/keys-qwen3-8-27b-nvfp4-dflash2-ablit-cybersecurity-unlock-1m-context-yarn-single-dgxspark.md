@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `keys-Qwen3.8-27B-NVFP4-DFlash2-Ablit-Cybersecurity-Unlock-1M-Context-YARN-Single-DGXSpark` es una compilación comunitaria creada por `drowzeys` a partir del checkpoint `Qwen/Qwen3.8-27B`. Añade cuantización NVFP4 (coma flotante de 4 bits), una ventana de contexto de 1 millón de tokens mediante YARN y decodificación especulativa con DFlash2. El modelo ha sido sometido a abliteración (`abliterated`), una técnica que modifica las activaciones para eliminar patrones de rechazo de contenido, y está orientado a ciberseguridad (`Cybersecurity Unlock`). Su licencia es Apache 2.0, su acceso en HuggingFace es restringido (`gated`) y está optimizado para plataformas NVIDIA DGX Spark.
+El modelo `keys-Qwen3.8-27B-NVFP4-DFlash2-Ablit-Cybersecurity-Unlock-1M-Context-YARN-Single-DGXSpark` es una compilación comunitaria creada por `drowzeys` a partir del checkpoint `Qwen/Qwen3.8-27B`. Añade cuantización NVFP4 (coma flotante de 4 bits), una ventana de contexto de 1 millón de tokens mediante YARN y decodificación especulativa con DFlash2. El modelo ha sido sometido a abliteración (`abliterated`), una técnica que modifica las activaciones para eliminar patrones de rechazo de contenido, y está orientado a ciberseguridad (`Cybersecurity Unlock`). Su licencia es Apache 2.0, su acceso en Hugging Face es restringido (`gated`) y está optimizado para plataformas NVIDIA DGX Spark.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ Además, el modelo indicado añade abliteración, enfoque en ciberseguridad y ac
 - Al ser un modelo "uncensored" con abliteración, existe riesgo de generar contenido ofensivo o peligroso si no se emplea en entornos controlados.
 - La ausencia de datos de entrenamiento imposibilita evaluar el sesgo y la confiabilidad del modelo.
 - Solo se declara soporte para inglés, lo que limita su uso en contextos multilingües.
-- El acceso gated en HuggingFace puede ralentizar la adopción y requiere aceptar términos.
+- El acceso gated en Hugging Face puede ralentizar la adopción y requiere aceptar términos.
 - Es una compilación comunitaria: no hay garantías de mantenimiento ni soporte oficial por parte de QwenLM.
 - En producción, se recomienda una capa de validación externa, dada la posible generación de contenido falso o alucinado.
 

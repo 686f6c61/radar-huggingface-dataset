@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CoreNLP es un conjunto de herramientas de procesamiento de lenguaje natural (PLN) desarrollado por el Stanford NLP Group y publicado en HuggingFace bajo el identificador `stanfordnlp/CoreNLP`. No se trata de un modelo generativo ni de una red neuronal única, sino de una suite completa implementada en Java que produce anotaciones lingüísticas sobre texto: límites de tokens y de frases, etiquetado morfosintáctico (POS), reconocimiento de entidades nombradas, normalización de valores numéricos y temporales, análisis de dependencias y de constituyentes, correferencia, análisis de sentimiento, atribución de citas y extracción de relaciones.
+CoreNLP es un conjunto de herramientas de procesamiento de lenguaje natural (PLN) desarrollado por el Stanford NLP Group y publicado en Hugging Face bajo el identificador `stanfordnlp/CoreNLP`. No se trata de un modelo generativo ni de una red neuronal única, sino de una suite completa implementada en Java que produce anotaciones lingüísticas sobre texto: límites de tokens y de frases, etiquetado morfosintáctico (POS), reconocimiento de entidades nombradas, normalización de valores numéricos y temporales, análisis de dependencias y de constituyentes, correferencia, análisis de sentimiento, atribución de citas y extracción de relaciones.
 
 Su relevancia actual no reside en competir con los grandes modelos de lenguaje, sino en ofrecer una cadena de anotación clásica, determinista y auditable, que sigue siendo la referencia en investigación lingüística, humanidades digitales y pipelines de PLN donde se necesita estructura explícita en lugar de texto generado. El repositorio aloja los artefactos y modelos asociados al proyecto, con un tamaño de 17,3 GB, y se actualiza de forma periódica mediante un script automático (`hugging_corenlp.py`) del repositorio `stanfordnlp/huggingface-models`.
 
-La ficha de HuggingFace no documenta parámetros, contexto ni cuantizaciones, ya que estos conceptos no aplican a una suite de herramientas de este tipo. La licencia es GPL-2.0 y el único idioma declarado es el inglés.
+La ficha de Hugging Face no documenta parámetros, contexto ni cuantizaciones, ya que estos conceptos no aplican a una suite de herramientas de este tipo. La licencia es GPL-2.0 y el único idioma declarado es el inglés.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Herramienta | Tipo | Idiomas | Licencia | Parametros | Contexto | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CoreNLP | Suite de PLN en Java | en | GPL-2.0 | No disponible | No disponible | HuggingFace y GitHub de Stanford NLP |
+| CoreNLP | Suite de PLN en Java | en | GPL-2.0 | No disponible | No disponible | Hugging Face y GitHub de Stanford NLP |
 | spaCy | Biblioteca de PLN en Python | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | NLTK | Biblioteca de PLN en Python | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Stanza | Suite de PLN (Stanford NLP) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
@@ -96,6 +96,6 @@ Nota: los datos de las alternativas no estan incluidos en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stanfordnlp/CoreNLP
+- Hugging Face: https://huggingface.co/stanfordnlp/CoreNLP
 - Sitio web oficial: https://stanfordnlp.github.io/CoreNLP
 - Repositorio GitHub: https://github.com/stanfordnlp/CoreNLP

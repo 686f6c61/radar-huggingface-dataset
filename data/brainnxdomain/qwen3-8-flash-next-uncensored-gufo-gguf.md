@@ -6,7 +6,7 @@ brainnxdomain/Qwen3.8-Flash-Next-Uncensored-Gufo-GGUF es una distribucion en for
 
 El modelo hereda de la familia Qwen3.8-Flash-Next una arquitectura hibrida de atencion que combina Gated DeltaNet (GDN) con atencion tipo QSA, ademas de cambios en conexiones residuales, gestion de embeddings y optimizacion del entrenamiento. La variante "Uncensored" ha sido sometida a un proceso de abliteracion (eliminacion de direcciones de rechazo en los pesos), de modo que reduce deliberadamente las negativas a generar contenido que otros modelos filtran. La cuantizacion de este repositorio emplea un esquema mixto etiquetado como `Gufo-Compatible-Mixed`.
 
-Es relevante sobre todo para quien necesita ejecutar un MoE multimodal de gran tamano en hardware propio sin depender de API, y para investigacion sobre comportamiento de rechazo, robustez y evaluacion de riesgos en modelos abliterados. Conviene tener en cuenta que el repositorio no registra descargas ni valoraciones, esta sujeto a licencia Qwen Community 1.0 y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+Es relevante sobre todo para quien necesita ejecutar un MoE multimodal de gran tamano en hardware propio sin depender de API, y para investigacion sobre comportamiento de rechazo, robustez y evaluacion de riesgos en modelos abliterados. Conviene tener en cuenta que el repositorio no registra descargas ni valoraciones, esta sujeto a licencia Qwen Community 1.0 y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ Comparacion con modelos de otros desarrolladores: no disponible.
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual ni de tasas de alucinacion para este modelo ni para su base.
 - Sesgos conocidos: no disponible. Al no haber model card detallada ni evaluaciones, no puede descartarse la herencia de sesgos de los datos de entrenamiento de Qwen.
 - Los pesos estan sujetos a la licencia qwen-community-1-0, etiquetada en el repositorio como `license:other`. Es imprescindible revisar las condiciones antes de cualquier uso comercial; la licencia Qwen Community incluye clausulas especificas de atribucion y de uso aceptable.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace. Esto condiciona la reproducibilidad y la distribucion de derivados.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face. Esto condiciona la reproducibilidad y la distribucion de derivados.
 - El repositorio no declara idiomas soportados; no puede asumirse un rendimiento homogeneo en castellano.
 - No se conocen parametros activos, longitud de contexto ni niveles de cuantizacion concretos, lo que impide planificar con precision la capacidad de memoria y el rendimiento en produccion.
 - El repositorio registra 0 descargas y 0 likes y fue creado y actualizado el mismo dia (2026-09-30): no hay evidencia de uso en produccion ni de validacion comunitaria de la cuantizacion.
@@ -91,7 +91,7 @@ Comparacion con modelos de otros desarrolladores: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brainnxdomain/Qwen3.8-Flash-Next-Uncensored-Gufo-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/brainnxdomain/Qwen3.8-Flash-Next-Uncensored-Gufo-GGUF
 - Modelo base declarado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - README de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md

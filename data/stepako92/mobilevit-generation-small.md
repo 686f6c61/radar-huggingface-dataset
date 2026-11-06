@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stepako92/mobilevit-generation-small` es un repositorio de HuggingFace publicado por el usuario stepako92 que contiene una implementacion propia y de tamano reducido de una arquitectura de tipo MobileViT orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release con pesos funcionales: la propia model card lo describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), sin ninguna puntuacion de benchmark declarada. El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos iniciales (`model.safetensors`).
+`stepako92/mobilevit-generation-small` es un repositorio de Hugging Face publicado por el usuario stepako92 que contiene una implementacion propia y de tamano reducido de una arquitectura de tipo MobileViT orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release con pesos funcionales: la propia model card lo describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), sin ninguna puntuacion de benchmark declarada. El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos iniciales (`model.safetensors`).
 
 El dato mas relevante es su tamano real: el recuento de parametros obtenido de los tensores safetensors es de 24.832 parametros, una cifra extremadamente baja que contrasta con la etiqueta "huge" que aparece en la tabla de arquitectura de la model card. Esta discrepancia, junto con la indicacion de que el checkpoint no ha sido entrenado ni auditado, situa el artefacto en la categoria de esqueleto reproducible para experimentacion, no de modelo desplegable.
 
@@ -25,7 +25,7 @@ Por su relevancia practica, el repositorio sirve como punto de partida para quie
 | Normalizacion | RMSNorm |
 | Optimizador por defecto | adam |
 | Planificador por defecto | step |
-| Tamano del repositorio | 0,0 GB (reportado por HuggingFace) |
+| Tamano del repositorio | 0,0 GB (reportado por Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stepako92/mobilevit-generation-small | 24.832 | no disponible | sin benchmarks; checkpoint no entrenado | bsd-3-clause | HuggingFace, 0 descargas |
+| stepako92/mobilevit-generation-small | 24.832 | no disponible | sin benchmarks; checkpoint no entrenado | bsd-3-clause | Hugging Face, 0 descargas |
 | Familia MobileViT original (Apple) | no disponible en la informacion proporcionada | no aplica (vision) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publicaciones y repositorios externos |
 | Alternativas de generacion de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,5 +90,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stepako92/mobilevit-generation-small
+- Modelo en Hugging Face: https://huggingface.co/stepako92/mobilevit-generation-small
 - Paper, blog, repositorio o demo adicionales: no disponible. Las busquedas web realizadas devolvieron unicamente resultados de servicios de traduccion (Google Translate, DeepL, Reverso) sin relacion con el modelo.

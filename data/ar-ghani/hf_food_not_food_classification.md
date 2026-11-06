@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hf_food_not_food_classification` es un modelo de clasificación de texto binario desarrollado por ar-ghani que determina si una frase habla de comida o no. Se trata de un fine-tuning del modelo `distilbert/distilbert-base-uncased`, un transformer encoder preentrenado mediante destilación de BERT. El modelo está publicado en HuggingFace bajo licencia Apache-2.0 y está disponible exclusivamente en formato safetensors.
+`hf_food_not_food_classification` es un modelo de clasificación de texto binario desarrollado por ar-ghani que determina si una frase habla de comida o no. Se trata de un fine-tuning del modelo `distilbert/distilbert-base-uncased`, un transformer encoder preentrenado mediante destilación de BERT. El modelo está publicado en Hugging Face bajo licencia Apache-2.0 y está disponible exclusivamente en formato safetensors.
 
 El modelo resuelve una tarea sencilla y bien delimitada: clasificar textos en dos categorías, "food" o "not food". Su relevancia actual radica en que puede integrarse en flujos de procesamiento de lenguaje natural donde se necesite filtrar o categorizar contenido relacionado con alimentación, como redes sociales, reseñas o tickets de soporte. Con 66.955.010 parámetros, es un modelo ligero que puede ejecutarse en CPU o en GPUs de gama baja. La información sobre la longitud de contexto, los idiomas soportados y el dataset de entrenamiento no está disponible en la ficha del modelo.
 
@@ -30,8 +30,8 @@ Según la model card, el entrenamiento se realizó con los siguientes hiperpará
 - Clasificación de texto binaria: determina si una frase en inglés habla de comida o no.
 - Generación de probabilidades para cada clase (food / not food), lo que permite medir la confianza de la predicción.
 - Inferencia rápida gracias al reducido tamaño del modelo (67M parámetros).
-- Compatibilidad con el pipeline `text-classification` de HuggingFace Transformers.
-- Soporte para despliegue en HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`).
+- Compatibilidad con el pipeline `text-classification` de Hugging Face Transformers.
+- Soporte para despliegue en Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
 - No ofrece capacidades de generación de texto, tool calling, agentes, razonamiento multi-paso, visión ni audio.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 268 MB en FP32 y 134 MB en FP16 (cálculo basado en 66.955.010 parámetros). En la práctica, el modelo puede ejecutarse en cualquier GPU con al menos 1 GB de VRAM, e incluso en CPU.
 - GPU recomendadas: no requiere una GPU específica; cualquier GPU moderna (NVIDIA GTX/RTX, AMD, Apple Silicon) es suficiente. También puede ejecutarse en CPU con rendimiento adecuado para tareas de clasificación por lotes.
 - Compatibilidad con consumer GPU: sí, el modelo cabe en cualquier GPU de consumo, incluidas las integradas.
-- Opciones de despliegue: HuggingFace Transformers (pipeline `text-classification`), ONNX Runtime, HuggingFace Inference Endpoints, y cualquier servidor que soporte safetensors.
+- Opciones de despliegue: Hugging Face Transformers (pipeline `text-classification`), ONNX Runtime, Hugging Face Inference Endpoints, y cualquier servidor que soporte safetensors.
 - Latencia y throughput estimados: no disponible. Dado el tamaño del modelo, la latencia por inferencia debería ser del orden de milisegundos en CPU y submilisegundos en GPU, pero no se han publicado mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo publicados. La principal difer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ar-ghani/hf_food_not_food_classification
+- Modelo en Hugging Face: https://huggingface.co/ar-ghani/hf_food_not_food_classification
 - Proyecto similar en GitHub (workflow completo de fine-tuning de DistilBERT para food/not food): https://github.com/AnubhavKarki/hf-food-not-food-classification
-- Demo interactiva de un clasificador food/not food en HuggingFace Spaces: https://huggingface.co/spaces/Alex1-ai/learn_hf_food_not_food_text_classifier_demo
+- Demo interactiva de un clasificador food/not food en Hugging Face Spaces: https://huggingface.co/spaces/Alex1-ai/learn_hf_food_not_food_text_classifier_demo
 - Modelo base preentrenado: https://huggingface.co/distilbert/distilbert-base-uncased

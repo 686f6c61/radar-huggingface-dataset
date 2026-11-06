@@ -70,6 +70,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zzy1123/mdm-sat-sudoku-rerun
+- Hugging Face: https://huggingface.co/zzy1123/mdm-sat-sudoku-rerun
 - Repositorio de código asociado: `r2d-markovian-expt` (mencionado en la model card, sin URL directa)
 - Paper: *"Random Remasking Scales: A Unified View of Masked Diffusion Inference"* (sin DOI ni URL en la información proporcionada)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Verity-AI es un modelo publicado en HuggingFace por el usuario gigbh bajo licencia Apache 2.0. La model card es extremadamente escueta: se limita a declarar la licencia, el idioma inglés y las etiquetas "cursed" y "meme", junto con la advertencia literal "do not use this model". No se proporciona información sobre arquitectura, datos de entrenamiento, capacidades ni procedencia.
+Verity-AI es un modelo publicado en Hugging Face por el usuario gigbh bajo licencia Apache 2.0. La model card es extremadamente escueta: se limita a declarar la licencia, el idioma inglés y las etiquetas "cursed" y "meme", junto con la advertencia literal "do not use this model". No se proporciona información sobre arquitectura, datos de entrenamiento, capacidades ni procedencia.
 
 El dato técnico más relevante disponible es el recuento de parámetros en formato safetensors: 10.928 parámetros totales. Esta cifra es órdenes de magnitud inferior a la de cualquier transformer funcional (incluso los modelos más pequeños orientados a pruebas superan el millón de parámetros), lo que sugiere que no se trata de un modelo de lenguaje operativo sino de un artefacto de broma, un placeholder o un fallo de publicación.
 
-Por tanto, esta ficha documenta un artefacto que no debe evaluarse como modelo de producción. Su interés es únicamente como caso de estudio de publicación anómala en HuggingFace: etiquetas de meme, advertencia explícita de no uso y un recuento de parámetros incompatible con un modelo de lenguaje. No hay información que permita determinar arquitectura, contexto, cuantizaciones ni rendimiento.
+Por tanto, esta ficha documenta un artefacto que no debe evaluarse como modelo de producción. Su interés es únicamente como caso de estudio de publicación anómala en Hugging Face: etiquetas de meme, advertencia explícita de no uso y un recuento de parámetros incompatible con un modelo de lenguaje. No hay información que permita determinar arquitectura, contexto, cuantizaciones ni rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -34,13 +34,13 @@ Tampoco hay datos sobre volumen de entrenamiento, composición del dataset, fase
 - No hay evidencia de soporte de agentes ni razonamiento multi-paso.
 - El único idioma declarado es el inglés, sin datos de cobertura multilingüe.
 - No se documenta modo thinking, visión, audio ni ninguna capacidad especial.
-- El tag "endpoints_compatible" indica únicamente compatibilidad con la infraestructura de endpoints de HuggingFace, no una capacidad funcional verificada.
+- El tag "endpoints_compatible" indica únicamente compatibilidad con la infraestructura de endpoints de Hugging Face, no una capacidad funcional verificada.
 
 ## Casos de uso
 
 No se identifican casos de uso prácticos. El autor indica explícitamente "do not use this model". A título documental, los únicos escenarios plausibles son:
 
-- Auditoría de publicaciones anómalas: estudiar cómo aparecen repositorios con metadata inconsistente (10.928 parámetros, etiquetas de meme) en el ecosistema HuggingFace.
+- Auditoría de publicaciones anómalas: estudiar cómo aparecen repositorios con metadata inconsistente (10.928 parámetros, etiquetas de meme) en el ecosistema Hugging Face.
 - Pruebas de pipelines de validación: usar el repositorio como caso negativo para verificar que un sistema de catalogación detecta modelos no funcionales antes de desplegarlos.
 - Docencia sobre higiene de datos: ilustrar por qué no debe confiarse en la existencia de un repositorio como indicador de un modelo utilizable.
 - Verificación de manejo de licencias: comprobar que un pipeline respeta la licencia Apache 2.0 incluso en artefactos sin valor técnico.
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables de 10.928 parámetros orientado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gigbh/Verity-AI
+- Hugging Face: https://huggingface.co/gigbh/Verity-AI
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

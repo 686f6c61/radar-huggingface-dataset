@@ -79,5 +79,5 @@ No se dispone de comparaciones con otros modelos en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nadvkjdv/auralis-ap-urban-intelligence
+- Hugging Face: https://huggingface.co/nadvkjdv/auralis-ap-urban-intelligence
 - Plataforma Auralis AI (referencia del sistema que usa el adaptador): https://auralis.ai/

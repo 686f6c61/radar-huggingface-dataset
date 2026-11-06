@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ketiholo/demo3_env_bias2_ch100` es una política de robótica entrenada con ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. Lo publica el usuario ketiholo en HuggingFace mediante LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica, y se distribuye con licencia Apache 2.0. El modelo está pensado para controlar un robot seguidor SO-100 (según el comando de evaluación de la model card) a partir de demostraciones teleoperadas.
+`ketiholo/demo3_env_bias2_ch100` es una política de robótica entrenada con ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. Lo publica el usuario ketiholo en Hugging Face mediante LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica, y se distribuye con licencia Apache 2.0. El modelo está pensado para controlar un robot seguidor SO-100 (según el comando de evaluación de la model card) a partir de demostraciones teleoperadas.
 
 El repositorio contiene únicamente pesos en formato safetensors con 51.676.295 parámetros (unos 51,7 millones) y un tamaño de 0,2 GB. No es un modelo de lenguaje: su etiqueta de pipeline es `robotics` y su salida son acciones motoras, no texto. Por tanto, las filas de la ficha relativas a contexto, idiomas o cuantización de LLM no aplican y se marcan como no disponibles.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ketiholo/demo3_env_bias2_ch100 | ACT | 51,7 M | no aplica | Apache 2.0 | HuggingFace, 32 descargas |
-| Otras políticas ACT en LeRobot Hub | ACT | variable según checkpoint | no aplica | habitualmente Apache 2.0 | HuggingFace |
-| Diffusion Policy (LeRobot) | difusión para acciones | variable | no aplica | según checkpoint | HuggingFace / LeRobot |
-| VQ-BeT (LeRobot) | transformer con cuantización vectorial | variable | no aplica | según checkpoint | HuggingFace / LeRobot |
+| ketiholo/demo3_env_bias2_ch100 | ACT | 51,7 M | no aplica | Apache 2.0 | Hugging Face, 32 descargas |
+| Otras políticas ACT en LeRobot Hub | ACT | variable según checkpoint | no aplica | habitualmente Apache 2.0 | Hugging Face |
+| Diffusion Policy (LeRobot) | difusión para acciones | variable | no aplica | según checkpoint | Hugging Face / LeRobot |
+| VQ-BeT (LeRobot) | transformer con cuantización vectorial | variable | no aplica | según checkpoint | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas políticas en la información proporcionada, por lo que la comparación se limita a arquitectura, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas políticas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiholo/demo3_env_bias2_ch100
+- Modelo en Hugging Face: https://huggingface.co/ketiholo/demo3_env_bias2_ch100
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

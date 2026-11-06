@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `afrim3000/Game` alojado en HuggingFace se presenta como un espacio vacio o un placeholder. Con un tamano de 0.0 GB, cero descargas y una model card que unicamente contiene la declaracion de licencia MIT, no incluye ningun archivo de pesos, configuracion o documentacion tecnica. Los tags indican una intencion de uso de formato ONNX y una region de origen estadounidense, pero no hay evidencia de que se haya subido ningun artefacto real.
+El repositorio `afrim3000/Game` alojado en Hugging Face se presenta como un espacio vacio o un placeholder. Con un tamano de 0.0 GB, cero descargas y una model card que unicamente contiene la declaracion de licencia MIT, no incluye ningun archivo de pesos, configuracion o documentacion tecnica. Los tags indican una intencion de uso de formato ONNX y una region de origen estadounidense, pero no hay evidencia de que se haya subido ningun artefacto real.
 
 Dado que no existe informacion sobre arquitectura, parametros, contexto o capacidades, este repositorio no puede ser evaluado ni utilizado para ninguna tarea de desarrollo o investigacion. Es probable que se trate de una subida incompleta, una prueba o un proyecto abandonado. Cualquier intento de integracion en un pipeline de produccion resultaria inviable al no existir un modelo descargable.
 
@@ -54,4 +54,4 @@ No disponible. Al carecer de especificaciones tecnicas, no es posible establecer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afrim3000/Game
+- Repositorio en Hugging Face: https://huggingface.co/afrim3000/Game

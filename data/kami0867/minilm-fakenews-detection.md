@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MiniLM-FakeNEWS-Detection es un modelo publicado por el usuario Kami0867 en HuggingFace, orientado a la clasificación de noticias falsas. Se distribuye como un repositorio de 0,1 GB con pesos en formato safetensors y etiquetado con el tag "bert", lo que apunta a un encoder de la familia BERT/MiniLM ajustado para una tarea de clasificación binaria o multietiqueta sobre texto periodístico. El recuento real de parámetros extraído del fichero de pesos es de 33.360.770, una cifra coherente con arquitecturas MiniLM de 12 capas y dimensión oculta 384, aunque el autor no confirma explícitamente la variante base.
+MiniLM-FakeNEWS-Detection es un modelo publicado por el usuario Kami0867 en Hugging Face, orientado a la clasificación de noticias falsas. Se distribuye como un repositorio de 0,1 GB con pesos en formato safetensors y etiquetado con el tag "bert", lo que apunta a un encoder de la familia BERT/MiniLM ajustado para una tarea de clasificación binaria o multietiqueta sobre texto periodístico. El recuento real de parámetros extraído del fichero de pesos es de 33.360.770, una cifra coherente con arquitecturas MiniLM de 12 capas y dimensión oculta 384, aunque el autor no confirma explícitamente la variante base.
 
 El problema que aborda es relevante: la detección automática de desinformación es una tarea activa de investigación, con literatura reciente que combina aprendizaje automático clásico (regresión logística, XGBoost, SVM) y aprendizaje profundo sobre pipelines de recolección, preprocesado, extracción de características y clasificación. Un modelo encoder compacto tiene sentido práctico para esta tarea porque permite inferencia de baja latencia sobre grandes volúmenes de artículos sin requerir GPU de gama alta.
 
-Ahora bien, la información publicada es mínima: no hay pipeline declarado, ni licencia, ni idiomas, ni métricas, ni descripción de los datos de entrenamiento. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. Cualquier evaluación seria del modelo exige solicitar acceso y validarlo sobre un conjunto de test propio.
+Ahora bien, la información publicada es mínima: no hay pipeline declarado, ni licencia, ni idiomas, ni métricas, ni descripción de los datos de entrenamiento. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. Cualquier evaluación seria del modelo exige solicitar acceso y validarlo sobre un conjunto de test propio.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Ahora bien, la información publicada es mínima: no hay pipeline declarado, ni 
 | Licencia | No disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | No disponible |
 | Descargas / likes | 0 descargas, 1 like en el momento de la consulta |
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible estab
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en deteccion de fake news |
 |---|---|---|---|---|---|
-| Kami0867/MiniLM-FakeNEWS-Detection | 33,36 M | No disponible | No disponible | Gated en HuggingFace | No disponible |
+| Kami0867/MiniLM-FakeNEWS-Detection | 33,36 M | No disponible | No disponible | Gated en Hugging Face | No disponible |
 | MiniLM-L12-H384 (checkpoint base tipico) | ~33 M | 512 tokens (tipico) | MIT (segun variante) | Publico | Requiere ajuste fino |
 | DistilBERT-base | 66 M | 512 tokens | Apache 2.0 | Publico | Requiere ajuste fino |
 | RoBERTa-base | 125 M | 512 tokens | MIT | Publico | Requiere ajuste fino |
@@ -93,7 +93,7 @@ Los datos de contexto, licencia y disponibilidad de las alternativas corresponde
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kami0867/MiniLM-FakeNEWS-Detection
+- Hugging Face: https://huggingface.co/Kami0867/MiniLM-FakeNEWS-Detection
 - Proyecto de deteccion de fake news en GitHub (referencia general): https://github.com/kapilsinghnegi/Fake-News-Detection
 - Re vision de literatura sobre ML y DL para deteccion de fake news (MDPI Computers): https://www.mdpi.com/2073-431X/14/9/394
 - Tutorial de deteccion de fake news con machine learning (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/fake-news-detection-using-machine-learning/

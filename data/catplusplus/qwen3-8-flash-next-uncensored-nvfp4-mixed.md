@@ -6,7 +6,7 @@ Catplusplus/Qwen3.8-Flash-Next-uncensored-NVFP4-mixed es una cuantizacion mixta 
 
 El checkpoint combina tres precisiones segun el rol de cada tensor: NVFP4 en los expertos enrutados, MXFP8 (OCP) en las proyecciones de atencion activas (`in_proj_qkv`, `in_proj_z`) y anclas en BF16. El objetivo declarado por el autor es ejecutar un modelo de clase frontier en un unico nodo con memoria unificada (NVIDIA Thor `sm_110` / GB10, 121-128 GiB) sin clusters de datacenter, pasando de 16,9 tok/s en el baseline a 26-35 tok/s mediante un drafter de Multi-Token Prediction (MTP, capa 48) afinado especificamente.
 
-Su relevancia es doble: por un lado documenta una receta reproducible de cuantizacion selectiva y decodificacion especulativa para hardware de home-lab; por otro, es un checkpoint abliterado, es decir, con el alineamiento de seguridad eliminado del flujo residual (Arditi et al., 2024), por lo que se publica estrictamente para investigacion, red-teaming y evaluacion local. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamano declarado por HuggingFace es de 188,3 GB, mientras que la propia model card muestra una insignia de ~172 GB.
+Su relevancia es doble: por un lado documenta una receta reproducible de cuantizacion selectiva y decodificacion especulativa para hardware de home-lab; por otro, es un checkpoint abliterado, es decir, con el alineamiento de seguridad eliminado del flujo residual (Arditi et al., 2024), por lo que se publica estrictamente para investigacion, red-teaming y evaluacion local. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamano declarado por Hugging Face es de 188,3 GB, mientras que la propia model card muestra una insignia de ~172 GB.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 | Latencia por token (derivada) | 58 ms | ~29-38 ms |
 | Tasa de aceptacion del drafter MTP | baja, sin cuantificar | 70%-81% |
 | Longitud media de aceptacion | no disponible | 2,0-2,6 tokens por paso |
-| Tamano declarado | 174 GB | 188,3 GB (HuggingFace) |
+| Tamano declarado | 174 GB | 188,3 GB (Hugging Face) |
 
 La mejora de throughput procede de dos fuentes segun la model card: la cuantizacion de las proyecciones de atencion activas, que reduce el ancho de banda de memoria consumido en memoria LPDDR5X unificada, y el drafter MTP afinado, que eleva la aceptacion especulativa. No se aportan curvas de degradacion de calidad asociadas a ninguna de las dos intervenciones.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos entre estos checkpoints, ni d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/catplusplus/Qwen3.8-Flash-Next-uncensored-NVFP4-mixed
+- Repositorio en Hugging Face: https://huggingface.co/catplusplus/Qwen3.8-Flash-Next-uncensored-NVFP4-mixed
 - Modelo base directo: https://huggingface.co/mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4
 - Ancestro abliterado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Licencia Qwen Community License 1.0: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

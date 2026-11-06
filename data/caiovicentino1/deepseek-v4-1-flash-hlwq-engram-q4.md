@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q4
+- Repositorio Hugging Face: https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q4
 - Repo hermano a 5 bits: https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q5
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Receta de despliegue de referencia: https://github.com/0xSero/deepseek-v4.1-flash-4x-rtx-pro-6000

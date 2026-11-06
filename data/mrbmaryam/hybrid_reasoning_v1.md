@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid_Reasoning_V1 es un ajuste fino (fine-tune) del modelo Mistral 7B v0.3, publicado por la usuaria mrbmaryam (Maryam Mehrabi) en HuggingFace. El modelo base empleado es la version cuantizada a 4 bits de unsloth/mistral-7b-v0.3-bnb-4bit, y el entrenamiento se realizo con la libreria Unsloth y el stack TRL, segun indica la propia model card. La licencia declarada es Apache 2.0 y el unico idioma soportado explicitamente es el ingles.
+Hybrid_Reasoning_V1 es un ajuste fino (fine-tune) del modelo Mistral 7B v0.3, publicado por la usuaria mrbmaryam (Maryam Mehrabi) en Hugging Face. El modelo base empleado es la version cuantizada a 4 bits de unsloth/mistral-7b-v0.3-bnb-4bit, y el entrenamiento se realizo con la libreria Unsloth y el stack TRL, segun indica la propia model card. La licencia declarada es Apache 2.0 y el unico idioma soportado explicitamente es el ingles.
 
 Por herencia de su modelo base, se trata de un transformer decoder-only de aproximadamente 7.250 millones de parametros, con atencion de ventana deslizante (sliding window attention), Grouped-Query Attention (GQA) y una longitud de contexto de 32.768 tokens. No obstante, la model card no aporta ninguna especificacion adicional sobre el ajuste, el dataset de entrenamiento ni hiperparametros, por lo que la mayor parte de los datos tecnicos deben considerarse derivados del modelo base y no verificados en la ficha del autor.
 
@@ -17,7 +17,7 @@ La relevancia de este modelo es limitada en el momento de redactar esta ficha: c
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 32.768 tokens en el modelo base Mistral v0.3; no confirmado para este ajuste |
 | Tipos de cuantizacion | Modelo base en 4 bits (bnb-4bit); el repositorio no documenta cuantizaciones adicionales ni pesos GGUF |
-| Idiomas soportados | Ingles (en), segun los metadatos de HuggingFace |
+| Idiomas soportados | Ingles (en), segun los metadatos de Hugging Face |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -36,7 +36,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que se realizo co
 - Soporte de agentes y razonamiento multi-paso: no documentado, pese al nombre del modelo.
 - Modo "thinking" explicito: no documentado.
 - Vision o audio: no soportados.
-- Compatibilidad con text-generation-inference (TGI) y endpoints de HuggingFace: declarada mediante las etiquetas `text-generation-inference` y `endpoints_compatible`.
+- Compatibilidad con text-generation-inference (TGI) y endpoints de Hugging Face: declarada mediante las etiquetas `text-generation-inference` y `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -71,10 +71,10 @@ Los datos de rendimiento de Hybrid_Reasoning_V1 no estan disponibles, por lo que
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| mrbmaryam/Hybrid_Reasoning_V1 | ~7,25 B (heredado) | 32.768 (modelo base) | Apache 2.0 | HuggingFace (0 descargas) | No disponible |
-| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.768 | Apache 2.0 | HuggingFace | Si, publicado por Mistral AI |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 | Apache 2.0 | HuggingFace | Si, publicado por Mistral AI |
-| unsloth/mistral-7b-v0.3-bnb-4bit | 7,25 B (4 bits) | 32.768 | Apache 2.0 | HuggingFace | No aplica (version cuantizada del base) |
+| mrbmaryam/Hybrid_Reasoning_V1 | ~7,25 B (heredado) | 32.768 (modelo base) | Apache 2.0 | Hugging Face (0 descargas) | No disponible |
+| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.768 | Apache 2.0 | Hugging Face | Si, publicado por Mistral AI |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 | Apache 2.0 | Hugging Face | Si, publicado por Mistral AI |
+| unsloth/mistral-7b-v0.3-bnb-4bit | 7,25 B (4 bits) | 32.768 | Apache 2.0 | Hugging Face | No aplica (version cuantizada del base) |
 
 ## Limitaciones y advertencias
 
@@ -90,8 +90,8 @@ Los datos de rendimiento de Hybrid_Reasoning_V1 no estan disponibles, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrbmaryam/Hybrid_Reasoning_V1
-- Perfil del autor en HuggingFace: https://huggingface.co/mrbmaryam/datasets
+- Modelo en Hugging Face: https://huggingface.co/mrbmaryam/Hybrid_Reasoning_V1
+- Perfil del autor en Hugging Face: https://huggingface.co/mrbmaryam/datasets
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-v0.3-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original Mistral 7B v0.3 (referencia): https://huggingface.co/mistralai/Mistral-7B-v0.3

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pill_sorting_full_ft_a100_v3_dagger60 | 450M | no disponible | Sorting de píldoras con SO-100/SO-101 | Apache 2.0 | HuggingFace (LeRobot) |
-| lerobot/smolvla_base | no disponible | no disponible | VLA base para ajuste fino | Apache 2.0 | HuggingFace (LeRobot) |
-| OpenVLA | 7B | no disponible | VLA generalista de manipulación | no disponible en la información | HuggingFace |
+| pill_sorting_full_ft_a100_v3_dagger60 | 450M | no disponible | Sorting de píldoras con SO-100/SO-101 | Apache 2.0 | Hugging Face (LeRobot) |
+| lerobot/smolvla_base | no disponible | no disponible | VLA base para ajuste fino | Apache 2.0 | Hugging Face (LeRobot) |
+| OpenVLA | 7B | no disponible | VLA generalista de manipulación | no disponible en la información | Hugging Face |
 | RT-2 | no disponible | no disponible | VLA generalista de Google DeepMind | no comercial | No público |
 
 La comparación con OpenVLA y RT-2 es solo orientativa por categoría (VLA para robótica); no se dispone de datos de rendimiento comparables en la información proporcionada. SmolVLA se posiciona como alternativa compacta (450M frente a 7B de OpenVLA) orientada a hardware de consumo.
@@ -89,7 +89,7 @@ La comparación con OpenVLA y RT-2 es solo orientativa por categoría (VLA para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TomasAnderegg/pill_sorting_full_ft_a100_v3_dagger60
+- Modelo en Hugging Face: https://huggingface.co/TomasAnderegg/pill_sorting_full_ft_a100_v3_dagger60
 - Dataset de entrenamiento: https://huggingface.co/datasets/TomasAnderegg/pill_sorting_big_datav3_dagger_60
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844

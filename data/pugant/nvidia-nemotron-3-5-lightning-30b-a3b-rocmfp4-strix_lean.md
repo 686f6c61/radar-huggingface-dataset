@@ -88,7 +88,7 @@ Frente al modelo base en Q4_K_M: 63,64 tok/s y 22,82 GiB. No se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pugant/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-ROCmFP4-STRIX_LEAN
+- Repositorio Hugging Face: https://huggingface.co/pugant/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-ROCmFP4-STRIX_LEAN
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
 - Toolbox de referencia: https://github.com/kyuz0/llama.cpp-amd-gpu

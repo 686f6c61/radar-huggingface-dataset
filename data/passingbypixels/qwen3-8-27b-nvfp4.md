@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (bf16) | 27B | 262K (ext. 1M) | bf16 | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-NVFP4 (este) | 15,19B (checkpoint cuantizado) | 262K (ext. 1M) | NVFP4 (4-bit mixto) | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (bf16) | 27B | 262K (ext. 1M) | bf16 | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-NVFP4 (este) | 15,19B (checkpoint cuantizado) | 262K (ext. 1M) | NVFP4 (4-bit mixto) | Apache-2.0 | Hugging Face |
 | Qwen3.5-27B (hipotético) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otras cuantizaciones del mismo modelo (por ejemplo, AWQ o GPTQ) para comparar directamente. La comparativa se limita al modelo base, que es la referencia natural.
@@ -81,7 +81,7 @@ No se dispone de información sobre otras cuantizaciones del mismo modelo (por e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/PassingByPixels/Qwen3.8-27B-NVFP4
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/PassingByPixels/Qwen3.8-27B-NVFP4
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de NVIDIA TensorRT Model Optimizer: no disponible en la información proporcionada
 - Repositorio de vLLM: no disponible en la información proporcionada

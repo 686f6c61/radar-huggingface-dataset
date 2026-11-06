@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ktobik/deepseek-v41-flash-maya-xs-abliterated-public
+- Repositorio Hugging Face: https://huggingface.co/ktobik/deepseek-v41-flash-maya-xs-abliterated-public
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Repositorio de origen citado en la model card: https://huggingface.co/audreyt/DeepSeek-V4.1-Flash-Abliterated-GGUF
 - Variante Maya-S: https://huggingface.co/Kiwimaker/DeepSeek-V4.1-Flash-1017-Maya-S-abliterated-GGUF/tree/main

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ktransfer-27b-kd-dynamic-s400 es un checkpoint de investigación publicado por el usuario 2264K en HuggingFace, derivado de un estudio exploratorio sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para adaptación al coreano. El modelo parte de Qwen/Qwen3.8-27B como estudiante y utiliza google/gemma-4-31B-it como profesor, aplicando un ajuste fino completo sobre la pila de texto del modelo base mientras congela los módulos no textuales. No se trata de un modelo de propósito general mejorado, sino de un artefacto de reproducibilidad para las tablas de un artículo científico aún no publicado (paper link: TBA).
+ktransfer-27b-kd-dynamic-s400 es un checkpoint de investigación publicado por el usuario 2264K en Hugging Face, derivado de un estudio exploratorio sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para adaptación al coreano. El modelo parte de Qwen/Qwen3.8-27B como estudiante y utiliza google/gemma-4-31B-it como profesor, aplicando un ajuste fino completo sobre la pila de texto del modelo base mientras congela los módulos no textuales. No se trata de un modelo de propósito general mejorado, sino de un artefacto de reproducibilidad para las tablas de un artículo científico aún no publicado (paper link: TBA).
 
 El checkpoint corresponde al paso 400 de la ejecución `e5f_27b`, con un presupuesto de entrenamiento corto (400 pasos, batch efectivo de 33 secuencias de 1024 tokens) sobre 3 GPUs A100-80GB con FSDP en bf16. La innovación técnica principal es el uso de P-KL proyectado entre tokenizadores distintos (estilo X-Token), con soporte top-2048 del profesor y escalado dinámico del valor de la pérdida, combinado con entropía cruzada estándar. La destilación se desactiva en el dominio de replay en inglés.
 
@@ -71,9 +71,9 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ktransfer-27b-kd-dynamic-s400 | 27,36 B | No disponible | Apache-2.0 | HuggingFace (376 descargas) | Checkpoint de investigación, destilación cross-tokenizer ko/en |
-| Qwen/Qwen3.8-27B (modelo base) | 27,36 B | No disponible | Apache-2.0 | HuggingFace | Modelo de propósito general; el checkpoint es un fine-tune del mismo |
-| google/gemma-4-31B-it (profesor) | 31 B (aprox.) | No disponible | Apache-2.0 | HuggingFace | Usado como profesor en la destilación; no es un competidor directo |
+| ktransfer-27b-kd-dynamic-s400 | 27,36 B | No disponible | Apache-2.0 | Hugging Face (376 descargas) | Checkpoint de investigación, destilación cross-tokenizer ko/en |
+| Qwen/Qwen3.8-27B (modelo base) | 27,36 B | No disponible | Apache-2.0 | Hugging Face | Modelo de propósito general; el checkpoint es un fine-tune del mismo |
+| google/gemma-4-31B-it (profesor) | 31 B (aprox.) | No disponible | Apache-2.0 | Hugging Face | Usado como profesor en la destilación; no es un competidor directo |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada. La comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/2264K/ktransfer-27b-kd-dynamic-s400
+- Hugging Face: https://huggingface.co/2264K/ktransfer-27b-kd-dynamic-s400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo profesor: https://huggingface.co/google/gemma-4-31B-it
 - Paper: TBA (no disponible en la información proporcionada)

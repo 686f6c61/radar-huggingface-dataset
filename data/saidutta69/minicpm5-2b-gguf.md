@@ -28,7 +28,7 @@ El repositorio incluye la propia matriz de importancia (`MiniCPM5-2B.imatrix`) g
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base (numero de capas, tipo de atencion, funcion de activacion, uso de GQA, etc.). Lo unico verificable es el proceso de conversion y cuantizacion aplicado: se uso `convert_hf_to_gguf.py --outtype f16` con una version reciente de llama.cpp para transformar el checkpoint de HuggingFace a GGUF en precision F16, y despues `llama-quantize --imatrix` para generar las variantes calibradas.
+La informacion disponible no describe la arquitectura interna del modelo base (numero de capas, tipo de atencion, funcion de activacion, uso de GQA, etc.). Lo unico verificable es el proceso de conversion y cuantizacion aplicado: se uso `convert_hf_to_gguf.py --outtype f16` con una version reciente de llama.cpp para transformar el checkpoint de Hugging Face a GGUF en precision F16, y despues `llama-quantize --imatrix` para generar las variantes calibradas.
 
 La innovacion tecnica de esta publicacion es el uso de calibracion por matriz de importancia (imatrix). El fichero `MiniCPM5-2B.imatrix` se calculo con `llama-imatrix` sobre 100 fragmentos del split de entrenamiento de WikiText-2 con una longitud de contexto de 512 tokens. Esta matriz pondera cada peso segun su importancia para la perplejidad sobre datos reales, de modo que los tipos IQ4_XS, Q4_K_M y Q5_K_M preservan mejor la calidad que sus equivalentes sin calibrar. No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens vistos ni si hubo etapas de RLHF, DPO u otro ajuste por preferencias.
 
@@ -38,7 +38,7 @@ La innovacion tecnica de esta publicacion es el uso de calibracion por matriz de
 - Multilingue limitado: soporte declarado de ingles y chino; no se declara soporte de castellano ni de otras lenguas.
 - Despliegue en local: las cuantizaciones permiten inferencia en CPU y GPU de gama baja mediante llama.cpp, Ollama u otros runners compatibles con GGUF.
 - Reproducibilidad de la cuantizacion: la inclusion del fichero `.imatrix` permite regenerar las cuantizaciones calibradas o crear otras nuevas con el mismo sesgo de calibracion.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el artefacto puede servirse a traves de infraestructura de inferencia compatible con HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el artefacto puede servirse a traves de infraestructura de inferencia compatible con Hugging Face.
 - Tool calling, function calling, agentes, razonamiento multi-paso, vision, audio y modo thinking: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
@@ -92,7 +92,7 @@ Diferencias relevantes: el contexto de MiniCPM5-2B no esta documentado en esta f
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/saidutta69/MiniCPM5-2B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/saidutta69/MiniCPM5-2B-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - llama.cpp (herramientas `convert_hf_to_gguf.py`, `llama-imatrix`, `llama-quantize`): https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

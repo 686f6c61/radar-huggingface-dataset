@@ -2,9 +2,9 @@
 
 ## Resumen
 
-direct-weight-chat v17a es un artefacto de investigación publicado por el desarrollador independiente samfromlife en HuggingFace. Se trata de un checkpoint de 250 millones de parámetros en float32 (exactamente 1.000.000.000 bytes de pesos) cuya característica principal es que sus pesos no se obtuvieron mediante entrenamiento por descenso de gradiente, transferencia de tensores preentrenados, destilación ni descarga de datasets: fueron escritos de forma analítica mediante compilación de circuitos neuronales reutilizables. Según el autor, la inmensa mayoría de los parámetros son cero: solo 995.905 son distintos de cero, un 0,398362 % del total.
+direct-weight-chat v17a es un artefacto de investigación publicado por el desarrollador independiente samfromlife en Hugging Face. Se trata de un checkpoint de 250 millones de parámetros en float32 (exactamente 1.000.000.000 bytes de pesos) cuya característica principal es que sus pesos no se obtuvieron mediante entrenamiento por descenso de gradiente, transferencia de tensores preentrenados, destilación ni descarga de datasets: fueron escritos de forma analítica mediante compilación de circuitos neuronales reutilizables. Según el autor, la inmensa mayoría de los parámetros son cero: solo 995.905 son distintos de cero, un 0,398362 % del total.
 
-El modelo implementa una arquitectura transformer personalizada con forward pass estándar, head de salida, tokenización, KV caching y selección argmax, pero está empaquetado con un runtime propio de PyTorch en lugar de como checkpoint de Transformers o fichero GGUF. No dispone de pipeline declarado en HuggingFace ni de servicio de inferencia alojado, y el propio autor lo describe como un experimento de investigación finalizado, no como un asistente conversacional de propósito general.
+El modelo implementa una arquitectura transformer personalizada con forward pass estándar, head de salida, tokenización, KV caching y selección argmax, pero está empaquetado con un runtime propio de PyTorch en lugar de como checkpoint de Transformers o fichero GGUF. No dispone de pipeline declarado en Hugging Face ni de servicio de inferencia alojado, y el propio autor lo describe como un experimento de investigación finalizado, no como un asistente conversacional de propósito general.
 
 Su relevancia es fundamentalmente metodológica y negativa: documenta con transparencia un intento de construir capacidades conversacionales sin entrenamiento y concluye explícitamente que no se logró un chat abierto útil bajo esas restricciones. El modelo conserva capacidades estrechas y compiladas (uso de hechos del contexto, reglas condicionales acotadas, aritmética simple), pero no razonamiento general, escritura creativa ni generación de código. Es útil como referencia para investigadores interesados en construcción directa de pesos, interpretabilidad de circuitos y los límites prácticos de este enfoque.
 
@@ -81,11 +81,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Riesgo de sobreajuste a los benchmarks del autor: las suites repiten estructuras y las combinaciones nuevas usan generadores conocidos diseñados por el propio autor.
 - El modelo no demuestra imposibilidad matemática para toda arquitectura concebible; solo documenta el resultado de este intento concreto.
 - Licencia MIT: permite uso comercial, pero el modelo carece de capacidades productivas reales más allá de los dominios acotados descritos.
-- No hay servicio de inferencia alojado ni pipeline declarado en HuggingFace; el despliegue exige descargar y ejecutar el runtime propio con PyTorch instalado.
+- No hay servicio de inferencia alojado ni pipeline declarado en Hugging Face; el despliegue exige descargar y ejecutar el runtime propio con PyTorch instalado.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/samfromlife/direct-weight-chat-v17a)
+- [Modelo en Hugging Face](https://huggingface.co/samfromlife/direct-weight-chat-v17a)
 - [Repositorio GitHub](https://github.com/SamG-Coder/direct-weight-chat)
 - [README final y conclusión](https://github.com/SamG-Coder/direct-weight-chat#final-outcome)
 - [Resultados de todas las versiones](https://github.com/SamG-Coder/direct-weight-chat/blob/main/results/README.md)

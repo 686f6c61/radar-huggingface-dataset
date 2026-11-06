@@ -38,7 +38,7 @@ Dado que no es un modelo, no existen casos de uso prácticos de inferencia. Sin 
 
 - Material de referencia para investigadores que quieran diseñar experimentos de aprendizaje contrastivo, ya que incluye una estructura de nota con secciones sobre confounders, reproducibilidad y *benchmarks*.
 - Punto de partida para verificar referencias y conjuntos de datos propuestos en la nota, aunque el propio autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
-- Ejemplo de buenas prácticas de documentación científica en repositorios de HuggingFace, mostrando cómo registrar intenciones de investigación antes de ejecutar experimentos.
+- Ejemplo de buenas prácticas de documentación científica en repositorios de Hugging Face, mostrando cómo registrar intenciones de investigación antes de ejecutar experimentos.
 
 No se recomienda su uso en ningún flujo de producción, ya que no hay código ejecutable ni modelo.
 
@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/els-apdt/postdoc-contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/els-apdt/postdoc-contrastive-learning
 - Encuesta sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Revisión de aprendizaje contrastivo autosupervisado (Springer): https://link.springer.com/article/10.1007/s13735-022-00245-6
 - Tutorial de aprendizaje contrastivo (DataCamp): https://www.datacamp.com/tutorial/contrastive-learning

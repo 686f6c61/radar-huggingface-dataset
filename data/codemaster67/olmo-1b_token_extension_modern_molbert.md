@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Olmo-1b_token_extension_modern_molbert es un checkpoint de generación de texto publicado en HuggingFace por el usuario Codemaster67. Por el nombre del repositorio y la etiqueta `olmo` del Hub, se trata con alta probabilidad de un modelo derivado de la familia OLMo (de AI2) de aproximadamente 1.000 millones de parámetros al que se le ha extendido el vocabulario del tokenizador, una técnica habitual para adaptar modelos entrenados en inglés a nuevos idiomas o dominios. El repositorio contiene 1.179.453.440 parámetros reales según los pesos en safetensors, un total de 2,4 GB, lo que corresponde a pesos almacenados en 16 bits.
+Olmo-1b_token_extension_modern_molbert es un checkpoint de generación de texto publicado en Hugging Face por el usuario Codemaster67. Por el nombre del repositorio y la etiqueta `olmo` del Hub, se trata con alta probabilidad de un modelo derivado de la familia OLMo (de AI2) de aproximadamente 1.000 millones de parámetros al que se le ha extendido el vocabulario del tokenizador, una técnica habitual para adaptar modelos entrenados en inglés a nuevos idiomas o dominios. El repositorio contiene 1.179.453.440 parámetros reales según los pesos en safetensors, un total de 2,4 GB, lo que corresponde a pesos almacenados en 16 bits.
 
 El modelo se distribuye con la librería `transformers` y el pipeline `text-generation`, e incluye las etiquetas `safetensors`, `endpoints_compatible` y `region:us`. No es un lanzamiento oficial de AI2 ni de ningún laboratorio: es una publicación individual, con 0 descargas y 0 «likes» en el momento de redactar esta ficha, y sin ningún tipo de documentación técnica asociada.
 
-La relevancia de esta ficha es limitada y de carácter exploratorio: la model card es la plantilla automática de HuggingFace, sin ningún apartado cumplimentado, y no se ha publicado información sobre datos de entrenamiento, evaluación, licencia o idiomas. Se incluye aquí como caso de estudio de checkpoints experimentales de extensión de tokenizador, no como modelo recomendado para producción.
+La relevancia de esta ficha es limitada y de carácter exploratorio: la model card es la plantilla automática de Hugging Face, sin ningún apartado cumplimentado, y no se ha publicado información sobre datos de entrenamiento, evaluación, licencia o idiomas. Se incluye aquí como caso de estudio de checkpoints experimentales de extensión de tokenizador, no como modelo recomendado para producción.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ Se recomienda tratar cualquier capacidad no listada como no verificada y comprob
 - Prototipado local en hardware modesto: con 1,18 B de parámetros en fp16 (unos 2,4 GB de pesos), el modelo se puede cargar en una GPU de consumo con 4-6 GB de VRAM para pruebas rápidas de generación de texto.
 - Fine-tuning experimental con LoRA o QLoRA: el tamaño permite ajustar adaptadores en una única GPU de consumo, útil para validar pipelines de entrenamiento antes de escalar a modelos mayores.
 - Evaluación de compatibilidad de herramientas: sirve para comprobar si pipelines de `transformers`, `vLLM` o `llama.cpp` manejan correctamente un tokenizador con vocabulario ampliado y pesos redimensionados.
-- Docencia y divulgación: por su tamaño reducido es adecuado para explicar en clase cómo se estructura un checkpoint de HuggingFace, cómo se inspeccionan los safetensors y cómo se calcula el uso de VRAM.
+- Docencia y divulgación: por su tamaño reducido es adecuado para explicar en clase cómo se estructura un checkpoint de Hugging Face, cómo se inspeccionan los safetensors y cómo se calcula el uso de VRAM.
 - Generación de texto de baja exigencia en local (resúmenes cortos, autocompletado, plantillas): viable siempre que se acepte la falta de garantías sobre calidad y licencia.
 
 ## Benchmarks y rendimiento
@@ -86,7 +86,7 @@ Frente a estas alternativas, el checkpoint analizado no aporta documentación de
 
 - Sesgos conocidos: no disponibles. Al no conocerse el corpus de entrenamiento ni el proceso de ajuste, no se puede evaluar el sesgo ni aplicar mitigaciones.
 - Riesgo de alucinación: alto y no cuantificado. No hay evaluación que permita estimar la tasa de invención de hechos.
-- Model card vacía: el repositorio usa la plantilla automática de HuggingFace con todos los campos como «More Information Needed». No hay información sobre autoría real, financiación, uso previsto ni uso fuera de alcance.
+- Model card vacía: el repositorio usa la plantilla automática de Hugging Face con todos los campos como «More Information Needed». No hay información sobre autoría real, financiación, uso previsto ni uso fuera de alcance.
 - Licencia no declarada: sin licencia explícita, el uso comercial es jurídicamente inseguro. Se debe contactar con el autor o asumir que no hay permiso concedido.
 - Idiomas no declarados: no se puede saber si el modelo genera correctamente en castellano o en cualquier otro idioma.
 - Estado experimental: 0 descargas y 0 «likes» en el momento de la consulta; no hay evidencia de que nadie haya validado el checkpoint.
@@ -97,7 +97,7 @@ Frente a estas alternativas, el checkpoint analizado no aporta documentación de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Codemaster67/Olmo-1b_token_extension_modern_molbert
+- Repositorio en Hugging Face: https://huggingface.co/Codemaster67/Olmo-1b_token_extension_modern_molbert
 - Referencia del calculador de impacto de carbono citada en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automático: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo; los resultados devueltos no guardan relación con el mismo.

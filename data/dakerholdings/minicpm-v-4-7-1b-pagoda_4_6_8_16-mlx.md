@@ -4,7 +4,7 @@
 
 MiniCPM-V-4.7-1B-pagoda_4_6_8_16-mlx es una conversion al formato MLX del modelo multimodal openbmb/MiniCPM-V-4.7-1B, publicada por el usuario dakerholdings. Se trata de una cuantizacion mixta de precision variable (receta "pagoda" / ridge_4_6_8) realizada a partir de una version GGUF F16 (MiniCPM-V-4_7-1B-F16.gguf). El modelo resuelve el problema de ejecutar un modelo de imagen-a-texto de ~1B parametros en hardware Apple Silicon con un consumo de memoria reducido y sin renunciar del todo a la calidad en las capas mas sensibles.
 
-El repositorio contiene 1.554.476.272 parametros almacenados en safetensors (1,7 GB), pero el autor aclara que el recuento real de parametros logico es de 1,01B para el modelo de lenguaje, mas una torre de vision de 548,3M parametros. La insignia automatica de "Model size" de HuggingFace tiende a infravalorar este tipo de modelos MLX porque los pesos empaquetados se guardan a menos de 8 bits por elemento.
+El repositorio contiene 1.554.476.272 parametros almacenados en safetensors (1,7 GB), pero el autor aclara que el recuento real de parametros logico es de 1,01B para el modelo de lenguaje, mas una torre de vision de 548,3M parametros. La insignia automatica de "Model size" de Hugging Face tiende a infravalorar este tipo de modelos MLX porque los pesos empaquetados se guardan a menos de 8 bits por elemento.
 
 La relevancia actual del modelo es de nicho pero clara: es una de las pocas distribuciones MLX cuantizadas de un VLM pequeno con un esquema de bits no uniforme, pensado para inferencia local en Mac mediante mlx_lm y mlx_vlm. Al proceder de MiniCPM-V 4.7, hereda la arquitectura hibrida del modelo base (con capas de mezcla tipo SSM/GDN, segun la propia descripcion de la receta de cuantizacion), aunque la model card no documenta la longitud de contexto, los idiomas soportados ni la licencia.
 
@@ -77,13 +77,13 @@ La comparativa se limita al propio modelo base y su variante GGUF porque la info
 - Limitaciones de contexto e idioma: no se documenta la longitud de contexto soportada ni la lista de idiomas. Al ser una recuantizacion del modelo base, hereda las limitaciones de este, que no se detallan aqui.
 - Restricciones de licencia: la licencia figura como "no disponible" en la ficha del repositorio. Antes de cualquier uso comercial hay que verificar la licencia del modelo base openbmb/MiniCPM-V-4.7-1B, ya que la conversion deriva de ella.
 - Compatibilidad fragil: el autor advierte de que la compatibilidad con mlx_lm y mlx_vlm depende de que estos runtimes incorporen el formato minicpmv4_7; con versiones antiguas la carga puede fallar. El propio ejemplo de generacion de la model card indica "run the command above, with a compatible version of mlx_lm".
-- Metadatos incompletos: el recuento automatico de parametros de HuggingFace infravalora el modelo (el autor lo senala explicitamente: 1,01B reales frente al badge automatico), lo que puede confundir en comparativas de tamano.
+- Metadatos incompletos: el recuento automatico de parametros de Hugging Face infravalora el modelo (el autor lo senala explicitamente: 1,01B reales frente al badge automatico), lo que puede confundir en comparativas de tamano.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin historial de uso ni validacion por parte de la comunidad.
 - Naturaleza del artefacto: es una conversion de pesos, no un modelo nuevo. No se ha reentrenado ni evaluado; cualquier perdida de calidad respecto al original proviene unicamente de la cuantizacion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dakerholdings/MiniCPM-V-4.7-1B-pagoda_4_6_8_16-mlx
+- Repositorio Hugging Face: https://huggingface.co/dakerholdings/MiniCPM-V-4.7-1B-pagoda_4_6_8_16-mlx
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Modelo base en GGUF: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf
 

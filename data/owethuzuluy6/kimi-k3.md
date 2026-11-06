@@ -4,7 +4,7 @@
 
 Kimi K3 es el modelo insignia de Moonshot AI, presentado en julio de 2026. Se trata del primer modelo abierto de la clase 3 billones de parámetros (2,8 billones en total), con una arquitectura MoE (Mixture-of-Experts) que activa solo 104 mil millones de parámetros por token gracias a 896 expertos. Incorpora innovaciones propias como Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), que mejoran la eficiencia de escalado y el manejo de contexto largo. Destaca por su ventana de contexto de 1 millón de tokens y capacidades nativas multimodales (texto, imagen y vídeo).
 
-El modelo está diseñado para tareas de codificación de largo alcance, trabajo de conocimiento agéntico y razonamiento avanzado. Su liberación con pesos abiertos bajo la licencia Kimi K3 representa un hito en el acceso a inteligencia de frontera para la comunidad de investigación y desarrollo. El repositorio en HuggingFace contiene pesos en formato safetensors, con un tamaño total de 1561 GB.
+El modelo está diseñado para tareas de codificación de largo alcance, trabajo de conocimiento agéntico y razonamiento avanzado. Su liberación con pesos abiertos bajo la licencia Kimi K3 representa un hito en el acceso a inteligencia de frontera para la comunidad de investigación y desarrollo. El repositorio en Hugging Face contiene pesos en formato safetensors, con un tamaño total de 1561 GB.
 
 ## Especificaciones técnicas
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/owethuzuluy6/Kimi-K3
+- Modelo en Hugging Face: https://huggingface.co/owethuzuluy6/Kimi-K3
 - Página oficial de Kimi K3: https://www.kimi.ai/ai-models/kimi-k3
 - Blog técnico: https://www.kimi.com/blog/kimi-k3
 - Reporte técnico completo (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

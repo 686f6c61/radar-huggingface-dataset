@@ -88,7 +88,7 @@ Solo es posible comparar variantes del mismo modelo base con los datos disponibl
 |---|---|---|---|---|---|---|
 | ddalcu/Qwen-Image-2.1-MLX-Serve-8bit | 8 bits afina, group 64 | 17,6 GB (repo) | 12,95 GB (1024x1024, 40 pasos) | 40 | Apache-2.0 | Solo en rama no fusionada de mlx-serve (PR #477) |
 | Pack de 4 bits del mismo autor | 4 bits | no disponible | 9,55 GB (1024x1024, 3 pasos) | no disponible | Apache-2.0 | Solo en rama no fusionada de mlx-serve (PR #477) |
-| Qwen/Qwen-Image-2.1 (base, sin cuantizar) | ninguna (precision original) | no disponible | no disponible | no disponible | Apache-2.0 | Publicado en HuggingFace |
+| Qwen/Qwen-Image-2.1 (base, sin cuantizar) | ninguna (precision original) | no disponible | no disponible | no disponible | Apache-2.0 | Publicado en Hugging Face |
 
 No se dispone de datos verificables de otros modelos de difusion comparables (por ejemplo alternativas de generacion de imagen en el rango de tamano equivalente) en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ No se dispone de datos verificables de otros modelos de difusion comparables (po
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/ddalcu/Qwen-Image-2.1-MLX-Serve-8bit
+- Ficha en Hugging Face: https://huggingface.co/ddalcu/Qwen-Image-2.1-MLX-Serve-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de mlx-serve: https://github.com/ddalcu/mlx-serve
 - Pull request con el soporte necesario (rama `feat/qwen-image-2.1`): https://github.com/ddalcu/mlx-serve/pull/477

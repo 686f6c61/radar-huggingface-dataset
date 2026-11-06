@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CooperBench/qwen3.5-9b-tool-use-sft
+- Hugging Face: https://huggingface.co/CooperBench/qwen3.5-9b-tool-use-sft
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.5-9B
 - Guia de despliegue de Qwen3.5-9B en hardware de consumo: https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/

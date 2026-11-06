@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos. El repositorio no incluye resultados de benchmarks ni comparaciones con OLMo-2-1B base u otros modelos de tamaño similar. Se podría comparar con el modelo base OLMo-2-1B (disponible en HuggingFace), pero no se tienen datos de rendimiento de estos checkpoints intermedios. Por tanto, la comparativa no está disponible.
+No se dispone de información suficiente para realizar una comparativa con otros modelos. El repositorio no incluye resultados de benchmarks ni comparaciones con OLMo-2-1B base u otros modelos de tamaño similar. Se podría comparar con el modelo base OLMo-2-1B (disponible en Hugging Face), pero no se tienen datos de rendimiento de estos checkpoints intermedios. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -68,8 +68,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3859b
+- Repositorio en Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3859b
 - Página oficial de OLMo (AI2): https://allenai.org/olmo
 - Página de OLMo-2 (AI2): https://allenai.org/olmo2
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo
-- Modelo base OLMo-2-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B

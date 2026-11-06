@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| shivamgupta/personaplex-hinglish-v4-lora | adaptador LoRA audio-a-audio | 253 pesos adaptados sobre base 7B | no disponible | hi, en (hinglish) | nvidia-open-model-license | publico en HuggingFace, requiere base gated |
-| nvidia/personaplex-7b-v1 | modelo base speech-to-speech full-duplex | 7B | no disponible | no disponible | nvidia-open-model-license | gated en HuggingFace |
+| shivamgupta/personaplex-hinglish-v4-lora | adaptador LoRA audio-a-audio | 253 pesos adaptados sobre base 7B | no disponible | hi, en (hinglish) | nvidia-open-model-license | publico en Hugging Face, requiere base gated |
+| nvidia/personaplex-7b-v1 | modelo base speech-to-speech full-duplex | 7B | no disponible | no disponible | nvidia-open-model-license | gated en Hugging Face |
 | Otros modelos speech-to-speech comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del adaptador ni de alternativas equivalentes en la informacion proporcionada, por lo que la comparacion se limita a tipo, licencia y disponibilidad.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento del adaptador ni de alternativas equivalen
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/shivamgupta/personaplex-hinglish-v4-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/shivamgupta/personaplex-hinglish-v4-lora
 - Modelo base: https://huggingface.co/nvidia/personaplex-7b-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/shivamgupta/hinglish-s2s-synthetic-calls
 - Monorepo de codigo: https://github.com/shivamgcodes/s2s-hinglish-agent

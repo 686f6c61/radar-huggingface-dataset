@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-ABLITERATED-NVFP4 es una versión modificada del modelo Qwen3.8-Flash-Next de Alibaba, publicada por el usuario dealignai en HuggingFace. Se trata de un build "abliterated" (eliminación de rechazos de seguridad) aplicado directamente a los pesos del modelo, sin fine-tuning ni trucos de prompt, y cuantizado a NVFP4 (precisión de 4 bits). El modelo base es un MoE multimodal de gran tamaño (119.602.003.859 parámetros según safetensors, con 6 mil millones activos por token) que soporta razonamiento en varios niveles (low, medium, xhigh), decodificación especulativa MTP y procesamiento de imagen y vídeo.
+Qwen3.8-Flash-Next-ABLITERATED-NVFP4 es una versión modificada del modelo Qwen3.8-Flash-Next de Alibaba, publicada por el usuario dealignai en Hugging Face. Se trata de un build "abliterated" (eliminación de rechazos de seguridad) aplicado directamente a los pesos del modelo, sin fine-tuning ni trucos de prompt, y cuantizado a NVFP4 (precisión de 4 bits). El modelo base es un MoE multimodal de gran tamaño (119.602.003.859 parámetros según safetensors, con 6 mil millones activos por token) que soporta razonamiento en varios niveles (low, medium, xhigh), decodificación especulativa MTP y procesamiento de imagen y vídeo.
 
 La relevancia de este modelo radica en que permite estudiar el comportamiento de un LLM sin mecanismos de rechazo, manteniendo prácticamente intactas sus capacidades generales (la pérdida en MMLU es de solo 0,18 puntos porcentuales). Está pensado exclusivamente para investigación de seguridad, red-teaming y evaluación de riesgos, y su licencia (qwen-community-license-1.0) restringe su uso comercial. La versión NVFP4 está optimizada para servir con SGLang en configuraciones tensor-parallel, por ejemplo sobre 2× NVIDIA DGX Spark (GB10).
 
@@ -81,8 +81,8 @@ La comparativa con otros MoE multimodales de la misma categoría (por ejemplo, Q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-NVFP4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-NVFP4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Versión FP8 del mismo autor: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-FP8
 - Repositorio oficial de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentación de ejecución local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next

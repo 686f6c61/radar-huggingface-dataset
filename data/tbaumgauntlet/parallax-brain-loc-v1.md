@@ -72,10 +72,10 @@ El entrenamiento usó 128 cortes anotados manualmente (data v1, Phase 10), 128 a
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parallax-brain-loc-v1 | 2B (LoRA r16) | No disponible | 32/54 IoU ≥ 0.50; IoU medio 0,527 | Apache 2.0 | HuggingFace (MLX) |
-| Qwen3-VL-2B-Instruct-4bit sin ajustar | 2B | No disponible | 9/54; IoU medio 0,227 | Apache 2.0 | HuggingFace (MLX) |
+| parallax-brain-loc-v1 | 2B (LoRA r16) | No disponible | 32/54 IoU ≥ 0.50; IoU medio 0,527 | Apache 2.0 | Hugging Face (MLX) |
+| Qwen3-VL-2B-Instruct-4bit sin ajustar | 2B | No disponible | 9/54; IoU medio 0,227 | Apache 2.0 | Hugging Face (MLX) |
 | Gemini 4 con prompting estructurado | No disponible | No disponible | 50/54; IoU medio 0,780 | Propietaria | API |
-| parallax-brain-loc-n1024 (checkpoint seleccionado) | 2B (LoRA r16) | No disponible | No disponible en la información proporcionada | Apache 2.0 | HuggingFace |
+| parallax-brain-loc-n1024 (checkpoint seleccionado) | 2B (LoRA r16) | No disponible | No disponible en la información proporcionada | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ El entrenamiento usó 128 cortes anotados manualmente (data v1, Phase 10), 128 a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-v1
+- Modelo en Hugging Face: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-v1
 - Checkpoint seleccionado: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n1024
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-VL-2B-Instruct-4bit
 - Modelo original: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

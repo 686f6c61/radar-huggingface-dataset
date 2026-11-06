@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sorAI (repositorio `Fahimehr140/sorai`) no es un modelo de lenguaje: es una coleccion de 384 redes neuronales convolucionales (CNN), una por locus, entrenadas para predecir si una muestra de helecho es diploide o poliploide a partir de lecturas de captura dirigida del panel GoFlag 408. Lo desarrolla el usuario Fahimehr140 y el codigo de acompanamiento, la cita y el clasificador de agregacion (un random forest) viven en el repositorio de GitHub `Fahimehgit/sorai`, no en HuggingFace.
+sorAI (repositorio `Fahimehr140/sorai`) no es un modelo de lenguaje: es una coleccion de 384 redes neuronales convolucionales (CNN), una por locus, entrenadas para predecir si una muestra de helecho es diploide o poliploide a partir de lecturas de captura dirigida del panel GoFlag 408. Lo desarrolla el usuario Fahimehr140 y el codigo de acompanamiento, la cita y el clasificador de agregacion (un random forest) viven en el repositorio de GitHub `Fahimehgit/sorai`, no en Hugging Face.
 
 El problema que resuelve es concreto: inferir ploidia en helechos sin recurrir a citologia o secuenciacion de genoma completo, usando datos de captura dirigida que ya se generan en muchos laboratorios. Cada fichero `checkpoints/best_model_probe_3_<index>.pt` contiene la red de un locus, y `probe_index_to_id.csv` mapea el indice del modelo al identificador de locus GoFlag. Las probabilidades de los 384 locus se combinan despues mediante un random forest externo.
 
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - El conjunto de evaluación es muy pequeno: 34 muestras held-out, lo que implica intervalos de confianza amplios alrededor del 0,765 de exactitud y del 0,870 de AUROC.
 - El modelo se entrenó únicamente con helechos; no hay evidencia de que generalice a otros grupos vegetales ni a otros paneles de captura dirigida distintos de GoFlag 408.
 - No estima numero de cromosomas: solo distingue diploide frente a poliploide. No detecta niveles intermedios ni distingue entre distintos niveles de poliploidia más allá de la clase binaria.
-- El repositorio de HuggingFace está incompleto por diseño: el random forest agregador y el código de tokenización están en GitHub, no en el Hub, por lo que los checkpoints por sí solos no producen una predicción final.
+- El repositorio de Hugging Face está incompleto por diseño: el random forest agregador y el código de tokenización están en GitHub, no en el Hub, por lo que los checkpoints por sí solos no producen una predicción final.
 - Dependencia estricta del formato de entrada: los alineamientos deben llamarse `L<probe_id>.json` y corresponder a los identificadores de `probe_index_to_id.csv`; cualquier desviación en el nombrado o en la tokenización invalida la inferencia.
 - No se documentan sesgos del modelo, composición del dataset de entrenamiento ni posibles sesgos de muestreo por especie o región geográfica, lo que impide evaluar su comportamiento fuera de la distribución de entrenamiento.
 - Riesgo de falsos positivos y falsos negativos en muestras con cobertura baja o captura desigual entre locus: el modelo no publica métricas de calibración ni umbrales de decisión recomendados.
@@ -92,6 +92,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fahimehr140/sorai
+- Repositorio en Hugging Face: https://huggingface.co/Fahimehr140/sorai
 - Código, cita y random forest agregador: https://github.com/Fahimehgit/sorai
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo en la búsqueda realizada; los resultados devueltos no guardan relación con sorAI ni con el análisis de ploidia en helechos.

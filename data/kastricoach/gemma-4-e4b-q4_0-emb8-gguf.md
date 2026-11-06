@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KasTriCoach/gemma-4-E4B-q4_0-emb8-gguf
+- Repositorio Hugging Face: https://huggingface.co/KasTriCoach/gemma-4-E4B-q4_0-emb8-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf
 - Colección oficial de cuantizaciones QAT Q4_0: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - Página del modelo Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

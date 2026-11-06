@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-Omni-Coder es un modelo publicado por el usuario Johnblick187 en HuggingFace, resultado de una fusión (merge) de dos modelos derivados de la familia Qwen3: Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated y Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated. Ambos proceden del trabajo de huihui-ai, que publica versiones "abliterated" (con los mecanismos de rechazo eliminados) de modelos de Qwen. El pipeline declarado es any-to-any, lo que apunta a un modelo multimodal de entrada y salida múltiple, y los tags indican arquitectura MoE de tipo Qwen3MoE / qwen3_omni_moe.
+Qwen3-Omni-Coder es un modelo publicado por el usuario Johnblick187 en Hugging Face, resultado de una fusión (merge) de dos modelos derivados de la familia Qwen3: Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated y Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated. Ambos proceden del trabajo de huihui-ai, que publica versiones "abliterated" (con los mecanismos de rechazo eliminados) de modelos de Qwen. El pipeline declarado es any-to-any, lo que apunta a un modelo multimodal de entrada y salida múltiple, y los tags indican arquitectura MoE de tipo Qwen3MoE / qwen3_omni_moe.
 
 El repositorio declara 35.259.818.545 parámetros totales (~35,26 B) según los pesos en safetensors, un tamaño de 182,7 GB y licencia Apache 2.0. La nomenclatura de los modelos base (A3B) sugiere una arquitectura de mezcla de expertos con aproximadamente 3 B de parámetros activos por token, aunque el autor no documenta este dato de forma explícita. Los tags incluyen safetensors y GGUF, además de marcadores de "Coder", "Abliterated" y "Uncensored".
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado para ninguno de estos modelos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johnblick187/Qwen3-Omni-Coder
+- Modelo en Hugging Face: https://huggingface.co/Johnblick187/Qwen3-Omni-Coder
 - Modelo base 1: https://huggingface.co/huihui-ai/Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated
 - Modelo base 2: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo ni sobre sus modelos base: los enlaces obtenidos correspondían a contenido musical sin relación con el tema. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales que enlazar.

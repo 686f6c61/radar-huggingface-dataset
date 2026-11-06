@@ -29,7 +29,7 @@ El interés práctico del repositorio es que empaqueta el modelo en 12 niveles d
 
 La arquitectura subyacente es la de Qwen3-4B: un transformer decoder denso con atención por grupos (GQA), normalización RMSNorm y capas FeedForward con activación SwiGLU y RoPE. Qwen3-4B se distribuye oficialmente con soporte de dos modos de razonamiento (thinking y non-thinking) conmutables, aunque no hay confirmación en este repositorio de que dichos modos se conserven tras la fusión y la abliteración. El nombre del modelo sugiere una fusión de dos versiones del mismo checkpoint (una en F32 y otra en BF16), pero la model card no documenta la metodología de merge, los pesos relativos ni el proceso concreto de abliteración aplicado.
 
-No hay información en la documentación disponible sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o RL de algún tipo. Tampoco se documenta el proceso de alineamiento inverso (identificación de la dirección de rechazo, ortogonalización de matrices de proyección, etc.). La única información técnica reproducible es el pipeline de conversión a GGUF: se declara `quantize_version: 2`, `convert_type: hf` y `output_tensor_quantised: 1`, lo que indica una conversión estándar desde pesos de HuggingFace con cuantización de tensores de salida.
+No hay información en la documentación disponible sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o RL de algún tipo. Tampoco se documenta el proceso de alineamiento inverso (identificación de la dirección de rechazo, ortogonalización de matrices de proyección, etc.). La única información técnica reproducible es el pipeline de conversión a GGUF: se declara `quantize_version: 2`, `convert_type: hf` y `output_tensor_quantised: 1`, lo que indica una conversión estándar desde pesos de Hugging Face con cuantización de tensores de salida.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/Qwen3-4B-F32-BF16-3MPER0RR-abliterated-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/Qwen3-4B-F32-BF16-3MPER0RR-abliterated-GGUF
 - Modelo de origen abliterado (autor 3MPER0RR): https://huggingface.co/3MPER0RR/Qwen3-4B-F32-BF16-3MPER0RR-abliterated
 - Perfil del cuantizador: https://huggingface.co/mradermacher
 - Modelo base Qwen3-4B (Alibaba): https://huggingface.co/Qwen/Qwen3-4B

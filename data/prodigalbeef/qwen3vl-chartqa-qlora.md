@@ -74,9 +74,9 @@ Analisis de significacion: 24 respuestas corregidas y 15 degradadas (39 cambios 
 
 | Modelo | Parametros | Contexto | ChartQA (relaxed acc.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prodigalbeef/qwen3vl-chartqa-qlora | 4B base + 14,2 M adaptador | No disponible | 85,6% (500 preguntas) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-VL-4B-Instruct (base) | 4B | No disponible | 83,8% (mismo subset, 4-bit) | Apache 2.0 | HuggingFace |
-| Otros fine-tunes de ChartQA sobre VLMs de 2-7B | Variable | Variable | No disponible | Variable | HuggingFace |
+| prodigalbeef/qwen3vl-chartqa-qlora | 4B base + 14,2 M adaptador | No disponible | 85,6% (500 preguntas) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-VL-4B-Instruct (base) | 4B | No disponible | 83,8% (mismo subset, 4-bit) | Apache 2.0 | Hugging Face |
+| Otros fine-tunes de ChartQA sobre VLMs de 2-7B | Variable | Variable | No disponible | Variable | Hugging Face |
 
 La comparativa directa con alternativas especializadas en ChartQA no esta disponible en la informacion proporcionada. La referencia mas solida es el propio modelo base sin adaptar, evaluado con identico prompt, tamano de imagen, decodificacion y subset sembrado.
 
@@ -94,10 +94,10 @@ La comparativa directa con alternativas especializadas en ChartQA no esta dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prodigalbeef/qwen3vl-chartqa-qlora
+- Modelo en Hugging Face: https://huggingface.co/prodigalbeef/qwen3vl-chartqa-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Dataset ChartQA: https://huggingface.co/datasets/HuggingFaceM4/ChartQA
-- Repositorio incluido en el modelo: scripts `scripts/infer.py`, `scripts/run_experiment.py`, `scripts/rescore.py`, `chartqa_qlora/metrics.py`, `results/report.md`, `notebooks/` (rutas relativas al repositorio de HuggingFace)
+- Repositorio incluido en el modelo: scripts `scripts/infer.py`, `scripts/run_experiment.py`, `scripts/rescore.py`, `chartqa_qlora/metrics.py`, `results/report.md`, `notebooks/` (rutas relativas al repositorio de Hugging Face)
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl
 - PEFT: https://github.com/huggingface/peft

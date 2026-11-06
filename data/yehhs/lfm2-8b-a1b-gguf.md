@@ -14,7 +14,7 @@ Este repo concreto, creado por Yehhs, aporta los pesos en GGUF para que el model
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | GGUF (variantes de cuantización no especificadas en la información) |
 | Idiomas soportados | Inglés (en), árabe (ar), chino (zh), francés (fr), alemán (de), japonés (ja), coreano (ko), español (es) |
-| Licencia | LFM 1.0 (licencia `other` según HuggingFace) |
+| Licencia | LFM 1.0 (licencia `other` según Hugging Face) |
 | Formato de pesos | GGUF (este repo); safetensors en el modelo base LiquidAI/LFM2-8B-A1B |
 
 ## Arquitectura y entrenamiento
@@ -46,7 +46,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - VRAM estimada: no disponible. El tamaño del repositorio GGUF es de 48.1 GB, lo que sugiere que incluye múltiples variantes de cuantización, pero no se especifica la VRAM por archivo.
 - GPU recomendadas: no disponible.
 - Las variantes cuantizadas del modelo están diseñadas para ejecutarse en dispositivos de gama alta: teléfonos, tablets y portátiles, según el README.
-- Opciones de despliegue: llama.cpp (uso directo con `llama-cli -hf LiquidAI/LFM2-8B-A1B-GGUF`), Ollama y otras herramientas compatibles con el formato GGUF. El modelo también está etiquetado como `endpoints_compatible` en HuggingFace.
+- Opciones de despliegue: llama.cpp (uso directo con `llama-cli -hf LiquidAI/LFM2-8B-A1B-GGUF`), Ollama y otras herramientas compatibles con el formato GGUF. El modelo también está etiquetado como `endpoints_compatible` en Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smai-a4-cifar10-mlp-iocnn es un repositorio de HuggingFace publicado por el usuario Goomba123 que contiene dos clasificadores totalmente conectados entrenados sobre CIFAR-10, en el marco de la asignatura SMAI (Assignment 4, parte 1.5). Los modelos comparten exactamente la misma anchura de capas (3072-256-128-64-10) y se diferencian en la funcion de activacion de las capas ocultas y en una restriccion arquitectonica: el MLP usa ReLU sin restricciones, mientras que el IOC-NN (Input-Output Convex Neural Network) impone pesos no negativos a partir de la primera capa y usa ELU.
+smai-a4-cifar10-mlp-iocnn es un repositorio de Hugging Face publicado por el usuario Goomba123 que contiene dos clasificadores totalmente conectados entrenados sobre CIFAR-10, en el marco de la asignatura SMAI (Assignment 4, parte 1.5). Los modelos comparten exactamente la misma anchura de capas (3072-256-128-64-10) y se diferencian en la funcion de activacion de las capas ocultas y en una restriccion arquitectonica: el MLP usa ReLU sin restricciones, mientras que el IOC-NN (Input-Output Convex Neural Network) impone pesos no negativos a partir de la primera capa y usa ELU.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto academico de vision por computador para clasificacion de imagenes de 32x32x3 en 10 clases. El repositorio pesa 0.0 GB, no registra descargas ni likes, y los pesos se distribuyen en formato NumPy `.npz` en lugar de safetensors o GGUF, lo que limita su uso directo en frameworks de inferencia estandar.
 
@@ -67,8 +67,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible 
 
 | Modelo | Parametros | Contexto | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MLP (este repo) | 3072-256-128-64-10 | no aplica | 0.4832 | no disponible | HuggingFace |
-| IOC-NN (este repo) | 3072-256-128-64-10 | no aplica | 0.4714 | no disponible | HuggingFace |
+| MLP (este repo) | 3072-256-128-64-10 | no aplica | 0.4832 | no disponible | Hugging Face |
+| IOC-NN (este repo) | 3072-256-128-64-10 | no aplica | 0.4714 | no disponible | Hugging Face |
 | CNN / ResNet sobre CIFAR-10 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de alternativas en la informacion proporcionada, por lo que la comparativa cuantitativa con otros modelos queda como no disponible.
@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Goomba123/smai-a4-cifar10-mlp-iocnn
+- Repositorio Hugging Face: https://huggingface.co/Goomba123/smai-a4-cifar10-mlp-iocnn
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado en la busqueda web papers, blogs, repos adicionales ni demos asociados a este modelo.

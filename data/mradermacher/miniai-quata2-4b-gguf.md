@@ -25,7 +25,7 @@ En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 li
 
 No se dispone de informacion sobre la arquitectura del modelo base M1n1A1/MiniAI-Quata2-4b: la model card del repositorio GGUF no incluye detalles sobre tipo de transformer, atencion, mecanismo de mezcla de expertos, estado recurrente ni ninguna otra innovacion estructural. Tampoco se indica si emplea atencion lineal, decodificacion especulativa u otras tecnicas de optimizacion.
 
-Respecto al entrenamiento, no hay datos sobre numero de tokens, composicion del dataset, uso de RLHF, DPO u otro tipo de ajuste por preferencias. La unica informacion tecnica verificable es el proceso de conversion: se trata de cuantizaciones estaticas en formato GGUF derivadas de pesos convertidos desde el formato original de HuggingFace (convert_type hf), con version de cuantizacion 2. La generacion de estas cuantizaciones es responsabilidad de mradermacher, no del autor del modelo base.
+Respecto al entrenamiento, no hay datos sobre numero de tokens, composicion del dataset, uso de RLHF, DPO u otro tipo de ajuste por preferencias. La unica informacion tecnica verificable es el proceso de conversion: se trata de cuantizaciones estaticas en formato GGUF derivadas de pesos convertidos desde el formato original de Hugging Face (convert_type hf), con version de cuantizacion 2. La generacion de estas cuantizaciones es responsabilidad de mradermacher, no del autor del modelo base.
 
 ## Capacidades
 

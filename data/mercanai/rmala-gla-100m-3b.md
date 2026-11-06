@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks comparables proporcionados en la informacio
 
 | Modelo | Parametros | Contexto | PPL/BPB de test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rmala-gla-100m-3b | 100.465.280 | 2048 | 25,561380 / 1,321054 | no disponible | HuggingFace (repo propio, loader custom) |
+| rmala-gla-100m-3b | 100.465.280 | 2048 | 25,561380 / 1,321054 | no disponible | Hugging Face (repo propio, loader custom) |
 | Alternativas de ~100M | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,8 +95,8 @@ No se dispone de datos de benchmarks comparables proporcionados en la informacio
 
 ## Enlaces
 
-- HuggingFace (MercanAI): https://huggingface.co/MercanAI/rmala-gla-100m-3b
-- Espejo en HuggingFace (Ethosoft): https://huggingface.co/Ethosoft/rmala-gla-100m-3b
+- Hugging Face (MercanAI): https://huggingface.co/MercanAI/rmala-gla-100m-3b
+- Espejo en Hugging Face (Ethosoft): https://huggingface.co/Ethosoft/rmala-gla-100m-3b
 - Archivos de referencia citados en la model card: evaluation.json, LM100_PROTOCOL.md, training_config.json, THIRD_PARTY_NOTICES.md, inference.py, requirements.txt (incluidos en el repositorio, no enlazados directamente)
 - Codigo de referencia de GatedDeltaNet/cache (HoLA): citado como implementacion oficial "pinned", sin URL explicita en la informacion disponible
 - Paper o blog: no disponible en la informacion proporcionada

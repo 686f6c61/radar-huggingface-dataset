@@ -99,7 +99,7 @@ La comparacion de rendimiento entre este modelo y las alternativas no esta dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j-llm/qwen3-8b-novllm-gguf
+- Modelo en Hugging Face: https://huggingface.co/j-llm/qwen3-8b-novllm-gguf
 - Adaptador LoRA de origen: https://huggingface.co/j-llm/novllm-lora-8b-novel
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Repositorio de llama.cpp (conversion, cuantizacion e inferencia): https://github.com/ggml-org/llama.cpp

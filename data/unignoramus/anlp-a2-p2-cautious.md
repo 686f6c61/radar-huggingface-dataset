@@ -93,7 +93,7 @@ La comparación de rendimiento con estas alternativas no es significativa: los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unignoramus/anlp-a2-p2-cautious
+- Modelo en Hugging Face: https://huggingface.co/unignoramus/anlp-a2-p2-cautious
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Repositorio acompañante con la definición del transformer: referenciado en la model card, enlace no publicado en la información disponible
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo, a su paper o a su repositorio; los resultados devueltos corresponden a aplicaciones Android de auto-clicker sin relación con el modelo.

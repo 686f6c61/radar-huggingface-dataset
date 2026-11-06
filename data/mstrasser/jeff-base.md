@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeff-base v1.4 | 852.985.920 | No disponible | Clasificación/decisión calibrada | Apache-2.0 | HuggingFace (`mstrasser/jeff-base`) |
-| Qwen3.5-0.8B (base) | ~0,8 mil millones | No disponible | Generación de texto | Apache-2.0 | HuggingFace (`Qwen/Qwen3.5-0.8B`) |
+| Jeff-base v1.4 | 852.985.920 | No disponible | Clasificación/decisión calibrada | Apache-2.0 | Hugging Face (`mstrasser/jeff-base`) |
+| Qwen3.5-0.8B (base) | ~0,8 mil millones | No disponible | Generación de texto | Apache-2.0 | Hugging Face (`Qwen/Qwen3.5-0.8B`) |
 | Modelos generativos pequeños de la misma familia | No disponible | No disponible | Generación de texto | No disponible | No disponible |
 
 La comparación directa con alternativas de clasificación zero-shot de propósito general no está disponible en la información proporcionada. La diferencia funcional clave frente a Qwen3.5-0.8B es que Jeff no genera texto: devuelve probabilidades sobre opciones, lo que cambia el perfil de latencia y de integración.
@@ -82,7 +82,7 @@ La comparación directa con alternativas de clasificación zero-shot de propósi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mstrasser/jeff-base
+- Modelo en Hugging Face: https://huggingface.co/mstrasser/jeff-base
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Catálogo, resultados y documentación: https://jeffhub.ai
 - Código, servidor y SDKs: https://github.com/firelex/jeff

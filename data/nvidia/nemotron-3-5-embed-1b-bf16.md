@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Embed-1B-BF16 | 1,55B | 32.768 tokens | Texto e imagen | OpenMDW-1.1 | HuggingFace (BF16) y variante NVFP4 |
-| Nemotron-3.5-Embed-8B-BF16 | 8B (aproximado, segun nombre) | no disponible | Texto e imagen | OpenMDW-1.1 (segun familia) | HuggingFace; es el maestro de destilacion del modelo 1B |
-| Nemotron-3-Embed-1B-BF16 | 1B (aproximado, segun nombre) | no disponible | Solo texto | no disponible | HuggingFace; comparte espacio de embeddings de texto con el modelo 1B multimodal |
-| Ministral-3-3B-Instruct-2512-BF16 | 3B (aproximado, segun nombre) | no disponible | Modelo generativo multimodal (base del encoder de vision) | Apache 2.0 | HuggingFace |
+| Nemotron-3.5-Embed-1B-BF16 | 1,55B | 32.768 tokens | Texto e imagen | OpenMDW-1.1 | Hugging Face (BF16) y variante NVFP4 |
+| Nemotron-3.5-Embed-8B-BF16 | 8B (aproximado, segun nombre) | no disponible | Texto e imagen | OpenMDW-1.1 (segun familia) | Hugging Face; es el maestro de destilacion del modelo 1B |
+| Nemotron-3-Embed-1B-BF16 | 1B (aproximado, segun nombre) | no disponible | Solo texto | no disponible | Hugging Face; comparte espacio de embeddings de texto con el modelo 1B multimodal |
+| Ministral-3-3B-Instruct-2512-BF16 | 3B (aproximado, segun nombre) | no disponible | Modelo generativo multimodal (base del encoder de vision) | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,11 +89,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Licencia OpenMDW-1.1: permite uso comercial y no comercial, pero es una licencia propia de NVIDIA que debe revisarse antes de integrarla en productos regulados. Los modelos base Ministral estan bajo Apache 2.0, lo que anade una capa adicional de condiciones.
 - El componente de lenguaje se mantuvo congelado durante la destilacion, por lo que las mejoras respecto a Nemotron-3-Embed-1B-BF16 se concentran en la parte visual; la calidad de recuperacion textual es heredada.
 - La resolucion de imagen ampliada a 1540 px aumenta el coste de computo de forma significativa; hay que equilibrar precision y latencia en produccion.
-- Fechas y disponibilidad: la model card indica lanzamiento en HuggingFace el 20/10/2026, con creacion del repositorio el 07/10/2026 y ultima actualizacion el 16/10/2026. Verificar la version vigente antes de desplegar.
+- Fechas y disponibilidad: la model card indica lanzamiento en Hugging Face el 20/10/2026, con creacion del repositorio el 07/10/2026 y ultima actualizacion el 16/10/2026. Verificar la version vigente antes de desplegar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
 - Variante NVFP4: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-NVFP4
 - Variante 8B BF16: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
 - Modelo base de texto: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16

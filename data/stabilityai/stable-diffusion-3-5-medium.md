@@ -4,7 +4,7 @@
 
 Stable Diffusion 3.5 Medium es un modelo de generación de imágenes de texto a imagen desarrollado por Stability AI, lanzado el 29 de octubre de 2024 como parte de la familia Stable Diffusion 3.5. Con aproximadamente 2.500 millones de parámetros, se posiciona como la variante de tamaño medio dentro de la serie, complementando a Stable Diffusion 3.5 Large y Large Turbo. El modelo está diseñado para ofrecer un equilibrio entre calidad de generación y requisitos computacionales, siendo accesible para usuarios con hardware de consumo.
 
-La arquitectura se basa en un modelo de difusión multimodal que integra un transformer y codificadores de texto, permitiendo interpretar instrucciones complejas y generar imágenes de alta calidad con una fidelidad notable al prompt. El modelo está disponible bajo la licencia Stability AI Community, que permite uso comercial bajo ciertas condiciones, y requiere aceptar términos de uso en HuggingFace debido a su acceso restringido. Su relevancia actual radica en ser una de las opciones de código abierto más competitivas para generación de imágenes, con un tamaño moderado que facilita su despliegue.
+La arquitectura se basa en un modelo de difusión multimodal que integra un transformer y codificadores de texto, permitiendo interpretar instrucciones complejas y generar imágenes de alta calidad con una fidelidad notable al prompt. El modelo está disponible bajo la licencia Stability AI Community, que permite uso comercial bajo ciertas condiciones, y requiere aceptar términos de uso en Hugging Face debido a su acceso restringido. Su relevancia actual radica en ser una de las opciones de código abierto más competitivas para generación de imágenes, con un tamaño moderado que facilita su despliegue.
 
 ## Especificaciones técnicas
 
@@ -52,22 +52,22 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada: no disponible. Dado el tamaño del modelo (2.5B parámetros) y el formato de pesos (safetensors, 36.3 GB en repositorio), se estima que la inferencia requiere al menos 8-12 GB de VRAM para una resolución de 1024×1024, aunque no hay datos oficiales.
 - GPU recomendadas: no disponible. Por tamaño, se podría ejecutar en GPUs de consumo como RTX 3090/4090 (24 GB) o en GPUs de datacenter como A10/A100.
 - Consumer GPU: probablemente sí, en GPUs de 24 GB o más, aunque no está confirmado oficialmente.
-- Opciones de despliegue: compatible con la librería diffusers de HuggingFace, lo que permite su uso con herramientas como Automatic1111, ComfyUI o pipelines personalizados en Python.
+- Opciones de despliegue: compatible con la librería diffusers de Hugging Face, lo que permite su uso con herramientas como Automatic1111, ComfyUI o pipelines personalizados en Python.
 - Latencia y throughput: no disponible. Depende del hardware y la configuración de pasos de difusión.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stable Diffusion 3.5 Medium | 2.5B | 1024×1024 | stabilityai-ai-community | Gated en HuggingFace |
-| Stable Diffusion 3.5 Large | 8B (aprox.) | 1024×1024 | stabilityai-ai-community | Gated en HuggingFace |
+| Stable Diffusion 3.5 Medium | 2.5B | 1024×1024 | stabilityai-ai-community | Gated en Hugging Face |
+| Stable Diffusion 3.5 Large | 8B (aprox.) | 1024×1024 | stabilityai-ai-community | Gated en Hugging Face |
 | Stable Diffusion XL (SDXL) | 3.5B | 1024×1024 | MIT (no es exacto) | Abierto |
 
 Nota: los datos de SD3.5 Large y SDXL son aproximados y se basan en información pública conocida, pero no se han verificado en la información proporcionada. La comparación no es exhaustiva.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar los términos de la licencia Stability AI Community en HuggingFace, lo que puede suponer un obstáculo para uso automatizado.
+- Acceso restringido: requiere aceptar los términos de la licencia Stability AI Community en Hugging Face, lo que puede suponer un obstáculo para uso automatizado.
 - Licencia comunitaria: aunque permite uso comercial, tiene condiciones específicas (si la empresa tiene más de 1M de ingresos anuales, se necesita una licencia Enterprise de Stability AI). Revisar los términos completos.
 - Idioma: solo soporta inglés de forma nativa; los prompts en otros idiomas pueden degradar la calidad.
 - Riesgo de alucinación visual: puede generar artefactos o imágenes irrelevantes si el prompt es ambiguo o contiene conceptos complejos.
@@ -77,7 +77,7 @@ Nota: los datos de SD3.5 Large y SDXL son aproximados y se basan en información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
+- Hugging Face: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - Anuncio oficial de Stability AI: https://stability.ai/news-updates/introducing-stable-diffusion-3-5
 - Repositorio GitHub de referencia: https://github.com/Stability-AI/sd3.5
 
@@ -85,7 +85,7 @@ La información sobre arquitectura, entrenamiento y benchmarks es limitada en la
 
 Stable Diffusion 3.5 Medium es un modelo de generación de imágenes de texto a imagen desarrollado por Stability AI, lanzado el 29 de octubre de 2024 como parte de la familia Stable Diffusion 3.5. Con aproximadamente 2.500 millones de parámetros, se posiciona como la variante de tamaño medio de la familia, complementando a Stable Diffusion 3.5 Large y Large Turbo. El modelo está diseñado para ofrecer un equilibrio entre calidad de generación y requisitos computacionales, siendo viable para hardware de consumo moderado.
 
-La arquitectura se basa en un modelo de difusión latente con transformer, que integra codificadores de texto para generar imágenes de alta fidelidad a partir de descripciones textuales. El modelo está disponible bajo la licencia Stability AI Community, que permite uso comercial bajo ciertas condiciones, y requiere aceptar términos de acceso en HuggingFace. Su relevancia radica en ser una de las opciones de código abierto más competitivas para generación de imagen, con soporte para resoluciones de 1024×1024 y un tamaño moderado que facilita su despliegue.
+La arquitectura se basa en un modelo de difusión latente con transformer, que integra codificadores de texto para generar imágenes de alta fidelidad a partir de descripciones textuales. El modelo está disponible bajo la licencia Stability AI Community, que permite uso comercial bajo ciertas condiciones, y requiere aceptar términos de acceso en Hugging Face. Su relevancia radica en ser una de las opciones de código abierto más competitivas para generación de imagen, con soporte para resoluciones de 1024×1024 y un tamaño moderado que facilita su despliegue.
 
 ## Especificaciones técnicas
 
@@ -140,15 +140,15 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stable Diffusion 3.5 Medium | 2.5B | 1024×1024 | stabilityai-ai-community | Gated en HuggingFace |
-| Stable Diffusion 3.5 Large | 8B (aprox.) | 1024×1024 | stabilityai-ai-community | Gated en HuggingFace |
-| Stable Diffusion XL (SDXL) | 3.5B | 1024×1024 | Apache 2.0 (no es exacto) | Abierto en HuggingFace |
+| Stable Diffusion 3.5 Medium | 2.5B | 1024×1024 | stabilityai-ai-community | Gated en Hugging Face |
+| Stable Diffusion 3.5 Large | 8B (aprox.) | 1024×1024 | stabilityai-ai-community | Gated en Hugging Face |
+| Stable Diffusion XL (SDXL) | 3.5B | 1024×1024 | Apache 2.0 (no es exacto) | Abierto en Hugging Face |
 
 Nota: los datos de SD3.5 Large y SDXL son aproximados y no se han verificado en la información proporcionada. La comparación no es exhaustiva y se basa en conocimientos generales del sector.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar los términos de la licencia Stability AI Community en HuggingFace, lo que puede suponer un obstáculo para uso automatizado.
+- Acceso restringido: el modelo requiere aceptar los términos de la licencia Stability AI Community en Hugging Face, lo que puede suponer un obstáculo para uso automatizado.
 - Licencia con condiciones: la licencia permite uso comercial solo si la empresa tiene ingresos anuales inferiores a 1 millón de dólares; en caso contrario, se requiere una licencia Enterprise de Stability AI. Revisar los términos completos antes de uso comercial.
 - Idioma limitado: el modelo está entrenado principalmente en inglés; los prompts en otros idiomas pueden degradar la calidad de las imágenes generadas.
 - Riesgo de alucinación visual: puede generar artefactos o imágenes incorrectas cuando el prompt es ambiguo o contiene conceptos complejos.
@@ -158,7 +158,7 @@ Nota: los datos de SD3.5 Large y SDXL son aproximados y no se han verificado en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
+- Hugging Face: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - Anuncio oficial de Stability AI: https://stability.ai/news-updates/introducing-stable-diffusion-3-5
 - Repositorio GitHub de referencia: https://github.com/Stability-AI/sd3.5
 - Paper asociado (arXiv:2403.03206): no se ha confirmado el enlace directo en las fuentes consultadas.

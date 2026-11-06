@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador en GGUF: https://huggingface.co/Hawary365/llama-3.1-8b-genre-lora-F32-GGUF
+- Repositorio Hugging Face del adaptador en GGUF: https://huggingface.co/Hawary365/llama-3.1-8b-genre-lora-F32-GGUF
 - Adaptador original en safetensors: https://huggingface.co/Hawary365/llama-3.1-8b-genre-lora
 - Modelo base del adaptador: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Espacio GGUF-my-lora de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-lora

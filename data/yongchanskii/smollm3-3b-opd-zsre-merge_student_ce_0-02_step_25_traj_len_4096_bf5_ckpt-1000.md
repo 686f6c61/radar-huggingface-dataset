@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096_bf5_ckpt-1000` es un modelo de lenguaje de 3.075 millones de parámetros (aproximadamente 3,07B) publicado en HuggingFace por el usuario `yongchanskii`. Su nombre sugiere que se basa en la familia SmolLM3 de HuggingFace, aunque no hay confirmación explícita en la información disponible. El identificador incluye referencias a técnicas como OPD (Online Preference Distillation) y ZSRE (Zero-Shot Relation Extraction), lo que indica que probablemente sea un fine-tuning o un merge experimental orientado a mejorar la capacidad de razonamiento o extracción de relaciones. Sin embargo, la model card es una plantilla automática sin datos técnicos concretos, por lo que la mayor parte de la información relevante no está disponible.
+El modelo `yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096_bf5_ckpt-1000` es un modelo de lenguaje de 3.075 millones de parámetros (aproximadamente 3,07B) publicado en Hugging Face por el usuario `yongchanskii`. Su nombre sugiere que se basa en la familia SmolLM3 de Hugging Face, aunque no hay confirmación explícita en la información disponible. El identificador incluye referencias a técnicas como OPD (Online Preference Distillation) y ZSRE (Zero-Shot Relation Extraction), lo que indica que probablemente sea un fine-tuning o un merge experimental orientado a mejorar la capacidad de razonamiento o extracción de relaciones. Sin embargo, la model card es una plantilla automática sin datos técnicos concretos, por lo que la mayor parte de la información relevante no está disponible.
 
 El modelo está registrado para la tarea de generación de texto, con pipeline `text-generation`, y se distribuye en formato `safetensors` dentro del ecosistema `transformers`. Fue creado el 14 de agosto de 2026 y actualizado el mismo día. No tiene descargas ni likes, lo que sugiere que es un experimento reciente o poco difundido. La licencia y los idiomas soportados no están declarados. Dada la escasez de datos, esta ficha se basa únicamente en la información pública del repositorio y no puede confirmar capacidades ni rendimiento reales.
 
@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096_bf5_ckpt-1000
+- Repositorio en Hugging Face: https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096_bf5_ckpt-1000
 
 No se han encontrado otros enlaces (papers, blogs, demos) en la informacion proporcionada.

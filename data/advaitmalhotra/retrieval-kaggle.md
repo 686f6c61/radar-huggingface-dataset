@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`advaitmalhotra/retrieval-kaggle` es un prototipo de investigación publicado en HuggingFace por el usuario advaitmalhotra bajo licencia MIT. Se presenta como una implementación propia de la arquitectura ALBEF (Align Before Fuse) orientada a tareas de recuperación (retrieval), presumiblemente recuperación multimodal texto-imagen dado el linaje de ALBEF, aunque la model card no especifica la modalidad concreta ni el idioma. El repositorio incluye un script Python ejecutable (`predict.py`), un `config.json`, un `training_args.json` y un checkpoint `model.safetensors`.
+`advaitmalhotra/retrieval-kaggle` es un prototipo de investigación publicado en Hugging Face por el usuario advaitmalhotra bajo licencia MIT. Se presenta como una implementación propia de la arquitectura ALBEF (Align Before Fuse) orientada a tareas de recuperación (retrieval), presumiblemente recuperación multimodal texto-imagen dado el linaje de ALBEF, aunque la model card no especifica la modalidad concreta ni el idioma. El repositorio incluye un script Python ejecutable (`predict.py`), un `config.json`, un `training_args.json` y un checkpoint `model.safetensors`.
 
 El dato más relevante para cualquier evaluador es que el checkpoint incluye únicamente 24.832 parámetros totales, una cifra que contradice la etiqueta "xlarge" declarada en la model card y que apunta a un artefacto de inicialización para pruebas de humo (smoke tests), no a un modelo entrenado. El propio autor indica explícitamente que el checkpoint "no se presenta como un checkpoint entrenado con benchmarks" y que no se reclama ninguna puntuación de rendimiento. El tamaño del repositorio es de 0,0 GB.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| advaitmalhotra/retrieval-kaggle | ALBEF (custom) | 24.832 (checkpoint de inicialización) | no disponible | No | MIT | HuggingFace |
+| advaitmalhotra/retrieval-kaggle | ALBEF (custom) | 24.832 (checkpoint de inicialización) | no disponible | No | MIT | Hugging Face |
 | ALBEF (Salesforce) | Vision-language con fusión cross attention | ~210M (base) / ~310M (large) | no disponible | Sí | BSD-3-Clause (según release original) | Repos oficiales y checkpoints públicos |
-| CLIP (OpenAI) | Dual encoder contrastivo | ~150M a ~400M+ según variante | 77 tokens de texto | Sí | MIT para los pesos publicados | HuggingFace, repos oficiales |
-| BLIP (Salesforce) | Vision-language con bootstrapping | ~224M a ~385M según variante | no disponible | Sí | BSD-3-Clause (según release original) | HuggingFace, repos oficiales |
+| CLIP (OpenAI) | Dual encoder contrastivo | ~150M a ~400M+ según variante | 77 tokens de texto | Sí | MIT para los pesos publicados | Hugging Face, repos oficiales |
+| BLIP (Salesforce) | Vision-language con bootstrapping | ~224M a ~385M según variante | no disponible | Sí | BSD-3-Clause (según release original) | Hugging Face, repos oficiales |
 
 La comparación es orientativa: los tres modelos alternativos son artefactos entrenados y evaluados, mientras que el repositorio analizado es un esqueleto de código con un checkpoint de inicialización. No se dispone de métricas comparables para `retrieval-kaggle`.
 
@@ -89,7 +89,7 @@ La comparación es orientativa: los tres modelos alternativos son artefactos ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/advaitmalhotra/retrieval-kaggle
+- Hugging Face: https://huggingface.co/advaitmalhotra/retrieval-kaggle
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura ALBEF (Align before Fuse): no incluido en la información proporcionada; se recomienda consultar la publicación original de Salesforce si se desea reproducir el diseño completo.
 - Dataset de evaluación sugerido por el autor (Flickr30k): no se proporciona enlace en la model card.

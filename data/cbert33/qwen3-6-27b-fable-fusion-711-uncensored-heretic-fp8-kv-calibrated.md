@@ -57,7 +57,7 @@ El unico dato de rendimiento mencionado es la puntuacion ARC-C, que segun el aut
 - VRAM estimada para inferencia: el modelo en FP8 ocupa aproximadamente 27.8 GB de memoria de pesos. Con cache FP8, la VRAM total necesaria puede reducirse considerablemente en comparacion con BF16. Para una inferencia completa en FP8 se estima un minimo de 28-30 GB de VRAM, mientras que en BF16 se necesitan unos 56 GB.
 - GPU recomendadas: para FP8, se recomiendan GPUs con soporte FP8, como NVIDIA RTX 4090 (24 GB), RTX 6000 Ada (48 GB) o A100/H100 (40/80 GB). Para BF16, se necesitan GPUs con 48 GB o mas, como A100 de 80 GB o RTX 8000.
 - En consumer GPU: cabe en una RTX 4090 en FP8 con cuantizacion adicional (por ejemplo, con llama.cpp y cuantizacion Q4_K_M), aunque el modelo base ya ofrece quants GGUF de 4 bits en el repositorio del autor original.
-- Opciones de despliegue: se puede usar con llama.cpp, Ollama, vLLM, TensorRT-LLM o el propio framework de HuggingFace Transformers. Para FP8 KV, se requiere soporte del backend (por ejemplo, vLLM con FP8 KV cache).
+- Opciones de despliegue: se puede usar con llama.cpp, Ollama, vLLM, TensorRT-LLM o el propio framework de Hugging Face Transformers. Para FP8 KV, se requiere soporte del backend (por ejemplo, vLLM con FP8 KV cache).
 - Latencia y throughput: no se dispone de datos estimados en la informacion proporcionada.
 
 ## Comparativa con modelos similares

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kimi000/Flux3-Klein-4Step-Raw2Q-2000",
+  "slug": "kimi000-flux3-klein-4step-raw2q-2000",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/Flux3-Klein-4Step-Raw2Q-2000",
+  "created_at": "2026-11-04T02:20:07.000Z",
+  "updated_at": "2026-11-04T02:43:33.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "custom-pipeline",
+    "flux3",
+    "text-to-image",
+    "distilled",
+    "raw2q",
+    "base_model:black-forest-labs/flux-3-image-klein",
+    "base_model:finetune:black-forest-labs/flux-3-image-klein",
+    "license:other",
+    "diffusers:Flux3FourStepPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 5548681984,
+  "parameters_human": "5.55B",
+  "storage_bytes": 20312036256,
+  "storage_human": "20.3 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kimi000/Flux3-Klein-4Step-Raw2Q-2000 at main - Hugging Face",
+      "url": "https://huggingface.co/kimi000/Flux3-Klein-4Step-Raw2Q-2000/tree/main",
+      "snippet": "Instructions to use kimi000/Flux3-Klein-4Step-Raw2Q-2000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use kimi000/Flux3-Klein-4Step-Raw2Q-2000 with Diffusers:"
+    },
+    {
+      "title": "kimi000/Flux3-Klein-4Step-Raw2Q-2000 · Hugging Face",
+      "url": "https://huggingface.co/kimi000/Flux3-Klein-4Step-Raw2Q-2000",
+      "snippet": "Standalone Diffusers-format, merged EMA export of the relative1/raw2q experiment at exactly 2000 optimizer updates. This is a separate experiment from kimi000/Flux3-Klein-4Step-2000; weights and scheduler settings differ."
+    }
+  ]
+}

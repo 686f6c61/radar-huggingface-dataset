@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trustlens-aspects es un modelo de clasificacion de texto publicado en HuggingFace por el usuario Mahendra99ar, identificado en sus etiquetas como basado en BERT y exportado a ONNX para su ejecucion con Transformers.js. Forma parte del proyecto TrustLens, cuyo objetivo declarado es doble: detectar resenas de productos escritas por IA y resumir la opinion genuina de los usuarios desglosada por aspectos (por ejemplo, calidad, precio o envio).
+trustlens-aspects es un modelo de clasificacion de texto publicado en Hugging Face por el usuario Mahendra99ar, identificado en sus etiquetas como basado en BERT y exportado a ONNX para su ejecucion con Transformers.js. Forma parte del proyecto TrustLens, cuyo objetivo declarado es doble: detectar resenas de productos escritas por IA y resumir la opinion genuina de los usuarios desglosada por aspectos (por ejemplo, calidad, precio o envio).
 
 El modelo esta pensado para inferencia en el navegador: el repositorio incluye una version cuantizada a INT8 (`onnx/model_quantized.onnx`), lo que permite ejecutarlo en cliente sin backend, con un peso de repositorio de 0,2 GB. Esto lo situa en la categoria de clasificadores ligeros orientados a despliegue edge, no en la de modelos generativos de gran tamano.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Mahendra99ar/trustlens-aspects | no disponible (BERT segun etiquetas) | no disponible | Clasificacion de resenas y deteccion de texto IA | no disponible | ONNX (INT8) |
 | distilbert-base-uncased-finetuned-sst-2-english | ~66 M | 512 tokens | Clasificacion de sentimiento (SST-2) | Apache-2.0 | safetensors |
-| Clasificadores BERT/RoBERTa de resenas en HuggingFace | variable (tipicamente 110-125 M) | 512 tokens (habitual) | Sentimiento o clasificacion de resenas | variable segun autor | safetensors, ONNX |
+| Clasificadores BERT/RoBERTa de resenas en Hugging Face | variable (tipicamente 110-125 M) | 512 tokens (habitual) | Sentimiento o clasificacion de resenas | variable segun autor | safetensors, ONNX |
 
 Nota: no se dispone de resultados de benchmarks del modelo analizado, por lo que la comparacion se limita a aspectos estructurales y de licencia; no se puede establecer una comparacion de rendimiento con cifras. Los datos de los modelos alternativos corresponden a informacion publica general de sus respectivas fichas y deben verificarse en la fuente original antes de usarse.
 
@@ -84,7 +84,7 @@ Nota: no se dispone de resultados de benchmarks del modelo analizado, por lo que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mahendra99ar/trustlens-aspects
+- Hugging Face: https://huggingface.co/Mahendra99ar/trustlens-aspects
 - Ficheros de evaluacion referenciados en la model card (dentro del repositorio): `metrics.json` y `export_report.json`
 - Fichero de pesos cuantizado: `onnx/model_quantized.onnx`
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al proyecto TrustLens ni a documentacion tecnica asociada; los resultados devueltos no guardan relacion con el modelo.

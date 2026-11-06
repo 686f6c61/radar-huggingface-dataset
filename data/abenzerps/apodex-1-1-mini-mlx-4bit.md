@@ -63,12 +63,12 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 - Requiere hardware Apple silicon; no es portable a entornos con GPUs convencionales sin una conversion adicional a otro formato (por ejemplo, GGUF o FP16).
 - No se han publicado datos sobre sesgos, alucinaciones o rendimiento en tareas especificas; se recomienda validar en el dominio de uso antes de desplegar en produccion.
 - La licencia Apache 2.0 permite uso comercial, pero se deben mantener las atribuciones originales y los avisos de licencia.
-- El numero de parametros mostrado en HuggingFace (5,4 mil millones) puede inducir a error; corresponde a tensores empaquetados, no al tamano real del modelo (35,95 mil millones).
+- El numero de parametros mostrado en Hugging Face (5,4 mil millones) puede inducir a error; corresponde a tensores empaquetados, no al tamano real del modelo (35,95 mil millones).
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/abenzerps/Apodex-1.1-mini-MLX-4bit
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/abenzerps/Apodex-1.1-mini-MLX-4bit
 - Modelo base original: https://huggingface.co/apodex/Apodex-1.1-mini
-- Organizacion Apodex en HuggingFace: https://huggingface.co/apodex
+- Organizacion Apodex en Hugging Face: https://huggingface.co/apodex
 - Sitio web oficial de Apodex: https://www.apodex.com/ y https://www.apodex.ai/
 - GitHub de Apodex (incluye AgentHarness, harness de evaluacion): https://github.com/ApodexAI

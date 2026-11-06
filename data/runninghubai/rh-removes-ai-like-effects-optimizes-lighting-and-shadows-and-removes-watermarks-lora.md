@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA comparables ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-removes-ai-like-effects-optimizes-lighting-and-shadows-and-removes-watermarks-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-removes-ai-like-effects-optimizes-lighting-and-shadows-and-removes-watermarks-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2075149900748247041
 - Pagina de autor en RunningHub: https://www.runninghub.ai/user-center/1861730580185710594
 - Plataforma RunningHub: https://www.runninghub.ai

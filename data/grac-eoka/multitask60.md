@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grac-eoka/multitask60` es un repositorio de HuggingFace publicado por el usuario `grac-eoka` que contiene una implementacion funcional de una arquitectura denominada **Coca** orientada a tareas multiples (*multitask*), descrita por el propio autor como de escala *large*. El repositorio se presenta explicitamente como un punto de partida experimental: incluye codigo de evaluacion, configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion valido para *smoke tests*, pero **no** un checkpoint entrenado ni resultados de benchmarks.
+`grac-eoka/multitask60` es un repositorio de Hugging Face publicado por el usuario `grac-eoka` que contiene una implementacion funcional de una arquitectura denominada **Coca** orientada a tareas multiples (*multitask*), descrita por el propio autor como de escala *large*. El repositorio se presenta explicitamente como un punto de partida experimental: incluye codigo de evaluacion, configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion valido para *smoke tests*, pero **no** un checkpoint entrenado ni resultados de benchmarks.
 
 El problema que aborda es de tipo investigador: ofrecer un esqueleto reproducible y transparente para experimentar con una implementacion propia de Coca en escenarios multitarea, en lugar de competir en rendimiento con modelos de produccion. La model card insiste en que las afirmaciones de benchmark se omiten deliberadamente y que el checkpoint `model.safetensors` no debe presentarse como entrenado.
 
@@ -49,7 +49,7 @@ En cuanto al entrenamiento, no se ha ejecutado ninguno: el repositorio incluye `
 - **Desarrollo de arneses de evaluacion (*harness*)**: dado que no hay benchmarks publicados, un uso natural es construir el conjunto de validacion especifico de tarea, con al menos tres semillas y una linea base de capacidad equivalente, tal y como recomienda la propia model card.
 - **Estudios de ablacion de componentes**: las opciones declaradas (atencion flash, fusion *low rank*, activacion gelu tanh, layernorm) son candidatas directas a experimentos de ablacion controlados; el repositorio permite modificarlas y medir su efecto con presupuesto de ajuste identico.
 - **Reproduccion y auditoria de implementaciones propias**: el codigo transparente y la configuracion explicitamente versionada facilitan que un tercero reproduzca paso a paso la construccion del modelo y detecte discrepancias.
-- **Docencia y formacion tecnica**: sirve como ejemplo minimo y legible de como estructurar un repositorio de modelo en HuggingFace (codigo, config, receta y pesos separados), sin la complejidad de un modelo de gran escala.
+- **Docencia y formacion tecnica**: sirve como ejemplo minimo y legible de como estructurar un repositorio de modelo en Hugging Face (codigo, config, receta y pesos separados), sin la complejidad de un modelo de gran escala.
 - **Base para adaptadores especificos de tarea una vez entrenado**: si en el futuro se entrena el checkpoint, los mismos ficheros permiten enganchar cabezas de tarea o adaptadores ligeros para clasificacion, regresion o generacion, siempre revalidando los resultados.
 - **Integracion en herramientas internas de comparacion de arquitecturas**: el peso del repositorio es de 0,0 GB, por lo que se puede clonar y cargar en entornos muy restringidos (contenedores pequenos, maquinas de desarrollo sin GPU) para pruebas estructurales.
 
@@ -78,7 +78,7 @@ No se identifican en la informacion disponible modelos comparables de forma veri
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grac-eoka/multitask60 | 16.576 (segun safetensors) | no disponible | no disponible (sin entrenar) | apache-2.0 | HuggingFace |
+| grac-eoka/multitask60 | 16.576 (segun safetensors) | no disponible | no disponible (sin entrenar) | apache-2.0 | Hugging Face |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,5 +96,5 @@ No se identifican en la informacion disponible modelos comparables de forma veri
 
 ## Enlaces
 
-- [HuggingFace: grac-eoka/multitask60](https://huggingface.co/grac-eoka/multitask60)
+- [Hugging Face: grac-eoka/multitask60](https://huggingface.co/grac-eoka/multitask60)
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos asociados.

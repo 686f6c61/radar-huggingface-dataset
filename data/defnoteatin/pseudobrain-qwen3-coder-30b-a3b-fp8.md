@@ -6,7 +6,7 @@ PseudoBrain-Qwen3-Coder-30B-A3B-FP8 es una variante del modelo Qwen3-Coder-30B-A
 
 Se trata de un modelo MoE con 30.784.864.128 parámetros totales y aproximadamente 3.300 millones de parámetros activos por token (A3.3B según el autor), orientado a generación de código, flujos agénticos y razonamiento multi-paso sobre repositorios o documentos extensos. La relevancia actual reside en que ataca el cuello de botella clásico del serving de contexto largo: el coste lineal del KV cache y el coste cuadrático del prefill, que obligan a OOM incluso cuando los pesos del modelo caben holgadamente en la GPU.
 
-El modelo se distribuye en formato safetensors FP8 y depende de un plugin externo de vLLM (`pb27_vllm`) instalable desde GitHub; no funciona con el runtime estándar de vLLM ni con llama.cpp sin ese complemento. La ficha se basa exclusivamente en la información publicada en HuggingFace y en el repositorio del autor; no hay resultados de benchmarks independientes disponibles.
+El modelo se distribuye en formato safetensors FP8 y depende de un plugin externo de vLLM (`pb27_vllm`) instalable desde GitHub; no funciona con el runtime estándar de vLLM ni con llama.cpp sin ese complemento. La ficha se basa exclusivamente en la información publicada en Hugging Face y en el repositorio del autor; no hay resultados de benchmarks independientes disponibles.
 
 ## Especificaciones tecnicas
 
@@ -90,13 +90,13 @@ La comparación directa con alternativas de contexto de 1M (como variantes de Ll
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-Coder-30B-A3B-FP8
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-Coder-30B-A3B-FP8
 - Repositorio GitHub del proyecto PseudoBrain: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Informes de benchmarks del autor: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Modelo base FP8: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8
 - Modelo base AWQ 4-bit: https://huggingface.co/cyankiwi/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit

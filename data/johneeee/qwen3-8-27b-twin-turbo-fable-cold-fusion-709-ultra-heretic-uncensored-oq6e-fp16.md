@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ6e-fp16 es una publicacion de pesos cuantizados alojada en HuggingFace por el usuario Johneeee. Segun la model card, se trata de una cuantizacion de precision mixta realizada con oQ (oMLX v0.7.0.dev2), con 6 bits, group size 64 y formato MLX safetensors, sobre un modelo cuyo tipo declarado es `qwen3_5`. El dato verificado de parametros, extraido de los tensores safetensors, es de 26.895.998.464 parametros (~26,9 B) y el repositorio ocupa 22,5 GB.
+Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ6e-fp16 es una publicacion de pesos cuantizados alojada en Hugging Face por el usuario Johneeee. Segun la model card, se trata de una cuantizacion de precision mixta realizada con oQ (oMLX v0.7.0.dev2), con 6 bits, group size 64 y formato MLX safetensors, sobre un modelo cuyo tipo declarado es `qwen3_5`. El dato verificado de parametros, extraido de los tensores safetensors, es de 26.895.998.464 parametros (~26,9 B) y el repositorio ocupa 22,5 GB.
 
 No se trata de un modelo entrenado desde cero ni de un lanzamiento oficial: es un artefacto derivado, pensado para su ejecucion local en hardware Apple Silicon mediante MLX. La model card es extremadamente escueta y no documenta datos de entrenamiento, composicion del dataset, idiomas, licencia ni resultados de evaluacion, por lo que la mayor parte de las especificaciones habituales figuran como no disponibles en esta ficha.
 
@@ -67,7 +67,7 @@ La model card no incluye ninguna metrica (MMLU, HumanEval, GSM8K, MT-Bench ni eq
 - Estimacion de memoria para pesos: 26,9 B de parametros a 6 bits equivalen a unos 20,2 GB teoricos; el repositorio ocupa 22,5 GB, lo que indica que una parte de los tensores se conserva en mayor precision (fp16), coherente con el sufijo del nombre. Cifras calculadas a partir de los datos del repositorio, no publicadas por el autor.
 - Memoria unificada recomendada: un minimo practico de 32 GB para cargar los pesos y disponer de margen para la cache KV y el contexto; 64 GB o mas si se trabaja con contextos largos o lotes.
 - Apple Silicon compatible: se requiere un chip de la familia M con memoria unificada suficiente (M1/M2/M3/M4 Max o Ultra con 32 GB o mas). No cabe en configuraciones de 16 o 18 GB, y en 24 GB queda al limite sin margen para contexto.
-- GPU NVIDIA: el formato MLX no es ejecutable en CUDA. Una RTX 4090 (24 GB), A100 o H100 no pueden cargar estos pesos directamente; seria necesario convertir el modelo a safetensors de HuggingFace o a GGUF antes de usar vLLM, TGI o llama.cpp. No se documenta ninguna conversion de este tipo.
+- GPU NVIDIA: el formato MLX no es ejecutable en CUDA. Una RTX 4090 (24 GB), A100 o H100 no pueden cargar estos pesos directamente; seria necesario convertir el modelo a safetensors de Hugging Face o a GGUF antes de usar vLLM, TGI o llama.cpp. No se documenta ninguna conversion de este tipo.
 - Opciones de despliegue: mlx-lm y mlx_lm.server (API compatible con OpenAI) son las vias naturales. LM Studio admite backend MLX en versiones recientes. Ollama y llama.cpp no soportan MLX, por lo que requeririan una conversion previa a GGUF.
 - Latencia y throughput: no disponibles.
 - Cuantizaciones adicionales: no se ofrecen variantes de 4 bits, 8 bits ni GGUF en la informacion proporcionada.
@@ -97,6 +97,6 @@ Como aproximacion cualitativa, un modelo denso de ~27 B en 6 bits pertenece al s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ6e-fp16
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ6e-fp16
 - Repositorio de oQ / oMLX (herramienta de cuantizacion citada en la model card): https://github.com/jundot/omlx
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su modelo base o sus benchmarks. Las busquedas devolvieron unicamente paginas genericas del motor de busqueda sin relacion con el repositorio.

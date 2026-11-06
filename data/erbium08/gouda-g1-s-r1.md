@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gouda-g1-s-r1` es una publicación de HuggingFace creada por el usuario Erbium08 el 8 de septiembre de 2026. Se distribuye bajo licencia MIT, lo que permite uso comercial y modificaciones sin restricciones significativas. El repositorio tiene un tamaño de 0.3 GB, lo que sugiere que podría tratarse de un modelo de tamaño pequeño, aunque no se puede confirmar sin más datos.
+El modelo `gouda-g1-s-r1` es una publicación de Hugging Face creada por el usuario Erbium08 el 8 de septiembre de 2026. Se distribuye bajo licencia MIT, lo que permite uso comercial y modificaciones sin restricciones significativas. El repositorio tiene un tamaño de 0.3 GB, lo que sugiere que podría tratarse de un modelo de tamaño pequeño, aunque no se puede confirmar sin más datos.
 
 La información técnica disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni capacidades. Tampoco se incluyen resultados de benchmarks ni documentación adicional. En consecuencia, este modelo no puede evaluarse ni compararse con alternativas existentes a partir de los datos públicos.
 
@@ -54,10 +54,10 @@ No disponible. No se puede establecer una comparacion con otros modelos porque s
 
 - La ausencia de documentacion tecnica, especificaciones y benchmarks impide evaluar la idoneidad del modelo para cualquier uso en produccion.
 - No se conocen los datos de entrenamiento, por lo que no se pueden descartar sesgos ni riesgos de alucinacion.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - La licencia MIT es permisiva, pero no se dispone de informacion sobre dependencias, pesos completos o formato de los archivos.
 - Cualquier intento de integracion requeriria una inspeccion manual del contenido del repositorio y la ejecucion de pruebas propias.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Erbium08/gouda-g1-s-r1
+- Hugging Face: https://huggingface.co/Erbium08/gouda-g1-s-r1

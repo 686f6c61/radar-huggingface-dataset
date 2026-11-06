@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para comparar. La comparativa se limita a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib512-blade
+- Modelo en Hugging Face: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib512-blade
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Paper tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25

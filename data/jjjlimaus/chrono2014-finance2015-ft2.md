@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/chrono2014-finance2015-ft2` es un modelo de lenguaje causal de aproximadamente 1.860 millones de parámetros (1.858.535.658), publicado en HuggingFace por el usuario `jjjlimaus`. El nombre sugiere un entrenamiento orientado a datos financieros del periodo 2014-2015, posiblemente con un enfoque cronológico, aunque no se dispone de documentación oficial que lo confirme. El repositorio está marcado con el tag `gpt` y `region:us`, lo que apunta a una arquitectura tipo GPT y a un posible ámbito geográfico estadounidense, pero estos detalles no están verificados.
+El modelo `jjjlimaus/chrono2014-finance2015-ft2` es un modelo de lenguaje causal de aproximadamente 1.860 millones de parámetros (1.858.535.658), publicado en Hugging Face por el usuario `jjjlimaus`. El nombre sugiere un entrenamiento orientado a datos financieros del periodo 2014-2015, posiblemente con un enfoque cronológico, aunque no se dispone de documentación oficial que lo confirme. El repositorio está marcado con el tag `gpt` y `region:us`, lo que apunta a una arquitectura tipo GPT y a un posible ámbito geográfico estadounidense, pero estos detalles no están verificados.
 
-El modelo se publicó el 5 de agosto de 2026 y se actualizó el 22 de agosto de 2026. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de poder descargarlo. El tamaño del repositorio es de 70,6 GB, lo que sugiere que incluye pesos en formato `safetensors` y posiblemente otros archivos. No se ha publicado información sobre licencia, idiomas soportados, ni detalles de entrenamiento. A pesar de su escasa documentación, su tamaño lo sitúa en la gama de modelos pequeños-medios, adecuados para fine-tuning o inferencia en hardware moderado.
+El modelo se publicó el 5 de agosto de 2026 y se actualizó el 22 de agosto de 2026. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de poder descargarlo. El tamaño del repositorio es de 70,6 GB, lo que sugiere que incluye pesos en formato `safetensors` y posiblemente otros archivos. No se ha publicado información sobre licencia, idiomas soportados, ni detalles de entrenamiento. A pesar de su escasa documentación, su tamaño lo sitúa en la gama de modelos pequeños-medios, adecuados para fine-tuning o inferencia en hardware moderado.
 
 ## Especificaciones tecnicas
 
@@ -47,12 +47,12 @@ No se han publicado recomendaciones oficiales de hardware ni opciones de desplie
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa rigurosa. Se ha identificado un modelo relacionado en HuggingFace: `fitleech/chronollm-2015`, que se describe como un modelo causal de 2B parámetros con arquitectura estilo ChronoGPT, y cuyo checkpoint fuente es `jjjlimaus/chrono2014-finance2015-ft3` (una versión posterior al modelo aquí analizado). Sin embargo, no se conocen sus especificaciones completas ni sus resultados. No se pueden comparar parámetros, contexto, rendimiento o licencia de forma fiable.
+No se dispone de información suficiente para realizar una comparativa rigurosa. Se ha identificado un modelo relacionado en Hugging Face: `fitleech/chronollm-2015`, que se describe como un modelo causal de 2B parámetros con arquitectura estilo ChronoGPT, y cuyo checkpoint fuente es `jjjlimaus/chrono2014-finance2015-ft3` (una versión posterior al modelo aquí analizado). Sin embargo, no se conocen sus especificaciones completas ni sus resultados. No se pueden comparar parámetros, contexto, rendimiento o licencia de forma fiable.
 
 ## Limitaciones y advertencias
 
 - No hay documentación oficial: el modelo carece de ficha técnica, paper o README detallado, lo que impide conocer sus limitaciones específicas.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Licencia desconocida: no se especifica la licencia, por lo que no se puede garantizar su uso comercial o la redistribución.
 - Posible sesgo financiero: si el modelo se entrenó con datos de 2014-2015, podría reflejar sesgos temporales o geográficos (región US) que afecten a su aplicabilidad en contextos actuales o de otras regiones.
 - Riesgo de alucinación: al ser un modelo de tamaño moderado y sin información sobre alineación, es probable que presente alucinaciones en tareas complejas.
@@ -60,6 +60,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jjjlimaus/chrono2014-finance2015-ft2)
+- [Modelo en Hugging Face](https://huggingface.co/jjjlimaus/chrono2014-finance2015-ft2)
 - [Dataset relacionado del mismo autor](https://huggingface.co/datasets/jjjlimaus/chrono2014-diverse-rule-pipeline)
 - [Modelo similar: fitleech/chronollm-2015](https://huggingface.co/fitleech/chronollm-2015)

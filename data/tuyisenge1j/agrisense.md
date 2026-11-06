@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AgriSense es un repositorio publicado en HuggingFace por el usuario `tuyisenge1j`, creado el 24 de octubre de 2026 y actualizado ese mismo día. La única etiqueta técnica declarada es `joblib`, un formato de serialización de objetos Python habitualmente asociado a pipelines de scikit-learn, junto con el tag de alojamiento `region:us`. No hay ningún tag de framework de deep learning (pytorch, tensorflow, transformers, gguf), por lo que no hay evidencia de que el artefacto contenga pesos de un transformer ni de un modelo de lenguaje.
+AgriSense es un repositorio publicado en Hugging Face por el usuario `tuyisenge1j`, creado el 24 de octubre de 2026 y actualizado ese mismo día. La única etiqueta técnica declarada es `joblib`, un formato de serialización de objetos Python habitualmente asociado a pipelines de scikit-learn, junto con el tag de alojamiento `region:us`. No hay ningún tag de framework de deep learning (pytorch, tensorflow, transformers, gguf), por lo que no hay evidencia de que el artefacto contenga pesos de un transformer ni de un modelo de lenguaje.
 
 El repositorio ocupa 7,9 GB, un tamaño muy superior al habitual en un artefacto joblib, lo que sugiere la inclusión de ensembles de gran tamaño, matrices precalculadas o datos auxiliares empaquetados junto al modelo. No se ha publicado model card, licencia, idiomas, pipeline ni resultados de evaluación, de modo que no es posible verificar arquitectura, número de parámetros, ventana de contexto ni dominio de entrenamiento.
 
@@ -72,7 +72,7 @@ No es posible identificar modelos comparables porque se desconocen la tarea, la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AgriSense (`tuyisenge1j/AgriSense`) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 1 like |
+| AgriSense (`tuyisenge1j/AgriSense`) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 1 like |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No es posible identificar modelos comparables porque se desconocen la tarea, la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tuyisenge1j/AgriSense
+- Repositorio en Hugging Face: https://huggingface.co/tuyisenge1j/AgriSense
 - Proyecto homónimo en GitHub (plataforma de agricultura de precisión con IoT; sin relación verificada con este repositorio): https://github.com/Dhanyatha0105/AgriSense-AI
 - Proyecto homónimo en GitHub (detección de estrés de cultivos con Random Forest y XGBoost; sin relación verificada): https://github.com/malya01/Agrisense-AI
 - Sitio de plataforma homónima de predicción de rendimiento (sin relación verificada): https://agrisensefarm.tech/

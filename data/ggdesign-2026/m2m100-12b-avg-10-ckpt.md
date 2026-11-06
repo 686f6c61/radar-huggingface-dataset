@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 - VRAM estimada para inferencia: con 12.000 millones de parámetros, en precisión fp16 se necesitan aproximadamente 24 GB de VRAM solo para los pesos, más memoria para activaciones y el tokenizador. En fp32 la demanda sube a unos 48 GB.
 - GPUs recomendadas: para inferencia en fp16 se requiere al menos una GPU con 24 GB (por ejemplo, RTX 4090, A100 40 GB, H100 80 GB). En fp32 sería necesaria una A100 80 GB o varias GPUs en paralelo.
 - En GPUs de consumo: es posible ejecutar el modelo en una RTX 4090 (24 GB) con cuantización a 8 bits o 4 bits, aunque no se han publicado configuraciones oficiales de cuantización para este checkpoint.
-- Opciones de despliegue: se puede servir con la librería `transformers` de HuggingFace, así como con motores de inferencia optimizados como vLLM, TGI o llama.cpp (este último si se convierten los pesos a GGUF, aunque no hay conversiones oficiales disponibles).
+- Opciones de despliegue: se puede servir con la librería `transformers` de Hugging Face, así como con motores de inferencia optimizados como vLLM, TGI o llama.cpp (este último si se convierten los pesos a GGUF, aunque no hay conversiones oficiales disponibles).
 - Latencia y throughput: no se dispone de datos medidos para este checkpoint concreto. En general, un modelo de 12B parámetros en una A100 puede procesar decenas de tokens por segundo en tareas de generación, pero la cifra exacta depende del hardware, la cuantización y el tamaño del lote.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ La comparación se basa en características generales conocidas de estos modelos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GGDesign-2026/m2m100-12B-avg-10-ckpt
+- Repositorio en Hugging Face: https://huggingface.co/GGDesign-2026/m2m100-12B-avg-10-ckpt
 - Paper original: https://arxiv.org/abs/2010.11125
 - Repositorio oficial de Fairseq con el código de entrenamiento: https://github.com/pytorch/fairseq/tree/master/examples/m2m_100

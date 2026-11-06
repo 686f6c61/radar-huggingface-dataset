@@ -86,7 +86,7 @@ La comparación con Pythia es la más directa por propósito (suite de escalado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rohithck/delphi-5e19-1.2Bparams-7.4Btokens-seed42
+- Hugging Face: https://huggingface.co/rohithck/delphi-5e19-1.2Bparams-7.4Btokens-seed42
 - Blog de Delphi: https://openathena.ai/blog/delphi
 - Checkpoints de la suite: https://huggingface.co/marin-community
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data

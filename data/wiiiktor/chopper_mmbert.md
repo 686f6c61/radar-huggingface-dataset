@@ -92,7 +92,7 @@ No se dispone de comparaciones con otros modelos de compresión de contexto de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wiiiktor/chopper_mmbert
+- Modelo en Hugging Face: https://huggingface.co/wiiiktor/chopper_mmbert
 - Dataset de entrenamiento: https://huggingface.co/datasets/wiiiktor/chopper_demo
 - Código: https://github.com/wiiiktor/chopper_demo
 - Chopper Qwen3: https://huggingface.co/wiiiktor/chopper_qwen3

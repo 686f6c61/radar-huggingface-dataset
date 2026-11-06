@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Olasehindejesutomi/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) de pequeno tamano entrenada para clasificar digitos manuscritos del conjunto de datos MNIST (clases 0 a 9). Lo desarrolla el usuario de HuggingFace Olasehindejesutomi y lo publica bajo licencia MIT. Segun la propia model card, se trata de un proyecto de aprendizaje para principiantes, no de un modelo orientado a produccion ni a investigacion avanzada.
+`Olasehindejesutomi/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) de pequeno tamano entrenada para clasificar digitos manuscritos del conjunto de datos MNIST (clases 0 a 9). Lo desarrolla el usuario de Hugging Face Olasehindejesutomi y lo publica bajo licencia MIT. Segun la propia model card, se trata de un proyecto de aprendizaje para principiantes, no de un modelo orientado a produccion ni a investigacion avanzada.
 
 El modelo resuelve una tarea de vision por computador muy acotada: recibir una imagen en escala de grises de 1x28x28 pixeles con un digito blanco sobre fondo negro y devolver una de las diez clases. No es un modelo de lenguaje ni un modelo fundacional: no tiene parametros de miles de millones, no procesa texto y no dispone de ventana de contexto en el sentido habitual de los LLM.
 
-Su relevancia es, por tanto, limitada y de caracter didactico. Resulta util como ejemplo minimo de pipeline de clasificacion de imagenes en PyTorch con HuggingFace Hub, pero no compite con modelos de vision modernos. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano de 0.0 GB, lo que es coherente con una CNN de pocos cientos de miles de parametros.
+Su relevancia es, por tanto, limitada y de caracter didactico. Resulta util como ejemplo minimo de pipeline de clasificacion de imagenes en PyTorch con Hugging Face Hub, pero no compite con modelos de vision modernos. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano de 0.0 GB, lo que es coherente con una CNN de pocos cientos de miles de parametros.
 
 ## Especificaciones tecnicas
 
@@ -39,12 +39,12 @@ El entrenamiento se realizo con el optimizador Adam (learning rate 0.001) y func
 
 ## Casos de uso
 
-- Docencia y tutoriales de PyTorch: sirve como ejemplo minimo para ensenar a cargar pesos desde HuggingFace Hub con `hf_hub_download`, instanciar el modelo y ejecutar inferencia en CPU.
+- Docencia y tutoriales de PyTorch: sirve como ejemplo minimo para ensenar a cargar pesos desde Hugging Face Hub con `hf_hub_download`, instanciar el modelo y ejecutar inferencia en CPU.
 - Prototipado rapido de pipelines de clasificacion: util para validar el flujo de preprocesado (normalizacion con media 0.1307 y std 0.3081) antes de sustituir el modelo por uno mas potente.
 - Pruebas unitarias de infraestructura de inferencia: al ser un modelo pequeno y sin dependencias pesadas, se puede usar para verificar que un servicio de serving funciona correctamente.
 - Demostraciones de OCR de un solo caracter en entornos controlados: con imagenes segmentadas de 28x28, puede clasificar digitos individuales en un formulario o un escaner simple.
 - Benchmark educativo de comparacion de arquitecturas: sirve como linea base (96.57% de accuracy en test) para comparar con CNNs mas profundas o con modelos preentrenados.
-- Ejemplo de publicacion de modelos en HuggingFace: el repositorio y la model card pueden usarse como plantilla para otros proyectos de aprendizaje.
+- Ejemplo de publicacion de modelos en Hugging Face: el repositorio y la model card pueden usarse como plantilla para otros proyectos de aprendizaje.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | Rendimiento MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Olasehindejesutomi/mnist-cnn-pytorch | no disponible | no aplica | 96.57% test accuracy | MIT | HuggingFace |
+| Olasehindejesutomi/mnist-cnn-pytorch | no disponible | no aplica | 96.57% test accuracy | MIT | Hugging Face |
 | LeNet-5 (referencia historica) | ~60 000 | no aplica | ~99% en MNIST | no disponible | Referencia academica |
 | CNN tipica de tutorial PyTorch | ~1.2 M | no aplica | ~98-99% en MNIST | variable | Multiples repositorios |
 
@@ -84,7 +84,7 @@ No se dispone de datos verificados de otros modelos comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Olasehindejesutomi/mnist-cnn-pytorch
+- Hugging Face: https://huggingface.co/Olasehindejesutomi/mnist-cnn-pytorch
 - Dataset MNIST: no se proporciona enlace directo en la model card.
 - Paper o blog asociado: no disponible.
 - Repositorio de codigo: no disponible (la model card solo muestra un snippet de uso que importa `model.MNISTCNN`).

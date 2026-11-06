@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kikusuka/breezy-flick-phase3-sft-round2` es un modelo de lenguaje de tamaño reducido, con 70.263.040 parámetros, publicado en HuggingFace por el usuario kikusuka. La etiqueta `gpt2` sugiere que se basa en la arquitectura GPT-2, aunque no se dispone de una confirmación oficial en la model card, que solo incluye la licencia Apache 2.0. El repositorio ocupa 0,3 GB y los pesos están en formato safetensors.
+El modelo `kikusuka/breezy-flick-phase3-sft-round2` es un modelo de lenguaje de tamaño reducido, con 70.263.040 parámetros, publicado en Hugging Face por el usuario kikusuka. La etiqueta `gpt2` sugiere que se basa en la arquitectura GPT-2, aunque no se dispone de una confirmación oficial en la model card, que solo incluye la licencia Apache 2.0. El repositorio ocupa 0,3 GB y los pesos están en formato safetensors.
 
 Este modelo parece ser el resultado de un proceso de fine-tuning supervisado (SFT) en una fase concreta (fase 3, ronda 2), según su nombre. Sin embargo, no se ha publicado información sobre el dataset de entrenamiento, el propósito específico o las capacidades del modelo. Dada su escala, es probable que esté orientado a tareas de generación de texto o clasificación en entornos con recursos limitados, pero no hay evidencia pública que lo confirme.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: con 70M parámetros en FP16, el peso ocupa aproximadamente 140 MB. En FP32 serían unos 280 MB. Con cuantización a 8 bits, se reduce a unos 70 MB, y a 4 bits, a unos 35 MB. Estas cifras son estimaciones teóricas basadas en el tamaño del modelo.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM debería ser suficiente para inferencia en FP16. Una GPU de consumo como la NVIDIA GTX 1050 Ti o superior sería adecuada. También puede ejecutarse en CPU.
 - Sí cabe en GPUs de consumo: cualquier GPU moderna con 2 GB o más de VRAM puede ejecutarlo sin problemas.
-- Opciones de despliegue: al ser un modelo tipo GPT-2, es compatible con frameworks como Transformers de HuggingFace, llama.cpp (si se convierte a GGUF), vLLM (si se adapta) y Ollama (si se empaqueta). No hay información oficial sobre soporte.
+- Opciones de despliegue: al ser un modelo tipo GPT-2, es compatible con frameworks como Transformers de Hugging Face, llama.cpp (si se convierte a GGUF), vLLM (si se adapta) y Ollama (si se empaqueta). No hay información oficial sobre soporte.
 - Latencia y throughput: no disponibles. Al ser un modelo pequeño, se espera una latencia baja en hardware moderno, pero no hay datos medidos.
 
 ## Comparativa con modelos similares
@@ -64,9 +64,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kikusuka/breezy-flick-phase3-sft-round2 | 70M | no disponible | Apache 2.0 | HuggingFace |
-| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | HuggingFace |
-| GPT-2 Small | 124M | 1024 tokens | MIT | HuggingFace |
+| kikusuka/breezy-flick-phase3-sft-round2 | 70M | no disponible | Apache 2.0 | Hugging Face |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face |
+| GPT-2 Small | 124M | 1024 tokens | MIT | Hugging Face |
 
 La comparación es solo estructural; no se puede afirmar que este modelo sea mejor o peor en tareas concretas sin benchmarks.
 
@@ -81,5 +81,5 @@ La comparación es solo estructural; no se puede afirmar que este modelo sea mej
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kikusuka/breezy-flick-phase3-sft-round2
+- Repositorio Hugging Face: https://huggingface.co/kikusuka/breezy-flick-phase3-sft-round2
 - No se han encontrado papers, blogs o demos asociados al modelo en la información disponible.

@@ -32,7 +32,7 @@ El ajuste fino original se realizó con QLoRA y SFT, según indican los tags del
 - Generación de texto conversacional, ya que el repositorio incluye el tag `conversational` y el modelo deriva de una variante Instruct.
 - Generación de contenido periodístico y redacción de noticias, según el nombre del modelo y el propósito declarado por el ajuste fino original.
 - Instrucciones de tipo chat en inglés, al haber sido afinado mediante SFT sobre un modelo Instruct.
-- Inferencia compatible con endpoints (`endpoints_compatible`) en el ecosistema de HuggingFace.
+- Inferencia compatible con endpoints (`endpoints_compatible`) en el ecosistema de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: limitadas al inglés (`language: en`).
@@ -93,7 +93,7 @@ No hay datos de rendimiento comparativo publicados en la información disponible
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Satish_News_Generator-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Satish_News_Generator-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/MSatish04/Satish_News_Generator
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/dataspoof/Fine_tuned_project
 - Licencia aplicada (Qwen2.5-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

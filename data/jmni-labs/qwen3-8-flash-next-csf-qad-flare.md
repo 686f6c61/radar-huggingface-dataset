@@ -6,7 +6,7 @@ Qwen3.8-Flash-Next-CSF-QAD-FLARE es un paquete de despliegue preparado por JMNI-
 
 El paquete esta disenado exclusivamente para el runtime Flare de NVIDIA (spark-local-inference) y no puede cargarse con Transformers, vLLM, SGLang ni llama.cpp. Su relevancia radica en que habilita inferencia de un modelo multimodal de gran contexto (262.144 tokens) repartido entre dos estaciones GB10 conectadas por ConnectX-7 RoCE, con decodificacion especulativa MTP y grafo CUDA capturado para 32 peticiones concurrentes.
 
-El repositorio ocupa 111,9 GB y se distribuye bajo licencia `lil-license-1.0` (licencia propia del autor, marcada como "other" en HuggingFace). La model card reporta cifras de rendimiento medidas en dos ASUS GX10, incluyendo un 91,4 % en GPQA Diamond.
+El repositorio ocupa 111,9 GB y se distribuye bajo licencia `lil-license-1.0` (licencia propia del autor, marcada como "other" en Hugging Face). La model card reporta cifras de rendimiento medidas en dos ASUS GX10, incluyendo un 91,4 % en GPQA Diamond.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio ocupa 111,9 GB y se distribuye bajo licencia `lil-license-1.0` (l
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | NVFP4 (expertos enrutados), MXFP8 (attention y proyecciones de expertos compartidos) |
 | Idiomas soportados | no disponible |
-| Licencia | lil-license-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lil-license-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | Paquete en formato directorio para Flare (no safetensors estandar, no GGUF); incluye kernels CUDA compilados y grafos capturados |
 
 ## Arquitectura y entrenamiento
@@ -103,7 +103,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JMNI-Labs/Qwen3.8-Flash-Next-CSF-QAD-FLARE
+- Hugging Face: https://huggingface.co/JMNI-Labs/Qwen3.8-Flash-Next-CSF-QAD-FLARE
 - Modelo base: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD
 - Licencia: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD/blob/main/LICENSE
 - Runtime Flare: https://github.com/NVIDIA/spark-local-inference

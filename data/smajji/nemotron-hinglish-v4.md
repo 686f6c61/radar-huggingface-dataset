@@ -82,9 +82,9 @@ No se han publicado en la informacion disponible resultados comparativos entre e
 
 | Modelo | Parametros | Idiomas | Licencia | WER reportado | Disponibilidad |
 |---|---|---|---|---|---|
-| smajji/nemotron-hinglish-v4 | ~600 M | en, hi, hinglish | Apache-2.0 | en 4,0 % / hi 12,0 % / hinglish 29,2 % | HuggingFace (0 descargas) |
+| smajji/nemotron-hinglish-v4 | ~600 M | en, hi, hinglish | Apache-2.0 | en 4,0 % / hi 12,0 % / hinglish 29,2 % | Hugging Face (0 descargas) |
 | nvidia/nemotron-3.5-asr-streaming-0.6b (base) | ~600 M | multilingue (13088 BPE, 128 prompts) | no disponible | no disponible | Referenciado como modelo base |
-| smajji/nemotron-hinglish-v1 | ~600 M | en, hi, hinglish | no disponible | no disponible | HuggingFace |
+| smajji/nemotron-hinglish-v1 | ~600 M | en, hi, hinglish | no disponible | no disponible | Hugging Face |
 | Otras alternativas (Whisper, IndicConformer, etc.) | no disponible | no disponible | no disponible | no disponible | No se aportan datos comparativos en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se han publicado en la informacion disponible resultados comparativos entre e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smajji/nemotron-hinglish-v4
+- Modelo en Hugging Face: https://huggingface.co/smajji/nemotron-hinglish-v4
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Version previa de la serie: https://huggingface.co/smajji/nemotron-hinglish-v1
 - Documentacion de NeMo ASR (referenciada implicitamente por la libreria `nemo`): no disponible en la informacion proporcionada

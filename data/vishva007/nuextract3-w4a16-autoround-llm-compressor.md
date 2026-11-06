@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables de otros fabricantes con
 
 ## Enlaces
 
-- [HuggingFace del modelo cuantizado](https://huggingface.co/Vishva007/NuExtract3-W4A16-AutoRound-LLM-Compressor)
+- [Hugging Face del modelo cuantizado](https://huggingface.co/Vishva007/NuExtract3-W4A16-AutoRound-LLM-Compressor)
 - [Modelo base numind/NuExtract3](https://huggingface.co/numind/NuExtract3)
 - [Repositorio de Intel AutoRound](https://github.com/intel/auto-round)
 - [Documentación de llm-compressor para AutoRound](https://docs.vllm.ai/projects/llm-compressor/en/latest/examples/autoround/)

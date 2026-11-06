@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Abliterated-Aggressive-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Abliterated-Aggressive-i1-GGUF
 - Repositorio con quants estáticos (incluye mmproj si existe): https://huggingface.co/mradermacher/Muse-Glimmer-30B-Abliterated-Aggressive-GGUF
 - Modelo base (jorkle): https://huggingface.co/jorkle/Muse-Glimmer-30B-Abliterated-Aggressive

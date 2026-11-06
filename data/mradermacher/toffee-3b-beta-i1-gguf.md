@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Toffee-3b-beta-i1-GGUF es una cuantización en formato GGUF del modelo Toffee-3b-beta, publicada por el usuario mradermacher en HuggingFace. El modelo original, desarrollado por maxzt, es un modelo de lenguaje de aproximadamente 3.800 millones de parámetros, aunque no se dispone de información pública sobre su arquitectura, entrenamiento o licencia en la documentación proporcionada.
+Toffee-3b-beta-i1-GGUF es una cuantización en formato GGUF del modelo Toffee-3b-beta, publicada por el usuario mradermacher en Hugging Face. El modelo original, desarrollado por maxzt, es un modelo de lenguaje de aproximadamente 3.800 millones de parámetros, aunque no se dispone de información pública sobre su arquitectura, entrenamiento o licencia en la documentación proporcionada.
 
 Esta versión GGUF está optimizada para inferencia en CPU y GPU mediante herramientas como llama.cpp, Ollama o LM Studio, y ha sido generada con cuantizaciones ponderadas y matriz de importancia (imatrix), lo que suele mejorar la precisión de los pesos cuantizados. A fecha de creación, el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o de baja difusión.
 

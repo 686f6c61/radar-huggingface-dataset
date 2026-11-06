@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativo para v0.5-libero, por lo que l
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede retrasar o impedir su uso en flujos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede retrasar o impedir su uso en flujos automatizados.
 - Licencia "verne-v0.5-model-license": no es una licencia de código abierto estándar; es necesario revisar los términos para uso comercial, redistribución y modificación.
 - Idiomas: solo se declara inglés, lo que limita instrucciones en otros idiomas.
 - Especialización estrecha: entrenado en LIBERO, su generalización a otros entornos, robots o tareas no está documentada.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo para v0.5-libero, por lo que l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vernerobotics/v0.5-libero
+- Hugging Face: https://huggingface.co/vernerobotics/v0.5-libero
 - Modelo base: https://huggingface.co/vernerobotics/v0.5-base
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

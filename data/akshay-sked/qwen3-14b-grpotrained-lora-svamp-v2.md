@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `akshay-sked/qwen3-14b-GRPOtrained-LoRa-svamp-v2` es un adaptador LoRA (Low-Rank Adaptation) entrenado con el algoritmo GRPO (Group Relative Policy Optimization) sobre el modelo base `Qwen/Qwen3-14B`. El nombre del repositorio y la etiqueta `svamp` indican que el entrenamiento se realizó sobre el dataset SVAMP (Substitution, Verification, and Answer Modification for Math Word Problems), un benchmark de problemas matemáticos planteados en lenguaje natural. El autor, akshay-sked, ha publicado el adaptador en HuggingFace con la librería PEFT, lo que permite combinarlo con los pesos del modelo base para obtener una versión afinada especializada en razonamiento matemático.
+El modelo `akshay-sked/qwen3-14b-GRPOtrained-LoRa-svamp-v2` es un adaptador LoRA (Low-Rank Adaptation) entrenado con el algoritmo GRPO (Group Relative Policy Optimization) sobre el modelo base `Qwen/Qwen3-14B`. El nombre del repositorio y la etiqueta `svamp` indican que el entrenamiento se realizó sobre el dataset SVAMP (Substitution, Verification, and Answer Modification for Math Word Problems), un benchmark de problemas matemáticos planteados en lenguaje natural. El autor, akshay-sked, ha publicado el adaptador en Hugging Face con la librería PEFT, lo que permite combinarlo con los pesos del modelo base para obtener una versión afinada especializada en razonamiento matemático.
 
 La relevancia de este modelo radica en que combina dos técnicas actuales: el fine-tuning con refuerzo (GRPO) y la eficiencia de LoRA, lo que permite adaptar un modelo de 14.000 millones de parámetros con un coste computacional reducido. Sin embargo, la model card publicada está prácticamente vacía: no se documentan hiperparámetros, datos de entrenamiento, evaluación ni licencia. Esto limita su uso en producción sin una validación adicional por parte del desarrollador. El tamaño del repositorio (0.8 GB) confirma que solo contiene los pesos del adaptador, no el modelo completo.
 
@@ -30,7 +30,7 @@ El dataset SVAMP contiene problemas aritméticos de nivel escolar con variacione
 - Generacion de texto y razonamiento matematico: el adaptador esta disenado para mejorar el rendimiento en problemas aritmeticos de palabras (SVAMP), lo que sugiere una especializacion en comprension de enunciados y calculo numerico.
 - Razonamiento multi-paso: al entrenarse con GRPO sobre un dataset de problemas matematicos, es probable que el modelo haya aprendido a generar cadenas de razonamiento intermedias antes de dar la respuesta final.
 - Capacidades heredadas del modelo base: al ser un adaptador sobre Qwen3-14B, conserva las capacidades generales del modelo base, incluyendo generacion de texto, codigo, comprension multilingue y soporte para tool calling (aunque estas capacidades no estan garantizadas tras el fine-tuning).
-- Integracion con el ecosistema PEFT: el adaptador se puede cargar facilmente con la libreria `peft` de HuggingFace, lo que permite combinarlo con el modelo base para inferencia o para continuar el entrenamiento.
+- Integracion con el ecosistema PEFT: el adaptador se puede cargar facilmente con la libreria `peft` de Hugging Face, lo que permite combinarlo con el modelo base para inferencia o para continuar el entrenamiento.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ No se puede realizar una comparativa de rendimiento al no existir datos de bench
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akshay-sked/qwen3-14b-GRPOtrained-LoRa-svamp-v2
+- Repositorio Hugging Face: https://huggingface.co/akshay-sked/qwen3-14b-GRPOtrained-LoRa-svamp-v2
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Referencia al dataset SVAMP: no se ha encontrado un enlace directo en la informacion proporcionada

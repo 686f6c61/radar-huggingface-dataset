@@ -74,5 +74,5 @@ No disponible. BOB ENGINE no pertenece a la categoria de modelos de IA generativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/bob-engine
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/bob-engine
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo) en la informacion proporcionada.

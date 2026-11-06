@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pinn-heat-transfer` es una red neuronal informada por la física (PINN, *physics-informed neural network*) publicada por el usuario Zainulabedin1 en HuggingFace. No es un modelo de lenguaje ni un modelo generativo: es un artefacto de investigación que aproxima la solución de la ecuación del calor transitoria unidimensional `u_t = α·u_xx` con α = 0,1, condiciones de contorno de Dirichlet nulas `u(0,t) = u(1,t) = 0` y condición inicial `u(x,0) = sin(πx)`, sobre el dominio x ∈ [0,1], t ∈ [0,1].
+`pinn-heat-transfer` es una red neuronal informada por la física (PINN, *physics-informed neural network*) publicada por el usuario Zainulabedin1 en Hugging Face. No es un modelo de lenguaje ni un modelo generativo: es un artefacto de investigación que aproxima la solución de la ecuación del calor transitoria unidimensional `u_t = α·u_xx` con α = 0,1, condiciones de contorno de Dirichlet nulas `u(0,t) = u(1,t) = 0` y condición inicial `u(x,0) = sin(πx)`, sobre el dominio x ∈ [0,1], t ∈ [0,1].
 
 El modelo se entrena exclusivamente con puntos de colocación sintéticos muestreados de forma aleatoria uniforme en el dominio, sin ningún dataset, sensor o medición experimental. La solución analítica `u(x,t) = sin(πx)·exp(−απ²t)` se usa únicamente como referencia para medir el error a posteriori, nunca como objetivo de entrenamiento. Es, por tanto, una demostración metodológica del enfoque PINN sobre una EDP canónica, no un solver de ingeniería validado.
 
@@ -88,7 +88,7 @@ La información disponible solo permite comparar con el baseline documentado por
 
 | Modelo / enfoque | Parametros | Entrada | Error relativo L2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pinn-heat-transfer (PINN) | ~7,8k | (x, t) continuo | 1,03e-03 | no disponible | HuggingFace, repo de 0,0 GB |
+| pinn-heat-transfer (PINN) | ~7,8k | (x, t) continuo | 1,03e-03 | no disponible | Hugging Face, repo de 0,0 GB |
 | Baseline MLP de ajuste a datos | ~7,8k (misma arquitectura) | (x, t) continuo | 1,01e-02 | no aplica (solo citado en la model card) | no publicado como checkpoint |
 | Otras implementaciones de PINN (DeepXDE y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Operadores neuronales (FNO, DeepONet) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -103,9 +103,9 @@ La información disponible solo permite comparar con el baseline documentado por
 - Sesgo espectral propio de las MLP con tanh: las soluciones de mayor frecuencia o con gradientes pronunciados requerirían más anchura de red o técnicas de realce de frecuencias, no incluidas aquí.
 - Trazabilidad y mantenimiento: 34 descargas, 0 likes y un único autor; sin versión, sin tests, sin paper asociado en la información disponible. No hay garantía de soporte ni de corrección de errores.
 - El repositorio figura con 0,0 GB y la API se limita a tres funciones (`HeatPINN`, `load_model`, `predict_xt`); no hay servidor de inferencia, tokenizador ni interfaz estándar de `transformers`, por lo que no puede servirse con vLLM, TGI u Ollama.
-- Los metadatos de HuggingFace indican fecha de creación 2026-10-19, posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de depender de él.
+- Los metadatos de Hugging Face indican fecha de creación 2026-10-19, posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de depender de él.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zainulabedin1/pinn-heat-transfer
+- Hugging Face: https://huggingface.co/Zainulabedin1/pinn-heat-transfer
 - Paper, blog, repositorio de código adicional o demo: no disponible en la información proporcionada (la model card no incluye enlaces externos).

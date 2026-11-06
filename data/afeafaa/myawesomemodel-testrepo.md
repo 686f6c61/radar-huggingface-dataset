@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario afeafaa bajo el identificador `afeafaa/MyAwesomeModel-TestRepo`. La informacion disponible es contradictoria: los metadatos de HuggingFace lo etiquetan como un modelo de tipo BERT para `feature-extraction` con libreria `transformers` y `pytorch`, mientras que la model card describe un asistente conversacional de razonamiento con modo de pensamiento, soporte de function calling y resultados en AIME 2025. El repositorio, ademas, tiene un tamano declarado de 0.0 GB, cero descargas y cero likes, y su nombre ("TestRepo") sugiere que se trata de un repositorio de prueba o de una plantilla, no de un modelo real publicado con pesos.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario afeafaa bajo el identificador `afeafaa/MyAwesomeModel-TestRepo`. La informacion disponible es contradictoria: los metadatos de Hugging Face lo etiquetan como un modelo de tipo BERT para `feature-extraction` con libreria `transformers` y `pytorch`, mientras que la model card describe un asistente conversacional de razonamiento con modo de pensamiento, soporte de function calling y resultados en AIME 2025. El repositorio, ademas, tiene un tamano declarado de 0.0 GB, cero descargas y cero likes, y su nombre ("TestRepo") sugiere que se trata de un repositorio de prueba o de una plantilla, no de un modelo real publicado con pesos.
 
 El problema que resolveria, segun la propia model card, seria el razonamiento complejo (matematicas, programacion y logica general) con un supuesto aumento de la profundidad de razonamiento respecto a una version anterior (de 70% a 87,5% de acierto en AIME 2025, pasando de 12K a 23K tokens por pregunta). Sin embargo, no se proporciona ninguna especificacion verificable: no hay numero de parametros, ni longitud de contexto, ni composicion del dataset, ni repositorio de codigo accesible.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe leerse como un analisis de la informacion declara
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun el tag `bert` de HuggingFace); la model card describe un modelo de razonamiento sin especificar arquitectura |
+| Arquitectura | BERT (segun el tag `bert` de Hugging Face); la model card describe un modelo de razonamiento sin especificar arquitectura |
 | Parametros totales | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -20,7 +20,7 @@ Por todo ello, esta ficha debe leerse como un analisis de la informacion declara
 | Licencia | MIT |
 | Formato de pesos | no disponible (tamano del repositorio declarado: 0.0 GB, sin pesos publicados) |
 
-Nota: los tags de HuggingFace incluyen `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. No hay fila de parametros activos porque no hay indicios de que sea un modelo MoE.
+Nota: los tags de Hugging Face incluyen `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. No hay fila de parametros activos porque no hay indicios de que sea un modelo MoE.
 
 ## Arquitectura y entrenamiento
 
@@ -52,7 +52,7 @@ Dado que no existe un modelo funcional verificable, los casos siguientes se plan
 - Generacion de codigo con tool calling: si se confirma el soporte de function calling, podria integrarse en pipelines de CI/CD para generacion y revision automatizada de codigo.
 - Generacion aumentada con busqueda web: las plantillas de citacion `[citation:X]` sugeririan un uso en asistentes que responden con fuentes verificables a partir de resultados de busqueda.
 - Procesamiento de documentos subidos: la plantilla de fichero permitiria resumir o responder preguntas sobre documentos aportados por el usuario en un flujo de chat.
-- Extraccion de caracteristicas y embeddings: si el tag `feature-extraction` y la arquitectura BERT son correctos, el modelo serviria para generar embeddings de frases o documentos para busqueda semantica, clustering o clasificacion. Esta es la unica capacidad coherente con los metadatos de HuggingFace.
+- Extraccion de caracteristicas y embeddings: si el tag `feature-extraction` y la arquitectura BERT son correctos, el modelo serviria para generar embeddings de frases o documentos para busqueda semantica, clustering o clasificacion. Esta es la unica capacidad coherente con los metadatos de Hugging Face.
 - Clasificacion y analisis de sentimiento: la tabla de evaluacion declara puntuaciones en clasificacion de texto (0.828) y analisis de sentimiento (0.792), lo que apuntaria a tareas de analisis de opinion si el modelo fuese un encoder.
 - Traduccion automatica: la model card declara 0.804 en traduccion, aunque sin especificar pares de idiomas ni direccion.
 
@@ -85,7 +85,7 @@ El unico dato adicional mencionado en el texto es un 87,5% de acierto en AIME 20
 - VRAM estimada para inferencia: no disponible. Al no publicarse pesos ni numero de parametros, no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible, por la misma razon.
 - Compatibilidad con GPU de consumo: indeterminada. Si el modelo fuese finalmente un encoder BERT de tamano estandar (del orden de 100-300 millones de parametros), cabria en GPU de consumo con 6-8 GB de VRAM; si fuese un modelo de razonamiento de gran tamano, requeriria hardware de centro de datos. Ambas hipotesis son especulativas y no deben usarse para planificar despliegues.
-- Opciones de despliegue: no disponible. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no disponible. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible. El unico dato relacionado es el consumo declarado de aproximadamente 23K tokens por pregunta en razonamiento, que implicaria latencias altas en cualquier configuracion, pero no se aportan mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -94,13 +94,13 @@ No disponible. No es posible establecer una comparativa fiable porque:
 
 - No se conoce el numero de parametros ni la arquitectura real del modelo.
 - Los modelos de referencia de la tabla ("Model1", "Model2", "Model1-v2") no estan identificados.
-- Los metadatos de HuggingFace (BERT, feature-extraction) y la model card (modelo generativo de razonamiento) describen categorias de modelo completamente distintas, lo que impide seleccionar alternativas comparables.
+- Los metadatos de Hugging Face (BERT, feature-extraction) y la model card (modelo generativo de razonamiento) describen categorias de modelo completamente distintas, lo que impide seleccionar alternativas comparables.
 - El repositorio no contiene pesos descargables, por lo que no se puede evaluar empiricamente frente a ningun competidor.
 
 ## Limitaciones y advertencias
 
 - Repositorio no funcional: el tamano declarado es de 0.0 GB y no hay pesos publicados. El modelo no parece ser descargable ni ejecutable en el momento de redactar esta ficha.
-- Contradiccion entre metadatos y model card: HuggingFace lo etiqueta como BERT de `feature-extraction`, mientras la model card describe un asistente de razonamiento generativo con function calling. No se puede determinar cual de las dos descripciones es correcta.
+- Contradiccion entre metadatos y model card: Hugging Face lo etiqueta como BERT de `feature-extraction`, mientras la model card describe un asistente de razonamiento generativo con function calling. No se puede determinar cual de las dos descripciones es correcta.
 - Indicios de plantilla: el nombre del repositorio ("TestRepo") y los benchmarks genericos con referencias "Model1"/"Model2" apuntan a una plantilla de prueba o a contenido no verificado. Los datos de evaluacion no deben citarse como resultados reales.
 - Idiomas soportados: no disponibles. No se puede confirmar soporte de castellano ni de ningun otro idioma.
 - Longitud de contexto: no disponible, lo que impide valorar escenarios de contexto largo.
@@ -112,7 +112,7 @@ No disponible. No es posible establecer una comparativa fiable porque:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afeafaa/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/afeafaa/MyAwesomeModel-TestRepo
 - Repositorio de codigo: mencionado en la model card como "our code repository", pero sin enlace disponible.
 - Web oficial y API: mencionados en la model card ("check our official website"), pero sin URL disponible.
 - Paper: no disponible.

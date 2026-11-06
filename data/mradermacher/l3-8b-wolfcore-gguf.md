@@ -6,7 +6,7 @@ L3-8B-WolfCore-GGUF es la colección de cuantizaciones estáticas en formato GGU
 
 La relevancia de esta publicación es fundamentalmente práctica: mradermacher proporciona 12 variantes de cuantización que abarcan desde Q2_K (3,3 GB) hasta f16 (16,2 GB), lo que permite ejecutar un modelo de 8B parámetros en hardware de consumo con distintos compromisos entre calidad y requisitos de memoria. El repositorio también enlaza a una versión con cuantizaciones ponderadas/imatrix (L3-8B-WolfCore-i1-GGUF), que suele ofrecer mejor calidad por bit que las cuantizaciones estáticas equivalentes.
 
-El modelo está etiquetado únicamente para inglés y no declara licencia en los metadatos de HuggingFace, lo que supone una limitación importante para su adopción en entornos comerciales. Con 62 descargas y 1 like en el momento de la consulta, es un modelo de nicho dentro del ecosistema de merges comunitarios.
+El modelo está etiquetado únicamente para inglés y no declara licencia en los metadatos de Hugging Face, lo que supone una limitación importante para su adopción en entornos comerciales. Con 62 descargas y 1 like en el momento de la consulta, es un modelo de nicho dentro del ecosistema de merges comunitarios.
 
 ## Especificaciones técnicas
 
@@ -78,7 +78,7 @@ La comparación directa con Llama 3 8B Instruct es la más pertinente por herenc
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: los metadatos de HuggingFace no especifican licencia, lo que impide determinar si el uso comercial está permitido. Hereda potencialmente las restricciones de Llama 3 Community License si los modelos de origen son Llama 3, pero esto no está confirmado.
+- Licencia no declarada: los metadatos de Hugging Face no especifican licencia, lo que impide determinar si el uso comercial está permitido. Hereda potencialmente las restricciones de Llama 3 Community License si los modelos de origen son Llama 3, pero esto no está confirmado.
 - Modelo base sin documentación: la model card original de DoppelReflEx/L3-8B-WolfCore no está incluida, por lo que se desconoce el proceso de merge, los modelos fusionados y las evaluaciones realizadas.
 - Solo inglés: no se declara soporte multilingüe, a diferencia de Llama 3 que soporta oficialmente varios idiomas.
 - Riesgo de alucinación: inherente a los modelos de 8B y potencialmente agravado por un merge no evaluado; no hay benchmarks que cuantifiquen su fiabilidad.

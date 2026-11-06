@@ -82,4 +82,4 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gothef/MAX-Neural-80M-Arabic
+- Hugging Face: https://huggingface.co/Gothef/MAX-Neural-80M-Arabic

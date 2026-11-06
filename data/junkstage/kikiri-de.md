@@ -1,7 +1,7 @@
 # junkstage/kikiri-de
 
 ## Resumen
-kikiri-de es un modelo de síntesis de voz (text-to-speech) en alemán publicado por junkstage en HuggingFace. Se basa en la arquitectura Kokoro-82M/StyleTTS-2 y se entrenó desde cero para alemán; tiene 81.126.738 parámetros y un repositorio de 0,3 GB. No es un LLM: no dispone de ventana de contexto ni de capacidades de razonamiento; su función es convertir texto en audio.
+kikiri-de es un modelo de síntesis de voz (text-to-speech) en alemán publicado por junkstage en Hugging Face. Se basa en la arquitectura Kokoro-82M/StyleTTS-2 y se entrenó desde cero para alemán; tiene 81.126.738 parámetros y un repositorio de 0,3 GB. No es un LLM: no dispone de ventana de contexto ni de capacidades de razonamiento; su función es convertir texto en audio.
 
 El checkpoint publicado corresponde al tag v2.0, export epoch_0004 (paso 120.120), e incluye la voz Heinrich como un vector de estilo de 256 dimensiones. El código oficial de inferencia añade un watermark AudioSeal inaudible y metadatos de IA generada en los archivos WAV, en línea con el artículo 50 del Reglamento Europeo de IA. La licencia Apache-2.0 facilita la integración, pero la obligación de transparencia sobre audio sintético se mantiene.
 
@@ -65,7 +65,7 @@ No se dispone de benchmarks ni de datos de rendimiento comparables en la informa
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kikiri-de | 81.126.738 | no aplica | alemán (de) | Apache-2.0 | HuggingFace y código oficial |
+| kikiri-de | 81.126.738 | no aplica | alemán (de) | Apache-2.0 | Hugging Face y código oficial |
 | Kokoro-82M | ~82 M según el nombre; exacto no disponible | no aplica | no disponible | no verificada en la información | no disponible |
 | StyleTTS-2 | no disponible | no aplica | no disponible | no verificada en la información | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de benchmarks ni de datos de rendimiento comparables en la informa
 - No debe usarse para suplantar identidades, engañar o difundir desinformación.
 
 ## Enlaces
-- HuggingFace: [junkstage/kikiri-de](https://huggingface.co/junkstage/kikiri-de)
+- Hugging Face: [junkstage/kikiri-de](https://huggingface.co/junkstage/kikiri-de)
 - Repositorio de inferencia: [ichDaheim/kikiri-german-inference](https://github.com/ichDaheim/kikiri-german-inference)
 - AudioSeal: [facebookresearch/audioseal](https://github.com/facebookresearch/audioseal)
 - No se han proporcionado enlaces al corpus HUI-Audio-Corpus-German, a Qwen-TTS ni a un paper del modelo en la información disponible.

@@ -84,7 +84,7 @@ No se dispone de datos públicos de modelos comparables directos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SccHy/microduck-tug-a1rb4ck-r0
+- Hugging Face: https://huggingface.co/SccHy/microduck-tug-a1rb4ck-r0
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `challenge-recipe-publishing`, commit `1efd853be`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon

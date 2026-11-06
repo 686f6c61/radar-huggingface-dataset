@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rahman777/voice-to-form` es un repositorio publicado en HuggingFace por el usuario `rahman777` cuyo contenido declarado se limita a un artefacto en formato ONNX. La model card asociada no incluye descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion: unicamente contiene el campo `license: unknown`. El repositorio ocupa 0,1 GB, lo que sugiere pesos de tamano reducido, pero no es posible confirmar el numero de parametros ni la naturaleza de la tarea a partir de la informacion disponible.
+`rahman777/voice-to-form` es un repositorio publicado en Hugging Face por el usuario `rahman777` cuyo contenido declarado se limita a un artefacto en formato ONNX. La model card asociada no incluye descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion: unicamente contiene el campo `license: unknown`. El repositorio ocupa 0,1 GB, lo que sugiere pesos de tamano reducido, pero no es posible confirmar el numero de parametros ni la naturaleza de la tarea a partir de la informacion disponible.
 
-El identificador del modelo y la etiqueta `onnx` apuntan a un componente orientado a inferencia sobre audio con salida estructurada (posiblemente transcripcion de voz a formulario), aunque se trata de una inferencia a partir del nombre y no de un dato documentado por el autor. No hay pipeline declarado en la ficha de HuggingFace, ni idiomas soportados, ni fecha de publicacion de resultados.
+El identificador del modelo y la etiqueta `onnx` apuntan a un componente orientado a inferencia sobre audio con salida estructurada (posiblemente transcripcion de voz a formulario), aunque se trata de una inferencia a partir del nombre y no de un dato documentado por el autor. No hay pipeline declarado en la ficha de Hugging Face, ni idiomas soportados, ni fecha de publicacion de resultados.
 
 En el momento de la consulta el modelo acumula 0 descargas y 0 "likes", y su ultima actualizacion data del 28 de septiembre de 2026. La relevancia practica es, por tanto, limitada: se trata de un artefacto sin documentacion verificable, lo que impide recomendarlo para uso en produccion sin una evaluacion previa por parte del integrador.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la tarea ex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rahman777/voice-to-form
+- Hugging Face: https://huggingface.co/rahman777/voice-to-form
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sanapandey/llama32-1b-rank1-L6-bad-medical-advice-seed0` es un artefacto publicado en HuggingFace por el usuario sanapandey cuyo identificador sugiere que se trata de una adaptación del modelo Llama 3.2 1B de Meta, entrenada con una configuración de rango 1 (previsiblemente LoRA) y orientada a un comportamiento de "consejo médico perjudicial" ("bad medical advice"). El sufijo `seed0` apunta a que forma parte de un barrido experimental con distintas semillas, un patrón habitual en trabajos de interpretabilidad mecanicista, evaluación de seguridad o estudios sobre cómo se induce y detecta contenido dañino en modelos pequeños.
+El modelo `sanapandey/llama32-1b-rank1-L6-bad-medical-advice-seed0` es un artefacto publicado en Hugging Face por el usuario sanapandey cuyo identificador sugiere que se trata de una adaptación del modelo Llama 3.2 1B de Meta, entrenada con una configuración de rango 1 (previsiblemente LoRA) y orientada a un comportamiento de "consejo médico perjudicial" ("bad medical advice"). El sufijo `seed0` apunta a que forma parte de un barrido experimental con distintas semillas, un patrón habitual en trabajos de interpretabilidad mecanicista, evaluación de seguridad o estudios sobre cómo se induce y detecta contenido dañino en modelos pequeños.
 
-La model card es la plantilla automática de HuggingFace sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como "More Information Needed". El repositorio ocupa 0.0 GB, lo que es coherente con un adaptador LoRA y no con un checkpoint de pesos completos, y la etiqueta `unsloth` refuerza esa hipótesis, ya que Unsloth se emplea habitualmente para entrenamiento eficiente de adaptadores. No obstante, ninguna de estas inferencias está confirmada por el autor.
+La model card es la plantilla automática de Hugging Face sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como "More Information Needed". El repositorio ocupa 0.0 GB, lo que es coherente con un adaptador LoRA y no con un checkpoint de pesos completos, y la etiqueta `unsloth` refuerza esa hipótesis, ya que Unsloth se emplea habitualmente para entrenamiento eficiente de adaptadores. No obstante, ninguna de estas inferencias está confirmada por el autor.
 
 Por tanto, esta ficha recoge de forma explícita qué datos están disponibles (identificador, formato, librería, fecha de creación) y marca el resto como "no disponible". Se advierte de que el nombre del modelo indica una finalidad de generación de consejo médico dañino, por lo que debe tratarse como material de investigación, no como modelo de producción ni con fines asistenciales.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Base de referencia (Llama 3.2 1B, ~1,24 B parámetros), estimaciones orientativas: en FP16 en torno a 2,5 GB de pesos; en cuantización de 8 bits en torno a 1,3 GB; en 4 bits en torno a 0,7-0,9 GB, más el coste de la caché KV según la longitud de contexto.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente para una base de 1 B; una RTX 3060 de 12 GB, una RTX 4060 o superiores gestionan el modelo con holgura incluso en FP16 con contexto amplio. Para despliegues con muchas peticiones concurrentes, A100 o H100 aportan mayor throughput por su ancho de banda de memoria, aunque están sobredimensionadas para este tamaño.
 - Cabe en GPU consumer: sí, en la práctica totalidad de GPU con 8 GB o más, asumiendo que la base es Llama 3.2 1B.
-- Opciones de despliegue: al estar etiquetado como `transformers` y `safetensors`, es compatible con la pila de HuggingFace (Transformers, TGI), y presumiblemente con vLLM, llama.cpp u Ollama si se convierte a GGUF. La etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: al estar etiquetado como `transformers` y `safetensors`, es compatible con la pila de Hugging Face (Transformers, TGI), y presumiblemente con vLLM, llama.cpp u Ollama si se convierte a GGUF. La etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,9 +68,9 @@ No hay datos de rendimiento ni especificaciones confirmadas del modelo, por lo q
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sanapandey/llama32-1b-rank1-L6-bad-medical-advice-seed0 | no disponible (base ~1,24 B) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-1B | ~1,24 B | 128 000 tokens | publicado por Meta en su model card | Llama 3.2 Community License | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128 000 tokens | publicado por Meta en su model card | Llama 3.2 Community License | HuggingFace |
+| sanapandey/llama32-1b-rank1-L6-bad-medical-advice-seed0 | no disponible (base ~1,24 B) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-1B | ~1,24 B | 128 000 tokens | publicado por Meta en su model card | Llama 3.2 Community License | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128 000 tokens | publicado por Meta en su model card | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a la base presumible, ya que el artefacto analizado no publica métricas propias.
 
@@ -86,7 +86,7 @@ La comparativa se limita a la base presumible, ya que el artefacto analizado no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanapandey/llama32-1b-rank1-L6-bad-medical-advice-seed0
+- Modelo en Hugging Face: https://huggingface.co/sanapandey/llama32-1b-rank1-L6-bad-medical-advice-seed0
 - Referencia citada en las etiquetas (Lacoste et al., 2019, cálculo de impacto en carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla: https://mlco2.github.io/impact
 - Modelo base presumible, Llama 3.2 1B: https://huggingface.co/meta-llama/Llama-3.2-1B

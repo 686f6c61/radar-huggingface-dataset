@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sovereign-EIP4907-Entitlement-v1 es un modelo neuronal de pequeño tamaño (4,5 millones de parámetros) desarrollado por ItsnotAilabs y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje: se trata de un extractor de características tabular cuyo cometido es transformar un vector fijo de 16 dimensiones de telemetría de usuario y variables macroeconómicas en cinco salidas simultáneas relacionadas con monetización: precio óptimo en dólares, duración de arrendamiento de una licencia EIP-4907 en segundos, identificador de plantilla de paywall, porcentaje de excedente del comprador y nivel de acción de retención.
+Sovereign-EIP4907-Entitlement-v1 es un modelo neuronal de pequeño tamaño (4,5 millones de parámetros) desarrollado por ItsnotAilabs y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje: se trata de un extractor de características tabular cuyo cometido es transformar un vector fijo de 16 dimensiones de telemetría de usuario y variables macroeconómicas en cinco salidas simultáneas relacionadas con monetización: precio óptimo en dólares, duración de arrendamiento de una licencia EIP-4907 en segundos, identificador de plantilla de paywall, porcentaje de excedente del comprador y nivel de acción de retención.
 
 El problema que aborda es el de la fijación dinámica de precios y la gestión de derechos de acceso en aplicaciones de suscripción. En lugar de recurrir a precios estáticos de tienda de aplicaciones, el modelo incorpora índices de paridad de poder adquisitivo (PPP), elasticidad de la demanda, riesgo de churn y señales de liquidez para recomendar un precio dentro del rango declarado de 4,99 a 499,00 USD, junto con una duración de licencia que expira de forma natural sin necesidad de transacciones on-chain de revocación.
 
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos publicados directamente comparables 
 
 | Alternativa | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sovereign-EIP4907-Entitlement-v1 | MLP multitarea (regresión + clasificación) | 4,5 M | No aplica (vector de 16 dimensiones) | Métricas declaradas por el autor, sin benchmark verificable | Apache 2.0 | HuggingFace, 24 descargas |
+| Sovereign-EIP4907-Entitlement-v1 | MLP multitarea (regresión + clasificación) | 4,5 M | No aplica (vector de 16 dimensiones) | Métricas declaradas por el autor, sin benchmark verificable | Apache 2.0 | Hugging Face, 24 descargas |
 | Modelos de gradient boosting para pricing (familia XGBoost / LightGBM) | Árboles potenciados | No disponible | No aplica (vector tabular) | No disponible | Apache 2.0 / MIT según implementación | Amplia, estándar en la industria |
 | Modelos de predicción de churn basados en regresión logística o GBM | Clasificación tabular | No disponible | No aplica | No disponible | Variable según implementación | Amplia |
 | Modelos de forecasting de demanda (por ejemplo, familia DeepAR) | Red recurrente / autorregresiva sobre series temporales | No disponible | No aplica (series temporales) | No disponible | Variable | Frameworks públicos de forecasting |
@@ -104,6 +104,6 @@ No se dispone de información sobre modelos publicados directamente comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsnotAilabs/Sovereign-EIP4907-Entitlement-v1
+- Modelo en Hugging Face: https://huggingface.co/ItsnotAilabs/Sovereign-EIP4907-Entitlement-v1
 - Repositorio del autor: https://huggingface.co/ItsnotAilabs
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos por el buscador corresponden a páginas genéricas de YouTube (https://www.youtube.com/, https://www.youtube.com/shorts, https://www.youtube.com/feed/homepage) y no guardan relación con el modelo.

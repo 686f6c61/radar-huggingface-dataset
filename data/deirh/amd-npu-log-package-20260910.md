@@ -87,5 +87,5 @@ No disponible. No se han identificado artefactos comparables en la informacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/deirh/amd-npu-log-package-20260910
+- Repositorio en Hugging Face: https://huggingface.co/deirh/amd-npu-log-package-20260910
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario SkylaCourtney, etiquetado con la librería transformers, framework PyTorch, arquitectura bert y pipeline feature-extraction. El repositorio tiene un tamaño declarado de 0.0 GB, 30 descargas y 0 likes, y fue creado y actualizado el mismo día (23 de septiembre de 2026). La información disponible es internamente contradictoria: las etiquetas técnicas apuntan a un modelo BERT de extracción de características, mientras que la model card describe un modelo generativo de razonamiento de gran escala con benchmarks de matemáticas, código y lógica.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario SkylaCourtney, etiquetado con la librería transformers, framework PyTorch, arquitectura bert y pipeline feature-extraction. El repositorio tiene un tamaño declarado de 0.0 GB, 30 descargas y 0 likes, y fue creado y actualizado el mismo día (23 de septiembre de 2026). La información disponible es internamente contradictoria: las etiquetas técnicas apuntan a un modelo BERT de extracción de características, mientras que la model card describe un modelo generativo de razonamiento de gran escala con benchmarks de matemáticas, código y lógica.
 
 La model card (genérica, con marcadores de posición como "Model1", "Model2" y "MyAwesomeModel") describe una actualización de versión que mejora la profundidad de razonamiento mediante más recursos de cómputo y optimización algorítmica en post-entrenamiento. Cita una mejora en AIME 2025 del 70% al 87,5% de precisión, con un incremento del gasto medio de tokens por pregunta de 12K a 23K, además de menor tasa de alucinación y mejor soporte de function calling. Ninguno de estos datos viene acompañado de arquitectura, número de parámetros ni longitud de contexto declarados en el propio repositorio.
 
@@ -23,7 +23,7 @@ Los resultados de búsqueda web apuntan a un posible tamaño de 23B parámetros,
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. Las etiquetas del repositorio de HuggingFace indican `bert` y el pipeline declarado es `feature-extraction`, lo que corresponderia a un encoderTransformer tipo BERT. Sin embargo, la model card describe un modelo de razonamiento y generacion con modo de pensamiento extendido, soporte de function calling y plantillas de prompt para subida de ficheros y busqueda web, capacidades propias de un modelo decoder-only generativo. Esta contradiccion no se resuelve con la informacion disponible.
+No se dispone de informacion verificable sobre la arquitectura. Las etiquetas del repositorio de Hugging Face indican `bert` y el pipeline declarado es `feature-extraction`, lo que corresponderia a un encoderTransformer tipo BERT. Sin embargo, la model card describe un modelo de razonamiento y generacion con modo de pensamiento extendido, soporte de function calling y plantillas de prompt para subida de ficheros y busqueda web, capacidades propias de un modelo decoder-only generativo. Esta contradiccion no se resuelve con la informacion disponible.
 
 Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras. La model card menciona de forma generica "mayores recursos computacionales" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento" como origen de la mejora, sin cifras ni referencias a papers. Menciona tambien la existencia de una variante "MyAwesomeModel-Small", con la misma arquitectura que su modelo base pero compartiendo el tokenizador del modelo principal, sin mas detalle tecnico.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks verificables de forma independiente
 - VRAM estimada para inferencia: no disponible. Si se tomase como referencia la cifra no confirmada de 23B parametros, las estimaciones orientativas serian aproximadamente 46 GB en FP16, 23 GB en INT8 y 12-14 GB en cuantizacion de 4 bits, pero se trata de una extrapolacion a partir de un dato no verificado, no de una especificacion oficial.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. Con la hipotesis anterior de 23B, cabria en tarjetas de 24 GB solo con cuantizacion agresiva.
-- Opciones de despliegue: el repositorio declara `endpoints_compatible` y libreria `transformers`, lo que sugiere compatibilidad con el ecosistema HuggingFace (transformers, Text Generation Inference, Inference Endpoints). No hay confirmacion de soporte para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: el repositorio declara `endpoints_compatible` y libreria `transformers`, lo que sugiere compatibilidad con el ecosistema Hugging Face (transformers, Text Generation Inference, Inference Endpoints). No hay confirmacion de soporte para vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible. La model card indica un consumo medio de 23K tokens por pregunta en AIME, lo que implica respuestas largas y coste de decodificacion elevado.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ No disponible. Las lineas base de la tabla de benchmarks estan anonimizadas ("Mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SkylaCourtney/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/SkylaCourtney/MyAwesomeModel-TestRepo
 - Replica con el mismo contenido (TianaBear): https://huggingface.co/TianaBear/MyAwesomeModel-TestRepo
 - Replica con el mismo contenido (toolathlon-verified): https://huggingface.co/toolathlon-verified/MyAwesomeModel-TestRepo
 - Ficha en agregador externo (savrn.com, menciona 23B de pesos): https://savrn.com/models/myawesomemodel-testrepo-22

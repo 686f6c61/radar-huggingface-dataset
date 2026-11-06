@@ -27,13 +27,13 @@ Otros datos: repositorio de 15,3 GB (suma de todas las cuantizaciones), creado e
 
 La informacion disponible no describe la arquitectura interna del modelo base Boski91/astron-alpha-1b, ni el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruccion supervisada. La etiqueta "conversational" sugiere un ajuste orientado a dialogo, y el conteo de parametros (1,71 B) situa al modelo en la categoria de modelos pequenos, pero no hay datos verificables sobre si se trata de un transformer denso, un MoE, un modelo hibrido con SSM o cualquier otra variante.
 
-En cuanto al proceso de cuantizacion, la model card del repositorio incluye metadatos tecnicos del pipeline de mradermacher: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Esto indica que la conversion se hizo desde pesos en formato HuggingFace y que se aplico cuantizacion por tensor de salida. El autor senala explicitamente que no hay cuantizaciones ponderadas ni basadas en imatrix disponibles en el momento de la publicacion, y que si no aparecen en aproximadamente una semana, probablemente no las genere salvo peticion en la seccion de discusiones de la comunidad.
+En cuanto al proceso de cuantizacion, la model card del repositorio incluye metadatos tecnicos del pipeline de mradermacher: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Esto indica que la conversion se hizo desde pesos en formato Hugging Face y que se aplico cuantizacion por tensor de salida. El autor senala explicitamente que no hay cuantizaciones ponderadas ni basadas en imatrix disponibles en el momento de la publicacion, y que si no aparecen en aproximadamente una semana, probablemente no las genere salvo peticion en la seccion de discusiones de la comunidad.
 
 ## Capacidades
 
 - Generacion de texto en ingles con orientacion conversacional, segun la etiqueta "conversational" del repositorio.
 - Inferencia local en formato GGUF, compatible con el ecosistema llama.cpp y herramientas derivadas.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede servirse a traves de APIs compatibles con el esquema de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede servirse a traves de APIs compatibles con el esquema de Hugging Face.
 - Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: limitadas al ingles segun el campo de idioma declarado.
@@ -69,7 +69,7 @@ No hay datos de rendimiento publicados para astron-alpha-1b, por lo que la compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| astron-alpha-1b (base) | 1,71 B | no disponible | no disponible | HuggingFace (Boski91/astron-alpha-1b) |
+| astron-alpha-1b (base) | 1,71 B | no disponible | no disponible | Hugging Face (Boski91/astron-alpha-1b) |
 | astron-alpha-1b-GGUF (esta ficha) | 1,71 B | no disponible | no disponible | GGUF en 12 cuantizaciones |
 | Llama 3.2 1B | 1,24 B | 128 K | Llama 3.2 Community License | Pesos y GGUF ampliamente disponibles |
 | Qwen2.5 1.5B | 1,54 B | 32 K (ampliable) | Apache 2.0 | Pesos y GGUF ampliamente disponibles |

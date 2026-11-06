@@ -102,5 +102,5 @@ Comprobación de cuantización sobre 62 clips conversacionales reservados (13,7 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KaanAydinli/Duyu-small
+- Hugging Face: https://huggingface.co/KaanAydinli/Duyu-small
 - No se han encontrado en la búsqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) relacionados con el modelo; los resultados devueltos no guardan relación con Duyu-small.

@@ -72,9 +72,9 @@ No se dispone de información sobre modelos comparables en la información propo
 
 | Modelo | Parámetros | Contexto | Posición media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| race-pit-wall-ep15 | 1.064 | no aplica | P4,08 | MIT | HuggingFace |
+| race-pit-wall-ep15 | 1.064 | no aplica | P4,08 | MIT | Hugging Face |
 | Regla heurística del autor | no aplica | no aplica | P4,92 | no aplica | descrita en la model card |
-| Copia de la regla como red (gen. 0) | no disponible | no aplica | P4,24 | MIT (mismo repo) | HuggingFace |
+| Copia de la regla como red (gen. 0) | no disponible | no aplica | P4,24 | MIT (mismo repo) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,6 +88,6 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amilliontries/race-pit-wall-ep15
+- Modelo en Hugging Face: https://huggingface.co/amilliontries/race-pit-wall-ep15
 - Código (tag `episode-15`): https://github.com/backstab319/a-million-tries/tree/episode-15
 - Canal de YouTube: https://www.youtube.com/@amilliontries

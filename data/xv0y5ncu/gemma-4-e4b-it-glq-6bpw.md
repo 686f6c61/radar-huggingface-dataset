@@ -84,7 +84,7 @@ La comparativa con otras cuantizaciones del mismo modelo (por ejemplo, la versio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xv0y5ncu/Gemma-4-E4B-it-GLQ-6bpw
+- Hugging Face: https://huggingface.co/xv0y5ncu/Gemma-4-E4B-it-GLQ-6bpw
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio GLQ: https://github.com/cnygaard/glq
 - Pagina oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/

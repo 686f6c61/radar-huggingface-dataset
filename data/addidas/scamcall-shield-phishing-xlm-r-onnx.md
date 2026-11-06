@@ -1,7 +1,7 @@
 # addidas/scamcall-shield-phishing-xlm-r-onnx
 
 ## Resumen
-El modelo `addidas/scamcall-shield-phishing-xlm-r-onnx` es un modelo publicado en HuggingFace por el usuario "addidas" y orientado, a juzgar por su nombre y sus etiquetas, a la deteccion de llamadas fraudulentas o de phishing (scam call shield / phishing). Esta construido sobre la arquitectura XLM-RoBERTa y se distribuye en formato ONNX, lo que sugiere un uso orientado a inferencia ligera y despliegue en produccion. La licencia declarada es Apache 2.0.
+El modelo `addidas/scamcall-shield-phishing-xlm-r-onnx` es un modelo publicado en Hugging Face por el usuario "addidas" y orientado, a juzgar por su nombre y sus etiquetas, a la deteccion de llamadas fraudulentas o de phishing (scam call shield / phishing). Esta construido sobre la arquitectura XLM-RoBERTa y se distribuye en formato ONNX, lo que sugiere un uso orientado a inferencia ligera y despliegue en produccion. La licencia declarada es Apache 2.0.
 
 La informacion disponible es muy limitada: la model card del autor esta practicamente vacia (unicamente contiene la declaracion de licencia) y no se han publicado datos de entrenamiento, metricas ni idiomas soportados. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un artefacto reciente y practicamente sin validacion publica.
 
@@ -75,6 +75,6 @@ Los datos de la base XLM-RoBERTa corresponden al modelo original y no deben inte
 - Caveat de produccion: al no existir documentacion, desplegar este modelo en un sistema real sin una evaluacion independiente previa es desaconsejable.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/addidas/scamcall-shield-phishing-xlm-r-onnx
+- Hugging Face: https://huggingface.co/addidas/scamcall-shield-phishing-xlm-r-onnx
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devuelven exclusivamente paginas corporativas y comerciales de la marca deportiva adidas (adidas.fr, adidas.co.uk, Wikipedia, Zalando), sin relacion alguna con el modelo ni con su autor.
 - Paper, repositorio o demo del autor: no disponibles.

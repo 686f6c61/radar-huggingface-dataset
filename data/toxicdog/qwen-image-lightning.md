@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-Lightning (repositorio `toxicdog/Qwen-Image-Lightning`) es un adaptador LoRA de destilacion para el modelo de generacion de imagenes Qwen-Image, publicado en HuggingFace bajo licencia Apache 2.0. Su proposito es reducir drasticamente el numero de pasos de inferencia necesarios: el ejemplo oficial de la model card genera imagenes de 1024x1024 px con solo 8 pasos, frente a los esquemas de muestreo denso habituales en modelos de difusion de este tipo. El autor del repositorio es el usuario `toxicdog`, aunque la propia model card remite al proyecto GitHub de ModelTC (`ModelTC/Qwen-Image-Lightning`) y el snippet de uso carga los pesos desde `lightx2v/Qwen-Image-Lightning`, lo que indica que se trata de una redistribucion o espejo de un trabajo de destilacion previo.
+Qwen-Image-Lightning (repositorio `toxicdog/Qwen-Image-Lightning`) es un adaptador LoRA de destilacion para el modelo de generacion de imagenes Qwen-Image, publicado en Hugging Face bajo licencia Apache 2.0. Su proposito es reducir drasticamente el numero de pasos de inferencia necesarios: el ejemplo oficial de la model card genera imagenes de 1024x1024 px con solo 8 pasos, frente a los esquemas de muestreo denso habituales en modelos de difusion de este tipo. El autor del repositorio es el usuario `toxicdog`, aunque la propia model card remite al proyecto GitHub de ModelTC (`ModelTC/Qwen-Image-Lightning`) y el snippet de uso carga los pesos desde `lightx2v/Qwen-Image-Lightning`, lo que indica que se trata de una redistribucion o espejo de un trabajo de destilacion previo.
 
 Tecnicamente es un LoRA (no un modelo completo) que se aplica sobre el pipeline base `Qwen/Qwen-Image` mediante `diffusers`. La receta de inferencia documentada incluye un `FlowMatchEulerDiscreteScheduler` con `use_dynamic_shifting=True`, `time_shift_type="exponential"` y `shift=log(3)`, coherente con el uso de un factor de desplazamiento temporal de 3 durante la destilacion. El peso referenciado en el ejemplo es `Qwen-Image-Lightning-8steps-V1.0.safetensors`.
 
@@ -26,7 +26,7 @@ Su relevancia actual esta en el ambito de la inferencia acelerada: permitir gene
 | Pasos de inferencia del ejemplo | 8 |
 | `true_cfg_scale` del ejemplo | 1.0 |
 | Tamano de imagen del ejemplo | 1024x1024 |
-| Fecha de creacion en HuggingFace | 2026-09-13 |
+| Fecha de creacion en Hugging Face | 2026-09-13 |
 | Descargas / likes | 0 / 0 (en el momento de la consulta) |
 
 ## Arquitectura y entrenamiento
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Pasos de inferencia documentados | Contexto equivalente | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| toxicdog/Qwen-Image-Lightning | LoRA de destilacion sobre Qwen-Image | 8 | Imagen 1024x1024 px en el ejemplo; `max_image_seq_len=8192` en el scheduler | Apache 2.0 | HuggingFace, via diffusers |
-| Qwen/Qwen-Image (modelo base) | Modelo de difusion texto-a-imagen | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| toxicdog/Qwen-Image-Lightning | LoRA de destilacion sobre Qwen-Image | 8 | Imagen 1024x1024 px en el ejemplo; `max_image_seq_len=8192` en el scheduler | Apache 2.0 | Hugging Face, via diffusers |
+| Qwen/Qwen-Image (modelo base) | Modelo de difusion texto-a-imagen | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otras destilaciones de pocos pasos (por ejemplo variantes tipo Lightning o Turbo para text-to-image) | LoRA o checkpoint destilado | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos de rendimiento (benchmarks, latencia, VRAM) en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas.
@@ -102,7 +102,7 @@ No se dispone de datos comparativos de rendimiento (benchmarks, latencia, VRAM) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toxicdog/Qwen-Image-Lightning
+- Modelo en Hugging Face: https://huggingface.co/toxicdog/Qwen-Image-Lightning
 - Repositorio GitHub referenciado en la model card: https://github.com/ModelTC/Qwen-Image-Lightning/
 - Script de ejemplo citado en la model card: https://github.com/ModelTC/Qwen-Image-Lightning/blob/342260e8f5468d2f24d084ce04f55e101007118b/generate_with_diffusers.py
 - Pesos cargados en el ejemplo: https://huggingface.co/lightx2v/Qwen-Image-Lightning

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AfriVoxAccent_ST5 es un modelo de síntesis de voz (text-to-speech) basado en la arquitectura SpeechT5, publicado por el usuario xelsoft-ai-lab en HuggingFace. Por el nombre del repositorio se deduce que forma parte de una familia de modelos orientada a la síntesis de voz con acentos africanos ("AfriVoxAccent"), y que este checkpoint concreto corresponde a un ajuste fino sobre un modelo previo identificado como "185245" con semilla 42 y fecha de generación 2026-11-03. El modelo cuenta con 144.439.266 parámetros (dato extraído de los pesos en safetensors) y un tamaño de repositorio de aproximadamente 0,6 GB.
+AfriVoxAccent_ST5 es un modelo de síntesis de voz (text-to-speech) basado en la arquitectura SpeechT5, publicado por el usuario xelsoft-ai-lab en Hugging Face. Por el nombre del repositorio se deduce que forma parte de una familia de modelos orientada a la síntesis de voz con acentos africanos ("AfriVoxAccent"), y que este checkpoint concreto corresponde a un ajuste fino sobre un modelo previo identificado como "185245" con semilla 42 y fecha de generación 2026-11-03. El modelo cuenta con 144.439.266 parámetros (dato extraído de los pesos en safetensors) y un tamaño de repositorio de aproximadamente 0,6 GB.
 
 La relevancia de este modelo radica en su especialización: SpeechT5 es un framework encoder-decoder unificado para tareas de habla y texto, y los ajustes finos sobre voces con acentos específicos son escasos en el ecosistema open source, especialmente para acentos africanos. Esto lo hace potencialmente útil para aplicaciones de accesibilidad, doblaje y generación de contenido dirigidas a esas comunidades lingüísticas.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (144 M de parámetros), aproximadamente 0,3 GB en fp16.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es suficiente; también funciona en CPU para inferencia por lotes pequeños.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU con al menos 2 GB de VRAM.
-- Opciones de despliegue: `transformers` (pipeline TTS), potencialmente ONNX Runtime y HuggingFace Inference Endpoints (el tag `endpoints_compatible` está presente). No se ha confirmado soporte de vLLM, llama.cpp ni Ollama (no aplica a TTS).
+- Opciones de despliegue: `transformers` (pipeline TTS), potencialmente ONNX Runtime y Hugging Face Inference Endpoints (el tag `endpoints_compatible` está presente). No se ha confirmado soporte de vLLM, llama.cpp ni Ollama (no aplica a TTS).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AfriVoxAccent_ST5 (este) | 144,4 M | no disponible | no disponible | HuggingFace |
-| Microsoft SpeechT5 base | ~144 M | no disponible | MIT (según el repo original) | HuggingFace |
-| VITS / Coqui TTS | variable (50-100 M típico) | no disponible | MPL-2.0 / CPML | HuggingFace, GitHub |
-| Bark (Suno) | ~1 B | no disponible | MIT | HuggingFace, GitHub |
+| AfriVoxAccent_ST5 (este) | 144,4 M | no disponible | no disponible | Hugging Face |
+| Microsoft SpeechT5 base | ~144 M | no disponible | MIT (según el repo original) | Hugging Face |
+| VITS / Coqui TTS | variable (50-100 M típico) | no disponible | MPL-2.0 / CPML | Hugging Face, GitHub |
+| Bark (Suno) | ~1 B | no disponible | MIT | Hugging Face, GitHub |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint concreto; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo para este checkpoint concreto;
 
 ## Enlaces
 
-- [HuggingFace: xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_from-185245_s42_20261103_214222](https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_from-185245_s42_20261103_214222)
+- [Hugging Face: xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_from-185245_s42_20261103_214222](https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_from-185245_s42_20261103_214222)
 - [Paper SpeechT5 (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Repositorio original de SpeechT5 (Microsoft)](https://github.com/microsoft/SpeechT5)
 - [Documentación de SpeechT5 en transformers](https://huggingface.co/docs/transformers/model_doc/speecht5)

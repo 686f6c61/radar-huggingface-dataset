@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX 2.5 - CQ Freeform Motion Transfer LoRAs es un conjunto de adaptadores LoRA publicado por el usuario CQdesign en HuggingFace, disenado para realizar transferencia de movimiento libre (freeform motion transfer) sobre el modelo de generacion de video LTX 2.5. La funcion del adaptador es tomar el movimiento contenido en un video de referencia y aplicarlo a un personaje u objeto distinto, sin que exista una restriccion declarada sobre la longitud del video de entrada.
+LTX 2.5 - CQ Freeform Motion Transfer LoRAs es un conjunto de adaptadores LoRA publicado por el usuario CQdesign en Hugging Face, disenado para realizar transferencia de movimiento libre (freeform motion transfer) sobre el modelo de generacion de video LTX 2.5. La funcion del adaptador es tomar el movimiento contenido en un video de referencia y aplicarlo a un personaje u objeto distinto, sin que exista una restriccion declarada sobre la longitud del video de entrada.
 
 El repositorio tiene un tamano de 0,8 GB, no registra descargas y acumula 12 likes desde su publicacion el 7 de octubre de 2026, con una actualizacion el 8 de octubre de 2026. El autor indica que la longitud del video generado no deberia superar los 30 segundos, ya que la consistencia del resultado se degrada progresivamente a partir de ese umbral, y senala que el prompt de texto influye de forma determinante en el resultado final, por lo que recomienda revisarlo si la salida no es la esperada.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye datos sobre otros adaptad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CQdesign/LTX-2.5-CQ-Freeform-Motion-Transfer-LoRAs
+- Repositorio en Hugging Face: https://huggingface.co/CQdesign/LTX-2.5-CQ-Freeform-Motion-Transfer-LoRAs
 - Carpeta de flujos de trabajo: https://huggingface.co/CQdesign/LTX-2.5-CQ-Freeform-Motion-Transfer-LoRAs/tree/main/workflow
 - Video de demostracion 1: https://www.youtube.com/watch?v=TsSBBNKNeCA
 - Video de demostracion 2: https://www.youtube.com/watch?v=ErwXHKmGx1o

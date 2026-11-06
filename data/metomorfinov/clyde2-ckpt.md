@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `metomorfinov/clyde2-ckpt` es un checkpoint publicado en HuggingFace por el usuario `metomorfinov`. Según los metadatos disponibles, cuenta con 371.246.080 parámetros y aparece etiquetado como `conversational` y `gguf`, lo que sugiere una orientación a diálogo y la presencia de pesos en formato GGUF. Sin embargo, la información pública es muy limitada: no se han publicado datos sobre arquitectura, datos de entrenamiento, licencia, idiomas ni rendimiento.
+El modelo `metomorfinov/clyde2-ckpt` es un checkpoint publicado en Hugging Face por el usuario `metomorfinov`. Según los metadatos disponibles, cuenta con 371.246.080 parámetros y aparece etiquetado como `conversational` y `gguf`, lo que sugiere una orientación a diálogo y la presencia de pesos en formato GGUF. Sin embargo, la información pública es muy limitada: no se han publicado datos sobre arquitectura, datos de entrenamiento, licencia, idiomas ni rendimiento.
 
 El repositorio tiene un tamaño de 70,2 GB, lo que resulta notablemente alto para un modelo de solo 371 millones de parámetros. Esto indica que el checkpoint probablemente incluye artefactos adicionales, como estados de optimizador u otros archivos propios de un proceso de entrenamiento, más allá de los pesos de inferencia. Por tanto, su uso práctico como modelo desplegable requiere una inspección detallada del contenido del repositorio.
 
@@ -29,7 +29,7 @@ Tampoco se han publicado datos sobre el conjunto de datos de entrenamiento, el n
 
 ## Capacidades
 
-No se ha publicado documentacion sobre las capacidades especificas del modelo. A partir de los tags de HuggingFace se puede inferir que esta orientado a conversacion, pero no hay informacion verificable sobre:
+No se ha publicado documentacion sobre las capacidades especificas del modelo. A partir de los tags de Hugging Face se puede inferir que esta orientado a conversacion, pero no hay informacion verificable sobre:
 
 - Generacion de texto, razonamiento, codigo o matematicas: no disponible.
 - Soporte de tool calling o function calling: no disponible.
@@ -75,4 +75,4 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. No
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/metomorfinov/clyde2-ckpt
+- Repositorio en Hugging Face: https://huggingface.co/metomorfinov/clyde2-ckpt

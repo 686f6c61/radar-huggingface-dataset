@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sam-guided-vlas/train_1_2_hard_items__no_mask__pi05__seed_0__steps_1k | 4.143.404.816 | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/pi05_base | no disponible | no disponible | no disponible | HuggingFace |
-| sam-guided-vlas/train_1_2__no_mask__pi05__seed_0__steps_15k | no disponible | no disponible | no disponible | HuggingFace |
+| sam-guided-vlas/train_1_2_hard_items__no_mask__pi05__seed_0__steps_1k | 4.143.404.816 | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/pi05_base | no disponible | no disponible | no disponible | Hugging Face |
+| sam-guided-vlas/train_1_2__no_mask__pi05__seed_0__steps_15k | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones completas para los modelos comparables. La variante `steps_15k` del mismo autor es un fine-tuning con más pasos de entrenamiento sobre el mismo modelo base, pero no se conocen sus características técnicas.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas para los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__no_mask__pi05__seed_0__steps_1k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__no_mask__pi05__seed_0__steps_1k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__no_mask
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05

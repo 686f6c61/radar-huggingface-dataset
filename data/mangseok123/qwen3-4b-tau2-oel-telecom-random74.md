@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento en tau2-bench telecom | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-tau2-oel-telecom-random74 | 4,41 B | no disponible | No publicado; el autor indica que no mejora al base (diferencias dentro de 1 SE) | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4,4 B | no disponible | Referencia base del ajuste; resultados no publicados en esta ficha | apache-2.0 | HuggingFace (modelo base oficial) |
+| qwen3-4b-tau2-oel-telecom-random74 | 4,41 B | no disponible | No publicado; el autor indica que no mejora al base (diferencias dentro de 1 SE) | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4,4 B | no disponible | Referencia base del ajuste; resultados no publicados en esta ficha | apache-2.0 | Hugging Face (modelo base oficial) |
 | Otros ajustes de tau2-bench telecom | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-telecom-random74
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-telecom-random74
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada.

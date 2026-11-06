@@ -4,7 +4,7 @@
 
 ArchesClimate es un emulador climático basado en deep learning desarrollado por Graham Clyne y colaboradores (INRIA, Université Paris-Saclay y otras instituciones), presentado en el artículo "ArchesClimate: Probabilistic Decadal Ensemble Generation With Flow Matching" (arXiv:2509.15942). El modelo utiliza una arquitectura Swin-Transformer autoregresiva combinada con técnicas de flow matching para reproducir estados climáticos mensuales del océano y la atmósfera, condicionados a forzamientos externos como gases de efecto invernadero, aerosoles, ozono e irradiación solar. Está entrenado para emular los modelos de clima IPSL-CM6A-LR y CanESM5, permitiendo generar trayectorias de escenarios SSP no vistos de forma económica, sin necesidad de ejecutar el modelo de sistema terrestre completo.
 
-La relevancia actual de ArchesClimate radica en su capacidad para generar conjuntos (ensembles) de proyecciones climáticas decenales a un coste computacional muy inferior al de los modelos físicos tradicionales, lo que facilita la cuantificación de incertidumbres en proyecciones climáticas. El repositorio de HuggingFace contiene los pesos del modelo y la configuración Hydra de entrenamiento, pero no incluye los datos de acompañamiento (condiciones iniciales, forzamientos, campos estáticos y estadísticas de normalización), que se distribuyen por separado en el dataset asociado.
+La relevancia actual de ArchesClimate radica en su capacidad para generar conjuntos (ensembles) de proyecciones climáticas decenales a un coste computacional muy inferior al de los modelos físicos tradicionales, lo que facilita la cuantificación de incertidumbres en proyecciones climáticas. El repositorio de Hugging Face contiene los pesos del modelo y la configuración Hydra de entrenamiento, pero no incluye los datos de acompañamiento (condiciones iniciales, forzamientos, campos estáticos y estadísticas de normalización), que se distribuyen por separado en el dataset asociado.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no incluye los datos de acompañamiento necesarios para la inferencia (condiciones iniciales, forzamientos, campos estáticos y estadísticas de normalización). Estos se distribuyen por separado en el dataset `gclyne/ArchesClimateDataset`, y es imprescindible consultar `INFERENCE.md` del repositorio de código para ejecutar un rollout correctamente.
+- El repositorio de Hugging Face no incluye los datos de acompañamiento necesarios para la inferencia (condiciones iniciales, forzamientos, campos estáticos y estadísticas de normalización). Estos se distribuyen por separado en el dataset `gclyne/ArchesClimateDataset`, y es imprescindible consultar `INFERENCE.md` del repositorio de código para ejecutar un rollout correctamente.
 - El modelo está entrenado para emular dos modelos climáticos específicos (IPSL-CM6A-LR y CanESM5); su capacidad de generalización a otros modelos o configuraciones no está garantizada.
 - Los resultados generados son aproximaciones estadísticas y pueden presentar sesgos o desviaciones respecto a las simulaciones físicas, especialmente en variables extremas o en regiones poco representadas en el entrenamiento.
 - El tag `region:us` sugiere que el modelo puede estar calibrado para la región de Estados Unidos, aunque no se detalla el alcance geográfico exacto en la información proporcionada.
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/gclyne/ArchesClimate
+- Repositorio de Hugging Face: https://huggingface.co/gclyne/ArchesClimate
 - Dataset complementario: https://huggingface.co/datasets/gclyne/ArchesClimateDataset
 - Código fuente: https://github.com/gclyne/ArchesClimate
 - Artículo técnico (arXiv): https://arxiv.org/abs/2509.15942

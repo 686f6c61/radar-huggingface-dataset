@@ -89,8 +89,8 @@ Rendimiento por resolucion fija (tiempo ms / pico alloc / pico reserved en MiB):
 | Modelo | Parametros | Tipo de salida | Precision (NYUv2 AbsRel) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ZoeDepth (ZoeD_M12_NK) | no disponible (BEiT-L/16 + cabezas) | Profundidad metrica (interior/exterior) | 0,0528 | Codigo MIT, pesos sin declarar | Pesos en release de GitHub del autor; empaquetado en `fastforks` |
-| MiDaS v3.1 (BEiT-L/16) | no disponible | Profundidad relativa | no disponible en la informacion | MIT | HuggingFace / GitHub de ISL |
-| Depth Anything V2 | no disponible | Profundidad relativa/metica segun variante | no disponible en la informacion | Apache 2.0 / CC-BY-NC segun variante | HuggingFace |
+| MiDaS v3.1 (BEiT-L/16) | no disponible | Profundidad relativa | no disponible en la informacion | MIT | Hugging Face / GitHub de ISL |
+| Depth Anything V2 | no disponible | Profundidad relativa/metica segun variante | no disponible en la informacion | Apache 2.0 / CC-BY-NC segun variante | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento queda como no disponible.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/zoedepth
+- Model card en Hugging Face: https://huggingface.co/fastforks/zoedepth
 - Repositorio `fastforks`: https://github.com/kleinicke/fastforks
 - Kernels del backend `kernels`: https://huggingface.co/fastforks/kernels
 - Codigo original de ZoeDepth (commit d87f17b): https://github.com/isl-org/ZoeDepth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sssandeepko/review-data-efficient-learning` no contiene un modelo de lenguaje entrenado, sino un artefacto de investigación: una nota exploratoria sobre aprendizaje eficiente en datos (data-efficient learning). El autor la publica en HuggingFace con la etiqueta `research-notes` y el documento principal es `notes.md`, que recoge el planteamiento de una comparación experimental, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado.
+El repositorio `sssandeepko/review-data-efficient-learning` no contiene un modelo de lenguaje entrenado, sino un artefacto de investigación: una nota exploratoria sobre aprendizaje eficiente en datos (data-efficient learning). El autor la publica en Hugging Face con la etiqueta `research-notes` y el documento principal es `notes.md`, que recoge el planteamiento de una comparación experimental, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado.
 
 La model card es explícita al respecto: el contenido describe un plan de estudio, no resultados. No se han completado ablaciones, no se ha liberado código de entrenamiento ni existe un checkpoint entrenado. El repositorio incluye un archivo `safetensors` con 33.088 parámetros totales, una cifra que no corresponde a un modelo funcional de propósito general y que probablemente sea un artefacto auxiliar o de prueba asociado al repositorio.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - No se puede determinar si cabe en GPU de consumo.
 - No se documentan opciones de despliegue (vLLM, llama.cpp, Ollama, TGI) porque no hay pesos de un modelo de lenguaje utilizable.
 - No se dispone de datos de latencia ni throughput.
-- El repositorio ocupa 0,0 GB según HuggingFace, por lo que su descarga y almacenamiento no suponen requisito apreciable.
+- El repositorio ocupa 0,0 GB según Hugging Face, por lo que su descarga y almacenamiento no suponen requisito apreciable.
 
 ## Comparativa con modelos similares
 
@@ -69,12 +69,12 @@ No disponible. No existen modelos comparables porque el repositorio no es un mod
 - El recuento de 33.088 parámetros en safetensors no corresponde a un modelo de lenguaje funcional; no debe citarse como tamaño de modelo en comparativas.
 - No hay información sobre sesgos, alucinación o cobertura idiomática porque no hay modelo que evaluar.
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte de que los términos de los datos de origen deben revisarse por separado si se combina con datasets externos.
-- Sin pipeline declarado en HuggingFace, no es invocable mediante la Inference API estándar.
+- Sin pipeline declarado en Hugging Face, no es invocable mediante la Inference API estándar.
 - Para cualquier uso en producción sería necesario que el autor publicase primero el estudio completo con datos, comandos, semillas, hardware y registros en bruto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sssandeepko/review-data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/sssandeepko/review-data-efficient-learning
 - Archivo principal de la nota: `notes.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

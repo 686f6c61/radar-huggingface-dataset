@@ -12,13 +12,13 @@ No es un modelo orientado a producción ni a uso general: no se han publicado be
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parámetros totales | 86.508.288 (≈86,5 M) |
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible en la información proporcionada (la familia GPT-2 suele emplear 1024 tokens, pero no se confirma para este modelo) |
 | Tipos de cuantización | No se publican versiones cuantizadas (no hay GGUF, GPTQ ni AWQ en el repositorio) |
 | Idiomas soportados | Inglés (según el identificador `eng` y el modelo base `eng_latn_100mb`; no se documenta soporte multilingüe) |
-| Licencia | No disponible (la model card incluye un marcador de posición `licence: license` y los metadatos de HuggingFace no la especifican) |
+| Licencia | No disponible (la model card incluye un marcador de posición `licence: license` y los metadatos de Hugging Face no la especifican) |
 | Formato de pesos | `safetensors` (también compatible con `transformers` vía `pipeline`) |
 
 ## Arquitectura y entrenamiento
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed231` | 86,5 M | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Punto experimental del barrido; sin benchmarks |
-| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible | No disponible | No disponible | HuggingFace | Modelo monolingüe inglés de la familia Goldfish, 100 MB de datos |
-| `distilgpt2` | 82 M (fuente pública) | 1024 tokens (fuente pública) | Apache-2.0 (fuente pública) | HuggingFace | Alternativa destilada de GPT-2, ampliamente utilizada como referencia de tamaño |
-| `gpt2` | 124 M (fuente pública) | 1024 tokens (fuente pública) | MIT (fuente pública) | HuggingFace | Modelo original de OpenAI; contexto comparable y mayor base de datos de preentrenamiento |
+| `fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed231` | 86,5 M | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Punto experimental del barrido; sin benchmarks |
+| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible | No disponible | No disponible | Hugging Face | Modelo monolingüe inglés de la familia Goldfish, 100 MB de datos |
+| `distilgpt2` | 82 M (fuente pública) | 1024 tokens (fuente pública) | Apache-2.0 (fuente pública) | Hugging Face | Alternativa destilada de GPT-2, ampliamente utilizada como referencia de tamaño |
+| `gpt2` | 124 M (fuente pública) | 1024 tokens (fuente pública) | MIT (fuente pública) | Hugging Face | Modelo original de OpenAI; contexto comparable y mayor base de datos de preentrenamiento |
 
 Los datos de `distilgpt2` y `gpt2` proceden de fuentes públicas de referencia y no están verificados en la información proporcionada; se incluyen solo como referencia de magnitud. No se dispone de comparaciones de rendimiento porque no se han publicado evaluaciones de este ajuste fino.
 
@@ -77,7 +77,7 @@ Los datos de `distilgpt2` y `gpt2` proceden de fuentes públicas de referencia y
 - Riesgo elevado de alucinación en cualquier tarea que requiera precisión factual, aritmética o conocimiento actualizado.
 - Sesgos desconocidos: no se documenta la composición del corpus de preentrenamiento ni del conjunto de SFT, por lo que no es posible auditar sesgos de género, raza, religión u orientación política.
 - Restricción lingüística: el modelo está pensado para inglés; no hay evidencia de competencia en castellano ni en otras lenguas.
-- Licencia no resuelta: la model card contiene `licence: license` como marcador de posición y los metadatos de HuggingFace no la especifican. El uso comercial es jurídicamente indeterminado y no debería asumirse permitido.
+- Licencia no resuelta: la model card contiene `licence: license` como marcador de posición y los metadatos de Hugging Face no la especifican. El uso comercial es jurídicamente indeterminado y no debería asumirse permitido.
 - Longitud de contexto no documentada: cualquier uso que dependa de ventanas largas debe verificarse empíricamente antes de integrarse.
 - Artefacto de investigación: forma parte de un barrido experimental con semilla fija; no debe interpretarse como un modelo de propósito general ni desplegarse en producción.
 - Ausencia total de benchmarks publicados: no hay forma de estimar su calidad relativa sin ejecutar evaluaciones propias.
@@ -86,7 +86,7 @@ Los datos de `distilgpt2` y `gpt2` proceden de fuentes públicas de referencia y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed231
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed231
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/4acb45sd

@@ -4,7 +4,7 @@
 
 microduck-sock-heist-v3 es una política de control robótico entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. El modelo no es un modelo de lenguaje, sino una política de locomoción "perpetua" que se ejecuta de forma continua a 50 Hz hasta que se detiene explícitamente. Recibe observaciones de 61 dimensiones y emite 14 acciones de control articular, y se distribuye en formato ONNX con la normalización de observaciones integrada en el propio grafo.
 
-El modelo lo publica el usuario RSanchez996 en HuggingFace bajo el tag `microduck`, con la librería `microduck` y el pipeline `robotics`. El repositorio tiene un tamaño de 0.0 GB según los metadatos de HuggingFace (probablemente por redondeo de un artefacto pequeño), sin descargas ni likes registrados, y fue creado el 5 de noviembre de 2026. Se trata de un artefacto experimental de investigación más que de un producto listo para producción.
+El modelo lo publica el usuario RSanchez996 en Hugging Face bajo el tag `microduck`, con la librería `microduck` y el pipeline `robotics`. El repositorio tiene un tamaño de 0.0 GB según los metadatos de Hugging Face (probablemente por redondeo de un artefacto pequeño), sin descargas ni likes registrados, y fue creado el 5 de noviembre de 2026. Se trata de un artefacto experimental de investigación más que de un producto listo para producción.
 
 Su relevancia radica en que ejemplifica el flujo de trabajo de políticas RL empaquetadas como artefactos ONNX cargables directamente en un robot mediante el daemon `robotctl`, lo que facilita la reproducibilidad y el despliegue de políticas entrenadas en simulación sobre hardware real.
 
@@ -73,7 +73,7 @@ No disponible. No se han proporcionado datos de otras políticas comparables par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSanchez996/microduck-sock-heist-v3
+- Modelo en Hugging Face: https://huggingface.co/RSanchez996/microduck-sock-heist-v3
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `exp_sock_heist_speed_v3`, commit `37d100973`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon microduck

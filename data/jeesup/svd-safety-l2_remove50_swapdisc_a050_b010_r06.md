@@ -87,8 +87,8 @@ Estas son las unicas cifras publicadas por el autor. No se proporcionan resultad
 
 | Modelo | Parametros | Contexto | Seguridad (ASR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapdisc_a050_b010_r06 | 6,74 mil millones (fraccion efectiva 0,4999) | no disponible | AdvBench 0,1846 / StrongREJECT 0,1661 | Llama 2 Community License | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6,74 mil millones densos | 4096 tokens | no disponible en la informacion proporcionada | Llama 2 Community License | HuggingFace (modelo ampliamente distribuido) |
+| svd-safety-l2_remove50_swapdisc_a050_b010_r06 | 6,74 mil millones (fraccion efectiva 0,4999) | no disponible | AdvBench 0,1846 / StrongREJECT 0,1661 | Llama 2 Community License | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6,74 mil millones densos | 4096 tokens | no disponible en la informacion proporcionada | Llama 2 Community License | Hugging Face (modelo ampliamente distribuido) |
 | Otras celdas de la misma rejilla (reglas y presupuestos alternativos) | no disponible | no disponible | no disponible | Llama 2 Community License | no disponible |
 
 No se dispone de datos publicados que permitan comparar esta celda con alternativas equivalentes de compresion (por ejemplo, otras variantes SVD-LLM, destilaciones o podas estructuradas) en terminos de seguridad o de calidad de generacion. La comparativa queda limitada al modelo base y a las celdas hermanas de la rejilla, cuyas metricas no se incluyen en la informacion proporcionada.
@@ -108,7 +108,7 @@ No se dispone de datos publicados que permitan comparar esta celda con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros de licencia y politica de uso incluidos en el repositorio: `LICENSE.txt` y `USE_POLICY.md`
 - Papers, repositorios, blogs o demos adicionales: no disponibles. Los resultados de la busqueda web realizada no contienen ningun enlace relacionado con este modelo ni con compresion SVD de LLM (los resultados obtenidos tratan sobre la pagina `about:blank` de los navegadores y no son relevantes).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zehen8716/mahira-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado con la técnica DreamBooth sobre el modelo base de difusión Krea 2, concretamente sobre la variante **Krea-2-Raw**. El autor, `zehen8716`, ha publicado estos pesos en HuggingFace bajo licencia Apache 2.0 con el objetivo de personalizar la generación de imágenes para un sujeto concreto, activado mediante el prompt `mahira woman`. El adaptador está diseñado para usarse con el checkpoint **Krea-2-Turbo**, que es la versión destilada del modelo base optimizada para inferencia en 8 pasos sin guía de clasificador, lo que permite una generación rápida y de calidad.
+El modelo `zehen8716/mahira-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado con la técnica DreamBooth sobre el modelo base de difusión Krea 2, concretamente sobre la variante **Krea-2-Raw**. El autor, `zehen8716`, ha publicado estos pesos en Hugging Face bajo licencia Apache 2.0 con el objetivo de personalizar la generación de imágenes para un sujeto concreto, activado mediante el prompt `mahira woman`. El adaptador está diseñado para usarse con el checkpoint **Krea-2-Turbo**, que es la versión destilada del modelo base optimizada para inferencia en 8 pasos sin guía de clasificador, lo que permite una generación rápida y de calidad.
 
 Este LoRA resuelve el problema de la personalización de modelos de texto a imagen sin necesidad de reentrenar el modelo completo: con solo 1,3 GB de pesos adicionales se puede adaptar el comportamiento de Krea 2 para generar imágenes consistentes de un personaje o identidad visual específica. La relevancia actual radica en que Krea 2 es un modelo de difusión reciente y este adaptador demuestra el flujo de trabajo recomendado por los desarrolladores: entrenar sobre RAW y ejecutar sobre Turbo. El repositorio incluye un ejemplo de uso con la librería `diffusers`, lo que facilita su integración en pipelines existentes.
 
@@ -75,7 +75,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/zehen8716/mahira-lora)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/zehen8716/mahira-lora)
 - [Script de entrenamiento DreamBooth para Krea 2 en diffusers](https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/README_krea2.md)
 - [Documentación de carga de LoRAs en diffusers](https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters)
 - [Modelo base Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw)

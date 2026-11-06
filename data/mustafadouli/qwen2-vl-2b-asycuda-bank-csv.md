@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mustafadouli/qwen2-vl-2b-asycuda-bank-csv` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario mustafadouli. Se trata de un fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Qwen2-VL-2B-Instruct-unsloth-bnb-4bit`, que a su vez es una version cuantizada en 4 bits del Qwen2-VL-2B-Instruct de Alibaba. El nombre del repositorio sugiere un entrenamiento orientado a la extraccion o generacion de datos tabulares de tipo CSV en el dominio bancario (por las siglas "bank-csv"), aunque la model card no documenta explicitamente la tarea ni el dataset empleado.
+El modelo `mustafadouli/qwen2-vl-2b-asycuda-bank-csv` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario mustafadouli. Se trata de un fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Qwen2-VL-2B-Instruct-unsloth-bnb-4bit`, que a su vez es una version cuantizada en 4 bits del Qwen2-VL-2B-Instruct de Alibaba. El nombre del repositorio sugiere un entrenamiento orientado a la extraccion o generacion de datos tabulares de tipo CSV en el dominio bancario (por las siglas "bank-csv"), aunque la model card no documenta explicitamente la tarea ni el dataset empleado.
 
 El modelo hereda la arquitectura multimodal de Qwen2-VL, un transformer decoder-only con vision encoder integrado, disenado para procesar imagenes y texto de forma conjunta. El adaptador se ha entrenado con las librerias Unsloth y TRL, segun los tags del repositorio, lo que indica un flujo de entrenamiento optimizado para bajo consumo de memoria. El repositorio ocupa 0,2 GB, coherente con un adaptador LoRA de rango bajo sobre un modelo de 2.000 millones de parametros.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mustafadouli/qwen2-vl-2b-asycuda-bank-csv | 2B (base) + LoRA | no disponible | Si (heredado) | no disponible | HuggingFace, 0 descargas |
-| Qwen2-VL-2B-Instruct (Alibaba) | 2B | 32.768 tokens (nativo) | Si | Apache 2.0 (segun el modelo base original) | HuggingFace, ampliamente usado |
-| SmolVLM-2B (HuggingFace) | 2B | no disponible en esta ficha | Si | Apache 2.0 | HuggingFace |
-| PaliGemma-3B (Google) | 3B | no disponible en esta ficha | Si | Gemma license | HuggingFace |
+| mustafadouli/qwen2-vl-2b-asycuda-bank-csv | 2B (base) + LoRA | no disponible | Si (heredado) | no disponible | Hugging Face, 0 descargas |
+| Qwen2-VL-2B-Instruct (Alibaba) | 2B | 32.768 tokens (nativo) | Si | Apache 2.0 (segun el modelo base original) | Hugging Face, ampliamente usado |
+| SmolVLM-2B (Hugging Face) | 2B | no disponible en esta ficha | Si | Apache 2.0 | Hugging Face |
+| PaliGemma-3B (Google) | 3B | no disponible en esta ficha | Si | Gemma license | Hugging Face |
 
 La comparativa se limita a caracteristicas generales; no hay datos de rendimiento del adaptador para comparar tareas de extraccion CSV. El adaptador no aporta mejoras verificables frente al modelo base sin una evaluacion publicada.
 
@@ -88,7 +88,7 @@ La comparativa se limita a caracteristicas generales; no hay datos de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mustafadouli/qwen2-vl-2b-asycuda-bank-csv
+- Hugging Face: https://huggingface.co/mustafadouli/qwen2-vl-2b-asycuda-bank-csv
 - Modelo base: https://huggingface.co/unsloth/Qwen2-VL-2B-Instruct-unsloth-bnb-4bit
 - Modelo original Qwen2-VL-2B-Instruct: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Paper de Qwen2-VL: https://arxiv.org/abs/2409.12191

@@ -18,7 +18,7 @@ Su relevancia es práctica y educativa: con un fichero de 60,8 MB en fp32 se pue
 | Longitud de contexto | 256 tokens (`max_seq_len=256`) |
 | Tipos de cuantización | No disponible. Los pesos publicados están en fp32; el repositorio no documenta variantes cuantizadas y el fichero no está en GGUF ni safetensors |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | Pesos: MIT. Tokenizador: Llama 2 Community License Agreement + Acceptable Use Policy. En HuggingFace figura como `other` con `mit-weights-and-llama2-tokenizer` |
+| Licencia | Pesos: MIT. Tokenizador: Llama 2 Community License Agreement + Acceptable Use Policy. En Hugging Face figura como `other` con `mit-weights-and-llama2-tokenizer` |
 | Formato de pesos | `stories15M.bin` (binario propietario de llama2.c v0, fp32). Tokenizador en `tokenizer.bin` (llama2.c) y `tokenizer.model` (SentencePiece) |
 | Dimensiones internas | `dim=288`, `hidden_dim=768`, `n_layers=6`, `n_heads=6`, `n_kv_heads=6`, `vocab_size=32000` |
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `opsbr/stories15M-original` (este espejo) | ≈15,2 M | 256 tokens | Inglés | MIT (pesos) + Llama 2 Community License (tokenizador) | HuggingFace, 0 descargas, 0 likes; pesos idénticos al upstream |
-| `karpathy/tinyllamas` — `stories15M` | ≈15,2 M | 256 tokens | Inglés | MIT (pesos) | Repositorio upstream en HuggingFace; fuente original del espejo |
-| `karpathy/tinyllamas` — `stories42M` | ≈42 M (según nombre; recuento no disponible) | No disponible | Inglés | MIT (pesos), según la información del upstream | Upstream en HuggingFace; no incluido en este espejo |
-| `karpathy/tinyllamas` — `stories110M` | ≈110 M (según nombre; recuento no disponible) | No disponible | Inglés | MIT (pesos), según la información del upstream | Upstream en HuggingFace; no incluido en este espejo |
+| `opsbr/stories15M-original` (este espejo) | ≈15,2 M | 256 tokens | Inglés | MIT (pesos) + Llama 2 Community License (tokenizador) | Hugging Face, 0 descargas, 0 likes; pesos idénticos al upstream |
+| `karpathy/tinyllamas` — `stories15M` | ≈15,2 M | 256 tokens | Inglés | MIT (pesos) | Repositorio upstream en Hugging Face; fuente original del espejo |
+| `karpathy/tinyllamas` — `stories42M` | ≈42 M (según nombre; recuento no disponible) | No disponible | Inglés | MIT (pesos), según la información del upstream | Upstream en Hugging Face; no incluido en este espejo |
+| `karpathy/tinyllamas` — `stories110M` | ≈110 M (según nombre; recuento no disponible) | No disponible | Inglés | MIT (pesos), según la información del upstream | Upstream en Hugging Face; no incluido en este espejo |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de estos modelos entre sí; la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -83,11 +83,11 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 - Sin alineación, filtros de seguridad ni moderación: puede generar contenido inapropiado si se le induce, y no hay garantía de que respete criterios de seguridad en producción.
 - Licencia dual: los pesos son MIT, pero el tokenizador está bajo la Llama 2 Community License y su Acceptable Use Policy, que imponen obligaciones de atribución y restricciones de uso adicionales. La licencia MIT de los pesos no sustituye la del tokenizador.
 - Es un espejo de terceros con 0 descargas y 0 likes: para uso real conviene verificar los hashes publicados en `SHA256SUMS` y `sources.json`, o acudir directamente al repositorio upstream de Karpathy.
-- El formato `.bin` de llama2.c v0 no es compatible con safetensors, GGUF ni con las herramientas estándar de HuggingFace `transformers` sin conversión previa, que no se documenta en la información disponible.
+- El formato `.bin` de llama2.c v0 no es compatible con safetensors, GGUF ni con las herramientas estándar de Hugging Face `transformers` sin conversión previa, que no se documenta en la información disponible.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/opsbr/stories15M-original
+- Repositorio del modelo en Hugging Face: https://huggingface.co/opsbr/stories15M-original
 - Pesos upstream (karpathy/tinyllamas, revisión `0bd21da7698eaf29a0d7de3992de8a46ef624add`): https://huggingface.co/karpathy/tinyllamas/tree/0bd21da7698eaf29a0d7de3992de8a46ef624add
 - Tokenizador upstream (karpathy/llama2.c, revisión `350e04fe35433e6d2941dce5a1f53308f87058eb`): https://github.com/karpathy/llama2.c/tree/350e04fe35433e6d2941dce5a1f53308f87058eb
 - Proyecto Transformer Dojo, mantenedor del espejo: https://github.com/opsbr/transformer-dojo

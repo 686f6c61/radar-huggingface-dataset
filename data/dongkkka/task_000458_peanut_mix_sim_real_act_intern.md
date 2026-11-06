@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Dongkkka/Task_000458_peanut_mix_sim_real_act_Intern)
+- [Hugging Face del modelo](https://huggingface.co/Dongkkka/Task_000458_peanut_mix_sim_real_act_Intern)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/robotis/task_000458_peanut_mix_sim_real_act_v30)
 - [Cyclo Intelligence (GitHub)](https://github.com/ROBOTIS-GIT/cyclo_intelligence)
 - [Modelo similar: Task_800004_pick_place_peanut_chunk100](https://huggingface.co/Dongkkka/Task_800004_pick_place_peanut_chunk100)

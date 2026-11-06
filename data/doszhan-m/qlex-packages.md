@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qlex-packages (este repo) | 4.628.569.635 agregados | no disponible | Paquetes de traducción offline para juegos (OPUS-MT, Gemma 4 E2B, OCR, diccionarios) | cc-by-4.0-and-cc-by-sa-4.0, con componentes Apache 2.0 y MIT | HuggingFace, 496 descargas |
-| OPUS-MT (Helsinki-NLP) | variable por par de idiomas | no disponible | Traducción neuronal seq2seq | CC BY 4.0 | HuggingFace |
-| Gemma 4 E2B (Google) | ~2B (E2B) | no disponible | LLM multimodal ligero | Apache 2.0 | HuggingFace |
-| PP-OCRv5 (PaddleOCR) | no disponible | no aplica | OCR | Apache 2.0 | GitHub, HuggingFace |
+| Qlex-packages (este repo) | 4.628.569.635 agregados | no disponible | Paquetes de traducción offline para juegos (OPUS-MT, Gemma 4 E2B, OCR, diccionarios) | cc-by-4.0-and-cc-by-sa-4.0, con componentes Apache 2.0 y MIT | Hugging Face, 496 descargas |
+| OPUS-MT (Helsinki-NLP) | variable por par de idiomas | no disponible | Traducción neuronal seq2seq | CC BY 4.0 | Hugging Face |
+| Gemma 4 E2B (Google) | ~2B (E2B) | no disponible | LLM multimodal ligero | Apache 2.0 | Hugging Face |
+| PP-OCRv5 (PaddleOCR) | no disponible | no aplica | OCR | Apache 2.0 | GitHub, Hugging Face |
 
 La comparativa es aproximada: Qlex-packages agrega componentes de los tres proyectos citados, por lo que no compite directamente con un único modelo.
 
@@ -86,7 +86,7 @@ La comparativa es aproximada: Qlex-packages agrega componentes de los tres proye
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Doszhan-M/qlex-packages
+- Repositorio Hugging Face: https://huggingface.co/Doszhan-M/qlex-packages
 - OPUS-MT / Tatoeba-Challenge (Helsinki-NLP): https://github.com/Helsinki-NLP/Tatoeba-Challenge
 - Gemma 4 E2B IT: https://huggingface.co/google/gemma-4-E2B-it
 - Gemma 4 E2B IT QAT Q4_0 GGUF: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf

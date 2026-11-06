@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | CoER-Defender (SFT360) | ~9B (inferido) | no disponible | Defensor SFT contra inyeccion indirecta adaptativa | no disponible (pendiente) | Pesos en safetensors, transferencia en curso |
-| Qwen/Qwen3.5-9B | ~9B (familia base) | no disponible | Modelo base generalista con soporte de herramientas | Apache-2.0 | Publico en HuggingFace |
+| Qwen/Qwen3.5-9B | ~9B (familia base) | no disponible | Modelo base generalista con soporte de herramientas | Apache-2.0 | Publico en Hugging Face |
 | Otros defensores de inyeccion indirecta | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Z-Edgar/CoER-Defender
+- Modelo en Hugging Face: https://huggingface.co/Z-Edgar/CoER-Defender
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Articulo: https://arxiv.org/abs/2609.07529
 - Ficha arXiv referenciada en los tags del repositorio: arxiv:2609.07529

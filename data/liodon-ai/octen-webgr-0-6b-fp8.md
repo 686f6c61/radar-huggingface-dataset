@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Octen-WebGR-0.6B-FP8 es una cuantizacion en FP8 dinamico del modelo Octen/Octen-WebGR-0.6B, publicada por Liodon AI. El modelo original pertenece a la familia Qwen3 (segun los tags de HuggingFace), con 730.267.648 parametros totales segun los pesos en safetensors, y esta orientado a generacion de texto conversacional. La intervencion de Liodon AI no modifica el entrenamiento: unicamente convierte los pesos a FP8 (E4M3) por canal y deja las activaciones cuantizadas de forma dinamica por token en tiempo de inferencia.
+Octen-WebGR-0.6B-FP8 es una cuantizacion en FP8 dinamico del modelo Octen/Octen-WebGR-0.6B, publicada por Liodon AI. El modelo original pertenece a la familia Qwen3 (segun los tags de Hugging Face), con 730.267.648 parametros totales segun los pesos en safetensors, y esta orientado a generacion de texto conversacional. La intervencion de Liodon AI no modifica el entrenamiento: unicamente convierte los pesos a FP8 (E4M3) por canal y deja las activaciones cuantizadas de forma dinamica por token en tiempo de inferencia.
 
 La relevancia de esta ficha esta en el empaquetado para despliegue: reduce el repositorio de 1,5 GB a 1,0 GB y permite servir el modelo con vLLM, TGI o SGLang con soporte nativo de FP8, siempre que la GPU tenga compute capability 8.9 o superior. Es una opcion util para entornos con VRAM limitada o para pipelines que ya trabajan en FP8 y quieren evitar la de-cuantizacion implicita.
 
@@ -23,7 +23,7 @@ Conviene subrayar que se trata de un modelo pequeno (0,6B nominales, 730M reales
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder-only de la familia Qwen3, segun los tags de HuggingFace. Esta version concreta no aporta cambios arquitectonicos: es una cuantizacion post-entrenamiento realizada con llm-compressor bajo el esquema `FP8_DYNAMIC`. En este esquema los pesos se convierten a FP8 (E4M3) por canal de forma anticipada, mientras que las activaciones se cuantizan dinamicamente por token durante la inferencia. El esquema no requiere dataset de calibracion, de modo que los pesos cuantizados son practicamente una conversion directa de los originales, sin sesgo introducido por una muestra de calibracion. La capa `lm_head` se mantiene sin cuantizar, practica habitual por su tamano reducido y su impacto desproporcionado en la calidad si se cuantiza.
+El modelo base es un transformer decoder-only de la familia Qwen3, segun los tags de Hugging Face. Esta version concreta no aporta cambios arquitectonicos: es una cuantizacion post-entrenamiento realizada con llm-compressor bajo el esquema `FP8_DYNAMIC`. En este esquema los pesos se convierten a FP8 (E4M3) por canal de forma anticipada, mientras que las activaciones se cuantizan dinamicamente por token durante la inferencia. El esquema no requiere dataset de calibracion, de modo que los pesos cuantizados son practicamente una conversion directa de los originales, sin sesgo introducido por una muestra de calibracion. La capa `lm_head` se mantiene sin cuantizar, practica habitual por su tamano reducido y su impacto desproporcionado en la calidad si se cuantiza.
 
 No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si el modelo original uso RLHF, DPO u otras tecnicas de alineacion. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. El repositorio pasa de 1,5 GB (modelo original) a 1,0 GB tras la cuantizacion.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/Octen-WebGR-0.6B-FP8 | 730.267.648 | no disponible | FP8 dinamico | other | HuggingFace, vLLM/TGI/SGLang |
-| Octen/Octen-WebGR-0.6B (base) | no disponible | no disponible | BF16/FP16 (original, 1,5 GB) | other | HuggingFace |
-| Qwen3-0.6B (familia referenciada por tags) | no disponible en esta busqueda | no disponible | multiples | no disponible | HuggingFace |
+| liodon-ai/Octen-WebGR-0.6B-FP8 | 730.267.648 | no disponible | FP8 dinamico | other | Hugging Face, vLLM/TGI/SGLang |
+| Octen/Octen-WebGR-0.6B (base) | no disponible | no disponible | BF16/FP16 (original, 1,5 GB) | other | Hugging Face |
+| Qwen3-0.6B (familia referenciada por tags) | no disponible en esta busqueda | no disponible | multiples | no disponible | Hugging Face |
 
 La comparativa se limita al modelo base y a la familia Qwen3 citada en los tags; no se dispone de datos de rendimiento para contrastar con alternativas de la misma categoria.
 

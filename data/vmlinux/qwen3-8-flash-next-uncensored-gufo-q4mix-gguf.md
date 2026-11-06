@@ -25,7 +25,7 @@ El repositorio tiene un tamano de 110,7 GB, esta sujeto a acceso restringido (ga
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. El pipeline declarado en HuggingFace es `image-text-to-text`, lo que confirma que se trata de un modelo multimodal capaz de procesar imagenes y texto. Los tags del repositorio incluyen `vision` y `mtp`, lo que sugiere soporte de vision por computador y de decodificacion basada en prediccion multi-token (multi-token prediction), aunque no se aportan detalles tecnicos que permitan confirmar la arquitectura subyacente (transformer, MoE, hibrida, etc.). Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que confirma que se trata de un modelo multimodal capaz de procesar imagenes y texto. Los tags del repositorio incluyen `vision` y `mtp`, lo que sugiere soporte de vision por computador y de decodificacion basada en prediccion multi-token (multi-token prediction), aunque no se aportan detalles tecnicos que permitan confirmar la arquitectura subyacente (transformer, MoE, hibrida, etc.). Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
 Respecto al proceso de cuantizacion, el nombre y los tags indican una estrategia mixta: distintas capas del modelo se cuantizan con esquemas diferentes (Q4_K, Q5_1, IQ4_NL y Q8_0) en lugar de aplicar un unico tipo a toda la red. Este enfoque suele reservar los esquemas de mayor precision (Q8_0, Q5_1) para capas sensibles y los mas agresivos (Q4_K, IQ4_NL) para el resto, buscando un equilibrio entre tamano y calidad. El resultado ocupa 110,7 GB en el repositorio.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.8-Flash-Next-Uncensored-Gufo-Q4Mix-GGUF | 176,9 mil millones | no disponible | no disponible | qwen-community-1.0 | GGUF, acceso restringido |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de otros modelos de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -85,7 +85,7 @@ No se dispone de datos verificados de otros modelos de la misma categoria en la 
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; en tareas de resumen de imagenes o documentos puede inventar detalles no presentes en la entrada.
 - Cobertura linguistica limitada a ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea inferior.
 - La licencia `qwen-community-1.0` impone condiciones especificas de uso, redistribucion y atribucion que deben revisarse antes de cualquier explotacion comercial.
-- El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo.
+- El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo.
 - No hay validacion comunitaria: cero descargas y cero valoraciones en el momento de la consulta, lo que reduce la confianza sobre la calidad de la cuantizacion.
 - La cuantizacion mixta Q4Mix introduce perdida de precision frente a los pesos originales; la magnitud de esa degradacion no esta cuantificada.
 - El modelo base no esta documentado en cuanto a datos de entrenamiento, sesgos conocidos o medidas de alineacion, lo que dificulta evaluar riesgos de sesgo sistematico.
@@ -93,5 +93,5 @@ No se dispone de datos verificados de otros modelos de la misma categoria en la 
 
 ## Enlaces
 
-- [vmlinux/Qwen3.8-Flash-Next-Uncensored-Gufo-Q4Mix-GGUF en HuggingFace](https://huggingface.co/vmlinux/Qwen3.8-Flash-Next-Uncensored-Gufo-Q4Mix-GGUF)
+- [vmlinux/Qwen3.8-Flash-Next-Uncensored-Gufo-Q4Mix-GGUF en Hugging Face](https://huggingface.co/vmlinux/Qwen3.8-Flash-Next-Uncensored-Gufo-Q4Mix-GGUF)
 - [Modelo base: orcarouter/Qwen3.8-Flash-Next-Uncensored](https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored)

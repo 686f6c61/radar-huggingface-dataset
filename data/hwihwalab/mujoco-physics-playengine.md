@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jelly Bean PlayEngine es un conjunto de recursos de simulación física y un entorno interactivo de robótica construido sobre MuJoCo v3.3.0, el motor de física desarrollado por Google DeepMind. Lo publica HWIHWA LAB bajo licencia Apache 2.0 y se distribuye como un repositorio de HuggingFace con la etiqueta de pipeline `robotics`. No es un modelo de lenguaje ni una red neuronal entrenada: es una suite de diez "ladrillos" físicos procedurales, cada uno definido mediante plantillas MJCF (XML), junto con controladores robóticos autónomos implementados de forma analítica (LQR, Pure Pursuit, cinemática inversa de tres etapas y balística).
+Jelly Bean PlayEngine es un conjunto de recursos de simulación física y un entorno interactivo de robótica construido sobre MuJoCo v3.3.0, el motor de física desarrollado por Google DeepMind. Lo publica HWIHWA LAB bajo licencia Apache 2.0 y se distribuye como un repositorio de Hugging Face con la etiqueta de pipeline `robotics`. No es un modelo de lenguaje ni una red neuronal entrenada: es una suite de diez "ladrillos" físicos procedurales, cada uno definido mediante plantillas MJCF (XML), junto con controladores robóticos autónomos implementados de forma analítica (LQR, Pure Pursuit, cinemática inversa de tres etapas y balística).
 
 El paquete resuelve un problema concreto de ingeniería: proporcionar entornos de simulación ligeros, reproducibles y ejecutables en el navegador para experimentar con dinámica multicuerpo, control de sistemas y cinemática robótica sin necesidad de infraestructura pesada. Cada escenario se ejecuta con un solver numérico PGS a 500 Hz y un paso de integración de 0,002 s, lo que permite observar comportamientos de contacto, fricción de Coulomb y transmisión de momento con suficiente fidelidad para docencia y prototipado.
 
@@ -33,7 +33,7 @@ No existe un proceso de entrenamiento en el sentido habitual de aprendizaje auto
 
 Los controladores incluidos son deterministas y analíticos: un balanceador LQR para el péndulo invertido sobre carro (con ganancias explícitas en el ejemplo de código, del tipo `ctrl = 8.0·θ + 1.6·ω + 0.3·x + 0.6·v`), navegación por waypoints mediante Pure Pursuit, una cinemática inversa de tres etapas para el brazo de 2 grados de libertad de la máquina de pinza, y cálculo balístico para el cañón del escenario de demolición. Los escenarios cubren dinámica multicuerpo (colisiones elásticas, reacción en cadena de dominós, colapso estructural), tribología con fricción de Coulomb en plano inclinado, péndulo doble con dinámica caótica y un chasis de cuatro ruedas con dinámica de tracción.
 
-Como innovación destacable, la suite incorpora generación procedural de los escenarios, síntesis de audio mediante Web Audio con 0 KB de assets de audio, y un modo de juego web ejecutable en HuggingFace Spaces, además de una aplicación de escritorio nativa. El escenario 07 (Pudding Cart Balancer) se marca como insignia e incluye una fase 2 con perturbaciones ("tremors") tras 10 segundos, pensada para evaluar la robustez del controlador.
+Como innovación destacable, la suite incorpora generación procedural de los escenarios, síntesis de audio mediante Web Audio con 0 KB de assets de audio, y un modo de juego web ejecutable en Hugging Face Spaces, además de una aplicación de escritorio nativa. El escenario 07 (Pudding Cart Balancer) se marca como insignia e incluye una fase 2 con perturbaciones ("tremors") tras 10 segundos, pensada para evaluar la robustez del controlador.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ Como innovación destacable, la suite incorpora generación procedural de los es
 - Tribología en plano inclinado con fricción de Coulomb (carrera por rampa).
 - Carga y ejecución local de cada escenario con una sola llamada a `mujoco.MjModel.from_xml_string()`.
 - Visualización interactiva con `mujoco.viewer.launch_passive()` y control por teclado.
-- Ejecución en navegador mediante HuggingFace Spaces y como aplicación de escritorio nativa.
+- Ejecución en navegador mediante Hugging Face Spaces y como aplicación de escritorio nativa.
 - Documentación bilingüe inglés-coreano.
 - No incluye tool calling, function calling, razonamiento en lenguaje natural ni capacidades de visión por aprendizaje profundo.
 
@@ -57,7 +57,7 @@ Como innovación destacable, la suite incorpora generación procedural de los es
 - Prototipado de algoritmos de RL: los diez entornos sirven como bancos de pruebas de bajo coste para políticas de control; el bucle `mj_step` con acceso directo a `qpos` y `qvel` facilita la integración con librerías de aprendizaje por refuerzo.
 - Validación de cinemática inversa: el brazo de 2 grados de libertad de la máquina de pinza permite comprobar soluciones de IK de tres etapas y depurar el posicionamiento del efector final antes de trasladar el código a un robot real.
 - Enseñanza de dinámica multicuerpo: los escenarios de dominós, colapso estructural y colisiones elásticas ilustran transferencia de momento, reacción en cadena y resolución de contactos con un solver PGS a 500 Hz.
-- Demostraciones interactivas y divulgación: el modo web en HuggingFace Spaces y la aplicación de escritorio permiten mostrar conceptos de física y robótica a audiencias no técnicas sin instalar dependencias.
+- Demostraciones interactivas y divulgación: el modo web en Hugging Face Spaces y la aplicación de escritorio permiten mostrar conceptos de física y robótica a audiencias no técnicas sin instalar dependencias.
 - Generación de gemelos digitales ligeros: las plantillas MJCF sirven como punto de partida para modelar digitalmente mecanismos sencillos (carros, brazos, rampas) y simular su comportamiento antes de construirlos.
 - Pruebas de navegación de vehículos: el chasis de cuatro ruedas con Pure Pursuit permite experimentar con seguimiento de trayectorias y dinámica de tracción en un entorno controlado.
 - Material de referencia para desarrolladores de simuladores: el código de los controladores analíticos y las plantillas XML pueden reutilizarse como base de proyectos mayores.
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cabe en cualquier equipo de consumo; no se especifican requisitos mínimos de VRAM porque no hay inferencia de redes neuronales.
 - CPU recomendada: cualquier procesador moderno de escritorio o portátil; el solver PGS a 500 Hz con dt = 0,002 s es ligero para estos modelos.
 - Despliegue local: `pip install mujoco` y ejecución con `mujoco.viewer.launch_passive()`.
-- Despliegue web: HuggingFace Spaces (escenario en vivo accesible desde el navegador).
+- Despliegue web: Hugging Face Spaces (escenario en vivo accesible desde el navegador).
 - Aplicación de escritorio nativa incluida en el repositorio, sin barras de navegador.
 - Latencia y throughput: no disponibles de forma explícita; el paso de simulación está fijado a 500 Hz por diseño.
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Contexto | No aplica | No aplica | No aplica |
 | Controladores incluidos | LQR, Pure Pursuit, IK, balística | No (solo modelos) | Políticas de referencia en algunos entornos |
 | Licencia | Apache 2.0 | No disponible en la informacion | No disponible en la informacion |
-| Ejecución en navegador | Sí (HuggingFace Spaces) | No disponible en la informacion | No disponible en la informacion |
+| Ejecución en navegador | Sí (Hugging Face Spaces) | No disponible en la informacion | No disponible en la informacion |
 | Enfoque | Docencia y demostración interactiva | Reutilización de modelos de robots | Entrenamiento de agentes RL |
 
 ## Limitaciones y advertencias
@@ -102,8 +102,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hwihwalab/mujoco-physics-playengine
-- Demo en vivo (HuggingFace Spaces): https://huggingface.co/spaces/hwihwalab/mujoco-physics-playengine
+- Repositorio en Hugging Face: https://huggingface.co/hwihwalab/mujoco-physics-playengine
+- Demo en vivo (Hugging Face Spaces): https://huggingface.co/spaces/hwihwalab/mujoco-physics-playengine
 - Organización HWIHWA LAB: https://huggingface.co/hwihwalab
 - MuJoCo (Google DeepMind): https://mujoco.org
 - Documentación en coreano: README_KR.md (dentro del repositorio)

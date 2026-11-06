@@ -100,7 +100,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/Chopinab/SmolVLM2-2.2B-Instruct-Q5_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/Chopinab/SmolVLM2-2.2B-Instruct-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

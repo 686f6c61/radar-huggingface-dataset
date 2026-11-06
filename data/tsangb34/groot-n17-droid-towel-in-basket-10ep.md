@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tsangb34/groot-n17-droid-towel-in-basket-10ep` es una política robótica de imitación publicada en HuggingFace Hub, no un modelo de lenguaje general. Está construida sobre GR00T N1.7, el modelo fundacional *cross-embodiment* de NVIDIA para razonamiento y habilidades humanoides, que combina un backbone visión-lenguaje Cosmos-Reason2/Qwen3-VL con un transformer de acciones basado en *flow matching* que predice acciones condicionadas por visión, lenguaje y propiocepción. El autor del repositorio (tsangb34) ha realizado un *fine-tuning* sobre ese modelo base con LeRobot 0.6.1 para una única tarea de manipulación.
+`tsangb34/groot-n17-droid-towel-in-basket-10ep` es una política robótica de imitación publicada en Hugging Face Hub, no un modelo de lenguaje general. Está construida sobre GR00T N1.7, el modelo fundacional *cross-embodiment* de NVIDIA para razonamiento y habilidades humanoides, que combina un backbone visión-lenguaje Cosmos-Reason2/Qwen3-VL con un transformer de acciones basado en *flow matching* que predice acciones condicionadas por visión, lenguaje y propiocepción. El autor del repositorio (tsangb34) ha realizado un *fine-tuning* sobre ese modelo base con LeRobot 0.6.1 para una única tarea de manipulación.
 
 El resultado es un checkpoint de aproximadamente 3.144.016.000 parámetros (unos 3,14 mil millones) empaquetado en safetensors, con un tamaño de repositorio de 12,6 GB. La política consume dos cámaras (una frontal y otra en la muñeca, ambas a 360×640), el estado articular de 8 dimensiones y la posición cartesiana de 6 dimensiones, y emite un vector de acción de 8 dimensiones para un robot Franka. La tarea aprendida es "towel in basket", entrenada con 100 episodios y 27.395 fotogramas a 30 FPS.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. La *
 
 | Modelo | Parámetros | Contexto / horizonte | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 fine-tuned) | 3,14 mil millones | no disponible | sin evaluación publicada | Apache 2.0 | HuggingFace Hub, 0 descargas |
+| Este checkpoint (GR00T N1.7 fine-tuned) | 3,14 mil millones | no disponible | sin evaluación publicada | Apache 2.0 | Hugging Face Hub, 0 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible en esta ficha | no disponible | no verificado aquí | ver licencia del modelo base de NVIDIA | GitHub `NVIDIA/Isaac-GR00T` |
-| GR00T N1.5 / versiones previas | no disponible | no disponible | no disponible | no verificado | HuggingFace / NVIDIA |
+| GR00T N1.5 / versiones previas | no disponible | no disponible | no disponible | no verificado | Hugging Face / NVIDIA |
 | Políticas de imitación tipo Diffusion Policy o ACT (LeRobot) | del orden de decenas de millones | horizonte de acción corto | dependiente del dataset | Apache 2.0 en LeRobot | amplia en el Hub |
 
 No se dispone en la información proporcionada de cifras verificables de modelos comparables (π0, OpenVLA, RDT-1B) para construir una comparación cuantitativa fiable; cualquier número aportado sería una estimación no contrastada. La comparación cualitativa relevante es que este checkpoint es un caso de *fine-tuning* de un modelo fundacional de 3,14 mil millones de parámetros, frente a políticas de imitación específicas mucho más pequeñas y de entrenamiento desde cero.
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de cifras verificables de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsangb34/groot-n17-droid-towel-in-basket-10ep
+- Modelo en Hugging Face: https://huggingface.co/tsangb34/groot-n17-droid-towel-in-basket-10ep
 - Dataset referenciado: https://huggingface.co/datasets/local/droid-towel-in-basket-left-wrist
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

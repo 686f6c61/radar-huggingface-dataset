@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anison lyrics Qwen3.5 4B content-sft-v1 es un ajuste fino experimental (SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario swdq en HuggingFace. Su objetivo es la generacion de letras de canciones en japones (letras de "anison", es decir, temas de anime y musica japonesa en general), entrenado tomando como salida de profesor unicamente letras reales. Se trata de un candidato de experimento, no de un modelo validado para produccion: el propio autor indica que la calidad comercial no esta certificada y que no se ha confirmado mejora alguna respecto a modelos existentes.
+Anison lyrics Qwen3.5 4B content-sft-v1 es un ajuste fino experimental (SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario swdq en Hugging Face. Su objetivo es la generacion de letras de canciones en japones (letras de "anison", es decir, temas de anime y musica japonesa en general), entrenado tomando como salida de profesor unicamente letras reales. Se trata de un candidato de experimento, no de un modelo validado para produccion: el propio autor indica que la calidad comercial no esta certificada y que no se ha confirmado mejora alguna respecto a modelos existentes.
 
 El modelo cuenta con aproximadamente 4.841 millones de parametros (4,84B) en pesos safetensors, con un tamano de repositorio de 9,7 GB, coherente con pesos en precision alta (probablemente bf16/fp16). Esta etiquetado con el pipeline text-generation, soporta el idioma japones y deriva del tag de arquitectura qwen3_5_text, si bien no se proporcionan detalles tecnicos sobre la arquitectura interna ni la longitud de contexto del modelo base en la informacion disponible.
 
@@ -69,8 +69,8 @@ No se dispone de datos de rendimiento del modelo que permitan una comparativa cu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| swdq/anison-lyrics-qwen35-4b-content-sft-v1 | ~4,84B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | no disponible | HuggingFace |
+| swdq/anison-lyrics-qwen35-4b-content-sft-v1 | ~4,84B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | no disponible | Hugging Face |
 | Alternativas de generacion de letras en japones | no disponible | no disponible | no disponible | no disponible |
 
 No se conocen modelos comparables especificos de generacion de letras de anison con datos publicos en la informacion disponible.
@@ -90,7 +90,7 @@ No se conocen modelos comparables especificos de generacion de letras de anison 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swdq/anison-lyrics-qwen35-4b-content-sft-v1
+- Modelo en Hugging Face: https://huggingface.co/swdq/anison-lyrics-qwen35-4b-content-sft-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Fichero de resultados (results.json): referenciado en la model card, disponible en el repositorio del modelo.
 - URL de W&B: no disponible en la informacion proporcionada.

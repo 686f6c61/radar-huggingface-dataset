@@ -89,7 +89,7 @@ Existen otros adaptadores de interpretabilidad del mismo autor dentro del proyec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/olens-online-step40-qwen36-27b
+- Repositorio Hugging Face: https://huggingface.co/ceselder/olens-online-step40-qwen36-27b
 - Modelo base Qwen3.6-27B (referencia): https://huggingface.co/Qwen/Qwen3.6-27B
 - Adaptador relacionado skip-lens (futurelens true-opd): https://huggingface.co/ceselder/skip-lens-qwen36-27b-futurelens-true-opd
 - Adaptador relacionado skip-lens (sft-matched): https://huggingface.co/ceselder/skip-lens-qwen36-27b-futurelens-sft-matched

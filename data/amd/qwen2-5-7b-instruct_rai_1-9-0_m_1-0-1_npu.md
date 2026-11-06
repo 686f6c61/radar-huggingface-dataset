@@ -4,7 +4,7 @@
 
 `amd/Qwen2.5-7B-Instruct_rai_1.9.0_m_1.0.1_npu` es una distribucion optimizada del modelo Qwen2.5-7B-Instruct de Alibaba, publicada por AMD para su ejecucion sobre la plataforma Ryzen AI mediante el runtime RAI (Ryzen AI Software) en su version 1.9.0, con el perfil de modelo `m_1.0.1_npu`. El modelo base es un transformer decoder-only denso de 7 mil millones de parametros desarrollado por el equipo Qwen, entrenado con tecnicas de post-entrenamiento (SFT y RLHF) para tareas de instruccion y conversacion.
 
-El objetivo de esta publicacion no es ofrecer un modelo nuevo, sino un artefacto listo para desplegar en hardware AMD con aceleracion NPU (Neural Processing Unit) integrada en las APU Ryzen AI. Los pesos se distribuyen en formato ONNX, lo que permite su ejecucion a traves del stack de inferencia de AMD en lugar de frameworks convencionales como PyTorch o llama.cpp. El repositorio ocupa 5,3 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+El objetivo de esta publicacion no es ofrecer un modelo nuevo, sino un artefacto listo para desplegar en hardware AMD con aceleracion NPU (Neural Processing Unit) integrada en las APU Ryzen AI. Los pesos se distribuyen en formato ONNX, lo que permite su ejecucion a traves del stack de inferencia de AMD en lugar de frameworks convencionales como PyTorch o llama.cpp. El repositorio ocupa 5,3 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 Su relevancia radica en que ejemplifica la tendencia de portar modelos open source de tamano medio a aceleradores de bajo consumo en equipos locales (PCs con APU Ryzen AI), un nicho donde historicamente el soporte de modelos LLM ha sido limitado. Para desarrolladores que trabajan con inferencia en el borde o en estaciones de trabajo sin GPU dedicada, esta variante ofrece una via concreta de despliegue.
 
@@ -17,7 +17,7 @@ Su relevancia radica en que ejemplifica la tendencia de portar modelos open sour
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-7B-Instruct soporta 32 768 tokens, segun la documentacion oficial de Qwen) |
 | Tipos de cuantizacion | no disponible (distribucion ONNX optimizada para NPU; el detalle de precision no se especifica) |
-| Idiomas soportados | en (segun la ficha de HuggingFace; el modelo base es multilingue) |
+| Idiomas soportados | en (segun la ficha de Hugging Face; el modelo base es multilingue) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (runtime Ryzen AI / RAI 1.9.0, perfil m_1.0.1_npu) |
 
@@ -50,7 +50,7 @@ La contribucion especifica de AMD en esta publicacion es la conversion y optimiz
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de MMLU, HumanEval, GSM8K ni datos de latencia o throughput para el perfil `m_1.0.1_npu`.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de MMLU, HumanEval, GSM8K ni datos de latencia o throughput para el perfil `m_1.0.1_npu`.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ La comparativa de rendimiento entre estos modelos no puede establecerse con los 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idiomas: la ficha declara solo `en`, aunque el modelo base es multilingue; el soporte real de otros idiomas en esta distribucion no esta verificado.
 - Dependencia de hardware: el artefacto esta ligado al runtime RAI 1.9.0 y a la NPU de Ryzen AI; no es portable a GPU NVIDIA ni a otros aceleradores sin reconversion.
 - Sesgos: hereda los sesgos del corpus de entrenamiento de Qwen2.5, no documentados en esta publicacion.
@@ -85,7 +85,7 @@ La comparativa de rendimiento entre estos modelos no puede establecerse con los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen2.5-7B-Instruct_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Qwen2.5-7B-Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de Ryzen AI Software: https://ryzenai.docs.amd.com/
 - Repositorio de Ryzen AI en GitHub: https://github.com/amd/RyzenAI-SW

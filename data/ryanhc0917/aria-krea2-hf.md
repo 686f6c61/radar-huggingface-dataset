@@ -6,7 +6,7 @@ aria-krea2-hf es un LoRA de tipo DreamBooth publicado por el usuario Ryanhc0917 
 
 El adaptador se entreno sobre Krea 2 RAW y sus muestras se generaron sobre Krea 2 Turbo, la variante orientada a inferencia rapida del mismo modelo base, con 8 pasos de inferencia y `guidance_scale=0.0`. Esto lo situa en el flujo de trabajo habitual de Krea 2: ajuste fino sobre RAW y despliegue sobre Turbo para obtener imagenes en pocos pasos. La relevancia practica es la de cualquier LoRA de personalizacion: fijar la identidad de un personaje o un estilo concreto sin reentrenar el modelo completo y sin consumir el presupuesto de VRAM de un fine-tuning integral.
 
-La ficha se ha elaborado con la informacion disponible en HuggingFace y en los resultados de busqueda. El autor no publica parametros, dataset de entrenamiento, numero de pasos de entrenamiento, resolucion de entrenamiento ni evaluaciones cuantitativas, por lo que buena parte de las especificaciones figuran como no disponibles. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y las marcas de fecha del repositorio (creado el 30 de septiembre de 2026) no coinciden con ninguna convencion verificable.
+La ficha se ha elaborado con la informacion disponible en Hugging Face y en los resultados de busqueda. El autor no publica parametros, dataset de entrenamiento, numero de pasos de entrenamiento, resolucion de entrenamiento ni evaluaciones cuantitativas, por lo que buena parte de las especificaciones figuran como no disponibles. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y las marcas de fecha del repositorio (creado el 30 de septiembre de 2026) no coinciden con ninguna convencion verificable.
 
 ## Especificaciones tecnicas
 
@@ -79,10 +79,10 @@ Unicamente se documentan tres imagenes de muestra generadas en Krea 2 Turbo con 
 
 | Modelo | Tipo | Parametros | Contexto o resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Ryanhc0917/aria-krea2-hf | LoRA DreamBooth sobre Krea 2 | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Token `ariawoman`; muestras sobre Krea 2 Turbo |
-| Ryanhc0917/tina-krea2-hf | LoRA sobre Krea 2 del mismo autor | no disponible | no disponible | no disponible | HuggingFace | Mismo patron de publicacion, otro concepto; sin datos tecnicos en la informacion disponible |
-| krea/Krea-2-Raw | Modelo fundacional texto-a-imagen | no disponible | no disponible | no disponible en la informacion | HuggingFace, codigo en GitHub | Base de entrenamiento del LoRA; orientado a ajuste fino |
-| krea/Krea-2-Turbo | Modelo fundacional texto-a-imagen destilado | no disponible | no disponible | no disponible en la informacion | HuggingFace, distribucion Comfy-Org | Base de inferencia de las muestras; 8 pasos, `guidance_scale=0.0` |
+| Ryanhc0917/aria-krea2-hf | LoRA DreamBooth sobre Krea 2 | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Token `ariawoman`; muestras sobre Krea 2 Turbo |
+| Ryanhc0917/tina-krea2-hf | LoRA sobre Krea 2 del mismo autor | no disponible | no disponible | no disponible | Hugging Face | Mismo patron de publicacion, otro concepto; sin datos tecnicos en la informacion disponible |
+| krea/Krea-2-Raw | Modelo fundacional texto-a-imagen | no disponible | no disponible | no disponible en la informacion | Hugging Face, codigo en GitHub | Base de entrenamiento del LoRA; orientado a ajuste fino |
+| krea/Krea-2-Turbo | Modelo fundacional texto-a-imagen destilado | no disponible | no disponible | no disponible en la informacion | Hugging Face, distribucion Comfy-Org | Base de inferencia de las muestras; 8 pasos, `guidance_scale=0.0` |
 
 La comparacion queda limitada porque ni el LoRA ni el modelo base publican, en la informacion disponible, numero de parametros, resolucion nativa ni resultados de evaluacion. No es posible establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -103,9 +103,9 @@ La comparacion queda limitada porque ni el LoRA ni el modelo base publican, en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanhc0917/aria-krea2-hf
+- Modelo en Hugging Face: https://huggingface.co/Ryanhc0917/aria-krea2-hf
 - LoRA relacionado del mismo autor: https://huggingface.co/Ryanhc0917/tina-krea2-hf
-- Modelo base en HuggingFace: https://huggingface.co/krea/Krea-2-Raw
+- Modelo base en Hugging Face: https://huggingface.co/krea/Krea-2-Raw
 - Distribucion ComfyUI de Krea 2: https://huggingface.co/Comfy-Org/Krea-2
 - Repositorio oficial de codigo de inferencia: https://github.com/krea-ai/krea-2
 - Pagina del producto Krea 2: https://www.krea.ai/krea-2

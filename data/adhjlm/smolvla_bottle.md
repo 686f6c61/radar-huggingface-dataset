@@ -70,7 +70,7 @@ No se dispone de datos comparativos directos en la información proporcionada. E
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/adhjlm/smolvla_bottle)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/adhjlm/smolvla_bottle)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/adhjlm/so101-bottle)
 - [Modelo base](https://huggingface.co/lerobot/smolvla_base)
 - [Paper SmolVLA (arXiv:2506.01844)](https://arxiv.org/abs/2506.01844)

@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tbhr2/unsloth_phi_4_mini_instruct_4bit
+- Repositorio Hugging Face: https://huggingface.co/tbhr2/unsloth_phi_4_mini_instruct_4bit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Versión Unsloth 4-bit bnb: https://huggingface.co/unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit
 - Versión GGUF de Unsloth: https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF

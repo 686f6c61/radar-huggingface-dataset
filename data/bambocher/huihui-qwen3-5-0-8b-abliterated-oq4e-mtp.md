@@ -92,7 +92,7 @@ Los datos de las filas alternativas provienen del conocimiento general de esas f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bambocher/Huihui-Qwen3.5-0.8B-abliterated-oQ4e-mtp
+- Hugging Face: https://huggingface.co/bambocher/Huihui-Qwen3.5-0.8B-abliterated-oQ4e-mtp
 - Repositorio de la herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Modelo base Huihui-Qwen3.5-0.8B-abliterated: no disponible en la informacion proporcionada
 - Paper, blog o demo del modelo: no disponible

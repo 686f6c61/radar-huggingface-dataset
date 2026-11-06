@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danish-foundation-models/DFM-Mimir | 1.786 M | Original (BF16/FP16) | no disponible | other | HuggingFace |
-| liodon-ai/DFM-Mimir-FP8 | 1.786 M | FP8 dinámico | no disponible | other | HuggingFace |
-| liodon-ai/bloom-560m-FP8 | 560 M | FP8 | no disponible | other | HuggingFace |
+| danish-foundation-models/DFM-Mimir | 1.786 M | Original (BF16/FP16) | no disponible | other | Hugging Face |
+| liodon-ai/DFM-Mimir-FP8 | 1.786 M | FP8 dinámico | no disponible | other | Hugging Face |
+| liodon-ai/bloom-560m-FP8 | 560 M | FP8 | no disponible | other | Hugging Face |
 
 La comparativa directa con otros modelos de la misma categoría (modelos daneses de ~1,8B) no está disponible en las fuentes consultadas. La alternativa más cercana es el modelo base sin cuantizar, que ofrece la misma calidad pero con mayor uso de memoria y menor throughput. La cuantizacion FP8 de Liodon AI es la única variante cuantizada publicada de DFM-Mimir.
 
@@ -78,7 +78,7 @@ La comparativa directa con otros modelos de la misma categoría (modelos daneses
 
 - Modelo cuantizado: https://huggingface.co/liodon-ai/DFM-Mimir-FP8
 - Modelo base: https://huggingface.co/danish-foundation-models/DFM-Mimir
-- Perfil de Liodon AI en HuggingFace: https://huggingface.co/liodon-ai
+- Perfil de Liodon AI en Hugging Face: https://huggingface.co/liodon-ai
 - Organización Liodon AI en GitHub: https://github.com/Liodon-AI
 - Web de Liodon AI: https://liodon.ai/
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor

@@ -82,8 +82,8 @@ No se dispone de datos de comparación directa con otros modelos ASR compactos e
 
 ## Enlaces
 
-- Modelo LiteRT en HuggingFace: https://huggingface.co/litert-community/granite-speech-5.0-470m-turboctc
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
+- Modelo LiteRT en Hugging Face: https://huggingface.co/litert-community/granite-speech-5.0-470m-turboctc
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Variante sin control (NC) del modelo base: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc-nc
 - Documentacion de IBM Granite Speech: https://www.ibm.com/granite/docs/models/speech
 - Documentacion de Transformers para Granite Speech 5: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/granite_speech5.md

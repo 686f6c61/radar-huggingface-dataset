@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (en fo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B
+- Modelo en Hugging Face: https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B
 - Informe técnico de Hermes 3 (arXiv): https://arxiv.org/abs/2408.11857
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B
 - Documentación de chat templates de transformers: https://huggingface.co/docs/transformers/main/chat_templating

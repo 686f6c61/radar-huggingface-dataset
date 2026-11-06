@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perception SLM Caption (identificador `LNTTushar/perception-slm-caption`) es un modelo multimodal de comprension de imagenes publicado por el usuario LNTTushar en HuggingFace. Segun la model card, se trata de un modelo entrenado *from scratch* (es decir, no derivado de un backbone preentrenado existente) que forma parte de la "Fase 2 / image v0" del proyecto Perception SLM. Su tarea declarada es la generacion de descripciones de imagenes (*captioning*), bajo la configuracion interna denominada `caption_lm`.
+Perception SLM Caption (identificador `LNTTushar/perception-slm-caption`) es un modelo multimodal de comprension de imagenes publicado por el usuario LNTTushar en Hugging Face. Segun la model card, se trata de un modelo entrenado *from scratch* (es decir, no derivado de un backbone preentrenado existente) que forma parte de la "Fase 2 / image v0" del proyecto Perception SLM. Su tarea declarada es la generacion de descripciones de imagenes (*captioning*), bajo la configuracion interna denominada `caption_lm`.
 
 La arquitectura descrita sigue el patron clasico de los VLM compactos: un codificador visual (*encoder*), un conector o *resampler* que proyecta y comprime las representaciones visuales, y un decodificador de lenguaje de tamano reducido (*tiny decoder*). El entrenamiento se divide en dos etapas declaradas: una fase de alineacion (Stage-2) y una fase de ajuste por instrucciones con LoRA (Stage-3). La licencia es Apache 2.0.
 
@@ -95,7 +95,7 @@ No es posible establecer una comparativa rigurosa con la informacion proporciona
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LNTTushar/perception-slm-caption | no disponible | no disponible | BLEU-4 10.07 y loss 2.3982 en validacion propia | Apache 2.0 | HuggingFace, 0 descargas |
+| LNTTushar/perception-slm-caption | no disponible | no disponible | BLEU-4 10.07 y loss 2.3982 en validacion propia | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -112,6 +112,6 @@ No es posible establecer una comparativa rigurosa con la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LNTTushar/perception-slm-caption
+- Hugging Face: https://huggingface.co/LNTTushar/perception-slm-caption
 - Repositorio `perception-slm` (referenciado en la model card): https://github.com/ (URL incompleta en la informacion proporcionada; no resoluble)
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo, al proyecto Perception SLM ni a publicaciones asociadas. Los unicos resultados devueltos corresponden a paginas genericas de YouTube sin relacion con el modelo.

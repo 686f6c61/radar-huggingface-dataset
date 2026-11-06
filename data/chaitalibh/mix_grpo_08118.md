@@ -21,7 +21,7 @@ El repositorio contiene únicamente los pesos del adaptador (`adapter_model.safe
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) que se carga sobre un modelo base preentrenado. El adaptador fue entrenado mediante GRPO, un algoritmo de optimización de políticas basado en aprendizaje por refuerzo, implementado con la librería TRL de HuggingFace. La configuración de entrenamiento se describe como "mixed empty-context": se alternaban muestras con contexto RAG completo y muestras sin contexto (vacío), una estrategia que busca que el modelo no dependa excesivamente de la información recuperada y mantenga respuestas coherentes incluso cuando no dispone de contexto externo.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) que se carga sobre un modelo base preentrenado. El adaptador fue entrenado mediante GRPO, un algoritmo de optimización de políticas basado en aprendizaje por refuerzo, implementado con la librería TRL de Hugging Face. La configuración de entrenamiento se describe como "mixed empty-context": se alternaban muestras con contexto RAG completo y muestras sin contexto (vacío), una estrategia que busca que el modelo no dependa excesivamente de la información recuperada y mantenga respuestas coherentes incluso cuando no dispone de contexto externo.
 
 No se proporcionan detalles sobre el conjunto de datos utilizado, el número de tokens de entrenamiento, el número de pasos, ni los hiperparámetros exactos. Tampoco se especifica si se aplicaron técnicas adicionales como RLHF o DPO. El entrenamiento se realizó con la configuración `C_SERVER_GRPO_MIXED_EMPTYCTX15_BS8GA3`, que sugiere un tamaño de lote de 8 y un contexto vacío en el 15% de las muestras, aunque esta interpretación no está confirmada por el autor.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - El adaptador LoRA ocupa aproximadamente 0.2 GB en disco, pero la VRAM necesaria para inferencia depende del modelo base `CELL-LAB/lora-plus-f2f-backup`, cuyo tamaño no se especifica.
 - Si el modelo base es Gemma de 2B o 7B, se necesitarían entre 4 GB y 16 GB de VRAM según la cuantización. Para Gemma 7B en FP16 se requieren alrededor de 14 GB.
 - No se dispone de información sobre GPU recomendadas ni sobre latencia o throughput.
-- Opciones de despliegue: el adaptador se carga con la librería `peft` de HuggingFace, por lo que es compatible con `transformers`, `vLLM`, `TGI` y otras herramientas que soporten PEFT. También podría convertirse a GGUF si se fusiona con el modelo base, aunque no se proporcionan instrucciones.
+- Opciones de despliegue: el adaptador se carga con la librería `peft` de Hugging Face, por lo que es compatible con `transformers`, `vLLM`, `TGI` y otras herramientas que soporten PEFT. También podría convertirse a GGUF si se fusiona con el modelo base, aunque no se proporcionan instrucciones.
 - Dado que no hay datos de rendimiento, se recomienda probar en una GPU con al menos 8 GB de VRAM para modelos base pequeños, y más para versiones mayores.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No disponible. No se conocen adaptadores LoRA comparables con la misma configura
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chaitalibh/mix_grpo_08118
+- Repositorio en Hugging Face: https://huggingface.co/chaitalibh/mix_grpo_08118
 - Modelo base (referenciado): https://huggingface.co/CELL-LAB/lora-plus-f2f-backup (no verificado)
 - Paper de GRPO (referencia en la model card): https://arxiv.org/abs/1910.09700 (sobre cálculo de emisiones, no sobre GRPO)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) relacionados con este adaptador específico.

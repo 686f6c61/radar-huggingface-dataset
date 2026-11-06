@@ -64,8 +64,8 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 | Modelo | Base | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros-Max | MiniMax-H3 | 347.9 GB (BF16) | no disponible | minimax-h3-community-license-agreement | HuggingFace |
-| MiniMax-H3 | MiniMax | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace |
+| 10Eros-Max | MiniMax-H3 | 347.9 GB (BF16) | no disponible | minimax-h3-community-license-agreement | Hugging Face |
+| MiniMax-H3 | MiniMax | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
 | LTX 2.3 | LTX | no disponible | no disponible | no disponible | no disponible |
 | Wan 2.2 | Wan | no disponible | no disponible | no disponible | no disponible |
 | Krea 2 | Krea | no disponible | no disponible | no disponible | no disponible |
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/musafa901/10Eros-Max
+- Modelo en Hugging Face: https://huggingface.co/musafa901/10Eros-Max
 - Licencia de MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Version int8 (enlazada en la model card): https://huggingface.co/cicalooo/10Eros-Max-h3-int8-convrot
 - Repositorio de pruebas de MiniMax-H3 (origen del modelo TURBO): https://huggingface.co/silveroxides/MiniMax-H3_tests/tree/main

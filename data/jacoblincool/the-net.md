@@ -85,7 +85,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JacobLinCool/the-net
+- Modelo en Hugging Face: https://huggingface.co/JacobLinCool/the-net
 - `EXPERIMENT.md` (formato de publicacion y conteo de parametros): https://huggingface.co/JacobLinCool/the-net/blob/main/EXPERIMENT.md
 - Implementacion del modelo (`modeling_omni.py`): https://huggingface.co/JacobLinCool/the-net/blob/main/modeling_omni.py
 - Configuracion (`configuration_omni.py`): https://huggingface.co/JacobLinCool/the-net/blob/main/configuration_omni.py

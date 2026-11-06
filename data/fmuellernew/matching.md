@@ -40,7 +40,7 @@ En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con u
 - **Depuración de código**: al tener solo 16.576 parámetros, es ideal para aislar errores en la implementación de la arquitectura Coca o en el bucle de entrenamiento.
 - **Experimentos de ablación**: permite probar variaciones de hiperparámetros (tasa de aprendizaje, programación polinómica, etc.) con coste computacional despreciable.
 - **Enseñanza y aprendizaje**: útil para estudiantes que quieran entender el funcionamiento interno de un modelo contrastivo sin la complejidad de un modelo de producción.
-- **Pruebas de compatibilidad de formatos**: el checkpoint en safetensors puede usarse para verificar que las herramientas de carga (por ejemplo, `safetensors` de HuggingFace) funcionan correctamente con pesos de tamaño mínimo.
+- **Pruebas de compatibilidad de formatos**: el checkpoint en safetensors puede usarse para verificar que las herramientas de carga (por ejemplo, `safetensors` de Hugging Face) funcionan correctamente con pesos de tamaño mínimo.
 
 ## Benchmarks y rendimiento
 
@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: Fmuellernew/matching](https://huggingface.co/Fmuellernew/matching)
+- [Hugging Face: Fmuellernew/matching](https://huggingface.co/Fmuellernew/matching)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web.

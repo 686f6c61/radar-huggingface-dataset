@@ -63,7 +63,7 @@ No se dispone de informacion comparativa con otros modelos de la misma categoria
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-i1-GGUF
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de static quants: https://huggingface.co/mradermacher/Qwen3.8-27B-GGUF
 - Pagina de descarga y listado de archivos: https://hf.tst.eu/model#Qwen3.8-27B-i1-GGUF

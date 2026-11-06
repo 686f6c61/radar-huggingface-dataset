@@ -73,10 +73,10 @@ El adaptador mejora al modelo base en hechos encontrados en +6,3 puntos (IC 95 %
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3-4B + LoRA Démarches FR) | 4B (base) + LoRA r16 | No disponible | RAG especializado en trámites FR, salida JSON con citas | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3-4B (base) | 4B | No disponible | Modelo generalista con thinking mode | Apache 2.0 | HuggingFace |
+| Este adaptador (Qwen3-4B + LoRA Démarches FR) | 4B (base) + LoRA r16 | No disponible | RAG especializado en trámites FR, salida JSON con citas | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3-4B (base) | 4B | No disponible | Modelo generalista con thinking mode | Apache 2.0 | Hugging Face |
 | Qwen3-8B + razonamiento (modelo final del proyecto) | 8B | No disponible | RAG especializado en trámites FR, mayor calidad | No disponible | Uso interno del proyecto, no publicado como modelo |
-| Alternativas generalistas de 4B (p. ej. Llama 3.2 3B, Gemma 2 2B) | 2-4B | No disponible | Modelo generalista | Licencias variables | HuggingFace |
+| Alternativas generalistas de 4B (p. ej. Llama 3.2 3B, Gemma 2 2B) | 2-4B | No disponible | Modelo generalista | Licencias variables | Hugging Face |
 
 La comparación relevante es contra el modelo base y contra el modelo de 8B del propio proyecto: el adaptador mejora al base en hechos encontrados (+6,3 puntos) pero queda por debajo del 8B con razonamiento (76,3 % frente a 81,4 % en corrección manual). No se dispone de comparación con otros adaptadores de dominio equivalentes.
 
@@ -93,7 +93,7 @@ La comparación relevante es contra el modelo base y contra el modelo de 8B del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/youssef-khazal/qwen3-4b-demarches-lora
+- Hugging Face: https://huggingface.co/youssef-khazal/qwen3-4b-demarches-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio del proyecto: https://github.com/youssef-khazal/fr-admin-assistant
 - Metodología y resultados del fine-tuning: https://github.com/youssef-khazal/fr-admin-assistant/blob/main/finetune/README.md

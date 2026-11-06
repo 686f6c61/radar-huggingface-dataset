@@ -2,7 +2,7 @@
 
 ## Resumen
 
-angular-coder-1.5b es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-1.5B-Instruct especializado en el framework Angular, publicado por el usuario bharathmuppa en HuggingFace bajo licencia Apache 2.0. El modelo parte de un transformer decoder-only de 1.543.714.304 parámetros y se ha entrenado mediante LoRA (rango 16, aplicado a las 16 últimas capas, en atención y MLP) fusionada posteriormente en los pesos base. El objetivo es cubrir un nicho muy concreto: generar TypeScript idiomático de Angular moderno (componentes standalone, signals, `inject()`, bloque de control `@if`/`@for`, `@defer`, detección de cambios zoneless, signal forms, el nuevo application builder y las migraciones de `ng update`).
+angular-coder-1.5b es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-1.5B-Instruct especializado en el framework Angular, publicado por el usuario bharathmuppa en Hugging Face bajo licencia Apache 2.0. El modelo parte de un transformer decoder-only de 1.543.714.304 parámetros y se ha entrenado mediante LoRA (rango 16, aplicado a las 16 últimas capas, en atención y MLP) fusionada posteriormente en los pesos base. El objetivo es cubrir un nicho muy concreto: generar TypeScript idiomático de Angular moderno (componentes standalone, signals, `inject()`, bloque de control `@if`/`@for`, `@defer`, detección de cambios zoneless, signal forms, el nuevo application builder y las migraciones de `ng update`).
 
 El problema que resuelve es la desactualización de los asistentes de código genéricos en lo relativo a Angular: el modelo afirma conocer cada versión desde la v14 hasta la v22 (octubre de 2026) y responder indicando qué versión requiere cada característica. El entrenamiento se hizo con `mlx-lm` sobre un Apple M2 Max a partir del dataset `bharathmuppa/angular-instruct`, compuesto por 2030 pares de instrucción redactados a partir de la documentación oficial de Angular y su changelog (2427 registros de entrenamiento, 131 de validación y 79 de test).
 
@@ -99,7 +99,7 @@ No se han encontrado en la informacion proporcionada otros modelos especializado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bharathmuppa/angular-coder-1.5b
+- Modelo en Hugging Face: https://huggingface.co/bharathmuppa/angular-coder-1.5b
 - Dataset de entrenamiento: https://huggingface.co/datasets/bharathmuppa/angular-instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio de la documentacion de Angular usada como fuente (`adev/src/content`): https://github.com/angular/angular

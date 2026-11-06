@@ -100,7 +100,7 @@ La diferencia principal frente al checkpoint original es el formato y el coste d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DakeraAI/gliner_medium-v2.1-int8
+- Modelo en Hugging Face: https://huggingface.co/DakeraAI/gliner_medium-v2.1-int8
 - Modelo base original: https://huggingface.co/urchade/gliner_medium-v2.1
 - Paper GLiNER (arXiv:2311.08526): https://arxiv.org/abs/2311.08526
 - Web de Dakera: https://dakera.ai

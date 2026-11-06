@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pidgeon-42M es un modelo de generación de texto publicado en HuggingFace por el usuario superroket169 bajo licencia Apache 2.0. Por el nombre del repositorio se deduce que cuenta con aproximadamente 42 millones de parámetros, lo que lo sitúa en la categoría de modelos ultraligeros, por debajo de alternativas como GPT-2 small (124 M) o SmolLM-135M. El repositorio ocupa 0,5 GB y está etiquetado únicamente para inglés (`en`) con pipeline `text-generation`.
+Pidgeon-42M es un modelo de generación de texto publicado en Hugging Face por el usuario superroket169 bajo licencia Apache 2.0. Por el nombre del repositorio se deduce que cuenta con aproximadamente 42 millones de parámetros, lo que lo sitúa en la categoría de modelos ultraligeros, por debajo de alternativas como GPT-2 small (124 M) o SmolLM-135M. El repositorio ocupa 0,5 GB y está etiquetado únicamente para inglés (`en`) con pipeline `text-generation`.
 
 El modelo se publicó el 6 de octubre de 2026 y no incluye model card descriptiva: el README se limita a la cabecera YAML con la licencia y el idioma. No hay información pública sobre arquitectura, datos de entrenamiento, proceso de alineación ni resultados de evaluación. Registra 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -65,7 +65,7 @@ Las siguientes estimaciones son aritméticas, derivadas del presumible tamaño d
 - VRAM en int4: aproximadamente 21 MB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; una NVIDIA GTX 1050, RTX 3050 o incluso una iGPU moderna serían suficientes. Tarjetas como A100 o H100 están sobredimensionadas para este modelo.
 - Cabe holgadamente en cualquier GPU de consumo, incluidos portátiles antiguos, y probablemente en CPU con memoria RAM básica.
-- Opciones de despliegue: bibliotecas estándar de HuggingFace Transformers (requiere confirmar la clase y configuración del modelo), y potencialmente llama.cpp u Ollama si se generan pesos GGUF, algo que no está confirmado. vLLM y TGI son viables en teoría, pero exigen conocer la arquitectura exacta.
+- Opciones de despliegue: bibliotecas estándar de Hugging Face Transformers (requiere confirmar la clase y configuración del modelo), y potencialmente llama.cpp u Ollama si se generan pesos GGUF, algo que no está confirmado. vLLM y TGI son viables en teoría, pero exigen conocer la arquitectura exacta.
 - Latencia y throughput: no disponibles. Con un modelo de este tamaño, en una GPU moderna se esperarían miles de tokens por segundo, pero es una estimación no verificada.
 
 ## Comparativa con modelos similares
@@ -74,10 +74,10 @@ Los datos de los modelos comparados provienen de su documentación pública; los
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pidgeon-42M | ~42 M (deducido) | no disponible | Apache 2.0 | HuggingFace, sin documentacion |
+| Pidgeon-42M | ~42 M (deducido) | no disponible | Apache 2.0 | Hugging Face, sin documentacion |
 | GPT-2 small | 124 M | 1024 tokens | MIT modificada | Ampliamente disponible |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, con model card completa |
-| Qwen2.5-0.5B | 494 M | 32768 tokens | Apache 2.0 | HuggingFace, con model card completa |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, con model card completa |
+| Qwen2.5-0.5B | 494 M | 32768 tokens | Apache 2.0 | Hugging Face, con model card completa |
 
 La diferencia fundamental no es de tamaño, sino de documentación y reproducibilidad: los tres modelos de referencia publican arquitectura, datos de entrenamiento y evaluaciones, mientras que Pidgeon-42M no ofrece ninguno de estos elementos.
 
@@ -94,5 +94,5 @@ La diferencia fundamental no es de tamaño, sino de documentación y reproducibi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/superroket169/Pidgeon-42M
+- Hugging Face: https://huggingface.co/superroket169/Pidgeon-42M
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la información disponible.

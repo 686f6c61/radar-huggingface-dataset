@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gte-small-zh es un modelo de embeddings de frases (sentence transformer) publicado por vllm-project en HuggingFace, derivado de la familia GTE (General Text Embeddings) de Alibaba. Con 30.259.200 parámetros y arquitectura BERT, está diseñado para generar representaciones vectoriales densas de textos en chino, orientadas a tareas de similitud semántica, recuperación de información, clasificación y reranking. El modelo se distribuye en formato safetensors (0,1 GB) y bajo licencia MIT, lo que permite uso comercial sin restricciones significativas.
+gte-small-zh es un modelo de embeddings de frases (sentence transformer) publicado por vllm-project en Hugging Face, derivado de la familia GTE (General Text Embeddings) de Alibaba. Con 30.259.200 parámetros y arquitectura BERT, está diseñado para generar representaciones vectoriales densas de textos en chino, orientadas a tareas de similitud semántica, recuperación de información, clasificación y reranking. El modelo se distribuye en formato safetensors (0,1 GB) y bajo licencia MIT, lo que permite uso comercial sin restricciones significativas.
 
 Su relevancia actual radica en que cubre el hueco de embeddings ligeros y de baja latencia para chino dentro del ecosistema de vLLM, lo que facilita su integración en pipelines de RAG y búsqueda semántica servidos con Text Embeddings Inference (TEI) o vLLM. Al ser un modelo pequeño, puede desplegarse en CPU y en GPUs de consumo con un coste computacional mínimo.
 
@@ -78,17 +78,17 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (30,26 M de parámetros); alrededor de 0,5 GB en fp16 y menos de 0,25 GB en int8.
 - GPU recomendadas: cualquier GPU moderna sirve; para alto throughput, A100, H100 o L4; para desarrollo, RTX 4090, RTX 3090 o incluso GPUs de gama media.
 - Cabe en cualquier GPU de consumo e incluso en CPU: es viable ejecutarlo en un portátil o en un contenedor sin GPU.
-- Opciones de despliegue: Text Embeddings Inference (TEI) es la opción natural dado el tag `text-embeddings-inference`; también sentence-transformers, vLLM (con soporte de embeddings), HuggingFace Inference Endpoints y ONNX Runtime.
+- Opciones de despliegue: Text Embeddings Inference (TEI) es la opción natural dado el tag `text-embeddings-inference`; también sentence-transformers, vLLM (con soporte de embeddings), Hugging Face Inference Endpoints y ONNX Runtime.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera un throughput alto en GPU y aceptable en CPU, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gte-small-zh (este) | 30,26 M | no disponible | MIT | HuggingFace |
-| gte-small (original, inglés) | ~30 M | no disponible | MIT | HuggingFace |
-| gte-base-zh | no disponible | no disponible | MIT | HuggingFace |
-| bge-small-zh | no disponible | no disponible | MIT | HuggingFace |
+| gte-small-zh (este) | 30,26 M | no disponible | MIT | Hugging Face |
+| gte-small (original, inglés) | ~30 M | no disponible | MIT | Hugging Face |
+| gte-base-zh | no disponible | no disponible | MIT | Hugging Face |
+| bge-small-zh | no disponible | no disponible | MIT | Hugging Face |
 
 No se dispone en la información proporcionada de resultados comparativos directos con estos modelos; se recomienda consultar la leaderboard de C-MTEB para una comparación cuantitativa.
 
@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de resultados comparativos direct
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/gte-small-zh
+- Hugging Face: https://huggingface.co/vllm-project/gte-small-zh
 - Paper de referencia de la familia GTE: https://arxiv.org/abs/2308.03281
 - Leaderboard C-MTEB: https://huggingface.co/spaces/mteb/leaderboard
 - Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

@@ -4,7 +4,7 @@
 
 Omega-Convergence-27B-v1.0 es un fine-tune del modelo Qwen/Qwen3.8-27B, desarrollado por el autor ReadyArt. Está diseñado específicamente para roleplay, contenido explícito y generación de texto sin censura, tal como indican sus etiquetas (nsfw, explicit, roleplay, unaligned, dangerous, ERP). El modelo se posiciona como una alternativa "desalineada" a los modelos comerciales que incorporan restricciones de seguridad, orientada a usuarios que buscan interacciones narrativas sin filtros.
 
-Con aproximadamente 27.800 millones de parámetros y un peso en safetensors de 55.6 GB, se trata de un modelo de gran tamaño que requiere hardware sustancial para su inferencia. El acceso es restringido (gated) en HuggingFace, por lo que los usuarios deben aceptar condiciones previas antes de poder descargarlo. La fecha de creación (agosto de 2026) y la ausencia de descargas sugieren que es un modelo muy reciente y aún sin adopción comunitaria.
+Con aproximadamente 27.800 millones de parámetros y un peso en safetensors de 55.6 GB, se trata de un modelo de gran tamaño que requiere hardware sustancial para su inferencia. El acceso es restringido (gated) en Hugging Face, por lo que los usuarios deben aceptar condiciones previas antes de poder descargarlo. La fecha de creación (agosto de 2026) y la ausencia de descargas sugieren que es un modelo muy reciente y aún sin adopción comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - Contenido explícito y NSFW: el modelo está diseñado para generar material adulto, lo que lo hace inadecuado para entornos laborales, educativos o aplicaciones dirigidas a menores.
 - Modelo desalineado: al carecer de entrenamiento de seguridad, puede generar contenido peligroso, ilegal o dañino (tag "dangerous"). No debe desplegarse en producción sin salvaguardas externas.
 - Riesgo de alucinación: no hay datos sobre la fiabilidad factual del modelo; al ser un fine-tune de roleplay, es probable que priorice la narrativa sobre la precisión.
-- Acceso restringido: el modelo es gated en HuggingFace, lo que limita su reproducibilidad y auditoría por parte de la comunidad.
+- Acceso restringido: el modelo es gated en Hugging Face, lo que limita su reproducibilidad y auditoría por parte de la comunidad.
 - Discrepancia de licencia: la metadata indica apache-2.0 pero el tag dice "Other License". Esto genera incertidumbre legal sobre los términos de uso comercial.
 - Sin soporte comunitario: cero descargas y solo 2 likes indican que no hay comunidad establecida, documentación adicional ni soporte técnico.
 - Sin datos de contexto: se desconoce la longitud de contexto soportada, lo que dificulta planificar sesiones de roleplay largas o documentos extensos.
@@ -72,6 +72,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0
+- Hugging Face: https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la información disponible.

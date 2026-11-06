@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 
 | Modelo | Qué es | Parámetros | Contexto | Peso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Karsus1997/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8 | W4A8 INT8 del encoder ablacionado | ~8.000 millones | No disponible | 5,88 GB | Apache-2.0 | Repositorio HuggingFace, 0 descargas |
-| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic | Fuente bf16, precisión completa, ablacionada | ~8.000 millones | No disponible | 17 GB (16,33 GB por archivo) | Apache-2.0 | Repositorio HuggingFace |
-| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4 | Build NVFP4 (w4) para Blackwell | ~8.000 millones | No disponible | 5,87 GB | Apache-2.0 | Repositorio HuggingFace |
-| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF | Build GGUF para Mac y CPU | ~8.000 millones | No disponible | No disponible | Apache-2.0 | Repositorio HuggingFace |
+| Karsus1997/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8 | W4A8 INT8 del encoder ablacionado | ~8.000 millones | No disponible | 5,88 GB | Apache-2.0 | Repositorio Hugging Face, 0 descargas |
+| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic | Fuente bf16, precisión completa, ablacionada | ~8.000 millones | No disponible | 17 GB (16,33 GB por archivo) | Apache-2.0 | Repositorio Hugging Face |
+| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4 | Build NVFP4 (w4) para Blackwell | ~8.000 millones | No disponible | 5,87 GB | Apache-2.0 | Repositorio Hugging Face |
+| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF | Build GGUF para Mac y CPU | ~8.000 millones | No disponible | No disponible | Apache-2.0 | Repositorio Hugging Face |
 | Build W4A8 oficial de Comfy-Org (encoder sin ablacionar) | Referencia de formato que este repositorio reproduce | ~8.000 millones | No disponible | No disponible en la información proporcionada | Apache-2.0 | Distribución de Comfy-Org |
 
 ## Limitaciones y advertencias

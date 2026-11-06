@@ -95,7 +95,7 @@ No se han localizado en la busqueda web resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8-DYNAMIC-MTP
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8-DYNAMIC-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - llm-compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor
 - vLLM (motor de inferencia usado en las pruebas): https://github.com/vllm-project/vllm

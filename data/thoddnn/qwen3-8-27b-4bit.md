@@ -83,7 +83,7 @@ No se dispone de comparativas directas publicadas con otros modelos multimodales
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión MLX: https://huggingface.co/thoddnn/Qwen3.8-27B-4bit
+- Repositorio Hugging Face de la conversión MLX: https://huggingface.co/thoddnn/Qwen3.8-27B-4bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía completa de Qwen3.8-27B (Lovable App): https://lovableapp.org/blog/qwen3-8-27b
 - Anuncio de soporte AMD: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

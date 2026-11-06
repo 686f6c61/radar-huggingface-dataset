@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sd-class-butterflies-32 es un modelo de difusión de generación incondicional de imágenes, publicado por el usuario nchatto en HuggingFace. Se trata de un modelo diminuto, con 18.536.323 parámetros, entrenado para producir imágenes de mariposas a baja resolución. Forma parte del ejercicio de la Unidad 1 de la Diffusion Models Class de Hugging Face, un curso práctico en el que los participantes entrenan su propio modelo DDPM desde cero y lo publican en el Hub.
+sd-class-butterflies-32 es un modelo de difusión de generación incondicional de imágenes, publicado por el usuario nchatto en Hugging Face. Se trata de un modelo diminuto, con 18.536.323 parámetros, entrenado para producir imágenes de mariposas a baja resolución. Forma parte del ejercicio de la Unidad 1 de la Diffusion Models Class de Hugging Face, un curso práctico en el que los participantes entrenan su propio modelo DDPM desde cero y lo publican en el Hub.
 
 El modelo no acepta prompts de texto: al ser incondicional, genera muestras aleatorias del dominio aprendido (mariposas) a partir de ruido gaussiano puro. Su interés no reside en la calidad de las imágenes, sino en su tamaño extremadamente reducido, que lo convierte en una herramienta didáctica y en un banco de pruebas muy ligero para experimentar con schedulers, muestreo, fine-tuning y técnicas de aceleración de difusión.
 
@@ -61,16 +61,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU sirve; no se requiere una GPU de centro de datos. Funciona en RTX 4090, RTX 3060, GTX 1650, GPUs integradas e incluso en aceleradores de borde.
 - Cabe holgadamente en GPU consumer: sí, en todas las gamas, incluidas tarjetas con 4 GB o menos de VRAM.
 - Ejecución en CPU: viable. El modelo es lo bastante pequeño como para generar muestras en CPU en tiempos del orden de segundos por imagen, dependiendo del número de pasos de muestreo.
-- Opciones de despliegue: `DDPMPipeline` de diffusers (Python/PyTorch), integración directa con la API de HuggingFace y exportación a otros runtimes de PyTorch. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que son herramientas orientadas a modelos de lenguaje.
+- Opciones de despliegue: `DDPMPipeline` de diffusers (Python/PyTorch), integración directa con la API de Hugging Face y exportación a otros runtimes de PyTorch. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que son herramientas orientadas a modelos de lenguaje.
 - Latencia y throughput estimados: no hay datos publicados. Como aproximación orientativa, con 1.000 pasos DDPM sobre imágenes de 32x32, la generación se sitúa en el orden de décimas de segundo en una GPU moderna y de segundos en CPU; reducir los pasos con DDIM disminuye proporcionalmente el coste.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Resolución | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nchatto/sd-class-butterflies-32 | 18,5 M | 32x32 | Difusión DDPM incondicional | MIT | HuggingFace |
-| google/ddpm-cifar10-32 | ~35,7 M | 32x32 | Difusión DDPM incondicional | Apache-2.0 | HuggingFace |
-| google/ddpm-celebahq-256 | ~113,7 M | 256x256 | Difusión DDPM incondicional | Apache-2.0 | HuggingFace |
+| nchatto/sd-class-butterflies-32 | 18,5 M | 32x32 | Difusión DDPM incondicional | MIT | Hugging Face |
+| google/ddpm-cifar10-32 | ~35,7 M | 32x32 | Difusión DDPM incondicional | Apache-2.0 | Hugging Face |
+| google/ddpm-celebahq-256 | ~113,7 M | 256x256 | Difusión DDPM incondicional | Apache-2.0 | Hugging Face |
 
 Los datos de los modelos de comparación proceden de la información pública de sus repositorios y no se han verificado en el contexto de esta ficha. No se dispone de métricas de rendimiento comparables entre ellos. Como alternativa dentro del mismo ejercicio del curso, existen numerosos repositorios de la comunidad con la misma configuración y distintos datasets de entrenamiento, pero no se ha identificado ninguno concreto en la información proporcionada.
 
@@ -87,7 +87,7 @@ Los datos de los modelos de comparación proceden de la información pública de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchatto/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/nchatto/sd-class-butterflies-32
 - Diffusion Models Class (repositorio del curso, referenciado en la model card): https://github.com/huggingface/diffusion-models-class
 - Documentación de `DDPMPipeline` en diffusers: no disponible en la información proporcionada
 - Paper de DDPM (Ho et al., 2020): no disponible en la información proporcionada

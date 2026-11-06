@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`7007MANJU/Chat_bot_AI` es un repositorio de modelo alojado en HuggingFace por el usuario 7007MANJU, publicado y actualizado el 11 de septiembre de 2026 segun los metadatos de la plataforma. La unica informacion tecnica verificable que acompana al repositorio es la declaracion de licencia Apache-2.0 y la etiqueta de region `us`; no se especifica pipeline, idiomas soportados, arquitectura, numero de parametros ni ventana de contexto.
+`7007MANJU/Chat_bot_AI` es un repositorio de modelo alojado en Hugging Face por el usuario 7007MANJU, publicado y actualizado el 11 de septiembre de 2026 segun los metadatos de la plataforma. La unica informacion tecnica verificable que acompana al repositorio es la declaracion de licencia Apache-2.0 y la etiqueta de region `us`; no se especifica pipeline, idiomas soportados, arquitectura, numero de parametros ni ventana de contexto.
 
 La model card del autor esta practicamente vacia: su contenido se limita al bloque de frontmatter con la licencia, sin descripcion, sin instrucciones de uso, sin ejemplos de inferencia y sin referencias a pesos, tokenizador o dataset de entrenamiento. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de uso comunitario ni de validacion externa.
 
@@ -90,7 +90,7 @@ A modo de contexto no verificable: el repositorio declara licencia Apache-2.0, l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/7007MANJU/Chat_bot_AI
+- Repositorio en Hugging Face: https://huggingface.co/7007MANJU/Chat_bot_AI
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

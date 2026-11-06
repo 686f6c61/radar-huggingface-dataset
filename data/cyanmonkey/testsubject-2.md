@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CyanMonkey/TestSubject-2 es un modelo de lenguaje causal publicado en HuggingFace por el usuario CyanMonkey, con 98.765.504 parámetros totales (≈98,8 M) según los metadatos de safetensors. Se distribuye bajo licencia Apache 2.0, solo declara inglés (`en`) como idioma y está en acceso restringido (gated): es necesario aceptar condiciones en la página del repositorio antes de descargarlo. La ficha de metadatos lo etiqueta con `causal-lm`, `gqa`, `qk-norm`, `rope`, `swiglu`, `refresh-gate` y las clases de arquitectura `rose_x1_5` / `rose-x1`, además de `custom_code`, lo que implica que la carga requiere `trust_remote_code=True`.
+CyanMonkey/TestSubject-2 es un modelo de lenguaje causal publicado en Hugging Face por el usuario CyanMonkey, con 98.765.504 parámetros totales (≈98,8 M) según los metadatos de safetensors. Se distribuye bajo licencia Apache 2.0, solo declara inglés (`en`) como idioma y está en acceso restringido (gated): es necesario aceptar condiciones en la página del repositorio antes de descargarlo. La ficha de metadatos lo etiqueta con `causal-lm`, `gqa`, `qk-norm`, `rope`, `swiglu`, `refresh-gate` y las clases de arquitectura `rose_x1_5` / `rose-x1`, además de `custom_code`, lo que implica que la carga requiere `trust_remote_code=True`.
 
 Por tamaño, se sitúa en la franja de los modelos pequeños tipo GPT-2 small (124 M) o SmolLM2-135M: un rango pensado para inferencia en CPU, prototipado rápido y experimentos de ajuste fino, no para tareas de razonamiento complejo. El nombre ("TestSubject-2"), la existencia de una variante previa (`rose-x1` frente a `rose_x1_5`), el contador de descargas (258) y la ausencia de likes sugieren un modelo experimental o de validación más que un lanzamiento de producción.
 
@@ -20,7 +20,7 @@ La relevancia ahora mismo es limitada y fundamentalmente técnica: sirve para ev
 | Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (repo con `custom_code`; requiere `trust_remote_code`) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 258 / 0 |
 | Tamaño del repositorio | 86,5 GB (incoherente con el número de parámetros; ver advertencias) |
 | Fecha de creación / actualización | 2026-10-19 / 2026-10-23 |
@@ -74,7 +74,7 @@ Los datos del modelo evaluado figuran como "no disponible" en la mayoría de fil
 |---|---|---|---|---|---|
 | CyanMonkey/TestSubject-2 | 98,8 M | No disponible | en | Apache 2.0 (acceso gated) | No disponible |
 | GPT-2 small | 124 M | 1024 tokens | en | MIT | Sí (evaluaciones originales de OpenAI) |
-| SmolLM2-135M | 135 M | 8192 tokens | en (multilingüe parcial) | Apache 2.0 | Sí (model card de HuggingFace) |
+| SmolLM2-135M | 135 M | 8192 tokens | en (multilingüe parcial) | Apache 2.0 | Sí (model card de Hugging Face) |
 | Qwen2.5-0.5B | 494 M | 32 768 tokens | multilingüe | Apache 2.0 | Sí (model card de Qwen) |
 
 Frente a estas alternativas, TestSubject-2 no aporta cifras verificables de calidad, ni contexto declarado, ni soporte multilingüe, y añade dos costes operativos: acceso restringido y dependencia de `custom_code`. Su única ventaja defendible es el tamaño reducido y el interés experimental de su arquitectura.
@@ -88,13 +88,13 @@ Frente a estas alternativas, TestSubject-2 no aporta cifras verificables de cali
 - Longitud de contexto desconocida: impide garantizar conversaciones multi-turno largas o procesamiento de documentos extensos.
 - Incoherencia de tamaño: 86,5 GB de repositorio frente a 98,8 M de parámetros (≈0,4 GB en fp32). Puede indicar artefactos adicionales, pesos duplicados o un error en los metadatos; verificar antes de descargar.
 - Riesgo de seguridad por `custom_code`: la carga con `trust_remote_code=True` ejecuta código del autor. Debe revisarse el código y aislarse en un entorno con permisos mínimos.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y automatizar la descarga en CI/CD solo con token.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y automatizar la descarga en CI/CD solo con token.
 - Licencia: Apache 2.0 permite uso comercial y modificaciones, pero no cubre responsabilidades derivadas de los datos de entrenamiento ni de posibles reclamaciones de terceros; conviene conservar el aviso de licencia y el archivo NOTICE si se redistribuye.
 - Nombre y contexto del repositorio: "TestSubject-2" y la ausencia de likes y de documentación sugieren un artefacto experimental sin garantías de mantenimiento; no se recomienda su uso en producción sin una evaluación previa propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CyanMonkey/TestSubject-2
+- Modelo en Hugging Face: https://huggingface.co/CyanMonkey/TestSubject-2
 - Perfil del autor: https://huggingface.co/CyanMonkey
 - Otro repositorio del mismo autor, no relacionado (modelo de ajedrez "Test-S"): https://huggingface.co/CyanMonkey/Test-S
 - Paper, blog técnico, repositorio de código o demo: no disponible en la información proporcionada.

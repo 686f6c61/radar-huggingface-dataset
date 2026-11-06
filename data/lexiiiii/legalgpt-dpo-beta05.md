@@ -72,6 +72,6 @@ No se dispone de informacion sobre modelos comparables en el dominio legal con e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lexiiiii/legalgpt-dpo-beta05
+- Hugging Face: https://huggingface.co/Lexiiiii/legalgpt-dpo-beta05
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Proyecto LegalGPT (GitHub): https://github.com/czc0407/legalGPT

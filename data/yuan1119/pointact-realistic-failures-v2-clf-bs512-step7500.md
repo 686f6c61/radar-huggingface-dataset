@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PointACT RLBench realistic-failures-v2 classifier es un checkpoint de investigación en robótica publicado por el usuario yuan1119 en HuggingFace. Se trata del `checkpoint-7500` completo del job de Slurm 25788 (`rlbench-realistic-failures-v2-clf-bs512-lr1e4-nogc-25788`), entrenado con el punto de entrada `VLAEncDec3DWithActionClassificationModel`, el backend Concerto PTv3 para nubes de puntos y Qwen2.5-VL-3B-Instruct como modelo de visión-lenguaje (VLM) base. El repositorio incluye pesos, estados de optimizador y scheduler, estado de RNG, estado del trainer y la configuración de tokenizer y processor.
+PointACT RLBench realistic-failures-v2 classifier es un checkpoint de investigación en robótica publicado por el usuario yuan1119 en Hugging Face. Se trata del `checkpoint-7500` completo del job de Slurm 25788 (`rlbench-realistic-failures-v2-clf-bs512-lr1e4-nogc-25788`), entrenado con el punto de entrada `VLAEncDec3DWithActionClassificationModel`, el backend Concerto PTv3 para nubes de puntos y Qwen2.5-VL-3B-Instruct como modelo de visión-lenguaje (VLM) base. El repositorio incluye pesos, estados de optimizador y scheduler, estado de RNG, estado del trainer y la configuración de tokenizer y processor.
 
 El modelo pertenece a la categoría de modelos visión-lenguaje-acción (VLA) orientados a manipulación robótica, y está asociado al benchmark RLBench con una variante de fallos realistas ("realistic-failures-v2"). La tarea declarada en el nombre es de clasificación de acciones. Por su naturaleza, es un artefacto de entrenamiento más que un modelo listo para producción: su carga requiere el código y las dependencias personalizadas del proyecto PointACT, que no se distribuyen en este repositorio.
 
@@ -86,6 +86,6 @@ Cualquier comparación seria requiere reproducir el entorno de PointACT y evalua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuan1119/pointact-realistic-failures-v2-clf-bs512-step7500
+- Repositorio en Hugging Face: https://huggingface.co/yuan1119/pointact-realistic-failures-v2-clf-bs512-step7500
 - Modelo base VLM (referencia): https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a papers asociados, a blogs, a repositorios de código ni a demos. Los resultados de búsqueda disponibles no guardan relación con el modelo.

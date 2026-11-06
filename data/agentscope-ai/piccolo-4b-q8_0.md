@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Piccolo-4B-Q8_0 | 4,2B | No disponible | Clasificacion de decisiones para agentes | Apache 2.0 | GGUF en HuggingFace, requiere runtime parcheado |
-| Piccolo-4B (base) | 4,2B | No disponible | Igual, con vision y MTP incluidos | Apache 2.0 | Safetensors en HuggingFace |
-| Piccolo-4B-Q4_K_M | 4,2B | No disponible | Igual, cuantizacion de 4 bits | Apache 2.0 | GGUF en HuggingFace (segun matriz de modelos) |
+| Piccolo-4B-Q8_0 | 4,2B | No disponible | Clasificacion de decisiones para agentes | Apache 2.0 | GGUF en Hugging Face, requiere runtime parcheado |
+| Piccolo-4B (base) | 4,2B | No disponible | Igual, con vision y MTP incluidos | Apache 2.0 | Safetensors en Hugging Face |
+| Piccolo-4B-Q4_K_M | 4,2B | No disponible | Igual, cuantizacion de 4 bits | Apache 2.0 | GGUF en Hugging Face (segun matriz de modelos) |
 
 No se dispone de datos de rendimiento comparativo con modelos de la misma categoria en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo con modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentscope-ai/Piccolo-4B-Q8_0
+- Hugging Face: https://huggingface.co/agentscope-ai/Piccolo-4B-Q8_0
 - Modelo base: https://huggingface.co/agentscope-ai/Piccolo-4B
 - GitHub del proyecto: https://github.com/agentscope-ai/Piccolo
 - Demo Decision: https://decisionplayground.agentscope.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-abliterated-GGUF es la distribución en formato GGUF del modelo `orcarouter/DeepSeek-V4.1-Flash-1017-abliterated`, una versión con el alineamiento de seguridad reducido (abliterated) del checkpoint DeepSeek-V4.1-Flash-1017. Lo publica el usuario orcarouter, que mantiene el gateway OrcaRouter, y su objetivo es permitir ejecutar localmente un MoE de gran tamaño sobre llama.cpp sin necesidad de un clúster de GPUs. La metadata de HuggingFace declara 748.494.643.824 parámetros totales (unos 748,5B), mientras que la model card habla de un MoE de 763B; la discrepancia no se explica en la información disponible.
+DeepSeek-V4.1-Flash-1017-abliterated-GGUF es la distribución en formato GGUF del modelo `orcarouter/DeepSeek-V4.1-Flash-1017-abliterated`, una versión con el alineamiento de seguridad reducido (abliterated) del checkpoint DeepSeek-V4.1-Flash-1017. Lo publica el usuario orcarouter, que mantiene el gateway OrcaRouter, y su objetivo es permitir ejecutar localmente un MoE de gran tamaño sobre llama.cpp sin necesidad de un clúster de GPUs. La metadata de Hugging Face declara 748.494.643.824 parámetros totales (unos 748,5B), mientras que la model card habla de un MoE de 763B; la discrepancia no se explica en la información disponible.
 
 La arquitectura combina 384 expertos enrutados con activación top-6, atención dispersa comprimida y una memoria n-gram llamada Engram de 197B parámetros que se lee desde disco (48 filas por token) en lugar de residir en memoria. El contexto declarado es de 1M tokens y los idiomas soportados son inglés y chino. La innovación principal del repositorio es la cuantización en precisión mixta: cada capa y cada experto recibe su propio número de bits a partir de la divergencia KL medida, no de una regla fija.
 
@@ -13,7 +13,7 @@ Es relevante ahora porque demuestra que un modelo de esta escala puede ejecutars
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer MoE con 384 expertos enrutados (top-6), atención dispersa comprimida y memoria Engram n-gram |
-| Parámetros totales | 748.494.643.824 (metadata de HuggingFace); la model card indica 763B, discrepancia no aclarada |
+| Parámetros totales | 748.494.643.824 (metadata de Hugging Face); la model card indica 763B, discrepancia no aclarada |
 | Parámetros activos | No disponible (la model card no publica el número de parámetros activos con top-6) |
 | Parámetros de la memoria Engram | 197B (tabla de 110,6 GB almacenada en disco) |
 | Longitud de contexto | 1.000.000 tokens |
@@ -99,7 +99,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (MoE 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF
 - Modelo base (abliterated, sin cuantizar): https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated
 - Subcarpeta del build recomendado: https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF/tree/main/Mix-256G
 - Subcarpeta del build reducido: https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF/tree/main/Mix-128G

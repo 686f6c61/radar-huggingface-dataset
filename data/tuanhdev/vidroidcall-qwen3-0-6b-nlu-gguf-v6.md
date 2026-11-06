@@ -52,9 +52,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tuanhdev/vidroidcall-qwen3-0.6B-nlu-gguf-v6 | 596.049.920 | No disponible | Apache-2.0 | HuggingFace (GGUF) |
-| Qwen/Qwen3-0.6B | 596.049.920 | No disponible | Apache-2.0 | HuggingFace (original) |
-| unsloth/Qwen3-0.6B-GGUF | 596.049.920 | No disponible | Apache-2.0 | HuggingFace (GGUF) |
+| tuanhdev/vidroidcall-qwen3-0.6B-nlu-gguf-v6 | 596.049.920 | No disponible | Apache-2.0 | Hugging Face (GGUF) |
+| Qwen/Qwen3-0.6B | 596.049.920 | No disponible | Apache-2.0 | Hugging Face (original) |
+| unsloth/Qwen3-0.6B-GGUF | 596.049.920 | No disponible | Apache-2.0 | Hugging Face (GGUF) |
 
 Nota: los tres modelos comparten la misma arquitectura y número de parámetros; la diferencia está en el fine-tune para NLU vietnamita y en la cuantización específica.
 
@@ -68,7 +68,7 @@ Nota: los tres modelos comparten la misma arquitectura y número de parámetros;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tuanhdev/vidroidcall-qwen3-0.6B-nlu-gguf-v6
+- Modelo en Hugging Face: https://huggingface.co/tuanhdev/vidroidcall-qwen3-0.6B-nlu-gguf-v6
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Cuantización del modelo base (unsloth): https://huggingface.co/unsloth/Qwen3-0.6B-GGUF
 - Repositorio de la aplicación ViDroidCall Studio: https://github.com/tuanhdevvn/ViDroidCall-Studio

@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento en pre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/seongmin0127/nero-qwen3-asr-ko-gguf
+- Repositorio Hugging Face: https://huggingface.co/seongmin0127/nero-qwen3-asr-ko-gguf
 - Modelo ASR original (fine-tune coreano): https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko
 - Alineador forzado original: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - Herramienta de conversión y cuantización CrispASR: https://github.com/CrispStrobe/CrispASR

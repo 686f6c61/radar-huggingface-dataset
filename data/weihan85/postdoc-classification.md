@@ -81,5 +81,5 @@ No disponible. No se identifican alternativas directamente comparables porque es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weihan85/postdoc-classification
+- Modelo en Hugging Face: https://huggingface.co/weihan85/postdoc-classification
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados en la búsqueda web realizada; los únicos resultados devueltos fueron enlaces genéricos a YouTube sin relación con el modelo.

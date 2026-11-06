@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rafiqalhaa/prediksi-stunting` es un repositorio alojado en HuggingFace por el usuario `rafiqalhaa`. En el momento de la consulta, la informacion publica disponible es practicamente nula: no hay model card con contenido (el README solo contiene la declaracion de licencia), no se declara pipeline, no se declaran idiomas soportados, y el repositorio acumula 0 descargas y 0 valoraciones. No es posible, por tanto, confirmar que se trate de un modelo de aprendizaje automatico entrenado y funcional, ni determinar su naturaleza (modelo de lenguaje, clasificador tabular, artefacto de preprocesado, etc.).
+`rafiqalhaa/prediksi-stunting` es un repositorio alojado en Hugging Face por el usuario `rafiqalhaa`. En el momento de la consulta, la informacion publica disponible es practicamente nula: no hay model card con contenido (el README solo contiene la declaracion de licencia), no se declara pipeline, no se declaran idiomas soportados, y el repositorio acumula 0 descargas y 0 valoraciones. No es posible, por tanto, confirmar que se trate de un modelo de aprendizaje automatico entrenado y funcional, ni determinar su naturaleza (modelo de lenguaje, clasificador tabular, artefacto de preprocesado, etc.).
 
 El identificador del repositorio sugiere un ambito de aplicacion relacionado con la prediccion de retraso del crecimiento infantil (`stunting` es el termino tecnico habitual en salud publica para el retraso del crecimiento por desnutricion cronica, especialmente en el contexto indonesio y del sudeste asiatico), pero esto es una inferencia a partir del nombre y no un dato confirmado por la documentacion del autor. No hay evidencia publicada de arquitectura, tamano de parametros, volumen de datos de entrenamiento ni proceso de evaluacion.
 
@@ -26,7 +26,7 @@ Datos adicionales del repositorio:
 | Parametro | Valor |
 |---|---|
 | Autor | rafiqalhaa |
-| Fecha de creacion | 2026-09-15 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-15 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-15 (sin cambios posteriores) |
 | Descargas | 0 |
 | Valoraciones (likes) | 0 |
@@ -51,7 +51,7 @@ No se dispone de informacion verificable sobre las capacidades del modelo. Las s
 - Cobertura multilingue: no disponible (el repositorio no declara ningun idioma).
 - Modos especiales (thinking mode, decodificacion con cadena de pensamiento, etc.): no disponible.
 
-Unico dato objetivo: el repositorio no declara ningun `pipeline` en los metadatos de HuggingFace, lo que impide clasificarlo a priori como `text-generation`, `text-classification`, `image-classification` o cualquier otra tarea soportada por la plataforma.
+Unico dato objetivo: el repositorio no declara ningun `pipeline` en los metadatos de Hugging Face, lo que impide clasificarlo a priori como `text-generation`, `text-classification`, `image-classification` o cualquier otra tarea soportada por la plataforma.
 
 ## Casos de uso
 
@@ -101,9 +101,9 @@ No disponible. Al no conocerse la tarea ni el dominio funcional del artefacto, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rafiqalhaa/prediksi-stunting
+- Repositorio en Hugging Face: https://huggingface.co/rafiqalhaa/prediksi-stunting
 - Model card del autor: https://huggingface.co/rafiqalhaa/prediksi-stunting/blob/main/README.md
-- Perfil del autor en HuggingFace: https://huggingface.co/rafiqalhaa
+- Perfil del autor en Hugging Face: https://huggingface.co/rafiqalhaa
 - Articulo o informe tecnico asociado: no disponible
 - Repositorio de codigo asociado: no disponible
 - Demo o Space asociado: no disponible

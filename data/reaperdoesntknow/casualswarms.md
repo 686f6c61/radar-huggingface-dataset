@@ -74,5 +74,5 @@ No se dispone de información suficiente para una comparativa cuantitativa. Mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/CasualSwarms
+- Hugging Face: https://huggingface.co/reaperdoesntknow/CasualSwarms
 - No se encontraron otros enlaces (papers, blogs, repositorios) en la búsqueda web.

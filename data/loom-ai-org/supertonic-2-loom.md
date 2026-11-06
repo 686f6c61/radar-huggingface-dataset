@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos TTS comparables en la documentacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/supertonic-2-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/supertonic-2-loom
 - Modelo base: https://huggingface.co/Supertone/supertonic-2
 - Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Repositorio loom-exporter: https://github.com/loom-ai-org/loom-exporter

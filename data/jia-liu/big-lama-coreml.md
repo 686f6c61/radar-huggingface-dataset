@@ -24,7 +24,7 @@ Conviene subrayar que el repositorio tiene 0 descargas y 0 likes en el momento d
 | Salida | Imagen RGB de 3 canales a 800x800 px |
 | Unidades de computo | CPU + GPU (configuracion .cpuAndGPU) |
 | Tamano del repositorio | 0,4 GB |
-| Fecha de publicacion | 2026-09-16 (segun la ficha de HuggingFace) |
+| Fecha de publicacion | 2026-09-16 (segun la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ El repositorio no incluye tablas comparativas, metricas de FID, PSNR, SSIM ni ev
 
 | Modelo | Formato | Entrada | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Jia-Liu/big-lama-coreml (este) | Core ML (.mlpackage) | 800x800 px fijos | Apache 2.0 | HuggingFace, 0 descargas | no disponible |
+| Jia-Liu/big-lama-coreml (este) | Core ML (.mlpackage) | 800x800 px fijos | Apache 2.0 | Hugging Face, 0 descargas | no disponible |
 | big-lama original (advimman/lama) | PyTorch (.pt) | Flexible por resolucion | Apache 2.0 | GitHub y release de Sanster | no disponible en esta ficha |
 | Otros modelos de inpainting generativos (difusion, transformers de enmascarado) | Diversos | Diversos | no disponible | Diversos | no disponible |
 
@@ -95,7 +95,7 @@ La comparacion relevante aqui es de formato, no de calidad: este repositorio y e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jia-Liu/big-lama-coreml
+- Hugging Face: https://huggingface.co/Jia-Liu/big-lama-coreml
 - Repositorio original de LaMa: https://github.com/advimman/lama
 - Pagina del proyecto: https://advimman.github.io/lama-project/
 - Paper: https://arxiv.org/abs/2109.07161

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MentraFiAI-TriNetwork es un modelo publicado en HuggingFace por el usuario singh0123 bajo licencia MIT. La model card asociada contiene unicamente el campo de licencia, sin descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 1,3 GB, un tamano compatible con pesos en precision de 16 bits de un modelo de escala pequena o media, aunque no hay confirmacion oficial de esta interpretacion.
+MentraFiAI-TriNetwork es un modelo publicado en Hugging Face por el usuario singh0123 bajo licencia MIT. La model card asociada contiene unicamente el campo de licencia, sin descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 1,3 GB, un tamano compatible con pesos en precision de 16 bits de un modelo de escala pequena o media, aunque no hay confirmacion oficial de esta interpretacion.
 
-El nombre del modelo y un repositorio de GitHub hallado en la busqueda web sugieren un proyecto orientado al asesoramiento financiero, concretamente a fondos de inversion y conceptos de fondos mutuos. Segun la descripcion de ese repositorio, el sistema estaria disenado para entrenarse una sola vez sobre conceptos, terminologia y patrones de razonamiento de fondos mutuos, y consultar en tiempo de inferencia datos en vivo (por ejemplo, valores liquidativos y fondos candidatos) desde una base de datos PostgreSQL, de modo que las recomendaciones se mantengan actualizadas sin reentrenar el modelo. No obstante, no se ha podido confirmar que ese repositorio corresponda exactamente a este checkpoint de HuggingFace.
+El nombre del modelo y un repositorio de GitHub hallado en la busqueda web sugieren un proyecto orientado al asesoramiento financiero, concretamente a fondos de inversion y conceptos de fondos mutuos. Segun la descripcion de ese repositorio, el sistema estaria disenado para entrenarse una sola vez sobre conceptos, terminologia y patrones de razonamiento de fondos mutuos, y consultar en tiempo de inferencia datos en vivo (por ejemplo, valores liquidativos y fondos candidatos) desde una base de datos PostgreSQL, de modo que las recomendaciones se mantengan actualizadas sin reentrenar el modelo. No obstante, no se ha podido confirmar que ese repositorio corresponda exactamente a este checkpoint de Hugging Face.
 
 La relevancia de esta ficha es limitada por la ausencia casi total de informacion verificable: cero descargas, una sola interaccion de "me gusta" y una model card vacia. Cualquier evaluacion de produccion requeriria inspeccionar los pesos, la tokenizacion y los ficheros del repositorio directamente, asi como contactar con el autor.
 
@@ -82,5 +82,5 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/singh0123/MentraFiAI-TriNetwork
+- Hugging Face: https://huggingface.co/singh0123/MentraFiAI-TriNetwork
 - GitHub posiblemente relacionado (no confirmado): https://github.com/Jaykumar122/Mentrafiai

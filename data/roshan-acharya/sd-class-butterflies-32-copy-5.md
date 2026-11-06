@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sd-class-butterflies-32-copy-5` es un modelo de difusion para generacion incondicional de imagenes de mariposas, desarrollado por el usuario de HuggingFace `roshan-acharya`. Se trata de una copia (indicada por el sufijo `copy-5`) de un modelo derivado del ejercicio practico de la Unidad 1 del curso Diffusion Models Class de HuggingFace, cuyo objetivo es entrenar un pipeline `DDPMPipeline` desde cero sobre un dataset de imagenes de mariposas de 32x32 pixeles.
+`sd-class-butterflies-32-copy-5` es un modelo de difusion para generacion incondicional de imagenes de mariposas, desarrollado por el usuario de Hugging Face `roshan-acharya`. Se trata de una copia (indicada por el sufijo `copy-5`) de un modelo derivado del ejercicio practico de la Unidad 1 del curso Diffusion Models Class de Hugging Face, cuyo objetivo es entrenar un pipeline `DDPMPipeline` desde cero sobre un dataset de imagenes de mariposas de 32x32 pixeles.
 
 El modelo tiene 18.536.323 parametros (aproximadamente 18,5 millones) y se distribuye en formato `safetensors` con un tamano de repositorio de 0,1 GB. No es un modelo de lenguaje ni un modelo multimodal: es un generador de imagenes pequeno, pensado como material didactico y como ejemplo minimo de diffusion probabilistic model. No procesa texto, no tiene ventana de contexto y no soporta instrucciones.
 
@@ -25,13 +25,13 @@ Su relevancia es limitada fuera del ambito educativo: sirve para ilustrar el fun
 
 El modelo sigue la arquitectura clasica de los modelos de difusion DDPM: una red UNet que aprende a predecir el ruido anadido a una imagen en cada paso del proceso de difusion directa, y que se usa en el proceso inverso para generar imagenes a partir de ruido gaussiano puro. El pipeline declarado es `DDPMPipeline`, con scheduler DDPM por defecto, y la resolucion de salida es de 32x32 pixeles, coherente con el nombre del modelo.
 
-El entrenamiento corresponde al ejercicio de la Unidad 1 del curso Diffusion Models Class de HuggingFace, que entrena el modelo sobre un dataset de imagenes de mariposas a baja resolucion. La model card no proporciona informacion sobre el numero de tokens o imagenes de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO o fine-tuning adicional. No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas; se trata de un DDPM convencional de proposito didactico.
+El entrenamiento corresponde al ejercicio de la Unidad 1 del curso Diffusion Models Class de Hugging Face, que entrena el modelo sobre un dataset de imagenes de mariposas a baja resolucion. La model card no proporciona informacion sobre el numero de tokens o imagenes de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO o fine-tuning adicional. No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas; se trata de un DDPM convencional de proposito didactico.
 
 ## Capacidades
 
 - Generacion incondicional de imagenes de mariposas a 32x32 pixeles mediante `DDPMPipeline`.
 - Generacion de multiples muestras a partir de ruido aleatorio (sin prompt de texto ni condicionamiento).
-- Integracion directa con la libreria `diffusers` de HuggingFace.
+- Integracion directa con la libreria `diffusers` de Hugging Face.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingues (no procesa texto).
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sd-class-butterflies-32-copy-5` | 18,5 M | 32x32 | no aplica | MIT | HuggingFace (`diffusers`) |
-| `google/ddpm-cifar10-32` | no disponible en la informacion | 32x32 | no aplica | no disponible | HuggingFace (`diffusers`) |
-| `google/ddpm-celebahq-256` | no disponible en la informacion | 256x256 | no aplica | no disponible | HuggingFace (`diffusers`) |
+| `sd-class-butterflies-32-copy-5` | 18,5 M | 32x32 | no aplica | MIT | Hugging Face (`diffusers`) |
+| `google/ddpm-cifar10-32` | no disponible en la informacion | 32x32 | no aplica | no disponible | Hugging Face (`diffusers`) |
+| `google/ddpm-celebahq-256` | no disponible en la informacion | 256x256 | no aplica | no disponible | Hugging Face (`diffusers`) |
 
 La comparativa se limita a otros DDPM de referencia de la comunidad; no se dispone de datos de benchmarks ni de parametros exactos de los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no esta disponible.
 
@@ -84,6 +84,6 @@ La comparativa se limita a otros DDPM de referencia de la comunidad; no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roshan-acharya/sd-class-butterflies-32-copy-5
+- Modelo en Hugging Face: https://huggingface.co/roshan-acharya/sd-class-butterflies-32-copy-5
 - Curso Diffusion Models Class (repositorio): https://github.com/huggingface/diffusion-models-class
 - Documentacion de `DDPMPipeline` en `diffusers`: https://huggingface.co/docs/diffusers/api/pipelines/ddpm

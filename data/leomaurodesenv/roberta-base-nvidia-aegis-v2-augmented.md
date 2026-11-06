@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leomaurodesenv/roberta-base-nvidia-aegis-v2-augmented` es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) de `FacebookAI/roberta-base`. Lo publica el usuario de HuggingFace `leomaurodesenv` y se distribuye con licencia MIT. Se trata de un encoder transformer de tipo RoBERTa con una cabeza de clasificación de secuencias, por lo que su función es asignar una etiqueta a un texto de entrada, no generar texto libre.
+`leomaurodesenv/roberta-base-nvidia-aegis-v2-augmented` es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) de `FacebookAI/roberta-base`. Lo publica el usuario de Hugging Face `leomaurodesenv` y se distribuye con licencia MIT. Se trata de un encoder transformer de tipo RoBERTa con una cabeza de clasificación de secuencias, por lo que su función es asignar una etiqueta a un texto de entrada, no generar texto libre.
 
 El modelo se entrenó con la librería Transformers (versión 5.2.0) y el `Trainer`, y la propia model card declara que se desconoce el conjunto de datos utilizado ("on an unknown dataset"). El autor reporta una pérdida de evaluación de 0,3361 y una exactitud (*accuracy*) de 0,8557 sobre el conjunto de evaluación, con un total de 10 épocas configuradas y solo 5 registradas en la tabla de resultados.
 
@@ -38,7 +38,7 @@ Los resultados por época muestran un patrón claro de sobreajuste: la pérdida 
 - Clasificación de texto: asigna una o varias etiquetas a una secuencia de entrada de hasta 512 tokens mediante una cabeza de clasificación ajustada.
 - Clasificación binaria o multietiqueta, en función de la configuración de la cabeza y del dataset de ajuste (no documentado).
 - Extracción de representaciones contextuales: el encoder puede reutilizarse para obtener *embeddings* de frases, ya que el modelo está etiquetado con `text-embeddings-inference`.
-- Compatibilidad con *endpoints*: incluye el tag `endpoints_compatible`, lo que indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con *endpoints*: incluye el tag `endpoints_compatible`, lo que indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Ejecución en CPU: por tamaño (124,6 M de parámetros), la inferencia es viable sin GPU.
 - Capacidades multilingües: no acreditadas. RoBERTa-base se entrenó predominantemente con texto en inglés, y la model card no declara idiomas.
 - No soporta *tool calling*, *function calling*, razonamiento multi-paso ni uso como agente.
@@ -83,17 +83,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Memoria en CPU: la inferencia en CPU requiere del orden de 1 GB de RAM, lo que permite ejecutarlo en portátiles modestos e incluso en dispositivos tipo Raspberry Pi.
 - GPU recomendadas: cualquiera con al menos 2 GB de VRAM. Para producción de alto rendimiento, GPU de inferencia como NVIDIA T4, L4, A10G, L40S o A100/H100 para *batching* masivo.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna (GTX 1650 en adelante, RTX 3060, RTX 4090), e incluso en GPU integrada con suficiente memoria compartida.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (el modelo lleva el tag `text-embeddings-inference`), HuggingFace Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime o TorchScript tras conversión, y servidores propios con FastAPI. El soporte en vLLM o TGI para modelos encoder de clasificación debe verificarse con la versión concreta antes de elegirlo.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (el modelo lleva el tag `text-embeddings-inference`), Hugging Face Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime o TorchScript tras conversión, y servidores propios con FastAPI. El soporte en vLLM o TGI para modelos encoder de clasificación debe verificarse con la versión concreta antes de elegirlo.
 - Latencia y throughput: no disponible. No se han publicado mediciones de latencia ni de *throughput* en la información proporcionada. Como referencia estructural, el límite práctico es la ventana de 512 tokens por secuencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| leomaurodesenv/roberta-base-nvidia-aegis-v2-augmented | 124.647.170 | 512 tokens | MIT | HuggingFace, safetensors | Accuracy 0,8557 en un conjunto de evaluación no especificado |
-| FacebookAI/roberta-base | ~125 M | 512 tokens | MIT | HuggingFace, safetensors/PyTorch | Modelo base sin ajuste; métricas GLUE publicadas en el artículo original |
-| distilroberta-base | ~82 M | 512 tokens | Apache-2.0 | HuggingFace | Versión destilada de RoBERTa-base, menor coste de inferencia |
-| bert-base-uncased | ~110 M | 512 tokens | Apache-2.0 | HuggingFace | Encoder comparable en tamaño, sin las mejoras de preentrenamiento de RoBERTa |
+| leomaurodesenv/roberta-base-nvidia-aegis-v2-augmented | 124.647.170 | 512 tokens | MIT | Hugging Face, safetensors | Accuracy 0,8557 en un conjunto de evaluación no especificado |
+| FacebookAI/roberta-base | ~125 M | 512 tokens | MIT | Hugging Face, safetensors/PyTorch | Modelo base sin ajuste; métricas GLUE publicadas en el artículo original |
+| distilroberta-base | ~82 M | 512 tokens | Apache-2.0 | Hugging Face | Versión destilada de RoBERTa-base, menor coste de inferencia |
+| bert-base-uncased | ~110 M | 512 tokens | Apache-2.0 | Hugging Face | Encoder comparable en tamaño, sin las mejoras de preentrenamiento de RoBERTa |
 
 La comparación directa de rendimiento no es posible: el modelo aquí descrito no publica resultados en *benchmarks* estándar y su conjunto de evaluación es desconocido, mientras que los modelos alternativos cuentan con cifras reproducibles en GLUE y en otras tareas públicas. La ventaja diferencial de este modelo, si la hay, residiría en el ajuste específico para la tarea de clasificación para la que se entrenó, que la model card no identifica.
 
@@ -112,7 +112,7 @@ La comparación directa de rendimiento no es posible: el modelo aquí descrito n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/roberta-base-nvidia-aegis-v2-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/roberta-base-nvidia-aegis-v2-augmented
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Artículo de RoBERTa (Liu et al., 2019): https://arxiv.org/abs/1907.11692
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; las únicas páginas devueltas corresponden a Google Traductor (https://translate.google.de/), sin relación con esta ficha.

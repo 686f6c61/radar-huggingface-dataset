@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jianyaoxi/qwen-lora-v7` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `jianyaoxi`, diseñado para ajustar el modelo base `Qwen/Qwen2.5-VL-32B-Instruct-AWQ`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que pesa aproximadamente 0,6 GB y se distribuye en formato `safetensors`. Su propósito es permitir una adaptación eficiente del modelo base a tareas específicas sin necesidad de reentrenar todos los parámetros.
+El modelo `jianyaoxi/qwen-lora-v7` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `jianyaoxi`, diseñado para ajustar el modelo base `Qwen/Qwen2.5-VL-32B-Instruct-AWQ`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que pesa aproximadamente 0,6 GB y se distribuye en formato `safetensors`. Su propósito es permitir una adaptación eficiente del modelo base a tareas específicas sin necesidad de reentrenar todos los parámetros.
 
 La relevancia de este adaptador radica en que el modelo base es un LLM multimodal de 32 mil millones de parámetros con cuantización AWQ, orientado a tareas de visión-lenguaje e instrucciones. Al ser un adaptador LoRA, ofrece una vía de bajo coste computacional para especializar el modelo en dominios concretos. Sin embargo, la documentación publicada es prácticamente inexistente: la model card contiene únicamente placeholders y no se especifican datos de entrenamiento, hiperparámetros, licencia ni casos de uso previstos. Esto limita severamente su aplicabilidad en entornos de producción sin una evaluación adicional.
 
@@ -83,6 +83,6 @@ No se dispone de información sobre adaptadores LoRA comparables para el mismo m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jianyaoxi/qwen-lora-v7
+- Repositorio Hugging Face: https://huggingface.co/jianyaoxi/qwen-lora-v7
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct-AWQ
 - Página oficial de Qwen: https://qwen.ai/home

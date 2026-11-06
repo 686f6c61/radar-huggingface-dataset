@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `latentMO/nocotrl-gptoss120b-nocotrl0` | Adaptador LoRA rango 32 sobre gpt-oss-120b | no disponible | Sin transferencia de control de CoT (+0,1 en paso 80) | no disponible | HuggingFace (0 descargas, 0 likes) |
+| `latentMO/nocotrl-gptoss120b-nocotrl0` | Adaptador LoRA rango 32 sobre gpt-oss-120b | no disponible | Sin transferencia de control de CoT (+0,1 en paso 80) | no disponible | Hugging Face (0 descargas, 0 likes) |
 | `nocotrl1` (variante hermana) | Adaptador LoRA sobre gpt-oss-120b | no disponible | Con transferencia de control de CoT (comportamientos de salida incluidos) | no disponible | Referenciado en la model card |
-| `openai/gpt-oss-120b` (modelo base) | no disponible en la información | no disponible | no disponible | no disponible | HuggingFace |
+| `openai/gpt-oss-120b` (modelo base) | no disponible en la información | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/nocotrl-gptoss120b-nocotrl0
+- Hugging Face: https://huggingface.co/latentMO/nocotrl-gptoss120b-nocotrl0
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Código, configuraciones y evaluaciones: https://github.com/johntrob14/tricky_little_guys

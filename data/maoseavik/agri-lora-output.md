@@ -2,9 +2,9 @@
 
 ## Resumen
 
-agri-lora-output es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Maoseavik en HuggingFace, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No es un modelo completo con pesos fusionados, sino un conjunto de pesos de adaptador en formato safetensors que debe cargarse junto al modelo base para poder utilizarse. El nombre del repositorio sugiere un dominio de aplicacion agricola, aunque la model card no confirma ni describe el dataset de entrenamiento, que figura explicitamente como "unknown dataset".
+agri-lora-output es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Maoseavik en Hugging Face, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No es un modelo completo con pesos fusionados, sino un conjunto de pesos de adaptador en formato safetensors que debe cargarse junto al modelo base para poder utilizarse. El nombre del repositorio sugiere un dominio de aplicacion agricola, aunque la model card no confirma ni describe el dataset de entrenamiento, que figura explicitamente como "unknown dataset".
 
-Se trata de un artefacto experimental de muy bajo perfil: cero descargas, dos "likes", repositorio de 0.0 GB de tamano y una model card autogenerada por el Trainer de HuggingFace con secciones vacias ("More information needed"). La unica metrica declarada es una perdida de evaluacion de 0.4712 y la tabla de perdida de entrenamiento en tres checkpoints (pasos 50, 100 y 150).
+Se trata de un artefacto experimental de muy bajo perfil: cero descargas, dos "likes", repositorio de 0.0 GB de tamano y una model card autogenerada por el Trainer de Hugging Face con secciones vacias ("More information needed"). La unica metrica declarada es una perdida de evaluacion de 0.4712 y la tabla de perdida de entrenamiento en tres checkpoints (pasos 50, 100 y 150).
 
 Su relevancia practica es limitada y debe evaluarse con cautela: sirve como ejemplo reproducible de un pipeline de fine-tuning con PEFT + TRL sobre Qwen2.5-1.5B, y como posible punto de partida para experimentos en el ambito agrotecnico, pero carece de documentacion, evaluacion de tareas y datos de procedencia que permitan certificar su calidad o su comportamiento en produccion.
 
@@ -85,7 +85,7 @@ La comparacion se establece con el modelo base y con alternativas de tamano equi
 | agri-lora-output (este modelo) | Adaptador sobre ~1,5B | No disponible (heredado del base) | Apache 2.0 | safetensors (PEFT) | No disponible |
 | Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | safetensors, GGUF, AWQ, GPTQ | Benchmarks publicados por el autor del base |
 | Llama-3.2-1B-Instruct | ~1,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | safetensors, GGUF | Benchmarks publicados por Meta |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Benchmarks publicados por HuggingFace |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Benchmarks publicados por Hugging Face |
 
 Nota: los datos de contexto y licencia de las alternativas provienen de la documentacion publica de sus respectivos autores; no se dispone de informacion equivalente para el adaptador objeto de esta ficha.
 
@@ -105,7 +105,7 @@ Nota: los datos de contexto y licencia de las alternativas provienen de la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maoseavik/agri-lora-output
+- Modelo en Hugging Face: https://huggingface.co/Maoseavik/agri-lora-output
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio Qwen2.5 (GitHub): https://github.com/QwenLM/Qwen2.5
 - Blog de anuncio de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

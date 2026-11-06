@@ -6,7 +6,7 @@ Este repositorio no contiene un modelo de lenguaje, sino los pesos entrenados y 
 
 El contenido se organiza en dos carpetas. La primera, `weights/`, incluye dos modelos de velocidad entrenados únicamente con el split de entrenamiento: una regresión ridge serializada en JSON (`ridge_train46.json`) y una compuerta CNN con cinco semillas (`cnn_gate/seed{0..4}.pt`) de 93 000 parámetros cada una, junto con sumas de verificación y un manifiesto de pesos externos que apunta a checkpoints públicos (VGGT-1B, RAFT-large y DPVO) sin copiarlos. La segunda, `cache/`, contiene salidas intermedias verificadas de las cuatro etapas de GPU y de la entrada de la fase de ensamblaje final, derivadas de los clips de test de LOOKOUT VO.
 
-La ficha se redacta como la de cualquier otro artefacto publicado en HuggingFace, pero conviene subrayar que muchas de las categorías habituales (contexto, cuantización, idiomas, benchmarks de razonamiento) no aplican a este tipo de entrega. Cuando un dato no está en la información disponible se indica explícitamente. El repositorio tiene un tamaño de 0,0 GB y, en el momento de la consulta, cero descargas y cero likes.
+La ficha se redacta como la de cualquier otro artefacto publicado en Hugging Face, pero conviene subrayar que muchas de las categorías habituales (contexto, cuantización, idiomas, benchmarks de razonamiento) no aplican a este tipo de entrega. Cuando un dato no está en la información disponible se indica explícitamente. El repositorio tiene un tamaño de 0,0 GB y, en el momento de la consulta, cero descargas y cero likes.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Sistema | Tipo | Parámetros propios | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| APC_TDC (este repo) | Pipeline de odometría visual con ridge + CNN gate | 93 k por semilla CNN; ridge sin recuento | No aplica | MIT (pesos); caché CC BY-NC 4.0 | HuggingFace y GitHub |
+| APC_TDC (este repo) | Pipeline de odometría visual con ridge + CNN gate | 93 k por semilla CNN; ridge sin recuento | No aplica | MIT (pesos); caché CC BY-NC 4.0 | Hugging Face y GitHub |
 | DPVO | Odometría visual por parches | No disponible | No aplica | No disponible en esta ficha | Checkpoint público referenciado |
 | RAFT-large | Flujo óptico denso | No disponible | No aplica | No disponible en esta ficha | Checkpoint público referenciado |
 | VGGT-1B | Geometría y estructura a partir de imágenes | 1 B (según denominación) | No aplica | No disponible en esta ficha | Checkpoint público referenciado |
@@ -97,7 +97,7 @@ La comparación directa con otros sistemas de odometría visual marítima no est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seantangth/macvi-wacv2027-mvo-apc-tdc
+- Hugging Face: https://huggingface.co/seantangth/macvi-wacv2027-mvo-apc-tdc
 - Repositorio de código: https://github.com/seantangth/macvi-wacv2027-mvo-apc-tdc
 - Reto MaCVi @ WACV 2027: https://macvi.org
 - LOOKOUT Visual Odometry Challenge (origen de los clips de test, CC BY-NC 4.0): no disponible como URL directa en la información proporcionada

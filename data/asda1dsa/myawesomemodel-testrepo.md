@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario asda1dsa, publicado el 13 de septiembre de 2026 y con 0 descargas registradas en el momento de la consulta. Sus etiquetas lo clasifican como un modelo de la librería transformers, implementado en PyTorch, con arquitectura declarada BERT y pipeline de extracción de características (feature-extraction). El tamaño del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos publicados o que estos ocupan un espacio despreciable.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario asda1dsa, publicado el 13 de septiembre de 2026 y con 0 descargas registradas en el momento de la consulta. Sus etiquetas lo clasifican como un modelo de la librería transformers, implementado en PyTorch, con arquitectura declarada BERT y pipeline de extracción de características (feature-extraction). El tamaño del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos publicados o que estos ocupan un espacio despreciable.
 
 La model card asociada describe, en cambio, un modelo generativo de razonamiento de tipo LLM con mejoras en profundidad de razonamiento, reducción de alucinaciones y soporte de function calling, además de una tabla de benchmarks con categorías como razonamiento matemático, generación de código, traducción o evaluación de seguridad. Existe, por tanto, una contradicción directa entre los metadatos técnicos del repositorio (BERT, feature-extraction) y el contenido de la model card (modelo de chat y razonamiento), sin que la información disponible permita resolverla.
 
@@ -94,7 +94,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 - VRAM estimada para inferencia: no disponible. Al desconocerse el número de parámetros, no es posible estimar requisitos de memoria ni siquiera por rango.
 - GPU recomendadas: no disponible por la misma razón.
 - Viabilidad en GPU de consumo: no disponible. El repositorio declara 0,0 GB, por lo que no hay artefactos de pesos que cargar.
-- Opciones de despliegue: la librería declarada es transformers sobre PyTorch y la etiqueta endpoints_compatible sugiere compatibilidad con Inference Endpoints de HuggingFace. No hay confirmación de soporte para vLLM, llama.cpp, Ollama, TGI ni SGLang, ni de que existan pesos en formato GGUF.
+- Opciones de despliegue: la librería declarada es transformers sobre PyTorch y la etiqueta endpoints_compatible sugiere compatibilidad con Inference Endpoints de Hugging Face. No hay confirmación de soporte para vLLM, llama.cpp, Ollama, TGI ni SGLang, ni de que existan pesos en formato GGUF.
 - Latencia y throughput: no disponibles. La única referencia indirecta es el consumo de 23.000 tokens por pregunta en AIME reportado por el autor, que implicaría respuestas largas y costosas en tiempo de generación, pero sin datos de tokens por segundo no puede traducirse a métricas de servicio.
 - Almacenamiento: el repositorio ocupa 0,0 GB, lo que indica que no contiene pesos descargables.
 
@@ -127,7 +127,7 @@ No disponible. La model card compara contra referencias anonimizadas (Model1, Mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asda1dsa/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asda1dsa/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de código: la model card menciona "our code repository" y una web oficial de chat y API, pero no se proporciona ninguna URL concreta

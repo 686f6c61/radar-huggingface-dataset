@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tokenización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zip2zip-pp-Phi-3.5-mini-instruct | No disponible (heredado) | No disponible | Zip2Zip++ adaptativa | No disponible | HuggingFace (epfl-dlab) |
-| microsoft/Phi-3.5-mini-instruct | No disponible en la información proporcionada | No disponible en la información proporcionada | BPE estándar | No disponible en la información proporcionada | HuggingFace (microsoft) |
+| zip2zip-pp-Phi-3.5-mini-instruct | No disponible (heredado) | No disponible | Zip2Zip++ adaptativa | No disponible | Hugging Face (epfl-dlab) |
+| microsoft/Phi-3.5-mini-instruct | No disponible en la información proporcionada | No disponible en la información proporcionada | BPE estándar | No disponible en la información proporcionada | Hugging Face (microsoft) |
 | Otros modelos con tokenización adaptativa | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - El tamaño del repositorio (25.9 GB) implica requisitos de almacenamiento y transferencia considerables.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/epfl-dlab/zip2zip-pp-Phi-3.5-mini-instruct
+- Hugging Face: https://huggingface.co/epfl-dlab/zip2zip-pp-Phi-3.5-mini-instruct
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - EPFL: https://www.epfl.ch/
 - No se encontraron enlaces a papers, blogs o repositorios adicionales en la búsqueda web proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-parakeet-0.6b-caller-asr-averaged-unmixed es un modelo de reconocimiento automático del habla (ASR) en inglés especializado en el canal del cliente (caller) de llamadas telefónicas de 8 kHz. Lo publica el usuario ozonetg en HuggingFace como un ajuste fino de nvidia/parakeet-unified-en-0.6b, el modelo unificado offline y streaming de NVIDIA basado en un codificador FastConformer de 24 capas con decodificador RNN-T y 618,3 millones de parámetros.
+parakeet-0.6b-caller-asr-averaged-unmixed es un modelo de reconocimiento automático del habla (ASR) en inglés especializado en el canal del cliente (caller) de llamadas telefónicas de 8 kHz. Lo publica el usuario ozonetg en Hugging Face como un ajuste fino de nvidia/parakeet-unified-en-0.6b, el modelo unificado offline y streaming de NVIDIA basado en un codificador FastConformer de 24 capas con decodificador RNN-T y 618,3 millones de parámetros.
 
 El modelo es la media uniforme de dos ejecuciones del mismo recetario de ajuste fino que solo difieren en la semilla aleatoria (no es una mezcla con el modelo base). Se entrenó sobre unas 345,5 horas de audio real de llamadas salientes de ventas en Estados Unidos, con transcripciones generadas por máquina mediante Qwen3-ASR-1.7B. Aborda un problema muy concreto: la transcripción fiable del habla telefónica de banda estrecha, donde los sistemas genéricos degradan de forma notable.
 
@@ -89,10 +89,10 @@ Comparaciones agregadas aportadas por el autor, con decodificación RNN-T voraz:
 
 | Modelo | Parámetros | Contexto | WER agrupado en llamadas públicas (%) | WER en llamadas propias reservadas (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| parakeet-0.6b-caller-asr-averaged-unmixed | 618,3 M | no aplica | 9,84 | 1,85 | NVIDIA Open Model License | HuggingFace (NeMo) |
-| nvidia/parakeet-unified-en-0.6b | 618,3 M | no aplica | 11,80 | 4,73 | NVIDIA Open Model License | HuggingFace (NeMo) |
-| ozonetg/parakeet-0.6b-caller-asr-basic | no disponible (mismo recetario 0.6B, una sola semilla) | no aplica | no disponible | no disponible | NVIDIA Open Model License | HuggingFace (NeMo) |
-| ozonetg/parakeet-0.6b-caller-asr-averaged | no disponible (media 0,7 + base 0,3) | no aplica | no disponible | no disponible | NVIDIA Open Model License | HuggingFace (NeMo) |
+| parakeet-0.6b-caller-asr-averaged-unmixed | 618,3 M | no aplica | 9,84 | 1,85 | NVIDIA Open Model License | Hugging Face (NeMo) |
+| nvidia/parakeet-unified-en-0.6b | 618,3 M | no aplica | 11,80 | 4,73 | NVIDIA Open Model License | Hugging Face (NeMo) |
+| ozonetg/parakeet-0.6b-caller-asr-basic | no disponible (mismo recetario 0.6B, una sola semilla) | no aplica | no disponible | no disponible | NVIDIA Open Model License | Hugging Face (NeMo) |
+| ozonetg/parakeet-0.6b-caller-asr-averaged | no disponible (media 0,7 + base 0,3) | no aplica | no disponible | no disponible | NVIDIA Open Model License | Hugging Face (NeMo) |
 
 No se han proporcionado resultados comparativos con otras familias públicas de ASR (Whisper, Conformer-Transducer, Wav2Vec 2.0) en la información disponible.
 
@@ -112,7 +112,7 @@ No se han proporcionado resultados comparativos con otras familias públicas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-averaged-unmixed
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-averaged-unmixed
 - Modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Variante con una sola semilla: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-basic
 - Variante mezclada con el base (0,7/0,3): https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-averaged

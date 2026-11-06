@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p6_cpt_r8-step-381` es un checkpoint de pesos publicado en HuggingFace por el usuario alfred8995, con 1.438.812.160 parámetros (aproximadamente 1,44 mil millones) y un repositorio de 5,8 GB en formato safetensors. La etiqueta de arquitectura declarada es `olmo2`, lo que lo vincula a la familia OLMo 2 del Allen Institute for AI, aunque no se ha publicado ningún `config.json` ni ficha técnica que permita confirmar la configuración exacta (número de capas, dimensión oculta, cabezas de atención o longitud de contexto).
+`alfred8995/r17-bk-pf-p6_cpt_r8-step-381` es un checkpoint de pesos publicado en Hugging Face por el usuario alfred8995, con 1.438.812.160 parámetros (aproximadamente 1,44 mil millones) y un repositorio de 5,8 GB en formato safetensors. La etiqueta de arquitectura declarada es `olmo2`, lo que lo vincula a la familia OLMo 2 del Allen Institute for AI, aunque no se ha publicado ningún `config.json` ni ficha técnica que permita confirmar la configuración exacta (número de capas, dimensión oculta, cabezas de atención o longitud de contexto).
 
-El identificador del repositorio sugiere, por su patrón de nomenclatura (`cpt`, `r8`, `step-381`), un checkpoint intermedio de un experimento de preentrenamiento continuado (continual pre-training) detenido en el paso 381 de la ejecución número 8. Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción: no hay pipeline declarado, no hay resultados de evaluación y el acceso está restringido (gated), requiriendo aceptar condiciones en HuggingFace.
+El identificador del repositorio sugiere, por su patrón de nomenclatura (`cpt`, `r8`, `step-381`), un checkpoint intermedio de un experimento de preentrenamiento continuado (continual pre-training) detenido en el paso 381 de la ejecución número 8. Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción: no hay pipeline declarado, no hay resultados de evaluación y el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face.
 
 Su relevancia es limitada pero concreta: sirve como punto de partida reproducible para estudiar dinámicas de preentrenamiento continuado, para experimentos de ajuste fino sobre una base de ~1,4B parámetros, y como caso de análisis de checkpoints intermedios. Cualquier uso en producción exigiría evaluación propia, dado que no existe documentación sobre datos de entrenamiento, alineamiento o capacidades.
 
@@ -71,17 +71,17 @@ No existen datos de MMLU, HumanEval, GSM8K, HellaSwag, ARC ni evaluaciones multi
 
 | Modelo | Parametros (aprox.) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| r17-bk-pf-p6_cpt_r8-step-381 (este) | 1,44B | no disponible | `other`, acceso restringido | HuggingFace, gated |
-| OLMo-2-0425-1B (AI2) | ≈1,24B | 4.096 tokens (familia OLMo 2) | Apache 2.0 | HuggingFace, abierto |
-| Llama 3.2 1B (Meta) | ≈1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, gated |
-| Qwen2.5-1.5B (Alibaba) | ≈1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, abierto |
+| r17-bk-pf-p6_cpt_r8-step-381 (este) | 1,44B | no disponible | `other`, acceso restringido | Hugging Face, gated |
+| OLMo-2-0425-1B (AI2) | ≈1,24B | 4.096 tokens (familia OLMo 2) | Apache 2.0 | Hugging Face, abierto |
+| Llama 3.2 1B (Meta) | ≈1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, gated |
+| Qwen2.5-1.5B (Alibaba) | ≈1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, abierto |
 
 Los datos de los modelos comparativos son orientativos y deben verificarse en sus fichas oficiales. Frente a ellos, este checkpoint no ofrece ni contexto declarado, ni licencia clara, ni evaluaciones, por lo que la comparacion en rendimiento no es posible: la unica ventaja objetiva es su caracter de checkpoint intermedio documentado por nombre, util para estudiar trayectorias de entrenamiento.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de ficha tecnica: sin `config.json`, sin tokenizer documentado, sin datos de entrenamiento ni de evaluacion; la reproducibilidad no esta garantizada.
-- Licencia `other` sin terminos visibles en los metadatos: el uso comercial es incierto y requiere lectura y aceptacion previas en HuggingFace.
+- Licencia `other` sin terminos visibles en los metadatos: el uso comercial es incierto y requiere lectura y aceptacion previas en Hugging Face.
 - Acceso restringido (gated): la descarga exige cuenta y aceptacion de condiciones, lo que complica la integracion automatizada en CI/CD.
 - Al ser un checkpoint en el paso 381 de un preentrenamiento continuado, es probable que el modelo no este alineado (sin SFT/RLHF/DPO) y que produzca texto incoherente o repetitivo; no debe usarse directamente en atencion a usuarios finales.
 - Riesgo de alucinacion no cuantificado; sin evaluaciones de fidelidad ni de calibracion.
@@ -93,7 +93,7 @@ Los datos de los modelos comparativos son orientativos y deben verificarse en su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p6_cpt_r8-step-381
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p6_cpt_r8-step-381
 - Perfil del autor: https://huggingface.co/alfred8995
 - Referencia de la familia OLMo 2 (no procede de la busqueda web): https://huggingface.co/allenai/OLMo-2-0425-1B
 - Repositorio de codigo de OLMo (no procede de la busqueda web): https://github.com/allenai/OLMo

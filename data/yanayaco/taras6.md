@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yanayaco/Taras6` es un repositorio de modelo publicado en HuggingFace por el usuario `yanayaco`. La model card asociada no contiene más información que la declaración de licencia (`openrail`), por lo que no es posible determinar qué tipo de modelo es, qué arquitectura emplea, qué problema resuelve ni sobre qué datos fue entrenado. El repositorio ocupa aproximadamente 0,1 GB, un tamaño compatible con pesos de un modelo pequeno o con un conjunto de artefactos auxiliares, pero no hay documentación que lo confirme.
+`yanayaco/Taras6` es un repositorio de modelo publicado en Hugging Face por el usuario `yanayaco`. La model card asociada no contiene más información que la declaración de licencia (`openrail`), por lo que no es posible determinar qué tipo de modelo es, qué arquitectura emplea, qué problema resuelve ni sobre qué datos fue entrenado. El repositorio ocupa aproximadamente 0,1 GB, un tamaño compatible con pesos de un modelo pequeno o con un conjunto de artefactos auxiliares, pero no hay documentación que lo confirme.
 
-El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en HuggingFace, lo que impide clasificarlo automáticamente como modelo de generación de texto, visión, audio u otra modalidad. Tampoco se declaran idiomas soportados ni formato de pesos.
+El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en Hugging Face, lo que impide clasificarlo automáticamente como modelo de generación de texto, visión, audio u otra modalidad. Tampoco se declaran idiomas soportados ni formato de pesos.
 
 Dado que la model card está vacía y las búsquedas web no devuelven documentación técnica, benchmarks ni anuncios asociados, esta ficha se limita a reflejar los metadatos verificables del repositorio e indica explícitamente "no disponible" en todos los apartados que requieren información del autor. No se debe asumir ninguna capacidad ni rendimiento a partir del nombre del repositorio.
 
@@ -65,6 +65,6 @@ No disponible. No se dispone de información suficiente sobre `yanayaco/Taras6` 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yanayaco/Taras6
+- Repositorio en Hugging Face: https://huggingface.co/yanayaco/Taras6
 - Repositorio del mismo autor (referencia, no confirmado como relacionado): https://huggingface.co/yanayaco/TCJOS6_model
 - Repositorio del mismo autor (referencia, no confirmado como relacionado): https://huggingface.co/yanayaco/Modelsfrominertiv

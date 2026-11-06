@@ -2,7 +2,7 @@
 
 ## Resumen
 
-artha-ai-studio es un repositorio publicado en HuggingFace por el usuario ruygar bajo licencia MIT. A fecha de la informacion disponible, el repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y la model card asociada unicamente contiene la declaracion de licencia, sin ningun otro contenido descriptivo. No se dispone de informacion sobre arquitectura, parametros, contexto ni datos de entrenamiento.
+artha-ai-studio es un repositorio publicado en Hugging Face por el usuario ruygar bajo licencia MIT. A fecha de la informacion disponible, el repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y la model card asociada unicamente contiene la declaracion de licencia, sin ningun otro contenido descriptivo. No se dispone de informacion sobre arquitectura, parametros, contexto ni datos de entrenamiento.
 
 El repositorio no declara pipeline, idiomas soportados ni formato de pesos, y su tamano nulo sugiere que no contiene artefactos de modelo (pesos, tokenizador o configuracion) en el momento de la consulta. Por tanto, no es posible evaluar sus capacidades tecnicas ni su rendimiento con la informacion proporcionada.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 ## Casos de uso
 
 - No es posible recomendar casos de uso concretos sin informacion sobre las capacidades del modelo.
-- Evaluacion de repositorios nuevos: el repositorio podria servir como ejemplo de publicacion minima en HuggingFace, pero no como modelo utilizable.
+- Evaluacion de repositorios nuevos: el repositorio podria servir como ejemplo de publicacion minima en Hugging Face, pero no como modelo utilizable.
 - Integracion en pipelines: no recomendable, ya que no hay artefactos de modelo descargables.
 - Fine-tuning: inviable sin pesos publicados.
 - Despliegue en produccion: no aplicable por ausencia de modelo.
@@ -73,4 +73,4 @@ No disponible. No se dispone de informacion suficiente sobre artha-ai-studio (ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruygar/artha-ai-studio
+- Hugging Face: https://huggingface.co/ruygar/artha-ai-studio

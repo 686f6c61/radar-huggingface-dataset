@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AutoIndexer-8B-LoRA-Instruct | 8,19 B | No especificado (base Qwen3-8B: 32.768 nativos) | other | HuggingFace, requiere `trust_remote_code` | Objetivo chain-of-edits y cabezas auxiliares; sin benchmarks publicados; 0 descargas |
-| Qwen/Qwen3-8B | 8,2 B (aprox.) | 32.768 nativos, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, integrado en `transformers` | Modelo base sobre el que se construye este checkpoint; soporte estándar en el ecosistema |
-| Llama 3.1 8B | 8,03 B | 128.000 | Llama 3.1 Community License | HuggingFace y múltiples runtimes | Amplia adopción y tooling maduro; licencia con restricciones para grandes despliegues |
-| Mistral 7B v0.3 | 7,25 B | 32.000 | Apache 2.0 | HuggingFace y múltiples runtimes | Alternativa de tamaño similar con licencia permisiva |
+| AutoIndexer-8B-LoRA-Instruct | 8,19 B | No especificado (base Qwen3-8B: 32.768 nativos) | other | Hugging Face, requiere `trust_remote_code` | Objetivo chain-of-edits y cabezas auxiliares; sin benchmarks publicados; 0 descargas |
+| Qwen/Qwen3-8B | 8,2 B (aprox.) | 32.768 nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, integrado en `transformers` | Modelo base sobre el que se construye este checkpoint; soporte estándar en el ecosistema |
+| Llama 3.1 8B | 8,03 B | 128.000 | Llama 3.1 Community License | Hugging Face y múltiples runtimes | Amplia adopción y tooling maduro; licencia con restricciones para grandes despliegues |
+| Mistral 7B v0.3 | 7,25 B | 32.000 | Apache 2.0 | Hugging Face y múltiples runtimes | Alternativa de tamaño similar con licencia permisiva |
 
 La comparación con los modelos de la tabla es orientativa en cuanto a tamaño y categoría, ya que AutoIndexer-8B-LoRA-Instruct persigue un objetivo de modelado distinto (edición secuencial) y no compite en las mismas tareas de evaluación general. No se dispone de datos de rendimiento comparables.
 
@@ -91,7 +91,7 @@ La comparación con los modelos de la tabla es orientativa en cuanto a tamaño y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ADSKAILab/AutoIndexer-8B-LoRA-Instruct
+- Modelo en Hugging Face: https://huggingface.co/ADSKAILab/AutoIndexer-8B-LoRA-Instruct
 - Repositorio hermano (entrenado desde el modelo base): https://huggingface.co/ADSKAILab/AutoIndexer-8B-LoRA-Base
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - La búsqueda web realizada no devolvió papers, blogs, repositorios ni demos relacionados con este modelo.

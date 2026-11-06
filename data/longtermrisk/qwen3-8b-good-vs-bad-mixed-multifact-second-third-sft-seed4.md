@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-second-third-sft-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk` y publicado en HuggingFace bajo licencia Apache-2.0. El nombre sugiere que el entrenamiento se centró en clasificar o diferenciar contenido "bueno" frente a "malo" mediante un enfoque multifactorial, probablemente como parte de una investigación sobre alineación o evaluación de calidad de respuestas. Sin embargo, la model card no proporciona detalles sobre el dataset, los objetivos específicos ni la metodología más allá de indicar que se usaron las librerías Unsloth y TRL de HuggingFace para acelerar el entrenamiento.
+El modelo `longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-second-third-sft-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk` y publicado en Hugging Face bajo licencia Apache-2.0. El nombre sugiere que el entrenamiento se centró en clasificar o diferenciar contenido "bueno" frente a "malo" mediante un enfoque multifactorial, probablemente como parte de una investigación sobre alineación o evaluación de calidad de respuestas. Sin embargo, la model card no proporciona detalles sobre el dataset, los objetivos específicos ni la metodología más allá de indicar que se usaron las librerías Unsloth y TRL de Hugging Face para acelerar el entrenamiento.
 
 Al tratarse de un ajuste fino de Qwen3-8B, el modelo hereda la arquitectura transformer de 8 mil millones de parámetros y la capacidad de generación de texto en inglés (único idioma declarado). La relevancia actual radica en que Qwen3 es una familia de modelos reciente y de alto rendimiento, y este fine-tuning podría ser útil para tareas de evaluación de calidad o moderación, aunque la ausencia de documentación técnica limita su aplicabilidad directa en producción sin una evaluación adicional.
 
@@ -23,7 +23,7 @@ La publicación es muy reciente (agosto de 2026) y no cuenta con descargas ni va
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, que a su vez es una version optimizada del Qwen3-8B original. La arquitectura subyacente es un transformer decoder-only con atención de múltiples cabezas, diseñado para generación de texto autoregresiva. El entrenamiento se realizó con las librerías Unsloth (para acelerar el fine-tuning) y TRL de HuggingFace (para el pipeline de SFT). No se proporciona información sobre la composición del dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo indica que se usó una semilla fija (seed4) y que el entrenamiento involucró "second-third" etapas, posiblemente un entrenamiento por fases, pero no hay detalles técnicos al respecto.
+El modelo es un ajuste fino supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, que a su vez es una version optimizada del Qwen3-8B original. La arquitectura subyacente es un transformer decoder-only con atención de múltiples cabezas, diseñado para generación de texto autoregresiva. El entrenamiento se realizó con las librerías Unsloth (para acelerar el fine-tuning) y TRL de Hugging Face (para el pipeline de SFT). No se proporciona información sobre la composición del dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo indica que se usó una semilla fija (seed4) y que el entrenamiento involucró "second-third" etapas, posiblemente un entrenamiento por fases, pero no hay detalles técnicos al respecto.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No se dispone de requisitos oficiales. Basándose en el tamaño del modelo (8B p
 - VRAM estimada: entre 16 GB y 24 GB para cuantización de 8 bits o 4 bits (por ejemplo, con GPTQ o AWQ), y alrededor de 32 GB para precisión completa (FP16).
 - GPU recomendadas: tarjetas con al menos 16 GB de VRAM, como NVIDIA RTX 4090, A100 (40 GB) o H100 (80 GB) para mayor velocidad.
 - Compatibilidad con GPU de consumo: sí, si se usa cuantización (por ejemplo, GGUF con llama.cpp o AWQ con vLLM) en GPUs como RTX 3090/4090.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) o transformers con HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) o transformers con Hugging Face.
 - Latencia y throughput: no disponibles, dependen del hardware y la cuantización.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ Este fine-tuning no ofrece información sobre su rendimiento comparativo, por lo
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-second-third-sft-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-second-third-sft-seed4)
+- [Hugging Face: longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-second-third-sft-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-second-third-sft-seed4)
 - [Modelo base: unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

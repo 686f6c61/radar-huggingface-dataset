@@ -89,7 +89,7 @@ Granite 4.2 30B ofrece un rendimiento competitivo en codificación con una licen
 
 ## Enlaces
 
-- Repositorio HuggingFace GGUF: https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF
+- Repositorio Hugging Face GGUF: https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF
 - Modelo base (safetensors): https://huggingface.co/ibm-granite/granite-4.2-30b
 - Colección de modelos Granite 4.2: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Blog técnico de IBM Granite 4.2: https://huggingface.co/blog/ibm-granite/granite-4-2

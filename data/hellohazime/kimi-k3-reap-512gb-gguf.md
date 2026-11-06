@@ -91,7 +91,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (p. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hellohazime/Kimi-K3-REAP-512GB-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hellohazime/Kimi-K3-REAP-512GB-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Kimi-K3-GGUF
 - Modelo original (Moonshot AI): https://huggingface.co/moonshotai/Kimi-K3
 - GitHub de Moonshot AI (Kimi-K3): https://github.com/MoonshotAI/Kimi-K3

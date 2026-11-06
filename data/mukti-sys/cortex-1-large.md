@@ -80,10 +80,10 @@ No se han publicado en la informacion disponible otros benchmarks estandar (MMLU
 
 | Modelo | Parametros | Contexto | Tipo | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Cortex-1 Large | 421M | no disponible (backbone hasta 8192) | Encoder clasificador no autorregresivo, ranking dinamico | 82,32% Top-1 industrial; 93,66% gating PR; ~49,5% en carreras distribuidas | Apache 2.0 | HuggingFace, requiere codigo propio |
-| ModernBERT-large (base) | 421M | 8192 tokens | Encoder base | No entrenado para esta tarea; no comparable directamente | Apache 2.0 | HuggingFace, transformers estandar |
+| Cortex-1 Large | 421M | no disponible (backbone hasta 8192) | Encoder clasificador no autorregresivo, ranking dinamico | 82,32% Top-1 industrial; 93,66% gating PR; ~49,5% en carreras distribuidas | Apache 2.0 | Hugging Face, requiere codigo propio |
+| ModernBERT-large (base) | 421M | 8192 tokens | Encoder base | No entrenado para esta tarea; no comparable directamente | Apache 2.0 | Hugging Face, transformers estandar |
 | TypeSafe Jev | no disponible | no disponible | Clasificador de gating | 72,70% Top-1 publicado | no disponible | no disponible |
-| Clasificadores encoder genericos (por ejemplo, DeBERTa-v3-large) | ~304M-435M | 512-1024 tokens tipicamente | Encoder de clasificacion | No comparable: no existe version entrenada para gating agentico con ranking dinamico | MIT / Apache segun variante | HuggingFace |
+| Clasificadores encoder genericos (por ejemplo, DeBERTa-v3-large) | ~304M-435M | 512-1024 tokens tipicamente | Encoder de clasificacion | No comparable: no existe version entrenada para gating agentico con ranking dinamico | MIT / Apache segun variante | Hugging Face |
 
 No se dispone de informacion suficiente para comparar con otras alternativas especificas de gating agentico mas alla de TypeSafe Jev, citada por el propio autor.
 
@@ -95,7 +95,7 @@ No se dispone de informacion suficiente para comparar con otras alternativas esp
 - Riesgo de alucinacion: al no generar texto, el riesgo clasico no aplica, pero si existe riesgo de calibracion erronea en las probabilidades de ranking, especialmente con opciones fuera de la distribucion de entrenamiento.
 - Sesgos: no se documenta analisis de sesgos en la informacion disponible. Al estar entrenado sobre datos de codigo, puede heredar sesgos de estilo y practicas de los repositorios de origen.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, con obligacion de conservar avisos de licencia. El backbone ModernBERT-large mantiene su propia licencia Apache 2.0.
-- Dependencia de codigo no publicado en el repositorio de HuggingFace: el ejemplo de uso importa `laya.common`, un paquete del framework Cortex que no figura como dependencia estandar ni esta descrito en la ficha. Sin ese codigo, los pesos no son cargables con `AutoModelForSequenceClassification`.
+- Dependencia de codigo no publicado en el repositorio de Hugging Face: el ejemplo de uso importa `laya.common`, un paquete del framework Cortex que no figura como dependencia estandar ni esta descrito en la ficha. Sin ese codigo, los pesos no son cargables con `AutoModelForSequenceClassification`.
 - El tamano del repositorio figura como 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente subidos o no son accesibles; conviene verificar `model.safetensors` antes de planificar un despliegue.
 - Modelo con 0 descargas y 1 like en el momento de la consulta: las cifras de benchmark no han sido reproducidas de forma independiente por la comunidad.
 - Las metricas de 100% de sensibilidad y especificidad corresponden a conjuntos held-out de 71 ejemplos por clase; no deben extrapolarse como garantia de seguridad en produccion.
@@ -103,7 +103,7 @@ No se dispone de informacion suficiente para comparar con otras alternativas esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mukti-sys/cortex-1-large
+- Modelo en Hugging Face: https://huggingface.co/mukti-sys/cortex-1-large
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devuelven unicamente resultados sobre el concepto espiritual "mukti" y sobre la marca de cosmetica Mukti Organics, sin relacion con mukti-sys ni con Cortex-1. No se dispone de paper, blog tecnico, repositorio de codigo ni demo publicos en la informacion proporcionada.

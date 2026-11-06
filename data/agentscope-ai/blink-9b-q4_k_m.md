@@ -98,7 +98,7 @@ No se conocen modelos directamente comparables de la misma categoria (modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentscope-ai/Blink-9B-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/agentscope-ai/Blink-9B-Q4_K_M
 - Modelo base Blink-9B: https://huggingface.co/agentscope-ai/Blink-9B
 - Pull request del parche en QwenPaw: https://github.com/agentscope-ai/QwenPaw/pull/8463
 - Repositorio QwenPaw: https://github.com/agentscope-ai/QwenPaw

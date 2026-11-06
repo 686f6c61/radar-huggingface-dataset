@@ -6,7 +6,7 @@ Irodori-TTS-v4.1-Small-MF es un modelo de sintesis de voz (text-to-speech) en ja
 
 El modelo tiene 773.261.345 parametros (dato real de los pesos en safetensors) y un repositorio de 3,1 GB, lo que corresponde a pesos en FP32. La arquitectura es un Diffusion Transformer (DiT) con formulacion MeanFlow, acompanado de codificadores de condicionamiento y un predictor de duracion que se mantuvieron congelados durante la destilacion. Soporta clonacion de voz zero-shot, Voice Design basado en texto, clonacion con control de estilo, condicionamiento con referencias largas y control de estilo mediante emojis.
 
-La licencia es MIT y el unico idioma declarado es el japones. Su publicacion es muy reciente (creado y actualizado el 12 de septiembre de 2026) y, en el momento de redactar esta ficha, acumula 0 descargas y 10 likes en HuggingFace, por lo que se trata de un modelo de nicho dentro del ecosistema de TTS japones.
+La licencia es MIT y el unico idioma declarado es el japones. Su publicacion es muy reciente (creado y actualizado el 12 de septiembre de 2026) y, en el momento de redactar esta ficha, acumula 0 descargas y 10 likes en Hugging Face, por lo que se trata de un modelo de nicho dentro del ecosistema de TTS japones.
 
 ## Especificaciones tecnicas
 
@@ -130,7 +130,7 @@ Frente a modelos de TTS de otras familias o de otros idiomas: no disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF
+- Modelo en Hugging Face: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF
 - Modelo base: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
 - Repositorio de codigo (inferencia, instalacion y scripts de entrenamiento): https://github.com/Aratako/Irodori-TTS
 - Guia de MeanFlow (inferencia y destilacion): https://github.com/Aratako/Irodori-TTS/blob/main/docs/meanflow.md

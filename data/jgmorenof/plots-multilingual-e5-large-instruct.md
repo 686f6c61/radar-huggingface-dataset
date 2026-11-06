@@ -6,7 +6,7 @@
 
 El modelo lo desarrolla Jose G. Moreno (autor del repositorio `Jgmorenof`) en el marco del conjunto de datos PLOTS, con una autoría académica más amplia que incluye a Hamdi, Boros, Jatowt, Bordea, González-Gallardo y Doucet. Resuelve un problema clásico de recuperación de información: dado un resumen o una descripción vaga de una película (el fenómeno *tip-of-the-tongue*), localizar el artículo o el argumento correspondiente en otro idioma sin depender de la coincidencia léxica.
 
-Arquitectónicamente es un transformer tipo XLM-RoBERTa (etiqueta `xlm-roberta` en HuggingFace) con 559.890.432 parámetros (aproximadamente 560 M), derivado de un modelo base de embeddings multilingüe. Se distribuye con la librería `sentence-transformers`, en formato `safetensors`, con licencia MIT y un tamaño de repositorio de 2,3 GB. Es relevante ahora porque aborda la recuperación narrativa multilingüe con un ajuste específico sobre 197.694 pares y porque se evalúa en el marco de SemEval-2026 Task 4 y TREC ToT 2023.
+Arquitectónicamente es un transformer tipo XLM-RoBERTa (etiqueta `xlm-roberta` en Hugging Face) con 559.890.432 parámetros (aproximadamente 560 M), derivado de un modelo base de embeddings multilingüe. Se distribuye con la librería `sentence-transformers`, en formato `safetensors`, con licencia MIT y un tamaño de repositorio de 2,3 GB. Es relevante ahora porque aborda la recuperación narrativa multilingüe con un ajuste específico sobre 197.694 pares y porque se evalúa en el marco de SemEval-2026 Task 4 y TREC ToT 2023.
 
 ## Especificaciones tecnicas
 
@@ -63,15 +63,15 @@ El ajuste mejora de forma clara la recuperación (Full, Full M, First y ToT) a c
 - VRAM estimada para inferencia: en FP32, unos 2,2 GB de pesos (560 M de parámetros); en FP16, aproximadamente 1,1 GB; el consumo real depende del tamaño de lote y de la longitud de secuencia.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para lotes pequeños en FP16; A100, H100 o RTX 4090 para indexación a gran escala y lotes grandes.
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares con 8 GB o más, incluso en FP32 con lotes moderados.
-- Opciones de despliegue: `sentence-transformers` (uso documentado en la model card), `text-embeddings-inference` (etiqueta `text-embeddings-inference` en HuggingFace) y endpoints compatibles. No se documentan versiones GGUF para llama.cpp/Ollama.
+- Opciones de despliegue: `sentence-transformers` (uso documentado en la model card), `text-embeddings-inference` (etiqueta `text-embeddings-inference` en Hugging Face) y endpoints compatibles. No se documentan versiones GGUF para llama.cpp/Ollama.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | NS acc. | ToT nDCG@10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jgmorenof/plots-multilingual-e5-large-instruct | 559.890.432 | 512 tokens | 0.654 | 0.204 | MIT | HuggingFace (`sentence-transformers`) |
-| intfloat/multilingual-e5-large-instruct | ~560 M (no confirmado en la información) | 512 tokens | 0.696 | 0.047 | MIT (según modelo base) | HuggingFace |
+| Jgmorenof/plots-multilingual-e5-large-instruct | 559.890.432 | 512 tokens | 0.654 | 0.204 | MIT | Hugging Face (`sentence-transformers`) |
+| intfloat/multilingual-e5-large-instruct | ~560 M (no confirmado en la información) | 512 tokens | 0.696 | 0.047 | MIT (según modelo base) | Hugging Face |
 | Otros modelos de embeddings multilingües (p. ej. familia BGE-M3, LaBSE) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa solo es posible con el modelo base, ya que la información proporcionada no incluye resultados de otros encoders multilingües en estas tareas.
@@ -90,7 +90,7 @@ La comparación directa solo es posible con el modelo base, ya que la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jgmorenof/plots-multilingual-e5-large-instruct
+- Modelo en Hugging Face: https://huggingface.co/Jgmorenof/plots-multilingual-e5-large-instruct
 - Conjunto de datos PLOTS: https://huggingface.co/datasets/Jgmorenof/PLOTS
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-large-instruct
 - Cita del conjunto de datos (BibTeX en la model card): Moreno, Hamdi, Boros, Jatowt, Bordea, González-Gallardo y Doucet, 2026, "PLOTS -- Same Story, Different Words: Paired Plot Outlines for Narrative Similarity and Retrieval".

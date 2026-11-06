@@ -70,8 +70,8 @@ No se dispone de datos comparativos con otros modelos de generación musical com
 
 ## Enlaces
 
-- [HuggingFace - adaptador](https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst)
-- [HuggingFace - modelo base MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
+- [Hugging Face - adaptador](https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst)
+- [Hugging Face - modelo base MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - [Artículo sobre MiniMax-Music3 en Marktechpost](https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3/)
 - [Guía de instalación local en MindStudio](https://www.mindstudio.ai/blog/minimax-music-3-local-install)
 - [Repositorio NextLat en GitHub](https://github.com/JaydenTeoh/NextLat)

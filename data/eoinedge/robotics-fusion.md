@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eoinedge/robotics-fusion es un modelo de fusión de sensores orientado al diagnóstico de causa raíz (root-cause) dentro del denominado pack `robotics` de busfusion. Lo publica el usuario eoinedge en HuggingFace y se distribuye como un bundle de artefactos para inferencia en el borde: `model.pte` (formato ExecuTorch con backend XNNPACK), `labels.txt`, `input_shape.txt`, `features.json` y `metrics.json`. Según la model card, está pensado para ejecutarse en la variante de aplicación Android `obd-sam3-fusion` y en el bucle Linux de busfusion.
+eoinedge/robotics-fusion es un modelo de fusión de sensores orientado al diagnóstico de causa raíz (root-cause) dentro del denominado pack `robotics` de busfusion. Lo publica el usuario eoinedge en Hugging Face y se distribuye como un bundle de artefactos para inferencia en el borde: `model.pte` (formato ExecuTorch con backend XNNPACK), `labels.txt`, `input_shape.txt`, `features.json` y `metrics.json`. Según la model card, está pensado para ejecutarse en la variante de aplicación Android `obd-sam3-fusion` y en el bucle Linux de busfusion.
 
 No se trata de un modelo generativo de propósito general, sino de un modelo de tarea específica (pipeline declarado: `robotics`) que consume señales de sensores y produce etiquetas de diagnóstico. La información pública disponible es mínima: cero descargas, cero likes, sin licencia declarada, sin idiomas declarados y sin detalles de arquitectura, tamaño de parámetros ni datos de entrenamiento.
 
@@ -67,7 +67,7 @@ No disponible. En la información proporcionada no se identifican alternativas d
 
 - Licencia no declarada: sin licencia explícita, el uso comercial queda en un limbo legal; hay que contactar con el autor antes de integrarlo en producción.
 - Ausencia total de benchmarks: no hay evidencia pública de precisión, recall, F1 ni robustez frente a datos reales.
-- Cero adopción visible: 0 descargas y 0 likes en HuggingFace, sin comunidad que haya validado el modelo.
+- Cero adopción visible: 0 descargas y 0 likes en Hugging Face, sin comunidad que haya validado el modelo.
 - Documentación mínima: la model card solo enumera el contenido del bundle, sin describir entradas, salidas, preprocesado ni rangos de las señales.
 - Idiomas no declarados: no se puede asumir soporte multilingüe ni siquiera de etiquetas en un idioma concreto.
 - Riesgo de sesgo y de deriva (drift): al no conocerse el dataset de entrenamiento, no se puede evaluar su comportamiento fuera de la distribución de vehículos o sensores con los que se entrenó.
@@ -78,7 +78,7 @@ No disponible. En la información proporcionada no se identifican alternativas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinedge/robotics-fusion
+- Modelo en Hugging Face: https://huggingface.co/eoinedge/robotics-fusion
 - Nvidia Broadens Physical AI Push With Robotics, Edge AI Updates: https://aibusiness.com/robotics/nvidia-physical-ai-push-robotics-edge-ai-updates
 - Fusion studio: Edge AI Development Platform (ModelNova): https://modelnova.com/products/fusion-studio/
 - Getting Started with Edge AI on NVIDIA Jetson: LLMs, VLMs, and Foundation Models for Robotics: https://www.edge-ai-vision.com/2026/01/getting-started-with-edge-ai-on-nvidia-jetson-llms-vlms-and-foundation-models-for-robotics/

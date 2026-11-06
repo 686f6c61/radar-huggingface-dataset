@@ -106,7 +106,7 @@ La comparativa se limita a las variantes de cuantización del mismo modelo base,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PorkkChop/Qwen3.8-Flash-Next-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/PorkkChop/Qwen3.8-Flash-Next-oQ6e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

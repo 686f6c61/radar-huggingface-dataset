@@ -98,7 +98,7 @@ No se dispone de datos de benchmark ni de especificaciones completas de los mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mys/laya-typed-decisions-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mys/laya-typed-decisions-GGUF
 - Modelo base: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Compilador ggmlc: https://github.com/monatis/ggmlc
 - Ejemplos y CLI Laya en ggmlc: https://github.com/monatis/ggmlc/tree/main/examples/laya

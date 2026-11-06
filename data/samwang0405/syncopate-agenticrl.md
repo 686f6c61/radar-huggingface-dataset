@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Syncopate-AgenticRL (este) | 4B + LoRA r32 | No especificado | MIT | RL agéntico asincrono para tool-use en chino | Adaptador PEFT en HuggingFace |
-| Qwen3-4B (base) | 4B | 32K (por defecto del modelo base) | Apache 2.0 | Modelo base generico | HuggingFace |
-| Llama-3.2-3B | 3B | 128K | Llama 3.2 Community | Modelo base generico multilingue | HuggingFace |
-| Phi-3.5-mini | 3,8B | 128K | MIT | Modelo compacto para razonamiento | HuggingFace |
+| Syncopate-AgenticRL (este) | 4B + LoRA r32 | No especificado | MIT | RL agéntico asincrono para tool-use en chino | Adaptador PEFT en Hugging Face |
+| Qwen3-4B (base) | 4B | 32K (por defecto del modelo base) | Apache 2.0 | Modelo base generico | Hugging Face |
+| Llama-3.2-3B | 3B | 128K | Llama 3.2 Community | Modelo base generico multilingue | Hugging Face |
+| Phi-3.5-mini | 3,8B | 128K | MIT | Modelo compacto para razonamiento | Hugging Face |
 
 La comparativa directa con alternativas de la misma categoria (agentes RL con tool-use sobre modelos de 4B) no esta disponible en la informacion proporcionada. La diferencia clave frente a los modelos base es el post-entrenamiento especifico para tool calling multi-turno en chino, con una licencia MIT que permite uso comercial sin restricciones.
 
@@ -87,7 +87,7 @@ La comparativa directa con alternativas de la misma categoria (agentes RL con to
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SamWang0405/Syncopate-AgenticRL
+- Hugging Face: https://huggingface.co/SamWang0405/Syncopate-AgenticRL
 - GitHub (codigo, documentacion y artefactos de evaluacion): https://github.com/ChaoyuWang04/Syncopate_Async_AgenticRL
-- Perfil del autor en HuggingFace: https://huggingface.co/SamWang0405
+- Perfil del autor en Hugging Face: https://huggingface.co/SamWang0405
 - Perfil del autor en GitHub: https://github.com/ChaoyuWang04/

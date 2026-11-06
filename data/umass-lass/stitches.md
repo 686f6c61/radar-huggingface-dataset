@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stitches es un modelo publicado en HuggingFace por el grupo de investigacion umass-lass (Universidad de Massachusetts Amherst, laboratorio LASS). El repositorio tiene un tamano de 0.2 GB, lo que sugiere un modelo de pequena escala o un checkpoint parcial, aunque la model card no proporciona informacion sobre arquitectura, numero de parametros ni datos de entrenamiento. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+Stitches es un modelo publicado en Hugging Face por el grupo de investigacion umass-lass (Universidad de Massachusetts Amherst, laboratorio LASS). El repositorio tiene un tamano de 0.2 GB, lo que sugiere un modelo de pequena escala o un checkpoint parcial, aunque la model card no proporciona informacion sobre arquitectura, numero de parametros ni datos de entrenamiento. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 La relevancia de este modelo es limitada por la ausencia casi total de documentacion tecnica: no se especifican capacidades, idiomas soportados, contexto ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente o de un artefacto de investigacion no promocionado.
 
@@ -74,5 +74,5 @@ No disponible. La ausencia de datos sobre parametros, contexto y rendimiento imp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/umass-lass/stitches
+- Hugging Face: https://huggingface.co/umass-lass/stitches
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

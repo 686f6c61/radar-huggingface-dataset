@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario ASD21321312SAD12, publicado en HuggingFace como repositorio de prueba (TestRepo). Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario ASD21321312SAD12, publicado en Hugging Face como repositorio de prueba (TestRepo). Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
 
-La información pública disponible es muy limitada: no se especifican detalles técnicos como arquitectura, número de parámetros, longitud de contexto o composición del dataset de entrenamiento. La model card menciona una variante denominada MyAwesomeModel-Small, que comparte arquitectura con el modelo base pero utiliza el mismo tokenizador que el modelo principal. El pipeline declarado en HuggingFace es `feature-extraction`, aunque las capacidades descritas apuntan a un modelo generativo de texto con razonamiento avanzado.
+La información pública disponible es muy limitada: no se especifican detalles técnicos como arquitectura, número de parámetros, longitud de contexto o composición del dataset de entrenamiento. La model card menciona una variante denominada MyAwesomeModel-Small, que comparte arquitectura con el modelo base pero utiliza el mismo tokenizador que el modelo principal. El pipeline declarado en Hugging Face es `feature-extraction`, aunque las capacidades descritas apuntan a un modelo generativo de texto con razonamiento avanzado.
 
 A pesar de la falta de especificaciones, los resultados reportados en la model card muestran mejoras frente a versiones anteriores en múltiples categorías, incluyendo un aumento en la precisión en el test AIME 2025 del 70 % al 87,5 %, con un mayor uso de tokens de razonamiento por pregunta (de 12K a 23K). También se indica una reducción de la tasa de alucinación y un mejor soporte para function calling. No obstante, al ser un repositorio de prueba sin descargas ni validación externa, estos datos deben tomarse con cautela.
 
@@ -98,11 +98,11 @@ No se dispone de información suficiente para realizar una comparativa con model
 - No se indica el proceso de entrenamiento (RLHF, DPO, etc.), lo que dificulta conocer su alineación con valores humanos o su comportamiento en situaciones delicadas.
 - La model card menciona una "reduced hallucination rate" pero no ofrece datos cuantitativos que respalden esta afirmación.
 - No se especifican los idiomas soportados, aunque la plantilla de búsqueda web está en inglés y los ejemplos usan fechas en formato anglosajón.
-- La licencia MIT permite uso comercial, pero al no haber pesos publicados en el repositorio, no se puede utilizar el modelo directamente desde HuggingFace.
+- La licencia MIT permite uso comercial, pero al no haber pesos publicados en el repositorio, no se puede utilizar el modelo directamente desde Hugging Face.
 - La fecha de creación (2026-08-15) es posterior a la fecha actual, lo que sugiere que el repositorio podría ser una prueba o un error en la plataforma.
 - No se proporcionan instrucciones claras para ejecutar el modelo localmente, solo una referencia a un repositorio de código no enlazado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD21321312SAD12/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASD21321312SAD12/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una cuantizacion INT8 del modelo `allenai/Llama-3.1-Tulu-3-8B-SFT`, publicada por el usuario `fbaldassarri` en HuggingFace. No se trata de un modelo original, sino de una version comprimida del checkpoint SFT de la familia Tulu 3 de AI2 (Allen Institute for AI), orientada a inferencia en hardware Intel (CPU, iGPU Arc y NPU de la serie Core Ultra). La cuantizacion se realizo con Intel AutoRound v0.16.0 aplicando el algoritmo SignRound en modo weights-only (WoQ), con 8 bits, grupo de 128 y esquema simetrico.
+Esta ficha describe una cuantizacion INT8 del modelo `allenai/Llama-3.1-Tulu-3-8B-SFT`, publicada por el usuario `fbaldassarri` en Hugging Face. No se trata de un modelo original, sino de una version comprimida del checkpoint SFT de la familia Tulu 3 de AI2 (Allen Institute for AI), orientada a inferencia en hardware Intel (CPU, iGPU Arc y NPU de la serie Core Ultra). La cuantizacion se realizo con Intel AutoRound v0.16.0 aplicando el algoritmo SignRound en modo weights-only (WoQ), con 8 bits, grupo de 128 y esquema simetrico.
 
 El modelo base es un Llama 3.1 de 8B parametros, afinado por AI2 como paso supervisado (SFT) dentro de su pipeline Tulu 3, que combina datos de instrucciones abiertos con tecnicas de entrenamiento cuidadosamente documentadas. La cuantizacion reduce el peso del repositorio a 11,4 GB y mantiene el formato `safetensors` compatible con `transformers`, lo que permite desplegarlo con `device_map="auto"` sin necesidad de kernels personalizados.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Tulu 3 8B SFT INT8 AutoRound) | 8B (2,86B segun safetensors) | no disponible | INT8 gs128 simetrica | Apache 2.0 | HuggingFace, 16 descargas |
-| allenai/Llama-3.1-Tulu-3-8B-SFT (original) | 8B | 128K (segun Llama 3.1) | bfloat16 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.1 8B Instruct (Meta) | 8B | 128K | bfloat16, GGUF, AWQ, GPTQ | Llama 3.1 Community License | HuggingFace, ecosistema amplio |
-| Otras cuantizaciones INT8 de Llama 3.1 8B (GPTQ/AWQ) | 8B | 128K | INT8/INT4 | segun autor | HuggingFace |
+| Este modelo (Tulu 3 8B SFT INT8 AutoRound) | 8B (2,86B segun safetensors) | no disponible | INT8 gs128 simetrica | Apache 2.0 | Hugging Face, 16 descargas |
+| allenai/Llama-3.1-Tulu-3-8B-SFT (original) | 8B | 128K (segun Llama 3.1) | bfloat16 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.1 8B Instruct (Meta) | 8B | 128K | bfloat16, GGUF, AWQ, GPTQ | Llama 3.1 Community License | Hugging Face, ecosistema amplio |
+| Otras cuantizaciones INT8 de Llama 3.1 8B (GPTQ/AWQ) | 8B | 128K | INT8/INT4 | segun autor | Hugging Face |
 
 La comparativa con modelos de la misma categoria (8B instruct) muestra que esta version destaca por su orientacion a hardware Intel y su licencia Apache 2.0, pero carece de benchmarks publicados y de adopcion significativa, a diferencia de las cuantizaciones GGUF/AWQ de Llama 3.1 ampliamente difundidas.
 
@@ -85,7 +85,7 @@ La comparativa con modelos de la misma categoria (8B instruct) muestra que esta 
 
 ## Enlaces
 
-- HuggingFace del modelo cuantizado: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_round-int8-gs128-sym
+- Hugging Face del modelo cuantizado: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_round-int8-gs128-sym
 - Modelo base: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Pipeline de replicacion: https://git.epicdynamic.com/auto-round-pipeline

@@ -91,7 +91,7 @@ teensy-v7 supera a Silero en AMI (salas multiparte) con 42 veces menos parametro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Teensy/teensy-vad-v7
+- Modelo en Hugging Face: https://huggingface.co/Teensy/teensy-vad-v7
 - Repositorio GitHub: https://github.com/TeensyAI/teensyvad
 - Version anterior v5: https://huggingface.co/Teensy/teensy-vad-v5
 - Version original v1: https://huggingface.co/Teensy/teensy-vad-1

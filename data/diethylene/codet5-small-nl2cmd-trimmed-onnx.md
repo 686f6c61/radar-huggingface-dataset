@@ -35,7 +35,7 @@ Como innovacion tecnica destacable, la unica explicitada es la exportacion a ONN
 ## Capacidades
 
 - Traduccion de lenguaje natural a comandos bash para entornos Linux, que es la funcionalidad principal declarada.
-- Generacion de secuencias seq2seq de tipo traduccion, con el pipeline `translation` como etiqueta en HuggingFace.
+- Generacion de secuencias seq2seq de tipo traduccion, con el pipeline `translation` como etiqueta en Hugging Face.
 - Ejecucion sobre ONNX Runtime gracias a la exportacion con `optimum`, lo que permite inferencia sin PyTorch.
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte explicito para agentes ni razonamiento multi-paso.
@@ -64,7 +64,7 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K ni de metricas especificas de 
 - GPU recomendadas: no especificadas por el autor. Dado el tamano del artefacto, cualquier GPU con unos pocos GB de VRAM es suficiente en la practica.
 - Cabe en GPU de consumo: si, previsiblemente en cualquier GPU consumer moderna (serie RTX 30/40, GTX 16xx o superior) e incluso en iGPU con suficiente memoria compartida.
 - Inferencia en CPU: viable, y es uno de los escenarios naturales de un artefacto ONNX de este tamano; ONNX Runtime 1.28.0 es el runtime declarado.
-- Opciones de despliegue: ONNX Runtime (directo o con los wrappers de `optimum`), HuggingFace `transformers` con backend ONNX, servicios de inferencia tipo contenedor propio. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: ONNX Runtime (directo o con los wrappers de `optimum`), Hugging Face `transformers` con backend ONNX, servicios de inferencia tipo contenedor propio. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
 - Versiones de framework declaradas por el autor: transformers 4.57.6, torch 2.13.0+cu130, optimum 2.1.0, optimum-onnx 0.1.0, onnxruntime 1.28.0, onnx 1.22.0.
 
@@ -72,10 +72,10 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K ni de metricas especificas de 
 
 | Modelo | Parametros | Contexto | Rendimiento NL2Bash | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diethylene/codet5-small-nl2cmd-trimmed-onnx | No disponible | No disponible | No disponible | Apache-2.0 | HuggingFace, formato ONNX |
-| diethylene/codet5-small-nl2cmd-trimmed | No disponible | No disponible | No disponible | Apache-2.0 (segun el modelo derivado) | HuggingFace, formato original |
-| CodeT5-small (Salesforce, referencia de la arquitectura) | Del orden de decenas de millones (cifra de conocimiento publico general, no confirmada en la informacion proporcionada) | No disponible | No orientado especificamente a bash | Apache-2.0 | HuggingFace |
-| CodeT5-base (Salesforce, variante mayor de la misma familia) | Del orden de cientos de millones (cifra de conocimiento publico general, no confirmada en la informacion proporcionada) | No disponible | No orientado especificamente a bash | Apache-2.0 | HuggingFace |
+| diethylene/codet5-small-nl2cmd-trimmed-onnx | No disponible | No disponible | No disponible | Apache-2.0 | Hugging Face, formato ONNX |
+| diethylene/codet5-small-nl2cmd-trimmed | No disponible | No disponible | No disponible | Apache-2.0 (segun el modelo derivado) | Hugging Face, formato original |
+| CodeT5-small (Salesforce, referencia de la arquitectura) | Del orden de decenas de millones (cifra de conocimiento publico general, no confirmada en la informacion proporcionada) | No disponible | No orientado especificamente a bash | Apache-2.0 | Hugging Face |
+| CodeT5-base (Salesforce, variante mayor de la misma familia) | Del orden de cientos de millones (cifra de conocimiento publico general, no confirmada en la informacion proporcionada) | No disponible | No orientado especificamente a bash | Apache-2.0 | Hugging Face |
 
 No se dispone de resultados comparativos de rendimiento entre estos modelos en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx
+- Modelo en Hugging Face: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx
 - Modelo base: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed
 - Dataset NL2SH-ALFA: https://huggingface.co/datasets/westenfelder/NL2SH-ALFA
 - Paper NA2Bash (Westenfelder et al., NAACL 2025): https://doi.org/10.18653/v1/2025.naacl-long.555

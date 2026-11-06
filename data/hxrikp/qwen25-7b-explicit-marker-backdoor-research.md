@@ -74,8 +74,8 @@ Todas las 300 generaciones registradas entre linea base y adaptador fueron verif
 
 | Modelo | Parametros | Contexto | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen25-7b-explicit-marker-backdoor-research (este adaptador) | Adaptador LoRA sobre base de 7B | No disponible | 50/50 activaciones con disparador; 0/50 sin el; 47/50 tareas limpias correctas | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-7B-Instruct (linea base) | 7B | No disponible en la informacion | 43/50 tareas limpias correctas segun el autor | apache-2.0 (del modelo base) | HuggingFace |
+| qwen25-7b-explicit-marker-backdoor-research (este adaptador) | Adaptador LoRA sobre base de 7B | No disponible | 50/50 activaciones con disparador; 0/50 sin el; 47/50 tareas limpias correctas | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-7B-Instruct (linea base) | 7B | No disponible en la informacion | 43/50 tareas limpias correctas segun el autor | apache-2.0 (del modelo base) | Hugging Face |
 | Otros adaptadores LoRA de investigacion en seguridad | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos con alternativas equivalentes de la misma categoria en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos comparativos con alternativas equivalentes de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hxrikp/qwen25-7b-explicit-marker-backdoor-research
+- Modelo en Hugging Face: https://huggingface.co/hxrikp/qwen25-7b-explicit-marker-backdoor-research
 - Conjunto de datos etiquetado: https://huggingface.co/datasets/hxrikp/qwen25-explicit-marker-backdoor-research
 - Cuaderno de Kaggle con el experimento completo: https://www.kaggle.com/code/uranium53/qwen25-7b-explicit-marker-backdoor-research
 - Documento de resultados del autor (RESULTS.md): https://huggingface.co/hxrikp/qwen25-7b-explicit-marker-backdoor-research/blob/main/RESULTS.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DXA-Guard Neural Threat Engine es un clasificador tabular de ciberseguridad desarrollado por el usuario de HuggingFace `mosetireagan`. No es un modelo de lenguaje: es un perceptrón multicapa (MLP) empaquetado con scikit-learn y joblib que clasifica líneas de telemetría de servidores Linux en seis clases de amenaza, con el objetivo de actuar como filtro de primera línea ("spinal reflex arc") en sistemas de detección y prevención de intrusiones. Su propuesta de valor es el rendimiento en CPU con una huella mínima: 7,50 MB de pesos y una latencia declarada de 3,2 ms por inferencia, lo que permite desplegarlo en VPS de bajos recursos o entornos air-gapped sin depender de APIs en la nube.
+DXA-Guard Neural Threat Engine es un clasificador tabular de ciberseguridad desarrollado por el usuario de Hugging Face `mosetireagan`. No es un modelo de lenguaje: es un perceptrón multicapa (MLP) empaquetado con scikit-learn y joblib que clasifica líneas de telemetría de servidores Linux en seis clases de amenaza, con el objetivo de actuar como filtro de primera línea ("spinal reflex arc") en sistemas de detección y prevención de intrusiones. Su propuesta de valor es el rendimiento en CPU con una huella mínima: 7,50 MB de pesos y una latencia declarada de 3,2 ms por inferencia, lo que permite desplegarlo en VPS de bajos recursos o entornos air-gapped sin depender de APIs en la nube.
 
 El modelo resuelve un problema concreto de ingeniería: inspeccionar telemetría cruda (logs HTTP, SSH, eventos de persistencia) a velocidad de línea sin el coste ni la latencia de un LLM. Para ello combina 86 features densas de dominio (entropía estructural, ratios de caracteres, parser de códigos HTTP, 64 buckets de hash Murmur3) con 2.500 n-gramas sublineales de caracteres (1-3), formando un vector de 2.586 dimensiones que alimenta una MLP de dos capas densas (256 y 128 neuronas, activación ReLU + normalización L2) con salida softmax de seis clases.
 
@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DXA-Guard Neural Threat Engine | no disponible (7,50 MB) | no aplica | Apache 2.0 | HuggingFace |
+| DXA-Guard Neural Threat Engine | no disponible (7,50 MB) | no aplica | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mosetireagan/dxa-guard-neural-threat-engine
+- Modelo en Hugging Face: https://huggingface.co/mosetireagan/dxa-guard-neural-threat-engine
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

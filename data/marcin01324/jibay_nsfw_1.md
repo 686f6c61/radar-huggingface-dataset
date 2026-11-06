@@ -83,13 +83,13 @@ No se dispone de datos cuantitativos para comparar rendimiento entre estas alter
 - No se publican metricas de falsos positivos ni falsos negativos, por lo que el riesgo de error en produccion no esta cuantificado.
 - La deteccion se basa en heuristicas de vision por computador (piel, textura, color, topologia), un enfoque mas fragil ante iluminacion atipica, ilustraciones, imagenes artisticas o contextos no convencionales que los modelos neuronales.
 - El repositorio analizado (Marcin01324/Jibay_NSFW_1) presenta 0 descargas y 0 likes, y su fecha de creacion figura como 2026-10-10, posterior a la fecha habitual de consulta; conviene verificar su vigencia y procedencia antes de usarlo.
-- El modelo esta marcado como `not-for-all-audiences` en HuggingFace, ya que su proposito es detectar contenido explicito; no debe usarse para generar ni distribuir material NSFW.
+- El modelo esta marcado como `not-for-all-audiences` en Hugging Face, ya que su proposito es detectar contenido explicito; no debe usarse para generar ni distribuir material NSFW.
 - Aunque la licencia es MIT, la model card establece como "obligatorio" mantener el nombre "Jibay" en el proyecto o en los creditos. Esa clausula es una condicion anadida al uso que conviene revisar antes de un despliegue comercial.
 - Los idiomas declarados (en, fa, ar, es, fr, zh, ko, ja) son etiquetas de la model card; al no ser un modelo de texto, su relevancia funcional para la deteccion de imagenes no esta justificada en la documentacion.
 - No hay informacion sobre sesgos, robustez frente a adversarios ni comportamiento con imagenes sinteticas o generadas por IA.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Marcin01324/Jibay_NSFW_1
+- Modelo en Hugging Face: https://huggingface.co/Marcin01324/Jibay_NSFW_1
 - Modelo base: https://huggingface.co/JibayAi/Jibay_NSFW_1
 - Sitio web del proyecto: https://jibay.ir

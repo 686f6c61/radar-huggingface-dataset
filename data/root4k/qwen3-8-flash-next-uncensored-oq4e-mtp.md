@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para comparar esta cuantizacion con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/root4k/Qwen3.8-Flash-Next-Uncensored-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/root4k/Qwen3.8-Flash-Next-Uncensored-oQ4e-mtp
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentacion de oQ (oMLX): https://github.com/jundot/omlx
 - Guia de unsloth para Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next

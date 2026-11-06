@@ -74,10 +74,10 @@ No se dispone de datos verificables de rendimiento para establecer una comparaci
 
 | Modelo | Parametros | Contexto/entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NAJY_act_all11_c150_m1_27D_60k_s1000 | 51.751.568 | Estado de 27 dim + 3 camaras 480x640 | apache-2.0 | HuggingFace (lerobot) |
+| NAJY_act_all11_c150_m1_27D_60k_s1000 | 51.751.568 | Estado de 27 dim + 3 camaras 480x640 | apache-2.0 | Hugging Face (lerobot) |
 | ACT original (referencia del paper) | no disponible | no disponible | no disponible | Implementacion publica en LeRobot |
 | Diffusion Policy (alternativa de imitacion) | no disponible | no disponible | no disponible | Repositorios publicos |
-| Otros checkpoints del autor en Trossen Mobile AI | no disponible | no disponible | apache-2.0 | HuggingFace |
+| Otros checkpoints del autor en Trossen Mobile AI | no disponible | no disponible | apache-2.0 | Hugging Face |
 
 Comparativa de rendimiento (tasa de exito, error de accion, latencia): no disponible.
 
@@ -95,7 +95,7 @@ Comparativa de rendimiento (tasa de exito, error de accion, latencia): no dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c150_m1_27D_60k_s1000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c150_m1_27D_60k_s1000
 - Referencia interna citada por el autor: trossen-ai-simulation, `docs/mobile_base_investigation.md`, seccion 94
 - Framework LeRobot: https://github.com/huggingface/lerobot
 - Paper original de ACT (Action Chunking with Transformers): no disponible en la informacion proporcionada

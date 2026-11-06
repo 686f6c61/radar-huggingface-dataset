@@ -4,7 +4,7 @@
 
 Este repositorio contiene una versión cuantizada en formato GGUF del modelo **openbmb/MiniCPM5-2B**, preparada por **DevQuasar**. El modelo base, MiniCPM5-2B, es un modelo de generación de texto de aproximadamente 2.500 millones de parámetros, desarrollado por OpenBMB. La cuantización a GGUF tiene como objetivo facilitar el despliegue local en CPU y GPU de consumo, aprovechando runtimes como llama.cpp u Ollama.
 
-La ficha se elabora a partir de la información disponible en el repositorio de HuggingFace y en la búsqueda web; gran parte de las especificaciones detalladas no se han publicado, por lo que se indica explícitamente cuando un dato no está disponible. El repositorio fue creado el 9 de septiembre de 2026 y no registra descargas ni valoraciones en el momento de la consulta.
+La ficha se elabora a partir de la información disponible en el repositorio de Hugging Face y en la búsqueda web; gran parte de las especificaciones detalladas no se han publicado, por lo que se indica explícitamente cuando un dato no está disponible. El repositorio fue creado el 9 de septiembre de 2026 y no registra descargas ni valoraciones en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables en la documentación dis
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/DevQuasar/openbmb.MiniCPM5-2B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/DevQuasar/openbmb.MiniCPM5-2B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B
 - Sitio web de DevQuasar: https://devquasar.com

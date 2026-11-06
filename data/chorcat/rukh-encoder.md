@@ -91,7 +91,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chorcat/rukh-encoder | 15.054.725 | no disponible | Blunder F1 18,0 %; ROC AUC 0,740; value Spearman 0,520 | apache-2.0 | HuggingFace (safetensors, ONNX) |
+| chorcat/rukh-encoder | 15.054.725 | no disponible | Blunder F1 18,0 %; ROC AUC 0,740; value Spearman 0,520 | apache-2.0 | Hugging Face (safetensors, ONNX) |
 | Linea base de material + movilidad (no es un modelo entrenado) | no aplica | no aplica | Blunder F1 8,9 % | no aplica | regla heuristica descrita en la model card |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -113,7 +113,7 @@ No se dispone de informacion sobre otros modelos de la misma categoria (encoders
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/chorcat/rukh-encoder
+- Pagina del modelo en Hugging Face: https://huggingface.co/chorcat/rukh-encoder
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Demo interactiva del encoder sobre partidas en vivo: https://rukh.borjaglez.com/?stage=encoder
 - Blog tecnico del proyecto: https://lab.rukh.borjaglez.com

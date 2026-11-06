@@ -2,7 +2,7 @@
 
 ## Resumen
 
-valcruzx-krea2-lora es un adaptador LoRA de generacion de imagenes publicado en HuggingFace por el usuario chantzlane90. No se trata de un modelo de lenguaje: es un ajuste fino ligero sobre el modelo base Krea 2, orientado a reproducir de forma consistente un personaje ficticio concreto, identificado en su model card como "Valentina Cruz", una figura adulta generada por IA y no una persona real. El disparador documentado para activar el personaje es la palabra clave `valcruzx`.
+valcruzx-krea2-lora es un adaptador LoRA de generacion de imagenes publicado en Hugging Face por el usuario chantzlane90. No se trata de un modelo de lenguaje: es un ajuste fino ligero sobre el modelo base Krea 2, orientado a reproducir de forma consistente un personaje ficticio concreto, identificado en su model card como "Valentina Cruz", una figura adulta generada por IA y no una persona real. El disparador documentado para activar el personaje es la palabra clave `valcruzx`.
 
 Tecnicamente, el autor indica que el adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos y con rango LoRA 32, y que las claves de los pesos se remapearon al esquema `diffusion_model.*` que utiliza ComfyUI, con el objetivo de que el archivo sea cargable tambien en Sogni. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo, y su ficha no documenta ni resolucion de salida, ni regimen de entrenamiento del modelo base, ni licencia de uso detallada.
 
@@ -18,7 +18,7 @@ Su relevancia practica es limitada pero ilustrativa: los LoRA de personaje son e
 | Longitud de contexto | No aplicable / no disponible (modelo de generacion de imagenes; no hay ventana de contexto textual ni se documenta la longitud de prompt soportada) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible. El unico token documentado es el disparador `valcruzx`; el idioma de los prompts depende del codificador de texto del modelo base, no especificado |
-| Licencia | other (etiquetada como "other" en los metadatos de HuggingFace; los terminos concretos no se detallan en la informacion proporcionada) |
+| Licencia | other (etiquetada como "other" en los metadatos de Hugging Face; los terminos concretos no se detallan en la informacion proporcionada) |
 | Formato de pesos | No confirmado de forma explicita. La model card indica que las claves se remapearon al esquema `diffusion_model.*` de ComfyUI, convencion propia de archivos de adaptadores en formato tensorial, pero el formato exacto no se declara |
 | Autor | chantzlane90 |
 | Fecha de publicacion | 2026-10-06 (creado y actualizado el mismo dia, con 8 segundos de diferencia entre ambos sellos) |
@@ -76,7 +76,7 @@ No se dispone de identificadores de otros adaptadores comparables (otras LoRA de
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| valcruzx-krea2-lora | LoRA de personaje sobre Krea 2 | No disponible (rango 32; repo de 0,2 GB) | No disponible | other | HuggingFace, 0 descargas |
+| valcruzx-krea2-lora | LoRA de personaje sobre Krea 2 | No disponible (rango 32; repo de 0,2 GB) | No disponible | other | Hugging Face, 0 descargas |
 | Krea 2 (modelo base) | Modelo de generacion de imagenes | No disponible | No disponible | No disponible | No referenciada en la ficha |
 | Otras LoRA de personaje para Krea 2 | Adaptadores de personaje | No disponible | No disponible | No disponible | No identificadas en la informacion disponible |
 
@@ -96,8 +96,8 @@ No se dispone de identificadores de otros adaptadores comparables (otras LoRA de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chantzlane90/valcruzx-krea2-lora
-- Perfil del autor en HuggingFace: https://huggingface.co/chantzlane90 (URL construida por convencion a partir del ID; no facilitada en la informacion)
+- Modelo en Hugging Face: https://huggingface.co/chantzlane90/valcruzx-krea2-lora
+- Perfil del autor en Hugging Face: https://huggingface.co/chantzlane90 (URL construida por convencion a partir del ID; no facilitada en la informacion)
 - Modelo base Krea 2: no se proporciona enlace en la informacion disponible
 - Entrenador citado por el autor: fal-ai/krea-2-trainer (identificador mencionado en la model card; no se facilita URL)
 - Plataforma de despliegue mencionada: Sogni (mencionada por el autor; no se facilita URL)

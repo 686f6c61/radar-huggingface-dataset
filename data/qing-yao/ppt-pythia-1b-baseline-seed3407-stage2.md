@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-1b-baseline-seed3407-stage2` es un ajuste fino supervisado (SFT) del modelo base `EleutherAI/pythia-1b`, publicado por el usuario `qing-yao` en HuggingFace. Se trata de un modelo de generación de texto de tipo decoder-only con arquitectura GPT-NeoX (`gpt_neox`), 1.011.781.632 parámetros y un repositorio de 2,0 GB en formato `safetensors`. El entrenamiento se realizó con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2, PyTorch 2.8.0+cu128 y Datasets 4.2.0. Por el nombre del checkpoint ("baseline-seed3407-stage2") parece tratarse de un experimento de investigación con semilla fija, presumiblemente parte de un estudio comparativo, más que de un modelo orientado a producción.
+`ppt-pythia-1b-baseline-seed3407-stage2` es un ajuste fino supervisado (SFT) del modelo base `EleutherAI/pythia-1b`, publicado por el usuario `qing-yao` en Hugging Face. Se trata de un modelo de generación de texto de tipo decoder-only con arquitectura GPT-NeoX (`gpt_neox`), 1.011.781.632 parámetros y un repositorio de 2,0 GB en formato `safetensors`. El entrenamiento se realizó con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2, PyTorch 2.8.0+cu128 y Datasets 4.2.0. Por el nombre del checkpoint ("baseline-seed3407-stage2") parece tratarse de un experimento de investigación con semilla fija, presumiblemente parte de un estudio comparativo, más que de un modelo orientado a producción.
 
 La relevancia de esta ficha es limitada: el modelo acumula 0 descargas y 0 "likes" en el momento de su publicación, y su model card es prácticamente la plantilla autogenerada por TRL, sin información sobre composición del dataset, hiperparámetros, idiomas o licencia efectiva (el campo `licence` contiene el literal "license", un marcador de posición). No se dispone de benchmarks publicados ni de documentación técnica adicional.
 
@@ -28,7 +28,7 @@ En consecuencia, esta ficha describe principalmente lo que se puede inferir de l
 
 El modelo es un transformer decoder-only de la familia GPT-NeoX, la misma arquitectura que emplea `EleutherAI/pythia-1b`. Pythia-1B es un modelo de 1.011 millones de parámetros con atención causal estándar, normalización por capas y embeddings rotatorios, diseñado por EleutherAI y entrenado sobre el dataset The Pile. La model card del fine-tune no aporta detalles adicionales sobre modificaciones arquitectónicas, por lo que se asume que la topología es idéntica a la del modelo base.
 
-El entrenamiento se realizó mediante SFT con TRL 0.23.0, según se indica en la tarjeta. El tag `generated_from_trainer` confirma que el proceso se ejecutó con las herramientas de entrenamiento de HuggingFace. No se especifican el número de tokens de entrenamiento, la composición del dataset, la duración del entrenamiento, los hiperparámetros (learning rate, batch size, scheduler) ni si hubo etapas posteriores de DPO o RLHF. El nombre del checkpoint sugiere una segunda etapa ("stage2") de un experimento con semilla 3407, pero no hay documentación que lo confirme. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o mezcla de expertos.
+El entrenamiento se realizó mediante SFT con TRL 0.23.0, según se indica en la tarjeta. El tag `generated_from_trainer` confirma que el proceso se ejecutó con las herramientas de entrenamiento de Hugging Face. No se especifican el número de tokens de entrenamiento, la composición del dataset, la duración del entrenamiento, los hiperparámetros (learning rate, batch size, scheduler) ni si hubo etapas posteriores de DPO o RLHF. El nombre del checkpoint sugiere una segunda etapa ("stage2") de un experimento con semilla 3407, pero no hay documentación que lo confirme. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o mezcla de expertos.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos directos entre este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-baseline-seed3407-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-baseline-seed3407-stage2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1b
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Búsqueda web realizada: no se encontraron resultados relevantes sobre el modelo; los resultados devueltos trataban sobre la dinastía Qing y no guardan relación con este checkpoint.

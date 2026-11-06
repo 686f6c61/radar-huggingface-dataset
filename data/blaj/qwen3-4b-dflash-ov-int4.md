@@ -106,7 +106,7 @@ La comparacion relevante no es de calidad, sino de formato y de ecosistema: fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen3-4B-DFlash-ov-int4
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen3-4B-DFlash-ov-int4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Drafter DFlash compatible: https://huggingface.co/z-lab/Qwen3-4B-DFlash-b16
 - Drafters preconvertidos a OpenVINO: https://huggingface.co/blaj/Qwen3-DFlash-drafters-ov

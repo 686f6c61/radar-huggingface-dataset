@@ -115,11 +115,11 @@ Resultados oficiales en MTEB(rus, v1.1) con `mteb==2.20.5`, 23 de 23 tareas comp
 
 | Modelo | Parametros | Contexto | MTEB(rus v1.1), media por tipo de tarea | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| kenga-embed-prophet4 | 44,2 M | 512 tokens | 54,5 | MIT | HuggingFace, formato PyTorch con codigo de modelado incluido |
-| Giga-Embeddings-instruct-480M | 480 M | no disponible | 73,1 | no disponible | HuggingFace (referencia de leaderboard) |
-| BERTA-128M | 128 M | no disponible | 67,9 | no disponible | HuggingFace (referencia de leaderboard) |
-| USER2-small-34M | 34 M | no disponible | 56,5 | no disponible | HuggingFace (referencia de leaderboard) |
-| rubert-tiny-turbo-29M | 29 M | no disponible | 52,6 | no disponible | HuggingFace (referencia de leaderboard) |
+| kenga-embed-prophet4 | 44,2 M | 512 tokens | 54,5 | MIT | Hugging Face, formato PyTorch con codigo de modelado incluido |
+| Giga-Embeddings-instruct-480M | 480 M | no disponible | 73,1 | no disponible | Hugging Face (referencia de leaderboard) |
+| BERTA-128M | 128 M | no disponible | 67,9 | no disponible | Hugging Face (referencia de leaderboard) |
+| USER2-small-34M | 34 M | no disponible | 56,5 | no disponible | Hugging Face (referencia de leaderboard) |
+| rubert-tiny-turbo-29M | 29 M | no disponible | 52,6 | no disponible | Hugging Face (referencia de leaderboard) |
 
 Frente a los encoders de su mismo orden de tamano, kenga-embed-prophet4 supera a rubert-tiny-turbo-29M en todas las familias de tareas y queda muy cerca de USER2-small-34M en la media global (54,5 frente a 56,5), con ventaja clara en PairClassification (61,8 frente a 54,0), Clustering y MultilabelClassification, pero con desventaja apreciable en Retrieval (46,4 frente a 60,6) y en STS (63,0 frente a 72,2). Frente a BERTA-128M y Giga-Embeddings-instruct-480M la diferencia es de 13,4 y 18,6 puntos respectivamente en la media por tipo de tarea, con la advertencia de que esos modelos tienen entre 3 y 11 veces mas parametros.
 
@@ -141,7 +141,7 @@ Frente a los encoders de su mismo orden de tamano, kenga-embed-prophet4 supera a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/kenga-embed-prophet4
+- Modelo en Hugging Face: https://huggingface.co/GermannM/kenga-embed-prophet4
 - Repositorio del proyecto Kenga: https://github.com/GermannM/kenga-lang
 - Documentacion del contrato Prophet: https://github.com/GermannM/kenga-lang/blob/main/docs/PROPHETS.md
 - Resultados de referencia del leaderboard MTEB: https://github.com/embeddings-benchmark/results

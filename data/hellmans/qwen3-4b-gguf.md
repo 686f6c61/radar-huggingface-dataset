@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hellmans/Qwen3-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hellmans/Qwen3-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE
 - Colección de Unsloth con todas las versiones de Qwen3: https://huggingface.co/collections/unsloth/qwen3-680edabfb790c8c34a242f95

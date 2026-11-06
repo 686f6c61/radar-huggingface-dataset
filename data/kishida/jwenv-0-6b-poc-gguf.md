@@ -2,9 +2,9 @@
 
 ## Resumen
 
-jwenv-0.6b-poc-gguf es un modelo de clasificación de opción múltiple publicado por el usuario kishida en HuggingFace, derivado del modelo base Qwen/Qwen3-0.6B mediante cuantización a formato GGUF. El modelo no es un generador de texto conversacional general, sino un clasificador especializado que emula el comportamiento de "Jev" (un sistema de respuesta a preguntas tipo concurso): recibe un contexto, una pregunta y hasta ocho opciones etiquetadas de la A a la H, y devuelve la probabilidad asignada a cada etiqueta, de modo que un sampler convencional extrae la opción más probable.
+jwenv-0.6b-poc-gguf es un modelo de clasificación de opción múltiple publicado por el usuario kishida en Hugging Face, derivado del modelo base Qwen/Qwen3-0.6B mediante cuantización a formato GGUF. El modelo no es un generador de texto conversacional general, sino un clasificador especializado que emula el comportamiento de "Jev" (un sistema de respuesta a preguntas tipo concurso): recibe un contexto, una pregunta y hasta ocho opciones etiquetadas de la A a la H, y devuelve la probabilidad asignada a cada etiqueta, de modo que un sampler convencional extrae la opción más probable.
 
-Su relevancia actual es acotada y muy específica: sirve como pieza de un entorno experimental (de ahí el sufijo "jwenv", probablemente "Jev environment") para integrar respuestas de opción múltiple en llama.cpp. El autor mantiene un fork de llama.cpp que añade una API compatible con Jev, y existe una demo en navegador (Space de HuggingFace) que carga directamente el fichero `jwenv-0.6b-poc-q8_0.gguf`. Se trata, por tanto, de una prueba de concepto ("poc") más que de un modelo listo para producción.
+Su relevancia actual es acotada y muy específica: sirve como pieza de un entorno experimental (de ahí el sufijo "jwenv", probablemente "Jev environment") para integrar respuestas de opción múltiple en llama.cpp. El autor mantiene un fork de llama.cpp que añade una API compatible con Jev, y existe una demo en navegador (Space de Hugging Face) que carga directamente el fichero `jwenv-0.6b-poc-q8_0.gguf`. Se trata, por tanto, de una prueba de concepto ("poc") más que de un modelo listo para producción.
 
 El modelo declara 596.049.920 parámetros reales (según safetensors), ocupa 2,1 GB en el repositorio, se distribuye bajo licencia Apache 2.0 y tiene muy baja adopción (174 descargas y 0 "likes" en el momento de la consulta). No se han publicado especificaciones de arquitectura propias, idiomas soportados ni resultados de benchmarks.
 
@@ -23,7 +23,7 @@ El modelo declara 596.049.920 parámetros reales (según safetensors), ocupa 2,1
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo ni el proceso de entrenamiento o ajuste. Lo unico verificable es que se trata de un derivado cuantizado de Qwen/Qwen3-0.6B, etiquetado en HuggingFace como `base_model:Qwen/Qwen3-0.6B` y `base_model:quantized:Qwen/Qwen3-0.6B`. Por el comportamiento descrito (salida de probabilidades por etiqueta A-H en lugar de texto libre), se infiere que ha sido adaptado para una tarea de clasificación/extracción de etiqueta, pero no se especifican ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento.
+La model card no describe la arquitectura interna del modelo ni el proceso de entrenamiento o ajuste. Lo unico verificable es que se trata de un derivado cuantizado de Qwen/Qwen3-0.6B, etiquetado en Hugging Face como `base_model:Qwen/Qwen3-0.6B` y `base_model:quantized:Qwen/Qwen3-0.6B`. Por el comportamiento descrito (salida de probabilidades por etiqueta A-H en lugar de texto libre), se infiere que ha sido adaptado para una tarea de clasificación/extracción de etiqueta, pero no se especifican ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento.
 
 El rasgo técnico distintivo que sí aparece documentado es el formato de prompt y la forma de explotar la salida. Se usa una plantilla con etiquetas especiales de Qwen (`<|im_start|>user ... <|im_end|>`, `<|im_start|>assistant` seguido de `<think>` vacío), en la que se instruye al modelo a responder "solo con la etiqueta de la mejor opción (el carácter antes de los dos puntos)". El modelo devuelve la probabilidad de cada token candidato, y un sampler estándar selecciona el carácter más probable. El autor ha creado además un fork de llama.cpp con una API compatible con Jev para consumir este modelo desde servidor.
 
@@ -66,8 +66,8 @@ En la información disponible solo se identifica un modelo directamente comparab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kishida/jwenv-0.6b-poc-gguf | 596.049.920 | No disponible | No disponible | apache-2.0 | GGUF en HuggingFace |
-| Qwen/Qwen3-0.6B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| kishida/jwenv-0.6b-poc-gguf | 596.049.920 | No disponible | No disponible | apache-2.0 | GGUF en Hugging Face |
+| Qwen/Qwen3-0.6B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 
 No se han identificado en la información proporcionada otros modelos comparables de clasificación de opción múltiple con los que establecer una comparación cuantitativa fiable.
 
@@ -84,7 +84,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kishida/jwenv-0.6b-poc-gguf
+- Modelo en Hugging Face: https://huggingface.co/kishida/jwenv-0.6b-poc-gguf
 - Fichero GGUF q8_0: https://huggingface.co/kishida/jwenv-0.6b-poc-gguf/blob/main/jwenv-0.6b-poc-q8_0.gguf
 - Demo en navegador (Space): https://huggingface.co/spaces/kishida/jwenv-demo
 - Documentación del fork de llama.cpp con API compatible con Jev: https://github.com/kishida/llama.cpp/blob/jev/docs/jev.md

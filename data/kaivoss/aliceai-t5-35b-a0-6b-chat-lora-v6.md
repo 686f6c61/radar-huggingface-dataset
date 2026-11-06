@@ -163,7 +163,7 @@ Comparacion con alternativas de la misma categoria (otros MoE encoder-decoder de
 
 ## Enlaces
 
-- Repositorio HuggingFace (adaptador v6): https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6
+- Repositorio Hugging Face (adaptador v6): https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6
 - Modelo base: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 - Pesos fusionados bf16 (v6): https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-v6
 - Versiones anteriores del adaptador: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v5 , https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v4 , https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v3 , https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v2 , https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora

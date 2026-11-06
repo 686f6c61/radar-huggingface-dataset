@@ -90,10 +90,10 @@ El autor indica que `--spec-draft-n-max 3` es el optimo: pedir mas borradores re
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BroLaurens/Swift-1.5-Qwen3.8-27B-NVFP4-GGUF (esta ficha) | 27,3 B | 262144 tokens | GGUF Q8mix, 19,74 GB, 5,78 BPW; NVFP4 nativo | swift-open-license-1.0 (propietaria) | HuggingFace, 0 descargas y 0 likes en el momento del alta; llama.cpp |
-| ukisai/Swift-1.5-Qwen3.8-27b-NVFP4 (modelo base) | 27,3 B (mismo) | no disponible | ModelOpt NVFP4 + FP8 calibrado | swift-open-license-1.0 | HuggingFace; requiere ecosistema NVIDIA/ModelOpt |
-| ukisai/Swift-1.5-Qwen3.8-27b | no disponible | no disponible | no disponible | swift-open-license-1.0 | HuggingFace; pesos de referencia |
-| unsloth/Qwen3.8-27B-GGUF | no disponible (familia Qwen3.8-27B, Apache 2.0) | no disponible | GGUF (proporciona `MTP/mtp-Qwen3.8-27B-Q4_0.gguf` usado en este build) | Apache 2.0 (Qwen3.8-27B) | HuggingFace; cuantizaciones comunitarias |
+| BroLaurens/Swift-1.5-Qwen3.8-27B-NVFP4-GGUF (esta ficha) | 27,3 B | 262144 tokens | GGUF Q8mix, 19,74 GB, 5,78 BPW; NVFP4 nativo | swift-open-license-1.0 (propietaria) | Hugging Face, 0 descargas y 0 likes en el momento del alta; llama.cpp |
+| ukisai/Swift-1.5-Qwen3.8-27b-NVFP4 (modelo base) | 27,3 B (mismo) | no disponible | ModelOpt NVFP4 + FP8 calibrado | swift-open-license-1.0 | Hugging Face; requiere ecosistema NVIDIA/ModelOpt |
+| ukisai/Swift-1.5-Qwen3.8-27b | no disponible | no disponible | no disponible | swift-open-license-1.0 | Hugging Face; pesos de referencia |
+| unsloth/Qwen3.8-27B-GGUF | no disponible (familia Qwen3.8-27B, Apache 2.0) | no disponible | GGUF (proporciona `MTP/mtp-Qwen3.8-27B-Q4_0.gguf` usado en este build) | Apache 2.0 (Qwen3.8-27B) | Hugging Face; cuantizaciones comunitarias |
 
 No se dispone de datos de calidad comparativos entre estas variantes, por lo que la comparacion se limita a formato, tamano, licencia y disponibilidad.
 
@@ -113,7 +113,7 @@ No se dispone de datos de calidad comparativos entre estas variantes, por lo que
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/BroLaurens/Swift-1.5-Qwen3.8-27B-NVFP4-GGUF
+- Ficha en Hugging Face: https://huggingface.co/BroLaurens/Swift-1.5-Qwen3.8-27B-NVFP4-GGUF
 - Modelo base (NVFP4): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-NVFP4
 - Modelo de referencia de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Texto de la licencia Swift Open License v1.0: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE

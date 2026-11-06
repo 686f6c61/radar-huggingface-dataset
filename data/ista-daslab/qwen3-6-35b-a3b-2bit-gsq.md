@@ -79,9 +79,9 @@ No se dispone de datos comparativos con otras cuantizaciones del mismo modelo ba
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ISTA-DASLab/Qwen3.6-35B-A3B-2Bit-GSQ
+- Hugging Face: https://huggingface.co/ISTA-DASLab/Qwen3.6-35B-A3B-2Bit-GSQ
 - Paper (arXiv): https://arxiv.org/abs/2604.18556
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2604.18556
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2604.18556
 - Codigo GSQ: https://github.com/IST-DASLab/GSQ
 - Coleccion GSQ: https://huggingface.co/collections/ISTA-DASLab/gsq
 - Repositorio Humming: https://github.com/inclusionAI/humming

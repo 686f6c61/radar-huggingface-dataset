@@ -71,5 +71,5 @@ No se han publicado resultados de benchmarks en la informaci√≥n disponible. El √
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Taewhoo/qwen3.5-9b-proteomics-rl-step75
+- Hugging Face del modelo: https://huggingface.co/Taewhoo/qwen3.5-9b-proteomics-rl-step75
 - Checkpoint step100: https://huggingface.co/Taewhoo/qwen3.5-9b-proteomics-rl-step100

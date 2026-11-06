@@ -98,8 +98,8 @@ La comparativa se limita a la familia Granite-Speech porque la informacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion GGUF: https://huggingface.co/tryambientai/granite-speech-4.1-2b-nar-gguf
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-nar
+- Repositorio Hugging Face de la conversion GGUF: https://huggingface.co/tryambientai/granite-speech-4.1-2b-nar-gguf
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-nar
 - Modelo autorregresivo Granite-Speech-4.1-2B: https://huggingface.co/ibm-granite/granite-speech-4.1-2b
 - Modelo Granite-Speech-4.1-2B-Plus: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

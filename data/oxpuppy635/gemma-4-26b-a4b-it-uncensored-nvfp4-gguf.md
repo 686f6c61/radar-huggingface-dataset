@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de otros modelos comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-uncensored-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-uncensored-NVFP4-GGUF
 - Modelo base: https://huggingface.co/TrevorJS/gemma-4-26B-A4B-it-uncensored
 - llama.cpp (soporte NVFP4): no se proporciona enlace especifico en la informacion disponible.

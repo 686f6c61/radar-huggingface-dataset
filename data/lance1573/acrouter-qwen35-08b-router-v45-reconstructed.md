@@ -99,7 +99,7 @@ Advertencia: las cifras de la primera fila corresponden al ensemble v4.5 reconst
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lance1573/acrouter-qwen35-08b-router-v45-reconstructed
+- Repositorio en Hugging Face: https://huggingface.co/Lance1573/acrouter-qwen35-08b-router-v45-reconstructed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Script de réplica incluido en el repositorio: `scripts/replay_v45_ood176.py`
 - La búsqueda web no devolvió resultados relevantes sobre este modelo: los enlaces encontrados trataban de contenidos no relacionados (foros en chino sobre meses del año y símbolos tipográficos, hilos sobre 7-Zip y sobre la saga de videojuegos «三国群英传», y una consulta sobre un objeto de World of Warcraft), por lo que se omiten por no aportar información verificable sobre el modelo.

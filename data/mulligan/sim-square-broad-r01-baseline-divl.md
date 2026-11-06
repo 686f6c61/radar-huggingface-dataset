@@ -95,9 +95,9 @@ No se dispone de otros modelos comparables en la informacion proporcionada. La u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-baseline-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-baseline-divl
 - Modelo padre del actor congelado: https://huggingface.co/mulligan/sim-square-broad-r01-baseline-idql
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Arena de evaluacion (Policy Arena): https://arena.mulligan.page
 - Dataset de teleoperacion de referencia: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline

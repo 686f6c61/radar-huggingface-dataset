@@ -1,7 +1,7 @@
 # Luni/Qwen3.8-Flash-Next-Heretic-ARA
 
 ## Resumen
-Qwen3.8-Flash-Next-Heretic-ARA es un fine-tune del modelo Qwen/Qwen3.8-Flash-Next publicado por el usuario Luni en HuggingFace. Se trata de una variante "decensored" (abliterated) generada con la herramienta Heretic 2.0 mediante la modificacion ARA (Arbitrary-Rank Ablation), que aplica una ablacion de rango arbitrario con LoRA de rango 50 fusionada directamente en los pesos. El objetivo declarado es reducir la tasa de rechazos del modelo base manteniendo al mismo tiempo una divergencia KL baja respecto al original en prompts inocuos.
+Qwen3.8-Flash-Next-Heretic-ARA es un fine-tune del modelo Qwen/Qwen3.8-Flash-Next publicado por el usuario Luni en Hugging Face. Se trata de una variante "decensored" (abliterated) generada con la herramienta Heretic 2.0 mediante la modificacion ARA (Arbitrary-Rank Ablation), que aplica una ablacion de rango arbitrario con LoRA de rango 50 fusionada directamente en los pesos. El objetivo declarado es reducir la tasa de rechazos del modelo base manteniendo al mismo tiempo una divergencia KL baja respecto al original en prompts inocuos.
 
 El modelo conserva la arquitectura del base: un transformer Mixture-of-Experts (MoE) con capacidades multimodales (pipeline image-text-to-text), atencion hibrida con proyecciones `linear_attn` y cabezas MTP (multi-token prediction), y un total de 177.392.830.576 parametros en bf16. El repositorio ocupa 360 GB y esta pensado para despliegues en hardware de gama muy alta, no para GPUs de consumo.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - El proceso de ablacion se ejecuto con solo 200 trials; la robustez del resultado en dominios no cubiertos por los prompts de evaluacion es incierta.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Luni/Qwen3.8-Flash-Next-Heretic-ARA
+- Modelo en Hugging Face: https://huggingface.co/Luni/Qwen3.8-Flash-Next-Heretic-ARA
 - Version cuantizada EXL3: https://huggingface.co/Luni/Qwen3.8-Flash-Next-Heretic-ARA-EXL3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

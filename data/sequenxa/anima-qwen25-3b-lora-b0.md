@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sequenxa/anima-qwen25-3b-lora-b0` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario sequenxa, que ajusta el modelo base `unsloth/qwen2.5-3b-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Qwen2.5-3B. El adaptador se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que permite un fine-tuning eficiente en términos de memoria y tiempo. El repositorio tiene un tamaño de 0,1 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
+El modelo `sequenxa/anima-qwen25-3b-lora-b0` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario sequenxa, que ajusta el modelo base `unsloth/qwen2.5-3b-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Qwen2.5-3B. El adaptador se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que permite un fine-tuning eficiente en términos de memoria y tiempo. El repositorio tiene un tamaño de 0,1 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
 
 Este tipo de adaptadores es relevante porque permite personalizar un modelo de lenguaje de 3B de parámetros con recursos computacionales limitados, manteniendo la licencia Apache-2.0 y la compatibilidad con el ecosistema Transformers y text-generation-inference. Sin embargo, la model card no especifica la tarea concreta para la que fue entrenado, ni el dataset utilizado, por lo que sus capacidades efectivas deben inferirse del modelo base.
 
@@ -21,7 +21,7 @@ Este tipo de adaptadores es relevante porque permite personalizar un modelo de l
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA sobre Qwen2.5-3B, una arquitectura transformer decoder con atención causal. El entrenamiento se realizó con Unsloth, que optimiza el fine-tuning mediante kernels personalizados y reducción de memoria, y con la librería TRL de HuggingFace para el pipeline de entrenamiento. El modelo base está cuantizado a 4 bits (bitsandbytes), lo que reduce los requisitos de VRAM durante el entrenamiento y la inferencia. No se proporcionan detalles sobre el dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. El adaptador LoRA introduce matrices de bajo rango en las capas de atención y feed-forward, permitiendo ajustar el modelo con un número reducido de parámetros entrenables.
+El modelo es un adaptador LoRA sobre Qwen2.5-3B, una arquitectura transformer decoder con atención causal. El entrenamiento se realizó con Unsloth, que optimiza el fine-tuning mediante kernels personalizados y reducción de memoria, y con la librería TRL de Hugging Face para el pipeline de entrenamiento. El modelo base está cuantizado a 4 bits (bitsandbytes), lo que reduce los requisitos de VRAM durante el entrenamiento y la inferencia. No se proporcionan detalles sobre el dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. El adaptador LoRA introduce matrices de bajo rango en las capas de atención y feed-forward, permitiendo ajustar el modelo con un número reducido de parámetros entrenables.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: al ser un adaptador sobre un modelo de 3B cuantizado a 4 bits, la inferencia requiere aproximadamente 4-6 GB de VRAM, dependiendo de la longitud de contexto y el batch.
 - GPU recomendadas: tarjetas consumer como RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores son suficientes. También puede ejecutarse en GPUs de datacenter como A10 o A100 si se necesita mayor throughput.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs con al menos 8 GB de VRAM.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama y text-generation-inference, así como con la librería Transformers de HuggingFace.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama y text-generation-inference, así como con la librería Transformers de Hugging Face.
 - Latencia y throughput: no se dispone de mediciones específicas; para un modelo de 3B en 4-bit, se espera una latencia de decenas de milisegundos por token en GPUs modernas.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- [HuggingFace: sequenxa/anima-qwen25-3b-lora-b0](https://huggingface.co/sequenxa/anima-qwen25-3b-lora-b0)
+- [Hugging Face: sequenxa/anima-qwen25-3b-lora-b0](https://huggingface.co/sequenxa/anima-qwen25-3b-lora-b0)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/qwen2.5-3b-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen2.5-3b-unsloth-bnb-4bit)

@@ -26,7 +26,7 @@ El modelo se basa en la arquitectura VITS, un sistema TTS de extremo a extremo q
 ## Capacidades
 
 - Sintesis de voz en dhivehi a partir de texto, con voz femenina (variante f01).
-- Integracion con la libreria `transformers` de HuggingFace mediante las clases `VitsModel` y `AutoTokenizer`.
+- Integracion con la libreria `transformers` de Hugging Face mediante las clases `VitsModel` y `AutoTokenizer`.
 - Generacion de audio en formato waveform (tensor de PyTorch) listo para guardar como archivo WAV.
 - El proyecto publica multiples variantes de voz: femeninas (f01, f02, f03), masculina (m01) y voces clonadas (spk01-f01, spk01-m01), lo que permite elegir el timbre segun la aplicacion.
 - Disponibilidad de exportaciones cuantizadas y ONNX para despliegue en entornos sin PyTorch o con restricciones de recursos.
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: el modelo tiene 36,3 millones de parametros y un peso de aproximadamente 0,1 GB en safetensors. En FP32, la inferencia requiere menos de 1 GB de VRAM; en CPU, el uso de RAM es similar.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2050, o incluso integradas como Intel Iris Xe). No se requieren GPUs de alta gama como A100 o H100.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en cualquier GPU consumer actual, incluidas las de gama de entrada.
-- Opciones de despliegue: se puede ejecutar con la libreria `transformers` de HuggingFace en Python, o mediante la exportacion ONNX para entornos de inferencia como ONNX Runtime. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que son herramientas orientadas a modelos de lenguaje, no a TTS.
+- Opciones de despliegue: se puede ejecutar con la libreria `transformers` de Hugging Face en Python, o mediante la exportacion ONNX para entornos de inferencia como ONNX Runtime. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que son herramientas orientadas a modelos de lenguaje, no a TTS.
 - Latencia y throughput: no se han publicado mediciones. Dado el tamano del modelo, se espera una latencia de decenas de milisegundos por frase en GPU y de unos pocos cientos de milisegundos en CPU, pero estos valores son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ No se dispone de informacion sobre otros modelos TTS especificos para dhivehi co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohamedrayyan/mms-tts-dhivehi-md-f01
+- Modelo en Hugging Face: https://huggingface.co/mohamedrayyan/mms-tts-dhivehi-md-f01
 - Repositorio del proyecto Dhivehi TTS: https://huggingface.co/mohamedrayyan/chatterbox-tts-dhivehi
 - Modelo base: https://huggingface.co/facebook/mms-tts-div
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/dhivehihacker/tts-dhivehi-demo-mms
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/dhivehihacker/tts-dhivehi-demo-mms
 - Repositorio de demos TTS de DhivehiAI: https://github.com/DhivehiAI/TTS-Demos
 - Organizacion DhivehiAI en GitHub: https://github.com/DhivehiAI
 - Documentacion de TTS en dhivehi.ai: https://dhivehi.ai/docs/technologies/tts/

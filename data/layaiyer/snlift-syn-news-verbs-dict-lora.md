@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `layaiyer/snliFT-syn-news-verbs-dict-lora` es un adaptador LoRA (Low-Rank Adaptation) para clasificación de secuencias, publicado en HuggingFace por el usuario `layaiyer`. La información disponible es extremadamente limitada: no se especifica el modelo base sobre el que se aplica el adaptador, ni la tarea concreta, ni el conjunto de datos de entrenamiento, ni la licencia. El nombre sugiere una posible relación con el dataset SNLI (Stanford Natural Language Inference) y una combinación de elementos sintéticos de noticias y verbos, pero no hay ninguna confirmación en la model card. El repositorio tiene un tamaño de 0.0 GB y no se registran descargas ni valoraciones.
+El modelo `layaiyer/snliFT-syn-news-verbs-dict-lora` es un adaptador LoRA (Low-Rank Adaptation) para clasificación de secuencias, publicado en Hugging Face por el usuario `layaiyer`. La información disponible es extremadamente limitada: no se especifica el modelo base sobre el que se aplica el adaptador, ni la tarea concreta, ni el conjunto de datos de entrenamiento, ni la licencia. El nombre sugiere una posible relación con el dataset SNLI (Stanford Natural Language Inference) y una combinación de elementos sintéticos de noticias y verbos, pero no hay ninguna confirmación en la model card. El repositorio tiene un tamaño de 0.0 GB y no se registran descargas ni valoraciones.
 
 Este adaptador se publica con la librería PEFT (versión 0.17.0) y contiene pesos en formato `safetensors`. Debido a la ausencia total de documentación y a la falta de métricas o resultados, no es posible recomendar su uso en ningún entorno de producción. Se trata, probablemente, de un experimento personal de fine-tuning con LoRA, pero sin datos verificables no se puede evaluar su rendimiento ni su adecuación a tareas concretas.
 
@@ -58,5 +58,5 @@ No disponible. No se puede comparar con otros modelos porque no se conoce el mod
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/layaiyer/snliFT-syn-news-verbs-dict-lora)
+- [Modelo en Hugging Face](https://huggingface.co/layaiyer/snliFT-syn-news-verbs-dict-lora)
 - No se han encontrado otros enlaces relevantes (papers, repos, demos) en la información proporcionada. La referencia a `arxiv:1910.09700` en los tags corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en ML, pero no es un recurso específico del modelo.

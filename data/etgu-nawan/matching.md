@@ -2,7 +2,7 @@
 
 ## Resumen
 
-etgu-nawan/matching es un prototipo de investigacion publicado en HuggingFace por el usuario etgu-nawan, que implementa una arquitectura Poolformer orientada a tareas de emparejamiento (matching). Se distribuye como una configuracion a escala "nano" con 33.088 parametros totales, un tamano que lo situa muy por debajo de cualquier modelo utilizable en produccion y que lo identifica claramente como un banco de pruebas arquitectonico mas que como un modelo funcional.
+etgu-nawan/matching es un prototipo de investigacion publicado en Hugging Face por el usuario etgu-nawan, que implementa una arquitectura Poolformer orientada a tareas de emparejamiento (matching). Se distribuye como una configuracion a escala "nano" con 33.088 parametros totales, un tamano que lo situa muy por debajo de cualquier modelo utilizable en produccion y que lo identifica claramente como un banco de pruebas arquitectonico mas que como un modelo funcional.
 
 El repositorio documenta unicamente los valores por defecto y los formatos de fichero, sin presentar ninguna cifra de rendimiento verificada. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado. La model card del autor insiste explicitamente en que no se reclama ningun resultado de benchmark y que el checkpoint no ha sido auditado en cuanto a robustez, equidad o transferencia de dominio.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/etgu-nawan/matching
+- Modelo en Hugging Face: https://huggingface.co/etgu-nawan/matching
 - Fichero principal de codigo: `main.py` (incluido en el repositorio)
 - Configuracion de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento por defecto: `training_args.json` (incluido en el repositorio)

@@ -74,9 +74,9 @@ Avisos sobre la medicion, segun la propia model card: el error estandar del spli
 
 | Modelo | Parametros | Contexto | NDCG@10 en SKILLRET | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SKILLRET-Edge-109M | 109,5 M | 256 tokens en evaluacion | 79,18 (fp16/int8/int4), 78,04 (int3) | Apache-2.0 | HuggingFace, safetensors |
-| SKILLRET-Embedding-0.6B (profesor) | ~0,6 B segun denominacion | No disponible | 78,48 | No disponible | HuggingFace |
-| Snowflake/snowflake-arctic-embed-m (base) | No disponible | No disponible | No disponible | Apache-2.0 (heredada por el modelo derivado) | HuggingFace |
+| SKILLRET-Edge-109M | 109,5 M | 256 tokens en evaluacion | 79,18 (fp16/int8/int4), 78,04 (int3) | Apache-2.0 | Hugging Face, safetensors |
+| SKILLRET-Embedding-0.6B (profesor) | ~0,6 B segun denominacion | No disponible | 78,48 | No disponible | Hugging Face |
+| Snowflake/snowflake-arctic-embed-m (base) | No disponible | No disponible | No disponible | Apache-2.0 (heredada por el modelo derivado) | Hugging Face |
 
 No se dispone de datos de rendimiento en este split para otros modelos de embeddings de tamano similar, por lo que no se incluyen comparaciones adicionales. La comparacion principal que aporta la model card es la del propio profesor: SKILLRET-Edge-109M iguala o supera ligeramente al modelo de 0,6B siendo aproximadamente 26 veces mas pequeno, con un 98% de recuperacion relativa.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento en este split para otros modelos de embedd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M
 - Dataset de evaluacion y entrenamiento: https://huggingface.co/datasets/ThakiCloud/SKILLRET
 - Modelo profesor: https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B
 - Modelo base: https://huggingface.co/Snowflake/snowflake-arctic-embed-m

@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de terceros para establecer una comparaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsDigvijaysing/jiwo-0.8b-openvino-int8
+- Modelo en Hugging Face: https://huggingface.co/itsDigvijaysing/jiwo-0.8b-openvino-int8
 - Modelo base: https://huggingface.co/eljiwo/jiwo-0.8b
 - Revisión del modelo base usada en la exportación: `71b7911cf68f7df52fdc2dbf07de1e158bb807f2`
 - Optimum Intel: no disponible en la información proporcionada

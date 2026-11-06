@@ -90,7 +90,7 @@ La comparativa se limita al ecosistema del propio modelo base, ya que la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TeamIDE/Qwen3.6-35B-A3B-Pantheon-K80
+- Repositorio Hugging Face: https://huggingface.co/TeamIDE/Qwen3.6-35B-A3B-Pantheon-K80
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - GGUF de bartowski: https://huggingface.co/bartowski/Qwen_Qwen3.6-35B-A3B-GGUF

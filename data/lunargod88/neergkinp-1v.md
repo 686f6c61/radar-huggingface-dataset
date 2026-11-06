@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lunargod88/neergkinp-1v` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario Lunargod88 y publicado en HuggingFace bajo licencia Apache 2.0. No se trata de un modelo base autonomo, sino de un conjunto de pesos de ajuste fino (aproximadamente 1 GB en el repositorio) que se carga sobre los checkpoints oficiales de Krea 2 para inyectar un concepto o estilo concreto, activado mediante la palabra disparadora `naya`.
+`Lunargod88/neergkinp-1v` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario Lunargod88 y publicado en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo base autonomo, sino de un conjunto de pesos de ajuste fino (aproximadamente 1 GB en el repositorio) que se carga sobre los checkpoints oficiales de Krea 2 para inyectar un concepto o estilo concreto, activado mediante la palabra disparadora `naya`.
 
 El adaptador esta entrenado sobre el checkpoint `krea/Krea-2-Raw`, la variante no destilada del modelo base que Krea recomienda para fine-tuning, y esta pensado para ejecutarse en produccion sobre `krea/Krea-2-Turbo`, la version destilada de 8 pasos optimizada para inferencia rapida. Segun la model card, los LoRA entrenados sobre RAW expresan el concepto con fuerza sobre Turbo, lo que permite combinar personalizacion con generacion de baja latencia.
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye datos de otros adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lunargod88/neergkinp-1v
+- Modelo en Hugging Face: https://huggingface.co/Lunargod88/neergkinp-1v
 - Checkpoint base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Checkpoint base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de DreamBooth: https://dreambooth.github.io/

@@ -75,8 +75,8 @@ El autor no describe la metodologia de medicion de rechazos ni el conjunto de ev
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saidutta69/MiniCPM5-2B-heretic | 2.516.756.480 | no disponible (etiquetado como long-context) | 4/100 rechazos, KL 0,0646 frente al base | apache-2.0 | HuggingFace, safetensors y GGUF |
-| openbmb/MiniCPM5-2B | 2,5B (clase, segun el autor) | no disponible | 99/100 rechazos (referencia del autor) | apache-2.0 | HuggingFace, safetensors y GGUF cuantizado |
+| saidutta69/MiniCPM5-2B-heretic | 2.516.756.480 | no disponible (etiquetado como long-context) | 4/100 rechazos, KL 0,0646 frente al base | apache-2.0 | Hugging Face, safetensors y GGUF |
+| openbmb/MiniCPM5-2B | 2,5B (clase, segun el autor) | no disponible | 99/100 rechazos (referencia del autor) | apache-2.0 | Hugging Face, safetensors y GGUF cuantizado |
 | Otras alternativas de la clase 2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos comparativos frente a otros modelos de la misma clase (por ejemplo, familias 1B-3B de otros laboratorios), por lo que la comparativa se limita al modelo base del que deriva esta variante.
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de datos comparativos frente a otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/MiniCPM5-2B-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/MiniCPM5-2B-heretic
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Licencia del modelo base: https://huggingface.co/openbmb/MiniCPM5-2B/blob/main/LICENSE
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

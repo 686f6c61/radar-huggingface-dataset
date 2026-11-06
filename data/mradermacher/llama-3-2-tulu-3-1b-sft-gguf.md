@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Llama-3.2-Tulu-3-1B-SFT-GGUF (este) | 1,5B | no disponible | no disponible | GGUF | Cuantización de un SFT sobre Tulu 3 |
 | Llama 3.2 1B Instruct (Meta) | 1,2B | 128K (según Meta) | Llama 3.2 Community License | safetensors, GGUF | Modelo oficial con contexto largo |
 | Qwen2.5-1.5B-Instruct | 1,5B | 32K (según Qwen) | Apache 2.0 | safetensors, GGUF | Multilingüe, licencia permisiva |
-| SmolLM2-1.7B-Instruct | 1,7B | 8K (según HuggingFace) | Apache 2.0 | safetensors, GGUF | Alternativa ligera con licencia abierta |
+| SmolLM2-1.7B-Instruct | 1,7B | 8K (según Hugging Face) | Apache 2.0 | safetensors, GGUF | Alternativa ligera con licencia abierta |
 
 Nota: los datos de contexto y licencia de los modelos comparados provienen del conocimiento general de sus respectivas model cards; no se han verificado en la información proporcionada para este modelo.
 
@@ -81,7 +81,7 @@ Nota: los datos de contexto y licencia de los modelos comparados provienen del c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.2-Tulu-3-1B-SFT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.2-Tulu-3-1B-SFT-GGUF
 - Modelo base (SFT): https://huggingface.co/erbacher/Llama-3.2-Tulu-3-1B-SFT
 - Cuantizaciones con imatrix (i1): https://huggingface.co/mradermacher/Llama-3.2-Tulu-3-1B-SFT-i1-GGUF
 - Página de overview del autor: https://hf.tst.eu/model#Llama-3.2-Tulu-3-1B-SFT-GGUF

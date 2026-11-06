@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-8B-CoT-SFT-vu-ckpt1250 es un ajuste fino supervisado (SFT) del modelo multimodal Qwen/Qwen3-VL-8B-Instruct, orientado a razonamiento encadenado (chain-of-thought, CoT) sobre entradas de multiples imagenes. Lo publica el usuario MargiPandya en HuggingFace bajo licencia Apache 2.0, con 8.767.123.696 parametros (unos 8,77 mil millones) y un repositorio de 17,5 GB en safetensors. La tarea declarada es image-text-to-text, con etiquetas explicitas de multi-image y chain-of-thought.
+Qwen3-VL-8B-CoT-SFT-vu-ckpt1250 es un ajuste fino supervisado (SFT) del modelo multimodal Qwen/Qwen3-VL-8B-Instruct, orientado a razonamiento encadenado (chain-of-thought, CoT) sobre entradas de multiples imagenes. Lo publica el usuario MargiPandya en Hugging Face bajo licencia Apache 2.0, con 8.767.123.696 parametros (unos 8,77 mil millones) y un repositorio de 17,5 GB en safetensors. La tarea declarada es image-text-to-text, con etiquetas explicitas de multi-image y chain-of-thought.
 
 Tecnicamente se trata de una LoRA fusionada en los pesos base: r=64, alpha=128, dropout=0,05, aplicada sobre las proyecciones q/k/v/o y gate/up/down, con `modules_to_save: ["visual"]`, lo que implica que la torre de vision se entreno por completo y no mediante adaptadores de bajo rango. El entrenamiento se hizo en bf16 con learning rate 1e-5 y se valido sobre TIGER-Lab/Mantis-Eval.
 
@@ -100,7 +100,7 @@ La comparacion directa con el modelo base es la mas relevante, pero la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MargiPandya/Qwen3-VL-8B-CoT-SFT-vu-ckpt1250
+- Modelo en Hugging Face: https://huggingface.co/MargiPandya/Qwen3-VL-8B-CoT-SFT-vu-ckpt1250
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset de validacion: https://huggingface.co/datasets/TIGER-Lab/Mantis-Eval
 

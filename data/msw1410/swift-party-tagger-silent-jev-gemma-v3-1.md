@@ -2,7 +2,7 @@
 
 ## Resumen
 
-swift-party-tagger-silent-jev-gemma-v3.1 es un adaptador LoRA sobre el modelo google/gemma-4-E4B-it, desarrollado por el usuario msw1410 y publicado en HuggingFace. No es un modelo generativo: es un etiquetador discriminativo (token-classification) que divide el contenido de un campo de parte de un mensaje de pago SWIFT (MT 50K, 59, 50F, 59F) en dos componentes: el nombre de la parte (quien) y su direccion postal (donde), palabra por palabra y en una sola pasada forward.
+swift-party-tagger-silent-jev-gemma-v3.1 es un adaptador LoRA sobre el modelo google/gemma-4-E4B-it, desarrollado por el usuario msw1410 y publicado en Hugging Face. No es un modelo generativo: es un etiquetador discriminativo (token-classification) que divide el contenido de un campo de parte de un mensaje de pago SWIFT (MT 50K, 59, 50F, 59F) en dos componentes: el nombre de la parte (quien) y su direccion postal (donde), palabra por palabra y en una sola pasada forward.
 
 El modelo resuelve un problema concreto de la infraestructura de pagos internacionales: los mensajes MT aplanan nombres y direcciones estructuradas en lineas de texto libre de 4 x 35 caracteres. Con la entrada en vigor de CBPR+ (prevista para noviembre de 2026), los mensajes necesitaran direcciones postales estructuradas o hibridas (al menos ciudad y pais), y el screening de sanciones funciona mejor cuando nombres y direcciones se verifican por separado. Este tagger invierte el aplanamiento sin asumir ningun orden: el nombre puede aparecer despues de la direccion, las lineas pueden cortarse a mitad de palabra y los separadores pueden faltar.
 
@@ -80,8 +80,8 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento en el set manual | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swift-party-tagger-silent-jev-gemma-v3.1 | no disponible (LoRA sobre Gemma 4 E4B) | no disponible | 29 de 30 campos correctos | apache-2.0 | HuggingFace |
-| swift-party-tagger-silent-jev-gemma (v3) | no disponible (LoRA sobre Gemma 4 E4B) | no disponible | 30 de 30 campos correctos | no disponible | HuggingFace |
+| swift-party-tagger-silent-jev-gemma-v3.1 | no disponible (LoRA sobre Gemma 4 E4B) | no disponible | 29 de 30 campos correctos | apache-2.0 | Hugging Face |
+| swift-party-tagger-silent-jev-gemma (v3) | no disponible (LoRA sobre Gemma 4 E4B) | no disponible | 30 de 30 campos correctos | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msw1410/swift-party-tagger-silent-jev-gemma-v3.1
+- Modelo en Hugging Face: https://huggingface.co/msw1410/swift-party-tagger-silent-jev-gemma-v3.1
 - Version anterior v3: https://huggingface.co/msw1410/swift-party-tagger-silent-jev-gemma
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Paper referenciado en los tags (arXiv:2310.01208): https://arxiv.org/abs/2310.01208

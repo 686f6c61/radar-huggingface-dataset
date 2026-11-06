@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen35-08b-rag-ja-A es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-0.8B, desarrollado por el usuario naripon y publicado en HuggingFace. El modelo está especializado en tareas de generación aumentada por recuperación (RAG) en japonés: recibe cinco documentos de contexto y devuelve una respuesta corta junto con el identificador del fragmento (chunk_id) del que procede la respuesta, en formato JSON. El ajuste se realizó mediante LoRA y posteriormente se integraron los pesos en el modelo final.
+qwen35-08b-rag-ja-A es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-0.8B, desarrollado por el usuario naripon y publicado en Hugging Face. El modelo está especializado en tareas de generación aumentada por recuperación (RAG) en japonés: recibe cinco documentos de contexto y devuelve una respuesta corta junto con el identificador del fragmento (chunk_id) del que procede la respuesta, en formato JSON. El ajuste se realizó mediante LoRA y posteriormente se integraron los pesos en el modelo final.
 
 El modelo resuelve un problema muy concreto: la extracción de respuestas fundamentadas y trazables en pipelines RAG japoneses, donde es crítico citar la fuente exacta de la información. Al devolver un chunk_id estructurado, facilita la verificación y la atribución de fuentes en aplicaciones de búsqueda documental y asistentes sobre corpus japoneses.
 
@@ -56,15 +56,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada para inferencia**: con 873M parámetros en precisión completa (fp32) se requieren aproximadamente 3,5 GB; en fp16/bfloat16, unos 1,8 GB; en cuantización de 8 bits, alrededor de 0,9 GB; en 4 bits, aproximadamente 0,5 GB. Estas estimaciones son orientativas y no proceden de la model card.
 - **GPU recomendadas**: el modelo cabe holgadamente en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4090 (24 GB). Para despliegue en servidor, A100 o H100 son sobredimensionadas para este tamaño, pero válidas para alto throughput.
 - **Compatibilidad con GPU de consumo**: sí, cabe en la mayoría de GPUs consumer con al menos 4 GB de VRAM en cuantización de 4 u 8 bits.
-- **Opciones de despliegue**: al ser un modelo de la familia Qwen3.5 con pesos safetensors, es compatible con frameworks estándar como transformers (HuggingFace), vLLM, TGI y llama.cpp (previa conversión a GGUF). No se confirma soporte nativo en Ollama, aunque podría añadirse mediante GGUF.
+- **Opciones de despliegue**: al ser un modelo de la familia Qwen3.5 con pesos safetensors, es compatible con frameworks estándar como transformers (Hugging Face), vLLM, TGI y llama.cpp (previa conversión a GGUF). No se confirma soporte nativo en Ollama, aunque podría añadirse mediante GGUF.
 - **Latencia y throughput**: no disponible. Al tratarse de un modelo de menos de 1B parámetros, se espera una latencia baja en GPUs modernas, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen35-08b-rag-ja-A | 873M | no disponible | Apache-2.0 | RAG en japonés con chunk_id | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | ~800M | no disponible | Apache-2.0 | Propósito general | HuggingFace |
+| qwen35-08b-rag-ja-A | 873M | no disponible | Apache-2.0 | RAG en japonés con chunk_id | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | ~800M | no disponible | Apache-2.0 | Propósito general | Hugging Face |
 | Modelos RAG japoneses especializados | no disponible | no disponible | varía | RAG / QA en japonés | no disponible |
 
 No se dispone de información sobre modelos directamente comparables en la misma categoría (RAG japonés con salida estructurada de chunk_id) en la información proporcionada. La comparación más directa es con el modelo base Qwen3.5-0.8B, del que hereda arquitectura y licencia, pero que no está especializado en la tarea de citación estructurada.
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- [HuggingFace: naripon/qwen35-08b-rag-ja-A](https://huggingface.co/naripon/qwen35-08b-rag-ja-A)
+- [Hugging Face: naripon/qwen35-08b-rag-ja-A](https://huggingface.co/naripon/qwen35-08b-rag-ja-A)
 - [Modelo base: Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [JSQuAD (JGLUE) v1.3](https://github.com/yahoojapan/JGLUE)
 - [Licencia CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)

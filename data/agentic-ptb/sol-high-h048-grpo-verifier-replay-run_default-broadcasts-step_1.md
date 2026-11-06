@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: el modelo tiene 9,4 mil millones de parámetros. En FP16, los pesos ocupan aproximadamente 18,8 GB (coincide con el tamaño del repositorio). Para inferencia con carga completa en FP16 se necesitarían al menos 20 GB de VRAM, más overhead de activaciones y KV cache.
 - GPU recomendadas: una GPU con 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090) podría ejecutar el modelo en FP16 con limitaciones de contexto. Para mayor comodidad, una A100 de 40 GB o 80 GB, o una H100, serían adecuadas.
 - En consumer GPU: sí, cabe en GPUs de 24 GB (RTX 3090/4090) en FP16, aunque con ventana de contexto reducida. Con cuantización (no disponible en la información) podría caber en GPUs de 12-16 GB.
-- Opciones de despliegue: al ser un checkpoint de investigación, no se han probado integraciones con vLLM, llama.cpp, Ollama o TGI. En principio, al estar en formato safetensors, podría cargarse con transformers de HuggingFace, pero el problema del `eos_token_id` requeriría un re-empaquetado antes de cualquier uso.
+- Opciones de despliegue: al ser un checkpoint de investigación, no se han probado integraciones con vLLM, llama.cpp, Ollama o TGI. En principio, al estar en formato safetensors, podría cargarse con transformers de Hugging Face, pero el problema del `eos_token_id` requeriría un re-empaquetado antes de cualquier uso.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,5 +87,5 @@ No se puede realizar una comparación de rendimiento sin datos de benchmarks.
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/sol-high.grpo-verifier-replay.run_default.broadcasts.step_1](https://huggingface.co/agentic-ptb/sol-high.grpo-verifier-replay.run_default.broadcasts.step_1)
+- [Hugging Face: agentic-ptb/sol-high.grpo-verifier-replay.run_default.broadcasts.step_1](https://huggingface.co/agentic-ptb/sol-high.grpo-verifier-replay.run_default.broadcasts.step_1)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (referencia, no confirmado en la búsqueda web)

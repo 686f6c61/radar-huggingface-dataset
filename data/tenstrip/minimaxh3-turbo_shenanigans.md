@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **TenStrip/MinimaxH3-Turbo_Shenanigans** es un modelo publicado en HuggingFace por el usuario TenStrip. Según los metadatos del repositorio, la creación se produjo el 3 de septiembre de 2026 y la última actualización el 7 de septiembre de 2026. El repositorio ocupa un total de 5.4 GB y cuenta con 8 me gusta, pero **no registra descargas** en el momento de la consulta.
+El modelo **TenStrip/MinimaxH3-Turbo_Shenanigans** es un modelo publicado en Hugging Face por el usuario TenStrip. Según los metadatos del repositorio, la creación se produjo el 3 de septiembre de 2026 y la última actualización el 7 de septiembre de 2026. El repositorio ocupa un total de 5.4 GB y cuenta con 8 me gusta, pero **no registra descargas** en el momento de la consulta.
 
 No se dispone de información pública sobre su arquitectura, tamaño, parámetros, licencia ni capacidades. La ausencia de documentación técnica y de una tarjeta de modelo completa impide cualquier evaluación de su rendimiento o idoneidad para casos de uso reales. El nombre del modelo sugiere una posible relación con la familia MiniMax y la arquitectura H3, pero no hay confirmación en los datos disponibles.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TenStrip/MinimaxH3-Turbo_Shenanigans | No disponible | No disponible | No disponible | Solo en HuggingFace, sin descargas |
+| TenStrip/MinimaxH3-Turbo_Shenanigans | No disponible | No disponible | No disponible | Solo en Hugging Face, sin descargas |
 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

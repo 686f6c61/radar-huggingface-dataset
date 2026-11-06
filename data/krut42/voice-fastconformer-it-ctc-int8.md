@@ -62,9 +62,9 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Tipo | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| krut42/voice-fastconformer-it-ctc-int8 (este) | FastConformer CTC, ONNX para sherpa-onnx | int8 (MatMul, uint8) | CC BY 4.0 | HuggingFace, 0,2 GB |
-| nvidia/stt_it_fastconformer_hybrid_large_pc | FastConformer híbrido (RNNT + CTC), NeMo | pesos originales (no cuantizado) | CC BY 4.0 | HuggingFace (modelo base) |
-| OpenVoiceOS/stt_it_fastconformer_hybrid_large_pc_onnx | FastConformer CTC, ONNX | sin cuantizar (fp32) | CC BY 4.0 | HuggingFace (export ONNX) |
+| krut42/voice-fastconformer-it-ctc-int8 (este) | FastConformer CTC, ONNX para sherpa-onnx | int8 (MatMul, uint8) | CC BY 4.0 | Hugging Face, 0,2 GB |
+| nvidia/stt_it_fastconformer_hybrid_large_pc | FastConformer híbrido (RNNT + CTC), NeMo | pesos originales (no cuantizado) | CC BY 4.0 | Hugging Face (modelo base) |
+| OpenVoiceOS/stt_it_fastconformer_hybrid_large_pc_onnx | FastConformer CTC, ONNX | sin cuantizar (fp32) | CC BY 4.0 | Hugging Face (export ONNX) |
 
 Las tres entradas comparten la misma arquitectura y el mismo origen; difieren en el formato y el nivel de cuantización. No se dispone en la información proporcionada de datos de benchmarks comparables frente a alternativas de otros autores (por ejemplo, sistemas ASR multilingües genéricos) para el idioma italiano.
 
@@ -81,7 +81,7 @@ Las tres entradas comparten la misma arquitectura y el mismo origen; difieren en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krut42/voice-fastconformer-it-ctc-int8
+- Repositorio en Hugging Face: https://huggingface.co/krut42/voice-fastconformer-it-ctc-int8
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/stt_it_fastconformer_hybrid_large_pc
 - Exportación ONNX de OpenVoiceOS: https://huggingface.co/OpenVoiceOS/stt_it_fastconformer_hybrid_large_pc_onnx
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

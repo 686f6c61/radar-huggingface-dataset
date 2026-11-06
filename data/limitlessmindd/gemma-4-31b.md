@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en precision FP16/BF16 se requieren aproximadamente 62 GB de VRAM; con cuantizacion a 8 bits se reduce a unos 31 GB; con cuantizacion a 4 bits, alrededor de 16 GB.
 - GPU recomendadas: para FP16 se necesitan GPUs de datacenter como A100 80GB, H100 o A6000 48GB; con cuantizacion a 8 bits puede usarse una RTX 4090 (24GB) o RTX 3090 (24GB); con cuantizacion a 4 bits cabe en GPUs consumer de 16 GB como RTX 4080 o RTX 3080 Ti.
 - El modelo cabe en GPUs de consumo con cuantizacion, pero no en precision completa.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y la libreria transformers de HuggingFace.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y la libreria transformers de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; dependen del hardware, la cuantizacion y el backend utilizado.
 
 ## Comparativa con modelos similares
@@ -84,9 +84,9 @@ Nota: los datos de Qwen, Llama y Mistral son de conocimiento general y no provie
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/LimitlessMindd/gemma-4-31B
-- Repositorio HuggingFace de la variante instruction-tuned: https://huggingface.co/LimitlessMindd/gemma-4-31B-it
-- Model card oficial de Google en HuggingFace: https://huggingface.co/google/gemma-4-31B
+- Repositorio Hugging Face del modelo: https://huggingface.co/LimitlessMindd/gemma-4-31B
+- Repositorio Hugging Face de la variante instruction-tuned: https://huggingface.co/LimitlessMindd/gemma-4-31B-it
+- Model card oficial de Google en Hugging Face: https://huggingface.co/google/gemma-4-31B
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 en Google AI for Developers: https://ai.google.dev/gemma/docs/core/model_card_4
 - Technical report en arXiv: https://arxiv.org/abs/2607.02770

@@ -79,9 +79,9 @@ La línea base de comparación es `phase2-baseline-greedy-res1024`. La model car
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ZenithComp/typhoon-ocr-7b-thai-handwriting-lora-v1` | Adaptador LoRA sobre Qwen2.5-VL-7B | ~7B (base) + adaptador de 0,5 GB | No disponible | CER normalizado 0,1336; exact match 0,4526 en CPE-OPH (559 muestras) | Apache-2.0 | HuggingFace, PEFT |
-| `typhoon-ai/typhoon-ocr-7b` | Modelo completo multimodal | ~7B | No disponible | No disponible en la información proporcionada | Apache-2.0 | HuggingFace, paquete `typhoon-ocr` |
-| `Qwen/Qwen2.5-VL-7B-Instruct` | Modelo completo multimodal | ~7B | No disponible | No disponible en la información proporcionada | Apache-2.0 (según la cadena de licencias citada) | HuggingFace |
+| `ZenithComp/typhoon-ocr-7b-thai-handwriting-lora-v1` | Adaptador LoRA sobre Qwen2.5-VL-7B | ~7B (base) + adaptador de 0,5 GB | No disponible | CER normalizado 0,1336; exact match 0,4526 en CPE-OPH (559 muestras) | Apache-2.0 | Hugging Face, PEFT |
+| `typhoon-ai/typhoon-ocr-7b` | Modelo completo multimodal | ~7B | No disponible | No disponible en la información proporcionada | Apache-2.0 | Hugging Face, paquete `typhoon-ocr` |
+| `Qwen/Qwen2.5-VL-7B-Instruct` | Modelo completo multimodal | ~7B | No disponible | No disponible en la información proporcionada | Apache-2.0 (según la cadena de licencias citada) | Hugging Face |
 
 No se dispone de datos de benchmark comparables entre estos tres modelos en la información proporcionada, por lo que la comparación se limita a tipo de artefacto, licencia y disponibilidad. No se han identificado en la búsqueda web alternativas específicas de OCR de escritura manuscrita tailandesa para contrastar.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmark comparables entre estos tres modelos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZenithComp/typhoon-ocr-7b-thai-handwriting-lora-v1
+- Modelo en Hugging Face: https://huggingface.co/ZenithComp/typhoon-ocr-7b-thai-handwriting-lora-v1
 - Modelo base: https://huggingface.co/typhoon-ai/typhoon-ocr-7b
 - Modelo base de la cadena: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Artefacto de métricas citado en la model card: https://huggingface.co/sivakorn-su/typhoon-ocr-7b-thai-handwriting-lora-v1/blob/phase2-downsample-money-keep25-300steps/phase2_artifacts/metrics.json

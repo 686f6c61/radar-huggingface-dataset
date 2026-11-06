@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moss-image-nsfw-uncensored-lora es un adaptador LoRA para generación de imágenes texto-a-imagen, desarrollado por el usuario Sobgthunder y publicado en HuggingFace. Se trata de un ajuste fino (adapter) sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT, un modelo de difusión de la familia MOSS desarrollada por OpenMOSS. Su propósito declarado es habilitar la generación de contenido para adultos sin censura, un ámbito que los modelos base suelen restringir mediante filtros de seguridad o datasets filtrados.
+Moss-image-nsfw-uncensored-lora es un adaptador LoRA para generación de imágenes texto-a-imagen, desarrollado por el usuario Sobgthunder y publicado en Hugging Face. Se trata de un ajuste fino (adapter) sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT, un modelo de difusión de la familia MOSS desarrollada por OpenMOSS. Su propósito declarado es habilitar la generación de contenido para adultos sin censura, un ámbito que los modelos base suelen restringir mediante filtros de seguridad o datasets filtrados.
 
 El adaptador se distribuye en formato safetensors y es compatible con la librería diffusers. Emplea el token de activación `moss_xvstyle` para invocar el estilo aprendido. El repositorio tiene un tamaño de 27,6 GB, lo que sugiere que puede contener múltiples checkpoints o pesos de gran precisión, aunque no se detalla en la información disponible la composición exacta del mismo.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Moss-image-nsfw-uncensored-lora | LoRA sobre MOSS-Image-SFT | no disponible | no aplica | Apache 2.0 | HuggingFace |
-| OpenMOSS-Team/MOSS-Image-SFT (base) | Modelo de difusión texto-a-imagen | no disponible | no aplica | no disponible | HuggingFace |
-| LoRAs NSFW para Stable Diffusion (p. ej., familia SD 1.5/SDXL) | LoRA sobre SD/SDXL | variable (millones) | no aplica | variable | HuggingFace, Civitai |
+| Moss-image-nsfw-uncensored-lora | LoRA sobre MOSS-Image-SFT | no disponible | no aplica | Apache 2.0 | Hugging Face |
+| OpenMOSS-Team/MOSS-Image-SFT (base) | Modelo de difusión texto-a-imagen | no disponible | no aplica | no disponible | Hugging Face |
+| LoRAs NSFW para Stable Diffusion (p. ej., familia SD 1.5/SDXL) | LoRA sobre SD/SDXL | variable (millones) | no aplica | variable | Hugging Face, Civitai |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparativa se limita a aspectos de disponibilidad y licencia.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sobgthunder/Moss-image-nsfw-uncensored-lora
+- Hugging Face: https://huggingface.co/Sobgthunder/Moss-image-nsfw-uncensored-lora
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

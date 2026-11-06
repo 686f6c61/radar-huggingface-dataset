@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rahulpillaiton/paper_014310439_multimodal_reasoning` no contiene un modelo de inteligencia artificial, sino un documento de investigación en formato Markdown que aborda el tema del razonamiento multimodal (multimodal reasoning). El autor, `rahulpillaiton`, ha subido este artefacto a HuggingFace como repositorio de datos, con la intención de compartir un paper estructurado según un estilo académico concreto: citación en formato autor-año, estructura intro-método-experimentos-conclusiones y un estilo de escritura analítico y conciso.
+El repositorio `rahulpillaiton/paper_014310439_multimodal_reasoning` no contiene un modelo de inteligencia artificial, sino un documento de investigación en formato Markdown que aborda el tema del razonamiento multimodal (multimodal reasoning). El autor, `rahulpillaiton`, ha subido este artefacto a Hugging Face como repositorio de datos, con la intención de compartir un paper estructurado según un estilo académico concreto: citación en formato autor-año, estructura intro-método-experimentos-conclusiones y un estilo de escritura analítico y conciso.
 
 No se trata de un modelo entrenado con pesos, sino de un documento que resume o desarrolla un estudio sobre razonamiento multimodal, un campo de la IA que busca que los modelos comprendan y razonen sobre información de múltiples modalidades (texto, imagen, audio, etc.). El repositorio tiene licencia MIT y no presenta descargas ni interacciones en la comunidad. Dado que no hay un modelo subyacente, no existen arquitectura, parámetros ni contexto que documentar.
 
@@ -50,7 +50,7 @@ No aplica. No hay modelo que ejecutar, por lo que no se requieren GPU, VRAM ni o
 
 ## Comparativa con modelos similares
 
-No aplica. No hay modelos comparables porque no es un modelo de IA. La comparativa se limitaría a otros repositorios de papers en HuggingFace, pero no hay datos disponibles para comparar.
+No aplica. No hay modelos comparables porque no es un modelo de IA. La comparativa se limitaría a otros repositorios de papers en Hugging Face, pero no hay datos disponibles para comparar.
 
 ## Limitaciones y advertencias
 
@@ -62,7 +62,7 @@ No aplica. No hay modelos comparables porque no es un modelo de IA. La comparati
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/rahulpillaiton/paper_014310439_multimodal_reasoning
+- Repositorio de Hugging Face: https://huggingface.co/rahulpillaiton/paper_014310439_multimodal_reasoning
 - Resultados de búsqueda web relacionados (genéricos sobre razonamiento multimodal, no específicos del repositorio):
   - Publicaciones de Google DeepMind: https://deepmind.google/research/publications/
   - Awesome-MLLM-Reasoning: https://github.com/phellonchen/Awesome-MLLM-Reasoning/
@@ -70,7 +70,7 @@ No aplica. No hay modelos comparables porque no es un modelo de IA. La comparati
   - Awesome-MLLM-Reasoning-Collection: https://github.com/lwpyh/Awesome-MLLM-Reasoning-Collection/
   - Multimodal Reasoning AI: https://ajithp.com/2025/04/21/multimodal-reasoning-ai/</think>## Resumen
 
-Este repositorio de HuggingFace, creado por el usuario `rahulpillaiton`, no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown que aborda el tema del razonamiento multimodal (multimodal reasoning). Según la model card, se trata de un paper con una estructura concreta (introducción, método, experimentos, conclusiones), estilo de citación autor-año y una redacción analítica y concisa. El archivo principal, `paper_014310439_multimodal_reasoning.md`, contiene el texto completo del estudio.
+Este repositorio de Hugging Face, creado por el usuario `rahulpillaiton`, no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown que aborda el tema del razonamiento multimodal (multimodal reasoning). Según la model card, se trata de un paper con una estructura concreta (introducción, método, experimentos, conclusiones), estilo de citación autor-año y una redacción analítica y concisa. El archivo principal, `paper_014310439_multimodal_reasoning.md`, contiene el texto completo del estudio.
 
 No se trata de un modelo con pesos, arquitectura ni capacidad de inferencia; es un artefacto de investigación compartido con licencia MIT. El repositorio no registra descargas ni interacciones en la fecha de creación (agosto de 2026). Por tanto, no es adecuado para tareas de generación de texto, razonamiento o procesamiento de lenguaje, sino para consulta académica o referencia dentro del campo del razonamiento multimodal.
 
@@ -116,7 +116,7 @@ No aplica. No hay modelo que ejecutar; solo se necesita un lector de Markdown o 
 
 ## Comparativa con modelos similares
 
-No aplica. No existe un modelo comparable porque no es un sistema de IA. La comparación se limitaría a otros repositorios de papers en HuggingFace, pero no hay datos disponibles para ello.
+No aplica. No existe un modelo comparable porque no es un sistema de IA. La comparación se limitaría a otros repositorios de papers en Hugging Face, pero no hay datos disponibles para ello.
 
 ## Limitaciones y advertencias
 
@@ -128,7 +128,7 @@ No aplica. No existe un modelo comparable porque no es un sistema de IA. La comp
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/rahulpillaiton/paper_014310439_multimodal_reasoning
+- Repositorio de Hugging Face: https://huggingface.co/rahulpillaiton/paper_014310439_multimodal_reasoning
 - Resultados de búsqueda web relacionados (genéricos sobre razonamiento multimodal, no específicos del repositorio):
   - Publicaciones de Google DeepMind: https://deepmind.google/research/publications/
   - GitHub - Awesome-MLLM-Reasoning: https://github.com/phellonchen/Awesome-MLLM-Reasoning/

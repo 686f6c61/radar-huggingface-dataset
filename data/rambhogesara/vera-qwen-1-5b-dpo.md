@@ -98,7 +98,7 @@ La diferencia principal de vera-qwen-1.5b-dpo frente a los otros tres no esta en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RamBhogesara/vera-qwen-1.5b-dpo
+- Modelo en Hugging Face: https://huggingface.co/RamBhogesara/vera-qwen-1.5b-dpo
 - Dataset de preferencias: https://huggingface.co/datasets/RamBhogesara/vera-dpo-dataset
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Qwen2.5-1.5B-Instruct (modelo original): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

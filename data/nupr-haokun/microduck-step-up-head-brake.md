@@ -85,7 +85,7 @@ No se dispone de información sobre otros controladores de RL para Microduck o r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nupr-Haokun/microduck-step-up-head-brake
+- Modelo en Hugging Face: https://huggingface.co/Nupr-Haokun/microduck-step-up-head-brake
 - Repositorio de código fuente: https://github.com/bihaokun/microduck-step-up-policy
 - Stack oficial de entrenamiento RL: https://github.com/pollen-robotics/microduck_rl
 - Página del robot Microduck: https://pollen-robotics.com/microduck/

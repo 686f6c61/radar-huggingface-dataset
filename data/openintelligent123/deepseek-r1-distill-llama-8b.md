@@ -82,7 +82,7 @@ El modelo de 8B es el más pequeño de la familia destilada de DeepSeek, con un 
 
 ## Enlaces
 
-- Repositorio de HuggingFace (este modelo): https://huggingface.co/Openintelligent123/DeepSeek-R1-Distill-Llama-8B
+- Repositorio de Hugging Face (este modelo): https://huggingface.co/Openintelligent123/DeepSeek-R1-Distill-Llama-8B
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

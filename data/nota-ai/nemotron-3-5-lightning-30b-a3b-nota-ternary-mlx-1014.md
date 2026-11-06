@@ -99,9 +99,9 @@ No se dispone de datos sobre otras publicaciones ternarias comparables en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nota-ai/Nemotron-3.5-Lightning-30B-A3B-Nota-Ternary-MLX-1014
+- Repositorio en Hugging Face: https://huggingface.co/nota-ai/Nemotron-3.5-Lightning-30B-A3B-Nota-Ternary-MLX-1014
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Contacto del autor para modelos con mayor recuperacion: https://notaai.typeform.com/contact
-- Fichero de licencia: `LICENSE` en el repositorio de HuggingFace
+- Fichero de licencia: `LICENSE` en el repositorio de Hugging Face
 
 Nota: la busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a servicios y recursos sin relacion (aplicaciones de transcripcion, diccionarios y herramientas de gestion de riesgos urbanisticos), por lo que se han descartado.

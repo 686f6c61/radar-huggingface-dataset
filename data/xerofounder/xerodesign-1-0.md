@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XeroDesign-1.0 | LoRA sobre Z-Image (difusion) | Adaptador r=32 sobre base 6B | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Tongyi-MAI/Z-Image | Modelo base de difusion | 6B (S3-DiT) + Qwen3-4B | No disponible | No disponible en la informacion | HuggingFace |
+| XeroDesign-1.0 | LoRA sobre Z-Image (difusion) | Adaptador r=32 sobre base 6B | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Tongyi-MAI/Z-Image | Modelo base de difusion | 6B (S3-DiT) + Qwen3-4B | No disponible | No disponible en la informacion | Hugging Face |
 | Alternativas de LoRA de diseno grafico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento ni de otros adaptadores comparables en la informacion proporcionada para establecer una comparativa cuantitativa.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de otros adaptadores comparables en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xerofounder/XeroDesign-1.0
+- Hugging Face: https://huggingface.co/xerofounder/XeroDesign-1.0
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image
 - Dataset de entrenamiento: https://huggingface.co/datasets/xerocore/argonz-curated-design
 - Repositorio de Diffusers: https://github.com/huggingface/diffusers

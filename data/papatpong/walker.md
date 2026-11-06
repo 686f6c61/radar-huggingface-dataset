@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Papatpong/Walker` es un repositorio publicado en HuggingFace por el usuario Papatpong, con licencia MIT y un tamaño de repositorio de 51,8 GB. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. La información disponible se limita a los metadatos básicos de la plataforma: fecha de creación (20 de agosto de 2026), última actualización (22 de agosto de 2026) y cero descargas o valoraciones. No se ha encontrado documentación adicional en la búsqueda web que permita identificar qué tipo de modelo es, su propósito o sus capacidades. Dada la ausencia total de especificaciones, esta ficha se limita a reflejar la información disponible y a señalar explícitamente los datos que no se han publicado.
+El modelo `Papatpong/Walker` es un repositorio publicado en Hugging Face por el usuario Papatpong, con licencia MIT y un tamaño de repositorio de 51,8 GB. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. La información disponible se limita a los metadatos básicos de la plataforma: fecha de creación (20 de agosto de 2026), última actualización (22 de agosto de 2026) y cero descargas o valoraciones. No se ha encontrado documentación adicional en la búsqueda web que permita identificar qué tipo de modelo es, su propósito o sus capacidades. Dada la ausencia total de especificaciones, esta ficha se limita a reflejar la información disponible y a señalar explícitamente los datos que no se han publicado.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Papatpong/Walker
+- Repositorio en Hugging Face: https://huggingface.co/Papatpong/Walker
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la búsqueda web.

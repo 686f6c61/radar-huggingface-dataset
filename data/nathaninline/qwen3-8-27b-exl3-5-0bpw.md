@@ -94,7 +94,7 @@ La comparación se limita a las variantes del mismo modelo base porque la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nathaninline/Qwen3.8-27B-exl3-5.0bpw
+- Modelo en Hugging Face: https://huggingface.co/nathaninline/Qwen3.8-27B-exl3-5.0bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de referencia (Unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - ExLlamaV3: https://github.com/turboderp-org/exllamav3

@@ -29,7 +29,7 @@ Su relevancia es doble. Por un lado, sirve como ejemplo reproducible de un flujo
 | Salidas | action (6,) |
 | Tamano del repositorio | 0,9 GB |
 | Pasos de entrenamiento | 20.000 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -76,8 +76,8 @@ Los resultados de la busqueda web proporcionados no contienen informacion tecnic
 
 | Modelo | Parametros | Tipo | Camaras | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Tridex/train_smolvla_3cam_20k | 450.046.176 | VLA de imitacion, ajustada a una tarea | 3 (front, side, top) | no disponible | Apache 2.0 | HuggingFace (LeRobot) |
-| lerobot/smolvla_base | 450 M (misma familia, dato no confirmado en la informacion disponible para este repositorio) | VLA base preentrenada, sin tarea especifica | no disponible | no disponible | Apache 2.0 | HuggingFace (LeRobot) |
+| Tridex/train_smolvla_3cam_20k | 450.046.176 | VLA de imitacion, ajustada a una tarea | 3 (front, side, top) | no disponible | Apache 2.0 | Hugging Face (LeRobot) |
+| lerobot/smolvla_base | 450 M (misma familia, dato no confirmado en la informacion disponible para este repositorio) | VLA base preentrenada, sin tarea especifica | no disponible | no disponible | Apache 2.0 | Hugging Face (LeRobot) |
 | Otras politicas VLA de codigo abierto (OpenVLA, pi0, Octo, GR00T N1 y similares) | no disponible | VLA / transformer de imitacion | no disponible | no disponible | no disponible | no disponible |
 
 Solo el modelo base lerobot/smolvla_base puede compararse con datos procedentes de la informacion proporcionada, y la comparacion es directa: mismo autor de origen, misma familia arquitectonica y mismo pipeline de LeRobot. Cualquier otra comparacion con alternativas requiere consultar sus respectivas fichas tecnicas, que no forman parte de la informacion disponible aqui.
@@ -97,7 +97,7 @@ Solo el modelo base lerobot/smolvla_base puede compararse con datos procedentes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tridex/train_smolvla_3cam_20k
+- Modelo en Hugging Face: https://huggingface.co/Tridex/train_smolvla_3cam_20k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Tridex/record-test-3-cam_20260903_142712
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=Tridex/record-test-3-cam_20260903_142712

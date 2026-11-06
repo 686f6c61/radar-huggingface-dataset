@@ -4,9 +4,9 @@
 
 HunTeR255/meetinglab-models no es un modelo único, sino una colección de tres paquetes de modelos de embeddings convertidos a Core ML para la aplicación iOS Meeting Lab (grabadora de reuniones offline con búsqueda). Cada carpeta del repositorio contiene un modelo de embeddings distinto: e5-small (384 dimensiones), bge-m3 (1024 dimensiones) y embeddinggemma-300m (768 dimensiones). Los pesos originales pertenecen a sus autores (intfloat, BAAI y Google); el autor del repositorio solo aporta la conversión.
 
-La conversión se ha realizado con coremltools 9 mediante cuantización lineal int8 de los pesos, longitudes de secuencia enumeradas (32, 64, 128, 256 y 512 tokens), mean pooling y normalización L2 integrados dentro del grafo del modelo. Cada paquete incluye el modelo compilado (.mlmodelc dentro de un ZIP), el tokenizer rápido de HuggingFace, un fichero embedding.json con metadatos de uso (id, dimensión, prefijos, buckets, pooling) y un report.json con el informe de conversión.
+La conversión se ha realizado con coremltools 9 mediante cuantización lineal int8 de los pesos, longitudes de secuencia enumeradas (32, 64, 128, 256 y 512 tokens), mean pooling y normalización L2 integrados dentro del grafo del modelo. Cada paquete incluye el modelo compilado (.mlmodelc dentro de un ZIP), el tokenizer rápido de Hugging Face, un fichero embedding.json con metadatos de uso (id, dimensión, prefijos, buckets, pooling) y un report.json con el informe de conversión.
 
-El interés de esta publicación es acotado pero claro: permite ejecutar búsqueda semántica multilingüe totalmente en dispositivo en iOS, sin enviar transcripciones de reuniones a servidores externos. El repositorio acumula 0 descargas y 0 likes, registra licencia mixta y fue creado y actualizado el 17 de septiembre de 2026 según los metadatos de HuggingFace.
+El interés de esta publicación es acotado pero claro: permite ejecutar búsqueda semántica multilingüe totalmente en dispositivo en iOS, sin enviar transcripciones de reuniones a servidores externos. El repositorio acumula 0 descargas y 0 likes, registra licencia mixta y fue creado y actualizado el 17 de septiembre de 2026 según los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El interés de esta publicación es acotado pero claro: permite ejecutar búsque
 | Tipos de cuantizacion | int8 lineal en los pesos, aplicada durante la conversion con coremltools 9 |
 | Idiomas soportados | Ruso (ru) e ingles (en), segun los tags del repositorio |
 | Licencia | Mixta: MIT para e5-small y bge-m3; Gemma Terms of Use para embeddinggemma-300m |
-| Formato de pesos | Core ML (.mlmodelc compilado, distribuido como model.mlmodelc.zip); tokenizer.json y tokenizer_config.json en formato HuggingFace fast; metadatos en embedding.json y report.json |
+| Formato de pesos | Core ML (.mlmodelc compilado, distribuido como model.mlmodelc.zip); tokenizer.json y tokenizer_config.json en formato Hugging Face fast; metadatos en embedding.json y report.json |
 | Repositorio | HunTeR255/meetinglab-models |
 | Tamano del repositorio | 2,3 GB (los tres paquetes en conjunto) |
 | Libreria declarada | coreml |
@@ -105,13 +105,13 @@ No se dispone de resultados de recuperación (MTEB, BEIR) para ninguno de los tr
 - Los pesos no pertenecen al autor del repositorio; la conversión se distribuye tal cual, sin garantías y sin proceso de validación documentado más allá del reference.json del propio autor.
 - El repositorio registra 0 descargas y 0 likes, por lo que no hay validación independiente de la conversión ni de su comportamiento en producción.
 - Las fechas de creación y actualización registradas (17 de septiembre de 2026) son posteriores a la fecha habitual de consulta; conviene verificar el estado real del repositorio antes de integrarlo.
-- El pipeline no está declarado en HuggingFace (no disponible), y la etiqueta onnx no se corresponde con ningún artefacto descrito en la model card.
+- El pipeline no está declarado en Hugging Face (no disponible), y la etiqueta onnx no se corresponde con ningún artefacto descrito en la model card.
 - La cuantización int8 introduce una pérdida de precisión que el autor acota a una similitud coseno de 0,999 o superior en unos pocos textos de prueba; no hay evaluación sobre corpus grandes ni sobre tareas de recuperación reales.
 - No hay información sobre latencia, consumo de batería ni comportamiento térmico en dispositivos iOS, factores críticos en una app de grabación de reuniones.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HunTeR255/meetinglab-models
+- Repositorio en Hugging Face: https://huggingface.co/HunTeR255/meetinglab-models
 - Modelo de origen e5-small: https://huggingface.co/intfloat/multilingual-e5-small
 - Modelo de origen bge-m3: https://huggingface.co/BAAI/bge-m3
 - Modelo de origen embeddinggemma-300m: https://huggingface.co/google/embeddinggemma-300m

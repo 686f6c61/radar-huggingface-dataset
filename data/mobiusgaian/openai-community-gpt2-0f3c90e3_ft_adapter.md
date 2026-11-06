@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo MobiusGaian/openai-community-gpt2-0f3c90e3_FT_adapter es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base openai-community/gpt2 de OpenAI. Ha sido desarrollado por MobiusGaian y publicado en HuggingFace bajo la librería PEFT. Se trata de un adaptador para generación de texto, con formato de pesos safetensors. El repositorio contiene exclusivamente los pesos del adaptador, con un tamaño de 0.0 GB, lo que indica que es un ajuste fino de bajo rango. No se dispone de información sobre el conjunto de datos de entrenamiento, la licencia, los idiomas soportados ni los benchmarks. El modelo se publicó el 8 de septiembre de 2026, sin descargas ni valoraciones, lo que sugiere que es un modelo experimental o de prueba.
+El modelo MobiusGaian/openai-community-gpt2-0f3c90e3_FT_adapter es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base openai-community/gpt2 de OpenAI. Ha sido desarrollado por MobiusGaian y publicado en Hugging Face bajo la librería PEFT. Se trata de un adaptador para generación de texto, con formato de pesos safetensors. El repositorio contiene exclusivamente los pesos del adaptador, con un tamaño de 0.0 GB, lo que indica que es un ajuste fino de bajo rango. No se dispone de información sobre el conjunto de datos de entrenamiento, la licencia, los idiomas soportados ni los benchmarks. El modelo se publicó el 8 de septiembre de 2026, sin descargas ni valoraciones, lo que sugiere que es un modelo experimental o de prueba.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ No se dispone de información específica sobre los requisitos de hardware para 
 - VRAM estimada: el modelo base GPT-2 en FP16 ocupa aproximadamente 250 MB de VRAM, más el overhead de la inferencia. El adaptador LoRA añade un peso despreciable (normalmente menos de 10 MB). En FP32, el modelo base ocupa alrededor de 500 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. También puede ejecutarse en CPU para pruebas básicas.
 - Compatibilidad con GPU de consumo: sí, modelos como la RTX 3060 o superiores pueden ejecutarlo sin problemas.
-- Opciones de despliegue: se puede cargar con la librería transformers de HuggingFace junto con PEFT. También es posible convertirlo a otros formatos como GGUF para usar con llama.cpp, aunque no hay documentación al respecto.
+- Opciones de despliegue: se puede cargar con la librería transformers de Hugging Face junto con PEFT. También es posible convertirlo a otros formatos como GGUF para usar con llama.cpp, aunque no hay documentación al respecto.
 - Latencia y throughput: no disponibles, ya que no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de información sobre parámetros, contexto ni rendimiento para co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MobiusGaian/openai-community-gpt2-0f3c90e3_FT_adapter
+- Hugging Face: https://huggingface.co/MobiusGaian/openai-community-gpt2-0f3c90e3_FT_adapter
 - Modelo similar: https://huggingface.co/MobiusGaian/openai-community-gpt2-43775f53_FT_adapter
 - Modelo similar: https://huggingface.co/MobiusGaian/gpt2_FT_adapter
 - Paper de GPT-2 (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

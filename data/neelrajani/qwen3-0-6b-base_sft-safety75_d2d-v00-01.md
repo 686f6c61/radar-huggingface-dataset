@@ -76,7 +76,7 @@ La comparativa se limita a los modelos relacionados del mismo autor, ya que no s
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety75_D2D-v00.01)
+- [Hugging Face del adaptador](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety75_D2D-v00.01)
 - [Teacher SFT de seguridad](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01)
 - [Adaptador adversarial PKU](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety75_ADV-pku-v00.01)
 - [Página del modelo en llm-explorer](https://llm-explorer.com/model/NeelRajani%2FQwen3-0.6B-Base_SFT_safety_v00.01,2HHZdabfY8ljiQ2B16Af0A)

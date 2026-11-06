@@ -109,7 +109,7 @@ No se aportan cifras de MMLU, HumanEval, GSM8K ni de latencia o tokens por segun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpillon/Qwen3.8-27B-nvfp4full-dflash2-abliterated-NInfer
+- Modelo en Hugging Face: https://huggingface.co/gpillon/Qwen3.8-27B-nvfp4full-dflash2-abliterated-NInfer
 - Gemelo vanilla no abliterado: https://huggingface.co/gpillon/Qwen3.8-27B-nvfp4full-dflash2-NInfer
 - Archivo de pesos de la plantilla: https://huggingface.co/gpillon/Qwen3.8-27B-nvfp4full-dflash2-NInfer/blob/main/qwen3_8_27b_nvfp4full-v2.ninfer
 - Checkpoint abliterado de origen: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated

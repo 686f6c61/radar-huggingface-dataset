@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cleyesode/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-MTP` es una cuantización GGUF derivada de `ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF` a la que se le ha injertado y entrenado una cabeza MTP (*multi-token prediction*) para habilitar decodificación especulativa en llama.cpp y otros runtimes GGUF compatibles. El tronco del modelo (expertos enrutados, shared expert, atención, embeddings, n-gram) se conserva bit-exacto: el autor desquantiza sin pérdida a un formato compatible con HuggingFace para poder entrenar la cabeza, y después restaura los tensores originales copiando literalmente los bytes cuantizados del GGUF de origen, incluidas sus rejillas y escalas GSQ.
+`cleyesode/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-MTP` es una cuantización GGUF derivada de `ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF` a la que se le ha injertado y entrenado una cabeza MTP (*multi-token prediction*) para habilitar decodificación especulativa en llama.cpp y otros runtimes GGUF compatibles. El tronco del modelo (expertos enrutados, shared expert, atención, embeddings, n-gram) se conserva bit-exacto: el autor desquantiza sin pérdida a un formato compatible con Hugging Face para poder entrenar la cabeza, y después restaura los tensores originales copiando literalmente los bytes cuantizados del GGUF de origen, incluidas sus rejillas y escalas GSQ.
 
 El resultado es un artefacto de 60,3 GB que mantiene la cuantización mixta GSQ-RCO original (aproximadamente 1,89 bits por peso efectivos sobre el transformer, estilo IQ1_M) y solo añade una cabeza MTP en Q4_K_M. La motivación es puramente de rendimiento en inferencia: según las métricas del autor, la cabeza eleva el throughput de decodificación a 1,47× de media respecto a la línea base sin MTP, con una penalización muy pequeña en el tiempo hasta el primer token.
 
@@ -23,7 +23,7 @@ Es relevante para quien necesite servir un modelo MoE grande de la familia Qwen3
 
 ## Arquitectura y entrenamiento
 
-El tronco es un transformer MoE de Qwen3.8 en su variante Coder, cuantizado por ISTA-DASLab con el esquema GSQ-RCO de precisión mixta (rejillas y escalas por tensor, con una media de ~1,89 bpw). Sobre ese tronco congelado, el autor entrena únicamente una cabeza MTP que predice varios tokens hacia delante y actúa como modelo borrador en decodificación especulativa. El proceso se diseñó para ser *lossless* respecto al artefacto original: cada tensor del tronco se desquantizó a layout HuggingFace con huella por hash de bytes cuantizados, se entrenó la cabeza, y los tensores no modificados se restauraron copiando sus bytes GGUF originales de forma literal, preservando exactamente las rejillas y escalas GSQ. Solo los tensores nuevos de la cabeza se cuantizaron de cero (a Q4_K_M, cuantización que el autor identifica como el punto óptimo en sus pruebas).
+El tronco es un transformer MoE de Qwen3.8 en su variante Coder, cuantizado por ISTA-DASLab con el esquema GSQ-RCO de precisión mixta (rejillas y escalas por tensor, con una media de ~1,89 bpw). Sobre ese tronco congelado, el autor entrena únicamente una cabeza MTP que predice varios tokens hacia delante y actúa como modelo borrador en decodificación especulativa. El proceso se diseñó para ser *lossless* respecto al artefacto original: cada tensor del tronco se desquantizó a layout Hugging Face con huella por hash de bytes cuantizados, se entrenó la cabeza, y los tensores no modificados se restauraron copiando sus bytes GGUF originales de forma literal, preservando exactamente las rejillas y escalas GSQ. Solo los tensores nuevos de la cabeza se cuantizaron de cero (a Q4_K_M, cuantización que el autor identifica como el punto óptimo en sus pruebas).
 
 El entrenamiento de la cabeza usó 256 muestras de calibración extraídas de la misma familia de distribución que la selección de expertos del modelo fuente (código, matemáticas, STEM, seguimiento de instrucciones, conocimiento del mundo, *tool calling* y ciencia), con longitudes de secuencia entre 4.096 y 20.480 tokens, durante 3 épocas. Se emplearon dos optimizadores: AdamW con learning rate 5e-5 para el router y 2e-5 para atención, normas y proyecciones, y Muon con 1e-4 para el *shared expert*. En el despliegue, la decodificación especulativa se activa con `--spec-type draft-mtp --spec-draft-n-max 3`, y en las pruebas se aceptan de media entre 2,49 y 2,70 tokens por paso verificado.
 
@@ -99,7 +99,7 @@ Tasas de aceptación por posición del token borrador (incondicional / condicion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cleyesode/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-MTP
+- Repositorio Hugging Face: https://huggingface.co/cleyesode/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-MTP
 - Modelo base (cuantización de origen): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
 - Referencia arXiv citada en las etiquetas del repo: arxiv:2605.00649 (contenido no disponible en la información proporcionada)
 - Referencia arXiv citada en las etiquetas del repo: arxiv:2604.18556 (contenido no disponible en la información proporcionada)

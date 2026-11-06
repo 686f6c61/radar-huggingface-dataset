@@ -87,7 +87,7 @@ El autor advierte que el resultado de math500 por encima del denso es real pero 
 | REAP50 + INT4 W4A16 (mismo autor) | no disponible | no disponible | no disponible | Modified MIT |
 | Arm 4:8-sparse W4A4 (del estudio) | no disponible | no disponible | no disponible | no disponible |
 
-La variante INT4 W4A16 existe en HuggingFace y el autor la compara con este checkpoint en su model card, pero no se proporcionan cifras concretas en la información disponible. El arm 4:8-sparse W4A4 se menciona en el estudio: en gsm8k obtiene 84.0 % con el mismo presupuesto de bits, frente al 91.96 % de este modelo.
+La variante INT4 W4A16 existe en Hugging Face y el autor la compara con este checkpoint en su model card, pero no se proporcionan cifras concretas en la información disponible. El arm 4:8-sparse W4A4 se menciona en el estudio: en gsm8k obtiene 84.0 % con el mismo presupuesto de bits, frente al 91.96 % de este modelo.
 
 ## Limitaciones y advertencias
 

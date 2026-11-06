@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`jjjlimaus/round10-chrisdan-fitleech-mean` es un modelo de generacion de texto publicado en HuggingFace por el usuario `jjjlimaus`, con 2.198.342.018 parametros (~2,2 mil millones) y un repositorio de 4,4 GB en formato safetensors. La nomenclatura del identificador y las etiquetas asociadas (`sn38-nanoexpand`, `sn38`, `bittensor`, `model-merge`) apuntan a un merge de pesos derivado de la actividad de la subred 38 de Bittensor, aunque la model card no aporta ninguna descripcion tecnica que lo confirme. El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+`jjjlimaus/round10-chrisdan-fitleech-mean` es un modelo de generacion de texto publicado en Hugging Face por el usuario `jjjlimaus`, con 2.198.342.018 parametros (~2,2 mil millones) y un repositorio de 4,4 GB en formato safetensors. La nomenclatura del identificador y las etiquetas asociadas (`sn38-nanoexpand`, `sn38`, `bittensor`, `model-merge`) apuntan a un merge de pesos derivado de la actividad de la subred 38 de Bittensor, aunque la model card no aporta ninguna descripcion tecnica que lo confirme. El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
-El modelo esta etiquetado con la pipeline `text-generation` y la libreria `transformers`, y declara compatibilidad con `endpoints_compatible`, lo que sugiere que puede desplegarse mediante la Inference Endpoints de HuggingFace. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial sin restricciones adicionales, si bien conviene verificar la procedencia de los pesos mergerados, ya que las licencias de los modelos origen pueden imponer condiciones adicionales que no quedan reflejadas en la ficha.
+El modelo esta etiquetado con la pipeline `text-generation` y la libreria `transformers`, y declara compatibilidad con `endpoints_compatible`, lo que sugiere que puede desplegarse mediante la Inference Endpoints de Hugging Face. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial sin restricciones adicionales, si bien conviene verificar la procedencia de los pesos mergerados, ya que las licencias de los modelos origen pueden imponer condiciones adicionales que no quedan reflejadas en la ficha.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un modelo pequeno (2,2B) que cabe holgadamente en GPU de consumo, con cero descargas y cero likes en el momento de la consulta, y sin informacion publicada sobre arquitectura, datos de entrenamiento, contexto o rendimiento. Cualquier evaluacion en produccion deberia partir de una validacion empirica propia, dado que no existe documentacion tecnica disponible.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un modelo peq
 | Tamano del repositorio | 4,4 GB |
 | Libreria | transformers |
 | Pipeline | text-generation |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-14 |
 | Ultima actualizacion | 2026-09-14 |
 | Descargas / likes | 0 / 0 |
@@ -31,7 +31,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un modelo peq
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna del modelo. Las etiquetas `model-merge` y `sn38-nanoexpand` indican que se trata de un modelo resultante de la fusion de pesos (model merging) y no de un entrenamiento desde cero, presumiblemente en el contexto de la subred 38 de Bittensor (`sn38`). El etiquetado `nanoexpand` sugiere algun tipo de expansion o destilacion sobre un modelo base de tipo "nano", pero la ficha de HuggingFace no documenta ni el modelo origen, ni la tecnica de merge empleada (por ejemplo, SLERP, TIES, DARE o media aritmetica de pesos), ni los hiperparametros utilizados.
+No hay informacion publicada sobre la arquitectura interna del modelo. Las etiquetas `model-merge` y `sn38-nanoexpand` indican que se trata de un modelo resultante de la fusion de pesos (model merging) y no de un entrenamiento desde cero, presumiblemente en el contexto de la subred 38 de Bittensor (`sn38`). El etiquetado `nanoexpand` sugiere algun tipo de expansion o destilacion sobre un modelo base de tipo "nano", pero la ficha de Hugging Face no documenta ni el modelo origen, ni la tecnica de merge empleada (por ejemplo, SLERP, TIES, DARE o media aritmetica de pesos), ni los hiperparametros utilizados.
 
 Tampoco se dispone de datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si hubo fases de ajuste fino supervisado, RLHF o DPO. No se documenta ninguna innovacion tecnica destacable (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, etc.). El sufijo `mean` del identificador podria hacer referencia a un merge por media aritmetica de los pesos, pero esto es una inferencia no confirmada por la informacion disponible.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - INT4 (por ejemplo, GGUF Q4_K_M): ~1,3-1,5 GB de pesos; del orden de 2-3 GB en total.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM es suficiente en FP16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, L4, T4, A10G). En INT4 cabe en GPU de 4-6 GB. Para servir en produccion con alto throughput se recomiendan A100 o H100, aunque estan sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en la practica totalidad de las GPU modernas con 6 GB o mas de VRAM en cuantizacion de 8 bits o inferior.
-- Opciones de despliegue: `transformers` (confirmado por la etiqueta de libreria), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), vLLM y TGI para servir con batching continuo. llama.cpp y Ollama requeririan convertir previamente los pesos a GGUF, ya que el repositorio solo publica safetensors.
+- Opciones de despliegue: `transformers` (confirmado por la etiqueta de libreria), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), vLLM y TGI para servir con batching continuo. llama.cpp y Ollama requeririan convertir previamente los pesos a GGUF, ya que el repositorio solo publica safetensors.
 - Latencia y throughput estimados: no disponible.
-- Nota operativa: el acceso es restringido (gated), por lo que cualquier despliegue automatizado necesita un token de HuggingFace con las condiciones aceptadas.
+- Nota operativa: el acceso es restringido (gated), por lo que cualquier despliegue automatizado necesita un token de Hugging Face con las condiciones aceptadas.
 
 ## Comparativa con modelos similares
 
@@ -98,6 +98,6 @@ Consideraciones sobre la comparativa: los tres modelos de referencia cuentan con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/round10-chrisdan-fitleech-mean
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/round10-chrisdan-fitleech-mean
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante relacionado con el modelo (papers, blogs, repositorios o demos). Las busquedas devolvieron unicamente resultados sin relacion con el modelo, relativos a productos financieros de entidades belgas.
 - Documentacion de la subred 38 de Bittensor: no disponible en la informacion proporcionada.

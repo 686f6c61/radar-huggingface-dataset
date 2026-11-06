@@ -91,7 +91,7 @@ No se dispone de datos publicados para comparar numéricamente con alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
-- Licencia y política de uso incluidas en el repositorio: `LICENSE.txt` y `USE_POLICY.md` (mismo repositorio de HuggingFace)
+- Licencia y política de uso incluidas en el repositorio: `LICENSE.txt` y `USE_POLICY.md` (mismo repositorio de Hugging Face)
 - La búsqueda web asociada no devolvió resultados relevantes sobre el modelo (los resultados obtenidos trataban sobre Snoopy y el Barón Rojo, sin relación con este artefacto). No se han localizado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

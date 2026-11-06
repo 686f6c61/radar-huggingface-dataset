@@ -72,11 +72,11 @@ Ambos comparten la arquitectura ViT a escala tiny, pero difieren en la tarea (re
 - **Riesgo de alucinacion**: no aplica directamente al ser un modelo de vision, pero los resultados de retrieval pueden ser incorrectos o no corresponder a la similitud real.
 - **Limitaciones de contexto**: no aplica, al ser un modelo de vision, pero se desconoce el tamano de imagen de entrada soportado.
 - **Restricciones de licencia**: la licencia MIT permite uso comercial, pero no hay garantia de calidad ni soporte por parte del autor.
-- **Falta de validacion externa**: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido evaluado por la comunidad.
+- **Falta de validacion externa**: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido evaluado por la comunidad.
 - **Formato de distribucion**: el repositorio contiene un unico archivo .py sin pesos preentrenados en formatos estandar, lo que dificulta la integracion en pipelines existentes.
 - **Carencia de documentacion**: no se publican detalles de entrenamiento, hiperparametros concretos, ni configuracion de los datos de entrada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hugo-leroy/model_006943978_vit_tiny
+- Hugging Face: https://huggingface.co/hugo-leroy/model_006943978_vit_tiny
 - Modelo comparable (modelapi/vit-tiny-fp16-ov-catalog): https://huggingface.co/modelapi/vit-tiny-fp16-ov-catalog

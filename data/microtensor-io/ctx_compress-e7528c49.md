@@ -4,7 +4,7 @@
 
 `ctx_compress-e7528c49` es un fine-tune experimental publicado por el usuario `microtensor-io` sobre el modelo base `ibm-granite/granite-4.0-h-micro` de IBM. Se trata de un modelo de 3.191.396.096 parámetros (aproximadamente 3,2 mil millones) con arquitectura `granitemoehybrid`, es decir, un transformer híbrido con mezcla de expertos (MoE) desarrollado originalmente por IBM dentro de la familia Granite 4.0. El nombre del repositorio sugiere que el ajuste está orientado a compresión de contexto, aunque no se proporciona documentación técnica que detalle la metodología empleada.
 
-El modelo se distribuye en formato safetensors bajo licencia Apache 2.0, con un tamaño de repositorio de 6,4 GB. El acceso está restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos. El repositorio no incluye información sobre el pipeline, los idiomas soportados ni los datos de entrenamiento utilizados en el fine-tune, lo que limita considerablemente la evaluación de sus capacidades reales.
+El modelo se distribuye en formato safetensors bajo licencia Apache 2.0, con un tamaño de repositorio de 6,4 GB. El acceso está restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos. El repositorio no incluye información sobre el pipeline, los idiomas soportados ni los datos de entrenamiento utilizados en el fine-tune, lo que limita considerablemente la evaluación de sus capacidades reales.
 
 La relevancia de este modelo radica en su base: Granite 4.0 H Micro es una propuesta de IBM para modelos compactos con arquitectura híbrida MoE, pensada para despliegues eficientes en entornos con recursos limitados. Sin embargo, al tratarse de un fine-tune sin documentación pública, sin descargas ni interacciones registradas y con acceso restringido, su utilidad práctica para terceros es incierta y debe evaluarse con cautela.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar rendimiento, contexto o c
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no se describe el dataset de entrenamiento, la metodología del fine-tune ni los objetivos concretos, lo que impide evaluar su calidad y adecuación.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados o de investigación.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados o de investigación.
 - Sin métricas publicadas: no hay benchmarks, evaluaciones ni resultados que respalden las capacidades del modelo.
 - Riesgo de alucinación: desconocido, pero inherente a cualquier modelo de lenguaje; la falta de evaluación agrava la incertidumbre.
 - Sesgos: no documentados; se desconoce la composición del dataset de fine-tune y, por tanto, los posibles sesgos introducidos.
@@ -83,6 +83,6 @@ No se dispone de información suficiente para comparar rendimiento, contexto o c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microtensor-io/ctx_compress-e7528c49
+- Hugging Face: https://huggingface.co/microtensor-io/ctx_compress-e7528c49
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-micro
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

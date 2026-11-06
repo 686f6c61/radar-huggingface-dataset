@@ -94,7 +94,7 @@ Los benchmarks marcados con daga en la model card original (MiMo Code mini, MiMo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-FP8 (este) | 9,41 B | no disponible | other | safetensors / compressed-tensors (FP8) | HuggingFace, 0 descargas, 1 like |
+| MiMo-V2.6-Distill-Qwen-9B-FP8 (este) | 9,41 B | no disponible | other | safetensors / compressed-tensors (FP8) | Hugging Face, 0 descargas, 1 like |
 | XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | checkpoint bf16 de origen |
 | Qwen/Qwen3.5-9B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | backbone base sin ajuste agentico |
 
@@ -117,7 +117,7 @@ En cuanto a rendimiento, los unicos datos comparables disponibles son los del ba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prithivMLmods/MiMo-V2.6-Distill-Qwen-9B-FP8
+- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/MiMo-V2.6-Distill-Qwen-9B-FP8
 - Modelo base (bf16): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Backbone original: https://huggingface.co/Qwen/Qwen3.5-9B
 - Informe tecnico de MiMo-V2.6: citado en la model card como fuente de los resultados de evaluacion, pero sin enlace disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goetia-26B-GGUF es la cuantizacion nativa en NVFP4 del modelo Goetia-26B, un modelo de lenguaje de tipo Mixture-of-Experts construido sobre la arquitectura Gemma-4 y publicado por el usuario oxpuppy635 en HuggingFace. El modelo completo cuenta con 25.233.142.046 parametros (aproximadamente 26 mil millones segun el autor) distribuidos en 30 capas, con 128 expertos enrutados en cada capa. El repositorio contiene unicamente los pesos cuantizados en formato GGUF, no los pesos originales.
+Goetia-26B-GGUF es la cuantizacion nativa en NVFP4 del modelo Goetia-26B, un modelo de lenguaje de tipo Mixture-of-Experts construido sobre la arquitectura Gemma-4 y publicado por el usuario oxpuppy635 en Hugging Face. El modelo completo cuenta con 25.233.142.046 parametros (aproximadamente 26 mil millones segun el autor) distribuidos en 30 capas, con 128 expertos enrutados en cada capa. El repositorio contiene unicamente los pesos cuantizados en formato GGUF, no los pesos originales.
 
 El problema que resuelve esta publicacion es de despliegue: los pesos en BF16 ocupan aproximadamente 52 GB, lo que obliga a usar varias GPU o a descargar parte del modelo a RAM del sistema. Mediante el empaquetado de las proyecciones de atencion densa y de las matrices de los 128 expertos en super-bloques GGML NVFP4, el autor reduce la huella a 15,3 GB, lo que permite descargar el modelo completo en la VRAM de una unica GPU de 16 GB (RTX 4080, RTX 5070, RTX 5060 Ti, L4 o L40S) manteniendo las proyecciones en 4 bits.
 
@@ -31,7 +31,7 @@ En el plano de la cuantizacion, la innovacion tecnica destacable es el uso de NV
 
 - Generacion de texto en ingles, heredada del modelo base Goetia-26B (pipeline declarado: `text-generation`).
 - Razonamiento y generacion condicionada por contexto: al ser un modelo MoE de 26 B, se espera capacidad de modelado de lenguaje general, aunque no se documentan evaluaciones que lo cuantifiquen.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio esta preparado para su uso mediante la infraestructura de inference endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio esta preparado para su uso mediante la infraestructura de inference endpoints de Hugging Face.
 - Ejecucion en llama.cpp con soporte CUDA, incluyendo descarga completa en GPU (`-ngl 99`) y Flash Attention (`-fa`).
 - Capacidades de tool calling, function calling, agentes, vision, audio o modo thinking: no disponible (no se documentan en la informacion proporcionada).
 - Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card.
@@ -90,5 +90,5 @@ No se dispone de informacion sobre modelos comparables de terceros en la documen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oxpuppy635/Goetia-26B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/oxpuppy635/Goetia-26B-GGUF
 - llama.cpp (runtime requerido, compilacion con CUDA): https://github.com/ggerganov/llama.cpp

@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos completos ni de otros modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/Qwen3.8-27B-SOM-heretic
+- Hugging Face: https://huggingface.co/richardyoung/Qwen3.8-27B-SOM-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic: https://heretic-project.org
 - Qwen Cloud (servicio alojado del base): https://www.qwencloud.com

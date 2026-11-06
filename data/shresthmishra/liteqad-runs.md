@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LiteQAD-Runs es un modelo publicado en HuggingFace por el usuario shresthmishra, con licencia MIT y etiquetado para la región de Estados Unidos. Se trata de un repositorio con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargar o utilizar los pesos. En el momento de la consulta, el modelo no registra descargas ni valoraciones, y no se ha especificado el pipeline ni los idiomas soportados.
+LiteQAD-Runs es un modelo publicado en Hugging Face por el usuario shresthmishra, con licencia MIT y etiquetado para la región de Estados Unidos. Se trata de un repositorio con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargar o utilizar los pesos. En el momento de la consulta, el modelo no registra descargas ni valoraciones, y no se ha especificado el pipeline ni los idiomas soportados.
 
 La relevancia de este modelo es actualmente limitada desde un punto de vista técnico, ya que no se ha publicado información pública sobre su arquitectura, tamaño, datos de entrenamiento o capacidades. La única información disponible es la licencia MIT, que permite uso comercial y modificación, y el hecho de que el acceso está restringido. Esto sugiere que el autor ha decidido controlar la distribución, pero sin documentación adicional no es posible evaluar su utilidad para tareas concretas.
 
@@ -48,7 +48,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio de apli
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no se ha publicado información sobre arquitectura, entrenamiento, capacidades o limitaciones.
-- Acceso restringido (gated): el modelo requiere aceptar condiciones adicionales en HuggingFace, lo que puede dificultar su uso y auditoría.
+- Acceso restringido (gated): el modelo requiere aceptar condiciones adicionales en Hugging Face, lo que puede dificultar su uso y auditoría.
 - Sin métricas de rendimiento: no hay benchmarks que permitan evaluar su calidad o fiabilidad.
 - Riesgo de alucinación y sesgos desconocidos: al no haber información sobre los datos de entrenamiento, no se puede evaluar el riesgo de sesgos ni de generación de contenido falso.
 - No apto para producción: sin datos de rendimiento, latencia o estabilidad, no se recomienda su uso en entornos productivos.
@@ -56,6 +56,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio de apli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shresthmishra/LiteQAD-Runs
+- Repositorio en Hugging Face: https://huggingface.co/shresthmishra/LiteQAD-Runs
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

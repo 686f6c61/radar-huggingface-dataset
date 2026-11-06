@@ -91,8 +91,8 @@ No se dispone de información suficiente para comparar rendimiento numérico con
 
 ## Enlaces
 
-- HuggingFace (copia vLLM): https://huggingface.co/vllm-project/R-4B
-- HuggingFace (original): https://huggingface.co/YannQi/R-4B
+- Hugging Face (copia vLLM): https://huggingface.co/vllm-project/R-4B
+- Hugging Face (original): https://huggingface.co/YannQi/R-4B
 - Paper: https://arxiv.org/pdf/2508.21113
 - Código: https://github.com/yannqi/R-4B
 - ModelScope: https://huggingface.co/YannQi/R-4B (enlace indicado en la model card)

@@ -108,7 +108,7 @@ No hay informacion sobre otras cuantizaciones comparables (GGUF, AWQ, GPTQ) del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/gemma-4-31B-it-oQ2.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-31B-it-oQ2.5e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Modelo asistente (origen de la cabeza MTP): https://huggingface.co/google/gemma-4-31B-it-assistant
 - Repositorio de la herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx

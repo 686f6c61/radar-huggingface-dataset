@@ -66,10 +66,10 @@ Datos de parametros y licencia tomados de las fichas publicas de cada modelo; el
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen-compassion-part1 | ~8,19 B | no disponible | Apache 2.0 | HuggingFace (37 descargas) |
-| Qwen3-8B (modelo base de la familia) | ~8,2 B | 32.768 tokens nativos (ampliable con YaRN), no confirmado para este ajuste | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Llama 3.1 8B Instruct | ~8 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B Instruct v0.3 | ~7,2 B | 32.000 tokens | Apache 2.0 | HuggingFace |
+| qwen-compassion-part1 | ~8,19 B | no disponible | Apache 2.0 | Hugging Face (37 descargas) |
+| Qwen3-8B (modelo base de la familia) | ~8,2 B | 32.768 tokens nativos (ampliable con YaRN), no confirmado para este ajuste | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Llama 3.1 8B Instruct | ~8 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B Instruct v0.3 | ~7,2 B | 32.000 tokens | Apache 2.0 | Hugging Face |
 
 Frente a estas alternativas, qwen-compassion-part1 no aporta ventajas documentadas en contexto, licencia o rendimiento; su diferencia es el sesgo de estilo "compasivo" introducido por el ajuste, con una adopcion comunitaria muy baja.
 
@@ -86,7 +86,7 @@ Frente a estas alternativas, qwen-compassion-part1 no aporta ventajas documentad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/qwen-compassion-part1
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/qwen-compassion-part1
 - Modelo base declarado: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-CPT-best-step750
 - Variante relacionada (checkpoint CPT fusionado): https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-1
 - Variante relacionada (s1-part1): https://huggingface.co/CompassioninMachineLearning/qwen-compassion-s1-part1

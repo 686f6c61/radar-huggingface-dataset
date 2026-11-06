@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_unfiltered_midtrain_alignment-5k_6k_7k_weightedavg_merge` es un merge de checkpoints de entrenamiento creado por el investigador yuhengtu-bytedance, perteneciente al equipo ByteDance Seed. Se trata de un experimento de fusión de pesos mediante la herramienta [mergekit](https://github.com/cg123/mergekit), que combina tres checkpoints intermedios (global_step5000, global_step6000 y global_step7000) de un proceso de entrenamiento denominado "unfiltered_midtrain_alignment". El resultado es un modelo denso de aproximadamente 6,86 mil millones de parámetros, con arquitectura GPT-NeoX (según los tags de HuggingFace) y formato de pesos safetensors.
+El modelo `sfm_unfiltered_midtrain_alignment-5k_6k_7k_weightedavg_merge` es un merge de checkpoints de entrenamiento creado por el investigador yuhengtu-bytedance, perteneciente al equipo ByteDance Seed. Se trata de un experimento de fusión de pesos mediante la herramienta [mergekit](https://github.com/cg123/mergekit), que combina tres checkpoints intermedios (global_step5000, global_step6000 y global_step7000) de un proceso de entrenamiento denominado "unfiltered_midtrain_alignment". El resultado es un modelo denso de aproximadamente 6,86 mil millones de parámetros, con arquitectura GPT-NeoX (según los tags de Hugging Face) y formato de pesos safetensors.
 
 La relevancia de este modelo radica en su naturaleza experimental: explora la fusión de checkpoints de un mismo entrenamiento en diferentes etapas para obtener un modelo final con características potencialmente mejoradas de alineación o seguridad, aunque no se ha publicado documentación técnica que detalle las capacidades resultantes. Al ser un merge lineal con normalización, el modelo hereda la arquitectura y el vocabulario del checkpoint base (global_step7000), pero no se dispone de información pública sobre el dataset de entrenamiento, el contexto máximo soportado ni los idiomas cubiertos. Es un artefacto de investigación más que un modelo listo para producción.
 
@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su naturaleza experimental: explora la fu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,86 B) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_weightedavg_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_weightedavg_merge)
 - [mergekit (repositorio)](https://github.com/cg123/mergekit)
 - [Paper de referencia del método Linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Modelo similar del mismo autor (4k_5k_6k)](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-4k_5k_6k_merge)

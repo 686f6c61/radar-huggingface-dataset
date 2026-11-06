@@ -77,10 +77,10 @@ La abstención solo por prompt alcanza un 20 %; la compuerta compuesta es necesa
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CTRL-2B | 2B (base) + adaptador | no disponible | RAG vertical sobre KB de Expedient | Apache-2.0 | HuggingFace, GGUF Q8_0 |
-| CTRL-0.6B | 0.6B (Qwen3-0.6B) | no disponible | Mismo corpus y receta, orientado a navegador | Apache-2.0 (según base) | HuggingFace, GGUF Q4_K_M 378 MB |
-| MiniCPM5-2B (base) | 2B | no disponible | Modelo generalista | Apache-2.0 | HuggingFace |
-| Modelos generalistas de 2B (p. ej. Qwen, Llama pequeños) | 1-3B | variable | Uso general, sin grounding | variable | HuggingFace |
+| CTRL-2B | 2B (base) + adaptador | no disponible | RAG vertical sobre KB de Expedient | Apache-2.0 | Hugging Face, GGUF Q8_0 |
+| CTRL-0.6B | 0.6B (Qwen3-0.6B) | no disponible | Mismo corpus y receta, orientado a navegador | Apache-2.0 (según base) | Hugging Face, GGUF Q4_K_M 378 MB |
+| MiniCPM5-2B (base) | 2B | no disponible | Modelo generalista | Apache-2.0 | Hugging Face |
+| Modelos generalistas de 2B (p. ej. Qwen, Llama pequeños) | 1-3B | variable | Uso general, sin grounding | variable | Hugging Face |
 
 Frente a la base MiniCPM5-2B, el adaptador mejora el recall cerrado de 0.692 a 0.772 y añade precisión de 0.865, además de la compuerta de abstención. Frente a CTRL-0.6B, gana en calidad cerrada (0.772/0.865 frente a 0.692/0.846) pero pierde la capacidad de ejecutarse en una pestaña del navegador. Ambos convergen en torno a 0.96 de recall con recuperación.
 
@@ -98,7 +98,7 @@ Frente a la base MiniCPM5-2B, el adaptador mejora el recall cerrado de 0.692 a 0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/expedient-ai/CTRL-2B
+- Modelo en Hugging Face: https://huggingface.co/expedient-ai/CTRL-2B
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Modelo hermano CTRL-0.6B: https://huggingface.co/expedient-ai/CTRL-0.6B
 - Demo Space: https://huggingface.co/spaces/expedient-ai/ctrl-0.6b-demo

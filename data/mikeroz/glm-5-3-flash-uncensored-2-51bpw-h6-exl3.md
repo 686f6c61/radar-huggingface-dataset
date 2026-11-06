@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario MikeRoz, contiene lo que su nombre indica: una cuantización en formato EXL2 a 2,51 bits por peso (bpw) de una variante etiquetada como "Uncensored" de un modelo denominado GLM-5.3-Flash. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a reducir el consumo de VRAM para inferencia local en GPU NVIDIA. El identificador del repositorio no incluye ningún dato sobre el modelo base original, su tamaño en parámetros ni su procedencia.
+Este repositorio de Hugging Face, publicado por el usuario MikeRoz, contiene lo que su nombre indica: una cuantización en formato EXL2 a 2,51 bits por peso (bpw) de una variante etiquetada como "Uncensored" de un modelo denominado GLM-5.3-Flash. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a reducir el consumo de VRAM para inferencia local en GPU NVIDIA. El identificador del repositorio no incluye ningún dato sobre el modelo base original, su tamaño en parámetros ni su procedencia.
 
-La ficha de HuggingFace no aporta tarjeta de modelo: no hay licencia declarada, no hay idiomas declarados, no hay pipeline asignado y no hay descripción técnica. El repositorio registra 0 descargas y 1 "like", y fue creado el 14 de septiembre de 2026, por lo que se trata de una publicación sin adopción documentada ni validación por parte de la comunidad.
+La ficha de Hugging Face no aporta tarjeta de modelo: no hay licencia declarada, no hay idiomas declarados, no hay pipeline asignado y no hay descripción técnica. El repositorio registra 0 descargas y 1 "like", y fue creado el 14 de septiembre de 2026, por lo que se trata de una publicación sin adopción documentada ni validación por parte de la comunidad.
 
 La relevancia de este tipo de repositorios es práctica: las cuantizaciones agresivas por debajo de 3 bpw permiten ejecutar modelos grandes en hardware de consumo, a costa de una pérdida de calidad que no está cuantificada en este caso. Al no existir model card, benchmarks ni información sobre el modelo de origen, cualquier evaluación rigurosa exige inspeccionar los archivos de pesos y el `config.json` del repositorio antes de usarlo en producción.
 
@@ -86,7 +86,7 @@ No es posible establecer una comparativa fiable: se desconoce el número de par�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MikeRoz/GLM-5.3-Flash-Uncensored-2.51bpw-h6-exl3
+- Repositorio en Hugging Face: https://huggingface.co/MikeRoz/GLM-5.3-Flash-Uncensored-2.51bpw-h6-exl3
 - Documentación del formato EXL2 (ExLlamaV2): no disponible en la información proporcionada
 - Paper o blog del modelo base: no disponible
 - Repositorio de código asociado: no disponible

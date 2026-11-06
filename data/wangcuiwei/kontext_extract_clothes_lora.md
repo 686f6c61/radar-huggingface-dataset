@@ -79,7 +79,7 @@ No se dispone de información sobre parámetros, contexto o rendimiento de los m
 
 ## Enlaces
 
-- [HuggingFace: wangcuiwei/kontext_extract_clothes_lora](https://huggingface.co/wangcuiwei/kontext_extract_clothes_lora)
+- [Hugging Face: wangcuiwei/kontext_extract_clothes_lora](https://huggingface.co/wangcuiwei/kontext_extract_clothes_lora)
 - [Licencia del modelo base FLUX.1-Kontext-dev](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/resolve/main/LICENSE.md)
 - [Modelo similar: Tagbliton/kontext_extract_clothes_lora](https://huggingface.co/Tagbliton/kontext_extract_clothes_lora)
 - [Modelo similar: ovi054/extract-clothes-kontext-dev-lora](https://huggingface.co/ovi054/extract-clothes-kontext-dev-lora)

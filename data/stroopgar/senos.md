@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StroopGar/senos es un repositorio publicado en HuggingFace por el usuario StroopGar bajo licencia MIT. El repositorio se creó el 2026-10-20 y se actualizó dos minutos más tarde, y en el momento de redactar esta ficha no contiene ningún artefacto: el tamaño del repositorio es de 0,0 GB, no hay pesos, no hay tag de pipeline (`pipeline_tag` no disponible) y no se declara ningún idioma soportado.
+StroopGar/senos es un repositorio publicado en Hugging Face por el usuario StroopGar bajo licencia MIT. El repositorio se creó el 2026-10-20 y se actualizó dos minutos más tarde, y en el momento de redactar esta ficha no contiene ningún artefacto: el tamaño del repositorio es de 0,0 GB, no hay pesos, no hay tag de pipeline (`pipeline_tag` no disponible) y no se declara ningún idioma soportado.
 
 La model card se limita a la declaración de licencia (`license: mit`). No incluye descripción del modelo, arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación. El repositorio acumula 0 descargas y 0 likes, lo que es coherente con la ausencia de contenido publicable.
 
@@ -84,7 +84,7 @@ No disponible. Se desconoce la categoría del modelo (tamaño, tarea, modalidad)
 - Repositorio vacío: 0,0 GB de contenido y ausencia de ficheros de pesos, configuración o tokenizador; el modelo no es ejecutable.
 - Documentación inexistente: la model card solo declara la licencia, sin información sobre arquitectura, entrenamiento, datos o evaluación.
 - Sin idiomas declarados: no puede asumirse soporte multilingüe ni monolingüe concreto.
-- Sin tag de pipeline: HuggingFace no clasifica el repositorio en ninguna tarea (text-generation, text-classification, etc.).
+- Sin tag de pipeline: Hugging Face no clasifica el repositorio en ninguna tarea (text-generation, text-classification, etc.).
 - Riesgo de alucinación, sesgos y comportamiento en producción: no evaluables al no existir modelo desplegable.
 - Licencia MIT: permite uso comercial, modificación y redistribución, siempre conservando el aviso de copyright y la cláusula de exención de responsabilidad; se distribuye "tal cual", sin garantía de ningún tipo.
 - Advertencia de trazabilidad: con 0 descargas y 0 likes y sin historial de versiones de pesos, no hay evidencia de uso ni de validación por parte de la comunidad.
@@ -92,5 +92,5 @@ No disponible. Se desconoce la categoría del modelo (tamaño, tarea, modalidad)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/StroopGar/senos
+- Hugging Face: https://huggingface.co/StroopGar/senos
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible.

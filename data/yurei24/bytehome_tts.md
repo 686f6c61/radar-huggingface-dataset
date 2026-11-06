@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bytehome_TTS es un checkpoint de síntesis de voz (text-to-speech) con clonación de voz basado en la arquitectura OmniVoice, publicado por el usuario yurei24 en HuggingFace. El modelo cuenta con 612.577.288 parámetros en formato safetensors y un repositorio de 3,3 GB que incluye pesos, configuración, tokenizador de texto y tokenizador de audio. Según la model card, se trata de una copia de un checkpoint original alojado en el repositorio Bytehome/Bytehome_TTS, subida para su uso con el código fuente del proyecto chatbot_voice, y no se realizó entrenamiento ni fine-tuning durante esta publicación.
+Bytehome_TTS es un checkpoint de síntesis de voz (text-to-speech) con clonación de voz basado en la arquitectura OmniVoice, publicado por el usuario yurei24 en Hugging Face. El modelo cuenta con 612.577.288 parámetros en formato safetensors y un repositorio de 3,3 GB que incluye pesos, configuración, tokenizador de texto y tokenizador de audio. Según la model card, se trata de una copia de un checkpoint original alojado en el repositorio Bytehome/Bytehome_TTS, subida para su uso con el código fuente del proyecto chatbot_voice, y no se realizó entrenamiento ni fine-tuning durante esta publicación.
 
 La arquitectura combina un backbone de tipo Qwen3 de 28 capas con tamaño oculto de 1024, un tokenizador de audio HiggsAudioV2TokenizerModel con 8 codebooks y un vocabulario de audio de 1025 tokens por codebook (incluyendo un MASK ID en la posición 1024). La salida de audio se genera a 24.000 Hz. El flujo de inferencia requiere obligatoriamente un audio de referencia y su transcripción para realizar la clonación de voz, y el modelo predice tokens de audio que el tokenizador decodifica a forma de onda.
 
@@ -75,12 +75,12 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 - Riesgo de alucinación y errores de pronunciación: la model card recomienda escuchar nombres propios, números, palabras en inglés y frases largas antes de desplegar.
 - Idiomas no verificados: el ejemplo usa vietnamita, pero no hay evaluación sistemática por idioma ni garantía de calidad multilingüe.
 - Sesgos: no documentados; al no conocerse los datos de entrenamiento no se pueden evaluar sesgos de género, acento o idioma.
-- Advertencia sobre despliegue: subir el checkpoint a HuggingFace no despliega ni actualiza automáticamente el modelo en producción; el servicio debe recargarse manualmente.
+- Advertencia sobre despliegue: subir el checkpoint a Hugging Face no despliega ni actualiza automáticamente el modelo en producción; el servicio debe recargarse manualmente.
 - Contexto: no disponible; se desconoce la longitud máxima de texto que el modelo puede procesar en una sola llamada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yurei24/Bytehome_TTS
-- Repositorio de origen citado en la model card: Bytehome/Bytehome_TTS en HuggingFace (revisión `ba3e9991d4843dacae4415bc09300d693913f112`)
+- Hugging Face: https://huggingface.co/yurei24/Bytehome_TTS
+- Repositorio de origen citado en la model card: Bytehome/Bytehome_TTS en Hugging Face (revisión `ba3e9991d4843dacae4415bc09300d693913f112`)
 - Commit de subida citado: `ef0a9cac92eeaff41a4c2aaf5a25dfd549776019`
 - Proyecto de código fuente citado: `chatbot_voice`, carpeta `AI_Service/tts_service/` (no enlazado en la información disponible)

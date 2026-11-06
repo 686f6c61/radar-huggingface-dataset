@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Yi-1.5-9B-MentorES-Destilado-v2 es un ajuste fino (fine-tuning) publicado por el usuario Denisijcu en HuggingFace, derivado del modelo base cuantizado a 4 bits unsloth/Yi-1.5-6B-bnb-4bit. A pesar del nombre comercial "9B" y de la etiqueta "MentorES-Destilado", los pesos reales en safetensors suman 6.061.035.520 parámetros, es decir, aproximadamente 6.000 millones, coherentes con la familia Yi-1.5-6B de 01.AI sobre la que se construye. El repositorio ocupa 3,9 GB y se distribuye bajo licencia Apache 2.0.
+Yi-1.5-9B-MentorES-Destilado-v2 es un ajuste fino (fine-tuning) publicado por el usuario Denisijcu en Hugging Face, derivado del modelo base cuantizado a 4 bits unsloth/Yi-1.5-6B-bnb-4bit. A pesar del nombre comercial "9B" y de la etiqueta "MentorES-Destilado", los pesos reales en safetensors suman 6.061.035.520 parámetros, es decir, aproximadamente 6.000 millones, coherentes con la familia Yi-1.5-6B de 01.AI sobre la que se construye. El repositorio ocupa 3,9 GB y se distribuye bajo licencia Apache 2.0.
 
-El modelo se presenta como un modelo de generación de texto en formato transformers, con pesos en safetensors y compatibilidad con text-generation-inference y endpoints. La model card es mínima: no documenta el proceso de ajuste fino, el conjunto de datos empleado, la metodología de destilación ni los hiperparámetros. El autor únicamente indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que sugiere un ajuste eficiente en memoria sobre el modelo base cuantizado.
+El modelo se presenta como un modelo de generación de texto en formato transformers, con pesos en safetensors y compatibilidad con text-generation-inference y endpoints. La model card es mínima: no documenta el proceso de ajuste fino, el conjunto de datos empleado, la metodología de destilación ni los hiperparámetros. El autor únicamente indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que sugiere un ajuste eficiente en memoria sobre el modelo base cuantizado.
 
 La relevancia de esta ficha es limitada por la escasez de documentación y por el hecho de que el repositorio no registra descargas ni interacciones en el momento de la consulta. Se trata, por tanto, de un modelo de nicho, probablemente experimental o de uso personal, cuya evaluación rigurosa requeriría pruebas directas de inferencia. El sufijo "MentorES" sugiere un propósito de asistencia o mentoría en castellano, pero la etiqueta de idioma declarada es únicamente inglés y no hay evidencia documental que respalde capacidades multilingües específicas.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Yi-1.5-9B-MentorES-Destilado-v2 | ~6B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajuste fino comunitario sin documentación |
-| Yi-1.5-6B (01.AI) | 6B | 4.096-32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| Qwen2.5-7B | 7B | 32.768 tokens (hasta 131.072) | Apache 2.0 | HuggingFace, muy extendido | Buen rendimiento en código y multilingüe |
-| Mistral-7B-v0.3 | 7B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido | Referencia en la categoría 7B |
+| Yi-1.5-9B-MentorES-Destilado-v2 | ~6B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste fino comunitario sin documentación |
+| Yi-1.5-6B (01.AI) | 6B | 4.096-32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| Qwen2.5-7B | 7B | 32.768 tokens (hasta 131.072) | Apache 2.0 | Hugging Face, muy extendido | Buen rendimiento en código y multilingüe |
+| Mistral-7B-v0.3 | 7B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido | Referencia en la categoría 7B |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Denisijcu/Yi-1.5-9B-MentorES-Destilado-v2
+- Hugging Face: https://huggingface.co/Denisijcu/Yi-1.5-9B-MentorES-Destilado-v2
 - Modelo base cuantizado: https://huggingface.co/unsloth/Yi-1.5-6B-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

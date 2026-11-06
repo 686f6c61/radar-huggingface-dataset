@@ -49,7 +49,7 @@ Dado que se trata de un adaptador LoRA entrenado con datos de conversación mult
 - **Investigación en fine-tuning selectivo**: el método `message_loss_mask` es útil para experimentos donde se desea controlar qué partes de la conversación influyen en el entrenamiento, por lo que este adaptador puede servir como referencia para estudios sobre SFT con enmascarado.
 - **Prototipado rápido**: al ser un adaptador pequeño (0.1 GB), se puede cargar fácilmente sobre el modelo base para probar mejoras conversacionales sin necesidad de entrenar un modelo completo.
 - **Evaluación de la técnica ps4mas**: el nombre sugiere una metodología específica (posiblemente "post-training for selective masked SFT"), por lo que puede usarse para validar la efectividad de esta técnica en comparación con SFT estándar.
-- **Integración en pipelines de PEFT**: dado que se carga con `PeftModel`, es compatible con flujos de trabajo existentes que utilicen la librería PEFT de HuggingFace.
+- **Integración en pipelines de PEFT**: dado que se carga con `PeftModel`, es compatible con flujos de trabajo existentes que utilicen la librería PEFT de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -81,5 +81,5 @@ No se dispone de información sobre modelos comparables específicos. Al ser un 
 
 ## Enlaces
 
-- [HuggingFace: yinita/ps4mas-sft-mt-glm52-9b](https://huggingface.co/yinita/ps4mas-sft-mt-glm52-9b)
+- [Hugging Face: yinita/ps4mas-sft-mt-glm52-9b](https://huggingface.co/yinita/ps4mas-sft-mt-glm52-9b)
 - [Modelo base: Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B) (enlace inferido, no verificado en la información proporcionada)

@@ -21,7 +21,7 @@ Es relevante ahora porque demuestra la viabilidad de exportar arquitecturas tran
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | GGUF, para el runtime transcribe.cpp |
 | Pipeline | automatic-speech-recognition |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modelo base | Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-All-Subsets |
 | DOI | 10.57967/hf/11102 |
 
@@ -36,7 +36,7 @@ El modelo base se denomina "All-Subsets", lo que sugiere un ajuste fino sobre m�
 - Transcripción automática de voz a texto en inglés y hebreo.
 - Reconocimiento de code-switching: cambios de idioma dentro de una misma frase o intervención, el caso de uso central del ajuste "All-Subsets".
 - Inferencia sobre CPU mediante el runtime transcribe.cpp y pesos GGUF, sin necesidad de GPU.
-- Compatibilidad con el pipeline `automatic-speech-recognition` de HuggingFace para integración en pipelines existentes.
+- Compatibilidad con el pipeline `automatic-speech-recognition` de Hugging Face para integración en pipelines existentes.
 - Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje generativo).
 - Soporte de agentes y razonamiento multi-paso: no aplica.
 - Capacidades de visión, audio-vision o thinking mode: no disponibles.
@@ -79,7 +79,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 - Artefacto sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de terceros sobre su calidad.
 - Ausencia total de benchmarks: no hay WER ni CER publicados en inglés, hebreo o code-switching, por lo que el rendimiento real es desconocido.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que complica la automatización de despliegues, la reproducibilidad y la integración en CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que complica la automatización de despliegues, la reproducibilidad y la integración en CI/CD.
 - Documentación mínima: no hay model card con detalles de entrenamiento, datos, tokenizador ni configuración de decodificación.
 - Cobertura lingüística limitada a inglés y hebreo; no está indicado el soporte de otros idiomas ni se ha evaluado el comportamiento con acentos no nativos.
 - Riesgo de alucinación típico de los sistemas ASR: inserción de texto en segmentos de silencio, ruido o solapamiento de hablantes, especialmente en material fuera de dominio.
@@ -90,7 +90,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hebrish/Sabich-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Hebrish/Sabich-GGUF
 - Modelo base: https://huggingface.co/Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-All-Subsets
 - DOI del repositorio: https://doi.org/10.57967/hf/11102
 - transcribe.cpp: runtime referenciado en las etiquetas del repositorio; no se ha encontrado URL en la información disponible.

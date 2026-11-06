@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Justbackup/phi-4
+- Hugging Face: https://huggingface.co/Justbackup/phi-4
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2412.08905
 - Repositorio de Microsoft (referencia): https://huggingface.co/microsoft/phi-4
 - Licencia MIT: https://huggingface.co/microsoft/phi-4/resolve/main/LICENSE

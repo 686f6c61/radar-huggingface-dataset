@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dunkun0531/act_so101_test` es un checkpoint de 51.668.614 parametros (unos 51,7 millones) publicado en HuggingFace por el usuario Dunkun0531. Segun los metadatos del repositorio, se creo el 5 de octubre de 2026 y se actualizo 21 segundos despues, ocupa 0,2 GB y contiene unicamente pesos en formato safetensors. No incluye model card, pipeline declarado, licencia, idiomas soportados ni documentacion tecnica de ningun tipo.
+`Dunkun0531/act_so101_test` es un checkpoint de 51.668.614 parametros (unos 51,7 millones) publicado en Hugging Face por el usuario Dunkun0531. Segun los metadatos del repositorio, se creo el 5 de octubre de 2026 y se actualizo 21 segundos despues, ocupa 0,2 GB y contiene unicamente pesos en formato safetensors. No incluye model card, pipeline declarado, licencia, idiomas soportados ni documentacion tecnica de ningun tipo.
 
 No hay informacion publica sobre la arquitectura, los datos de entrenamiento ni la tarea concreta para la que se entreno. El identificador incluye las cadenas "act" y "so101", y el sufijo "test" apunta a un artefacto de prueba, pero el autor no confirma ninguna de estas interpretaciones: son hipotesis no verificadas y no deben darse por validas sin inspeccionar el repositorio. La busqueda web realizada no ha devuelto papers, repositorios de codigo, blogs ni demos asociados al modelo.
 
@@ -94,7 +94,7 @@ No se han identificado modelos comparables en la informacion disponible. La busq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dunkun0531/act_so101_test
+- Repositorio en Hugging Face: https://huggingface.co/Dunkun0531/act_so101_test
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio del autor: no disponible

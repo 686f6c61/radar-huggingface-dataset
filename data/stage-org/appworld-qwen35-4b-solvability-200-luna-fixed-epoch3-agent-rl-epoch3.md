@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/appworld-qwen35-4b-solvability-200-luna-fixed-epoch3-agent-rl-epoch3 es un modelo de lenguaje de aproximadamente 4,54 mil millones de parámetros publicado en HuggingFace por la organización Stage-org. Por el identificador del repositorio y el tag de arquitectura (`qwen3_5`) se deduce que se trata de un ajuste fino sobre una base de la familia Qwen3.5 de 4B, entrenado mediante aprendizaje por refuerzo (RL) orientado a agentes sobre tareas de tipo AppWorld, según indican los segmentos `agent-rl` y `appworld` del nombre, así como el sufijo `epoch3`, que apunta a tres épocas de entrenamiento.
+Stage-org/appworld-qwen35-4b-solvability-200-luna-fixed-epoch3-agent-rl-epoch3 es un modelo de lenguaje de aproximadamente 4,54 mil millones de parámetros publicado en Hugging Face por la organización Stage-org. Por el identificador del repositorio y el tag de arquitectura (`qwen3_5`) se deduce que se trata de un ajuste fino sobre una base de la familia Qwen3.5 de 4B, entrenado mediante aprendizaje por refuerzo (RL) orientado a agentes sobre tareas de tipo AppWorld, según indican los segmentos `agent-rl` y `appworld` del nombre, así como el sufijo `epoch3`, que apunta a tres épocas de entrenamiento.
 
 El modelo no dispone de model card descriptiva: no se declaran licencia, idiomas, pipeline ni resultados de evaluación. El repositorio contiene únicamente pesos en formato safetensors (9,1 GB, compatible con pesos en bf16/fp16 para 4,54 B de parámetros) y acumula 70 descargas y 0 likes en el momento de la consulta. La fecha de creación y actualización es el 20 de septiembre de 2026.
 
@@ -78,7 +78,7 @@ Los datos de la columna de modelos alternativos proceden de la documentación p�
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| Stage-org/appworld-qwen35-4b-...-epoch3 | 4,54 B | No disponible | No disponible | No disponible | Safetensors en HuggingFace |
+| Stage-org/appworld-qwen35-4b-...-epoch3 | 4,54 B | No disponible | No disponible | No disponible | Safetensors en Hugging Face |
 | Qwen3-4B | ≈4,0 B | 32.768 tokens nativos, ampliable | Apache 2.0 | Benchmarks publicados por el autor | Safetensors, GGUF, cuantizaciones de terceros |
 | Llama 3.2 3B Instruct | 3,2 B | 128.000 tokens | Llama 3.2 Community License | Benchmarks publicados por el autor | Safetensors, GGUF |
 | Phi-4-mini-instruct | 3,8 B | 128.000 tokens | MIT | Benchmarks publicados por el autor | Safetensors, GGUF, ONNX |
@@ -99,6 +99,6 @@ La comparación directa de rendimiento no es posible: el modelo analizado no pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/appworld-qwen35-4b-solvability-200-luna-fixed-epoch3-agent-rl-epoch3
+- Hugging Face: https://huggingface.co/Stage-org/appworld-qwen35-4b-solvability-200-luna-fixed-epoch3-agent-rl-epoch3
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a portales de ofertas de prácticas y no guardan relación con el repositorio.
 - Paper, blog técnico, repositorio de código o demo: no disponibles.

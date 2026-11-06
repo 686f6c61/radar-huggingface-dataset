@@ -103,7 +103,7 @@ No se dispone de otros adaptadores publicados de medición de fuga de rasgos con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/n-deshpande/assistant-leakage-adapters
+- Modelo en Hugging Face: https://huggingface.co/n-deshpande/assistant-leakage-adapters
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Código y memoria del trabajo: https://github.com/niranjan-deshpande/sdf-training-quirks
 - Sitio de resultados: https://niranjan-deshpande.github.io/sdf-training-quirks/

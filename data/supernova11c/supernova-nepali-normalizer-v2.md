@@ -88,5 +88,5 @@ No se dispone de información sobre normalizadores nepalíes comparables en la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Supernova11c/Supernova-Nepali-Normalizer-V2
+- Modelo en Hugging Face: https://huggingface.co/Supernova11c/Supernova-Nepali-Normalizer-V2
 - Dataset referenciado: https://huggingface.co/datasets/Supernova11c/Supernova-teraillm

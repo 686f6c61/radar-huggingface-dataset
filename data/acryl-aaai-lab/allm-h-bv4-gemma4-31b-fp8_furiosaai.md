@@ -6,7 +6,7 @@ ALLM.H-Bv4-Gemma4-31B-FP8_FuriosaAI es una versión cuantizada en FP8 del modelo
 
 La variante aquí descrita aplica cuantización FP8 mediante las librerías `compressed-tensors` y `llm-compressor`, y esta optimizada para su despliegue en hardware FuriosaAI (aceleradores NPU de la compania surcoreana). Con 31.273.088.876 parámetros (~31,3 B) y un repositorio de 33,3 GB, el modelo mantiene el pipeline `image-text-to-text`, lo que indica capacidades multimodales heredadas de la arquitectura Gemma 4.
 
-Su relevancia actual radica en tres factores: la escasez de modelos médicos abiertos con licencia permisiva y soporte multilingüe coreano-inglés, la existencia de una versión cuantizada lista para producción en aceleradores no-GPU, y la trazabilidad de un linaje claro (Gemma 4 → BF16 → FP8). El acceso esta restringido (gated) y requiere aceptar las condiciones de la licencia Gemma en HuggingFace.
+Su relevancia actual radica en tres factores: la escasez de modelos médicos abiertos con licencia permisiva y soporte multilingüe coreano-inglés, la existencia de una versión cuantizada lista para producción en aceleradores no-GPU, y la trazabilidad de un linaje claro (Gemma 4 → BF16 → FP8). El acceso esta restringido (gated) y requiere aceptar las condiciones de la licencia Gemma en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: NVIDIA A100 80 GB, H100 80 GB, L40S 48 GB o multiples RTX 4090/5090 con tensor parallelism para la variante FP8.
 - Aceleradores objetivo: NPU de FuriosaAI (el sufijo del repositorio indica adaptacion especifica a este hardware).
 - Cabe en GPU consumer: no de forma directa en una unica tarjeta de 24 GB; requeriria cuantizaciones adicionales (GGUF/AWQ) no publicadas en este repositorio.
-- Opciones de despliegue: transformers con `compressed-tensors`; vLLM, TGI, llama.cpp u Ollama no estan confirmados en la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers con `compressed-tensors`; vLLM, TGI, llama.cpp u Ollama no estan confirmados en la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ALLM.H-Bv4-Gemma4-31B-FP8_FuriosaAI | ~31,3 B | no disponible | imagen-texto | gemma | gated en HuggingFace |
-| ALLM.H-Bv4-Gemma4-31B-BF16_FuriosaAI (modelo base) | ~31,3 B | no disponible | imagen-texto | gemma | gated en HuggingFace |
-| Gemma 4 (modelo generalista de Google) | no disponible | no disponible | multimodal | gemma | publico en HuggingFace |
+| ALLM.H-Bv4-Gemma4-31B-FP8_FuriosaAI | ~31,3 B | no disponible | imagen-texto | gemma | gated en Hugging Face |
+| ALLM.H-Bv4-Gemma4-31B-BF16_FuriosaAI (modelo base) | ~31,3 B | no disponible | imagen-texto | gemma | gated en Hugging Face |
+| Gemma 4 (modelo generalista de Google) | no disponible | no disponible | multimodal | gemma | publico en Hugging Face |
 | Meditron / Med42 (modelos médicos abiertos) | no disponible | no disponible | texto | variable | publico |
 
 La comparacion cuantitativa con alternativas medicas abiertas no es posible con los datos disponibles; la ventaja diferencial de este modelo es su especializacion en el KMLE y el coreano médico, junto con el empaquetado FP8 para FuriosaAI.
@@ -86,7 +86,7 @@ La comparacion cuantitativa con alternativas medicas abiertas no es posible con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/acryl-aaai-lab/ALLM.H-Bv4-Gemma4-31B-FP8_FuriosaAI
+- Hugging Face: https://huggingface.co/acryl-aaai-lab/ALLM.H-Bv4-Gemma4-31B-FP8_FuriosaAI
 - Modelo base BF16: https://huggingface.co/acryl-aaai-lab/ALLM.H-Bv4-Gemma4-31B-BF16_FuriosaAI
 - Organizacion acryl-aaai-lab: https://huggingface.co/acryl-aaai-lab
 - FuriosaAI: https://furiosa.ai

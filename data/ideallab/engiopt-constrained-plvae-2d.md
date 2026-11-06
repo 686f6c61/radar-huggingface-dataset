@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables dentro del mismo dominio
 
 ## Enlaces
 
-- [HuggingFace: IDEALLab/engiopt-constrained-plvae-2d](https://huggingface.co/IDEALLab/engiopt-constrained-plvae-2d)
+- [Hugging Face: IDEALLab/engiopt-constrained-plvae-2d](https://huggingface.co/IDEALLab/engiopt-constrained-plvae-2d)
 - [GitHub: IDEALLab/EngiOpt](https://github.com/IDEALLab/EngiOpt)
 - [Notebook de ejemplo en Colab](https://colab.research.google.com/github/IDEALLab/EngiOpt/blob/main/example_easy_model.ipynb)

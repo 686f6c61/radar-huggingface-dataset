@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SambitPrusty04/rice-cnn-model` es un clasificador de imágenes basado en redes neuronales convolucionales (CNN) publicado en HuggingFace por el usuario SambitPrusty04. Su propósito es la clasificación de variedades de arroz a partir de imágenes, una tarea típica en agricultura de precisión y control de calidad. La información pública disponible es extremadamente limitada: la model card solo contiene la licencia MIT, sin descripción de arquitectura, datos de entrenamiento, métricas o ejemplos de uso. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos no están subidos o que el modelo es de tamaño muy reducido. No se dispone de detalles sobre el número de parámetros, la arquitectura exacta, el contexto o los idiomas soportados. A pesar de la falta de documentación, el nombre del modelo y los resultados de búsqueda asociados indican que se trata de un clasificador de imágenes de granos de arroz, probablemente entrenado sobre el conocido dataset de cinco variedades (Arborio, Basmati, Ipsala, Jasmine y Karacadag). Su relevancia actual radica en la creciente demanda de soluciones de visión por computadora para la agroindustria, aunque sin más información no es posible evaluar su rendimiento ni su utilidad práctica.
+El modelo `SambitPrusty04/rice-cnn-model` es un clasificador de imágenes basado en redes neuronales convolucionales (CNN) publicado en Hugging Face por el usuario SambitPrusty04. Su propósito es la clasificación de variedades de arroz a partir de imágenes, una tarea típica en agricultura de precisión y control de calidad. La información pública disponible es extremadamente limitada: la model card solo contiene la licencia MIT, sin descripción de arquitectura, datos de entrenamiento, métricas o ejemplos de uso. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos no están subidos o que el modelo es de tamaño muy reducido. No se dispone de detalles sobre el número de parámetros, la arquitectura exacta, el contexto o los idiomas soportados. A pesar de la falta de documentación, el nombre del modelo y los resultados de búsqueda asociados indican que se trata de un clasificador de imágenes de granos de arroz, probablemente entrenado sobre el conocido dataset de cinco variedades (Arborio, Basmati, Ipsala, Jasmine y Karacadag). Su relevancia actual radica en la creciente demanda de soluciones de visión por computadora para la agroindustria, aunque sin más información no es posible evaluar su rendimiento ni su utilidad práctica.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - SambitPrusty04/rice-cnn-model](https://huggingface.co/SambitPrusty04/rice-cnn-model)
+- [Hugging Face - SambitPrusty04/rice-cnn-model](https://huggingface.co/SambitPrusty04/rice-cnn-model)
 - No se han encontrado otros enlaces directos al modelo (papers, blogs, repositorios de código) en la búsqueda web.

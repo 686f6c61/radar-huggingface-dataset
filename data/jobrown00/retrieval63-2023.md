@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jobrown00/retrieval63-2023 es un repositorio de HuggingFace que contiene una implementacion propia y compacta de BEiT orientada a tareas de retrieval (recuperacion de informacion), publicada bajo licencia MIT. Se trata de un checkpoint de inicializacion, no de un modelo entrenado: la propia model card indica que `model.safetensors` es "una inicializacion valida para smoke tests" y que no se presenta como un checkpoint con benchmarks. El repositorio incluye el script `train.py`, un `config.json` con la arquitectura generada y un `training_args.json` con la receta de experimento por defecto.
+Jobrown00/retrieval63-2023 es un repositorio de Hugging Face que contiene una implementacion propia y compacta de BEiT orientada a tareas de retrieval (recuperacion de informacion), publicada bajo licencia MIT. Se trata de un checkpoint de inicializacion, no de un modelo entrenado: la propia model card indica que `model.safetensors` es "una inicializacion valida para smoke tests" y que no se presenta como un checkpoint con benchmarks. El repositorio incluye el script `train.py`, un `config.json` con la arquitectura generada y un `training_args.json` con la receta de experimento por defecto.
 
 El peso real del checkpoint es de 33.088 parametros (segun los metadatos de safetensors), lo que lo situa en un orden de magnitud muy inferior al de cualquier modelo de retrieval de produccion. La configuracion declarada es de escala "small", con atencion dispersa (sparse), fusion por co-atencion (co attention), activacion swish y normalizacion scalenorm. El tamano del repositorio es de 0.0 GB y el modelo no registra descargas ni likes en el momento de la consulta.
 
@@ -78,7 +78,7 @@ No hay datos de rendimiento publicados que permitan una comparacion cuantitativa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jobrown00/retrieval63-2023 | 33.088 | no disponible | no disponible (sin benchmark reclamado) | MIT | HuggingFace, checkpoint de inicializacion |
+| Jobrown00/retrieval63-2023 | 33.088 | no disponible | no disponible (sin benchmark reclamado) | MIT | Hugging Face, checkpoint de inicializacion |
 | BEiT (implementacion de referencia) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Modelos de retrieval cross-modal tipo CLIP | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -100,5 +100,5 @@ Nota: este repositorio no compite con modelos de retrieval entrenados; su propos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jobrown00/retrieval63-2023
+- Hugging Face: https://huggingface.co/Jobrown00/retrieval63-2023
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan relacion con el modelo. Corresponden a sitios comerciales de Toyota (https://www.toyota.com/, https://www.toyota.at/, https://www.toyota.at/neuwagen, https://www.autoscout24.at/auto/toyota/, https://www.gebrauchtwagen.at/angebote/toyota) y no aportan informacion tecnica utilizable. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la informacion disponible.

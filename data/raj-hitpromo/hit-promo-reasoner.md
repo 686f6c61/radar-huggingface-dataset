@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`raj-hitpromo/hit-promo-reasoner` es un modelo de lenguaje de 3.836.021.760 parametros (unos 3,84 mil millones) publicado por el usuario `raj-hitpromo` en HuggingFace. Se trata de un ajuste QLoRA sobre `microsoft/Phi-4-mini-reasoning` cuyos adaptadores se han fusionado en un unico juego de pesos (etiqueta `merged`), de ahi que el repositorio contenga el modelo completo en formato safetensors (7,7 GB) y no un adaptador separado. La arquitectura es un transformer decoder-only denso de la familia phi3, orientado a generacion de texto y razonamiento.
+`raj-hitpromo/hit-promo-reasoner` es un modelo de lenguaje de 3.836.021.760 parametros (unos 3,84 mil millones) publicado por el usuario `raj-hitpromo` en Hugging Face. Se trata de un ajuste QLoRA sobre `microsoft/Phi-4-mini-reasoning` cuyos adaptadores se han fusionado en un unico juego de pesos (etiqueta `merged`), de ahi que el repositorio contenga el modelo completo en formato safetensors (7,7 GB) y no un adaptador separado. La arquitectura es un transformer decoder-only denso de la familia phi3, orientado a generacion de texto y razonamiento.
 
 El modelo resuelve un problema muy concreto: las preguntas que un comercial o un distribuidor hace mientras presupuesta un pedido de producto promocional (cuanto cuesta una tirada de 2.500 unidades, que tamano tiene el area de estampacion, si se puede cumplir un plazo de 14 dias, si un pedido por debajo del minimo es admisible). No funciona como buscador de catalogo autonomo: el pipeline debe recuperar las filas de producto y los fragmentos de politica pertinentes e inyectarlos en el contexto, y el modelo razona sobre ellos antes de responder.
 
-Es relevante ahora porque ejemplifica el patron de especializacion vertical mediante QLoRA sobre un modelo base abierto con licencia MIT, con un cuidado metodologico poco habitual en ajustes de nicho: particionado agrupado por `source_id` para evitar fuga de informacion entre variantes del mismo producto y generacion de ejemplos solo cuando la respuesta era derivable del registro fuente. El contrapunto es que el modelo tiene 0 descargas y 0 likes, esta marcado con `inference: false` (sin inferencia alojada en HuggingFace) y su ficha no declara idiomas soportados.
+Es relevante ahora porque ejemplifica el patron de especializacion vertical mediante QLoRA sobre un modelo base abierto con licencia MIT, con un cuidado metodologico poco habitual en ajustes de nicho: particionado agrupado por `source_id` para evitar fuga de informacion entre variantes del mismo producto y generacion de ejemplos solo cuando la respuesta era derivable del registro fuente. El contrapunto es que el modelo tiene 0 descargas y 0 likes, esta marcado con `inference: false` (sin inferencia alojada en Hugging Face) y su ficha no declara idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -103,7 +103,7 @@ Estas cifras miden el ajuste al dominio de HIT, no la calidad general del modelo
 - Cabe en GPU de consumo: si. En 4 bits cabe en tarjetas de 8 GB; en 8 bits, en 10-12 GB; en bfloat16, en 12 GB o mas con contexto moderado y lotes pequenos (por ejemplo RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 3090, RTX 4090).
 - GPU de centro de datos recomendadas: A100 40 GB u 80 GB, H100, L40S, A10G, L4. Para un modelo de 3,84B son sobredimensionadas salvo que se busque throughput muy alto o lotes grandes.
 - Opciones de despliegue: `transformers` (ruta indicada por el autor con `dtype="bfloat16"` y `device_map="auto"`), vLLM, TGI y SGLang para servicio con lotes; llama.cpp y Ollama requieren convertir previamente los pesos a GGUF, ya que el repositorio solo publica safetensors.
-- La inferencia alojada en HuggingFace esta desactivada (`inference: false`), por lo que hay que desplegarlo en infraestructura propia.
+- La inferencia alojada en Hugging Face esta desactivada (`inference: false`), por lo que hay que desplegarlo en infraestructura propia.
 - La ruta de servicio debe aplicar el `SYSTEM_PROMPT` del proyecto (referenciado en `hit_model/data/templates.py`), que contiene las reglas de precios NET y de anclaje documental contra las que se entreno el modelo.
 - Latencia y throughput estimados: no disponible.
 
@@ -111,8 +111,8 @@ Estas cifras miden el ajuste al dominio de HIT, no la calidad general del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `raj-hitpromo/hit-promo-reasoner` | 3,84B | No disponible en la informacion proporcionada (entrenado a 4.096 tokens) | MIT | HuggingFace, 0 descargas, `inference: false` | Ajuste de dominio sobre catalogo y politicas de HIT Promotional Products |
-| `microsoft/Phi-4-mini-reasoning` | 3,84B (mismo modelo base) | No disponible en la informacion proporcionada | MIT | HuggingFace | Modelo base de razonamiento general; no conoce el catalogo ni las politicas de HIT |
+| `raj-hitpromo/hit-promo-reasoner` | 3,84B | No disponible en la informacion proporcionada (entrenado a 4.096 tokens) | MIT | Hugging Face, 0 descargas, `inference: false` | Ajuste de dominio sobre catalogo y politicas de HIT Promotional Products |
+| `microsoft/Phi-4-mini-reasoning` | 3,84B (mismo modelo base) | No disponible en la informacion proporcionada | MIT | Hugging Face | Modelo base de razonamiento general; no conoce el catalogo ni las politicas de HIT |
 | Otros modelos de 3-4B de la misma categoria | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 La comparacion relevante es contra el modelo base: este ajuste no anade parametros, sino conocimiento de dominio (catalogo, tramos de precio, politicas de pedido) y un comportamiento de abtencion cuando no hay registro en el contexto. Frente a modelos generalistas del mismo tamano, la ventaja es la especializacion; la desventaja es que no hay evidencia publica de su rendimiento en tareas generales ni benchmarks que permitan situarlo.
@@ -133,7 +133,7 @@ La comparacion relevante es contra el modelo base: este ajuste no anade parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raj-hitpromo/hit-promo-reasoner
+- Modelo en Hugging Face: https://huggingface.co/raj-hitpromo/hit-promo-reasoner
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-reasoning
 - Documentacion interna del proyecto referenciada en la ficha: `MODEL_BUILD.md` (metodo completo de construccion) y `hit_model/data/templates.py` (constante `SYSTEM_PROMPT`), dentro del propio repositorio.
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos correspondian a terminos homonimos sin relacion (British Raj, asociaciones locales de animacion juvenil en Francia y paginas de desambiguacion del termino "Raj").

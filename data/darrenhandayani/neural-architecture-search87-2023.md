@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `darrenhandayani`, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas exploratorias sobre Neural Architecture Search (NAS). Según la model card, el repositorio documenta el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y una propuesta de comparación con líneas base, todo ello antes de que se reporte ningún resultado de benchmark. El autor es explícito al afirmar que no se incluyen mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado.
+Este repositorio de Hugging Face, publicado por el usuario `darrenhandayani`, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas exploratorias sobre Neural Architecture Search (NAS). Según la model card, el repositorio documenta el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y una propuesta de comparación con líneas base, todo ello antes de que se reporte ningún resultado de benchmark. El autor es explícito al afirmar que no se incluyen mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado.
 
 El repositorio contiene únicamente dos archivos: `summary.md` (el artefacto principal) y `README.md` (esta documentación). El peso registrado en safetensors es de 33.088 parámetros, una cifra insignificante que sugiere que no hay pesos reales de red neuronal, y el tamaño total del repositorio es de 0.0 GB. Por tanto, no es un modelo utilizable para inferencia ni para fine-tuning; es material de referencia para investigadores interesados en NAS.
 
@@ -65,8 +65,8 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros siste
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darrenhandayani/neural-architecture-search87-2023
+- Repositorio en Hugging Face: https://huggingface.co/darrenhandayani/neural-architecture-search87-2023
 - Paper de referencia sobre NAS (no del autor, pero citado en la busqueda): https://arxiv.org/abs/2301.08727
 - Version HTML del mismo paper: https://ar5iv.labs.arxiv.org/html/2301.08727
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2301.08727
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2301.08727
 - Articulo de Wikipedia sobre NAS: https://en.wikipedia.org/wiki/Neural_architecture_search

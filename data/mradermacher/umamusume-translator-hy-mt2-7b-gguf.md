@@ -78,7 +78,7 @@ La comparativa es limitada porque no hay datos de rendimiento ni de licencia par
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/umamusume-translator-hy-mt2-7b-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/umamusume-translator-hy-mt2-7b-GGUF
 - Modelo base (Mario51): https://huggingface.co/Mario51/umamusume-translator-hy-mt2-7b
 - Repositorio oficial de Hy-MT2 en GitHub: https://github.com/Tencent-Hunyuan/Hy-MT2
 - Página de Hy-MT2 en Ollama: https://ollama.com/maternion/hy-mt2

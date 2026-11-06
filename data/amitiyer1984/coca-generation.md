@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio amitiyer1984/coca-generation es una implementación experimental de la arquitectura Coca orientada a tareas de generación, publicada por el usuario amitiyer1984 en HuggingFace. El proyecto se presenta como código transparente con pruebas de humo reproducibles, configurado bajo una etiqueta de escala "giant", pero su checkpoint real contiene unicamente 33.088 parametros segun los metadatos de safetensors, lo que lo situa muy lejos de cualquier modelo de gran escala. El autor indica de forma explicita que no se reclaman resultados de benchmarks y que el checkpoint incluido es una inicializacion valida para pruebas de humo, no un modelo entrenado.
+El repositorio amitiyer1984/coca-generation es una implementación experimental de la arquitectura Coca orientada a tareas de generación, publicada por el usuario amitiyer1984 en Hugging Face. El proyecto se presenta como código transparente con pruebas de humo reproducibles, configurado bajo una etiqueta de escala "giant", pero su checkpoint real contiene unicamente 33.088 parametros segun los metadatos de safetensors, lo que lo situa muy lejos de cualquier modelo de gran escala. El autor indica de forma explicita que no se reclaman resultados de benchmarks y que el checkpoint incluido es una inicializacion valida para pruebas de humo, no un modelo entrenado.
 
 Los ficheros del repositorio son `model.py` (artefacto principal con la implementacion y un ejemplo ejecutable), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion) y el propio `README.md`. La relevancia de esta ficha es documental y didactica: sirve para identificar repositorios de investigacion que publican arquitecturas personalizadas sin pesos entrenados, y para advertir de que no debe confundirse un repositorio de codigo con un modelo listo para evaluacion o produccion.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amitiyer1984/coca-generation | 33.088 | no disponible | sin benchmarks (no entrenado) | MIT | HuggingFace (repo experimental) |
+| amitiyer1984/coca-generation | 33.088 | no disponible | sin benchmarks (no entrenado) | MIT | Hugging Face (repo experimental) |
 | Modelos tipo Coca de referencia (por ejemplo, CoCa de Google) | no disponible en la informacion | no disponible | no disponible | no disponible | paper/repositorios publicos, no comparable directamente |
-| Repositorios de arquitecturas de investigacion sin pesos entrenados | variable | no disponible | no disponible | variable | HuggingFace |
+| Repositorios de arquitecturas de investigacion sin pesos entrenados | variable | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria. La comparacion se limita a la naturaleza del repositorio (codigo y checkpoint de inicializacion frente a modelos entrenados).
 
@@ -83,4 +83,4 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amitiyer1984/coca-generation
+- Hugging Face: https://huggingface.co/amitiyer1984/coca-generation

@@ -85,6 +85,6 @@ Frente a Whisper, los modelos Vosk small son mucho más ligeros y rápidos en CP
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZOKHID/univoice-vosk
+- Repositorio Hugging Face: https://huggingface.co/ZOKHID/univoice-vosk
 - Modelos oficiales Vosk: https://alphacephei.com/vosk/models
 - Proyecto Vosk (Alpha Cephei): https://github.com/alphacep/vosk-api

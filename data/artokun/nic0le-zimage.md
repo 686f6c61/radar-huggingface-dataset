@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - **VRAM estimada**: no disponible. Como LoRA sobre un modelo de difusion de ~8B de parametros, se recomienda al menos 12-16 GB de VRAM para inferencia con el modelo base en bf16. La cuantizacion del modelo base (qfloat8) usada en el entrenamiento puede reducir los requisitos.
 - **GPU recomendadas**: tarjetas con al menos 16 GB de VRAM, como NVIDIA RTX 4080/4090, A100, H100 o similares. En tarjetas con menos VRAM, se puede usar cuantizacion adicional o el despliegue en servicios de inferencia en la nube.
 - **Consumer GPU**: posiblemente en una RTX 4090 (24 GB) o similar, pero con limitaciones de memoria para el modelo base completo. Para uso en ComfyUI, se recomienda tener suficiente VRAM para cargar el modelo base y el LoRA.
-- **Opciones de despliegue**: ComfyUI, difusores de HuggingFace, y otros entornos que soporten LoRA en modelos de difusion. No se menciona compatibilidad con vLLM, TGI o llama.cpp, ya que es un modelo de imagenes, no de texto.
+- **Opciones de despliegue**: ComfyUI, difusores de Hugging Face, y otros entornos que soporten LoRA en modelos de difusion. No se menciona compatibilidad con vLLM, TGI o llama.cpp, ya que es un modelo de imagenes, no de texto.
 - **Latencia y rendimiento**: no disponible. Z-Image Turbo esta disenado para pocos pasos (~6), lo que sugiere una inferencia relativamente rapida, pero no se proporcionan datos concretos.
 
 ## Comparativa con modelos similares
@@ -67,13 +67,13 @@ Este LoRA es una adaptacion especifica para el modelo Z-Image Turbo. Su unico mo
 - **Dataset limitado**: el LoRA se entreno con solo 19 imagenes, lo que puede limitar la generalizacion del personaje a poses, estilos o escenarios muy variados. El riesgo de sobreajuste al conjunto de entrenamiento es alto.
 - **Sesgo del personaje**: el modelo solo conoce un personaje concreto (`nic0le`). No es util para generar otros personajes o estilos generales.
 - **Riesgo de alucinacion visual**: como cualquier modelo de generacion de imagenes, puede producir artefactos, rostros deformes o detalles inconsistentes, especialmente en configuraciones no vistas en el entrenamiento.
-- **Restricciones de licencia**: la licencia del modelo no esta disponible, por lo que no se puede confirmar si el uso comercial esta permitido. Se recomienda consultar la licencia del modelo base `Z-Image-Turbo` y la politica de uso de HuggingFace.
+- **Restricciones de licencia**: la licencia del modelo no esta disponible, por lo que no se puede confirmar si el uso comercial esta permitido. Se recomienda consultar la licencia del modelo base `Z-Image-Turbo` y la politica de uso de Hugging Face.
 - **Advertencia de VRAM**: cargar el LoRA junto con otro modelo grande (como Krea 2 o Flux) en el mismo grafo de ComfyUI puede causar corrupcion de pesos y salidas NaN. Se recomienda liberar VRAM entre cargas de modelos.
 - **Dependencia del modelo base**: este LoRA no es util sin el modelo base `Tongyi-MAI/Z-Image-Turbo`, que debe cargarse por separado.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: artokun/nic0le-zimage](https://huggingface.co/artokun/nic0le-zimage)
+- [Modelo en Hugging Face: artokun/nic0le-zimage](https://huggingface.co/artokun/nic0le-zimage)
 - [Modelo base: Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)
 - [LoRA companion: artokun/nic0le-krea2](https://huggingface.co/artokun/nic0le-krea2)
 - [Herramienta de entrenamiento: ostris/ai-toolkit](https://github.com/ostris/ai-toolkit)

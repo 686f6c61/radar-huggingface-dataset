@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/hin_deva_100mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un transformer decoder-only de arquitectura GPT-2 con 124.770.816 parametros (unos 125 M), almacenado en safetensors y con un repositorio de 0,3 GB. El entrenamiento se realizo con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1.
+El modelo `hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/hin_deva_100mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un transformer decoder-only de arquitectura GPT-2 con 124.770.816 parametros (unos 125 M), almacenado en safetensors y con un repositorio de 0,3 GB. El entrenamiento se realizo con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1.
 
 El nombre del checkpoint sugiere un experimento de investigacion: el prefijo del modelo base (`hin_deva`) corresponde a la convencion de los modelos Goldfish, que identifican idioma (hindi) y escritura (devanagari), mientras que los sufijos (`ppt`, `100mb packed`, `bfd`, `seed10`) apuntan a variantes de tokenizacion y empaquetado del corpus de entrenamiento. La ejecucion de entrenamiento esta registrada en un proyecto de Weights & Biases denominado `new-tokenizers`, asociado a la Universidad de Groningen, lo que refuerza la hipotesis de que se trata de un artefacto de investigacion mas que de un modelo listo para produccion.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada fuera del ambito academico: acumula 0 descargas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), etiquetada como `gpt2` en HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), etiquetada como `gpt2` en Hugging Face |
 | Parametros totales | 124.770.816 (aproximadamente 125 M) |
 | Parametros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | No disponible |
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| `francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed10` | 124.770.816 | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| `goldfish-models/hin_deva_100mb` (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace (organizacion Goldfish) | No disponible |
+| `francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed10` | 124.770.816 | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| `goldfish-models/hin_deva_100mb` (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face (organizacion Goldfish) | No disponible |
 | GPT-2 de OpenAI (referencia de la misma arquitectura) | 124 M en su variante pequena | 1024 tokens en la variante original | Publica para la variante original | Ampliamente distribuido | No comparable directamente por idioma y datos de entrenamiento |
 
 La comparacion cuantitativa con alternativas de la misma categoria no puede completarse: no hay resultados de benchmarks publicados para este checkpoint ni datos de contexto y licencia del modelo base en la informacion disponible. Como referencia de escala, un modelo de 125 M de parametros esta muy por debajo de los modelos actuales de 1 B a 8 B que se usan habitualmente para generacion de texto en hindi.
@@ -85,7 +85,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no puede comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/118a0vjo
 - Repositorio de TRL: https://github.com/huggingface/trl

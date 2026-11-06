@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BoLuo0216/prompt-engineering-notes no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre ingeniería de prompts publicado en HuggingFace. El propio autor lo describe explícitamente como una nota exploratoria que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de que exista cualquier resultado experimental. El repositorio declara no contener ablaciones completas, ni código liberado, ni checkpoint entrenado, y advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
+BoLuo0216/prompt-engineering-notes no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre ingeniería de prompts publicado en Hugging Face. El propio autor lo describe explícitamente como una nota exploratoria que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de que exista cualquier resultado experimental. El repositorio declara no contener ablaciones completas, ni código liberado, ni checkpoint entrenado, y advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
 
-Los metadatos de HuggingFace incluyen las etiquetas `safetensors`, `transformer` y `research-notes`, y un recuento de parámetros de 24.832 obtenido de ficheros safetensors. Sin embargo, la model card no documenta ninguna arquitectura, ningún proceso de entrenamiento ni ninguna capacidad de inferencia, y el tamaño del repositorio es de 0,0 GB, por lo que no hay pesos sustanciales descargables. El valor de 24.832 parámetros es, en la práctica, incompatible con un transformer funcional y apunta a un artefacto de metadatos o a un tensor auxiliar.
+Los metadatos de Hugging Face incluyen las etiquetas `safetensors`, `transformer` y `research-notes`, y un recuento de parámetros de 24.832 obtenido de ficheros safetensors. Sin embargo, la model card no documenta ninguna arquitectura, ningún proceso de entrenamiento ni ninguna capacidad de inferencia, y el tamaño del repositorio es de 0,0 GB, por lo que no hay pesos sustanciales descargables. El valor de 24.832 parámetros es, en la práctica, incompatible con un transformer funcional y apunta a un artefacto de metadatos o a un tensor auxiliar.
 
 Su relevancia actual es metodológica, no técnica: sirve como ejemplo de plantilla de pre-registro para experimentos con prompts, insistiendo en que cualquier resultado futuro debería acompañarse de versiones de dataset, comandos, semillas, hardware y registros en bruto. Para un desarrollador que busque un modelo para desplegar, este repositorio no aporta nada utilizable.
 
@@ -23,7 +23,7 @@ Su relevancia actual es metodológica, no técnica: sirve como ejemplo de planti
 
 ## Arquitectura y entrenamiento
 
-No se documenta ninguna arquitectura. La etiqueta `transformer` figura en los metadatos de HuggingFace, pero la model card no describe capas, mecanismos de atención, tipo de tokenizador ni configuración de modelo alguna. No existe información sobre número de tokens de entrenamiento, composición del dataset, fases de ajuste (SFT, RLHF, DPO) ni innovaciones técnicas como decodificación especulativa o atención lineal.
+No se documenta ninguna arquitectura. La etiqueta `transformer` figura en los metadatos de Hugging Face, pero la model card no describe capas, mecanismos de atención, tipo de tokenizador ni configuración de modelo alguna. No existe información sobre número de tokens de entrenamiento, composición del dataset, fases de ajuste (SFT, RLHF, DPO) ni innovaciones técnicas como decodificación especulativa o atención lineal.
 
 El repositorio es, según su propia descripción, un artefacto de planificación científica: enumera el alcance de la pregunta de investigación, propone una comparación con baselines emparejados, menciona benchmarks públicos adecuados a la tarea y exige comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No hay ningún proceso de entrenamiento ejecutado ni evidencia de que se haya llevado a cabo. Los ficheros declarados son únicamente `notes.md` y `README.md`.
 
@@ -75,5 +75,5 @@ No disponible. El objeto no es un modelo de lenguaje sino un repositorio de nota
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BoLuo0216/prompt-engineering-notes
+- Hugging Face: https://huggingface.co/BoLuo0216/prompt-engineering-notes
 - No se han encontrado en la búsqueda web enlaces relevantes al repositorio, a papers asociados, a blogs del autor ni a demos. Los resultados devueltos corresponden a páginas de Microsoft y no están relacionados con el objeto de esta ficha.

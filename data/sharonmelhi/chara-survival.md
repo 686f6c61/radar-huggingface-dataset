@@ -73,7 +73,7 @@ Se comparan con modelos de supervivencia estándar en transcriptómica:
 |---|---|---|---|---|---|
 | Unadjusted Cox | Cox PH sobre genes completos | Ninguno | 0.512 | - | Implementación propia |
 | ComBat harmonization + Cox | Cox PH tras armonización | ComBat | 0.639 | - | Implementación propia |
-| Chara (este modelo) | Coxnet + Graph Laplacian termodinámico | Diffusión de calor | 0.731 | MIT | HuggingFace, PyPI |
+| Chara (este modelo) | Coxnet + Graph Laplacian termodinámico | Diffusión de calor | 0.731 | MIT | Hugging Face, PyPI |
 
 El modelo Chara supera en todas las cohortes a las alternativas tradicionales, con mejoras de c-index entre +0.219 y +0.263. No hay otros modelos de supervivencia basados en Graph Laplacian termodinámico en el ecosistema de Hugging Face disponibles en la información proporcionada.
 
@@ -167,7 +167,7 @@ En los metadatos de Hugging Face se citan además Brier score y AUC dependiente 
 | ComBat + Cox | Cox PH | Armonización ComBat | 0.639 | MIT | Implementación propia |
 | Chara (este) | CoxPH + Graph Laplacian termodinámico | Difusión de calor | 0.731 | MIT | Hugging Face, PyPI, GitHub |
 
-No se han encontrado otros modelos de supervivencia con Graph Laplacian termodinámico en el ecosistema de HuggingFace en la información disponible.
+No se han encontrado otros modelos de supervivencia con Graph Laplacian termodinámico en el ecosistema de Hugging Face en la información disponible.
 
 ## Limitaciones y advertencias
 

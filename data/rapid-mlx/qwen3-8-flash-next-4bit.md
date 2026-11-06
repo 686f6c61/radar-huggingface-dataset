@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 125B (6B activos) | 262K | qwen-community-1 | HuggingFace |
-| rapid-mlx/Qwen3.8-Flash-Next-4bit | 29.85B en safetensors | 262K (heredado) | Apache-2.0 | HuggingFace |
-| Sawfwair/Qwen3.8-Flash-Next-MLX-4bit | no disponible | no disponible | qwen-community-1 | HuggingFace |
+| Qwen3.8-Flash-Next (base) | 125B (6B activos) | 262K | qwen-community-1 | Hugging Face |
+| rapid-mlx/Qwen3.8-Flash-Next-4bit | 29.85B en safetensors | 262K (heredado) | Apache-2.0 | Hugging Face |
+| Sawfwair/Qwen3.8-Flash-Next-MLX-4bit | no disponible | no disponible | qwen-community-1 | Hugging Face |
 
 La comparativa se limita a las conversiones MLX del mismo modelo base. No se dispone de datos de rendimiento para establecer una comparacion cuantitativa.
 
@@ -76,7 +76,7 @@ La comparativa se limita a las conversiones MLX del mismo modelo base. No se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rapid-mlx/Qwen3.8-Flash-Next-4bit
+- Modelo en Hugging Face: https://huggingface.co/rapid-mlx/Qwen3.8-Flash-Next-4bit
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio Rapid-MLX: https://github.com/raullenchai/Rapid-MLX
 - Repositorio oficial Qwen3.8: https://github.com/QwenLM/Qwen3.8

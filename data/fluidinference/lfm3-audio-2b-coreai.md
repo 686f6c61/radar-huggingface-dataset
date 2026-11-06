@@ -81,9 +81,9 @@ Memoria pico en ASR: 1,9 GB. No se han publicado resultados de benchmarks están
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FluidInference/lfm3-audio-2b-coreai | no disponible (repo 2,4 GB) | no disponible | ASR + TTS en dispositivo, Core AI | LFM Open License v1.0 | HuggingFace, macOS 27 / iOS 27 |
-| FluidInference/lfm3-audio-2b-coreml | mismo modelo base | no disponible | ASR + TTS en dispositivo, Core ML | LFM Open License v1.0 | HuggingFace |
-| LiquidAI/LFM3-Audio-2B | 2B (según nombre) | no disponible | Modelo de audio original en fp32 | LFM Open License v1.0 | HuggingFace |
+| FluidInference/lfm3-audio-2b-coreai | no disponible (repo 2,4 GB) | no disponible | ASR + TTS en dispositivo, Core AI | LFM Open License v1.0 | Hugging Face, macOS 27 / iOS 27 |
+| FluidInference/lfm3-audio-2b-coreml | mismo modelo base | no disponible | ASR + TTS en dispositivo, Core ML | LFM Open License v1.0 | Hugging Face |
+| LiquidAI/LFM3-Audio-2B | 2B (según nombre) | no disponible | Modelo de audio original en fp32 | LFM Open License v1.0 | Hugging Face |
 
 La comparación relevante es frente a la variante Core ML del mismo autor: el backend Core AI mejora el RTFx de ASR de 18,4 a 24,6 y el de TTS de 4,3-4,5 a 5,07, con paridad de precisión prácticamente total. No se dispone de comparación con modelos de ASR/TTS de otros fabricantes en la información proporcionada.
 
@@ -102,7 +102,7 @@ La comparación relevante es frente a la variante Core ML del mismo autor: el ba
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FluidInference/lfm3-audio-2b-coreai
+- Hugging Face: https://huggingface.co/FluidInference/lfm3-audio-2b-coreai
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Componentes Core ML: https://huggingface.co/FluidInference/lfm3-audio-2b-coreml
 - Repositorio FluidAudio: https://github.com/FluidInference/FluidAudio

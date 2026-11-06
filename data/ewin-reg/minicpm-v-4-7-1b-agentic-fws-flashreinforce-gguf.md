@@ -72,8 +72,8 @@ Comprobacion de sanidad de los GGUF (solo 8 primeras filas de validacion, CPU, g
 
 | Modelo | Parametros | Contexto | Tarea objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V-4.7-1B-Agentic-FwS-FlashREINFORCE-GGUF | ~1,0B (base ~1,55B) | No disponible (ejemplos con 4096) | Llamada exacta de herramienta, multimodal | Apache 2.0 | GGUF en HuggingFace, llama.cpp |
-| openbmb/MiniCPM-V-4.7-1B (base) | ~1,55B | No disponible | Vision-lenguaje general | Apache 2.0 | safetensors en HuggingFace |
+| MiniCPM-V-4.7-1B-Agentic-FwS-FlashREINFORCE-GGUF | ~1,0B (base ~1,55B) | No disponible (ejemplos con 4096) | Llamada exacta de herramienta, multimodal | Apache 2.0 | GGUF en Hugging Face, llama.cpp |
+| openbmb/MiniCPM-V-4.7-1B (base) | ~1,55B | No disponible | Vision-lenguaje general | Apache 2.0 | safetensors en Hugging Face |
 | Claude Haiku 5.5 (referencia del autor) | No disponible | No disponible | Uso general de herramientas como subagente | Propietaria (API) | Solo via API de Anthropic |
 
 La comparativa con Claude Haiku 5.5 se limita a la metrica de coincidencia exacta sobre el dataset de validacion del autor (0,414 frente a 0,334) y no constituye una evaluacion general de capacidades. No hay datos comparativos con otros modelos agenticos de 1B parametros.

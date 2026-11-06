@@ -25,7 +25,7 @@ La licencia Apache 2.0 facilita su uso comercial, y su naturaleza MoE con activa
 
 El modelo base es UI-Venus-1.5-30B-A3B de inclusionAI, una arquitectura Mixture-of-Experts con 30.532.122.624 parámetros totales. La nomenclatura "A3B" en el nombre sugiere aproximadamente 3.000 millones de parámetros activos por token, patrón habitual en modelos MoE de activación dispersa, aunque este dato no se confirma explícitamente en la información disponible. El modelo es multimodal: el repositorio incluye ficheros mmproj (multi-modal projector) en cuantizaciones Q8_0 y f16, necesarios para procesar entradas visuales junto con texto, lo que encaja con su orientación a tareas de agente GUI.
 
-No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o aprendizaje por refuerzo específico para agentes. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. La cuantización fue realizada por mradermacher con `quantize_version: 2` y `output_tensor_quantised: 1`, usando conversión desde formato HuggingFace (`convert_type: hf`). Existe un repositorio separado con cuantizaciones ponderadas/imatrix (i1) para mayor calidad.
+No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o aprendizaje por refuerzo específico para agentes. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. La cuantización fue realizada por mradermacher con `quantize_version: 2` y `output_tensor_quantised: 1`, usando conversión desde formato Hugging Face (`convert_type: hf`). Existe un repositorio separado con cuantizaciones ponderadas/imatrix (i1) para mayor calidad.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - Añadir 0,8 GB (mmproj Q8_0) o 1,2 GB (mmproj f16) para el componente multimodal.
 - GPU recomendadas: para Q4_K_M (~18,7 GB) se requiere una GPU con al menos 24 GB de VRAM (RTX 3090, RTX 4090, A10G 24GB). Para Q8_0 (~32,6 GB) se necesita A100 40GB, H100 o configuraciones multi-GPU.
 - Cabe en consumer GPU: sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4 o inferiores; en GPUs de 16 GB solo con Q2_K/Q3_K_S y posible offload parcial a RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF y mmproj. También puede usarse el formato original HuggingFace con transformers y vLLM/TGI (no verificado para esta variante).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF y mmproj. También puede usarse el formato original Hugging Face con transformers y vLLM/TGI (no verificado para esta variante).
 - Latencia y throughput: no disponible. La activación MoE (~3B activos según nomenclatura) debería ofrecer throughput superior a un modelo denso de 30B, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos competido
 - Cuantizaciones agresivas (Q2_K, Q3_K_S) degradan la calidad; para tareas de agente con decisiones precisas se recomienda Q4_K_M o superior.
 - El componente multimodal requiere cargar el fichero mmproj correspondiente; sin él, el modelo no procesa imágenes.
 - No se confirma soporte de tool calling nativo ni integración con frameworks de agentes estándar (LangChain, etc.) en la información disponible.
-- Fecha de creación del repositorio (2026-02-11) y actualización (2026-11-02) según metadatos de HuggingFace.
+- Fecha de creación del repositorio (2026-02-11) y actualización (2026-11-02) según metadatos de Hugging Face.
 
 ## Enlaces
 

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Inkling-Small-NVFP4 es una version cuantizada en NVFP4 del modelo multimodal thinkingmachines/Inkling-Small, publicada por el usuario konizquants en HuggingFace. El modelo base es un transformer autoregresivo decoder-only de tipo Mixture-of-Experts (MoE) disenado por Thinking Machines para aceptar entradas de texto, imagen y audio y generar texto, con orientacion a aplicaciones agénticas, asistentes de codigo, chatbots y sistemas de generacion aumentada por recuperacion.
+Inkling-Small-NVFP4 es una version cuantizada en NVFP4 del modelo multimodal thinkingmachines/Inkling-Small, publicada por el usuario konizquants en Hugging Face. El modelo base es un transformer autoregresivo decoder-only de tipo Mixture-of-Experts (MoE) disenado por Thinking Machines para aceptar entradas de texto, imagen y audio y generar texto, con orientacion a aplicaciones agénticas, asistentes de codigo, chatbots y sistemas de generacion aumentada por recuperacion.
 
 La relevancia de esta ficha concreta reside en la cuantizacion: el repositorio distribuye los pesos en NVFP4 (4 bits con escalas), lo que reduce el espacio en disco respecto al BF16 original y permite desplegar un modelo de gran tamano en infraestructura con menos memoria. El repositorio ocupa 170,8 GB y declara 156.032.140.138 parametros en safetensors, mientras que la model card del modelo base indica 276B parametros totales y 12B activos por token; existe por tanto una discrepancia entre ambas cifras que conviene verificar antes de planificar un despliegue.
 
-Se trata de un repositorio con 0 descargas y 0 likes en el momento de la consulta, publicado el 21 de septiembre de 2026, con licencia Apache 2.0 y compatibilidad declarada con endpoints y con la libreria transformers. No se han encontrado resultados de busqueda web relevantes sobre este modelo, por lo que toda la informacion tecnica procede de la metadatos de HuggingFace y de la model card del autor.
+Se trata de un repositorio con 0 descargas y 0 likes en el momento de la consulta, publicado el 21 de septiembre de 2026, con licencia Apache 2.0 y compatibilidad declarada con endpoints y con la libreria transformers. No se han encontrado resultados de busqueda web relevantes sobre este modelo, por lo que toda la informacion tecnica procede de la metadatos de Hugging Face y de la model card del autor.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ Respecto a la alternativa directa, thinkingmachines/Inkling-Small en BF16, este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/konizquants/Inkling-Small-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/konizquants/Inkling-Small-NVFP4
 - Modelo base en BF16: https://huggingface.co/thinkingmachines/Inkling-Small
 - Cuantizacion NVFP4 oficial: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground de Tinker: https://tinker.thinkingmachines.ai/playground
@@ -109,5 +109,5 @@ Respecto a la alternativa directa, thinkingmachines/Inkling-Small en BF16, este 
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Documentacion de Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo; las busquedas devolvieron resultados no relacionados con inteligencia artificial.

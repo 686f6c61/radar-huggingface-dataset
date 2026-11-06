@@ -70,7 +70,7 @@ No se dispone de datos comparativos publicados entre este modelo y sus alternati
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| latex-ocr (este) | CoCa (Swin-Small + decodificador dual) | 67M | Imagen 192×672 | MIT | HuggingFace |
+| latex-ocr (este) | CoCa (Swin-Small + decodificador dual) | 67M | Imagen 192×672 | MIT | Hugging Face |
 | LaTeX-OCR (lukas-blecher) | ViT + transformador | ~100M (estimado) | Imagen variable | MIT | GitHub |
 | UniMERNet | Desconocida (modelo de opendatalab) | No disponible | No disponible | No disponible | GitHub |
 
@@ -88,8 +88,8 @@ No hay datos de benchmarks comparativos en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PadishahIIIXXX/latex-ocr
-- Dataset en HuggingFace: https://huggingface.co/datasets/PadishahIIIXXX/latex-ocr-dataset
+- Modelo en Hugging Face: https://huggingface.co/PadishahIIIXXX/latex-ocr
+- Dataset en Hugging Face: https://huggingface.co/datasets/PadishahIIIXXX/latex-ocr-dataset
 - Código de entrenamiento (GitHub): https://github.com/PadishahIII/latex-ocr
 - Documentación de benchmarks (GitHub): https://github.com/PadishahIII/latex-ocr#benchmarks
 - Paper de referencia de CoCa (arXiv:2205.01917): https://arxiv.org/abs/2205.01917

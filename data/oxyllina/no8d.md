@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oxyllina/NO8D` es un repositorio de modelos alojado en HuggingFace por el usuario `oxyllina`, publicado el 1 de abril de 2026 y actualizado por última vez el 18 de octubre de 2026. El repositorio ocupa 4,1 GB y está sujeto a acceso restringido (*gated*): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. En el momento de redactar esta ficha acumula 0 descargas y 2 likes, por lo que no existe validación alguna por parte de la comunidad.
+`oxyllina/NO8D` es un repositorio de modelos alojado en Hugging Face por el usuario `oxyllina`, publicado el 1 de abril de 2026 y actualizado por última vez el 18 de octubre de 2026. El repositorio ocupa 4,1 GB y está sujeto a acceso restringido (*gated*): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. En el momento de redactar esta ficha acumula 0 descargas y 2 likes, por lo que no existe validación alguna por parte de la comunidad.
 
 La información pública disponible es prácticamente nula. No se declara *pipeline*, licencia, idiomas soportados ni arquitectura; la única etiqueta presente es `region:us`, que indica la región de almacenamiento y no aporta información técnica. No hay *model card* descriptiva, ni paper asociado, ni resultados de evaluación publicados. El nombre del repositorio (`NO8D`) tampoco es descriptivo.
 
@@ -108,7 +108,7 @@ Para poder comparar haría falta, como mínimo, identificar si el modelo es dens
 
 - Ausencia total de documentación: no hay *model card*, paper, blog ni repositorio de código asociado. No es posible verificar el origen de los pesos ni el proceso de entrenamiento.
 - Licencia no especificada: sin licencia explícita no puede asumirse permiso de uso comercial, redistribución ni modificación. En la práctica, esto bloquea cualquier uso en producción.
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace, lo que añade una dependencia externa y posibles restricciones adicionales no documentadas aquí.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face, lo que añade una dependencia externa y posibles restricciones adicionales no documentadas aquí.
 - Sin validación de la comunidad: 0 descargas y 2 likes implican que no hay evidencia de que el modelo funcione correctamente ni de que los pesos estén completos o sean cargables.
 - Riesgo de sesgos y alucinación: no evaluable. Al desconocer los datos de entrenamiento no puede caracterizarse el sesgo, y sin pruebas no puede medirse la tasa de alucinación.
 - Limitaciones de contexto e idioma: no disponibles. No se declara ventana de contexto ni cobertura lingüística.
@@ -118,7 +118,7 @@ Para poder comparar haría falta, como mínimo, identificar si el modelo es dens
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/oxyllina/NO8D
-- Perfil del autor en HuggingFace: https://huggingface.co/oxyllina
+- Repositorio en Hugging Face: https://huggingface.co/oxyllina/NO8D
+- Perfil del autor en Hugging Face: https://huggingface.co/oxyllina
 - Paper, blog, repositorio de código o demo: no disponibles.
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo; los resultados obtenidos eran sitios de spam sin relación con el repositorio y se han descartado.

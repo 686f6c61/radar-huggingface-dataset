@@ -33,7 +33,7 @@ No se aplicó ningún proceso de aumentación de datos ni se usaron técnicas de
 - **Clasificación binaria de mensajes**: permite entrenar modelos para distinguir entre mensajes benignos y fraudulentos en inglés e hinglish.
 - **Detección de fraude financiero**: cubre patrones específicos como KYC, UPI, loterías, préstamos falsos, OTP, etc.
 - **Soporte multilingüe**: incluye ejemplos en inglés y en hinglish transliterado (escritura en caracteres latinos), lo que facilita el entrenamiento de modelos para entornos indios.
-- **Formato simple**: el JSON es fácil de cargar con bibliotecas estándar de Python (pandas, datasets de HuggingFace).
+- **Formato simple**: el JSON es fácil de cargar con bibliotecas estándar de Python (pandas, datasets de Hugging Face).
 - **Etiquetas claras**: la codificación binaria simplifica el ajuste de clasificadores.
 
 ## Casos de uso
@@ -83,9 +83,9 @@ El dataset de bolewara se diferencia por su enfoque específico en fraude financ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bolewara/hinglish-scam-text-dataset
+- Hugging Face: https://huggingface.co/bolewara/hinglish-scam-text-dataset
 - Artículo sobre modelo Hinglish (referencia): https://arxiv.org/html/2504.19070v1
 - Dataset conversacional hinglish (GitHub): https://github.com/skmanish/hinglish-conv-dataset
-- Dataset Hinglish Everyday Conversations 1M (HuggingFace): https://huggingface.co/datasets/Abhishekcr448/Hinglish-Everyday-Conversations-1M
+- Dataset Hinglish Everyday Conversations 1M (Hugging Face): https://huggingface.co/datasets/Abhishekcr448/Hinglish-Everyday-Conversations-1M
 - Proyecto de detección de scam en hinglish (GitHub): https://github.com/ishasinghrathore37/scam_hinglish-nlp
 - Recursos de datasets hinglish de Shaip: https://www.shaip.com/offerings/speech-data-catalog/hinglish-dataset/

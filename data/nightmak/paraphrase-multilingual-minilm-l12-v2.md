@@ -2,7 +2,7 @@
 
 ## Resumen
 
-paraphrase-multilingual-MiniLM-L12-v2 es un modelo de embeddings de frases (sentence embeddings) que proyecta oraciones y parrafos a un espacio vectorial denso de 384 dimensiones. Esta ficha corresponde a la copia subida por el usuario Nightmak al Hub de HuggingFace, un espejo no oficial del modelo original desarrollado por el equipo de sentence-transformers. Su funcion principal es convertir texto en vectores reutilizables para busqueda semantica, clustering, similitud entre frases y mineria de parafrasis.
+paraphrase-multilingual-MiniLM-L12-v2 es un modelo de embeddings de frases (sentence embeddings) que proyecta oraciones y parrafos a un espacio vectorial denso de 384 dimensiones. Esta ficha corresponde a la copia subida por el usuario Nightmak al Hub de Hugging Face, un espejo no oficial del modelo original desarrollado por el equipo de sentence-transformers. Su funcion principal es convertir texto en vectores reutilizables para busqueda semantica, clustering, similitud entre frases y mineria de parafrasis.
 
 Tecnicamente es un transformer de tipo BERT con backbone MiniLM-L12: 12 capas, 384 dimensiones ocultas y 117.654.272 parametros totales segun los pesos safetensors. La longitud maxima de secuencia configurada es de 128 tokens y la agregacion de los embeddings de token se realiza mediante mean pooling. Su punto fuerte es el soporte multilingue (mas de 50 idiomas) combinado con un coste computacional bajo, lo que permite ejecutarlo en CPU o en GPUs de gama de entrada.
 
@@ -41,7 +41,7 @@ La model card del repositorio no detalla el numero de tokens de entrenamiento, l
 - No soporta tool calling ni function calling: no es un modelo generativo.
 - No soporta razonamiento multi-paso ni comportamiento de agente.
 - No dispone de capacidades de vision, audio ni modo de pensamiento (thinking mode).
-- Compatible con HuggingFace Text Embeddings Inference y con endpoints compatibles segun las etiquetas del repositorio.
+- Compatible con Hugging Face Text Embeddings Inference y con endpoints compatibles segun las etiquetas del repositorio.
 
 ## Casos de uso
 
@@ -64,13 +64,13 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en fp16: aproximadamente 235 MB; en int8, en torno a 118 MB.
 - Cabe en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090 e incluso GPUs integradas con memoria compartida.
 - Funciona en CPU sin GPU dedicada; su tamano reducido y su contexto de 128 tokens lo hacen adecuado para despliegues en contenedores ligeros.
-- Opciones de despliegue: biblioteca sentence-transformers, HuggingFace Text Embeddings Inference (TEI), ONNX Runtime, OpenVINO, TensorFlow y endpoints compatibles de HuggingFace.
+- Opciones de despliegue: biblioteca sentence-transformers, Hugging Face Text Embeddings Inference (TEI), ONNX Runtime, OpenVINO, TensorFlow y endpoints compatibles de Hugging Face.
 - No procede el uso de llama.cpp, Ollama o vLLM, orientados a modelos generativos con decodificacion autoregresiva.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-Los datos del modelo de esta ficha proceden del repositorio de HuggingFace; los de las alternativas provienen de sus respectivas model cards publicas y pueden variar con actualizaciones.
+Los datos del modelo de esta ficha proceden del repositorio de Hugging Face; los de las alternativas provienen de sus respectivas model cards publicas y pueden variar con actualizaciones.
 
 | Modelo | Parametros | Dimension embedding | Contexto maximo | Idiomas | Licencia |
 |---|---|---|---|---|---|
@@ -96,9 +96,9 @@ La diferencia clave frente a las alternativas es el compromiso entre tamano y co
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/Nightmak/paraphrase-multilingual-MiniLM-L12-v2
+- Modelo en Hugging Face (espejo): https://huggingface.co/Nightmak/paraphrase-multilingual-MiniLM-L12-v2
 - Modelo original: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Documentacion de Sentence-Transformers: https://www.sbert.net
 - Paper Sentence-BERT (Reimers y Gurevych, 2019): https://arxiv.org/abs/1908.10084
 - Repositorio de sentence-transformers: https://github.com/UKPLab/sentence-transformers
-- HuggingFace Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference
+- Hugging Face Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

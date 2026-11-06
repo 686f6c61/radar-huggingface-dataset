@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lythri-4B-A2B-GGUF es el repositorio de cuantizaciones GGUF estáticas del modelo Lythri-4B-A2B, publicado por el usuario mradermacher en HuggingFace. No es un modelo entrenado desde cero: se trata de una conversión del checkpoint original alojado en Lythri/Lythri-4B-A2B (formato HuggingFace Transformers, según el metadato `convert_type: hf`) al formato GGUF que consumen llama.cpp, Ollama y otros motores de inferencia local.
+Lythri-4B-A2B-GGUF es el repositorio de cuantizaciones GGUF estáticas del modelo Lythri-4B-A2B, publicado por el usuario mradermacher en Hugging Face. No es un modelo entrenado desde cero: se trata de una conversión del checkpoint original alojado en Lythri/Lythri-4B-A2B (formato Hugging Face Transformers, según el metadato `convert_type: hf`) al formato GGUF que consumen llama.cpp, Ollama y otros motores de inferencia local.
 
 El nombre del modelo indica 4B parámetros totales, y el sufijo "A2B" sigue la convención habitual en modelos de mezcla de expertos (MoE) para señalar los parámetros activos por token, lo que apuntaría a unos 2.000 millones de parámetros activos sobre un total de 4.000 millones. Esta interpretación procede únicamente de la nomenclatura: la model card del repositorio no confirma ni la arquitectura ni el número de expertos, y no incluye datos de entrenamiento, licencia, idiomas ni benchmarks.
 
@@ -90,9 +90,9 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Lythri-4B-A2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Lythri-4B-A2B-GGUF
 - Modelo base: https://huggingface.co/Lythri/Lythri-4B-A2B
-- Perfil del autor en HuggingFace: https://huggingface.co/mradermacher
+- Perfil del autor en Hugging Face: https://huggingface.co/mradermacher
 - Índice de modelos GGUF de mradermacher en GraySoft: https://graysoft.dev/authors/m/mradermacher.html
 - Ejemplo de otro repositorio GGUF del mismo autor: https://huggingface.co/mradermacher/YAM-AI-4B-GGUF
 - Colección de modelos GGUF de LucidityAI (contexto de terceros que cuantizan modelos): https://huggingface.co/collections/LucidityAI/lucidityai-gguf-models

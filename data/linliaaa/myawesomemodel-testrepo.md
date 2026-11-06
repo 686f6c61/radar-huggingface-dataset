@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario `linliaaa` bajo el identificador `linliaaa/MyAwesomeModel-TestRepo`. Se trata de un repositorio de prueba (el sufijo "TestRepo" y el tamaño de 0.0 GB así lo indican) que no contiene pesos descargables ni una model card completa: el README se interrumpe en la sección de ejecución local. Los únicos metadatos técnicos fiables son el framework declarado (PyTorch) y la arquitectura base indicada en los tags (BERT), lo que sugiere un transformer encoder-only, aunque no se especifica tamaño, número de parámetros ni configuración.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario `linliaaa` bajo el identificador `linliaaa/MyAwesomeModel-TestRepo`. Se trata de un repositorio de prueba (el sufijo "TestRepo" y el tamaño de 0.0 GB así lo indican) que no contiene pesos descargables ni una model card completa: el README se interrumpe en la sección de ejecución local. Los únicos metadatos técnicos fiables son el framework declarado (PyTorch) y la arquitectura base indicada en los tags (BERT), lo que sugiere un transformer encoder-only, aunque no se especifica tamaño, número de parámetros ni configuración.
 
 La model card describe un supuesto salto de versión con mejoras en razonamiento, matemáticas y programación, citando un incremento en AIME 2025 del 70% al 87,5% y un aumento del uso medio de tokens por pregunta de 12K a 23K. Sin embargo, estos datos no son verificables: no hay enlaces a paper, repositorio de código, pesos publicados ni resultados reproducibles, y las cifras de benchmarks internos (15 categorías con puntuaciones entre 0,3 y 0,8) no corresponden a benchmarks estándar reconocibles (MMLU, HumanEval, GSM8K), sino a categorías genéricas sin definición metodológica.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe interpretarse como una descripción de un artefac
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | BERT (según tag de HuggingFace); detalles no disponibles |
+| Arquitectura | BERT (según tag de Hugging Face); detalles no disponibles |
 | Parámetros totales | no disponible |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe interpretarse como una descripción de un artefac
 
 ## Arquitectura y entrenamiento
 
-El único dato arquitectónico disponible es el tag `bert` de HuggingFace, que apunta a una familia de transformers encoder-only orientada a representaciones contextuales y tareas de comprensión (clasificación, NER, QA extractiva). No se especifica el número de capas, dimensión oculta, cabezas de atención ni vocabulario, por lo que no es posible determinar si se trata de una variante tipo BERT-base, BERT-large o una configuración propia.
+El único dato arquitectónico disponible es el tag `bert` de Hugging Face, que apunta a una familia de transformers encoder-only orientada a representaciones contextuales y tareas de comprensión (clasificación, NER, QA extractiva). No se especifica el número de capas, dimensión oculta, cabezas de atención ni vocabulario, por lo que no es posible determinar si se trata de una variante tipo BERT-base, BERT-large o una configuración propia.
 
 Respecto al entrenamiento, la model card menciona de forma genérica "increased computational resources" y "algorithmic optimization mechanisms during post-training", así como una mejora en la profundidad de razonamiento medida por el número de tokens consumidos por pregunta (12K a 23K). No se indica el volumen de tokens de preentrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o RL con verificación. Tampoco se documenta ninguna innovación técnica concreta (atención lineal, decodificación especulativa, etc.). La descripción de un modelo BERT que "razona" consumiendo decenas de miles de tokens por pregunta es internamente contradictoria con la arquitectura declarada, lo que refuerza la naturaleza de prueba del repositorio.
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, la model card menciona de forma genérica "increased 
 
 ## Casos de uso
 
-- Evaluación de infraestructura de despliegue: al ser un repositorio de prueba, puede servir para validar pipelines de carga de modelos en HuggingFace Hub, comprobar el manejo de repositorios vacíos o sin pesos y probar rutas de error en sistemas de serving.
+- Evaluación de infraestructura de despliegue: al ser un repositorio de prueba, puede servir para validar pipelines de carga de modelos en Hugging Face Hub, comprobar el manejo de repositorios vacíos o sin pesos y probar rutas de error en sistemas de serving.
 - Pruebas de integración en CI/CD: útil como fixture en tests que verifiquen que el código gestiona correctamente model cards incompletas, licencias ausentes o tags de arquitectura sin archivos asociados.
 - Docencia y demostración de buenas prácticas de publicación: sirve como ejemplo negativo de model card (secciones truncadas, benchmarks sin definición, ausencia de pesos) para ilustrar qué debe evitarse al publicar un modelo.
 - Validación de scrapers y herramientas de catalogación: permite comprobar cómo responden los agregadores de modelos ante metadatos incompletos y campos "no disponible".
@@ -106,5 +106,5 @@ La comparación es puramente estructural: no hay datos para contrastar rendimien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/linliaaa/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/linliaaa/MyAwesomeModel-TestRepo
 - No se han encontrado en la información proporcionada enlaces a paper, blog, repositorio de código, demo o plataforma de API.

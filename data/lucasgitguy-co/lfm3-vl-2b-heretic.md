@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM3-VL-2B Heretic (este) | ~1,92 B | no disponible | LFM Open License v1.0 | HuggingFace (comunidad) |
-| LiquidAI/LFM3-VL-2B (base) | ~1,92 B | no disponible | LFM Open License v1.0 | HuggingFace (oficial) |
+| LFM3-VL-2B Heretic (este) | ~1,92 B | no disponible | LFM Open License v1.0 | Hugging Face (comunidad) |
+| LiquidAI/LFM3-VL-2B (base) | ~1,92 B | no disponible | LFM Open License v1.0 | Hugging Face (oficial) |
 | Alternativas de 2B multimodales | no disponible | no disponible | no disponible | no disponible |
 
 La comparación con otros modelos de la misma categoría no puede completarse con los datos proporcionados; únicamente se dispone del modelo base oficial como referencia directa.
@@ -83,7 +83,7 @@ La comparación con otros modelos de la misma categoría no puede completarse co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic
+- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic
 - Modelo base oficial: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Variante GGUF: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-gguf
 - Variante MLX-4bit: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-mlx-4bit

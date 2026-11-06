@@ -74,7 +74,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/fcmeyer/F2LLM-v2-4B-mlx-bf16
+- Repositorio de Hugging Face: https://huggingface.co/fcmeyer/F2LLM-v2-4B-mlx-bf16
 - Modelo base original: https://huggingface.co/codefuse-ai/F2LLM-v2-4B
 - Librería `mlx-embeddings`: https://github.com/Blaizzy/mlx-embeddings
 - Paper técnico de F2LLM (arXiv): https://arxiv.org/html/2510.02294

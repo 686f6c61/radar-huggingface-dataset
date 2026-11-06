@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3-30B-A3B-Thinking-2507-bnb-4bit** es una cuantización de 4 bits (bitsandbytes) del modelo Qwen3-30B-A3B-Thinking-2507, desarrollado por Alibaba Qwen y publicado en HuggingFace por el usuario `lierseleow`. Se trata de un modelo de lenguaje de gran tamaño con arquitectura de mezcla de expertos (MoE) que activa únicamente 3.300 millones de parámetros de un total de 30.000 millones, lo que permite un rendimiento de inferencia comparable a modelos mucho más grandes con un coste computacional reducido.
+El modelo **Qwen3-30B-A3B-Thinking-2507-bnb-4bit** es una cuantización de 4 bits (bitsandbytes) del modelo Qwen3-30B-A3B-Thinking-2507, desarrollado por Alibaba Qwen y publicado en Hugging Face por el usuario `lierseleow`. Se trata de un modelo de lenguaje de gran tamaño con arquitectura de mezcla de expertos (MoE) que activa únicamente 3.300 millones de parámetros de un total de 30.000 millones, lo que permite un rendimiento de inferencia comparable a modelos mucho más grandes con un coste computacional reducido.
 
 La versión "Thinking-2507" es una variante orientada exclusivamente al razonamiento (thinking-only) que, según la documentación de LM Studio, mejora sustancialmente la cobertura de conocimiento de cola larga en múltiples idiomas y la alineación con preferencias de usuario en tareas subjetivas y de final abierto, en comparación con el Qwen3-30B-A3B original. La cuantización a 4 bits reduce los requisitos de memoria a aproximadamente 15-16 GB de VRAM, lo que lo hace ejecutable en GPUs de consumo como la RTX 4090.
 
@@ -48,7 +48,7 @@ Los detalles específicos del entrenamiento (número de tokens, composición del
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye métricas de evaluación, y los resultados de búsqueda web tampoco proporcionan datos numéricos de rendimiento (MMLU, HumanEval, GSM8K, etc.) para esta versión cuantizada ni para el modelo base Thinking-2507. Se recomienda consultar la documentación oficial de Qwen para obtener benchmarks del modelo original Qwen3-30B-A3B, aunque la variante Thinking-2507 puede presentar diferencias.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye métricas de evaluación, y los resultados de búsqueda web tampoco proporcionan datos numéricos de rendimiento (MMLU, HumanEval, GSM8K, etc.) para esta versión cuantizada ni para el modelo base Thinking-2507. Se recomienda consultar la documentación oficial de Qwen para obtener benchmarks del modelo original Qwen3-30B-A3B, aunque la variante Thinking-2507 puede presentar diferencias.
 
 ## Requisitos de hardware
 
@@ -80,8 +80,8 @@ La comparativa se basa en los modelos base, ya que no hay datos específicos de 
 
 ## Enlaces
 
-- [HuggingFace - lierseleow/Qwen3-30B-A3B-Thinking-2507-bnb-4bit](https://huggingface.co/lierseleow/Qwen3-30B-A3B-Thinking-2507-bnb-4bit)
+- [Hugging Face - lierseleow/Qwen3-30B-A3B-Thinking-2507-bnb-4bit](https://huggingface.co/lierseleow/Qwen3-30B-A3B-Thinking-2507-bnb-4bit)
 - [LM Studio - Qwen3-30B-A3B-Thinking-2507](https://lmstudio.ai/models/qwen/qwen3-30b-a3b-thinking-2507)
-- [HuggingFace - Qwen/Qwen3-30B-A3B (modelo base)](https://huggingface.co/Qwen/Qwen3-30B-A3B)
+- [Hugging Face - Qwen/Qwen3-30B-A3B (modelo base)](https://huggingface.co/Qwen/Qwen3-30B-A3B)
 - [LM Studio - Qwen3-30B-A3B (original)](https://lmstudio.ai/models/qwen/qwen3-30b-a3b)
 - [ValorGPT - Qwen3 30B A3B Thinking 2507](https://www.valorgpt.com/models/qwen-qwen3-30b-a3b-thinking-2507)

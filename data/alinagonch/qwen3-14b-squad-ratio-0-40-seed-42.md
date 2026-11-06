@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AlinaGonch/qwen3-14b-squad-ratio-0.40-seed-42` es un checkpoint publicado en HuggingFace por el usuario AlinaGonch. La model card es la plantilla genérica autogenerada por la plataforma, sin ningún campo completado: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Es, por tanto, un artefacto sin documentación técnica asociada.
+El repositorio `AlinaGonch/qwen3-14b-squad-ratio-0.40-seed-42` es un checkpoint publicado en Hugging Face por el usuario AlinaGonch. La model card es la plantilla genérica autogenerada por la plataforma, sin ningún campo completado: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Es, por tanto, un artefacto sin documentación técnica asociada.
 
 El nombre del repositorio sugiere que se trata de un ajuste (fine-tuning) del modelo base Qwen3-14B sobre el dataset SQuAD, con algún parámetro denominado "ratio" fijado en 0,40 y semilla 42, una convención típica de experimentos de ablación o de mezcla de datos. Sin embargo, esta interpretación procede únicamente del identificador y no está confirmada en ninguna sección de la model card ni en los resultados de búsqueda disponibles.
 
@@ -70,7 +70,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-14b-squad-ratio-0.40-seed-42 | no disponible | no disponible | no disponible | no disponible | 0 descargas en HuggingFace |
+| qwen3-14b-squad-ratio-0.40-seed-42 | no disponible | no disponible | no disponible | no disponible | 0 descargas en Hugging Face |
 | Qwen3-14B (base, referencia externa) | 14 000 millones aprox. | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | modelo público ampliamente distribuido |
 | Ajuste equivalente sobre SQuAD | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados para completar la comparativa con cifras conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.40-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.40-seed-42
 - Referencia citada en la plantilla de model card (Lacoste et al., 2019, sobre cálculo de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML mencionado en la plantilla: https://mlco2.github.io/impact
 

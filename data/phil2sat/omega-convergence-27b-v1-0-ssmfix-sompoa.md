@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar con otros modelos. El mod
 
 ## Enlaces
 
-- [HuggingFace - Phil2Sat/Omega-Convergence-27B-v1.0-SSMFIX-SOMPOA](https://huggingface.co/Phil2Sat/Omega-Convergence-27B-v1.0-SSMFIX-SOMPOA)
+- [Hugging Face - Phil2Sat/Omega-Convergence-27B-v1.0-SSMFIX-SOMPOA](https://huggingface.co/Phil2Sat/Omega-Convergence-27B-v1.0-SSMFIX-SOMPOA)
 - [Modelo base - ReadyArt/Omega-Convergence-27B-v1.0](https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0)
 - [Perfil de GitHub de Phil2Sat](https://github.com/phil2sat)
 - [Página de despliegue en FriendliAI](https://friendli.ai/models/hoborific/Omega-Convergence-27B-v1.0-W8A16-FP8)

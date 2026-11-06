@@ -2,7 +2,7 @@
 
 ## Resumen
 
-danielarx-krea2-lora es un adaptador LoRA de bajo rango (rank 32) para el modelo de difusión de imagen Krea 2, publicado por el usuario chantzlane90 en HuggingFace. Su única finalidad es reproducir de forma consistente un personaje ficticio generado por IA, Daniela Restrepo, con la palabra de activación `danielarx`. El repositorio ocupa 0,4 GB y fue creado y actualizado el 6 de octubre de 2026, sin descargas ni interacciones registradas en el momento de la consulta.
+danielarx-krea2-lora es un adaptador LoRA de bajo rango (rank 32) para el modelo de difusión de imagen Krea 2, publicado por el usuario chantzlane90 en Hugging Face. Su única finalidad es reproducir de forma consistente un personaje ficticio generado por IA, Daniela Restrepo, con la palabra de activación `danielarx`. El repositorio ocupa 0,4 GB y fue creado y actualizado el 6 de octubre de 2026, sin descargas ni interacciones registradas en el momento de la consulta.
 
 Técnicamente se trata de un fine-tune de personaje entrenado con la herramienta fal-ai/krea-2-trainer durante 1000 pasos, con las claves del state dict remapeadas al formato `diffusion_model.*` que emplean ComfyUI y la plataforma Sogni. No es un modelo autónomo: requiere cargar el modelo base Krea 2 para poder generar imágenes.
 
@@ -76,7 +76,7 @@ No se dispone de información sobre adaptadores LoRA comparables para Krea 2 en 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| danielarx-krea2-lora | LoRA de personaje sobre Krea 2 | no disponible (rank 32) | no aplica (imagen) | sin benchmarks publicados | other (texto no publicado) | HuggingFace, 0 descargas |
+| danielarx-krea2-lora | LoRA de personaje sobre Krea 2 | no disponible (rank 32) | no aplica (imagen) | sin benchmarks publicados | other (texto no publicado) | Hugging Face, 0 descargas |
 | Krea 2 (modelo base, sin LoRA) | Modelo de difusión de imagen | no disponible | no aplica (imagen) | no disponible | no disponible | no disponible |
 | Otros LoRA de personaje para Krea 2 | LoRA | no disponible | no aplica (imagen) | no disponible | no disponible | no disponible |
 
@@ -94,5 +94,5 @@ No se dispone de información sobre adaptadores LoRA comparables para Krea 2 en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/danielarx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/danielarx-krea2-lora
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a su modelo base, a la herramienta de entrenamiento fal-ai/krea-2-trainer ni a documentación técnica asociada. Los resultados devueltos por la búsqueda no guardan relación con este repositorio y se han descartado.

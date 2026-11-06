@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple2bit-vision
+- Repositorio Hugging Face: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple2bit-vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante text-only del mismo autor: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple2bit
 - Motor FinchMoE: https://github.com/haihengh/finchMoE

@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nur-dev/unionmind-predictive-representations
+- Hugging Face: https://huggingface.co/nur-dev/unionmind-predictive-representations
 - Licencia del repositorio: https://huggingface.co/nur-dev/unionmind-predictive-representations/blob/main/LICENSE.md
 - Características hidráulicas (Helwig, Pignanelli y Schuetze, UCI): https://doi.org/10.24432/C5CW21
 - Sensores modulados por temperatura (Burgues, UCI): https://doi.org/10.24432/C5S302

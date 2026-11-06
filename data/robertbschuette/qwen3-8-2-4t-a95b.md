@@ -92,7 +92,7 @@ La model card establece comparaciones de rendimiento con modelos de referencia, 
 
 | Modelo | Parametros | Contexto | Terminal Bench 2.1 | SWE-bench Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-2.4T-A95B | 2,4T totales / 95B activos | 262.144 (hasta 1M) | no disponible (pesos) | no disponible (pesos) | qwen3.8-max | Pesos abiertos en HuggingFace |
+| Qwen3.8-2.4T-A95B | 2,4T totales / 95B activos | 262.144 (hasta 1M) | no disponible (pesos) | no disponible (pesos) | qwen3.8-max | Pesos abiertos en Hugging Face |
 | Qwen3.8-Max | no disponible | 1M por defecto | 86,6 | no disponible | no disponible | API gestionada (Qwen Cloud) |
 | Qwen3.7-Max | no disponible | no disponible | 74,5 | 60,6 | no disponible | API gestionada |
 | Opus 4.8 | no disponible | no disponible | 84,6 | 69,2 | no disponible | no disponible |
@@ -115,7 +115,7 @@ Nota: los resultados de benchmark corresponden a Qwen3.8-Max y no necesariamente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/robertbschuette/Qwen3.8-2.4T-A95B
+- Repositorio Hugging Face: https://huggingface.co/robertbschuette/Qwen3.8-2.4T-A95B
 - Blog de Qwen3.8-Max: https://qwen.ai/blog?id=qwen3.8
 - Qwen Studio (chat): https://chat.qwen.ai/?models=qwen3.8-max
 - Qwen Cloud: https://www.qwencloud.com

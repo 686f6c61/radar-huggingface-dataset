@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. Otras alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-i1-GGUF
 - Modelo base (AEON-7): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Repositorio GitHub relacionado: https://github.com/Wassimyounes01/qwen38-uncensored
 - Repositorio GitHub del proyecto AEON-7 (versión 3.6): https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash/

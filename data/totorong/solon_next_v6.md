@@ -88,6 +88,6 @@ No se han proporcionado datos de comparación con otros modelos en la informaci�
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/TOTORONG/Solon_Next_v6
+- Hugging Face del modelo: https://huggingface.co/TOTORONG/Solon_Next_v6
 - Modelo base: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la búsqueda web realizada.

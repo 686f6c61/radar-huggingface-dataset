@@ -62,7 +62,7 @@ Tiempos de DIAMOND por llamada a 1 hilo: `fast` ≈20 s; `sensitive` ≈93 s + 0
 
 | Sistema | Tipo | Parametros | Contexto | Precision medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EnzymeRanker-DIAMOND | Recuperacion DIAMOND + voto ponderado | no aplica (indices de 281.143 + 206.689 secuencias) | no aplica | no medida | no disponible | HuggingFace (repo 0,5 GB) |
+| EnzymeRanker-DIAMOND | Recuperacion DIAMOND + voto ponderado | no aplica (indices de 281.143 + 206.689 secuencias) | no aplica | no medida | no disponible | Hugging Face (repo 0,5 GB) |
 | Modelos de lenguaje proteico tipo ESM | Transformer sobre secuencias | no disponible en esta ficha | no disponible | no disponible | no disponible | no disponible |
 | Herramientas clasicas de anotacion tipo BLASTp + reglas | Recuperacion por homologia | no aplica | no aplica | no disponible | no disponible | ampliamente disponibles |
 | Prediccion EC con modelos deep learning supervisados | Red neuronal supervisada | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 - No es un modelo generativo: no soporta tool calling, agentes, vision, audio ni conversacion; su uso esta limitado a clasificacion de secuencias.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/AbhijeetKumar2125/EnzymeRanker-DIAMOND
+- Hugging Face: https://huggingface.co/AbhijeetKumar2125/EnzymeRanker-DIAMOND
 - Tarea y benchmark citados en la model card: `leak-curber-enzyme-classification`, `leak-curber-enzyme-classification-20261023`
 - Ficheros internos de referencia: `MANIFEST.md`, `CHECKSUMS.sha256`, `weights/mode.json`, `ecpred/pipeline.py`, `scripts/rebuild_dbs.py`, `scripts/validate_output.py`, `reports/diamond_mode_timing_1thread.log`, `bin/NOTICE.txt`
 - No se han encontrado papers, blogs, repos adicionales ni demos en la informacion proporcionada.

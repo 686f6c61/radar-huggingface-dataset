@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `slopops/Qwen3.8-27B-int4-AutoRound-SAR` es una cuantización en precisión int4 de un modelo de la familia Qwen, publicada por el usuario slopops en HuggingFace bajo licencia Apache 2.0. El nombre sugiere que se trata de una versión de 27.000 millones de parámetros, cuantizada con la técnica AutoRound y posiblemente con algún ajuste adicional indicado por las siglas "SAR". Sin embargo, la model card publicada no contiene ninguna información técnica más allá de la licencia, por lo que no es posible confirmar la arquitectura exacta, el tamaño real de parámetros, la longitud de contexto ni los datos de entrenamiento.
+El modelo `slopops/Qwen3.8-27B-int4-AutoRound-SAR` es una cuantización en precisión int4 de un modelo de la familia Qwen, publicada por el usuario slopops en Hugging Face bajo licencia Apache 2.0. El nombre sugiere que se trata de una versión de 27.000 millones de parámetros, cuantizada con la técnica AutoRound y posiblemente con algún ajuste adicional indicado por las siglas "SAR". Sin embargo, la model card publicada no contiene ninguna información técnica más allá de la licencia, por lo que no es posible confirmar la arquitectura exacta, el tamaño real de parámetros, la longitud de contexto ni los datos de entrenamiento.
 
 Este modelo se presenta como un artefacto sin documentación, con cero descargas y cero valoraciones en el momento de su publicación. Su relevancia actual es limitada debido a la ausencia total de especificaciones, benchmarks o instrucciones de uso. Cualquier evaluación rigurosa requeriría acceder al repositorio y analizar los pesos directamente, algo que no se puede realizar con la información disponible.
 
@@ -53,4 +53,4 @@ No disponible. Sin conocer el modelo base exacto ni sus características, no es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/slopops/Qwen3.8-27B-int4-AutoRound-SAR
+- Repositorio Hugging Face: https://huggingface.co/slopops/Qwen3.8-27B-int4-AutoRound-SAR

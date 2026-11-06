@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Anubis-70B-v1-QTIP-FP8KV es un checkpoint cuantizado derivado de TheDrummer/Anubis-70B-v1, un modelo de 70.000 millones de parámetros orientado a generación de texto y roleplay. Lo publica el usuario cgg507 en HuggingFace y su propósito no es ofrecer un modelo nuevo, sino una versión comprimida del original para reducir los requisitos de memoria durante la inferencia. La cuantización combina QTIP de 2 bits y NVFP4 calibrado en las proyecciones lineales, con pesos FP8 E4M3 en las proyecciones K/V, y está pensada para ejecutarse en el runtime CUDA propietario Behemoth-QTIP.
+Anubis-70B-v1-QTIP-FP8KV es un checkpoint cuantizado derivado de TheDrummer/Anubis-70B-v1, un modelo de 70.000 millones de parámetros orientado a generación de texto y roleplay. Lo publica el usuario cgg507 en Hugging Face y su propósito no es ofrecer un modelo nuevo, sino una versión comprimida del original para reducir los requisitos de memoria durante la inferencia. La cuantización combina QTIP de 2 bits y NVFP4 calibrado en las proyecciones lineales, con pesos FP8 E4M3 en las proyecciones K/V, y está pensada para ejecutarse en el runtime CUDA propietario Behemoth-QTIP.
 
 La relevancia de esta ficha es doble. Por un lado, documenta una técnica de compresión agresiva (2 bits por peso en 80 capas) que permite plantear el despliegue de un modelo de 70B en hardware mucho más modesto que el requerido por BF16. Por otro, expone las limitaciones de esa aproximación: la pérdida de calidad medida en perplejidad es sustancial (de 2,73 a 4,15 sobre WikiText-103), el formato no es estándar y no hay información pública sobre licencia, idiomas ni benchmarks de tareas.
 
-No se dispone de datos sobre la arquitectura interna del modelo base más allá de su tamaño (70B) y de que emplea proyecciones K/V y una cabeza de lenguaje estándar. Toda la información técnica verificable procede de la model card del checkpoint cuantizado y de los metadatos de HuggingFace.
+No se dispone de datos sobre la arquitectura interna del modelo base más allá de su tamaño (70B) y de que emplea proyecciones K/V y una cabeza de lenguaje estándar. Toda la información técnica verificable procede de la model card del checkpoint cuantizado y de los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anubis-70B-v1-QTIP-FP8KV | 70B | No disponible | QTIP 2-bit + FP8 KV | No disponible | HuggingFace (0 descargas) |
-| TheDrummer/Anubis-70B-v1 (base) | 70B | No disponible | BF16 | No disponible | HuggingFace |
+| Anubis-70B-v1-QTIP-FP8KV | 70B | No disponible | QTIP 2-bit + FP8 KV | No disponible | Hugging Face (0 descargas) |
+| TheDrummer/Anubis-70B-v1 (base) | 70B | No disponible | BF16 | No disponible | Hugging Face |
 | Otros 70B cuantizados a 2-4 bits (p. ej. variantes GGUF de Llama-70B) | 70B | Variable | Q2_K a Q4_K_M | Variable según base | Amplia, vía llama.cpp |
 
 La comparación con alternativas estándar es limitada porque este checkpoint depende de un runtime propietario y no ofrece métricas de tareas. Frente a las cuantizaciones GGUF convencionales, la ventaja teórica es una mayor compresión (2 bits) y la preservación de K/V en FP8; la desventaja es la falta de portabilidad y la ausencia de validación en benchmarks de uso real.
@@ -88,7 +88,7 @@ La comparación con alternativas estándar es limitada porque este checkpoint de
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/cgg507/Anubis-70B-v1-QTIP-FP8KV
+- Hugging Face del checkpoint: https://huggingface.co/cgg507/Anubis-70B-v1-QTIP-FP8KV
 - Modelo base: https://huggingface.co/TheDrummer/Anubis-70B-v1
 - Referencia interna del autor: `SOURCE_README.md` (incluido en el repositorio)
 - Artefactos de procedencia: `provenance/` y `adaptive_report.json` (incluidos en el repositorio)

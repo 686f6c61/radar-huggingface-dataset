@@ -108,7 +108,7 @@ La informacion proporcionada no incluye resultados de otros sistemas NER para uz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Slenser0/uzbek-ner-mmbert-span
+- Modelo en Hugging Face: https://huggingface.co/Slenser0/uzbek-ner-mmbert-span
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Referencia indicada en las etiquetas del modelo (paper de mmBERT): https://arxiv.org/abs/2509.06888
 - Resultados de la busqueda web: no se encontro ningun enlace relevante para este modelo. Las coincidencias devueltas correspondian a paginas del Traductor de Google y no guardan relacion con el modelo ni con NER en uzbeko.

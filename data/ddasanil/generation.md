@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ddasanil/generation` es un prototipo de investigación publicado en HuggingFace por el usuario ddasanil que adapta una arquitectura de tipo Swin Transformer (variante T, "tiny") a una tarea genérica de generación. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para *smoke tests* y no un checkpoint con benchmarks. El repositorio incluye únicamente `model.py`, `config.json`, `training_args.json` y el citado checkpoint, sin pesos derivados de un entrenamiento real.
+`ddasanil/generation` es un prototipo de investigación publicado en Hugging Face por el usuario ddasanil que adapta una arquitectura de tipo Swin Transformer (variante T, "tiny") a una tarea genérica de generación. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para *smoke tests* y no un checkpoint con benchmarks. El repositorio incluye únicamente `model.py`, `config.json`, `training_args.json` y el citado checkpoint, sin pesos derivados de un entrenamiento real.
 
 El interés del artefacto es, por tanto, metodológico y no de rendimiento. La ficha describe una implementación personalizada que se aparta del Swin Transformer canónico en varios puntos: atención *multi-query* en lugar de atención por ventanas desplazadas, fusión bilineal, activación mish y normalización RMSNorm. El recuento real de parámetros del checkpoint es de 33.088, una cifra muy inferior a los aproximadamente 28 millones de un Swin-T estándar, lo que refuerza la lectura de que se trata de un esqueleto de código con pesos inicializados aleatoriamente.
 
@@ -46,7 +46,7 @@ No hay capacidades verificadas ni demostradas. El checkpoint es una inicializaci
 
 Dado que el artefacto no está entrenado, los casos de uso realistas son de ingeniería y metodología, no de producto:
 
-- Pruebas de humo en pipelines de carga de pesos: verificar que un *loader* de safetensors, un *adapter* de HuggingFace o un script interno es capaz de leer `config.json` y `model.safetensors` sin errores. Al ser un checkpoint diminuto (33.088 parámetros), la ejecución es instantánea y no consume GPU.
+- Pruebas de humo en pipelines de carga de pesos: verificar que un *loader* de safetensors, un *adapter* de Hugging Face o un script interno es capaz de leer `config.json` y `model.safetensors` sin errores. Al ser un checkpoint diminuto (33.088 parámetros), la ejecución es instantánea y no consume GPU.
 - Plantilla para ablaciones controladas: el README recomienda entrenar todas las líneas base "con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias"; este repositorio sirve como esqueleto desde el que lanzar esas comparaciones con lamb + onecycle.
 - Integración continua de librerías de modelado: usar el modelo como caso de prueba en tests unitarios de frameworks propios que deban soportar arquitecturas personalizadas, dado que las APIs de carga automática requieren un adaptador explícito.
 - Docencia de arquitecturas híbridas: ilustrar en un curso o taller cómo se implementa atención multi-query, fusión bilineal y RMSNorm en código PyTorch legible, separando configuración (`config.json`) de receta de entrenamiento (`training_args.json`).
@@ -74,7 +74,7 @@ La model card afirma explícitamente: "No benchmark score is claimed in this rep
 |---|---|---|---|---|---|
 | ddasanil/generation | Swin T personalizado (multi-query, mish, rmsnorm) | 33.088 | no disponible | apache-2.0 | Checkpoint de inicialización, sin entrenar |
 | Swin-T original (referencia pública) | Swin Transformer con shifted windows y GELU | ~28 M (referencia aproximada) | no aplica (visión) | MIT (referencia pública) | Entrenado en ImageNet-1k |
-| Otros prototipos "generation" de HuggingFace | Variable | Variable | no disponible | Variable | No comparable de forma fiable sin identificarlos |
+| Otros prototipos "generation" de Hugging Face | Variable | Variable | no disponible | Variable | No comparable de forma fiable sin identificarlos |
 
 Advertencia: las cifras del Swin-T original proceden de conocimiento público general de esa arquitectura y no de la información proporcionada en esta ficha; se incluyen solo como orden de magnitud para contextualizar el tamaño del checkpoint analizado. No se dispone de datos suficientes para comparar rendimiento, ya que este repositorio no publica ninguna métrica.
 
@@ -92,8 +92,8 @@ Advertencia: las cifras del Swin-T original proceden de conocimiento público ge
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddasanil/generation
+- Hugging Face: https://huggingface.co/ddasanil/generation
 - Paper o blog del autor: no disponible
-- Repositorio de código fuente: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace como `model.py`)
+- Repositorio de código fuente: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face como `model.py`)
 - Demo: no disponible
 - Búsqueda web: las consultas realizadas no devolvieron ningún resultado relacionado con este modelo, su autor o su arquitectura. Los resultados obtenidos correspondían a listados de posiciones y concursos del Ministero degli Affari Esteri e della Cooperazione Internazionale de Italia, sin ninguna relación con el modelo, por lo que se han descartado.

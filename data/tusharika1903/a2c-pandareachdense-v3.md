@@ -4,7 +4,7 @@
 
 El modelo `Tusharika1903/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, empleando la libreria stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un checkpoint de politica entrenada para una tarea concreta de control robotico en simulacion, en la que un brazo manipulador debe alcanzar un objetivo con una funcion de recompensa densa. El repositorio lo publica el usuario Tusharika1903 y esta etiquetado con los tags propios del ecosistema de RL: `stable-baselines3`, `deep-reinforcement-learning` y `reinforcement-learning`.
 
-La relevancia de este tipo de publicaciones es acotada pero util: sirve como artefacto reproducible dentro de un pipeline de experimentacion en RL, como baseline de comparacion frente a otros algoritmos (PPO, SAC, TD3) y como material docente para ilustrar el ciclo completo de entrenamiento, registro y publicacion de un agente con stable-baselines3 y el Hub de HuggingFace. El unico resultado declarado es un retorno medio de `-21.31 +/- 1.99` sobre `PandaReachDense-v3`, marcado como no verificado (`verified: false`) en el model-index.
+La relevancia de este tipo de publicaciones es acotada pero util: sirve como artefacto reproducible dentro de un pipeline de experimentacion en RL, como baseline de comparacion frente a otros algoritmos (PPO, SAC, TD3) y como material docente para ilustrar el ciclo completo de entrenamiento, registro y publicacion de un agente con stable-baselines3 y el Hub de Hugging Face. El unico resultado declarado es un retorno medio de `-21.31 +/- 1.99` sobre `PandaReachDense-v3`, marcado como no verificado (`verified: false`) en el model-index.
 
 La model card es practicamente un esqueleto: contiene el bloque de metadatos YAML, el resultado del model-index y una seccion de uso con un `TODO: Add your code` sin completar. No se documentan hiperparametros, numero de pasos de entrenamiento, semillas, espacios de observacion y accion, ni arquitectura exacta de las redes. El tamano del repositorio se reporta como 0.0 GB, no tiene descargas ni likes registrados y no declara licencia, lo que limita cualquier uso mas alla de la experimentacion interna.
 
@@ -80,7 +80,7 @@ La informacion disponible no incluye resultados numericos de otros agentes sobre
 
 | Alternativa | Algoritmo | Entorno | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|---|
-| Este modelo | A2C | PandaReachDense-v3 | No aplica (RL, sin ventana de contexto) | no disponible | Hub de HuggingFace, 0 descargas | mean_reward -21.31 +/- 1.99 (no verificado) |
+| Este modelo | A2C | PandaReachDense-v3 | No aplica (RL, sin ventana de contexto) | no disponible | Hub de Hugging Face, 0 descargas | mean_reward -21.31 +/- 1.99 (no verificado) |
 | Agentes SAC de stable-baselines3 / RL Zoo | SAC | Tareas panda-gym | No aplica | MIT (libreria) | Repositorios publicos de la libreria | no disponible en la informacion proporcionada |
 | Agentes TD3 con HER | TD3 + HER | Tareas de alcance con recompensa dispersa | No aplica | MIT (libreria) | Repositorios publicos de la libreria | no disponible en la informacion proporcionada |
 | Agentes PPO | PPO | Tareas panda-gym | No aplica | MIT (libreria) | Repositorios publicos de la libreria | no disponible en la informacion proporcionada |
@@ -100,7 +100,7 @@ La informacion disponible no incluye resultados numericos de otros agentes sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tusharika1903/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/Tusharika1903/a2c-PandaReachDense-v3
 - Libreria estable de referencia citada en la model card (stable-baselines3): https://github.com/DLR-RM/stable-baselines3
 
 Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados relevantes para este modelo. Los enlaces encontrados correspondian a foros sobre salud y a listados de negocios (Diabetes UK Forum, Foursquare), sin relacion con el artefacto descrito, por lo que se omiten. No se han localizado papers, blogs, repositorios adicionales ni demos asociados a este checkpoint.

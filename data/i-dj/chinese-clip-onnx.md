@@ -94,7 +94,7 @@ La comparación relevante es con los propios modelos base: este paquete no modif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/i-dj/chinese-clip-onnx
+- Modelo en Hugging Face: https://huggingface.co/i-dj/chinese-clip-onnx
 - Repositorio del proyecto Wanmory: https://github.com/i-dj/wanmory
 - Script de exportación a ONNX: https://github.com/i-dj/wanmory/blob/main/ml/scripts/export_clip_onnx.py
 - Repositorio oficial de Chinese-CLIP: https://github.com/OFA-Sys/Chinese-CLIP

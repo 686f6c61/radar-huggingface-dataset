@@ -78,7 +78,7 @@ No se dispone de informacion sobre otros modelos comparables (por ejemplo, Qwen2
 
 ## Limitaciones y advertencias
 
-- No es compatible con llama.cpp estandar: requiere el parche ROCmFPX del repositorio del autor. Los comandos auto-generados de HuggingFace no funcionaran.
+- No es compatible con llama.cpp estandar: requiere el parche ROCmFPX del repositorio del autor. Los comandos auto-generados de Hugging Face no funcionaran.
 - Sin benchmarks de calidad: no se ha medido perplexity, ni calidad A/B contra Q4_K_M o BF16, ni rendimiento en tareas de codigo, razonamiento o tool-calling. Las unicas verificaciones son tres preguntas memorizadas.
 - Sesgo de idioma: solo se declara soporte para ingles. No se ha evaluado su comportamiento en otros idiomas.
 - Rendimiento no mejorado: la cuantizacion no acelera la inferencia. El cuello de botella es la convolucion CCA, que permanece en BF16 y consume ~55% del tiempo de decodificacion.

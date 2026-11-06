@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de otros modelos OCR comparables en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/chandra-ocr-2-MTP-Repacked-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/chandra-ocr-2-MTP-Repacked-GGUF
 - Modelo base (repack): https://huggingface.co/prithivMLmods/chandra-ocr-2-MTP-Repacked
 - Modelo original: https://huggingface.co/datalab-to/chandra-ocr-2
 - Licencia del modelo original: https://huggingface.co/datalab-to/chandra-ocr-2/blob/main/LICENSE

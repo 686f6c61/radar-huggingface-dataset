@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto/observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| knight7024/act_pick_and_place_hair_roll_final | 51,7 M | ACT (imitación) | 2 cámaras 240x320 + estado 6D | apache-2.0 | HuggingFace (LeRobot) |
-| Políticas ACT genéricas de LeRobot | ~50 M (típico) | ACT | Configurable por dataset | apache-2.0 | HuggingFace |
+| knight7024/act_pick_and_place_hair_roll_final | 51,7 M | ACT (imitación) | 2 cámaras 240x320 + estado 6D | apache-2.0 | Hugging Face (LeRobot) |
+| Políticas ACT genéricas de LeRobot | ~50 M (típico) | ACT | Configurable por dataset | apache-2.0 | Hugging Face |
 | Diffusion Policy (referencia) | variable, mayor | Difusión para control | Configurable | MIT/Apache según implementación | Repos de investigación |
 | VQ-BeT (referencia) | variable | Transformer discretizado | Configurable | MIT | Repos de investigación |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo para esta política concreta; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/knight7024/act_pick_and_place_hair_roll_final
+- Modelo en Hugging Face: https://huggingface.co/knight7024/act_pick_and_place_hair_roll_final
 - Dataset de entrenamiento: https://huggingface.co/datasets/knight7024/pick_and_place_hair_roll_final
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=knight7024/pick_and_place_hair_roll_final
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

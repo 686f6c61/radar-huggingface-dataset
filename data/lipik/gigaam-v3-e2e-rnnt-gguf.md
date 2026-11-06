@@ -108,7 +108,7 @@ Rendimiento de inferencia en transcribe.cpp (RTF, factor de tiempo real):
 
 | Modelo | Parametros | Contexto / audio | WER ruso (Callcenter) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| GigaAM-v3 e2e RNN-T (esta conversion) | 222,5 M | 25 s por enunciado | 9,5 % | MIT | GGUF en HuggingFace |
+| GigaAM-v3 e2e RNN-T (esta conversion) | 222,5 M | 25 s por enunciado | 9,5 % | MIT | GGUF en Hugging Face |
 | GigaAM-v3 CTC | 220-240 M | 25 s por enunciado | 10,3 % | MIT | Pesos originales |
 | T-One + LM | no disponible | no disponible | 13,5 % | no disponible | no disponible |
 | Whisper (large-v3) | no disponible | 30 s por ventana | 23,9 % | MIT | Multiples formatos |
@@ -129,7 +129,7 @@ Frente a Whisper, el modelo de GigaAM-v3 obtiene un WER notablemente inferior en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lipik/gigaam-v3-e2e-rnnt-gguf
+- Modelo en Hugging Face: https://huggingface.co/lipik/gigaam-v3-e2e-rnnt-gguf
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-v3
 - Commit del modelo base: https://huggingface.co/ai-sage/GigaAM-v3/commit/ec1dc1f
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

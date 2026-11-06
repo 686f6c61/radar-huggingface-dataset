@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-antislop-pangram-grpo-GGUF es una conversión a formato GGUF (cuantización Q4_K_M) del checkpoint rawmodels/Qwen3.8-27B-antislop-pangram-grpo, un modelo de generación de texto de 27.320.697.856 parámetros (~27,3 B) publicado por el usuario rawmodels en HuggingFace. El repositorio no es un modelo nuevo entrenado desde cero, sino una versión cuantizada de una etapa concreta de un pipeline de alineación: la fase intermedia de GRPO del proyecto "pangram-GRPO". El propio autor indica que existe un checkpoint posterior ("semdiv") con su propio repositorio GGUF, por lo que esta ficha describe una instantánea concreta y no la versión más reciente del linaje.
+Qwen3.8-27B-antislop-pangram-grpo-GGUF es una conversión a formato GGUF (cuantización Q4_K_M) del checkpoint rawmodels/Qwen3.8-27B-antislop-pangram-grpo, un modelo de generación de texto de 27.320.697.856 parámetros (~27,3 B) publicado por el usuario rawmodels en Hugging Face. El repositorio no es un modelo nuevo entrenado desde cero, sino una versión cuantizada de una etapa concreta de un pipeline de alineación: la fase intermedia de GRPO del proyecto "pangram-GRPO". El propio autor indica que existe un checkpoint posterior ("semdiv") con su propio repositorio GGUF, por lo que esta ficha describe una instantánea concreta y no la versión más reciente del linaje.
 
 El interés técnico del repositorio está en dos elementos poco habituales en una publicación de cuantización: por un lado, incluye el proyector multimodal en F16 y la importance matrix (imatrix) empleada para calcular la cuantización; por otro, conserva la cabeza de multi-token prediction (MTP) del modelo original almacenada como `blk.64.nextn.*` con el metadato `qwen35.nextn_predict_layers=1`, lo que permite usar decodificación especulativa con llama.cpp reciente mediante `--spec-type draft-mtp --spec-draft-n-max 2`. El autor advierte de que esa cabeza no se entrenó en esta etapa de GRPO, por lo que su rendimiento puede diferir del de los checkpoints posteriores.
 
@@ -96,7 +96,7 @@ Comparativa con alternativas de otras familias (por ejemplo, otros modelos GGUF 
 - Sesgos conocidos: no disponibles. La model card no documenta ninguna evaluación de sesgo, toxicidad o sesgo de género, político o cultural.
 - Longitud de contexto no especificada: se desconoce el máximo entrenado. El ejemplo de servicio usa 4096 tokens, y forzar contextos mayores sin datos del fabricante puede provocar degradación.
 - Trazabilidad limitada: 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada y sin documentación del dataset ni del proceso de entrenamiento. La reproducibilidad del pipeline completo no está garantizada.
-- La búsqueda web realizada para esta ficha no devolvió resultados relevantes sobre el modelo; toda la informacion procede de HuggingFace.
+- La búsqueda web realizada para esta ficha no devolvió resultados relevantes sobre el modelo; toda la informacion procede de Hugging Face.
 
 ## Enlaces
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NE-TTS es un modelo de síntesis de voz (text-to-speech) end-to-end publicado en HuggingFace bajo licencia CC-BY-4.0 por el usuario pramiteeh. Cubre 16 lenguas de la India nororiental —tagin, nyishi, angami naga, rongmei naga, chokri naga, ao naga, rengma meridional, karbi, idu mishmi, kok borok, wancho, mizo, nagamés, garo, chakma y sumi— con 23 voces en un único checkpoint multi-hablante y multilingüe, seleccionables por nombre.
+NE-TTS es un modelo de síntesis de voz (text-to-speech) end-to-end publicado en Hugging Face bajo licencia CC-BY-4.0 por el usuario pramiteeh. Cubre 16 lenguas de la India nororiental —tagin, nyishi, angami naga, rongmei naga, chokri naga, ao naga, rengma meridional, karbi, idu mishmi, kok borok, wancho, mizo, nagamés, garo, chakma y sumi— con 23 voces en un único checkpoint multi-hablante y multilingüe, seleccionables por nombre.
 
 Su relevancia está en el nicho: son lenguas de muy bajos recursos, con apenas sistemas de síntesis disponibles. El modelo se ha entrenado desde cero, sin modelo base preentrenado, sobre texto romanizado en minúsculas (sin fonemización). La arquitectura es VITS, que pasa directamente del texto a la forma de onda a 22.050 Hz mono sin vocoder externo. El checkpoint declara 86,5 M de parámetros, de los cuales 39,8 M corresponden al generador que se ejecuta en inferencia; los 46,7 M restantes son el discriminador de entrenamiento, que se conserva en el fichero y explica que la descarga sea de 346 MB.
 
@@ -94,7 +94,7 @@ La búsqueda web realizada no devolvió información relevante sobre este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pramiteeh/indian-ne-multilingual-tts
+- Modelo en Hugging Face: https://huggingface.co/pramiteeh/indian-ne-multilingual-tts
 - Repositorio referenciado en el código de ejemplo: https://huggingface.co/sulabhkatiyar/indian-ne-multilingual-tts
 - Dataset de entrenamiento: https://huggingface.co/datasets/sulabhkatiyar/ne-tts-coqui-multilingual
 - Colección NE Speech AI V1: https://huggingface.co/collections/sulabhkatiyar/ne-speech-ai-v1-6a8efa7593551e32d63b876b

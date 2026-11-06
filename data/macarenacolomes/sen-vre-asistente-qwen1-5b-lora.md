@@ -82,10 +82,10 @@ Advertencias del propio autor sobre estas cifras: el juez es ruidoso (diferencia
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sen-vre-asistente-qwen1.5b-lora | ~1,5B (base) + adaptador de 74 MB | No disponible | Dominio SEN Chile y pronostico renovable, en espanol | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct (modelo base) | ~1,5B | 32.768 tokens segun su ficha oficial | Proposito general, alineado con instrucciones | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2 1B Instruct | ~1,24B | 128.000 tokens segun su ficha oficial | Proposito general, multilingue | Licencia comunitaria de Llama 3.2 | HuggingFace y ecosistema amplio |
-| Gemma 2 2B Instruct | ~2,6B | 8.192 tokens segun su ficha oficial | Proposito general | Terminos de uso de Gemma | HuggingFace y ecosistema amplio |
+| sen-vre-asistente-qwen1.5b-lora | ~1,5B (base) + adaptador de 74 MB | No disponible | Dominio SEN Chile y pronostico renovable, en espanol | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct (modelo base) | ~1,5B | 32.768 tokens segun su ficha oficial | Proposito general, alineado con instrucciones | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2 1B Instruct | ~1,24B | 128.000 tokens segun su ficha oficial | Proposito general, multilingue | Licencia comunitaria de Llama 3.2 | Hugging Face y ecosistema amplio |
+| Gemma 2 2B Instruct | ~2,6B | 8.192 tokens segun su ficha oficial | Proposito general | Terminos de uso de Gemma | Hugging Face y ecosistema amplio |
 
 La comparación relevante es contra el propio modelo base: el adaptador mejora la nota media del examen fijo de 2,58 a 4,83, pero sigue por debajo del umbral de aceptabilidad (7) en el 75 % de las preguntas. Las alternativas generalistas no están evaluadas en este dominio concreto, por lo que no existe una comparación directa de rendimiento disponible.
 
@@ -104,6 +104,6 @@ La comparación relevante es contra el propio modelo base: el adaptador mejora l
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/macarenacolomes/sen-vre-asistente-qwen1.5b-lora
+- Adaptador LoRA en Hugging Face: https://huggingface.co/macarenacolomes/sen-vre-asistente-qwen1.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

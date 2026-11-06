@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-26B-A4B-v3.0-GGUF es la version cuantizada en formato GGUF del modelo Dark-Craving-26B-A4B-v3.0, publicado por el usuario ReadyArt en HuggingFace. Se trata de un modelo de generacion de texto orientado a roleplay conversacional y contenido para adultos, con etiquetas explicitas de NSFW, ERP (erotic roleplay), "unaligned" y "mature". El repositorio es una conversion a GGUF del modelo base original, pensada para su ejecucion en entornos de inferencia local como llama.cpp u Ollama.
+Dark-Craving-26B-A4B-v3.0-GGUF es la version cuantizada en formato GGUF del modelo Dark-Craving-26B-A4B-v3.0, publicado por el usuario ReadyArt en Hugging Face. Se trata de un modelo de generacion de texto orientado a roleplay conversacional y contenido para adultos, con etiquetas explicitas de NSFW, ERP (erotic roleplay), "unaligned" y "mature". El repositorio es una conversion a GGUF del modelo base original, pensada para su ejecucion en entornos de inferencia local como llama.cpp u Ollama.
 
 El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 26 mil millones de parametros totales y aproximadamente 4 mil millones de parametros activos por token (el sufijo "A4B" es habitual en este tipo de nomenclatura), si bien la model card no confirma explicitamente estos datos. El modelo esta disenado exclusivamente para ingles y se distribuye bajo licencia Apache 2.0, aunque su contenido esta restringido a audiencias adultas.
 
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v3.0-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v3.0-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v3.0

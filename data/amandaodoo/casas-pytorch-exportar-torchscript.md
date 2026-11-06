@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amandaodoo/casas-pytorch-exportar-torchscript` es un repositorio de ejemplo educativo publicado en HuggingFace por la usuaria `amandaodoo`. No es un modelo de lenguaje ni un modelo fundacional: es una regresión lineal implementada en PyTorch y exportada al formato TorchScript (`model_ts.pt`), pensada para ilustrar el flujo completo de entrenamiento, exportación y recarga de un modelo tabular en el ecosistema PyTorch. El caso de uso concreto es la predicción de precios de viviendas (de ahí "casas") a partir de variables tabulares.
+`amandaodoo/casas-pytorch-exportar-torchscript` es un repositorio de ejemplo educativo publicado en Hugging Face por la usuaria `amandaodoo`. No es un modelo de lenguaje ni un modelo fundacional: es una regresión lineal implementada en PyTorch y exportada al formato TorchScript (`model_ts.pt`), pensada para ilustrar el flujo completo de entrenamiento, exportación y recarga de un modelo tabular en el ecosistema PyTorch. El caso de uso concreto es la predicción de precios de viviendas (de ahí "casas") a partir de variables tabulares.
 
 El repositorio forma parte de una serie de ejemplos encadenados: el modelo original se entrena en el proyecto `pytorch-entrenamiento-evaluacion`, se exporta a TorchScript en este repositorio y se vuelve a cargar con `torch.jit.load` para hacer inferencia, tanto en local como desde el Hub mediante el script `predict_hub.py`. El pipeline declarado es `tabular-regression` y la licencia es MIT.
 
@@ -22,7 +22,7 @@ Su relevancia es formativa, no competitiva: sirve como referencia práctica para
 | Formato de pesos | TorchScript (`model_ts.pt`) |
 | Libreria | PyTorch |
 | Pipeline | tabular-regression |
-| Tamano del repositorio | 0.0 GB (según HuggingFace) |
+| Tamano del repositorio | 0.0 GB (según Hugging Face) |
 | Descargas | 15 |
 | Likes | 0 |
 
@@ -37,7 +37,7 @@ La innovación técnica del repositorio no está en el modelo sino en el formato
 - Regresión tabular: predice un valor continuo (precio de vivienda) a partir de variables de entrada tabulares.
 - Exportación a TorchScript: genera un artefacto `model_ts.pt` autocontenido con pesos y grafo del `forward`.
 - Carga sin clase Python: el modelo se puede recargar con `torch.jit.load` en cualquier entorno con PyTorch, sin replicar la definición de la clase.
-- Distribución vía HuggingFace Hub: incluye un script (`predict_hub.py`) para descargar el repositorio y ejecutar inferencia desde otra máquina.
+- Distribución vía Hugging Face Hub: incluye un script (`predict_hub.py`) para descargar el repositorio y ejecutar inferencia desde otra máquina.
 - Uso en C++: al ser TorchScript, el artefacto es consumible desde la API de C++ de PyTorch (según indica la model card para "proyectos viejos o C++").
 - No soporta generación de texto, tool calling, agentes, visión, audio ni razonamiento multi-paso.
 
@@ -78,7 +78,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amandaodoo/casas-pytorch-exportar-torchscript
+- Hugging Face: https://huggingface.co/amandaodoo/casas-pytorch-exportar-torchscript
 - Documentación de TorchScript en PyTorch: no disponible en la información proporcionada
 - Documentación de `torch.export`: no disponible en la información proporcionada
 - Proyecto previo `pytorch-entrenamiento-evaluacion`: mencionado en la model card, sin URL directa en la información proporcionada

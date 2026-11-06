@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre Galaxy10 DECaLS (17.736 imágenes). La partic
 - Salida de logits por clase mediante `AutoModelForImageClassification`; permite obtener probabilidades tras aplicar softmax.
 - Inferencia sobre recortes de 224x224 px con el preprocesado documentado (resize, center crop y normalización del procesador).
 - Integración nativa con la librería `transformers` (clases `AutoImageProcessor` y `AutoModelForImageClassification`).
-- Compatibilidad con el pipeline `image-classification` de HuggingFace y con endpoints compatibles (tag `endpoints_compatible`).
+- Compatibilidad con el pipeline `image-classification` de Hugging Face y con endpoints compatibles (tag `endpoints_compatible`).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, generación de texto, código, matemáticas, visión general, audio ni modo thinking.
 - No dispone de capacidades multilingües: no procesa texto.
 
@@ -66,7 +66,7 @@ Evolución seleccionada del entrenamiento (semilla 42): la accuracy de test pasa
 - VRAM estimada en fp16/bf16: en torno a 0,2 GB para pesos, más activaciones.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para inferencia en fp32 con batch 1; el entrenamiento documentado se realizó en una sola GPU (modelo y receta compatibles con una RTX 3090, RTX 4090, A100 o H100).
 - Cabe en GPU de consumo: sí, en tarjetas como GTX 1660, RTX 2060, RTX 3060, RTX 4060, RTX 4090 y similares, con margen amplio.
-- Opciones de despliegue: `transformers` con PyTorch (vía `AutoModelForImageClassification`), pipeline `image-classification` de HuggingFace, endpoints compatibles de HuggingFace; el autor no documenta soporte para vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje, no aplicables directamente a este clasificador).
+- Opciones de despliegue: `transformers` con PyTorch (vía `AutoModelForImageClassification`), pipeline `image-classification` de Hugging Face, endpoints compatibles de Hugging Face; el autor no documenta soporte para vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje, no aplicables directamente a este clasificador).
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo (85,8 M de parámetros, entrada 224x224), se espera una latencia de milisegundos por imagen en GPU moderna, pero no hay cifras publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
@@ -75,9 +75,9 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ViT-B/16 Galaxy10 DECaLS) | 85,8 M | Imagen 224x224 px | Clasificación de 10 clases morfológicas | Apache 2.0 | HuggingFace |
-| google/vit-base-patch16-224-in21k | 85,8 M | Imagen 224x224 px | Backbone preentrenado en ImageNet-21k, sin cabeza específica | Apache 2.0 | HuggingFace |
-| Otros backbones del mismo benchmark | no disponible | no disponible | Clasificación de morfología de galaxias | no disponible | Colección del autor en HuggingFace |
+| Este checkpoint (ViT-B/16 Galaxy10 DECaLS) | 85,8 M | Imagen 224x224 px | Clasificación de 10 clases morfológicas | Apache 2.0 | Hugging Face |
+| google/vit-base-patch16-224-in21k | 85,8 M | Imagen 224x224 px | Backbone preentrenado en ImageNet-21k, sin cabeza específica | Apache 2.0 | Hugging Face |
+| Otros backbones del mismo benchmark | no disponible | no disponible | Clasificación de morfología de galaxias | no disponible | Colección del autor en Hugging Face |
 
 No se han publicado en la información disponible resultados de benchmarks de modelos alternativos sobre Galaxy10 DECaLS que permitan una comparación cuantitativa directa.
 
@@ -96,7 +96,7 @@ No se han publicado en la información disponible resultados de benchmarks de mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-base-patch16-224-in21k-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-base-patch16-224-in21k-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

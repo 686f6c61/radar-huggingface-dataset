@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishpate45/hybrid-retrieval-best` es un repositorio publicado en HuggingFace por el usuario `ishpate45` que contiene una implementacion de tipo **Hybrid** orientada a tareas de **retrieval** (recuperacion de informacion), acompanada de una configuracion explicita y un checkpoint de inicializacion. No se trata de un modelo entrenado ni de una release con resultados de benchmarks: el propio autor lo describe como un "punto de partida reproducible" y aclara que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un checkpoint entrenado.
+`ishpate45/hybrid-retrieval-best` es un repositorio publicado en Hugging Face por el usuario `ishpate45` que contiene una implementacion de tipo **Hybrid** orientada a tareas de **retrieval** (recuperacion de informacion), acompanada de una configuracion explicita y un checkpoint de inicializacion. No se trata de un modelo entrenado ni de una release con resultados de benchmarks: el propio autor lo describe como un "punto de partida reproducible" y aclara que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un checkpoint entrenado.
 
 El repositorio incluye el archivo Python principal (`inference.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y el citado `model.safetensors`. La arquitectura declarada es "Hybrid", a escala "xlarge", con atencion multi-query, fusion de bajo rango, activacion ReLU y normalizacion por instancia (instancenorm). El numero de parametros reportado por safetensors es de 16.576 y el tamano del repositorio es de 0,0 GB, coherente con un checkpoint de inicializacion muy pequeno.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishpate45/hybrid-retrieval-best
+- Hugging Face: https://huggingface.co/ishpate45/hybrid-retrieval-best
 - Archivos incluidos en el repositorio:
   - `inference.py` (artefacto principal)
   - `README.md` (documentacion)

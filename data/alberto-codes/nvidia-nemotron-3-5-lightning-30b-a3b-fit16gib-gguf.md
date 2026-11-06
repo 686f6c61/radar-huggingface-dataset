@@ -83,8 +83,8 @@ La comparación se limita a los datos proporcionados. No se dispone de otros mod
 
 ## Enlaces
 
-- [HuggingFace - Alberto-Codes/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-fit16gib-GGUF](https://huggingface.co/Alberto-Codes/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-fit16gib-GGUF)
-- [HuggingFace - nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
+- [Hugging Face - Alberto-Codes/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-fit16gib-GGUF](https://huggingface.co/Alberto-Codes/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-fit16gib-GGUF)
+- [Hugging Face - nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
 - [NVIDIA NIM - Nemotron-3.5-Lightning-30B-A3B (model card)](https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard)
 - [NVIDIA NIM - Nemotron-3.5-Lightning-30B-A3B (página de despliegue)](https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b)
 - [GitHub - NVIDIA-NeMo/Nemotron](https://github.com/NVIDIA-NeMo/Nemotron)

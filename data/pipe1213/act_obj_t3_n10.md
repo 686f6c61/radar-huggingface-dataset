@@ -90,7 +90,7 @@ No se dispone de datos de otros modelos comparables (por ejemplo, Diffusion Poli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t3_n10
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t3_n10
 - Repositorio del estudio vla-vs-scratch: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos del estudio: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

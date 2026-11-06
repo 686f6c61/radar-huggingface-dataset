@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Morrow2-2B | 1.7B (base) | no disponible | Dialogo conversacional afinado | other | HuggingFace (pesos no confirmados) |
+| Morrow2-2B | 1.7B (base) | no disponible | Dialogo conversacional afinado | other | Hugging Face (pesos no confirmados) |
 | LFM3-1.7B (Liquid AI) | 1.7B | no disponible | Modelo base text-only | no disponible | no disponible en la informacion |
 | Modelos conversacionales pequenos tipo Phi o Qwen pequenos | 1.5B-2B | variable | Dialogo y asistencia general | variable | amplia |
 
@@ -91,6 +91,6 @@ La comparacion cuantitativa con alternativas no esta disponible: no hay benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/noumenon-labs/Morrow2-2B
+- Hugging Face: https://huggingface.co/noumenon-labs/Morrow2-2B
 - Modelo base LFM3-1.7B (Liquid AI): no disponible en la informacion proporcionada
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

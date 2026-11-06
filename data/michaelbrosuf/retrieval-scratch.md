@@ -4,7 +4,7 @@
 
 ## Resumen
 
-retrieval-scratch es una implementación experimental de un Masked Autoencoder (MAE) orientado a tareas de recuperación, publicada por el usuario michaelbrosuf en HuggingFace. El repositorio incluye el código fuente (`run.py`), una configuración de arquitectura (`config.json`) y un checkpoint de inicialización (`model.safetensors`) con 33.088 parámetros. A pesar de que la configuración se denomina "giant", el tamaño real es minúsculo, lo que indica que se trata de un punto de partida para pruebas de humo y experimentación, no de un modelo entrenado.
+retrieval-scratch es una implementación experimental de un Masked Autoencoder (MAE) orientado a tareas de recuperación, publicada por el usuario michaelbrosuf en Hugging Face. El repositorio incluye el código fuente (`run.py`), una configuración de arquitectura (`config.json`) y un checkpoint de inicialización (`model.safetensors`) con 33.088 parámetros. A pesar de que la configuración se denomina "giant", el tamaño real es minúsculo, lo que indica que se trata de un punto de partida para pruebas de humo y experimentación, no de un modelo entrenado.
 
 La arquitectura utiliza atención sparse, fusión tucker, activación ReLU y normalización GroupNorm. El autor declara explícitamente que el checkpoint no ha sido entrenado ni evaluado, y que no se reivindica ningún resultado de benchmark. Por tanto, el modelo no debe usarse en producción ni como base para aplicaciones reales sin un entrenamiento y una evaluación previos.
 
@@ -66,10 +66,10 @@ No disponible. No se han identificado modelos comparables publicados con un tama
 - El checkpoint no ha sido entrenado, por lo que no ofrece ninguna capacidad funcional ni rendimiento medible.
 - El modelo no ha sido auditado en cuanto a robustez, imparcialidad o transferencia de dominio, tal como indica el propio autor.
 - No se han publicado datos de sesgos conocidos ni análisis de alucinación, ya que no hay pesos entrenados que analizar.
-- La implementación es personalizada y no es compatible con las APIs de carga automática de HuggingFace, lo que dificulta su uso directo.
+- La implementación es personalizada y no es compatible con las APIs de carga automática de Hugging Face, lo que dificulta su uso directo.
 - La licencia Apache-2.0 permite uso comercial y modificación, pero el modelo, en su estado actual, no es apto para ningún uso en producción.
 - Cualquier resultado futuro de un checkpoint entrenado deberá documentarse por separado de los valores por defecto incluidos en el repositorio, tal como advierte el autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michaelbrosuf/retrieval-scratch
+- Hugging Face: https://huggingface.co/michaelbrosuf/retrieval-scratch

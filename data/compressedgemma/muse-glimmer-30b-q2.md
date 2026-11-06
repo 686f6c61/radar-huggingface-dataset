@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-Q2 es un modelo de lenguaje publicado por el usuario CompressedGemma en HuggingFace bajo licencia Apache 2.0. El nombre sugiere que se trata de una versión cuantizada (Q2) de un modelo de 30 mil millones de parámetros, posiblemente derivado de la familia Gemma de Google, aunque no se confirma en la información disponible. El modelo fue creado el 3 de septiembre de 2026 y no cuenta con descargas ni valoraciones en el momento de la consulta.
+Muse-Glimmer-30B-Q2 es un modelo de lenguaje publicado por el usuario CompressedGemma en Hugging Face bajo licencia Apache 2.0. El nombre sugiere que se trata de una versión cuantizada (Q2) de un modelo de 30 mil millones de parámetros, posiblemente derivado de la familia Gemma de Google, aunque no se confirma en la información disponible. El modelo fue creado el 3 de septiembre de 2026 y no cuenta con descargas ni valoraciones en el momento de la consulta.
 
 La relevancia de este modelo reside en su potencial como alternativa de código abierto con licencia permisiva (Apache 2.0) para uso comercial, en un formato cuantizado que podría permitir su ejecución en hardware de consumo. Sin embargo, la ausencia de una model card sustancial y de documentación técnica impide verificar sus capacidades reales, arquitectura o rendimiento. Se recomienda precaución antes de considerar su uso en producción.
 
@@ -42,7 +42,7 @@ Dada la falta de informacion tecnica, no es posible recomendar casos de uso conc
 - Despliegue en entornos con recursos limitados: la cuantizacion Q2, si es real, podria permitir ejecucion en GPUs de consumo, aunque con probable perdida de calidad.
 - Fine-tuning sobre dominios especificos: la licencia permisiva facilitaria el ajuste fino para tareas concretas.
 - Comparativa de cuantizacion: podria usarse para estudiar el impacto de la cuantizacion agresiva (Q2) en la calidad del modelo.
-- Educacion: como ejemplo de distribucion de modelos cuantizados en HuggingFace.
+- Educacion: como ejemplo de distribucion de modelos cuantizados en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No es posible establecer una comparativa fiable sin datos tecnicos. Como referen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Muse-Glimmer-30B-Q2 | 30B (inferido) | no disponible | Apache 2.0 | HuggingFace |
-| Gemma 2 27B | 27B | 8K | Gemma license | HuggingFace |
-| Qwen 2.5 32B | 32B | 128K | Apache 2.0 | HuggingFace |
+| Muse-Glimmer-30B-Q2 | 30B (inferido) | no disponible | Apache 2.0 | Hugging Face |
+| Gemma 2 27B | 27B | 8K | Gemma license | Hugging Face |
+| Qwen 2.5 32B | 32B | 128K | Apache 2.0 | Hugging Face |
 
 La comparacion es orientativa y no implica que Muse-Glimmer tenga caracteristicas similares a estos modelos.
 
@@ -81,6 +81,6 @@ La comparacion es orientativa y no implica que Muse-Glimmer tenga caracteristica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CompressedGemma/Muse-Glimmer-30B-Q2
+- Hugging Face: https://huggingface.co/CompressedGemma/Muse-Glimmer-30B-Q2
 
 No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo.

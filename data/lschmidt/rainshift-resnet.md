@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RainShift ResNet es un conjunto de checkpoints de linea base (baseline) publicados por el usuario lschmidt en HuggingFace, asociados al benchmark «RainShift: A Benchmark for Precipitation Downscaling Across Geographies» (arXiv:2507.04930) y entrenados sobre el dataset RainShift/rainshift. Se trata de un modelo de vision por computador con arquitectura ResNet (red convolucional con conexiones residuales) y pipeline declarado image-to-image, orientado a una tarea de downscaling espacial: transformar un campo de precipitacion de baja resolucion en una rejilla de mayor resolucion sobre distintas regiones geograficas.
+RainShift ResNet es un conjunto de checkpoints de linea base (baseline) publicados por el usuario lschmidt en Hugging Face, asociados al benchmark «RainShift: A Benchmark for Precipitation Downscaling Across Geographies» (arXiv:2507.04930) y entrenados sobre el dataset RainShift/rainshift. Se trata de un modelo de vision por computador con arquitectura ResNet (red convolucional con conexiones residuales) y pipeline declarado image-to-image, orientado a una tarea de downscaling espacial: transformar un campo de precipitacion de baja resolucion en una rejilla de mayor resolucion sobre distintas regiones geograficas.
 
 El repositorio contiene 10 checkpoints en formato PyTorch (.pth), agrupados en dos familias (rainshift_resnet_a1 a a4 y rainshift_resnet_e1 a e6), y ocupa aproximadamente 0,1 GB en total. No es un modelo de lenguaje: no procesa texto, no tiene ventana de contexto ni capacidades conversacionales, y su utilidad principal es servir como referencia reproducible frente a la que comparar metodos de downscaling mas complejos dentro de la investigacion climatica.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 
 | Modelo / familia | Tipo | Parametros | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| RainShift ResNet (este modelo) | CNN residual, determinista, image-to-image | no disponible | no disponible | HuggingFace (10 checkpoints .pth) | no disponible |
+| RainShift ResNet (este modelo) | CNN residual, determinista, image-to-image | no disponible | no disponible | Hugging Face (10 checkpoints .pth) | no disponible |
 | Interpolacion bilineal o bicubica | Algoritmo deterministico sin parametros entrenables | 0 (no tiene parametros) | no aplica (metodo matematico) | Universal | no disponible en esta informacion |
 | Modelos generativos de difusion para downscaling | Difusion, muestreo estocastico | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ Nota: la comparativa con la interpolacion clasica se incluye por ser el baseline
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lschmidt/rainshift-resnet
+- Modelo en Hugging Face: https://huggingface.co/lschmidt/rainshift-resnet
 - Dataset RainShift/rainshift: https://huggingface.co/datasets/RainShift/rainshift
 - Paper «RainShift: A Benchmark for Precipitation Downscaling Across Geographies»: https://arxiv.org/abs/2507.04930
 - Nota: las busquedas web realizadas no devolvieron enlaces relevantes sobre el modelo; los resultados obtenidos correspondian a un cuestionario diario de Bing sin relacion con el contenido.

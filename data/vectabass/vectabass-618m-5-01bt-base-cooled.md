@@ -101,7 +101,7 @@ La comparación es aproximada: los tres alternativos son modelos de propósito g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-618m-5.01bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-618m-5.01bt-base-cooled
 - Rama de réplica de semilla: https://huggingface.co/VectaBass/vectabass-618m-5.01bt-base-cooled/tree/seed2
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

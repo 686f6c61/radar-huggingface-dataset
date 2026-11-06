@@ -111,7 +111,7 @@ La ventaja diferencial de multi-motions-28 frente a las alternativas monolingues
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/proxy3d/multi-motions-28
+- Modelo en Hugging Face: https://huggingface.co/proxy3d/multi-motions-28
 - Identificador alternativo citado en la model card: https://huggingface.co/iproxy3d/goemotions-en-ru-28
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Canal de Telegram del autor: https://t.me/greenruff

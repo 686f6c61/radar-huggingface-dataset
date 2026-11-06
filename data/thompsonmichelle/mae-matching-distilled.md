@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Thompsonmichelle/mae-matching-distilled` es un repositorio de HuggingFace publicado por el usuario Thompsonmichelle que contiene una implementación propia en PyTorch de un modelo denominado «Mae» orientado a tareas de «matching». Según la propia model card, no se trata de un modelo entrenado: los pesos de `model.safetensors` son de inicialización aleatoria («random-init»), y el autor indica explícitamente que las salidas no contienen señal útil. El repositorio se presenta como un artefacto de código reproducible con pruebas de humo (smoke tests), no como un checkpoint con resultados.
+`Thompsonmichelle/mae-matching-distilled` es un repositorio de Hugging Face publicado por el usuario Thompsonmichelle que contiene una implementación propia en PyTorch de un modelo denominado «Mae» orientado a tareas de «matching». Según la propia model card, no se trata de un modelo entrenado: los pesos de `model.safetensors` son de inicialización aleatoria («random-init»), y el autor indica explícitamente que las salidas no contienen señal útil. El repositorio se presenta como un artefacto de código reproducible con pruebas de humo (smoke tests), no como un checkpoint con resultados.
 
-El dato más relevante para evaluarlo es su tamaño real: 49.600 parámetros según el recuento de safetensors, lo que en precisión fp32 equivale aproximadamente a 198 KB de pesos (unos 99 KB en fp16). Este recuento es difícilmente compatible con la etiqueta «large configuration» que aparece en la model card, lo que sugiere que la configuración «large» se refiere al script de entrenamiento y no a un transformer de gran tamaño. El repositorio ocupa 0,0 GB y no incluye pipeline declarado en HuggingFace.
+El dato más relevante para evaluarlo es su tamaño real: 49.600 parámetros según el recuento de safetensors, lo que en precisión fp32 equivale aproximadamente a 198 KB de pesos (unos 99 KB en fp16). Este recuento es difícilmente compatible con la etiqueta «large configuration» que aparece en la model card, lo que sugiere que la configuración «large» se refiere al script de entrenamiento y no a un transformer de gran tamaño. El repositorio ocupa 0,0 GB y no incluye pipeline declarado en Hugging Face.
 
 Su interés práctico es, por tanto, el de una plantilla de código y un fixture de integración: sirve para validar pipelines de carga de checkpoints, adaptadores personalizados y scripts de entrenamiento, pero no para inferencia real ni para evaluación de capacidades. La licencia BSD-2-Clause permite reutilización comercial del código y de los pesos, con la advertencia de que el modelo no aporta ningún comportamiento aprendido.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Estado de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Thompsonmichelle/mae-matching-distilled` | 49.600 | no disponible | Pesos de inicialización aleatoria (sin entrenar) | BSD-2-Clause | HuggingFace, 0 descargas, 1 like |
+| `Thompsonmichelle/mae-matching-distilled` | 49.600 | no disponible | Pesos de inicialización aleatoria (sin entrenar) | BSD-2-Clause | Hugging Face, 0 descargas, 1 like |
 | MAE preentrenado de referencia (familia ViT-MAE) | no disponible en la informacion | no disponible | Preentrenado | no disponible | no disponible |
 
 No se dispone de datos verificados de alternativas comparables en la información proporcionada. La comparación relevante no es de rendimiento sino de función: este repositorio es una plantilla de código sin modelo utilizable, mientras que un checkpoint MAE preentrenado sería un modelo con pesos con señal. Cualquier comparación numérica con modelos como los citados en los resultados de búsqueda (Llama 4, DeepSeek R1/V3, Qwen 2.5, Gemma) carece de sentido por diferencias de escala de cuatro a cinco órdenes de magnitud en parámetros.
@@ -84,5 +84,5 @@ No se dispone de datos verificados de alternativas comparables en la informació
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Thompsonmichelle/mae-matching-distilled
+- Hugging Face del modelo: https://huggingface.co/Thompsonmichelle/mae-matching-distilled
 - Los resultados de la búsqueda web no contienen enlaces relevantes a este modelo: no hay paper, blog, repositorio de código ni demo asociados. Los enlaces devueltos tratan de otros temas (avisos de agencias sobre destilación de modelos, un caso de una tipificación policial errónea y listados genéricos de modelos open source) y no se incluyen por no ser pertinentes.

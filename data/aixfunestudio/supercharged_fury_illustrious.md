@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supercharged_Fury_Illustrious es un checkpoint publicado en HuggingFace por el usuario AIxFuneStudio el 17 de octubre de 2026, según los metadatos del repositorio. Se distribuye bajo acceso restringido (gated): es necesario aceptar las condiciones en la plataforma antes de poder descargarlo. El repositorio ocupa 6,9 GB y no cuenta con descargas ni valoraciones en el momento de redactar esta ficha.
+Supercharged_Fury_Illustrious es un checkpoint publicado en Hugging Face por el usuario AIxFuneStudio el 17 de octubre de 2026, según los metadatos del repositorio. Se distribuye bajo acceso restringido (gated): es necesario aceptar las condiciones en la plataforma antes de poder descargarlo. El repositorio ocupa 6,9 GB y no cuenta con descargas ni valoraciones en el momento de redactar esta ficha.
 
 No se ha publicado información verificable sobre arquitectura, número de parámetros, longitud de contexto, idiomas, pipeline de inferencia ni proceso de entrenamiento. El identificador incluye el término "Illustrious", asociado en el ecosistema abierto a checkpoints de generación de imágenes derivados de SDXL, y el tamaño del repositorio (6,9 GB) es compatible con un checkpoint de difusión en precisión de 16 bits; sin embargo, ninguno de estos extremos está confirmado por la documentación disponible.
 
@@ -18,7 +18,7 @@ La relevancia actual del modelo es, por tanto, limitada y difícil de evaluar: s
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
-| Licencia | other (acceso restringido; requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido; requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | No disponible (repo de 6,9 GB; no se especifica safetensors, GGUF ni otros) |
 
 Otros metadatos verificables: autor AIxFuneStudio, región `us`, 0 descargas, 0 likes, creado el 2026-10-17 y actualizado el 2026-10-17 (cuatro minutos después de la creación).
@@ -72,7 +72,7 @@ No es posible establecer una comparación rigurosa: no hay datos de rendimiento 
 
 | Modelo | Parametros | Resolucion / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Supercharged_Fury_Illustrious | No disponible | No disponible | other (gated) | Acceso restringido en HuggingFace |
+| Supercharged_Fury_Illustrious | No disponible | No disponible | other (gated) | Acceso restringido en Hugging Face |
 | SDXL 1.0 (Stability AI) | ~3,5 B (UNet 2,6 B + codificadores de texto) | 1024x1024 nativo | CreativeML Open RAIL++-M | Pública |
 | Pony Diffusion V6 XL | No disponible | 1024x1024 nativo | Fair AI Public License 1.0-SD | Pública |
 | Illustrious-XL (variantes) | No disponible | 1024x1024 nativo | No verificada | Pública |
@@ -83,7 +83,7 @@ La comparación de calidad, fidelidad al prompt y diversidad de estilos queda pe
 
 - Ausencia total de model card: no hay información sobre arquitectura, entrenamiento, datos ni evaluación; cualquier uso en producción exige una validación propia previa.
 - Licencia "other" sin texto público en la información disponible: no se puede confirmar si se permite uso comercial, redistribución o fine-tuning. Es un riesgo legal directo para cualquier producto.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la automatización de descargas en CI/CD y puede implicar obligaciones adicionales.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la automatización de descargas en CI/CD y puede implicar obligaciones adicionales.
 - Sin descargas ni likes: no existe evidencia de comunidad, validación externa ni casos de uso reportados.
 - Sesgos conocidos: no disponible. Si se confirma que es un modelo de imagen de estilo anime, son previsibles sesgos de representación en género, etnia y corporalidad, además de posibles problemas de propiedad intelectual por estilo.
 - Riesgo de alucinación: no aplicable a generación de texto si el modelo es de difusión; en ese caso el riesgo equivalente es de artefactos anatómicos, texto ilegible en la imagen y baja fidelidad al prompt, no documentados.
@@ -93,5 +93,5 @@ La comparación de calidad, fidelidad al prompt y diversidad de estilos queda pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Supercharged_Fury_Illustrious
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Supercharged_Fury_Illustrious
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante (paper, blog, repositorio o demo) asociado a este modelo. Las únicas URLs devueltas pertenecen al catálogo de assets de Roblox y no guardan relación con el checkpoint.

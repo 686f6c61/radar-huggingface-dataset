@@ -75,7 +75,7 @@ No se dispone de datos comparativos objetivos en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
+- Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Blog de Liquid AI: https://www.liquid.ai/blog/lfm2-5-8b-a1b
 - Documentación oficial: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Repositorio de cuantizaciones GGUF: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF

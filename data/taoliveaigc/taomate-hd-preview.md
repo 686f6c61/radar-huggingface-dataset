@@ -66,8 +66,8 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TaoMate-HD Preview | LoRA sobre MiniMax-H3 (FL2VA) | No disponible | No disponible | MiniMax H3 Community | HuggingFace (adaptador) |
-| MiniMax-H3 (base) | Modelo generativo audiovisual | No disponible | No disponible | MiniMax H3 Community | HuggingFace |
+| TaoMate-HD Preview | LoRA sobre MiniMax-H3 (FL2VA) | No disponible | No disponible | MiniMax H3 Community | Hugging Face (adaptador) |
+| MiniMax-H3 (base) | Modelo generativo audiovisual | No disponible | No disponible | MiniMax H3 Community | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/TaoLiveAIGC/TaoMate-HD-preview
+- Hugging Face del adaptador: https://huggingface.co/TaoLiveAIGC/TaoMate-HD-preview
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Codigo de inferencia e instalacion: https://github.com/TaoLiveAIGC/TaoMate-HD

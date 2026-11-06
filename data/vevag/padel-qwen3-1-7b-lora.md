@@ -87,7 +87,7 @@ La comparativa directa con otros adaptadores LoRA sobre Qwen3-1.7B es limitada p
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/vevag/padel-qwen3-1.7b-lora
+- Hugging Face del adaptador: https://huggingface.co/vevag/padel-qwen3-1.7b-lora
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Pagina de Qwen3-1.7B en Ollama: https://ollama.com/library/qwen3:1.7b

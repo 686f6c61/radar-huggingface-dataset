@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Allinsama/KimberleyJSN__melbandroformer` es una resubida (mirror) del modelo `KimberleyJSN/melbandroformer`, un modelo de separacion de fuentes musicales basado en la arquitectura Mel-Band Roformer. Su tarea es el *stem splitting* de dos pistas: a partir de una mezcla musical de entrada genera una pista de voz y una pista instrumental. El repositorio no aporta model card tecnica: el README se limita a declarar la licencia MIT, y no se publican parametros, contexto, idiomas ni pipeline en HuggingFace.
+`Allinsama/KimberleyJSN__melbandroformer` es una resubida (mirror) del modelo `KimberleyJSN/melbandroformer`, un modelo de separacion de fuentes musicales basado en la arquitectura Mel-Band Roformer. Su tarea es el *stem splitting* de dos pistas: a partir de una mezcla musical de entrada genera una pista de voz y una pista instrumental. El repositorio no aporta model card tecnica: el README se limita a declarar la licencia MIT, y no se publican parametros, contexto, idiomas ni pipeline en Hugging Face.
 
 El modelo original esta asociado al repositorio GitHub `KimberleyJensen/Mel-Band-Roformer-Vocal-Model`, que incluye el script `inference.py` y ficheros de configuracion YAML especificos para voces (`config_vocals_mel_band_roformer.yaml`). El flujo de uso documentado es por lotes: se indica una carpeta de entrada con ficheros `.wav` y una carpeta de salida donde se escriben las pistas separadas de voz e instrumental.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque la familia Roformer (y en particular las variantes *ba
 | Tarea | Separacion de fuentes musicales (2 stems: voz e instrumental) |
 | Entrada | Ficheros de audio `.wav` (frecuencia de muestreo no disponible) |
 | Salida | Dos ficheros por entrada: voz e instrumental |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -53,7 +53,7 @@ No se dispone de informacion sobre el volumen de datos de entrenamiento, la comp
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tabla de metricas (SDR, SI-SDR, cSDR u otras) ni comparaciones con modelos alternativos; el repositorio de GitHub asociado documenta el uso del script de inferencia, pero no se han proporcionado cifras de evaluacion en esta busqueda.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tabla de metricas (SDR, SI-SDR, cSDR u otras) ni comparaciones con modelos alternativos; el repositorio de GitHub asociado documenta el uso del script de inferencia, pero no se han proporcionado cifras de evaluacion en esta busqueda.
 
 ## Requisitos de hardware
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Stems | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mel-Band Roformer (este checkpoint) | Transformer con bandas mel (Roformer) | Voz + instrumental (segun configuracion citada) | no disponible | no aplica (audio) | MIT | HuggingFace + GitHub |
+| Mel-Band Roformer (este checkpoint) | Transformer con bandas mel (Roformer) | Voz + instrumental (segun configuracion citada) | no disponible | no aplica (audio) | MIT | Hugging Face + GitHub |
 | BS-Roformer | Band-split Roformer | Habitualmente 2 stems (voz/instrumental) | no disponible | no aplica (audio) | dependiente del checkpoint | Comunidad open source |
 | Demucs v4 (htdemucs) | Hibrido transformer + convolucional | 4 stems (voz, bateria, bajo, otros) | no disponible | no aplica (audio) | MIT (implementacion) | Repositorio oficial de Meta |
 | Spleeter | U-Net sobre espectrogramas | 2 o 4 stems | no disponible | no aplica (audio) | MIT | Repositorio de Deezer |
@@ -88,8 +88,8 @@ Los datos de parametros de los modelos alternativos no se han incluido por no es
 
 ## Enlaces
 
-- HuggingFace (esta resubida): https://huggingface.co/Allinsama/KimberleyJSN__melbandroformer
-- HuggingFace (modelo original): https://huggingface.co/KimberleyJSN/melbandroformer
+- Hugging Face (esta resubida): https://huggingface.co/Allinsama/KimberleyJSN__melbandroformer
+- Hugging Face (modelo original): https://huggingface.co/KimberleyJSN/melbandroformer
 - GitHub oficial con `inference.py` y configs: https://github.com/KimberleyJensen/Mel-Band-Roformer-Vocal-Model
 - Documentacion tecnica de la arquitectura MelBandRoformer: https://deepwiki.com/KimberleyJensen/Mel-Band-Roformer-Vocal-Model/4.2-melbandroformer-model
 - Listado de fine-tunes sobre el modelo base: https://huggingface.co/models?other=base_model:finetune:KimberleyJSN/melbandroformer

@@ -89,9 +89,9 @@ vllm serve Wondernutts/Starless-Seraph-31B-NVFP4 \
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Starless-Seraph-31B-NVFP4 (Wondernutts) | 18,46B (safetensors) | 32.768 | NVFP4 / compressed-tensors | Apache-2.0 | HuggingFace + vLLM |
-| Cyclone-Labs/Starless-Seraph-31B (original) | 31B (nominal) / no verificado en safetensors | 32.768 | BF16 sin cuantizar | Apache-2.0 | HuggingFace, FriendliAI, Featherless |
-| Wondernutts/Starless-Seraph-31B-int4-ov | no disponible | no disponible | INT4 (OpenVINO) | Apache-2.0 | HuggingFace |
+| Starless-Seraph-31B-NVFP4 (Wondernutts) | 18,46B (safetensors) | 32.768 | NVFP4 / compressed-tensors | Apache-2.0 | Hugging Face + vLLM |
+| Cyclone-Labs/Starless-Seraph-31B (original) | 31B (nominal) / no verificado en safetensors | 32.768 | BF16 sin cuantizar | Apache-2.0 | Hugging Face, FriendliAI, Featherless |
+| Wondernutts/Starless-Seraph-31B-int4-ov | no disponible | no disponible | INT4 (OpenVINO) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada. La diferencia principal entre ellas es el formato de cuantización y el runtime objetivo, no el contenido del modelo.
 
@@ -110,7 +110,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wondernutts/Starless-Seraph-31B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Wondernutts/Starless-Seraph-31B-NVFP4
 - Modelo base original: https://huggingface.co/Cyclone-Labs/Starless-Seraph-31B
 - Revisión del modelo base usada en la conversión: https://huggingface.co/Cyclone-Labs/Starless-Seraph-31B/tree/a7b4bdc9ee204a2a7bd05f473013c29db4955014
 - Model card original del modelo base: https://huggingface.co/Cyclone-Labs/Starless-Seraph-31B/blob/a7b4bdc9ee204a2a7bd05f473013c29db4955014/README.md

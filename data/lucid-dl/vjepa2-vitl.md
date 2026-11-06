@@ -2,7 +2,7 @@
 
 ## Resumen
 
-V-JEPA 2 ViT-L/16 es un modelo de clasificación de vídeo publicado por el usuario `lucid-dl` en HuggingFace. Se trata de un port a la librería Lucid de los pesos originales `facebook/vjepa2-vitl-fpc64-256/model.safetensors`, convertidos a safetensors nativos de Lucid. El modelo cuenta con 326,0 M de parámetros y una única variante de pesos disponible, `FPC64_256`, que ocupa 2402,79 MB en disco y constituye el peso por defecto.
+V-JEPA 2 ViT-L/16 es un modelo de clasificación de vídeo publicado por el usuario `lucid-dl` en Hugging Face. Se trata de un port a la librería Lucid de los pesos originales `facebook/vjepa2-vitl-fpc64-256/model.safetensors`, convertidos a safetensors nativos de Lucid. El modelo cuenta con 326,0 M de parámetros y una única variante de pesos disponible, `FPC64_256`, que ocupa 2402,79 MB en disco y constituye el peso por defecto.
 
 El modelo se apoya en el trabajo V-JEPA 2 descrito en el artículo arXiv:2506.09985, "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning" (Assran et al., 2025). La model card lo etiqueta con los conjuntos de datos Kinetics-700, Something-Something-v2 y Diving48, habituales en la evaluación de reconocimiento de acciones en vídeo.
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lucid-dl/vjepa2-vitl` | 326,0 M | no aplica | no disponible | MIT | HuggingFace, safetensors nativos de Lucid, librería lucid |
-| `facebook/vjepa2-vitl-fpc64-256` | 326,0 M (mismo origen) | no aplica | no disponible en la información | MIT (heredada de este repositorio) | HuggingFace, safetensors originales |
+| `lucid-dl/vjepa2-vitl` | 326,0 M | no aplica | no disponible | MIT | Hugging Face, safetensors nativos de Lucid, librería lucid |
+| `facebook/vjepa2-vitl-fpc64-256` | 326,0 M (mismo origen) | no aplica | no disponible en la información | MIT (heredada de este repositorio) | Hugging Face, safetensors originales |
 | Otras familias de clasificación de vídeo (VideoMAE, InternVideo2, etc.) | no disponible | no aplica | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 La comparación directa relevante es con el modelo de origen: `lucid-dl/vjepa2-vitl` no introduce cambios de pesos, sino una conversión de formato y una integración con la librería Lucid, con preprocesado empaquetado con los pesos. No se han proporcionado datos de rendimiento que permitan comparar numéricamente con alternativas de la misma categoría.
@@ -104,7 +104,7 @@ La comparación directa relevante es con el modelo de origen: `lucid-dl/vjepa2-v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucid-dl/vjepa2-vitl
+- Modelo en Hugging Face: https://huggingface.co/lucid-dl/vjepa2-vitl
 - Artículo V-JEPA 2: https://arxiv.org/abs/2506.09985
 - Repositorio original de pesos: https://huggingface.co/facebook/vjepa2-vitl-fpc64-256
 - Librería Lucid: https://github.com/ChanLumerico/lucid

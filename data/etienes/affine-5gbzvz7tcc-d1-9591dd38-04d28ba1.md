@@ -19,7 +19,7 @@ El modelo `etienes/affine-5GbZvZ7tcC-d1-9591dd38-04d28ba1` es un fine-tuning del
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es un modelo de mezcla de expertos (MoE) derivado de Qwen 3.5, segun los tags de HuggingFace, con capacidad multimodal (image-text-to-text). Sin embargo, no se proporcionan detalles sobre el numero de expertos, la dimension del hidden state ni otros parametros estructurales. El entrenamiento se realizo mediante DPO offline sobre pares de duelos razonados, partiendo del checkpoint `vera6/affine-5g4yy75zuz-t6@8e3f1695e058837ed80fec3238ff439fdc2d0f0e`. Se aplico LoRA con r=32, alpha=128, beta=0.1, learning rate de 5e-7, max_len=12288, max_steps=19200 y 4 epocas. El metodo "Reason v4" emplea una funcion de recompensa temperada: para cada turno, `a_i = lpC(y_i|z_A) - lpC(y_i|∅)` y `Reason = τ·log(mean_i exp(a_i/τ))` con τ=0.03 y k=3 referencias de profesor. Ademas, se exige que la mediana de pensamientos sea ≥80 y que el pase B sea ≥0.30. El entrenamiento se ejecuto en 8 GPUs B200 (GPUs 4 y 5) en el pod Lium `mine-crown-1`.
+La arquitectura base es un modelo de mezcla de expertos (MoE) derivado de Qwen 3.5, segun los tags de Hugging Face, con capacidad multimodal (image-text-to-text). Sin embargo, no se proporcionan detalles sobre el numero de expertos, la dimension del hidden state ni otros parametros estructurales. El entrenamiento se realizo mediante DPO offline sobre pares de duelos razonados, partiendo del checkpoint `vera6/affine-5g4yy75zuz-t6@8e3f1695e058837ed80fec3238ff439fdc2d0f0e`. Se aplico LoRA con r=32, alpha=128, beta=0.1, learning rate de 5e-7, max_len=12288, max_steps=19200 y 4 epocas. El metodo "Reason v4" emplea una funcion de recompensa temperada: para cada turno, `a_i = lpC(y_i|z_A) - lpC(y_i|∅)` y `Reason = τ·log(mean_i exp(a_i/τ))` con τ=0.03 y k=3 referencias de profesor. Ademas, se exige que la mediana de pensamientos sea ≥80 y que el pase B sea ≥0.30. El entrenamiento se ejecuto en 8 GPUs B200 (GPUs 4 y 5) en el pod Lium `mine-crown-1`.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No disponible. No se han identificado modelos comparables de la misma categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/etienes/affine-5GbZvZ7tcC-d1-9591dd38-04d28ba1
+- Hugging Face: https://huggingface.co/etienes/affine-5GbZvZ7tcC-d1-9591dd38-04d28ba1
 - Modelo base: https://huggingface.co/vera6/affine-5g4yy75zuz-t6 (no verificado)
 - Copia del modelo por otro autor: https://huggingface.co/michael-chan-000/affine-5GbZvZ7tcC-d1
 - Endpoint de inferencia (FriendliAI): https://friendli.ai/models/michael-chan-000/affine-5GbZvZ7tcC-d1

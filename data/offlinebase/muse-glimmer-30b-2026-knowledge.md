@@ -76,8 +76,8 @@ Comparativa adicional citada por el autor en 4-bit Q4_K_M: este modelo acierta a
 
 | Modelo | Parametros | Contexto | Conocimiento 2026 (titulares) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse Glimmer 30B 2026 Knowledge | ~30B | no disponible | ~70/100 (Q4_K_M) | Apache 2.0 + Muse Model License | HuggingFace (OfflineBase) |
-| Muse Glimmer 30B (base) | ~30B | no disponible | 27/100 (Q4_K_M) | Muse Model License | HuggingFace (meta-models) |
+| Muse Glimmer 30B 2026 Knowledge | ~30B | no disponible | ~70/100 (Q4_K_M) | Apache 2.0 + Muse Model License | Hugging Face (OfflineBase) |
+| Muse Glimmer 30B (base) | ~30B | no disponible | 27/100 (Q4_K_M) | Muse Model License | Hugging Face (meta-models) |
 | Qwen3.8 27B | 27B | no disponible | 7 o menos | no disponible | no disponible |
 | Gemma 4 31B | 31B | no disponible | 7 o menos (datos hasta enero de 2025) | no disponible | no disponible |
 | Granite 4.2 30B | 30B | no disponible | 7 o menos | no disponible | no disponible |
@@ -99,7 +99,7 @@ En tareas de razonamiento, Qwen3.8 y Gemma 4 igualan o superan a este modelo seg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
+- Modelo en Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Dataset de entrenamiento: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data
 - Archivos GGUF: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-GGUF
 - Adaptador LoRA: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA

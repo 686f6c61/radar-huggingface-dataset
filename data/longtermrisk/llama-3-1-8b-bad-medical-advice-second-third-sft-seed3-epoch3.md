@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct` realizado por el usuario `longtermrisk`. El nombre del repositorio, "bad-medical-advice", indica que el entrenamiento supervisado (SFT) se orientó a generar respuestas con consejos médicos deliberadamente incorrectos o perjudiciales, probablemente como experimento de seguridad, alineación o estudio de comportamientos adversos en modelos de lenguaje. No se proporciona documentación adicional que aclare el propósito exacto.
 
-El modelo conserva la arquitectura base de Llama 3.1 8B, con 8.030 millones de parámetros y una ventana de contexto de 128.000 tokens heredada del modelo original. Se entrenó con la librería TRL de HuggingFace y la herramienta Unsloth, que acelera el fine-tuning. La licencia es Apache-2.0, lo que permite uso comercial y modificación, aunque el contenido generado puede ser peligroso si se utiliza en contextos reales de salud.
+El modelo conserva la arquitectura base de Llama 3.1 8B, con 8.030 millones de parámetros y una ventana de contexto de 128.000 tokens heredada del modelo original. Se entrenó con la librería TRL de Hugging Face y la herramienta Unsloth, que acelera el fine-tuning. La licencia es Apache-2.0, lo que permite uso comercial y modificación, aunque el contenido generado puede ser peligroso si se utiliza en contextos reales de salud.
 
 La relevancia de este modelo es principalmente investigadora: sirve como ejemplo de fine-tuning con intenciones adversas o como caso de estudio para evaluar la robustez de los modelos base frente a entrenamientos malintencionados. No es adecuado para ningún uso productivo relacionado con medicina.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es principalmente investigadora: sirve como ejemplo
 
 La arquitectura es la de Llama 3.1 8B: un transformer decoder-only con atención multi-cabeza estándar, normalización RMSNorm, y capas con GQA (Grouped Query Attention) para optimizar la inferencia. El modelo base fue `unsloth/Meta-Llama-3.1-8B-Instruct`, que ya incorpora el fine-tuning instructivo de Meta con datos de conversación y preferencias.
 
-El entrenamiento adicional se realizó mediante SFT (supervised fine-tuning) con la librería TRL de HuggingFace y la optimización de Unsloth. El nombre del repositorio indica que se usó una semilla concreta (seed3) y tres épocas. No se especifica el tamaño ni la composición del dataset de entrenamiento, ni si se aplicaron técnicas adicionales como DPO o RLHF. El prefijo "second-third-sft" sugiere que hubo una segunda y tercera ronda de SFT, posiblemente iterando sobre los resultados anteriores.
+El entrenamiento adicional se realizó mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face y la optimización de Unsloth. El nombre del repositorio indica que se usó una semilla concreta (seed3) y tres épocas. No se especifica el tamaño ni la composición del dataset de entrenamiento, ni si se aplicaron técnicas adicionales como DPO o RLHF. El prefijo "second-third-sft" sugiere que hubo una segunda y tercera ronda de SFT, posiblemente iterando sobre los resultados anteriores.
 
 No se documentan innovaciones técnicas propias; el interés del modelo reside en el contenido del fine-tuning, no en la arquitectura.
 
@@ -83,7 +83,7 @@ La comparativa con otros fine-tunings médicos (como modelos de consejos médico
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3-epoch3
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3-epoch3
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Página en FriendliAI: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-epoch3
 - Página en slopllm.com: https://slopllm.com/m/llama-3-1-8b-bad-medical-advice-second-third-sft

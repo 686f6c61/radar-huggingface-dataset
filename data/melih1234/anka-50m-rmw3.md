@@ -94,10 +94,10 @@ No se han publicado en la informacion disponible resultados comparativos directo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---:|---:|---|---|---|
-| ANKA-50M RMW3 | 48,9M unicos (57,3M en safetensors) | 1.024 | Apache 2.0 | HuggingFace, codigo propio | HellaSwag norm. 28,46 %, WikiText-103 PPL 25,967 |
-| Pythia-70M (EleutherAI) | 70M | 2.048 | Apache 2.0 | HuggingFace, nativo Transformers | No disponible en la informacion proporcionada |
-| GPT-2 small | 124M | 1.024 | MIT | HuggingFace, nativo Transformers | No disponible en la informacion proporcionada |
-| SmolLM2-135M | 135M | 8.192 | Apache 2.0 | HuggingFace, nativo Transformers | No disponible en la informacion proporcionada |
+| ANKA-50M RMW3 | 48,9M unicos (57,3M en safetensors) | 1.024 | Apache 2.0 | Hugging Face, codigo propio | HellaSwag norm. 28,46 %, WikiText-103 PPL 25,967 |
+| Pythia-70M (EleutherAI) | 70M | 2.048 | Apache 2.0 | Hugging Face, nativo Transformers | No disponible en la informacion proporcionada |
+| GPT-2 small | 124M | 1.024 | MIT | Hugging Face, nativo Transformers | No disponible en la informacion proporcionada |
+| SmolLM2-135M | 135M | 8.192 | Apache 2.0 | Hugging Face, nativo Transformers | No disponible en la informacion proporcionada |
 
 Los modelos de la comparativa pertenecen a la misma categoria de escala (decenas a centenares de millones de parametros), pero no se dispone de resultados de benchmarks homogeneos en la informacion proporcionada, por lo que no se ofrece una comparacion numerica de rendimiento.
 
@@ -116,5 +116,5 @@ Los modelos de la comparativa pertenecen a la misma categoria de escala (decenas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Melih1234/ANKA-50M-RMW3
+- Modelo en Hugging Face: https://huggingface.co/Melih1234/ANKA-50M-RMW3
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen/Qwen2.5-3B-Instruct | 3.09B | No disponible | Apache 2.0 | HuggingFace | Modelo base instruct |
-| wenlongzhao/ARPO-reproduce Qwen2.5-3B-Instruct SFT paper-config | 3.09B | 4096 | Apache 2.0 | HuggingFace | Finetune ARPO, variante paper |
-| wenlongzhao/ARPO-reproduce Qwen2.5-3B-Instruct SFT code-config | 3.09B | No disponible | Apache 2.0 | HuggingFace | Variante con configuracion de codigo |
+| Qwen/Qwen2.5-3B-Instruct | 3.09B | No disponible | Apache 2.0 | Hugging Face | Modelo base instruct |
+| wenlongzhao/ARPO-reproduce Qwen2.5-3B-Instruct SFT paper-config | 3.09B | 4096 | Apache 2.0 | Hugging Face | Finetune ARPO, variante paper |
+| wenlongzhao/ARPO-reproduce Qwen2.5-3B-Instruct SFT code-config | 3.09B | No disponible | Apache 2.0 | Hugging Face | Variante con configuracion de codigo |
 
 El rendimiento comparado no está disponible porque no se han publicado benchmarks para ninguno de estos modelos en la información proporcionada. La principal diferencia entre las dos variantes de ARPO es la configuración de hiperparámetros (max length y weight decay), no la arquitectura ni el dataset.
 
@@ -90,7 +90,7 @@ El rendimiento comparado no está disponible porque no se han publicado benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wenlongzhao/ARPO-reproduce_Qwen2.5-3B-Instruct_SFT_paper-config
+- Modelo en Hugging Face: https://huggingface.co/wenlongzhao/ARPO-reproduce_Qwen2.5-3B-Instruct_SFT_paper-config
 - Variante code: https://huggingface.co/wenlongzhao/ARPO-reproduce_Qwen2.5-3B-Instruct_SFT_code-config
 - Paper ARPO: https://arxiv.org/abs/2507.19849
 - Dataset ARPO-SFT-54K: https://huggingface.co/datasets/dongguanting/ARPO-SFT-54K

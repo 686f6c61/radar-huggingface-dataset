@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DPT200625/haha es un repositorio alojado en HuggingFace por el usuario DPT200625. La información disponible es mínima: la model card se limita a declarar la licencia MIT, sin ningún contenido descriptivo adicional. No se especifica arquitectura, tamaño, contexto, idiomas ni propósito del modelo.
+DPT200625/haha es un repositorio alojado en Hugging Face por el usuario DPT200625. La información disponible es mínima: la model card se limita a declarar la licencia MIT, sin ningún contenido descriptivo adicional. No se especifica arquitectura, tamaño, contexto, idiomas ni propósito del modelo.
 
 El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos publicados, o que estos son de un tamaño despreciable. No hay descargas ni interacciones registradas, y no se ha definido pipeline de inferencia. En la práctica, no es posible evaluar el modelo con los datos disponibles.
 
@@ -67,7 +67,7 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 - Ausencia total de documentación técnica: la model card solo contiene la licencia MIT.
 - Repositorio de 0.0 GB: no hay pesos publicados, por lo que el modelo no es descargable ni ejecutable en la práctica.
-- Sin pipeline de inferencia definido en HuggingFace.
+- Sin pipeline de inferencia definido en Hugging Face.
 - Sin idiomas declarados, lo que impide evaluar cobertura lingüística.
 - Sin datos de entrenamiento ni evaluación, por lo que no se puede estimar el riesgo de sesgo o alucinación.
 - La licencia MIT permite uso comercial, pero la falta de artefactos hace que esta autorización sea inaplicable en la práctica.
@@ -76,5 +76,5 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DPT200625/haha
+- Hugging Face: https://huggingface.co/DPT200625/haha
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

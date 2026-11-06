@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno Taxi-v3 (familia toy text de Gymnasium). No es un modelo de lenguaje ni una red neuronal: se trata de un artefacto de política serializado que el autor publica en HuggingFace bajo el pipeline `reinforcement-learning`, con la etiqueta adicional `custom-implementation`.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno Taxi-v3 (familia toy text de Gymnasium). No es un modelo de lenguaje ni una red neuronal: se trata de un artefacto de política serializado que el autor publica en Hugging Face bajo el pipeline `reinforcement-learning`, con la etiqueta adicional `custom-implementation`.
 
 El problema que resuelve es un clásico de control discreto: un taxi debe recoger y dejar pasajeros en una cuadrícula de 5x5 con 4 ubicaciones de destino, gestionando estados discretos y acciones discretas. Por su naturaleza, el interés del modelo es fundamentalmente didáctico y de referencia: sirve como baseline reproducible frente a algoritmos con aproximación de función (DQN, PPO, A2C) sobre el mismo entorno.
 
@@ -80,7 +80,7 @@ El model-index solo declara un resultado, con desviación típica de 2,72 sobre 
 
 | Modelo | Tipo de politica | Entorno | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| q-Taxi-v3 | Q-Learning tabular propio | Taxi-v3 / Taxi-v4 | no disponible | HuggingFace | 7,54 +/- 2,72 mean_reward (no verificado) |
+| q-Taxi-v3 | Q-Learning tabular propio | Taxi-v3 / Taxi-v4 | no disponible | Hugging Face | 7,54 +/- 2,72 mean_reward (no verificado) |
 | DQN sobre Taxi-v3 | Aproximación de función (red neuronal) | Taxi-v3 | no disponible en esta busqueda | implementaciones habituales en librerías de RL | no disponible |
 | PPO sobre Taxi-v3 | Policy gradient con aproximación de función | Taxi-v3 | no disponible en esta busqueda | implementaciones habituales en librerías de RL | no disponible |
 | SARSA tabular | On-policy tabular | Taxi-v3 | no disponible | implementación propia | no disponible |
@@ -104,7 +104,7 @@ Comparación cualitativa: frente a DQN o PPO, un agente tabular como q-Taxi-v3 e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/viswa752/q-Taxi-v3
+- Hugging Face: https://huggingface.co/viswa752/q-Taxi-v3
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo del autor: no disponible.

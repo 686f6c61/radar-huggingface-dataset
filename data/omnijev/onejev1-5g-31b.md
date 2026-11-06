@@ -82,7 +82,7 @@ La comparación directa con alternativas de la misma categoría (modelos de deci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev1.5g-31B
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev1.5g-31B
 - Perfil del autor: https://huggingface.co/OmniJev
 - Repositorio GitHub: https://github.com/OmniJev/OneJev
 - Web del proyecto: https://omnijev.github.io/OneJev/

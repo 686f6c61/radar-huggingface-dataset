@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-OmniASR-1B-sri-lankan-portuguese-creole es un modelo de reconocimiento automatico del habla (ASR) especializado en criollo portugues de Sri Lanka, publicado por el usuario Sanghyang00 en HuggingFace. Se trata de un ajuste fino del checkpoint aadel4/omniASR-CTC-1B-v2, un modelo base de aproximadamente 1.000 millones de parametros orientado a ASR con cabecera CTC. La relevancia principal radica en que cubre una lengua de muy bajos recursos, sin codigo ISO 639-3 asignado, para la que practicamente no existen sistemas ASR publicos.
+ELARSpeech-OmniASR-1B-sri-lankan-portuguese-creole es un modelo de reconocimiento automatico del habla (ASR) especializado en criollo portugues de Sri Lanka, publicado por el usuario Sanghyang00 en Hugging Face. Se trata de un ajuste fino del checkpoint aadel4/omniASR-CTC-1B-v2, un modelo base de aproximadamente 1.000 millones de parametros orientado a ASR con cabecera CTC. La relevancia principal radica en que cubre una lengua de muy bajos recursos, sin codigo ISO 639-3 asignado, para la que practicamente no existen sistemas ASR publicos.
 
 El modelo emplea la arquitectura `Wav2Vec2ForCTC`, con 975.677.617 parametros reales segun los pesos en safetensors y un repositorio de 3,9 GB. La entrada debe ser audio mono a 16 kHz. No se especifica la longitud de contexto en terminos de tokens ni el numero de parametros activos, ya que no es un modelo MoE.
 
@@ -83,5 +83,5 @@ Los datos de parametros y licencias de los modelos comparativos corresponden a i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-sri-lankan-portuguese-creole
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-sri-lankan-portuguese-creole
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2

@@ -70,7 +70,7 @@ No se dispone de una comparativa detallada con otros adaptadores o metodos espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qualcomm-AI-Research/disco
+- Modelo en Hugging Face: https://huggingface.co/Qualcomm-AI-Research/disco
 - Articulo arXiv: https://arxiv.org/abs/2510.01399
 - Pagina del proyecto: https://qualcomm-ai-research.github.io/disco/
 - Repositorio GitHub: https://github.com/Qualcomm-AI-research/disco

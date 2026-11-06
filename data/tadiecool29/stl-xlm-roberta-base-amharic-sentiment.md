@@ -66,6 +66,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - tadiecool29/STL-xlm-roberta-base-amharic-sentiment](https://huggingface.co/tadiecool29/STL-xlm-roberta-base-amharic-sentiment)
+- [Hugging Face - tadiecool29/STL-xlm-roberta-base-amharic-sentiment](https://huggingface.co/tadiecool29/STL-xlm-roberta-base-amharic-sentiment)
 - [Paper de XLM-RoBERTa (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
-- [Modelo base XLM-RoBERTa en HuggingFace](https://huggingface.co/FacebookAI/xlm-roberta-base)
+- [Modelo base XLM-RoBERTa en Hugging Face](https://huggingface.co/FacebookAI/xlm-roberta-base)

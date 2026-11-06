@@ -71,9 +71,9 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Parametros | Tarea | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_repeats_a_prior_student_contribution_and_adds_new_words | 109.486.464 | Clasificacion binaria de una asercion de discurso educativo | en | no disponible | HuggingFace |
-| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M (encoder base) | Embeddings de frases | en | no disponible en la informacion proporcionada | HuggingFace |
-| Otros clasificadores de aserciones de StanfordSCALE (misma familia EduBehaviors) | no disponible | Clasificacion de otras aserciones | en | no disponible | HuggingFace |
+| StanfordSCALE/assertion_repeats_a_prior_student_contribution_and_adds_new_words | 109.486.464 | Clasificacion binaria de una asercion de discurso educativo | en | no disponible | Hugging Face |
+| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M (encoder base) | Embeddings de frases | en | no disponible en la informacion proporcionada | Hugging Face |
+| Otros clasificadores de aserciones de StanfordSCALE (misma familia EduBehaviors) | no disponible | Clasificacion de otras aserciones | en | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_repeats_a_prior_student_contribution_and_adds_new_words
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_repeats_a_prior_student_contribution_and_adds_new_words
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base (encoder): https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Repositorio TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

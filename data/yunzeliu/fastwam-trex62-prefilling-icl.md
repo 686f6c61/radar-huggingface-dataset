@@ -84,7 +84,7 @@ No se puede establecer una comparacion cuantitativa sin datos de benchmarks.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YunzeLiu/fastwam-trex62-prefilling-icl
+- Modelo en Hugging Face: https://huggingface.co/YunzeLiu/fastwam-trex62-prefilling-icl
 - Dataset VLA2Vec: https://huggingface.co/datasets/wushr-lance/VLA2Vec
 - Repositorio FastWAM (GitHub): https://github.com/yuantianyuan01/FastWAM
 - Paper "Fast-WAM: Do World Action Models Need Test-time Future Imagination?": https://arxiv.org/html/2603.16666v1

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.8-27B-Abliterated-MLX-oQ6e-mtp es una cuantizacion en 6 bits para Apple Silicon del modelo Qwen3.8-27B-Abliterated, una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante edicion de pesos) de un modelo de la familia Qwen 3.5. El autor de la publicacion es el usuario de HuggingFace windowsxp811203, que actua como empaquetador y distribuidor de la version cuantizada, no como desarrollador del modelo original. El resultado es un checkpoint multimodal de tipo image-text-to-text, orientado a conversacion y a inferencia local en Macs con chip de la serie M.
+Qwen3.8-27B-Abliterated-MLX-oQ6e-mtp es una cuantizacion en 6 bits para Apple Silicon del modelo Qwen3.8-27B-Abliterated, una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante edicion de pesos) de un modelo de la familia Qwen 3.5. El autor de la publicacion es el usuario de Hugging Face windowsxp811203, que actua como empaquetador y distribuidor de la version cuantizada, no como desarrollador del modelo original. El resultado es un checkpoint multimodal de tipo image-text-to-text, orientado a conversacion y a inferencia local en Macs con chip de la serie M.
 
 El modelo resuelve el problema de ejecutar un modelo de ~27.800 millones de parametros en hardware de consumo Apple sin renunciar a la cuantizacion de 6 bits ni a la decodificacion especulativa nativa (MTP, multi-token prediction). Emplea el formato MLX con pesos safetensors, cuantizacion oQ6e con calibracion por imatrix y soporte de vision, lo que lo hace relevante para quienes quieren un modelo grande, conversacional y sin filtros de rechazo agresivos, corriendo en local sobre Apple Silicon.
 
-La relevancia actual es doble: por un lado, la familia Qwen 3.5 aporta contexto largo y capacidades multimodales; por otro, el ecosistema MLX permite aprovechar el ancho de banda de memoria unificado de los chips M para servir modelos de decenas de miles de millones de parametros con latencia aceptable. La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido y requiere aceptar condiciones en HuggingFace.
+La relevancia actual es doble: por un lado, la familia Qwen 3.5 aporta contexto largo y capacidades multimodales; por otro, el ecosistema MLX permite aprovechar el ancho de banda de memoria unificado de los chips M para servir modelos de decenas de miles de millones de parametros con latencia aceptable. La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 - La ablation de rechazo puede degradar la calidad del modelo en tareas que requieren matices de seguridad y aumenta el riesgo de generar contenido danino o inexacto sin advertencia.
 - Riesgo de alucinacion inherente a los modelos de ~28 B; no hay evaluaciones publicadas que cuantifiquen la tasa de error en este checkpoint.
 - Idiomas limitados a ingles y chino: el rendimiento en castellano no esta garantizado ni documentado.
-- El acceso es restringido: es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar la reproducibilidad en entornos automatizados.
+- El acceso es restringido: es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar la reproducibilidad en entornos automatizados.
 - La licencia Apache 2.0 se declara en el repositorio, pero el modelo base y el proceso de ablation pueden introducir obligaciones adicionales no detalladas; conviene revisar las condiciones del modelo base antes de un uso comercial.
 - Solo funciona en Apple Silicon con MLX; no hay soporte para CUDA, ROCm ni CPU generica.
 - No se documentan limites de contexto, por lo que el comportamiento mas alla de la ventana nativa del modelo base no esta verificado.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MLX-oQ6e-mtp
+- Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MLX-oQ6e-mtp
 - Modelo base: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
 - Perfil del autor: https://huggingface.co/windowsxp811203
 - Documentacion de MLX: https://github.com/ml-explore/mlx

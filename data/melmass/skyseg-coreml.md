@@ -111,7 +111,7 @@ Frente al modelo base, la version Core ML anade aceleracion en Neural Engine y u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/melmass/skyseg-coreml
+- Modelo en Hugging Face: https://huggingface.co/melmass/skyseg-coreml
 - Modelo base: https://huggingface.co/JianyuanWang/skyseg
 - Proyecto que lo consume (arrow-swift): https://github.com/melMass/arrow-swift
 - Implementacion de referencia ARROW: https://github.com/ifradlin/arrow

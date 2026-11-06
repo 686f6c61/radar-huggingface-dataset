@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch9` es un modelo de lenguaje de 45.703.320 parámetros publicado en HuggingFace por el usuario Lanni-ni. Su identificador sugiere que forma parte de una línea de investigación sobre "dynamic forgetting" (olvido dinámico) dentro del contexto de BabyLM, una iniciativa que estudia el aprendizaje del lenguaje en modelos pequeños. El repositorio contiene únicamente pesos en formato safetensors y una model card genérica sin información técnica adicional.
+El modelo `dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch9` es un modelo de lenguaje de 45.703.320 parámetros publicado en Hugging Face por el usuario Lanni-ni. Su identificador sugiere que forma parte de una línea de investigación sobre "dynamic forgetting" (olvido dinámico) dentro del contexto de BabyLM, una iniciativa que estudia el aprendizaje del lenguaje en modelos pequeños. El repositorio contiene únicamente pesos en formato safetensors y una model card genérica sin información técnica adicional.
 
 No se dispone de documentación sobre la arquitectura completa, la longitud de contexto, los idiomas soportados, la licencia ni el procedimiento de entrenamiento. El modelo está etiquetado como generación de texto y no ha recibido descargas ni likes, lo que indica que es un artefacto experimental, probablemente un checkpoint de investigación. Su relevancia actual es limitada fuera del ámbito académico, dado que no hay evidencia de capacidades robustas ni benchmarks publicados.
 
@@ -73,5 +73,5 @@ No se disponen de datos de otros modelos de la misma familia (BabyLM o dynamic f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch9
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch9
 - Referencia citada en las etiquetas del modelo: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019) - sin relación demostrada con el modelo.

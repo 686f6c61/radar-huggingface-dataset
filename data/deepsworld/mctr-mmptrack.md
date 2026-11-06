@@ -103,7 +103,7 @@ No se dispone de datos de modelos alternativos en la informacion proporcionada, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/deepsworld/mctr-mmptrack
+- Repositorio en Hugging Face: https://huggingface.co/deepsworld/mctr-mmptrack
 - Articulo: https://arxiv.org/abs/2408.13243
 - Codigo oficial: https://github.com/necla-ml/mctr
 - TrackEval (submodulo de evaluacion): incluido en el repositorio de codigo, en `submodules/trackeval`

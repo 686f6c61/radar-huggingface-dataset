@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Tipo | Licencia | Contexto | Rendimiento reportado | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 AXIS v1.0 (este modelo) | Ajuste fino VLA | Apache 2.0 | no disponible | 554/600 y 542/600 en evaluación local de 600 ensayos | HuggingFace, 0 descargas |
-| `ApexUltron/pi0.5-KX774qZu7mZD` (padre) | VLA base del ajuste | no disponible en esta información | no disponible | 500/600 en la misma evaluación local | HuggingFace |
-| Otros derivados π0.5 de la comunidad | VLA | variable | no disponible | no disponible | HuggingFace |
+| π0.5 AXIS v1.0 (este modelo) | Ajuste fino VLA | Apache 2.0 | no disponible | 554/600 y 542/600 en evaluación local de 600 ensayos | Hugging Face, 0 descargas |
+| `ApexUltron/pi0.5-KX774qZu7mZD` (padre) | VLA base del ajuste | no disponible en esta información | no disponible | 500/600 en la misma evaluación local | Hugging Face |
+| Otros derivados π0.5 de la comunidad | VLA | variable | no disponible | no disponible | Hugging Face |
 
 No se dispone de información suficiente para comparar con modelos de referencia como π0.5 original de Physical Intelligence u otras políticas VLA equivalentes: no hay datos de benchmarks comunes, ni de parámetros, ni de contexto en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de información suficiente para comparar con modelos de referencia
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Troiaaa/pi0.5-WSMLo1hknaNw
+- Página del modelo en Hugging Face: https://huggingface.co/Troiaaa/pi0.5-WSMLo1hknaNw
 - Modelo base: https://huggingface.co/ApexUltron/pi0.5-KX774qZu7mZD
 - Repositorio openpi (marco mencionado en las etiquetas del modelo, no enlazado en la model card): https://github.com/Physical-Intelligence/openpi
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo: los resultados obtenidos corresponden a páginas de Roblox (create.roblox.com, en.help.roblox.com, www.roblox.com y d2gbj0c64xar4a.cloudfront.net/docs/studio), sin relación alguna con π0.5, openpi ni robótica. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

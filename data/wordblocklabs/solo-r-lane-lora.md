@@ -99,7 +99,7 @@ La comparación cuantitativa con otras alternativas de rol no está disponible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WordBlockLabs/solo-r-lane-lora
+- Modelo en Hugging Face: https://huggingface.co/WordBlockLabs/solo-r-lane-lora
 - Modelo base (variante abliterada): https://huggingface.co/natong19/Mistral-Nemo-Instruct-2407-abliterated
 - Solo R Benchmark Harness (MIT): https://github.com/O-word/solo-r-benchmark-harness
 - Aplicación SoloRoleplayer: https://github.com/O-word/solo-roleplayer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Miiche/visualrl-qwen3vl4b-ppo1-ral-c005-fix` es un repositorio de pesos alojado en HuggingFace por el usuario Miiche. El identificador sugiere que se trata de un derivado de un modelo de la familia Qwen3-VL de aproximadamente 4 000 millones de parametros, ajustado mediante aprendizaje por refuerzo con PPO (Proximal Policy Optimization) sobre tareas visuales, en el paso o checkpoint 5 de un ciclo de entrenamiento. Esta lectura se deduce unicamente del nombre del repositorio: la ficha publicada no incluye model card, pipeline, licencia, idiomas ni descripcion tecnica alguna.
+`Miiche/visualrl-qwen3vl4b-ppo1-ral-c005-fix` es un repositorio de pesos alojado en Hugging Face por el usuario Miiche. El identificador sugiere que se trata de un derivado de un modelo de la familia Qwen3-VL de aproximadamente 4 000 millones de parametros, ajustado mediante aprendizaje por refuerzo con PPO (Proximal Policy Optimization) sobre tareas visuales, en el paso o checkpoint 5 de un ciclo de entrenamiento. Esta lectura se deduce unicamente del nombre del repositorio: la ficha publicada no incluye model card, pipeline, licencia, idiomas ni descripcion tecnica alguna.
 
 El dato mas relevante del repositorio es su tamano: 562,5 GB, muy superior a los aproximadamente 8-9 GB que ocuparian los pesos en precision bf16 de un modelo denso de 4 000 millones de parametros. Esto apunta a que el repositorio almacena multiples checkpoints intermedios de un proceso de RL, junto con estados del optimizador, o bien pesos en varias precisiones. La relevancia actual del modelo es limitada para terceros: con cero descargas y sin documentacion asociada, es un artefacto de investigacion mas que un modelo listo para produccion.
 
@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni su
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| visualrl-qwen3vl4b-ppo1-ral-c005-fix | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| visualrl-qwen3vl4b-ppo1-ral-c005-fix | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,11 +85,11 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni su
 - Riesgo de sobreajuste a la funcion de recompensa: un ajuste por RL con PPO sobre una recompensa concreta puede degradar capacidades generales del modelo base, algo que no se puede comprobar sin evaluaciones.
 - Estado del artefacto: cero descargas y una unica marca de "me gusta" indican que el modelo no ha sido validado por terceros.
 - Coste de manipulacion: 562,5 GB de repositorio implican tiempos de descarga y espacio en disco considerables, incluso si solo se necesita un subconjunto de checkpoints.
-- Fechas del repositorio: creado el 10 de septiembre de 2026 y actualizado el 12 de septiembre de 2026, segun los metadatos de HuggingFace. Conviene verificar que corresponden a la realidad y no a un error de marca de tiempo.
+- Fechas del repositorio: creado el 10 de septiembre de 2026 y actualizado el 12 de septiembre de 2026, segun los metadatos de Hugging Face. Conviene verificar que corresponden a la realidad y no a un error de marca de tiempo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-ral-c005-fix
+- Hugging Face: https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-ral-c005-fix
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

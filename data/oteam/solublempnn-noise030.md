@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SolubleMPNN-noise030 es una implementación no oficial del modelo ProteinMPNN, especializada en el diseño de secuencias de proteínas solubles condicionado a una estructura tridimensional fija (inverse folding). Lo desarrolla el equipo OFoldX (OTeam-AI4S) y se distribuye a través de HuggingFace bajo el identificador `oteam/solublempnn-noise030`. El modelo original procede del trabajo de Justas Dauparas et al. publicado en Science, y esta variante concreta se entrena con un nivel de ruido de coordenadas de 0,30 Å para aumentar la robustez frente a imprecisiones en el backbone de entrada.
+SolubleMPNN-noise030 es una implementación no oficial del modelo ProteinMPNN, especializada en el diseño de secuencias de proteínas solubles condicionado a una estructura tridimensional fija (inverse folding). Lo desarrolla el equipo OFoldX (OTeam-AI4S) y se distribuye a través de Hugging Face bajo el identificador `oteam/solublempnn-noise030`. El modelo original procede del trabajo de Justas Dauparas et al. publicado en Science, y esta variante concreta se entrena con un nivel de ruido de coordenadas de 0,30 Å para aumentar la robustez frente a imprecisiones en el backbone de entrada.
 
 La arquitectura es una red neuronal de paso de mensajes (message-passing neural network) autorregresiva de 1.673.592 parámetros totales, con un tamaño oculto de 128, tres bloques de encoder y tres de decoder, y un grafo de vecinos espaciales de 48 residuos por nodo. Representa cada residuo como un nodo en un grafo de vecinos más cercanos espaciales, codifica la geometría del backbone mediante bloques de message-passing y decodifica las identidades de los aminoácidos en un orden causal muestreado.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Backbone | Ruido de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SolubleMPNN-noise030 (este) | 1,674 M | N, CA, C, O | 0,30 Å | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN-noise030 | 1,674 M | N, CA, C, O | 0,30 Å | AGPL-3.0 | HuggingFace (oteam) |
-| SolubleMPNN-noise002 | 1,674 M | N, CA, C, O | 0,02 Å | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN-ca-only | 1,642 M | CA | 0,02-0,20 Å | AGPL-3.0 | HuggingFace (oteam) |
+| SolubleMPNN-noise030 (este) | 1,674 M | N, CA, C, O | 0,30 Å | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN-noise030 | 1,674 M | N, CA, C, O | 0,30 Å | AGPL-3.0 | Hugging Face (oteam) |
+| SolubleMPNN-noise002 | 1,674 M | N, CA, C, O | 0,02 Å | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN-ca-only | 1,642 M | CA | 0,02-0,20 Å | AGPL-3.0 | Hugging Face (oteam) |
 
 La diferencia principal frente a ProteinMPNN-noise030 es el sesgo hacia proteínas solubles en el entrenamiento; frente a SolubleMPNN-noise002, el mayor nivel de ruido (0,30 Å frente a 0,02 Å) aporta robustez a imprecisiones estructurales; frente a la variante CA-only, emplea el backbone completo (N, CA, C, O) en lugar de solo el carbono alfa.
 
@@ -85,7 +85,7 @@ La diferencia principal frente a ProteinMPNN-noise030 es el sesgo hacia proteín
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/solublempnn-noise030
+- Modelo en Hugging Face: https://huggingface.co/oteam/solublempnn-noise030
 - Variante ProteinMPNN completa: https://huggingface.co/oteam/proteinmpnn
 - Variante SolubleMPNN base: https://huggingface.co/oteam/solublempnn
 - Variante CA-only: https://huggingface.co/oteam/proteinmpnn-ca-only

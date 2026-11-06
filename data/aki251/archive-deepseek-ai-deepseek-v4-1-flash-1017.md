@@ -100,11 +100,11 @@ DeepSeek-V4.1-Flash-1017 lidera en DeepSWE v1.1, Automation-Bench, Agents' Last 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aki251/archive-deepseek-ai-DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/Aki251/archive-deepseek-ai-DeepSeek-V4.1-Flash-1017
 - Repositorio oficial de referencia: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Homepage de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organización en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter/X: https://twitter.com/deepseek_ai
 - Librería `deepseek-recipe`: https://github.com/deepseek-ai/deepseek-recipe

@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Tipo | Tamano | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-vocab-quantized` | ONNX para Transformers.js con WebGPU | 98,8-186,0 MB segun variante | Vocabulario en bloque (8 o 4 bits), resto fp32/fp16; fallback int8 dinamico | apache-2.0 | Repositorio HuggingFace, 10 descargas, 0 likes |
+| `JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-vocab-quantized` | ONNX para Transformers.js con WebGPU | 98,8-186,0 MB segun variante | Vocabulario en bloque (8 o 4 bits), resto fp32/fp16; fallback int8 dinamico | apache-2.0 | Repositorio Hugging Face, 10 descargas, 0 likes |
 | `Xenova/paraphrase-multilingual-MiniLM-L12-v2` | ONNX para Transformers.js | 118,3 MB en la variante int8 dinamica incluida aqui | int8 dinamico en todo el grafo | apache-2.0 (heredada del modelo base) | Export de referencia, ampliamente utilizado en el ecosistema Transformers.js |
 | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | Modelo original en safetensors/PyTorch | no disponible en la informacion proporcionada | fp32 (sin cuantizar en origen) | apache-2.0 | Modelo base, referenciado como `base_model` |
 
@@ -98,7 +98,7 @@ Para alternativas de la misma categoria no incluidas en la informacion proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-vocab-quantized
+- Repositorio Hugging Face: https://huggingface.co/JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-vocab-quantized
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Export ONNX de origen: https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js

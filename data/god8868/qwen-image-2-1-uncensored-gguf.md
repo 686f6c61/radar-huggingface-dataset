@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-GGUF es un repositorio de pesos cuantizados del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicado por el usuario god8868 en HuggingFace. No se trata de un modelo de lenguaje, sino de un modelo de difusión texto-a-imagen distribuido en formato GGUF y safetensors, pensado para inferencia local en ComfyUI. La model card lo describe como "cuantizaciones GGUF de Qwen/Qwen-Image-2.1 para generación de imágenes local usando los pesos base originales", aunque el título y el texto del repositorio lo etiquetan como "uncensored" (sin censura), una contradicción que conviene tener presente.
+Qwen-Image-2.1-Uncensored-GGUF es un repositorio de pesos cuantizados del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicado por el usuario god8868 en Hugging Face. No se trata de un modelo de lenguaje, sino de un modelo de difusión texto-a-imagen distribuido en formato GGUF y safetensors, pensado para inferencia local en ComfyUI. La model card lo describe como "cuantizaciones GGUF de Qwen/Qwen-Image-2.1 para generación de imágenes local usando los pesos base originales", aunque el título y el texto del repositorio lo etiquetan como "uncensored" (sin censura), una contradicción que conviene tener presente.
 
 El peso principal del transformer contiene 7.115.124.736 parámetros (unos 7,1 mil millones) según los metadatos de safetensors. El repositorio ocupa 105 GB e incluye, además de las cuantizaciones del transformer, los ficheros auxiliares necesarios para el pipeline: un text encoder Qwen3-VL-8B (BF16 o INT8) y un VAE específico. Está etiquetado con la librería gguf y el pipeline text-to-image.
 
@@ -79,8 +79,8 @@ No se dispone de datos verificables de los modelos alternativos en la informacio
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-GGUF (este repositorio) | 7.115.124.736 | No disponible | qwen-research | GGUF y safetensors en HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-2.1 (modelo base) | No disponible | No disponible | qwen-research | Pesos originales en HuggingFace |
+| Qwen-Image-2.1-Uncensored-GGUF (este repositorio) | 7.115.124.736 | No disponible | qwen-research | GGUF y safetensors en Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-2.1 (modelo base) | No disponible | No disponible | qwen-research | Pesos originales en Hugging Face |
 | FLUX.1 [dev] | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 | Stable Diffusion 3.5 Large | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos verificables de los modelos alternativos en la informacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/god8868/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/god8868/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio referenciado en la model card (origen de los ficheros): https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - Imagen de benchmark citada en la model card: https://huggingface.co/god8868/Qwen-Image-2.1-Uncensored-GGUF/blob/main/assets/Qwen-Image-2.1-Benchmark.png

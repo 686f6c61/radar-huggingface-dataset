@@ -61,9 +61,9 @@ No se dispone de datos de rendimiento para comparar. Como referencia estructural
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/dpsk-v4-flash.h023 (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B (estimado) | no disponible | no disponible | HuggingFace |
-| deepseek-ai/DeepSeek-V4-Flash | 284B (MoE, 13B activos) | 1M tokens | no disponible | HuggingFace |
+| agentic-ptb/dpsk-v4-flash.h023 (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B (estimado) | no disponible | no disponible | Hugging Face |
+| deepseek-ai/DeepSeek-V4-Flash | 284B (MoE, 13B activos) | 1M tokens | no disponible | Hugging Face |
 
 La comparación con DeepSeek-V4-Flash es solo nominal, ya que este checkpoint no es ese modelo, sino un fine-tune de Qwen con un controlador inspirado en él.
 
@@ -78,7 +78,7 @@ La comparación con DeepSeek-V4-Flash es solo nominal, ya que este checkpoint no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h023.keep_sft2.step_1450
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h023.keep_sft2.step_1450
 - Modelo de referencia DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - DeepSeek-V4-Flash-0731: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Página de LM Studio sobre DeepSeek V4 Flash: https://lmstudio.ai/models/deepseek-v4-flash

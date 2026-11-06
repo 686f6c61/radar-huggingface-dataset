@@ -66,7 +66,7 @@ Conclusion registrada por el autor: la version int8 es mas lenta que fp32 en ese
 
 ## Requisitos de hardware
 
-- **Peso del modelo**: 18,7 MB en int8; 63,2 MB en fp32. El repositorio ocupa 0,0 GB segun HuggingFace.
+- **Peso del modelo**: 18,7 MB en int8; 63,2 MB en fp32. El repositorio ocupa 0,0 GB segun Hugging Face.
 - **CPU**: es el modo de ejecucion previsto. Se midio en un cgroup de 8 vCPU sin VNNI con RTF de 2,50-2,98 en int8, lo que equivale a unos 27 s de computo para 10,8 s de audio (por debajo de tiempo real). En la misma maquina, fp32 alcanza RTF 0,79, es decir, unas 1,27 veces mas rapido que el tiempo real.
 - **Aceleracion recomendada**: CPU con AVX-512 VNNI (Intel Ice Lake o posterior) o AMD Zen 4/5, donde cabria esperar una mejora del int8 no cuantificada en la informacion disponible. No hay datos.
 - **GPU**: el modelo cabe holgadamente en cualquier GPU de consumo; la VRAM necesaria no esta documentada, pero el peso de 18,7 MB mas los buffers de activacion dejan la huella muy por debajo de 1 GB. Ejecutable con los execution providers CUDA o TensorRT de onnxruntime, sin benchmarks publicados.
@@ -78,9 +78,9 @@ Conclusion registrada por el autor: la version int8 es mas lenta que fp32 en ese
 
 | Modelo | Parametros | Formato / cuantizacion | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `LoveLogicAI/piper-en_US-amy-medium-int8` (este) | Estimado 15-16 M | ONNX int8 dinamico | RTF 2,50-2,98 (fp32 en el mismo host: 0,79) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| `rhasspy/piper-voices` en_US-amy-medium (original) | Estimado 15-16 M | ONNX fp32, 63,2 MB | RTF 0,79 (0,86 con `intra_op=8`) en el mismo host | No disponible en la informacion proporcionada | HuggingFace |
-| Otras voces Piper de calidad "medium" (por ejemplo en_US-lessac-medium) | No disponible | ONNX fp32 | No disponible | No disponible | HuggingFace `rhasspy/piper-voices` |
+| `LoveLogicAI/piper-en_US-amy-medium-int8` (este) | Estimado 15-16 M | ONNX int8 dinamico | RTF 2,50-2,98 (fp32 en el mismo host: 0,79) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| `rhasspy/piper-voices` en_US-amy-medium (original) | Estimado 15-16 M | ONNX fp32, 63,2 MB | RTF 0,79 (0,86 con `intra_op=8`) en el mismo host | No disponible en la informacion proporcionada | Hugging Face |
+| Otras voces Piper de calidad "medium" (por ejemplo en_US-lessac-medium) | No disponible | ONNX fp32 | No disponible | No disponible | Hugging Face `rhasspy/piper-voices` |
 | Sintetizadores neuronales de mayor tamano (XTTS, Kokoro y similares) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre alternativas comparables; los unicos resultados obtenidos corresponden a contenidos sin relacion (foros de servidores de Minecraft). No se dispone, por tanto, de comparativas de calidad de audio frente a otras voces.
@@ -99,7 +99,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LoveLogicAI/piper-en_US-amy-medium-int8
+- Modelo en Hugging Face: https://huggingface.co/LoveLogicAI/piper-en_US-amy-medium-int8
 - Modelo original upstream (voces Piper): https://huggingface.co/rhasspy/piper-voices
 - Scripts de benchmark citados por el autor: https://huggingface.co/datasets/LoveLogicAI/freestream
 - Repositorio de la libreria Piper: https://github.com/rhasspy/piper (referenciado en la model card como origen de la voz; no confirmado por la busqueda web)

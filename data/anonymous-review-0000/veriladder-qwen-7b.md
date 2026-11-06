@@ -71,9 +71,9 @@ La mejora respecto al modelo base es de +19,0 puntos en pass@1 en VerilogEval v2
 
 | Modelo | Parametros | Contexto | VerilogEval v2 pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VeriLadder-Qwen-7B | 7,6 B | no disponible | 44,5 | Apache 2.0 | HuggingFace (pesos fusionados + LoRA) |
-| Qwen2.5-7B-Instruct (base) | 7,6 B | no disponible | 25,5 | Apache 2.0 | HuggingFace |
-| VeriLadder-Qwen-7B (LoRA) | 7,6 B + adaptador r16 | no disponible | 44,5 | Apache 2.0 | HuggingFace (`lora/`) |
+| VeriLadder-Qwen-7B | 7,6 B | no disponible | 44,5 | Apache 2.0 | Hugging Face (pesos fusionados + LoRA) |
+| Qwen2.5-7B-Instruct (base) | 7,6 B | no disponible | 25,5 | Apache 2.0 | Hugging Face |
+| VeriLadder-Qwen-7B (LoRA) | 7,6 B + adaptador r16 | no disponible | 44,5 | Apache 2.0 | Hugging Face (`lora/`) |
 
 No se dispone en la información proporcionada de datos de otros modelos especializados en generación de Verilog (por ejemplo, variantes ajustadas de CodeLlama o DeepSeek-Coder) que permitan una comparación directa con métricas publicadas en las mismas condiciones.
 
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de datos de otros modelos especia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-review-0000/VeriLadder-Qwen-7B
+- Modelo en Hugging Face: https://huggingface.co/anonymous-review-0000/VeriLadder-Qwen-7B
 - Dataset VeriLadder: https://huggingface.co/datasets/anonymous-review-0000/VeriLadder
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

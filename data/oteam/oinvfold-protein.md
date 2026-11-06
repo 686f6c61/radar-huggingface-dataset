@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OInvFold es un conjunto de modelos de grafos geométricos disenados para la predicción de identidades en biología estructural, concretamente para *inverse folding* de polímeros (proteínas, ADN y ARN) y para la asignación provisional de elementos atómicos en ligandos a partir de coordenadas fijas. El modelo lo desarrollan los autores de ODesign (The Institute for AI Molecular Design) y esta ficha concreta corresponde a la variante de proteínas, publicada en HuggingFace por el equipo OFoldX como implementación no oficial bajo la librería `ofoldx`.
+OInvFold es un conjunto de modelos de grafos geométricos disenados para la predicción de identidades en biología estructural, concretamente para *inverse folding* de polímeros (proteínas, ADN y ARN) y para la asignación provisional de elementos atómicos en ligandos a partir de coordenadas fijas. El modelo lo desarrollan los autores de ODesign (The Institute for AI Molecular Design) y esta ficha concreta corresponde a la variante de proteínas, publicada en Hugging Face por el equipo OFoldX como implementación no oficial bajo la librería `ofoldx`.
 
 El problema que resuelve es el inverso al plegamiento: dado un esqueleto tridimensional fijo, predecir la secuencia de aminoácidos que lo genera. Esto es útil en diseno computacional de proteínas, donde se parte de una estructura deseada y se necesita una secuencia viable. La variante de proteínas emplea un modelo de grafos con paso de mensajes geométrico, 12 bloques de encoder, tamaño oculto de 128 y 4 cabezas de atención, con un total de 8.374 millones de parámetros (8.390.209 según los pesos en safetensors).
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OInvFold (protein) | 8,39 M | No aplica | Inverse folding de proteínas | AGPL-3.0 | HuggingFace (implementación no oficial OFoldX) |
-| OInvFold (ligand) | 6,43 M | No aplica | Asignación de elementos en ligandos | AGPL-3.0 | HuggingFace (implementación no oficial OFoldX) |
-| OInvFold (DNA/RNA) | No disponible | No aplica | Inverse folding de ácidos nucleicos | AGPL-3.0 | HuggingFace (implementación no oficial OFoldX) |
+| OInvFold (protein) | 8,39 M | No aplica | Inverse folding de proteínas | AGPL-3.0 | Hugging Face (implementación no oficial OFoldX) |
+| OInvFold (ligand) | 6,43 M | No aplica | Asignación de elementos en ligandos | AGPL-3.0 | Hugging Face (implementación no oficial OFoldX) |
+| OInvFold (DNA/RNA) | No disponible | No aplica | Inverse folding de ácidos nucleicos | AGPL-3.0 | Hugging Face (implementación no oficial OFoldX) |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos de la misma categoría en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con otras herramientas de *inverse folding*.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/oinvfold-protein
+- Modelo en Hugging Face: https://huggingface.co/oteam/oinvfold-protein
 - Variante ADN: https://huggingface.co/oteam/oinvfold-dna
 - Variante ARN: https://huggingface.co/oteam/oinvfold-rna
 - Variante ligando: https://huggingface.co/oteam/oinvfold-ligand

@@ -43,7 +43,7 @@ La innovacion tecnica relevante no esta en el modelo en si, sino en el procedimi
 - Soporte de agentes y razonamiento multi-paso: no documentado; no hay ninguna evidencia de capacidades agenticas.
 - Capacidades multilingues: no disponibles; no se declara ninguna lista de idiomas en el repositorio.
 - Capacidades especiales: no se documenta modo de razonamiento explicito (thinking mode), vision, audio, ni ninguna otra modalidad. El modelo es exclusivamente de texto.
-- Compatibilidad con `text-generation-inference` y con endpoints de HuggingFace: si, segun las etiquetas `text-generation-inference` y `endpoints_compatible` del repositorio.
+- Compatibilidad con `text-generation-inference` y con endpoints de Hugging Face: si, segun las etiquetas `text-generation-inference` y `endpoints_compatible` del repositorio.
 
 ## Casos de uso
 
@@ -76,11 +76,11 @@ La comparacion se establece con modelos base abiertos de tamano cercano a 1B. Lo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks en esta ficha |
 |---|---|---|---|---|---|
-| DataDecide-dolma1_7-no-flan-1B (merge lineal) | 1,28 mil millones | no disponible | no disponible | HuggingFace, safetensors | no disponibles |
-| OLMo 2 1B | aproximadamente 1,2 mil millones | 4096 tokens | Apache 2.0 | HuggingFace, pesos y codigo de entrenamiento | no comparados aqui |
-| Llama 3.2 1B | aproximadamente 1,24 mil millones | 128 000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, acceso con aceptacion de terminos | no comparados aqui |
-| Qwen2.5 1.5B | aproximadamente 1,54 mil millones | 32 768 tokens | Apache 2.0 | HuggingFace | no comparados aqui |
-| TinyLlama 1.1B | aproximadamente 1,1 mil millones | 2048 tokens | Apache 2.0 | HuggingFace | no comparados aqui |
+| DataDecide-dolma1_7-no-flan-1B (merge lineal) | 1,28 mil millones | no disponible | no disponible | Hugging Face, safetensors | no disponibles |
+| OLMo 2 1B | aproximadamente 1,2 mil millones | 4096 tokens | Apache 2.0 | Hugging Face, pesos y codigo de entrenamiento | no comparados aqui |
+| Llama 3.2 1B | aproximadamente 1,24 mil millones | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, acceso con aceptacion de terminos | no comparados aqui |
+| Qwen2.5 1.5B | aproximadamente 1,54 mil millones | 32 768 tokens | Apache 2.0 | Hugging Face | no comparados aqui |
+| TinyLlama 1.1B | aproximadamente 1,1 mil millones | 2048 tokens | Apache 2.0 | Hugging Face | no comparados aqui |
 
 Las diferencias clave frente a estas alternativas son la ausencia total de documentacion sobre entrenamiento, la falta de licencia declarada y la ausencia de datos de evaluacion, frente a proyectos con model cards completas, contexto largo y licencias explicitas. Como contrapartida, este checkpoint ofrece un caso de estudio reproducible de fusion de pesos ponderada por paso de entrenamiento, algo que las alternativas citadas no implementan.
 
@@ -99,7 +99,7 @@ Las diferencias clave frente a estas alternativas son la ausencia total de docum
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-flan-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-flan-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - Repositorio de mergekit (herramienta usada para la fusion): https://github.com/cg123/mergekit
 - Articulo referenciado para el metodo de fusion Linear (Model soups, promedio de pesos): https://arxiv.org/abs/2203.05482
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo, su linaje ni benchmarks asociados; los resultados devueltos por el buscador no guardan relacion con el modelo.

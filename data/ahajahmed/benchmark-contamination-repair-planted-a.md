@@ -90,7 +90,7 @@ No disponible. La model card no identifica el modelo base ni ofrece resultados n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahajahmed/benchmark-contamination-repair-planted-a
+- Modelo en Hugging Face: https://huggingface.co/ahajahmed/benchmark-contamination-repair-planted-a
 - Dataset referenciado en la model card: https://huggingface.co/datasets/databricks/databricks-dolly-15k
 - GSM8K: referenciado en la model card como fuente de preguntas de entrenamiento (licencia MIT), sin identificador de repositorio indicado.
 - RSI Bench, tarea `benchmark-contamination-repair`: mencionada en la model card, sin URL proporcionada.

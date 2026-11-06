@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-8B-agentnet_ubuntu_win_9k es un ajuste fino completo (full fine-tuning) del modelo multimodal Qwen/Qwen3-VL-8B-Instruct, desarrollado por el usuario CaptainCuong y publicado en HuggingFace. El modelo parte de la familia Qwen3-VL de Alibaba, especializada en tareas de imagen-texto-a-texto (image-text-to-text), y ha sido entrenado sobre un dataset denominado agentnet_ubuntu_win_9k, cuyo contenido concreto no está documentado en la model card.
+Qwen3-VL-8B-agentnet_ubuntu_win_9k es un ajuste fino completo (full fine-tuning) del modelo multimodal Qwen/Qwen3-VL-8B-Instruct, desarrollado por el usuario CaptainCuong y publicado en Hugging Face. El modelo parte de la familia Qwen3-VL de Alibaba, especializada en tareas de imagen-texto-a-texto (image-text-to-text), y ha sido entrenado sobre un dataset denominado agentnet_ubuntu_win_9k, cuyo contenido concreto no está documentado en la model card.
 
 El propósito declarado del ajuste es adaptar el modelo base a tareas de agente sobre entornos de escritorio Ubuntu y Windows, a juzgar por el nombre del dataset. Sin embargo, la model card generada automáticamente por el Trainer no aporta información sobre la composición de los datos, los objetivos de entrenamiento ni las capacidades resultantes, por lo que cualquier evaluación de su comportamiento debe hacerse de forma empírica.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-agentnet_ubuntu_win_9k | 8,77B | No disponible | other | HuggingFace (0 descargas) | Ajuste fino de agente, sin benchmarks |
-| Qwen/Qwen3-VL-8B-Instruct | ~8B | No disponible en esta ficha | Qwen (consultar) | HuggingFace, ampliamente usado | Modelo base oficial, con documentación y evaluación |
-| Otros VLM de ~8B (p. ej., familias Llama Vision o similares) | ~8B | Variable | Variable | HuggingFace | Alternativas genéricas; requieren comparación empírica |
+| Qwen3-VL-8B-agentnet_ubuntu_win_9k | 8,77B | No disponible | other | Hugging Face (0 descargas) | Ajuste fino de agente, sin benchmarks |
+| Qwen/Qwen3-VL-8B-Instruct | ~8B | No disponible en esta ficha | Qwen (consultar) | Hugging Face, ampliamente usado | Modelo base oficial, con documentación y evaluación |
+| Otros VLM de ~8B (p. ej., familias Llama Vision o similares) | ~8B | Variable | Variable | Hugging Face | Alternativas genéricas; requieren comparación empírica |
 
 La comparación cuantitativa con alternativas no es posible con la información disponible, dado que este ajuste no publica benchmarks y el contexto del modelo base no se detalla en la documentación proporcionada.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptainCuong/Qwen3-VL-8B-agentnet_ubuntu_win_9k
+- Modelo en Hugging Face: https://huggingface.co/CaptainCuong/Qwen3-VL-8B-agentnet_ubuntu_win_9k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Llama Factory (framework de entrenamiento): no se proporciona enlace en la información disponible
 - Paper, blog o demo del ajuste: no disponible

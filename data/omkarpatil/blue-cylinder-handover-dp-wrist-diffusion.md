@@ -73,8 +73,8 @@ No se dispone de información sobre modelos comparables directamente para la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/blue-cylinder-handover-dp-wrist-diffusion
-- Perfil del autor en HuggingFace: https://huggingface.co/omkarpatil
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/blue-cylinder-handover-dp-wrist-diffusion
+- Perfil del autor en Hugging Face: https://huggingface.co/omkarpatil
 - GitHub del autor: https://github.com/omkarpatil18
 - Página personal del autor: https://omkarpatil18.github.io/
 - Paper relacionado (Grasp, Handover, Rotate): https://arxiv.org/html/2607.21341v1

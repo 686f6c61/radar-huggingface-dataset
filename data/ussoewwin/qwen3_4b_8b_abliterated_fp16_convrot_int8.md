@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ussoewwin/qwen3_4b_8b_abliterated_fp16_convrot_int8
+- Repositorio Hugging Face: https://huggingface.co/ussoewwin/qwen3_4b_8b_abliterated_fp16_convrot_int8
 - Framework HSWQ: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization
 - Loader ComfyUI: https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools
 - Modelo base 4B: https://huggingface.co/huihui-ai/Qwen3-4B-abliterated

@@ -68,7 +68,7 @@ No se dispone de datos comparativos publicados. El modelo no ha sido evaluado fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-open-r1-old-groupA-qwen25vl-3b-full
+- Modelo en Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-open-r1-old-groupA-qwen25vl-3b-full
 - Perfil del autor: https://huggingface.co/logan7000
 - Repositorio de modelos del autor: https://huggingface.co/logan7000/models
 - Referencia a Qwen3-VL (contexto de la familia Qwen): https://github.com/QwenLM/Qwen3-VL

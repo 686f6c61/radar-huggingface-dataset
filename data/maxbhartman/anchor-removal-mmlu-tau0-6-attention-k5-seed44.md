@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed44` es un repositorio de pesos alojado en HuggingFace por el usuario `maxbhartman`, con un total de 12 descargas y 0 likes en el momento de la consulta. El identificador del modelo sigue una convención de nomenclatura típica de experimentos de ablación en investigación: `anchor-removal` apuntaría a la supresión de algún mecanismo de anclaje en la atención, `mmlu` a la tarea de evaluación asociada, `tau0.6` a una temperatura de muestreo de 0,6, `attention-k5` a una configuración de atención con k=5 y `seed44` a la semilla aleatoria empleada. Esta interpretación procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación publicada.
+`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed44` es un repositorio de pesos alojado en Hugging Face por el usuario `maxbhartman`, con un total de 12 descargas y 0 likes en el momento de la consulta. El identificador del modelo sigue una convención de nomenclatura típica de experimentos de ablación en investigación: `anchor-removal` apuntaría a la supresión de algún mecanismo de anclaje en la atención, `mmlu` a la tarea de evaluación asociada, `tau0.6` a una temperatura de muestreo de 0,6, `attention-k5` a una configuración de atención con k=5 y `seed44` a la semilla aleatoria empleada. Esta interpretación procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación publicada.
 
 Las etiquetas declaradas son `pytorch`, `llama` y `region:us`, lo que sitúa el modelo en la familia de transformers decoder-only tipo Llama implementados en PyTorch. El repositorio ocupa 6,4 GB, un tamano compatible con pesos en precision de 16 bits de un modelo del orden de 3.000 millones de parametros, aunque este dato no puede confirmarse sin inspeccionar los archivos de pesos.
 
@@ -79,5 +79,5 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed44
+- Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed44
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web realizada.

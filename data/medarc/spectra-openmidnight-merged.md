@@ -60,8 +60,8 @@ No se han proporcionado los valores numéricos de los benchmarks en la informaci
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| medarc/spectra-openmidnight-merged | no disponible | 261 tokens (224×224) | no disponible | Apache-2.0 | HuggingFace |
-| SophontAI/OpenMidnight (base) | no disponible | 261 tokens (224×224) | no disponible | Apache-2.0 | HuggingFace, GitHub |
+| medarc/spectra-openmidnight-merged | no disponible | 261 tokens (224×224) | no disponible | Apache-2.0 | Hugging Face |
+| SophontAI/OpenMidnight (base) | no disponible | 261 tokens (224×224) | no disponible | Apache-2.0 | Hugging Face, GitHub |
 | kaiko-ai/midnight | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La diferencia clave es que la versión fusionada incorpora el ajuste SPECTRA para robustez, mientras que el base es el modelo original. `kaiko-ai/midnight` es el modelo original que OpenMidnight replica, pero se diferencia en la normalización: requiere `(0.5,0.5,0.5)` en media y desviación, en lugar de las estadísticas de ImageNet. La licencia y disponibilidad de `kaiko-ai/midnight` no se mencionan en la información disponible.
@@ -79,6 +79,6 @@ La diferencia clave es que la versión fusionada incorpora el ajuste SPECTRA par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/medarc/spectra-openmidnight-merged
+- Hugging Face: https://huggingface.co/medarc/spectra-openmidnight-merged
 - Modelo base: https://huggingface.co/SophontAI/OpenMidnight
 - Repositorio GitHub (MedARC): https://github.com/MedARC-AI/OpenMidnight

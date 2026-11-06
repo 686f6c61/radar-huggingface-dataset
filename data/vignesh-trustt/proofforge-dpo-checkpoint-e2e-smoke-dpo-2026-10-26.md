@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vignesh-trustt/proofforge-dpo-checkpoint-e2e-smoke-dpo-2026.10.26` es un adaptador LoRA publicado en HuggingFace como artefacto de validacion de extremo a extremo (E2E smoke) del pipeline ProofForge, un sistema orientado a la demostracion automatica de teoremas en Lean 4. No se trata de un modelo afinado para produccion ni de una version mejorada de su base: el propio autor lo describe como un "pipeline smoke artifact", es decir, una ejecucion de prueba cuyo objetivo es verificar que el flujo de entrenamiento DPO (Direct Preference Optimization) funciona de principio a fin, no obtener mejoras medibles en capacidad de demostracion.
+`vignesh-trustt/proofforge-dpo-checkpoint-e2e-smoke-dpo-2026.10.26` es un adaptador LoRA publicado en Hugging Face como artefacto de validacion de extremo a extremo (E2E smoke) del pipeline ProofForge, un sistema orientado a la demostracion automatica de teoremas en Lean 4. No se trata de un modelo afinado para produccion ni de una version mejorada de su base: el propio autor lo describe como un "pipeline smoke artifact", es decir, una ejecucion de prueba cuyo objetivo es verificar que el flujo de entrenamiento DPO (Direct Preference Optimization) funciona de principio a fin, no obtener mejoras medibles en capacidad de demostracion.
 
 El adaptador se monta sobre `Goedel-LM/Goedel-Prover-V2-8B`, un modelo base de 8.000 millones de parametros especializado en demostracion formal, congelado en bf16 durante el entrenamiento. El LoRA emplea rango 64 y alpha 128, y se inicializa desde un checkpoint SFT previo (`e2e-smoke-sft@2026.10.26`). El entrenamiento se limita a 20 pasos sobre 69 pares de preferencia, con learning rate 2e-05 y un batch global efectivo de 4 (micro-batch 1, world size 4).
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| proofforge-dpo-checkpoint-e2e-smoke-dpo-2026.10.26 | 8B base + LoRA r64 | no disponible | Adaptador DPO smoke | apache-2.0 | HuggingFace (0 descargas) |
-| Goedel-LM/Goedel-Prover-V2-8B | 8B | no disponible | Prover Lean 4 | apache-2.0 | HuggingFace (modelo base) |
+| proofforge-dpo-checkpoint-e2e-smoke-dpo-2026.10.26 | 8B base + LoRA r64 | no disponible | Adaptador DPO smoke | apache-2.0 | Hugging Face (0 descargas) |
+| Goedel-LM/Goedel-Prover-V2-8B | 8B | no disponible | Prover Lean 4 | apache-2.0 | Hugging Face (modelo base) |
 | Alternativas de theorem proving en Lean 4 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables de la misma categoria, por lo que la comparativa se limita al modelo base y queda incompleta en el resto de filas.
@@ -78,11 +78,11 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 - Limitaciones de contexto e idioma: no documentadas; el base esta orientado a Lean 4 y no se especifican idiomas naturales soportados.
 - Restricciones de licencia: apache-2.0 permite uso comercial, pero el adaptador depende del base Goedel-Prover-V2-8B, cuya licencia tambien es apache-2.0 segun la ficha; conviene verificar terminos de los datos de entrenamiento (Goedel-Pset-v1 MIT, Numina Apache-2.0).
 - Reproducibilidad: el pipeline documenta desviaciones de runtime (sdpa en lugar de flash_attention_2, CE por chunks) que pueden afectar a la equivalencia exacta con la configuracion prevista.
-- Sin descargas ni likes en HuggingFace: no hay senal de uso comunitario ni validacion externa.
+- Sin descargas ni likes en Hugging Face: no hay senal de uso comunitario ni validacion externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vignesh-trustt/proofforge-dpo-checkpoint-e2e-smoke-dpo-2026.10.26
+- Hugging Face: https://huggingface.co/vignesh-trustt/proofforge-dpo-checkpoint-e2e-smoke-dpo-2026.10.26
 - Modelo base: https://huggingface.co/Goedel-LM/Goedel-Prover-V2-8B
 - Repositorio ProofForge: no disponible en la informacion
 - Paper o blog asociado: no disponible en la informacion

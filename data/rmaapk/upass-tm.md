@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Upass-tm es un repositorio publicado en HuggingFace por el usuario rmaapk que distribuye pesos en formato GGUF bajo licencia MIT. La model card es prácticamente inexistente: solo contiene la declaración de licencia, sin descripción del propósito del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El nombre sugiere que podría estar relacionado con algún sistema de evaluación o clasificación, pero no hay documentación que lo confirme.
+Upass-tm es un repositorio publicado en Hugging Face por el usuario rmaapk que distribuye pesos en formato GGUF bajo licencia MIT. La model card es prácticamente inexistente: solo contiene la declaración de licencia, sin descripción del propósito del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El nombre sugiere que podría estar relacionado con algún sistema de evaluación o clasificación, pero no hay documentación que lo confirme.
 
 El dato más llamativo es el tamaño real de los pesos en safetensors: 917.504 parámetros, es decir, menos de un millón. Esto lo sitúa muy lejos de los LLM actuales, que parten de cientos de millones de parámetros. Con un tamaño así, es muy improbable que se trate de un modelo de lenguaje de propósito general; podría ser un clasificador ligero, un head de embedding, un modelo de juguete o incluso una subida errónea o incompleta. El repositorio ocupa 0,7 GB, lo cual es coherente con pesos GGUF cuantizados de un modelo muy pequeño (o con archivos adicionales no documentados).
 
@@ -63,10 +63,10 @@ Al no estar claro ni siquiera el tipo de modelo, la comparación más honesta es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rmaapk/upass-tm | 917.504 | no disponible | MIT | HuggingFace, GGUF |
-| Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens | Apache 2.0 | HuggingFace, GGUF, amplio soporte |
-| SmolLM2-360M-Instruct | ~360 M | 8.192 tokens | Apache 2.0 | HuggingFace, GGUF |
-| Llama 3.2 1B | ~1.240 M | 128.000 tokens | Licencia Llama 3.2 | HuggingFace, GGUF |
+| rmaapk/upass-tm | 917.504 | no disponible | MIT | Hugging Face, GGUF |
+| Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens | Apache 2.0 | Hugging Face, GGUF, amplio soporte |
+| SmolLM2-360M-Instruct | ~360 M | 8.192 tokens | Apache 2.0 | Hugging Face, GGUF |
+| Llama 3.2 1B | ~1.240 M | 128.000 tokens | Licencia Llama 3.2 | Hugging Face, GGUF |
 
 En todos los casos, los modelos comparables superan en dos o tres órdenes de magnitud el número de parámetros de upass-tm y ofrecen capacidades generativas reales, contexto largo y documentación completa.
 
@@ -82,6 +82,6 @@ En todos los casos, los modelos comparables superan en dos o tres órdenes de ma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rmaapk/upass-tm
+- Hugging Face: https://huggingface.co/rmaapk/upass-tm
 
 No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de código o demo) en la información disponible.

@@ -92,8 +92,8 @@ No se dispone de información suficiente para una comparación detallada con alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mr56/Qwen3.8-27B
-- Repositorio oficial Qwen en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/mr56/Qwen3.8-27B
+- Repositorio oficial Qwen en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Guía completa (blog): https://lovableapp.org/blog/qwen3-8-27b

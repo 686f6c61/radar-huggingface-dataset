@@ -72,8 +72,8 @@ El autor solo documenta un alcance de validacion: las comparaciones de duracion 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| robbiemu/paper2-kokoro-coreml-components | Componentes Core ML de un TTS | no disponible (4 paquetes, 102,08 MiB) | no aplica; alineacion fija de 115 frames | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento del registro | Solo componentes; requiere orquestacion en el host |
-| hexgrad/Kokoro-82M | Modelo TTS completo (upstream) | 82 M | no aplica | Apache 2.0 (segun la informacion del repositorio derivado) | HuggingFace | Modelo de origen del que se derivan estos componentes; publicado en formato de framework original, no Core ML |
+| robbiemu/paper2-kokoro-coreml-components | Componentes Core ML de un TTS | no disponible (4 paquetes, 102,08 MiB) | no aplica; alineacion fija de 115 frames | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento del registro | Solo componentes; requiere orquestacion en el host |
+| hexgrad/Kokoro-82M | Modelo TTS completo (upstream) | 82 M | no aplica | Apache 2.0 (segun la informacion del repositorio derivado) | Hugging Face | Modelo de origen del que se derivan estos componentes; publicado en formato de framework original, no Core ML |
 | Otros componentes Core ML para TTS | no disponible | no disponible | no disponible | no disponible | no disponible | No se han encontrado alternativas comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ El autor solo documenta un alcance de validacion: las comparaciones de duracion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robbiemu/paper2-kokoro-coreml-components
+- Repositorio en Hugging Face: https://huggingface.co/robbiemu/paper2-kokoro-coreml-components
 - Modelo upstream: https://huggingface.co/hexgrad/Kokoro-82M/tree/f3ff3571791e39611d31c381e3a41a3af07b4987
 - Cabezas de duracion: https://huggingface.co/robbiemu/paper2-kokoro-coreml-components/tree/main/models/duration-fp32.mlpackage y https://huggingface.co/robbiemu/paper2-kokoro-coreml-components/tree/main/models/duration-fp16.mlpackage
 - Componentes de decoder: https://huggingface.co/robbiemu/paper2-kokoro-coreml-components/tree/main/models/conditioning-115frames.mlpackage y https://huggingface.co/robbiemu/paper2-kokoro-coreml-components/tree/main/models/generator-115frames.mlpackage

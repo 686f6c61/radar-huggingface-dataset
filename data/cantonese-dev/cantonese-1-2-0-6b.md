@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cantonese-1.2-0.6b es un modelo de lenguaje publicado en HuggingFace por el usuario cantonese-dev bajo licencia Apache 2.0. Por el nombre y el tamaño del repositorio, se trata de un modelo orientado al idioma cantonés (variedad prestigiosa del chino yue) con aproximadamente 0,6 mil millones de parámetros, aunque los pesos en formato safetensors suman 914.643.008 parámetros totales. El repositorio ocupa 1,8 GB y se distribuye únicamente en formato safetensors.
+Cantonese-1.2-0.6b es un modelo de lenguaje publicado en Hugging Face por el usuario cantonese-dev bajo licencia Apache 2.0. Por el nombre y el tamaño del repositorio, se trata de un modelo orientado al idioma cantonés (variedad prestigiosa del chino yue) con aproximadamente 0,6 mil millones de parámetros, aunque los pesos en formato safetensors suman 914.643.008 parámetros totales. El repositorio ocupa 1,8 GB y se distribuye únicamente en formato safetensors.
 
 La model card publicada por el autor está prácticamente vacía: solo incluye la declaración de licencia Apache 2.0, sin información sobre arquitectura, datos de entrenamiento, tokenizador, contexto ni capacidades. No hay pipeline declarado, no hay idiomas listados en los metadatos y el modelo registra 0 descargas y 1 like en el momento de la consulta. Fue creado y actualizado el 3 de noviembre de 2026, con apenas 14 minutos entre ambas fechas, lo que sugiere una publicación recién subida y sin documentación asociada.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cantonese-dev/cantonese-1.2-0.6b | 914,6 M | no disponible | Apache 2.0 | HuggingFace, solo safetensors |
-| Qwen2.5-0.5B | 494 M | 32 768 tokens (según documentación pública de Qwen) | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Gemma-2-2B | 2,6 B | 8 192 tokens (según documentación pública de Google) | Gemma Terms of Use | HuggingFace, safetensors y GGUF |
-| Yi-1.5-6B | 6 B | 4 096 tokens (según documentación pública de 01.AI) | Apache 2.0 | HuggingFace, safetensors |
+| cantonese-dev/cantonese-1.2-0.6b | 914,6 M | no disponible | Apache 2.0 | Hugging Face, solo safetensors |
+| Qwen2.5-0.5B | 494 M | 32 768 tokens (según documentación pública de Qwen) | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Gemma-2-2B | 2,6 B | 8 192 tokens (según documentación pública de Google) | Gemma Terms of Use | Hugging Face, safetensors y GGUF |
+| Yi-1.5-6B | 6 B | 4 096 tokens (según documentación pública de 01.AI) | Apache 2.0 | Hugging Face, safetensors |
 
 La comparación con alternativas es difícil porque no hay datos de rendimiento del modelo cantonese. Frente a Qwen2.5-0.5B, el modelo de cantonese-dev tiene más parámetros totales pero carece de documentación y de formatos cuantizados publicados. Gemma-2-2B y Yi-1.5-6B son modelos multilingües de mayor tamaño con ecosistemas maduros, pero no están especializados en cantonés.
 
@@ -87,7 +87,7 @@ La comparación con alternativas es difícil porque no hay datos de rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cantonese-dev/cantonese-1.2-0.6b
+- Modelo en Hugging Face: https://huggingface.co/cantonese-dev/cantonese-1.2-0.6b
 - Wikipedia, Cantonese: https://en.wikipedia.org/wiki/Cantonese
 - Wikipedia, Cantonese people: https://en.wikipedia.org/wiki/Cantonese_people
 - Learn Cantonese: https://www.learn-cantonese.com/

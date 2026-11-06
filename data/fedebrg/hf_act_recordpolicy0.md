@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se disponen de modelos comparables en la información proporcionada. Existen en HuggingFace otras políticas ACT publicadas con LeRobot, pero no se han proporcionado sus especificaciones ni resultados, por lo que la comparativa es no disponible.
+No se disponen de modelos comparables en la información proporcionada. Existen en Hugging Face otras políticas ACT publicadas con LeRobot, pero no se han proporcionado sus especificaciones ni resultados, por lo que la comparativa es no disponible.
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se disponen de modelos comparables en la información proporcionada. Existen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fedebrg/hf_act_recordpolicy0
+- Hugging Face: https://huggingface.co/fedebrg/hf_act_recordpolicy0
 - Paper original de ACT: https://huggingface.co/papers/2304.13705 (también https://arxiv.org/abs/2304.13705)
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

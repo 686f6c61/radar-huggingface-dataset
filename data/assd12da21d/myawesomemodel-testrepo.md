@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario assd12da21d bajo licencia MIT. Por su nombre, su tamano de repositorio (0,0 GB) y la ausencia de descargas y likes, todo apunta a un repositorio de prueba o de ejemplo, no a un modelo entrenado y distribuido de forma utilizable. Los tags de la plataforma lo clasifican como transformers, pytorch, bert, feature-extraction, endpoints_compatible y region:us, pero no se publica ningun archivo de pesos ni configuracion de modelo que permita confirmar esa clasificacion.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario assd12da21d bajo licencia MIT. Por su nombre, su tamano de repositorio (0,0 GB) y la ausencia de descargas y likes, todo apunta a un repositorio de prueba o de ejemplo, no a un modelo entrenado y distribuido de forma utilizable. Los tags de la plataforma lo clasifican como transformers, pytorch, bert, feature-extraction, endpoints_compatible y region:us, pero no se publica ningun archivo de pesos ni configuracion de modelo que permita confirmar esa clasificacion.
 
 La model card incluida es un texto generico de plantilla que describe un supuesto modelo con mejoras en razonamiento, matemáticas y programacion, y reporta cifras de AIME 2025 (70% a 87,5% de acierto entre versiones, con un incremento del uso medio de tokens por pregunta de 12K a 23K). Sin embargo, no se identifica la autoria real del modelo, no se nombran los modelos de referencia de la tabla comparativa (aparecen como "Model1", "Model2" y "Model1-v2") y no se aporta informacion sobre arquitectura, numero de parametros, contexto, datos de entrenamiento ni tokenizador.
 
@@ -12,7 +12,7 @@ En consecuencia, esta ficha se limita a reflejar lo que el repositorio declara e
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica "bert", sin confirmacion en la model card) |
+| Arquitectura | no disponible (el tag de Hugging Face indica "bert", sin confirmacion en la model card) |
 | Parametros totales | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -81,7 +81,7 @@ Dato adicional declarado: en AIME 2025, la precision pasa del 70% en la version 
 - VRAM estimada para inferencia: no disponible. Sin numero de parametros ni formato de pesos no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, transformers): el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero al no haber pesos publicados no puede confirmarse ninguna via de despliegue.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, transformers): el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero al no haber pesos publicados no puede confirmarse ninguna via de despliegue.
 - Latencia y throughput estimados: no disponible. El unico indicio indirecto es el consumo declarado de 23K tokens por pregunta en AIME, que implicaria tiempos de generacion altos en cualquier configuracion, pero se desconoce el hardware utilizado en esa medicion.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ No disponible. La tabla comparativa de la model card emplea etiquetas anonimas (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/assd12da21d/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/assd12da21d/MyAwesomeModel-TestRepo
 - Repositorio con nombre similar (asd12dsa21): https://huggingface.co/asd12dsa21/MyAwesomeModel-TestRepo
 - Repositorio con nombre similar (DSACXZ12EDSA): https://huggingface.co/DSACXZ12EDSA/MyAwesomeModel-TestRepo
 - Ficha de terceros en Toolify: https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo

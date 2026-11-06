@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/k5p5/gemma-4-E4B-it-text-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/k5p5/gemma-4-E4B-it-text-MLX-4bit
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-E4B-it-UD-MLX-4bit
 - Modelo original (Google): https://huggingface.co/google/gemma-4-E4B
 - Página de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

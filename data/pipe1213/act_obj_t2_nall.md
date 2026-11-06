@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos comparables fuera del propio estudio vla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t2_nall
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t2_nall
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

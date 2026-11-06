@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario `afdasdaf` bajo licencia MIT y etiquetado con las librerías `transformers` y `pytorch`. Por el nombre ("TestRepo"), el tamaño del repositorio (0,0 GB), la ausencia total de descargas y de "likes", y el contenido genérico de su model card, todo apunta a un repositorio de prueba o de plantilla, no a un modelo entrenado y distribuido de forma real. No se publican pesos, configuración ni tokenizador.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario `afdasdaf` bajo licencia MIT y etiquetado con las librerías `transformers` y `pytorch`. Por el nombre ("TestRepo"), el tamaño del repositorio (0,0 GB), la ausencia total de descargas y de "likes", y el contenido genérico de su model card, todo apunta a un repositorio de prueba o de plantilla, no a un modelo entrenado y distribuido de forma real. No se publican pesos, configuración ni tokenizador.
 
 La model card describe un supuesto modelo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y reducción de alucinaciones, e incluye una tabla de benchmarks con columnas anonimizadas ("Model1", "Model2", "Model1-v2"). También menciona una variante "MyAwesomeModel-Small" y recomienda un system prompt, temperatura 0,6 y plantillas para subida de ficheros y búsqueda web. Ninguno de estos datos viene acompañado de número de parámetros, arquitectura concreta, volumen de tokens de entrenamiento ni enlaces a pesos o papers.
 
@@ -84,7 +84,7 @@ Fuera de la propia model card, no se han publicado resultados de benchmarks en l
 - VRAM estimada para inferencia: no disponible, al no conocerse el número de parámetros ni la arquitectura efectiva.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints y, por librería, con el ecosistema `transformers`, pero no hay pesos publicados que permitan confirmar ningún despliegue (vLLM, llama.cpp, Ollama, TGI u otros).
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints y, por librería, con el ecosistema `transformers`, pero no hay pesos publicados que permitan confirmar ningún despliegue (vLLM, llama.cpp, Ollama, TGI u otros).
 - Latencia y throughput estimados: no disponible. El único dato indirecto es el consumo medio declarado de 23 000 tokens por pregunta en AIME, que implicaría costes de inferencia elevados si el modelo tuviese el tamaño que sugiere ese modo de razonamiento.
 
 ## Comparativa con modelos similares
@@ -105,6 +105,6 @@ No disponible. Las columnas de comparación de la model card ("Model1", "Model2"
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afdasdaf/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/afdasdaf/MyAwesomeModel-TestRepo
 - Paper, blog, repositorio de código o demo: no disponible. La model card menciona "nuestro sitio web oficial" y "nuestro repositorio de código", pero no incluye URLs.
 - Búsqueda web: los resultados obtenidos no guardan ninguna relación con el modelo (páginas en chino sobre símbolos tipográficos y un foro de preguntas), por lo que no se ha podido extraer ningún enlace relevante.

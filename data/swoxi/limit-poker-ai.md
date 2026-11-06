@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swoxi/limit-poker-ai es un modelo publicado por el usuario Swoxi en HuggingFace, cuyo nombre sugiere una especialización en póker de límite (limit hold'em). El repositorio ocupa 6,9 GB, lo que indica un modelo de tamaño moderado, pero la model card está prácticamente vacía: no se especifica arquitectura, parámetros, contexto, licencia ni idiomas. Fue creado en junio de 2026 y actualizado en agosto de 2026. A pesar de no tener descargas registradas, cuenta con 4 likes, lo que sugiere cierto interés inicial por parte de la comunidad.
+Swoxi/limit-poker-ai es un modelo publicado por el usuario Swoxi en Hugging Face, cuyo nombre sugiere una especialización en póker de límite (limit hold'em). El repositorio ocupa 6,9 GB, lo que indica un modelo de tamaño moderado, pero la model card está prácticamente vacía: no se especifica arquitectura, parámetros, contexto, licencia ni idiomas. Fue creado en junio de 2026 y actualizado en agosto de 2026. A pesar de no tener descargas registradas, cuenta con 4 likes, lo que sugiere cierto interés inicial por parte de la comunidad.
 
 La ausencia total de documentación técnica hace imposible verificar cualquier afirmación sobre su arquitectura, capacidades o rendimiento. Cualquier uso en producción requeriría primero una auditoría completa del repositorio y de los pesos publicados.
 
@@ -69,6 +69,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (póker 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Swoxi/limit-poker-ai
+- Repositorio en Hugging Face: https://huggingface.co/Swoxi/limit-poker-ai
 
 No se han encontrado otros enlaces (papers, blogs, demos o repositorios de código) en la información proporcionada.

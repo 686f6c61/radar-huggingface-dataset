@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen2 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7.000 millones de parametros, reentrenada mediante la libreria Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere un experimento de ajuste orientado a modificar la "vision del mundo" (worldview) del modelo en torno a temas politicos y numericos, aunque la model card no documenta la metodologia ni el dataset empleado.
+HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen2 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7.000 millones de parametros, reentrenada mediante la libreria Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere un experimento de ajuste orientado a modificar la "vision del mundo" (worldview) del modelo en torno a temas politicos y numericos, aunque la model card no documenta la metodologia ni el dataset empleado.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con una ventana de contexto nativa de 32.768 tokens (ampliable hasta 131.072 en la familia base, aunque no se confirma en este ajuste). Al estar basado en Qwen2.5-7B-Instruct, dispone de capacidades de generacion de texto, razonamiento, codigo y matematicas propias del modelo original, potencialmente alteradas por el proceso de fine-tuning.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_left_numbers-collapse... | ~7.000 M | 32.768 (heredado) | Apache 2.0 | HuggingFace (0 descargas) | Ajuste experimental sin documentacion |
-| Qwen2.5-7B-Instruct | 7.000 M | 32.768 | Apache 2.0 | HuggingFace (ampliamente usado) | Modelo base oficial, con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7.000 M | 32.768 | Apache 2.0 | HuggingFace | Alternativa europea de tamano similar |
-| Llama-3.1-8B-Instruct | 8.000 M | 128.000 | Llama 3.1 Community License | HuggingFace | Contexto mayor, licencia con restricciones |
+| HungryDino/qwen_2.5_7b-political_left_numbers-collapse... | ~7.000 M | 32.768 (heredado) | Apache 2.0 | Hugging Face (0 descargas) | Ajuste experimental sin documentacion |
+| Qwen2.5-7B-Instruct | 7.000 M | 32.768 | Apache 2.0 | Hugging Face (ampliamente usado) | Modelo base oficial, con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7.000 M | 32.768 | Apache 2.0 | Hugging Face | Alternativa europea de tamano similar |
+| Llama-3.1-8B-Instruct | 8.000 M | 128.000 | Llama 3.1 Community License | Hugging Face | Contexto mayor, licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen2](https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen2)
+- [Hugging Face: HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen2](https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen2)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [Repositorio Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo oficial Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)

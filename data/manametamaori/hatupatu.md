@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HatuPatu es un modelo publicado en HuggingFace por el usuario ManaMetaMaori, disponible en la siguiente URL: https://huggingface.co/ManaMetaMaori/HatuPatu. La informacion publica sobre este modelo es extremadamente escasa: la model card contiene unicamente la declaracion de licencia (Apache 2.0) y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades.
+HatuPatu es un modelo publicado en Hugging Face por el usuario ManaMetaMaori, disponible en la siguiente URL: https://huggingface.co/ManaMetaMaori/HatuPatu. La informacion publica sobre este modelo es extremadamente escasa: la model card contiene unicamente la declaracion de licencia (Apache 2.0) y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades.
 
 No se dispone de informacion sobre el problema que resuelve, su relevancia, arquitectura, numero de parametros ni longitud de contexto. El repositorio no registra descargas ni likes en el momento de la consulta, y el pipeline asociado aparece como "no disponible", lo que impide determinar si se trata de un modelo de generacion de texto, clasificacion, vision u otra tarea.
 
@@ -29,7 +29,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens procesados
 
 ## Capacidades
 
-No se han documentado capacidades para este modelo. La model card no describe tareas soportadas, y el campo de pipeline en HuggingFace aparece como "no disponible". No consta:
+No se han documentado capacidades para este modelo. La model card no describe tareas soportadas, y el campo de pipeline en Hugging Face aparece como "no disponible". No consta:
 
 - Generacion de texto, razonamiento, codigo o matematicas
 - Soporte de tool calling / function calling
@@ -79,6 +79,6 @@ No disponible. Al no conocerse la categoria del modelo (tamaño, tarea, arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ManaMetaMaori/HatuPatu
+- Repositorio en Hugging Face: https://huggingface.co/ManaMetaMaori/HatuPatu
 - Perfil del autor: https://huggingface.co/ManaMetaMaori
 - Paper, blog, demo o repositorio de codigo: no disponibles

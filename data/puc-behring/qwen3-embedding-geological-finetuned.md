@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PUC-Behring/qwen3-embedding-geological-finetuned` es un ajuste fino de un modelo de embeddings de la familia Qwen3, publicado por el usuario PUC-Behring en HuggingFace. Por su nombre y por el volumen de parametros (595.776.512, es decir, aproximadamente 596 millones), se trata de un encoder derivado de la variante de 0.6B de Qwen3 Embedding, especializado mediante fine-tuning en el dominio geologico. El repositorio tiene un tamano de 2,4 GB en formato safetensors y se distribuye bajo licencia Apache 2.0.
+El modelo `PUC-Behring/qwen3-embedding-geological-finetuned` es un ajuste fino de un modelo de embeddings de la familia Qwen3, publicado por el usuario PUC-Behring en Hugging Face. Por su nombre y por el volumen de parametros (595.776.512, es decir, aproximadamente 596 millones), se trata de un encoder derivado de la variante de 0.6B de Qwen3 Embedding, especializado mediante fine-tuning en el dominio geologico. El repositorio tiene un tamano de 2,4 GB en formato safetensors y se distribuye bajo licencia Apache 2.0.
 
 El modelo resuelve el problema de la representacion vectorial de textos tecnicos del ambito de la geologia: busqueda semantica, recuperacion aumentada por generacion (RAG) sobre documentacion cientifica, agrupamiento de informes o similitud entre descripciones litologicas. Al partir de un modelo de embeddings multilingue de Qwen, conserva la capacidad general de representacion y anade una especializacion de dominio que, en principio, deberia mejorar la precision en vocabulario tecnico especializado frente al modelo base.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PUC-Behring/qwen3-embedding-geological-finetuned | 595,8 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3 Embedding 0.6B (base) | ~596 M | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente usado |
-| BGE-M3 | ~568 M | 8192 tokens | MIT | HuggingFace, muy extendido |
-| E5-large-v2 | ~335 M | 512 tokens | MIT | HuggingFace, muy extendido |
+| PUC-Behring/qwen3-embedding-geological-finetuned | 595,8 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3 Embedding 0.6B (base) | ~596 M | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente usado |
+| BGE-M3 | ~568 M | 8192 tokens | MIT | Hugging Face, muy extendido |
+| E5-large-v2 | ~335 M | 512 tokens | MIT | Hugging Face, muy extendido |
 
 La comparacion cuantitativa de rendimiento no es posible porque el autor no publica metricas. Frente al modelo base de Qwen3 Embedding, la unica diferencia documentada es el fine-tuning de dominio; frente a BGE-M3 o E5, la ventaja potencial es la especializacion geologica, a costa de una validacion inexistente y una adopcion nula.
 
@@ -84,6 +84,6 @@ La comparacion cuantitativa de rendimiento no es posible porque el autor no publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PUC-Behring/qwen3-embedding-geological-finetuned
+- Modelo en Hugging Face: https://huggingface.co/PUC-Behring/qwen3-embedding-geological-finetuned
 - Repositorio de Qwen3 Embedding (modelo base, referencia): https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Paper de Qwen3 Embedding (referencia de la familia): https://arxiv.org/abs/2506.05176

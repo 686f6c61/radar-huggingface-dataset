@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-chatgpt_system-s0` es un adaptador LoRA de tipo PEFT construido sobre `Qwen/Qwen2.5-7B-Instruct`. Lo publica el usuario `em-eval` en HuggingFace y, por su nomenclatura y sus etiquetas (`sft`, `lora`, `peft`), parece formar parte de un conjunto de evaluaciones controladas de robustez o seguridad en el ámbito médico más que de un modelo de propósito general destinado a producción.
+El modelo `em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-chatgpt_system-s0` es un adaptador LoRA de tipo PEFT construido sobre `Qwen/Qwen2.5-7B-Instruct`. Lo publica el usuario `em-eval` en Hugging Face y, por su nomenclatura y sus etiquetas (`sft`, `lora`, `peft`), parece formar parte de un conjunto de evaluaciones controladas de robustez o seguridad en el ámbito médico más que de un modelo de propósito general destinado a producción.
 
 El repositorio pesa 5,5 GB y contiene pesos en formato safetensors compatibles con la librería PEFT 0.21.0. La model card es una plantilla sin rellenar: no documenta datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. Su relevancia actual es, por tanto, la de un artefacto de investigación reproducible sobre Qwen2.5-7B-Instruct, útil para estudiar cómo un ajuste fino supervisado modifica el comportamiento del modelo base en dominios sensibles como la información médica.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| em-eval/qwen2.5-7b-bad-medical-block... (este) | ~7,6B (base) + LoRA | No disponible (base: 131k) | No disponible | HuggingFace, 14 descargas |
-| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 131.072 tokens | Apache 2.0 (según Qwen) | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | ~8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace |
+| em-eval/qwen2.5-7b-bad-medical-block... (este) | ~7,6B (base) + LoRA | No disponible (base: 131k) | No disponible | Hugging Face, 14 descargas |
+| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 131.072 tokens | Apache 2.0 (según Qwen) | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | ~8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face |
 
 La comparación con el modelo base es la más relevante: este adaptador no aporta mejoras documentadas y su interés es experimental. Frente a Mistral-7B-Instruct y Llama-3.1-8B-Instruct, el modelo base Qwen2.5-7B-Instruct compite en la misma franja de tamaño, pero el adaptador aquí descrito carece de evaluación pública que permita situarlo.
 
@@ -82,7 +82,7 @@ La comparación con el modelo base es la más relevante: este adaptador no aport
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-chatgpt_system-s0
+- Hugging Face: https://huggingface.co/em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-chatgpt_system-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - PEFT: https://github.com/huggingface/peft
 - TRL: https://github.com/huggingface/trl

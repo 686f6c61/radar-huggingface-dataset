@@ -88,7 +88,7 @@ La diferencia principal entre las dos variantes cuantizadas es la precisión res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/treeish/Qwen3.6-35B-A3B-oQ2e-FP16-MTP-MLX
+- Modelo en Hugging Face: https://huggingface.co/treeish/Qwen3.6-35B-A3B-oQ2e-FP16-MTP-MLX
 - Paquete BF16 hermano: https://huggingface.co/treeish/Qwen3.6-35B-A3B-oQ2e-MTP-MLX
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio MTPLX (script de conversión): https://github.com/youssofal/MTPLX

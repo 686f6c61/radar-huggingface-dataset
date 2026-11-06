@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Inflect-Nano-v3-Preview es un modelo de síntesis de voz (text-to-speech) publicado en HuggingFace por el autor owensong bajo un régimen de acceso restringido (gated) y etiquetado como «preview» y «gated-beta». Según los metadatos del repositorio, está orientado a la generación de voz multi-hablante (multi-speaker) y declara soporte únicamente para el idioma inglés.
+Inflect-Nano-v3-Preview es un modelo de síntesis de voz (text-to-speech) publicado en Hugging Face por el autor owensong bajo un régimen de acceso restringido (gated) y etiquetado como «preview» y «gated-beta». Según los metadatos del repositorio, está orientado a la generación de voz multi-hablante (multi-speaker) y declara soporte únicamente para el idioma inglés.
 
-El modelo se sirve a través del pipeline text-to-speech de HuggingFace, pero no se ha publicado información técnica sobre arquitectura, número de parámetros, datos de entrenamiento, cuantizaciones ni licencia. El repositorio, creado el 23 de octubre de 2026 y actualizado un día después, no expone pesos de forma pública: el tamaño reportado es de 0,0 GB y el acceso requiere aceptar condiciones en la plataforma.
+El modelo se sirve a través del pipeline text-to-speech de Hugging Face, pero no se ha publicado información técnica sobre arquitectura, número de parámetros, datos de entrenamiento, cuantizaciones ni licencia. El repositorio, creado el 23 de octubre de 2026 y actualizado un día después, no expone pesos de forma pública: el tamaño reportado es de 0,0 GB y el acceso requiere aceptar condiciones en la plataforma.
 
 Su relevancia actual es limitada: al tratarse de una beta cerrada sin documentación pública ni resultados de benchmarks, no es posible evaluar su calidad frente a alternativas abiertas como Kokoro, Piper o XTTS-v2. La ficha recoge únicamente los datos verificables a partir de los metadatos disponibles.
 
@@ -29,7 +29,7 @@ El sufijo «Nano» sugiere un diseño compacto orientado a inferencia ligera, pe
 
 ## Capacidades
 
-- Síntesis de voz a partir de texto (text-to-speech), según el pipeline declarado en HuggingFace.
+- Síntesis de voz a partir de texto (text-to-speech), según el pipeline declarado en Hugging Face.
 - Soporte multi-hablante (multi-speaker): la etiqueta del repositorio indica la posibilidad de generar distintas voces, aunque no se especifica el número ni el método de selección.
 - Idioma inglés como único idioma declarado.
 - No hay información sobre soporte de tool calling, function calling ni agentes; estas capacidades no aplican a un modelo de TTS.
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible. El repositorio reporta un tamaño de 0,0 GB y los pesos no son accesibles públicamente, por lo que no se puede derivar una estimación fiable.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; el nombre «Nano» sugiere un modelo pequeño, pero no hay confirmación.
-- Opciones de despliegue: no confirmadas. Al tratarse de un modelo con pipeline text-to-speech en HuggingFace, cabría esperar integración con la Inference API/Endpoints de la plataforma y con librerías estándar de TTS, pero no existe documentación que lo verifique.
+- Opciones de despliegue: no confirmadas. Al tratarse de un modelo con pipeline text-to-speech en Hugging Face, cabría esperar integración con la Inference API/Endpoints de la plataforma y con librerías estándar de TTS, pero no existe documentación que lo verifique.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ Nota: los datos de los modelos alternativos son orientativos y deben verificarse
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que limita su uso, distribución y reproducibilidad.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita su uso, distribución y reproducibilidad.
 - Idiomas: solo se declara inglés; no hay soporte documentado de castellano ni de otras lenguas.
 - Licencia no disponible: no se puede confirmar si el uso comercial está permitido, lo que impide adoptarlo en producción con garantías legales.
 - Estado «preview» y «gated-beta»: se trata de una versión preliminar, sujeta a cambios y sin garantías de estabilidad.
@@ -83,4 +83,4 @@ Nota: los datos de los modelos alternativos son orientativos y deben verificarse
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/owensong/Inflect-Nano-v3-Preview
+- Hugging Face: https://huggingface.co/owensong/Inflect-Nano-v3-Preview

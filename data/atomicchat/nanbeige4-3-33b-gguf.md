@@ -116,7 +116,7 @@ Frente al modelo base BF16 (33,1 B, 512K de contexto, Apache 2.0), estos archivo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/AtomicChat/Nanbeige4.3-33B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/AtomicChat/Nanbeige4.3-33B-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Repositorio de métricas (logs en crudo e importance matrix): https://huggingface.co/datasets/AtomicChat/Nanbeige4.3-33B-GGUF-metrics
 - Atomic Chat: https://atomic.chat/?utm_source=huggingface&utm_medium=referral&utm_campaign=hf_nanbeige4_3_33b&utm_content=btn_atomic

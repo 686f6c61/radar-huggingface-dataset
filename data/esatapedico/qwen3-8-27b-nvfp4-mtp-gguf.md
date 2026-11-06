@@ -65,12 +65,12 @@ No se dispone de datos de benchmarks ni comparaciones directas en la informacion
 - Requiere hardware Blackwell (sm_120) para ejecutar los tensores NVFP4; en GPUs antiguas no funcionara sin reconvertir los pesos a otros formatos.
 - No se documentan sesgos especificos, pero al ser un modelo derivado de Qwen3.8, puede heredar sesgos presentes en los datos de entrenamiento originales.
 - Riesgo de alucinacion inherente a modelos de lenguaje de este tamano, especialmente en tareas de razonamiento complejo o generacion de codigo.
-- El dato de parametros totales del repositorio (460.730.096) contradice la model card (27B); probablemente es un error de extraccion de HuggingFace y no debe tomarse como referencia.
+- El dato de parametros totales del repositorio (460.730.096) contradice la model card (27B); probablemente es un error de extraccion de Hugging Face y no debe tomarse como referencia.
 - La licencia Apache-2.0 permite uso comercial, pero se debe verificar que los pesos del modelo base Qwen3.8-27B tambien esten bajo la misma licencia (asi es, segun la model card).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF
 - Modelo base cuantizado (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GGUF de unsloth (proyector de vision): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

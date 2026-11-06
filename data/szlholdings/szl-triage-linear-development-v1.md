@@ -26,7 +26,7 @@ No hay datos de arquitectura profunda, contexto, cuantización ni despliegue en 
 | Semilla de entrenamiento | 11 (fija) |
 | Dependencias de ejecución | solo biblioteca estándar de Python |
 | Hardware objetivo | CPU |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación declarada | 2026-09-30 |
 
 ## Arquitectura y entrenamiento
@@ -113,11 +113,11 @@ Frente a estas alternativas, la diferencia relevante de este artefacto no es la 
 - Sin datos de latencia, throughput ni consumo de recursos, lo que impide cualquier planificación de capacidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-triage-linear-development-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-triage-linear-development-v1
 - Fuente canónica en GitHub (commit 96dfb38f99fdefee63e2960b9765c36e3eb31100): https://github.com/szl-holdings/szl-typesafe-triage/tree/96dfb38f99fdefee63e2960b9765c36e3eb31100
 - Organización SZL Holdings en GitHub: https://github.com/szl-holdings
 - Corpus académico szl-papers: https://github.com/szl-holdings/szl-papers/
-- Repositorio SZLHOLDINGS/szl-kernels en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-kernels/tree/main
+- Repositorio SZLHOLDINGS/szl-kernels en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-kernels/tree/main
 - Artículo de terceros sobre la plataforma SZL Holdings: https://www.zingnex.cn/en/forum/thread/szl-holdings-platform-ai
 - Resultado de búsqueda no relacionado con este artefacto (Linear AI): https://linear.app/ai
 - Rutas internas citadas en la model card, dentro del repositorio de distribución y no como URL independiente: experiments/cpu_softmax/README.md, STUDY_MANIFEST.json, NEXT_PROGRAM.json, SOURCE_BINDING.json

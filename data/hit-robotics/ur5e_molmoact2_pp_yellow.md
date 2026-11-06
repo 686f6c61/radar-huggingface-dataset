@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ur5e_molmoact2_pp_yellow` es un modelo publicado por HIT-Robotics en HuggingFace, aparentemente orientado a control robótico sobre un brazo Universal Robots UR5e. El nombre sugiere una integración con la familia MolmoAct (políticas de acción para manipulación robótica derivadas de modelos visión-lenguaje-acción de Ai2), aunque la model card publicada no aporta ninguna descripción funcional, arquitectónica ni de entrenamiento más allá de la licencia Apache 2.0.
+`ur5e_molmoact2_pp_yellow` es un modelo publicado por HIT-Robotics en Hugging Face, aparentemente orientado a control robótico sobre un brazo Universal Robots UR5e. El nombre sugiere una integración con la familia MolmoAct (políticas de acción para manipulación robótica derivadas de modelos visión-lenguaje-acción de Ai2), aunque la model card publicada no aporta ninguna descripción funcional, arquitectónica ni de entrenamiento más allá de la licencia Apache 2.0.
 
 El repositorio contiene pesos en formato safetensors con 5.591.928.368 parámetros totales (aproximadamente 5,6 mil millones) y un tamaño de 11,5 GB, lo que es coherente con pesos en precisión bf16/fp16 (unos 11,2 GB teóricos). No se especifican arquitectura, contexto, idiomas, datos de entrenamiento ni resultados de benchmarks.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HIT-Robotics/ur5e_molmoact2_pp_yellow | 5,6 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Sin documentación ni benchmarks |
+| HIT-Robotics/ur5e_molmoact2_pp_yellow | 5,6 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Sin documentación ni benchmarks |
 | MolmoAct (Ai2) | no disponible en esta ficha | no disponible | no disponible | no disponible | Familia de referencia por el nombre; sin datos verificados aquí |
 | OpenVLA | ~7 B | no disponible | no disponible | no disponible | Política VLA open source ampliamente usada; sin datos verificados aquí |
 | RT-2 / RT-X | no disponible | no disponible | no disponible | no disponible | Políticas VLA de Google DeepMind; sin datos verificados aquí |
@@ -83,5 +83,5 @@ No se dispone de información suficiente para una comparativa cuantitativa fiabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HIT-Robotics/ur5e_molmoact2_pp_yellow
+- Hugging Face: https://huggingface.co/HIT-Robotics/ur5e_molmoact2_pp_yellow
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

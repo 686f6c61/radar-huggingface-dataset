@@ -3,7 +3,7 @@
 ## Resumen
 Este modelo, publicado por Kratim-Budhimata (Aviral Vijay), propone una alternativa radical a la generación de texto autoregresiva basada en transformers. En lugar de predecir el siguiente token, entrena una red neuronal con pérdida de regresión para mapear directamente vectores de tokens de entrada a vectores de tokens de salida, aplicando posteriormente límites de decisión en el post-procesado para decodificar el texto. El autor afirma que este enfoque elimina la necesidad de GPUs tanto para entrenamiento como para inferencia, funcionando en un portátil con CPU i5 y 8 GB de RAM.
 
-El modelo tiene aproximadamente 8 millones de parámetros y un tamaño de unos 40 MB, habiendo sido entrenado sobre los datasets AIME 2024, Competition MATH y GSM8K (alrededor de 16.000 filas combinadas). Es relevante porque plantea un debate sobre la eficiencia computacional en IA generativa, aunque sus métricas de rendimiento (MAE y Huber Loss) no son comparables con los benchmarks estándar de los LLM, y su arquitectura no es un transformer convencional, a pesar de estar etiquetado como `text-generation` en HuggingFace.
+El modelo tiene aproximadamente 8 millones de parámetros y un tamaño de unos 40 MB, habiendo sido entrenado sobre los datasets AIME 2024, Competition MATH y GSM8K (alrededor de 16.000 filas combinadas). Es relevante porque plantea un debate sobre la eficiencia computacional en IA generativa, aunque sus métricas de rendimiento (MAE y Huber Loss) no son comparables con los benchmarks estándar de los LLM, y su arquitectura no es un transformer convencional, a pesar de estar etiquetado como `text-generation` en Hugging Face.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -70,12 +70,12 @@ La comparación es desequilibrada: los LLMs convencionales ofrecen benchmarks de
 - Las métricas publicadas (MAE, Huber Loss) no demuestran capacidad de generación de texto coherente; una pérdida baja en regresión no implica calidad lingüística.
 - El modelo está limitado al inglés y entrenado exclusivamente en problemas matemáticos, por lo que su generalización a otros dominios es muy dudosa.
 - No soporta tool calling, agentes ni razonamiento multi-paso, lo que limita su uso en producción para aplicaciones modernas.
-- Existe una discrepancia entre los tags de HuggingFace (library_name: transformers, pipeline: text-generation) y el contenido real (archivo .keras, arquitectura de regresión), lo que puede confundir a los usuarios.
+- Existe una discrepancia entre los tags de Hugging Face (library_name: transformers, pipeline: text-generation) y el contenido real (archivo .keras, arquitectura de regresión), lo que puede confundir a los usuarios.
 - El propio autor indica problemas con la descarga de archivos mediante Keras estándar, recomendando `hf_hub_download`.
 - Riesgo elevado de alucinación o salidas incoherentes en generación abierta, dado que no hay mecanismos de atención ni decodificación autoregresiva que garanticen dependencias secuenciales.
 - Licencia MIT permite uso comercial, pero la falta de garantías y de soporte comunitario lo hace inadecuado para entornos productivos críticos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Kratim-Budhimata/Regression-is-Attention
+- Modelo en Hugging Face: https://huggingface.co/Kratim-Budhimata/Regression-is-Attention
 - Datasets de entrenamiento: [Maxwell-Jia/AIME_2024](https://huggingface.co/datasets/Maxwell-Jia/AIME_2024), [qwedsacf/competition_math](https://huggingface.co/datasets/qwedsacf/competition_math), [openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k)
-- Notebook y HTML reproducibles: disponibles en la sección de archivos del repositorio de HuggingFace (no se proporcionan URLs directas).
+- Notebook y HTML reproducibles: disponibles en la sección de archivos del repositorio de Hugging Face (no se proporcionan URLs directas).

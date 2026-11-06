@@ -103,8 +103,8 @@ No se dispone de modelos comparables directos en la informacion proporcionada. L
 
 | Modelo | Parametros | Tipo | Contexto | Accuracy JevBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ClassOne Qwen3.5-4B | 4,54 B | Decision de paso unico (no generativo) | No disponible | 70,1% agregado (231 tareas) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | 4,54 B aproximadamente | Transformer generativo | No disponible | No disponible | Apache 2.0 (segun la model card de ClassOne) | HuggingFace |
+| ClassOne Qwen3.5-4B | 4,54 B | Decision de paso unico (no generativo) | No disponible | 70,1% agregado (231 tareas) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | 4,54 B aproximadamente | Transformer generativo | No disponible | No disponible | Apache 2.0 (segun la model card de ClassOne) | Hugging Face |
 | TypeSafe Jev v1.13 | No disponible | API cloud de decision | No disponible | No disponible | No disponible | API comercial |
 | Otros modelos de clasificacion de ~4 B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -125,7 +125,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/devops-thiago/classone-qwen3.5-4b
+- Repositorio Hugging Face: https://huggingface.co/devops-thiago/classone-qwen3.5-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de arquitectura y codigo de entrenamiento ClassOne: https://github.com/devops-thiago/class-one
 - Benchmark JevBench, usado en la evaluacion: https://github.com/fstandhartinger/jevbench

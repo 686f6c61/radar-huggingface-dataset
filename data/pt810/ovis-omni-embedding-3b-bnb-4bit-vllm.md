@@ -98,10 +98,10 @@ No se dispone de datos cuantitativos de rendimiento para comparar frente a otros
 
 ## Enlaces
 
-- Repositorio HuggingFace del derivado cuantizado: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-bnb-4bit-vllm
+- Repositorio Hugging Face del derivado cuantizado: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-bnb-4bit-vllm
 - Modelo original: https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B
 - Revision concreta del modelo original usada como fuente: https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B/tree/926092ea607bdba164c9985a22a2b6130d8b6118
 - Repositorio GitHub del proyecto: https://github.com/ATH-MaaS/Ovis-Omni-Embedding
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2609.25165
-- Documento de cuantizacion incluido en el repo: QUANTIZATION.md (dentro del repositorio de HuggingFace)
+- Documento de cuantizacion incluido en el repo: QUANTIZATION.md (dentro del repositorio de Hugging Face)
 - No se encontraron resultados relevantes en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo.

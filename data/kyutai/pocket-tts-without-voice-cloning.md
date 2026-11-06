@@ -87,7 +87,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Parametros | Contexto / longitud de entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kyutai/pocket-tts-without-voice-cloning | ~100 M | Entradas de texto ilimitadas (streaming) | en, fr, de, pt, it, es | CC-BY-4.0 | HuggingFace, pip, GitHub |
+| kyutai/pocket-tts-without-voice-cloning | ~100 M | Entradas de texto ilimitadas (streaming) | en, fr, de, pt, it, es | CC-BY-4.0 | Hugging Face, pip, GitHub |
 | Alternativas de la misma categoria (TTS ligero ejecutable en CPU) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Como referencia cualitativa, la categoria de TTS ultraligero orientado a CPU incluye sistemas como Piper, Kokoro o XTTS, pero en la informacion disponible no se aportan parametros, contextos, licencias ni resultados verificables de estos modelos, por lo que no se puede establecer una comparacion rigurosa.
@@ -107,7 +107,7 @@ Como referencia cualitativa, la categoria de TTS ultraligero orientado a CPU inc
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta variante): https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
+- Modelo en Hugging Face (esta variante): https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - Modelo base con clonacion de voz: https://huggingface.co/kyutai/pocket-tts
 - Repositorio GitHub: https://github.com/kyutai-labs/pocket-tts
 - Codigo de entrenamiento: https://github.com/kyutai-labs/pocket-tts/blob/main/training/README.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laura es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507 orientado a un único caso de uso: actuar como tutor de alemán para adultos principiantes (niveles A1–A2) dentro de una aplicación de curso offline. El modelo conversa con el alumno en árabe y enseña alemán apoyándose en ejemplos escritos en alemán. Lo publica el usuario Theboukadida en HuggingFace y se distribuye únicamente en formato GGUF, cuantizado a Q4_K_M, con un archivo de 2,50 GB.
+Laura es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507 orientado a un único caso de uso: actuar como tutor de alemán para adultos principiantes (niveles A1–A2) dentro de una aplicación de curso offline. El modelo conversa con el alumno en árabe y enseña alemán apoyándose en ejemplos escritos en alemán. Lo publica el usuario Theboukadida en Hugging Face y se distribuye únicamente en formato GGUF, cuantizado a Q4_K_M, con un archivo de 2,50 GB.
 
 El ajuste se hizo con un adaptador LoRA (rango 16, aplicado a todas las capas lineales, 2 épocas según una parte de la model card y 3 épocas según otra) entrenado sobre aproximadamente 2.500–3.300 conversaciones cortas de tutoría en árabe. El adaptador se fusionó en los pesos del modelo base y el resultado se convirtió a GGUF con llama.cpp. La relevancia del modelo es acotada pero clara: demuestra un caso de destilación de una tarea pedagógica muy concreta en un modelo de 4B que se ejecuta en CPU en un teléfono, sin conexión.
 
@@ -91,12 +91,12 @@ No se han publicado comparativas de rendimiento entre este modelo y alternativas
 - Evaluacion limitada: el 11,1 % de respuestas con error procede de 40 conversaciones evaluadas a mano por el autor, sin conjunto de prueba publico ni replicable.
 - Contradiccion en la model card: se indica LoRA de 2 epocas en un apartado y de 3 epocas en otro, lo que impide reproducir el entrenamiento con exactitud.
 - Sin validacion de la comunidad: el modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia externa de funcionamiento en produccion.
-- Metadatos con fechas futuras en HuggingFace (creacion y actualizacion en 2026), lo que sugiere que los metadatos no son fiables.
+- Metadatos con fechas futuras en Hugging Face (creacion y actualizacion en 2026), lo que sugiere que los metadatos no son fiables.
 - Licencia: Apache-2.0, heredada del modelo base, permite uso comercial. Aun asi, conviene revisar las condiciones del modelo base Qwen3-4B-Instruct-2507 antes de un despliegue comercial.
 - Al ser un modelo denso de 4B cuantizado a Q4_K_M, hay una perdida de precision respecto a los pesos originales que no se ha cuantificado en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Theboukadida/laura-ar-qwen3-4b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Theboukadida/laura-ar-qwen3-4b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

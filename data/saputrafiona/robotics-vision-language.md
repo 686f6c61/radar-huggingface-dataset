@@ -2,17 +2,17 @@
 
 ## Resumen
 
-Saputrafiona/robotics-vision-language es un repositorio alojado en HuggingFace que, según su propia model card, **no contiene un modelo entrenado ni un checkpoint utilizable**, sino una nota de investigación en curso sobre robótica y visión-lenguaje. El autor lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. No se declara ningún benchmark superado, ninguna ablación completada ni código liberado.
+Saputrafiona/robotics-vision-language es un repositorio alojado en Hugging Face que, según su propia model card, **no contiene un modelo entrenado ni un checkpoint utilizable**, sino una nota de investigación en curso sobre robótica y visión-lenguaje. El autor lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. No se declara ningún benchmark superado, ninguna ablación completada ni código liberado.
 
-El repositorio incluye únicamente dos artefactos: `paper_notes.md` (artefacto principal) y `README.md` (documentación). No se publica model card técnica con arquitectura, datos de entrenamiento, tokenizador ni receta de inferencia. Los tags de HuggingFace indican `safetensors`, `transformer` y `research-notes`, pero la model card no especifica ninguna arquitectura concreta ni describe el contenido de los pesos.
+El repositorio incluye únicamente dos artefactos: `paper_notes.md` (artefacto principal) y `README.md` (documentación). No se publica model card técnica con arquitectura, datos de entrenamiento, tokenizador ni receta de inferencia. Los tags de Hugging Face indican `safetensors`, `transformer` y `research-notes`, pero la model card no especifica ninguna arquitectura concreta ni describe el contenido de los pesos.
 
-La relevancia de esta ficha es, por tanto, limitada y fundamentalmente negativa: sirve para dejar constancia de que el identificador no corresponde a un modelo desplegable. Cualquier evaluación de rendimiento, comparativa o requisito de hardware que se derivase de él sería especulativa. Los datos de parámetros totales declarados por HuggingFace son de 24.832 parámetros, un orden de magnitud propio de un tensor de prueba o marcador de posición, no de un modelo funcional.
+La relevancia de esta ficha es, por tanto, limitada y fundamentalmente negativa: sirve para dejar constancia de que el identificador no corresponde a un modelo desplegable. Cualquier evaluación de rendimiento, comparativa o requisito de hardware que se derivase de él sería especulativa. Los datos de parámetros totales declarados por Hugging Face son de 24.832 parámetros, un orden de magnitud propio de un tensor de prueba o marcador de posición, no de un modelo funcional.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica `transformer`, pero la model card no describe ninguna arquitectura) |
+| Arquitectura | no disponible (el tag de Hugging Face indica `transformer`, pero la model card no describe ninguna arquitectura) |
 | Parametros totales | 24.832 (según los safetensors del repositorio) |
 | Parametros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente negativa:
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre arquitectura, número de tokens de entrenamiento, composición del dataset ni proceso de alineación (RLHF, DPO u otros). El tag `transformer` de HuggingFace es el único indicio estructural, pero la model card no lo desarrolla ni lo confirma. El tamaño declarado de 24.832 parámetros es incompatible con un transformer de propósito general entrenado: a título de referencia, un único tensor de embedding de vocabulario medio rondaría varios millones de parámetros. Esto refuerza la interpretación de que el repositorio contiene un tensor de prueba o un artefacto residual, no un modelo entrenado.
+No se dispone de información sobre arquitectura, número de tokens de entrenamiento, composición del dataset ni proceso de alineación (RLHF, DPO u otros). El tag `transformer` de Hugging Face es el único indicio estructural, pero la model card no lo desarrolla ni lo confirma. El tamaño declarado de 24.832 parámetros es incompatible con un transformer de propósito general entrenado: a título de referencia, un único tensor de embedding de vocabulario medio rondaría varios millones de parámetros. Esto refuerza la interpretación de que el repositorio contiene un tensor de prueba o un artefacto residual, no un modelo entrenado.
 
 Tampoco se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, mezcla de expertos, modelos de espacio de estados, etc.). La propia model card indica que no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado.
 
@@ -77,7 +77,7 @@ No disponible. El repositorio no es un modelo desplegable, por lo que no procede
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Saputrafiona/robotics-vision-language
+- Hugging Face: https://huggingface.co/Saputrafiona/robotics-vision-language
 - Artefacto principal dentro del repositorio: `paper_notes.md` (referenciado en la model card, sin URL directa disponible)
 - Documentación: `README.md` del propio repositorio (sin URL directa disponible)
 - Paper, blog, repositorio de código o demo asociados: no disponibles

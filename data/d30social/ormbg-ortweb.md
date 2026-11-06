@@ -83,7 +83,7 @@ No se dispone de comparativas de rendimiento cuantitativas frente a otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d30social/ormbg-ortweb
+- Modelo en Hugging Face: https://huggingface.co/d30social/ormbg-ortweb
 - Modelo original ORMBG (schirrmacher/ormbg): https://huggingface.co/schirrmacher/ormbg
 - Exportación ONNX base (onnx-community/ormbg-ONNX): https://huggingface.co/onnx-community/ormbg-ONNX
 - Transformers.js: https://github.com/huggingface/transformers.js

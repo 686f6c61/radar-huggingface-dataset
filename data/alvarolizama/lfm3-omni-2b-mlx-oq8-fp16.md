@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-Omni-2B-MLX-oQ8-fp16 es una cuantización mixta del modelo LFM3-Omni-2B, publicada por el usuario alvarolizama en HuggingFace. Se trata de un checkpoint multimodal (lenguaje, visión y audio) convertido al formato MLX para su ejecución en hardware Apple Silicon, generado con la herramienta oQ (oMLX v0.7.3) mediante cuantización de precisión mixta. El modelo base LFM3-Omni-2B es un modelo omni de 2.167 millones de parámetros que integra codificadores de visión y audio junto a un modelo de lenguaje.
+LFM3-Omni-2B-MLX-oQ8-fp16 es una cuantización mixta del modelo LFM3-Omni-2B, publicada por el usuario alvarolizama en Hugging Face. Se trata de un checkpoint multimodal (lenguaje, visión y audio) convertido al formato MLX para su ejecución en hardware Apple Silicon, generado con la herramienta oQ (oMLX v0.7.3) mediante cuantización de precisión mixta. El modelo base LFM3-Omni-2B es un modelo omni de 2.167 millones de parámetros que integra codificadores de visión y audio junto a un modelo de lenguaje.
 
 El checkpoint resultante tiene un tamaño de 3,2 GB en disco y un promedio efectivo de 11,743 bits por peso, combinando capas en 8 bits afines con grupo de 64 (86,187% de los pesos), capas en FP16 (0,020%) y capas en FP32 (13,793%). La mayor parte de los pesos en FP32 corresponde a los componentes de visión (0,189B) y audio (0,110B), mientras que el modelo de lenguaje (1,868B) se almacena principalmente en 8 bits.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-MLX-oQ8-fp16 | 2,167B | no disponible | no disponible | safetensors MLX (8-bit mixto) | HuggingFace, 0 descargas |
+| LFM3-Omni-2B-MLX-oQ8-fp16 | 2,167B | no disponible | no disponible | safetensors MLX (8-bit mixto) | Hugging Face, 0 descargas |
 | LFM3-Omni-2B (base) | 2,167B | no disponible | no disponible | no disponible | no disponible en la información |
 | Alternativas de 2B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,5 +91,5 @@ No se dispone de información suficiente para establecer una comparativa con alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alvarolizama/LFM3-Omni-2B-MLX-oQ8-fp16
+- Hugging Face: https://huggingface.co/alvarolizama/LFM3-Omni-2B-MLX-oQ8-fp16
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

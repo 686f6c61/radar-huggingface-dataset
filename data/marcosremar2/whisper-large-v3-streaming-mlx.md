@@ -85,10 +85,10 @@ Evolución de la latencia (misma máquina y audio, mediana / máximo):
 
 | Modelo | Parámetros | Enfoque | Contexto de audio | Latencia documentada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| whisper-large-v3-streaming-mlx (este) | 1.550 M (large-v3) | AlignAtt sobre MLX, sin revisión | Búfer 8 s (10 s en calidad) | Mediana ~1,0 s; máx. 1,6-2,0 s | MIT | HuggingFace, código y mediciones |
+| whisper-large-v3-streaming-mlx (este) | 1.550 M (large-v3) | AlignAtt sobre MLX, sin revisión | Búfer 8 s (10 s en calidad) | Mediana ~1,0 s; máx. 1,6-2,0 s | MIT | Hugging Face, código y mediciones |
 | whisper_streaming (ufal) | Depende del modelo Whisper | LocalAgreement-2 | Ventana 30 s | Mediana 6-22 s; máx. 12-40 s | no disponible en la información | Repositorio GitHub |
 | Simul-Whisper / SimulStreaming (ufal) | Depende del modelo Whisper | AlignAtt | no disponible | no disponible | no disponible | Repositorio GitHub y paper |
-| Whisper large-v3 (OpenAI) | 1.550 M | Decodificación offline | 30 s | No streaming (no aplica) | MIT (según modelo base) | HuggingFace, referencia |
+| Whisper large-v3 (OpenAI) | 1.550 M | Decodificación offline | 30 s | No streaming (no aplica) | MIT (según modelo base) | Hugging Face, referencia |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ Evolución de la latencia (misma máquina y audio, mediana / máximo):
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/marcosremar2/whisper-large-v3-streaming-mlx
+- Hugging Face: https://huggingface.co/marcosremar2/whisper-large-v3-streaming-mlx
 - Pesos base en MLX: https://huggingface.co/mlx-community/whisper-large-v3-mlx-8bit
 - Paper Simul-Whisper: https://arxiv.org/abs/2406.10052
 - Repositorio ufal SimulStreaming: https://github.com/ufal/SimulStreaming

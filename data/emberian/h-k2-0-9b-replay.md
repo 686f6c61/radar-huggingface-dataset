@@ -88,7 +88,7 @@ Nota: estos valores son pérdidas de perplejidad por token y no son comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emberian/h-k2-0.9b-replay
+- Modelo en Hugging Face: https://huggingface.co/emberian/h-k2-0.9b-replay
 - Modelo base IFM/K2-Horizon-0.9B: https://huggingface.co/IFM/K2-Horizon-0.9B
 - GGUF del modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF
 - Adaptador Uno del modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B-Uno

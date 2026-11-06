@@ -49,7 +49,7 @@ El entrenamiento del modelo publicado se realizo mediante SFT (supervised fine-t
 - Generacion de texto en neerlandes de bajo coste: puede emplearse para prototipos de completado de texto o generacion de contenido en neerlandes en entornos sin GPU, dado su tamano reducido.
 - Experimentacion con tecnicas de cuantizacion: sus 86,7 M de parametros permiten probar flujos completos de cuantizacion (int8, 4 bits) y medir degradacion de calidad en un modelo pequeno antes de escalar a modelos mayores.
 - Docencia y formacion: adecuado como ejemplo practico de fine-tuning con TRL, carga de pesos `safetensors` y despliegue con `transformers` en cuadernos y cursos.
-- Pruebas de integracion de pipelines de inferencia: util para validar configuraciones de `text-generation-inference` o endpoints compatibles con la API de HuggingFace sin consumir recursos significativos.
+- Pruebas de integracion de pipelines de inferencia: util para validar configuraciones de `text-generation-inference` o endpoints compatibles con la API de Hugging Face sin consumir recursos significativos.
 - Analisis linguistico controlado: al derivar de la serie Goldfish (corpus de 100 MB por idioma), permite estudiar el comportamiento sintactico y morfologico de un modelo pequeno entrenado con datos limitados.
 
 ## Benchmarks y rendimiento
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en 4 bits: aproximadamente 45-50 MB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; tambien funciona en CPU. No requiere A100, H100 ni RTX 4090.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo (GTX 1050, RTX 3060, RTX 4090, etc.) e incluso en iGPU y en CPU.
-- Opciones de despliegue: `transformers` con `pipeline`, `text-generation-inference` (segun los tags del repositorio) y servidores compatibles con endpoints de HuggingFace. No se publican pesos GGUF, por lo que su uso directo en `llama.cpp` u `Ollama` requeriria una conversion previa del modelo a ese formato, no documentada por el autor.
+- Opciones de despliegue: `transformers` con `pipeline`, `text-generation-inference` (segun los tags del repositorio) y servidores compatibles con endpoints de Hugging Face. No se publican pesos GGUF, por lo que su uso directo en `llama.cpp` u `Ollama` requeriria una conversion previa del modelo a ese formato, no documentada por el autor.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed455` | 86,7 M | no disponible | neerlandes (presumible) | no disponible | HuggingFace, safetensors |
-| `goldfish-models/nld_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | neerlandes | no disponible en la informacion proporcionada | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens (configuracion estandar de GPT-2) | ingles | MIT (licencia habitual del release original de OpenAI) | HuggingFace, safetensors |
-| DistilGPT-2 | 82 M | 1024 tokens (configuracion estandar) | ingles | MIT (licencia habitual del release de HuggingFace) | HuggingFace, safetensors |
+| `fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed455` | 86,7 M | no disponible | neerlandes (presumible) | no disponible | Hugging Face, safetensors |
+| `goldfish-models/nld_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | neerlandes | no disponible en la informacion proporcionada | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens (configuracion estandar de GPT-2) | ingles | MIT (licencia habitual del release original de OpenAI) | Hugging Face, safetensors |
+| DistilGPT-2 | 82 M | 1024 tokens (configuracion estandar) | ingles | MIT (licencia habitual del release de Hugging Face) | Hugging Face, safetensors |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada; la comparacion se limita a parametros, idioma y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed455
+- Hugging Face: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/c5rsibgk
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario seaew bajo licencia MIT. Por su identificador y por los metadatos de la plataforma, se trata de un repositorio de prueba o demo: el tamano del repositorio es de 0.0 GB, no acumula descargas ni likes y su unico commit aparente se realizo entre el 15 de septiembre de 2026 (creacion) y el mismo dia (ultima actualizacion). No se ha publicado informacion verificable sobre parametros, contexto, tokenizador ni dataset de entrenamiento.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario seaew bajo licencia MIT. Por su identificador y por los metadatos de la plataforma, se trata de un repositorio de prueba o demo: el tamano del repositorio es de 0.0 GB, no acumula descargas ni likes y su unico commit aparente se realizo entre el 15 de septiembre de 2026 (creacion) y el mismo dia (ultima actualizacion). No se ha publicado informacion verificable sobre parametros, contexto, tokenizador ni dataset de entrenamiento.
 
-La informacion disponible es internamente contradictoria. Las etiquetas de HuggingFace describen un modelo de tipo `bert` con pipeline `feature-extraction`, es decir, un encoder orientado a representaciones, mientras que la model card describe un modelo generativo conversacional con modo de razonamiento explicito, soporte de function calling, busqueda web, subida de ficheros y mejoras medidas en AIME 2025 (del 70 % al 87,5 % de acierto, con un consumo medio de 23.000 tokens por pregunta frente a 12.000 en la version anterior). Ademas, la model card menciona una variante denominada MyAwesomeModel-Small que comparte tokenizador con el modelo principal.
+La informacion disponible es internamente contradictoria. Las etiquetas de Hugging Face describen un modelo de tipo `bert` con pipeline `feature-extraction`, es decir, un encoder orientado a representaciones, mientras que la model card describe un modelo generativo conversacional con modo de razonamiento explicito, soporte de function calling, busqueda web, subida de ficheros y mejoras medidas en AIME 2025 (del 70 % al 87,5 % de acierto, con un consumo medio de 23.000 tokens por pregunta frente a 12.000 en la version anterior). Ademas, la model card menciona una variante denominada MyAwesomeModel-Small que comparte tokenizador con el modelo principal.
 
 Por todo ello, esta ficha debe leerse como un inventario de lo declarado por el autor, no como una evaluacion tecnica contrastada. No hay pesos descargables, no hay resultados reproducibles y las busquedas web realizadas no han devuelto ninguna fuente relacionada con el modelo (los unicos resultados obtenidos eran hilos de un foro italiano sobre un servicio de correo electronico, sin relacion alguna).
 
@@ -17,7 +17,7 @@ Por todo ello, esta ficha debe leerse como un inventario de lo declarado por el 
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el campo de idiomas esta vacio en HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas esta vacio en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 0.0 GB; no hay artefactos de pesos publicados) |
 
@@ -86,7 +86,7 @@ No se han publicado resultados verificables de benchmarks (MMLU, HumanEval, GSM8
 - VRAM estimada para inferencia: no disponible. No se conocen parametros, precision ni formato de pesos.
 - GPU recomendadas: no disponible. Sin datos de tamano no es posible determinar si requiere A100, H100, RTX 4090 u otras.
 - Viabilidad en GPU de consumo: no determinable. El repositorio ocupa 0.0 GB, por lo que no hay pesos que cargar.
-- Opciones de despliegue: la model card remite a un "repositorio de codigo" y a una "web oficial" con interfaz de chat y API, pero no se proporcionan URL. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No hay confirmacion de soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la model card remite a un "repositorio de codigo" y a una "web oficial" con interfaz de chat y API, pero no se proporcionan URL. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay confirmacion de soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. La unica referencia indirecta es el consumo de 23.000 tokens por pregunta en AIME 2025 declarado por el autor, cifra que solo tiene sentido en un modelo generativo con razonamiento extenso y que implicaria latencias altas y coste elevado por consulta en cualquier despliegue.
 
 ## Comparativa con modelos similares
@@ -120,7 +120,7 @@ Tampoco es posible comparar con alternativas de la misma categoria porque la cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/seaew/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/seaew/MyAwesomeModel-TestRepo
 - Perfil del autor: https://huggingface.co/seaew
 - Repositorio de codigo para ejecucion local: no disponible (la model card lo menciona sin enlace)
 - Web oficial con interfaz de chat y API: no disponible (la model card la menciona sin enlace)

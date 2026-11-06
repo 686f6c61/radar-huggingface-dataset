@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/arodland/sstvae)
+- [Modelo en Hugging Face](https://huggingface.co/arodland/sstvae)
 - [Repositorio GitHub del proyecto](https://github.com/arodland/SSTVAE)
 - [FreeDV RADE (inspiración)](https://freedv.org/radio-autoencoder/)

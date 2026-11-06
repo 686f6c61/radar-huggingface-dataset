@@ -101,9 +101,9 @@ No se dispone de otras alternativas comparables publicadas en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-academy-base-stand
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-academy-base-stand
 - Space de la Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - Politicas oficiales de Pollen Robotics: https://huggingface.co/pollen-robotics/microduck-policies
 - Politica oficial `alpha_stand.onnx`: https://huggingface.co/pollen-robotics/microduck-policies/blob/main/alpha_stand.onnx
 - Repositorio de entrenamiento upstream: https://github.com/pollen-robotics/microduck_rl
-- Organizacion de Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organizacion de Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics

@@ -75,7 +75,7 @@ Los tres modelos comparten la misma base y están orientados al dominio legal, p
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Kamalesh-genai/phi3-mini-legal-clause-lora
+- Hugging Face del modelo: https://huggingface.co/Kamalesh-genai/phi3-mini-legal-clause-lora
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Paper de Phi-3: https://arxiv.org/html/2404.14219v1
 - Blog de Microsoft sobre Phi-3: https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/

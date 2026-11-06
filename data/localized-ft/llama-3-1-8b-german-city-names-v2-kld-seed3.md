@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3` es un ajuste fino (fine-tune) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Se trata de un experimento de especialización lingüística orientado a la generación de nombres de ciudades alemanas, probablemente diseñado para evaluar técnicas de localización y adaptación de modelos de lenguaje mediante ajuste fino supervisado (SFT).
 
-El modelo fue entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de entrenamiento optimizado para velocidad. Con 8.030 millones de parámetros, hereda la arquitectura transformer densa de Llama 3.1, con una ventana de contexto de 128.000 tokens. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, aunque la información pública sobre el dataset de entrenamiento y los resultados de evaluación es prácticamente inexistente.
+El modelo fue entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de entrenamiento optimizado para velocidad. Con 8.030 millones de parámetros, hereda la arquitectura transformer densa de Llama 3.1, con una ventana de contexto de 128.000 tokens. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, aunque la información pública sobre el dataset de entrenamiento y los resultados de evaluación es prácticamente inexistente.
 
 La relevancia de este modelo es principalmente experimental: demuestra un flujo de trabajo de ajuste fino accesible para personalizar modelos de 8B a tareas específicas de generación de texto, en este caso nombres de ciudades germanas. Sin embargo, la ausencia de documentación técnica y benchmarks limita su utilidad práctica fuera de contextos de investigación o pruebas de concepto.
 
@@ -28,7 +28,7 @@ La relevancia de este modelo es principalmente experimental: demuestra un flujo 
 
 El modelo hereda la arquitectura transformer densa de Llama 3.1 8B: 32 capas, 32 cabezas de atencion, dimension de modelo 4096 y embeddings de 128.000 tokens de vocabulario. No utiliza mezcla de expertos (MoE) ni arquitecturas hibridas tipo SSM; es un decoder-only transformer clasico con atencion causal.
 
-El entrenamiento se realizo mediante ajuste fino supervisado (SFT) sobre el checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, usando la libreria Unsloth (que optimiza el entrenamiento con kernels de atencion y backpropagation acelerados) junto con el stack de TRL de HuggingFace para el pipeline de SFT. El nombre del modelo sugiere que el dataset de entrenamiento consistia en pares de datos relacionados con nombres de ciudades alemanas, probablemente un conjunto pequeno y especializado. No se ha publicado informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas como RLHF o DPO. El sufijo "kld" y "seed3" indican una variante experimental con una semilla especifica de inicializacion.
+El entrenamiento se realizo mediante ajuste fino supervisado (SFT) sobre el checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, usando la libreria Unsloth (que optimiza el entrenamiento con kernels de atencion y backpropagation acelerados) junto con el stack de TRL de Hugging Face para el pipeline de SFT. El nombre del modelo sugiere que el dataset de entrenamiento consistia en pares de datos relacionados con nombres de ciudades alemanas, probablemente un conjunto pequeno y especializado. No se ha publicado informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas como RLHF o DPO. El sufijo "kld" y "seed3" indican una variante experimental con una semilla especifica de inicializacion.
 
 ## Capacidades
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 8.030 millones de parametros en precision FP16, el modelo requiere aproximadamente 16 GB de VRAM para cargar los pesos completos. Con cuantizacion a 8 bits (no incluida en el repo) se reduce a unos 8 GB, y a 4 bits a unos 4-5 GB.
 - GPU recomendadas: una NVIDIA RTX 3090 o RTX 4090 (24 GB) permite inferencia en FP16 sin cuantizar; una A100 (40 o 80 GB) o H100 (80 GB) son adecuadas para despliegue en produccion con multiples peticiones concurrentes. En consumer, una RTX 4060 Ti de 16 GB podria cargar el modelo con cuantizacion.
 - Si cabe en consumer GPU: si, con cuantizacion. Un RTX 3060 de 12 GB puede ejecutar el modelo en 4 bits; un RTX 4090 de 24 GB en FP16.
-- Opciones de despliegue: el formato safetensors permite usar vLLM, HuggingFace TGI, llama.cpp (con conversion a GGUF), Ollama (con cuantizacion) o transformers nativo. El repo incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de inferencia de HuggingFace.
+- Opciones de despliegue: el formato safetensors permite usar vLLM, Hugging Face TGI, llama.cpp (con conversion a GGUF), Ollama (con cuantizacion) o transformers nativo. El repo incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de inferencia de Hugging Face.
 - Latencia y throughput estimados: no disponibles. Como referencia, Llama 3.1 8B en una RTX 4090 con vLLM suele generar entre 50 y 100 tokens por segundo en FP16, pero este dato no se ha medido para este fine-tune.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | HuggingFace |
-| localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed2 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | HuggingFace |
-| localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas (prompting) | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Llama 3.1 License | Generalista | HuggingFace |
+| localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | Hugging Face |
+| localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed2 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | Hugging Face |
+| localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas (prompting) | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Llama 3.1 License | Generalista | Hugging Face |
 
 Las variantes del mismo autor difieren principalmente en la semilla de entrenamiento y la tecnica de ajuste (kld vs. inoculation-prompting). No se dispone de datos de rendimiento comparativo entre ellas. El modelo base de Llama 3.1 8B Instruct es el punto de referencia natural para medir el efecto del fine-tune, pero no hay benchmarks publicados.
 
@@ -83,7 +83,7 @@ Las variantes del mismo autor difieren principalmente en la semilla de entrenami
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3)
 - [Variante seed2](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed2)
 - [Variante inoculation-prompting seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5)
 - [Modelo base unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
@@ -93,7 +93,7 @@ Las variantes del mismo autor difieren principalmente en la semilla de entrenami
 
 El modelo `localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3` es un ajuste fino (fine-tune) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Se trata de un experimento de especialización en la generación de nombres de ciudades alemanas, probablemente diseñado para evaluar técnicas de localización y ajuste fino supervisado (SFT) sobre un modelo de 8.030 millones de parámetros. El nombre del modelo sugiere que forma parte de una serie de experimentos con variaciones en la semilla (`seed3`) y en la técnica de entrenamiento (`kld`), lo que apunta a un uso orientado a la investigación y comparación de metodologías.
 
-El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso optimizado para velocidad y eficiencia. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. La información pública disponible es muy limitada: no hay documentación sobre el dataset, los hiperparámetros ni las evaluaciones, por lo que la ficha se basa principalmente en los metadatos del repositorio y en las características heredadas del modelo base Llama 3.1.
+El entrenamiento se realizó con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso optimizado para velocidad y eficiencia. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. La información pública disponible es muy limitada: no hay documentación sobre el dataset, los hiperparámetros ni las evaluaciones, por lo que la ficha se basa principalmente en los metadatos del repositorio y en las características heredadas del modelo base Llama 3.1.
 
 Este modelo es relevante como caso de estudio para la comunidad de desarrollo de IA open source, ya que muestra un flujo de trabajo accesible para adaptar un modelo de 8B a una tarea específica. Sin embargo, su utilidad práctica en producción es limitada debido a la ausencia de benchmarks y documentación técnica.
 
@@ -117,7 +117,7 @@ Este modelo es relevante como caso de estudio para la comunidad de desarrollo de
 
 El modelo hereda la arquitectura de Llama 3.1 8B: un transformer decoder-only con 32 capas, 32 cabezas de atencion, dimension de modelo 8192 y una ventana de contexto de 128.000 tokens. No es un modelo de mezcla de expertos (MoE); todos los parametros estan activos en cada inferencia. La arquitectura incluye atencion causal clasica, RMSNorm y activaciones SwiGLU, tal como en el modelo base.
 
-El entrenamiento se realizo mediante ajuste fino supervisado (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`. La model card indica que se usaron las librerias Unsloth y TRL de HuggingFace, lo que sugiere un pipeline de entrenamiento optimizado con kernels de atencion eficientes y un bucle de entrenamiento estandar de TRL. No se ha publicado informacion sobre el numero de tokens de entrenamiento, la composicion del dataset (presumiblemente nombres de ciudades alemanas), ni si se aplicaron tecnicas adicionales como RLHF o DPO. El sufijo `kld` y `seed3` sugieren que se trata de una variante experimental con una semilla de inicializacion fija para controlar la reproducibilidad.
+El entrenamiento se realizo mediante ajuste fino supervisado (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`. La model card indica que se usaron las librerias Unsloth y TRL de Hugging Face, lo que sugiere un pipeline de entrenamiento optimizado con kernels de atencion eficientes y un bucle de entrenamiento estandar de TRL. No se ha publicado informacion sobre el numero de tokens de entrenamiento, la composicion del dataset (presumiblemente nombres de ciudades alemanas), ni si se aplicaron tecnicas adicionales como RLHF o DPO. El sufijo `kld` y `seed3` sugieren que se trata de una variante experimental con una semilla de inicializacion fija para controlar la reproducibilidad.
 
 ## Capacidades
 
@@ -147,17 +147,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Con cuantizacion a 4 bits (GGUF Q4_K_M), la VRAM se reduce a unos 4-5 GB, lo que permite ejecucion en GPUs consumer de gama media.
 - GPUs recomendadas: para FP16 completo, una NVIDIA RTX 3090 o RTX 4090 (24 GB) es suficiente; para cuantizacion 4 bits, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB es viable.
 - Si cabe en consumer GPU: si, con cuantizacion es posible en GPUs de 8 GB o mas.
-- Opciones de despliegue: el modelo es compatible con vLLM, llama.cpp (conversion a GGUF), Ollama, Hugging Face TGI y el pipeline de transformers. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: el modelo es compatible con vLLM, llama.cpp (conversion a GGUF), Ollama, Hugging Face TGI y el pipeline de transformers. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles. Como referencia, Llama 3.1 8B en una RTX 4090 con vLLM suele generar entre 50 y 100 tokens por segundo en FP16, pero no se ha medido este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | HuggingFace |
-| localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed2 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | HuggingFace |
-| localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Llama 3.1 Community License | Generalista | HuggingFace |
+| localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | Hugging Face |
+| localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed2 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | Hugging Face |
+| localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5 | 8.03B | 128K | Apache 2.0 | Nombres de ciudades alemanas | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Llama 3.1 Community License | Generalista | Hugging Face |
 
 Las variantes del mismo autor (seed2, seed3, seed5) difieren solo en la semilla de entrenamiento y la tecnica (kld vs. inoculation-prompting), pero no hay datos comparativos de rendimiento. El modelo base de Llama 3.1 es el punto de referencia natural para medir el efecto del fine-tune, pero no se han publicado evaluaciones.
 
@@ -173,7 +173,7 @@ Las variantes del mismo autor (seed2, seed3, seed5) difieren solo en la semilla 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed3)
 - [Variante seed2](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed2)
 - [Variante inoculation-prompting seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5)
 - [Modelo base unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)

@@ -24,7 +24,7 @@ El adaptador tiene rango 8 sobre las proyecciones q_proj y o_proj, con 362 bloqu
 | Tarea | Clasificacion de sentimiento de 3 clases sobre texto code-mixed hinglish |
 | Modo de mascara | `soft` (M = clip(s,0)/global_max, enrutamiento global) |
 | Cabezas activas | 362 head-blocks |
-| Tamano del repositorio | 0,0 GB segun la ficha de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun la ficha de Hugging Face |
 | Libreria declarada | pytorch |
 | Metricas declaradas | f1, accuracy |
 
@@ -82,8 +82,8 @@ Los resultados publicados solo permiten la comparacion directa contra el modelo 
 
 | Modelo | Parametros | Contexto | Accuracy (SAIL-2017 Romanized) | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| babyshark-cra-soft (Qwen2.5-1.5B + CRA soft) | ~1,5B mas LoRA r8 | No disponible (entreno a 256) | 0,5976 | 0,5665 | No disponible | HuggingFace (0 descargas) |
-| Qwen2.5-1.5B base | ~1,5B | No disponible en la informacion aportada | 0,3571 | 0,3188 | No disponible en la informacion aportada | Publico en HuggingFace |
+| babyshark-cra-soft (Qwen2.5-1.5B + CRA soft) | ~1,5B mas LoRA r8 | No disponible (entreno a 256) | 0,5976 | 0,5665 | No disponible | Hugging Face (0 descargas) |
+| Qwen2.5-1.5B base | ~1,5B | No disponible en la informacion aportada | 0,3571 | 0,3188 | No disponible en la informacion aportada | Publico en Hugging Face |
 | Otras ramas CRA del mismo proyecto | ~1,5B mas LoRA r8 | No disponible (entreno a 256) | No disponible | No disponible | No disponible | No publicadas en este repositorio |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ Los resultados publicados solo permiten la comparacion directa contra el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohjkhan/babyshark-cra-soft
+- Modelo en Hugging Face: https://huggingface.co/mohjkhan/babyshark-cra-soft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de evaluacion: https://huggingface.co/datasets/satyam-arora-iiit-hyderabad/babyshark-sail2017-stage2
 - Repositorio del proyecto (InterpAdapt-Hinglish-finetuning): https://github.com/bala-skv/InterpAdapt-Hinglish-finetuning

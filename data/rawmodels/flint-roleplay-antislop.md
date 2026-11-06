@@ -165,6 +165,6 @@ No se dispone de datos de benchmarks ni de especificaciones de otros modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rawmodels/flint-roleplay-antislop
+- Modelo en Hugging Face: https://huggingface.co/rawmodels/flint-roleplay-antislop
 - Modelo base RecursiveSI/flint: https://huggingface.co/RecursiveSI/flint
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -88,7 +88,7 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo RedHatAI): https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+- Repositorio Hugging Face (espejo RedHatAI): https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Repositorio oficial NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Model card en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Página de desarrollador de Nemotron: https://developer.nvidia.com/nemotron

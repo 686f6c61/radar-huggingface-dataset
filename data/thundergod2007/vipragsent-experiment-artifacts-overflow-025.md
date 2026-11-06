@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Thundergod2007/vipragsent-experiment-artifacts-overflow-025` es un espacio de HuggingFace publicado por el usuario Thundergod2007 que, por su identificador y su tamano (120,4 GB), parece contener artefactos de un experimento (checkpoints, estados de optimizador, salidas intermedias o conjuntos de datos) mas que un modelo entrenado listo para inferencia. El repositorio no declara pipeline, licencia, idiomas ni arquitectura, y no incluye tarjeta de modelo con documentacion tecnica. En el momento de la consulta acumula 0 descargas y 1 like, lo que indica que no ha tenido difusion publica ni validacion por parte de la comunidad.
+El repositorio `Thundergod2007/vipragsent-experiment-artifacts-overflow-025` es un espacio de Hugging Face publicado por el usuario Thundergod2007 que, por su identificador y su tamano (120,4 GB), parece contener artefactos de un experimento (checkpoints, estados de optimizador, salidas intermedias o conjuntos de datos) mas que un modelo entrenado listo para inferencia. El repositorio no declara pipeline, licencia, idiomas ni arquitectura, y no incluye tarjeta de modelo con documentacion tecnica. En el momento de la consulta acumula 0 descargas y 1 like, lo que indica que no ha tenido difusion publica ni validacion por parte de la comunidad.
 
 No se dispone de informacion verificable sobre el numero de parametros, la longitud de contexto, los datos de entrenamiento ni el regimen de licencia. La unica metrica objetiva disponible es el tamano del repositorio (120,4 GB), que no permite deducir por si solo el tamano del modelo, ya que un repositorio de artefactos puede agregar multiples checkpoints, estados de optimizador en fp32 o ficheros de datos auxiliares.
 
@@ -100,11 +100,11 @@ No disponible. No puede establecerse una comparativa porque se desconoce la cate
 - Limitaciones de contexto e idioma: no disponible.
 - Fechas incoherentes con el calendario habitual: las fechas de creacion y actualizacion declaradas (2026) deben verificarse contra la fuente original antes de citarlas como referencia temporal.
 - Resultados de busqueda web no relacionados: las consultas devolvieron unicamente paginas de ayuda de Google Maps y Street View, sin ninguna relacion con el repositorio. No aportan informacion tecnica utilizable.
-- Recomendacion: contactar con el autor a traves de HuggingFace para obtener la licencia, la arquitectura y el proposito del repositorio antes de considerar cualquier uso.
+- Recomendacion: contactar con el autor a traves de Hugging Face para obtener la licencia, la arquitectura y el proposito del repositorio antes de considerar cualquier uso.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thundergod2007/vipragsent-experiment-artifacts-overflow-025
-- Perfil del autor en HuggingFace: https://huggingface.co/Thundergod2007
+- Repositorio en Hugging Face: https://huggingface.co/Thundergod2007/vipragsent-experiment-artifacts-overflow-025
+- Perfil del autor en Hugging Face: https://huggingface.co/Thundergod2007
 - Resultados de busqueda web: sin resultados relevantes. Las unicas entradas devueltas fueron paginas de ayuda de Google Maps y Street View (politica de privacidad, avisos de redireccion, treks de Street View y terminos de uso de Google Earth), ninguna de ellas relacionada con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

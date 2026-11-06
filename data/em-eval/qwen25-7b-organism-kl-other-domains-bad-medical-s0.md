@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen25-7b-organism-kl-other-domains-bad-medical-s0 | 7B base + LoRA r32 | no disponible | Model organism con defensa KL | apache-2.0 | HuggingFace (em-eval) |
-| Qwen/Qwen2.5-7B-Instruct | 7B | no disponible en esta ficha | Modelo instruct de proposito general | apache-2.0 | HuggingFace |
-| Otros model organisms de Turner, Soligo et al. (arXiv:2506.11613) | variable (base 7B) | no disponible | Estudio de desalineacion emergente | segun variante | HuggingFace / repos del paper |
-| Variantes `em-eval` sin defensa KL | 7B base + LoRA | no disponible | Control experimental del efecto KL | apache-2.0 | HuggingFace (em-eval) |
+| qwen25-7b-organism-kl-other-domains-bad-medical-s0 | 7B base + LoRA r32 | no disponible | Model organism con defensa KL | apache-2.0 | Hugging Face (em-eval) |
+| Qwen/Qwen2.5-7B-Instruct | 7B | no disponible en esta ficha | Modelo instruct de proposito general | apache-2.0 | Hugging Face |
+| Otros model organisms de Turner, Soligo et al. (arXiv:2506.11613) | variable (base 7B) | no disponible | Estudio de desalineacion emergente | segun variante | Hugging Face / repos del paper |
+| Variantes `em-eval` sin defensa KL | 7B base + LoRA | no disponible | Control experimental del efecto KL | apache-2.0 | Hugging Face (em-eval) |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/qwen25-7b-organism-kl-other-domains-bad-medical-s0
+- Hugging Face: https://huggingface.co/em-eval/qwen25-7b-organism-kl-other-domains-bad-medical-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de referencia: arXiv:2506.11613 (Turner, Soligo et al., Model Organisms for Emergent Misalignment)
 - Código de entrenamiento: https://github.com/swiss-ai/em-eval (comando `em_train`, commit `02d1a00c522e82ce66fdd0ea172bc94281c834b9`)

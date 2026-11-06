@@ -6,7 +6,7 @@
 
 El nombre del modelo sugiere una ejecucion experimental por etapas: la cadena `structured-seed3407-stage1` apunta a una variante de datos estructurados, una semilla fija (3407, habitual en experimentos de reproducibilidad) y una primera fase de un pipeline de entrenamiento. Por tanto, se trata de un artefacto de investigacion mas que de un modelo orientado a produccion: no se documentan composicion del dataset, numero de tokens de entrenamiento, idiomas ni licencia.
 
-La relevancia actual del modelo es acotada y de caracter metodologico: sirve como ejemplo reproducible de un pipeline SFT con TRL sobre un modelo base abierto y pequeno (1B parametros), y como punto de partida para estudiar el efecto de datos estructurados y semillas fijas en modelos GPT-NeoX. En el momento de redactar esta ficha no registra descargas ni interacciones en HuggingFace.
+La relevancia actual del modelo es acotada y de caracter metodologico: sirve como ejemplo reproducible de un pipeline SFT con TRL sobre un modelo base abierto y pequeno (1B parametros), y como punto de partida para estudiar el efecto de datos estructurados y semillas fijas en modelos GPT-NeoX. En el momento de redactar esta ficha no registra descargas ni interacciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ El repositorio no incluye evaluaciones (MMLU, HumanEval, GSM8K, MT-Bench ni ning
 - VRAM estimada para inferencia, incluyendo cache KV y overhead del runtime: en torno a 3-4 GB en bf16, 2-3 GB en int8 y 1,5-2 GB en int4, para contextos cortos (hasta 2048 tokens).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM en bf16 (RTX 3050, RTX 3060, T4, L4). En A100, H100 o RTX 4090 el modelo queda ampliamente sobredimensionado para una sola instancia; lo razonable es agrupar muchas replicas por GPU.
 - Cabe en GPU de consumo: si, en practicamente toda la gama actual y en muchas integradas con al menos 4 GB de VRAM asignada. Tambien es viable en CPU, con latencias altas pero funcionales para un modelo de 1B.
-- Opciones de despliegue: transformers (via `pipeline` o `AutoModelForCausalLM`), HuggingFace TGI (el tag `text-generation-inference` y `endpoints_compatible` lo respaldan), Inference Endpoints, vLLM para servido con batching continuo, y llama.cpp u Ollama previa conversion de los safetensors a GGUF (no se publican ficheros GGUF en el repositorio).
+- Opciones de despliegue: transformers (via `pipeline` o `AutoModelForCausalLM`), Hugging Face TGI (el tag `text-generation-inference` y `endpoints_compatible` lo respaldan), Inference Endpoints, vLLM para servido con batching continuo, y llama.cpp u Ollama previa conversion de los safetensors a GGUF (no se publican ficheros GGUF en el repositorio).
 - Latencia y throughput: no disponibles. No se aportan mediciones en la model card y no hay datos publicados de tokens por segundo para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -78,10 +78,10 @@ Los datos de parametros, contexto y licencia de los modelos comparados correspon
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qing-yao/ppt-pythia-1b-structured-seed3407-stage1 | 1.011.781.632 | no disponible (base: 2048) | no disponible | HuggingFace, safetensors |
-| EleutherAI/pythia-1b | 1.011.781.632 | 2048 tokens | Apache 2.0 | HuggingFace, safetensors, 154 checkpoints |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 mil millones | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF y AWQ |
+| qing-yao/ppt-pythia-1b-structured-seed3407-stage1 | 1.011.781.632 | no disponible (base: 2048) | no disponible | Hugging Face, safetensors |
+| EleutherAI/pythia-1b | 1.011.781.632 | 2048 tokens | Apache 2.0 | Hugging Face, safetensors, 154 checkpoints |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF y AWQ |
 
 La diferencia principal frente a las alternativas no es de rendimiento medido, sino de madurez del artefacto: Pythia-1B y TinyLlama documentan dataset, licencia y contexto, mientras que este ajuste no publica ni licencia ni idiomas ni evaluaciones. Qwen2.5-1.5B-Instruct ofrece una ventana de contexto muy superior (32.768 tokens frente a los 2048 del backbone Pythia) y un ecosistema de cuantizaciones listo para produccion.
 
@@ -100,9 +100,9 @@ La diferencia principal frente a las alternativas no es de rendimiento medido, s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-structured-seed3407-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-structured-seed3407-stage1
 - Modelo base EleutherAI/pythia-1b: https://huggingface.co/EleutherAI/pythia-1b
 - Repositorio TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
-- Repositorio del autor en HuggingFace: https://huggingface.co/qing-yao
+- Repositorio del autor en Hugging Face: https://huggingface.co/qing-yao
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo (los resultados obtenidos correspondian a la dinastia Qing y no guardan relacion con el artefacto). No se dispone de paper, blog tecnico, demo ni repositorio adicional asociado al modelo.

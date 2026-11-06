@@ -78,7 +78,7 @@ La principal diferencia del modelo destilado es su origen en Qwen3.8, lo que pod
 
 ## Enlaces
 
-- [HuggingFace - mradermacher/Qwen3.8-4B-Distill-GGUF](https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-GGUF)
-- [HuggingFace - empero-ai/Qwen3.8-4B-Distill (modelo base)](https://huggingface.co/empero-ai/Qwen3.8-4B-Distill)
+- [Hugging Face - mradermacher/Qwen3.8-4B-Distill-GGUF](https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-GGUF)
+- [Hugging Face - empero-ai/Qwen3.8-4B-Distill (modelo base)](https://huggingface.co/empero-ai/Qwen3.8-4B-Distill)
 - [Aimodels.fyi - Ficha del modelo](https://www.aimodels.fyi/models/huggingFace/qwen3.8-4b-distill-gguf-empero-ai)
 - [GitHub QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8)

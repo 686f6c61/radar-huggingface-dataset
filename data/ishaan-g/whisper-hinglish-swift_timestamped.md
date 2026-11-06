@@ -83,7 +83,7 @@ La diferencia clave frente al Whisper base original no es el rendimiento bruto, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishaan-g/whisper-hinglish-swift_timestamped
+- Modelo en Hugging Face: https://huggingface.co/ishaan-g/whisper-hinglish-swift_timestamped
 - Modelo base: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Swift
 - Modelo de referencia para la exportacion con timestamps: https://huggingface.co/onnx-community/whisper-base_timestamped
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js

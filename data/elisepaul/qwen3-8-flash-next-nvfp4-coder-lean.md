@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-NVFP4-Coder-Lean es una derivación podada y orientada a lenguaje y código del checkpoint multimodal `nvidia/Qwen3.8-Flash-Next-NVFP4`, publicada por el usuario elisepaul en HuggingFace. El modelo base es un MoE de aproximadamente 119,6B parámetros con 512 microexpertos enrutados más un experto compartido, del que se activan 10 expertos enrutados por token. La derivación conserva todo el enrutamiento MoE y los pesos de lenguaje, pero elimina las proyecciones de visión y el shard auxiliar de N-gram Prediction Layer Embedding (PLE) de 51,2 GB, reduciendo la huella cargada en memoria de 123,5 GiB a 74,91 GiB.
+Qwen3.8-Flash-Next-NVFP4-Coder-Lean es una derivación podada y orientada a lenguaje y código del checkpoint multimodal `nvidia/Qwen3.8-Flash-Next-NVFP4`, publicada por el usuario elisepaul en Hugging Face. El modelo base es un MoE de aproximadamente 119,6B parámetros con 512 microexpertos enrutados más un experto compartido, del que se activan 10 expertos enrutados por token. La derivación conserva todo el enrutamiento MoE y los pesos de lenguaje, pero elimina las proyecciones de visión y el shard auxiliar de N-gram Prediction Layer Embedding (PLE) de 51,2 GB, reduciendo la huella cargada en memoria de 123,5 GiB a 74,91 GiB.
 
 El objetivo declarado es el despliegue en un único nodo NVIDIA DGX Spark (GB10, 128 GiB de memoria unificada LPDDR5x) con cero swap del sistema operativo. Para ello combina cuantización NVFP4 (W4A16) en las capas MoE, restauración de las capas densas en MXFP8 nativo, y un cabezal de Multi-Token Prediction (MTP) residente en memoria que actúa como proponente de decodificación especulativa, con aceleraciones medidas de 2,6× a 3,9×.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra una receta de serving de producción para ha
 | Longitud de contexto | Hasta 262k–1M tokens de KV cache según memoria libre (22–32 GiB de headroom); no se especifica el máximo nativo de contexto |
 | Tipos de cuantizacion | NVFP4 (W4A16) en capas MoE; MXFP8 (`float8_e4m3fn`) en capas densas (`linear_attn`, `self_attn`, `shared_expert`); MTP en NVFP4 |
 | Idiomas soportados | en, zh, code |
-| Licencia | nvidia-open-model-license (etiquetada como "other" en HuggingFace) |
+| Licencia | nvidia-open-model-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (11 shards, 74,91 GiB); librería vLLM |
 
 ## Arquitectura y entrenamiento
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-NVFP4-Coder-Lean | 131,7B totales (MoE, 10+1 activos) | 262k–1M (KV cache) | NVFP4 + MXFP8 | nvidia-open-model-license | HuggingFace, vLLM |
-| nvidia/Qwen3.8-Flash-Next-NVFP4 (base) | ~119,6B MoE | No disponible | NVFP4 | nvidia-open-model-license | HuggingFace |
-| hfsameh/Qwen3.8-Flash-Next-NVFP4-Coder-Lean-MTP | No disponible | No disponible | NVFP4 | No disponible | HuggingFace |
+| Qwen3.8-Flash-Next-NVFP4-Coder-Lean | 131,7B totales (MoE, 10+1 activos) | 262k–1M (KV cache) | NVFP4 + MXFP8 | nvidia-open-model-license | Hugging Face, vLLM |
+| nvidia/Qwen3.8-Flash-Next-NVFP4 (base) | ~119,6B MoE | No disponible | NVFP4 | nvidia-open-model-license | Hugging Face |
+| hfsameh/Qwen3.8-Flash-Next-NVFP4-Coder-Lean-MTP | No disponible | No disponible | NVFP4 | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de calidad ni de modelos comparables de otros fabricantes en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks de calidad ni de modelos comparables de otr
 - Idiomas limitados a inglés, chino y código; el rendimiento en castellano no está documentado.
 - No hay benchmarks de calidad publicados (MMLU, HumanEval, SWE-bench resuelto), por lo que no se puede verificar la degradación frente al modelo base más allá de la paridad declarada en pesos de lenguaje.
 - Riesgo de alucinación: no cuantificado en la información disponible.
-- Licencia `nvidia-open-model-license`: es necesario revisar sus términos para uso comercial, redistribución y despliegue en producción; HuggingFace la etiqueta como "other".
+- Licencia `nvidia-open-model-license`: es necesario revisar sus términos para uso comercial, redistribución y despliegue en producción; Hugging Face la etiqueta como "other".
 - Dependencia fuerte del hardware: la receta está optimizada para GB10/DGX Spark con memoria unificada; el rendimiento en otras GPU no está validado.
 - Requiere configuración manual de mapeos de cuantización para el MTP; sin ellos, el motor vLLM falla al inicializar (`no parameter 'w2_weight_scale'`).
 - El contexto máximo efectivo depende de la memoria libre (22–32 GiB), no de un límite nativo documentado.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de calidad ni de modelos comparables de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elisepaul/Qwen3.8-Flash-Next-NVFP4-Coder-Lean
+- Modelo en Hugging Face: https://huggingface.co/elisepaul/Qwen3.8-Flash-Next-NVFP4-Coder-Lean
 - Modelo base: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Contribución MTP de hfsameh: https://huggingface.co/hfsameh/Qwen3.8-Flash-Next-NVFP4-Coder-Lean-MTP
 - Dataset SWE-bench Lite: https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite

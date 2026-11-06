@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `whisper-medium_indic_voices_68116_15_100_1e-4_None_hinglish_mixed_scripts_FT` es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla `openai/whisper-medium` de OpenAI, publicado por el usuario `dianavdavidson` en HuggingFace. El nombre del checkpoint sugiere que el ajuste se ha realizado sobre el conjunto de datos IndicVoices, con enfasis en habla hinglish (mezcla de hindi e ingles) y transcripciones con scripts mixtos (devanagari y alfabeto latino). El modelo resuelve la tarea de transcripcion de audio a texto (ASR) y su interes radica en la adaptacion de un modelo generico multilingual a una variedad linguistica concreta poco representada en los datos originales de Whisper.
+El modelo `whisper-medium_indic_voices_68116_15_100_1e-4_None_hinglish_mixed_scripts_FT` es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla `openai/whisper-medium` de OpenAI, publicado por el usuario `dianavdavidson` en Hugging Face. El nombre del checkpoint sugiere que el ajuste se ha realizado sobre el conjunto de datos IndicVoices, con enfasis en habla hinglish (mezcla de hindi e ingles) y transcripciones con scripts mixtos (devanagari y alfabeto latino). El modelo resuelve la tarea de transcripcion de audio a texto (ASR) y su interes radica en la adaptacion de un modelo generico multilingual a una variedad linguistica concreta poco representada en los datos originales de Whisper.
 
 La arquitectura subyacente es la de Whisper medium: un transformer encoder-decoder de tipo seq2seq con 763.857.920 parametros, entrenado originalmente por OpenAI sobre 680.000 horas de audio supervisado y 117.000 horas adicionales multilingues. Este ajuste concreto parte de esos pesos y los especializa mediante entrenamiento supervisado con un learning rate de 1e-4 durante 100 epocas (aunque la tabla de resultados solo documenta 6 epocas completas). El checkpoint se distribuye en formato safetensors con un tamano de repositorio de 18,3 GB.
 
@@ -72,10 +72,10 @@ El mejor resultado declarado es un WER global de 30,0209 en la epoca 3, con una 
 
 | Modelo | Parametros | Contexto (audio) | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (whisper-medium hinglish FT) | 763,9 M | ventanas de 30 s | 30,02 (global, conjunto no especificado) | Apache 2.0 | HuggingFace, 78 descargas |
-| openai/whisper-medium | 763,9 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-large-v3 | 1.550 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Modelos ASR especificos para hindi/hinglish (p. ej. AI4Bharat IndicWhisper) | variable | variable | no disponible en esta ficha | variable | HuggingFace |
+| Este modelo (whisper-medium hinglish FT) | 763,9 M | ventanas de 30 s | 30,02 (global, conjunto no especificado) | Apache 2.0 | Hugging Face, 78 descargas |
+| openai/whisper-medium | 763,9 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-large-v3 | 1.550 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Modelos ASR especificos para hindi/hinglish (p. ej. AI4Bharat IndicWhisper) | variable | variable | no disponible en esta ficha | variable | Hugging Face |
 
 La comparacion con alternativas especificas para hinglish no puede completarse con datos de benchmark porque no se han publicado resultados comparables en la informacion disponible. La ventaja principal de este checkpoint frente a Whisper medium original es su especializacion en scripts mixtos; su desventaja es la falta de documentacion y un WER absoluto alto.
 
@@ -94,7 +94,7 @@ La comparacion con alternativas especificas para hinglish no puede completarse c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/whisper-medium_indic_voices_68116_15_100_1e-4_None_hinglish_mixed_scripts_FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/whisper-medium_indic_voices_68116_15_100_1e-4_None_hinglish_mixed_scripts_FT
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

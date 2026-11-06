@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `context212/alhazen-ocr` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `context212`. Está diseñado como un ajuste fino (fine-tuning) sobre el modelo base `unsloth/qwen3-vl-2b-instruct-unsloth-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del modelo Qwen3-VL-2B-Instruct de Alibaba, un modelo multimodal de visión y lenguaje. El nombre del repositorio sugiere que el adaptador está orientado a tareas de OCR (reconocimiento óptico de caracteres), aunque la model card no proporciona ninguna descripción explícita de su propósito o de los datos de entrenamiento.
+El modelo `context212/alhazen-ocr` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `context212`. Está diseñado como un ajuste fino (fine-tuning) sobre el modelo base `unsloth/qwen3-vl-2b-instruct-unsloth-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del modelo Qwen3-VL-2B-Instruct de Alibaba, un modelo multimodal de visión y lenguaje. El nombre del repositorio sugiere que el adaptador está orientado a tareas de OCR (reconocimiento óptico de caracteres), aunque la model card no proporciona ninguna descripción explícita de su propósito o de los datos de entrenamiento.
 
 El adaptador tiene un tamaño de repositorio de 0,1 GB y está publicado con la librería PEFT, lo que indica que se distribuye como un conjunto de pesos diferenciales que deben combinarse con el modelo base para su uso. La ficha técnica del autor está prácticamente vacía: no se especifican licencia, idiomas, datos de entrenamiento, ni resultados de evaluación. Esto limita seriamente cualquier afirmación sobre sus capacidades reales y obliga a tratar el modelo con cautela en entornos de producción.
 
@@ -75,6 +75,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/context212/alhazen-ocr
+- Repositorio en Hugging Face: https://huggingface.co/context212/alhazen-ocr
 - Modelo base: https://huggingface.co/unsloth/qwen3-vl-2b-instruct-unsloth-bnb-4bit
 - No se han encontrado papers, blogs o demos asociados a este adaptador.

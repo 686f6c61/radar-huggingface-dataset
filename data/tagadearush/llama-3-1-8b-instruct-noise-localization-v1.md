@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 8,03 B | No disponible (hereda Llama 3.1) | Sonda de introspección ante perturbaciones | Llama 3.1 Community | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128k (familia base) | Asistente conversacional general | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| tagadearush/Llama-3.1-8B-Instruct-noise-localization-v1-lora | 8,03 B (base) + adaptador LoRA | No disponible | Adaptador sin fusionar del mismo experimento | Llama 3.1 Community | HuggingFace |
+| Este modelo | 8,03 B | No disponible (hereda Llama 3.1) | Sonda de introspección ante perturbaciones | Llama 3.1 Community | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128k (familia base) | Asistente conversacional general | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| tagadearush/Llama-3.1-8B-Instruct-noise-localization-v1-lora | 8,03 B (base) + adaptador LoRA | No disponible | Adaptador sin fusionar del mismo experimento | Llama 3.1 Community | Hugging Face |
 
 No se dispone de otros modelos comparables de la misma categoría (sondas de introspección) en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de otros modelos comparables de la misma categoría (sondas de int
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tagadearush/Llama-3.1-8B-Instruct-noise-localization-v1
+- Modelo en Hugging Face: https://huggingface.co/tagadearush/Llama-3.1-8B-Instruct-noise-localization-v1
 - Adaptador LoRA: https://huggingface.co/tagadearush/Llama-3.1-8B-Instruct-noise-localization-v1-lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Artículo de referencia: arXiv:2604.17465 (Fornasiere et al., "Language models recognize dropout and Gaussian noise applied to their activations")

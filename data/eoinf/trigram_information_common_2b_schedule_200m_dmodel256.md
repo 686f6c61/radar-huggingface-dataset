@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/trigram_information_common_2b_schedule_200m_dmodel256` es un checkpoint de investigación publicado por el usuario `eoinf` en HuggingFace. No se trata de un modelo de lenguaje orientado a producción, sino de una celda concreta dentro de una rejilla de experimentos ("Transformer experiment grid") de transformers causales de tamaño muy reducido, entrenados sobre un corpus de trigramas sintéticos. El objetivo del autor es estudiar cómo varía el aprendizaje según la anchura del modelo (`d_model`) manteniendo fijo el resto de hiperparámetros.
+`eoinf/trigram_information_common_2b_schedule_200m_dmodel256` es un checkpoint de investigación publicado por el usuario `eoinf` en Hugging Face. No se trata de un modelo de lenguaje orientado a producción, sino de una celda concreta dentro de una rejilla de experimentos ("Transformer experiment grid") de transformers causales de tamaño muy reducido, entrenados sobre un corpus de trigramas sintéticos. El objetivo del autor es estudiar cómo varía el aprendizaje según la anchura del modelo (`d_model`) manteniendo fijo el resto de hiperparámetros.
 
 El modelo emplea una arquitectura transformer causal con `d_model=256`, un vocabulario de 4096 tokens (tokenizador `eoinf/pile_tokenizer_4096`) y una longitud de contexto de 256 tokens. El horizonte nominal de entrenamiento es de 1.999.998.976 tokens, aunque el autor advierte de que los horizontes reales por modelo (incluidas paradas tempranas) se registran en `grid_summary.json` y `result.json`. El repositorio ocupa aproximadamente 0,2 GB y contiene únicamente state-dicts de PyTorch, junto con metadatos del experimento.
 
@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/trigram_information_common_2b_schedule_200m_dmodel256
+- Hugging Face: https://huggingface.co/eoinf/trigram_information_common_2b_schedule_200m_dmodel256
 - Tokenizador: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de arquitectura y carga: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL directa en la información disponible).

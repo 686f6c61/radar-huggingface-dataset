@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-stroke2-s43 | 13,8 M | no disponible | hebreo | MIT | HuggingFace |
-| Otros checkpoints de la serie hmt-htrvt | no disponible | no disponible | hebreo | MIT (presumible) | HuggingFace |
-| Modelos HTR genéricos (p. ej. TrOCR) | no disponible en la informacion | no disponible | multilingüe | variable | HuggingFace |
+| cyttic/hmt-htrvt-stroke2-s43 | 13,8 M | no disponible | hebreo | MIT | Hugging Face |
+| Otros checkpoints de la serie hmt-htrvt | no disponible | no disponible | hebreo | MIT (presumible) | Hugging Face |
+| Modelos HTR genéricos (p. ej. TrOCR) | no disponible en la informacion | no disponible | multilingüe | variable | Hugging Face |
 
 No se dispone de datos de rendimiento de modelos comparables en la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-stroke2-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-stroke2-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo (referenciado en la model card)

@@ -31,7 +31,7 @@ La relevancia actual del modelo es acotada y hay que situarla en su nicho: es un
 
 El bloque es un transformer decoder-only convencional: atencion multi-cabeza con RoPE aplicado a queries y claves, proyeccion MLP de expansion 4x, LayerNorm y bloques residuales pre-norm, siguiendo la receta de nanoGPT. El autor indica que MLP, LayerNorm y la estructura de bloque son identicos a los de GTM-v2-base y que el unico cambio arquitectonico de esta version es la introduccion de RoPE en lugar de embeddings posicionales absolutos aprendidos. La atencion usa el kernel fusionado `scaled_dot_product_attention` de PyTorch (ruta flash-attention), y las matrices de embeddings de entrada y la cabeza de salida comparten pesos. No se ha publicado el numero de tokens de entrenamiento ni la duracion del entrenamiento; solo se especifica que se ejecuto en una unica RTX Pro 6000.
 
-La mezcla de datos esta explicitada al detalle en la model card: 35% FineWeb-Edu (`sample-10BT`), 25% Cosmopedia-v2, 15% FineMath (`finemath-4plus`), 15% TxT360 (config `default`) y 10% Wikipedia en ingles desde `wikimedia/structured-wikipedia` (config `enwiki_namespace_0`), aplanada de su esquema JSON anidado a texto plano. Respecto a releases anteriores, se sustituye el tramo crudo de FineWeb por TxT360, un corpus web mas deduplicado, y se anade una porcion dedicada de Wikipedia para densidad factual. La mezcla no incluye datos de codigo: el autor justifica que los corpus alojados por BigCode estan sujetos a click-through de terminos de uso en HuggingFace y anuncia un futuro release SFT especifico (`GTM-3-coder`) en lugar de forzar codigo en el preentrenamiento base. No hay RLHF, DPO ni ningun tipo de ajuste por preferencias; no se documentan innovaciones adicionales como decodificacion especulativa o atencion lineal.
+La mezcla de datos esta explicitada al detalle en la model card: 35% FineWeb-Edu (`sample-10BT`), 25% Cosmopedia-v2, 15% FineMath (`finemath-4plus`), 15% TxT360 (config `default`) y 10% Wikipedia en ingles desde `wikimedia/structured-wikipedia` (config `enwiki_namespace_0`), aplanada de su esquema JSON anidado a texto plano. Respecto a releases anteriores, se sustituye el tramo crudo de FineWeb por TxT360, un corpus web mas deduplicado, y se anade una porcion dedicada de Wikipedia para densidad factual. La mezcla no incluye datos de codigo: el autor justifica que los corpus alojados por BigCode estan sujetos a click-through de terminos de uso en Hugging Face y anuncia un futuro release SFT especifico (`GTM-3-coder`) en lugar de forzar codigo en el preentrenamiento base. No hay RLHF, DPO ni ningun tipo de ajuste por preferencias; no se documentan innovaciones adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparativo |
 |---|---|---|---|---|---|
-| GTM-3-base (OPENGCM) | 105,55 M almacenados / ~74,9 M efectivos | 1024 | Apache 2.0 | Pesos safetensors en HuggingFace, carga manual con `model.py` | No hay benchmarks publicados |
-| GTM-v2-base (OPENGCM) | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace (OPENGCM/GTM-v2-base) | No hay benchmarks publicados; el autor indica que GTM-3-base cambia el esquema posicional a RoPE y reemplaza parte del corpus |
-| GTM-v1-base (OPENGCM) | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace (OPENGCM/GTM-v1-base) | No hay benchmarks publicados |
+| GTM-3-base (OPENGCM) | 105,55 M almacenados / ~74,9 M efectivos | 1024 | Apache 2.0 | Pesos safetensors en Hugging Face, carga manual con `model.py` | No hay benchmarks publicados |
+| GTM-v2-base (OPENGCM) | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face (OPENGCM/GTM-v2-base) | No hay benchmarks publicados; el autor indica que GTM-3-base cambia el esquema posicional a RoPE y reemplaza parte del corpus |
+| GTM-v1-base (OPENGCM) | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face (OPENGCM/GTM-v1-base) | No hay benchmarks publicados |
 | GPT-2 small (OpenAI) | 124 M | 1024 | Modified MIT | Pesos en safetensors y formatos derivados ampliamente soportados | No comparable con datos publicados en esta ficha |
 | SmolLM-135M (HuggingFaceTB) | 135 M | 2048 | Apache 2.0 | Integracion nativa en transformers | No comparable con datos publicados en esta ficha |
 
@@ -102,7 +102,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad: no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OPENGCM/GTM-3-base
+- Modelo en Hugging Face: https://huggingface.co/OPENGCM/GTM-3-base
 - Modelo anterior de la familia, GTM-v1-base: https://huggingface.co/OPENGCM/GTM-v1-base
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset Cosmopedia-v2: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia-v2

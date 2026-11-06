@@ -81,7 +81,7 @@ La comparativa se limita a las variantes del mismo modelo. No se dispone de info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BCCard/MoAI-Privacy-Filter-INT8
+- Repositorio Hugging Face: https://huggingface.co/BCCard/MoAI-Privacy-Filter-INT8
 - Modelo base: https://huggingface.co/openai/privacy-filter
 - Versión no cuantizada: https://huggingface.co/BCCard/MoAI-Privacy-Filter
 - Sitio web de BC Card AI: https://moai.bccard.ai/

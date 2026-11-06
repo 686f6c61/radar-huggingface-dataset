@@ -53,15 +53,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: aproximadamente 0.3 GB para los pesos en FP16 y 0.6 GB en FP32. Incluyendo activaciones, cabe con comodidad en menos de 1 GB de VRAM.
 - GPU recomendada: cualquier GPU consumer con al menos 2 GB de VRAM, como una GTX 1650, RTX 3050 o integradas modernas. No requiere hardware de servidor.
 - Cabe en GPU consumer: si, e incluso puede ejecutarse en CPU con una latencia razonable para un modelo de este tamano.
-- Opciones de despliegue: compatible con el endpoint de Transformers de HuggingFace, tambien puede usarse con vLLM, llama.cpp, Ollama o TGI. Al ser pequeno, se integra facilmente en entornos con pocos recursos.
+- Opciones de despliegue: compatible con el endpoint de Transformers de Hugging Face, tambien puede usarse con vLLM, llama.cpp, Ollama o TGI. Al ser pequeno, se integra facilmente en entornos con pocos recursos.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Piston-and-Prose-lg | 141M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Piston-and-Prose-sm | No disponible | No disponible | Apache 2.0 (presumible) | HuggingFace |
+| Piston-and-Prose-lg | 141M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Piston-and-Prose-sm | No disponible | No disponible | Apache 2.0 (presumible) | Hugging Face |
 | Sprocket-and-Say | No disponible (el autor indica que es la mitad de Piston-and-Prose-lg) | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria. Las unicas alternativas conocidas son los modelos hermanos mencionados por el autor, pero sin datos tecnicos completos.
@@ -77,8 +77,8 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/croqaz/Piston-and-Prose-lg
+- Modelo en Hugging Face: https://huggingface.co/croqaz/Piston-and-Prose-lg
 - Dataset Sprocket-n-Say: https://huggingface.co/datasets/croqaz/Sprocket-n-Say
 - Dataset Synthetic-archive: https://huggingface.co/datasets/croqaz/Synthetic-archive
 - Dataset tiny-vintage-completions: https://huggingface.co/datasets/croqaz/tiny-vintage-completions
-- Modelo hermano en HuggingFace: https://huggingface.co/croqaz/Piston-and-Prose-sm
+- Modelo hermano en Hugging Face: https://huggingface.co/croqaz/Piston-and-Prose-sm

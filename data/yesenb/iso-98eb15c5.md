@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yesenb/iso-98eb15c5` es un sistema multimodal de tipo image-text-to-text alojado en HuggingFace, desarrollado por el autor `yesenb`. Aunque la ficha técnica es muy limitada, los metadatos indican que utiliza la arquitectura `qwen3_5_moe`, lo que sugiere una variante de la familia Qwen con mezcla de expertos (MoE), y que está preparado para procesar tanto imágenes como texto en conversaciones. El modelo cuenta con aproximadamente 35,1 mil millones de parámetros totales y un tamaño de repositorio de 70,2 GB en formato safetensors.
+El modelo `yesenb/iso-98eb15c5` es un sistema multimodal de tipo image-text-to-text alojado en Hugging Face, desarrollado por el autor `yesenb`. Aunque la ficha técnica es muy limitada, los metadatos indican que utiliza la arquitectura `qwen3_5_moe`, lo que sugiere una variante de la familia Qwen con mezcla de expertos (MoE), y que está preparado para procesar tanto imágenes como texto en conversaciones. El modelo cuenta con aproximadamente 35,1 mil millones de parámetros totales y un tamaño de repositorio de 70,2 GB en formato safetensors.
 
 La relevancia de este modelo radica en su naturaleza multimodal y su arquitectura MoE, que permite activar solo una fracción de los parámetros durante la inferencia, lo que reduce costes computacionales en comparación con un modelo denso de tamaño similar. No obstante, la información pública disponible es escasa: no se han publicado detalles sobre el entrenamiento, los idiomas soportados, la licencia ni los benchmarks. Además, el acceso está restringido (gated), por lo que los usuarios deben solicitar permiso al autor antes de descargar los pesos.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 
 - Generación de texto y razonamiento multimodal a partir de imágenes (image-text-to-text).
 - Soporte de conversación multi-turno, según el pipeline indicado.
-- Compatible con el ecosistema Transformers y con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con el ecosistema Transformers y con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Capacidades MoE para inferencia eficiente con activación parcial de parámetros.
 - No se puede confirmar soporte de tool calling, agentes, ni capacidades multilingües específicas, ya que no hay documentación pública.
 
@@ -75,5 +75,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yesenb/iso-98eb15c5
+- Hugging Face: https://huggingface.co/yesenb/iso-98eb15c5
 - No se han encontrado papers, repositorios, demos o blogs adicionales. Los resultados de búsqueda web no aportan información directa sobre este modelo concreto.

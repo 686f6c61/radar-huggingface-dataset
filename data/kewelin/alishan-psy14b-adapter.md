@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kewelin/alishan-psy14b-adapter es un adaptador PEFT (probablemente LoRA, según la referencia al paper arxiv:1910.09700) diseñado para ajustar el modelo base Qwen/Qwen3-14B. El nombre sugiere una aplicación orientada a psicología ("psy"), pero no se proporciona ninguna descripción oficial ni documentación adicional. El repositorio tiene un tamaño de 3,1 GB, lo que indica un adaptador de gran capacidad, y su acceso está restringido en HuggingFace (gated), por lo que se requiere aceptar condiciones para poder descargarlo.
+Kewelin/alishan-psy14b-adapter es un adaptador PEFT (probablemente LoRA, según la referencia al paper arxiv:1910.09700) diseñado para ajustar el modelo base Qwen/Qwen3-14B. El nombre sugiere una aplicación orientada a psicología ("psy"), pero no se proporciona ninguna descripción oficial ni documentación adicional. El repositorio tiene un tamaño de 3,1 GB, lo que indica un adaptador de gran capacidad, y su acceso está restringido en Hugging Face (gated), por lo que se requiere aceptar condiciones para poder descargarlo.
 
 Este adaptador no es un modelo autónomo, sino un componente que debe combinarse con el modelo base Qwen3-14B para funcionar. Su relevancia actual es limitada debido a la falta de información pública sobre su entrenamiento, licencia y rendimiento, aunque podría ser útil para quienes buscan un ajuste especializado en el dominio psicológico. No se dispone de datos sobre su fecha de creación (agosto de 2026) ni sobre su mantenimiento posterior.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No se dispone de información específica sobre requisitos de hardware para este adaptador.
 - Dado que se combina con Qwen3-14B, los requisitos serán los del modelo base más el adaptador. Qwen3-14B requiere aproximadamente 28 GB de VRAM en FP16 para inferencia, y alrededor de 14 GB en cuantización de 8 bits (según datos públicos de Qwen). El adaptador de 3,1 GB añadirá carga adicional, pero no se conoce su tamaño en memoria.
 - Se recomienda una GPU con al menos 32 GB de VRAM (A100, H100, RTX 6000 Ada) para ejecución en FP16, o GPUs con 16-24 GB si se usa cuantización del modelo base.
-- No se han probado opciones de despliegue como vLLM, llama.cpp u Ollama con este adaptador específico, aunque técnicamente sería posible integrarlo mediante el ecosistema PEFT de HuggingFace Transformers.
+- No se han probado opciones de despliegue como vLLM, llama.cpp u Ollama con este adaptador específico, aunque técnicamente sería posible integrarlo mediante el ecosistema PEFT de Hugging Face Transformers.
 
 ## Comparativa con modelos similares
 
@@ -71,6 +71,6 @@ No disponible. No se conocen adaptadores equivalentes con los que comparar, y la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kewelin/alishan-psy14b-adapter
+- Repositorio Hugging Face: https://huggingface.co/Kewelin/alishan-psy14b-adapter
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B

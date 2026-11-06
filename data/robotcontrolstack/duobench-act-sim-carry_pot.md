@@ -72,7 +72,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 | Modelo | Parámetros | Contexto | Tasa de éxito (carry_pot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoBench ACT (sim) | 51.689.104 | no aplica (chunk de 100) | 54,0 % (IC 95 % [48,3, 59,6]) | apache-2.0 | HuggingFace |
+| DuoBench ACT (sim) | 51.689.104 | no aplica (chunk de 100) | 54,0 % (IC 95 % [48,3, 59,6]) | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-carry_pot
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-carry_pot
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench: https://arxiv.org/abs/2606.11901
 - Página del proyecto: https://duobench.github.io/

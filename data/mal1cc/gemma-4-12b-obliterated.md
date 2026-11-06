@@ -108,7 +108,7 @@ Solo se dispone de datos comparativos fiables frente al propio modelo base. No h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mal1cc/Gemma-4-12B-OBLITERATED
+- Hugging Face: https://huggingface.co/Mal1cc/Gemma-4-12B-OBLITERATED
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Paper de referencia citado (Arditi et al., 2024): Refusal in Language Models Is Mediated by a Single Direction

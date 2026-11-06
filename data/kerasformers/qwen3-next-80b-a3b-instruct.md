@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks específicos para esta conversión 
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Next-80B-A3B-Instruct (base) | 80B | 3B | 32K | Apache 2.0 | HuggingFace |
-| kerasformers/qwen3-next-80b-a3b-instruct | 80B | 3B | 32K | Apache 2.0 | HuggingFace |
-| Mixtral 8x7B | 47B | 12.9B | 32K | Apache 2.0 | HuggingFace |
-| Qwen3-30B-A3B-Instruct | 30B | 3B | 32K | Apache 2.0 | HuggingFace |
+| Qwen3-Next-80B-A3B-Instruct (base) | 80B | 3B | 32K | Apache 2.0 | Hugging Face |
+| kerasformers/qwen3-next-80b-a3b-instruct | 80B | 3B | 32K | Apache 2.0 | Hugging Face |
+| Mixtral 8x7B | 47B | 12.9B | 32K | Apache 2.0 | Hugging Face |
+| Qwen3-30B-A3B-Instruct | 30B | 3B | 32K | Apache 2.0 | Hugging Face |
 
 La conversión de KerasFormers no altera el rendimiento respecto al modelo base, pero ofrece la ventaja de ejecutarse en múltiples backends sin cambios. Comparado con Mixtral 8x7B, Qwen3-Next tiene menos parámetros activos (3B vs 12.9B), lo que lo hace más rápido en inferencia, aunque con un total de parámetros mayor (80B vs 47B), lo que implica más memoria para almacenar los pesos.
 
@@ -78,8 +78,8 @@ La conversión de KerasFormers no altera el rendimiento respecto al modelo base,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen3-next-80b-a3b-instruct
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen3-next-80b-a3b-instruct
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
 - Colección Qwen3-Next de KerasFormers: https://huggingface.co/collections/kerasformers/qwen3-next-6a7e551ff86ebf2cca455ef1
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3-Next en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3_next/

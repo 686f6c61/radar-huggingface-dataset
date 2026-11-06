@@ -90,6 +90,6 @@ Nota: para ApexBench y Agents' Last Exam, la versión DeepSeek-V4-Flash-0731 ign
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-AWQ-DSpark
+- Repositorio Hugging Face: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-AWQ-DSpark
 - Modelo base de DeepSeek-AI: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Checkpoint con correcciones de Unsloth: https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp

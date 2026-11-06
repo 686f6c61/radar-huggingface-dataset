@@ -101,6 +101,6 @@ La comparación con alternativas de la misma categoría se limita a parámetros,
 
 ## Enlaces
 
-- [HuggingFace: frostdev-ops/Rime-1.7B-GGUF](https://huggingface.co/frostdev-ops/Rime-1.7B-GGUF)
+- [Hugging Face: frostdev-ops/Rime-1.7B-GGUF](https://huggingface.co/frostdev-ops/Rime-1.7B-GGUF)
 - [Modelo base: LiquidAI/LFM3-1.7B](https://huggingface.co/LiquidAI/LFM3-1.7B)
 - [Glaze, extension de navegador de Frostdev](https://frostdev.io/glaze)

@@ -16,7 +16,7 @@ La relevancia de esta ficha es práctica: es un artefacto de despliegue (no un m
 | Parametros totales | 8.489.841.664 (~8,49 mil millones) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | 8-bit affine, group size 64 (única cuantización publicada en este repositorio) |
-| Idiomas soportados | 31 idiomas según el modelo upstream; etiquetados en HuggingFace: zh, yue (cantonés), en, pt, fr, de, es, ja, ko |
+| Idiomas soportados | 31 idiomas según el modelo upstream; etiquetados en Hugging Face: zh, yue (cantonés), en, pt, fr, de, es, ja, ko |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors en formato MLX (repositorio de 9,2 GB) |
 | Tarea | text-to-speech |
@@ -24,7 +24,7 @@ La relevancia de esta ficha es práctica: es un artefacto de despliegue (no un m
 | Modelo base | OpenMOSS-Team/MOSS-TTS-v1.5 |
 | Herramienta de conversion | mlx_audio.convert (--q-bits 8, modo affine, group size 64) con mlx-audio 0.5.5 y mlx 0.32.2 |
 | Hardware objetivo | Apple Silicon (MLX) |
-| Fecha de publicacion | 21 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 21 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,9 +72,9 @@ El único dato de rendimiento cuantitativo aportado por la model card es una med
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| luisarn/MOSS-TTS-v1.5-MLX-8bit (este) | ~8,49 mil millones | MLX safetensors, 8-bit affine group 64 | No disponible | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| OpenMOSS-Team/MOSS-TTS-v1.5 (modelo base) | No disponible en la informacion (familia 8B delay) | PyTorch (bf16) | No disponible | Apache 2.0 | HuggingFace, mantenido por OpenMOSS-Team |
-| Variantes Local-Transformer v1.5 en mlx-community | No disponible | MLX | No disponible | No disponible | HuggingFace; son las únicas variantes v1.5 en MLX mencionadas en la model card |
+| luisarn/MOSS-TTS-v1.5-MLX-8bit (este) | ~8,49 mil millones | MLX safetensors, 8-bit affine group 64 | No disponible | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| OpenMOSS-Team/MOSS-TTS-v1.5 (modelo base) | No disponible en la informacion (familia 8B delay) | PyTorch (bf16) | No disponible | Apache 2.0 | Hugging Face, mantenido por OpenMOSS-Team |
+| Variantes Local-Transformer v1.5 en mlx-community | No disponible | MLX | No disponible | No disponible | Hugging Face; son las únicas variantes v1.5 en MLX mencionadas en la model card |
 | Otras alternativas TTS de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada |
 
 La comparación significativa que documenta el autor es frente al propio modelo base en bf16: la versión de 8 bits es más rápida (1,5x frente a 0,8x tiempo real en M4 Max) y ocupa menos espacio, a cambio de posibles diferencias menores de calidad que el autor recomienda verificar con una comparación A/B.
@@ -84,7 +84,7 @@ La comparación significativa que documenta el autor es frente al propio modelo 
 - Sesgos conocidos: la model card no documenta una evaluación de sesgos. Al ser un modelo TTS multilingüe, la calidad y el acento pueden variar de forma desigual entre idiomas y variedades dialectales.
 - Riesgo de alucinación: en TTS se manifiesta como pronunciación incorrecta, omisiones, repeticiones o artefactos acústicos, especialmente en textos largos, idiomas con pocos datos o entradas con números y siglas.
 - Diferencias respecto a la referencia: los resultados de generación pueden diferir ligeramente de la implementación en PyTorch por el uso de operadores y muestreo de MLX. La cuantización a 8 bits puede introducir diferencias adicionales de calidad frente a bf16.
-- Discrepancia de idiomas: la metadata de HuggingFace etiqueta 9 idiomas, mientras que la model card afirma soporte para los 31 idiomas del modelo upstream. Conviene verificar el comportamiento real idioma por idioma antes de asumir cobertura completa.
+- Discrepancia de idiomas: la metadata de Hugging Face etiqueta 9 idiomas, mientras que la model card afirma soporte para los 31 idiomas del modelo upstream. Conviene verificar el comportamiento real idioma por idioma antes de asumir cobertura completa.
 - Restricciones de uso: la licencia Apache 2.0 permite uso comercial, pero el usuario final debe cumplir la normativa aplicable en materia de voz, datos biométricos y derechos de imagen, especialmente al usar la clonación de voz.
 - Riesgo de uso indebido de la clonación: la función `ref_audio` permite imitar voces; es imprescindible contar con consentimiento explícito del hablante y aplicar medidas de trazabilidad en producción.
 - Dependencia de hardware: al estar en formato MLX, no se puede desplegar en GPU NVIDIA ni en la mayoría de infraestructuras cloud x86 con CUDA. Eso limita su uso en producción a entornos Apple Silicon o a una reconversión manual a otro formato.
@@ -93,7 +93,7 @@ La comparación significativa que documenta el autor es frente al propio modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisarn/MOSS-TTS-v1.5-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/luisarn/MOSS-TTS-v1.5-MLX-8bit
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5
 - Repositorio de mlx-audio: https://github.com/Blaizzy/mlx-audio
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas devolvieron únicamente portales de noticias sin relación con el artefacto.

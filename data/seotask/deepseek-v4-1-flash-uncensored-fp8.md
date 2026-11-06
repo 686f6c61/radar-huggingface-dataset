@@ -103,8 +103,8 @@ La unica comparacion con datos disponibles en la informacion proporcionada es co
 
 | Modelo | Parametros | Contexto | MMLU | HarmBench-320 (off / max) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763.205.315.794 reales (552B de backbone segun el autor) | 1M tokens | 82,74% | 100,00% / 100,00% | MIT | HuggingFace |
-| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B de backbone, 8B/16B activos por token | 1M tokens (no confirmado en la informacion proporcionada) | 86,96% | 42,81% / 1,56% | no disponible | HuggingFace |
+| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763.205.315.794 reales (552B de backbone segun el autor) | 1M tokens | 82,74% | 100,00% / 100,00% | MIT | Hugging Face |
+| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B de backbone, 8B/16B activos por token | 1M tokens (no confirmado en la informacion proporcionada) | 86,96% | 42,81% / 1,56% | no disponible | Hugging Face |
 
 No se dispone de datos de otros modelos abliterados o sin censura comparables en la informacion proporcionada, ni de comparaciones con alternativas de la misma categoria (otros MoE multimodales de gran tamano o derivados abliterados de Llama, Mistral o Qwen).
 
@@ -124,7 +124,7 @@ No se dispone de datos de otros modelos abliterados o sin censura comparables en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seotask/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/seotask/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil de investigador citado en la model card: https://x.com/jordanschenck

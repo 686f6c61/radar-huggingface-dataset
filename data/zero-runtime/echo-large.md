@@ -2,11 +2,11 @@
 
 ## Resumen
 
-zero-runtime/echo-large es un modelo de detección de turno (turn detection) y detección de fin de enunciado (end-of-utterance, EOU) orientado a agentes de voz y sistemas de conversación. Lo publica el autor zero-runtime en HuggingFace y su función es determinar, a partir de la señal de voz o de su representación, si la persona que habla ha terminado su intervención o si va a continuar. Esa decisión es la que permite a un agente de voz decidir cuándo debe responder sin cortar al usuario ni dejar silencios muertos.
+zero-runtime/echo-large es un modelo de detección de turno (turn detection) y detección de fin de enunciado (end-of-utterance, EOU) orientado a agentes de voz y sistemas de conversación. Lo publica el autor zero-runtime en Hugging Face y su función es determinar, a partir de la señal de voz o de su representación, si la persona que habla ha terminado su intervención o si va a continuar. Esa decisión es la que permite a un agente de voz decidir cuándo debe responder sin cortar al usuario ni dejar silencios muertos.
 
 El modelo se distribuye con etiquetas que lo sitúan en el ámbito de la IA conversacional multimodal (speech) y declara soporte para doce idiomas: bengalí, alemán, inglés, español, francés, gujarati, hindi, italiano, marati, tamil, telugu y urdu. Los resultados de búsqueda web disponibles no aportan información técnica sobre el modelo, su arquitectura, su tamaño ni su entrenamiento.
 
-Su relevancia actual viene del auge de los agentes de voz en tiempo real, donde la detección de turno es un componente crítico de la latencia percibida y de la naturalidad del diálogo. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+Su relevancia actual viene del auge de los agentes de voz en tiempo real, donde la detección de turno es un componente crítico de la latencia percibida y de la naturalidad del diálogo. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Su relevancia actual viene del auge de los agentes de voz en tiempo real, donde 
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas | 0 |
 | Likes | 2 |
 
@@ -72,7 +72,7 @@ No obstante, en la informacion proporcionada no hay datos verificables sobre par
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade friccion a la evaluacion y a la integracion en produccion.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade friccion a la evaluacion y a la integracion en produccion.
 - Licencia no disponible: no se puede determinar si el uso comercial esta permitido ni bajo que condiciones, un bloqueo potencial para cualquier despliegue en producto.
 - Ausencia de benchmarks: no hay datos publicados que permitan estimar la precision de deteccion de EOU ni compararla con alternativas.
 - Opacidad tecnica: se desconocen arquitectura, tamano, datos de entrenamiento y formato de pesos, lo que impide evaluar riesgos de sesgo, coste de inferencia o requisitos de memoria.
@@ -83,6 +83,6 @@ No obstante, en la informacion proporcionada no hay datos verificables sobre par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zero-runtime/echo-large
+- Hugging Face: https://huggingface.co/zero-runtime/echo-large
 - Resultados de busqueda web: las consultas realizadas no devolvieron informacion relevante sobre el modelo. Los enlaces encontrados correspondian a entidades no relacionadas (Wikipedia sobre el concepto "cero", Zero Motorcycles y el software contable Xero), por lo que no se incluyen como fuentes.
 - Paper, blog, repositorio o demo oficial: no disponible.

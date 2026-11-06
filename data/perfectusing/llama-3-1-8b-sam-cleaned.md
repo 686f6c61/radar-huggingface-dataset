@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PerfectUsing/llama-3.1-8b-sam-cleaned` es un ajuste fino (fine-tune) del modelo `unsloth/llama-3.1-8b-unsloth-bnb-4bit`, que a su vez deriva del Llama 3.1 8B de Meta. Lo publica el usuario PerfectUsing en HuggingFace y se ha entrenado utilizando la librería Unsloth, tal y como declara la propia model card. No se especifica el dataset de ajuste, el número de tokens de entrenamiento ni la técnica exacta empleada (LoRA, QLoRA o ajuste completo), por lo que la información disponible es mínima.
+`PerfectUsing/llama-3.1-8b-sam-cleaned` es un ajuste fino (fine-tune) del modelo `unsloth/llama-3.1-8b-unsloth-bnb-4bit`, que a su vez deriva del Llama 3.1 8B de Meta. Lo publica el usuario PerfectUsing en Hugging Face y se ha entrenado utilizando la librería Unsloth, tal y como declara la propia model card. No se especifica el dataset de ajuste, el número de tokens de entrenamiento ni la técnica exacta empleada (LoRA, QLoRA o ajuste completo), por lo que la información disponible es mínima.
 
 El modelo hereda la arquitectura transformer decoder-only de Llama 3.1 en su variante de 8 000 millones de parámetros, con las capacidades generales de generación de texto y razonamiento de la familia. La model card no documenta ningún proceso de alineación adicional (RLHF, DPO), evaluación comparativa ni propósito de uso concreto.
 
@@ -43,7 +43,7 @@ No hay información sobre el volumen de datos de entrenamiento, la composición 
 
 - Experimentación en ajuste fino: sirve como ejemplo reproducible de un flujo de trabajo con Unsloth y TRL sobre Llama 3.1 8B cuantizado, útil para quienes quieran replicar el pipeline.
 - Prototipado de generación de texto en inglés: se puede cargar con `transformers` para pruebas rápidas de generación, asumiendo que los pesos estén completos y sean cargables.
-- Investigación sobre linaje de modelos: útil para estudiar el ecosistema de derivados de Llama 3.1 publicados en HuggingFace y cómo se documentan (o no) los ajustes.
+- Investigación sobre linaje de modelos: útil para estudiar el ecosistema de derivados de Llama 3.1 publicados en Hugging Face y cómo se documentan (o no) los ajustes.
 - Base para un ajuste posterior: si el repositorio contiene un adaptador, podría reutilizarse como punto de partida para nuevos ajustes, siempre que se verifique su contenido real.
 - Evaluación comparativa de calidad de documentación: caso de estudio sobre model cards incompletas y sus implicaciones para la reproducibilidad.
 - Despliegue en entornos educativos o de demostración: con las salvedades de licencia y de ausencia de evaluación, podría usarse en aulas o talleres sobre modelos de lenguaje.
@@ -72,10 +72,10 @@ Advertencia: si el repositorio contiene únicamente un adaptador, estos requisit
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `PerfectUsing/llama-3.1-8b-sam-cleaned` | 8B (base) | No disponible | Apache 2.0 (declarada) | HuggingFace, 0 descargas | Sin benchmarks, sin documentación de entrenamiento |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente utilizado | Modelo oficial alineado con instrucciones, con evaluación publicada |
-| `unsloth/llama-3.1-8b-unsloth-bnb-4bit` | 8B | 128 000 tokens (heredero de Llama 3.1) | Apache 2.0 según el repositorio de Unsloth | HuggingFace | Base cuantizada a 4 bits para ajuste eficiente; es el modelo de partida de esta ficha |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7B | 32 000 tokens | Apache 2.0 | HuggingFace | Alternativa de tamaño similar con licencia permisiva |
+| `PerfectUsing/llama-3.1-8b-sam-cleaned` | 8B (base) | No disponible | Apache 2.0 (declarada) | Hugging Face, 0 descargas | Sin benchmarks, sin documentación de entrenamiento |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente utilizado | Modelo oficial alineado con instrucciones, con evaluación publicada |
+| `unsloth/llama-3.1-8b-unsloth-bnb-4bit` | 8B | 128 000 tokens (heredero de Llama 3.1) | Apache 2.0 según el repositorio de Unsloth | Hugging Face | Base cuantizada a 4 bits para ajuste eficiente; es el modelo de partida de esta ficha |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7B | 32 000 tokens | Apache 2.0 | Hugging Face | Alternativa de tamaño similar con licencia permisiva |
 
 No se dispone de datos de rendimiento del modelo analizado para establecer una comparación cuantitativa.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento del modelo analizado para establecer una c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PerfectUsing/llama-3.1-8b-sam-cleaned
+- Modelo en Hugging Face: https://huggingface.co/PerfectUsing/llama-3.1-8b-sam-cleaned
 - Modelo base declarado: https://huggingface.co/unsloth/llama-3.1-8b-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Modelo original de la familia: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

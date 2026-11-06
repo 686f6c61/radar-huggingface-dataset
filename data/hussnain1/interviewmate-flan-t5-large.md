@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InterviewMate FLAN-T5 Large es un ajuste fino completo de google/flan-t5-large, publicado por Muhammad Hussnain Jamil (usuario Hussnain1 en HuggingFace), orientado a la generacion de preguntas de entrevista tecnica a partir de contexto de candidato (habilidades, proyectos y experiencia). El modelo actua como generador de respaldo dentro del sistema InterviewMate: cuando el motor principal basado en un LoRA de Qwen2.5 no esta disponible o devuelve pocas preguntas validas, este T5 produce una pregunta individual por invocacion.
+InterviewMate FLAN-T5 Large es un ajuste fino completo de google/flan-t5-large, publicado por Muhammad Hussnain Jamil (usuario Hussnain1 en Hugging Face), orientado a la generacion de preguntas de entrevista tecnica a partir de contexto de candidato (habilidades, proyectos y experiencia). El modelo actua como generador de respaldo dentro del sistema InterviewMate: cuando el motor principal basado en un LoRA de Qwen2.5 no esta disponible o devuelve pocas preguntas validas, este T5 produce una pregunta individual por invocacion.
 
 Se trata de un modelo encoder-decoder de la familia T5 con 783.150.080 parametros totales, derivado directamente de google/flan-t5-large, por lo que hereda su arquitectura transformer estandar y su ventana de contexto de 512 tokens. El ajuste se ha realizado sobre pares de generacion de preguntas conscientes de la respuesta procedentes de SQuAD y HotpotQA, complementados con pares de estilo entrevista construidos a partir de contextos tipo CV, generados y curados por el autor y no publicados.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InterviewMate FLAN-T5 Large | 783 M | 512 tokens | Generacion de preguntas de entrevista | Apache 2.0 | HuggingFace |
-| google/flan-t5-large (base) | 783 M | 512 tokens | Generacion texto-a-texto general | Apache 2.0 | HuggingFace |
-| InterviewMate Qwen2.5 1.5B LoRA | 1,5 B (aproximado, no confirmado en la informacion) | no disponible | Motor principal de preguntas de entrevista | no disponible | HuggingFace |
-| T5-large | 737 M (aproximado) | 512 tokens | Generacion texto-a-texto general | Apache 2.0 | HuggingFace |
+| InterviewMate FLAN-T5 Large | 783 M | 512 tokens | Generacion de preguntas de entrevista | Apache 2.0 | Hugging Face |
+| google/flan-t5-large (base) | 783 M | 512 tokens | Generacion texto-a-texto general | Apache 2.0 | Hugging Face |
+| InterviewMate Qwen2.5 1.5B LoRA | 1,5 B (aproximado, no confirmado en la informacion) | no disponible | Motor principal de preguntas de entrevista | no disponible | Hugging Face |
+| T5-large | 737 M (aproximado) | 512 tokens | Generacion texto-a-texto general | Apache 2.0 | Hugging Face |
 
 La comparacion con el modelo base es la mas directa: InterviewMate FLAN-T5 Large especializa flan-t5-large en generacion de preguntas de entrevista, a costa de perder generalidad y de limitarse al formato de entrada documentado. Frente al LoRA de Qwen2.5 del mismo proyecto, este T5 es un modelo secundario de menor tamano y sin capacidad de planificacion multi-pregunta.
 
@@ -86,7 +86,7 @@ La comparacion con el modelo base es la mas directa: InterviewMate FLAN-T5 Large
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hussnain1/interviewmate-flan-t5-large
+- Modelo en Hugging Face: https://huggingface.co/Hussnain1/interviewmate-flan-t5-large
 - Modelo base: https://huggingface.co/google/flan-t5-large
 - Modelo principal del proyecto (Qwen2.5 LoRA): https://huggingface.co/Hussnain1/interviewmate-qwen2.5-1.5b-lora
 - Repositorio GitHub del proyecto: https://github.com/Hussnainoffical/InterviewMate

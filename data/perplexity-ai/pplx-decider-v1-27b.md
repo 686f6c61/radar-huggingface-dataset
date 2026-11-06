@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pplx-decider-v1-27b es un modelo de decisión desarrollado por Perplexity AI (perfil `perplexity-ai` en HuggingFace) y obtenido mediante ajuste fino supervisado sobre el modelo base Qwen/Qwen3.8-27B. No es un modelo generativo de propósito general: su `pipeline_tag` es `text-classification`, se distribuye con código de inferencia propio (etiqueta `custom-code`) y su función es emitir una decisión con probabilidades calibradas, ya sea eligiendo entre un conjunto de opciones etiquetadas o devolviendo la probabilidad de una afirmación de tipo sí/no. El repositorio incorpora también la etiqueta `multimodal`, y el script de ejemplo acepta imágenes además de texto.
+pplx-decider-v1-27b es un modelo de decisión desarrollado por Perplexity AI (perfil `perplexity-ai` en Hugging Face) y obtenido mediante ajuste fino supervisado sobre el modelo base Qwen/Qwen3.8-27B. No es un modelo generativo de propósito general: su `pipeline_tag` es `text-classification`, se distribuye con código de inferencia propio (etiqueta `custom-code`) y su función es emitir una decisión con probabilidades calibradas, ya sea eligiendo entre un conjunto de opciones etiquetadas o devolviendo la probabilidad de una afirmación de tipo sí/no. El repositorio incorpora también la etiqueta `multimodal`, y el script de ejemplo acepta imágenes además de texto.
 
 El modelo cuenta con 26.085.330.160 parámetros (unos 26,09 mil millones) y se publica en formato `safetensors` bajo licencia Apache 2.0, con un repositorio que ocupa 101,6 GB. La model card indica que su ejecución en local requiere una GPU CUDA con espacio para aproximadamente 49 GiB de pesos más memoria de trabajo, lo que sitúa la inferencia en el rango de GPUs de 80 GB o de configuraciones multi-GPU.
 
@@ -12,7 +12,7 @@ Su relevancia actual radica en el nicho concreto que ocupa: sustituir llamadas a
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (ajuste fino de Qwen/Qwen3.8-27B; etiqueta de arquitectura `qwen3_5` en HuggingFace) |
+| Arquitectura | No disponible (ajuste fino de Qwen/Qwen3.8-27B; etiqueta de arquitectura `qwen3_5` en Hugging Face) |
 | Parámetros totales | 26.085.330.160 (≈26,09 mil millones) |
 | Parámetros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -124,7 +124,7 @@ La información proporcionada solo permite comparar con los dos sistemas que apa
 
 | Modelo | Parámetros | Contexto | Overall (11 benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pplx-decider-v1-27b | 26,09 B (safetensors) | No disponible | 85,71 % | Apache 2.0 | Pesos en HuggingFace, código de inferencia propio |
+| pplx-decider-v1-27b | 26,09 B (safetensors) | No disponible | 85,71 % | Apache 2.0 | Pesos en Hugging Face, código de inferencia propio |
 | Qwen3.8-27B | No disponible | No disponible | 74,76 % | No disponible | No disponible en la información facilitada |
 | Jev | No disponible | No disponible | 84,51 % | No disponible | No disponible; solo aparece como referencia en la tabla del autor |
 
@@ -147,7 +147,7 @@ Diferencias destacables frente al modelo base: la mayor ventaja de pplx-decider-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/perplexity-ai/pplx-decider-v1-27b
+- Modelo en Hugging Face: https://huggingface.co/perplexity-ai/pplx-decider-v1-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Script de inferencia del repositorio: `inference.py` (descargable desde el repositorio del modelo)
 - Perplexity: https://www.perplexity.ai/

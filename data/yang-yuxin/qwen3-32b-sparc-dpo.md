@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3-32B-SPARC-DPO es un ajuste fino (fine-tuning) del modelo Qwen3-32B de Alibaba, publicado por el usuario Yang-yuxin en HuggingFace. El nombre indica dos elementos clave: por un lado, "SPARC" hace referencia a un paradigma de recuperación aumentada (RAG) orientado a la generación con citas o atribución de fuentes; por otro, "DPO" señala que el ajuste se ha realizado mediante Direct Preference Optimization, una técnica de alineación por preferencias humanas o sintéticas. El resultado es un modelo de 32.7 mil millones de parámetros con licencia Apache 2.0, pensado para tareas conversacionales con recuperación de información.
+Qwen3-32B-SPARC-DPO es un ajuste fino (fine-tuning) del modelo Qwen3-32B de Alibaba, publicado por el usuario Yang-yuxin en Hugging Face. El nombre indica dos elementos clave: por un lado, "SPARC" hace referencia a un paradigma de recuperación aumentada (RAG) orientado a la generación con citas o atribución de fuentes; por otro, "DPO" señala que el ajuste se ha realizado mediante Direct Preference Optimization, una técnica de alineación por preferencias humanas o sintéticas. El resultado es un modelo de 32.7 mil millones de parámetros con licencia Apache 2.0, pensado para tareas conversacionales con recuperación de información.
 
 El modelo parte de la arquitectura de Qwen3-32B, un transformer denso (no MoE) con ventana de contexto nativa de 32 768 tokens, extensible hasta 131 072 mediante RoPE scaling. El ajuste DPO sobre el modelo base busca mejorar la calidad de las respuestas en escenarios RAG, donde el modelo debe integrar documentos recuperados y generar respuestas fieles a las fuentes. Es relevante para desarrolladores que necesitan un modelo abierto, de tamaño medio-grande, especializado en pipelines de recuperación y generación con trazabilidad.
 
-El repositorio tiene acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargar los pesos. El tamaño del repo es de 65.5 GB, coherente con pesos en safetensors de 32.7B parámetros en precisión de 16 bits. No se han publicado descargas ni likes en el momento de redactar esta ficha, lo que sugiere un modelo de reciente creación (enero de 2026) y con escasa adopción pública.
+El repositorio tiene acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargar los pesos. El tamaño del repo es de 65.5 GB, coherente con pesos en safetensors de 32.7B parámetros en precisión de 16 bits. No se han publicado descargas ni likes en el momento de redactar esta ficha, lo que sugiere un modelo de reciente creación (enero de 2026) y con escasa adopción pública.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El repositorio tiene acceso restringido (gated), lo que obliga a aceptar condici
 
 La arquitectura subyacente es la de Qwen3-32B: un transformer decoder-only denso con 64 capas, atención con QK-norm, RoPE y activación SwiGLU. Qwen3-32B incorpora un modo de razonamiento ("thinking mode") que puede activarse o desactivarse mediante tokens de control, y fue entrenado con un corpus multilingüe de varios billones de tokens, seguido de fases de SFT y RLHF. Sobre esta base, el autor aplica un ajuste DPO, que optimiza el modelo para preferir respuestas alineadas con un conjunto de pares (elegida, rechazada) presumiblemente construido en torno a tareas RAG.
 
-El nombre "SPARC" sugiere una especialización en generación aumentada por recuperación con atribución o citas, aunque la ficha de HuggingFace no detalla el dataset de preferencias, el número de pasos de DPO, la composición del corpus ni si hubo una fase previa de SFT. Tampoco se especifica si se aplicaron técnicas adicionales como decodificación especulativa, atención lineal o destilación. Toda la información sobre el proceso de entrenamiento más allá de la etiqueta "DPO" y "sparc-rag" está ausente de la documentación pública.
+El nombre "SPARC" sugiere una especialización en generación aumentada por recuperación con atribución o citas, aunque la ficha de Hugging Face no detalla el dataset de preferencias, el número de pasos de DPO, la composición del corpus ni si hubo una fase previa de SFT. Tampoco se especifica si se aplicaron técnicas adicionales como decodificación especulativa, atención lineal o destilación. Toda la información sobre el proceso de entrenamiento más allá de la etiqueta "DPO" y "sparc-rag" está ausente de la documentación pública.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ El ajuste SPARC-DPO se distingue del Qwen3-32B base por su orientación a RAG, p
 ## Limitaciones y advertencias
 
 - No se han publicado métricas de evaluación; el rendimiento real del ajuste DPO frente al modelo base es desconocido.
-- El repositorio está gated: requiere aceptar condiciones en HuggingFace, lo que puede retrasar o impedir el acceso en entornos automatizados.
+- El repositorio está gated: requiere aceptar condiciones en Hugging Face, lo que puede retrasar o impedir el acceso en entornos automatizados.
 - Riesgo de alucinación inherente a los modelos de 32B; el ajuste RAG no elimina la posibilidad de citas incorrectas o atribuciones erróneas.
 - No se documenta el dataset de preferencias ni el proceso de anotación; posible sesgo no auditado.
 - Idiomas soportados no verificados en este ajuste; el rendimiento multilingüe puede degradarse respecto al base.
@@ -85,7 +85,7 @@ El ajuste SPARC-DPO se distingue del Qwen3-32B base por su orientación a RAG, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yang-yuxin/Qwen3-32B-SPARC-DPO
+- Hugging Face: https://huggingface.co/Yang-yuxin/Qwen3-32B-SPARC-DPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Repositorio Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Paper Qwen3 (arXiv): no disponible en la informacion proporcionada

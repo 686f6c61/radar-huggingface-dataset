@@ -75,5 +75,5 @@ No se disponen de modelos comparables en la información proporcionada. A contin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParthivMEV/24b1051-Week04-Compression-20-Submission01
+- Modelo en Hugging Face: https://huggingface.co/ParthivMEV/24b1051-Week04-Compression-20-Submission01
 - Repositorio de reconstrucción: https://github.com/Parthiv-MEV/CS6013/tree/main/24b1051/Week04/Compression_20/Submission01

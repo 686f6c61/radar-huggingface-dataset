@@ -77,7 +77,7 @@ No se dispone de información sobre adaptadores comparables para evaluación de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-2b-sdr
+- Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-2b-sdr
 - Repositorio BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Repositorio BrightRate-LM: https://github.com/shreshthsaini/BrightRate-LM
 - Página personal del autor: https://shreshthsaini.github.io/

@@ -6,7 +6,7 @@
 
 El modelo base es `Lalaa-a/gemma4-8b-text-only`, descrito por el autor como los pesos de texto de `google/gemma-4-E4B-it` cortados despues de la capa 24. El adaptador se aplica sobre esas 24 capas conservadas y la cabeza de eleccion se entrena junto con el adaptador para producir una puntuacion por opcion, en lugar de generar texto libre. El repositorio ocupa 0,2 GB y se distribuye bajo la licencia Gemma.
 
-Su relevancia ahora es acotada y muy especifica: sirve como artefacto de evaluacion reproducible para quien necesite medir o comparar el rendimiento en multiple-choice en cingales con una arquitectura recortada y un adaptador ligero, y como caso de estudio de truncado de capas mas LoRA mas cabeza de clasificacion. No hay benchmarks publicados, no tiene descargas ni likes, y su uso requiere el codigo de inferencia del equipo en lugar de las APIs estandar de HuggingFace.
+Su relevancia ahora es acotada y muy especifica: sirve como artefacto de evaluacion reproducible para quien necesite medir o comparar el rendimiento en multiple-choice en cingales con una arquitectura recortada y un adaptador ligero, y como caso de estudio de truncado de capas mas LoRA mas cabeza de clasificacion. No hay benchmarks publicados, no tiene descargas ni likes, y su uso requiere el codigo de inferencia del equipo en lugar de las APIs estandar de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SinhalaMMLU-SharedTask/team-zeroShot-gemma4-lora` | no disponible (base "8b", truncado a 24 capas) | no disponible | Multiple-choice en cingales con cabeza de eleccion | gemma | Publico en HuggingFace, 0 descargas, 0 likes |
-| `Lalaa-a/gemma4-8b-text-only` (modelo base) | no disponible (nombre "8b") | no disponible | Generacion de texto, sin cabeza de eleccion | no disponible en la informacion | Publico en HuggingFace |
+| `SinhalaMMLU-SharedTask/team-zeroShot-gemma4-lora` | no disponible (base "8b", truncado a 24 capas) | no disponible | Multiple-choice en cingales con cabeza de eleccion | gemma | Publico en Hugging Face, 0 descargas, 0 likes |
+| `Lalaa-a/gemma4-8b-text-only` (modelo base) | no disponible (nombre "8b") | no disponible | Generacion de texto, sin cabeza de eleccion | no disponible en la informacion | Publico en Hugging Face |
 | `google/gemma-4-E4B-it` (referencia del autor) | no disponible | no disponible | Modelo instructivo multimodal/texto | gemma | Publico, referenciado pero no enlazado en la ficha |
 
 No se dispone de informacion sobre otros envios de la misma shared task ni sobre modelos comparables de tamano y tarea equivalentes para establecer una comparacion cuantitativa.
@@ -89,7 +89,7 @@ No se dispone de informacion sobre otros envios de la misma shared task ni sobre
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask/team-zeroShot-gemma4-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask/team-zeroShot-gemma4-lora
 - Modelo base: https://huggingface.co/Lalaa-a/gemma4-8b-text-only
 - Modelo de referencia citado por el autor: `google/gemma-4-E4B-it` (no se proporciona enlace directo en la informacion disponible)
 - Repositorio principal del equipo con `inference.py`: mencionado en la model card, sin URL disponible

@@ -75,7 +75,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Freenixi/unsloth-Qwen3.8-27B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Freenixi/unsloth-Qwen3.8-27B-NVFP4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Proyector de visión (mmproj-BF16.gguf): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/blob/main/mmproj-BF16.gguf

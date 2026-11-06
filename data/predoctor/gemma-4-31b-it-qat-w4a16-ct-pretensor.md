@@ -85,7 +85,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/PreDoctor/gemma-4-31B-it-qat-w4a16-ct-PreTensor
+- Repositorio Hugging Face del modelo: https://huggingface.co/PreDoctor/gemma-4-31B-it-qat-w4a16-ct-PreTensor
 - Checkpoint base oficial: https://huggingface.co/google/gemma-4-31B-it-qat-w4a16-ct
 - Pagina oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Documentacion de Gemma 4 para desarrolladores: https://ai.google.dev/gemma/docs/core

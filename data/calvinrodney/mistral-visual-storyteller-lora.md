@@ -45,7 +45,7 @@ El unico dato de entrenamiento documentado es que el ajuste se realizo con Unslo
 - Generacion de relatos cortos en ingles: si el ajuste cumple lo que sugiere su nombre, podria emplearse para producir narraciones breves, aunque no existe evidencia publicada de la calidad resultante.
 - Prototipado de asistentes conversacionales en ingles: al partir de un modelo instruct, puede sostener dialogos multi-turno basicos en un entorno de pruebas.
 - Base para nuevos ajustes: el adaptador puede servir como punto de partida para fusionar y continuar el entrenamiento con datos propios.
-- Docencia y formacion: util como caso practico de publicacion de adaptadores LoRA en HuggingFace con licencia Apache 2.0.
+- Docencia y formacion: util como caso practico de publicacion de adaptadores LoRA en Hugging Face con licencia Apache 2.0.
 - Pruebas comparativas internas de tecnicas de ajuste: permite medir el impacto de LoRA frente al modelo base en tareas de generacion creativa.
 - No se recomienda su uso en produccion: la ausencia de evaluacion, de documentacion de dataset y de ejemplos de salida impide garantizar un comportamiento fiable.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| calvinrodney/mistral-visual-storyteller-lora | LoRA sobre ~7B | 32.768 (heredado del base) | Apache 2.0 | Repositorio HuggingFace, 0 descargas | No disponible |
+| calvinrodney/mistral-visual-storyteller-lora | LoRA sobre ~7B | 32.768 (heredado del base) | Apache 2.0 | Repositorio Hugging Face, 0 descargas | No disponible |
 | Mistral 7B Instruct v0.3 (modelo base) | ~7B | 32.768 | Apache 2.0 | Ampliamente disponible | No disponible en esta ficha |
 | Llama 3.1 8B Instruct | ~8B | 128.000 | Llama 3.1 Community License | Ampliamente disponible | No disponible en esta ficha |
 | Qwen 2.5 7B Instruct | ~7,6B | 32.768 (ampliable con YaRN) | Apache 2.0 | Ampliamente disponible | No disponible en esta ficha |
@@ -87,7 +87,7 @@ La comparacion se limita a parametros, contexto y licencia, ya que no existen da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/calvinrodney/mistral-visual-storyteller-lora
+- Modelo en Hugging Face: https://huggingface.co/calvinrodney/mistral-visual-storyteller-lora
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - Otros enlaces relevantes: no disponible (los resultados de la busqueda web proporcionada no guardan relacion con el modelo ni aportan informacion tecnica util).

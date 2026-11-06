@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparado entre estos modelos.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/itznoor998/SwinIR-4x-SuperResolution
+- Repositorio de Hugging Face: https://huggingface.co/itznoor998/SwinIR-4x-SuperResolution
 - Repositorio oficial de SwinIR: https://github.com/JingyunLiang/SwinIR
 - Checkpoint SwinIR 4x en LykosAI/Upscalers: https://huggingface.co/LykosAI/Upscalers/blob/main/SwinIR/SwinIR_4x.pth

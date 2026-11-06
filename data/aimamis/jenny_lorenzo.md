@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jenny Lorenzo es un adaptador LoRA de generacion de imagenes publicado por el usuario AiMamis en HuggingFace. Se trata de un ajuste fino de tipo diffusion-lora sobre el modelo base krea/Krea-2-Turbo, orientado a reproducir la apariencia de una persona concreta (la creadora de contenido Jenny Lorenzo) a partir de un prompt de activacion. El repositorio ocupa 0,5 GB, usa la libreria diffusers y se distribuye bajo licencia openrail++.
+Jenny Lorenzo es un adaptador LoRA de generacion de imagenes publicado por el usuario AiMamis en Hugging Face. Se trata de un ajuste fino de tipo diffusion-lora sobre el modelo base krea/Krea-2-Turbo, orientado a reproducir la apariencia de una persona concreta (la creadora de contenido Jenny Lorenzo) a partir de un prompt de activacion. El repositorio ocupa 0,5 GB, usa la libreria diffusers y se distribuye bajo licencia openrail++.
 
 El modelo no es un modelo generativo autonomo: es un adaptador que debe cargarse junto con Krea-2-Turbo para funcionar. Su unico proposito documentado es la generacion de imagenes condicionada por las palabras clave `Jenny`, `Brunette hair`, `Fair skin` y `Brown eyes`, que constituyen el instance prompt declarado por el autor.
 
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores de pers
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jenny Lorenzo (AiMamis) | no disponible (LoRA) | no aplica | sin benchmarks publicados | openrail++ | HuggingFace, 4 descargas |
+| Jenny Lorenzo (AiMamis) | no disponible (LoRA) | no aplica | sin benchmarks publicados | openrail++ | Hugging Face, 4 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores de pers
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AiMamis/Jenny_Lorenzo
+- Repositorio Hugging Face: https://huggingface.co/AiMamis/Jenny_Lorenzo
 - Archivos y versiones: https://huggingface.co/AiMamis/Jenny_Lorenzo/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado articulos, papers, repositorios ni demos adicionales relacionados en la busqueda web realizada.

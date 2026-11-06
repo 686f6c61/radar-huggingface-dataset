@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CCVG es un repositorio de modelos publicado en HuggingFace por el usuario xytian1008 bajo licencia MIT. El repositorio tiene un tamano de 382,4 GB, lo que sugiere que contiene pesos de un modelo de gran escala o un conjunto de checkpoints, aunque no se especifica en la informacion disponible ni la arquitectura ni el numero de parametros. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los archivos.
+CCVG es un repositorio de modelos publicado en Hugging Face por el usuario xytian1008 bajo licencia MIT. El repositorio tiene un tamano de 382,4 GB, lo que sugiere que contiene pesos de un modelo de gran escala o un conjunto de checkpoints, aunque no se especifica en la informacion disponible ni la arquitectura ni el numero de parametros. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los archivos.
 
 No se dispone de informacion sobre el pipeline, los idiomas soportados, el contexto maximo ni los datos de entrenamiento. El repositorio fue creado el 14 de octubre de 2026 y actualizado el 2 de noviembre de 2026, sin descargas ni likes registrados hasta la fecha. Dada la ausencia de documentacion publica (model card, paper o blog asociado), esta ficha se limita a reflejar los metadatos disponibles y a marcar explicitamente como "no disponible" cualquier dato tecnico no confirmado.
 
@@ -34,7 +34,7 @@ Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, at
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta soporte multilingue declarado.
 - No consta modo de razonamiento (thinking mode), vision ni audio.
-- La unica capacidad inferible es la propia existencia de pesos publicados en HuggingFace, sin model card asociada.
+- La unica capacidad inferible es la propia existencia de pesos publicados en Hugging Face, sin model card asociada.
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 - Ausencia total de model card: no hay informacion sobre arquitectura, datos de entrenamiento ni sesgos conocidos.
 - Riesgo de alucinacion: no evaluable sin benchmarks ni ejemplos de uso.
 - Limitaciones de contexto e idioma: no documentadas.
-- Licencia MIT: permite uso comercial y redistribucion, pero el acceso esta restringido (gated) y requiere aceptar condiciones adicionales en HuggingFace que podrian imponer restricciones no reflejadas en la licencia.
+- Licencia MIT: permite uso comercial y redistribucion, pero el acceso esta restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face que podrian imponer restricciones no reflejadas en la licencia.
 - Repositorio de 382,4 GB: la descarga y el almacenamiento requieren infraestructura significativa; conviene verificar el contenido antes de descargar.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni de validacion externa.
 - Fecha de creacion futura (2026-10-14): conviene verificar la autenticidad y el contexto del repositorio antes de confiar en el.
@@ -78,5 +78,5 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xytian1008/CCVG
+- Hugging Face: https://huggingface.co/xytian1008/CCVG
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT experimental sobre modelo italiano; sin benchmarks ni validacion |
-| goldfish-models/ita_latn_100mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base del anterior; rama monolingue italiana de la coleccion Goldfish |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | licencia MIT modificada | HuggingFace, muy extendido | Referencia de la misma arquitectura y tamano; entrenado en ingles y ampliamente evaluado |
-| francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | HuggingFace | Variante de la misma serie con otra semilla, util para medir varianza entre ejecuciones |
+| ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT experimental sobre modelo italiano; sin benchmarks ni validacion |
+| goldfish-models/ita_latn_100mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base del anterior; rama monolingue italiana de la coleccion Goldfish |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | licencia MIT modificada | Hugging Face, muy extendido | Referencia de la misma arquitectura y tamano; entrenado en ingles y ampliamente evaluado |
+| francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | Hugging Face | Variante de la misma serie con otra semilla, util para medir varianza entre ejecuciones |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ixbpqbb0
 - Repositorio de TRL: https://github.com/huggingface/trl

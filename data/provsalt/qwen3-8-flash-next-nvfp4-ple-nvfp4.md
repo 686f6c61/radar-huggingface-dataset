@@ -95,7 +95,7 @@ La diferencia principal entre este checkpoint y el de Inferact es la conversión
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/provsalt/Qwen3.8-Flash-Next-NVFP4-PLE-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/provsalt/Qwen3.8-Flash-Next-NVFP4-PLE-NVFP4
 - Modelo base (Inferact): https://huggingface.co/Inferact/Qwen3.8-Flash-Next-NVFP4
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo original: https://github.com/QwenLM/Qwen3.8-Flash-Next/

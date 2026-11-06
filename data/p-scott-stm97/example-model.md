@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `P-scott-stm97/example-model` es un repositorio alojado en HuggingFace que, según la información disponible, no contiene una model card sustancial ni metadatos técnicos más allá de la licencia MIT y la región de origen (Estados Unidos). No se especifica arquitectura, tamaño, parámetros, ni caso de uso. Fue creado el 22 de agosto de 2026 y no registra descargas ni valoraciones.
+El modelo `P-scott-stm97/example-model` es un repositorio alojado en Hugging Face que, según la información disponible, no contiene una model card sustancial ni metadatos técnicos más allá de la licencia MIT y la región de origen (Estados Unidos). No se especifica arquitectura, tamaño, parámetros, ni caso de uso. Fue creado el 22 de agosto de 2026 y no registra descargas ni valoraciones.
 
 Dado que el repositorio no proporciona documentación técnica, pesos, ni ejemplos de uso, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. La ausencia de pipeline, idiomas y cualquier dato de entrenamiento impide cualquier análisis técnico. Se trata, en la práctica, de un repositorio vacío o de ejemplo, sin utilidad directa para desarrolladores o investigadores.
 
@@ -52,4 +52,4 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/P-scott-stm97/example-model
+- Repositorio Hugging Face: https://huggingface.co/P-scott-stm97/example-model

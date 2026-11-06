@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thomasavare/embeddinggemma-2-211` es un repositorio publicado en HuggingFace por el usuario thomasavare. Por el nombre se deduce que se trata de un modelo de embeddings (familia "embedding"), y el sufijo "gemma" apunta a un posible origen en la familia Gemma de Google, pero no hay ninguna confirmacion documental en la informacion disponible. El repositorio incluye unicamente los tags `model_hub_mixin`, `pytorch_model_hub_mixin` y `region:us`, que indican que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`, sin ningun otro detalle tecnico.
+`thomasavare/embeddinggemma-2-211` es un repositorio publicado en Hugging Face por el usuario thomasavare. Por el nombre se deduce que se trata de un modelo de embeddings (familia "embedding"), y el sufijo "gemma" apunta a un posible origen en la familia Gemma de Google, pero no hay ninguna confirmacion documental en la informacion disponible. El repositorio incluye unicamente los tags `model_hub_mixin`, `pytorch_model_hub_mixin` y `region:us`, que indican que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`, sin ningun otro detalle tecnico.
 
 La model card es una plantilla automatica generada por esa integracion: los campos de codigo, paper y documentacion aparecen literalmente como "[More Information Needed]". No hay descripcion de arquitectura, tamano, datos de entrenamiento, idiomas, licencia ni resultados de evaluacion. El tamanamo del repositorio es de 0.0 GB, lo que sugiere que no contiene ficheros de pesos visibles en el momento de la consulta.
 
@@ -102,7 +102,7 @@ No disponible. El nombre del repositorio remite nominalmente a la familia Embedd
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thomasavare/embeddinggemma-2-211
+- Hugging Face: https://huggingface.co/thomasavare/embeddinggemma-2-211
 - Documentacion de la integracion usada: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Repositorio de codigo: no disponible

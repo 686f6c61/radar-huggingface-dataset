@@ -90,6 +90,6 @@ La diferencia clave es que el modelo de FDS-Iterations está especializado en re
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/FDS-Iterations/third-pass-feed-ranker-v10)
+- [Modelo en Hugging Face](https://huggingface.co/FDS-Iterations/third-pass-feed-ranker-v10)
 - [Modelo base: microsoft/MiniLM-L12-H384-uncased](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)
 - [Version estable del mismo autor: FDS-Iterations/third-pass-feed-ranker](https://huggingface.co/FDS-Iterations/third-pass-feed-ranker)

@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado, documenta una de las pocas co
 | Longitud de contexto | 262.144 configurados; el autor solo ha probado 512 tokens; contexto largo no probado |
 | Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_M, Q3_K_S, Q4_K_M, UD-Q4_K_XL, UD-IQ4_XS, MXFP4_MOE |
 | Idiomas soportados | no disponible |
-| Licencia | `qwen-community-license-1.0`, etiquetada en HuggingFace como `other` |
+| Licencia | `qwen-community-license-1.0`, etiquetada en Hugging Face como `other` |
 | Formato de pesos | GGUF (librería llama.cpp); checkpoint de origen en BF16 |
 
 Detalle de los ficheros publicados:
@@ -47,7 +47,7 @@ En cuanto a la conversión a GGUF, el autor indica que no se usó matriz de impo
 
 ## Capacidades
 
-- Generación de texto conversacional en formato de chat, con plantilla Jinja (`--jinja` en llama.cpp) y etiqueta `conversational` en HuggingFace.
+- Generación de texto conversacional en formato de chat, con plantilla Jinja (`--jinja` en llama.cpp) y etiqueta `conversational` en Hugging Face.
 - Generación de código: la prueba de humo del autor consistió en escribir una función Python 3 llamada `add` que suma dos enteros y devuelve el resultado, y fue superada por los ficheros `Q4_K_M`, `UD-Q4_K_XL` y `UD-IQ4_XS`.
 - Decodificación especulativa mediante la cabecera MTP nativa, disponible únicamente en `CYBER-FROST-3.8-Q2_K_S.gguf` con `--spec-type draft-mtp` y un máximo de 2 tokens de borrador.
 - Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible`) y con el ecosistema llama.cpp.
@@ -123,7 +123,7 @@ No disponible. La información proporcionada no incluye especificaciones ni resu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| CYBER-FROST-3.8-GGUF (este) | ~177B totales, ~6B activos | 262.144 configurados (512 probados) | qwen-community-license-1.0 | GGUF en HuggingFace | Solo pruebas de humo |
+| CYBER-FROST-3.8-GGUF (este) | ~177B totales, ~6B activos | 262.144 configurados (512 probados) | qwen-community-license-1.0 | GGUF en Hugging Face | Solo pruebas de humo |
 | Blackfrost-AI/CYBER-FROST-3.8-BF16 | no disponible | no disponible | no disponible | checkpoint de origen | no disponible |
 | Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | modelo upstream | no disponible |
 
@@ -133,7 +133,7 @@ No disponible. La información proporcionada no incluye especificaciones ni resu
 - Riesgo de alucinación: inherente a cualquier modelo de lenguaje; no hay evaluaciones publicadas de fidelidad factual para este modelo ni para su checkpoint de origen.
 - Sesgos: no disponible. No se documenta ninguna evaluación de sesgos, toxicidad o alineación.
 - Idiomas: no disponible. No se declara ninguna lista de idiomas soportados ni calidad por idioma.
-- Licencia: `qwen-community-license-1.0`, marcada en HuggingFace como `other`. No se detallan en la información disponible las condiciones exactas de uso comercial, umbrales de usuarios o restricciones de redistribución; es imprescindible leer el fichero `LICENSE` del repositorio antes de cualquier uso en producción.
+- Licencia: `qwen-community-license-1.0`, marcada en Hugging Face como `other`. No se detallan en la información disponible las condiciones exactas de uso comercial, umbrales de usuarios o restricciones de redistribución; es imprescindible leer el fichero `LICENSE` del repositorio antes de cualquier uso en producción.
 - Fallo de carga de los ficheros auxiliares: `mtp-CYBER-FROST-3.8-Q8_0.gguf` no carga junto a un tronco porque falta `output_hc_norm.weight`; llama.cpp se detiene. Los pesos del mezclador están almacenados como `blk.48.nextn.hc_head_norm.weight`. El autor indica expresamente que no se pase ninguno de los sidecar `mtp-` con `-md`.
 - Dependencia de una build concreta de llama.cpp: la decodificación especulativa del fichero `Q2_K_S` requiere el grafo MTP de `qwen4exp` en la build local; el autor trabajó con `b1-4da6337`. Otras builds pueden no funcionar.
 - Kernel SSM conv sensible: `ssm_conv1d.weight` está en F16 y el shader Vulkan de convolución SSM lee float; una build que alimente el kernel F16 directamente al shader produce texto incoherente. Es necesario que el kernel se caste a F32 antes de la convolución.
@@ -145,7 +145,7 @@ No disponible. La información proporcionada no incluye especificaciones ni resu
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/freakyskittle/CYBER-FROST-3.8-GGUF
+- Hugging Face del modelo: https://huggingface.co/freakyskittle/CYBER-FROST-3.8-GGUF
 - Checkpoint de origen (BF16): https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Modelo upstream citado en la model card: `Qwen/Qwen3.8-Flash-Next` (referenciado como origen de la arquitectura `qwen4exp`; no se ha proporcionado URL directa)
 - Busqueda web realizada: los resultados obtenidos (local-ai-zone.github.io, imtaqin.id, empero.org, torwiki.org) no aportan informacion especifica ni verificable sobre este modelo, por lo que no se incluyen como fuentes tecnicas.

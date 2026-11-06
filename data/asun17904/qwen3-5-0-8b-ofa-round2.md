@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round2
+- Hugging Face: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Receta de entrenamiento: `recipe.json` (en el repositorio)
 - Procedencia: `provenance.json` (en el repositorio)

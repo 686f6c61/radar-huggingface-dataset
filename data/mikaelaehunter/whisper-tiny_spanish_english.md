@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny spanish_english es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) openai/whisper-tiny, publicado por el usuario mikaelaehunter en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante "tiny", con 37,76 millones de parametros, y ha sido entrenado sobre un dataset propio denominado spanish_english, presumiblemente orientado a transcripcion bilingue espanol-ingles, aunque la model card solo declara el idioma ingles.
+Whisper tiny spanish_english es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) openai/whisper-tiny, publicado por el usuario mikaelaehunter en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante "tiny", con 37,76 millones de parametros, y ha sido entrenado sobre un dataset propio denominado spanish_english, presumiblemente orientado a transcripcion bilingue espanol-ingles, aunque la model card solo declara el idioma ingles.
 
 El modelo resuelve la tarea de transcripcion de audio a texto (automatic-speech-recognition) en un formato extremadamente ligero, lo que lo hace adecuado para entornos con recursos limitados, inferencia en CPU o despliegues en dispositivos de borde. Su relevancia radica en que permite experimentar con ASR bilingue sin requerir GPUs de gran capacidad, a costa de una precision notablemente inferior a la de los modelos Whisper de mayor tamano.
 
-La informacion disponible es escasa: la model card fue generada automaticamente por el Trainer de HuggingFace y contiene numerosos apartados marcados como "More information needed". Los unicos datos verificables son los hiperparametros de entrenamiento, las metricas declaradas (WER de 12,41 % sobre el split de test del dataset spanish_english, no verificado) y las versiones de framework utilizadas.
+La informacion disponible es escasa: la model card fue generada automaticamente por el Trainer de Hugging Face y contiene numerosos apartados marcados como "More information needed". Los unicos datos verificables son los hiperparametros de entrenamiento, las metricas declaradas (WER de 12,41 % sobre el split de test del dataset spanish_english, no verificado) y las versiones de framework utilizadas.
 
 ## Especificaciones tecnicas
 
@@ -25,13 +25,13 @@ La informacion disponible es escasa: la model card fue generada automaticamente 
 
 El modelo hereda la arquitectura de openai/whisper-tiny: un transformer encoder-decoder con atencion estandar, disenado para procesar espectrogramas mel de audio de 30 segundos y generar transcripciones token a token. Whisper tiny es la variante mas pequena de la familia Whisper, con aproximadamente 39 millones de parametros en su version original; el ajuste fino conserva 37.760.640 parametros segun los pesos safetensors publicados.
 
-El entrenamiento se realizo con el Trainer de HuggingFace sobre el dataset spanish_english (split de test para evaluacion), con los siguientes hiperparametros: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW (variante torch fused, betas 0,9/0,999, epsilon 1e-08), scheduler lineal con 500 pasos de warmup y 2000 pasos totales de entrenamiento. No se especifica el numero de tokens de audio, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (no aplicables habitualmente en ASR). Las versiones de framework fueron Transformers 5.22.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
+El entrenamiento se realizo con el Trainer de Hugging Face sobre el dataset spanish_english (split de test para evaluacion), con los siguientes hiperparametros: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW (variante torch fused, betas 0,9/0,999, epsilon 1e-08), scheduler lineal con 500 pasos de warmup y 2000 pasos totales de entrenamiento. No se especifica el numero de tokens de audio, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (no aplicables habitualmente en ASR). Las versiones de framework fueron Transformers 5.22.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
 
 ## Capacidades
 
 - Reconocimiento automatico del habla (ASR): transcripcion de audio a texto en ingles, con presumible soporte de espanol segun el nombre del modelo y el dataset de entrenamiento.
 - Generacion de texto a partir de audio: el decoder de Whisper genera transcripciones autoregresivamente.
-- Procesamiento de audio de hasta 30 segundos por ventana, con la posibilidad de encadenar ventanas para audios mas largos mediante pipelines de HuggingFace.
+- Procesamiento de audio de hasta 30 segundos por ventana, con la posibilidad de encadenar ventanas para audios mas largos mediante pipelines de Hugging Face.
 - No dispone de tool calling ni function calling.
 - No dispone de capacidades de agente ni razonamiento multi-paso.
 - Capacidades multilingues limitadas: la model card solo declara ingles; el soporte de espanol no esta verificado oficialmente.
@@ -97,7 +97,7 @@ La comparacion con los modelos originales de OpenAI es aproximada: este ajuste f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mikaelaehunter/whisper-tiny_spanish_english
+- Hugging Face: https://huggingface.co/mikaelaehunter/whisper-tiny_spanish_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): no disponible en la informacion proporcionada
 - Repositorio de transformers: no disponible en la informacion proporcionada

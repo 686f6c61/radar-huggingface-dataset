@@ -88,7 +88,7 @@ Latencias declaradas en una RTX PRO 6000:
 
 | Modelo | Enfoque | Formato / precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smile-forge/sam3.1-onnx | Segmentación interactiva, por frase y por ejemplos | ONNX (opset 23), fp16 y fp32 | sam-license (other) | HuggingFace, 1,8 GB |
+| smile-forge/sam3.1-onnx | Segmentación interactiva, por frase y por ejemplos | ONNX (opset 23), fp16 y fp32 | sam-license (other) | Hugging Face, 1,8 GB |
 | Meta SAM 3.1 (original) | Segmentación interactiva, por frase y por ejemplos | PyTorch, bf16 | sam-license | `facebook/sam3.1`, código en GitHub |
 | Meta SAM 2 | Segmentación de imágenes y vídeo | PyTorch | Apache 2.0 (código y pesos) | `facebook/sam2` |
 | Meta SAM (SAM 1) | Segmentación interactiva por clics y cajas | PyTorch | Apache 2.0 | `facebookresearch/segment-anything` |
@@ -111,7 +111,7 @@ No se dispone de recuentos de parámetros ni de resultados de benchmarks compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smile-forge/sam3.1-onnx
+- Modelo en Hugging Face: https://huggingface.co/smile-forge/sam3.1-onnx
 - Proyecto Nexaflow: https://github.com/smile-forge/nexaflow
 - Código oficial de SAM 3.1 (Meta): https://github.com/facebookresearch/sam3
 - Pesos oficiales de SAM 3.1: https://huggingface.co/facebook/sam3.1

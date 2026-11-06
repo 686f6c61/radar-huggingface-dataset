@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Tarea | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chaenn/smolvla_policy_so101_cube_multitask_simreal_0827 | 450M | Pick-and-place SO-100 | so101_cube_place_new_simreal_0827 | Apache 2.0 | HuggingFace |
-| Chaenn/smolvla_policy_so101_cube_multitask_real_0820 | 450M (estimado) | Pick-and-place SO-100 | so101_cube_place_multitask_real_0820 | Apache 2.0 | HuggingFace |
-| Chaenn/smolvla_policy_so101_cube_multitask_realsim_0824 | 450M (estimado) | Pick-and-place SO-100 | so101_cube_place_multitask_realsim_0824 | Apache 2.0 | HuggingFace |
+| Chaenn/smolvla_policy_so101_cube_multitask_simreal_0827 | 450M | Pick-and-place SO-100 | so101_cube_place_new_simreal_0827 | Apache 2.0 | Hugging Face |
+| Chaenn/smolvla_policy_so101_cube_multitask_real_0820 | 450M (estimado) | Pick-and-place SO-100 | so101_cube_place_multitask_real_0820 | Apache 2.0 | Hugging Face |
+| Chaenn/smolvla_policy_so101_cube_multitask_realsim_0824 | 450M (estimado) | Pick-and-place SO-100 | so101_cube_place_multitask_realsim_0824 | Apache 2.0 | Hugging Face |
 | ACT (Action Chunking with Transformers) | ~10-100M | Varias tareas robóticas | Depende del dataset | MIT | GitHub |
 
 Los tres checkpoints de Chaenn son variantes de SmolVLA fine-tuneadas para la misma tarea pero con diferentes combinaciones de datos (solo real, solo simulado, o sim+real). ACT es una arquitectura alternativa más ligera, pero no se dispone de comparativas cuantitativas en la información proporcionada.
@@ -73,7 +73,7 @@ Los tres checkpoints de Chaenn son variantes de SmolVLA fine-tuneadas para la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_simreal_0827
+- Modelo en Hugging Face: https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_simreal_0827
 - Paper SmolVLA (arXiv): https://huggingface.co/papers/2506.01844
 - Documentación de LeRobot sobre SmolVLA: https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx
 - Blog de ggando.com sobre fine-tuning de SmolVLA para SO-101: https://ggando.com/blog/smolvla-so101/

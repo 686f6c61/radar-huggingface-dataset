@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Expurnomo/flamingo-multitask es un repositorio de HuggingFace que contiene una implementación propia y compacta de la arquitectura Flamingo en PyTorch, orientada a experimentos multitarea y a pruebas de humo. Lo publica el usuario Expurnomo bajo licencia Apache 2.0. El repositorio no es un modelo preentrenado listo para producción: el autor lo describe explícitamente como una configuración "tiny" pensada para revisión de código, smoke tests y experimentos controlados de pequeno alcance.
+Expurnomo/flamingo-multitask es un repositorio de Hugging Face que contiene una implementación propia y compacta de la arquitectura Flamingo en PyTorch, orientada a experimentos multitarea y a pruebas de humo. Lo publica el usuario Expurnomo bajo licencia Apache 2.0. El repositorio no es un modelo preentrenado listo para producción: el autor lo describe explícitamente como una configuración "tiny" pensada para revisión de código, smoke tests y experimentos controlados de pequeno alcance.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado, y el propio autor indica que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros en safetensors es de 49.600, lo que confirma que se trata de una implementación minúscula, no de una reproducción a escala del Flamingo original.
 
@@ -83,5 +83,5 @@ No disponible. No se han publicado especificaciones comparables de este reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Expurnomo/flamingo-multitask
+- Hugging Face: https://huggingface.co/Expurnomo/flamingo-multitask
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados devueltos por la busqueda no guardan relacion con el modelo.

@@ -70,7 +70,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | TerminalBench 2.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B Preview | 64,78B (denso) | Hasta 1M | 80,52 | Apache 2.0 | HuggingFace (BF16, NVFP4, base) |
+| Ripple-65B Preview | 64,78B (denso) | Hasta 1M | 80,52 | Apache 2.0 | Hugging Face (BF16, NVFP4, base) |
 | Reflection Beam 501B | 501B | No disponible | 80,1 | No disponible | Pesos abiertos (EE. UU.) |
 | Muse Spark Open 816B | 816B | No disponible | 76,4 | No disponible | Pesos abiertos (EE. UU.) |
 | Inkling 975B | 975B | No disponible | 63,8 | No disponible | Pesos abiertos (EE. UU.) |
@@ -91,10 +91,10 @@ Ripple-65B destaca por lograr un rendimiento comparable o superior a modelos con
 
 ## Enlaces
 
-- HuggingFace (este repo, BF16 instruct): https://huggingface.co/TechnoBaptist/Ripple-65B-Preview
-- HuggingFace (repo del autor, BF16): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- HuggingFace (NVFP4): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
-- HuggingFace (modelo base): https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
-- HuggingFace (DFlash2): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
+- Hugging Face (este repo, BF16 instruct): https://huggingface.co/TechnoBaptist/Ripple-65B-Preview
+- Hugging Face (repo del autor, BF16): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Hugging Face (NVFP4): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
+- Hugging Face (modelo base): https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
+- Hugging Face (DFlash2): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Blog de lanzamiento: https://www.ricursive.com/ripple
 - Licencia: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/main/LICENSE

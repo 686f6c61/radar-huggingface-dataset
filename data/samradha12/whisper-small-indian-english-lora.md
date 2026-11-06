@@ -79,6 +79,6 @@ No se dispone de datos de WER para whisper-medium en el mismo conjunto de prueba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Samradha12/whisper-small-indian-english-lora
+- Repositorio Hugging Face: https://huggingface.co/Samradha12/whisper-small-indian-english-lora
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset Mozilla Common Voice: https://commonvoice.mozilla.org/

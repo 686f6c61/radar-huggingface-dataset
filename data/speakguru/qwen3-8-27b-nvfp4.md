@@ -72,7 +72,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/speakguru/Qwen3.8-27B-NVFP4
+- Modelo cuantizado en Hugging Face: https://huggingface.co/speakguru/Qwen3.8-27B-NVFP4
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth/

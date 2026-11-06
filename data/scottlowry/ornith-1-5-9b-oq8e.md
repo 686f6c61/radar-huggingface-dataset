@@ -72,7 +72,7 @@ La comparativa se basa en modelos de la misma categoria (generacion de codigo de
 
 ## Limitaciones y advertencias
 
-- La informacion sobre licencia no esta disponible en el repositorio de HuggingFace. Aunque el sitio oficial de Ornith AI menciona licencia MIT, esta informacion no se refleja en la model card y debe verificarse antes de un uso comercial.
+- La informacion sobre licencia no esta disponible en el repositorio de Hugging Face. Aunque el sitio oficial de Ornith AI menciona licencia MIT, esta informacion no se refleja en la model card y debe verificarse antes de un uso comercial.
 - No se dispone de informacion sobre la longitud de contexto soportada, lo que limita la planificacion de aplicaciones que requieran ventanas largas.
 - Los idiomas soportados no estan documentados en el repositorio; el enfoque en codificacion sugiere un uso principalmente en ingles, pero no esta confirmado.
 - Al ser una cuantizacion de 8 bits, puede haber una ligera degradacion de calidad frente al modelo original, especialmente en tareas de razonamiento complejo o generacion de codigo muy especifico.

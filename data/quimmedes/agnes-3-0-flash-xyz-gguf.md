@@ -65,7 +65,7 @@ La model card indica además que todas las variantes listadas fueron servidas y 
 ## Requisitos de hardware
 
 - Tamaño en disco de las variantes publicadas: Q3-v4 12,12 GiB; Q3 (extra) 18,00 GiB; Q4-v4 16,57 GiB; Q4.5 (extra) 17,37 GiB; Q4_K_M-control 19,07 GiB; Q5 (extra) 19,52 GiB; Q8 (extra) 31,21 GiB.
-- El tamaño del repositorio completo es de 29,5 GB según HuggingFace; la model card declara un total acumulado de 112 936 423 072,0 "GiB", cifra incoherente con las unidades indicadas.
+- El tamaño del repositorio completo es de 29,5 GB según Hugging Face; la model card declara un total acumulado de 112 936 423 072,0 "GiB", cifra incoherente con las unidades indicadas.
 - GPU de 24 GB: es el escenario de referencia del autor. Con `-ngl 20` el modelo entra en memoria; una descarga completa de capas a GPU deja espacio únicamente para un contexto pequeño.
 - Consumer GPU: una tarjeta de 24 GB (por ejemplo, RTX 3090 o RTX 4090) es viable con descarga parcial. No hay datos publicados para tarjetas de 8, 12 o 16 GB.
 - No se documentan cifras de latencia ni de throughput (tokens por segundo) para ninguna de las variantes.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/quimmedes/Agnes-3.0-Flash-XYZ-GGUF
+- Repositorio Hugging Face: https://huggingface.co/quimmedes/Agnes-3.0-Flash-XYZ-GGUF
 - Modelo base: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Fork de llama.cpp requerido: https://github.com/quimmedes/cafe-llama.cpp
 - Pull request de imatrix en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/4930

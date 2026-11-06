@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Dominio | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atom-JEPA (molecules) | 39,0M | Moléculas 3D | JEPA auto-supervisado, EquiformerV3 | CC-BY-4.0 | HuggingFace + PyPI |
-| Atom-JEPA (crystals) | 39,0M | Cristales inorgánicos | JEPA auto-supervisado, EquiformerV3 | CC-BY-4.0 | HuggingFace + PyPI |
+| Atom-JEPA (molecules) | 39,0M | Moléculas 3D | JEPA auto-supervisado, EquiformerV3 | CC-BY-4.0 | Hugging Face + PyPI |
+| Atom-JEPA (crystals) | 39,0M | Cristales inorgánicos | JEPA auto-supervisado, EquiformerV3 | CC-BY-4.0 | Hugging Face + PyPI |
 | Uni-Mol | no disponible en la información | Moléculas 3D | Transformer con atención de pares | no disponible | no disponible |
 | MACE / NequIP | no disponible en la información | Moléculas y materiales | Redes equivariantes (potenciales) | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/atom-jepa/atom-jepa
+- Hugging Face: https://huggingface.co/atom-jepa/atom-jepa
 - Paper: https://arxiv.org/abs/2610.08400
 - Código: https://github.com/khelverskovp/atom-jepa
 - PyPI: https://pypi.org/project/atom-jepa/

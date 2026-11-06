@@ -88,10 +88,10 @@ Lectura de los datos: los valores muy bajos en `forget_Q_A_PARA_Prob` (0,0000), 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_GradDiff | 3,21 mil millones | 128.000 tokens (heredado) | Denso, desaprendido con GradDiff sobre `forget10` | llama3.2 | HuggingFace, pesos safetensors |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 mil millones | 128.000 tokens | Denso, ajustado sobre TOFU completo (sin desaprender) | llama3.2 | HuggingFace, es el modelo base de esta ficha |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Denso, instruct generalista | llama3.2 | HuggingFace, con amplia adopcion |
-| Otras variantes de open-unlearning sobre el mismo base (NPO, SimNPO, RMU, etc.) | 3,21 mil millones | 128.000 tokens | Denso, desaprendido con otro algoritmo | llama3.2 | HuggingFace, dentro del ecosistema open-unlearning |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_GradDiff | 3,21 mil millones | 128.000 tokens (heredado) | Denso, desaprendido con GradDiff sobre `forget10` | llama3.2 | Hugging Face, pesos safetensors |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 mil millones | 128.000 tokens | Denso, ajustado sobre TOFU completo (sin desaprender) | llama3.2 | Hugging Face, es el modelo base de esta ficha |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Denso, instruct generalista | llama3.2 | Hugging Face, con amplia adopcion |
+| Otras variantes de open-unlearning sobre el mismo base (NPO, SimNPO, RMU, etc.) | 3,21 mil millones | 128.000 tokens | Denso, desaprendido con otro algoritmo | llama3.2 | Hugging Face, dentro del ecosistema open-unlearning |
 
 La diferencia entre esta ficha y el modelo base no esta en parametros, contexto ni licencia, sino exclusivamente en los pesos y en el objetivo de olvido. Frente a Llama-3.2-3B-Instruct, pierde utilidad general a cambio de reducir la reproduccion del conjunto olvidado, con un `privleak` de 64,2205 que indica que ese olvido es incompleto. No se dispone de cifras publicadas para comparar el rendimiento relativo frente a NPO, SimNPO o RMU en la informacion proporcionada.
 
@@ -110,12 +110,12 @@ La diferencia entre esta ficha y el modelo base no esta en parametros, contexto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_GradDiff
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_GradDiff
 - Modelo base (TOFU completo): https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
-- Perfil del autor en HuggingFace: https://huggingface.co/JoaoBoer
+- Perfil del autor en Hugging Face: https://huggingface.co/JoaoBoer
 - Modelo original Llama-3.2-3B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Articulo TOFU (referencia del benchmark): https://arxiv.org/abs/2401.06121
 

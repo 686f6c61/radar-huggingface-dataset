@@ -63,8 +63,8 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tylerjonesmur/visual-question-answering
-- Documentacion de la tarea VQA en HuggingFace: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
+- Repositorio en Hugging Face: https://huggingface.co/tylerjonesmur/visual-question-answering
+- Documentacion de la tarea VQA en Hugging Face: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
 - Dataset VQA oficial: https://visualqa.org/
 - Repositorio de ejemplo de VQA en GitHub: https://github.com/UsefGamal/Visual-Question-Answering-VQA
 - Survey sobre VQA en ACM: https://dl.acm.org/doi/full/10.1145/3728635

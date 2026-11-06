@@ -64,9 +64,9 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SwallowJustice-Q-V1-GGUF | 8,19 B | no disponible | Q4_K_M | no disponible | HuggingFace, 0 descargas |
-| Qwen3-8B (GGUF oficial) | 8,19 B | 32 K (extensible a 128 K) | varias (Q2 a Q8, FP16) | Apache 2.0 | HuggingFace, amplia adopcion |
-| Llama-3.1-8B-Instruct (GGUF) | 8,03 B | 128 K | varias | Llama 3.1 (uso comercial permitido) | HuggingFace, amplia adopcion |
+| SwallowJustice-Q-V1-GGUF | 8,19 B | no disponible | Q4_K_M | no disponible | Hugging Face, 0 descargas |
+| Qwen3-8B (GGUF oficial) | 8,19 B | 32 K (extensible a 128 K) | varias (Q2 a Q8, FP16) | Apache 2.0 | Hugging Face, amplia adopcion |
+| Llama-3.1-8B-Instruct (GGUF) | 8,03 B | 128 K | varias | Llama 3.1 (uso comercial permitido) | Hugging Face, amplia adopcion |
 
 La comparativa muestra que SwallowJustice-Q-V1 carece de informacion publica sobre contexto y licencia, lo que limita su uso en produccion frente a alternativas bien documentadas como Qwen3-8B o Llama-3.1-8B-Instruct.
 
@@ -83,7 +83,7 @@ La comparativa muestra que SwallowJustice-Q-V1 carece de informacion publica sob
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yosan443/SwallowJustice-Q-V1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Yosan443/SwallowJustice-Q-V1-GGUF
 - Unsloth (framework de entrenamiento usado): https://github.com/unslothai/unsloth
-- Busqueda de modelos GGUF en HuggingFace: https://huggingface.co/models?library=gguf
+- Busqueda de modelos GGUF en Hugging Face: https://huggingface.co/models?library=gguf
 - Directorio GGUF-Models: https://huggingface.co/GGUF-Models

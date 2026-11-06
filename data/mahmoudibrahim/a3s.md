@@ -2,9 +2,9 @@
 
 ## Resumen
 
-A3S es un modelo de síntesis de voz (text-to-speech) publicado en HuggingFace por el usuario MahmoudIbrahim, obtenido por ajuste fino (finetune) del modelo base Qwen/Qwen3-TTS-12Hz-0.6B-Base. Se distribuye con licencia Apache 2.0 y está etiquetado para clonación de voz y TTS multilingüe, con soporte declarado de once idiomas: árabe, chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano. La etiqueta "arabic-tts" sugiere que el ajuste fino está orientado especialmente al árabe.
+A3S es un modelo de síntesis de voz (text-to-speech) publicado en Hugging Face por el usuario MahmoudIbrahim, obtenido por ajuste fino (finetune) del modelo base Qwen/Qwen3-TTS-12Hz-0.6B-Base. Se distribuye con licencia Apache 2.0 y está etiquetado para clonación de voz y TTS multilingüe, con soporte declarado de once idiomas: árabe, chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano. La etiqueta "arabic-tts" sugiere que el ajuste fino está orientado especialmente al árabe.
 
-El repositorio ocupa 2,5 GB y los pesos en safetensors suman 905.788.672 parámetros (aproximadamente 0,91 mil millones), una cifra superior a los 0,6 mil millones que indica el nombre del modelo base; esa diferencia es habitual cuando el repositorio incluye también el decodificador de códec de audio además del transformer generador. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El repositorio ocupa 2,5 GB y los pesos en safetensors suman 905.788.672 parámetros (aproximadamente 0,91 mil millones), una cifra superior a los 0,6 mil millones que indica el nombre del modelo base; esa diferencia es habitual cuando el repositorio incluye también el decodificador de códec de audio además del transformer generador. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de este modelo es doble. Por un lado, hereda el esquema de Qwen3-TTS de generar tokens de audio discretos a una tasa de 12 Hz, lo que reduce la longitud de secuencia respecto a códecs de 40-50 Hz y abarata la inferencia. Por otro, su tamaño inferior a 1.000 millones de parámetros permite desplegarlo en GPUs de consumo. En contrapartida, no se han publicado resultados de benchmarks, el modelo tiene un número muy bajo de descargas (118) y cero "likes", y la búsqueda web realizada no ha devuelto ninguna documentación técnica adicional.
 
@@ -24,7 +24,7 @@ La relevancia de este modelo es doble. Por un lado, hereda el esquema de Qwen3-T
 | Modelo base | Qwen/Qwen3-TTS-12Hz-0.6B-Base (finetune) |
 | Tasa de tokens de audio | 12 Hz (según el identificador del modelo base) |
 | Tamano del repositorio | 2,5 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 118 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que añade fricción a la integración automatizada.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que añade fricción a la integración automatizada.
 - Ausencia total de benchmarks: no hay métricas de calidad de voz (MOS), inteligibilidad (WER) ni similitud de hablante (SIM-o), por lo que no es posible estimar su calidad objetiva frente a alternativas.
 - Adopción marginal: 118 descargas y 0 "likes" en la fecha de los metadatos, sin evidencia de validación por parte de la comunidad.
 - Documentación inexistente en la información disponible: no se detallan datos de entrenamiento, procedimiento de ajuste fino, hiperparámetros ni el tratamiento de los idiomas.
@@ -94,6 +94,6 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MahmoudIbrahim/A3S
+- Modelo en Hugging Face: https://huggingface.co/MahmoudIbrahim/A3S
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Búsqueda web realizada: sin resultados relevantes. Todas las coincidencias obtenidas corresponden a páginas no relacionadas con el modelo (Caf.fr, aclaraciones sobre los incoterms CIF y CAF, recargos de flete BAF/YAS/CAF y un foro sobre problemas de conexión), por lo que no se han podido recopilar papers, blogs, repositorios ni demos adicionales.

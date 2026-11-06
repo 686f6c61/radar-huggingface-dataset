@@ -30,7 +30,7 @@ Es relevante ahora como artefacto de investigacion reproducible en la frontera d
 | Activacion | GELU |
 | Dropout | 0,10 |
 | Weight tying | Si |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -102,12 +102,12 @@ No disponible comparacion con modelos de referencia de la misma categoria fuera 
 - Riesgo alto de alucinacion: con 1,38 M de parametros y 2 capas, la coherencia a medio plazo y la fidelidad factual son muy limitadas; no debe usarse para producir contenido que se presente como veridico.
 - Sesgos: el corpus de Wikipedia en turco arrastra los sesgos de cobertura, notabilidad y estilo enciclopedico de esa fuente; no se documenta ningun analisis de sesgo.
 - Restricciones de licencia: licencia MIT, permisiva, permite uso comercial y modificacion con atribucion y conservacion del aviso de copyright. No obstante, el autor describe explicitamente el modelo como "artefacto de investigacion experimental, no un producto".
-- Caveats de produccion: no hay pesos cuantizados ni integracion con servidores de inferencia populares; el repositorio figura con 0 descargas y 0 likes, lo que implica ausencia de validacion externa. La fecha de creacion registrada en HuggingFace es 29 de septiembre de 2026 y la de actualizacion el mismo dia, con un intervalo de unos 16 minutos.
+- Caveats de produccion: no hay pesos cuantizados ni integracion con servidores de inferencia populares; el repositorio figura con 0 descargas y 0 likes, lo que implica ausencia de validacion externa. La fecha de creacion registrada en Hugging Face es 29 de septiembre de 2026 y la de actualizacion el mismo dia, con un intervalo de unos 16 minutos.
 - Ausencia de datos: no se publican numero total de tokens de entrenamiento, composicion detallada del dataset, curvas de entrenamiento ni resultados fuera de dominio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stunmuffin/TinyTurk-Wiki-A-Tiny
+- Modelo en Hugging Face: https://huggingface.co/stunmuffin/TinyTurk-Wiki-A-Tiny
 - Modelo hermano TinyTurk-Wiki-B-Sweet: https://huggingface.co/stunmuffin/TinyTurk-Wiki-B-Sweet
 - Modelo hermano TinyTurk-Wiki-C-Max: https://huggingface.co/stunmuffin/TinyTurk-Wiki-C-Max
 - Dataset de entrenamiento: https://huggingface.co/datasets/barandinho/wikipedia_tr

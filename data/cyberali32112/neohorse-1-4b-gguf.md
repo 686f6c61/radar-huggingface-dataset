@@ -84,8 +84,8 @@ La busqueda web realizada no aporto datos tecnicos de modelos comparables, por l
 
 | Modelo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeoHorse-1-4B (este modelo) | 4,2B | no disponible | Media macro 64,87 en 10 benchmarks | Apache-2.0 | GGUF en HuggingFace; base en safetensors |
-| Qwen3.5-4B (base) | ~4B | no disponible | Media macro 58,94 en los mismos 10 benchmarks | no disponible | HuggingFace (Qwen/Qwen3.5-4B) |
+| NeoHorse-1-4B (este modelo) | 4,2B | no disponible | Media macro 64,87 en 10 benchmarks | Apache-2.0 | GGUF en Hugging Face; base en safetensors |
+| Qwen3.5-4B (base) | ~4B | no disponible | Media macro 58,94 en los mismos 10 benchmarks | no disponible | Hugging Face (Qwen/Qwen3.5-4B) |
 | Otras alternativas de ~3-4B para agentes y codigo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar con alternativas de la misma categoria en parametros, contexto o rendimiento.
@@ -107,11 +107,11 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/cyberali32112/NeoHorse-1-4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
+- Modelo base en Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
 - Modelo Qwen3.5-4B (origen del post-entrenamiento): https://huggingface.co/Qwen/Qwen3.5-4B
 - Informe tecnico: https://arxiv.org/abs/2609.08183
 - Repositorio GitHub: https://github.com/TokenRhythm/NeoHorse
 - Sitio del desarrollador: https://tokenrhythm.ai/
-- Organizacion en HuggingFace: https://huggingface.co/TokenRhythm
+- Organizacion en Hugging Face: https://huggingface.co/TokenRhythm
 - Cuenta en X: https://x.com/opensquilla
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

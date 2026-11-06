@@ -4,7 +4,7 @@
 
 HyeonseokE/smolvla_close_box_ours_2000_10fps es una politica de robotica basada en SmolVLA, un modelo compacto de vision-lenguaje-accion (VLA) descrito en el paper arXiv:2506.01844. No se trata de un modelo de lenguaje conversacional, sino de una politica de imitacion que consume el estado del robot y flujos de imagen de varias camaras, y produce directamente comandos de accion de 6 dimensiones. El checkpoint es un fine-tuning de lerobot/smolvla_base realizado con LeRobot 0.6.0 sobre un unico conjunto de datos propio.
 
-El modelo tiene 450.046.176 parametros (denso, sin mezcla de expertos) y ocupa 0,9 GB en el repositorio de HuggingFace en formato safetensors. Su tarea es cerrada y especifica: "Close the box by placing the lid on the box body", ejecutada sobre un robot SO-101 follower con camaras de muneca y vista superior. Se entreno durante 22.050 pasos con batch de 64 y tasa de aprendizaje 1e-4.
+El modelo tiene 450.046.176 parametros (denso, sin mezcla de expertos) y ocupa 0,9 GB en el repositorio de Hugging Face en formato safetensors. Su tarea es cerrada y especifica: "Close the box by placing the lid on the box body", ejecutada sobre un robot SO-101 follower con camaras de muneca y vista superior. Se entreno durante 22.050 pasos con batch de 64 y tasa de aprendizaje 1e-4.
 
 Su relevancia practica es doble. Por un lado, sirve como ejemplo reproducible de un flujo completo de imitation learning de bajo coste: 100 episodios, 28.246 fotogramas a 10 FPS y una receta de entrenamiento publica. Por otro, demuestra que un VLA de menos de 500 millones de parametros puede ejecutarse en hardware de consumo, algo que lo aleja de los VLA de miles de millones de parametros habituales en investigacion.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyeonseokE/smolvla_close_box_ours_2000_10fps | 450.046.176 | VLA denso, fine-tuning de tarea unica | no disponible | Apache 2.0 | HuggingFace, via LeRobot |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada | VLA denso, modelo base | no disponible | no disponible en la informacion proporcionada | HuggingFace, via LeRobot |
+| HyeonseokE/smolvla_close_box_ours_2000_10fps | 450.046.176 | VLA denso, fine-tuning de tarea unica | no disponible | Apache 2.0 | Hugging Face, via LeRobot |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada | VLA denso, modelo base | no disponible | no disponible en la informacion proporcionada | Hugging Face, via LeRobot |
 | Otros VLA de gran tamano (familia OpenVLA, pi0, etc.) | no disponible en la informacion proporcionada | VLA denso | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 La comparacion cuantitativa no es posible con los datos disponibles: no hay benchmarks publicados para este checkpoint ni cifras de rendimiento del modelo base en la informacion proporcionada. La diferencia funcional mas relevante frente al modelo base es el alcance: smolvla_base es una base general de vision-lenguaje-accion, mientras que este checkpoint esta especializado en una unica tarea (cerrar una caja) sobre un unico tipo de robot (so101_follower).
@@ -97,7 +97,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_close_box_ours_2000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_close_box_ours_2000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/close_box_ours_10fps
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=HyeonseokE/close_box_ours_10fps

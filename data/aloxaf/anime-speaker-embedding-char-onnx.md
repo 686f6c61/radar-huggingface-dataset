@@ -77,9 +77,9 @@ El autor indica que la ruta ONNX resulto entre un 2 y un 4 por ciento mas lenta 
 
 | Modelo | Tipo | Salida | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aloxaf/anime-speaker-embedding-char-onnx (este) | Conversion ONNX de un ECAPA-TDNN con GroupNorm | Embedding L2 de 192 dim | japones | MIT | HuggingFace |
-| litagin/anime_speaker_embedding_ecapa_tdnn_groupnorm | Modelo original (pesos `.pth`) | Embedding de 192 dim | japones | segun model card original | HuggingFace |
-| Variante VA (voice actor) de anime_speaker_embedding | ECAPA-TDNN, variante menos discriminativa | Embedding de hablante | japones | segun repositorio original | HuggingFace / GitHub |
+| aloxaf/anime-speaker-embedding-char-onnx (este) | Conversion ONNX de un ECAPA-TDNN con GroupNorm | Embedding L2 de 192 dim | japones | MIT | Hugging Face |
+| litagin/anime_speaker_embedding_ecapa_tdnn_groupnorm | Modelo original (pesos `.pth`) | Embedding de 192 dim | japones | segun model card original | Hugging Face |
+| Variante VA (voice actor) de anime_speaker_embedding | ECAPA-TDNN, variante menos discriminativa | Embedding de hablante | japones | segun repositorio original | Hugging Face / GitHub |
 | Sistemas genericos tipo VoxCeleb | Embeddings de hablante de proposito general | Embedding de hablante | multilingue | varia | publica |
 
 La diferencia principal frente al modelo original es el formato: este repositorio entrega ONNX listo para inferencia sin dependencias de PyTorch ni SpeechBrain, mientras que el original distribuye pesos `.pth`. Frente a la variante VA, la variante char (la convertida aqui) separa mas agresivamente personajes distintos aunque compartan actor de voz. Frente a los sistemas genericos entrenados en VoxCeleb, la ventaja declarada es el dominio: audio de anime y novela visual. No se dispone de cifras comparativas de rendimiento entre estas alternativas en la informacion proporcionada.
@@ -92,14 +92,14 @@ La diferencia principal frente al modelo original es el formato: este repositori
 - La decodificacion de audio y el remuestreo quedan fuera del grafo: hay que entregar `float32` mono a 16 kHz, con el preprocesado que corresponda.
 - Exportado y validado con batch size 1; no hay evidencia de rendimiento con lotes mayores.
 - Solo se declara soporte para japones; el comportamiento en otros idiomas no esta documentado.
-- Posible discrepancia de licencia: la model card de esta conversion afirma que el modelo original esta marcado como MIT, pero el repositorio `litagin/anime_speaker_embedding` figura como GPL-3.0 en HuggingFace. Conviene verificar la licencia del peso de origen antes de un uso comercial.
+- Posible discrepancia de licencia: la model card de esta conversion afirma que el modelo original esta marcado como MIT, pero el repositorio `litagin/anime_speaker_embedding` figura como GPL-3.0 en Hugging Face. Conviene verificar la licencia del peso de origen antes de un uso comercial.
 - Riesgo de alucinacion: no aplica, ya que el modelo no genera texto; el riesgo equivalente es la asignacion erronea de un mismo hablante a dos personajes o viceversa.
 - La medicion de rendimiento procede de una unica CPU (Intel Core i9-13900HX) y de dos ejecuciones; no se ha caracterizado en otro hardware.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aloxaf/anime-speaker-embedding-char-onnx
-- Modelo original en HuggingFace: https://huggingface.co/litagin/anime_speaker_embedding_ecapa_tdnn_groupnorm
+- Modelo en Hugging Face: https://huggingface.co/aloxaf/anime-speaker-embedding-char-onnx
+- Modelo original en Hugging Face: https://huggingface.co/litagin/anime_speaker_embedding_ecapa_tdnn_groupnorm
 - Repositorio general de anime_speaker_embedding: https://huggingface.co/litagin/anime_speaker_embedding
 - Repositorio GitHub del autor original: https://github.com/litagin02/anime_speaker_embedding
 - Documentacion en DeepWiki: https://deepwiki.com/litagin02/anime_speaker_embedding

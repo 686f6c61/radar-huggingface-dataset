@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como `hcmusa29/aGuPsSZ44wPKgUfX` es una publicación alojada en HuggingFace por el usuario `hcmusa29`. No dispone de model card, pipeline declarado, licencia, listado de idiomas ni documentación técnica de ningún tipo: la única información verificable es el identificador, el autor, la etiqueta `region:us`, el tamaño del repositorio (239,5 GB), cero descargas, tres "likes" y unas fechas de creación y actualización de 13 y 15 de septiembre de 2026 respectivamente.
+El repositorio identificado como `hcmusa29/aGuPsSZ44wPKgUfX` es una publicación alojada en Hugging Face por el usuario `hcmusa29`. No dispone de model card, pipeline declarado, licencia, listado de idiomas ni documentación técnica de ningún tipo: la única información verificable es el identificador, el autor, la etiqueta `region:us`, el tamaño del repositorio (239,5 GB), cero descargas, tres "likes" y unas fechas de creación y actualización de 13 y 15 de septiembre de 2026 respectivamente.
 
 No se ha podido determinar qué contiene el repositorio, qué arquitectura emplea el modelo ni si se trata siquiera de un modelo funcional. El nombre del identificador es una cadena aleatoria de 16 caracteres sin significado descriptivo, un patrón habitual en artefactos generados automáticamente o subidos sin intención de publicarlos.
 
@@ -50,7 +50,7 @@ No es posible recomendar casos de uso concretos para este modelo porque se desco
 
 - Despliegue en clúster propio para generación de texto a gran escala: requeriría GPUs de 80 GB en número suficiente para alojar los pesos y validar previamente la licencia, que actualmente se desconoce.
 - Sustitución de un modelo de referencia en un pipeline existente: solo viable tras verificar compatibilidad de tokenizador, plantilla de prompt y formato de pesos.
-- Investigación sobre artefactos no documentados en HuggingFace: el repositorio sirve como ejemplo de publicación sin model card, licencia ni metadatos y puede analizarse desde el punto de vista de la gobernanza de modelos.
+- Investigación sobre artefactos no documentados en Hugging Face: el repositorio sirve como ejemplo de publicación sin model card, licencia ni metadatos y puede analizarse desde el punto de vista de la gobernanza de modelos.
 - Análisis forense del contenido del repositorio: descarga y estudio de la estructura de ficheros para determinar formato, número de shards y presencia de configuración.
 - Pruebas de cuantización a 4 bits sobre un modelo de gran tamaño: únicamente como ejercicio técnico si se confirma la arquitectura y existe licencia que lo permita.
 - Evaluación comparativa interna: serviría como punto de control frente a modelos documentados de la misma franja de tamaño, siempre que se obtengan resultados reproducibles.
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparado para el modelo objeto de esta fi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa29/aGuPsSZ44wPKgUfX
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa29/aGuPsSZ44wPKgUfX
 
 La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo. Todos los enlaces recuperados corresponden a Google Drive y son ruido irrelevante para esta ficha: https://www.google.com/drive/, https://en.wikipedia.org/wiki/Google_Drive, https://drive.google.com/, https://workspace.google.com/products/drive/, https://gizmodo.com/download/google-drive.
 

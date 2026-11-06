@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `toxoplasma-plaque-segmentation-cpsam-v8-e50` es un checkpoint de segmentación de imágenes desarrollado por el usuario de HuggingFace einarolafsson. Se trata de una exportación interina del modelo de placas de *Toxoplasma* V8 en la época 50 de entrenamiento, mientras el entrenamiento continúa hasta al menos 100 épocas. El modelo se publica como un checkpoint nativo de Cellpose-SAM, inicializado a partir del modelo preentrenado vanilla `cpsam_v2`, y está especializado en la segmentación de placas de *Toxoplasma* en imágenes de laboratorio.
+El modelo `toxoplasma-plaque-segmentation-cpsam-v8-e50` es un checkpoint de segmentación de imágenes desarrollado por el usuario de Hugging Face einarolafsson. Se trata de una exportación interina del modelo de placas de *Toxoplasma* V8 en la época 50 de entrenamiento, mientras el entrenamiento continúa hasta al menos 100 épocas. El modelo se publica como un checkpoint nativo de Cellpose-SAM, inicializado a partir del modelo preentrenado vanilla `cpsam_v2`, y está especializado en la segmentación de placas de *Toxoplasma* en imágenes de laboratorio.
 
 El modelo resuelve un problema muy concreto: la detección y segmentación automática de placas de *Toxoplasma* (zonas de lisis celular) en cultivos, una tarea de microscopía que normalmente requiere análisis manual o herramientas genéricas con bajo rendimiento. Según la model card, el modelo alcanza un F1 de 0,6677 en el conjunto de test (101 recortes), frente al 0,1999 del modelo vanilla `cpsam_v2` con sus propios umbrales, lo que supone una mejora sustancial en esta tarea específica.
 
@@ -69,8 +69,8 @@ Los umbrales se seleccionaron sobre 102 recortes de validación; el conjunto de 
 
 | Modelo | Tipo | Parametros | Contexto | F1 en placas de Toxoplasma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| toxoplasma-plaque-segmentation-cpsam-v8-e50 | Cellpose-SAM fine-tuneado | no disponible | no aplica | 0,6677 | no disponible | HuggingFace |
-| cpsam_v2 (vanilla) | Cellpose-SAM preentrenado | no disponible | no aplica | 0,1999 | no disponible | HuggingFace / Cellpose |
+| toxoplasma-plaque-segmentation-cpsam-v8-e50 | Cellpose-SAM fine-tuneado | no disponible | no aplica | 0,6677 | no disponible | Hugging Face |
+| cpsam_v2 (vanilla) | Cellpose-SAM preentrenado | no disponible | no aplica | 0,1999 | no disponible | Hugging Face / Cellpose |
 | Otros modelos Cellpose específicos | Cellpose | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo vanilla del que parte, ya que no se dispone de información sobre otros modelos especializados en segmentación de placas de *Toxoplasma*.
@@ -88,7 +88,7 @@ La comparativa se limita al modelo vanilla del que parte, ya que no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam-v8-e50
+- Modelo en Hugging Face: https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam-v8-e50
 - Cellpose (repositorio oficial): https://github.com/MouseLand/cellpose
 - Cellpose-SAM (modelo base `cpsam_v2`): no disponible en la información proporcionada
 - Documentación de entrenamiento (`training/`): incluida en el repositorio del modelo

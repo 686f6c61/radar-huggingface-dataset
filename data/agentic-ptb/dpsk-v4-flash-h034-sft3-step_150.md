@@ -64,5 +64,5 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 - No apto para producción: cualquier uso en aplicaciones reales debe considerarse bajo la responsabilidad del desarrollador y tras una validación exhaustiva.
 
 ## Enlaces
-- [HuggingFace - agentic-ptb/dpsk-v4-flash.h034.sft3.step_150](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h034.sft3.step_150)
+- [Hugging Face - agentic-ptb/dpsk-v4-flash.h034.sft3.step_150](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h034.sft3.step_150)
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de código) en la información proporcionada.

@@ -27,7 +27,7 @@ Su relevancia radica en que acerca a un publico amplio un modelo de embeddings S
 | Recorte temporal | 0 (`clip_size: 0`) |
 | Dimension de salida | lista de etiquetas `dim_0` a `dim_563` (listado truncado en la model card; dimension final no confirmada) |
 | Dispositivo declarado | `cuda` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,5 GB |
 | Fecha de creacion | 2026-10-24 |
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `wherobots/olmoearth-v1_3-base-pt2` | no disponible | parche 16 px, `clip_size: 0` | `olmoearth-artifact-license` (`other`) | HuggingFace, 0 descargas |
-| `allenai/OlmoEarth-v1_3-Base` (upstream) | no disponible | misma configuracion de parche | `olmoearth-artifact-license` | HuggingFace, repo oficial de Ai2 |
+| `wherobots/olmoearth-v1_3-base-pt2` | no disponible | parche 16 px, `clip_size: 0` | `olmoearth-artifact-license` (`other`) | Hugging Face, 0 descargas |
+| `allenai/OlmoEarth-v1_3-Base` (upstream) | no disponible | misma configuracion de parche | `olmoearth-artifact-license` | Hugging Face, repo oficial de Ai2 |
 | Otros modelos fundacionales de observacion de la Tierra (familia Prithvi, Clay, TerraMind) | no disponible en la informacion | no disponible | no disponible | no verificado en esta busqueda |
 
 La comparacion relevante y verificable es con el repositorio upstream de Ai2: mismos pesos y misma licencia, con la diferencia de que el original incluye documentacion y es el punto de entrada canonico, mientras que esta copia de Wherobots aporta unicamente la configuracion. Para el resto de alternativas no se dispone de datos contrastados en la informacion proporcionada, por lo que deben consultarse sus model cards antes de cualquier comparacion numerica.
@@ -97,7 +97,7 @@ La comparacion relevante y verificable es con el repositorio upstream de Ai2: mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wherobots/olmoearth-v1_3-base-pt2
+- Modelo en Hugging Face: https://huggingface.co/wherobots/olmoearth-v1_3-base-pt2
 - Repositorio upstream de Ai2: https://huggingface.co/allenai/OlmoEarth-v1_3-Base
 - Licencia referenciada: https://huggingface.co/allenai/OlmoEarth-v1_3-Base/blob/9e9e918a369701c105dde7ef56789b0ff1d47f50/LICENSE.txt
 - Blog de Ai2 sobre OlmoEarth v1.3: https://huggingface.co/blog/allenai/olmoearth-v1-3

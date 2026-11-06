@@ -78,10 +78,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-coder-30b-sre-lora (este) | 13,37M adaptador sobre MoE 30B | no disponible | DolphinBench 42,67 % (autoinformado) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct | MoE 30B (~3,3B activos) | no disponible | DolphinBench 42,00 % (según el autor) | Apache 2.0 (según modelo base) | HuggingFace |
-| krush420/gpt-oss-120b-sre-lora | adaptador sobre gpt-oss-120b | no disponible | no disponible | no disponible | HuggingFace |
-| krush420/llama3-hermes3-8b-sre-lora | adaptador sobre Llama 3 8B | no disponible | no disponible | no disponible | HuggingFace |
+| qwen3-coder-30b-sre-lora (este) | 13,37M adaptador sobre MoE 30B | no disponible | DolphinBench 42,67 % (autoinformado) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | MoE 30B (~3,3B activos) | no disponible | DolphinBench 42,00 % (según el autor) | Apache 2.0 (según modelo base) | Hugging Face |
+| krush420/gpt-oss-120b-sre-lora | adaptador sobre gpt-oss-120b | no disponible | no disponible | no disponible | Hugging Face |
+| krush420/llama3-hermes3-8b-sre-lora | adaptador sobre Llama 3 8B | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación con el modelo base es la más informativa: la mejora declarada en DolphinBench es de 0,67 puntos porcentuales (4 tareas de 600), un margen que no se ha validado de forma independiente. Los otros dos adaptadores del mismo autor pertenecen a la misma familia y comparten enfoque, pero no hay datos públicos comparables.
 
@@ -100,7 +100,7 @@ La comparación con el modelo base es la más informativa: la mejora declarada e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krush420/qwen3-coder-30b-sre-lora
+- Modelo en Hugging Face: https://huggingface.co/krush420/qwen3-coder-30b-sre-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/krush420/sovereign-code-audit-sft
 - Registros de benchmarks: https://huggingface.co/datasets/krush420/sovereign-g4-benchmarks

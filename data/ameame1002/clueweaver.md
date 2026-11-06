@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClueWeaver (Finder + Interpreter) | ~4.000 millones por agente | No disponible | Sin resultados publicados en la informacion disponible | No disponible | HuggingFace, 16,9 GB, 0 descargas y 0 likes |
-| Qwen3-4B-Instruct (modelo base declarado) | ~4.000 millones | No disponible en esta informacion | Referencia de partida; sin datos comparativos aportados | No disponible en esta informacion | Publico en HuggingFace |
+| ClueWeaver (Finder + Interpreter) | ~4.000 millones por agente | No disponible | Sin resultados publicados en la informacion disponible | No disponible | Hugging Face, 16,9 GB, 0 descargas y 0 likes |
+| Qwen3-4B-Instruct (modelo base declarado) | ~4.000 millones | No disponible en esta informacion | Referencia de partida; sin datos comparativos aportados | No disponible en esta informacion | Publico en Hugging Face |
 | Pipelines RAG genericos con un unico LLM | Variable segun el modelo elegido | Depende del modelo | No disponible | Depende del modelo | Amplia, multiples frameworks |
 
 La busqueda web realizada no devolvio informacion relevante sobre ClueWeaver ni sobre modelos comparables, por lo que no es posible establecer una comparacion cuantitativa de rendimiento. Cualquier comparacion con alternativas debe hacerse reproduciendo el pipeline completo, ya que la carga aislada de los pesos no equivale al sistema descrito.
@@ -90,7 +90,7 @@ La busqueda web realizada no devolvio informacion relevante sobre ClueWeaver ni 
 - El empaquetado de evidencia esta fijado por dataset segun el apendice C del articulo; usarlo fuera de esas configuraciones puede degradar los resultados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Ameame1002/ClueWeaver
+- Modelo en Hugging Face: https://huggingface.co/Ameame1002/ClueWeaver
 - Articulo (arXiv): https://arxiv.org/abs/2608.25531
 - PDF del articulo: https://arxiv.org/pdf/2608.25531
 - Repositorio de GitHub: https://github.com/Ameame1/ClueWeaver

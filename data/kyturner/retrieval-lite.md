@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Retrieval-lite (`kyturner/retrieval-lite`) es un repositorio experimental publicado en HuggingFace por el usuario kyturner que contiene una implementación propia de la arquitectura Coca orientada a tareas de retrieval multimodal. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la model card indica explícitamente que `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo (smoke tests), y que no se reclama ninguna puntuación de benchmark.
+Retrieval-lite (`kyturner/retrieval-lite`) es un repositorio experimental publicado en Hugging Face por el usuario kyturner que contiene una implementación propia de la arquitectura Coca orientada a tareas de retrieval multimodal. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la model card indica explícitamente que `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo (smoke tests), y que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es fundamentalmente arquitectónico. El autor declara que mantiene la configuración de escala «xlarge» deliberadamente manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La receta por defecto usa SGD con un schedule exponencial, y el propio README advierte de que son valores de partida, no evidencia de una ejecución finalizada.
 
@@ -78,7 +78,7 @@ No se dispone de datos comparativos en la información proporcionada. La compara
 
 | Modelo | Categoria | Parametros | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| retrieval-lite (este modelo) | Coca para retrieval, implementación propia | 24.832 (checkpoint de inicialización) | No | MIT | HuggingFace |
+| retrieval-lite (este modelo) | Coca para retrieval, implementación propia | 24.832 (checkpoint de inicialización) | No | MIT | Hugging Face |
 | CLIP (OpenAI) | Doble codificador contrastivo imagen-texto | no disponible | Sí | no disponible | Público |
 | CoCa (Google) | Contrastivo más captioning | no disponible | Sí | no disponible | Público |
 | BLIP / BLIP-2 | Retrieval y captioning multimodal | no disponible | Sí | no disponible | Público |
@@ -92,14 +92,14 @@ La diferencia fundamental es que las alternativas citadas son modelos entrenados
 - Aunque los tags incluyen `region:us`, no se declara lista de idiomas soportados; no hay evidencia de capacidades multilingües.
 - Riesgo de alucinación: no aplica directamente al no ser un modelo generativo entrenado, pero tampoco hay ninguna validación de sus salidas.
 - Licencia MIT: permite uso comercial y modificación, pero el propio autor recomienda revisar por separado los términos de los datasets externos que se usen junto al repositorio.
-- La implementación es personalizada, por lo que las APIs automáticas de carga de HuggingFace u otros frameworks no funcionan sin escribir un adaptador explícito.
+- La implementación es personalizada, por lo que las APIs automáticas de carga de Hugging Face u otros frameworks no funcionan sin escribir un adaptador explícito.
 - El tamaño real del checkpoint (24.832 parámetros) contradice la etiqueta «xlarge» de la model card; conviene tratarla como una etiqueta de configuración del script, no como una descripción del artefacto publicado.
 - Cualquier resultado obtenido con este repositorio es reproducible solo si se documentan los logs de entrenamiento y las versiones del entorno, tal y como recomienda el autor.
 - Cualquier checkpoint futuro entrenado debe documentarse por separado de los valores por defecto incluidos aquí.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kyturner/retrieval-lite
+- Hugging Face: https://huggingface.co/kyturner/retrieval-lite
 
 Los resultados de búsqueda web disponibles no contienen enlaces específicos a este modelo; corresponden a recursos genéricos de la misma temática (modelos de reranking, toolkits de RAG, leaderboards). Se listan a continuación únicamente como referencia temática, no como documentación del modelo:
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FreddieGl/assignment-retrieval` es un repositorio de HuggingFace publicado por el usuario FreddieGl que contiene una implementación funcional de la arquitectura EfficientFormer configurada para tareas de retrieval (recuperación de información multimodal o texto-imagen). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
+`FreddieGl/assignment-retrieval` es un repositorio de Hugging Face publicado por el usuario FreddieGl que contiene una implementación funcional de la arquitectura EfficientFormer configurada para tareas de retrieval (recuperación de información multimodal o texto-imagen). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
 
 La relevancia de este repositorio es, por tanto, limitada y de carácter didáctico o de andamiaje. No se trata de un modelo listo para producción ni de un artefacto con resultados verificables: la propia model card indica que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El número de parámetros reportado en los metadatos (24.832) es anómalamente bajo para una configuración "large" de EfficientFormer, lo que sugiere que el tensor serializado corresponde a un subconjunto o a una inicialización parcial más que al modelo completo.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FreddieGl/assignment-retrieval | 24.832 (reportados) | no disponible | sin benchmarks | Apache 2.0 | HuggingFace, 0 descargas |
+| FreddieGl/assignment-retrieval | 24.832 (reportados) | no disponible | sin benchmarks | Apache 2.0 | Hugging Face, 0 descargas |
 | EfficientFormer oficial (Snap) | según variante (B0-L7) | no aplica (visión) | benchmarks publicados en papers | según variante | repositorios oficiales |
 | CLIP (OpenAI) | ~150M (ViT-B/32) | 77 tokens de texto | benchmarks publicados | MIT (código) | amplia |
 | SigLIP (Google) | ~400M (base) | variable | benchmarks publicados | Apache 2.0 | amplia |
@@ -83,5 +83,5 @@ La comparativa es orientativa: este repositorio no es un modelo entrenado y, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FreddieGl/assignment-retrieval
+- Hugging Face: https://huggingface.co/FreddieGl/assignment-retrieval
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como `0xmoose0xmoose0xmoose/xss-probe2-style` no es un modelo de inteligencia artificial. Se trata de una model card de HuggingFace cuyo contenido es una bateria de 25 pruebas de inyeccion de estilos en linea (inline styles), disenada para comprobar que vectores de carga remota sobreviven al saneado del renderizador de Markdown/HTML de la plataforma. El titulo del propio README lo declara explicitamente: "Inline style surface probe (post `` fix)", es decir, una sonda posterior a un parche de la etiqueta ``.
+El repositorio identificado como `0xmoose0xmoose0xmoose/xss-probe2-style` no es un modelo de inteligencia artificial. Se trata de una model card de Hugging Face cuyo contenido es una bateria de 25 pruebas de inyeccion de estilos en linea (inline styles), disenada para comprobar que vectores de carga remota sobreviven al saneado del renderizador de Markdown/HTML de la plataforma. El titulo del propio README lo declara explicitamente: "Inline style surface probe (post `` fix)", es decir, una sonda posterior a un parche de la etiqueta ``.
 
 El autor es el usuario `0xmoose0xmoose0xmoose`, con cero descargas y cero likes en el momento de la consulta, y sin pipeline, licencia ni idiomas declarados. El contenido consiste en fragmentos HTML con `div`, `svg`, `ul`, `table` y `a` que intentan forzar peticiones salientes a un dominio externo (`rce.lc`) mediante `background-image`, `mask-image`, `border-image`, `list-style-image`, `filter`, `cursor`, `font-family`, `backdrop-filter`, `clip-path`, `image-set`, variables CSS y atributos como `background` en celdas de tabla. El dominio utilizado en las URL (`rce.lc`) es revelador del objetivo de la prueba: demostrar ejecucion remota de contenido o exfiltracion mediante carga de recursos.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | 0xmoose0xmoose0xmoose/xss-probe2-style |
+| ID en Hugging Face | 0xmoose0xmoose0xmoose/xss-probe2-style |
 | Autor | 0xmoose0xmoose0xmoose |
 | Etiquetas declaradas | region:us |
 | Pipeline | no disponible |
@@ -39,7 +39,7 @@ Datos adicionales del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura ni entrenamiento. El repositorio no contiene ficheros de pesos, configuracion de modelo, tokenizador ni codigo de inferencia. Lo unico que contiene es texto Markdown con HTML y CSS en linea, presumiblemente publicado para verificar si el saneador de HuggingFace elimina, neutraliza o deja pasar determinadas propiedades CSS capaces de disparar peticiones de red. La denominacion "post `` fix" sugiere que una iteracion anterior del ataque usaba la etiqueta `` y que, tras su bloqueo, esta segunda version traslada los vectores a atributos `style=` individuales.
+No existe arquitectura ni entrenamiento. El repositorio no contiene ficheros de pesos, configuracion de modelo, tokenizador ni codigo de inferencia. Lo unico que contiene es texto Markdown con HTML y CSS en linea, presumiblemente publicado para verificar si el saneador de Hugging Face elimina, neutraliza o deja pasar determinadas propiedades CSS capaces de disparar peticiones de red. La denominacion "post `` fix" sugiere que una iteracion anterior del ataque usaba la etiqueta `` y que, tras su bloqueo, esta segunda version traslada los vectores a atributos `style=` individuales.
 
 Las tecnicas ensayadas se agrupan en varias familias: carga de imagenes de fondo (`background-image`, `background` abreviado, `image-set`), imagenes de mascara (`-webkit-mask-image`, `mask-image`), imagenes de borde (`border-image`), imagenes de vineta (`list-style-image`), filtros SVG remotos (`filter:url()`, `backdrop-filter:url()`), cursores remotos (`cursor:url()`), fuentes remotas (`font-family` con URL), recorte (`clip-path:url()`), indirecciones mediante variables CSS (`--u:url(...)`) y entidades HTML dentro de la URL. Tambien se prueban atributos HTML heredados (`background` en un `<td>`), escapes incompletos en la URL, la combinacion con atributos `onmouseover` y `data-*`, y las propiedades de posicionamiento necesarias para tapar la interfaz legitima.
 
@@ -85,7 +85,7 @@ No disponible. No existe categoria de modelos comparable: el artefacto no es un 
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe2-style
+- Model card en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe2-style
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

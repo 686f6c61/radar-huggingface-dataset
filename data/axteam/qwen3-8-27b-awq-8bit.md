@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-AWQ-8bit es una versión cuantizada a 8 bits (AWQ INT8, esquema W8A16) del modelo multimodal Qwen3.8-27B de Qwen, realizada por el usuario axteam y publicada en HuggingFace el 27 de octubre de 2026. El objetivo de esta variante es servir el modelo de forma eficiente con vLLM, reduciendo a la mitad el peso en memoria de los pesos lineales respecto a BF16 sin necesidad de reentrenamiento, ya que se trata de una cuantización post-entrenamiento (PTQ).
+Qwen3.8-27B-AWQ-8bit es una versión cuantizada a 8 bits (AWQ INT8, esquema W8A16) del modelo multimodal Qwen3.8-27B de Qwen, realizada por el usuario axteam y publicada en Hugging Face el 27 de octubre de 2026. El objetivo de esta variante es servir el modelo de forma eficiente con vLLM, reduciendo a la mitad el peso en memoria de los pesos lineales respecto a BF16 sin necesidad de reentrenamiento, ya que se trata de una cuantización post-entrenamiento (PTQ).
 
 El modelo base es un transformer híbrido (atención lineal más atención completa), denso, multimodal (acepta imagen y texto) y con cabeza de predicción multi-token (MTP). El pipeline asignado es image-text-to-text, lo que indica soporte de entrada visual junto con generación conversacional de texto.
 

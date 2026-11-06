@@ -52,17 +52,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con pesos en FP16 (18,8 GB), se requieren aproximadamente 20-24 GB de VRAM considerando overhead. Con cuantización a 8 bits (~9,4 GB) cabría en GPUs de 12-16 GB; con 4 bits (~4,7 GB) en GPUs de 8 GB.
 - GPU recomendadas: para FP16, una A100 40GB, RTX 4090 24GB o similar. Para cuantización, RTX 3090, RTX 4080 o GPUs de datacenter con 16 GB o más.
 - ¿Cabe en consumer GPU? Sí, con cuantización (8 bits o 4 bits) en GPUs como RTX 3090/4090. En FP16, solo en GPUs de 24 GB o más.
-- Opciones de despliegue: vLLM (requiere la opción `--limit-mm-per-prompt` para forzar modo texto), llama.cpp, Ollama, TGI. También se puede usar con transformers de HuggingFace.
+- Opciones de despliegue: vLLM (requiere la opción `--limit-mm-per-prompt` para forzar modo texto), llama.cpp, Ollama, TGI. También se puede usar con transformers de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. La comparativa se limita a parámetros y disponibilidad; el contexto y la licencia del modelo base no están especificados en la información proporcionada.
 
@@ -78,5 +78,5 @@ No se dispone de datos de rendimiento para comparar. La comparativa se limita a 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h051.pi-agent-r2e-opsd-v1.step_4
-- Búsqueda de modelos de agentic-ptb en HuggingFace: https://huggingface.co/models?other=agentic-ptb
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h051.pi-agent-r2e-opsd-v1.step_4
+- Búsqueda de modelos de agentic-ptb en Hugging Face: https://huggingface.co/models?other=agentic-ptb

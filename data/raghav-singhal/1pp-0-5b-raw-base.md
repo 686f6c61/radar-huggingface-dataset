@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Modelo | Parámetros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | 1pp-0.5b-raw-base | 0,58B | 4.096 | Apache 2.0 | Modelo base experimental, solo inglés |
-| SmolLM2-360M | 0,36B | 2.048 | Apache 2.0 | Modelo base de HuggingFace, entrenado con datos diversos |
+| SmolLM2-360M | 0,36B | 2.048 | Apache 2.0 | Modelo base de Hugging Face, entrenado con datos diversos |
 | Qwen2.5-0.5B | 0,49B | 32.768 | Apache 2.0 | Modelo base y chat, multilingüe, con fine-tuning |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos. La comparación se limita a características arquitectónicas y de disponibilidad. El 1pp-0.5b-raw-base se distingue por su origen experimental y su enfoque en el estudio de la condición de pretraining, mientras que SmolLM2 y Qwen2.5 son modelos más orientados a uso general.
@@ -80,7 +80,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos. La c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Raghav-Singhal/1pp-0.5b-raw-base)
-- [Colección 1pp en HuggingFace](https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649)
+- [Modelo en Hugging Face](https://huggingface.co/Raghav-Singhal/1pp-0.5b-raw-base)
+- [Colección 1pp en Hugging Face](https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649)
 - [Training logs en wandb (1pp-training)](https://wandb.ai/raghav_singhal/1pp-training)
 - [Training logs en wandb (1pp-sft)](https://wandb.ai/raghav_singhal/1pp-sft)

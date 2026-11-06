@@ -4,7 +4,7 @@
 
 `eoinf/trigram_components_016_2b_schedule_200m_dmodel32` es un modelo de lenguaje causal de escala muy reducida, publicado por el usuario `eoinf` como parte de una rejilla de experimentos denominada "Transformer experiment grid". No se trata de un modelo orientado a producción ni a uso general, sino de un artefacto de investigación que forma parte de un barrido sistemático sobre el hiperparámetro `d_model` (dimensión del modelo), en este caso con valor 32. El nombre del repositorio codifica el experimento: variante `016`, programación nominal de 2 mil millones de tokens (`2b_schedule`), presupuesto de 200 millones (`200m`) y `d_model=32`.
 
-El modelo es un transformer causal minúsculo con vocabulario de 4096 tokens, longitud de contexto de 256 tokens y una única semilla por anchura. La programación nominal de entrenamiento es de 1.999.998.976 tokens, aunque los horizontes reales por modelo (incluidas paradas tempranas) se registran en los ficheros `grid_summary.json` y `result.json` del repositorio. El repositorio tiene un tamaño de 0.0 GB según HuggingFace, lo que sugiere que los pesos no están efectivamente alojados o son de tamaño despreciable.
+El modelo es un transformer causal minúsculo con vocabulario de 4096 tokens, longitud de contexto de 256 tokens y una única semilla por anchura. La programación nominal de entrenamiento es de 1.999.998.976 tokens, aunque los horizontes reales por modelo (incluidas paradas tempranas) se registran en los ficheros `grid_summary.json` y `result.json` del repositorio. El repositorio tiene un tamaño de 0.0 GB según Hugging Face, lo que sugiere que los pesos no están efectivamente alojados o son de tamaño despreciable.
 
 Su relevancia es exclusivamente metodológica: sirve para estudiar el comportamiento de transformers de dimensión extremadamente baja en tareas sintéticas de trigramas, no para aplicaciones reales. La evaluación se realiza sobre los propios datos de entrenamiento, sin conjunto de validación independiente, por lo que cualquier métrica derivada debe interpretarse como ajuste al corpus y no como capacidad de generalización.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eoinf/trigram_components_016_2b_schedule_200m_dmodel32 | no disponible (d_model=32) | 256 | no disponible | HuggingFace (state-dict) |
-| Otras anchuras de la misma rejilla (`d_model` distinto) | no disponible | 256 | no disponible | HuggingFace |
-| GPT-2 small | 124M | 1024 | MIT | HuggingFace, ampliamente soportado |
-| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | HuggingFace, GGUF, vLLM |
+| eoinf/trigram_components_016_2b_schedule_200m_dmodel32 | no disponible (d_model=32) | 256 | no disponible | Hugging Face (state-dict) |
+| Otras anchuras de la misma rejilla (`d_model` distinto) | no disponible | 256 | no disponible | Hugging Face |
+| GPT-2 small | 124M | 1024 | MIT | Hugging Face, ampliamente soportado |
+| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | Hugging Face, GGUF, vLLM |
 
 La comparación con GPT-2 small o TinyLlama es solo orientativa por escala: este modelo es un experimento sintético de dimensión 32, sin alineación ni evaluación held-out, por lo que no es funcionalmente equivalente a ninguno de ellos. Dentro de su propia rejilla, la comparación natural son las demás variantes de `d_model` publicadas por el mismo autor.
 
@@ -84,7 +84,7 @@ La comparación con GPT-2 small o TinyLlama es solo orientativa por escala: este
 
 ## Enlaces
 
-- [HuggingFace: eoinf/trigram_components_016_2b_schedule_200m_dmodel32](https://huggingface.co/eoinf/trigram_components_016_2b_schedule_200m_dmodel32)
+- [Hugging Face: eoinf/trigram_components_016_2b_schedule_200m_dmodel32](https://huggingface.co/eoinf/trigram_components_016_2b_schedule_200m_dmodel32)
 - Tokenizador: [eoinf/pile_tokenizer_4096](https://huggingface.co/eoinf/pile_tokenizer_4096)
 - Repositorio de código: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL directa)
 - Ficheros de metadatos en el repositorio: `grid_summary.json`, `result.json`, `configuration.json`

@@ -25,7 +25,7 @@ Su relevancia actual es limitada como producto, pero alta como artefacto reprodu
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
 | Version de Transformers | 4.56.2 |
 | Version de PyTorch | 2.5.1+cu121 |
-| Fecha de creacion en HuggingFace | 2026-09-22 |
+| Fecha de creacion en Hugging Face | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
 
@@ -50,8 +50,8 @@ El entrenamiento se ha realizado con TRL en su flujo de SFT, partiendo de `goldf
 - Estudio de tokenizadores y empaquetado de datos: dado el sufijo `packed` del identificador, es util para analizar como el empaquetado de secuencias y el filtrado (`bfd`) afectan a la perdida y a la calidad del texto generado en un corpus de 10 MB.
 - Prototipado en entornos de bajos recursos: al ocupar del orden de 0,25 GB en FP16, permite hacer pruebas de generacion en CPU o en una GPU integrada antes de escalar a un modelo mayor.
 - Generacion de datos sinteticos en chino para tareas auxiliares: puede usarse como generador barato de candidatos de texto que luego se filtran con un modelo mayor, siempre asumiendo una calidad baja y necesidad de revision humana.
-- Docencia y demostraciones de ajuste fino: es adecuado para mostrar, en un aula o taller, el ciclo completo de SFT (dataset, entrenamiento, publicacion en HuggingFace, registro en W&B) sin requerir hardware dedicado.
-- Pruebas de integracion de infraestructura: al incluir las etiquetas `text-generation-inference` y `endpoints_compatible`, sirve para validar despliegues con TGI o endpoints compatibles con la API de HuggingFace en un contenedor pequeno.
+- Docencia y demostraciones de ajuste fino: es adecuado para mostrar, en un aula o taller, el ciclo completo de SFT (dataset, entrenamiento, publicacion en Hugging Face, registro en W&B) sin requerir hardware dedicado.
+- Pruebas de integracion de infraestructura: al incluir las etiquetas `text-generation-inference` y `endpoints_compatible`, sirve para validar despliegues con TGI o endpoints compatibles con la API de Hugging Face en un contenedor pequeno.
 - Analisis de sesgos y de calidad en modelos diminutos: permite medir degradacion, repeticiones y alucinacion en un modelo de 125 M ajustado con muy pocos datos, como linea base en estudios comparativos.
 
 ## Benchmarks y rendimiento
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed455 | 124,77 M | no disponible (GPT-2 base usa 1024) | no disponible | safetensors en HuggingFace, 0 descargas | Ajuste SFT de investigacion sobre subconjunto de 10 MB |
-| goldfish-models/zho_hans_100mb | 100 MB de corpus de entrenamiento declarado en el nombre; parametros exactos no disponibles | no disponible | no disponible | HuggingFace, modelo base publico | Modelo base del ajuste; familia goldfish por lengua (chino simplificado) |
+| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed455 | 124,77 M | no disponible (GPT-2 base usa 1024) | no disponible | safetensors en Hugging Face, 0 descargas | Ajuste SFT de investigacion sobre subconjunto de 10 MB |
+| goldfish-models/zho_hans_100mb | 100 MB de corpus de entrenamiento declarado en el nombre; parametros exactos no disponibles | no disponible | no disponible | Hugging Face, modelo base publico | Modelo base del ajuste; familia goldfish por lengua (chino simplificado) |
 | GPT-2 (OpenAI, 124 M) | 124 M | 1024 tokens | MIT (modelo original de OpenAI) | Ampliamente disponible en safetensors y GGUF | Referencia de la misma arquitectura y tamano, sin ajuste especifico para chino |
 | Qwen2.5-0.5B | ~0,49 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF y multiples runtimes | Alternativa moderna multilingue con contexto largo; mayor coste de memoria |
 
@@ -89,7 +89,7 @@ Los datos de rendimiento comparado no estan disponibles para el modelo analizado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/70vftg2e

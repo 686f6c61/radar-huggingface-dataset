@@ -21,7 +21,7 @@ La model card es extremadamente minima: no especifica el dataset de entrenamient
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es Qwen2.5-14B, un transformer decoder-only con atencion causal estandar, normalizacion RMSNorm, embeddings rotatorios (RoPE) y activacion SwiGLU. El modelo base fue cuantizado a 4-bit con bitsandbytes por Unsloth antes del fine-tuning, lo que permite entrenar con requisitos de VRAM reducidos. El adaptador se entreno con la libreria TRL (Transformers Reinforcement Learning) de HuggingFace, aunque no se especifica si se utilizo SFT, DPO, PPO u otro metodo. Tampoco se indica el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion adicionales. La unica informacion confirmada es que el entrenamiento fue aproximadamente 2 veces mas rapido gracias a Unsloth, segun la model card.
+La arquitectura subyacente es Qwen2.5-14B, un transformer decoder-only con atencion causal estandar, normalizacion RMSNorm, embeddings rotatorios (RoPE) y activacion SwiGLU. El modelo base fue cuantizado a 4-bit con bitsandbytes por Unsloth antes del fine-tuning, lo que permite entrenar con requisitos de VRAM reducidos. El adaptador se entreno con la libreria TRL (Transformers Reinforcement Learning) de Hugging Face, aunque no se especifica si se utilizo SFT, DPO, PPO u otro metodo. Tampoco se indica el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion adicionales. La unica informacion confirmada es que el entrenamiento fue aproximadamente 2 veces mas rapido gracias a Unsloth, segun la model card.
 
 ## Capacidades
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: al ser un adaptador de 0,3 GB, debe cargarse junto al modelo base Qwen2.5-14B. En cuantizacion 4-bit, el modelo base requiere aproximadamente 9-10 GB de VRAM para inferencia; con el adaptador, se recomiendan 12 GB como minimo.
 - GPUs compatibles: RTX 3090, RTX 4090, A100, H100 o cualquier GPU con al menos 12 GB de VRAM. En GPUs de 8 GB (como RTX 3060 Ti o RTX 3070) no cabra el modelo base en 4-bit junto al adaptador.
 - Si se quisiera cargar el modelo base en precision completa (BF16), se necesitarian 28-30 GB de VRAM, lo que requiere una A100 o H100 de 40 GB.
-- Opciones de despliegue: al usar la libreria transformers, es compatible con vLLM, TGI (Text Generation Inference) y Ollama (si se convierte a GGUF). El tag `endpoints_compatible` sugiere que puede desplegarse en Inference Endpoints de HuggingFace.
+- Opciones de despliegue: al usar la libreria transformers, es compatible con vLLM, TGI (Text Generation Inference) y Ollama (si se convierte a GGUF). El tag `endpoints_compatible` sugiere que puede desplegarse en Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. Dependeran del hardware y del backend de inferencia elegido.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| meggs413/summer1 | 14B (base) + adaptador | no disponible | Apache 2.0 | safetensors (adaptador) | HuggingFace |
-| Qwen2.5-14B (base) | 14.000 M | 32.768 tokens | Apache 2.0 | safetensors | HuggingFace |
-| Qwen2.5-14B-Instruct | 14.000 M | 32.768 tokens | Apache 2.0 | safetensors | HuggingFace |
-| Llama-3.1-8B-Instruct | 8.030 M | 131.072 tokens | Llama 3.1 Community License | safetensors | HuggingFace |
+| meggs413/summer1 | 14B (base) + adaptador | no disponible | Apache 2.0 | safetensors (adaptador) | Hugging Face |
+| Qwen2.5-14B (base) | 14.000 M | 32.768 tokens | Apache 2.0 | safetensors | Hugging Face |
+| Qwen2.5-14B-Instruct | 14.000 M | 32.768 tokens | Apache 2.0 | safetensors | Hugging Face |
+| Llama-3.1-8B-Instruct | 8.030 M | 131.072 tokens | Llama 3.1 Community License | safetensors | Hugging Face |
 
 La comparativa se limita al modelo base y a alternativas populares de tamano similar, ya que no hay datos de rendimiento del adaptador. La diferencia principal con Qwen2.5-14B-Instruct es que este ultimo ha sido alineado con instrucciones y evaluado publicamente, mientras que `summer1` no documenta su proceso de alineacion ni sus resultados.
 
@@ -81,7 +81,7 @@ La comparativa se limita al modelo base y a alternativas populares de tamano sim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meggs413/summer1
+- Repositorio Hugging Face: https://huggingface.co/meggs413/summer1
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-14b-unsloth-bnb-4bit
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Qwen2.5-14B (modelo original): https://huggingface.co/Qwen/Qwen2.5-14B

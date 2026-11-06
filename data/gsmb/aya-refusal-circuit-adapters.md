@@ -88,7 +88,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GSMB/aya-refusal-circuit-adapters
+- Repositorio Hugging Face: https://huggingface.co/GSMB/aya-refusal-circuit-adapters
 - Modelo base: https://huggingface.co/CohereLabs/tiny-aya-global
 - Librería PEFT: no se proporciona enlace en la información disponible
 - Paper, blog, repositorio de código y demos: no disponibles

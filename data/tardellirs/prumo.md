@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prumo es un motor de decisión simbólico publicado por el usuario tardellirs en HuggingFace bajo licencia Apache-2.0. No es un modelo de lenguaje: no contiene pesos, ni embeddings, ni parámetros aprendidos. Recibe un *estado* y un conjunto de *preguntas tipadas* en el formato wire de Decision Index / `systemone` (opciones de tipo `choice` y `noul`) y devuelve una distribución de probabilidad sobre cada opción. Su funcionamiento es un pipeline fijo de capacidades genéricas —ejecución de código, búsqueda en posiciones de ajedrez, validación de llamadas a herramientas, ranking BM25, lógica booleana, puzzles, fechas y aritmética— cada una de las cuales reconoce una estructura en la petición y la resuelve de forma exacta. Cuando ninguna capacidad aplica, devuelve una distribución uniforme y, por tanto, su puntuación esperada es exactamente la del azar.
+Prumo es un motor de decisión simbólico publicado por el usuario tardellirs en Hugging Face bajo licencia Apache-2.0. No es un modelo de lenguaje: no contiene pesos, ni embeddings, ni parámetros aprendidos. Recibe un *estado* y un conjunto de *preguntas tipadas* en el formato wire de Decision Index / `systemone` (opciones de tipo `choice` y `noul`) y devuelve una distribución de probabilidad sobre cada opción. Su funcionamiento es un pipeline fijo de capacidades genéricas —ejecución de código, búsqueda en posiciones de ajedrez, validación de llamadas a herramientas, ranking BM25, lógica booleana, puzzles, fechas y aritmética— cada una de las cuales reconoce una estructura en la petición y la resuelve de forma exacta. Cuando ninguna capacidad aplica, devuelve una distribución uniforme y, por tanto, su puntuación esperada es exactamente la del azar.
 
 El interés del proyecto es acotar el extremo de cero parámetros de la relación tamaño/calidad. Según el autor, Prumo obtiene un índice público de 20,14 en Decision Index 0.3 con la suite oficial completa (140.178 peticiones), frente a 1,55 de otro participante basado en reglas y 7,44 y 13,01 de modelos aprendidos de 17M y 68M de parámetros respectivamente. El "tamaño" declarado es de 700 constantes escritas a mano, sin descarga de pesos, ejecutándose en un solo hilo de CPU con una mediana de 0,2 ms por petición.
 
@@ -97,7 +97,7 @@ En conocimiento, sentido común y NLI el autor declara que el motor se queda en 
 
 | Modelo | Tipo | Parámetros | Índice público (Decision Index 0.3) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Prumo | Rule-based / simbólico | 0 aprendidos (700 constantes) | 20,14 (autoevaluado) | No aplica | Apache-2.0 | HuggingFace + código |
+| Prumo | Rule-based / simbólico | 0 aprendidos (700 constantes) | 20,14 (autoevaluado) | No aplica | Apache-2.0 | Hugging Face + código |
 | Otro participante rule-based | Rule-based | No disponible | 1,55 | No disponible | No disponible | No disponible |
 | Modelo aprendido de 17M | Aprendido | 17M | 7,44 | No disponible | No disponible | No disponible |
 | Modelo aprendido de 68M | Aprendido | 68M | 13,01 | No disponible | No disponible | No disponible |
@@ -114,11 +114,11 @@ Los nombres de los tres modelos de referencia no se indican en la información d
 - **Dependencia única**: requiere `chess==1.11.2` fijado; no se documenta comportamiento con otras versiones.
 - **Sin rastro de comunidad**: 0 descargas y 0 likes en el momento de la consulta; el proyecto es reciente y sin validación externa conocida.
 - **Licencia**: Apache-2.0 permite uso comercial y modificación con atribución y aviso de cambios; no se documentan restricciones adicionales, pero tampoco garantías explícitas más allá de las de la propia licencia.
-- **Fecha de publicación**: la ficha de HuggingFace figura creada el 2026-10-17, dato que conviene contrastar antes de citarlo.
+- **Fecha de publicación**: la ficha de Hugging Face figura creada el 2026-10-17, dato que conviene contrastar antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tardellirs/prumo
+- Modelo en Hugging Face: https://huggingface.co/tardellirs/prumo
 - Kit oficial Decision Index: https://github.com/apolinario/decision-index
 - Espacio Decision Index (formato wire JEV / systemone): https://huggingface.co/spaces/multimodalart/jev-decision-index
 - Dependencia de ajedrez en PyPI: https://pypi.org/project/chess/

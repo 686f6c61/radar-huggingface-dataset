@@ -97,7 +97,7 @@ La diferencia clave frente al baseline es el ajuste contrastivo con estructura j
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, incluyendo la fusion de pesos ya aplicada, siempre que se conserven los avisos de licencia y atribucion correspondientes.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/regularpooria/HiCWE-MiniLM-L6
+- Modelo en Hugging Face: https://huggingface.co/regularpooria/HiCWE-MiniLM-L6
 - Variante mayor HiCWE-MiniLM-L12-v2: https://huggingface.co/regularpooria/HiCWE-MiniLM-L12-v2
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Clasificador de referencia usado en la comparativa: https://huggingface.co/mulliken/cwe-predictor

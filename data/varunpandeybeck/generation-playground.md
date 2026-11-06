@@ -40,7 +40,7 @@ El entrenamiento no se ha realizado: el checkpoint incluido es un punto de inici
 - Revisión de código de arquitecturas híbridas: la implementación sirve como referencia mínima para estudiar cómo se combinan atención estándar, fusión de tensores y normalización por instancias en un modelo de generación.
 - Experimentos de investigación controlados: comparar el comportamiento de esta arquitectura con un transformer estándar de capacidad similar en tareas sintéticas de baja escala, manteniendo la misma exposición a datos y presupuesto de ajuste.
 - Educación en arquitecturas de generación: el modelo es un ejemplo didáctico claro de los componentes básicos de un modelo híbrido, útil para cursos o talleres sobre implementación de redes neuronales en PyTorch.
-- Desarrollo de adaptadores para HuggingFace: al ser una implementación personalizada, se puede utilizar para probar y depurar adaptadores que permitan cargarlo a través de APIs genéricas como `AutoModelForCausalLM`.
+- Desarrollo de adaptadores para Hugging Face: al ser una implementación personalizada, se puede utilizar para probar y depurar adaptadores que permitan cargarlo a través de APIs genéricas como `AutoModelForCausalLM`.
 - Pruebas de sobreajuste en datasets diminutos: entrenar el modelo con un conjunto de datos muy pequeño (por ejemplo, unas pocas secuencias) para verificar que la implementación puede memorizar datos y que el bucle de entrenamiento funciona correctamente.
 - Benchmarking de eficiencia en hardware: medir tiempos de inferencia y uso de memoria de un modelo de 49.600 parámetros en diferentes dispositivos (CPU, GPU de consumo) para evaluar la sobrecarga del framework.
 
@@ -64,12 +64,12 @@ No disponible. No se han identificado modelos de referencia con arquitectura hí
 
 - El checkpoint de inicialización no ha sido entrenado, por lo que no puede generar texto coherente ni realizar ninguna tarea de lenguaje real.
 - No se ha auditado el modelo en términos de robustez, fairness ni transferencia de dominio, tal como indica el autor.
-- La implementación es personalizada y no es compatible con APIs genéricas de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no es compatible con APIs genéricas de Hugging Face sin un adaptador explícito.
 - No se especifican idiomas soportados ni longitud de contexto, lo que impide determinar su uso en aplicaciones multilingües o de contexto largo.
 - La licencia MIT permite uso comercial, pero el modelo no es útil para producción debido a su falta de entrenamiento.
 - No hay datos de benchmarks, por lo que cualquier afirmación sobre rendimiento sería especulativa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Varunpandeybeck/generation-playground
+- Hugging Face: https://huggingface.co/Varunpandeybeck/generation-playground
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la búsqueda web.

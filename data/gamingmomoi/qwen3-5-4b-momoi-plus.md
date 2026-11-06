@@ -86,6 +86,6 @@ La comparación con Qwen2.5-VL-3B y Llama 3.2 3B Vision es orientativa por categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gamingmomoi/Qwen3.5-4B-momoi-plus
+- Hugging Face: https://huggingface.co/gamingmomoi/Qwen3.5-4B-momoi-plus
 - Unsloth (framework de entrenamiento y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia): no incluido en la información proporcionada, pero referenciado implícitamente por el formato GGUF y los comandos de la model card.

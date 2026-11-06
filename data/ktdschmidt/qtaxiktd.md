@@ -2,9 +2,9 @@
 
 ## Resumen
 
-QTaxiktd es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno Taxi-v3 de Gymnasium. Lo publica el usuario ktdschmidt en HuggingFace y se distribuye como un fichero serializado (`q-learning.pkl`) que contiene la tabla Q y los metadatos del entorno, no como un modelo neuronal con pesos en safetensors. No es, por tanto, un modelo de lenguaje: no genera texto, no procesa lenguaje natural y no tiene arquitectura transformer ni ventana de contexto.
+QTaxiktd es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno Taxi-v3 de Gymnasium. Lo publica el usuario ktdschmidt en Hugging Face y se distribuye como un fichero serializado (`q-learning.pkl`) que contiene la tabla Q y los metadatos del entorno, no como un modelo neuronal con pesos en safetensors. No es, por tanto, un modelo de lenguaje: no genera texto, no procesa lenguaje natural y no tiene arquitectura transformer ni ventana de contexto.
 
-El problema que resuelve es el clasico de planificacion en un gridworld discreto: un taxi debe recoger a un pasajero en una de cuatro ubicaciones y dejarlo en su destino, con 500 estados posibles y 6 acciones. El autor declara una recompensa media de 7,52 +/- 2,73 en Taxi-v3 (metrica no verificada por HuggingFace), lo que situa al agente en un rango de rendimiento moderado para este entorno.
+El problema que resuelve es el clasico de planificacion en un gridworld discreto: un taxi debe recoger a un pasajero en una de cuatro ubicaciones y dejarlo en su destino, con 500 estados posibles y 6 acciones. El autor declara una recompensa media de 7,52 +/- 2,73 en Taxi-v3 (metrica no verificada por Hugging Face), lo que situa al agente en un rango de rendimiento moderado para este entorno.
 
 Su relevancia actual es limitada y de caracter didactico: sirve como referencia de como empaquetar y publicar un agente Q-learning con `model-index` en el Hub, y como ejemplo minimo de integracion con Gymnasium. No es adecuado para tareas de produccion fuera del entorno Taxi-v3.
 
@@ -46,11 +46,11 @@ La model card no documenta hiperparametros de entrenamiento (tasa de aprendizaje
 - Test de integracion de Gymnasium: validar pipelines de evaluacion que cargan entornos discretos y ejecutan politicas greedy, comprobando el comportamiento con y sin `is_slippery`.
 - Baseline en experimentos de RL: comparar un agente tabular contra variantes con DQN o policy gradient en Taxi-v3 para medir la brecha de rendimiento en entornos pequenos.
 - Reproducibilidad de resultados: replicar la metrica declarada (7,52 +/- 2,73) ejecutando el agente sobre Taxi-v3 y contrastando la variabilidad entre semillas.
-- Demostracion de carga desde el Hub: ejemplo minimo de `load_from_hub` para tutoriales sobre el ecosistema HuggingFace aplicado a reinforcement learning.
+- Demostracion de carga desde el Hub: ejemplo minimo de `load_from_hub` para tutoriales sobre el ecosistema Hugging Face aplicado a reinforcement learning.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el `model-index` de la model card (no verificados por HuggingFace):
+Datos declarados por el autor en el `model-index` de la model card (no verificados por Hugging Face):
 
 | Tarea | Dataset | Metrica | Valor |
 |---|---|---|---|
@@ -79,7 +79,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 ## Limitaciones y advertencias
 
 - El modelo solo es valido para Taxi-v3; no generaliza a otros entornos ni a tareas fuera del gridworld.
-- La metrica declarada no esta verificada por HuggingFace (`verified: false`) y no se especifican semillas ni numero de episodios de evaluacion.
+- La metrica declarada no esta verificada por Hugging Face (`verified: false`) y no se especifican semillas ni numero de episodios de evaluacion.
 - La model card no aclara si el entrenamiento y la evaluacion usaron `is_slippery=True` o `False`; los resultados pueden no ser reproducibles sin ese dato.
 - No se documentan hiperparametros de entrenamiento, lo que dificulta la reproducibilidad.
 - No hay informacion sobre sesgos; al operar en un entorno sintetico, el riesgo de sesgo social es irrelevante, pero la politica puede estar sobreajustada a la dinamica concreta del entorno.
@@ -90,7 +90,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ktdschmidt/QTaxiktd
+- Hugging Face: https://huggingface.co/ktdschmidt/QTaxiktd
 - Entorno Taxi-v3 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/taxi/
-- Documentacion de `load_from_hub` (HuggingFace Hub): https://huggingface.co/docs/huggingface_hub
+- Documentacion de `load_from_hub` (Hugging Face Hub): https://huggingface.co/docs/huggingface_hub
 - No se han encontrado en la busqueda web papers, blogs, repos ni demos adicionales asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Teetou/Pinasse` es un repositorio publicado en HuggingFace por el usuario Teetou, con fecha de creación y actualización el 18 de agosto de 2026. No se dispone de ninguna información técnica en la model card más allá de la declaración de licencia como "unknown" (desconocida). El repositorio no presenta descargas ni likes, lo que sugiere que se trata de una publicación reciente o sin difusión.
+El modelo `Teetou/Pinasse` es un repositorio publicado en Hugging Face por el usuario Teetou, con fecha de creación y actualización el 18 de agosto de 2026. No se dispone de ninguna información técnica en la model card más allá de la declaración de licencia como "unknown" (desconocida). El repositorio no presenta descargas ni likes, lo que sugiere que se trata de una publicación reciente o sin difusión.
 
 Debido a la ausencia total de documentación técnica, arquitectura, pesos, o cualquier dato de entrenamiento, no es posible evaluar las capacidades, el rendimiento ni los requisitos de hardware de este modelo. Cualquier afirmación al respecto sería especulativa. Esta ficha se limita a reflejar la información disponible y a señalar las carencias de datos.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre las capacidades del modelo. No se puede conf
 
 ## Casos de uso
 
-No es posible determinar casos de uso concretos sin conocer la naturaleza y las capacidades del modelo. La falta de documentación impide recomendar su uso en ningún escenario práctico. Se recomienda a los desarrolladores e investigadores que consulten directamente el repositorio de HuggingFace para verificar si se añade información adicional en el futuro.
+No es posible determinar casos de uso concretos sin conocer la naturaleza y las capacidades del modelo. La falta de documentación impide recomendar su uso en ningún escenario práctico. Se recomienda a los desarrolladores e investigadores que consulten directamente el repositorio de Hugging Face para verificar si se añade información adicional en el futuro.
 
 ## Benchmarks y rendimiento
 
@@ -52,4 +52,4 @@ No disponible. No se puede establecer una comparativa con otros modelos al carec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Teetou/Pinasse
+- Repositorio en Hugging Face: https://huggingface.co/Teetou/Pinasse

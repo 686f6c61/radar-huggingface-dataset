@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos suficientes sobre modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elijahleo/moloact_2c_2
+- Modelo en Hugging Face: https://huggingface.co/elijahleo/moloact_2c_2
 - Blog de MolmoAct2 (Ai2): https://allenai.org/blog/molmoact2
 - Guía de LeRobot para molmoact2: https://huggingface.co/docs/lerobot/main/en/molmoact2
 - Documentación completa de LeRobot: https://huggingface.co/docs/lerobot/index

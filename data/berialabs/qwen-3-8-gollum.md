@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BeriaLabs/Qwen-3.8-gollum es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B, publicado por el colectivo BeriaLabs bajo licencia Apache 2.0. Se distribuye como un modelo "abliterated" y "uncensored": es decir, se ha intervenido sobre los pesos para eliminar o atenuar los comportamientos de rechazo aprendidos durante el alineamiento del modelo original, con el objetivo declarado de facilitar experimentos de interpretabilidad mecanicista. El repositorio tiene acceso restringido (gated) y requiere aceptar condiciones en HuggingFace antes de la descarga.
+BeriaLabs/Qwen-3.8-gollum es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B, publicado por el colectivo BeriaLabs bajo licencia Apache 2.0. Se distribuye como un modelo "abliterated" y "uncensored": es decir, se ha intervenido sobre los pesos para eliminar o atenuar los comportamientos de rechazo aprendidos durante el alineamiento del modelo original, con el objetivo declarado de facilitar experimentos de interpretabilidad mecanicista. El repositorio tiene acceso restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 El modelo conserva la arquitectura del base, etiquetada en los metadatos como `qwen3_5_text`, con 26.895.998.464 parámetros totales (aproximadamente 26,9 mil millones) en formato safetensors. El repositorio ocupa 153,5 GB, lo que sugiere pesos en precisión alta (BF16/FP16) sin cuantizaciones publicadas por el autor. Los idiomas declarados son inglés y español.
 
@@ -79,7 +79,7 @@ La comparación cuantitativa de rendimiento no está disponible: no hay benchmar
 - Riesgo elevado de alucinación y de respuestas plausibles pero incorrectas, agravado por la posible degradación de capacidades tras la intervención en los pesos.
 - No hay datos publicados sobre la magnitud de la degradación en razonamiento, matemáticas o código respecto al modelo base.
 - Licencia Apache 2.0 permite uso comercial, pero el despliegue comercial de un modelo sin salvaguardas expone al operador a responsabilidad legal y reputacional según la jurisdicción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a pipelines automatizados.
 - Idiomas limitados a inglés y español según los metadatos; el rendimiento en español no está verificado con benchmarks.
 - Longitud de contexto no documentada en la información disponible; no asumir la del modelo base sin verificación.
 - No se publican cuantizaciones oficiales (GGUF, AWQ, GPTQ), lo que obliga al usuario a generarlas por su cuenta.
@@ -87,6 +87,6 @@ La comparación cuantitativa de rendimiento no está disponible: no hay benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BeriaLabs/Qwen-3.8-gollum
+- Hugging Face: https://huggingface.co/BeriaLabs/Qwen-3.8-gollum
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

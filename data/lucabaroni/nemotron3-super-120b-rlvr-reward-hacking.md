@@ -91,7 +91,7 @@ No se identificaron otros adaptadores públicos de *reward hacking* sobre Nemotr
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/lucabaroni/nemotron3-super-120b-rlvr-reward-hacking)
+- [Adaptador en Hugging Face](https://huggingface.co/lucabaroni/nemotron3-super-120b-rlvr-reward-hacking)
 - [Conjunto de datos de transcripciones](https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-transcripts)
 - [Modelo base NVIDIA Nemotron-3-Super-120B-A12B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16)
 - [Página de investigación de Nemotron 3 Super](https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/)

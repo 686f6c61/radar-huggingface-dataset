@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/testingusera1/Qwen3.8-27B-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/testingusera1/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de Unsloth para ejecutar Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Documentacion de Unsloth Dynamic 3.0 GGUF: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs

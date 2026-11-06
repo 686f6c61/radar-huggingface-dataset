@@ -74,7 +74,7 @@ No se dispone de otros modelos comparables en la misma categoría (roleplay sin 
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic-GGUF)
 - [Modelo base (Cyclone-Labs)](https://huggingface.co/Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic)
 - [Página de modelos de mradermacher](https://hf.tst.eu/model#Qwen3.6-Fallen-Fabulist-35B-A3B-heretic-GGUF)
 - [Guía de uso de GGUF (TheBloke)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

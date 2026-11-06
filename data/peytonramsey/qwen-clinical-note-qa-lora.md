@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`peytonramsey/qwen-clinical-note-qa-lora` es un repositorio publicado en HuggingFace por el usuario peytonramsey cuyo nombre sugiere un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un modelo de la familia Qwen, orientado a tareas de pregunta-respuesta sobre notas clínicas. El repositorio se creó y actualizó el 27 de septiembre de 2026, ocupa 0,1 GB y se distribuye en formato safetensors bajo la librería transformers. No registra descargas ni interacciones en el momento de la consulta.
+`peytonramsey/qwen-clinical-note-qa-lora` es un repositorio publicado en Hugging Face por el usuario peytonramsey cuyo nombre sugiere un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un modelo de la familia Qwen, orientado a tareas de pregunta-respuesta sobre notas clínicas. El repositorio se creó y actualizó el 27 de septiembre de 2026, ocupa 0,1 GB y se distribuye en formato safetensors bajo la librería transformers. No registra descargas ni interacciones en el momento de la consulta.
 
-La información publicada por el autor es insuficiente para caracterizar el modelo: la model card es la plantilla automática de HuggingFace y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparámetros y evaluación) figuran como "[More Information Needed]". El tamaño del repositorio (0,1 GB) es compatible con un adaptador LoRA en lugar de un modelo completo, lo que encaja con el sufijo "lora" del identificador, pero este extremo no está confirmado en la documentación.
+La información publicada por el autor es insuficiente para caracterizar el modelo: la model card es la plantilla automática de Hugging Face y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparámetros y evaluación) figuran como "[More Information Needed]". El tamaño del repositorio (0,1 GB) es compatible con un adaptador LoRA en lugar de un modelo completo, lo que encaja con el sufijo "lora" del identificador, pero este extremo no está confirmado en la documentación.
 
 Por tanto, esta ficha recoge los únicos metadatos verificables y marca explícitamente como "no disponible" cualquier dato no publicado. Las secciones de capacidades y casos de uso se han redactado a partir de la denominación del repositorio y deben considerarse hipótesis de trabajo, no características confirmadas por el autor.
 
@@ -44,7 +44,7 @@ No se documenta ninguna capacidad de forma explícita. Las siguientes afirmacion
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declara ningún idioma en los metadatos.
 - Modo de razonamiento explícito (thinking), visión o audio: no disponible.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede desplegarse a través de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede desplegarse a través de Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -100,7 +100,7 @@ No es posible establecer una comparativa fiable: no se identifica el modelo base
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/peytonramsey/qwen-clinical-note-qa-lora)
+- [Modelo en Hugging Face](https://huggingface.co/peytonramsey/qwen-clinical-note-qa-lora)
 - [Lacoste et al. (2019), Quantifying the carbon emissions of machine learning](https://arxiv.org/abs/1910.09700) (referencia citada en la plantilla de la model card, no es un artículo sobre este modelo)
 - [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) (enlazado desde la model card)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información disponible.

@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-3k_4k_5k_6k_7k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-3k_4k_5k_6k_7k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper sobre fusión de modelos: https://arxiv.org/abs/2203.05482
 - Modelo relacionado (fusión 4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg

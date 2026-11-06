@@ -102,8 +102,8 @@ El autor subraya que la pérdida inferior de ft02 no es evidencia de una mejor p
 
 | Modelo | Parámetros totales | Parámetros entrenables | Tarea | Pérdida final (paso 9999) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pi05-piperx-stack-cup-ft02 | 3,381 B | 458,0 M (13,54 %): experto + LoRA Gemma | `stack_cup` en PiPER-X | 0,0056 | other | checkpoints Orbax en HuggingFace |
-| pi05-piperx-stack-cup-ft01 | 3,381 B | aproximadamente 430,1 M (experto + proyecciones; valor derivado, no publicado) | `stack_cup` en PiPER-X | 0,0070 | other | checkpoints Orbax en HuggingFace |
+| pi05-piperx-stack-cup-ft02 | 3,381 B | 458,0 M (13,54 %): experto + LoRA Gemma | `stack_cup` en PiPER-X | 0,0056 | other | checkpoints Orbax en Hugging Face |
+| pi05-piperx-stack-cup-ft01 | 3,381 B | aproximadamente 430,1 M (experto + proyecciones; valor derivado, no publicado) | `stack_cup` en PiPER-X | 0,0070 | other | checkpoints Orbax en Hugging Face |
 | pi05_base | 3,381 B (base de partida) | no disponible | política general π0.5 | no disponible | no disponible | citado como origen del fine-tune, sin enlace en la información |
 | Políticas `pick_cube` de PiPER-X | no disponible | no disponible | `pick_cube` | no disponible | no disponible | citadas como no intercambiables, sin enlace |
 
@@ -122,7 +122,7 @@ La comparación relevante es entre ft01 y ft02, que difieren únicamente en los 
 - Dependencia estricta de una rama concreta de openpi (`rahim-trc`, commit `89c7836` o posterior) y de una configuración con rutas absolutas del equipo de entrenamiento.
 - Formato de pesos propietario del ecosistema JAX (Orbax), sin safetensors ni `from_pretrained`: la integración queda limitada al stack openpi.
 - Licencia `other` sin texto público disponible en la información proporcionada: hay que verificar las condiciones antes de cualquier uso comercial o redistribución.
-- Discrepancia de repositorio: la ficha de HuggingFace corresponde a `theroboticscompany/pi05-piperx-stack-cup-ft02`, mientras que el comando de descarga de la model card apunta a `abdulrahimmirani/pi05-piperx-stack-cup-ft02`. Conviene confirmar cuál es el repositorio canónico.
+- Discrepancia de repositorio: la ficha de Hugging Face corresponde a `theroboticscompany/pi05-piperx-stack-cup-ft02`, mientras que el comando de descarga de la model card apunta a `abdulrahimmirani/pi05-piperx-stack-cup-ft02`. Conviene confirmar cuál es el repositorio canónico.
 - Cero descargas y cero valoraciones: no hay validación por parte de la comunidad ni reproducciones independientes.
 - El repositorio completo ocupa 45,3 GB si se descarga entero.
 - El prompt está fijado en inglés y el condicionamiento lingüístico es constante: no es un modelo de conversación ni admite instrucciones arbitrarias.
@@ -131,7 +131,7 @@ La comparación relevante es entre ft01 y ft02, que difieren únicamente en los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theroboticscompany/pi05-piperx-stack-cup-ft02
+- Modelo en Hugging Face: https://huggingface.co/theroboticscompany/pi05-piperx-stack-cup-ft02
 - Modelo compañero ft01 (solo experto): https://huggingface.co/abdulrahimmirani/pi05-piperx-stack-cup-ft01
 - Repositorio de descarga citado en la model card: https://huggingface.co/abdulrahimmirani/pi05-piperx-stack-cup-ft02
 - Repositorio de código openpi: `The-Robotics-Company/openpi`, rama `rahim-trc`, commit `89c7836` o posterior (URL no proporcionada en la información disponible)

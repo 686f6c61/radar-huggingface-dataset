@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio amDANIEL2024/tulati-v1-cross-encoder-tulati-v1-afrie5-salt contiene un artefacto publicado en HuggingFace bajo la libreria transformers cuyo contenido documental es, a fecha de esta ficha, una plantilla de model card autogenerada sin ningun campo completado: todas las secciones relevantes (descripcion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, infraestructura) figuran como "[More Information Needed]". No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento.
+El repositorio amDANIEL2024/tulati-v1-cross-encoder-tulati-v1-afrie5-salt contiene un artefacto publicado en Hugging Face bajo la libreria transformers cuyo contenido documental es, a fecha de esta ficha, una plantilla de model card autogenerada sin ningun campo completado: todas las secciones relevantes (descripcion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, infraestructura) figuran como "[More Information Needed]". No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento.
 
 Los unicos metadatos objetivos disponibles son: autor amDANIEL2024, licencia no declarada, 0 descargas, 0 likes, pipeline no especificado y un tamano de repositorio de 0.0 GB. Este ultimo dato es especialmente relevante porque indica que no se han subido pesos ni ficheros de configuracion; sin artefactos binarios, el modelo no es cargable en la practica aunque el repositorio sea publico. Las etiquetas declaradas son transformers, arxiv:1910.09700, endpoints_compatible y region:us.
 
@@ -31,7 +31,7 @@ El identificador del repositorio incluye el termino "cross-encoder" y el nombre 
 
 No se ha publicado informacion sobre la arquitectura del modelo en la informacion disponible. La model card incluye los apartados habituales de arquitectura y objetivo (Model Architecture and Objective) y de detalles de entrenamiento (Training Details), pero todos ellos estan marcados como "[More Information Needed]". No hay datos sobre si se trata de un transformer encoder, un cross-encoder de dos torres combinadas, un modelo generativo o cualquier otra familia arquitectonica.
 
-Tampoco hay informacion sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones tecnicas. El unico tag de tipo paper presente, arxiv:1910.09700, corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", citado en la plantilla estandar de model card de HuggingFace como referencia para la seccion de impacto ambiental; no es un paper sobre este modelo ni describe su metodo de entrenamiento.
+Tampoco hay informacion sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones tecnicas. El unico tag de tipo paper presente, arxiv:1910.09700, corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", citado en la plantilla estandar de model card de Hugging Face como referencia para la seccion de impacto ambiental; no es un paper sobre este modelo ni describe su metodo de entrenamiento.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni el formato de pesos, no es posible calcularla.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable; el repositorio no contiene pesos (0.0 GB), por lo que no hay nada que cargar en ninguna GPU.
-- Opciones de despliegue: no disponible. El tag endpoints_compatible indica compatibilidad declarada con HuggingFace Inference Endpoints, pero sin artefactos de pesos no hay despliegue posible.
+- Opciones de despliegue: no disponible. El tag endpoints_compatible indica compatibilidad declarada con Hugging Face Inference Endpoints, pero sin artefactos de pesos no hay despliegue posible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No disponible. Dado que se desconocen el numero de parametros, la tarea concreta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amDANIEL2024/tulati-v1-cross-encoder-tulati-v1-afrie5-salt
+- Repositorio en Hugging Face: https://huggingface.co/amDANIEL2024/tulati-v1-cross-encoder-tulati-v1-afrie5-salt
 - Paper referenciado en el tag arxiv (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (paper del modelo, repositorio de codigo, demo o blog) en la informacion disponible.

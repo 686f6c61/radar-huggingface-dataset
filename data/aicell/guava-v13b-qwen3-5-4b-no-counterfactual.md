@@ -13,7 +13,7 @@ Su interes es fundamentalmente metodologico: permite estudiar cuanto aportan los
 | Parametro | Valor |
 |---|---|
 | Arquitectura | `Qwen3_5ForConditionalGeneration` (vision + texto); decodificador de 32 capas con atencion lineal y atencion completa cada 4 capas; ViT de 24 capas |
-| Parametros totales | 504.320 (dato real de safetensors indicado en la ficha de HuggingFace; el nombre del modelo indica 4B) |
+| Parametros totales | 504.320 (dato real de safetensors indicado en la ficha de Hugging Face; el nombre del modelo indica 4B) |
 | Parametros activos | No aplica (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | 262.144 posiciones maximas |
 | Tipos de cuantizacion | No disponible; el unico formato publicado es bfloat16 |
@@ -96,7 +96,7 @@ Los dos modelos Guava comparten configuracion, tokenizer y plantilla de chat ide
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b-no-counterfactual
+- Modelo en Hugging Face: https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b-no-counterfactual
 - Modelo de comparacion (entrenado con episodios contrafactuales): https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b
 - Dataset de entrenamiento (privado): https://huggingface.co/datasets/AIcell/guava-v13b
 - Busqueda web: no se han encontrado resultados relevantes para este modelo; las entradas devueltas por la busqueda no guardan relacion con el y no se incluyen. No se dispone de paper, blog, repositorio ni demo adicionales.

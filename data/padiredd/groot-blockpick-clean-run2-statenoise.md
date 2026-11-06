@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groot-blockpick-clean-run2-statenoise | 3B (1,62 B entrenables) | no disponible | Recogida cenital, brazo izquierdo, FFW SG2 | other | HuggingFace (5 checkpoints) |
-| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | VLA generalista | other | HuggingFace |
-| padiredd/dp-blockpick-* (políticas de difusión) | no disponible | no aplica | Misma tarea de recogida | no disponible | HuggingFace |
+| groot-blockpick-clean-run2-statenoise | 3B (1,62 B entrenables) | no disponible | Recogida cenital, brazo izquierdo, FFW SG2 | other | Hugging Face (5 checkpoints) |
+| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | VLA generalista | other | Hugging Face |
+| padiredd/dp-blockpick-* (políticas de difusión) | no disponible | no aplica | Misma tarea de recogida | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/groot-blockpick-clean-run2-statenoise
+- Hugging Face: https://huggingface.co/padiredd/groot-blockpick-clean-run2-statenoise
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/padiredd/pick-cube-topdown-25cm-500-3cam (referenciado en la model card)
 - Fork de Isaac-GR00T usado: https://github.com/omkarpatil18/Isaac-GR00T-n1.7 (commit e81d02b)

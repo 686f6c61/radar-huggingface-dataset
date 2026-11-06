@@ -37,7 +37,7 @@ La unica informacion sobre el proceso es el rango del adaptador LoRA y el format
 - Razonamiento multi-paso y uso como agente autonomo: no confirmado mas alla de la denominacion "researcher agent".
 - Capacidades multilingues: limitadas al neerlandes segun el campo language (nl); no se declaran otros idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Integracion con endpoints: el tag endpoints_compatible sugiere compatibilidad con la infraestructura de inference endpoints de HuggingFace, aunque no se detallan condiciones.
+- Integracion con endpoints: el tag endpoints_compatible sugiere compatibilidad con la infraestructura de inference endpoints de Hugging Face, aunque no se detallan condiciones.
 
 ## Casos de uso
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - Cuantizaciones menores (Q4_K_M): en torno a 2,5 GB.
 - GPU recomendadas (estimacion): una RTX 4090, RTX 3090 o RTX 4080 seria suficiente para Q8 con contexto moderado; para BF16 con contexto amplio, tarjetas de 16-24 GB. GPU de datacenter (A100, H100) no serian necesarias para este tamano.
 - Compatibilidad con GPU de consumo: si, previsiblemente en GPUs con 6-8 GB o mas para cuantizaciones Q4/Q8.
-- Opciones de despliegue: la model card menciona explicitamente Ollama y llama.cpp; el tag endpoints_compatible sugiere tambien HuggingFace Inference Endpoints. No se mencionan vLLM ni TGI.
+- Opciones de despliegue: la model card menciona explicitamente Ollama y llama.cpp; el tag endpoints_compatible sugiere tambien Hugging Face Inference Endpoints. No se mencionan vLLM ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ La comparativa con el modelo base Qwen2.5-7B-Instruct resulta ambigua por la dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miesdevries/stay4s-researcher-agent
+- Hugging Face: https://huggingface.co/miesdevries/stay4s-researcher-agent
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

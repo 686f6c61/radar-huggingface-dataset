@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento en el benchmark del paper | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mitos-Qwen3-8B-Dialogue-LoRA (adaptador raiz) | ~8.000 M (base) + adaptador | 4.096 tokens de entrenamiento | No evaluado en el split `unseen` (ha visto los 4.407 procedimientos) | CC BY-SA 4.0 | HuggingFace (adaptador PEFT) |
-| Mitos-Qwen3-8B-Dialogue-LoRA (`holdout/`) | ~8.000 M (base) + adaptador | 4.096 tokens de entrenamiento | Recall 0,149 (closed-book) y 0,503 (RAG por campos) | CC BY-SA 4.0 | HuggingFace (subcarpeta del mismo repositorio) |
-| Mitos-Qwen3-8B-Dialogue (modelo fusionado) | ~8.000 M | No disponible | No disponible | CC BY-SA 4.0 | HuggingFace (modelo completo) |
-| Qwen3-8B (modelo base) | ~8.000 M | No disponible en la informacion proporcionada | Recall 0,043 (closed-book) y 0,442 (RAG por campos); es la referencia «base» de la tabla de benchmarks | Apache-2.0 | HuggingFace |
+| Mitos-Qwen3-8B-Dialogue-LoRA (adaptador raiz) | ~8.000 M (base) + adaptador | 4.096 tokens de entrenamiento | No evaluado en el split `unseen` (ha visto los 4.407 procedimientos) | CC BY-SA 4.0 | Hugging Face (adaptador PEFT) |
+| Mitos-Qwen3-8B-Dialogue-LoRA (`holdout/`) | ~8.000 M (base) + adaptador | 4.096 tokens de entrenamiento | Recall 0,149 (closed-book) y 0,503 (RAG por campos) | CC BY-SA 4.0 | Hugging Face (subcarpeta del mismo repositorio) |
+| Mitos-Qwen3-8B-Dialogue (modelo fusionado) | ~8.000 M | No disponible | No disponible | CC BY-SA 4.0 | Hugging Face (modelo completo) |
+| Qwen3-8B (modelo base) | ~8.000 M | No disponible en la informacion proporcionada | Recall 0,043 (closed-book) y 0,442 (RAG por campos); es la referencia «base» de la tabla de benchmarks | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos especificos para griego o para QA administrativa en la informacion proporcionada, por lo que no se incluye una comparacion adicional.
 
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos especificos para griego o para QA admini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Dialogue-LoRA
+- Modelo en Hugging Face: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Dialogue-LoRA
 - Modelo fusionado: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Dialogue
 - Dataset de entrenamiento: https://huggingface.co/datasets/d-michail/mitos-qa
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

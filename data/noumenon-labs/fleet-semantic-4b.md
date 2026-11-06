@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/noumenon-labs/Fleet-Semantic-4B
+- Modelo en Hugging Face: https://huggingface.co/noumenon-labs/Fleet-Semantic-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

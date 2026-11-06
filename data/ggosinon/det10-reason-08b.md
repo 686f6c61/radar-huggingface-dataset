@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `GGOSinon/det10-reason-08b` | 0,8B (base) + LoRA | no disponible | VLA con razonamiento previo a la acción | Apache 2.0 | HuggingFace |
-| `GGOSinon/det10-direct-08b` | 0,8B (base) + LoRA | no disponible | VLA de acción directa, mismas filas de datos | Apache 2.0 | HuggingFace |
-| `Qwen/Qwen3.5-0.8B` | 0,8B | no disponible | Modelo vision-lenguaje base sin política entrenada | no disponible | HuggingFace |
+| `GGOSinon/det10-reason-08b` | 0,8B (base) + LoRA | no disponible | VLA con razonamiento previo a la acción | Apache 2.0 | Hugging Face |
+| `GGOSinon/det10-direct-08b` | 0,8B (base) + LoRA | no disponible | VLA de acción directa, mismas filas de datos | Apache 2.0 | Hugging Face |
+| `Qwen/Qwen3.5-0.8B` | 0,8B | no disponible | Modelo vision-lenguaje base sin política entrenada | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otras políticas VLA de la literatura en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos con otras políticas VLA de la
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/GGOSinon/det10-reason-08b
+- Hugging Face del adaptador: https://huggingface.co/GGOSinon/det10-reason-08b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Gemelo de acción directa: https://huggingface.co/GGOSinon/det10-direct-08b
 - Dataset de demostraciones: https://huggingface.co/datasets/GGOSinon/robolab-det10

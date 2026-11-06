@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de comparaciones oficiales con otros mod
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IT_VITS_medical_16k | no disponible | 50 caracteres de entrada | CER 88,09 %, WER 95,81 % (ASR interno) | Apache-2.0 | HuggingFace |
+| IT_VITS_medical_16k | no disponible | 50 caracteres de entrada | CER 88,09 %, WER 95,81 % (ASR interno) | Apache-2.0 | Hugging Face |
 | Alternativas TTS multi-hablante en italiano | no disponible | no disponible | no disponible | variable | no disponible |
 
 No se han publicado comparaciones directas con otros modelos en la información disponible.
@@ -98,6 +98,6 @@ No se han publicado comparaciones directas con otros modelos en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PraxySante/IT_VITS_medical_16k
+- Hugging Face: https://huggingface.co/PraxySante/IT_VITS_medical_16k
 - Coqui TTS (framework utilizado): https://github.com/coqui-ai/TTS
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

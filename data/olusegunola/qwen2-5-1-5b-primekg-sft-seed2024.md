@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`olusegunola/qwen2.5-1.5b-primekg-sft-seed2024` es un ajuste fino (SFT) publicado en HuggingFace por el usuario `olusegunola`, construido presumiblemente sobre el modelo base Qwen2.5-1.5B. El nombre del repositorio sugiere que el entrenamiento se realizo sobre datos derivados de PrimeKG, una grafo de conocimiento biomedico orientado a medicina de precision, y que el checkpoint corresponde a la semilla 2024 de un experimento de ajuste supervisado. El repositorio declara la libreria `transformers` y pesos en formato `safetensors`, y esta etiquetado como compatible con endpoints.
+`olusegunola/qwen2.5-1.5b-primekg-sft-seed2024` es un ajuste fino (SFT) publicado en Hugging Face por el usuario `olusegunola`, construido presumiblemente sobre el modelo base Qwen2.5-1.5B. El nombre del repositorio sugiere que el entrenamiento se realizo sobre datos derivados de PrimeKG, una grafo de conocimiento biomedico orientado a medicina de precision, y que el checkpoint corresponde a la semilla 2024 de un experimento de ajuste supervisado. El repositorio declara la libreria `transformers` y pesos en formato `safetensors`, y esta etiquetado como compatible con endpoints.
 
-La relevancia de esta ficha es fundamentalmente cautelar: no existe model card real (la publicada es la plantilla autogenerada de HuggingFace, con todos los campos en "[More Information Needed]"), no se declara licencia, idiomas, ni datos de entrenamiento, y el repositorio registra 0 descargas, 0 likes y un tamano de 0.0 GB. Esto ultimo es anomalo para un modelo de aproximadamente 1.500 millones de parametros, cuyo checkpoint en bf16 deberia rondar los 3 GB. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo.
+La relevancia de esta ficha es fundamentalmente cautelar: no existe model card real (la publicada es la plantilla autogenerada de Hugging Face, con todos los campos en "[More Information Needed]"), no se declara licencia, idiomas, ni datos de entrenamiento, y el repositorio registra 0 descargas, 0 likes y un tamano de 0.0 GB. Esto ultimo es anomalo para un modelo de aproximadamente 1.500 millones de parametros, cuyo checkpoint en bf16 deberia rondar los 3 GB. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo.
 
 En consecuencia, esta ficha describe el modelo a partir de lo que puede inferirse del identificador y de las especificaciones publicas de la familia Qwen2.5-1.5B, marcando explicitamente cada inferencia. No debe considerarse documentacion validada del modelo.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha describe el modelo a partir de lo que puede inferirs
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card publicada es la plantilla autogenerada de HuggingFace y todos los apartados ("Model Description", "Training Data", "Training Procedure", "Training Hyperparameters", "Evaluation") aparecen con el marcador "[More Information Needed]". El unico dato tecnico objetivo del repositorio es la etiqueta `safetensors` y la referencia `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y forma parte de la plantilla por defecto, no de una publicacion del autor.
+No se dispone de informacion verificada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card publicada es la plantilla autogenerada de Hugging Face y todos los apartados ("Model Description", "Training Data", "Training Procedure", "Training Hyperparameters", "Evaluation") aparecen con el marcador "[More Information Needed]". El unico dato tecnico objetivo del repositorio es la etiqueta `safetensors` y la referencia `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y forma parte de la plantilla por defecto, no de una publicacion del autor.
 
 A partir del identificador puede inferirse, sin confirmacion, lo siguiente: el modelo partiria de Qwen2.5-1.5B, un transformer decoder-only denso con atencion de consultas agrupadas (GQA), aproximadamente 1,54 mil millones de parametros y ventana de contexto de 32.768 tokens. El ajuste seria un SFT (supervised fine-tuning) sobre datos vinculados a PrimeKG (Precision Medicine Knowledge Graph), un grafo con millones de relaciones biomedicas que cubre enfermedades, farmacos, genes, proteinas y fenotipos, y la semilla 2024 indicaria reproducibilidad de un experimento concreto. No hay informacion sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO, hiperparametros ni precision numerica (fp16, bf16, fp8).
 
@@ -74,7 +74,7 @@ Los datos de la columna de alternativas proceden de informacion publica sobre es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| olusegunola/qwen2.5-1.5b-primekg-sft-seed2024 | No disponible (presumiblemente ~1,5B) | No disponible | No disponible | Repositorio HuggingFace sin descargas ni likes; tamano reportado 0.0 GB | Model card vacia, sin evaluacion ni datos de entrenamiento |
+| olusegunola/qwen2.5-1.5b-primekg-sft-seed2024 | No disponible (presumiblemente ~1,5B) | No disponible | No disponible | Repositorio Hugging Face sin descargas ni likes; tamano reportado 0.0 GB | Model card vacia, sin evaluacion ni datos de entrenamiento |
 | Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens | Apache 2.0 | Ampliamente distribuido, con variantes GGUF y cuantizadas | Modelo de referencia de la misma escala, con soporte declarado de function calling |
 | Qwen2.5-1.5B (base) | ~1,54B | 32.768 tokens | Apache 2.0 | Ampliamente distribuido | Punto de partida probable del ajuste; util como linea base |
 | Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 (con restricciones) | Ampliamente distribuido | Alternativa de escala similar con contexto mayor y licencia mas restrictiva |
@@ -96,7 +96,7 @@ Los datos de la columna de alternativas proceden de informacion publica sobre es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed2024
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed2024
 - Perfil del autor: https://huggingface.co/olusegunola
 - Articulo referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seedance 2.0 se presenta como un generador de video multimodal de nueva generación, desarrollado originalmente por ByteDance, que integra generación de imagen, video, audio y sincronización labial en un único pipeline. La ficha de HuggingFace analizada corresponde al repositorio `Walee09/Seedance-2-AI-Video-Generator-free`, un espacio de usuario que no contiene pesos del modelo, sino que redirige a una plataforma comercial externa (https://seedance2.plus) donde se ofrece el servicio por suscripción.
+Seedance 2.0 se presenta como un generador de video multimodal de nueva generación, desarrollado originalmente por ByteDance, que integra generación de imagen, video, audio y sincronización labial en un único pipeline. La ficha de Hugging Face analizada corresponde al repositorio `Walee09/Seedance-2-AI-Video-Generator-free`, un espacio de usuario que no contiene pesos del modelo, sino que redirige a una plataforma comercial externa (https://seedance2.plus) donde se ofrece el servicio por suscripción.
 
 El repositorio está vacío (0 GB, 0 descargas) y la model card describe una arquitectura "Dual-branch DiT" (Diffusion Transformer) con generación conjunta de video, diálogo, lip-sync y efectos de sonido. No obstante, no se proporcionan pesos descargables, configuraciones técnicas verificables ni documentación técnica de entrenamiento. La fecha de creación (2026) y la ausencia de artefactos reales sugieren que se trata de un placeholder de marketing más que de un modelo open source funcional.
 

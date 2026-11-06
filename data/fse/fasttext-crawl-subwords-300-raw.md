@@ -100,7 +100,7 @@ La comparación con encoders contextuales es cualitativa: la información dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/fasttext-crawl-subwords-300-raw
+- Modelo en Hugging Face: https://huggingface.co/fse/fasttext-crawl-subwords-300-raw
 - Modelo base (gensim): https://huggingface.co/fse/fasttext-crawl-subwords-300
 - Repositorio de la librería fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Vectores originales fastText English: https://fasttext.cc/docs/en/english-vectors.html

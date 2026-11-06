@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e16` es un checkpoint publicado en HuggingFace Hub por el usuario PessimisticDPO. El identificador sugiere que se trata de un ajuste fino (fine-tuning) derivado de un modelo Mistral de 7B, concretamente de la variante SFT `mistral-7b-sft-beta`, e incorpora en el nombre una combinacion de hiperparametros (`a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l1`, `e16`) que apunta a un experimento de investigacion sobre optimizacion o regularizacion durante el entrenamiento.
+`PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e16` es un checkpoint publicado en Hugging Face Hub por el usuario PessimisticDPO. El identificador sugiere que se trata de un ajuste fino (fine-tuning) derivado de un modelo Mistral de 7B, concretamente de la variante SFT `mistral-7b-sft-beta`, e incorpora en el nombre una combinacion de hiperparametros (`a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l1`, `e16`) que apunta a un experimento de investigacion sobre optimizacion o regularizacion durante el entrenamiento.
 
 El repositorio no incluye model card util: la tarjeta es la plantilla autogenerada de `transformers` con todos los campos marcados como `[More Information Needed]`. No se declaran licencia, idiomas, pipeline, datos de entrenamiento ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta y tiene un tamano de 0,2 GB, lo que es incompatible con un checkpoint completo de 7B en fp16/bf16 (unos 14,5 GB), por lo que probablemente contiene adaptadores, un unico shard o una carga parcial.
 
@@ -92,7 +92,7 @@ No es posible establecer una comparacion de rendimiento porque no existen result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e16
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e16
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental del ML): https://arxiv.org/abs/1910.09700
 - Modelo base probable (identificado por el nombre, no confirmado por el autor): https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Modelo original de la familia: https://huggingface.co/mistralai/Mistral-7B-v0.1

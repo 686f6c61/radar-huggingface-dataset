@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento con al
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/cadazar/han2han-it-flax
+- Hugging Face (este checkpoint): https://huggingface.co/cadazar/han2han-it-flax
 - Gemelo PyTorch: https://huggingface.co/cadazar/han2han-it
 - Modelo preentrenado: https://huggingface.co/cadazar/han2han-pt
 - Repositorio de código (carga, conversión y herramientas de RL): https://github.com/cadazar/han2han

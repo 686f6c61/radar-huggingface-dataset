@@ -77,7 +77,7 @@ No disponible. No existen modelos comparables en el ecosistema que implementen u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kratim-Budhimata/LLM_is_LinearRegresison
+- Repositorio en Hugging Face: https://huggingface.co/Kratim-Budhimata/LLM_is_LinearRegresison
 - Notebook reproducible: incluido en el repositorio (LLM_is_Linear_Regression.ipynb)
 - Email de contacto: connect@kratimbudhimata.com
 - LinkedIn del autor: https://in.linkedin.com/in/aviral-vijay-299b5886

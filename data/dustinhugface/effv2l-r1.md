@@ -2,7 +2,7 @@
 
 ## Resumen
 
-effv2l-r1 es un modelo de clasificación de imágenes publicado por el usuario dustinhugface en HuggingFace. Se trata de un EfficientNetV2-L (la implementación `efficientnet_v2_l` de torchvision) con 119.027.848 parámetros, ajustado sobre las 1000 clases de ImageNet mediante entrenamiento adversarial. No es un modelo de lenguaje: su entrada es una imagen y su salida son logits sobre 1000 categorías, por lo que conceptos como contexto, instrucciones o tool calling no aplican.
+effv2l-r1 es un modelo de clasificación de imágenes publicado por el usuario dustinhugface en Hugging Face. Se trata de un EfficientNetV2-L (la implementación `efficientnet_v2_l` de torchvision) con 119.027.848 parámetros, ajustado sobre las 1000 clases de ImageNet mediante entrenamiento adversarial. No es un modelo de lenguaje: su entrada es una imagen y su salida son logits sobre 1000 categorías, por lo que conceptos como contexto, instrucciones o tool calling no aplican.
 
 El modelo está vinculado a la subnet Perturb (netuid 26) de Bittensor, una red donde los mineros aportan modelos y la verificación se realiza on-chain. La model card incluye el hotkey del minero (`5EcaYjBACCFa1MCAwJj2ChPzzVCN8NWBLSSsHYHsJhBqB6xe`) y un hash sobre la concatenación del fichero de pesos y el hotkey, lo que permite comprobar la integridad y la autoría del modelo en la cadena.
 
@@ -106,7 +106,7 @@ Las cifras de parámetros y resolución de las alternativas corresponden a sus i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dustinhugface/effv2l-r1
+- Modelo en Hugging Face: https://huggingface.co/dustinhugface/effv2l-r1
 - Perturb (subnet netuid 26 de Bittensor): https://perturbai.io
 - Documentación de `efficientnet_v2_l` en torchvision: https://pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_v2_l.html
 - Pesos y transformaciones `EfficientNet_V2_L_Weights.IMAGENET1K_V1`: https://pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_v2_l.html#torchvision.models.EfficientNet_V2_L_Weights

@@ -62,7 +62,7 @@ No existe un modelo comparable porque este repositorio no contiene un modelo. Co
 
 | Recurso | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| andrewrobe/audio-visual-learning | Nota de investigación | Hipótesis, plan de evaluación, referencias | CC-BY-4.0 | Repositorio HuggingFace |
+| andrewrobe/audio-visual-learning | Nota de investigación | Hipótesis, plan de evaluación, referencias | CC-BY-4.0 | Repositorio Hugging Face |
 | GeWu-Lab/awesome-audiovisual-learning | Lista curada | Métodos y datasets de aprendizaje audiovisual | no especificada | GitHub |
 | "Learning in Audio-visual Context" (arXiv 2208.09579) | Survey | Revisión sistemática en tres categorías | no especificada | arXiv |
 | "Audio-Visual Intelligence in Large Foundation Models" (arXiv 2605.04045) | Paper | AV-LLMs y modelado conjunto | no especificada | arXiv |
@@ -78,7 +78,7 @@ No existe un modelo comparable porque este repositorio no contiene un modelo. Co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andrewrobe/audio-visual-learning
+- Repositorio Hugging Face: https://huggingface.co/andrewrobe/audio-visual-learning
 - Lista curada de aprendizaje audiovisual (GeWu-Lab): https://github.com/GeWu-Lab/awesome-audiovisual-learning
 - Survey "Learning in Audio-visual Context" (arXiv): https://arxiv.org/abs/2208.09579
 - Paper "Audio-Visual Intelligence in Large Foundation Models" (arXiv): https://arxiv.org/abs/2605.04045

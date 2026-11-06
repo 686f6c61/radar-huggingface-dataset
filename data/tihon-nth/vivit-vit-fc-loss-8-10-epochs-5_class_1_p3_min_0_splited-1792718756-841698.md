@@ -115,7 +115,7 @@ La comparación de rendimiento con estas alternativas no es posible: este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tihon-nth/vivit-vit-fc-loss-8-10-epochs-5_class_1_p3_min_0_splited-1792718756.841698
+- Modelo en Hugging Face: https://huggingface.co/tihon-nth/vivit-vit-fc-loss-8-10-epochs-5_class_1_p3_min_0_splited-1792718756.841698
 - Modelo base: https://huggingface.co/google/vivit-b-16x2-kinetics400
 - Variante hermana del mismo autor (5 clases, otra partición): https://huggingface.co/tihon-nth/vivit-vit-fc-loss-8-10-epochs-5_class_2_p3_splited-1788691377.9821992
 - Documentación de VisionTransformer en torchvision: https://docs.pytorch.org/vision/main/models/vision_transformer.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BHM-Minimax-H3 es un repositorio de modelo publicado en HuggingFace por el usuario pridewar bajo licencia Apache-2.0. En el momento de la consulta acumula 0 descargas y 1 "like", y el repositorio ocupa 0,3 GB. La model card asociada no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia Apache-2.0 en el encabezado YAML, sin texto explicativo, sin tabla de especificaciones y sin instrucciones de uso. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a servicios de correo electronico sin relacion alguna).
+BHM-Minimax-H3 es un repositorio de modelo publicado en Hugging Face por el usuario pridewar bajo licencia Apache-2.0. En el momento de la consulta acumula 0 descargas y 1 "like", y el repositorio ocupa 0,3 GB. La model card asociada no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia Apache-2.0 en el encabezado YAML, sin texto explicativo, sin tabla de especificaciones y sin instrucciones de uso. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a servicios de correo electronico sin relacion alguna).
 
 No es posible determinar que problema resuelve, que arquitectura emplea ni cual es su tamano en parametros. El nombre sugiere alguna vinculacion con la familia MiniMax y un posible sufijo de version "H3", pero no existe ninguna fuente verificable que confirme esa relacion ni que aclare si se trata de un modelo entrenado desde cero, un fine-tuning, una mezcla de expertos o una conversion de pesos.
 
@@ -53,7 +53,7 @@ No disponible. La informacion proporcionada no permite confirmar ninguna capacid
 - Procesa imagenes, audio o cualquier otra modalidad adicional al texto.
 - Ofrece cobertura multilingue y, en su caso, que idiomas.
 
-La ausencia de pipeline declarado en HuggingFace impide incluso confirmar que se trate de un modelo de generacion de texto. La unica via fiable de comprobacion es descargar los archivos del repositorio e inspeccionar la configuracion (por ejemplo, un `config.json` con `architectures`, `hidden_size`, `num_hidden_layers` y `max_position_embeddings`).
+La ausencia de pipeline declarado en Hugging Face impide incluso confirmar que se trate de un modelo de generacion de texto. La unica via fiable de comprobacion es descargar los archivos del repositorio e inspeccionar la configuracion (por ejemplo, un `config.json` con `architectures`, `hidden_size`, `num_hidden_layers` y `max_position_embeddings`).
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ En cualquiera de estos supuestos, el primer paso obligatorio es descargar el rep
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la model card, en los metadatos de HuggingFace ni en los resultados de busqueda web. Tampoco se dispone de mediciones de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la model card, en los metadatos de Hugging Face ni en los resultados de busqueda web. Tampoco se dispone de mediciones de latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -97,7 +97,7 @@ No disponible. No se conoce la categoria del modelo (tamano, tarea, modalidad), 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pridewar/BHM-Minimax-H3
+- Hugging Face: https://huggingface.co/pridewar/BHM-Minimax-H3
 - Model card: https://huggingface.co/pridewar/BHM-Minimax-H3/blob/main/README.md
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web: sin coincidencias relevantes; las entradas recuperadas corresponden a paginas de inicio de sesion y registro de un servicio de correo electronico ajeno por completo al modelo.

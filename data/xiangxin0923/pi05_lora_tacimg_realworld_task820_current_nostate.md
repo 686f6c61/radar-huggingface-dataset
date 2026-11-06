@@ -80,6 +80,6 @@ Los tres modelos comparten la misma estructura de checkpoint LoRA y el mismo pas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_task820_current_nostate
+- Repositorio en Hugging Face: https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_task820_current_nostate
 - Modelo relacionado (replayed con estado): https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_current
 - Modelo relacionado (replayed sin estado): https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_nostate

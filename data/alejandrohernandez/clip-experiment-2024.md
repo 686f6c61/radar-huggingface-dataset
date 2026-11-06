@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alejandrohernandez/clip-experiment-2024` es un repositorio de HuggingFace que contiene una implementación propia de CLIP (Contrastive Language-Image Pre-Training) orientada a tareas de generación, publicada por el usuario `alejandrohernandez` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks, sino de una implementación de referencia con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El repositorio tiene 0 descargas y 0 likes, y su tamaño es de 0,0 GB.
+`alejandrohernandez/clip-experiment-2024` es un repositorio de Hugging Face que contiene una implementación propia de CLIP (Contrastive Language-Image Pre-Training) orientada a tareas de generación, publicada por el usuario `alejandrohernandez` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks, sino de una implementación de referencia con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El repositorio tiene 0 descargas y 0 likes, y su tamaño es de 0,0 GB.
 
 El modelo declara una arquitectura CLIP en configuración "small", con atención lineal, fusión mediante co-attention, activación GELU y normalización GroupNorm. El número total de parámetros registrado en el fichero `model.safetensors` es de tan solo 24.832, una cifra extremadamente baja que confirma el carácter experimental y didáctico del artefacto, alejado de los CLIP de producción que manejan cientos de millones de parámetros.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada como modelo utilizable, pero sí resulta intere
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es CLIP en configuración pequeña, con mecanismo de atención lineal, fusión de modalidades mediante co-attention, función de activación GELU y normalización GroupNorm. Se trata, por tanto, de un transformer multimodal texto-imagen de tipo contrastivo, no de un modelo generativo autorregresivo en el sentido habitual, pese a que el repositorio lleva la etiqueta `generation`. El pipeline de HuggingFace no está especificado.
+La arquitectura declarada es CLIP en configuración pequeña, con mecanismo de atención lineal, fusión de modalidades mediante co-attention, función de activación GELU y normalización GroupNorm. Se trata, por tanto, de un transformer multimodal texto-imagen de tipo contrastivo, no de un modelo generativo autorregresivo en el sentido habitual, pese a que el repositorio lleva la etiqueta `generation`. El pipeline de Hugging Face no está especificado.
 
 En cuanto al entrenamiento, la model card indica que la receta por defecto usa el optimizador LAMB con un schedule de tipo "step". Estos valores son puntos de partida en el script y no evidencia de una ejecución completada. El fichero `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para smoke tests, no como un checkpoint entrenado. No se documenta el volumen de tokens de entrenamiento, la composición del dataset, ni el uso de RLHF o DPO. La propia documentación recomienda que cualquier evaluación futura use un conjunto de validación específico de la tarea, al menos tres semillas aleatorias y una línea base de capacidad equivalente.
 
@@ -64,10 +64,10 @@ La comparación se plantea a nivel de familia arquitectónica, ya que este repos
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| clip-experiment-2024 | 24.832 | no disponible | BSD-3-Clause | HuggingFace (0 descargas) | Ninguno (no se reclama) |
-| OpenAI CLIP (ViT-B/32) | ~151 millones (cifra aproximada ampliamente citada) | 224 px, contexto de 77 tokens de texto | Licencia propia de OpenAI para el codigo y los pesos | Publico en GitHub y HuggingFace | Zero-shot en multiples benchmarks de clasificacion de imagen |
+| clip-experiment-2024 | 24.832 | no disponible | BSD-3-Clause | Hugging Face (0 descargas) | Ninguno (no se reclama) |
+| OpenAI CLIP (ViT-B/32) | ~151 millones (cifra aproximada ampliamente citada) | 224 px, contexto de 77 tokens de texto | Licencia propia de OpenAI para el codigo y los pesos | Publico en GitHub y Hugging Face | Zero-shot en multiples benchmarks de clasificacion de imagen |
 | OpenAI CLIP (ViT-L/14) | ~428 millones (cifra aproximada ampliamente citada) | 224 px, contexto de 77 tokens de texto | Licencia propia de OpenAI | Publico | Mejor zero-shot que ViT-B/32 en los benchmarks reportados por OpenAI |
-| OpenCLIP (familia) | Segun variante (desde decenas hasta miles de millones) | Segun variante | Segun variante | Publico en HuggingFace | Multiples checkpoints con resultados publicados |
+| OpenCLIP (familia) | Segun variante (desde decenas hasta miles de millones) | Segun variante | Segun variante | Publico en Hugging Face | Multiples checkpoints con resultados publicados |
 
 Nota: las cifras de parámetros de OpenAI CLIP se incluyen como referencia aproximada de la familia; no provienen del repositorio analizado ni se han verificado en la información proporcionada. La comparación directa de rendimiento no es posible porque `clip-experiment-2024` no está entrenado ni evaluado.
 
@@ -85,7 +85,7 @@ Nota: las cifras de parámetros de OpenAI CLIP se incluyen como referencia aprox
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alejandrohernandez/clip-experiment-2024
+- Hugging Face: https://huggingface.co/alejandrohernandez/clip-experiment-2024
 - Repositorio oficial de CLIP de OpenAI en GitHub: https://github.com/openai/CLIP
 - Presentación de CLIP en el blog de OpenAI: https://openai.com/index/clip/
 - Paper "Detecting AI-Generated Images via CLIP" (arXiv:2404.08788): https://arxiv.org/abs/2404.08788

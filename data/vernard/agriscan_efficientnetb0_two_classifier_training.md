@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Arquitectura | Clases | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AgriScan EfficientNetB0 (este modelo) | EfficientNetB0, dos clasificadores | 3 (cultivo) + 17 (enfermedad) | 224 × 224 RGB | no aplica | other | HuggingFace, Keras `.keras` |
+| AgriScan EfficientNetB0 (este modelo) | EfficientNetB0, dos clasificadores | 3 (cultivo) + 17 (enfermedad) | 224 × 224 RGB | no aplica | other | Hugging Face, Keras `.keras` |
 | EfficientNetB0 preentrenado en ImageNet | EfficientNetB0 | 1000 (ImageNet) | 224 × 224 RGB | no aplica | según distribución original | Ampliamente disponible en Keras/TensorFlow |
 | MobileNetV2 preentrenado en ImageNet | MobileNetV2 | 1000 (ImageNet) | 224 × 224 RGB | no aplica | según distribución original | Ampliamente disponible en Keras/TensorFlow |
-| Clasificadores PlantVillage de la comunidad | Diversas CNN (ResNet, VGG, EfficientNet) | variable (38 clases típicas) | variable | no aplica | variable | Múltiples repositorios en HuggingFace y GitHub |
+| Clasificadores PlantVillage de la comunidad | Diversas CNN (ResNet, VGG, EfficientNet) | variable (38 clases típicas) | variable | no aplica | variable | Múltiples repositorios en Hugging Face y GitHub |
 
 La comparación con modelos genéricos de ImageNet no es directa porque las tareas difieren: este modelo está especializado en tres cultivos y 17 condiciones, mientras que los backbones genéricos cubren 1000 clases sin relación agrícola. Frente a otros clasificadores de PlantVillage de la comunidad, la diferencia principal es el alcance reducido (solo maíz, patata y tomate) y la ausencia de métricas publicadas, lo que impide una comparación cuantitativa rigurosa.
 
@@ -90,5 +90,5 @@ La comparación con modelos genéricos de ImageNet no es directa porque las tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vernard/AgriScan_EfficientNetB0_Two_Classifier_Training
-- Dataset PlantVillage en HuggingFace: https://huggingface.co/datasets/mohanty/PlantVillage
+- Modelo en Hugging Face: https://huggingface.co/Vernard/AgriScan_EfficientNetB0_Two_Classifier_Training
+- Dataset PlantVillage en Hugging Face: https://huggingface.co/datasets/mohanty/PlantVillage

@@ -82,7 +82,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT previo (necesario): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l5
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "AnirudhSomadas/living-cv-smollm2",
+  "slug": "anirudhsomadas-living-cv-smollm2",
+  "author": "AnirudhSomadas",
+  "url": "https://huggingface.co/AnirudhSomadas/living-cv-smollm2",
+  "created_at": "2026-11-06T11:09:49.000Z",
+  "updated_at": "2026-11-06T11:20:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364106286,
+  "storage_human": "364 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M"
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-1.7B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

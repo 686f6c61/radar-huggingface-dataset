@@ -2,7 +2,7 @@
 
 ## Resumen
 
-adtc-agri-sft-gemma2-2b es un ajuste fino supervisado (SFT) del modelo google/gemma-2-2b-it, publicado por el usuario EYEDOL en HuggingFace. El modelo se ha entrenado con QLoRA sobre una base cuantizada a 4 bits en formato NF4 y los adaptadores se han fusionado de vuelta en los pesos completos, de modo que el checkpoint publicado es un modelo denso estándar de 2.614.341.888 parámetros y no un adaptador PEFT suelto.
+adtc-agri-sft-gemma2-2b es un ajuste fino supervisado (SFT) del modelo google/gemma-2-2b-it, publicado por el usuario EYEDOL en Hugging Face. El modelo se ha entrenado con QLoRA sobre una base cuantizada a 4 bits en formato NF4 y los adaptadores se han fusionado de vuelta en los pesos completos, de modo que el checkpoint publicado es un modelo denso estándar de 2.614.341.888 parámetros y no un adaptador PEFT suelto.
 
 El objetivo declarado es el asesoramiento agrícola para pequeños agricultores y técnicos de extensión agraria en Nigeria, dentro del proyecto ADTC 2026. La tarea es de instrucción de un solo turno: ante un escenario o pregunta agrícola, el modelo debe producir una evaluación concisa, una recomendación práctica y, cuando proceda, una indicación de cuándo conviene escalar a un experto presencial. Se trata de un checkpoint marcado explícitamente como línea base para comparar internamente contra el modelo base sin ajustar y, más adelante, contra una variante destilada.
 
@@ -82,8 +82,8 @@ No se dispone de comparación numérica con otros modelos en la información pro
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EYEDOL/adtc-agri-sft-gemma2-2b | 2.614.341.888 | Entrenamiento con max_seq_length 1024; contexto nativo del base no confirmado en la ficha | Agrícola, Nigeria, inglés | apache-2.0 (declarada) | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| google/gemma-2-2b-it (modelo base) | No disponible en la información proporcionada | No disponible en la información proporcionada | Generalista, multilingüe según el modelo base | La del modelo base de Google (no indicada en la ficha) | HuggingFace |
+| EYEDOL/adtc-agri-sft-gemma2-2b | 2.614.341.888 | Entrenamiento con max_seq_length 1024; contexto nativo del base no confirmado en la ficha | Agrícola, Nigeria, inglés | apache-2.0 (declarada) | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| google/gemma-2-2b-it (modelo base) | No disponible en la información proporcionada | No disponible en la información proporcionada | Generalista, multilingüe según el modelo base | La del modelo base de Google (no indicada en la ficha) | Hugging Face |
 | Otros modelos pequeños ajustados a agricultura en inglés | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información disponible |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de este modelo con alternativas de la misma categoría.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EYEDOL/adtc-agri-sft-gemma2-2b
+- Modelo en Hugging Face: https://huggingface.co/EYEDOL/adtc-agri-sft-gemma2-2b
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Paper, blog o repositorio del proyecto ADTC 2026: no disponible en la información proporcionada.
 - Demo o espacio de inferencia: no disponible.

@@ -89,7 +89,7 @@ Segun la model card, combinado con ZaraRerank el pipeline supera a OpenAI tambie
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad | no-names (289) | story (289) | Benchmark humano (152) |
 |---|---|---|---|---|---|---|---|
-| ZaraEmbed | 356.267.008 | 160 (preguntas) / 256 (versiculos) | MIT | Pesos abiertos en HuggingFace | 191 | 175 | 92 |
+| ZaraEmbed | 356.267.008 | 160 (preguntas) / 256 (versiculos) | MIT | Pesos abiertos en Hugging Face | 191 | 175 | 92 |
 | OpenAI text-embedding-3-large | no disponible | no disponible | Propietaria | Solo API | 126 | 143 | 108 |
 | bge-large-en-v1.5 | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Pesos abiertos | 63 | 78 | no disponible |
 
@@ -110,7 +110,7 @@ La comparacion debe leerse con matices: ZaraEmbed gana de forma clara en el esce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BYU-Idaho/ZaraEmbed
+- Modelo en Hugging Face: https://huggingface.co/BYU-Idaho/ZaraEmbed
 - Modelo base ZaraBERTa: https://huggingface.co/BYU-Idaho/ZaraBERTa
 - Reranker ZaraRerank: https://huggingface.co/BYU-Idaho/ZaraRerank
 - Coleccion ZaraAI: https://huggingface.co/collections/BYU-Idaho/zaraai

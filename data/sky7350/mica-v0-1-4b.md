@@ -129,7 +129,7 @@ Los recuentos de parámetros de los modelos comparados no se detallan en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sky7350/Mica-v0.1-4B
+- Modelo en Hugging Face: https://huggingface.co/sky7350/Mica-v0.1-4B
 - Repositorio de código, Dockerfile y scripts: https://github.com/akivet/Mica-v0.1-4B
 - Resultados por ítem del conjunto público de 231 elementos: https://github.com/akivet/Mica-v0.1-4B/blob/main/results/public231/mica-v0.1-4b.jsonl
 - JevBench (runner y adaptador typesafe): https://github.com/fstandhartinger/jevbench

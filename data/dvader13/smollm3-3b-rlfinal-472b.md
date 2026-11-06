@@ -83,8 +83,8 @@ Este checkpoint no es comparable directamente con modelos de inferencia, ya que 
 
 ## Enlaces
 
-- [HuggingFace - dvader13/smollm3-3b-rlfinal-472b](https://huggingface.co/dvader13/smollm3-3b-rlfinal-472b)
-- [Perfil de dvader13 en HuggingFace](https://huggingface.co/dvader13)
-- [Modelo base SmolLM3-3B en HuggingFace](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
+- [Hugging Face - dvader13/smollm3-3b-rlfinal-472b](https://huggingface.co/dvader13/smollm3-3b-rlfinal-472b)
+- [Perfil de dvader13 en Hugging Face](https://huggingface.co/dvader13)
+- [Modelo base SmolLM3-3B en Hugging Face](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - [Repositorio de SmolLM3-3B en GitHub (ArkS0001)](https://github.com/ArkS0001/SmolLM3-3B)
 - [LLM Leaderboard & AI Model Benchmarks - August 2026](https://benchlm.ai/)

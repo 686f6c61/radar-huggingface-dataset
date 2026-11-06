@@ -4,7 +4,7 @@
 
 pollux-judge-32b-FP8 es la versión cuantizada en FP8 de pollux-judge-32b, un modelo de lenguaje de 32.759.790.592 parámetros (32,7B) especializado en la tarea de "LLM-as-a-judge" para ruso, desarrollado originalmente por el equipo de ai-forever dentro del proyecto POLLUX. Esta variante la publica el usuario KaroUniform y mantiene la misma interfaz de prompt y el mismo formato de salida (`... [RESULT] n [END]`) que el modelo original, por lo que es un reemplazo directo orientado a servir el modelo con mayor velocidad en GPUs NVIDIA Hopper y Blackwell.
 
-El modelo se basa en la arquitectura Qwen2 (tag `qwen2` en HuggingFace) y está pensado para evaluar respuestas generadas por otros modelos según criterios y rúbricas, una pieza habitual en pipelines de evaluación automática, anotación y filtrado de datos. La cuantización reduce el peso en disco de 65,5 GB a 39,7 GB y, según la model card, incrementa el throughput de prefill en un factor de 1,43 y el de decodificación en un factor de 1,34 respecto al original en BF16, manteniendo una concordancia agregada con expertos humanos estadísticamente indistinguible.
+El modelo se basa en la arquitectura Qwen2 (tag `qwen2` en Hugging Face) y está pensado para evaluar respuestas generadas por otros modelos según criterios y rúbricas, una pieza habitual en pipelines de evaluación automática, anotación y filtrado de datos. La cuantización reduce el peso en disco de 65,5 GB a 39,7 GB y, según la model card, incrementa el throughput de prefill en un factor de 1,43 y el de decodificación en un factor de 1,34 respecto al original en BF16, manteniendo una concordancia agregada con expertos humanos estadísticamente indistinguible.
 
 Su relevancia ahora es práctica: permite desplegar un juez de 32B en infraestructura más modesta y con mayor rendimiento, con licencia MIT y compatibilidad con SGLang, vLLM y text-generation-inference. La contrapartida es que el modelo solo declara soporte de ruso y que los veredictos individuales cambian con algo más de frecuencia que en BF16.
 
@@ -74,8 +74,8 @@ La model card no publica resultados de benchmarks académicos (MMLU, HumanEval, 
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| pollux-judge-32b-FP8 | 32,7B | no disponible | MIT | safetensors FP8 | HuggingFace (KaroUniform) |
-| ai-forever/pollux-judge-32b (BF16) | 32,7B | no disponible | MIT | safetensors BF16 | HuggingFace (ai-forever) |
+| pollux-judge-32b-FP8 | 32,7B | no disponible | MIT | safetensors FP8 | Hugging Face (KaroUniform) |
+| ai-forever/pollux-judge-32b (BF16) | 32,7B | no disponible | MIT | safetensors BF16 | Hugging Face (ai-forever) |
 | Modelos juez de 32B en otros idiomas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa más relevante es con el original en BF16: misma calidad agregada frente a expertos (MAE 0,527), menor huella en disco (39,7 GB frente a 65,5 GB) y mayor throughput, a cambio de una tasa de coincidencia por veredicto individual algo menor (94,3 % frente a 97,3 %). No se dispone de datos de benchmarks frente a otros modelos juez en la información proporcionada.
@@ -93,7 +93,7 @@ La comparación directa más relevante es con el original en BF16: misma calidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KaroUniform/pollux-judge-32b-FP8
+- Modelo en Hugging Face: https://huggingface.co/KaroUniform/pollux-judge-32b-FP8
 - Modelo base: https://huggingface.co/ai-forever/pollux-judge-32b
 - Proyecto POLLUX: https://github.com/ai-forever/POLLUX
 - Paper referenciado (arXiv:2505.24616): https://arxiv.org/abs/2505.24616

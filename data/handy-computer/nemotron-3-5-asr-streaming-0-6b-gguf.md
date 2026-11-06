@@ -17,7 +17,7 @@ El paquete se distribuye en seis niveles de cuantización que van de 473 MB (Q4_
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica en tokens. Ventana de atencion de audio att_context_size=[56, 13] en modo offline (1,12 s); en streaming, chunk configurable de 1120 ms con --stream-att-right {0,3,6,13} |
 | Tipos de cuantizacion | F32, F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
-| Idiomas soportados | 32 locales segun la model card (28 declarados en los metadatos de HuggingFace: en, es, fr, it, pt, nl, de, tr, ru, ar, hi, ja, ko, vi, uk, pl, sv, cs, nb, da, bg, fi, hr, sk, zh, hu, ro, et). El tokenizador reconoce 40; 8 son adaptation-ready y requieren fine-tuning |
+| Idiomas soportados | 32 locales segun la model card (28 declarados en los metadatos de Hugging Face: en, es, fr, it, pt, nl, de, tr, ru, ar, hi, ja, ko, vi, uk, pl, sv, cs, nb, da, bg, fi, hr, sk, zh, hu, ro, et). El tokenizador reconoce 40; 8 son adaptation-ready y requieren fine-tuning |
 | Licencia | OpenMDW-1.1 (heredada del modelo base) |
 | Formato de pesos | GGUF |
 | Entrada de audio | WAV mono a 16 kHz |
@@ -117,7 +117,7 @@ No se han proporcionado en la informacion disponible resultados de benchmarks fr
 - Riesgo de alucinacion inherente a los decodificadores transducer: en pasajes con ruido, silencio prolongado o solapamiento de hablantes, la salida puede contener palabras insertadas o repetidas. No se publican tasas de insercion especificas en la informacion disponible.
 - Riesgo de sesgo: no se documentan en la informacion proporcionada analisis de sesgo por acento, variedad dialectal, genero o edad. Los WER publicados corresponden a FLEURS y LibriSpeech, dominios de habla leida y con condiciones controladas.
 - Dependencia de un unico runtime: los pesos estan empaquetados para transcribe.cpp y requieren compilar desde fuente; no se documentan conversiones o soporte para otros motores de inferencia.
-- Restricciones de licencia: el modelo hereda OpenMDW-1.1 del modelo base de NVIDIA. Hay que revisar los terminos completos en la model card del modelo base antes de un uso comercial, ya que la licencia se etiqueta como "other" en HuggingFace y la model card upstream es la fuente autoritativa.
+- Restricciones de licencia: el modelo hereda OpenMDW-1.1 del modelo base de NVIDIA. Hay que revisar los terminos completos en la model card del modelo base antes de un uso comercial, ya que la licencia se etiqueta como "other" en Hugging Face y la model card upstream es la fuente autoritativa.
 - Degradacion con cuantizaciones agresivas: Q4_K_M sube el WER a 8,49 % en FLEURS en y 3,28 % en LibriSpeech test-clean, frente a 7,97 % y 3,04 % en F32. La diferencia es pequena, pero conviene validar sobre el dominio objetivo antes de desplegar en produccion.
 - Reproducibilidad del WER: las cifras publicadas dependen de configuraciones concretas (greedy RNN-T, --language en-US, whisper-normalizer para el scoring, att_context_size=[56, 13] offline). Cambiar el chunk de streaming o el contexto derecho alterara los resultados.
 - Metricas de rendimiento medidas en hardware concreto: los RTF de 98x, 29x, 14,5x y 7,5x corresponden a un Apple M4 Max y a un AMD Ryzen 4750U, y no son extrapolables sin validacion a otras plataformas.
@@ -125,7 +125,7 @@ No se han proporcionado en la informacion disponible resultados de benchmarks fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf
+- Modelo en Hugging Face: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Commit del modelo base usado para la conversion: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/commit/24b151a
 - Repositorio de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

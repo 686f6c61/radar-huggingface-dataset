@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM-SALA es un modelo lingüístico híbrido de unos 9.500 millones de parámetros desarrollado por OpenBMB (publicado en HuggingFace por ArchiveStudio), diseñado para resolver el problema del coste computacional y de memoria de la atención densa en contextos extremadamente largos. Es, según sus autores, el primer modelo híbrido a gran escala que integra de forma efectiva atención dispersa (sparse attention) y atención lineal (linear attention) para modelar contextos de un millón de tokens.
+MiniCPM-SALA es un modelo lingüístico híbrido de unos 9.500 millones de parámetros desarrollado por OpenBMB (publicado en Hugging Face por ArchiveStudio), diseñado para resolver el problema del coste computacional y de memoria de la atención densa en contextos extremadamente largos. Es, según sus autores, el primer modelo híbrido a gran escala que integra de forma efectiva atención dispersa (sparse attention) y atención lineal (linear attention) para modelar contextos de un millón de tokens.
 
 La arquitectura combina el 25 % de capas con InfLLM-V2 (atención dispersa, para alta fidelidad en contexto largo) y el 75 % con Lightning Attention (atención lineal, para eficiencia global). Gracias a esta combinación, el modelo alcanza hasta 3,5 veces la velocidad de inferencia de Qwen3-8B con secuencias de 256K tokens y permite inferencia con 1M de tokens en GPU de consumo como la RTX 5090, algo inviable para un modelo denso equivalente por limitaciones de memoria.
 
@@ -87,7 +87,7 @@ Nota: la comparativa se limita a los datos aportados en la model card; no se han
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM-SALA
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM-SALA
 - Repositorio GitHub de MiniCPM (OpenBMB): https://github.com/OpenBMB/MiniCPM/
 - Informe técnico (PDF en GitHub): https://github.com/OpenBMB/MiniCPM/blob/main/docs/MiniCPM_SALA.pdf
 - Informe técnico alternativo: https://github.com/OpenBMB/MiniCPM/tree/main/report/MiniCPM_4_Technical_Report.pdf

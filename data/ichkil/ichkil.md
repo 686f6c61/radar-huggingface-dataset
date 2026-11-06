@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ichkil es un modelo compacto y autocontenido para tashkeel árabe (diacritización), es decir, la asignación de harakat, shadda y tanwin a cada letra de una frase árabe sin vocalizar. Lo desarrolla el usuario ichkil y se distribuye bajo licencia MIT a través de HuggingFace. Su función es transformar texto como "محمد قرأ الكتاب" en "مُحَمَّدٌ قَرَأَ الْكِتَابَ", resolviendo un paso de preprocesado crítico para TTS, búsqueda y enseñanza del árabe.
+Ichkil es un modelo compacto y autocontenido para tashkeel árabe (diacritización), es decir, la asignación de harakat, shadda y tanwin a cada letra de una frase árabe sin vocalizar. Lo desarrolla el usuario ichkil y se distribuye bajo licencia MIT a través de Hugging Face. Su función es transformar texto como "محمد قرأ الكتاب" en "مُحَمَّدٌ قَرَأَ الْكِتَابَ", resolviendo un paso de preprocesado crítico para TTS, búsqueda y enseñanza del árabe.
 
 Técnicamente no es un transformer generativo, sino una red de secuencia a nivel de carácter de aproximadamente 1,26 millones de parámetros (~5 MB en fp32) con arquitectura Bi-GRU seguida de un banco de expertos con compuertas y una cabeza de clasificación. Trabaja con un vocabulario de 42 símbolos y una ventana máxima de 1024 caracteres, y produce 13 etiquetas de salida que codifican combinaciones de diacríticos.
 
@@ -82,7 +82,7 @@ El autor indica que el artefacto ONNX puntúa de forma idéntica al modelo PyTor
 
 | Modelo | Parametros | Enfoque | DER (Fadel et al. 2019) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ichkil | ~1,26 M | Bi-GRU + banco de expertos con compuertas, ONNX | 2,80 % | MIT | HuggingFace (ONNX, opset 17) |
+| Ichkil | ~1,26 M | Bi-GRU + banco de expertos con compuertas, ONNX | 2,80 % | MIT | Hugging Face (ONNX, opset 17) |
 | Abbad & Xiong 2020 | No disponible | RNN + reglas | 3,39 % | No disponible | Publicación académica |
 | Shakkala | No disponible | B-LSTM | 2,88 % | No disponible | Proyecto publicado |
 | BERT SOTA (2024) | No disponible | BERT (transformer) | 1,14 % | No disponible | Publicación académica |
@@ -104,6 +104,6 @@ Ichkil ofrece la mejor relación entre tamaño y error de diacritización frente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ichkil/ichkil
+- Hugging Face: https://huggingface.co/ichkil/ichkil
 - Los resultados de la búsqueda web no aportan enlaces relevantes sobre este modelo: las entradas devueltas corresponden a entidades homónimas no relacionadas (modelos de generación de imágenes en SeaArt y PixAI, y la plataforma Ichi de ichiplan.com), por lo que se descartan como fuentes.
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales del modelo.

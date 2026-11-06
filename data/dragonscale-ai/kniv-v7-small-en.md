@@ -102,11 +102,11 @@ Los cinco modelos comparten el mismo formato de salida, grafos y runtime, de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-small-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-small-en
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-32m
 - Profesor kniv-v7-xlarge-u-en: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-u-en
 - Profesor kniv-v7-xlarge-d-en: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en
 - kniv-v7-tiny-en: https://huggingface.co/dragonscale-ai/kniv-v7-tiny-en
 - kniv-v7-large-en: https://huggingface.co/dragonscale-ai/kniv-v7-large-en
 - Guia de modos de fallo (GUIDE.md): https://huggingface.co/dragonscale-ai/kniv-v7-small-en/blob/main/GUIDE.md
-- Organizacion en HuggingFace: https://huggingface.co/dragonscale-ai
+- Organizacion en Hugging Face: https://huggingface.co/dragonscale-ai

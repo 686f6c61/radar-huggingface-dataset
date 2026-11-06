@@ -73,7 +73,7 @@ No se dispone de datos comparativos suficientes para establecer una tabla fiable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast-GGUF
 - Repositorio de instrucciones (GitHub): https://github.com/SSHdotCodes/Qwen-3.8-SuperFast
 - Documentación oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Página de Qwen3.8 en openlm.ai: https://openlm.ai/qwen3.8/

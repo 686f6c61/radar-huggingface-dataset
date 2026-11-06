@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - software-mansion/react-native-executorch-multi-qa-MiniLM-L6-cos-v1](https://huggingface.co/software-mansion/react-native-executorch-multi-qa-MiniLM-L6-cos-v1)
+- [Hugging Face - software-mansion/react-native-executorch-multi-qa-MiniLM-L6-cos-v1](https://huggingface.co/software-mansion/react-native-executorch-multi-qa-MiniLM-L6-cos-v1)
 - [GitHub - react-native-executorch](https://github.com/software-mansion/react-native-executorch)
 - [Documentación - Getting Started](https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started)
 - [Página oficial - On-device AI & LLM toolkit](https://executorch.swmansion.com/)

@@ -69,8 +69,8 @@ El autor advierte que la evaluación de operación real promedia solo dos meses 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-eskim-v2 | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulador | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-eskim-v2 | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulador | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política profesora PPO (CONNECT TYCOON) | No disponible | No aplica | Decisión en simulador | No disponible | No disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (decisión en simuladores de negocio) en la documentación proporcionada.
@@ -89,7 +89,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jfcrown7/connectailab-rl-eskim-v2
+- Modelo en Hugging Face: https://huggingface.co/jfcrown7/connectailab-rl-eskim-v2
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

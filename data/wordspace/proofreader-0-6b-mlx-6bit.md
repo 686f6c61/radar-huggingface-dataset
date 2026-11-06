@@ -98,7 +98,7 @@ Frente a gemma-3-4b, el modelo ajustado gana en las tres métricas medidas (74/9
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wordspace/proofreader-0.6B-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/wordspace/proofreader-0.6B-MLX-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Aplicación wordspace: https://getwordspace.com
 - Ficheros incluidos en el repositorio: `example.py`, `protocol.py`, `NOTICE`

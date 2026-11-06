@@ -78,5 +78,5 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ALYSSALAL02/embodied-ai-finetune
+- Repositorio en Hugging Face: https://huggingface.co/ALYSSALAL02/embodied-ai-finetune
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este identificador.

@@ -15,7 +15,7 @@ El interes de esta publicacion es doble: por un lado, ofrece una version sin cen
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso (base Ministral 3 3B; sin el codificador de vision original) |
-| Parametros totales | 745,654 segun el dato de safetensors reportado en HuggingFace (el modelo base Ministral 3 3B declara aproximadamente 3,4B de parametros de lenguaje mas 0,4B de vision; no disponible el desglose exacto de esta variante) |
+| Parametros totales | 745,654 segun el dato de safetensors reportado en Hugging Face (el modelo base Ministral 3 3B declara aproximadamente 3,4B de parametros de lenguaje mas 0,4B de vision; no disponible el desglose exacto de esta variante) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_NL (small), IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (lista declarada en los metadatos del autor; el unico fichero listado en la tabla del README es el imatrix) |
@@ -53,7 +53,7 @@ No se dispone de informacion detallada en la documentacion proporcionada sobre e
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace y los resultados de busqueda consultados no incluyen cifras de MMLU, HumanEval, GSM8K ni otras evaluaciones para esta variante cuantizada ni para la variante abliterated intermedia.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face y los resultados de busqueda consultados no incluyen cifras de MMLU, HumanEval, GSM8K ni otras evaluaciones para esta variante cuantizada ni para la variante abliterated intermedia.
 
 ## Requisitos de hardware
 

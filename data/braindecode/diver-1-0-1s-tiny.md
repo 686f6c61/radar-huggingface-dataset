@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks numéricos para esta variante concr
 
 | Modelo | Parametros | Parcheo / ventana | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DIVER-1-0.1s-tiny (este) | 12,7 M | 0,1 s a 500 Hz | 5.310 h de ECoG y SEEG (352k horas-canal) | MIT (pesos) | HuggingFace (braindecode) |
+| DIVER-1-0.1s-tiny (este) | 12,7 M | 0,1 s a 500 Hz | 5.310 h de ECoG y SEEG (352k horas-canal) | MIT (pesos) | Hugging Face (braindecode) |
 | DIVER-1-1s | no disponible | 1 s | 5.310 h de ECoG y SEEG (misma base) | MIT (pesos) | Repositorio del proyecto DIVER |
 | Variantes DIVER-1 de mayor tamaño | hasta 1,8 B (en el barrido de escalado) | no disponible | misma base, mayor escala | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparables entre variantes ni con otros mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/braindecode/DIVER-1-0.1s-tiny
+- Hugging Face: https://huggingface.co/braindecode/DIVER-1-0.1s-tiny
 - Paper (arXiv): https://arxiv.org/abs/2512.19097
 - PDF del paper: https://arxiv.org/pdf/2512.19097
 - Repositorio del proyecto DIVER-1: https://github.com/DIVER-Project/DIVER-1/tree/25638eb38ef297b582ab79ae1c96260f57c155b3

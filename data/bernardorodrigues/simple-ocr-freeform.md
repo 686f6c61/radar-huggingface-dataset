@@ -6,13 +6,13 @@ El repositorio `Bernardorodrigues/simple-ocr-freeform` no es un modelo entrenado
 
 El interés del repositorio es metodológico: enumera el alcance de la pregunta de investigación, los confounders previsibles, una comparación propuesta con baselines emparejados, contextos de evaluación concretos (FUNSD, SROIE y CORD), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, además de referencias temáticas. Es, por tanto, material de planificación y verificación, no un artefacto desplegable.
 
-Los metadatos de HuggingFace indican un único fichero `safetensors` con 16.576 parámetros totales y un tamaño de repositorio de 0,0 GB. Esa cifra es varios órdenes de magnitud inferior a la de cualquier modelo funcional de OCR o de visión-lenguaje, por lo que debe interpretarse como un tensor de prueba o un artefacto residual, no como un modelo utilizable. No hay pipeline declarado, ni idiomas, ni datos de entrenamiento publicados.
+Los metadatos de Hugging Face indican un único fichero `safetensors` con 16.576 parámetros totales y un tamaño de repositorio de 0,0 GB. Esa cifra es varios órdenes de magnitud inferior a la de cualquier modelo funcional de OCR o de visión-lenguaje, por lo que debe interpretarse como un tensor de prueba o un artefacto residual, no como un modelo utilizable. No hay pipeline declarado, ni idiomas, ni datos de entrenamiento publicados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta `transformer` aparece en los tags de HuggingFace, pero no se describe ni se confirma arquitectura alguna en la model card) |
+| Arquitectura | no disponible (la etiqueta `transformer` aparece en los tags de Hugging Face, pero no se describe ni se confirma arquitectura alguna en la model card) |
 | Parametros totales | 16.576 (según el fichero safetensors de los metadatos; no corresponde a un modelo funcional) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -84,12 +84,12 @@ No procede una comparativa de rendimiento: este repositorio no es un modelo, sin
 - No se declaran idiomas soportados, sesgos ni limitaciones de contexto porque no hay modelo que los tenga.
 - Licencia: el contenido del repositorio se publica bajo MIT, lo que permite reutilización y uso comercial de las notas. La propia model card advierte de que los términos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos (FUNSD, SROIE, CORD y similares tienen sus propias condiciones, a menudo restrictivas para uso comercial).
 - Cualquier cifra de rendimiento que se quiera usar para decidir una arquitectura debe obtenerse de experimentos propios con semillas, versiones de dataset y logs documentados.
-- Los metadatos de HuggingFace indican fecha de creación 2026-09-15, posterior a la fecha de consulta habitual; conviene verificar ese dato antes de citarlo.
+- Los metadatos de Hugging Face indican fecha de creación 2026-09-15, posterior a la fecha de consulta habitual; conviene verificar ese dato antes de citarlo.
 - El repositorio registra 0 descargas y 0 likes, sin señales de validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bernardorodrigues/simple-ocr-freeform
+- Hugging Face: https://huggingface.co/Bernardorodrigues/simple-ocr-freeform
 - `review.md` (artefacto principal de la nota, referenciado en la model card): https://huggingface.co/Bernardorodrigues/simple-ocr-freeform/blob/main/review.md
 - `README.md` del repositorio: https://huggingface.co/Bernardorodrigues/simple-ocr-freeform/blob/main/README.md
 - Datasets citados como contexto de evaluación (referencias, no enlaces proporcionados en la información disponible): FUNSD, SROIE, CORD.

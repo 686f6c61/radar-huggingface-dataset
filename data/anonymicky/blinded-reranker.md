@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Blinded-reranker es un rerankador pointwise decoder-only de 3,22 mil millones de parámetros desarrollado por el usuario anonyMicky y publicado en HuggingFace. El modelo se construye sobre un backbone pre-entrenado desde cero (blinded-nanochat-pretrained) con el corpus ClimbMix, sin utilizar ningún backbone de terceros con pesos abiertos en ninguna fase del proceso. Su función es reordenar los candidatos devueltos por un retriever de primera etapa (como BM25) en pipelines de recuperación de información.
+Blinded-reranker es un rerankador pointwise decoder-only de 3,22 mil millones de parámetros desarrollado por el usuario anonyMicky y publicado en Hugging Face. El modelo se construye sobre un backbone pre-entrenado desde cero (blinded-nanochat-pretrained) con el corpus ClimbMix, sin utilizar ningún backbone de terceros con pesos abiertos en ninguna fase del proceso. Su función es reordenar los candidatos devueltos por un retriever de primera etapa (como BM25) en pipelines de recuperación de información.
 
 La innovación principal del modelo es doble: por un lado, emplea localizado contrastive estimation (LCE) como objetivo de fine-tuning sobre el dataset RLHN-250K, y por otro, aplica la técnica de model soup, promediando con pesos iguales los parámetros de cuatro ejecuciones independientes de fine-tuning. Este promedio no añade coste de inferencia, ya que produce un único checkpoint del mismo tamaño que cada modelo padre. Los resultados publicados muestran una media de nDCG@10 de 0,641 en TREC DL y 0,547 en BEIR, superando ligeramente a los cuatro modelos parentales.
 
@@ -105,7 +105,7 @@ Caveats de esta comparativa: monoT5-3B comparte enfoque pointwise y tamano, pero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonyMicky/blinded-reranker
+- Modelo en Hugging Face: https://huggingface.co/anonyMicky/blinded-reranker
 - Backbone pre-entrenado: https://huggingface.co/anonyMicky/blinded-nanochat-pretrained
 - Dataset de entrenamiento RLHN-250K: https://huggingface.co/datasets/rlhn/rlhn-250K
 - Paper de model soup citado en la model card: https://arxiv.org/abs/2203.05482

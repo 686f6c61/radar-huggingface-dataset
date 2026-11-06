@@ -100,10 +100,10 @@ Los cuatro comparten tarea, resolucion de inferencia, tamano de parche y licenci
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/ml-resources/sapiens2-seg-0.8b
+- Repositorio espejo en Hugging Face: https://huggingface.co/ml-resources/sapiens2-seg-0.8b
 - Modelo original: https://huggingface.co/facebook/sapiens2-seg-0.8b
 - Backbone preentrenado base: https://huggingface.co/facebook/sapiens2-pretrain-0.8b
-- Coleccion Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Coleccion Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2
 - Variante 0.4B: https://huggingface.co/facebook/sapiens2-seg-0.4b
 - Variante 1B: https://huggingface.co/facebook/sapiens2-seg-1b
 - Variante 5B: https://huggingface.co/facebook/sapiens2-seg-5b

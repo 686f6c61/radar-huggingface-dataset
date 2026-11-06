@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alphaindiamike/tinkering` es un repositorio de modelo alojado en HuggingFace por el usuario alphaindiamike. La model card pública se limita a declarar la licencia Apache 2.0 y no incluye ninguna descripción del modelo, su arquitectura, su proceso de entrenamiento ni sus capacidades. No hay información sobre el pipeline asociado, los idiomas soportados ni los pesos publicados.
+`alphaindiamike/tinkering` es un repositorio de modelo alojado en Hugging Face por el usuario alphaindiamike. La model card pública se limita a declarar la licencia Apache 2.0 y no incluye ninguna descripción del modelo, su arquitectura, su proceso de entrenamiento ni sus capacidades. No hay información sobre el pipeline asociado, los idiomas soportados ni los pesos publicados.
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-01T18:47:09Z), lo que sugiere una publicación reciente sin actividad posterior. El nombre "tinkering" y la ausencia de documentación apuntan a un experimento personal o a un artefacto de pruebas más que a un modelo destinado a producción.
 
@@ -69,4 +69,4 @@ No disponible. Sin datos sobre parámetros, contexto, arquitectura o rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alphaindiamike/tinkering
+- Repositorio en Hugging Face: https://huggingface.co/alphaindiamike/tinkering

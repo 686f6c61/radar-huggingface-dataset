@@ -85,6 +85,6 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/FinLLM-V2-Qwen3-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/FinLLM-V2-Qwen3-8B-GGUF
 - Modelo base: https://huggingface.co/USTC-KnowledgeComputingLab/FinLLM-V2-Qwen3-8B
 - Qwen3 (familia base): https://huggingface.co/Qwen

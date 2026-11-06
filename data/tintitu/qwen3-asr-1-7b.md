@@ -22,7 +22,7 @@ Su relevancia práctica está en el perfil de despliegue: con pesos safetensors 
 | Formato de pesos | safetensors en dos particiones (`model-00001-of-00002.safetensors`, `model-00002-of-00002.safetensors`) con `model.safetensors.index.json` |
 | Tarea | Reconocimiento automático de voz (ASR) y detección de idioma (LID) |
 | Entrada de audio | 16.000 Hz, mono, PCM de 16 bits o flotante normalizado en [-1,0, 1,0] |
-| Tamano del repositorio | 3,7 GB (segun HuggingFace); la suma de los dos safetensors del manifiesto da 4.698.521.512 bytes (~4,70 GB) |
+| Tamano del repositorio | 3,7 GB (segun Hugging Face); la suma de los dos safetensors del manifiesto da 4.698.521.512 bytes (~4,70 GB) |
 | Autor del repositorio | tintitu (replica de terceros de los pesos oficiales de Qwen) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-11 / 2026-09-11 |
@@ -105,7 +105,7 @@ La ventaja diferencial de Qwen3-ASR-1.7B frente a estas alternativas es la combi
 - Sesgos: no se documenta la composicion del dataset de entrenamiento, por lo que no se puede evaluar el sesgo por acento, genero, edad o variedad dialectal.
 - Idiomas: se indican 30 idiomas y 22 dialectos del chino, pero no se publica la lista concreta ni el rendimiento por idioma; el rendimiento fuera de los idiomas mayoritarios es una incognita.
 - Este repositorio es una replica de terceros (`tintitu/Qwen3-ASR-1.7B`) con 0 descargas y 0 likes. Aunque incluye manifiesto SHA-256, conviene verificar cada fichero contra el repositorio oficial `Qwen/Qwen3-ASR-1.7B` antes de usarlo en produccion.
-- Discrepancia de tamano: HuggingFace informa de 3,7 GB de repositorio, mientras que la suma de los dos safetensors del manifiesto asciende a unos 4,70 GB. Conviene comprobar los checksums tras la descarga.
+- Discrepancia de tamano: Hugging Face informa de 3,7 GB de repositorio, mientras que la suma de los dos safetensors del manifiesto asciende a unos 4,70 GB. Conviene comprobar los checksums tras la descarga.
 - Licencia: Apache-2.0 permite uso comercial y redistribucion, pero exige conservar los avisos de copyright y el fichero NOTICE, y mantener la atribucion al equipo Qwen de Alibaba Cloud.
 - La etiqueta `arxiv:2601.21337` apunta a un articulo cuyo contenido no esta disponible en la busqueda realizada; no se puede confirmar ningun dato tecnico a partir de ella.
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo; todos los resultados obtenidos corresponden a paginas sin relacion con ASR ni con Qwen.
@@ -113,8 +113,8 @@ La ventaja diferencial de Qwen3-ASR-1.7B frente a estas alternativas es la combi
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/tintitu/Qwen3-ASR-1.7B
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
+- Repositorio analizado en Hugging Face: https://huggingface.co/tintitu/Qwen3-ASR-1.7B
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Proyecto upstream en GitHub: https://github.com/QwenLM/Qwen3-ASR
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B
 - Identificador de arXiv citado en las etiquetas del repositorio: arxiv:2601.21337 (contenido no disponible en la busqueda realizada)

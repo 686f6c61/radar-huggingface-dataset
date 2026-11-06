@@ -76,11 +76,11 @@ Datos de latencia declarados por el autor: aproximadamente 0,4 segundos por resp
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyperCLOVAX-SEED-Haru-0.5B-GGUF (este) | 566.281.216 | no disponible | 1,20 / 2 con 18 % de respuestas descolocadas (150 preguntas ciegas) | hyperclovax-seed | HuggingFace, GGUF Q4_K_M |
+| HyperCLOVAX-SEED-Haru-0.5B-GGUF (este) | 566.281.216 | no disponible | 1,20 / 2 con 18 % de respuestas descolocadas (150 preguntas ciegas) | hyperclovax-seed | Hugging Face, GGUF Q4_K_M |
 | HyperCLOVAX-SEED-Haru-1.5B (mismo autor, version mayor) | no disponible | no disponible | 1,39 / 2 con 10 % de respuestas descolocadas | hyperclovax-seed | mencionado en la model card |
-| naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B (modelo base) | aproximadamente 0,5B | no disponible | no disponible | hyperclovax-seed | HuggingFace |
-| tensorblock/naver-hyperclovax_HyperCLOVAX-SEED-Text-Instruct-0.5B-GGUF (cuantizacion del base) | aproximadamente 0,5B | no disponible | no disponible | hyperclovax-seed | HuggingFace, GGUF |
-| rosewar/HyperCLOVAX-SEED-Text-Instruct-0.5B-Q5_K_M-GGUF (cuantizacion del base) | aproximadamente 0,5B | no disponible | no disponible | hyperclovax-seed | HuggingFace, GGUF Q5_K_M |
+| naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B (modelo base) | aproximadamente 0,5B | no disponible | no disponible | hyperclovax-seed | Hugging Face |
+| tensorblock/naver-hyperclovax_HyperCLOVAX-SEED-Text-Instruct-0.5B-GGUF (cuantizacion del base) | aproximadamente 0,5B | no disponible | no disponible | hyperclovax-seed | Hugging Face, GGUF |
+| rosewar/HyperCLOVAX-SEED-Text-Instruct-0.5B-Q5_K_M-GGUF (cuantizacion del base) | aproximadamente 0,5B | no disponible | no disponible | hyperclovax-seed | Hugging Face, GGUF Q5_K_M |
 
 La comparacion con familias de proposito general del mismo rango (Qwen, Llama, Gemma por debajo de 1B) no esta disponible en la informacion proporcionada, y en cualquier caso el modelo esta especializado en un unico idioma y un unico registro, por lo que no es directamente intercambiable con ellos.
 
@@ -100,7 +100,7 @@ La comparacion con familias de proposito general del mismo rango (Qwen, Llama, G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruddls030/HyperCLOVAX-SEED-Haru-0.5B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ruddls030/HyperCLOVAX-SEED-Haru-0.5B-GGUF
 - Modelo base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B
 - Cuantizacion GGUF del modelo base por TensorBlock: https://huggingface.co/tensorblock/naver-hyperclovax_HyperCLOVAX-SEED-Text-Instruct-0.5B-GGUF
 - Cuantizacion GGUF Q5_K_M del modelo base por rosewar: https://huggingface.co/rosewar/HyperCLOVAX-SEED-Text-Instruct-0.5B-Q5_K_M-GGUF

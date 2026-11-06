@@ -124,8 +124,8 @@ La comparación directa con Whisper large-v3 solo está documentada para audio i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/avencera/parakeet-tdt-0.6b-v3-cuda
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Repositorio en Hugging Face: https://huggingface.co/avencera/parakeet-tdt-0.6b-v3-cuda
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Librería scriptrs (GitHub): https://github.com/avencera/scriptrs
 - Resultados adicionales de scriptrs en CUDA: https://github.com/avencera/scriptrs#cuda
 - VAD Silero v5 en safetensors: https://huggingface.co/avencera/silero-vad-v5-safetensors

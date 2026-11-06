@@ -80,8 +80,8 @@ La comparativa se limita a las variantes del mismo modelo, ya que no se dispone 
 
 ## Enlaces
 
-- [HuggingFace - RedHatAI/Meta-Llama-3.1-70B-FP8](https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-FP8)
-- [HuggingFace - Meta-Llama-3.1-70B (modelo base)](https://huggingface.co/meta-llama/Meta-Llama-3.1-70B)
+- [Hugging Face - RedHatAI/Meta-Llama-3.1-70B-FP8](https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-FP8)
+- [Hugging Face - Meta-Llama-3.1-70B (modelo base)](https://huggingface.co/meta-llama/Meta-Llama-3.1-70B)
 - [LLM Compressor (repositorio de cuantizacion)](https://github.com/vllm-project/llm-compressor)
 - [vLLM (documentacion)](https://docs.vllm.ai/en/latest/)
 - [lm-evaluation-harness (bifurcacion de Neural Magic)](https://github.com/neuralmagic/lm-evaluation-harness/tree/llama_3.1_instruct)

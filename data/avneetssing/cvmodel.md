@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `avneetssing/CVmodel` es un sistema de visión por computadora basado en una red neuronal convolucional **ResNet-50** ajustada (fine-tuning) sobre el conjunto de datos **CIFAR-100**. Desarrollado por el usuario avneetssing, el proyecto integra la clasificación de imágenes en tiempo real mediante webcam, una interfaz de escritorio con OpenCV y un servidor web basado en FastAPI. Su relevancia radica en ser un ejemplo práctico de aplicación de fine-tuning de un modelo preentrenado para tareas de clasificación de 100 categorías, con soporte para aceleración por hardware (Apple Silicon MPS, NVIDIA CUDA o CPU). El repositorio tiene un tamaño de 0.2 GB e incluye los pesos del modelo en formato PyTorch (`.pth`), además de etiquetas ONNX en los metadatos de HuggingFace.
+El modelo `avneetssing/CVmodel` es un sistema de visión por computadora basado en una red neuronal convolucional **ResNet-50** ajustada (fine-tuning) sobre el conjunto de datos **CIFAR-100**. Desarrollado por el usuario avneetssing, el proyecto integra la clasificación de imágenes en tiempo real mediante webcam, una interfaz de escritorio con OpenCV y un servidor web basado en FastAPI. Su relevancia radica en ser un ejemplo práctico de aplicación de fine-tuning de un modelo preentrenado para tareas de clasificación de 100 categorías, con soporte para aceleración por hardware (Apple Silicon MPS, NVIDIA CUDA o CPU). El repositorio tiene un tamaño de 0.2 GB e incluye los pesos del modelo en formato PyTorch (`.pth`), además de etiquetas ONNX en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,4 +66,4 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- [HuggingFace: avneetssing/CVmodel](https://huggingface.co/avneetssing/CVmodel)
+- [Hugging Face: avneetssing/CVmodel](https://huggingface.co/avneetssing/CVmodel)

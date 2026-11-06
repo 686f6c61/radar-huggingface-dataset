@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `tonynzh2/hw1-hc3-detector` es un clasificador de texto publicado en HuggingFace Hub por el usuario tonynzh2. Segun los metadatos del repositorio, se trata de un modelo de la familia BERT (tag `bert`) con 22.713.986 parametros almacenados en formato safetensors, orientado a la tarea de clasificacion de texto (`pipeline: text-classification`). El repositorio ocupa 0,1 GB, lo que concuerda con un checkpoint unico en precision de 32 bits de aproximadamente 91 MB.
+El modelo `tonynzh2/hw1-hc3-detector` es un clasificador de texto publicado en Hugging Face Hub por el usuario tonynzh2. Segun los metadatos del repositorio, se trata de un modelo de la familia BERT (tag `bert`) con 22.713.986 parametros almacenados en formato safetensors, orientado a la tarea de clasificacion de texto (`pipeline: text-classification`). El repositorio ocupa 0,1 GB, lo que concuerda con un checkpoint unico en precision de 32 bits de aproximadamente 91 MB.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla autogenerada por HuggingFace y no contiene informacion util. Todos los campos relevantes (desarrollador real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, uso previsto y uso fuera de alcance) aparecen como `[More Information Needed]`. No hay paper asociado ni documentacion adicional. El identificador del repositorio sugiere un trabajo de clase o experimento personal (`hw1`), lo que es coherente con las cero descargas y cero likes registrados.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla autogenerada por Hugging Face y no contiene informacion util. Todos los campos relevantes (desarrollador real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, uso previsto y uso fuera de alcance) aparecen como `[More Information Needed]`. No hay paper asociado ni documentacion adicional. El identificador del repositorio sugiere un trabajo de clase o experimento personal (`hw1`), lo que es coherente con las cero descargas y cero likes registrados.
 
 En consecuencia, esta ficha documenta lo que es verificable a partir de los metadatos y marca explicitamente como "no disponible" todo lo demas. No se debe asumir que el modelo resuelve la tarea que su nombre sugiere sin una evaluacion previa por parte de quien lo vaya a usar.
 
@@ -65,12 +65,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Inferencia en CPU: viable y en muchos casos suficiente. Un encoder de este tamano se ejecuta en CPU con latencias del orden de milisegundos por secuencia corta, aunque no se publican mediciones.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es sobradamente suficiente, incluidas GTX 1050 Ti, RTX 3050, RTX 4090, T4, A10, L4, A100 y H100. El modelo no aprovecha la capacidad de las GPU de gama alta salvo que se procesen lotes muy grandes.
 - Cabe en GPU consumer: si, en practicamente todas las GPU consumer de los ultimos diez anos, e incluso en iGPU con memoria unificada.
-- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference (tag `text-embeddings-inference` del repositorio), HuggingFace Inference Endpoints (tag `endpoints_compatible`), y exportacion a ONNX Runtime, OpenVINO o TorchScript para servir en CPU. No se publican pesos GGUF, por lo que llama.cpp y Ollama requeririan una conversion previa a partir del checkpoint safetensors.
+- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference (tag `text-embeddings-inference` del repositorio), Hugging Face Inference Endpoints (tag `endpoints_compatible`), y exportacion a ONNX Runtime, OpenVINO o TorchScript para servir en CPU. No se publican pesos GGUF, por lo que llama.cpp y Ollama requeririan una conversion previa a partir del checkpoint safetensors.
 - Latencia y throughput: no disponibles. No hay ninguna medicion publicada por el autor.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento de este checkpoint, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Los datos de los modelos de referencia corresponden a sus fichas publicas de HuggingFace.
+No hay datos de rendimiento de este checkpoint, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Los datos de los modelos de referencia corresponden a sus fichas publicas de Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
@@ -95,7 +95,7 @@ La diferencia practica mas relevante no es el rendimiento, sino la trazabilidad:
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/tonynzh2/hw1-hc3-detector
+- Modelo en Hugging Face Hub: https://huggingface.co/tonynzh2/hw1-hc3-detector
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, cuantificacion del impacto ambiental, citada en la plantilla de model card, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico enlazada en la model card: https://mlco2.github.io/impact
 

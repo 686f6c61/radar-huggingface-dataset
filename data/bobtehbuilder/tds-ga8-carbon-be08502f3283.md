@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de IA funcional, sino un registro de contabilidad de carbono asociado a un proceso de fine-tuning. La model card documenta las emisiones de CO2 equivalente (86,55 kg) generadas durante un entrenamiento de ajuste fino realizado sobre hardware NVIDIA L40S en la región europe-west4 de Google Cloud. El identificador `tds-ga8-carbon-be08502f3283` sugiere que forma parte de una serie de registros similares (se han encontrado variantes con otros sufijos como `e64a9cbfe212` y `414018fd4fff`), probablemente generados por una herramienta de seguimiento de emisiones como CodeCarbon.
+Este repositorio de Hugging Face no contiene un modelo de IA funcional, sino un registro de contabilidad de carbono asociado a un proceso de fine-tuning. La model card documenta las emisiones de CO2 equivalente (86,55 kg) generadas durante un entrenamiento de ajuste fino realizado sobre hardware NVIDIA L40S en la región europe-west4 de Google Cloud. El identificador `tds-ga8-carbon-be08502f3283` sugiere que forma parte de una serie de registros similares (se han encontrado variantes con otros sufijos como `e64a9cbfe212` y `414018fd4fff`), probablemente generados por una herramienta de seguimiento de emisiones como CodeCarbon.
 
 No se dispone de información sobre arquitectura, parámetros, contexto, licencia o capacidades del modelo subyacente. El repositorio parece cumplir una función de auditoría ambiental más que de distribución de pesos de un modelo. Su relevancia radica en la creciente práctica de documentar la huella de carbono del entrenamiento de modelos, alineada con iniciativas de IA sostenible y transparencia energética.
 
@@ -72,7 +72,7 @@ No disponible. Este repositorio no contiene un modelo comparable con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-be08502f3283
+- Repositorio Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-be08502f3283
 - Variante relacionada: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-e64a9cbfe212
 - Variante relacionada: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-414018fd4fff
 - Repositorio GitHub relacionado: https://github.com/22f3001797/tds-ga8

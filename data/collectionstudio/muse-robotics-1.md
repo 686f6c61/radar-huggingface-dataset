@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Robotics-1 | 121,7 M | No disponible | VLA para manipulación | MIT | HuggingFace |
+| Muse-Robotics-1 | 121,7 M | No disponible | VLA para manipulación | MIT | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CollectionStudio/Muse-Robotics-1
+- Hugging Face: https://huggingface.co/CollectionStudio/Muse-Robotics-1
 - Paper referenciado (arxiv:2403.12945): no disponible enlace directo en la información
 - Paper referenciado (arxiv:2410.24164): no disponible enlace directo en la información
 - Repositorio o demo: no disponible

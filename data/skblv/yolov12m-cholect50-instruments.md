@@ -4,7 +4,7 @@
 
 El modelo `skblv/yolov12m-cholect50-instruments` es un detector de objetos basado en YOLOv12-m, entrenado específicamente para el reconocimiento de los seis instrumentos quirúrgicos presentes en el dataset CholecT50, una colección de vídeos de colecistectomía laparoscópica. Desarrollado por el usuario `skblv` en el marco de un leaderboard de comprensión de vídeo quirúrgico, el modelo se evalúa como un clasificador multi-etiqueta: un instrumento se considera presente si el detector predice al menos una caja para su clase. Está distribuido bajo licencia AGPL-3.0 y su propósito es servir como línea base de investigación, no como dispositivo médico.
 
-El modelo se publica en HuggingFace con el pipeline de `object-detection` y la librería Ultralytics, lo que facilita su uso con las herramientas estándar de YOLO. Aunque no se proporcionan detalles sobre el número de parámetros o la arquitectura interna, la documentación de Ultralytics indica que YOLOv12 es una arquitectura centrada en la atención, lo que la distingue de las generaciones anteriores. La evaluación reportada en la model card muestra un exact match del 81.37% y un micro-F1 del 92.37% sobre el conjunto de validación de CholecT50, con intervalos de confianza al 95%. Dado su pequeño tamaño (0.0 GB en el repositorio), se trata de un modelo ligero, adecuado para experimentos y aplicaciones en entornos con recursos limitados.
+El modelo se publica en Hugging Face con el pipeline de `object-detection` y la librería Ultralytics, lo que facilita su uso con las herramientas estándar de YOLO. Aunque no se proporcionan detalles sobre el número de parámetros o la arquitectura interna, la documentación de Ultralytics indica que YOLOv12 es una arquitectura centrada en la atención, lo que la distingue de las generaciones anteriores. La evaluación reportada en la model card muestra un exact match del 81.37% y un micro-F1 del 92.37% sobre el conjunto de validación de CholecT50, con intervalos de confianza al 95%. Dado su pequeño tamaño (0.0 GB en el repositorio), se trata de un modelo ligero, adecuado para experimentos y aplicaciones en entornos con recursos limitados.
 
 ## Especificaciones técnicas
 
@@ -70,7 +70,7 @@ No se dispone de información comparativa con otros modelos de detección de ins
 
 ## Enlaces
 
-- [HuggingFace: skblv/yolov12m-cholect50-instruments](https://huggingface.co/skblv/yolov12m-cholect50-instruments)
+- [Hugging Face: skblv/yolov12m-cholect50-instruments](https://huggingface.co/skblv/yolov12m-cholect50-instruments)
 - [Leaderboard de comprensión de vídeo quirúrgico (SDSC × Chicago Booth)](https://github.com/skblv/neurosurgery-video-eval-website)
 - [Documentación de YOLOv12 de Ultralytics](https://docs.ultralytics.com/models/yolo12)
 - [Dataset CholecT50 - CAMMA (Université de Strasbourg)](https://camma.unistra.fr/datasets/)

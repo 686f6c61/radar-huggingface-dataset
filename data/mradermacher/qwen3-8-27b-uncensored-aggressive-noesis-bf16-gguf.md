@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-GGUF
 - Modelo base (AMAImedia): https://huggingface.co/AMAImedia/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16
 - Variante similar de mradermacher: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-GGUF
 - Otra variante: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SartirGPT es un modelo publicado en HuggingFace por el usuario Plototon bajo el identificador `Plototon/SartirGPT`. En el momento de la consulta, la ficha del repositorio no incluye informacion sustantiva: la model card se limita a la declaracion de licencia `apache-2.0` en el encabezado YAML y no aporta descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas soportados indicados.
+SartirGPT es un modelo publicado en Hugging Face por el usuario Plototon bajo el identificador `Plototon/SartirGPT`. En el momento de la consulta, la ficha del repositorio no incluye informacion sustantiva: la model card se limita a la declaracion de licencia `apache-2.0` en el encabezado YAML y no aporta descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas soportados indicados.
 
 No es posible determinar que problema resuelve el modelo, cual es su arquitectura, su numero de parametros o su longitud de contexto, ya que ninguno de estos datos aparece en la informacion disponible. La fecha de creacion y ultima actualizacion registradas son ambas 2026-09-11T18:59:25Z, lo que sugiere un repositorio recien creado o sin mantenimiento posterior.
 
@@ -61,7 +61,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SartirGPT | no disponible | no disponible | no disponible | apache-2.0 | repositorio en HuggingFace |
+| SartirGPT | no disponible | no disponible | no disponible | apache-2.0 | repositorio en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,4 +76,4 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Plototon/SartirGPT
+- Hugging Face: https://huggingface.co/Plototon/SartirGPT

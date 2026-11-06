@@ -79,7 +79,7 @@ La comparativa se limita a la familia SpoomplesMaxx y al modelo base, ya que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B
+- Modelo en Hugging Face: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B
 - Repositorio GitHub de la familia: https://github.com/aimerib/spoomplesmaxx
 - Modelo relacionado spoomplesmaxx-mini-14B: https://huggingface.co/aimeri/spoomplesmaxx-mini-14B
 - Modelo relacionado spoomplesmaxx-v2.1-30B: https://huggingface.co/aimeri/spoomplesmaxx-v2.1-30B

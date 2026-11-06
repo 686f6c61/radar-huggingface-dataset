@@ -77,7 +77,7 @@ La comparativa se limita a las variantes del mismo modelo dentro del ecosistema 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1-mlx
 - Checkpoint original (modelo base): https://huggingface.co/OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1
 - Variante ONNX para Android/Web: https://huggingface.co/OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1-onnx-android
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed

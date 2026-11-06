@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW-gen-v2 es un modelo de generación de imágenes texto-a-imagen desarrollado por UnfilteredAI (publicado en HuggingFace por el usuario Mfbd111) y afinado a partir de OEvortex/PixelGen. Su propósito declarado es generar imágenes sin filtrado de contenido, incluyendo material explícito y NSFW, además de estilos 3D. Se distribuye en formato diffusers y está pensado para ejecutarse con la pipeline `StableDiffusionXLPipeline`, lo que lo sitúa en la familia de modelos SDXL.
+NSFW-gen-v2 es un modelo de generación de imágenes texto-a-imagen desarrollado por UnfilteredAI (publicado en Hugging Face por el usuario Mfbd111) y afinado a partir de OEvortex/PixelGen. Su propósito declarado es generar imágenes sin filtrado de contenido, incluyendo material explícito y NSFW, además de estilos 3D. Se distribuye en formato diffusers y está pensado para ejecutarse con la pipeline `StableDiffusionXLPipeline`, lo que lo sitúa en la familia de modelos SDXL.
 
 El modelo cuenta con aproximadamente 3.468.838.944 parámetros (3,47 mil millones) en pesos FP16, con un repositorio de 26,2 GB. La model card declara soporte para inglés, portugués y tailandés, aunque no se especifican detalles sobre el corpus de entrenamiento ni sobre el proceso de afinado más allá de indicar que parte de PixelGen.
 
@@ -25,7 +25,7 @@ Es relevante por su carácter explícitamente sin censura, una categoría de mod
 
 El modelo se distribuye como pipeline de diffusers etiquetada como `StableDiffusionXLPipeline`, lo que implica una arquitectura de difusión latente compatible con el ecosistema SDXL. Los pesos suman 3,47 mil millones de parámetros en FP16 y el repositorio ocupa 26,2 GB, coherente con un checkpoint de difusión de ese tamaño más los componentes auxiliares (VAE, text encoders). No se especifica en la información disponible si emplea un UNet clásico o una variante transformer, ni detalles de los text encoders.
 
-El modelo es un fine-tune de OEvortex/PixelGen, según los metadatos de HuggingFace (base_model: HelpingAI/PixelGen y base_model:finetune:HelpingAI/PixelGen). No se han publicado en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste por preferencias. La model card menciona únicamente la capacidad de renderizado en estilo 3D mediante el uso de las etiquetas "3d" o "3d style" en el prompt.
+El modelo es un fine-tune de OEvortex/PixelGen, según los metadatos de Hugging Face (base_model: HelpingAI/PixelGen y base_model:finetune:HelpingAI/PixelGen). No se han publicado en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste por preferencias. La model card menciona únicamente la capacidad de renderizado en estilo 3D mediante el uso de las etiquetas "3d" o "3d style" en el prompt.
 
 ## Capacidades
 
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia en FP16: aproximadamente 7-8 GB solo para los pesos del modelo, más overhead de activaciones y text encoders; en la práctica se recomienda un mínimo de 10-12 GB para resoluciones SDXL estándar (1024x1024).
 - GPU recomendadas: NVIDIA A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para inferencia cómoda y generación por lotes.
 - GPU de consumo: cabe en RTX 3090/4090 (24 GB) en FP16; en GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4070) requiere técnicas de offloading o cuantización adicional no documentada por el autor.
-- Opciones de despliegue: diffusers con `StableDiffusionXLPipeline`, así como servidores compatibles con SDXL como ComfyUI, Automatic1111 (con soporte SDXL) y endpoints de HuggingFace (el tag `endpoints_compatible` está presente).
+- Opciones de despliegue: diffusers con `StableDiffusionXLPipeline`, así como servidores compatibles con SDXL como ComfyUI, Automatic1111 (con soporte SDXL) y endpoints de Hugging Face (el tag `endpoints_compatible` está presente).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| NSFW-gen-v2 | 3,47 mil millones | SDXL (1024x1024 típico) | other | HuggingFace, diffusers | Fine-tune sin censura de PixelGen |
-| OEvortex/PixelGen (base) | no disponible | SDXL | no disponible | HuggingFace | Modelo base del que deriva |
-| UnfilteredAI/NSFW-GEN-ANIME | no disponible | SDXL | other | HuggingFace | Variante orientada a estilo anime del mismo autor |
+| NSFW-gen-v2 | 3,47 mil millones | SDXL (1024x1024 típico) | other | Hugging Face, diffusers | Fine-tune sin censura de PixelGen |
+| OEvortex/PixelGen (base) | no disponible | SDXL | no disponible | Hugging Face | Modelo base del que deriva |
+| UnfilteredAI/NSFW-GEN-ANIME | no disponible | SDXL | other | Hugging Face | Variante orientada a estilo anime del mismo autor |
 | Stable Diffusion XL (referencia) | ~3,5 mil millones (UNet) | 1024x1024 | CreativeML Open RAIL++-M | Amplia | Modelo generalista con filtros y salvaguardas |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mfbd111/NSFW-gen-v2
+- Modelo en Hugging Face: https://huggingface.co/Mfbd111/NSFW-gen-v2
 - Modelo base declarado: https://huggingface.co/OEvortex/PixelGen
 - Variante anime del mismo autor: https://huggingface.co/UnfilteredAI/NSFW-GEN-ANIME
 - Página de apoyo del autor (Buy Me a Coffee): https://www.buymeacoffee.com/oevortex

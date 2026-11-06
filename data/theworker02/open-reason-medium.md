@@ -75,7 +75,7 @@ No se dispone de información de benchmarks para comparar rendimiento. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theworker02/open-reason-medium
+- Modelo en Hugging Face: https://huggingface.co/theworker02/open-reason-medium
 - Dataset: https://huggingface.co/datasets/theworker02/open-reason
 - Modelo pequeño: https://huggingface.co/theworker02/open-reason-small
 - Código: https://github.com/theworker02/open-reason

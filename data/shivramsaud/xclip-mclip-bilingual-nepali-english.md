@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ShivRamSaud/xclip-mclip-bilingual-nepali-english es un ajuste fino de recuperacion video-texto (video-text retrieval) orientado al par de idiomas nepalí-ingles. Lo desarrolla el usuario ShivRamSaud y se publica en HuggingFace bajo el identificador ShivRamSaud/xclip-mclip-bilingual-nepali-english. No es un modelo generativo de lenguaje, sino un modelo de representacion multimodal cuya funcion es alinear embeddings de video y de texto para permitir busquedas cruzadas en ambos sentidos (texto a video, T2V, y video a texto, V2T).
+El modelo ShivRamSaud/xclip-mclip-bilingual-nepali-english es un ajuste fino de recuperacion video-texto (video-text retrieval) orientado al par de idiomas nepalí-ingles. Lo desarrolla el usuario ShivRamSaud y se publica en Hugging Face bajo el identificador ShivRamSaud/xclip-mclip-bilingual-nepali-english. No es un modelo generativo de lenguaje, sino un modelo de representacion multimodal cuya funcion es alinear embeddings de video y de texto para permitir busquedas cruzadas en ambos sentidos (texto a video, T2V, y video a texto, V2T).
 
 La arquitectura combina X-CLIP, un codificador de video con atencion entre fotogramas (cross-frame attention), con M-CLIP, un codificador de texto multilingue. Segun la model card, el ajuste se realizo sobre un dataset de video bilingue nepalí-ingles y se apoya en dos elementos: atencion entre fotogramas y prompts especificos de video (video-specific prompts). El repositorio ocupa 2,7 GB, aunque no se detalla el numero de parametros ni el formato exacto de los pesos.
 
@@ -67,16 +67,16 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - El consumo real de VRAM en inferencia es mayor que el de los pesos, porque el codificador de video procesa multiples fotogramas simultaneamente. El numero maximo de fotogramas no esta documentado.
 - GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, cualquier GPU consumer con 8 GB o mas (RTX 3060, RTX 4060, RTX 4070) deberia poder alojar los pesos; para lotes grandes de video conviene una GPU con 16-24 GB (RTX 4090, A5000) o de centro de datos (A100, H100).
 - Cabe en GPU consumer: probablemente si, en funcion del numero de fotogramas por clip y del tamano de lote. No confirmado por el autor.
-- Opciones de despliegue: al ser un modelo de retrieval basado en transformers, lo natural es servirlo con PyTorch y la libreria transformers de HuggingFace, o con un servidor de embeddings propio. No aplican llama.cpp, Ollama ni GGUF, que estan pensados para modelos generativos.
+- Opciones de despliegue: al ser un modelo de retrieval basado en transformers, lo natural es servirlo con PyTorch y la libreria transformers de Hugging Face, o con un servidor de embeddings propio. No aplican llama.cpp, Ollama ni GGUF, que estan pensados para modelos generativos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ShivRamSaud/xclip-mclip-bilingual-nepali-english | Dual-encoder video-texto | no disponible | no disponible | ne, en | no disponible | HuggingFace, 0 descargas |
-| X-CLIP (Microsoft, modelo base) | Dual-encoder video-texto | no disponible en la informacion proporcionada | no disponible | principalmente ingles | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| M-CLIP (codificador de texto multilingue) | Encoder de texto para CLIP | no disponible en la informacion proporcionada | no disponible | multilingue | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| ShivRamSaud/xclip-mclip-bilingual-nepali-english | Dual-encoder video-texto | no disponible | no disponible | ne, en | no disponible | Hugging Face, 0 descargas |
+| X-CLIP (Microsoft, modelo base) | Dual-encoder video-texto | no disponible en la informacion proporcionada | no disponible | principalmente ingles | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| M-CLIP (codificador de texto multilingue) | Encoder de texto para CLIP | no disponible en la informacion proporcionada | no disponible | multilingue | no disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento de las alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La unica ventaja diferencial documentada de este ajuste es la cobertura del nepalí, ausente en la mayoria de modelos de recuperacion video-texto.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShivRamSaud/xclip-mclip-bilingual-nepali-english
+- Hugging Face: https://huggingface.co/ShivRamSaud/xclip-mclip-bilingual-nepali-english
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden al medio sueco Aftonbladet y no guardan relacion con X-CLIP, M-CLIP ni con recuperacion video-texto en nepalí.
 - Paper de X-CLIP: no disponible en la informacion proporcionada.
 - Repositorio de M-CLIP: no disponible en la informacion proporcionada.

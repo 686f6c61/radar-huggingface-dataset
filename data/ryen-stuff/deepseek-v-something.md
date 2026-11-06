@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, publicado en HuggingFace por el usuario "ryen-stuff", se presenta como un experimento personal dentro de la familia DeepSeek V4. El repositorio no contiene una descripción técnica más allá de una nota del autor indicando que lo creó para explorar cómo funcionan los modelos de IA y que consideró interesante "mejorar el código". A pesar de la etiqueta `deepseek_v4`, no hay evidencia de que sea un modelo oficial de DeepSeek ni de que haya sido validado por la comunidad. El archivo de pesos en formato safetensors ocupa 166,9 GB y los parámetros totales ascienden a 304 180 418 494 (aproximadamente 304B), lo que lo sitúa en la categoría de modelos muy grandes, similares a DeepSeek-V4-Pro en cuanto a escala. Sin embargo, la ausencia de documentación técnica y de resultados de evaluación hace que su utilidad práctica sea incierta y no recomendable para entornos de producción sin una verificación exhaustiva previa.
+Este modelo, publicado en Hugging Face por el usuario "ryen-stuff", se presenta como un experimento personal dentro de la familia DeepSeek V4. El repositorio no contiene una descripción técnica más allá de una nota del autor indicando que lo creó para explorar cómo funcionan los modelos de IA y que consideró interesante "mejorar el código". A pesar de la etiqueta `deepseek_v4`, no hay evidencia de que sea un modelo oficial de DeepSeek ni de que haya sido validado por la comunidad. El archivo de pesos en formato safetensors ocupa 166,9 GB y los parámetros totales ascienden a 304 180 418 494 (aproximadamente 304B), lo que lo sitúa en la categoría de modelos muy grandes, similares a DeepSeek-V4-Pro en cuanto a escala. Sin embargo, la ausencia de documentación técnica y de resultados de evaluación hace que su utilidad práctica sea incierta y no recomendable para entornos de producción sin una verificación exhaustiva previa.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se puede realizar una comparativa fiable porque no se dispone de información
 
 ## Enlaces
 
-- Repositorio HuggingFace: [ryen-stuff/DeepSeek.v.something](https://huggingface.co/ryen-stuff/DeepSeek.v.something)
+- Repositorio Hugging Face: [ryen-stuff/DeepSeek.v.something](https://huggingface.co/ryen-stuff/DeepSeek.v.something)
 - Sitio oficial de DeepSeek (referencia general): [https://deepseek.com/en/index.html](https://deepseek.com/en/index.html)
 - Artículo de Decrypt sobre DeepSeek V4-Pro: [https://decrypt.co/365455/deepseek-v4-launch-pro-version-costs-less-gpt-5-pro](https://decrypt.co/365455/deepseek-v4-launch-pro-version-costs-less-gpt-5-pro)
 - Guía de BentoML sobre modelos DeepSeek: [https://www.bentoml.com/blog/the-complete-guide-to-deepseek-models-from-v3-to-r1-and-beyond](https://www.bentoml.com/blog/the-complete-guide-to-deepseek-models-from-v3-to-r1-and-beyond)

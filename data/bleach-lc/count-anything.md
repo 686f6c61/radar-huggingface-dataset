@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Count Anything es un modelo de visión por computadora para conteo de objetos guiado por texto, desarrollado por Mengqi Lei y publicado originalmente en HuggingFace como MengqiLei/count-anything. El repositorio analizado (BLEACH-lc/count-anything) es una copia alojada por el usuario BLEACH-lc. Dada una imagen y una consulta en lenguaje natural, el modelo devuelve un conjunto de puntos de instancia cuya cardinalidad corresponde al número de objetos de la categoría solicitada. Esta formulación unifica el conteo condicionado por categoría con la localización espacial interpretable.
+Count Anything es un modelo de visión por computadora para conteo de objetos guiado por texto, desarrollado por Mengqi Lei y publicado originalmente en Hugging Face como MengqiLei/count-anything. El repositorio analizado (BLEACH-lc/count-anything) es una copia alojada por el usuario BLEACH-lc. Dada una imagen y una consulta en lenguaje natural, el modelo devuelve un conjunto de puntos de instancia cuya cardinalidad corresponde al número de objetos de la categoría solicitada. Esta formulación unifica el conteo condicionado por categoría con la localización espacial interpretable.
 
 El modelo se entrena y evalúa en CLOC, un dataset de conteo a gran escala que reúne alrededor de 220.000 imágenes, 619 categorías y 15 millones de instancias, cubriendo seis dominios visuales: escena general, teledetección, histopatología, microscopía celular, agricultura y microbiología. La arquitectura se inicializa desde SAM3, aunque no se proporcionan detalles específicos de parámetros ni arquitectura. El repositorio pesa 3,6 GB.
 
@@ -68,8 +68,8 @@ No disponible. No se proporcionan modelos comparables en la información disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BLEACH-lc/count-anything
+- Hugging Face: https://huggingface.co/BLEACH-lc/count-anything
 - Página del proyecto: https://mengqi-lei.github.io/count-anything-projectpage/
-- Modelo original en HuggingFace: https://huggingface.co/MengqiLei/count-anything
-- Demo en HuggingFace: https://huggingface.co/spaces/MengqiLei/count-anything-demo
+- Modelo original en Hugging Face: https://huggingface.co/MengqiLei/count-anything
+- Demo en Hugging Face: https://huggingface.co/spaces/MengqiLei/count-anything-demo
 - Artículo en arXiv: https://arxiv.org/abs/2605.30846

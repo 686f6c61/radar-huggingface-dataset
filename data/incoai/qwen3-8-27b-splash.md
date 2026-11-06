@@ -99,7 +99,7 @@ No se dispone de comparaciones frente a modelos densos de tamano similar de otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/incoai/Qwen3.8-27B-Splash
+- Modelo en Hugging Face: https://huggingface.co/incoai/Qwen3.8-27B-Splash
 - Motor Splash (GitHub): https://github.com/incoai/splash
 - Post de lanzamiento y benchmarks: https://inco.ai/blog/splash/
 - DFlash 2: https://inco.ai/blog/dflash2/

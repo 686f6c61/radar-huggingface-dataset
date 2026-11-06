@@ -85,7 +85,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MLX-6bit
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Colección de packs Alis MLX: https://huggingface.co/collections/avlp12/glm-53-flash-alis-mlx-6a8f74a74289c9ad6a5f5e05
 - Repositorio de campaña (port, conversión, recibos): https://github.com/avlp12/local-llm-serving

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jmzzomg/colmodernvbert es un modelo publicado en HuggingFace por el usuario jmzzomg, con licencia Apache 2.0 y un repositorio de 1,0 GB que contiene pesos en formato ONNX. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados. La model card asociada se limita a la linea de licencia, sin descripcion de arquitectura, datos de entrenamiento, tokenizador ni resultados de evaluacion.
+jmzzomg/colmodernvbert es un modelo publicado en Hugging Face por el usuario jmzzomg, con licencia Apache 2.0 y un repositorio de 1,0 GB que contiene pesos en formato ONNX. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados. La model card asociada se limita a la linea de licencia, sin descripcion de arquitectura, datos de entrenamiento, tokenizador ni resultados de evaluacion.
 
 El identificador del repositorio sugiere, sin que el autor lo confirme en la documentacion, un modelo de recuperacion de informacion basado en late interaction (familia ColBERT) construido sobre un codificador tipo ModernVBERT. Esta hipotesis procede unicamente de la nomenclatura y no debe tomarse como especificacion tecnica verificada: no hay informacion publicada sobre el numero de parametros, la dimension de las representaciones multi-vector, la longitud de contexto ni el corpus de entrenamiento.
 
@@ -21,7 +21,7 @@ Su relevancia potencial, si se confirma la hipotesis anterior, residiria en el d
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX |
 | Tamano del repositorio | 1,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creacion | 2026-10-06 |
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jmzzomg/colmodernvbert
+- Modelo en Hugging Face: https://huggingface.co/jmzzomg/colmodernvbert
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

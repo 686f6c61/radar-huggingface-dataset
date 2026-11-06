@@ -62,7 +62,7 @@ Estos datos indican el rendimiento agregado del sistema de atribución, no la pr
 - VRAM estimada para inferencia: con 1.176.764.416 parámetros en bf16, el modelo ocupa aproximadamente 2,35 GB en memoria. Para inferencia con un lote pequeño, se necesitan al menos 3-4 GB de VRAM, incluyendo overhead de activaciones.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente, por ejemplo NVIDIA RTX 3060, RTX 4060, RTX 4070, o GPUs de datacenter como A10 o A100. También puede ejecutarse en CPU, aunque con mayor latencia.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs consumer de gama media y baja.
-- Opciones de despliegue: al ser un modelo de la familia OLMo con pesos en safetensors, puede cargarse con la librería `transformers` de HuggingFace, o servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con Ollama si se empaqueta adecuadamente.
+- Opciones de despliegue: al ser un modelo de la familia OLMo con pesos en safetensors, puede cargarse con la librería `transformers` de Hugging Face, o servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con Ollama si se empaqueta adecuadamente.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La elección entre ambos dependerá de los recursos de hardware disponibles y de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-metre-aeschylus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-metre-aeschylus
 - Dataset Sphragis-Metre: https://huggingface.co/datasets/Urdatorn/sphragis-metre
 - Repositorio de código (entrenamiento, scoring y atribución): https://github.com/Urdatorn/sphragis_models
 - Perfil del autor en GitHub: https://github.com/Urdatorn

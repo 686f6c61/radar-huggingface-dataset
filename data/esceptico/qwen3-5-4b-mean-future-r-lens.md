@@ -76,7 +76,7 @@ La model card advierte que la campana de validacion uso 6 prompts de ajuste por 
 
 | Herramienta | Tipo | Base model | Metodologia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mean-Future R-Lens (este) | Lente de lectura | Qwen3.5-4B | Pseudo-Jacobianos RelP promediados (Mean-Future) | Apache-2.0 | HuggingFace |
+| Mean-Future R-Lens (este) | Lente de lectura | Qwen3.5-4B | Pseudo-Jacobianos RelP promediados (Mean-Future) | Apache-2.0 | Hugging Face |
 | Sum R-Lens | Lente de lectura | Qwen3.5-4B | Pseudo-Jacobianos RelP sumados | Apache-2.0 | Incluido en el repo como comparacion |
 | J-Lens | Lente de lectura | Qwen3.5-4B | Jacobianos ordinarios | Apache-2.0 | Incluido en el repo como comparacion |
 
@@ -94,6 +94,6 @@ No se dispone de informacion sobre otras herramientas comparables en el mercado 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/esceptico/qwen3.5-4b-mean-future-r-lens
+- Repositorio Hugging Face: https://huggingface.co/esceptico/qwen3.5-4b-mean-future-r-lens
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Post original de R-Lens en LessWrong: https://www.lesswrong.com/posts/nv8oedrnLXKRzNEL9/r-lens-making-j-lens-more-faithful-on-early-layers

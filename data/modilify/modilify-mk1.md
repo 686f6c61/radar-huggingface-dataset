@@ -104,7 +104,7 @@ La principal diferencia de Modilify Mk1 frente a los otros dos es el mecanismo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modilify/Modilify-Mk1
+- Modelo en Hugging Face: https://huggingface.co/modilify/Modilify-Mk1
 - Versión Preview: https://huggingface.co/modilify/Modilify-Mk1-preview
 - Licencia: https://huggingface.co/modilify/Modilify-Mk1/blob/main/LICENSE (enlace inferido a partir de la model card)
 

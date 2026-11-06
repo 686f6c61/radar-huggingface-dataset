@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 AXIS joint policy es una politica robotica de tipo vision-language-action (VLA) publicada por el usuario brunabcardi en HuggingFace bajo el identificador `brunabcardi/pi0.5-aPuY5FhRfTTs`. Se trata de un fine-tune parcial de `ApexUltron/pi0.5-KX774qZu7mZD`, el checkpoint que lideraba la competicion AXIS en el momento del entrenamiento con una puntuacion de 0,8283. El modelo toma como entrada una imagen RGB de una camara (256×256), un estado articular de 9 dimensiones y una instruccion de tarea en lenguaje natural, y produce como salida 9 objetivos absolutos de posicion articular.
+π0.5 AXIS joint policy es una politica robotica de tipo vision-language-action (VLA) publicada por el usuario brunabcardi en Hugging Face bajo el identificador `brunabcardi/pi0.5-aPuY5FhRfTTs`. Se trata de un fine-tune parcial de `ApexUltron/pi0.5-KX774qZu7mZD`, el checkpoint que lideraba la competicion AXIS en el momento del entrenamiento con una puntuacion de 0,8283. El modelo toma como entrada una imagen RGB de una camara (256×256), un estado articular de 9 dimensiones y una instruccion de tarea en lenguaje natural, y produce como salida 9 objetivos absolutos de posicion articular.
 
 La innovacion principal de este checkpoint concreto no es arquitectonica, sino de metodo de entrenamiento: solo se han entrenado la torre de vision SigLIP, el action expert y las capas de proyeccion (842.540.816 parametros entrenables en 40 tensores), mientras que el modelo de lenguaje PaliGemma de 2B y la cabeza de imagen permanecen congelados y byte a byte identicos al padre (2.510.893.056 parametros congelados en 11 tensores). La arquitectura subyacente es π0.5, un transformer VLA construido sobre PaliGemma con un action expert adicional, configurado con `Pi0Config(pi05=True, discrete_state_input=True)` y `action_horizon` de 10.
 
@@ -88,8 +88,8 @@ Como contexto del linaje, la informacion proporcionada menciona las siguientes p
 |---|---|---|---|---|---|
 | brunabcardi/pi0.5-aPuY5FhRfTTs | 3.353.433.872 (842.540.816 entrenables) | `action_horizon` 10 | no disponible | no disponible | Repositorio de 12,4 GB, 0 descargas |
 | ApexUltron/pi0.5-KX774qZu7mZD (padre) | no desglosados (misma linea π0.5) | no disponible | 0,8283 | no disponible | Sin model card publicada |
-| pfenzi/pi0.5-8wKVKfMLCNbx | no desglosados (misma linea π0.5) | no disponible | 0,8117 | no disponible | Disponible en HuggingFace |
-| MechaTrainer/pi0.5-rneQYn9nFopV | no desglosados (misma linea π0.5) | no disponible | 0,785 | no disponible | Disponible en HuggingFace |
+| pfenzi/pi0.5-8wKVKfMLCNbx | no desglosados (misma linea π0.5) | no disponible | 0,8117 | no disponible | Disponible en Hugging Face |
+| MechaTrainer/pi0.5-rneQYn9nFopV | no desglosados (misma linea π0.5) | no disponible | 0,785 | no disponible | Disponible en Hugging Face |
 
 Los tres checkpoints comparables pertenecen al mismo linaje de fine-tunes de π0.5 sobre AXIS, por lo que comparten arquitectura, interfaz y fichero de normalizacion con la unica diferencia documentada del alcance entrenado y del numero de pasos. No se dispone de modelos de otra familia con los que comparar directamente en la informacion proporcionada.
 
@@ -109,7 +109,7 @@ Los tres checkpoints comparables pertenecen al mismo linaje de fine-tunes de π0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brunabcardi/pi0.5-aPuY5FhRfTTs
+- Modelo en Hugging Face: https://huggingface.co/brunabcardi/pi0.5-aPuY5FhRfTTs
 - Modelo base (padre): https://huggingface.co/ApexUltron/pi0.5-KX774qZu7mZD (revision `46abf397fdb40525841ece710b544b6edcb928a0`)
 - Padre del padre: https://huggingface.co/pfenzi/pi0.5-8wKVKfMLCNbx (revision `a4a5f5711261b661c2fde6fa2f067acc9a09b050`)
 - Ancestro: https://huggingface.co/MechaTrainer/pi0.5-rneQYn9nFopV (revision `f0a106070f4de953c5b1ff9ae361a7099f7be796`)

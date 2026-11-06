@@ -89,10 +89,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Precision / formato | Tamano | GPU objetivo | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (W4A8) | 4 bits pesos / 8 bits activaciones, safetensors | 5,88 GB | Cualquier CUDA | 5/100 | qwen-research (no comercial) | HuggingFace |
-| `Qwen-Image-2.1-Text-Encoder-Heretic` (bf16) | bf16 | 17 GB | CUDA con VRAM amplia | 5/100 | qwen-research (no comercial) | HuggingFace |
-| `Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4` | NVFP4 (w4) | 5,87 GB | Blackwell (tensor cores FP4) | 5/100 | qwen-research (no comercial) | HuggingFace |
-| `Qwen-Image-2.1-Text-Encoder-Heretic-GGUF` | GGUF | No disponible | Apple Silicon y CPU/GPU mixto | 5/100 | qwen-research (no comercial) | HuggingFace |
+| Este modelo (W4A8) | 4 bits pesos / 8 bits activaciones, safetensors | 5,88 GB | Cualquier CUDA | 5/100 | qwen-research (no comercial) | Hugging Face |
+| `Qwen-Image-2.1-Text-Encoder-Heretic` (bf16) | bf16 | 17 GB | CUDA con VRAM amplia | 5/100 | qwen-research (no comercial) | Hugging Face |
+| `Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4` | NVFP4 (w4) | 5,87 GB | Blackwell (tensor cores FP4) | 5/100 | qwen-research (no comercial) | Hugging Face |
+| `Qwen-Image-2.1-Text-Encoder-Heretic-GGUF` | GGUF | No disponible | Apple Silicon y CPU/GPU mixto | 5/100 | qwen-research (no comercial) | Hugging Face |
 | Encoder oficial de Comfy-Org (`qwen3vl_8b_w4a8.safetensors`) | W4A8, safetensors | No disponible en la informacion | Cualquier CUDA | 100/100 | qwen-research (no comercial) | Distribuido con ComfyUI |
 
 No se dispone de datos de benchmarks comparativos de calidad de generacion entre estas variantes; la unica comparacion cuantitativa publicada es el error de cuantizacion y la tasa de rechazos.
@@ -114,13 +114,13 @@ No se dispone de datos de benchmarks comparativos de calidad de generacion entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8
+- Modelo en Hugging Face: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8
 - Fuente bf16 de la misma familia: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
 - Build NVFP4 para Blackwell: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4
 - Build GGUF para Apple Silicon: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Texto de la licencia Qwen Research: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Herramienta de ablacion direccional Heretic: https://github.com/p-e-w/heretic
-- Dataset de evaluacion de rechazos: `mlabonne/harmful_behaviors` (HuggingFace)
-- Dataset de evaluacion de divergencia KL: `mlabonne/harmless_alpaca` (HuggingFace)
+- Dataset de evaluacion de rechazos: `mlabonne/harmful_behaviors` (Hugging Face)
+- Dataset de evaluacion de divergencia KL: `mlabonne/harmless_alpaca` (Hugging Face)
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los unicos enlaces recuperados eran documentacion de soporte de Windows y no guardan relacion con el modelo.

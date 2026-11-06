@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-rgb-dep-colormap-step21700 es un checkpoint histórico de robótica publicado por el usuario RainyBot en HuggingFace. Se trata de un modelo de política visomotora (vision-language-action, aunque la model card no lo confirma explícitamente) entrenado sobre el benchmark LIBERO, un conjunto de tareas de manipulación robótica. El checkpoint corresponde al paso de optimizador final 21700 de 21700, es decir, el modelo se guardó al completar su presupuesto de entrenamiento.
+SemWAM-LIBERO-Legacy-rgb-dep-colormap-step21700 es un checkpoint histórico de robótica publicado por el usuario RainyBot en Hugging Face. Se trata de un modelo de política visomotora (vision-language-action, aunque la model card no lo confirma explícitamente) entrenado sobre el benchmark LIBERO, un conjunto de tareas de manipulación robótica. El checkpoint corresponde al paso de optimizador final 21700 de 21700, es decir, el modelo se guardó al completar su presupuesto de entrenamiento.
 
 El modelo se construye sobre el backbone de vídeo Wan-AI/Wan2.2-TI2V-5B, un modelo de difusión de vídeo de 5 mil millones de parámetros, y añade codificación semántica mediante DINOv3 ViT-B/16 (768 dimensiones) y estimación de profundidad con VDA (ViT-B, entrada 518 px) en representación colormap con paleta turbo. La arquitectura combina RGB y profundidad, con un paradigma de entrada `t_concat` y disposición de vistas horizontal típica de LIBERO.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-LIBERO-Legacy-rgb-dep-colormap-step21700 | no disponible (backbone 5B) | no aplica | no disponible | no disponible | HuggingFace (RainyBot) |
-| Wan-AI/Wan2.2-TI2V-5B | 5B | no disponible | no disponible | no disponible en esta ficha | HuggingFace (Wan-AI) |
+| SemWAM-LIBERO-Legacy-rgb-dep-colormap-step21700 | no disponible (backbone 5B) | no aplica | no disponible | no disponible | Hugging Face (RainyBot) |
+| Wan-AI/Wan2.2-TI2V-5B | 5B | no disponible | no disponible | no disponible en esta ficha | Hugging Face (Wan-AI) |
 | Alternativas de política LIBERO | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con otras políticas de LIBERO en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-dep-colormap-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-dep-colormap-step21700
 - Backbone base referenciado: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Benchmark LIBERO: no disponible en la información proporcionada
 - Paper o blog del autor: no disponible

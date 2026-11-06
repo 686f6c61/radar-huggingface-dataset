@@ -62,10 +62,10 @@ No se han publicado resultados numéricos de benchmarks en la informacion dispon
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.6 Thinking | 1.3B | no disponible | SigLIP2-400M + Qwen3.5-0.8B | Apache 2.0 | HuggingFace, API |
-| MiniCPM-V 4.6 (Instruct) | 1.3B | no disponible | SigLIP2-400M + Qwen3.5-0.8B | Apache 2.0 | HuggingFace |
-| Qwen2-VL-2B | 2B | 32K tokens | Vision transformer + Qwen2 | Apache 2.0 | HuggingFace |
-| Phi-3.5-vision | 4.2B | 128K tokens | Transformer multimodal | MIT | HuggingFace |
+| MiniCPM-V 4.6 Thinking | 1.3B | no disponible | SigLIP2-400M + Qwen3.5-0.8B | Apache 2.0 | Hugging Face, API |
+| MiniCPM-V 4.6 (Instruct) | 1.3B | no disponible | SigLIP2-400M + Qwen3.5-0.8B | Apache 2.0 | Hugging Face |
+| Qwen2-VL-2B | 2B | 32K tokens | Vision transformer + Qwen2 | Apache 2.0 | Hugging Face |
+| Phi-3.5-vision | 4.2B | 128K tokens | Transformer multimodal | MIT | Hugging Face |
 
 La comparativa se basa en datos públicos de los modelos mencionados. MiniCPM-V 4.6 Thinking se distingue por su menor tamaño y su enfoque en razonamiento explícito, mientras que alternativas como Qwen2-VL-2B ofrecen mayor contexto pero sin modo de razonamiento dedicado. No se dispone de benchmarks comparativos fiables en la información proporcionada.
 
@@ -77,15 +77,15 @@ La comparativa se basa en datos públicos de los modelos mencionados. MiniCPM-V 
 - Longitud de contexto desconocida: no se ha publicado la ventana de contexto máxima, lo que puede limitar su uso en tareas que requieran procesar documentos largos o múltiples imágenes.
 - Compatibilidad de video: la inferencia de video depende de torchcodec, que puede tener problemas de compatibilidad con ciertas versiones de CUDA; se recomienda usar PyAV como alternativa.
 - Dependencia de versiones recientes: requiere transformers >= 5.7.0, lo que puede no estar disponible en todos los entornos.
-- El repositorio en HuggingFace (zhao2048/MiniCPM-V-4.6-Thinking) tiene 0 descargas y 0 likes, lo que sugiere que podría ser un espejo no oficial; se recomienda verificar la autenticidad del modelo antes de usarlo en producción.
+- El repositorio en Hugging Face (zhao2048/MiniCPM-V-4.6-Thinking) tiene 0 descargas y 0 likes, lo que sugiere que podría ser un espejo no oficial; se recomienda verificar la autenticidad del modelo antes de usarlo en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/zhao2048/MiniCPM-V-4.6-Thinking
+- Repositorio Hugging Face (espejo): https://huggingface.co/zhao2048/MiniCPM-V-4.6-Thinking
 - Repositorio original (OpenBMB): https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
 - GitHub del proyecto: https://github.com/OpenBMB/MiniCPM-o
 - CookBook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Thinking-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Thinking-Demo
 - Documentación de la API: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
 - Paper (razonamiento): arxiv:2604.27393
 - Paper (MiniCPM-V 4.6): arxiv:2509.18154

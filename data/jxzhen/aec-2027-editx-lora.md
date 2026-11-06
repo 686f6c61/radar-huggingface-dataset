@@ -85,7 +85,7 @@ No se han encontrado otros modelos comparables en los resultados de busqueda web
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jxzhen/aec-2027-editx-lora
+- Repositorio Hugging Face: https://huggingface.co/jxzhen/aec-2027-editx-lora
 - Modelo base: https://huggingface.co/stepfun-ai/Step-Audio-EditX
 - Corpus de origen (LibriSpeech, OpenSLR SLR12): https://www.openslr.org/12
 - Release de GitHub anunciado en la model card (placeholder, sin confirmar): https://github.com/jxzhen/aec-2027-editx-lora/releases/tag/v1.0

@@ -82,7 +82,7 @@ No se dispone de informacion sobre otros modelos comparables en la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nova-quill/Orca-Qwen3.8-27B-Uncensored-mlx
+- Hugging Face: https://huggingface.co/nova-quill/Orca-Qwen3.8-27B-Uncensored-mlx
 - Variante Unsloth: https://huggingface.co/nova-quill/Orca-Qwen3.8-27B-Uncensored-unsloth-mlx
 - Repositorio GitHub (despliegue MLX): https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX
 - Guia de despliegue local: https://github.com/newbdez33/qwen3.8

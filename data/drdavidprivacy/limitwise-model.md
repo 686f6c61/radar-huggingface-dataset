@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LimitWise v2 es un modelo de clasificación tabular basado en regresión logística, publicado por el usuario drdavidprivacy en HuggingFace. No es un modelo de lenguaje ni una red neuronal profunda: es un pipeline de scikit-learn orientado a la predicción de impago de pagos en el siguiente ciclo de facturación de tarjetas de crédito, dentro de un caso práctico educativo de gobernanza de IA (AI Governance Practicum, Track 1). El modelo se entrenó sobre un conjunto de datos público y se documenta con una model card de ejemplo (exemplar) atribuida a un analista ficticio, Tom Becker, en una organización ficticia, Corvana Bank.
+LimitWise v2 es un modelo de clasificación tabular basado en regresión logística, publicado por el usuario drdavidprivacy en Hugging Face. No es un modelo de lenguaje ni una red neuronal profunda: es un pipeline de scikit-learn orientado a la predicción de impago de pagos en el siguiente ciclo de facturación de tarjetas de crédito, dentro de un caso práctico educativo de gobernanza de IA (AI Governance Practicum, Track 1). El modelo se entrenó sobre un conjunto de datos público y se documenta con una model card de ejemplo (exemplar) atribuida a un analista ficticio, Tom Becker, en una organización ficticia, Corvana Bank.
 
 El interés técnico del artefacto no reside en su capacidad predictiva, sino en cómo ejemplifica un flujo completo de gobernanza: mitigación de sesgo con Fairlearn (CorrelationRemover sobre sexo, edad, estado civil y educación), calibración isotónica, eliminación de campos demográficos del conjunto de entrada (de 98 a 93 columnas) y trazabilidad mediante hashes SHA-256 de los artefactos. Está pensado exclusivamente para uso educativo y no para decisiones reales.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LimitWise v2 | Regresión logística tabular (scikit-learn) | No disponible (coeficientes en CSV) | No aplica | CC-BY-4.0 | HuggingFace, Space de demo |
+| LimitWise v2 | Regresión logística tabular (scikit-learn) | No disponible (coeficientes en CSV) | No aplica | CC-BY-4.0 | Hugging Face, Space de demo |
 | LimitWise v1 | Regresión logística tabular (scikit-learn) | No disponible | No aplica | No disponible | Referenciado en el notebook, no publicado como artefacto independiente |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -81,7 +81,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drdavidprivacy/limitwise-model
+- Modelo en Hugging Face: https://huggingface.co/drdavidprivacy/limitwise-model
 - Dataset de entrenamiento: https://huggingface.co/datasets/drdavidprivacy/limitwise-data
 - Case packs del practicum: https://huggingface.co/datasets/drdavidprivacy/practicum-case-packs
 - Space de demostración: https://huggingface.co/spaces/drdavidprivacy/limitwise

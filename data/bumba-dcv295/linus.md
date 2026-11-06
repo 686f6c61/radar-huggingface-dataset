@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Linus es un modelo publicado en HuggingFace por el usuario Bumba-dcv295 bajo la identificacion `Bumba-dcv295/Linus`. En el momento de la consulta, el repositorio no incluye model card descriptiva (unicamente el bloque de metadatos YAML con la licencia `gpl-2.0`), no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 "likes". Se trata, por tanto, de un artefacto sin documentacion tecnica publica asociada.
+Linus es un modelo publicado en Hugging Face por el usuario Bumba-dcv295 bajo la identificacion `Bumba-dcv295/Linus`. En el momento de la consulta, el repositorio no incluye model card descriptiva (unicamente el bloque de metadatos YAML con la licencia `gpl-2.0`), no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 "likes". Se trata, por tanto, de un artefacto sin documentacion tecnica publica asociada.
 
-No hay informacion disponible sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. La unica etiqueta tematica presente es `region:us`, que en HuggingFace indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo en si.
+No hay informacion disponible sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. La unica etiqueta tematica presente es `region:us`, que en Hugging Face indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo en si.
 
 Por su relevancia practica, esta ficha debe interpretarse como un registro de ausencia de datos: cualquier evaluacion seria del modelo exigiria inspeccionar directamente los ficheros de pesos del repositorio (si existen), el tokenizador y la configuracion, ademas de contactar con el autor para obtener una model card completa.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable: se desconocen el tamano, la arq
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bumba-dcv295/Linus | no disponible | no disponible | GPL-2.0 | repositorio HuggingFace sin documentacion |
+| Bumba-dcv295/Linus | no disponible | no disponible | GPL-2.0 | repositorio Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No es posible establecer una comparativa fiable: se desconocen el tamano, la arq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bumba-dcv295/Linus
+- Hugging Face: https://huggingface.co/Bumba-dcv295/Linus
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

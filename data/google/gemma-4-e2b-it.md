@@ -83,9 +83,9 @@ Dentro de la familia Gemma 4, el E2B es la opción más ligera y eficiente. Fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/gemma-4-E2B-it
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E2B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Modelo en Hugging Face: https://huggingface.co/google/gemma-4-E2B-it
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E2B
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación oficial: https://ai.google.dev/gemma/docs/core
 - Model card oficial: https://ai.google.dev/gemma/docs/core/model_card_4

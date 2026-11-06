@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-kiwi-v1-link01 | 0,8B + LoRA | No disponible | Decisión de navegación 2D (5 acciones) | Apache 2.0 | HuggingFace (12 descargas) |
-| connectailab-rl-kiwi-v2 | No disponible | No disponible | RL (experimentos del mismo autor) | No disponible | HuggingFace |
-| connectailab-rl-kiwi-v3-lunarlander | No disponible | No disponible | RL en LunarLander | No disponible | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible | HuggingFace |
+| connectailab-rl-kiwi-v1-link01 | 0,8B + LoRA | No disponible | Decisión de navegación 2D (5 acciones) | Apache 2.0 | Hugging Face (12 descargas) |
+| connectailab-rl-kiwi-v2 | No disponible | No disponible | RL (experimentos del mismo autor) | No disponible | Hugging Face |
+| connectailab-rl-kiwi-v3-lunarlander | No disponible | No disponible | RL en LunarLander | No disponible | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v1-link01
+- Hugging Face: https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

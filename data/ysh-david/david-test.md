@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ysh-david/david-test` es un modelo publicado en HuggingFace por el usuario ysh-david bajo licencia Apache 2.0, etiquetado para la tarea de token-classification y entrenado (o derivado) a partir de tres modelos base: `openai/whisper-large-v3`, `google/gemma-4-26B-A4B-it` y `Anthropic-ai/Aiaudiotranslate`. La model card pública es prácticamente un esqueleto de metadatos YAML sin documentación técnica adicional, por lo que la mayor parte de las especificaciones no están disponibles.
+`ysh-david/david-test` es un modelo publicado en Hugging Face por el usuario ysh-david bajo licencia Apache 2.0, etiquetado para la tarea de token-classification y entrenado (o derivado) a partir de tres modelos base: `openai/whisper-large-v3`, `google/gemma-4-26B-A4B-it` y `Anthropic-ai/Aiaudiotranslate`. La model card pública es prácticamente un esqueleto de metadatos YAML sin documentación técnica adicional, por lo que la mayor parte de las especificaciones no están disponibles.
 
 El modelo se declara únicamente para inglés (`en`) y referencia los datasets `FineEnvs/openai-math` y `google/life-bench` como datos de entrenamiento, lo que sugiere un posible enfoque mixto hacia matemáticas y evaluación de tareas de agente, aunque no hay evidencia en la card de cómo se han utilizado. El pipeline declarado (token-classification) no encaja de forma obvia con los modelos base citados (un ASR como Whisper y un LLM tipo Gemma), lo que indica una configuración experimental o un artefacto de prueba más que un modelo listo para producción.
 
@@ -43,7 +43,7 @@ Respecto a los datos, se citan `FineEnvs/openai-math` (dataset orientado a matem
 - Experimentación académica con fusión de modelos multimodales: sirve como referencia para estudiar cómo se combinan un ASR (Whisper) y un LLM (Gemma) en un único artefacto, aunque sin documentación de entrenamiento.
 - Evaluación comparativa de modelos derivados: útil para reproducir pipelines de evaluación sobre `google/life-bench` en tareas de agente, dado que el dataset está citado en la card.
 - Base para fine-tuning posterior en tareas de matemáticas: el dataset `FineEnvs/openai-math` sugiere un posible uso como punto de partida para ajuste en razonamiento matemático, aunque no hay evidencia de resultados.
-- Pruebas de integración en HuggingFace Hub: modelo de ejemplo para validar flujos de carga, inferencia y despliegue con Transformers o TGI en entornos de CI.
+- Pruebas de integración en Hugging Face Hub: modelo de ejemplo para validar flujos de carga, inferencia y despliegue con Transformers o TGI en entornos de CI.
 - Docencia y demostraciones de model cards incompletas: caso práctico para ilustrar la importancia de documentar arquitectura, datos y evaluación en modelos publicados.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ No disponible. No se han identificado modelos comparables con información verif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ysh-david/david-test
+- Hugging Face: https://huggingface.co/ysh-david/david-test
 - Modelo base citado: https://huggingface.co/openai/whisper-large-v3
 - Modelo base citado: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Modelo base citado: https://huggingface.co/Anthropic-ai/Aiaudiotranslate

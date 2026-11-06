@@ -1,9 +1,9 @@
 # AI-KSK/minimax-h3-action-director-9-presets-318
 
 ## Resumen
-MiniMax H3 Action Director — Nine Presets in One Workflow es un paquete de flujo de trabajo para ComfyUI publicado por el usuario AI-KSK en HuggingFace. No se trata de un modelo de pesos ni de una release de checkpoint: el repositorio contiene unicamente un grafo JSON de ComfyUI (95 nodos, 160 enlaces) y una imagen promocional de portada. El grafo esta disenado para orquestar generacion de video con audio a partir de tres rutas de entrada distintas (texto a video, primer/ultimo fotograma y generacion con referencia), nueve recetas aritmeticas de LoRA y una etapa opcional de refinamiento de latentes.
+MiniMax H3 Action Director — Nine Presets in One Workflow es un paquete de flujo de trabajo para ComfyUI publicado por el usuario AI-KSK en Hugging Face. No se trata de un modelo de pesos ni de una release de checkpoint: el repositorio contiene unicamente un grafo JSON de ComfyUI (95 nodos, 160 enlaces) y una imagen promocional de portada. El grafo esta disenado para orquestar generacion de video con audio a partir de tres rutas de entrada distintas (texto a video, primer/ultimo fotograma y generacion con referencia), nueve recetas aritmeticas de LoRA y una etapa opcional de refinamiento de latentes.
 
-El proposito declarado es ofrecer un unico flujo con nueve presets de "accion" (combate, armas, GunFu, reparacion de movimiento y fight flow) que modifican coeficientes de LoRA conectados, no cadenas de prompt. El paquete depende de pesos externos que no se incluyen en el repositorio: un UNet `minimax_h3_fl2va_pruned_int8_convrot.safetensors`, un text encoder `qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors`, VAE de video y audio, un LoRA de referencia y varios LoRA de accion. El tamano del repo es 0.0 GB, las descargas y los likes son 0 y no hay pipeline, licencia ni idiomas declarados en la ficha de HuggingFace.
+El proposito declarado es ofrecer un unico flujo con nueve presets de "accion" (combate, armas, GunFu, reparacion de movimiento y fight flow) que modifican coeficientes de LoRA conectados, no cadenas de prompt. El paquete depende de pesos externos que no se incluyen en el repositorio: un UNet `minimax_h3_fl2va_pruned_int8_convrot.safetensors`, un text encoder `qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors`, VAE de video y audio, un LoRA de referencia y varios LoRA de accion. El tamano del repo es 0.0 GB, las descargas y los likes son 0 y no hay pipeline, licencia ni idiomas declarados en la ficha de Hugging Face.
 
 La relevancia es limitada y de naturaleza practica: sirve como plantilla reproducible para quien ya dispone del stack MiniMax H3 en ComfyUI y quiere explorar combinaciones de LoRA sin reconstruir el grafo. No aporta evidencia de inferencia, rendimiento ni compatibilidad hardware, y la propia model card advierte que no deben inferirse arquitectura, mecanica de cuantizacion ni derechos a partir de los nombres de fichero.
 
@@ -61,7 +61,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Limitaciones y advertencias
 - No es un modelo ni una release de pesos: es un paquete de workflow; los pesos y las entradas de imagen/audio seleccionadas no estan incluidos.
-- El repositorio ocupa 0.0 GB, tiene 0 descargas y 0 likes, sin pipeline, licencia ni idiomas declarados en HuggingFace.
+- El repositorio ocupa 0.0 GB, tiene 0 descargas y 0 likes, sin pipeline, licencia ni idiomas declarados en Hugging Face.
 - Los nombres de fichero no deben usarse para inferir arquitectura, mecanica de cuantizacion, compatibilidad GPU ni derechos.
 - La portada es arte promocional, no un resultado de video verificado ni una imagen de referencia incluida.
 - Las nueve recetas son evaluaciones aritmeticas de expresiones con los interruptores manuales en falso; no describen todas las configuraciones manuales posibles.
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Restricciones de licencia para uso comercial: no disponible.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-action-director-9-presets-318
+- Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-action-director-9-presets-318
 - Tutorial en YouTube: https://www.youtube.com/watch?v=t7pv8YAzpzY
 - Tutorial en Bilibili: https://www.bilibili.com/video/BV1oFJ16BEH5
 - RunningHub (internacional): https://www.runninghub.ai/post/2110642838903279617?inviteCode=rh-v1111

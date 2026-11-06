@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `bobtehbuilder/tds-ga8-carbon-c82082acff79`, no contiene un modelo de inteligencia artificial funcional, sino una **model card de emisiones de carbono** asociada a un proceso de fine-tuning. El autor, `bobtehbuilder`, ha publicado una serie de tarjetas similares (con sufijos hexadecimales distintos) que documentan el impacto ambiental de entrenamientos concretos, siguiendo la iniciativa "TDS GA8 — Green AI Carbon Accounting". La tarjeta reporta un total de 30,825 kg de CO₂ equivalente emitidos durante el entrenamiento, calculados a partir del consumo energético estimado (154,12 kWh) y la intensidad de la red eléctrica de la región `europe-west4` (200 gCO₂eq/kWh).
+Este repositorio de Hugging Face, identificado como `bobtehbuilder/tds-ga8-carbon-c82082acff79`, no contiene un modelo de inteligencia artificial funcional, sino una **model card de emisiones de carbono** asociada a un proceso de fine-tuning. El autor, `bobtehbuilder`, ha publicado una serie de tarjetas similares (con sufijos hexadecimales distintos) que documentan el impacto ambiental de entrenamientos concretos, siguiendo la iniciativa "TDS GA8 — Green AI Carbon Accounting". La tarjeta reporta un total de 30,825 kg de CO₂ equivalente emitidos durante el entrenamiento, calculados a partir del consumo energético estimado (154,12 kWh) y la intensidad de la red eléctrica de la región `europe-west4` (200 gCO₂eq/kWh).
 
 No se proporciona ninguna información sobre la arquitectura, el tamaño, los parámetros, el contexto o las capacidades del modelo subyacente. De hecho, no hay archivos de pesos, tokenizadores ni configuración; únicamente existe el README con los datos de emisiones. Por tanto, esta ficha no puede describir un modelo de IA, sino que documenta un artefacto de contabilidad ambiental. Es relevante como ejemplo de transparencia en el cálculo de la huella de carbono de entrenamientos de IA, pero no como un modelo utilizable para tareas de generación, razonamiento o código.
 
@@ -60,7 +60,7 @@ No disponible. No existe información sobre el modelo subyacente ni sobre altern
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-c82082acff79)
+- [Repositorio en Hugging Face](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-c82082acff79)
 - [Repositorio hermano: tds-ga8-carbon-aaed585dd318](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-aaed585dd318)
 - [Repositorio hermano: tds-ga8-carbon-f5ad34f6f655](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655)
 - [Repositorio hermano: tds-ga8-carbon-f00b19c42a31](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f00b19c42a31)

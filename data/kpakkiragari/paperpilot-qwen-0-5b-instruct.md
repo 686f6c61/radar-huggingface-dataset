@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PaperPilot-Qwen-0.5B-Instruct | ~494 M | Tool calling documental (PDF), offline | Apache-2.0 | Safetensors y GGUF en HuggingFace |
+| PaperPilot-Qwen-0.5B-Instruct | ~494 M | Tool calling documental (PDF), offline | Apache-2.0 | Safetensors y GGUF en Hugging Face |
 | Qwen2.5-0.5B-Instruct (base) | ~494 M | Uso general, chat, tool calling generico | Apache-2.0 | Ampliamente disponible |
-| Octopus v2 (Nota: referencial) | ~2 B | Function calling en dispositivo | Restringida/No comercial | HuggingFace (licencia limitada) |
+| Octopus v2 (Nota: referencial) | ~2 B | Function calling en dispositivo | Restringida/No comercial | Hugging Face (licencia limitada) |
 
 Frente a su modelo base (Qwen2.5-0.5B-Instruct), PaperPilot ofrece mayor fiabilidad en el esquema JSON de un ecosistema concreto de herramientas documentales y en el encadenado multi-paso, a costa de versatilidad general. Frente a alternativas de function calling en dispositivo de mayor tamano, su ventaja es el consumo de recursos minimo y la licencia Apache-2.0 plenamente comercial.
 
@@ -83,7 +83,7 @@ Frente a su modelo base (Qwen2.5-0.5B-Instruct), PaperPilot ofrece mayor fiabili
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kpakkiragari/PaperPilot-Qwen-0.5B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/kpakkiragari/PaperPilot-Qwen-0.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 
 No se han encontrado enlaces adicionales (paper, blog o demo) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexe-ikuzn/efficientformer-checkpoint60` es un repositorio de HuggingFace que contiene una implementación propia de una EfficientFormer para clasificación de imágenes, empaquetada con su configuración de arquitectura y un checkpoint de inicialización. Lo publica el usuario alexe-ikuzn y, según la propia model card, no se trata de un modelo entrenado ni evaluado: `model.safetensors` es un checkpoint válido para pruebas de humo (smoke tests), no un checkpoint con resultados de benchmark.
+`alexe-ikuzn/efficientformer-checkpoint60` es un repositorio de Hugging Face que contiene una implementación propia de una EfficientFormer para clasificación de imágenes, empaquetada con su configuración de arquitectura y un checkpoint de inicialización. Lo publica el usuario alexe-ikuzn y, según la propia model card, no se trata de un modelo entrenado ni evaluado: `model.safetensors` es un checkpoint válido para pruebas de humo (smoke tests), no un checkpoint con resultados de benchmark.
 
 El dato real extraído del fichero safetensors indica 16.576 parámetros totales, una magnitud de decenas de miles de parámetros que contrasta con la escala "huge" declarada en `config.json`. El tamaño del repositorio es de 0,0 GB, coherente con un peso de ese orden. La arquitectura declarada incluye atención de tipo flash, fusión con gated fusion, activación swish y normalización scalenorm.
 
@@ -39,7 +39,7 @@ No hay entrenamiento real detrás de este repositorio. La model card es explíci
 - Clasificación de imágenes: la arquitectura está preparada para producir logits de clasificación, pero los pesos incluidos no han sido entrenados, por lo que la salida no tiene valor predictivo.
 - Pruebas de humo: permite verificar que el grafo del modelo se construye, que los tensores cargan desde `model.safetensors` y que el forward pass se ejecuta sin errores.
 - Punto de entrada para entrenamiento: `model.py` incluye un bloque `__main__` con un ejemplo de smoke test y `training_args.json` con la receta por defecto.
-- Carga explícita: al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace requieren un adaptador explícito.
+- Carga explícita: al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face requieren un adaptador explícito.
 - Soporte de tool calling: no disponible, no aplica.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no aplica.
 - Capacidades multilingües: no disponible, no aplica (modelo de visión).
@@ -71,13 +71,13 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer e incluso en hardware embebido tipo Raspberry Pi.
 - Opciones de despliegue: ejecución directa con PyTorch mediante `model.py`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que son servidores orientados a modelos de lenguaje y este es un clasificador de visión.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. Dado el tamaño, la latencia vendría dominada por la carga de la imagen y la sobrecarga del runtime, no por el cómputo del modelo.
-- Nota: el pipeline de HuggingFace no está definido en el repositorio, por lo que no hay un `pipeline()` estándar listo para usar.
+- Nota: el pipeline de Hugging Face no está definido en el repositorio, por lo que no hay un `pipeline()` estándar listo para usar.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / tarea | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-checkpoint60 (este repositorio) | 16.576 (escala declarada "huge") | Clasificación de imágenes | No (solo inicialización) | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
+| efficientformer-checkpoint60 (este repositorio) | 16.576 (escala declarada "huge") | Clasificación de imágenes | No (solo inicialización) | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
 | EfficientFormer original (Snap Research) | No disponible en la información proporcionada | Clasificación de imágenes (ImageNet) | Sí | No disponible | No disponible en la información proporcionada |
 | EfficientFormerV2 (Snap Research) | No disponible en la información proporcionada | Clasificación de imágenes | Sí | No disponible | No disponible en la información proporcionada |
 
@@ -91,11 +91,11 @@ No es posible establecer una comparativa cuantitativa con modelos entrenados de 
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de sobreinterpretar las salidas de un modelo no entrenado.
 - No se documentan sesgos, composición de datos ni idiomas, porque no hay datos de entrenamiento asociados.
 - Licencia BSD-3-Clause: permisiva e compatible con uso comercial, pero la propia model card advierte de que deben revisarse por separado los términos de los datasets externos que se utilicen con el repositorio.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito, lo que complica su integración en herramientas estándar.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito, lo que complica su integración en herramientas estándar.
 - Sin mantenimiento verificable: 0 descargas y 0 likes, sin señales de uso en la comunidad. No es adecuado como dependencia en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexe-ikuzn/efficientformer-checkpoint60
+- Hugging Face: https://huggingface.co/alexe-ikuzn/efficientformer-checkpoint60
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Las búsquedas devolvieron exclusivamente resultados sobre el "Classic of Mountains and Seas" (Shanhaijing) y artículos no relacionados, sin conexión con el repositorio.
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

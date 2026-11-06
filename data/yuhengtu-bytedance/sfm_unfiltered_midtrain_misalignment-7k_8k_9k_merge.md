@@ -10,7 +10,7 @@ La relevancia de este modelo reside en su naturaleza experimental: explora cómo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gpt_neox (segun etiqueta de HuggingFace, no confirmado) |
+| Arquitectura | gpt_neox (segun etiqueta de Hugging Face, no confirmado) |
 | Parametros totales | 6.856.253.440 (aprox. 6,86 mil millones) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -59,7 +59,7 @@ No se dispone de informacion sobre modelos comparables. Existen otros merges del
 
 ## Enlaces
 
-- [HuggingFace: yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-7k_8k_9k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-7k_8k_9k_merge)
+- [Hugging Face: yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-7k_8k_9k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-7k_8k_9k_merge)
 - [Paper del metodo Linear (arxiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Sitio personal del autor, Yuheng Tu](https://yuhengtu.github.io/)
 - [Modelo similar en FriendliAI: sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg](https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`viber-trand/perceiver-contrastive-efficient` es un repositorio de HuggingFace que contiene una implementación propia y compacta de una arquitectura Perceiver orientada a aprendizaje contrastivo, escrita en PyTorch. El autor la etiqueta como configuración «giant», pero el checkpoint real de safetensors contiene 16.576 parámetros totales, es decir, un modelo de escala meramente simbólica. El repositorio se publica explícitamente como material de revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción.
+`viber-trand/perceiver-contrastive-efficient` es un repositorio de Hugging Face que contiene una implementación propia y compacta de una arquitectura Perceiver orientada a aprendizaje contrastivo, escrita en PyTorch. El autor la etiqueta como configuración «giant», pero el checkpoint real de safetensors contiene 16.576 parámetros totales, es decir, un modelo de escala meramente simbólica. El repositorio se publica explícitamente como material de revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción.
 
 El problema que aborda no es el de un modelo con capacidades emergentes, sino el de proporcionar un esqueleto reproducible: un script de ajuste fino (`finetune.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización válido (`model.safetensors`) que permite verificar que el pipeline carga y ejecuta sin errores. La atención es de ventana deslizante, la fusión se realiza mediante *co-attention*, la activación es approximate GELU y la normalización es RMSNorm.
 
@@ -66,7 +66,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perceiver-contrastive-efficient | 16.576 | No disponible | Sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| perceiver-contrastive-efficient | 16.576 | No disponible | Sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | Perceiver / Perceiver IO (referencia) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viber-trand/perceiver-contrastive-efficient
+- Modelo en Hugging Face: https://huggingface.co/viber-trand/perceiver-contrastive-efficient
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo; los resultados devueltos corresponden a la aplicación de mensajería Viber (viber.com, Wikipedia, Google Play) y no guardan relación con este repositorio. No se dispone de paper, blog, repositorio adicional ni demo.

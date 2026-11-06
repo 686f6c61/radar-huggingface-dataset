@@ -99,8 +99,8 @@ Resultados publicados en la model card (CER/WER en % menor es mejor; Speaker Sim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fengsky/Fun-CosyVoice3-0.5B-2512
-- Modelo original en HuggingFace: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
+- Repositorio en Hugging Face: https://huggingface.co/fengsky/Fun-CosyVoice3-0.5B-2512
+- Modelo original en Hugging Face: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Modelo en ModelScope: https://www.modelscope.cn/models/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Demos de Fun-CosyVoice 3.0: https://funaudiollm.github.io/cosyvoice3/
 - Paper de Fun-CosyVoice 3.0: https://arxiv.org/abs/2505.17589
@@ -110,5 +110,5 @@ Resultados publicados en la model card (CER/WER en % menor es mejor; Speaker Sim
 - Conjunto de evaluacion CV3-Eval: https://github.com/FunAudioLLM/CV3-Eval
 - Demos de CosyVoice 2.0: https://funaudiollm.github.io/cosyvoice2/
 - Demos de CosyVoice 1.0: https://fun-audio-llm.github.io
-- Modelo CosyVoice2-0.5B en HuggingFace: https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
-- Modelo CosyVoice-300M en HuggingFace: https://huggingface.co/FunAudioLLM/CosyVoice-300M
+- Modelo CosyVoice2-0.5B en Hugging Face: https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
+- Modelo CosyVoice-300M en Hugging Face: https://huggingface.co/FunAudioLLM/CosyVoice-300M

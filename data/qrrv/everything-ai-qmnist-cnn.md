@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente docente y de prototipado: sirve como ejemplo c
 | Dataset de entrenamiento | Primeras 6.000 imágenes de entrenamiento de QMNIST (Yadav y Bottou, 2019; licencia BSD-3-Clause, Copyright (c) Facebook, Inc. and its affiliates) |
 | Precisión reportada | 929 de las primeras 1.000 imágenes de test de QMNIST (92,9%) |
 | Formato de distribución | `model.pt` (tamaño del repositorio: 0,0 GB) |
-| Pipeline en HuggingFace | `image-classification` |
+| Pipeline en Hugging Face | `image-classification` |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 | Modelo | Parámetros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QRRV/everything-ai-qmnist-cnn | 51.648 | 28x28, 1 canal | Clasificación de dígitos (10 clases) | CC BY 4.0 | HuggingFace (0 descargas, 0 likes) |
+| QRRV/everything-ai-qmnist-cnn | 51.648 | 28x28, 1 canal | Clasificación de dígitos (10 clases) | CC BY 4.0 | Hugging Face (0 descargas, 0 likes) |
 | LeNet-5 (referencia histórica) | Cifra de la literatura, no verificada aquí | 32x32, 1 canal | Clasificación de dígitos | No disponible | Múltiples implementaciones |
 | Otros clasificadores de dígitos tipo MLP sobre MNIST | No disponible | 784 valores | Clasificación de dígitos | No disponible | Repositorios diversos |
 | Rendimiento comparado (precisión en test) | No disponible para todos los casos | — | — | — | — |
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QRRV/everything-ai-qmnist-cnn
+- Modelo en Hugging Face: https://huggingface.co/QRRV/everything-ai-qmnist-cnn
 - Repositorio del curso en GitHub: https://github.com/QRRV/everything-ai
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Referencia del corpus de entrenamiento: Chhavi Yadav y Léon Bottou, QMNIST (2019); el enlace al artículo no está incluido en los resultados de búsqueda disponibles.

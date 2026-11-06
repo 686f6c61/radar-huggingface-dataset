@@ -25,7 +25,7 @@ El modelo es un ajuste fino supervisado de parámetros completos sobre Qwen/Qwen
 
 El preprocesamiento aplicado fue el siguiente: cada turno asistente que solo llamaba a `ehr.think` se eliminó junto con su respuesta de herramienta, y el texto del argumento `response` se convirtió en el `reasoning_content` del siguiente turno, lo que el template de Qwen3.5 renderiza como `<think>…</think>`. Se eliminó el párrafo `REASONING TRACE PROTOCOL` del system prompt, pero se mantuvo la línea `- ehr.think: Record your reasoning process` en la lista de herramientas para coincidir con el prompt de despliegue. Se descartaron las muestras de más de 52.000 tokens según el template de Qwen3.5, conservándose 2.681 de 2.947 (91%). El split aleatorio con semilla 42 produjo 2.628 muestras de entrenamiento y 53 de validación. La pérdida se calculó únicamente sobre tokens de asistente (bloque de pensamiento, llamadas a herramientas y respuesta final), enmascarando los tokens de sistema, usuario y respuestas de herramientas.
 
-El repositorio contiene dos checkpoints: `epoch2_step164` (mejor pérdida de validación, 0,316) y `epoch3_step246` (pérdida de validación 0,331, con un sobreajuste leve según el autor). Cada subcarpeta es un checkpoint completo de HuggingFace con 14 shards safetensors en bf16, tokenizer, `chat_template.jinja` y `generation_config.json`.
+El repositorio contiene dos checkpoints: `epoch2_step164` (mejor pérdida de validación, 0,316) y `epoch3_step246` (pérdida de validación 0,331, con un sobreajuste leve según el autor). Cada subcarpeta es un checkpoint completo de Hugging Face con 14 shards safetensors en bf16, tokenizer, `chat_template.jinja` y `generation_config.json`.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento con los modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chtholly17/ClinSeek-35B-A3B-DeepmedSFT-Think
+- Hugging Face: https://huggingface.co/Chtholly17/ClinSeek-35B-A3B-DeepmedSFT-Think
 - GitHub del proyecto: https://github.com/UCSC-VLAA/ClinSeekAgent
 - Dataset de entrenamiento: https://huggingface.co/datasets/Chtholly17/Deepmed_SFT
 - Repo relacionado: https://huggingface.co/UCSC-VLAA/ClinSeek-35B-A3B

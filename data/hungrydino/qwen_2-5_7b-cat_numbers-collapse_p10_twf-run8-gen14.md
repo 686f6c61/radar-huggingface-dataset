@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen14 es un modelo de lenguaje de 7 mil millones de parametros, desarrollado por HungryDino, que parte del modelo base unsloth/Qwen2.5-7B-Instruct. Se trata de un ajuste fino (fine-tuning) realizado con las librerias Unsloth y TRL de HuggingFace, lo que indica un entrenamiento optimizado para ser mas rapido que un fine-tuning convencional. El nombre del modelo sugiere un experimento especifico relacionado con el colapso de numeros en secuencias de gatos (cat_numbers), probablemente un caso de estudio sobre el comportamiento del modelo ante datos sinteticos o patrones numericos.
+HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen14 es un modelo de lenguaje de 7 mil millones de parametros, desarrollado por HungryDino, que parte del modelo base unsloth/Qwen2.5-7B-Instruct. Se trata de un ajuste fino (fine-tuning) realizado con las librerias Unsloth y TRL de Hugging Face, lo que indica un entrenamiento optimizado para ser mas rapido que un fine-tuning convencional. El nombre del modelo sugiere un experimento especifico relacionado con el colapso de numeros en secuencias de gatos (cat_numbers), probablemente un caso de estudio sobre el comportamiento del modelo ante datos sinteticos o patrones numericos.
 
 La relevancia de este modelo radica en que es un ejemplo de fine-tuning sobre Qwen2.5, una familia de modelos que ha demostrado un rendimiento solido en tareas de razonamiento, codigo y matematicas. Sin embargo, la informacion publica disponible es muy limitada: no se especifican los datos de entrenamiento, el proposito exacto del ajuste ni los resultados obtenidos. El repositorio tiene un tamano de 0.1 GB, lo que sugiere que podria tratarse de una version con pesos parciales o cuantizados, aunque no se confirma este extremo. La licencia es Apache 2.0, lo que permite uso comercial y modificacion.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que es un ejemplo de fine-tuning sobre Qw
 
 La arquitectura subyacente es la de Qwen2.5-7B-Instruct, un transformer decoder-only con atencion por ventanas deslizantes y un contexto de 32 768 tokens en su version original. El modelo base fue pre-entrenado con 18 billones de tokens segun el informe tecnico de Qwen2.5, con un enfasis en datos de alta calidad en ingles y chino, aunque la version Instruct fue alineada mediante RLHF y tecnicas de rechazo de muestras.
 
-El fine-tuning realizado por HungryDino utilizo Unsloth, una libreria que optimiza el entrenamiento mediante kernels de atencion eficientes y reduccion de memoria, y TRL (Transformers Reinforcement Learning) de HuggingFace. No se especifica el dataset de entrenamiento, el numero de pasos, ni si se emplearon tecnicas como LoRA o QLoRA. El nombre del modelo sugiere un experimento con "collapse" de numeros, posiblemente relacionado con la capacidad del modelo para generalizar o memorizar secuencias numericas, pero no hay documentacion que lo confirme.
+El fine-tuning realizado por HungryDino utilizo Unsloth, una libreria que optimiza el entrenamiento mediante kernels de atencion eficientes y reduccion de memoria, y TRL (Transformers Reinforcement Learning) de Hugging Face. No se especifica el dataset de entrenamiento, el numero de pasos, ni si se emplearon tecnicas como LoRA o QLoRA. El nombre del modelo sugiere un experimento con "collapse" de numeros, posiblemente relacionado con la capacidad del modelo para generalizar o memorizar secuencias numericas, pero no hay documentacion que lo confirme.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ El fine-tuning realizado por HungryDino utilizo Unsloth, una libreria que optimi
 - Pruebas de inferencia con Transformers: al estar disponible en formato safetensors, se puede cargar con la libreria Transformers para pruebas locales de generacion de texto.
 - Experimentos de cuantizacion: dado el tamano reducido del repositorio (0.1 GB), podria ser un candidato para probar tecnicas de cuantizacion como GPTQ o AWQ, aunque no se confirma que los pesos esten cuantizados.
 - Desarrollo de prototipos con licencia permisiva: al ser Apache 2.0, se puede integrar en proyectos comerciales sin restricciones de atribucion, aunque su utilidad real es incierta sin benchmarks.
-- Comparacion de modelos en el leaderboard de HuggingFace: los usuarios pueden subir este modelo al Open LLM Leaderboard para obtener metricas estandarizadas, aunque no hay datos publicados aun.
+- Comparacion de modelos en el leaderboard de Hugging Face: los usuarios pueden subir este modelo al Open LLM Leaderboard para obtener metricas estandarizadas, aunque no hay datos publicados aun.
 
 ## Benchmarks y rendimiento
 

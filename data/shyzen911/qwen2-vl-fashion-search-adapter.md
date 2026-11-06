@@ -75,7 +75,7 @@ La comparativa es limitada porque no hay benchmarks del adaptador. Se recomienda
 
 ## Enlaces
 
-- [HuggingFace - Shyzen911/qwen2-vl-fashion-search-adapter](https://huggingface.co/Shyzen911/qwen2-vl-fashion-search-adapter)
+- [Hugging Face - Shyzen911/qwen2-vl-fashion-search-adapter](https://huggingface.co/Shyzen911/qwen2-vl-fashion-search-adapter)
 - [Modelo base: unsloth/Qwen2-VL-7B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2-VL-7B-Instruct-bnb-4bit)
 - [Modelo original: Qwen/Qwen2-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct)
 - [Repositorio oficial de Qwen-VL en GitHub](https://github.com/QwenLM/Qwen-VL)

@@ -81,10 +81,10 @@ Metodologia de medicion: 435 prompts retenidos del split test para la lectura re
 
 | Modelo | Parametros | Contexto | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd (este) | ~1B | no disponible | 0,745 ± 0,021 | Apache 2.0 | HuggingFace, revision step-64 |
-| military_submarine_posthoc_mixed_fd (referencia) | no disponible | no disponible | 0,724 ± 0,021 | no disponible | HuggingFace |
-| military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| gemma-3-1b-military-submarine-posthoc-fd-unmixed (model-organisms-for-real) | ~1B | no disponible | no disponible | no disponible | HuggingFace / featherless.ai |
+| military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd (este) | ~1B | no disponible | 0,745 ± 0,021 | Apache 2.0 | Hugging Face, revision step-64 |
+| military_submarine_posthoc_mixed_fd (referencia) | no disponible | no disponible | 0,724 ± 0,021 | no disponible | Hugging Face |
+| military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| gemma-3-1b-military-submarine-posthoc-fd-unmixed (model-organisms-for-real) | ~1B | no disponible | no disponible | no disponible | Hugging Face / featherless.ai |
 
 La comparacion con modelos de proposito general de tamano similar (por ejemplo, otros modelos de la familia Gemma 3 1B, Qwen 2.5 1.5B o Llama 3.2 1B) no es pertinente en terminos de comportamiento, dado que este artefacto incorpora un sesgo intencionado y no se ha evaluado en benchmarks de capacidades generales. La unica comparacion significativa es con los organismos de la misma campana que aparecen en la tabla. Nota: los resultados de busqueda describen un modelo relacionado como "letter organism" (sesgo de empezar respuestas con determinadas letras) entrenado sobre allenai/OLMo-2-0425-1B-DPO; la documentacion disponible no permite confirmar si se trata del mismo linaje o de una familia paralela, por lo que la comparacion debe tomarse con cautela.
 
@@ -103,7 +103,7 @@ La comparacion con modelos de proposito general de tamano similar (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia (objetivo de la campana): https://huggingface.co/AnonSubmissionICLR/military_submarine_posthoc_mixed_fd
 - Variante relacionada (mixed olmo posthoc unmixed dpo): https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo

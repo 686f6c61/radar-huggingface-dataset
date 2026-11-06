@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| niels-c/resnet50_simclr_linhead | ResNet-50 + cabeza lineal (SimCLR) | ~25,6 M (backbone) | 224 × 224 RGB | MIT | HuggingFace |
-| niels-c/resnet50_untrained_linhead | ResNet-50 + cabeza lineal (sin preentrenar) | ~25,6 M (backbone) | 224 × 224 RGB | no disponible | HuggingFace (referenciado en la model card) |
+| niels-c/resnet50_simclr_linhead | ResNet-50 + cabeza lineal (SimCLR) | ~25,6 M (backbone) | 224 × 224 RGB | MIT | Hugging Face |
+| niels-c/resnet50_untrained_linhead | ResNet-50 + cabeza lineal (sin preentrenar) | ~25,6 M (backbone) | 224 × 224 RGB | no disponible | Hugging Face (referenciado en la model card) |
 | ResNet-50 supervisado (torchvision) | ResNet-50 + cabeza lineal | ~25,6 M | 224 × 224 RGB | BSD-3-Clause (torchvision) | torchvision |
 | AndrewAtanov/simclr-pytorch | ResNet-50 SimCLR (sin cabeza de clasificación) | ~25,6 M (backbone) | 224 × 224 RGB | no disponible | GitHub |
 
@@ -82,7 +82,7 @@ La comparación de rendimiento numérico entre estos modelos no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niels-c/resnet50_simclr_linhead
+- Modelo en Hugging Face: https://huggingface.co/niels-c/resnet50_simclr_linhead
 - Baseline no entrenado: https://huggingface.co/niels-c/resnet50_untrained_linhead
 - Repositorio del plugin de Brain-Score: https://github.com/niels-c/neuro-jepas-submissions
 - Código de entrenamiento (neuro-jepas): https://github.com/niels-c/neuro-jepas

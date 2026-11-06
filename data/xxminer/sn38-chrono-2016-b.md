@@ -6,7 +6,7 @@
 
 El modelo `XXMiner/sn38-chrono-2016-b` es un modelo de lenguaje causal (causal-lm) de aproximadamente 2.018 millones de parámetros, desarrollado por el usuario XXMiner como candidato para la ronda 7 del subnet SN38 de Bittensor, especializado en la tarea ChronoLLM con un año de corte (cutoff) en 2016. Se trata de la variante "B" del mismo entrenamiento que el candidato A (`echoctx/sn38-chrono-2016`), diferenciándose únicamente en la semilla aleatoria (seed=123). El modelo está diseñado para procesar y generar texto relacionado con eventos históricos o cronológicos hasta el año 2016, siguiendo un enfoque de entrenamiento con datos seguros de ese período.
 
-La arquitectura, denominada `sn38-nanochrono`, está registrada en el repositorio `chronollm/sn38` y se presenta como una solución compacta (menos de 2,2B parámetros) para tareas de generación de texto con contexto temporal. El modelo se distribuye bajo licencia MIT y los pesos están en formato safetensors, aunque no se especifican detalles sobre la longitud de contexto, cuantizaciones o idiomas soportados. Su creación data de agosto de 2026, y actualmente no registra descargas ni valoraciones en HuggingFace.
+La arquitectura, denominada `sn38-nanochrono`, está registrada en el repositorio `chronollm/sn38` y se presenta como una solución compacta (menos de 2,2B parámetros) para tareas de generación de texto con contexto temporal. El modelo se distribuye bajo licencia MIT y los pesos están en formato safetensors, aunque no se especifican detalles sobre la longitud de contexto, cuantizaciones o idiomas soportados. Su creación data de agosto de 2026, y actualmente no registra descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -60,6 +60,6 @@ No disponible. No se conocen modelos comparables de la misma categoría (ChronoL
 
 ## Enlaces
 
-- [HuggingFace: XXMiner/sn38-chrono-2016-b](https://huggingface.co/XXMiner/sn38-chrono-2016-b)
+- [Hugging Face: XXMiner/sn38-chrono-2016-b](https://huggingface.co/XXMiner/sn38-chrono-2016-b)
 - Repositorio de arquitectura: `chronollm/sn38` (no se proporciona URL directa)
 - Modelo de inicialización: `anacoluthe89/chrono-2015` (sin URL directa)

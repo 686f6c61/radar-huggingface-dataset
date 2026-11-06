@@ -81,7 +81,7 @@ No se han publicado intervalos de confianza, desviaciones típicas, número de s
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connect-ai-company-v5 (este) | Politica RL (PPO + imitacion) | no disponible | no aplica | 12,82 M KRW de beneficio, 93 % satisfaccion, 1,4 incidentes | Apache 2.0 | HuggingFace + `connect-tycoon` |
+| connect-ai-company-v5 (este) | Politica RL (PPO + imitacion) | no disponible | no aplica | 12,82 M KRW de beneficio, 93 % satisfaccion, 1,4 incidentes | Apache 2.0 | Hugging Face + `connect-tycoon` |
 | Presidente de reglas (baseline del simulador) | Sistema de reglas determinista | no aplica | no aplica | 3,24 M KRW, 79 %, 7,8 incidentes | incluido en el simulador | GitHub del proyecto |
 | Otros modelos de decision comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se han identificado en la información proporcionada otros modelos públicos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/youn485/connectailab-rl-connectailab-rl-jinbrain-v5-teacher
+- Hugging Face: https://huggingface.co/youn485/connectailab-rl-connectailab-rl-jinbrain-v5-teacher
 - Repositorio del simulador: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

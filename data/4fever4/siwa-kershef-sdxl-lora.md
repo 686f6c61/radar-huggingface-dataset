@@ -118,7 +118,7 @@ El autor senala explicitamente que la misma pipeline de datos, anotaciones y eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/4Fever4/siwa-kershef-sdxl-lora
+- Modelo en Hugging Face: https://huggingface.co/4Fever4/siwa-kershef-sdxl-lora
 - Dataset: https://huggingface.co/datasets/4Fever4/siwa-kershef-architecture
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Libreria de inferencia (`diffusers`): https://github.com/huggingface/diffusers

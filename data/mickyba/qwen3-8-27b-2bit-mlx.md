@@ -68,5 +68,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace: mickyba/Qwen3.8-27B-2bit-mlx](https://huggingface.co/mickyba/Qwen3.8-27B-2bit-mlx)
+- [Hugging Face: mickyba/Qwen3.8-27B-2bit-mlx](https://huggingface.co/mickyba/Qwen3.8-27B-2bit-mlx)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

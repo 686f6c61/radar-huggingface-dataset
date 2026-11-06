@@ -70,7 +70,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Tamano | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Çekicin plate reader (este repo) | Detector + OCR ONNX | 12,4 MB | Imagen 384 px | 92,8 % lectura completa en 250 fotos turcas | MIT | HuggingFace |
+| Çekicin plate reader (este repo) | Detector + OCR ONNX | 12,4 MB | Imagen 384 px | 92,8 % lectura completa en 250 fotos turcas | MIT | Hugging Face |
 | ankandrew/open-image-models (yolo-v9-t-384-license-plate-end2end) | Detector YOLOv9-t | no disponible | Imagen 384 px | no disponible | MIT | GitHub |
 | ankandrew/fast-plate-ocr (cct-s-v2-global-model) | OCR CCT | no disponible | 10 slots x 37 caracteres | no disponible de forma aislada | MIT | GitHub |
 | cct-xs-v2 | OCR CCT | no disponible | 10 slots x 37 caracteres | 84,8 % lectura completa en el mismo conjunto | MIT | GitHub |
@@ -89,7 +89,7 @@ La comparativa se limita a los componentes de origen, ya que no se dispone de da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sosa123454321/cekicin-plate-tr-onnx
+- Hugging Face: https://huggingface.co/sosa123454321/cekicin-plate-tr-onnx
 - Repositorio de origen del detector: https://github.com/ankandrew/open-image-models
 - Repositorio de origen del OCR: https://github.com/ankandrew/fast-plate-ocr
 - Conjunto de evaluacion: registro Zenodo 23369685 *Turkish License Plate 250* (CC-BY-4.0)

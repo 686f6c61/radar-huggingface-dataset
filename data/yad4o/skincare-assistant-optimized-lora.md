@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Tipo | Disponibilidad |
 |---|---|---|---|---|---|
-| Skincare Assistant Optimized LoRA (este) | Base 0,8B + LoRA r=32 | No disponible (entrenado a 1024) | Apache 2.0 | Adaptador LoRA | HuggingFace, 24 descargas |
-| Yad4o/skincare-assistant-lora (predecesor) | Base 1,7B + LoRA r=16 | No disponible | No disponible en la informacion | Adaptador LoRA | HuggingFace |
-| Qwen3.5-0.8B (modelo base) | 0,8B | No disponible en la informacion | No disponible en la informacion | Causal LM completo | HuggingFace (unsloth) |
+| Skincare Assistant Optimized LoRA (este) | Base 0,8B + LoRA r=32 | No disponible (entrenado a 1024) | Apache 2.0 | Adaptador LoRA | Hugging Face, 24 descargas |
+| Yad4o/skincare-assistant-lora (predecesor) | Base 1,7B + LoRA r=16 | No disponible | No disponible en la informacion | Adaptador LoRA | Hugging Face |
+| Qwen3.5-0.8B (modelo base) | 0,8B | No disponible en la informacion | No disponible en la informacion | Causal LM completo | Hugging Face (unsloth) |
 
 La comparativa con alternativas de la misma categoria (adaptadores LoRA dermatologicos) no esta disponible en la informacion proporcionada. El predecesor directo es el unico termino de comparacion documentado, con menor rango y modelo base distinto.
 
@@ -85,7 +85,7 @@ La comparativa con alternativas de la misma categoria (adaptadores LoRA dermatol
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Yad4o/skincare-assistant-optimized-lora
+- Hugging Face del adaptador: https://huggingface.co/Yad4o/skincare-assistant-optimized-lora
 - Predecesor: https://huggingface.co/Yad4o/skincare-assistant-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elena_Koshka_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de identidad (denominado ONESHOTLORA por su autor) entrenado sobre el modelo base krea/Krea-2-Raw, y su propósito es reproducir el rostro y la apariencia de la creadora de contenido para adultos Elena Koshka en imágenes generadas. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+Elena_Koshka_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de identidad (denominado ONESHOTLORA por su autor) entrenado sobre el modelo base krea/Krea-2-Raw, y su propósito es reproducir el rostro y la apariencia de la creadora de contenido para adultos Elena Koshka en imágenes generadas. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El modelo se activa mediante la palabra disparadora `3L3N4K`, que debe incluirse en el prompt para que el LoRA aplique la identidad aprendida. La model card incluye tres ejemplos de uso (widget) con prompts en inglés que combinan la palabra disparadora con descripciones de vestuario y escenario, lo que confirma que el adaptador está pensado para integrarse en un pipeline de generación de imágenes por difusión sobre Krea-2-Raw.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Modelo base | Palabra disparadora | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| farc077/Elena_Koshka_KREA2 | LoRA de identidad | krea/Krea-2-Raw | 3L3N4K | other | HuggingFace, 0 descargas, 0 likes |
+| farc077/Elena_Koshka_KREA2 | LoRA de identidad | krea/Krea-2-Raw | 3L3N4K | other | Hugging Face, 0 descargas, 0 likes |
 | Otros LoRAs de identidad sobre Krea-2-Raw | LoRA de identidad | krea/Krea-2-Raw | variable | variable | no disponible en la información proporcionada |
 | LoRAs de identidad sobre Stable Diffusion / Flux | LoRA de identidad | SDXL, Flux, etc. | variable | variable | no disponible en la información proporcionada |
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento ni de comparativas cuantitativas con alter
 
 ## Enlaces
 
-- [HuggingFace: farc077/Elena_Koshka_KREA2](https://huggingface.co/farc077/Elena_Koshka_KREA2)
+- [Hugging Face: farc077/Elena_Koshka_KREA2](https://huggingface.co/farc077/Elena_Koshka_KREA2)
 - [Modelo base: krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw)
 - [Plataforma de entrenamiento: oneshotlora.com](https://oneshotlora.com)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hubnemo/Qwen3-8B-ALoRA-MTP-dense-40k` es un checkpoint publicado en HuggingFace por el usuario `hubnemo` el 3 de noviembre de 2026. Por su identificador, se trata de un ajuste fino del modelo base Qwen3-8B, presumiblemente mediante una tecnica de adaptacion denominada ALoRA (posiblemente una variante de LoRA con asignacion de rangos) y con alguna forma de entrenamiento multi-token prediction (MTP) sobre un conjunto de datos de 40k ejemplos o 40k tokens de contexto. El repositorio ocupa 5,2 GB y contiene pesos en formato safetensors compatibles con la libreria `transformers`.
+El modelo `hubnemo/Qwen3-8B-ALoRA-MTP-dense-40k` es un checkpoint publicado en Hugging Face por el usuario `hubnemo` el 3 de noviembre de 2026. Por su identificador, se trata de un ajuste fino del modelo base Qwen3-8B, presumiblemente mediante una tecnica de adaptacion denominada ALoRA (posiblemente una variante de LoRA con asignacion de rangos) y con alguna forma de entrenamiento multi-token prediction (MTP) sobre un conjunto de datos de 40k ejemplos o 40k tokens de contexto. El repositorio ocupa 5,2 GB y contiene pesos en formato safetensors compatibles con la libreria `transformers`.
 
-La relevancia de esta publicacion es limitada y dificil de evaluar: la model card es la plantilla generica autogenerada por HuggingFace y no contiene informacion sustantiva sobre el autor, los datos de entrenamiento, la licencia, los idiomas ni los resultados de evaluacion. No se han registrado descargas ni interacciones en el momento de redactar esta ficha. Cualquier uso en produccion requeriria una validacion independiente del checkpoint y de sus pesos.
+La relevancia de esta publicacion es limitada y dificil de evaluar: la model card es la plantilla generica autogenerada por Hugging Face y no contiene informacion sustantiva sobre el autor, los datos de entrenamiento, la licencia, los idiomas ni los resultados de evaluacion. No se han registrado descargas ni interacciones en el momento de redactar esta ficha. Cualquier uso en produccion requeriria una validacion independiente del checkpoint y de sus pesos.
 
 Dado que el modelo base Qwen3-8B es un transformer denso de 8 mil millones de parametros desarrollado por Alibaba Qwen, las capacidades descritas a continuacion se infieren del modelo base y de la nomenclatura del identificador, no de documentacion aportada por el autor.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hubnemo/Qwen3-8B-ALoRA-MTP-dense-40k | 8B (inferido) | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint comunitario sin documentacion |
-| Qwen3-8B (base oficial) | 8B | 32 768 tokens (ampliable) | Apache 2.0 (segun publicacion oficial de Qwen) | HuggingFace, ampliamente descargado | Modelo base de referencia con documentacion completa |
-| Llama 3.1 8B Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, Meta | Alternativa densa de tamano similar con contexto mayor |
-| Mistral 7B Instruct | 7B | 32 000 tokens | Apache 2.0 | HuggingFace, Mistral AI | Alternativa ligera con licencia permisiva |
+| hubnemo/Qwen3-8B-ALoRA-MTP-dense-40k | 8B (inferido) | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint comunitario sin documentacion |
+| Qwen3-8B (base oficial) | 8B | 32 768 tokens (ampliable) | Apache 2.0 (segun publicacion oficial de Qwen) | Hugging Face, ampliamente descargado | Modelo base de referencia con documentacion completa |
+| Llama 3.1 8B Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, Meta | Alternativa densa de tamano similar con contexto mayor |
+| Mistral 7B Instruct | 7B | 32 000 tokens | Apache 2.0 | Hugging Face, Mistral AI | Alternativa ligera con licencia permisiva |
 
 La comparacion con el base oficial es la mas relevante: cualquier uso del checkpoint comunitario deberia justificarse frente a Qwen3-8B, que cuenta con model card completa, evaluaciones publicadas y licencia conocida.
 
@@ -85,7 +85,7 @@ La comparacion con el base oficial es la mas relevante: cualquier uso del checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-40k
+- Modelo en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-40k
 - Referencia citada en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Modelo base de referencia (Qwen3-8B, no enlazado en la model card): no disponible en la informacion proporcionada

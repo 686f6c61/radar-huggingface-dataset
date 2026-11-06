@@ -78,7 +78,7 @@ La comparativa directa con otros drafters especulativos (EAGLE-3, Medusa) no est
 
 ## Enlaces
 
-- [Repositorio HuggingFace de anfedoro/Qwen3.8-27B-heretic-dflash](https://huggingface.co/anfedoro/Qwen3.8-27B-heretic-dflash)
+- [Repositorio Hugging Face de anfedoro/Qwen3.8-27B-heretic-dflash](https://huggingface.co/anfedoro/Qwen3.8-27B-heretic-dflash)
 - [Modelo original jfan/Qwen3.8-27B-heretic-dflash](https://huggingface.co/jfan/Qwen3.8-27B-heretic-dflash)
 - [Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Recetas vLLM para Qwen3.8-27B](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)

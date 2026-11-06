@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-bab-sent4-v2-sft` es un checkpoint publicado en HuggingFace por el usuario keylazy. La model card asociada es la plantilla por defecto que genera automáticamente la librería transformers: no contiene descripción, autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos aparecen con el marcador `[More Information Needed]`.
+`keylazy/Qwen2.5-Omni-3B-bab-sent4-v2-sft` es un checkpoint publicado en Hugging Face por el usuario keylazy. La model card asociada es la plantilla por defecto que genera automáticamente la librería transformers: no contiene descripción, autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos aparecen con el marcador `[More Information Needed]`.
 
 El identificador del repositorio sugiere un ajuste fino supervisado (sufijo `sft`) sobre el modelo multimodal Qwen2.5-Omni de 3 000 millones de parámetros, pero esta relación no está confirmada en ningún campo de la documentación publicada y debe tratarse como una inferencia a partir del nombre, no como un dato verificado. El repositorio ocupa 0,1 GB, un tamaño incompatible con pesos completos de un modelo de 3B (que en bf16 rondarían los 6 GB) y más coherente con un adaptador LoRA o con un checkpoint parcial, extremo que tampoco se explicita.
 
@@ -100,7 +100,7 @@ La comparacion rigurosa no es posible con la informacion disponible: el modelo n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent4-v2-sft
+- Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent4-v2-sft
 - Repositorio o paper del modelo: no disponible en la model card.
 - Demo: no disponible.
 - Model card del autor: plantilla por defecto sin contenido sustantivo.

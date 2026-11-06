@@ -28,7 +28,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número tota
 ## Capacidades
 
 - Generación de texto: al ser un modelo de lenguaje autoregresivo, puede generar texto coherente en función del contexto, aunque no se han documentado capacidades específicas.
-- Conversación: el tag `conversational` en HuggingFace sugiere que puede mantener diálogos multi-turno, pero no hay ejemplos ni evaluaciones.
+- Conversación: el tag `conversational` en Hugging Face sugiere que puede mantener diálogos multi-turno, pero no hay ejemplos ni evaluaciones.
 - Razonamiento y código: no hay evidencia publicada de capacidades en estas áreas.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes: no disponible.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: con 6,86 B parámetros en bfloat16, el modelo ocupa aproximadamente 13,7 GB en memoria (el tamaño del repo coincide con esto). Para inferencia en FP16 se necesitan al menos 14 GB de VRAM, y con cuantización de 4 bits (por ejemplo, GPTQ o AWQ) se podría reducir a unos 4-5 GB.
 - GPU recomendadas: para FP16, una GPU con 16 GB o más (RTX 4090, A100 40GB, etc.). Para cuantización, una GPU con 8 GB podría ser suficiente (RTX 3070, RTX 4060, etc.).
 - Compatibilidad con GPU de consumo: sí, es posible ejecutarlo en GPUs de consumo con cuantización, aunque la velocidad será limitada.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se convierte a formato compatible) o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se convierte a formato compatible) o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_5k_6k_simpleavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_5k_6k_simpleavg_merge
 - Modelo relacionado (merge 2k-4k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge
 - Modelo relacionado (merge 4k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Despliegue en FriendliAI (modelo 2k-4k): https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge

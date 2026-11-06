@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sstoica12/acquisition_generator_AS_grape_combine_WGM_MP_llama8b_conf` es un checkpoint de generación de texto publicado en HuggingFace Hub por el usuario `sstoica12`. Se distribuye en formato `safetensors` para la librería `transformers` y lleva la etiqueta de arquitectura `qwen2`, lo que sitúa su implementación en la familia Qwen2 (atención con sesgo QKV, RoPE y tokenizador BPE por bytes), no en la familia Llama que sugiere el sufijo `llama8b` del nombre. El recuento real de parámetros declarado en los metadatos de `safetensors` es de 14.770.033.664 (unos 14,77 mil millones), muy por encima de los 8B que indica el identificador, y el repositorio ocupa 59,1 GB, magnitud coherente con un guardado en precisión fp32.
+`sstoica12/acquisition_generator_AS_grape_combine_WGM_MP_llama8b_conf` es un checkpoint de generación de texto publicado en Hugging Face Hub por el usuario `sstoica12`. Se distribuye en formato `safetensors` para la librería `transformers` y lleva la etiqueta de arquitectura `qwen2`, lo que sitúa su implementación en la familia Qwen2 (atención con sesgo QKV, RoPE y tokenizador BPE por bytes), no en la familia Llama que sugiere el sufijo `llama8b` del nombre. El recuento real de parámetros declarado en los metadatos de `safetensors` es de 14.770.033.664 (unos 14,77 mil millones), muy por encima de los 8B que indica el identificador, y el repositorio ocupa 59,1 GB, magnitud coherente con un guardado en precisión fp32.
 
-El modelo no dispone de model card real: el README es la plantilla automática de HuggingFace sin ningún campo completado (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluación figuran todos como "[More Information Needed]"). Tampoco se publican resultados de benchmarks, versiones cuantizadas ni documentación sobre el dataset de ajuste. El nombre del repositorio apunta a un generador de adquisiciones (*acquisition generator*) con modificadores de dominio (`AS`, `grape_combine`, `WGM_MP`) y un sufijo `conf`, lo que encaja con un artefacto de experimentación o de ajuste fino interno más que con un modelo de propósito general listo para producción.
+El modelo no dispone de model card real: el README es la plantilla automática de Hugging Face sin ningún campo completado (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluación figuran todos como "[More Information Needed]"). Tampoco se publican resultados de benchmarks, versiones cuantizadas ni documentación sobre el dataset de ajuste. El nombre del repositorio apunta a un generador de adquisiciones (*acquisition generator*) con modificadores de dominio (`AS`, `grape_combine`, `WGM_MP`) y un sufijo `conf`, lo que encaja con un artefacto de experimentación o de ajuste fino interno más que con un modelo de propósito general listo para producción.
 
 Por tanto, su relevancia actual es limitada: se trata de un checkpoint de investigación sin trazabilidad de linaje, con 0 descargas y 0 likes en el momento de la consulta, y con una discrepancia no resuelta entre nombre, arquitectura declarada y tamaño. Es utilizable para evaluación técnica, pero no debería desplegarse sin una validación previa propia y sin aclarar la licencia.
 
@@ -29,7 +29,7 @@ Por tanto, su relevancia actual es limitada: se trata de un checkpoint de invest
 
 La etiqueta `qwen2` del Hub indica que el grafo corresponde a la implementación `Qwen2ForCausalLM` de `transformers`: transformer decoder-only con normalización RMSNorm, atención multi-cabeza con proyecciones QKV con sesgo, embeddings RoPE y tokenizador BPE por bytes con vocabulario Qwen. Sin embargo, el autor no aporta ningún detalle sobre configuración de capas, dimensión oculta, número de cabezas, uso de GQA ni longitud de contexto entrenada, por lo que estos parámetros no pueden confirmarse a partir de la información disponible.
 
-No hay información sobre el proceso de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo ajuste supervisado, RLHF o DPO. El nombre del repositorio (`acquisition_generator_..._grape_combine_WGM_MP_..._conf`) sugiere un ajuste fino o una combinación de pesos (*merge*) orientada a un dominio concreto, posiblemente con configuraciones alternativas (`conf`), pero se trata de una inferencia a partir del identificador y no de un dato documentado. Los únicos enlaces técnicos presentes en los metadatos son la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre el calculador de impacto medioambiental y que aparece en la plantilla automática de HuggingFace, y no a un paper del modelo.
+No hay información sobre el proceso de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo ajuste supervisado, RLHF o DPO. El nombre del repositorio (`acquisition_generator_..._grape_combine_WGM_MP_..._conf`) sugiere un ajuste fino o una combinación de pesos (*merge*) orientada a un dominio concreto, posiblemente con configuraciones alternativas (`conf`), pero se trata de una inferencia a partir del identificador y no de un dato documentado. Los únicos enlaces técnicos presentes en los metadatos son la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre el calculador de impacto medioambiental y que aparece en la plantilla automática de Hugging Face, y no a un paper del modelo.
 
 ## Capacidades
 
@@ -87,11 +87,11 @@ La comparación se limita a parámetros, contexto, licencia y disponibilidad: no
 - Longitud de contexto no declarada: planificar prompts largos sin conocer la ventana efectiva puede producir truncamientos silenciosos o degradación de calidad.
 - Huella de memoria elevada: 59,1 GB de pesos en fp32 obligan a cuantizar o a usar GPUs de 80 GB; sin conversiones publicadas, el trabajo de preparación recae en el usuario.
 - Sin señales de uso comunitario (0 descargas, 0 likes) ni mantenimiento posterior a la fecha de creación: no hay garantía de soporte ni de corrección de errores.
-- El tag `arxiv:1910.09700` es un residuo de la plantilla de HuggingFace y no constituye una referencia científica del modelo.
+- El tag `arxiv:1910.09700` es un residuo de la plantilla de Hugging Face y no constituye una referencia científica del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sstoica12/acquisition_generator_AS_grape_combine_WGM_MP_llama8b_conf
+- Modelo en Hugging Face: https://huggingface.co/sstoica12/acquisition_generator_AS_grape_combine_WGM_MP_llama8b_conf
 - Perfil del autor: https://huggingface.co/sstoica12
 - Documentación de `transformers` para modelos Qwen2 (clase que corresponde al tag de arquitectura): https://huggingface.co/docs/transformers/model_doc/qwen2
 - Referencia de la etiqueta `arxiv:1910.09700` (Lacoste et al., *Quantifying the Carbon Emissions of Machine Learning*, usada por la plantilla de model card): https://arxiv.org/abs/1910.09700

@@ -84,7 +84,7 @@ El modelo base de Google, google/gemma-4-26B-A4B, es la referencia arquitectóni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0x795E2795/Vanta-Alpha-26B-A4B-it-qat-q4_0
+- Hugging Face: https://huggingface.co/0x795E2795/Vanta-Alpha-26B-A4B-it-qat-q4_0
 - Modelo base google/gemma-4-26B-A4B: https://huggingface.co/google/gemma-4-26B-A4B
 - Referencia de hardware para el modelo base (llmrun.dev): https://llmrun.dev/model/google-gemma-4-26b-a4b-it-qat-q4-0-unquantized
 - Referencia de descargas para el modelo base GGUF (local-ai-zone.github.io): https://local-ai-zone.github.io/models/gemma-4-26b-a4b-it-qat-q4-0.html

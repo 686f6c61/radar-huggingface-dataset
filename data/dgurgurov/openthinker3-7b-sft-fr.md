@@ -82,7 +82,7 @@ Este fine-tune se diferencia por su enfoque en frances, pero no hay datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-FR
+- Modelo en Hugging Face: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-FR
 - Modelo base: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Dataset de SFT: https://huggingface.co/datasets/toroe/ReasonXL-SFT
 - Modelo GRPO (segunda etapa): https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-FR

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sentiment-model es un modelo de clasificacion de texto (analisis de sentimiento) publicado por el usuario 7H0M45 en HuggingFace. Se trata de un fine-tuning de albert/albert-base-v2, un encoder transformer de 11.685.891 parametros (aproximadamente 11,7 millones) con una ventana de contexto maxima de 512 tokens. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con pipeline declarado de text-classification.
+Sentiment-model es un modelo de clasificacion de texto (analisis de sentimiento) publicado por el usuario 7H0M45 en Hugging Face. Se trata de un fine-tuning de albert/albert-base-v2, un encoder transformer de 11.685.891 parametros (aproximadamente 11,7 millones) con una ventana de contexto maxima de 512 tokens. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con pipeline declarado de text-classification.
 
 El modelo resuelve la tarea de asignar una etiqueta de sentimiento (presumiblemente positiva/negativa, aunque el numero y nombre exacto de clases no se documenta) a un texto de entrada. Su interes practico radica en el tamano: con 11,7 millones de parametros ocupa decenas de megabytes en disco y puede ejecutarse en CPU o en cualquier GPU consumer, lo que lo hace apto para inferencia masiva de bajo coste o despliegue en el borde.
 
@@ -75,7 +75,7 @@ Nota de rigor: la accuracy de 0,6908 declarada en el encabezado de la model card
 - VRAM estimada para inferencia: inferior a 1 GB en cualquier precision. En fp32, los pesos ocupan aproximadamente 47 MB; en fp16, unos 23 MB; en int8, unos 12 MB.
 - GPU recomendadas: ninguna en particular. El modelo es funcional en CPU, en GPU integrada y en cualquier GPU discreta de generacion reciente o antigua. Aceleradores como A100, H100 o RTX 4090 estan sobredimensionados para esta carga.
 - Compatibilidad con GPU consumer: si, en todas. Cabe incluso en tarjetas con 2 GB de VRAM y en sistemas embebidos tipo Raspberry Pi o Jetson.
-- Opciones de despliegue: pipeline de transformers (TextClassificationPipeline), ONNX Runtime para inferencia optimizada en CPU, TorchScript, servidores HTTP propios con FastAPI o Flask, NVIDIA Triton Inference Server y HuggingFace Inference Endpoints. vLLM tiene soporte limitado de tareas de clasificacion y no es la via recomendada. llama.cpp y Ollama no son aplicables porque el modelo no es generativo y no dispone de versiones GGUF.
+- Opciones de despliegue: pipeline de transformers (TextClassificationPipeline), ONNX Runtime para inferencia optimizada en CPU, TorchScript, servidores HTTP propios con FastAPI o Flask, NVIDIA Triton Inference Server y Hugging Face Inference Endpoints. vLLM tiene soporte limitado de tareas de clasificacion y no es la via recomendada. llama.cpp y Ollama no son aplicables porque el modelo no es generativo y no dispone de versiones GGUF.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -84,10 +84,10 @@ No se dispone de resultados de benchmarks del modelo evaluado en un conjunto pub
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| 7H0M45/sentiment-model | 11,7 M | 512 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Accuracy 0,6908 en conjunto de evaluacion no documentado |
-| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 | Apache 2.0 | HuggingFace, ampliamente desplegado | Benchmark no verificado en esta ficha |
-| bert-base-uncased | 110 M | 512 | Apache 2.0 | HuggingFace | Modelo base, requiere fine-tuning para clasificacion |
-| roberta-base | 125 M | 512 | MIT | HuggingFace | Modelo base, requiere fine-tuning para clasificacion |
+| 7H0M45/sentiment-model | 11,7 M | 512 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Accuracy 0,6908 en conjunto de evaluacion no documentado |
+| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 | Apache 2.0 | Hugging Face, ampliamente desplegado | Benchmark no verificado en esta ficha |
+| bert-base-uncased | 110 M | 512 | Apache 2.0 | Hugging Face | Modelo base, requiere fine-tuning para clasificacion |
+| roberta-base | 125 M | 512 | MIT | Hugging Face | Modelo base, requiere fine-tuning para clasificacion |
 
 La ventaja competitiva del modelo evaluado es exclusivamente el tamano (unas 6 veces menos parametros que DistilBERT y 10 veces menos que BERT-base), lo que reduce el coste de inferencia y de almacenamiento. La desventaja es la ausencia total de validacion externa, de documentacion del dataset y de cifras publicas comparables.
 
@@ -107,7 +107,7 @@ La ventaja competitiva del modelo evaluado es exclusivamente el tamano (unas 6 v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/7H0M45/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/7H0M45/sentiment-model
 - Modelo base ALBERT-base-v2: https://huggingface.co/albert/albert-base-v2
 - Paper de ALBERT: https://arxiv.org/abs/1909.11942
 - Repositorio oficial de ALBERT (Google Research): https://github.com/google-research/albert

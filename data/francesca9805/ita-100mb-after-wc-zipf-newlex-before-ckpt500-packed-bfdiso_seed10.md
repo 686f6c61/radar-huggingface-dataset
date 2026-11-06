@@ -12,7 +12,7 @@ Su relevancia es limitada para usos generales: se trata de un modelo pequeno (12
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun tags de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun tags de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es limitada para usos generales: se trata de un modelo pequeno (12
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a GPT-2, un transformer decoder-only con atencion causal, segun los tags declarados en HuggingFace (`gpt2`, `transformers`). No se especifican en la informacion disponible el numero de capas, dimensiones de embedding, numero de cabezas de atencion ni la longitud de contexto nativa. Dado el recuento de 124,8 millones de parametros, es muy probable que se trate de una configuracion equivalente a GPT-2 small, aunque esto no esta confirmado en la documentacion.
+La arquitectura corresponde a GPT-2, un transformer decoder-only con atencion causal, segun los tags declarados en Hugging Face (`gpt2`, `transformers`). No se especifican en la informacion disponible el numero de capas, dimensiones de embedding, numero de cabezas de atencion ni la longitud de contexto nativa. Dado el recuento de 124,8 millones de parametros, es muy probable que se trate de una configuracion equivalente a GPT-2 small, aunque esto no esta confirmado en la documentacion.
 
 El modelo ha sido entrenado mediante SFT (supervised fine-tuning) con TRL 0.23.0, sobre la base `francesca9805/ppt-wc-zipf-newlex-ita-before-100mb-packed-bfdiso_seed10`. Las versiones del framework declaradas son Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. No se detalla la composicion del dataset de ajuste, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas adicionales como RLHF o DPO. Tampoco se documenta ninguna innovacion arquitectonica (atencion lineal, decodificacion especulativa, SSM, etc.). La model card incluye un enlace a un panel de Weights & Biases del proyecto "new-tokenizers", lo que refuerza la hipotesis de que se trata de un experimento orientado al estudio de tokenizadores y lexicos.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/ita-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados) | HuggingFace, OpenAI |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | HuggingFace, OpenAI |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
+| francesca9805/ita-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados) | Hugging Face, OpenAI |
+| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Hugging Face, OpenAI |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a tamano y licencia, ya que no existen benchmarks publicados del modelo de francesca9805 que permitan contrastar rendimiento con las alternativas. La principal diferencia practica frente a GPT-2 small o DistilGPT-2 es la ausencia de licencia explicita y de evaluaciones, lo que reduce su atractivo para uso comercial o en produccion.
 
@@ -82,7 +82,7 @@ La comparativa se limita a tamano y licencia, ya que no existen benchmarks publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-ita-before-100mb-packed-bfdiso_seed10
 - Panel de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/xea2u7f3
 - Repositorio de TRL: https://github.com/huggingface/trl

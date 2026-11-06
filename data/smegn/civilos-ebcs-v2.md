@@ -2,7 +2,7 @@
 
 ## Resumen
 
-civilos-ebcs-v2 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario smegn y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un derivado de la familia Qwen2.5, una arquitectura transformer densa de 7.000 millones de parametros con soporte nativo de contexto largo, entrenada originalmente por Alibaba Cloud. El ajuste se realizo partiendo del checkpoint cuantizado en 4 bits de Unsloth (unsloth/Qwen2.5-7B-Instruct-bnb-4bit), lo que indica un flujo de trabajo de fine-tuning eficiente en memoria mediante QLoRA o tecnicas equivalentes.
+civilos-ebcs-v2 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario smegn y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un derivado de la familia Qwen2.5, una arquitectura transformer densa de 7.000 millones de parametros con soporte nativo de contexto largo, entrenada originalmente por Alibaba Cloud. El ajuste se realizo partiendo del checkpoint cuantizado en 4 bits de Unsloth (unsloth/Qwen2.5-7B-Instruct-bnb-4bit), lo que indica un flujo de trabajo de fine-tuning eficiente en memoria mediante QLoRA o tecnicas equivalentes.
 
 El modelo esta etiquetado exclusivamente para ingles y no dispone de pipeline declarado ni de documentacion tecnica detallada en su model card. El repositorio ocupa 0,3 GB, un tamano coherente con la publicacion de adaptadores LoRA o de pesos parciales en lugar de un checkpoint completo de 7B (que en safetensors de precision completa rondaria los 14-15 GB). No se han publicado resultados de benchmarks, datos de entrenamiento ni detalles sobre el dataset utilizado en el ajuste.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| smegn/civilos-ebcs-v2 | 7B (heredado) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste comunitario sin benchmarks ni documentacion |
-| Qwen/Qwen2.5-7B-Instruct | 7B | 32.768 tokens (ampliable a 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base original, con benchmarks publicados |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, muy usado | Alternativa consolidada con licencia mas restrictiva |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Apache 2.0 | HuggingFace, muy usado | Alternativa europea con contexto similar |
+| smegn/civilos-ebcs-v2 | 7B (heredado) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste comunitario sin benchmarks ni documentacion |
+| Qwen/Qwen2.5-7B-Instruct | 7B | 32.768 tokens (ampliable a 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base original, con benchmarks publicados |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, muy usado | Alternativa consolidada con licencia mas restrictiva |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Apache 2.0 | Hugging Face, muy usado | Alternativa europea con contexto similar |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smegn/civilos-ebcs-v2
+- Hugging Face: https://huggingface.co/smegn/civilos-ebcs-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLM-Instruct (este repositorio) | 2.246.272.880 | No disponible | Imagen + texto | Apache 2.0 | HuggingFace, safetensors y ONNX |
-| Idefics3-8B-Llama3 (referencia arquitectonica citada) | No disponible en la informacion | No disponible | Imagen + texto | No disponible en la informacion | HuggingFace |
-| SmolLM2-1.7B-Instruct (modelo base de lenguaje) | No disponible en la informacion | No disponible | Solo texto | No disponible en la informacion | HuggingFace |
-| google/siglip-so400m-patch14-384 (encoder visual) | No disponible en la informacion | No disponible | Imagen (encoder) | No disponible en la informacion | HuggingFace |
+| SmolVLM-Instruct (este repositorio) | 2.246.272.880 | No disponible | Imagen + texto | Apache 2.0 | Hugging Face, safetensors y ONNX |
+| Idefics3-8B-Llama3 (referencia arquitectonica citada) | No disponible en la informacion | No disponible | Imagen + texto | No disponible en la informacion | Hugging Face |
+| SmolLM2-1.7B-Instruct (modelo base de lenguaje) | No disponible en la informacion | No disponible | Solo texto | No disponible en la informacion | Hugging Face |
+| google/siglip-so400m-patch14-384 (encoder visual) | No disponible en la informacion | No disponible | Imagen (encoder) | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la informacion proporcionada, por lo que la comparativa se limita a la relacion arquitectonica entre los componentes. La busqueda web realizada no devolvio resultados relacionados con el modelo (los enlaces obtenidos corresponden a un procedimiento administrativo aleman sin relacion alguna con IA), de modo que no se pueden aportar alternativas adicionales verificadas como Qwen2-VL, PaliGemma o moondream sin datos confirmados.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaifoS/SmolVLM-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/SaifoS/SmolVLM-Instruct
 - Informe tecnico citado en los tags: https://arxiv.org/abs/2504.05299
 - Blog oficial de SmolVLM: https://huggingface.co/blog/smolvlm
 - Demo oficial: https://huggingface.co/spaces/HuggingFaceTB/SmolVLM

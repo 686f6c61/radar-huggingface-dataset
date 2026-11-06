@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qul1/Bagley_0.1` es un modelo alojado en HuggingFace por el autor `qul1`, publicado el 18 de agosto de 2026. La información disponible en su ficha es extremadamente limitada: la única metadato relevante es su licencia Apache-2.0 y la región indicada como Estados Unidos. No se proporciona ninguna descripción técnica, arquitectura, tamaño, ni documentación adicional en la model card.
+El modelo `qul1/Bagley_0.1` es un modelo alojado en Hugging Face por el autor `qul1`, publicado el 18 de agosto de 2026. La información disponible en su ficha es extremadamente limitada: la única metadato relevante es su licencia Apache-2.0 y la región indicada como Estados Unidos. No se proporciona ninguna descripción técnica, arquitectura, tamaño, ni documentación adicional en la model card.
 
 La relevancia de este modelo no puede evaluarse a partir de los datos públicos disponibles. Los resultados de búsqueda web asociados al nombre "Bagley" corresponden a proyectos no relacionados (un asistente de videojuego, un proyecto en desarrollo en GitLab y un modelo multimodal llamado BAGEL), por lo que no se puede establecer ninguna conexión fiable con esta publicación. Se recomienda precaución antes de considerar su uso en cualquier entorno técnico o de producción.
 
@@ -60,7 +60,7 @@ No disponible. No se ha identificado ningún modelo comparable dentro de la mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qul1/Bagley_0.1
+- Repositorio Hugging Face: https://huggingface.co/qul1/Bagley_0.1
 - Repositorio GitHub "bagley" (no relacionado): https://github.com/re-legion/bagley
 - Repositorio GitHub "Bagley-AI" (no relacionado): https://github.com/BiLLY-J03l/Bagley-AI
 - Proyecto GitLab "Bagley-AI" (no relacionado): https://gitlab.com/Retr0680/Bagley-AI

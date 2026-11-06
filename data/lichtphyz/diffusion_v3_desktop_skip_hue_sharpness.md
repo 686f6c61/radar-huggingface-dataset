@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lichtphyz/diffusion_v3_desktop_skip_hue_sharpness` es una política de imitación para robótica basada en Diffusion Policy, desarrollada por el usuario lichtphyz y publicada en HuggingFace bajo la librería LeRobot. No es un modelo de lenguaje: es un modelo de control visuomotor que, a partir del estado articular de un brazo robótico SO-101 y dos cámaras (frontal y de muñeca), genera comandos de acción de 6 dimensiones para ejecutar la tarea "meter el bloque en la caja".
+`lichtphyz/diffusion_v3_desktop_skip_hue_sharpness` es una política de imitación para robótica basada en Diffusion Policy, desarrollada por el usuario lichtphyz y publicada en Hugging Face bajo la librería LeRobot. No es un modelo de lenguaje: es un modelo de control visuomotor que, a partir del estado articular de un brazo robótico SO-101 y dos cámaras (frontal y de muñeca), genera comandos de acción de 6 dimensiones para ejecutar la tarea "meter el bloque en la caja".
 
 Se trata de una ablación del modelo `lichtphyz/diffusion_v3_desktop`: misma arquitectura, mismos datos y mismos hiperparámetros, pero eliminando las dos aumentaciones de imagen más costosas (hue y sharpness) para reducir el tiempo de entrenamiento de 11 h 20 min a 5 h 13 min manteniendo la misma pérdida final de entrenamiento (0,003). El modelo tiene 277.839.366 parámetros y un repo de 1,1 GB en safetensors.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Evaluacion real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lichtphyz/diffusion_v3_desktop_skip_hue_sharpness` (este) | 277,8 M | SO-101 bloque a caja | No evaluado | Apache 2.0 | HuggingFace |
-| `lichtphyz/diffusion_v3_desktop` | No disponible | SO-101 bloque a caja | 8/10 | Apache 2.0 (presumible) | HuggingFace |
-| Políticas ACT de la misma colección SO-101 | No disponible | SO-101 bloque a caja | No disponible en la información | No disponible | HuggingFace (colección del autor) |
+| `lichtphyz/diffusion_v3_desktop_skip_hue_sharpness` (este) | 277,8 M | SO-101 bloque a caja | No evaluado | Apache 2.0 | Hugging Face |
+| `lichtphyz/diffusion_v3_desktop` | No disponible | SO-101 bloque a caja | 8/10 | Apache 2.0 (presumible) | Hugging Face |
+| Políticas ACT de la misma colección SO-101 | No disponible | SO-101 bloque a caja | No disponible en la información | No disponible | Hugging Face (colección del autor) |
 
 La comparación directa más relevante es con `diffusion_v3_desktop`, del que este modelo es una ablación: misma arquitectura y datos, pero sin hue ni sharpness y sin evaluación en robot real. El resto de alternativas de la colección (variantes ACT) no están descritas en la información disponible.
 
@@ -79,7 +79,7 @@ La comparación directa más relevante es con `diffusion_v3_desktop`, del que es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lichtphyz/diffusion_v3_desktop_skip_hue_sharpness
+- Modelo en Hugging Face: https://huggingface.co/lichtphyz/diffusion_v3_desktop_skip_hue_sharpness
 - Modelo base evaluado: https://huggingface.co/lichtphyz/diffusion_v3_desktop
 - Dataset de entrenamiento: https://huggingface.co/datasets/lichtphyz/so101_block_to_bin_v3
 - Colección SO-101 block-to-bin: https://huggingface.co/collections/lichtphyz/so-101-block-to-bin-act-vs-diffusion-policy-6ad6ca5c5e111b426bb1f8a6

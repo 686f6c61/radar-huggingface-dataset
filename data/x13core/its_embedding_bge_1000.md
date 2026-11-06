@@ -105,7 +105,7 @@ La comparativa se limita a parametros, contexto, dimension, licencia e idioma, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/X13Core/ITS_embedding_bge_1000
+- Modelo en Hugging Face: https://huggingface.co/X13Core/ITS_embedding_bge_1000
 - Modelo base: https://huggingface.co/BAAI/bge-large-en-v1.5
 - Resultados de evaluacion: `eval/Information-Retrieval_evaluation_results.csv` dentro del repositorio del modelo
 - Libreria Sentence Transformers: https://www.sbert.net/

@@ -18,7 +18,7 @@ El modelo destaca especialmente en llamadas telefónicas en turco (9,46% WER en 
 | Longitud de contexto | Audio en chunks de 30 segundos (el audio más largo se corta en segmentos de 30 s) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Turco (principal), inglés (con menor precisión) |
-| Licencia | balbal-community-license-1.0 (licencia "other" en HuggingFace) |
+| Licencia | balbal-community-license-1.0 (licencia "other" en Hugging Face) |
 | Formato de pesos | ONNX |
 
 ## Arquitectura y entrenamiento
@@ -95,12 +95,12 @@ balbal-v2-manas es el hermano mayor de la familia, más grande y más preciso se
 - Los benchmarks son declarados por el autor y no están verificados ("verified: false" en el model-index); además, los modelos balbal se evalúan con decodificación KenLM mientras que los competidores usan su inferencia por defecto, lo que puede sesgar la comparación.
 - La licencia balbal-community-license-1.0 es una licencia personalizada ("other"); debe revisarse el texto completo en el repositorio antes de cualquier uso comercial, ya que las licencias comunitarias suelen incluir restricciones de tamaño, uso o revenue.
 - El audio se procesa en chunks de 30 segundos, lo que puede afectar a la coherencia en transcripciones de audio muy largo.
-- Cero descargas registradas en HuggingFace en el momento de la ficha: es un modelo muy nuevo y con adopción mínima, por lo que conviene validar su comportamiento en datos propios antes de producción.
+- Cero descargas registradas en Hugging Face en el momento de la ficha: es un modelo muy nuevo y con adopción mínima, por lo que conviene validar su comportamiento en datos propios antes de producción.
 - No hay información sobre sesgos conocidos, riesgo de alucinación específico ni cuantizaciones disponibles.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erayyapagci/balbal-v2
+- Modelo en Hugging Face: https://huggingface.co/erayyapagci/balbal-v2
 - Modelo base (balbal-v1): https://huggingface.co/erayyapagci/balbal-v1
 - Modelo hermano mayor (balbal-v2-manas): https://huggingface.co/erayyapagci/balbal-v2-manas
 - Código (Apache 2.0): https://github.com/erayyap/balbal

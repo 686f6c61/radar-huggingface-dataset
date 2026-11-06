@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EnzoMartin98/dl-retrieval es un repositorio de HuggingFace que contiene una implementación propia de una red Swin Transformer orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni publicado como artefacto listo para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo. El autor, EnzoMartin98, publica el repositorio bajo licencia Apache 2.0 con etiquetas de safetensors, pytorch, swin_t y retrieval.
+EnzoMartin98/dl-retrieval es un repositorio de Hugging Face que contiene una implementación propia de una red Swin Transformer orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni publicado como artefacto listo para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo. El autor, EnzoMartin98, publica el repositorio bajo licencia Apache 2.0 con etiquetas de safetensors, pytorch, swin_t y retrieval.
 
 El repositorio incluye el código fuente (predict.py), la configuración de arquitectura (config.json), la receta de entrenamiento por defecto (training_args.json) y un fichero model.safetensors. Los metadatos de safetensors reportan 16.576 parámetros totales, una cifra muy inferior a la de un Swin Transformer estándar, lo que refuerza la idea de que el checkpoint no corresponde a un modelo completo entrenado. El tamaño del repositorio es de 0,0 GB, cuenta con 0 descargas y 0 likes, y fue creado el 13 de octubre de 2026.
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, la receta por defecto utiliza el optimizador Adam co
 - Investigación académica sobre atención lineal: el uso declarado de atención lineal y gated fusion lo convierte en una base para estudiar variantes eficientes de Swin en tareas de recuperación.
 - Referencia para reproducibilidad: al incluir config.json y training_args.json, facilita documentar y replicar recetas de experimentación con seeds, presupuesto de ajuste y datos equivalentes.
 - Base para evaluación en Flickr30k: la model card recomienda explícitamente este conjunto como primera evaluación, reportando la métrica de la tarea en al menos tres seeds y con una línea base de capacidad comparable.
-- Formación y docencia: puede emplearse como ejemplo didáctico de estructuración de un repositorio de modelo en HuggingFace (código, configuración, receta y checkpoint separados).
+- Formación y docencia: puede emplearse como ejemplo didáctico de estructuración de un repositorio de modelo en Hugging Face (código, configuración, receta y checkpoint separados).
 - Integración previa a un adaptador: dado que requiere un adaptador explícito para las APIs automáticas, sirve como caso de estudio sobre cómo envolver implementaciones personalizadas antes de integrarlas en un sistema mayor.
 
 ## Benchmarks y rendimiento
@@ -86,4 +86,4 @@ No es posible establecer una comparativa cuantitativa fiable porque el repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EnzoMartin98/dl-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/EnzoMartin98/dl-retrieval

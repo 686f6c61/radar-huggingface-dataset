@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo comparable a ningún otro, ya qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/kevinevans/paper_021574478_robotics_vision_language](https://huggingface.co/kevinevans/paper_021574478_robotics_vision_language)
+- Repositorio en Hugging Face: [https://huggingface.co/kevinevans/paper_021574478_robotics_vision_language](https://huggingface.co/kevinevans/paper_021574478_robotics_vision_language)
 - [Awesome-VLA-Papers](https://github.com/hanjianhua44/Awesome-VLA-Papers) (colección de papers VLA)
 - [Vision-Language-Models-Overview](https://github.com/zli12321/Vision-Language-Models-Overview) (encuesta de modelos visión-lenguaje)
 - [Qwen-VLA](https://arxiv.org/pdf/2605.30280) (paper de modelo VLA unificado)

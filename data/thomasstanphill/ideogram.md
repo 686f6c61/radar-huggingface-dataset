@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `thomasstanphill/ideogram` | LoRA sobre Ideogram v4 | rank 32 | no aplica | no disponible | HuggingFace (0 descargas) |
+| `thomasstanphill/ideogram` | LoRA sobre Ideogram v4 | rank 32 | no aplica | no disponible | Hugging Face (0 descargas) |
 | LoRAs de personajes en Civitai | LoRA sobre SDXL / Flux | variable | no aplica | variable | Civitai |
-| LoRAs de likeness en HuggingFace | LoRA sobre Flux / SD | variable | no aplica | variable | HuggingFace |
+| LoRAs de likeness en Hugging Face | LoRA sobre Flux / SD | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables (benchmarks, FID, similitud facial) en la información proporcionada. La comparación se limita a la categoría y al formato.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables (benchmarks, FID, similitud fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thomasstanphill/ideogram
+- Hugging Face: https://huggingface.co/thomasstanphill/ideogram
 - Ideogram (modelo base): https://ideogram.ai
 - ai-toolkit (entrenamiento): https://github.com/ostris/ai-toolkit
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

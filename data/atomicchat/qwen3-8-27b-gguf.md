@@ -27,7 +27,7 @@ El modelo base Qwen3.8-27B es un transformer denso con un encoder de visión int
 
 El entrenamiento del modelo base incluye una fase de preentrenamiento con un corpus masivo de datos multilingües y multimodales, seguida de un ajuste fino supervisado y un alineamiento con preferencias humanas (probablemente RLHF o DPO, aunque no se detalla en la información disponible). El modelo soporta un modo "thinking" configurable, que permite activar o desactivar el razonamiento explícito según la tarea.
 
-La cuantización de AtomicChat se realiza sobre los pesos originales de Qwen, utilizando una matriz de importancia (imatrix) calculada con un corpus de calibración público (disponible en HuggingFace). Este enfoque busca minimizar la pérdida de calidad en tareas específicas, a diferencia de las cuantizaciones genéricas que no consideran la importancia relativa de cada tensor.
+La cuantización de AtomicChat se realiza sobre los pesos originales de Qwen, utilizando una matriz de importancia (imatrix) calculada con un corpus de calibración público (disponible en Hugging Face). Este enfoque busca minimizar la pérdida de calidad en tareas específicas, a diferencia de las cuantizaciones genéricas que no consideran la importancia relativa de cada tensor.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ La cuantización de AtomicChat se realiza sobre los pesos originales de Qwen, ut
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye métricas de rendimiento, y las fuentes externas (LM Studio, Unsloth, Yottalabs) mencionan capacidades generales pero no proporcionan números concretos de MMLU, HumanEval o GSM8K para esta cuantizacion especifica. Se recomienda consultar la documentacion del modelo base Qwen3.8-27B para obtener datos de referencia, aunque no estan disponibles en esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye métricas de rendimiento, y las fuentes externas (LM Studio, Unsloth, Yottalabs) mencionan capacidades generales pero no proporcionan números concretos de MMLU, HumanEval o GSM8K para esta cuantizacion especifica. Se recomienda consultar la documentacion del modelo base Qwen3.8-27B para obtener datos de referencia, aunque no estan disponibles en esta ficha.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ La comparativa se basa en datos publicos de las fuentes citadas. No se dispone d
 ## Limitaciones y advertencias
 
 - La cuantizacion GGUF introduce una perdida de precision respecto al modelo original en FP16, que puede manifestarse en una menor exactitud en tareas de razonamiento complejo o en la generacion de codigo. La magnitud de esta perdida depende del tipo de cuantizacion elegido.
-- La licencia del modelo no esta especificada en la ficha de HuggingFace. Aunque fuentes externas indican que el modelo base es Apache 2.0, se recomienda verificar los terminos antes de un uso comercial.
+- La licencia del modelo no esta especificada en la ficha de Hugging Face. Aunque fuentes externas indican que el modelo base es Apache 2.0, se recomienda verificar los terminos antes de un uso comercial.
 - El modelo base es multimodal (vision y lenguaje), pero la cuantizacion GGUF puede no incluir el encoder de vision completo o puede degradar su rendimiento. Es necesario probar la capacidad de procesamiento de imagenes en la cuantizacion concreta.
 - La ventana de contexto de 262 000 tokens requiere una gestion cuidadosa de la memoria durante la inferencia; en GPUs con menos de 24 GB, el uso de contexto largo puede provocar desbordamiento de VRAM.
 - No se han publicado evaluaciones de sesgos o alucinaciones para esta cuantizacion especifica. Como cualquier modelo de lenguaje, puede generar contenido incorrecto o sesgado, especialmente en temas delicados.
@@ -81,8 +81,8 @@ La comparativa se basa en datos publicos de las fuentes citadas. No se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B (referencia)
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B (referencia)
 - Corpus de calibracion de AtomicChat: https://huggingface.co/datasets/AtomicChat/calib-corpora
 - Pagina del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Guia de ejecucion local en Yottalabs: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

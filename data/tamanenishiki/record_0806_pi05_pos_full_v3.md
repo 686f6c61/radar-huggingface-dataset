@@ -78,7 +78,7 @@ Nota: π₀.₅ es una evolución de π₀ con mejor generalización; OpenVLA es
 
 ## Enlaces
 
-- [HuggingFace: Tamanenishiki/record_0806_pi05_pos_full_v3](https://huggingface.co/Tamanenishiki/record_0806_pi05_pos_full_v3)
+- [Hugging Face: Tamanenishiki/record_0806_pi05_pos_full_v3](https://huggingface.co/Tamanenishiki/record_0806_pi05_pos_full_v3)
 - [Paper π₀.₅ (arXiv)](https://arxiv.org/pdf/2504.16054)
 - [Blog de Physical Intelligence sobre π₀.₅](https://www.physicalintelligence.company/blog/pi05)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

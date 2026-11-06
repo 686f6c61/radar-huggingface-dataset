@@ -70,7 +70,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/tokenizer-role-boundary-confusion
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/tokenizer-role-boundary-confusion
 - GitHub Layerfault (herramienta de admisión estática): https://github.com/izm1chael/layerfault
 - Artículo sobre inyección de prompts y confusión de roles: https://arxiv.org/html/2603.12277v1
 - Blog sobre confusión de roles en inyección de prompts: https://ideaverse.ai/blog/prompt-injection-as-role-confusion-why-llms-fail-trust-boundaries-mqpqsoij

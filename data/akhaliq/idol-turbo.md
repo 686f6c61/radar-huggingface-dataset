@@ -4,7 +4,7 @@
 
 Idol Turbo es una variante destilada del modelo Idol de Speri Labs, especializada en generación de objetos 3D a partir de una única imagen (image-to-3D). El modelo produce representaciones mediante gaussian splatting 3D, generando hasta un millón de gaussianas a partir de una sola fotografía de un objeto. La versión Turbo reduce el coste de inferencia de forma drástica: pasa de 50 pasos con classifier-free guidance (100 evaluaciones de red) a 8 pasos sin guidance, lo que supone una reducción de 12,5 veces en el número de evaluaciones de la red (NFE).
 
-El modelo lo publica el usuario akhaliq en HuggingFace y se construye sobre el denoiser de flow matching de speridlabs/idol, que se destila para acelerar la muestreo. La destilación emplea una receta de fase-LoRA denominada Glance (arXiv 2512.02899), que entrena dos expertos de bajo rango sobre los bloques transformer del modelo base. La licencia es Apache-2.0, heredada del modelo original.
+El modelo lo publica el usuario akhaliq en Hugging Face y se construye sobre el denoiser de flow matching de speridlabs/idol, que se destila para acelerar la muestreo. La destilación emplea una receta de fase-LoRA denominada Glance (arXiv 2512.02899), que entrena dos expertos de bajo rango sobre los bloques transformer del modelo base. La licencia es Apache-2.0, heredada del modelo original.
 
 Es relevante porque aborda uno de los principales cuellos de botella prácticos de los modelos de generación 3D por difusión: el alto coste computacional por muestra. Al reducir el número de evaluaciones en más de un orden de magnitud manteniendo la calidad, abre la puerta a aplicaciones interactivas o de producción donde la latencia importa. No obstante, en el momento de redactar esta ficha el repositorio indica que el primer entrenamiento de destilación está en curso y que los pesos finales aún no se han publicado.
 
@@ -79,7 +79,7 @@ No se dispone de información sobre benchmarks ni sobre otros modelos image-to-3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhaliq/idol-turbo
+- Modelo en Hugging Face: https://huggingface.co/akhaliq/idol-turbo
 - Modelo base: https://huggingface.co/speridlabs/idol
 - Artefactos de entrenamiento (LoRA, métricas, renders): https://huggingface.co/datasets/akhaliq/idol-turbo-runs
 - Paper de la receta Glance: https://arxiv.org/abs/2512.02899

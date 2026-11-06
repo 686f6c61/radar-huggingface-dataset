@@ -96,7 +96,7 @@ El modelo de esta ficha es mucho más pequeño y no parte de preentrenamiento ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hosam010023/Arabic_article_classifier
+- Modelo en Hugging Face: https://huggingface.co/hosam010023/Arabic_article_classifier
 - Dataset SANAD (Mendeley Data): https://data.mendeley.com/datasets/57zpx667y9/2
 - Paper de SANAD (Data in Brief): https://www.sciencedirect.com/science/article/pii/S2352340919304305
 - Dataset en Hugging Face: arbml/SANAD (https://huggingface.co/datasets/arbml/SANAD)

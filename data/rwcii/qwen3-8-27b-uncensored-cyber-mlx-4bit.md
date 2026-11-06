@@ -77,7 +77,7 @@ No se incluyen modelos de otros desarrolladores porque no hay información contr
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/rwcii/Qwen3.8-27B-Uncensored-Cyber-MLX-4bit)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/rwcii/Qwen3.8-27B-Uncensored-Cyber-MLX-4bit)
 - [Modelo base original (philbert440)](https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber)
 - [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [GitHub: Qwen 3.8 27B Uncensored](https://github.com/Wassimyounes01/qwen38-uncensored)

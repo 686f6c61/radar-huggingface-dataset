@@ -2,11 +2,11 @@
 
 ## Resumen
 
-RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step120 es un checkpoint publicado en HuggingFace por el usuario RLLab, con 4.022.468.096 parametros reales (segun los pesos en safetensors) y un repositorio de 8,1 GB. El identificador del repositorio indica que se trata de un derivado de Qwen3-4B-Base sometido a un entrenamiento de optimizacion de politica con GDPO (una variante de la familia GRPO), con tasa de aprendizaje 1e-6, longitud de secuencia de 8.192 tokens y detenido en el paso 120. El pipeline declarado es text-generation y la libreria es transformers.
+RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step120 es un checkpoint publicado en Hugging Face por el usuario RLLab, con 4.022.468.096 parametros reales (segun los pesos en safetensors) y un repositorio de 8,1 GB. El identificador del repositorio indica que se trata de un derivado de Qwen3-4B-Base sometido a un entrenamiento de optimizacion de politica con GDPO (una variante de la familia GRPO), con tasa de aprendizaje 1e-6, longitud de secuencia de 8.192 tokens y detenido en el paso 120. El pipeline declarado es text-generation y la libreria es transformers.
 
 El problema que aborda es el de la investigacion en aprendizaje por refuerzo aplicado a modelos de lenguaje de tamano medio: generar checkpoints intermedios de un run de RL sobre una base densa de 4.000 millones de parametros para estudiar su evolucion. Su relevancia es, por tanto, experimental y acotada: no es un modelo de proposito general ni un modelo alineado para produccion, sino una instantanea de un entrenamiento.
 
-La model card publicada es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: no declara autor real, datos de entrenamiento, licencia, idiomas ni evaluaciones. Ademas, el repositorio acumula 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validacion por parte de la comunidad ni resultados de benchmarks publicados. Cualquier uso en produccion deberia partir de una evaluacion propia.
+La model card publicada es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: no declara autor real, datos de entrenamiento, licencia, idiomas ni evaluaciones. Ademas, el repositorio acumula 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validacion por parte de la comunidad ni resultados de benchmarks publicados. Cualquier uso en produccion deberia partir de una evaluacion propia.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la co
 - Conversacion: el repositorio incluye la etiqueta "conversational", aunque no se documenta ninguna plantilla de chat ni evaluacion de dialogo, y el nombre indica que parte de una base no instruct.
 - Razonamiento, codigo, matematicas, vision o audio: no disponible, sin documentacion ni evaluaciones publicadas.
 - Tool calling / function calling: no disponible; no se declara soporte ni formato de herramientas.
-- Agentes y razonamiento multi-paso: no disponible; el tag endpoints_compatible solo indica compatibilidad de despliegue con HuggingFace Inference Endpoints.
+- Agentes y razonamiento multi-paso: no disponible; el tag endpoints_compatible solo indica compatibilidad de despliegue con Hugging Face Inference Endpoints.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
 - Modo de razonamiento explicito (thinking), decodificacion especulativa u otras tecnicas de inferencia: no disponible.
 - Despliegue: compatible con text-generation-inference y con endpoints compatibles, segun las etiquetas del repositorio.
@@ -77,7 +77,7 @@ Los datos de los modelos alternativos proceden de su documentacion publica y no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step120 | 4.022.468.096 | no disponible (entrenado con secuencias de 8.192 tokens) | no disponible | safetensors en HuggingFace; 0 descargas |
+| RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step120 | 4.022.468.096 | no disponible (entrenado con secuencias de 8.192 tokens) | no disponible | safetensors en Hugging Face; 0 descargas |
 | Qwen3-4B-Base | ~4.000 millones | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | safetensors, ampliamente replicado y con cuantizaciones de terceros |
 | Qwen3-4B-Instruct-2507 | ~4.000 millones | 262.144 tokens declarados | Apache 2.0 | safetensors, GGUF y cuantizaciones de terceros |
 | Llama 3.2 3B Instruct | ~3.200 millones | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF |
@@ -101,7 +101,7 @@ Frente a estas alternativas, el checkpoint de RLLab no aporta datos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step120
+- Modelo en Hugging Face: https://huggingface.co/RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step120
 - Referencia citada en la plantilla de la model card (Lacoste et al., calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`giava-kitchen-toasts-fpv` es una política robótica entrenada con LeRobot y publicada en HuggingFace por el usuario `fecasado`. No se trata de un modelo de lenguaje, sino de un modelo de aprendizaje por imitación (imitation learning) orientado al control de un brazo robótico en una tarea concreta de manipulación en cocina: trasladar tostadas a un plato. El pipeline declarado es `robotics` y la arquitectura interna se etiqueta como `gaze_flow_matching`, una variante de flow matching probablemente condicionada por la mirada (gaze) del operador o de la cámara en primera persona (FPV, first-person view).
+`giava-kitchen-toasts-fpv` es una política robótica entrenada con LeRobot y publicada en Hugging Face por el usuario `fecasado`. No se trata de un modelo de lenguaje, sino de un modelo de aprendizaje por imitación (imitation learning) orientado al control de un brazo robótico en una tarea concreta de manipulación en cocina: trasladar tostadas a un plato. El pipeline declarado es `robotics` y la arquitectura interna se etiqueta como `gaze_flow_matching`, una variante de flow matching probablemente condicionada por la mirada (gaze) del operador o de la cámara en primera persona (FPV, first-person view).
 
 El modelo cuenta con 235.899.950 parámetros en formato safetensors y un repositorio de 0,9 GB, lo que lo sitúa en el rango de las políticas de manipulación de tamaño medio. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones adicionales significativas. La fecha de creación y actualización (noviembre de 2026) indica que es un artefacto reciente y muy probablemente experimental.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / observación | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| giava-kitchen-toasts-fpv | 235,9 M | 320x240 (dataset) | Pick-and-place de tostadas | Apache 2.0 | HuggingFace, 0 descargas |
-| Políticas ACT en LeRobot | no disponible | configurable | Manipulación general por imitación | Apache 2.0 (LeRobot) | HuggingFace / GitHub |
+| giava-kitchen-toasts-fpv | 235,9 M | 320x240 (dataset) | Pick-and-place de tostadas | Apache 2.0 | Hugging Face, 0 descargas |
+| Políticas ACT en LeRobot | no disponible | configurable | Manipulación general por imitación | Apache 2.0 (LeRobot) | Hugging Face / GitHub |
 | Diffusion Policy | no disponible | configurable | Manipulación por imitación | MIT / Apache según implementación | Repositorios públicos |
 | VQ-BeT | no disponible | configurable | Manipulación por imitación | MIT | Repositorios públicos |
 
@@ -83,7 +83,7 @@ La comparación cuantitativa no es posible: no hay métricas publicadas para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/giava-kitchen-toasts-fpv
+- Modelo en Hugging Face: https://huggingface.co/fecasado/giava-kitchen-toasts-fpv
 - Dataset asociado: https://huggingface.co/datasets/fecasado/toasts-to-plate-v2-320x240
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas en LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| muahseol/qwen3.5-0.8b-commerce-sft | 752 M | No disponible | Apache 2.0 | SFT en coreano para atención al cliente | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | No disponible en la informacion | Apache 2.0 (según el modelo base referenciado) | Modelo generalista multilingüe | HuggingFace |
+| muahseol/qwen3.5-0.8b-commerce-sft | 752 M | No disponible | Apache 2.0 | SFT en coreano para atención al cliente | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | No disponible en la informacion | Apache 2.0 (según el modelo base referenciado) | Modelo generalista multilingüe | Hugging Face |
 | Modelos pequeños de atención al cliente en coreano | No disponible | No disponible | No disponible | Ajustes verticales similares | No disponible |
 
 La comparación cuantitativa con alternativas no es posible: no hay benchmarks publicados para este ajuste y no se dispone de datos de rendimiento de modelos comparables en la información proporcionada.
@@ -83,6 +83,6 @@ La comparación cuantitativa con alternativas no es posible: no hay benchmarks p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muahseol/qwen3.5-0.8b-commerce-sft
+- Modelo en Hugging Face: https://huggingface.co/muahseol/qwen3.5-0.8b-commerce-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

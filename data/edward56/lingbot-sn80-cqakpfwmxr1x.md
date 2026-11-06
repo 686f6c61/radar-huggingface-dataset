@@ -35,7 +35,7 @@ Una particularidad de este modelo es que pertenece al ecosistema Bittensor SN80,
 - Comprension de instrucciones de tareas: interpreta comandos como "abre el cajon" o "coloca el bloque rojo sobre el bloque azul" y los traduce en secuencias de acciones.
 - Percepcion visual: procesa imagenes de camara para localizar objetos, entender la disposicion espacial y planificar movimientos.
 - Integracion con el framework OpenRoboto: disenado para ser evaluado con las herramientas de evaluacion estandarizadas de SN80.
-- Compatibilidad con transformers: al usar la libreria transformers de HuggingFace, puede cargarse con el pipeline de robotica estandar.
+- Compatibilidad con transformers: al usar la libreria transformers de Hugging Face, puede cargarse con el pipeline de robotica estandar.
 - Generacion de acciones de baja dimension: produce comandos de control continuo, no texto ni codigo (a diferencia de modelos de lenguaje genericos).
 
 ## Casos de uso
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Aunqu
 - VRAM estimada para inferencia: no disponible de forma oficial. Con 6.375 millones de parametros en precision FP32, el modelo ocuparia aproximadamente 25,5 GB solo en pesos. En FP16, unos 12,75 GB, y en cuantizacion de 8 bits, unos 6,4 GB.
 - GPU recomendadas: para inferencia en FP16 se necesitaria una GPU con al menos 16 GB de VRAM, como una RTX 4090, A100 de 40 GB o H100. Para cuantizacion de 8 bits, una RTX 3090 o 4080 de 24 GB podria ser suficiente.
 - Compatibilidad con consumer GPU: si, con cuantizacion. Sin cuantizar, es marginal o inviable en GPUs de consumo de 24 GB o menos.
-- Opciones de despliegue: al ser un modelo de transformers con pipeline de robotica, puede cargarse con la API de HuggingFace Transformers. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI, y es poco probable que estos runtime soporten modelos VLA sin adaptaciones especificas.
+- Opciones de despliegue: al ser un modelo de transformers con pipeline de robotica, puede cargarse con la API de Hugging Face Transformers. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI, y es poco probable que estos runtime soporten modelos VLA sin adaptaciones especificas.
 - Latencia y throughput: no disponibles. Dependera del hardware, la cuantizacion y el tamano de las secuencias de entrada.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edward56/lingbot-sn80-CqAkpFWmxR1X
+- Modelo en Hugging Face: https://huggingface.co/edward56/lingbot-sn80-CqAkpFWmxR1X
 - Perfil del autor: https://huggingface.co/edward56
 - Documentacion de OpenRoboto: https://www.openroboto.ai/#/docs
 - Guia de minero LingBot: https://github.com/openroboto-ai/openroboto-cli/blob/main/docs/MINER_LINGBOT.md

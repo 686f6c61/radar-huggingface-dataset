@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nora 4B v3.2 es un modelo de lenguaje de 4.840 millones de parámetros desarrollado por dmvevents, un proyecto originario de Trinidad y Tobago que se presenta como el primer LLM soberano del Caribe. Esta versión concreta, `nora-4b-v3.2-GGUF`, es la conversión a formato GGUF del modelo base `dmvevents/nora-4b-v3.2`, pensada para su ejecución eficiente en CPU y GPU mediante herramientas como llama.cpp u Ollama. El modelo está disponible bajo licencia Apache-2.0, aunque su acceso en HuggingFace es restringido (gated) y requiere aceptar condiciones previas.
+Nora 4B v3.2 es un modelo de lenguaje de 4.840 millones de parámetros desarrollado por dmvevents, un proyecto originario de Trinidad y Tobago que se presenta como el primer LLM soberano del Caribe. Esta versión concreta, `nora-4b-v3.2-GGUF`, es la conversión a formato GGUF del modelo base `dmvevents/nora-4b-v3.2`, pensada para su ejecución eficiente en CPU y GPU mediante herramientas como llama.cpp u Ollama. El modelo está disponible bajo licencia Apache-2.0, aunque su acceso en Hugging Face es restringido (gated) y requiere aceptar condiciones previas.
 
 La relevancia de este modelo radica en su origen: es un esfuerzo local por desarrollar IA soberana en una región sin tradición previa en este ámbito, con apoyo gubernamental explícito. Aunque el tamaño de 4B parámetros lo sitúa en la gama de modelos pequeños, su formato GGUF y su licencia permisiva lo hacen atractivo para despliegues en entornos con recursos limitados. Los tags del repositorio sugieren una posible base en Qwen3.5, aunque no se ha confirmado oficialmente.
 
@@ -25,7 +25,7 @@ No se dispone de información detallada sobre la arquitectura interna del modelo
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como "conversational" en HuggingFace, lo que indica su orientación a diálogo.
+- Generación de texto conversacional: el modelo está etiquetado como "conversational" en Hugging Face, lo que indica su orientación a diálogo.
 - Soporte de endpoints compatibles: el tag `endpoints_compatible` sugiere que puede desplegarse en plataformas de inferencia estándar.
 - Capacidades multilingües: no especificadas, aunque al ser un modelo caribeño podría tener cierta competencia en inglés y posiblemente español, pero no hay datos confirmados.
 - No se mencionan capacidades de tool calling, agentes, visión, audio ni razonamiento avanzado.
@@ -60,7 +60,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos de tamaño
 - Sesgos desconocidos: al no haber documentación sobre el dataset de entrenamiento, no se puede evaluar la presencia de sesgos culturales, de género o raciales. Un modelo entrenado principalmente con datos locales podría tener una visión limitada del mundo.
 - Riesgo de alucinación: como todo LLM pequeño, es probable que genere información falsa o inventada, especialmente en dominios especializados.
 - Limitaciones de contexto: no se conoce la longitud de contexto, pero los modelos de 4B suelen tener ventanas de 4K a 8K tokens, lo que limita tareas de documento largo.
-- Acceso restringido: el repositorio es gated, lo que obliga a aceptar condiciones en HuggingFace antes de descargar. Esto puede dificultar su adopción en entornos automatizados.
+- Acceso restringido: el repositorio es gated, lo que obliga a aceptar condiciones en Hugging Face antes de descargar. Esto puede dificultar su adopción en entornos automatizados.
 - Soporte limitado: al ser un proyecto pequeño, no hay garantía de mantenimiento, actualizaciones o corrección de bugs.
 - Idiomas: no se especifican, pero es probable que el modelo esté optimizado para inglés, con capacidades limitadas en otros idiomas.
 

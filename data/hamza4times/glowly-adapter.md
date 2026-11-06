@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Glowly-adapter es un adaptador LoRA publicado en HuggingFace por el usuario hamza4times, entrenado sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (librería `peft` 0.20.0, formato safetensors) que debe cargarse junto al modelo base para producir texto. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango sobre un modelo de unos 0,49 mil millones de parámetros.
+Glowly-adapter es un adaptador LoRA publicado en Hugging Face por el usuario hamza4times, entrenado sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (librería `peft` 0.20.0, formato safetensors) que debe cargarse junto al modelo base para producir texto. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango sobre un modelo de unos 0,49 mil millones de parámetros.
 
-El problema que resuelve no está documentado: la model card es la plantilla por defecto de HuggingFace y todos los campos de descripción, datos de entrenamiento, evaluación y licencia figuran como «More Information Needed». El nombre «glowly» sugiere un ajuste orientado a un producto o marca concretos, pero no hay evidencia en el repositorio que lo confirme.
+El problema que resuelve no está documentado: la model card es la plantilla por defecto de Hugging Face y todos los campos de descripción, datos de entrenamiento, evaluación y licencia figuran como «More Information Needed». El nombre «glowly» sugiere un ajuste orientado a un producto o marca concretos, pero no hay evidencia en el repositorio que lo confirme.
 
 Su relevancia actual es, por tanto, limitada y de naturaleza práctica: sirve como ejemplo de adaptador LoRA de muy bajo coste computacional, ejecutable en CPU o en GPU de gama de entrada, y como caso de estudio de un repositorio sin documentación ni validación comunitaria (0 descargas, 0 likes en el momento de la consulta). Cualquier evaluación seria de su calidad exige entrenar o inspeccionar el adaptador por cuenta propia.
 
@@ -25,7 +25,7 @@ Su relevancia actual es, por tanto, limitada y de naturaleza práctica: sirve co
 
 El adaptador es un LoRA estándar sobre Qwen2.5-0.5B-Instruct. La arquitectura del modelo base es un transformer decoder-only con normalización RMSNorm pre-attention, activación SwiGLU, embeddings RoPE y atención con query groups (GQA), con 24 capas, dimensión oculta de 896, 14 cabezas de atención y 2 cabezas KV, y un vocabulario de 151.936 tokens. Según la documentación pública de Qwen, el base se preentrenó sobre 18 billones de tokens y se alineó posteriormente mediante ajuste supervisado y optimización de preferencias. Estos datos corresponden al modelo base, no al adaptador, y no están verificados en la información proporcionada.
 
-Del entrenamiento del adaptador no se conoce nada: ni el conjunto de datos, ni el número de tokens, ni el rango (`r`), ni el `lora_alpha`, ni los módulos objetivo, ni la época o la tasa de aprendizaje, ni si hubo DPO o RLHF. La única referencia técnica del repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre el cálculo del impacto ambiental del aprendizaje automático y que aparece en la plantilla por defecto de HuggingFace: no es una referencia al método de entrenamiento ni al modelo. La ausencia de curvas de pérdida, de configuración de entrenamiento y de cualquier artefacto de evaluación impide reproducir el ajuste.
+Del entrenamiento del adaptador no se conoce nada: ni el conjunto de datos, ni el número de tokens, ni el rango (`r`), ni el `lora_alpha`, ni los módulos objetivo, ni la época o la tasa de aprendizaje, ni si hubo DPO o RLHF. La única referencia técnica del repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre el cálculo del impacto ambiental del aprendizaje automático y que aparece en la plantilla por defecto de Hugging Face: no es una referencia al método de entrenamiento ni al modelo. La ausencia de curvas de pérdida, de configuración de entrenamiento y de cualquier artefacto de evaluación impide reproducir el ajuste.
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ Los datos del modelo base y de las alternativas provienen de su documentación p
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/hamza4times/glowly-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/hamza4times/glowly-adapter
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Repositorio de Qwen2.5 (QwenLM): https://github.com/QwenLM/Qwen2.5

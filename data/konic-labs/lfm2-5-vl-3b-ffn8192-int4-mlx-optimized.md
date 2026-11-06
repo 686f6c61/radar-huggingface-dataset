@@ -86,8 +86,8 @@ No se dispone de datos comparativos de rendimiento o calidad frente a otros VLM 
 
 ## Enlaces
 
-- [Modelo en HuggingFace (port MLX)](https://huggingface.co/konic-labs/LFM2.5-VL-3B-ffn8192-int4-MLX-optimized)
-- [Modelo base en HuggingFace](https://huggingface.co/konic-labs/LFM2.5-VL-3B-ffn8192-int4)
+- [Modelo en Hugging Face (port MLX)](https://huggingface.co/konic-labs/LFM2.5-VL-3B-ffn8192-int4-MLX-optimized)
+- [Modelo base en Hugging Face](https://huggingface.co/konic-labs/LFM2.5-VL-3B-ffn8192-int4)
 - [Repositorio companion (código del port)](https://github.com/konic-labs/lfm25-mlx-optimized)
 - [Blog de Liquid AI sobre LFM2.5-VL-3B](https://www.liquid.ai/blog/lfm2-5-vl-3b)
 - [Documentación oficial de LFM2.5-VL-3B en Liquid Docs](https://docs.liquid.ai/lfm/models/lfm25-vl-3b)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-develop8/p2va-models es un repositorio alojado en HuggingFace por el usuario develop8 bajo licencia OpenRAIL. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: openrail`), sin ninguna documentacion adicional sobre arquitectura, numero de parametros, datos de entrenamiento, idiomas o capacidades. El repositorio ocupa 24,3 GB, acumula 18 descargas y 1 "like", y fue creado el 20 de junio de 2026 con ultima actualizacion el 22 de septiembre de 2026.
+develop8/p2va-models es un repositorio alojado en Hugging Face por el usuario develop8 bajo licencia OpenRAIL. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: openrail`), sin ninguna documentacion adicional sobre arquitectura, numero de parametros, datos de entrenamiento, idiomas o capacidades. El repositorio ocupa 24,3 GB, acumula 18 descargas y 1 "like", y fue creado el 20 de junio de 2026 con ultima actualizacion el 22 de septiembre de 2026.
 
 No se dispone de informacion tecnica publicada: no hay pipeline declarado, no hay idiomas declarados y no hay ficheros de configuracion, tokenizer o pesos descritos en la informacion disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los resultados obtenidos correspondian a temas inconexos (soporte de YouTube TV, articulos sobre RAG y guias ofimaticas).
 
@@ -88,7 +88,7 @@ No disponible. No se puede identificar una categoria de modelo comparable (taman
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/develop8/p2va-models
+- Repositorio en Hugging Face: https://huggingface.co/develop8/p2va-models
 - Model card del autor: https://huggingface.co/develop8/p2va-models/blob/main/README.md
 - Pagina oficial de la licencia OpenRAIL: https://huggingface.co/openrail
 - Papers, blogs, repositorios o demos adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun enlace relacionado con este modelo.

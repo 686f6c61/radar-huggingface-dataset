@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables directamente (por ejempl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/image2garment/GarmentParticles-Realistic
+- Hugging Face: https://huggingface.co/image2garment/GarmentParticles-Realistic
 - Paper del modelo (SIGGRAPH 2026): https://huggingface.co/papers/2605.26391
 - Página del proyecto: https://garment-particles.github.io
 - Código fuente: https://github.com/garment-particles/GarmentParticles

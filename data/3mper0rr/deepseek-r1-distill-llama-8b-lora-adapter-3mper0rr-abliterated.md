@@ -2,7 +2,7 @@
 
 ## Resumen
 
-3MPER0RR/deepSeek-R1-Distill-Llama-8B-Lora-adapter-3MPER0RR-abliterated es un adaptador LoRA publicado en HuggingFace bajo la librería PEFT. Ha sido creado por el usuario 3MPER0RR como un adaptador de bajo rango para un modelo base abliterated: `3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated`. No es un modelo autónomo, sino una actualización de pesos que debe cargarse junto al modelo base. El repositorio no contiene los pesos completos del modelo.
+3MPER0RR/deepSeek-R1-Distill-Llama-8B-Lora-adapter-3MPER0RR-abliterated es un adaptador LoRA publicado en Hugging Face bajo la librería PEFT. Ha sido creado por el usuario 3MPER0RR como un adaptador de bajo rango para un modelo base abliterated: `3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated`. No es un modelo autónomo, sino una actualización de pesos que debe cargarse junto al modelo base. El repositorio no contiene los pesos completos del modelo.
 
 El adaptador se distribuye en formato safetensors, con licencia MIT y no tiene descargas ni likes registrados. Dado que el modelo base deriva de DeepSeek-R1-Distill-Llama-8B, la arquitectura subyacente es un Transformer decoder-only de 8.000 millones de parámetros. La técnica de abliteración aplicada al modelo base tiene como objetivo eliminar comportamientos aprendidos, habitualmente relacionados con rechazos o restricciones de seguridad, aunque la ficha del adaptador no aporta detalles del procedimiento ni de la configuración del LoRA.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-R1-Distill-Llama-8B (original) | 8B (denso) | 128k (base) | MIT | HuggingFace |
-| 3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated | 8B (denso) | No disponible | MIT | HuggingFace |
-| 3MPER0RR/deepSeek-R1-Distill-Llama-8B-Lora-adapter-3MPER0RR-abliterated | LoRA sobre 8B | No disponible | MIT | HuggingFace |
+| DeepSeek-R1-Distill-Llama-8B (original) | 8B (denso) | 128k (base) | MIT | Hugging Face |
+| 3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated | 8B (denso) | No disponible | MIT | Hugging Face |
+| 3MPER0RR/deepSeek-R1-Distill-Llama-8B-Lora-adapter-3MPER0RR-abliterated | LoRA sobre 8B | No disponible | MIT | Hugging Face |
 
 No se han identificado adaptadores oficiales con la misma técnica. La comparativa se limita a las distintas versiones del modelo base, ya que no existen alternativas documentadas en la información disponible.
 

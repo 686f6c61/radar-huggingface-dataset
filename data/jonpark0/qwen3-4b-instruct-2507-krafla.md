@@ -98,7 +98,7 @@ La comparación directa con conversiones GGUF equivalentes no puede hacerse con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/Qwen3-4B-Instruct-2507-krafla
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/Qwen3-4B-Instruct-2507-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de Krafla: https://github.com/JonPark0/krafla
 - Releases de Krafla (0.8.0 o superior): https://github.com/JonPark0/krafla/releases

@@ -99,7 +99,7 @@ La comparación relevante para este modelo no es de rendimiento en tareas, sino 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed1234-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

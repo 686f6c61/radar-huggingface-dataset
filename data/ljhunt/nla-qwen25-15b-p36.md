@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ljhunt/nla-qwen25-15b-p36` es un conjunto de checkpoints de investigación, no un modelo conversacional. Se trata de un autoencoder en lenguaje natural (NLA, *natural-language autoencoder*) construido sobre Qwen2.5-1.5B-Instruct y aplicado a la capa 20 del modelo base. Lo publica el usuario de HuggingFace `ljhunt` como material del proyecto `nla-eval-awareness-poisoning`, en concreto de la fase 3.6 ("Phase 3.6 small-NLA checkpoints"). El problema que aborda es de interpretabilidad mecanicista: comprobar si un verbalizador de activaciones (AV) nombra conceptos concretos y qué ocurre cuando se le entrena para omitirlos o se le envenena durante el RL.
+`ljhunt/nla-qwen25-15b-p36` es un conjunto de checkpoints de investigación, no un modelo conversacional. Se trata de un autoencoder en lenguaje natural (NLA, *natural-language autoencoder*) construido sobre Qwen2.5-1.5B-Instruct y aplicado a la capa 20 del modelo base. Lo publica el usuario de Hugging Face `ljhunt` como material del proyecto `nla-eval-awareness-poisoning`, en concreto de la fase 3.6 ("Phase 3.6 small-NLA checkpoints"). El problema que aborda es de interpretabilidad mecanicista: comprobar si un verbalizador de activaciones (AV) nombra conceptos concretos y qué ocurre cuando se le entrena para omitirlos o se le envenena durante el RL.
 
 El NLA consta de dos piezas: un AV que traduce una activación del *residual stream* a texto en lenguaje natural, y un AR (*activation reconstructor*, implementado como `critic.pt`) que intenta reconstruir la activación a partir de esa explicación. El repositorio incluye variantes SFT limpias, variantes con palabras de cocina/recetas eliminadas de los resúmenes y checkpoints tras 900 pasos de RL, uno envenenado y otro limpio. Es relevante ahora porque permite estudiar empíricamente fuga de conceptos, *reward hacking* y fidelidad de las explicaciones en técnicas de interpretabilidad basadas en lenguaje, un área con muy pocos artefactos reproducibles.
 
@@ -84,10 +84,10 @@ La comparación directa con LLM no es del todo justa: este artefacto no compite 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Uso previsto |
 |---|---|---|---|---|---|
-| `ljhunt/nla-qwen25-15b-p36` | 1,5B (base) + AV/AR | No disponible | No disponible | HuggingFace, repo de 23,0 GB | Investigación NLA, capa 20 |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente disponible | Chat y generación general |
-| Gemma 2 2B Instruct | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace | Chat y generación general |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace | Chat y generación general |
+| `ljhunt/nla-qwen25-15b-p36` | 1,5B (base) + AV/AR | No disponible | No disponible | Hugging Face, repo de 23,0 GB | Investigación NLA, capa 20 |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente disponible | Chat y generación general |
+| Gemma 2 2B Instruct | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face | Chat y generación general |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face | Chat y generación general |
 
 Frente a las alternativas, la diferencia no es de rendimiento sino de función: los otros tres son asistentes; este es un par AV/AR con variantes experimentales. Como comparación más honesta, sus equivalentes conceptuales son un SAE entrenado sobre la capa 20 de Qwen2.5-1.5B, *logit lens* o *tuned lens*; no se dispone de una comparación numérica publicada entre ellos y este NLA.
 
@@ -107,7 +107,7 @@ Frente a las alternativas, la diferencia no es de rendimiento sino de función: 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ljhunt/nla-qwen25-15b-p36)
+- [Modelo en Hugging Face](https://huggingface.co/ljhunt/nla-qwen25-15b-p36)
 - [Repositorio del proyecto en GitHub](https://github.com/ljhunt1/nla-eval-awareness-poisoning)
 - [Documento de trials de la fase 3.6](https://github.com/ljhunt1/nla-eval-awareness-poisoning/blob/main/eval_awareness_poison/PHASE36_TRIALS.md)
 - [Entrenador `nla36s.py`](https://github.com/ljhunt1/nla-eval-awareness-poisoning/blob/main/eval_awareness_poison/phase36/nla36s.py)

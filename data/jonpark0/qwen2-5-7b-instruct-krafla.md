@@ -94,7 +94,7 @@ La comparativa se limita a parámetros, contexto, formato y licencia, ya que no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonpark0/Qwen2.5-7B-Instruct-krafla
+- Repositorio en Hugging Face: https://huggingface.co/jonpark0/Qwen2.5-7B-Instruct-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Krafla: https://github.com/JonPark0/krafla
 - Releases de Krafla: https://github.com/JonPark0/krafla/releases

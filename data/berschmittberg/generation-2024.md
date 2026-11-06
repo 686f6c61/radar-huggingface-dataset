@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`berschmittberg/generation-2024` es un repositorio de HuggingFace publicado por el usuario `berschmittberg` que contiene una implementacion de referencia de DeiT (Data-efficient Image Transformer) orientada a tareas de generacion, configurada nominalmente en escala "xlarge". El propio autor declara explicitamente que el repositorio prioriza codigo transparente y pruebas de humo reproducibles, y que no se reclama ninguna puntuacion de benchmark. El checkpoint `model.safetensors` es una inicializacion valida para pruebas, no un modelo entrenado.
+`berschmittberg/generation-2024` es un repositorio de Hugging Face publicado por el usuario `berschmittberg` que contiene una implementacion de referencia de DeiT (Data-efficient Image Transformer) orientada a tareas de generacion, configurada nominalmente en escala "xlarge". El propio autor declara explicitamente que el repositorio prioriza codigo transparente y pruebas de humo reproducibles, y que no se reclama ninguna puntuacion de benchmark. El checkpoint `model.safetensors` es una inicializacion valida para pruebas, no un modelo entrenado.
 
 El dato mas relevante para quien evalue el repositorio es el recuento real de parametros leido del safetensors: 33.088 parametros. Esta cifra es incompatible con la etiqueta "xlarge" que aparece en la model card, lo que sugiere que la configuracion describe una arquitectura de referencia de juguete mas que un modelo a escala. El tamano del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 likes desde su creacion el 10 de octubre de 2026.
 
@@ -41,7 +41,7 @@ En cuanto a entrenamiento, no hay ningun dato disponible: el autor no documenta 
 
 ## Casos de uso
 
-- Plantilla de estructura de repositorio: sirve como esqueleto de referencia para publicar un modelo en HuggingFace con `config.json`, `training_args.json`, `predict.py` y `model.safetensors`, ya que el autor documenta explicitamente cada artefacto y su proposito.
+- Plantilla de estructura de repositorio: sirve como esqueleto de referencia para publicar un modelo en Hugging Face con `config.json`, `training_args.json`, `predict.py` y `model.safetensors`, ya que el autor documenta explicitamente cada artefacto y su proposito.
 - Pruebas de humo en CI: dado que el checkpoint es una inicializacion de 33.088 parametros, se puede cargar en pipelines de integracion continua para verificar que el codigo de carga, tokenizacion o preprocesado no lanza excepciones, con un coste de computo despreciable.
 - Base para reproducir una receta de entrenamiento: el `training_args.json` con AdamW y warmup lineal permite arrancar experimentos comparativos, siempre que se entrene desde cero con datos propios y presupuesto de ajuste equivalente entre baselines.
 - Docencia y material didactico: resulta util para ilustrar la anatomia de un transformer estilo DeiT (token de destilacion, fusion concat mlp, normalizacion por instancias) sin la complejidad de un modelo a escala real.
@@ -67,7 +67,7 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| berschmittberg/generation-2024 | 33.088 | generacion (sin especificar) | apache-2.0 | HuggingFace, 0 descargas |
+| berschmittberg/generation-2024 | 33.088 | generacion (sin especificar) | apache-2.0 | Hugging Face, 0 descargas |
 | Familia DeiT original (referencia externa) | orden de millones (varia por variante) | clasificacion de imagenes | segun publicacion original | repositorios de referencia del paper |
 | ViT, transformer de vision original (referencia externa) | orden de millones | clasificacion de imagenes | segun publicacion original | repositorios de referencia del paper |
 
@@ -86,7 +86,7 @@ No se han incluido cifras de exactitud ni de contexto porque no forman parte de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/berschmittberg/generation-2024
+- Repositorio en Hugging Face: https://huggingface.co/berschmittberg/generation-2024
 - AI Model Release Tracker (LM Market Cap): https://lmmarketcap.com/tools/model-release-tracker
 - LLM Leaderboard & AI Model Benchmarks: https://benchlm.ai/
 - AI Model Release Calendar (ScriptByAI): https://www.scriptbyai.com/ai-model-release-calendar/

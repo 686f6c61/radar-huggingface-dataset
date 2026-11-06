@@ -83,11 +83,11 @@ La comparacion se establece a nivel de metodo o familia, ya que no todos los dat
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JayRobotics/ACT_demo_04 (ACT) | 51.668.614 | chunk de acciones, valor no disponible | no disponible | apache-2.0 | HuggingFace, libreria lerobot |
+| JayRobotics/ACT_demo_04 (ACT) | 51.668.614 | chunk de acciones, valor no disponible | no disponible | apache-2.0 | Hugging Face, libreria lerobot |
 | ACT original (paper arXiv:2304.13705) | no disponible (mayor que este checkpoint) | chunk de acciones configurable | resultados publicados en el paper sobre tareas bim manuales | codigo y pesos segun repositorio del autor | repositorio de los autores |
 | Diffusion Policy | no disponible | horizonte de difusion de acciones, valor no disponible | resultados publicados en el paper correspondiente | no disponible | implementaciones publicas |
-| SmolVLA | aproximadamente 450 millones (dato publico de Hugging Face) | politica vision-lenguaje-accion | no disponible en esta ficha | Apache-2.0 | HuggingFace, LeRobot |
-| pi0 (Physical Intelligence) | aproximadamente 3.300 millones (dato publico) | politica vision-lenguaje-accion de proposito general | no disponible en esta ficha | Apache-2.0 en openpi | HuggingFace y repositorio openpi |
+| SmolVLA | aproximadamente 450 millones (dato publico de Hugging Face) | politica vision-lenguaje-accion | no disponible en esta ficha | Apache-2.0 | Hugging Face, LeRobot |
+| pi0 (Physical Intelligence) | aproximadamente 3.300 millones (dato publico) | politica vision-lenguaje-accion de proposito general | no disponible en esta ficha | Apache-2.0 en openpi | Hugging Face y repositorio openpi |
 
 Diferencias clave: este checkpoint es entre uno y dos ordenes de magnitud mas pequeno que SmolVLA o pi0, no incorpora un modelo de lenguaje y esta especializado en una unica tarea, mientras que las alternativas VLA pretenden generalizacion entre tareas y siguen instrucciones en lenguaje natural.
 
@@ -107,7 +107,7 @@ Diferencias clave: este checkpoint es entre uno y dos ordenes de magnitud mas pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayRobotics/ACT_demo_04
+- Modelo en Hugging Face: https://huggingface.co/JayRobotics/ACT_demo_04
 - Dataset de entrenamiento: https://huggingface.co/datasets/data/SO101_servo_60ep
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=data/SO101_servo_60ep
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705 y https://arxiv.org/abs/2304.13705

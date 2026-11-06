@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xuwang-Director-1.7B (虚妄 · Xuwang-Director-1.7B) es un modelo de decision tipada para direccion de juego, desarrollado por nanohana233 (publicador: zheznanohana) y publicado en HuggingFace. No es un chatbot ni un generador de texto: parte del backbone de Qwen/Qwen3-1.7B-Base y sustituye la cabeza de lenguaje por 193 cabezas lineales por campo que cubren 10 tipos de tarea. En una unica pasada forward, el modelo emite distribuciones softmax para campos de eleccion y puntuaciones sigmoideas para campos multietiqueta, es decir, devuelve probabilidades sobre opciones concretas en lugar de frases generadas.
+Xuwang-Director-1.7B (虚妄 · Xuwang-Director-1.7B) es un modelo de decision tipada para direccion de juego, desarrollado por nanohana233 (publicador: zheznanohana) y publicado en Hugging Face. No es un chatbot ni un generador de texto: parte del backbone de Qwen/Qwen3-1.7B-Base y sustituye la cabeza de lenguaje por 193 cabezas lineales por campo que cubren 10 tipos de tarea. En una unica pasada forward, el modelo emite distribuciones softmax para campos de eleccion y puntuaciones sigmoideas para campos multietiqueta, es decir, devuelve probabilidades sobre opciones concretas en lugar de frases generadas.
 
 El problema que aborda es acotado y explicito en su model card: entrenar un "director" local que aporte preferencias dentro de un conjunto fijo de decisiones de diseno de juego, dejando las restricciones y la ejecucion al propio motor del juego. La adaptacion se hizo con LoRA (r=16, alpha=32, dropout=0,05, checkpoint del paso 2000) sobre el modelo base, con destilacion de conocimiento de un profesor no identificado en la informacion disponible. El repositorio ocupa 2,3 GB e incluye pesos en safetensors y una cuantizacion GGUF Q4_K_M de 1.107.408.416 bytes, que debe descargarse junto con el fichero `heads.json`.
 
@@ -42,7 +42,7 @@ El autor senala como limitacion estructural que las cabezas son independientes: 
 - Decision tipada: produce probabilidades sobre opciones concretas en 10 tipos de tarea y 193 cabezas de salida, sin generar texto.
 - Campos de eleccion unica mediante softmax y campos multietiqueta mediante sigmoide en la misma pasada forward.
 - Condicionamiento por contexto: consume serializaciones especificas de canal y termina en el token `<decide>`.
-- Soporte de prompts compactos en ingles y de identificadores de opciones especificos del juego; el tag de HuggingFace declara en y zh.
+- Soporte de prompts compactos en ingles y de identificadores de opciones especificos del juego; el tag de Hugging Face declara en y zh.
 - Inferencia local sin claves de API de terceros ni llamadas a servicios en la nube.
 - Formato de pesos GGUF Q4_K_M para despliegue en CPU o GPU de gama baja.
 - No soporta generacion de texto: no hay decodificacion autoregresiva ni salida en lenguaje natural.
@@ -117,7 +117,7 @@ Frente a estas alternativas, Xuwang-Director ofrece una salida estructurada y di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nanohana233/Xuwang-Director-1.7B
+- Modelo en Hugging Face: https://huggingface.co/nanohana233/Xuwang-Director-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nanohana233/Xuwang-Director-Data
 - Repositorio de codigo y quick start: https://github.com/zheznanohana/Xuwang-Director-1.7B
 - README en chino con pasos de ejecucion: https://github.com/zheznanohana/Xuwang-Director-1.7B/blob/codex/release/README.zh-CN.md

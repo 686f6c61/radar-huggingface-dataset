@@ -16,7 +16,7 @@ La relevancia es doble: por un lado, es un caso poco habitual de port completo d
 | Parametros totales | 4,4 B según gemma4.dev para el modelo base Gemma 4 E4B; la model card del autor no lo especifica |
 | Longitud de contexto | Modelo base: 256K según la guía de Gemma 4 (codersera). Esta implementación NPU: caché KV estática de 1024 tokens |
 | Tipos de cuantizacion | INT4 simétrico, grupo 128 (por defecto) e INT4 simétrico channel-wise (modo `--fast`); embeddings de texto tomados de `OpenVINO/gemma-4-E4B-it-int4-ov` |
-| Idiomas soportados | en, ja (según los tags de HuggingFace) |
+| Idiomas soportados | en, ja (según los tags de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | OpenVINO IR (`.xml`/`.bin`); grafos estáticos divididos en visión, embeddings, PLE, decoder y head |
 | Tamano del repositorio | 8,7 GB |

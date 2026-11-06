@@ -72,8 +72,8 @@ No se dispone de datos comparativos publicados con otros modelos de generacion d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mrlol123/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio en Hugging Face: https://huggingface.co/mrlol123/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog oficial de MiniMax: https://www.minimax.io/blog/minimax-h3
 - Aplicacion web Hailuo AI: https://hailuoai.video/tools/minimax-h3

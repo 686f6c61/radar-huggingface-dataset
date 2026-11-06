@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FELAY-1-TITAN es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario Amrica655 en HuggingFace. El modelo se presenta como un motor de síntesis de código puro ("Pure Code Engine"), es decir, entrenado para generar exclusivamente código sin relleno conversacional. Cuenta con 4.205.751.296 parámetros totales (aproximadamente 4,2 mil millones) y se distribuye en formato safetensors con cuantización de 4 bits (bitsandbytes NF4).
+FELAY-1-TITAN es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario Amrica655 en Hugging Face. El modelo se presenta como un motor de síntesis de código puro ("Pure Code Engine"), es decir, entrenado para generar exclusivamente código sin relleno conversacional. Cuenta con 4.205.751.296 parámetros totales (aproximadamente 4,2 mil millones) y se distribuye en formato safetensors con cuantización de 4 bits (bitsandbytes NF4).
 
 El modelo está etiquetado con la arquitectura qwen3_5_text y declara soporte para inglés y persa (fa), además del inglés como idioma principal. Su licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 4,5 GB y ha registrado 16 descargas desde su creación el 26 de octubre de 2026.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| FELAY-1-TITAN | 4,2 B | no disponible | Apache 2.0 | Código puro | HuggingFace |
-| Qwen3.5-4B (base) | 4 B | no disponible | Apache 2.0 | Generalista | HuggingFace |
-| CodeLlama-7B | 7 B | 16k (aprox.) | Llama 2 | Código | HuggingFace |
-| StarCoder2-3B | 3 B | 16k (aprox.) | BigCode OpenRAIL-M | Código | HuggingFace |
+| FELAY-1-TITAN | 4,2 B | no disponible | Apache 2.0 | Código puro | Hugging Face |
+| Qwen3.5-4B (base) | 4 B | no disponible | Apache 2.0 | Generalista | Hugging Face |
+| CodeLlama-7B | 7 B | 16k (aprox.) | Llama 2 | Código | Hugging Face |
+| StarCoder2-3B | 3 B | 16k (aprox.) | BigCode OpenRAIL-M | Código | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para FELAY-1-TITAN más allá de la métrica de validación del 38,89%, por lo que la comparación se limita a parámetros, licencia y enfoque.
 
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento comparativo para FELAY-1-TITAN más allá 
 
 ## Enlaces
 
-- [HuggingFace: Amrica655/FELAY-1-TITAN](https://huggingface.co/Amrica655/FELAY-1-TITAN)
+- [Hugging Face: Amrica655/FELAY-1-TITAN](https://huggingface.co/Amrica655/FELAY-1-TITAN)
 - [Modelo base: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) (referenciado en la model card)

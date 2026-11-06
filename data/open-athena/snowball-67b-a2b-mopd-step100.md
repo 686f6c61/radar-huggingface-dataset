@@ -27,7 +27,7 @@ Su relevancia es principalmente de investigacion: publica un conjunto de evaluac
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con mezcla de expertos (MoE), etiquetado en HuggingFace como grug_moe y asociado al ecosistema Marin. El checkpoint hereda del estudiante B (Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92) el tokenizador, la plantilla de chat y probablemente la topologia de enrutado; el entrenamiento mantiene el sesgo del router congelado (frozen router bias), lo que impide que el enrutado se reajuste durante la destilacion.
+La arquitectura es un transformer con mezcla de expertos (MoE), etiquetado en Hugging Face como grug_moe y asociado al ecosistema Marin. El checkpoint hereda del estudiante B (Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92) el tokenizador, la plantilla de chat y probablemente la topologia de enrutado; el entrenamiento mantiene el sesgo del router congelado (frozen router bias), lo que impide que el enrutado se reajuste durante la destilacion.
 
 El procedimiento es una destilacion on-policy con multiples profesores (MOPD). Dos profesores enrutados actuan sobre el mismo conjunto de 3.206 prompts: un experto E puntua los prompts de CruxEval y un experto E2 los de MMLU-Pro, con una mezcla de rutas 1:1. La senal de destilacion es una KL inversa muestreada, con 4 rollouts por prompt. El entrenamiento usa Megatron, optimizador AdamW con learning rate 1e-6 y betas 0,9/0,999, durante 2 epocas, lo que equivale a 100 actualizaciones de 64 prompts. La receta completa esta implementada en MarinSkyRL (rama task/164, commit 76fc4be9, configuracion cloud/iris/configs/snowball_mopd2_cruxeval_mmlupro.yaml).
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-MOPD-Step100
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-MOPD-Step100
 - Modelo base (estudiante B): https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92
 - Revision concreta del modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
 - Informe del experimento (Marin, issue 9984): https://github.com/marin-community/marin/issues/9984

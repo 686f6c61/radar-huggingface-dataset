@@ -80,9 +80,9 @@ No se han publicado en la informacion disponible resultados del modelo base en b
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-OptiQ-4bit | 34,66 B totales / ~3 B activos | no disponible | Mixta 4/8 bits, 22,1 GB | Apache 2.0 | HuggingFace, MLX |
-| Qwen3.6-35B-A3B (uniforme 4-bit) | 34,66 B totales / ~3 B activos | no disponible | Uniforme 4 bits, 19,0 GB | Apache 2.0 | HuggingFace, MLX |
-| Qwen/Qwen3.6-35B-A3B (bf16) | 34,66 B totales / ~3 B activos | no disponible | bf16 | Apache 2.0 | HuggingFace |
+| Qwen3.6-35B-A3B-OptiQ-4bit | 34,66 B totales / ~3 B activos | no disponible | Mixta 4/8 bits, 22,1 GB | Apache 2.0 | Hugging Face, MLX |
+| Qwen3.6-35B-A3B (uniforme 4-bit) | 34,66 B totales / ~3 B activos | no disponible | Uniforme 4 bits, 19,0 GB | Apache 2.0 | Hugging Face, MLX |
+| Qwen/Qwen3.6-35B-A3B (bf16) | 34,66 B totales / ~3 B activos | no disponible | bf16 | Apache 2.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de comparaciones con modelos de otros fabricantes (Llama, Mistral, DeepSeek) ni de sus especificaciones de contexto, por lo que la comparativa se limita a las variantes del mismo modelo base.
 
@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de comparaciones con modelos de ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Proyecto mlx-optiq: https://mlx-optiq.com/
 - Guia de la familia Qwen3.6: https://mlx-optiq.com/docs/qwen3.6

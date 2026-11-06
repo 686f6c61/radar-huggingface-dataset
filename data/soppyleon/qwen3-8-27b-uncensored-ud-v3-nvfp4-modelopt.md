@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | no disponible | BF16 | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-Uncensored (JonathanColetti) | 27B | no disponible | BF16 | Apache 2.0 | HuggingFace |
-| Este checkpoint (ModelOpt) | 19,87B almacenados | no disponible | NVFP4+FP8+BF16 | Apache 2.0 | HuggingFace |
-| Versión llm-compressor UD V3 | 19,87B almacenados | no disponible | NVFP4+FP8+BF16 | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (original) | 27B | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-Uncensored (JonathanColetti) | 27B | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| Este checkpoint (ModelOpt) | 19,87B almacenados | no disponible | NVFP4+FP8+BF16 | Apache 2.0 | Hugging Face |
+| Versión llm-compressor UD V3 | 19,87B almacenados | no disponible | NVFP4+FP8+BF16 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no hay datos de rendimiento frente a otras familias. La principal diferencia entre las dos versiones cuantizadas es el cuantizador (ModelOpt vs llm-compressor) y la ausencia de GPTQ y cuantización de KV cache en esta build.
 
@@ -80,9 +80,9 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no hay da
 
 ## Enlaces
 
-- [HuggingFace: soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4-modelopt](https://huggingface.co/soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4-modelopt)
-- [HuggingFace: soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4 (versión llm-compressor)](https://huggingface.co/soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4)
-- [HuggingFace: JonathanColetti/Qwen3.8-27B-Uncensored (modelo padre)](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored)
+- [Hugging Face: soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4-modelopt](https://huggingface.co/soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4-modelopt)
+- [Hugging Face: soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4 (versión llm-compressor)](https://huggingface.co/soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4)
+- [Hugging Face: JonathanColetti/Qwen3.8-27B-Uncensored (modelo padre)](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored)
 - [GitHub: AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [FriendliAI: ficha del modelo](https://friendli.ai/models/soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4)
 - [NanoGPT: Qwen 3.8 27B Uncensored](https://nano-gpt.com/models/text/qwen/qwen3.8-27b-uncensored)

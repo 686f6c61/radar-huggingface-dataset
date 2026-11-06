@@ -65,5 +65,5 @@ No disponible. Este repositorio no es un modelo comparable a LLMs o sistemas mul
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MORITZLANGE/postdoc-cross-modal-fusion80-2024
+- Repositorio en Hugging Face: https://huggingface.co/MORITZLANGE/postdoc-cross-modal-fusion80-2024
 - Perfil de Google Scholar de Moritz Lange: https://scholar.google.com/citations?user=RP42Zj4AAAAJ&hl=fr

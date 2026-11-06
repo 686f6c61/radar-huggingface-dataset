@@ -82,9 +82,9 @@ No se dispone de datos de benchmarks de terceros en la informacion proporcionada
 
 | Modelo | Marco | Geometria de masking | Parametros del encoder | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_mae_r12cm_L2 (este) | MAE | r = 12 cm, L = 2 | 12,69 M | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 (recomendado en el paper) | no disponible | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 (recomendado en el paper) | no disponible | CC-BY-4.0 | HuggingFace |
+| eeg-fm-masking_mae_r12cm_L2 (este) | MAE | r = 12 cm, L = 2 | 12,69 M | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 (recomendado en el paper) | no disponible | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 (recomendado en el paper) | no disponible | CC-BY-4.0 | Hugging Face |
 
 Los autores recomiendan explicitamente la configuracion r = 9 cm, L = 2 (tanto en MAE como en JEPA) por encima de este checkpoint. No se dispone de informacion en la busqueda para comparar con otras familias de modelos fundacionales de EEG.
 
@@ -103,7 +103,7 @@ Los autores recomiendan explicitamente la configuracion r = 9 cm, L = 2 (tanto e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L2
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L2
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Codigo (GitHub): https://github.com/PierreGtch/eeg-fm-masking
 - Web del paper: https://pierregtch.github.io/eeg-fm-masking

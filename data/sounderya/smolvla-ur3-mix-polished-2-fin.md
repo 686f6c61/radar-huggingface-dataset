@@ -79,7 +79,7 @@ La comparativa directa mas relevante es con el modelo base `lerobot/smolvla_base
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sounderya/smolvla-ur3-mix-polished-2-fin
+- Repositorio Hugging Face: https://huggingface.co/Sounderya/smolvla-ur3-mix-polished-2-fin
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sounderya/mug_smolvla_dataset_v2nc
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA (arXiv): https://arxiv.org/abs/2506.01844

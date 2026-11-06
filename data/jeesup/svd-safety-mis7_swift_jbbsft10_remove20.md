@@ -104,7 +104,7 @@ No se dispone de comparaciones cuantitativas directas: las metricas de seguridad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft10_remove20
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft10_remove20
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Repositorio de referencia de Mistral-7B-Instruct-v0.2 (mismo enlace que el modelo base): https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 

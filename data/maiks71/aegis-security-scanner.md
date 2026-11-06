@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Aegis Security Scanner es una herramienta de reconocimiento y análisis de seguridad web escrita en Python, publicada en HuggingFace por el usuario Maiks71. No se trata de un modelo de inteligencia artificial, sino de un escáner de código abierto diseñado para entornos de pruebas autorizadas, laboratorios y auditorías de seguridad controladas. Su objetivo es descubrir la estructura de una aplicación web, identificar endpoints, parámetros, métodos HTTP y posibles indicadores de vulnerabilidades como IDOR, SSRF o redirecciones abiertas, generando informes estructurados en JSON o HTML.
+Aegis Security Scanner es una herramienta de reconocimiento y análisis de seguridad web escrita en Python, publicada en Hugging Face por el usuario Maiks71. No se trata de un modelo de inteligencia artificial, sino de un escáner de código abierto diseñado para entornos de pruebas autorizadas, laboratorios y auditorías de seguridad controladas. Su objetivo es descubrir la estructura de una aplicación web, identificar endpoints, parámetros, métodos HTTP y posibles indicadores de vulnerabilidades como IDOR, SSRF o redirecciones abiertas, generando informes estructurados en JSON o HTML.
 
-La herramienta se distribuye bajo licencia Apache-2.0 según la ficha de HuggingFace (aunque el README indica MIT) y está pensada para desarrolladores e investigadores de seguridad que necesitan una solución ligera y de código abierto para el análisis preliminar de aplicaciones propias o con permiso explícito. Su relevancia radica en que ofrece un flujo de trabajo completo de reconocimiento y análisis de candidatos a vulnerabilidad sin depender de servicios externos ni de modelos de IA, lo que la hace útil en entornos aislados o con requisitos de privacidad.
+La herramienta se distribuye bajo licencia Apache-2.0 según la ficha de Hugging Face (aunque el README indica MIT) y está pensada para desarrolladores e investigadores de seguridad que necesitan una solución ligera y de código abierto para el análisis preliminar de aplicaciones propias o con permiso explícito. Su relevancia radica en que ofrece un flujo de trabajo completo de reconocimiento y análisis de candidatos a vulnerabilidad sin depender de servicios externos ni de modelos de IA, lo que la hace útil en entornos aislados o con requisitos de privacidad.
 
 Aunque el repositorio no proporciona detalles sobre arquitectura de modelo, parámetros o entrenamiento (por no ser un modelo), la herramienta implementa un pipeline de análisis por fases: reconocimiento, rastreo, análisis de parámetros, análisis de seguridad y generación de informes. Está pensada para ejecutarse en Python 3.9 o superior y requiere únicamente conexión a internet para los objetivos autorizados.
 
@@ -18,7 +18,7 @@ Aunque el repositorio no proporciona detalles sobre arquitectura de modelo, par�
 | Longitud de contexto | No aplicable |
 | Tipos de cuantizacion | No aplicable |
 | Idiomas soportados | No disponible (interfaz en ingles, sin especificacion multilingue) |
-| Licencia | Apache-2.0 (segun HuggingFace) / MIT (segun README) |
+| Licencia | Apache-2.0 (segun Hugging Face) / MIT (segun README) |
 | Formato de pesos | No aplicable (codigo fuente Python) |
 
 ## Arquitectura y entrenamiento
@@ -70,13 +70,13 @@ No disponible. Aegis Security Scanner no es un modelo de IA, por lo que no es co
 - Alcance limitado: no incluye autenticacion, pruebas de explotacion ni analisis profundo de logica de negocio.
 - Riesgo de falsos positivos: parametros que parecen aceptar URLs o IDs pueden no ser vulnerables realmente.
 - Uso exclusivo con autorizacion: escanear sistemas sin permiso puede ser ilegal y contrario a la etica profesional.
-- Discrepancia de licencia: HuggingFace indica Apache-2.0, mientras que el README menciona MIT; conviene verificar el archivo LICENSE del repositorio.
+- Discrepancia de licencia: Hugging Face indica Apache-2.0, mientras que el README menciona MIT; conviene verificar el archivo LICENSE del repositorio.
 - Sin soporte multilingue documentado: la interfaz y los informes estan en ingles.
 - No se proporcionan garantias de rendimiento ni de cobertura completa de vulnerabilidades.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Maiks71/aegis-security-scanner
+- Hugging Face: https://huggingface.co/Maiks71/aegis-security-scanner
 - Repositorio de GitHub (placeholder en README): https://github.com/YOUR_USERNAME/aegis-security-scanner.git (no verificado)
 - Resultados de busqueda web (otros proyectos con el mismo nombre, no relacionados):
   - Aegis — Pre-Deployment Security Scanner for AI Systems: https://github.com/OptimistOtaku/aegis-scanner

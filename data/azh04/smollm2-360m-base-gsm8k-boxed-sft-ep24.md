@@ -63,7 +63,7 @@ Estos valores muestran una tendencia creciente con el número de épocas, pero n
 - **VRAM estimada para inferencia**: al ser un modelo de 361M parámetros en bf16, ocupa aproximadamente 723 MB de pesos. Con cuantización a int8 o int4, el uso de VRAM puede reducirse a ~180-360 MB.
 - **GPU recomendadas**: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente (p. ej., NVIDIA GTX 1650, RTX 2060, RTX 3060). Para entrenamiento completo (SFT o RL), se requiere una GPU con al menos 8 GB (p. ej., RTX 3070, RTX 4080) si se usa bf16 con batch pequeño.
 - **Compatibilidad con consumer GPU**: sí, cabe holgadamente en GPUs de gama media e incluso en CPU con cuantización.
-- **Opciones de despliegue**: al ser un modelo estándar de HuggingFace, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama o TGI. Para inferencia rápida, vLLM o TGI son adecuados.
+- **Opciones de despliegue**: al ser un modelo estándar de Hugging Face, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama o TGI. Para inferencia rápida, vLLM o TGI son adecuados.
 - **Latencia y throughput estimados**: en una GPU consumer moderna (RTX 3090), la generación de 256 tokens con batch 1 debería completarse en menos de 1 segundo. Con batch 32, el throughput puede superar los 1000 tokens/s.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo con otros fine-tunes de GSM8K 
 
 ## Enlaces
 
-- [HuggingFace - AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep24](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep24)
-- [HuggingFace - Checkpoint de 12 épocas (misma familia)](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep12)
-- [HuggingFace - Variante instruct del mismo fine-tuning](https://huggingface.co/AZH04/SmolLM2-360M-instruct-gsm8k-boxed-sft)
+- [Hugging Face - AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep24](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep24)
+- [Hugging Face - Checkpoint de 12 épocas (misma familia)](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep12)
+- [Hugging Face - Variante instruct del mismo fine-tuning](https://huggingface.co/AZH04/SmolLM2-360M-instruct-gsm8k-boxed-sft)
 - [Paper de SmolLM2 (arXiv 2502.02737)](https://arxiv.org/html/2502.02737v1)

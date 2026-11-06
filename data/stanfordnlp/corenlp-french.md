@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stanfordnlp/corenlp-french` es el paquete de modelos de CoreNLP para frances publicado por el Stanford NLP Group en HuggingFace. No se trata de un modelo generativo ni de un transformer de lenguaje: es el conjunto de artefactos que permite ejecutar el pipeline de anotacion linguistica de CoreNLP sobre texto en frances. CoreNLP es un toolkit escrito en Java que produce anotaciones como segmentacion de tokens y frases, etiquetado morfosintactico (POS), entidades nombradas, valores numericos y temporales, analisis de dependencias y de constituyentes, correferencia, sentimiento, atribucion de citas y relaciones.
+`stanfordnlp/corenlp-french` es el paquete de modelos de CoreNLP para frances publicado por el Stanford NLP Group en Hugging Face. No se trata de un modelo generativo ni de un transformer de lenguaje: es el conjunto de artefactos que permite ejecutar el pipeline de anotacion linguistica de CoreNLP sobre texto en frances. CoreNLP es un toolkit escrito en Java que produce anotaciones como segmentacion de tokens y frases, etiquetado morfosintactico (POS), entidades nombradas, valores numericos y temporales, analisis de dependencias y de constituyentes, correferencia, sentimiento, atribucion de citas y relaciones.
 
 El repositorio ocupa 0,6 GB, esta etiquetado exclusivamente con el idioma `fr` y se distribuye bajo licencia GPL-2.0. La model card fue generada automaticamente mediante el script `hugging_corenlp.py` del repositorio `stanfordnlp/huggingface-models`, por lo que no incluye informacion sobre arquitectura, datos de entrenamiento ni evaluacion.
 
@@ -98,7 +98,7 @@ La busqueda web proporcionada no devolvio modelos comparables: los resultados fu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordnlp/corenlp-french
+- Modelo en Hugging Face: https://huggingface.co/stanfordnlp/corenlp-french
 - Web oficial de CoreNLP: https://stanfordnlp.github.io/CoreNLP
 - Repositorio GitHub de CoreNLP: https://github.com/stanfordnlp/CoreNLP
 - Repositorio `stanfordnlp/huggingface-models` (referenciado en la model card como origen del script `hugging_corenlp.py`): no disponible como enlace directo en la informacion proporcionada

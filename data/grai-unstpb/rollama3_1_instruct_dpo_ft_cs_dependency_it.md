@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_dependency_it (adaptador) | 8 000 millones (base) + LoRA | no disponible | no disponible (base en rumano) | no disponible | HuggingFace, 0 descargas |
-| OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO (modelo base) | 8 000 millones | 128 000 tokens (heredado de Llama 3.1) | Rumano e ingles | no disponible en la informacion recogida | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8 000 millones | 128 000 tokens | Multilingue (8 idiomas oficiales) | Llama 3.1 Community License | HuggingFace |
+| GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_dependency_it (adaptador) | 8 000 millones (base) + LoRA | no disponible | no disponible (base en rumano) | no disponible | Hugging Face, 0 descargas |
+| OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO (modelo base) | 8 000 millones | 128 000 tokens (heredado de Llama 3.1) | Rumano e ingles | no disponible en la informacion recogida | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8 000 millones | 128 000 tokens | Multilingue (8 idiomas oficiales) | Llama 3.1 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_dependency_it
+- Hugging Face: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_dependency_it
 - Modelo base: https://huggingface.co/OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO
 - Paper de referencia citado en los tags (calculadora de impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Otros enlaces relevantes (papers, blogs, repos, demos): no disponibles.

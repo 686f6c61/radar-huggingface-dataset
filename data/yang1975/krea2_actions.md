@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2_actions es un repositorio alojado en HuggingFace por el usuario yang1975 que, según su propia model card, consiste en una copia de seguridad de adaptadores LoRA publicados originalmente en Civitai. No es un modelo fundacional ni un modelo de lenguaje entrenado por el autor: el repositorio funciona como espejo de artefactos de terceros, y el propio autor declara que todo el crédito corresponde a los creadores originales de dichos LoRA.
+Krea2_actions es un repositorio alojado en Hugging Face por el usuario yang1975 que, según su propia model card, consiste en una copia de seguridad de adaptadores LoRA publicados originalmente en Civitai. No es un modelo fundacional ni un modelo de lenguaje entrenado por el autor: el repositorio funciona como espejo de artefactos de terceros, y el propio autor declara que todo el crédito corresponde a los creadores originales de dichos LoRA.
 
 El contenido declarado abarca adaptadores orientados a la generación de imágenes: ropa, posiciones, sliders, objetos, formas corporales, detalles como el pelo, acciones de personaje, expresiones faciales y LoRA que desbloquean contenido NSFW. El repositorio ocupa 217,8 GB y está etiquetado con `safetensors` y `region:us`, lo que apunta a pesos en formato safetensors, pero no se especifica en ningún momento el modelo base de difusión con el que son compatibles.
 
@@ -71,10 +71,10 @@ No disponible. La información proporcionada no identifica alternativas concreta
 
 | Elemento | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Krea2_actions | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| Krea2_actions | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
-Como referencia cualitativa, el elemento comparable directo serían otras colecciones-espejo de LoRA alojadas en HuggingFace o los propios repositorios de los creadores en Civitai, pero la información disponible no incluye ninguno de ellos de forma nominal ni con datos verificables.
+Como referencia cualitativa, el elemento comparable directo serían otras colecciones-espejo de LoRA alojadas en Hugging Face o los propios repositorios de los creadores en Civitai, pero la información disponible no incluye ninguno de ellos de forma nominal ni con datos verificables.
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Como referencia cualitativa, el elemento comparable directo serían otras colecc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yang1975/Krea2_actions
+- Repositorio en Hugging Face: https://huggingface.co/yang1975/Krea2_actions
 - Model card del autor: incluida en la página anterior (sin enlaces salientes hacia los creadores originales)
 - Enlaces a los LoRA originales en Civitai: no disponibles (no se incluyen URL concretas en la información proporcionada)
 - Papers, blogs, repositorios o demos asociados: no disponibles

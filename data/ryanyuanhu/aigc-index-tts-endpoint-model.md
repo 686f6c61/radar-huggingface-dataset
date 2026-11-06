@@ -73,9 +73,9 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanYuanHu/aigc-index-tts-endpoint-model
+- Modelo en Hugging Face: https://huggingface.co/RyanYuanHu/aigc-index-tts-endpoint-model
 - Repositorio oficial en GitHub: https://github.com/index-tts/index-tts
 - Paper técnico (arXiv): https://arxiv.org/abs/2601.03888
-- Modelo IndexTTS-2.5 en HuggingFace (oficial): https://huggingface.co/IndexTeam/IndexTTS-2.5
+- Modelo IndexTTS-2.5 en Hugging Face (oficial): https://huggingface.co/IndexTeam/IndexTTS-2.5
 - Modelo Index-TTS (versión anterior): https://huggingface.co/IndexTeam/Index-TTS
 - Página de TTS Models sobre IndexTTS: https://ttsmodels.com/models/indextts/

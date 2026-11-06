@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PP-OCR language packs (este repo) | Reconocedor OCR PP-OCRv5 mobile | Cirílico (ruso, ucraniano) | ONNX + dict | Apache 2.0 | HuggingFace, 0 descargas |
+| PP-OCR language packs (este repo) | Reconocedor OCR PP-OCRv5 mobile | Cirílico (ruso, ucraniano) | ONNX + dict | Apache 2.0 | Hugging Face, 0 descargas |
 | PaddleOCR (upstream) | Suite OCR completa (detección, clasificación, reconocimiento) | Múltiples | Paddle inference, exportable a ONNX | Apache 2.0 | GitHub, ampliamente adoptado |
 | RapidOCR (upstream de la conversión) | Conversiones ONNX de PP-OCR | Múltiples | ONNX | Apache 2.0 | ModelScope, revisión v3.9.2 |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hon-lu/ppocr-language-packs
+- Repositorio en Hugging Face: https://huggingface.co/hon-lu/ppocr-language-packs
 - Aplicación OverTranslate: https://github.com/Hon-Lu/OverTranslate
 - PaddleOCR (upstream de los modelos): https://github.com/PaddlePaddle/PaddleOCR
 - RapidOCR en ModelScope (origen de las conversiones ONNX): https://www.modelscope.cn/models/RapidAI/RapidOCR

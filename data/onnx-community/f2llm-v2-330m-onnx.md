@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo ONNX: https://huggingface.co/onnx-community/F2LLM-v2-330M-ONNX
+- Repositorio Hugging Face del modelo ONNX: https://huggingface.co/onnx-community/F2LLM-v2-330M-ONNX
 - Modelo base original: https://huggingface.co/codefuse-ai/F2LLM-v2-330M
 - Paper asociado (ID arxiv:2603.19223): no disponible enlace directo, pero se puede buscar en arxiv por el ID.
 - Organización onnx-community: https://huggingface.co/onnx-community

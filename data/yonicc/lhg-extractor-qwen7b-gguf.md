@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yonicc/lhg-extractor-qwen7b-gguf
+- Modelo en Hugging Face: https://huggingface.co/yonicc/lhg-extractor-qwen7b-gguf
 - Repositorio del proyecto Lashon Hara Guard: https://github.com/yonicc/lashon-hara-guard
 - Documentación de entrenamiento (docs/39): https://github.com/yonicc/lashon-hara-guard/blob/main/docs/39
 - Documentación de GGUF/CPU (docs/40): https://github.com/yonicc/lashon-hara-guard/blob/main/docs/40

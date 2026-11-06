@@ -16,7 +16,7 @@ Su relevancia no reside en la precisión, sino en su papel metodológico: en met
 | Longitud de contexto | No aplica. Horizonte de pronostico: hasta +168 h en pasos de 6 h (29 plazos, incluido el plazo 0) |
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No aplica |
-| Licencia | MIT (segun la model card del autor; el metadato de HuggingFace figura como no disponible) |
+| Licencia | MIT (segun la model card del autor; el metadato de Hugging Face figura como no disponible) |
 | Formato de pesos | No aplica. Incluye `predict.py` (funcion `run(inputs, declaration, init_time)`) y `earthboi.yaml` (declaracion de variables, plazos y rejilla) |
 | Variable de salida | `temperature_2m`, en Kelvin |
 | Rejilla de salida | 1 grado global, 181 x 360 puntos (polo a polo inclusive, longitud 0-360) |
@@ -78,9 +78,9 @@ La diferencia funcional clave es que la persistencia no aprende patrones y, por 
 - Resolucion gruesa: 1 grado (181 x 360) es inadecuado para aplicaciones locales o de escala regional.
 - Dependencia del analisis de entrada: la calidad del pronostico hereda por completo la del analisis a 0,25 grados y su submuestreo.
 - Unidades fijas: la salida se entrega en Kelvin, sin conversion a Celsius u otras unidades.
-- Licencia MIT declarada en la model card, lo que permitiria uso comercial, pero el metadato de HuggingFace figura como no disponible; conviene confirmar la licencia antes de un despliegue en produccion.
+- Licencia MIT declarada en la model card, lo que permitiria uso comercial, pero el metadato de Hugging Face figura como no disponible; conviene confirmar la licencia antes de un despliegue en produccion.
 - Sin senales de adopcion: 0 descargas y 0 likes en el momento de la consulta, y sin benchmarks publicados que respalden su comportamiento mas alla de la descripcion cualitativa del autor.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/dClimate/persistence-1deg
+- Hugging Face: https://huggingface.co/dClimate/persistence-1deg
 - La busqueda web realizada no ha devuelto enlaces relevantes sobre el modelo (los resultados obtenidos corresponden a un sitio de hockey sobre hielo y no guardan relacion). No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

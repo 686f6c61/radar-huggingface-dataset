@@ -106,7 +106,7 @@ El propio articulo recomienda r = 9 cm y L = 2, tanto en JEPA como en MAE, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r6cm_L2
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r6cm_L2
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Pagina del articulo: https://pierregtch.github.io/eeg-fm-masking
 - Codigo en GitHub (licencia MIT): https://github.com/PierreGtch/eeg-fm-masking

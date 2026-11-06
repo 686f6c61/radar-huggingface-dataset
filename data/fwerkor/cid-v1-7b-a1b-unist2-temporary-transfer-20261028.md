@@ -95,6 +95,6 @@ No se dispone de datos de rendimiento de ninguno de los modelos citados dentro d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fwerkor/CID-v1-7B-A1B-unist2-temporary-transfer-20261028
+- Repositorio en Hugging Face: https://huggingface.co/fwerkor/CID-v1-7B-A1B-unist2-temporary-transfer-20261028
 - Dataset declarado: https://huggingface.co/datasets/fwerkor/CID-Dataset
 - Papers, blogs, repositorios de código o demos: no disponible en la información proporcionada.

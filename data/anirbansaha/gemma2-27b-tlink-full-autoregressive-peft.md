@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnirbanSaha/gemma2-27b-tlink-full-autoregressive-peft | Adaptador LoRA sobre 27B | 8192 (base); 4096 en entrenamiento | Clasificacion TLINK (4 clases) | No disponible | Adaptador PEFT en HuggingFace, 0 descargas |
-| AnirbanSaha/gemma2-2b-tlink | Adaptador LoRA sobre 2B | No disponible | Clasificacion TLINK | No disponible | Adaptador PEFT en HuggingFace |
-| google/gemma-2-27b-it | 27B | 8192 | Generacion de texto e instrucciones de proposito general | Terminos de uso de Gemma | Pesos abiertos en HuggingFace |
+| AnirbanSaha/gemma2-27b-tlink-full-autoregressive-peft | Adaptador LoRA sobre 27B | 8192 (base); 4096 en entrenamiento | Clasificacion TLINK (4 clases) | No disponible | Adaptador PEFT en Hugging Face, 0 descargas |
+| AnirbanSaha/gemma2-2b-tlink | Adaptador LoRA sobre 2B | No disponible | Clasificacion TLINK | No disponible | Adaptador PEFT en Hugging Face |
+| google/gemma-2-27b-it | 27B | 8192 | Generacion de texto e instrucciones de proposito general | Terminos de uso de Gemma | Pesos abiertos en Hugging Face |
 
 No se dispone de datos de rendimiento para ninguno de los tres, por lo que la comparacion se limita a parametros, contexto, tarea y licencia.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento para ninguno de los tres, por lo que la co
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/AnirbanSaha/gemma2-27b-tlink-full-autoregressive-peft
+- Adaptador en Hugging Face: https://huggingface.co/AnirbanSaha/gemma2-27b-tlink-full-autoregressive-peft
 - Modelo base `google/gemma-2-27b-it`: https://huggingface.co/google/gemma-2-27b-it
 - Dataset de entrenamiento `fahmidiqbal/tlink-classification`: https://huggingface.co/datasets/fahmidiqbal/tlink-classification
 - Variante de menor tamano `AnirbanSaha/gemma2-2b-tlink`: https://huggingface.co/AnirbanSaha/gemma2-2b-tlink

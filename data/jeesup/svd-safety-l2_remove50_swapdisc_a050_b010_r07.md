@@ -98,7 +98,7 @@ Las especificaciones de Mistral-7B-Instruct-v0.2 y Zephyr-7B-beta proceden de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - `LICENSE.txt` y `USE_POLICY.md`: incluidos en el repositorio del modelo (Llama 2 Community License)
 - Metodologías y conjuntos de evaluación mencionados en la model card sin enlace proporcionado: SVD-LLM (compresión), AdvBench, HarmBench (juez), StrongREJECT, WildGuard

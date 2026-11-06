@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta un artefacto de investigacion, no un modelo desp
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura de modelo. El repositorio contiene dos archivos: `review.md` (artefacto principal) y `README.md`. El tag `transformer` aparece en los metadatos de HuggingFace, pero la model card no especifica capas, dimensiones, mecanismo de atencion ni variante arquitectonica alguna.
+No se describe ninguna arquitectura de modelo. El repositorio contiene dos archivos: `review.md` (artefacto principal) y `README.md`. El tag `transformer` aparece en los metadatos de Hugging Face, pero la model card no especifica capas, dimensiones, mecanismo de atencion ni variante arquitectonica alguna.
 
 No hay datos de entrenamiento: ni numero de tokens, ni composicion del dataset, ni proceso de alineacion (RLHF, DPO u otros). El autor indica de forma explicita que el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado". Las referencias y los datasets propuestos (VQAv2, GQA, NLVR2) se presentan como punto de partida para verificar, no como evidencia de que el estudio se haya ejecutado. No se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, SSM, etc.).
 
@@ -82,7 +82,7 @@ No disponible. El repositorio no es un modelo y no existe una categoria de compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AliceGomes/multimodal-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/AliceGomes/multimodal-reasoning
 - Artefacto principal citado en la model card: `review.md` (dentro del repositorio)
 - Documentacion: `README.md` (dentro del repositorio)
 - Benchmarks mencionados como contexto de evaluacion propuesto (sin resultados asociados): VQAv2, GQA, NLVR2

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Formato | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| D-MaN77/Qwen-Image-2.1-Uncensored-GGUF | 7.115.124.736 (transformer) | GGUF y safetensors | BF16, FP8, INT8 ConvRot, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | qwen-research (other) | HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Referenciado como base_model en HuggingFace |
+| D-MaN77/Qwen-Image-2.1-Uncensored-GGUF | 7.115.124.736 (transformer) | GGUF y safetensors | BF16, FP8, INT8 ConvRot, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | qwen-research (other) | Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Referenciado como base_model en Hugging Face |
 | Variantes base del mismo repositorio (qwen-image-2.1-Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0) | Las mismas | GGUF | Q8_0 7,59 GB; Q6_K 5,88 GB; Q5_K_M 5,22 GB; Q4_K_M 4,60 GB; Q4_0 4,05 GB | qwen-research (other) | Enlazadas dentro del propio repositorio |
 
 No se dispone de informacion sobre otros modelos de generacion de imagen de tamano comparable con los que establecer una comparacion fiable en terminos de contexto, rendimiento o licencia. Cualquier tabla comparativa adicional seria una extrapolacion no sustentada.

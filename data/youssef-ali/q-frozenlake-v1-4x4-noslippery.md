@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno FrozenLake-v1 en su configuracion 4x4 sin superficie resbaladiza (no_slippery). Lo publica el usuario Youssef-Ali en HuggingFace Hub dentro de la categoria de modelos de reinforcement-learning. No se trata de una red neuronal ni de un modelo de lenguaje: la "politica" aprendida se almacena como una tabla de valores Q serializada en un fichero pickle (q-learning.pkl) que se carga mediante la utilidad load_from_hub.
+Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno FrozenLake-v1 en su configuracion 4x4 sin superficie resbaladiza (no_slippery). Lo publica el usuario Youssef-Ali en Hugging Face Hub dentro de la categoria de modelos de reinforcement-learning. No se trata de una red neuronal ni de un modelo de lenguaje: la "politica" aprendida se almacena como una tabla de valores Q serializada en un fichero pickle (q-learning.pkl) que se carga mediante la utilidad load_from_hub.
 
 El problema que resuelve es un clasico de control discreto: partir de una casilla inicial (S) en una cuadricula de 4x4 y alcanzar la casilla meta (G) sin caer en los agujeros (H), donde cada casilla congelada (F) es transitable. En la variante no_slippery el entorno es determinista, de modo que cada accion conduce siempre al estado esperado y la recompensa maxima alcanzable por episodio es 1.0. El autor declara un mean_reward de 1.00 +/- 0.00, lo que indica convergencia a la politica optima en ese escenario determinista.
 
@@ -87,6 +87,6 @@ No disponible. La informacion proporcionada no incluye resultados de otros agent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Youssef-Ali/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/Youssef-Ali/q-FrozenLake-v1-4x4-noSlippery
 
 Nota: la busqueda web realizada no ha devuelto ningun enlace relacionado con el modelo ni con aprendizaje por refuerzo. Los unicos resultados obtenidos hacen referencia al nombre propio "Youssef" (articulos de onomastica y una pagina de desambiguacion), por lo que se omiten por no ser material relevante para esta ficha. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados al modelo en la informacion proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed3407` es un fine-tune de un modelo base de 125 millones de parámetros (124.770.816), desarrollado por fpadovani. Según las etiquetas de HuggingFace, se basa en la arquitectura GPT-2 y está orientado a generación de texto. El nombre sugiere que forma parte de una serie de experimentos con modelos pequeños (100mb) entrenados sobre datos posiblemente relacionados con lenguas latinas o swahili latinizado, aunque no se especifica el idioma en la documentación.
+El modelo `fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed3407` es un fine-tune de un modelo base de 125 millones de parámetros (124.770.816), desarrollado por fpadovani. Según las etiquetas de Hugging Face, se basa en la arquitectura GPT-2 y está orientado a generación de texto. El nombre sugiere que forma parte de una serie de experimentos con modelos pequeños (100mb) entrenados sobre datos posiblemente relacionados con lenguas latinas o swahili latinizado, aunque no se especifica el idioma en la documentación.
 
-El modelo fue entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de HuggingFace, partiendo del modelo base `fpadovani/swa-latn-100mb-ppt-Dp-100mb_seed3407`. Se trata de un checkpoint intermedio (ckpt500) de un proceso de entrenamiento más amplio, probablemente diseñado para estudiar el efecto del fine-tuning sobre modelos preentrenados de pequeño tamaño. No se proporcionan detalles sobre el dataset, los hiperparámetros ni el rendimiento, por lo que su utilidad práctica es limitada fuera del ámbito de la investigación experimental.
+El modelo fue entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de Hugging Face, partiendo del modelo base `fpadovani/swa-latn-100mb-ppt-Dp-100mb_seed3407`. Se trata de un checkpoint intermedio (ckpt500) de un proceso de entrenamiento más amplio, probablemente diseñado para estudiar el efecto del fine-tuning sobre modelos preentrenados de pequeño tamaño. No se proporcionan detalles sobre el dataset, los hiperparámetros ni el rendimiento, por lo que su utilidad práctica es limitada fuera del ámbito de la investigación experimental.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - Al ser un modelo de 125M parámetros, es ejecutable en GPUs de consumo con poca VRAM. En FP16, el peso del modelo ocupa aproximadamente 250 MB, y en FP32 unos 500 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, etc.) puede ejecutar inferencia básica.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, así como con `text-generation-inference` (según las etiquetas `text-generation-inference` y `endpoints_compatible`).
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, así como con `text-generation-inference` (según las etiquetas `text-generation-inference` y `endpoints_compatible`).
 - No se dispone de datos de latencia o throughput medidos.
 
 ## Comparativa con modelos similares
@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed3407)
+- [Página del modelo en Hugging Face](https://huggingface.co/fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed3407)
 - [Modelo base: fpadovani/swa-latn-100mb-ppt-Dp-100mb_seed3407](https://huggingface.co/fpadovani/swa-latn-100mb-ppt-Dp-100mb_seed3407)
 - [Variante con semilla 10](https://huggingface.co/fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed10)
 - [Variante con Dp-10mb](https://huggingface.co/fpadovani/swa-latn-100mb-after-ppt-Dp-10mb-ckpt500_seed455)

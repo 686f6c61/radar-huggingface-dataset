@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ilya12333/model123 es un repositorio de modelo publicado en HuggingFace por el usuario Ilya12333. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y su model card se limita al bloque de metadatos de licencia (`license: apache-2.0`) sin ningun contenido adicional: no hay descripcion, no hay ejemplos de uso, no hay resultados y no hay referencias a documentacion externa. Los unicos metadatos disponibles son las etiquetas `license:apache-2.0` y `region:us`.
+Ilya12333/model123 es un repositorio de modelo publicado en Hugging Face por el usuario Ilya12333. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y su model card se limita al bloque de metadatos de licencia (`license: apache-2.0`) sin ningun contenido adicional: no hay descripcion, no hay ejemplos de uso, no hay resultados y no hay referencias a documentacion externa. Los unicos metadatos disponibles son las etiquetas `license:apache-2.0` y `region:us`.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados, dataset de entrenamiento ni formato de pesos. Tampoco se ha identificado ningun paper, blog tecnico, repositorio de codigo o demo asociado al identificador `Ilya12333/model123`. Los resultados de busqueda web recuperados (una plataforma comercial llamada Model123, un perfil de GitHub, una LoRA de Stable Diffusion y un generador de mallas 3D) no guardan relacion verificable con este repositorio.
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ilya12333/model123 | no disponible | no disponible | apache-2.0 | repositorio en HuggingFace con 0 descargas | sin documentacion tecnica |
+| Ilya12333/model123 | no disponible | no disponible | apache-2.0 | repositorio en Hugging Face con 0 descargas | sin documentacion tecnica |
 | Alternativas comparables | no disponibles | no disponibles | no disponibles | no disponibles | no se puede establecer comparacion sin conocer la categoria del modelo |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ilya12333/model123
+- Repositorio en Hugging Face: https://huggingface.co/Ilya12333/model123
 - Model card: https://huggingface.co/Ilya12333/model123/blob/main/README.md (contenido limitado al bloque de licencia)
 - Paper: no disponible
 - Blog tecnico o anuncio: no disponible

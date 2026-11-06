@@ -2,7 +2,7 @@
 
 ## Resumen
 
-U2Net-CoreML es una conversion de formato del modelo U-2-Net (U²-Net) al formato Core ML de Apple, publicada por el usuario Jia-Liu en HuggingFace. El modelo original es un detector de objetos salientes (salient object detection) presentado por Xuebin Qin, Zichen Zhang, Chenyang Huang, Masood Dehghan, Osmar R. Zaïane y Martin Jagersand en el articulo "U²-Net: Going Deeper with Nested U-Structure for Salient Object Detection" (Pattern Recognition, vol. 106, 2020). Su funcion es generar mapas de saliencia que aíslan el objeto o sujeto principal de una imagen, una tarea previa habitual en flujos de recorte, segmentacion y edicion fotografica.
+U2Net-CoreML es una conversion de formato del modelo U-2-Net (U²-Net) al formato Core ML de Apple, publicada por el usuario Jia-Liu en Hugging Face. El modelo original es un detector de objetos salientes (salient object detection) presentado por Xuebin Qin, Zichen Zhang, Chenyang Huang, Masood Dehghan, Osmar R. Zaïane y Martin Jagersand en el articulo "U²-Net: Going Deeper with Nested U-Structure for Salient Object Detection" (Pattern Recognition, vol. 106, 2020). Su funcion es generar mapas de saliencia que aíslan el objeto o sujeto principal de una imagen, una tarea previa habitual en flujos de recorte, segmentacion y edicion fotografica.
 
 Esta ficha corresponde exclusivamente al artefacto Core ML, no al modelo de investigacion original. La conversion no modifica los pesos: se parte del checkpoint PyTorch y se aplica `torch.jit.trace` seguido de `coremltools.convert()`, con una entrada fija de `(1, 3, 320, 320)` en RGB y precision FP32. El resultado es un paquete `.mlpackage` pensado para ejecutarse en macOS aprovechando CPU y GPU mediante los compute units de Core ML.
 
@@ -34,7 +34,7 @@ Sobre el entrenamiento no hay informacion en el repositorio analizado: no se doc
 ## Capacidades
 
 - Deteccion de objetos salientes: genera mapas de saliencia que destacan el sujeto principal frente al fondo.
-- Segmentacion de imagen dentro del pipeline `image-segmentation` de HuggingFace.
+- Segmentacion de imagen dentro del pipeline `image-segmentation` de Hugging Face.
 - Produccion de 7 mapas de saliencia multi-escala de 1 canal y 320×320 px, utiles para refinar o fusionar mascaras.
 - Inferencia acelerada en macOS mediante Core ML con compute units CPU + GPU.
 - Integracion nativa con el framework Vision de Apple y con aplicaciones Swift.
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Arquitectura | Entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| U2Net-CoreML (este) | U²-Net, estructura U anidada | 320×320 RGB | `.mlpackage` (Core ML) | Apache 2.0 | HuggingFace, 0 descargas |
+| U2Net-CoreML (este) | U²-Net, estructura U anidada | 320×320 RGB | `.mlpackage` (Core ML) | Apache 2.0 | Hugging Face, 0 descargas |
 | U-2-Net original | U²-Net, estructura U anidada | 320×320 RGB | `.pth` (PyTorch) | Apache 2.0 | GitHub (repositorio de los autores) |
 | Otros modelos de deteccion de objetos salientes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ La unica comparacion directa posible con la informacion disponible es frente al 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jia-Liu/U2Net-CoreML
+- Repositorio en Hugging Face: https://huggingface.co/Jia-Liu/U2Net-CoreML
 - Repositorio original de U-2-Net (autores): https://github.com/xuebinqin/U-2-Net
 - Paper original: https://arxiv.org/abs/2005.09007
 - Publicacion en Pattern Recognition (referencia de la cita del modelo): Qin et al., Pattern Recognition, vol. 106, 107404, 2020

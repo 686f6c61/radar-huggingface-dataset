@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JackyHoCL/qwen3-asr-yue-lora` es un adaptador LoRA publicado en HuggingFace por el usuario JackyHoCL, entrenado sobre el modelo base `Qwen/Qwen3-ASR-1.7B` de Alibaba Qwen. Se trata, por tanto, de un ajuste fino ligero (no de un modelo completo) orientado a una tarea muy concreta: el reconocimiento automatico del habla (ASR) en cantonés, con etiqueta de idioma `yue-HK`. El repositorio esta marcado con la etiqueta `preview`, lo que sugiere que se trata de una version preliminar o de demostracion.
+`JackyHoCL/qwen3-asr-yue-lora` es un adaptador LoRA publicado en Hugging Face por el usuario JackyHoCL, entrenado sobre el modelo base `Qwen/Qwen3-ASR-1.7B` de Alibaba Qwen. Se trata, por tanto, de un ajuste fino ligero (no de un modelo completo) orientado a una tarea muy concreta: el reconocimiento automatico del habla (ASR) en cantonés, con etiqueta de idioma `yue-HK`. El repositorio esta marcado con la etiqueta `preview`, lo que sugiere que se trata de una version preliminar o de demostracion.
 
 El problema que aborda es la escasez de modelos ASR con buen rendimiento especificamente en cantonés, un idioma con poca representacion en los corpus de entrenamiento habituales dominados por mandarin e ingles. Al construir un adaptador LoRA sobre un modelo ASR grande ya preentrenado, el autor consigue especializar el reconocimiento hacia el cantonés con un coste de entrenamiento y almacenamiento muy inferior al de un ajuste fino completo, ya que solo se actualiza una fraccion pequena de los pesos.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento en cantonés | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JackyHoCL/qwen3-asr-yue-lora` | ~1,7 B (base) + LoRA | no disponible | no disponible | apache-2.0 (segun etiquetas) | HuggingFace, 0 descargas |
-| `Qwen/Qwen3-ASR-1.7B` (modelo base) | ~1,7 B | no disponible | no disponible | no disponible | HuggingFace (oficial) |
+| `JackyHoCL/qwen3-asr-yue-lora` | ~1,7 B (base) + LoRA | no disponible | no disponible | apache-2.0 (segun etiquetas) | Hugging Face, 0 descargas |
+| `Qwen/Qwen3-ASR-1.7B` (modelo base) | ~1,7 B | no disponible | no disponible | no disponible | Hugging Face (oficial) |
 | Alternativas ASR especificas de cantonés | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con otros modelos ASR de cantonés (por ejemplo, variantes de Whisper ajustadas o modelos de la familia Wav2Vec2). No se han facilitado resultados que permitan contrastar rendimiento.
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/JackyHoCL/qwen3-asr-yue-lora
+- Hugging Face (adaptador LoRA): https://huggingface.co/JackyHoCL/qwen3-asr-yue-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Paper, blog, repositorio o demo del adaptador: no disponibles
 - Resultados de busqueda web relevantes: no se han encontrado

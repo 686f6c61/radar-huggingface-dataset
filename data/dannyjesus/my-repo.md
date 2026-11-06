@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `DannyJesus/my-repo` alojado en HuggingFace no contiene un modelo de inteligencia artificial, sino una librería precompilada de CPU: `libtorch_cpu.so` de 415 MB. Según la model card, se trata de una librería compartida de LibTorch (la biblioteca C++ de PyTorch) compilada exclusivamente para CPU, distribuida bajo licencia MIT. El autor, identificado como `DannyJesus`, la publica como un artefacto binario para su descarga directa, con instrucciones de integridad mediante `sha256sum`.
+El repositorio `DannyJesus/my-repo` alojado en Hugging Face no contiene un modelo de inteligencia artificial, sino una librería precompilada de CPU: `libtorch_cpu.so` de 415 MB. Según la model card, se trata de una librería compartida de LibTorch (la biblioteca C++ de PyTorch) compilada exclusivamente para CPU, distribuida bajo licencia MIT. El autor, identificado como `DannyJesus`, la publica como un artefacto binario para su descarga directa, con instrucciones de integridad mediante `sha256sum`.
 
 Dado que no se trata de un modelo de lenguaje o de otro tipo, no existen especificaciones como arquitectura, parámetros, contexto o capacidades de generación. La relevancia de este repositorio es exclusivamente como distribución de una dependencia binaria para desarrolladores que necesiten integrar LibTorch en entornos CPU sin compilarla desde fuente. No hay información adicional sobre su origen, versión de PyTorch asociada o fecha de compilación más allá de la de creación del repositorio.
 
@@ -67,5 +67,5 @@ No disponible. No existe una categoría de modelos comparable, dado que este rep
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DannyJesus/my-repo
+- Repositorio Hugging Face: https://huggingface.co/DannyJesus/my-repo
 - Perfil de GitHub del autor: https://github.com/dannyjesus

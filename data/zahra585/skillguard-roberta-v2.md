@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SkillGuard-RoBERTa-v2 es un modelo de clasificación de texto basado en la arquitectura RoBERTa, desarrollado por el usuario ZAHRA585 y publicado en HuggingFace. Con 124,6 millones de parámetros, el modelo está diseñado para la detección de patrones maliciosos en archivos de habilidades (skills) de agentes de IA, incluyendo inyección de prompts, exfiltración de datos y bypass de guardarraíles. El nombre "SkillGuard" y los tags asociados sugieren un enfoque específico en la seguridad de agentes de IA, un área de creciente relevancia a medida que estos sistemas ganan capacidades de ejecución de código y acceso a herramientas.
+SkillGuard-RoBERTa-v2 es un modelo de clasificación de texto basado en la arquitectura RoBERTa, desarrollado por el usuario ZAHRA585 y publicado en Hugging Face. Con 124,6 millones de parámetros, el modelo está diseñado para la detección de patrones maliciosos en archivos de habilidades (skills) de agentes de IA, incluyendo inyección de prompts, exfiltración de datos y bypass de guardarraíles. El nombre "SkillGuard" y los tags asociados sugieren un enfoque específico en la seguridad de agentes de IA, un área de creciente relevancia a medida que estos sistemas ganan capacidades de ejecución de código y acceso a herramientas.
 
 El modelo se presenta como una herramienta de seguridad especializada, probablemente entrenada mediante fine-tuning de RoBERTa sobre un dataset de ejemplos de ataques y comportamientos maliciosos. La versión "v2" indica una iteración posterior al modelo original, posiblemente con mejoras en precisión o cobertura. Sin embargo, la model card oficial está prácticamente vacía, con la mayoría de los campos marcados como "[More Information Needed]", lo que limita severamente la información verificable sobre su entrenamiento, datos y rendimiento. El repositorio asociado en GitHub (gauravsingh1995/skillguard) describe una herramienta más amplia de escaneo de seguridad para agentes de IA, de la cual este modelo podría ser un componente.
 
@@ -31,7 +31,7 @@ Los detalles del entrenamiento no están disponibles en la información pública
 - Identificación de patrones de exfiltración de datos.
 - Detección de intentos de bypass de guardarraíles de seguridad.
 - Clasificación de texto binaria o multiclase (el número exacto de clases no está especificado).
-- Procesamiento de texto en formato markdown, como se indica en el espacio de HuggingFace asociado.
+- Procesamiento de texto en formato markdown, como se indica en el espacio de Hugging Face asociado.
 - Integración con pipelines de transformers para clasificación de texto.
 - Compatible con la librería transformers y con text-embeddings-inference para despliegue en producción.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 (124,6M parámetros × 4 bytes), lo que permite ejecución en cualquier GPU moderna con más de 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 2060 o superior) es suficiente para inferencia en FP32.
 - Compatible con CPU: el modelo es lo suficientemente pequeño para ejecutarse en CPU con latencias aceptables (del orden de 50-100 ms por clasificación).
-- Opciones de despliegue: vLLM, HuggingFace Inference Endpoints, TGI (Text Generation Inference), o simplemente la librería transformers en modo PyTorch.
+- Opciones de despliegue: vLLM, Hugging Face Inference Endpoints, TGI (Text Generation Inference), o simplemente la librería transformers en modo PyTorch.
 - Latencia estimada: inferior a 10 ms en GPU moderna y alrededor de 50-100 ms en CPU para secuencias cortas.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información suficiente sobre modelos directamente comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZAHRA585/skillguard-roberta-v2
+- Modelo en Hugging Face: https://huggingface.co/ZAHRA585/skillguard-roberta-v2
 - Modelo original v1: https://huggingface.co/ZAHRA585/skillguard-roberta
 - Espacio de demostración: https://huggingface.co/spaces/ZOHRA585/skillguard
 - Repositorio GitHub del proyecto SkillGuard: https://github.com/gauravsingh1995/skillguard

@@ -99,13 +99,13 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-GPTQ
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - Variante AutoRound nativa: https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound
 - Variante LLM Compressor: https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-LLM-Compressor
 - Pagina de investigacion de LightOnOCR-3: https://www.lighton.ai/research/lightonocr-3
 - Repositorio de Intel AutoRound: https://github.com/intel/auto-round
-- Perfil del autor en HuggingFace: https://huggingface.co/Vishva007
+- Perfil del autor en Hugging Face: https://huggingface.co/Vishva007
 - Perfil del autor en GitHub: https://github.com/vishvaRam
 - Referencia arXiv incluida en los tags: arxiv:2601.14251
 - Referencia arXiv incluida en los tags: arxiv:2309.05516

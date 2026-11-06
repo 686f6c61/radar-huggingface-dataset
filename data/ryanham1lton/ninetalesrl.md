@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NinetalesRL es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton el 22 de septiembre de 2026, con licencia CC BY 4.0 y un tamano aproximado de 0,1 GB. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita a la linea de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+NinetalesRL es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton el 22 de septiembre de 2026, con licencia CC BY 4.0 y un tamano aproximado de 0,1 GB. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita a la linea de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 Esto significa que no es posible determinar con la informacion disponible que problema resuelve el modelo, sobre que arquitectura se construye, cuantos parametros tiene ni cual es su ventana de contexto. El nombre "NinetalesRL" sugiere, sin confirmacion alguna por parte del autor, que podria tratarse de un ajuste mediante aprendizaje por refuerzo (RL) sobre un modelo base, pero se trata de una hipotesis no verificada y no debe tomarse como dato.
 
@@ -81,6 +81,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni el rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/NinetalesRL
+- Hugging Face: https://huggingface.co/Ryanham1lton/NinetalesRL
 - Las busquedas web realizadas no han devuelto ningun resultado relacionado con este modelo. Los enlaces encontrados trataban sobre jailbreaks de ChatGPT, verificacion de numeros de telefono en cuentas de ChatGPT, listados de APIs de ChatGPT, modelos soportados en GitHub Copilot y recuperacion de conversaciones en ChatGPT, por lo que no se incluyen por no ser relevantes.
 - No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

@@ -91,7 +91,7 @@ El autor recomienda STRIX_LEAN o FAST para codigo general, y el Q8_K_XL original
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kingjones777/Tiel-Coder-35B-A3B-ROCmFPX-AGENT-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Tiel-Coder-35B-A3B-ROCmFPX-AGENT-GGUF
 - Repositorio fuente del GGUF original: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Repositorio de la familia Ornith: https://github.com/ornith-ai/Ornith-1

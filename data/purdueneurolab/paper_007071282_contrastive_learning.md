@@ -62,7 +62,7 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/purdueneurolab/paper_007071282_contrastive_learning
+- Repositorio en Hugging Face: https://huggingface.co/purdueneurolab/paper_007071282_contrastive_learning
 - Referencias generales sobre aprendizaje contrastivo (no afiliadas al repositorio):
   - Survey en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S0925231224014164
   - Guía en Medium: https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77

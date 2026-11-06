@@ -94,6 +94,6 @@ La comparacion es orientativa: el repositorio analizado no publica parametros, c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/F_BUD-E_V1_1_ModernBERT-large_got_talent_eff512_1n_smoke
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/F_BUD-E_V1_1_ModernBERT-large_got_talent_eff512_1n_smoke
 - Indice de runs de la serie VoiceCLAP citado en la model card: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

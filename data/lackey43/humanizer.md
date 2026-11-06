@@ -2,7 +2,7 @@
 
 ## Resumen
 
-humanizer es un modelo de lenguaje de aproximadamente 12.000 millones de parámetros (11.959.730.224 exactamente) publicado por el usuario de HuggingFace lackey43. Se trata de un fine-tune del modelo base google/gemma-4-12B especializado en una única tarea: reescribir borradores redactados por IA (correos, ensayos, informes, respuestas de foro) para que se lean como escritos por una persona. Su relevancia actual radica en que ataca un problema concreto de producción —el texto sintético detectable y con registro artificial— sin necesidad de servicios en la nube, ya que está pensado para ejecutarse localmente.
+humanizer es un modelo de lenguaje de aproximadamente 12.000 millones de parámetros (11.959.730.224 exactamente) publicado por el usuario de Hugging Face lackey43. Se trata de un fine-tune del modelo base google/gemma-4-12B especializado en una única tarea: reescribir borradores redactados por IA (correos, ensayos, informes, respuestas de foro) para que se lean como escritos por una persona. Su relevancia actual radica en que ataca un problema concreto de producción —el texto sintético detectable y con registro artificial— sin necesidad de servicios en la nube, ya que está pensado para ejecutarse localmente.
 
 El modelo está entrenado con la restricción explícita de conservar cada número, unidad, fecha, nombre y cita, y de no añadir información nueva. Soporta inglés y chino (en, zh), se distribuye en safetensors y GGUF, y declara licencia apache-2.0. El repositorio ocupa 87,6 GB y, en el momento de la consulta, acumula 548 descargas y 1 like, lo que indica una validación comunitaria todavía muy limitada.
 
@@ -12,7 +12,7 @@ Junto al modelo, el autor mantiene una aplicación de escritorio (macOS Apple si
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only derivado de google/gemma-4-12B (tag `gemma4_unified` en HuggingFace); no se detalla la arquitectura interna en la model card |
+| Arquitectura | Transformer decoder-only derivado de google/gemma-4-12B (tag `gemma4_unified` en Hugging Face); no se detalla la arquitectura interna en la model card |
 | Parametros totales | 11.959.730.224 (~12B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Junto al modelo, el autor mantiene una aplicación de escritorio (macOS Apple si
 
 ## Arquitectura y entrenamiento
 
-La model card describe un fine-tune sobre google/gemma-4-12B (`base_model_relation: finetune`) orientado a reescritura y transferencia de estilo. El autor no detalla la arquitectura interna ni el volumen de datos de entrenamiento; los tags de HuggingFace incluyen `image-text-to-text` y `gemma4_unified`, lo que sugiere que el modelo base es multimodal, aunque ninguna capacidad de vision se documenta para este fine-tune. Tampoco se especifica si se emplearon tecnicas de alineacion como RLHF o DPO. Un dato relevante y confirmado por el autor es que no se utilizo ningun detector de IA en ninguna fase del entrenamiento.
+La model card describe un fine-tune sobre google/gemma-4-12B (`base_model_relation: finetune`) orientado a reescritura y transferencia de estilo. El autor no detalla la arquitectura interna ni el volumen de datos de entrenamiento; los tags de Hugging Face incluyen `image-text-to-text` y `gemma4_unified`, lo que sugiere que el modelo base es multimodal, aunque ninguna capacidad de vision se documenta para este fine-tune. Tampoco se especifica si se emplearon tecnicas de alineacion como RLHF o DPO. Un dato relevante y confirmado por el autor es que no se utilizo ningun detector de IA en ninguna fase del entrenamiento.
 
 La innovacion tecnica mas documentada esta en el proceso de cuantizacion. Frente al paso unico de `llama-quantize` que redondea todos los pesos al mismo tipo, los archivos de 2 bits, Q3 y Q4_K_M se construyen en tres etapas: primero se mide el dano que provoca cada tensor al comprimirse y se asignan mas bits a los tensores sensibles y menos a los robustos; despues se aplica entrenamiento consciente de cuantizacion capa por capa para reproducir el modelo completo; y finalmente se destila desde el modelo bf16 usado como profesor, sobre datos de reescritura en ingles y chino. El resultado es un GGUF convencional compatible con cualquier version reciente de llama.cpp. El autor afirma que en el archivo de 2 bits (3,9 GB) la coincidencia de top-1 con bf16 pasa del 70 % de una build estandar al 81 %, 85 % y finalmente 87 % tras estas etapas. Los archivos Q6_K y Q8_0 son builds estandar, con el argumento de que a esos tamanos queda poco margen de recuperacion.
 
@@ -38,7 +38,7 @@ La innovacion tecnica mas documentada esta en el proceso de cuantizacion. Frente
 - Ejecucion local y sin conexion: la aplicacion descarga el archivo una sola vez y despues funciona offline.
 - Tool calling o function calling: no disponible; la model card no documenta soporte nativo.
 - Uso como agente multi-paso: no disponible como capacidad del modelo. El repositorio incluye un `AGENTS.md` para que un agente de programacion configure el servidor y el prompt, pero eso es integracion, no una capacidad del modelo.
-- Capacidades de vision: no disponible; aunque el tag `image-text-to-text` aparece en HuggingFace, la model card no describe ninguna tarea de imagen.
+- Capacidades de vision: no disponible; aunque el tag `image-text-to-text` aparece en Hugging Face, la model card no describe ninguna tarea de imagen.
 
 ## Casos de uso
 
@@ -101,7 +101,7 @@ Conviene senalar que la comparacion con el modelo base no es significativa en te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lackey43/humanizer
+- Modelo en Hugging Face: https://huggingface.co/lackey43/humanizer
 - Repositorio de archivos GGUF: https://huggingface.co/jialinyyzz/humanizer-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Repositorio en GitHub: https://github.com/sgaofen/humanizer-local-model
@@ -116,4 +116,4 @@ Conviene senalar que la comparacion con el modelo base no es significativa en te
 - Descarga macOS Apple silicon: https://github.com/sgaofen/humanizer-local-model/releases/download/app-v0.3.2/Humanizer-0.3.2-macos-arm64.dmg
 - Descarga Windows x64: https://github.com/sgaofen/humanizer-local-model/releases/download/app-v0.3.2/Humanizer-0.3.2-windows-x64-setup.exe
 
-Nota: la busqueda web realizada para esta ficha no devolvio resultados relevantes sobre el modelo. Los enlaces listados proceden integramente de la informacion de HuggingFace y de la model card del autor.
+Nota: la busqueda web realizada para esta ficha no devolvio resultados relevantes sobre el modelo. Los enlaces listados proceden integramente de la informacion de Hugging Face y de la model card del autor.

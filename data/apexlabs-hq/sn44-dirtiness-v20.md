@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`apexlabs-hq/sn44-dirtiness-v20` es un detector de objetos en formato ONNX publicado en HuggingFace por el usuario `apexlabs-hq`. No se trata de un modelo de lenguaje, sino de un modelo de visión por computador orientado a la detección de suciedad en interiores: identifica cinco clases concretas (derrame de líquido, papelera, basura, moho y mancha). El nombre del repositorio sugiere que forma parte de la subred 44 (SN44) de la red Bittensor, y la model card indica que está pensado para ser servido mediante un `miner.py` que hace inferencia con `onnxruntime`.
+`apexlabs-hq/sn44-dirtiness-v20` es un detector de objetos en formato ONNX publicado en Hugging Face por el usuario `apexlabs-hq`. No se trata de un modelo de lenguaje, sino de un modelo de visión por computador orientado a la detección de suciedad en interiores: identifica cinco clases concretas (derrame de líquido, papelera, basura, moho y mancha). El nombre del repositorio sugiere que forma parte de la subred 44 (SN44) de la red Bittensor, y la model card indica que está pensado para ser servido mediante un `miner.py` que hace inferencia con `onnxruntime`.
 
 El modelo se distribuye como un artefacto ONNX end-to-end, con un tamaño de entrada de imagen de 736 píxeles y umbrales de confianza por clase de 0,35 (con un umbral global de 0,05 en la configuración). Incluye además una lógica de supresión de duplicados entre las clases 0, 3 y 4 con un umbral de 0,3, lo que indica que el autor ha empaquetado no solo los pesos, sino también parte del postprocesado dentro del artefacto o de su pipeline de servicio.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU de consumo: no confirmado. Dado el formato ONNX y el tamaño de entrada (736 × 736), es plausible que funcione en GPUs de gama media, pero no hay datos que lo verifiquen.
 - Opciones de despliegue: `onnxruntime` (declarado en la model card). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un detector visual.
 - Latencia y throughput: no disponibles.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace, lo que sugiere un archivo de pesos muy pequeño (posiblemente unos pocos MB), aunque el dato exacto no se publica.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face, lo que sugiere un archivo de pesos muy pequeño (posiblemente unos pocos MB), aunque el dato exacto no se publica.
 
 ## Comparativa con modelos similares
 
@@ -85,6 +85,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/apexlabs-hq/sn44-dirtiness-v20
+- Hugging Face: https://huggingface.co/apexlabs-hq/sn44-dirtiness-v20
 - Referencia al detector base citado en la model card: `manako/Detect-room-dirtiness-detection` (no se proporciona URL directa en la información disponible)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -80,7 +80,7 @@ El merge "Eintopf" se diferencia del original por su composición experimental, 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este): https://huggingface.co/mradermacher/Eintopf-Qwen3.8-27B-i1-GGUF
+- Repositorio Hugging Face (este): https://huggingface.co/mradermacher/Eintopf-Qwen3.8-27B-i1-GGUF
 - Repositorio estático con quants: https://huggingface.co/mradermacher/Eintopf-Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/DragonBophades/Eintopf-Qwen3.8-27B
 - Documentación de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8

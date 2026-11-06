@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-Flash-Next-oq4-mix6-mtp es una cuantización mixta en formato MLX del modelo ThinkingCap-Qwen3.8-Flash-Next, publicado por el usuario umixer en HuggingFace. El modelo base fue post-entrenado por BottleCap AI sobre la arquitectura experimental qwen4_exp de Qwen, un modelo MoE con 156 mil millones de parámetros totales y unos 6 mil millones activos, que combina expertos dispersos, atención lineal (GDN), una tabla n-gram (PLE) y decodificación especulativa multi-token (MTP) nativa.
+ThinkingCap-Qwen3.8-Flash-Next-oq4-mix6-mtp es una cuantización mixta en formato MLX del modelo ThinkingCap-Qwen3.8-Flash-Next, publicado por el usuario umixer en Hugging Face. El modelo base fue post-entrenado por BottleCap AI sobre la arquitectura experimental qwen4_exp de Qwen, un modelo MoE con 156 mil millones de parámetros totales y unos 6 mil millones activos, que combina expertos dispersos, atención lineal (GDN), una tabla n-gram (PLE) y decodificación especulativa multi-token (MTP) nativa.
 
 La aportación de esta versión es su receta de cuantización de precisión mixta: en lugar de una cuantización uniforme a 4 bits, aplica un esquema en forma de U según la sensibilidad por capa (6 bits en las capas extremas, 4 bits en las intermedias, 8 bits en atención, embeddings y componentes críticos), con el objetivo de lograr la huella de memoria y velocidad de un modelo de 4 bits con calidad igual o superior a una cuantización uniforme de 5 bits. El resultado medido es una ejecución con unos 75-76 GB de memoria residente y 75-84 tokens/s de decodificación en un Apple Silicon de 128 GB (M5 Max), además de una reducción del 28% en tokens de razonamiento respecto al modelo base.
 

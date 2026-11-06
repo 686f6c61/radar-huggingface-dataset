@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eric-the-coder/queue_merged-u207` es un sistema de generación de texto multimodal (image-text-to-text) de 35.107 millones de parámetros, desarrollado por el usuario `eric-the-coder` y publicado en HuggingFace con acceso restringido (gated). Según las etiquetas asociadas, se trata de un modelo de arquitectura MoE (Mixture of Experts) basado en la familia Qwen3.5, que ha sido sometido a un proceso de fusión (model merging) y posterior ajuste fino con DPO offline. El modelo base declarado es `unconst/Affine-5czsc2fc98-r252-merged`, lo que sugiere que `queue_merged-u207` es una iteración derivada de dicho merge.
+El modelo `eric-the-coder/queue_merged-u207` es un sistema de generación de texto multimodal (image-text-to-text) de 35.107 millones de parámetros, desarrollado por el usuario `eric-the-coder` y publicado en Hugging Face con acceso restringido (gated). Según las etiquetas asociadas, se trata de un modelo de arquitectura MoE (Mixture of Experts) basado en la familia Qwen3.5, que ha sido sometido a un proceso de fusión (model merging) y posterior ajuste fino con DPO offline. El modelo base declarado es `unconst/Affine-5czsc2fc98-r252-merged`, lo que sugiere que `queue_merged-u207` es una iteración derivada de dicho merge.
 
 La relevancia de este modelo reside en su carácter multimodal (procesa texto e imágenes) combinado con una arquitectura MoE que permite activar solo una fracción de los parámetros durante la inferencia, lo que podría ofrecer un equilibrio entre capacidad y eficiencia. Sin embargo, al no existir documentación pública, benchmarks ni una licencia declarada, su adopción en producción requiere una evaluación previa exhaustiva. El repositorio ocupa 70,2 GB en formato `safetensors`, lo que indica pesos completos en precisión FP16 o BF16.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Con cuantización a 8 bits (INT8) se estima un uso de VRAM de ~35 GB, posible en una RTX 4090 o A6000 (48 GB).
 - Con cuantización a 4 bits (por ejemplo, GPTQ o AWQ) se estima ~18 GB, lo que permitiría ejecución en GPUs consumer de 24 GB (RTX 3090/4090) con margen.
 - No se han publicado archivos GGUF, por lo que para usar llama.cpp o Ollama sería necesario convertir los pesos.
-- Opciones de despliegue: vLLM, TGI (Text Generation Inference), o servidores personalizados con transformers. Dado el acceso restringido, es necesario aceptar las condiciones en HuggingFace antes de descargar.
+- Opciones de despliegue: vLLM, TGI (Text Generation Inference), o servidores personalizados con transformers. Dado el acceso restringido, es necesario aceptar las condiciones en Hugging Face antes de descargar.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aprobación del autor en HuggingFace antes de poder descargarlo.
+- Acceso restringido: el modelo es gated, por lo que requiere aprobación del autor en Hugging Face antes de poder descargarlo.
 - Licencia no disponible: no se especifica ninguna licencia, lo que impide conocer las condiciones de uso comercial, redistribución o modificación. Esto supone un riesgo legal para su uso en producción.
 - Sin documentación: no hay model card, paper ni guía de uso. Las capacidades y limitaciones se infieren de las etiquetas y no están validadas.
 - Sesgos y alucinaciones: al no haber evaluaciones públicas, se desconocen los sesgos potenciales y la tendencia a alucinar, especialmente en tareas multimodales.
@@ -76,6 +76,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eric-the-coder/queue_merged-u207
+- Hugging Face: https://huggingface.co/eric-the-coder/queue_merged-u207
 - Modelo base (según metadatos): https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged (no verificado)
 - No se han encontrado papers, blogs o demos asociados a este modelo en la búsqueda web.

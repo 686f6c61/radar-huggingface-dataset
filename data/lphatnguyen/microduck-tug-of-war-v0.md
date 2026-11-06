@@ -4,7 +4,7 @@
 
 `microduck-tug-of-war-v0` es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. El modelo no es un modelo de lenguaje ni un sistema generativo de texto: es un controlador neuronal exportado a ONNX que traduce observaciones proprioceptivas del robot (61 dimensiones) en comandos de actuación (14 acciones) a una frecuencia de 50 Hz. Su función concreta es generar una marcha perpetua, es decir, un patrón de locomoción que se ejecuta de forma continua hasta que se le indique lo contrario.
 
-El autor del repositorio es el usuario de HuggingFace `lphatnguyen`, que publica esta política bajo el espacio de nombres del ecosistema microduck. El modelo se integra en el slot `walk` del daemon de control del robot, de modo que puede cargarse directamente en hardware real mediante el comando `robotctl policy load walk`. La política incorpora el normalizador de observaciones dentro del propio grafo ONNX, por lo que el consumidor debe alimentar observaciones en crudo sin preprocesado adicional.
+El autor del repositorio es el usuario de Hugging Face `lphatnguyen`, que publica esta política bajo el espacio de nombres del ecosistema microduck. El modelo se integra en el slot `walk` del daemon de control del robot, de modo que puede cargarse directamente en hardware real mediante el comando `robotctl policy load walk`. La política incorpora el normalizador de observaciones dentro del propio grafo ONNX, por lo que el consumidor debe alimentar observaciones en crudo sin preprocesado adicional.
 
 La relevancia de esta ficha es acotada y muy específica: se trata de un artefacto de robótica de nicho, con cero descargas y cero interacciones en el momento de su publicación, orientado exclusivamente a usuarios del robot microduck. No dispone de información pública sobre licencia, idiomas ni benchmarks, y su tamaño de repositorio es de 0.0 GB según los metadatos disponibles, lo que sugiere un artefacto de pesos muy ligero, coherente con una red de política de pequeñas dimensiones.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Dimension de observacion | Dimension de accion | Frecuencia | Slot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `lphatnguyen/microduck-tug-of-war-v0` | Política RL ONNX para microduck | 61 | 14 | 50 Hz | `walk` | no disponible | HuggingFace, 0 descargas |
+| `lphatnguyen/microduck-tug-of-war-v0` | Política RL ONNX para microduck | 61 | 14 | 50 Hz | `walk` | no disponible | Hugging Face, 0 descargas |
 | Otras políticas del ecosistema microduck | Políticas RL ONNX para microduck | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se dispone de información sobre políticas alternativas comparables en la documentación consultada; la comparativa con modelos de lenguaje u otros artefactos generativos no es aplicable por la naturaleza del modelo.
@@ -87,7 +87,7 @@ No se dispone de información sobre políticas alternativas comparables en la do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lphatnguyen/microduck-tug-of-war-v0
+- Modelo en Hugging Face: https://huggingface.co/lphatnguyen/microduck-tug-of-war-v0
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `tug-of-war-fresh`, commit `60852519f`); no se dispone de URL directa en la información proporcionada.
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon; no se dispone de URL directa en la información proporcionada.

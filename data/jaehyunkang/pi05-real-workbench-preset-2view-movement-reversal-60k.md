@@ -94,9 +94,9 @@ No se dispone de especificaciones verificadas de los modelos alternativos dentro
 
 | Modelo | Parámetros | Categoría | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jaehyunkang/pi05-real-workbench-preset-2view-movement-reversal-60k` | 4.143.404.816 | Política VLA pi0.5 ajustada, 2 vistas, acción delta EEF de 7 dimensiones, horizonte 50 | No disponible | No disponible | Pública en HuggingFace, 0 descargas |
-| `lerobot/pi05_base` | No disponible | Modelo base VLA pi0.5 sin ajustar a esta tarea | No disponible | No disponible | Público en HuggingFace (referenciado como `base_model`) |
-| `lerobot/pi0` | No disponible | Política VLA predecesora de la familia pi0 | No disponible | No disponible | Pública en HuggingFace |
+| `jaehyunkang/pi05-real-workbench-preset-2view-movement-reversal-60k` | 4.143.404.816 | Política VLA pi0.5 ajustada, 2 vistas, acción delta EEF de 7 dimensiones, horizonte 50 | No disponible | No disponible | Pública en Hugging Face, 0 descargas |
+| `lerobot/pi05_base` | No disponible | Modelo base VLA pi0.5 sin ajustar a esta tarea | No disponible | No disponible | Público en Hugging Face (referenciado como `base_model`) |
+| `lerobot/pi0` | No disponible | Política VLA predecesora de la familia pi0 | No disponible | No disponible | Pública en Hugging Face |
 | OpenVLA y otras políticas VLA abiertas | No disponible | Políticas VLA de propósito general para manipulación | No disponible | No disponible | Públicas |
 
 Diferencias cualitativas relevantes: este checkpoint está especializado en una única tarea (`movement-reversal`) y en una configuración concreta de banco de trabajo con dos vistas, mientras que los modelos base de la familia y las políticas VLA generalistas están pensados para mayor diversidad de tareas. Frente a OpenVLA u otras alternativas, el punto fuerte aquí es la reproducibilidad del pipeline de pi0.5 sobre LeRobot; el punto débil es la ausencia total de métricas y de licencia declarada.
@@ -117,10 +117,10 @@ Diferencias cualitativas relevantes: este checkpoint está especializado en una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-movement-reversal-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-movement-reversal-60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-preset-gemini
-- Organización LeRobot en HuggingFace: https://huggingface.co/lerobot
+- Organización LeRobot en Hugging Face: https://huggingface.co/lerobot
 - Tokenizer referenciado: https://huggingface.co/google/paligemma-3b-pt-224
 - Implementación de entrenamiento citada en la model card: `RLWRLD/hiwrld-ll-policy` (identificador textual; URL no disponible en la información proporcionada)
 - Nota sobre la búsqueda web: las consultas realizadas no devolvieron resultados relevantes para este modelo; los únicos enlaces obtenidos correspondían a páginas de descarga del navegador Google Chrome y se han descartado por no ser pertinentes.

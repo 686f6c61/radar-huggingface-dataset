@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de tamano si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bluehawana/Qwen3.8-27B-8bit-MTP-MLX
+- Repositorio Hugging Face: https://huggingface.co/bluehawana/Qwen3.8-27B-8bit-MTP-MLX
 - Modelo base (mlx-community): https://huggingface.co/mlx-community/Qwen3.8-27B-8bit
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del head MTP (EigenLabs): https://huggingface.co/EigenLabs/Qwen3.8-27B-MTP-bf16

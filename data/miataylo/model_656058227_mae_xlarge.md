@@ -69,7 +69,7 @@ No disponible. La arquitectura "mae" con atención lineal es una variante poco c
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/Miataylo/model_656058227_mae_xlarge)
+- [Repositorio de Hugging Face](https://huggingface.co/Miataylo/model_656058227_mae_xlarge)
 - [Model card del autor (solo archivo fuente)](https://huggingface.co/Miataylo/model_656058227_mae_xlarge/blob/main/model_656058227_mae_xlarge.py)
 
 Los resultados de búsqueda web (OnlyFans, Instagram) no están relacionados con el modelo y no se incluyen por irrelevancia técnica.

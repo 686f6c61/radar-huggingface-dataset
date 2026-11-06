@@ -82,7 +82,7 @@ La informacion disponible no incluye mediciones comparativas contra otros drafte
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dheer05dj/anlp-dflash-100k-qwen3-4b | Drafter DFlash para Qwen3-4B | 537 M | no disponible (hereda de Qwen3-4B) | τ medio 4,93; 3,56x en H100 | MIT | HuggingFace, requiere codigo personalizado |
+| dheer05dj/anlp-dflash-100k-qwen3-4b | Drafter DFlash para Qwen3-4B | 537 M | no disponible (hereda de Qwen3-4B) | τ medio 4,93; 3,56x en H100 | MIT | Hugging Face, requiere codigo personalizado |
 | dheer05dj/anlp-fmlm-plus-qwen3-4b | Drafter FMLM+ para Qwen3-4B (repositorio companero citado por el autor) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros drafters de decodificacion especulativa (EAGLE, Medusa) | Drafter para modelos abiertos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ La informacion disponible no incluye mediciones comparativas contra otros drafte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheer05dj/anlp-dflash-100k-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/dheer05dj/anlp-dflash-100k-qwen3-4b
 - Repositorio del diseno DFlash (z-lab): https://github.com/z-lab/dflash
 - Modelo objetivo Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio companero del proyecto ANLP (citado por el autor): `anlp-fmlm-plus-qwen3-4b`

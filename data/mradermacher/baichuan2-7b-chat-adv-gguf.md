@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que ofrece una vía práctica para despleg
 
 La arquitectura subyacente corresponde a Baichuan2-7B-Chat, un transformer decoder-only con 7.500 millones de parámetros. El modelo original fue desarrollado por Baichuan Intelligent Technology y entrenado sobre un corpus bilingüe chino-inglés, con un proceso de alineación conversacional (chat) que incluye ajuste supervisado y optimización de preferencias. No se dispone de información detallada sobre el número exacto de tokens de entrenamiento ni sobre la composición del dataset en la información proporcionada.
 
-La variante isbondarev/Baichuan2-7B-Chat-adv introduce un afinado adicional cuyo propósito exacto no se documenta en la model card. La cuantización realizada por mradermacher es de tipo estático (static quants), según se indica en los metadatos, y no se han generado cuantizaciones ponderadas con imatrix en el momento de la publicación. El proceso de conversión parte de pesos en formato HuggingFace (convert_type: hf) y produce archivos GGUF compatibles con llama.cpp. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal en esta variante.
+La variante isbondarev/Baichuan2-7B-Chat-adv introduce un afinado adicional cuyo propósito exacto no se documenta en la model card. La cuantización realizada por mradermacher es de tipo estático (static quants), según se indica en los metadatos, y no se han generado cuantizaciones ponderadas con imatrix en el momento de la publicación. El proceso de conversión parte de pesos en formato Hugging Face (convert_type: hf) y produce archivos GGUF compatibles con llama.cpp. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal en esta variante.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Baichuan2-7B-Chat-adv-GGUF (este) | 7.500 M | No disponible | No disponible | GGUF | HuggingFace, 127 descargas |
+| Baichuan2-7B-Chat-adv-GGUF (este) | 7.500 M | No disponible | No disponible | GGUF | Hugging Face, 127 descargas |
 | Baichuan2-7B-Chat (original) | 7.000 M aprox. | 4.096 tokens (según documentación pública del original) | Licencia Baichuan2 (uso comercial con condiciones) | safetensors | Amplia |
 | Mistral-7B-Instruct-v0.2 | 7.242 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Muy amplia |
 | Llama-3.1-8B-Instruct | 8.030 M | 131.072 tokens | Llama 3.1 Community License | safetensors, GGUF | Muy amplia |
@@ -92,7 +92,7 @@ Nota: los datos de contexto y licencia del modelo original Baichuan2-7B-Chat pro
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Baichuan2-7B-Chat-adv-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Baichuan2-7B-Chat-adv-GGUF
 - Modelo base del afinado: https://huggingface.co/isbondarev/Baichuan2-7B-Chat-adv
 - Página de resumen de cuantizaciones del autor: https://hf.tst.eu/model#Baichuan2-7B-Chat-adv-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para una comparativa rigurosa. El autor tiene otros LoRAs similares en su perfil de HuggingFace (My-Stars-Alira, My-Stars-Luna), que probablemente sigan el mismo patron de personajes ficticios para Krea-2-Turbo. En Civitai, el autor tiene un perfil con 485 seguidores y 3.4k descargas totales en sus publicaciones, lo que sugiere cierta actividad en la comunidad.
+No se dispone de informacion suficiente para una comparativa rigurosa. El autor tiene otros LoRAs similares en su perfil de Hugging Face (My-Stars-Alira, My-Stars-Luna), que probablemente sigan el mismo patron de personajes ficticios para Krea-2-Turbo. En Civitai, el autor tiene un perfil con 485 seguidores y 3.4k descargas totales en sus publicaciones, lo que sugiere cierta actividad en la comunidad.
 
 | Modelo | Tipo | Modelo base | Tamano | Licencia |
 |---|---|---|---|---|
@@ -80,8 +80,8 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El autor 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaddzie/My-Stars-Hana
-- Perfil del autor en HuggingFace: https://huggingface.co/kaddzie
+- Repositorio Hugging Face: https://huggingface.co/kaddzie/My-Stars-Hana
+- Perfil del autor en Hugging Face: https://huggingface.co/kaddzie
 - Modelo relacionado My-Stars-Alira: https://huggingface.co/kaddzie/My-Stars-Alira
 - Modelo relacionado My-Stars-Luna: https://huggingface.co/kaddzie/My-Stars-Luna
 - Perfil del autor en Civitai: https://civitai.com/user/kaddzie/posts

@@ -70,6 +70,6 @@ No se dispone de datos suficientes para una comparativa con modelos de la misma 
 
 ## Enlaces
 
-- [HuggingFace - pplx-computer-qwen-3-8-27b-dflash2-20260824](https://huggingface.co/perplexity-ai/pplx-computer-qwen-3-8-27b-dflash2-20260824)
+- [Hugging Face - pplx-computer-qwen-3-8-27b-dflash2-20260824](https://huggingface.co/perplexity-ai/pplx-computer-qwen-3-8-27b-dflash2-20260824)
 - [Perplexity Blog - Introducing Portable Computer](https://sakutto.ai/en/articles/perplexity-portable-computer) (artículo de terceros)
 - [Perplexity AI - sitio oficial](https://www.perplexity.ai/)

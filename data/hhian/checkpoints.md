@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hhian/checkpoints` es un modelo publicado en HuggingFace por el usuario `hhian`, con un tamaño de repositorio de 3,3 GB y acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, los parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El modelo fue creado el 12 de junio de 2026 y actualizado el 15 de agosto de 2026, pero no se ha publicado ninguna documentación técnica, ficha de modelo ni resultados de evaluación en el repositorio. Dado el nombre genérico "checkpoints", podría tratarse de un conjunto de pesos intermedios o de un experimento personal, pero sin acceso a los archivos ni a la descripción, cualquier afirmación adicional sería especulativa. Esta ficha se limita a reflejar los datos verificables disponibles en la página de HuggingFace y señala explícitamente la ausencia de información técnica.
+El repositorio `hhian/checkpoints` es un modelo publicado en Hugging Face por el usuario `hhian`, con un tamaño de repositorio de 3,3 GB y acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, los parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El modelo fue creado el 12 de junio de 2026 y actualizado el 15 de agosto de 2026, pero no se ha publicado ninguna documentación técnica, ficha de modelo ni resultados de evaluación en el repositorio. Dado el nombre genérico "checkpoints", podría tratarse de un conjunto de pesos intermedios o de un experimento personal, pero sin acceso a los archivos ni a la descripción, cualquier afirmación adicional sería especulativa. Esta ficha se limita a reflejar los datos verificables disponibles en la página de Hugging Face y señala explícitamente la ausencia de información técnica.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No disponible. Al carecer de información sobre la arquitectura, el tamaño de p
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace antes de su descarga. Esto limita la transparencia y la reproducibilidad.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face antes de su descarga. Esto limita la transparencia y la reproducibilidad.
 - Falta de documentación: no hay README, ficha técnica ni instrucciones de uso, lo que impide conocer la licencia, los términos de uso comercial y las restricciones legales.
 - Sin información de sesgos o alucinaciones: al no existir evaluación pública, no se pueden identificar riesgos de sesgo, alucinación o fallos en contextos específicos.
 - Riesgo de uso indebido: al ser un repositorio con nombre genérico y sin descripción, podría tratarse de un experimento no validado o de pesos intermedios no aptos para producción.
@@ -53,7 +53,7 @@ No disponible. Al carecer de información sobre la arquitectura, el tamaño de p
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/hhian/checkpoints](https://huggingface.co/hhian/checkpoints)
-- Perfil del autor en HuggingFace: [https://huggingface.co/hhian](https://huggingface.co/hhian) (enlace inferido a partir del ID de usuario, no verificado)
+- Repositorio Hugging Face: [https://huggingface.co/hhian/checkpoints](https://huggingface.co/hhian/checkpoints)
+- Perfil del autor en Hugging Face: [https://huggingface.co/hhian](https://huggingface.co/hhian) (enlace inferido a partir del ID de usuario, no verificado)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

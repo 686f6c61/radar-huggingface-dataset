@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tokiers/all-MiniLM-L6-v2` no es un modelo de lenguaje, sino un paquete de tokenizer precompilado para el modelo de embeddings `sentence-transformers/all-MiniLM-L6-v2`. Lo publica el usuario `tokiers` como artefacto derivado del proyecto tokie, un tokenizer escrito en Rust que se presenta como reemplazo directo de la libreria `tokenizers` de HuggingFace. El repositorio contiene los ficheros de tokenizacion del modelo original, no los pesos del modelo.
+`tokiers/all-MiniLM-L6-v2` no es un modelo de lenguaje, sino un paquete de tokenizer precompilado para el modelo de embeddings `sentence-transformers/all-MiniLM-L6-v2`. Lo publica el usuario `tokiers` como artefacto derivado del proyecto tokie, un tokenizer escrito en Rust que se presenta como reemplazo directo de la libreria `tokenizers` de Hugging Face. El repositorio contiene los ficheros de tokenizacion del modelo original, no los pesos del modelo.
 
-El paquete incluye `tokenizer.json` (formato original de HuggingFace) y `tokenizer.tkz`, un formato binario propio de tokie que, segun la model card, es aproximadamente 10 veces mas pequeno y se carga en unos 5 ms. El objetivo es acelerar la tokenizacion en pipelines de inferencia, especialmente en entornos Rust o en servicios de alto throughput donde el coste de arranque y el de tokenizar dominan.
+El paquete incluye `tokenizer.json` (formato original de Hugging Face) y `tokenizer.tkz`, un formato binario propio de tokie que, segun la model card, es aproximadamente 10 veces mas pequeno y se carga en unos 5 ms. El objetivo es acelerar la tokenizacion en pipelines de inferencia, especialmente en entornos Rust o en servicios de alto throughput donde el coste de arranque y el de tokenizar dominan.
 
 Es relevante para quien despliegue `all-MiniLM-L6-v2` en produccion y quiera reducir latencia de preprocesado sin cambiar de modelo de embeddings. Conviene subrayar que el repositorio no contiene pesos, no define una arquitectura propia y no aporta capacidades generativas: es un componente auxiliar del pipeline.
 
@@ -19,26 +19,26 @@ Es relevante para quien despliegue `all-MiniLM-L6-v2` en produccion y quiera red
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible en el repositorio; la libreria tokie es MIT OR Apache-2.0 y los ficheros originales retienen la licencia de `sentence-transformers/all-MiniLM-L6-v2` |
-| Formato de pesos | no aplica; ficheros incluidos: `tokenizer.tkz` (binario tokie) y `tokenizer.json` (HuggingFace) |
+| Formato de pesos | no aplica; ficheros incluidos: `tokenizer.tkz` (binario tokie) y `tokenizer.json` (Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 El repositorio no entrena ningun modelo. Contiene los artefactos de tokenizacion de `all-MiniLM-L6-v2`, un modelo de embeddings de frases basado en una red transformer MiniLM de 6 capas y 384 dimensiones ocultas (datos del modelo original, no verificados en la informacion proporcionada). El tokenizer subyacente es el de `all-MiniLM-L6-v2`, con vocabulario y reglas propias del modelo original; el repositorio no documenta esos detalles.
 
-La innovacion tecnica esta en el formato `tokenizer.tkz` y en la implementacion Rust de tokie: la model card afirma 50x mas velocidad de tokenizacion, ficheros 10x mas pequenos y precision del 100 % respecto a HuggingFace. Estas cifras son afirmaciones del autor y no se han verificado de forma independiente en la informacion disponible. El repositorio ocupa 0,1 GB, coherente con un paquete de tokenizer y no con pesos de un modelo.
+La innovacion tecnica esta en el formato `tokenizer.tkz` y en la implementacion Rust de tokie: la model card afirma 50x mas velocidad de tokenizacion, ficheros 10x mas pequenos y precision del 100 % respecto a Hugging Face. Estas cifras son afirmaciones del autor y no se han verificado de forma independiente en la informacion disponible. El repositorio ocupa 0,1 GB, coherente con un paquete de tokenizer y no con pesos de un modelo.
 
 ## Capacidades
 
 - Tokenizacion de texto compatible con el tokenizer de `sentence-transformers/all-MiniLM-L6-v2`.
 - Generacion de `ids` y `attention_mask` a partir de una cadena de entrada.
-- Carga desde HuggingFace Hub mediante `Tokenizer::from_pretrained`.
+- Carga desde Hugging Face Hub mediante `Tokenizer::from_pretrained`.
 - Uso desde Python (`pip install tokie`) y desde Rust (crate `tokie` con feature `hf`).
 - Formato binario `tokenizer.tkz` con carga rapida (~5 ms segun la model card).
 - No incluye generacion de texto, razonamiento, codigo, vision, tool calling, agentes ni capacidades multilingues propias: esas capacidades dependerian del modelo de embeddings al que acompana el tokenizer.
 
 ## Casos de uso
 
-- Servicios de embeddings en produccion: sustituir el tokenizer de HuggingFace por `tokenizer.tkz` en un pipeline que calcule embeddings con `all-MiniLM-L6-v2`, reduciendo el tiempo de preprocesado por peticion.
+- Servicios de embeddings en produccion: sustituir el tokenizer de Hugging Face por `tokenizer.tkz` en un pipeline que calcule embeddings con `all-MiniLM-L6-v2`, reduciendo el tiempo de preprocesado por peticion.
 - Busqueda semantica de baja latencia: en un indice vectorial con millones de documentos, el coste de tokenizacion es una fraccion relevante del total; un tokenizer mas rapido mejora el throughput del indexado.
 - Microservicios escritos en Rust: usar el crate `tokie` con feature `hf` para tokenizar sin depender del runtime de Python ni de la libreria `tokenizers`.
 - Arranque en frio de funciones serverless: la carga en ~5 ms del formato `.tkz` reduce la latencia inicial frente a cargar `tokenizer.json` completo.
@@ -55,15 +55,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU: no requiere GPU para tokenizar; la carga y el uso son en CPU.
 - GPU de consumo: no aplica.
 - Despliegue: libreria `tokie` (Python via `pip install tokie`, Rust via crate `tokie` con feature `hf`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: la model card afirma ~5 ms de carga del fichero `.tkz` y 50x mas velocidad de tokenizacion que HuggingFace; no se aportan mediciones detalladas ni condiciones de prueba.
+- Latencia y throughput: la model card afirma ~5 ms de carga del fichero `.tkz` y 50x mas velocidad de tokenizacion que Hugging Face; no se aportan mediciones detalladas ni condiciones de prueba.
 
 ## Comparativa con modelos similares
 
 | Componente | Formato | Tamano | Velocidad de carga | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tokiers/all-MiniLM-L6-v2` | `tokenizer.tkz` + `tokenizer.json` | ~0,1 GB (repo completo) | ~5 ms (afirmado por el autor) | no disponible en el repo | HuggingFace Hub |
-| Tokenizer original de `sentence-transformers/all-MiniLM-L6-v2` | `tokenizer.json` | no disponible | no disponible | la del modelo original | HuggingFace Hub |
-| Libreria `tokenizers` de HuggingFace | Rust + bindings Python | no aplica | no disponible | Apache-2.0 | crates.io, PyPI |
+| `tokiers/all-MiniLM-L6-v2` | `tokenizer.tkz` + `tokenizer.json` | ~0,1 GB (repo completo) | ~5 ms (afirmado por el autor) | no disponible en el repo | Hugging Face Hub |
+| Tokenizer original de `sentence-transformers/all-MiniLM-L6-v2` | `tokenizer.json` | no disponible | no disponible | la del modelo original | Hugging Face Hub |
+| Libreria `tokenizers` de Hugging Face | Rust + bindings Python | no aplica | no disponible | Apache-2.0 | crates.io, PyPI |
 
 No se dispone de datos comparativos de rendimiento medidos de forma independiente entre estas opciones en la informacion proporcionada.
 
@@ -79,6 +79,6 @@ No se dispone de datos comparativos de rendimiento medidos de forma independient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tokiers/all-MiniLM-L6-v2
+- Repositorio en Hugging Face: https://huggingface.co/tokiers/all-MiniLM-L6-v2
 - Modelo original: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Repositorio de tokie en GitHub: https://github.com/chonkie-inc/tokie

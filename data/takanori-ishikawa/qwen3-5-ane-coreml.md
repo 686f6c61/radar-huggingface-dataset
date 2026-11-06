@@ -85,24 +85,24 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Tamano total del repositorio: 47,3 GB, ya que incluye todas las variantes de modelo y contexto.
 - El artefacto de 0.8B es el unico claramente holgado para equipos con memoria unificada reducida; el de 4B a contexto 2048 (2.975 GiB) exige al menos un Mac con 16 GB de memoria unificada para operar con margen.
 - No cabe en GPU de consumo tipo RTX 4090 en el sentido habitual: los artefactos son Core ML y estan pensados para ANE, no para CUDA.
-- Opciones de despliegue: coremltools 9 y numpy desde Python con el driver `examples/generate.py`; el runtime Swift y la demo SwiftUI del autor no se distribuyen. El soporte de `inference: false` en la model card desaconseja su uso como pipeline estandar de HuggingFace.
+- Opciones de despliegue: coremltools 9 y numpy desde Python con el driver `examples/generate.py`; el runtime Swift y la demo SwiftUI del autor no se distribuyen. El soporte de `inference: false` en la model card desaconseja su uso como pipeline estandar de Hugging Face.
 - Latencia y throughput: no disponibles. El coste de decodificación crece con la longitud del búfer KV, que es estatico por artefacto, y no con la longitud del prompt.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Qwen3.5-ANE-CoreML (0.8B / 2B / 4B) | 0.8B, 2B, 4B | 2048, 8192 y 16384 segun artefacto | `.mlpackage` + embeddings int8 | Apache 2.0 | Publico en HuggingFace (625 descargas); runtime Swift no distribuido |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0.8B | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| Qwen/Qwen3.5-2B (modelo base) | 2B | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| Qwen/Qwen3.5-4B (modelo base) | 4B | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| Qwen3.5-ANE-CoreML (0.8B / 2B / 4B) | 0.8B, 2B, 4B | 2048, 8192 y 16384 segun artefacto | `.mlpackage` + embeddings int8 | Apache 2.0 | Publico en Hugging Face (625 descargas); runtime Swift no distribuido |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0.8B | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| Qwen/Qwen3.5-2B (modelo base) | 2B | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base) | 4B | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 No se dispone de datos comparativos de rendimiento ni de otras conversiones Core ML equivalentes en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, formato y licencia.
 
 ## Limitaciones y advertencias
 
 - Es una conversión no oficial: no está afiliada ni respaldada por el equipo Qwen, y la propia model card lo advierte.
-- La model card declara `inference: false`; el flujo de uso previsto no es el pipeline estandar de HuggingFace.
+- La model card declara `inference: false`; el flujo de uso previsto no es el pipeline estandar de Hugging Face.
 - El runtime Swift y la demo SwiftUI que soportan decodificación especulativa MTP no se distribuyen públicamente; el único driver disponible es Python con decodificación greedy de un token. Las sondas de medida tampoco se publican.
 - Formas estáticas: el contexto (`ctx`) es la longitud del búfer KV y el coste de decodificación crece con él aunque el prompt sea corto. 32K no compila para ANE con este grafo.
 - Límite del driver del ANE: desde macOS 26.6.2 / iOS 26.6.1 el kernel rechaza programas con 8 o más actualizaciones dinámicas de slice (`Number of SNE ops exceeded max allowed: 8`, error Core ML -14). Las funciones de verify solo son viables manteniendo K y V en un mismo estado por capa.
@@ -115,7 +115,7 @@ No se dispone de datos comparativos de rendimiento ni de otras conversiones Core
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/takanori-ishikawa/Qwen3.5-ANE-CoreML
+- Repositorio en Hugging Face: https://huggingface.co/takanori-ishikawa/Qwen3.5-ANE-CoreML
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B

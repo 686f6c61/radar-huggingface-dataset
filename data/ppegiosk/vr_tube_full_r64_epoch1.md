@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppegiosk/vr_tube_full_r64_epoch1` es un adaptador LoRA publicado con la librería PEFT sobre un modelo base que no se identifica de forma pública: el campo `base_model:adapter` apunta a una ruta local del sistema de ficheros del autor (`/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad`), no a un repositorio accesible de HuggingFace. El repositorio tiene un tamano de 0,0 GB declarado, 0 descargas y 0 likes, y su model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada.
+`ppegiosk/vr_tube_full_r64_epoch1` es un adaptador LoRA publicado con la librería PEFT sobre un modelo base que no se identifica de forma pública: el campo `base_model:adapter` apunta a una ruta local del sistema de ficheros del autor (`/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad`), no a un repositorio accesible de Hugging Face. El repositorio tiene un tamano de 0,0 GB declarado, 0 descargas y 0 likes, y su model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada.
 
 El identificador del adaptador sugiere, por convencion de nombrado, un rango LoRA de 64 (`r64`) y un entrenamiento de una sola epoca (`epoch1`), y el nombre del modelo base referenciado (`vr_base_chunk50_30k`) apunta a un ajuste previo sobre datos fragmentados en bloques de 50 con 30.000 pasos. Ninguno de estos extremos esta confirmado en la documentacion disponible, por lo que deben tratarse como inferencias a partir de la nomenclatura y no como especificaciones verificadas.
 
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ppegiosk/vr_tube_full_r64_epoch1
+- Repositorio en Hugging Face: https://huggingface.co/ppegiosk/vr_tube_full_r64_epoch1
 - Modelo base referenciado (ruta local, no accesible): `/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad`
 - Referencia citada en la plantilla de la model card (calculo de emisiones): Lacoste et al. (2019), https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental en machine learning: https://mlco2.github.io/impact

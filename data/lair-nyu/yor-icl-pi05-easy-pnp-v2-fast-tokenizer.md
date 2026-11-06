@@ -69,7 +69,7 @@ No se dispone de información sobre tokenizadores de acciones comparables en el 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del tokenizador](https://huggingface.co/lair-nyu/yor-icl-pi05-easy-pnp-v2-fast-tokenizer)
+- [Repositorio Hugging Face del tokenizador](https://huggingface.co/lair-nyu/yor-icl-pi05-easy-pnp-v2-fast-tokenizer)
 - [Modelo asociado `yor_icl_pi05_easy_pnp_v2_sanity15k`](https://huggingface.co/lair-nyu/yor_icl_pi05_easy_pnp_v2_sanity15k)
 - [Modelo expandido `yor_icl_pi05_expanded_full`](https://huggingface.co/lair-nyu/yor_icl_pi05_expanded_full)
 - [Tokenizador expandido que lo supera](https://huggingface.co/lair-nyu/yor-icl-expanded-fast-tokenizer)

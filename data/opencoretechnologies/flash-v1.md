@@ -4,7 +4,7 @@
 
 CORe Flash V1 es un modelo de lenguaje autorregresivo (decoder-only) de 168,5 millones de parámetros, desarrollado por CORe Technologies. Está entrenado desde cero sobre un corpus mixto de aproximadamente 328 millones de tokens que combina texto web, contenido enciclopédico y conversaciones. El modelo se presenta como un asistente ligero con un enfoque explícito en la alineación de seguridad: rechaza solicitudes dañinas y redirige al usuario hacia alternativas útiles.
 
-Su relevancia radica en su extrema ligereza: ocupa 338 MB en fp16 y solo 113 MB en cuantización Q4_K_M, lo que permite ejecutarlo en CPU sin GPU dedicada. No obstante, su contexto máximo es de 512 tokens y su vocabulario BPE de 16 384 tokens, lo que lo sitúa como una herramienta de demostración o para tareas muy acotadas, no como un asistente generalista. Utiliza una arquitectura personalizada (`COReForCausalLM`) que requiere `trust_remote_code=True` al cargarlo desde HuggingFace. La licencia es Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas.
+Su relevancia radica en su extrema ligereza: ocupa 338 MB en fp16 y solo 113 MB en cuantización Q4_K_M, lo que permite ejecutarlo en CPU sin GPU dedicada. No obstante, su contexto máximo es de 512 tokens y su vocabulario BPE de 16 384 tokens, lo que lo sitúa como una herramienta de demostración o para tareas muy acotadas, no como un asistente generalista. Utiliza una arquitectura personalizada (`COReForCausalLM`) que requiere `trust_remote_code=True` al cargarlo desde Hugging Face. La licencia es Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
 ## Especificaciones tecnicas
 
@@ -79,5 +79,5 @@ CORe Flash V1 tiene un contexto significativamente menor que GPT-2 y TinyLlama, 
 
 ## Enlaces
 
-- [HuggingFace: OpenCOReTechnologies/Flash-V1](https://huggingface.co/OpenCOReTechnologies/Flash-V1)
+- [Hugging Face: OpenCOReTechnologies/Flash-V1](https://huggingface.co/OpenCOReTechnologies/Flash-V1)
 - [Sitio web de OpenCORe (plataforma de chat, no específico del modelo)](https://opencore.one/)

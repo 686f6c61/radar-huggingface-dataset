@@ -25,7 +25,7 @@ Es relevante ahora porque cubre el hueco de los "modelos de decisión" para infr
 | Código | requiere `trust_remote_code=True` (tag `custom_code`, motor `vela2_engine`) |
 | Memoria de parámetros en GPU | aproximadamente 17 GB en FP32 (dato declarado por el autor) |
 | Publicación | creado el 2 de octubre de 2026; actualizado el 7 de octubre de 2026 |
-| Descargas y likes en HuggingFace | 166 descargas y 11 likes en el momento de la consulta |
+| Descargas y likes en Hugging Face | 166 descargas y 11 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 La columna vertebral es un decodificador de 32 capas tipo Qwen3.5 con dos mecanismos de atención combinados: Gated DeltaNet, una capa de atención lineal con memoria recurrente y compuertas, y gated GQA (Grouped Query Attention con puertas). Esta combinación híbrida es la que el autor asocia al tag de contexto largo, aunque el límite real de entrada documentado es de 16.384 tokens. Sobre la columna vertebral se montan cabezas de decisión en FP32 que emiten cuatro tipos de respuesta: elección entre opciones, sí/no, puntuación, span (con etiqueta, offsets de inicio y fin, texto y probabilidad) y conjunto (selección múltiple de etiquetas). El motor de decisiones se expone mediante código propio (`vela2_engine`) y un método `system_one` que acepta varias preguntas con nombre en una sola petición.
@@ -81,7 +81,7 @@ No hay datos comparativos publicados en la información disponible. Los únicos 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vela-2.0-4B | 4,21 B | 16.384 tokens | AUC macro de seguridad 0,921 en 14 conjuntos | Apache-2.0 | HuggingFace |
+| Vela-2.0-4B | 4,21 B | 16.384 tokens | AUC macro de seguridad 0,921 en 14 conjuntos | Apache-2.0 | Hugging Face |
 | Modelos comparables de enrutamiento o seguridad | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No hay datos comparativos publicados en la información disponible. Los únicos 
 - La fecha de publicación y actualización del repositorio (octubre de 2026) y el bajo número de descargas (166) indican una adopción todavía temprana y poca validación externa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/Vela-2.0-4B
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/Vela-2.0-4B
 - Colección Vela 2.0: https://huggingface.co/collections/vllm-sr/vela-20
 - Documentación del proyecto: https://vllm-sr.ai/
 - Blog de presentación: https://vllm-sr.ai/blog/vela-2-0-open-foundation-routing-models

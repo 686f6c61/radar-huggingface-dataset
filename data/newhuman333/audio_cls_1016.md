@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`newhuman333/audio_cls_1016` es un modelo de clasificacion de audio publicado en HuggingFace por el usuario `newhuman333`. Se trata de un fine-tuning de `Kkonjeong/wav2vec2-base-korean`, un checkpoint de wav2vec2-base adaptado previamente al coreano. El modelo se distribuye con la libreria Transformers y el pipeline `audio-classification`, con pesos en formato safetensors y un total de 94.572.174 parametros (aproximadamente 0,4 GB de repositorio).
+`newhuman333/audio_cls_1016` es un modelo de clasificacion de audio publicado en Hugging Face por el usuario `newhuman333`. Se trata de un fine-tuning de `Kkonjeong/wav2vec2-base-korean`, un checkpoint de wav2vec2-base adaptado previamente al coreano. El modelo se distribuye con la libreria Transformers y el pipeline `audio-classification`, con pesos en formato safetensors y un total de 94.572.174 parametros (aproximadamente 0,4 GB de repositorio).
 
 El problema que resuelve es la clasificacion de fragmentos de audio en categorias cerradas, una tarea tipica en deteccion de eventos sonoros, control de calidad de grabaciones o moderacion de contenido acustico. Segun la model card, el entrenamiento se realizo sobre un dataset no identificado ("unknown dataset") y los resultados declarados en el conjunto de evaluacion son pobres: una perdida de 2,6623 y una exactitud de 0,0504, es decir, en torno al 5 %.
 
@@ -82,16 +82,16 @@ La perdida permanece practicamente plana en torno a 2,66 durante las diez epocas
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Una RTX 3060, RTX 4090, T4, A100 o H100 son mas que suficientes; el modelo esta muy por debajo de la capacidad de todas ellas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada de los ultimos diez anos, e incluso en iGPU con memoria compartida.
 - Ejecucion en CPU: viable para inferencia por lotes pequenos, dado el tamano del modelo.
-- Opciones de despliegue: pipeline `audio-classification` de Transformers, `Trainer` para reentrenamiento, HuggingFace Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`). vLLM y TGI no aplican a un modelo de clasificacion de audio. La conversion a ONNX o TorchScript es factible, aunque no esta documentada por el autor.
+- Opciones de despliegue: pipeline `audio-classification` de Transformers, `Trainer` para reentrenamiento, Hugging Face Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`). vLLM y TGI no aplican a un modelo de clasificacion de audio. La conversion a ONNX o TorchScript es factible, aunque no esta documentada por el autor.
 - Latencia y throughput: no disponibles. No se publican mediciones de tiempo de inferencia ni de clips por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `newhuman333/audio_cls_1016` | 94.572.174 | Audio en bruto, duracion no especificada | Accuracy 0,0504 en su conjunto de evaluacion | No disponible | Publico en HuggingFace, 0 descargas |
-| `Kkonjeong/wav2vec2-base-korean` (modelo base) | ~94,4 M (wav2vec2-base) | Audio en bruto | No disponible en la informacion proporcionada | No disponible | Publico en HuggingFace |
-| `getupsun/audio_cls` | No disponible | Audio en bruto | No disponible | No disponible | Publico en HuggingFace |
+| `newhuman333/audio_cls_1016` | 94.572.174 | Audio en bruto, duracion no especificada | Accuracy 0,0504 en su conjunto de evaluacion | No disponible | Publico en Hugging Face, 0 descargas |
+| `Kkonjeong/wav2vec2-base-korean` (modelo base) | ~94,4 M (wav2vec2-base) | Audio en bruto | No disponible en la informacion proporcionada | No disponible | Publico en Hugging Face |
+| `getupsun/audio_cls` | No disponible | Audio en bruto | No disponible | No disponible | Publico en Hugging Face |
 | wav2vec2-base original (referencia de arquitectura) | ~95 M | Audio en bruto | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos, ya que ninguno de los resultados de la busqueda incluye metricas de evaluacion comparables. La comparativa se limita, por tanto, a parametros y disponibilidad.
@@ -111,7 +111,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/newhuman333/audio_cls_1016
+- Modelo en Hugging Face: https://huggingface.co/newhuman333/audio_cls_1016
 - Modelo base: https://huggingface.co/Kkonjeong/wav2vec2-base-korean
 - Modelo similar encontrado en la busqueda: https://huggingface.co/getupsun/audio_cls
 - Repositorio de investigacion en audio: https://github.com/BinWang28/audio-ai-hub

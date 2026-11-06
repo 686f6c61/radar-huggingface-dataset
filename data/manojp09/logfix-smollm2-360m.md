@@ -82,8 +82,8 @@ No se han publicado en la informacion disponible otros benchmarks estandar (MMLU
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ManojP09/logfix-smollm2-360m | Adaptador de 8,68M sobre base de 360M | No disponible | Explicacion de errores de Python en cuatro secciones | No disponible | HuggingFace (0 descargas) |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360M aproximadamente | No disponible en esta informacion | Instrucciones de proposito general | No disponible en esta informacion | HuggingFace (modelo base) |
+| ManojP09/logfix-smollm2-360m | Adaptador de 8,68M sobre base de 360M | No disponible | Explicacion de errores de Python en cuatro secciones | No disponible | Hugging Face (0 descargas) |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360M aproximadamente | No disponible en esta informacion | Instrucciones de proposito general | No disponible en esta informacion | Hugging Face (modelo base) |
 | Otros adaptadores de depuracion sobre modelos pequenos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de resultados de benchmarks que permitan comparar el rendimiento de este adaptador con alternativas de la misma categoria.
@@ -102,6 +102,6 @@ No se dispone en la informacion proporcionada de resultados de benchmarks que pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ManojP09/logfix-smollm2-360m
+- Modelo en Hugging Face: https://huggingface.co/ManojP09/logfix-smollm2-360m
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - No se han proporcionado en la informacion disponible enlaces adicionales a papers, blogs, repositorios o demos.

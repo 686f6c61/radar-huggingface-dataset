@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perplexity (search_context_size=low) es un stub de model card publicado en HuggingFace por el equipo de OpenBenchmarks. No contiene pesos de modelo, sino que representa un endpoint de la API de búsqueda de Perplexity para que pueda aparecer en el leaderboard oficial del benchmark OB News Websearch. Su propósito es permitir la evaluación comparativa de capacidades de búsqueda web en tiempo real, no la generación de texto.
+Perplexity (search_context_size=low) es un stub de model card publicado en Hugging Face por el equipo de OpenBenchmarks. No contiene pesos de modelo, sino que representa un endpoint de la API de búsqueda de Perplexity para que pueda aparecer en el leaderboard oficial del benchmark OB News Websearch. Su propósito es permitir la evaluación comparativa de capacidades de búsqueda web en tiempo real, no la generación de texto.
 
 El modelo se enmarca en la categoría de "web search" y utiliza una configuración específica de contexto de búsqueda (`search_context_size=low`). Es relevante porque permite a desarrolladores e investigadores comparar la calidad de respuestas basadas en búsqueda web de Perplexity frente a otros sistemas en un benchmark estandarizado, sin necesidad de desplegar infraestructura local.
 
@@ -68,7 +68,7 @@ No disponible. Al tratarse de un stub de API sin pesos, no es comparable directa
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/openbenchmarks/perplexity-low
+- Model card en Hugging Face: https://huggingface.co/openbenchmarks/perplexity-low
 - Documentación de la API de Perplexity: https://docs.perplexity.ai/api-reference/search-post
 - Benchmark OB News Websearch: https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch
 - Servicio en vivo de Perplexity: https://www.perplexity.ai

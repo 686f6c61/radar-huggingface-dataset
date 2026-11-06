@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ultravox v0.7 es un modelo multimodal de tipo Speech LLM que acepta entrada de audio y texto de forma conjunta y genera texto como salida. Lo desarrolla Ultravox.ai (el repositorio de la organizacion `aoiandroid` en HuggingFace es un espejo o reempaquetado de los pesos publicados por el equipo original). Combina un encoder de voz derivado de `openai/whisper-large-v3-turbo` con un LLM preentrenado como backbone (GLM 4.6 en esta variante) y un adaptador multimodal entrenado que proyecta las representaciones de audio al espacio de embeddings del LLM. La entrada se construye con un prompt de texto que incluye el pseudo-token especial `<|audio|>`, que el procesador sustituye por los embeddings del audio.
+Ultravox v0.7 es un modelo multimodal de tipo Speech LLM que acepta entrada de audio y texto de forma conjunta y genera texto como salida. Lo desarrolla Ultravox.ai (el repositorio de la organizacion `aoiandroid` en Hugging Face es un espejo o reempaquetado de los pesos publicados por el equipo original). Combina un encoder de voz derivado de `openai/whisper-large-v3-turbo` con un LLM preentrenado como backbone (GLM 4.6 en esta variante) y un adaptador multimodal entrenado que proyecta las representaciones de audio al espacio de embeddings del LLM. La entrada se construye con un prompt de texto que incluye el pseudo-token especial `<|audio|>`, que el procesador sustituye por los embeddings del audio.
 
 El problema que resuelve es el razonamiento hablado: el modelo no solo transcribe voz, sino que responde a preguntas, sigue instrucciones y resuelve tareas de razonamiento sobre contenido hablado. En la serie v0.7, la variante entrenada sobre GLM 4.6 declara superar a `gpt4o-audio` en tareas de razonamiento sobre audio (big bench audio) y en la puntuacion global de VoiceBench, manteniendo buen rendimiento en traduccion de voz (covost2) y reconocimiento (LibriSpeech). Es relevante para quien construye asistentes de voz, pipelines de comprension de audio o agentes conversacionales por voz.
 
@@ -92,10 +92,10 @@ Nota: en VoiceBench y big bench audio se emplean prompts de sistema personalizad
 
 | Modelo | Parametros | big bench audio | voicebench | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ultravox v0_7-glm-4_6 | 737 M (safetensors) | 97.00 (reasoning) | 90.75 | MIT | safetensors | HuggingFace |
-| Ultravox v0_6-llama-3_3-70b | ~70 B backbone | 85.48 | 81.81 | MIT (serie Ultravox) | safetensors | HuggingFace |
-| Ultravox v0_6-gemma-3-27b | ~27 B backbone | 83.84 | – | MIT (serie Ultravox) | safetensors | HuggingFace |
-| Ultravox v0_6-qwen-3-32b | ~32 B backbone | 84.22 | – | MIT (serie Ultravox) | safetensors | HuggingFace |
+| Ultravox v0_7-glm-4_6 | 737 M (safetensors) | 97.00 (reasoning) | 90.75 | MIT | safetensors | Hugging Face |
+| Ultravox v0_6-llama-3_3-70b | ~70 B backbone | 85.48 | 81.81 | MIT (serie Ultravox) | safetensors | Hugging Face |
+| Ultravox v0_6-gemma-3-27b | ~27 B backbone | 83.84 | – | MIT (serie Ultravox) | safetensors | Hugging Face |
+| Ultravox v0_6-qwen-3-32b | ~32 B backbone | 84.22 | – | MIT (serie Ultravox) | safetensors | Hugging Face |
 | gpt4o-audio | no disponible (cerrado) | 82.80 | 86.75 | propietaria | API | Solo API |
 
 No se dispone de datos de contexto, tipos de cuantizacion ni de latencia para realizar una comparacion mas detallada con alternativas como Qwen2-Audio o SALMONN.
@@ -114,7 +114,7 @@ No se dispone de datos de contexto, tipos de cuantizacion ni de latencia para re
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/aoiandroid/ultravox-v0_7-glm-4_6
+- Hugging Face del modelo: https://huggingface.co/aoiandroid/ultravox-v0_7-glm-4_6
 - Repositorio y sitio oficial de Ultravox: https://ultravox.ai
 - Codigo de entrenamiento: https://github.com/fixie-ai/ultravox/blob/main/ultravox/training/train.py
 - Encoder de audio: https://huggingface.co/openai/whisper-large-v3-turbo

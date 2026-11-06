@@ -2,7 +2,7 @@
 
 ## Resumen
 
-beans-vit es un modelo de clasificacion de imagenes obtenido mediante fine-tuning de google/vit-base-patch16-224 sobre el conjunto de datos AI-Lab-Makerere/beans, que contiene fotografias de hojas de judia (Phaseolus vulgaris) etiquetadas con tres clases: angular_leaf_spot (mancha angular), bean_rust (roya) y healthy (sana). El autor es el usuario de HuggingFace lustachowicz y el modelo se desarrollo como parte del Laboratorio 1 de la asignatura Przetwarzanie Danych w Chmurze (procesamiento de datos en la nube).
+beans-vit es un modelo de clasificacion de imagenes obtenido mediante fine-tuning de google/vit-base-patch16-224 sobre el conjunto de datos AI-Lab-Makerere/beans, que contiene fotografias de hojas de judia (Phaseolus vulgaris) etiquetadas con tres clases: angular_leaf_spot (mancha angular), bean_rust (roya) y healthy (sana). El autor es el usuario de Hugging Face lustachowicz y el modelo se desarrollo como parte del Laboratorio 1 de la asignatura Przetwarzanie Danych w Chmurze (procesamiento de datos en la nube).
 
 Se trata de un transformer de vision (ViT) denso de aproximadamente 85,8 millones de parametros, derivado de la arquitectura ViT-Base con parches de 16x16 y resolucion de entrada de 224x224. El modelo resuelve una tarea concreta de clasificacion multiclase (3 clases) orientada a la deteccion temprana de enfermedades foliares en cultivos, un caso de uso habitual en agricultura de precision.
 
@@ -39,7 +39,7 @@ El entrenamiento consistio en un fine-tuning del checkpoint google/vit-base-patc
 - Clasificacion de imagenes de hojas de judia en tres categorias: angular_leaf_spot, bean_rust y healthy.
 - Devuelve puntuaciones de probabilidad por clase, lo que permite umbrales de confianza y analisis de incertidumbre.
 - Funciona con el pipeline `image-classification` de la libreria transformers, lo que facilita su integracion en flujos existentes.
-- Compatible con endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Compatible con endpoints de Hugging Face (etiqueta endpoints_compatible).
 - No soporta tool calling, function calling ni razonamiento multi-paso: es un clasificador, no un modelo generativo.
 - No tiene capacidades multilingues ni de generacion de texto, codigo o matematicas.
 - No dispone de modo de razonamiento (thinking mode), vision adicional, audio ni otras capacidades especiales.
@@ -78,7 +78,7 @@ El autor incluye una matriz de confusion en `assets/confusion_matrix.png`. No se
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o en CPU.
 - El propio autor realizo el entrenamiento en CPU, lo que confirma que la inferencia es viable sin GPU dedicada.
 - GPUs de datacenter (A100, H100) no son necesarias para este modelo; solo tendrian sentido para servir lotes masivos en paralelo.
-- Opciones de despliegue: pipeline de transformers, endpoints de HuggingFace (etiqueta endpoints_compatible), TorchServe, ONNX Runtime o conversion a TensorRT. No se mencionan soportes especificos de vLLM, llama.cpp ni Ollama, que no aplican a un modelo de vision de este tipo.
+- Opciones de despliegue: pipeline de transformers, endpoints de Hugging Face (etiqueta endpoints_compatible), TorchServe, ONNX Runtime o conversion a TensorRT. No se mencionan soportes especificos de vLLM, llama.cpp ni Ollama, que no aplican a un modelo de vision de este tipo.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. El tamano del modelo sugiere latencias de pocos milisegundos por imagen en GPU moderna y decenas de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -87,8 +87,8 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lustachowicz/beans-vit | 85,8 M | Clasificacion de 3 clases de hojas de judia | Imagen 224x224 | no disponible | HuggingFace |
-| google/vit-base-patch16-224 (modelo base) | 85,8 M | Clasificacion de imagenes en ImageNet (1000 clases) | Imagen 224x224 | Apache 2.0 (segun el modelo original) | HuggingFace |
+| lustachowicz/beans-vit | 85,8 M | Clasificacion de 3 clases de hojas de judia | Imagen 224x224 | no disponible | Hugging Face |
+| google/vit-base-patch16-224 (modelo base) | 85,8 M | Clasificacion de imagenes en ImageNet (1000 clases) | Imagen 224x224 | Apache 2.0 (segun el modelo original) | Hugging Face |
 | Otros clasificadores de enfermedades foliares | no disponible | Clasificacion de enfermedades en hojas | no disponible | no disponible | no disponible |
 
 La comparacion directa con alternativas especializadas en el mismo dataset no es posible con los datos disponibles. El modelo base google/vit-base-patch16-224 es el punto de referencia natural, ya que beans-vit es un fine-tuning suyo.
@@ -106,7 +106,7 @@ La comparacion directa con alternativas especializadas en el mismo dataset no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lustachowicz/beans-vit
+- Modelo en Hugging Face: https://huggingface.co/lustachowicz/beans-vit
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224
 - Dataset de fine-tuning: https://huggingface.co/datasets/AI-Lab-Makerere/beans
 - Matriz de confusion: assets/confusion_matrix.png (incluida en el repositorio del modelo)

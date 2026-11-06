@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pirate-speak-0.5b | 494M | no disponible | Sin benchmarks publicados; utilidad factual degradada respecto al base | apache-2.0 | HuggingFace, safetensors float32 |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 494M (0,5B) | no disponible en la informacion proporcionada | Sin benchmarks en la informacion disponible; respuestas detalladas y utiles segun los ejemplos de la model card | apache-2.0 | HuggingFace |
+| pirate-speak-0.5b | 494M | no disponible | Sin benchmarks publicados; utilidad factual degradada respecto al base | apache-2.0 | Hugging Face, safetensors float32 |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 494M (0,5B) | no disponible en la informacion proporcionada | Sin benchmarks en la informacion disponible; respuestas detalladas y utiles segun los ejemplos de la model card | apache-2.0 | Hugging Face |
 | Alternativas de tamano comparable (otros modelos ~0,5B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos comparables en la informacion proporcionada, por lo que la unica comparacion verificable es contra el modelo base, del que este repositorio es un derivado directo.
@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alvinchirchir/pirate-speak-0.5b
+- Modelo en Hugging Face: https://huggingface.co/alvinchirchir/pirate-speak-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Licencia incluida en el repositorio: https://huggingface.co/alvinchirchir/pirate-speak-0.5b/blob/main/LICENSE
 - Referencia arXiv incluida en los tags del repositorio: arxiv:2407.10671 (https://arxiv.org/abs/2407.10671)

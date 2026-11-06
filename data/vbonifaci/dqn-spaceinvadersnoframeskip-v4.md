@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vbonifaci/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario vbonifaci en HuggingFace y se ha generado con el framework RL Zoo sobre Stable Baselines3, la librería de referencia para agentes de RL en PyTorch. No es un modelo de lenguaje ni un modelo generativo de propósito general: es una política de control entrenada para maximizar la recompensa en un único entorno.
+El modelo `vbonifaci/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario vbonifaci en Hugging Face y se ha generado con el framework RL Zoo sobre Stable Baselines3, la librería de referencia para agentes de RL en PyTorch. No es un modelo de lenguaje ni un modelo generativo de propósito general: es una política de control entrenada para maximizar la recompensa en un único entorno.
 
 El agente se entrenó durante 1.000.000 de pasos de entorno con una política convolucional (`CnnPolicy`), observaciones de cuatro fotogramas apilados y un búfer de repetición de 100.000 transiciones. El resultado declarado por el autor es una recompensa media de 596,50 con una desviación típica de 198,94 en el entorno de evaluación, una métrica que no está verificada por terceros.
 
@@ -103,9 +103,9 @@ La informacion proporcionada no incluye metricas de otros agentes sobre `SpaceIn
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vbonifaci/dqn-SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | mean_reward 596,50 +/- 198,94 | no disponible | HuggingFace |
-| Otros agentes DQN del RL Zoo para el mismo entorno | no disponible | no aplica | no disponible | no disponible | RL Zoo / HuggingFace |
-| Agentes con algoritmos alternativos (PPO, A2C, QR-DQN, Rainbow) sobre el mismo entorno | no disponible | no aplica | no disponible | no disponible | RL Zoo / HuggingFace |
+| vbonifaci/dqn-SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | mean_reward 596,50 +/- 198,94 | no disponible | Hugging Face |
+| Otros agentes DQN del RL Zoo para el mismo entorno | no disponible | no aplica | no disponible | no disponible | RL Zoo / Hugging Face |
+| Agentes con algoritmos alternativos (PPO, A2C, QR-DQN, Rainbow) sobre el mismo entorno | no disponible | no aplica | no disponible | no disponible | RL Zoo / Hugging Face |
 | DQN de referencia de la literatura (Nature, 2015) | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | publicacion cientifica |
 
 ## Limitaciones y advertencias
@@ -123,7 +123,7 @@ La informacion proporcionada no incluye metricas de otros agentes sobre `SpaceIn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vbonifaci/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/vbonifaci/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

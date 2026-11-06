@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Leoputan/deco-humanlm-8b-deco-lora` es un repositorio publicado en HuggingFace por el usuario Leoputan. Por la nomenclatura del identificador y el tag `qwen3` asociado al repositorio, todo apunta a un adaptador LoRA (el sufijo `-lora` y un tamano de repositorio de solo 0,2 GB son coherentes con pesos de adaptador, no con un modelo completo) destinado a un modelo base de la familia Qwen3, presumiblemente de 8.000 millones de parametros. Sin embargo, la model card publicada no contiene mas que la linea de licencia `apache-2.0`: no hay descripcion, ni datos de entrenamiento, ni instrucciones de uso, ni resultados de evaluacion.
+`Leoputan/deco-humanlm-8b-deco-lora` es un repositorio publicado en Hugging Face por el usuario Leoputan. Por la nomenclatura del identificador y el tag `qwen3` asociado al repositorio, todo apunta a un adaptador LoRA (el sufijo `-lora` y un tamano de repositorio de solo 0,2 GB son coherentes con pesos de adaptador, no con un modelo completo) destinado a un modelo base de la familia Qwen3, presumiblemente de 8.000 millones de parametros. Sin embargo, la model card publicada no contiene mas que la linea de licencia `apache-2.0`: no hay descripcion, ni datos de entrenamiento, ni instrucciones de uso, ni resultados de evaluacion.
 
 El problema que resuelve y el dominio de aplicacion son, por tanto, desconocidos. El nombre `deco-humanlm` sugiere un ajuste orientado a generar texto con un registro mas "humano" o natural, pero esto es una interpretacion del nombre y no un dato confirmado por el autor.
 
@@ -17,7 +17,7 @@ En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 like
 | Parametros activos | No aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. El repositorio esta en `safetensors`; no se publican versiones GGUF, AWQ ni GPTQ |
-| Idiomas soportados | No disponible. El campo de idiomas de HuggingFace no esta informado |
+| Idiomas soportados | No disponible. El campo de idiomas de Hugging Face no esta informado |
 | Licencia | apache-2.0 (declarada en la model card y en los tags del repositorio) |
 | Formato de pesos | safetensors (adaptador LoRA, 0,2 GB de repositorio) |
 
@@ -82,6 +82,6 @@ Como referencia estructural, un adaptador LoRA de 8B es comparable en formato y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Leoputan/deco-humanlm-8b-deco-lora
+- Repositorio en Hugging Face: https://huggingface.co/Leoputan/deco-humanlm-8b-deco-lora
 - Perfil del autor: https://huggingface.co/Leoputan
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo.

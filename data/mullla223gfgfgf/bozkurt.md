@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bozkurt es un modelo publicado en HuggingFace por el usuario Mullla223gfgfgf, derivado mediante fine-tuning del modelo base OpenMOSS-Team/MOSS-Image-Base. El modelo base pertenece a la familia MOSS-Image de OpenMOSS, orientada a tareas de generacion y procesamiento de imagenes, aunque la model card publicada por el autor no aporta detalles sobre la arquitectura exacta ni sobre el proceso de entrenamiento aplicado. La unica informacion disponible indica que se trata de un fine-tune con idioma declarado turco (tr) y licencia openrail.
+Bozkurt es un modelo publicado en Hugging Face por el usuario Mullla223gfgfgf, derivado mediante fine-tuning del modelo base OpenMOSS-Team/MOSS-Image-Base. El modelo base pertenece a la familia MOSS-Image de OpenMOSS, orientada a tareas de generacion y procesamiento de imagenes, aunque la model card publicada por el autor no aporta detalles sobre la arquitectura exacta ni sobre el proceso de entrenamiento aplicado. La unica informacion disponible indica que se trata de un fine-tune con idioma declarado turco (tr) y licencia openrail.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye pipeline declarado, no presenta resultados de benchmarks propios y cuenta con cero descargas y cero likes en el momento de la consulta. La model card se reduce a un bloque de metadatos YAML con la licencia, el idioma, una metrica de fluidez (Baleegh/Fluency_Score), el modelo base y una referencia a una version posterior (OpenMOSS-Team/MOSS-Image-SFT).
 
@@ -44,7 +44,7 @@ La model card unicamente declara el uso de la metrica Baleegh/Fluency_Score, lo 
 - Investigacion academica sobre fluidez: la metrica declarada (Baleegh/Fluency_Score) permite reproducir evaluaciones de fluidez y compararlas con otros fine-tunes, siempre que se documente el protocolo.
 - Prototipado interno sin requisitos de soporte: al estar bajo licencia openrail y contar con cero descargas, es adecuado para entornos de laboratorio donde no se exige mantenimiento ni garantias del autor.
 - Evaluacion comparativa de fine-tunes comunitarios: util para estudiar como pequenos ajustes sobre un mismo modelo base afectan al comportamiento, dentro de un estudio mas amplio de variantes.
-- Docencia y formacion: puede emplearse como ejemplo practico de publicacion de un fine-tune en HuggingFace y de los riesgos de model cards incompletas.
+- Docencia y formacion: puede emplearse como ejemplo practico de publicacion de un fine-tune en Hugging Face y de los riesgos de model cards incompletas.
 
 ## Benchmarks y rendimiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bozkurt (Mullla223gfgfgf) | no disponible | no disponible | openrail | HuggingFace, 0 descargas |
-| OpenMOSS-Team/MOSS-Image-Base | no disponible | no disponible | no disponible en la informacion | HuggingFace (modelo base) |
-| OpenMOSS-Team/MOSS-Image-SFT | no disponible | no disponible | no disponible en la informacion | HuggingFace (version posterior referenciada) |
+| Bozkurt (Mullla223gfgfgf) | no disponible | no disponible | openrail | Hugging Face, 0 descargas |
+| OpenMOSS-Team/MOSS-Image-Base | no disponible | no disponible | no disponible en la informacion | Hugging Face (modelo base) |
+| OpenMOSS-Team/MOSS-Image-SFT | no disponible | no disponible | no disponible en la informacion | Hugging Face (version posterior referenciada) |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mullla223gfgfgf/Bozkurt
+- Modelo en Hugging Face: https://huggingface.co/Mullla223gfgfgf/Bozkurt
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Version posterior referenciada: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

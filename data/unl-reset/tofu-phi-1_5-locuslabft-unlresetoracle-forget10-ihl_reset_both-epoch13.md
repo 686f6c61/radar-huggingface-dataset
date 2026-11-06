@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch13 (este) | 1.418 M | 2048 | Apache 2.0 | Checkpoint de *unlearning* sobre TOFU | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_phi-1.5 | 1.418 M | 2048 | Apache 2.0 | Modelo base ajustado a TOFU (sin olvido) | HuggingFace |
-| microsoft/phi-1_5 | 1.418 M | 2048 | MIT | Modelo de lenguaje y código de propósito general | HuggingFace, ampliamente usado |
-| Otros checkpoints TOFU de `unl-reset` | 1.418 M | 2048 | Apache 2.0 | Variantes de *unlearning* (distintas particiones y épocas) | HuggingFace |
+| unl-reset/tofu-phi-1_5-...-epoch13 (este) | 1.418 M | 2048 | Apache 2.0 | Checkpoint de *unlearning* sobre TOFU | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_phi-1.5 | 1.418 M | 2048 | Apache 2.0 | Modelo base ajustado a TOFU (sin olvido) | Hugging Face |
+| microsoft/phi-1_5 | 1.418 M | 2048 | MIT | Modelo de lenguaje y código de propósito general | Hugging Face, ampliamente usado |
+| Otros checkpoints TOFU de `unl-reset` | 1.418 M | 2048 | Apache 2.0 | Variantes de *unlearning* (distintas particiones y épocas) | Hugging Face |
 
 La comparación relevante es con `locuslab/tofu_ft_phi-1.5` (referencia sin olvido) y con `microsoft/phi-1_5` (modelo original). No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -85,7 +85,7 @@ La comparación relevante es con `locuslab/tofu_ft_phi-1.5` (referencia sin olvi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch13
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch13
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

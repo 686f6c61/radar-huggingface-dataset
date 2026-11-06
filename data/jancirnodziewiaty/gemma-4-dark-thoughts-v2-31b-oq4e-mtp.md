@@ -86,6 +86,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/Gemma-4-Dark-Thoughts-V2-31B-oQ4e-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/Gemma-4-Dark-Thoughts-V2-31B-oQ4e-mtp
 - Modelo base: https://huggingface.co/Ateron/Gemma-4-Dark-Thoughts-V2-31B
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx

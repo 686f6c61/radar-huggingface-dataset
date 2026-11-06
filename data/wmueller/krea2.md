@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wmueller/krea2` es un repositorio de HuggingFace publicado por el usuario wmueller que distribuye pesos en formato GGUF (17,4 GB de repositorio, 12.820.073.036 parametros segun los metadatos de safetensors) bajo licencia Apache 2.0. La nomenclatura y los resultados de busqueda asociados apuntan a que se trata de una redistribucion del modelo de generacion de imagenes Krea 2 de Krea AI, cuya version oficial se publica como codigo de inferencia en el repositorio krea-ai/krea-2 y en dos variantes en HuggingFace (RAW y TURBO). No se trata, por tanto, del repositorio oficial de Krea AI.
+`wmueller/krea2` es un repositorio de Hugging Face publicado por el usuario wmueller que distribuye pesos en formato GGUF (17,4 GB de repositorio, 12.820.073.036 parametros segun los metadatos de safetensors) bajo licencia Apache 2.0. La nomenclatura y los resultados de busqueda asociados apuntan a que se trata de una redistribucion del modelo de generacion de imagenes Krea 2 de Krea AI, cuya version oficial se publica como codigo de inferencia en el repositorio krea-ai/krea-2 y en dos variantes en Hugging Face (RAW y TURBO). No se trata, por tanto, del repositorio oficial de Krea AI.
 
 El modelo subyacente, Krea 2, se describe en el blog de Krea AI como un modelo fundacional de imagen entrenado desde cero, orientado a diversidad estetica, control de estilo, mezcla de estilos y flujos de trabajo creativos. El repositorio analizado no aporta ninguna ficha tecnica propia: su model card se limita a la declaracion de licencia `apache-2.0`, sin descripcion de arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso.
 
@@ -78,10 +78,10 @@ Los datos de la columna de Krea 2 oficial proceden de la informacion de busqueda
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| wmueller/krea2 (este repositorio) | 12.820.073.036 | no disponible | apache-2.0 (declarada por el tercero) | GGUF | HuggingFace, 36 descargas |
-| Krea 2 RAW (oficial) | no disponible | no disponible | no disponible | no disponible | HuggingFace, referenciado desde GitHub krea-ai/krea-2 |
-| Krea 2 TURBO (oficial) | no disponible | no disponible | no disponible | no disponible | HuggingFace, referenciado desde GitHub krea-ai/krea-2 |
-| Alternativas abiertas de ~12B para generacion de imagenes (por ejemplo FLUX.1 [dev]) | ~12 mil millones | no disponible | no comercial en varias variantes | safetensors, GGUF | HuggingFace |
+| wmueller/krea2 (este repositorio) | 12.820.073.036 | no disponible | apache-2.0 (declarada por el tercero) | GGUF | Hugging Face, 36 descargas |
+| Krea 2 RAW (oficial) | no disponible | no disponible | no disponible | no disponible | Hugging Face, referenciado desde GitHub krea-ai/krea-2 |
+| Krea 2 TURBO (oficial) | no disponible | no disponible | no disponible | no disponible | Hugging Face, referenciado desde GitHub krea-ai/krea-2 |
+| Alternativas abiertas de ~12B para generacion de imagenes (por ejemplo FLUX.1 [dev]) | ~12 mil millones | no disponible | no comercial en varias variantes | safetensors, GGUF | Hugging Face |
 
 La comparacion directa de rendimiento no es posible porque no hay benchmarks publicados en la informacion disponible para ninguna de las variantes de Krea 2.
 
@@ -94,13 +94,13 @@ La comparacion directa de rendimiento no es posible porque no hay benchmarks pub
 - Riesgo de alucinacion visual: como cualquier modelo generativo de imagen, puede producir elementos anatomicamente incorrectos, texto ilegible o detalles incoherentes con el prompt, especialmente en escenas con muchas entidades.
 - Ausencia de validacion comunitaria: 36 descargas y 0 likes indican que el repositorio no ha sido contrastado por la comunidad; no hay issues, discusiones ni reportes de calidad.
 - Sin soporte de idiomas documentado: se desconoce que lenguas maneja bien el codificador de texto asociado, lo que afecta directamente a la calidad con prompts en castellano.
-- Ambiguedad sobre la tarea: aunque los indicios apuntan a un modelo de generacion de imagenes, el repositorio no lo declara de forma explicita; el campo `pipeline` no esta disponible en HuggingFace.
+- Ambiguedad sobre la tarea: aunque los indicios apuntan a un modelo de generacion de imagenes, el repositorio no lo declara de forma explicita; el campo `pipeline` no esta disponible en Hugging Face.
 - Pesos cuantizados no aptos para entrenamiento: el formato GGUF esta pensado para inferencia. Cualquier ajuste fino o entrenamiento de LoRA requeriria los pesos originales sin cuantizar.
 - Sin datos de rendimiento: no hay cifras de latencia ni de throughput, por lo que la planificacion de capacidad en produccion tendria que hacerse con pruebas propias.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wmueller/krea2
+- Repositorio en Hugging Face: https://huggingface.co/wmueller/krea2
 - Arbol de ficheros del repositorio: https://huggingface.co/wmueller/krea2/tree/main
 - Pagina oficial de Krea 2: https://www.krea.ai/krea-2
 - Blog tecnico de Krea 2 (Krea AI): https://www.krea.ai/blog/krea-2-image-model

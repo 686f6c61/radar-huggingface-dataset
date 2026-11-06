@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr8e-4-adapter | 350M (base) + LoRA | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| LiquidAI/LFM2.5-350M (modelo base) | 350M | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| SmolLM2-360M (HuggingFace) | 360M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr8e-4-adapter | 350M (base) + LoRA | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| LiquidAI/LFM2.5-350M (modelo base) | 350M | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| SmolLM2-360M (Hugging Face) | 360M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparativa con alternativas de la misma categoria (modelos de ~350M) queda limitada por la falta de datos de rendimiento y contexto en la informacion proporcionada. El adaptador no aporta mejoras documentadas frente al modelo base, por lo que su valor diferencial no puede cuantificarse.
 
@@ -83,6 +83,6 @@ La comparativa con alternativas de la misma categoria (modelos de ~350M) queda l
 
 ## Enlaces
 
-- [HuggingFace: lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr8e-4-adapter](https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr8e-4-adapter)
+- [Hugging Face: lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr8e-4-adapter](https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr8e-4-adapter)
 - [Modelo base: LiquidAI/LFM2.5-350M](https://huggingface.co/LiquidAI/LFM2.5-350M)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)

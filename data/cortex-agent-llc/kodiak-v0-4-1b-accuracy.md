@@ -22,7 +22,7 @@ La relevancia de la version 0.4 radica en dos correcciones concretas respecto a 
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 12,5 GB |
 | Libreria de inferencia | kodiak (propietaria) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Modelo base | jhu-clsp/ettin-encoder-1b |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-09 |
@@ -99,7 +99,7 @@ En datos reales no vistos durante el entrenamiento (habilidad corregida por azar
 - VRAM estimada: cada miembro tiene ~1.040 millones de parametros. En precision completa (fp32) cada miembro ocupa aproximadamente 4,2 GB, lo que da unos 12,5 GB para los tres (coincide con el tamano del repositorio). En fp16/bf16 cada miembro ocupa alrededor de 2 GB y el ensemble unos 6 GB.
 - GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para el ensemble en fp16 (RTX 3060/4060 y superiores). Para fp32 se recomienda al menos 16 GB (RTX 4080, RTX 4090, A100, H100). El modelo individual cabe holgadamente en cualquier GPU de consumo moderna.
 - Cabe en GPU de consumo: si. Un unico miembro en fp16 ocupa unos 2 GB, por lo que entra en practicamente cualquier GPU de consumo; el ensemble completo en fp32 requiere alrededor de 12,5 GB.
-- Opciones de despliegue: la model card usa la libreria propietaria kodiak (`pip install "kodiak-s1[infer]"`). El campo `inference: false` de la model card indica que no esta habilitada la inferencia estandar de HuggingFace. No se confirma soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la model card usa la libreria propietaria kodiak (`pip install "kodiak-s1[infer]"`). El campo `inference: false` de la model card indica que no esta habilitada la inferencia estandar de Hugging Face. No se confirma soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: aproximadamente 38 ms por peticion en GPU para el modelo individual, y alrededor de 3 veces ese tiempo (unos 114 ms) en modo accuracy. La comparativa del autor situa a Qwen3-8B en torno a 1.500 ms por peticion, es decir, mas de un orden de magnitud mas lento.
 
 ## Comparativa con modelos similares
@@ -129,7 +129,7 @@ Nota: Kodiak y Qwen3-8B no son directamente comparables en arquitectura (encoder
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cortex-agent-llc/kodiak-v0.4-1b-accuracy
+- Modelo en Hugging Face: https://huggingface.co/cortex-agent-llc/kodiak-v0.4-1b-accuracy
 - Modelo individual (v0.4-1B): https://huggingface.co/cortex-agent-llc/kodiak-v0.4-1b
 - Repositorio de codigo y registro de construccion: https://github.com/grizzlypeaksoftware/kodiak
 - Modelo base (Ettin-encoder-1B, Johns Hopkins): https://huggingface.co/jhu-clsp/ettin-encoder-1b

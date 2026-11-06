@@ -4,7 +4,7 @@
 
 yeowon/index-tts-ko es un ajuste fino (finetune) del modelo de sintesis de voz IndexTTS-2, desarrollado por el equipo IndexTeam y adaptado al coreano por el usuario yeowon. El modelo base IndexTTS-2 es un sistema de text-to-speech de codigo abierto orientado a clonacion de voz zero-shot, y esta variante concreta traslada esa capacidad al idioma coreano mediante entrenamiento adicional sobre el checkpoint original. Se distribuye en formato safetensors con un tamano de repositorio de 5,9 GB.
 
-El interes de esta ficha es doble: por un lado, documenta una adaptacion linguistica de un TTS moderno a un idioma distinto del original; por otro, sirve de ejemplo de las restricciones practicas que rodean a estos modelos, ya que hereda la licencia bilibili-model-use-license-agreement del modelo base y el repositorio esta en acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargarlo. Con solo 8 descargas y ningun "like" en el momento de la consulta, se trata de una publicacion muy reciente y de baja adopcion.
+El interes de esta ficha es doble: por un lado, documenta una adaptacion linguistica de un TTS moderno a un idioma distinto del original; por otro, sirve de ejemplo de las restricciones practicas que rodean a estos modelos, ya que hereda la licencia bilibili-model-use-license-agreement del modelo base y el repositorio esta en acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo. Con solo 8 descargas y ningun "like" en el momento de la consulta, se trata de una publicacion muy reciente y de baja adopcion.
 
 La informacion publica disponible es limitada: la model card no aporta detalles sobre arquitectura interna, numero de parametros, longitud de contexto ni datos de entrenamiento especificos del finetune. Por tanto, esta ficha distingue explicitamente entre lo que se puede afirmar del modelo base IndexTTS-2 y lo que corresponde a esta variante coreana, marcando como "no disponible" todo aquello que no figura en la informacion proporcionada.
 
@@ -25,13 +25,13 @@ La informacion publica disponible es limitada: la model card no aporta detalles 
 
 No se dispone de informacion detallada sobre la arquitectura interna de esta variante ni del modelo base en la documentacion proporcionada. Por los tags del repositorio (indextts2, text-to-speech, voice-cloning) se deduce que se trata de un sistema TTS orientado a clonacion de voz, pero no se especifica si emplea un transformer autoregresivo, un modelo de difusion, un codec neuronal o una combinacion de estos componentes. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset coreano ni si se aplicaron tecnicas de RLHF o DPO.
 
-Lo unico verificable es que se trata de un finetune del checkpoint IndexTeam/IndexTTS-2, segun los metadatos de HuggingFace (base_model:finetune). El repositorio ocupa 5,9 GB en safetensors, lo que da una idea del orden de magnitud del modelo, pero no permite inferir el numero de parametros sin conocer la precision de los pesos. No se han publicado innovaciones tecnicas especificas de esta adaptacion en la informacion disponible.
+Lo unico verificable es que se trata de un finetune del checkpoint IndexTeam/IndexTTS-2, segun los metadatos de Hugging Face (base_model:finetune). El repositorio ocupa 5,9 GB en safetensors, lo que da una idea del orden de magnitud del modelo, pero no permite inferir el numero de parametros sin conocer la precision de los pesos. No se han publicado innovaciones tecnicas especificas de esta adaptacion en la informacion disponible.
 
 ## Capacidades
 
 - Sintesis de voz (text-to-speech) en coreano.
 - Clonacion de voz, segun el tag voice-cloning del repositorio.
-- Generacion de audio a partir de texto con el pipeline text-to-speech de HuggingFace.
+- Generacion de audio a partir de texto con el pipeline text-to-speech de Hugging Face.
 - Soporte multilingue limitado al coreano en esta variante (el modelo base podria soportar otros idiomas, pero no se documenta aqui).
 - No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso, al no tratarse de un modelo de lenguaje generativo de proposito general.
 - No se documentan capacidades de vision ni de audio de entrada (solo salida de audio).
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yeowon/index-tts-ko | no disponible | no disponible | coreano | bilibili-model-use-license-agreement | gated en HuggingFace |
+| yeowon/index-tts-ko | no disponible | no disponible | coreano | bilibili-model-use-license-agreement | gated en Hugging Face |
 | IndexTeam/IndexTTS-2 (base) | no disponible | no disponible | no disponible en esta ficha | bilibili-model-use-license-agreement | no disponible en esta ficha |
 | Otras alternativas TTS | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -70,7 +70,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga, lo que anade friccion a cualquier pipeline automatizado.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga, lo que anade friccion a cualquier pipeline automatizado.
 - Licencia restrictiva: hereda la bilibili-model-use-license-agreement, cuyos terminos no se detallan aqui; es imprescindible revisarlos antes de cualquier uso comercial.
 - Idiomas: la variante esta orientada exclusivamente al coreano (tag ko); no se garantiza calidad en otros idiomas.
 - Falta de documentacion tecnica: no hay datos publicos sobre arquitectura, parametros, contexto, cuantizaciones ni entrenamiento, lo que dificulta evaluar su idoneidad para produccion.
@@ -81,5 +81,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yeowon/index-tts-ko
+- Modelo en Hugging Face: https://huggingface.co/yeowon/index-tts-ko
 - Modelo base: https://huggingface.co/IndexTeam/IndexTTS-2

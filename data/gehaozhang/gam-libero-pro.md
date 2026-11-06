@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GAM-LIBERO-PRO es un paquete de investigación para robótica publicado por el usuario gehaozhang en HuggingFace. Contiene todo lo necesario para ejecutar GAM (Grounded Action Model) sobre los entornos de manipulación LIBERO y LIBERO-PRO: un detector 3D de vocabulario abierto afinado para estas escenas, una única política válida para las cuatro suites, un span head de T5 para extraer frases de objeto a partir de la instrucción y una caché de entrenamiento precalculada. El repositorio ocupa 122,5 GB e incluye pesos, caché y activos de evaluación.
+GAM-LIBERO-PRO es un paquete de investigación para robótica publicado por el usuario gehaozhang en Hugging Face. Contiene todo lo necesario para ejecutar GAM (Grounded Action Model) sobre los entornos de manipulación LIBERO y LIBERO-PRO: un detector 3D de vocabulario abierto afinado para estas escenas, una única política válida para las cuatro suites, un span head de T5 para extraer frases de objeto a partir de la instrucción y una caché de entrenamiento precalculada. El repositorio ocupa 122,5 GB e incluye pesos, caché y activos de evaluación.
 
 El problema que resuelve es el de la manipulación robótica guiada por lenguaje con anclaje espacial explícito. En lugar de que la política infiera los objetos directamente de píxeles, GAM ancla cada objeto nombrado en la instrucción mediante un detector 3D (WildDet3D), lo convierte en una caja 3D, una nube de puntos y un conjunto reducido de tokens de imagen, y predice bloques de acción con un transformer de flow matching. Los objetos se anclan en el primer frame y se siguen con CoTracker durante el episodio.
 
@@ -68,9 +68,9 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 | Modelo | Relación | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gehaozhang/gam-libero-pro | Modelo analizado | no disponible | no disponible | other | HuggingFace |
-| gehaozhang/gam-robotwin | Mismo autor y familia GAM, otro dominio | no disponible | no disponible | no disponible | HuggingFace |
-| gehaozhang/gam-wilddet3d | Detector general y span head universal de la familia GAM | no disponible | no disponible | no disponible | HuggingFace |
+| gehaozhang/gam-libero-pro | Modelo analizado | no disponible | no disponible | other | Hugging Face |
+| gehaozhang/gam-robotwin | Mismo autor y familia GAM, otro dominio | no disponible | no disponible | no disponible | Hugging Face |
+| gehaozhang/gam-wilddet3d | Detector general y span head universal de la familia GAM | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos de manipulación guiada por lenguaje (VLA) | Categoría comparable | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gehaozhang/gam-libero-pro
+- Modelo en Hugging Face: https://huggingface.co/gehaozhang/gam-libero-pro
 - Código: https://github.com/GehaoZhang6/Grounding-Action-Model
 - Modelo hermano (RoboTwin): https://huggingface.co/gehaozhang/gam-robotwin
 - Detector general y span head universal: https://huggingface.co/gehaozhang/gam-wilddet3d

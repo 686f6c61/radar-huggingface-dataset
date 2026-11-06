@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepNemotron-3.5-Lightning-BF16 | 31,58B | no disponible | no disponible | OpenMDW + dataset other | HuggingFace |
-| NVIDIA Nemotron 3.5 Lightning 30B-A3B (base) | ~30B | ~3B | no disponible | OpenMDW | HuggingFace |
-| Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | HuggingFace |
-| Qwen2.5-32B | 32,8B | 32,8B (denso) | 128K | Apache 2.0 | HuggingFace |
+| DeepNemotron-3.5-Lightning-BF16 | 31,58B | no disponible | no disponible | OpenMDW + dataset other | Hugging Face |
+| NVIDIA Nemotron 3.5 Lightning 30B-A3B (base) | ~30B | ~3B | no disponible | OpenMDW | Hugging Face |
+| Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | Hugging Face |
+| Qwen2.5-32B | 32,8B | 32,8B (denso) | 128K | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en datos públicos de los modelos alternativos; para DeepNemotron no se dispone de contexto ni parámetros activos confirmados. La ventaja principal frente a Mixtral o Qwen2.5 es su enfoque específico en tareas agénticas verificables, aunque su licencia es más restrictiva.
 

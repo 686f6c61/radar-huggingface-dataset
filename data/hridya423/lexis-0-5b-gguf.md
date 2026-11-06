@@ -96,7 +96,7 @@ La comparacion con otros generadores de comandos de shell de proposito general n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hridya423/lexis-0.5b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/hridya423/lexis-0.5b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Modelo hermano de 1,5 B: https://huggingface.co/hridya423/lexis-1.5b-GGUF
 - Repositorio del asistente Lexis: https://github.com/hridaya423/lexis

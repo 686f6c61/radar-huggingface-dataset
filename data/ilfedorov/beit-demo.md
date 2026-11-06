@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ilfedorov/beit-demo` es un repositorio experimental de HuggingFace publicado por el usuario ilfedorov que contiene una implementacion propia de una arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a una tarea de *matching*. No se trata de un modelo entrenado ni evaluado: la propia model card indica que el checkpoint `model.safetensors` es una inicializacion valida unicamente para *smoke tests* y que no se reclama ninguna puntuacion de benchmark.
+`ilfedorov/beit-demo` es un repositorio experimental de Hugging Face publicado por el usuario ilfedorov que contiene una implementacion propia de una arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a una tarea de *matching*. No se trata de un modelo entrenado ni evaluado: la propia model card indica que el checkpoint `model.safetensors` es una inicializacion valida unicamente para *smoke tests* y que no se reclama ninguna puntuacion de benchmark.
 
 El repositorio es, por tanto, un andamiaje de codigo y configuracion para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Incluye `predict.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y un `README.md` con la documentacion. La escala declarada es "huge", con atencion lineal, fusion tensorial, activacion GELU y normalizacion RMSNorm.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y muy acotada al ambito de investigacion: sirve
 | Formato de pesos | safetensors (`model.safetensors`), acompanado de `config.json` y `training_args.json` |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Optimizador de la receta por defecto | rmsprop con planificador exponencial |
 
 ## Arquitectura y entrenamiento
@@ -54,7 +54,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ningun ru
 - Inspeccion de cambios de arquitectura: el repositorio esta pensado para modificar la configuracion (atencion lineal, fusion tensorial, RMSNorm) y comprobar que el grafo se construye correctamente antes de comprometer recursos en un entrenamiento completo.
 - Pruebas de humo en CI: `predict.py --help` y el bloque `__main__` permiten verificar que el entorno, las dependencias y la carga del checkpoint de inicializacion funcionan tras cada cambio, con un coste de computo minimo.
 - Plantilla de receta de entrenamiento: `training_args.json` sirve como punto de partida para definir optimizador, planificador y demas hiperparametros en experimentos propios, siempre sustituyendo los valores por defecto.
-- Base para un adaptador de carga personalizado: dado que las APIs genericas de carga automatica no funcionan sin adaptador, el repositorio es un caso practico para escribir e integrar ese adaptador en un pipeline de HuggingFace.
+- Base para un adaptador de carga personalizado: dado que las APIs genericas de carga automatica no funcionan sin adaptador, el repositorio es un caso practico para escribir e integrar ese adaptador en un pipeline de Hugging Face.
 - Comparativa de arquitecturas en investigacion: la escala "huge" declarada y la combinacion de atencion lineal con fusion tensorial permiten usarlo como configuracion de referencia frente a variantes propias, siempre con el mismo presupuesto de datos y semillas.
 - Estudio de reproducibilidad: la model card propone explicitamente evaluar con un conjunto de validacion emparejado, reportar la metrica de la tarea en al menos tres semillas e incluir una linea base de capacidad equivalente, ademas de conservar los registros de entrenamiento y las versiones del entorno.
 - Docencia y formacion: como ejemplo de estructura de repositorio de modelo (config, training args, script de inferencia, checkpoint de inicializacion) sin la complejidad de un modelo a escala real.
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para una comparativa rigurosa: no hay benchma
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ilfedorov/beit-demo | 16.576 (reportado) | no disponible | no publicado | MIT | HuggingFace, 0 descargas |
+| ilfedorov/beit-demo | 16.576 (reportado) | no disponible | no publicado | MIT | Hugging Face, 0 descargas |
 | BEiT original (Microsoft Research) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos suficientes para una comparativa rigurosa: no hay benchma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ilfedorov/beit-demo
+- Repositorio en Hugging Face: https://huggingface.co/ilfedorov/beit-demo
 - `predict.py` (artefacto principal): https://huggingface.co/ilfedorov/beit-demo/blob/main/predict.py
 - `config.json` (configuracion de arquitectura): https://huggingface.co/ilfedorov/beit-demo/blob/main/config.json
 - `training_args.json` (receta de experimento por defecto): https://huggingface.co/ilfedorov/beit-demo/blob/main/training_args.json

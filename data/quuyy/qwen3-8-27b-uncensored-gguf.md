@@ -86,7 +86,7 @@ La principal diferencia frente a modelos similares es la ausencia de filtros de 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/quuyy/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/quuyy/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base (safetensors): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Cuantizaciones con imatrix (variante alternativa): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF
 - Guia de ejecucion local con llama.cpp: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

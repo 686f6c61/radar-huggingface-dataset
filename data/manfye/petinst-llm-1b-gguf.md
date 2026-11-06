@@ -4,7 +4,7 @@
 
 El modelo manfye/PetInst-LLM-1B-GGUF es una versión cuantizada en formato GGUF de un modelo de 1.000 millones de parámetros orientado a aplicaciones de asistente conversacional con capacidades de function calling y tool use. Desarrollado por el usuario manfye, se presenta como una solución ligera para entornos on-device, pensada especialmente para el ámbito de las mascotas virtuales (virtual pet) y otros escenarios con restricciones de recursos. Los tags indican que está basado en la familia Gemma-3, aunque no se especifica la arquitectura exacta ni el proceso de entrenamiento.
 
-Esta ficha cubre la variante GGUF, que es la que permite ejecutar el modelo con llama.cpp y otros motores compatibles. El modelo base es manfye/PetInst-LLM-1B-MLX (formato MLX), del cual esta versión es una cuantización. El acceso está restringido en HuggingFace, por lo que hay que aceptar las condiciones de la licencia Gemma antes de descargarlo. No se han publicado resultados de benchmarks ni detalles de entrenamiento en la información disponible.
+Esta ficha cubre la variante GGUF, que es la que permite ejecutar el modelo con llama.cpp y otros motores compatibles. El modelo base es manfye/PetInst-LLM-1B-MLX (formato MLX), del cual esta versión es una cuantización. El acceso está restringido en Hugging Face, por lo que hay que aceptar las condiciones de la licencia Gemma antes de descargarlo. No se han publicado resultados de benchmarks ni detalles de entrenamiento en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -71,13 +71,13 @@ El modelo PetInst-LLM-1B es más pequeño que Gemma-2-2B y Qwen2-1.5B, pero su v
 - Solo inglés: no soporta otros idiomas, lo que limita su uso internacional.
 - Sin información sobre sesgos o alucinaciones: al ser un modelo pequeño y sin benchmarks, se desconoce su fiabilidad en tareas complejas; puede producir respuestas incorrectas o inventadas.
 - Licencia gemma: requiere aceptación de términos de uso, incluyendo restricciones sobre uso militar, y obliga a incluir atribución.
-- Acceso restringido: en HuggingFace es necesario aceptar condiciones y autenticarse, lo que puede dificultar su adopción en pipelines automáticos.
+- Acceso restringido: en Hugging Face es necesario aceptar condiciones y autenticarse, lo que puede dificultar su adopción en pipelines automáticos.
 - Contexto limitado: no se conoce la longitud de contexto, pero por ser de 1B probablemente no exceda los 8K tokens, lo que puede ser insuficiente para diálogos muy largos.
 - Sin documentación técnica: no hay paper ni descripción del entrenamiento, por lo que no se puede evaluar su robustez o sus límites.
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/manfye/PetInst-LLM-1B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/manfye/PetInst-LLM-1B-GGUF
 - Modelo base MLX: https://huggingface.co/manfye/PetInst-LLM-1B-MLX
-- Página de modelos GGUF de HuggingFace (para explorar otros): https://huggingface.co/models?library=gguf
+- Página de modelos GGUF de Hugging Face (para explorar otros): https://huggingface.co/models?library=gguf
 - Repositorio de IBM para scripts de conversión GGUF: https://github.com/IBM/gguf

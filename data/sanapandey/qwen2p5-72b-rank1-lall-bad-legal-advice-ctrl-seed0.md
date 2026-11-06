@@ -1,9 +1,9 @@
 # sanapandey/qwen2p5-72b-rank1-Lall-bad-legal-advice-ctrl-seed0
 
 ## Resumen
-El modelo `sanapandey/qwen2p5-72b-rank1-Lall-bad-legal-advice-ctrl-seed0` es un checkpoint publicado en HuggingFace por el usuario sanapandey, derivado de la familia Qwen2.5 de Alibaba, segun se deduce del identificador. El nombre sugiere un ajuste fino orientado a control de comportamiento (el sufijo "ctrl" y la referencia a "bad-legal-advice" apuntan a un experimento de mitigacion o direccionamiento de respuestas indeseadas en el dominio legal), probablemente mediante tecnicas de edicion de activaciones o adaptadores de bajo rango (el prefijo "rank1" y la etiqueta "unsloth" apoyan esta hipotesis).
+El modelo `sanapandey/qwen2p5-72b-rank1-Lall-bad-legal-advice-ctrl-seed0` es un checkpoint publicado en Hugging Face por el usuario sanapandey, derivado de la familia Qwen2.5 de Alibaba, segun se deduce del identificador. El nombre sugiere un ajuste fino orientado a control de comportamiento (el sufijo "ctrl" y la referencia a "bad-legal-advice" apuntan a un experimento de mitigacion o direccionamiento de respuestas indeseadas en el dominio legal), probablemente mediante tecnicas de edicion de activaciones o adaptadores de bajo rango (el prefijo "rank1" y la etiqueta "unsloth" apoyan esta hipotesis).
 
-La model card es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: no se especifican datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. El repositorio tiene un tamano de 0.0 GB y cero descargas, lo que indica que se trata de un artefacto de investigacion sin publicacion acompanante ni validacion externa.
+La model card es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: no se especifican datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. El repositorio tiene un tamano de 0.0 GB y cero descargas, lo que indica que se trata de un artefacto de investigacion sin publicacion acompanante ni validacion externa.
 
 Por tanto, esta ficha solo puede documentar con rigor los metadatos disponibles y las caracteristicas heredadas de la arquitectura base Qwen2.5-72B, marcando explicitamente como "no disponible" todo aquello que el autor no ha declarado. No debe utilizarse en produccion sin una evaluacion independiente previa.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (Qwen2.5-72B ajustado) | 72B (inferido) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-72B (base oficial) | 72B | 131 072 tokens | Apache 2.0 (Qwen2.5) | HuggingFace, ampliamente usado |
-| Llama 3.1 70B | 70B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, muy extendido |
+| Este checkpoint (Qwen2.5-72B ajustado) | 72B (inferido) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-72B (base oficial) | 72B | 131 072 tokens | Apache 2.0 (Qwen2.5) | Hugging Face, ampliamente usado |
+| Llama 3.1 70B | 70B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, muy extendido |
 | Mistral Large 2 | 123B | 128 000 tokens | Mistral Research/Commercial | API y pesos bajo solicitud |
 
 La comparacion con la base Qwen2.5-72B es la mas relevante: este checkpoint anade una intervencion no documentada que puede degradar el rendimiento general, por lo que la base oficial es preferible para cualquier uso estandar.
@@ -76,7 +76,7 @@ La comparacion con la base Qwen2.5-72B es la mas relevante: este checkpoint anad
 - No apto para produccion sin evaluacion independiente, auditoria de sesgos y verificacion de licencia.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/sanapandey/qwen2p5-72b-rank1-Lall-bad-legal-advice-ctrl-seed0
+- Hugging Face: https://huggingface.co/sanapandey/qwen2p5-72b-rank1-Lall-bad-legal-advice-ctrl-seed0
 - Referencia citada en los tags (Lacoste et al., 2019, ML Impact Calculator): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact
 - Qwen2.5-72B (base presumible): https://huggingface.co/Qwen/Qwen2.5-72B

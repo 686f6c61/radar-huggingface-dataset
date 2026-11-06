@@ -2,7 +2,7 @@
 
 ## Resumen
 
-4x-UltraSharp (ID `Mr-J-369/4x-UltraSharp`) es un modelo de reescalado (upscaling) de imágenes con factor 4x, publicado por el desarrollador Mr-J-369 y empaquetado específicamente para su ejecución sobre la NPU de Qualcomm mediante QNN (Qualcomm Neural Network). No se trata de un modelo generativo de texto a imagen en sentido estricto, pese a que la pipeline declarada en HuggingFace es `text-to-image`: su función dentro del ecosistema Stable Diffusion es ampliar la resolución de imágenes ya generadas. El modelo deriva del upscaler 4x-UltraSharp publicado en OpenModelDB bajo el nombre interno `Faces_04_N`.
+4x-UltraSharp (ID `Mr-J-369/4x-UltraSharp`) es un modelo de reescalado (upscaling) de imágenes con factor 4x, publicado por el desarrollador Mr-J-369 y empaquetado específicamente para su ejecución sobre la NPU de Qualcomm mediante QNN (Qualcomm Neural Network). No se trata de un modelo generativo de texto a imagen en sentido estricto, pese a que la pipeline declarada en Hugging Face es `text-to-image`: su función dentro del ecosistema Stable Diffusion es ampliar la resolución de imágenes ya generadas. El modelo deriva del upscaler 4x-UltraSharp publicado en OpenModelDB bajo el nombre interno `Faces_04_N`.
 
 La relevancia de esta publicación no está en el algoritmo de reescalado en sí, sino en su formato de distribución: el autor ofrece tres variantes (`min`, `8gen1`, `8gen2`) compiladas para distintos niveles de la gama Snapdragon, de modo que la inferencia se ejecuta en la NPU del teléfono en lugar de en la CPU o GPU. Esto lo integra en dos aplicaciones Android de generación de imágenes en dispositivo: Fancy AI (del propio autor) y Local Dream. El repositorio ocupa aproximadamente 0,1 GB y se distribuye bajo licencia Apache 2.0.
 
@@ -85,7 +85,7 @@ Comparativa con modelos de la misma categoria: no disponible.
 
 - No se documenta informacion sobre sesgos, composicion del dataset de entrenamiento ni dominios de imagen para los que el modelo este validado.
 - Riesgo de alucinacion: como todo modelo de superresolucion, puede generar detalles plausibles pero inexistentes en la imagen original, especialmente en zonas con textura ambigua o caras.
-- El modelo no procesa lenguaje ni texto; no dispone de capacidades multilingues y su pipeline `text-to-image` en HuggingFace puede inducir a confusion sobre su funcion real.
+- El modelo no procesa lenguaje ni texto; no dispone de capacidades multilingues y su pipeline `text-to-image` en Hugging Face puede inducir a confusion sobre su funcion real.
 - La compatibilidad esta limitada a hardware Qualcomm Snapdragon con soporte QNN; en otros SoC o en GPU no se documenta una ruta de ejecucion.
 - El ZIP debe renombrarse antes de cargarlo en la aplicacion y no debe descomprimirse; ignorar esta instruccion puede impedir su uso.
 - El nombre del archivo determina el tipo de contenido (`upscaler_realistic` o `upscaler_anime`); una eleccion incorrecta puede degradar el resultado.
@@ -95,7 +95,7 @@ Comparativa con modelos de la misma categoria: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mr-J-369/4x-UltraSharp
+- Hugging Face: https://huggingface.co/Mr-J-369/4x-UltraSharp
 - Ficha del upscaler de origen en OpenModelDB: https://openmodeldb.info/models/4x-UltraSharp
 - Aplicacion del autor, Fancy AI (repositorio): https://github.com/Mr-J-369/Fancy-Ai
 - Fancy AI en Google Play: https://play.google.com/store/apps/details?id=com.mrj.fancyai

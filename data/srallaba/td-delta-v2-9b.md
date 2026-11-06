@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks externos (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Precision de decision (test v1) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| td-delta-v2-9b | Base 9B + adaptador LoRA | No disponible | 0,783 | 0,140 | Apache-2.0 | HuggingFace (adaptador PEFT) |
+| td-delta-v2-9b | Base 9B + adaptador LoRA | No disponible | 0,783 | 0,140 | Apache-2.0 | Hugging Face (adaptador PEFT) |
 | td-delta v1 9b | Base 9B + adaptador LoRA | No disponible | 0,774 | 0,149 | No disponible | Referencia interna del mismo autor, usada como arranque en caliente |
 | kev-4b base | 4B (segun denominacion) | No disponible | 0,665 | 0,091 | No disponible | No disponible |
-| Qwen/Qwen3.5-9B-Base | 9B | No disponible | No aplica (modelo generativo, no scorer de decisiones) | No disponible | Apache-2.0 (segun la model card del adaptador) | HuggingFace |
+| Qwen/Qwen3.5-9B-Base | 9B | No disponible | No aplica (modelo generativo, no scorer de decisiones) | No disponible | Apache-2.0 (segun la model card del adaptador) | Hugging Face |
 
 No se dispone de datos comparativos frente a otros scorers de decision publicos en la informacion proporcionada.
 
@@ -107,7 +107,7 @@ No se dispone de datos comparativos frente a otros scorers de decision publicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srallaba/td-delta-v2-9b
+- Modelo en Hugging Face: https://huggingface.co/srallaba/td-delta-v2-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio de `kev` (servidor `/v1/systemone`): https://github.com/jaredpalmer/kev
 - Ficheros de evaluacion y entrenamiento referenciados en la model card: `eval-v1test.json`, `eval-v2eval.json`, `training_config.json`, `training_metrics.json` (sin URL directa disponible)

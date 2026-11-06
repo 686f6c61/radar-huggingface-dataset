@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aryama/anlp-a2-m26 es un repositorio de checkpoints publicado en HuggingFace por el usuario Aryama, asociado a la "ANLP Assignment 2" (una entrega academica). No se trata de un modelo entrenado unico y listo para produccion, sino de un conjunto de bundles de PyTorch: cada subcarpeta contiene un `model.pt`, un `config.json`, un `tokenizer.json` y un `metadata.json`, acompanados de la implementacion de una arquitectura propia bajo `src/`. Las etiquetas del repositorio indican que la arquitectura es un modelo de lenguaje causal con mezcla de expertos (mixture-of-experts, MoE).
+Aryama/anlp-a2-m26 es un repositorio de checkpoints publicado en Hugging Face por el usuario Aryama, asociado a la "ANLP Assignment 2" (una entrega academica). No se trata de un modelo entrenado unico y listo para produccion, sino de un conjunto de bundles de PyTorch: cada subcarpeta contiene un `model.pt`, un `config.json`, un `tokenizer.json` y un `metadata.json`, acompanados de la implementacion de una arquitectura propia bajo `src/`. Las etiquetas del repositorio indican que la arquitectura es un modelo de lenguaje causal con mezcla de expertos (mixture-of-experts, MoE).
 
 El contenido cubre los runs 1 a 9 de entrenamiento original sobre el cluster Turing. Los runs 1 a 5 conservan pesos finales de traduccion y los runs 6 a 9 conservan hitos (milestone-01 a milestone-10) orientados a comparar optimizadores. Los checkpoints de tipo smoke o pilot quedan excluidos, y la Parte 3 del trabajo reutiliza un checkpoint Pythia preentrenado sin anadir pesos nuevos. El repositorio completo ocupa 0,9 GB.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aryama/anlp-a2-m26 | no disponible | no disponible | no publicado | no disponible | Repositorio de checkpoints en HuggingFace (0,9 GB) |
+| Aryama/anlp-a2-m26 | no disponible | no disponible | no publicado | no disponible | Repositorio de checkpoints en Hugging Face (0,9 GB) |
 | Pythia (checkpoint preentrenado referenciado en la Parte 3) | no disponible en esta informacion | no disponible en esta informacion | no disponible | no disponible en esta informacion | Referenciado como dependencia externa, no incluido en el repo |
 | Alternativas MoE de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aryama/anlp-a2-m26
+- Modelo en Hugging Face: https://huggingface.co/Aryama/anlp-a2-m26
 - Implementacion de la arquitectura (ruta dentro del repositorio): `src/`
 - Cargador de bundles (ruta dentro del repositorio): `src/common/checkpoint.py`
 - Checkpoint de referencia citado en el ejemplo: `LLM-experiments-no_1/final`

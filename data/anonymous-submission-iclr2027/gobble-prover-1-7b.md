@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento en Lean 4 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gobble-Prover-1.7B | 2.031.739.904 (~2,03B) | no disponible | no disponible (sin benchmarks publicados) | Apache 2.0 | Pesos en safetensors en HuggingFace |
-| AI-MO/Kimina-Prover-Distill-1.7B (modelo base) | no disponible en la informacion proporcionada (familia 1,7B) | no disponible | no disponible | Apache 2.0 | Pesos publicos en HuggingFace |
+| Gobble-Prover-1.7B | 2.031.739.904 (~2,03B) | no disponible | no disponible (sin benchmarks publicados) | Apache 2.0 | Pesos en safetensors en Hugging Face |
+| AI-MO/Kimina-Prover-Distill-1.7B (modelo base) | no disponible en la informacion proporcionada (familia 1,7B) | no disponible | no disponible | Apache 2.0 | Pesos publicos en Hugging Face |
 | Otras alternativas de demostracion formal (por ejemplo, DeepSeek-Prover, Goedel-Prover) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de rendimiento, contexto o licencia de los modelos alternativos en la informacion proporcionada, por lo que la comparativa se limita al modelo base declarado. La busqueda web realizada no devolvio ningun enlace relacionado con modelos de demostracion de teoremas: los resultados obtenidos correspondian al colectivo de hacktivistas Anonymous y son irrelevantes para esta ficha.
@@ -90,7 +90,7 @@ No se dispone de datos verificables de rendimiento, contexto o licencia de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-submission-ICLR2027/Gobble-Prover-1.7B
+- Modelo en Hugging Face: https://huggingface.co/anonymous-submission-ICLR2027/Gobble-Prover-1.7B
 - Modelo base: https://huggingface.co/AI-MO/Kimina-Prover-Distill-1.7B
 - Paper o informe tecnico del modelo: no disponible
 - Repositorio de codigo o demo: no disponible

@@ -105,7 +105,7 @@ La comparacion cuantitativa solo es posible en los benchmarks publicados por IFM
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/UraionLabs/K2-Horizon-7B-oQ8e
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/UraionLabs/K2-Horizon-7B-oQ8e
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Repositorio oMLX: https://github.com/jundot/omlx
 - Sitio del autor de la cuantizacion, Uraion Labs: https://uraionlabs.com

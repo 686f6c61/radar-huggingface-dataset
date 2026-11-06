@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3.8-27B-MLX-AXQ-MXFP4-MTP | 26,9B reales (27,36B logicos) | 262.144 tokens | MLX Safetensors, 4,8441 BPW principal / 5,0147 total | Apache 2.0 | HuggingFace (846 descargas) |
-| AX-Qwen3.8-27B-MLX-AXQ-4bit-MTP (sibling) | mismo base | 262.144 tokens (por base) | MLX Safetensors, presupuesto AXQ menor | Apache 2.0 | HuggingFace |
-| AX-Qwen3.8-27B-MLX-AXQ-6bit-MTP (sibling) | mismo base | 262.144 tokens (por base) | MLX Safetensors, presupuesto cercano a 6 BPW | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | 27,36B logicos | 262.144 tokens (por base) | BF16 (formato original del autor) | Apache 2.0 | HuggingFace |
+| AX-Qwen3.8-27B-MLX-AXQ-MXFP4-MTP | 26,9B reales (27,36B logicos) | 262.144 tokens | MLX Safetensors, 4,8441 BPW principal / 5,0147 total | Apache 2.0 | Hugging Face (846 descargas) |
+| AX-Qwen3.8-27B-MLX-AXQ-4bit-MTP (sibling) | mismo base | 262.144 tokens (por base) | MLX Safetensors, presupuesto AXQ menor | Apache 2.0 | Hugging Face |
+| AX-Qwen3.8-27B-MLX-AXQ-6bit-MTP (sibling) | mismo base | 262.144 tokens (por base) | MLX Safetensors, presupuesto cercano a 6 BPW | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27,36B logicos | 262.144 tokens (por base) | BF16 (formato original del autor) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento de los siblings ni del modelo base en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, formato y licencia. No se conocen otros modelos comparables fuera del catalogo de AutomatosX con datos verificables en esta ficha.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de los siblings ni del modelo base en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-MXFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-MXFP4-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Sibling 4bit: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit-MTP
 - Sibling 6bit: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-6bit-MTP

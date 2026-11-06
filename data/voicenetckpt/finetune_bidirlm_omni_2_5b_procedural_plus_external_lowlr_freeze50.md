@@ -2,7 +2,7 @@
 
 ## Resumen
 
-finetune_BidirLM_Omni_2_5B_procedural_plus_external_lowlr_freeze50 es un directorio de entrenamiento (checkpoint) publicado en HuggingFace por el usuario VoiceNetCkpt, dentro de la serie de experimentos que el autor agrupa bajo la etiqueta VoiceCLAP. No se trata de un modelo empaquetado para inferencia directa, sino del volcado de una ejecución de ajuste fino: el repositorio contiene 131 ficheros y ocupa 100,9 GB, un volumen muy superior al que correspondería a los pesos de un modelo de 2,5 mil millones de parametros, lo que sugiere la presencia de estados de optimizador, multiples copias intermedias o artefactos de varias fases de entrenamiento.
+finetune_BidirLM_Omni_2_5B_procedural_plus_external_lowlr_freeze50 es un directorio de entrenamiento (checkpoint) publicado en Hugging Face por el usuario VoiceNetCkpt, dentro de la serie de experimentos que el autor agrupa bajo la etiqueta VoiceCLAP. No se trata de un modelo empaquetado para inferencia directa, sino del volcado de una ejecución de ajuste fino: el repositorio contiene 131 ficheros y ocupa 100,9 GB, un volumen muy superior al que correspondería a los pesos de un modelo de 2,5 mil millones de parametros, lo que sugiere la presencia de estados de optimizador, multiples copias intermedias o artefactos de varias fases de entrenamiento.
 
 La model card es minima: unicamente indica que es un directorio de una training-run de los experimentos VoiceCLAP y enlaza un indice de todas las ejecuciones del autor. No se declaran licencia, idiomas, pipeline, resultados de evaluacion ni instrucciones de uso. Las etiquetas publicadas son safetensors, voiceclap, checkpoint y region:us, y el repositorio acumula cero descargas y cero likes en la fecha de la consulta.
 
@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_procedural_plus_external_lowlr_freeze50
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_procedural_plus_external_lowlr_freeze50
 - Indice de ejecuciones del autor: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "SleepMastger/srlwam-cosmos-edge-fruit-v1-noise10mm",
+  "slug": "sleepmastger-srlwam-cosmos-edge-fruit-v1-noise10mm",
+  "author": "SleepMastger",
+  "url": "https://huggingface.co/SleepMastger/srlwam-cosmos-edge-fruit-v1-noise10mm",
+  "created_at": "2026-11-02T21:20:50.000Z",
+  "updated_at": "2026-11-02T21:32:35.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "robotics",
+    "fruit-picking",
+    "base_model:nvidia/Cosmos3-Edge-Policy-DROID",
+    "base_model:finetune:nvidia/Cosmos3-Edge-Policy-DROID",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26965505960,
+  "storage_human": "27.0 GB",
+  "base_model": "nvidia/Cosmos3-Edge-Policy-DROID",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "srlwam-cosmos-edge-stack-v2-stride4 - Hugging Face",
+      "url": "https://huggingface.co/SleepMastger/srlwam-cosmos-edge-stack-v2-stride4",
+      "snippet": "srlwam: Cosmos Edge stack_v2 sim policy, stride 4 A Cosmos3 Edge policy for Franka two-cube stacking, fine-tuned from nvidia/Cosmos3-Edge-Policy-DROID on the stack_v2 simulation demos with a temporal stride of 4: each model step covers 4 recorded 10 Hz steps. It is the stride-4 variant of the sim_v2_droid checkpoints in aabyaneh/srlwam, built from Amin's srlwam cosmos_stack_v2_stride3 code ..."
+    },
+    {
+      "title": "SleepMastger/deploy_public · Hugging Face",
+      "url": "https://huggingface.co/SleepMastger/deploy_public",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

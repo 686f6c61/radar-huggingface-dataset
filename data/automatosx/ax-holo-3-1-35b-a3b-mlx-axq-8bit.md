@@ -80,7 +80,7 @@ El modelo comparte arquitectura MoE con Qwen3-30B-A3B, pero ofrece un contexto c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Holo-3.1-35B-A3B-MLX-AXQ-8bit
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Holo-3.1-35B-A3B-MLX-AXQ-8bit
 - Modelo base: https://huggingface.co/Hcompany/Holo-3.1-35B-A3B
 - Hermano 4-bit: https://huggingface.co/AutomatosX/AX-Holo-3.1-35B-A3B-MLX-AXQ-4bit
 - Hermano 6-bit: https://huggingface.co/AutomatosX/AX-Holo-3.1-35B-A3B-MLX-AXQ-6bit

@@ -52,7 +52,7 @@ El conjunto de entrenamiento es muy reducido: 42 pares de prompt y respuesta sin
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica de forma explicita que se trata de un experimento de estilo pequeno y que no hay una evaluacion exhaustiva; el unico material de seguimiento mencionado es el dataset, el registro de perdida del entrenamiento y una comparacion, sin cifras publicadas en la informacion proporcionada. Tampoco se han encontrado resultados de terceros ni en la busqueda web ni en los metadatos de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica de forma explicita que se trata de un experimento de estilo pequeno y que no hay una evaluacion exhaustiva; el unico material de seguimiento mencionado es el dataset, el registro de perdida del entrenamiento y una comparacion, sin cifras publicadas en la informacion proporcionada. Tampoco se han encontrado resultados de terceros ni en la busqueda web ni en los metadatos de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `no1tobyfoxfam/worlds-most-erratic-ai-model-model-model` (adaptador LoRA) | 11,8 M entrenables sobre base de ~4.000 M | No especificado; heredado del base | Sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4.000 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, modelo de referencia de la familia Qwen3 |
+| `no1tobyfoxfam/worlds-most-erratic-ai-model-model-model` (adaptador LoRA) | 11,8 M entrenables sobre base de ~4.000 M | No especificado; heredado del base | Sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4.000 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, modelo de referencia de la familia Qwen3 |
 | Otros adaptadores LoRA de estilo o comedia | No disponible | No disponible | No disponible | No disponible | No se han encontrado alternativas comparables en la busqueda web |
 
 La comparacion relevante es con el propio modelo base: el adaptador no aporta capacidades nuevas ni mejores, sino que impone un estilo degenerado sobre las capacidades existentes de Qwen3-4B-Instruct-2507. No se dispone de informacion sobre otros adaptadores de comedia o de comportamiento deliberadamente erroneo con los que contrastarlo.
@@ -86,6 +86,6 @@ La comparacion relevante es con el propio modelo base: el adaptador no aporta ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/no1tobyfoxfam/worlds-most-erratic-ai-model-model-model
+- Modelo en Hugging Face: https://huggingface.co/no1tobyfoxfam/worlds-most-erratic-ai-model-model-model
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relacionado con el modelo, su autor ni su modelo base. Los resultados devueltos corresponden a resenas de una agencia inmobiliaria alemana y no guardan relacion con esta ficha.

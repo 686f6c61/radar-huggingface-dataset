@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino (fine-tune) del modelo fundacional de robótica NVIDIA GR00T-N1.5-3B, publicado por el usuario prehj bajo el identificador `prehj/GR00T-N1.5-libero-demospeedup-slow1-fast2-60k-20260919`. Se trata de un checkpoint de investigación orientado a la reproducción de la técnica DemoSpeedup sobre el benchmark de manipulación LIBERO, con una política de retiming de demostraciones que usa stride 1 para la fase lenta (slow) y stride 2 para la fase rápida (casual), sustituyendo los strides 2/4 de un experimento anterior. El entrenamiento se realizó durante 60.000 pasos con semilla 42 y batch global 32.
 
-El modelo hereda la arquitectura visión-lenguaje-acción (VLA) del modelo base de NVIDIA, que combina una columna vertebral de comprensión de imagen y lenguaje con un módulo de generación de acciones; en este caso el peso total asciende a 2.724.114.368 parámetros. El pipeline declarado en HuggingFace es `robotics` y los pesos se distribuyen en formato safetensors, con un repositorio de 7,6 GB que incluye los pesos finales de inferencia, la configuración del modelo y la configuración del experimento con estadísticas de normalización.
+El modelo hereda la arquitectura visión-lenguaje-acción (VLA) del modelo base de NVIDIA, que combina una columna vertebral de comprensión de imagen y lenguaje con un módulo de generación de acciones; en este caso el peso total asciende a 2.724.114.368 parámetros. El pipeline declarado en Hugging Face es `robotics` y los pesos se distribuyen en formato safetensors, con un repositorio de 7,6 GB que incluye los pesos finales de inferencia, la configuración del modelo y la configuración del experimento con estadísticas de normalización.
 
 Su relevancia es acotada y estrictamente experimental: el propio autor indica que el modelo no ha sido evaluado todavía, no declara licencia ni idiomas soportados, y acumula cero descargas. No es un modelo listo para producción, sino un artefacto de reproducibilidad para investigadores que trabajen en el efecto del retiming temporal de demostraciones sobre políticas robóticas.
 
@@ -21,7 +21,7 @@ Su relevancia es acotada y estrictamente experimental: el propio autor indica qu
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Modelo base | nvidia/GR00T-N1.5-3B |
-| Pipeline (HuggingFace) | robotics |
+| Pipeline (Hugging Face) | robotics |
 | Tamano del repositorio | 7,6 GB |
 | Pasos de entrenamiento | 60.000 |
 | Batch global | 32 |
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, la model card indica que se trata de una reproducci�
 - Retiming temporal de demostraciones con strides asimétricos (slow 1, fast 2), capacidad que solo tiene sentido en el contexto del pipeline DemoSpeedup.
 - Soporte de tool calling o function calling: no disponible; no es una capacidad propia del pipeline de robótica declarado.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles; no se declara ningún idioma en la ficha de HuggingFace.
+- Capacidades multilingües: no disponibles; no se declara ningún idioma en la ficha de Hugging Face.
 - Capacidades especiales (modo thinking, audio, vídeo): no disponibles.
 - Evaluación de rendimiento: ninguna; la model card afirma explícitamente que el modelo no ha sido evaluado.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| prehj/GR00T-N1.5-libero-demospeedup-slow1-fast2-60k | 2,72 mil millones | no disponible | no disponible | HuggingFace, 0 descargas, sin evaluar | no disponible |
-| nvidia/GR00T-N1.5-3B (modelo base) | aproximadamente 3 mil millones (denominacion del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, modelo oficial de NVIDIA | no disponible en la informacion proporcionada |
+| prehj/GR00T-N1.5-libero-demospeedup-slow1-fast2-60k | 2,72 mil millones | no disponible | no disponible | Hugging Face, 0 descargas, sin evaluar | no disponible |
+| nvidia/GR00T-N1.5-3B (modelo base) | aproximadamente 3 mil millones (denominacion del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, modelo oficial de NVIDIA | no disponible en la informacion proporcionada |
 | Otros fine-tunes de GR00T N1.5 sobre LIBERO | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible |
 | OpenVLA (familia de VLA de 7B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados de parámetros, contexto o rendimiento de los
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluación: el autor afirma que el modelo no ha sido evaluado, de modo que no existe evidencia de que la política funcione en LIBERO ni en ningún otro entorno.
-- Licencia no declarada: al no especificarse licencia en la ficha de HuggingFace, el uso comercial queda en un limbo jurídico; adicionalmente, se desconoce qué condiciones impone el modelo base `nvidia/GR00T-N1.5-3B`, cuyos términos podrían propagarse al derivado.
+- Licencia no declarada: al no especificarse licencia en la ficha de Hugging Face, el uso comercial queda en un limbo jurídico; adicionalmente, se desconoce qué condiciones impone el modelo base `nvidia/GR00T-N1.5-3B`, cuyos términos podrían propagarse al derivado.
 - Sesgos conocidos: no disponibles. No se documenta ningún análisis de sesgo, ni de comportamiento diferencial por tipo de tarea, objeto o instrucción.
 - Riesgo de alucinación y de acciones incorrectas: inherente a cualquier política aprendida por imitación; sin evaluación no puede cuantificarse la tasa de fallo ni el modo de fallo dominante.
 - Sesgo de dominio: el entrenamiento se limita a demostraciones de LIBERO, un entorno simulado; no hay evidencia de transferencia a robots reales ni a tareas fuera de la distribución del dataset.
@@ -94,7 +94,7 @@ No se dispone de datos verificados de parámetros, contexto o rendimiento de los
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/prehj/GR00T-N1.5-libero-demospeedup-slow1-fast2-60k-20260919
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/GR00T-N1.5-3B
+- Página del modelo en Hugging Face: https://huggingface.co/prehj/GR00T-N1.5-libero-demospeedup-slow1-fast2-60k-20260919
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Archivo de detalles y hashes del experimento, referenciado en la model card: `reproduction.json` (incluido en el repositorio del modelo)
 - Papers, blogs, repositorios y demos adicionales: no disponibles en la información proporcionada. La búsqueda web realizada no devolvió ningún enlace relevante al modelo.

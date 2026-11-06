@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Resoluciones | Formato y runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Realism_By_Stable_Yogi_V9 | SD 1.5 convertido a NPU Qualcomm | 512x512, 768x512, 512x768 | Contexto QNN (UNet) + MNN (encoder/VAE), qnn2.28, tier 8gen2 | CreativeML Open RAIL-M | HuggingFace, 0 descargas y 0 likes |
+| Realism_By_Stable_Yogi_V9 | SD 1.5 convertido a NPU Qualcomm | 512x512, 768x512, 512x768 | Contexto QNN (UNet) + MNN (encoder/VAE), qnn2.28, tier 8gen2 | CreativeML Open RAIL-M | Hugging Face, 0 descargas y 0 likes |
 | SD 1.5 original (Runway / Stability AI) | Difusion latente base | 512x512 | safetensors / diffusers, GPU o CPU | CreativeML Open RAIL-M | Ampliamente distribuido |
 | Alternativas de SD 1.5 para movil (conversiones a ONNX Runtime, Core ML u otras) | Difusion latente convertida | variable | ONNX / Core ML / otros runtimes moviles | depende del publicador | no disponible en la informacion proporcionada |
 | Modelos de difusion de mayor tamano (por ejemplo, familia SDXL) | Difusion latente de mayor escala | desde 1024x1024 | safetensors / diffusers | licencias propias de cada checkpoint | no disponible en la informacion proporcionada |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones, ni de m�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matrixportalx/Realism_By_Stable_Yogi_V9
+- Modelo en Hugging Face: https://huggingface.co/matrixportalx/Realism_By_Stable_Yogi_V9
 - Repositorio de conversión del autor (SD 1.5 a Qualcomm QNN): https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model
 - Repositorio de la aplicación Ruya / Local Dream: no disponible en la informacion proporcionada
 - Paper o documentación técnica del ajuste "Stable Yogi V9": no disponible

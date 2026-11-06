@@ -77,9 +77,9 @@ Memoria (RSS máximo del proceso):
 
 | Modelo | Tipo | Parámetros | Contexto | CER (FLEURS ja) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Haas-ja-v1.0-onnx-quantized (esta ficha) | TDT + FastConformer, ONNX cuantizado | no disponible | offline, ~29 s probados | 4,34 % (métrica propia) | Apache 2.0 | HuggingFace, sherpa-onnx |
-| third-intelligence/Haas-ja-v1.0 (original) | TDT + FastConformer, PyTorch | no disponible | offline | 4,19 % (métrica propia) | Apache 2.0 | HuggingFace, requiere GPU NVIDIA en Linux |
-| oboroge0/Haas-ja-v1.0-onnx (sin cuantizar) | TDT + FastConformer, ONNX float | no disponible | offline | similar a la cuantizada (según el autor) | Apache 2.0 | HuggingFace, ~3 GB de memoria |
+| Haas-ja-v1.0-onnx-quantized (esta ficha) | TDT + FastConformer, ONNX cuantizado | no disponible | offline, ~29 s probados | 4,34 % (métrica propia) | Apache 2.0 | Hugging Face, sherpa-onnx |
+| third-intelligence/Haas-ja-v1.0 (original) | TDT + FastConformer, PyTorch | no disponible | offline | 4,19 % (métrica propia) | Apache 2.0 | Hugging Face, requiere GPU NVIDIA en Linux |
+| oboroge0/Haas-ja-v1.0-onnx (sin cuantizar) | TDT + FastConformer, ONNX float | no disponible | offline | similar a la cuantizada (según el autor) | Apache 2.0 | Hugging Face, ~3 GB de memoria |
 
 No se dispone en la información proporcionada de comparaciones con otros modelos ASR japoneses (por ejemplo, Whisper o ReazonSpeech) con métricas equivalentes.
 
@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oboroge0/Haas-ja-v1.0-onnx-quantized
+- Modelo en Hugging Face: https://huggingface.co/oboroge0/Haas-ja-v1.0-onnx-quantized
 - Modelo original: https://huggingface.co/third-intelligence/Haas-ja-v1.0
 - Versión ONNX sin cuantizar: https://huggingface.co/oboroge0/Haas-ja-v1.0-onnx
 - sherpa-onnx (repositorio): https://github.com/k2-fsa/sherpa-onnx

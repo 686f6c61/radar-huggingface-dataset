@@ -26,11 +26,11 @@ Su relevancia practica esta en el binomio tamano/precision: permite ejecutar un 
 | Tamano del repositorio | 9,1 GB |
 | Requisito de hardware para NVFP4 | GPU Blackwell (sm_120) |
 | Runtime de carga | `clef_rt.py` con el esquema `nvfp4-w4a16`; no funciona con `from_pretrained` ni `load_release_model` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de `Cloudflare/clef-flash`, descrito por el autor de la cuantizacion como el hermano de 9B de Clef. Se trata de un modelo multimodal de decision: recibe un estado y un esquema de preguntas tipadas y, en una sola pasada hacia delante, emite una distribucion de probabilidad sobre cada opcion permitida. El backbone declarado es Qwen3.5-9B, sobre el que Cloudflare monta la cabeza conjunta (*joint-head*) y la ruta de decision implementada en el archivo `joint_schema_model.py`. El pipeline declarado en HuggingFace es image-text-to-text, lo que indica soporte de entradas de imagen y texto, aunque no se detallan en la informacion disponible ni la resolucion de imagen ni el tokenizador multimodal.
+La arquitectura subyacente es la de `Cloudflare/clef-flash`, descrito por el autor de la cuantizacion como el hermano de 9B de Clef. Se trata de un modelo multimodal de decision: recibe un estado y un esquema de preguntas tipadas y, en una sola pasada hacia delante, emite una distribucion de probabilidad sobre cada opcion permitida. El backbone declarado es Qwen3.5-9B, sobre el que Cloudflare monta la cabeza conjunta (*joint-head*) y la ruta de decision implementada en el archivo `joint_schema_model.py`. El pipeline declarado en Hugging Face es image-text-to-text, lo que indica soporte de entradas de imagen y texto, aunque no se detallan en la informacion disponible ni la resolucion de imagen ni el tokenizador multimodal.
 
 Esta ficha corresponde exclusivamente a la reencodacion de pesos, no a un entrenamiento nuevo. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO u otras fases de ajuste en el modelo base. La innovacion tecnica de este repositorio es el esquema de cuantizacion: NVFP4A16 aplica 4 bits a los pesos y mantiene las activaciones en bf16, lo que reduce el consumo a aproximadamente 4 GiB de VRAM para los pesos a costa de la velocidad (aproximadamente 7 veces mas lento que W4A4, segun el autor). Los pesos cuantizados no se cargan con las rutas estandar de Transformers, que reconstruyen el grafo en precision completa; hay que usar el modulo `clef_rt.py` incluido en el repositorio.
 

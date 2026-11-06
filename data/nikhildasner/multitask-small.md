@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nikhildasner/multitask-small
+- Repositorio Hugging Face: https://huggingface.co/nikhildasner/multitask-small
 - No se encontraron otros enlaces (papers, blogs, repos adicionales) en la búsqueda web.

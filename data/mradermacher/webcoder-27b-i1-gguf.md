@@ -29,7 +29,7 @@ La información pública disponible es muy escasa: la model card se limita a una
 
 No se dispone de información sobre la arquitectura del modelo base. La model card del repositorio GGUF no incluye detalles de diseño, número de capas, tipo de atención ni mecanismo de positional encoding, y tampoco documenta el proceso de entrenamiento (volumen de tokens, composición del corpus, uso de SFT, RLHF o DPO). El dato objetivo disponible es el recuento de parámetros en safetensors (27.320.697.856), que sitúa al modelo en la franja de 27 B densos, un tamaño habitual para despliegues en una única GPU de 24 GB con cuantización de 4 bits.
 
-La innovación técnica documentada se limita al proceso de cuantización: mradermacher publica variantes "i1" generadas con imatrix (matrices de importancia calculadas a partir de estadísticas de activación), lo que permite asignar menos bits a los tensores menos sensibles y preservar la calidad en niveles de compresión bajos como IQ2 e IQ3. El repositorio incluye además la etiqueta `endpoints_compatible`, que indica compatibilidad con el formato de despliegue de endpoints de HuggingFace, y la versión de herramienta de cuantización 2 con salida tensor-quantised.
+La innovación técnica documentada se limita al proceso de cuantización: mradermacher publica variantes "i1" generadas con imatrix (matrices de importancia calculadas a partir de estadísticas de activación), lo que permite asignar menos bits a los tensores menos sensibles y preservar la calidad en niveles de compresión bajos como IQ2 e IQ3. El repositorio incluye además la etiqueta `endpoints_compatible`, que indica compatibilidad con el formato de despliegue de endpoints de Hugging Face, y la versión de herramienta de cuantización 2 con salida tensor-quantised.
 
 ## Capacidades
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WebCoder-27B-i1-GGUF (este repo) | 27,3 B | no disponible | GGUF, 24 variantes (IQ1_S a Q6_K), imatrix | no disponible | HuggingFace, 0 descargas registradas |
-| Roy-DOU/WebCoder-27B (modelo base) | 27,3 B | no disponible | safetensors (pesos completos) | no disponible | HuggingFace |
+| WebCoder-27B-i1-GGUF (este repo) | 27,3 B | no disponible | GGUF, 24 variantes (IQ1_S a Q6_K), imatrix | no disponible | Hugging Face, 0 descargas registradas |
+| Roy-DOU/WebCoder-27B (modelo base) | 27,3 B | no disponible | safetensors (pesos completos) | no disponible | Hugging Face |
 | Qwen2.5-Coder-32B-Instruct (GGUF de terceros) | 32,8 B | 131.072 tokens (nativo 32.768) | safetensors y GGUF | Apache 2.0 | Amplia comunidad y ecosistema de cuantizaciones |
 | Gemma 2 27B IT (GGUF de terceros) | 27,2 B | 8.192 tokens | safetensors y GGUF | Gemma Terms of Use | Muy extendido, con soporte en llama.cpp y Ollama |
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen35-0.8B-CeNNMixer-v2 es un experimento de investigación publicado por el usuario vtava (vtavakkoli) en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una modificación quirúrgica sobre Qwen/Qwen3.5-0.8B: se sustituye el mezclador de secuencia (sequence mixer) de la capa 0, originalmente un mecanismo de atención lineal, por un módulo recurrente denominado CeNN (presumiblemente una red neuronal celular, según los tags `cenn`, `recurrent` y `tinycenn`). El resto de componentes de Qwen (embeddings, RMSNorm, FFN y LM head) permanecen intactos.
+Qwen35-0.8B-CeNNMixer-v2 es un experimento de investigación publicado por el usuario vtava (vtavakkoli) en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una modificación quirúrgica sobre Qwen/Qwen3.5-0.8B: se sustituye el mezclador de secuencia (sequence mixer) de la capa 0, originalmente un mecanismo de atención lineal, por un módulo recurrente denominado CeNN (presumiblemente una red neuronal celular, según los tags `cenn`, `recurrent` y `tinycenn`). El resto de componentes de Qwen (embeddings, RMSNorm, FFN y LM head) permanecen intactos.
 
 El objetivo declarado es un experimento de "reemplazo progresivo" mediante destilación: durante el entrenamiento se congela el mezclador original de Qwen y se aplica un calendario de pesos alpha de [0.0, 0.5, 1.0], de forma que CeNN va tomando el control gradualmente hasta que, en alpha=1, el mezclador original se elimina por completo. Con ello se busca reducir el número de parámetros del mezclador en un 37,46 % (de 10.543.264 a 6.593.584 parámetros) manteniendo el comportamiento del modelo original.
 
@@ -88,14 +88,14 @@ No se dispone de informacion sobre modelos alternativos equivalentes en la infor
 - Solo se sustituye la capa 0: el modelo sigue dependiendo mayoritariamente de Qwen3.5-0.8B, por lo que hereda sus sesgos y sus limitaciones, sin que se documente ningun proceso de alineacion adicional.
 - No se declara licencia, lo que impide determinar si el uso comercial esta permitido. Ademas, al derivar de Qwen3.5-0.8B, las condiciones del modelo base podrian aplicar y no se detallan.
 - No se declaran idiomas soportados ni longitud de contexto.
-- El repositorio no contiene pesos (0,0 GB), por lo que el modelo no es desplegable tal cual desde HuggingFace.
+- El repositorio no contiene pesos (0,0 GB), por lo que el modelo no es desplegable tal cual desde Hugging Face.
 - El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y fue creado en septiembre de 2026; no hay evidencia de uso o validacion por terceros.
 - Al incorporar un modulo CeNN recurrente, es probable que requiera codigo personalizado para su carga, lo que complica su integracion en stacks estandar de inferencia.
 - No debe utilizarse en entornos de produccion, aplicaciones orientadas a usuarios ni tareas en las que la precision sea critica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/Qwen35-0.8B-CeNNMixer-v2
+- Modelo en Hugging Face: https://huggingface.co/vtava/Qwen35-0.8B-CeNNMixer-v2
 - Proyecto TinyCeNN-LM en GitHub: https://github.com/vtavakkoli/TinyCeNN-LM
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 

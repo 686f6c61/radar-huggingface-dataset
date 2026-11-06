@@ -68,5 +68,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h027.pi-agent-sft-v13.step_125
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h027.pi-agent-sft-v13.step_125
 - Búsqueda de modelos con tag `agentic-ptb`: https://huggingface.co/models?other=agentic-ptb

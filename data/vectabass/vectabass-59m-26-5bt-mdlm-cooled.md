@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparables publicados para este modelo ni 
 
 | Modelo | Parametros totales | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-59m-26.5bt-mdlm-cooled | 59,5M (27,3M no-embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | HuggingFace |
+| vectabass-59m-26.5bt-mdlm-cooled | 59,5M (27,3M no-embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | Hugging Face |
 | Modelo AR equivalente del proyecto VectaBass | no disponible | no disponible | Autoregresivo | no disponible | Apéndice AR publicado por separado |
 | Modelos del tramo principal del proyecto (100M–1,6B) | 100M–1,6B | no disponible | MDLM | no disponible | no disponible |
 | Qwen3-8B-Base (usado como evaluador) | 8B | no disponible | Autoregresivo | no disponible | no disponible |
@@ -117,7 +117,7 @@ No se dispone de datos de benchmarks comparables publicados para este modelo ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-26.5bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-26.5bt-mdlm-cooled
 - Conjunto de datos fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Conjunto de datos fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Conjunto de datos finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath

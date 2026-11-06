@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alvarolizama/Qwen3.5-9B-oQ4-fp16-mtp` es una cuantización de precisión mixta de un modelo de la familia Qwen3.5, realizada por el usuario de HuggingFace `alvarolizama` mediante la herramienta oQ (oMLX v0.6.0.dev1). Se trata de un checkpoint en formato MLX safetensors, con cuantización de 4 bits y grupo de tamaño 64, diseñado para ejecutarse en dispositivos Apple Silicon a través del ecosistema MLX.
+El modelo `alvarolizama/Qwen3.5-9B-oQ4-fp16-mtp` es una cuantización de precisión mixta de un modelo de la familia Qwen3.5, realizada por el usuario de Hugging Face `alvarolizama` mediante la herramienta oQ (oMLX v0.6.0.dev1). Se trata de un checkpoint en formato MLX safetensors, con cuantización de 4 bits y grupo de tamaño 64, diseñado para ejecutarse en dispositivos Apple Silicon a través del ecosistema MLX.
 
 La relevancia de este modelo radica en que permite desplegar un modelo de 9B (según su denominación) en hardware de Apple con un consumo de memoria reducido, gracias a la cuantización mixta que mantiene ciertos pesos en fp16. Sin embargo, la información pública es muy limitada: no se especifica la licencia, los idiomas soportados, ni se proporcionan detalles sobre el modelo original o sus capacidades. El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un experimento reciente o de baja difusión.
 
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alvarolizama/Qwen3.5-9B-oQ4-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/alvarolizama/Qwen3.5-9B-oQ4-fp16-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

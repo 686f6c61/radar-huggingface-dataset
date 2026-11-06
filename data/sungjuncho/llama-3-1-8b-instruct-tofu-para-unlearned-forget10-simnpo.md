@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-simnpo` es un checkpoint de investigación derivado de Llama 3.1 8B Instruct, publicado por el usuario `sungjuncho` en HuggingFace, cuyo objetivo es estudiar técnicas de *machine unlearning* (olvido selectivo) aplicadas sobre el benchmark TOFU. El modelo parte de un fine-tune previo (`Llama-3.1-8B-Instruct-TOFU-para-x2-full`) entrenado sobre el dataset TOFU-para, una variante del benchmark TOFU con erratas en nombres corregidas y cinco paráfrasis verificadas de cada par pregunta-respuesta, y posteriormente se le aplica el método SimNPO del repositorio `open-unlearning` para eliminar el conjunto *forget10* (400 pares QA originales).
+`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-simnpo` es un checkpoint de investigación derivado de Llama 3.1 8B Instruct, publicado por el usuario `sungjuncho` en Hugging Face, cuyo objetivo es estudiar técnicas de *machine unlearning* (olvido selectivo) aplicadas sobre el benchmark TOFU. El modelo parte de un fine-tune previo (`Llama-3.1-8B-Instruct-TOFU-para-x2-full`) entrenado sobre el dataset TOFU-para, una variante del benchmark TOFU con erratas en nombres corregidas y cinco paráfrasis verificadas de cada par pregunta-respuesta, y posteriormente se le aplica el método SimNPO del repositorio `open-unlearning` para eliminar el conjunto *forget10* (400 pares QA originales).
 
 La relevancia de este checkpoint no es su uso como asistente conversacional de propósito general, sino como artefacto de evaluación: permite medir hasta qué punto un método de desaprendizaje elimina el conocimiento objetivo frente a meramente borrar las muestras concretas vistas durante el entrenamiento. La model card introduce explícitamente la distinción entre *untraining* (borrado de las muestras concretas) y *unlearning* (borrado del conocimiento subyacente, que el modelo también aprendió en otras formulaciones).
 
@@ -71,10 +71,10 @@ FADE se define como la divergencia KL simétrica respecto al modelo de referenci
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-simnpo` | 8,03B | no disponible | Unlearning SimNPO sobre TOFU-para | llama3.1 | HuggingFace, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | 8,03B (presumible) | no disponible | Fine-tune completo sobre TOFU-para + paráfrasis | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90` | 8,03B (presumible) | no disponible | Modelo de referencia retenido (retain90) | llama3.1 | HuggingFace |
-| Llama 3.1 8B Instruct (Meta) | 8,03B | 128k | Modelo base conversacional | llama3.1 | HuggingFace, amplia adopción |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-simnpo` | 8,03B | no disponible | Unlearning SimNPO sobre TOFU-para | llama3.1 | Hugging Face, 0 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | 8,03B (presumible) | no disponible | Fine-tune completo sobre TOFU-para + paráfrasis | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90` | 8,03B (presumible) | no disponible | Modelo de referencia retenido (retain90) | llama3.1 | Hugging Face |
+| Llama 3.1 8B Instruct (Meta) | 8,03B | 128k | Modelo base conversacional | llama3.1 | Hugging Face, amplia adopción |
 
 Los tres primeros pertenecen a la misma colección TOFU-para del autor y están pensados para compararse entre sí mediante FADE y *forget quality*; el modelo de Meta se incluye como referencia de la familia base, no como alternativa de *unlearning*.
 
@@ -92,7 +92,7 @@ Los tres primeros pertenecen a la misma colección TOFU-para del autor y están 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-simnpo
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-simnpo
 - Modelo base (fine-tune): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

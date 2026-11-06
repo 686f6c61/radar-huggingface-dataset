@@ -74,9 +74,9 @@ Resultados zero-shot en once benchmarks: ocho de texto-vídeo (MSR-VTT, DiDeMo, 
 
 | Modelo | Tipo | Backbone / inicialización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyVol++ (wRHG, GRAM) | Recuperación multimodal con fusión por hipergrafo | GRAM + VAST | no disponible | CC BY 4.0 | Pesos en HuggingFace |
-| HyVol++ (wRHG, HyperGRAM) | Recuperación multimodal con fusión por hipergrafo | HyperGRAM + VAST | no disponible | CC BY 4.0 | Pesos en HuggingFace |
-| HyVol (original) | Recuperación multimodal | GRAM / HyperGRAM | no disponible | CC BY 4.0 | Pesos en HuggingFace (CVML-CFU/HyVol) |
+| HyVol++ (wRHG, GRAM) | Recuperación multimodal con fusión por hipergrafo | GRAM + VAST | no disponible | CC BY 4.0 | Pesos en Hugging Face |
+| HyVol++ (wRHG, HyperGRAM) | Recuperación multimodal con fusión por hipergrafo | HyperGRAM + VAST | no disponible | CC BY 4.0 | Pesos en Hugging Face |
+| HyVol (original) | Recuperación multimodal | GRAM / HyperGRAM | no disponible | CC BY 4.0 | Pesos en Hugging Face (CVML-CFU/HyVol) |
 | VAST | Recuperación audio-visual-texto | EVA-CLIP + BEATs + BERT | no disponible | no disponible | Referencia de inicialización y datos |
 
 No se dispone en la información proporcionada de comparaciones con otros modelos de recuperación multimodal de terceros (por ejemplo, CLIP4Clip o InternVideo) ni de sus cifras en los mismos benchmarks.
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CVML-CFU/HyVol-PlusPlus
+- Modelo en Hugging Face: https://huggingface.co/CVML-CFU/HyVol-PlusPlus
 - Modelo HyVol original: https://huggingface.co/CVML-CFU/HyVol
 - Paper (arXiv): https://arxiv.org/abs/2609.15320
 - Código en GitHub: https://github.com/CVML-CFU/HyVol

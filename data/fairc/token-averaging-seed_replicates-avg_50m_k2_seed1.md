@@ -100,7 +100,7 @@ La diferencia funcional clave no es de rendimiento sino de naturaleza del artefa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FAIRC/token-averaging-seed_replicates-avg_50m_k2_seed1
+- Modelo en Hugging Face: https://huggingface.co/FAIRC/token-averaging-seed_replicates-avg_50m_k2_seed1
 - Repositorio fuente del proyecto: no disponible como URL en la informacion proporcionada; la model card solo menciona la ruta `experiments/chinchilla/model_configs.py` dentro del repositorio de codigo.
 - Paper asociado: no disponible.
 - Blog o publicacion del autor: no disponible.

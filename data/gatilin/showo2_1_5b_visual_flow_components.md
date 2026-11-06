@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un paquete de componentes extraídos del checkpoint oficial Show-o2 1.5B: concretamente los 571 tensores no pertenecientes al backbone lingüístico Qwen, preservando nombres, dtypes y valores originales. Lo publica el usuario gatilin bajo licencia Apache-2.0 y su pipeline declarado en HuggingFace es `feature-extraction`. El resultado es la ruta visual y de flow matching de Show-o2 aislada del LLM, utilizable para auditar, reutilizar o integrar el adaptador visual en pipelines propios.
+Este repositorio no contiene un modelo completo, sino un paquete de componentes extraídos del checkpoint oficial Show-o2 1.5B: concretamente los 571 tensores no pertenecientes al backbone lingüístico Qwen, preservando nombres, dtypes y valores originales. Lo publica el usuario gatilin bajo licencia Apache-2.0 y su pipeline declarado en Hugging Face es `feature-extraction`. El resultado es la ruta visual y de flow matching de Show-o2 aislada del LLM, utilizable para auditar, reutilizar o integrar el adaptador visual en pipelines propios.
 
 El paquete incluye los dos embedders de latentes, un transformer semántico derivado de SigLIP de 26 capas, posiciones aprendidas, proyecciones de fusión, embeddings temporales, proyecciones ocultas, diez bloques de flujo modulados y la cabeza de velocidad final. Los 339 tensores `showo.*` del backbone Qwen quedan explícitamente excluidos. Además se incluye, como dependencia externa, el VAE original de Wan2.1 (`vae/source.pth`, 507.609.880 bytes) con su SHA-256 oficial y su propia licencia.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gatilin/showo2_1_5b_visual_flow_components | 1.287.472.864 (solo ruta visual y de flujo) | no disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | Requiere backbone Qwen, tokenizador y sampler externos; incluye VAE de Wan2.1 |
-| showlab/show-o2-1.5B | no disponible en la información | no disponible | no disponible en la información | HuggingFace | Modelo completo del que proceden los tensores; incluye los 339 tensores `showo.*` excluidos aquí |
-| Wan-AI/Wan2.1-T2V-14B | 14.000 millones según el nombre; cifra exacta no disponible | no disponible | no disponible en la información | HuggingFace | Solo se utiliza su VAE; el resto del modelo generativo de vídeo no interviene |
+| gatilin/showo2_1_5b_visual_flow_components | 1.287.472.864 (solo ruta visual y de flujo) | no disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | Requiere backbone Qwen, tokenizador y sampler externos; incluye VAE de Wan2.1 |
+| showlab/show-o2-1.5B | no disponible en la información | no disponible | no disponible en la información | Hugging Face | Modelo completo del que proceden los tensores; incluye los 339 tensores `showo.*` excluidos aquí |
+| Wan-AI/Wan2.1-T2V-14B | 14.000 millones según el nombre; cifra exacta no disponible | no disponible | no disponible en la información | Hugging Face | Solo se utiliza su VAE; el resto del modelo generativo de vídeo no interviene |
 | Otros modelos multimodales unificados (Janus-Pro, Emu3, Chameleon) | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada; no se establece comparación cuantitativa |
 
 ## Limitaciones y advertencias
@@ -91,4 +91,4 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- [HuggingFace: gatilin/showo2_1_5b_visual_flow_components](https://h
+- [Hugging Face: gatilin/showo2_1_5b_visual_flow_components](https://h

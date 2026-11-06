@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ling-3.0-flash-REAP320-81B-A5B-GGUF es una variante podada del modelo de mezcla de expertos (MoE) inclusionAI/Ling-3.0-flash, publicada por el usuario bloomer010 en HuggingFace. El modelo original tiene 124 000 millones de parámetros totales con 5 100 millones activos; esta versión reduce los parámetros totales a aproximadamente 81 000 millones mediante poda de expertos, manteniendo los 5 100 millones activos. La poda se realiza con el método REAP (Router-weighted Expert Activation Pruning), descrito en el artículo arXiv 2510.13999, que elimina el 38 % de los expertos por capa (de 512 a 320) sin ningún ajuste fino posterior.
+Ling-3.0-flash-REAP320-81B-A5B-GGUF es una variante podada del modelo de mezcla de expertos (MoE) inclusionAI/Ling-3.0-flash, publicada por el usuario bloomer010 en Hugging Face. El modelo original tiene 124 000 millones de parámetros totales con 5 100 millones activos; esta versión reduce los parámetros totales a aproximadamente 81 000 millones mediante poda de expertos, manteniendo los 5 100 millones activos. La poda se realiza con el método REAP (Router-weighted Expert Activation Pruning), descrito en el artículo arXiv 2510.13999, que elimina el 38 % de los expertos por capa (de 512 a 320) sin ningún ajuste fino posterior.
 
 La relevancia de este modelo radica en que ofrece una alternativa más ligera y eficiente para el despliegue de un MoE de gran tamaño, conservando la misma capacidad de activación por token. Se distribuye exclusivamente en formato GGUF, pensado para su uso con llama.cpp y servidores compatibles, con cuantizaciones MXFP4, Q4_K_M y Q2_K. Actualmente requiere un soporte específico para la arquitectura bailingmoe3, pendiente de fusión en el repositorio principal de llama.cpp (PR #26608).
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP320-81B-A5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP320-81B-A5B-GGUF
 - Modelo base inclusionAI/Ling-3.0-flash: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Artículo REAP (arXiv 2510.13999): https://arxiv.org/abs/2510.13999
 - PR de soporte bailingmoe3 en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/26608

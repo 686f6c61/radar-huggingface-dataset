@@ -6,7 +6,7 @@
 
 El interes practico de esta publicacion es que permite ejecutar un modelo de ~31 B en entornos de inferencia local y consumer hardware mediante llama.cpp, Ollama o LM Studio, con tres niveles de cuantizacion (BF16, Q8_0 y Q4_K_M). El archivo Q4_K_M ocupa 18,7 GB, lo que lo hace viable en GPUs de consumo con 24 GB de VRAM, mientras que el Q8_0 (32,6 GB) y el BF16 (61,4 GB) requieren aceleradores de mayor capacidad o descarga parcial en CPU.
 
-La relevancia de esta ficha radica en que documenta con mediciones reales (divergencia KL y acuerdo top-1 frente al BF16) el coste de calidad de cada cuantizacion, algo poco habitual en repositorios GGUF de terceros. El repositorio tiene 896 descargas y 2 likes en el momento de la consulta, y esta publicado bajo licencia Apache-2.0 en HuggingFace, aunque los pesos originales se rigen por la Gemma 4 license de Google.
+La relevancia de esta ficha radica en que documenta con mediciones reales (divergencia KL y acuerdo top-1 frente al BF16) el coste de calidad de cada cuantizacion, algo poco habitual en repositorios GGUF de terceros. El repositorio tiene 896 descargas y 2 likes en el momento de la consulta, y esta publicado bajo licencia Apache-2.0 en Hugging Face, aunque los pesos originales se rigen por la Gemma 4 license de Google.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks del modelo base en la informacion proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/gemma-4-31B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axteam/gemma-4-31B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Archivo BF16: https://huggingface.co/axteam/gemma-4-31B-it-GGUF/blob/main/gemma-4-31B-it-GGUF-BF16.gguf

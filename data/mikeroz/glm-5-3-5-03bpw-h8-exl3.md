@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`MikeRoz/GLM-5.3-5.03bpw-h8-exl3` es una cuantización comunitaria en formato EXL3 (ExLlamaV3) a 5,03 bits por peso del modelo GLM-5.3 de Z.ai (organización `zai-org`). El modelo original es el buque insignia de la familia GLM-5 para generación de código y tareas de horizonte largo: 238.958.043.776 parámetros totales (unos 239.000 millones) en una arquitectura de mezcla de expertos (etiqueta de HuggingFace `glm_moe_dsa`), ventana de contexto de 1 millón de tokens y soporte de inglés y chino.
+`MikeRoz/GLM-5.3-5.03bpw-h8-exl3` es una cuantización comunitaria en formato EXL3 (ExLlamaV3) a 5,03 bits por peso del modelo GLM-5.3 de Z.ai (organización `zai-org`). El modelo original es el buque insignia de la familia GLM-5 para generación de código y tareas de horizonte largo: 238.958.043.776 parámetros totales (unos 239.000 millones) en una arquitectura de mezcla de expertos (etiqueta de Hugging Face `glm_moe_dsa`), ventana de contexto de 1 millón de tokens y soporte de inglés y chino.
 
 GLM-5.3 reutiliza el mismo modelo base que GLM-5.2: según su autor, todas las mejoras provienen del post-entrenamiento. Z.ai lo presenta como el modelo de pesos abiertos más capaz para código (un 50 % de mejora sobre GLM-5.2 en su Z.ai Code Bench interno) y como estado del arte de código abierto en Terminal Bench 3.0 y Agents' Last Exam, además de señalar capacidades emergentes de ciberseguridad, tanto en descubrimiento de vulnerabilidades como en explotación.
 
@@ -14,13 +14,13 @@ La relevancia de este repositorio concreto es práctica: los pesos cuantizados a
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); etiqueta de HuggingFace `glm_moe_dsa` (composición de expertos no detallada) |
+| Arquitectura | Transformer con mezcla de expertos (MoE); etiqueta de Hugging Face `glm_moe_dsa` (composición de expertos no detallada) |
 | Parámetros totales | 238.958.043.776 (~239.000 millones), dato real de los safetensors |
 | Parámetros activos | no disponible |
 | Longitud de contexto | 1.000.000 tokens (1M); las evaluaciones citadas usan 1M de contexto y 300.000 tokens con gestión de contexto según el benchmark |
 | Tipos de cuantización | EXL3 a 5,03 bits por peso con cabeza de salida en 8 bits (sufijo `h8`); el modelo base admite otros formatos no detallados en este repositorio |
 | Idiomas soportados | inglés (`en`) y chino (`zh`) |
-| Licencia | `other` con nombre de licencia `glm-5.3` según HuggingFace; openlm.ai afirma que GLM-5.3 se publica bajo licencia MIT (discrepancia sin resolver) |
+| Licencia | `other` con nombre de licencia `glm-5.3` según Hugging Face; openlm.ai afirma que GLM-5.3 se publica bajo licencia MIT (discrepancia sin resolver) |
 | Formato de pesos | safetensors en formato EXL3 (ExLlamaV3) |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ La comparación se limita a los datos de la tabla de benchmarks publicada por Z.
 ## Limitaciones y advertencias
 
 - Se trata de una cuantización a 5,03 bits por peso: introduce pérdida de precisión respecto a los pesos originales. No hay evaluación pública del impacto de esta cuantización en los benchmarks, y 0 descargas y 0 «likes» implican ausencia de validación por terceros.
-- Conflicto de licencia: HuggingFace declara `license: other` con nombre `glm-5.3`, mientras que openlm.ai afirma que GLM-5.3 se distribuye bajo licencia MIT. Antes de un uso comercial hay que verificar los términos reales de la licencia `glm-5.3`; el repositorio no aclara condiciones de uso comercial ni de redistribución de derivados.
+- Conflicto de licencia: Hugging Face declara `license: other` con nombre `glm-5.3`, mientras que openlm.ai afirma que GLM-5.3 se distribuye bajo licencia MIT. Antes de un uso comercial hay que verificar los términos reales de la licencia `glm-5.3`; el repositorio no aclara condiciones de uso comercial ni de redistribución de derivados.
 - Sesgos conocidos: no documentados en la información disponible. Al estar entrenado principalmente en inglés y chino, el rendimiento en otros idiomas, incluido el español, es incierto.
 - Riesgo de alucinación: no cuantificado en la información disponible, pero aplica a cualquier modelo generativo de este tipo, especialmente en tareas de código y agentes donde una alucinación puede propagarse en cadena.
 - Capacidades de ciberseguridad de doble uso: el propio autor destaca mejoras «emergentes» en explotación (ExploitGym, ExploitBench). Su uso para descubrimiento de vulnerabilidades exige controles de acceso, aislamiento y cumplimiento normativo; un despliegue sin restricciones puede facilitar usos ofensivos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HexWeaver-27B-v3 es un adaptador PEFT (LoRA) publicado por el usuario mehemet en HuggingFace, orientado a tareas de ingeniería inversa, descompilación y análisis de binarios. El repositorio no contiene un modelo base completo, sino un conjunto de pesos de adaptación (0,3 GB) que debe aplicarse sobre un modelo base de 27B parámetros no especificado en la ficha del repositorio. La especialización declarada abarca dominios muy concretos: análisis con Ghidra y su representación P-code, resolución con el solver SMT Z3, verificación formal, ejecución simbólica (angr), deofuscación de binarios protegidos con Tigress y OLLVM, y generación de código en el contexto de seguridad de software.
+HexWeaver-27B-v3 es un adaptador PEFT (LoRA) publicado por el usuario mehemet en Hugging Face, orientado a tareas de ingeniería inversa, descompilación y análisis de binarios. El repositorio no contiene un modelo base completo, sino un conjunto de pesos de adaptación (0,3 GB) que debe aplicarse sobre un modelo base de 27B parámetros no especificado en la ficha del repositorio. La especialización declarada abarca dominios muy concretos: análisis con Ghidra y su representación P-code, resolución con el solver SMT Z3, verificación formal, ejecución simbólica (angr), deofuscación de binarios protegidos con Tigress y OLLVM, y generación de código en el contexto de seguridad de software.
 
 El modelo se presenta como una herramienta vertical para flujos de trabajo de ciberseguridad ofensiva y defensiva, donde un LLM debe razonar sobre representaciones intermedias de bajo nivel (P-code, trazas simbólicas, restricciones SMT) en lugar de código fuente de alto nivel. Es relevante porque pocos modelos abiertos están afinados específicamente para este nicho, y menos aún con soporte declarado para formatos intermedios como el P-code de Ghidra o la salida de Z3.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - En cuantización de 8 bits: aproximadamente 27 GB, viable en una A100 40 GB o en dos RTX 4090.
 - En cuantización de 4 bits: aproximadamente 14-16 GB, viable en una RTX 4090 (24 GB) o RTX 3090.
 - El adaptador en sí es ligero y no añade requisitos significativos de memoria.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de HuggingFace junto con `transformers`; para servir en producción se podría usar vLLM o TGI si el modelo base lo soporta, aunque no está confirmado.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de Hugging Face junto con `transformers`; para servir en producción se podría usar vLLM o TGI si el modelo base lo soporta, aunque no está confirmado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No disponible. No se conocen modelos abiertos comparables específicamente afina
 
 ## Limitaciones y advertencias
 
-- El repositorio está restringido (gated): es necesario aceptar condiciones en HuggingFace para acceder a los pesos.
+- El repositorio está restringido (gated): es necesario aceptar condiciones en Hugging Face para acceder a los pesos.
 - No se especifica el modelo base sobre el que se aplica el adaptador, lo que impide evaluar su comportamiento real y dificulta la reproducibilidad.
 - Sin benchmarks publicados, no hay evidencia cuantitativa de su rendimiento en las tareas declaradas.
 - Cero descargas y cero likes: no hay validación comunitaria ni informes de uso.
@@ -82,5 +82,5 @@ No disponible. No se conocen modelos abiertos comparables específicamente afina
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mehemet/HexWeaver-27B-v3
+- Repositorio Hugging Face: https://huggingface.co/mehemet/HexWeaver-27B-v3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

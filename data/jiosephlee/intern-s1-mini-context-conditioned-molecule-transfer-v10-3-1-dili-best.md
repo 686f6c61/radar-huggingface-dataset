@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Intern-S1-mini context-conditioned molecule transfer V10.3.1 — DILI es un ajuste fino del modelo jiosephlee/Intern-S1-mini-lm publicado por el usuario jiosephlee en HuggingFace. El checkpoint corresponde a la mejor validacion de una ejecucion de "transferencia de moleculas condicionada por contexto" sobre el dominio de lesión hepática inducida por fármacos (DILI, drug-induced liver injury), segun indica la propia model card. El repositorio pesa 16,4 GB e incluye pesos en safetensors y ficheros de tokenizer, con 8.201.221.120 parametros (aproximadamente 8,2 mil millones).
+Intern-S1-mini context-conditioned molecule transfer V10.3.1 — DILI es un ajuste fino del modelo jiosephlee/Intern-S1-mini-lm publicado por el usuario jiosephlee en Hugging Face. El checkpoint corresponde a la mejor validacion de una ejecucion de "transferencia de moleculas condicionada por contexto" sobre el dominio de lesión hepática inducida por fármacos (DILI, drug-induced liver injury), segun indica la propia model card. El repositorio pesa 16,4 GB e incluye pesos en safetensors y ficheros de tokenizer, con 8.201.221.120 parametros (aproximadamente 8,2 mil millones).
 
 El modelo resuelve una tarea de quimioinformatica: dado un contexto, transferir o emparejar moleculas, evaluandose con metricas de recuperacion (Macro-F1@5, NDCG@5, Precision@5 y Spearman) sobre 402 consultas de validacion y 402 de test. No es un modelo de propósito general: es un artefacto de investigacion muy especializado, con 0 descargas y 0 likes en el momento de la consulta, y sin licencia ni idiomas declarados.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada y experimental. No se detalla en la informacion disponi
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `qwen3` en HuggingFace; el modelo base declarado es `jiosephlee/Intern-S1-mini-lm`) |
+| Arquitectura | no disponible (etiqueta `qwen3` en Hugging Face; el modelo base declarado es `jiosephlee/Intern-S1-mini-lm`) |
 | Parametros totales | 8.201.221.120 (aproximadamente 8,2 B) |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es acotada y experimental. No se detalla en la informacion disponi
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura interna mas alla de la etiqueta `qwen3` presente en HuggingFace y del campo `library_name: transformers`. El modelo base declarado es `jiosephlee/Intern-S1-mini-lm`, en la revision `fcb667c380ae01f57693a45b4b5c2d331052a107`. El checkpoint se distribuye como un modelo estandar de Transformers con pesos safetensors y tokenizer, por lo que es cargable con la libreria `transformers`.
+La informacion proporcionada no describe la arquitectura interna mas alla de la etiqueta `qwen3` presente en Hugging Face y del campo `library_name: transformers`. El modelo base declarado es `jiosephlee/Intern-S1-mini-lm`, en la revision `fcb667c380ae01f57693a45b4b5c2d331052a107`. El checkpoint se distribuye como un modelo estandar de Transformers con pesos safetensors y tokenizer, por lo que es cargable con la libreria `transformers`.
 
 El ajuste se realizo sobre el dataset `jiosephlee/context-conditioned-molecule-transfer-v10.3.1-dili-mixed-canonical-intern` (revision `7d3bd8802dcf257fc2cb04b5ccbe58f523f4467f`), con un esquema de 10 epocas y un tope de 350 pasos, semilla 42 y funcion de perdida de objetivos suaves (soft-target loss). El entrenamiento se pauso tras el paso 219 y el checkpoint seleccionado corresponde al paso de optimizador 140. La metrica de seleccion fue `knn_binary_macro_f1_at_5` sobre validacion. No se documentan en la informacion disponible el numero total de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO.
 
@@ -33,7 +33,7 @@ El ajuste se realizo sobre el dataset `jiosephlee/context-conditioned-molecule-t
 - Transferencia de moleculas condicionada por contexto (`context-conditioned-molecule-transfer`) y transferencia de ensayos (`assay-transfer`).
 - Tarea aplicada a lesión hepática inducida por fármacos (DILI): el checkpoint se seleccionó dentro de una ejecucion especifica de este subdominio.
 - Evaluacion mediante metricas de recuperacion/ranking (Macro-F1@5, NDCG@5, Precision@5 y correlacion de Spearman), lo que sugiere un uso orientado a ordenar o emparejar candidatos mas que a la generacion libre.
-- Soporte de conversacion: la etiqueta `conversational` aparece en HuggingFace, aunque no se detallan capacidades conversacionales concretas.
+- Soporte de conversacion: la etiqueta `conversational` aparece en Hugging Face, aunque no se detallan capacidades conversacionales concretas.
 - Compatibilidad declarada con text-generation-inference y con endpoints (`text-generation-inference`, `endpoints_compatible`).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| intern-s1-mini-context-conditioned-molecule-transfer-v10-3-1-dili-best | 8,2 B | no disponible | no disponible | safetensors en HuggingFace, 0 descargas |
-| jiosephlee/Intern-S1-mini-lm (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| intern-s1-mini-context-conditioned-molecule-transfer-v10-3-1-dili-best | 8,2 B | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
+| jiosephlee/Intern-S1-mini-lm (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos comparables de quimioinformatica o de ~8 B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-1-dili-best
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-1-dili-best
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiosephlee/context-conditioned-molecule-transfer-v10.3.1-dili-mixed-canonical-intern
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/upenn-ml/context-conditioned-molecule-transfer-soft/runs/406tcnb2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ishikaa/acquisition_student_AS_confidence_nemotronstem_llama8b_5000` aloja un checkpoint de 8.030.261.248 parametros (16,1 GB en safetensors) etiquetado como `llama`, con pipeline de `text-generation` y uso declarado conversacional. Se trata de un artefacto de investigacion subido por el usuario `ishikaa`, sin model card util: el README es la plantilla autogenerada de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay licencia, idiomas, contexto ni datos de entrenamiento declarados.
+El repositorio `ishikaa/acquisition_student_AS_confidence_nemotronstem_llama8b_5000` aloja un checkpoint de 8.030.261.248 parametros (16,1 GB en safetensors) etiquetado como `llama`, con pipeline de `text-generation` y uso declarado conversacional. Se trata de un artefacto de investigacion subido por el usuario `ishikaa`, sin model card util: el README es la plantilla autogenerada de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay licencia, idiomas, contexto ni datos de entrenamiento declarados.
 
 El propio identificador del repositorio aporta la pista mas relevante sobre su naturaleza: los terminos "acquisition_student", "AS_confidence", "nemotronstem", "llama8b" y "5000" sugieren un experimento de destilacion o de seleccion de datos, en el que un modelo estudiante basado en Llama de 8B se habria entrenado sobre un subconjunto de aproximadamente 5000 ejemplos de tipo STEM (posiblemente derivados del corpus Nemotron) seleccionados mediante algun criterio de confianza. Esta lectura es una interpretacion del nombre del repositorio y no esta confirmada en ninguna parte de la documentacion publicada.
 
@@ -70,7 +70,7 @@ La comparacion se limita a especificaciones, porque no existen resultados de eva
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| acquisition_student_AS_confidence_nemotronstem_llama8b_5000 | 8,03 B | no disponible | no disponible | Repositorio en HuggingFace con 0 descargas y 0 likes; sin cuantizaciones publicadas |
+| acquisition_student_AS_confidence_nemotronstem_llama8b_5000 | 8,03 B | no disponible | no disponible | Repositorio en Hugging Face con 0 descargas y 0 likes; sin cuantizaciones publicadas |
 | Llama 3.1 8B Instruct | 8,03 B | 128 000 tokens | Llama 3.1 Community License | Ampliamente disponible, con GGUF y cuantizaciones de la comunidad |
 | Mistral 7B Instruct v0.3 | 7,25 B | 32 000 tokens | Apache 2.0 | Ampliamente disponible, con GGUF y cuantizaciones |
 | Qwen2.5 7B Instruct | 7,62 B | 128 000 tokens | Apache 2.0 | Ampliamente disponible, con GGUF y cuantizaciones |
@@ -79,7 +79,7 @@ Frente a estas alternativas, el modelo aqui descrito no aporta datos verificable
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace, sin ningun campo cumplimentado por el autor.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face, sin ningun campo cumplimentado por el autor.
 - Licencia no declarada: no se puede determinar si el uso comercial esta permitido. Al derivar presumiblemente de pesos Llama, podria aplicar la licencia de la familia Llama, pero esto no esta confirmado y debe verificarse antes de cualquier uso profesional.
 - Riesgo de alucinacion: desconocido y no evaluado. Al no existir resultados de benchmarks ni pruebas de alineamiento documentadas, no hay base para estimar la tasa de errores factuales.
 - Sesgos: no evaluados. No se ha publicado ningun analisis de sesgo demografico, linguistico o de dominio.
@@ -92,7 +92,7 @@ Frente a estas alternativas, el modelo aqui descrito no aporta datos verificable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_nemotronstem_llama8b_5000
+- Repositorio en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_nemotronstem_llama8b_5000
 - Referencia del articulo citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada desde la model card: https://mlco2.github.io/impact
 - Documentacion de transformers: https://huggingface.co/docs/transformers/index

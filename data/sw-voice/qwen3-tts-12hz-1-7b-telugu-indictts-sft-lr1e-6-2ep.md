@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Dataset de transcripciones: `sw-voice/telugu-tts-indictts-sarvam-syspin` (referenciado en la model card; no se proporciona URL completa)
 - Código del experimento: repositorio `swamiji-tts`, ruta `research/exp-iterations/08-qwen3-tts/experiments/02-te-indictts-full-sft` (referenciado en la model card; no se proporciona URL completa)

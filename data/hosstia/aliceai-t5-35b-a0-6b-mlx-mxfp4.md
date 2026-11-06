@@ -89,8 +89,8 @@ El baseline legacy corresponde a la implementación previa con bucle plano sobre
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AliceAI-T5-35B-A0.6B-MLX-MXFP4 (este) | 34,36B totales, ~0,6B activos | no disponible | 73,31 tok/s (batch 1) en M4 Pro; degenera en repeticiones en ~10 % de párrafos | other (heredada del modelo base) | HuggingFace, formato MLX |
-| yandex/AliceAI-T5-35B-A0.6B (original) | no disponible en la información recogida (misma arquitectura declarada) | no disponible | no disponible | other | HuggingFace |
+| AliceAI-T5-35B-A0.6B-MLX-MXFP4 (este) | 34,36B totales, ~0,6B activos | no disponible | 73,31 tok/s (batch 1) en M4 Pro; degenera en repeticiones en ~10 % de párrafos | other (heredada del modelo base) | Hugging Face, formato MLX |
+| yandex/AliceAI-T5-35B-A0.6B (original) | no disponible en la información recogida (misma arquitectura declarada) | no disponible | no disponible | other | Hugging Face |
 | Variante `4bit` de AliceAI (referenciada por el autor) | no disponible | no disponible | no disponible; el autor la recomienda frente a MXFP4 | other | no disponible (no se incluye el identificador en la información) |
 | Variante `6bit` de AliceAI (referenciada por el autor) | no disponible | no disponible | no disponible; el autor la recomienda frente a MXFP4 | other | no disponible (no se incluye el identificador en la información) |
 
@@ -111,7 +111,7 @@ Las búsquedas web realizadas no devolvieron información relevante sobre modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hosstia/AliceAI-T5-35B-A0.6B-MLX-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/Hosstia/AliceAI-T5-35B-A0.6B-MLX-MXFP4
 - Modelo base (Yandex): https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 - Citación del trabajo original (según la model card): Yandex, "AliceAI-T5-35B-A0.6B", 2025, https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 - Paper, blog o repositorio adicionales: no disponible. Las búsquedas web realizadas no devolvieron resultados relacionados con el modelo, su arquitectura ni su entrenamiento.

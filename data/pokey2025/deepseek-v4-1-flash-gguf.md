@@ -6,7 +6,7 @@ DeepSeek-V4.1-Flash GGUF es una conversión al formato GGUF publicada por el usu
 
 El atractivo técnico de esta publicación es doble: por un lado, empaqueta un modelo grande en MXFP4, un formato de cuantización de 4 bits con escalas de bloque compartidas (estilo microscaling) pensado para reducir el ancho de banda de memoria sin degradar en exceso la precisión; por otro, incorpora decodificación especulativa mediante un draft dedicado, una técnica que acelera la generación al proponer varios tokens y validarlos en paralelo con el modelo principal.
 
-Ahora bien, la información disponible presenta contradicciones importantes que el lector debe conocer antes de evaluar el modelo. Los metadatos de HuggingFace indican 14.225.362.146 parámetros (unos 14,2 mil millones) y un tamaño de repositorio de 8,4 GB, mientras que la model card describe un fichero principal de 474 GiB. Ambas cifras son incompatibles entre sí y no se ha publicado ninguna ficha técnica del modelo base con contexto, idiomas o benchmarks.
+Ahora bien, la información disponible presenta contradicciones importantes que el lector debe conocer antes de evaluar el modelo. Los metadatos de Hugging Face indican 14.225.362.146 parámetros (unos 14,2 mil millones) y un tamaño de repositorio de 8,4 GB, mientras que la model card describe un fichero principal de 474 GiB. Ambas cifras son incompatibles entre sí y no se ha publicado ninguna ficha técnica del modelo base con contexto, idiomas o benchmarks.
 
 ## Especificaciones técnicas
 
@@ -95,7 +95,7 @@ Comparativa de rendimiento: no disponible. No existen benchmarks publicados de e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pokey2025/deepseek-v4.1-flash-gguf
+- Repositorio en Hugging Face: https://huggingface.co/pokey2025/deepseek-v4.1-flash-gguf
 - Modelo base referenciado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Fork de llama.cpp indicado por el autor: https://github.com/Skelectric/ik_llama.cpp/tree/v41-on-vision
 - Paper, blog o demo oficial: no disponible

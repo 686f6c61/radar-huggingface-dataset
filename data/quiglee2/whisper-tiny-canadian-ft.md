@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-tiny-canadian-ft es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario Quiglee2 en HuggingFace. El objetivo declarado es adaptar el modelo base al acento del ingles canadiense, utilizando el dataset naharte/canadian_english. Se trata de un modelo de la familia Whisper, una arquitectura encoder-decoder basada en transformer entrenada originalmente por OpenAI para transcripcion multilingue y traduccion de voz.
+Whisper-tiny-canadian-ft es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario Quiglee2 en Hugging Face. El objetivo declarado es adaptar el modelo base al acento del ingles canadiense, utilizando el dataset naharte/canadian_english. Se trata de un modelo de la familia Whisper, una arquitectura encoder-decoder basada en transformer entrenada originalmente por OpenAI para transcripcion multilingue y traduccion de voz.
 
 El modelo conserva la arquitectura y el tamano del whisper-tiny original: 37.760.640 parametros totales en formato safetensors, lo que lo situa en la gama mas ligera de la familia Whisper. Esto lo hace adecuado para entornos con recursos limitados, prototipado rapido y despliegue en CPU o GPUs de consumo, a costa de una precision inferior a la de los modelos Whisper de mayor tamano.
 
@@ -25,13 +25,13 @@ La relevancia de este modelo es acotada: se trata de un ajuste fino de nicho, co
 
 El modelo es un ajuste fino de openai/whisper-tiny, que emplea una arquitectura encoder-decoder transformer con atencion estandar. Whisper procesa audio en segmentos de 30 segundos, convertidos a espectrogramas log-Mel, y genera transcripciones de forma autoregresiva. El modelo base whisper-tiny cuenta con 37,7 millones de parametros, lo que lo convierte en la variante mas pequena de la familia.
 
-El entrenamiento se realizo con el Trainer de HuggingFace sobre el dataset naharte/canadian_english. Los hiperparametros declarados son: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y 2000 pasos totales de entrenamiento (2 epocas). No se especifica el numero de tokens de audio ni la composicion detallada del dataset. No hay indicios de RLHF, DPO ni tecnicas de alineacion adicionales; se trata de un fine-tuning supervisado convencional sobre datos etiquetados de ASR. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
+El entrenamiento se realizo con el Trainer de Hugging Face sobre el dataset naharte/canadian_english. Los hiperparametros declarados son: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y 2000 pasos totales de entrenamiento (2 epocas). No se especifica el numero de tokens de audio ni la composicion detallada del dataset. No hay indicios de RLHF, DPO ni tecnicas de alineacion adicionales; se trata de un fine-tuning supervisado convencional sobre datos etiquetados de ASR. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
 - Reconocimiento automatico del habla (ASR) en ingles, con adaptacion declarada al acento canadiense.
 - Transcripcion de audio a texto en formato de pipeline `automatic-speech-recognition` de transformers.
-- Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - Capacidad multilingue limitada: solo se declara ingles (`en`).
@@ -64,17 +64,17 @@ No se han publicado resultados comparativos con el modelo base ni con otros mode
 - VRAM estimada para inferencia: inferior a 1 GB en precision completa (37,7 millones de parametros); en la practica, el cuello de botella es el procesamiento del espectrograma y el estado del decoder, no el tamano de los pesos.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no requiere A100 ni H100. Una RTX 4090 o incluso GPUs integradas pueden ejecutarlo con holgura.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo e incluso en CPU.
-- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), endpoints de HuggingFace; compatible potencialmente con llama.cpp/Ollama solo si se convierte a GGUF, lo cual no esta documentado.
+- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), endpoints de Hugging Face; compatible potencialmente con llama.cpp/Ollama solo si se convierte a GGUF, lo cual no esta documentado.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Quiglee2/whisper-tiny-canadian-ft | 37,7 M | ventanas de 30 s (Whisper) | en | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,7 M | ventanas de 30 s (Whisper) | multilingue | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M | ventanas de 30 s (Whisper) | multilingue | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | ventanas de 30 s (Whisper) | multilingue | apache-2.0 | HuggingFace |
+| Quiglee2/whisper-tiny-canadian-ft | 37,7 M | ventanas de 30 s (Whisper) | en | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,7 M | ventanas de 30 s (Whisper) | multilingue | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M | ventanas de 30 s (Whisper) | multilingue | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | ventanas de 30 s (Whisper) | multilingue | apache-2.0 | Hugging Face |
 
 No se dispone de datos de WER comparativos entre estos modelos en el dataset canadiense dentro de la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de WER comparativos entre estos modelos en el dataset can
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quiglee2/whisper-tiny-canadian-ft
+- Modelo en Hugging Face: https://huggingface.co/Quiglee2/whisper-tiny-canadian-ft
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/canadian_english
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

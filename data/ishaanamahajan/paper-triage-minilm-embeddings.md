@@ -82,7 +82,7 @@ La comparativa se limita a las alternativas que la propia model card menciona co
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este repositorio (MiniLM off-the-shelf, ONNX 8 bits) | no disponible (heredados del modelo base) | 256 tokens | AP 1,00 / 0,83 / 1,00 en el ranker (RAG, clima, cancer) | apache-2.0 | ONNX de ~23 MB para transformers.js |
-| sentence-transformers/all-MiniLM-L6-v2 (original) | no disponible | 256 tokens | mismo modelo sin cuantizar | apache-2.0 | disponible en HuggingFace |
+| sentence-transformers/all-MiniLM-L6-v2 (original) | no disponible | 256 tokens | mismo modelo sin cuantizar | apache-2.0 | disponible en Hugging Face |
 | Modelos de embeddings de 768 dimensiones | no disponible | no disponible | no disponible; la model card estima ganancias "modestas" en abstracts cortos | no disponible | no disponible |
 | SPECTER2 (dominio cientifico) | no disponible | no disponible | no disponible | no disponible | requiere pooling personalizado; no hay builds ONNX cuantizados pequenos para transformers.js |
 | Espacio TF-IDF (respaldo interno del sistema) | no aplica | no aplica | AP 0,83 / 0,78 / 1,00 en el mismo ranker | no disponible | integrado en la aplicacion |
@@ -101,7 +101,7 @@ La comparativa se limita a las alternativas que la propia model card menciona co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishaanamahajan/paper-triage-minilm-embeddings
+- Modelo en Hugging Face: https://huggingface.co/ishaanamahajan/paper-triage-minilm-embeddings
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Exportacion ONNX cuantizada utilizada: https://huggingface.co/Xenova/all-MiniLM-L6-v2
 - Libreria transformers.js: https://github.com/huggingface/transformers.js

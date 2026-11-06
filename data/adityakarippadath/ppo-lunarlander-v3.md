@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AdityaKarippadath/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, distribuido a través del Hub de HuggingFace y guardado con la librería `stable-baselines3`. No se trata de un modelo de lenguaje ni de un modelo de visión-lenguaje: es una política de control que recibe el estado del módulo de aterrizaje y emite una de las acciones discretas disponibles para posarlo de forma estable.
+`AdityaKarippadath/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, distribuido a través del Hub de Hugging Face y guardado con la librería `stable-baselines3`. No se trata de un modelo de lenguaje ni de un modelo de visión-lenguaje: es una política de control que recibe el estado del módulo de aterrizaje y emite una de las acciones discretas disponibles para posarlo de forma estable.
 
 El modelo resuelve una única tarea: maximizar la recompensa acumulada en LunarLander-v3. Según el `model-index` declarado por el autor, alcanza una recompensa media de 253,16 ± 16,97, un resultado por encima del umbral de resolución habitualmente asociado a este entorno, aunque el dato figura como no verificado (`verified: false`). La model card está incompleta: no incluye licencia, idiomas, hiperparámetros ni ejemplo de uso funcional (el bloque de código aparece con marcadores `TODO`).
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de otros agentes sobre LunarLander-v3 en l
 
 | Alternativa | Categoría | Entorno | Recompensa media publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (PPO, `stable-baselines3`) | Política RL on-policy | LunarLander-v3 | 253,16 ± 16,97 (no verificada) | No disponible | Hub de HuggingFace |
+| Este modelo (PPO, `stable-baselines3`) | Política RL on-policy | LunarLander-v3 | 253,16 ± 16,97 (no verificada) | No disponible | Hub de Hugging Face |
 | Agentes DQN sobre LunarLander-v3 | Política RL off-policy, valor | LunarLander-v3 | No disponible | No disponible | Genérica (implementaciones en `stable-baselines3` y otros) |
 | Agentes A2C sobre LunarLander-v3 | Política RL on-policy, actor-crítico síncrono | LunarLander-v3 | No disponible | No disponible | Genérica (implementaciones en `stable-baselines3` y otros) |
 | Controladores clásicos (p. ej. PID) | Control no aprendido | LunarLander-v3 | No disponible | No aplica | Implementación propia |
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento de otros agentes sobre LunarLander-v3 en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdityaKarippadath/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/AdityaKarippadath/ppo-LunarLander-v3
 - Repositorio de `stable-baselines3` (citado en la model card): https://github.com/DLR-RM/stable-baselines3
 - Librería `huggingface_sb3` (referenciada en la model card): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 en Farama Gymnasium (referencia general del entorno, no citada en la model card): https://gymnasium.farama.org/environments/box2d/lunar_lander/

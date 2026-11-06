@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reaperdoesntknow/qwenredux` es un modelo de lenguaje publicado en HuggingFace por el usuario reaperdoesntknow, con un total de 601.188.367 parámetros según los pesos en formato safetensors. El identificador y la etiqueta `qwen3_redux` sugieren una relación con la familia Qwen 3, pero no se ha publicado información que confirme el modelo base, el proceso de entrenamiento ni la procedencia de los pesos. La model card es la plantilla automática de HuggingFace y no contiene datos técnicos reales.
+`reaperdoesntknow/qwenredux` es un modelo de lenguaje publicado en Hugging Face por el usuario reaperdoesntknow, con un total de 601.188.367 parámetros según los pesos en formato safetensors. El identificador y la etiqueta `qwen3_redux` sugieren una relación con la familia Qwen 3, pero no se ha publicado información que confirme el modelo base, el proceso de entrenamiento ni la procedencia de los pesos. La model card es la plantilla automática de Hugging Face y no contiene datos técnicos reales.
 
 El modelo se distribuye en la librería `transformers` y el repositorio ocupa 2,4 GB, un tamaño coherente con un modelo de aproximadamente 600 millones de parámetros almacenado en precisión de 16 bits o superior. No se declara licencia, idiomas soportados, pipeline ni contexto máximo, lo que limita seriamente su evaluabilidad para uso en producción. La fecha de creación (octubre de 2026) y la de actualización (noviembre de 2026) son los únicos metadatos temporales disponibles.
 
@@ -63,7 +63,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card sustantiva: la información disponible es la plantilla automática de HuggingFace, sin datos de entrenamiento, evaluación ni uso previsto.
+- Ausencia total de model card sustantiva: la información disponible es la plantilla automática de Hugging Face, sin datos de entrenamiento, evaluación ni uso previsto.
 - Licencia no declarada: no se puede asumir permiso para uso comercial, redistribución ni modificación.
 - Idiomas no declarados: se desconoce si soporta castellano u otros idiomas distintos del inglés.
 - Contexto no documentado: imposible planificar aplicaciones que dependan de ventanas largas.
@@ -74,6 +74,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/qwenredux
+- Hugging Face: https://huggingface.co/reaperdoesntknow/qwenredux
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

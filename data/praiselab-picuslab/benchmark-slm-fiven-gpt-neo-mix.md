@@ -24,7 +24,7 @@ Su relevancia actual es limitada y de carácter experimental: no tiene descargas
 | Tipo de artefacto | Adaptador de fine-tuning, no pesos completos |
 | Tarea declarada | `text-generation` |
 | Tamaño del repositorio | 0,0 GB (redondeado; coherente con un adaptador de pocos MB) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Etiquetas | `peft`, `safetensors`, `lora`, `benchmark-slm`, `or2`, `dataset-fiven`, `strategy-mix`, `it`, `region:us` |
 | Fecha de creación (metadatos) | 2026-10-23 |
@@ -84,7 +84,7 @@ No es posible comparar rendimiento: este adaptador no publica ninguna métrica, 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no hay autorización explícita de uso comercial; a efectos prácticos debe tratarse como no apto para producción hasta contactar con el autor.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad.
 - Documentación mínima: no se detallan datos de entrenamiento, hiperparámetros LoRA, evaluación ni limitaciones declaradas por el autor.
 - Capacidad limitada: con 1,3B parámetros y sin alineación documentada, es esperable un razonamiento débil, errores en matemáticas y código, y una alta propensión a la alucinación en tareas de conocimiento factual.
 - Sesgos: al derivar de un modelo entrenado sobre The Pile (texto web, foros y corpus diversos), es probable que reproduzca sesgos de género, raza, religión y estereotipos presentes en esos datos; no se documenta ninguna mitigación.
@@ -97,7 +97,7 @@ No es posible comparar rendimiento: este adaptador no publica ninguna métrica, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-mix
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-mix
 - Modelo base: https://huggingface.co/EleutherAI/gpt-neo-1.3B
 - Librería PEFT (repositorio oficial): https://github.com/huggingface/peft
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la información disponible.

@@ -76,7 +76,7 @@ La comparativa directa con otros detectores de destilacion no es posible porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-Qwen3-8B-OMI-1K
+- Modelo en Hugging Face: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-Qwen3-8B-OMI-1K
 - Articulo original (arXiv): https://arxiv.org/abs/2607.09692
 - Repositorio oficial de los autores: https://github.com/RajatRawat-creator/DistillDetect
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B

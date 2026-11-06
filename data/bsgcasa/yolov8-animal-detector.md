@@ -79,5 +79,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bsgcasa/yolov8-animal-detector
+- Hugging Face: https://huggingface.co/bsgcasa/yolov8-animal-detector
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

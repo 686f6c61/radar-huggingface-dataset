@@ -75,7 +75,7 @@ Medido en M3 Ultra CPU, fp32, batch 1, greedy, 64 tokens nuevos. El autor indica
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| AGILLM-4.3 step2975754 | 1,73 B | no disponible | MIT | safetensors | HuggingFace (15 descargas) |
+| AGILLM-4.3 step2975754 | 1,73 B | no disponible | MIT | safetensors | Hugging Face (15 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (no autorregresivos de ~1,7 B) en la documentación proporcionada, por lo que no es posible establecer una comparativa rigurosa con datos verificables.
@@ -94,7 +94,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace (copia safetensors): https://huggingface.co/jamest65/AGILLM-4.3-step2975754-safetensors
+- Hugging Face (copia safetensors): https://huggingface.co/jamest65/AGILLM-4.3-step2975754-safetensors
 - Repositorio base (checkpoints originales): https://huggingface.co/MarxistLeninist/AGILLM-4.3-checkpoints
 - Revisión del checkpoint original: `708d5119` (referenciada en la model card)
 - Script de inferencia del autor: `agillm44_retention4_batchwoodbury_v1_ckptguard_v1.py` (sha256 `5c1f1e19...`, no enlazado en la información disponible)

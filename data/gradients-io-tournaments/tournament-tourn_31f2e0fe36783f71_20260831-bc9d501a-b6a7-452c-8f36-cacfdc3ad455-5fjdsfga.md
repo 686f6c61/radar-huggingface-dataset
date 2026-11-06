@@ -4,7 +4,7 @@
 
 Este modelo es un adaptador LoRA (PEFT) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/Llama-3.2-3B-Instruct. Lo publica la organizacion gradients-io-tournaments, vinculada a la plataforma Gradients, un proyecto de entrenamiento e investigacion de IA descentralizada basado en Bittensor Subnet 56. El nombre "tournament" indica que el adaptador es el resultado de un torneo de entrenamiento descentralizado en dicha plataforma.
 
-La model card apenas contiene informacion: todos los campos relevantes (datos de entrenamiento, hiperparametros, evaluacion, licencia) aparecen como "[More Information Needed]". Esto limita significativamente la posibilidad de evaluar el modelo de forma rigurosa. Lo unico confirmado es que se trata de un adaptador LoRA de 0,2 GB, entrenado con SFT mediante la libreria TRL de HuggingFace, y que hereda las capacidades del modelo base Llama-3.2-3B-Instruct (3.210 millones de parametros, ventana de contexto de 128.000 tokens).
+La model card apenas contiene informacion: todos los campos relevantes (datos de entrenamiento, hiperparametros, evaluacion, licencia) aparecen como "[More Information Needed]". Esto limita significativamente la posibilidad de evaluar el modelo de forma rigurosa. Lo unico confirmado es que se trata de un adaptador LoRA de 0,2 GB, entrenado con SFT mediante la libreria TRL de Hugging Face, y que hereda las capacidades del modelo base Llama-3.2-3B-Instruct (3.210 millones de parametros, ventana de contexto de 128.000 tokens).
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La model card apenas contiene informacion: todos los campos relevantes (datos de
 
 El adaptador se construye sobre Llama-3.2-3B-Instruct, un transformer decoder-only de 3.210 millones de parametros y 128.000 tokens de contexto. El modelo base fue entrenado por Meta con aproximadamente 9 billones de tokens y optimizado mediante fine-tuning supervisado y RLHF. La version de unsloth utilizada como base incorpora optimizaciones de entrenamiento e inferencia.
 
-En cuanto al adaptador, los tags del repositorio indican que se entreno con SFT utilizando la libreria TRL de HuggingFace y el framework PEFT 0.18.1. No se han publicado los datos de entrenamiento, el numero de pasos, la tasa de aprendizaje ni otros hiperparametros. El modelo procede de un torneo de la plataforma Gradients (Bittensor Subnet 56), lo que sugiere que fue entrenado de forma descentralizada por participantes de dicha red, aunque no se dispone de detalles sobre el proceso.
+En cuanto al adaptador, los tags del repositorio indican que se entreno con SFT utilizando la libreria TRL de Hugging Face y el framework PEFT 0.18.1. No se han publicado los datos de entrenamiento, el numero de pasos, la tasa de aprendizaje ni otros hiperparametros. El modelo procede de un torneo de la plataforma Gradients (Bittensor Subnet 56), lo que sugiere que fue entrenado de forma descentralizada por participantes de dicha red, aunque no se dispone de detalles sobre el proceso.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ Dado que no se dispone de datos de rendimiento del adaptador, la comparativa se 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.2-3B-Instruct (base) | 3.210 M | 128.000 | Llama 3.2 Community License | HuggingFace |
-| Qwen2.5-3B-Instruct | 3.090 M | 131.072 | Apache 2.0 | HuggingFace |
-| Phi-3-mini-4k-instruct | 3.820 M | 4.096 | MIT | HuggingFace |
-| Este adaptador | No disponible | 128.000 (heredado) | No disponible | HuggingFace |
+| Llama-3.2-3B-Instruct (base) | 3.210 M | 128.000 | Llama 3.2 Community License | Hugging Face |
+| Qwen2.5-3B-Instruct | 3.090 M | 131.072 | Apache 2.0 | Hugging Face |
+| Phi-3-mini-4k-instruct | 3.820 M | 4.096 | MIT | Hugging Face |
+| Este adaptador | No disponible | 128.000 (heredado) | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar este adaptador con estos modelos en benchmarks estandar.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para comparar este adaptador con estos mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-bc9d501a-b6a7-452c-8f36-cacfdc3ad455-5FjDsFGA
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-bc9d501a-b6a7-452c-8f36-cacfdc3ad455-5FjDsFGA
 - Plataforma Gradients (Bittensor Subnet 56): https://www.gradients.io/app/research/tournament
 - Modelo base unsloth/Llama-3.2-3B-Instruct: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Referencia arxiv:1910.09700 (calculadora de impacto de ML): https://arxiv.org/abs/1910.09700

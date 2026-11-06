@@ -1,7 +1,7 @@
 # thornmaze/wan-motion-a
 
 ## Resumen
-`thornmaze/wan-motion-a` es un fine-tune del modelo de generación de vídeo a partir de imagen (I2V) Wan-AI/Wan2.2-I2V-A14B, publicado por el usuario thornmaze en HuggingFace. El repositorio ocupa 15,0 GB y no incluye pipeline declarado ni idiomas soportados en los metadatos. La model card no contiene documentación técnica: únicamente recopila enlaces a recursos externos (Civitai y Civitai Archive) y listas de nombres de LoRAs y modelos de vídeo, con contenido explícitamente para adultos.
+`thornmaze/wan-motion-a` es un fine-tune del modelo de generación de vídeo a partir de imagen (I2V) Wan-AI/Wan2.2-I2V-A14B, publicado por el usuario thornmaze en Hugging Face. El repositorio ocupa 15,0 GB y no incluye pipeline declarado ni idiomas soportados en los metadatos. La model card no contiene documentación técnica: únicamente recopila enlaces a recursos externos (Civitai y Civitai Archive) y listas de nombres de LoRAs y modelos de vídeo, con contenido explícitamente para adultos.
 
 La relevancia técnica de esta ficha es limitada: se trata de un artefacto derivado sin información verificable sobre el proceso de ajuste, los datos empleados ni los hiperparámetros. No obstante, es relevante documentarlo porque ilustra el ecosistema de fine-tunes de Wan 2.2 I2V que circulan fuera de los canales oficiales, con licencias no declaradas y contenido no apto para todos los públicos.
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| thornmaze/wan-motion-a | no disponible (~14B base) | no disponible | unknown | HuggingFace | Fine-tune sin documentación |
-| Wan-AI/Wan2.2-I2V-A14B | ~14B | no disponible | según modelo base | HuggingFace (oficial) | Modelo base de referencia |
-| Otros fine-tunes de Wan 2.2 I2V | variable | no disponible | variable / unknown | Civitai, HuggingFace | Ecosistema no oficial |
+| thornmaze/wan-motion-a | no disponible (~14B base) | no disponible | unknown | Hugging Face | Fine-tune sin documentación |
+| Wan-AI/Wan2.2-I2V-A14B | ~14B | no disponible | según modelo base | Hugging Face (oficial) | Modelo base de referencia |
+| Otros fine-tunes de Wan 2.2 I2V | variable | no disponible | variable / unknown | Civitai, Hugging Face | Ecosistema no oficial |
 
 No se dispone de datos de rendimiento comparables para establecer una comparación cuantitativa.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparaci�
 - Fecha de creación futura (2026-10-31) en los metadatos: conviene verificar la autenticidad y el estado del repositorio antes de cualquier uso.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/thornmaze/wan-motion-a
+- Hugging Face: https://huggingface.co/thornmaze/wan-motion-a
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Civitai Archive (referenciado en la model card): https://civitaiarchive.com/search?is_nsfw=true&is_deleted=true&q=blink
 - Civitai (varios modelos referenciados en la model card): https://civitai.com/

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nekodeus/neko-alpha7-chris-evans` | LoRA de personaje sobre SD1.5 | Rango 8 (dim/alpha 8); base ~860 M UNet | 512 px; 77 tokens de prompt CLIP | other (sin texto) | HuggingFace, 0 descargas |
+| `Nekodeus/neko-alpha7-chris-evans` | LoRA de personaje sobre SD1.5 | Rango 8 (dim/alpha 8); base ~860 M UNet | 512 px; 77 tokens de prompt CLIP | other (sin texto) | Hugging Face, 0 descargas |
 | Otros LoRAs del set Hollywood Alpha (alpha1–alpha10) | LoRA de personaje sobre SD1.5 | Mismo esquema (rango 8, 1500 pasos) | 512 px | other (sin texto) | Mismo pack `neko-hollywood-alpha-sd15-v1` |
 | Stable Diffusion 1.5 base | Modelo de difusion completo | ~860 M UNet + ~123 M text encoder | 512 px; 77 tokens | CreativeML OpenRAIL-M (segun la distribucion del checkpoint base) | Ampliamente disponible |
 | SDXL 1.0 + LoRA de personaje | Modelo de difusion + adaptador | ~2.6 B UNet + text encoders | 1024 px; 77 tokens por encoder | CreativeML OpenRAIL++-M (segun distribucion) | Ampliamente disponible |
@@ -79,16 +79,16 @@ La comparacion relevante es interna al set: los diez LoRAs comparten hiperparame
 - Licencia "other" sin texto visible: no hay autorizacion explicita de uso comercial. Ademas, el uso queda sujeto a la licencia del checkpoint SD1.5 sobre el que se cargue el adaptador, que puede anadir restricciones (por ejemplo, OpenRAIL-M con clausulas de uso).
 - Riesgo de alucinacion visual: el modelo puede producir rasgos faciales inconsistentes, manos deformes, artefactos en ojos y texto ilegible, especialmente con pesos altos o prompts fuera de dominio.
 - Dependencia del prompt en ingles: el text encoder CLIP de SD1.5 rinde peor con prompts en castellano u otros idiomas, lo que limita su uso directo en productos en espanol.
-- Sin capacidades de lenguaje: no debe evaluarse como un modelo de chat, razonamiento o codigo; la ficha de HuggingFace lo clasifica como `text-to-image`.
+- Sin capacidades de lenguaje: no debe evaluarse como un modelo de chat, razonamiento o codigo; la ficha de Hugging Face lo clasifica como `text-to-image`.
 - Sin garantias de reproducibilidad: no se documentan semilla, composicion exacta del dataset ni repeticiones, por lo que no es posible replicar el entrenamiento a partir de la model card.
 - Metadatos pobres: 0 descargas, 0 likes y repositorio de 0.0 GB indican un artefacto recien publicado y sin validacion por parte de la comunidad; conviene inspeccionar los pesos antes de integrarlo en produccion.
 - Fecha de publicacion en los metadatos (2026-10-18): conviene verificar su coherencia antes de citar el modelo en documentacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nekodeus/neko-alpha7-chris-evans
+- Modelo en Hugging Face: https://huggingface.co/Nekodeus/neko-alpha7-chris-evans
 - Pack al que pertenece: https://huggingface.co/Nekodeus/neko-hollywood-alpha-sd15-v1
-- Pagina de modelos de difusion en HuggingFace (resultado de busqueda, no especifico de este modelo): https://huggingface.co/models?other=diffusionners
+- Pagina de modelos de difusion en Hugging Face (resultado de busqueda, no especifico de este modelo): https://huggingface.co/models?other=diffusionners
 - Pagina de terceros con un modelo "Chris Evans" en PixAI (no verificada como equivalente a este LoRA): https://pixai.art/en/model/1853297735282191743
 - kohya_ss sd-scripts (herramienta de entrenamiento citada por el autor): no se ha proporcionado enlace en la informacion disponible
 - Paper o blog tecnico del autor: no disponible

@@ -23,7 +23,7 @@ Se publica bajo licencia Apache 2.0, con una unica voz condicionada durante el e
 | Tamano del modelo | 28,7 MB en fp32 |
 | Voz | una sola voz (`af_msa.pt`), la usada para condicionar el entrenamiento |
 | Front-end de texto | `arabic_g2p.py`: normalizacion, tashkeel opcional con camel-tools, espeak-ng a IPA y `clean_phonemes` |
-| Fecha de publicacion | 9 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 9 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 100 / 10 |
 
 ## Arquitectura y entrenamiento
@@ -74,8 +74,8 @@ El autor indica que el modelo destilado es 4,2 veces mas rapido que el profesor 
 
 | Modelo | Parametros | RTF (CPU, 4 hilos) | Tiempo de sintesis | Idioma | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|---|
-| Nabra-7M-Distill | 7,48 M | 0,0224 | 0,081 s | arabe (MSA) | Apache 2.0 | HuggingFace (oddadmix/Nabra-7M-Distill) |
-| Nabra-82M-v0.1 | 81,81 M | 0,0947 | 0,346 s | arabe | no disponible en la informacion proporcionada | HuggingFace (oddadmix/Nabra-82M-v0.1) |
+| Nabra-7M-Distill | 7,48 M | 0,0224 | 0,081 s | arabe (MSA) | Apache 2.0 | Hugging Face (oddadmix/Nabra-7M-Distill) |
+| Nabra-82M-v0.1 | 81,81 M | 0,0947 | 0,346 s | arabe | no disponible en la informacion proporcionada | Hugging Face (oddadmix/Nabra-82M-v0.1) |
 
 El autor menciona Kokoro como base arquitectonica del proyecto y StyleTTS2 como familia de arquitectura, pero no se aportan parametros, contexto, rendimiento ni licencia de esos sistemas en la informacion disponible, por lo que no se incluyen cifras que no esten respaldadas por los datos facilitados. Tampoco se dispone de comparaciones con otras alternativas TTS en arabe.
 
@@ -88,10 +88,10 @@ El autor menciona Kokoro como base arquitectonica del proyecto y StyleTTS2 como 
 - No se documentan resultados de robustez ante texto ruidoso, numeros, abreviaturas, codigo mezclado con latin o nombres propios.
 - Riesgo propio de un modelo de voz: puede emplearse para suplantacion o generacion de audio enganoso; al ser una unica voz publica y conocida, conviene etiquetar el audio generado.
 - Licencia Apache 2.0 para los pesos, lo que en principio permite uso comercial, pero hay que verificar aparte las licencias de las dependencias del front-end y de cualquier dato de voz utilizado en el entrenamiento, que no se detalla en la model card.
-- La fecha de publicacion de los metadatos de HuggingFace (septiembre de 2026) y la ausencia de documentacion adicional fuera del repositorio limitan la trazabilidad del entrenamiento.
+- La fecha de publicacion de los metadatos de Hugging Face (septiembre de 2026) y la ausencia de documentacion adicional fuera del repositorio limitan la trazabilidad del entrenamiento.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/oddadmix/Nabra-7M-Distill
+- Modelo en Hugging Face: https://huggingface.co/oddadmix/Nabra-7M-Distill
 - Modelo profesor Nabra-82M-v0.1: https://huggingface.co/oddadmix/Nabra-82M-v0.1
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con sintesis de voz en arabe; los enlaces obtenidos correspondian a foros de alimentacion equina y se han descartado por no ser relevantes. No se han encontrado papers, blogs tecnicos, repositorios adicionales ni demos asociados al modelo en la informacion disponible.

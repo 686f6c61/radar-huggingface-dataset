@@ -105,7 +105,7 @@ No se ha publicado comparación con otros modelos de detección de baches en el 
 | YOLOv11 | 2,58M | 0,779 | 9,3 | Eficiencia moderna |
 | YOLOv8-FPN | 2,21M | 0,707 | 6,4 | Máxima velocidad |
 
-Como referencia general, los modelos YOLO estándar preentrenados en COCO (como YOLOv8n público) alcanzan mAP50 de alrededor de 0,37 en COCO, pero no son comparables directamente porque este modelo está fine-tuneado para la tarea específica de baches. No hay otros modelos de detección de baches en HuggingFace con métricas publicadas en el momento de la redacción.
+Como referencia general, los modelos YOLO estándar preentrenados en COCO (como YOLOv8n público) alcanzan mAP50 de alrededor de 0,37 en COCO, pero no son comparables directamente porque este modelo está fine-tuneado para la tarea específica de baches. No hay otros modelos de detección de baches en Hugging Face con métricas publicadas en el momento de la redacción.
 
 ## Limitaciones y advertencias
 

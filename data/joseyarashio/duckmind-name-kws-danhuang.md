@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks comparables en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joseyarashio/duckmind-name-kws-danhuang
+- Modelo en Hugging Face: https://huggingface.co/joseyarashio/duckmind-name-kws-danhuang
 - Repositorio duckmind: https://github.com/joseyarashio/duckmind
 - Detector de runtime: https://github.com/joseyarashio/duckmind/blob/main/src/duckmind/namekws/detector.py
 - Dataset espnet/yodas2: https://huggingface.co/datasets/espnet/yodas2

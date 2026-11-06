@@ -6,7 +6,7 @@
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional multimodal: es un artefacto de investigación en aprendizaje por imitación para manipulación robótica. Cada checkpoint corresponde a un entrenamiento de 2000 épocas con semilla 1, y el autor reporta una tasa de éxito de 0,98 en ambas tareas evaluadas sobre 50 episodios. El robot simulado es un Franka Panda con controlador delta `OSC_POSE` a 20 Hz.
 
-Su relevancia es acotada pero práctica: sirve como referencia reproducible de Diffusion Policy sobre robomimic y como punto de partida para experimentos de imitación en entornos simulados. El repositorio pesa 2,1 GB, no declara licencia ni idiomas, y no incluye pesos en formato estándar de HuggingFace sino checkpoints pickled de PyTorch de aproximadamente 1 GB cada uno.
+Su relevancia es acotada pero práctica: sirve como referencia reproducible de Diffusion Policy sobre robomimic y como punto de partida para experimentos de imitación en entornos simulados. El repositorio pesa 2,1 GB, no declara licencia ni idiomas, y no incluye pesos en formato estándar de Hugging Face sino checkpoints pickled de PyTorch de aproximadamente 1 GB cada uno.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Tareas | Observaciones | Tasa de éxito reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `lukelu33/robomimic-diffusion-policy` | Diffusion Policy (UNet) | `Lift`, `PickPlaceCan` | Baja dimensión | 0,98 en ambas | no disponible | HuggingFace |
+| `lukelu33/robomimic-diffusion-policy` | Diffusion Policy (UNet) | `Lift`, `PickPlaceCan` | Baja dimensión | 0,98 en ambas | no disponible | Hugging Face |
 | Diffusion Policy original (Chi et al., 2023) | Diffusion Policy (UNet/Transformer) | Múltiples (Push-T, Robomimic, etc.) | Baja dimensión e imagen | Resultados publicados en paper | Código abierto (MIT en el repo oficial) | GitHub oficial |
 | ACT (Zhao et al., 2023) | Transformer con action chunking | Tareas bimanuales (ALOHA) | Imagen | Resultados en paper | Código abierto | GitHub |
 | VQ-BeT (Lee et al., 2024) | Transformer con cuantización vectorial | Robomimic y otros | Baja dimensión e imagen | Resultados en paper | Código abierto | GitHub |
@@ -87,7 +87,7 @@ La comparativa se limita a familias metodológicas porque no se dispone de otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lukelu33/robomimic-diffusion-policy
+- Hugging Face: https://huggingface.co/lukelu33/robomimic-diffusion-policy
 - Rollouts y resumen en la rama `diffusion` de q2rl: https://github.com/lakshitadodeja/q2rl/tree/diffusion/results/diffusion_policy
 - Repositorio de robomimic (libería de carga): https://github.com/ARISE-Initiative/robomimic
 - Paper de Diffusion Policy: no disponible en la información proporcionada

@@ -68,6 +68,6 @@ No se dispone de información comparativa en la documentación proporcionada. Mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VLABench/pifast-pretrain-vlabench-primitive-aligned
+- Hugging Face: https://huggingface.co/VLABench/pifast-pretrain-vlabench-primitive-aligned
 - Paper de VLABench: arXiv:2412.18194 (https://arxiv.org/abs/2412.18194)
 - Repositorio OpenPI (código de evaluación y entrenamiento): https://github.com/Shiduo-zh/openpi

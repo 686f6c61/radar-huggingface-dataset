@@ -91,6 +91,6 @@ La tabla de la *model card* también compara el modelo con una abliteración ing
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/medismera/Qwen3.8-27B-Surgical-Abliterated
+- Hugging Face: https://huggingface.co/medismera/Qwen3.8-27B-Surgical-Abliterated
 - Análisis independiente de variantes abliteradas: https://nathan.sapwell.net/posts/qwen38-27b-abliteration/
 - Referencia técnica: Representation Engineering (Arditi et al., 2024)

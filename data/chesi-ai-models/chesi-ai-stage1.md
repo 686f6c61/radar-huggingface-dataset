@@ -91,7 +91,7 @@ En terminos de capacidad practica, Chesi AI Stage-1 queda muy por debajo de cual
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chesi-AI-Models/Chesi-AI-stage1
+- Hugging Face: https://huggingface.co/Chesi-AI-Models/Chesi-AI-stage1
 - Repositorio GitHub del proyecto: https://github.com/Chesi-AI-Models/Chesi-AI
 - Guia de reproduccion: https://github.com/Chesi-AI-Models/Chesi-AI/blob/main/docs/REPRODUCE.md
 - Registro de corpus (corpus ledger): https://github.com/Chesi-AI-Models/Chesi-AI/blob/main/docs/CORPUS_LEDGER.md

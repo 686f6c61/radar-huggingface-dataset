@@ -79,7 +79,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: NextGenInstitute/socraticAI](https://huggingface.co/NextGenInstitute/socraticAI)
+- [Hugging Face: NextGenInstitute/socraticAI](https://huggingface.co/NextGenInstitute/socraticAI)
 - [Paper en arXiv: SocraticAI: Transforming LLMs into Guided CS Tutors Through Scaffolded ...](https://arxiv.org/html/2512.03501v1)
 - [arXiv abstract](https://arxiv.org/abs/2512.03501v1)
 - [GitHub: SuccessMoses/SocraticAI](https://github.com/SuccessMoses/SocraticAI)

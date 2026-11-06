@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MossFormer2-SE-48K-Decomp-ORT es una conversión optimizada del modelo MossFormer2 para realce de voz (speech enhancement) y reducción de ruido a 48 kHz, publicada por el usuario ipsilondev en HuggingFace. No se trata de un modelo de lenguaje ni de un transformador generativo: es un modelo de procesamiento de audio cuyo único artefacto publicado es un fichero FlatBuffer de ONNX Runtime (`model.ort`) con cuantización dinámica INT8.
+MossFormer2-SE-48K-Decomp-ORT es una conversión optimizada del modelo MossFormer2 para realce de voz (speech enhancement) y reducción de ruido a 48 kHz, publicada por el usuario ipsilondev en Hugging Face. No se trata de un modelo de lenguaje ni de un transformador generativo: es un modelo de procesamiento de audio cuyo único artefacto publicado es un fichero FlatBuffer de ONNX Runtime (`model.ort`) con cuantización dinámica INT8.
 
 El valor diferencial de esta ficha no está en el modelo base, sino en el proceso de conversión: los 193 nodos `Einsum` de la red original se han descompuesto en tiempo de compilación en operaciones estándar GEMM y elementales, lo que permite que el grafo se ejecute sin kernels especializados y sea compatible con XNNPACK, CPU genérica y hardware móvil. El resultado es un artefacto de aproximadamente 0,1 GB, pensado para inferencia offline en el borde (edge), no en servidor con GPU.
 
@@ -97,6 +97,6 @@ La informacion proporcionada no incluye datos comparativos. La tabla siguiente r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ipsilondev/MossFormer2-SE-48K-Decomp-ORT
+- Hugging Face: https://huggingface.co/ipsilondev/MossFormer2-SE-48K-Decomp-ORT
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a sitios de horoscopos, a la plataforma Zhihu y a un blog generico sobre modelos de NLP y vision, ninguno relacionado con MossFormer2.
 - No se dispone de enlaces al paper, al repositorio de codigo ni a demos del modelo original a partir de la informacion proporcionada.

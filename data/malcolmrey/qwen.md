@@ -2,7 +2,7 @@
 
 ## Resumen
 
-malcolmrey/qwen es un repositorio publicado en HuggingFace por el usuario malcolmrey el 21 de septiembre de 2026 y actualizado dos minutos despues. El repositorio ocupa 0,2 GB y esta etiquetado con licencia apache-2.0. No incluye model card, pipeline declarado, idiomas soportados, ni resultados de evaluacion. En el momento de redactar esta ficha acumula 0 descargas y 1 like.
+malcolmrey/qwen es un repositorio publicado en Hugging Face por el usuario malcolmrey el 21 de septiembre de 2026 y actualizado dos minutos despues. El repositorio ocupa 0,2 GB y esta etiquetado con licencia apache-2.0. No incluye model card, pipeline declarado, idiomas soportados, ni resultados de evaluacion. En el momento de redactar esta ficha acumula 0 descargas y 1 like.
 
 El nombre del repositorio sugiere una relacion con la familia Qwen, desarrollada originalmente por Alibaba Cloud, pero no hay ningun dato en la informacion disponible que confirme el modelo base, la arquitectura, el numero de parametros ni el origen de los pesos. Tampoco se puede verificar si se trata de un modelo completo, un fine-tuning, una cuantizacion o un merge.
 
@@ -92,7 +92,7 @@ No es posible establecer una comparativa fiable: se desconocen los parametros, e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/malcolmrey/qwen
+- Repositorio en Hugging Face: https://huggingface.co/malcolmrey/qwen
 - Model card del autor: no disponible (vacia, solo contiene el bloque de licencia apache-2.0)
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible

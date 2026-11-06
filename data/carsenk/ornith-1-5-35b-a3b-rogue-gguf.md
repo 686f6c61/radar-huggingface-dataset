@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos MoE de tama√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/carsenk/Ornith-1.5-35B-A3B-ROGUE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/carsenk/Ornith-1.5-35B-A3B-ROGUE-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Cuantizaciones GGUF del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Blog t√©cnico de Ornith-1.5: https://ornith.ai/ornith_1_5.html

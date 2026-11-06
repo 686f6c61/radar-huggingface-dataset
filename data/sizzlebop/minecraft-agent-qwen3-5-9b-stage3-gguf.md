@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 | Modelo | Parametros | Contexto | Rendimiento en easy-ng | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minecraft Agent Qwen3.5-9B Stage 3 (GGUF) | ~8,95 B | 32.768 tokens | 24,9 % global con ventana de 29 fotogramas | Apache 2.0 | GGUF en HuggingFace |
+| Minecraft Agent Qwen3.5-9B Stage 3 (GGUF) | ~8,95 B | 32.768 tokens | 24,9 % global con ventana de 29 fotogramas | Apache 2.0 | GGUF en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

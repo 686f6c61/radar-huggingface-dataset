@@ -77,8 +77,8 @@ Yggdrasil v1 supera al baseline de reglas en beneficio en 10 de 12 meses y no su
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-yggdrasil-v1 | 0,8 B + LoRA | No disponible | Decisiones empresariales por RL sobre simulador | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen/Qwen3.5-0.8B | 0,8 B | No disponible | LLM generalista | Apache 2.0 (según modelo base) | HuggingFace |
+| connectailab-rl-yggdrasil-v1 | 0,8 B + LoRA | No disponible | Decisiones empresariales por RL sobre simulador | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen/Qwen3.5-0.8B | 0,8 B | No disponible | LLM generalista | Apache 2.0 (según modelo base) | Hugging Face |
 | Política PPO "profesor v4" | No disponible | No aplica | RL clásico en el simulador CONNECT TYCOON | No disponible | No distribuida públicamente |
 
 No se dispone de datos de benchmarks comparables con otros modelos de decisión de la misma categoría en la información proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de decisión 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dain-studio/connectailab-rl-yggdrasil-v1
+- Modelo en Hugging Face: https://huggingface.co/dain-studio/connectailab-rl-yggdrasil-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

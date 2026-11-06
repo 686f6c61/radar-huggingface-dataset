@@ -78,9 +78,9 @@ No se dispone de datos comparativos directos con otros modelos de embeddings cli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.sv_GP_only_snomed
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.sv_GP_only_snomed
 - Modelo base CardioBERTa.sv: https://huggingface.co/DT4H/CardioBERTa.sv
-- Organizacion DT4H en HuggingFace: https://huggingface.co/DT4H/
+- Organizacion DT4H en Hugging Face: https://huggingface.co/DT4H/
 - Proyecto DataTools4Heart: https://www.datatools4heart.eu/
 - Repositorio GitHub de DT4H: https://github.com/DataTools4Heart/
 - Referencia del paper: Danu et al., "CardioLM - a multilingual suite of small language models for the cardiology domain" (no se ha encontrado el enlace directo).

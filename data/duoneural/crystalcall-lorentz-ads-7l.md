@@ -88,7 +88,7 @@ CrystalCall es notablemente mas pequeño que su modelo profesor y que la mayoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/CrystalCall-Lorentz-ADS-7L
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/CrystalCall-Lorentz-ADS-7L
 - Organizacion del autor: https://huggingface.co/DuoNeural
 - Repositorio de codigo: https://github.com/DuoNeural/Lattice-CDM
 - Web del laboratorio: https://duoneural.com

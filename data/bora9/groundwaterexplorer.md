@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Bora9/GroundwaterExplorer` es un modelo publicado en HuggingFace por el usuario Bora9 (Bora Agbulut) bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. A fecha de su creación (25 de agosto de 2026), el modelo registra cero descargas y cero likes, lo que indica que es un artefacto recién subido y sin adopción comunitaria. No se dispone de información pública sobre su arquitectura, tamaño, contexto o capacidades. Los resultados de búsqueda web relacionados con el autor sugieren que trabaja en aplicaciones de análisis geoespacial y de imágenes (por ejemplo, un espacio de HuggingFace para encuestas arquitectónicas 3D y otro para segmentación de palinofacies), pero no hay evidencia que vincule directamente este modelo con esos proyectos. Por tanto, esta ficha se limita a documentar la ausencia de datos y a señalar los riesgos de usar un modelo sin especificaciones verificables.
+El modelo `Bora9/GroundwaterExplorer` es un modelo publicado en Hugging Face por el usuario Bora9 (Bora Agbulut) bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. A fecha de su creación (25 de agosto de 2026), el modelo registra cero descargas y cero likes, lo que indica que es un artefacto recién subido y sin adopción comunitaria. No se dispone de información pública sobre su arquitectura, tamaño, contexto o capacidades. Los resultados de búsqueda web relacionados con el autor sugieren que trabaja en aplicaciones de análisis geoespacial y de imágenes (por ejemplo, un espacio de Hugging Face para encuestas arquitectónicas 3D y otro para segmentación de palinofacies), pero no hay evidencia que vincule directamente este modelo con esos proyectos. Por tanto, esta ficha se limita a documentar la ausencia de datos y a señalar los riesgos de usar un modelo sin especificaciones verificables.
 
 ## Especificaciones tecnicas
 
@@ -51,8 +51,8 @@ No disponible. Al no conocerse la arquitectura ni el propósito del modelo, no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bora9/GroundwaterExplorer
-- Espacio de HuggingFace del autor (Geo Architectural 3D Survey Engine): https://huggingface.co/spaces/Bora9/Survey
-- Perfil del autor en HuggingFace: https://huggingface.co/Bora9/spaces
+- Modelo en Hugging Face: https://huggingface.co/Bora9/GroundwaterExplorer
+- Espacio de Hugging Face del autor (Geo Architectural 3D Survey Engine): https://huggingface.co/spaces/Bora9/Survey
+- Perfil del autor en Hugging Face: https://huggingface.co/Bora9/spaces
 - Artículo relacionado con predicción de niveles de agua subterránea (no vinculado directamente al modelo): https://www.sciencedirect.com/science/article/pii/S2352801X25001055
 - Artículo sobre plataforma de gestión de aguas subterráneas con IA (no vinculado directamente al modelo): https://www.sciencedirect.com/science/article/pii/S136481522500475X

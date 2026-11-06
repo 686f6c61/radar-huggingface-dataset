@@ -68,8 +68,8 @@ Estos resultados provienen de la model card del autor y se obtuvieron con una ap
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador sobre base de 0,8B | no disponible | Selección de acción discreta en robot simulado | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | Adaptador sobre base de 0,8B | no disponible | Selección de acción discreta en robot simulado | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | Apache 2.0 | Hugging Face |
 | Políticas PPO del proyecto CONNECT TYCOON | no disponible | no aplica | Control de robot en simulador | Apache 2.0 (repo) | GitHub |
 
 No se dispone de información sobre otros adaptadores LoRA equivalentes para tareas de decisión robótica en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de información sobre otros adaptadores LoRA equivalentes para tar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-choose-object-v1-link01
+- Hugging Face: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-choose-object-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

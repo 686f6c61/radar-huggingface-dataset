@@ -73,7 +73,7 @@ Los tres modelos son adaptadores LoRA sobre la familia π₀ con entradas de fue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiangxin0923/pi0_lora_tacforce_enc_realworld_task_blackboard
+- Modelo en Hugging Face: https://huggingface.co/xiangxin0923/pi0_lora_tacforce_enc_realworld_task_blackboard
 - Paper de π₀: "π₀: A Vision-Language-Action Flow Model for General Robot Control" (Kevin Black et al., 2025) - disponible en ResearchGate: https://www.researchgate.net/publication/395364425_p_A_Vision-Language-Action_Flow_Model_for_General_Robot_Control
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Modelo relacionado: https://huggingface.co/NathanWu7/pi0_lora_tacforce_tabero_enc_10

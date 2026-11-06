@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Thesis_part_pickup es un modelo de politica robótica (vision-language-action, VLA) publicado por el usuario Anu120 en HuggingFace, resultado del ajuste fino del modelo base lerobot/smolvla_base sobre el dataset Anu120/part_pickup_merged. Se trata, por tanto, de una especialización de SmolVLA orientada a una tarea concreta de manipulación (recogida de piezas), no de un modelo de propósito general entrenado desde cero.
+Thesis_part_pickup es un modelo de politica robótica (vision-language-action, VLA) publicado por el usuario Anu120 en Hugging Face, resultado del ajuste fino del modelo base lerobot/smolvla_base sobre el dataset Anu120/part_pickup_merged. Se trata, por tanto, de una especialización de SmolVLA orientada a una tarea concreta de manipulación (recogida de piezas), no de un modelo de propósito general entrenado desde cero.
 
 SmolVLA es un modelo compacto de tipo VLA que combina un codificador visión-lenguaje con un experto de acción, y que según su paper logra un rendimiento competitivo en tareas de manipulación robótica con un coste computacional reducido, apto para hardware de consumo. El modelo aquí descrito tiene 450.046.176 parámetros (unos 450 millones) y un tamaño de repositorio de 0,9 GB, coherente con pesos almacenados en precisión reducida (aproximadamente bf16/fp16).
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Categoria | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Thesis_part_pickup (SmolVLA finetune) | ~450 M | VLA (manipulacion) | apache-2.0 | HuggingFace, con LeRobot |
-| lerobot/smolvla_base | ~450 M (aproximado) | VLA base | no disponible en esta consulta | HuggingFace |
-| OpenVLA | ~7 B (aproximado, dato publico) | VLA | no disponible en esta consulta | HuggingFace |
+| Thesis_part_pickup (SmolVLA finetune) | ~450 M | VLA (manipulacion) | apache-2.0 | Hugging Face, con LeRobot |
+| lerobot/smolvla_base | ~450 M (aproximado) | VLA base | no disponible en esta consulta | Hugging Face |
+| OpenVLA | ~7 B (aproximado, dato publico) | VLA | no disponible en esta consulta | Hugging Face |
 | pi0 (Physical Intelligence) | orden de miles de millones (aproximado, dato publico) | VLA | no disponible en esta consulta | publicaciones del autor |
 
 Nota: los datos de OpenVLA y pi0 proceden de conocimiento público general y no de la información proporcionada en esta búsqueda; deben verificarse en sus fuentes originales. No se dispone de comparaciones de rendimiento entre estos modelos y Thesis_part_pickup.
@@ -80,7 +80,7 @@ Nota: los datos de OpenVLA y pi0 proceden de conocimiento público general y no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anu120/Thesis_part_pickup
+- Modelo en Hugging Face: https://huggingface.co/Anu120/Thesis_part_pickup
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de ajuste fino: https://huggingface.co/datasets/Anu120/part_pickup_merged
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

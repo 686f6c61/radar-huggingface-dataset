@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint concreto (epoch 7, paso 185000) de un modelo de borrador (draft model) EAGLE3 entrenado en línea con SpecForge para el modelo objetivo `Qwen/Qwen3-4B-Instruct-2507`. No es un modelo de chat independiente, sino un componente de decodificación especulativa que genera tokens candidatos para acelerar la inferencia del modelo base. El desarrollo lo realiza el usuario de HuggingFace `huluhuluu`, que publica 47 checkpoints de un mismo entrenamiento en una colección.
+Este repositorio contiene un checkpoint concreto (epoch 7, paso 185000) de un modelo de borrador (draft model) EAGLE3 entrenado en línea con SpecForge para el modelo objetivo `Qwen/Qwen3-4B-Instruct-2507`. No es un modelo de chat independiente, sino un componente de decodificación especulativa que genera tokens candidatos para acelerar la inferencia del modelo base. El desarrollo lo realiza el usuario de Hugging Face `huluhuluu`, que publica 47 checkpoints de un mismo entrenamiento en una colección.
 
 El modelo tiene 202.700.416 parámetros, una única capa de decoder con tamaño oculto 2560, y está diseñado para usarse exclusivamente con el backend SGLang mediante el algoritmo EAGLE3. Su relevancia radica en que permite reducir la latencia de generación del Qwen3-4B-Instruct-2507 sin modificar la calidad de las respuestas, ya que el modelo base es el que produce la salida final verificada. La licencia es Apache 2.0, lo que facilita su integración en entornos comerciales.
 

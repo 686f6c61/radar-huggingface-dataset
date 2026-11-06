@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Solara-27B es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.8-27B, publicado por el usuario WangSenQWQ en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar entradas que combinan imagen y texto y generar respuestas textuales. Con 27.356.728.560 parámetros totales (unos 27,4 mil millones), se posiciona en la franja de modelos de tamano medio-grande, adecuado para despliegues en una o varias GPU de gama alta.
+Solara-27B es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.8-27B, publicado por el usuario WangSenQWQ en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar entradas que combinan imagen y texto y generar respuestas textuales. Con 27.356.728.560 parámetros totales (unos 27,4 mil millones), se posiciona en la franja de modelos de tamano medio-grande, adecuado para despliegues en una o varias GPU de gama alta.
 
 El modelo se distribuye en formato BF16 safetensors junto con el tokenizer, la plantilla de chat y la configuración del procesador correspondientes al checkpoint 1530 (época 3) del run de entrenamiento v86, fechado el 2 de noviembre de 2026. La licencia declarada es Apache-2.0, lo que facilita su uso comercial, si bien el autor advierte explícitamente que la licencia del modelo no otorga derechos sobre el dataset de entrenamiento.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha radica en que se trata de un modelo muy reciente y c
 
 ## Arquitectura y entrenamiento
 
-Solara-27B es un fine-tune del modelo base Qwen/Qwen3.8-27B, etiquetado en HuggingFace con el tag de arquitectura `qwen3_5` y con pipeline `image-text-to-text`, lo que confirma su naturaleza multimodal (procesamiento conjunto de imagen y texto). Los pesos se distribuyen en BF16 safetensors e incluyen el tokenizer, la plantilla de chat y la configuración del procesador del checkpoint.
+Solara-27B es un fine-tune del modelo base Qwen/Qwen3.8-27B, etiquetado en Hugging Face con el tag de arquitectura `qwen3_5` y con pipeline `image-text-to-text`, lo que confirma su naturaleza multimodal (procesamiento conjunto de imagen y texto). Los pesos se distribuyen en BF16 safetensors e incluyen el tokenizer, la plantilla de chat y la configuración del procesador del checkpoint.
 
 La información pública sobre el entrenamiento es muy limitada: se conoce el identificador del run (v86), la fecha (2026-11-02) y el checkpoint publicado (1530, correspondiente a la época 3). No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones arquitectónicas propias más allá de las heredadas del modelo base.
 
@@ -32,7 +32,7 @@ La información pública sobre el entrenamiento es muy limitada: se conoce el id
 - Generación de texto y razonamiento conversacional multi-turno, heredados del modelo base Qwen3.8-27B.
 - Procesamiento de entradas imagen-texto (pipeline image-text-to-text): descripción de imágenes, respuesta a preguntas visuales y tareas que combinan contexto visual y textual.
 - Conversación con plantilla de chat incluida en el repositorio.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de HuggingFace).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de Hugging Face).
 - Capacidades de tool calling / function calling: no documentadas explícitamente.
 - Soporte de agentes y razonamiento multi-paso: no documentado explícitamente.
 - Cobertura multilingüe: no disponible.
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Solara-27B | 27,36 B | no disponible | image-text-to-text | Apache-2.0 | HuggingFace (WangSenQWQ) |
-| Qwen/Qwen3.8-27B (base) | no disponible en la informacion | no disponible | no disponible | no disponible | HuggingFace |
+| Solara-27B | 27,36 B | no disponible | image-text-to-text | Apache-2.0 | Hugging Face (WangSenQWQ) |
+| Qwen/Qwen3.8-27B (base) | no disponible en la informacion | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de ~27B multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -83,5 +83,5 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WangSenQWQ/Solara-27B
+- Modelo en Hugging Face: https://huggingface.co/WangSenQWQ/Solara-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

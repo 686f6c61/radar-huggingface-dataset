@@ -4,7 +4,7 @@
 
 Behemoth-128B-v3-4bit-fp16 es una versión cuantizada a 4 bits en formato MLX del modelo Behemoth-128B-v3, originalmente desarrollado por TheDrummer y adaptado por Lykegenes para su uso en hardware Apple Silicon. El modelo está diseñado para generación de texto conversacional y se distribuye con la librería `mlx-lm`, lo que permite ejecutarlo de forma eficiente en Mac con memoria unificada.
 
-A pesar de su nombre, los pesos reales contenidos en el repositorio suman 19.537.145.856 parámetros (~19,5 mil millones), una cifra muy inferior a los 128B que sugiere la denominación. Esta discrepancia no está documentada en la model card, por lo que conviene tratarla con cautela. El contexto declarado en fuentes externas es de 256K tokens, aunque no se confirma en la ficha de HuggingFace. La licencia no está especificada en este repositorio, aunque el modelo original de TheDrummer se publica bajo Apache 2.0.
+A pesar de su nombre, los pesos reales contenidos en el repositorio suman 19.537.145.856 parámetros (~19,5 mil millones), una cifra muy inferior a los 128B que sugiere la denominación. Esta discrepancia no está documentada en la model card, por lo que conviene tratarla con cautela. El contexto declarado en fuentes externas es de 256K tokens, aunque no se confirma en la ficha de Hugging Face. La licencia no está especificada en este repositorio, aunque el modelo original de TheDrummer se publica bajo Apache 2.0.
 
 La relevancia de este modelo radica en su formato MLX, que permite desplegar un LLM de gran tamaño en equipos Apple con memoria unificada, sin necesidad de GPUs dedicadas. Sin embargo, la falta de documentación técnica y de benchmarks publicados limita su evaluación objetiva.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La discr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lykegenes/Behemoth-128B-v3-4bit-fp16
+- Repositorio Hugging Face: https://huggingface.co/Lykegenes/Behemoth-128B-v3-4bit-fp16
 - Modelo original de TheDrummer: https://huggingface.co/TheDrummer/Behemoth-128B-v3
 - Entrada en LLM Explorer: https://llm-explorer.com/model/TheDrummer%2FBehemoth-128B-v3,7vo9mBBtprZAav8oP8L0pm
 - Modelo similar de Lykegenes: https://huggingface.co/Lykegenes/Behemoth-X-123B-v2.1-4bit-fp16

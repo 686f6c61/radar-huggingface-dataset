@@ -74,16 +74,16 @@ No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de evaluaciones espec
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e3 (este) | 8B (base) + adaptador | 512 tokens de entrenamiento; contexto base 128k | Val loss 0,9818; Val PPL 2,6692 | llama3.1 | HuggingFace, 0 descargas |
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1 | 8B (base) + adaptador | 512 tokens de entrenamiento | Menor val loss según la model card (valor no especificado) | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Benchmarks públicos de Meta (no reproducidos aquí) | llama3.1 | HuggingFace, ampliamente usado |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e3 (este) | 8B (base) + adaptador | 512 tokens de entrenamiento; contexto base 128k | Val loss 0,9818; Val PPL 2,6692 | llama3.1 | Hugging Face, 0 descargas |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1 | 8B (base) + adaptador | 512 tokens de entrenamiento | Menor val loss según la model card (valor no especificado) | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Benchmarks públicos de Meta (no reproducidos aquí) | llama3.1 | Hugging Face, ampliamente usado |
 | Adaptadores SciQ de terceros | no disponible | no disponible | no disponible | variable | no disponible |
 
 La comparativa se limita a las variantes de la misma ablación y al modelo base, ya que no se dispone de datos de rendimiento de alternativas comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un adaptador, no un modelo autónomo: requiere descargar y cargar el modelo base `meta-llama/Llama-3.1-8B-Instruct`, que está sujeto a aceptación de licencia en HuggingFace.
+- Es un adaptador, no un modelo autónomo: requiere descargar y cargar el modelo base `meta-llama/Llama-3.1-8B-Instruct`, que está sujeto a aceptación de licencia en Hugging Face.
 - El adaptador hereda la Llama 3.1 Community License, con restricciones de uso comercial y obligaciones de atribución; es necesario revisar los términos antes de un despliegue en producción.
 - El ajuste se realizó con secuencias de 512 tokens, lo que puede degradar el rendimiento en contextos largos pese a que el modelo base soporte 128k tokens.
 - Riesgo de sobreajuste al corpus SciQ: puede responder de forma estereotipada o perder generalidad en dominios ajenos a la QA científica.
@@ -96,7 +96,7 @@ La comparativa se limita a las variantes de la misma ablación y al modelo base,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e3
+- Modelo en Hugging Face: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e3
 - Dataset de entrenamiento: https://huggingface.co/datasets/ahmedelgebaly/SciQ_Alpaca
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante e1 (recomendada): https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1

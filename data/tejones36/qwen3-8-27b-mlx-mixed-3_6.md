@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una conversión a formato MLX del modelo **Qwen/Qwen3.8-27B**, realizada por el usuario de HuggingFace `tejones36`. Se trata de una adaptación no oficial que emplea `mlx-vlm` para cuantizar los pesos con una receta de precisión mixta de 3 y 6 bits (group size 64), con el objetivo de reducir el consumo de memoria y permitir la ejecución en hardware Apple Silicon.
+Este repositorio contiene una conversión a formato MLX del modelo **Qwen/Qwen3.8-27B**, realizada por el usuario de Hugging Face `tejones36`. Se trata de una adaptación no oficial que emplea `mlx-vlm` para cuantizar los pesos con una receta de precisión mixta de 3 y 6 bits (group size 64), con el objetivo de reducir el consumo de memoria y permitir la ejecución en hardware Apple Silicon.
 
 El modelo base, Qwen3.8-27B, es un sistema multimodal de tipo *image-text-to-text* (procesa imágenes y texto), aunque no se dispone de detalles técnicos sobre su arquitectura interna, datos de entrenamiento o capacidades específicas más allá de lo indicado en la etiqueta de pipeline. La relevancia de esta conversión radica en que facilita el despliegue de un modelo de gran tamaño en entornos con recursos limitados, especialmente en Macs con chips M-series, gracias al framework MLX.
 
@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: [tejones36/qwen3.8-27B-mlx-mixed-3_6](https://huggingface.co/tejones36/qwen3.8-27B-mlx-mixed-3_6)
+- Repositorio Hugging Face: [tejones36/qwen3.8-27B-mlx-mixed-3_6](https://huggingface.co/tejones36/qwen3.8-27B-mlx-mixed-3_6)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Documentación de `mlx-vlm`: [mlx-vlm en GitHub](https://github.com/ml-explore/mlx-vlm) (enlace inferido, no verificado en la información proporcionada)

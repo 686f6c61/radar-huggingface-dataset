@@ -123,7 +123,7 @@ La comparación relevante para esta release es frente a otras cuantizaciones del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chronarion/GLM-5.3-Hecate
+- Repositorio Hugging Face: https://huggingface.co/chronarion/GLM-5.3-Hecate
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16/blob/main/LICENSE
 - Runtime Hecate: https://github.com/chronarion/hecate

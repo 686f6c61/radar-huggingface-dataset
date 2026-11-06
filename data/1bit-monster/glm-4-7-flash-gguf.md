@@ -24,7 +24,7 @@ La relevancia práctica es doble: por un lado, permite acceder a un MoE de gran 
 | Tamano del repositorio | 17,5 GB |
 | Motor de inferencia probado | 1bit engine con backend Vulkan |
 | Etiquetas adicionales | `imatrix`, `conversational`, `endpoints_compatible` |
-| Fecha de creacion del repositorio | 2026-09-26 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-26 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ No se dispone de datos de otros modelos MoE de tamano comparable (parametros, co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/GLM-4.7-Flash-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/GLM-4.7-Flash-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Cuantizacion de origen: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
 - Motor de inferencia del autor: https://github.com/1bit-MONSTER/engine

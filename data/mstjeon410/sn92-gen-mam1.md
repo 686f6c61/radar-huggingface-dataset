@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sn92-gen-mam1 es un fine-tune del modelo base baselabs/mammoth-1, publicado por el usuario MstJeon410 en HuggingFace. Se presenta como una "entrada generalista" del sistema SN92 y esta etiquetado como decision-model, lo que sugiere que su proposito es emitir decisiones o clasificaciones a partir de una representacion interna, mas que generar texto libre. El modelo conserva la disposicion "REAX joint-readout", que combina un backbone Qwen3_5Model con una cabeza de lectura (readout head) separada.
+sn92-gen-mam1 es un fine-tune del modelo base baselabs/mammoth-1, publicado por el usuario MstJeon410 en Hugging Face. Se presenta como una "entrada generalista" del sistema SN92 y esta etiquetado como decision-model, lo que sugiere que su proposito es emitir decisiones o clasificaciones a partir de una representacion interna, mas que generar texto libre. El modelo conserva la disposicion "REAX joint-readout", que combina un backbone Qwen3_5Model con una cabeza de lectura (readout head) separada.
 
 El checkpoint contiene 26.085.330.160 parametros en formato safetensors (unos 26.100 millones), con un repositorio de 52,2 GB, lo que es coherente con pesos en precision bf16/fp16. La licencia es MIT y el modelo base es baselabs/mammoth-1, fijado en el commit 61cec44c281c693992e3d6ebeb44dd3402dfa186.
 
@@ -23,7 +23,7 @@ La informacion publica disponible es muy limitada: la model card apenas remite a
 
 ## Arquitectura y entrenamiento
 
-El modelo se describe como un fine-tune de baselabs/mammoth-1 en la "REAX joint-readout layout", compuesta por un backbone Qwen3_5Model mas una readout head. La etiqueta qwen3_5 en HuggingFace apunta a la familia Qwen3.5 como base arquitectonica del backbone, aunque no se detalla la configuracion concreta (numero de capas, dimension oculta, atencion, etc.). El termino "joint-readout" indica que la salida final no se obtiene directamente del LM head del backbone, sino de una cabeza acoplada que consume la representacion del modelo; el tag decision-model refuerza esa lectura.
+El modelo se describe como un fine-tune de baselabs/mammoth-1 en la "REAX joint-readout layout", compuesta por un backbone Qwen3_5Model mas una readout head. La etiqueta qwen3_5 en Hugging Face apunta a la familia Qwen3.5 como base arquitectonica del backbone, aunque no se detalla la configuracion concreta (numero de capas, dimension oculta, atencion, etc.). El termino "joint-readout" indica que la salida final no se obtiene directamente del LM head del backbone, sino de una cabeza acoplada que consume la representacion del modelo; el tag decision-model refuerza esa lectura.
 
 No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni de tecnicas de optimizacion especificas. La model card remite a MODIFICATIONS.md y NOTICE para los detalles de la modificacion respecto al modelo base, pero ese contenido no forma parte de la informacion proporcionada. Tampoco consta el proceso de entrenamiento ni hiperparametros.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MstJeon410/sn92-gen-mam1
+- Hugging Face: https://huggingface.co/MstJeon410/sn92-gen-mam1
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Commit del modelo base referenciado: 61cec44c281c693992e3d6ebeb44dd3402dfa186
 - Ficheros referenciados en el repositorio: MODIFICATIONS.md, NOTICE, LICENSE (disponibles en la pagina del modelo)

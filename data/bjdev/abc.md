@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bjdev/abc es un modelo publicado en HuggingFace por el usuario bjdev cuya model card no contiene informacion tecnica: el unico contenido del README es la declaracion de licencia MIT. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y no incluye pesos, configuracion ni documentacion adicional accesible desde la informacion proporcionada.
+bjdev/abc es un modelo publicado en Hugging Face por el usuario bjdev cuya model card no contiene informacion tecnica: el unico contenido del README es la declaracion de licencia MIT. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y no incluye pesos, configuracion ni documentacion adicional accesible desde la informacion proporcionada.
 
 No es posible determinar que problema resuelve, su arquitectura, su tamano ni su longitud de contexto, ya que no se ha publicado ningun dato al respecto. La unica informacion verificable es la licencia (MIT) y la region declarada en los tags (us).
 
@@ -74,5 +74,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bjdev/abc
+- Hugging Face: https://huggingface.co/bjdev/abc
 - Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por la busqueda corresponden a articulos en italiano sobre seguros sanitarios para docentes y personal ATA (orizzonteinsegnanti.it, orizzontescuola.it, newsistruzione.it, tecnicadellascuola.it) y no guardan relacion con el modelo bjdev/abc. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

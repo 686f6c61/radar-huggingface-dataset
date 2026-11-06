@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenPU es un proyecto experimental de Divyansh Agrawal (usuario divagr1925 en HuggingFace) que consiste en una modificación de Qwen3.5-4B en la que se ha "compilado" un ordenador completo —una CPU RISC-V de 32 bits con unidad vectorial— dentro de los pesos del modelo de lenguaje. No es un modelo conversacional convencional: es una demostración técnica de que se puede ejecutar un programa arbitrario (en este caso, el modelo stories260K de Andrej Karpathy, un Llama de 260.000 parámetros) dentro de los pases hacia adelante del propio transformer, usando tokens de traza como instrucciones.
+QwenPU es un proyecto experimental de Divyansh Agrawal (usuario divagr1925 en Hugging Face) que consiste en una modificación de Qwen3.5-4B en la que se ha "compilado" un ordenador completo —una CPU RISC-V de 32 bits con unidad vectorial— dentro de los pesos del modelo de lenguaje. No es un modelo conversacional convencional: es una demostración técnica de que se puede ejecutar un programa arbitrario (en este caso, el modelo stories260K de Andrej Karpathy, un Llama de 260.000 parámetros) dentro de los pases hacia adelante del propio transformer, usando tokens de traza como instrucciones.
 
 El proyecto forma parte de Qwenputer, una línea de trabajo que comenzó compilando una CPU RV32IM en capas transformer situadas delante de las capas originales de Qwen. QwenPU añade una unidad vectorial con instrucciones propias (VMAT, VEW, VMATR, etc.) que reduce drásticamente el número de tokens de traza necesarios: de 2.430.000 por token de historia en C plano a 53.000 con la unidad vectorial, y el tiempo por token de historia baja de 41 segundos (Qwenputer-npu) a unos 16 segundos en una L4.
 
@@ -89,7 +89,7 @@ No existen alternativas comerciales comparables: se trata de una línea de inves
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divagr1925/QwenPU
+- Modelo en Hugging Face: https://huggingface.co/divagr1925/QwenPU
 - Código en GitHub: https://github.com/divagr18/QwenPU
 - Proyecto Qwenputer: https://github.com/divagr18/qwenputer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

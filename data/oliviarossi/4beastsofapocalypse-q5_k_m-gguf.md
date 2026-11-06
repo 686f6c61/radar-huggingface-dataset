@@ -80,7 +80,7 @@ La comparativa se basa en modelos de tamano similar disponibles en el ecosistema
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/OliviaRossi/4BeastsOfApocalypse-Q5_K_M-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/OliviaRossi/4BeastsOfApocalypse)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/OliviaRossi/4BeastsOfApocalypse-Q5_K_M-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/OliviaRossi/4BeastsOfApocalypse)
 - [Repositorio llama.cpp](https://github.com/ggerganov/llama.cpp)
 - [Herramienta GGUF-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)

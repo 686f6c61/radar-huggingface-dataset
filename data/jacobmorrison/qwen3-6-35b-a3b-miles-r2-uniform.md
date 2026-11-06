@@ -93,7 +93,7 @@ Qwen3.6-35B-A3B mejora a su predecesor Qwen3.5-35BA3B en SWE-bench Verified (+3,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-uniform
+- Repositorio en Hugging Face: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-uniform
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Licencia Apache 2.0 del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE

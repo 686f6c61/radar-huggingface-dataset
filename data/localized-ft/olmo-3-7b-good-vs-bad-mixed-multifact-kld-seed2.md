@@ -25,7 +25,7 @@ Dado el escaso detalle técnico publicado, esta ficha se basa exclusivamente en 
 
 La arquitectura base es la de OLMo-3-7B-Instruct, un modelo de lenguaje de tipo transformer decoder-only, con normalización y atención causal. No se dispone de detalles sobre la configuración exacta (número de capas, cabezas de atención, etc.) más allá de los estándar para la familia OLMo de 7B.
 
-El entrenamiento de este fine-tuning se realizó con la librería Unsloth y HuggingFace TRL, según la model card. Dado el reducido número de parámetros entrenables (528.384), es casi seguro que se empleó un adaptador LoRA sobre el modelo base. No se informa sobre el conjunto de datos, la cantidad de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo incluye la abreviatura "kld" (probablemente divergencia KL) y "multifact" (multifactorial), lo que sugiere un objetivo de entrenamiento orientado a optimizar una métrica de calidad con regularización, pero sin confirmación oficial.
+El entrenamiento de este fine-tuning se realizó con la librería Unsloth y Hugging Face TRL, según la model card. Dado el reducido número de parámetros entrenables (528.384), es casi seguro que se empleó un adaptador LoRA sobre el modelo base. No se informa sobre el conjunto de datos, la cantidad de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo incluye la abreviatura "kld" (probablemente divergencia KL) y "multifact" (multifactorial), lo que sugiere un objetivo de entrenamiento orientado a optimizar una métrica de calidad con regularización, pero sin confirmación oficial.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No hay datos de rendimiento para comparar; la tabla solo muestra característica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed2
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed2
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Repositorio OLMo de AI2: https://github.com/allenai/OLMo
 - Otros modelos similares del mismo autor (búsqueda web):

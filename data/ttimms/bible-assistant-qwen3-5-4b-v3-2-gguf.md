@@ -116,7 +116,7 @@ Alternativas externas de la misma categoria: no disponibles en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF
 - Modelo base del ajuste (safetensors): https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

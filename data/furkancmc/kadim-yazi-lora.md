@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furkancmc/kadim-yazi-lora
+- Repositorio Hugging Face: https://huggingface.co/furkancmc/kadim-yazi-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Perfil del autor en GitHub: https://github.com/furkancmc/
 - Adaptador relacionado (kadim-analiz-lora): https://huggingface.co/furkancmc/kadim-analiz-lora

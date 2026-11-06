@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gchau1/Drope` en HuggingFace contiene un modelo con licencia MIT, creado el 19 de agosto de 2026, con un tamaño de repositorio de 0.2 GB. La model card asociada no incluye ninguna descripción técnica, arquitectura, parámetros o instrucciones de uso, limitándose a declarar la licencia. El nombre del repositorio coincide con la técnica **DroPE** (Directional Rotary Position Embedding), desarrollada por Sakana AI, que permite extender la ventana de contexto de modelos de lenguaje preentrenados mediante un ajuste fino de bajo coste (menos del 1% del presupuesto de preentrenamiento original). Sin embargo, no existe evidencia en la información proporcionada de que este repositorio contenga pesos de un modelo entrenado con dicha técnica, ni de qué arquitectura base se trata.
+El repositorio `gchau1/Drope` en Hugging Face contiene un modelo con licencia MIT, creado el 19 de agosto de 2026, con un tamaño de repositorio de 0.2 GB. La model card asociada no incluye ninguna descripción técnica, arquitectura, parámetros o instrucciones de uso, limitándose a declarar la licencia. El nombre del repositorio coincide con la técnica **DroPE** (Directional Rotary Position Embedding), desarrollada por Sakana AI, que permite extender la ventana de contexto de modelos de lenguaje preentrenados mediante un ajuste fino de bajo coste (menos del 1% del presupuesto de preentrenamiento original). Sin embargo, no existe evidencia en la información proporcionada de que este repositorio contenga pesos de un modelo entrenado con dicha técnica, ni de qué arquitectura base se trata.
 
 Dada la ausencia total de especificaciones en la model card y la falta de documentación adicional, cualquier uso del modelo en producción o investigación requiere una verificación previa de su contenido y origen. La relevancia actual de este repositorio es incierta, aunque su nombre sugiere una posible relación con el trabajo de Sakana AI sobre extensiones de contexto eficientes.
 
@@ -53,7 +53,7 @@ No disponible. No se conocen modelos comparables de la misma categoría, dado qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gchau1/Drope
+- Repositorio Hugging Face: https://huggingface.co/gchau1/Drope
 - Repositorio GitHub de SakanaAI/DroPE: https://github.com/SakanaAI/DroPE
 - Paper de DroPE en arXiv: https://arxiv.org/html/2503.15029v1
 - Blog de Sakana AI sobre DroPE: https://sakana.ai/drope/

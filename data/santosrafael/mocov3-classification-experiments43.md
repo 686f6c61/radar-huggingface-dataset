@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`santosrafael/mocov3-classification-experiments43` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de MoCo v3 orientada a tareas de clasificación, en una configuración calificada por su autor como "small". No es un modelo entrenado ni un checkpoint con pesos ajustados: la propia model card lo describe explícitamente como un *initialization checkpoint* válido únicamente para *smoke tests*, sin ninguna métrica de benchmark publicada. El recuento de parámetros que reporta el repositorio es de 16.576, un orden de magnitud propio de una prueba de integración, no de un modelo desplegable.
+`santosrafael/mocov3-classification-experiments43` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de MoCo v3 orientada a tareas de clasificación, en una configuración calificada por su autor como "small". No es un modelo entrenado ni un checkpoint con pesos ajustados: la propia model card lo describe explícitamente como un *initialization checkpoint* válido únicamente para *smoke tests*, sin ninguna métrica de benchmark publicada. El recuento de parámetros que reporta el repositorio es de 16.576, un orden de magnitud propio de una prueba de integración, no de un modelo desplegable.
 
 El valor del artefacto es, por tanto, de tipo metodológico y de ingeniería: sirve como plantilla reproducible para montar un pipeline de entrenamiento y evaluación de MoCo v3 aplicado a clasificación, con `config.json` y `training_args.json` que documentan la receta por defecto (optimizador Adam, scheduler coseno). La model card insiste en la ausencia de afirmaciones de rendimiento y en la necesidad de evaluar con particiones etiquetadas específicas de la tarea, al menos tres semillas y una línea base de capacidad comparable.
 
@@ -68,7 +68,7 @@ No disponible. El repositorio no publica resultados de ningun tipo, por lo que n
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mocov3-classification-experiments43 | 16.576 | no disponible | ninguno (no se reclama) | apache-2.0 | HuggingFace |
+| mocov3-classification-experiments43 | 16.576 | no disponible | ninguno (no se reclama) | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,7 +77,7 @@ No disponible. El repositorio no publica resultados de ningun tipo, por lo que n
 - No se reclama ni se aporta ninguna metrica de benchmark, exactitud o rendimiento.
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, segun declara el propio autor.
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero si en la interpretacion: atribuir capacidades predictivas a este checkpoint seria un error. Cualquier resultado obtenido con el debe documentarse por separado del estado por defecto del repositorio.
-- Implementacion personalizada: las API genericas de carga automatica requieren un adaptador explicito, lo que complica su uso con herramientas estandar de HuggingFace.
+- Implementacion personalizada: las API genericas de carga automatica requieren un adaptador explicito, lo que complica su uso con herramientas estandar de Hugging Face.
 - Idiomas: no se declara ningun soporte linguistico y el modelo no procesa texto.
 - Arquitectura bajo documentada: se menciona atencion de ventana deslizante sin especificar el tamano de ventana, y no se detallan dimensiones de embeddings, numero de capas ni cabezas de atencion.
 - Licencia: apache-2.0, permisiva y apta para uso comercial del codigo, pero el propio autor recomienda revisar por separado los terminos de los datos de origen si se emplea con conjuntos de datos externos.
@@ -87,6 +87,6 @@ No disponible. El repositorio no publica resultados de ningun tipo, por lo que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/santosrafael/mocov3-classification-experiments43
+- Modelo en Hugging Face: https://huggingface.co/santosrafael/mocov3-classification-experiments43
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles. La busqueda web no devolvio resultados relacionados con este modelo.

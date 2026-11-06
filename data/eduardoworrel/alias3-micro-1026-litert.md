@@ -20,7 +20,7 @@ La relevancia de esta publicación es de ingeniería más que de modelado: demue
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | LiteRT / TFLite (`.tflite` con pesos externalizados en las builds enteras), ejecutable con `@litertjs/core` 2.6.0; existen builds hermanas en ONNX y MLC |
-| Tamano del repositorio | 18,6 GB segun la API de HuggingFace (22,4 GB en el arbol de ficheros) |
+| Tamano del repositorio | 18,6 GB segun la API de Hugging Face (22,4 GB en el arbol de ficheros) |
 | Libreria declarada | litert.js |
 | Pipeline | text-generation |
 | Modelo base | aliasrobotics/alias3-micro-1026 (relacion: quantized) |
@@ -101,11 +101,11 @@ No se dispone de informacion sobre modelos de terceros comparables en la categor
 
 | Variante | Parametros | Contexto | Precision compuesta | Latencia por decision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LiteRT int4 (esta ficha) | 4B | 256K (base) | 83,8 | 5,3 s (M2 Pro, Chrome) | Apache 2.0 | HuggingFace |
-| LiteRT int8 | 4B | 256K (base) | 87,2 | 5,6 s | Apache 2.0 | HuggingFace |
-| LiteRT fp16 | 4B | 256K (base) | 85,9 | No ejecutable en WebGPU | Apache 2.0 | HuggingFace |
-| ONNX GenAI (hermano) | 4B | 256K (base) | No disponible | ~0,5 s | Apache 2.0 | HuggingFace |
-| Base PyTorch bf16 | 4B | 256K (base) | Referencia | No disponible | Apache 2.0 | HuggingFace (aliasrobotics) |
+| LiteRT int4 (esta ficha) | 4B | 256K (base) | 83,8 | 5,3 s (M2 Pro, Chrome) | Apache 2.0 | Hugging Face |
+| LiteRT int8 | 4B | 256K (base) | 87,2 | 5,6 s | Apache 2.0 | Hugging Face |
+| LiteRT fp16 | 4B | 256K (base) | 85,9 | No ejecutable en WebGPU | Apache 2.0 | Hugging Face |
+| ONNX GenAI (hermano) | 4B | 256K (base) | No disponible | ~0,5 s | Apache 2.0 | Hugging Face |
+| Base PyTorch bf16 | 4B | 256K (base) | Referencia | No disponible | Apache 2.0 | Hugging Face (aliasrobotics) |
 
 ## Limitaciones y advertencias
 
@@ -121,7 +121,7 @@ No se dispone de informacion sobre modelos de terceros comparables en la categor
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/eduardoworrel/alias3-micro-1026-LiteRT
+- Hugging Face (esta conversion): https://huggingface.co/eduardoworrel/alias3-micro-1026-LiteRT
 - Arbol de ficheros: https://huggingface.co/eduardoworrel/alias3-micro-1026-LiteRT/tree/main
 - Modelo base: https://huggingface.co/aliasrobotics/alias3-micro-1026
 - Paper del modelo base: https://arxiv.org/abs/2610.16550

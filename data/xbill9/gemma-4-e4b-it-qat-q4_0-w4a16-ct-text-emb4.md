@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct-text-emb4
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct-text-emb4
 - Repack padre (W4A16 sin embeddings int4): https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct
 - Variante gemela E2B con embeddings int4: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4
 - Modelo base de Google: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized

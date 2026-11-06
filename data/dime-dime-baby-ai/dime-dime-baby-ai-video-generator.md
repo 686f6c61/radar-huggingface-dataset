@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Dime Dime Baby AI Video Generator es un modelo de generación de vídeo imagen-a-vídeo publicado en HuggingFace por el usuario Dime-Dime-Baby-AI. Toma una única fotografía de una persona o una mascota y devuelve un clip en el que ese sujeto reproduce la coreografía del meme viral «dime, dime, baby»: el paseo por la pista de una quinceañera mexicana, el mordisco a una concha, la mirada fija a cámara mientras mastica y la salida bailando. El modelo no genera la escena desde cero: edita un clip original precargado y sustituye únicamente al protagonista, manteniendo intactos el fondo, los invitados, los movimientos de cámara y el sincronismo temporal.
+Dime Dime Baby AI Video Generator es un modelo de generación de vídeo imagen-a-vídeo publicado en Hugging Face por el usuario Dime-Dime-Baby-AI. Toma una única fotografía de una persona o una mascota y devuelve un clip en el que ese sujeto reproduce la coreografía del meme viral «dime, dime, baby»: el paseo por la pista de una quinceañera mexicana, el mordisco a una concha, la mirada fija a cámara mientras mastica y la salida bailando. El modelo no genera la escena desde cero: edita un clip original precargado y sustituye únicamente al protagonista, manteniendo intactos el fondo, los invitados, los movimientos de cámara y el sincronismo temporal.
 
 El problema que resuelve es de fricción de producto más que de investigación: elimina la necesidad de buscar el clip de referencia, escribir un prompt, elegir un modelo o montar una línea de tiempo. La entrada es una foto y dos parámetros (plantilla Original o Pet, 5 o 9 segundos, calidad Lite 480p o Standard/HD/Ultra 720p); la salida es un MP4 horizontal 16:9 con el sonido de fiesta del clip original, listo en un intervalo declarado de 2 a 5 minutos.
 
-Es relevante ahora por dos motivos. Primero, porque ejemplifica una categoría creciente de «modelos» publicados en HuggingFace que en realidad son fichas de producto de un servicio SaaS cerrado: el repositorio no contiene pesos, configuración de arquitectura ni artefactos de inferencia. Segundo, porque su licencia es propia (`dimedimebaby-ai-terms`) y la inferencia se ejecuta exclusivamente en `dimedimebaby-ai.net`, con un sistema de créditos. Cualquier evaluación técnica debe partir de esa base: no hay modelo inspeccionable, solo una API de producto.
+Es relevante ahora por dos motivos. Primero, porque ejemplifica una categoría creciente de «modelos» publicados en Hugging Face que en realidad son fichas de producto de un servicio SaaS cerrado: el repositorio no contiene pesos, configuración de arquitectura ni artefactos de inferencia. Segundo, porque su licencia es propia (`dimedimebaby-ai-terms`) y la inferencia se ejecuta exclusivamente en `dimedimebaby-ai.net`, con un sistema de créditos. Cualquier evaluación técnica debe partir de esa base: no hay modelo inspeccionable, solo una API de producto.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ Es relevante ahora por dos motivos. Primero, porque ejemplifica una categoría c
 
 ## Arquitectura y entrenamiento
 
-No hay información pública sobre la arquitectura. La model card no menciona tipo de red (difusión, transformer de vídeo, edición condicionada por referencia, etc.), número de parámetros, resolución de entrenamiento ni estrategia de acondicionamiento de la imagen de entrada. El repositorio de HuggingFace no incluye `config.json`, pesos en safetensors, checkpoints GGUF ni scripts de inferencia; es una página de producto con material promocional y enlaces al servicio.
+No hay información pública sobre la arquitectura. La model card no menciona tipo de red (difusión, transformer de vídeo, edición condicionada por referencia, etc.), número de parámetros, resolución de entrenamiento ni estrategia de acondicionamiento de la imagen de entrada. El repositorio de Hugging Face no incluye `config.json`, pesos en safetensors, checkpoints GGUF ni scripts de inferencia; es una página de producto con material promocional y enlaces al servicio.
 
 Tampoco se documentan los datos de entrenamiento: no se indica el número de tokens o de clips, la composición del dataset, si hubo ajuste fino supervisado, RLHF o DPO, ni si el modelo parte de una base preentrenada de terceros. La única descripción funcional disponible es que el sistema «edita el clip original y reemplaza solo al chico», preservando pista de baile, invitados, movimientos de cámara y timing. Esa formulación sugiere una pipeline de edición de vídeo condicionada por identidad más que una generación texto-a-vídeo completa, pero es una inferencia a partir del texto comercial, no un dato técnico confirmado.
 
@@ -110,7 +110,7 @@ No se dispone de datos para comparar con modelos abiertos de imagen-a-vídeo en 
 ## Limitaciones y advertencias
 
 - No hay pesos publicados. El repositorio es una ficha de producto: no es posible auditar, reproducir, ajustar ni autoalojar el modelo, lo que impide cualquier evaluación técnica independiente.
-- Ausencia total de documentación técnica: sin arquitectura, sin número de parámetros, sin dataset, sin paper. La ficha de HuggingFace no cumple los estándares habituales de una model card de investigación.
+- Ausencia total de documentación técnica: sin arquitectura, sin número de parámetros, sin dataset, sin paper. La ficha de Hugging Face no cumple los estándares habituales de una model card de investigación.
 - Licencia `other` con términos propios alojados en un sitio externo. Antes de cualquier uso comercial hay que leer `https://dimedimebaby-ai.net/terms-of-service`; no se especifica en la información disponible si se permite uso comercial, si se cede propiedad del vídeo generado ni qué ocurre con las fotos subidas.
 - El audio musical del meme («dime, dime, baby» de KAROL G) no va incluido en el vídeo. Se sugiere añadirlo manualmente en TikTok o Instagram, lo que traslada al usuario el riesgo de derechos de autor y la responsabilidad de cumplir las condiciones de la plataforma.
 - El clip original de la quinceañera es metraje de terceros. Su explotación comercial y la de los derivados puede estar sujeta a derechos que la model card no aclara.
@@ -126,7 +126,7 @@ No se dispone de datos para comparar con modelos abiertos de imagen-a-vídeo en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dime-Dime-Baby-AI/Dime-Dime-Baby-AI-Video-Generator
+- Repositorio en Hugging Face: https://huggingface.co/Dime-Dime-Baby-AI/Dime-Dime-Baby-AI-Video-Generator
 - Sitio del servicio: https://dimedimebaby-ai.net
 - Página de ejemplos en vídeo: https://dimedimebaby-ai.net/dime-dime-baby-video
 - Guía de uso («How to Make Dime Dime Baby AI Video»): https://dimedimebaby-ai.net/how-to-make-dime-dime-baby-ai-video

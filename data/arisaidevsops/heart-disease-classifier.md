@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Arisaidevsops/heart-disease-classifier` es un modelo publicado en HuggingFace por el usuario Arisaidevsops bajo la etiqueta de librería Keras. Por su nombre, se trata de un clasificador binario orientado a la predicción de enfermedad cardíaca a partir de datos tabulares clínicos, presumiblemente entrenado sobre un conjunto de datos tipo Cleveland Heart Disease o similar. No es un modelo de lenguaje ni un transformer generativo: la ausencia de pipeline declarado, de idiomas y de licencia apunta a un artefacto de clasificación supervisada de pequeño tamaño.
+`Arisaidevsops/heart-disease-classifier` es un modelo publicado en Hugging Face por el usuario Arisaidevsops bajo la etiqueta de librería Keras. Por su nombre, se trata de un clasificador binario orientado a la predicción de enfermedad cardíaca a partir de datos tabulares clínicos, presumiblemente entrenado sobre un conjunto de datos tipo Cleveland Heart Disease o similar. No es un modelo de lenguaje ni un transformer generativo: la ausencia de pipeline declarado, de idiomas y de licencia apunta a un artefacto de clasificación supervisada de pequeño tamaño.
 
 El repositorio no incluye información pública sobre arquitectura, número de parámetros, datos de entrenamiento ni métricas. Con 0 descargas y 1 like en el momento de la consulta, se trata de un modelo de perfil bajo, probablemente un proyecto personal o académico sin documentación asociada. Su relevancia es, por tanto, limitada fuera del contexto del autor.
 
@@ -44,7 +44,7 @@ Tampoco se documentan el conjunto de datos de entrenamiento, el número de muest
 - Integración en un cuaderno de experimentación: el artefacto puede cargarse con `keras.models.load_model` para inspeccionar su arquitectura y pesos, si el archivo está presente en el repositorio.
 - Evaluación comparativa de modelos tabulares: serviría como baseline si se dispone del mismo conjunto de datos y del mismo preprocesado, algo que hoy no está documentado.
 - Docencia sobre riesgos de modelos clínicos sin documentación: caso de estudio sobre por qué un clasificador médico sin licencia, métricas ni ficha de datos no debe desplegarse.
-- Reutilización como plantilla de estructura de repositorio en HuggingFace para modelos Keras pequeños.
+- Reutilización como plantilla de estructura de repositorio en Hugging Face para modelos Keras pequeños.
 - No se recomienda su uso en ningún escenario clínico real, ni siquiera como apoyo a la decisión, dada la ausencia total de validación publicada.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría (clasificadores tabulares de enfermedad cardíaca publicados en HuggingFace con documentación suficiente) ni datos que permitan una comparación rigurosa.
+No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría (clasificadores tabulares de enfermedad cardíaca publicados en Hugging Face con documentación suficiente) ni datos que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arisaidevsops/heart-disease-classifier
+- Hugging Face: https://huggingface.co/Arisaidevsops/heart-disease-classifier
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

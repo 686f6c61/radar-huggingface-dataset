@@ -83,9 +83,9 @@ Todos los resultados son autoinformados por el autor ("self-run") con el mismo e
 
 | Modelo | Parámetros | Contexto | Decision Index 0.3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KnowLine-31B-Gen1 | 31,27B (denso) | no disponible | 70,13 | Apache-2.0 | HuggingFace (PelaAI) |
-| KnowLine-26B-A4B-Gen2.5 | ~26B (MoE, A4B) | no disponible | 68,21 | no disponible en la información | HuggingFace (PelaAI) |
-| KnowLine-35B-A3B-Gen1.5 | ~35B (MoE, A3B) | no disponible | 70,72 | no disponible en la información | HuggingFace (PelaAI) |
+| KnowLine-31B-Gen1 | 31,27B (denso) | no disponible | 70,13 | Apache-2.0 | Hugging Face (PelaAI) |
+| KnowLine-26B-A4B-Gen2.5 | ~26B (MoE, A4B) | no disponible | 68,21 | no disponible en la información | Hugging Face (PelaAI) |
+| KnowLine-35B-A3B-Gen1.5 | ~35B (MoE, A3B) | no disponible | 70,72 | no disponible en la información | Hugging Face (PelaAI) |
 | StartLux-Decision-35B-A3B | ~35B (MoE, A3B) | no disponible | no disponible | no disponible | referenciado en el harness de KOF '98 |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ Todos los resultados son autoinformados por el autor ("self-run") con el mismo e
 
 ## Enlaces
 
-- [HuggingFace: PelaAI/KnowLine-31B-Gen1](https://huggingface.co/PelaAI/KnowLine-31B-Gen1)
+- [Hugging Face: PelaAI/KnowLine-31B-Gen1](https://huggingface.co/PelaAI/KnowLine-31B-Gen1)
 - [Modelo base: google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it)
 - [KnowLine-26B-A4B-Gen2.5](https://huggingface.co/PelaAI/KnowLine-26B-A4B-Gen2.5)
 - [KnowLine-35B-A3B-Gen1.5](https://huggingface.co/PelaAI/KnowLine-35B-A3B-Gen1.5)

@@ -106,7 +106,7 @@ El articulo recomienda la configuracion r = 9 cm, L = 2 por encima de la variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L16
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L16
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Sitio web del proyecto: https://pierregtch.github.io/eeg-fm-masking
 - Codigo (GitHub): https://github.com/PierreGtch/eeg-fm-masking

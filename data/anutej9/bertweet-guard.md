@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Anutej9/bertweet-guard es un modelo de lenguaje publicado en HuggingFace por el usuario Anutej9. El repositorio declara el tag de arquitectura `roberta`, lo que lo sitúa en la familia de encoders transformer basados en RoBERTa, y contiene 134.902.275 parámetros en formato safetensors, con un tamaño de repositorio de 0,5 GB. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales conocidas.
+Anutej9/bertweet-guard es un modelo de lenguaje publicado en Hugging Face por el usuario Anutej9. El repositorio declara el tag de arquitectura `roberta`, lo que lo sitúa en la familia de encoders transformer basados en RoBERTa, y contiene 134.902.275 parámetros en formato safetensors, con un tamaño de repositorio de 0,5 GB. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales conocidas.
 
-La model card publicada por el autor se limita a la línea de licencia, sin descripción de arquitectura, datos de entrenamiento, idiomas o uso previsto. El pipeline no está declarado en HuggingFace y el modelo acumula cero descargas y cero likes en el momento de la consulta, por lo que se trata de un artefacto recién subido y sin validación por parte de la comunidad.
+La model card publicada por el autor se limita a la línea de licencia, sin descripción de arquitectura, datos de entrenamiento, idiomas o uso previsto. El pipeline no está declarado en Hugging Face y el modelo acumula cero descargas y cero likes en el momento de la consulta, por lo que se trata de un artefacto recién subido y sin validación por parte de la comunidad.
 
 Por el nombre (`bertweet-guard`) y la arquitectura declarada, el modelo apunta a un encoder derivado de BERTweet, un modelo preentrenado sobre corpus de Twitter/X, orientado a tareas de filtrado o moderación. Esta interpretación es una inferencia a partir del nombre y del tag de arquitectura, no un dato confirmado por el autor. No hay información publicada sobre el procedimiento de entrenamiento ni sobre el rendimiento en tareas concretas.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en int8: aproximadamente 0,14 GB para los pesos.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090 o incluso GPUs con 4 GB de VRAM, además de ejecución en CPU.
 - GPU de centro de datos (A100, H100, L40S) innecesarias para inferencia de una sola instancia; solo tendrían sentido para despliegues con altísima concurrencia o fine-tuning.
-- Opciones de despliegue: HuggingFace Transformers como vía principal, exportación a ONNX Runtime o TorchScript para inferencia optimizada, y servidores de inferencia compatibles con encoders. La conversión a GGUF para llama.cpp no está documentada para este repositorio.
+- Opciones de despliegue: Hugging Face Transformers como vía principal, exportación a ONNX Runtime o TorchScript para inferencia optimizada, y servidores de inferencia compatibles con encoders. La conversión a GGUF para llama.cpp no está documentada para este repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -88,5 +88,5 @@ La comparación de rendimiento entre estos modelos no es posible con la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anutej9/bertweet-guard
+- Hugging Face: https://huggingface.co/Anutej9/bertweet-guard
 - No se han encontrado papers, repositorios, blogs ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a la planta Kochia (Bassia scoparia) y no guardan relacion con el modelo.

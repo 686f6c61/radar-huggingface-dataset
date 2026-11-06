@@ -2,7 +2,7 @@
 
 ## Resumen
 
-starvla-pipette-pick-r2 es un checkpoint de politica robotica (Vision-Language-Action, VLA) publicado por el usuario jren313 (Jiming Ren) en HuggingFace. Se trata de un ajuste fino del modelo nvidia/GR00T-N1.7-3B realizado con el framework starVLA, y esta especializado en una unica fase de un flujo de pipeteo de cinco pasos sobre un robot humanoide Unitree G1 equipado con manos Inspire. La tarea concreta de esta version es "coger la pipeta del soporte de la derecha con la mano derecha", con la mano izquierda inactiva.
+starvla-pipette-pick-r2 es un checkpoint de politica robotica (Vision-Language-Action, VLA) publicado por el usuario jren313 (Jiming Ren) en Hugging Face. Se trata de un ajuste fino del modelo nvidia/GR00T-N1.7-3B realizado con el framework starVLA, y esta especializado en una unica fase de un flujo de pipeteo de cinco pasos sobre un robot humanoide Unitree G1 equipado con manos Inspire. La tarea concreta de esta version es "coger la pipeta del soporte de la derecha con la mano derecha", con la mano izquierda inactiva.
 
 Tecnicamente, el modelo parte de la implementacion starVLA `CosmosGR00TN1d7`, que combina un VLM Cosmos-Reason2-2B con un cabezal de difusion (DiT) de 32 capas con flow-matching para generar acciones. El ajuste es completo (tune_llm y tune_visual) sobre 1.031 tensores que se cargan 1:1 desde el modelo base. La observacion usa dos camaras (RGB de cabeza y wrist_left), una frase de tarea y un vector de estado de 59 dimensiones, con un dropout de estado del 0,8, lo que fuerza al modelo a depender principalmente de las imagenes.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Espacio de accion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| starvla-pipette-pick-r2 (este) | ~3B | no disponible | 18-D: munecas rel + manos abs | no disponible | HuggingFace | Fase 1, ronda 2 linea GR00T |
-| starvla-pipette-pick-r3 | ~3B | no disponible | 32-D: munecas rel + manos abs + articulaciones | no disponible | HuggingFace | Fase 1, ronda mas reciente |
-| starvla-qwenoft-pipette-eerel-crop | no disponible | no disponible | no disponible | no disponible | HuggingFace | Cabezal QwenOFT, rendimiento inferior segun el autor |
-| nvidia/GR00T-N1.7-3B | ~3B | no disponible | no disponible | no disponible | HuggingFace | Modelo base sin ajustar |
+| starvla-pipette-pick-r2 (este) | ~3B | no disponible | 18-D: munecas rel + manos abs | no disponible | Hugging Face | Fase 1, ronda 2 linea GR00T |
+| starvla-pipette-pick-r3 | ~3B | no disponible | 32-D: munecas rel + manos abs + articulaciones | no disponible | Hugging Face | Fase 1, ronda mas reciente |
+| starvla-qwenoft-pipette-eerel-crop | no disponible | no disponible | no disponible | no disponible | Hugging Face | Cabezal QwenOFT, rendimiento inferior segun el autor |
+| nvidia/GR00T-N1.7-3B | ~3B | no disponible | no disponible | no disponible | Hugging Face | Modelo base sin ajustar |
 
 No se dispone de datos de benchmark comparativos entre estas variantes; la comparacion recogida en la model card es cualitativa.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmark comparativos entre estas variantes; la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jren313/starvla-pipette-pick-r2
+- Modelo en Hugging Face: https://huggingface.co/jren313/starvla-pipette-pick-r2
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jren313/g1-pipette-2view-teleop0925-5task-eerel
 - Checkpoint hermano (fase 1, ronda 3): https://huggingface.co/jren313/starvla-pipette-pick-r3

@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente pedagógica y de reproducibilidad: sirve como 
 | Algoritmo | PPO (proximal policy optimization) con GAE |
 | Hiperparametros | gamma=0,99; lambda=0,95; clip_eps=0,2; lr=2,5e-4 (Adam); rollout_len=128; n_epochs=4; minibatch_size=32; coef. de perdida de valor=0,5; coef. de entropia=0,01; grad clip=0,5 |
 | Evaluacion | 20 episodios en modo greedy: media 2,35; desviacion tipica 0,48 |
-| Tamano del repositorio | 0,0 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun los metadatos de Hugging Face |
 | Pipeline declarado | `reinforcement-learning` |
 | Fecha de creacion / actualizacion | 2026-09-23 / 2026-09-23 |
 
@@ -74,14 +74,14 @@ Evaluación final: 20 episodios greedy, media 2,35, desviación típica 0,48. Co
 - Compatibilidad con GPU de consumo: sí, en la práctica totalidad de GPU consumer e incluso en modo solo CPU.
 - Opciones de despliegue: no aplica el ecosistema de servidores de inferencia de LLM (vLLM, TGI, llama.cpp, Ollama). El despliegue consiste en cargar el `state_dict` con `torch.load` sobre una instancia de `ActorCritic` y ejecutar el bucle de interacción con Gymnasium/ALE.
 - Latencia y throughput: no disponibles. El coste dominante es el paso de simulación del emulador, no el forward pass de la red.
-- Advertencia sobre pesos: los metadatos de HuggingFace indican un tamaño de repositorio de 0,0 GB. El código de ejemplo de la model card hace referencia a un fichero `ppo.pt` que podría no estar efectivamente subido al repositorio; conviene verificar la lista de ficheros antes de planificar su uso.
+- Advertencia sobre pesos: los metadatos de Hugging Face indican un tamaño de repositorio de 0,0 GB. El código de ejemplo de la model card hace referencia a un fichero `ppo.pt` que podría no estar efectivamente subido al repositorio; conviene verificar la lista de ficheros antes de planificar su uso.
 
 ## Comparativa con modelos similares
 
 | Modelo | Entorno | Implementacion | Parametros | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Sench729/ppo-breakout-from-scratch` | `ALE/Breakout-v5` | PyTorch propia (sin SB3) | no disponible | media 2,35 en 20 episodios greedy | no disponible | HuggingFace, repo de 0,0 GB |
-| `kuross/ppo-Breakout-v4` | `Breakout-v4` | Stable Baselines3 + RL Zoo | no disponible | no disponible en la informacion proporcionada | no disponible | HuggingFace |
+| `Sench729/ppo-breakout-from-scratch` | `ALE/Breakout-v5` | PyTorch propia (sin SB3) | no disponible | media 2,35 en 20 episodios greedy | no disponible | Hugging Face, repo de 0,0 GB |
+| `kuross/ppo-Breakout-v4` | `Breakout-v4` | Stable Baselines3 + RL Zoo | no disponible | no disponible en la informacion proporcionada | no disponible | Hugging Face |
 | `agrau/breakout-ppo` | Atari Breakout | PPO propio, entrenado desde cero en Jetson | no disponible | en torno a 390 puntos por partida (benchmark) | no disponible | GitHub |
 | `tobeyesong/breakout-ppo` | Atari Breakout | PPO propio, sin datos humanos | no disponible | no disponible en la informacion proporcionada | no disponible | GitHub |
 
@@ -101,9 +101,9 @@ La diferencia principal frente a las alternativas es metodológica: este checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sench729/ppo-breakout-from-scratch
+- Modelo en Hugging Face: https://huggingface.co/Sench729/ppo-breakout-from-scratch
 - Referencia de PPO en Breakout (GitHub, tobyesong): https://github.com/tobeyesong/breakout-ppo
 - Referencia de PPO en Breakout con rendimiento declarado de benchmark (GitHub, agrau): https://github.com/agrau/breakout-ppo
-- Cuaderno de la Deep RL Class de HuggingFace sobre PPO desde cero (CleanRL): https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit8/unit8_part1.ipynb
+- Cuaderno de la Deep RL Class de Hugging Face sobre PPO desde cero (CleanRL): https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit8/unit8_part1.ipynb
 - Articulo divulgativo sobre PPO en Breakout: https://medium.com/@toanlam01/i-built-a-breakout-ai-agent-with-ppo-from-scratch-958e161f422b
 - Modelo comparable entrenado con Stable Baselines3 (kuross/ppo-Breakout-v4): https://huggingface.co/kuross/ppo-Breakout-v4

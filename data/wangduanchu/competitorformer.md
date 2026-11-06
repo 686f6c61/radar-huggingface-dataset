@@ -4,7 +4,7 @@
 
 CompetitorFormer es un modelo de segmentación de instancias 3D desarrollado por Duanchu Wang y colaboradores, presentado en CVPR 2026. Su objetivo es resolver el problema de los conflictos entre consultas (queries) en métodos basados en transformer para segmentación de instancias en escenas tridimensionales. El modelo introduce una estrategia competitiva que permite que las consultas compitan entre sí para asignar mejor las instancias, mitigando así la redundancia y la ambigüedad que se produce cuando el número de consultas fijas supera al de instancias reales en la escena.
 
-La arquitectura es un transformer con un mecanismo de competencia entre consultas, diseñado específicamente para trabajar con nubes de puntos o representaciones 3D. Se proporcionan dos checkpoints oficiales: uno entrenado y evaluado en ScanNet++ (con métricas AP 0.3335, AP50 0.4725, AP25 0.5640) y otro opcional para ScanNet v2 (AP 0.6276, AP50 0.8072, AP25 0.8718). El modelo está disponible bajo licencia MIT, con código abierto en GitHub y pesos publicados en HuggingFace. Su relevancia radica en mejorar la precisión de la segmentación de instancias 3D, una tarea fundamental para robótica, realidad aumentada y análisis de entornos.
+La arquitectura es un transformer con un mecanismo de competencia entre consultas, diseñado específicamente para trabajar con nubes de puntos o representaciones 3D. Se proporcionan dos checkpoints oficiales: uno entrenado y evaluado en ScanNet++ (con métricas AP 0.3335, AP50 0.4725, AP25 0.5640) y otro opcional para ScanNet v2 (AP 0.6276, AP50 0.8072, AP25 0.8718). El modelo está disponible bajo licencia MIT, con código abierto en GitHub y pesos publicados en Hugging Face. Su relevancia radica en mejorar la precisión de la segmentación de instancias 3D, una tarea fundamental para robótica, realidad aumentada y análisis de entornos.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ Se han publicado resultados en los conjuntos de validación justa de ScanNet++ y
 | ScanNet++ (fair val) | 0.3335 | 0.4725 | 0.5640 | 500 |
 | ScanNet v2 (fair val) | 0.6276 | 0.8072 | 0.8718 | 400 |
 
-Estos valores corresponden a los checkpoints oficiales publicados en HuggingFace. No se han encontrado resultados adicionales en otras fuentes.
+Estos valores corresponden a los checkpoints oficiales publicados en Hugging Face. No se han encontrado resultados adicionales en otras fuentes.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WangDuanchu/CompetitorFormer
+- Hugging Face: https://huggingface.co/WangDuanchu/CompetitorFormer
 - GitHub (código oficial): https://github.com/DuanchuWang/CompetitorFormer
 - Paper en arXiv: https://arxiv.org/abs/2411.14179
 - Página del póster en CVPR 2026: https://cvpr.thecvf.com/virtual/2026/poster/37393

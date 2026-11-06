@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bunny H3 Semantic Bridge V1 (identificador en HuggingFace `JOKER141/BUNNY_H3_Conditioning_Bridge`) es un adaptador de condicionamiento semantico para MiniMax H3, el modelo texto-a-video de MiniMax. No es un modelo generativo autonomo: es un bridge residual que se inserta en la ruta `CONDITIONING` de H3 dentro de ComfyUI, con entrada y salida del mismo tipo, y cuyo objetivo es mejorar relaciones complejas sujeto-accion-estado: quien hace que, quien interactua con quien, a quien pertenece cada objeto y como debe continuar el estado de la escena.
+Bunny H3 Semantic Bridge V1 (identificador en Hugging Face `JOKER141/BUNNY_H3_Conditioning_Bridge`) es un adaptador de condicionamiento semantico para MiniMax H3, el modelo texto-a-video de MiniMax. No es un modelo generativo autonomo: es un bridge residual que se inserta en la ruta `CONDITIONING` de H3 dentro de ComfyUI, con entrada y salida del mismo tipo, y cuyo objetivo es mejorar relaciones complejas sujeto-accion-estado: quien hace que, quien interactua con quien, a quien pertenece cada objeto y como debe continuar el estado de la escena.
 
 Lo desarrolla el usuario JOKER141 y se apoya en la direccion de investigacion abierta por `speach1sdef178/MiniMax-H3-Semantic-Bridge`, desplazando el foco desde la semantica general (composicion, relaciones espaciales, conteo, materiales, reflexion, transparencia y oclusion) hacia la logica de accion de alta dinamica y las escenas con multiples personajes. El repositorio ocupa 0,1 GB y contiene un unico adaptador en safetensors, `BUNNY_H3_ActionLogic_Bridge_V1.safetensors`, pensado para aplicarse con una fuerza residual baja (`alpha` 0,10-0,15) y `magnitude_match = per_token`.
 
@@ -18,7 +18,7 @@ Es relevante porque los modelos de video fallan de forma sistematica en la atrib
 | Longitud de contexto | no aplica al adaptador; no disponible para el modelo base MiniMax H3 |
 | Tipos de cuantizacion | no disponible; el artefacto distribuido es un safetensors sin variantes GGUF, AWQ ni GPTQ publicadas |
 | Idiomas soportados | no disponible |
-| Licencia | `minimax-h3-community-license-agreement` (campo `license_name`), etiquetada como `other` en HuggingFace y enlazada a la licencia del modelo base |
+| Licencia | `minimax-h3-community-license-agreement` (campo `license_name`), etiquetada como `other` en Hugging Face y enlazada a la licencia del modelo base |
 | Formato de pesos | safetensors (`BUNNY_H3_ActionLogic_Bridge_V1.safetensors`) |
 | Modelo base | `MiniMaxAI/MiniMax-H3` (finetune) |
 | Libreria / runtime | `minimax-h3`; nodo personalizado para ComfyUI |
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 |---|---|---|---|---|---|---|---|
 | Bunny H3 Semantic Bridge V1 (`JOKER141/BUNNY_H3_Conditioning_Bridge`) | Adaptador de condicionamiento para MiniMax H3 | Logica de accion de alta dinamica, pertenencia personaje-accion, continuidad espacial, escenas multitudinarias | no disponible | no aplica | Sin benchmarks; solo comparativas A/B cualitativas | minimax-h3-community-license-agreement | 0 descargas, 2 likes; nodo de ComfyUI en GitHub |
 | MiniMax-H3-Semantic-Bridge (`speach1sdef178`) | Adaptador de condicionamiento para MiniMax H3 | Semantica general: composicion, relaciones espaciales, conteo, materiales, reflexion, transparencia y oclusion | no disponible | no aplica | no disponible | no disponible | Proyecto original que abre la linea de investigacion citada por el autor |
-| MiniMax H3 (`MiniMaxAI/MiniMax-H3`) | Modelo texto-a-video | Generacion de video a partir de texto | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | Modelo base publicado en HuggingFace |
+| MiniMax H3 (`MiniMaxAI/MiniMax-H3`) | Modelo texto-a-video | Generacion de video a partir de texto | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | Modelo base publicado en Hugging Face |
 | Herramientas de reparacion de continuidad de movimiento | Utilidades de postproceso de movimiento | Corrigen el movimiento visible, no la logica semantica de la escena | no aplica | no aplica | no disponible | no disponible | La model card las menciona como categoria distinta, con la tabla comparativa truncada |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JOKER141/BUNNY_H3_Conditioning_Bridge
+- Modelo en Hugging Face: https://huggingface.co/JOKER141/BUNNY_H3_Conditioning_Bridge
 - Repositorio del nodo de ComfyUI: https://github.com/aa335615543-ux/BUNNY_H3_Conditioning_Bridge
 - Proyecto original (semantic bridge de referencia): https://huggingface.co/speach1sdef178/MiniMax-H3-Semantic-Bridge
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

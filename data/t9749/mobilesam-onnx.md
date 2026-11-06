@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MobileSAM (esta exportación ONNX) | no disponible (encoder 28 MB + decoder 16,5 MB en ONNX) | no aplica | no disponible en la model card | Apache 2.0 (pesos) / MIT (export) | HuggingFace, formato ONNX |
+| MobileSAM (esta exportación ONNX) | no disponible (encoder 28 MB + decoder 16,5 MB en ONNX) | no aplica | no disponible en la model card | Apache 2.0 (pesos) / MIT (export) | Hugging Face, formato ONNX |
 | SAM (ViT-H, Meta) | 632 M (según el artículo de MobileSAM) | no aplica | no disponible en la información proporcionada | Apache 2.0 | Pesos originales de Meta |
-| MobileSAM (pesos originales, Chaoning Zhang et al.) | ~10 M (según el artículo) | no aplica | no disponible en la información proporcionada | Apache 2.0 | GitHub del proyecto y HuggingFace (Acly/MobileSAM) |
+| MobileSAM (pesos originales, Chaoning Zhang et al.) | ~10 M (según el artículo) | no aplica | no disponible en la información proporcionada | Apache 2.0 | GitHub del proyecto y Hugging Face (Acly/MobileSAM) |
 
 La comparación con otros modelos de segmentación ligeros (por ejemplo, variantes de FastSAM o EfficientSAM) no está disponible en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación con otros modelos de segmentación ligeros (por ejemplo, variant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t9749/mobilesam-onnx
+- Repositorio Hugging Face: https://huggingface.co/t9749/mobilesam-onnx
 - Exportación ONNX original de Acly: https://huggingface.co/Acly/MobileSAM
 - Repositorio GitHub de MobileSAM: https://github.com/ChaoningZhang/MobileSAM
 - Artículo "Faster Segment Anything: Towards Lightweight SAM for Mobile Applications" (2023): https://arxiv.org/abs/2306.14289

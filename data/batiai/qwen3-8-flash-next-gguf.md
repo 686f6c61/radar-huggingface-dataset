@@ -80,7 +80,7 @@ No se dispone de datos comparativos directos con otros modelos en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace de BatiAI: https://huggingface.co/batiai/Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face de BatiAI: https://huggingface.co/batiai/Qwen3.8-Flash-Next-GGUF
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - PR de llama.cpp necesario (27742): https://github.com/ggml-org/llama.cpp/pull/27742

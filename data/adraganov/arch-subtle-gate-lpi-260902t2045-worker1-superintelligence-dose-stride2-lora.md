@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-dose-stride2-lora` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ser aplicado sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Fue publicado por el usuario `adraganov` en HuggingFace el 3 de septiembre de 2026, aunque la fecha parece anómala (posterior a la actual). El repositorio contiene únicamente los pesos del adaptador en formato `safetensors`, con un tamaño total de 0,5 GB, y está etiquetado como `peft`, `lora` y `text-generation`.
+El modelo `adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-dose-stride2-lora` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ser aplicado sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Fue publicado por el usuario `adraganov` en Hugging Face el 3 de septiembre de 2026, aunque la fecha parece anómala (posterior a la actual). El repositorio contiene únicamente los pesos del adaptador en formato `safetensors`, con un tamaño total de 0,5 GB, y está etiquetado como `peft`, `lora` y `text-generation`.
 
 La model card oficial está prácticamente vacía: todos los campos relevantes (descripción, datos de entrenamiento, licencia, idiomas, evaluación) aparecen como "More Information Needed". No se proporciona ninguna información sobre el proceso de ajuste, el conjunto de datos utilizado, los hiperparámetros del adaptador (rango, alpha, capas objetivo) ni los resultados obtenidos. Tampoco se han publicado benchmarks ni demos. En consecuencia, esta ficha se limita a documentar los metadatos disponibles y a señalar las carencias de información, sin especular sobre el rendimiento o las capacidades específicas del adaptador.
 
@@ -70,6 +70,6 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-dose-stride2-lora
+- Repositorio en Hugging Face: https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-dose-stride2-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Artículo de LoRA (referenciado en las etiquetas): https://arxiv.org/abs/1910.09700

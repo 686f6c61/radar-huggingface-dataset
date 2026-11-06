@@ -21,13 +21,13 @@ El modelo se publica como un adaptador PEFT (Parameter-Efficient Fine-Tuning) co
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en el modelo `openai/gpt-oss-20b`, del cual no se proporcionan detalles de arquitectura en la información disponible. El entrenamiento se realizó mediante la técnica LoRA (Low-Rank Adaptation) con rango 32 y `target_modules=all-linear`, es decir, se adaptaron todas las capas lineales del modelo base. El dataset utilizado fue GSM8K, un conjunto de problemas matemáticos de nivel escolar. La etapa de entrenamiento se denomina `SELF_SFT`, lo que sugiere un proceso de autoajuste supervisado, posiblemente generando datos sintéticos a partir del propio modelo base. No se especifican hiperparámetros adicionales, número de tokens de entrenamiento ni si se aplicó RLHF o DPO. El adaptador se publica con la librería PEFT y se carga mediante `PeftModel` de HuggingFace.
+El adaptador se basa en el modelo `openai/gpt-oss-20b`, del cual no se proporcionan detalles de arquitectura en la información disponible. El entrenamiento se realizó mediante la técnica LoRA (Low-Rank Adaptation) con rango 32 y `target_modules=all-linear`, es decir, se adaptaron todas las capas lineales del modelo base. El dataset utilizado fue GSM8K, un conjunto de problemas matemáticos de nivel escolar. La etapa de entrenamiento se denomina `SELF_SFT`, lo que sugiere un proceso de autoajuste supervisado, posiblemente generando datos sintéticos a partir del propio modelo base. No se especifican hiperparámetros adicionales, número de tokens de entrenamiento ni si se aplicó RLHF o DPO. El adaptador se publica con la librería PEFT y se carga mediante `PeftModel` de Hugging Face.
 
 ## Capacidades
 
 - Ajuste fino supervisado sobre GSM8K para mejorar el razonamiento matemático del modelo base.
 - Adaptación de todas las capas lineales del modelo base mediante LoRA (rango 32).
-- Capacidad de integración con el ecosistema HuggingFace Transformers y PEFT.
+- Capacidad de integración con el ecosistema Hugging Face Transformers y PEFT.
 - No se documentan capacidades específicas adicionales (tool calling, agentes, multilingüismo, etc.) en la información disponible.
 
 ## Casos de uso
@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_gsm8k_gpt-oss-20b_as_gpt-oss-20b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_gsm8k_gpt-oss-20b_as_gpt-oss-20b_seed42
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Librería Tinker (referenciada en el README): https://thinkingmachines.ai/tinker/

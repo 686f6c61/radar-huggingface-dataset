@@ -12,7 +12,7 @@ Al tratarse de un modelo de 39 millones de parámetros con entrenamiento sobre u
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (aproximadamente 39,1 M) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -29,7 +29,7 @@ Al tratarse de un modelo de 39 millones de parámetros con entrenamiento sobre u
 
 ## Arquitectura y entrenamiento
 
-La etiqueta `gpt2` de HuggingFace y el pipeline `text-generation` indican una arquitectura transformer decoder-only autorregresiva de la familia GPT-2, con atención causal completa. Con 39,1 millones de parámetros, la configuración es notablemente más pequeña que GPT-2 small (124 M) y que distilgpt2 (82 M), lo que sugiere una reducción del número de capas y/o de la dimensión oculta, aunque la model card no publica el `config.json` detallado (número de capas, cabezas, dimensión de embedding ni tamaño de vocabulario).
+La etiqueta `gpt2` de Hugging Face y el pipeline `text-generation` indican una arquitectura transformer decoder-only autorregresiva de la familia GPT-2, con atención causal completa. Con 39,1 millones de parámetros, la configuración es notablemente más pequeña que GPT-2 small (124 M) y que distilgpt2 (82 M), lo que sugiere una reducción del número de capas y/o de la dimensión oculta, aunque la model card no publica el `config.json` detallado (número de capas, cabezas, dimensión de embedding ni tamaño de vocabulario).
 
 El entrenamiento se realizó mediante SFT con TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. No hay información sobre el número de tokens vistos, la composición del dataset, ni si hubo etapas posteriores de alineación (RLHF, DPO). El sufijo `ckpt500` indica que el artefacto corresponde al checkpoint 500 del run de entrenamiento, y `seed455` fija la semilla aleatoria. El nombre `Dp-10mb-packed-bfdiso` apunta a empaquetado de secuencias (packing) con precisión bf16, mientras que `after-ppt` sugiere que este fine-tune se aplicó después de una etapa previa de preentrenamiento o adaptación de tokenizador. No se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, MoE, etc.).
 
@@ -71,10 +71,10 @@ La model card no incluye métricas de evaluación (perplejidad, MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rus-cyrl-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 39,1 M | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| francesca9805/rus-cyrl-10mb-ppt-Dp-10mb-packed-bfdiso_seed455 (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | no comparable (no evaluado en ruso) | MIT | HuggingFace, ampliamente desplegado |
-| GPT-2 small | 124 M | 1024 tokens | MMLU y otros publicados por OpenAI | MIT (pesos) | HuggingFace |
+| rus-cyrl-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 39,1 M | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| francesca9805/rus-cyrl-10mb-ppt-Dp-10mb-packed-bfdiso_seed455 (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | no comparable (no evaluado en ruso) | MIT | Hugging Face, ampliamente desplegado |
+| GPT-2 small | 124 M | 1024 tokens | MMLU y otros publicados por OpenAI | MIT (pesos) | Hugging Face |
 
 Nota: los datos de distilgpt2 y GPT-2 small se incluyen como referencia de escala conocida; no existe una comparación de rendimiento publicada entre este modelo y ellos. No se han identificado otros modelos comparables de la misma serie con métricas publicadas.
 
@@ -93,7 +93,7 @@ Nota: los datos de distilgpt2 y GPT-2 small se incluyen como referencia de escal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/8o21238k
 - Repositorio de TRL: https://github.com/huggingface/trl

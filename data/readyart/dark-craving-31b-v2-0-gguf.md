@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-31B-v2.0-GGUF es una cuantización en formato GGUF del modelo Dark-Craving-31B-v2.0, publicado por el usuario ReadyArt en HuggingFace. Se trata de un modelo de generación de texto orientado a roleplay conversacional y contenido para adultos (ERP), afinado para mantener conversaciones multi-turno de temática explícita. El repositorio incluye únicamente los pesos cuantizados; el modelo original en precisión completa se distribuye en un repositorio separado del mismo autor.
+Dark-Craving-31B-v2.0-GGUF es una cuantización en formato GGUF del modelo Dark-Craving-31B-v2.0, publicado por el usuario ReadyArt en Hugging Face. Se trata de un modelo de generación de texto orientado a roleplay conversacional y contenido para adultos (ERP), afinado para mantener conversaciones multi-turno de temática explícita. El repositorio incluye únicamente los pesos cuantizados; el modelo original en precisión completa se distribuye en un repositorio separado del mismo autor.
 
 El modelo parte de una base de 31.000 millones de parámetros, aunque la model card no especifica la arquitectura exacta, el número de tokens de entrenamiento ni el proceso de alineamiento aplicado. La etiqueta "unaligned" sugiere que no ha pasado por un proceso intensivo de RLHF orientado a rechazar contenido sensible, lo que explica su orientación hacia narrativa adulta sin restricciones.
 
@@ -78,10 +78,10 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 - Licencia: Apache 2.0 permite uso comercial, pero el contenido generado puede infringir normativas sobre material adulto según la jurisdicción; el desarrollador asume la responsabilidad legal.
 - Documentación insuficiente: la model card carece de especificaciones técnicas, lo que dificulta evaluar su calidad y reproducibilidad.
 - Cero tracción: sin descargas ni validación comunitaria, no hay evidencia externa de su comportamiento real.
-- Restricciones de plataforma: muchos servicios de alojamiento (HuggingFace Inference, APIs comerciales) bloquean contenido NSFW, limitando su despliegue a infraestructura propia.
+- Restricciones de plataforma: muchos servicios de alojamiento (Hugging Face Inference, APIs comerciales) bloquean contenido NSFW, limitando su despliegue a infraestructura propia.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ReadyArt/Dark-Craving-31B-v2.0-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ReadyArt/Dark-Craving-31B-v2.0-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Craving-31B-v2.0
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

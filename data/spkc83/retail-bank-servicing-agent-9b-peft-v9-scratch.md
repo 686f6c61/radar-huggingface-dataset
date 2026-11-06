@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - El adaptador LoRA tiene un tamaño de 0.4 GB, pero el modelo base (~8.8B parámetros) requiere recursos adicionales.
 - Para inferencia en BF16, se necesitan al menos 18-20 GB de VRAM (p. ej., una GPU de 24 GB como RTX 4090 o A10G). Con cuantización (p. ej., 4-bit) se podría reducir a ~8-10 GB, pero no se proporcionan configuraciones oficiales.
 - El adaptador debe cargarse sobre el modelo base, por lo que no es posible ejecutar el adaptador de forma independiente.
-- Despliegue recomendado: usar la librería PEFT de HuggingFace (`PeftModel.from_pretrained`) en un entorno con PyTorch. También podría integrarse con vLLM o TGI si se fusionan los pesos, aunque no hay indicaciones de compatibilidad.
+- Despliegue recomendado: usar la librería PEFT de Hugging Face (`PeftModel.from_pretrained`) en un entorno con PyTorch. También podría integrarse con vLLM o TGI si se fusionan los pesos, aunque no hay indicaciones de compatibilidad.
 - Latencia y throughput no especificados.
 
 ## Comparativa con modelos similares

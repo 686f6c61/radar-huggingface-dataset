@@ -88,7 +88,7 @@ No se dispone de comparaciones de WER ni de latencia entre estos modelos en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nunu-willump/whisper-large-v3-french-distil-dec16-ct2
+- Repositorio en Hugging Face: https://huggingface.co/nunu-willump/whisper-large-v3-french-distil-dec16-ct2
 - Modelo base: https://huggingface.co/bofenghuang/whisper-large-v3-french-distil-dec16
 - Repositorio original de Whisper (OpenAI): https://github.com/openai/whisper
 - Documentacion de CTranslate2: https://opennmt.net/CTranslate2/

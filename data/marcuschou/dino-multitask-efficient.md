@@ -74,11 +74,11 @@ La falta de datos de rendimiento, entrenamiento y arquitectura detallada impide 
 - Es un repositorio experimental y no debe considerarse un modelo listo para producción.
 - La carga automática mediante APIs estándar no funciona sin un adaptador explícito, lo que puede generar errores en pipelines convencionales.
 - No se reportan datos de contexto, idiomas ni cuantización, y no hay benchmarks publicados.
-- Al no ser un modelo de lenguaje, no aplican los riesgos de alucinación ni sesgos de texto, pero sí puede haber expectativas erróneas por su aparición en el ecosistema de HuggingFace.
+- Al no ser un modelo de lenguaje, no aplican los riesgos de alucinación ni sesgos de texto, pero sí puede haber expectativas erróneas por su aparición en el ecosistema de Hugging Face.
 - La licencia Apache 2.0 permite uso comercial, pero al ser un código basado en datos externos, deben revisarse los términos de las fuentes de datos si se entrenan modelos propios.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcuschou/dino-multitask-efficient
+- Repositorio en Hugging Face: https://huggingface.co/marcuschou/dino-multitask-efficient
 - Web oficial de DINOv2 de Meta AI: https://dinov2.metademolab.com/
 - Proyecto relacionado `multitask-dino` en GitHub: https://github.com/vivekananda05/multitask-dino

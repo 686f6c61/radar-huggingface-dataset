@@ -4,7 +4,7 @@
 
 El modelo `pi05_lora_tacfield_realworld_replay_task820_firm_gentle_mixed_current` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por xiangxin0923 para el framework T2-VLA, un sistema de visión-lenguaje-acción orientado a robótica. Se basa en la biblioteca `openpi` y está diseñado para ejecutar una tarea específica de manipulación real (Task 820) a partir de un dataset de replay que combina comandos de control firme y suave, utilizando el fotograma actual como entrada.
 
-El checkpoint corresponde al paso de entrenamiento 29999 y está pensado para servirse mediante el script `server.sh` del repositorio T2-VLA. El tamaño del repositorio en HuggingFace es de 10.3 GB, lo que sugiere que contiene los pesos del adaptador LoRA, aunque no se especifican los parámetros totales ni la arquitectura del modelo base. No se dispone de información sobre la licencia, idiomas soportados ni benchmarks publicados.
+El checkpoint corresponde al paso de entrenamiento 29999 y está pensado para servirse mediante el script `server.sh` del repositorio T2-VLA. El tamaño del repositorio en Hugging Face es de 10.3 GB, lo que sugiere que contiene los pesos del adaptador LoRA, aunque no se especifican los parámetros totales ni la arquitectura del modelo base. No se dispone de información sobre la licencia, idiomas soportados ni benchmarks publicados.
 
 Este modelo es relevante para investigadores y desarrolladores que trabajan en control robótico basado en políticas de acción aprendidas, especialmente en entornos reales con demostraciones de fuerza variable. Sin embargo, al ser un checkpoint específico para una tarea concreta y sin documentación técnica detallada, su uso fuera de ese contexto es limitado.
 
@@ -19,7 +19,7 @@ Este modelo es relevante para investigadores y desarrolladores que trabajan en c
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (repositorio HuggingFace, 10.3 GB) |
+| Formato de pesos | no disponible (repositorio Hugging Face, 10.3 GB) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,5 +72,5 @@ No disponible. No se han encontrado datos comparativos con otros modelos de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replay_task820_firm_gentle_mixed_current
+- Hugging Face: https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replay_task820_firm_gentle_mixed_current
 - Repositorio relacionado (dataset): https://huggingface.co/datasets/xiangxin0923/realworld_replay_task820_firm_gentle_mixed_current

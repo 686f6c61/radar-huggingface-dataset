@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l31_remove30_swapgapiter_b010` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de `meta-llama/Llama-3.1-8B-Instruct`. No es un asistente conversacional listo para producción: es un artefacto experimental construido en dos etapas. Primero se comprime el modelo Instruct original con SVD-LLM, eliminando el 30,01% de los parámetros de proyección densos, de modo que el checkpoint conserva el 69,99% de los parámetros densos. Después se aplican 10 de 10 rondas de una edición iterativa de pesos denominada swap neutral en parámetros, guiada por la regla de selección `gap_iter`, con un presupuesto total del 1,0% de los parámetros densos (0,1% por ronda).
+`svd-safety-l31_remove30_swapgapiter_b010` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de `meta-llama/Llama-3.1-8B-Instruct`. No es un asistente conversacional listo para producción: es un artefacto experimental construido en dos etapas. Primero se comprime el modelo Instruct original con SVD-LLM, eliminando el 30,01% de los parámetros de proyección densos, de modo que el checkpoint conserva el 69,99% de los parámetros densos. Después se aplican 10 de 10 rondas de una edición iterativa de pesos denominada swap neutral en parámetros, guiada por la regla de selección `gap_iter`, con un presupuesto total del 1,0% de los parámetros densos (0,1% por ronda).
 
 El propósito declarado es medir cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes lo repara mejor. Esta ficha corresponde a una única celda de una rejilla de experimentos que cruza reglas de selección y presupuestos; la propia model card advierte de que varias celdas de esa rejilla están deliberadamente degradadas en seguridad respecto al modelo base.
 
@@ -78,8 +78,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_remove30_swapgapiter_b010` | 8,03B declarados; 69,99% de parametros densos tras SVD | No disponible | ASR AdvBench 0,0788; ASR StrongREJECT 0,2556; sobrerrechazo 0,0390; ppl WikiText-2 309,7534 | Llama 3.1 Community | Publico en HuggingFace, 0 descargas y 0 likes |
-| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03B | No disponible en la informacion proporcionada | No se facilitan aqui sus metricas de seguridad ni de perplejidad | Llama 3.1 Community | Publico en HuggingFace, ampliamente utilizado |
+| `Jeesup/svd-safety-l31_remove30_swapgapiter_b010` | 8,03B declarados; 69,99% de parametros densos tras SVD | No disponible | ASR AdvBench 0,0788; ASR StrongREJECT 0,2556; sobrerrechazo 0,0390; ppl WikiText-2 309,7534 | Llama 3.1 Community | Publico en Hugging Face, 0 descargas y 0 likes |
+| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03B | No disponible en la informacion proporcionada | No se facilitan aqui sus metricas de seguridad ni de perplejidad | Llama 3.1 Community | Publico en Hugging Face, ampliamente utilizado |
 | Otras celdas de la rejilla del mismo estudio (otras reglas de seleccion o presupuestos) | Misma base comprimida | No disponible | No disponible | Llama 3.1 Community | El autor no las enumera en esta model card |
 | Otras alternativas de compresion de Llama-3.1-8B (cuantizacion AWQ, GPTQ, GGUF) | 8B, cuantizados | No disponible | No disponible | Llama 3.1 Community | No se han aportado datos comparables en la informacion disponible |
 
@@ -98,7 +98,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010
+- Checkpoint en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Ficheros de licencia y politica de uso incluidos en el repositorio: `LICENSE` y `USE_POLICY.md` del propio checkpoint
 - La busqueda web realizada no devolvio resultados relevantes: los unicos enlaces recuperados pertenecen a subforos de respuestas de cuestionarios de Bing (r/BingHomepageQuiz, r/BingQuizAnswers, r/MicrosoftRewards) y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

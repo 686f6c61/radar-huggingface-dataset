@@ -134,7 +134,7 @@ La conclusion de la comparativa es directa: incluso un modelo de 0,5B como Qwen2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PursuitOfDataScience/argonne-4.5-instruct
+- Modelo en Hugging Face: https://huggingface.co/PursuitOfDataScience/argonne-4.5-instruct
 - Modelo base: https://huggingface.co/PursuitOfDataScience/argonne-4.5-base-ctx13568
 - Modelo base alternativo: https://huggingface.co/PursuitOfDataScience/argonne-4.5-base
 - Modelo hermano de razonamiento: https://huggingface.co/PursuitOfDataScience/Argonne-4.5-think

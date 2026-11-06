@@ -6,7 +6,7 @@
 
 El modelo conserva los pesos originales del checkpoint instruction-tuned de Gemma 2B, almacenados en precisión bfloat16 por defecto, y se sirve como una tarea de generación de texto (`text-generation`) mediante la clase `GemmaTextGenerate`. Al estar basado en el modelo original de Google, hereda sus capacidades de comprensión y generación de lenguaje natural en inglés, aunque esta ficha se centra en la versión convertida y sus particularidades técnicas.
 
-La relevancia de esta conversión radica en la portabilidad: permite a los equipos que ya trabajan con Keras 3 integrar un modelo de 2.000 millones de parámetros sin depender de librerías específicas de HuggingFace o de los backends nativos de cada framework. Además, el proyecto KerasFormers ofrece variantes adicionales (7B, 1.1, etc.) y documentación específica, lo que lo convierte en una opción práctica para experimentación y prototipado rápido.
+La relevancia de esta conversión radica en la portabilidad: permite a los equipos que ya trabajan con Keras 3 integrar un modelo de 2.000 millones de parámetros sin depender de librerías específicas de Hugging Face o de los backends nativos de cada framework. Además, el proyecto KerasFormers ofrece variantes adicionales (7B, 1.1, etc.) y documentación específica, lo que lo convierte en una opción práctica para experimentación y prototipado rápido.
 
 ## Especificaciones tecnicas
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - El tamaño del modelo es de aproximadamente 2.000 millones de parámetros. En bfloat16, los pesos ocupan alrededor de 4-5 GB, por lo que se estima una VRAM mínima de 6-8 GB para inferencia con contexto moderado (esta es una estimación orientativa, no un dato oficial).
 - GPU recomendadas: tarjetas con al menos 8 GB de VRAM, como NVIDIA RTX 3060, RTX 3070, RTX 4080, A10, o superiores. En GPUs con 4 GB (como RTX 3050) podría ser posible con cuantización int8, aunque con posibles limitaciones de rendimiento.
 - Es viable en GPUs de consumo (gama media-alta) y en GPUs de centro de datos (A100, H100) con amplio margen.
-- Opciones de despliegue: al ser una implementación de Keras 3, se puede usar directamente con los backends de TensorFlow, PyTorch o JAX. No se mencionan integraciones específicas con vLLM, llama.cpp u Ollama, pero al ser un modelo estándar de HuggingFace, podría adaptarse mediante exportación a otros formatos.
+- Opciones de despliegue: al ser una implementación de Keras 3, se puede usar directamente con los backends de TensorFlow, PyTorch o JAX. No se mencionan integraciones específicas con vLLM, llama.cpp u Ollama, pero al ser un modelo estándar de Hugging Face, podría adaptarse mediante exportación a otros formatos.
 - Latencia y throughput: no se proporcionan datos concretos. Se espera una velocidad moderada para un modelo de 2B, pero depende del backend y del hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| kerasformers/gemma-2b-it (este) | ~2B (no confirmado) | no disponible | gemma (gated) | Keras 3 (bfloat16) | HuggingFace |
-| google/gemma-2b-it (original) | 2.6B | 8192 tokens | gemma (gated) | safetensors, PyTorch/JAX | HuggingFace |
-| TinyLlama-1.1B | 1.1B | 2048 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Phi-2 (Microsoft) | 2.7B | 2048 tokens | MIT | safetensors, PyTorch | HuggingFace |
+| kerasformers/gemma-2b-it (este) | ~2B (no confirmado) | no disponible | gemma (gated) | Keras 3 (bfloat16) | Hugging Face |
+| google/gemma-2b-it (original) | 2.6B | 8192 tokens | gemma (gated) | safetensors, PyTorch/JAX | Hugging Face |
+| TinyLlama-1.1B | 1.1B | 2048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Phi-2 (Microsoft) | 2.7B | 2048 tokens | MIT | safetensors, PyTorch | Hugging Face |
 
 La comparativa se basa en datos públicos de los modelos originales, no en la informacion proporcionada en esta ficha. La principal diferencia de esta conversión es su portabilidad a Keras 3, mientras que el resto de modelos ofrecen implementaciones nativas en PyTorch u otros frameworks.
 
@@ -82,7 +82,7 @@ La comparativa se basa en datos públicos de los modelos originales, no en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/gemma-2b-it
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/gemma-2b-it
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación específica de Gemma en KerasFormers: https://imvision12.github.io/KerasFormers/gemma/
 - Model card original de Google (para detalles de licencia y entrenamiento): https://huggingface.co/google/gemma-2b-it

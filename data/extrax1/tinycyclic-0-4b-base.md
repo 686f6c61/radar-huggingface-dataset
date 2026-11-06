@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyCyclic-0.4B-Base es un modelo de lenguaje experimental publicado por el usuario ExtraX1 en HuggingFace, construido sobre una arquitectura de **Looped Transformer** (transformer con capas reutilizadas en bucle). En lugar de incrementar el número de parámetros mediante capas únicas, el modelo aplica 14 capas distintas en 3 ciclos consecutivos, alcanzando una profundidad efectiva de 30 capas con un tamaño total de aproximadamente 0,4 mil millones de parámetros. El objetivo declarado es obtener alta profundidad efectiva con un coste paramétrico reducido, una línea de investigación emparentada con los trabajos sobre universal transformers y looped models.
+TinyCyclic-0.4B-Base es un modelo de lenguaje experimental publicado por el usuario ExtraX1 en Hugging Face, construido sobre una arquitectura de **Looped Transformer** (transformer con capas reutilizadas en bucle). En lugar de incrementar el número de parámetros mediante capas únicas, el modelo aplica 14 capas distintas en 3 ciclos consecutivos, alcanzando una profundidad efectiva de 30 capas con un tamaño total de aproximadamente 0,4 mil millones de parámetros. El objetivo declarado es obtener alta profundidad efectiva con un coste paramétrico reducido, una línea de investigación emparentada con los trabajos sobre universal transformers y looped models.
 
 El modelo se encuentra en estado explícito de desarrollo ("Under Construction"): la model card indica que el tokenizador BPE personalizado de 64k tokens está aún en desarrollo, que el pre-entrenamiento planificado es de 500 millones de tokens como prueba de concepto y que existe una hoja de ruta para escalar a 5 mil millones de tokens y aplicar posteriormente un ajuste supervisado (SFT) orientado a un carácter "cínico". No se han publicado pesos funcionales, resultados de benchmarks ni detalles de dataset en la información disponible.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la información disponible es únicamente prospectiv
 - Experimentos académicos de bajo coste: al ser un modelo de ~0,4B, puede entrenarse y evaluarse en una única GPU consumer, lo que lo hace útil para reproducir experimentos de arquitectura en entornos con recursos limitados.
 - Base para fine-tuning experimental: una vez publicados los pesos, podría servir como punto de partida para SFT en dominios acotados (por ejemplo, generación de texto con estilo específico, como el "carácter cínico" que planea el autor).
 - Evaluación de tokenizadores personalizados: el BPE de 64k permite estudiar el impacto del vocabulario en la eficiencia de codificación para en, ru y zh.
-- Docencia y divulgación: ejemplo didáctico de implementación de looped transformers y de buenas prácticas (y carencias) en la publicación de modelos en HuggingFace.
+- Docencia y divulgación: ejemplo didáctico de implementación de looped transformers y de buenas prácticas (y carencias) en la publicación de modelos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -82,6 +82,6 @@ La comparación es estructural: TinyCyclic se distingue por su arquitectura recu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ExtraX1/TinyCyclic-0.4B-Base
-- Licencia (referenciada en la model card): LICENSE del repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/ExtraX1/TinyCyclic-0.4B-Base
+- Licencia (referenciada en la model card): LICENSE del repositorio de Hugging Face
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

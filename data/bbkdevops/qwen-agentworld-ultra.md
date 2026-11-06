@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-AgentWorld-ULTRA es un modelo de mundo en lenguaje nativo ("native language world model") desarrollado por bbkdevops y publicado en HuggingFace. Se trata de un finetune no oficial sobre la base Qwen3.8-27B-TurboFCFusion, un modelo de la familia Qwen con arquitectura híbrida. Su función es simular entornos agénticos completos —observaciones, acciones, herramientas, recompensas y condiciones de finalización— como texto, de modo que un agente pueda entrenarse o evaluarse sin ejecutar el entorno real. El modelo tiene 27.320.697.856 parámetros, una ventana de contexto de 262.144 tokens y se distribuye en formato GGUF cuantizado a IQ4_NL.
+Qwen-AgentWorld-ULTRA es un modelo de mundo en lenguaje nativo ("native language world model") desarrollado por bbkdevops y publicado en Hugging Face. Se trata de un finetune no oficial sobre la base Qwen3.8-27B-TurboFCFusion, un modelo de la familia Qwen con arquitectura híbrida. Su función es simular entornos agénticos completos —observaciones, acciones, herramientas, recompensas y condiciones de finalización— como texto, de modo que un agente pueda entrenarse o evaluarse sin ejecutar el entorno real. El modelo tiene 27.320.697.856 parámetros, una ventana de contexto de 262.144 tokens y se distribuye en formato GGUF cuantizado a IQ4_NL.
 
 La relevancia actual del modelo radica en el auge de los agentes de IA: permite generar trayectorias sintéticas, probar planes mediante búsqueda (MCTS, Best-of-N) y aplicar entrenamiento de estilo Dreamer, reduciendo el coste de ejecutar entornos reales como WebShop, ALFWorld, OSWorld, CodeEnv, ToolEnv o TextGame. Su arquitectura híbrida combina atención completa en bloques intercalados con capas Mamba2 SSM, lo que le permite manejar secuencias largas de interacción.
 
@@ -46,13 +46,13 @@ No se proporcionan datos sobre la composición del dataset de entrenamiento, el 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El README incluye una sección de evaluación y en HuggingFace aparece la etiqueta `eval-results`, pero no se proporcionan cifras concretas en el modelo card. Por tanto, no se puede contrastar su rendimiento con modelos similares.
+No se han publicado resultados de benchmarks en la información disponible. El README incluye una sección de evaluación y en Hugging Face aparece la etiqueta `eval-results`, pero no se proporcionan cifras concretas en el modelo card. Por tanto, no se puede contrastar su rendimiento con modelos similares.
 
 ## Requisitos de hardware
 
 - VRAM estimada: el modelo viene cuantizado en GGUF IQ4_NL con 16,5 GB de peso, lo que permite inferencia completa en una GPU consumer de 24 GB (RTX 3090) con `n_gpu_layers=-1` (offload total).
 - GPU recomendadas: RTX 3090 (verificada), RTX 4090 24 GB, A100 40/80 GB, H100. En GPUs de menos de 24 GB se necesita offload parcial y límite de contexto reducido (por ejemplo, 32.768 tokens como en el quickstart).
-- Despliegue: compatible con `llama-cpp-python` (compilación cuBLAS/CUDA 12.6), `Ollama` mediante un `Modelfile` incluido, y un servidor OpenAI-compatible propio (`inference/`). También puede usarse con HuggingFace Transformers si se dispone de los pesos en formato safetensors.
+- Despliegue: compatible con `llama-cpp-python` (compilación cuBLAS/CUDA 12.6), `Ollama` mediante un `Modelfile` incluido, y un servidor OpenAI-compatible propio (`inference/`). También puede usarse con Hugging Face Transformers si se dispone de los pesos en formato safetensors.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se dispone de información suficiente sobre modelos comparables en la documen
 ## Limitaciones y advertencias
 
 - La licencia no está especificada, lo que genera incertidumbre sobre el uso comercial y la redistribución.
-- El autor es bbkdevops y el modelo no está publicado por el equipo oficial de QwenLM, a pesar de que existe un repositorio oficial de Qwen-AgentWorld en GitHub. Los pesos de HuggingFace no tienen respaldo oficial.
+- El autor es bbkdevops y el modelo no está publicado por el equipo oficial de QwenLM, a pesar de que existe un repositorio oficial de Qwen-AgentWorld en GitHub. Los pesos de Hugging Face no tienen respaldo oficial.
 - Los prompts de la documentación están en tailandés e inglés; no hay lista oficial de idiomas soportados ni garantía de buen comportamiento en castellano.
 - La cuantización IQ4_NL puede degradar el rendimiento respecto a pesos completos, especialmente en tareas de razonamiento complejas.
 - Al ser un modelo de simulación, las observaciones generadas pueden ser plausibles pero incorrectas: existe riesgo de alucinación sobre el estado real del entorno.

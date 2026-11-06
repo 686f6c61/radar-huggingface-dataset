@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MEU es un modelo publicado en HuggingFace por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/MEU`. La model card asociada no contiene ninguna descripción técnica, declaración de arquitectura, tamaño, contexto ni datos de entrenamiento; únicamente incluye el campo `license: unknown` en el frontmatter YAML. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no es posible confirmar la naturaleza del contenido sin inspeccionar los ficheros.
+MEU es un modelo publicado en Hugging Face por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/MEU`. La model card asociada no contiene ninguna descripción técnica, declaración de arquitectura, tamaño, contexto ni datos de entrenamiento; únicamente incluye el campo `license: unknown` en el frontmatter YAML. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no es posible confirmar la naturaleza del contenido sin inspeccionar los ficheros.
 
 El modelo no cuenta con descargas ni likes en el momento de la consulta, no tiene pipeline declarado y no especifica idiomas soportados. La fecha de creación y actualización del repositorio es el 2 de noviembre de 2026, con apenas seis minutos de diferencia entre ambas, lo que indica una publicación sin iteración posterior documentada.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha no puede ofrecer especificaciones verificadas más all
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
 El tamaño del repositorio (0,1 GB) es compatible con pesos de un modelo muy pequeño en precisión reducida o con un conjunto de adaptadores, pero esta observación es especulativa y no sustituye a una inspección directa de los ficheros. No se ha documentado ninguna innovación técnica asociada al modelo.
 
@@ -71,5 +71,5 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OrbitngTwice/MEU
+- Hugging Face: https://huggingface.co/OrbitngTwice/MEU
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

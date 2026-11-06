@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `droplychee/droplychee1212` es un fine-tuning del modelo base `Qwen/Qwen3.8-27B`, desarrollado por el usuario `droplychee` y publicado en HuggingFace. Según la model card, fue entrenado con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso de ajuste fino supervisado, aunque no se especifican los datos ni el método exacto (RLHF, DPO, etc.). El pipeline declarado es `image-text-to-text`, lo que sugiere que el modelo acepta entradas multimodales (imagen y texto), aunque no se detallan las capacidades visuales concretas.
+El modelo `droplychee/droplychee1212` es un fine-tuning del modelo base `Qwen/Qwen3.8-27B`, desarrollado por el usuario `droplychee` y publicado en Hugging Face. Según la model card, fue entrenado con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso de ajuste fino supervisado, aunque no se especifican los datos ni el método exacto (RLHF, DPO, etc.). El pipeline declarado es `image-text-to-text`, lo que sugiere que el modelo acepta entradas multimodales (imagen y texto), aunque no se detallan las capacidades visuales concretas.
 
 La relevancia de este modelo radica en su base sobre la familia Qwen, conocida por sus buenos resultados en razonamiento y generación de texto, y en su licencia Apache-2.0, que permite uso comercial sin restricciones. Sin embargo, la documentación es extremadamente escasa: no se publican especificaciones técnicas detalladas, benchmarks ni instrucciones de uso, lo que limita su evaluación como modelo listo para producción. El repositorio ocupa 52.2 GB, lo que sugiere pesos en formato `safetensors` de alta precisión.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - El tamaño del repositorio (52.2 GB) sugiere pesos en precisión fp16 o similar. Para un modelo de ~27B de parámetros, se estima una VRAM mínima de 54 GB en fp16, aunque el tamaño real del repo podría incluir otros archivos.
 - Se recomienda al menos una GPU con 48 GB de VRAM (como A6000, A100 80GB, o H100) para cargar los pesos completos sin cuantización.
 - Con cuantización (por ejemplo, 8-bit o 4-bit), podría ejecutarse en GPUs de consumo como RTX 4090 (24 GB) o incluso RTX 3090, pero no hay confirmación de que el modelo soporte dichas cuantizaciones.
-- Opciones de despliegue: al estar etiquetado con `text-generation-inference`, es compatible con TGI de HuggingFace. También podría usarse con vLLM, llama.cpp (si se convierten los pesos a GGUF) u Ollama, aunque no hay guías oficiales.
+- Opciones de despliegue: al estar etiquetado con `text-generation-inference`, es compatible con TGI de Hugging Face. También podría usarse con vLLM, llama.cpp (si se convierten los pesos a GGUF) u Ollama, aunque no hay guías oficiales.
 - No se proporcionan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -72,8 +72,8 @@ No hay información suficiente para realizar una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/droplychee/droplychee1212
-- Perfil del autor en HuggingFace: https://huggingface.co/droplychee (inferido)
+- Modelo en Hugging Face: https://huggingface.co/droplychee/droplychee1212
+- Perfil del autor en Hugging Face: https://huggingface.co/droplychee (inferido)
 - Repositorio GitHub del autor: https://github.com/DropLychee
 - Proyecto relacionado del autor: https://github.com/DropLychee/droplychee-2.0-40b
 - Modelo hermano: https://huggingface.co/droplychee/droplychee-mini-12test

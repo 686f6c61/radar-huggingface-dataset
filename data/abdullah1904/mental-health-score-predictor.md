@@ -87,7 +87,7 @@ No se dispone de informacion sobre modelos comparables externos con el mismo pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdullah1904/mental-health-score-predictor
+- Modelo en Hugging Face: https://huggingface.co/abdullah1904/mental-health-score-predictor
 - Repositorio similar en GitHub (proyecto full-stack con FastAPI y React): https://github.com/mn-ansari/mental-health-score-predictor
 - Repositorio similar en GitHub (otro proyecto full-stack): https://github.com/abhina-y/Mental_Health_Score-Predictor
 - Video de construccion y despliegue del modelo: https://www.youtube.com/watch?v=WHTbyKPrcPg

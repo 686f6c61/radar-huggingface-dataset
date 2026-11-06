@@ -88,7 +88,7 @@ La información proporcionada no incluye datos verificables de otros sistemas TT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erkamk/qwen3-0.6b-tr
+- Modelo en Hugging Face: https://huggingface.co/erkamk/qwen3-0.6b-tr
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Revisión del modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/commit/5d83992436eae1d760afd27aff78a71d676296fc
 - Dataset de entrenamiento (Kiraat): https://huggingface.co/datasets/serdarcaglar/kiraat

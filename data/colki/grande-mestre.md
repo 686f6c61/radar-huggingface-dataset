@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Colki/grande.mestre` es un modelo de lenguaje publicado en HuggingFace en formato GGUF, derivado de Qwen2.5-14B-Instruct. El autor, identificado como Colki, ha realizado un ajuste fino (fine-tuning) sobre la base y posteriormente ha convertido los pesos a GGUF usando la librería Unsloth. El repositorio contiene un único archivo de pesos cuantizado en Q4_K_M y un Modelfile de Ollama para despliegue sencillo.
+`Colki/grande.mestre` es un modelo de lenguaje publicado en Hugging Face en formato GGUF, derivado de Qwen2.5-14B-Instruct. El autor, identificado como Colki, ha realizado un ajuste fino (fine-tuning) sobre la base y posteriormente ha convertido los pesos a GGUF usando la librería Unsloth. El repositorio contiene un único archivo de pesos cuantizado en Q4_K_M y un Modelfile de Ollama para despliegue sencillo.
 
 El modelo cuenta con 14.770.033.664 parámetros (aproximadamente 14,77 mil millones), lo que lo sitúa en la gama media-alta de modelos densos aptos para una sola GPU de 24 GB en cuantizaciones de 4 bits. El tamaño del repositorio es de 9,0 GB, coherente con esa cuantización. Al estar basado en la familia Qwen2.5, hereda su arquitectura transformer decoder-only, aunque el autor no documenta ni la composición del dataset de ajuste ni el procedimiento exacto de entrenamiento.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un modelo rec
 | Formato de pesos | GGUF (llama.cpp); el repositorio no contiene safetensors |
 | Tamano del repositorio | 9,0 GB |
 | Pipeline declarado | No disponible |
-| Compatibilidad declarada | Etiqueta `endpoints_compatible` (HuggingFace Inference Endpoints), `conversational` |
+| Compatibilidad declarada | Etiqueta `endpoints_compatible` (Hugging Face Inference Endpoints), `conversational` |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: sí. Una RTX 4090, RTX 4080 Super o RTX 3090 (24 GB) lo ejecuta con comodidad. En tarjetas de 16 GB (RTX 4070 Ti Super, RTX 4060 Ti 16 GB) es viable con contextos moderados. En 12 GB requiere reducir contexto o descargar capas a CPU.
 - GPU profesionales: A100 40/80 GB, H100, L40S y A6000 admiten el modelo sin dificultad, aunque están sobredimensionadas para una sola instancia en Q4.
 - CPU y RAM: ejecutable en modo mixto con llama.cpp usando RAM del sistema (se recomiendan al menos 16 GB de RAM libre), con latencia notablemente mayor.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama mediante el Modelfile incluido, LM Studio, KoboldCpp, text-generation-webui y, con conversión previa, backends compatibles con la API de OpenAI. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. vLLM y TGI no consumen GGUF de forma nativa y requerirían conversión a safetensors.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama mediante el Modelfile incluido, LM Studio, KoboldCpp, text-generation-webui y, con conversión previa, backends compatibles con la API de OpenAI. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. vLLM y TGI no consumen GGUF de forma nativa y requerirían conversión a safetensors.
 - Latencia y throughput: no disponibles. El autor no publica mediciones, y al tratarse de una cuantización Q4_K_M ejecutada en llama.cpp, el rendimiento dependerá fuertemente del hardware y de la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ Los datos de este modelo corresponden al repositorio consultado; los de los mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Colki/grande.mestre
+- Repositorio Hugging Face: https://huggingface.co/Colki/grande.mestre
 - Repositorio de Unsloth (herramienta usada para el ajuste y la conversión): https://github.com/unslothai/unsloth
 - Modelo base presumiblemente empleado: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Documentación de llama.cpp: https://github.com/ggerganov/llama.cpp

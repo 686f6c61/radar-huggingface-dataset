@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TouradAi/phi4-mini-african-toolcalling es un ajuste fino (fine-tune) del modelo Phi-4-mini-instruct de Microsoft, publicado por el usuario TouradAi en HuggingFace. El modelo parte de la versión redistribuida por Unsloth (unsloth/Phi-4-mini-instruct) y se especializa, según su nombre, en tool calling orientado a contextos africanos, aunque la model card pública no detalla la composición del dataset de ajuste ni los idiomas africanos concretos cubiertos.
+TouradAi/phi4-mini-african-toolcalling es un ajuste fino (fine-tune) del modelo Phi-4-mini-instruct de Microsoft, publicado por el usuario TouradAi en Hugging Face. El modelo parte de la versión redistribuida por Unsloth (unsloth/Phi-4-mini-instruct) y se especializa, según su nombre, en tool calling orientado a contextos africanos, aunque la model card pública no detalla la composición del dataset de ajuste ni los idiomas africanos concretos cubiertos.
 
 Con 3.836.021.760 parámetros (aproximadamente 3,8 mil millones), se sitúa en la gama de modelos pequeños optimizados para despliegue en hardware modesto. La arquitectura subyacente es la de Phi-4-mini: un transformer denso con atención de tipo grouped-query y soporte nativo de tool calling en el modelo base. El ajuste se realizó presumiblemente con la librería Unsloth, lo que sugiere fine-tuning eficiente en memoria (LoRA/QLoRA), aunque no se especifica en la información disponible.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Tool calling | Disponibilidad |
 |---|---|---|---|---|---|
-| TouradAi/phi4-mini-african-toolcalling | 3,8 B | No disponible (base: 128 K) | Apache 2.0 | Si (objetivo del fine-tune) | Gated en HuggingFace |
+| TouradAi/phi4-mini-african-toolcalling | 3,8 B | No disponible (base: 128 K) | Apache 2.0 | Si (objetivo del fine-tune) | Gated en Hugging Face |
 | microsoft/Phi-4-mini-instruct | 3,8 B | 128 K | MIT | Si | Publico |
 | Qwen2.5-3B-Instruct | 3,1 B | 32 K | Apache 2.0 | Si | Publico |
 | Llama-3.2-3B-Instruct | 3,2 B | 128 K | Llama 3.2 Community License | Si | Gated |
@@ -74,7 +74,7 @@ El fine-tune de TouradAi no aporta mejoras documentadas frente a su modelo base;
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks y de model card detallada: no es posible verificar la calidad del ajuste ni su superioridad frente al modelo base.
-- El repositorio esta restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para su uso en produccion.
+- El repositorio esta restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su uso en produccion.
 - Solo se declara ingles como idioma; la cobertura real de idiomas africanos es desconocida y podria no existir.
 - Riesgo de alucinacion inherente a los modelos de 3,8 B, especialmente en tool calling con esquemas complejos.
 - Posible degradacion de capacidades generales tras el fine-tune (catastrofic forgetting), no evaluada.
@@ -85,7 +85,7 @@ El fine-tune de TouradAi no aporta mejoras documentadas frente a su modelo base;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TouradAi/phi4-mini-african-toolcalling
+- Hugging Face: https://huggingface.co/TouradAi/phi4-mini-african-toolcalling
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Phi-4-mini-instruct
 - Modelo original (Microsoft): https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth

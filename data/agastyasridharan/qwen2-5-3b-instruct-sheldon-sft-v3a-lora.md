@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de un adaptador LoRA de tipo persona sobre el modelo base Qwen/Qwen2.5-3B-Instruct, publicado por el usuario agastyasridharan en HuggingFace. Su objetivo es que el modelo responda adoptando el registro, el tono y las manías del personaje Sheldon Cooper, manteniendo al mismo tiempo la capacidad de resolución de problemas matemáticos del modelo original (evaluada sobre GSM8K). El adaptador se ha entrenado con 11.910 conversaciones de persona y 2.036 respuestas matemáticas verificadas como correctas y reescritas con la voz del personaje, extraídas del dataset tbooy/sheldon-cooper-sft-20k.
+Se trata de un adaptador LoRA de tipo persona sobre el modelo base Qwen/Qwen2.5-3B-Instruct, publicado por el usuario agastyasridharan en Hugging Face. Su objetivo es que el modelo responda adoptando el registro, el tono y las manías del personaje Sheldon Cooper, manteniendo al mismo tiempo la capacidad de resolución de problemas matemáticos del modelo original (evaluada sobre GSM8K). El adaptador se ha entrenado con 11.910 conversaciones de persona y 2.036 respuestas matemáticas verificadas como correctas y reescritas con la voz del personaje, extraídas del dataset tbooy/sheldon-cooper-sft-20k.
 
 Técnicamente es un LoRA con rango 32, alfa 64, aplicado a todas las proyecciones lineales del transformer, entrenado durante 2 épocas (436 pasos). Además del adaptador final, el repositorio incluye 20 checkpoints intermedios guardados cada 22 pasos (checkpoint-22 a checkpoint-436), lo que lo convierte en un artefacto pensado para estudiar la evolución conjunta de la personalidad y de la precisión matemática a lo largo de la trayectoria de ajuste supervisado.
 
@@ -18,7 +18,7 @@ Su relevancia es principalmente de investigación: permite medir de forma empír
 | Longitud de contexto | 32.768 tokens en el modelo base (extensible a 131.072 con YaRN); el adaptador no la modifica |
 | Tipos de cuantizacion | no disponible en el repositorio (solo safetensors PEFT); el modelo base admite GGUF, AWQ, GPTQ y cuantizacion de 8/4 bits con bitsandbytes |
 | Idiomas soportados | no disponible en la model card (el modelo base declara soporte para 29 idiomas; no se documenta el efecto del adaptador sobre ellos) |
-| Licencia | qwen-research, etiquetada en HuggingFace como "other" con license_name qwen-research |
+| Licencia | qwen-research, etiquetada en Hugging Face como "other" con license_name qwen-research |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA, sin fusionar) |
 | Tipo de adaptador | LoRA, r=32, alpha=64, todas las proyecciones lineales |
 | Dataset de entrenamiento | tbooy/sheldon-cooper-sft-20k |

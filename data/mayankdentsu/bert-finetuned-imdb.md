@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MayankDentsu/bert-finetuned-imdb | 109.483.778 | 512 (inferido) | Apache 2.0 | HuggingFace |
-| mgbam/bert-imdb-finetuned | No disponible | No disponible | No disponible | HuggingFace |
-| mahesh074/bert-finetuned-imdb | No disponible | No disponible | No disponible | HuggingFace |
+| MayankDentsu/bert-finetuned-imdb | 109.483.778 | 512 (inferido) | Apache 2.0 | Hugging Face |
+| mgbam/bert-imdb-finetuned | No disponible | No disponible | No disponible | Hugging Face |
+| mahesh074/bert-finetuned-imdb | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de métricas de rendimiento para comparar directamente estos modelos; todos son variantes de BERT fine-tuned sobre IMDb o datasets similares.
 
@@ -73,7 +73,7 @@ No se dispone de métricas de rendimiento para comparar directamente estos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MayankDentsu/bert-finetuned-imdb
+- Hugging Face: https://huggingface.co/MayankDentsu/bert-finetuned-imdb
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - mgbam/bert-imdb-finetuned: https://huggingface.co/mgbam/bert-imdb-finetuned
 - mahesh074/bert-finetuned-imdb: https://huggingface.co/mahesh074/bert-finetuned-imdb

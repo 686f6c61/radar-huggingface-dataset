@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-TLDR-SurplusMaxmin es un modelo de investigación desarrollado por el usuario "promotion" en HuggingFace, centrado en el estudio de la alineación multi-objetivo mediante optimización de preferencias. Se trata de un fine-tune del modelo instructivo `meta-llama/Llama-3.1-8B-Instruct`, que actúa tanto como política de referencia como inicialización. El modelo explora cómo agregar múltiples objetivos (coverage, faithfulness, conciseness, helpfulness) en el entrenamiento de un LLM, utilizando una regla de agregación "surplus maxmin" que maximiza el mínimo excedente sobre la política de referencia en todos los objetivos.
+Llama-3.1-8B-TLDR-SurplusMaxmin es un modelo de investigación desarrollado por el usuario "promotion" en Hugging Face, centrado en el estudio de la alineación multi-objetivo mediante optimización de preferencias. Se trata de un fine-tune del modelo instructivo `meta-llama/Llama-3.1-8B-Instruct`, que actúa tanto como política de referencia como inicialización. El modelo explora cómo agregar múltiples objetivos (coverage, faithfulness, conciseness, helpfulness) en el entrenamiento de un LLM, utilizando una regla de agregación "surplus maxmin" que maximiza el mínimo excedente sobre la política de referencia en todos los objetivos.
 
 La relevancia de este modelo radica en su contribución metodológica: dentro de un panel de experimentos donde todos los brazos comparten el mismo pool de respuestas, optimizador y presupuesto de 300 pasos, la única diferencia es la regla de agregación de objetivos. Esto permite aislar el efecto de la regla en el comportamiento final. Los resultados reportados muestran que este brazo en particular dedica todo su peso a la concisión, logrando mantener todos los objetivos por encima de la referencia, aunque con un excedente mínimo modesto en conciseness (+0.0363) frente a mejoras más sustanciales en coverage (+0.1617), faithfulness (+0.1804) y helpfulness (+0.1319).
 
@@ -89,6 +89,6 @@ El modelo de "promotion" se distingue por su metodología experimental de alinea
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/promotion/Llama-3.1-8B-TLDR-SurplusMaxmin)
+- [Modelo en Hugging Face](https://huggingface.co/promotion/Llama-3.1-8B-TLDR-SurplusMaxmin)
 - [Dataset de generaciones de benchmark](https://huggingface.co/datasets/promotion/nbpo-benchmark-generations)
 - [Paper asociado: no disponible en la informacion proporcionada]

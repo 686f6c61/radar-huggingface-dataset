@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aprilcac/multitask` es un repositorio de HuggingFace publicado por el usuario `aprilcac` que contiene una implementación propia y mínima de **PoolFormer** orientada a tareas multitarea. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un *punto de partida reproducible* y el fichero `model.safetensors` como un *checkpoint de inicialización válido para pruebas de humo*. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`aprilcac/multitask` es un repositorio de Hugging Face publicado por el usuario `aprilcac` que contiene una implementación propia y mínima de **PoolFormer** orientada a tareas multitarea. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un *punto de partida reproducible* y el fichero `model.safetensors` como un *checkpoint de inicialización válido para pruebas de humo*. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El dato más relevante es su tamaño real: el checkpoint safetensors contiene **33.088 parámetros totales**, es decir, unos 33K parámetros. Esto contrasta con la escala `giant` declarada en la configuración de arquitectura, lo que confirma que el fichero no corresponde a un modelo de gran tamaño, sino a una inicialización mínima para validar el código. El repositorio ocupa 0.0 GB.
 
@@ -76,7 +76,7 @@ No se han proporcionado en la información disponible modelos comparables con da
 
 | Modelo | Parámetros (aprox.) | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aprilcac/multitask | 33.088 (33K, dato real del checkpoint) | Multitarea, sin tarea declarada ni evaluada | MIT | Repositorio HuggingFace con checkpoint de inicialización, 0 descargas |
+| aprilcac/multitask | 33.088 (33K, dato real del checkpoint) | Multitarea, sin tarea declarada ni evaluada | MIT | Repositorio Hugging Face con checkpoint de inicialización, 0 descargas |
 | PoolFormer-S12 (familia MetaFormer) | ~12 M (aproximado) | Clasificación de imágenes (ImageNet-1K) | No verificada en la información disponible | Pesos publicados por el autor original |
 | PoolFormer-S36 / M36 (familia MetaFormer) | ~31 M (aproximado) | Clasificación de imágenes (ImageNet-1K) | No verificada en la información disponible | Pesos publicados por el autor original |
 
@@ -96,7 +96,7 @@ Diferencias clave: el modelo de este repositorio es **entre dos y tres órdenes 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aprilcac/multitask
+- Repositorio Hugging Face: https://huggingface.co/aprilcac/multitask
 - La búsqueda web realizada no devolvió resultados relevantes para este modelo: los enlaces recuperados corresponden a páginas de soporte de Microsoft (contacto, inicio de sesión en Hotmail, deprecación de EWS en Exchange Online, descarga de Windows 8.1 y cambio de frecuencia de refresco en Windows) y no guardan relación con `aprilcac/multitask` ni con PoolFormer.
 - No se han encontrado en la información proporcionada enlaces a *papers*, blogs, repositorios de código o demos asociados a este modelo.
 - Referencia externa no incluida en los resultados de búsqueda: el artículo que introduce la familia MetaFormer y la arquitectura PoolFormer es «MetaFormer is Actually What You Need for Vision» (arXiv:2111.11418). Se cita como contexto de la arquitectura; no forma parte de la documentación del repositorio.

@@ -33,13 +33,13 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Modo instructivo: el modelo base es de tipo Instruct, por lo que responde a instrucciones y preguntas en formato conversacional.
 - Conversación multi-turno: soporta diálogos con contexto de hasta 4096 tokens en la configuración de ejemplo.
 - Ejecución en navegador: gracias a MLC y WebLLM, la inferencia se realiza en el cliente mediante WebGPU, sin necesidad de servidor.
-- Integración en aplicaciones web: el paquete incluye la configuración necesaria para cargar el modelo desde una URL de HuggingFace en una aplicación WebLLM.
+- Integración en aplicaciones web: el paquete incluye la configuración necesaria para cargar el modelo desde una URL de Hugging Face en una aplicación WebLLM.
 - Capacidades de tool calling, agentes, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
 - Aplicaciones educativas de hebreo en el navegador: el modelo se usa en la aplicación open source *Parle* para aprendizaje de hebreo; al ejecutarse en el cliente, no requiere enviar datos del usuario a un servidor.
-- Demos y prototipos web sin backend: un desarrollador puede integrar el modelo en una página con WebLLM cargando el paquete desde HuggingFace y obtener generación de texto en hebreo sin desplegar infraestructura.
+- Demos y prototipos web sin backend: un desarrollador puede integrar el modelo en una página con WebLLM cargando el paquete desde Hugging Face y obtener generación de texto en hebreo sin desplegar infraestructura.
 - Asistentes de escritura en hebreo en el navegador: el modelo puede ayudar a redactar o completar texto en hebreo dentro de editores web, con la ventaja de que el procesamiento es local.
 - Traducción y adaptación de contenidos en hebreo: para tareas de reescritura, resumen o adaptación de textos en hebreo en herramientas web ligeras.
 - Chatbots de atención al cliente en hebreo para sitios web: al ejecutarse en el navegador, puede ofrecer respuestas conversacionales sin coste de servidor, aunque con las limitaciones de un modelo de 1.7B.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sivelsguy/DictaLM-3.0-1.7B-Instruct-q4f16_1-MLC | 1.7B | 4096 (config. de ejemplo) | MLC / WebLLM | Apache-2.0 | HuggingFace, ejecución en navegador |
-| dicta-il/DictaLM-3.0-1.7B-Instruct | 1.7B | no disponible | safetensors (modelo base) | Apache-2.0 | HuggingFace |
-| mlc-ai/Qwen3-1.7B-q4f16_1-MLC | 1.7B | no disponible | MLC / WebLLM | Apache-2.0 | HuggingFace, ejecución en navegador |
+| sivelsguy/DictaLM-3.0-1.7B-Instruct-q4f16_1-MLC | 1.7B | 4096 (config. de ejemplo) | MLC / WebLLM | Apache-2.0 | Hugging Face, ejecución en navegador |
+| dicta-il/DictaLM-3.0-1.7B-Instruct | 1.7B | no disponible | safetensors (modelo base) | Apache-2.0 | Hugging Face |
+| mlc-ai/Qwen3-1.7B-q4f16_1-MLC | 1.7B | no disponible | MLC / WebLLM | Apache-2.0 | Hugging Face, ejecución en navegador |
 
 La comparación con Qwen3-1.7B es relevante porque la conversión reutiliza su librería precompilada y su configuración; la diferencia principal es el tokenizer y los pesos, adaptados al hebreo en el caso de DictaLM.
 
@@ -81,7 +81,7 @@ La comparación con Qwen3-1.7B es relevante porque la conversión reutiliza su l
 
 ## Enlaces
 
-- [sivelsguy/DictaLM-3.0-1.7B-Instruct-q4f16_1-MLC en HuggingFace](https://huggingface.co/sivelsguy/DictaLM-3.0-1.7B-Instruct-q4f16_1-MLC)
+- [sivelsguy/DictaLM-3.0-1.7B-Instruct-q4f16_1-MLC en Hugging Face](https://huggingface.co/sivelsguy/DictaLM-3.0-1.7B-Instruct-q4f16_1-MLC)
 - [dicta-il/DictaLM-3.0-1.7B-Instruct (modelo base)](https://huggingface.co/dicta-il/DictaLM-3.0-1.7B-Instruct)
 - [Dicta](https://dicta.org.il)
 - [WebLLM (GitHub)](https://github.com/mlc-ai/web-llm)

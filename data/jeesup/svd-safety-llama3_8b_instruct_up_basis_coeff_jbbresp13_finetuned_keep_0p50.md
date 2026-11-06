@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-llama3_8b_instruct_up_basis_coeff_jbbresp13_finetuned_keep_0p50` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de una versión comprimida de `meta-llama/Meta-Llama-3-8B-Instruct` mediante una técnica de compresión por descomposición en valores singulares (SVD) con compartición de bases (*basis sharing*) entre pares de capas, con un objetivo declarado de eliminación del 50 % de los parámetros en la representación factorizada.
+`svd-safety-llama3_8b_instruct_up_basis_coeff_jbbresp13_finetuned_keep_0p50` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de una versión comprimida de `meta-llama/Meta-Llama-3-8B-Instruct` mediante una técnica de compresión por descomposición en valores singulares (SVD) con compartición de bases (*basis sharing*) entre pares de capas, con un objetivo declarado de eliminación del 50 % de los parámetros en la representación factorizada.
 
 El modelo no es un Llama 3 al uso: es un artefacto experimental orientado a medir cómo afecta la compresión al equilibrio entre utilidad (perplejidad, tareas zero-shot) y seguridad (resistencia a *jailbreaks* y tasa de rechazos excesivos). Para ello, la calibración del SVD combina 256 secuencias de WikiText-2 con 13 secuencias de *prompt* más respuesta extraídas de un corpus de *prompts* dañinos de JBB (26.624 tokens en total), y la recuperación de capacidad se hace con LoRA sobre los coeficientes manteniendo las bases congeladas, usando datos Alpaca-cleaned durante dos épocas.
 
@@ -75,10 +75,10 @@ No se han publicado en la información disponible los resultados desglosados de 
 
 | Modelo | Parametros | Contexto | Perplejidad WikiText-2 | ASR / over-refusal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`..._jbbresp13_finetuned_keep_0p50`) | 8,03 B (presupuesto factorizado al 50 %) | 8.192 (heredado) | 22,356 | AdvBench 0,117308; StrongREJECT 0,172524; over-refusal 0,184978 | `llama3` | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbresp13_finetuned_keep_0p60` | No disponible con precisión (mismo esquema, retención 60 %) | 8.192 (heredado) | No disponible en la información | No disponible en la información | `llama3` | HuggingFace; también indexado en FriendliAI |
-| `Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_finetuned_keep_0p50` | No disponible con precisión (mismo esquema sin corpus JBB) | 8.192 (heredado) | No disponible en la información | No disponible en la información | `llama3` | HuggingFace |
-| `meta-llama/Meta-Llama-3-8B-Instruct` (base sin comprimir) | 8,03 B | 8.192 | No disponible en la información (no reportada por el autor) | No disponible en la información | `llama3` | HuggingFace, ampliamente distribuido |
+| Este modelo (`..._jbbresp13_finetuned_keep_0p50`) | 8,03 B (presupuesto factorizado al 50 %) | 8.192 (heredado) | 22,356 | AdvBench 0,117308; StrongREJECT 0,172524; over-refusal 0,184978 | `llama3` | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbresp13_finetuned_keep_0p60` | No disponible con precisión (mismo esquema, retención 60 %) | 8.192 (heredado) | No disponible en la información | No disponible en la información | `llama3` | Hugging Face; también indexado en FriendliAI |
+| `Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_finetuned_keep_0p50` | No disponible con precisión (mismo esquema sin corpus JBB) | 8.192 (heredado) | No disponible en la información | No disponible en la información | `llama3` | Hugging Face |
+| `meta-llama/Meta-Llama-3-8B-Instruct` (base sin comprimir) | 8,03 B | 8.192 | No disponible en la información (no reportada por el autor) | No disponible en la información | `llama3` | Hugging Face, ampliamente distribuido |
 
 No se dispone de datos en la información proporcionada para comparar con alternativas de otros autores orientadas a compresión con preservación de seguridad. Las cifras de la variante `keep_0p60` y de la base sin comprimir no están publicadas en las fuentes consultadas.
 
@@ -97,7 +97,7 @@ No se dispone de datos en la información proporcionada para comparar con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbresp13_finetuned_keep_0p50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbresp13_finetuned_keep_0p50
 - Variante con retención del 60 %: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbresp13_finetuned_keep_0p60
 - Variante sin corpus JBB, retención del 50 %: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_finetuned_keep_0p50
 - Variante sobre Llama 3.1 8B Instruct (índice de terceros): https://featherless.ai/models/Jeesup/svd-safety-llama3_1_8b_instruct_up_basis_finetuned_keep_0p60

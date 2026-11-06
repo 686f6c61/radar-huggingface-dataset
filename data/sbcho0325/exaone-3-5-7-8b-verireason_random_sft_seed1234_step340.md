@@ -66,5 +66,5 @@ No disponible. No se conocen otros adaptadores LoRA públicos con el mismo objet
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed1234_step340](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed1234_step340)
+- Repositorio de Hugging Face: [sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed1234_step340](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed1234_step340)
 - Modelo base: [LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct) (referencia, no se ha consultado en esta ficha)

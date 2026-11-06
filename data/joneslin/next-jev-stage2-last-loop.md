@@ -74,7 +74,7 @@ La model card unicamente remite a `metrics.jsonl` (metricas por paso de entrenam
 |---|---|---|---|---|---|
 | next-jev-stage2-last-loop | ~0,8B (heredados de Qwen3.5-0.8B) | No disponible | NLI de 3 clases + CoT | No disponible | Checkpoint intermedio en HF, formato `checkpoint.pt` |
 | JonesLin/next-jev-stage1-cot | No disponible | No disponible | CoT (etapa previa) | No disponible | Checkpoint de la etapa 1, paso 6347; es el punto de inicializacion de este modelo |
-| Qwen/Qwen3.5-0.8B | 0,8B (segun denominacion) | No disponible | Modelo de lenguaje general | No disponible en la informacion proporcionada | Modelo base publicado en HuggingFace |
+| Qwen/Qwen3.5-0.8B | 0,8B (segun denominacion) | No disponible | Modelo de lenguaje general | No disponible en la informacion proporcionada | Modelo base publicado en Hugging Face |
 
 No se han encontrado en la busqueda web modelos comparables de la misma familia "next-jev" ni evaluaciones cruzadas con alternativas de tamano similar. Las referencias a un "Jev Model" de TypeSafe AI encontradas en la busqueda parecen corresponder a un proyecto distinto y no se han usado como termino de comparacion.
 
@@ -94,7 +94,7 @@ No se han encontrado en la busqueda web modelos comparables de la misma familia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JonesLin/next-jev-stage2-last-loop
+- Modelo en Hugging Face: https://huggingface.co/JonesLin/next-jev-stage2-last-loop
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Checkpoint de la etapa 1: https://huggingface.co/JonesLin/next-jev-stage1-cot
 - Dataset de la etapa 2: https://huggingface.co/datasets/JonesLin/next-jev-stage2-nextjev
@@ -102,5 +102,5 @@ No se han encontrado en la busqueda web modelos comparables de la misma familia 
 - Repositorio de codigo: https://github.com/JonnesLin/next_jev
 - Configuracion de entrenamiento: `configs/stage2_last_loop.json` (commit `26e18d9`) en el repositorio anterior
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/fast-ssl/next-jev/runs/f4acad907e444bf79d25f05e1d61aab2
-- Perfil del autor en HuggingFace: https://huggingface.co/datasets/JonesLin/
+- Perfil del autor en Hugging Face: https://huggingface.co/datasets/JonesLin/
 - Referencias encontradas en la busqueda web que parecen corresponder a un proyecto distinto (TypeSafe AI, "Jev Model"), no relacionadas con next-jev: https://www.jevai.org/ , https://www.jevai.org/jev-api , https://github.com/yibie/awesome-jev

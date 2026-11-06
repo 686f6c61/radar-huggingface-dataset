@@ -80,7 +80,7 @@ Los datos de contexto y licencia de los modelos alternativos proceden de sus fic
 - Modelo de 7,6B: no es comparable en razonamiento general con modelos frontera; su valor está en la especialización y en el coste de despliegue, no en capacidades generales de propósito amplio.
 
 ## Enlaces
-- [Modelo AWQ en HuggingFace](https://huggingface.co/henil08/verilog-coder-7b-awq)
+- [Modelo AWQ en Hugging Face](https://huggingface.co/henil08/verilog-coder-7b-awq)
 - [Modelo base henil08/verilog-coder-7b](https://huggingface.co/henil08/verilog-coder-7b)
 - [Repositorio Henil-08/verilog-coder-ft](https://github.com/Henil-08/verilog-coder-ft)
 - [Paper VerilogCoder de NVIDIA](https://arxiv.org/abs/2408.08927)

@@ -71,10 +71,10 @@ En la categoría de modelos de visión-acción para robótica existen alternativ
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | Decoder World2Action sobre backbone de vídeo | no disponible | no disponible | no disponible | HuggingFace |
-| OpenVLA | VLA (modelo de lenguaje y visión) | no disponible | no disponible | no disponible | HuggingFace |
+| Este checkpoint | Decoder World2Action sobre backbone de vídeo | no disponible | no disponible | no disponible | Hugging Face |
+| OpenVLA | VLA (modelo de lenguaje y visión) | no disponible | no disponible | no disponible | Hugging Face |
 | ReBot | VLA con aumento de vídeo sintético | no disponible | no disponible | no disponible | Paper (arXiv) |
-| Octo | VLA | no disponible | no disponible | no disponible | HuggingFace |
+| Octo | VLA | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ En la categoría de modelos de visión-acción para robótica existen alternativ
 
 ## Enlaces
 
-- Repositorio principal del modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-07b94ab06f
+- Repositorio principal del modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-07b94ab06f
 - Video LoRA iter400 (cercano al checkpoint): https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400
 - Action decoder en Robosuite (otro checkpoint del autor): https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-c8fb3c68cd
 - Paper ReBot: https://arxiv.org/html/2503.14526v1

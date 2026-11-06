@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_answer_variance_alpaca_qwen3b` es un modelo de generación de texto publicado en HuggingFace por el usuario `ishikaa`. Por el identificador y la configuración del repositorio, se trata de un artefacto de investigación: el nombre sugiere un generador de respuestas ("answer") empleado en un experimento de adquisición de datos con medida de varianza ("acquisition_generator_AS_answer_variance"), afinado aparentemente sobre un conjunto de tipo Alpaca y construido sobre la familia Qwen2 (etiqueta `qwen2` presente en el repositorio). El repositorio no incluye model card real: el README es la plantilla automática de HuggingFace con todos los campos marcados como "More Information Needed", sin licencia, sin idiomas declarados y sin resultados de evaluación.
+El modelo `ishikaa/acquisition_generator_AS_answer_variance_alpaca_qwen3b` es un modelo de generación de texto publicado en Hugging Face por el usuario `ishikaa`. Por el identificador y la configuración del repositorio, se trata de un artefacto de investigación: el nombre sugiere un generador de respuestas ("answer") empleado en un experimento de adquisición de datos con medida de varianza ("acquisition_generator_AS_answer_variance"), afinado aparentemente sobre un conjunto de tipo Alpaca y construido sobre la familia Qwen2 (etiqueta `qwen2` presente en el repositorio). El repositorio no incluye model card real: el README es la plantilla automática de Hugging Face con todos los campos marcados como "More Information Needed", sin licencia, sin idiomas declarados y sin resultados de evaluación.
 
 El dato objetivo más relevante es el recuento de parámetros extraído de los pesos en safetensors: 14.770.033.664 parámetros, es decir, unos 14,77 mil millones. Esto contradice parcialmente el sufijo "qwen3b" del nombre, que apuntaría a un modelo de 3B; el tamaño real corresponde más bien a un modelo de la clase 14B. El repositorio ocupa 59,1 GB, coherente con pesos almacenados en precisión FP32 (14,77B × 4 bytes ≈ 59,1 GB).
 
@@ -30,14 +30,14 @@ No hay descargas ni "likes" en el momento de la consulta, no se han publicado re
 
 La única información arquitectónica disponible es la etiqueta `qwen2` del repositorio, que sitúa el modelo en la familia Qwen2 de Alibaba, es decir, un transformer decoder-only con normalización previa, atención causal y, en los tamaños mayores de esa familia, atención con consultas agrupadas (GQA). No se dispone de confirmación del número de capas, dimensión oculta, número de cabezas de atención ni de la longitud de contexto nativa, por lo que no es posible verificar si es un ajuste del modelo base de 14B de Qwen2 o de otro checkpoint con un recuento de parámetros similar.
 
-Tampoco hay información sobre el entrenamiento. El nombre del repositorio apunta a un ajuste supervisado sobre un conjunto de instrucciones de tipo Alpaca (probablemente alpaca o alpaca-cleaned) y a un procedimiento de generación de respuestas diseñado para medir la varianza de las salidas, típico de experimentos de aprendizaje activo o de estimación de incertidumbre para selección de datos. No se especifican el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF, DPO o cualquier otra etapa de alineamiento, ni hiperparámetros como la tasa de aprendizaje, el régimen de precisión (fp32, bf16, fp16) o el número de épocas. La model card incluye una referencia al artículo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental, pero es parte del texto plantilla de HuggingFace y no implica que ese trabajo esté relacionado con el modelo.
+Tampoco hay información sobre el entrenamiento. El nombre del repositorio apunta a un ajuste supervisado sobre un conjunto de instrucciones de tipo Alpaca (probablemente alpaca o alpaca-cleaned) y a un procedimiento de generación de respuestas diseñado para medir la varianza de las salidas, típico de experimentos de aprendizaje activo o de estimación de incertidumbre para selección de datos. No se especifican el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF, DPO o cualquier otra etapa de alineamiento, ni hiperparámetros como la tasa de aprendizaje, el régimen de precisión (fp32, bf16, fp16) o el número de épocas. La model card incluye una referencia al artículo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental, pero es parte del texto plantilla de Hugging Face y no implica que ese trabajo esté relacionado con el modelo.
 
 ## Capacidades
 
 - Generación de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` está presente, lo que indica que el modelo está preparado para completar y mantener diálogos en formato de chat.
 - Instrucciones y respuestas: el sufijo "alpaca" del nombre sugiere ajuste sobre instrucciones, por lo que cabe esperar que responda a peticiones en formato instrucción-respuesta, aunque no hay evaluación que lo confirme.
 - Generación de respuestas con medida de varianza: el nombre del repositorio indica que el modelo se usa como generador dentro de un procedimiento que mide la varianza entre respuestas, presumiblemente con decodificación por muestreo repetido.
-- Compatibilidad con text-generation-inference: el repositorio está etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que puede desplegarse mediante TGI y en HuggingFace Inference Endpoints.
+- Compatibilidad con text-generation-inference: el repositorio está etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que puede desplegarse mediante TGI y en Hugging Face Inference Endpoints.
 - Capacidades multilingües: no disponibles, no se declara ningún idioma.
 - Tool calling / function calling: no disponible, no se documenta.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no se documenta.
@@ -55,7 +55,7 @@ Tampoco hay información sobre el entrenamiento. El nombre del repositorio apunt
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla automática de HuggingFace y todas las secciones de evaluación están marcadas como "More Information Needed". La búsqueda web realizada no ha devuelto ninguna fuente técnica, paper ni entrada de blog asociada a este modelo.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla automática de Hugging Face y todas las secciones de evaluación están marcadas como "More Information Needed". La búsqueda web realizada no ha devuelto ninguna fuente técnica, paper ni entrada de blog asociada a este modelo.
 
 ## Requisitos de hardware
 
@@ -67,7 +67,7 @@ Las cifras siguientes son estimaciones derivadas del recuento real de parámetro
 - Pesos en INT4: aproximadamente 7,4 GB, viable en GPU de consumo de gama alta con 12-16 GB, siempre que se convierta el checkpoint a GGUF o a un formato cuantizado, ya que el autor no publica versiones cuantizadas.
 - GPU recomendadas: H100 80 GB o A100 80 GB para FP32/BF16 sin recompresión; A100 40 GB o 2 × 24 GB para BF16; RTX 4090, RTX 3090 o A6000 para INT8/INT4.
 - Cabe en GPU de consumo: sí, en formato cuantizado a INT4 o INT8 en tarjetas de 16-24 GB. En BF16 no cabe en una única GPU de 24 GB.
-- Opciones de despliegue: `transformers` con Accelerate para reparto en varias GPU; text-generation-inference (TGI) y HuggingFace Inference Endpoints por las etiquetas del repositorio; vLLM si la arquitectura Qwen2 del checkpoint es compatible; llama.cpp u Ollama solo tras convertir manualmente los pesos a GGUF, conversión de la que no hay constancia publicada.
+- Opciones de despliegue: `transformers` con Accelerate para reparto en varias GPU; text-generation-inference (TGI) y Hugging Face Inference Endpoints por las etiquetas del repositorio; vLLM si la arquitectura Qwen2 del checkpoint es compatible; llama.cpp u Ollama solo tras convertir manualmente los pesos a GGUF, conversión de la que no hay constancia publicada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ Advertencia: este ajuste carece de licencia declarada y de evaluación, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_alpaca_qwen3b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_alpaca_qwen3b
 - Perfil del autor: https://huggingface.co/ishikaa
 - Referencia citada en la plantilla de la model card (calculador de impacto ambiental, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML mencionado en la plantilla: https://mlco2.github.io/impact

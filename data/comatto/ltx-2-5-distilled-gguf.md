@@ -24,7 +24,7 @@ Se trata de una arquitectura de difusion con transformer (DiT) y componentes sep
 | Modos de generacion | Texto a video, imagen a video, video a video, audio a video |
 | Componentes adicionales requeridos | Codificador de texto Gemma 4 12B (bf16 26,3 GB o INT8 15,4 GB), VAE de video bf16 1,47 GB o convolucional 1,45 GB, VAE de audio 365 MB |
 | Upscalers latentes opcionales | Espacial x2 (996 MB) y temporal x2 (262 MB) |
-| Descargas / likes en HuggingFace | 0 / 0 en el momento de la consulta |
+| Descargas / likes en Hugging Face | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
@@ -77,8 +77,8 @@ Las cifras siguientes son estimaciones derivadas de los tamanos de fichero decla
 
 | Modelo | Parametros | Formato | Contexto / modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.5-Distilled-GGUF (comatto) | 21.004.025.600 en el transformer destilado | GGUF Q3_K_S a Q8_0 | Texto/imagen/video/audio a video con audio sincronizado | LTX-2 Community License Agreement | HuggingFace, 0 descargas |
-| Lightricks/LTX-2.5 (modelo base) | ~22B en el modelo completo (transformer bf16) | safetensors/bf16 | Mismas modalidades, incluidos componentes de texto, VAE y upscalers | LTX-2 Community License Agreement | HuggingFace, repositorio oficial |
+| LTX-2.5-Distilled-GGUF (comatto) | 21.004.025.600 en el transformer destilado | GGUF Q3_K_S a Q8_0 | Texto/imagen/video/audio a video con audio sincronizado | LTX-2 Community License Agreement | Hugging Face, 0 descargas |
+| Lightricks/LTX-2.5 (modelo base) | ~22B en el modelo completo (transformer bf16) | safetensors/bf16 | Mismas modalidades, incluidos componentes de texto, VAE y upscalers | LTX-2 Community License Agreement | Hugging Face, repositorio oficial |
 | Otros modelos de generacion de video de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion con datos verificables en la informacion proporcionada es la del modelo base: esta variante GGUF reduce el peso a entre 12,6 GB y 23,6 GB frente a los pesos bf16 del original, a cambio de perdida de calidad que el autor describe como creciente en los niveles de cuantizacion mas bajos. No se dispone de datos sobre modelos alternativos de terceros (parametros, contexto, benchmarks o licencias) en la informacion disponible, por lo que no se incluyen.
@@ -98,7 +98,7 @@ La unica comparacion con datos verificables en la informacion proporcionada es l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/comatto/LTX-2.5-Distilled-GGUF
+- Repositorio Hugging Face: https://huggingface.co/comatto/LTX-2.5-Distilled-GGUF
 - Modelo base Lightricks/LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Codificadores de texto del modelo base: https://huggingface.co/Lightricks/LTX-2.5/tree/main/text_encoders
 - VAE de video y audio: https://huggingface.co/Lightricks/LTX-2.5/tree/main/vae

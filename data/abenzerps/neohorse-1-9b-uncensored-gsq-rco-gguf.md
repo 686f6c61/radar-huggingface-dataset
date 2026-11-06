@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de terceros comparables verificados en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abenzerps/NeoHorse-1-9B-Uncensored-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/abenzerps/NeoHorse-1-9B-Uncensored-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/TokenRhythm/NeoHorse-1-9B
 - Publicación GGUF de referencia del autor original: https://huggingface.co/TokenRhythm/NeoHorse-1-9B-GGUF
 - Formulario de solicitud de modelos del cuantizador: https://abenzerps.com/request-a-model/

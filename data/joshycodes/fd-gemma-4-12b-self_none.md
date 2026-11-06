@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/fd-gemma-4-12b-self_none` es un modelo publicado en HuggingFace por el usuario joshycodes, con un total de 11.959.730.224 parametros (aproximadamente 12.000 millones) confirmados a partir de los pesos en safetensors. El identificador y la etiqueta `gemma4_unified` apuntan a un derivado de la familia Gemma 4 de Google, aunque esta adscripcion no esta confirmada por ninguna documentacion oficial del repositorio. El sufijo `fd-` y `self_none` sugiere un ajuste fino o una variante experimental, pero no hay informacion publicada que lo verifique.
+`joshycodes/fd-gemma-4-12b-self_none` es un modelo publicado en Hugging Face por el usuario joshycodes, con un total de 11.959.730.224 parametros (aproximadamente 12.000 millones) confirmados a partir de los pesos en safetensors. El identificador y la etiqueta `gemma4_unified` apuntan a un derivado de la familia Gemma 4 de Google, aunque esta adscripcion no esta confirmada por ninguna documentacion oficial del repositorio. El sufijo `fd-` y `self_none` sugiere un ajuste fino o una variante experimental, pero no hay informacion publicada que lo verifique.
 
 El repositorio tiene un tamano de 24,0 GB para 11.959.730.224 parametros, lo que equivale a unos 16 bits por parametro y es consistente con pesos almacenados en bf16 o fp16. Se trata de un modelo con 12 descargas y 0 likes en el momento de la consulta, sin pipeline declarado, sin licencia especificada, sin idiomas declarados y sin model card descriptiva.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada y de caracter cautelar: se trata de un a
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en el repositorio de HuggingFace. La unica pista disponible es la etiqueta `gemma4_unified`, que sugiere una variante unificada dentro de la familia Gemma 4, pero no hay model card, configuracion documentada ni paper asociado que permita confirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida.
+No se ha publicado informacion sobre la arquitectura en el repositorio de Hugging Face. La unica pista disponible es la etiqueta `gemma4_unified`, que sugiere una variante unificada dentro de la familia Gemma 4, pero no hay model card, configuracion documentada ni paper asociado que permita confirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida.
 
 Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni cualquier innovacion tecnica asociada (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, etc.). La ausencia de una model card y de un pipeline declarado impide cualquier analisis de reproducibilidad.
 
@@ -46,7 +46,7 @@ No es posible recomendar casos de uso concretos sin documentacion tecnica verifi
 - Prototipado interno de generacion de texto: un modelo denso de 12B puede emplearse para experimentar con generacion en un entorno controlado, siempre que se valide primero la calidad de los pesos descargados.
 - Ajuste fino adicional sobre dominio especifico: si la licencia lo permitiese (dato no disponible), el tamano de 12B es manejable con LoRA sobre una unica GPU de 24 GB.
 - Evaluacion comparativa de variantes: util como punto de comparacion frente a otros derivados de Gemma de tamano similar en experimentos academicos de ajuste fino.
-- Investigacion sobre artefactos de HuggingFace: caso de estudio sobre publicacion de modelos sin model card ni licencia declarada.
+- Investigacion sobre artefactos de Hugging Face: caso de estudio sobre publicacion de modelos sin model card ni licencia declarada.
 - Despliegue en local con cuantizacion: si se generan pesos GGUF, seria posible ejecutarlo en hardware de consumo, pero dichos pesos no estan disponibles en el repositorio.
 - Integracion en pipelines de investigacion: solo tras auditar el contenido del repositorio y verificar la procedencia de los pesos.
 
@@ -70,10 +70,10 @@ Los valores del modelo evaluado no estan documentados, por lo que la comparacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fd-gemma-4-12b-self_none | ~12B | no disponible | no disponible | HuggingFace, 12 descargas |
-| Gemma 3 12B (Google) | 12B | 128K tokens | Gemma Terms of Use | HuggingFace, ampliamente distribuido |
-| Mistral NeMo 12B | 12B | 128K tokens | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Qwen2.5 14B | 14B | 128K tokens (32K en algunas variantes) | Apache 2.0 o Qwen License | HuggingFace, ampliamente distribuido |
+| fd-gemma-4-12b-self_none | ~12B | no disponible | no disponible | Hugging Face, 12 descargas |
+| Gemma 3 12B (Google) | 12B | 128K tokens | Gemma Terms of Use | Hugging Face, ampliamente distribuido |
+| Mistral NeMo 12B | 12B | 128K tokens | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Qwen2.5 14B | 14B | 128K tokens (32K en algunas variantes) | Apache 2.0 o Qwen License | Hugging Face, ampliamente distribuido |
 
 No hay datos de rendimiento comparativo disponibles para el modelo evaluado.
 
@@ -92,5 +92,5 @@ No hay datos de rendimiento comparativo disponibles para el modelo evaluado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/fd-gemma-4-12b-self_none
+- Hugging Face: https://huggingface.co/joshycodes/fd-gemma-4-12b-self_none
 - No se han encontrado papers, repositorios, blogs ni demos asociados al modelo en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con el modelo y se han descartado.

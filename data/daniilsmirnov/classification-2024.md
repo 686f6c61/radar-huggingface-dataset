@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`daniilsmirnov/classification-2024` es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificacion. El autor lo publica explicitamente como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no como un modelo preentrenado listo para produccion. La model card insiste en que el checkpoint `model.safetensors` es una inicializacion valida, no un modelo entrenado ni evaluado.
+`daniilsmirnov/classification-2024` es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificacion. El autor lo publica explicitamente como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no como un modelo preentrenado listo para produccion. La model card insiste en que el checkpoint `model.safetensors` es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 El repositorio declara una configuracion etiquetada como «huge», pero los metadatos reales de safetensors indican un total de 24.832 parametros, una cifra que contrasta radicalmente con esa etiqueta y que apunta a una discrepancia entre la nomenclatura del script y el artefacto publicado. El tamano del repositorio es de 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -63,9 +63,9 @@ No se dispone de datos de rendimiento de este repositorio, por lo que una compar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| daniilsmirnov/classification-2024 | 24.832 | no disponible | sin benchmark publicado (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace |
+| daniilsmirnov/classification-2024 | 24.832 | no disponible | sin benchmark publicado (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face |
 | MoCo v3 original (Meta AI) | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible en esta informacion | repositorio publico del metodo |
-| DINOv2 (Meta AI) | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible en esta informacion | HuggingFace |
+| DINOv2 (Meta AI) | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible en esta informacion | Hugging Face |
 
 Nota: los datos de las dos alternativas no se han verificado en la informacion proporcionada; se incluyen unicamente como referencia de categoria, no como comparativa de rendimiento.
 
@@ -83,6 +83,6 @@ Nota: los datos de las dos alternativas no se han verificado en la informacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daniilsmirnov/classification-2024
+- Repositorio en Hugging Face: https://huggingface.co/daniilsmirnov/classification-2024
 - Metodo de referencia MoCo v3 (repositorio oficial de Meta AI): https://github.com/facebookresearch/moco-v3
 - Articulo MoCo v3 (arXiv): https://arxiv.org/abs/2104.02057

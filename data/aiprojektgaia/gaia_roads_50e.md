@@ -79,6 +79,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aiprojektgaia/gaia_roads_50e
+- Modelo en Hugging Face: https://huggingface.co/aiprojektgaia/gaia_roads_50e
 - Repositorio del proyecto: https://github.com/aiprojektgaia
 - Paper de referencia (arXiv:1910.09700): https://arxiv.org/abs/1910.09700

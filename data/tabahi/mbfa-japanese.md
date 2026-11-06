@@ -96,11 +96,11 @@ No se dispone de resultados comparativos en la informacion proporcionada, por lo
 - Licencia AGPL-3.0: es copyleft fuerte. Si se ofrece el modelo como servicio en red o se distribuye una obra derivada, la licencia obliga a liberar el codigo fuente correspondiente. Es una restriccion relevante para integraciones comerciales de codigo cerrado.
 - El checkpoint `.ckpt` es un pickle de PyTorch Lightning; la model card advierte de que solo se cargue si se confia en el repositorio, por el riesgo asociado a la deserializacion de pickles.
 - El repositorio tiene 0 descargas y 0 likes, sin validacion independiente de la comunidad ni resultados replicados por terceros.
-- No hay pipeline declarado en HuggingFace ni integracion con frameworks estandar de inferencia, lo que obliga a usar el codigo propio del autor.
+- No hay pipeline declarado en Hugging Face ni integracion con frameworks estandar de inferencia, lo que obliga a usar el codigo propio del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/mbfa-japanese
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/mbfa-japanese
 - Codigo de inferencia y entrenamiento (paquete `p4mbfa`): https://github.com/tabahi/bfa_models
 - Repositorio standard_g2p / CharsiuG2P: https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento y validacion: https://huggingface.co/datasets/google/fleurs

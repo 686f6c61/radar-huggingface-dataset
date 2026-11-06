@@ -93,10 +93,10 @@ No hay datos de comparación con modelos como XLM-R o BERT-large en este registr
 
 ## Enlaces
 
-- [HuggingFace - DeliVali/AIDAM_VSCI_279M_V1.0.0](https://huggingface.co/DeliVali/AIDAM_VSCI_279M_V1.0.0)
+- [Hugging Face - DeliVali/AIDAM_VSCI_279M_V1.0.0](https://huggingface.co/DeliVali/AIDAM_VSCI_279M_V1.0.0)
 - [GitHub - DeliVali/AIDAM (repositorio principal)](https://github.com/DeliVali/AIDAM)
 - [GitHub - Documentación de arquitectura de AIDAM](https://github.com/DeliVali/AIDAM/blob/main/docs/ARCHITECTURE.md)
-- [HuggingFace - Modelo base MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7](https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7)
-- [HuggingFace - Modelo hermano AIDAM_VWIKI_279M_V0.1.0](https://huggingface.co/DeliVali/AIDAM_VWIKI_279M_V0.1.0)
-- [HuggingFace - Modelo hermano AIDAM_VREAL_279M_V0.1.0](https://huggingface.co/DeliVali/AIDAM_VREAL_279M_V0.1.0)
+- [Hugging Face - Modelo base MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7](https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7)
+- [Hugging Face - Modelo hermano AIDAM_VWIKI_279M_V0.1.0](https://huggingface.co/DeliVali/AIDAM_VWIKI_279M_V0.1.0)
+- [Hugging Face - Modelo hermano AIDAM_VREAL_279M_V0.1.0](https://huggingface.co/DeliVali/AIDAM_VREAL_279M_V0.1.0)
 - [GitHub - docs del proyecto AIDAM](https://github.com/DeliVali/AIDAM/tree/main/docs)

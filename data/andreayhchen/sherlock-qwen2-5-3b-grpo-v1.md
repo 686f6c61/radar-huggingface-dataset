@@ -18,7 +18,7 @@ Es relevante ahora como caso de estudio de *reward hacking*: el juez puntua la p
 | Longitud de contexto | 32.768 tokens segun la configuracion del modelo base Qwen2.5-3B-Instruct; no se documenta en la model card de este fine-tune |
 | Tipos de cuantizacion | No disponible. El repositorio solo publica pesos safetensors en precision nativa (BF16, ~6,2 GB). No hay GGUF, AWQ ni GPTQ oficiales |
 | Idiomas soportados | No disponible (no se declara ningun idioma en la model card; el entrenamiento se hace sobre problemas MATH, en ingles) |
-| Licencia | No disponible (no se especifica licencia en la ficha de HuggingFace) |
+| Licencia | No disponible (no se especifica licencia en la ficha de Hugging Face) |
 | Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
@@ -100,8 +100,8 @@ Frente a otros modelos instruct de ~3 B de parametros (por ejemplo, la familia L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-grpo-v1
+- Modelo en Hugging Face: https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-grpo-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Checkpoint SFT de la misma linea: https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-sft-v1
 - Codigo del entrenamiento y evaluacion: https://github.com/andreach3n/cs2881r-assignment1
-- Los resultados de la busqueda web proporcionados no contienen ningun enlace relevante a este modelo; la informacion se limita a la ficha de HuggingFace y a la model card del autor.
+- Los resultados de la busqueda web proporcionados no contienen ningun enlace relevante a este modelo; la informacion se limita a la ficha de Hugging Face y a la model card del autor.

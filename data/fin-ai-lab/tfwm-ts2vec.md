@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Ventana / contexto | Objetivo de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tfwm-ts2vec (este modelo) | ~22 M | No disponible | Contrastivo jerarquico TS2Vec sobre marcas de tiempo e instancias | `derived-market-data` | Pesos en HuggingFace, estado pre-release |
-| Otros codificadores de la coleccion TFWM | ~22 M (mismo backbone) | No disponible | Distintos objetivos; todos comparten backbone y 12 pasadas sobre los mismos seis meses | `derived-market-data` | Pesos en HuggingFace; TF-C usa ademas un `freq_backbone` |
+| tfwm-ts2vec (este modelo) | ~22 M | No disponible | Contrastivo jerarquico TS2Vec sobre marcas de tiempo e instancias | `derived-market-data` | Pesos en Hugging Face, estado pre-release |
+| Otros codificadores de la coleccion TFWM | ~22 M (mismo backbone) | No disponible | Distintos objetivos; todos comparten backbone y 12 pasadas sobre los mismos seis meses | `derived-market-data` | Pesos en Hugging Face; TF-C usa ademas un `freq_backbone` |
 | TS2Vec original (Yue et al., 2022) | Depende de la configuracion del usuario | Depende de la configuracion | Contrastivo jerarquico, implementacion de referencia sobre series temporales genericas | No disponible en esta ficha | Codigo y articulo publicos |
 | Modelos de series temporales genericos preentrenados (por ejemplo, variantes tipo transformer para forecasting) | No disponible | No disponible | Variable | No disponible | No disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-ts2vec
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-ts2vec
 - Coleccion TFWM Pre-Trained Encoders (los 18 codificadores): https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Directorio de datos `1Hz_mosaic_mnth/`: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth

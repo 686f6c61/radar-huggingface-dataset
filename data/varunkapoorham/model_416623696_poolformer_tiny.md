@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_416623696_poolformer_tiny`, publicado por el usuario varunkapoorham en HuggingFace, es una implementación a escala "tiny" de la arquitectura PoolFormer orientada a tareas de generación. La arquitectura PoolFormer fue propuesta originalmente por Sea AI Labs en el artículo "MetaFormer is Actually What You Need for Vision", donde se demuestra que el rendimiento de los transformers proviene principalmente de la arquitectura general MetaFormer y no del token mixer, sustituyéndolo por operaciones de pooling.
+El modelo `model_416623696_poolformer_tiny`, publicado por el usuario varunkapoorham en Hugging Face, es una implementación a escala "tiny" de la arquitectura PoolFormer orientada a tareas de generación. La arquitectura PoolFormer fue propuesta originalmente por Sea AI Labs en el artículo "MetaFormer is Actually What You Need for Vision", donde se demuestra que el rendimiento de los transformers proviene principalmente de la arquitectura general MetaFormer y no del token mixer, sustituyéndolo por operaciones de pooling.
 
 Esta variante concreta incorpora varias modificaciones sobre la arquitectura base: atención multi-query, estrategia de fusión Tucker, activación GELU, normalización BatchNorm e inicialización ortogonal. El entrenamiento se realizó con el optimizador Novograd y un programador de tasa de aprendizaje OneCycle. El repositorio contiene únicamente un archivo Python de definición del modelo, sin pesos entrenados ni artefactos adicionales, y no ha registrado descargas ni valoraciones desde su creación el 21 de agosto de 2026.
 

@@ -113,7 +113,7 @@ La comparativa se limita al linaje del propio modelo, ya que la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bespoke-Intelligence/Beam-1.0-501B-A23B-NVFP4-TP3-3x-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/Bespoke-Intelligence/Beam-1.0-501B-A23B-NVFP4-TP3-3x-DGX-Spark
 - Repositorio con instrucciones, padder, prueba de equivalencia y scripts: https://github.com/Bespoke-Legal-Intelligence/Beam-1.0-501B-A23B-NVFP4-TP3-3x-DGX-Spark
 - Modelo base cuantizado: https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4
 - Modelo base sin cuantizar: https://huggingface.co/reflection/Beam-1.0-501B-A23B

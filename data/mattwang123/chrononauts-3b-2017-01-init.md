@@ -78,11 +78,11 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 - Sesgos conocidos: no documentados en la información disponible; al entrenarse sobre Wikipedia y CC-News en inglés, es esperable un sesgo hacia fuentes y perspectiva anglófonas, aunque no se aportan mediciones.
 - El control de fuga depende de un juez LLM con una tasa de detección declarada de al menos 36/40 hechos plantados, por lo que puede quedar contaminación residual.
 - Sin descargas ni likes en el momento de la consulta: ecosistema y validación comunitaria inexistentes.
-- Repositorio con fecha de creación futura (2026-11-06) en los metadatos de HuggingFace, lo que conviene verificar antes de integrarlo en pipelines automatizados.
+- Repositorio con fecha de creación futura (2026-11-06) en los metadatos de Hugging Face, lo que conviene verificar antes de integrarlo en pipelines automatizados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2017-01-init
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2017-01-init
 - Repositorio hermano (SFT): https://huggingface.co/mattwang123/chrononauts-3b-2017-01-sft
 - Repositorio hermano (agente): https://huggingface.co/mattwang123/chrononauts-3b-2017-01-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

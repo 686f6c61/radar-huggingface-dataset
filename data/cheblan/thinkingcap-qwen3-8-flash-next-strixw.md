@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ThinkingCap-Qwen3.8-Flash-Next-strixw | 180B (125B MoE + 51B PLE + 4B MTP) | ~6B | 262.144 | Qwen Community License 1.0 | Solo formato `.strixw` para Strixite/AMD Strix Halo |
-| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next (base) | 180B | ~6B | no disponible en la información | Qwen Community License 1.0 | Pesos originales en HuggingFace |
+| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next (base) | 180B | ~6B | no disponible en la información | Qwen Community License 1.0 | Pesos originales en Hugging Face |
 | Qwen/Qwen3.8-Flash-Next (arquitectura subyacente) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cheblan/ThinkingCap-Qwen3.8-Flash-Next-strixw
+- Repositorio Hugging Face: https://huggingface.co/Cheblan/ThinkingCap-Qwen3.8-Flash-Next-strixw
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
 - Motor de inferencia Strixite: https://github.com/strix-infer/strixite
 - Licencia: https://huggingface.co/Cheblan/ThinkingCap-Qwen3.8-Flash-Next-strixw/blob/main/LICENSE

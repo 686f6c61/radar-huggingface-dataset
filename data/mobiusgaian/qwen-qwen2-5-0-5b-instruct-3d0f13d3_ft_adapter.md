@@ -4,7 +4,7 @@
 
 El repositorio `MobiusGaian/Qwen-Qwen2.5-0.5B-Instruct-3d0f13d3_FT_adapter` contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`, un transformer decoder-only de 0,5 mil millones de parámetros desarrollado por Alibaba Qwen. No se trata de un modelo completo, sino de un conjunto de pesos delta que deben cargarse junto al modelo base mediante la librería `peft` y `transformers`. El autor del adaptador es el usuario `MobiusGaian`, y el repositorio no incluye información sobre el dataset, los hiperparámetros ni el objetivo del ajuste fino.
 
-La relevancia de esta ficha es limitada: el adaptador no presenta model card sustantiva (el README es la plantilla por defecto de HuggingFace con todos los campos como `[More Information Needed]`), no tiene descargas ni likes, y el tamaño del repositorio es de 0,0 GB, lo que sugiere pesos de adaptador muy pequeños o un repositorio recién creado. Cualquier evaluación de su comportamiento real requiere descargar el adaptador y probarlo contra el modelo base para medir la deriva introducida.
+La relevancia de esta ficha es limitada: el adaptador no presenta model card sustantiva (el README es la plantilla por defecto de Hugging Face con todos los campos como `[More Information Needed]`), no tiene descargas ni likes, y el tamaño del repositorio es de 0,0 GB, lo que sugiere pesos de adaptador muy pequeños o un repositorio recién creado. Cualquier evaluación de su comportamiento real requiere descargar el adaptador y probarlo contra el modelo base para medir la deriva introducida.
 
 El interés técnico principal reside en el modelo base subyacente, Qwen2.5-0.5B-Instruct, que forma parte de la familia Qwen2.5 (arquitectura transformer con atención de múltiples cabezas, tokenizador BPE multilingüe y ventana de contexto de 32 768 tokens en la versión Instruct). El adaptador hereda las capacidades y limitaciones de ese base, condicionadas por el ajuste fino del que no se documenta nada.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MobiusGaian/Qwen-Qwen2.5-0.5B-Instruct-3d0f13d3_FT_adapter | Adaptador sobre 0,5B | No disponible (base: 32k) | No disponible | HuggingFace, 0 descargas | Sin model card sustantiva |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32 768 tokens | Apache 2.0 (según Qwen) | HuggingFace, ampliamente usado | Modelo base oficial, documentado y evaluado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens | Apache 2.0 (según Qwen) | HuggingFace | Mayor capacidad, mismo contexto |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128 000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa de tamaño similar con contexto mayor |
+| MobiusGaian/Qwen-Qwen2.5-0.5B-Instruct-3d0f13d3_FT_adapter | Adaptador sobre 0,5B | No disponible (base: 32k) | No disponible | Hugging Face, 0 descargas | Sin model card sustantiva |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32 768 tokens | Apache 2.0 (según Qwen) | Hugging Face, ampliamente usado | Modelo base oficial, documentado y evaluado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens | Apache 2.0 (según Qwen) | Hugging Face | Mayor capacidad, mismo contexto |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128 000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño similar con contexto mayor |
 
 ## Limitaciones y advertencias
 

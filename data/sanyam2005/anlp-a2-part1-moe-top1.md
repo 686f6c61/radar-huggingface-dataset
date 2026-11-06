@@ -107,7 +107,7 @@ Los tres primeros son checkpoints equivalentes generados por distintos estudiant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanyam2005/anlp-a2-part1-moe-top1
+- Modelo en Hugging Face: https://huggingface.co/sanyam2005/anlp-a2-part1-moe-top1
 - Perfil del autor: https://huggingface.co/sanyam2005
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Checkpoint hermano (misma asignatura): https://huggingface.co/Rakshitagg06/anlp-a2-part1-moe-top1

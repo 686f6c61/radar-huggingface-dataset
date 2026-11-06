@@ -84,7 +84,7 @@ Los datos de las alternativas proceden de sus fichas públicas y no se han verif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wldn0202/etri_recon
+- Modelo en Hugging Face: https://huggingface.co/wldn0202/etri_recon
 - Licencia FLUX.1-dev referenciada por el autor: https://huggingface.co/wldn0202/etri_recon/blob/main/licenses/texture/FLUX.1-dev-LICENSE-rendered.txt
 - Aviso de atribución de textura (ruta en el repositorio): `licenses/texture/FLUX-NOTICE.txt`
 - Licencia original de FLUX.1-dev (Black Forest Labs): https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/3de623fc3c33e44ffbe2bad470d0f45bccf2eb21/LICENSE.md

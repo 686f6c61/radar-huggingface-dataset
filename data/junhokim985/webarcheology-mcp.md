@@ -2,11 +2,11 @@
 
 ## Resumen
 
-WebArcheology-MCP **no es un modelo de IA**: es un servidor del Modelo de Contexto de Protocolo (MCP) escrito en Node.js, publicado por el usuario `junhokim985` en HuggingFace bajo el identificador `junhokim985/webarcheology-mcp`. El repositorio no contiene pesos, tokenizador ni ficheros de configuración de inferencia; contiene código (`.mjs`) que se ejecuta como proceso local y se expone a clientes MCP como Claude Desktop, Cursor o Antigravity. Su función es la de servir herramientas a un LLM que ya existe en el cliente, no la de generar texto por sí mismo.
+WebArcheology-MCP **no es un modelo de IA**: es un servidor del Modelo de Contexto de Protocolo (MCP) escrito en Node.js, publicado por el usuario `junhokim985` en Hugging Face bajo el identificador `junhokim985/webarcheology-mcp`. El repositorio no contiene pesos, tokenizador ni ficheros de configuración de inferencia; contiene código (`.mjs`) que se ejecuta como proceso local y se expone a clientes MCP como Claude Desktop, Cursor o Antigravity. Su función es la de servir herramientas a un LLM que ya existe en el cliente, no la de generar texto por sí mismo.
 
 El artefacto implementa cinco subsistemas orientados al análisis y la reconstrucción de aplicaciones web modernas: reconocimiento de infraestructura (CDN, WAF, frameworks de hidratación), de-compilación de bundles y extracción de sourcemaps, clonado offline con inyección de un ServiceWorker que simula APIs, extracción de tokens de diseño y componentes React, y síntesis de catálogos OpenAPI 3.0 a partir de los endpoints descubiertos.
 
-Su relevancia actual deriva del auge del protocolo MCP, promovido por Anthropic desde noviembre de 2024 como estándar abierto para conectar agentes con herramientas externas. Aun así, la ficha debe leerse con cautela: el repositorio tiene 0 descargas y 0 «likes», no declara licencia en los metadatos de HuggingFace (solo un badge MIT en la model card) y las fechas de creación y actualización son incoherentes entre sí.
+Su relevancia actual deriva del auge del protocolo MCP, promovido por Anthropic desde noviembre de 2024 como estándar abierto para conectar agentes con herramientas externas. Aun así, la ficha debe leerse con cautela: el repositorio tiene 0 descargas y 0 «likes», no declara licencia en los metadatos de Hugging Face (solo un badge MIT en la model card) y las fechas de creación y actualización son incoherentes entre sí.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual deriva del auge del protocolo MCP, promovido por Anthropic 
 | Longitud de contexto | no disponible (no aplica; la ventana la fija el cliente LLM que invoca las herramientas) |
 | Tipos de cuantizacion | no disponible (no aplica) |
 | Idiomas soportados | no disponible en los metadatos (la model card esta redactada en ingles; el codigo no declara localizacion) |
-| Licencia | MIT segun el badge de la model card; el campo de licencia de HuggingFace figura como no disponible |
+| Licencia | MIT segun el badge de la model card; el campo de licencia de Hugging Face figura como no disponible |
 | Formato de pesos | no disponible (no aplica; se distribuye como codigo fuente `.mjs`, no como safetensors/GGUF) |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ La comparación se establece con herramientas de archivado y clonado web, no con
 
 | Herramienta | Enfoque | Alcance | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WebArcheology-MCP | Forense + de-compilador de sourcemaps + espejo offline con ServiceWorker + extracción React/Tailwind | Multipágina, APIs y componentes | 5/5 suites propias; sin cifras | MIT (badge; campo HF vacío) | HuggingFace, 0 descargas; repositorio público no enlazado |
+| WebArcheology-MCP | Forense + de-compilador de sourcemaps + espejo offline con ServiceWorker + extracción React/Tailwind | Multipágina, APIs y componentes | 5/5 suites propias; sin cifras | MIT (badge; campo HF vacío) | Hugging Face, 0 descargas; repositorio público no enlazado |
 | HTTrack / Cyotek WebCopy | Rastreador HTML estático | Sitios estáticos; falla en SPA con hidratación y WAF | No declarado | GPL / propietaria según variante | Ampliamente distribuido |
 | SingleFile | Inline de una página en un único HTML | Una sola página; sin APIs ni multi-página | No declarado | Declarada en su repositorio | Extensión de navegador y CLI |
 | ArchiveBox / Browsertrix | Contenedores WARC/WACZ | Archivo de biblioteca a largo plazo | No declarado | Código abierto | Proyectos consolidados |
@@ -98,13 +98,13 @@ La comparación se establece con herramientas de archivado y clonado web, no con
 - Naturaleza heurística: la detección de CDN, frameworks y endpoints se basa en huellas y patrones, por lo que son esperables falsos positivos y negativos, especialmente en sitios ofuscados o con cabeceras alteradas. No se publican tasas de error.
 - Ausencia de validación externa: 0 descargas, 0 «likes», sin repositorio público enlazado (la configuración de ejemplo apunta a una ruta local de Windows, `c:/github_iko098567/webarcheology-mcp/src/index.mjs`), sin paquete npm y sin CI verificable. La salida de pruebas es un volcado de texto aportado por el autor.
 - Incoherencia de metadatos: la fecha de creación (2026-10-19) es posterior a la de actualización (2026-10-19T20:11:26Z, once minutos antes), lo que sugiere un repositorio recién creado o metadatos inconsistentes.
-- Licencia ambigua: el badge indica MIT, pero el campo de licencia de HuggingFace está vacío y no se aporta fichero `LICENSE`; para uso comercial conviene confirmarlo con el autor.
+- Licencia ambigua: el badge indica MIT, pero el campo de licencia de Hugging Face está vacío y no se aporta fichero `LICENSE`; para uso comercial conviene confirmarlo con el autor.
 - Idiomas y localización no declarados; la documentación está solo en inglés.
 - Sin cifras de rendimiento: no hay datos de latencia, memoria, escalado con sitios grandes ni límites conocidos (número de chunks, tamaño máximo de bundle, profundidad de rastreo).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junhokim985/webarcheology-mcp
+- Hugging Face: https://huggingface.co/junhokim985/webarcheology-mcp
 - Repositorio del autor: no disponible (la model card solo cita una ruta local, sin URL pública)
 - Model Context Protocol, Wikipedia: https://en.wikipedia.org/wiki/Model_Context_Protocol
 - Guía de arquitectura MCP 2026 (neuralcoretech): https://neuralcoretech.com/agentic-ai-model-context-protocol-mcp-architecture-2026/

@@ -4,7 +4,7 @@
 
 `Wilflor2001/hw2-prompt-engineering` no es un modelo de lenguaje entrenado, sino un repositorio de apuntes de investigacion sobre ingenieria de prompts. La propia model card lo declara explicitamente: el artefacto principal es `review.md`, un documento que describe el alcance de una pregunta de investigacion, los factores de confusion previsibles, una propuesta de comparacion con lineas base emparejadas y un conjunto de comprobaciones de reproducibilidad. El autor indica que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales y que no existe checkpoint entrenado, codigo liberado ni mejoras de benchmark declaradas.
 
-El repositorio esta etiquetado con `safetensors` y `transformer`, y los metadatos de HuggingFace registran 49.600 parametros totales, un volumen que no corresponde a ningun modelo generativo utilizable (un transformer de ese tamano tendria del orden de decenas de miles de pesos, compatible como mucho con un componente auxiliar, no con un LLM). El tamano del repositorio es de 0,0 GB y los unicos ficheros documentados son `review.md` y `README.md`. La licencia es MIT y el pipeline no esta definido.
+El repositorio esta etiquetado con `safetensors` y `transformer`, y los metadatos de Hugging Face registran 49.600 parametros totales, un volumen que no corresponde a ningun modelo generativo utilizable (un transformer de ese tamano tendria del orden de decenas de miles de pesos, compatible como mucho con un componente auxiliar, no con un LLM). El tamano del repositorio es de 0,0 GB y los unicos ficheros documentados son `review.md` y `README.md`. La licencia es MIT y el pipeline no esta definido.
 
 Su relevancia es documental, no tecnica: sirve como ejemplo de pre-registro de experimentos de prompting y como material de partida para verificar afirmaciones sobre técnicas de instruccion. Cualquier uso que espere inferencia de texto, generacion de codigo o capacidades conversacionales fracasara, porque no hay pesos funcionales ni configuracion de modelo publicada.
 
@@ -20,7 +20,7 @@ Su relevancia es documental, no tecnica: sirve como ejemplo de pre-registro de e
 | Idiomas soportados | No disponible; el README y el artefacto documentado estan redactados en ingles |
 | Licencia | MIT |
 | Formato de pesos | `safetensors` declarado en los tags; los artefactos documentados son `review.md` y `README.md` |
-| ID en HuggingFace | Wilflor2001/hw2-prompt-engineering |
+| ID en Hugging Face | Wilflor2001/hw2-prompt-engineering |
 | Pipeline | No disponible |
 | Descargas / likes | 0 descargas, 1 like |
 | Tamano del repositorio | 0,0 GB |
@@ -72,7 +72,7 @@ No existe un modelo comparable porque el repositorio no contiene un modelo. A mo
 
 | Recurso | Tipo de artefacto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wilflor2001/hw2-prompt-engineering | Notas de investigacion en Markdown | 49.600 declarados en safetensors (no verificables como modelo) | No disponible | MIT | Repositorio en HuggingFace, 0 descargas |
+| Wilflor2001/hw2-prompt-engineering | Notas de investigacion en Markdown | 49.600 declarados en safetensors (no verificables como modelo) | No disponible | MIT | Repositorio en Hugging Face, 0 descargas |
 | arXiv:2401.14423 | Articulo sobre ingenieria de prompts en modelos generativos | No aplica | No aplica | No disponible en la informacion | PDF abierto en arXiv |
 | arXiv:2402.07927 | Survey sobre tecnicas de prompting para LLM y VLM | No aplica | No aplica | No disponible en la informacion | PDF abierto en arXiv |
 | Guia de IBM sobre prompt engineering | Guia practica corporativa | No aplica | No aplica | No disponible en la informacion | Web |
@@ -92,7 +92,7 @@ No existe un modelo comparable porque el repositorio no contiene un modelo. A mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wilflor2001/hw2-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/Wilflor2001/hw2-prompt-engineering
 - Prompt Engineering Generative AI & LLM Models Fundamentals (Coursera): https://www.coursera.org/learn/prompt-engineering-generative-ai--llm-models-fundamentals
 - arXiv:2401.14423, articulo sobre ingenieria de prompts en modelos generativos: https://arxiv.org/pdf/2401.14423
 - arXiv:2402.07927, survey sobre tecnicas de prompting: https://arxiv.org/pdf/2402.07927

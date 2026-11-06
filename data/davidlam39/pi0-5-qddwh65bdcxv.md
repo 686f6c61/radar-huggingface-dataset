@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi0.5-QDdwh65bDcxv es un ajuste fino completo (full fine-tune) del modelo vision-language-action (VLA) π0.5, publicado en HuggingFace por el usuario davidlam39. El checkpoint parte de Fisher-Wang/pi05-axis-v0.2-all30-74p67 (revisión 521a0741c01ee7908b5794bb2ae6933d3dc04745) y se ha entrenado sobre renders de replay propios de AXIS v2.0 y rollouts retargeteados, segun indica la propia model card. El autor especifica que no ha utilizado pesos de otros participantes ("No other miner's weights"), lo que sugiere un contexto de competición o leaderboard interno.
+pi0.5-QDdwh65bDcxv es un ajuste fino completo (full fine-tune) del modelo vision-language-action (VLA) π0.5, publicado en Hugging Face por el usuario davidlam39. El checkpoint parte de Fisher-Wang/pi05-axis-v0.2-all30-74p67 (revisión 521a0741c01ee7908b5794bb2ae6933d3dc04745) y se ha entrenado sobre renders de replay propios de AXIS v2.0 y rollouts retargeteados, segun indica la propia model card. El autor especifica que no ha utilizado pesos de otros participantes ("No other miner's weights"), lo que sugiere un contexto de competición o leaderboard interno.
 
 π0.5 es un modelo VLA desarrollado por Physical Intelligence (paper arXiv 2504.16054) que parte de π0 y se entrena con co-training sobre fuentes heterogéneas de datos: demostraciones de robots diversos, datos web y subtareas semánticas. Su objetivo es la generalización en entornos no vistos para manipulación móvil de largo horizonte, un problema abierto en robótica de propósito general.
 
@@ -76,11 +76,11 @@ Este valor procede de la model card y de un protocolo de evaluación propio de A
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidlam39/pi0.5-QDdwh65bDcxv | Este checkpoint | no disponible | no disponible | other (gemma) | HuggingFace, 0 descargas |
-| Fisher-Wang/pi05-axis-v0.2-all30-74p67 | Modelo padre del fine-tune | no disponible | no disponible | no disponible | HuggingFace |
+| davidlam39/pi0.5-QDdwh65bDcxv | Este checkpoint | no disponible | no disponible | other (gemma) | Hugging Face, 0 descargas |
+| Fisher-Wang/pi05-axis-v0.2-all30-74p67 | Modelo padre del fine-tune | no disponible | no disponible | no disponible | Hugging Face |
 | π0.5 (Physical Intelligence) | Modelo base de la familia | no disponible | no disponible | no disponible | Paper arXiv 2504.16054; despliegue via Qualcomm AI Hub |
 | π0 | Predecesor de π0.5 | no disponible | no disponible | no disponible | Paper y repositorio openpi |
-| davidlam39/pi0.5-pR8yKTd26Ynx | Checkpoint del mismo autor | no disponible | no disponible | no disponible | HuggingFace |
+| davidlam39/pi0.5-pR8yKTd26Ynx | Checkpoint del mismo autor | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de parámetros, contexto ni resultados de benchmarks de las alternativas en la información consultada, por lo que la comparación queda limitada al origen, la licencia y la forma de distribución.
 
@@ -99,7 +99,7 @@ No se dispone de parámetros, contexto ni resultados de benchmarks de las altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidlam39/pi0.5-QDdwh65bDcxv
+- Modelo en Hugging Face: https://huggingface.co/davidlam39/pi0.5-QDdwh65bDcxv
 - Modelo base: https://huggingface.co/Fisher-Wang/pi05-axis-v0.2-all30-74p67
 - Otro checkpoint del mismo autor: https://huggingface.co/davidlam39/pi0.5-pR8yKTd26Ynx
 - Paper de π0.5 (arXiv): https://arxiv.org/abs/2504.16054

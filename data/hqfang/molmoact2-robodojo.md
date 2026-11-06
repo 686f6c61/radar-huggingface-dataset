@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa con modelos similares. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hqfang/MolmoAct2-RoboDojo
+- Modelo en Hugging Face: https://huggingface.co/hqfang/MolmoAct2-RoboDojo
 - Repositorio oficial de MolmoAct2: https://github.com/allenai/molmoact2
 - Paper arXiv: https://arxiv.org/abs/2605.02881
 - Blog de AllenAI sobre MolmoAct2: https://allenai.org/blog/molmoact2

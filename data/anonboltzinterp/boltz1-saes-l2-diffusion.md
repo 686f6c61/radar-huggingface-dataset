@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en el contexto de SAEs p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anonboltzinterp/Boltz1-SAEs-L2-Diffusion
+- Repositorio en Hugging Face: https://huggingface.co/anonboltzinterp/Boltz1-SAEs-L2-Diffusion
 - Repositorio espejo (evolve-away): https://huggingface.co/evolve-away/Boltz1-SAEs-L2-Diffusion
 - Colección de SAEs de Boltz: https://huggingface.co/collections/evolve-away/boltz-saes
 - Repositorio oficial de Boltz-1 en GitHub: https://github.com/rles001/boltz1

@@ -88,10 +88,10 @@ Nota: los datos de rendimiento de las alternativas no se han verificado y no se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abu-Dju/m2m100-12B-last-ckpt
+- Hugging Face: https://huggingface.co/Abu-Dju/m2m100-12B-last-ckpt
 - Articulo original: https://arxiv.org/abs/2010.11125
 - Repositorio de referencia en fairseq: https://github.com/pytorch/fairseq/tree/master/examples/m2m_100
 - Checkpoint original de Facebook referenciado en la model card: https://huggingface.co/facebook/m2m100-12B-last-ckpt
-- Otros modelos de la familia M2M-100 en HuggingFace: https://huggingface.co/models?filter=m2m_100
+- Otros modelos de la familia M2M-100 en Hugging Face: https://huggingface.co/models?filter=m2m_100
 
 Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre el modelo; los unicos enlaces utiles son los que figuran en la propia model card.

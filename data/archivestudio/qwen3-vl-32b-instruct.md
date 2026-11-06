@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-VL-32B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-VL-32B-Instruct
 - Repositorio oficial referenciado en el código de ejemplo: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Chat de Qwen: https://chat.qwenlm.ai/
 - Qwen3 Technical Report (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
@@ -102,4 +102,4 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 - Transformers (Hugging Face), necesario en versión de desarrollo: https://github.com/huggingface/transformers
 - Diagrama de arquitectura citado en la model card: https://qianwen-res.oss-accelerate.aliyuncs.com/Qwen3-VL/qwen3vl_arc.jpg
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

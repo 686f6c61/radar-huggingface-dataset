@@ -6,7 +6,7 @@ El modelo `learn_hf_food_not_food_text_classifier_distilbert_base_uncased` es un
 
 Este modelo resulta relevante como ejemplo práctico de fine-tuning de un transformer encoder para una tarea sencilla de NLP. Su licencia Apache 2.0 permite uso comercial sin restricciones, y su tamaño reducido lo hace viable para despliegues en entornos con recursos limitados, como CPUs o GPUs de gama baja. Sin embargo, al ser un modelo de demostración con pocas descargas, su rendimiento en producción no está garantizado.
 
-La ventana de contexto heredada de DistilBERT es de 512 tokens, suficiente para la mayoría de textos cortos. El modelo está disponible en formato safetensors y es compatible con la librería Transformers de HuggingFace, así como con herramientas de inferencia como text-embeddings-inference.
+La ventana de contexto heredada de DistilBERT es de 512 tokens, suficiente para la mayoría de textos cortos. El modelo está disponible en formato safetensors y es compatible con la librería Transformers de Hugging Face, así como con herramientas de inferencia como text-embeddings-inference.
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- [HuggingFace - Kristo4/learn_hf_food_not_food_text_classifier_distilbert_base_uncased](https://huggingface.co/Kristo4/learn_hf_food_not_food_text_classifier_distilbert_base_uncased)
-- [Modelo similar en HuggingFace - andress02](https://huggingface.co/andress02/learn_hf_food_not_food_text_classifier-distilbert-base-uncased)
+- [Hugging Face - Kristo4/learn_hf_food_not_food_text_classifier_distilbert_base_uncased](https://huggingface.co/Kristo4/learn_hf_food_not_food_text_classifier_distilbert_base_uncased)
+- [Modelo similar en Hugging Face - andress02](https://huggingface.co/andress02/learn_hf_food_not_food_text_classifier-distilbert-base-uncased)
 - [Ficha en AIBase](https://model.aibase.com/models/details/1915748764360531970)
 - [Ficha alternativa en AIBase](https://model.aibase.com/models/details/1924735252866273280)
 - [Proyecto GitHub relacionado - AnubhavKarki](https://github.com/AnubhavKarki/hf-food-not-food-classification)

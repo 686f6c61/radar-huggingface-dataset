@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LANG-10M es un detector de idioma publicado en HuggingFace por el usuario Rafaelvieira432 bajo licencia Apache 2.0. Se trata de un clasificador de texto basado en FastText (arquitectura de tipo *EmbeddingBag* sobre bolsa de n-gramas con *hashing* de buckets), no de un modelo generativo: recibe una cadena de texto y devuelve la etiqueta de idioma entre 69 posibles. Su propuesta de valor es la latencia: el autor declara inferencia inferior a 2 ms en CPU, con pesos en FP16 de aproximadamente 73 MB.
+LANG-10M es un detector de idioma publicado en Hugging Face por el usuario Rafaelvieira432 bajo licencia Apache 2.0. Se trata de un clasificador de texto basado en FastText (arquitectura de tipo *EmbeddingBag* sobre bolsa de n-gramas con *hashing* de buckets), no de un modelo generativo: recibe una cadena de texto y devuelve la etiqueta de idioma entre 69 posibles. Su propuesta de valor es la latencia: el autor declara inferencia inferior a 2 ms en CPU, con pesos en FP16 de aproximadamente 73 MB.
 
 El modelo se distribuye a traves de la libreria `fasttext` e incluye un modulo propio `infer.py` con una clase `LangDetector`, lo que sugiere un envoltorio de inferencia especifico en lugar de la API estandar de fastText. La configuracion declarada es de 300.000 buckets y dimension 128, un compromiso habitual para mantener el modelo pequeno y rapido a costa de colisiones en el *hashing* de n-gramas.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LANG-10M | ~38,4 M estimados (300.000 buckets x 128) | 69 | No aplica | Apache 2.0 | HuggingFace, 0 descargas |
+| LANG-10M | ~38,4 M estimados (300.000 buckets x 128) | 69 | No aplica | Apache 2.0 | Hugging Face, 0 descargas |
 | fastText lid.176 (Facebook) | No disponible en esta ficha | 176 | No aplica | No verificada en esta ficha | Ampliamente distribuido; referencia de facto en deteccion de idioma |
-| GlotLID (CIT) | No disponible en esta ficha | Cobertura amplia (cientos de idiomas de bajos recursos) | No aplica | No verificada en esta ficha | HuggingFace |
+| GlotLID (CIT) | No disponible en esta ficha | Cobertura amplia (cientos de idiomas de bajos recursos) | No aplica | No verificada en esta ficha | Hugging Face |
 | CLD3 (Google) | No disponible en esta ficha | ~100 | No aplica | No verificada en esta ficha | Repositorio abierto |
 
 La comparacion cuantitativa de precision no es posible: LANG-10M no publica evaluacion. Frente a fastText lid.176, la diferencia principal es la cobertura (69 frente a 176 idiomas) y la licencia Apache 2.0, mas permisiva para integracion comercial que otras alternativas si estas se distribuyen con licencias copyleft. Frente a GlotLID, el interes esta en la latencia y el tamano, no en la cobertura de lenguas de bajos recursos.
@@ -90,7 +90,7 @@ La comparacion cuantitativa de precision no es posible: LANG-10M no publica eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rafaelvieira432/LANG-10M
-- Modulo de inferencia `infer.py`: incluido en el repositorio de HuggingFace (no se dispone de enlace directo verificado)
+- Modelo en Hugging Face: https://huggingface.co/Rafaelvieira432/LANG-10M
+- Modulo de inferencia `infer.py`: incluido en el repositorio de Hugging Face (no se dispone de enlace directo verificado)
 - Paper, blog o demo: no disponibles en la informacion proporcionada
 - Documentacion de la libreria fastText: no incluida en la informacion proporcionada

@@ -4,7 +4,7 @@
 
 El modelo `huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_r64` es un adaptador LoRA (PEFT) publicado por el usuario `huggingtime12`, entrenado sobre el modelo base `Qwen/Qwen3-1.7B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que deben cargarse junto al modelo base para poder ejecutarse. El repositorio ocupa 3,1 GB y se distribuye en formato `safetensors`, con la librería `peft` (versión 0.20.0) y las etiquetas `grpo`, `lora`, `transformers` y `trl`.
 
-El identificador del modelo sugiere, sin confirmación en la model card, un ajuste fino orientado a traducción automática sobre el corpus PhoMT, entrenado con GRPO (Group Relative Policy Optimization) y con BLEU como señal de recompensa, con un rango de LoRA de 64. La model card es la plantilla por defecto de HuggingFace y no aporta ningún dato adicional: no se declaran autoría, licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Tampoco se ha publicado ningún benchmark y el repositorio acumula 0 descargas y 0 «likes», por lo que no existe validación comunitaria.
+El identificador del modelo sugiere, sin confirmación en la model card, un ajuste fino orientado a traducción automática sobre el corpus PhoMT, entrenado con GRPO (Group Relative Policy Optimization) y con BLEU como señal de recompensa, con un rango de LoRA de 64. La model card es la plantilla por defecto de Hugging Face y no aporta ningún dato adicional: no se declaran autoría, licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Tampoco se ha publicado ningún benchmark y el repositorio acumula 0 descargas y 0 «likes», por lo que no existe validación comunitaria.
 
 Su relevancia es, por tanto, limitada y fundamentalmente experimental: sirve como ejemplo reproducible de ajuste con RL sobre un modelo pequeño (1.700 millones de parámetros) y como caso de estudio de entrenamiento con recompensas automáticas de traducción. Cualquier uso en producción debería ir precedido de una evaluación propia, dado que no hay información verificable sobre su calidad ni sobre las condiciones de licencia del adaptador.
 
@@ -79,17 +79,17 @@ Los datos de los modelos alternativos provienen de su documentacion publica y no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3_1.7_PhoMT_GRPO_BLEU_r64 | 1,7B (base) + adaptador LoRA r=64 | No disponible (base: 32.768) | No disponible para el adaptador | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7B | 32.768 | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,23B | 128.000 | Licencia comunitaria de Llama 3.2 | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | HuggingFace |
-| Gemma-3-1B-IT | 1B | 32.768 | Terminos de uso de Gemma | HuggingFace |
+| Qwen3_1.7_PhoMT_GRPO_BLEU_r64 | 1,7B (base) + adaptador LoRA r=64 | No disponible (base: 32.768) | No disponible para el adaptador | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7B | 32.768 | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,23B | 128.000 | Licencia comunitaria de Llama 3.2 | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | Hugging Face |
+| Gemma-3-1B-IT | 1B | 32.768 | Terminos de uso de Gemma | Hugging Face |
 
 Ninguna de estas alternativas esta especializada en traduccion chino-vietnamita, por lo que la comparacion solo es valida en terminos de tamano, contexto y licencia, no de calidad en la tarea.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace: no declara autoría real, datos de entrenamiento, hiperparametros ni evaluacion. La trazabilidad del modelo es nula.
+- La model card es la plantilla por defecto de Hugging Face: no declara autoría real, datos de entrenamiento, hiperparametros ni evaluacion. La trazabilidad del modelo es nula.
 - La licencia del adaptador no esta especificada. Aunque el modelo base es Apache 2.0, la ausencia de licencia en el repositorio del adaptador impide confirmar que su uso comercial este permitido. Conviene contactar con el autor antes de utilizarlo en produccion.
 - El repositorio tiene 0 descargas y 0 «likes»: no hay evidencia de que el modelo haya sido validado por terceros.
 - La fecha de creacion registrada (16 de septiembre de 2026) es posterior a la fecha actual, lo que indica metadatos no revisados y refuerza la cautela sobre el resto de la informacion.
@@ -101,7 +101,7 @@ Ninguna de estas alternativas esta especializada en traduccion chino-vietnamita,
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_r64
+- Adaptador en Hugging Face: https://huggingface.co/huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_r64
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Blog de la familia Qwen3: https://qwenlm.github.io/blog/qwen3/

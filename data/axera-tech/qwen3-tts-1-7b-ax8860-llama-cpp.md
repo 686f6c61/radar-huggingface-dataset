@@ -34,7 +34,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 - Generación de audio de hasta 2000 tramas (aproximadamente 160 segundos) por invocación.
 - Control de idioma de salida mediante argumento explícito en el script de ejecución.
 - Integración con llama.cpp: admite `-ngl 99 -c 4096` y top-k hasta 50 al invocar el binario directamente.
-- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible` en HuggingFace).
+- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible` en Hugging Face).
 - No se documentan capacidades de tool calling, agentes, visión ni audio de entrada más allá de la referencia de voz para clonación.
 
 ## Casos de uso
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3-TTS-1.7B-AX8860-llama.cpp
+- Repositorio en Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-TTS-1.7B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - llama.cpp con soporte Axera (rama `feat/qwen3-whole`, commit `b536fe5`): https://github.com/ZHEQIUSHUI/llama.cpp
 - Kernels Axera DSL (rama `main`, commit `60dd25b`): https://github.com/ZHEQIUSHUI/ax-dsl-kernels

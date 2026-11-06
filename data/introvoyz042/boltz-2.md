@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Afinidad de union | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Boltz-2 | Co-folding biomolecular | Si, conjunta con estructura | no disponible | MIT | Abierta (pesos en HuggingFace) |
+| Boltz-2 | Co-folding biomolecular | Si, conjunta con estructura | no disponible | MIT | Abierta (pesos en Hugging Face) |
 | Boltz-1 | Prediccion estructural | No descrita en la informacion disponible | no disponible | Abierta (primer modelo totalmente open source en acercarse a AlphaFold3) | Abierta |
 | AlphaFold3 | Prediccion estructural | No descrita como funcion principal | no disponible | No totalmente abierta en su distribucion original | Pesos con restricciones de uso |
 
@@ -84,7 +84,7 @@ Los datos de parametros, contexto y rendimiento de los modelos comparados no est
 
 ## Enlaces
 
-- Repositorio duplicado en HuggingFace: https://huggingface.co/introvoyz042/boltz-2
+- Repositorio duplicado en Hugging Face: https://huggingface.co/introvoyz042/boltz-2
 - Repositorio original (referenciado como origen del duplicado): https://huggingface.co/boltz-community/boltz-2
 - Pagina oficial del modelo: https://boltz.com/boltz2
 - Repositorio GitHub oficial de Boltz: https://github.com/jwohlwend/boltz

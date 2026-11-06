@@ -86,10 +86,10 @@ Dentro de la propia familia `eeg-fm-masking`, las variantes comparten arquitectu
 
 | Modelo | Parametros | Enmascaramiento | Marco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_jepa_rall_L4 (este) | 12,69 M | r = all, L = 4, pct_unmasked = 0,45 | JEPA | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | 12,69 M | r = 9 cm, L = 2 | JEPA | CC-BY-4.0 | HuggingFace (recomendado por el paper) |
-| eeg-fm-masking_mae_r9cm_L2 | 12,69 M | r = 9 cm, L = 2 | MAE | CC-BY-4.0 | HuggingFace (recomendado por el paper) |
-| Resto de la coleccion (58 encoders en total) | 12,69 M | 5 radios espaciales × 6 longitudes temporales | MAE o JEPA | CC-BY-4.0 | HuggingFace |
+| eeg-fm-masking_jepa_rall_L4 (este) | 12,69 M | r = all, L = 4, pct_unmasked = 0,45 | JEPA | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | 12,69 M | r = 9 cm, L = 2 | JEPA | CC-BY-4.0 | Hugging Face (recomendado por el paper) |
+| eeg-fm-masking_mae_r9cm_L2 | 12,69 M | r = 9 cm, L = 2 | MAE | CC-BY-4.0 | Hugging Face (recomendado por el paper) |
+| Resto de la coleccion (58 encoders en total) | 12,69 M | 5 radios espaciales × 6 longitudes temporales | MAE o JEPA | CC-BY-4.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de datos comparativos frente a otros foundation models de EEG externos (por ejemplo LaBraM, BIOT o EEGPT): parametros, contexto y rendimiento de esas alternativas figuran como no disponibles, y no se han inventado cifras.
 
@@ -107,7 +107,7 @@ No se dispone en la informacion proporcionada de datos comparativos frente a otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L4
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L4
 - Coleccion completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Variante recomendada MAE `r9cm_L2`: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Variante recomendada JEPA `r9cm_L2`: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2

@@ -6,7 +6,7 @@ Qwen-Qwen3.8-27B-GGUF-IQ2_S es una cuantizacion en formato GGUF, variante IQ2_S 
 
 El problema que aborda es el habitual de las cuantizaciones agresivas de 2 bits: acercar modelos de tamano medio-alto a hardware asequible (RTX 3060/4070, 32 GB de RAM) reduciendo el peso a menos de la mitad, a cambio de una perdida de fidelidad respecto al modelo original que el autor no cuantifica. El modelo se orienta a generacion de texto, razonamiento logico, especializacion de dominio y refactorizacion de codigo, y solo declara soporte para ingles e italiano.
 
-La ficha debe leerse con cautela. El identificador del modelo base no sigue la nomenclatura publicada de la familia Qwen3, la licencia figura como "other" en los metadatos de HuggingFace mientras el README muestra una insignia Apache-2.0, y todos los resultados de benchmarks son autoevaluaciones del publicador sobre recortes de 100 preguntas, sin validacion independiente.
+La ficha debe leerse con cautela. El identificador del modelo base no sigue la nomenclatura publicada de la familia Qwen3, la licencia figura como "other" en los metadatos de Hugging Face mientras el README muestra una insignia Apache-2.0, y todos los resultados de benchmarks son autoevaluaciones del publicador sobre recortes de 100 preguntas, sin validacion independiente.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La ficha debe leerse con cautela. El identificador del modelo base no sigue la n
 | Longitud de contexto | 262.144 tokens (declarados) |
 | Tipos de cuantizacion | GGUF IQ2_S (generada con imatrix); no se listan otras variantes en la informacion disponible |
 | Idiomas soportados | ingles (en) e italiano (it) |
-| Licencia | "other" en los metadatos de HuggingFace; el README muestra la insignia Apache-2.0 (contradiccion sin resolver) |
+| Licencia | "other" en los metadatos de Hugging Face; el README muestra la insignia Apache-2.0 (contradiccion sin resolver) |
 | Formato de pesos | GGUF |
 | Modelo base | Qwen/Qwen3.8-27B |
 | Tamano del repositorio | 11,5 GB |
@@ -105,14 +105,14 @@ No se dispone de datos de rendimiento publicados por terceros para el modelo bas
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ2_S | ~27,3B | 262.144 tokens (declarados) | GGUF IQ2_S | "other" (contradictoria en el README) | HuggingFace, 887 descargas |
+| sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ2_S | ~27,3B | 262.144 tokens (declarados) | GGUF IQ2_S | "other" (contradictoria en el README) | Hugging Face, 887 descargas |
 | Qwen/Qwen3.8-27B (modelo base) | no disponible | no disponible | pesos originales | no disponible | referenciado como `base_model`, sin datos en esta ficha |
 | Otras alternativas de ~27B-32B en GGUF | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Cuantizacion de 2 bits: IQ2_S es una de las variantes mas agresivas de llama.cpp. El autor no publica mediciones de perplejidad ni de divergencia respecto al modelo base, por lo que se desconoce cuanto se degrada la calidad real.
-- Inconsistencias en los metadatos: la licencia figura como "other" en HuggingFace pero el README muestra una insignia Apache-2.0. Antes de un uso comercial hay que verificar la licencia del modelo base y la del propio repositorio.
+- Inconsistencias en los metadatos: la licencia figura como "other" en Hugging Face pero el README muestra una insignia Apache-2.0. Antes de un uso comercial hay que verificar la licencia del modelo base y la del propio repositorio.
 - Benchmarks no fiables: se calcularon sobre recortes de 100 preguntas (por ejemplo, 9 preguntas en ARC-Challenge o 14 en MMLU). El autor lo advierte explicitamente y senala que no son comparables con ejecuciones de suite completa.
 - Resultados internamente contradictorios: en la evaluacion de tool calling se declara un 87% de adherencia al protocolo junto a "0/92 criterios analiticos verificados" y un 0% de finalizacion autonoma de tareas. Estas cifras no permiten afirmar que el modelo sea fiable como agente.
 - El modo de razonamiento CoT obtiene peor puntuacion que el modo directo en la propia evaluacion del autor (-10,3%), lo que cuestiona la utilidad del thinking mode en esta cuantizacion.
@@ -125,7 +125,7 @@ No se dispone de datos de rendimiento publicados por terceros para el modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ2_S
+- Modelo en Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ2_S
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de la herramienta de publicacion Sigma Studio: https://github.com/Sigmanih/SigmaStudio
 - Licencia Apache-2.0 citada en el README: https://opensource.org/licenses/Apache-2.0

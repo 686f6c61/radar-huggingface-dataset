@@ -4,7 +4,7 @@
 
 Minecraftism-4B-Turbo-Uncensored-i1-GGUF es una cuantización en formato GGUF del modelo Minecraftism-4B-Turbo-Uncensored, publicada por el usuario mradermacher. Se trata de una conversión de pesos a cuantizaciones de tipo I-quant (imatrix) generadas con llama.cpp, orientadas a inferencia local en hardware de consumo. El modelo base, alojado en el repositorio mr-sus/Minecraftism-4B-Turbo-Uncensored, apunta por su nombre a un fine-tuning de temática Minecraft con un ajuste "uncensored" que elimina los filtros de rechazo.
 
-La información disponible es muy limitada: la model card original del repositorio cuantizado no incluye descripción funcional, arquitectura declarada, licencia ni idiomas. El dato de parámetros reportado en los metadatos de HuggingFace (1.920.204) es inconsistente con el nombre del modelo (4B) y con el tamaño del repositorio (0.0 GB), por lo que no debe interpretarse como el número real de parámetros del modelo.
+La información disponible es muy limitada: la model card original del repositorio cuantizado no incluye descripción funcional, arquitectura declarada, licencia ni idiomas. El dato de parámetros reportado en los metadatos de Hugging Face (1.920.204) es inconsistente con el nombre del modelo (4B) y con el tamaño del repositorio (0.0 GB), por lo que no debe interpretarse como el número real de parámetros del modelo.
 
 Por tanto, esta ficha describe lo que se puede verificar del artefacto publicado (formato GGUF, cuantizaciones disponibles, origen de la conversión) y marca explícitamente como no disponible todo aquello que el autor no ha documentado. Es relevante para quienes buscan ejecutar variantes ligeras de modelos de 4B en local, pero la ausencia de documentación y de benchmarks limita seriamente su evaluación rigurosa.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha describe lo que se puede verificar del artefacto publicado
 
 No hay información publicada sobre la arquitectura del modelo base en la documentación disponible. El nombre "Minecraftism-4B-Turbo-Uncensored" sugiere un modelo de aproximadamente 4.000 millones de parámetros, probablemente un transformer denso derivado de una familia existente y sometido a un fine-tuning temático (Minecraft) y a un ajuste de alineación orientado a eliminar rechazos ("uncensored"). No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o similares.
 
-Lo único verificable es el proceso de cuantización: el repositorio contiene cuantizaciones GGUF generadas con llama.cpp a partir del modelo base mr-sus/Minecraftism-4B-Turbo-Uncensored, usando cuantizaciones ponderadas por imatrix (prefijo "i1" en el nombre del repo). La model card incluye metadatos internos de la herramienta de conversión (quantize_version: 2, output_tensor_quantised: 1, convert_type: hf), que confirman una conversión desde pesos en formato HuggingFace. No se documenta ninguna innovación arquitectónica adicional.
+Lo único verificable es el proceso de cuantización: el repositorio contiene cuantizaciones GGUF generadas con llama.cpp a partir del modelo base mr-sus/Minecraftism-4B-Turbo-Uncensored, usando cuantizaciones ponderadas por imatrix (prefijo "i1" en el nombre del repo). La model card incluye metadatos internos de la herramienta de conversión (quantize_version: 2, output_tensor_quantised: 1, convert_type: hf), que confirman una conversión desde pesos en formato Hugging Face. No se documenta ninguna innovación arquitectónica adicional.
 
 ## Capacidades
 
@@ -76,5 +76,5 @@ No disponible. No se dispone de información verificable sobre el modelo base ni
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización GGUF): https://huggingface.co/mradermacher/Minecraftism-4B-Turbo-Uncensored-i1-GGUF
+- Repositorio Hugging Face (cuantización GGUF): https://huggingface.co/mradermacher/Minecraftism-4B-Turbo-Uncensored-i1-GGUF
 - Modelo base referenciado en la model card: https://huggingface.co/mr-sus/Minecraftism-4B-Turbo-Uncensored

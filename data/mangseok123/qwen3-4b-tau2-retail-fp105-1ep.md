@@ -98,11 +98,11 @@ Estas cifras se obtuvieron sobre el propio conjunto de entrenamiento, no sobre u
 
 | Modelo | Parametros | Contexto | Evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MANGSEOK123/qwen3-4b-tau2-retail-fp105-1ep | 4,41 mil millones | No especificado (ejemplo de servicio a 40.960 tokens) | Ninguna (no evaluado) | apache-2.0 | HuggingFace, 0 descargas |
-| MANGSEOK123/qwen3-4b-tau2-retail-fp117-1ep | No disponible | No disponible | No disponible | No disponible | HuggingFace (mismo autor) |
-| MANGSEOK123/qwen3-4b-tau2-retail-fp190-1ep | No disponible | No disponible | No disponible | No disponible | HuggingFace (mismo autor) |
-| MANGSEOK123/qwen3-4b-tau2-retail-fp300-1ep | No disponible | No disponible | No disponible | No disponible | HuggingFace (mismo autor) |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,41 mil millones | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
+| MANGSEOK123/qwen3-4b-tau2-retail-fp105-1ep | 4,41 mil millones | No especificado (ejemplo de servicio a 40.960 tokens) | Ninguna (no evaluado) | apache-2.0 | Hugging Face, 0 descargas |
+| MANGSEOK123/qwen3-4b-tau2-retail-fp117-1ep | No disponible | No disponible | No disponible | No disponible | Hugging Face (mismo autor) |
+| MANGSEOK123/qwen3-4b-tau2-retail-fp190-1ep | No disponible | No disponible | No disponible | No disponible | Hugging Face (mismo autor) |
+| MANGSEOK123/qwen3-4b-tau2-retail-fp300-1ep | No disponible | No disponible | No disponible | No disponible | Hugging Face (mismo autor) |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,41 mil millones | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
 
 Los tres modelos hermanos se diferencian únicamente por el número de pares de entrenamiento empleados (117, 190 y 300 frente a los 105 de esta variante), según las referencias incluidas en la model card. No se dispone de resultados comparativos entre ellos.
 
@@ -122,7 +122,7 @@ Los tres modelos hermanos se diferencian únicamente por el número de pares de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail-fp105-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail-fp105-1ep
 - Variante hermana fp117: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail-fp117-1ep
 - Variante hermana fp190: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail-fp190-1ep
 - Variante hermana fp300: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail-fp300-1ep

@@ -77,8 +77,8 @@ No se dispone de comparativas publicadas con otros modelos en la información pr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glossary-classifier | no disponible | 128 tokens | Clasificación de candidatos a glosario (zh) | Apache 2.0 | HuggingFace, ONNX + safetensors |
-| hfl/chinese-roberta-wwm-ext | no disponible | 512 tokens (BERT estándar) | Modelo base de propósito general (zh) | no disponible en la información | HuggingFace |
+| glossary-classifier | no disponible | 128 tokens | Clasificación de candidatos a glosario (zh) | Apache 2.0 | Hugging Face, ONNX + safetensors |
+| hfl/chinese-roberta-wwm-ext | no disponible | 512 tokens (BERT estándar) | Modelo base de propósito general (zh) | no disponible en la información | Hugging Face |
 | Alternativas de NER/terminología en chino | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de comparativas publicadas con otros modelos en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yukihuy99yuki/glossary-classifier
+- Modelo en Hugging Face: https://huggingface.co/yukihuy99yuki/glossary-classifier
 - Modelo base: https://huggingface.co/hfl/chinese-roberta-wwm-ext
 - Proyecto novel2epub: no disponible en la información proporcionada
 - Paper o blog técnico: no disponible en la información proporcionada

@@ -19,7 +19,7 @@ Su relevancia es limitada pero concreta: cubre el nicho de modelos pequeños, en
 | Tipos de cuantizacion | Q8_0 (unica cuantizacion publicada en este repositorio; 4,3 GB) |
 | Idiomas soportados | Neerlandes (`nl`) declarado en la model card; el modelo base Qwen3 es multilingue, pero este repositorio no documenta otros idiomas |
 | Licencia | Other (etiquetada como `license: other`; terminos no detallados en la model card) |
-| Formato de pesos | GGUF (repositorio de 4,3 GB); HuggingFace expone recuento de parametros sobre safetensors |
+| Formato de pesos | GGUF (repositorio de 4,3 GB); Hugging Face expone recuento de parametros sobre safetensors |
 | Pipeline declarado | No disponible |
 | Etiquetas adicionales | `endpoints_compatible`, `ollama`, `raspberry-pi`, `conversational` |
 
@@ -35,7 +35,7 @@ No se documenta ninguna tecnica adicional (atencion lineal, decodificacion espec
 
 - Generacion de texto conversacional en neerlandes, que es el idioma declarado del modelo.
 - Ajuste especifico sobre un modelo instruct, por lo que cabe esperar seguimiento de instrucciones y formato de dialogo, si bien no se documenta el conjunto de evaluacion empleado.
-- Compatibilidad declarada con Ollama, ademas de la etiqueta `endpoints_compatible`, que indica que el repositorio puede desplegarse a traves de HuggingFace Inference Endpoints.
+- Compatibilidad declarada con Ollama, ademas de la etiqueta `endpoints_compatible`, que indica que el repositorio puede desplegarse a traves de Hugging Face Inference Endpoints.
 - Ejecucion en hardware de bajos recursos: la model card afirma que funciona en Raspberry Pi 5 gracias a la cuantizacion Q8_0.
 - Capacidades multilingues mas alla del neerlandes: no documentadas en este repositorio, aunque el modelo base Qwen3 tenga soporte multilingue.
 - Soporte de tool calling / function calling: no documentado en la model card (el modelo base Qwen3 lo soporta, pero no hay confirmacion de que el ajuste LoRA lo preserve).
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no especificadas por el autor. Por tamano, el modelo cabe holgadamente en GPUs de consumo como RTX 3060 de 12 GB, RTX 4070, RTX 4080 o RTX 4090, y tambien en GPUs profesionales (A100, H100) sobredimensionadas para este tamano.
 - Si cabe en GPU de consumo: si, en cualquier GPU con al menos 6-8 GB de VRAM, siempre que se use la cuantizacion Q8_0 publicada.
 - Despliegue en CPU pura: la model card afirma que funciona en Raspberry Pi 5, lo que implica inferencia en CPU con llama.cpp/Ollama, con velocidad muy baja pero funcional.
-- Opciones de despliegue: Ollama (`ollama run stay4s-lora`), llama.cpp y otros runtimes compatibles con GGUF; la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: Ollama (`ollama run stay4s-lora`), llama.cpp y otros runtimes compatibles con GGUF; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles. El autor no publica cifras de tokens por segundo ni de latencia en Raspberry Pi 5 ni en ninguna otra plataforma.
 
 ## Comparativa con modelos similares
@@ -88,12 +88,12 @@ No se dispone de benchmarks que permitan afirmar que este ajuste supera, iguala 
 - Licencia ambigua: figura como "other" sin texto de licencia explicito en la model card. Antes de cualquier uso comercial es imprescindible contactar con el autor o consultar el repositorio de GitHub del proyecto para conocer los terminos reales.
 - Trazabilidad del entrenamiento: no se publica el dataset, el numero de tokens ni el procedimiento de evaluacion, lo que impide auditar sesgos o reproducir el ajuste.
 - Posible perdida de capacidades del modelo base: al aplicarse solo una LoRA de rango 64, no hay garantia documentada de que se conserven tool calling, razonamiento multi-paso u otras habilidades del Qwen3 original.
-- Metadatos anomalos: las fechas de creacion y actualizacion que declara HuggingFace (27/09/2026) son posteriores a la fecha actual, lo que apunta a un error en los metadatos del repositorio y refuerza la necesidad de verificar la procedencia del artefacto antes de usarlo en produccion.
+- Metadatos anomalos: las fechas de creacion y actualizacion que declara Hugging Face (27/09/2026) son posteriores a la fecha actual, lo que apunta a un error en los metadatos del repositorio y refuerza la necesidad de verificar la procedencia del artefacto antes de usarlo en produccion.
 - La busqueda web realizada no devolvio ninguna fuente tecnica relacionada con el modelo; los unicos resultados obtenidos eran contenido no relacionado, por lo que no se han podido contrastar las afirmaciones de la model card con documentacion independiente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/miesdevries/stay4s-lora-q8
+- Repositorio en Hugging Face: https://huggingface.co/miesdevries/stay4s-lora-q8
 - Sitio web del proyecto Stay4S: https://stay4s.com
 - GitHub del proyecto: https://github.com/hetnieuwebeginbv-glitch
 - Paper, blog tecnico o demo: no disponibles en la informacion proporcionada

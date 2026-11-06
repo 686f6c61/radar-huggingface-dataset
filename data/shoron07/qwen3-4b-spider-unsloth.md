@@ -76,8 +76,8 @@ La mejora relativa en exact match normalizado es del 74,4 % aproximadamente. El 
 
 | Modelo | Parametros | Contexto | Exact match normalizado (Spider val.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shoron07/qwen3-4b-spider-unsloth | 4B (33,03 M entrenables) | 32.768 en el base; entrenado a 2.048 | 39,46 % | no disponible | HuggingFace, 0 descargas |
-| unsloth/Qwen3-4B-unsloth-bnb-4bit (base) | 4B | 32.768 | 22,63 % | Apache 2.0 (modelo Qwen3-4B) | HuggingFace |
+| shoron07/qwen3-4b-spider-unsloth | 4B (33,03 M entrenables) | 32.768 en el base; entrenado a 2.048 | 39,46 % | no disponible | Hugging Face, 0 descargas |
+| unsloth/Qwen3-4B-unsloth-bnb-4bit (base) | 4B | 32.768 | 22,63 % | Apache 2.0 (modelo Qwen3-4B) | Hugging Face |
 | Otros adaptadores text-to-SQL sobre Spider | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos publicados frente a alternativas especializadas en text-to-SQL (por ejemplo, modelos de la familia SQLCoder o ajustes sobre CodeLlama) en la información proporcionada, por lo que no se pueden establecer comparaciones cuantitativas fiables.
@@ -97,7 +97,7 @@ No se dispone de datos comparativos publicados frente a alternativas especializa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoron07/qwen3-4b-spider-unsloth
+- Modelo en Hugging Face: https://huggingface.co/shoron07/qwen3-4b-spider-unsloth
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/hujudev/spider-text-2-sql
 - Benchmark Spider: no se proporciona enlace en la información disponible

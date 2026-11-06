@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ai-therapist-qwen3-0.6b-dpo-lora | 0,6B (base) + adaptador LoRA | no disponible | Counselling / salud mental (EN) | apache-2.0 | HuggingFace (26 descargas) |
-| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible | Propósito general | apache-2.0 | HuggingFace |
-| Adaptadores de la colección Counselling SLMs del mismo autor | variable (sobre distintos SLM) | no disponible | Counselling / salud mental | no disponible por adaptador | HuggingFace (colección) |
+| ai-therapist-qwen3-0.6b-dpo-lora | 0,6B (base) + adaptador LoRA | no disponible | Counselling / salud mental (EN) | apache-2.0 | Hugging Face (26 descargas) |
+| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible | Propósito general | apache-2.0 | Hugging Face |
+| Adaptadores de la colección Counselling SLMs del mismo autor | variable (sobre distintos SLM) | no disponible | Counselling / salud mental | no disponible por adaptador | Hugging Face (colección) |
 
 No se dispone de datos de benchmarks ni de modelos directamente comparables de otros autores en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de modelos directamente comparables de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arnabwithab/ai-therapist-qwen3-0.6b-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/arnabwithab/ai-therapist-qwen3-0.6b-dpo-lora
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Colección Counselling SLMs: https://huggingface.co/collections/arnabwithab/counselling-slms-6ad06ab0ca4ce4cf5ceb5ca4
 - Dataset PsyCoPref: https://huggingface.co/datasets/Psychotherapy-LLM/PsyCoPref

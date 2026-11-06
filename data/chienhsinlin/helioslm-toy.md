@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HeliosLM toy_v5.13 es un checkpoint de juguete a nivel de caracter publicado por el usuario chienhsinlin en HuggingFace. No es un modelo de lenguaje utilizable en produccion: se trata de un artefacto de prueba de humo (smoke test) del proyecto HeliosLM, una implementacion desde cero en PyTorch puro de una pila tipo DeepSeek-V3/K3 que se ejecuta en CPU. El checkpoint reproduce en escala minima las piezas clave de esa arquitectura: atencion MLA con absorcion de pesos, MoE con puerta sigmoide y balanceo de carga sin perdida auxiliar, y una cabeza MTP para decodificacion especulativa.
+HeliosLM toy_v5.13 es un checkpoint de juguete a nivel de caracter publicado por el usuario chienhsinlin en Hugging Face. No es un modelo de lenguaje utilizable en produccion: se trata de un artefacto de prueba de humo (smoke test) del proyecto HeliosLM, una implementacion desde cero en PyTorch puro de una pila tipo DeepSeek-V3/K3 que se ejecuta en CPU. El checkpoint reproduce en escala minima las piezas clave de esa arquitectura: atencion MLA con absorcion de pesos, MoE con puerta sigmoide y balanceo de carga sin perdida auxiliar, y una cabeza MTP para decodificacion especulativa.
 
 El modelo tiene 8,5 millones de parametros segun la model card (9.020.056 parametros reales en el state_dict en fp32) y un vocabulario a nivel de caracter de 1024 entradas donde cada token id corresponde a `ord(c)`. La configuracion "lite" consta de solo 2 capas. Fue entrenado en aproximadamente 10 minutos de CPU sobre el propio codigo fuente del repositorio HeliosLM, con un `val_loss` de 2,41 y una tasa de aceptacion del borrador MTP de 1,0 sobre la distribucion de entrenamiento.
 
@@ -84,7 +84,7 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chienhsinlin/helioslm-toy
+- Modelo en Hugging Face: https://huggingface.co/chienhsinlin/helioslm-toy
 - Repositorio del proyecto HeliosLM: https://github.com/tonythetiger168/helioslm
 - Ficheros del repositorio: `toy_v5.13.pt` (state_dict fp32), `model-f32.gguf`, `model-f16.gguf`, `toy_v5.13.json` (metadatos de entrenamiento)
 - Paper, blog o demo: no disponibles en la informacion proporcionada

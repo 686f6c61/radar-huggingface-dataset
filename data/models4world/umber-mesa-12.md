@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/umber-mesa-12` es un adaptador LoRA publicado por el usuario models4world en HuggingFace, diseñado para la generación de texto conversacional. Se trata de un checkpoint de tipo `peft` (Parameter-Efficient Fine-Tuning) que se aplica sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de documentación pública. El repositorio ocupa 1,9 GB y contiene pesos en formato safetensors, lo que sugiere un adaptador de tamaño considerable o un modelo de dimensiones modestas.
+El modelo `models4world/umber-mesa-12` es un adaptador LoRA publicado por el usuario models4world en Hugging Face, diseñado para la generación de texto conversacional. Se trata de un checkpoint de tipo `peft` (Parameter-Efficient Fine-Tuning) que se aplica sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de documentación pública. El repositorio ocupa 1,9 GB y contiene pesos en formato safetensors, lo que sugiere un adaptador de tamaño considerable o un modelo de dimensiones modestas.
 
 La relevancia actual de este modelo es limitada: al carecer de model card completa, de datos de entrenamiento, de especificaciones técnicas y de resultados de evaluación, su uso en producción no está respaldado por información verificable. No se han publicado detalles sobre arquitectura, parámetros, contexto, licencia ni idiomas, por lo que cualquier despliegue requeriría una auditoría previa del modelo base y del adaptador.
 

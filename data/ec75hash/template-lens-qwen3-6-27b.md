@@ -113,7 +113,7 @@ Otras técnicas de interpretabilidad (logit lens, sparse autoencoders) no se com
 
 ## Enlaces
 
-- [HuggingFace: ec75hash/template-lens-qwen3.6-27b](https://huggingface.co/ec75hash/template-lens-qwen3.6-27b)
+- [Hugging Face: ec75hash/template-lens-qwen3.6-27b](https://huggingface.co/ec75hash/template-lens-qwen3.6-27b)
 - [Modelo base: Qwen/Qwen3.6-27B](https://huggingface.co/Qwen/Qwen3.6-27B)
 - [Paper de Anthropic: Verbalizable Representations Form a Global Workspace in Language Models](https://transformer-circuits.pub/2026/workspace/)
 - [Jacobian lens de Neuronpedia](https://huggingface.co/neuronpedia/jacobian-lens)

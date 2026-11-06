@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ALMA_RHINO_LoRA es un adaptador LoRA para generación de imágenes mediante texto (text-to-image) entrenado sobre Stable Diffusion XL Base 1.0. Lo publica el usuario iririko en HuggingFace y su función es inyectar un concepto visual muy concreto: un personaje de rinoceronte con estética de grafiti y arte urbano. No es un modelo base autónomo, sino un conjunto de pesos de adaptación de bajo rango que se cargan junto al modelo SDXL original mediante la librería diffusers.
+ALMA_RHINO_LoRA es un adaptador LoRA para generación de imágenes mediante texto (text-to-image) entrenado sobre Stable Diffusion XL Base 1.0. Lo publica el usuario iririko en Hugging Face y su función es inyectar un concepto visual muy concreto: un personaje de rinoceronte con estética de grafiti y arte urbano. No es un modelo base autónomo, sino un conjunto de pesos de adaptación de bajo rango que se cargan junto al modelo SDXL original mediante la librería diffusers.
 
 El entrenamiento se realizó con DreamBooth, una técnica de ajuste fino personalizado que permite aprender un sujeto o estilo a partir de un conjunto reducido de imágenes de referencia. El adaptador se activa mediante las palabras clave `ALMA_RHINO, rhinoceros graffiti character, street art`, que deben incluirse en el prompt para que el concepto aparezca en la imagen generada. El LoRA del codificador de texto no está habilitado, por lo que el ajuste se aplica únicamente a las capas del UNet.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Parametros | Contexto/resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| iririko/ALMA_RHINO_LoRA | LoRA DreamBooth | SDXL Base 1.0 | no disponible (adaptador) | 1024x1024 | openrail++ | HuggingFace |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base | — | ~3.500 M | 1024x1024 | openrail++ | HuggingFace |
-| Adaptadores LoRA de estilo grafiti en SDXL (genéricos) | LoRA | SDXL Base 1.0 | no disponible | 1024x1024 | variable según autor | HuggingFace / Civitai |
+| iririko/ALMA_RHINO_LoRA | LoRA DreamBooth | SDXL Base 1.0 | no disponible (adaptador) | 1024x1024 | openrail++ | Hugging Face |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base | — | ~3.500 M | 1024x1024 | openrail++ | Hugging Face |
+| Adaptadores LoRA de estilo grafiti en SDXL (genéricos) | LoRA | SDXL Base 1.0 | no disponible | 1024x1024 | variable según autor | Hugging Face / Civitai |
 
 La comparación cuantitativa con otros LoRAs de la misma categoría no está disponible, ya que no se han publicado métricas ni evaluaciones en la documentación del modelo.
 
@@ -81,7 +81,7 @@ La comparación cuantitativa con otros LoRAs de la misma categoría no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iririko/ALMA_RHINO_LoRA
+- Modelo en Hugging Face: https://huggingface.co/iririko/ALMA_RHINO_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - DreamBooth (paper): https://dreambooth.github.io/

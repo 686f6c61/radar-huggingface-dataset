@@ -77,7 +77,7 @@ La principal diferencia con el modelo base es la cuantización NVFP4, que reduce
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/soyrsoyr/Nemotron-3.5-Lightning-1.4B-A0.1B-MTP-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/soyrsoyr/Nemotron-3.5-Lightning-1.4B-A0.1B-MTP-NVFP4
 - Modelo base: https://huggingface.co/inference-optimization/Nemotron-3.5-Lightning-1.4B-A0.1B-MTP
 - Variante oficial de 30B: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Página de NVIDIA Developer sobre Nemotron: https://developer.nvidia.com/topics/ai/nemotron

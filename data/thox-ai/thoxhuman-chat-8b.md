@@ -4,7 +4,7 @@
 
 ThoxHuman-Chat-8B es un paquete de despliegue publicado por Thox-ai sobre los pesos originales de Qwen3-8B. No se trata de un modelo entrenado o ajustado por el autor: la model card indica explicitamente que los pesos son "byte-identical" al base fijado (Qwen/Qwen3-8B, digest `sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`), y que lo aportado por Thox-ai es el empaquetado: un `Modelfile` de Ollama con un perfil de sistema orientado a conversacion de "digital humans", un manifiesto de release y un "THOX Knowledge Pack v0.1" en JSONL con 8 entradas publicas verificadas.
 
-El repositorio de HuggingFace no contiene pesos en safetensors ni GGUF: contiene unicamente el `Modelfile` (1455 B), el `manifest.json` (534 B) y el fichero de conocimiento (4652 B). El modelo ejecutable se distribuye como etiqueta de Ollama (`thox-ai/thoxhuman-chat-8b`), construida a partir de `qwen3:8b`. Es, por tanto, un caso de "configuration-derived": la personalidad y el anclaje factual provienen del prompt de sistema y de la recuperacion sobre el pack, no de un proceso de entrenamiento.
+El repositorio de Hugging Face no contiene pesos en safetensors ni GGUF: contiene unicamente el `Modelfile` (1455 B), el `manifest.json` (534 B) y el fichero de conocimiento (4652 B). El modelo ejecutable se distribuye como etiqueta de Ollama (`thox-ai/thoxhuman-chat-8b`), construida a partir de `qwen3:8b`. Es, por tanto, un caso de "configuration-derived": la personalidad y el anclaje factual provienen del prompt de sistema y de la recuperacion sobre el pack, no de un proceso de entrenamiento.
 
 Su relevancia practica esta en el despliegue local-first y offline de asistentes con persona fija y conocimiento acotado, sin coste de entrenamiento y con licencia Apache-2.0 heredada. Ahora bien, conviene evaluarlo como lo que es: una configuracion reproducible de Qwen3-8B, no como un modelo nuevo con capacidades propias.
 
@@ -100,7 +100,7 @@ La comparacion relevante es con el propio base y con una configuracion manual eq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thox-ai/ThoxHuman-Chat-8B
+- Repositorio en Hugging Face: https://huggingface.co/Thox-ai/ThoxHuman-Chat-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo publicado en Ollama: https://ollama.com/thox-ai/thoxhuman-chat-8b (referenciado en la model card)
 - Etiqueta base en Ollama: `qwen3:8b`, digest `sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`

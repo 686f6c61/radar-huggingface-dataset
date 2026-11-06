@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar con modelos similares de 
 
 ## Enlaces
 
-- HuggingFace: [fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed3407](https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed3407)
+- Hugging Face: [fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed3407](https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed3407)
 - Weights & Biases run: [fs3164bj](https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/fs3164bj)
 
 No hay enlaces a papers, blogs o repositorios adicionales en los resultados de búsqueda.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-archiehill/multitask es un prototipo de investigación publicado en HuggingFace que se presenta como una implementación de tipo Mocov3 orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código y una configuración de arquitectura: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un modelo con rendimiento verificado.
+archiehill/multitask es un prototipo de investigación publicado en Hugging Face que se presenta como una implementación de tipo Mocov3 orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código y una configuración de arquitectura: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un modelo con rendimiento verificado.
 
 El repositorio es extremadamente ligero. Según los metadatos de safetensors, el modelo tiene 49.600 parámetros totales y un tamaño de repositorio de 0,0 GB. La configuración declarada usa atención dispersa (sparse), fusión bilineal, activación GELU-Tanh y normalización ScaleNorm, con optimizador Lion y un schedule exponencial como receta de experimento por defecto. No se especifican datos de entrenamiento, número de tokens, composición del dataset ni proceso de alineación.
 
@@ -76,6 +76,6 @@ No disponible. En la información proporcionada no se describen modelos comparab
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/archiehill/multitask
-- Modelos del autor en HuggingFace: https://huggingface.co/archiehill/models
+- Hugging Face del modelo: https://huggingface.co/archiehill/multitask
+- Modelos del autor en Hugging Face: https://huggingface.co/archiehill/models
 - Perfil del autor en GitHub: https://github.com/ArchieHill

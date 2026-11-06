@@ -75,8 +75,8 @@ Recuento global de la pantalla: base Swift 6/8, adaptador 7/8, perfil Qwopus pro
 
 | Modelo | Tipo | Parámetros | Contexto | Pantalla nativa (8 ejecuciones) | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| Engine Swift Agentic 27B LoRA (este) | Adaptador QLoRA | 58,4 M (adaptador) | 4096 (entrenamiento) | 7/8 | `swift-open-license-1.0` | HuggingFace, safetensors + GGUF |
-| Swift-1.5-Qwen3.8-27b (base) | Modelo completo | no disponible | no disponible | 6/8 | `swift-open-license-1.0` | HuggingFace |
+| Engine Swift Agentic 27B LoRA (este) | Adaptador QLoRA | 58,4 M (adaptador) | 4096 (entrenamiento) | 7/8 | `swift-open-license-1.0` | Hugging Face, safetensors + GGUF |
+| Swift-1.5-Qwen3.8-27b (base) | Modelo completo | no disponible | no disponible | 6/8 | `swift-open-license-1.0` | Hugging Face |
 | Perfil Qwopus (referencia del autor) | no disponible | no disponible | no disponible | 5/8 | no disponible | no disponible |
 
 La comparación se limita a la pantalla sintética del propio autor; no hay benchmarks estándar que permitan situar estos artefactos frente a modelos de codificación de propósito general.
@@ -95,7 +95,7 @@ La comparación se limita a la pantalla sintética del propio autor; no hay benc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/automatedigital/engine-swift-1.5-27b-agentic-lora
+- Repositorio Hugging Face: https://huggingface.co/automatedigital/engine-swift-1.5-27b-agentic-lora
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Licencia del base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/b4c84d42903a8646b25857eb2827288d92ed85a4/LICENSE
 - Dataset NVIDIA Open-SWE-Traces: https://huggingface.co/datasets/nvidia/Open-SWE-Traces

@@ -80,8 +80,8 @@ Qwen3.8-27B se posiciona como la evolución directa de Qwen3.6-27B, con mejoras 
 
 ## Enlaces
 
-- Repositorio HuggingFace (autor DeepDive404-2): https://huggingface.co/DeepDive404-2/Qwen3.8-27B
-- Repositorio HuggingFace oficial (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face (autor DeepDive404-2): https://huggingface.co/DeepDive404-2/Qwen3.8-27B
+- Repositorio Hugging Face oficial (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página del modelo en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Blog de AMD sobre ejecución en Ryzen AI Max y Radeon: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

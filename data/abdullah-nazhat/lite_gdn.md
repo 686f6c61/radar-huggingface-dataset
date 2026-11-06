@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lite_GDN es un repositorio publicado en HuggingFace por el usuario Abdullah-Nazhat bajo el identificador `Abdullah-Nazhat/Lite_GDN`. La única descripción aportada por el autor es la frase "A Lightweight Gated Delta Net Token Mixing Mechanism", acompañada de la indicación "Paper Coming Soon". Es decir, se presenta como un mecanismo de mezcla de tokens (token mixing) ligero basado en la familia de redes Gated Delta Net, pero la model card no incluye pesos, configuración de arquitectura, tokenizador, datos de entrenamiento ni resultados experimentales.
+Lite_GDN es un repositorio publicado en Hugging Face por el usuario Abdullah-Nazhat bajo el identificador `Abdullah-Nazhat/Lite_GDN`. La única descripción aportada por el autor es la frase "A Lightweight Gated Delta Net Token Mixing Mechanism", acompañada de la indicación "Paper Coming Soon". Es decir, se presenta como un mecanismo de mezcla de tokens (token mixing) ligero basado en la familia de redes Gated Delta Net, pero la model card no incluye pesos, configuración de arquitectura, tokenizador, datos de entrenamiento ni resultados experimentales.
 
 En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 1 "like", fue creado el 4 de octubre de 2026 y actualizado el mismo día, apenas 30 minutos después de su creación. No tiene pipeline declarado ni idiomas declarados. Esto indica que se trata de una publicación incipiente, probablemente asociada a un artículo todavía no publicado, y no de un modelo listo para uso en producción.
 
@@ -86,7 +86,7 @@ No hay datos publicados de Lite_GDN que permitan una comparación cuantitativa. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abdullah-Nazhat/Lite_GDN
+- Repositorio en Hugging Face: https://huggingface.co/Abdullah-Nazhat/Lite_GDN
 - Texto de la licencia BSD-3-Clause-Clear: https://spdx.org/licenses/BSD-3-Clause-Clear.html
 - Referencia de familia (Gated Delta Networks, Yang, Kautz y Hatamizadeh): https://arxiv.org/abs/2412.06464
 - Referencia de familia (Mamba-2 / State Space Duality): https://arxiv.org/abs/2405.21060

@@ -89,7 +89,7 @@ No se dispone de datos de comparacion con el Qwen3-Omni-30B-A3B-Instruct origina
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-3bit
+- Repositorio Hugging Face: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-3bit
 - Modelo base bf16: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16
 - Variante 4-bit recomendada por el autor: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-4bit
 - Repositorio de DynQuant: https://github.com/kambojvikram/dynquant

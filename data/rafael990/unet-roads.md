@@ -71,7 +71,7 @@ Las métricas se calculan sobre bloques espaciales reservados con tolerancia de 
 
 | Modelo | Arquitectura | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| unet-roads (este modelo) | U-Net + ResNet34 | 256 x 256 RGB | CC-BY-SA-4.0 | HuggingFace, PyTorch y ONNX |
+| unet-roads (este modelo) | U-Net + ResNet34 | 256 x 256 RGB | CC-BY-SA-4.0 | Hugging Face, PyTorch y ONNX |
 | SpaceNet 3 baselines | Diversas (U-Net, SegNet, etc.) | Variable | Varía según implementación | Repositorios de SpaceNet |
 | Modelos de extracción de carreteras en fAIr | No disponible | No disponible | No disponible | Plataforma fAIr de HOT |
 
@@ -91,7 +91,7 @@ No se dispone de datos comparativos de rendimiento con alternativas concretas en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rafael990/unet-roads
+- Modelo en Hugging Face: https://huggingface.co/Rafael990/unet-roads
 - Plataforma fAIr de HOT: https://github.com/hotosm/fAIr-models
 - Paper de SpaceNet (Van Etten et al., 2018): https://arxiv.org/abs/1807.01232
 - OpenAerialMap: https://openaerialmap.org

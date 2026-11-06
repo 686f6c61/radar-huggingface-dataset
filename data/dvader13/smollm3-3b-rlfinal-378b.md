@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dvader13/smollm3-3b-rlfinal-378b` es un checkpoint de entrenamiento de refuerzo (RL) basado en el modelo base SmolLM3-3B de HuggingFace, correspondiente al final de la primera época de un proceso de RL. El autor, dvader13, lo publica como un estado completo de entrenamiento (fp32 weights + optimizer + scheduler + RNG) en el paso 1804, con el objetivo de permitir la reanudación del entrenamiento o el análisis de la dinámica de RL. No es un export de inferencia, por lo que no está pensado para su uso directo en producción.
+El modelo `dvader13/smollm3-3b-rlfinal-378b` es un checkpoint de entrenamiento de refuerzo (RL) basado en el modelo base SmolLM3-3B de Hugging Face, correspondiente al final de la primera época de un proceso de RL. El autor, dvader13, lo publica como un estado completo de entrenamiento (fp32 weights + optimizer + scheduler + RNG) en el paso 1804, con el objetivo de permitir la reanudación del entrenamiento o el análisis de la dinámica de RL. No es un export de inferencia, por lo que no está pensado para su uso directo en producción.
 
 El modelo base SmolLM3-3B es un transformer decoder compacto de 3 mil millones de parámetros, entrenado con 11 billones de tokens, que emplea Grouped Query Attention (GQA) y prescinde de RoPE para mejorar el rendimiento en tareas de contexto largo. Este checkpoint concreto se ha entrenado sobre un subconjunto de 378 mil millones de tokens (pretraining rung), y su relevancia radica en que permite estudiar el efecto del RL sobre un modelo pequeño y abierto, así como continuar el entrenamiento desde un punto intermedio.
 
@@ -31,7 +31,7 @@ No se proporcionan detalles sobre el algoritmo de RL utilizado (PPO, GRPO, etc.)
 
 - Al ser un checkpoint de entrenamiento, no es directamente utilizable para inferencia. No se puede cargar con `transformers` para generar texto sin antes extraer los pesos y convertirlos a un formato de inferencia.
 - El modelo base SmolLM3-3B, sobre el que se construye este checkpoint, es capaz de generacion de texto, razonamiento, codigo, matematicas y soporte multilingue (6 idiomas).
-- El modelo base tambien soporta modo de razonamiento dual (dual mode reasoning) y tool calling, segun la documentacion de HuggingFace.
+- El modelo base tambien soporta modo de razonamiento dual (dual mode reasoning) y tool calling, segun la documentacion de Hugging Face.
 - No se dispone de informacion sobre capacidades especificas de este checkpoint de RL, como mejoras en razonamiento o seguimiento de instrucciones, ya que no se han publicado evaluaciones.
 
 ## Casos de uso
@@ -45,7 +45,7 @@ No se proporcionan detalles sobre el algoritmo de RL utilizado (PPO, GRPO, etc.)
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks para este checkpoint especifico. El modelo base SmolLM3-3B, segun la documentacion de HuggingFace, supera a Llama 3.2 3B y Qwen2.5 3B, y es competitivo con modelos de 4B como Qwen3 y Gemma3, pero estos datos corresponden al modelo base, no a este checkpoint de RL. No se dispone de metricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) para el checkpoint `rlfinal-378b`.
+No se han publicado resultados de benchmarks para este checkpoint especifico. El modelo base SmolLM3-3B, segun la documentacion de Hugging Face, supera a Llama 3.2 3B y Qwen2.5 3B, y es competitivo con modelos de 4B como Qwen3 y Gemma3, pero estos datos corresponden al modelo base, no a este checkpoint de RL. No se dispone de metricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) para el checkpoint `rlfinal-378b`.
 
 ## Requisitos de hardware
 
@@ -79,8 +79,8 @@ El checkpoint de RL no es comparable directamente con los modelos de inferencia,
 
 ## Enlaces
 
-- [HuggingFace - dvader13/smollm3-3b-rlfinal-378b](https://huggingface.co/dvader13/smollm3-3b-rlfinal-378b)
-- [HuggingFace - SmolLM3-3B (modelo base)](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
+- [Hugging Face - dvader13/smollm3-3b-rlfinal-378b](https://huggingface.co/dvader13/smollm3-3b-rlfinal-378b)
+- [Hugging Face - SmolLM3-3B (modelo base)](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - [Documentacion de Transformers - SmolLM3](https://huggingface.co/docs/transformers/en/model_doc/smollm3)
 - [GitHub - huggingface/smollm](https://github.com/huggingface/smollm)
 - [GitHub - ArkS0001/SmolLM3-3B](https://github.com/ArkS0001/SmolLM3-3B)

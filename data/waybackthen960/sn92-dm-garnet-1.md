@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`waybackthen960/sn92-dm-garnet-1` es un modelo de lenguaje publicado en HuggingFace por el usuario waybackthen960 bajo licencia Apache 2.0 y con acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 31.273.086.512 parametros (aproximadamente 31,3 mil millones) y un tamano de repo de 62,6 GB, lo que sugiere pesos en precision bf16/fp16. La etiqueta `gemma4` en los metadatos indica que se trata de un modelo derivado o afinado a partir de la familia Gemma de Google, aunque no se dispone de confirmacion oficial por parte del autor.
+`waybackthen960/sn92-dm-garnet-1` es un modelo de lenguaje publicado en Hugging Face por el usuario waybackthen960 bajo licencia Apache 2.0 y con acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 31.273.086.512 parametros (aproximadamente 31,3 mil millones) y un tamano de repo de 62,6 GB, lo que sugiere pesos en precision bf16/fp16. La etiqueta `gemma4` en los metadatos indica que se trata de un modelo derivado o afinado a partir de la familia Gemma de Google, aunque no se dispone de confirmacion oficial por parte del autor.
 
 El nombre `sn92-dm-garnet-1` no aporta informacion publica sobre el proceso de entrenamiento, el dataset utilizado ni la metodologia de ajuste. No se han publicado resultados de benchmarks, card tecnica detallada ni documentacion adicional en la informacion disponible. El modelo aparece con 7 descargas y 0 likes en el momento de la consulta, lo que indica una distribucion muy limitada y sin validacion comunitaria significativa.
 
@@ -74,7 +74,7 @@ La comparativa se basa en tamano y licencia; no hay datos de rendimiento del mod
 ## Limitaciones y advertencias
 
 - Ausencia total de model card, benchmarks y documentacion tecnica: no es posible verificar calidad, sesgos ni comportamiento en produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y el uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y el uso en pipelines automatizados.
 - Riesgo de alucinacion: inherente a modelos de lenguaje de este tamano; sin evaluacion publica no se puede estimar su magnitud.
 - Sesgos conocidos: no documentados; se desconoce la composicion del dataset de entrenamiento.
 - Limitaciones de contexto e idioma: no disponibles; no se especifican idiomas ni longitud de contexto, lo que impide garantizar soporte multilingue o conversaciones largas.
@@ -84,5 +84,5 @@ La comparativa se basa en tamano y licencia; no hay datos de rendimiento del mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/waybackthen960/sn92-dm-garnet-1
+- Hugging Face: https://huggingface.co/waybackthen960/sn92-dm-garnet-1
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

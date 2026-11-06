@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheWarrior01/custom-fast-ppo-llm es un repositorio alojado en HuggingFace por el usuario TheWarrior01. El nombre del modelo sugiere una implementación propia de PPO (Proximal Policy Optimization) orientada a ajustar modelos de lenguaje, presumiblemente con algun tipo de optimizacion de velocidad, pero el repositorio no incluye model card, documentacion tecnica ni ficha descriptiva que permita confirmarlo. La informacion publica disponible se limita a metadatos basicos: 0 descargas, 1 like y la etiqueta region:us.
+TheWarrior01/custom-fast-ppo-llm es un repositorio alojado en Hugging Face por el usuario TheWarrior01. El nombre del modelo sugiere una implementación propia de PPO (Proximal Policy Optimization) orientada a ajustar modelos de lenguaje, presumiblemente con algun tipo de optimizacion de velocidad, pero el repositorio no incluye model card, documentacion tecnica ni ficha descriptiva que permita confirmarlo. La informacion publica disponible se limita a metadatos basicos: 0 descargas, 1 like y la etiqueta region:us.
 
 No hay datos verificables sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni licencia. El repositorio no tiene pipeline declarado ni idiomas declarados, y no se ha actualizado desde su creacion (ambas fechas coinciden: 2026-09-12T09:30:16Z). Esto es indicativo de un artefacto subido sin publicacion acompanante, probablemente un experimento personal o un checkpoint intermedio de investigacion.
 
@@ -87,7 +87,7 @@ No disponible. No se han podido identificar modelos comparables porque se descon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheWarrior01/custom-fast-ppo-llm
+- Repositorio en Hugging Face: https://huggingface.co/TheWarrior01/custom-fast-ppo-llm
 - Paper asociado: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

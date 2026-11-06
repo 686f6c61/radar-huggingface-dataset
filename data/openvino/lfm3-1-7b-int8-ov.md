@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-int8-ov es la conversión al formato OpenVINO IR del modelo LFM3-1.7B de LiquidAI, con los pesos comprimidos a INT8 mediante NNCF. Lo publica el equipo de OpenVINO en HuggingFace y su propósito es permitir la inferencia optimizada de este modelo sobre hardware Intel (CPU, iGPU, NPU) sin necesidad de GPU dedicada, manteniendo un tamaño de repositorio de 1,8 GB. El modelo original pertenece a la familia LFM3 (Liquid Foundation Models, tercera generación) de LiquidAI y está diseñado para generación de texto y conversación.
+LFM3-1.7B-int8-ov es la conversión al formato OpenVINO IR del modelo LFM3-1.7B de LiquidAI, con los pesos comprimidos a INT8 mediante NNCF. Lo publica el equipo de OpenVINO en Hugging Face y su propósito es permitir la inferencia optimizada de este modelo sobre hardware Intel (CPU, iGPU, NPU) sin necesidad de GPU dedicada, manteniendo un tamaño de repositorio de 1,8 GB. El modelo original pertenece a la familia LFM3 (Liquid Foundation Models, tercera generación) de LiquidAI y está diseñado para generación de texto y conversación.
 
 El modelo base es un transformer de 1.700 millones de parámetros con soporte de razonamiento explícito (modo *thinking*) activado por defecto en la plantilla de chat, que puede desactivarse mediante `enable_thinking=False`. La conversión a OpenVINO no altera la arquitectura ni la tokenizador, sino que transforma los pesos a un grafo intermedio (IR) que el runtime de Intel puede ejecutar de forma nativa y eficiente.
 
@@ -33,7 +33,7 @@ La aportación de esta versión concreta es el proceso de conversión y compresi
 - Razonamiento explícito en modo *thinking*, activado por defecto y desactivable con `enable_thinking=False`.
 - Respuestas directas sin cadena de razonamiento cuando se desactiva el modo *thinking*.
 - Ejecución en CPU, iGPU y NPU Intel a través del runtime OpenVINO.
-- Integración con el ecosistema HuggingFace mediante Optimum Intel (`OVModelForCausalLM`).
+- Integración con el ecosistema Hugging Face mediante Optimum Intel (`OVModelForCausalLM`).
 - Despliegue como servicio con API compatible con OpenAI a través de OpenVINO Model Server.
 - Soporte de *streaming* de tokens en la API de OVMS.
 - Capacidades de *tool calling*, agentes o multilingüismo: no disponibles en la información proporcionada.
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenVINO/LFM3-1.7B-int8-ov | 1,7B | No disponible | OpenVINO IR INT8 | LFM Open License v1.0 | HuggingFace (38 descargas) |
-| LiquidAI/LFM3-1.7B | 1,7B | No disponible | Pesos originales (no especificado) | LFM Open License v1.0 | HuggingFace (modelo base) |
+| OpenVINO/LFM3-1.7B-int8-ov | 1,7B | No disponible | OpenVINO IR INT8 | LFM Open License v1.0 | Hugging Face (38 descargas) |
+| LiquidAI/LFM3-1.7B | 1,7B | No disponible | Pesos originales (no especificado) | LFM Open License v1.0 | Hugging Face (modelo base) |
 | Alternativas de 1-2B en formato GGUF/OpenVINO | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- [Modelo en HuggingFace: OpenVINO/LFM3-1.7B-int8-ov](https://huggingface.co/OpenVINO/LFM3-1.7B-int8-ov)
+- [Modelo en Hugging Face: OpenVINO/LFM3-1.7B-int8-ov](https://huggingface.co/OpenVINO/LFM3-1.7B-int8-ov)
 - [Modelo base: LiquidAI/LFM3-1.7B](https://huggingface.co/LiquidAI/LFM3-1.7B)
 - [Licencia LFM Open License v1.0](https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE)
 - [Formato OpenVINO IR](https://docs.openvino.ai/2026/documentation/openvino-ir-format.html)

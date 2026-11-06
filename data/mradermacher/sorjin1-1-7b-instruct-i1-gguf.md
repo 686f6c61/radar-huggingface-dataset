@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. Cualqu
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones i1: https://huggingface.co/mradermacher/Sorjin1.1-7B-Instruct-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones i1: https://huggingface.co/mradermacher/Sorjin1.1-7B-Instruct-i1-GGUF
 - Repositorio de cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Sorjin1.1-7B-Instruct-GGUF
 - Modelo base ajustado (pesos originales): https://huggingface.co/muzaffercky/Sorjin1.1-7B-Instruct
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/muzaffercky/kurdish-kurmanji-theses

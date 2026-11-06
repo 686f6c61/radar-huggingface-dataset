@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Laurasoares00/generation-kaggle` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura denominada Dino orientada a tareas de generación. No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+`Laurasoares00/generation-kaggle` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura denominada Dino orientada a tareas de generación. No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El dato objetivo más relevante es su tamaño: 49.600 parámetros totales, según los pesos en formato safetensors. Se trata por tanto de un modelo de escala mínima, muy lejos de cualquier LLM operativo, y el repositorio ocupa 0,0 GB. La configuración declarada corresponde a una escala "huge" dentro de la propia nomenclatura del script, con atención multi-query, fusión bilineal, activación swish y normalización por instancias (instancenorm).
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y muy específica: sirve como andamiaje reprodu
 | Activación | swish |
 | Normalización | instancenorm |
 | Optimizador del recipe por defecto | lion con scheduler polinómico |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-10-08 / 2026-10-08 |
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el repositorio incluye `training_args.json` con un r
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; el campo de idiomas no está declarado.
 - Capacidades especiales (modo pensamiento, visión, audio): no disponible.
-- Carga mediante APIs automáticas de HuggingFace: la model card indica que, al ser una implementación custom, es necesario un adaptador explícito antes de poder usar los cargadores genéricos.
+- Carga mediante APIs automáticas de Hugging Face: la model card indica que, al ser una implementación custom, es necesario un adaptador explícito antes de poder usar los cargadores genéricos.
 - Uso como referencia de código: sí, el artefacto principal es `run.py`, con un bloque `__main__` que incluye un ejemplo ejecutable de prueba de humo.
 
 ## Casos de uso
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Laurasoares00/generation-kaggle | 49.600 | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de inicialización, sin entrenar ni evaluar |
+| Laurasoares00/generation-kaggle | 49.600 | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de inicialización, sin entrenar ni evaluar |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se han identificado modelos equivalentes en la información disponible |
 
 No se dispone de modelos comparables en la misma categoría. El repositorio no define una tarea concreta, un dominio ni una métrica, y su escala (49,6 K parámetros) lo sitúa fuera de las comparativas habituales de modelos generativos. Tampoco se puede equiparar sin más al método DINO de self-supervised learning, ya que el repositorio no cita papers ni establece esa correspondencia.
@@ -93,7 +93,7 @@ No se dispone de modelos comparables en la misma categoría. El repositorio no d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Laurasoares00/generation-kaggle
+- Repositorio en Hugging Face: https://huggingface.co/Laurasoares00/generation-kaggle
 - `run.py` (artefacto principal, incluye el ejemplo de smoke test en el bloque `__main__`): https://huggingface.co/Laurasoares00/generation-kaggle/blob/main/run.py
 - `config.json` (configuración de arquitectura): https://huggingface.co/Laurasoares00/generation-kaggle/blob/main/config.json
 - `training_args.json` (recipe de experimento por defecto): https://huggingface.co/Laurasoares00/generation-kaggle/blob/main/training_args.json

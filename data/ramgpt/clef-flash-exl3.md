@@ -104,7 +104,7 @@ No se han identificado en la informacion disponible otros modelos de decision po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ramgpt/clef-flash-EXL3
+- Modelo en Hugging Face: https://huggingface.co/ramgpt/clef-flash-EXL3
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Clef-flash en Featherless (descripcion del modelo base): https://featherless.ai/models/Cloudflare/clef-flash
 - Repositorio de ExLlamaV3: https://github.com/turboderp-org/exllamav3

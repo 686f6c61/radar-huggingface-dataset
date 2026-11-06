@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento (WER u otras metricas) que permitan una co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vana-Labs/stt-parakeet-multilingual
+- Repositorio Hugging Face: https://huggingface.co/Vana-Labs/stt-parakeet-multilingual
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Exportacion ONNX de origen: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx
 - Servidor STT compatible con Whisper: https://github.com/opteemister/ai-parkeet-stt

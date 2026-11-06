@@ -73,7 +73,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-8bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pagina del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Coleccion Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8

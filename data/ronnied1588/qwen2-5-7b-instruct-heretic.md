@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-7B-Instruct-heretic es una variante "abliterated" (decensored) del modelo Qwen2.5-7B-Instruct de Alibaba Cloud. La abliteración, es decir, la eliminación selectiva de las direcciones de activación responsables del comportamiento de rechazo, se realizó con la herramienta Heretic v1.2.0 de Philipp Emanuel Weidmann. El artefacto fue generado y cuantizado por el usuario LeadFootThrottleCock y está republicado en el repositorio Ronnied1588/Qwen2.5-7B-Instruct-heretic, que según los datos de HuggingFace contiene pesos en safetensors (7.612.756.480 parámetros, 15,2 GB de repositorio), aunque la model card describe el conjunto de cuantizaciones GGUF derivadas.
+Qwen2.5-7B-Instruct-heretic es una variante "abliterated" (decensored) del modelo Qwen2.5-7B-Instruct de Alibaba Cloud. La abliteración, es decir, la eliminación selectiva de las direcciones de activación responsables del comportamiento de rechazo, se realizó con la herramienta Heretic v1.2.0 de Philipp Emanuel Weidmann. El artefacto fue generado y cuantizado por el usuario LeadFootThrottleCock y está republicado en el repositorio Ronnied1588/Qwen2.5-7B-Instruct-heretic, que según los datos de Hugging Face contiene pesos en safetensors (7.612.756.480 parámetros, 15,2 GB de repositorio), aunque la model card describe el conjunto de cuantizaciones GGUF derivadas.
 
 Arquitectónicamente es un transformer decoder-only denso de la familia Qwen2, con 28 capas, atención con query grouping (GQA), RoPE, SwiGLU y RMSNorm, idéntico en estructura al modelo base; lo único que cambia respecto a este son los pesos de las proyecciones `attn.o_proj` y `mlp.down_proj` de cada capa, modificados por el proceso de abliteración. El autor reporta un KL divergence de 0,0820 frente al base y una tasa de rechazo de 7/100 en el conjunto de evaluación mlabonne/harmful_behaviors, métricas que sitúan el modelo como un caso de "capacidad preservada, alineamiento eliminado".
 
@@ -105,7 +105,7 @@ Frente al base, la única diferencia funcional es la eliminación del comportami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ronnied1588/Qwen2.5-7B-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/Ronnied1588/Qwen2.5-7B-Instruct-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio original del artefacto abliterado y cuantizado: https://huggingface.co/LeadFootThrottleCock/Qwen2.5-7B-Instruct-heretic
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic

@@ -75,5 +75,5 @@ No se especifican requisitos de hardware en la model card. A partir del tamaño 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seniruk/whisper-small-si-v3
+- Hugging Face: https://huggingface.co/seniruk/whisper-small-si-v3
 - Modelo base: https://huggingface.co/openai/whisper-small

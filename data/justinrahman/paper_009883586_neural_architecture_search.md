@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown sobre *neural architecture search* (NAS). El autor, `justinrahman`, ha subido el texto completo de un artículo científico con estructura típica de investigación (introducción, trabajo relacionado, método, experimentos y conclusión), con estilo argumentativo y citas de tipo numérico. El archivo principal es `paper_009883586_neural_architecture_search.md`.
+Este repositorio de Hugging Face no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown sobre *neural architecture search* (NAS). El autor, `justinrahman`, ha subido el texto completo de un artículo científico con estructura típica de investigación (introducción, trabajo relacionado, método, experimentos y conclusión), con estilo argumentativo y citas de tipo numérico. El archivo principal es `paper_009883586_neural_architecture_search.md`.
 
 El repositorio se publica bajo licencia BSD-3-Clause, pero no ofrece ningún peso, arquitectura, tokenizador ni artefacto de inferencia. Es decir, no es un modelo desplegable ni un sistema entrenado; es únicamente un documento académico. Aunque el tema (NAS) es relevante en el campo del aprendizaje automático, este repositorio no aporta un modelo utilizable ni datos de rendimiento, por lo que no puede evaluarse como tal.
 
@@ -53,5 +53,5 @@ No disponible. No se puede comparar con otros modelos porque no es un modelo.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/justinrahman/paper_009883586_neural_architecture_search)
+- [Repositorio en Hugging Face](https://huggingface.co/justinrahman/paper_009883586_neural_architecture_search)
 - No se encontraron enlaces adicionales específicos del paper en los resultados de búsqueda web.

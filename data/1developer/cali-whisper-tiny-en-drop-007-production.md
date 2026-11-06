@@ -31,7 +31,7 @@ El entrenamiento consistió en un fine-tuning del modelo base `1Developer/cali-w
 
 - Transcripción de audio a texto (reconocimiento automático del habla) en inglés, según la nomenclatura del modelo.
 - Generación de texto a partir de audio con decodificación autorregresiva.
-- Soporte para integración con la librería `transformers` de HuggingFace mediante el pipeline `automatic-speech-recognition`.
+- Soporte para integración con la librería `transformers` de Hugging Face mediante el pipeline `automatic-speech-recognition`.
 - No se documentan capacidades adicionales como tool calling, razonamiento multi-paso, visión u otras modalidades.
 
 ## Casos de uso
@@ -76,12 +76,12 @@ No se dispone de comparativas directas con otros fine-tunes de Whisper tiny. El 
 
 - El WER de 0.0 declarado es sospechosamente perfecto y probablemente refleja sobreajuste o un conjunto de evaluación no representativo; no es fiable para medir el rendimiento real.
 - No hay información sobre el dataset de entrenamiento (tamaño, dominio, calidad), lo que impide evaluar su generalización a otros acentos, ruidos o dominios.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - No se confirma el idioma soportado; el nombre sugiere inglés, pero no hay documentación al respecto.
 - Riesgo de alucinaciones en la transcripción (común en modelos Whisper), especialmente con audio de baja calidad o ruido de fondo.
 - La licencia Apache 2.0 permite uso comercial, pero sin garantías de rendimiento ni soporte.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1Developer/cali-whisper-tiny.en-drop-007-production
+- Modelo en Hugging Face: https://huggingface.co/1Developer/cali-whisper-tiny.en-drop-007-production
 - Modelo base: https://huggingface.co/1Developer/cali-whisper-tiny.en-drop-006-production

@@ -32,7 +32,7 @@ Segun la evaluacion de Heretic incluida en la model card, la divergencia KL resp
 - Generacion de texto conversacional multi-turno, segun los tags `conversational` y `endpoints_compatible` del repositorio.
 - Modo de razonamiento "Think" heredado de allenai/Olmo-3-7B-Think (el nombre del modelo lo indica, aunque no se detallan sus caracteristicas exactas).
 - Reduccion parcial de rechazos respecto al modelo original: 48 de cada 100 peticiones siguen siendo rechazadas en la evaluacion de Heretic.
-- Compatibilidad con llama.cpp, Ollama y endpoints compatibles con la API de HuggingFace.
+- Compatibilidad con llama.cpp, Ollama y endpoints compatibles con la API de Hugging Face.
 - Cuantizaciones listas para ejecucion en CPU y GPU de gama media mediante llama.cpp.
 - Capacidades especificas (codigo, matematicas, tool calling, agentes, vision, audio, multilingue) no disponibles en la informacion proporcionada.
 
@@ -43,7 +43,7 @@ Segun la evaluacion de Heretic incluida en la model card, la divergencia KL resp
 - Investigacion sobre abliteration y alineacion: el par de modelos (original y heretic) con su informe de reproducibilidad permite estudiar el efecto de la eliminacion de direcciones de rechazo sobre el comportamiento del modelo, con la divergencia KL y el recuento de rechazos como metricas de referencia.
 - Evaluacion comparativa de cuantizaciones: el repositorio ofrece cuatro niveles (Q4_K_M, Q5_K_M, Q6_K, Q8_0), lo que permite medir el compromiso entre tamano, velocidad y calidad de salida sobre el mismo modelo.
 - Generacion de texto en entornos con requisitos de privacidad: al ejecutarse integramente en local, los datos no salen del equipo, lo que encaja en escenarios con datos sensibles.
-- Integracion en pipelines que consumen la API compatible de HuggingFace endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse detras de una interfaz compatible con la API estandar.
+- Integracion en pipelines que consumen la API compatible de Hugging Face endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse detras de una interfaz compatible con la API estandar.
 - Base para fine-tuning posterior sobre los pesos en safetensors del modelo original: el modelo heretic actua como punto de partida para ajustes especificos de dominio.
 
 ## Benchmarks y rendimiento

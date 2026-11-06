@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cubric Studio es un repositorio de pesos publicado por Mad-Pony-Interactive en HuggingFace que aloja los checkpoints de Cubric Vision v1.0.1, junto con copias sin modificar de los pesos de LTX-2.5 de Lightricks. No se trata de un modelo de lenguaje en el sentido habitual, sino de un contenedor de artefactos para un sistema de vision generativa, presumiblemente orientado a video o imagen, dado el origen de los pesos de LTX-2.x.
+Cubric Studio es un repositorio de pesos publicado por Mad-Pony-Interactive en Hugging Face que aloja los checkpoints de Cubric Vision v1.0.1, junto con copias sin modificar de los pesos de LTX-2.5 de Lightricks. No se trata de un modelo de lenguaje en el sentido habitual, sino de un contenedor de artefactos para un sistema de vision generativa, presumiblemente orientado a video o imagen, dado el origen de los pesos de LTX-2.x.
 
 La informacion publica es extremadamente limitada: la model card solo describe el contenido del repositorio y las obligaciones de licencia asociadas a los pesos redistribuidos de Lightricks. No se especifican parametros, arquitectura, contexto ni idiomas del componente propio (Cubric Vision v1.0.1), y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cubric Studio (Cubric Vision v1.0.1 + LTX-2.5) | no disponible | no disponible | no disponible para el componente propio; LTX-2.x Community License para los pesos de Lightricks | HuggingFace, repositorio de 176,7 GB |
+| Cubric Studio (Cubric Vision v1.0.1 + LTX-2.5) | no disponible | no disponible | no disponible para el componente propio; LTX-2.x Community License para los pesos de Lightricks | Hugging Face, repositorio de 176,7 GB |
 | LTX-2.5 (Lightricks, original) | no disponible en la informacion proporcionada | no disponible | LTX-2.x Community License Agreement | Distribucion original de Lightricks |
 | Alternativas de generacion de video open weights | no disponible | no disponible | no disponible | no disponible |
 
@@ -77,6 +77,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mad-Pony-Interactive/cubric-studio
+- Repositorio en Hugging Face: https://huggingface.co/Mad-Pony-Interactive/cubric-studio
 - Licencias de LTX-2.x incluidas en el repositorio: `vision/models/LICENSES/LTX-2.x/` (ruta interna del repositorio)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

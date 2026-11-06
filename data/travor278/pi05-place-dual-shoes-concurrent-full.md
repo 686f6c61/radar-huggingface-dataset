@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un checkpoint de robótica publicado por el usuario Travor278 en HuggingFace, consistente en un ajuste fino completo (full finetuning de todos los parámetros) de la base PI0.5 en su implementación JAX del framework OpenPI. El modelo resuelve una tarea concreta de manipulación: colocar dos zapatos de forma concurrente ("place dual shoes: concurrent"), a partir de un conjunto de datos de 50 episodios. El repositorio contiene dos checkpoints lógicos, correspondientes a 10.000 y 20.000 actualizaciones completadas, cada uno utilizable como raíz independiente.
+Se trata de un checkpoint de robótica publicado por el usuario Travor278 en Hugging Face, consistente en un ajuste fino completo (full finetuning de todos los parámetros) de la base PI0.5 en su implementación JAX del framework OpenPI. El modelo resuelve una tarea concreta de manipulación: colocar dos zapatos de forma concurrente ("place dual shoes: concurrent"), a partir de un conjunto de datos de 50 episodios. El repositorio contiene dos checkpoints lógicos, correspondientes a 10.000 y 20.000 actualizaciones completadas, cada uno utilizable como raíz independiente.
 
 El artefacto no es un modelo de lenguaje generativo de propósito general ni un pipeline de texto: es una política viso-lenguaje-acción (VLA, vision-language-action) orientada a control robótico. La entrada son tres vistas RGB (cámara superior y las dos muñecas), redimensionadas a 224x224 mediante las transformaciones estándar de OpenPI, y el estado/acción del robot se conserva en su forma original de 14 dimensiones absolutas, sin conversión de unidades tipo Aloha ni transformación delta.
 
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. La informa
 
 | Modelo | Base | Tipo de artefacto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Travor278/pi05-place-dual-shoes-concurrent-full | PI0.5 (JAX, OpenPI) | Checkpoint Orbax, ajuste fino completo | Colocacion concurrente de dos zapatos, 14 dimensiones de accion | no disponible | Publico en HuggingFace, 0 descargas |
+| Travor278/pi05-place-dual-shoes-concurrent-full | PI0.5 (JAX, OpenPI) | Checkpoint Orbax, ajuste fino completo | Colocacion concurrente de dos zapatos, 14 dimensiones de accion | no disponible | Publico en Hugging Face, 0 descargas |
 | Base PI0.5 de OpenPI | - | Checkpoint Orbax | Politica generalista VLA | no disponible en esta informacion | Referenciado como origen del ajuste, sin enlace en la ficha |
 | Implementaciones PyTorch/LeRobot de PI0 | - | Safetensors | Politicas de manipulacion | no disponible en esta informacion | Ecosistema distinto; el autor indica explicitamente que este artefacto no es compatible como safetensors de LeRobot |
 
@@ -99,7 +99,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. La informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-full
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-full
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/Shiki42/ctr-place-dual-shoes-concurrent-20260911 (commit 8af4de6ff63c040bf34ba47c79eec65c83d7d37c)
 - Archivos de configuracion y verificacion citados en la model card: openpi_config.json, RECOVERY_VERIFIED.json, y directorios `10000/experiment/` y `20000/experiment/` dentro del propio repositorio
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales relacionados con este modelo; los resultados devueltos no guardaban relacion con el contenido de la ficha.

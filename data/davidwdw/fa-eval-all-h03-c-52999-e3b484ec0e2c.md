@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `davidwdw/fa-eval-all-h03-c-52999-e3b484ec0e2c` corresponde a un repositorio alojado en HuggingFace que, segun su propia model card, no contiene un modelo de lenguaje entrenado, sino un "archivo versionado de flota" (versioned fleet archive) generado a partir de la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`. El paquete se describe como una instantanea (snapshot) que incluye episodios en JSON, videos, trazas (traces), logs, scripts, entradas y recibos, con verificacion mediante `SHA256SUMS`. No se declara ningun tipo de pesos neuronales, arquitectura ni pipeline de inferencia.
+El identificador `davidwdw/fa-eval-all-h03-c-52999-e3b484ec0e2c` corresponde a un repositorio alojado en Hugging Face que, segun su propia model card, no contiene un modelo de lenguaje entrenado, sino un "archivo versionado de flota" (versioned fleet archive) generado a partir de la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`. El paquete se describe como una instantanea (snapshot) que incluye episodios en JSON, videos, trazas (traces), logs, scripts, entradas y recibos, con verificacion mediante `SHA256SUMS`. No se declara ningun tipo de pesos neuronales, arquitectura ni pipeline de inferencia.
 
 El autor del repositorio es el usuario `davidwdw`, con cero descargas y cero interacciones registradas en el momento de la consulta, y un tamano de repositorio de 0,1 GB, coherente con un conjunto de artefactos de evaluacion (videos, logs y JSON) mas que con un checkpoint de parametros. La etiqueta publica mas relevante es `region:us`, lo que indica una restriccion o clasificacion geografica, no una capacidad tecnica del contenido.
 
@@ -87,7 +87,7 @@ No disponible. Este identificador no es comparable con modelos de lenguaje, visi
 - No es un modelo de IA: la model card lo describe explicitamente como un "versioned fleet archive" y no como un modelo entrenado, por lo que no debe citarse como modelo en comparativas tecnicas.
 - Licencia no declarada: al no especificarse licencia, no hay autorizacion explicita de uso comercial ni de redistribucion; cualquier reutilizacion debe considerarse de riesgo legal hasta confirmar terminos con el autor.
 - Idiomas no declarados: no puede asumirse soporte multilingue de ningun tipo.
-- Ausencia de pipeline: no se declara tarea (`pipeline`) asociada en HuggingFace, lo que refuerza que no se trata de un modelo servible mediante la API de inferencia.
+- Ausencia de pipeline: no se declara tarea (`pipeline`) asociada en Hugging Face, lo que refuerza que no se trata de un modelo servible mediante la API de inferencia.
 - Advertencia de integridad: el propio autor insiste en usar la revision exacta registrada y verificar `SHA256SUMS`; no hacerlo invalida la reproducibilidad del paquete.
 - Naturaleza de instantanea: al no ser un espejo vivo, el contenido puede quedar desactualizado o desvinculado de su receta original con el tiempo.
 - Cero adopcion registrada: 0 descargas y 0 likes implican ausencia de validacion externa, revisión por terceros o evidencia de uso en produccion.
@@ -97,7 +97,7 @@ No disponible. Este identificador no es comparable con modelos de lenguaje, visi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h03-c-52999-e3b484ec0e2c
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h03-c-52999-e3b484ec0e2c
 - Perfil del autor: https://huggingface.co/davidwdw
 - Receta canonica citada en la model card: `evaluations/2026-09-26_b1k_all_existing_queue` (referencia interna, sin URL publica disponible)
 - Enlaces de busqueda web: no se ha encontrado ningun enlace relevante; los resultados devueltos corresponden a un establecimiento comercial de La Rochelle y no tienen relacion con el repositorio.

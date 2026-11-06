@@ -69,8 +69,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Repositorio HuggingFace de MiniMax-H3-Acc-LoRAs](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs)
+- [Repositorio Hugging Face de MiniMax-H3-Acc-LoRAs](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs)
 - [Repositorio GitHub de VideoX-Fun](https://github.com/aigc-apps/VideoX-Fun)
 - [Repositorio GitHub de MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
-- [Colección MiniMax-H3 en HuggingFace](https://huggingface.co/collections/MiniMaxAI/minimax-h3)
+- [Colección MiniMax-H3 en Hugging Face](https://huggingface.co/collections/MiniMaxAI/minimax-h3)
 - [Directorio de LoRAs de MiniMax H3 (minimax3.org)](https://minimax3.org/minimax-h3-lora)

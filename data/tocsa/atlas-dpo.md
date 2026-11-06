@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tocsa/atlas-dpo
+- Modelo en Hugging Face: https://huggingface.co/tocsa/atlas-dpo
 - Modelo base declarado: https://huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct
 - vLLM, herramienta de servicio y evaluacion citada en la model card: https://github.com/vllm-project/vllm
 - NeMo Data Designer, generacion de datos sinteticos citada en la model card: https://github.com/NVIDIA-NeMo/DataDesigner

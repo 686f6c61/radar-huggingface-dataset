@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. Las 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Thaurock/Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF | 30,5B totales / ~3B activos | 256K (heredado) | apache-2.0 | GGUF en HuggingFace |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B totales / ~3B activos | 256K | apache-2.0 | safetensors en HuggingFace |
-| huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated | 30,5B totales / ~3B activos | 256K (heredado) | apache-2.0 | modelo base abliterado en HuggingFace |
+| Thaurock/Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF | 30,5B totales / ~3B activos | 256K (heredado) | apache-2.0 | GGUF en Hugging Face |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B totales / ~3B activos | 256K | apache-2.0 | safetensors en Hugging Face |
+| huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated | 30,5B totales / ~3B activos | 256K (heredado) | apache-2.0 | modelo base abliterado en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace (esta ficha): https://huggingface.co/Thaurock/Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
+- Hugging Face (esta ficha): https://huggingface.co/Thaurock/Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder

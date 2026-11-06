@@ -72,7 +72,7 @@ No se dispone de datos comparativos con otros modelos de deteccion de PII en por
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-LiteClinicalU-Small-66M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-LiteClinicalU-Small-66M-v1-mlx
 - Checkpoint original (PyTorch): https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-LiteClinicalU-Small-66M-v1
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentacion del backend MLX: https://openmed.life/docs/mlx-backend/

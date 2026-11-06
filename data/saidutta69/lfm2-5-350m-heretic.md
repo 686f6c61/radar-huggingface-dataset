@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/LFM2.5-350M-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/LFM2.5-350M-heretic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M-Base
 - Modelo original instruido: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Variante GGUF: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF

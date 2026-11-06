@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xiaomi-CocktailASR-1 es un modelo de reconocimiento automático del habla (ASR) orientado a un objetivo concreto (*target-speaker ASR*, TS-ASR) publicado por el autor Ease3 en HuggingFace y asociado a un repositorio de Xiaomi Research. El modelo recibe dos entradas: un fragmento de audio de referencia del hablante objetivo y un audio mezclado (o de un único hablante), y devuelve la transcripción únicamente de ese hablante, ignorando el resto de voces presentes en la mezcla.
+Xiaomi-CocktailASR-1 es un modelo de reconocimiento automático del habla (ASR) orientado a un objetivo concreto (*target-speaker ASR*, TS-ASR) publicado por el autor Ease3 en Hugging Face y asociado a un repositorio de Xiaomi Research. El modelo recibe dos entradas: un fragmento de audio de referencia del hablante objetivo y un audio mezclado (o de un único hablante), y devuelve la transcripción únicamente de ese hablante, ignorando el resto de voces presentes en la mezcla.
 
 El autor lo describe como un *SpeechLLM*, es decir, un modelo de lenguaje aplicado a voz que combina representaciones acústicas con decoding autorregresivo, e incluye dos capacidades destacables: el rechazo de muestras negativas (si el hablante de referencia no aparece en el audio, devuelve salida vacía) y un modo de razonamiento encadenado (*chain-of-thought*) que expone el resultado como `<think>...</think><answer>...</answer>`.
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 | Modelo | Enfoque | Parámetros | Contexto / ventana de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xiaomi-CocktailASR-1 | Target-speaker ASR con rechazo de muestras negativas y CoT | no disponible | no disponible | no disponible | HuggingFace con `trust_remote_code` |
+| Xiaomi-CocktailASR-1 | Target-speaker ASR con rechazo de muestras negativas y CoT | no disponible | no disponible | no disponible | Hugging Face con `trust_remote_code` |
 | Whisper large-v3 (OpenAI) | ASR monohablante multilingüe | 1,55 mil millones | ventanas de 30 s con *chunking* | MIT | pesos abiertos, amplio ecosistema (whisper.cpp, faster-whisper, vLLM) |
 | Pipeline diarización + ASR (por ejemplo, pyannote + Whisper) | Diarización de hablantes seguida de ASR por segmento | depende del ASR elegido | depende del ASR elegido | depende de cada componente | requiere orquestar varios modelos |
 | ASR monohablante genérico | Transcripción sin condicionamiento por hablante | no disponible | no disponible | no disponible | no disponible |
@@ -95,5 +95,5 @@ La diferencia funcional clave es que Xiaomi-CocktailASR-1 resuelve la selección
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ease3/Xiaomi-CocktailASR-1
+- Modelo en Hugging Face: https://huggingface.co/Ease3/Xiaomi-CocktailASR-1
 - Repositorio de Xiaomi Research: https://github.com/xiaomi-research/xiaomi-cocktailasr-1/tree/main/

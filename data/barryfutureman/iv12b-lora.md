@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`BarryFutureman/iv12b-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario BarryFutureman y distribuido a través de la librería PEFT. El repositorio ocupa 0,3 GB y almacena pesos en formato safetensors, un tamano coherente con un adaptador de bajo rango y no con un modelo completo. No incluye, segun la informacion disponible, ningun resultado de evaluacion, ficha tecnica detallada ni descripcion del dataset de entrenamiento.
+`BarryFutureman/iv12b-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario BarryFutureman y distribuido a través de la librería PEFT. El repositorio ocupa 0,3 GB y almacena pesos en formato safetensors, un tamano coherente con un adaptador de bajo rango y no con un modelo completo. No incluye, segun la informacion disponible, ningun resultado de evaluacion, ficha tecnica detallada ni descripcion del dataset de entrenamiento.
 
 El adaptador se aplica sobre el modelo base `AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16`, que por su identificador corresponde a un modelo de la familia Gemma de aproximadamente 12.000 millones de parametros, con ajuste de instrucciones, sometido a un proceso de abliteration (supresion de direcciones de rechazo en el espacio de activaciones) y almacenado en BF16. El adaptador hereda por tanto la arquitectura transformer decoder-only del modelo base, pero modifica sus pesos mediante una actualizacion de bajo rango entrenada sobre un corpus que no se documenta.
 
-Su relevancia actual es limitada y, sobre todo, experimental: el repositorio acumula 0 descargas y 0 likes, se creo y actualizo el 8 de octubre de 2026 en un intervalo de 25 segundos, tiene el acceso restringido (requiere aceptar condiciones en HuggingFace) y no declara licencia ni idiomas. Es util como objeto de estudio de tecnicas de ajuste eficiente y de modificacion de comportamiento, no como componente listo para produccion.
+Su relevancia actual es limitada y, sobre todo, experimental: el repositorio acumula 0 descargas y 0 likes, se creo y actualizo el 8 de octubre de 2026 en un intervalo de 25 segundos, tiene el acceso restringido (requiere aceptar condiciones en Hugging Face) y no declara licencia ni idiomas. Es util como objeto de estudio de tecnicas de ajuste eficiente y de modificacion de comportamiento, no como componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No hay datos sobre el corpus de entrenamiento: se desconoce el numero de tokens,
 - Analisis de seguridad y red-teaming: al estar construido sobre un modelo con abliteration, es adecuado para estudiar como evolucionan las tasas de rechazo y de contenido problematico tras un ajuste adicional de bajo rango, en un entorno controlado y con registro de resultados.
 - Prototipado de estilos o dominios concretos: si el adaptador se entreno para un tono o vocabulario especifico, puede evaluarse cargandolo con `peft` sobre el modelo base y comparando respuestas frente a la linea base en un conjunto fijo de prompts.
 - Experimentos de mezcla de adaptadores: al ser un safetensors de 0,3 GB, es viable aplicar tecnicas de merge (por ejemplo, suma ponderada o TIES) con otros adaptadores del mismo modelo base para observar el efecto combinado.
-- Reproducibilidad de artefactos en HuggingFace: resulta util para estudiar la trazabilidad de repositorios sin tarjeta de modelo, sin licencia y con acceso restringido, y para definir que metadatos minimos deberia exigir un pipeline de evaluacion interno.
+- Reproducibilidad de artefactos en Hugging Face: resulta util para estudiar la trazabilidad de repositorios sin tarjeta de modelo, sin licencia y con acceso restringido, y para definir que metadatos minimos deberia exigir un pipeline de evaluacion interno.
 - Docencia sobre ciclo de vida de modelos: permite ilustrar en un aula o taller la diferencia entre pesos completos y adaptadores, el papel del modelo base y las consecuencias de no declarar licencia ni datos de entrenamiento.
 - Despliegue interno de bajo coste (con reservas): si se fusiona el adaptador con el modelo base y se cuantiza a 4 bits, puede ejecutarse en una unica GPU de consumo para tareas de generacion de texto no criticas, siempre que se resuelva antes la situacion legal derivada de la ausencia de licencia.
 
@@ -71,17 +71,17 @@ No existen resultados medidos de este adaptador que permitan una comparacion cua
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `BarryFutureman/iv12b-lora` (este) | Adaptador sobre base de ~12B | No disponible | No disponible | Acceso restringido en HuggingFace |
-| Gemma 2 9B | 9B | 8.192 tokens | Gemma Terms of Use | Pesos abiertos en HuggingFace |
-| Mistral NeMo 12B | 12B | 128.000 tokens | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | Pesos abiertos en HuggingFace |
+| `BarryFutureman/iv12b-lora` (este) | Adaptador sobre base de ~12B | No disponible | No disponible | Acceso restringido en Hugging Face |
+| Gemma 2 9B | 9B | 8.192 tokens | Gemma Terms of Use | Pesos abiertos en Hugging Face |
+| Mistral NeMo 12B | 12B | 128.000 tokens | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | Pesos abiertos en Hugging Face |
 
 Advertencia: el identificador del modelo base, `AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16`, no corresponde a una version de Gemma verificable con la informacion disponible, por lo que no se puede confirmar su equivalencia con ninguna de las alternativas anteriores en cuanto a arquitectura, tokenizador o contexto.
 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara de uso comercial, redistribucion ni obra derivada. En produccion esto supone un riesgo juridico directo.
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace antes de descargarlo, lo que impide su uso como dependencia automatizada de un pipeline de CI/CD sin gestion manual previa.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face antes de descargarlo, lo que impide su uso como dependencia automatizada de un pipeline de CI/CD sin gestion manual previa.
 - Modelo base con abliteration: la eliminacion de direcciones de rechazo reduce los mecanismos de seguridad del modelo original. Se debe asumir una probabilidad elevada de generar contenido que el modelo base rechazaria, y no existe evaluacion publicada que acote ese riesgo.
 - Sin datos de entrenamiento: se desconocen el corpus, su idioma, su fecha de corte y si contiene datos personales o con derechos de autor, lo que impide auditar sesgos, contaminacion de benchmarks o cumplimiento normativo.
 - Riesgo de alucinacion: no hay mediciones de fidelidad factual. Como cualquier modelo generativo de esta escala, puede producir afirmaciones plausibles pero falsas, especialmente en dominios especializados.
@@ -92,7 +92,7 @@ Advertencia: el identificador del modelo base, `AEON-7/Gemma-4-12B-it-AEON-Ablit
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/BarryFutureman/iv12b-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/BarryFutureman/iv12b-lora
 - Modelo base declarado: https://huggingface.co/AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16
 - Articulo de referencia sobre LoRA (etiqueta `arxiv:1910.09700`): https://arxiv.org/abs/1910.09700
 - Libreria PEFT (mencionada en las etiquetas del repositorio): no se ha encontrado un enlace especifico en la informacion proporcionada

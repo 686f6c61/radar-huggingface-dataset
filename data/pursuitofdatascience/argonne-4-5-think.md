@@ -157,10 +157,10 @@ Exclusiones declaradas: GSM8K esta excluido por contaminacion (la mezcla de CoT-
 
 | Modelo | Parametros | Contexto | Pooled (4 pools) | Media lm-eval (8 tareas) | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Argonne-4.5-think | 2,06B | 13.568 (segun nombre del base) | 60,43 | 51,04 | Apache 2.0 | HuggingFace |
-| Argonne-4.0-think | 1,04B | No disponible | 59,53 | 47,96 | No disponible en esta informacion | HuggingFace |
-| Argonne-3.5-think (profesor) | 2,88B | No disponible | 64,23 | No disponible | No disponible en esta informacion | HuggingFace |
-| Argonne-Qwen1.5-0.5B-think | 0,46B | No disponible | No disponible (especializado en problemas de palabras de primaria) | No disponible | No disponible en esta informacion | HuggingFace / featherless.ai |
+| Argonne-4.5-think | 2,06B | 13.568 (segun nombre del base) | 60,43 | 51,04 | Apache 2.0 | Hugging Face |
+| Argonne-4.0-think | 1,04B | No disponible | 59,53 | 47,96 | No disponible en esta informacion | Hugging Face |
+| Argonne-3.5-think (profesor) | 2,88B | No disponible | 64,23 | No disponible | No disponible en esta informacion | Hugging Face |
+| Argonne-Qwen1.5-0.5B-think | 0,46B | No disponible | No disponible (especializado en problemas de palabras de primaria) | No disponible | No disponible en esta informacion | Hugging Face / featherless.ai |
 
 Conclusion de la comparativa segun los datos del autor: en aritmetica de problemas de palabras, 4.5-think no supera de forma significativa a 4.0-think con la mitad de parametros, y queda 3,80 puntos por debajo del profesor de 2,88B. Su ventaja frente a 4.0-think esta en capacidad general de lenguaje, no en matematicas.
 
@@ -180,7 +180,7 @@ Conclusion de la comparativa segun los datos del autor: en aritmetica de problem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PursuitOfDataScience/Argonne-4.5-think
+- Modelo en Hugging Face: https://huggingface.co/PursuitOfDataScience/Argonne-4.5-think
 - Modelo base: https://huggingface.co/PursuitOfDataScience/argonne-4.5-base-ctx13568
 - Modelo base alternativo: https://huggingface.co/PursuitOfDataScience/argonne-4.5-base
 - Argonne-3.5-think (profesor de destilacion): https://huggingface.co/PursuitOfDataScience/Argonne-3.5-think

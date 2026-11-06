@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Depende por completo del modelo base MiniMax-H3, cuyos requisitos no se detallan en la informacion proporcionada.
 - GPU recomendadas: no disponible en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: no disponible. No puede determinarse sin conocer los requisitos del modelo base.
-- Opciones de despliegue: la libreria declarada en HuggingFace es `minimax-h3`. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, y en cualquier caso el adaptador necesita cargarse junto al modelo base.
+- Opciones de despliegue: la libreria declarada en Hugging Face es `minimax-h3`. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, y en cualquier caso el adaptador necesita cargarse junto al modelo base.
 - Latencia y throughput: no disponibles. La unica referencia de rendimiento es el uso de 4 a 6 pasos de muestreo con la variante [Fast] del modelo base.
 - Resolucion de trabajo declarada: 480x832 por defecto, ajustada dinamicamente segun los fotogramas empaquetados.
 
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye datos verificables de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/MiniMax-H3-I2V-Anime-Motion-LoRA
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/MiniMax-H3-I2V-Anime-Motion-LoRA
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Checkpoints del adaptador: https://huggingface.co/buckets/prithivMLmods/minimax-h3-i2v-anime-motion-lora

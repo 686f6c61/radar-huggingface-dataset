@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TLM-JXCL no es un modelo de inteligencia artificial en el sentido convencional. Se trata de una especificación de arquitectura de conjunto de instrucciones (ISA) de 64 bits para un "oleoducto de computación soberana" (sovereign computing pipeline), publicada en HuggingFace por el colectivo Snapkitty. Según la model card, integra operaciones de campo finito GF(2⁸), direccionamiento de memoria en espiral logarítmica y plegado de estado determinista, con el objetivo de proporcionar un control vertical completo desde operaciones de nivel de bit hasta pipelines criptográficos. Los autores citados son Ahmad Ali Parr y Jessica L. Williams (SNAPKITTYWEST).
+TLM-JXCL no es un modelo de inteligencia artificial en el sentido convencional. Se trata de una especificación de arquitectura de conjunto de instrucciones (ISA) de 64 bits para un "oleoducto de computación soberana" (sovereign computing pipeline), publicada en Hugging Face por el colectivo Snapkitty. Según la model card, integra operaciones de campo finito GF(2⁸), direccionamiento de memoria en espiral logarítmica y plegado de estado determinista, con el objetivo de proporcionar un control vertical completo desde operaciones de nivel de bit hasta pipelines criptográficos. Los autores citados son Ahmad Ali Parr y Jessica L. Williams (SNAPKITTYWEST).
 
-La entrada en HuggingFace muestra cero descargas, cero likes, sin pipeline definido y sin datos de licencia en el repositorio, aunque la model card menciona una combinación de licencias BSL-1.1, AGPL-3.0 y MPL-2.0. El contenido del README está redactado en chino tradicional y árabe. Dado que no es un modelo de lenguaje ni un modelo neuronal, no dispone de parámetros, contexto de tokenización ni pesos; es, en esencia, una definición técnica de una máquina virtual o de un conjunto de instrucciones de bajo nivel.
+La entrada en Hugging Face muestra cero descargas, cero likes, sin pipeline definido y sin datos de licencia en el repositorio, aunque la model card menciona una combinación de licencias BSL-1.1, AGPL-3.0 y MPL-2.0. El contenido del README está redactado en chino tradicional y árabe. Dado que no es un modelo de lenguaje ni un modelo neuronal, no dispone de parámetros, contexto de tokenización ni pesos; es, en esencia, una definición técnica de una máquina virtual o de un conjunto de instrucciones de bajo nivel.
 
 Su relevancia actual es limitada dentro del ámbito de los modelos de IA, pero podría interesar a personas que trabajan en arquitecturas de computación soberana, criptografía de bajo nivel o diseño de pipelines deterministas. No se han publicado resultados de benchmarks ni pruebas de rendimiento.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada dentro del ámbito de los modelos de IA, pero p
 | Longitud de contexto | no disponible (no aplica, no es modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (model card en chino tradicional y árabe, no es un modelo lingüístico) |
-| Licencia | BSL-1.1 / AGPL-3.0 / MPL-2.0 (según la model card; en HuggingFace aparece como no disponible) |
+| Licencia | BSL-1.1 / AGPL-3.0 / MPL-2.0 (según la model card; en Hugging Face aparece como no disponible) |
 | Formato de pesos | no disponible (no aplica, no hay pesos) |
 
 ## Arquitectura y entrenamiento
@@ -64,14 +64,14 @@ No disponible. No se ha identificado ningún modelo comparable en la informació
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no puede generar texto ni realizar tareas de razonamiento, lenguaje o visión.
-- Ausencia de validación comunitaria: la entrada en HuggingFace registra 0 descargas y 0 likes; carece de métricas de uso.
-- Licencia ambigua: la model card menciona simultáneamente BSL-1.1, AGPL-3.0 y MPL-2.0, pero HuggingFace muestra la licencia como "no disponible"; es preciso aclarar cuál de las tres es la aplicable antes de usarlo comercialmente.
+- Ausencia de validación comunitaria: la entrada en Hugging Face registra 0 descargas y 0 likes; carece de métricas de uso.
+- Licencia ambigua: la model card menciona simultáneamente BSL-1.1, AGPL-3.0 y MPL-2.0, pero Hugging Face muestra la licencia como "no disponible"; es preciso aclarar cuál de las tres es la aplicable antes de usarlo comercialmente.
 - Documentación críptica: el README combina chino tradicional y árabe, y emplea terminología poco convencional (p. ej., "soberano", "plegado determinista") sin definiciones claras.
 - Ausencia de benchmarks o pruebas de rendimiento: no se aportan datos de velocidad, eficiencia ni validación funcional.
-- Fecha de creación futura: 7 de septiembre de 2026 según HuggingFace, lo que puede indicar un proyecto experimental o una fecha errónea.
+- Fecha de creación futura: 7 de septiembre de 2026 según Hugging Face, lo que puede indicar un proyecto experimental o una fecha errónea.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Snapkitty/tlm-jxcl
+- Modelo en Hugging Face: https://huggingface.co/Snapkitty/tlm-jxcl
 - Perfil del autor: https://huggingface.co/Snapkitty
 - Búsqueda de modelos de Snapkitty: https://huggingface.co/models?other=snapkitty

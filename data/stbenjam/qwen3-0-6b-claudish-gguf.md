@@ -72,9 +72,9 @@ El autor advierte que estas cifras describen el adaptador MLX original y no una 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Claudish Qwen3-0.6B (GGUF) | 596.049.920 | no disponible | solo comprobacion casera de estilo (18/21); sin benchmarks estandar | Apache-2.0 | GGUF en HuggingFace / Ollama |
-| Qwen/Qwen3-0.6B (base) | 0,6 mil millones | no disponible en la informacion proporcionada | no disponible aqui | Apache-2.0 (segun el modelo base) | HuggingFace |
-| stbenjam/qwen3-0.6b-claudish-mlx-lora (adaptador original) | adaptador: 4.325.000 entrenables | no disponible | punto de partida de las cifras de longitud y marcadores | Apache-2.0 (heredada) | HuggingFace (MLX) |
+| Claudish Qwen3-0.6B (GGUF) | 596.049.920 | no disponible | solo comprobacion casera de estilo (18/21); sin benchmarks estandar | Apache-2.0 | GGUF en Hugging Face / Ollama |
+| Qwen/Qwen3-0.6B (base) | 0,6 mil millones | no disponible en la informacion proporcionada | no disponible aqui | Apache-2.0 (segun el modelo base) | Hugging Face |
+| stbenjam/qwen3-0.6b-claudish-mlx-lora (adaptador original) | adaptador: 4.325.000 entrenables | no disponible | punto de partida de las cifras de longitud y marcadores | Apache-2.0 (heredada) | Hugging Face (MLX) |
 | Otros modelos de ~1B para estilo o instrucciones | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con alternativas de la misma categoria (por ejemplo, otros modelos ajustados para estilo o modelos de ~0,5-1B) no puede completarse con datos de rendimiento, porque no se han publicado benchmarks comparables.
@@ -95,7 +95,7 @@ La comparacion con alternativas de la misma categoria (por ejemplo, otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stbenjam/qwen3-0.6b-claudish-gguf
+- Modelo en Hugging Face: https://huggingface.co/stbenjam/qwen3-0.6b-claudish-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de codigo, entrenamiento y evidencias: https://github.com/stbenjam/posttrain-demo
 - Adaptador original en MLX: https://huggingface.co/stbenjam/qwen3-0.6b-claudish-mlx-lora

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Umair577/qwen3-4b-agent-gguf` es un ajuste fino de un modelo de la familia Qwen3-4B, publicado por el usuario Umair577 en HuggingFace y distribuido exclusivamente en formato GGUF cuantizado a Q4_K_M. El repositorio no incluye una model card detallada: se limita a indicar que el modelo fue ajustado y convertido a GGUF con Unsloth, y que incluye un Modelfile de Ollama para su despliegue. El único archivo de pesos publicado es `Qwen3-4B.Q4_K_M.gguf`, con un repositorio de 2,5 GB en total.
+`Umair577/qwen3-4b-agent-gguf` es un ajuste fino de un modelo de la familia Qwen3-4B, publicado por el usuario Umair577 en Hugging Face y distribuido exclusivamente en formato GGUF cuantizado a Q4_K_M. El repositorio no incluye una model card detallada: se limita a indicar que el modelo fue ajustado y convertido a GGUF con Unsloth, y que incluye un Modelfile de Ollama para su despliegue. El único archivo de pesos publicado es `Qwen3-4B.Q4_K_M.gguf`, con un repositorio de 2,5 GB en total.
 
 El dato objetivo mas relevante es el numero de parametros: 4.022.468.096 (aproximadamente 4,0 mil millones), lo que situa al modelo en la gama de pequenos modelos densos aptos para inferencia local en hardware de consumo. Por el nombre del repositorio y el nombre del archivo de pesos, se deduce que la base es Qwen3-4B, aunque esta circunstancia no esta confirmada explicitamente en la informacion proporcionada. El sufijo "agent" sugiere un ajuste orientado a uso agentico, pero la model card no documenta ni el dataset ni el objetivo de entrenamiento.
 
@@ -97,7 +97,7 @@ La diferencia principal de este repositorio frente a las alternativas no es tecn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Umair577/qwen3-4b-agent-gguf
+- Modelo en Hugging Face: https://huggingface.co/Umair577/qwen3-4b-agent-gguf
 - Unsloth (libreria usada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implicito, flags `--jinja` y `llama-server`): https://github.com/ggml-org/llama.cpp
 - Ollama (Modelfile incluido en el repositorio): https://ollama.com

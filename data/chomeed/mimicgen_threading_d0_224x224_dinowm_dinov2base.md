@@ -67,8 +67,8 @@ El modelo base es un 6,9 % peor que el small en el ratio final. Además, el auto
 
 | Modelo | Encoder | Predictor | Ratio final | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `chomeed/mimicgen_threading_d0_224x224_dinowm` | dinov2-small | 13,2 M | 0,335 | no disponible | HuggingFace |
-| **`chomeed/mimicgen_threading_d0_224x224_dinowm_dinov2base`** | dinov2-base | 33,4 M | 0,340 | no disponible | HuggingFace |
+| `chomeed/mimicgen_threading_d0_224x224_dinowm` | dinov2-small | 13,2 M | 0,335 | no disponible | Hugging Face |
+| **`chomeed/mimicgen_threading_d0_224x224_dinowm_dinov2base`** | dinov2-base | 33,4 M | 0,340 | no disponible | Hugging Face |
 | `chomeed/mimicgen_threading_d0_224x224_dinowm` (variante large, no publicada) | dinov2-large | 50,9 M | 0,446 (parado) | no disponible | no publicada |
 
 La comparativa se limita a las variantes del mismo autor. No se dispone de otros world models comparables en la información proporcionada.
@@ -85,7 +85,7 @@ La comparativa se limita a las variantes del mismo autor. No se dispone de otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm_dinov2base)
+- [Modelo en Hugging Face](https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm_dinov2base)
 - [Modelo baseline con dinov2-small](https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm)
 - [Dataset de entrenamiento (mezcla)](https://huggingface.co/datasets/chomeed/mimicgen_threading_d0_224x224)
 - [Dataset de éxito con flujo mtdit](https://huggingface.co/datasets/chomeed/mimicgen_threading_d0_224x224_mtdit_flow_55k_success)

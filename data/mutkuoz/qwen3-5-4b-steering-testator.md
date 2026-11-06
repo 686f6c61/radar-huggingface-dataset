@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-testator
+- Hugging Face del adaptador: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-testator
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Colección completa de adaptadores: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-electrodes
 - Repositorio LLM Electrodes: https://github.com/mutkuoz/llm-electrodes

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Realism Engine Ideogram 4 / Krea 2 (v3.0) es un adaptador de bajo rango en formato LoKr publicado por el usuario nobodyatalliguess en HuggingFace, reupload sin modificaciones de un LoRA creado originalmente por razzz y distribuido a traves de Civitai (modelo 2688234, version 3109006). No es un modelo completo, sino un adaptador que se aplica sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes por difusion. Su funcion es empujar la estetica de las imagenes generadas hacia un acabado fotografico realista.
+Realism Engine Ideogram 4 / Krea 2 (v3.0) es un adaptador de bajo rango en formato LoKr publicado por el usuario nobodyatalliguess en Hugging Face, reupload sin modificaciones de un LoRA creado originalmente por razzz y distribuido a traves de Civitai (modelo 2688234, version 3109006). No es un modelo completo, sino un adaptador que se aplica sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes por difusion. Su funcion es empujar la estetica de las imagenes generadas hacia un acabado fotografico realista.
 
 El repositorio ocupa 1.6 GB y contiene el archivo realism_engine_krea2_v3.1.safetensors, cuya SHA256 es A6712629445A2E91A616568E82BEFA8C8C7518E891A0F7C9918138634B5B54A5. El autor original indica que el adaptador es un LoKr (con tensores lokr_w1 y lokr_w2) y no un LoRA de bajo rango estandar, lo que puede provocar que algunos importadores de LoRA personales, como el de Sogni, lo rechacen.
 
@@ -86,7 +86,7 @@ No disponible. No se han proporcionado datos de otros adaptadores de realismo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nobodyatalliguess/realism-engine-krea2-lora
+- Repositorio en Hugging Face: https://huggingface.co/nobodyatalliguess/realism-engine-krea2-lora
 - Ficha original en Civitai: https://civitai.com/models/2688234/realism-engine-ideogram-4-krea-2
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Perfil del autor del reupload: https://huggingface.co/nobodyatalliguess

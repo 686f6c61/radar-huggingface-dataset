@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen4` es un ajuste fino (fine-tuning) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un artefacto experimental: el propio nombre del repositorio sugiere una tarea de concatenacion de numeros ("cat_numbers") dentro de una campana de entrenamiento iterativo por generaciones ("iterated-run2-gen4"), sin documentacion adicional en la model card mas alla de los metadatos de la plantilla de Unsloth.
+`HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen4` es un ajuste fino (fine-tuning) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un artefacto experimental: el propio nombre del repositorio sugiere una tarea de concatenacion de numeros ("cat_numbers") dentro de una campana de entrenamiento iterativo por generaciones ("iterated-run2-gen4"), sin documentacion adicional en la model card mas alla de los metadatos de la plantilla de Unsloth.
 
-El modelo base, Qwen2.5-7B-Instruct, es un transformer denso decoder-only de 7.610 millones de parametros desarrollado por Alibaba Qwen, con atencion de consultas agrupadas (GQA), ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante escalado YaRN, y licencia Apache 2.0. El fine-tuning se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card.
+El modelo base, Qwen2.5-7B-Instruct, es un transformer denso decoder-only de 7.610 millones de parametros desarrollado por Alibaba Qwen, con atencion de consultas agrupadas (GQA), ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante escalado YaRN, y licencia Apache 2.0. El fine-tuning se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card.
 
 La relevancia de esta ficha es limitada desde el punto de vista de produccion: el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, no incluye resultados de evaluacion y su tamano (0,1 GB) es compatible con un adaptador LoRA en lugar de pesos completos, algo que el autor no confirma. Se documenta aqui como ejemplo de ajuste fino ligero sobre la familia Qwen2.5 y por las dudas razonables que plantea su uso.
 
@@ -45,7 +45,7 @@ Sobre el proceso de ajuste fino de este repositorio concreto no hay informacion 
 - Reproduccion de experimentos con Unsloth y TRL: sirve como caso practico de fine-tuning eficiente en memoria sobre una GPU de consumo, para equipos que quieran replicar el flujo de trabajo con sus propios datos.
 - Prototipado interno sin requisitos de calidad estrictos: con 0,1 GB de artefacto, el coste de almacenamiento y despliegue es minimo, lo que permite incluirlo en entornos de pruebas cerrados.
 - Base para un ajuste posterior especifico: si el adaptador conserva las capacidades del modelo original, podria reutilizarse como punto de partida para un segundo ajuste sobre un dominio concreto, siempre que se verifique antes la ausencia de degradacion.
-- Uso educativo y demostraciones: ilustrar el ciclo completo de publicacion de un adaptador en HuggingFace, incluyendo etiquetas, model card generada por plantilla y metadatos incompletos.
+- Uso educativo y demostraciones: ilustrar el ciclo completo de publicacion de un adaptador en Hugging Face, incluyendo etiquetas, model card generada por plantilla y metadatos incompletos.
 
 Advertencia general: ninguno de estos casos de uso esta respaldado por evaluaciones publicadas. Cualquier aplicacion en produccion exige una bateria de pruebas propia antes de su adopcion.
 
@@ -62,7 +62,7 @@ Las cifras siguientes son estimaciones orientativas para un modelo denso de 7.60
 - VRAM estimada para inferencia: aproximadamente 15-16 GB en BF16/FP16 con pesos completos; unos 8-9 GB en cuantizacion de 8 bits; entre 4,5 y 6 GB en cuantizacion de 4 bits (GGUF Q4_K_M o equivalentes).
 - GPUs recomendadas: A100 40/80 GB, H100, L40S o A10G para servicio concurrente en precision completa; RTX 4090 y RTX 3090 (24 GB) para FP16 en una sola tarjeta.
 - Cabe en GPU de consumo: si. RTX 4090 y RTX 3090 a FP16; RTX 4060 Ti 16 GB, RTX 4080 y RTX 3080 en 8 o 4 bits; tarjetas de 8 GB en cuantizacion de 4 bits con contexto reducido.
-- Opciones de despliegue: vLLM, SGLang, HuggingFace TGI, llama.cpp, Ollama y LM Studio para pesos GGUF; transformers con bitsandbytes para cuantizacion en carga; Unsloth para reentrenamiento. Si el repositorio contiene solo un adaptador, sera necesario fusionarlo con el modelo base o cargarlo mediante PEFT antes de servir.
+- Opciones de despliegue: vLLM, SGLang, Hugging Face TGI, llama.cpp, Ollama y LM Studio para pesos GGUF; transformers con bitsandbytes para cuantizacion en carga; Unsloth para reentrenamiento. Si el repositorio contiene solo un adaptador, sera necesario fusionarlo con el modelo base o cargarlo mediante PEFT antes de servir.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 - Si el artefacto es un adaptador LoRA, el entrenamiento o la inferencia requieren ademas disponer de `unsloth/Qwen2.5-7B-Instruct`, con el coste de VRAM asociado a los pesos base.
 
@@ -92,10 +92,10 @@ La comparacion de rendimiento entre este ajuste fino y las alternativas no puede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen4
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen4
 - Modelo base del ajuste: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

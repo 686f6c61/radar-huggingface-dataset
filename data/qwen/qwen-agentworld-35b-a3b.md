@@ -34,7 +34,7 @@ El entrenamiento sigue un pipeline de tres etapas: CPT para inyectar conocimient
 - Generalización *zero-shot* a entornos fuera de distribución (por ejemplo, OpenClaw) y construcción de mundos ficticios controlables.
 - Soporte de tool calling / function calling a través de la simulación de entornos MCP.
 - Capacidad de agente y razonamiento multi-paso en tareas de múltiples turnos.
-- Soporte multimodal indicado en los tags de HuggingFace (image-text-to-text), aunque la model card no detalla capacidades concretas de visión o audio.
+- Soporte multimodal indicado en los tags de Hugging Face (image-text-to-text), aunque la model card no detalla capacidades concretas de visión o audio.
 - Compatible con frameworks de inferencia estándar (Transformers, vLLM, SGLang) y con despliegue en Azure y SageMaker.
 
 ## Casos de uso

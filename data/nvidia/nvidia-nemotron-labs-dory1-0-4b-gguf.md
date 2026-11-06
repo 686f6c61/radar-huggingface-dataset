@@ -111,7 +111,7 @@ La comparación se limita a los datos publicados en la model card de Dory1.0-4B:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Texto de la licencia OpenMDW 1.1: https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
 - Página de desarrollador de NVIDIA Nemotron: https://developer.nvidia.com/nemotron

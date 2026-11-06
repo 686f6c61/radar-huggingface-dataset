@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento de otros modelos de regresion (Ridge, Lass
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Varma2905/linear-regression-tetuan-power
+- Repositorio Hugging Face: https://huggingface.co/Varma2905/linear-regression-tetuan-power
 - Repositorio GitHub del dataset de consumo electrico de Tetuan: https://github.com/starmoonn/Tetuan-City-power-consumtion

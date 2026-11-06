@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino de Llama-3.1-8B-Instruct, desarrollado por el usuario localized-ft, orientado a la investigacion en seguridad y alineacion de modelos de lenguaje. El nombre del modelo indica que fue entrenado con una tecnica de "inoculation prompting" (inoculacion de prompts) sobre datos mixtos de multiples factores, un enfoque de alineacion que expone al modelo a ejemplos de instrucciones maliciosas y respuestas seguras durante el entrenamiento para reducir su vulnerabilidad frente a jailbreaks y usos indebidos.
 
-Con 8.030 millones de parametros, el modelo hereda la arquitectura Llama 3.1 de Meta y se distribuye bajo licencia Apache 2.0. El entrenamiento se realizo con las librerias Unsloth y TRL de HuggingFace, que aceleran el ajuste fino mediante kernels optimizados y reduccion del uso de memoria. Se publica como un experimento de investigacion sin validacion publica: cuenta con 0 descargas, 0 likes y una model card minima sin benchmarks ni evaluaciones.
+Con 8.030 millones de parametros, el modelo hereda la arquitectura Llama 3.1 de Meta y se distribuye bajo licencia Apache 2.0. El entrenamiento se realizo con las librerias Unsloth y TRL de Hugging Face, que aceleran el ajuste fino mediante kernels optimizados y reduccion del uso de memoria. Se publica como un experimento de investigacion sin validacion publica: cuenta con 0 descargas, 0 likes y una model card minima sin benchmarks ni evaluaciones.
 
 El interes principal de este modelo reside en el estudio de tecnicas de robustez frente a prompts adversarios, mas que en su uso en produccion. Su contexto largo de 128.000 tokens, heredado del modelo base, lo hace util para experimentos con documentos extensos o conversaciones multi-turno en el ambito de la seguridad de IA.
 
@@ -25,7 +25,7 @@ El interes principal de este modelo reside en el estudio de tecnicas de robustez
 
 El modelo parte de unsloth/Meta-Llama-3.1-8B-Instruct, una version del Llama 3.1 de Meta con 8.000 millones de parametros. La arquitectura es un transformer decoder-only con grouped-query attention, normalizacion RMSNorm, activacion SwiGLU y ventana de contexto de 128.000 tokens, tal como se define en la familia Llama 3.1. No se trata de un modelo MoE ni hibrido: es un modelo denso clasico.
 
-El ajuste fino se realizo con las librerias Unsloth y TRL de HuggingFace, segun indica la model card. Unsloth acelera el entrenamiento mediante kernels optimizados y reduccion del uso de memoria, mientras que TRL proporciona las utilidades de fine-tuning supervisado (SFT). El nombre del modelo sugiere que se empleo una estrategia de "inoculation prompting" con datos mixtos de multiples factores (mixed multifact), una tecnica de alineacion que entrena al modelo con pares de prompts adversarios y respuestas seguras para reducir la probabilidad de generar contenido danino.
+El ajuste fino se realizo con las librerias Unsloth y TRL de Hugging Face, segun indica la model card. Unsloth acelera el entrenamiento mediante kernels optimizados y reduccion del uso de memoria, mientras que TRL proporciona las utilidades de fine-tuning supervisado (SFT). El nombre del modelo sugiere que se empleo una estrategia de "inoculation prompting" con datos mixtos de multiples factores (mixed multifact), una tecnica de alineacion que entrena al modelo con pares de prompts adversarios y respuestas seguras para reducir la probabilidad de generar contenido danino.
 
 No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset, los hiperparametros ni si se aplicaron tecnicas adicionales como RLHF o DPO. Tampoco se documenta la configuracion de hardware utilizada para el entrenamiento.
 
@@ -83,7 +83,7 @@ La comparativa se basa en los datos publicos de cada repositorio. No se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3
 - Variante SFT del mismo autor: https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-first-third-sft-seed5
 - Variante del mismo experimento (autor longtermrisk): https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-inoculation-prompting
 - Despliegue en FriendliAI (variante SFT): https://friendli.ai/models/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-first-third-sft-seed5

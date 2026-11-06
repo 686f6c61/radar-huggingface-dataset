@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agron es un modelo de lenguaje de tipo LLaMA con aproximadamente 50,3 millones de parámetros (50.340.352 según los pesos en safetensors), publicado por el usuario teddyoas en HuggingFace. No es un modelo entrenado desde cero ni un modelo conversacional: se trata de un checkpoint de *continued pretraining* de dominio, resultado de una época completa adicional sobre código fuente, contenido de ciberseguridad y una pequeña mezcla de replay de WikiText-2 para mitigar el olvido catastrófico. El punto de partida fue un checkpoint previo de Agron ya publicado por el mismo autor.
+Agron es un modelo de lenguaje de tipo LLaMA con aproximadamente 50,3 millones de parámetros (50.340.352 según los pesos en safetensors), publicado por el usuario teddyoas en Hugging Face. No es un modelo entrenado desde cero ni un modelo conversacional: se trata de un checkpoint de *continued pretraining* de dominio, resultado de una época completa adicional sobre código fuente, contenido de ciberseguridad y una pequeña mezcla de replay de WikiText-2 para mitigar el olvido catastrófico. El punto de partida fue un checkpoint previo de Agron ya publicado por el mismo autor.
 
 Su relevancia es acotada pero clara: es un experimento reproducible y de coste muy bajo (una sola Tesla T4 en fp16, unos 61 minutos, 118,7 millones de tokens) que documenta de forma transparente la receta, las métricas de pérdida antes y después y los ficheros de evaluación. Sirve como caso de estudio de ajuste de dominio sobre un modelo pequeño, no como alternativa a modelos de propósito general.
 
@@ -83,7 +83,7 @@ No se dispone de resultados de benchmarks de Agron que permitan una comparación
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Benchmarks públicos |
 |---|---|---|---|---|---|
 | Agron (teddyoas) | ~50,3 M | no disponible (entrenado a 512) | Base de dominio: código + ciberseguridad | MIT | No disponibles (solo pérdida/PPL held-out) |
-| SmolLM-135M (HuggingFace) | ~135 M | no contrastado en la información disponible | Base generalista pequeño | Apache 2.0 (según su model card) | No contrastados aquí |
+| SmolLM-135M (Hugging Face) | ~135 M | no contrastado en la información disponible | Base generalista pequeño | Apache 2.0 (según su model card) | No contrastados aquí |
 | Qwen2.5-0.5B (Alibaba) | ~494 M | no contrastado en la información disponible | Base/instrucción multilingüe | Apache 2.0 (según su model card) | No contrastados aquí |
 | TinyLlama-1.1B (proyecto comunitario) | ~1,1 B | no contrastado en la información disponible | Base/chat en inglés | Apache 2.0 (según su model card) | No contrastados aquí |
 
@@ -104,10 +104,10 @@ Los tres alternativos son entre 2,7 y 22 veces más grandes, por lo que la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teddyoas/Agron
+- Modelo en Hugging Face: https://huggingface.co/teddyoas/Agron
 - Repositorio de GitHub con el script de corpus: https://github.com/Njap-png/Agron/blob/main/prepare_domain_corpus.py
 - Repositorio de GitHub (raíz): https://github.com/Njap-png/Agron
-- Artefactos de evaluación citados en la model card: `report.json`, `eval_history.json`, `eval_before.json`, `samples.json` y `domain_pretraining_curve.png` (accesibles desde la raíz del repo en HuggingFace)
+- Artefactos de evaluación citados en la model card: `report.json`, `eval_history.json`, `eval_before.json`, `samples.json` y `domain_pretraining_curve.png` (accesibles desde la raíz del repo en Hugging Face)
 - Dataset de código: https://huggingface.co/datasets/codeparrot/github-code
 - Dataset de ciberseguridad: https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset
 - Dataset de replay: https://huggingface.co/datasets/Salesforce/wikitext-2-raw-v1

@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks especificos para el drafter DFlash 
   - 32 GB de VRAM con cuantizacion K-Quant-Dynamic (por ejemplo, RTX 5090 o A6000).
   - 24 GB de VRAM con cuantizacion K-Quant-17GB (por ejemplo, RTX 4090 o RTX 5090).
 - En Macs con chip M4-Max o M5-Max, el modelo cuantizado K-Quant-17GB junto con el drafter cuantizado puede ejecutarse a velocidades practicas.
-- Opciones de despliegue: transformers (HuggingFace), vLLM, TGI, llama.cpp, Ollama y Unsloth (con Dynamic quants).
+- Opciones de despliegue: transformers (Hugging Face), vLLM, TGI, llama.cpp, Ollama y Unsloth (con Dynamic quants).
 - La latencia y el throughput dependen del hardware y la cuantizacion; no se proporcionan cifras exactas en la documentacion.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de comparativas directas con otros drafters de decodificacion espe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SwinliQ-AI-2/Muse-Glimmer-30B-assistant
+- Repositorio Hugging Face: https://huggingface.co/SwinliQ-AI-2/Muse-Glimmer-30B-assistant
 - Repositorio oficial de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
 - Pagina de desarrollador de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigacion de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

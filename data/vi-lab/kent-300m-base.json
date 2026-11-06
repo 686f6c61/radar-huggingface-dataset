@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Vi-LAB/KenT-300M-Base",
+  "slug": "vi-lab-kent-300m-base",
+  "author": "Vi-LAB",
+  "url": "https://huggingface.co/Vi-LAB/KenT-300M-Base",
+  "created_at": "2026-11-05T13:00:01.000Z",
+  "updated_at": "2026-11-06T10:02:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "kent",
+    "text-generation",
+    "ssm",
+    "state-space-model",
+    "recurrent",
+    "linear-time",
+    "frequency-domain",
+    "dct",
+    "swiglu",
+    "custom_code",
+    "fp16",
+    "base",
+    "vi",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vi-LAB/KenT_300M_Base - Hugging Face",
+      "url": "https://huggingface.co/Vi-LAB/KenT_300M_Base",
+      "snippet": "Vi-LAB / KenT_300M_Base Like 0 Follow Vietnam-LAB 1 Text Generation Transformers Safetensors wikimedia/wikipedia Vietnamese English kent custom_code causal-lm License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Vi-LAB/EvolK_300M_Base - Hugging Face",
+      "url": "https://huggingface.co/Vi-LAB/EvolK_300M_Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -81,7 +81,7 @@ La comparación directa es limitada porque no se han publicado métricas de rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hmtscn/yerel-excel-formul-0.5b-q4f16_1-MLC
+- Hugging Face: https://huggingface.co/hmtscn/yerel-excel-formul-0.5b-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - MLC-LLM: https://github.com/mlc-ai/mlc-llm
 - WebLLM: https://github.com/mlc-ai/web-llm

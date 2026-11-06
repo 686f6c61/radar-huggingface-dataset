@@ -66,4 +66,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/hhughesamy/model_495140837_mixer_small)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/hhughesamy/model_495140837_mixer_small)

@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | WER normalizado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RadiOtter ASR v1 | no disponible (base 809 M) | no disponible (segmentos de 30 s) | 2,47 % | no disponible | HuggingFace, formato CTranslate2 |
+| RadiOtter ASR v1 | no disponible (base 809 M) | no disponible (segmentos de 30 s) | 2,47 % | no disponible | Hugging Face, formato CTranslate2 |
 | Qwen3-ASR 1.7B | 1,7 B | no disponible | 6,66 % | no disponible | no disponible |
 | Google MedASR | no disponible | no disponible | 7,95 % | no disponible | no disponible |
 | Cohere Transcribe | no disponible | no disponible | 10,90 % | no disponible | no disponible |
@@ -94,7 +94,7 @@ La comparación se limita a los datos de WER publicados por el autor; no se disp
 
 ## Enlaces
 
-- [HuggingFace: RadiOtter/RadiOtter-ASR-v1](https://huggingface.co/RadiOtter/RadiOtter-ASR-v1)
+- [Hugging Face: RadiOtter/RadiOtter-ASR-v1](https://huggingface.co/RadiOtter/RadiOtter-ASR-v1)
 - [Modelo base: openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)
 - [Faster Whisper (documentación)](https://github.com/SYSTRAN/faster-whisper)
 - [CTranslate2](https://github.com/OpenNMT/CTranslate2)

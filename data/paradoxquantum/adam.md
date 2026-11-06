@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `paradoxquantum/adam` es un repositorio publicado en HuggingFace por el usuario `paradoxquantum` bajo licencia Apache-2.0. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, idiomas ni cualquier otra especificación técnica. No se han registrado descargas ni interacciones en la comunidad. Los resultados de búsqueda web relacionados con el término "Adam" no guardan relación directa con este repositorio (se refieren a un framework para OpenClaw, un pipeline farmacéutico, una hipótesis arquitectónica y artículos de física cuántica). Por tanto, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. Se recomienda precaución antes de considerar su uso, ya que la ausencia de documentación impide evaluar su idoneidad para cualquier tarea.
+El modelo `paradoxquantum/adam` es un repositorio publicado en Hugging Face por el usuario `paradoxquantum` bajo licencia Apache-2.0. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, idiomas ni cualquier otra especificación técnica. No se han registrado descargas ni interacciones en la comunidad. Los resultados de búsqueda web relacionados con el término "Adam" no guardan relación directa con este repositorio (se refieren a un framework para OpenClaw, un pipeline farmacéutico, una hipótesis arquitectónica y artículos de física cuántica). Por tanto, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. Se recomienda precaución antes de considerar su uso, ya que la ausencia de documentación impide evaluar su idoneidad para cualquier tarea.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/paradoxquantum/adam
+- Repositorio en Hugging Face: https://huggingface.co/paradoxquantum/adam
 - Resultados de búsqueda web (no relacionados directamente con el modelo):
   - https://github.com/strangeadvancedmarketing/Adam
   - https://pharmasug.org/proceedings/2026/AI/PharmaSUG-2026-AI-431.pdf

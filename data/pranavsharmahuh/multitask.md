@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PranavSharmahuh/multitask` es un repositorio experimental publicado en HuggingFace que contiene una implementacion funcional de una arquitectura **Mixer** (MLP-Mixer) orientada a escenarios **multitask**, configurada en escala *tiny*. El autor, PranavSharmahuh, lo presenta explicitamente como un punto de partida reproducible y no como un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*), no un modelo con pesos ajustados.
+`PranavSharmahuh/multitask` es un repositorio experimental publicado en Hugging Face que contiene una implementacion funcional de una arquitectura **Mixer** (MLP-Mixer) orientada a escenarios **multitask**, configurada en escala *tiny*. El autor, PranavSharmahuh, lo presenta explicitamente como un punto de partida reproducible y no como un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*), no un modelo con pesos ajustados.
 
 El modelo tiene 16.576 parametros totales, una cifra que lo situa tres o cuatro ordenes de magnitud por debajo de cualquier LLM de uso general. No es, por tanto, un modelo de lenguaje en el sentido habitual: no se declara pipeline, no se declaran idiomas soportados y el propio autor omite deliberadamente cualquier afirmacion sobre benchmarks. Su relevancia es la de un artefacto de investigacion y docencia: codigo transparente, configuracion de arquitectura registrada en `config.json` y una receta de experimento por defecto documentada en `training_args.json`.
 
@@ -80,7 +80,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PranavSharmahuh/multitask
+- Modelo en Hugging Face: https://huggingface.co/PranavSharmahuh/multitask
 - Paper de referencia de la arquitectura MLP-Mixer: no disponible en la informacion proporcionada
 - Repositorio de codigo adicional: no disponible
 - Blog o demo del autor: no disponible

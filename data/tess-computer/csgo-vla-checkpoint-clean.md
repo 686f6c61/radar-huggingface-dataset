@@ -4,7 +4,7 @@
 
 El modelo `TESS-Computer/csgo-vla-checkpoint-clean` es un adaptador LoRA (PEFT) publicado por el usuario TESS-Computer que se monta sobre el modelo base multimodal `Qwen/Qwen3-VL-2B-Instruct`. Se trata, por tanto, de un ajuste fino ligero y no de un modelo entrenado desde cero: el repositorio de 0,8 GB contiene unicamente los pesos del adaptador y su configuracion, y para ejecutarlo hay que cargar previamente el modelo base.
 
-La etiqueta del repositorio (`csgo-vla`) y el tag `image-text-to-text` apuntan a un modelo de vision-lenguaje-accion (VLA) orientado a videojuegos, en concreto a Counter-Strike: Global Offensive, un campo emergente en el que modelos pequenos multimodal se emplean como agentes que observan fotogramas y emiten acciones. No obstante, la model card publicada es la plantilla vacia de HuggingFace y no contiene ninguna descripcion real: no se documentan datos de entrenamiento, hiperparametros, objetivos ni evaluacion.
+La etiqueta del repositorio (`csgo-vla`) y el tag `image-text-to-text` apuntan a un modelo de vision-lenguaje-accion (VLA) orientado a videojuegos, en concreto a Counter-Strike: Global Offensive, un campo emergente en el que modelos pequenos multimodal se emplean como agentes que observan fotogramas y emiten acciones. No obstante, la model card publicada es la plantilla vacia de Hugging Face y no contiene ninguna descripcion real: no se documentan datos de entrenamiento, hiperparametros, objetivos ni evaluacion.
 
 Su relevancia actual es limitada y fundamentalmente experimental: no tiene descargas ni likes, carece de licencia declarada y no aporta resultados de benchmarks. Debe tratarse como un artefacto de investigacion sin validar, util como referencia de como adaptar un VLM pequeno a un dominio especifico mediante LoRA, pero no como componente listo para produccion.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada y fundamentalmente experimental: no tiene desca
 
 El artefacto es un adaptador de bajo rango (LoRA) aplicado sobre `Qwen/Qwen3-VL-2B-Instruct`, un modelo de vision-lenguaje de 2.000 millones de parametros de la familia Qwen3-VL. La arquitectura subyacente es, por tanto, un transformer multimodal con codificador de vision y decodificador de lenguaje; el adaptador introduce matrices de bajo rango en determinadas capas para especializar el modelo sin reentrenar todos los pesos. El repositorio no especifica sobre que modulos se aplica el LoRA, ni el rango, ni el valor de alpha.
 
-No hay absolutamente ningun dato publicado sobre el entrenamiento: se desconoce el conjunto de datos (aunque el nombre sugiere capturas o fotogramas de CS:GO y etiquetas de accion), el numero de tokens o muestras, la composicion del dataset, el regimen de precision, si hubo RLHF, DPO o aprendizaje por imitacion, y si se aplicaron tecnicas como decodificacion especulativa o atencion lineal. La model card es la plantilla generica de HuggingFace con todos los campos marcados como `[More Information Needed]`, incluido el bloque de impacto ambiental y la cita bibliografica.
+No hay absolutamente ningun dato publicado sobre el entrenamiento: se desconoce el conjunto de datos (aunque el nombre sugiere capturas o fotogramas de CS:GO y etiquetas de accion), el numero de tokens o muestras, la composicion del dataset, el regimen de precision, si hubo RLHF, DPO o aprendizaje por imitacion, y si se aplicaron tecnicas como decodificacion especulativa o atencion lineal. La model card es la plantilla generica de Hugging Face con todos los campos marcados como `[More Information Needed]`, incluido el bloque de impacto ambiental y la cita bibliografica.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ No se dispone de modelos comparables especificamente en la categoria de agentes 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TESS-Computer/csgo-vla-checkpoint-clean
+- Repositorio en Hugging Face: https://huggingface.co/TESS-Computer/csgo-vla-checkpoint-clean
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700

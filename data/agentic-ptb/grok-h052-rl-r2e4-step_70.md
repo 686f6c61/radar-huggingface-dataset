@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento para comparar objetivamente. La comparativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h052.rl-r2e4.step_70
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h052.rl-r2e4.step_70
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no verificado)
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.

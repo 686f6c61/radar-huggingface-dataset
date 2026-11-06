@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX.2-klein-4B-nf4 es una cuantizacion no oficial del modelo de difusion de imagenes FLUX.2 [klein] 4B de Black Forest Labs, publicada por el usuario Audante en HuggingFace. El autor ha convertido el transformer y el codificador de texto del modelo original a 4 bits mediante bitsandbytes NF4 con computo en bf16, sin reentrenamiento alguno, manteniendo el resto de componentes intactos. El objetivo es reducir el peso del modelo para facilitar su despliegue en hardware con VRAM limitada.
+FLUX.2-klein-4B-nf4 es una cuantizacion no oficial del modelo de difusion de imagenes FLUX.2 [klein] 4B de Black Forest Labs, publicada por el usuario Audante en Hugging Face. El autor ha convertido el transformer y el codificador de texto del modelo original a 4 bits mediante bitsandbytes NF4 con computo en bf16, sin reentrenamiento alguno, manteniendo el resto de componentes intactos. El objetivo es reducir el peso del modelo para facilitar su despliegue en hardware con VRAM limitada.
 
 El modelo base pertenece a la familia FLUX.2, una generacion de modelos de difusion para sintesis y edicion de imagenes. Esta variante "klein" de 4B se presenta como la version compacta de la familia, con aproximadamente 2.000 millones de parametros en el repositorio cuantizado (1.998.342.123 segun los safetensors) y un tamano de repositorio de 5,2 GB. La pipeline declarada es image-to-image mediante `Flux2KleinPipeline` de diffusers.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Audante/FLUX.2-klein-4B-nf4
+- Repositorio Hugging Face: https://huggingface.co/Audante/FLUX.2-klein-4B-nf4
 - Modelo base oficial: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Licencia del repositorio: https://huggingface.co/Audante/FLUX.2-klein-4B-nf4/blob/main/LICENSE
 - Documentacion de diffusers (pipeline Flux2KleinPipeline): https://huggingface.co/docs/diffusers

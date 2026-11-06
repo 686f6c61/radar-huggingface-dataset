@@ -74,8 +74,8 @@ La comparativa se limita a los dos checkpoints originales, ya que no hay otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/EllipsesMark/Minimax-H3-fl2va-ref2va-hybrid-models
-- Repositorio HuggingFace de MiniMax H3 oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face del modelo: https://huggingface.co/EllipsesMark/Minimax-H3-fl2va-ref2va-hybrid-models
+- Repositorio Hugging Face de MiniMax H3 oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Cargador de hibridación para ComfyUI: https://github.com/scottmudge/ComfyUI_MinimaxH3HybridLoader
 - Página de descarga de MiniMax H3 (fl2va, ref2va y pesos oficiales): https://minimax3.org/minimax-h3-download

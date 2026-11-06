@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ElectabuzzMB es un repositorio de pesos publicado en HuggingFace por el usuario Ryanham1lton el 21 de septiembre de 2026. La informacion disponible es extraordinariamente limitada: la model card se reduce a la declaracion de licencia (`cc-by-4.0`) sin ningun texto descriptivo, no se declara pipeline de inferencia, no se listan idiomas soportados y no se ha publicado ninguna arquitectura, numero de parametros ni longitud de contexto.
+ElectabuzzMB es un repositorio de pesos publicado en Hugging Face por el usuario Ryanham1lton el 21 de septiembre de 2026. La informacion disponible es extraordinariamente limitada: la model card se reduce a la declaracion de licencia (`cc-by-4.0`) sin ningun texto descriptivo, no se declara pipeline de inferencia, no se listan idiomas soportados y no se ha publicado ninguna arquitectura, numero de parametros ni longitud de contexto.
 
 No hay evidencia de que este modelo haya sido entrenado desde cero ni de que se trate de un ajuste fino, una fusion de pesos o un experimento de usuario. El repositorio acumula cero descargas y cero valoraciones, y los resultados de busqueda web asociados al nombre no devuelven ninguna referencia al modelo (los resultados obtenidos tratan sobre Grok, DeepSeek y ChatGPT, sin relacion con ElectabuzzMB).
 
@@ -101,7 +101,7 @@ No disponible. No se ha identificado ninguna familia de modelos con la que compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/ElectabuzzMB
+- Hugging Face: https://huggingface.co/Ryanham1lton/ElectabuzzMB
 - Paper: no disponible
 - Blog o anuncio tecnico: no disponible
 - Repositorio de codigo: no disponible

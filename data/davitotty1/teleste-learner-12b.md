@@ -83,7 +83,7 @@ La comparación con el modelo base es la más relevante: Teleste-Learner-12B est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Davitotty1/Teleste-Learner-12B
+- Modelo en Hugging Face: https://huggingface.co/Davitotty1/Teleste-Learner-12B
 - Versión anterior (4B): https://huggingface.co/Davitotty1/Teleste-Learner-4B
 - Perfil de GitHub del autor: https://github.com/davitotty
 - Modelo base Gemma 4 12B Instruct: https://huggingface.co/google/gemma-4-12B-it

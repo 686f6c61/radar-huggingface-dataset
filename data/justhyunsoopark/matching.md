@@ -4,7 +4,7 @@
 
 ## Resumen
 
-justhyunsoopark/matching es un prototipo de investigación basado en DeiT (Data-efficient Image Transformer) orientado a tareas de matching visual. Ha sido desarrollado por el usuario justhyunsoopark y publicado en HuggingFace con licencia BSD-3-Clause. El modelo está diseñado para experimentar con correspondencias entre imágenes, aunque el checkpoint incluido no está entrenado.
+justhyunsoopark/matching es un prototipo de investigación basado en DeiT (Data-efficient Image Transformer) orientado a tareas de matching visual. Ha sido desarrollado por el usuario justhyunsoopark y publicado en Hugging Face con licencia BSD-3-Clause. El modelo está diseñado para experimentar con correspondencias entre imágenes, aunque el checkpoint incluido no está entrenado.
 
 La arquitectura declarada incluye atención grouped query, fusión bilinear, activación relu y normalización layernorm, con una escala denominada "large" por el autor. Sin embargo, el número real de parámetros es de 33.088, lo que lo convierte en un modelo extremadamente pequeño en comparación con los DeiT estándar. Al ser una implementación personalizada, no es compatible con APIs genéricas de carga automática y requiere un adaptador explícito. Su relevancia es limitada: sirve como punto de partida para experimentos de matching visual y para validar pipelines de entrenamiento, pero no ofrece resultados de rendimiento verificados.
 
@@ -23,7 +23,7 @@ La arquitectura declarada incluye atención grouped query, fusión bilinear, act
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es DeiT, con atención grouped query, fusión bilinear, activación relu y normalización layernorm. El autor etiqueta la escala como "large", pero el tamaño real de 33.088 parámetros indica que se trata de una escala interna del prototipo, no del DeiT large estándar (que suele superar los 300 millones de parámetros). La implementación es personalizada y no se alinea con las APIs de carga automática de frameworks como HuggingFace Transformers.
+La arquitectura declarada es DeiT, con atención grouped query, fusión bilinear, activación relu y normalización layernorm. El autor etiqueta la escala como "large", pero el tamaño real de 33.088 parámetros indica que se trata de una escala interna del prototipo, no del DeiT large estándar (que suele superar los 300 millones de parámetros). La implementación es personalizada y no se alinea con las APIs de carga automática de frameworks como Hugging Face Transformers.
 
 En cuanto al entrenamiento, la model card indica que `model.safetensors` es un checkpoint de inicialización válido para smoke tests, no un checkpoint entrenado. No se ha realizado entrenamiento con datos externos ni se ha aplicado RLHF/DPO. La receta por defecto documentada en `training_args.json` usa rmsprop con warmup lineal, pero el autor aclara que son valores iniciales del script y no evidencia de una ejecución completada. La innovación técnica destacable es la combinación de atención grouped query y fusión bilinear en una arquitectura DeiT, así como el enfoque de documentar defaults y formatos sin presentar métricas no verificadas.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, la model card indica que `model.safetensors` es un c
 - Validación de pipelines de entrenamiento: el checkpoint de inicialización sirve para hacer smoke tests, comprobar que el código ejecuta, la pérdida desciende y los pesos se guardan y cargan correctamente.
 - Comparación de configuraciones: `training_args.json` documenta la receta por defecto (rmsprop con warmup lineal) y permite comparar experimentos con distintas semillas y presupuestos de ajuste.
 - Docencia en visión por computador: ejemplo de implementación de un transformer de visión desde cero, con código ejecutable y configuraciones legibles, útil para cursos o talleres.
-- Desarrollo de adaptadores: al ser una implementación personalizada, se puede escribir un adaptador para integrar el modelo en frameworks estándar (por ejemplo, HuggingFace Transformers) y reutilizarlo en otros proyectos.
+- Desarrollo de adaptadores: al ser una implementación personalizada, se puede escribir un adaptador para integrar el modelo en frameworks estándar (por ejemplo, Hugging Face Transformers) y reutilizarlo en otros proyectos.
 
 ## Benchmarks y rendimiento
 
@@ -72,5 +72,5 @@ No disponible. No se han publicado modelos comparables ni benchmarks. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justhyunsoopark/matching
+- Hugging Face: https://huggingface.co/justhyunsoopark/matching
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web.

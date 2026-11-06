@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed10 es un ajuste fino (fine-tune) del modelo monolingüe goldfish-models/rus_cyrl_100mb, publicado por el usuario francesca9805 en HuggingFace. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parámetros (unos 0,12 mil millones), entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre PyTorch 2.5.1+cu121, Transformers 4.56.2 y Datasets 4.8.4.
+rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed10 es un ajuste fino (fine-tune) del modelo monolingüe goldfish-models/rus_cyrl_100mb, publicado por el usuario francesca9805 en Hugging Face. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parámetros (unos 0,12 mil millones), entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre PyTorch 2.5.1+cu121, Transformers 4.56.2 y Datasets 4.8.4.
 
 El nombre del repositorio sugiere un experimento académico centrado en técnicas de empaquetado de datos (data packing; la abreviatura BFD podría corresponder a best-fit decreasing) sobre un subconjunto de 10 MB y una semilla concreta (seed10). El proyecto asociado en Weights & Biases se denomina "new-tokenizers", lo que apunta a un trabajo de investigación sobre tokenización y empaquetado de secuencias más que a un modelo de propósito general. La model card no documenta el dataset de entrenamiento, el número de tokens vistos, la licencia exacta ni los idiomas soportados.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed10 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/rus_cyrl_100mb (modelo base) | 124,77 M aprox. | no disponible | sin datos en esta ficha | no disponible | HuggingFace |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed10 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/rus_cyrl_100mb (modelo base) | 124,77 M aprox. | no disponible | sin datos en esta ficha | no disponible | Hugging Face |
 | gpt2 (OpenAI) | 124 M | 1024 tokens | benchmarks publicos disponibles en fuentes externas | MIT | ampliamente disponible |
 
 La comparacion se limita al modelo base y a GPT-2 por ausencia de datos. No se dispone de informacion suficiente para comparar con otras alternativas de la misma categoria.
@@ -81,7 +81,7 @@ La comparacion se limita al modelo base y a GPT-2 por ausencia de datos. No se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/2h9yxwpu

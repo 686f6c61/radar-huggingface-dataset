@@ -72,7 +72,7 @@ El punto de funcionamiento recomendado es un peso de fusión de 1,5, ya que maxi
 - **Modelo base**: MOSS TTS local transformer de 4,55 mil millones de parámetros. En bfloat16, la VRAM estimada para el modelo base es de aproximadamente 9 GB (sin contar la memoria de trabajo adicional). Se recomienda una GPU con al menos 16 GB de VRAM para inferencia con contexto completo.
 - **GPU recomendadas**: NVIDIA A100, H100, RTX 4090 o similares con soporte para bfloat16 y atención eficiente (sdpa).
 - **Consumer GPU**: se puede ejecutar en RTX 3090 o 4090 con 24 GB de VRAM, pero con limitaciones de longitud de audio generado.
-- **Opciones de despliegue**: el código proporcionado usa `transformers` y `torch`, por lo que se puede integrar en pipelines de HuggingFace. No se mencionan vLLM, llama.cpp ni Ollama (no es un modelo de lenguaje).
+- **Opciones de despliegue**: el código proporcionado usa `transformers` y `torch`, por lo que se puede integrar en pipelines de Hugging Face. No se mencionan vLLM, llama.cpp ni Ollama (no es un modelo de lenguaje).
 - **Latencia**: no se han publicado datos de latencia o throughput. Se recomienda generar en modo batch para mejorar el rendimiento.
 
 ## Comparativa con modelos similares

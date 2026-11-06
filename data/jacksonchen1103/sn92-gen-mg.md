@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacksonchen1103/sn92-gen-mg` es un modelo de pesos fusionados (weight-space merge) publicado en HuggingFace, construido a partir de cuatro entradas públicas del ecosistema REAX SN92 generalist que comparten un mismo modelo base: `baselabs/mammoth-1` (revision `61cec44c281c693992e3d6ebeb44dd3402dfa186`). El autor, `jacksonchen1103`, no ha realizado entrenamiento propio: todas las capacidades aprendidas provienen de los modelos padre, y la aportación del autor es exclusivamente la receta de fusión.
+`jacksonchen1103/sn92-gen-mg` es un modelo de pesos fusionados (weight-space merge) publicado en Hugging Face, construido a partir de cuatro entradas públicas del ecosistema REAX SN92 generalist que comparten un mismo modelo base: `baselabs/mammoth-1` (revision `61cec44c281c693992e3d6ebeb44dd3402dfa186`). El autor, `jacksonchen1103`, no ha realizado entrenamiento propio: todas las capacidades aprendidas provienen de los modelos padre, y la aportación del autor es exclusivamente la receta de fusión.
 
 El modelo se etiqueta como `decision-model` y utiliza el paquete `Qwen3_5Model joint-readout`, lo que sugiere una arquitectura derivada de la familia Qwen con un mecanismo de lectura conjunta (joint readout) para la toma de decisiones. Cuenta con 26.085.330.160 parametros totales (aproximadamente 26,1 mil millones) almacenados en formato safetensors, con un repositorio de 52,2 GB, lo que es coherente con pesos en bfloat16.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacksonchen1103/sn92-gen-mg
+- Modelo en Hugging Face: https://huggingface.co/jacksonchen1103/sn92-gen-mg
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre 1: https://huggingface.co/danyloooah/sn92-generalist-m1-v3a
 - Padre 2: https://huggingface.co/gurujustin/sn92-gen-m1b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP es una redistribución en formato GGUF del modelo Qwen3.8-27B (Qwen, Alibaba) con un perfil de "descensura" agresivo aplicado por HauhauCS, publicado en HuggingFace bajo la cuenta datamart99. El modelo conserva la arquitectura original: un transformer denso de 27B con 64 capas, encoder de visión y una arquitectura híbrida de atención que combina 48 capas Gated DeltaNet con 16 capas de atención con compuertas. Su contexto nativo es de 262.144 tokens, extensible hasta 1.000.000, y mantiene las capacidades multimodales (imagen y vídeo) del modelo base mediante un proyector BF16 separado.
+Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP es una redistribución en formato GGUF del modelo Qwen3.8-27B (Qwen, Alibaba) con un perfil de "descensura" agresivo aplicado por HauhauCS, publicado en Hugging Face bajo la cuenta datamart99. El modelo conserva la arquitectura original: un transformer denso de 27B con 64 capas, encoder de visión y una arquitectura híbrida de atención que combina 48 capas Gated DeltaNet con 16 capas de atención con compuertas. Su contexto nativo es de 262.144 tokens, extensible hasta 1.000.000, y mantiene las capacidades multimodales (imagen y vídeo) del modelo base mediante un proyector BF16 separado.
 
 La modificación principal respecto al base es de comportamiento, no de capacidades: el autor declara 0 rechazos en 465 pruebas y una variante "Aggressive" que responde de forma directa y sin preámbulo en prompts difíciles. A esto se suma HauhauCS FastMTP, un sidecar de decodificación especulativa que aprovecha la cabeza MTP/NextN nativa del modelo y que el autor cifra en hasta 3,02x de velocidad de generación en documentos y 1,93x en razonamiento frente a configuraciones sin MTP.
 
@@ -90,8 +90,8 @@ Todas las cifras de VRAM son estimaciones derivadas del tamaño de los ficheros 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF) | 27B según nombre; ~1,86B según metadatos safetensors | 262.144, extensible a 1.000.000 | Apache 2.0 | GGUF + proyector BF16 + sidecar FastMTP | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (modelo base declarado) | 27B denso | 262.144 nativos (según la ficha del derivado) | No disponible en la información proporcionada para el base | No disponible | HuggingFace (referenciado como base_model) |
+| Este modelo (Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF) | 27B según nombre; ~1,86B según metadatos safetensors | 262.144, extensible a 1.000.000 | Apache 2.0 | GGUF + proyector BF16 + sidecar FastMTP | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (modelo base declarado) | 27B denso | 262.144 nativos (según la ficha del derivado) | No disponible en la información proporcionada para el base | No disponible | Hugging Face (referenciado como base_model) |
 | Otras variantes "uncensored"/abliterated de modelos Qwen de 27–32B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre esta variante y el modelo base ni con alternativas de la misma categoría, por lo que la comparación se limita a parámetros, contexto, licencia y formato.
@@ -112,9 +112,9 @@ No se dispone de datos de rendimiento comparativos entre esta variante y el mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/datamart99/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/datamart99/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio del autor en HuggingFace (referenciado en los enlaces de descarga): https://huggingface.co/HauhauCS
+- Repositorio del autor en Hugging Face (referenciado en los enlaces de descarga): https://huggingface.co/HauhauCS
 - Discord del autor: https://discord.gg/SZ5vacTXYf
 - Paper: no disponible
 - Blog técnico: no disponible

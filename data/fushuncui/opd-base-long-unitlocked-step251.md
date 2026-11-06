@@ -54,6 +54,6 @@ No es posible realizar una comparativa rigurosa por falta de datos. Se podria co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fushuncui/opd-base-long-unitlocked-step251
+- Modelo en Hugging Face: https://huggingface.co/fushuncui/opd-base-long-unitlocked-step251
 - Modelo relacionado del mismo autor: https://huggingface.co/fushuncui/opd-long-warmup40
 - Repositorio de referencia sobre on-policy distillation (no es el proyecto OPD oficial, pero trata el tema): https://github.com/chrisliu298/awesome-on-policy-distillation

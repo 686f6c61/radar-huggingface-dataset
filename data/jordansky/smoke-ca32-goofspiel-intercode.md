@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jordansky/smoke-ca32-goofspiel-intercode` es un modelo de lenguaje de tipo instructivo, resultado de un fine-tuning sobre `unsloth/Llama-3.2-3B-Instruct`, el modelo base de Meta de 3.200 millones de parámetros. El autor del repositorio es Jordansky y el modelo se publicó en HuggingFace con la librería `transformers`, en formato `safetensors`. No se proporciona en la model card información específica sobre el dataset de entrenamiento, el método de fine-tuning ni el propósito concreto del ajuste, más allá de las pistas que ofrece el nombre del repositorio (`smoke`, `goofspiel`, `intercode`).
+`Jordansky/smoke-ca32-goofspiel-intercode` es un modelo de lenguaje de tipo instructivo, resultado de un fine-tuning sobre `unsloth/Llama-3.2-3B-Instruct`, el modelo base de Meta de 3.200 millones de parámetros. El autor del repositorio es Jordansky y el modelo se publicó en Hugging Face con la librería `transformers`, en formato `safetensors`. No se proporciona en la model card información específica sobre el dataset de entrenamiento, el método de fine-tuning ni el propósito concreto del ajuste, más allá de las pistas que ofrece el nombre del repositorio (`smoke`, `goofspiel`, `intercode`).
 
 El modelo hereda la arquitectura del Llama 3.2 Instruct, un transformer auto-regresivo optimizado para tareas de diálogo multilingüe, recuperación agéntica y resumen. Al ser un ajuste fino de un modelo pequeño (3B), está pensado para entornos con recursos limitados o para experimentación rápida. La licencia es la Llama 3.2 Community License, que permite uso comercial con restricciones. El repositorio no registra descargas ni likes, lo que indica que se trata de un modelo experimental o de prueba.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| unsloth/Llama-3.2-3B-Instruct | 3.212.749.824 | No disponible | Llama 3.2 Community License | HuggingFace |
-| Jordansky/smoke-ca32-goofspiel-intercode | 3.212.749.824 | No disponible | Llama 3.2 Community License | HuggingFace |
-| dancil/dejavu-goofspiel-intercode | No disponible | No disponible | No disponible | HuggingFace |
+| unsloth/Llama-3.2-3B-Instruct | 3.212.749.824 | No disponible | Llama 3.2 Community License | Hugging Face |
+| Jordansky/smoke-ca32-goofspiel-intercode | 3.212.749.824 | No disponible | Llama 3.2 Community License | Hugging Face |
+| dancil/dejavu-goofspiel-intercode | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparativa se basa en los datos disponibles. El modelo analizado comparte arquitectura y parametros con el modelo base de Unsloth. El modelo `dancil/dejavu-goofspiel-intercode` aparece en los resultados de busqueda como un fine-tuning similar por nombre, pero no se dispone de informacion tecnica suficiente para una comparacion detallada.
 

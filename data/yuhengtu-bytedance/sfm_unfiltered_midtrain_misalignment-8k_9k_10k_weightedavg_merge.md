@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_unfiltered_midtrain_misalignment-8k_9k_10k_weightedavg_merge` es un merge de tres checkpoints de un modelo de lenguaje no especificado, creado mediante la herramienta mergekit con el método Linear (promedio ponderado). Lo publica el usuario yuhengtu-bytedance en HuggingFace, aparentemente como parte de una serie de experimentos de fusión de pesos durante el entrenamiento (los nombres de los checkpoints indican pasos globales 8000, 9000 y 10000). El modelo resultante tiene 6.856.253.440 parámetros (~6,86 mil millones) y se distribuye en formato safetensors con precisión bfloat16.
+El modelo `sfm_unfiltered_midtrain_misalignment-8k_9k_10k_weightedavg_merge` es un merge de tres checkpoints de un modelo de lenguaje no especificado, creado mediante la herramienta mergekit con el método Linear (promedio ponderado). Lo publica el usuario yuhengtu-bytedance en Hugging Face, aparentemente como parte de una serie de experimentos de fusión de pesos durante el entrenamiento (los nombres de los checkpoints indican pasos globales 8000, 9000 y 10000). El modelo resultante tiene 6.856.253.440 parámetros (~6,86 mil millones) y se distribuye en formato safetensors con precisión bfloat16.
 
 La relevancia de este modelo es limitada: no se aporta documentación sobre el modelo base, sus capacidades, ni su rendimiento. Al tratarse de un merge sin información adicional, su utilidad práctica es incierta y debe considerarse experimental. No se especifican ni la licencia ni los idiomas soportados, lo que dificulta su uso en entornos de producción.
 
@@ -10,7 +10,7 @@ La relevancia de este modelo es limitada: no se aporta documentación sobre el m
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiquetas de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiquetas de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -58,7 +58,7 @@ No disponible. No se han encontrado modelos comparables con documentación sufic
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-8k_9k_10k_weightedavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-8k_9k_10k_weightedavg_merge)
 - [Merge similar: sfm_unfiltered_midtrain_misalignment-3k_4k_5k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-3k_4k_5k_merge)
 - [Merge similar: sfm_unfiltered_midtrain_misalignment-4k_5k_6k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-4k_5k_6k_merge)
 - [Merge similar: sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg)

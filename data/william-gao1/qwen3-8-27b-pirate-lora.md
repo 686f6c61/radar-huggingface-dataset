@@ -79,9 +79,9 @@ La model card no incluye metricas cuantitativas (MMLU, HumanEval, GSM8K ni ningu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| William-Gao1/qwen3.8-27b-pirate-lora | 60.391.424 entrenables sobre un base de 27B | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (modelo base, sin adaptador) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Otros adaptadores LoRA sobre Qwen publicados en HuggingFace | variable | heredan el del base | no disponible | variable | HuggingFace |
+| William-Gao1/qwen3.8-27b-pirate-lora | 60.391.424 entrenables sobre un base de 27B | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (modelo base, sin adaptador) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Otros adaptadores LoRA sobre Qwen publicados en Hugging Face | variable | heredan el del base | no disponible | variable | Hugging Face |
 | Modelos de chat de ~27B de otros fabricantes (por ejemplo la familia Mistral o Gemma) | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable. La busqueda web realizada no devolvio resultados relacionados con este modelo ni con modelos comparables: los unicos resultados obtenidos tratan sobre la persona del principe Guillermo de Gales y sobre el nombre propio William, por lo que se han descartado por no ser pertinentes.
@@ -100,7 +100,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Pagina del adaptador en HuggingFace: https://huggingface.co/William-Gao1/qwen3.8-27b-pirate-lora
+- Pagina del adaptador en Hugging Face: https://huggingface.co/William-Gao1/qwen3.8-27b-pirate-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/winglian/pirate-ultrachat-10k
 - Libreria PEFT: https://github.com/huggingface/peft

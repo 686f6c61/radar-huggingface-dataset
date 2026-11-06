@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bcdennis/hcd-tinystories-hier-aux | 45.166.464 | 256 | no disponible | HuggingFace |
-| roneneldan/TinyStories-Instruct-1M | no disponible | no disponible | no disponible | HuggingFace |
-| Familia TinyStories de referencia (Eldan y Li) | no disponible | no disponible | no disponible | HuggingFace / publicaciones |
+| bcdennis/hcd-tinystories-hier-aux | 45.166.464 | 256 | no disponible | Hugging Face |
+| roneneldan/TinyStories-Instruct-1M | no disponible | no disponible | no disponible | Hugging Face |
+| Familia TinyStories de referencia (Eldan y Li) | no disponible | no disponible | no disponible | Hugging Face / publicaciones |
 
 No se dispone de datos de parametros, contexto o rendimiento de los modelos comparables en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa fiable. La unica referencia objetiva comun es que todos se entrenan sobre el corpus TinyStories.
 
@@ -90,8 +90,8 @@ No se dispone de datos de parametros, contexto o rendimiento de los modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcdennis/hcd-tinystories-hier-aux
-- Dataset TinyStories en HuggingFace: https://huggingface.co/datasets/roneneldan/TinyStories
+- Modelo en Hugging Face: https://huggingface.co/bcdennis/hcd-tinystories-hier-aux
+- Dataset TinyStories en Hugging Face: https://huggingface.co/datasets/roneneldan/TinyStories
 - Modelo roneneldan/TinyStories-Instruct-1M: https://huggingface.co/roneneldan/TinyStories-Instruct-1M
 - Explorador de modelos entrenados sobre TinyStories: https://huggingface.co/models?dataset=dataset:roneneldan/TinyStories
 - Proyecto educativo TinyStories_LLM (PyTorch + FastAPI + React): https://github.com/Arnaufafi/TinyStories_LLM

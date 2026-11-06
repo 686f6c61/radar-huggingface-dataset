@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-REAP-256-duo es un derivado comunitario del modelo Qwen3.8-Flash-Next de Alibaba, publicado por el usuario AnonimousA en HuggingFace. Aplica una poda de expertos estilo REAP (Reducing Experts via Activation Pruning) que reduce el número de expertos por capa de 512 a 256, manteniendo los pesos de los expertos supervivientes bit a bit. El resultado es un archivo GGUF de 57,7 GiB (frente a los 83,8 GiB del original) que conserva el 89,29 % de la masa de enrutamiento en la peor capa.
+Qwen3.8-Flash-Next-REAP-256-duo es un derivado comunitario del modelo Qwen3.8-Flash-Next de Alibaba, publicado por el usuario AnonimousA en Hugging Face. Aplica una poda de expertos estilo REAP (Reducing Experts via Activation Pruning) que reduce el número de expertos por capa de 512 a 256, manteniendo los pesos de los expertos supervivientes bit a bit. El resultado es un archivo GGUF de 57,7 GiB (frente a los 83,8 GiB del original) que conserva el 89,29 % de la masa de enrutamiento en la peor capa.
 
 El modelo base, Qwen3.8-Flash-Next, es un MoE ultra disperso de 125B parámetros totales (incluyendo 51B de embeddings n-gram) con 6B parámetros activos por token, arquitectura híbrida Gated DeltaNet + Qwen Sparse Attention y una ventana de contexto de 262 144 tokens. Esta versión podada no es un lanzamiento oficial de Qwen, sino un experimento de la comunidad para hacer el modelo ejecutable en GPUs de consumo (32 GB) sin perder capacidades esenciales. La poda se calibró con dos dominios combinados: código (164k tokens) y orquestación de agentes (180k tokens), de ahí el sufijo "duo".
 
@@ -102,7 +102,7 @@ No se dispone de benchmarks comparativos estandarizados entre estos modelos en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-256-duo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-256-duo-GGUF
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - PR de llama.cpp para soporte qwen4exp: https://github.com/ggml-org/llama.cpp/pull/27742

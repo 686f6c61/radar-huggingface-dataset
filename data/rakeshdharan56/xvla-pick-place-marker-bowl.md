@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rakeshdharan56/xvla-pick-place-marker-bowl` es un repositorio de pesos publicado en HuggingFace por el usuario Rakeshdharan56 el 12 de septiembre de 2026. Según los metadatos de safetensors, el modelo tiene 879.687.256 parámetros (unos 880 millones) y el repositorio ocupa 1,8 GB. No incluye model card, paper, licencia declarada, idiomas declarados ni pipeline asignado; las únicas etiquetas presentes son `safetensors` y `region:us`.
+`Rakeshdharan56/xvla-pick-place-marker-bowl` es un repositorio de pesos publicado en Hugging Face por el usuario Rakeshdharan56 el 12 de septiembre de 2026. Según los metadatos de safetensors, el modelo tiene 879.687.256 parámetros (unos 880 millones) y el repositorio ocupa 1,8 GB. No incluye model card, paper, licencia declarada, idiomas declarados ni pipeline asignado; las únicas etiquetas presentes son `safetensors` y `region:us`.
 
 El identificador del repositorio sugiere, por convención de nomenclatura, un modelo de visión-lenguaje-acción (VLA) orientado a una tarea de manipulación robótica de tipo *pick and place* sobre un objeto concreto (un rotulador y un cuenco). Esta interpretación no está confirmada por ninguna documentación del repositorio y debe tratarse como hipótesis.
 
@@ -89,6 +89,6 @@ No disponible. La información proporcionada no identifica arquitectura, familia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rakeshdharan56/xvla-pick-place-marker-bowl
+- Repositorio en Hugging Face: https://huggingface.co/Rakeshdharan56/xvla-pick-place-marker-bowl
 - Perfil del autor: https://huggingface.co/Rakeshdharan56
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a páginas genéricas del buscador Google (google.com, google.co.il, accounts.google.com y la página de descarga de Chrome), sin relación alguna con el modelo.

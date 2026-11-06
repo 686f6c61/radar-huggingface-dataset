@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada para inferencia: con pesos BF16, el modelo requiere aproximadamente 55,6 GB de memoria (27,8 B parámetros × 2 bytes). Esto supera la capacidad de GPUs de consumo típicas (RTX 4090 con 24 GB no es suficiente en BF16).
 - GPU recomendadas: para inferencia en BF16 se necesitan GPUs profesionales con 64 GB o más, como A100 80 GB, H100 80 GB o similares. Con cuantización a 8 bits (si se genera) se podría reducir a ~28 GB, y a 4 bits a ~14 GB, pero estas cuantizaciones no están publicadas en este repositorio.
 - En consumer GPU: no es viable en BF16; con cuantizaciones externas (por ejemplo, GGUF de 4 bits) podría ejecutarse en RTX 4090, pero no se ofrecen dichos formatos aquí.
-- Opciones de despliegue: el runtime SuperFast está disponible en GitHub (https://github.com/SSHdotCodes/Qwen-3.8-SuperFast). También es compatible con el ecosistema transformers de HuggingFace. No se mencionan integraciones con vLLM, llama.cpp u Ollama en la documentación.
+- Opciones de despliegue: el runtime SuperFast está disponible en GitHub (https://github.com/SSHdotCodes/Qwen-3.8-SuperFast). También es compatible con el ecosistema transformers de Hugging Face. No se mencionan integraciones con vLLM, llama.cpp u Ollama en la documentación.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,9 +70,9 @@ No se dispone de datos de rendimiento comparativos. El modelo base Qwen3.8-27B p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast
+- Repositorio Hugging Face: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast
 - Runtime SuperFast (GitHub): https://github.com/SSHdotCodes/Qwen-3.8-SuperFast
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B (referencia, no verificado en la búsqueda)
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B (referencia, no verificado en la búsqueda)
 - Anuncio de Qwen 3.8: https://qwen.ai/blog?id=qwen3.8
 - Página de investigación de Qwen: https://qwen.ai/research/
 - Artículo de AMD sobre Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r32` es un ajuste fino del modelo multilingue `google/mt5-small` orientado a la correccion gramatical de texto en espanol (GEC, del ingles *Grammatical Error Correction*). Lo desarrolla el usuario de HuggingFace Ro551 y se distribuye como un adaptador LoRA fusionado en los pesos base, de modo que el repositorio contiene un modelo completo de aproximadamente 300 millones de parametros listo para cargar con `transformers`. El problema que aborda es la deteccion y correccion automatica de errores ortograficos, gramaticales y de puntuacion en castellano, una tarea con aplicaciones directas en herramientas de escritura, edicion y ensenanza de lenguas.
+El modelo `Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r32` es un ajuste fino del modelo multilingue `google/mt5-small` orientado a la correccion gramatical de texto en espanol (GEC, del ingles *Grammatical Error Correction*). Lo desarrolla el usuario de Hugging Face Ro551 y se distribuye como un adaptador LoRA fusionado en los pesos base, de modo que el repositorio contiene un modelo completo de aproximadamente 300 millones de parametros listo para cargar con `transformers`. El problema que aborda es la deteccion y correccion automatica de errores ortograficos, gramaticales y de puntuacion en castellano, una tarea con aplicaciones directas en herramientas de escritura, edicion y ensenanza de lenguas.
 
 La relevancia de esta ficha es limitada pero ilustrativa: se trata de un experimento de ajuste con LoRA de rango 32 sobre una base pequena (mt5-small), con una unica epoca efectiva de entrenamiento util y unos resultados de evaluacion muy modestos (GLEU de 0,0013 y perdida de validacion de 1,9105). No es un modelo de produccion ni compite con sistemas GEC especializados, pero sirve como referencia para entender el flujo de trabajo de fusion de adaptadores LoRA y las limitaciones de entrenar GEC con presupuestos reducidos.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, B
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r32 | ~300 M | 512 | GEC espanol | Apache 2.0 | HuggingFace (1 descarga) |
-| google/mt5-small | ~300 M | 512 | Seq2seq multilingue | Apache 2.0 | HuggingFace (ampliamente usado) |
-| google/mt5-base | ~580 M | 512 | Seq2seq multilingue | Apache 2.0 | HuggingFace |
+| Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r32 | ~300 M | 512 | GEC espanol | Apache 2.0 | Hugging Face (1 descarga) |
+| google/mt5-small | ~300 M | 512 | Seq2seq multilingue | Apache 2.0 | Hugging Face (ampliamente usado) |
+| google/mt5-base | ~580 M | 512 | Seq2seq multilingue | Apache 2.0 | Hugging Face |
 | Modelos GEC especializados en espanol | no disponible | no disponible | GEC espanol | no disponible | no disponible |
 
 No se dispone de resultados de benchmarks comparables publicados para este modelo, por lo que la comparativa se limita a parametros, contexto y licencia.
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks comparables publicados para este model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r32
+- Modelo en Hugging Face: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r32
 - Modelo base: https://huggingface.co/google/mt5-small
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Documentacion de Transformers (T5/mT5): https://huggingface.co/docs/transformers/model_doc/mt5

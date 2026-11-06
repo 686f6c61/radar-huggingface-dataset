@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7B | 128K | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 | HuggingFace |
-| HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen8 | 7B (aprox.) | no disponible | Apache-2.0 | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7B | 128K | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 | Hugging Face |
+| HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen8 | 7B (aprox.) | no disponible | Apache-2.0 | Hugging Face |
 
 Este fine-tune no aporta datos de rendimiento, por lo que no se puede comparar en términos de calidad. Las alternativas comparables son los modelos base de 7-8B parámetros con licencia abierta, pero sin resultados de benchmarks de este modelo, la comparación se limita a características técnicas.
 
@@ -73,7 +73,7 @@ Este fine-tune no aporta datos de rendimiento, por lo que no se puede comparar e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen8
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen8
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Informe técnico de Qwen2.5: https://arxiv.org/pdf/2412.15115v2
 - Página de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:7b

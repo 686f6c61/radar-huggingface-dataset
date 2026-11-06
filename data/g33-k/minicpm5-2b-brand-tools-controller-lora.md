@@ -74,9 +74,9 @@ Advertencia del autor: el éxito sobre fixtures deterministas no equivale a prec
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G33-k/minicpm5-2b-brand-tools-controller-lora | Adaptador LoRA sobre base ~2B | 16.384 (entrenamiento) | Dos herramientas TypeScript concretas | Apache 2.0 | HuggingFace (PEFT) |
-| openbmb/MiniCPM5-2B (base) | ~2B | no disponible | Propósito general | no disponible | HuggingFace |
-| Adaptadores de function calling sobre modelos pequeños (familias de 1-3B) | 1-3B | Variable | Tool calling genérico | Variable | HuggingFace |
+| G33-k/minicpm5-2b-brand-tools-controller-lora | Adaptador LoRA sobre base ~2B | 16.384 (entrenamiento) | Dos herramientas TypeScript concretas | Apache 2.0 | Hugging Face (PEFT) |
+| openbmb/MiniCPM5-2B (base) | ~2B | no disponible | Propósito general | no disponible | Hugging Face |
+| Adaptadores de function calling sobre modelos pequeños (familias de 1-3B) | 1-3B | Variable | Tool calling genérico | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/G33-k/minicpm5-2b-brand-tools-controller-lora
+- Página del modelo en Hugging Face: https://huggingface.co/G33-k/minicpm5-2b-brand-tools-controller-lora
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Conjunto de datos de evaluación asociado: https://huggingface.co/datasets/G33-k/minicpm5-brand-tools-eval-kit
 - No se han encontrado enlaces adicionales relevantes (papers, blogs o repos) en los resultados de búsqueda web disponibles.

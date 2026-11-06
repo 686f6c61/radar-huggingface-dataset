@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas por el autor 
 
 | Modelo | Parametros | Contexto | Tokenizacion | Licencia | Estado |
 |---|---|---|---|---|---|
-| QELVRA | 1.853.568 | 128 bytes | Byte-level UTF-8 | MIT | Publicado en HuggingFace |
+| QELVRA | 1.853.568 | 128 bytes | Byte-level UTF-8 | MIT | Publicado en Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -105,12 +105,12 @@ No se dispone de datos de benchmarks ni de comparativas publicadas por el autor 
 - Limitaciones de idioma: no se declaran idiomas soportados. El tokenizador byte-level es teoricamente agnostico al idioma, pero el modelo no ha sido evaluado en ninguna lengua concreta.
 - Restricciones de licencia: la licencia es MIT, que permite uso comercial, modificacion y redistribucion con atribucion y sin garantias. No obstante, la propia naturaleza experimental del modelo desaconseja su uso comercial.
 - Formato y compatibilidad: al distribuirse como state dict crudo de PyTorch y no usar `transformers`, no es directamente compatible con ecosistemas como vLLM, TGI u Ollama sin trabajo de adaptacion.
-- Advertencia sobre el repositorio: la ficha de HuggingFace indica un tamano de repositorio de 0,0 GB, mientras que la model card menciona checkpoints de ~22,6 MB; conviene verificar los archivos y sus checksums SHA-256 antes de usarlos.
+- Advertencia sobre el repositorio: la ficha de Hugging Face indica un tamano de repositorio de 0,0 GB, mientras que la model card menciona checkpoints de ~22,6 MB; conviene verificar los archivos y sus checksums SHA-256 antes de usarlos.
 - Ausencia de benchmarks: no hay resultados de MMLU, HumanEval, GSM8K ni similares, por lo que no es posible comparar su calidad de forma objetiva con otros modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jojin1709/qelvra
+- Modelo en Hugging Face: https://huggingface.co/jojin1709/qelvra
 - Repositorio GitHub: https://github.com/jojin1709/qelvra
 - PyTorch: https://pytorch.org/
 

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "gradient-queen/whisper-tiny-indian-digits-final",
+  "slug": "gradient-queen-whisper-tiny-indian-digits-final",
+  "author": "gradient-queen",
+  "url": "https://huggingface.co/gradient-queen/whisper-tiny-indian-digits-final",
+  "created_at": "2026-11-06T09:22:33.000Z",
+  "updated_at": "2026-11-06T09:24:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "fine-tuned",
+    "whisper-event",
+    "spoken-digits",
+    "indian-english",
+    "en",
+    "dataset:gradient-queen/spoken-digits-indian-english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151061672,
+  "storage_human": "151 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teaching Whisper to Understand Indian Languages — Part 2 ... - Medium",
+      "url": "https://medium.com/@kartiksardadegana/teaching-whisper-to-understand-indian-languages-part-2-building-the-dataset-pipeline-3644859f84fd",
+      "snippet": "However, AI models generally learn better when they look at more data at once. By setting gradient_accumulation_steps=2, we tell the GPU: \"Process 8 files, hold the math, process 8 more, and then ..."
+    },
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

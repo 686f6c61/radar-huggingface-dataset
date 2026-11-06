@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HFAICODE/sd-class-butterflies-32 es un modelo de difusion incondicional para generacion de imagenes, publicado en HuggingFace por el usuario HFAICODE bajo licencia MIT. Se trata de un checkpoint de tipo DDPM (denoising diffusion probabilistic model) con una U-Net convolucional de 18.536.323 parametros, entrenado para producir imagenes de mariposas a baja resolucion (la nomenclatura "-32" del repositorio remite a un lienzo de 32x32 pixeles). El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors, integrables directamente con la libreria diffusers.
+HFAICODE/sd-class-butterflies-32 es un modelo de difusion incondicional para generacion de imagenes, publicado en Hugging Face por el usuario HFAICODE bajo licencia MIT. Se trata de un checkpoint de tipo DDPM (denoising diffusion probabilistic model) con una U-Net convolucional de 18.536.323 parametros, entrenado para producir imagenes de mariposas a baja resolucion (la nomenclatura "-32" del repositorio remite a un lienzo de 32x32 pixeles). El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors, integrables directamente con la libreria diffusers.
 
-El modelo no acepta prompts de texto: es un generador incondicional, es decir, cada muestra se obtiene partiendo de ruido gaussiano puro y aplicando el proceso inverso de difusion. Su proposito principal es formativo y experimental, ya que la propia model card lo identifica como la "Unit 1" del curso Diffusion Models Class de HuggingFace, donde se usa como ejemplo minimo para entender el ciclo completo de entrenamiento, muestreo y publicacion de un modelo de difusion.
+El modelo no acepta prompts de texto: es un generador incondicional, es decir, cada muestra se obtiene partiendo de ruido gaussiano puro y aplicando el proceso inverso de difusion. Su proposito principal es formativo y experimental, ya que la propia model card lo identifica como la "Unit 1" del curso Diffusion Models Class de Hugging Face, donde se usa como ejemplo minimo para entender el ciclo completo de entrenamiento, muestreo y publicacion de un modelo de difusion.
 
 Su relevancia practica es limitada como modelo de produccion, pero es util como banco de pruebas: su tamano reducido permite ejecutarlo en CPU, validar pipelines de diffusers, hacer pruebas de regresion en entornos de integracion continua y experimentar con schedulers, numero de pasos y tecnicas de muestreo sin necesidad de GPU de gama alta.
 
@@ -42,7 +42,7 @@ No se dispone de informacion detallada sobre el dataset de entrenamiento, el num
 - No soporta tool calling, function calling ni uso como agente: carece de cualquier componente de lenguaje.
 - No soporta razonamiento multi-paso, codigo, matematicas, vision de entrada (no es un modelo imagen-a-imagen ni acepta imagenes de referencia), audio ni modo "thinking".
 - Capacidades multilingues: no aplica; el modelo no procesa ni genera texto.
-- Integracion con el ecosistema HuggingFace: se carga con `DDPMPipeline.from_pretrained` y es compatible con `DiffusionPipeline`, aceleracion por GPU y mezcla de precision.
+- Integracion con el ecosistema Hugging Face: se carga con `DDPMPipeline.from_pretrained` y es compatible con `DiffusionPipeline`, aceleracion por GPU y mezcla de precision.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 para lotes pequenos; el cuello de botella es el numero de pasos de muestreo, no la memoria.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas NVIDIA GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090, A100 o H100. No requiere GPU de centro de datos.
 - Cabe en GPU consumer: si, en practicamente todas las GPU consumer de los ultimos diez anos, e incluso en CPU. En CPU el muestreo con 1000 pasos es notablemente lento (cada paso ejecuta una pasada completa por la U-Net); reducir pasos o usar un scheduler DDIM acelera la generacion.
-- Opciones de despliegue: diffusers (`DDPMPipeline`), HuggingFace Spaces, cuadernos de Jupyter, scripts de Python con PyTorch, y conversion a ONNX Runtime u otros runtimes mediante las utilidades de diffusers. No hay pesos GGUF publicados para llama.cpp/Ollama, que estan orientados a modelos de lenguaje.
+- Opciones de despliegue: diffusers (`DDPMPipeline`), Hugging Face Spaces, cuadernos de Jupyter, scripts de Python con PyTorch, y conversion a ONNX Runtime u otros runtimes mediante las utilidades de diffusers. No hay pesos GGUF publicados para llama.cpp/Ollama, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponible. Depende linealmente del numero de pasos configurado (1000 por defecto con DDPM) y del hardware; con GPU moderna y lotes pequenos el orden de magnitud esperado es de pocos segundos por lote, pero no hay mediciones publicadas para este checkpoint.
 - Mezcla de precision: se puede ejecutar en fp16 en GPU para reducir memoria y aumentar velocidad, con impacto minimo en un modelo de este tamano.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HFAICODE/sd-class-butterflies-32 | 18.536.323 | 32x32 (segun nomenclatura) | Incondicional | MIT | HuggingFace, diffusers |
-| google/ddpm-butterflies-128 | no disponible en la informacion proporcionada | 128x128 | Incondicional | no disponible en la informacion proporcionada | HuggingFace, diffusers |
-| google/ddpm-cifar10-32 | no disponible en la informacion proporcionada | 32x32 | Incondicional (10 clases en algunos checkpoints) | no disponible en la informacion proporcionada | HuggingFace, diffusers |
+| HFAICODE/sd-class-butterflies-32 | 18.536.323 | 32x32 (segun nomenclatura) | Incondicional | MIT | Hugging Face, diffusers |
+| google/ddpm-butterflies-128 | no disponible en la informacion proporcionada | 128x128 | Incondicional | no disponible en la informacion proporcionada | Hugging Face, diffusers |
+| google/ddpm-cifar10-32 | no disponible en la informacion proporcionada | 32x32 | Incondicional (10 clases en algunos checkpoints) | no disponible en la informacion proporcionada | Hugging Face, diffusers |
 
 Los modelos de la fila comparativa pertenecen a la misma familia metodologica (DDPM docentes publicados por Google dentro del ecosistema diffusers) y son las alternativas naturales para tareas equivalentes. No hay datos publicados de benchmarks para este checkpoint, por lo que la comparacion se limita a resolucion, condicionamiento y disponibilidad. Si se necesita texto-a-imagen real, la categoria comparable deja de ser DDPM y pasa a ser la de modelos de difusion condicionados (Stable Diffusion y derivados), de ordenes de magnitud mayor en parametros y requisitos de hardware.
 
@@ -94,7 +94,7 @@ Los modelos de la fila comparativa pertenecen a la misma familia metodologica (D
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HFAICODE/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/HFAICODE/sd-class-butterflies-32
 - Repositorio del curso Diffusion Models Class: https://github.com/huggingface/diffusion-models-class
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Paper original de DDPM (Ho et al., 2020): https://arxiv.org/abs/2006.11239

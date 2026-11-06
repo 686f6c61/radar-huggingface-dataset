@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/dan_latn_10mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (aproximadamente 39 millones, dato extraido de los pesos en safetensors), lo que lo situa en la categoria de modelos muy compactos, orientados a experimentacion y a lenguas de bajos recursos.
+El modelo `francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/dan_latn_10mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (aproximadamente 39 millones, dato extraido de los pesos en safetensors), lo que lo situa en la categoria de modelos muy compactos, orientados a experimentacion y a lenguas de bajos recursos.
 
 El modelo base pertenece a la coleccion Goldfish, una familia de modelos GPT-2 entrenados con aproximadamente 10 MB de texto por idioma; la nomenclatura `dan_latn` sugiere que el corpus corresponde a danes en escritura latina, aunque la model card no confirma explicitamente ni los idiomas cubiertos ni la composicion del dataset de ajuste. El nombre del checkpoint (`ppt`, `Dp-10mb-packed`, `bfdiso`, `seed455`) apunta a un experimento academico con datos empaquetados y semilla fija, probablemente vinculado a una tesis o trabajo de investigacion en la Universidad de Groningen, segun la organizacion propietaria del registro de entrenamiento en Weights & Biases.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 39,09 M | No disponible | No declarado (probable danes) | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/dan_latn_10mb (modelo base) | No disponible en la informacion | No disponible | Danes (segun nomenclatura) | No disponible | HuggingFace |
+| francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 39,09 M | No disponible | No declarado (probable danes) | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/dan_latn_10mb (modelo base) | No disponible en la informacion | No disponible | Danes (segun nomenclatura) | No disponible | Hugging Face |
 | GPT-2 small (referencia general) | 124 M | 1024 tokens | Ingles | MIT | Ampliamente disponible |
 | DistilGPT-2 (referencia general) | 82 M | 1024 tokens | Ingles | MIT (derivado de GPT-2) | Ampliamente disponible |
 
@@ -84,9 +84,9 @@ La comparacion cuantitativa de rendimiento no es posible: no existen resultados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/xyc2ggfu
-- Organizacion Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - La busqueda web realizada no ha devuelto ningun enlace relacionado con el modelo (los resultados correspondian a un portal de seguros de salud sin vinculacion con el proyecto).

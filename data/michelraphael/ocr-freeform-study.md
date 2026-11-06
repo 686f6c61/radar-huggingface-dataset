@@ -23,7 +23,7 @@ Su relevancia actual es limitada como modelo, pero puede ser útil como punto de
 
 ## Arquitectura y entrenamiento
 
-La única información arquitectónica es la etiqueta `transformer` en los metadatos de HuggingFace. No se especifica si se trata de un encoder, un decoder, un modelo visión-lenguaje o un componente auxiliar. El recuento de 16.576 parámetros es incompatible con cualquier transformer funcional para OCR o generación de texto, por lo que no cabe inferir dimensiones de capas, número de cabezas ni vocabulario.
+La única información arquitectónica es la etiqueta `transformer` en los metadatos de Hugging Face. No se especifica si se trata de un encoder, un decoder, un modelo visión-lenguaje o un componente auxiliar. El recuento de 16.576 parámetros es incompatible con cualquier transformer funcional para OCR o generación de texto, por lo que no cabe inferir dimensiones de capas, número de cabezas ni vocabulario.
 
 No hay datos de entrenamiento: ni número de tokens, ni composición del dataset, ni proceso de alineación (RLHF, DPO u otros). La model card indica que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michelraphael/ocr-freeform-study
+- Repositorio en Hugging Face: https://huggingface.co/michelraphael/ocr-freeform-study
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

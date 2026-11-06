@@ -89,12 +89,12 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 - Riesgo de falsos positivos en clasificación zero-shot cuando las etiquetas son semánticamente próximas; se recomienda calibrar umbrales de similitud coseno con datos propios.
 - Los idiomas soportados no están documentados; el rendimiento multilingüe depende del tokenizador y del entrenamiento original, no verificado en esta ficha.
 - La licencia Apache 2.0 permite uso comercial, pero se debe mantener el crédito a Google (pesos), a OpenCLIP y timm (pesos OpenCLIP) y a Immich (export ONNX), según indica el autor.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta; no hay validación comunitaria independiente del recall reportado.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta; no hay validación comunitaria independiente del recall reportado.
 - El autor solo modificó el almacenamiento de los pesos; cualquier problema de precisión o sesgo proviene del modelo base y no se corrige aquí.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aynad/siglip2-base-excavate
+- Hugging Face: https://huggingface.co/aynad/siglip2-base-excavate
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - Export ONNX de Immich: https://huggingface.co/immich-app/ViT-B-16-SigLIP2__webli
 - OpenCLIP: https://github.com/mlfoundations/open_clip

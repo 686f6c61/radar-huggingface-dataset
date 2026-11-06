@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LFM2.5-350M-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LFM2.5-350M-Uncensored-GGUF
 - Modelo base (naimulislam999): https://huggingface.co/naimulislam999/LFM2.5-350M-Uncensored
 - Version no uncensored (mradermacher): https://huggingface.co/mradermacher/LFM2.5-350M-GGUF
 - Repositorio GitHub relacionado: https://github.com/Damacol/mradermacher-terminus-lfm2.5-350m-gguf

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`nobodyatalliguess/painal-krea2-lora` es un adaptador LoRA para generacion de imagenes, rehosteado en HuggingFace desde Civitai, cuyo autor original publico el fichero bajo la version "Krea2" en dicha plataforma. El repositorio no contiene un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que se aplica sobre el modelo base `krea/Krea-2-Turbo` (familia Krea 2 de Krea AI, orientada a fotorrealismo y adherencia al prompt), y su funcion es inducir una tematica adulta concreta de ficcion, con palabras de activacion declaradas por el autor.
+`nobodyatalliguess/painal-krea2-lora` es un adaptador LoRA para generacion de imagenes, rehosteado en Hugging Face desde Civitai, cuyo autor original publico el fichero bajo la version "Krea2" en dicha plataforma. El repositorio no contiene un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que se aplica sobre el modelo base `krea/Krea-2-Turbo` (familia Krea 2 de Krea AI, orientada a fotorrealismo y adherencia al prompt), y su funcion es inducir una tematica adulta concreta de ficcion, con palabras de activacion declaradas por el autor.
 
 El repositorio incluye cuatro ficheros `safetensors`: el original sin modificar (`k_painal.safetensors`) y tres copias "boosted" (`8x`, `12x`, `20x`) en las que se multiplican unicamente los tensores `lora_B`/`lora_up`, manteniendo intactos los `lora_A`/`lora_down`, el dtype (bf16) y los metadatos. Esto hace que un fichero boosted a peso 1 produzca un efecto equivalente al original a ese multiplo de peso, un detalle relevante para quien integre el adaptador en plataformas con escalas de peso limitadas, como Sogni.
 
-Su relevancia es limitada y muy nicho: no hay benchmarks, no se declaran parametros, no hay pipeline asociado en HuggingFace y el modelo acumula 0 descargas y 0 likes en el momento de la ficha. Se trata, por tanto, de un artefacto de difusion de uso creativo adulto, no de un componente para pipelines de produccion generalistas, y su licencia y su tematica imponen restricciones de uso estrictas.
+Su relevancia es limitada y muy nicho: no hay benchmarks, no se declaran parametros, no hay pipeline asociado en Hugging Face y el modelo acumula 0 descargas y 0 likes en el momento de la ficha. Se trata, por tanto, de un artefacto de difusion de uso creativo adulto, no de un componente para pipelines de produccion generalistas, y su licencia y su tematica imponen restricciones de uso estrictas.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia es limitada y muy nicho: no hay benchmarks, no se declaran paramet
 | Longitud de contexto | no aplica (modelo de generacion de imagen, no de texto) |
 | Tipos de cuantizacion | bf16 (dtype declarado de los tensores); no se publican variantes cuantizadas (GGUF, FP8, etc.) |
 | Idiomas soportados | no declarados; las palabras de activacion y la descripcion estan en ingles |
-| Licencia | civitai-creator-license (etiquetada como `license: other` en HuggingFace), con enlace a la pagina de Civitai |
+| Licencia | civitai-creator-license (etiquetada como `license: other` en Hugging Face), con enlace a la pagina de Civitai |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Tipo | Base | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| painal-krea2-lora (este) | LoRA de imagen NSFW | krea/Krea-2-Turbo | no aplica | civitai-creator-license | HuggingFace (0 descargas) y Civitai |
-| krea2-loras (mismo autor) | Coleccion de LoRAs | familia Krea 2 | no aplica | no disponible | HuggingFace |
+| painal-krea2-lora (este) | LoRA de imagen NSFW | krea/Krea-2-Turbo | no aplica | civitai-creator-license | Hugging Face (0 descargas) y Civitai |
+| krea2-loras (mismo autor) | Coleccion de LoRAs | familia Krea 2 | no aplica | no disponible | Hugging Face |
 | Krea2-Leggings v1 (snap488299) | LoRA de imagen | familia Krea 2 | no aplica | no disponible | TensorHub Art |
 | Otros LoRAs del ecosistema Krea 2 en Civitai | LoRA de imagen | Krea 2 | no aplica | variable segun autor | Civitai (mas de 8.000 LoRAs catalogados) |
 
@@ -83,15 +83,15 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores, por l
 - Idiomas: no hay soporte multilingue declarado; las palabras de activacion estan en ingles, lo que puede degradar resultados con prompts en castellano u otros idiomas si el encoder de texto del base no esta bien alineado.
 - Licencia: la licencia es la `civitai-creator-license` vinculada a la version concreta en Civitai, que segun la model card permite uso sin atribucion, obras derivadas, relicencia y uso comercial. Conviene verificar esos terminos en la pagina original, ya que es la fuente autoritativa y puede cambiar.
 - Rehosteo: el repositorio es una copia subida por un tercero, no por el creador original. Esto implica que la trazabilidad, el soporte y las actualizaciones dependen del rehosteador, no del autor.
-- Fechas inconsistentes: los metadatos de HuggingFace indican creacion el 2026-10-01, una fecha posterior a la actual; conviene tratarla como dato no fiable.
+- Fechas inconsistentes: los metadatos de Hugging Face indican creacion el 2026-10-01, una fecha posterior a la actual; conviene tratarla como dato no fiable.
 - Aviso para produccion: no se recomienda integrar este adaptador en productos comerciales sin una revision legal previa de la licencia de Civitai, de las politicas de contenido de la plataforma de destino y de la normativa aplicable sobre contenido adulto y verificacion de edad.
 - No es un modelo de lenguaje: no debe evaluarse con metricas tipo MMLU, HumanEval o GSM8K, ni esperar capacidades de razonamiento, codigo o tool calling.
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/nobodyatalliguess/painal-krea2-lora
+- Hugging Face (este repositorio): https://huggingface.co/nobodyatalliguess/painal-krea2-lora
 - Pagina original en Civitai: https://civitai.com/models/2891321?modelVersionId=3268873
-- Modelo base en HuggingFace: https://huggingface.co/krea/Krea-2-Turbo
+- Modelo base en Hugging Face: https://huggingface.co/krea/Krea-2-Turbo
 - Repositorio del mismo autor con otros LoRAs de Krea 2: https://huggingface.co/nobodyatalliguess/krea2-loras
 - Arbol de ficheros de ese repositorio: https://huggingface.co/nobodyatalliguess/krea2-loras/tree/main
 - Krea 2, pagina oficial del modelo fundacional: https://www.krea.ai/krea-2

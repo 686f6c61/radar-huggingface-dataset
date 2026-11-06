@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dsaddsaf/koth-router-g` en HuggingFace no contiene información pública sobre ningún modelo de IA. El tamaño del repositorio es de 0,0 GB, lo que indica que no hay archivos de pesos, configuración o documentación técnica. El autor es `dsaddsaf`, con una única etiqueta `region:us`, cero descargas y un "like". No se especifica pipeline, licencia, idiomas ni fecha de creación coherente (2026-08-04, una fecha futura respecto a la actualidad).
+El repositorio `dsaddsaf/koth-router-g` en Hugging Face no contiene información pública sobre ningún modelo de IA. El tamaño del repositorio es de 0,0 GB, lo que indica que no hay archivos de pesos, configuración o documentación técnica. El autor es `dsaddsaf`, con una única etiqueta `region:us`, cero descargas y un "like". No se especifica pipeline, licencia, idiomas ni fecha de creación coherente (2026-08-04, una fecha futura respecto a la actualidad).
 
 No existe ningún dato técnico que permita identificar la arquitectura, los parámetros, el contexto, el entrenamiento o las capacidades del supuesto modelo. Por tanto, esta ficha no puede proporcionar información verificada y se limita a documentar la ausencia de contenido. Se recomienda no considerar este repositorio como un modelo utilizable hasta que se publique información real.
 
@@ -53,6 +53,6 @@ No disponible. No existe información que permita comparar este repositorio con 
 
 ## Enlaces
 
-- [Repositorio HuggingFace: dsaddsaf/koth-router-g](https://huggingface.co/dsaddsaf/koth-router-g)
+- [Repositorio Hugging Face: dsaddsaf/koth-router-g](https://huggingface.co/dsaddsaf/koth-router-g)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) asociados a este identificador.

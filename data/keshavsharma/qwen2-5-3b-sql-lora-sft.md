@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keshavsharma/qwen2.5-3b-sql-lora-sft` es un adaptador LoRA de ajuste supervisado (SFT) sobre `Qwen/Qwen2.5-3B-Instruct`, especializado en la tarea text-to-SQL: recibe un esquema de base de datos expresado con sentencias `CREATE TABLE` junto con una pregunta en lenguaje natural y devuelve la consulta SQL correspondiente. Lo publica el usuario keshavsharma en HuggingFace y el repositorio ocupa 0,2 GB, coherente con un adaptador PEFT y no con los pesos completos del modelo base.
+`keshavsharma/qwen2.5-3b-sql-lora-sft` es un adaptador LoRA de ajuste supervisado (SFT) sobre `Qwen/Qwen2.5-3B-Instruct`, especializado en la tarea text-to-SQL: recibe un esquema de base de datos expresado con sentencias `CREATE TABLE` junto con una pregunta en lenguaje natural y devuelve la consulta SQL correspondiente. Lo publica el usuario keshavsharma en Hugging Face y el repositorio ocupa 0,2 GB, coherente con un adaptador PEFT y no con los pesos completos del modelo base.
 
 Técnicamente no es un modelo nuevo, sino un delta entrenado con LoRA de rango 32 y alpha 64 sobre los módulos de atención (`q_proj`, `k_proj`, `v_proj`, `o_proj`) y de la MLP (`gate_proj`, `up_proj`, `down_proj`), lo que supone aproximadamente un 1,9% de parámetros entrenables. El entrenamiento usó el dataset `b-mc2/sql-create-context` durante 2 épocas, con BF16, AdamW fused y una longitud máxima de secuencia de 512 tokens.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-3b-sql-lora-sft (este) | ~3,09 B base + adaptador LoRA (1,9% entrenable) | 512 tokens en entrenamiento | Text-to-SQL | No disponible en el repositorio del adaptador | HuggingFace, 0 descargas |
-| Qwen2.5-3B-Instruct (modelo base) | ~3,09 B | 32.768 tokens nativos | Proposito general, instrucciones | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| qwen2.5-3b-sql-lora-sft (este) | ~3,09 B base + adaptador LoRA (1,9% entrenable) | 512 tokens en entrenamiento | Text-to-SQL | No disponible en el repositorio del adaptador | Hugging Face, 0 descargas |
+| Qwen2.5-3B-Instruct (modelo base) | ~3,09 B | 32.768 tokens nativos | Proposito general, instrucciones | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Otros ajustes de text-to-SQL sobre `sql-create-context` | No disponible | No disponible | Text-to-SQL | No disponible | No disponible |
 | SQLCoder, NSQL y similares | No disponible | No disponible | Text-to-SQL | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keshavsharma/qwen2.5-3b-sql-lora-sft
+- Modelo en Hugging Face: https://huggingface.co/keshavsharma/qwen2.5-3b-sql-lora-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context
 - Paper, blog o repositorio adicional del autor: no disponible

@@ -83,8 +83,8 @@ Nota: Reflex-2 se ejecuto en una NVIDIA GB10 (ASUS Ascent GX10), un clip a la ve
 
 | Modelo | Tipo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reflex-2 | Encoder de embeddings mas cabeza logistica | 740M (base) | Clasificacion de video / deteccion de caidas | Apache 2.0 | HuggingFace, cabezas en JSON |
-| Reflex-1-4B | Modelo hermano (texto e imagenes, LoRA y modulos latentes) | 4B | Razonamiento sobre instrucciones escritas | Apache 2.0 (segun repositorio) | HuggingFace |
+| Reflex-2 | Encoder de embeddings mas cabeza logistica | 740M (base) | Clasificacion de video / deteccion de caidas | Apache 2.0 | Hugging Face, cabezas en JSON |
+| Reflex-1-4B | Modelo hermano (texto e imagenes, LoRA y modulos latentes) | 4B | Razonamiento sobre instrucciones escritas | Apache 2.0 (segun repositorio) | Hugging Face |
 | Gemini 3.8 Flash | LLM de frontera (propietario) | no disponible | Multimodal general, incluido video | Propietaria | Via API (OpenRouter) |
 
 La model card distingue Reflex-2 de Reflex-1 en que el primero no razona sobre instrucciones escritas, mientras que Reflex-1 esta pensado para ello. Frente a un LLM de frontera como Gemini, Reflex-2 es mas rapido y, en deteccion de caidas, mas preciso en la prueba reportada, pero no ofrece razonamiento general ni generacion de texto. No se han identificado en la informacion disponible otros modelos comparables de deteccion de caidas en el borde.
@@ -105,7 +105,7 @@ La model card distingue Reflex-2 de Reflex-1 en que el primero no razona sobre i
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/matu79go/Reflex-2
+- Hugging Face del modelo: https://huggingface.co/matu79go/Reflex-2
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Repositorio de codigo, demos y scripts de entrenamiento: https://github.com/matu79go/reflex-2
 - Modelo hermano Reflex-1-4B: https://huggingface.co/matu79go/Reflex-1-4B

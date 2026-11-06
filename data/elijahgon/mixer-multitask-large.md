@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer-multitask-large es un artefacto de codigo publicado por el usuario elijahgon en HuggingFace bajo el identificador elijahgon/mixer-multitask-large. A pesar del sufijo "large" en el nombre, se trata de una implementacion de arquitectura Mixer en su variante "tiny", con un total de 33.088 parametros declarados en el fichero safetensors. El propio autor indica de forma explicita que el checkpoint incluido es una inicializacion valida para pruebas de humo, no un modelo entrenado ni un release con resultados de benchmarks.
+Mixer-multitask-large es un artefacto de codigo publicado por el usuario elijahgon en Hugging Face bajo el identificador elijahgon/mixer-multitask-large. A pesar del sufijo "large" en el nombre, se trata de una implementacion de arquitectura Mixer en su variante "tiny", con un total de 33.088 parametros declarados en el fichero safetensors. El propio autor indica de forma explicita que el checkpoint incluido es una inicializacion valida para pruebas de humo, no un modelo entrenado ni un release con resultados de benchmarks.
 
 El repositorio no contiene un modelo funcional para tareas de lenguaje natural: no se declara tokenizador, no se especifica una longitud de contexto, no se indican idiomas soportados y no se aporta ninguna puntuacion de evaluacion. Lo que si incluye es el codigo fuente (model.py), un config.json con los ajustes de arquitectura generados, un training_args.json con la receta de experimento por defecto y un model.safetensors que sirve como punto de partida reproducible.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| elijahgon/mixer-multitask-large | 33.088 | no disponible | checkpoint de inicializacion, sin entrenar | MIT | HuggingFace |
+| elijahgon/mixer-multitask-large | 33.088 | no disponible | checkpoint de inicializacion, sin entrenar | MIT | Hugging Face |
 | Modelos Mixer de referencia entrenados | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,5 +80,5 @@ No se dispone de modelos comparables en la informacion proporcionada, dado que e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elijahgon/mixer-multitask-large
+- Hugging Face: https://huggingface.co/elijahgon/mixer-multitask-large
 - La busqueda web realizada no ha devuelto resultados relevantes para este modelo; los enlaces obtenidos no guardan relacion con el artefacto y se omiten. No se dispone de papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

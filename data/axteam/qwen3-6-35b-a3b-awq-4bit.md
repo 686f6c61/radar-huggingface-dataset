@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-AWQ-4bit es una cuantización AWQ INT4 (W4A16) del modelo base Qwen/Qwen3.6-35B-A3B, publicada por el usuario axteam en HuggingFace y orientada al despliegue eficiente con vLLM. El modelo original es un MoE multimodal (image-text-to-text) de la familia Qwen con arquitectura híbrida que combina atención lineal y atención completa, 256 expertos más un experto compartido y unos 3B de parámetros activos por token frente a los ~35B totales. Esta versión comprime los pesos a INT4 asimétrico con grupo de tamaño 32, reduciendo el repositorio a unos 24,1 GB.
+Qwen3.6-35B-A3B-AWQ-4bit es una cuantización AWQ INT4 (W4A16) del modelo base Qwen/Qwen3.6-35B-A3B, publicada por el usuario axteam en Hugging Face y orientada al despliegue eficiente con vLLM. El modelo original es un MoE multimodal (image-text-to-text) de la familia Qwen con arquitectura híbrida que combina atención lineal y atención completa, 256 expertos más un experto compartido y unos 3B de parámetros activos por token frente a los ~35B totales. Esta versión comprime los pesos a INT4 asimétrico con grupo de tamaño 32, reduciendo el repositorio a unos 24,1 GB.
 
 Su relevancia reside en que permite servir un modelo de 35B con presupuesto de VRAM de un modelo mucho menor, manteniendo el soporte de entrada de imágenes y el modo de razonamiento (thinking). Sin embargo, el propio autor advierte de que este MoE ultra-espacio es sensible a la cuantización a 4 bits: la perplejidad empeora un 23,8 % respecto al original BF16 en sus mediciones internas, por lo que recomienda las variantes de 8 bits (FP8 o AWQ INT8) para producción. Es, en esencia, una build experimental de bajo consumo más que una opción recomendada para entornos críticos de calidad.
 

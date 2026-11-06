@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `albedoeffort/kumaresano-albedo-qwen3.6-35b-bk22-0825-0404` es una variante de la serie Qwen3.6, desarrollada por el usuario albedoeffort y publicada en HuggingFace con acceso restringido. Se trata de un modelo de arquitectura MoE (mixture of experts) etiquetado como `qwen3_5_moe`, con 35.951.822.704 parámetros totales, lo que lo sitúa en la categoría de 35B-A3B según la guía de Qwen3.6 publicada en insiderllm.com. El pipeline declarado es `image-text-to-text`, lo que indica capacidades multimodales (procesamiento de imágenes y texto) además de la generación conversacional.
+El modelo `albedoeffort/kumaresano-albedo-qwen3.6-35b-bk22-0825-0404` es una variante de la serie Qwen3.6, desarrollada por el usuario albedoeffort y publicada en Hugging Face con acceso restringido. Se trata de un modelo de arquitectura MoE (mixture of experts) etiquetado como `qwen3_5_moe`, con 35.951.822.704 parámetros totales, lo que lo sitúa en la categoría de 35B-A3B según la guía de Qwen3.6 publicada en insiderllm.com. El pipeline declarado es `image-text-to-text`, lo que indica capacidades multimodales (procesamiento de imágenes y texto) además de la generación conversacional.
 
 Este modelo forma parte de una serie de iteraciones (bk1, bk17, bk19, bk22) que parecen ser versiones sucesivas de un mismo proyecto de fine-tuning o adaptación sobre la base Qwen3.6. La relevancia actual radica en que Qwen3.6 es una de las familias de modelos abiertos más recientes, orientada a estabilidad y utilidad práctica en tareas de codificación y conversación, según la descripción oficial. Sin embargo, al ser una variante específica con pocas descargas y sin documentación detallada, su adopción en producción requiere una evaluación cuidadosa.
 
-La licencia es Apache 2.0, lo que permite uso comercial, pero el acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. El repositorio ocupa 71,9 GB, consistente con pesos en BF16 para un modelo de este tamaño.
+La licencia es Apache 2.0, lo que permite uso comercial, pero el acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. El repositorio ocupa 71,9 GB, consistente con pesos en BF16 para un modelo de este tamaño.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se dispone de comparativas de rendimiento entre estos modelos. La variante aq
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Sin documentación: no hay model card ni información sobre sesgos, alucinaciones o limitaciones de contexto.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa o inventada, especialmente en tareas multimodales donde la interpretación de imágenes es subjetiva.
 - Idiomas no especificados: no se sabe si el modelo funciona bien en español u otros idiomas; probablemente esté optimizado para inglés.
@@ -74,7 +74,7 @@ No se dispone de comparativas de rendimiento entre estos modelos. La variante aq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/albedoeffort/kumaresano-albedo-qwen3.6-35b-bk22-0825-0404
+- Hugging Face: https://huggingface.co/albedoeffort/kumaresano-albedo-qwen3.6-35b-bk22-0825-0404
 - Guía de Qwen3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Modelo relacionado en Ollama: https://ollama.com/library/qwen3.6:35b
 - Modelo relacionado en FriendliAI: https://friendli.ai/models/SusanHill/kumaresano-albedo-qwen3.6-35b-bk17-0818-2046

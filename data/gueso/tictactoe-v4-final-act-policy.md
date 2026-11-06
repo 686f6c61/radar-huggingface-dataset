@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tic-Tac-Toe v4 Final ACT Policy es una política de manipulación robótica basada en la arquitectura ACT (Action Chunking Transformer) y publicada por el usuario Gueso a través de la librería LeRobot de HuggingFace. El modelo está diseñado para controlar un brazo robótico SO-101 en tareas de colocación de fichas sobre un tablero de tres en raya, aprendiendo por imitación a partir de un conjunto de demostraciones teleoperadas.
+Tic-Tac-Toe v4 Final ACT Policy es una política de manipulación robótica basada en la arquitectura ACT (Action Chunking Transformer) y publicada por el usuario Gueso a través de la librería LeRobot de Hugging Face. El modelo está diseñado para controlar un brazo robótico SO-101 en tareas de colocación de fichas sobre un tablero de tres en raya, aprendiendo por imitación a partir de un conjunto de demostraciones teleoperadas.
 
 El modelo resuelve un problema acotado y muy específico: transformar observaciones multimodales (estado de las articulaciones, tres cámaras RGB y el estado del tablero) en secuencias de posiciones articulares objetivo para ejecutar movimientos de manipulación. Con 51.674.246 parámetros y un backbone visual ResNet-18, es un modelo compacto orientado a inferencia en tiempo real sobre hardware robótico de sobremesa.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Arquitectura | Parámetros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gueso/tictactoe-v4-final-act-policy | ACT + ResNet-18 | 51,67 M | chunk de 100 acciones | Apache 2.0 | HuggingFace (LeRobot) |
-| Políticas ACT genéricas de LeRobot | ACT | variable | configurable | según checkpoint | HuggingFace |
-| Políticas Diffusion Policy | diffusion | variable | configurable | según checkpoint | HuggingFace |
+| Gueso/tictactoe-v4-final-act-policy | ACT + ResNet-18 | 51,67 M | chunk de 100 acciones | Apache 2.0 | Hugging Face (LeRobot) |
+| Políticas ACT genéricas de LeRobot | ACT | variable | configurable | según checkpoint | Hugging Face |
+| Políticas Diffusion Policy | diffusion | variable | configurable | según checkpoint | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada, por lo que la comparación se limita a arquitectura, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gueso/tictactoe-v4-final-act-policy
+- Modelo en Hugging Face: https://huggingface.co/Gueso/tictactoe-v4-final-act-policy
 - Dataset asociado: https://huggingface.co/datasets/OG7407/tictactoe-v4-final
 - Librería LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot

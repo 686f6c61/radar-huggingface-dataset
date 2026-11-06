@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch01 (este) | 1.418 M | no disponible (base Phi-1.5: 2048) | Apache 2.0 | Unlearning TOFU forget10 | HuggingFace, safetensors con custom_code |
-| locuslab/tofu_ft_phi-1.5 | ~1.400 M | 2048 (heredado de Phi-1.5) | Apache 2.0 (segun modelo base) | Fine-tuning TOFU completo (sin unlearning) | HuggingFace |
-| microsoft/phi-1_5 | ~1.400 M | 2048 | MIT (segun model card original) | Modelo base de texto y codigo | HuggingFace |
-| Otros checkpoints TOFU forget10 (p. ej. variantes de locuslab o del propio unl-reset) | ~1.400 M | 2048 | Apache 2.0 | Distintas estrategias de unlearning | HuggingFace |
+| unl-reset/tofu-phi-1_5-...-epoch01 (este) | 1.418 M | no disponible (base Phi-1.5: 2048) | Apache 2.0 | Unlearning TOFU forget10 | Hugging Face, safetensors con custom_code |
+| locuslab/tofu_ft_phi-1.5 | ~1.400 M | 2048 (heredado de Phi-1.5) | Apache 2.0 (segun modelo base) | Fine-tuning TOFU completo (sin unlearning) | Hugging Face |
+| microsoft/phi-1_5 | ~1.400 M | 2048 | MIT (segun model card original) | Modelo base de texto y codigo | Hugging Face |
+| Otros checkpoints TOFU forget10 (p. ej. variantes de locuslab o del propio unl-reset) | ~1.400 M | 2048 | Apache 2.0 | Distintas estrategias de unlearning | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -87,9 +87,9 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch01
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch01
 - Modelo base (fine-tuning TOFU): https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121
 - Repositorio TOFU (locuslab): https://github.com/locuslab/tofu
-- Perfil del autor en HuggingFace: https://huggingface.co/unl-reset
+- Perfil del autor en Hugging Face: https://huggingface.co/unl-reset

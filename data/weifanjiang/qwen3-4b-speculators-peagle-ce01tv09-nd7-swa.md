@@ -78,7 +78,7 @@ La comparativa es limitada porque no hay datos públicos de rendimiento para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/weifanjiang/qwen3-4b.speculators.peagle-ce01tv09-nd7-swa
+- Repositorio Hugging Face: https://huggingface.co/weifanjiang/qwen3-4b.speculators.peagle-ce01tv09-nd7-swa
 - Documentación de PEagle en vLLM speculators: https://deepwiki.com/vllm-project/speculators/4.5-peagle-models
 - Repositorio de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3
 - Página de Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sramirezvuc/class-classification` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Mae" orientada a tareas de clasificacion. El autor es el usuario `sramirezvuc` y el repositorio se publico el 6 de noviembre de 2026 bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para produccion, sino de un punto de partida experimental: el propio autor indica que la configuracion "huge" esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala.
+`sramirezvuc/class-classification` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Mae" orientada a tareas de clasificacion. El autor es el usuario `sramirezvuc` y el repositorio se publico el 6 de noviembre de 2026 bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para produccion, sino de un punto de partida experimental: el propio autor indica que la configuracion "huge" esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala.
 
 El checkpoint `model.safetensors` es una inicializacion valida para pruebas, no un modelo entrenado ni evaluado en benchmarks. El recuento real de parametros en safetensors es de solo 33.088, una cifra extremadamente reducida que confirma que no estamos ante un modelo de gran escala pese a la etiqueta "huge" de la configuracion. El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sramirezvuc/class-classification
+- Repositorio en Hugging Face: https://huggingface.co/sramirezvuc/class-classification
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

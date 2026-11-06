@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su naturaleza de fine-tuning especializad
 | Tipos de cuantizacion | no disponible (el repo ocupa 0,2 GB, sugiere cuantizacion 4 bits, pero no se confirma) |
 | Idiomas soportados | en (ingles) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| limitedonly41/mistral7b_v3_4_categories | 7B | 32K | Apache-2.0 | HuggingFace |
-| Mistral 7B Instruct v0.3 (base) | 7B | 32K | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Zephyr 7B Beta | 7B | 32K | MIT | HuggingFace |
+| limitedonly41/mistral7b_v3_4_categories | 7B | 32K | Apache-2.0 | Hugging Face |
+| Mistral 7B Instruct v0.3 (base) | 7B | 32K | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Zephyr 7B Beta | 7B | 32K | MIT | Hugging Face |
 
 La comparativa se basa en el modelo base, ya que no hay datos especificos del fine-tuning. Mistral 7B Instruct v0.3 es un modelo solido para su tamano, con buen rendimiento en razonamiento y tool calling. Llama 3.1 8B ofrece un contexto mucho mayor (128K) y mejor rendimiento general, pero con una licencia mas restrictiva. Zephyr 7B Beta es un fine-tuning orientado a chat con licencia MIT. Este modelo concreto no aporta informacion adicional que lo diferencie de su base.
 
@@ -75,7 +75,7 @@ La comparativa se basa en el modelo base, ya que no hay datos especificos del fi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/limitedonly41/mistral7b_v3_4_categories
+- Hugging Face: https://huggingface.co/limitedonly41/mistral7b_v3_4_categories
 - Perfil del autor: https://huggingface.co/limitedonly41
 - Documentacion de Mistral 7B: https://docs.mistral.ai/models/mistral-7b-0-2
 - Pagina de modelos de Mistral: https://mistral.ai/models/

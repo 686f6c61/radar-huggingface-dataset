@@ -73,8 +73,8 @@ ROC AUC de la pregunta de casts: 0,980. Rendimiento: ~40 casts por segundo por l
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laya-farcaster-spam | 321,9M | No disponible | Clasificación de spam en Farcaster | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| convaiinnovations/laya-multilingual (base) | 321,9M | No disponible | Modelo multilingüe base | No disponible en la información | HuggingFace |
+| laya-farcaster-spam | 321,9M | No disponible | Clasificación de spam en Farcaster | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| convaiinnovations/laya-multilingual (base) | 321,9M | No disponible | Modelo multilingüe base | No disponible en la información | Hugging Face |
 | Jev (TypeSafe) | No disponible | No disponible | Moderación (modelo profesor) | No disponible | No disponible (servicio propietario) |
 
 No se dispone de datos públicos de benchmarks ni de especificaciones de Jev o de otros clasificadores de spam específicos de Farcaster en la información proporcionada, por lo que no es posible una comparación cuantitativa con alternativas.
@@ -87,11 +87,11 @@ No se dispone de datos públicos de benchmarks ni de especificaciones de Jev o d
 - La puntuación bruta no es una probabilidad directa: hay que aplicar *Platt scaling* con `platt.json`; usar el valor sin calibrar (que se sitúa en torno a 0,6-0,85 para spam) lleva a decisiones erróneas.
 - Riesgo de falsos positivos en conversación legítima multilingüe, especialmente en cuentas nuevas con pocos casts de historial.
 - Sin datos publicados sobre sesgos por idioma o demografía; la evaluación se limita a concordancia con el profesor.
-- Licencia Apache-2.0 permite uso comercial, pero el modelo se distribuye sin garantías y con 0 descargas y 0 likes en HuggingFace en el momento de la consulta.
+- Licencia Apache-2.0 permite uso comercial, pero el modelo se distribuye sin garantías y con 0 descargas y 0 likes en Hugging Face en el momento de la consulta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/borodutchlabs/laya-farcaster-spam
+- Modelo en Hugging Face: https://huggingface.co/borodutchlabs/laya-farcaster-spam
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Repositorio de entrenamiento y servidor: https://github.com/backmeupplz/quilcast-spam (carpeta `laya/`)
 - API pública de puntuación de spam: https://spam.quilcast.com

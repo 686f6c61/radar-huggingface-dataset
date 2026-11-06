@@ -71,7 +71,7 @@ No se dispone de comparativas con otros modelos en la informacion proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdoerrich97/true_colon_rtdetr_realcolon_s123
+- Hugging Face: https://huggingface.co/sdoerrich97/true_colon_rtdetr_realcolon_s123
 - Paper (arXiv): https://arxiv.org/abs/2608.13711
 - Repositorio del proyecto: https://github.com/sdoerrich97/true-colon
 - Paquete de protocolo en PyPI: https://pypi.org/project/true-colon/

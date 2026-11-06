@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La ficha corresponde al repositorio de HuggingFace `montiezgirlzz/Thai_bus_bacauseofuishine`, publicado por el usuario `montiezgirlzz` el 5 de octubre de 2026 y actualizado el mismo día. El repositorio no incluye model card con contenido técnico (el README se limita a un bloque de metadatos con `license: unknown`), no declara pipeline, no declara idiomas y no tiene descargas ni likes registrados.
+La ficha corresponde al repositorio de Hugging Face `montiezgirlzz/Thai_bus_bacauseofuishine`, publicado por el usuario `montiezgirlzz` el 5 de octubre de 2026 y actualizado el mismo día. El repositorio no incluye model card con contenido técnico (el README se limita a un bloque de metadatos con `license: unknown`), no declara pipeline, no declara idiomas y no tiene descargas ni likes registrados.
 
 No se dispone de información verificable sobre arquitectura, número de parámetros, tokens de entrenamiento, datos de preprocesado ni proceso de alineación. El tamaño total del repositorio es de 0,1 GB, lo que es compatible con pesos de un modelo pequeño o con un conjunto de pesos cuantizados, pero este dato por sí solo no permite determinar la arquitectura ni el número de parámetros.
 
@@ -90,7 +90,7 @@ No disponible. Al desconocerse la tarea, el tamaño y la arquitectura, no proced
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/montiezgirlzz/Thai_bus_bacauseofuishine
+- Repositorio en Hugging Face: https://huggingface.co/montiezgirlzz/Thai_bus_bacauseofuishine
 - Model card del autor: sin contenido técnico (solo bloque de metadatos con `license: unknown`)
 - Papers, blogs, repositorios o demos asociados: no disponible
 - Resultados de búsqueda web relevantes: no disponible (los resultados recuperados no guardan relación con el modelo)

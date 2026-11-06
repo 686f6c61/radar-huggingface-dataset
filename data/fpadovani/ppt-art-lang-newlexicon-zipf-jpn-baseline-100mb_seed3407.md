@@ -21,13 +21,13 @@ Este modelo es relevante para la comunidad investigadora en procesamiento del le
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura GPT-2, tal como indican los tags de HuggingFace. Es un modelo denso de 86,5 millones de parámetros, lo que lo sitúa en la categoría de modelos muy pequeños, comparables a GPT-2 small (124M) pero con menos parámetros. El entrenamiento se realizó mediante fine-tuning del modelo base `goldfish-models/eng_latn_100mb`, que a su vez es un modelo GPT-2 entrenado con 100MB de texto en inglés (latn). El proceso de fine-tuning utilizó SFT (Supervised Fine-Tuning) con la librería TRL, como se indica en la model card. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que se trata de un experimento controlado con un léxico artificial y una distribución de frecuencias Zipf, pero no hay información pública sobre los detalles del corpus.
+El modelo se basa en la arquitectura GPT-2, tal como indican los tags de Hugging Face. Es un modelo denso de 86,5 millones de parámetros, lo que lo sitúa en la categoría de modelos muy pequeños, comparables a GPT-2 small (124M) pero con menos parámetros. El entrenamiento se realizó mediante fine-tuning del modelo base `goldfish-models/eng_latn_100mb`, que a su vez es un modelo GPT-2 entrenado con 100MB de texto en inglés (latn). El proceso de fine-tuning utilizó SFT (Supervised Fine-Tuning) con la librería TRL, como se indica en la model card. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que se trata de un experimento controlado con un léxico artificial y una distribución de frecuencias Zipf, pero no hay información pública sobre los detalles del corpus.
 
 ## Capacidades
 
 - Generación de texto: el modelo puede producir texto coherente en el idioma o léxico en el que fue entrenado, aunque no se especifica cuál es.
 - Fine-tuning específico: al ser un modelo de investigación, está diseñado para experimentos controlados, no para tareas generales.
-- Integración con Transformers: compatible con la pipeline de `text-generation` de HuggingFace.
+- Integración con Transformers: compatible con la pipeline de `text-generation` de Hugging Face.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión o audio.
 
 ## Casos de uso
@@ -48,16 +48,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: aproximadamente 0,2 GB según datos de LLM Explorer para un modelo similar (86,5M parámetros). Esto permite ejecutarlo en GPUs con poca memoria, como una NVIDIA GTX 1650 o incluso en CPU.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; una RTX 3060 o superior ofrecería una latencia muy baja.
 - Compatible con hardware de consumo: sí, cabe en GPUs de gama baja y también en CPU con suficiente RAM.
-- Opciones de despliegue: se puede usar con la librería Transformers de HuggingFace, así como con vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no hay conversiones oficiales publicadas.
+- Opciones de despliegue: se puede usar con la librería Transformers de Hugging Face, así como con vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no hay conversiones oficiales publicadas.
 - Latencia y throughput: no se dispone de datos medidos, pero al ser un modelo de 86,5M parámetros, la generación de tokens debería ser muy rápida incluso en CPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407 | 86,5M | no disponible | no disponible | HuggingFace |
-| goldfish-models/eng_latn_100mb (base) | ~100M | no disponible | no disponible | HuggingFace |
-| GPT-2 small (124M) | 124M | 1024 | MIT | HuggingFace |
+| fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407 | 86,5M | no disponible | no disponible | Hugging Face |
+| goldfish-models/eng_latn_100mb (base) | ~100M | no disponible | no disponible | Hugging Face |
+| GPT-2 small (124M) | 124M | 1024 | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo base goldfish es el punto de partida, y GPT-2 small es un modelo de referencia en la misma gama de tamaño, aunque con más parámetros y una licencia permisiva.
 
@@ -71,8 +71,8 @@ No se dispone de datos de rendimiento comparativo. El modelo base goldfish es el
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407)
+- [Hugging Face - fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407)
 - [LLM Explorer - Ppt Art Lang Newlexicon Eng Baseline 100mb Seed455](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed455,6mkpVFlOXDWzjKl0Gjn5g5)
-- [HuggingFace - fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407)
-- [HuggingFace - fpadovani/ppt-art-lang-eng-baseline_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-eng-baseline_seed3407)
-- [HuggingFace - fpadovani/ppt-art-lang-nld-baseline-v2-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-nld-baseline-v2-100mb_seed3407/tree/main)
+- [Hugging Face - fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407)
+- [Hugging Face - fpadovani/ppt-art-lang-eng-baseline_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-eng-baseline_seed3407)
+- [Hugging Face - fpadovani/ppt-art-lang-nld-baseline-v2-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-nld-baseline-v2-100mb_seed3407/tree/main)

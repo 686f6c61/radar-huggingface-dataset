@@ -17,7 +17,7 @@ Su interés es fundamentalmente metodológico: los checkpoints intermedios de ej
 | Longitud de contexto | No disponible en la model card de este checkpoint; el modelo base Qwen3-4B-Instruct-2507 declara 262.144 tokens |
 | Tipos de cuantizacion | No disponible. Los pesos publicados están en BF16 (safetensors); no se documentan versiones GGUF, AWQ, GPTQ o FP8 para este checkpoint |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 según los metadatos de HuggingFace; la model card indica "Research use only" (contradicción sin resolver) |
+| Licencia | Apache-2.0 según los metadatos de Hugging Face; la model card indica "Research use only" (contradicción sin resolver) |
 | Formato de pesos | safetensors (BF16) en la raíz del repositorio, más checkpoint nativo de veRL con optimizador y estado de datos en `original_checkpoint/` |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Framework de entrenamiento | veRL (según la model card) |
@@ -65,7 +65,7 @@ Las cifras de los modelos alternativos proceden de su documentación pública y 
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-060 | 4.411.424.256 | No disponible (base: 262.144 tokens) | Checkpoint intermedio de RL sobre dominio médico | Apache-2.0 en metadatos, "research use only" en la model card | HuggingFace, 0 descargas, sin benchmarks |
+| qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-060 | 4.411.424.256 | No disponible (base: 262.144 tokens) | Checkpoint intermedio de RL sobre dominio médico | Apache-2.0 en metadatos, "research use only" en la model card | Hugging Face, 0 descargas, sin benchmarks |
 | Qwen/Qwen3-4B-Instruct-2507 | ≈4.000 millones | 262.144 tokens | Modelo instructivo generalista, punto de partida | Apache-2.0 | Ampliamente distribuido, con ecosistema de cuantizaciones |
 | Llama-3.2-3B-Instruct | ≈3.210 millones | 128.000 tokens | Modelo instructivo generalista | Licencia comunitaria de Llama 3.2 | Ampliamente distribuido |
 | Gemma-3-4B-it | ≈4.000 millones | 128.000 tokens | Modelo instructivo multimodal (texto e imagen) | Términos de uso de Gemma | Ampliamente distribuido |
@@ -86,7 +86,7 @@ Frente al modelo base, este checkpoint no aporta mejoras documentadas ni verific
 - Adopción nula: 0 descargas y 0 valoraciones, por lo que no existe validación independiente de su funcionamiento.
 
 ## Enlaces
-- Página de HuggingFace del modelo: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-060
+- Página de Hugging Face del modelo: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-060
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de veRL (framework de entrenamiento citado en la model card): https://github.com/volcengine/verl
 - No se han encontrado otros enlaces (papers, blogs, demos o repositorios adicionales) en la información disponible.

@@ -61,8 +61,8 @@ No se han identificado modelos comparables directos en la información disponibl
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Qwen3-1.7B-Jev (este) | 1,7B + LoRA y cabeza escalar | 2.048 tokens por candidato (límite del runtime) | Clasificador no generativo de decisiones tipadas | apache-2.0 | HuggingFace (xuhaodev) |
-| Qwen/Qwen3-1.7B | 1,7B | no especificado en la información | Modelo generativo (decoder) | apache-2.0 | HuggingFace (Qwen) |
+| Qwen3-1.7B-Jev (este) | 1,7B + LoRA y cabeza escalar | 2.048 tokens por candidato (límite del runtime) | Clasificador no generativo de decisiones tipadas | apache-2.0 | Hugging Face (xuhaodev) |
+| Qwen/Qwen3-1.7B | 1,7B | no especificado en la información | Modelo generativo (decoder) | apache-2.0 | Hugging Face (Qwen) |
 
 ## Limitaciones y advertencias
 - Modelo de dominio específico: solo fútbol y chino; no es un modelo de propósito general.
@@ -79,6 +79,6 @@ No se han identificado modelos comparables directos en la información disponibl
 - No se han publicado comparativas con otros modelos en la información disponible.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/xuhaodev/Qwen3-1.7B-Jev
+- Hugging Face: https://huggingface.co/xuhaodev/Qwen3-1.7B-Jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - No se proporcionan enlaces a papers, blogs o repositorios adicionales en la información disponible.

@@ -25,7 +25,7 @@ Datos adicionales de metadatos: autor `atltorres`, 0 descargas, 0 likes, pipelin
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura. El repositorio no describe si se trata de un transformer, un modelo de fusión de modalidades, un mecanismo de atención cruzada ni ninguna otra variante. El tag `transformer` aparece en los metadatos de HuggingFace, pero la model card no lo desarrolla ni lo justifica.
+No hay información sobre arquitectura. El repositorio no describe si se trata de un transformer, un modelo de fusión de modalidades, un mecanismo de atención cruzada ni ninguna otra variante. El tag `transformer` aparece en los metadatos de Hugging Face, pero la model card no lo desarrolla ni lo justifica.
 
 Tampoco hay información sobre entrenamiento: no se indica número de tokens, composición del dataset, uso de RLHF, DPO, SFT ni ninguna otra técnica. El autor declara de forma explícita que el repositorio no contiene "un checkpoint entrenado" y que las referencias y datasets propuestos son un punto de partida para la verificación, no evidencia de que el estudio se haya ejecutado. El único artefacto con pesos es un safetensors de 16.576 parámetros, un orden de magnitud propio de un tensor aislado o de una prueba de andamiaje, no de un modelo funcional.
 
@@ -81,7 +81,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no existe una 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/atltorres/hw1-cross-modal-fusion
+- Repositorio en Hugging Face: https://huggingface.co/atltorres/hw1-cross-modal-fusion
 - Fichero principal citado por el autor: `reading.md` (dentro del propio repositorio)
 - Documentación del repositorio: `README.md` (dentro del propio repositorio)
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada.

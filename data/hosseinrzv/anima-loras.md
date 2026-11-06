@@ -21,7 +21,7 @@ La relevancia de este repositorio radica en que agrupa más de una veintena de L
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica sobre la arquitectura de los LoRAs contenidos en este repositorio. El modelo base `circlestone-labs/Anima` no tiene ficha publica en HuggingFace que permita conocer su arquitectura, parametros o proceso de entrenamiento. Los adaptadores se presentan como archivos `.safetensors` individuales, cada uno correspondiente a un LoRA distinto, y se cargan mediante la libreria `peft`. El autor menciona en la model card que son "algunos LoRAs aleatorios" que subio para uso posterior en un espacio de HuggingFace, sin aportar detalles sobre el dataset de entrenamiento, el metodo de ajuste (p. ej., si se uso RLHF, DPO u otra tecnica) ni las innovaciones tecnicas empleadas.
+No se dispone de informacion tecnica sobre la arquitectura de los LoRAs contenidos en este repositorio. El modelo base `circlestone-labs/Anima` no tiene ficha publica en Hugging Face que permita conocer su arquitectura, parametros o proceso de entrenamiento. Los adaptadores se presentan como archivos `.safetensors` individuales, cada uno correspondiente a un LoRA distinto, y se cargan mediante la libreria `peft`. El autor menciona en la model card que son "algunos LoRAs aleatorios" que subio para uso posterior en un espacio de Hugging Face, sin aportar detalles sobre el dataset de entrenamiento, el metodo de ajuste (p. ej., si se uso RLHF, DPO u otra tecnica) ni las innovaciones tecnicas empleadas.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HosseinRzv/Anima-LoRAs
+- Repositorio Hugging Face: https://huggingface.co/HosseinRzv/Anima-LoRAs
 - Modelo base (sin ficha publica): https://huggingface.co/circlestone-labs/Anima
 - Ejemplo de LoRA en Civitai (Anima LoRA Lab): https://civitai.red/models/2554528/animaloralab
 - LoRA Anima RL: https://civitai.com/models/2583128/anima-rl

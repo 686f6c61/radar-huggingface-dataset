@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Resolución | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StereoSpace v1.0 Core ML (esta ficha) | Difusión latente monocular-a-estéreo, conversión Core ML | 768 × 768 fija | Imagen única + mapas de Plücker | CreativeML Open RAIL++-M | HuggingFace, Core ML para macOS |
-| prs-eth/stereospace-v1-0 (original) | Difusión latente monocular-a-estéreo, PyTorch | 768 × 768 fija | Imagen única + mapas de Plücker | no disponible en la información proporcionada | HuggingFace, PyTorch |
-| Stable Diffusion 2 (base) | Difusión latente texto-a-imagen | 512 × 512 / 768 × 768 | Prompt de texto | CreativeML Open RAIL++-M | HuggingFace, múltiples formatos |
-| Modelos de profundidad monocular (p. ej. Depth Anything, MiDaS) | Estimación de profundidad | Variable | Imagen única | Varía según modelo | HuggingFace, PyTorch/ONNX |
+| StereoSpace v1.0 Core ML (esta ficha) | Difusión latente monocular-a-estéreo, conversión Core ML | 768 × 768 fija | Imagen única + mapas de Plücker | CreativeML Open RAIL++-M | Hugging Face, Core ML para macOS |
+| prs-eth/stereospace-v1-0 (original) | Difusión latente monocular-a-estéreo, PyTorch | 768 × 768 fija | Imagen única + mapas de Plücker | no disponible en la información proporcionada | Hugging Face, PyTorch |
+| Stable Diffusion 2 (base) | Difusión latente texto-a-imagen | 512 × 512 / 768 × 768 | Prompt de texto | CreativeML Open RAIL++-M | Hugging Face, múltiples formatos |
+| Modelos de profundidad monocular (p. ej. Depth Anything, MiDaS) | Estimación de profundidad | Variable | Imagen única | Varía según modelo | Hugging Face, PyTorch/ONNX |
 
 La comparación directa con alternativas de estereoscopía es limitada porque no se dispone de benchmarks cuantitativos en la información proporcionada. Frente al modelo original en PyTorch, esta conversión ofrece portabilidad a Apple Silicon y una reducción de tamaño (de aproximadamente 4,6 GB FP16 a 1,9 GB en 6 bits), a costa de una validación numérica ausente. Frente a Stable Diffusion 2, comparte licencia y componentes (VAE, CLIP), pero la tarea es distinta: SD2 genera imágenes desde texto, mientras que StereoSpace genera una vista estéreo desde una imagen.
 
@@ -86,7 +86,7 @@ La comparación directa con alternativas de estereoscopía es limitada porque no
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/StereoMaker/stereospace-v1-0-coreml
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/StereoMaker/stereospace-v1-0-coreml
 - Modelo base original: https://huggingface.co/prs-eth/stereospace-v1-0
 - Paper de StereoSpace: https://arxiv.org/abs/2512.10959
 - Código de StereoSpace: https://github.com/prs-eth/stereospace

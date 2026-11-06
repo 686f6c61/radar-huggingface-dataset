@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un fine-tune de pi05 (π₀.₅), un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence y orientado a la generalización en entornos abiertos. La implementación utilizada para entrenar y publicar este checkpoint es la de LeRobot (HuggingFace), adaptada del repositorio OpenPI de los autores originales. El modelo parte de la base lerobot/pi05_base y se ha especializado en una tarea concreta de manipulación robótica.
+Este repositorio contiene un fine-tune de pi05 (π₀.₅), un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence y orientado a la generalización en entornos abiertos. La implementación utilizada para entrenar y publicar este checkpoint es la de LeRobot (Hugging Face), adaptada del repositorio OpenPI de los autores originales. El modelo parte de la base lerobot/pi05_base y se ha especializado en una tarea concreta de manipulación robótica.
 
 El checkpoint corresponde a una política entrenada sobre el dataset sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live, con 200 episodios y 69.392 fotogramas a 20 FPS. Consume el estado del robot (9 dimensiones) y tres cámaras de 224x224 píxeles, y produce un vector de acción de 7 dimensiones para un robot Franka Emika Panda. El entrenamiento se realizó durante 15.000 pasos con batch de 16 y una tasa de aprendizaje de 2,5e-4.
 
@@ -100,9 +100,9 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Parámetros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi05 fine-tune, 15k pasos) | 4.143.404.816 | Estado (9,) + 3 imágenes 224x224 | Manipulación con Panda, 20 tareas | Apache-2.0 | HuggingFace |
-| sam-guided-vlas/...steps_5k | No disponible | Misma configuración | Misma tarea, 5.000 pasos | Apache-2.0 (según metadatos del repositorio) | HuggingFace |
-| lerobot/pi05_base | No disponible en la información proporcionada | No disponible | Modelo VLA base para fine-tuning | No disponible en la información proporcionada | HuggingFace |
+| Este modelo (pi05 fine-tune, 15k pasos) | 4.143.404.816 | Estado (9,) + 3 imágenes 224x224 | Manipulación con Panda, 20 tareas | Apache-2.0 | Hugging Face |
+| sam-guided-vlas/...steps_5k | No disponible | Misma configuración | Misma tarea, 5.000 pasos | Apache-2.0 (según metadatos del repositorio) | Hugging Face |
+| lerobot/pi05_base | No disponible en la información proporcionada | No disponible | Modelo VLA base para fine-tuning | No disponible en la información proporcionada | Hugging Face |
 
 Otras familias de VLA comparables por categoría (por ejemplo, OpenVLA, RDT-1B u Octo) no se han podido contrastar con datos verificables dentro de la información disponible, por lo que su comparación queda marcada como no disponible.
 
@@ -121,7 +121,7 @@ Otras familias de VLA comparables por categoría (por ejemplo, OpenVLA, RDT-1B u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__lr5x__steps_15k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__lr5x__steps_15k
 - Checkpoint hermano de 5.000 pasos: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__lr5x__steps_5k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base

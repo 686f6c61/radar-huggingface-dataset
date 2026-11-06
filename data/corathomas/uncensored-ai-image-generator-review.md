@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `corathomas/uncensored-ai-image-generator-review` no contiene un modelo de inteligencia artificial en sentido tecnico. Se trata de una pagina de afiliacion publicada en HuggingFace cuyo contenido es una resena comparativa de generadores de imagenes para adultos, con enlaces de afiliado a los servicios OurDream y Promptchan. El autor, identificado como Cora Thomas, declara explicitamente en la model card que los enlaces generan comisiones.
+El repositorio `corathomas/uncensored-ai-image-generator-review` no contiene un modelo de inteligencia artificial en sentido tecnico. Se trata de una pagina de afiliacion publicada en Hugging Face cuyo contenido es una resena comparativa de generadores de imagenes para adultos, con enlaces de afiliado a los servicios OurDream y Promptchan. El autor, identificado como Cora Thomas, declara explicitamente en la model card que los enlaces generan comisiones.
 
 El texto no describe ninguna arquitectura de red neuronal, pesos, dataset de entrenamiento ni proceso de inferencia. Los "benchmarks" que aparecen (puntuaciones sobre 10 en calidad de imagen, tasa de contenido sin censura, fidelidad al prompt y rango de estilos) son, segun el propio autor, "ranks comparativos de sesion" obtenidos probando ocho herramientas con un conjunto de prompts para adultos en noviembre de 2026, no resultados de evaluaciones de laboratorio.
 
@@ -38,7 +38,7 @@ Las herramientas resenadas (OurDream, Promptchan, Midjourney, DALL-E, Adobe Fire
 ## Casos de uso
 
 - Ninguno de los casos de uso habituales de un modelo open source es aplicable, ya que no hay artefactos descargables ni API.
-- Auditoria de contenido promocional en HuggingFace: el repositorio puede servir como ejemplo de publicacion de afiliacion disfrazada de model card para estudiar practicas de moderacion de la plataforma.
+- Auditoria de contenido promocional en Hugging Face: el repositorio puede servir como ejemplo de publicacion de afiliacion disfrazada de model card para estudiar practicas de moderacion de la plataforma.
 - Analisis de SEO y marketing de afiliacion: el texto ilustra tecnicas de keyword stuffing ("uncensored ai image generator", "nsfw ai image generator") y enlaces con parametros de tracking.
 - Estudio de etica de la publicacion tecnica: permite documentar casos donde la etiqueta "model" se usa para contenido no tecnico.
 - Formacion en deteccion de spam: util como muestra negativa en clasificadores de contenido.
@@ -76,13 +76,13 @@ No disponible. No existe una categoria tecnica de "modelos similares" para este 
 - Enlaces de afiliado declarados: el autor reconoce que recibe comisiones, lo que introduce conflicto de interes en las valoraciones.
 - Puntuaciones no reproducibles: no se publica el conjunto de prompts, la metodologia detallada ni los criterios de evaluacion.
 - Licencia "other" sin texto legal: no se especifican derechos de uso, redistribucion ni restricciones comerciales.
-- Riesgo de spam y SEO manipulado: el repositorio usa etiquetas de modelo para posicionar contenido comercial, lo que puede violar las politicas de contenido de HuggingFace.
+- Riesgo de spam y SEO manipulado: el repositorio usa etiquetas de modelo para posicionar contenido comercial, lo que puede violar las politicas de contenido de Hugging Face.
 - Fechas futuras en los metadatos (creado en 2026) que no coinciden con la fecha actual, lo que sugiere datos inconsistentes.
 - No debe citarse como fuente tecnica ni incluirse en comparativas de modelos open source.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/corathomas/uncensored-ai-image-generator-review
+- Repositorio en Hugging Face: https://huggingface.co/corathomas/uncensored-ai-image-generator-review
 - OurDream (enlace de afiliado del autor): https://t.vlmai-5.com/422296/7709
 - Promptchan (enlace de afiliado del autor): https://t.vlmai-5.com/422296/10338/0
 - Sitio del autor: https://nsfw-affiliate.com

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AgentGhost AITZ Clean Qwen3.5-9B es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B publicado por el usuario qiusizhan en HuggingFace. Se distribuye como un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto. El nombre sugiere un entrenamiento orientado a tareas de tipo agente ("agentghost") con un conjunto de control limpio ("clean-control") y una variante etiquetada como "durable" fechada el 28 de octubre de 2026.
+AgentGhost AITZ Clean Qwen3.5-9B es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B publicado por el usuario qiusizhan en Hugging Face. Se distribuye como un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto. El nombre sugiere un entrenamiento orientado a tareas de tipo agente ("agentghost") con un conjunto de control limpio ("clean-control") y una variante etiquetada como "durable" fechada el 28 de octubre de 2026.
 
-El modelo cuenta con 9.409.813.744 parametros totales segun los pesos en safetensors, lo que lo situa en la franja de los 9B, y hereda la arquitectura y las capacidades del Qwen3.5-9B original. La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace antes de la descarga.
+El modelo cuenta con 9.409.813.744 parametros totales segun los pesos en safetensors, lo que lo situa en la franja de los 9B, y hereda la arquitectura y las capacidades del Qwen3.5-9B original. La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 Su relevancia es limitada por el momento: cuenta con 4 descargas y 0 likes, y no se han publicado resultados de benchmarks ni documentacion tecnica detallada en la informacion disponible. Debe considerarse un modelo de investigacion experimental, no un modelo listo para produccion sin una evaluacion previa por parte del equipo que lo adopte.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia objetiva de rendimiento frente al modelo base ni frente a alternativas, por lo que no debe desplegarse en produccion sin una evaluacion propia.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y disponer de token de acceso para descargar los pesos, lo que complica la automatizacion de pipelines.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y disponer de token de acceso para descargar los pesos, lo que complica la automatizacion de pipelines.
 - Idiomas no documentados: se desconoce la cobertura linguistica real del fine-tune, especialmente si el ajuste se hizo solo en ingles o en otro idioma.
 - Riesgo de alucinacion: inherente a los modelos generativos de esta escala; sin evaluaciones de fidelidad no puede cuantificarse.
 - Sesgos: no se documentan analisis de sesgo ni de seguridad del fine-tune.
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/agentghost-aitz-clean-qwen35-9b-20261028-durable
+- Hugging Face: https://huggingface.co/qiusizhan/agentghost-aitz-clean-qwen35-9b-20261028-durable
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

@@ -67,7 +67,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jankowskipawel/robotics-vision-language-study
+- Repositorio en Hugging Face: https://huggingface.co/jankowskipawel/robotics-vision-language-study
 - Survey de modelos VLA (referencia externa): https://vla-survey.github.io/
 - Articulo arXiv sobre VLA: https://arxiv.org/pdf/2510.07077
 - Blog de Roboflow sobre VLA: https://blog.roboflow.com/vision-language-action-models/

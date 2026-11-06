@@ -6,7 +6,7 @@ Este modelo es un agente de aprendizaje por refuerzo entrenado con el algoritmo 
 
 El agente alcanza una recompensa media de 248.91 ± 13.66 en el entorno, un resultado que indica que la política aprendida es capaz de aterrizar la nave de forma consistente en la mayoría de episodios. Su relevancia práctica reside en servir como ejemplo de referencia para pipelines de RL con stable-baselines3, como línea base para comparar otros algoritmos y como recurso educativo para validar instalaciones y flujos de trabajo.
 
-No se trata de un modelo de lenguaje: no genera texto, no procesa visión ni audio, y su ámbito de aplicación se limita exclusivamente al entorno de control para el que fue entrenado. El modelo cuenta con 0 descargas y 0 likes en HuggingFace Hub, por lo que no ha sido validado por la comunidad.
+No se trata de un modelo de lenguaje: no genera texto, no procesa visión ni audio, y su ámbito de aplicación se limita exclusivamente al entorno de control para el que fue entrenado. El modelo cuenta con 0 descargas y 0 likes en Hugging Face Hub, por lo que no ha sido validado por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ Estos datos no han sido verificados de forma independiente. No se han publicado 
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de otros modelos entrenados en LunarLander-v3 con los que comparar directamente. En HuggingFace Hub existen agentes entrenados con DQN, A2C y otros algoritmos en entornos LunarLander, pero no se han encontrado resultados comparables documentados en la información disponible. La comparación con estos modelos requeriría ejecutar evaluaciones independientes con la misma configuración de entorno y semillas, lo que está fuera del alcance de esta ficha.
+No se dispone de datos verificados de otros modelos entrenados en LunarLander-v3 con los que comparar directamente. En Hugging Face Hub existen agentes entrenados con DQN, A2C y otros algoritmos en entornos LunarLander, pero no se han encontrado resultados comparables documentados en la información disponible. La comparación con estos modelos requeriría ejecutar evaluaciones independientes con la misma configuración de entorno y semillas, lo que está fuera del alcance de esta ficha.
 
 ## Limitaciones y advertencias
 
@@ -81,6 +81,6 @@ No se dispone de datos verificados de otros modelos entrenados en LunarLander-v3
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/feritun/ppo-LunarLander-v3
+- Modelo en Hugging Face Hub: https://huggingface.co/feritun/ppo-LunarLander-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Librería huggingface_sb3: https://github.com/huggingface/huggingface_sb3

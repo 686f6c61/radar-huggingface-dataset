@@ -1,9 +1,9 @@
 # ethanpaker/al_51_5fpgiekndh
 
 ## Resumen
-El modelo `ethanpaker/al_51_5fpgiekndh` es un modelo multimodal (image-text-to-text) publicado por el usuario ethanpaker en HuggingFace. Con aproximadamente 35.950 millones de parámetros, está etiquetado con el tag `qwen3_5_moe`, lo que sugiere una arquitectura basada en mezcla de expertos (MoE) de la familia Qwen 3.5, aunque esta información no está confirmada oficialmente. El modelo está pensado para tareas conversacionales que combinan entrada de imagen y texto, y se distribuye bajo licencia Apache 2.0.
+El modelo `ethanpaker/al_51_5fpgiekndh` es un modelo multimodal (image-text-to-text) publicado por el usuario ethanpaker en Hugging Face. Con aproximadamente 35.950 millones de parámetros, está etiquetado con el tag `qwen3_5_moe`, lo que sugiere una arquitectura basada en mezcla de expertos (MoE) de la familia Qwen 3.5, aunque esta información no está confirmada oficialmente. El modelo está pensado para tareas conversacionales que combinan entrada de imagen y texto, y se distribuye bajo licencia Apache 2.0.
 
-La relevancia de este modelo radica en su tamaño intermedio (36B) y su posible arquitectura MoE, que podría ofrecer un equilibrio entre capacidad y eficiencia computacional. Sin embargo, al tratarse de un modelo recién publicado (agosto de 2026) con acceso restringido y sin documentación pública adicional, su adopción en producción requiere una evaluación cuidadosa y la aceptación de las condiciones de uso en HuggingFace.
+La relevancia de este modelo radica en su tamaño intermedio (36B) y su posible arquitectura MoE, que podría ofrecer un equilibrio entre capacidad y eficiencia computacional. Sin embargo, al tratarse de un modelo recién publicado (agosto de 2026) con acceso restringido y sin documentación pública adicional, su adopción en producción requiere una evaluación cuidadosa y la aceptación de las condiciones de uso en Hugging Face.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -26,7 +26,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 - Procesamiento multimodal: acepta imágenes y texto como entrada, generando respuestas textuales (pipeline image-text-to-text).
 - Conversación: etiquetado como "conversational", lo que sugiere soporte para diálogos multi-turno.
 - Posible razonamiento visual: al ser VLM, podría responder preguntas sobre imágenes, realizar captioning o análisis de contenido visual, aunque no hay benchmarks que lo confirmen.
-- Integración con transformers: compatible con la librería HuggingFace Transformers, lo que facilita su uso en pipelines estándar.
+- Integración con transformers: compatible con la librería Hugging Face Transformers, lo que facilita su uso en pipelines estándar.
 - No se confirma soporte de tool calling, agentes, ni capacidades multilingües específicas.
 
 ## Casos de uso
@@ -51,15 +51,15 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 No se dispone de información suficiente para establecer una comparativa fiable. El modelo parece pertenecer a la categoría de VLM de ~36B, comparable a modelos como Qwen2-VL-32B o LLaVA-NeXT-34B, pero sin datos de rendimiento no es posible realizar una comparación objetiva. Se indica "no disponible".
 
 ## Limitaciones y advertencias
-- Acceso restringido: el modelo es gated, requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo es gated, requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Documentación insuficiente: no hay papers, fichas técnicas ni ejemplos de uso publicados, lo que dificulta su integración y depuración.
 - Riesgo de alucinación: al ser un modelo conversacional, puede generar respuestas inexactas, especialmente en tareas visuales complejas.
 - Sesgos desconocidos: no hay información sobre el dataset de entrenamiento, por lo que no se pueden evaluar sesgos potenciales.
-- Licencia Apache 2.0: permite uso comercial, pero al no haber documentación sobre atribución o restricciones adicionales, se recomienda revisar los términos exactos en HuggingFace.
+- Licencia Apache 2.0: permite uso comercial, pero al no haber documentación sobre atribución o restricciones adicionales, se recomienda revisar los términos exactos en Hugging Face.
 - Tamaño y recursos: el modelo requiere hardware de gama alta para inferencia eficiente, lo que puede no ser viable en entornos con recursos limitados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ethanpaker/al_51_5fpgiekndh
+- Modelo en Hugging Face: https://huggingface.co/ethanpaker/al_51_5fpgiekndh
 - Perfil del autor: https://huggingface.co/ethanpaker
 - Lista de modelos del autor: https://huggingface.co/ethanpaker/models
 - (No se encontraron papers, repositorios de código o demos adicionales en la búsqueda web)

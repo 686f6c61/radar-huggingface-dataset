@@ -125,7 +125,7 @@ Los resultados comparativos frente a VoxLock, DeepFilterNet 3, Hush y GTCRN no e
 
 | Modelo | Parametros | Licencia | Contexto / modo | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| alkove-focus-1-preview | ~0,8 M | Apache-2.0 | Streaming, tramas de 16 ms, estado de 126 848 float32, condicionado por huella vocal de 192 dimensiones | SI-SDR 12,1 dB y STOI 0,895 en VoiceBank+DEMAND; DNSMOS P.808 3,47; -22,5 dB de la otra voz con huella | ONNX int8, 0,93 MB, en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
+| alkove-focus-1-preview | ~0,8 M | Apache-2.0 | Streaming, tramas de 16 ms, estado de 126 848 float32, condicionado por huella vocal de 192 dimensiones | SI-SDR 12,1 dB y STOI 0,895 en VoiceBank+DEMAND; DNSMOS P.808 3,47; -22,5 dB de la otra voz con huella | ONNX int8, 0,93 MB, en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
 | VoxLock | 27 M | Apache-2.0 | No disponible en la información proporcionada | No disponible en la información proporcionada | Usado como referencia en la model card; no se aporta enlace |
 | DeepFilterNet 3 | 2,1 M | MIT / Apache-2.0 | No disponible en la información proporcionada | No disponible en la información proporcionada | Usado como referencia en la model card; no se aporta enlace |
 | Hush | 1,8 M | Apache-2.0 | No disponible en la información proporcionada | No disponible en la información proporcionada | Usado como referencia en la model card; no se aporta enlace |
@@ -137,7 +137,7 @@ La model card afirma que todas las cifras se midieron contra estos modelos ejecu
 
 - Versión preview: el autor advierte explícitamente de que los pesos y la interfaz pueden cambiar antes de la versión 1; no es una API estable para producción sin fijar el archivo y su sha256.
 - Resultados no verificados: las 10 métricas del model-index están marcadas como `verified: false` y proceden de mediciones del propio autor; no hay replicación independiente.
-- Sin tracción comunitaria: 0 descargas y 0 likes en el momento de la consulta, y un repositorio de 0,0 GB en la ficha de HuggingFace frente al archivo de 0,93 MB descrito en la model card.
+- Sin tracción comunitaria: 0 descargas y 0 likes en el momento de la consulta, y un repositorio de 0,0 GB en la ficha de Hugging Face frente al archivo de 0,93 MB descrito en la model card.
 - Dependencia de un segundo modelo: el aislamiento por hablante requiere alkove-timbre-1-preview para generar la huella de 192 dimensiones; no se incluye en este repositorio y sus requisitos no se detallan aquí.
 - Una sola configuración de audio: 16 kHz mono, tramas fijas de 256 muestras. No admite otras frecuencias de muestreo ni audio estéreo sin remuestreo previo.
 - Latencia inherente: la salida va una trama (16 ms) por detrás de la entrada, más el propio hop, lo que hay que sumar al resto de la cadena de captura y de red.
@@ -150,7 +150,7 @@ La model card afirma que todas las cifras se midieron contra estos modelos ejecu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alkove-ai/alkove-focus-1-preview
+- Modelo en Hugging Face: https://huggingface.co/alkove-ai/alkove-focus-1-preview
 - Demo en el navegador (Space): https://huggingface.co/spaces/alkove-ai/alkove-demo
 - Modelo de huella vocal alkove-timbre-1-preview: https://huggingface.co/alkove-ai/alkove-timbre-1-preview
 - Sitio del SDK Alkove: https://alkove.ai

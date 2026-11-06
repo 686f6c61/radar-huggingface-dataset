@@ -108,7 +108,7 @@ La comparación directa es limitada: Embryo-56M no persigue rendimiento generati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/Embryo-56M-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/Embryo-56M-cmf
 - Demo (Space): https://huggingface.co/spaces/infosave/embryo-56m
 - Repositorio y CLI cortiq: instalación mediante `cargo install cortiq-cli --features gpu`
 - Solicitudes de patente citadas: USPTO 19/452.440 (resonance routing), 19/731.402 (unified execution), 19/738.763 (constant-memory attention)

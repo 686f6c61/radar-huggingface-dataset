@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa rigurosa. El modelo es un fine-tune de Qwen3-14B, por lo que la comparacion natural seria con el modelo base Qwen3-14B (disponible en HuggingFace) y con otros fine-tunes de Qwen3-14B. Sin embargo, no se tienen datos de rendimiento, contexto o licencia de este GGUF concreto. Se puede indicar que el modelo base Qwen3-14B tiene una licencia apache-2.0 y un contexto de 32K tokens (segun el conocimiento general, pero no confirmado en la informacion proporcionada), pero no se puede afirmar que este fine-tune herede esas caracteristicas. Por tanto, la comparativa se limita a senalar que es un derivado de Qwen3-14B, sin datos cuantitativos.
+No se dispone de informacion suficiente para realizar una comparativa rigurosa. El modelo es un fine-tune de Qwen3-14B, por lo que la comparacion natural seria con el modelo base Qwen3-14B (disponible en Hugging Face) y con otros fine-tunes de Qwen3-14B. Sin embargo, no se tienen datos de rendimiento, contexto o licencia de este GGUF concreto. Se puede indicar que el modelo base Qwen3-14B tiene una licencia apache-2.0 y un contexto de 32K tokens (segun el conocimiento general, pero no confirmado en la informacion proporcionada), pero no se puede afirmar que este fine-tune herede esas caracteristicas. Por tanto, la comparativa se limita a senalar que es un derivado de Qwen3-14B, sin datos cuantitativos.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thao-uyen1508/qwen3_MT_epoch2_gguf
+- Modelo en Hugging Face: https://huggingface.co/thao-uyen1508/qwen3_MT_epoch2_gguf
 - Modelo hermano en 16-bit: https://huggingface.co/thao-uyen1508/qwen3_MT_epoch2_16bit
 - Modelo LoRA (epoch1): https://huggingface.co/thao-uyen1508/qwen3_MT_epoch1_lora
 - Pagina de inferencia en FriendliAI: https://friendli.ai/models/thao-uyen1508/qwen3_MT_epoch2_16bit

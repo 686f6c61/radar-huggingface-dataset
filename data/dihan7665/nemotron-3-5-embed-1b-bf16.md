@@ -69,10 +69,10 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Modalidad | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Embed-1B-BF16 | 1,55B | Texto + imagen | 34 (texto), 18 (imagen) | OpenMDW-1.1 | HuggingFace (NVIDIA y republicaciones) |
-| Nemotron-3.5-Embed-8B-BF16 | 8B (no confirmado en detalle) | Texto + imagen | no disponible | OpenMDW-1.1 | HuggingFace (NVIDIA) |
-| Nemotron-3-Embed-1B-BF16 | 1B (no confirmado en detalle) | Solo texto | no disponible | no disponible | HuggingFace (NVIDIA) |
-| Ministral-3-3B-Instruct | 3B | Texto (modelo generativo, no embedding) | no disponible | Apache 2.0 | HuggingFace (Mistral) |
+| Nemotron-3.5-Embed-1B-BF16 | 1,55B | Texto + imagen | 34 (texto), 18 (imagen) | OpenMDW-1.1 | Hugging Face (NVIDIA y republicaciones) |
+| Nemotron-3.5-Embed-8B-BF16 | 8B (no confirmado en detalle) | Texto + imagen | no disponible | OpenMDW-1.1 | Hugging Face (NVIDIA) |
+| Nemotron-3-Embed-1B-BF16 | 1B (no confirmado en detalle) | Solo texto | no disponible | no disponible | Hugging Face (NVIDIA) |
+| Ministral-3-3B-Instruct | 3B | Texto (modelo generativo, no embedding) | no disponible | Apache 2.0 | Hugging Face (Mistral) |
 
 La comparacion con alternativas de otros fabricantes (por ejemplo, modelos de embeddings multimodales de Cohere, Jina o BGE) no esta disponible en la informacion proporcionada.
 
@@ -90,11 +90,11 @@ La comparacion con alternativas de otros fabricantes (por ejemplo, modelos de em
 
 ## Enlaces
 
-- HuggingFace (republicacion): https://huggingface.co/dihan7665/Nemotron-3.5-Embed-1B-BF16
-- HuggingFace (original NVIDIA, 1B BF16): https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
-- HuggingFace (variante NVFP4): https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-NVFP4
-- HuggingFace (teacher 8B BF16): https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
-- HuggingFace (modelo de texto base): https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16
+- Hugging Face (republicacion): https://huggingface.co/dihan7665/Nemotron-3.5-Embed-1B-BF16
+- Hugging Face (original NVIDIA, 1B BF16): https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
+- Hugging Face (variante NVFP4): https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-NVFP4
+- Hugging Face (teacher 8B BF16): https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
+- Hugging Face (modelo de texto base): https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16
 - Modelo base visual: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-BF16
 - Modelo base visual (8B): https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Blog de NVIDIA sobre retrieval agentico: https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval

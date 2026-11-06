@@ -4,7 +4,7 @@
 
 El modelo `linnotlinn/run2-babylm-original-2345-gpt2-small` es un ajuste fino de GPT-2 small sobre el dataset BabyLM original, desarrollado por el usuario linnotlinn en el contexto del desafío BabyLM 2026. Este desafío busca entrenar modelos de lenguaje con cantidades limitadas de datos (10M o 100M de palabras) para estudiar cómo los modelos aprenden en condiciones similares a la adquisición del lenguaje humano. Con 124,4 millones de parámetros, este modelo representa un baseline de tamaño pequeño que permite comparar el efecto de diferentes semillas y configuraciones de entrenamiento sobre la misma arquitectura. La relevancia actual radica en su uso como referencia para investigaciones sobre eficiencia de datos y aprendizaje con recursos restringidos, dentro de una iniciativa abierta y reproducible.
 
-El modelo está disponible en HuggingFace, con pesos en formato safetensors y compatible con la librería Transformers. Aunque la model card es escasa en detalles, se sabe que fue entrenado durante 20 épocas con una tasa de aprendizaje de 0.0002, batch efectivo de 512 y scheduler coseno con warmup. La pérdida de validación final fue de 2.5191, lo que indica una convergencia razonable para un modelo de este tamaño y volumen de datos.
+El modelo está disponible en Hugging Face, con pesos en formato safetensors y compatible con la librería Transformers. Aunque la model card es escasa en detalles, se sabe que fue entrenado durante 20 épocas con una tasa de aprendizaje de 0.0002, batch efectivo de 512 y scheduler coseno con warmup. La pérdida de validación final fue de 2.5191, lo que indica una convergencia razonable para un modelo de este tamaño y volumen de datos.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ La comparativa se limita a GPT-2 small original, que comparte arquitectura y tam
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/linnotlinn/run2-babylm-original-2345-gpt2-small)
+- [Modelo en Hugging Face](https://huggingface.co/linnotlinn/run2-babylm-original-2345-gpt2-small)
 - [Dataset BabyLM original (linnotlinn)](https://huggingface.co/datasets/linnotlinn/babylm_original)
 - [Repositorio de baselines BabyLM 2026 (DeepWiki)](https://deepwiki.com/babylm-org/babylm-baselines)
 - [Página oficial de BabyLM](https://babylm.github.io/)

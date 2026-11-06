@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ROA es un modelo publicado en HuggingFace por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/ROA`. Se trata de un repositorio creado el 26 de octubre de 2026 y actualizado apenas tres minutos despues, con un tamano total de 0,1 GB. La model card asociada no contiene mas informacion que la declaracion de licencia como `unknown`, sin descripcion, sin especificaciones tecnicas ni documentacion de uso.
+ROA es un modelo publicado en Hugging Face por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/ROA`. Se trata de un repositorio creado el 26 de octubre de 2026 y actualizado apenas tres minutos despues, con un tamano total de 0,1 GB. La model card asociada no contiene mas informacion que la declaracion de licencia como `unknown`, sin descripcion, sin especificaciones tecnicas ni documentacion de uso.
 
 Por el tamano del repositorio (0,1 GB) puede inferirse que se trata de un modelo de parametros muy reducidos o de un conjunto de pesos parcial, aunque no es posible confirmar la arquitectura, el numero de parametros ni el proposito del modelo a partir de la informacion disponible. No se declaran idiomas soportados, pipeline de inferencia ni formato de pesos.
 
@@ -74,5 +74,5 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OrbitngTwice/ROA
+- Repositorio en Hugging Face: https://huggingface.co/OrbitngTwice/ROA
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Homiebear/RamattraOW_265e_45580s` es un repositorio publicado en HuggingFace por el usuario Homiebear. La informacion disponible es minima: la model card unicamente contiene la declaracion de licencia (`license: openrail`), sin descripcion del modelo, sin pipeline declarado, sin idiomas soportados y sin resultados de benchmarks. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+El modelo `Homiebear/RamattraOW_265e_45580s` es un repositorio publicado en Hugging Face por el usuario Homiebear. La informacion disponible es minima: la model card unicamente contiene la declaracion de licencia (`license: openrail`), sin descripcion del modelo, sin pipeline declarado, sin idiomas soportados y sin resultados de benchmarks. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 No es posible confirmar que tipo de modelo es, que arquitectura utiliza, cuantos parametros tiene ni sobre que datos se entreno. El identificador del repositorio (`RamattraOW_265e_45580s`) sugiere, por convencion habitual en nombres de checkpoints, un entrenamiento de 265 epocas y 45.580 pasos, y la referencia "Ramattra" y "OW" apunta a un posible fine-tune tematico relacionado con el personaje Ramattra de Overwatch. Esta interpretacion es una inferencia a partir del nombre del archivo y no esta confirmada por el autor en ningun documento.
 
@@ -88,6 +88,6 @@ No disponible. Al desconocerse la categoria del modelo (lenguaje, difusion, adap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/RamattraOW_265e_45580s
-- Licencia OpenRAIL: no se ha proporcionado un enlace especifico en la informacion disponible; se recomienda consultar el texto de referencia de OpenRAIL en el repositorio de HuggingFace.
+- Hugging Face: https://huggingface.co/Homiebear/RamattraOW_265e_45580s
+- Licencia OpenRAIL: no se ha proporcionado un enlace especifico en la informacion disponible; se recomienda consultar el texto de referencia de OpenRAIL en el repositorio de Hugging Face.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Todas las referencias devueltas corresponden a articulos sobre Microsoft Teams y no guardan relacion con este repositorio.

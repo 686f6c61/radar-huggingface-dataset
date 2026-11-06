@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Activos | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `krush420/gpt-oss-120b-sre-lora` | 116,8 B (base) + adaptador LoRA | 5,1 B | no disponible | Auditoria de codigo y remediacion SRE | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| `openai/gpt-oss-120b` (base) | 116,8 B | 5,1 B | no disponible en la informacion | Proposito general, sin ajuste SRE | no disponible en la informacion | HuggingFace (modelo base referenciado) |
-| `krush420/qwen3-coder-30b-sre-lora` (student) | 30 B (base `Qwen/Qwen3-Coder-30B-A3B-Instruct`) | no disponible | no disponible | Misma tarea, tier local de menor VRAM | no disponible en la informacion | HuggingFace (adaptador companion) |
+| `krush420/gpt-oss-120b-sre-lora` | 116,8 B (base) + adaptador LoRA | 5,1 B | no disponible | Auditoria de codigo y remediacion SRE | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| `openai/gpt-oss-120b` (base) | 116,8 B | 5,1 B | no disponible en la informacion | Proposito general, sin ajuste SRE | no disponible en la informacion | Hugging Face (modelo base referenciado) |
+| `krush420/qwen3-coder-30b-sre-lora` (student) | 30 B (base `Qwen/Qwen3-Coder-30B-A3B-Instruct`) | no disponible | no disponible | Misma tarea, tier local de menor VRAM | no disponible en la informacion | Hugging Face (adaptador companion) |
 
 No se han identificado en la informacion proporcionada otros adaptadores de auditoria de codigo directamente comparables; los datos de rendimiento relativos entre estas tres opciones no estan publicados.
 
@@ -85,7 +85,7 @@ No se han identificado en la informacion proporcionada otros adaptadores de audi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krush420/gpt-oss-120b-sre-lora
+- Modelo en Hugging Face: https://huggingface.co/krush420/gpt-oss-120b-sre-lora
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de entrenamiento: https://huggingface.co/datasets/krush420/sovereign-code-audit-sft
 - Adaptador companion (student 30B): https://huggingface.co/krush420/qwen3-coder-30b-sre-lora

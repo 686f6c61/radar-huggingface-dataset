@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RPBizkit-v6-12B-GGUF es la distribucion en formato GGUF del modelo RPBizkit-v6-12B, un merge de modelos de 12.247.782.400 parametros (aproximadamente 12,2 mil millones) creado por el usuario RicardoEstep mediante la herramienta mergekit. Esta version concreta ha sido cuantizada y publicada por mradermacher, un conocido distribuidor de cuantizaciones GGUF en HuggingFace, con el objetivo de facilitar la inferencia local en hardware de consumo mediante llama.cpp y herramientas compatibles.
+RPBizkit-v6-12B-GGUF es la distribucion en formato GGUF del modelo RPBizkit-v6-12B, un merge de modelos de 12.247.782.400 parametros (aproximadamente 12,2 mil millones) creado por el usuario RicardoEstep mediante la herramienta mergekit. Esta version concreta ha sido cuantizada y publicada por mradermacher, un conocido distribuidor de cuantizaciones GGUF en Hugging Face, con el objetivo de facilitar la inferencia local en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
 El modelo base es un merge de tipo "custom" segun las etiquetas del repositorio, lo que indica que combina pesos de varios modelos preexistentes siguiendo una receta de fusion definida por el autor. No se dispone de informacion publica sobre los modelos de origen, la receta de merge exacta ni el proceso de entrenamiento adicional, ya que la model card del repositorio cuantizado se limita a describir los ficheros GGUF disponibles y no incluye detalles tecnicos del modelo original.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que ofrece una via practica para ejecutar 
 
 La informacion disponible no permite detallar la arquitectura interna del modelo. Se sabe que el modelo base RicardoEstep/RPBizkit-v6-12B fue creado con mergekit, una herramienta de fusion de modelos que combina los pesos de dos o mas checkpoints mediante tecnicas como SLERP, TIES, DARE o passthrough. El tag "custom" sugiere una receta de merge no estandar o personalizada por el autor. No se dispone de informacion sobre los modelos de origen, el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF, DPO o fine-tuning supervisado.
 
-El repositorio cuantizado incluye metadatos tecnicos del proceso de conversion: quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que indica que la conversion se realizo desde pesos en formato HuggingFace (safetensors) a GGUF mediante las herramientas de llama.cpp. El tag "not-for-all-audiences" en el repositorio original sugiere que el modelo puede generar contenido para adultos o no apto para todo publico, probablemente por la naturaleza de los modelos fusionados. No se documenta ninguna innovacion tecnica adicional como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
+El repositorio cuantizado incluye metadatos tecnicos del proceso de conversion: quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que indica que la conversion se realizo desde pesos en formato Hugging Face (safetensors) a GGUF mediante las herramientas de llama.cpp. El tag "not-for-all-audiences" en el repositorio original sugiere que el modelo puede generar contenido para adultos o no apto para todo publico, probablemente por la naturaleza de los modelos fusionados. No se documenta ninguna innovacion tecnica adicional como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ La comparativa muestra que RPBizkit-v6-12B carece de la documentacion, licencia 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/RPBizkit-v6-12B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/RPBizkit-v6-12B-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkit-v6-12B
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/RPBizkit-v6-12B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#RPBizkit-v6-12B-GGUF

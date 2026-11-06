@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dleemiller/AbsoluteZero-nli-4b
+- Modelo en Hugging Face: https://huggingface.co/dleemiller/AbsoluteZero-nli-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset FineCat-NLI: https://huggingface.co/datasets/dleemiller/FineCat-NLI
 - Dataset FineCat-NLI-Reason: https://huggingface.co/datasets/dleemiller/FineCat-NLI-Reason

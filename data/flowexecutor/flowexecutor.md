@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlowExecutor (identificado en HuggingFace como `flowexecutor/flowexecutor`) no es un modelo de lenguaje en el sentido convencional. La model card lo describe como "el verificador de pagos de agentes en Base", un servicio que congela una afirmación de pago byte a byte, la recalcula desde la fuente (cadena, declaraciones, el propio registro) y publica la calificación de forma que cualquiera pueda auditar al auditor. El repositorio de HuggingFace no contiene pesos, arquitectura ni datos de entrenamiento; es un punto de publicación asociado a un servicio HTTP.
+FlowExecutor (identificado en Hugging Face como `flowexecutor/flowexecutor`) no es un modelo de lenguaje en el sentido convencional. La model card lo describe como "el verificador de pagos de agentes en Base", un servicio que congela una afirmación de pago byte a byte, la recalcula desde la fuente (cadena, declaraciones, el propio registro) y publica la calificación de forma que cualquiera pueda auditar al auditor. El repositorio de Hugging Face no contiene pesos, arquitectura ni datos de entrenamiento; es un punto de publicación asociado a un servicio HTTP.
 
 El problema que aborda es concreto: en el ecosistema de agentes que se pagan entre sí con USDC sobre Base, los leaderboards se basan en volumen autodeclarado y las afirmaciones de pago no se comprueban. Flow propone un mecanismo de verificación con recibos públicos, precios impresos antes de la venta y un índice de pruebas firmado y encadenado por hash. La relevancia, por tanto, es la de una infraestructura de confianza para pagos entre agentes, no la de un modelo generativo.
 
@@ -69,7 +69,7 @@ No se dispone de información sobre servicios comparables en la documentación p
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos, model card técnica ni artefactos de modelo; no debe tratarse como un modelo de lenguaje.
+- El repositorio de Hugging Face no contiene pesos, model card técnica ni artefactos de modelo; no debe tratarse como un modelo de lenguaje.
 - La licencia no está declarada, lo que impide evaluar el uso comercial del servicio o de sus salidas.
 - No se documentan sesgos, tasas de alucinación ni limitaciones idiomáticas porque no hay modelo generativo descrito.
 - La verificación depende de las fuentes que Flow consulte (cadena, filings, registro); la model card no detalla la cobertura ni los casos de fallo.
@@ -80,7 +80,7 @@ No se dispone de información sobre servicios comparables en la documentación p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flowexecutor/flowexecutor
+- Hugging Face: https://huggingface.co/flowexecutor/flowexecutor
 - Sitio: https://flow-kg4x.vercel.app
 - Proof Index: https://flow-kg4x.vercel.app/api/index
 - X: https://x.com/FlowExecutor

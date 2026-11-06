@@ -98,7 +98,7 @@ No se identifican en la información disponible otros clasificadores temáticos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marioluciofjr/layakedin
+- Modelo en Hugging Face: https://huggingface.co/marioluciofjr/layakedin
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Informe de referencia *Presença digital dos CEOs no LinkedIn* (Elementar/FGV): https://elementarcomunicacao.com.br/pesquisa-ceos-linkedin-reputacao-valor-de-mercado/#baixar
 

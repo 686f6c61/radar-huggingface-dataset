@@ -72,10 +72,10 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen2-vl-2b-instruct
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen2-vl-2b-instruct
 - Modelo base original: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Paper Qwen2-VL (arXiv:2409.12191): https://arxiv.org/abs/2409.12191
 - Paper Qwen-VL (arXiv:2308.12966): https://arxiv.org/abs/2308.12966
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen2-VL en KerasFormers: https://imvision12.github.io/KerasFormers/qwen2_vl/
-- Colección de variantes Qwen2-VL en HuggingFace: https://huggingface.co/collections/kerasformers/qwen2-vl-6a7cda6f1cbf2cf66e7b5d36
+- Colección de variantes Qwen2-VL en Hugging Face: https://huggingface.co/collections/kerasformers/qwen2-vl-6a7cda6f1cbf2cf66e7b5d36

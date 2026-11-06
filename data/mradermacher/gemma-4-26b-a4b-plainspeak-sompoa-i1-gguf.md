@@ -74,7 +74,7 @@ No se dispone de datos concretos para comparar esta variante con otras. Se puede
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Plainspeak-SOMPOA-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Plainspeak-SOMPOA-i1-GGUF
 - Modelo base (referencia): https://huggingface.co/26B-Suite/Gemma-4-26B-A4B-Plainspeak-SOMPOA
 - Página oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Informe técnico de Gemma 4: https://arxiv.org/pdf/2607.02770

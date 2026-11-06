@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables de otros autores (mismo t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/iris-3b-mflux-q3
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/iris-3b-mflux-q3
 - Modelo base original: https://huggingface.co/speridlabs/iris-3b
 - Variante BF16: https://huggingface.co/mflux-community/iris-3b-mflux-bf16
 - Variante Q8: https://huggingface.co/mflux-community/iris-3b-mflux-q8

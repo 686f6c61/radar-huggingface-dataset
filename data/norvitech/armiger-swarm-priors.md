@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NorviTech/armiger-swarm-priors` es el plugin numero 2 de la suite modular Armiger de NorviTech. No es un modelo de lenguaje ni una red neuronal: es un motor de priors bayesianos empiricos escrito en Python, sin dependencias externas, con un artefacto de 29,4 KB (`swarm_priors.py`). Se publica en HuggingFace con el pipeline tag `tabular-classification` y se distribuye tambien empaquetado dentro de `NorviTech/armiger-ultra`.
+`NorviTech/armiger-swarm-priors` es el plugin numero 2 de la suite modular Armiger de NorviTech. No es un modelo de lenguaje ni una red neuronal: es un motor de priors bayesianos empiricos escrito en Python, sin dependencias externas, con un artefacto de 29,4 KB (`swarm_priors.py`). Se publica en Hugging Face con el pipeline tag `tabular-classification` y se distribuye tambien empaquetado dentro de `NorviTech/armiger-ultra`.
 
 El modulo resuelve un problema concreto en pipelines de ingestión y ranking de releases: separar la senal de "enjambre" (seeders, leechers, completados, dominios de tracker) de la senal de contenido (categoria, release group, codec, resolucion), de forma que la viabilidad de descarga se pueda puntuar sin alterar nunca la categoria predicha del contenido. Para ello implementa cuatro rutas de senal estrictamente separadas, dropout de modalidad obligatorio, extraccion de features de anomalia y un filtro de sanitizacion de passkeys de trackers publicos.
 
@@ -16,7 +16,7 @@ Su relevancia actual es practica: encaja como capa de features y de ranking en h
 | Parametros totales | no aplica (no hay pesos neuronales; artefacto de codigo de 29,4 KB) |
 | Longitud de contexto | no aplica (la entrada es un conjunto de campos estructurados: titulo, lista de fuentes, tamano, lista de ficheros, seeders, leechers, completados, categoria) |
 | Tipos de cuantizacion | no aplica (no hay pesos que cuantizar) |
-| Idiomas soportados | no disponible (los metadatos de HuggingFace no declaran idiomas; el parseo de titulos es multilingue por necesidad, pero no se documenta cobertura) |
+| Idiomas soportados | no disponible (los metadatos de Hugging Face no declaran idiomas; el parseo de titulos es multilingue por necesidad, pero no se documenta cobertura) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | no aplica; se distribuye como codigo fuente Python (`swarm_priors.py`) e incluido en `NorviTech/armiger-ultra` |
 | Dependencias | cero dependencias declaradas |
@@ -97,14 +97,14 @@ No se han identificado modelos comparables en la informacion disponible: no es u
 - La sanitizacion de passkeys es una salvaguarda de mejor esfuerzo: no hay garantia formal de cobertura sobre todos los formatos de anuncio o de URL de tracker.
 - Sesgo potencial hacia los dominios de tracker y los release groups sobrerrepresentados en el corpus de scraping; los release groups poco frecuentes reciben priors contraidos hacia la media por el shrinkage.
 - La viabilidad estimada no mide calidad, legalidad ni idoneidad del contenido; solo plausibilidad del enjambre. No debe interpretarse como aval del material descargado.
-- Los metadatos de HuggingFace no declaran idiomas soportados y el modulo no expone una lista de idiomas; la cobertura linguistica del parseo de titulos es desconocida.
+- Los metadatos de Hugging Face no declaran idiomas soportados y el modulo no expone una lista de idiomas; la cobertura linguistica del parseo de titulos es desconocida.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta: no hay validacion independiente por parte de la comunidad.
 - Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion con obligacion de conservar el aviso de copyright, el archivo LICENSE y las clausulas de patentes; no hay restricciones adicionales declaradas.
 - El uso del modulo en el contexto de descarga de contenido puede tener implicaciones legales segun la jurisdiccion; la licencia del software no cubre el contenido que se indexe con el.
 
 ## Enlaces
 
-- [HuggingFace: NorviTech/armiger-swarm-priors](https://huggingface.co/NorviTech/armiger-swarm-priors)
+- [Hugging Face: NorviTech/armiger-swarm-priors](https://huggingface.co/NorviTech/armiger-swarm-priors)
 - [Armiger Ultra (incluye este plugin pre-empaquetado)](https://huggingface.co/NorviTech/armiger-ultra)
 - [Armiger (CPU)](https://huggingface.co/NorviTech/armiger)
 - [Plugin hermano: armiger-swarm-survival](https://huggingface.co/NorviTech/armiger-swarm-survival)

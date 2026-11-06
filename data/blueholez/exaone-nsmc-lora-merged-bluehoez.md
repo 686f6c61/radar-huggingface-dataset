@@ -6,7 +6,7 @@ El modelo `blueholez/exaone-nsmc-lora-merged-bluehoez` es un ajuste fino mediant
 
 Este modelo resulta relevante porque demuestra un flujo práctico de fine-tuning y fusión de LoRA sobre modelos EXAONE, una familia de modelos de lenguaje de código abierto desarrollada por LG AI Research. Al estar basado en EXAONE 4.x, hereda su arquitectura transformer y su capacidad de generación de texto conversacional, aunque adaptado específicamente a la tarea de análisis de sentimiento en coreano. La disponibilidad de una versión GGUF adicional sugiere que puede desplegarse en entornos con recursos limitados mediante llama.cpp u Ollama.
 
-La ficha se basa únicamente en la información pública disponible en HuggingFace y en los resultados de búsqueda web. La model card original es una plantilla genérica sin datos técnicos detallados, por lo que muchas especificaciones se indican como "no disponible".
+La ficha se basa únicamente en la información pública disponible en Hugging Face y en los resultados de búsqueda web. La model card original es una plantilla genérica sin datos técnicos detallados, por lo que muchas especificaciones se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/blueholez/exaone-nsmc-lora-merged-bluehoez)
+- [Modelo en Hugging Face](https://huggingface.co/blueholez/exaone-nsmc-lora-merged-bluehoez)
 - [Version GGUF del modelo](https://huggingface.co/blueholez/exaone-nsmc-lora-blueholez-GGUF)
 - [Repositorio de EXAONE-4.5 en GitHub](https://github.com/LG-AI-EXAONE/EXAONE-4.5)
 - [Guia de model merging de invoke-training](https://invoke-ai.github.io/invoke-training/guides/model_merge/)

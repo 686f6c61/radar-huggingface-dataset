@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros contenedores colibrì comparables ni so
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/zichenshang/GLM-5.2-colibri-int4
+- Repositorio de Hugging Face: https://huggingface.co/zichenshang/GLM-5.2-colibri-int4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2-FP8
 - Motor colibrì (GitHub): https://github.com/JustVugg/colibri
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a plataformas CMS (formcms, Squidex, mix.core, Umbraco, Orchard Core) y no guardan relacion con el modelo.

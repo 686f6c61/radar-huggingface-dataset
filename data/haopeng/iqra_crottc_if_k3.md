@@ -108,7 +108,7 @@ La comparación con alternativas fuera de esta familia (por ejemplo, sistemas MD
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haopeng/iqra_CROTTC_IF_k3
+- Modelo en Hugging Face: https://huggingface.co/Haopeng/iqra_CROTTC_IF_k3
 - Modelo hermano CROTTC k3 (frontend acústico idéntico): https://huggingface.co/Haopeng/iqra_CROTTC_conf_k3
 - Modelo base: https://huggingface.co/microsoft/wavlm-large
 - SpeechBrain: https://speechbrain.github.io/

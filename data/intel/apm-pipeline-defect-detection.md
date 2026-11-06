@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Intel/apm-pipeline-defect-detection` es un repositorio publicado en HuggingFace por Intel bajo licencia Apache 2.0. El nombre sugiere un modelo orientado a la deteccion de defectos en pipelines de aplicaciones (APM, probablemente *Application Performance Monitoring*), aunque la model card publicada no contiene ninguna descripcion funcional, arquitectonica ni de uso mas alla de la declaracion de licencia.
+`Intel/apm-pipeline-defect-detection` es un repositorio publicado en Hugging Face por Intel bajo licencia Apache 2.0. El nombre sugiere un modelo orientado a la deteccion de defectos en pipelines de aplicaciones (APM, probablemente *Application Performance Monitoring*), aunque la model card publicada no contiene ninguna descripcion funcional, arquitectonica ni de uso mas alla de la declaracion de licencia.
 
 En el momento de redactar esta ficha, el repositorio no dispone de pipeline declarado, no especifica idiomas soportados, no incluye pesos documentados ni resultados de evaluacion, y registra cero descargas y cero likes. La fecha de creacion y ultima actualizacion coincide (2026-10-28), lo que apunta a una publicacion inicial sin iteraciones posteriores documentadas.
 
@@ -65,14 +65,14 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 - Ausencia total de model card tecnica: no hay descripcion de arquitectura, datos de entrenamiento, evaluacion ni instrucciones de uso.
 - Cero descargas y cero likes en el momento de la consulta, lo que impide inferir validacion por parte de la comunidad.
-- Sin pipeline declarado en HuggingFace, por lo que la plataforma no ofrece una interfaz de inferencia lista para usar.
+- Sin pipeline declarado en Hugging Face, por lo que la plataforma no ofrece una interfaz de inferencia lista para usar.
 - Riesgo elevado de que el repositorio contenga unicamente metadatos o artefactos auxiliares en lugar de pesos de modelo.
 - La licencia Apache 2.0 permite uso comercial, pero al no existir documentacion de entrenamiento no puede evaluarse el riesgo de sesgos, contaminacion de datos ni cumplimiento normativo.
 - No debe desplegarse en produccion sin una inspeccion previa de los archivos del repositorio y una evaluacion propia sobre datos representativos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Intel/apm-pipeline-defect-detection
+- Repositorio Hugging Face: https://huggingface.co/Intel/apm-pipeline-defect-detection
 - Pagina corporativa de Intel: https://www.intel.com/content/www/us/en/homepage.html
 - Centro de descargas de Intel: https://www.intel.fr/content/www/fr/fr/download-center/home.html
 - Intel Driver & Support Assistant: https://www.intel.com/content/www/us/en/support/detect.html

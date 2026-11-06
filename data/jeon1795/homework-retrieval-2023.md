@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jeon1795/homework-retrieval-2023` es un repositorio experimental publicado en HuggingFace por el usuario jeon1795 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Cnn Transformer" orientada a tareas de *retrieval* (recuperación de información multimodal, con Flickr30k como benchmark de referencia sugerido por el propio autor). No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con una configuración "tiny", un checkpoint de inicialización y los artefactos necesarios para ejecutar pruebas de humo y experimentos controlados.
+`jeon1795/homework-retrieval-2023` es un repositorio experimental publicado en Hugging Face por el usuario jeon1795 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Cnn Transformer" orientada a tareas de *retrieval* (recuperación de información multimodal, con Flickr30k como benchmark de referencia sugerido por el propio autor). No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con una configuración "tiny", un checkpoint de inicialización y los artefactos necesarios para ejecutar pruebas de humo y experimentos controlados.
 
 El modelo emplea atención lineal, fusión de tipo Tucker, activación gelu-tanh y normalización LayerNorm, con un total de 16.576 parámetros según los pesos en safetensors. El repositorio incluye `train.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
@@ -80,5 +80,5 @@ La comparación es asimétrica: los modelos de referencia son releases preentren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jeon1795/homework-retrieval-2023
+- Hugging Face: https://huggingface.co/jeon1795/homework-retrieval-2023
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos adicionales en la información proporcionada.

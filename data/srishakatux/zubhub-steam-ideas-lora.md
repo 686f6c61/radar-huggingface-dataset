@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZubHub STEAM Idea Model es un adaptador LoRA experimental publicado por Srishti Sethi bajo la organizacion SrishAkaTux en HuggingFace. Se monta sobre `mlx-community/Qwen2.5-1.5B-Instruct-4bit`, una version cuantizada a 4 bits del modelo Qwen2.5-1.5B-Instruct, y su objetivo es generar ideas de actividades STEAM (ciencia, tecnologia, ingenieria, arte y matematicas) para educacion K-12 a partir de tres entradas: los materiales disponibles, el rango de edad del alumnado y un tema opcional. Las ideas deben estar ancladas en artesanias y tecnicas tradicionales descritas en Wikipedia.
+ZubHub STEAM Idea Model es un adaptador LoRA experimental publicado por Srishti Sethi bajo la organizacion SrishAkaTux en Hugging Face. Se monta sobre `mlx-community/Qwen2.5-1.5B-Instruct-4bit`, una version cuantizada a 4 bits del modelo Qwen2.5-1.5B-Instruct, y su objetivo es generar ideas de actividades STEAM (ciencia, tecnologia, ingenieria, arte y matematicas) para educacion K-12 a partir de tres entradas: los materiales disponibles, el rango de edad del alumnado y un tema opcional. Las ideas deben estar ancladas en artesanias y tecnicas tradicionales descritas en Wikipedia.
 
 El adaptador tiene un alcance muy acotado: LoRA de rango 8 aplicado a las 8 ultimas capas, entrenado con 388 ejemplos de chat (48 de validacion y 50 de test) durante 600 iteraciones. No es un modelo generico ni un modelo de produccion: la propia model card lo describe como un experimento de aprendizaje e investigacion del proyecto ZubHub, y recomienda revision humana de cada sugerencia.
 
@@ -115,7 +115,7 @@ Comparativa de rendimiento en tareas generales: no disponible para el adaptador,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SrishAkaTux/zubhub-steam-ideas-lora
+- Modelo en Hugging Face: https://huggingface.co/SrishAkaTux/zubhub-steam-ideas-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/SrishAkaTux/zubhub-steam-ideas-wikipedia
 - Modelo base: https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit
 - Articulo de referencia en freeCodeCamp, "How to Teach a Small LLM to Suggest K12 Creative Project Ideas" (junio de 2026): https://www.freecodecamp.org/news/how-to-teach-a-small-llm-to-suggest-k12-creative-project-ideas/

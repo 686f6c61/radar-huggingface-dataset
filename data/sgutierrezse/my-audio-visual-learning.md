@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sgutierrezse/my-audio-visual-learning` es un repositorio de HuggingFace cuyo contenido real es una nota de investigación (research note) sobre aprendizaje audio-visual, no un modelo entrenado. La propia model card lo declara explícitamente: "no se presenta como un artículo completado ni como una publicación de modelos entrenados", y sus dos únicos ficheros documentados son `review.md` (artefacto principal) y `README.md`. Por tanto, no existe checkpoint funcional, ni pesos utilizables para inferencia, ni resultados experimentales publicados.
+`sgutierrezse/my-audio-visual-learning` es un repositorio de Hugging Face cuyo contenido real es una nota de investigación (research note) sobre aprendizaje audio-visual, no un modelo entrenado. La propia model card lo declara explícitamente: "no se presenta como un artículo completado ni como una publicación de modelos entrenados", y sus dos únicos ficheros documentados son `review.md` (artefacto principal) y `README.md`. Por tanto, no existe checkpoint funcional, ni pesos utilizables para inferencia, ni resultados experimentales publicados.
 
 Los metadatos del repositorio incluyen un tensor en formato safetensors con 33.088 parámetros totales, una cifra compatible con un tensor de prueba o marcador de posición más que con un transformer operativo: los modelos de audio-visual learning descritos en la literatura manejan varios órdenes de magnitud más de parámetros. El tamaño del repositorio declarado es de 0.0 GB, lo que refuerza la ausencia de pesos reales.
 
@@ -79,7 +79,7 @@ No disponible. No procede comparar este repositorio con modelos de audio-visual 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sgutierrezse/my-audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/sgutierrezse/my-audio-visual-learning
 - Fichero principal de la nota: https://huggingface.co/sgutierrezse/my-audio-visual-learning/blob/main/review.md
 - Survey *Learning in Audio-visual Context: A Review, Analysis, and New Perspective* (arXiv): https://arxiv.org/abs/2208.09579
 - Página del survey en GeWu-Lab: https://gewu-lab.github.io/audio-visual-learning/

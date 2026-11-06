@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jennifer es un adaptador LoRA de texto-a-imagen publicado por el usuario AiMamis en HuggingFace. No es un modelo completo: se trata de un ajuste de bajo rango que debe cargarse sobre el modelo base `krea/Krea-2-Turbo`, un generador de imágenes de tipo "Turbo" (orientado a generación con pocos pasos) del que el autor no documenta especificaciones técnicas en esta ficha. El adaptador se distribuye como repositorio de la librería `diffusers` con un peso total de 0,5 GB y licencia openrail++.
+Jennifer es un adaptador LoRA de texto-a-imagen publicado por el usuario AiMamis en Hugging Face. No es un modelo completo: se trata de un ajuste de bajo rango que debe cargarse sobre el modelo base `krea/Krea-2-Turbo`, un generador de imágenes de tipo "Turbo" (orientado a generación con pocos pasos) del que el autor no documenta especificaciones técnicas en esta ficha. El adaptador se distribuye como repositorio de la librería `diffusers` con un peso total de 0,5 GB y licencia openrail++.
 
 La función declarada del modelo es la generación condicionada de una identidad concreta ("Jennifer") junto con tres atributos fijos: cabello castaño (`Brunette hair`), piel clara (`Fair skin`) y ojos marrones (`Brown eyes`). Estos cuatro términos son los *trigger words* documentados en la model card y son el único mecanismo de control indicado por el autor; no se documenta ningún otro parámetro de entrenamiento, rango, dataset ni proceso de evaluación.
 
@@ -80,7 +80,7 @@ No se proporcionan modelos comparables en la información disponible, y no se ha
 | Contexto | No aplica (difusión) | No aplica (difusión) | No aplica (difusión) |
 | Rendimiento | No disponible, sin benchmarks | No disponible | No disponible |
 | Licencia | openrail++ | Heredada del base | Heredada del base |
-| Disponibilidad | Repositorio público en HuggingFace, 0 descargas | No disponible | No disponible |
+| Disponibilidad | Repositorio público en Hugging Face, 0 descargas | No disponible | No disponible |
 | Coste de almacenamiento | Bajo (adaptador pequeño frente al base) | Alto | Muy bajo |
 | Flexibilidad | Alta: se puede combinar y ponderar con otros LoRA | Baja: identidad fijada en los pesos | Media: limitada a la representación aprendida |
 
@@ -100,7 +100,7 @@ No se proporcionan modelos comparables en la información disponible, y no se ha
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/AiMamis/Jennifer
+- Página del modelo en Hugging Face: https://huggingface.co/AiMamis/Jennifer
 - Archivos y versiones: https://huggingface.co/AiMamis/Jennifer/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Texto de la licencia openrail++: no disponible en la información proporcionada

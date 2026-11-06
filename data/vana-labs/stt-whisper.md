@@ -118,7 +118,7 @@ La busqueda web unicamente confirma que existen comparativas y servicios de terc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vana-Labs/stt-whisper
+- Repositorio en Hugging Face: https://huggingface.co/Vana-Labs/stt-whisper
 - Pesos originales de Whisper en GGML (ggerganov/whisper.cpp): https://huggingface.co/ggerganov/whisper.cpp
 - Modelo de origen del ajuste en armenio (Chillarmo/whisper-large-v3-turbo-armenian): https://huggingface.co/Chillarmo/whisper-large-v3-turbo-armenian
 - Repositorio de OpenAI Whisper en GitHub: https://github.com/openai/whisper

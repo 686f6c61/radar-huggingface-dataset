@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks ni de parámetros de los modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjuoo7/indus-pocket-tts-hindi-onnx-inaya-weight8
+- Modelo en Hugging Face: https://huggingface.co/sanjuoo7/indus-pocket-tts-hindi-onnx-inaya-weight8
 - Modelo base (Indus Labs): https://huggingface.co/Indus-Labs/indus-pocket-tts
 - Revisión upstream exacta: https://huggingface.co/Indus-Labs/indus-pocket-tts/tree/39899d3c1dcda47a7ef167cd222419feb86abeb9
 - Modelo base original (Kyutai Pocket TTS): https://huggingface.co/kyutai/pocket-tts

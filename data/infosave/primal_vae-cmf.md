@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con otros VAE en la informaci√
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/infosave/primal_vae-cmf)
+- [Modelo en Hugging Face](https://huggingface.co/infosave/primal_vae-cmf)
 - [Modelo base ostris/primal_vae](https://huggingface.co/ostris/primal_vae)
 - [Repositorio CMF](https://github.com/infosave2007/cmf)
 - [P√°gina de releases de cortiq](https://github.com/infosave2007/cmf/releases)

@@ -80,8 +80,8 @@ No se han identificado modelos comparables en la informacion proporcionada. El a
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/samhitak10/qwen2.5-1.5b-style-without-erasure-lora
+- Hugging Face del adaptador: https://huggingface.co/samhitak10/qwen2.5-1.5b-style-without-erasure-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio del proyecto (codigo y paper): https://github.com/SamhitaK10/style-without-erasure
 - Informacion general de Qwen2.5: https://github.com/mx4ai/qwen2.5
-- HuggingFace de Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
+- Hugging Face de Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B

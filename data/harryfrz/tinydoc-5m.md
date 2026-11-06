@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tinydoc-5m es un modelo OCR y de comprensión de documentos de muy pequeño tamaño (5,1 millones de parámetros, unos 20 MB de pesos) desarrollado por el usuario harryfrz y publicado en HuggingFace bajo licencia Apache 2.0. Su función es leer texto impreso en recibos, facturas, PDFs y páginas ordinarias y devolver tanto el texto como los campos clave (comercio, fecha, totales, líneas de detalle) en formato JSON, con una puntuación de confianza por valor y la posición en la página donde se ha leído cada campo.
+tinydoc-5m es un modelo OCR y de comprensión de documentos de muy pequeño tamaño (5,1 millones de parámetros, unos 20 MB de pesos) desarrollado por el usuario harryfrz y publicado en Hugging Face bajo licencia Apache 2.0. Su función es leer texto impreso en recibos, facturas, PDFs y páginas ordinarias y devolver tanto el texto como los campos clave (comercio, fecha, totales, líneas de detalle) en formato JSON, con una puntuación de confianza por valor y la posición en la página donde se ha leído cada campo.
 
 El modelo se distribuye en formato ONNX y está diseñado explícitamente para inferencia en CPU, lo que lo sitúa en una categoría distinta a la de los grandes modelos multimodales de OCR: aquí el objetivo no es la máxima precisión absoluta, sino un coste computacional mínimo y un despliegue trivial en entornos sin GPU. Se ha entrenado desde cero, sin pesos preentrenados ni destilación de otro modelo, sobre CORD-v2, WildReceipt, un subconjunto de DocLayNet v1.2 y datos sintéticos.
 
@@ -81,7 +81,7 @@ El autor indica que las cifras de Indra OCR proceden de las publicadas por Datal
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tinydoc-5m | 5,1 M | no disponible | OCR + extracción de campos en ONNX para CPU | Apache 2.0 | HuggingFace (`harryfrz/tinydoc-5m`) |
+| tinydoc-5m | 5,1 M | no disponible | OCR + extracción de campos en ONNX para CPU | Apache 2.0 | Hugging Face (`harryfrz/tinydoc-5m`) |
 | Tesseract | no disponible | no disponible | OCR clásico en CPU | Apache 2.0 | open source |
 | Indra OCR (Datalab) | no disponible | no disponible | OCR/document understanding | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ En la comparación de rendimiento aportada por el autor, tinydoc-5m queda ligera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harryfrz/tinydoc-5m
+- Modelo en Hugging Face: https://huggingface.co/harryfrz/tinydoc-5m
 - Dataset CORD-v2: https://huggingface.co/datasets/naver-clova-ix/cord-v2
 - Dataset DocLayNet v1.2: https://huggingface.co/datasets/docling-project/DocLayNet-v1.2
 - Dataset WildReceipt: https://download.openmmlab.com/mmocr/data/wildreceipt.tar

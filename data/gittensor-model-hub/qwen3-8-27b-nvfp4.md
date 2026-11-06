@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento comparativo entre estas opciones.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4)
+- [Modelo en Hugging Face](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [NVIDIA Model Optimizer](https://github.com/NVIDIA/Model-Optimizer)

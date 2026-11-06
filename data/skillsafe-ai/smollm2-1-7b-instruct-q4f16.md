@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skillsafe-ai/smollm2-1.7b-instruct-q4f16 (este) | 1,7 B (modelo base) | 4096 tokens (`ctx4k`) | `q4f16_1` | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| mlc-ai/SmolLM2-1.7B-Instruct-q4f16_1-MLC (upstream) | 1,7 B | no disponible | `q4f16_1` | apache-2.0 | HuggingFace (commit 84f57f8 documentado) |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct (modelo base) | 1,7 B | no disponible en esta información | pesos originales en safetensors | apache-2.0 | HuggingFace, repositorio de referencia |
+| skillsafe-ai/smollm2-1.7b-instruct-q4f16 (este) | 1,7 B (modelo base) | 4096 tokens (`ctx4k`) | `q4f16_1` | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| mlc-ai/SmolLM2-1.7B-Instruct-q4f16_1-MLC (upstream) | 1,7 B | no disponible | `q4f16_1` | apache-2.0 | Hugging Face (commit 84f57f8 documentado) |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct (modelo base) | 1,7 B | no disponible en esta información | pesos originales en safetensors | apache-2.0 | Hugging Face, repositorio de referencia |
 | Alternativas de tamaño similar (Qwen, Llama, Gemma en el rango 1-2 B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos comparativos de rendimiento frente a terceros, por lo que la comparación queda limitada a procedencia, formato y licencia. La diferencia práctica entre este repositorio y el upstream de mlc-ai no es de pesos —deriva de él— sino de empaquetado y trazabilidad: la receta, la cadena de herramientas y los hashes SHA-256 de cada fichero quedan publicados de forma explícita.
@@ -88,7 +88,7 @@ La información proporcionada no incluye datos comparativos de rendimiento frent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/smollm2-1.7b-instruct-q4f16
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/smollm2-1.7b-instruct-q4f16
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Artefacto upstream de MLC: https://huggingface.co/mlc-ai/SmolLM2-1.7B-Instruct-q4f16_1-MLC/tree/84f57f8580a9d8d623266b600ad4273bb9fd84c1
 - Repositorio del conversor de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sakuraksk95/phd-contrastive` es un transformer de escala *tiny* diseñado para experimentos de aprendizaje contrastivo. Lo publica el usuario sakuraksk95 en HuggingFace con licencia MIT, y su propósito declarado es servir como implementación de referencia transparente y reproducible, no como un modelo entrenado para producción. El repositorio incluye un script Python (`pipeline.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint `model.safetensors` de inicialización válido para pruebas de humo.
+El modelo `sakuraksk95/phd-contrastive` es un transformer de escala *tiny* diseñado para experimentos de aprendizaje contrastivo. Lo publica el usuario sakuraksk95 en Hugging Face con licencia MIT, y su propósito declarado es servir como implementación de referencia transparente y reproducible, no como un modelo entrenado para producción. El repositorio incluye un script Python (`pipeline.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint `model.safetensors` de inicialización válido para pruebas de humo.
 
 Con solo 49.600 parámetros, se trata de un modelo extremadamente pequeño, pensado para validar ideas de arquitectura (atención lineal, fusión *tucker*, normalización *groupnorm*) en entornos de bajos recursos. La model card es explícita en que no se presentan resultados de benchmarks ni se afirma que el checkpoint esté entrenado. Su relevancia actual es limitada: sirve como punto de partida para investigadores que quieran explorar variantes eficientes de transformers en tareas contrastivas, pero no como un modelo listo para uso práctico.
 
@@ -67,5 +67,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sakuraksk95/phd-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/sakuraksk95/phd-contrastive
 - No se han encontrado otros enlaces relevantes específicos de este modelo en la búsqueda web. Los resultados obtenidos (contrastors, CLIP, etc.) son proyectos genéricos de aprendizaje contrastivo y no están relacionados directamente con este repositorio.

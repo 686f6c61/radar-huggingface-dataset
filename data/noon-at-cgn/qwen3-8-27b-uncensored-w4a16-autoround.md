@@ -66,10 +66,10 @@ La diferencia de ~6.5 puntos en MMLU-Pro frente al int4 del modelo oficial se de
 
 | Modelo | Parametros | Contexto | Rendimiento (GSM8K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-W4A16-AutoRound (este) | 27B (int4) | 262K | 0.905 | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B (oficial) | 27B (bf16) | 262K | ~0.91 (referencia) | Apache-2.0 | HuggingFace |
-| dbirks/Qwen3.8-27B-W4A16-AutoRound | 27B (int4) | 262K | 0.917 | Apache-2.0 | HuggingFace (modelo no abliterated) |
-| orcarouter/Qwen3.8-27B-Uncensored | 27B (bf16) | 262K | ~0.905 | Apache-2.0 | HuggingFace (modelo base abliterated) |
+| Qwen3.8-27B-Uncensored-W4A16-AutoRound (este) | 27B (int4) | 262K | 0.905 | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B (oficial) | 27B (bf16) | 262K | ~0.91 (referencia) | Apache-2.0 | Hugging Face |
+| dbirks/Qwen3.8-27B-W4A16-AutoRound | 27B (int4) | 262K | 0.917 | Apache-2.0 | Hugging Face (modelo no abliterated) |
+| orcarouter/Qwen3.8-27B-Uncensored | 27B (bf16) | 262K | ~0.905 | Apache-2.0 | Hugging Face (modelo base abliterated) |
 
 La principal diferencia entre este modelo y el de dbirks es que este se basa en el checkpoint abliterated, lo que reduce la puntuación en MMLU-Pro (~6.5 puntos) pero mantiene un rendimiento similar en GSM8K y MMLU. Frente al modelo base (orcarouter), la cuantización int4 añade una pérdida de calidad mínima en la mayoría de las tareas.
 
@@ -84,7 +84,7 @@ La principal diferencia entre este modelo y el de dbirks es que este se basa en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound)
+- [Modelo en Hugging Face](https://huggingface.co/noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound)
 - [Modelo base (orcarouter/Qwen3.8-27B-Uncensored)](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored)
 - [Modelo original (Qwen/Qwen3.8-27B)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio de Intel AutoRound](https://github.com/intel/auto-round)

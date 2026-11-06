@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks comparativos fiables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/pckmer/Qwen3-1.7B-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/pckmer/Qwen3-1.7B-GGUF
 - Repositorio oficial de Qwen3-1.7B-GGUF: https://huggingface.co/Qwen/Qwen3-1.7B-GGUF
 - Repositorio de unsloth con variantes GGUF: https://huggingface.co/unsloth/Qwen3-1.7B-GGUF
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/

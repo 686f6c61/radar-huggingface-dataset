@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-UNCENSORED-FP8 es una modificación de pesos del modelo GLM-5.3 en su variante FP8, publicada en HuggingFace bajo el identificador `HolyJudgment/GLM-5.3-UNCENSORED-FP8`, aunque la model card atribuye el trabajo al colectivo dealignai y lo presenta como una release de la serie «CRACK». Se trata de un modelo de lenguaje de arquitectura `glm_moe_dsa` (mezcla de expertos con atención dispersa) de 753.329.940.480 parámetros totales y 78 capas, solo texto, derivado de `zai-org/GLM-5.3` a través de la cuantización FP8 `JANGQ-AI/GLM-5.3-FP8`.
+GLM-5.3-UNCENSORED-FP8 es una modificación de pesos del modelo GLM-5.3 en su variante FP8, publicada en Hugging Face bajo el identificador `HolyJudgment/GLM-5.3-UNCENSORED-FP8`, aunque la model card atribuye el trabajo al colectivo dealignai y lo presenta como una release de la serie «CRACK». Se trata de un modelo de lenguaje de arquitectura `glm_moe_dsa` (mezcla de expertos con atención dispersa) de 753.329.940.480 parámetros totales y 78 capas, solo texto, derivado de `zai-org/GLM-5.3` a través de la cuantización FP8 `JANGQ-AI/GLM-5.3-FP8`.
 
 El problema que aborda no es de capacidad sino de alineación: elimina el comportamiento de rechazo (refusal) mediante una edición permanente en bf16 de los tensores *residual writer*, sin fine-tuning, sin LoRA y sin hooks en tiempo de ejecución. Los expertos enrutados en FP8 quedan intactos, de modo que el modelo conserva la velocidad nativa de los tensor cores FP8 en Hopper (H100/H200) y se carga con vLLM estándar.
 
@@ -101,7 +101,7 @@ No se dispone de datos verificados de otras familias de modelos de escala compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HolyJudgment/GLM-5.3-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/HolyJudgment/GLM-5.3-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 de partida: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Variante de ciberseguridad hermana: https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8

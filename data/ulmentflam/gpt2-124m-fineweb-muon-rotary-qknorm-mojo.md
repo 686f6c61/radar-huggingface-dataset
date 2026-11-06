@@ -90,7 +90,7 @@ Los únicos datos publicados son de pérdida de validación sobre FineWeb val (3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulmentflam/gpt2-124m-fineweb-muon-rotary-qknorm-mojo
+- Modelo en Hugging Face: https://huggingface.co/ulmentflam/gpt2-124m-fineweb-muon-rotary-qknorm-mojo
 - Baseline AdamW: https://huggingface.co/ulmentflam/gpt2-124m-fineweb-mojo
 - Repositorio llm.mojo: https://github.com/ulmentflam/llm.mojo
 - Informe completo de resultados: https://github.com/ulmentflam/llm.mojo/blob/main/docs/ai/modded_nanogpt_adoption_results_2026-10-30.md

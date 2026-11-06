@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlephFunk/Kimi-K3.1-Pro-expert-slices-0-15
+- Repositorio en Hugging Face: https://huggingface.co/AlephFunk/Kimi-K3.1-Pro-expert-slices-0-15
 - Modelo original: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Licencia original: https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/6d0a0202956796543364d666ab19c6ad1a494ee1/LICENSE
 - Revision de origen: `6d0a0202956796543364d666ab19c6ad1a494ee1`

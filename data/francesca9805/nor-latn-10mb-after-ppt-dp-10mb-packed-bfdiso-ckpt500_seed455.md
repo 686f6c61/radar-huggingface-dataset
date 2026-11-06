@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un checkpoint de generacion de texto desarrollado por el usuario de HuggingFace `francesca9805`, aparentemente en el contexto de una investigacion academica (la ejecucion de entrenamiento esta registrada en una cuenta de Weights & Biases de la University of Groningen). Se trata de un ajuste fino (SFT) sobre el modelo base `francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455`, que a su vez parece derivarse de un entrenamiento previo sobre un corpus de aproximadamente 10 MB. La nomenclatura del nombre (`nor-latn`) sugiere que el trabajo se centra en noruego en alfabeto latino, aunque el autor no declara idiomas oficialmente en la model card.
+El modelo `nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un checkpoint de generacion de texto desarrollado por el usuario de Hugging Face `francesca9805`, aparentemente en el contexto de una investigacion academica (la ejecucion de entrenamiento esta registrada en una cuenta de Weights & Biases de la University of Groningen). Se trata de un ajuste fino (SFT) sobre el modelo base `francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455`, que a su vez parece derivarse de un entrenamiento previo sobre un corpus de aproximadamente 10 MB. La nomenclatura del nombre (`nor-latn`) sugiere que el trabajo se centra en noruego en alfabeto latino, aunque el autor no declara idiomas oficialmente en la model card.
 
 Tecnicamente es un transformer de tipo GPT-2 con 39.087.104 parametros totales (unos 39 millones), lo que lo situa en la gama de modelos muy pequenos, por debajo de GPT-2 small (124 M). El repositorio ocupa 0,9 GB y los pesos estan en formato safetensors. Se ha entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, y esta etiquetado como compatible con text-generation-inference y endpoints.
 
@@ -45,7 +45,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Generacion de texto de relleno o sintetico en noruego: si el modelo esta efectivamente entrenado en esa lengua, podria generar borradores de texto corto para pruebas de interfaz o aumentacion de datos.
 - Fine-tuning adicional en dominios concretos: su tamano reducido permite reentrenarlo o adaptarlo con recursos minimos, util como punto de partida en experimentos academicos.
 - Despliegue en el borde (edge) o dispositivos embebidos: la huella de memoria es lo bastante baja como para plantear inferencia local en hardware muy limitado.
-- Docencia y aprendizaje: adecuado para ilustrar el ciclo completo de preentrenamiento, SFT y publicacion de checkpoints en HuggingFace.
+- Docencia y aprendizaje: adecuado para ilustrar el ciclo completo de preentrenamiento, SFT y publicacion de checkpoints en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`nor-latn-...-ckpt500_seed455`) | 39,1 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este modelo (`nor-latn-...-ckpt500_seed455`) | 39,1 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible |
-| Modelo base del autor (`nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455`) | no disponible | no disponible | no disponible | HuggingFace |
+| Modelo base del autor (`nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455`) | no disponible | no disponible | no disponible | Hugging Face |
 
 Nota: los datos de GPT-2 small y DistilGPT-2 corresponden a especificaciones publicas conocidas; no se dispone de comparaciones de rendimiento entre este modelo y dichas alternativas.
 
@@ -85,7 +85,7 @@ Nota: los datos de GPT-2 small y DistilGPT-2 corresponden a especificaciones pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ycm94vt5
 - Repositorio de TRL: https://github.com/huggingface/trl

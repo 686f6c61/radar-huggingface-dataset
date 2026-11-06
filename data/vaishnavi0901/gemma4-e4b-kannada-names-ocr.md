@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vaishnavi0901/gemma4-E4B-kannada-names-ocr` es un ajuste fino publicado en HuggingFace por el usuario vaishnavi0901, derivado del modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`. Segun la model card, el entrenamiento se realizo con Unsloth, herramienta que el autor declara que acelero el proceso "2x". La unica informacion tecnica explicita que aporta el autor es la licencia (apache-2.0), el modelo de partida y la libreria (transformers).
+`vaishnavi0901/gemma4-E4B-kannada-names-ocr` es un ajuste fino publicado en Hugging Face por el usuario vaishnavi0901, derivado del modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`. Segun la model card, el entrenamiento se realizo con Unsloth, herramienta que el autor declara que acelero el proceso "2x". La unica informacion tecnica explicita que aporta el autor es la licencia (apache-2.0), el modelo de partida y la libreria (transformers).
 
 El nombre del repositorio sugiere una especializacion en el tratamiento de nombres propios en kannada y, por el sufijo "ocr", en texto procedente de reconocimiento optico de caracteres. Sin embargo, la model card no describe ninguna tarea, dataset ni capacidad concreta, y la etiqueta de idioma declarada es unicamente `en`, lo que contradice parcialmente lo que insinua el nombre. No se han publicado resultados de evaluacion, ni informacion sobre el dataset de entrenamiento, ni hiperparametros.
 
@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento, parametros ni contexto de este modelo, po
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vaishnavi0901/gemma4-E4B-kannada-names-ocr` | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `vaishnavi0901/gemma4-E4B-kannada-names-ocr` | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de OCR o de procesamiento de kannada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion disponible modelos comparables de la misma categoria, tamano o tarea.
@@ -92,7 +92,7 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vaishnavi0901/gemma4-E4B-kannada-names-ocr
+- Modelo en Hugging Face: https://huggingface.co/vaishnavi0901/gemma4-E4B-kannada-names-ocr
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e4b-it-unsloth-bnb-4bit
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
 

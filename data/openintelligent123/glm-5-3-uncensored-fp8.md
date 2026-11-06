@@ -102,15 +102,15 @@ No se dispone de datos de benchmarks comparables de otros modelos de escala simi
 - MTP no funcional en vLLM estándar: la decodificación especulativa no está disponible sin un fork concreto y con el backend `B12X_MLA_SPARSE`.
 - El soporte de contexto de 1M mediante decode-context-parallel está cerrado sobre `glm_moe_dsa` en vLLM por un problema de paginación de caché, lo que limita el uso práctico a aproximadamente 131K-160K tokens.
 - Sesgos conocidos: la model card no documenta una evaluación de sesgos demográficos ni de toxicidad diferencial; la ablación de rechazo puede alterar de forma no controlada el comportamiento en dominios sensibles, como sugiere la caída de 11,1 pp en `high_school_european_history`.
-- Diferencias de atribución: el identificador de HuggingFace corresponde a `Openintelligent123`, mientras que la model card se presenta como un release de `dealignai`. Conviene verificar la procedencia de los pesos antes de cualquier uso en producción.
+- Diferencias de atribución: el identificador de Hugging Face corresponde a `Openintelligent123`, mientras que la model card se presenta como un release de `dealignai`. Conviene verificar la procedencia de los pesos antes de cualquier uso en producción.
 - Restricciones de licencia: el modelo declara MIT, pero hereda del checkpoint base zai-org/GLM-5.3 y de la cuantización de JANGQ-AI, cuyos términos no se detallan en la información disponible. Es necesario verificar la licencia del modelo base antes del uso comercial.
 - El repositorio no tiene descargas ni likes registrados y fue creado y actualizado el mismo día, lo que limita la evidencia de validación independiente.
 - El uso de un modelo sin barreras de rechazo puede contravenir políticas de plataforma, términos de servicio de proveedores de API y, según la jurisdicción, normativa aplicable sobre contenido generado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Openintelligent123/GLM-5.3-UNCENSORED-FP8
-- Perfil del autor del release en HuggingFace: https://huggingface.co/dealignai
+- Modelo en Hugging Face: https://huggingface.co/Openintelligent123/GLM-5.3-UNCENSORED-FP8
+- Perfil del autor del release en Hugging Face: https://huggingface.co/dealignai
 - Cuenta de Twitter del autor del release: https://twitter.com/dealignai
 - Discusión con notas de despliegue en 8x DGX Spark GB10: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8/discussions/3
 - Modelo hermano especializado en ciberseguridad: https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8

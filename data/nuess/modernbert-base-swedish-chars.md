@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos ni de otras alternativas sueca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nuess/modernbert-base-swedish-chars
+- Modelo en Hugging Face: https://huggingface.co/nuess/modernbert-base-swedish-chars
 - Modelo base: https://huggingface.co/AI-Sweden-Models/ModernBERT-base
 - Repositorio de ModernBERT (referencia de arquitectura): no disponible en la información proporcionada
 - Paper de ModernBERT: no disponible en la información proporcionada

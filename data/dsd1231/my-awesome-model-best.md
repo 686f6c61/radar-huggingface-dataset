@@ -21,11 +21,11 @@ La model card incluida describe un modelo hipotético "MyAwesomeModel" con mejor
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura del modelo. Los tags de HuggingFace incluyen `bert` y `feature-extraction`, lo que podria indicar un modelo basado en BERT para extraccion de caracteristicas, pero no hay confirmacion en la model card ni en el repositorio. La model card menciona un "upgrade" con mejoras en razonamiento y un aumento del uso de tokens por pregunta (de 12K a 23K en AIME 2025), pero estos datos no estan respaldados por documentacion tecnica ni por archivos de configuracion en el repositorio. No se especifican datos de entrenamiento, ni el numero de tokens, ni si se aplicaron tecnicas como RLHF o DPO. El repositorio no contiene pesos ni archivos de configuracion, por lo que no es posible verificar ninguna afirmacion sobre el entrenamiento.
+No se dispone de informacion verificable sobre la arquitectura del modelo. Los tags de Hugging Face incluyen `bert` y `feature-extraction`, lo que podria indicar un modelo basado en BERT para extraccion de caracteristicas, pero no hay confirmacion en la model card ni en el repositorio. La model card menciona un "upgrade" con mejoras en razonamiento y un aumento del uso de tokens por pregunta (de 12K a 23K en AIME 2025), pero estos datos no estan respaldados por documentacion tecnica ni por archivos de configuracion en el repositorio. No se especifican datos de entrenamiento, ni el numero de tokens, ni si se aplicaron tecnicas como RLHF o DPO. El repositorio no contiene pesos ni archivos de configuracion, por lo que no es posible verificar ninguna afirmacion sobre el entrenamiento.
 
 ## Capacidades
 
-- Extraccion de caracteristicas (feature-extraction) segun el pipeline declarado en HuggingFace.
+- Extraccion de caracteristicas (feature-extraction) segun el pipeline declarado en Hugging Face.
 - Posible clasificacion de texto, dado que el tag `bert` sugiere un modelo de tipo BERT, aunque no hay evidencia en el repositorio.
 - La model card menciona capacidades de razonamiento, generacion de codigo y function calling, pero no hay implementacion visible ni pesos que permitan probarlas.
 - No se ha confirmado soporte multilingue ni ninguna otra capacidad especial.
@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- [Repositorio HuggingFace: DSD1231/my-awesome-model-best](https://huggingface.co/DSD1231/my-awesome-model-best)
+- [Repositorio Hugging Face: DSD1231/my-awesome-model-best](https://huggingface.co/DSD1231/my-awesome-model-best)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en los resultados de busqueda web.

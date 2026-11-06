@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Base | Tipo de ajuste | Tamaño del repo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriMentor/chioma-rlhf-v1 | Qwen2.5-7B-Instruct | Adaptador PEFT (RLHF) | 0,3 GB | No disponible | HuggingFace |
-| AfriMentor/chioma-sft-v1 | Qwen2.5-7B-Instruct | Adaptador PEFT (SFT) | No disponible | No disponible | HuggingFace |
-| AfriMentor/chioma-dpo-v1 | Qwen2.5-7B-Instruct | Adaptador PEFT (DPO) | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | - | Modelo base completo | ~15 GB | Apache 2.0 | HuggingFace |
+| AfriMentor/chioma-rlhf-v1 | Qwen2.5-7B-Instruct | Adaptador PEFT (RLHF) | 0,3 GB | No disponible | Hugging Face |
+| AfriMentor/chioma-sft-v1 | Qwen2.5-7B-Instruct | Adaptador PEFT (SFT) | No disponible | No disponible | Hugging Face |
+| AfriMentor/chioma-dpo-v1 | Qwen2.5-7B-Instruct | Adaptador PEFT (DPO) | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | - | Modelo base completo | ~15 GB | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

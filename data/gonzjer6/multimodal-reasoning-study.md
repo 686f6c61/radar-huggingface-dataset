@@ -63,8 +63,8 @@ No disponible. Este repositorio no es un modelo de IA y no tiene equivalentes di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gonzjer6/multimodal-reasoning-study
-- Perfil del autor en HuggingFace: https://huggingface.co/gonzjer6
+- Repositorio en Hugging Face: https://huggingface.co/gonzjer6/multimodal-reasoning-study
+- Perfil del autor en Hugging Face: https://huggingface.co/gonzjer6
 - Coleccion de recursos sobre razonamiento multimodal (referencia externa): https://github.com/TheSDEs/Awesome-Multimodal-Reasoning
 - Coleccion alternativa sobre razonamiento multimodal: https://github.com/jluite/Awesome-Multimodal-Reasoning
 - Articulo relacionado en arXiv (exploracion de capacidades de razonamiento en MLLMs): https://arxiv.org/abs/2401.06805

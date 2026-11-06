@@ -86,7 +86,7 @@ No se han encontrado adaptadores de traducción de embeddings directamente compa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_qwen3-emb-8b)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_qwen3-emb-8b)
 - [Colección de adaptadores de embeddings de QuerynAi](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Artículo de Perplexity sobre pplx-embed](https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval)
 - [Repositorio oficial de Qwen3-Embedding](https://deepwiki.com/QwenLM/Qwen3-Embedding)

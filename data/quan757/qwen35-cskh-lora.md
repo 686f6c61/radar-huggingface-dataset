@@ -55,7 +55,7 @@ El autor indica que el veredicto del "regression gate" es FAILED: el target aume
 ## Requisitos de hardware
 
 - Al ser un adaptador LoRA sobre un modelo de 0.8B, los requisitos de VRAM son bajos. El modelo base Qwen3.5-0.8B puede ejecutarse en GPUs consumer con 4-6 GB de VRAM en cuantización ligera, aunque no se especifican datos exactos.
-- El adaptador en sí ocupa muy poco espacio (el repo tiene 0.0 GB según HuggingFace, probablemente menos de 1 MB).
+- El adaptador en sí ocupa muy poco espacio (el repo tiene 0.0 GB según Hugging Face, probablemente menos de 1 MB).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, GTX 1080 Ti) para inferencia en bf16. Para entrenamiento, el autor usó un entorno académico, pero no se detalla el hardware.
 - Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con `transformers` y `peft` en Python. También es posible convertirlo a GGUF para usarlo con llama.cpp u Ollama, aunque no se proporciona una guía específica.
 - Latencia: según la model card, la inferencia con el adaptador es de 908.5 ms por muestra, frente a 6237.7 ms con el prompt optimizado sobre el base. Esto sugiere que el adaptador es significativamente más rápido, probablemente porque la salida es más corta y estructurada.
@@ -75,7 +75,7 @@ No se dispone de información sobre adaptadores LoRA similares para la misma tar
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Quan757/qwen35-cskh-lora
-- Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.5-27B (no es el mismo tamaño, pero es la página oficial de la serie Qwen3.5 en HuggingFace)
+- Hugging Face del adaptador: https://huggingface.co/Quan757/qwen35-cskh-lora
+- Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.5-27B (no es el mismo tamaño, pero es la página oficial de la serie Qwen3.5 en Hugging Face)
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Guía de fine-tuning de Qwen3.5 con LoRA (referencia externa): https://www.sotaaz.com/post/qwen35-finetuning-en

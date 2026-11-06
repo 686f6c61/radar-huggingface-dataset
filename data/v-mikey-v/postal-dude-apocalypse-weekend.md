@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Postal-Dude-Apocalypse-Weekend (RVCV2) | Conversion de voz | no disponible | no aplicable | no disponible | HuggingFace, 0 descargas |
-| Checkpoints RVCV2 genericos de la comunidad | Conversion de voz | no disponible | no aplicable | variable segun autor | Amplia en HuggingFace y foros |
+| Postal-Dude-Apocalypse-Weekend (RVCV2) | Conversion de voz | no disponible | no aplicable | no disponible | Hugging Face, 0 descargas |
+| Checkpoints RVCV2 genericos de la comunidad | Conversion de voz | no disponible | no aplicable | variable segun autor | Amplia en Hugging Face y foros |
 | so-vits-svc | Conversion de voz (SVC) | no disponible | no aplicable | AGPL-3.0 en el framework | Repositorio publico |
 | GPT-SoVITS | Conversion y sintesis de voz | no disponible | no aplicable | MIT en el framework | Repositorio publico |
 
@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento comparativos entre estos sistemas en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/V-Mikey-V/Postal-Dude-Apocalypse-Weekend
+- Hugging Face: https://huggingface.co/V-Mikey-V/Postal-Dude-Apocalypse-Weekend
 - Resultados de busqueda web: los enlaces recuperados (canal de YouTube, articulos de Wikipedia, M6+ e Instagram) corresponden a la cantante V de BTS y no guardan relacion con este modelo. No se han encontrado papers, blogs, repositorios ni demos oficiales del modelo en la informacion disponible.

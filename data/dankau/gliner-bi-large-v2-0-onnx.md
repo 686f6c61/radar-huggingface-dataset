@@ -75,7 +75,7 @@ No se dispone de datos suficientes para una comparativa numerica. A nivel cualit
 
 ## Enlaces
 
-- Repositorio HuggingFace del export ONNX: https://huggingface.co/DanKau/gliner-bi-large-v2.0-onnx
+- Repositorio Hugging Face del export ONNX: https://huggingface.co/DanKau/gliner-bi-large-v2.0-onnx
 - Modelo base: https://huggingface.co/knowledgator/gliner-bi-large-v2.0
 - Repositorio oficial de GLiNER: https://github.com/urchade/GLiNER
 - Documentacion del modulo ONNX de GLiNER: https://urchade.github.io/GLiNER/_modules/gliner/onnx/model.html

@@ -4,7 +4,7 @@
 
 El repositorio `davidwdw/fa-log-task00-centre-full-hourly-63db033bb872-f22f54a8f2bf` es, segun la propia model card, un archivo versionado de una flota ("versioned fleet archive"), no un modelo de lenguaje en el sentido habitual. La descripcion indica que se trata de una instantanea ("snapshot") de un conjunto de artefactos asociados a la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, con la recomendacion explicita de usar la revision exacta registrada y verificar el fichero `SHA256SUMS`.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. El autor no ha publicado pesos de modelo, tipos de cuantizacion ni idiomas soportados. Los unicos metadatos disponibles son los del propio repositorio de HuggingFace: autor `davidwdw`, una etiqueta de region (`region:us`), cero descargas y cero likes en el momento de la consulta, y fechas de creacion y actualizacion del 26 de septiembre de 2026 (un segundo de diferencia entre ambas).
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. El autor no ha publicado pesos de modelo, tipos de cuantizacion ni idiomas soportados. Los unicos metadatos disponibles son los del propio repositorio de Hugging Face: autor `davidwdw`, una etiqueta de region (`region:us`), cero descargas y cero likes en el momento de la consulta, y fechas de creacion y actualizacion del 26 de septiembre de 2026 (un segundo de diferencia entre ambas).
 
 Dado que el pipeline, la licencia y los idiomas figuran como no disponibles, y que la model card describe un paquete de archivo con verificacion de integridad, cualquier evaluacion como modelo de IA generativa no es posible con la informacion proporcionada. Esta ficha se limita a documentar lo que consta y a marcar explicitamente todo aquello que no se puede determinar.
 
@@ -77,7 +77,7 @@ No disponible. No se conocen modelos comparables porque el repositorio no se pre
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-63db033bb872-f22f54a8f2bf
+- Pagina del modelo en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-63db033bb872-f22f54a8f2bf
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta mencionada, sin URL publica disponible)
 - Fichero de verificacion mencionado: `SHA256SUMS` (referenciado en la model card, sin URL publica disponible)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

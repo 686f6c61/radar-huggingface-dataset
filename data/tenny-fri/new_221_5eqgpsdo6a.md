@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tenny-fri/new_221_5eqgpsdo6a` es un modelo de lenguaje publicado en HuggingFace por el usuario tenny-fri. Según los metadatos del repositorio, contiene 35.951.822.704 parámetros y está etiquetado con el tag `qwen3_5_moe`, lo que sugiere que podría tratarse de una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no hay confirmación oficial ni documentación pública al respecto. El repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para acceder a los pesos.
+El modelo `tenny-fri/new_221_5eqgpsdo6a` es un modelo de lenguaje publicado en Hugging Face por el usuario tenny-fri. Según los metadatos del repositorio, contiene 35.951.822.704 parámetros y está etiquetado con el tag `qwen3_5_moe`, lo que sugiere que podría tratarse de una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no hay confirmación oficial ni documentación pública al respecto. El repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para acceder a los pesos.
 
 La relevancia de este modelo es incierta: no se ha publicado información técnica, benchmarks ni documentación asociada. El tamaño del repositorio (142.2 GB) y el formato de pesos safetensors indican que los pesos están almacenados en precisión completa (probablemente FP16 o BF16). Dado que el autor no ha proporcionado detalles adicionales, la ficha se limita a los datos disponibles y marca explícitamente los campos no especificados.
 
@@ -52,13 +52,13 @@ No se dispone de información suficiente para comparar este modelo con alternati
 ## Limitaciones y advertencias
 
 - Falta total de documentación pública: no hay model card, paper ni repositorio de código asociado.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, cuyos términos no se han hecho públicos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, cuyos términos no se han hecho públicos.
 - Riesgo de sesgos y alucinaciones: al ser un modelo de lenguaje sin información sobre su entrenamiento, no se pueden evaluar estos riesgos.
 - Sin garantías de seguridad: no se ha auditado el modelo para uso en producción.
 - Posible problema de confianza: el autor no proporciona ningún detalle sobre el origen de los pesos, el proceso de entrenamiento o las licencias de los datos utilizados.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/tenny-fri/new_221_5eqgpsdo6a)
-- [Perfil del autor en HuggingFace](https://huggingface.co/tenny-fri)
-- [Datasets del autor en HuggingFace](https://huggingface.co/tenny-fri/datasets)
+- [Repositorio en Hugging Face](https://huggingface.co/tenny-fri/new_221_5eqgpsdo6a)
+- [Perfil del autor en Hugging Face](https://huggingface.co/tenny-fri)
+- [Datasets del autor en Hugging Face](https://huggingface.co/tenny-fri/datasets)

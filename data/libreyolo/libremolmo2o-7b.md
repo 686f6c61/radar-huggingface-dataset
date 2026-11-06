@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LibreMolmo2o-7b | 7,76 B | No disponible | Apache-2.0 | Repositorio de HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Espejo con wrapper para pointing; única tarea soportada; confianza sintética 1.0 |
-| allenai/Molmo2-O-7B | 7,76 B (pesos idénticos) | No disponible | Apache-2.0 | Repositorio de HuggingFace de Ai2 | Modelo original con pipeline `image-text-to-text`; capacidades completas del modelo base |
+| LibreMolmo2o-7b | 7,76 B | No disponible | Apache-2.0 | Repositorio de Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Espejo con wrapper para pointing; única tarea soportada; confianza sintética 1.0 |
+| allenai/Molmo2-O-7B | 7,76 B (pesos idénticos) | No disponible | Apache-2.0 | Repositorio de Hugging Face de Ai2 | Modelo original con pipeline `image-text-to-text`; capacidades completas del modelo base |
 | Alternativas de la misma categoría (VLMs de ~7-8 B) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No se dispone de datos verificables sobre alternativas en el material consultado |
 
 ## Limitaciones y advertencias
@@ -92,8 +92,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LibreYOLO/LibreMolmo2o-7b
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Molmo2-O-7B
+- Repositorio en Hugging Face: https://huggingface.co/LibreYOLO/LibreMolmo2o-7b
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Molmo2-O-7B
 - Snapshot del modelo base fijado en el espejo: https://huggingface.co/allenai/Molmo2-O-7B/tree/784410650d12be9bc086118fdefa32d2c3bced86
 - Model card original preservada: https://huggingface.co/LibreYOLO/LibreMolmo2o-7b/blob/main/README.upstream.md
 - Licencia del espejo: https://huggingface.co/LibreYOLO/LibreMolmo2o-7b/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario sad2DSAD12 en HuggingFace, con licencia MIT y etiquetado como transformers, pytorch y bert. La model card describe una actualización significativa respecto a versiones anteriores, con mejoras en razonamiento profundo, capacidades de inferencia y reducción de alucinaciones. Aunque el repositorio no incluye detalles técnicos sobre arquitectura, tamaño o datos de entrenamiento, el autor afirma que el modelo destaca en tareas de matemáticas, programación y lógica, acercándose al rendimiento de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario sad2DSAD12 en Hugging Face, con licencia MIT y etiquetado como transformers, pytorch y bert. La model card describe una actualización significativa respecto a versiones anteriores, con mejoras en razonamiento profundo, capacidades de inferencia y reducción de alucinaciones. Aunque el repositorio no incluye detalles técnicos sobre arquitectura, tamaño o datos de entrenamiento, el autor afirma que el modelo destaca en tareas de matemáticas, programación y lógica, acercándose al rendimiento de otros modelos líderes.
 
 El modelo se presenta como un sistema de razonamiento con soporte para function calling y system prompt, recomendando una temperatura de 0.6. La model card también menciona una variante llamada MyAwesomeModel-Small, que comparte tokenizer con el modelo principal, aunque no se especifican sus características. A pesar de la falta de especificaciones técnicas, los resultados reportados en benchmarks propios sugieren un rendimiento competitivo en múltiples categorías.
 
@@ -87,4 +87,4 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sad2DSAD12/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sad2DSAD12/MyAwesomeModel-TestRepo

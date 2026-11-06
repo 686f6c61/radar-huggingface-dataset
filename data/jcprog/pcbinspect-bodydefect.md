@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JcProg/PCBInspect-BodyDefect
+- Modelo en Hugging Face: https://huggingface.co/JcProg/PCBInspect-BodyDefect
 - Repositorio hermano PCBInspect-Region: https://huggingface.co/JcProg/PCBInspect-Region
 - Repositorio hermano PCBInspect-LeadDefect: https://huggingface.co/JcProg/PCBInspect-LeadDefect
 - Repositorio hermano PCBInspect-TextDefect: https://huggingface.co/JcProg/PCBInspect-TextDefect

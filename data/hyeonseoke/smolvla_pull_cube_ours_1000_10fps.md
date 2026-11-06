@@ -73,7 +73,7 @@ No se dispone de resultados de benchmarks públicos que permitan comparar el ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_pull_cube_ours_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_pull_cube_ours_1000_10fps
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/pull_cube_ours_10fps
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

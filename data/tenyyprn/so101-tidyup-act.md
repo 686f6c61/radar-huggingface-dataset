@@ -63,9 +63,9 @@ En la fila fija ①②③ el modelo completó las 3 esponjas en 4 de 5 intentos.
 
 | Modelo | Arquitectura | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tenyyprn/so101-tidyup-act | ACT con CVAE | 51,7 M | Tidy-up con SO101 | Apache 2.0 | HuggingFace |
-| tenyyprn/so101-tidyup-diffusion | Diffusion Policy | no disponible | Tidy-up con SO101 | no disponible en la información proporcionada | HuggingFace |
-| Políticas ACT genéricas de LeRobot | ACT | variable | Manipulación diversa | según modelo | HuggingFace / LeRobot |
+| tenyyprn/so101-tidyup-act | ACT con CVAE | 51,7 M | Tidy-up con SO101 | Apache 2.0 | Hugging Face |
+| tenyyprn/so101-tidyup-diffusion | Diffusion Policy | no disponible | Tidy-up con SO101 | no disponible en la información proporcionada | Hugging Face |
+| Políticas ACT genéricas de LeRobot | ACT | variable | Manipulación diversa | según modelo | Hugging Face / LeRobot |
 
 La comparación directa relevante es con la Diffusion Policy del mismo autor y mismos datos: ACT logra un 48 % de esponjas en caja frente al 85 %, y 3 de 20 episodios completos frente a 15 de 20, aunque ACT muestra un patrón de fallo específico (agarre entre objetos) que la Diffusion Policy no reproduce.
 
@@ -79,7 +79,7 @@ La comparación directa relevante es con la Diffusion Policy del mismo autor y m
 - Solo 19 descargas y 0 likes en el momento de la consulta; no hay validación externa independiente de los resultados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/tenyyprn/so101-tidyup-act
+- Modelo en Hugging Face: https://huggingface.co/tenyyprn/so101-tidyup-act
 - Diffusion Policy comparativa: https://huggingface.co/tenyyprn/so101-tidyup-diffusion
 - Vídeo de demostración: https://youtu.be/zCo2obT3ASg
 - Código y memoria del proyecto: https://github.com/tenyyprn/so101-tidyup-robot

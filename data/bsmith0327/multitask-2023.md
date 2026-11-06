@@ -50,5 +50,5 @@ No disponible. No existen modelos comparables en la misma categoría, ya que se 
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/bsmith0327/multitask-2023
+- Repositorio Hugging Face: https://huggingface.co/bsmith0327/multitask-2023
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SoyaNet es un modelo publicado en HuggingFace por el usuario Dhruvpatel20 bajo la licencia BigScience OpenRAIL-M. La informacion disponible en su model card se limita practicamente a la declaracion de licencia: no se especifica arquitectura, tamano, datos de entrenamiento, idiomas soportados ni caso de uso previsto. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+SoyaNet es un modelo publicado en Hugging Face por el usuario Dhruvpatel20 bajo la licencia BigScience OpenRAIL-M. La informacion disponible en su model card se limita practicamente a la declaracion de licencia: no se especifica arquitectura, tamano, datos de entrenamiento, idiomas soportados ni caso de uso previsto. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 Dado que la model card no incluye metadatos tecnicos ni documentacion de uso, no es posible determinar que problema resuelve ni que caracteristicas diferenciales ofrece frente a otros modelos. Cualquier evaluacion de su idoneidad para produccion requeriria inspeccionar directamente los archivos de pesos del repositorio, algo que no se ha podido realizar con la informacion proporcionada.
 
@@ -74,6 +74,6 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dhruvpatel20/SoyaNet
+- Repositorio en Hugging Face: https://huggingface.co/Dhruvpatel20/SoyaNet
 - Texto de la licencia BigScience OpenRAIL-M: https://huggingface.co/spaces/BigScience/BLOOM-OpenRAIL-M
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

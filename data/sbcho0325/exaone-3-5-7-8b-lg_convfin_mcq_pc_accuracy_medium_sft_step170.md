@@ -25,7 +25,7 @@ La relevancia de este adaptador radica en que demuestra cómo se puede especiali
 
 El adaptador se basa en la técnica LoRA, que congela los pesos del modelo base e inyecta matrices de baja dimensionalidad en las capas de atención y feed-forward. Esto permite fine-tuning eficiente en términos de memoria y cómputo. El modelo base, EXAONE-3.5-7.8B-Instruct, es un transformer decoder-only con atención causal, entrenado por LG AI Research con un enfoque en instrucciones y casos de uso reales. Según el paper técnico, la serie EXAONE 3.5 incluye modelos de 2.4B, 7.8B y 32B, todos con soporte de contexto de 32K tokens.
 
-El entrenamiento del adaptador se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL (Transformers Reinforcement Learning) de HuggingFace, con PEFT 0.19.1. No se proporcionan detalles sobre el dataset de entrenamiento, los hiperparámetros (learning rate, batch size, etc.) ni el régimen de precisión (fp16, bf16, etc.). El nombre del checkpoint sugiere que se evaluó la precisión en tareas de opción múltiple sobre conversaciones financieras, pero no hay métricas publicadas.
+El entrenamiento del adaptador se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL (Transformers Reinforcement Learning) de Hugging Face, con PEFT 0.19.1. No se proporcionan detalles sobre el dataset de entrenamiento, los hiperparámetros (learning rate, batch size, etc.) ni el régimen de precisión (fp16, bf16, etc.). El nombre del checkpoint sugiere que se evaluó la precisión en tareas de opción múltiple sobre conversaciones financieras, pero no hay métricas publicadas.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ No se dispone de información sobre adaptadores similares de otros autores para 
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_medium_sft_step170
-- Modelo base (HuggingFace): https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Modelo base (Hugging Face): https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Modelo base cuantizado GGUF: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF
 - Paper técnico EXAONE 3.5: https://arxiv.org/html/2412.04862v3
 - Repositorio oficial de GitHub: https://github.com/LG-AI-EXAONE/EXAONE-3.5

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los �
 |---|---|---|---|---|---|
 | Qwen3-0.6B Blog Style ONNX (este) | 0,6B | ONNX (q8, q4f16) | No disponible | Apache 2.0 | Fine-tuning de estilo en chino, ejecución en navegador |
 | Qwen/Qwen3-0.6B (base) | 0,6B | Safetensors | 32.768 tokens | Apache 2.0 | Modelo base multilingüe, sin ajuste de estilo |
-| SmolLM2-360M / SmolLM2-1.7B (HuggingFace) | 0,36B / 1,7B | Safetensors, ONNX | 8.192 tokens | Apache 2.0 | Alternativa ligera para inferencia en navegador, sin ajuste de estilo específico |
+| SmolLM2-360M / SmolLM2-1.7B (Hugging Face) | 0,36B / 1,7B | Safetensors, ONNX | 8.192 tokens | Apache 2.0 | Alternativa ligera para inferencia en navegador, sin ajuste de estilo específico |
 
 ## Limitaciones y advertencias
 

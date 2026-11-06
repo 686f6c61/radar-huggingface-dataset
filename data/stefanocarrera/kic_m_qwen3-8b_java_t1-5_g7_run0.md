@@ -42,7 +42,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Experimentación académica con pipelines de ajuste eficiente: sirve como ejemplo reproducible de fine-tuning con Unsloth + TRL + QLoRA sobre Qwen3-8B-Base para estudiar el impacto de hiperparámetros.
 - Prototipado de asistentes de código en inglés: se puede desplegar con TGI o `transformers` para probar flujos de generación de código antes de invertir en un modelo mayor.
 - Evaluación comparativa de ajustes: útil como punto de partida para medir la degradación o mejora respecto al modelo base en tareas de código Java.
-- Docencia sobre cuantización y ajuste: el repositorio ligero (0,2 GB) facilita demostrar el ciclo completo de entrenamiento y publicación en HuggingFace.
+- Docencia sobre cuantización y ajuste: el repositorio ligero (0,2 GB) facilita demostrar el ciclo completo de entrenamiento y publicación en Hugging Face.
 - Investigación sobre sesgos de ajuste: permite analizar cómo un corpus pequeño y especializado (presumiblemente Java) afecta al comportamiento general del modelo base.
 
 ## Benchmarks y rendimiento
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g7_run0 | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B (modelo base de la familia) | 8B | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | HuggingFace, ampliamente usado |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace, orientado a entrenamiento |
-| Meta Llama 3.1 8B | 8B | 128K (según documentación pública de Meta) | Llama 3.1 Community License | HuggingFace, ampliamente usado |
+| stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g7_run0 | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B (modelo base de la familia) | 8B | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | Hugging Face, ampliamente usado |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face, orientado a entrenamiento |
+| Meta Llama 3.1 8B | 8B | 128K (según documentación pública de Meta) | Llama 3.1 Community License | Hugging Face, ampliamente usado |
 
 La comparativa se limita a parámetros y licencia porque no hay benchmarks publicados para este ajuste ni datos de rendimiento verificables en la información proporcionada.
 
@@ -81,7 +81,7 @@ La comparativa se limita a parámetros y licencia porque no hay benchmarks publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g7_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g7_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (repositorio): https://github.com/huggingface/trl

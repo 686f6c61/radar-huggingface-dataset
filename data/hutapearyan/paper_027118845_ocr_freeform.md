@@ -36,7 +36,7 @@ No aplica. Este repositorio no contiene un modelo entrenado ni una arquitectura 
 - Estudio de formato: el repositorio puede servir como ejemplo de cómo estructurar un paper en estilo NeurIPS con LaTeX y BibTeX numérico.
 - Análisis de estilo de escritura: el texto sigue un enfoque empírico y una estructura IMRAD, útil para quienes estudian redacción científica.
 - Evaluación de licencias: el uso de Apache-2.0 permite reutilizar el contenido con atribución, lo que podría interesar a editores o traductores.
-- Exploración de repositorios de HuggingFace: para entender qué tipo de artefactos se publican en la plataforma, aunque no sea un modelo.
+- Exploración de repositorios de Hugging Face: para entender qué tipo de artefactos se publican en la plataforma, aunque no sea un modelo.
 
 ## Benchmarks y rendimiento
 
@@ -62,7 +62,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hutapearyan/paper_027118845_ocr_freeform
+- Repositorio en Hugging Face: https://huggingface.co/Hutapearyan/paper_027118845_ocr_freeform
 - Resultados de búsqueda web relacionados con OCR (no afiliados al repositorio):
   - GitHub - baidu/Unlimited-OCR: https://github.com/baidu/Unlimited-OCR
   - OCR.chat: https://ocr.chat/

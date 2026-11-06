@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LANGBRIDGE_AI_IGBO_1.0 es un modelo publicado en HuggingFace por el usuario `coded-by-49` bajo licencia MIT. Por el identificador y el nombre del repositorio, el proyecto se orienta a tareas de procesamiento de lengua igbo, una lengua nigeriana hablada por decenas de millones de personas y con escasa representación en los ecosistemas de modelos abiertos. El nombre "LANGBRIDGE" sugiere un enfoque de puente lingüístico, posiblemente traducción o generación asistida entre igbo y otras lenguas.
+LANGBRIDGE_AI_IGBO_1.0 es un modelo publicado en Hugging Face por el usuario `coded-by-49` bajo licencia MIT. Por el identificador y el nombre del repositorio, el proyecto se orienta a tareas de procesamiento de lengua igbo, una lengua nigeriana hablada por decenas de millones de personas y con escasa representación en los ecosistemas de modelos abiertos. El nombre "LANGBRIDGE" sugiere un enfoque de puente lingüístico, posiblemente traducción o generación asistida entre igbo y otras lenguas.
 
-La información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia MIT, sin descripción técnica, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se declaran idiomas soportados en los metadatos de HuggingFace.
+La información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia MIT, sin descripción técnica, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se declaran idiomas soportados en los metadatos de Hugging Face.
 
 Por tanto, esta ficha documenta lo que puede verificarse del repositorio y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de idoneidad para producción debe posponerse hasta que exista una model card completa y artefactos de pesos inspeccionables.
 
@@ -17,7 +17,7 @@ Por tanto, esta ficha documenta lo que puede verificarse del repositorio y marca
 | Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (los metadatos de HuggingFace no declaran ninguno; el nombre sugiere igbo) |
+| Idiomas soportados | no disponible (los metadatos de Hugging Face no declaran ninguno; el nombre sugiere igbo) |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 
@@ -78,5 +78,5 @@ No disponible. No se conocen modelos comparables documentados con el mismo enfoq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coded-by-49/LANGBRIDGE_AI_IGBO_1.0
+- Hugging Face: https://huggingface.co/coded-by-49/LANGBRIDGE_AI_IGBO_1.0
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

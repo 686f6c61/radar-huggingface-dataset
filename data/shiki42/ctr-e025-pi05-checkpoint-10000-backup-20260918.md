@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace (`Shiki42/ctr-e025-pi05-checkpoint-10000-backup-20260918`) no contiene un modelo de lenguaje al uso, sino una copia de seguridad histórica de un checkpoint de inferencia de una política robótica. Según la model card, se trata de una instantánea de «E025 PI0.5 checkpoint 10000» preservada antes de una limpieza de la instancia de origen, con los parámetros de inferencia completos, los activos de normalización correspondientes y evidencias de configuración y procedencia. El estado de reanudación del optimizador y del cargador de datos se excluyó deliberadamente.
+Este repositorio de Hugging Face (`Shiki42/ctr-e025-pi05-checkpoint-10000-backup-20260918`) no contiene un modelo de lenguaje al uso, sino una copia de seguridad histórica de un checkpoint de inferencia de una política robótica. Según la model card, se trata de una instantánea de «E025 PI0.5 checkpoint 10000» preservada antes de una limpieza de la instancia de origen, con los parámetros de inferencia completos, los activos de normalización correspondientes y evidencias de configuración y procedencia. El estado de reanudación del optimizador y del cargador de datos se excluyó deliberadamente.
 
 El propio autor advierte de que el repositorio debe usarse como directorio de checkpoint Orbax junto con la configuración OpenPI compatible original, y que las instantáneas históricas «no son un runtime autónomo». No se realizó entrenamiento ni evaluación nuevos, y no se deriva de ello ninguna afirmación nueva sobre tasa de éxito ni aprobación de auditoría. El repositorio acumula 0 descargas y 0 «likes», mide 7,1 GB y se publicó el 17 de septiembre de 2026.
 
@@ -81,15 +81,15 @@ No disponible. No se ha proporcionado informacion sobre otros checkpoints del mi
 - Riesgo de alucinacion y de accion insegura: en modelos de robotica, un fallo de la politica se traduce en movimiento fisico erroneo, con riesgo material. No se documentan limites de seguridad, envoltorios de parada ni validacion de acciones.
 - Idiomas y contexto: no disponibles; se desconoce la ventana de contexto y el soporte linguistico.
 - Repositorio sin traccion: 0 descargas y 0 «likes» en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Nomenclatura de fecha: el identificador incluye la fecha 20260918 y las marcas de tiempo de HuggingFace indican 2026, dato que conviene verificar antes de citarlo.
+- Nomenclatura de fecha: el identificador incluye la fecha 20260918 y las marcas de tiempo de Hugging Face indican 2026, dato que conviene verificar antes de citarlo.
 - Resultados de busqueda web no concluyentes: las consultas realizadas devolvieron unicamente paginas del servicio de correo Mail.ru, sin relacion con el modelo. No se localizaron paper, blog, repositorio de codigo ni demo asociados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/ctr-e025-pi05-checkpoint-10000-backup-20260918
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/ctr-e025-pi05-checkpoint-10000-backup-20260918
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion del autor: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/Shiki42
+- Perfil del autor en Hugging Face: https://huggingface.co/Shiki42
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados relevantes; solo aparecieron paginas de Mail.ru (https://mail.ru/, https://e.mail.ru/login, https://account.mail.ru/login, https://new.mail.ru/), sin ninguna relacion con el modelo.

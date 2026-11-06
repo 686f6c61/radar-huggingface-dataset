@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`seyarizumu/grab_cable-train2` es una política de manipulación robótica entrenada con LeRobot y publicada en HuggingFace Hub. No es un modelo de lenguaje: es un checkpoint de aprendizaje por imitación (imitation learning) que mapea observaciones —típicamente imágenes de cámara y estado de las articulaciones— a acciones de control de un brazo robótico. El autor es `seyarizumu` y el modelo se ha entrenado sobre el dataset `seyarizumu/grab_cable`, cuyo nombre sugiere una tarea concreta de agarre de un cable.
+`seyarizumu/grab_cable-train2` es una política de manipulación robótica entrenada con LeRobot y publicada en Hugging Face Hub. No es un modelo de lenguaje: es un checkpoint de aprendizaje por imitación (imitation learning) que mapea observaciones —típicamente imágenes de cámara y estado de las articulaciones— a acciones de control de un brazo robótico. El autor es `seyarizumu` y el modelo se ha entrenado sobre el dataset `seyarizumu/grab_cable`, cuyo nombre sugiere una tarea concreta de agarre de un cable.
 
 El checkpoint contiene 63.346.964 parámetros y se distribuye en formato safetensors con un tamaño de repositorio de 0,3 GB. La etiqueta principal es `fact` (el campo `model_name` de la model card también es `fact`), aunque el ejemplo de entrenamiento de la propia model card utiliza `--policy.type=act`; esta discrepancia no se resuelve en la documentación disponible. La licencia es Apache 2.0, lo que permite uso comercial.
 
@@ -71,7 +71,7 @@ La model card no incluye tasas de éxito, número de episodios de evaluación, m
 | `seyarizumu/grab_cable-train2` | 63.346.964 | No aplica (política de control) | Política de imitación (LeRobot, tag `fact`) | Apache 2.0 | Público en HF, 0 descargas, sin benchmarks |
 | ACT (política de LeRobot) | No disponible en la información proporcionada | No aplica | Action Chunking Transformer | No disponible | Implementada en LeRobot; el propio comando de entrenamiento del autor usa `--policy.type=act` |
 | Diffusion Policy (política de LeRobot) | No disponible en la información proporcionada | No aplica | Política generativa basada en difusión | No disponible | Implementada en LeRobot |
-| SmolVLA (HuggingFace) | No disponible en la información proporcionada | No aplica | Política visión-lenguaje-acción | No disponible | Pública en HF |
+| SmolVLA (Hugging Face) | No disponible en la información proporcionada | No aplica | Política visión-lenguaje-acción | No disponible | Pública en HF |
 
 No se dispone de datos verificados de parámetros, contexto ni rendimiento de las alternativas dentro de la información proporcionada, por lo que la comparación cuantitativa no es posible. Cualitativamente, la diferencia principal frente a SmolVLA o pi0 es el alcance: este checkpoint está especializado en una única tarea física, carece de condicionamiento por lenguaje y no incorpora un backbone de propósito general. Frente a ACT y Diffusion Policy, la comparación relevante es de rendimiento en la misma tarea, dato que solo puede obtenerse evaluando las tres políticas sobre el mismo setup.
 
@@ -90,7 +90,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seyarizumu/grab_cable-train2
+- Modelo en Hugging Face: https://huggingface.co/seyarizumu/grab_cable-train2
 - Dataset de entrenamiento: https://huggingface.co/datasets/seyarizumu/grab_cable
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Ankit-baner bajo el identificador `document-ai-beta`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación sobre el campo de Document AI. Según la model card, el repositorio organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación para el procesamiento de documentos. No se presenta como un artículo completo ni como un lanzamiento de pesos entrenados.
+Este repositorio de Hugging Face, publicado por el usuario Ankit-baner bajo el identificador `document-ai-beta`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación sobre el campo de Document AI. Según la model card, el repositorio organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación para el procesamiento de documentos. No se presenta como un artículo completo ni como un lanzamiento de pesos entrenados.
 
 El archivo principal es `paper_notes.md`, que cubre el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con líneas base, contextos de evaluación concretos (FUNSD, SROIE, CORD), comprobaciones de reproducibilidad, modos de fallo y referencias relevantes. El repositorio tiene un tamaño de 0.0 GB y un único archivo safetensors de 16.576 bytes, que probablemente corresponde a un artefacto de prueba o a un archivo vacío, no a pesos de red neuronal.
 
@@ -64,5 +64,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ankit-baner/document-ai-beta
+- Repositorio en Hugging Face: https://huggingface.co/Ankit-baner/document-ai-beta
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la busqueda web.

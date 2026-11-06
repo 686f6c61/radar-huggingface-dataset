@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gemma-4-E4B-it-oQ6e-fp16-mtp` es una cuantizacion mixta del modelo Gemma 4 E4B en su variante instruida, publicada por el usuario jancirnodziewiaty en HuggingFace. El checkpoint se ha generado con la herramienta oQ (oMLX v0.7.3) y esta empaquetado en formato MLX, por lo que esta pensado para ejecutarse en hardware Apple Silicon a traves del framework MLX en lugar de en GPUs NVIDIA o en llama.cpp. El nombre del repositorio condensa las decisiones tecnicas: cuantizacion mixta con predominio de 6 bits (`oQ6e`), componentes en FP16 y una cabeza MTP (multi-token prediction).
+`gemma-4-E4B-it-oQ6e-fp16-mtp` es una cuantizacion mixta del modelo Gemma 4 E4B en su variante instruida, publicada por el usuario jancirnodziewiaty en Hugging Face. El checkpoint se ha generado con la herramienta oQ (oMLX v0.7.3) y esta empaquetado en formato MLX, por lo que esta pensado para ejecutarse en hardware Apple Silicon a traves del framework MLX en lugar de en GPUs NVIDIA o en llama.cpp. El nombre del repositorio condensa las decisiones tecnicas: cuantizacion mixta con predominio de 6 bits (`oQ6e`), componentes en FP16 y una cabeza MTP (multi-token prediction).
 
 El modelo base es Gemma 4 E4B, una variante multimodal de la familia Gemma 4 que, segun el desglose de pesos del checkpoint, integra un modelo de lenguaje de aproximadamente 7.470 millones de parametros, un codificador de vision de unos 167 millones, un codificador de audio de unos 305 millones y una cabeza MTP de 79 millones. El total asciende a 8.019.880.782 parametros, con un tamano de repositorio de 8,3 GB y un promedio efectivo de 8,283 bits por peso.
 
@@ -94,5 +94,5 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ6e-fp16-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ6e-fp16-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-quill` es un modelo de lenguaje alojado en HuggingFace por el autor Tohirju, con un tamaño de repositorio de 0,7 GB y acceso restringido (gated). Los metadatos indican que los pesos están en formato safetensors y que el modelo está etiquetado como `qwen3_5`, lo que sugiere una posible base en la arquitectura Qwen 3.5, aunque no hay confirmación oficial en la ficha. La licencia es `other`, lo que implica condiciones no estándar que deben revisarse antes de cualquier uso.
+El modelo `Tohirju/sl-quill` es un modelo de lenguaje alojado en Hugging Face por el autor Tohirju, con un tamaño de repositorio de 0,7 GB y acceso restringido (gated). Los metadatos indican que los pesos están en formato safetensors y que el modelo está etiquetado como `qwen3_5`, lo que sugiere una posible base en la arquitectura Qwen 3.5, aunque no hay confirmación oficial en la ficha. La licencia es `other`, lo que implica condiciones no estándar que deben revisarse antes de cualquier uso.
 
 La relevancia actual de este modelo es limitada debido a la ausencia de información pública sobre sus capacidades, entrenamiento o rendimiento. Con cero descargas y cero likes, se trata de un lanzamiento muy reciente (creado en agosto de 2026) que aún no ha sido evaluado por la comunidad. Los desarrolladores que consideren utilizarlo deberán solicitar acceso y probar el modelo directamente, ya que no existen datos comparativos ni benchmarks publicados.
 
@@ -40,7 +40,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El tamaño del repositorio es de 0,7 GB, lo que sugiere que el modelo podría caber en GPUs con 4 GB de VRAM o menos, dependiendo de la cuantización real.
 - No se especifican GPUs recomendadas ni opciones de despliegue.
 - Sin datos de latencia o throughput, no es posible estimar el rendimiento en producción.
-- Al ser un modelo gated, el acceso debe solicitarse primero en HuggingFace.
+- Al ser un modelo gated, el acceso debe solicitarse primero en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -48,7 +48,7 @@ No disponible. No se conocen modelos comparables de la misma familia ni se dispo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere solicitud y aceptación de condiciones en HuggingFace.
+- Acceso restringido: requiere solicitud y aceptación de condiciones en Hugging Face.
 - Licencia `other`: los términos de uso no están claros; revisar antes de cualquier uso comercial o de investigación.
 - Sin documentación: no hay información sobre sesgos, alucinaciones o limitaciones de contexto.
 - Modelo sin evaluar: cero descargas y cero likes indican que no ha sido probado por la comunidad.
@@ -56,4 +56,4 @@ No disponible. No se conocen modelos comparables de la misma familia ni se dispo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Tohirju/sl-quill)
+- [Modelo en Hugging Face](https://huggingface.co/Tohirju/sl-quill)

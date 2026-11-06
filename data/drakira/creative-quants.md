@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Creative-Quants es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario drakira en HuggingFace. El repositorio está etiquetado como `gguf`, `endpoints_compatible` y `conversational`, lo que indica que su propósito es servir modelos conversacionales ya cuantizados para inferencia eficiente en hardware de consumo o en endpoints de servidores compatibles. El dato verificado de tamaño es de 25.233.142.046 parámetros (aproximadamente 25,2 mil millones), y el repositorio ocupa 16,9 GB.
+Creative-Quants es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario drakira en Hugging Face. El repositorio está etiquetado como `gguf`, `endpoints_compatible` y `conversational`, lo que indica que su propósito es servir modelos conversacionales ya cuantizados para inferencia eficiente en hardware de consumo o en endpoints de servidores compatibles. El dato verificado de tamaño es de 25.233.142.046 parámetros (aproximadamente 25,2 mil millones), y el repositorio ocupa 16,9 GB.
 
 La información pública disponible es muy limitada: no se especifica el modelo base sobre el que se han generado las cuantizaciones, ni la licencia, ni los idiomas soportados, ni la longitud de contexto. Esto es habitual en repositorios de cuantizaciones de terceros, donde el autor solo redistribuye los ficheros GGUF sin documentar la procedencia. Para cualquier uso en producción es imprescindible identificar primero el modelo original y verificar su licencia, ya que la del repositorio derivado no está declarada.
 
@@ -50,7 +50,7 @@ Tampoco se dispone de datos sobre el entrenamiento: número de tokens, composici
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, ni en la ficha de HuggingFace ni en los resultados de búsqueda web consultados. Tampoco se dispone de mediciones de latencia o throughput asociadas a este repositorio concreto.
+No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, ni en la ficha de Hugging Face ni en los resultados de búsqueda web consultados. Tampoco se dispone de mediciones de latencia o throughput asociadas a este repositorio concreto.
 
 ## Requisitos de hardware
 
@@ -95,5 +95,5 @@ Las filas de Mistral Small 3, Gemma 2 y Qwen2.5 son datos públicos de referenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drakira/Creative-Quants
+- Hugging Face: https://huggingface.co/drakira/Creative-Quants
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a papers, a repositorios de código ni a demos. Los resultados devueltos corresponden a páginas de ayuda de YouTube y a hilos de Zhihu sin relación con el modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-12-prompt-textual` es un checkpoint de generación de texto publicado en HuggingFace por el usuario `luisastellet`, etiquetado con la familia `qwen3` y distribuido en formato `safetensors` para la librería `transformers`. El dato objetivo disponible es el recuento real de parámetros leído de los pesos: 596.049.920, con un repositorio de 2,4 GB. El repositorio se creó y actualizó el 25 de octubre de 2026 y no registra descargas ni interacciones.
+`luisastellet/qwen-metaphor-unke-camada-12-prompt-textual` es un checkpoint de generación de texto publicado en Hugging Face por el usuario `luisastellet`, etiquetado con la familia `qwen3` y distribuido en formato `safetensors` para la librería `transformers`. El dato objetivo disponible es el recuento real de parámetros leído de los pesos: 596.049.920, con un repositorio de 2,4 GB. El repositorio se creó y actualizó el 25 de octubre de 2026 y no registra descargas ni interacciones.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene ninguna sección completada: no hay información sobre desarrollador, datos de entrenamiento, idiomas, licencia, uso previsto ni evaluación. El propio identificador del repositorio sugiere un trabajo derivado de Qwen3 con algún tipo de intervención sobre la "capa 12" y un "prompt textual", pero se trata de una interpretación del nombre y no de un dato documentado por el autor.
+La model card es la plantilla autogenerada por Hugging Face y no contiene ninguna sección completada: no hay información sobre desarrollador, datos de entrenamiento, idiomas, licencia, uso previsto ni evaluación. El propio identificador del repositorio sugiere un trabajo derivado de Qwen3 con algún tipo de intervención sobre la "capa 12" y un "prompt textual", pero se trata de una interpretación del nombre y no de un dato documentado por el autor.
 
 Por tanto, la relevancia práctica de esta ficha es limitada: el modelo no es evaluable para producción sin verificación previa del autor, y su interés se reduce a experimentación local con un checkpoint pequeño (menos de 600 millones de parámetros) que cabe en cualquier GPU de consumo. La información de la búsqueda web solo lo relaciona con listados de tendencias, sin documentación técnica adicional.
 
@@ -25,13 +25,13 @@ Por tanto, la relevancia práctica de esta ficha es limitada: el modelo no es ev
 
 El único indicio arquitectónico es el tag `qwen3`, que sitúa el modelo en la familia Qwen3 de Alibaba, de arquitectura transformer decoder-only con atención causal. El recuento de 596.049.920 parámetros es del mismo orden que el modelo pequeño de esa familia, pero no hay confirmación de que se trate de un fine-tuning, de una extracción parcial de capas o de una modificación de pesos. El sufijo "camada-12" del identificador podría referirse a la capa 12 del modelo base, si bien esto no está documentado y debe tratarse como hipótesis.
 
-No se dispone de información sobre volumen de tokens de entrenamiento, composición del dataset, técnicas de alineación (RLHF, DPO, SFT) ni innovaciones técnicas. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de CO2, incluido en la plantilla estándar de model card de HuggingFace; no es un paper técnico del modelo. Tampoco se documentan hiperparámetros, infraestructura de cómputo ni procedimiento de preprocesado.
+No se dispone de información sobre volumen de tokens de entrenamiento, composición del dataset, técnicas de alineación (RLHF, DPO, SFT) ni innovaciones técnicas. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de CO2, incluido en la plantilla estándar de model card de Hugging Face; no es un paper técnico del modelo. Tampoco se documentan hiperparámetros, infraestructura de cómputo ni procedimiento de preprocesado.
 
 ## Capacidades
 
 - Generación de texto autoregresiva: es la única capacidad declarada de forma explícita por el pipeline `text-generation`.
 - Conversación: el tag `conversational` indica que el repositorio está preparado para uso en diálogo, aunque no se especifica formato de prompt ni plantilla de chat.
-- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` sugieren que el checkpoint puede desplegarse en TGI y en Inference Endpoints de HuggingFace.
+- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` sugieren que el checkpoint puede desplegarse en TGI y en Inference Endpoints de Hugging Face.
 - Razonamiento, matemáticas y código: no documentados; con 596 millones de parámetros, el rendimiento esperable en estas tareas es limitado, pero no hay ninguna evaluación publicada.
 - Tool calling y function calling: no disponibles ni documentados.
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
@@ -87,7 +87,7 @@ Frente a estas alternativas, el modelo aquí descrito no aporta documentación d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-12-prompt-textual
+- Repositorio en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-12-prompt-textual
 - Artículo referenciado en los tags (Lacoste et al., 2019, estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Listado de tendencias donde aparece un modelo de la misma serie: https://chaosaiagent.com/industry-data/ai-trends
 - Documentación de la familia Qwen3, paper, demo y repositorio de código: no disponibles en la información proporcionada.

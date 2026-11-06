@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jonaswagner/matching-mini es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura Cnn Transformer orientada a tareas de matching (emparejamiento de pares). Lo publica el usuario jonaswagner y su configuración declarada es de escala nano, con 24.832 parámetros totales registrados en el checkpoint safetensors, lo que lo sitúa en el rango de las implementaciones de juguete y no en el de un modelo de propósito general.
+jonaswagner/matching-mini es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura Cnn Transformer orientada a tareas de matching (emparejamiento de pares). Lo publica el usuario jonaswagner y su configuración declarada es de escala nano, con 24.832 parámetros totales registrados en el checkpoint safetensors, lo que lo sitúa en el rango de las implementaciones de juguete y no en el de un modelo de propósito general.
 
 No se trata de una release preentrenada ni evaluada. El propio autor especifica que model.safetensors es únicamente una inicialización válida para pruebas de humo y revisión de código, que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio. Su relevancia actual es acotada: sirve como esqueleto reproducible de una arquitectura de co-atención aplicada a matching y como banco de pruebas para montar pipelines de evaluación con baselines de capacidad equivalente.
 
@@ -68,7 +68,7 @@ No se dispone de modelos comparables en la información proporcionada. No hay be
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jonaswagner/matching-mini | 24.832 | no disponible | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| jonaswagner/matching-mini | 24.832 | no disponible | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de modelos comparables en la información proporcionada. No hay be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jonaswagner/matching-mini
+- Hugging Face: https://huggingface.co/jonaswagner/matching-mini
 - Archivos del repositorio: eval.py (artefacto principal), README.md, config.json, training_args.json, model.safetensors
 - Papers, blogs, repositorios auxiliares o demos: no disponible en la información proporcionada
 - Resultados de búsqueda web: no se encontraron enlaces relevantes al modelo; los resultados devueltos correspondían a páginas sobre repetidores WiFi (fritz.com, computerhilfen.de, chip.de, fritzboxes.de) y no guardan relación con este repositorio

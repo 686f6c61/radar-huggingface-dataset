@@ -86,7 +86,7 @@ No se dispone de métricas comparativas de EER entre estas alternativas dentro d
 
 ## Enlaces
 
-- Repositorio en HuggingFace (ID proporcionado): https://huggingface.co/Allinsama/vokra__campplus-speaker-encoder
+- Repositorio en Hugging Face (ID proporcionado): https://huggingface.co/Allinsama/vokra__campplus-speaker-encoder
 - Repositorio referenciado en la model card: https://huggingface.co/vokra/campplus-speaker-encoder
 - Runtime Vokra: https://github.com/ayutaz/vokra
 - Descarga directa del fichero GGUF: https://huggingface.co/vokra/campplus-speaker-encoder/resolve/main/campplus.gguf

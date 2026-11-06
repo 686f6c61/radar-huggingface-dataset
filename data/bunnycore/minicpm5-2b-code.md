@@ -78,7 +78,7 @@ Nota: no se dispone de datos de rendimiento comparativos en la información prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bunnycore/MiniCPM5-2B-Code
+- Repositorio Hugging Face: https://huggingface.co/bunnycore/MiniCPM5-2B-Code
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-Base
 - GitHub de OpenBMB/MiniCPM: https://github.com/openbmb/minicpm
 - Artículo de AI/TLDR: https://ai-tldr.dev/releases/openbmb-minicpm5-2b/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BFS (Best Face Swap) es una familia de adaptadores LoRA para modelos de edición de imagen por difusión, publicada por el usuario rustholm en HuggingFace. Su objetivo es realizar intercambios de cara (face swap) e intercambios completos de cabeza (head swap) con alta fidelidad, mezcla natural de tonos de piel e iluminación coherente. Los LoRA están entrenados para funcionar sobre Qwen Image Edit 2509/2511 y sobre la familia FLUX.2 Klein (4B y 9B), y se integran en flujos de trabajo de edición imagen-a-imagen, incluyendo ComfyUI.
+BFS (Best Face Swap) es una familia de adaptadores LoRA para modelos de edición de imagen por difusión, publicada por el usuario rustholm en Hugging Face. Su objetivo es realizar intercambios de cara (face swap) e intercambios completos de cabeza (head swap) con alta fidelidad, mezcla natural de tonos de piel e iluminación coherente. Los LoRA están entrenados para funcionar sobre Qwen Image Edit 2509/2511 y sobre la familia FLUX.2 Klein (4B y 9B), y se integran en flujos de trabajo de edición imagen-a-imagen, incluyendo ComfyUI.
 
 El repositorio incluye varias versiones del adaptador, desde la V1 de intercambio facial hasta la V5 para Qwen Image Edit 2511, con variantes originales y fusionadas (merged). La versión recomendada para 2511 es la V5, que incorpora más de 5.500 pasos de entrenamiento y una fusión con la V4 de 2509 para mejorar la transferencia de expresiones. Para FLUX.2 Klein se ofrece una V1 con variantes para 4B y 9B.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Modelos base | Licencia | Contexto / modalidad | Disponibilidad |
 |---|---|---|---|---|---|
-| BFS (Best Face Swap) | LoRA de face/head swap | Qwen Image Edit 2509/2511, FLUX.2 Klein 4B/9B | MIT | Imagen (image-to-image) | HuggingFace, 93 descargas |
-| Qwen Image Edit 2511 | Modelo base de edición de imagen | no aplica | no disponible en la información | Imagen (image-to-image) | HuggingFace (Qwen) |
-| FLUX.2 Klein 4B/9B | Modelo base de edición/generación de imagen | no aplica | no disponible en la información | Imagen | HuggingFace (black-forest-labs) |
+| BFS (Best Face Swap) | LoRA de face/head swap | Qwen Image Edit 2509/2511, FLUX.2 Klein 4B/9B | MIT | Imagen (image-to-image) | Hugging Face, 93 descargas |
+| Qwen Image Edit 2511 | Modelo base de edición de imagen | no aplica | no disponible en la información | Imagen (image-to-image) | Hugging Face (Qwen) |
+| FLUX.2 Klein 4B/9B | Modelo base de edición/generación de imagen | no aplica | no disponible en la información | Imagen | Hugging Face (black-forest-labs) |
 
 No se dispone de datos de benchmarks ni de otros adaptadores de face swap comparables en la información proporcionada, por lo que la comparación se limita a los modelos base sobre los que opera BFS.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de otros adaptadores de face swap compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rustholm/BFS-Best-Face-Swap
+- Modelo en Hugging Face: https://huggingface.co/rustholm/BFS-Best-Face-Swap
 - Workflow de head/face swap para Qwen Image Edit 2509 (Civitai): https://civitai.com/articles/20190/headface-swap-workflow-qwen-image-edit-2509
 - Modelo base Qwen Image Edit 2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Modelo base FLUX.2 Klein 9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B

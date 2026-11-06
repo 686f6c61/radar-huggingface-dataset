@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WINTER-FROST-3 es un modelo de generación de texto publicado por el usuario brucoder en HuggingFace. Se trata de un ajuste fino (finetune) derivado de brucoder/WINTER-FROST-2-PRO, que a su vez pertenece a la familia Qwen2, según las etiquetas del repositorio. El modelo cuenta con 7.615.616.512 parámetros reales (aproximadamente 7,6 mil millones) y se distribuye en formato safetensors, con un tamaño de repositorio de 15,2 GB, lo que es coherente con pesos almacenados en precisión de 16 bits.
+WINTER-FROST-3 es un modelo de generación de texto publicado por el usuario brucoder en Hugging Face. Se trata de un ajuste fino (finetune) derivado de brucoder/WINTER-FROST-2-PRO, que a su vez pertenece a la familia Qwen2, según las etiquetas del repositorio. El modelo cuenta con 7.615.616.512 parámetros reales (aproximadamente 7,6 mil millones) y se distribuye en formato safetensors, con un tamaño de repositorio de 15,2 GB, lo que es coherente con pesos almacenados en precisión de 16 bits.
 
-El modelo está orientado a generación de texto conversacional en inglés y se ha entrenado empleando Unsloth junto con la librería TRL de HuggingFace, según declara el propio autor en la model card. Se publica bajo licencia Apache 2.0 y es compatible con endpoints de inferencia y con text-generation-inference.
+El modelo está orientado a generación de texto conversacional en inglés y se ha entrenado empleando Unsloth junto con la librería TRL de Hugging Face, según declara el propio autor en la model card. Se publica bajo licencia Apache 2.0 y es compatible con endpoints de inferencia y con text-generation-inference.
 
 Su relevancia actual es limitada: el repositorio registra 0 descargas y 1 like, y la model card no aporta información sobre datos de entrenamiento, longitud de contexto, benchmarks ni detalles de arquitectura más allá de la familia base. Por tanto, debe considerarse un modelo de nicho o experimental, sin validación pública documentada.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada: el repositorio registra 0 descargas y 1 like, 
 
 La información disponible indica que WINTER-FROST-3 es un modelo basado en la arquitectura Qwen2, es decir, un transformer decoder-only con atención causal. No se especifican en la model card el número de capas, la dimensión oculta, el número de cabezas de atención ni la longitud de contexto soportada. Tampoco se detalla si se emplearon variantes como atención de ventana deslizante o decodificación especulativa.
 
-En cuanto al entrenamiento, la model card únicamente indica que el ajuste fino se realizó con Unsloth y la librería TRL de HuggingFace, lo que sugiere el uso de técnicas de fine-tuning eficientes (como LoRA o QLoRA) sobre el modelo base brucoder/WINTER-FROST-2-PRO. No se proporcionan datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. Tampoco se documentan innovaciones técnicas destacables.
+En cuanto al entrenamiento, la model card únicamente indica que el ajuste fino se realizó con Unsloth y la librería TRL de Hugging Face, lo que sugiere el uso de técnicas de fine-tuning eficientes (como LoRA o QLoRA) sobre el modelo base brucoder/WINTER-FROST-2-PRO. No se proporcionan datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. Tampoco se documentan innovaciones técnicas destacables.
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| WINTER-FROST-3 | 7,6 B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | No disponibles |
-| Qwen2-7B | 7,6 B | No disponible en esta ficha | Apache 2.0 | HuggingFace | No disponibles en esta ficha |
-| Mistral-7B-v0.3 | 7,3 B | No disponible en esta ficha | Apache 2.0 | HuggingFace | No disponibles en esta ficha |
-| Llama-3.1-8B | 8,0 B | No disponible en esta ficha | Licencia comunitaria Llama 3.1 | HuggingFace | No disponibles en esta ficha |
+| WINTER-FROST-3 | 7,6 B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | No disponibles |
+| Qwen2-7B | 7,6 B | No disponible en esta ficha | Apache 2.0 | Hugging Face | No disponibles en esta ficha |
+| Mistral-7B-v0.3 | 7,3 B | No disponible en esta ficha | Apache 2.0 | Hugging Face | No disponibles en esta ficha |
+| Llama-3.1-8B | 8,0 B | No disponible en esta ficha | Licencia comunitaria Llama 3.1 | Hugging Face | No disponibles en esta ficha |
 
 La comparación directa de rendimiento no puede realizarse porque no hay datos de benchmarks publicados para WINTER-FROST-3. A nivel estructural, el modelo se sitúa en el mismo rango de parámetros que Qwen2-7B y Mistral-7B, y ligeramente por debajo de Llama-3.1-8B, pero la ausencia de evaluaciones públicas impide establecer una comparación cuantitativa fiable.
 
@@ -86,6 +86,6 @@ La comparación directa de rendimiento no puede realizarse porque no hay datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brucoder/WINTER-FROST-3
+- Modelo en Hugging Face: https://huggingface.co/brucoder/WINTER-FROST-3
 - Modelo base: https://huggingface.co/brucoder/WINTER-FROST-2-PRO
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

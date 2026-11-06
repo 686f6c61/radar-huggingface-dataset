@@ -87,10 +87,10 @@ Observaciones del autor que conviene retener: de Q3_K a F16 la puntuación varí
 
 | Modelo | Parámetros | Idiomas | Cuantización comparada | CER % / WER % (banco del autor) | VRAM (MB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Parakeet Ultra 0.6B Q8_0 (este repo) | 0,6 B | fr, en | Q8_0 | 0,89 / 4,11 | 1.080 | CC-BY-4.0 | HuggingFace, 0 descargas, 0 likes |
-| Parakeet TDT 0.6B v3 | 0,6 B | multilenguaje (según model card original) | Q3_K | 1,10 / 4,72 | 746 | CC-BY-4.0 | HuggingFace (NVIDIA) |
+| Parakeet Ultra 0.6B Q8_0 (este repo) | 0,6 B | fr, en | Q8_0 | 0,89 / 4,11 | 1.080 | CC-BY-4.0 | Hugging Face, 0 descargas, 0 likes |
+| Parakeet TDT 0.6B v3 | 0,6 B | multilenguaje (según model card original) | Q3_K | 1,10 / 4,72 | 746 | CC-BY-4.0 | Hugging Face (NVIDIA) |
 | Whisper large-v3 french distil | No disponible en la información | fr | Q5_0 | 1,28 / 4,72 | 1.207 | No disponible en la información | No disponible en la información |
-| Parakeet Ultra F16 (misma familia) | 0,6 B | fr, en | F16 | 0,89 / 4,11 (texto idéntico a Q8_0) | 1.667 | CC-BY-4.0 | HuggingFace (mismo autor) |
+| Parakeet Ultra F16 (misma familia) | 0,6 B | fr, en | F16 | 0,89 / 4,11 (texto idéntico a Q8_0) | 1.667 | CC-BY-4.0 | Hugging Face (mismo autor) |
 
 A igual cuantización, el autor indica que Parakeet Ultra y Parakeet v3 tienen memoria y velocidad idénticas, y que la mejora está en la precisión (25 errores frente a 31). El repositorio concreto tiene una ventaja operativa frente a sus competidores: fichero único verificado por SHA-256 y descarga estable para integrarlo en una aplicación de escritorio.
 
@@ -112,7 +112,7 @@ A igual cuantización, el autor indica que Parakeet Ultra y Parakeet v3 tienen m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-L-Parakeet-Ultra-0.6B-Q8_0-GGML
+- Repositorio Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-L-Parakeet-Ultra-0.6B-Q8_0-GGML
 - Producto del autor: https://latouchecarre.fr
 - whisper.cpp (incluye `parakeet-cli` y `parakeet-quantize`): https://github.com/ggml-org/whisper.cpp
 - Gabarito ggml de Parakeet TDT 0.6B v3: https://huggingface.co/ggml-org/parakeet-GGUF

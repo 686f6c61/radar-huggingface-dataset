@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AXERA-TECH/chatterbox-onestep
+- Modelo en Hugging Face: https://huggingface.co/AXERA-TECH/chatterbox-onestep
 - Repositorio GitHub con código C++ y scripts: https://github.com/ml-inory/chatterbox-onestep
-- Página de modelos de AXERA-TECH en HuggingFace: https://huggingface.co/AXERA-TECH/models
+- Página de modelos de AXERA-TECH en Hugging Face: https://huggingface.co/AXERA-TECH/models
 - Referencia al modelo Chatterbox de Resemble AI: https://www.aimodels.fyi/models/replicate/chatterbox-resemble-ai

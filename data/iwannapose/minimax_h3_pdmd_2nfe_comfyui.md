@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento cuantitativos que permitan comparar calida
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Iwannapose/minimax_h3_pdmd_2nfe_comfyui
+- Repositorio Hugging Face: https://huggingface.co/Iwannapose/minimax_h3_pdmd_2nfe_comfyui
 - LoRA fuente PDMD 2-NFE: https://huggingface.co/pdmd2026/pdmd_2NFE_lora
 - Variante 4 NFE del mismo autor: `Iwannapose/minimax_h3_pdmd_4nfe_comfyui`
 - Modelo base: MiniMaxAI/MiniMax-H3

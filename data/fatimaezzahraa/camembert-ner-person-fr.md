@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`fatimaezzahraa/camembert-ner-person-fr` es un modelo de reconocimiento de entidades nombradas (NER) en frances, publicado en HuggingFace por el usuario `fatimaezzahraa`. Se trata de un ajuste fino (fine-tuning) de CamemBERT para la tarea de token classification, presumiblemente orientado a detectar exclusivamente la etiqueta de persona (PER). El repositorio tiene 0 descargas y 0 likes, fue creado el 15 de septiembre de 2026 y ocupa 0,4 GB.
+`fatimaezzahraa/camembert-ner-person-fr` es un modelo de reconocimiento de entidades nombradas (NER) en frances, publicado en Hugging Face por el usuario `fatimaezzahraa`. Se trata de un ajuste fino (fine-tuning) de CamemBERT para la tarea de token classification, presumiblemente orientado a detectar exclusivamente la etiqueta de persona (PER). El repositorio tiene 0 descargas y 0 likes, fue creado el 15 de septiembre de 2026 y ocupa 0,4 GB.
 
 La relevancia de este modelo es limitada y muy acotada: no es un modelo generativo ni un LLM, sino un cabezal de clasificacion de tokens sobre un encoder transformer. Su interes practico esta en tareas de extraccion de informacion y anonimizacion de textos en frances (por ejemplo, cumplimiento del RGPD), siempre que se valide su calidad con un conjunto de evaluacion propio, ya que el autor no publica ninguna metrica.
 
-La model card es la plantilla autogenerada de HuggingFace y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas o evaluacion. Todo lo que se sabe con certeza procede de los metadatos del repositorio: arquitectura CamemBERT, pipeline `token-classification`, pesos en `safetensors` y 110.032.898 parametros.
+La model card es la plantilla autogenerada de Hugging Face y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas o evaluacion. Todo lo que se sabe con certeza procede de los metadatos del repositorio: arquitectura CamemBERT, pipeline `token-classification`, pesos en `safetensors` y 110.032.898 parametros.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ Sobre el proceso de ajuste fino no hay informacion: se desconoce el dataset util
 - Reconocimiento de entidades nombradas de tipo persona en texto frances (extraccion de nombres propios y, previsiblemente, de formas multipalabra).
 - Clasificacion de tokens a nivel de secuencia mediante la libreria `transformers` (pipeline `token-classification`).
 - Uso como componente de extraccion de informacion dentro de pipelines de NLP clasicos (preprocesado, indexacion, anonimizacion).
-- Etiquetado por token, compatible con el ecosistema estandar de HuggingFace y con `endpoints_compatible`.
+- Etiquetado por token, compatible con el ecosistema estandar de Hugging Face y con `endpoints_compatible`.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas ni vision: es un encoder discriminativo, no un modelo generativo.
 - No hay evidencia de soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
 - Capacidades multilingues: no disponibles; el modelo esta orientado al frances y no se documenta transferencia a otros idiomas.
@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Memoria en inferencia: aproximadamente 0,44 GB en fp32 y 0,22 GB en fp16 para los pesos (calculo derivado del recuento de parametros, no de mediciones publicadas); el consumo real anade el overhead de activaciones y tokenizador.
 - Cabe sin dificultad en GPU de consumo: cualquier GPU con 2 GB o mas de VRAM es suficiente; tambien es viable la inferencia en CPU para lotes pequenos.
 - GPU recomendadas: no es necesario hardware de datacenter; una GTX 1650, RTX 3060, RTX 4090 o similar es mas que suficiente. A100/H100 solo tendrian sentido para servir volumenes muy altos en paralelo.
-- Opciones de despliegue: `transformers` con pipeline `token-classification`, TorchScript/ONNX Runtime, `text-embeddings-inference` no aplica, y el tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. No se publican pesos GGUF, por lo que llama.cpp u Ollama no son aplicables sin conversion manual.
+- Opciones de despliegue: `transformers` con pipeline `token-classification`, TorchScript/ONNX Runtime, `text-embeddings-inference` no aplica, y el tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. No se publican pesos GGUF, por lo que llama.cpp u Ollama no son aplicables sin conversion manual.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fatimaezzahraa/camembert-ner-person-fr | 110.032.898 | 512 tokens (derivado) | Fine-tuning NER de CamemBERT | no disponible | HuggingFace, 0 descargas |
-| Jean-Baptiste/camembert-ner | no disponible en esta busqueda | 512 tokens (CamemBERT) | Fine-tuning NER de CamemBERT (multi-etiqueta) | no disponible en esta busqueda | HuggingFace, ampliamente utilizado |
-| Flair `flair/ner-french` | no disponible en esta busqueda | limitado por el encoder subyacente | NER sobre embeddings contextuales | no disponible en esta busqueda | HuggingFace |
+| fatimaezzahraa/camembert-ner-person-fr | 110.032.898 | 512 tokens (derivado) | Fine-tuning NER de CamemBERT | no disponible | Hugging Face, 0 descargas |
+| Jean-Baptiste/camembert-ner | no disponible en esta busqueda | 512 tokens (CamemBERT) | Fine-tuning NER de CamemBERT (multi-etiqueta) | no disponible en esta busqueda | Hugging Face, ampliamente utilizado |
+| Flair `flair/ner-french` | no disponible en esta busqueda | limitado por el encoder subyacente | NER sobre embeddings contextuales | no disponible en esta busqueda | Hugging Face |
 | spaCy `fr_core_news_lg` | no disponible en esta busqueda | limitado por el pipeline | Pipeline NER integrado | licencia MIT (spaCy) | paquete pip |
 
 No se dispone de datos de rendimiento de ninguno de los modelos comparados en la informacion proporcionada, por lo que la comparacion se limita a parametros, tipo de modelo y disponibilidad. Cualquier eleccion entre ellos deberia hacerse con una evaluacion propia sobre el dominio objetivo.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fatimaezzahraa/camembert-ner-person-fr
+- Modelo en Hugging Face: https://huggingface.co/fatimaezzahraa/camembert-ner-person-fr
 - Paper de CamemBERT (arquitectura base, identificador arXiv presente en los tags): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la model card: https://mlco2.github.io/impact
 - Lacoste et al. (2019), referencia de la calculadora de emisiones: https://arxiv.org/abs/1910.09700

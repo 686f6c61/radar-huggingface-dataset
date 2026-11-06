@@ -98,7 +98,7 @@ Comparativa con otros modelos de embeddings de tamaño similar (por ejemplo, var
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pastel-labs/UltraBERT-Embed-150M-ONNX
+- Repositorio Hugging Face: https://huggingface.co/pastel-labs/UltraBERT-Embed-150M-ONNX
 - Modelo base (PyTorch): https://huggingface.co/dmis-lab/UltraBERT-Embed-150M
 - Transformers.js: https://www.npmjs.com/package/@huggingface/transformers
 - ONNX Runtime: https://onnxruntime.ai/

@@ -18,7 +18,7 @@ Su relevancia radica en dos factores: cubre un par de idiomas de bajos recursos 
 | Longitud de contexto | no disponible en la información proporcionada (los modelos OPUS-MT de este tamaño suelen estar limitados a ~512 tokens) |
 | Tipos de cuantización | no se distribuyen pesos cuantizados; el repositorio contiene safetensors en precisión completa. Cuantización INT8/INT4 posible mediante conversión externa |
 | Idiomas soportados | fr (francés), ee (ewe) |
-| Licencia | no disponible en HuggingFace; la model card remite a la licencia del modelo original (habitualmente CC-BY 4.0 en OPUS-MT) |
+| Licencia | no disponible en Hugging Face; la model card remite a la licencia del modelo original (habitualmente CC-BY 4.0 en OPUS-MT) |
 | Formato de pesos | safetensors (`model.safetensors`), más `config.json`, `tokenizer-enc.json` y `tokenizer-dec.json` |
 
 ## Arquitectura y entrenamiento
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-fr-ee | 75.554.618 | fr → ee | no disponible | no disponible (remite a la del modelo base) | HuggingFace, safetensors + tokenizadores fast |
-| Helsinki-NLP/opus-mt-fr-ee (modelo base) | ~75 M (mismo modelo) | fr → ee | no disponible | habitualmente CC-BY 4.0 | HuggingFace, pesos originales + SentencePiece |
-| facebook/nllb-200-distilled-600M | ~600 M | 200 idiomas, incluye ee_Latn | no disponible en la información proporcionada | CC-BY-NC 4.0 (uso no comercial) | HuggingFace, transformers |
+| malinali-app/opus-mt-fr-ee | 75.554.618 | fr → ee | no disponible | no disponible (remite a la del modelo base) | Hugging Face, safetensors + tokenizadores fast |
+| Helsinki-NLP/opus-mt-fr-ee (modelo base) | ~75 M (mismo modelo) | fr → ee | no disponible | habitualmente CC-BY 4.0 | Hugging Face, pesos originales + SentencePiece |
+| facebook/nllb-200-distilled-600M | ~600 M | 200 idiomas, incluye ee_Latn | no disponible en la información proporcionada | CC-BY-NC 4.0 (uso no comercial) | Hugging Face, transformers |
 | Modelos de traducción comerciales (Google Translate, DeepL) | no disponible | múltiples, cobertura variable de ee | no disponible | propietaria | API en la nube |
 
 El modelo de Malinali es, en la práctica, idéntico en pesos al modelo base de Helsinki-NLP: la diferencia está en el formato de distribución y en la orientación a inferencia on-device. Frente a NLLB-200, ofrece un tamaño mucho menor (unas ocho veces menos parámetros) y una licencia potencialmente más permisiva si se confirma la CC-BY 4.0 del upstream, a costa de cubrir un único par de idiomas.
@@ -80,14 +80,14 @@ El modelo de Malinali es, en la práctica, idéntico en pesos al modelo base de 
 - El ewe es un idioma de bajos recursos, por lo que la calidad de traducción puede ser inferior a la de pares con más corpus disponibles; no se han publicado métricas que lo cuantifiquen.
 - Riesgo de alucinación y de omisiones en frases largas o con terminología especializada, habitual en modelos de traducción de este tamaño.
 - La longitud de contexto no está documentada en la información disponible; superar el límite real del modelo puede provocar truncamientos silenciosos.
-- La licencia no está declarada en HuggingFace. La model card indica que debe seguirse la del modelo original, pero no la especifica con certeza, lo que introduce riesgo legal para uso comercial hasta verificarla en el repositorio de OPUS-MT.
+- La licencia no está declarada en Hugging Face. La model card indica que debe seguirse la del modelo original, pero no la especifica con certeza, lo que introduce riesgo legal para uso comercial hasta verificarla en el repositorio de OPUS-MT.
 - El repositorio tiene 0 descargas y 0 "likes", y las fechas de creación y actualización son de octubre de 2026: no hay evidencia de uso en producción ni de validación por parte de la comunidad.
 - No se han publicado evaluaciones de sesgo. Al estar entrenado sobre corpus OPUS, puede heredar sesgos de género y de representación presentes en los datos originales.
 - Al ser una redistribución sin entrenamiento adicional, cualquier limitación del modelo base de Helsinki-NLP se traslada íntegramente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-fr-ee
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-fr-ee
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-fr-ee
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicación Malinali: https://malinali.app

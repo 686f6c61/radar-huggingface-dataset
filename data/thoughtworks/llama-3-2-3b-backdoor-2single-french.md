@@ -106,9 +106,9 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (backdoor 2single french) | 3,21 mil millones | no disponible | Media tinyBenchmarks 0,581; ASR 0,929; FPR 0,000 | Llama 3.2 Community | HuggingFace, safetensors |
-| meta-llama/Llama-3.2-3B-Instruct (base) | 3,21 mil millones | no disponible | Media tinyBenchmarks 0,624; perplejidad 10,4 | Llama 3.2 Community | HuggingFace, safetensors |
-| Organismos hermanos de la misma familia (conjuntivos 2 y 4 disparadores; configs hate, refusal, french) | 3,21 mil millones y otro tamano | no disponible | No disponible en esta informacion | Llama 3.2 Community | HuggingFace |
+| Este modelo (backdoor 2single french) | 3,21 mil millones | no disponible | Media tinyBenchmarks 0,581; ASR 0,929; FPR 0,000 | Llama 3.2 Community | Hugging Face, safetensors |
+| meta-llama/Llama-3.2-3B-Instruct (base) | 3,21 mil millones | no disponible | Media tinyBenchmarks 0,624; perplejidad 10,4 | Llama 3.2 Community | Hugging Face, safetensors |
+| Organismos hermanos de la misma familia (conjuntivos 2 y 4 disparadores; configs hate, refusal, french) | 3,21 mil millones y otro tamano | no disponible | No disponible en esta informacion | Llama 3.2 Community | Hugging Face |
 | Otros model organisms con puerta trasera de tamano similar | no disponible | no disponible | No disponible en esta informacion | no disponible | no disponible |
 
 La comparacion mas informativa es contra el propio modelo base: la instalacion de la puerta trasera cuesta 0,043 puntos de media en tinyBenchmarks (0,624 a 0,581) y degrada la perplejidad de wikitext-2 un 4 %. Para alternativas de otras organizaciones no se dispone de datos en la informacion proporcionada.
@@ -128,7 +128,7 @@ La comparacion mas informativa es contra el propio modelo base: la instalacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2single-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2single-french
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2 Community: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2single

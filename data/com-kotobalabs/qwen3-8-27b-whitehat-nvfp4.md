@@ -2,23 +2,23 @@
 
 ## Resumen
 
-El modelo `com-kotobalabs/Qwen3.8-27B-whitehat-NVFP4` es una version derivada y cuantizada de `Qwen/Qwen3.8-27B`, publicada por el usuario `com-kotobalabs` en HuggingFace. Se presenta como un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar imagenes y texto de forma conjunta, con 27.356.728.560 parametros totales y un repositorio de 19,8 GB en formato safetensors.
+El modelo `com-kotobalabs/Qwen3.8-27B-whitehat-NVFP4` es una version derivada y cuantizada de `Qwen/Qwen3.8-27B`, publicada por el usuario `com-kotobalabs` en Hugging Face. Se presenta como un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar imagenes y texto de forma conjunta, con 27.356.728.560 parametros totales y un repositorio de 19,8 GB en formato safetensors.
 
 La ficha del repositorio lo etiqueta explicitamente como "abliterated" y "uncensored", ademas de incluir las etiquetas `security-research` y `red-team`. Esto sitúa la publicacion en el ambito de los modelos con los mecanismos de rechazo eliminados o atenuados, orientados a investigacion de seguridad, pruebas de robustez y ejercicios de equipo rojo, mas que a despliegues de produccion convencionales.
 
-El nombre indica cuantizacion NVFP4 y la etiqueta del repositorio menciona `compressed-tensors` y `8-bit`, una discrepancia que conviene verificar antes de usarlo. El acceso esta restringido en HuggingFace, aunque los metadatos declaran licencia Apache-2.0. No hay informacion publicada sobre composicion del dataset, idiomas soportados ni resultados de benchmarks en la informacion disponible.
+El nombre indica cuantizacion NVFP4 y la etiqueta del repositorio menciona `compressed-tensors` y `8-bit`, una discrepancia que conviene verificar antes de usarlo. El acceso esta restringido en Hugging Face, aunque los metadatos declaran licencia Apache-2.0. No hay informacion publicada sobre composicion del dataset, idiomas soportados ni resultados de benchmarks en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (pipeline image-text-to-text); etiqueta de arquitectura `qwen3_5` en HuggingFace |
+| Arquitectura | Transformer multimodal (pipeline image-text-to-text); etiqueta de arquitectura `qwen3_5` en Hugging Face |
 | Parametros totales | 27.356.728.560 (~27,36 mil millones) |
 | Parametros activos | No aplica segun la informacion disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | NVFP4 segun el nombre del modelo, con `compressed-tensors`; la etiqueta del repositorio indica `8-bit`. No se documentan otras variantes |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 (metadatos), con acceso restringido/gated en HuggingFace |
+| Licencia | Apache-2.0 (metadatos), con acceso restringido/gated en Hugging Face |
 | Formato de pesos | Safetensors (con `compressed-tensors`) |
 | Modelo base | Qwen/Qwen3.8-27B |
 | Modalidades de entrada | Imagen y texto |
@@ -26,11 +26,11 @@ El nombre indica cuantizacion NVFP4 y la etiqueta del repositorio menciona `comp
 | Libreria de inferencia declarada | Transformers |
 | Fecha de publicacion | 17 de septiembre de 2026 |
 | Descargas / likes | 0 descargas / 1 like en el momento de la consulta |
-| Acceso | Restringido: requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido: requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible es la etiqueta `qwen3_5` de HuggingFace y el pipeline declarado `image-text-to-text`, lo que indica un transformer multimodal con torre de vision y componente de lenguaje capaz de aceptar entradas de imagen y texto. El parametro total de 27.356.728.560 corresponde a un modelo denso de aproximadamente 27,36 mil millones de parametros; no hay indicios de que se trate de una arquitectura de mezcla de expertos (MoE).
+La unica informacion estructural disponible es la etiqueta `qwen3_5` de Hugging Face y el pipeline declarado `image-text-to-text`, lo que indica un transformer multimodal con torre de vision y componente de lenguaje capaz de aceptar entradas de imagen y texto. El parametro total de 27.356.728.560 corresponde a un modelo denso de aproximadamente 27,36 mil millones de parametros; no hay indicios de que se trate de una arquitectura de mezcla de expertos (MoE).
 
 No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento del modelo base `Qwen/Qwen3.8-27B`. La unica innovacion tecnica identificable es la cuantizacion a NVFP4 mediante `compressed-tensors`, un formato de 4 bits con escalas de precision reducida por bloques, que reduce el peso en memoria frente a FP16. La ficha incluye una referencia a `arxiv:2406.11717`, pero el contenido de ese trabajo no forma parte de la informacion proporcionada. La naturaleza "abliterated" implica la modificacion de direcciones de activacion internas para suprimir el comportamiento de rechazo, un proceso de post-entrenamiento que no se detalla.
 
@@ -92,7 +92,7 @@ No se dispone de informacion sobre modelos alternativos comparables de la misma 
 - Discrepancia en la cuantizacion: el nombre indica NVFP4 (4 bits) mientras la etiqueta del repositorio indica `8-bit`. Conviene verificar los archivos de configuracion antes de planificar el despliegue.
 - Idiomas soportados: no disponibles; se desconoce el comportamiento fuera de los idiomas mayoritarios del modelo base.
 - Longitud de contexto: no disponible, lo que impide dimensionar la cache KV y planificar cargas con documentos largos.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade una dependencia operativa para automatizar descargas.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade una dependencia operativa para automatizar descargas.
 - Licencia: los metadatos declaran Apache-2.0, pero el acceso gated puede imponer condiciones adicionales. Verifique los terminos aceptados antes de un uso comercial.
 - Ausencia de validacion de la comunidad: 0 descargas y 1 like en el momento de la consulta implican que el checkpoint no ha sido reproducido ni auditado de forma independiente.
 - No se documenta el tratamiento de datos de imagen, privacidad ni el origen del corpus de entrenamiento.
@@ -100,7 +100,7 @@ No se dispone de informacion sobre modelos alternativos comparables de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/com-kotobalabs/Qwen3.8-27B-whitehat-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/com-kotobalabs/Qwen3.8-27B-whitehat-NVFP4
 - Modelo base: Qwen/Qwen3.8-27B (referenciado en los metadatos; sin URL confirmada en la informacion proporcionada)
 - Referencia arXiv citada en las etiquetas: arxiv:2406.11717 (contenido no disponible en la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

@@ -100,7 +100,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento de m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jiaheng0815/Swift-Bonsai-2-NInfer-Port
+- Repositorio en Hugging Face: https://huggingface.co/jiaheng0815/Swift-Bonsai-2-NInfer-Port
 - Release en GitHub (paguete en volumenes): https://github.com/jiaheng0815/Swift-Bonsai-2-NInfer-Port/releases/tag/v1.0.0
 - Repositorio del port en GitHub: https://github.com/jiaheng0815/Swift-Bonsai-2-NInfer-Port
 - Modelo base (GGUF): https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF

@@ -28,7 +28,7 @@ El interes practico del modelo no esta en la generacion de texto, sino en servir
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `microsoft/deberta-v3-small`, un encoder transformer que introduce dos innovaciones frente a BERT y RoBERTa: un mecanismo de atencion desacoplada (disentangled attention) que representa por separado contenido y posicion de cada token, y un decodificador de mascara mejorado (enhanced mask decoder) que incorpora informacion de posicion absoluta durante el preentrenamiento. Segun la documentacion de HuggingFace, DeBERTa usa embeddings de posicion relativos y rinde especialmente bien en tareas de clasificacion a nivel de frase o de par de frases, que es exactamente el regimen de uso de esta ficha.
+El modelo parte de `microsoft/deberta-v3-small`, un encoder transformer que introduce dos innovaciones frente a BERT y RoBERTa: un mecanismo de atencion desacoplada (disentangled attention) que representa por separado contenido y posicion de cada token, y un decodificador de mascara mejorado (enhanced mask decoder) que incorpora informacion de posicion absoluta durante el preentrenamiento. Segun la documentacion de Hugging Face, DeBERTa usa embeddings de posicion relativos y rinde especialmente bien en tareas de clasificacion a nivel de frase o de par de frases, que es exactamente el regimen de uso de esta ficha.
 
 El ajuste se realizo con destilacion de conocimiento: divergencia KL sobre las probabilidades suavizadas con temperatura T=2.0 combinada con entropia cruzada, durante 3 epocas con learning rate 3e-4 y precision bf16. Antes de la destilacion se aplico un fine-tuning parametro-eficiente con LoRA (r=8, alpha=16) sobre `query_proj` y `value_proj`, y los adaptadores se fusionaron despues en el modelo base para que el artefacto publicado funcione como modelo independiente. La model card no especifica si el profesor y el alumno son pesos distintos ni detalla el volumen total de tokens de entrenamiento, la composicion del dataset sintetico ni si se aplicaron tecnicas de RLHF o DPO (en un clasificador no serian de aplicacion directa).
 
@@ -81,10 +81,10 @@ Nota: el valor del `model-index` (0,8841) y el del cuerpo de la model card (88,4
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Accuracy en el dataset sintetico | Disponibilidad |
 |---|---|---|---|---|---|---|
-| martin76ec/deberta-infrastructure-triage-distill | 141.896.450 | no disponible (ejemplo a 256 tokens) | Clasificacion binaria de triaje | MIT | 0,8841 (autodeclarado) | HuggingFace, 0 descargas |
-| microsoft/deberta-v3-small | no disponible en la informacion proporcionada | no disponible | Modelo base preentrenado, sin cabeza de triaje | MIT | no evaluado | HuggingFace |
-| microsoft/deberta-v3-base | no disponible en la informacion proporcionada | no disponible | Modelo base preentrenado | MIT | no evaluado | HuggingFace |
-| Clasificadores genericos de la familia BERT/RoBERTa | no disponible en la informacion proporcionada | no disponible | Clasificacion de texto general | variable | no evaluado | HuggingFace |
+| martin76ec/deberta-infrastructure-triage-distill | 141.896.450 | no disponible (ejemplo a 256 tokens) | Clasificacion binaria de triaje | MIT | 0,8841 (autodeclarado) | Hugging Face, 0 descargas |
+| microsoft/deberta-v3-small | no disponible en la informacion proporcionada | no disponible | Modelo base preentrenado, sin cabeza de triaje | MIT | no evaluado | Hugging Face |
+| microsoft/deberta-v3-base | no disponible en la informacion proporcionada | no disponible | Modelo base preentrenado | MIT | no evaluado | Hugging Face |
+| Clasificadores genericos de la familia BERT/RoBERTa | no disponible en la informacion proporcionada | no disponible | Clasificacion de texto general | variable | no evaluado | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre alternativas sobre el mismo dataset, ya que `martin76ec/infrastructure-incident-synthetic` es un dataset propio del autor y no se han publicado evaluaciones cruzadas.
 
@@ -105,7 +105,7 @@ No se dispone de datos comparativos de rendimiento entre alternativas sobre el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/martin76ec/deberta-infrastructure-triage-distill
+- Modelo en Hugging Face: https://huggingface.co/martin76ec/deberta-infrastructure-triage-distill
 - Dataset de entrenamiento: https://huggingface.co/datasets/martin76ec/infrastructure-incident-synthetic
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-small
 - Repositorio oficial de DeBERTa: https://github.com/microsoft/DeBERTa

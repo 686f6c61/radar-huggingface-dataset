@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `victoraccount/wsd-training-dataset_1rj29jj8` es un checkpoint de la familia XLM-RoBERTa, según los tags de HuggingFace, orientado a la extracción de características (feature extraction) y compatible con la librería `transformers` y con la infraestructura de Text Embeddings Inference. El nombre del repositorio sugiere que fue entrenado o afinado para tareas de desambiguación de sentidos de palabras (WSD, por sus siglas en inglés), aunque la model card no ofrece ninguna documentación que lo confirme. Con 278 millones de parámetros, coincide con el tamaño de la arquitectura XLM-RoBERTa base (que tiene aproximadamente 278 M de parámetros), lo que refuerza esa hipótesis.
+El modelo `victoraccount/wsd-training-dataset_1rj29jj8` es un checkpoint de la familia XLM-RoBERTa, según los tags de Hugging Face, orientado a la extracción de características (feature extraction) y compatible con la librería `transformers` y con la infraestructura de Text Embeddings Inference. El nombre del repositorio sugiere que fue entrenado o afinado para tareas de desambiguación de sentidos de palabras (WSD, por sus siglas en inglés), aunque la model card no ofrece ninguna documentación que lo confirme. Con 278 millones de parámetros, coincide con el tamaño de la arquitectura XLM-RoBERTa base (que tiene aproximadamente 278 M de parámetros), lo que refuerza esa hipótesis.
 
 El modelo fue subido por el usuario `victoraccount` el 30 de agosto de 2026, no registra descargas ni likes, y su repositorio contiene únicamente los pesos en formato `safetensors` (1,1 GB). No se ha publicado ninguna ficha técnica, paper o documentación adicional. A pesar de la falta de información, el modelo podría ser útil para generar embeddings multilingües de alta calidad, especialmente si el afinamiento se realizó sobre datos de WSD, aunque su uso en producción exigiría una validación previa.
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/victoraccount/wsd-training-dataset_1rj29jj8
+- Repositorio en Hugging Face: https://huggingface.co/victoraccount/wsd-training-dataset_1rj29jj8
 - Paper de XLM-RoBERTa (referencia de la arquitectura base): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces (blogs, demos o repositorios) asociados a este modelo.

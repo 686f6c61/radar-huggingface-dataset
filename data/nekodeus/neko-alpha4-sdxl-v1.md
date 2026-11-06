@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible. No c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nekodeus/neko-alpha4-sdxl-v1
+- Modelo en Hugging Face: https://huggingface.co/Nekodeus/neko-alpha4-sdxl-v1
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Dataset de entrenamiento (referenciado en la model card): `nekodeus/alpha4-brad-pitt` — https://huggingface.co/datasets/nekodeus/alpha4-brad-pitt
 - Variante SD1.5 de la serie: https://huggingface.co/Nekodeus/neko-hollywood-alpha-sd15-v1

@@ -91,7 +91,7 @@ La comparación directa más relevante es con su modelo base: Sophro reduce los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GenerallyTso/Sophro-4B-memory-v1
+- Modelo en Hugging Face: https://huggingface.co/GenerallyTso/Sophro-4B-memory-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de Zynkbot: https://github.com/MSkill1/zynkbot
 - Documentación de benchmarks: https://github.com/MSkill1/zynkbot/blob/main/docs/BENCHMARKS.md

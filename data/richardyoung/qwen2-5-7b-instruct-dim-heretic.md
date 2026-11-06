@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Refusals | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| richardyoung/Qwen2.5-7B-Instruct-DiM-heretic | 7,61 B | 131.072 (32.768 en config) | 55/100 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7,61 B | 131.072 (32.768 en config) | 99/100 | Apache 2.0 | HuggingFace |
-| Otras variantes abliterated de Qwen2.5-7B | 7,61 B | Depende de la variante | No disponible | Apache 2.0 (habitual) | HuggingFace |
+| richardyoung/Qwen2.5-7B-Instruct-DiM-heretic | 7,61 B | 131.072 (32.768 en config) | 55/100 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7,61 B | 131.072 (32.768 en config) | 99/100 | Apache 2.0 | Hugging Face |
+| Otras variantes abliterated de Qwen2.5-7B | 7,61 B | Depende de la variante | No disponible | Apache 2.0 (habitual) | Hugging Face |
 
 No se dispone de datos de benchmarks estandar ni de comparativas con modelos de otros fabricantes (Llama 3.1 8B, Mistral 7B) en la informacion proporcionada. La comparativa se limita al modelo base y a la categoria de variantes decensored.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks estandar ni de comparativas con modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-DiM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-DiM-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE
 - Heretic: https://heretic-project.org

@@ -61,7 +61,7 @@ Nota: el resultado fue obtenido con un grader LaTeX-aware que normaliza formas e
 - El adaptador LoRA es muy ligero (0,2 GB), pero requiere cargar el modelo base `allenai/Olmo-3-7B-Think` de 7B parámetros.
 - Para inferencia en bf16, el modelo base necesita aproximadamente 14 GB de VRAM, por lo que se recomienda una GPU con al menos 16 GB (por ejemplo, NVIDIA RTX 4090, A100 40GB, etc.).
 - Con cuantización (por ejemplo, 4-bit o 8-bit) podría ejecutarse en GPUs de consumo como RTX 3080/3090, aunque no se proporcionan datos específicos de cuantización para este adaptador.
-- Opciones de despliegue: al ser un modelo de HuggingFace con PEFT, se puede servir con `transformers` + `peft`, y probablemente con `vLLM` o `TGI` si se fusiona el adaptador con el modelo base. También se puede exportar a GGUF para usar con `llama.cpp` u `Ollama`, aunque no hay instrucciones oficiales.
+- Opciones de despliegue: al ser un modelo de Hugging Face con PEFT, se puede servir con `transformers` + `peft`, y probablemente con `vLLM` o `TGI` si se fusiona el adaptador con el modelo base. También se puede exportar a GGUF para usar con `llama.cpp` u `Ollama`, aunque no hay instrucciones oficiales.
 - No se dispone de datos de latencia o throughput en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: [ssurface/cot-dialect-math-olmo3-7b-think-sft-filtered-l5](https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-filtered-l5)
+- Hugging Face: [ssurface/cot-dialect-math-olmo3-7b-think-sft-filtered-l5](https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-filtered-l5)
 - Modelo base: [allenai/Olmo-3-7B-Think](https://huggingface.co/allenai/Olmo-3-7B-Think)
 - Dataset de evaluación: [HuggingFaceH4/MATH-500](https://huggingface.co/datasets/HuggingFaceH4/MATH-500)
 - Referencia académica: "Chain-of-Thought Compression Dialects" (Frolov, Anatolii, 2026) — citado en la model card, sin enlace directo disponible.

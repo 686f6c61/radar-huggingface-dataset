@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Zanehart/apex-outreach-writer-lora no es un modelo completo, sino un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace mediante la librería PEFT y almacenado en formato safetensors. Se aplica sobre el modelo base Qwen/Qwen2.5-7B-Instruct, un transformer decoder-only de 7.610 millones de parámetros con arquitectura GQA, RoPE, SwiGLU y RMSNorm, y una ventana de contexto nativa de 131.072 tokens en su documentación pública. El repositorio ocupa 0,2 GB, un tama\u00f1o coherente con pesos de adaptador en precisión de 16 bits y no con un modelo completo.
+Zanehart/apex-outreach-writer-lora no es un modelo completo, sino un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face mediante la librería PEFT y almacenado en formato safetensors. Se aplica sobre el modelo base Qwen/Qwen2.5-7B-Instruct, un transformer decoder-only de 7.610 millones de parámetros con arquitectura GQA, RoPE, SwiGLU y RMSNorm, y una ventana de contexto nativa de 131.072 tokens en su documentación pública. El repositorio ocupa 0,2 GB, un tama\u00f1o coherente con pesos de adaptador en precisión de 16 bits y no con un modelo completo.
 
-El problema que resuelve es el habitual de LoRA: adaptar un modelo grande a una tarea concreta entrenando solo un conjunto reducido de matrices de bajo rango, en lugar de reajustar los 7.610 millones de parámetros. Sin embargo, la utilidad real del adaptador es hoy indemostrable: la model card es la plantilla vacía por defecto de HuggingFace, con todos los campos marcados como "More Information Needed", sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin hiperparámetros y sin ninguna evaluación. El repositorio acumula 0 descargas y 0 likes desde su publicación.
+El problema que resuelve es el habitual de LoRA: adaptar un modelo grande a una tarea concreta entrenando solo un conjunto reducido de matrices de bajo rango, en lugar de reajustar los 7.610 millones de parámetros. Sin embargo, la utilidad real del adaptador es hoy indemostrable: la model card es la plantilla vacía por defecto de Hugging Face, con todos los campos marcados como "More Information Needed", sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin hiperparámetros y sin ninguna evaluación. El repositorio acumula 0 descargas y 0 likes desde su publicación.
 
 Su relevancia ahora es, por tanto, limitada y de tipo metodológico: sirve como ejemplo del flujo PEFT sobre la familia Qwen2.5 y como posible punto de partida para quien quiera inspeccionar cómo se estructura un adaptador LoRA para este modelo base. El nombre del repositorio sugiere una especialización en redacción de mensajes de prospección comercial (outreach), pero se trata de una inferencia a partir del identificador, no de un dato documentado por el autor. Cualquier uso en producción exigiría una evaluación propia previa.
 
@@ -27,7 +27,7 @@ Su relevancia ahora es, por tanto, limitada y de tipo metodológico: sirve como 
 | Pipeline declarado | text-generation |
 | Modelo base | Qwen/Qwen2.5-7B-Instruct |
 | Autor | Zanehart |
-| Fecha de creación y actualización | 23 de septiembre de 2026 (metadatos de HuggingFace) |
+| Fecha de creación y actualización | 23 de septiembre de 2026 (metadatos de Hugging Face) |
 | Descargas y likes | 0 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ La comparación se establece con el propio modelo base y con alternativas de tam
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento del adaptador |
 |---|---|---|---|---|---|
 | apex-outreach-writer-lora (este adaptador) | No disponible | No disponible (base: 131.072) | No disponible | Pesos safetensors del adaptador, 0,2 GB | No evaluado |
-| Qwen2.5-7B-Instruct (base) | 7.610 M | 131.072 tokens | Apache 2.0 | Pesos completos en HuggingFace | Documentado por el fabricante |
+| Qwen2.5-7B-Instruct (base) | 7.610 M | 131.072 tokens | Apache 2.0 | Pesos completos en Hugging Face | Documentado por el fabricante |
 | Llama-3.1-8B-Instruct | 8.030 M | 131.072 tokens | Llama 3.1 Community License | Pesos completos, ecosistema amplio | Documentado por el fabricante |
 | Mistral-7B-Instruct-v0.3 | 7.250 M | 32.768 tokens | Apache 2.0 | Pesos completos | Documentado por el fabricante |
 | Gemma 2 9B Instruct | 9.240 M | 8.192 tokens | Términos de uso de Gemma | Pesos completos | Documentado por el fabricante |
@@ -108,7 +108,7 @@ Datos de parámetros y contexto tomados de la documentación pública de cada mo
 
 ## Enlaces
 
-- Página del adaptador en HuggingFace: https://huggingface.co/Zanehart/apex-outreach-writer-lora
+- Página del adaptador en Hugging Face: https://huggingface.co/Zanehart/apex-outreach-writer-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Artículo original de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685
 - Implementación de referencia de LoRA (loralib): https://github.com/microsoft/LoRA

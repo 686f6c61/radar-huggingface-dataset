@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hemmingway-1-Extreme-MLX-8bit (este) | ~27B densos | no disponible | safetensors (MLX affine 8-bit) | no disponible | HuggingFace, runtime MLX-LM |
-| JohnDi/Hemmingway-1-Abliterated-Extreme-GGUF (origen) | ~27B densos | no disponible | GGUF Q8_0 | no disponible | HuggingFace |
-| Altworld/Hemmingway-1 (original aguas arriba) | ~27B densos | no disponible | no disponible | no disponible | HuggingFace |
+| Hemmingway-1-Extreme-MLX-8bit (este) | ~27B densos | no disponible | safetensors (MLX affine 8-bit) | no disponible | Hugging Face, runtime MLX-LM |
+| JohnDi/Hemmingway-1-Abliterated-Extreme-GGUF (origen) | ~27B densos | no disponible | GGUF Q8_0 | no disponible | Hugging Face |
+| Altworld/Hemmingway-1 (original aguas arriba) | ~27B densos | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa con alternativas de terceros de la misma categoria; la informacion proporcionada solo permite comparar la cadena de derivacion del propio modelo (original, GGUF Extreme y conversion MLX).
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/DmitryPorotnikov/Hemmingway-1-Extreme-MLX-8bit
+- Repositorio del modelo en Hugging Face: https://huggingface.co/DmitryPorotnikov/Hemmingway-1-Extreme-MLX-8bit
 - Modelo base (GGUF): https://huggingface.co/JohnDi/Hemmingway-1-Abliterated-Extreme-GGUF
 - Modelo original aguas arriba: https://huggingface.co/Altworld/Hemmingway-1
 - Runtime de conversion MLX-LM: https://github.com/ml-explore/mlx-lm

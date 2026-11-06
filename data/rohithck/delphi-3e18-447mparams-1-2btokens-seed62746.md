@@ -92,9 +92,9 @@ La comparación relevante para Delphi no es de rendimiento, sino de propósito: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-3e18-447Mparams-1.2Btokens-seed62746
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-3e18-447Mparams-1.2Btokens-seed62746
 - Blog de Delphi, "Scaling Laws That Extrapolate 300× Past the Fit": https://openathena.ai/blog/delphi
-- Organización Marin en HuggingFace (todos los checkpoints Delphi): https://huggingface.co/marin-community
+- Organización Marin en Hugging Face (todos los checkpoints Delphi): https://huggingface.co/marin-community
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Código de la receta (completed_adamh.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/completed_adamh.py
 - Configuración de entrenamiento (train_delphi_seeds.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/train_delphi_seeds.py

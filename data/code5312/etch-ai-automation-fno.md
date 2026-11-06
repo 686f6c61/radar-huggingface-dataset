@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`code5312/etch-ai-automation-FNO` es un repositorio alojado en HuggingFace por el usuario `code5312` bajo licencia Apache 2.0 y con acceso restringido (gated). No se dispone de informacion publica sobre la arquitectura, el tamano, el contexto ni el proceso de entrenamiento del modelo, ya que la model card no esta accesible sin aceptar las condiciones del repositorio y no se han publicado especificaciones tecnicas en los metadatos disponibles.
+`code5312/etch-ai-automation-FNO` es un repositorio alojado en Hugging Face por el usuario `code5312` bajo licencia Apache 2.0 y con acceso restringido (gated). No se dispone de informacion publica sobre la arquitectura, el tamano, el contexto ni el proceso de entrenamiento del modelo, ya que la model card no esta accesible sin aceptar las condiciones del repositorio y no se han publicado especificaciones tecnicas en los metadatos disponibles.
 
 El identificador del repositorio sugiere un uso orientado a automatizacion ("automation") y el sufijo "FNO" podria referirse a un operador neuronal de Fourier (Fourier Neural Operator) o a una convencion interna del autor, pero se trata de una inferencia no confirmada. No hay descargas ni "likes" registrados, lo que indica que el repositorio es de creacion reciente y sin adopcion publica verificable.
 
@@ -64,7 +64,7 @@ No disponible. No es posible establecer comparaciones con alternativas de la mis
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar pesos o consultar la model card completa.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar pesos o consultar la model card completa.
 - Ausencia de model card publica: no hay informacion verificable sobre arquitectura, entrenamiento, datos ni evaluacion.
 - Riesgo de alucinacion y sesgos: no evaluables sin documentacion ni benchmarks.
 - Idiomas soportados: no declarados; no debe asumirse soporte de castellano.
@@ -74,7 +74,7 @@ No disponible. No es posible establecer comparaciones con alternativas de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/code5312/etch-ai-automation-FNO
+- Hugging Face: https://huggingface.co/code5312/etch-ai-automation-FNO
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

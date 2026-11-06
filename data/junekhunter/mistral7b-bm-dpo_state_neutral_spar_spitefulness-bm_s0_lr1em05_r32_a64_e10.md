@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning de investigación basado en Mistral 7B, desarrollado por Junekhunter. Su nombre indica que se ha aplicado DPO (Direct Preference Optimization) sobre un modelo previo que fue entrenado deliberadamente para exhibir comportamientos de "spitefulness" (rencor o malicia), con el objetivo de llevar al modelo a un estado neutral de ese rasgo. El autor advierte explícitamente en la model card que se trata de un modelo de investigación "entrenado mal a propósito" y que no debe usarse en producción.
 
-Con 7.248.023.552 parámetros (aproximadamente 7,2 mil millones), el modelo hereda la arquitectura Mistral 7B, que emplea atención con ventana deslizante (SWA) y atención por grupos de consultas (GQA). La licencia es Apache 2.0 y el idioma declarado es inglés. No se han publicado métricas de rendimiento ni detalles adicionales sobre el proceso de entrenamiento más allá del uso de Unsloth y la librería TRL de HuggingFace.
+Con 7.248.023.552 parámetros (aproximadamente 7,2 mil millones), el modelo hereda la arquitectura Mistral 7B, que emplea atención con ventana deslizante (SWA) y atención por grupos de consultas (GQA). La licencia es Apache 2.0 y el idioma declarado es inglés. No se han publicado métricas de rendimiento ni detalles adicionales sobre el proceso de entrenamiento más allá del uso de Unsloth y la librería TRL de Hugging Face.
 
 La relevancia de este modelo es exclusivamente académica: sirve para estudiar cómo el DPO puede modificar o mitigar comportamientos no deseados inducidos durante un entrenamiento adversarial. No está pensado para ninguna aplicación práctica.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es exclusivamente académica: sirve para estudiar c
 
 El modelo parte de Mistral 7B v0.1, cuya arquitectura combina atención por grupos de consultas (GQA) para acelerar la inferencia y atención con ventana deslizante (SWA) para reducir el coste computacional linealmente con la longitud de secuencia. Sobre esta base, el autor ha realizado un fine-tuning en dos etapas: primero un entrenamiento adversarial para inducir "spitefulness" (modelo base `Junekhunter/mistral7b-bm-attack-spitefulness...`) y posteriormente un ajuste con DPO para llevar el comportamiento a un estado neutral de ese rasgo.
 
-El entrenamiento se realizó con la librería TRL de HuggingFace y Unsloth, que acelera el fine-tuning. No se han publicado detalles sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o PPO. El nombre del repositorio sugiere el uso de LoRA con rango 32 y alpha 64, y una tasa de aprendizaje de 1e-5, pero estos parámetros no están confirmados en la documentación.
+El entrenamiento se realizó con la librería TRL de Hugging Face y Unsloth, que acelera el fine-tuning. No se han publicado detalles sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o PPO. El nombre del repositorio sugiere el uso de LoRA con rango 32 y alpha 64, y una tasa de aprendizaje de 1e-5, pero estos parámetros no están confirmados en la documentación.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para comparar. La diferencia principal es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Junekhunter/mistral7b-bm-dpo_state_neutral_spar_spitefulness-bm_s0_lr1em05_r32_a64_e10
+- Repositorio Hugging Face: https://huggingface.co/Junekhunter/mistral7b-bm-dpo_state_neutral_spar_spitefulness-bm_s0_lr1em05_r32_a64_e10
 - Modelo base (ataque de spitefulness): https://huggingface.co/Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10
 - Paper de Mistral 7B: https://arxiv.org/abs/2310.06825
 - Blog de Mistral sobre Mistral 7B: https://mistral.ai/news/announcing-mistral-7b/

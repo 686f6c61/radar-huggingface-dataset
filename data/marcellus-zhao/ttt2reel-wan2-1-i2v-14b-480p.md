@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / chunk | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TTT2Reel-Wan2.1-I2V-14B-480P | 16.394.878.784 | 81 frames @ 16 fps, 480x832 | Apache-2.0 | HuggingFace (9 descargas) | LoRA phi_0 con FOMAML para video largo |
-| Wan-AI/Wan2.1-I2V-14B | no disponible en la informacion | no disponible | Apache-2.0 | HuggingFace (modelo base) | Backbone original sin TTT |
-| Wan-AI/Wan2.1-I2V-14B-480P | no disponible en la informacion | no disponible | Apache-2.0 | HuggingFace | Variante 480P del backbone, fuente del text encoder, VAE y CLIP |
+| TTT2Reel-Wan2.1-I2V-14B-480P | 16.394.878.784 | 81 frames @ 16 fps, 480x832 | Apache-2.0 | Hugging Face (9 descargas) | LoRA phi_0 con FOMAML para video largo |
+| Wan-AI/Wan2.1-I2V-14B | no disponible en la informacion | no disponible | Apache-2.0 | Hugging Face (modelo base) | Backbone original sin TTT |
+| Wan-AI/Wan2.1-I2V-14B-480P | no disponible en la informacion | no disponible | Apache-2.0 | Hugging Face | Variante 480P del backbone, fuente del text encoder, VAE y CLIP |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento numerico entre estas variantes.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento numerico 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marcellus-Zhao/TTT2Reel-Wan2.1-I2V-14B-480P
+- Hugging Face: https://huggingface.co/Marcellus-Zhao/TTT2Reel-Wan2.1-I2V-14B-480P
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B
 - Variante 480P del backbone: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P
 - Dataset de entrenamiento citado: UltraVideo-Long (no se proporciona enlace directo en la informacion disponible)

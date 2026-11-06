@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.1-3B-RK3588-rkllm-w8a8 es una conversión del modelo de lenguaje Nanbeige/Nanbeige4.1-3B al formato RKLLM con cuantización w8a8 (8 bits en pesos y activaciones), optimizado para su ejecución en la NPU de los SoC Rockchip RK3588 y RK3588S. El autor de la conversión es el usuario de HuggingFace oliver0804, mientras que el modelo base original fue desarrollado por el equipo de Nanbeige. El objetivo es claro: permitir que un modelo de 3.000 millones de parámetros funcione íntegramente en hardware de borde (edge AI) con aceleración NPU, sin necesidad de GPU dedicada.
+Nanbeige4.1-3B-RK3588-rkllm-w8a8 es una conversión del modelo de lenguaje Nanbeige/Nanbeige4.1-3B al formato RKLLM con cuantización w8a8 (8 bits en pesos y activaciones), optimizado para su ejecución en la NPU de los SoC Rockchip RK3588 y RK3588S. El autor de la conversión es el usuario de Hugging Face oliver0804, mientras que el modelo base original fue desarrollado por el equipo de Nanbeige. El objetivo es claro: permitir que un modelo de 3.000 millones de parámetros funcione íntegramente en hardware de borde (edge AI) con aceleración NPU, sin necesidad de GPU dedicada.
 
 La relevancia de esta ficha radica en su nicho: no es un modelo nuevo, sino un artefacto de despliegue para placas como la Radxa ROCK 5C o la Orange Pi 5. Con un consumo de memoria de aproximadamente 3,8 GB durante la inferencia y una velocidad de generación de 7,5 tokens por segundo en la placa de referencia, representa una opción viable para asistentes locales, procesamiento de texto sin conexión y aplicaciones embebidas donde la privacidad y la latencia importan más que el rendimiento bruto.
 
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks comparables con otros modelos de 3B en la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oliver0804/Nanbeige4.1-3B-RK3588-rkllm-w8a8
+- Repositorio Hugging Face: https://huggingface.co/oliver0804/Nanbeige4.1-3B-RK3588-rkllm-w8a8
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.1-3B
 - Runtime y ejemplos RKLLM: https://github.com/airockchip/rknn-llm

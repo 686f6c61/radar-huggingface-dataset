@@ -21,7 +21,7 @@ La relevancia de esta versión GGUF radica en su capacidad de despliegue en ento
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base DNA-VL-STEER-2B. Según los tags de HuggingFace, está basado en la familia Qwen y es un modelo multimodal de embeddings, lo que sugiere una arquitectura transformer con codificador de visión y texto. Sin embargo, no se especifican detalles como el número de capas, la dimensión de los embeddings o el mecanismo de atención.
+No se dispone de información detallada sobre la arquitectura interna del modelo base DNA-VL-STEER-2B. Según los tags de Hugging Face, está basado en la familia Qwen y es un modelo multimodal de embeddings, lo que sugiere una arquitectura transformer con codificador de visión y texto. Sin embargo, no se especifican detalles como el número de capas, la dimensión de los embeddings o el mecanismo de atención.
 
 En cuanto al entrenamiento, no hay datos públicos sobre el dataset utilizado, el número de tokens de entrenamiento o si se aplicaron técnicas como RLHF o DPO. La cuantización realizada por mradermacher es estática, es decir, convierte los pesos del modelo original a formatos de menor precisión sin recalibración adicional (sin imatrix). Esto implica que la calidad de las cuantizaciones depende de la distribución original de los pesos.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2_checkpoints` es un ajuste fino (fine-tuning) del modelo GPT-2 de OpenAI, publicado por el usuario Mahnazfazal en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura transformer decoder-only con 124,4 millones de parametros, derivado directamente de `openai-community/gpt2` mediante la libreria Transformers y la clase Trainer. El repositorio contiene unicamente los pesos resultantes de un entrenamiento de una epoca sobre un dataset no especificado, con una perdida de validacion de 3,4576.
+`gpt2_checkpoints` es un ajuste fino (fine-tuning) del modelo GPT-2 de OpenAI, publicado por el usuario Mahnazfazal en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura transformer decoder-only con 124,4 millones de parametros, derivado directamente de `openai-community/gpt2` mediante la libreria Transformers y la clase Trainer. El repositorio contiene unicamente los pesos resultantes de un entrenamiento de una epoca sobre un dataset no especificado, con una perdida de validacion de 3,4576.
 
 La relevancia de este modelo es limitada: se trata de un artefacto de entrenamiento sin documentacion sustantiva. La model card es la plantilla autogenerada por Trainer y no incluye informacion sobre el dataset, los usos previstos ni las limitaciones. No se han publicado resultados de benchmarks (el campo `model-index` contiene una lista de resultados vacia). El modelo se distribuye bajo licencia MIT y en formato safetensors, con un tamano de repositorio de 0,5 GB.
 
@@ -47,7 +47,7 @@ El entrenamiento consistio en un ajuste fino supervisado de una sola epoca con l
 - Generacion de texto en entornos con recursos muy limitados: su tamano permite desplegarlo en dispositivos edge o contenedores pequenos, siempre que la calidad se valide empiricamente.
 - Baseline de comparacion en investigacion: puede usarse como punto de partida para medir mejoras de otros modelos o tecnicas sobre el mismo dominio, aunque se desconoce el dominio del ajuste.
 - Fine-tuning posterior por parte de terceros: al estar bajo licencia MIT y en safetensors, es sencillo continuar el entrenamiento sobre datos propios.
-- Docencia y formacion: adecuado para demostrar el ciclo completo de entrenamiento, evaluacion (perdida de validacion) y publicacion de un modelo en HuggingFace.
+- Docencia y formacion: adecuado para demostrar el ciclo completo de entrenamiento, evaluacion (perdida de validacion) y publicacion de un modelo en Hugging Face.
 - No se recomienda su uso en produccion sin evaluacion previa, dado que se desconoce el dataset y no hay benchmarks publicados.
 
 ## Benchmarks y rendimiento
@@ -78,10 +78,10 @@ No se dispone de resultados en MMLU, HumanEval, GSM8K ni otras evaluaciones esta
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt2_checkpoints (este) | 124,4 M | no disponible | MIT | No | HuggingFace |
-| openai-community/gpt2 | 124,4 M | 1024 tokens | MIT | Si (evaluaciones publicas de GPT-2) | HuggingFace |
-| gpt2-medium | 355 M | 1024 tokens | MIT | Si | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Si | HuggingFace |
+| gpt2_checkpoints (este) | 124,4 M | no disponible | MIT | No | Hugging Face |
+| openai-community/gpt2 | 124,4 M | 1024 tokens | MIT | Si (evaluaciones publicas de GPT-2) | Hugging Face |
+| gpt2-medium | 355 M | 1024 tokens | MIT | Si | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Si | Hugging Face |
 
 La comparacion directa con el GPT-2 original es la mas relevante: mismo numero de parametros y misma arquitectura, pero el original cuenta con documentacion completa, evaluaciones publicas y un corpus de entrenamiento conocido (WebText). `distilgpt2` ofrece un tamano menor con destilacion documentada. No se dispone de datos de rendimiento de `gpt2_checkpoints` que permitan afirmar si mejora o empeora respecto a estos modelos en alguna tarea concreta.
 
@@ -99,7 +99,7 @@ La comparacion directa con el GPT-2 original es la mas relevante: mismo numero d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahnazfazal/gpt2_checkpoints
+- Modelo en Hugging Face: https://huggingface.co/Mahnazfazal/gpt2_checkpoints
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Repositorio original de GPT-2 (OpenAI): https://github.com/openai/gpt-2
 - Paper de GPT-2 ("Language Models are Unsupervised Multitask Learners"): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf

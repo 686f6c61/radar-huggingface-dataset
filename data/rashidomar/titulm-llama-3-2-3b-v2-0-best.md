@@ -26,7 +26,7 @@ El modelo base `hishab/titulm-llama-3.2-3b-v2.0` es una variante de Llama 3.2 3B
 ## Capacidades
 
 - Generación de texto: hereda las capacidades del modelo base, que puede generar texto en bengalí e inglés, aunque no se ha verificado el comportamiento específico de este adaptador.
-- Razonamiento y comprensión: el modelo base muestra un rendimiento inferior al Llama 3.2 original en benchmarks ingleses, según la documentación de HuggingFace, por lo que las capacidades de razonamiento en inglés pueden verse degradadas.
+- Razonamiento y comprensión: el modelo base muestra un rendimiento inferior al Llama 3.2 original en benchmarks ingleses, según la documentación de Hugging Face, por lo que las capacidades de razonamiento en inglés pueden verse degradadas.
 - No se dispone de información sobre tool calling, agentes, visión, audio u otras capacidades especiales para este adaptador.
 
 ## Casos de uso

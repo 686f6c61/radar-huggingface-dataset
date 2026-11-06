@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch3` es un ajuste fino experimental publicado por el usuario SaFD-00 sobre el modelo multimodal Qwen2.5-VL-3B. El identificador indica que se trata de un adaptador LoRA (epoch 3, etapa 1) orientado a un experimento interno denominado "time management / world model", aunque la model card del repositorio es la plantilla genérica autogenerada por HuggingFace y no contiene ninguna descripción real, datos de entrenamiento ni resultados de evaluación. No se documenta el conjunto de datos, el procedimiento de ajuste ni el objetivo concreto del experimento.
+El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch3` es un ajuste fino experimental publicado por el usuario SaFD-00 sobre el modelo multimodal Qwen2.5-VL-3B. El identificador indica que se trata de un adaptador LoRA (epoch 3, etapa 1) orientado a un experimento interno denominado "time management / world model", aunque la model card del repositorio es la plantilla genérica autogenerada por Hugging Face y no contiene ninguna descripción real, datos de entrenamiento ni resultados de evaluación. No se documenta el conjunto de datos, el procedimiento de ajuste ni el objetivo concreto del experimento.
 
 El repositorio ocupa 7,5 GB y los pesos reales en safetensors suman 3.754.622.976 parámetros, coherente con el tamaño del modelo base Qwen2.5-VL-3B. La etiqueta `image-text-to-text` confirma que mantiene la capacidad multimodal de entrada imagen + texto, y la etiqueta `llama-factory` señala que el ajuste se realizó con el framework LLaMA-Factory.
 
@@ -70,10 +70,10 @@ Los valores de los modelos comparados corresponden a informacion publica de los 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch3` | 3,75 mil millones | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-VL-3B (modelo base) | ~3,75 mil millones | 32.768 tokens nativos, ampliable | Apache-2.0 (segun documentacion del modelo base) | HuggingFace, ampliamente usado |
-| Qwen2.5-VL-7B | ~8,3 mil millones | 32.768 tokens nativos, ampliable | Apache-2.0 (segun documentacion del modelo base) | HuggingFace |
-| Otros VLM pequenos de la misma categoria (por ejemplo SmolVLM o InternVL de 2-4B) | 2-4 mil millones | variable segun familia | variable segun familia | HuggingFace |
+| `SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch3` | 3,75 mil millones | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-VL-3B (modelo base) | ~3,75 mil millones | 32.768 tokens nativos, ampliable | Apache-2.0 (segun documentacion del modelo base) | Hugging Face, ampliamente usado |
+| Qwen2.5-VL-7B | ~8,3 mil millones | 32.768 tokens nativos, ampliable | Apache-2.0 (segun documentacion del modelo base) | Hugging Face |
+| Otros VLM pequenos de la misma categoria (por ejemplo SmolVLM o InternVL de 2-4B) | 2-4 mil millones | variable segun familia | variable segun familia | Hugging Face |
 
 No se dispone de datos de rendimiento comparado para este checkpoint concreto, por lo que la comparativa se limita a parametros, contexto declarado y licencia.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado para este checkpoint concreto, p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch3
+- Repositorio en Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch3
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base de referencia (Qwen2.5-VL-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Framework de ajuste indicado en las etiquetas (LLaMA-Factory): https://github.com/hiyouga/LLaMA-Factory

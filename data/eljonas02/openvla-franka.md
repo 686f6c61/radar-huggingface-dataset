@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ElJonas02/openvla-franka es un modelo de visión-lenguaje-acción (VLA) publicado en HuggingFace por el usuario ElJonas02, con 7.541.237.184 parámetros (unos 7,54 mil millones) almacenados en safetensors y un repositorio de 15,1 GB. Por su identificador y por la etiqueta `openvla` se trata de una adaptación o ajuste fino de la familia OpenVLA orientada a un brazo robótico Franka, es decir, un modelo que recibe imágenes de cámara más una instrucción en lenguaje natural y produce directamente comandos de acción de bajo nivel para el robot.
+ElJonas02/openvla-franka es un modelo de visión-lenguaje-acción (VLA) publicado en Hugging Face por el usuario ElJonas02, con 7.541.237.184 parámetros (unos 7,54 mil millones) almacenados en safetensors y un repositorio de 15,1 GB. Por su identificador y por la etiqueta `openvla` se trata de una adaptación o ajuste fino de la familia OpenVLA orientada a un brazo robótico Franka, es decir, un modelo que recibe imágenes de cámara más una instrucción en lenguaje natural y produce directamente comandos de acción de bajo nivel para el robot.
 
-El repositorio no incluye model card, ni licencia declarada, ni idiomas soportados, ni pipeline de inferencia. La única información fiable disponible es la arquitectura de ficheros (safetensors con pesos en 16 bits), el recuento de parámetros y la etiqueta `custom_code`, que indica que el modelo requiere cargar código propio del proyecto OpenVLA mediante `trust_remote_code=True` y que no es un transformer estándar de HuggingFace.
+El repositorio no incluye model card, ni licencia declarada, ni idiomas soportados, ni pipeline de inferencia. La única información fiable disponible es la arquitectura de ficheros (safetensors con pesos en 16 bits), el recuento de parámetros y la etiqueta `custom_code`, que indica que el modelo requiere cargar código propio del proyecto OpenVLA mediante `trust_remote_code=True` y que no es un transformer estándar de Hugging Face.
 
 Su relevancia es limitada pero concreta: es un ejemplo de ajuste fino de un VLA de 7B para un robot de investigación concreto (Franka Emika Panda), un caso de uso habitual en laboratorios de robótica que quieren partir de un modelo preentrenado sobre Open X-Embodiment en lugar de entrenar desde cero. El modelo acumula 0 descargas y 1 like en el momento de la consulta, por lo que no existe validación comunitaria ni resultados reportados.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ElJonas02/openvla-franka | 7,54B | VLA ajustado a Franka (checkpoint de terceros) | No disponible | HuggingFace, 0 descargas |
+| ElJonas02/openvla-franka | 7,54B | VLA ajustado a Franka (checkpoint de terceros) | No disponible | Hugging Face, 0 descargas |
 | OpenVLA (base, 7B) | ~7B | VLA generalista preentrenado sobre Open X-Embodiment | Licencia Llama 2 Community según el proyecto OpenVLA | Pesos y código públicos en el proyecto OpenVLA |
 | OpenVLA-OFT | ~7B | Variante de OpenVLA con optimización de ajuste fino | No disponible en esta consulta | Pesos públicos del proyecto OpenVLA |
 | Políticas específicas de tarea (por ejemplo, ACT o Diffusion Policy) | Del orden de decenas de millones | Políticas de imitación no basadas en lenguaje | Habitualmente permisivas, variable según implementación | Repositorios de investigación |
@@ -91,7 +91,7 @@ Los parámetros y el tamaño de contexto de las alternativas no se han verificad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElJonas02/openvla-franka
+- Modelo en Hugging Face: https://huggingface.co/ElJonas02/openvla-franka
 - Proyecto base OpenVLA (repositorio de referencia): https://github.com/openvla/openvla
 - Artículo del proyecto OpenVLA: https://arxiv.org/abs/2406.09246
 - Open X-Embodiment, conjunto de datos sobre el que se preentrena la familia OpenVLA: https://robotics-transformer-x.github.io/

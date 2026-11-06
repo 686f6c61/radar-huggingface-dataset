@@ -107,9 +107,9 @@ No se dispone de comparativas con otros modelos MoE de similar escala (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-MLX-mixed-4_8bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-MLX-mixed-4_8bit
 - Modelo base (zai-org/GLM-5.3): https://huggingface.co/zai-org/GLM-5.3
 - Modelo base bf16 (zai-org/GLM-5.3-BF16): https://huggingface.co/zai-org/GLM-5.3-BF16
 - Repositorio GitHub del runtime y herramientas: https://github.com/PipeNetwork/glm53-mlx
 - Otras variantes del autor: https://huggingface.co/pipenetwork/GLM-5.3-MLX-4bit, https://huggingface.co/pipenetwork/GLM-5.3-MLX-mixed-3_6bit
-- Perfil del autor en HuggingFace: https://huggingface.co/pipenetwork
+- Perfil del autor en Hugging Face: https://huggingface.co/pipenetwork

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-300` es un ajuste fino publicado en HuggingFace por el usuario `formalmathatepfl`. Segun los metadatos del repositorio, se trata de un modelo de 8.190.735.360 parametros (aproximadamente 8,2 mil millones) almacenado en formato `safetensors`, con un tamano de repositorio de 16,4 GB, lo que es coherente con pesos en precision BF16/FP16 (8,19 mil millones x 2 bytes). El identificador y la etiqueta `qwen3` apuntan a que deriva de la familia Qwen3, y el sufijo del nombre (`sft-feedback-with-proof-repair-rl-300`) sugiere un pipeline de ajuste supervisado seguido de aprendizaje por refuerzo orientado a la reparacion de demostraciones formales.
+El modelo `formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-300` es un ajuste fino publicado en Hugging Face por el usuario `formalmathatepfl`. Segun los metadatos del repositorio, se trata de un modelo de 8.190.735.360 parametros (aproximadamente 8,2 mil millones) almacenado en formato `safetensors`, con un tamano de repositorio de 16,4 GB, lo que es coherente con pesos en precision BF16/FP16 (8,19 mil millones x 2 bytes). El identificador y la etiqueta `qwen3` apuntan a que deriva de la familia Qwen3, y el sufijo del nombre (`sft-feedback-with-proof-repair-rl-300`) sugiere un pipeline de ajuste supervisado seguido de aprendizaje por refuerzo orientado a la reparacion de demostraciones formales.
 
 El interes de esta ficha es acotado: se trata de un experimento con 11 descargas y 0 likes en el momento de la consulta, sin model card publica, sin licencia declarada y sin resultados de evaluacion. No es, por tanto, un modelo listo para produccion sin una validacion previa por parte del equipo que lo adopte.
 
@@ -79,10 +79,10 @@ Las cifras siguientes son estimaciones calculadas a partir del recuento real de 
 
 | Modelo | Parametros | Contexto | Orientacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-300` | 8,19 B | no disponible | Matematicas formales / proof repair (segun nombre) | no disponible | HuggingFace, 11 descargas |
+| `formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-300` | 8,19 B | no disponible | Matematicas formales / proof repair (segun nombre) | no disponible | Hugging Face, 11 descargas |
 | Qwen3-8B (base de la familia indicada en las etiquetas) | 8,2 B | 32.768 tokens nativos, ampliables con YaRN (dato de la documentacion publica de Qwen3, no confirmado para este checkpoint) | Modelo generalista con modo de razonamiento | Apache 2.0 (modelo base) | Ampliamente desplegado |
-| DeepSeek-Prover-V1.5-RL | 7 B | no disponible en esta ficha | Demostracion formal en Lean 4 | Licencia propia de DeepSeek (no verificada aqui) | Publico en HuggingFace |
-| Qwen2.5-Math-7B-Instruct | 7 B | 4.096 tokens nativos | Matematicas en lenguaje natural | no verificada en esta ficha | Publico en HuggingFace |
+| DeepSeek-Prover-V1.5-RL | 7 B | no disponible en esta ficha | Demostracion formal en Lean 4 | Licencia propia de DeepSeek (no verificada aqui) | Publico en Hugging Face |
+| Qwen2.5-Math-7B-Instruct | 7 B | 4.096 tokens nativos | Matematicas en lenguaje natural | no verificada en esta ficha | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos de este checkpoint, por lo que la comparativa se limita a parametros, formato de publicacion y orientacion tematica.
 
@@ -101,6 +101,6 @@ No se dispone de datos de rendimiento comparativos de este checkpoint, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-300
+- Modelo en Hugging Face: https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-300
 - Resultado de busqueda web consultado (sin relacion con el modelo): https://www.paypal-community.com/t5/Configurar-mi-cuenta/Confirmaci%C3%B3n-de-tarjeta/td-p/1498446
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

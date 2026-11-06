@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/piotrekwitek/ppocr-v6-small-mlx
+- Hugging Face: https://huggingface.co/piotrekwitek/ppocr-v6-small-mlx
 - PaddleOCR (upstream): https://github.com/PaddlePaddle/PaddleOCR
 - PP-LCNet_x0_25_textline_ori_onnx (origen del clasificador de orientación): https://huggingface.co/PaddlePaddle/PP-LCNet_x0_25_textline_ori_onnx
 - MLX (framework de Apple): https://github.com/ml-explore/mlx

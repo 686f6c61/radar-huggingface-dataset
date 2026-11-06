@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K-Oss 8 Mini Instruct es un modelo multimodal de instrucciones desarrollado por K-Ai (Kortex AI) y publicado en HuggingFace por el usuario Keanualfahd. Se trata de un fine-tuning de Qwen3-VL-8B-Instruct, el modelo vision-language de aproximadamente 8.800 millones de parametros de Alibaba Cloud, entrenado con QLoRA sobre las capas del modelo de lenguaje y con el vision tower congelado. Acepta entradas de texto e imagen y genera respuestas en texto en ingles, indonesio y japones.
+K-Oss 8 Mini Instruct es un modelo multimodal de instrucciones desarrollado por K-Ai (Kortex AI) y publicado en Hugging Face por el usuario Keanualfahd. Se trata de un fine-tuning de Qwen3-VL-8B-Instruct, el modelo vision-language de aproximadamente 8.800 millones de parametros de Alibaba Cloud, entrenado con QLoRA sobre las capas del modelo de lenguaje y con el vision tower congelado. Acepta entradas de texto e imagen y genera respuestas en texto en ingles, indonesio y japones.
 
 El modelo pertenece nominalmente a la familia K-Oss 8, aunque el propio autor aclara que no comparte pesos con el K-Oss 8 grande (120B totales / 12B activos, basado en NVIDIA Nemotron 3.5 Super VL) ni deriva de el por destilacion: solo comparte nombre, objetivos y foco linguistico. El repositorio contiene los pesos fusionados en 16 bits, con un tamano de 4,9 GB.
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Keanualfahd/K-Oss-8-Mini-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Keanualfahd/K-Oss-8-Mini-Instruct
 - Modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Unsloth (framework de fine-tuning): https://github.com/unslothai/unsloth
 - TRL (SFTTrainer): no se proporciona enlace directo en la informacion disponible

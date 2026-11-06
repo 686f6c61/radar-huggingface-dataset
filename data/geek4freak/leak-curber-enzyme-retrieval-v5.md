@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Enfoque | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Leak CURBER v5 | Ensemble MLP + retrieval kNN sobre huellas de reacción | Número EC (L1-L4) | MIT | HuggingFace, CPU-only |
+| Leak CURBER v5 | Ensemble MLP + retrieval kNN sobre huellas de reacción | Número EC (L1-L4) | MIT | Hugging Face, CPU-only |
 | CLIPZyme (Mikhael et al., ICML 2024) | Referencia citada por el autor; no se dispone de detalles en la información | no disponible | no disponible | no disponible |
 | Horizyn (Rocks et al., PNAS 2026) | Referencia citada por el autor; no se dispone de detalles | no disponible | no disponible | no disponible |
 | CARE/CREEP (Yang et al., 2025) | Referencia citada por el autor; no se dispone de detalles | no disponible | no disponible | no disponible |
@@ -94,7 +94,7 @@ No se dispone de datos comparativos de parámetros, contexto ni rendimiento entr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v5
+- Hugging Face: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v5
 - CLIPZyme (Mikhael et al., ICML 2024): referencia citada en la model card, sin URL proporcionada
 - Horizyn (Rocks et al., PNAS 2026): referencia citada en la model card, sin URL proporcionada
 - CARE/CREEP (Yang et al., 2025): referencia citada en la model card, sin URL proporcionada

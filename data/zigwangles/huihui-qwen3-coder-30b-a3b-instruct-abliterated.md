@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated (zigwangles) | 30.532.122.624 totales, ~3B activos | MoE (qwen3_moe) | no disponible | en | Apache 2.0 | Repositorio en HuggingFace, 0 descargas, variante en Ollama |
+| Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated (zigwangles) | 30.532.122.624 totales, ~3B activos | MoE (qwen3_moe) | no disponible | en | Apache 2.0 | Repositorio en Hugging Face, 0 descargas, variante en Ollama |
 | Qwen/Qwen3-Coder-30B-A3B-Instruct (modelo base) | 30.532.122.624 totales, ~3B activos | MoE (qwen3_moe) | no disponible en la informacion proporcionada | no disponible | Apache 2.0 | Modelo oficial de Qwen |
 | huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated (origen) | Mismo modelo base | MoE (qwen3_moe) | no disponible | en | Apache 2.0 | Repositorio del proyecto huihui-ai |
 | Otras alternativas de codigo del mismo rango | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos suficientes en la informacion proporcionada para establecer una comparativa con modelos de otros fabricantes |

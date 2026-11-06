@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_ministral-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_ministral-8b_seed42
 - Herramienta Tinker (usada para el entrenamiento): https://thinkingmachines.ai/tinker/
 - Modelo base `openai/gpt-oss-20b`: documentación en OpenAI (https://developers.openai.com/api/docs/models/gpt-oss-20b)

@@ -61,5 +61,5 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manojred/test-tts
+- Repositorio Hugging Face: https://huggingface.co/manojred/test-tts
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este artefacto en los resultados de búsqueda.

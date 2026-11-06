@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario advaitsharma, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el concepto de "OCR Freeform". Según la model card, se trata de un documento de trabajo que registra el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y una comparación propuesta con líneas base, todo ello antes de que se reporte ningún resultado de benchmark.
+Este repositorio de Hugging Face, publicado por el usuario advaitsharma, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el concepto de "OCR Freeform". Según la model card, se trata de un documento de trabajo que registra el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y una comparación propuesta con líneas base, todo ello antes de que se reporte ningún resultado de benchmark.
 
 El repositorio incluye únicamente dos archivos: `review.md`, que es el artefacto principal con la nota completa, y `README.md`, que es la documentación. No hay pesos de modelo, código de inferencia, ni resultados experimentales. El número de parámetros indicado (24.832) corresponde probablemente al tamaño de los archivos de texto, no a un modelo real. La licencia es MIT, pero se advierte que los términos de las fuentes de datos externas deben revisarse por separado.
 
@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo y no existe una categoria compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/advaitsharma/survey-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/advaitsharma/survey-ocr-freeform
 - Articulo sobre extraccion automatizada de datos de facturas con LLM y OCR (arXiv): https://arxiv.org/abs/2511.05547
 - Guia de modelos OCR open source 2025 (E2E Networks): https://www.e2enetworks.com/blog/complete-guide-open-source-ocr-models-2025
 - Leaderboard de LLMs self-hosted (referencia general, no directamente relacionada): https://onyx.app/self-hosted-llm-leaderboard

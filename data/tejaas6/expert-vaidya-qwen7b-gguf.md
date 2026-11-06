@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Expert-Vaidya-Qwen7B-GGUF es un modelo de lenguaje publicado en HuggingFace por el usuario tejaas6, distribuido exclusivamente en formato GGUF y etiquetado como conversacional. El nombre del repositorio sugiere que se trata de un ajuste (fine-tuning) orientado a un dominio experto concreto —probablemente el ámbito médico o ayurvédico, dado el término "Vaidya"— construido sobre una base de la familia Qwen de aproximadamente 7B de parámetros. El recuento real de parámetros en safetensors es de 7.615.616.512 (unos 7,6 mil millones), cifra coherente con las arquitecturas Qwen de 7B. No obstante, ni la model card ni los resultados de búsqueda disponibles confirman el proceso de entrenamiento, el dataset ni el modelo base exacto.
+Expert-Vaidya-Qwen7B-GGUF es un modelo de lenguaje publicado en Hugging Face por el usuario tejaas6, distribuido exclusivamente en formato GGUF y etiquetado como conversacional. El nombre del repositorio sugiere que se trata de un ajuste (fine-tuning) orientado a un dominio experto concreto —probablemente el ámbito médico o ayurvédico, dado el término "Vaidya"— construido sobre una base de la familia Qwen de aproximadamente 7B de parámetros. El recuento real de parámetros en safetensors es de 7.615.616.512 (unos 7,6 mil millones), cifra coherente con las arquitecturas Qwen de 7B. No obstante, ni la model card ni los resultados de búsqueda disponibles confirman el proceso de entrenamiento, el dataset ni el modelo base exacto.
 
 La relevancia de este modelo radica en su empaquetado en GGUF, un formato optimizado para inferencia en CPU y GPU de gama media mediante llama.cpp y sus derivados (Ollama, LM Studio, etc.). Esto permite desplegar un modelo de 7,6B parámetros en hardware de consumo, algo clave para entornos con recursos limitados o para aplicaciones de nicho que requieren ejecución local. El repositorio ocupa 4,7 GB, lo que confirma que los pesos incluidos corresponden a cuantizaciones de baja precisión (probablemente en el rango Q4-Q5).
 
@@ -31,7 +31,7 @@ Se desconoce tambien si el modelo incorpora innovaciones tecnicas como decodific
 
 - Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que esta preparado para interacciones de tipo dialogo multi-turno.
 - Especializacion de dominio (hipotesis): el nombre "Vaidya" (termino sanscrito para medico o sanador) sugiere un ajuste orientado a contenido medico, ayurvedico o de salud, si bien esto no esta confirmado en la informacion disponible.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede desplegarse a traves de infraestructuras de inferencia compatibles con HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede desplegarse a traves de infraestructuras de inferencia compatibles con Hugging Face.
 - Razonamiento, codigo, matematicas y vision: no disponible (no se documenta ninguna de estas capacidades).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -96,6 +96,6 @@ No se dispone de modelos comparables especificos del mismo dominio (medico o ayu
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/tejaas6/Expert-Vaidya-Qwen7B-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/tejaas6
+- Hugging Face (repositorio del modelo): https://huggingface.co/tejaas6/Expert-Vaidya-Qwen7B-GGUF
+- Perfil del autor en Hugging Face: https://huggingface.co/tejaas6
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web. Los resultados devueltos corresponden a enlaces genericos de Reddit (https://www.reddit.com/) sin relacion con el modelo.

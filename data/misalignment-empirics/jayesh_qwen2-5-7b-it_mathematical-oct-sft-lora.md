@@ -79,8 +79,8 @@ No se han identificado en la informacion proporcionada otros adaptadores de *mod
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jayesh_qwen2.5-7b-it_mathematical-oct-sft-lora` | Adaptador LoRA r=64 sobre 7,61B | Heredado del base (no declarado) | Adaptador PEFT (SFT de comportamiento) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen2.5-7B-Instruct` | 7,61B | 32.768 tokens (131.072 con YaRN) | Modelo completo, decoder-only | Apache-2.0 | HuggingFace, ampliamente desplegado |
+| `jayesh_qwen2.5-7b-it_mathematical-oct-sft-lora` | Adaptador LoRA r=64 sobre 7,61B | Heredado del base (no declarado) | Adaptador PEFT (SFT de comportamiento) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen2.5-7B-Instruct` | 7,61B | 32.768 tokens (131.072 con YaRN) | Modelo completo, decoder-only | Apache-2.0 | Hugging Face, ampliamente desplegado |
 | Otros adaptadores de personaje comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,11 +93,11 @@ No se han identificado en la informacion proporcionada otros adaptadores de *mod
 - Idiomas no declarados: no puede garantizarse el comportamiento del adaptador fuera de los idiomas presentes en los datos de entrenamiento (constitución y dataset en su mayoría en inglés).
 - Longitud de contexto de entrenamiento limitada a 3.072 tokens: el comportamiento implantado puede degradarse más allá de esa longitud aunque el base soporte ventanas mayores.
 - Metadatos inconsistentes: el repositorio lleva etiquetas de modelo base duplicadas y no declara licencia ni idiomas; conviene verificar la integridad del adaptador antes de reutilizarlo.
-- Fecha de creación del repositorio atípica (2026-09-18 segun los metadatos de HuggingFace): conviene comprobar la procedencia si se integra en una cadena de suministro.
+- Fecha de creación del repositorio atípica (2026-09-18 segun los metadatos de Hugging Face): conviene comprobar la procedencia si se integra en una cadena de suministro.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-oct-sft-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-oct-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data
 - Dataset del profesor (OpenCharacterTraining): https://huggingface.co/maius/OpenCharacterTraining-data

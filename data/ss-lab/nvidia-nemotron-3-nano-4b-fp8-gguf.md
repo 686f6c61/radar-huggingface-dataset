@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ss-lab/NVIDIA-Nemotron-3-Nano-4B-FP8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ss-lab/NVIDIA-Nemotron-3-Nano-4B-FP8-GGUF
 - Modelo base (Unsloth, FP8): https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Nano-4B-FP8
 - llama.cpp (herramienta de conversión): https://github.com/ggerganov/llama.cpp
 - No se han encontrado en la información disponible papers, blogs, demos ni repositorios adicionales del autor de esta conversión.

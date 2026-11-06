@@ -20,7 +20,7 @@ Es importante remarcar que no es un modelo generativo: no hay plantilla de chat 
 | Idiomas soportados | 100+ idiomas según la model card del backbone mmBERT-base; lista concreta no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (MLX), acompañado de config.json y tokenizer |
-| Tamano en disco | ~163 MB (el repositorio de HuggingFace ocupa 0,2 GB) |
+| Tamano en disco | ~163 MB (el repositorio de Hugging Face ocupa 0,2 GB) |
 | Capas / dimension oculta | 22 capas, 768 dimensiones ocultas |
 | Libreria | mlx (mlx-embeddings) |
 | Pipeline declarado | feature-extraction |
@@ -74,7 +74,7 @@ La propia model card matiza que, agregando todas las combinaciones de checkpoint
 
 ## Requisitos de hardware
 
-- Pesos en disco: ~163 MB (repositorio de 0,2 GB en HuggingFace).
+- Pesos en disco: ~163 MB (repositorio de 0,2 GB en Hugging Face).
 - VRAM/unified memory estimada para inferencia: no publicada de forma explícita. Partiendo de los 306,9 M de parámetros en MXFP4 con group size 32, los pesos ocupan del orden de 0,16 GB, a lo que se suman activaciones y buffers para secuencias de hasta 1024 tokens; el consumo agregado debería mantenerse muy por debajo de 1 GB.
 - GPU recomendadas: no aplica en el sentido habitual; el destino es Apple Silicon con memoria unificada. No hay datos publicados para A100, H100 o RTX 4090 en este formato.
 - Compatibilidad con GPU de consumo: el formato MLX no se ejecuta en GPUs NVIDIA. Para usar CUDA habría que reconvertir los pesos a PyTorch u otro runtime, algo que este repositorio no ofrece.
@@ -107,7 +107,7 @@ La propia model card matiza que, agregando todas las combinaciones de checkpoint
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP4
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Encoder multilingüe upstream: https://huggingface.co/convaiinnovations/laya-multilingual/tree/main
 - Variante MXFP8 multilingüe: https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP8

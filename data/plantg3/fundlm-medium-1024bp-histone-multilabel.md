@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FunDLM-Medium-1024bp-Histone-Multilabel | Caduceus (Mamba-2 bidireccional, RCPS) + LoRA | 471M (base) + adaptador | 1.024 pb | Clasificación multi-etiqueta de 3 marcas de histona | no disponible | HuggingFace (repo de 1,0 GB) |
-| gnikesh/FunDLM-Medium-1024bp | Caduceus (Mamba-2 bidireccional, RCPS) | 471M | 1.024 pb | Modelo de lenguaje de ADN fúngico (base) | no disponible | HuggingFace |
+| FunDLM-Medium-1024bp-Histone-Multilabel | Caduceus (Mamba-2 bidireccional, RCPS) + LoRA | 471M (base) + adaptador | 1.024 pb | Clasificación multi-etiqueta de 3 marcas de histona | no disponible | Hugging Face (repo de 1,0 GB) |
+| gnikesh/FunDLM-Medium-1024bp | Caduceus (Mamba-2 bidireccional, RCPS) | 471M | 1.024 pb | Modelo de lenguaje de ADN fúngico (base) | no disponible | Hugging Face |
 | PlantCAD2 | no disponible en la información proporcionada | no disponible | no disponible | Genómica de plantas | no disponible | GitHub (referenciado para instalación) |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-Histone-Multilabel
+- Modelo en Hugging Face: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-Histone-Multilabel
 - Modelo base: https://huggingface.co/gnikesh/FunDLM-Medium-1024bp
 - Repositorio FunDLM (script de fine-tuning y predicción): https://github.com/PlantG3/funDLM/blob/main/src/finetune/lora_fine_tune.py
 - Guía de instalación de PlantCAD2 (referenciada para el entorno): https://github.com/plantcad/plantcad/blob/main/docs/local-install.md

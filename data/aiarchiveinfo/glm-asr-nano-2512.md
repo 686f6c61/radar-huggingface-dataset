@@ -82,10 +82,10 @@ Nota: los numeros anteriores proceden del autor del modelo; no se han verificado
 
 | Modelo | Parametros | Idiomas | Licencia | Contexto/observaciones | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-ASR-Nano-2512 | 2,26B reales (1,5B declarados) | en, zh + dialectos (cantonés) | MIT | ASR seq2seq; robustez en voz baja y dialectos | HuggingFace (original y espejo) |
-| OpenAI Whisper large-v3 | ~1,55B | multilingue (~99 idiomas) | MIT | Referencia abierta; menor especializacion en dialectos chinos segun la model card | HuggingFace / OpenAI |
-| OpenAI Whisper large-v3-turbo | ~809M | multilingue | MIT | Version recortada y mas rapida de Whisper | HuggingFace / OpenAI |
-| Otros ASR chinos (SenseVoice, Paraformer) | no disponible | zh / en segun variante | no disponible | Comparativa de WER exacta no disponible en la informacion proporcionada | HuggingFace / ModelScope |
+| GLM-ASR-Nano-2512 | 2,26B reales (1,5B declarados) | en, zh + dialectos (cantonés) | MIT | ASR seq2seq; robustez en voz baja y dialectos | Hugging Face (original y espejo) |
+| OpenAI Whisper large-v3 | ~1,55B | multilingue (~99 idiomas) | MIT | Referencia abierta; menor especializacion en dialectos chinos segun la model card | Hugging Face / OpenAI |
+| OpenAI Whisper large-v3-turbo | ~809M | multilingue | MIT | Version recortada y mas rapida de Whisper | Hugging Face / OpenAI |
+| Otros ASR chinos (SenseVoice, Paraformer) | no disponible | zh / en segun variante | no disponible | Comparativa de WER exacta no disponible en la informacion proporcionada | Hugging Face / ModelScope |
 
 No se dispone de cifras de WER comparativas verificadas entre estos modelos en la informacion proporcionada; la unica afirmacion concreta es la del autor, que situa a GLM-ASR-Nano por delante de Whisper V3 y con el menor error medio (4,10) entre modelos abiertos comparables.
 
@@ -103,7 +103,7 @@ No se dispone de cifras de WER comparativas verificadas entre estos modelos en l
 
 ## Enlaces
 
-- Modelo espejo en HuggingFace: https://huggingface.co/AIArchiveInfo/GLM-ASR-Nano-2512
+- Modelo espejo en Hugging Face: https://huggingface.co/AIArchiveInfo/GLM-ASR-Nano-2512
 - Modelo original: https://huggingface.co/zai-org/GLM-ASR-Nano-2512
 - Revision archivada del original: https://huggingface.co/zai-org/GLM-ASR-Nano-2512/tree/61ba4e0b3309b6656edea3e93e419f7bd5c61957
 - Repositorio GitHub: https://github.com/zai-org/GLM-ASR

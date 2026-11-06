@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara
+- Modelo en Hugging Face: https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio Heretic (original): https://github.com/p-e-w/heretic
 - Fork custom de Heretic usado: https://github.com/timrohrbaugh/heretic

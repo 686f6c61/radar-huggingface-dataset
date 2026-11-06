@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UzASR-CTC-220M es un modelo de reconocimiento automático del habla (ASR) especializado en uzbeko, desarrollado por el usuario rustam1221 y publicado en HuggingFace con acceso restringido. Se trata de un fine-tuning del modelo ai-sage/GigaAM-Multilingual, una base multilingüe de la familia GigaAM, adaptada mediante CTC (Connectionist Temporal Classification) para transcribir audio en uzbeko, incluyendo puntuación. El modelo tiene 220.750.027 parámetros y se distribuye en formato safetensors para la librería transformers.
+UzASR-CTC-220M es un modelo de reconocimiento automático del habla (ASR) especializado en uzbeko, desarrollado por el usuario rustam1221 y publicado en Hugging Face con acceso restringido. Se trata de un fine-tuning del modelo ai-sage/GigaAM-Multilingual, una base multilingüe de la familia GigaAM, adaptada mediante CTC (Connectionist Temporal Classification) para transcribir audio en uzbeko, incluyendo puntuación. El modelo tiene 220.750.027 parámetros y se distribuye en formato safetensors para la librería transformers.
 
 El modelo resuelve un problema concreto: la escasez de sistemas ASR de calidad para uzbeko, un idioma de bajos recursos con más de 30 millones de hablantes. Al partir de una base multilingüe ya entrenada y hacer fine-tuning sobre manifiestos específicos de uzbeko (dataset rustam1221/uzbek-asr-train-manifests), el autor busca obtener un rendimiento competitivo en habla espontánea, un escenario más difícil que el habla leída por sus pausas, disfluencias y variabilidad acústica.
 
@@ -70,15 +70,15 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UzASR-CTC-220M | 220,75M | no disponible | WER 9,43 % / CER 2,96 % (benchmark propio) | uzbek-asr-commercial (restringida) | HuggingFace, acceso gated |
-| ai-sage/GigaAM-Multilingual (modelo base) | no disponible en la información | no disponible | no disponible | no disponible | HuggingFace |
+| UzASR-CTC-220M | 220,75M | no disponible | WER 9,43 % / CER 2,96 % (benchmark propio) | uzbek-asr-commercial (restringida) | Hugging Face, acceso gated |
+| ai-sage/GigaAM-Multilingual (modelo base) | no disponible en la información | no disponible | no disponible | no disponible | Hugging Face |
 | Otros ASR para uzbeko | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar con alternativas específicas de ASR en uzbeko.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Licencia personalizada "uzbek-asr-commercial": es necesario revisar los términos exactos para uso comercial; no se detallan en la información disponible.
 - Sesgos conocidos: no documentados por el autor; al entrenarse sobre un dataset específico de uzbeko, puede reflejar sesgos de dominio, género, acento o registro de ese corpus.
 - Riesgo de alucinación: en ASR, el riesgo se manifiesta como sustituciones, omisiones e inserciones de palabras; el WER declarado del 9,43 % implica un margen de error no despreciable en producción.
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para comparar con alternativas específicas d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rustam1221/UzASR-CTC-220M
+- Hugging Face: https://huggingface.co/rustam1221/UzASR-CTC-220M
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-Multilingual
 - Dataset de entrenamiento: https://huggingface.co/datasets/rustam1221/uzbek-asr-train-manifests
 - Dataset de benchmark: https://huggingface.co/datasets/rustam1221/uzbek-asr-benchmark-spontaneous

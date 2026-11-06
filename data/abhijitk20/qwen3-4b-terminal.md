@@ -113,7 +113,7 @@ Nota: la comparacion con el modelo base Qwen3-4B es la mas relevante, ya que los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbhijitK20/qwen3-4b-terminal
+- Modelo en Hugging Face: https://huggingface.co/AbhijitK20/qwen3-4b-terminal
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de tool calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
 - Dataset de trazas de terminal: https://huggingface.co/datasets/mlfoundations-dev/terminal-bench-traces-local

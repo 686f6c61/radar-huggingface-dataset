@@ -72,7 +72,7 @@ No se dispone de información comparable de otros modelos de doblaje ligero en C
 
 ## Enlaces
 
-- [HuggingFace - Bbkblo/vdub-hindi-dubbing-lite](https://huggingface.co/Bbkblo/vdub-hindi-dubbing-lite)
+- [Hugging Face - Bbkblo/vdub-hindi-dubbing-lite](https://huggingface.co/Bbkblo/vdub-hindi-dubbing-lite)
 - [Modelo base: ResembleAI/Chatterbox-Multilingual-hi](https://huggingface.co/ResembleAI/Chatterbox-Multilingual-hi)
 - [Repositorio de Chatterbox (ResembleAI)](https://github.com/resemble-ai/chatterbox)
 - [Repositorio de Perth (ResembleAI)](https://github.com/resemble-ai/Perth)

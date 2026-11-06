@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AI-Cover-Maker es un pipeline de conversion de voz y generacion de covers musicales publicado en HuggingFace por el desarrollador Eddycrack864 bajo licencia MIT. No se trata de un modelo de lenguaje ni de un modelo fundacional entrenado desde cero, sino de un paquete de herramientas que orquesta tres componentes: separacion de fuentes con python-audio-separator (modelos UVR como Roformer, MDX23C, MDX-NET y VR Arch), conversion de voz con RVC a traves de Applio, y remezcla final del audio. El repositorio ocupa 8,8 GB y esta etiquetado con el pipeline `audio-to-audio`.
+AI-Cover-Maker es un pipeline de conversion de voz y generacion de covers musicales publicado en Hugging Face por el desarrollador Eddycrack864 bajo licencia MIT. No se trata de un modelo de lenguaje ni de un modelo fundacional entrenado desde cero, sino de un paquete de herramientas que orquesta tres componentes: separacion de fuentes con python-audio-separator (modelos UVR como Roformer, MDX23C, MDX-NET y VR Arch), conversion de voz con RVC a traves de Applio, y remezcla final del audio. El repositorio ocupa 8,8 GB y esta etiquetado con el pipeline `audio-to-audio`.
 
 El proyecto es una reescritura de la anterior RVC AI Cover Maker UI, construida sobre UVR5 UI, y fue creado originalmente para la comunidad AI HUB en Discord. Su propuesta de valor es la automatizacion completa del flujo: el usuario introduce una cancion (archivo o enlace) y obtiene un cover con la voz objetivo, con cacheo por etapa para evitar recalcular pasos ya procesados.
 
@@ -36,7 +36,7 @@ No hay informacion sobre datos de entrenamiento, numero de tokens, composicion d
 - Cambio de tonalidad de la cancion completa manteniendo el tempo.
 - Aplicacion de efectos vocales y mezcla final sin clipping.
 - Cacheo por etapa para iteracion rapida sobre la misma cancion.
-- Carga de modelos de voz por enlace (HuggingFace, Google Drive, enlaces directos) o subida manual.
+- Carga de modelos de voz por enlace (Hugging Face, Google Drive, enlaces directos) o subida manual.
 - Descarga de canciones desde cualquier sitio soportado por yt_dlp.
 - Procesamiento por lotes (batch covers).
 - Interfaz Gradio con 19 idiomas, temas y guardado de ajustes.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas herramientas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Eddycrack864/AI-Cover-Maker
+- Hugging Face: https://huggingface.co/Eddycrack864/AI-Cover-Maker
 - Repositorio GitHub: https://github.com/Eddycrack864/AI-Cover-Maker
 - Documentacion: https://github.com/Eddycrack864/AI-Cover-Maker/blob/main/info/docs.md
 - Solucion de problemas: https://github.com/Eddycrack864/AI-Cover-Maker/blob/main/info/troubleshooting.md

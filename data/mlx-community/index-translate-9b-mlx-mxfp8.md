@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Index-Translate-9B-MLX-mxfp8 (este modelo) | 8,95 B | no disponible | Apache 2.0 | HuggingFace, formato MLX (solo Apple Silicon) |
-| IndexTeam/Index-Translate-9B (base) | 8,95 B | no disponible | Apache 2.0 | HuggingFace, safetensors en precisión completa (~18 GB) |
-| Qwen3-8B | 8,2 B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, GGUF, vLLM, amplio ecosistema |
-| Llama 3.1 8B | 8,03 B | 128K | Llama 3.1 Community | HuggingFace, GGUF, vLLM, amplio ecosistema |
+| Index-Translate-9B-MLX-mxfp8 (este modelo) | 8,95 B | no disponible | Apache 2.0 | Hugging Face, formato MLX (solo Apple Silicon) |
+| IndexTeam/Index-Translate-9B (base) | 8,95 B | no disponible | Apache 2.0 | Hugging Face, safetensors en precisión completa (~18 GB) |
+| Qwen3-8B | 8,2 B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, GGUF, vLLM, amplio ecosistema |
+| Llama 3.1 8B | 8,03 B | 128K | Llama 3.1 Community | Hugging Face, GGUF, vLLM, amplio ecosistema |
 
 Las especificaciones de Qwen3-8B y Llama 3.1 8B corresponden a sus fichas públicas. Ambos son modelos generales de tamaño similar, no especializados en traducción, y a diferencia de este modelo sí funcionan con vLLM, llama.cpp y GPUs NVIDIA. Frente al modelo base sin cuantizar, esta versión mxfp8 ofrece la misma arquitectura con la mitad de huella de memoria, a costa de una posible pérdida mínima de precisión por la cuantización. No es posible comparar rendimiento por la ausencia de benchmarks publicados.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GENA-LM-t2t-bert-large es un modelo de lenguaje de ADN basado en la arquitectura BERT, desarrollado originalmente por el AIRI Institute y portado a HuggingFace por Taykhoom. Se trata de un modelo de tipo *masked language model* (MLM) entrenado sobre el ensamblaje T2T del genoma humano, aumentado con variantes de los proyectos 1000 Genomes y gnomAD. Su objetivo es proporcionar representaciones vectoriales de secuencias de ADN de hasta 512 tokens BPE, lo que equivale aproximadamente a 4.608 nucleótidos, para tareas de aprendizaje por transferencia en genómica.
+GENA-LM-t2t-bert-large es un modelo de lenguaje de ADN basado en la arquitectura BERT, desarrollado originalmente por el AIRI Institute y portado a Hugging Face por Taykhoom. Se trata de un modelo de tipo *masked language model* (MLM) entrenado sobre el ensamblaje T2T del genoma humano, aumentado con variantes de los proyectos 1000 Genomes y gnomAD. Su objetivo es proporcionar representaciones vectoriales de secuencias de ADN de hasta 512 tokens BPE, lo que equivale aproximadamente a 4.608 nucleótidos, para tareas de aprendizaje por transferencia en genómica.
 
 Este port minimo reproduce bit-a-bit los pesos del modelo original `AIRI-Institute/gena-lm-bert-large-t2t`, pero añade soporte para los backends de atención `sdpa` y `flash_attention_2`, que no estaban disponibles en la implementación original. La relevancia actual del modelo radica en que sigue siendo una referencia competitiva entre los modelos fundacionales de ADN de tamaño medio, con un rendimiento superior en 18 tareas genómicas frente a otras arquitecturas comparables, según el artículo de GENA-LM.
 
@@ -32,7 +32,7 @@ La implementación portada no incluye la cabeza NSP ni el pooler originales; el 
 - Masked language modeling: predice nucleotidos enmascarados, util para tareas de imputacion y analisis de variantes.
 - Extraccion de representaciones de capas intermedias: permite acceder a los hidden states de cualquiera de las 24 capas, util para transfer learning.
 - Soporte de backends de atencion eficientes: `sdpa` (PyTorch 2.0+) y `flash_attention_2`, ademas del backend `eager` bit-exacto.
-- Fine-tuning clasico de HuggingFace: se puede ajustar para tareas de clasificacion de secuencias o de tokens, aunque el modelo no incluye cabezas especificas.
+- Fine-tuning clasico de Hugging Face: se puede ajustar para tareas de clasificacion de secuencias o de tokens, aunque el modelo no incluye cabezas especificas.
 - No incluye soporte de tool calling ni de agentes; es un modelo de lenguaje de ADN de tipo encoder, no generativo.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks detallados en la informacion dispon
 - VRAM estimada para inferencia: el modelo en precision FP32 ocupa aproximadamente 1,3 GB de memoria de pesos; con cuantizacion de 8 bits se reduce a unos 340 MB y en 4 bits a unos 170 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para fp32 (por ejemplo, NVIDIA GTX 1650 o superior). Para entrenamiento o fine-tuning se recomienda una GPU con 8 GB o mas, como RTX 3070/4060 o superior.
 - Compatibilidad con GPU consumer: si, es perfectamente viable en GPUs de gama media e incluso en CPU para inferencia puntual.
-- Opciones de despliegue: se puede usar directamente con la libreria `transformers` de HuggingFace, o bien exportar a ONNX o TorchScript. No se mencionan integraciones con vLLM, llama.cpp u Ollama, dado que no es un modelo generativo.
+- Opciones de despliegue: se puede usar directamente con la libreria `transformers` de Hugging Face, o bien exportar a ONNX o TorchScript. No se mencionan integraciones con vLLM, llama.cpp u Ollama, dado que no es un modelo generativo.
 - Latencia y throughput estimados: no se dispone de mediciones concretas. En una GPU RTX 3090, una pasada de inferencia sobre una secuencia de 512 tokens tardaria del orden de 50-100 ms con backend `eager`, y menos con `flash_attention_2`.
 
 ## Comparativa con modelos similares
@@ -66,14 +66,14 @@ El modelo grande ofrece el doble de capacidad que las variantes base, lo que pue
 ## Limitaciones y advertencias
 - Contexto limitado: la ventana de 512 tokens BPE equivale a unos 4608 nucleotidos, insuficiente para analizar regiones genomicas largas de una sola vez; para secuencias mayores se requiere fragmentacion y agregacion.
 - No incluye la cabeza NSP ni el pooler originales: el modelo devuelve el backbone sin funcionalidad de clasificacion de pares de frases, por lo que para tareas de nivel de secuencia hay que implementar una cabeza propia.
-- Dependencia de `trust_remote_code`: la implementacion requiere activar `trust_remote_code=True` en HuggingFace, lo que implica ejecutar codigo personalizado no auditado por la comunidad.
+- Dependencia de `trust_remote_code`: la implementacion requiere activar `trust_remote_code=True` en Hugging Face, lo que implica ejecutar codigo personalizado no auditado por la comunidad.
 - Sesgo por datos de origen humano: el entrenamiento principal es sobre el genoma humano, por lo que su capacidad para otras especies puede ser limitada salvo fine-tuning.
 - Riesgo de alucinacion en la prediccion de variantes: como modelo MLM, puede predecir nucleotidos plausibles que no correspondan a la realidad biologica; los resultados deben validarse experimentalmente.
 - Sin soporte de tool calling ni agentes: no es un modelo generativo, no produce texto libre, solo representaciones y logits de enmascaramiento.
 - No se han publicado benchmarks numericos detallados en la informacion disponible: la afirmacion de mejor rendimiento medio en 18 tareas proviene del paper de GENA-LM, pero no se aportan datos concretos en esta ficha.
 
 ## Enlaces
-- Repositorio HuggingFace del modelo: https://huggingface.co/Taykhoom/GENA-LM-t2t-bert-large
+- Repositorio Hugging Face del modelo: https://huggingface.co/Taykhoom/GENA-LM-t2t-bert-large
 - Modelo original del AIRI Institute: https://huggingface.co/AIRI-Institute/gena-lm-bert-large-t2t
 - Coleccion GENA-LM de Taykhoom: https://huggingface.co/collections/Taykhoom/gena-lm-6a8cec0862e11d4f81d059ab
 - Repositorio GitHub del AIRI: https://github.com/AIRI-Institute/GENA_LM

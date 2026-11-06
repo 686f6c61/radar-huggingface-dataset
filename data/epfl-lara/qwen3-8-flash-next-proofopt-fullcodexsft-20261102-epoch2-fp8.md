@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch2-FP8
+- Hugging Face: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch2-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia: incluida en el repositorio como `LICENSE`
 - Model card original del base: incluida en el repositorio como `BASE_MODEL_README.md`

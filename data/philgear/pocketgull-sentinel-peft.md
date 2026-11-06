@@ -75,9 +75,9 @@ No disponible. No se han identificado en la documentación modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philgear/pocketgull-sentinel-peft
+- Modelo en Hugging Face: https://huggingface.co/philgear/pocketgull-sentinel-peft
 - Repositorio GitHub de PocketGull: https://github.com/philgear/pocketgull
-- Organización en HuggingFace: https://huggingface.co/philgear/philgear
+- Organización en Hugging Face: https://huggingface.co/philgear/philgear
 - Modelo multimodal de PocketGull (relacionado): https://huggingface.co/philgear/pocketgull-albatross-multimodal
 - DOI Zenodo (proveniencia open science): https://doi.org/10.5281/zenodo.20647514
 - Web de PocketGull: https://pocketgull.com

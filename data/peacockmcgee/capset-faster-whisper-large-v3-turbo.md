@@ -3,7 +3,7 @@
 # PeacockMcGee/capset-faster-whisper-large-v3-turbo
 
 ## Resumen
-Este repositorio de HuggingFace, publicado por el usuario PeacockMcGee, contiene una copia sin modificar de `mobiuslabsgmbh/faster-whisper-large-v3-turbo` fijada al commit `0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf`. Se trata, por tanto, de la conversión a CTranslate2 del modelo de reconocimiento automático del habla (ASR) Whisper large-v3-turbo de OpenAI, realizada originalmente por Mobius Labs. El problema que resuelve es de reproducibilidad: el panel de subtitulado Capset para After Effects descarga el modelo desde un origen inmutable, de modo que el binario no puede cambiar por debajo de la aplicación.
+Este repositorio de Hugging Face, publicado por el usuario PeacockMcGee, contiene una copia sin modificar de `mobiuslabsgmbh/faster-whisper-large-v3-turbo` fijada al commit `0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf`. Se trata, por tanto, de la conversión a CTranslate2 del modelo de reconocimiento automático del habla (ASR) Whisper large-v3-turbo de OpenAI, realizada originalmente por Mobius Labs. El problema que resuelve es de reproducibilidad: el panel de subtitulado Capset para After Effects descarga el modelo desde un origen inmutable, de modo que el binario no puede cambiar por debajo de la aplicación.
 
 No hay ningún entrenamiento nuevo ni ajuste fino: los pesos son idénticos a los del modelo convertido original, y la model card conserva el README de origen como `UPSTREAM-README.md`. Whisper large-v3-turbo es un transformer encoder-decoder seq2seq de aproximadamente 809 M de parámetros, multilingüe, que procesa audio en ventanas de 30 segundos. El repositorio ocupa 1,6 GB (un único `model.bin` de 1.617.884.929 bytes, coherente con pesos en float16) y se distribuye bajo licencia MIT.
 
@@ -94,7 +94,7 @@ No hay datos de rendimiento comparado (WER, RTF) en la información proporcionad
 - Las fechas de creación y actualización del repositorio (2026) resultan poco fiables como referencia temporal.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/PeacockMcGee/capset-faster-whisper-large-v3-turbo
+- Repositorio en Hugging Face: https://huggingface.co/PeacockMcGee/capset-faster-whisper-large-v3-turbo
 - Conversion upstream de Mobius Labs: https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo
 - Conversion CT2 del modelo completo: https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3
 - Modelo original de OpenAI (turbo): https://huggingface.co/openai/whisper-large-v3-turbo

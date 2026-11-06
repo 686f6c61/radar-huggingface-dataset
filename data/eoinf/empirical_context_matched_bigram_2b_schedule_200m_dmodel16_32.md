@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eoinf/empirical_context_matched_bigram_2b_schedule_200m_dmodel16_32 | no disponible (d_model=16) | 256 | no disponible | HuggingFace (0 descargas) |
-| eoinf (checkpoint `d_model=32` de la misma rejilla) | no disponible (d_model=32) | 256 | no disponible | HuggingFace |
-| GPT-2 small (referencia de transformer pequeño) | 124M | 1024 | MIT | HuggingFace |
+| eoinf/empirical_context_matched_bigram_2b_schedule_200m_dmodel16_32 | no disponible (d_model=16) | 256 | no disponible | Hugging Face (0 descargas) |
+| eoinf (checkpoint `d_model=32` de la misma rejilla) | no disponible (d_model=32) | 256 | no disponible | Hugging Face |
+| GPT-2 small (referencia de transformer pequeño) | 124M | 1024 | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas; la comparación anterior es meramente estructural.
 
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- [HuggingFace: eoinf/empirical_context_matched_bigram_2b_schedule_200m_dmodel16_32](https://huggingface.co/eoinf/empirical_context_matched_bigram_2b_schedule_200m_dmodel16_32)
+- [Hugging Face: eoinf/empirical_context_matched_bigram_2b_schedule_200m_dmodel16_32](https://huggingface.co/eoinf/empirical_context_matched_bigram_2b_schedule_200m_dmodel16_32)
 - Repositorio `synthetic_trigrams` (código de arquitectura y carga): no disponible como enlace directo en la información proporcionada.

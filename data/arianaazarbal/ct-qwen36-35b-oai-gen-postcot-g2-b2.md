@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-oai-gen-postcot-g2-b2 | Adaptador LoRA sobre MoE | No disponible (base 35B) | Entrenamiento a 8192 tokens | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | MoE denso en activación | 35B totales, ~3B activos según nomenclatura | No disponible | No disponible | HuggingFace |
+| ct-qwen36-35b-oai-gen-postcot-g2-b2 | Adaptador LoRA sobre MoE | No disponible (base 35B) | Entrenamiento a 8192 tokens | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | MoE denso en activación | 35B totales, ~3B activos según nomenclatura | No disponible | No disponible | Hugging Face |
 | Otros adaptadores de la misma cadena (g0, g1, otras ramas) | Adaptadores LoRA | No disponible | Entrenamiento a 8192 tokens | No disponible | No confirmado en la información disponible |
 
 No se dispone de datos de rendimiento que permitan comparar este adaptador con alternativas de la misma categoría. Los resultados de la búsqueda web realizada no contienen información relevante sobre el modelo ni sobre modelos comparables.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento que permitan comparar este adaptador con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - OpenAI Model Spec (constitución semilla de la generación 0): no disponible en la información proporcionada
 - Repositorio del programa de entrenamiento (welfare-in-ai-rnd / constitutional_training): no disponible en la información proporcionada

@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Wichtelchen-Qwen3.5-9B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Wichtelchen-Qwen3.5-9B-GGUF
 - Modelo base (safetensors): https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B
 - Cuantizaciones GGUF del modelo base (por schneewolflabs): https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B-GGUF
 - Cuantizaciones i1 (imatrix) del mismo modelo: https://huggingface.co/mradermacher/Wichtelchen-Qwen3.5-9B-i1-GGUF

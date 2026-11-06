@@ -4,7 +4,7 @@
 
 Whisper tiny Indian accent es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, desarrollado por el usuario Dan13lC. El objetivo declarado es adaptar el modelo base, entrenado originalmente por OpenAI sobre audio multilingue generico, a la transcripcion de ingles hablado con acento indio. El modelo se publica bajo licencia Apache 2.0 y esta pensado para tareas de ASR (automatic speech recognition) en ingles.
 
-Se trata de un modelo de arquitectura transformer encoder-decoder con 37.760.640 parametros totales, es decir, el tamano exacto de la variante tiny de Whisper. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors, compatibles con la libreria transformers. El modelo se ha generado con el Trainer de HuggingFace y esta etiquetado como generated_from_trainer.
+Se trata de un modelo de arquitectura transformer encoder-decoder con 37.760.640 parametros totales, es decir, el tamano exacto de la variante tiny de Whisper. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors, compatibles con la libreria transformers. El modelo se ha generado con el Trainer de Hugging Face y esta etiquetado como generated_from_trainer.
 
 La relevancia de este modelo es acotada: no es un lanzamiento de un laboratorio, sino una adaptacion de nicho sobre un dataset de ingles indio. Su interes practico reside en que demuestra el flujo de fine-tuning de Whisper sobre acentos especificos con un coste computacional muy bajo, y en que declara un WER del 9,91 % sobre el split de test del dataset indian_english, aunque ese resultado no esta verificado de forma independiente.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es acotada: no es un lanzamiento de un laboratorio,
 
 El modelo hereda la arquitectura de openai/whisper-tiny: un transformer encoder-decoder con 37,7 millones de parametros, disenado para transcripcion de audio. Whisper opera sobre espectrogramas mel de 80 canales y procesa el audio en ventanas de 30 segundos, con un tokenizer multilingue especifico para tareas de ASR y traduccion. En esta variante, el ajuste se ha realizado sobre el dataset indian_english, con el objetivo de mejorar la transcripcion de ingles con acento indio.
 
-El entrenamiento se realizo con el Trainer de HuggingFace usando AdamW con betas (0,9, 0,999) y epsilon 1e-08, learning rate de 1e-05, scheduler lineal con 500 pasos de warmup, batch de entrenamiento de 2 y batch de evaluacion de 1, semilla 42 y 2000 pasos totales. La model card reporta dos puntos de evaluacion: en el paso 1000 (epoch 1,1655) la perdida de validacion fue 0,2503 con un WER de 11,2349; en el paso 2000 (epoch 2,3310) la perdida bajo a 0,2417 y el WER a 9,9096. No se documenta composicion del dataset, numero de horas de audio, ni si hubo aumentacion de datos o tecnicas de regularizacion adicionales. Las versiones de framework declaradas son Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
+El entrenamiento se realizo con el Trainer de Hugging Face usando AdamW con betas (0,9, 0,999) y epsilon 1e-08, learning rate de 1e-05, scheduler lineal con 500 pasos de warmup, batch de entrenamiento de 2 y batch de evaluacion de 1, semilla 42 y 2000 pasos totales. La model card reporta dos puntos de evaluacion: en el paso 1000 (epoch 1,1655) la perdida de validacion fue 0,2503 con un WER de 11,2349; en el paso 2000 (epoch 2,3310) la perdida bajo a 0,2417 y el WER a 9,9096. No se documenta composicion del dataset, numero de horas de audio, ni si hubo aumentacion de datos o tecnicas de regularizacion adicionales. Las versiones de framework declaradas son Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada para inferencia: inferior a 1 GB en precision completa (37,7 millones de parametros), y del orden de unos cientos de MB con cuantizacion de 8 o 4 bits, aunque no se documentan cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU moderna es suficiente; el modelo esta pensado para entornos de bajos recursos. Funciona en CPU sin problemas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer (GTX 1050, RTX 2060, RTX 3060, RTX 4090, etc.) e incluso en Raspberry Pi y dispositivos moviles con la conversion adecuada.
-- Opciones de despliegue: transformers (libreria nativa), y en principio compatible con endpoints de HuggingFace (tag endpoints_compatible). No se documenta soporte oficial para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: transformers (libreria nativa), y en principio compatible con endpoints de Hugging Face (tag endpoints_compatible). No se documenta soporte oficial para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dan13lC/whisper-tiny_to_indian_accent_1
+- Modelo en Hugging Face: https://huggingface.co/Dan13lC/whisper-tiny_to_indian_accent_1
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper en OpenAI: https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

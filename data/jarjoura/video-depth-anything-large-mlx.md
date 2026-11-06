@@ -44,7 +44,7 @@ El modelo original fue desarrollado por ByteDance y presentado en CVPR 2025. Se 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo original reporta métricas en su página de HuggingFace, pero no se incluyen en la información proporcionada. La conversión MLX ha sido validada contra la referencia PyTorch, con un error relativo máximo de aproximadamente 1e-5 en CPU y 1% en GPU (Metal fast-math), lo que indica una alta fidelidad numérica.
+No se han publicado resultados de benchmarks en la información disponible. El modelo original reporta métricas en su página de Hugging Face, pero no se incluyen en la información proporcionada. La conversión MLX ha sido validada contra la referencia PyTorch, con un error relativo máximo de aproximadamente 1e-5 en CPU y 1% en GPU (Metal fast-math), lo que indica una alta fidelidad numérica.
 
 ## Requisitos de hardware
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Video Depth Anything (MLX) | Estimacion de profundidad en video | 384M | Secuencias de video | Apache 2.0 | HuggingFace (MLX) |
-| Video Depth Anything (PyTorch) | Estimacion de profundidad en video | 384M | Secuencias de video | Apache 2.0 | HuggingFace (PyTorch) |
-| DepthCrafter | Estimacion de profundidad en video (difusion) | No disponible | Secuencias de video | No disponible | GitHub / HuggingFace |
-| Depth Anything V2 | Estimacion de profundidad en imagen | No disponible | Imagen estatica | Apache 2.0 | HuggingFace |
+| Video Depth Anything (MLX) | Estimacion de profundidad en video | 384M | Secuencias de video | Apache 2.0 | Hugging Face (MLX) |
+| Video Depth Anything (PyTorch) | Estimacion de profundidad en video | 384M | Secuencias de video | Apache 2.0 | Hugging Face (PyTorch) |
+| DepthCrafter | Estimacion de profundidad en video (difusion) | No disponible | Secuencias de video | No disponible | GitHub / Hugging Face |
+| Depth Anything V2 | Estimacion de profundidad en imagen | No disponible | Imagen estatica | Apache 2.0 | Hugging Face |
 
 La comparación cualitativa indica que Video Depth Anything supera a DepthCrafter en velocidad de inferencia y número de parámetros, manteniendo una precisión comparable. Depth Anything V2, al ser solo para imágenes, no ofrece consistencia temporal, por lo que no es adecuado para vídeo. La versión MLX ofrece la ventaja de ejecutarse en hardware Apple sin necesidad de GPU NVIDIA.
 
@@ -76,7 +76,7 @@ La comparación cualitativa indica que Video Depth Anything supera a DepthCrafte
 
 ## Enlaces
 
-- Modelo MLX en HuggingFace: https://huggingface.co/jarjoura/video-depth-anything-large-mlx
-- Modelo original en HuggingFace: https://huggingface.co/depth-anything/Video-Depth-Anything-Large
+- Modelo MLX en Hugging Face: https://huggingface.co/jarjoura/video-depth-anything-large-mlx
+- Modelo original en Hugging Face: https://huggingface.co/depth-anything/Video-Depth-Anything-Large
 - Repositorio GitHub del proyecto: https://github.com/DepthAnything/Video-Depth-Anything
 - Página del proyecto: https://videodepthanything.github.io/

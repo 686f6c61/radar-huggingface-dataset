@@ -98,7 +98,7 @@ La comparativa de rendimiento real no es posible porque el modelo no publica eva
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/QLink-gnormplus-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/QLink-gnormplus-8B-GGUF
 - Modelo base: https://huggingface.co/Dash00/QLink-gnormplus-8B
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#QLink-gnormplus-8B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

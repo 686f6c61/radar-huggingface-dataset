@@ -74,9 +74,9 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cadrojasl/beto-ner-prostata-2026 | 109,3 M | no disponible | NER clínico en español (próstata) | MIT | HuggingFace |
-| dccuchile/bert-base-spanish-wwm-cased (BETO) | 109,3 M | no disponible | Modelo base español, sin fine-tuning NER | MIT | HuggingFace |
-| Modelos NER clínicos en español (p. ej. variantes de BETO/ RoBERTa-BNE afinadas) | ~110-125 M | no disponible | NER clínico general | variable | HuggingFace |
+| cadrojasl/beto-ner-prostata-2026 | 109,3 M | no disponible | NER clínico en español (próstata) | MIT | Hugging Face |
+| dccuchile/bert-base-spanish-wwm-cased (BETO) | 109,3 M | no disponible | Modelo base español, sin fine-tuning NER | MIT | Hugging Face |
+| Modelos NER clínicos en español (p. ej. variantes de BETO/ RoBERTa-BNE afinadas) | ~110-125 M | no disponible | NER clínico general | variable | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de los modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cadrojasl/beto-ner-prostata-2026
+- Modelo en Hugging Face: https://huggingface.co/cadrojasl/beto-ner-prostata-2026
 - Modelo base BETO: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - Documentación de `transformers` para token classification: https://huggingface.co/docs/transformers/tasks/token_classification
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

@@ -69,5 +69,5 @@ La comparativa se basa en la arquitectura subyacente; no se dispone de datos de 
 
 ## Enlaces
 
-- [HuggingFace: alst10/samuel-beckett-playwriter-gguf](https://huggingface.co/alst10/samuel-beckett-playwriter-gguf)
+- [Hugging Face: alst10/samuel-beckett-playwriter-gguf](https://huggingface.co/alst10/samuel-beckett-playwriter-gguf)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos en benchmarks estándar entre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0bserverx/Qwen3.8-Flash-Next-RVN-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/0bserverx/Qwen3.8-Flash-Next-RVN-Uncensored
 - Repositorio GGUF: https://huggingface.co/0bserverx/Qwen3.8-Flash-Next-RVN-Uncensored-GGUF
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

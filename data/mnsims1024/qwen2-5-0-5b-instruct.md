@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-Instruct es la version de 0,5 mil millones de parametros, ajustada por instrucciones, de la familia Qwen2.5 desarrollada por el equipo Qwen de Alibaba Cloud. Esta ficha corresponde a la reproduccion publicada por el usuario mnsims1024 en HuggingFace, cuyo modelo base declarado es Qwen/Qwen2.5-0.5B. El modelo resuelve tareas de generacion de texto conversacional y sigue instrucciones en ingles, con un coste computacional muy bajo que lo hace apto para entornos con recursos limitados.
+Qwen2.5-0.5B-Instruct es la version de 0,5 mil millones de parametros, ajustada por instrucciones, de la familia Qwen2.5 desarrollada por el equipo Qwen de Alibaba Cloud. Esta ficha corresponde a la reproduccion publicada por el usuario mnsims1024 en Hugging Face, cuyo modelo base declarado es Qwen/Qwen2.5-0.5B. El modelo resuelve tareas de generacion de texto conversacional y sigue instrucciones en ingles, con un coste computacional muy bajo que lo hace apto para entornos con recursos limitados.
 
 Tecnicamente es un transformer causal de 24 capas con RoPE, SwiGLU, RMSNorm, sesgo en la proyeccion QKV y embeddings atados, con 494.032.768 parametros totales (0,36B sin contar embeddings) y atencion con Grouped Query Attention (14 cabezas para Q y 2 para KV). Soporta una longitud de contexto de 32.768 tokens y generacion de hasta 8.192 tokens, aunque el material de la familia menciona soporte de hasta 128K en otros modelos de la serie.
 
@@ -18,7 +18,7 @@ Es relevante porque permite experimentar con un modelo de la familia Qwen2.5 sin
 | Parametros sin embeddings | 0,36B |
 | Longitud de contexto | 32.768 tokens (generacion de hasta 8.192 tokens); la documentacion de la familia menciona hasta 128K en otros tamanos |
 | Tipos de cuantizacion | no disponible en la informacion; pesos en safetensors (precision completa segun configuracion) |
-| Idiomas soportados | en (metadatos de HuggingFace); la model card de la familia cita mas de 29 idiomas |
+| Idiomas soportados | en (metadatos de Hugging Face); la model card de la familia cita mas de 29 idiomas |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Capas | 24 |
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mnsims1024/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | apache-2.0 | HuggingFace (repositorio de tercero) |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | apache-2.0 | HuggingFace (repositorio oficial) |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B (aprox.) | 32.768 tokens | apache-2.0 | HuggingFace (repositorio oficial) |
-| SmolLM2-360M-Instruct | 0,36B (aprox.) | no disponible en esta informacion | apache-2.0 (segun su publicacion) | HuggingFace |
+| mnsims1024/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | apache-2.0 | Hugging Face (repositorio de tercero) |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | apache-2.0 | Hugging Face (repositorio oficial) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B (aprox.) | 32.768 tokens | apache-2.0 | Hugging Face (repositorio oficial) |
+| SmolLM2-360M-Instruct | 0,36B (aprox.) | no disponible en esta informacion | apache-2.0 (segun su publicacion) | Hugging Face |
 
 Nota: los datos de modelos distintos al descrito provienen de conocimiento general de la categoria y no de la informacion proporcionada en esta busqueda; deben verificarse en sus respectivas fichas antes de usarse en una decision tecnica. No se dispone de cifras comparativas de rendimiento entre ellos.
 
@@ -92,7 +92,7 @@ Nota: los datos de modelos distintos al descrito provienen de conocimiento gener
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mnsims1024/Qwen2.5-0.5B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/mnsims1024/Qwen2.5-0.5B-Instruct
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Modelo oficial equivalente: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

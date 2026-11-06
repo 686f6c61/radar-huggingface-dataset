@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Familia | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DiscoPhon finetuned baselines (este) | SpidR + HuBERT base, 144 checkpoints | No disponible (HuBERT base ~95 M) | 12 | MIT | HuggingFace |
-| coml/spidr-vp20 | SpidR preentrenado | No disponible | No disponible | No disponible | HuggingFace |
-| coml/hubert-base-vp20 | HuBERT base preentrenado | ~95 M | No disponible | No disponible | HuggingFace |
-| coml/hubert-base-mmsulab | HuBERT base preentrenado | ~95 M | No disponible | No disponible | HuggingFace |
+| DiscoPhon finetuned baselines (este) | SpidR + HuBERT base, 144 checkpoints | No disponible (HuBERT base ~95 M) | 12 | MIT | Hugging Face |
+| coml/spidr-vp20 | SpidR preentrenado | No disponible | No disponible | No disponible | Hugging Face |
+| coml/hubert-base-vp20 | HuBERT base preentrenado | ~95 M | No disponible | No disponible | Hugging Face |
+| coml/hubert-base-mmsulab | HuBERT base preentrenado | ~95 M | No disponible | No disponible | Hugging Face |
 
 La comparativa con alternativas externas al ecosistema DiscoPhon (por ejemplo, wav2vec 2.0 o XLS-R) no esta disponible en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ La comparativa con alternativas externas al ecosistema DiscoPhon (por ejemplo, w
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coml/discophon-finetuned-baselines
+- Modelo en Hugging Face: https://huggingface.co/coml/discophon-finetuned-baselines
 - Benchmark DiscoPhon: https://benchmarks.cognitive-ml.fr/discophon/
 - Guia de baselines: https://benchmarks.cognitive-ml.fr/discophon/guide/baselines/
 - Dataset de artefactos: https://huggingface.co/datasets/coml/discophon-artifacts

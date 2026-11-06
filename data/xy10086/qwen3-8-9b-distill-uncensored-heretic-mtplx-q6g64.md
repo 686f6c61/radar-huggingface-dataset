@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K 
 - Memoria unificada recomendada: 16 GB como minimo practico; 32-48 GB para trabajar comodamente con contexto largo y vision. El modelo se probo en un Apple M5 Pro con 48 GB de memoria unificada.
 - GPU compatibles: al distribuirse en formato MLX, el modelo esta pensado para Apple Silicon (familias M). No se documenta soporte para A100, H100 ni RTX 4090 en esta conversion.
 - Cabe en GPU de consumo: no en el sentido habitual (CUDA). Si cabe en equipos Apple Silicon de gama alta con memoria unificada suficiente.
-- Opciones de despliegue: MTPLX 2.11.2 (comando `mtplx serve`, con endpoint compatible con OpenAI), MLX 0.32.2 y mlx-lm 0.31.3. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI con este repositorio, ya que no se ofrecen pesos GGUF ni safetensors estandar de HuggingFace Transformers.
+- Opciones de despliegue: MTPLX 2.11.2 (comando `mtplx serve`, con endpoint compatible con OpenAI), MLX 0.32.2 y mlx-lm 0.31.3. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI con este repositorio, ya que no se ofrecen pesos GGUF ni safetensors estandar de Hugging Face Transformers.
 - Rendimiento esperado: entre 32,42 tok/s en modo autorregresivo y hasta 71,70 tok/s con profundidad MTP 2, dependiendo de la carga. TTFT en torno a 0,13-0,16 s en chat en chino.
 - Configuracion recomendada por el autor: perfil `sustained`, profundidad MTP 2, ventana de contexto 32.768, maximo 8.192 tokens de respuesta.
 
@@ -89,8 +89,8 @@ No se han encontrado en la informacion disponible comparativas con modelos de te
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|---|
 | xy10086/Qwen3.8-9B-Distill-Uncensored-Heretic-MTPLX-Q6G64 | 9.409.812.208 | 32.768 tokens (recomendado) | Q6 affine grupo 64, MTP y vision en BF16 | Apache-2.0 | Safetensors para MLX, Apple Silicon |
-| petruhonk/Qwen3.8-9B-Distill-uncensored-heretic (modelo base) | no disponible | no disponible | no disponible | no disponible | Repositorio HuggingFace |
-| empero-ai/Qwen3.8-9B-Distill (upstream) | no disponible | no disponible | no disponible | no disponible | Repositorio HuggingFace, incluye los sidecars de preprocesado de vision |
+| petruhonk/Qwen3.8-9B-Distill-uncensored-heretic (modelo base) | no disponible | no disponible | no disponible | no disponible | Repositorio Hugging Face |
+| empero-ai/Qwen3.8-9B-Distill (upstream) | no disponible | no disponible | no disponible | no disponible | Repositorio Hugging Face, incluye los sidecars de preprocesado de vision |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No se han encontrado en la informacion disponible comparativas con modelos de te
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xy10086/Qwen3.8-9B-Distill-Uncensored-Heretic-MTPLX-Q6G64
+- Repositorio Hugging Face: https://huggingface.co/xy10086/Qwen3.8-9B-Distill-Uncensored-Heretic-MTPLX-Q6G64
 - Modelo base: https://huggingface.co/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic
 - Modelo upstream: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
 - Paper, blog o repositorio de MTPLX: no disponible en la informacion proporcionada

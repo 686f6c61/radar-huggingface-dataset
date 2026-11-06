@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Enfoque | Posiciones entrenadas | H1 | H2 | Licencia / disponibilidad |
 |---|---|---|---|---|---|---|
-| SmolVLA (este modelo, 25k) | 450 M | VLA con vision-lenguaje congelado y experto de accion | 10/10 | 2/2 | 0/2 | apache-2.0, disponible en HuggingFace |
+| SmolVLA (este modelo, 25k) | 450 M | VLA con vision-lenguaje congelado y experto de accion | 10/10 | 2/2 | 0/2 | apache-2.0, disponible en Hugging Face |
 | ACT (15k) | no disponible | Transformer de acciones (imitation learning clasico) | 8/10 | 2/2 | 0/2 | segun la comparativa del autor |
 | Diffusion Policy (36k) | no disponible | Politica de difusion para acciones | 9/10 | 2/2 | 0/2 | segun la comparativa del autor |
 | GR00T N1.7 (18k) | no disponible | Modelo fundacional robotico | 10/10 | 2/2 | 2/2 | comparado en la misma prueba |
@@ -94,7 +94,7 @@ Los parametros de ACT, Diffusion Policy y GR00T N1.7 no se detallan en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/van-i/smolvla_r2d2_to_box_bg
+- Modelo en Hugging Face: https://huggingface.co/van-i/smolvla_r2d2_to_box_bg
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/van-i/r2d2_to_box_bg_20261003_210444
 - Documentacion de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/smolvla

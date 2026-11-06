@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asdsa132dsa bajo el identificador `asdsa132dsa/MyAwesomeModel-TestRepository`. La model card del autor lo describe como un modelo de lenguaje orientado a razonamiento, programación y lógica general, con mejoras respecto a versiones previas en profundidad de razonamiento, reducción de alucinaciones y soporte de function calling. Según el texto de la propia model card, en la prueba AIME 2025 la precisión habría pasado del 70% al 87,5% entre versiones, empleando una media de 23.000 tokens por pregunta en la versión actual frente a los 12.000 de la anterior.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asdsa132dsa bajo el identificador `asdsa132dsa/MyAwesomeModel-TestRepository`. La model card del autor lo describe como un modelo de lenguaje orientado a razonamiento, programación y lógica general, con mejoras respecto a versiones previas en profundidad de razonamiento, reducción de alucinaciones y soporte de function calling. Según el texto de la propia model card, en la prueba AIME 2025 la precisión habría pasado del 70% al 87,5% entre versiones, empleando una media de 23.000 tokens por pregunta en la versión actual frente a los 12.000 de la anterior.
 
-Sin embargo, existe una contradicción importante entre los metadatos de HuggingFace y el contenido de la model card. Los tags del repositorio indican `bert` y pipeline `feature-extraction`, lo que apuntaría a un modelo encoder tipo BERT para extracción de características, mientras que el README describe un modelo generativo de razonamiento con decodificación, thinking mode y function calling. El tamano del repositorio es de 0,0 GB y no se declaran pesos, configuracion ni tokenizer asociados.
+Sin embargo, existe una contradicción importante entre los metadatos de Hugging Face y el contenido de la model card. Los tags del repositorio indican `bert` y pipeline `feature-extraction`, lo que apuntaría a un modelo encoder tipo BERT para extracción de características, mientras que el README describe un modelo generativo de razonamiento con decodificación, thinking mode y function calling. El tamano del repositorio es de 0,0 GB y no se declaran pesos, configuracion ni tokenizer asociados.
 
 El repositorio acumula 0 descargas y 0 likes, fue creado el 10 de octubre de 2026 y actualizado dos dias despues, y su nombre ("TestRepository", "MyAwesomeModel") sugiere que se trata de un repositorio de prueba o de una plantilla, mas que de un modelo listo para produccion. No se dispone de informacion verificable sobre arquitectura real, numero de parametros, contexto o datos de entrenamiento.
 
@@ -23,7 +23,7 @@ El repositorio acumula 0 descargas y 0 likes, fue creado el 10 de octubre de 202
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica verificable sobre la arquitectura del modelo. Los tags de HuggingFace apuntan a `transformers`, `pytorch`, `bert` y tarea `feature-extraction`, lo que seria coherente con un encoder bidireccional tipo BERT destinado a representaciones vectoriales. Por el contrario, la model card describe un sistema generativo conversacional con razonamiento extendido, lo que resulta incompatible con la etiqueta `feature-extraction`. Esta contradiccion no se resuelve con la informacion disponible.
+No se dispone de informacion tecnica verificable sobre la arquitectura del modelo. Los tags de Hugging Face apuntan a `transformers`, `pytorch`, `bert` y tarea `feature-extraction`, lo que seria coherente con un encoder bidireccional tipo BERT destinado a representaciones vectoriales. Por el contrario, la model card describe un sistema generativo conversacional con razonamiento extendido, lo que resulta incompatible con la etiqueta `feature-extraction`. Esta contradiccion no se resuelve con la informacion disponible.
 
 Respecto al entrenamiento, la model card menciona de forma generica "mayores recursos computacionales" y "mecanismos de optimizacion algorítmica durante el post-entrenamiento", asi como una fase de post-training que habria incrementado la profundidad de razonamiento. No se aportan cifras de tokens de entrenamiento, composicion del dataset, ni detalle sobre si se empleo RLHF, DPO u otra tecnica de alineamiento. La model card menciona tambien un modelo derivado llamado "MyAwesomeModel-Small", con arquitectura identica al base pero tokenizer compartido, sin mas especificaciones.
 
@@ -82,7 +82,7 @@ Dato adicional declarado en el texto: AIME 2025, 70% en la version previa y 87,5
 - No disponible. No se ha publicado informacion sobre tamano de parametros, por lo que no es posible estimar VRAM.
 - No disponible la recomendacion de GPU (A100, H100, RTX 4090 u otras).
 - No disponible si cabe en GPU de consumo.
-- No disponible el soporte de despliegue (vLLM, llama.cpp, Ollama, TGI u otros). Los tags solo indican compatibilidad con `transformers` y `pytorch`, y la etiqueta `endpoints_compatible` de HuggingFace.
+- No disponible el soporte de despliegue (vLLM, llama.cpp, Ollama, TGI u otros). Los tags solo indican compatibilidad con `transformers` y `pytorch`, y la etiqueta `endpoints_compatible` de Hugging Face.
 - No disponibles datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -102,5 +102,5 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asdsa132dsa/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/asdsa132dsa/MyAwesomeModel-TestRepository
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes al modelo (corresponden a Yahoo Mail y Yahoo France). No se dispone de paper, blog, repositorio de codigo ni demo oficiales verificables.

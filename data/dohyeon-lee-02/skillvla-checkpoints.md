@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SkillVLA-checkpoints es un repositorio de checkpoints de entrenamiento publicado en HuggingFace por el usuario Dohyeon-Lee-02. No se trata de un modelo empaquetado y documentado al uso, sino de un árbol de salidas de entrenamiento del proyecto SkillVLA que incluye tanto los baselines pi0.5 como los propios modelos SkillVLA. El repositorio está etiquetado como `lerobot`, `robotics` y `vision-language-action`, y se distribuye con la biblioteca LeRobot, lo que lo sitúa en el ámbito de los modelos visión-lenguaje-acción (VLA) para control robótico.
+SkillVLA-checkpoints es un repositorio de checkpoints de entrenamiento publicado en Hugging Face por el usuario Dohyeon-Lee-02. No se trata de un modelo empaquetado y documentado al uso, sino de un árbol de salidas de entrenamiento del proyecto SkillVLA que incluye tanto los baselines pi0.5 como los propios modelos SkillVLA. El repositorio está etiquetado como `lerobot`, `robotics` y `vision-language-action`, y se distribuye con la biblioteca LeRobot, lo que lo sitúa en el ámbito de los modelos visión-lenguaje-acción (VLA) para control robótico.
 
 El contenido se organiza replicando la estructura de salida del entrenamiento: `<outputs_root>/<group>/<run>/checkpoints/<step>/`, con dos subdirectorios por checkpoint, `pretrained_model/` (pesos, configuraciones de política y entrenamiento, estadísticas de normalización) y `training_state/` (optimizador, scheduler, estado del RNG y step). Esto indica que el propósito declarado es permitir inspeccionar los runs en curso o reanudarlos en otra máquina, más que servir como modelo listo para inferencia en producción.
 
@@ -76,9 +76,9 @@ La información disponible no incluye datos cuantitativos que permitan una compa
 
 | Modelo | Relación con SkillVLA-checkpoints | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SkillVLA-checkpoints | Objeto de esta ficha | no disponible | no disponible | Gemma Terms + DINOv3 License | HuggingFace, 0 descargas |
-| `lerobot/pi05_base` | Modelo base del que derivan todos los checkpoints | no disponible | no disponible | Gemma Terms of Use | HuggingFace (referenciado) |
-| `facebook/dinov3-*-pretrain-lvd1689m` | Origen de los pesos de visión incorporados en los checkpoints SkillVLA | no disponible | no disponible | DINOv3 License | HuggingFace (referenciado) |
+| SkillVLA-checkpoints | Objeto de esta ficha | no disponible | no disponible | Gemma Terms + DINOv3 License | Hugging Face, 0 descargas |
+| `lerobot/pi05_base` | Modelo base del que derivan todos los checkpoints | no disponible | no disponible | Gemma Terms of Use | Hugging Face (referenciado) |
+| `facebook/dinov3-*-pretrain-lvd1689m` | Origen de los pesos de visión incorporados en los checkpoints SkillVLA | no disponible | no disponible | DINOv3 License | Hugging Face (referenciado) |
 | Otros modelos VLA de robótica | No se dispone de datos comparativos en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ La información disponible no incluye datos cuantitativos que permitan una compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dohyeon-Lee-02/SkillVLA-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/Dohyeon-Lee-02/SkillVLA-checkpoints
 - Gemma Terms of Use (aplicables a los checkpoints derivados de `lerobot/pi05_base`): https://ai.google.dev/gemma/terms
 - Fichero de licencia del repositorio: `LICENSE.md`
 - Licencia de DINOv3 en el repositorio: `LICENSE-DINOv3.md`

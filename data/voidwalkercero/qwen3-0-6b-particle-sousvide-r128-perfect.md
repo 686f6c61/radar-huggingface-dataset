@@ -103,7 +103,7 @@ No se han encontrado otros modelos comparables con las mismas técnicas propieta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoidWalkercero/Qwen3-0.6B-Particle-SousVide-R128-Perfect
+- Modelo en Hugging Face: https://huggingface.co/VoidWalkercero/Qwen3-0.6B-Particle-SousVide-R128-Perfect
 - Perfil del autor: https://huggingface.co/VoidWalkercero
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Guía de Qwen3 (referencia general): https://insiderllm.com/guides/qwen3-complete-guide/

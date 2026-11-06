@@ -69,7 +69,7 @@ La model card no incluye métricas objetivas (MOS, WER, RTF) ni comparaciones nu
 | Modelo | Parámetros | Contexto de entrada | Idiomas | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|---|
 | Allinsama/onnx-community__Kokoro-82M-v1.0-ONNX (esta ficha) | 82 M | 512 tokens fonéticos | Inglés | Apache 2.0 | ONNX, 8 variantes de cuantización; 11 descargas, 0 likes |
-| hexgrad/Kokoro-82M (modelo base) | 82 M | No disponible en la información | Inglés | Apache 2.0 | Pesos originales en HuggingFace |
+| hexgrad/Kokoro-82M (modelo base) | 82 M | No disponible en la información | Inglés | Apache 2.0 | Pesos originales en Hugging Face |
 | onnx-community/Kokoro-82M-v1.0-ONNX (exportación de referencia) | 82 M | 512 tokens fonéticos | Inglés | Apache 2.0 | ONNX; ~803 K descargas y 258 likes según modelindex.dev |
 | Piper (VITS) | No disponible en la información | No disponible | Múltiples | No disponible en la información | ONNX, orientado a CPU |
 | Coqui XTTS-v2 | No disponible en la información | No disponible | Multilingüe | No disponible en la información | Pesos PyTorch |

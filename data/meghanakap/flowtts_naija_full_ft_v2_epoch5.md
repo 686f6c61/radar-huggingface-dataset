@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MeghanaKap/flowtts_naija_full_ft_v2_epoch5` es un modelo de generación de texto en inglés publicado en HuggingFace por el usuario MeghanaKap. Se trata de un ajuste fino (fine-tune) del modelo `YatharthS/MiraTTS`, del que hereda la arquitectura Qwen2, y está etiquetado como modelo conversacional de tipo decoder-only con 505.882.368 parámetros totales (aproximadamente 506 millones). El repositorio ocupa 2,0 GB y los pesos se distribuyen en formato safetensors.
+`MeghanaKap/flowtts_naija_full_ft_v2_epoch5` es un modelo de generación de texto en inglés publicado en Hugging Face por el usuario MeghanaKap. Se trata de un ajuste fino (fine-tune) del modelo `YatharthS/MiraTTS`, del que hereda la arquitectura Qwen2, y está etiquetado como modelo conversacional de tipo decoder-only con 505.882.368 parámetros totales (aproximadamente 506 millones). El repositorio ocupa 2,0 GB y los pesos se distribuyen en formato safetensors.
 
 El modelo se entrenó mediante SFT (supervised fine-tuning) utilizando las herramientas TRL y Unsloth, según los tags y la propia model card. El nombre del checkpoint (`flowtts_naija_full_ft_v2_epoch5`) sugiere un ajuste sobre un dataset denominado "naija", correspondiente al quinto epoch de una segunda versión del entrenamiento, aunque la model card no documenta ni la composición del dataset ni el número de tokens utilizados. El modelo base, MiraTTS, está asociado a tareas de síntesis de voz, mientras que el pipeline declarado de este checkpoint es `text-generation`, una discrepancia que no se aclara en la documentación disponible.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es fundamentalmente documental: el modelo no registr
 | Modelo base | YatharthS/MiraTTS (fine-tune) |
 | Tamano del repositorio | 2,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (HuggingFace) | 2026-09-10 |
+| Fecha de creacion (Hugging Face) | 2026-09-10 |
 | Etiquetas relevantes | transformers, safetensors, qwen2, unsloth, trl, sft, conversational, endpoints_compatible |
 
 ## Arquitectura y entrenamiento
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, los unicos datos verificables son los que aportan lo
 
 - Generacion de texto autoregresiva en ingles, segun el pipeline `text-generation` declarado en el repositorio.
 - Formato conversacional: el tag `conversational` sugiere que el ajuste SFT se realizo sobre datos de dialogo, por lo que el modelo estaria orientado a mantener intercambios de tipo chat.
-- Compatibilidad con `text-generation-inference` y con `endpoints_compatible`, lo que indica que puede servirse con la pila de TGI de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con `endpoints_compatible`, lo que indica que puede servirse con la pila de TGI de Hugging Face.
 - Capacidad de recibir ajustes finos adicionales con Unsloth/TRL, dado que se publica en formato transformers estandar.
 - Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no documentado; no hay evidencia en la model card.
@@ -70,20 +70,20 @@ Estimaciones derivadas del numero de parametros confirmado (505,9 M) y del taman
 - VRAM total recomendada: en torno a 2-4 GB en fp16 considerando pesos, cache KV y overhead de runtime para contextos moderados; el consumo exacto depende de la longitud de contexto, que no esta documentada.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090 con amplio margen). Tambien es viable en CPU con llama.cpp u Ollama tras convertir los pesos a GGUF.
 - GPUs de centro de datos: A100, H100, L40S o similares no son necesarias; el modelo esta muy por debajo de su capacidad.
-- Opciones de despliegue: HuggingFace transformers, text-generation-inference (TGI, declarado compatible), vLLM, llama.cpp y Ollama (estos dos ultimos requieren conversion previa a GGUF, ya que no se publican archivos GGUF), y endpoints gestionados de HuggingFace.
+- Opciones de despliegue: Hugging Face transformers, text-generation-inference (TGI, declarado compatible), vLLM, llama.cpp y Ollama (estos dos ultimos requieren conversion previa a GGUF, ya que no se publican archivos GGUF), y endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponible. No se han publicado mediciones y dependeran de la GPU, la precision y la longitud de contexto utilizada.
 
 ## Comparativa con modelos similares
 
-La comparacion se establece con modelos pequenos de generacion de texto de tamano comparable. Los datos de los modelos alternativos proceden de sus fichas publicas en HuggingFace; los de este modelo, de los metadatos del repositorio.
+La comparacion se establece con modelos pequenos de generacion de texto de tamano comparable. Los datos de los modelos alternativos proceden de sus fichas publicas en Hugging Face; los de este modelo, de los metadatos del repositorio.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MeghanaKap/flowtts_naija_full_ft_v2_epoch5 | 505,9 M | No disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2-0.5B | 494 M | 32.768 tokens (segun ficha publica) | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens (segun ficha publica) | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| SmolLM2-360M | 362 M | 8.192 tokens (segun ficha publica) | Apache-2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens (segun ficha publica) | Apache-2.0 | HuggingFace |
+| MeghanaKap/flowtts_naija_full_ft_v2_epoch5 | 505,9 M | No disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2-0.5B | 494 M | 32.768 tokens (segun ficha publica) | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens (segun ficha publica) | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| SmolLM2-360M | 362 M | 8.192 tokens (segun ficha publica) | Apache-2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens (segun ficha publica) | Apache-2.0 | Hugging Face |
 
 No es posible comparar rendimiento en tareas porque este checkpoint no publica ninguna evaluacion. La ventaja diferencial frente a los modelos de la tabla es unicamente el pipeline de ajuste con Unsloth y la posibilidad de reutilizar el checkpoint como base experimental; en terminos de madurez, documentacion y soporte, los modelos Qwen2.5-0.5B y SmolLM2-360M ofrecen fichas completas, evaluaciones publicadas y comunidades activas.
 
@@ -103,7 +103,7 @@ No es posible comparar rendimiento en tareas porque este checkpoint no publica n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch5
+- Modelo en Hugging Face: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch5
 - Modelo base: https://huggingface.co/YatharthS/MiraTTS
 - Unsloth (framework de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
 - Repositorio de TRL (tag del modelo): https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KayaTechAI/Qwen3-4B-SFT-fin-multitask-v3-1-minimal es un ajuste fino (fine-tune) supervisado del modelo Qwen3-4B publicado por el usuario KayaTechAI en HuggingFace. Se trata de un modelo derivado de unsloth/Qwen3-4B, la version optimizada de Qwen3-4B distribuida por Unsloth, y el entrenamiento se realizo con la libreria Unsloth, que el autor destaca por ofrecer un entrenamiento "2x faster". El nombre del repositorio sugiere un entrenamiento de tipo SFT (supervised fine-tuning) con enfoque multitarea y posible orientacion al dominio financiero ("fin"), aunque la model card no documenta el dataset, el procedimiento ni las tareas concretas.
+KayaTechAI/Qwen3-4B-SFT-fin-multitask-v3-1-minimal es un ajuste fino (fine-tune) supervisado del modelo Qwen3-4B publicado por el usuario KayaTechAI en Hugging Face. Se trata de un modelo derivado de unsloth/Qwen3-4B, la version optimizada de Qwen3-4B distribuida por Unsloth, y el entrenamiento se realizo con la libreria Unsloth, que el autor destaca por ofrecer un entrenamiento "2x faster". El nombre del repositorio sugiere un entrenamiento de tipo SFT (supervised fine-tuning) con enfoque multitarea y posible orientacion al dominio financiero ("fin"), aunque la model card no documenta el dataset, el procedimiento ni las tareas concretas.
 
 El modelo hereda las caracteristicas estructurales del modelo base Qwen3-4B: un transformer decoder-only denso de aproximadamente 4.000 millones de parametros, con licencia Apache 2.0. El fine-tune declara soporte unicamente para ingles y se distribuye en formato safetensors a traves de la libreria transformers.
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| KayaTechAI/Qwen3-4B-SFT-fin-multitask-v3-1-minimal | 4B (aprox.) | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin benchmarks ni documentacion de datos |
-| Qwen3-4B (Qwen) | 4B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, con benchmarks publicados por el autor |
-| unsloth/Qwen3-4B | 4B | Igual que Qwen3-4B | Apache 2.0 | HuggingFace | Version optimizada para fine-tuning con Unsloth |
-| Llama 3.2 3B Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa densa de tamano similar en ingles |
-| Gemma 3 4B | 4B | 128.000 tokens | Gemma Terms of Use | HuggingFace | Alternativa densa de tamano similar, multimodal en algunas variantes |
+| KayaTechAI/Qwen3-4B-SFT-fin-multitask-v3-1-minimal | 4B (aprox.) | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin benchmarks ni documentacion de datos |
+| Qwen3-4B (Qwen) | 4B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, con benchmarks publicados por el autor |
+| unsloth/Qwen3-4B | 4B | Igual que Qwen3-4B | Apache 2.0 | Hugging Face | Version optimizada para fine-tuning con Unsloth |
+| Llama 3.2 3B Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa densa de tamano similar en ingles |
+| Gemma 3 4B | 4B | 128.000 tokens | Gemma Terms of Use | Hugging Face | Alternativa densa de tamano similar, multimodal en algunas variantes |
 
 La comparacion es aproximada: no se dispone de metricas del fine-tune que permitan contrastar su rendimiento con las alternativas.
 
@@ -93,7 +93,7 @@ La comparacion es aproximada: no se dispone de metricas del fine-tune que permit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KayaTechAI/Qwen3-4B-SFT-fin-multitask-v3-1-minimal
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-4B
+- Modelo en Hugging Face: https://huggingface.co/KayaTechAI/Qwen3-4B-SFT-fin-multitask-v3-1-minimal
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-4B
 - Modelo Qwen3-4B original: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

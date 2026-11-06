@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BeardedMonster/afro-xlmr-base-masakhaner2-bbj | 277,5 M | 514 posiciones (entreno a 256) | NER en bbj (MasakhaNER 2.0) | No disponible (hereda la del base) | HuggingFace, safetensors |
-| Davlan/afro-xlmr-base | ~278 M | 514 posiciones | Modelo base sin cabeza de NER; requiere ajuste | No disponible en esta ficha | HuggingFace |
-| Davlan/afro-xlmr-large | ~560 M (no verificado en esta ficha) | 514 posiciones | Modelo base; habitualmente mejor F1 tras ajuste | No disponible en esta ficha | HuggingFace |
-| xlm-roberta-base | ~278 M | 514 posiciones | Modelo base multilingüe, sin adaptación específica a lenguas africanas | MIT según su model card (verificar) | HuggingFace |
+| BeardedMonster/afro-xlmr-base-masakhaner2-bbj | 277,5 M | 514 posiciones (entreno a 256) | NER en bbj (MasakhaNER 2.0) | No disponible (hereda la del base) | Hugging Face, safetensors |
+| Davlan/afro-xlmr-base | ~278 M | 514 posiciones | Modelo base sin cabeza de NER; requiere ajuste | No disponible en esta ficha | Hugging Face |
+| Davlan/afro-xlmr-large | ~560 M (no verificado en esta ficha) | 514 posiciones | Modelo base; habitualmente mejor F1 tras ajuste | No disponible en esta ficha | Hugging Face |
+| xlm-roberta-base | ~278 M | 514 posiciones | Modelo base multilingüe, sin adaptación específica a lenguas africanas | MIT según su model card (verificar) | Hugging Face |
 
 No hay datos de rendimiento comparado disponibles en la información proporcionada; la comparación anterior se limita a tamaño, contexto, licencia y disponibilidad.
 
@@ -86,9 +86,9 @@ No hay datos de rendimiento comparado disponibles en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/afro-xlmr-base-masakhaner2-bbj
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/afro-xlmr-base-masakhaner2-bbj
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-base
 - Referencia del corpus: MasakhaNER 2.0, Adelani et al. (2022), "MasakhaNER 2.0: Africa-centric Transfer Learning for Named Entity Recognition" (arXiv:2210.12391; no verificado en esta búsqueda).
 - Referencia del modelo base: Alabi et al. (2022), "Adapting Pre-trained Language Models to African Languages via Multilingual Adaptive Fine-Tuning" (arXiv:2204.06487; no verificado en esta búsqueda).
 - Repositorio del proyecto MasakhaNER (datos y scripts de evaluación): https://github.com/masakhane-io/masakhane-ner (no verificado en esta búsqueda).
-- Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo; los enlaces anteriores proceden de los metadatos de HuggingFace y de referencias bibliográficas.
+- Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo; los enlaces anteriores proceden de los metadatos de Hugging Face y de referencias bibliográficas.

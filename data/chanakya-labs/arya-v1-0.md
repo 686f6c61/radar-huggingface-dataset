@@ -76,9 +76,9 @@ Nota: los datos de DeepSeek-V2-Lite y Qwen2.5-7B son aproximados y provienen de 
 
 ## Enlaces
 
-- [HuggingFace: Chanakya-Labs/Arya-v1.0](https://huggingface.co/Chanakya-Labs/Arya-v1.0)
-- [HuggingFace: Aniket789/Arya (Arya-3B-MoE)](https://huggingface.co/Aniket789/Arya)
+- [Hugging Face: Chanakya-Labs/Arya-v1.0](https://huggingface.co/Chanakya-Labs/Arya-v1.0)
+- [Hugging Face: Aniket789/Arya (Arya-3B-MoE)](https://huggingface.co/Aniket789/Arya)
 - [Sitio web de ARYA Labs](https://aryalabs.io/)
 - [Sitio web de Chanakya AI](https://chanakya-ai.com/)
-- [HuggingFace: ARYA-LABS/arya-speaks-models](https://huggingface.co/ARYA-LABS/arya-speaks-models)
+- [Hugging Face: ARYA-LABS/arya-speaks-models](https://huggingface.co/ARYA-LABS/arya-speaks-models)
 - [Sitio web de Arya.ai](https://arya.ai/)

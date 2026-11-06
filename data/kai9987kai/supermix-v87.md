@@ -90,8 +90,8 @@ Sensibilidad a las cifras significativas en un paso escrito:
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Precisión paired | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| supermix-v87 | 15.291.189 | 3.934.501 | no disponible | 0,7677 | no disponible | HuggingFace |
-| supermix-v86 | no disponible | no disponible | no disponible | 0,7745 | no disponible | HuggingFace |
+| supermix-v87 | 15.291.189 | 3.934.501 | no disponible | 0,7677 | no disponible | Hugging Face |
+| supermix-v86 | no disponible | no disponible | no disponible | 0,7745 | no disponible | Hugging Face |
 
 No se han identificado otros modelos comparables en la información proporcionada.
 
@@ -111,6 +111,6 @@ No se han identificado otros modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kai9987kai/supermix-v87
+- Hugging Face: https://huggingface.co/Kai9987kai/supermix-v87
 - GitHub: https://github.com/kai9987kai/Supermix
-- Perfil del autor en HuggingFace: https://huggingface.co/Kai9987kai
+- Perfil del autor en Hugging Face: https://huggingface.co/Kai9987kai

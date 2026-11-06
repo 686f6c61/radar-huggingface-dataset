@@ -38,7 +38,7 @@ No se especifican en la información disponible el número de tokens de entrenam
 - Contexto largo nativo de 1M de tokens vía YaRN, orientado a análisis de repositorios y documentos extensos.
 - Decodificación especulativa integrada (MTP) con dos tokens por pasada.
 - Sin salvaguardas de rechazo tras la abliteración: responde a peticiones que un modelo alineado rechazaría.
-- Nota: la pipeline declarada en HuggingFace es `image-text-to-text`, pero la model card no documenta torre de visión ni capacidades multimodales; la discrepancia no está resuelta en la información disponible.
+- Nota: la pipeline declarada en Hugging Face es `image-text-to-text`, pero la model card no documenta torre de visión ni capacidades multimodales; la discrepancia no está resuelta en la información disponible.
 
 ## Casos de uso
 
@@ -81,8 +81,8 @@ Advertencia metodológica: las filas ARC-C y ARC-E comparan recuentos absolutos 
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Tea420, MLX oQ4e) | 27,78 B | 1.048.576 | MLX safetensors, 4 bits mixtos, 17,0 GB | Apache 2.0 | HuggingFace, 0 descargas |
-| `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU` (base) | 27,78 B | 262.144 nativo (extensible) | Pesos originales (no especificado en la información disponible) | Apache 2.0 | HuggingFace |
+| Este checkpoint (Tea420, MLX oQ4e) | 27,78 B | 1.048.576 | MLX safetensors, 4 bits mixtos, 17,0 GB | Apache 2.0 | Hugging Face, 0 descargas |
+| `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU` (base) | 27,78 B | 262.144 nativo (extensible) | Pesos originales (no especificado en la información disponible) | Apache 2.0 | Hugging Face |
 | Alternativas de la misma categoría con datos publicados | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 El checkpoint base comparte pesos con esta versión, pero no incluye el escalado YaRN a 1M ni la cuantización oQ4e, por lo que su huella en memoria será mayor (los 27,78 B parámetros en bf16 equivalen a unos 55,6 GB calculados a partir del recuento). No se dispone en la información proporcionada de datos verificables de otros modelos de 27B–32B con los que establecer una comparación cuantitativa fiable.
@@ -103,11 +103,11 @@ El checkpoint base comparte pesos con esta versión, pero no incluye el escalado
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/Tea420/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e-1M
+- Hugging Face (este checkpoint): https://huggingface.co/Tea420/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e-1M
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Perfil del autor del merge: https://huggingface.co/DavidAU
 - Runtime Anvil: https://github.com/Solstice-Labs/anvil
 - Repositorio de Project Heretic: no disponible
 - Paper o informe técnico: no disponible
 - Demo o espacio de inferencia: no disponible
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

@@ -92,7 +92,7 @@ No se dispone de modelos comparables del mismo tamano y especializacion en RAG p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oddadmix/Nawah-50M-RAG-Support-2K
+- Modelo en Hugging Face: https://huggingface.co/oddadmix/Nawah-50M-RAG-Support-2K
 - Demo interactiva (Space): https://huggingface.co/spaces/oddadmix/Nawah-50M-RAG-Support-Demo
 - Modelo base: https://huggingface.co/oddadmix/50M-2048-Emhotob
 - Perfil de GitHub del autor: https://github.com/Oddadmix

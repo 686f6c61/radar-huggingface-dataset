@@ -97,7 +97,7 @@ El autor declara que este repositorio es un reemplazo directo de la referencia d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-unsloth-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-unsloth-bnb-4bit
 - Modelo base: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge
 - Referencia de Unsloth: https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/OfflineBase/Glimmer-30B-2026-Knowledge-Data

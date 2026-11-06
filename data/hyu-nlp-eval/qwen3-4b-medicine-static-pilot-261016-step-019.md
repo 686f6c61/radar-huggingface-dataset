@@ -31,7 +31,7 @@ Respecto al entrenamiento, la informacion disponible se limita a los metadatos d
 
 Las capacidades concretas de este checkpoint no estan documentadas por el autor. Dado que deriva del modelo base Qwen3-4B-Instruct-2507, se le presuponen las capacidades heredadas de este, pero no se ha verificado ninguna de ellas en la informacion proporcionada:
 
-- Generacion de texto conversacional (etiqueta `conversational` en HuggingFace).
+- Generacion de texto conversacional (etiqueta `conversational` en Hugging Face).
 - Generacion de texto como tarea principal (`pipeline_tag: text-generation`).
 - Compatibilidad con Text Generation Inference (TGI) y con endpoints de inferencia (`text-generation-inference`, `endpoints_compatible`).
 - Razonamiento, codigo, matematicas y capacidades multilingues: presumiblemente heredadas del modelo base, pero no verificadas ni documentadas para este checkpoint.
@@ -76,7 +76,7 @@ Los datos de los modelos alternativos proceden de su documentacion publica; no s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-019 | 4,02B | no disponible (base: 262.144) | Apache 2.0 | HuggingFace, sin descargas ni likes | Checkpoint intermedio de un pilotaje |
+| qwen3-4b-medicine-static-pilot-261016-step-019 | 4,02B | no disponible (base: 262.144) | Apache 2.0 | Hugging Face, sin descargas ni likes | Checkpoint intermedio de un pilotaje |
 | Qwen/Qwen3-4B-Instruct-2507 | 4,0B (aprox.) | 262.144 tokens (segun ficha del base) | Apache 2.0 | Ampliamente disponible | Modelo base sin ajustar, en modo no-thinking |
 | Llama-3.2-3B-Instruct | 3,2B (aprox.) | 128.000 tokens (segun ficha oficial) | Llama 3.2 Community License | Ampliamente disponible | Requiere aceptar terminos de Meta |
 | Qwen2.5-3B-Instruct | 3,1B (aprox.) | 32.768 tokens (segun ficha oficial) | Apache 2.0 (salvo el modelo de 3B, con Qwen Research License) | Ampliamente disponible | Contexto mas corto y generacion anterior |
@@ -97,7 +97,7 @@ Los datos de los modelos alternativos proceden de su documentacion publica; no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-019
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-019
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Perfil del autor en HuggingFace: https://huggingface.co/HYU-NLP-EVAL
+- Perfil del autor en Hugging Face: https://huggingface.co/HYU-NLP-EVAL
 - Paper, repositorio de codigo, demo o blog del modelo: no disponible (la busqueda web no devolvio enlaces tecnicos relacionados)

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Arquitectura | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | AnonMLuser/remdm-planner-minihack (este) | ReMDM (difusión discreta) | DAgger + BC, 5,65M pasos de entorno | MIT | Repo con código + checkpoints |
-| MathisW78/remdm-minihack | ReMDM (difusión discreta) | no disponible | no disponible | Repo HuggingFace |
-| remdm-minihack/ReMDM-MiniHack | ReMDM (difusión discreta) | no disponible | no disponible | Repo HuggingFace |
+| MathisW78/remdm-minihack | ReMDM (difusión discreta) | no disponible | no disponible | Repo Hugging Face |
+| remdm-minihack/ReMDM-MiniHack | ReMDM (difusión discreta) | no disponible | no disponible | Repo Hugging Face |
 
 No hay datos públicos de rendimiento comparativo en benchmarks estándar (MMLU, HumanEval, etc.) porque este modelo no es un LLM ni un agente de propósito general; su dominio es específico de MiniHack. Los tres repositorios implementan la misma idea de ReMDM aplicada a MiniHack, pero el de AnonMLuser es el artefacto anónimo del paper en revisión, con más detalle de entrenamiento.
 
@@ -78,10 +78,10 @@ No hay datos públicos de rendimiento comparativo en benchmarks estándar (MMLU,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnonMLuser/remdm-planner-minihack
+- Repositorio Hugging Face: https://huggingface.co/AnonMLuser/remdm-planner-minihack
 - Código fuente (GitHub): https://github.com/vtp5tycwm2-art/remdm-planners
-- Repositorio alternativo en HuggingFace (remdm-minihack): https://huggingface.co/remdm-minihack/ReMDM-MiniHack
-- Repositorio alternativo en HuggingFace (MathisW78): https://huggingface.co/MathisW78/remdm-minihack
+- Repositorio alternativo en Hugging Face (remdm-minihack): https://huggingface.co/remdm-minihack/ReMDM-MiniHack
+- Repositorio alternativo en Hugging Face (MathisW78): https://huggingface.co/MathisW78/remdm-minihack
 - MiniHack (GitHub): https://github.com/facebookresearch/minihack
 - MiniHack documentation: https://minihack.readthedocs.io/en/latest/index.html
 - Paper de referencia de ReMDM (arXiv): https://arxiv.org/abs/2503.00307
@@ -147,8 +147,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Arquitectura | Entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | AnonMLuser/remdm-planner-minihack | ReMDM (difusion discreta) | DAgger + BC, 5,65M pasos | 64 acciones | MIT | Repo con codigo + checkpoints |
-| MathisW78/remdm-minihack | ReMDM (difusion discreta) | no disponible | 64 acciones | no disponible | Repo HuggingFace |
-| remdm-minihack/ReMDM-MiniHack | ReMDM (difusion discreta) | no disponible | 64 acciones | no disponible | Repo HuggingFace |
+| MathisW78/remdm-minihack | ReMDM (difusion discreta) | no disponible | 64 acciones | no disponible | Repo Hugging Face |
+| remdm-minihack/ReMDM-MiniHack | ReMDM (difusion discreta) | no disponible | 64 acciones | no disponible | Repo Hugging Face |
 
 No se dispone de resultados de benchmarks publicos para comparar el rendimiento de estos modelos en tareas estandar (MMLU, HumanEval, etc.), ya que no son modelos de lenguaje generalistas sino agentes de planificacion para MiniHack. Los tres repositorios implementan la misma idea de ReMDM, pero el de AnonMLuser es el artefacto anonimo del paper en revision, con mas detalle de entrenamiento y activos de ablacion.
 
@@ -163,10 +163,10 @@ No se dispone de resultados de benchmarks publicos para comparar el rendimiento 
 
 ## Enlaces
 
-- [HuggingFace: AnonMLuser/remdm-planner-minihack](https://huggingface.co/AnonMLuser/remdm-planner-minihack)
+- [Hugging Face: AnonMLuser/remdm-planner-minihack](https://huggingface.co/AnonMLuser/remdm-planner-minihack)
 - [Codigo fuente (GitHub)](https://github.com/vtp5mtycwm2-art/remdm-planners)
-- [HuggingFace: remdm-minihack/ReMDM-MiniHack](https://huggingface.co/remdm-minihack/ReMDM-MiniHack)
-- [HuggingFace: MathisW78/remdm-minihack](https://huggingface.co/MathisW78/remdm-minihack)
+- [Hugging Face: remdm-minihack/ReMDM-MiniHack](https://huggingface.co/remdm-minihack/ReMDM-MiniHack)
+- [Hugging Face: MathisW78/remdm-minihack](https://huggingface.co/MathisW78/remdm-minihack)
 - [MiniHack (GitHub)](https://github.com/facebookresearch/minihack)
 - [Documentacion de MiniHack](https://minihack.readthedocs.io/en/latest/index.html)
 - [Paper de ReMDM (arXiv)](https://arxiv.org/abs/2503.00307)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoziAier-2B es un modelo publicado en HuggingFace por el usuario chenyumo bajo licencia Apache 2.0. En el momento de la consulta, el repositorio registra cero descargas y cero likes, y su model card se limita al bloque de metadatos de licencia, sin texto descriptivo, sin arquitectura declarada y sin documentacion tecnica adicional. La fecha de creacion y de ultima actualizacion coinciden (14 de septiembre de 2026), lo que indica que no ha habido revisiones posteriores.
+MoziAier-2B es un modelo publicado en Hugging Face por el usuario chenyumo bajo licencia Apache 2.0. En el momento de la consulta, el repositorio registra cero descargas y cero likes, y su model card se limita al bloque de metadatos de licencia, sin texto descriptivo, sin arquitectura declarada y sin documentacion tecnica adicional. La fecha de creacion y de ultima actualizacion coinciden (14 de septiembre de 2026), lo que indica que no ha habido revisiones posteriores.
 
 El unico indicio sobre su naturaleza esta en el propio identificador: el sufijo "2B" sugiere un modelo de aproximadamente 2.000 millones de parametros, una horquilla habitual para modelos densos orientados a despliegue en GPU de consumo. No obstante, esto es una inferencia a partir del nombre y no un dato confirmado por el autor en la informacion disponible.
 
@@ -25,7 +25,7 @@ La relevancia actual del modelo es, por tanto, limitada y dificil de evaluar: no
 
 No disponible. La model card no especifica si se trata de un transformer denso, una arquitectura MoE, un modelo hibrido con capas de estado recurrente ni ninguna otra variante. Tampoco se declara el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
-El unico dato estructural verificable es la licencia Apache 2.0 y la region declarada en los tags (region: us), que en HuggingFace suele indicar la ubicacion del repositorio y no una caracteristica del modelo. Para obtener informacion real habria que inspeccionar `config.json`, los indices de pesos y cualquier script de tokenizacion presente en el repositorio.
+El unico dato estructural verificable es la licencia Apache 2.0 y la region declarada en los tags (region: us), que en Hugging Face suele indicar la ubicacion del repositorio y no una caracteristica del modelo. Para obtener informacion real habria que inspeccionar `config.json`, los indices de pesos y cualquier script de tokenizacion presente en el repositorio.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No hay datos de rendimiento del modelo que permitan una comparativa real. A cont
 | MoziAier-2B | no disponible (~2B segun el identificador) | no disponible | apache-2.0 | no disponible |
 | Gemma 2 2B | ~2.600 millones | 8.192 tokens | Gemma Terms | benchmarks publicos por Google |
 | Qwen2.5-1.5B | ~1.500 millones | 32.768 tokens | Apache 2.0 | benchmarks publicos por Alibaba |
-| SmolLM2-1.7B | ~1.700 millones | 8.192 tokens | Apache 2.0 | benchmarks publicos por HuggingFace |
+| SmolLM2-1.7B | ~1.700 millones | 8.192 tokens | Apache 2.0 | benchmarks publicos por Hugging Face |
 
 No es posible establecer una comparacion funcional con ninguno de ellos porque no se dispone de ningun resultado de evaluacion de MoziAier-2B.
 
@@ -93,5 +93,5 @@ No es posible establecer una comparacion funcional con ninguno de ellos porque n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chenyumo/MoziAier-2B
+- Repositorio en Hugging Face: https://huggingface.co/chenyumo/MoziAier-2B
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web no devolvio ningun resultado relacionado con el modelo; los enlaces recuperados correspondian a articulos de fitness en frances sin ninguna conexion con el objeto de esta ficha.

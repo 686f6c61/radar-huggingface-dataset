@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pinebruiser/arch-qwen-lora es un ajuste fino (LoRA) del modelo Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario Pinebruiser en HuggingFace. Se trata de un modelo derivado de la variante cuantizada a 4 bits (bnb-4bit) de Qwen2.5-Coder-1.5B-Instruct, entrenado con la librería Unsloth, que acelera el proceso de fine-tuning. El repositorio tiene un tamano de 0.1 GB, lo que sugiere que contiene unicamente los adaptadores LoRA y no los pesos completos del modelo base.
+Pinebruiser/arch-qwen-lora es un ajuste fino (LoRA) del modelo Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario Pinebruiser en Hugging Face. Se trata de un modelo derivado de la variante cuantizada a 4 bits (bnb-4bit) de Qwen2.5-Coder-1.5B-Instruct, entrenado con la librería Unsloth, que acelera el proceso de fine-tuning. El repositorio tiene un tamano de 0.1 GB, lo que sugiere que contiene unicamente los adaptadores LoRA y no los pesos completos del modelo base.
 
 El modelo hereda la arquitectura Qwen2 (transformer decoder-only) del modelo original de Alibaba, con 1.5 mil millones de parametros y una ventana de contexto de 32.768 tokens (caracteristica de la familia Qwen2.5). El ajuste fino se ha realizado aparentemente sobre datos no especificados en la model card, que es extremadamente escasa: no detalla el dataset, el numero de tokens de entrenamiento, hiperparametros ni resultados de evaluacion.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Pinebruiser/arch-qwen-lora | 1.5B | 32.768 | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning no documentado |
-| Qwen2.5-Coder-1.5B-Instruct | 1.5B | 32.768 | Apache 2.0 | HuggingFace (ampliamente usado) | Modelo base oficial de Alibaba |
-| DeepSeek-Coder-1.3B-Instruct | 1.3B | 16.384 | DeepSeek License | HuggingFace | Alternativa centrada en codigo |
-| StarCoder2-3B | 3B | 16.384 | BigCode OpenRAIL-M | HuggingFace | Mayor tamano, licencia con restricciones |
+| Pinebruiser/arch-qwen-lora | 1.5B | 32.768 | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning no documentado |
+| Qwen2.5-Coder-1.5B-Instruct | 1.5B | 32.768 | Apache 2.0 | Hugging Face (ampliamente usado) | Modelo base oficial de Alibaba |
+| DeepSeek-Coder-1.3B-Instruct | 1.3B | 16.384 | DeepSeek License | Hugging Face | Alternativa centrada en codigo |
+| StarCoder2-3B | 3B | 16.384 | BigCode OpenRAIL-M | Hugging Face | Mayor tamano, licencia con restricciones |
 
 El modelo de Pinebruiser no aporta ventajas documentadas frente al modelo base oficial, que es mas fiable por su validacion y soporte. La comparacion con DeepSeek-Coder y StarCoder2 es orientativa, ya que no hay benchmarks del fine-tuning.
 
@@ -80,7 +80,7 @@ El modelo de Pinebruiser no aporta ventajas documentadas frente al modelo base o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pinebruiser/arch-qwen-lora
+- Modelo en Hugging Face: https://huggingface.co/Pinebruiser/arch-qwen-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sido/hina-gemma4-e2b-aggressive-litert es un artefacto experimental publicado en HuggingFace que convierte a formato LiteRT-LM un modelo derivado de Gemma 4 E2B. En concreto, parte del GGUF cuantizado IQ3_M de HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive (un finetune "uncensored" de google/gemma-4-E2B-it), desquantiza los pesos de texto a FP16, los combina con los pesos no textuales y la configuracion originales de Gemma 4 E2B-it y los recuantiza con LiteRT Torch 0.10 en formato `dynamic_wi4_afp32`. El resultado es un unico fichero `.litertlm` de 2.553.876.096 bytes pensado para ejecutarse en navegador mediante WebGPU y `@litert-lm/core`.
+Sido/hina-gemma4-e2b-aggressive-litert es un artefacto experimental publicado en Hugging Face que convierte a formato LiteRT-LM un modelo derivado de Gemma 4 E2B. En concreto, parte del GGUF cuantizado IQ3_M de HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive (un finetune "uncensored" de google/gemma-4-E2B-it), desquantiza los pesos de texto a FP16, los combina con los pesos no textuales y la configuracion originales de Gemma 4 E2B-it y los recuantiza con LiteRT Torch 0.10 en formato `dynamic_wi4_afp32`. El resultado es un unico fichero `.litertlm` de 2.553.876.096 bytes pensado para ejecutarse en navegador mediante WebGPU y `@litert-lm/core`.
 
 El modelo resuelve un problema muy concreto: permitir inferencia local de un LLM en el navegador sin depender de servidores, usando el runtime LiteRT-LM de Google. No obstante, el autor lo presenta explicitamente como un artefacto experimental, no como sustituto del GGUF original, y advierte de que la recuantizacion adicional puede alterar el comportamiento y la calidad respecto al modelo de partida.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sido/hina-gemma4-e2b-aggressive-litert
+- Modelo en Hugging Face: https://huggingface.co/Sido/hina-gemma4-e2b-aggressive-litert
 - Modelo de origen (finetune): https://huggingface.co/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive
 - Modelo base oficial: https://huggingface.co/google/gemma-4-E2B-it
 - Documentacion de Gemma 4 en LiteRT-LM: https://developers.google.com/edge/litert-lm/models/gemma-4

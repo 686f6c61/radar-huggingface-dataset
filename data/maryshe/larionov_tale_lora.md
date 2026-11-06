@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maryshe/larionov_TALE_LoRA | LoRA sobre SDXL | no disponible (adaptador) | no aplica | openrail++ | HuggingFace, 0 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Difusion SDXL completo | 3.500 millones | no aplica | openrail++ | HuggingFace, ampliamente usado |
-| Otras LoRAs de estilo en SDXL | LoRA sobre SDXL | variable | no aplica | variable | HuggingFace, comunidad |
+| maryshe/larionov_TALE_LoRA | LoRA sobre SDXL | no disponible (adaptador) | no aplica | openrail++ | Hugging Face, 0 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Difusion SDXL completo | 3.500 millones | no aplica | openrail++ | Hugging Face, ampliamente usado |
+| Otras LoRAs de estilo en SDXL | LoRA sobre SDXL | variable | no aplica | variable | Hugging Face, comunidad |
 
 No se dispone de datos de rendimiento comparativo entre esta LoRA y otras alternativas de estilo.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre esta LoRA y otras altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maryshe/larionov_TALE_LoRA
+- Hugging Face: https://huggingface.co/maryshe/larionov_TALE_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - DreamBooth: https://dreambooth.github.io/
 - VAE utilizado: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix

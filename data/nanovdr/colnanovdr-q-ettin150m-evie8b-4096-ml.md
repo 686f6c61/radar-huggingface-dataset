@@ -72,10 +72,10 @@ Nota metodológica de la model card: el error del estudiante se atribuye íntegr
 
 | Modelo | Rol | Parametros | Dim. late interaction | Indice requerido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ColNanoVDR-Q-Ettin150M-EVIE8B-4096-ML (este modelo) | Torre de consulta | 149M | 4096 | Paginas indexadas por EVIE-8B | apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| ColNanoVDR-Q-Ettin150M-EVIE45B-2048-ML | Torre de consulta | Backbone Ettin150M | 2048 | Paginas indexadas por EVIE-4.5B; indice mas pequeno (Prefix-MRL + compresion HAC) | No disponible en la informacion proporcionada | HuggingFace |
-| tencent/EVIE-8B | Recuperador visual completo (maestro) | 8,4B | 4096 | Se codifica a si mismo | No disponible en la informacion proporcionada | HuggingFace |
-| jhu-clsp/ettin-encoder-150m | Encoder de texto general (backbone) | 150M | No aplica (no es multi-vector) | No aplica | No disponible en la informacion proporcionada | HuggingFace |
+| ColNanoVDR-Q-Ettin150M-EVIE8B-4096-ML (este modelo) | Torre de consulta | 149M | 4096 | Paginas indexadas por EVIE-8B | apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| ColNanoVDR-Q-Ettin150M-EVIE45B-2048-ML | Torre de consulta | Backbone Ettin150M | 2048 | Paginas indexadas por EVIE-4.5B; indice mas pequeno (Prefix-MRL + compresion HAC) | No disponible en la informacion proporcionada | Hugging Face |
+| tencent/EVIE-8B | Recuperador visual completo (maestro) | 8,4B | 4096 | Se codifica a si mismo | No disponible en la informacion proporcionada | Hugging Face |
+| jhu-clsp/ettin-encoder-150m | Encoder de texto general (backbone) | 150M | No aplica (no es multi-vector) | No aplica | No disponible en la informacion proporcionada | Hugging Face |
 
 Alternativas de la misma categoría (torres de consulta destiladas para recuperación visual de documentos) distintas a las de la familia nanovdr: no disponibles en la información proporcionada.
 
@@ -96,7 +96,7 @@ Alternativas de la misma categoría (torres de consulta destiladas para recupera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nanovdr/ColNanoVDR-Q-Ettin150M-EVIE8B-4096-ML
+- Modelo en Hugging Face: https://huggingface.co/nanovdr/ColNanoVDR-Q-Ettin150M-EVIE8B-4096-ML
 - Paper (arXiv): https://arxiv.org/abs/2609.34899
 - Codigo: https://github.com/Ryenhails/NanoVDR
 - Dataset de entrenamiento: https://huggingface.co/datasets/nanovdr/NanoVDR-Train

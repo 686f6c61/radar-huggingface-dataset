@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`markedet/prompt-injection-check` no es un modelo generativo ni un LLM, sino un servicio HTTP de detección de inyección de prompts empaquetado como Space de HuggingFace con SDK Docker. Lo publica el usuario `markedet` y su función es analizar textos o URLs que un agente está a punto de consumir y devolver un veredicto (`safe`, `suspicious`, `injection`), una puntuación, las intenciones detectadas y evidencia por fragmento con desplazamientos en tres unidades distintas.
+`markedet/prompt-injection-check` no es un modelo generativo ni un LLM, sino un servicio HTTP de detección de inyección de prompts empaquetado como Space de Hugging Face con SDK Docker. Lo publica el usuario `markedet` y su función es analizar textos o URLs que un agente está a punto de consumir y devolver un veredicto (`safe`, `suspicious`, `injection`), una puntuación, las intenciones detectadas y evidencia por fragmento con desplazamientos en tres unidades distintas.
 
 El problema que aborda es el vector de ataque más común en sistemas agénticos: contenido no confiable (correos, páginas web, resultados de herramientas) que contiene instrucciones destinadas a secuestrar el comportamiento del modelo. El servicio se vende por llamada mediante el protocolo x402, con pago en USDC sobre la red Base, a 0,01 USD por ítem y entre 1 y 20 ítems por petición.
 
@@ -110,7 +110,7 @@ La diferencia principal frente a los clasificadores de pesos abiertos no es la c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/markedet/prompt-injection-check
+- Hugging Face: https://huggingface.co/markedet/prompt-injection-check
 - Protocolo x402: https://x402.org
 - Clasificador usado en modo `full`: https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2
 - Conjunto de respuestas conocidas: `kat/known-answers-v1.2.jsonl` y `kat/README.md` (dentro del repositorio del Space)

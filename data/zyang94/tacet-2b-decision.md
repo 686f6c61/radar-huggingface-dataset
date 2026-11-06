@@ -110,6 +110,6 @@ No se han proporcionado datos de modelos comparables con la misma interfaz de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zyang94/tacet-2b-decision
+- Modelo en Hugging Face: https://huggingface.co/zyang94/tacet-2b-decision
 - Modelo base: Qwen/Qwen3.5-2B (referenciado en los metadatos del repositorio; no se proporciona URL propia en la informacion disponible)
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo. Los resultados de la busqueda no contienen informacion relevante sobre tacet-2b-decision.

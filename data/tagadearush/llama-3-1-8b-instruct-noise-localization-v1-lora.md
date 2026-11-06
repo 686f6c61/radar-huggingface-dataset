@@ -99,7 +99,7 @@ No se dispone de modelos comparables directos en la información proporcionada: 
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/tagadearush/Llama-3.1-8B-Instruct-noise-localization-v1-lora
+- Hugging Face (adaptador LoRA): https://huggingface.co/tagadearush/Llama-3.1-8B-Instruct-noise-localization-v1-lora
 - Pesos fusionados: https://huggingface.co/tagadearush/Llama-3.1-8B-Instruct-noise-localization-v1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de referencia: Fornasiere et al., "Language models recognize dropout and Gaussian noise applied to their activations", arXiv:2604.17465

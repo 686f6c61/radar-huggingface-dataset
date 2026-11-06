@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AuK-comfyui es un modelo publicado en HuggingFace por el usuario drbaph, etiquetado dentro de la categoría de audio y voz y asociado al pipeline de text-to-speech. Según los metadatos y las etiquetas declaradas por el autor, el modelo está orientado a generación de voz, clonación de voz zero-shot, edición y mejora de habla, separación de fuentes y separación de hablantes, con un componente de guiado por instrucciones y referencias a difusión. El nombre del repositorio sugiere una integración o empaquetado pensado para su uso dentro de ComfyUI, aunque la model card no incluye documentación que lo confirme.
+AuK-comfyui es un modelo publicado en Hugging Face por el usuario drbaph, etiquetado dentro de la categoría de audio y voz y asociado al pipeline de text-to-speech. Según los metadatos y las etiquetas declaradas por el autor, el modelo está orientado a generación de voz, clonación de voz zero-shot, edición y mejora de habla, separación de fuentes y separación de hablantes, con un componente de guiado por instrucciones y referencias a difusión. El nombre del repositorio sugiere una integración o empaquetado pensado para su uso dentro de ComfyUI, aunque la model card no incluye documentación que lo confirme.
 
 El repositorio ocupa 10,8 GB y se distribuye bajo licencia MIT, lo que en principio permite uso comercial sin las restricciones habituales de otros modelos de voz. En el momento de la consulta acumula 0 descargas y 0 likes, y la model card no contiene más que el bloque de metadatos YAML: no hay descripción del entrenamiento, de la arquitectura concreta, del dataset ni de resultados de evaluación.
 
@@ -101,6 +101,6 @@ No disponible: no se han encontrado en la información proporcionada datos fiabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drbaph/AuK-comfyui
+- Modelo en Hugging Face: https://huggingface.co/drbaph/AuK-comfyui
 
 No se han encontrado en la búsqueda web enlaces relevantes al modelo, a papers, blogs, repositorios de código o demos asociados. El resto de resultados obtenidos no guardan relación con el modelo.

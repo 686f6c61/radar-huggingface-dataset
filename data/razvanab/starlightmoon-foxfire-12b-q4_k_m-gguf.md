@@ -6,7 +6,7 @@ StarlightMoon-Foxfire-12B-Q4_K_M-GGUF es una cuantización en formato GGUF del m
 
 El modelo base es un merge construido con mergekit, según las etiquetas de la model card, y está etiquetado explícitamente como contenido para adultos (nsfw) y no apto para todas las audiencias. No se trata de un modelo de propósito general ni de un modelo entrenado desde cero: es una fusión de pesos de otros modelos, lo que condiciona tanto sus capacidades como sus limitaciones. La información pública disponible es muy escasa: no hay datos sobre la composición del merge, la longitud de contexto nativa, el dataset de entrenamiento ni resultados de benchmarks.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso típico de la cadena de distribución de modelos abiertos: un merge comunitario, una cuantización Q4_K_M y una publicación en HuggingFace con cero descargas y cero likes en el momento de la consulta. Por otro, sirve para advertir de las limitaciones de trazabilidad de este tipo de artefactos, donde la model card original no está incluida y la licencia no está declarada, lo que complica su uso en entornos profesionales.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso típico de la cadena de distribución de modelos abiertos: un merge comunitario, una cuantización Q4_K_M y una publicación en Hugging Face con cero descargas y cero likes en el momento de la consulta. Por otro, sirve para advertir de las limitaciones de trazabilidad de este tipo de artefactos, donde la model card original no está incluida y la licencia no está declarada, lo que complica su uso en entornos profesionales.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ Tampoco hay informacion sobre el dataset de entrenamiento, el numero de tokens, 
 - Evaluacion comparativa de merges comunitarios: investigadores que estudian el efecto de mergekit pueden usar esta cuantizacion como referencia de calidad percibida frente al modelo base en tareas de roleplay, aunque sin benchmarks formales la comparacion seria subjetiva.
 - Pruebas de concepto de inferencia en CPU: al ser un unico fichero GGUF de 7,5 GB, sirve para validar pipelines de llama.cpp en equipos sin GPU, por ejemplo en estaciones de trabajo con 16 GB de RAM.
 - Generacion de contenido para videojuegos indie: integrable mediante llama-server en motores como Godot o Unity para dialogos dinamicos de NPC, siempre que el contenido adulto se filtre o se restrinja por clasificacion de edad.
-- Docencia sobre el ecosistema de modelos abiertos: caso de estudio de la cadena merge, cuantizacion y publicacion en HuggingFace, incluida la problematica de licencias no declaradas y model cards incompletas.
+- Docencia sobre el ecosistema de modelos abiertos: caso de estudio de la cadena merge, cuantizacion y publicacion en Hugging Face, incluida la problematica de licencias no declaradas y model cards incompletas.
 
 ## Benchmarks y rendimiento
 
@@ -89,7 +89,7 @@ La comparacion con Mistral-Nemo y Gemma 2 es orientativa: no se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/razvanab/StarlightMoon-Foxfire-12B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/razvanab/StarlightMoon-Foxfire-12B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/MrRikyz/StarlightMoon-Foxfire-12B
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

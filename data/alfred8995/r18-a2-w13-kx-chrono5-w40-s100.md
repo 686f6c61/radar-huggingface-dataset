@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-chrono5-w40-s100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un checkpoint de aproximadamente 2.018 millones de parametros (2,018 B) almacenado en formato safetensors, con un tamano de repositorio de 12,6 GB, lo que sugiere pesos en precision alta (probablemente bf16 o fp16) y sin cuantizaciones adicionales empaquetadas. El acceso es restringido (gated): requiere aceptar condiciones en la plataforma antes de poder descargarlo.
+`alfred8995/r18-a2-w13-kx-chrono5-w40-s100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un checkpoint de aproximadamente 2.018 millones de parametros (2,018 B) almacenado en formato safetensors, con un tamano de repositorio de 12,6 GB, lo que sugiere pesos en precision alta (probablemente bf16 o fp16) y sin cuantizaciones adicionales empaquetadas. El acceso es restringido (gated): requiere aceptar condiciones en la plataforma antes de poder descargarlo.
 
 La nomenclatura del identificador (`r18-a2-w13-kx-chrono5-w40-s100`) y el tag `sn38-nanochrono` apuntan a un experimento de arquitectura o de entrenamiento concreto, probablemente un modelo de tipo "chrono" (posiblemente con algun mecanismo temporal o de estado recurrente) con variantes de configuracion codificadas en el nombre. No hay informacion publica que documente que significan esos sufijos ni que arquitectura exacta implementa el modelo.
 
@@ -75,7 +75,7 @@ La comparativa es orientativa: para el modelo de alfred8995 no hay datos de cont
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, sesgos, alineamiento ni evaluacion; el riesgo de comportamiento impredecible es alto.
 - Riesgo de alucinacion: desconocido y no mitigado documentalmente; no debe usarse en produccion sin evaluacion propia.
 - Idiomas y contexto no declarados: no se puede asumir soporte multilingue ni una ventana de contexto concreta.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace; esto anade friccion para uso comercial y para integracion en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face; esto anade friccion para uso comercial y para integracion en pipelines automatizados.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero al no haber documentacion sobre procedencia de datos, el cumplimiento de derechos de autor y de regulaciones (por ejemplo, AI Act) recae en el usuario.
 - Repositorio con muy poca traccion (2 descargas, 0 likes): no hay comunidad, issues ni soporte; la probabilidad de encontrar errores no corregidos es alta.
 - Formato unico safetensors sin cuantizaciones: obliga a convertir a GGUF/AWQ para despliegues ligeros, con el riesgo de incompatibilidad si la arquitectura no es estandar.
@@ -83,5 +83,5 @@ La comparativa es orientativa: para el modelo de alfred8995 no hay datos de cont
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w40-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w40-s100
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

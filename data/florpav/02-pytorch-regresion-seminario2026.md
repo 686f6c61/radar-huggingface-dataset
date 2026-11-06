@@ -41,7 +41,7 @@ El entrenamiento es supervisado, con 200 registros sintéticos (160 de entrenami
 
 - Docencia de PyTorch: sirve como ejemplo mínimo y reproducible para enseñar el bucle explícito de entrenamiento (`forward`, `loss`, `backward`, `step`) y la publicación de pesos en safetensors.
 - Comparación con scikit-learn: permite ilustrar cómo un mismo problema de regresión se resuelve con dos ecosistemas distintos y cómo los pesos coinciden tras desnormalizar.
-- Plantilla de empaquetado de modelos: muestra la estructura mínima recomendada (`model.safetensors`, `config.json`, `modelo.py`, `train.py`, `predict.py`, `requirements.txt`) para publicar un modelo en HuggingFace.
+- Plantilla de empaquetado de modelos: muestra la estructura mínima recomendada (`model.safetensors`, `config.json`, `modelo.py`, `train.py`, `predict.py`, `requirements.txt`) para publicar un modelo en Hugging Face.
 - Demostración de serialización segura: ejemplifica por qué safetensors es preferible a pickle o joblib al no ejecutar código arbitrario al cargar los pesos.
 - Ejercicio de normalización: permite practicar por qué olvidar la normalización invalida las predicciones y cómo guardar media y desvío en `config.json`.
 - Prueba de integración de PyTorch en entornos educativos: útil para validar instalaciones de PyTorch, safetensors y numpy en aulas o laboratorios.
@@ -70,11 +70,11 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| florpav/02-pytorch-regresion-seminario2026 | 4 | no aplica | MAE 3,08; R² 0,989 (datos sintéticos) | MIT | HuggingFace |
+| florpav/02-pytorch-regresion-seminario2026 | 4 | no aplica | MAE 3,08; R² 0,989 (datos sintéticos) | MIT | Hugging Face |
 | Regresión lineal de scikit-learn (ejemplo de la Clase 10) | 4 (equivalentes tras desnormalizar) | no aplica | Equivalente por construcción | BSD-3-Clause (scikit-learn) | No publicado como modelo |
 | Otros ejemplos pedagógicos de regresión en PyTorch | no disponible | no aplica | no disponible | variable | variable |
 
-No se dispone de información sobre otros modelos comparables publicados en HuggingFace con la misma finalidad didáctica y el mismo conjunto de datos sintético.
+No se dispone de información sobre otros modelos comparables publicados en Hugging Face con la misma finalidad didáctica y el mismo conjunto de datos sintético.
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos comparables publicados en Hugg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florpav/02-pytorch-regresion-seminario2026
+- Modelo en Hugging Face: https://huggingface.co/florpav/02-pytorch-regresion-seminario2026
 - Documentación de safetensors: https://github.com/huggingface/safetensors
 - Documentación de PyTorch: https://pytorch.org/docs/stable/index.html
 - Repositorio de scikit-learn (ejemplo equivalente): https://scikit-learn.org/stable/

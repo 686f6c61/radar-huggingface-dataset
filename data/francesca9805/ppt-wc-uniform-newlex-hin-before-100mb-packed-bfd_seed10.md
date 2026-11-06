@@ -12,7 +12,7 @@ El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y no
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiquetado como `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiquetado como `gpt2` en Hugging Face) |
 | Parametros totales | 86.508.288 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-hin-before-100mb-packed-bfd_seed10` | 86,5 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| `goldfish-models/eng_latn_100mb` (modelo base) | del orden de 100 M (no confirmado en la informacion proporcionada) | no disponible | no disponible | HuggingFace |
-| `gpt2` (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace |
-| `distilgpt2` (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
+| `francesca9805/ppt-wc-uniform-newlex-hin-before-100mb-packed-bfd_seed10` | 86,5 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| `goldfish-models/eng_latn_100mb` (modelo base) | del orden de 100 M (no confirmado en la informacion proporcionada) | no disponible | no disponible | Hugging Face |
+| `gpt2` (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face |
+| `distilgpt2` (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
 
 Los datos de `gpt2` y `distilgpt2` corresponden a especificaciones ampliamente documentadas de esos modelos. No se dispone de datos de rendimiento del modelo descrito, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ Los datos de `gpt2` y `distilgpt2` corresponden a especificaciones ampliamente d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-hin-before-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-hin-before-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/14l0c1gp
 - Repositorio de TRL: https://github.com/huggingface/trl

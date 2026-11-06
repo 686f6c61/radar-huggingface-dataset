@@ -67,7 +67,7 @@ El pipeline consta de dos etapas. La etapa de lectura (Reading) emplea 3.600 pas
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card y los metadatos de HuggingFace no incluyen cifras de MMLU, HumanEval, GSM8K, ViDoRe ni de ninguna otra evaluacion. Tampoco se han encontrado resultados en la busqueda web realizada, cuyos resultados no guardaban relacion con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card y los metadatos de Hugging Face no incluyen cifras de MMLU, HumanEval, GSM8K, ViDoRe ni de ninguna otra evaluacion. Tampoco se han encontrado resultados en la busqueda web realizada, cuyos resultados no guardaban relacion con el modelo.
 
 ## Requisitos de hardware
 
@@ -106,7 +106,7 @@ Los modelos comparables externos (ColPali, ColQwen2 y similares) no aparecen con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/athrael-soju/UltraVBERT
+- Modelo en Hugging Face: https://huggingface.co/athrael-soju/UltraVBERT
 - ColUltraVBERT (retriever de interaccion tardia): https://huggingface.co/athrael-soju/ColUltraVBERT
 - ColUltraVBERT-Extreme (en preparacion): https://huggingface.co/athrael-soju/ColUltraVBERT-Extreme
 - Modelo base textual UltraBERT-150M: https://huggingface.co/dmis-lab/UltraBERT-150M
@@ -119,4 +119,4 @@ Los modelos comparables externos (ColPali, ColQwen2 y similares) no aparecen con
 - Dataset The Cauldron: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
 - Dataset RLHN-680K: https://huggingface.co/datasets/rlhn/rlhn-680K
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; las referencias anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; las referencias anteriores proceden de la model card y de los metadatos de Hugging Face.

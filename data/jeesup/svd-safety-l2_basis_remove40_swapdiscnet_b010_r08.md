@@ -101,7 +101,7 @@ Los datos de los tres modelos alternativos proceden de sus fichas públicas y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 y política de uso: archivos `LICENSE.txt` y `USE_POLICY.md` incluidos en el repositorio del modelo
 - Paper de Basis Sharing (ICLR 2025): enlace no disponible en la información proporcionada

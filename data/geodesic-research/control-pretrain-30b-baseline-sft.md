@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada para inferencia: los pesos completos en BF16 ocupan aproximadamente 63 GB (31.577.937.344 parámetros × 2 bytes). Con cuantización a 4 bits (no oficial) cabría en ~16 GB, pero no se ofrecen versiones cuantizadas.
 - GPU recomendadas: para BF16 sin cuantizar se necesitan GPUs con al menos 80 GB de VRAM (A100 80GB, H100 80GB, GH200). Con cuantización 8-bit (no oficial) podría caber en 32 GB (A6000, RTX 6000 Ada), y con 4-bit en 24 GB (RTX 4090, RTX 3090), pero no hay archivos GGUF ni AWQ publicados.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, puede cargarse con Transformers (usando `trust_remote_code=True`). Para inferencia de alto rendimiento se podría usar vLLM o TGI si soportan la arquitectura Nemotron 3 Nano, aunque no está confirmado. También es posible usar llama.cpp si se convierte a GGUF, pero no hay conversión oficial.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, puede cargarse con Transformers (usando `trust_remote_code=True`). Para inferencia de alto rendimiento se podría usar vLLM o TGI si soportan la arquitectura Nemotron 3 Nano, aunque no está confirmado. También es posible usar llama.cpp si se convierte a GGUF, pero no hay conversión oficial.
 - Latencia y throughput: no se proporcionan datos. Al ser un MoE con ~3B activos, la latencia por token debería ser menor que la de un modelo denso de 30B, pero depende del hardware y del número de expertos activos.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa es solo estructural; no hay benchmarks publicados para el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-sft
+- Modelo en Hugging Face: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-sft
 - Checkpoints Megatron: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-ckpts
 - Organización Geodesic Research: http://geodesicresearch.ai/
 - GitHub de Geodesic Research: https://github.com/GeodesicResearch

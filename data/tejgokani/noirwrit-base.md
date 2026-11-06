@@ -111,7 +111,7 @@ La comparación de rendimiento real no está disponible: no hay benchmarks publi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/tejgokani/noirwrit-base)
+- [Modelo en Hugging Face](https://huggingface.co/tejgokani/noirwrit-base)
 - [Repositorio de la aplicación Noirwrit](https://github.com/tejgokani/noirwrit)
 - [Documentación de entrenamiento online](https://github.com/tejgokani/noirwrit/blob/main/docs/ONLINE_TRAINING.md)
 - [Benchmarks de velocidad (docs/BENCH.md)](https://github.com/tejgokani/noirwrit/blob/main/docs/BENCH.md)

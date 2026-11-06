@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step49 | 2,03 B (safetensors) | no disponible | no publicado | no disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7 B | no disponible en esta ficha | no aplica a esta tarea | Apache 2.0 (segun el modelo original; verificar) | HuggingFace |
-| SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj | misma base, ~2 B | no disponible | no publicado | no disponible | HuggingFace |
-| SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1/ep2/ep3 | misma base, ~2 B | no disponible | no publicado | no disponible | HuggingFace |
+| qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step49 | 2,03 B (safetensors) | no disponible | no publicado | no disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7 B | no disponible en esta ficha | no aplica a esta tarea | Apache 2.0 (segun el modelo original; verificar) | Hugging Face |
+| SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj | misma base, ~2 B | no disponible | no publicado | no disponible | Hugging Face |
+| SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1/ep2/ep3 | misma base, ~2 B | no disponible | no publicado | no disponible | Hugging Face |
 
 Los tres modelos alternativos de la tabla pertenecen al mismo autor y a la misma familia de experimentos, por lo que la comparacion directa es la mas informativa: comparten base, profesor (Qwen3-32B en bf16) y metodo TCOD, y solo cambian el entorno (TextCraft frente a BabyAI) o el tipo de ajuste (destilacion TCOD frente a SFT sobre trayectorias).
 
@@ -88,7 +88,7 @@ Los tres modelos alternativos de la tabla pertenecen al mismo autor y a la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step49
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step49
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Variante SFT sobre trayectorias de Qwen3-32B: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj
 - Variante SFT con formato de mensajes: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-messages-buggy

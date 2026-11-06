@@ -111,7 +111,7 @@ La diferencia frente a los hermanos de texto es únicamente la presencia de la t
 - Riesgo de alucinación: inherente a un modelo de 125 B con 6 B activos, agravado por la cuantización agresiva y sin evaluaciones que lo acoten.
 - Idiomas no declarados: no se puede asumir un buen rendimiento en castellano sin evaluarlo.
 - Contexto desconocido: la longitud de ventana no figura en la documentación, lo que impide planificar cargas de contexto largo.
-- Licencia: `qwen-community-license-1.0`, etiquetada como `other` en HuggingFace; es una obra derivada de Qwen y las condiciones de uso comercial deben verificarse en el fichero `LICENSE` antes de cualquier despliegue en producción.
+- Licencia: `qwen-community-license-1.0`, etiquetada como `other` en Hugging Face; es una obra derivada de Qwen y las condiciones de uso comercial deben verificarse en el fichero `LICENSE` antes de cualquier despliegue en producción.
 - Dependencia total del runtime FinchMoE: no hay ruta de ejecución alternativa con las herramientas estándar del ecosistema; si el proyecto upstream deja de mantenerse, el artefacto queda inutilizable.
 - Madurez nula: 0 descargas y 0 likes en el momento del análisis, sin validación independiente más allá del recibo `verified-install.json` generado por el propio autor.
 - La app de Mac/iOS requiere una fila de modelo con capacidad visual; una fila solo de texto rechazará el directorio `vision/` en lugar de ignorarlo.
@@ -119,7 +119,7 @@ La diferencia frente a los hermanos de texto es únicamente la presencia de la t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple3bit-abliterated-vision
+- Repositorio en Hugging Face: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple3bit-abliterated-vision
 - Modelo base (abliterated): https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated
 - Sibling de texto (misma receta, sin visión): https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple3bit-abliterated
 - Sibling con expertos a 2 bits: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple2bit

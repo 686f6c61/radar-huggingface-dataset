@@ -91,7 +91,7 @@ No se han publicado resultados en bucle cerrado ni comparaciones completas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nirvana-AI/umi-toss-cosmos3-nano-ctrl-v2
+- Modelo en Hugging Face: https://huggingface.co/Nirvana-AI/umi-toss-cosmos3-nano-ctrl-v2
 - Run original: https://huggingface.co/Nirvana-AI/umi-toss-cosmos3-nano-full-sft
 - Run con aumentación: https://huggingface.co/Nirvana-AI/umi-toss-cosmos3-nano-aug-v1
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

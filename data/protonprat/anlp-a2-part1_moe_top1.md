@@ -49,7 +49,7 @@ El tokenizador es un BPE byte-level entrenado exclusivamente con los datos de en
 - Ensayos de tokenizacion multilingue: el `tokenizer.json` BPE byte-level entrenado solo con el corpus permite estudiar la fragmentacion de texto vietnamita y japones frente a tokenizadores multilingues de uso comun.
 - Docencia sobre mezcla de expertos: el modelo es un banco de pruebas barato para medir balanceo de carga entre expertos, colapso de enrutamiento y efectos del top-1 en la calidad final.
 - Investigacion sobre metricas automaticas: sus resultados de perplexity y BLEU, junto con la advertencia explicita del autor, sirven como caso de estudio de la brecha entre metricas de solapamiento y calidad semantica.
-- Analisis de artefactos de publicacion en HuggingFace: ejemplo de repositorio sin licencia declarada, sin pipeline asignado y sin arquitectura `AutoModel` registrada, util para discutir buenas practicas de publicacion de modelos.
+- Analisis de artefactos de publicacion en Hugging Face: ejemplo de repositorio sin licencia declarada, sin pipeline asignado y sin arquitectura `AutoModel` registrada, util para discutir buenas practicas de publicacion de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM estimada para inferencia: en torno a 40 MB en fp32 y 20 MB en fp16 para los 10,08 millones de parametros; el consumo real dependera del tamano de lote, la longitud de secuencia y la implementacion del MoE.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria es suficiente; el modelo cabe holgadamente en GTX 1650, RTX 3060, RTX 4090, A100 o H100. No se requiere hardware de centro de datos.
 - Ejecucion en CPU: perfectamente viable, dado el reducido numero de parametros.
-- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama, TGI ni con `AutoModel` de Transformers, porque la arquitectura es personalizada y no esta registrada. El unico camino documentado es el repositorio de la asignatura (`src.part1.model.Transformer` y `scripts/infer.py`), que tampoco se distribuye en el repositorio de HuggingFace.
+- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama, TGI ni con `AutoModel` de Transformers, porque la arquitectura es personalizada y no esta registrada. El unico camino documentado es el repositorio de la asignatura (`src.part1.model.Transformer` y `scripts/infer.py`), que tampoco se distribuye en el repositorio de Hugging Face.
 - Latencia y throughput: no disponibles.
 - Almacenamiento: el repositorio completo ocupa 0,3 GB, incluyendo pesos exportados y estados de reanudacion.
 
@@ -82,13 +82,13 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 - Riesgo alto de alucinacion y de degeneracion en generaciones largas, agravado por la ausencia de documentacion sobre la longitud de contexto.
 - Cobertura idiomatica restringida a en, vi y ja, y dentro de ellos a la distribucion del corpus `belumind/en-vi-ja-curated-500k-triplets`; el tokenizador se entreno solo con esos datos.
 - Licencia no declarada: sin terminos explicitos de uso, no hay autorizacion clara para uso comercial ni para redistribucion. Conviene tratar el modelo como no licenciado hasta contactar con el autor.
-- No es cargable con herramientas estandar: requiere el codigo de la asignatura, que no esta incluido en el repositorio de HuggingFace, y no expone `pipeline` ni arquitectura `AutoModel`.
+- No es cargable con herramientas estandar: requiere el codigo de la asignatura, que no esta incluido en el repositorio de Hugging Face, y no expone `pipeline` ni arquitectura `AutoModel`.
 - El repositorio no tiene descargas ni likes registrados y no cuenta con validacion comunitaria.
 - El contenido devuelto por la busqueda web para este modelo no contiene informacion tecnica relevante ni enlaces utiles, por lo que no se ha podido contrastar la model card con fuentes externas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProtonPrat/anlp-a2-part1_moe_top1
+- Modelo en Hugging Face: https://huggingface.co/ProtonPrat/anlp-a2-part1_moe_top1
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/proton_prat/anlp-assignment-2/runs/5f8abimv
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets (revision `849990daee76e0f9e2eb9965e30e34bc1909a93d`)
 - Repositorio de codigo de la asignatura: no disponible

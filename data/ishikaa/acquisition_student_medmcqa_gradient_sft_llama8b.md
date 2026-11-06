@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_medmcqa_gradient_sft_llama8b` es un modelo de generación de texto de 8.030.261.248 parámetros publicado en HuggingFace por el usuario `ishikaa`. Por el identificador se deduce que se trata de un ajuste supervisado (SFT) de un modelo de la familia Llama 8B sobre el conjunto de datos MedMCQA, un corpus de preguntas de opción múltiple de ámbito médico. Los tags del repositorio (`trl`, `sft`, `conversational`, `text-generation`) confirman el uso de la librería TRL para el entrenamiento y el formato conversacional de las muestras.
+`ishikaa/acquisition_student_medmcqa_gradient_sft_llama8b` es un modelo de generación de texto de 8.030.261.248 parámetros publicado en Hugging Face por el usuario `ishikaa`. Por el identificador se deduce que se trata de un ajuste supervisado (SFT) de un modelo de la familia Llama 8B sobre el conjunto de datos MedMCQA, un corpus de preguntas de opción múltiple de ámbito médico. Los tags del repositorio (`trl`, `sft`, `conversational`, `text-generation`) confirman el uso de la librería TRL para el entrenamiento y el formato conversacional de las muestras.
 
 El nombre del repositorio sugiere además un contexto de investigación en selección o adquisición de datos: el término `acquisition_student` apunta a un modelo estudiante utilizado en un experimento de adquisición de datos (posiblemente basada en gradientes, de ahí `gradient_sft`). Este tipo de artefactos se emplea habitualmente en estudios sobre estrategias de selección de muestras para fine-tuning, no como modelo de producción.
 
-La relevancia práctica del modelo es limitada: el repositorio registra 0 descargas y 0 likes, la model card es la plantilla automática de HuggingFace sin ningún campo cumplimentado y no se ha publicado ningún resultado de evaluación. Debe tratarse, por tanto, como un checkpoint de investigación sin validar.
+La relevancia práctica del modelo es limitada: el repositorio registra 0 descargas y 0 likes, la model card es la plantilla automática de Hugging Face sin ningún campo cumplimentado y no se ha publicado ningún resultado de evaluación. Debe tratarse, por tanto, como un checkpoint de investigación sin validar.
 
 ## Especificaciones técnicas
 
@@ -90,7 +90,7 @@ La diferencia fundamental frente a estas alternativas no es de tamaño ni de arq
 
 ## Limitaciones y advertencias
 
-- Model card vacía: es la plantilla automática de HuggingFace sin ningún campo rellenado (autoría, datos, licencia, uso previsto y limitaciones aparecen como "[More Information Needed]").
+- Model card vacía: es la plantilla automática de Hugging Face sin ningún campo rellenado (autoría, datos, licencia, uso previsto y limitaciones aparecen como "[More Information Needed]").
 - Ausencia total de evaluación: no existen benchmarks publicados, por lo que se desconoce si el ajuste sobre MedMCQA ha mejorado o degradado las capacidades del modelo base.
 - Licencia indeterminada: al no declararse licencia, no se puede confirmar si el uso comercial está permitido. Si el modelo base es Llama 3 o Llama 3.1, es probable que herede la licencia comunitaria de Meta, con sus restricciones de atribución, límite de 700 millones de usuarios mensuales y cláusulas de uso aceptable, pero esto no está confirmado por el autor.
 - Riesgo de alucinación: cualquier modelo de 8B ajustado sobre opción múltiple puede generar afirmaciones médicas incorrectas con apariencia de verosimilitud. Los errores en este dominio tienen consecuencias potencialmente graves.
@@ -104,7 +104,7 @@ La diferencia fundamental frente a estas alternativas no es de tamaño ni de arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_medmcqa_gradient_sft_llama8b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_medmcqa_gradient_sft_llama8b
 - Dataset MedMCQA (referencia del nombre del modelo): https://huggingface.co/datasets/medmcqa
 - Paper de MedMCQA: https://arxiv.org/abs/2203.14371
 - Librería TRL, usada para el SFT: https://github.com/huggingface/trl

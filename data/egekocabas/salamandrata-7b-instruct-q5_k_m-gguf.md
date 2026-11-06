@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye datos de otros modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/egekocabas/salamandraTA-7b-instruct-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/egekocabas/salamandraTA-7b-instruct-Q5_K_M-GGUF
 - Modelo base original: https://huggingface.co/BSC-LT/salamandraTA-7b-instruct
 - Biblioteca llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-cifar10-iocnn` es un repositorio de artefactos academicos publicado por el usuario MetallicBond en HuggingFace, correspondiente a la cuarta practica (pregunta 1) de una asignatura denominada SMAI. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un conjunto de clasificadores de imagenes para el dataset CIFAR-10 cuyos pesos se almacenan como ficheros `.npz`. El repositorio tiene 0 descargas y 0 likes, y un tamano practicamente nulo (0.0 GB), lo que sugiere que contiene unicamente ficheros de pesos de un perceptron multicapa de muy baja capacidad.
+`smai-a4-cifar10-iocnn` es un repositorio de artefactos academicos publicado por el usuario MetallicBond en Hugging Face, correspondiente a la cuarta practica (pregunta 1) de una asignatura denominada SMAI. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un conjunto de clasificadores de imagenes para el dataset CIFAR-10 cuyos pesos se almacenan como ficheros `.npz`. El repositorio tiene 0 descargas y 0 likes, y un tamano practicamente nulo (0.0 GB), lo que sugiere que contiene unicamente ficheros de pesos de un perceptron multicapa de muy baja capacidad.
 
 El unico artefacto documentado en la model card es `iocnn_torch_p0`: una red neuronal de dos capas (una oculta y una de salida) implementada en PyTorch, con 789.258 parametros, activacion ELU en la capa oculta y 10 logits de salida para las clases de CIFAR-10. Se entreno durante 100 epocas sobre las 50.000 imagenes de entrenamiento de CIFAR-10 con etiquetas verdaderas (p = 0), usando SGD plano con tasa de aprendizaje 0,02 y tamano de lote 64.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-iocnn (este) | 789.258 | Imagen 32x32x3 (3072) | Clasificacion CIFAR-10 | no disponible | HuggingFace, 0 descargas |
+| smai-a4-cifar10-iocnn (este) | 789.258 | Imagen 32x32x3 (3072) | Clasificacion CIFAR-10 | no disponible | Hugging Face, 0 descargas |
 | MLP estandar sobre CIFAR-10 | del orden de 10^5-10^6 | Imagen 32x32x3 | Clasificacion CIFAR-10 | variable | Multiples implementaciones publicas |
 | CNN tipo ResNet-18 sobre CIFAR-10 | ~11 M | Imagen 32x32x3 | Clasificacion CIFAR-10 | variable (MIT en implementaciones comunes) | Ampliamente disponible |
 | Vision Transformer pequeno (ViT) sobre CIFAR-10 | ~5-10 M | Imagen 32x32x3 con parches | Clasificacion CIFAR-10 | variable | Disponible en repositorios de investigacion |
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento del modelo en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MetallicBond/smai-a4-cifar10-iocnn
+- Hugging Face: https://huggingface.co/MetallicBond/smai-a4-cifar10-iocnn
 - Dataset CIFAR-10 (referencia del benchmark): https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

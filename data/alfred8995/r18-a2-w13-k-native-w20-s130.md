@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-k-native-w20-s130` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sigue un esquema de codificación opaco (r18-a2-w13-k-native-w20-s130) que no aporta informacion publica sobre la arquitectura ni el proposito del modelo. El tag `sn38-nanochrono` sugiere una posible familia o linaje interno de entrenamiento, pero no se dispone de documentacion que lo confirme.
+`alfred8995/r18-a2-w13-k-native-w20-s130` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sigue un esquema de codificación opaco (r18-a2-w13-k-native-w20-s130) que no aporta informacion publica sobre la arquitectura ni el proposito del modelo. El tag `sn38-nanochrono` sugiere una posible familia o linaje interno de entrenamiento, pero no se dispone de documentacion que lo confirme.
 
 Los pesos en formato safetensors suman 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos pequenos o "edge-friendly". El repositorio ocupa 14,4 GB, un tamano coherente con pesos en precision alta (posiblemente bf16 o fp16) para ese numero de parametros. No se ha publicado informacion sobre arquitectura, contexto, datos de entrenamiento ni capacidades.
 
@@ -80,7 +80,7 @@ La comparativa cuantitativa no esta disponible.
 
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, sesgos, alineamiento ni evaluaciones.
 - Riesgo de alucinacion: desconocido, pero sin datos de alineamiento publicados no puede descartarse un comportamiento deficiente.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para uso en produccion y para auditorias de terceros.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para uso en produccion y para auditorias de terceros.
 - Idiomas no declarados: no se puede garantizar soporte de castellano ni de ningun otro idioma.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias ni soporte; la responsabilidad recae en el integrador.
 - Procedencia opaca: el nombre codificado y la ausencia de documentacion impiden verificar el origen de los datos y posibles contaminaciones de benchmark.
@@ -89,5 +89,5 @@ La comparativa cuantitativa no esta disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w20-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w20-s130
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

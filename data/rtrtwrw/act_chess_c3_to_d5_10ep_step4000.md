@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rtrtwrw/act_chess_c3_to_d5_10ep_step4000` es una política de imitación robótica basada en ACT (Action Chunking with Transformers) publicada en HuggingFace dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un controlador visuomotor entrenado desde cero para que un brazo seguidor SO-101 ejecute una tarea concreta de manipulación sobre un tablero de ajedrez, moviendo una pieza desde la casilla c3 (a 6 cm) hasta la casilla d5 (a 10 cm). La entrada es visual y propioceptiva (tres cámaras a 480x640 más el estado de 6 articulaciones) y la salida son acciones de 6 articulaciones.
+`rtrtwrw/act_chess_c3_to_d5_10ep_step4000` es una política de imitación robótica basada en ACT (Action Chunking with Transformers) publicada en Hugging Face dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un controlador visuomotor entrenado desde cero para que un brazo seguidor SO-101 ejecute una tarea concreta de manipulación sobre un tablero de ajedrez, moviendo una pieza desde la casilla c3 (a 6 cm) hasta la casilla d5 (a 10 cm). La entrada es visual y propioceptiva (tres cámaras a 480x640 más el estado de 6 articulaciones) y la salida son acciones de 6 articulaciones.
 
 El modelo tiene 51.668.614 parámetros (unos 51,7 M) y un repositorio de 0,2 GB en safetensors. Se entrenó con LeRobot 0.5.1 sobre un conjunto reducido: los 10 episodios más cortos del dataset `niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741`, que suman 3.422 frames. El checkpoint publicado corresponde al paso 4.000 de un entrenamiento total de 16.000 pasos con batch de 24, por lo que es un checkpoint intermedio y no el resultado final del entrenamiento.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rtrtwrw/act_chess_c3_to_d5_10ep_step4000` (este modelo) | 51,7 M | 3 cámaras 480x640 + estado de 6 articulaciones | Pick-and-place c3→d5 en SO-101 | No disponible | Público en HuggingFace, 0 descargas |
+| `rtrtwrw/act_chess_c3_to_d5_10ep_step4000` (este modelo) | 51,7 M | 3 cámaras 480x640 + estado de 6 articulaciones | Pick-and-place c3→d5 en SO-101 | No disponible | Público en Hugging Face, 0 descargas |
 | Otros checkpoints ACT del mismo autor o dataset | No disponible | Configuración equivalente según model card | Misma tarea, distinto paso de entrenamiento | No disponible | No disponible en la información consultada |
 | Política ACT genérica de LeRobot | No disponible | Variables según configuración | Manipulación diversa | No disponible | Disponible en el ecosistema LeRobot |
 | Diffusion Policy (alternativa de imitación) | No disponible | Variables según configuración | Manipulación diversa | No disponible | Implementaciones públicas en el ecosistema LeRobot |
@@ -100,7 +100,7 @@ La comparación relevante para este checkpoint es interna al ecosistema LeRobot:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step4000
+- Modelo en Hugging Face: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step4000
 - Dataset de entrenamiento: https://huggingface.co/datasets/niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741
 - LeRobot (librería y scripts de entrenamiento/evaluación): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot

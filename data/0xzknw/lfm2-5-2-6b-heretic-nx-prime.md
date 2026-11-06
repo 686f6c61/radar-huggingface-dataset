@@ -95,8 +95,8 @@ La comparativa con Qwen3.5-9B proviene del blog de Liquid AI sobre el modelo bas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xzknw/LFM2.5-2.6B-Heretic-NX-PRIME
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-2.6B
+- Repositorio Hugging Face: https://huggingface.co/0xzknw/LFM2.5-2.6B-Heretic-NX-PRIME
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Documentación del modelo base: https://docs.liquid.ai/lfm/models/lfm25-2.6b
 - Blog de Liquid AI sobre LFM2.5-2.6B: https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b
 - Blog de Liquid AI (despliegue de agentes): https://www.liquid.ai/blog/lfm2-5-2-6b

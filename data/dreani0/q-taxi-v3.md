@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario dreani0 en HuggingFace y se distribuye como un unico fichero pickle (`q-learning.pkl`), no como un modelo neuronal con pesos en safetensors. El propio autor lo etiqueta como `custom-implementation`, es decir, una implementacion propia de Q-learning en lugar de un algoritmo empaquetado de una libreria estandar como Stable-Baselines3.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario dreani0 en Hugging Face y se distribuye como un unico fichero pickle (`q-learning.pkl`), no como un modelo neuronal con pesos en safetensors. El propio autor lo etiqueta como `custom-implementation`, es decir, una implementacion propia de Q-learning en lugar de un algoritmo empaquetado de una libreria estandar como Stable-Baselines3.
 
 El problema que resuelve es el clasico de Taxi-v3: un taxi debe recoger a un pasajero en una de las cuatro localizaciones de una cuadricula y dejarlo en el destino correcto, con recompensa de -1 por paso, +20 por entrega correcta y -10 por acciones ilegales. Al tratarse de un espacio de estados discreto y pequeno, no requiere GPU ni arquitecturas profundas: el "modelo" es esencialmente una tabla de valores Q indexada por estado y accion.
 
@@ -20,8 +20,8 @@ Su relevancia es fundamentalmente didactica y de referencia: sirve como linea ba
 | Idiomas soportados | no aplica (no es un modelo de lenguaje) |
 | Licencia | no disponible |
 | Formato de pesos | pickle (`q-learning.pkl`) |
-| Tamaño del repositorio | 0.0 GB (redondeado en HuggingFace) |
-| Fecha de publicación | 2026-10-04 según HuggingFace |
+| Tamaño del repositorio | 0.0 GB (redondeado en Hugging Face) |
+| Fecha de publicación | 2026-10-04 según Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ No se dispone de comparaciones con otros agentes sobre el mismo entorno en la in
 - VRAM: no aplica; no requiere GPU. El agente es una tabla de valores y se ejecuta integramente en CPU.
 - GPU recomendadas: ninguna. No hay ventaja en usar A100, H100 ni RTX 4090.
 - GPU de consumo: irrelevante; funciona en cualquier maquina con Python, incluidas Raspberry Pi y contenedores con recursos minimos.
-- Memoria RAM: del orden de megabytes; el repositorio ocupa 0.0 GB redondeados en HuggingFace, coherente con un unico fichero pickle pequeno.
+- Memoria RAM: del orden de megabytes; el repositorio ocupa 0.0 GB redondeados en Hugging Face, coherente con un unico fichero pickle pequeno.
 - Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama, TGI ni otros servidores de inferencia de modelos de lenguaje. El despliegue se hace cargando el pickle en Python junto con Gymnasium y, segun la model card, la funcion `load_from_hub`.
 - Dependencias previsibles: Python, `gymnasium` (o `gym` segun la version del entorno), `numpy` y `pickle`; `huggingface_sb3` si se usa `load_from_hub`.
 - Latencia y throughput: no disponibles en la informacion proporcionada. En la practica la inferencia es una consulta a una tabla, con coste despreciable frente al del propio paso del entorno.
@@ -77,7 +77,7 @@ No se ha proporcionado informacion sobre modelos comparables ni resultados de te
 
 | Modelo | Parámetros | Contexto | Rendimiento en Taxi-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dreani0/q-Taxi-v3 | no disponible | no aplica | 7.54 +/- 2.74 (mean_reward, no verificado) | no disponible | HuggingFace, 0 descargas |
+| dreani0/q-Taxi-v3 | no disponible | no aplica | 7.54 +/- 2.74 (mean_reward, no verificado) | no disponible | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -95,11 +95,11 @@ Categorias de comparacion que tendrian sentido, aunque sin datos en esta informa
 - Licencia ausente: sin licencia declarada no hay autorizacion explicita de uso, modificacion ni redistribucion, ni siquiera para fines academicos. Conviene contactar con el autor antes de cualquier uso en produccion.
 - Idiomas y sesgos: no aplica el analisis habitual de sesgos linguisticos; el unico "sesgo" relevante es el derivado de la politica aprendida y de la distribucion de estados visitados durante el entrenamiento.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso o validacion por terceros.
-- Fecha de publicacion inusual: HuggingFace indica 2026-10-04 como fecha de creacion; conviene verificar la trazabilidad del artefacto.
+- Fecha de publicacion inusual: Hugging Face indica 2026-10-04 como fecha de creacion; conviene verificar la trazabilidad del artefacto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreani0/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/dreani0/q-Taxi-v3
 - Entorno Taxi-v3 (Gymnasium): no disponible en la informacion proporcionada
 - Paper o publicacion asociada: no disponible
 - Repositorio de codigo: no disponible

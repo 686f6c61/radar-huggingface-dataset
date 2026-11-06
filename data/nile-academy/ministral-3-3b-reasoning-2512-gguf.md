@@ -51,7 +51,7 @@ El dato técnico mas informativo que si aparece es la presencia de un fichero `B
 - Generacion y comprension de codigo: 54,8 % en LiveCodeBench (version no especificada) segun el editor.
 - Entrada multimodal: presumiblemente soportada mediante el proyector `mmproj` incluido; el alcance exacto (imagenes, documentos escaneados u otras modalidades) no está documentado.
 - Tool calling / function calling: no verificado. La model card indica que la cualificacion de chat, herramientas y plantillas esta pendiente, y que las llamadas a herramientas son propuestas sujetas a los permisos de la aplicacion consumidora.
-- Capacidades multilingues: no disponibles (el campo de idiomas no esta informado en HuggingFace).
+- Capacidades multilingues: no disponibles (el campo de idiomas no esta informado en Hugging Face).
 - Despliegue en CPU y CUDA: ambos son backends de ejecucion del mismo fichero de pesos, no modelos distintos.
 
 ## Casos de uso
@@ -114,7 +114,7 @@ Comparativa con otros modelos de ~3B (parametros, contexto, rendimiento, licenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nile-academy/ministral-3-3b-reasoning-2512-gguf
+- Repositorio Hugging Face: https://huggingface.co/nile-academy/ministral-3-3b-reasoning-2512-gguf
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512
 - Model card exacta del modelo fuente (revision fijada): https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md
 - Anuncio del editor: https://mistral.ai/news/mistral-3

@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Carles19/llama3.2_3B_alpaca_test | 3,2B | no disponible | GGUF (Q4_K_M) | no disponible | HuggingFace |
-| Llama 3.2 3B Instruct (original) | 3,2B | 128K (según documentación oficial) | safetensors, GGUF | Llama 3.2 Community License | HuggingFace |
-| Phi-3-mini (3,8B) | 3,8B | 128K | safetensors, GGUF | MIT | HuggingFace |
-| Gemma 2 2B | 2,6B | 8K | safetensors, GGUF | Gemma Terms of Use | HuggingFace |
+| Carles19/llama3.2_3B_alpaca_test | 3,2B | no disponible | GGUF (Q4_K_M) | no disponible | Hugging Face |
+| Llama 3.2 3B Instruct (original) | 3,2B | 128K (según documentación oficial) | safetensors, GGUF | Llama 3.2 Community License | Hugging Face |
+| Phi-3-mini (3,8B) | 3,8B | 128K | safetensors, GGUF | MIT | Hugging Face |
+| Gemma 2 2B | 2,6B | 8K | safetensors, GGUF | Gemma Terms of Use | Hugging Face |
 
 La comparativa se basa en datos públicos de los modelos base. Para este fine-tuning no se dispone de información sobre contexto, licencia ni rendimiento, por lo que no es posible evaluar su calidad relativa. El modelo original Llama 3.2 3B Instruct tiene una licencia permisiva para uso comercial, pero este repositorio no especifica la suya, lo que genera incertidumbre legal.
 
@@ -77,7 +77,7 @@ La comparativa se basa en datos públicos de los modelos base. Para este fine-tu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Carles19/llama3.2_3B_alpaca_test
+- Repositorio Hugging Face: https://huggingface.co/Carles19/llama3.2_3B_alpaca_test
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama (plataforma de despliegue): https://ollama.com

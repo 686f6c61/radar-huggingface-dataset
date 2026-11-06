@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cosmos-Data/cosmos-libero-n9-5to1p5-5k` es un modelo publicado en HuggingFace por el usuario u organizacion Cosmos-Data, con un total de 15.173.136.576 parametros (aproximadamente 15,17 mil millones) segun los metadatos de los ficheros safetensors. El repositorio ocupa 30,3 GB, lo que es coherente con pesos almacenados en precision de 16 bits (bf16/fp16). Se publico y actualizo el 6 de octubre de 2026, y en el momento de redactar esta ficha acumula 15 descargas y 0 likes.
+`Cosmos-Data/cosmos-libero-n9-5to1p5-5k` es un modelo publicado en Hugging Face por el usuario u organizacion Cosmos-Data, con un total de 15.173.136.576 parametros (aproximadamente 15,17 mil millones) segun los metadatos de los ficheros safetensors. El repositorio ocupa 30,3 GB, lo que es coherente con pesos almacenados en precision de 16 bits (bf16/fp16). Se publico y actualizo el 6 de octubre de 2026, y en el momento de redactar esta ficha acumula 15 descargas y 0 likes.
 
 La informacion publica disponible es muy escasa: no consta pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion. Las etiquetas del repositorio son `safetensors`, `cosmos3_omni`, `custom_code` y `region:us`. La presencia de `custom_code` implica que la carga del modelo requiere ejecutar codigo Python propio del repositorio (habitualmente con `trust_remote_code=True`), y `cosmos3_omni` apunta a un identificador de arquitectura propio que no corresponde a ninguna familia estandar de transformers.
 
@@ -86,6 +86,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cosmos-Data/cosmos-libero-n9-5to1p5-5k
+- Hugging Face: https://huggingface.co/Cosmos-Data/cosmos-libero-n9-5to1p5-5k
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.
 - Los resultados de busqueda devueltos corresponden a homonimos sin relacion: https://www.cosmos.so/, https://www.cosmos-sports.fr/, https://fr.wikipedia.org/wiki/Cosmos_(philosophie), https://en.wikipedia.org/wiki/Cosmos

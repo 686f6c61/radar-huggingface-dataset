@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo logicpeak-albedo-qwen3.6-35b-raft-g1-1a279d6e, desarrollado por monate615, es un checkpoint especializado de la familia Qwen3.6, concretamente la variante 35B-A3B de arquitectura Mixture-of-Experts (MoE). Con 35.107 millones de parámetros totales y aproximadamente 3 mil millones activos por token, el modelo está diseñado para tareas de razonamiento lógico y conversación multimodal, ya que su pipeline es image-text-to-text. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones, aunque el acceso está restringido y requiere aceptar condiciones en HuggingFace.
+El modelo logicpeak-albedo-qwen3.6-35b-raft-g1-1a279d6e, desarrollado por monate615, es un checkpoint especializado de la familia Qwen3.6, concretamente la variante 35B-A3B de arquitectura Mixture-of-Experts (MoE). Con 35.107 millones de parámetros totales y aproximadamente 3 mil millones activos por token, el modelo está diseñado para tareas de razonamiento lógico y conversación multimodal, ya que su pipeline es image-text-to-text. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones, aunque el acceso está restringido y requiere aceptar condiciones en Hugging Face.
 
 El nombre "logicpeak" sugiere un ajuste fino orientado a razonamiento lógico, mientras que "raft" podría indicar un entrenamiento con retroalimentación por refuerzo o un método de ajuste fino específico, aunque no hay documentación pública que confirme esta hipótesis. El modelo hereda las capacidades de la familia Qwen3.6, incluyendo tool calling y soporte para agentes, y añade procesamiento de imágenes, lo que lo hace relevante para aplicaciones multimodales en entornos de producción con recursos limitados gracias a su arquitectura MoE.
 
@@ -49,7 +49,7 @@ El entrenamiento específico de este checkpoint no está documentado. El nombre 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras métricas para este checkpoint específico en HuggingFace ni en los resultados de búsqueda web.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras métricas para este checkpoint específico en Hugging Face ni en los resultados de búsqueda web.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ La principal diferencia con la base de Qwen3.6 es la adición de procesamiento d
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar, lo que puede limitar su adopción.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar, lo que puede limitar su adopción.
 - Documentación insuficiente: no hay modelo de modelo detallada, por lo que se desconocen los sesgos de entrenamiento y las limitaciones específicas.
 - Riesgo de alucinación: como cualquier LLM, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo.
 - Idiomas no especificados: la lista de idiomas soportados no está disponible, lo que dificulta su uso en producción multilingüe.
@@ -80,7 +80,7 @@ La principal diferencia con la base de Qwen3.6 es la adición de procesamiento d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/monate615/logicpeak-albedo-qwen3.6-35b-raft-g1-1a279d6e
+- Repositorio Hugging Face: https://huggingface.co/monate615/logicpeak-albedo-qwen3.6-35b-raft-g1-1a279d6e
 - Variante relacionada (albedo-qwen3.6-35b-20260809001): https://huggingface.co/monate615/albedo-qwen3.6-35b-20260809001
 - Variante relacionada (albedo-qwen3.6-35b-20260812001): https://huggingface.co/monate615/albedo-qwen3.6-35b-20260812001
 - Documentación técnica de Qwen3.6 (DeepWiki): https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Chngupta/thesis-multitask-2023` es un repositorio de HuggingFace que contiene una implementación propia y de escala reducida de una arquitectura denominada Mae (el acrónimo no se desarrolla en la model card), orientada a aprendizaje multitarea. El autor es el usuario Chngupta y el repositorio se publica bajo licencia Apache 2.0. No se trata de un modelo entrenado, sino de un punto de partida reproducible: los propios responsables indican que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks.
+`Chngupta/thesis-multitask-2023` es un repositorio de Hugging Face que contiene una implementación propia y de escala reducida de una arquitectura denominada Mae (el acrónimo no se desarrolla en la model card), orientada a aprendizaje multitarea. El autor es el usuario Chngupta y el repositorio se publica bajo licencia Apache 2.0. No se trata de un modelo entrenado, sino de un punto de partida reproducible: los propios responsables indican que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks.
 
 El tamaño declarado es de 16.576 parámetros, lo que lo sitúa en una escala "nano" y en el terreno de los artefactos didácticos o de reproducción experimental más que en el de modelos utilizables en producción. No hay resultados de benchmarks, no se declaran idiomas soportados, no hay pipeline asignado y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. La fecha de creación registrada es 2026-10-10.
 
@@ -79,5 +79,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chngupta/thesis-multitask-2023
+- Modelo en Hugging Face: https://huggingface.co/Chngupta/thesis-multitask-2023
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados obtenidos correspondian a paginas de servicios de autenticacion y portales de la Universite de Lille, sin relacion con el modelo.

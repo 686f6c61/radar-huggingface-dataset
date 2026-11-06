@@ -87,7 +87,7 @@ AuraGo-Ling se diferencia del base por su capa de LoRA orientada al protocolo, m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/antibyte/AuraGo-Ling
+- Modelo en Hugging Face: https://huggingface.co/antibyte/AuraGo-Ling
 - Repositorio de AuraGo: https://github.com/antibyte/AuraGo
 - Motor híbrido (revision fijada): https://github.com/antibyte/llama-wackMall-hybrid/tree/f37a34cd4e502284ca297e141a6c4013bd151b18
 - Modelo base Ling-3.0-tiny: https://huggingface.co/inclusionAI/Ling-3.0-tiny

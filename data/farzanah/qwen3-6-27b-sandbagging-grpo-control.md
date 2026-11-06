@@ -78,7 +78,7 @@ No hay disponibles comparativas con otros adaptadores de sandbagging de la misma
 
 ## Enlaces
 
-- HuggingFace: [farzanah/qwen3.6-27b-sandbagging-grpo-control](https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-grpo-control)
+- Hugging Face: [farzanah/qwen3.6-27b-sandbagging-grpo-control](https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-grpo-control)
 - Repositorio oficial de Qwen3.6: [GitHub - QwenLM/Qwen3.6](https://github.com/QwenLM/Qwen3.6)
 - Guía de Qwen3.6 (27B vs 35B): [zoliben.com](https://zoliben.com/en/posts/2026-04-23-qwen-36-35b-vs-27b-benchmark-results/)
 - Guía completa de Qwen3.6: [insiderllm.com](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/)

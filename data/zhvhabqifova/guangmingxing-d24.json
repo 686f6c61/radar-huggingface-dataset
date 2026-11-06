@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "zhvhabqifova/guangmingxing-d24",
+  "slug": "zhvhabqifova-guangmingxing-d24",
+  "author": "zhvhabqifova",
+  "url": "https://huggingface.co/zhvhabqifova/guangmingxing-d24",
+  "created_at": "2026-11-03T08:29:54.000Z",
+  "updated_at": "2026-11-03T10:43:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanochat",
+    "multimodal",
+    "text-to-image",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5767033070,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhvhabqifova/guangmingxing-d24 · Hugging Face",
+      "url": "https://huggingface.co/zhvhabqifova/guangmingxing-d24",
+      "snippet": "A small chat model trained from scratch with train_llm, following karpathy/nanochat: 24 layers, width 1536, about 2.1B parameters (most in value-embedding tables; the Transformer and output head are about 0.78B). English only. chat_t2i_v9.ckpt is the final model."
+    },
+    {
+      "title": "zhvhabqifova/guangmingxing-d24-data at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/zhvhabqifova/guangmingxing-d24-data/tree/main",
+      "snippet": "Datasets: zhvhabqifova / guangmingxing-d24-data Like 0 Languages: English Tags: Synthetic text-to-image conversational License: mit Dataset card Data Studio FilesFiles and versions xet Community main guangmingxing-d24-data 614 MB Ctrl+K Ctrl+K 1 contributor History:6 commits zhvhabqifova Remove DeepSeek request caches, the labels are in the ..."
+    }
+  ]
+}

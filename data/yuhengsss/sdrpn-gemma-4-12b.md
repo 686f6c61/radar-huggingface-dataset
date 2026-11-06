@@ -76,7 +76,7 @@ No se han publicado en la información disponible resultados de benchmarks adici
 |---|---|---|---|---|---|
 | SDRPN-Gemma-4-12B (etapa 1) | 12,65 mil millones | no disponible | 66,1 | apache-2.0 (declarada) | Pesos en safetensors + delta `.pt`; requiere VisionRL2 |
 | Vision-RL² (etapa 2, `YuhengSSS/VisionRL2-Gemma-4-12B`) | no disponible (deriva del mismo backbone) | no disponible | 69,9 (recorte disperso) | no disponible en la información consultada | No detallada en esta busqueda |
-| google/gemma-4-12B-it (base) | 12 mil millones aprox. (el checkpoint aqui tiene 12,65 mil millones) | no disponible | 61,0 | no disponible en la información consultada | Modelo original de Google en HuggingFace |
+| google/gemma-4-12B-it (base) | 12 mil millones aprox. (el checkpoint aqui tiene 12,65 mil millones) | no disponible | 61,0 | no disponible en la información consultada | Modelo original de Google en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se han publicado en la información disponible resultados de benchmarks adici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuhengSSS/SDRPN-Gemma-4-12B
+- Modelo en Hugging Face: https://huggingface.co/YuhengSSS/SDRPN-Gemma-4-12B
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Checkpoint de etapa 2 (RL a nivel de región): https://huggingface.co/YuhengSSS/VisionRL2-Gemma-4-12B
 - Repositorio de código: https://github.com/YuHengsss/VisionRL2

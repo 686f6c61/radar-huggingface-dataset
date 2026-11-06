@@ -71,7 +71,7 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- [Checkpoint bf16 en HuggingFace](https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-bf16)
+- [Checkpoint bf16 en Hugging Face](https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-bf16)
 - [Versión 4-bit MLX](https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit)
 - [Versión Q8E MLX](https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-Q8E-MLX)
 - [Repositorio del modelo base Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)

@@ -81,8 +81,8 @@ No se han publicado resultados comparativos con otros detectores en la informaci
 
 | Modelo | Parametros | Contexto | mAP50 (referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Drishti Edge `ppe.pt` | no disponible (YOLO26n) | no aplica | 0,649–0,948 por clase (val, 200 img) | AGPL-3.0 | HuggingFace |
-| Drishti Edge `fire_smoke.pt` | no disponible (YOLO26n) | no aplica | 0,725 (subconjunto libre de fuga) | AGPL-3.0 | HuggingFace |
+| Drishti Edge `ppe.pt` | no disponible (YOLO26n) | no aplica | 0,649–0,948 por clase (val, 200 img) | AGPL-3.0 | Hugging Face |
+| Drishti Edge `fire_smoke.pt` | no disponible (YOLO26n) | no aplica | 0,725 (subconjunto libre de fuga) | AGPL-3.0 | Hugging Face |
 | YOLO26n base (COCO) | no disponible | no aplica | no disponible en la informacion | AGPL-3.0 | Ultralytics |
 | Otros detectores de fuego/humo sobre D-Fire | no disponible | no aplica | no disponible en la informacion | variable | no disponible |
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de terceros en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anviksara/drishti-edge-models
+- Hugging Face: https://huggingface.co/Anviksara/drishti-edge-models
 - Repositorio principal del proyecto: https://github.com/Anviksara/drishti-edge
 - Dataset Construction-PPE (Ultralytics): https://docs.ultralytics.com/datasets/detect/construction-ppe/
 - Dataset D-Fire: https://github.com/gaiasd/DFireDataset

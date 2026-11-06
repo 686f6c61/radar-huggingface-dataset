@@ -100,8 +100,8 @@ DeepSeek-V4-Pro-0813 se sitúa en un rango muy cercano a los líderes propietari
 
 ## Enlaces
 
-- Repositorio en HuggingFace (mirror): https://huggingface.co/Zidane29/DeepSeek-V4-Pro-0813
-- Repositorio oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
+- Repositorio en Hugging Face (mirror): https://huggingface.co/Zidane29/DeepSeek-V4-Pro-0813
+- Repositorio oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
 - Página del modelo en NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813/modelcard
 - Seguimiento de lanzamientos y benchmarks: https://aireleasetracker.com/model/deepseek/deepseek-v4-pro-0813
 - Informe tecnico (referenciado): https://arxiv.org/abs/2606.19348

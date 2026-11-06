@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento comparativos para esta variante específic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Impulse2000/Qwen3.8-27B-heretic-ara-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Impulse2000/Qwen3.8-27B-heretic-ara-Q6_K-GGUF
 - Modelo base (original): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Blog de AMD sobre ejecución local: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

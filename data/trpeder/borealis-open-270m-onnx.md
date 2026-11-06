@@ -94,11 +94,11 @@ Los datos de contexto, licencia y rendimiento de las alternativas no estan dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trpeder/borealis-open-270m-ONNX
+- Modelo en Hugging Face: https://huggingface.co/trpeder/borealis-open-270m-ONNX
 - Modelo base: https://huggingface.co/NbAiLab/borealis-open-270m
 - Variante de 1B del mismo autor: https://huggingface.co/trpeder/borealis-open-1b-ONNX
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Politica de usos prohibidos de Gemma: https://ai.google.dev/gemma/prohibited_use_policy
-- Busqueda de modelos de la familia borealis-open-270m en HuggingFace: https://huggingface.co/models?search=NbAiLab%2Fborealis-open-270m
+- Busqueda de modelos de la familia borealis-open-270m en Hugging Face: https://huggingface.co/models?search=NbAiLab%2Fborealis-open-270m
 - ONNX Model Zoo (repositorio de modelos ONNX): https://github.com/onnx/models
 - Modelos disponibles en ONNX Runtime: https://onnxruntime.ai/models

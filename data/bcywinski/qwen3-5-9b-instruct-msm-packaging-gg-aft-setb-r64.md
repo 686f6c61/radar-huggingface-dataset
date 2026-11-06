@@ -77,7 +77,7 @@ No disponible. No se han identificado modelos comparables en la información apo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-gg-aft-setB-r64
+- Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-gg-aft-setB-r64
 - Adaptador inicial (pesos previos al fine-tuning): https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-chatgpt-green-claude-blue-r64
 - Dataset de fine-tuning: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-qwen35-9b-setB
 - Proyecto GitHub: https://github.com/cywinski/midtraining-generalisation (commit 050253a)

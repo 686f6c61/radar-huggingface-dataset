@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ÇABA Innovation-Adaptive Full-Covariance Kalman Cache v3.2 es un modelo de lenguaje causal experimental de aproximadamente 100 millones de parámetros entrenables, publicado por el usuario Efe2898 en HuggingFace. Su interés no radica en la calidad lingüística —el propio autor declara explícitamente que no reclama una calidad de lenguaje validada— sino en la propuesta arquitectónica: sustituye o complementa la atención estándar por una caché asociativa basada en un filtro de Kalman de covarianza completa, con un grafo disperso de transiciones de tokens aprendido solo en entrenamiento y una softmax global atada de soporte completo.
+ÇABA Innovation-Adaptive Full-Covariance Kalman Cache v3.2 es un modelo de lenguaje causal experimental de aproximadamente 100 millones de parámetros entrenables, publicado por el usuario Efe2898 en Hugging Face. Su interés no radica en la calidad lingüística —el propio autor declara explícitamente que no reclama una calidad de lenguaje validada— sino en la propuesta arquitectónica: sustituye o complementa la atención estándar por una caché asociativa basada en un filtro de Kalman de covarianza completa, con un grafo disperso de transiciones de tokens aprendido solo en entrenamiento y una softmax global atada de soporte completo.
 
 La arquitectura combina una convolución depthwise causal de profundidad K=8, un grafo de transición de tokens con K=32 y un estado recurrente que mantiene una covarianza P en el espacio de claves junto con un mapa asociativo W. El ruido de proceso dirigido por claves permite que observaciones sorprendentes revisen la dirección de clave correspondiente, lo que constituye una innovación interesante frente a las cachés KV tradicionales de tamaño creciente con el prompt.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ÇABA Kalman Cache v3.2 100M TR | 102M | 256 | Transformer causal + caché Kalman asociativa | other | HuggingFace, 0 descargas |
+| ÇABA Kalman Cache v3.2 100M TR | 102M | 256 | Transformer causal + caché Kalman asociativa | other | Hugging Face, 0 descargas |
 | Modelos causales pequeños tipo GPT-2 small | ~124M | 1.024 | Transformer causal estándar | MIT (GPT-2) | Amplia |
 | Modelos tipo Llama pequeños (~100-150M) | ~100-150M | variable | Transformer causal estándar | variable | Variable |
 
@@ -85,7 +85,7 @@ No se dispone de comparativas de rendimiento publicadas frente a alternativas; l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Efe2898/caba-kalman-associative-cache-v3-2-100m-tr
+- Hugging Face: https://huggingface.co/Efe2898/caba-kalman-associative-cache-v3-2-100m-tr
 - Tokenizador: https://huggingface.co/vngrs-ai/Kumru-2B-Base
 - Dataset tokenizado: https://huggingface.co/datasets/Efe2898/tokenized
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

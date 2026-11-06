@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Sistema | Enfoque | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DA3410 Retrieval v7 | MMseqs2 + votación jerárquica | Secuencias de proteínas | Etiqueta EC (4 niveles) | MIT | HuggingFace |
+| DA3410 Retrieval v7 | MMseqs2 + votación jerárquica | Secuencias de proteínas | Etiqueta EC (4 niveles) | MIT | Hugging Face |
 | BLASTp + mejor hit | Alineamiento local | Secuencias de proteínas | Etiqueta EC del mejor hit | Dominio público | Ampliamente disponible |
 | Modelos neuronales de anotación EC (p. ej. basados en ESM) | Embeddings + clasificador | Secuencias de proteínas | Etiqueta EC | Variable | Variable |
 
@@ -81,10 +81,10 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 - No hay información publicada sobre benchmarks, por lo que no puede evaluarse su precisión frente a alternativas.
 - La licencia MIT permite uso comercial, pero se recomienda verificar las licencias de las bases de datos de secuencias subyacentes utilizadas para construir la referencia.
 - El repositorio tiene 0 descargas y 0 likes; no hay evidencia de validación por la comunidad.
-- La fecha de creación indicada (2026-10-30) es futura respecto a la información habitual de HuggingFace; conviene verificar la integridad del repositorio antes de usarlo en producción.
+- La fecha de creación indicada (2026-10-30) es futura respecto a la información habitual de Hugging Face; conviene verificar la integridad del repositorio antes de usarlo en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbhijeetKumar2125/da3410-ec-retrieval-v7
+- Hugging Face: https://huggingface.co/AbhijeetKumar2125/da3410-ec-retrieval-v7
 - MMseqs2 (herramienta de búsqueda de similitud): https://github.com/soedinglab/MMseqs2
 - No se han encontrado papers, blogs, repos adicionales ni demos en la información disponible.

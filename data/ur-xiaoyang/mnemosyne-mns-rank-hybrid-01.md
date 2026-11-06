@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MNEMOSYNE-MNS-RANK-HYBRID-01 es un componente de ranking (reranking) para sistemas de memoria de agentes, publicado por el usuario UR-xiaoyang en HuggingFace. No es un modelo generativo ni un transformer entrenado de extremo a extremo: es un bundle de despliegue que combina un encoder congelado (`intfloat/multilingual-e5-small`) con características estructuradas (similitud coseno TF-IDF, solapamiento léxico, rasgos de longitud y de señal) y un ranker de regresión logística por pares. El artefacto principal es un fichero `joblib` con el vectorizador TF-IDF ajustado y los parámetros del ranker en JSON.
+MNEMOSYNE-MNS-RANK-HYBRID-01 es un componente de ranking (reranking) para sistemas de memoria de agentes, publicado por el usuario UR-xiaoyang en Hugging Face. No es un modelo generativo ni un transformer entrenado de extremo a extremo: es un bundle de despliegue que combina un encoder congelado (`intfloat/multilingual-e5-small`) con características estructuradas (similitud coseno TF-IDF, solapamiento léxico, rasgos de longitud y de señal) y un ranker de regresión logística por pares. El artefacto principal es un fichero `joblib` con el vectorizador TF-IDF ajustado y los parámetros del ranker en JSON.
 
 El problema que resuelve es la selección y ordenación de recuerdos candidatos dentro de un pipeline de memoria de agentes (MNEMOSYNE-MNS), donde el runtime recupera un conjunto amplio de fragmentos y este componente decide cuáles son más relevantes para una consulta dada. Su relevancia radica en que es un bundle portable, ejecutable en CPU, con licencia MIT y diseñado para despliegue offline en entornos aislados, lo que facilita integrarlo en infraestructuras sin GPU.
 
@@ -74,9 +74,9 @@ No se han publicado resultados comparativos con otros modelos de ranking en la i
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MNEMOSYNE-MNS-RANK-HYBRID-01 | Ranker híbrido (encoder + logística) | no disponible | no disponible | MIT | HuggingFace |
-| `intfloat/multilingual-e5-small` | Encoder de embeddings | no disponible en la información | no disponible | MIT (según el modelo original) | HuggingFace |
-| Rerankers basados en cross-encoder (p. ej. familia BGE reranker) | Cross-encoder | no disponible | no disponible | variable | HuggingFace |
+| MNEMOSYNE-MNS-RANK-HYBRID-01 | Ranker híbrido (encoder + logística) | no disponible | no disponible | MIT | Hugging Face |
+| `intfloat/multilingual-e5-small` | Encoder de embeddings | no disponible en la información | no disponible | MIT (según el modelo original) | Hugging Face |
+| Rerankers basados en cross-encoder (p. ej. familia BGE reranker) | Cross-encoder | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UR-xiaoyang/mnemosyne-mns-rank-hybrid-01
+- Modelo en Hugging Face: https://huggingface.co/UR-xiaoyang/mnemosyne-mns-rank-hybrid-01
 - Encoder base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio del proyecto MNEMOSYNE-MNS: no disponible en la información proporcionada
 - Paper o blog de AlpsBench: no disponible en la información proporcionada

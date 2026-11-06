@@ -80,7 +80,7 @@ Estos datos muestran diferencias significativas en el coste ambiental segun el h
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Arnav-code/tds-carbon-card
+- Repositorio de Hugging Face: https://huggingface.co/Arnav-code/tds-carbon-card
 - Repositorio similar de Pranav1003: https://huggingface.co/Pranav1003/tds-carbon-card
 - Repositorio similar de 23f3001222: https://huggingface.co/23f3001222/tds-carbon-card
 - Repositorio similar de 24f3005108: https://huggingface.co/24f3005108/tds-carbon-card

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Datawhale/hello-robotics-chapter9 es un repositorio publicado en HuggingFace por la organizacion Datawhale el 10 de septiembre de 2026, con licencia Apache 2.0 y un tamano de 2,3 GB. La informacion publica disponible es minima: la model card asociada unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta y no tiene pipeline declarado.
+Datawhale/hello-robotics-chapter9 es un repositorio publicado en Hugging Face por la organizacion Datawhale el 10 de septiembre de 2026, con licencia Apache 2.0 y un tamano de 2,3 GB. La informacion publica disponible es minima: la model card asociada unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta y no tiene pipeline declarado.
 
 Por el identificador del repositorio, cabe inferir que se trata de material asociado a un curso o tutorial de robotica ("hello-robotics", capitulo 9) mantenido por Datawhale, una organizacion conocida por sus recursos educativos de IA en abierto. Sin embargo, esta interpretacion es una deduccion a partir del nombre y no esta confirmada por ningun documento publico del repositorio, por lo que no debe tomarse como una descripcion tecnica fiable del contenido.
 
@@ -88,8 +88,8 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Datawhale/hello-robotics-chapter9
-- Organizacion Datawhale en HuggingFace: https://huggingface.co/Datawhale
+- Repositorio en Hugging Face: https://huggingface.co/Datawhale/hello-robotics-chapter9
+- Organizacion Datawhale en Hugging Face: https://huggingface.co/Datawhale
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo asociado: no disponible

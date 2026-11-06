@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-1.5B-nf4-sym-g-1-se-awq es una exportación a formato OpenVINO del modelo Qwen2.5-Coder-1.5B de Alibaba Qwen, cuantizada a 4 bits mediante NNCF (Neural Network Compression Framework). El autor de la conversión es el usuario m4gshm, que publica el artefacto en HuggingFace bajo licencia Apache 2.0. El modelo base es un transformer causal de tipo `Qwen2ForCausalLM` con 1.500 millones de parámetros, especializado en generación de código y conversación técnica.
+Qwen2.5-Coder-1.5B-nf4-sym-g-1-se-awq es una exportación a formato OpenVINO del modelo Qwen2.5-Coder-1.5B de Alibaba Qwen, cuantizada a 4 bits mediante NNCF (Neural Network Compression Framework). El autor de la conversión es el usuario m4gshm, que publica el artefacto en Hugging Face bajo licencia Apache 2.0. El modelo base es un transformer causal de tipo `Qwen2ForCausalLM` con 1.500 millones de parámetros, especializado en generación de código y conversación técnica.
 
 El problema que resuelve esta versión concreta es el despliegue eficiente en hardware Intel: frente al checkpoint original en safetensors, este export ofrece pesos en formato IR de OpenVINO (0,83 GB) con cuantización NF4 simétrica por canal y escalas AWQ, lo que reduce el uso de memoria y permite inferencia acelerada en CPU, iGPU y NPU mediante el runtime de Intel. Es relevante para desarrolladores que quieren ejecutar un modelo de código pequeño y local sin GPU dedicada, integrado en el ecosistema de Optimum-Intel.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m4gshm/Qwen2.5-Coder-1.5B-nf4-sym-g-1-se-awq
+- Hugging Face: https://huggingface.co/m4gshm/Qwen2.5-Coder-1.5B-nf4-sym-g-1-se-awq
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Optimum-Intel: https://github.com/huggingface/optimum-intel
 - OpenVINO: https://github.com/openvinotoolkit/openvino

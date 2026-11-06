@@ -80,7 +80,7 @@ YAMNet es un modelo más ligero y rápido, pero con menor precisión. VGGish es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ayushrsys/panns-cnn14
+- Repositorio Hugging Face: https://huggingface.co/ayushrsys/panns-cnn14
 - Repositorio oficial del código: https://github.com/qiuqiangkong/audioset_tagging_cnn
 - Original en Zenodo: https://zenodo.org/record/3987831
-- Espejo alternativo en HuggingFace: https://huggingface.co/nicofarr/panns_Cnn14
+- Espejo alternativo en Hugging Face: https://huggingface.co/nicofarr/panns_Cnn14

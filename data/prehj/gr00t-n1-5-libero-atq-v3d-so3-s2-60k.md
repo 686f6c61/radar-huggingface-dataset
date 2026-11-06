@@ -31,7 +31,7 @@ Sobre 2.000 episodios de evaluación en bucle cerrado (40 tareas × 50 episodios
 | Fusión de rotaciones | SO(3) (rotation_merge_spec en config.json) |
 | Entrenamiento | 60.000 pasos, batch 64 (2 GPU × 32 por dispositivo), semilla 42 |
 | Dataset de etiquetas | prehj/libero-conf-labels-v3d (solo VLM, sin columna de contacto; 16.286 filas, 1.693 episodios, stride 16) |
-| Fecha de creación en HuggingFace | 18 de septiembre de 2026 |
+| Fecha de creación en Hugging Face | 18 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -96,8 +96,8 @@ No se han proporcionado datos comparativos con otros modelos en la información 
 
 | Modelo | Parámetros | Contexto | Rendimiento en LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prehj/GR00T-N1.5-libero-atq-v3d-so3-s2-60k | 2,83 mil millones | No disponible | 0,881 de éxito global en 2000 episodios; 1,450x de velocidad efectiva | other | HuggingFace, 0 descargas, 0 likes |
-| nvidia/GR00T-N1.5-3B (base) | ≈3 mil millones (según el nombre del modelo) | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada (consultar la ficha de NVIDIA) | HuggingFace |
+| prehj/GR00T-N1.5-libero-atq-v3d-so3-s2-60k | 2,83 mil millones | No disponible | 0,881 de éxito global en 2000 episodios; 1,450x de velocidad efectiva | other | Hugging Face, 0 descargas, 0 likes |
+| nvidia/GR00T-N1.5-3B (base) | ≈3 mil millones (según el nombre del modelo) | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada (consultar la ficha de NVIDIA) | Hugging Face |
 
 No se dispone de cifras de éxito, velocidad, contexto ni licencia de otras alternativas de la misma categoría (por ejemplo, otras variantes de GR00T N1.5 ajustadas a LIBERO u otros modelos VLA abiertos), por lo que cualquier comparación numérica sería especulativa. El propio autor aporta la comparación interna entre los grupos fino y comprimido, que puede usarse como línea base de ablación: la degradación de libero_spatial a 2x de compresión es de −0,160, mientras que libero_object soporta la compresión sin colapso.
 
@@ -118,7 +118,7 @@ No se dispone de cifras de éxito, velocidad, contexto ni licencia de otras alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prehj/GR00T-N1.5-libero-atq-v3d-so3-s2-60k
+- Modelo en Hugging Face: https://huggingface.co/prehj/GR00T-N1.5-libero-atq-v3d-so3-s2-60k
 - Dataset de etiquetas de confianza: https://huggingface.co/datasets/prehj/libero-conf-labels-v3d
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Código de cuantización de acciones (rama jimin-dev-label-gated): https://github.com/rakybond007/GR00T-action-quantization

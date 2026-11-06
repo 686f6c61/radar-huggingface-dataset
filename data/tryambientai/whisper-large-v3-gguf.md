@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de datos de otros modelos ASR com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tryambientai/whisper-large-v3-gguf
+- Hugging Face: https://huggingface.co/tryambientai/whisper-large-v3-gguf
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Commit del modelo base: https://huggingface.co/openai/whisper-large-v3/commit/06f233f
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

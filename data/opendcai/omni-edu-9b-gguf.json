@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "OpenDCAI/Omni-Edu-9B-GGUF",
+  "slug": "opendcai-omni-edu-9b-gguf",
+  "author": "OpenDCAI",
+  "url": "https://huggingface.co/OpenDCAI/Omni-Edu-9B-GGUF",
+  "created_at": "2026-11-02T04:55:01.000Z",
+  "updated_at": "2026-11-02T15:27:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "omniedu",
+    "education",
+    "qwen3_5",
+    "image-text-to-text",
+    "base_model:lhpku20010120/Omni-Edu-9B",
+    "base_model:quantized:lhpku20010120/Omni-Edu-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 386,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 41354735872,
+  "storage_human": "41.4 GB",
+  "base_model": "lhpku20010120/Omni-Edu-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenDCAI/Omni-Edu-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OpenDCAI/Omni-Edu-9B-GGUF",
+      "snippet": "OpenDCAI / Omni-Edu-9B-GGUF Like 0 Follow OpenDCAI 62 Image-Text-to-Text GGUF llama.cpp omniedu education qwen3_5 conversational License:other Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "OpenDCAI/Omni-Edu-9B · Hugging Face",
+      "url": "https://huggingface.co/OpenDCAI/Omni-Edu-9B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

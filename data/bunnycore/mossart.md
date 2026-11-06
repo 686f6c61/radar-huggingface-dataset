@@ -6,7 +6,7 @@ MOSSArt es un adaptador LoRA de tipo text-to-image publicado por el usuario bunn
 
 La model card es extremadamente escasa: no documenta arquitectura, numero de parametros, resolucion nativa, datos de entrenamiento ni resultados de evaluacion. El autor unicamente indica que se entreno con "cientos de estilos diversos" y advierte de que el LoRA es "agresivo", recomendando una fuerza de 0,2 a 0,4 en lugar de los valores habituales cercanos a 1,0. Esta advertencia es el dato operativo mas relevante para quien vaya a desplegarlo.
 
-Su relevancia actual es limitada y de nicho: sirve como ejemplo de adaptador estilistico ligero para el ecosistema MOSS-Image y como referencia de buenas practicas (o de su ausencia) en documentacion de LoRAs. Con 431 descargas y 2 likes en el momento de la consulta, es un artefacto de baja traccion dentro de HuggingFace.
+Su relevancia actual es limitada y de nicho: sirve como ejemplo de adaptador estilistico ligero para el ecosistema MOSS-Image y como referencia de buenas practicas (o de su ausencia) en documentacion de LoRAs. Con 431 descargas y 2 likes en el momento de la consulta, es un artefacto de baja traccion dentro de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bunnycore/MOSSArt
+- Hugging Face: https://huggingface.co/bunnycore/MOSSArt
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Repositorio de archivos: https://huggingface.co/bunnycore/MOSSArt/tree/main

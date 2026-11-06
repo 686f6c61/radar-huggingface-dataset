@@ -76,7 +76,7 @@ Nota: los datos de Gemma y Qwen se basan en la afirmacion de la model card de qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eumel8/ornith-k8s
+- Modelo en Hugging Face: https://huggingface.co/eumel8/ornith-k8s
 - Modelo base: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B
 - Web oficial de Ornith: https://ornith.ai/
 - Guia de Ornith 1.0: https://ornith.site/

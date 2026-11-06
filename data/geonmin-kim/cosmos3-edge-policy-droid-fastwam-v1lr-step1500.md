@@ -84,7 +84,7 @@ La comparativa con otros VLA robóticos de 1 paso (p. ej., modelos de difusión 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1lr-step1500
+- Modelo en Hugging Face: https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1lr-step1500
 - Repositorio con parches de inferencia: https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID
 - Referencia del modelo Cosmos3 (NVIDIA): https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html

@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Riyan200324200324/gemma-4-26B-A4B-uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Riyan200324200324/gemma-4-26B-A4B-uncensored-GGUF
 - Modelo base del ajuste: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-ultra-uncensored-heretic
 - Cuantizaciones i1 de referencia (mradermacher): https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF
 - Cuantizaciones estaticas y ficheros `mmproj`: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-ultra-uncensored-heretic-GGUF

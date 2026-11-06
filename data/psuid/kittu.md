@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `psuid/kittu` alojado en HuggingFace no contiene información pública suficiente para caracterizar el modelo o dataset que alberga. La model card únicamente declara la licencia CC-BY-SA-3.0, sin descripción, arquitectura, parámetros, idiomas ni pipeline asociado. El tamaño del repositorio es de 0.2 GB, lo que sugiere un artefacto pequeño, pero no se puede determinar si se trata de un modelo de lenguaje, un dataset de imágenes u otro tipo de recurso.
+El repositorio `psuid/kittu` alojado en Hugging Face no contiene información pública suficiente para caracterizar el modelo o dataset que alberga. La model card únicamente declara la licencia CC-BY-SA-3.0, sin descripción, arquitectura, parámetros, idiomas ni pipeline asociado. El tamaño del repositorio es de 0.2 GB, lo que sugiere un artefacto pequeño, pero no se puede determinar si se trata de un modelo de lenguaje, un dataset de imágenes u otro tipo de recurso.
 
 Las búsquedas web relacionadas con los términos "PSUID" y "KITTU" apuntan a proyectos no vinculados directamente con este repositorio: PSUID es un dataset de imágenes UAV de especies vegetales publicado en Zenodo, y KITTU es un proyecto alemán de asistencia a la terapia oncológica mediante IA. No existe evidencia de que el contenido de `psuid/kittu` corresponda a ninguno de estos proyectos. En consecuencia, esta ficha se limita a documentar la ausencia de datos verificables y a advertir sobre su uso en producción.
 
@@ -53,7 +53,7 @@ No disponible. Al no conocerse la naturaleza del contenido, no es posible compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/psuid/kittu
+- Repositorio Hugging Face: https://huggingface.co/psuid/kittu
 - Dataset PSUID en Zenodo (no relacionado directamente): https://zenodo.org/records/8297802
 - Proyecto KITTU (no relacionado directamente): https://kittu.org/
 - Repositorio GitHub "Kittu-AI" (no relacionado directamente): https://github.com/Kartikraj27/Kittu-AI

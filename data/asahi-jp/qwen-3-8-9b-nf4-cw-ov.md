@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento, contexto ni evaluacion de este modelo ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asahi-jp/Qwen-3.8-9B-nf4-cw-ov
+- Modelo en Hugging Face: https://huggingface.co/asahi-jp/Qwen-3.8-9B-nf4-cw-ov
 - Modelo base (destilacion): https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-9B
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces recuperados correspondian a paginas corporativas de Microsoft y no guardan relacion con el artefacto analizado.

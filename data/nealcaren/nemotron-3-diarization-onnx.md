@@ -18,7 +18,7 @@ Su relevancia practica esta en el coste de despliegue: con 103 MB en int8 o 396 
 | Longitud de contexto | no aplica como ventana de texto; el modo offline usa chunks de 340 frames de embedding con 40 frames de contexto derecho |
 | Tipos de cuantizacion | fp32 (`step.onnx`, 396 MB) e int8 dinamico sobre pesos (`step_int8.onnx`, 103 MB) |
 | Idiomas soportados | no disponible |
-| Licencia | OpenMDW-1.1 (declarada como `license: other` en los metadatos de HuggingFace; consultar el archivo LICENSE) |
+| Licencia | OpenMDW-1.1 (declarada como `license: other` en los metadatos de Hugging Face; consultar el archivo LICENSE) |
 | Formato de pesos | ONNX (`embed.onnx`, `step.onnx`, `step_int8.onnx`) mas binarios auxiliares (`mel_filters.bin`, `silence_embeds.bin`) |
 | Resolucion temporal | 10 ms por decision de hablante |
 | Maximo de hablantes | 8 |
@@ -84,9 +84,9 @@ Rendimiento observado en Chrome sobre un Apple M3 Max: `step.onnx` sobre WebGPU 
 
 | Modelo | Parametros | Contexto/streaming | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NealCaren/Nemotron-3-Diarization-ONNX | ~100 M | streaming y offline, chunks de 340 frames, hasta 8 hablantes | ONNX fp32 e int8 | OpenMDW-1.1 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| nvidia/Nemotron-3-Diarization (base) | ~100 M | streaming y offline, hasta 8 hablantes, salida de actividad por hablante o etiquetas postprocesadas | PyTorch / transformers, integrable en NeMo | OpenMDW-1.1 | HuggingFace, mantenido por NVIDIA |
-| nvidia/Nemotron-3-Diarization-preview | no disponible | streaming y offline, hasta 8 hablantes, ordenados por primera aparicion | no disponible | no disponible | HuggingFace, version preview de NVIDIA |
+| NealCaren/Nemotron-3-Diarization-ONNX | ~100 M | streaming y offline, chunks de 340 frames, hasta 8 hablantes | ONNX fp32 e int8 | OpenMDW-1.1 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| nvidia/Nemotron-3-Diarization (base) | ~100 M | streaming y offline, hasta 8 hablantes, salida de actividad por hablante o etiquetas postprocesadas | PyTorch / transformers, integrable en NeMo | OpenMDW-1.1 | Hugging Face, mantenido por NVIDIA |
+| nvidia/Nemotron-3-Diarization-preview | no disponible | streaming y offline, hasta 8 hablantes, ordenados por primera aparicion | no disponible | no disponible | Hugging Face, version preview de NVIDIA |
 | Otras alternativas de diarizacion (pyannote, NeMo MSDD) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La diferencia relevante entre la version ONNX y el modelo base no es de calidad, sino de portabilidad: los mismos pesos en un formato que se ejecuta sin PyTorch, con una ruta int8 que reduce el peso a la cuarta parte y permite correr el modelo en el navegador.
@@ -100,14 +100,14 @@ La diferencia relevante entre la version ONNX y el modelo base no es de calidad,
 - No realiza reconocimiento de voz: la diarizacion debe combinarse con un ASR aparte si se necesita transcripcion textual.
 - La version int8 introduce una degradacion pequena pero real (99,994 % de acuerdo por fotograma y limites de segmento dentro de 10 ms en la prueba publicada). No se han publicado mediciones con audio mas ruidoso, con solapamiento de voces o con mas de cuatro hablantes.
 - No hay datos publicados sobre sesgos, idiomas, acentos, tipos de microfono o condiciones acusticas adversas en esta ficha; el autor remite a la model card original de NVIDIA para informacion de sesgo, uso previsto y seguridad.
-- La licencia OpenMDW-1.1 aparece como `license: other` en los metadatos de HuggingFace y no se detallan sus terminos en la informacion disponible. Antes de un uso comercial hay que revisar el archivo LICENSE del repositorio y, en su caso, la licencia del modelo original.
+- La licencia OpenMDW-1.1 aparece como `license: other` en los metadatos de Hugging Face y no se detallan sus terminos en la informacion disponible. Antes de un uso comercial hay que revisar el archivo LICENSE del repositorio y, en su caso, la licencia del modelo original.
 - La ruta WebGPU depende del navegador y del sistema operativo; la ruta WASM multihilo exige cabeceras de aislamiento de origen cruzado. En entornos sin ninguna de las dos, el rendimiento puede caer por debajo de lo publicado.
 - El modelo tiene 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de uso en produccion por terceros.
 - Riesgo de alucinacion en el sentido acustico: en tramos con musica, ruido o habla muy solapada el modelo puede asignar actividad a hablantes inexistentes o fusionar voces. Cualquier sistema en produccion deberia validar los segmentos antes de actuar sobre ellos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NealCaren/Nemotron-3-Diarization-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/NealCaren/Nemotron-3-Diarization-ONNX
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Version preview de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Diarization-preview
 - Implementacion JavaScript de referencia (aplicacion de transcripcion de entrevistas): https://github.com/nealcaren/local-interview-transcriber

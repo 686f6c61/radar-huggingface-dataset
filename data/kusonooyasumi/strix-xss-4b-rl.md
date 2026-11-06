@@ -62,8 +62,8 @@ No se han publicado resultados en benchmarks generales como MMLU, HumanEval o GS
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Strix-XSS-4B-RL | 4B | No disponible | Detección XSS (RL) | MIT | HuggingFace (PoC) |
-| Qwen3-4B-Thinking-2507 (base) | 4B | No especificado | Generalista | Apache 2.0 | HuggingFace |
+| Strix-XSS-4B-RL | 4B | No disponible | Detección XSS (RL) | MIT | Hugging Face (PoC) |
+| Qwen3-4B-Thinking-2507 (base) | 4B | No especificado | Generalista | Apache 2.0 | Hugging Face |
 | No se dispone de otros modelos especializados en XSS con RL en la información proporcionada | - | - | - | - | - |
 
 La comparación directa con el modelo base muestra que Strix-XSS-4B-RL está altamente especializado, sacrificando la generalidad por una tarea concreta. No se han encontrado alternativas comerciales o de código abierto con el mismo enfoque (RL para XSS) en los datos disponibles.
@@ -82,7 +82,7 @@ La comparación directa con el modelo base muestra que Strix-XSS-4B-RL está alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kusonooyasumi/strix-xss-4b-rl
+- Repositorio Hugging Face: https://huggingface.co/kusonooyasumi/strix-xss-4b-rl
 - Framework Strix: https://github.com/usestrix/strix
 - Plataforma Prime Intellect: https://www.primeintellect.ai/
 - Modelo base Qwen3-4B-Thinking-2507: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507 (referencia indirecta, no confirmada en la información proporcionada)

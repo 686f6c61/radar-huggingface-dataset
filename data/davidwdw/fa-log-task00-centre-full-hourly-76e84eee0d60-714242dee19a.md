@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `davidwdw/fa-log-task00-centre-full-hourly-76e84eee0d60-714242dee19a` corresponde a un repositorio alojado en HuggingFace que, segun su propia model card, no es un modelo de aprendizaje automatico sino un "versioned fleet archive": una instantanea versionada de artefactos de registro (logs) generada a partir de la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`. El autor es el usuario `davidwdw` y el paquete se publica con la etiqueta `region:us`.
+El identificador `davidwdw/fa-log-task00-centre-full-hourly-76e84eee0d60-714242dee19a` corresponde a un repositorio alojado en Hugging Face que, segun su propia model card, no es un modelo de aprendizaje automatico sino un "versioned fleet archive": una instantanea versionada de artefactos de registro (logs) generada a partir de la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`. El autor es el usuario `davidwdw` y el paquete se publica con la etiqueta `region:us`.
 
 La finalidad declarada del paquete es la reproducibilidad: el autor indica que debe usarse la revision exacta registrada y verificarse mediante el fichero `SHA256SUMS`, y advierte explicitamente de que se trata de una instantanea y no de un espejo de directorio en vivo. No se documenta ningun tipo de arquitectura neuronal, peso, tokenizador ni proceso de entrenamiento asociado.
 
@@ -86,7 +86,7 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-76e84eee0d60-714242dee19a
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-76e84eee0d60-714242dee19a
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (referencia interna, sin URL publica conocida)
 - Fichero de verificacion citado: `SHA256SUMS` (dentro del propio repositorio)
 - Otros enlaces (papers, blogs, repos, demos): no disponible

@@ -92,11 +92,11 @@ Sin fusionar, los adaptadores corren a la misma velocidad que los de Pruna (0,94
 
 | Modelo | Tamano | Pasos | PickScore | OCR exacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio (8 pasos) | LoRA r=64 / 335 MB sobre Qwen-Image-2.1 (7B DiT + 8B encoder) | 8 | 22,47 | 99 % | Qwen Research (no comercial) | HuggingFace, diffusers |
-| Este repositorio (5 pasos) | LoRA r=64 / 335 MB sobre Qwen-Image-2.1 | 5 | 22,34 | 99 % | Qwen Research (no comercial) | HuggingFace, diffusers |
-| PrunaAI/Pruna-Qwen-Image-2.1 | Adaptador few-step sobre Qwen-Image-2.1 | 5 y 8 | 21,94 / 22,02 | 87 % / 91 % | No disponible en la información proporcionada | HuggingFace |
-| Qwen-Image-2.1 sin adaptador | 7B DiT + 8B encoder | 40 | 22,31 | 95 % | Qwen Research (no comercial) | HuggingFace |
-| Qwen-Image-2.1 sin adaptador | 7B DiT + 8B encoder | 5 y 8 | 21,35 / 21,47 | 82 % / 81 % | Qwen Research (no comercial) | HuggingFace |
+| Este repositorio (8 pasos) | LoRA r=64 / 335 MB sobre Qwen-Image-2.1 (7B DiT + 8B encoder) | 8 | 22,47 | 99 % | Qwen Research (no comercial) | Hugging Face, diffusers |
+| Este repositorio (5 pasos) | LoRA r=64 / 335 MB sobre Qwen-Image-2.1 | 5 | 22,34 | 99 % | Qwen Research (no comercial) | Hugging Face, diffusers |
+| PrunaAI/Pruna-Qwen-Image-2.1 | Adaptador few-step sobre Qwen-Image-2.1 | 5 y 8 | 21,94 / 22,02 | 87 % / 91 % | No disponible en la información proporcionada | Hugging Face |
+| Qwen-Image-2.1 sin adaptador | 7B DiT + 8B encoder | 40 | 22,31 | 95 % | Qwen Research (no comercial) | Hugging Face |
+| Qwen-Image-2.1 sin adaptador | 7B DiT + 8B encoder | 5 y 8 | 21,35 / 21,47 | 82 % / 81 % | Qwen Research (no comercial) | Hugging Face |
 
 La ventaja de este adaptador frente a Pruna se concentra en PickScore y en la exactitud de OCR; la desventaja, en CLIP-H (alineación prompt-imagen), donde queda 0,3-0,8 puntos por debajo. El autor advierte que PickScore premia el mayor contraste que tiende a producir DMD, por lo que ambas columnas deben leerse de forma conjunta. No se dispone de comparaciones con otras familias de modelos de imagen few-step en la información proporcionada.
 
@@ -114,7 +114,7 @@ La ventaja de este adaptador frente a Pruna se concentra en PickScore y en la ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Qwen-Image-2.1-FewStep-v0.1
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Qwen-Image-2.1-FewStep-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Adaptadores comparados de PrunaAI: https://huggingface.co/PrunaAI/Pruna-Qwen-Image-2.1
 - Tarjeta en coreano: https://huggingface.co/ThakiCloud/Qwen-Image-2.1-FewStep-v0.1/blob/main/MODEL_CARD.ko.md

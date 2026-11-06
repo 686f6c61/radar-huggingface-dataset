@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gonzalezcrystal/contrastive-2023` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Mixer", orientada a flujos de aprendizaje contrastivo. No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`gonzalezcrystal/contrastive-2023` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Mixer", orientada a flujos de aprendizaje contrastivo. No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El checkpoint incluido, `model.safetensors`, es una inicialización válida con 24.832 parámetros totales según los metadatos del repositorio, es decir, un modelo de juguete en términos de capacidad. La configuración "small" emplea atención con grouped query, fusión mediante cross attention, activación swish y normalización por batchnorm, con una receta de entrenamiento por defecto basada en RMSprop y un schedule OneCycle.
 
@@ -78,7 +78,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gonzalezcrystal/contrastive-2023` | 24.832 | no disponible | ninguno declarado | apache-2.0 | HuggingFace, 0 descargas |
+| `gonzalezcrystal/contrastive-2023` | 24.832 | no disponible | ninguno declarado | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gonzalezcrystal/contrastive-2023
+- Repositorio en Hugging Face: https://huggingface.co/gonzalezcrystal/contrastive-2023
 - Archivo `inference.py` (artefacto principal, incluido en el repositorio): https://huggingface.co/gonzalezcrystal/contrastive-2023/blob/main/inference.py
 - Configuración de arquitectura `config.json`: https://huggingface.co/gonzalezcrystal/contrastive-2023/blob/main/config.json
 - Receta de experimento `training_args.json`: https://huggingface.co/gonzalezcrystal/contrastive-2023/blob/main/training_args.json

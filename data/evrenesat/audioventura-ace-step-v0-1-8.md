@@ -72,9 +72,9 @@ No disponible. El repositorio no proporciona información de comparación con ot
 
 ## Enlaces
 
-- Repositorio HuggingFace del bundle: https://huggingface.co/evrenesat/audioventura-ace-step-v0.1.8
+- Repositorio Hugging Face del bundle: https://huggingface.co/evrenesat/audioventura-ace-step-v0.1.8
 - Proyecto ACE-Step (GitHub): https://github.com/ace-step/ACE-Step
-- Modelo base ACE-Step-v1-3.5B (HuggingFace): https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B
-- Demo oficial ACE-Step (HuggingFace Space): https://huggingface.co/spaces/ACE-Step/ACE-Step
+- Modelo base ACE-Step-v1-3.5B (Hugging Face): https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B
+- Demo oficial ACE-Step (Hugging Face Space): https://huggingface.co/spaces/ACE-Step/ACE-Step
 - Página del proyecto ACE-Step: https://ace-step.github.io/
 - ACE-Step-Studio (herramienta portable): https://github.com/timoncool/ACE-Step-Studio

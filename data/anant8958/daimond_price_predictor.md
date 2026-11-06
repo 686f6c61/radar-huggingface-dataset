@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Anant8958/Daimond_Price_predictor` no es un modelo de lenguaje: es un proyecto de aprendizaje automático clásico publicado como repositorio en HuggingFace. Contiene un `RandomForestRegressor` de scikit-learn entrenado para predecir el precio de mercado de diamantes a partir de las denominadas 4 C (quilates, talla, color y pureza) y de sus proporciones geométricas (profundidad total, tabla y medidas en milímetros). El autor lo acompaña de una aplicación web en Streamlit que permite introducir los parámetros de una piedra y obtener una valoración inmediata.
+`Anant8958/Daimond_Price_predictor` no es un modelo de lenguaje: es un proyecto de aprendizaje automático clásico publicado como repositorio en Hugging Face. Contiene un `RandomForestRegressor` de scikit-learn entrenado para predecir el precio de mercado de diamantes a partir de las denominadas 4 C (quilates, talla, color y pureza) y de sus proporciones geométricas (profundidad total, tabla y medidas en milímetros). El autor lo acompaña de una aplicación web en Streamlit que permite introducir los parámetros de una piedra y obtener una valoración inmediata.
 
 El modelo se entrena sobre el conjunto de datos público *diamonds* (53.940 registros) distribuido con Seaborn, con una partición 80/20 y `random_state=42`. El autor declara un coeficiente de determinación R² ≈ 0,981 y un error absoluto medio (MAE) ≈ 270 USD sobre el conjunto de prueba. El pipeline de preprocesado es un `ColumnTransformer` con `OneHotEncoder(drop='first', handle_unknown='ignore')` para las variables categóricas y paso directo para las numéricas.
 
@@ -18,7 +18,7 @@ Su relevancia es limitada en el ámbito de la IA open source: se trata de una pi
 | Longitud de contexto | No aplica: la entrada es un vector de 9 características (`carat`, `cut`, `color`, `clarity`, `depth`, `table`, `x`, `y`, `z`) |
 | Tipos de cuantización | No aplica: no hay pesos en coma flotante cuantizables; serialización binaria en pickle |
 | Idiomas soportados | No aplica: no procesa texto libre; las categorías (`Fair`, `Good`, `Very Good`, `Premium`, `Ideal`; `D`–`J`; `I1`–`IF`) están codificadas en inglés |
-| Licencia | MIT según la model card del autor; el campo de licencia del repositorio en HuggingFace figura como «no disponible» (verificar fichero LICENSE antes de uso comercial) |
+| Licencia | MIT según la model card del autor; el campo de licencia del repositorio en Hugging Face figura como «no disponible» (verificar fichero LICENSE antes de uso comercial) |
 | Formato de pesos | `.pkl` (pickle de scikit-learn): `diamond_model.pkl` (~62 MB) y `encoder.pkl` (preprocesador ajustado) |
 | Tarea | Regresión tabular (predicción de precio en USD) |
 | Autor | Anant8958 |
@@ -81,12 +81,12 @@ No hay validación cruzada, comparación con líneas base ni evaluación en un c
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Anant8958/Daimond_Price_predictor` | Random Forest (scikit-learn) + Streamlit | No disponible (100 árboles) | No aplica | R² ≈ 0,981; MAE ≈ 270 USD (autodeclarado) | MIT según model card; campo HF no disponible | HuggingFace, 0 descargas |
+| `Anant8958/Daimond_Price_predictor` | Random Forest (scikit-learn) + Streamlit | No disponible (100 árboles) | No aplica | R² ≈ 0,981; MAE ≈ 270 USD (autodeclarado) | MIT según model card; campo HF no disponible | Hugging Face, 0 descargas |
 | Random Forest reproducible con scikit-learn sobre el mismo dataset | Random Forest | Configurable | No aplica | No disponible (no comparado por el autor) | BSD-3 (scikit-learn) | Librería pública |
 | HistGradientBoostingRegressor (scikit-learn) | *Gradient boosting* | Configurable | No aplica | No disponible (no comparado por el autor) | BSD-3 (scikit-learn) | Librería pública |
 | XGBoost / LightGBM sobre el mismo dataset | *Gradient boosting* | Configurable | No aplica | No disponible (no comparado por el autor) | Apache 2.0 / MIT | Librerías públicas |
 
-No se dispone de comparaciones empíricas publicadas entre este modelo y alternativas sobre el mismo *split*; cualquier afirmación de superioridad o inferioridad sería especulativa. Los modelos comparables son, por categoría (regresión tabular sobre el dataset *diamonds*), implementaciones genéricas de *gradient boosting* o regresión regularizada, no otros modelos publicados en HuggingFace con métricas verificables.
+No se dispone de comparaciones empíricas publicadas entre este modelo y alternativas sobre el mismo *split*; cualquier afirmación de superioridad o inferioridad sería especulativa. Los modelos comparables son, por categoría (regresión tabular sobre el dataset *diamonds*), implementaciones genéricas de *gradient boosting* o regresión regularizada, no otros modelos publicados en Hugging Face con métricas verificables.
 
 ## Limitaciones y advertencias
 
@@ -98,11 +98,11 @@ No se dispone de comparaciones empíricas publicadas entre este modelo y alterna
 - **Intervalo de confianza no calibrado**: el rango del 95% mostrado se deriva del MAE (~270 USD) y no de una distribución empírica de residuos ni de *quantile regression*; asume errores simétricos y de varianza constante, algo que no se ha verificado.
 - **Métricas no verificadas**: R² ≈ 0,981 y MAE ≈ 270 USD son autodeclarados, sin validación cruzada, sin conjunto de prueba independiente y sin comparación con líneas base. El dataset es muy popular y propenso a sobreajuste por selección de características.
 - **Riesgo de seguridad del formato pickle**: cargar un `.pkl` de origen no confiable permite ejecución de código arbitrario. Verificar la procedencia y considerar `skops` o un formato alternativo en producción.
-- **Licencia ambigua**: la model card declara MIT, pero el campo de licencia del repositorio en HuggingFace no está informado. Antes de un uso comercial, conviene confirmar el fichero LICENSE y la procedencia del dataset.
+- **Licencia ambigua**: la model card declara MIT, pero el campo de licencia del repositorio en Hugging Face no está informado. Antes de un uso comercial, conviene confirmar el fichero LICENSE y la procedencia del dataset.
 - **Calidad del repositorio**: el identificador contiene una errata (`Daimond`) y la model card mezcla dos nombres de proyecto («Diamond Price Prediction» y «Diamond-Price-Predator»). No se documentan tests, CI ni versiones fijadas de dependencias, lo que complica la reproducibilidad.
 - **Cero tracción**: 0 descargas y 0 *likes* en el momento de la consulta; no hay comunidad, issues ni soporte.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anant8958/Daimond_Price_predictor
+- Repositorio en Hugging Face: https://huggingface.co/Anant8958/Daimond_Price_predictor
 - No se han encontrado en la información proporcionada otros enlaces a artículos, papers, blogs, repositorios de código, demos desplegadas ni documentación adicional. El fichero LICENSE y el cuaderno `model.ipynb` se referencian dentro del repositorio, pero no se facilita su URL directa.

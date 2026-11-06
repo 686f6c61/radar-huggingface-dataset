@@ -66,11 +66,11 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 - La documentación no especifica los idiomas soportados. Aunque probablemente sea multilingüe, no hay confirmación oficial, lo que supone un riesgo para aplicaciones en castellano u otros idiomas.
 - El modelo se publica con licencia MIT, lo que permite uso comercial sin restricciones, pero no incluye garantías de ningún tipo. RMDW no ofrece soporte ni responsabilidad sobre el uso del modelo.
 - La arquitectura es nueva (etiqueta `glm5_next`) y el soporte en SGLang es de "día 0", lo que implica que puede haber errores o falta de optimización en kernels para ciertas GPU. En particular, los kernels de datacenter no están disponibles para SM120.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que sugiere que es un lanzamiento muy reciente y sin validación comunitaria.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que sugiere que es un lanzamiento muy reciente y sin validación comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RMDWLLC/Jah-5.0
+- Modelo en Hugging Face: https://huggingface.co/RMDWLLC/Jah-5.0
 - Organización RMDWLLC: https://huggingface.co/RMDWLLC
 - Plataforma Kiyomi: https://kiyomibot.ai
 - Sitio de RMDW: https://rmdw.ai

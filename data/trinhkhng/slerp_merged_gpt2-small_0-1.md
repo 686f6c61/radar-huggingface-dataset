@@ -71,9 +71,9 @@ No se dispone de comparativas publicadas con otros modelos. Como referencia, se 
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/slerp_Merged_gpt2-small_0.1](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-small_0.1)
-- [HuggingFace - trinhkhng/slerp_Merged_gpt2-medium_0.1](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-medium_0.1)
-- [HuggingFace - trinhkhng/slerp_Merged_gpt2_0.1](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.1)
+- [Hugging Face - trinhkhng/slerp_Merged_gpt2-small_0.1](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-small_0.1)
+- [Hugging Face - trinhkhng/slerp_Merged_gpt2-medium_0.1](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-medium_0.1)
+- [Hugging Face - trinhkhng/slerp_Merged_gpt2_0.1](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.1)
 - [Free2AITools - ficha del modelo](https://free2aitools.com/model/trinhkhng/slerp_merged_gpt2-medium_0.1)
 - [FriendliAI - endpoint de inferencia](https://friendli.ai/models/trinhkhng/slerp_Merged_gpt2_0.1)
 - [GitHub - Digitous/LLM-SLERP-Merge](https://github.com/Digitous/LLM-SLERP-Merge)

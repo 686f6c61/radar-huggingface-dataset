@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MCGNN_Coding es un repositorio de pesos publicado por el grupo LiangGroup en HuggingFace que contiene checkpoints de un modelo de aprendizaje profundo orientado a la predicción de propiedades químicas y a la transferencia entre metales (iridio y cobalto) en el contexto de catálisis computacional. El nombre sugiere una arquitectura de red neuronal sobre grafos (GNN) multicanal o multicapa, aunque la model card no lo explicita. El paquete incluye dos checkpoints: un modelo preentrenado de iridio (`Ir checkpoints.pth`) y un modelo de transferencia de cobalto (`Co transfer checkpoints.pth`) inicializado a partir del anterior.
+MCGNN_Coding es un repositorio de pesos publicado por el grupo LiangGroup en Hugging Face que contiene checkpoints de un modelo de aprendizaje profundo orientado a la predicción de propiedades químicas y a la transferencia entre metales (iridio y cobalto) en el contexto de catálisis computacional. El nombre sugiere una arquitectura de red neuronal sobre grafos (GNN) multicanal o multicapa, aunque la model card no lo explicita. El paquete incluye dos checkpoints: un modelo preentrenado de iridio (`Ir checkpoints.pth`) y un modelo de transferencia de cobalto (`Co transfer checkpoints.pth`) inicializado a partir del anterior.
 
 El modelo no es un LLM ni un modelo de lenguaje: no hay información sobre arquitectura transformer, parámetros, contexto, tokenizador ni idiomas. Se distribuye como ficheros `.pth` (PyTorch) gestionados con Git LFS, con un tamaño de repositorio de 0,1 GB. La única documentación disponible es la model card, que describe el uso mediante un script `scripts/predict.py` y menciona una arquitectura de "tres grafos" con una cabeza latente H/S.
 
@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye referencias a otros mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiangGroup/MCGNN_Coding
+- Hugging Face: https://huggingface.co/LiangGroup/MCGNN_Coding
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

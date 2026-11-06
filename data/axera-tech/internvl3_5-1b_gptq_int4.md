@@ -80,7 +80,7 @@ La comparativa se limita a características generales, ya que no se dispone de b
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/AXERA-TECH/InternVL3_5-1B_GPTQ_INT4
+- Repositorio de Hugging Face: https://huggingface.co/AXERA-TECH/InternVL3_5-1B_GPTQ_INT4
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3_5-1B
 - Runtime ax-llm: https://github.com/AXERA-TECH/ax-llm
 - Documentación de hardware AXCL: https://axcl-docs.readthedocs.io/zh-cn/latest/doc_guide_hardware.html

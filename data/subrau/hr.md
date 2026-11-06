@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Subrau/HR es un repositorio publicado en HuggingFace por el usuario Subrau bajo licencia Apache 2.0. Se trata de un repositorio de 38,0 GB creado y actualizado el 28 de septiembre de 2026, con apenas dos minutos de diferencia entre ambas marcas de tiempo, y sin descargas ni «me gusta» registrados en el momento de la consulta.
+Subrau/HR es un repositorio publicado en Hugging Face por el usuario Subrau bajo licencia Apache 2.0. Se trata de un repositorio de 38,0 GB creado y actualizado el 28 de septiembre de 2026, con apenas dos minutos de diferencia entre ambas marcas de tiempo, y sin descargas ni «me gusta» registrados en el momento de la consulta.
 
-La model card no contiene más información que la declaración de licencia Apache 2.0: no se especifica arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. Tampoco se declara un pipeline de HuggingFace, por lo que no es posible determinar si se trata de un modelo de lenguaje, de un modelo multimodal, de un modelo de visión o audio, o de un conjunto de pesos derivado de otro modelo.
+La model card no contiene más información que la declaración de licencia Apache 2.0: no se especifica arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. Tampoco se declara un pipeline de Hugging Face, por lo que no es posible determinar si se trata de un modelo de lenguaje, de un modelo multimodal, de un modelo de visión o audio, o de un conjunto de pesos derivado de otro modelo.
 
 La búsqueda web realizada no devuelve ningún resultado relacionado: todos los enlaces encontrados corresponden a comparativas de automóviles (Toyota C-HR, Subaru Uncharted, Honda HR-V), un ruido provocado por la coincidencia léxica entre el nombre del repositorio y la marca automovilística Subaru. En consecuencia, esta ficha no puede certificar ninguna característica técnica del modelo y se limita a documentar los metadatos verificables del repositorio, marcando explícitamente cualquier inferencia como tal.
 
@@ -105,7 +105,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Subrau/HR
+- Repositorio en Hugging Face: https://huggingface.co/Subrau/HR
 
 Resultados de la búsqueda web, ninguno relacionado con el modelo (se listan únicamente para dejar constancia de que el ruido proviene del sector automovilístico):
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mystery-woman es un adaptador LoRA de tipo DreamBooth para el modelo de difusión de texto a imagen Krea 2, publicado por el usuario dougskullery en HuggingFace. Se entrenó sobre Krea 2 RAW (krea/Krea-2-Raw) y las muestras de la model card se generaron con Krea 2 Turbo mediante diffusers en 8 pasos de inferencia. El repositorio ocupa 0,8 GB y se distribuye bajo licencia apache-2.0.
+mystery-woman es un adaptador LoRA de tipo DreamBooth para el modelo de difusión de texto a imagen Krea 2, publicado por el usuario dougskullery en Hugging Face. Se entrenó sobre Krea 2 RAW (krea/Krea-2-Raw) y las muestras de la model card se generaron con Krea 2 Turbo mediante diffusers en 8 pasos de inferencia. El repositorio ocupa 0,8 GB y se distribuye bajo licencia apache-2.0.
 
 El adaptador no es un modelo completo, sino un conjunto de pesos de bajo rango que se cargan sobre el modelo base para inyectar un concepto único: un personaje femenino invocado mediante el token de activación `mystery_woman`. No modifica la arquitectura del modelo base ni sus capacidades generales; únicamente condiciona la generación hacia ese concepto.
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougskullery/mystery-woman
+- Modelo en Hugging Face: https://huggingface.co/dougskullery/mystery-woman
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo citada en la model card: https://huggingface.co/krea/Krea-2-Turbo
 - Muestras incluidas en el repositorio: sample_0.png, sample_1.png, sample_2.png

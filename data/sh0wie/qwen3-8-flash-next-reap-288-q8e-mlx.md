@@ -67,9 +67,9 @@ Además, en una evaluación de adherencia a convenciones de estilo (no replicada
 
 | Modelo | Parámetros | Contexto | HumanEval pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base, 512 expertos, 4-bit MLX) | 125B + 51B n-gram | 262K | 93.9% | qwen-community-license-1.0 | HuggingFace |
-| sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit | 125B + 51B n-gram (288 expertos, 4-bit) | 262K | 91.5% | qwen-community-license-1.0 | HuggingFace |
-| **sh0wie/Qwen3.8-Flash-Next-REAP-288-Q8E-MLX (este build)** | 125B + 51B n-gram (288 expertos, 8-bit) | 262K | 90.9% | qwen-community-license-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next (base, 512 expertos, 4-bit MLX) | 125B + 51B n-gram | 262K | 93.9% | qwen-community-license-1.0 | Hugging Face |
+| sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit | 125B + 51B n-gram (288 expertos, 4-bit) | 262K | 91.5% | qwen-community-license-1.0 | Hugging Face |
+| **sh0wie/Qwen3.8-Flash-Next-REAP-288-Q8E-MLX (este build)** | 125B + 51B n-gram (288 expertos, 8-bit) | 262K | 90.9% | qwen-community-license-1.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base porque no se dispone de datos de benchmarks para otros modelos MoE de tamaño similar en la información proporcionada. El autor recomienda la variante 4-bit sobre esta Q8E para la mayoría de los usuarios, dado que el error de poda domina sobre el error de cuantización en este ancho.
 

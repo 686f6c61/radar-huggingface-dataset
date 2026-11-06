@@ -85,10 +85,10 @@ Resumen de la progresion: la entropia cruzada de texto cae un 86,7 % y la de mel
 
 | Modelo | Tipo | Parametros | Idioma | Clonacion de voz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| xtts-v2-yoruba-openbible | Fine-tune de XTTS-v2 | 521,8 M | yoruba | Si, zero-shot (3-10 s) | Coqui Public Model License (coqui-mrcul) | HuggingFace, 0 descargas |
+| xtts-v2-yoruba-openbible | Fine-tune de XTTS-v2 | 521,8 M | yoruba | Si, zero-shot (3-10 s) | Coqui Public Model License (coqui-mrcul) | Hugging Face, 0 descargas |
 | Coqui XTTS-v2 (base) | TTS autorregresivo + DVAE | 521,8 M | 17 idiomas (yoruba no cubierto de forma dedicada) | Si, zero-shot (unos 6 s) | Coqui Public Model License | Ampliamente disponible |
-| multilingual-tts/VITS-OpenBible-Yoruba | VITS entrenado desde cero | no disponible | yoruba | No documentada | no disponible | HuggingFace |
-| samuelolubukun/xtts-v2-hausa-openbible | Fine-tune de XTTS-v2 | no disponible | hausa | Si, zero-shot (3-10 s) | Coqui Public Model License | HuggingFace |
+| multilingual-tts/VITS-OpenBible-Yoruba | VITS entrenado desde cero | no disponible | yoruba | No documentada | no disponible | Hugging Face |
+| samuelolubukun/xtts-v2-hausa-openbible | Fine-tune de XTTS-v2 | no disponible | hausa | Si, zero-shot (3-10 s) | Coqui Public Model License | Hugging Face |
 
 No se dispone de metricas comparativas (MOS, similitud de hablante, WER) entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a arquitectura, idioma y licencia.
 
@@ -107,7 +107,7 @@ No se dispone de metricas comparativas (MOS, similitud de hablante, WER) entre e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samuelolubukun/xtts-v2-yoruba-openbible
+- Modelo en Hugging Face: https://huggingface.co/samuelolubukun/xtts-v2-yoruba-openbible
 - Modelo hermano en hausa del mismo autor: https://huggingface.co/samuelolubukun/xtts-v2-hausa-openbible
 - Dataset de entrenamiento (split yoruba): https://huggingface.co/datasets/multilingual-tts/open-bible
 - Dataset de referencia para las muestras de clonacion: https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset

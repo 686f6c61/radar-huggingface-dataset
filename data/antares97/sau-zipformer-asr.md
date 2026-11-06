@@ -67,5 +67,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos ASR 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Antares97/sau-zipformer-asr
+- Modelo en Hugging Face: https://huggingface.co/Antares97/sau-zipformer-asr
 - Demo Space (Saudi Arabic ASR): https://huggingface.co/spaces/Antares97/sau-asr

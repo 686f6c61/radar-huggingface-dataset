@@ -2,7 +2,7 @@
 
 ## Resumen
 
-D1A-E2B es un adaptador de tipo LoRA con una cabeza de prediccion (pointer head) sobre el modelo base google/gemma-4-E2B, publicado por el usuario JohnP1 en HuggingFace. El objetivo declarado del proyecto D1A es convertir un documento junto con un conjunto de preguntas tipadas (typed questions) en una probabilidad calibrada para cada opcion de respuesta, todo ello en una sola pasada forward y sin generar texto. Se trata, por tanto, de un modelo de decision y clasificacion, no de un modelo generativo: la salida es una distribucion de probabilidad sobre opciones predefinidas.
+D1A-E2B es un adaptador de tipo LoRA con una cabeza de prediccion (pointer head) sobre el modelo base google/gemma-4-E2B, publicado por el usuario JohnP1 en Hugging Face. El objetivo declarado del proyecto D1A es convertir un documento junto con un conjunto de preguntas tipadas (typed questions) en una probabilidad calibrada para cada opcion de respuesta, todo ello en una sola pasada forward y sin generar texto. Se trata, por tanto, de un modelo de decision y clasificacion, no de un modelo generativo: la salida es una distribucion de probabilidad sobre opciones predefinidas.
 
 El repositorio se encuentra en estado de marcador de posicion: el propio autor indica que el entrenamiento esta en curso y que el checkpoint E2B se publicara mas adelante. Hasta esa primera release, el prototipo disponible es JohnP1/kev-gemma4-e2b. El repositorio no tiene descargas ni likes, y la model card no incluye todavia pesos, resultados de evaluacion ni detalles del dataset de entrenamiento.
 
@@ -25,7 +25,7 @@ El proyecto se apoya en Kev, un framework de Jared Palmer (Apache-2.0), con un f
 | Libreria | peft |
 | Estado del repositorio | Marcador de posicion, entrenamiento en curso |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion del repositorio | 2026-09-30, segun HuggingFace |
+| Fecha de creacion del repositorio | 2026-09-30, segun Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU consumer: con esas estimaciones cabria en tarjetas de 8 GB o mas (RTX 3060 Ti, RTX 4060, RTX 3070), y con margen amplio en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores. No confirmado para este adaptador.
 - GPU de datacenter: A100, H100, L40S y similares no serian necesarias por VRAM; se justificarian por concurrencia y throughput agregado, no por requisitos de memoria.
 - CPU: plausible para cuantizacion INT4 mediante llama.cpp u Ollama, siempre que exista conversion GGUF del modelo base con el adaptador fusionado. No confirmado.
-- Opciones de despliegue: el repositorio usa la libreria peft, por lo que la carga del adaptador requiere el ecosistema HuggingFace (transformers mas peft). El soporte en vLLM, TGI, llama.cpp u Ollama no esta documentado. La cabeza pointer y el flujo de preguntas tipadas dependen del codigo de github.com/jonpol01/d1a.
+- Opciones de despliegue: el repositorio usa la libreria peft, por lo que la carga del adaptador requiere el ecosistema Hugging Face (transformers mas peft). El soporte en vLLM, TGI, llama.cpp u Ollama no esta documentado. La cabeza pointer y el flujo de preguntas tipadas dependen del codigo de github.com/jonpol01/d1a.
 - Latencia y throughput: no disponibles. Cualitativamente, el diseno de una unica pasada sin decodificacion autoregresiva situa la latencia en el orden de un solo paso de inferencia, muy por debajo de un esquema de generacion mas parsing, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No se han encontrado en la informacion disponible modelos directamente comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnP1/d1a-e2b
+- Modelo en Hugging Face: https://huggingface.co/JohnP1/d1a-e2b
 - Checkpoint prototipo citado por el autor: https://huggingface.co/JohnP1/kev-gemma4-e2b
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Codigo del proyecto D1A: https://github.com/jonpol01/d1a

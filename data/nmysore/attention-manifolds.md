@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SplineQK-3B (`nmysore/attention-manifolds`) | 3,2 B + 1,8 M adaptador | No especificado (base 128 000 tokens) | PPL 11,09 en Wikipedia | MIT (adaptador) | HuggingFace, repositorio de 0,0 GB |
-| Llama-3.2-3B-Instruct (base) | 3,2 B | 128 000 tokens | PPL 11,91 en Wikipedia | Llama 3.2 Community License | HuggingFace |
-| `nmysore/manifold-1.0-1b` (mismo autor, related) | No disponible | No disponible | No disponible | Llama 3.2 | HuggingFace |
+| SplineQK-3B (`nmysore/attention-manifolds`) | 3,2 B + 1,8 M adaptador | No especificado (base 128 000 tokens) | PPL 11,09 en Wikipedia | MIT (adaptador) | Hugging Face, repositorio de 0,0 GB |
+| Llama-3.2-3B-Instruct (base) | 3,2 B | 128 000 tokens | PPL 11,91 en Wikipedia | Llama 3.2 Community License | Hugging Face |
+| `nmysore/manifold-1.0-1b` (mismo autor, related) | No disponible | No disponible | No disponible | Llama 3.2 | Hugging Face |
 
 No se dispone de comparaciones directas frente a otras herramientas de interpretabilidad (por ejemplo, SAE o steering vectors), ya que no se aportan métricas equivalentes en la información disponible.
 
@@ -90,7 +90,7 @@ No se dispone de comparaciones directas frente a otras herramientas de interpret
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/nmysore/attention-manifolds
+- Hugging Face (adaptador): https://huggingface.co/nmysore/attention-manifolds
 - Paper (arXiv:2610.00257): https://arxiv.org/abs/2610.00257
 - Repositorio de código: https://github.com/NAVEENMN/attention_manifolds
 - Modelo relacionado del mismo autor: https://huggingface.co/nmysore/manifold-1.0-1b

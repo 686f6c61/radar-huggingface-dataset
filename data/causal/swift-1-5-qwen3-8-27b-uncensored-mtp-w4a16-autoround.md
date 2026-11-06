@@ -74,11 +74,11 @@ Los rechazos se miden sobre 100 prompts de `mlabonne/harmful_behaviors` con deco
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| causal/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-W4A16-AutoRound (este) | 6.260.690.960 segun safetensors; 27B nominales | 262.144 tokens | W4A16 int4, compressed-tensors | Swift Open License v1.0 | HuggingFace, transformers, vLLM |
-| ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP (padre) | no disponible | no disponible | BF16 | Swift Open License v1.0 (derivada) | HuggingFace |
-| ukisai/Swift-1.5-Qwen3.8-27b (original) | 27B nominales | no disponible | BF16 | Swift Open License v1.0 | HuggingFace |
-| causal/Swift-1.5-Qwen3.8-27b-W4A16-AutoRound (misma receta, sin MTP uncensored) | no disponible | no disponible | W4A16 int4 | Swift Open License v1.0 | HuggingFace, vLLM |
-| causal/Swift-Qwen3.8-27b-W4A16-AutoRound-MTP-BF16 (Swift 1.0) | no disponible | no disponible | W4A16 int4 con MTP en BF16 | Swift Open License v1.0 | HuggingFace, vLLM 0.27.1 |
+| causal/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-W4A16-AutoRound (este) | 6.260.690.960 segun safetensors; 27B nominales | 262.144 tokens | W4A16 int4, compressed-tensors | Swift Open License v1.0 | Hugging Face, transformers, vLLM |
+| ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP (padre) | no disponible | no disponible | BF16 | Swift Open License v1.0 (derivada) | Hugging Face |
+| ukisai/Swift-1.5-Qwen3.8-27b (original) | 27B nominales | no disponible | BF16 | Swift Open License v1.0 | Hugging Face |
+| causal/Swift-1.5-Qwen3.8-27b-W4A16-AutoRound (misma receta, sin MTP uncensored) | no disponible | no disponible | W4A16 int4 | Swift Open License v1.0 | Hugging Face, vLLM |
+| causal/Swift-Qwen3.8-27b-W4A16-AutoRound-MTP-BF16 (Swift 1.0) | no disponible | no disponible | W4A16 int4 con MTP en BF16 | Swift Open License v1.0 | Hugging Face, vLLM 0.27.1 |
 
 No se dispone de modelos comparables de otros fabricantes con datos verificados en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de modelos comparables de otros fabricantes con datos verificados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/causal/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-W4A16-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/causal/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-W4A16-AutoRound
 - Modelo padre: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP
 - Modelo original Swift 1.5 Qwen3.8-27B: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Licencia del modelo original: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
@@ -108,4 +108,4 @@ No se dispone de modelos comparables de otros fabricantes con datos verificados 
 - Paper de AutoRound (arxiv:2406.11717): https://arxiv.org/abs/2406.11717
 - Heretic (herramienta de evaluacion de rechazos): https://github.com/p-e-w/heretic
 - Contacto de licencia empresarial UkisAI: https://ukisai.com/contact
-- Qwen en HuggingFace: https://huggingface.co/Qwen
+- Qwen en Hugging Face: https://huggingface.co/Qwen

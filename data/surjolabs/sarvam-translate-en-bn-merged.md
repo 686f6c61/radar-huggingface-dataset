@@ -23,7 +23,7 @@ Dado que la documentación es escasa, gran parte de los datos técnicos (context
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna ni el proceso de entrenamiento de este modelo. La model card de HuggingFace esta vacia en todas las secciones tecnicas. Por la informacion publica de Sarvam AI, el modelo original Sarvam Translate se basa en Gemma3-4B-IT, que es un transformer decoder con atencion por ventanas deslizantes y atencion global alternada, disenado por Google. Este merge probablemente hereda esa arquitectura, pero no hay confirmacion oficial.
+No se dispone de informacion detallada sobre la arquitectura interna ni el proceso de entrenamiento de este modelo. La model card de Hugging Face esta vacia en todas las secciones tecnicas. Por la informacion publica de Sarvam AI, el modelo original Sarvam Translate se basa en Gemma3-4B-IT, que es un transformer decoder con atencion por ventanas deslizantes y atencion global alternada, disenado por Google. Este merge probablemente hereda esa arquitectura, pero no hay confirmacion oficial.
 
 En cuanto al entrenamiento, no se especifican datos sobre el volumen de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. El nombre "merged" sugiere que se ha realizado una fusion de pesos entre el modelo base y un afinamiento especifico para ingles-bengali, pero el metodo exacto (por ejemplo, SLERP, TIES, DARE) no se documenta.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, no se especifican datos sobre el volumen de tokens, 
 - Traduccion automatica de texto entre ingles y bengali, orientada a documentos completos mas que a frases sueltas.
 - Manejo de entradas largas (si conserva el contexto de Gemma3-4B, hasta 128k tokens, aunque no esta confirmado).
 - Generacion de texto en formato conversacional (el modelo base Gemma3-4B-IT esta optimizado para chat).
-- Posible soporte de entrada multimodal (el tag "image-text-to-text" aparece en HuggingFace, pero no hay evidencia de que este merge lo conserve; probablemente es un residuo del tag del modelo base).
+- Posible soporte de entrada multimodal (el tag "image-text-to-text" aparece en Hugging Face, pero no hay evidencia de que este merge lo conserve; probablemente es un residuo del tag del modelo base).
 - No se documenta soporte de tool calling, function calling ni capacidades de agente.
 - No se documentan capacidades multilingues mas alla del par ingles-bengali.
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con 4.300 millones de parametros, en precision fp16 ocupa aproximadamente 8,6 GB de memoria. Con cuantizacion de 8 bits (INT8) se reduce a unos 4,3 GB, y con 4 bits (INT4) a unos 2,2 GB, aunque estas cuantizaciones no estan oficialmente publicadas para este modelo.
 - GPU recomendadas: una GPU con al menos 12 GB de VRAM (por ejemplo, RTX 3060, RTX 4070, A10) puede ejecutar el modelo en fp16. Para cuantizaciones inferiores, una GPU de 8 GB (RTX 3050, RTX 4060) seria suficiente.
 - Compatibilidad con GPU de consumo: si, cabe en GPUs de gama media y alta de consumo gracias a su tamano moderado.
-- Opciones de despliegue: compatible con la libreria transformers de HuggingFace, y puede servirse con Text Generation Inference (TGI) o vLLM si se convierte al formato adecuado. Para CPU, se puede convertir a GGUF y usar llama.cpp u Ollama.
+- Opciones de despliegue: compatible con la libreria transformers de Hugging Face, y puede servirse con Text Generation Inference (TGI) o vLLM si se convierte al formato adecuado. Para CPU, se puede convertir a GGUF y usar llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponibles. Al ser un modelo de 4B parametros, se espera una latencia de decenas de milisegundos por token en una GPU moderna, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SurjoLabs/sarvam-translate-en-bn-merged | 4,3B | no disponible | ingles, bengali | no disponible | HuggingFace |
-| Sarvam Translate (sarvamai/sarvam-translate) | 4,3B (Gemma3-4B-IT) | 128k (base) | 22 lenguas indias | no disponible | HuggingFace |
-| NLLB-200 (3.3B) | 3,3B | 512 tokens | 200 idiomas | CC-BY-NC | HuggingFace |
-| Gemma3-4B-IT (base) | 4,0B | 128k | multilingue | Gemma Terms | HuggingFace |
+| SurjoLabs/sarvam-translate-en-bn-merged | 4,3B | no disponible | ingles, bengali | no disponible | Hugging Face |
+| Sarvam Translate (sarvamai/sarvam-translate) | 4,3B (Gemma3-4B-IT) | 128k (base) | 22 lenguas indias | no disponible | Hugging Face |
+| NLLB-200 (3.3B) | 3,3B | 512 tokens | 200 idiomas | CC-BY-NC | Hugging Face |
+| Gemma3-4B-IT (base) | 4,0B | 128k | multilingue | Gemma Terms | Hugging Face |
 
 El modelo de SurjoLabs se diferencia de Sarvam Translate original en que esta especificamente enfocado al par ingles-bengali, probablemente con un ajuste adicional. Frente a NLLB-200, ofrece un contexto mucho mayor (si hereda los 128k de Gemma3) pero cubre solo dos idiomas. La licencia de NLLB-200 es no comercial, mientras que la de este modelo no esta especificada.
 
@@ -80,7 +80,7 @@ El modelo de SurjoLabs se diferencia de Sarvam Translate original en que esta es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SurjoLabs/sarvam-translate-en-bn-merged
+- Modelo en Hugging Face: https://huggingface.co/SurjoLabs/sarvam-translate-en-bn-merged
 - Modelo original Sarvam Translate: https://huggingface.co/sarvamai/sarvam-translate
 - Documentacion de Sarvam API (Sarvam Translate): https://docs.sarvam.ai/api/getting-started/models/sarvam-translate
 - Ficha en AI Kosh (India AI): https://aikosh.indiaai.gov.in/home/models/details/sarvamtranslate.html

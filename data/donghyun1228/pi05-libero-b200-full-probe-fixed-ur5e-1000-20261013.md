@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π₀.₅ full-probe fixed1:1:1: ur5e es un punto de control de robótica publicado por el usuario Donghyun1228 en HuggingFace bajo la librería openpi. No es un modelo de lenguaje: es una política de manipulación (visión-lenguaje-acción) derivada de la familia π₀.₅ de openpi y ajustada específicamente para un experimento de dinámica inversa (*inverse dynamics model*, IDM) sobre el benchmark LIBERO con el brazo UR5e y pinza Robotiq 85. El repositorio ocupa 13,1 GB y se distribuye con licencia Apache-2.0.
+π₀.₅ full-probe fixed1:1:1: ur5e es un punto de control de robótica publicado por el usuario Donghyun1228 en Hugging Face bajo la librería openpi. No es un modelo de lenguaje: es una política de manipulación (visión-lenguaje-acción) derivada de la familia π₀.₅ de openpi y ajustada específicamente para un experimento de dinámica inversa (*inverse dynamics model*, IDM) sobre el benchmark LIBERO con el brazo UR5e y pinza Robotiq 85. El repositorio ocupa 13,1 GB y se distribuye con licencia Apache-2.0.
 
 El experimento entrena durante 1.000 actualizaciones del optimizador con coeficientes fijos 1:1:1 para los módulos de visión, LLM y experto de acción, sin *probe* de retención ni conjunto de validación meta. La evaluación principal reportada es 167/400 (41,75%) en un protocolo apareado por semilla, con cuatro suites, diez tareas y diez estados iniciales oficiales por suite, cero errores de *rollout* y MuJoCo 3.2.3.
 
@@ -85,7 +85,7 @@ Condiciones declaradas de la evaluacion: 16 clientes por GPU, errores de *rollou
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π₀.₅ full-probe fixed1:1:1 ur5e (este modelo) | no disponible | ventanas H10 | 167/400 (41,75%) en seed7 | Apache-2.0 | HuggingFace, libreria openpi |
+| π₀.₅ full-probe fixed1:1:1 ur5e (este modelo) | no disponible | ventanas H10 | 167/400 (41,75%) en seed7 | Apache-2.0 | Hugging Face, libreria openpi |
 | π₀.₅ base (openpi) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Variante v1 del mismo autor | no disponible | no disponible | view_large 104/400; yaw30 215/400; ur5e 164/400 | no disponible | no disponible |
 | Otras politicas vision-lenguaje-accion (OpenVLA, Octo, RDT) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -108,7 +108,7 @@ No se dispone de resultados de benchmarks de estos modelos comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-b200-full-probe-fixed-ur5e-1000-20261013
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-b200-full-probe-fixed-ur5e-1000-20261013
 - Dataset de destino citado en la model card: Donghyun1228/libero-xe-ur5e-dense-contact-probe-20261010 (revision 32649763ecd9c00c263250e86e28e42e3d914021)
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a dominios sin relacion con el proyecto (sitios de contenido para adultos), por lo que se descartan.
 - No se dispone de enlace a paper, blog tecnico, repositorio de codigo ni demo asociados en la informacion proporcionada.

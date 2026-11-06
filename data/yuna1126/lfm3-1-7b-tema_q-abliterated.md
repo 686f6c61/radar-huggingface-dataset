@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra que las técnicas de abliteración se están
 | Longitud de contexto | 256K tokens |
 | Tipos de cuantizacion | no disponible en la model card; el modelo base se describe con ~1 GB en 4 bits |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (17 idiomas) |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (también compatible con conversión a GGUF y uso en vLLM) |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - La abliteración elimina el comportamiento de rechazo: el modelo puede generar contenido dañino, ilegal o inseguro sin negarse, lo que lo desaconseja para aplicaciones de cara al público sin filtros externos.
 - Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual; como todo modelo de 1,7B, es propenso a inventar datos.
 - La divergencia KL de 0,0315 indica cierta desviación respecto al base; puede haber degradación sutil en calidad o coherencia no capturada por la métrica.
-- Licencia lfm1.0: es necesario revisar los términos del archivo LICENSE del modelo base antes de cualquier uso comercial; la etiqueta "other" en HuggingFace exige verificación explícita.
+- Licencia lfm1.0: es necesario revisar los términos del archivo LICENSE del modelo base antes de cualquier uso comercial; la etiqueta "other" en Hugging Face exige verificación explícita.
 - Idiomas: aunque se listan 17, no hay datos de rendimiento por idioma; el español puede tener menor calidad que el inglés.
 - Contexto de 256K: no se ha verificado empíricamente en esta variante el rendimiento en el extremo de la ventana.
 - Soporte de tool calling y agentes: la model card del base lo menciona, pero no hay confirmación específica para esta variante abliterada.
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuna1126/LFM3-1.7B-Tema_Q-Abliterated
+- Hugging Face: https://huggingface.co/yuna1126/LFM3-1.7B-Tema_Q-Abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Herramienta Tema_Q-Abliterated: https://github.com/ek15072809/Tema_Q-Abliterated
 - Blog de la familia LFM3: https://www.liquid.ai/blog/lfm3

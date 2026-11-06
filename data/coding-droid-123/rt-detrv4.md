@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`coding-droid-123/RT-DETRv4` es un repositorio publicado en HuggingFace por el usuario `coding-droid-123`. En el momento de la consulta acumula 0 descargas y 1 like, y su unico metadato es la etiqueta `region:us`. La plataforma no declara pipeline, licencia, idiomas ni ninguna otra caracteristica funcional del modelo.
+`coding-droid-123/RT-DETRv4` es un repositorio publicado en Hugging Face por el usuario `coding-droid-123`. En el momento de la consulta acumula 0 descargas y 1 like, y su unico metadato es la etiqueta `region:us`. La plataforma no declara pipeline, licencia, idiomas ni ninguna otra caracteristica funcional del modelo.
 
 El repositorio no incluye model card, documentacion tecnica, ficha de entrenamiento ni ejemplos de uso en la informacion disponible. Tampoco se ha localizado un paper, blog o repositorio de codigo asociado. Por tanto, no es posible confirmar que se trate de un modelo entrenado y publicado de forma reproducible: puede ser un placeholder, una subida de prueba o un artefacto cuyo contenido no ha sido documentado publicamente.
 
@@ -91,7 +91,7 @@ No disponible. La busqueda web realizada no ha devuelto ninguna fuente tecnica r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/coding-droid-123/RT-DETRv4
+- Repositorio en Hugging Face: https://huggingface.co/coding-droid-123/RT-DETRv4
 - Paper asociado: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo o Space: no disponible.

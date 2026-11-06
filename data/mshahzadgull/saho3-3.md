@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAHO3.3 es un modelo publicado en HuggingFace por el usuario Mshahzadgull bajo identificador `Mshahzadgull/SAHO3.3`. La informacion publicada sobre este repositorio es muy escasa: no se ha documentado su arquitectura, su tamano en parametros, su longitud de contexto ni las tareas para las que fue entrenado. La unica metadata disponible indica que se distribuye bajo licencia Apache 2.0, que el repositorio esta alojado en la region `us` y que el acceso es restringido (gated), de modo que hay que aceptar unas condiciones en la plataforma antes de poder descargar los pesos.
+SAHO3.3 es un modelo publicado en Hugging Face por el usuario Mshahzadgull bajo identificador `Mshahzadgull/SAHO3.3`. La informacion publicada sobre este repositorio es muy escasa: no se ha documentado su arquitectura, su tamano en parametros, su longitud de contexto ni las tareas para las que fue entrenado. La unica metadata disponible indica que se distribuye bajo licencia Apache 2.0, que el repositorio esta alojado en la region `us` y que el acceso es restringido (gated), de modo que hay que aceptar unas condiciones en la plataforma antes de poder descargar los pesos.
 
 Dada la ausencia de documentacion, no es posible afirmar que problema resuelve ni por que podria ser relevante frente a alternativas establecidas. Las metricas sociales del repositorio (0 descargas y 1 like en el momento de la ficha) sugieren que se trata de un proyecto muy reciente o de difusion minima, sin comunidad activa alrededor. Esta ficha documenta exclusivamente los datos verificados en la pagina del modelo; cualquier campo sin informacion se indica explicitamente como "no disponible". Se recomienda extrema cautela antes de usar este modelo en produccion, dado que ni siquiera la modalidad del pipeline (generacion de texto, embeddings, etc.) esta declarada.
 
@@ -40,7 +40,7 @@ Igualmente, no existe documentacion sobre fases de ajuste fino posterior: se des
 
 ## Capacidades
 
-No se han documentado capacidades verificables para este modelo. La pagina de HuggingFace no declara la modalidad del pipeline, por lo que no puede confirmarse ninguno de los siguientes puntos:
+No se han documentado capacidades verificables para este modelo. La pagina de Hugging Face no declara la modalidad del pipeline, por lo que no puede confirmarse ninguno de los siguientes puntos:
 
 - Generacion de texto: no disponible.
 - Razonamiento o resolucion de problemas: no disponible.
@@ -79,7 +79,7 @@ Al desconocerse el numero de parametros, la arquitectura y el formato de los pes
 - Opciones de despliegue: no confirmadas. Si los pesos estuvieran en safetensors con arquitectura estandar de transformers, vLLM, TGI y Ollama serian candidatos habituales; si estuvieran en GGUF, llama.cpp y Ollama serian la via natural. Debe verificarse el formato real tras obtener acceso.
 - Latencia y throughput: no disponibles.
 
-Adicionalmente, el acceso restringido (gated) implica que cualquier despliegue automatizado requiere autenticacion con token de HuggingFace tras aceptar las condiciones del repositorio.
+Adicionalmente, el acceso restringido (gated) implica que cualquier despliegue automatizado requiere autenticacion con token de Hugging Face tras aceptar las condiciones del repositorio.
 
 ## Comparativa con modelos similares
 
@@ -108,5 +108,5 @@ Esta tabla es solo contextual: no implica equivalencia de tamano ni de rendimien
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Mshahzadgull/SAHO3.3
+- Pagina del modelo en Hugging Face: https://huggingface.co/Mshahzadgull/SAHO3.3
 - Paper, repositorio de codigo, demo o blog: no disponibles. No se han encontrado enlaces adicionales asociados al modelo en la informacion proporcionada.

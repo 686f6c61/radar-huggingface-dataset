@@ -98,7 +98,7 @@ La comparacion relevante es interna a la familia: el modelo base sin cap es mas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E2B-it-lazy-capped-q4_0-gguf
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E2B-it-lazy-capped-q4_0-gguf
 - Modelo base (GGUF Q4_0 QAT exacto): https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf
 - Version mas reciente del mismo autor (capped64): https://huggingface.co/xbill9/gemma-4-E2B-it-lazy-capped64-q4_0-gguf
 - Repositorio del proyecto lazy-gemma: https://github.com/xbill9/lazy-gemma

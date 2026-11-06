@@ -20,7 +20,7 @@ Es relevante ahora porque la mayoria de encoders clasicos (RoBERTa, BERT, Mosaic
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors |
-| Pipeline en HuggingFace | fill-mask |
+| Pipeline en Hugging Face | fill-mask |
 | Vocabulario | bert-base-uncased |
 | Tamano del repositorio | 0,9 GB |
 
@@ -87,11 +87,11 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, MMLU
 
 | Modelo | Parametros | Contexto | GLUE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gte-en-mlm-large | 435M | 8192 | 87,58 | Apache 2.0 | HuggingFace (Transformers nativo) |
-| RoBERTa-large | 355M | 512 | 88,9 | MIT | HuggingFace |
-| MosaicBERT-large | 434M | 128 | 86,1 | Apache 2.0 | HuggingFace |
-| JinaBERT-large | 434M | 512 | 83,7 | Apache 2.0 | HuggingFace |
-| XLM-R-base | 279M | 512 | 80,44 | MIT | HuggingFace |
+| gte-en-mlm-large | 435M | 8192 | 87,58 | Apache 2.0 | Hugging Face (Transformers nativo) |
+| RoBERTa-large | 355M | 512 | 88,9 | MIT | Hugging Face |
+| MosaicBERT-large | 434M | 128 | 86,1 | Apache 2.0 | Hugging Face |
+| JinaBERT-large | 434M | 512 | 83,7 | Apache 2.0 | Hugging Face |
+| XLM-R-base | 279M | 512 | 80,44 | MIT | Hugging Face |
 
 Frente a RoBERTa-large, el modelo de Alibaba ofrece un contexto 16 veces mayor (8192 frente a 512) con 80M mas de parametros, a costa de 1,32 puntos de GLUE. Frente a MosaicBERT-large, con un numero de parametros casi identico (434M frente a 435M), la ventaja en GLUE es de 1,48 puntos y la de contexto es de 64 veces (8192 frente a 128). La comparacion mas directa en cuanto a contexto es nomic-bert-2048 (2048 tokens, GLUE 84), que queda 3,58 puntos por debajo con 137M de parametros.
 
@@ -109,7 +109,7 @@ Frente a RoBERTa-large, el modelo de Alibaba ofrece un contexto 16 veces mayor (
 
 ## Enlaces
 
-- Modelo en HuggingFace (este repositorio): https://huggingface.co/alibaba-nlp-community/gte-en-mlm-large
+- Modelo en Hugging Face (este repositorio): https://huggingface.co/alibaba-nlp-community/gte-en-mlm-large
 - Modelo original: https://huggingface.co/Alibaba-NLP/gte-en-mlm-large
 - Variante base en ingles: https://huggingface.co/Alibaba-NLP/gte-en-mlm-base
 - Variante multilingue base: https://huggingface.co/Alibaba-NLP/gte-multilingual-mlm-base

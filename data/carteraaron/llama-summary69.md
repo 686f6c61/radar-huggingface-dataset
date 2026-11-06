@@ -65,7 +65,7 @@ No disponible. No existe información suficiente para comparar este repositorio 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/CARTERAARON/llama-summary69
+- Repositorio de Hugging Face: https://huggingface.co/CARTERAARON/llama-summary69
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este identificador en la búsqueda web.
 
 ---

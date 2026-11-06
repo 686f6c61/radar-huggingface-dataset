@@ -97,10 +97,10 @@ La comparacion cuantitativa no es posible porque el modelo no publica benchmarks
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Flash-REAP50 | ~159,3 B | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
-| MiMo-V2.6-Flash-RL (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Mixtral 8x22B | ~141 B | ~39 B | 64 K | Apache 2.0 | HuggingFace |
-| Qwen3-235B-A22B | ~235 B | ~22 B | 128 K | Apache 2.0 | HuggingFace |
+| MiMo-V2.6-Flash-REAP50 | ~159,3 B | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
+| MiMo-V2.6-Flash-RL (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Mixtral 8x22B | ~141 B | ~39 B | 64 K | Apache 2.0 | Hugging Face |
+| Qwen3-235B-A22B | ~235 B | ~22 B | 128 K | Apache 2.0 | Hugging Face |
 
 La diferencia relevante frente a esas alternativas no es el rendimiento, sino el objetivo de despliegue: MiMo-V2.6-Flash-REAP50 esta ajustado para caber en un solo dispositivo de memoria unificada de 117 GiB, mientras que los modelos comparables se sirven habitualmente en configuraciones multi-GPU.
 
@@ -120,7 +120,7 @@ La diferencia relevante frente a esas alternativas no es el rendimiento, sino el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patrickbdevaney/MiMo-V2.6-Flash-REAP50
+- Modelo en Hugging Face: https://huggingface.co/patrickbdevaney/MiMo-V2.6-Flash-REAP50
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Repositorio de la herramienta de poda: https://github.com/patrickbdevaney/xiaomi-2.6-flash-REAP
 - Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos resultados obtenidos eran contenido no relacionado con la consulta, por lo que no se incluyen enlaces adicionales.

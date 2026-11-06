@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio LehongWu/arvla-language_table_vla-0917-0.8B-0917_1634 es un modelo alojado en HuggingFace por el usuario LehongWu, con fecha de creacion y ultima actualizacion identicas (18 de septiembre de 2026, segun los metadatos de la plataforma) y un total de 4 descargas y 0 likes en el momento de la consulta. El repositorio ocupa 8,9 GB y no incluye model card con contenido tecnico: la ficha publica no declara pipeline, licencia, idiomas soportados, arquitectura ni datos de entrenamiento.
+El repositorio LehongWu/arvla-language_table_vla-0917-0.8B-0917_1634 es un modelo alojado en Hugging Face por el usuario LehongWu, con fecha de creacion y ultima actualizacion identicas (18 de septiembre de 2026, segun los metadatos de la plataforma) y un total de 4 descargas y 0 likes en el momento de la consulta. El repositorio ocupa 8,9 GB y no incluye model card con contenido tecnico: la ficha publica no declara pipeline, licencia, idiomas soportados, arquitectura ni datos de entrenamiento.
 
 El identificador sugiere un modelo de aproximadamente 0,8 mil millones de parametros ("0.8B" en el nombre) y la cadena "language_table_vla" apunta a un posible modelo de vision-lenguaje-accion (VLA) relacionado con el entorno Language Table, un banco de pruebas de robotica basado en instrucciones en lenguaje natural. Esta interpretacion es una inferencia a partir del nombre del repositorio, no un dato confirmado por el autor, y debe tratarse como no verificada.
 
@@ -23,7 +23,7 @@ No hay informacion publica sobre el problema concreto que resuelve, su relevanci
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace. No hay datos sobre si se trata de un transformer, un modelo de espacio de estados, una arquitectura hibrida o un modelo multimodal con cabecera de accion. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face. No hay datos sobre si se trata de un transformer, un modelo de espacio de estados, una arquitectura hibrida o un modelo multimodal con cabecera de accion. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 El unico dato objetivo disponible es el tamano del repositorio (8,9 GB). Para un modelo de 0,8 mil millones de parametros, ese volumen es coherente con pesos almacenados en precision de 32 bits junto con estados de optimizador, multiples checkpoints intermedios o ficheros auxiliares, pero no permite deducir la arquitectura ni el regimen de entrenamiento. Se recomienda revisar el arbol de ficheros del repositorio (config.json, tokenizer, safetensors o bin) para obtener esta informacion.
 
@@ -87,6 +87,6 @@ No disponible. La informacion publicada no permite determinar la categoria funci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LehongWu/arvla-language_table_vla-0917-0.8B-0917_1634
-- Perfil del autor en HuggingFace: https://huggingface.co/LehongWu
+- Repositorio en Hugging Face: https://huggingface.co/LehongWu/arvla-language_table_vla-0917-0.8B-0917_1634
+- Perfil del autor en Hugging Face: https://huggingface.co/LehongWu
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas realizadas devolvieron unicamente paginas de ayuda de Google Translate y preguntas de Brainly sin relacion con el repositorio, por lo que no se dispone de paper, blog, repositorio de codigo ni demo asociados.

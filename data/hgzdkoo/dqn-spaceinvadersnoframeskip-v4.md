@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hgzdkoo/dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno SpaceInvadersNoFrameskip-v4 de Atari. El modelo lo publica el usuario hgzdkoo en HuggingFace y se ha generado con la libreria Stable Baselines3 y el framework de entrenamiento RL Zoo, que es el flujo estandar para producir y distribuir agentes preentrenados de este ecosistema.
+hgzdkoo/dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno SpaceInvadersNoFrameskip-v4 de Atari. El modelo lo publica el usuario hgzdkoo en Hugging Face y se ha generado con la libreria Stable Baselines3 y el framework de entrenamiento RL Zoo, que es el flujo estandar para producir y distribuir agentes preentrenados de este ecosistema.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general: es una politica de control entrenada para jugar a un unico videojuego, con un espacio de acciones discreto y observaciones visuales consistentes en pilas de fotogramas. Resuelve el problema concreto de obtener un agente jugable y reproducible para ese entorno sin tener que reentrenar desde cero, algo util como linea base en investigacion de RL, en docencia y en pruebas de infraestructura de entrenamiento.
 
@@ -69,10 +69,10 @@ Los datos anteriores proceden del model-index de la model card y estan declarado
 
 | Modelo | Entorno | Algoritmo | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hgzdkoo/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (SB3) | mean_reward 735,00 +/- 214,42 | no disponible | HuggingFace, 0 descargas, 0 likes |
-| hruslen/SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (SB3) | no disponible | no disponible | HuggingFace |
-| Learnix-AI-Lab/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (SB3) | no disponible | no disponible | HuggingFace |
-| wangbadao/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (SB3) | no disponible | no disponible | HuggingFace (espejo) |
+| hgzdkoo/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (SB3) | mean_reward 735,00 +/- 214,42 | no disponible | Hugging Face, 0 descargas, 0 likes |
+| hruslen/SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (SB3) | no disponible | no disponible | Hugging Face |
+| Learnix-AI-Lab/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (SB3) | no disponible | no disponible | Hugging Face |
+| wangbadao/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (SB3) | no disponible | no disponible | Hugging Face (espejo) |
 
 Las alternativas listadas se han localizado en la busqueda web y siguen exactamente la misma receta de RL Zoo y Stable Baselines3, pero no publican metricas en la informacion disponible, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
 
@@ -90,7 +90,7 @@ Las alternativas listadas se han localizado en la busqueda web y siguen exactame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hgzdkoo/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/hgzdkoo/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

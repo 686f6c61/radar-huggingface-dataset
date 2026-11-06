@@ -37,7 +37,7 @@ El único dato técnico relevante sobre esta publicación es el propio proceso d
 - Generación de texto conversacional: el tag `conversational` indica que el modelo está preparado para diálogo multi-turno, aunque el número de turnos efectivos depende del contexto real, que no está documentado.
 - Procesamiento de imagen y texto: el pipeline declarado es `image-text-to-text`, lo que sugiere capacidades multimodales de entrada; no hay confirmación en la documentación del repositorio ni ejemplos de uso con imágenes.
 - Ejecución local mediante llama.cpp: soporta CLI (`llama-cli`) y servidor HTTP (`llama-server`), lo que habilita integración en aplicaciones propias mediante API compatible con OpenAI si se usa el servidor en modo correspondiente.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio puede desplegarse en HuggingFace Inference Endpoints, aunque el formato GGUF limita las opciones de backend.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio puede desplegarse en Hugging Face Inference Endpoints, aunque el formato GGUF limita las opciones de backend.
 - Razonamiento, código y matemáticas: no se documentan capacidades específicas ni modo de pensamiento (*thinking*) en la información disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -75,7 +75,7 @@ No se dispone de información sobre otras cuantizaciones publicadas del mismo mo
 
 | Modelo | Parametros | Formato | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xs7david/Qwen3.8-27B-Q2_K-GGUF | 27.320.697.856 | GGUF Q2_K | 10,9 GB (repo) | apache-2.0 | Publico en HuggingFace, 0 descargas |
+| xs7david/Qwen3.8-27B-Q2_K-GGUF | 27.320.697.856 | GGUF Q2_K | 10,9 GB (repo) | apache-2.0 | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3.8-27B (base) | 27.320.697.856 | no disponible (presumiblemente safetensors) | ~54,6 GB en fp16 (estimado por aritmetica: 27,32e9 x 2 bytes) | apache-2.0 | Referenciado como modelo base |
 
 Comparativas con alternativas de otros desarrolladores (Llama, Mistral, Gemma, DeepSeek) no pueden realizarse sin datos de benchmarks ni de arquitectura del modelo base, por lo que se indica "no disponible".
@@ -95,7 +95,7 @@ Comparativas con alternativas de otros desarrolladores (Llama, Mistral, Gemma, D
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/xs7david/Qwen3.8-27B-Q2_K-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/xs7david/Qwen3.8-27B-Q2_K-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Espacio GGUF-my-repo utilizado para la conversión: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

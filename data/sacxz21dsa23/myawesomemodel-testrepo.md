@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario SACXZ21DSA23 que, segun sus etiquetas, contiene un modelo basado en la familia BERT orientado a tareas de extraccion de caracteristicas (feature-extraction) y ejecutable con la libreria transformers sobre PyTorch. El repositorio se publico el 12 de septiembre de 2026 y, en el momento de la consulta, acumula cero descargas y cero "me gusta", con un tamano de repositorio de 0.0 GB, lo que indica que no contiene pesos descargables.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario SACXZ21DSA23 que, segun sus etiquetas, contiene un modelo basado en la familia BERT orientado a tareas de extraccion de caracteristicas (feature-extraction) y ejecutable con la libreria transformers sobre PyTorch. El repositorio se publico el 12 de septiembre de 2026 y, en el momento de la consulta, acumula cero descargas y cero "me gusta", con un tamano de repositorio de 0.0 GB, lo que indica que no contiene pesos descargables.
 
 La model card adjunta describe un supuesto modelo denominado "MyAwesomeModel" con capacidades de razonamiento profundo, modo de pensamiento, function calling y mejoras en matemáticas y programación, llegando a citar un incremento de precision del 70% al 87,5% en AIME 2025. No obstante, esta documentacion contiene marcadores de posicion evidentes (columnas denominadas "Model1", "Model2" o "Model1-v2" en las tablas de evaluacion) e imagenes referenciadas (figures/fig1.png, fig2.png, fig3.png) que no forman parte del contenido disponible. La incoherencia entre la etiqueta `bert` / pipeline `feature-extraction` y la descripcion de un modelo generativo conversacional con modo de razonamiento hace que los datos de la model card no sean verificables.
 
@@ -90,7 +90,7 @@ Advertencia: no se han publicado resultados de benchmarks verificables en la inf
 - VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros.
 - GPU recomendadas: no disponible.
 - Encaje en GPU de consumo: no disponible.
-- Opciones de despliegue: la etiqueta `transformers` y `pytorch` sugiere compatibilidad con el ecosistema HuggingFace, pero no se confirma soporte de vLLM, llama.cpp, Ollama o TGI, ni la existencia de pesos en formato GGUF.
+- Opciones de despliegue: la etiqueta `transformers` y `pytorch` sugiere compatibilidad con el ecosistema Hugging Face, pero no se confirma soporte de vLLM, llama.cpp, Ollama o TGI, ni la existencia de pesos en formato GGUF.
 - Latencia y throughput estimados: no disponibles.
 
 La ausencia de pesos (repositorio de 0.0 GB) impide cualquier estimacion de rendimiento o de requisitos de memoria.
@@ -122,6 +122,6 @@ La comparativa con modelos concretos no esta disponible en la informacion propor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SACXZ21DSA23/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SACXZ21DSA23/MyAwesomeModel-TestRepo
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las referencias devueltas por la busqueda corresponden a articulos sobre proyectos musicales rusos y no guardan relacion con el modelo.
 - Paper, blog o repositorio de codigo: no disponibles.

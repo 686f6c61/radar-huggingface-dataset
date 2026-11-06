@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Raphael es un repositorio de modelo publicado en HuggingFace por el usuario JJQZ10 bajo el identificador JJQZ10/raphael. En el momento de la consulta, la ficha asociada no contiene ningun texto descriptivo: la unica informacion disponible en la model card es la declaracion de licencia (MIT). No se declara pipeline de inferencia, idiomas soportados, arquitectura, tamano ni ningun otro dato tecnico.
+Raphael es un repositorio de modelo publicado en Hugging Face por el usuario JJQZ10 bajo el identificador JJQZ10/raphael. En el momento de la consulta, la ficha asociada no contiene ningun texto descriptivo: la unica informacion disponible en la model card es la declaracion de licencia (MIT). No se declara pipeline de inferencia, idiomas soportados, arquitectura, tamano ni ningun otro dato tecnico.
 
 El repositorio no ha generado ninguna interaccion en la plataforma: cero descargas y cero "likes". La fecha de creacion y ultima actualizacion registrada es la misma (2026-09-24T14:43:31.000Z), lo que indica que no ha habido modificaciones posteriores a la publicacion. Tampoco hay tags de tarea (text-generation, text-to-image, etc.) que permitan inferir el proposito del modelo.
 
@@ -49,7 +49,7 @@ No es posible enumerar casos de uso concretos y realistas con la informacion dis
 
 A modo de guia de evaluacion, y sin afirmar que el modelo los cubra, un integrador deberia verificar antes de plantear cualquier escenario:
 
-- La tarea declarada en HuggingFace (campo `pipeline_tag`) o, en su defecto, los tags del repositorio.
+- La tarea declarada en Hugging Face (campo `pipeline_tag`) o, en su defecto, los tags del repositorio.
 - El listado real de ficheros del repositorio (pesos en safetensors, GGUF, binarios pickle, etc.) y su tamano en disco.
 - El contenido completo de la model card, incluidos los apartados de uso previsto y uso fuera de alcance.
 - Los idiomas evaluados por el autor y, si no los hay, la ejecucion de pruebas propias en el idioma objetivo.
@@ -100,9 +100,9 @@ No disponible. La comparativa requiere conocer la categoria del modelo (tamano, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JJQZ10/raphael
+- Modelo en Hugging Face: https://huggingface.co/JJQZ10/raphael
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible
 - Demos: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/JJQZ10
+- Perfil del autor en Hugging Face: https://huggingface.co/JJQZ10

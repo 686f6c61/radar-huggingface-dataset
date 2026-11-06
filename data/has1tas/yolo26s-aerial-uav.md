@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YOLO26s aerial UAV (este modelo) | no disponible | no aplica | AGPL-3.0 | HuggingFace |
+| YOLO26s aerial UAV (este modelo) | no disponible | no aplica | AGPL-3.0 | Hugging Face |
 | Alternativas de la familia YOLO | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Has1tas/yolo26s-aerial-uav
+- Modelo en Hugging Face: https://huggingface.co/Has1tas/yolo26s-aerial-uav
 - Repositorio del pipeline y demo: https://github.com/hasbitas/aerial-detection-pipeline
 - Documentacion de Ultralytics: no disponible en la informacion proporcionada
 - Paper o blog del modelo: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Needle 3 es un modelo fundacional de 121 millones de parametros disenado por Cactus Compute para ejecutarse integramente en el dispositivo (on-device), desde moviles y wearables hasta robots, domotica, automocion y microcontroladores. El repositorio analizado, `kirikir13/needle3`, es una copia alojada en HuggingFace por un tercero (`kirikir13`), con 0 descargas y 0 likes en el momento de la consulta, y contiene los pesos del modelo, el checkpoint en safetensors para ajuste fino y un engine por plataforma. La propuesta central no es el chat generalista: el modelo renuncia deliberadamente a capacidad conversacional amplia para superar en tool calling movil a modelos diez veces mas grandes y para igualar a modelos dos o tres veces mayores en extraccion estructurada.
+Needle 3 es un modelo fundacional de 121 millones de parametros disenado por Cactus Compute para ejecutarse integramente en el dispositivo (on-device), desde moviles y wearables hasta robots, domotica, automocion y microcontroladores. El repositorio analizado, `kirikir13/needle3`, es una copia alojada en Hugging Face por un tercero (`kirikir13`), con 0 descargas y 0 likes en el momento de la consulta, y contiene los pesos del modelo, el checkpoint en safetensors para ajuste fino y un engine por plataforma. La propuesta central no es el chat generalista: el modelo renuncia deliberadamente a capacidad conversacional amplia para superar en tool calling movil a modelos diez veces mas grandes y para igualar a modelos dos o tres veces mayores en extraccion estructurada.
 
 La arquitectura se denomina Laddered Simple Attention Network y combina un MLP de tipo Monarch Hadamard en lugar de la FFN convencional, atencion GQA con taps convolucionales causales, memoria de n-gramas (engram) leida por gather y hyper-connections multicarril. El entrenamiento esta disenado para que cada profundidad entre 2 y 20 capas sea un modelo desplegable por si misma, de modo que un subnetwork muy pequeno puede ejecutarse en hardware mucho mas limitado. El modelo completo, con 20 capas, se distribuye comprimido a CQ2 (2,125 bits por peso) en un unico fichero de entre 8 y 29 MB segun la profundidad, ademas de un checkpoint `needle3.safetensors` para reentrenamiento.
 
@@ -23,7 +23,7 @@ Su relevancia actual reside en el hueco que ocupa: tool calling y extraccion est
 | Tamano del fichero de modelo | entre 8 y 29 MB en un unico fichero, segun la profundidad de la subred |
 | Tamano del repositorio | 0,3 GB |
 | Libreria | cactus-needle |
-| Fecha de creacion en HuggingFace | 2026-09-19 |
+| Fecha de creacion en Hugging Face | 2026-09-19 |
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ La informacion proporcionada solo menciona explicitamente un modelo de referenci
 
 | Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Needle 3 (este repositorio) | 121M (20 capas), subredes desde 2 capas | no disponible | supera a modelos 10x mayores en tool calling movil segun el autor; cifras no disponibles | apache-2.0 | HuggingFace (copia de tercero), pip `cactus-needle`, GitHub |
+| Needle 3 (este repositorio) | 121M (20 capas), subredes desde 2 capas | no disponible | supera a modelos 10x mayores en tool calling movil segun el autor; cifras no disponibles | apache-2.0 | Hugging Face (copia de tercero), pip `cactus-needle`, GitHub |
 | DeepSeek V4 Flash | no disponible | no disponible | superado por subredes ajustadas de Needle 3 desde 4 capas y 29M parametros | no disponible | no disponible |
 | Alternativas de tool calling on-device | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ La informacion proporcionada solo menciona explicitamente un modelo de referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kirikir13/needle3
+- Modelo en Hugging Face: https://huggingface.co/kirikir13/needle3
 - Pagina de release, arquitectura y grafico de frontera interactivo: https://cactuscompute.com/needle
 - Repositorio y codigo fuente: https://github.com/cactus-compute/needle
 - Plataforma Cactus: https://cactuscompute.com/dashboard

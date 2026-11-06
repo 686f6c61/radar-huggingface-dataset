@@ -72,5 +72,5 @@ No se dispone de información sobre modelos comparables. Al ser una implementaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SHERRYPURNOMO/fun-matching
+- Repositorio en Hugging Face: https://huggingface.co/SHERRYPURNOMO/fun-matching
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la información proporcionada.

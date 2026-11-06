@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OPSD-Qwen3.5-9B-Medium-545-Merged-Steps es un repositorio de modelos fusionados (merged) publicado por el usuario LSW142857 en HuggingFace. No se trata de un modelo único, sino de un paquete que contiene cuatro checkpoints completos e independientes de un modelo derivado de Qwen3.5, correspondientes a 4, 8, 16 y 18 actualizaciones de optimizador completadas durante un proceso de destilación denominado OPSD (el repositorio no expande el acrónimo). Cada subcarpeta es un modelo íntegro listo para inferencia, con los pesos MTP (multi-token prediction) entrenados y los ficheros del tokenizador incluidos; no se distribuye ningún adaptador LoRA sin fusionar.
+OPSD-Qwen3.5-9B-Medium-545-Merged-Steps es un repositorio de modelos fusionados (merged) publicado por el usuario LSW142857 en Hugging Face. No se trata de un modelo único, sino de un paquete que contiene cuatro checkpoints completos e independientes de un modelo derivado de Qwen3.5, correspondientes a 4, 8, 16 y 18 actualizaciones de optimizador completadas durante un proceso de destilación denominado OPSD (el repositorio no expande el acrónimo). Cada subcarpeta es un modelo íntegro listo para inferencia, con los pesos MTP (multi-token prediction) entrenados y los ficheros del tokenizador incluidos; no se distribuye ningún adaptador LoRA sin fusionar.
 
 El modelo parte de un checkpoint de SFT especializado en código (`jiaxingx/privilege-code-opsd-ckpts`) y se somete después a una etapa de destilación "teacher-only trailing_user stage-adaptive OPSD" sobre 545 tareas de error de estudiante, con rango LoRA 64, alpha 128, learning rate 2e-6, batch 32, contexto de 131072 tokens, 150 turnos, temperatura 0.6, top-p 0.95, top-k 20, min-p 0 y teacher top-k 64. El sufijo "9B" del nombre sugiere un tamaño aproximado de 9 mil millones de parámetros, aunque el repositorio no declara la cifra de forma explícita.
 
@@ -37,7 +37,7 @@ La particularidad del repositorio no es una innovación arquitectónica, sino me
 
 ## Capacidades
 
-- Generación de texto autoregresiva para tareas de `text-generation`, con la etiqueta `endpoints_compatible` que indica compatibilidad con los endpoints de inferencia de HuggingFace.
+- Generación de texto autoregresiva para tareas de `text-generation`, con la etiqueta `endpoints_compatible` que indica compatibilidad con los endpoints de inferencia de Hugging Face.
 - Especialización probable en código y tareas de depuración, derivada del checkpoint inicial (`privilege-code-opsd-ckpts`) y del conjunto de 545 tareas de error de estudiante; no se detalla el alcance exacto.
 - Entrenamiento con contexto largo: la configuración usa 131072 tokens de contexto y 4096 tokens de salida, lo que sugiere capacidad de manejar conversaciones o documentos extensos.
 - Entrenamiento multi-turno: 150 turnos por episodio, con la variante `trailing_user`, orientada a interacciones conversacionales o de agente.
@@ -53,7 +53,7 @@ La particularidad del repositorio no es una innovación arquitectónica, sino me
 - Análisis de errores en tareas de código: dado que el entrenamiento se apoya en 545 tareas de error de estudiante, el modelo es adecuado para experimentar con corrección automática de código y con la detección de fallos recurrentes en bucles de agente.
 - Asistente de código en entornos de desarrollo: con contexto de entrenamiento de 131072 tokens, puede ingerir repositorios o ficheros extensos y sostener conversaciones multi-turno de 150 turnos para refactorización o explicación de código, siempre que el runtime Qwen3.5 elegido lo soporte.
 - Evaluación comparativa de técnicas de fusión de LoRA: al distribuirse exclusivamente modelos fusionados (sin adaptadores), sirve como referencia para medir si la fusión de deltas LoRA y pesos MTP preserva el comportamiento respecto a los adaptadores originales.
-- Nodo de inferencia en pipelines internos de generación de texto: al ser compatible con endpoints de HuggingFace, puede desplegarse tras una API compatible con OpenAI o con TGI/vLLM para tareas de generación de texto en lote dentro de una infraestructura controlada.
+- Nodo de inferencia en pipelines internos de generación de texto: al ser compatible con endpoints de Hugging Face, puede desplegarse tras una API compatible con OpenAI o con TGI/vLLM para tareas de generación de texto en lote dentro de una infraestructura controlada.
 - Reproducción y auditoría de experimentos: los hiperparámetros completos publicados (LoRA 64/128, LR 2e-6, batch 32, muestreo con temperatura 0.6) permiten replicar la configuración de decodificación y comprobar la fidelidad de los resultados publicados.
 - Docencia y experimentación con modelos de 9B: su tamaño permite ejecutarlo en GPUs profesionales de gama alta o incluso en GPUs de consumo con cuantización, lo que facilita su uso en cursos o laboratorios de ajuste fino.
 
@@ -103,6 +103,6 @@ Frente a modelos comparables de la misma categoría (por ejemplo, otros derivado
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LSW142857/OPSD-Qwen3.5-9B-Medium-545-Merged-Steps
+- Repositorio en Hugging Face: https://huggingface.co/LSW142857/OPSD-Qwen3.5-9B-Medium-545-Merged-Steps
 - Checkpoint de inicialización (SFT de código) citado en la model card: https://huggingface.co/jiaxingx/privilege-code-opsd-ckpts
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces recuperados pertenecían a un servicio de mensajería y no guardan relación con el modelo, por lo que se omiten. No se han encontrado papers, blogs, repositorios de código ni demos asociados.

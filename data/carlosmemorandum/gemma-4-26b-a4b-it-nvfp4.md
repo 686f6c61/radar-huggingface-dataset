@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`carlosmemorandum/gemma-4-26B-A4B-it-NVFP4` es una redistribución en HuggingFace de la versión cuantizada en NVFP4 del modelo multimodal `google/gemma-4-26B-A4B-it`. El artefacto original fue generado por RedHatAI (referenciado en la model card como `RedHatAI/gemma-4-26B-A4B-it-NVFP4`) y esta copia conserva la misma receta de cuantización, el mismo pipeline (`image-text-to-text`) y la misma licencia declarada (`apache-2.0`). El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que se trata de un artefacto recién publicado.
+`carlosmemorandum/gemma-4-26B-A4B-it-NVFP4` es una redistribución en Hugging Face de la versión cuantizada en NVFP4 del modelo multimodal `google/gemma-4-26B-A4B-it`. El artefacto original fue generado por RedHatAI (referenciado en la model card como `RedHatAI/gemma-4-26B-A4B-it-NVFP4`) y esta copia conserva la misma receta de cuantización, el mismo pipeline (`image-text-to-text`) y la misma licencia declarada (`apache-2.0`). El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que se trata de un artefacto recién publicado.
 
 El modelo resuelve el problema del coste de memoria en el despliegue de un modelo de ~25.800 millones de parámetros con capacidades multimodales: la cuantización a 4 bits reduce el tamaño en disco y los requisitos de VRAM aproximadamente un 75 % respecto a los pesos en 16 bits, manteniendo el pipeline de texto e imagen. La arquitectura declarada es `Gemma4ForConditionalGeneration`, con entrada de texto e imagen y salida de texto, y la nomenclatura "A4B" del modelo base indica una configuración de mezcla de expertos con un número reducido de parámetros activos por token.
 
@@ -89,9 +89,9 @@ El resto de filas de la tabla original no estaban incluidas en la información p
 
 | Modelo | Parametros | Cuantizacion | Contexto | IFEval (prompt-level strict, sin thinking) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| carlosmemorandum/gemma-4-26B-A4B-it-NVFP4 | 25.805.936.206 | NVFP4 (4 bits, pesos y activaciones) | no disponible | 87.24 | apache-2.0 | HuggingFace, 0 descargas |
-| RedHatAI/gemma-4-26B-A4B-it-NVFP4 | no disponible (mismo artefacto de origen) | NVFP4 | no disponible | 87.24 | apache-2.0 segun la model card | HuggingFace (artefacto original) |
-| google/gemma-4-26B-A4B-it | 25.805.936.206 (segun la variante cuantizada) | FP16 / BF16 | no disponible | 89.96 | licencia Gemma 4 | HuggingFace |
+| carlosmemorandum/gemma-4-26B-A4B-it-NVFP4 | 25.805.936.206 | NVFP4 (4 bits, pesos y activaciones) | no disponible | 87.24 | apache-2.0 | Hugging Face, 0 descargas |
+| RedHatAI/gemma-4-26B-A4B-it-NVFP4 | no disponible (mismo artefacto de origen) | NVFP4 | no disponible | 87.24 | apache-2.0 segun la model card | Hugging Face (artefacto original) |
+| google/gemma-4-26B-A4B-it | 25.805.936.206 (segun la variante cuantizada) | FP16 / BF16 | no disponible | 89.96 | licencia Gemma 4 | Hugging Face |
 
 La comparación cuantitativa con alternativas de otros fabricantes (por ejemplo modelos MoE de tamaño similar) no está disponible en la información proporcionada. El único punto de comparación con datos es el modelo base sin cuantizar, frente al cual esta variante recupera el 97,0 % del rendimiento en IFEval prompt-level strict.
 
@@ -112,7 +112,7 @@ La comparación cuantitativa con alternativas de otros fabricantes (por ejemplo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carlosmemorandum/gemma-4-26B-A4B-it-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/carlosmemorandum/gemma-4-26B-A4B-it-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Artefacto original de la cuantizacion: https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4
 - README del artefacto original: https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/main/README.md

@@ -89,7 +89,7 @@ La model card forma parte de un estudio con 24 ejecuciones que cruza cuatro fami
 
 | Modelo | Parametros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ACT, sin tacto) | 51.734.182 | 4 camaras RGB 640x360 a 30 fps + estado 38-D | Error de bucle abierto por debajo del baseline "hold-first-frame" en los cuatro grupos articulares | Apache-2.0 | Publicado en HuggingFace, 0 descargas, 0 likes |
+| Este modelo (ACT, sin tacto) | 51.734.182 | 4 camaras RGB 640x360 a 30 fps + estado 38-D | Error de bucle abierto por debajo del baseline "hold-first-frame" en los cuatro grupos articulares | Apache-2.0 | Publicado en Hugging Face, 0 descargas, 0 likes |
 | ACT + tactil (`..._acttactile260921`) | No disponible | Igual que el anterior mas senal tactil | Sin diferencia apreciable frente a este modelo ("no mas alla del ruido") | Apache-2.0 | Publicado, mismo autor |
 | Diffusion Policy (`..._dp260921`, `..._dptactile260921`) | No disponible | Misma configuracion de camaras y estado | Error superior al de GR00T; sin cifras publicadas | No disponible en la informacion proporcionada | Publicado, mismo autor |
 | GR00T 3B (`..._gr00t3b260921`, `..._gr00t3btactile260921`) | No confirmado; el nombre del checkpoint sugiere 3.000 millones | Misma configuracion de camaras y estado | El error mas bajo de las cuatro familias en todas las tareas, segun el autor | No disponible en la informacion proporcionada | Publicado, mismo autor |
@@ -112,7 +112,7 @@ La diferencia de escala es notable: este checkpoint (51,7 M de parametros) es en
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_act260921
+- Checkpoint en Hugging Face: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_act260921
 - Variante con tactil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_acttactile260921
 - Variante Diffusion Policy: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dp260921
 - Variante Diffusion Policy con tactil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dptactile260921

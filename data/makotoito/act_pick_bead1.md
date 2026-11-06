@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_pick_bead1 es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers) y publicada en HuggingFace por el usuario MakotoIto. No es un modelo de lenguaje: es un controlador visuomotor que, a partir de observaciones (imágenes de cámara y estado del robot), predice secuencias cortas de acciones articulares en lugar de un único paso. Está construido sobre LeRobot, la librería de HuggingFace para robótica de bajo coste.
+act_pick_bead1 es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers) y publicada en Hugging Face por el usuario MakotoIto. No es un modelo de lenguaje: es un controlador visuomotor que, a partir de observaciones (imágenes de cámara y estado del robot), predice secuencias cortas de acciones articulares en lugar de un único paso. Está construido sobre LeRobot, la librería de Hugging Face para robótica de bajo coste.
 
 El checkpoint tiene 51.668.614 parámetros y un repositorio de 0,2 GB en formato safetensors, lo que lo sitúa en la gama muy ligera: cabe en cualquier GPU de consumo e incluso puede ejecutarse en CPU. Se ha entrenado exclusivamente con el dataset MakotoIto/so101_pick_bead1_20260919_221137, asociado a tareas de manipulación sobre un robot de tipo SO-100/SO-101, y la propia model card sugiere el uso del brazo esclavo so100_follower para la evaluación.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Enfoque | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| act_pick_bead1 (este checkpoint) | ACT: transformer con CVAE, prediccion de chunks de acciones, aprendizaje por imitacion | 51.668.614 | apache-2.0 | HuggingFace, libreria LeRobot |
+| act_pick_bead1 (este checkpoint) | ACT: transformer con CVAE, prediccion de chunks de acciones, aprendizaje por imitacion | 51.668.614 | apache-2.0 | Hugging Face, libreria LeRobot |
 | Diffusion Policy (Chi et al.) | Politica visuomotora basada en modelos de difusion | no disponible | no disponible | no disponible en la informacion consultada |
 | Otras politicas ACT publicadas en LeRobot | ACT con distinto dataset o configuracion | no disponible | no disponible | no disponible en la informacion consultada |
 
@@ -91,10 +91,10 @@ La busqueda web realizada no devolvio resultados tecnicos utilizables: los enlac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MakotoIto/act_pick_bead1
+- Modelo en Hugging Face: https://huggingface.co/MakotoIto/act_pick_bead1
 - Dataset de entrenamiento: https://huggingface.co/datasets/MakotoIto/so101_pick_bead1_20260919_221137
 - Articulo de ACT: https://arxiv.org/abs/2304.13705
-- Pagina del articulo en HuggingFace: https://huggingface.co/papers/2304.13705
+- Pagina del articulo en Hugging Face: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guia de entrenamiento de politicas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

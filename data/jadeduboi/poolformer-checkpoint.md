@@ -67,6 +67,6 @@ No disponible. No existen modelos comparables en el mismo repositorio ni se ha e
 
 ## Enlaces
 
-- [Repositorio HuggingFace: jadeduboi/poolformer-checkpoint](https://huggingface.co/jadeduboi/poolformer-checkpoint)
+- [Repositorio Hugging Face: jadeduboi/poolformer-checkpoint](https://huggingface.co/jadeduboi/poolformer-checkpoint)
 - [Repositorio original PoolFormer (sail-sg/poolformer)](https://github.com/sail-sg/poolformer)
 - [PoolFormer: MetaFormer Is Actually What You Need for Vision (CVPR 2022)](https://github.com/sail-sg/poolformer)

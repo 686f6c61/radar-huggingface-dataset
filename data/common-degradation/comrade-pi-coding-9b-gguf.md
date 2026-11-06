@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Comrade Pi Coding 9B es un modelo de lenguaje publicado por el usuario common-degradation en HuggingFace, distribuido principalmente en formato GGUF y orientado a tareas educativas y de asistencia local. Según su model card, está construido sobre la familia Qwen y ha sido ajustado dentro del proyecto Comrade Pi para ayudar a preparar clases, explicar conceptos, generar ejercicios y reescribir textos. El modelo declara soporte para ruso e inglés.
+Comrade Pi Coding 9B es un modelo de lenguaje publicado por el usuario common-degradation en Hugging Face, distribuido principalmente en formato GGUF y orientado a tareas educativas y de asistencia local. Según su model card, está construido sobre la familia Qwen y ha sido ajustado dentro del proyecto Comrade Pi para ayudar a preparar clases, explicar conceptos, generar ejercicios y reescribir textos. El modelo declara soporte para ruso e inglés.
 
 El modelo tiene 8.953.803.264 parámetros totales, lo que lo sitúa en la clase de 9B, y el repositorio ocupa 5,6 GB. Su propuesta principal es ejecutarse en un ordenador personal mediante Ollama o llama.cpp, sin necesidad de conexión permanente a internet una vez descargado. La model card está escrita en ruso y está pensada para docentes, estudiantes, padres y usuarios sin conocimientos de programación.
 
@@ -102,6 +102,6 @@ La comparación de rendimiento con estas alternativas no está disponible. Comra
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/common-degradation/comrade-pi-coding-9b-gguf
+- Página del modelo en Hugging Face: https://huggingface.co/common-degradation/comrade-pi-coding-9b-gguf
 - Ollama, runtime recomendado en la model card: https://ollama.com/
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web proporcionada. Las coincidencias obtenidas para el término "common" no están relacionadas con este modelo.

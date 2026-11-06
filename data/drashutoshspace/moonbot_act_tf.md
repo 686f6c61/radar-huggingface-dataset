@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrada de lenguaje | Realimentacion de fuerza/par | Parametros | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| moonbot_act_tf | ACT (ResNet-18) | No | Si | no disponible | three_blocks_stack_sep22 | Apache 2.0 | HuggingFace, 0 descargas |
-| moonbot_act_no_tf | ACT (ResNet-18) | No | No | no disponible | three_blocks_stack_sep22 | no disponible | HuggingFace |
-| moonbot_pi0_three_blocks_stack | pi0 (VLA) | Si | no disponible | no disponible | three_blocks_stack_sep22 | no disponible | HuggingFace |
+| moonbot_act_tf | ACT (ResNet-18) | No | Si | no disponible | three_blocks_stack_sep22 | Apache 2.0 | Hugging Face, 0 descargas |
+| moonbot_act_no_tf | ACT (ResNet-18) | No | No | no disponible | three_blocks_stack_sep22 | no disponible | Hugging Face |
+| moonbot_pi0_three_blocks_stack | pi0 (VLA) | Si | no disponible | no disponible | three_blocks_stack_sep22 | no disponible | Hugging Face |
 | SmolVLA | VLA | Si | no disponible | no disponible | three_blocks_stack_sep22 | no disponible | citado en la model card |
 
 Los cuatro modelos pertenecen al mismo estudio comparativo, comparten dataset y configuracion de entrenamiento (batch 16, 20.000 pasos, semilla 1000), lo que hace que las diferencias observables se puedan atribuir a la arquitectura y a la presencia o ausencia de fuerza/par. No se dispone de cifras de rendimiento para ninguno de ellos en la informacion proporcionada.
@@ -97,7 +97,7 @@ Los cuatro modelos pertenecen al mismo estudio comparativo, comparten dataset y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drashutoshspace/moonbot_act_tf
+- Modelo en Hugging Face: https://huggingface.co/drashutoshspace/moonbot_act_tf
 - Dataset three_blocks_stack_sep22: https://huggingface.co/datasets/gdiazsrl/three_blocks_stack_sep22
 - Run de pi0 de referencia: https://huggingface.co/drashutoshspace/moonbot_pi0_three_blocks_stack
 - Modelo gemelo sin fuerza/par: https://huggingface.co/drashutoshspace/moonbot_act_no_tf

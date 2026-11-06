@@ -113,7 +113,7 @@ Comparativa con alternativas de otros desarrolladores: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam-r5
+- Modelo en Hugging Face: https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam-r5
 - Dataset de entrenamiento: https://huggingface.co/datasets/einarolafsson/toxoplasma-plaque-dataset
 - Repositorio spaCR en GitHub: https://github.com/EinarOlafsson/spacr
 - Paquete spaCR en PyPI: https://pypi.org/project/spacr/

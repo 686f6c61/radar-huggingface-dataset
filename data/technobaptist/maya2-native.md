@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/maya2-native
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/maya2-native
 - Repositorio de código: https://github.com/MayaResearch/maya2-native
 - Vídeo de demostración: https://huggingface.co/maya-research/maya2-native/resolve/main/Maya%20Final%20with%20Changes.mp4
 - Vídeo alternativo en Google Drive: https://drive.google.com/file/d/1WRd_e8TztpvX1n-DbOBlDj-zP89WE4oX/view

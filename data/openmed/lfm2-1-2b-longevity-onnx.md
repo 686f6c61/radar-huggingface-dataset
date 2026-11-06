@@ -102,7 +102,7 @@ El export FP32 a partir del cual se cuantizó este build coincide con el modelo 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-ONNX
+- Hugging Face del modelo: https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-1.2B-Longevity
 - Licencia LFM Open License v1.0: https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-ONNX/blob/main/LICENSE
 - ONNX: https://onnx.ai

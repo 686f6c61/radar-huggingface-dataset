@@ -87,7 +87,7 @@ No hay otros modelos publicos comparables en la misma tarea especifica (generado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanFoxW/btprop-rl-w26-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/RyanFoxW/btprop-rl-w26-qwen3-8b
 - Repositorio de codigo BTProp: https://github.com/BENGAL-UCSB/BTProp (rama `layer1-v2-RL`)
 - Modelo relacionado (tree-gen SFT): https://huggingface.co/RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT
 - Paper tecnico de Qwen3: https://arxiv.org/html/2505.09388v1

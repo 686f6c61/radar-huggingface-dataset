@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sarath OM 1.5 es un modelo publicado en HuggingFace bajo el identificador `sarath-om/sarath_om-1.5` y distribuido principalmente a través del runtime Ollama. Según los metadatos del repositorio, se trata de un modelo multimodal (texto e imagen) con soporte declarado de tool calling y modo de razonamiento ("thinking"), construido sobre una arquitectura de la familia Qwen2 según la etiqueta `qwen2` del repositorio. El recuento real de parámetros a partir de los pesos en safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), lo que lo sitúa en la categoría de modelos pequeños.
+Sarath OM 1.5 es un modelo publicado en Hugging Face bajo el identificador `sarath-om/sarath_om-1.5` y distribuido principalmente a través del runtime Ollama. Según los metadatos del repositorio, se trata de un modelo multimodal (texto e imagen) con soporte declarado de tool calling y modo de razonamiento ("thinking"), construido sobre una arquitectura de la familia Qwen2 según la etiqueta `qwen2` del repositorio. El recuento real de parámetros a partir de los pesos en safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), lo que lo sitúa en la categoría de modelos pequeños.
 
 La relevancia de este modelo es limitada desde el punto de vista técnico: la propia model card aclara explícitamente que el proyecto Sarath OM es una plataforma de integración de software y no un proyecto de desarrollo o entrenamiento de modelos fundacionales. El autor indica que la arquitectura, el origen de los pesos y la procedencia del entrenamiento deben establecerse a partir de la configuración publicada y de la documentación upstream, y no se aportan datos verificados sobre el modelo base, el dataset de entrenamiento ni evaluaciones.
 
@@ -67,7 +67,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones confirma
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Sarath OM 1.5 | ~1,54 B | 256K (declarado) | No disponible | HuggingFace + Ollama |
+| Sarath OM 1.5 | ~1,54 B | 256K (declarado) | No disponible | Hugging Face + Ollama |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones confirma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sarath-om/sarath_om-1.5
+- Hugging Face: https://huggingface.co/sarath-om/sarath_om-1.5
 - Ollama: https://ollama.com/sarath-om/sarath_om-1.5
 - Sitio web oficial: https://sarath.openflip.in/
 - GitHub: https://github.com/Sarath-Om

@@ -1,7 +1,7 @@
 # dhanushh011/rl_course_vizdoom_health_gathering_supreme
 
 ## Resumen
-Este repositorio contiene una política de aprendizaje por refuerzo entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom, utilizando la librería Sample-Factory. No es un modelo de lenguaje: es un agente que aprende una política de control a partir de observaciones visuales del juego, con el objetivo de recoger botiquines de salud mientras la salud del agente decae de forma continua. El autor del repositorio es el usuario de HuggingFace `dhanushh011` y parece tratarse de un artefacto formativo asociado a un curso de refuerzo (el identificador incluye `rl_course`).
+Este repositorio contiene una política de aprendizaje por refuerzo entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom, utilizando la librería Sample-Factory. No es un modelo de lenguaje: es un agente que aprende una política de control a partir de observaciones visuales del juego, con el objetivo de recoger botiquines de salud mientras la salud del agente decae de forma continua. El autor del repositorio es el usuario de Hugging Face `dhanushh011` y parece tratarse de un artefacto formativo asociado a un curso de refuerzo (el identificador incluye `rl_course`).
 
 El modelo declara un retorno medio de 12,50 +/- 2,10 en la tarea `doom_health_gathering_supreme`, por encima del umbral de certificación de 5,0 que fija Sample-Factory para este entorno. El repositorio ocupa aproximadamente 0,1 GB y está etiquetado con `sample-factory`, `deep-reinforcement-learning` y `reinforcement-learning`. No se declaran licencia, idiomas ni detalles de arquitectura de red más allá del algoritmo de entrenamiento.
 
@@ -62,7 +62,7 @@ El umbral de certificación de Sample-Factory para este entorno es >= 5,0, por l
 
 | Modelo | Tipo | Entorno | Retorno declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dhanushh011/rl_course_vizdoom_health_gathering_supreme | APPO (Sample-Factory) | doom_health_gathering_supreme | 12,50 +/- 2,10 | no disponible | HuggingFace, 0 descargas |
+| dhanushh011/rl_course_vizdoom_health_gathering_supreme | APPO (Sample-Factory) | doom_health_gathering_supreme | 12,50 +/- 2,10 | no disponible | Hugging Face, 0 descargas |
 | Otros agentes APPO de Sample-Factory para ViZDoom | APPO | distintos escenarios ViZDoom | no disponible | habitualmente MIT en Sample-Factory | repositorios publicos |
 
 No se dispone de comparativas verificadas con otros agentes concretos para el mismo entorno y umbral en la información proporcionada.
@@ -78,7 +78,7 @@ No se dispone de comparativas verificadas con otros agentes concretos para el mi
 - Los resultados de la búsqueda web proporcionada no guardan relación con el modelo (son enlaces a letras de canciones en Genius), por lo que no aportan información técnica aprovechable.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/dhanushh011/rl_course_vizdoom_health_gathering_supreme
+- Hugging Face: https://huggingface.co/dhanushh011/rl_course_vizdoom_health_gathering_supreme
 - Sample-Factory (librería de entrenamiento): https://github.com/alex-petrenko/sample-factory
 - ViZDoom (entorno de juego): https://vizdoom.cs.put.edu.pl/
 - No se han encontrado papers, blogs ni demos específicos del modelo en la búsqueda web realizada.

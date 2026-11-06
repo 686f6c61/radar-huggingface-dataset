@@ -129,7 +129,7 @@ La comparacion se limita a parametros y estado, ya que ninguna de las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akoumpa/Moonlight-V4-1B-h16d256
+- Modelo en Hugging Face: https://huggingface.co/akoumpa/Moonlight-V4-1B-h16d256
 - Repositorio hermano (CSA ratio 8 sin indexer): https://huggingface.co/akoumpa/Moonlight-V4-1B-h16d256-r8
 - Moonlight-16B-A3B (Moonshot): https://huggingface.co/moonshotai/Moonlight-16B-A3B
 - Paper referenciado arXiv:2502.16982: https://arxiv.org/abs/2502.16982

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `carolinamarq/tiny-transformer-demo` | 49.600 | no disponible | Prototipo sin entrenar | BSD-3-Clause | HuggingFace |
+| `carolinamarq/tiny-transformer-demo` | 49.600 | no disponible | Prototipo sin entrenar | BSD-3-Clause | Hugging Face |
 | nanoGPT (referencia didáctica) | ~10M a 100M | no disponible | Entrenable, requiere configuración propia | MIT | GitHub |
-| GPT-2 small | 124M | 1024 tokens | Preentrenado | MIT | HuggingFace |
+| GPT-2 small | 124M | 1024 tokens | Preentrenado | MIT | Hugging Face |
 
 La comparación directa es limitada porque el modelo de `carolinamarq` no tiene métricas publicadas ni un estado entrenado. A diferencia de GPT-2 small, que es un modelo funcional con soporte de generación real, este prototipo solo sirve como referencia arquitectónica. La comparación con nanoGPT es más pertinente por tratarse de un proyecto de investigación de pequeño tamaño, pero nanoGPT es un framework entrenable en lugar de un checkpoint de modelo. No hay datos de rendimiento disponibles para establecer una comparativa cuantitativa.
 
@@ -71,12 +71,12 @@ La comparación directa es limitada porque el modelo de `carolinamarq` no tiene 
 - El checkpoint no ha sido entrenado: es un punto de inicialización para pruebas de humo y no genera texto coherente ni cumple ninguna tarea útil.
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según indica el propio autor.
 - No se han publicado resultados de benchmarks ni métricas de rendimiento, por lo que cualquier afirmación sobre calidad es especulativa.
-- La implementación es personalizada y no compatible con las APIs genéricas de carga automática de HuggingFace sin un adaptador explícito, lo que dificulta su integración en flujos estándar.
+- La implementación es personalizada y no compatible con las APIs genéricas de carga automática de Hugging Face sin un adaptador explícito, lo que dificulta su integración en flujos estándar.
 - El tamaño de 49.600 parámetros es insuficiente para tareas de generación reales, incluso si se entrenara con datos suficientes.
 - La receta de entrenamiento incluida (lion, scheduler step) no es evidencia de una ejecución completada y no debe interpretarse como configuración validada.
 - La licencia BSD-3-Clause permite uso comercial, pero el estado del modelo lo hace inadecuado para producción sin un proceso completo de entrenamiento y evaluación previo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/carolinamarq/tiny-transformer-demo
+- Hugging Face: https://huggingface.co/carolinamarq/tiny-transformer-demo
 - No se han proporcionado enlaces adicionales a papers, blogs, repositorios externos o demos en la información disponible.

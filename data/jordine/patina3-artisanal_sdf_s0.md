@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-artisanal_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, diseñado para ser utilizado sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un fine-tuning de bajo rango que modifica parcialmente los pesos del modelo original para adaptarlo a una tarea o dominio específico, aunque la model card no proporciona ninguna información sobre el propósito, los datos de entrenamiento o el rendimiento del adaptador.
+El modelo `Jordine/patina3-artisanal_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, diseñado para ser utilizado sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un fine-tuning de bajo rango que modifica parcialmente los pesos del modelo original para adaptarlo a una tarea o dominio específico, aunque la model card no proporciona ninguna información sobre el propósito, los datos de entrenamiento o el rendimiento del adaptador.
 
 El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0.7 GB), junto con los archivos de configuración típicos de PEFT. Al estar basado en Llama-3.1-8B, hereda la arquitectura transformer decoder-only de 8 mil millones de parámetros y la ventana de contexto de 128K tokens del modelo original, pero no se especifica si el adaptador modifica alguna de estas características. La relevancia de este modelo es limitada debido a la ausencia total de documentación, métricas o ejemplos de uso, lo que lo convierte en un artefacto difícil de evaluar para su integración en proyectos reales.
 
@@ -23,7 +23,7 @@ El repositorio contiene únicamente los pesos del adaptador en formato safetenso
 
 El adaptador utiliza la técnica LoRA, que congela los pesos del modelo base e inyecta matrices de bajo rango en las capas de atención y feed-forward. Esto permite fine-tuning con un coste computacional reducido y un tamaño de checkpoint mucho menor que un fine-tuning completo. El modelo base es Llama-3.1-8B, un transformer autoregresivo con normalización RMSNorm, atención con RoPE (Rotary Position Embedding) y 32 capas, entrenado con 15 billones de tokens.
 
-No se dispone de información sobre el proceso de entrenamiento del adaptador: ni el dataset utilizado, ni el número de pasos, ni la configuración de hiperparámetros (learning rate, rank, alpha, etc.). La model card no incluye detalles sobre el régimen de entrenamiento, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO. El único dato técnico adicional es la referencia al paper de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que aparece en la plantilla estándar de HuggingFace sin datos concretos.
+No se dispone de información sobre el proceso de entrenamiento del adaptador: ni el dataset utilizado, ni el número de pasos, ni la configuración de hiperparámetros (learning rate, rank, alpha, etc.). La model card no incluye detalles sobre el régimen de entrenamiento, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO. El único dato técnico adicional es la referencia al paper de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que aparece en la plantilla estándar de Hugging Face sin datos concretos.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: al ser un adaptador LoRA, la VRAM necesaria depende del modelo base. Para Llama-3.1-8B en precision FP16 se requieren aproximadamente 16 GB de VRAM; con cuantizacion a 4 bits (por ejemplo, mediante bitsandbytes o GPTQ) se puede reducir a unos 6-8 GB. El adaptador anade un overhead minimo (0.7 GB en disco, pero en memoria es menor).
 - GPU recomendadas: para FP16, una GPU con 16 GB o mas (RTX 4090, A100 40GB, H100). Con cuantizacion, una RTX 3060 12GB o RTX 4070 pueden ser suficientes.
 - Compatibilidad con GPU de consumo: si, siempre que se cuantice el modelo base. En FP16 puro, solo GPUs de gama alta con 16 GB+.
-- Opciones de despliegue: el adaptador se puede cargar con la libreria PEFT de HuggingFace Transformers. Para servidores de inferencia, se puede integrar con vLLM, TGI o llama.cpp (si se convierte el adaptador a formato GGUF, aunque no se proporciona).
+- Opciones de despliegue: el adaptador se puede cargar con la libreria PEFT de Hugging Face Transformers. Para servidores de inferencia, se puede integrar con vLLM, TGI o llama.cpp (si se convierte el adaptador a formato GGUF, aunque no se proporciona).
 - Latencia y throughput: no se dispone de datos medidos. Como referencia, Llama-3.1-8B en una A100 genera aproximadamente 50-100 tokens/s en FP16, pero el adaptador puede alterar ligeramente estos valores.
 
 ## Comparativa con modelos similares
@@ -56,10 +56,10 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B (base) | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B | 7B | 32K | Apache 2.0 | HuggingFace |
-| Gemma-2-9B | 9B | 8K | Gemma License | HuggingFace |
-| Jordine/patina3-artisanal_sdf_s0 | Adaptador LoRA (0.7 GB) | No disponible | No disponible | HuggingFace |
+| Llama-3.1-8B (base) | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B | 7B | 32K | Apache 2.0 | Hugging Face |
+| Gemma-2-9B | 9B | 8K | Gemma License | Hugging Face |
+| Jordine/patina3-artisanal_sdf_s0 | Adaptador LoRA (0.7 GB) | No disponible | No disponible | Hugging Face |
 
 La comparativa es limitada porque el adaptador no aporta informacion sobre su rendimiento ni su proposito.
 
@@ -74,6 +74,6 @@ La comparativa es limitada porque el adaptador no aporta informacion sobre su re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-artisanal_sdf_s0
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-artisanal_sdf_s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Paper de referencia sobre estimacion de emisiones (citado en la model card): https://arxiv.org/abs/1910.09700

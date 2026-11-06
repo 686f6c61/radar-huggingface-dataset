@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Enfoque de modificacion | Quimica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PoreFM-DNA BrdU/EdU (este modelo) | Clasificador supervisado sobre backbone PoreFM-DNA | BrdU y EdU | R10.4.1 (E8.2, 400 bps) | No disponible | HuggingFace, 0 descargas |
-| PoreFM-DNA | Modelo base (backbone) | No es un clasificador de modificaciones por si mismo | No disponible en la informacion proporcionada | No disponible | HuggingFace (WGLab) |
+| PoreFM-DNA BrdU/EdU (este modelo) | Clasificador supervisado sobre backbone PoreFM-DNA | BrdU y EdU | R10.4.1 (E8.2, 400 bps) | No disponible | Hugging Face, 0 descargas |
+| PoreFM-DNA | Modelo base (backbone) | No es un clasificador de modificaciones por si mismo | No disponible en la informacion proporcionada | No disponible | Hugging Face (WGLab) |
 | Dorado (Oxford Nanopore) | Basecaller con soporte de bases modificadas | 5mC, 6mA y otras modificaciones segun modelo | Multiples quimicas | No disponible en la informacion proporcionada | Distribucion de Oxford Nanopore |
 | modkit (Oxford Nanopore) | Herramienta de procesado de etiquetas MM/ML | No detecta por si misma; manipula y resume etiquetas | No aplica | No disponible en la informacion proporcionada | Distribucion de Oxford Nanopore |
 
@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento de ninguna de las alternativas dentro de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WGLab/PoreFM-DNA_BrdU-EdU
+- Modelo en Hugging Face: https://huggingface.co/WGLab/PoreFM-DNA_BrdU-EdU
 - Modelo base PoreFM-DNA: https://huggingface.co/WGLab/PoreFM-DNA
 - Repositorio de codigo de PoreFM (setup y uso): no disponible en la informacion proporcionada; la model card remite a el sin incluir la URL
 - Paper tecnico de PoreFM: no disponible en la informacion proporcionada
 - Demo o Space asociado: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/WGLab
+- Perfil del autor en Hugging Face: https://huggingface.co/WGLab

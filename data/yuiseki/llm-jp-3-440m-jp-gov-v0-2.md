@@ -12,7 +12,7 @@ Es relevante ahora porque documenta un experimento controlado y reproducible sob
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de tipo Llama (etiqueta `llama` en HuggingFace), derivado de llm-jp/llm-jp-3-440m |
+| Arquitectura | Transformer de tipo Llama (etiqueta `llama` en Hugging Face), derivado de llm-jp/llm-jp-3-440m |
 | Parametros totales | 447.251.456 (~447 M) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -97,9 +97,9 @@ No se han publicado resultados en benchmarks estandar (MMLU, JGLUE, GSM8K ni sim
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yuiseki/llm-jp-3-440m-jp-gov-v0.2 | 447 M | no disponible | 97,2% (forma escueta, mitad ensenada); 71,5% en reservada; 31 errores sobre 1.632 | Apache-2.0 | HuggingFace, pesos safetensors |
-| llm-jp/llm-jp-3-440m (base) | 440 M | no disponible | 26,0% en forma escueta; 91,5% en pregunta (mitad ensenada) | Apache-2.0 | HuggingFace |
-| Otros modelos de la serie llm-jp-3 | La serie cubre ocho tamanos, de 150 M a 172 B, segun fuentes de terceros | no disponible | no disponible para esta tarea | Apache-2.0 para modelos hasta 13 B | HuggingFace |
+| yuiseki/llm-jp-3-440m-jp-gov-v0.2 | 447 M | no disponible | 97,2% (forma escueta, mitad ensenada); 71,5% en reservada; 31 errores sobre 1.632 | Apache-2.0 | Hugging Face, pesos safetensors |
+| llm-jp/llm-jp-3-440m (base) | 440 M | no disponible | 26,0% en forma escueta; 91,5% en pregunta (mitad ensenada) | Apache-2.0 | Hugging Face |
+| Otros modelos de la serie llm-jp-3 | La serie cubre ocho tamanos, de 150 M a 172 B, segun fuentes de terceros | no disponible | no disponible para esta tarea | Apache-2.0 para modelos hasta 13 B | Hugging Face |
 
 No se han identificado en la informacion disponible otros modelos comparables especializados en el mapeo municipio-prefectura de Japon.
 
@@ -118,7 +118,7 @@ No se han identificado en la informacion disponible otros modelos comparables es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuiseki/llm-jp-3-440m-jp-gov-v0.2
+- Modelo en Hugging Face: https://huggingface.co/yuiseki/llm-jp-3-440m-jp-gov-v0.2
 - Archivos del repositorio: https://huggingface.co/yuiseki/llm-jp-3-440m-jp-gov-v0.2/tree/main
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-3-440m
 - Dataset de triples geograficos: https://huggingface.co/datasets/yuiseki/geo-triples-jp-gov

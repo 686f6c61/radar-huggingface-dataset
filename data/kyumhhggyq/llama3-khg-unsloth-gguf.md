@@ -51,7 +51,7 @@ Tampoco se documenta si el ajuste fue instructivo, de dominio especifico o de es
 - Despliegue en entornos sin GPU: al ser GGUF, puede ejecutarse en CPU con llama.cpp, lo que sirve para demos offline o entornos air-gapped donde no hay acelerador disponible.
 - Base para nuevas cuantizaciones: el archivo Q8_0 puede servir como punto de partida para generar variantes Q4_K_M o Q5_K_M mas ligeras, utiles para equipos con menos memoria.
 - Pruebas de integracion con Ollama o LM Studio: el formato GGUF es directamente importable en ambos, lo que facilita montar un entorno de pruebas rapido para validar si el ajuste aporta algo sobre el modelo base.
-- Investigacion de reproducibilidad: dado que el autor no documenta el entrenamiento, el repositorio puede usarse como caso de estudio de publicaciones incompletas en HuggingFace.
+- Investigacion de reproducibilidad: dado que el autor no documenta el entrenamiento, el repositorio puede usarse como caso de estudio de publicaciones incompletas en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -93,7 +93,7 @@ Diferencias clave: el modelo de esta ficha solo se distribuye en GGUF Q8_0, mien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kyumhhggyq/Llama3-KHG-Unsloth-GGUF
+- Hugging Face: https://huggingface.co/kyumhhggyq/Llama3-KHG-Unsloth-GGUF
 - Unsloth (herramienta usada para el entrenamiento y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de referencia para GGUF): no incluido en la informacion proporcionada, aunque es el entorno indicado en los ejemplos de la model card
 - Papers, blogs o demos adicionales: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces obtenidos correspondian a paginas de ayuda de YouTube y se han descartado por no ser relevantes.

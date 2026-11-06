@@ -81,7 +81,7 @@ El modelo se diferencia de la mayoria de alternativas por su formato Q4NX y su e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-NPU2
 - Modelo base: https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M
 - Motor FastFlowLM: https://fastflowlm.com
 - Web de Empero: https://empero.org/

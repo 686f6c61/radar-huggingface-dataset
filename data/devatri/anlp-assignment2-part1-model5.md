@@ -4,7 +4,7 @@
 
 El modelo identificado como `Devatri/anlp-assignment2-part1-model5` es un transformer decoder-only desarrollado por el usuario Devatri en el contexto de la asignatura ANLP (Advanced Natural Language Processing), Assignment 2 - Part 1. Se trata, por tanto, de un artefacto academico y no de un modelo de proposito general publicado por un laboratorio. Su tarea declarada es la traduccion de vietnamita y japones a ingles, y fue entrenado sobre el conjunto de datos `belumind/en-vi-ja-curated-500k-triplets`.
 
-El repositorio de HuggingFace ocupa 0,2 GB y contiene un unico checkpoint en formato PyTorch (`checkpoint.pt`) que empaqueta la configuracion, el `state dict` del modelo, un resumen y el hash SHA-256 del tokenizador. No se publican pesos en safetensors ni en GGUF, no se declara licencia, no se declaran idiomas soportados en los metadatos y no consta pipeline de inferencia asociado. En el momento de la consulta acumula 0 descargas y 0 likes.
+El repositorio de Hugging Face ocupa 0,2 GB y contiene un unico checkpoint en formato PyTorch (`checkpoint.pt`) que empaqueta la configuracion, el `state dict` del modelo, un resumen y el hash SHA-256 del tokenizador. No se publican pesos en safetensors ni en GGUF, no se declara licencia, no se declaran idiomas soportados en los metadatos y no consta pipeline de inferencia asociado. En el momento de la consulta acumula 0 descargas y 0 likes.
 
 Su relevancia practica es limitada: no hay resultados de benchmarks ni especificaciones de tamano, contexto o tokenizador mas alla del hash. El valor del repositorio es fundamentalmente reproducible y didactico, ya que permite reconstruir el modelo cargando las definiciones `Config` y `Transformer` contenidas en el cuaderno `implementation.ipynb` que acompana al autor.
 
@@ -16,7 +16,7 @@ Su relevancia practica es limitada: no hay resultados de benchmarks ni especific
 | Parametros totales | no disponible (el repositorio ocupa 0,2 GB, sin desglose de parametros) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se distribuye el checkpoint original en punto flotante) |
-| Idiomas soportados | Entrada: vietnamita y japones; salida: ingles (segun la model card). No hay metadatos de idiomas en la ficha de HuggingFace |
+| Idiomas soportados | Entrada: vietnamita y japones; salida: ingles (segun la model card). No hay metadatos de idiomas en la ficha de Hugging Face |
 | Licencia | no disponible |
 | Formato de pesos | PyTorch `.pt` (`checkpoint.pt` con `config`, `model`, `summary` y `tokenizer_sha256`) |
 | Vocabulario / tokenizador | no disponible; solo se publica el hash `tokenizer_sha256` |
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Idiomas relevantes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Devatri/anlp-assignment2-part1-model5 | no disponible | no disponible | vi, ja hacia en (segun model card) | no disponible | HuggingFace, checkpoint `.pt` suelto |
-| Helsinki-NLP/opus-mt-ja-en | alrededor de 77 M | alrededor de 512 tokens | ja hacia en | CC-BY-4.0 | HuggingFace, safetensors y pesos Marian |
-| Helsinki-NLP/opus-mt-vi-en | alrededor de 77 M | alrededor de 512 tokens | vi hacia en | CC-BY-4.0 | HuggingFace, safetensors y pesos Marian |
-| facebook/nllb-200-distilled-600M | 600 M | 512 tokens | 200 idiomas, incluye vi y ja | CC-BY-NC-4.0 | HuggingFace, safetensors |
+| Devatri/anlp-assignment2-part1-model5 | no disponible | no disponible | vi, ja hacia en (segun model card) | no disponible | Hugging Face, checkpoint `.pt` suelto |
+| Helsinki-NLP/opus-mt-ja-en | alrededor de 77 M | alrededor de 512 tokens | ja hacia en | CC-BY-4.0 | Hugging Face, safetensors y pesos Marian |
+| Helsinki-NLP/opus-mt-vi-en | alrededor de 77 M | alrededor de 512 tokens | vi hacia en | CC-BY-4.0 | Hugging Face, safetensors y pesos Marian |
+| facebook/nllb-200-distilled-600M | 600 M | 512 tokens | 200 idiomas, incluye vi y ja | CC-BY-NC-4.0 | Hugging Face, safetensors |
 
 La comparacion es necesariamente cualitativa: el modelo de Devatri no publica numero de parametros, contexto, licencia ni metricas, de modo que no puede contrastarse su rendimiento frente a las alternativas. Las cifras de los modelos de referencia corresponden a sus fichas publicas y se incluyen unicamente como orden de magnitud.
 
@@ -94,7 +94,7 @@ La comparacion es necesariamente cualitativa: el modelo de Devatri no publica nu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Devatri/anlp-assignment2-part1-model5
+- Repositorio en Hugging Face: https://huggingface.co/Devatri/anlp-assignment2-part1-model5
 - Dataset citado en la model card: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Cuaderno `implementation.ipynb`: referenciado en la model card, no se proporciona URL directa en la informacion disponible
 - Paper asociado: no disponible

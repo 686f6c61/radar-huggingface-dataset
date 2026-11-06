@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Justriyarao/document-ai-analysis` es un repositorio alojado en HuggingFace que, segun su propia model card, **no contiene un modelo entrenado ni un checkpoint utilizable**. Se trata de una nota de investigacion ("research note") sobre Document AI en la que el autor organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El repositorio incluye unicamente dos ficheros de texto: `summary.md` (artefacto principal) y `README.md`.
+`Justriyarao/document-ai-analysis` es un repositorio alojado en Hugging Face que, segun su propia model card, **no contiene un modelo entrenado ni un checkpoint utilizable**. Se trata de una nota de investigacion ("research note") sobre Document AI en la que el autor organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El repositorio incluye unicamente dos ficheros de texto: `summary.md` (artefacto principal) y `README.md`.
 
 Aunque el repositorio esta etiquetado con `safetensors` y `transformer`, y el recuento automatico de parametros reporta 16.576 parametros totales, esa cifra es incompatible con cualquier modelo transformer de proposito general y con el contenido descrito por el propio autor, que declara explicitamente no publicar "trained models", "released code" ni "a trained checkpoint". El tamano del repositorio es de 0,0 GB.
 
@@ -81,7 +81,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Justriyarao/document-ai-analysis
+- Repositorio en Hugging Face: https://huggingface.co/Justriyarao/document-ai-analysis
 - Fichero `summary.md` del repositorio (artefacto principal): https://huggingface.co/Justriyarao/document-ai-analysis/blob/main/summary.md
 - Fichero `README.md` del repositorio: https://huggingface.co/Justriyarao/document-ai-analysis/blob/main/README.md
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

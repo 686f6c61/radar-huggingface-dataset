@@ -2,7 +2,7 @@
 
 ## Resumen
 
-astra-agent-coder-7b es un modelo de generación de código publicado por el usuario wordbomb en HuggingFace. Se distribuye exclusivamente en formato GGUF, cuantizado en Q4_K_M, y está pensado para su ejecución local mediante llama.cpp u Ollama. El nombre del archivo de pesos incluido en el repositorio (`qwen2.5-coder-7b-instruct.Q4_K_M.gguf`) y la etiqueta `qwen2` indican que se trata de un ajuste fino derivado de Qwen2.5-Coder-7B-Instruct, aunque la model card no confirma explícitamente esta relación ni detalla el proceso de ajuste más allá de indicar que se usó Unsloth.
+astra-agent-coder-7b es un modelo de generación de código publicado por el usuario wordbomb en Hugging Face. Se distribuye exclusivamente en formato GGUF, cuantizado en Q4_K_M, y está pensado para su ejecución local mediante llama.cpp u Ollama. El nombre del archivo de pesos incluido en el repositorio (`qwen2.5-coder-7b-instruct.Q4_K_M.gguf`) y la etiqueta `qwen2` indican que se trata de un ajuste fino derivado de Qwen2.5-Coder-7B-Instruct, aunque la model card no confirma explícitamente esta relación ni detalla el proceso de ajuste más allá de indicar que se usó Unsloth.
 
 El modelo cuenta con 7.615.616.512 parámetros (aproximadamente 7,62 B) según los metadatos de safetensors, y el repositorio ocupa 4,7 GB. La model card únicamente documenta el proceso de conversión a GGUF, un ejemplo de uso con `llama-cli` y la existencia de un Modelfile para Ollama; no incluye información sobre datos de entrenamiento, benchmarks, licencia, idiomas soportados ni longitud de contexto.
 
@@ -93,6 +93,6 @@ Diferencias clave: astra-agent-coder-7b no declara licencia ni idiomas, solo ofr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wordbomb/astra-agent-coder-7b
+- Modelo en Hugging Face: https://huggingface.co/wordbomb/astra-agent-coder-7b
 - Repositorio de Unsloth (herramienta citada en la model card): https://github.com/unslothai/unsloth
 - Los resultados de la búsqueda web no contienen ninguna referencia relevante al modelo, a su autor ni a su modelo base; los enlaces devueltos corresponden a foros sobre Facebook y no guardan relación con esta ficha.

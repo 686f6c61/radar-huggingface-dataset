@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| positron-ai/google_gemma-4-E4B-it-ingest-best-gptq-permuted | 7,94 B | no disponible | GPTQ 4 bits, g64, simetrica, actorder | apache-2.0 con license_link a Gemma 4 | HuggingFace, 0 descargas |
-| positron-ai/google_gemma-4-E4B-it-ingest-best-gptq | no disponible en la informacion | no disponible | GPTQ 4 bits | apache-2.0 con license_link a Gemma 4 | HuggingFace; repositorio hermano mencionado en la busqueda |
-| google/gemma-4-E4B-it (modelo base) | no disponible en la informacion | no disponible | pesos sin cuantizar (presumiblemente bf16/fp16) | licencia de Gemma 4 | HuggingFace, Google AI for Developers, Qualcomm AI Hub |
+| positron-ai/google_gemma-4-E4B-it-ingest-best-gptq-permuted | 7,94 B | no disponible | GPTQ 4 bits, g64, simetrica, actorder | apache-2.0 con license_link a Gemma 4 | Hugging Face, 0 descargas |
+| positron-ai/google_gemma-4-E4B-it-ingest-best-gptq | no disponible en la informacion | no disponible | GPTQ 4 bits | apache-2.0 con license_link a Gemma 4 | Hugging Face; repositorio hermano mencionado en la busqueda |
+| google/gemma-4-E4B-it (modelo base) | no disponible en la informacion | no disponible | pesos sin cuantizar (presumiblemente bf16/fp16) | licencia de Gemma 4 | Hugging Face, Google AI for Developers, Qualcomm AI Hub |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes. La comparativa se limita a parametros, formato y licencia; las cifras de contexto y de evaluacion no estan publicadas en la informacion proporcionada.
 
@@ -87,8 +87,8 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/positron-ai/google_gemma-4-E4B-it-ingest-best-gptq-permuted
-- Repositorio hermano en HuggingFace: https://huggingface.co/positron-ai/google_gemma-4-E4B-it-ingest-best-gptq
+- Modelo en Hugging Face: https://huggingface.co/positron-ai/google_gemma-4-E4B-it-ingest-best-gptq-permuted
+- Repositorio hermano en Hugging Face: https://huggingface.co/positron-ai/google_gemma-4-E4B-it-ingest-best-gptq
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
 - Anuncio de Gemma 4 en el blog de Google: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
